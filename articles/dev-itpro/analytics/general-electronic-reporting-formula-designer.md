@@ -3,14 +3,14 @@ title: "Projektant formuł w module Raportowanie elektroniczne (ER)"
 description: "W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 04/04/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
+ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
+ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/23/2018
 
 ---
 
@@ -252,6 +252,12 @@ W poniższych tabelach opisano funkcje edycji danych, które mogą służyć do 
 <td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> zwraca nową listę zawierającą dwa rekordy, które mają pole <strong>STRING</strong>. Pole w pierwszym rekordzie zawiera tekst <strong>&quot;abc&quot;</strong>, a pole w drugim rekordzie zawiera tekst <strong>&quot;d&quot;</strong>.</td>
 </tr>
 <tr>
+<td>SPLIT (dane wejściowe, separator)</td>
+<td>Dzielnie podanego ciągu wejściowego na podciągi przy użyciu podanego separatora.</td>
+<td><strong>SPLIT (&quot;XAb aBy&quot;, &quot;aB&quot;)</strong> zwraca nową listę zawierającą trzy rekordy, które mają pole <strong>STRING</strong>. Pole w pierwszym rekordzie zawiera tekst <strong>&quot;X&quot;</strong>, pole w drugim rekordzie zawiera tekst &quot;&nbsp;&quot;, a pole w trzecim rekordzie zawiera tekst <strong>&quot;y&quot;</strong>. Jeśli parametr „separator” jest pusty, zostanie zwrócona nowa lista składająca się z jednego rekordu mającego pole <strong>STRING</strong> zawierające tekst wejściowy. Jeśli parametr „dane wejściowe” jest pusty, zostanie zwrócona nowa pusta lista.
+Jeśli parametr „dane wejściowe” lub „separator” jest nieokreślony (ma wartość null), aplikacja zgłasza wyjątek.</td>
+</tr>
+<tr>
 <td>SPLITLIST (lista, liczba)</td>
 <td>Dzielenie określonej listy na partie, z których każda zawiera określoną liczbę rekordów. Wynik jest zwracany jako nowa lista partii zawierająca następujące elementy:
 <ul>
@@ -323,12 +329,12 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <tr>
 <td>ORDERBY (lista [, wyrażenie 1, wyrażenie 2, …])</td>
 <td>Zwracanie określonej listy po jej posortowaniu zgodnie z podanymi argumentami. Te argumenty można zdefiniować jako wyrażenia.</td>
-<td>Jeśli <strong>Vendor</strong> jest skonfigurowany jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> zwraca listę dostawców posortowaną według nazw w porządku rosnącym.</td>
+<td>Jeśli <strong>Vendor</strong> jest skonfigurowany jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>ORDERBY (Vendors, Vendors.'name()')</strong> zwraca listę dostawców posortowaną według nazw w porządku rosnącym.</td>
 </tr>
 <tr>
 <td>REVERSE (lista)</td>
 <td>Zwracanie określonej listy w odwrotnym porządku sortowania.</td>
-<td>Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> zwraca listę dostawców posortowaną według nazw w porządku malejącym.</td>
+<td>Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> zwraca listę dostawców posortowaną według nazw w porządku malejącym.</td>
 </tr>
 <tr>
 <td>WHERE (lista, warunek)</td>
@@ -399,12 +405,13 @@ Podczas wykonywania pola <strong>Etykieta</strong> i <strong>Opis</strong> zwrac
 </ul>
 Podczas wykonywania pola <strong>Etykieta</strong> i <strong>Opis</strong> zwracają wartości zależne od ustawień języka formatu i wybranego języka. Pole <strong>Jest przetłumaczone</strong> wskazuje, że zawartość pola <strong>Etykieta</strong> została przetłumaczona na wskazany język.
 </td>
-<td>Na przykład można użyć źródła danych o typie <strong>Pole obliczeniowe</strong> do skonfigurowania źródeł danych <strong>enumType_de</strong> i <strong>enumType_deCH</strong> dla wartości stałotekstowej modelu danych <strong>enumType</strong>:
+<td>Na przykład można użyć źródła danych o typie <strong>Pole obliczeniowe</strong> do skonfigurowania źródeł danych <strong>enumType_de</strong> i <strong>enumType_deCH</strong> dla elementu stałotekstowego modelu danych <strong>enumType</strong>.
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykietę wartości stałotekstowej w języku niemieckim (Szwajcaria), jeśli takie tłumaczenie jest dostępne. Jeśli tłumaczenie na język niemiecki (Szwajcaria) nie jest dostępne, etykieta pozostaje w języku niemieckim: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.
+<p>W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykietę wartości stałotekstowej w języku niemieckim (Szwajcaria), jeśli takie tłumaczenie jest dostępne. Jeśli tłumaczenie na język niemiecki (Szwajcaria) nie jest dostępne, etykieta pozostaje w języku niemieckim.</p>
+IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 </td>
 </tr>
 <tr>
@@ -432,7 +439,7 @@ W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykiet�
 <tr>
 <td>FILTER (lista, warunek)</td>
 <td>Zwracanie określonej listy po zmodyfikowaniu zapytania w celu wyfiltrowania według podanego warunku. Ta funkcja różni się od funkcji <strong>WHERE</strong>, ponieważ podany warunek jest stosowany do każdego źródła danych ER o typie <strong>Rekordy tabeli</strong> na poziomie bazy danych. Listę i warunek można zdefiniować przy użyciu tabel i relacji.</td>
-<td>Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> zwraca listę wyłącznie dostawców należących do grupy dostawców 40. Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych ER odwołujące się do tabeli <strong>VendTable</strong>, a element <strong>parmVendorBankGroup</strong> jest skonfigurowany jako źródło danych ER zwracające wartość o typie danych <strong>String</strong>, to funkcja <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> zwraca listę tylko kont dostawców należących do określonej grupy bankowej.</td>
+<td>Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> zwraca listę wyłącznie dostawców należących do grupy dostawców 40. Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych ER odwołujące się do tabeli VendTable, a element <strong>parmVendorBankGroup</strong> jest skonfigurowany jako źródło danych ER zwracające wartość o typie danych <strong>String</strong>, to funkcja <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> zwraca listę tylko kont dostawców należących do określonej grupy bankowej.</td>
 </tr>
 </tbody>
 </table>
@@ -446,10 +453,67 @@ W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykiet�
 | NOT (warunek) | Zwracanie odwrotnej wartości logicznej określonego warunku. | **NOT (TRUE)** zwraca wartość **FALSE**. |
 | AND (warunek 1\[, warunek 2, ...\]) | Zwracanie wartości **TRUE**, jeśli *wszystkie* określone warunki są spełnione. W przeciwnym jest zwracana wartość **FALSE**. | Funkcja **AND (1=1, "a"="a")** zwraca wartość **TRUE**. **AND (1=2, "a"="a")** zwraca wartość **FALSE**. |
 | OR (warunek 1\[, warunek 2, ...\]) | Zwracanie wartości **FALSE**, jeśli *żaden* określony warunek nie jest spełniony. Zwracanie wartości **TRUE**, jeśli *którykolwiek* określony warunek jest spełniony. | **OR (1=2, "a"="a")** zwraca wartość **TRUE**. |
+| VALUEIN (dane wejściowe, lista, wyrażenie elementu listy) | Ustalanie, czy podane dane wejściowe pasują do którejkolwiek wartości elementu na podanej liście. Zwracanie wartości **TRUE**, jeśli podane dane wejściowe są zgodne z wynikiem wykonania podanego wyrażenia dla co najmniej jednego rekordu. W przeciwnym jest zwracana wartość **FALSE**. Parametr **dane wejściowe** reprezentuje ścieżkę elementu źródła danych. To z wartością tego elementu będzie dokonywane porównanie. Parametr **lista** reprezentuje ścieżkę elementu źródła danych typu Lista rekordów jako listę rekordów zawierających wyrażenie. Wartość tego elementu będzie porównywana z podanymi danymi wejściowymi. Argument **wyrażenie elementu listy** reprezentuje wyrażenie wskazujące albo zawierające pojedyncze pole określonej listy, która ma być używana do porównania. | Aby uzyskać przykłady, zobacz następną sekcję [Przykłady: VALUEIN (dane wejściowe, lista, wyrażenie elementu listy)](#examples-valuein-input-list-list-item-expression). |
+
+#### <a name="examples-valuein-input-list-list-item-expression"></a>Przykłady: VALUEIN (dane wejściowe, lista, wyrażenie elementu listy)
+Zasadniczo funkcja **VALUEIN** jest przekształcana na zbiór warunków **OR**:
+
+(dane wejściowe = list.item1.value) OR (dane wejściowe = list.item2.value) OR …
+
+##### <a name="example-1"></a>Przykład 1
+W mapowaniu modelu definiujesz następujące źródło danych: **List** (typ **Pole obliczeniowe**). To źródło danych zawiera wyrażenie **SPLIT ("a,b,c", ",")**.
+
+Gdy zostanie wywołane źródło danych skonfigurowane za pomocą wyrażenia **VALUEIN ("B", List, List.Value)**, zwróci wartość **TRUE**. W tym przypadku funkcja **VALUEIN** jest przekształcana na następujący zbiór warunków:
+
+**(("B" = "a") lub ("B" = "b") lub ("B" = "c"))**, gdzie **("B" = "b")** równa się **TRUE**
+
+Gdy zostanie wywołane źródło danych skonfigurowane za pomocą wyrażenia **VALUEIN ("B", List, LEFT(List.Value, 0))**, zwróci wartość **FALSE**. W tym przypadku funkcja **VALUEIN** jest przekształcana na następujący warunek:
+
+**("B" = "")**, co nie równa się **TRUE**
+
+Należy zauważyć, że górny limit liczby znaków w treści takiego warunku to 32 768 znaków. Z tego względu nie należy tworzyć źródeł danych, które w czasie wykonywania mogą spowodować przekroczenie tego limitu. W przypadku przekroczenia limitu aplikacja przestanie działać i zgłosi wyjątek. Na przykład taka sytuacja może wystąpić, jeśli źródło danych jest skonfigurowane za pomocą wyrażenia **WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)**, a listy **List1** i **List2** zawierają bardzo dużo rekordów.
+
+W niektórych przypadkach funkcja **VALUEIN** jest przekształcana na zestawienia bazy danych za pomocą operatora **EXISTS JOIN**. Takie zachowanie występuje, gdy jest używana funkcja **FILTER** i są spełnione następujące warunki:
+
+- Opcja **Monituj o zapytanie** jest wyłączona w źródle danych funkcji **VALUEIN** odwołującej się do listy rekordów. (W czasie wykonywania do tego źródła danych nie będą stosowane żadne dodatkowe warunki).
+- Nie skonfigurowano żadnych warunków zagnieżdżonych w źródle danych funkcji **VALUEIN** odwołującej się do listy rekordów.
+- Element listy w funkcji **VALUEIN** odwołuje się do pola (a nie do wyrażenia lub metody) podanego źródła danych.
+
+Warto rozważyć używanie tej opcji zamiast funkcji **WHERE** opisanej wcześniej w tym przykładzie.
+
+##### <a name="example-2"></a>Przykład 2
+
+Definiuje się następujące źródła danych w mapowaniu modelu:
+
+- **In** (typ **Rekordy tabeli**), który odwołuje się do tabeli Intrastat
+- **Port** (typ **Rekordy tabeli**), który odwołuje się do tabeli IntrastatPort
+
+Gdy zostanie wywołane źródło danych skonfigurowane za pomocą wyrażenia **FILTER (In, VALUEIN(In.Port, Port, Port.PortId)**, zostanie wygenerowana poniższa instrukcja SQL w celu zwrócenia wyfiltrowanych rekordów tabeli Intrastat:
+
+```
+select … from Intrastat
+exists join TableId from IntrastatPort
+where IntrastatPort.PortId = Intrastat.Port
+```
+
+Dla pól **dataAreaId** zostanie wygenerowana końcowa instrukcja SQL przy użyciu operatora **IN**.
+
+##### <a name="example-3"></a>Przykład 3
+
+Definiuje się następujące źródła danych w mapowaniu modelu:
+
+- **Le** (typ **Pole obliczeniowe**), które zawiera wyrażenie **SPLIT ("DEMF,GBSI,USMF", ",")**
+- **In** (typ **Rekordy tabeli**), które odwołuje się do tabeli Intrastat i ma włączoną opcję **Międzyfirmowe**
+
+Gdy zostanie wywołane źródło danych skonfigurowane za pomocą wyrażenia **FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)**, końcowa instrukcja SQL zawiera następujący warunek:
+
+```
+Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
+```
 
 ### <a name="mathematical-functions"></a>Funkcje matematyczne
 
-| Funkcja | Opis | Przykład |
+| Funkcja | opis | Przykład |
 |----------|-------------|---------|
 | ABS (liczba) | Zwracanie wartości bezwzględnej podanej liczby. (Innymi słowy zwracanie liczby bez znaku). | **ABS (-1)** zwraca **1**. |
 | POWER (liczba, potęga) | Zwracanie wyniku będącego podniesieniem podanej liczby dodatniej do określonej potęgi. | **POWER (10, 2)** zwraca **100**. |
@@ -539,7 +603,7 @@ W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykiet�
 </tr>
 <tr>
 <td>REPLACE (ciąg, wzorzec, ciąg zastępczy, flaga wyrażenia regularnego)</td>
-<td>Gdy ustawioną flagą wyrażenia regularnego jest <strong>true</strong>, funkcja zwraca podany ciągu znaków po zmodyfikowaniu przez zastosowanie wyrażenia regularnego określonego jako argument wzorca tej funkcji. To wyrażenie służy do znalezienia znaków, które należy zastąpić. Znaki podanego argumentu zastępczego zastępują znalezione znaki. Gdy ustawioną flagą wyrażenia regularnego jest <strong>false</strong>, funkcja zachowuje się jak funkcja <strong>TRANSLATE</strong>.</td>
+<td>Gdy podany parametr <strong>flaga wyrażenia regularnego</strong> ma wartość <strong>true</strong>, funkcja zwraca podany ciągu znaków po zmodyfikowaniu przez zastosowanie wyrażenia regularnego określonego jako argument <strong>wzorzec</strong> tej funkcji. To wyrażenie służy do znalezienia znaków, które należy zastąpić. Znaki podanego argumentu <strong>ciąg zastępczy</strong> zastępują znalezione znaki. Gdy podany parametr <strong>flaga wyrażenia regularnego</strong> ma wartość <strong>false</strong>, funkcja zachowuje się jak funkcja <strong>TRANSLATE</strong>.</td>
 <td><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> stosuje wyrażenie regularne, które usuwa wszystkie symbole nieliczbowe i zwraca <strong>&quot;19234564971&quot;</strong>. <strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> zastępuje wzorzec <strong>&quot;cd&quot;</strong> ciągiem <strong>&quot;GH&quot;</strong> i zwraca <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
 <tr>
@@ -562,19 +626,19 @@ W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykiet�
 <li>Etykieta SYS18389 programu Finance and Operations, która ma następujący tekst:
 <ul>
 <li><strong>W języku polskim:</strong> &quot;Odbiorca %1 jest zablokowany do %2.&quot;</li>
-<li><strong>W języku niemieckim:</strong> &quot;Debitor &#39;%1&#39; wird für %2 gesperrt.&quot;</li>
+<li><strong>W języku niemieckim:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Poniżej przedstawiono formułę, którą można zaprojektować:</p>
 <p>FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</p>
-<p>Jeśli raport jest przetwarzany dla odbiorcy <strong>Litware Retail</strong> w dniu 17 grudnia 2015 r. w kulturze <strong>PL</strong> i języku <strong>PL</strong>, formuła zwraca następujący tekst, który może być prezentowany jako komunikat o wyjątku dla użytkownika:</p>
+<p>Jeśli raport jest przetwarzany dla odbiorcy <strong>Litware Retail</strong> w dniu 17 grudnia 2015 r. w kulturze <strong>PL</strong> i języku <strong>PL</strong>, formuła zwraca następujący tekst, który może być prezentowany użytkownikowi jako komunikat o wyjątku:</p>
 <p>&quot;Nie ma nic do wydrukowania. Odbiorca Litware Retail jest zablokowany do 17.12.2015.&quot;</p>
 <p>Jeśli ten sam raport będzie przetwarzany dla odbiorcy <strong>Litware Retail</strong> w dniu 17 grudnia 2015 w języku <strong>DE</strong> i kulturze <strong>DE</strong>, formuła zwraca następujący tekst:</p>
 <p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE] W formułach raportowania elektronicznego dla etykiet jest stosowana następująca składnia:
 <ul>
-<li><strong>Etykiety zasobów programu Finance and Operations:</strong> <strong>@&quot;X&quot;</strong>, gdzie X oznacza identyfikator etykiety w drzewie obiektów aplikacji (AOT)</li>
-<li><strong>Etykiety, które znajdują się w konfiguracjach ER:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, gdzie X oznacza identyfikator etykiety w konfiguracji raportowania elektronicznego</li>
+<li><strong>Etykiety zasobów programu Finance and Operations:</strong> <strong>@&quot;X&quot;</strong>, gdzie <strong>X</strong> oznacza identyfikator etykiety w drzewie obiektów aplikacji (AOT)</li>
+<li><strong>Etykiety, które znajdują się w konfiguracjach ER::</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, gdzie <strong>X</strong> oznacza identyfikator etykiety w konfiguracji raportowania elektronicznego</li>
 </ul>
 </blockquote>
 </td>
@@ -616,7 +680,7 @@ W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykiet�
 </tr>
 <tr>
 <td>GUIDVALUE (dane wejściowe)</td>
-<td>Przekształć dane wejściowe typu <strong>Ciąg</strong> na element danych o typie danych <strong>Identyfikator Guid</strong>.</td>
+<td>Przekształć dane wejściowe typu <strong>Ciąg</strong> na element danych o typie danych <strong>Identyfikator Guid</strong>.<blockquote>[!NOTE] Aby wykonać przekształcenie w przeciwnym kierunku (tzn. aby przekonwertować podane dane wejściowe o typie danych <strong>GUID</strong> na element danych o typie danych <strong>String</strong>), można użyć funkcji <strong>TEXT()</strong>.</blockquote></td>
 <td>Definiuje się następujące źródła danych w mapowaniu modelu:
 <ul>
 <li><strong>myID</strong> (typ <strong>Pole obliczeniowe</strong>), w którym znajduje się wyrażenie <strong>GUIDVALUE(&quot;AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0&quot;)</strong></li>
@@ -645,11 +709,11 @@ Po zdefiniowaniu tych źródeł danych, można użyć wyrażenia takiego jak <st
 | Funkcja | opis | Przykład |
 |----------|-------------|---------|
 | FORMATELEMENTNAME () | Zwracanie nazwy elementu bieżącego formatu. Zwracanie pustego ciągu, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona. | Aby dowiedzieć się więcej o korzystaniu z tej funkcji, zobacz przewodnik po zadaniu **ER Używanie danych wyjściowych formatu do inwentaryzacji i sumowania**, który jest częścią procesu biznesowego **Nabywanie/opracowywanie składników usług/rozwiązań informatycznych**. |
-| SUMIFS (ciąg klucza dla sumowania, ciąg zakresu kryteriów 1, ciąg wartości kryteriów 1 \[, ciąg zakresu kryteriów 2, ciąg wartości kryteriów 2, …\]) | Zwracanie sumy wartości węzłów XML (z nazwami zdefiniowanymi jako kluczami), które zostały zebrane podczas wykonywania formatu i spełniają wprowadzone warunki (pary zakresów i wartości). Zwracanie wartość **0** (zero), gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona. | |
-| SUMIF (ciąg klucza dla sumowania, ciąg zakresu kryteriów, ciąg wartości kryteriów) | Zwracanie sumy wartości węzłów XML (z nazwami zdefiniowanymi jako kluczami), które zostały zebrane podczas wykonywania formatu i spełniają wprowadzony warunek (zakres i wartość). Zwracanie wartość **0** (zero), gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona. | |
+| SUMIFS (ciąg klucza dla sumowania, ciąg zakresu kryteriów 1, ciąg wartości kryteriów 1 \[, ciąg zakresu kryteriów 2, ciąg wartości kryteriów 2, …\]) | Zwracanie sumy wartości, które zostały zebrane z węzłów XML (z nazwami zdefiniowanymi jako kluczami) podczas wykonywania formatu i spełniają wprowadzone warunki (pary zakresów i wartości). Zwracanie wartość **0** (zero), gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona. | |
+| SUMIF (ciąg klucza dla sumowania, ciąg zakresu kryteriów, ciąg wartości kryteriów) | Zwracanie sumy wartości, które zostały zebrane z węzłów XML (z nazwami zdefiniowanymi jako kluczami) podczas wykonywania formatu i spełniają wprowadzony warunek (zakres i wartość). Zwracanie wartość **0** (zero), gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona. | |
 | COUNTIFS (ciąg zakresu kryteriów 1, ciąg wartości kryteriów 1 \[, ciąg zakresu kryteriów 2, ciąg wartości kryteriów 2, …\]) | Zwracanie liczby węzłów XML, które zostały zebrane podczas wykonywania formatu i spełniają wprowadzone warunki (pary zakresów i wartości). Zwracanie wartość **0** (zero), gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona. | |
-| COUNTIF (ciąg zakresu kryteriów, ciąg wartości kryteriów) | Zwracanie liczby węzłów XML, które zostały zebrane podczas wykonywania formatu i spełniają podany warunek (zakres i wartość). Zwracanie wartość **0** (zero), gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona. | |
-| COLLECTEDLIST (ciąg zakresu kryteriów 1, ciąg wartości kryteriów 1 \[, ciąg zakresu kryteriów 2, ciąg wartości kryteriów 2, …\]) | Zwracanie listy wartości z węzłów XML w kodzie XML, które zostały zebrane podczas wykonywania formatu i spełniają podane warunki (zakres i wartość). Zwracanie pustej listy, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona. | |
+| COUNTIF (ciąg zakresu kryteriów, ciąg wartości kryteriów) | Zwracanie liczby węzłów XML, które zostały zebrane podczas wykonywania formatu i spełniają wprowadzony warunek (zakres i wartość). Zwracanie wartość **0** (zero), gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona. | |
+| COLLECTEDLIST (ciąg zakresu kryteriów 1, ciąg wartości kryteriów 1 \[, ciąg zakresu kryteriów 2, ciąg wartości kryteriów 2, …\]) | Zwracanie listy wartości, które zostały zebrane z węzłów XML podczas wykonywania formatu i spełniają wprowadzone warunki (zakres i wartość). Zwracanie pustej listy, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona. | |
 
 ### <a name="other-business-domainspecific-functions"></a>Inne funkcje (specyficzne dla domeny biznesowej)
 
@@ -667,6 +731,9 @@ Po zdefiniowaniu tych źródeł danych, można użyć wyrażenia takiego jak <st
 | FA\_BALANCE (kod środka trwałego, kod modelu ewidencji, rok sprawozdawczy, data raportowania) | Zwracanie przygotowanego kontenera danych dla salda środka trwałego. Rok sprawozdawczy musi być podany jako wartość stałotekstowa **AssetYear** w programie Finance and Operations. | **FA\_SUM ("COMP-000001", "Bieżący", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** zwraca przygotowany kontener sald dla środka trwałego **"COMP-000001"**, który ma model ewidencji **"Bieżący"** na dzień bieżącej sesji programu Finance and Operations. |
 | TABLENAME2ID (ciąg) | Zwracanie reprezentacji identyfikatora tabeli dla danej nazwy tabeli w postaci liczby całkowitej. | **TABLENAME2ID ("Intrastat")** zwraca **1510**. |
 | ISVALIDCHARACTERISO7064 (ciąg) | Zwracanie wartości logicznej **TRUE**, gdy podany ciąg tekstowy reprezentuje prawidłowy międzynarodowy numer konta bankowego (IBAN). W przeciwnym razie zwracanie wartości logicznej **FALSE**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** zwraca wartość **TRUE**. **ISVALIDCHARACTERISO7064 ("AT61")** zwraca wartość **FALSE**. |
+| NUMSEQVALUE (kod numeracji, zakres, identyfikator zakresu) | Zwracanie nowo wygenerowanej wartości numeru kolejnego na podstawie podanego kodu numeracji, zakresu i identyfikatora zakresu. Zakres musi być określony jako wartość elementu stałotekstowego **ERExpressionNumberSequenceScopeType** (**Współdzielony**, **Podmiot prawny** lub **Firma**). Dla zakresu **Współdzielony** należy określić pusty ciąg jako identyfikator zakresu. Dla zakresów **Firma** i **Podmiot prawny** należy podać kod firmy jako identyfikatora zakresu. Jeśli dla zakresów **Firma** i **Podmiot prawny** określisz pusty ciąg jako identyfikator zakresu, zostanie użyty bieżący kod firmy. | Definiuje się następujące źródła danych w mapowaniu modelu:<ul><li>**enumScope** (typ **Element stałotekstowy programu Dynamics 365 for Operations**), który odwołuje się do elementu stałotekstowego **ERExpressionNumberSequenceScopeType**</li><li>**NumSeq** (typ **Pole obliczeniowe**), który zawiera wyrażenie **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")**</li></ul>Gdy zostanie wywołane źródło danych **NumSeq**, zwróci nowo wygenerowaną wartość numeracji **Gene\_1** skonfigurowanej dla firmy dostarczającej kontekst, w którym jest wykonywany format raportowania elektronicznego. |
+| NUMSEQVALUE (kod numeracji) | Zwracanie nowo wygenerowanej wartości numeracji na podstawie podanej numeracji, zakresu **Firma** i (jako identyfikatora zakresu) kodu firmy dostarczającej kontekst, w którym jest wykonywany format raportowania elektronicznego. | W mapowaniu modelu definiujesz następujące źródło danych: **NumSeq** (typ **Pole obliczeniowe**). To źródło danych zawiera wyrażenie **NUMSEQVALUE ("Gene\_1")**. Gdy zostanie wywołane źródło danych **NumSeq**, zwróci nowo wygenerowaną wartość numeracji **Gene\_1** skonfigurowanej dla firmy dostarczającej kontekst, w którym jest wykonywany format raportowania elektronicznego. |
+| NUMSEQVALUE (identyfikator rekordu numeracji) | Zwracanie nowo wygenerowanej wartości numeru kolejnego na podstawie podanego identyfikatora rekordu numeracji. | Definiuje się następujące źródła danych w mapowaniu modelu:<ul><li>**LedgerParms** (typ **Rekordy tabeli**), który odwołuje się do tabeli LedgerParameters</li><li>**NumSeq** (typ **Pole obliczeniowe**), który zawiera wyrażenie **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</li></ul>Gdy zostanie wywołane źródło danych **NumSeq**, zwróci nowo wygenerowaną wartość numeracji skonfigurowanej w oknie Parametry księgi głównej dla firmy dostarczającej kontekst, w którym jest wykonywany format raportowania elektronicznego. Ta numeracja jednoznacznie identyfikuje arkusze i dostarcza numer partii, który łączy transakcje ze sobą. |
 
 ### <a name="functions-list-extension"></a>Rozszerzenie listy funkcji
 
@@ -674,7 +741,6 @@ Model raportowania elektronicznego umożliwia rozszerzanie listy funkcji używan
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
-
-[Poszerzanie listy funkcji raportowania elektronicznego (ER)](general-electronic-reporting-formulas-list-extension.md)
+- [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
+- [Poszerzanie listy funkcji raportowania elektronicznego (ER)](general-electronic-reporting-formulas-list-extension.md)
 

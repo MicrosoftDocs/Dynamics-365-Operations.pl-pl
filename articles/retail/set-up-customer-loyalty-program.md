@@ -1,9 +1,9 @@
 ---
-title: "Konfigurowanie programów lojalnościowych"
-description: "W tym artykule opisano sposób konfigurowania programu lojalnościowego. Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za zakup produktów w sklepach sieci sprzedaży. W programie Microsoft Dynamics 365 for Retail można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej."
+title: "Omówienie programu lojalnościowego"
+description: "W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Microsoft Dynamics 365 for Retail oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych."
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,23 +20,20 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 8aa29282f80870b93d119c095bb95c3bcfbfc682
+ms.sourcegitcommit: 11ad4168c7e5ddc63608d1c86430e4a6936d5e30
+ms.openlocfilehash: 78318849873f396c662c5250f0e86146279cc3a5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/25/2018
 
 ---
 
-# <a name="set-up-customer-loyalty-programs"></a>Konfigurowanie programów lojalnościowych
+# <a name="loyalty-overview"></a>Omówienie programu lojalnościowego
 
 [!include [banner](includes/banner.md)]
 
-W tym artykule opisano sposób konfigurowania programu lojalnościowego. Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za zakup produktów w sklepach sieci sprzedaży. W programie Microsoft Dynamics 365 for Retail można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej.
+Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za interakcje z marką sprzedawcy detalicznego. W programie Microsoft Dynamics 365 for Retail można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej. W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Microsoft Dynamics 365 for Retail oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych.
 
-<a name="loyalty-features"></a>Funkcje lojalnościowe
-----------------
-
-Program lojalnościowy można skonfigurować w taki sposób, żeby zawierał następujące opcje:
+Program lojalnościowy można skonfigurować w taki sposób, żeby zawierał następujące opcje.
 
 -   Konfigurowanie wielu typów nagród ofertowanych w programach lojalnościowych, a następnie śledzenie uczestnictwa w programach lojalnościowych.
 -   Konfigurowanie programów lojalnościowych reprezentujących różne oferowane premie nagród. Można dołączyć warstwy programu lojalnościowego, aby oferować większe premie i nagrody dla klientów, którzy często kupują zakupów lub wydają więcej pieniędzy w sklepach.
@@ -45,7 +42,7 @@ Program lojalnościowy można skonfigurować w taki sposób, żeby zawierał nas
 -   Ręczne dopasowanie kart lojalnościowych lub przeniesienie salda nagród w programie lojalnościowym z jednej karty do drugiej w celu dostosowania lub nagrodzenia odbiorcy.
 
 ## <a name="setting-up-loyalty-programs"></a>Konfigurowanie programów lojalnościowych
-Należy skonfigurować kilka składników, aby włączyć funkcję lojalnościową w module Dynamics 365 for Retail. Na poniższym diagramie przedstawiono składniki lojalnościowe i ich relacje względem siebie. ![Przebieg procesu konfigurowania systemu lojalności](./media/loyaltyprocess.gif)
+Należy skonfigurować kilka składników, aby włączyć funkcję lojalnościową w module Dynamics 365 for Retail. Na poniższym diagramie przedstawiono składniki lojalnościowe i ich relacje względem siebie. ![Przebieg procesu konfigurowania systemu lojalności](./media/loyaltyprocess.gif "Składniki lojalnościowe i ich relacje względem siebie")
 
 ## <a name="loyalty-components"></a>Składniki lojalnościowe
 W poniższej tabeli opisano każdy składnik i miejsce, w którym jest on używany w konfiguracji lojalnościowej.
@@ -70,11 +67,63 @@ W poniższej tabeli opisano procesy, które należy wykonać, aby wysłać konfi
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
 | 1050 (informacje o lojalności)           | Uruchom ten proces w celu wysyłania danych lojalnościowych z programu Dynamics 365 for Retail do sklepów sieci sprzedaży. Dobrze jest zaplanować częste wykonywanie tego procesu, tak aby dane lojalnościowe były przesyłane do wszystkich sklepów.                                                                                                                                                                                               | Harmonogram dystrybucji                |
 | Przetwarzanie programów lojalnościowych              | Uruchom ten proces, aby skojarzyć schematy lojalnościowe z kanałami sprzedaży detalicznej, do których jest przypisany schemat lojalnościowy. Ten proces może zostać zaplanowany do uruchamiania jako zadanie wsadowe. Należy uruchamiać ten proces przy każdej zmianie danych konfiguracji lojalności, takich jak harmonogramy, programy lojalnościowe lub punkty lojalnościowe.                                                                                               | Przetwarzanie programów lojalnościowych              |
-| Przetwarzaj transakcje programu lojalnościowego w trybie offline | Uruchom ten proces, aby zaktualizować karty lojalnościowe tak, aby uwzględniały transakcje przetworzone w trybie offline. Ten proces ma zastosowanie tylko wtedy, gdy jest zaznaczone pole wyboru **Uzyskaj w trybie offline** na stronie **Wspólne parametry sieci sprzedaży**, dzięki czemu możliwie jest odbieranie nagród w trybie offline.                                                                                                                                               | Przetwarzaj transakcje programu lojalnościowego w trybie offline |
+| Przetwarzaj transakcje programu lojalnościowego w trybie offline | Uruchom ten proces, aby zaktualizować karty lojalnościowe tak, aby uwzględniały transakcje przetworzone w trybie offline. Ten proces ma zastosowanie tylko wtedy, gdy jest zaznaczone pole wyboru **Uzyskaj w trybie offline** na stronie **Wspólne parametry sieci sprzedaży**, dzięki czemu możliwie jest odbieranie nagród offline.                                                                                                                                               | Przetwarzaj transakcje programu lojalnościowego w trybie offline |
 | Aktualizuj warstwy kart lojalnościowych            | Uruchom ten proces, aby ocenić aktywność zdobywania punktów odbiorcy pod kątem reguł warstwy dla programu lojalnościowego oraz zaktualizować stan warstwy odbiorcy. Ten proces jest wymagany tylko, gdy zmienisz reguły warstwy w programach lojalnościowych i chcesz wstecznie zastosować zaktualizowane reguły do kart lojalnościowych, które zostały już wystawione. Ten proces może być uruchamiany jako zadanie wsadowe lub dla poszczególnych kart. | Aktualizuj warstwy kart lojalnościowych            |
 
+## <a name="loyalty-enhancements"></a>Ulepszenia funkcjonalności programów lojalnościowych
 
+Aplikacja Retail w wydaniu z października 2018 roku zawiera nowe funkcje programów lojalnościowych. Każde nowe ulepszenie omówiono poniżej.
 
+- W ramach programu lojalnościowego w poprzednich wersjach sprzedawcy detaliczni mogli tworzyć różne reguły zdobywania punktów i realizacji z podziałem na warstwy (poziomy/szczeble) w celu zróżnicowania korzyści dla odbiorców na różnych poziomach. Teraz sprzedawcy detaliczni mogą w regułach zdobywania punktów i realizacji dodawać „przynależności”, tak aby określone grupy odbiorców mogły należeć do istniejących szczebli, ale otrzymywać punkty według innego schematu. Eliminuje to konieczność tworzenia dodatkowych szczebli.
+    
+    > [!NOTE]
+    > Reguły zdobywania punktów w ramach programu lojalnościowego mają charakter dodatkowy. Na przykład jeśli utworzysz regułę przyznającą członkowi na szczeblu Gold 10 punktów za każdego wydanego dolara amerykańskiego, a dodatkowo utworzysz regułę przyznającą 5 punktów za każdego wydanego dolara amerykańskiego dla odbiorców o przynależności „stały klient”, to stały klient należący do warstwy Gold otrzyma 15 punktów za każdego wydanego dolara amerykańskiego, ponieważ spełnia oba kryteria. Jednak jeśli stały klient nie kwalifikował się do poziomu Gold, otrzyma 5 punktów za każdego dolara. Aby odzwierciedlić te zmiany w kanałach, uruchom zadania **Przetwarzanie programów lojalnościowych** i **1050** (informacje o lojalności).
+    
+    ![Zdobywanie punktów poprzez przynależność](./media/Affiliation%20based%20earning.png "Zdobywanie punktów poprzez przynależność")
 
+- Sprzedawcy detaliczni często mają specjalne ceny dla określonych grup klientów, do których nie chcą stosować programów lojalnościowych. Na przykład odbiorcy hurtowni i pracownicy dostają specjalne ceny, ale nie otrzymują punktów lojalnościowych. Zazwyczaj ustawianie specjalnych cen dla takich grup odbiorców odbywa się za pomocą „przynależności”. Aby uniemożliwić określonym grupom odbiorców zdobywanie punktów lojalnościowych, sprzedawca detaliczny może zdefiniować jedną lub więcej przynależności w obszarze **Wykluczone przynależności** w ustawieniach programu lojalnościowego. W ten gdy odbiorcami należącymi do wykluczonych przynależności są uczestnicy programu lojalnościowego, nie będą otrzymywać punktów lojalnościowych za swoje zakupy. Aby odzwierciedlić te zmiany w kanałach, uruchom zadania **Przetwarzanie programów lojalnościowych** i **1050** (informacje o lojalności).
 
+    ![Wykluczone przynależności](./media/Excluded%20affiliations.png "Wykluczanie przynależności z naliczania punktów lojalnościowych")
+    
+- Sprzedawcy detaliczni mogą generować numery kart lojalnościowych w kanałach. Przed aktualizacją z października 2018 r. sprzedawcy detaliczni mogli używać fizycznych kart lojalnościowych lub generować karty lojalnościowe przy użyciu wybranych unikatowy danych odbiorców, takich jak numer telefonu. Aby umożliwić automatyczne generowanie kart lojalnościowych w sklepach detalicznych, należy włączyć funkcję **Generuj numer karty lojalnościowej** w profilu funkcjonalności skojarzonym ze sklepem. W kanałach internetowych sprzedawcy detaliczni mogą używać interfejsu API IssueLoyaltyCard w celu wystawiania kart lojalnościowych odbiorcom. Sprzedawcy detaliczni mogą w tym interfejsie API podać numer karty lojalnościowej, który zostanie użyty do wygenerowania karty lojalnościowej, lub też system użyje numeracji kart lojalnościowych ustawionej w aplikacji Dynamics 365 for Retail. Jednak jeśli numeracja nie jest zdefiniowana, a sprzedawca detaliczny nie poda numeru karty lojalnościowej podczas wywoływania interfejsu API, zostanie wyświetlony błąd.
+
+![Generowanie karty lojalnościowej](./media/Generate%20loyalty%20card.png "Automatyczne generowanie numeru karty lojalnościowej")
+
+- Uzyskane i zrealizowane punkty lojalnościowe są teraz zapisywane dla każdej transakcji i zamówienia sprzedaży względem wiersza sprzedaży, dzięki czemu tę samą kwotę można zrefundować lub wycofać w przypadku zwrotów pełnych lub częściowych. Ponadto widoczność punktów na poziomie wiersza sprzedaży pozwala użytkownikom w biurze obsługi odpowiadać na pytania klientów o liczbę punktów zarobionych lub zrealizowanych dla każdego wiersza. Przed tą zmianą punkty lojalnościowe były zawsze ponownie obliczane w przypadku zwrotów, co powodowało różnicę kwot w porównaniu z oryginalnymi, jeśli w międzyczasie zmieniły się reguły zdobywania lub realizacji punktów, a użytkownicy w biurze obsługi nie widzieli szczegółowego podziału punktów. Punkty można obejrzeć w formularzu **Transakcje kartą** dla każdej karty lojalnościowej.
+    
+- Teraz sprzedawcy detaliczni mogą definiować okres aktywowania każdego punktu lojalnościowego. Konfiguracja okresu aktywacji określi czas od dnia otrzymania punktów lojalnościowych, po którym punkty stają się dostępne dla odbiorców. Nieaktywne punkty można obejrzeć w kolumnie **Nieaktywowane punkty** na stronie **Karty lojalnościowe**. Ponadto sprzedawcy detaliczni mogą określać limit maksymalnej liczby punktów lojalnościowych dla każdej karty lojalnościowej. To pole umożliwia zmniejszenie negatywnych skutków oszustw w programach lojalnościowych. Po uzyskaniu maksymalnej liczby punktów lojalnościowych użytkownik nie może zdobyć ich więcej. Sprzedawca detaliczny może postanowić blokować takie karty do czasu zbadania, czy faktycznie doszło do oszustwa. W razie stwierdzenia oszustwa sprzedawca może nie tylko zablokować kartę lojalnościową odbiorcy, ale również zablokować samego odbiorcę. Aby to zrobić, należy ustawić właściwość **Blokuj rejestrację odbiorcy w programie lojalnościowym** na **Tak** w obszarze **Wszyscy odbiorcy** na skróconej karcie **Handel detaliczny**. Zablokowanym klientom nie będzie można wystawiać kart lojalnościowych w każdym z kanałów.
+
+![Aktywowanie i maksymalna liczba punktów lojalnościowych](./media/Vesting%20and%20maximum%20reward%20points.png "Definiowanie aktywowania i maksymalnej liczby punktów lojalnościowych")
+
+- Przynależności umożliwiają stosowanie specjalnych cen i rabatów, ale istnieją też przynależności, których sprzedawcy detaliczni nie chcą pokazywać klientom. Na przykład przynależność zatytułowana „Klient wydający dużo” może być negatywnie odbierana przez przedmiotowego odbiorcę. Ponadto istnieją przynależności, którymi nie powinno się zarządzać w sklepie. Przykładem jest przynależność „pracownicy”, ponieważ nie chcesz, aby kasjerzy decydowali, kto jest pracownikiem, i na tej podstawie przyznawali rabaty pracownicze. Sprzedawcy detaliczni mogą teraz wybierać przynależności, które mają być ukryte w kanałach sprzedaży detalicznej. Przynależności oznaczone jako **Ukryj w kanałach** nie mogą być wyświetlane, dodawane ani usuwane w punkcie sprzedaży. Jednak ceny i rabaty skojarzone z przynależnością nadal będą stosowane do produktów.
+
+![Ukrywanie przynależności](./media/Hide%20affiliations.png "Ukrywanie przynależności w kanałach")
+    
+- Użytkownicy w biurze obsługi mogą teraz łatwiej wyszukiwać odbiorców przy użyciu danych z ich kart lojalnościowych oraz przechodzić do stron karty lojalnościowej i transakcji na karcie lojalnościowej odbiorcy ze strony **Obsługa klienta**. 
+
+![Obsługa klienta](./media/Customer%20service.png "Znajdowanie informacji lojalnościowych dla odbiorcy")
+    
+- W razie naruszenia zabezpieczeń karty lojalnościowej należy wygenerować kartę zastępczą, a następnie przenieść do niej istniejące punkty. W tej wersji uproszczono proces wymiany karty. Ponadto klienci mogą przekazywać część lub wszystkie punkty lojalnościowe znajomym i członkom rodziny. Po przeniesieniu punktów dla każdej karty lojalnościowej są tworzone wpisy korekty punktów. Funkcje wymiany karty i przenoszenia sald są dostępne na stronie **Karty lojalnościowe**.
+
+![Wymiana karty i przenoszenie punktów](./media/Replace%20and%20transfer%20points.png "Wymiana karty lojalnościowej lub przeniesienie salda punktów")
+    
+- Sprzedawcy detaliczni mogą chcieć sprawdzać efektywność rejestrowania odbiorców w programie lojalnościowym przez określony kanał. Źródło rejestrowania kart lojalnościowych jest teraz zapisywane, dzięki czemu sprzedawcy detaliczni mogą generować raporty o tych danych. Źródło rejestracji jest automatycznie zapisywane dla wszystkich wydanych kartach lojalnościowych z aplikacji MPOS/CPOS i kanałów handlu elektronicznego. Dla kart lojalnościowych wydanych z aplikacji zaplecza użytkownik w biurze obsługi może wybrać odpowiedni kanał.
+
+- W starszych wersjach sprzedawcy detaliczni mogli używać aplikacji MPOS/CPOS do realizowania punktów lojalnościowych odbiorców w sklepie. Jednak w tych wersjach saldo w programie lojalnościowym jest wyświetlane w punktach lojalnościowych, dlatego kasjer nie widział kwoty pieniężnej, którą można było wykorzystać w bieżącej transakcji. Kasjer musiał ręcznie przeliczyć punkty na walutę, zanim klient mógł zapłacić punktami lojalnościowymi. W obecnej wersji po dodaniu wierszy do transakcji kasjer widzi kwotę, jaką można pokryć punktami lojalnościowymi w bieżącej transakcji, dzięki czemu można łatwo zastosować część lub wszystkie punkty lojalnościowe do transakcji. Ponadto kasjer widzi punkty wygasające w ciągu najbliższych 30 dni, więc może zaproponować sprzedaż dodatkową lub wiązaną, aby zmotywować klienta do wydania wygasających punktów w tej transakcji.
+
+![Pokrycie punktami z salda w programie lojalnościowym](./media/Points%20covered%20by%20loyalty%20balance.png "Wyświetlanie salda pokrytego punktami lojalnościowymi")
+
+![Wygasające punkty](./media/Expiring%20points.png "Wyświetlanie wygasających punktów")
+    
+## <a name="upcoming-enhancements"></a>Nadchodzące ulepszenia
+
+Następujące funkcje zostaną udostępnione w przyszłych miesięcznych aktualizacjach aplikacji Dynamics 365 for Retail.
+    
+- Klienci chcą mieć możliwość wyświetlania szczegółów swoich sald w programach lojalnościowych w kanałach, których używają. Podobnie ważne jest, aby kasjerzy mogli wyświetlać historie punktów lojalnościowych odbiorców w aplikacji MPOS/CPOS, co pozwoli szybko odpowiadać na pytania odbiorców. W nadchodzącej miesięcznej aktualizacji klienci i kasjerzy będą mogli wyświetlać szczegóły historii sald w programach lojalnościowych.
+
+- Wielu sprzedawców detalicznych jest w stanie przyznawać punkty lojalnościowe wyłącznie na podstawie transakcji sprzedaży, ale sprzedawcy zorientowani bardziej prokonsumencko chcą też nagradzać za każdą interakcję z marką. Na przykład chcą przyznawać punkty za wypełnienie ankiety internetowej, odwiedziny sklepu, polubienie sprzedawcy w serwisie Facebook, wysłanie tweeta o sprzedawcy itd. W przyszłości dodamy możliwość przyznawania punktów lojalnościowych za każdą aktywność odbiorcy. W tym celu sprzedawca detaliczny może zdefiniować „inny typ działania”, a następnie zdefiniować reguły zdobywania punktów za to działanie. Udostępnimy interfejs API usługi Retail Server, który można wywoływać po zidentyfikowaniu działania mającego użyć reguły zdobywania punktów do przyznania odpowiedniej liczby punktów lojalnościowych.
+
+- Aby stworzyć faktycznie wielokanałowe środowisko handlu detalicznego, pozwolimy klientom na zdobywanie i realizowanie punktów lojalnościowych we wszystkich kanałach. 
+
+- Jednym z czynników istotnie motywujących klientów do kupowania przez Internet jest bezpłatna lub tania dostawa. Aby umożliwić sprzedawcom detalicznym konfigurowanie promocji na dostawy, wprowadzimy nowy rodzaj promocji, w którym sprzedawca detaliczny może definiować progi, po których osiągnięciu odbiorcy otrzymają korzyść w postaci tańszej lub bezpłatnej dostawy.
 

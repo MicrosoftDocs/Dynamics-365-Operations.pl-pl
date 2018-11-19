@@ -1,6 +1,6 @@
 ---
 title: "Funkcje i możliwości aplikacji Attract"
-description: "Aplikacja Attract udostępnia funkcje zarządzania procesem zatrudniania nowych talentów. Kandydatów można dodać do otwartych stanowisk i przesuwać między etapami aż do przedłużenia oferty lub odrzucenia podania."
+description: "W tym temacie opisano funkcje aplikacji Attract służące do zarządzania procesem zatrudniania nowych pracowników."
 author: rschloma
 manager: AnnBe
 ms.date: 08/01/2017
@@ -18,32 +18,32 @@ ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 37dd0396787375fccd4082f392e079ed5dab04e9
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: dd65def0006445da1a8d07577cf5ef05178c19bd
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 # <a name="attract-features-and-capabilities"></a>Funkcje i możliwości aplikacji Attract
 
 [!include [banner](includes/banner.md)]
 
-Aplikacja Attract udostępnia funkcje zarządzania procesem zatrudniania nowych talentów. Kandydatów można dodać do otwartych stanowisk i przesuwać między etapami aż do przedłużenia oferty lub odrzucenia podania. Na każdym etapie kandydaci przechodzą przez takie etapy jak rozmowa telefoniczna umożliwiająca wstępną selekcję, oceny lub planowanie rozmów. Po złożeniu podania kandydaci otrzymują wiadomość e-mail z zaproszeniem do zarejestrowania w aplikacji Attract, gdzie mogą śledzić stan oferty pracy, podania i reagować na przypisane do nich zadania.
+Aplikacja Attract udostępnia funkcje zarządzania procesem zatrudniania nowych pracowników. Kandydatów można dodawać do otwartych funkcji, a następnie przekazywać na kolejne etapy do momentu, aż kandydat otrzyma ofertę albo zostanie odrzucony. Na każdym etapie kandydaci przechodzą przez działania takie jak rozmowa telefoniczna umożliwiająca wstępną selekcję, ocena i rozmowa kwalifikacyjna. Po złożeniu podania kandydaci otrzymują wiadomość e-mail z zaproszeniem do zarejestrowania w aplikacji Attract, gdzie mogą śledzić stan funkcji i swojego zgłoszenia. Mogą także reagować na wszelkie przypisane im zadania.
 
-Funkcje aplikacji Attract wymieniono poniżej.
+W tym temacie opisano funkcje udostępniane przez aplikację Attract.
 
 ## <a name="attract-dashboard"></a>Pulpit nawigacyjny aplikacji Attract
-W tym miejscu członkowie zespołu rekrutującego mogą zobaczyć szczegóły stanowisk, które obsługują. Także tutaj menedżer ds. zatrudnienia lub rekruter mogą dodać nowe stanowiska do aplikacji Attract, tworząc je indywidualnie lub importując wszystkie naraz z arkusza programu Excel.
+Na pulpicie nawigacyjnym członkowie zespołu rekrutacyjnego mogą wyświetlać szczegóły funkcji, w które są zaangażowani. Także w pulpicie nawigacyjnym menedżer zatrudniający lub osoba rekrutująca może dodawać nowe funkcje do aplikacji Attract, tworząc je indywidualnie lub importując wszystkie naraz z arkusza programu Microsoft Excel.
 
 ## <a name="jobs"></a>Funkcje
-Na stronie **Stanowisko** można wyświetlić edytować informacje, takie jak opis i lokalizacja stanowiska. Strona **Stanowisko** umożliwia zebranie zespołu rekrutującego oraz dodawanie lub zmianę rekruterów oraz osób prowadzących rozmowy. Na stronie **Stanowisko** można także dodać nowych kandydatów.
+Na stronie **Funkcja** można wyświetlić i edytować informacje takie jak opis funkcji i lokalizacja funkcji. Strona **Funkcja** umożliwia także zebranie zespołu rekrutacyjnego oraz dodawanie lub zmianę osób rekrutujących i osób prowadzących rozmowy kwalifikacyjne. Na stronie **Stanowisko** można także dodać nowych kandydatów.
 
 ## <a name="candidates"></a>Kandydaci
-Kandydatów można dodać do stanowiska pojedynczo lub przesłać ich większą liczbę w arkuszu programu Excel. W procesie zatrudniania na nowe stanowisko wszyscy kandydaci są automatycznie dodawani do pierwszego etapu, Zgłoszenie. W tym miejscu można wyświetlić i zarządzać informacjami o zgłoszeniach wszystkich kandydatów. Można przesłać i wyświetlić dodatkowe dokumenty razem z informacjami kontaktowymi, takimi jak adresy e-mail, numery telefonów i łącza do kont w sieciach społecznościowych. Jeżeli kandydat podał łącze do profilu w serwisie LinkedIn i skonfigurowano integrację z serwisem LinkedIn (co wymaga licencji rekrutera dla serwisu LinkedIn), zostanie wyświetlony profil kandydata.
+Kandydatów można dodać do funkcji pojedynczo lub przesłać ich większą liczbę w arkuszu programu Excel. Wszyscy kandydaci są automatycznie dodawani do etapu Zgłoszenie, który jest pierwszym etapem w procesie rekrutacji na każdą funkcję. Na tym etapie można wyświetlać wszystkie informacje ze zgłoszenia kandydata oraz nimi zarządzać. Można przesłać i wyświetlić dodatkowe dokumenty razem z informacjami kontaktowymi, takimi jak adresy e-mail, numery telefonów i łącza do kont w sieciach społecznościowych. Jeśli kandydat podał łącze do swojego profilu w serwisie LinkedIn, a skonfigurowano integrację z LinkedIn, zostanie wyświetlony profil kandydata. (Integracja z serwisem LinkedIn wymaga licencji na usługę LinkedIn Recruiter).
 
 ## <a name="stages"></a>Etapy
-Aplikacja Attract udostępnia wstępnie zdefiniowany proces zatrudniania zawierający cztery podstawowe etapy: Zgłoszenie, Wstępna selekcja, Rozmowa i Oferta. Nowi kandydaci rozpoczynają od etapu zgłoszenia, na którym sprawdzany jest ich życiorys, list motywacyjny, portfolio oraz inne dokumenty aplikacyjne. Z tego etapu można przesunąć kandydata do etapu wstępnej selekcji, w którym są zapraszani do rozmowy telefonicznej lub rozmowy wideo w aplikacji Skype. Menedżer ds. zatrudniania i rekruter mogą przekazać opinię o kandydacie i przenieść go do kolejnego etapu. Następnie planowane są rozmowy z dostępnymi członkami zespołu ds. zatrudniania i mogą to być rozmowy o różnym czasie trwania — indywidualne lub w grupach. Po zakończeniu rozmów następuje zebranie i sprawdzenie opinii zespołu ds. rozmów. Wybrani kandydaci są przenoszeni do ostatniego etapu, na którym składana jest oferta i następuje przygotowanie do sprawdzenia i zatwierdzenia. 
+Aplikacja Attract udostępnia wstępnie zdefiniowany proces rekrutacji zawierający cztery podstawowe etapy: Zgłoszenie, Wstępna selekcja, Rozmowa kwalifikacyjna i Oferta. Nowi kandydaci rozpoczynają od etapu Zgłoszenie, na którym sprawdzany jest ich życiorys, list motywacyjny, portfolio oraz inne dokumenty zgłoszenia. Z tego etapu można przesunąć kandydatów do etapu Wstępna selekcja, w którym są zapraszani do rozmowy telefonicznej lub rozmowy wideo w aplikacji Skype. Menedżer zatrudniający i osoba rekrutująca mogą przekazać opinię o kandydatach i przenieść ich do kolejnego etapu, którym jest Rozmowa kwalifikacyjna. Wtedy planuje się osobiste rozmowy kwalifikacyjne z dostępnymi członkami zespołu rekrutacyjnego. Mogą to być rozmowy indywidualne lub grupowe o różnym czasie trwania. Po zakończeniu rozmów następuje zebranie i sprawdzenie opinii zespołu ds. rozmów. Wybrani kandydaci są następnie przekazywani do ostatniego etapu, czyli Oferta. Na tym etapie jest przygotowywana i składana oferta, którą kandydat czyta i aprobuje lub nie.
 
 ## <a name="candidate-app"></a>Aplikacja dla kandydatów
-Kandydaci otrzymują wiadomość e-mail z łączem do aplikacji zaraz po dodaniu do stanowiska. Ta aplikacja sieci web umożliwia kandydatom uzyskanie szczegółowych informacji o stanowisku i jest narzędziem do komunikacji z zespołem ds. zatrudniania. Kandydaci mogą także przesłać informacje o swojej dostępności dotyczącej rozmów.
+Gdy tylko kandydat zostanie dodany do funkcji, otrzymuje wiadomość e-mail z łączem do pobrania aplikacji internetowej. Aplikacja przekazuje szczegółowe informacje o funkcji i służy do komunikowania się z zespołem rekrutacyjnym. Kandydaci mogą także za pomocą aplikacji przesłać informacje o swojej dostępności do rozmów kwalifikacyjnych.
 

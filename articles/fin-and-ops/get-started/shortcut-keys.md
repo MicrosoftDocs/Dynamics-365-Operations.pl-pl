@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
+ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
+ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/25/2018
 
 ---
 
@@ -192,7 +192,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Dodaj/usuń formularz jako ulubiony (z fokusem ustawionym na formularz w okienku nawigacji)   | Shift+F                    |
 | Przejdź do standardowego okienka akcji                                              | Alt+M, A lub Ctrl+F6         |
 | Przejdź do okienka filtru (może obejmować jego otwarcie)                        | Alt+M, F lub Ctrl+F3         |
-| Przenieś fokus do zawartości strony (gdy fokus znajduje się na liście nawigacyjnej)            | Alt+M, M lub Ctrl+F3         |
+| Przenieś fokus do zawartości strony (gdy fokus znajduje się w okienku filtru)                | Alt+M, M lub Ctrl+F3         |
 | Przejdź do listy nawigacji w formularzu Szczegóły (może obejmować jego otwarcie)    | Alt+M, S lub Ctrl+F8         |
 | Przenieś fokus do zawartości strony (gdy fokus znajduje się na liście nawigacyjnej)            | Alt+M, M lub Ctrl+F8         |
 | Zamknij listę nawigacji w formularzu Szczegóły (z wyróżnieniem na liście nawigacji) | Esc                        |

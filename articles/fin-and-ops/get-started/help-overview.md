@@ -3,7 +3,7 @@ title: "System Pomocy rozwiązania Finance and Operations"
 description: "Ten temat zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations. Wyjaśniono tu również, jak można dostarczać niestandardową dokumentację i szkolenia dla swojej organizacji."
 author: margoc
 manager: AnnBe
-ms.date: 07/12/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
+ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
+ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 10/17/2018
 
 ---
 
@@ -45,14 +45,14 @@ Program Finance and Operations zawiera system Pomocy oparty na dwóch głównych
 -   Witryna z dokumentacją
 -   Przewodniki zadań
 
-Dostęp do tematów pomocy i przewodników po zadaniach można uzyskać z okienka Pomocy każdego używanego produktu. Następujące zrzuty ekranu przedstawiają program Dynamics 365 for Finance and Operations:
+Do pomocy można przejść z okienka pomocy w każdym używanym produkcie. Następujące zrzuty ekranu przedstawiają program Finance and Operations.
 
 ![Okienko pomocy](./media/help-pane-ops-task-guides.png)
 
 Ten temat zawiera opis systemu Pomocy oraz wyjaśnia sposób tworzenia niestandardowych dokumentów i materiałów szkoleniowych w organizacji.
 
 > [!IMPORTANT]
-> Karta **Przewodniki po zadaniach** jest obecnie niedostępna w programach Microsoft Dynamics 365 for Talent i Microsoft Dynamics 365 for Retail. Obecnie pracujemy nad włączeniem tej funkcjonalności w przyszłym wydaniu. Przewodniki po zadaniach w sekcji Rozpoczęcie pracy w module Talent pozostają dostępne i oferują podstawowe funkcje. Ponadto jest dostępna pomoc dla procedur w witrynie docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) dla aplikacji Retail i Talent.
+> **Przewodniki po zadaniach** nie są obecnie dostępne dla aplikacji Retail ani w okienku pomocy dla aplikacji Talent (kilka przewodników po zadaniach jest dostępnych w okienku Pierwsze kroki dla aplikacji Talent). Pomoc dla procedur jest dostępna w witrynie docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) dla aplikacji Retail i Talent.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Pomoc w witrynie docs.microsoft.com
 
@@ -64,17 +64,16 @@ Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](
 -   **Zawartość, która pomaga w obsłudze procesów biznesowych** — Witryna zawiera treści skoncentrowane na procesach biznesowych, które korzystają z narzędzia do modelowania procesów biznesowych (BPM) dostępnego w usłudze Microsoft Dynamics Lifecycle Services (LCS).
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Wyszukiwanie w witrynie docs.microsoft.com
-Otrzymujemy wiele pytań dotyczących sposobu przeszukiwania naszej zawartości. Jeżeli wizytę w naszej witrynie rozpoczniesz na stronie dotyczącej programu Finance and Operations, wyszukiwanie będzie ograniczone tylko do zawartości dotyczącej tego programu. Możesz usunąć to ograniczenie zakresu, klikając znak X obok nazwy Operations w polu wyszukiwania. 
+Otrzymujemy wiele pytań dotyczących sposobu przeszukiwania naszej zawartości. Jeżeli wizytę w naszej witrynie rozpoczniesz na stronie dotyczącej programu Finance and Operations, wyszukiwanie będzie ograniczone tylko do zawartości dotyczącej tego programu. Możesz usunąć to ograniczenie zakresu, klikając znak X obok nazwy Unified Operations w polu wyszukiwania. 
 
 ![Wyszukaj zamówienia](./media/search-scope-2.png)
 
 Można również znaleźć naszą zawartość przy użyciu dowolnego aparatu wyszukiwania. W celu uzyskania najlepszych wyników zalecamy korzystanie z przeszukiwania witryny, takiego jak site:docs.microsoft.com dynamics 365 „szukany termin”.  
 
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>Spis treści na stronie docs.microsoft.com
-Rozwiązania Finance and Operations, Retail i Talent mają jeden wspólny spis treści w witrynie dokumentów, dzięki czemu użytkownicy widzą kontekst aktualnie wyświetlonego tematu. Pozwala to również używać formantu Filtr nad spisem treści do znajdowania szukanych tematów.
+Rozwiązania Finance and Operations i Retail mają jeden wspólny spis treści w witrynie dokumentów, dzięki czemu użytkownicy widzą kontekst aktualnie wyświetlonego tematu. Pozwala to również używać formantu Filtr nad spisem treści do znajdowania szukanych tematów. 
 
-### <a name="follow-a-topic"></a>Przejście do tematu
-Aby przejść do tematu, kliknij przycisk +Śledzenie pod polem komentarza. Aby przejść do tematu należy się zalogować. Szczegółowe informacje zawiera sekcja [Zostaw nam opinię](#leave-us-feedback).  
+Można uzyskać pomoc od innych produktów Dynamics 365, wyszukując je lub klikając pozycję Dynamics 365 w łączach do stron nadrzędnych witryny, co spowoduje przejście do strony centrum. 
 
 ### <a name="use-an-rss-feed"></a>Używanie źródła danych RSS
 Aby subskrybować źródło danych RSS ze wszystkimi aktualizacjami zawartości platformy Unified Operations, wpisz następujące łącze w przeglądarce obsługującej źródła danych RSS, takiej jak Internet Explorer, lub w menedżerze źródeł danych RSS: 
@@ -106,17 +105,18 @@ Więcej informacji zawiera podręcznik dla współautorów: https://github.com/M
 
 
 > [!NOTE]
-> Obecnie akceptujemy współtworzenie tylko naszych repozytoriów w języku angielskim.  
+> Obecnie akceptujemy współtworzenie tylko zbioru treści w języku angielskim.  
 
 
 ## <a name="task-guides"></a>Przewodniki zadań
 Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w zadaniach i procesach biznesowych. Przewodnik można otworzyć (i odtworzyć) z okienka pomocy. Po kliknięciu przewodnika po zadaniu okienko pomocy pokaże dokładne instrukcje wykonania zadania. Dostępne są przetłumaczone przewodniki po zadaniach. 
 
-Udostępniamy różne zestawy przewodników po zadaniach dla każdego produktu, na przykład Dynamics 365 for Retail, Dynamics 365 for Finance and Operations czy Dynamics 365 for Talent. Sekcja Uzyskiwanie dostępu do przewodników po zadaniach z okienka Pomocy opisuje sposób znajdowania odpowiednich przewodników po zadaniach dla używanego produktu. 
+Firma Microsoft dostarczyła biblioteki przewodników po zadaniach dla wersji programu Finance and Operations wydanych do grudnia 2017 roku włącznie. Sekcja [Uzyskiwanie dostępu do przewodników po zadaniach z okienka pomocy](help-overview.md#accessing-task-guides-from-the-help-pane) opisuje sposób znajdowania odpowiednich przewodników po zadaniach dla używanego produktu. 
 
 ![Przewodnik po zadaniu w widoku do czytania](./media/task-guide-ops.png)
 
 Aby rozpocząć korzystanie z interaktywnego przewodnika, kliknij opcję **Uruchom przewodnik po zadaniach** u dołu okienka Pomocy. Zostanie wyświetlony czarny wskaźnik pokazujący czynność, którą należy wykonać. Postępuj zgodnie z instrukcjami wyświetlanymi w interfejsie użytkownika, a następnie wprowadź dane, zgodnie ze wskazówkami. 
+
 ![Instrukcje krok po kroku przewodnika po zadaniu](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT] 
@@ -126,7 +126,11 @@ Aby rozpocząć korzystanie z interaktywnego przewodnika, kliknij opcję **Uruch
 
 Przewodniki po zadaniach są tworzone przy użyciu rejestratora zadań. Jeśli korzystasz z Rejestratora zadań, wszystkie czynności wykonywane w interfejsie użytkownika programu Finance and Operations (takie jak klikanie menu, zmienianie ustawień i wprowadzanie danych) są nagrywane. Zapisywane kroki są zbiorczo zwane nagraniami zadań. Jak zostało wyjaśnione w poprzedniej sekcji, rejestry zadań można wyświetlić w okienku pomocy i odtworzyć jako przewodniki po zadaniach. Istnieją inne sposoby używania nagrań zadań:
 
--   **Zapisywanie nagrań zadań w BPM** — można zapisać nagranie zadania w wierszu hierarchii biblioteki BPM w LCS. Po zapisaniu nagrania zadania w BPM zostanie wygenerowany i wyświetlony diagram blokowy wraz z krokami nagrania. **Uwaga:** Aby wyświetlić nagranie zadania w okienku pomocy w programie Finance and Operations i odtworzyć je jako przewodnik po zadaniu, należy zapisać nagranie w bibliotece BPM.
+-   **Zapisywanie nagrań zadań w BPM** — można zapisać nagranie zadania w wierszu hierarchii biblioteki BPM w LCS. Po zapisaniu nagrania zadania w BPM zostanie wygenerowany i wyświetlony diagram blokowy wraz z krokami nagrania. 
+
+    > [!Note]
+    > Aby wyświetlić nagranie zadania w okienku pomocy w programie Finance and Operations i odtworzyć je jako przewodnik po zadaniu, należy zapisać nagranie w bibliotece BPM.
+    
 -   **Zapisywanie nagrań zadań w formie dokumentów programu Word** — zapisując nagranie zadania jako dokument programu Microsoft Word, można łatwo tworzyć przewodniki szkoleniowych nadające się do drukowania.
 
 Aby uzyskać więcej informacji na temat Rejestratora zadań, zobacz [Rejestrator zadań w programie Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
@@ -142,7 +146,7 @@ Aby uzyskać dostęp do zawartości pomocy w programie Finance and Operations, k
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Uzyskiwanie dostępu do tematów pomocy z okienka Pomocy
 
-Z okienka pomocy można uzyskać dostęp artykułów mających zastosowanie do klienta programu Finance and Operations. Gdy po raz pierwszy otworzysz okienko pomocy i klikniesz kartę **Wiki**, zobaczysz artykuły mające zastosowanie do strony aktualnie wyświetlonej w programie Finance and Operations. Jeśli nie zostaną znalezione żadne artykuły, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie. Po kliknięciu artykułu w okienku pomocy w przeglądarce zostanie otwarta nowa karta z artykułem. 
+Z okienka pomocy można uzyskać dostęp artykułów mających zastosowanie do klienta programu Finance and Operations. Gdy po raz pierwszy otworzysz okienko pomocy i klikniesz kartę **Pomoc**, zobaczysz artykuły mające zastosowanie do strony aktualnie wyświetlonej w programie Finance and Operations. Jeśli nie zostaną znalezione żadne artykuły, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie. Po kliknięciu artykułu w okienku pomocy w przeglądarce zostanie otwarta nowa karta z artykułem. 
 
 > [!IMPORTANT]
 > Ta sekcja nie dotyczy programu Dynamics 365 for Talent. System Pomocy programu Talent jest automatycznie łączony z przewodnikami po zadaniach dla tego produktu. Ponadto nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Talent. 
@@ -160,7 +164,9 @@ Zanim będzie można uzyskać dostęp do przewodników po zadaniach z okienka po
 Na stronie **Parametry systemu** wykonaj następujące kroki:
 
 1.  **Ważne:** Podczas pierwszego otwierania karty Pomoc należy utworzyć połączenie z usługą Lifecycle Services. Kliknij łącze na środku formularza, poczekaj na nawiązanie połączenia, zamknij okno dialogowe i kliknij przycisk **OK**, co spowoduje przejście do formularza Parametry.
+
 ![Nawiązywanie połączenia z usługą LCS](./media/connect-to-lcs-crop-1024x365.png)
+
 2.  Wybierz projekt Lifecycle Services, z którym chcesz się połączyć.
 3.  Wybierz biblioteki BPM (w ramach wybranego projektu), z których będą pobierane nagrania zadań.
     - Pakiety zawartości Microsoft dla programu Finance and Operations znajdują się w ujednoliconej bibliotece QPC z lutego 2017 r. dla programu Microsoft Dynamics 365 for Finance and Operations. 
@@ -173,38 +179,29 @@ Po wykonaniu tych kroków przez administratora systemu można utworzyć okienko 
 
 ![Przewodnik po zadaniu w widoku do czytania](./media/task-guide-ops.png)
 
-### <a name="where-are-the-translated-task-guides"></a>Gdzie są przetłumaczone przewodniki po zadaniach?
+### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Gdzie są przetłumaczone przewodniki po zadaniach dla bibliotek Microsoft?
 
 Przetłumaczone przewodniki po zadaniach są wydawane w bibliotekach z tytułem zawierającym wyrażenie „Wszystkie języki”. Aby wyświetlić przetłumaczone przewodniki po zadaniach w pomocy w programie Finance and Operations, upewnij się, że masz połączenie z odpowiednią biblioteką. Język wyświetlania przetłumaczonego przewodnika po zadaniu jest kontrolowany przez każdego użytkownika w ustawieniach języka w oknie **Opcje** &gt; **Preferencje**. 
 -   Jeśli przewodnik po zadaniu został przetłumaczony, po otwarciu przewodnika jego cały tekst będzie wyświetlany w wybranym języku.
 -   Jeśli przewodnik po zadaniu nie został jeszcze przetłumaczony, po otwarciu przewodnika tylko część tekstu (formanty) będzie wyświetlana w wybranym języku.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-W poniższej tabeli wymieniono nasze witryny internetowe. Nasze strony z zawartością są zorganizowane tak, aby wspomagać cykl życia klienta. Do każdej fazy jest inny zestaw witryn. Witryny z gwiazdką (\*) obok nazwy wymagają logowania przy użyciu konta, które jest skojarzone z planem usługi.
+
+- [System Pomocy programu Finance and Operations (arkusz informacyjny do pobrania)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+- [Rejestrator zadań](../../dev-itpro/user-interface/task-recorder.md)
+- [Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań](../../dev-itpro/user-interface/task-recorder.md)
+
+W poniższej tabeli wymieniono nasze witryny internetowe. Witryny z gwiazdką (\*) obok nazwy wymagają logowania przy użyciu konta, które jest skojarzone z planem usługi.
 
 | Oddział                                                                     | opis                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Docs.microsoft.com](/dynamics365/) | Hosty lub łącza do dokumentacji wszystkich produktów dla systemu Dynamics 365.                                                                                                                                                               |
-| [Usługa Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Zawiera obszar współpracy oparty na chmurze, w którym klienci i ich partnerzy mogą całościowo zarządzać projektami w programie Dynamics 365 for Finance and Operations — od przedsprzedaży po wdrożenie i bieżącą eksploatację. Ta witryna jest przydatna we wszystkich fazach implementacji. |
-| [CustomerSource](http://www.customersource.com/)\*                       | Zawiera rozbudowane zasoby szkoleniowe i jest główną witryną pomocy technicznej dla programu Dynamics 365 for Finance and Operations. Dostęp do określonych zasobów w witrynie może wymagać zalogowania się.                                                                      |
+| [Microsoft Learn](https://docs.microsoft.com/learn/) | Witryna bezpłatnych szkoleń elektronicznych firmy Microsoft.                                                                                                                                                               |
+| [Lifecycle Services](https://lcs.dynamics.com/en/)\*                      | Zawiera obszar współpracy oparty na chmurze, w którym klienci i ich partnerzy mogą całościowo zarządzać projektami w programie Dynamics 365 for Finance and Operations — od przedsprzedaży po wdrożenie i bieżącą eksploatację. Ta witryna jest przydatna we wszystkich fazach implementacji. |
 | [Blog pomocy technicznej](http://aka.ms/AXSupportBlog)                              | Zawiera porady i wskazówki publikowane przez zespół pomocy technicznej programu Dynamics 365 for Finance and Operations.                                                                                                                                                  |
-| [MSDN](http://aka.ms/AXMSDN)                                             | Obsługuje zawartość z poprzednich wersji przeznaczoną dla deweloperów.                                                                                                                                                                       |
-| [TechNet](http://aka.ms/TechNet)                                         | Obsługuje zawartość z poprzednich wersji przeznaczoną dla informatyków i użytkowników aplikacji.                                                                                                                                           |
-| [Społeczność użytkowników produktów Dynamics](http://community.dynamics.com/)                  | Obsługuje blogi, fora i wideo.                                                                                                                                                                                                           |
+| [Docs.microsoft.com/poprzednie wersje](https://docs.microsoft.com/en-us/previous-versions/dynamics/)                                             | Zawiera treści w poprzednich wydań.                                                                                                                                                                       |
+| [Społeczność użytkowników produktów Dynamics](https://community.dynamics.com/)                  | Obsługuje blogi, fora i wideo.                                                                                                                                                                                                           |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/en-us/dynamics365/home)                 | Zawiera ocenę i informacje o sprzedaży.                                                                                                                                                                                                 |
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\*                      | Zawiera niektóre materiały szkoleniowe dla Finance and Operations oraz raporty i oficjalne dokumenty do pobrania, a także jest główną witryną pomocy technicznej dla posiadaczy planów usług. Dostęp do niektórych zasobów w witrynie może wymagać posiadania planu usług.     |
 
-
-
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
-[System Pomocy programu Finance and Operations (arkusz informacyjny do pobrania)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
-
-[Rejestrator zadań](../../dev-itpro/user-interface/task-recorder.md)
-
-[Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań](../../dev-itpro/user-interface/task-recorder.md)
-
-[Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
-[Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)](new-updated-task-guides-available-august-2016.md)
-[Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)](new-updated-task-guides-available-may-2016.md)
-[Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)
 

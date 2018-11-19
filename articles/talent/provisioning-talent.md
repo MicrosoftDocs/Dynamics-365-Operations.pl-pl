@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: d28ca1f9cf2bef73dc687a85592056cccc767da5
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 6fb41a8c1ff4ce95bab5b169256955f244e66071
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 # <a name="provision-talent"></a>Inicjowanie obsługi rozwiązania Talent
@@ -47,7 +47,7 @@ Aby uzyskać informacje dotyczące rozpoczęcia pracy z aplikacją talent, zapoz
 Po utworzeniu projektu LCS można zainicjować aplikację Talent w środowisku.
 
 1. W projekcie LCS wybierz kafel **Zarządzanie aplikacją Talent**.
-2. Aplikacja talent jest zawsze inicjowana w środowisku Microsoft PowerApps, aby umożliwić integrację z PoweApps i możliwość rozszerzenia. Przed kontynuowaniem przeczytaj w tym temacie sekcję „Wybieranie środowiska usługi PowerApps”. 
+2. Aplikacja Talent jest zawsze inicjowana w środowisku Microsoft PowerApps, aby umożliwić integrację z PoweApps i możliwość rozszerzenia. Przed kontynuowaniem przeczytaj w tym temacie sekcję „Wybieranie środowiska usługi PowerApps”. Jeśli nie masz jeszcze środowiska PowerApps, wybierz opcję Zarządzaj środowiskami w oknie usługi LCS lub przejdź do Centrum administracyjnego usługi PowerApps. Następnie wykonaj procedurę [tworzenia środowiska usługi PowerApps](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 
     > [!NOTE]
     > Aby wyświetlić istniejące środowiska lub utworzyć nowe, należy przypisać delegowanego administratora odpowiedzialnego za inicjację aplikacji Talent do licencji P2 środowiska PowerApps. Jeśli organizacja nie posiada licencji P2 środowiska PowerApps, można ją uzyskać u CSP lub ze [strony cennika środowiska PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
@@ -73,7 +73,7 @@ Integracja środowisk Talent i PowerApps pozwala integrować i poszerzać stosow
 Przy ustalaniu, w którym środowisku usługi PowerApps wdrożyć moduł Talent, kieruj się poniższymi wskazówkami: 
 1. W usłudze LCS wybierz opcję Zarządzaj środowiskami lub przejdź bezpośrednio do centrum administracyjnego usługi PowerApps, gdzie możesz obejrzeć istniejące i tworzyć nowe środowiska.
 2. Jedno środowisko aplikacji Talent jest mapowane na jedno środowisko usługi PowerApps.
-3. Środowisko usługi PowerApps „zawiera” aplikację Talent wraz z towarzyszącymi aplikacjami środowisk PowerApps, Flow i CDS. Usunięcie środowiska usługi PowerApps spowoduje wykasowanie znajdujących się w nim aplikacji.
+3. Środowisko usługi PowerApps „zawiera” aplikację Talent wraz z towarzyszącymi aplikacjami środowisk PowerApps, Flow i CDS. Usunięcie środowiska usługi PowerApps spowoduje wykasowanie znajdujących się w nim aplikacji. Podczas inicjowania obsługi administracyjnej środowiska aplikacji Talent można wybrać opcję „Wersja próbna” lub „Wersja produkcyjna”. Wybierz typ środowiska odpowiednio do tego, jak będzie używane. 
 4. Należy wziąć pod uwagę strategie integracja i testowanie danych, na przykład piaskownicę (wirtualne środowisko testowe), testy akceptacji użytkownika czy produkcję. Dlatego zalecamy rozważenie różnych skutków dla danego wdrożenia, ponieważ później nie jest łatwo zmienić mapowanie środowiska aplikacji Talent na inne środowisko usługi PowerApps.
 5. Następujące środowiska usługi PowerApps nie mogą być używane dla aplikacji Talent i będą odfiltrowane z listy wyboru w usłudze LCS:
  

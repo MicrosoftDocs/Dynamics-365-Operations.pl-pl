@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: eb99f169ada2a227ebe8e64ee56bbb38cdfda4e0
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -48,7 +48,8 @@ Ustawienie **Funkcje w wersji zapoznawczej** dostępne w centrum administracyjny
 1. Zaloguj się w aplikacji Microsoft Dynamics 365 for Talent: Attract.
 2. W menu **Ustawienia** (symbol koła zębatego) w prawym górnym rogu wybierz opcję **Ustawienia administratora**.
 3. Na karcie **Zarządzanie funkcjami** zaznacz opcję obok napisu **Funkcje w wersji zapoznawczej**, tak aby zmieniła kolor na niebieski.
-4. Odśwież przeglądarkę, a zaczniesz widzieć nowe funkcje. (Wszyscy użytkownicy, którzy są już zalogowani, zobaczą funkcje po następnym zalogowaniu, lub też mogą odświeżyć przeglądarki, a zobaczą je natychmiast).
+4. Opcjonalnie można kontrolować poszczególne funkcje poprzez ich włączanie i wyłączanie na tej stronie.
+5. Odśwież przeglądarkę, a zaczniesz widzieć nowe funkcje. (Wszyscy użytkownicy, którzy są już zalogowani, zobaczą funkcje po następnym zalogowaniu, lub też mogą odświeżyć przeglądarki, a zobaczą je natychmiast).
 
 #### <a name="core-hr"></a>Core HR
 
@@ -61,12 +62,11 @@ Ustawienie **Funkcje w wersji zapoznawczej** dostępne w centrum administracyjny
 
 ## <a name="features-that-are-currently-in-preview"></a>Funkcje istniejące obecnie w wersjach zapoznawczych
 
-### <a name="attract"></a>Attract
+### <a name="attract"></a>Przyciągaj
 
-- **Szablony zadań** — Teraz można tworzyć szablony procesów zatrudniania. Dotychczas użytkownicy mogli dostosowywać proces zatrudniania dla określonej funkcji. Jednak teraz mogą tworzyć szablony procesu, a następnie wybierać odpowiednie szablony podczas tworzenia określonej funkcji. W efekcie funkcja pomaga usprawnić proces konfigurowania funkcji do obsadzenia.
-- **Witryna rozwoju kariery** — W obecnej wersji witryny rozwoju kariery są po prostu wyświetlane wszystkie otwarte wakaty. Jednak w przyszłości zostanie dodanych więcej funkcji do witryny. Funkcje można oznaczać jako wewnętrzne lub zewnętrzne. Użytkowników wewnętrzni, którzy się zalogują do witryny, zobaczą zarówno funkcje wewnętrzne, jak i zewnętrzne. Natomiast użytkownicy spoza organizacji oraz użytkownicy, którzy się nie zalogują, będą widzieć tylko funkcje zewnętrzne.
-- **Oferta pracy** — Teraz można wysyłać oferty pracy do witryny rozwoju kariery.
-- **Oferta pracy na LinkedIn** — Teraz można wysyłać oferty pracy do serwisu LinkedIn.
+- **Odpowiedni kandydaci na funkcję** — Osoby rekrutujące i menedżerowie zatrudniający mogą łatwo zobaczyć, którzy kandydaci spośród wszystkich kandydatów są prawdopodobnie najbardziej odpowiedni do objęcia funkcji. Jest wyświetlanych 5 kandydatów, którzy pasują najlepiej biorąc pod uwagę zbieżność ich życiorysów/profili z opisem funkcji.
+- **Odpowiednie funkcje** — Kandydaci widzą teraz listę innych funkcji, które są dla nich najlepsze biorąc pod uwagę zbieżność ich życiorysów/profili z opisem funkcji.  Obecnie te informacje są wyświetlane kandydatom, którzy zasugerują, że interesują ich również inne stanowiska.
+- **Obsługa danych do EEO/OFCCP** — Nowe typy działań pozwalają użyć wstępnie zdefiniowanego formularza do zbierania od kandydata danych dotyczących amerykańskiej ustawy o równym traktowaniu w zatrudnieniu (EEO) oraz danych wymaganych przez amerykańskie biuro ds. programów przestrzegania przepisów w kontraktach dla instytucji rządowych (OFCCP).  To jest wstępnie zdefiniowany formularz i nie można go edytować.
 
     > [!NOTE]
     > Publikowane funkcje będą widoczne tylko dla klientów, którzy subskrybują co najmniej jeden produkt zarządzania ogłoszeniami o pracę w serwisie LinkedIn. W przeciwnym razie klienci zobaczą ofertę pracy tylko w przypadku, gdy jej specjalnie poszukają. Występuje opóźnienie przy zamieszczaniu ofert pracy w serwisie LinkedIn. Funkcja opublikowana w aplikacji Attract może się pojawić na LinkedIn dopiero po paru godzinach.

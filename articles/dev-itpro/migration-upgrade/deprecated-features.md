@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: ea24d6d63edc6f3bb1bf4a99d24d348af0d6cdbf
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 6750cfc62e2d151ddf760ff3dc36bab9c078b2d9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -234,7 +234,7 @@ Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym 
 | **Zamieniona przez inną funkcję?**   | Tak. Ta funkcja została zastąpiona przez moduł Finance and Operations — Magazynowanie. Aby uzyskać więcej informacji na temat konfiguracji i wymagań wstępnych, zobacz [Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Powiązane obszary produktów**         | Zarządzanie magazynem, Zarządzanie transportem     |
 | **Opcja wdrażania**              | Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym składnikiem przeznaczonym do lokalnego samodzielnego instalowania.               |
-| **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji.   |
+| **Stan**                         | Wycofane: docelowy okres usuwania funkcji to czwarty kwartał 2019 roku.   |
 
 ### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Reguła zaawansowanego uzgadniania konta bankowego w ręcznym uzgadnianiu
 
