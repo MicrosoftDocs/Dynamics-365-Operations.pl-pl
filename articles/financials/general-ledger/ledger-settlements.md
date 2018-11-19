@@ -27,7 +27,6 @@ ms.lasthandoff: 10/12/2018
 # <a name="ledger-settlements"></a>Rozliczenia księgi
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Funkcjonalność rozliczeń księgi pozwala uzgadniać transakcje debetowe i kredytowe w księdze głównej i następnie oznaczać je jako rozliczone. W ten sposób można uzyskać pewność, że powiązane transakcje zostały wzajemnie zbilansowane. Można również wycofywać rozliczenia, jeśli zostały dokonane przez pomyłkę.
 
