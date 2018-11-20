@@ -3,7 +3,7 @@ title: "Ustawianie okresów rozliczania podatku"
 description: "Okresy rozliczania podatków zawierają informacje o interwałach okresu, za które należy zgłosić i zapłacić podatki."
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/15/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: ab7d3a00a327f42a9f70c954d9b64a360a7f9163
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Ustawianie okresów rozliczania podatku
@@ -50,13 +50,15 @@ W zadaniu wykorzystano firmę demonstracyjną USMF.
 12. Wprowadź liczbę jednostek interwału okresu w okresie. Na przykład kwartał ma 3 miesiące.
 13. Zaznacz lub wyczyść pole wyboru Użyj przetwarzania wsadowego w celu rozliczenia podatku.
     * Proces rozliczania dla okresu rozliczeniowego może być wykonywany w trybie wsadowym w tle. Jest to zalecane dla dużej liczby transakcji podatkowych w interwale okresu.  
-14. Rozwiń kartę Interwały okresu.
-15. Kliknij przycisk Dodaj.
-16. Na liście oznacz wybrany wiersz.
-17. W polu Od dnia wprowadź datę.
-18. Wprowadź datę w polu Do dnia.
-19. Kliknij przycisk Nowy interwał okresu.
+14. Zaznacz lub wyczyść pole wyboru Zapobiegaj generowaniu transakcji podatków przeciwstawnych.
+    * Domyślnie system generuje transakcje podatków przeciwstawnych w trakcie rozliczania, co może spowalniać działanie, jeżeli w okresie występuje duża liczba transakcji podatkowych. Zaznaczenie tego pola wyboru uniemożliwi generowanie transakcji podatków przeciwstawnych.
+15. Rozwiń kartę Interwały okresu.
+16. Kliknij przycisk Dodaj.
+17. Na liście oznacz wybrany wiersz.
+18. W polu Od dnia wprowadź datę.
+19. Wprowadź datę w polu Do dnia.
+20. Kliknij przycisk Nowy interwał okresu.
     * Po wprowadzeniu pierwszego interwału okresu nowe okresy mogą być tworzone automatycznie. Później można wrócić i dodawać nowe interwały okresu zgodnie z wymaganiami.  
-20. Zamknij stronę.
+21. Zamknij stronę.
 
 

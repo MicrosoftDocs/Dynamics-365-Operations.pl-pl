@@ -26,6 +26,8 @@ ms.lasthandoff: 10/01/2018
 
 # <a name="activate-storno-accounting"></a>Uaktywnienie stornowania
 
+[!include [banner](../includes/banner.md)]
+
 Te procedury służą do konfigurowania funkcjonalności stornowania w programie Microsoft Dynamics 365 for Finance and Operations. Stornowanie polega na zmianie znaku kwot w celu wycofania błędnych oryginalnych transakcji. Na przykład następujące transakcje są zarejestrowane niepoprawnie.
 
 |opis        | Strona debetowa |Strona kredytowa  |

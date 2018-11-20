@@ -3,7 +3,7 @@ title: Wymiary finansowe
 description: "W tym temacie opisano różne typy wymiarów finansowych oraz sposoby ich konfigurowania."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 10/26/2018
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: 9973d03de031ad2fa5647bb167c12b9231633a22
+ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
+ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -51,9 +51,9 @@ Poniżej przedstawiono wybrane ograniczenia:
 
 ## <a name="custom-dimensions"></a>Wymiary niestandardowe
 
-Aby utworzyć zdefiniowany przez użytkownika typ wymiaru finansowego, w polu **Użyj wartości z** wybierz opcję **&lt;&nbsp;Wymiar niestandardowy&nbsp;&gt;**.
+Aby utworzyć wymiar finansowy zdefiniowany przez użytkownika, w polu **Użyj wartości z** wybierz opcję **Wymiar niestandardowy**.
 
-Można również określić maskę konta, aby ograniczyć typ i ilość informacji, które można wprowadzić dla wartości wymiarów,. Można wprowadzić znaki, które pozostają takie same dla każdej wartości wymiaru, na przykład litery lub łącznik (-). Można także wprowadzić znaki cyfr (\#) oraz handlowego „i” (&) jako symbole zastępcze znaków, które zmieniają się za każdym razem, gdy wartość wymiaru jest tworzona. Znak cyfry (\#) służy jako symbol zastępczy dla cyfr, a znak handlowe „i” jako symbol zastępczy dla liter. Pole maski formatu jest dostępne tylko w przypadku zaznaczenia opcji **&lt;&nbsp;Wymiar niestandardowy&nbsp;&gt;** w polu **Użyj wartości z**.
+Można również określić maskę konta, aby ograniczyć typ i ilość informacji, które można wprowadzić dla wartości wymiarów,. Można wprowadzić znaki, które pozostają takie same dla każdej wartości wymiaru, na przykład litery lub łącznik (-). Można także wprowadzić znaki cyfr (\#) oraz handlowego „i” (&) jako symbole zastępcze znaków, które zmieniają się za każdym razem, gdy wartość wymiaru jest tworzona. Znak cyfry (\#) służy jako symbol zastępczy dla cyfr, a znak handlowe „i” jako symbol zastępczy dla liter. Pole maski formatu jest dostępne tylko w przypadku zaznaczenia opcji **Wymiar niestandardowy** w polu **Użyj wartości z**.
 
 **Przykład**
 
@@ -108,14 +108,30 @@ Na stronie Wymiary można skonfigurować wartości pochodne.
 
 Wprowadź kombinacje wymiarów, które mają zostać utworzone jako pochodne wymiaru z pierwszej kolumny. Na przykład aby używać centrum kosztu jako wymiaru, z którego mają zostać utworzone wymiary pochodne Dział i Lokalizacja, wprowadź centrum kosztu 10, dział 20 i lokalizację 30. Następnie gdy wprowadzisz centrum kosztu 10 w rekordzie głównym lub na stronie transakcji, dział 20 i lokalizacja 30 zostaną wprowadzone domyślnie.
 
-W procesie tworzenia wymiarów pochodnych nie są zastępowane istniejące wartości wymiarów pochodnych. Na przykład jeśli wprowadzisz centrum kosztu 10 i nie wprowadzisz żadnego innego wymiaru, domyślnie zostaną wprowadzone dział 20 i lokalizacja 30. Jednak jeśli zmienisz centrum kosztu, to wartości, które zostały już zdefiniowane, nie ulegną zmianie. W związku z tym można utworzyć wymiary domyślne w rekordach głównych, a wymiary te nie będą zmieniane przez wymiary pochodne.
+### <a name="overriding-existing-values-with-derived-dimensions"></a>Zastępowanie istniejących wartości wymiarami pochodnymi
+ 
+Domyślnie w procesie tworzenia wymiarów pochodnych nie są zastępowane istniejące wartości wymiarów pochodnych. Na przykład jeśli wprowadzisz centrum kosztu 10 i nie wprowadzisz żadnego innego wymiaru, domyślnie zostaną wprowadzone dział 20 i lokalizacja 30. Jednak jeśli zmienisz centrum kosztu, to wartości, które zostały już zdefiniowane, nie ulegną zmianie. W związku z tym można utworzyć wymiary domyślne w rekordach głównych, a wymiary te nie będą zmieniane przez wymiary pochodne.
+
+Można zmienić zachowanie wymiarów pochodnych tak, aby powodować zastępowanie istniejących wartości, zaznaczając pole wyboru **Zastąp istniejące wartości wymiarów wartościami pochodnymi** na stronie **Wymiary pochodne**. Jeśli to pole jest zaznaczone, można wprowadzić wymiar z pochodnymi wartościami wymiaru i te pochodne wartości wymiaru zastąpią wszelkie wartości, które już istnieją. W przykładzie powyżej jeśli wprowadzisz centrum kosztu 10 i nie wprowadzisz żadnego innego wymiaru, domyślnie zostaną wprowadzone dział 20 i lokalizacja 30. Jednak jeżeli już istniały wartości działu 50 i lokalizacji 60, zmienią się one na dział 20 i lokalizację 30.
+ 
+Przy takim ustawieniu wymiary pochodne nie zastępują automatycznie istniejących domyślnych wartości wymiarów podczas ustawiania domyślnych wartości wymiarów. Wartości wymiarów zostaną zastąpione tylko wtedy, gdy wprowadzisz nową wartość wymiaru na stronie, a już istnieją pochodne wartości tego wymiaru na stronie.
+
+### <a name="preventing-changes-with-derived-dimensions"></a>Blokowanie zmian w wymiarach pochodnych
+ 
+Gdy na stronie **Wymiary pochodne** użyjesz opcji **Dodaj segment** w celu dodania segmentu jako wymiaru pochodnego, w dolnej części strony **Dodaj segment** znajdzie się opcja, który pozwala uniemożliwić wprowadzanie zmian w tym wymiarze, jeżeli stanie się wymiarem pochodnym na stronie. Ustawieniem domyślnym jest Wyłączone, tzn. nie ma blokady zastępowania wartości wymiarów pochodnych na stronie. Zmień to ustawienie na **Tak**, jeśli chcesz zapobiec modyfikowaniu wymiaru, gdy stanie się pochodny. Na przykład jeśli wartość wymiaru Dział będzie pochodną wartości wymiaru Centrum kosztu, wartość wymiaru Dział nie zmieni się, jeśli opcję **Blokuj zmiany** ustawiono na **Tak**. 
+ 
+Ustawienie to nie zapobiega zmianom, jeśli wartość wymiaru jest prawidłowa, ale nie jest wymieniona na liście wymiarów pochodnych. Na przykład jeśli dział 20 jest pochodną centrum kosztu 10, a wprowadzisz centrum kosztu 10, nie będzie można edytować wartości działu 20. Jednak jeśli wprowadzisz centrum kosztu 20, a tej wartości nie ma na liście wymiarów pochodnych dla centrum kosztu, można edytować wartość działu. 
+ 
+We wszystkich przypadkach wartość konta i wszystkie wartości wymiarów będą nadal weryfikowane względem struktur kont po zastosowaniu wartości wymiarów pochodnych. Jeśli używasz wymiarów pochodnych i nie przejdą one sprawdzania poprawności po umieszczeniu na stronie, należy zmienić wartości wymiarów pochodnych na stronie wymiarów pochodnych, zanim będzie można ich używać w transakcjach. 
+ 
+Po zmianie wartości wymiarów na skróconej karcie **Wymiary finansowe** wymiar, dla którego ustawiono blokadę wprowadzania zmian, nie będzie edytowalny. W przypadku wprowadzania konta i wymiarów w formancie wpisów podzielonych na segmenty na stronie wymiary można edytować. Jednak po przeniesieniu fokusu z formantu wpisu podzielonego na segmenty i przejściu do innego pola lub wykonaniu czynności konto i wymiar zostaną zweryfikowane względem listy wymiarów pochodnych i struktur kont w celu sprawdzenia, czy wprowadzono odpowiednie wartości. 
 
 ### <a name="derived-dimensions-and-entities"></a>Pochodne wymiary i jednostki
 
 Istnieje możliwość konfigurowania segmentów i wartości wymiarów pochodnych za pomocą jednostek.
 
 - Jednostka Wymiary pochodne konfiguruje wymiary sterujące oraz segmenty, które są w nich używane.
-- Jednostka DerivedDimensionValue umożliwia zaimportowanie wartości, które powinny zostać utworzone jako pochodne dla każdego wymiaru sterującego.
+- Jednostka Wartości wymiarów pochodnych umożliwia zaimportowanie wartości, które powinny zostać utworzone jako pochodne dla każdego wymiaru sterującego.
 
 Jeżeli podczas używania jednostki do importowania danych ta jednostka importuje wymiary, podczas importowania są stosowane reguły wymiarów pochodnych, chyba że jednostka jednoznacznie spowoduje zastąpienie tych wymiarów.
 

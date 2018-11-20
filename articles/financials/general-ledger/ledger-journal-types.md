@@ -1,9 +1,9 @@
 ---
 title: "Typy arkuszy księgi"
-description: "W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona **Nazwy arkuszy** służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Finance and Operations."
+description: "W tym temacie opisano typy arkuszy, które można skonfigurować dla arkuszy finansowych."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9f8fc40f199b83a9e0cb36ce905163c3ed547057
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: fff557d20a230922b5512aea9e49aa9993a694dd
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona **Nazwy arkuszy** służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Finance and Operations.
+W tym temacie opisano typy arkuszy, które można skonfigurować dla arkuszy finansowych. Strona **Nazwy arkuszy** służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Finance and Operations.
 
 | Typ arkusza                      | Cel                       | Ta strona służy do wprowadzania transakcji                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
@@ -53,7 +53,8 @@ W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze f
 | Rozchód dla listy płac              | Wydaj płatności oparte na sprawozdaniach płatności listy płac. Nie można ręcznie wprowadzić transakcji w tym arkuszu. Należy wygenerować sprawozdania o wynagrodzeniach, a następnie przesłać te sprawozdania do dokonania płatności.                                                                                                                                                              |                                                                |
 | Okresowe                          | Utwórz transakcje okresowe dla arkusza okresowego.                                                                                                                                                                                                                                                                                                      | Arkusze okresowe                                              |
 | Księgowanie środków trwałych                 | Zaksięguj transakcje środków trwałych.                                                                                                                                                                                                                                                                                                                              | Środki trwałe                                                   |
-| Projekt — Wydatki                | Utwórz transakcje wypływu/wypłaty w projekcie.                                                                                                                                                                                                                                                                                                                        | Wydatek                                                        |
+| Projekt — Wydatki                | Utwórz transakcje wypływu/wypłaty w projekcie.                                                                                                                                                                                                                                                                                                                        | Expense                                                        |
+| Korekta w walucie raportowania     | Tworzenie korekt w walucie raportowania dla sald na kontach księgowych.               | Arkusze korekt w walucie raportowania                         |
 | Transakcje statystyczne            | Utwórz transakcje statystyczne.                                                                                                                                                                                                                                                                                                                            |                                                                |
 | Przelew bankowy dostawcy            | Utwórz plik przekazu skryptu dłużnego, który może zostać przesłany do banku Twojej organizacji.                                                                                                                                                                                                                                                                      | Arkusz przekazów                                             |
 | Wypłaty dla dostawców               | Utwórz transakcje rozchodów dostawcy.                                                                                                                                                                                                                                                                                                                    | Arkusz płatności                                                |

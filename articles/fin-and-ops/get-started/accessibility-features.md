@@ -3,7 +3,7 @@ title: "Funkcje związane z ułatwianiem dostępu"
 description: "W tym temacie opisano funkcje, które pomagają użytkownikom z różnymi niepełnosprawnościami korzystać z rozwiązań Dynamics 365 for Finance and Operations, Dynamics 365 for Retail i Dynamics 365 for Talent."
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 834146c1a57cca0c02598290352c3ab8e1e4b7f5
+ms.sourcegitcommit: a67b51ced4bea11be258aed359a758d88294beb1
+ms.openlocfilehash: bc48aa5ccf50705ef0c5087608798875953fe888
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -41,7 +41,7 @@ W przypadku większości użytkowników codzienna praca z systemem wiąże się 
 
 Każda strona dostępna za pomocą menu okienka nawigacji z lewej strony jest również dostępna z poziomu pola **Wyszukaj**. Za pomocą skrótu Alt + G uaktywnij pole **Wyszukaj**, a następnie wpisz nazwę lub opis strony.
 
-![Hasło „Konto bankowe” wprowadzone w polu Wyszukaj](media/6d08b0be32808221023e2aa92d69fd70.png)
+![Hasło „konta bankowe” wprowadzone w polu wyszukiwania](media/6d08b0be32808221023e2aa92d69fd70.png  "Hasło „konta bankowe” wprowadzone w polu wyszukiwania")
 
 Aby uzyskać więcej informacji, zobacz [Nawigacja z wyszukiwaniem](navigation-search.md).
 
@@ -56,17 +56,21 @@ Z każdej akcji dostępnej na stronie można skorzystać za pomocą klawiatury, 
 
 Chcesz uruchomić akcję **Dziennik powiadomień pocztą E-mail**, która znajduje się w grupie **Powiadomienie pocztą E-mail** na karcie **Zamówienie sprzedaży** w okienku akcji.
 
-![Akcja Dziennik powiadomień pocztą E-mail w okienku akcji](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg)
+![Akcja Dziennik powiadomień pocztą E-mail w okienku akcji](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg  "Akcja Dziennik powiadomień pocztą E-mail w okienku akcji")
 
 Jedną z opcji jest użycie klawiatury. Naciśnij kombinację klawiszy Ctrl + F6, aby uaktywnić okienko akcji, a następnie naciskaj klawisz Tab, aby przechodzić kolejno między kartami i akcjami do momentu uaktywnienia akcji **Dziennik powiadomień pocztą E-mail**.
 
 Jednak można również uruchomić akcję bardziej bezpośrednio. Z dowolnego miejsca na stronie naciśnij kombinację klawiszy Ctrl + apostrof ('), aby wyświetlić pole wyszukiwania akcji.
 
-![Pole wyszukiwania akcji](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg)
+![Pole wyszukiwania akcji](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg  "Pole wyszukiwania akcji")
 
 W polu wyszukiwania wpisz wyrazy opisujące akcji. Akcja zostanie udostępniona i będzie ją można uruchomić bezpośrednio. Na przykład po wpisaniu **e-mail**, **powiadom** (część wyrazu) lub **dziennik** można „przeskoczyć” do funkcji Dziennik powiadomień pocztą E-mail.
 
-![Hasło „E-mail” wprowadzone w polu wyszukiwania](media/image4.png) ![Hasło „powiadom” wprowadzone w polu wyszukiwania](media/image5.png) ![Hasło „dziennik” wprowadzone w polu wyszukiwania](media/image6.png)
+![Hasło „e-mail” wprowadzone w polu wyszukiwania](media/image4.png "Hasło „e-mail” wprowadzone w polu wyszukiwania") 
+
+![Hasło „powiadom” wprowadzone w polu wyszukiwania](media/image5.png "Hasło „powiadom” wprowadzone w polu wyszukiwania")
+
+![Hasło „dziennik” wprowadzone w polu wyszukiwania](media/image6.png "Hasło „dziennik” wprowadzone w polu wyszukiwania")
 
 Po zakończeniu można ponownie nacisnąć kombinację klawiszy Ctrl + apostrof, aby powrócić do pola, które było aktywne, zanim uruchomiono wyszukiwanie akcji.
 
@@ -78,7 +82,7 @@ W trakcie codziennego korzystania z systemu nie każde pole jest wymagane do wyk
 
 Może się jednak okazać, że niektóre pola używane często przez użytkownika podczas wykonywania zadań nie zostały uwzględnione w domyślnej sekwencji przejść za pomocą klawisza Tab. Jeśli w takim przypadku użytkownik korzysta z Narratora w systemie Windows, można użyć akcji klawiszowych tego Narratora w celu przejścia do takich pól i sprawdzenia ich zawartości. Alternatywnie można użyć opcji **Rozszerzona sekwencja użycia klawisza Tab** dostępnej na stronie **Opcje**. Ta opcja spowoduje umieszczenie wszystkich pól edytowalnych i tylko do odczytu w sekwencji przejść za pomocą klawisza Tab. Następnie, korzystając z funkcji personalizacji strony, można utworzyć niestandardową sekwencję przejść za pomocą klawisza Tab z pominięciem pól, które nie są potrzebne w takiej sekwencji. Aby uzyskać więcej informacji dotyczących personalizacji, zobacz [Dostosowanie do użytkownika](personalize-user-experience.md).
 
-![Opcja Rozszerzona sekwencja użycia klawisza Tab](media/8c0f12bbb3f26032997ef0ba95d89b6a.png)
+![Opcja „Rozszerzona sekwencja użycia klawisza Tab”](media/8c0f12bbb3f26032997ef0ba95d89b6a.png  "Opcja „Rozszerzona sekwencja użycia klawisza Tab”")
 
 ## <a name="form-patterns"></a>Wzorce formularzy
 

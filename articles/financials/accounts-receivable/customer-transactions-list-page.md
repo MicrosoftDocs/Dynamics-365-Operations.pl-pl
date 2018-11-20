@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 79479f6949c52830918598583ee91dd85d2d7ac3
+ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
+ms.openlocfilehash: 1b359939c867ba0a0c14859c83f0560afe6ba5be
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/12/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/01/2018
 
 ## <a name="view-settlements"></a>Wyświetl rozliczenia
 
-Przycisk **Wyświetl rozliczenia** w okienku akcji zapewnia szybki dostęp do historii rozliczeń oraz dodatkowych informacji na temat całej transakcji rozliczenia. Można również wyświetlać dodatkowe transakcje, które są powiązane z wybraną transakcją, ponieważ były częścią tego samego rozliczenia albo są płatnościami utworzonymi w tym samym arkuszu płatności.
+Przycisk **Wyświetl rozliczenia** w okienku akcji zapewnia szybki dostęp do historii rozliczeń oraz szczegółowych informacji na temat transakcji rozliczenia. Można również wyświetlać dodatkowe transakcje, które są powiązane z wybraną transakcją, ponieważ były częścią tego samego rozliczenia albo są płatnościami utworzonymi w tym samym arkuszu płatności.
 
 1. Wybierz kolejno opcje **Rozrachunki z odbiorcami \> Wszyscy odbiorcy**.
 2. Wybierz odbiorcę mającego transakcje, a następnie w okienku akcji na karcie **Odbiorca** wybierz opcję **Transakcje**.
@@ -49,7 +49,7 @@ Przycisk **Wyświetl rozliczenia** w okienku akcji zapewnia szybki dostęp do hi
 
 ## <a name="global-transactions"></a>Transakcje globalne
 
-Do strony odbiorcy dodano przycisk **Transakcje globalne**. Ten przycisk umożliwia wyświetlenie wszystkich transakcji z wybranym odbiorcą we wszystkich firmach. Na stronie listy **Transakcje odbiorcy** są pokazane transakcji tylko dla firm, do których odbiorca ma dostęp, na podstawie jego ustawień zabezpieczeń.
+Przycisk **Transakcje globalne** jest również wyświetlany na stronie listy **Transakcje odbiorcy**. Ten przycisk umożliwia wyświetlenie wszystkich transakcji z wybranym odbiorcą we wszystkich firmach. Na stronie listy **Transakcje odbiorcy** są pokazane transakcji tylko dla firm, do których odbiorca ma dostęp, na podstawie jego ustawień zabezpieczeń.
 
 Na stronie listy są wyświetlane wszystkie transakcje z odbiorcami, którzy mają ten sam identyfikator jednostki jak odbiorca, z którym rozpoczęto proces. Na przykład jeśli odbiorca US-001 w jednej firmie ma taki sam identyfikator jednostki, jak odbiorca DE-001 w innej firmie, są wyświetlane wszystkie transakcje dla obu identyfikatorów odbiorców.
 
@@ -67,13 +67,13 @@ Filtr wyświetlania otwartych transakcji został zastąpiony przez nowy filtr um
 - **Wszystkie** — umożliwia wyświetlenie wszystkich transakcji z wybranymi odbiorcami (otwartych i zamkniętych).
 - **Zamknięte** — pokazywanie tylko transakcji, które zostały w pełni rozliczone i zamknięte.
 - **Otwarte** — pokazywanie tylko transakcji, które nie zostały w pełni rozliczone.
-- **Otwarte na dzień** — pokazywanie tylko transakcji, które nie zostały w pełni rozliczone według stanu na podany dzień. Po wybraniu tej opcji można zmienić dzień wyświetlany obok filtru. Transakcje, które mają wartość **Data ostatniego rozliczenia** przypadającą po wskazanym dniu, są wyświetlane na liście, nawet jeśli zostały w pełni rozliczone według stanu na bieżący dzień. Jednak wartości salda reprezentują salda na bieżący dzień, a nie na wybrany dzień.
+- **Otwarte, w tym zamknięte w lub po dniu** — pokazywanie tylko transakcji, które nie zostały w pełni rozliczone według stanu na podany dzień. Po wybraniu tej opcji można zmienić dzień wyświetlany obok filtru. Transakcje, które mają wartość **Data ostatniego rozliczenia** przypadającą w lub po wskazanym dniu, są wyświetlane na liście, nawet jeśli zostały w pełni rozliczone według stanu na bieżący dzień. Jednak wartości salda reprezentują salda na bieżący dzień, a nie na wybrany dzień.
 
-Został również dodany filtr, która umożliwia ukrywanie transakcji przeliczania walut. Po prostu zaznacz pole wyboru **Ukryj przeszacowanie w walucie**.
+Zaznacz pole wyboru **Ukryj przeszacowanie w walucie**, aby ukryć transakcje przeliczania walut.
 
-## <a name="more-easily-modify-due-dates-and-discount-dates"></a>Łatwiejsze modyfikowanie terminów płatności i dat rabatów
+## <a name="modify-due-dates-and-discount-dates"></a>Modyfikowanie terminów płatności i dat rabatów
 
-W otwartych transakcjach z odbiorcami można aktualizować terminy płatności i daty rabatu. W wersji 8.1 ta funkcjonalność została ulepszona. Teraz można dodawać terminy płatności do strony listy **Transakcje odbiorcy**. Klikając termin płatności na stronie listy **Transakcje odbiorcy**, można również zmienić terminy płatności, daty rabatu, warunki płatności i warunki rabatu gotówkowego w oknie dialogowym **Aktualizacja terminu płatności i dat rabatów gotówkowych**.
+W otwartych transakcjach z odbiorcami można aktualizować terminy płatności i daty rabatu. W wersji 8.1 można dodawać terminy płatności do strony listy **Transakcje odbiorcy**. Klikając termin płatności na stronie listy **Transakcje odbiorcy**, można również zmienić terminy płatności, daty rabatu, warunki płatności i warunki rabatu gotówkowego w oknie dialogowym **Aktualizacja terminu płatności i dat rabatów gotówkowych**.
 
 ### <a name="activate-the-feature"></a>Aktywowanie funkcji
 
@@ -91,11 +91,11 @@ Na stronie listy **Transakcje odbiorcy** są wyświetlane wszystkie transakcje z
 
 Każde pole podczas edytowania różnie oddziałuje na transakcję:
 
-- **Edytowanie daty podstawy:** termin płatności i daty rabatów zmieniają się tak, jakby data podstawy była datą dokumentu.
-- **Edytowanie terminu płatności:** zmienia się tylko termin płatności.
-- **Edytowanie dat rabatów:** są zmieniane tylko daty rabatu.
-- **Edytowanie warunków płatności:** zmienia się termin płatności na podstawie daty podstawy i warunków płatności.
-- **Edytowanie warunków rabatu gotówkowego:** zmieniają się rabaty gotówkowe na podstawie daty podstawy i warunków rabatu gotówkowego.
+- **Edytowanie daty podstawy** — termin płatności i daty rabatów zmieniają się tak, jakby data podstawy była datą dokumentu.
+- **Edytowanie terminu płatności** — zmienia się tylko termin płatności.
+- **Edytowanie dat rabatów** — są zmieniane tylko daty rabatu.
+- **Edytowanie warunków płatności** — zmienia się termin płatności na podstawie daty podstawy i warunków płatności.
+- **Edytowanie warunków rabatu gotówkowego** — zmieniają się rabaty gotówkowe na podstawie daty podstawy i warunków rabatu gotówkowego.
 
 Po zakończeniu edytowania ustawień płatności kliknij opcję **Zamknij**, aby zapisać wprowadzone zmiany.
 

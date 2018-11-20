@@ -3,7 +3,7 @@ title: Konfigurowanie automatycznego uzgadniania frachtu
 description: "Ta procedura pokazuje, jak skonfigurować dane dla automatycznego uzgadniania frachtu."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/16/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 97f0c4d8fe06ab2fc252b9543cb688306214c79f
+ms.sourcegitcommit: d990efd7c929b15d57d64e850bc3308349abb978
+ms.openlocfilehash: b7772ad779495b36941a3dc86cc456d80a964467
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/17/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Konfigurowanie automatycznego uzgadniania frachtu
@@ -36,9 +36,9 @@ Ta procedura pokazuje, jak skonfigurować dane dla automatycznego uzgadniania fr
     * Typ dokumentu opłaty frachtowej określa, jak powinny być uzgadniane dokumenty opłat frachtowych i faktury przewoźników.  
 2. Kliknij przycisk Nowy.
 3. W polu Typ opłaty frachtowej wpisz wartość.
-4. W polu Montaż aparatu wpisz „Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer”.
+4. W polu Zestaw aparatu wpisz „Microsoft.Dynamics.Ax.Tms.dll”.
     * Jest to biblioteka standardowych kodów aparatu uzgadniania w zarządzaniu transportem.  
-5. W polu Klasa aparatu wpisz „Microsoft.Dynamics.Ax.Tms.dll”.
+5. W polu Klasa aparatu wpisz „Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer”.
     * Jest to standardowa klasa aparatu uzgadniania w zarządzaniu transportem.  
 6. Kliknij przycisk Nowy.
 7. W polu Opis wybierz wartość, która powinna być zgodna na dokumencie opłaty frachtowej i fakturze przewoźnika.  

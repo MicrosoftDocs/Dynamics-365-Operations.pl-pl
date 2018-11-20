@@ -3,7 +3,7 @@ title: "Synchronizowanie produktów bezpośrednio w rozwiązaniu Finance and Ope
 description: "Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania produktów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/25/2018
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
-ms.openlocfilehash: 66506953790fd77c2105591d3211c76991eced08
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: feb9fbc066162e2caa9fc5dbaeec2c063ae23060
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 06/25/2018
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integracja danych w usłudze Dynamics 365](/common-data-service/entity-reference/dynamics-365-integration).
+> Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integrowanie danych na platformie Common Data Service dla aplikacji](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
 Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania produktów bezpośrednio między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Sales.
 

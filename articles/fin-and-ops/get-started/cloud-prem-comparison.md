@@ -3,7 +3,7 @@ title: "Porównanie funkcji w chmurze i lokalnych"
 description: "Ten temat przedstawia funkcje obsługiwane w chmurze i lokalnie."
 author: robinarh
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 4354b9d55cc84f7c74020d95617c406dc5fb225c
+ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
+ms.openlocfilehash: bc2b8aafa28d3998e223891fa95e3fe8175349e6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 11/02/2018
 
 ---
 
@@ -116,11 +116,8 @@ W poniższej tabeli wymieniono zakresy produktów. Obsługa w chmurze i lokalnie
 | Tworzenie w programie Visual Studio |  | Tak | Tak |
 
 
-## <a name="dynamics-365-for-retail"></a>Dynamics 365 for Retail 
-
-| Warstwowy | Funkcja | Chmura | Lokalne|
-|---|---|---|---|
-| Wszystkie obszary sprzedaży detalicznej | Wszystkie funkcje sprzedaży detalicznej | Tak | Nr |
+### <a name="retail"></a>Retail 
+Aby wyświetlić listę funkcji handlu detalicznego dostępnych we wdrożeniach lokalnych, zobacz [Funkcje handlu detalicznego dostępne we wdrożeniach lokalnych](../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-for-talent"></a>Dynamics 365 for Talent
 
