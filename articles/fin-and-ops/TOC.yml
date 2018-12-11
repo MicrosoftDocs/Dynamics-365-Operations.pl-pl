@@ -48,6 +48,10 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funkcje niezaimplementowane we wdrożeniach lokalnych
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations w wersji 8.1.3 (grudzień 2018)
+              href: get-started/whats-new-changed-8-1-3.md
+            - name: Aktualizacja Platform update 23 (grudzień 2018)
+              href: get-started/whats-new-platform-update-23.md
             - name: Aktualizacja Platform update 22 (listopad 2018)
               href: get-started/whats-new-platform-update-22.md
             - name: Finance and Operations w wersji 8.1.2 (listopad 2018)
@@ -152,9 +156,11 @@
               href: get-started/help-overview.md
             - name: Łączenie z systemem Pomocy
               href: get-started/help-connect.md
+            - name: Łączenie z niestandardową witryną pomocy
+              href: get-started/help-custom.md
             - name: Wyświetlanie i eksportowanie opisów pól
               href: get-started/view-export-field-descriptions.md
-            - name: Przewodniki po zadaniach i rejestrator zadań
+            - name: Przewodniki zadań i rejestrator zadań
               items:
                 - name: Rejestrator zadań
                   href: ../dev-itpro/user-interface/task-recorder.md?toc=/fin-and-ops/toc.json
@@ -1243,6 +1249,8 @@
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
             - name: Resetowanie składnicy danych raportowania finansowego
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+        - name: Obsługa wiadomości elektronicznych
+          href: ../financials/general-ledger/electronic-messaging.md
     - name: Funkcje związane z lokalizacją i wymagane przepisami prawa
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
@@ -2222,12 +2230,16 @@
               href: ../financials/localizations/rus-transactions-settlement-date.md
             - name: Faktury do zapłaty
               href: ../financials/localizations/rus-invoice-payment.md
+            - name: Raportowanie finansowe
+              href: ../financials/localizations/rus-financial-reports.md
+            - name: Tworzenie księgi zakupów
+              href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Arabia Saudyjska
           href: ../financials/localizations/saudi-arabia.md
           items:
             - name: Podatek
               href: ../financials/localizations/apac-sau-sales-tax.md
-            - name: Raportowanie zakatu dla Arabii Saudyjskiej
+            - name: Raportowanie Zakat dla Arabii Saudyjskiej
               href: ../financials/localizations/emea-sau-zakat-reporting.md
         - name: Singapur
           href: ../financials/localizations/singapore.md
@@ -2741,6 +2753,8 @@
                   href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
                 - name: Importowanie konfiguracji z usługi Lifecycle Services
                   href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+                - name: Importowanie konfiguracji raportowania elektronicznego (RE) z usługi Regulatory Configuration Services (RCS)
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md
                 - name: Pobieranie konfiguracji z usługi Lifecycle Services
                   href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
                 - name: Importowanie konfiguracji
@@ -4149,6 +4163,8 @@
               href: ../supply-chain/warehousing/display-older-batches-within-warehouses.md
             - name: Pobieranie najstarszej partii na urządzeniu przenośnym
               href: ../supply-chain/warehousing/pick-oldest-batch.md
+            - name: Struktura przewodnika procesu
+              href: ../supply-chain/warehousing/process-guide-framework.md
         - name: Uaktualnianie i migracja
           items:
             - name: Uaktualnianie procesów zarządzania magazynem z systemu Microsoft Dynamics AX 2012 do rozwiązania Finance and Operations
