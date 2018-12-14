@@ -1,6 +1,6 @@
 ---
 title: "Utwórz transakcje opłat subskrypcji"
-description: 
+description: "Ten temat opisuje, jak tworzyć transakcje opłat subskrypcji."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
@@ -19,27 +19,27 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 0c719f9ebdabfc67fc7e763707542d85daf9cc06
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: 1c42f595a317170ab5bb64fcb0bb1ca299523bd7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
-# <a name="create-subscription-fee-transactions"></a><span data-ttu-id="de8a8-102">Utwórz transakcje opłat subskrypcji</span><span class="sxs-lookup"><span data-stu-id="de8a8-102">Create subscription fee transactions</span></span> 
+# <a name="create-subscription-fee-transactions"></a><span data-ttu-id="51196-103">Utwórz transakcje opłat subskrypcji</span><span class="sxs-lookup"><span data-stu-id="51196-103">Create subscription fee transactions</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="de8a8-103">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Subskrypcje serwisowe** \> **Wszystkie subskrypcje serwisu**.</span><span class="sxs-lookup"><span data-stu-id="de8a8-103">Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.</span></span>
+1.  <span data-ttu-id="51196-104">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Subskrypcje serwisowe** \> **Wszystkie subskrypcje serwisu**.</span><span class="sxs-lookup"><span data-stu-id="51196-104">Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.</span></span>
 
-2.  <span data-ttu-id="de8a8-104">Na stronie listy **Wszystkie subskrypcje serwisu** wybierz subskrypcję, dla której chcesz utworzyć transakcję opłaty subskrypcji.</span><span class="sxs-lookup"><span data-stu-id="de8a8-104">On the **All service subscriptions** list page, select the subscription for which you want to create a subscription fee transaction.</span></span>
+2.  <span data-ttu-id="51196-105">Na stronie listy **Wszystkie subskrypcje serwisu** wybierz subskrypcję, dla której chcesz utworzyć transakcję opłaty subskrypcji.</span><span class="sxs-lookup"><span data-stu-id="51196-105">On the **All service subscriptions** list page, select the subscription for which you want to create a subscription fee transaction.</span></span>
 
-3.  <span data-ttu-id="de8a8-105">W **okienku akcji** na karcie **Subskrypcja** kliknij opcję **Opłaty subskrypcji**.</span><span class="sxs-lookup"><span data-stu-id="de8a8-105">On the **Action Pane**, on the **Subscription** tab, click **Subscription fees**.</span></span>
+3.  <span data-ttu-id="51196-106">W **okienku akcji** na karcie **Subskrypcja** kliknij opcję **Opłaty subskrypcji**.</span><span class="sxs-lookup"><span data-stu-id="51196-106">On the **Action Pane**, on the **Subscription** tab, click **Subscription fees**.</span></span>
 
-4.  <span data-ttu-id="de8a8-106">W formularzu **Utwórz opłatę subskrypcji** wprowadź odpowiednie informacje w polach.</span><span class="sxs-lookup"><span data-stu-id="de8a8-106">On the **Create subscription fee** form, enter the appropriate information in the fields.</span></span>
+4.  <span data-ttu-id="51196-107">W formularzu **Utwórz opłatę subskrypcji** wprowadź odpowiednie informacje w polach.</span><span class="sxs-lookup"><span data-stu-id="51196-107">On the **Create subscription fee** form, enter the appropriate information in the fields.</span></span>
 
-5.  <span data-ttu-id="de8a8-107">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="de8a8-107">Click **OK**.</span></span>
+5.  <span data-ttu-id="51196-108">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="51196-108">Click **OK**.</span></span>
 
   
 
