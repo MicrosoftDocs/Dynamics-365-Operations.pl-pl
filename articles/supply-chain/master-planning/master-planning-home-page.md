@@ -3,7 +3,7 @@ title: "Planowanie główne — strona główna"
 description: "Planowanie główne umożliwia firmom określanie i bilansowanie przyszłego zapotrzebowania na surowce i zdolności produkcyjne do realizacji celów firmy."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 030579ac73d6333ac4ed55433b9679a58247c088
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -58,13 +58,13 @@ Poniższa mapa szkoleniowa przedstawia najważniejsze koncepcje i zadania tworz�
 
 ## <a name="quick-links"></a>Szybkie łącza
 
-|      |   |
-|------|---|
-|        [Plany główne](master-plans.md)       |     [Generowanie planu z ograniczeniami](./tasks/constrained-plan.md)  |
-| [Tworzenie planu materiałów dla produktów towarzyszących](./tasks/create-material-plan-co-products.md)   |  [Planowanie główne a funkcjonalność wielooddziałowości](master-plan-multisite-functionality.md)  |
-| [Tworzenie planu międzyfirmowego](./tasks/create-intercompany-plan.md) | [Podstawowe informacje o prognozowaniu popytu](introduction-demand-forecasting.md)  | 
-|[Klucze redukcji](reduction-keys.md)| [Podstawowe informacje dotyczące planowania głównego](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (szkolenie elektroniczne) (wymagane konto CustomerSource)     |
-|  [Planowanie główne procesu produkcyjnego](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (szkolenie elektroniczne) (wymagane konto CustomerSource) | [Międzyfirmowe planowanie główne](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (szkolenie elektroniczne) (wymagane konto CustomerSource)|
+- [Plany główne](master-plans.md)  
+- [Generowanie planu z ograniczeniami](./tasks/constrained-plan.md)
+- [Tworzenie planu materiałów dla produktów towarzyszących](./tasks/create-material-plan-co-products.md)
+- [Planowanie główne a funkcjonalność wielooddziałowości](master-plan-multisite-functionality.md)
+- [Tworzenie planu międzyfirmowego](./tasks/create-intercompany-plan.md)
+- [Podstawowe informacje o prognozowaniu popytu](introduction-demand-forecasting.md)
+- [Klucze redukcji](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
