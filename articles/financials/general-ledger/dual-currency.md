@@ -17,14 +17,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c026a540fb7d30644d485b6a057c2c46bd7c091d
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
 # <a name="dual-currency"></a>Dwuwalutowość
+
+[!include [banner](../includes/banner.md)]
 
 Funkcjonalność wprowadzona w programie Microsoft Dynamics 365 for Finance and Operations w wersji 8.1 (w październiku 2018 r.) umożliwia zmianę przeznaczenia waluty raportowania i używanie jej jako drugiej waluty rozliczeniowej. Ta funkcja jest nazywana *dwuwalutowością*. Zmian ustawień dwuwalutowości nie można wyłączyć za pomocą klucza konfiguracji lub parametru. Ponieważ waluta raportowania jest używana jako druga waluta rozliczeniowa, zmieniono sposób obliczana waluty raportowania w logice księgowania.
 
@@ -67,8 +69,8 @@ Następujące moduły używają waluty raportowania jako drugiej waluty rozlicze
 
 - [Księga główna](#general-ledger)
 - [Raporty finansowe](#financial-reporting)
-- [Rozrachunki z dostawcami](#accounts-payable/accounts-receivable)
-- [Rozrachunki z odbiorcami](#accounts-payable/accounts-receivable)
+- [Rozrachunki z dostawcami](#accounts-payable-and-accounts-receivable)
+- [Rozrachunki z odbiorcami](#accounts-payable-and-accounts-receivable)
 - [Zarządzanie gotówką i bankami](#cash-and-bank-management)
 - [Środki trwałe](#fixed-assets)
 
@@ -90,7 +92,7 @@ Ulepszenie modułu **Raportowanie finansowe** pozwala umieszczać kwoty w waluci
 
 Ta zmiana jest dostępna za pośrednictwem ustawienia **Opcja wyświetlania waluty** w definicji kolumny. W przypadku wybrania opcji **Waluta raportowania z księgi** kwoty w kolumnie nie są przeliczane. Zamiast tego są podawane bezpośrednio z księgi głównej. Jeśli w kolumnie mają być wyświetlane kwoty przeliczone, zaznacz opcję **Przelicz na XXXX**, gdzie *XXXX* jest walutą raportowania, która ma być pokazywana w kolumnie. W takim wypadku kwoty w walucie rozliczeniowej zostaną przeliczone na wybraną walutę przy użyciu istniejących funkcji przeliczania.
 
-### <a name="accounts-payableaccounts-receivable"></a>Rozrachunki z dostawcami/Rozrachunki z odbiorcami
+### <a name="accounts-payable-and-accounts-receivable"></a>Rozrachunki z dostawcami/Rozrachunki z odbiorcami
 
 Moduły **Rozrachunki z dostawcami** i **Rozrachunki z odbiorcami** już śledziły kwoty w walucie raportowania. Jednak te kwoty nie były wyświetlane ani używane w różnych procesach. Wprowadzono następujące zmiany:
 

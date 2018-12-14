@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
-ms.openlocfilehash: bc2b8aafa28d3998e223891fa95e3fe8175349e6
+ms.sourcegitcommit: 596cfa056c6f2e64f554b643bb5a61d09c7bf20c
+ms.openlocfilehash: 58bba3dead4d2a8ed3ae424694377e410df16f4c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -90,7 +90,7 @@ W poniższej tabeli wymieniono zakresy produktów. Obsługa w chmurze i lokalnie
 | Zarządzanie serwisem| | Tak | Tak |
 | Zarządzanie łańcuchem dostaw| | Tak | Tak |
 | Zarządzanie transportem| | Tak | Tak |
-| Portal współpracy z dostawcami| | Tak | Tak|
+| Współpraca z dostawcami| | Tak | Nr |
 | Zarządzanie magazynem| | Tak | Tak |
 | | Mobilna aplikacja magazynu| Tak | Tak |
 | | Raporty usługi Power BI dotyczące magazynowania| Tak | Nr |

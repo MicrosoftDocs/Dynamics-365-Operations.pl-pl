@@ -1,9 +1,9 @@
 ---
 title: "System Pomocy rozwiązania Finance and Operations"
-description: "Ten temat zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations. Wyjaśniono tu również, jak można dostarczać niestandardową dokumentację i szkolenia dla swojej organizacji."
+description: "Ten temat zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations."
 author: margoc
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
-ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: dc057faf3cd08ea1c939d0cc35ae404bde59e514
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/17/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/17/2018
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations. Wyjaśniono tu również, jak można dostarczać niestandardową dokumentację i szkolenia dla swojej organizacji. 
+Ten temat zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations. 
 
 > [!NOTE] 
 > Następujące produkty są ściśle związane ze sobą: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail i Dynamics 365 for Talent. Te same funkcje mogą być dostępne we wszystkich 3 produktach. W związku z tym w tematach związanych głównie z modułem Retail nazwą produktu będzie Dynamics 365 for Retail, w tematach dotyczących przede wszystkim modułu Talent nazwą produktu będzie Dynamics 365 for Talent, a w tematach związanych z produktem podstawowym nazwą produktu będzie Dynamics 365 for Finance and Operations. Tematów, które zostały napisane dla jednego produktu, można używać w odniesieniu do tych samych funkcji w powiązanym produkcie.
@@ -48,8 +48,6 @@ Program Finance and Operations zawiera system Pomocy oparty na dwóch głównych
 Do pomocy można przejść z okienka pomocy w każdym używanym produkcie. Następujące zrzuty ekranu przedstawiają program Finance and Operations.
 
 ![Okienko pomocy](./media/help-pane-ops-task-guides.png)
-
-Ten temat zawiera opis systemu Pomocy oraz wyjaśnia sposób tworzenia niestandardowych dokumentów i materiałów szkoleniowych w organizacji.
 
 > [!IMPORTANT]
 > **Przewodniki po zadaniach** nie są obecnie dostępne dla aplikacji Retail ani w okienku pomocy dla aplikacji Talent (kilka przewodników po zadaniach jest dostępnych w okienku Pierwsze kroki dla aplikacji Talent). Pomoc dla procedur jest dostępna w witrynie docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) dla aplikacji Retail i Talent.
@@ -83,7 +81,7 @@ Aby subskrybować źródło danych RSS ze wszystkimi aktualizacjami zawartości 
 ### <a name="give-feedback"></a>Przekazywanie opinii 
 Cenimy opinie klientów. Możesz komentować lub sugerować zmiany zawartości za pośrednictwem serwisu GitHub. Aby uzyskać więcej informacji o systemie opinii, zobacz [ten wpis na blogu](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-feedback"></a>Zostaw nam opinię 
+#### <a name="leave-us-feedback"></a>Zostaw nam opinię 
 Jeśli masz opinię lub pytania dotyczące tematu, pozostaw komentarz na dole strony.  
 
 1. Kliknij opcję **Opinia** w celu przejścia do sekcji komentarzy w dolnej części strony, a następnie kliknij opcję **Opinia o produkcie** lub **Zaloguj się, aby dodać opinię o dokumentacji**.
@@ -93,8 +91,6 @@ Jeśli masz opinię lub pytania dotyczące tematu, pozostaw komentarz na dole st
 2. Zacznij wpisywać swoje komentarze, a następnie kliknij przycisk **Prześlij opinię**.
 
 ![Opublikuj komentarz](./media/feedback.png)
-
-
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Sugerowanie zmiany lub współtworzenie zawartości za pośrednictwem serwisu GitHub
 Aby zasugerować zmiany, musisz mieć konto w serwisie GitHub i podpisać Umowę licencyjną współautora.  Po przesłaniu żądania pobierania przejrzymy proponowane zmiany. W razie potrzeby omówimy je i skontaktujemy się z Tobą.  
@@ -122,22 +118,7 @@ Aby rozpocząć korzystanie z interaktywnego przewodnika, kliknij opcję **Uruch
 > [!IMPORTANT] 
 > Dane wprowadzone podczas odtwarzania przewodnika po zadaniu są naprawdę zapisywane. Jeśli pracujesz w środowisku produkcyjnym, dane zostaną wprowadzone w firmie, która jest aktualnie używana.
 
-### <a name="it-all-begins-with-task-recorder"></a>Wszystko zaczyna się w rejestratorze zadań
-
-Przewodniki po zadaniach są tworzone przy użyciu rejestratora zadań. Jeśli korzystasz z Rejestratora zadań, wszystkie czynności wykonywane w interfejsie użytkownika programu Finance and Operations (takie jak klikanie menu, zmienianie ustawień i wprowadzanie danych) są nagrywane. Zapisywane kroki są zbiorczo zwane nagraniami zadań. Jak zostało wyjaśnione w poprzedniej sekcji, rejestry zadań można wyświetlić w okienku pomocy i odtworzyć jako przewodniki po zadaniach. Istnieją inne sposoby używania nagrań zadań:
-
--   **Zapisywanie nagrań zadań w BPM** — można zapisać nagranie zadania w wierszu hierarchii biblioteki BPM w LCS. Po zapisaniu nagrania zadania w BPM zostanie wygenerowany i wyświetlony diagram blokowy wraz z krokami nagrania. 
-
-    > [!Note]
-    > Aby wyświetlić nagranie zadania w okienku pomocy w programie Finance and Operations i odtworzyć je jako przewodnik po zadaniu, należy zapisać nagranie w bibliotece BPM.
-    
--   **Zapisywanie nagrań zadań w formie dokumentów programu Word** — zapisując nagranie zadania jako dokument programu Microsoft Word, można łatwo tworzyć przewodniki szkoleniowych nadające się do drukowania.
-
-Aby uzyskać więcej informacji na temat Rejestratora zadań, zobacz [Rejestrator zadań w programie Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
-
-### <a name="creating-customized-task-recordings"></a>Tworzenie niestandardowych nagrań zadań
-
-Można utworzyć własne nagrania zadań lub pobierać i dostosowywać nagrania zadań oferowane przez Microsoft. W związku z tym można utworzyć dostosowaną Pomoc dla organizacji, która odpowiada określonej implementacji programu Finance and Operations. Aby wyświetlić nagranie zadania w okienku pomocy w programie Finance and Operations i odtworzyć je jako przewodnik po zadaniu, należy zapisać nagranie w bibliotece BPM w usłudze LCS. Jeśli jesteś partnerem i podwyższasz status biblioteki do biblioteki firmowej oraz dołączasz ją do rozwiązania, będzie ona dostępna dla Twoich klientów. Aby uzyskać pełne instrukcje, zobacz [Używanie nagrań zadań do tworzenia dokumentacji i szkoleń](../../dev-itpro/user-interface/task-recorder.md).
+Program Rejestrator zadań umożliwia tworzenie własnych niestandardowych zadań. Aby uzyskać więcej informacji, zobacz [Jak utworzyć dokumenty lub szkolenia za pomocą nagrań zadań](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## <a name="in-product-help"></a>Pomoc w produkcie
 Aby uzyskać dostęp do zawartości pomocy w programie Finance and Operations, kliknij ikonę **pomocy** (**?**), a następnie wybierz polecenie Pomoc lub naciśnij klawisze Ctrl + Shift +?. W obu przypadkach zostanie otwarte okienko pomocy. Z okienka pomocy można uzyskać dostęp do artykułów lub przewodników po zadaniach. 
@@ -184,6 +165,11 @@ Po wykonaniu tych kroków przez administratora systemu można utworzyć okienko 
 Przetłumaczone przewodniki po zadaniach są wydawane w bibliotekach z tytułem zawierającym wyrażenie „Wszystkie języki”. Aby wyświetlić przetłumaczone przewodniki po zadaniach w pomocy w programie Finance and Operations, upewnij się, że masz połączenie z odpowiednią biblioteką. Język wyświetlania przetłumaczonego przewodnika po zadaniu jest kontrolowany przez każdego użytkownika w ustawieniach języka w oknie **Opcje** &gt; **Preferencje**. 
 -   Jeśli przewodnik po zadaniu został przetłumaczony, po otwarciu przewodnika jego cały tekst będzie wyświetlany w wybranym języku.
 -   Jeśli przewodnik po zadaniu nie został jeszcze przetłumaczony, po otwarciu przewodnika tylko część tekstu (formanty) będzie wyświetlana w wybranym języku.
+
+## <a name="creating-custom-help"></a>Tworzenie pomocy niestandardowej
+Można utworzyć pomoc dla użytkowników przez tworzenie niestandardowych przewodników po zadaniach lub łączenie własnej witryny z okienkiem pomocy. Aby uzyskać szczegółowe informacje, zobacz: 
+- [Jak utworzyć nagrania zadań do użycia w dokumentacji lub na szkoleniach](../../dev-itpro/user-interface/task-recorder.md).
+- [Tworzenie pomocy niestandardowej dla Finance and Operations (oficjalny dokument)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -3,7 +3,7 @@ title: "Usunięte lub wycofane funkcje"
 description: "W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia."
 author: sericks007
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 6750cfc62e2d151ddf760ff3dc36bab9c078b2d9
+ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
+ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -87,6 +87,19 @@ Funkcja eksportowania wygenerowanych plików elektronicznych deklaracji do folde
 | **Powiązane obszary produktów**         | Księga główna, Podatek |
 | **Opcja wdrażania**              | Wszyscy |
 | **Stan**                         | Usunięto w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations 8.1 z aktualizacją platformy 20. |
+
+
+### <a name="profit-tax-register-wizard"></a>Kreator tworzenia rejestru podatku dochodowego.
+Funkcja do tworzenia szablonów dla nowych rejestrów podatku dochodowego. Ta funkcja tworzy obiekty X ++ dla rejestracji nowych rejestrów, które są tworzone jako szablony z dodaną odpowiednią logiką obliczeń.
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Funkcja jest niezgodna z modelem rozszerzenia Dynamics 365 for Finance and Operations. |
+| **Zamieniona przez inną funkcję?**   | Nr |
+| **Powiązane obszary produktów**         | Podatek |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Usunięto w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations 8.1 z aktualizacją platformy 20. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Glosariusz terminów używanych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations 8.0 z aktualizacją platformy 15
 Żadne funkcje nie zostały usunięte ani wycofane w tej wersji. Aktualizacja platformy 15 jest zbiorcza i zawiera nowe oraz zmienione funkcje z aktualizacji platformy 13, 14 i 15.
@@ -993,6 +1006,17 @@ Konstruktor produktów był używany do dynamicznego konfigurowania elementów z
 | **Zamieniona przez inną funkcję?**   | Tak. Konfigurację opartą na ograniczeniach wprowadzono w systemie Dynamics AX 2012, w którym ogłoszono już wycofanie funkcji Konstruktor produktów w przyszłych wersjach. Technologia konfiguracji opartej na ograniczeniach jest wybierana w produktach głównych w celu włączenia konfiguracji. Aby dowiedzieć się więcej, zobacz [Tworzenie modelu konfiguracji produktu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Powiązane obszary produktów**         | Zarządzanie informacjami o produktach, Sprzedaż i marketing  |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.      |
+
+### <a name="production-floor-app"></a>Aplikacja Production Floor
+Jest to aplikacja dla urządzeń typu tablet z systemem Windows 8.1 RT i Windows 8.1 Pro.
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | W przypadku zmiany klienta opartego na sieci web można uzyskać podobną funkcjonalność za pośrednictwem natywnego klienta Dynamics AX 7.0. Urządzenie karty zadań udostępnia interfejs użytkownika hali produkcyjnej zoptymalizowany pod kątem płytki dotykowej i tabletów. |
+| **Zamieniona przez inną funkcję?**   | Tak. Urządzenie karty zadań, którego częścią jest natywna część Dynamics AX 7.0.                                                                           |
+| **Powiązane obszary produktów**         | Kontrola produkcji                                                |
+| **Stan**                         | Wycofane: Data usunięcia tej funkcji z Microsoft store nie jest jeszcze ustalona.                                                |
+
 
 ### <a name="rename-product-dimension"></a>Zmiana nazwy wymiaru produktu
 

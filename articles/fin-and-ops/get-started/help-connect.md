@@ -3,7 +3,7 @@ title: "Łączenie z systemem Pomocy"
 description: "W tym temacie opisano składniki systemu Pomocy w programie Microsoft Dynamics 365 for Finance and Operations, sposoby ich podłączania oraz podstawowe zasady tworzenia pomocy niestandardowej."
 author: margoc
 manager: AnnBe
-ms.date: 09/11/2017
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a1449d44149f328f780f02e798c5200595557474
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: a2ca5f5302751ad2c4ddc3c6921a8a9b6c2d57df
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -68,9 +68,19 @@ Przetłumaczone przewodniki po zadaniach po raz pierwszy umieszczono w ujednolic
 > -   Jeśli przewodnik po zadaniu nie został jeszcze przetłumaczony, po otwarciu przewodnika tylko część tekstu (formanty) będzie wyświetlana w wybranym języku.
 
 ## <a name="creating-custom-help"></a>Tworzenie pomocy niestandardowej
+Można przewodników po zadaniach do tworzenia pomocy niestandardowej lub połączenia witryny sieci Web z okienkiem pomocy. 
+
+### <a name="create-custom-help-with-task-guides"></a>Tworzenie Pomocy niestandardowej przy użyciu przewodników po zadaniach
 W programie Finance and Operations i aplikacji Retail można utworzyć pomoc niestandardową poprzez utworzenie nagrań zadań odpowiadających konkretnemu wdrożeniu i zapisanie ich w bibliotece procesów biznesowych LCS. Nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Talent. 
 
 W przypadku partnerów: jeśli zostanie podniesiony poziom biblioteki do firmowej i zostanie ona uwzględniona w rozwiązaniu, będzie dostępna dla klientów. Można również utworzyć kopię ujednoliconej globalnej biblioteki APQC, a następnie otworzyć tę kopię, otwierać z niej nagrania zadań, modyfikować je i zapisywać nagrania z wprowadzonymi zmianami. Aby uzyskać więcej informacji, zobacz [Jak utworzyć nagrania zadań do użycia w dokumentacji lub na szkoleniach](../../dev-itpro/user-interface/task-recorder.md).
+
+### <a name="connect-a-custom-site"></a>Łączenie z niestandardową witryną
+Firma Microsoft oferuje wytyczne i przykładowy kod opisujące tworzenie oraz łączenie witryny Pomocy niestandardowej do okienka Pomocy. Aby uzyskać więcej informacji, zobacz: 
+- [Tworzenie pomocy niestandardowej dla Finance and Operations (oficjalny dokument)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Repozytorium GitHub Pomocy niestandardowej](https://github.com/microsoft/dynamics356f-o-custom-help)
+
+
 
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------

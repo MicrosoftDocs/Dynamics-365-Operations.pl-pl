@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -164,13 +164,23 @@ Aby uzyskać informacje o rejestrowaniu nowego dostawcy ER, odtwórz przewodnik 
 
 #### <a name="repository"></a>Repozytorium
 
-Konfiguracje ER są przechowywane w repozytorium ER. Obecnie obsługiwane są dwa typy repozytoriów ER: **Zasoby operacyjne** i **Projekt usługi LCS**.
+Konfiguracje ER są przechowywane w repozytorium ER. Obecnie obsługiwane są cztery rodzaje repozytoriów ER: **zasoby operacji**, **Projekt LCS (LCS)**, **systemu plików**, i **Regulatory Configuration Services (RCS)**.
 
 Repozytorium **Zasoby operacyjne** zapewnia dostęp do listy konfiguracji, które firma Microsoft, jako dostawca konfiguracji raportowania elektronicznego, publikuje w ramach rozwiązania Finance and Operations. Te konfiguracje można importować do bieżącego wystąpienia programu Finance and Operations i używać dla raportowania elektronicznego. Można je również wykorzystywać dla dodatkowych tłumaczeń i dostosowań.
 
 Repozytorium **Projekt usługi LCS** zapewnia dostęp do listy konfiguracji określonego projektu LCS (biblioteki zasobów projektu usługi LCS) wybranego na etapie rejestracji repozytorium. Narzędzie ER umożliwia przekazywanie udostępnionych konfiguracji z bieżącego wystąpienia programu Finance and Operations do konkretnego repozytorium **Projekt usługi LCS**. Można także importować konfiguracje z repozytorium **Projekt usługi LCS** do bieżącego wystąpienia programu Finance and Operations.
 
-Wymagane repozytoria **Projekt usługi LCS** można rejestrować indywidualnie dla każdego dostawcy konfiguracji bieżącego wystąpienia programu Finance and Operations. Każde repozytorium może być dedykowane określonemu dostawcy konfiguracji.
+Repozytorium **systemu plików** udostępnia listę konfiguracji, które znajdują się w postaci plików xml w określonym folderze lokalnego systemu plików komputera, na którym działa usługa AOS. Wymagany folder jest wybierany w procesie rejestracji repozytorium. Można także importować konfiguracje z repozytorium **System plików** do bieżącego wystąpienia Finance and Operations. Należy zwrócić uwagę, że ten typ repozytorium jest dostępny w następujących środowiskach Dynamics 365 for Finance and Operations:
+- środowiska hostowane w chmurze wdrożone na potrzeby programowania (zawierające modele testu zamkniętych pakietów)
+- środowiska wdrożone lokalnie (wdrażania danych biznesowych lokalne lub na dysku lokalnym (LBD))
+
+Odwiedź stronę [konfiguracji importu raportowania elektronicznego (RE)](/electronic-reporting-import-ger-configurations.md), aby uzyskać szczegółowe informacje na ten temat.
+
+Repozytorium **wystąpienie RCS** zapewnia dostęp do listy konfiguracji określonego wystąpienia RCS wybranego na etapie rejestracji repozytorium. ER pozwala importować kompletne lub udostępniane konfiguracje z wybranego wystąpienia RCS do bieżącego wystąpienia Finance and Operations i używać do raportowania elektronicznego.
+
+Odwiedź stronę [konfiguracji importu raportowania elektronicznego (RE) z Regulatory Configuration Services (RCS)](/rcs-download-configurations.md), aby uzyskać szczegółowe informacje na ten temat.
+
+Wymagane repozytoria **Projekt usługi LCS**, **System plików** i **Regulatory Configuration Services (RCS)** można rejestrować indywidualnie dla każdego dostawcy konfiguracji bieżącego wystąpienia programu Finance and Operations. Każde repozytorium może być dedykowane określonemu dostawcy konfiguracji.
 
 ## <a name="supported-scenarios"></a>Obsługiwane scenariusze
 ### <a name="building-a-data-model"></a>Budowanie modelu danych

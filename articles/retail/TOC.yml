@@ -47,14 +47,18 @@
       href: dev-itpro/updating-environments.md
     - name: Testowanie i problemy z wydajnością
       href: dev-itpro/retail-implementation-testing-performance.md
+- name: Zarządzanie zamówieniami rozdzielonymi (DOM)
+  href: dom.md
 - name: Płatności
   items:
     - name: Metody płatności
       href: payment-methods.md
     - name: 'Konfiguracja, autoryzacja i przechwytywanie karty kredytowej'
       href: ../financials/accounts-receivable/credit-card-authorizations.md
-    - name: Konfigurowanie stawek gotówkowych w punkcie sprzedaży
+    - name: Konfigurowanie nominałów gotówki dla punktu sprzedaży
       href: cash-denominations.md
+    - name: Konfigurowanie scenariuszy płatności za faktury
+      href: payinvoice.md
     - name: Płatności — często zadawane pytania
       href: dev-itpro/payments-retail.md
 - name: Zamówienia zakupu
@@ -209,10 +213,12 @@
   items:
     - name: Realizacja zamówienia w sklepie
       href: Order-fulfillment-overview.md
-    - name: Konfigurowanie realizacji zamówienia w sklepie
+    - name: Konfigurowanie realizacji zamówienia dla sklepów
       href: Order-fulfillment-POS-setup.md
     - name: Pokazywanie powiadomień o zamówieniach w aplikacji POS
       href: Notifications-POS.md
+- name: Konfigurowanie i przetwarzanie wymiany w przypadku zamówienia zwrotu
+  href: orderexchanges.md
 - name: Monitorowanie i analizy
   items:
     - name: Monitorowanie wydajności sprzedaży i marży
@@ -235,6 +241,8 @@
       href: price-management.md
     - name: Korekty cen i rabaty
       href: price-adjustments-discounts.md
+    - name: Stosowanie wielu rabatów sieci sprzedaży do produktu
+      href: Apply-multiple-retail-discounts.md
     - name: Ustalanie optymalnej kombinacji nakładających się rabatów
       href: optimal-combination-overlapping-discounts.md
     - name: Definiowanie rabatów specyficznych dla kanału
@@ -488,6 +496,8 @@
       items:
         - name: Układy ekranu aplikacji Retail POS
           href: pos-screen-layouts.md
+        - name: Otwieranie adresu URL w aplikacji punktu sprzedaży
+          href: Open-URL-in-POS.md
         - name: Instalowanie projektanta układów aplikacji punktu sprzedaży
           href: install-pos-layout-designer.md
         - name: Aplikacja Retail Modern POS w trybie offline
@@ -508,6 +518,10 @@
           href: dev-itpro/gift-card.md
         - name: Tworzenie i stosowanie znakowania marką do aplikacji Retail Experience
           href: dev-itpro/create-retail-experience-app.md
+        - name: Konfigurowanie aplikacji POS Hybrid w systemach Android i iOS
+          href: dev-itpro/hybridApp.md
+        - name: Zastępowanie programu obsługi żądań punktu sprzedaży
+          href: dev-itpro/pos-handler.md
     - name: Rozszerzalność aplikacji Hardware Station
       href: dev-itpro/hardware-station-extensibility.md
     - name: Rozszerzalność usługi Retail Server
@@ -562,9 +576,13 @@
           href: dev-itpro/payment-custom-error-messages.md
         - name: Tworzenie instalatorów Windows dla łączników płatności
           href: dev-itpro/create-windows-installer-payment-connector.md
+        - name: Zastosowanie danych płatności
+          href: payment-connector-data-fields.md
     - name: Zestaw Retail SDK
       href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: Nadchodzące zmiany w zestawie Retail SDK
+          href: dev-itpro/UpcomingSDKChanges.md
         - name: Scalanie systemów kompilacji dla rozwiązań Retail i Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Przykłady możliwości rozszerzania zestawu Retail SDK

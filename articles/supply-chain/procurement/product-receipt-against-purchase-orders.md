@@ -1,9 +1,9 @@
 ---
-title: "Przyjęcie produktów względem zamówień zakupu"
-description: "W tym artykule opisano różne opcje rejestrowania produktów jako przyjętych."
+title: "Przyjęcie produktów na podstawie zamówień zakupu"
+description: "W tym temacie opisano różne opcje rejestrowania produktów jako przyjętych."
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,20 +19,20 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c227664da360f6f8d54b49f15e1b7160aa142ba9
+ms.sourcegitcommit: 09432d278c51301f8b01fef8cbd3353af75a88f3
+ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
-# <a name="product-receipt-against-purchase-orders"></a>Przyjęcie produktów względem zamówień zakupu
+# <a name="product-receipt-against-purchase-orders"></a>Przyjęcie produktów na podstawie zamówień zakupu
 
 [!include [banner](../includes/banner.md)]
 
 [!include [retail name](../includes/retail-name.md)]
 
-W tym artykule opisano różne opcje rejestrowania produktów jako przyjętych.
+W tym temacie opisano różne opcje rejestrowania produktów jako przyjętych.
 
 Przyjęcie produktów to proces rejestrowania, że zamówione produkty zostały odebrane, wskutek czego wiersze zamówienia zakupu mogą być przetwarzane na potrzeby fakturowania. W niektórych przypadkach produkty są poddawane wstępnej rejestracji, w której przed przyjęciem produktów są odnotowywane dodatkowe informacje od dostawcy. Po przybyciu produktów są one najpierw oznaczane jako **Zarejestrowane**. Produkty mogą następnie przejść przez dodatkowe procesy, takie jak zarządzanie jakością, zanim ostatecznie są oznaczone jako **Otrzymane**.
 
@@ -46,8 +46,6 @@ Produkty przyjęte do magazynu mogą przechodzić kontrolę jakości, zanim zost
 
 ## <a name="product-receipt"></a>Dokument przyjęcia produktów
 Najczęściej do oznaczania produktów z zamówienia zakupu jako **Otrzymane** jest używana operacja **Dokument przyjęcia produktów** znajdująca się na karcie **Zamówienie zakupu**. Strona **Księgowanie dokumentu przyjęcia produktów** zawiera różne opcje dotyczące ilości ujmowanej jako przyjęta. Na przykład w polu **Ilość** można ustawić wartość **Ilość zamówiona** lub **Ilość dostarczana teraz**. Alternatywnie w przypadku używania procesu przybycia do magazynu często w tym polu ustawia się wartość **Ilość zarejestrowana**. Można zmodyfikować ilości w każdym wierszu zamówienia, który ma zostać oznaczony jako **Otrzymane**, aby uwzględnić wszelkie rozbieżności, takie jak niedobór w dostawie i nadwyżka w dostawie. Podczas przyjęcia produktów należy podać identyfikator przyjęcia produktów, którym zazwyczaj jest odwołanie do dokumentu dostawy od dostawcy. Ten identyfikator jest wymagany przez księgowość, ponieważ umożliwia sprawdzanie lub inspekcję dokumentów dostawy od dostawcy względem faktycznie otrzymanych towarów oraz względem zaksięgowanych zapasów lub wydatków.  
-
-Jeśli pracownik zamówił towary przy użyciu zapotrzebowania na zakup, może zostać poproszony o własnoręczne potwierdzenie otrzymania produktu. To zachowanie konfiguruje się za pomocą przepływu pracy. Można skonfigurować warunki przepływu pracy tak, aby pasowały do procesu biznesowego w firmie.  
 
 Zamówienia zakupu mogą być tworzone dla produktów, które nie są przeznaczone na zapasy, ale są uważane za koszty. Ta kategoria obejmuje wiersze zamówień, w których produkty są oznaczone jako **Niemagazynowe** przez ich grupy modeli zapasów, a także wiersze wykorzystujące kategorie zaopatrzenia. W takim przypadku pozycje mogą nie przechodzić przez rejestrację przybycia i przyjęcie do magazynu. Zamiast tego operacja **Dokument przyjęcia produktów** jest używana do rejestrowania przyjęcia bezpośrednio w zamówieniu zakupu, a przyjęcie opiera się na ilości zamówionej, nie zarejestrowanej.  
 

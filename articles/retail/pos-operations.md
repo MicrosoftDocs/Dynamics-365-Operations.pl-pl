@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
+ms.sourcegitcommit: c9f9368dc3e0fb4ed63250889016d6abe7d15a8c
+ms.openlocfilehash: 557e43c05f7015b04380f45fbd69f58a7250829a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -152,6 +152,7 @@ Uwaga: Operacje wymienione poniżej mają zastosowanie do najnowszej wersji prog
 | 644 | Usuń kod kuponu | Monituj użytkownika o usunięcie kuponów, przez zaznaczenie ich na liście kuponów, które są aktualnie skojarzone z transakcją. | Tak | Tak | Nr | Tak | Nr |
 | 1057 | Ponowne drukowanie raportu końcowego | Wydrukuj ponownie raport końcowy sprzedaży dla poprzedniej lub wybranej zmiany. | Tak | Tak | Tak | Nr | Nr |
 | 1216 | Resetuj hasło | Ta operacja umożliwia użytkownikowi z uprawnieniami do resetowania hasła zresetowanie hasła dla pracownika za pomocą hasła tymczasowego. | Tak | Tak | Tak | Nr | Nr |
+| 1219 | Otwieranie adresu URL w aplikacji punktu sprzedaży | Ta operacja umożliwia użytkownikowi otwieranie adresu URL skonfigurowanego przez administratora w punkcie sprzedaży. | Tak | Tak | Tak | Tak | Nr | 
 | 109 | Zwrot produktu | Dokonaj zwrotu poszczególnych produktów. Następny zeskanowany produkt jest wyświetlany jako zwrócony i ma ujemną cenę i ilość. | Tak | Tak | Nr | Tak | Nr |
 | 114 | Transakcja zwrotu | Wycofaj poprzednią transakcję według jej numeru paragonu, aby zwrócić niektóre lub wszystkie produkty. | Tak | Tak | Tak | Tak§ | Nr |
 | 1211 | Przekazanie pieniędzy do sejfu | Przekazać pieniądze z kasy do sejfu. | Tak | Tak | Tak | Tak | Nr |
