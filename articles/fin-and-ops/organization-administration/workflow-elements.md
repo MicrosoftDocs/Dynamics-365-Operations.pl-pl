@@ -34,42 +34,46 @@ Ten temat zawiera opis różnych elementów składających się na przepływ pra
 Przepływ pracy składa się z elementów. Sekcje poniżej opisują poszczególne typy elementów.
 
 ## <a name="tasks"></a>Zadania
+
 *Zadanie* jest jednostką pracy, która musi zostać wykonana. Do przepływu pracy można dodawać dwa typy zadań: zadania ręczne i zadania automatyczne.
 
 ### <a name="manual-task"></a>Zadanie wykonywane ręcznie
 
 *Zadanie ręczne* jest jednostką pracy, która musi zostać wykonana przez użytkownika. Na przykład przepływu pracy raportu z wydatków może mieć ręczne zadania, które wymagają, by przypisani użytkownicy wykonali następujące akcje:
 
--   przejrzeć przyjęcia, które są przesyłane wraz z raportem z wydatków;
--   wezwać przełożonego pracownika.
+- przejrzeć przyjęcia, które są przesyłane wraz z raportem z wydatków;
+- wezwać przełożonego pracownika.
 
 ### <a name="automated-task"></a>Zadanie wykonywane automatycznie
 
 *Zadanie automatyczne* jest jednostką pracy, która musi zostać wykonana przez system. Nie są wymagane żadne czynności wykonywane przez człowieka. Na przykład przepływ pracy zamówienia sprzedaży może mieć zadania automatyczne, które wymagają, aby system wykonał następujące akcje:
 
--   sprawdzić kartę kredytową;
--   utworzyć rekord odbiorcy dla odbiorcy, jeśli rekord jeszcze nie istnieje.
+- sprawdzić kartę kredytową;
+- utworzyć rekord odbiorcy dla odbiorcy, jeśli rekord jeszcze nie istnieje.
 
 ## <a name="approval-processes"></a>Procesy zatwierdzania
+
 *Proces zatwierdzania* składa się z oddzielnych kroków. Na każdym kroku użytkownik może wykonać następujące akcje:
 
--   zatwierdzić dokument;
--   odrzucić dokument;
--   zażądać wprowadzenia zmian w dokumencie;
--   przypisać dokument innemu użytkownikowi w celu zatwierdzenia.
+- zatwierdzić dokument;
+- odrzucić dokument;
+- zażądać wprowadzenia zmian w dokumencie;
+- przypisać dokument innemu użytkownikowi w celu zatwierdzenia.
 
 ## <a name="line-item-workflow-elements"></a>Elementy przepływu pracy dla wiersza
+
 Przepływ pracy można tworzyć w celu przetwarzania dokumentów lub pozycji w dokumencie. Na przykład utworzono przepływ pracy zatwierdzania dla kart czasu pracy. (Nazwiemy go *przepływem pracy dokumentu*). Do tego przepływu pracy dokumentu można dodać element *przepływu pracy dla wiersza*. Po uruchomieniu tego element wszystkie pozycje wiersza w dokumencie są przesyłane do przetworzenia. Czasami wszystkie elementy wiersza muszą być przetworzone przez ten sam przepływ pracy lub każdy element musi być przetwarzany przez różne przepływy pracy dla wierszy. Załóżmy, że pracownik przesłał kartę czasu pracy podobną do tej na obrazku poniżej.
 
-![Przepływ pracy z pozycjami w wierszu](./media/workflow_lineitemworkflow.gif) 
+![Przepływ pracy z pozycjami w wierszu](./media/workflow_lineitemworkflow.gif)
 
 W tym scenariuszu można utworzyć następujące przepływy pracy dla towarów w wierszu:
 
--   **Przepływ pracy utworzony dla pozycji w wierszu 1** — ten przepływ pracy jest używany do przetwarzania pozycji w wierszu z identyfikatorem projektu 1111.
--   **Przepływ pracy utworzony dla pozycji w wierszu 2** — ten przepływ pracy jest używany do przetwarzania pozycji w wierszu z identyfikatorem projektu 2222.
--   **Przepływ pracy utworzony dla pozycji w wierszu 3** — ten przepływ pracy jest używany do przetwarzania pozycji w wierszu z identyfikatorem projektu 3333.
+- **Przepływ pracy utworzony dla pozycji w wierszu 1** — ten przepływ pracy jest używany do przetwarzania pozycji w wierszu z identyfikatorem projektu 1111.
+- **Przepływ pracy utworzony dla pozycji w wierszu 2** — ten przepływ pracy jest używany do przetwarzania pozycji w wierszu z identyfikatorem projektu 2222.
+- **Przepływ pracy utworzony dla pozycji w wierszu 3** — ten przepływ pracy jest używany do przetwarzania pozycji w wierszu z identyfikatorem projektu 3333.
 
 ## <a name="flow-control-elements"></a>Elementy kontroli przepływu
+
 Poniższe elementy pozwalają projektować przepływy pracy z alternatywnymi oddziałami lub oddziałami działającymi jednocześnie.
 
 ### <a name="manual-decision"></a>Decyzja ręczna
@@ -87,7 +91,4 @@ Poniższe elementy pozwalają projektować przepływy pracy z alternatywnymi odd
 ### <a name="subworkflow"></a>Podrzędny przepływ pracy
 
 *Podrzędny przepływ pracy* jest przepływem pracy, który działa w kontekście innego przepływu pracy.
-
-
-
 
