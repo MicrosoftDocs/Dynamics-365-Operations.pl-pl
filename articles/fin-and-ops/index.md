@@ -18,10 +18,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: ed8bc910b3bf5501d8abb07d50fc20955f306820
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 09/04/2018
 <p><span data-ttu-id="9748e-111"><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></span><span class="sxs-lookup"><span data-stu-id="9748e-111"><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></span></span></p>
 <p><span data-ttu-id="9748e-112"><a href="imp-lifecycle/onboard.md">Rozpoczynanie korzystania z projektu</a></span><span class="sxs-lookup"><span data-stu-id="9748e-112"><a href="imp-lifecycle/onboard.md">Onboarding a project</a></span></span></p>
 <p><span data-ttu-id="9748e-113"><a href="imp-lifecycle/prepare-go-live.md">Przygotowywanie do rozpoczęcia eksploatacji</a></span><span class="sxs-lookup"><span data-stu-id="9748e-113"><a href="imp-lifecycle/prepare-go-live.md">Preparing for go-live</a></span></span></p>
-  
+
 <h3><span data-ttu-id="9748e-114"><a href="../financials/index.md">Zarządzanie finansami</a></span><span class="sxs-lookup"><span data-stu-id="9748e-114"><a href="../financials/index.md">Financial management</a></span></span></h3>
 <p><span data-ttu-id="9748e-115"><a href="../financials/accounts-payable/accounts-payable.md">Rozrachunki z dostawcami</a></span><span class="sxs-lookup"><span data-stu-id="9748e-115"><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></span></span></p>
 <p><span data-ttu-id="9748e-116"><a href="../financials/accounts-receivable/accounts-receivable.md">Rozrachunki z odbiorcami</a></span><span class="sxs-lookup"><span data-stu-id="9748e-116"><a href="../financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></span></span></p>
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/04/2018
 <p><span data-ttu-id="9748e-124"><a href="../financials/public-sector/public-sector-functionality.md">Sektor publiczny</a></span><span class="sxs-lookup"><span data-stu-id="9748e-124"><a href="../financials/public-sector/public-sector-functionality.md">Public sector</a></span></span></p>
 <p><span data-ttu-id="9748e-125"><a href="../dev-itpro/lcs-solutions/country-region.md">Funkcje wymagane lokalnymi przepisami prawa</a></span><span class="sxs-lookup"><span data-stu-id="9748e-125"><a href="../dev-itpro/lcs-solutions/country-region.md">Regional regulatory features</a></span></span></p>
 
-<H3><span data-ttu-id="9748e-126"><a href="hr/hr-landing-page.md">Zasoby ludzkie</a></span><span class="sxs-lookup"><span data-stu-id="9748e-126"><a href="hr/hr-landing-page.md">Human resources</a></span></span></h3>
+<h3><span data-ttu-id="9748e-126"><a href="hr/hr-landing-page.md">Zasoby ludzkie</a></span><span class="sxs-lookup"><span data-stu-id="9748e-126"><a href="hr/hr-landing-page.md">Human resources</a></span></span></h3>
 <p><span data-ttu-id="9748e-127"><a href="../talent/manage-benefit-program.md">Świadczenia</a></span><span class="sxs-lookup"><span data-stu-id="9748e-127"><a href="../talent/manage-benefit-program.md">Benefits</a></span></span></p>
 <p><span data-ttu-id="9748e-128"><a href="../talent/performance-management-overview.md">Rozwój i szkolenia pracownika etatowego</a></span><span class="sxs-lookup"><span data-stu-id="9748e-128"><a href="../talent/performance-management-overview.md">Employee development and training</a></span></span></p>
 <p><span data-ttu-id="9748e-129"><a href="../talent/questionnaires.md">Kwestionariusz</a></span><span class="sxs-lookup"><span data-stu-id="9748e-129"><a href="../talent/questionnaires.md">Questionnaire</a></span></span></p>

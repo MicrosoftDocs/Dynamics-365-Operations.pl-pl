@@ -18,10 +18,10 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 770796b42e79ad616b469e1dbf5149789bff0788
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 7eb6d743131937081ce83b31988d792185cb28b2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,28 +31,29 @@ ms.lasthandoff: 08/09/2018
 
 <span data-ttu-id="371b2-104">W tym temacie opisano system przepływów pracy dostępny w programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="371b2-104">This topic describes the workflow system in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
-<a name="what-is-workflow"></a><span data-ttu-id="371b2-105">Co to jest przepływ pracy?</span><span class="sxs-lookup"><span data-stu-id="371b2-105">What is workflow?</span></span>
------------------
+## <a name="what-is-workflow"></a><span data-ttu-id="371b2-105">Co to jest przepływ pracy?</span><span class="sxs-lookup"><span data-stu-id="371b2-105">What is workflow?</span></span>
 
 <span data-ttu-id="371b2-106">Termin *przepływ pracy* można definiować na dwa sposoby: jako system i jako proces biznesowy.</span><span class="sxs-lookup"><span data-stu-id="371b2-106">The term *workflow* can be defined in two ways: as a system and as a business process.</span></span>
+
 ### <a name="workflow-is-a-system"></a><span data-ttu-id="371b2-107">Przepływ pracy jest systemem</span><span class="sxs-lookup"><span data-stu-id="371b2-107">Workflow is a system</span></span>
 
 <span data-ttu-id="371b2-108">Przepływ pracy to system instalowany razem z programem Finance and Operations i uruchamiany na serwerze obiektów aplikacji (AOS).</span><span class="sxs-lookup"><span data-stu-id="371b2-108">Workflow is a system that is installed with Finance and Operations and runs on the Application Object Server (AOS).</span></span> <span data-ttu-id="371b2-109">System przepływu pracy zawiera funkcjonalność, której można używać do tworzenia pojedynczych przepływów pracy, czyli procesów biznesowych.</span><span class="sxs-lookup"><span data-stu-id="371b2-109">The workflow system provides functionality that you can use to create individual workflows, or business processes.</span></span>
 
 ### <a name="workflow-is-a-business-process"></a><span data-ttu-id="371b2-110">Przepływ pracy jest procesem biznesowym</span><span class="sxs-lookup"><span data-stu-id="371b2-110">Workflow is a business process</span></span>
 
-<span data-ttu-id="371b2-111">Przepływ pracy reprezentuje proces biznesowy.</span><span class="sxs-lookup"><span data-stu-id="371b2-111">A workflow represents a business process.</span></span> <span data-ttu-id="371b2-112">Definiuje sposób przepływu lub przenoszenia dokumentu przez system, pokazując, kto musi wykonać zadanie, podjąć decyzję lub zatwierdzić dokument.</span><span class="sxs-lookup"><span data-stu-id="371b2-112">It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.</span></span> <span data-ttu-id="371b2-113">Na przykład poniższa ilustracja pokazuje przepływ pracy dla raportów z wydatków.</span><span class="sxs-lookup"><span data-stu-id="371b2-113">For example, the following illustration shows a workflow for expense reports.</span></span> 
+<span data-ttu-id="371b2-111">Przepływ pracy reprezentuje proces biznesowy.</span><span class="sxs-lookup"><span data-stu-id="371b2-111">A workflow represents a business process.</span></span> <span data-ttu-id="371b2-112">Definiuje sposób przepływu lub przenoszenia dokumentu przez system, pokazując, kto musi wykonać zadanie, podjąć decyzję lub zatwierdzić dokument.</span><span class="sxs-lookup"><span data-stu-id="371b2-112">It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.</span></span> <span data-ttu-id="371b2-113">Na przykład poniższa ilustracja pokazuje przepływ pracy dla raportów z wydatków.</span><span class="sxs-lookup"><span data-stu-id="371b2-113">For example, the following illustration shows a workflow for expense reports.</span></span>
 
-![Przepływ pracy z elementami przypisanymi do użytkowników](./media/workflow_user.gif) 
+![Przepływ pracy z elementami przypisanymi do użytkowników](./media/workflow_user.gif)
 
 <span data-ttu-id="371b2-115">Aby lepiej zrozumieć ten przepływ pracy, załóżmy, że Sam przesyła raport z wydatków na 7000 USD.</span><span class="sxs-lookup"><span data-stu-id="371b2-115">To better understand this workflow, suppose that Sam submits an expense report for USD 7,000.</span></span> <span data-ttu-id="371b2-116">W tym scenariuszu Ivan musi przejrzeć pokwitowania wysłane przez Tomasza.</span><span class="sxs-lookup"><span data-stu-id="371b2-116">In this scenario, Ivan must review the receipts that Sam routes to him.</span></span> <span data-ttu-id="371b2-117">Następnie Wojciech i Magda muszą zatwierdzić raport z wydatków.</span><span class="sxs-lookup"><span data-stu-id="371b2-117">Then Frank and Sue must approve the expense report.</span></span> <span data-ttu-id="371b2-118">Teraz załóżmy, że Tomasz przesyła raport z wydatków na kwotę 11 000 USD.</span><span class="sxs-lookup"><span data-stu-id="371b2-118">Now suppose that Sam submits an expense report for USD 11,000.</span></span> <span data-ttu-id="371b2-119">W tym scenariuszu Maciej musi przejrzeć pokwitowania, a Wojciech, Magda i Anna muszą zatwierdzić raport z wydatków.</span><span class="sxs-lookup"><span data-stu-id="371b2-119">In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.</span></span>
 
 ## <a name="benefits-of-using-the-workflow-system"></a><span data-ttu-id="371b2-120"> Zalety używania systemu przepływu pracy</span><span class="sxs-lookup"><span data-stu-id="371b2-120">Benefits of using the workflow system</span></span>
 
 <span data-ttu-id="371b2-121">Używanie systemu przepływu pracy w organizacji ma kilka zalet:</span><span class="sxs-lookup"><span data-stu-id="371b2-121">There are several benefits of using the workflow system in your organization:</span></span>
--   <span data-ttu-id="371b2-122">**Spójność procesów** — Możesz zdefiniować sposób przetwarzania określonych dokumentów, takich jak zapotrzebowania zakupu i raporty z wydatków.</span><span class="sxs-lookup"><span data-stu-id="371b2-122">**Consistent processes** – You can define how specific documents, such as purchase requisitions and expense reports, are processed.</span></span> <span data-ttu-id="371b2-123">System przepływu pracy zapewnia, że dokumenty będą przetwarzane i zatwierdzane w spójny i wydajny sposób.</span><span class="sxs-lookup"><span data-stu-id="371b2-123">By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.</span></span>
--   <span data-ttu-id="371b2-124">**Widoczność procesu** — Możesz śledzić stan, historię i miary wydajności określonego wystąpienia przepływu pracy.</span><span class="sxs-lookup"><span data-stu-id="371b2-124">**Process visibility** – You can track the status, history, and performance metrics of workflow instances.</span></span> <span data-ttu-id="371b2-125">Pozwala to na określanie, czy zmiany powinny zostać wprowadzone do przepływu pracy w celu poprawienia wydajności.</span><span class="sxs-lookup"><span data-stu-id="371b2-125">This helps you determine whether changes should be made to the workflow to improve efficiency.</span></span>
--   <span data-ttu-id="371b2-126">**Scentralizowana lista prac** — użytkownicy mogą wyświetlić scentralizowaną listę prac, aby przeglądać przypisane do nich zadania i zatwierdzenia przepływu pracy.</span><span class="sxs-lookup"><span data-stu-id="371b2-126">**Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.</span></span>
+
+- <span data-ttu-id="371b2-122">**Spójność procesów** — Możesz zdefiniować sposób przetwarzania określonych dokumentów, takich jak zapotrzebowania zakupu i raporty z wydatków.</span><span class="sxs-lookup"><span data-stu-id="371b2-122">**Consistent processes** – You can define how specific documents, such as purchase requisitions and expense reports, are processed.</span></span> <span data-ttu-id="371b2-123">System przepływu pracy zapewnia, że dokumenty będą przetwarzane i zatwierdzane w spójny i wydajny sposób.</span><span class="sxs-lookup"><span data-stu-id="371b2-123">By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.</span></span>
+- <span data-ttu-id="371b2-124">**Widoczność procesu** — Możesz śledzić stan, historię i miary wydajności określonego wystąpienia przepływu pracy.</span><span class="sxs-lookup"><span data-stu-id="371b2-124">**Process visibility** – You can track the status, history, and performance metrics of workflow instances.</span></span> <span data-ttu-id="371b2-125">Pozwala to na określanie, czy zmiany powinny zostać wprowadzone do przepływu pracy w celu poprawienia wydajności.</span><span class="sxs-lookup"><span data-stu-id="371b2-125">This helps you determine whether changes should be made to the workflow to improve efficiency.</span></span>
+- <span data-ttu-id="371b2-126">**Scentralizowana lista prac** — użytkownicy mogą wyświetlić scentralizowaną listę prac, aby przeglądać przypisane do nich zadania i zatwierdzenia przepływu pracy.</span><span class="sxs-lookup"><span data-stu-id="371b2-126">**Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.</span></span>
 
 
 ## <a name="workflow-content"></a><span data-ttu-id="371b2-127">Zawartość przepływu pracy</span><span class="sxs-lookup"><span data-stu-id="371b2-127">Workflow content</span></span>
