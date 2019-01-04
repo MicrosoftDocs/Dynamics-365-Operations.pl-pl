@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 932540052fe80e2380b6f71426633f471be1891a
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 059474a780f849d6e1920703c1f717a9adaa2617
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -31,20 +31,18 @@ ms.lasthandoff: 05/08/2018
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="38a72-104">W programie Microsoft Dynamics 365 for Retail można badać rentowności 10 najlepszych produktów.</span><span class="sxs-lookup"><span data-stu-id="38a72-104">You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail.</span></span> 
+<span data-ttu-id="38a72-104">W programie Microsoft Dynamics 365 for Retail można badać rentowności 10 najlepszych produktów.</span><span class="sxs-lookup"><span data-stu-id="38a72-104">You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail.</span></span>
 
 <span data-ttu-id="38a72-105">W programie Dynamics 365 for Retail użytkownicy mogą także analizować rentowność najlepszych produktów (10-100) na różnych poziomach hierarchii organizacyjnej na podstawie następujących kryteriów:</span><span class="sxs-lookup"><span data-stu-id="38a72-105">As part of Dynamics 365 for Retail, users can also study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
 
--   <span data-ttu-id="38a72-106">Kwota sprzedaży</span><span class="sxs-lookup"><span data-stu-id="38a72-106">Sales amount</span></span>
--   <span data-ttu-id="38a72-107">Ilość</span><span class="sxs-lookup"><span data-stu-id="38a72-107">Quantity</span></span>
--   <span data-ttu-id="38a72-108">Marża zysku brutto</span><span class="sxs-lookup"><span data-stu-id="38a72-108">Gross profit margin</span></span>
--   <span data-ttu-id="38a72-109">Wartość procentowa marży</span><span class="sxs-lookup"><span data-stu-id="38a72-109">Margin percentage</span></span>
+- <span data-ttu-id="38a72-106">Kwota sprzedaży</span><span class="sxs-lookup"><span data-stu-id="38a72-106">Sales amount</span></span>
+- <span data-ttu-id="38a72-107">Ilość</span><span class="sxs-lookup"><span data-stu-id="38a72-107">Quantity</span></span>
+- <span data-ttu-id="38a72-108">Marża zysku brutto</span><span class="sxs-lookup"><span data-stu-id="38a72-108">Gross profit margin</span></span>
+- <span data-ttu-id="38a72-109">Wartość procentowa marży</span><span class="sxs-lookup"><span data-stu-id="38a72-109">Margin percentage</span></span>
 
 <span data-ttu-id="38a72-110">Na potrzeby tej analizy można używać gotowych raportów **Najlepsze produkty**, które można otworzyć z następujących lokalizacji:</span><span class="sxs-lookup"><span data-stu-id="38a72-110">For this assessment, you can use the out-of-box **Top products** report, which you can open from any of the following locations:</span></span>
 
--   <span data-ttu-id="38a72-111">Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="38a72-111">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
--   <span data-ttu-id="38a72-112">Obszar roboczy **Zarządzanie kategoriami i produktami** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="38a72-112">**Category and product management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
--   <span data-ttu-id="38a72-113">Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="38a72-113">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
-
-
+- <span data-ttu-id="38a72-111">Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="38a72-111">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+- <span data-ttu-id="38a72-112">Obszar roboczy **Zarządzanie kategoriami i produktami** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="38a72-112">**Category and product management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+- <span data-ttu-id="38a72-113">Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="38a72-113">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
 

@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 2b536ad4f29a3bb76294ef2fba30c529c24f1375
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 8b78762ce70b318e1f77e1e49ffaa7b72f01667f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -42,25 +42,30 @@ ms.lasthandoff: 08/09/2018
 <span data-ttu-id="82555-112">Ta strona zawiera łącza do odnośnej dokumentacji związanej z instalacją, konfiguracją i merytorycznym użytkowaniem funkcji biura obsługi w programie Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="82555-112">This page provides links to relevant documentation related to the setup, configuration, and functional use of the call center features in Dynamics 365 for Retail.</span></span>
 
 ## <a name="configure-the-call-center"></a><span data-ttu-id="82555-113">Konfigurowanie biura obsługi</span><span class="sxs-lookup"><span data-stu-id="82555-113">Configure the call center</span></span>
+
 [<span data-ttu-id="82555-114">Konfigurowanie opcji przetwarzania zamówień</span><span class="sxs-lookup"><span data-stu-id="82555-114">Set up order processing options</span></span>](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a><span data-ttu-id="82555-115">Konfigurowanie przetwarzania zamówień</span><span class="sxs-lookup"><span data-stu-id="82555-115">Configure order processing</span></span>
+
 [<span data-ttu-id="82555-116">Konfigurowanie alertów o oszustwie</span><span class="sxs-lookup"><span data-stu-id="82555-116">Set up fraud alerts</span></span>](set-up-fraud-alerts.md)
 
 [<span data-ttu-id="82555-117">Ręczne wstrzymania zamówień</span><span class="sxs-lookup"><span data-stu-id="82555-117">Manual Order Holds</span></span>](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a><span data-ttu-id="82555-118">Konfigurowanie przetwarzania płatności</span><span class="sxs-lookup"><span data-stu-id="82555-118">Configure payment processing</span></span>
+
 [<span data-ttu-id="82555-119">Metody płatności w biurze obsługi</span><span class="sxs-lookup"><span data-stu-id="82555-119">Payment methods in a call center</span></span>](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a><span data-ttu-id="82555-120">Konfigurowanie metod dostawy</span><span class="sxs-lookup"><span data-stu-id="82555-120">Configure delivery modes</span></span>
+
 [<span data-ttu-id="82555-121">Konfigurowanie metod dostawy i opłat w biurze obsługi</span><span class="sxs-lookup"><span data-stu-id="82555-121">Configure call center delivery modes and charges</span></span>](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a><span data-ttu-id="82555-122">Konfigurowanie marketingu bezpośredniego</span><span class="sxs-lookup"><span data-stu-id="82555-122">Configure direct marketing</span></span>
+
 [<span data-ttu-id="82555-123">Katalogi biura obsługi</span><span class="sxs-lookup"><span data-stu-id="82555-123">Call center catalogs</span></span>](call-center-catalogs.md)
 
 [<span data-ttu-id="82555-124">Konfigurowanie analizy RFM</span><span class="sxs-lookup"><span data-stu-id="82555-124">Set up RFM analysis</span></span>](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a><span data-ttu-id="82555-125">Konfigurowanie programów sprzedaży ciągłej</span><span class="sxs-lookup"><span data-stu-id="82555-125">Configure continuity programs</span></span>
-[<span data-ttu-id="82555-126">Konfigurowanie programu sprzedaży ciągłej dla biura obsługi</span><span class="sxs-lookup"><span data-stu-id="82555-126">Set up a continuity program for a call center</span></span>](set-up-continuity-program.md)
 
+[<span data-ttu-id="82555-126">Konfigurowanie programu sprzedaży ciągłej dla biura obsługi</span><span class="sxs-lookup"><span data-stu-id="82555-126">Set up a continuity program for a call center</span></span>](set-up-continuity-program.md)
 

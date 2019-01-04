@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 13e99ba3a706d49affa4fd8d0f63b7c2f51b24bc
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: e2b3591f6403542c79457d12ae850ad40d9253a1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -35,21 +35,19 @@ ms.lasthandoff: 05/08/2018
 
 <span data-ttu-id="89ccd-105">W programie Dynamics 365 for Retail użytkownicy mogą monitorować wyniki sprzedaży i uzyskiwane marże w czasie rzeczywistym na różnych poziomach hierarchii organizacyjnej dla następujących wymiarów:</span><span class="sxs-lookup"><span data-stu-id="89ccd-105">As part of Dynamics 365 for Retail, users can monitor sales and margin performance in real time across different levels of the organization hierarchy for the following dimensions:</span></span>
 
--   <span data-ttu-id="89ccd-106">Produkty</span><span class="sxs-lookup"><span data-stu-id="89ccd-106">Products</span></span>
--   <span data-ttu-id="89ccd-107">Kategorie</span><span class="sxs-lookup"><span data-stu-id="89ccd-107">Categories</span></span>
--   <span data-ttu-id="89ccd-108">Rabaty</span><span class="sxs-lookup"><span data-stu-id="89ccd-108">Discounts</span></span>
--   <span data-ttu-id="89ccd-109">Lata jako przedział czasu</span><span class="sxs-lookup"><span data-stu-id="89ccd-109">Years as time period</span></span>
--   <span data-ttu-id="89ccd-110">Kasy/terminale</span><span class="sxs-lookup"><span data-stu-id="89ccd-110">Registers/terminals</span></span>
--   <span data-ttu-id="89ccd-111">Personel/pracownicy</span><span class="sxs-lookup"><span data-stu-id="89ccd-111">Staff/employees</span></span>
--   <span data-ttu-id="89ccd-112">Odbiorcy</span><span class="sxs-lookup"><span data-stu-id="89ccd-112">Customers</span></span>
--   <span data-ttu-id="89ccd-113">Jednostki operacyjne</span><span class="sxs-lookup"><span data-stu-id="89ccd-113">Operating units</span></span>
+- <span data-ttu-id="89ccd-106">Produkty</span><span class="sxs-lookup"><span data-stu-id="89ccd-106">Products</span></span>
+- <span data-ttu-id="89ccd-107">Kategorie</span><span class="sxs-lookup"><span data-stu-id="89ccd-107">Categories</span></span>
+- <span data-ttu-id="89ccd-108">Rabaty</span><span class="sxs-lookup"><span data-stu-id="89ccd-108">Discounts</span></span>
+- <span data-ttu-id="89ccd-109">Lata jako przedział czasu</span><span class="sxs-lookup"><span data-stu-id="89ccd-109">Years as time period</span></span>
+- <span data-ttu-id="89ccd-110">Kasy/terminale</span><span class="sxs-lookup"><span data-stu-id="89ccd-110">Registers/terminals</span></span>
+- <span data-ttu-id="89ccd-111">Personel/pracownicy</span><span class="sxs-lookup"><span data-stu-id="89ccd-111">Staff/employees</span></span>
+- <span data-ttu-id="89ccd-112">Odbiorcy</span><span class="sxs-lookup"><span data-stu-id="89ccd-112">Customers</span></span>
+- <span data-ttu-id="89ccd-113">Jednostki operacyjne</span><span class="sxs-lookup"><span data-stu-id="89ccd-113">Operating units</span></span>
 
 <span data-ttu-id="89ccd-114">Ponadto dwa specjalne raporty wykorzystujące funkcję struktury hierarchicznej pozwalają użytkownikom monitorować osiąganą sprzedaż i marże poprzez przechodzenie do szczegółów z najwyższego węzła kategorii do węzłów poszczególnych liści kategorii w domyślnej hierarchii kategorii produktów detalicznych.</span><span class="sxs-lookup"><span data-stu-id="89ccd-114">Additionally, two unique reports that take advantage of hierarchical grid structuring let users monitor sales and margin performance by drilling down from the top category node to individual leaf nodes of the category in the default retail product category hierarchy.</span></span> <span data-ttu-id="89ccd-115">Użytkownicy mogą również przechodzić do szczegółów z najwyższej jednostki operacyjnej do poszczególnych kanałów w hierarchii organizacyjnej, którą zdefiniowano jako domyślną hierarchię organizacyjną dla hierarchii raportowania sprzedaży detalicznej.</span><span class="sxs-lookup"><span data-stu-id="89ccd-115">Users can also drill-down from the top operating unit to an individual channel in the organization hierarchy that is defined as the default organization hierarchy for retail reporting hierarchy purposes.</span></span> <span data-ttu-id="89ccd-116">Raporty można otwierać z dowolnej z następujących lokalizacji:</span><span class="sxs-lookup"><span data-stu-id="89ccd-116">You can open the reports from any of the following locations:</span></span>
 
--   <span data-ttu-id="89ccd-117">Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty**</span><span class="sxs-lookup"><span data-stu-id="89ccd-117">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports**</span></span>
--   <span data-ttu-id="89ccd-118">Obszar roboczy **Zarządzanie kategoriami i produktami** &gt; **Handel detaliczny** &gt; **Produkty i kategorie** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty**</span><span class="sxs-lookup"><span data-stu-id="89ccd-118">**Category and product management** workspace &gt; **Retail** &gt; **Product and categories** &gt; **Retail store management** &gt; **Reports**</span></span>
--   <span data-ttu-id="89ccd-119">Obszar roboczy **Zarządzanie cenami i rabatami** &gt; **Handel detaliczny** &gt; **Ceny i rabaty** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty**</span><span class="sxs-lookup"><span data-stu-id="89ccd-119">**Pricing and discount management** workspace &gt; **Retail** &gt; **Pricing and discounts** &gt; **Retail store management** &gt; **Reports**</span></span>
--   <span data-ttu-id="89ccd-120">Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży**</span><span class="sxs-lookup"><span data-stu-id="89ccd-120">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports**</span></span>
-
-
+- <span data-ttu-id="89ccd-117">Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty**</span><span class="sxs-lookup"><span data-stu-id="89ccd-117">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="89ccd-118">Obszar roboczy **Zarządzanie kategoriami i produktami** &gt; **Handel detaliczny** &gt; **Produkty i kategorie** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty**</span><span class="sxs-lookup"><span data-stu-id="89ccd-118">**Category and product management** workspace &gt; **Retail** &gt; **Product and categories** &gt; **Retail store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="89ccd-119">Obszar roboczy **Zarządzanie cenami i rabatami** &gt; **Handel detaliczny** &gt; **Ceny i rabaty** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty**</span><span class="sxs-lookup"><span data-stu-id="89ccd-119">**Pricing and discount management** workspace &gt; **Retail** &gt; **Pricing and discounts** &gt; **Retail store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="89ccd-120">Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży**</span><span class="sxs-lookup"><span data-stu-id="89ccd-120">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports**</span></span>
 
