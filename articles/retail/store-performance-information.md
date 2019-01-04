@@ -31,21 +31,19 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o efektywności działania sklepów na podstawie danych programu Microsoft Dynamics 365 for Retail. 
+W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o efektywności działania sklepów na podstawie danych programu Microsoft Dynamics 365 for Retail.
 
 W ramach programu Dynamics 365 for Retail użytkownicy mogą badać wydajność sklepu w czasie rzeczywistym na różnych poziomach hierarchii organizacyjnej przez wybrany okres. W tym celu należy otworzyć gotowy raport **Podsumowanie kanału** w dowolnym z następujących miejsc:
 
--   Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport podsumowania kanału**
--   Obszar roboczy **Finanse sklepu sieciowego** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Finanse sklepu sieciowego** &gt; **Raporty** &gt; **Raport podsumowania kanału**
--   Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport podsumowania kanału**
+- Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport podsumowania kanału**
+- Obszar roboczy **Finanse sklepu sieciowego** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Finanse sklepu sieciowego** &gt; **Raporty** &gt; **Raport podsumowania kanału**
+- Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport podsumowania kanału**
 
 Ten raport zawiera migawkę poniższych podsumowań w ramach wydajności sklepu:
 
--   Podsumowanie sprzedaży brutto
--   Podsumowanie typów metod płatności
--   Podsumowanie podatków
--   Podsumowanie zastępowania cen
--   Podsumowanie rabatów
-
-
+- Podsumowanie sprzedaży brutto
+- Podsumowanie typów metod płatności
+- Podsumowanie podatków
+- Podsumowanie zastępowania cen
+- Podsumowanie rabatów
 

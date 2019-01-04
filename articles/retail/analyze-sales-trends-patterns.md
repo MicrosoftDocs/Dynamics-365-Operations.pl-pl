@@ -35,15 +35,13 @@ W module Microsoft Dynamics 365 for Retail istnieje możliwość badania trendó
 
 W programie Dynamics 365 for Retail użytkownicy mogą badać trendy i wzorce sprzedaży w czasie rzeczywistym na różnych poziomach hierarchii organizacyjnej w okresie wielu lat, wykorzystując do tego gotowy raport **Raport sprzedaży w kanale wg lat**. Raport można otworzyć z dowolnej z następujących lokalizacji:
 
--   Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport sprzedaży w kanale wg lat**
--   Obszar roboczy **Finanse sklepu sieciowego** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Finanse sklepu sieciowego** &gt; **Raporty** &gt; **Raport sprzedaży w kanale wg lat**
--   Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport sprzedaży w kanale wg lat**
+- Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport sprzedaży w kanale wg lat**
+- Obszar roboczy **Finanse sklepu sieciowego** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Finanse sklepu sieciowego** &gt; **Raporty** &gt; **Raport sprzedaży w kanale wg lat**
+- Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport sprzedaży w kanale wg lat**
 
 Użytkownicy mogą również badać trendy i wzorce sprzedaży w ujęciu godzinowym na różnych poziomach hierarchii organizacyjnej w wybranym okresie, wykorzystując do tego gotowy raport **Raport sprzedaży w kanale wg godzin**. Raport można otworzyć z dowolnej z następujących lokalizacji:
 
--   Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport sprzedaży w kanale wg godzin**
--   Obszar roboczy **Finanse sklepu sieciowego** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Finanse sklepu sieciowego** &gt; **Raporty** &gt; **Raport sprzedaży w kanale wg godzin**
--   Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport sprzedaży w kanale wg godzin**
-
-
+- Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport sprzedaży w kanale wg godzin**
+- Obszar roboczy **Finanse sklepu sieciowego** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Finanse sklepu sieciowego** &gt; **Raporty** &gt; **Raport sprzedaży w kanale wg godzin**
+- Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport sprzedaży w kanale wg godzin**
 

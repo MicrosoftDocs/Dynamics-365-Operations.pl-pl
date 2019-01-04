@@ -40,6 +40,7 @@ Poniższa ilustracja pokazuje relacje między różnymi jednostkami, które raze
 ![Jednostki układu ekranu aplikacji POS](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Profil graficzny
+
 Profile graficzne są przypisywane do kas. Określają elementy wizualnych, które są specyficzne dla kas i wspólne dla użytkowników. Każdy użytkownik, który się loguje do kasy, widzi ten sam motyw, kolory i obrazy.
 
 ![Ekran powitalny aplikacji POS z jasnym motywem](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
@@ -55,6 +56,7 @@ Profile graficzne są przypisywane do kas. Określają elementy wizualnych, któ
 - **Tło aplikacji** — Można określić obraz tła, który będzie używany zamiast jednolitego koloru motywu w całej aplikacji. Podobnie jak w przypadku teł logowania, rozmiar pliku powinien być jak najmniejszy.
 
 ## <a name="screen-layouts"></a>Układy ekranu
+
 Konfiguracje układu ekranu decydują o akcjach, zawartości i położeniu formantów interfejsu użytkownika na ekranie powitalnym i ekranie **Transakcja** w aplikacji POS.
 
 ![Widok układu ekranu aplikacji POS](../retail/media/POS-Screen-Layout-View.png)
@@ -95,6 +97,7 @@ Podczas uruchamiania aplikacja POS wybiera najbliższy rozmiar układu skonfigur
 ![Rozmiary układów aplikacji POS](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Siatki przycisków
+
 W każdym rozmiarze układu ekranu można skonfigurować i przypisać siatki przycisków dla ekranów powitalnego i **Transakcja** aplikacji POS. Siatki przycisków ekranu powitalnego są układane automatycznie od lewej do prawej, od numeru najniższego (ekran powitalny 1) do najwyższego.
 
 W pełnowymiarowych układach aplikacji POS położenie siatki przycisków jest określane w projektancie układu ekranu.
@@ -104,6 +107,7 @@ W kompaktowych wersjach układów aplikacji POS siatki przycisków są układane
 ![Siatka przycisków w układzie kompaktowym](../retail/media/Compact-View-Button-Grids.png)
 
 ### <a name="images"></a>Obrazy
+
 W każdym rozmiarze układu ekranu można określić obrazy, które mają się znaleźć w interfejsie użytkownika aplikacji POS. W pełnowymiarowych układach aplikacji POS można określić jeden obraz dla ekranu powitalnego. Obraz ten jest wyświetlany jako pierwszy element interfejsu użytkownika po lewej stronie. Na ekranie **Transakcja** obrazy mogą pełnić rolę obrazów kart lub logo. W kompaktowych układach aplikacji POS te obrazy nie są używane.
 
 ### <a name="screen-layout-designer"></a>Projektant układu ekranu
@@ -141,11 +145,13 @@ W projektancie układu pełnowymiarowego użytkownicy mogą przeciągać formant
     - **Formant niestandardowy** — Formant niestandardowy pełni rolę symbolu zastępczego w układzie ekranu, pozwalając rezerwować miejsce na niestandardową zawartość. Formant niestandardowy jest dostępny tylko w układach pełnowymiarowych.
 
 ### <a name="compact-layout-designer"></a>Projektant układu kompaktowego
+
 Analogicznie do projektanta układu pełnowymiarowego, projektant układu kompaktowego umożliwia konfigurowanie układu ekranu aplikacji dla telefonów i małych tabletów. Jednak w tym wypadku układ jest stały. Formanty w układzie można konfigurować, klikając prawym przyciskiem myszy i używając menu skrótów. Nie można jednak używać operacji przeciągania i upuszczania dla dodatkowej zawartości.
 
 ![Projektant układu kompaktowego](../retail/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Projektant siatki przycisków
+
 Projektant siatki przycisków pozwala konfigurować siatki przycisków, których można używać na ekranach powitalnym i **Transakcja** w aplikacji POS w układach pełnowymiarowych i kompaktowych. Tej samej siatki przycisków można używać w różnych układach i typach układów. Podobnie jak projektant układu ekranu, projektant siatki przycisków używa technologii wdrażania ClickOnce, która powoduje pobranie, zainstalowanie i uruchomienie najnowszej wersji aplikacji za każdym razem, gdy użytkownicy uzyskują do niej dostęp. Należy koniecznie sprawdzić wymagania technologii ClickOnce w kwestii przeglądarek internetowych. Niektóre przeglądarki, takie jak Google Chrome, wymagają rozszerzeń.
 
 ![Projektant siatki przycisków](../retail/media/Button-Grid-Designer.png)
