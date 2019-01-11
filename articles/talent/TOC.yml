@@ -7,6 +7,10 @@
         - name: Nowości i zmiany
           href: whats-new.md
           items:
+            - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (14 grudnia 2018 r.)
+              href: whats-new-talent-december-14.md
+            - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (6 grudnia 2018 r.)
+              href: whats-new-talent-december-6.md
             - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (27 listopada 2018 r.)
               href: whats-new-talent-november-27.md
             - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (15 listopada 2018 r.)
@@ -71,6 +75,8 @@
     - name: Zarządzanie urlopami i nieobecnościami
       href: leave-absence-overview.md
       items:
+        - name: Koncepcje urlopów i nieobecności
+          href: leave-absence-concepts.md
         - name: Naliczanie czasu wolnego na podstawie liczby przepracowanych godzin
           href: leave-accrue-hours-worked.md
         - name: Kalendarze czasu pracy
@@ -128,10 +134,13 @@
         - name: Konfigurowanie kursów szkoleniowych
           href: courses.md
     - name: Definiowanie programu świadczeń i zarządzanie nim
-      href: manage-benefit-program.md
-    - name: Zasady uprawnień do świadczeń
-      href: benefit-eligibility-policies.md
       items:
+        - name: Zarządzanie programem świadczeń
+          href: manage-benefit-program.md
+        - name: Zasady uprawnień do świadczeń
+          href: benefit-eligibility-policies.md
+        - name: 'Generowanie raportów do amerykańskiej ustawy o powszechnym dostępie do opieki zdrowotnej (Affordable Care Act, ACA)'
+          href: generate-aca-reports.md
         - name: Zarządzanie przedmiotami wypożyczanymi pracownikom
           href: loan-items.md
     - name: Zbieranie informacji za pomocą kwestionariuszy
@@ -276,8 +285,6 @@
           href: create-envi-powerapps-admin-ctr.md
         - name: Klient aplikacji Talent rozłącza się
           href: client-disconnects.md
-        - name: Sposób obsługi kopii zapasowych baz danych
-          href: database-backups.md
         - name: Zapobieganie obcinaniu tekstu w hierarchii stanowisk i eksportowanie do programu Visio
           href: avoid-text-truncation-position-hierarchy-visio.md
         - name: Uruchamianie procesu związanego z wynagrodzeniem

@@ -25,11 +25,11 @@
                   href: get-started/system-requirements-on-prem.md
                 - name: Konfigurowanie modułu Magazynowanie dla wdrożeń lokalnych
                   href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
-            - name: Standardowe i kierowane wydania platformy
+            - name: Standardowe i dostępne w programie Pierwsze wydanie aktualizacje usługi
               href: get-started/public-preview-releases.md
             - name: Zakup rozwiązania Finance and Operations
               items:
-                - name: Kupowanie rozwiązania Finance and Operations (lokalne)
+                - name: Zakup rozwiązania Finance and Operations (on-premises)
                   href: get-started/purchase-on-premises.md
         - name: Nowości i zmiany
           href: get-started/whats-new-changed.md
@@ -48,13 +48,13 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funkcje niezaimplementowane we wdrożeniach lokalnych
               href: get-started/features-not-implemented-on-prem.md
-            - name: Finance and Operations w wersji 8.1.3 (grudzień 2018)
+            - name: Finance and Operations w wersji 8.1.3 (styczeń 2019)
               href: get-started/whats-new-changed-8-1-3.md
-            - name: Aktualizacja Platform update 23 (grudzień 2018)
+            - name: Aktualizacja Platform update 23 (styczeń 2019)
               href: get-started/whats-new-platform-update-23.md
-            - name: Aktualizacja Platform update 22 (listopad 2018)
+            - name: Aktualizacja Platform update 22 (grudzień 2018)
               href: get-started/whats-new-platform-update-22.md
-            - name: Finance and Operations w wersji 8.1.2 (listopad 2018)
+            - name: Finance and Operations w wersji 8.1.2 (grudzień 2018)
               href: get-started/whats-new-changed-8-1-2.md
             - name: Finance and Operations w wersji 8.1.1 (październik 2018)
               href: get-started/whats-new-changed-8-1-1.md
@@ -373,6 +373,18 @@
                       href: ../supply-chain/sales-marketing/field-service-work-order.md
                     - name: Synchronizowanie faktur dotyczących umowy w rozwiązaniu Field Service z fakturami niezależnymi w rozwiązaniu Finance and Operations
                       href: ../supply-chain/sales-marketing/field-service-invoice.md
+                    - name: Synchronizowanie przesunięć magazynowych i korekt z rozwiązania Field Service do rozwiązania Finance and Operations
+                      href: ../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                    - name: Synchronizowanie informacji na poziomie zapasów z rozwiązania Finance and Operations do rozwiązania Field Service
+                      href: ../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                    - name: Synchronizowanie produktów z jednostką magazynową z rozwiązania Finance and Operations do rozwiązania Field Service
+                      href: ../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                    - name: Synchronizowanie listy projektów z rozwiązania Finance and Operations do rozwiązania Field Service
+                      href: ../supply-chain/sales-marketing/synchronize-project-list.md
+                    - name: Synchronizowanie magazynów z rozwiązania Finance and Operations do rozwiązania Field Service
+                      href: ../supply-chain/sales-marketing/synchronize-warehouse.md
+                    - name: Synchronizowanie zleceń z rozwiązania Finance and Operations do rozwiązania Field Service
+                      href: ../supply-chain/sales-marketing/synchronize-work-orders.md
                 - name: Konfigurowanie integracji z rozwiązaniem Project Service Automation
                   href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
                   items:
@@ -388,8 +400,8 @@
                       href: ../financials/project-management/project-estimates-templates.md?toc=/fin-and-ops/toc.json
                     - name: Synchronizowanie wartości rzeczywistych projektu z arkuszem integracji projektu
                       href: ../financials/project-management/project-actuals-templates.md?toc=/fin-and-ops/toc.json
-                - name: Korzystanie z zewnętrznych usług sieci web
-                  href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
+        - name: Korzystanie z zewnętrznych usług sieci web
+          href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
     - name: Zarządzanie danymi
       href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
@@ -405,6 +417,8 @@
                   href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Pakiety danych konfiguracji (tylko wydanie z lipca 2017)
                   href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
+                - name: Udostępnianie magazynu jednostek w usłudze Data Lake
+                  href: ../dev-itpro/data-entities/entity-store-data-lake.md?toc=/fin-and-ops/toc.json
             - name: Szablony danych konfiguracji
               href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/fin-and-ops/toc.json
             - name: Śledzenie zmian w jednostce
@@ -529,7 +543,9 @@
                   href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
                 - name: Konfigurowanie rozliczenia
                   href: ../financials/cash-bank-management/configure-settlement.md
-                - name: Przegląd płatności dla dostawcy
+                - name: Rozliczanie reszty
+                  href: ../financials/cash-bank-management/settle-remainder.md
+                - name: Omówienie płatności dla dostawców
                   href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
                 - name: Obszar roboczy płatności dla dostawców
                   href: ../financials/accounts-payable/vendor-payments-workspace.md
@@ -2097,14 +2113,12 @@
               href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
             - name: Wprowadzanie identyfikatorów podatkowych dla firm meksykańskich
               href: ../financials/localizations/tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md
-            - name: Żądanie i drukowanie elektronicznej faktury
+            - name: Żądanie i drukowanie faktury elektronicznej
               href: ../financials/localizations/tasks/mx-00010-inquire-print-electronic-invoice.md
             - name: Raport deklaracji ISR
               href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
             - name: Księgowanie faktury niezależnej
               href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
-            - name: Generowanie raportu rachunku księgi elektronicznej wersji 1.1 (Meksyk)
-              href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
             - name: Ustawianie parametrów dla faktury elektronicznej
               href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
             - name: Ustawianie kodów podatku (Meksyk)
