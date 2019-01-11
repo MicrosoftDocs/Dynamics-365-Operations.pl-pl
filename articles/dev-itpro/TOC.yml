@@ -261,6 +261,8 @@
               href: extensibility/extensibility-changes-811.md
             - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1.2
               href: extensibility/extensibility-changes-812.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1.3
+              href: extensibility/extensibility-changes-813.md
         - name: Informacje podstawowe
           items:
             - name: Narzucane dostosowania
@@ -883,12 +885,33 @@
       href: deployment/deploy-demo-environment.md
     - name: Wdrożenie w chmurze
       items:
+        - name: Wdrożenie samoobsługowe
+          href: deployment/infrastructure-stack.md
+          items:
+            - name: Wdrażanie nowego środowiska
+              href: deployment/deployenvironment-newinfrastructure.md
+            - name: Wdrażanie — często zadawane pytania
+              href: deployment/deploymentFAQ.md
+            - name: Znane problemy z wdrożeniem samoobsługowym
+              href: deployment/known-issues-new-deployment-experience.md
+            - name: Operacje konserwacji wdrożeń
+              href: deployment/maintenanceoperationsguide-newinfrastructure.md
+            - name: Aktualizowanie środowiska
+              href: deployment/updateenvironment-newinfrastructure.md
+            - name: Rozwiązywanie problemów ze środowiskami wdrażanymi w ramach wdrożenia samoobsługowego
+              href: deployment/troubleshoot-newinfrastructure.md
         - name: Przygotowywanie obsługi rozwiązania Azure Resource Manager
           href: deployment/arm-onboarding.md
         - name: Usługa Azure ExpressRoute i rozwiązanie Finance and Operations
           href: deployment/expressroute.md
         - name: Architektura rozwiązania Finance and Operations
           href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+        - name: Stosowanie aktualizacji do środowisk w chmurze
+          href: deployment/apply-deployable-package-system.md
+        - name: Stosowanie aktualizacji i rozszerzeń do hostowanych w chmurze składników rozwiązania Retail
+          href: deployment/Update-retail-channel.md
+        - name: Inicjowanie hostowanych w chmurze składników kanału rozwiązania Retail
+          href: deployment/Initialize-Retail-Channels.md
     - name: Wdrożenie lokalne
       href: deployment/on-premises-deployment-landing-page.md
       items:
@@ -931,8 +954,6 @@
       items:
         - name: Tworzenie wdrażalnych pakietów modeli
           href: deployment/create-apply-deployable-package.md
-        - name: Stosowanie aktualizacji do środowisk w chmurze
-          href: deployment/apply-deployable-package-system.md
         - name: Instalowanie wdrażalnych pakietów z wiersza polecenia
           href: deployment/install-deployable-package.md
         - name: Odinstalowywanie pakietu
@@ -1021,8 +1042,6 @@
           href: migration-upgrade/upgrade-latest-platform-update.md
         - name: Uaktualnianie platformy Dynamics AX do wydania z sierpnia 2016
           href: migration-upgrade/update-platform-each-release.md
-        - name: Uaktualnianie środowisk piaskownicy
-          href: migration-upgrade/upgrade-sandbox-environment.md
         - name: 'Uaktualnianie danych w środowiskach programistycznym, demonstracyjnym i piaskownicy'
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Aktualizowanie narzędzi programistycznych
