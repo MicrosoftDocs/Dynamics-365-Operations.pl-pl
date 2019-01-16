@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 26b03b6712c97b12e1221598de308813c7986179
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 213b47422a5e31c2cfc2d173b8c7d9efdecc7568
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,57 +32,67 @@ ms.lasthandoff: 08/09/2018
 [!include [banner](includes/banner.md)]
 
 > [!NOTE]
-> Usuwamy obecną wersję usługi rekomendowania produktów, ponieważ w nowej wersji wprowadzamy lepszy algorytm i nowsze funkcje zorientowane na handel detaliczny. Aby uzyskać więcej informacji, zobacz [Usunięte i przestarzałe funkcje](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). 
+> Usuwamy obecną wersję usługi rekomendowania produktów, ponieważ w nowej wersji wprowadzamy lepszy algorytm i nowsze funkcje zorientowane na handel detaliczny. Aby uzyskać więcej informacji, zobacz [Usunięte i przestarzałe funkcje](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).
 
 W tym temacie opisano sposób dodawania formantu rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w programie Microsoft Dynamics 365 for Retail.
 
 Rekomendacje produktów mogą być wyświetlane na urządzeniu punktu sprzedaży podczas używania programu Microsoft Dynamics 365 for Retail. *Rekomendacje* to towary, którymi odbiorca może być zainteresowany w związku z wcześniej dokonywanymi zakupami, towary na liście życzeń odbiorcy oraz towary, które inni podobni odbiorcy kupowali w sklepach internetowych i tradycyjnych. Aby wyświetlać rekomendacje produktów, należy za pomocą projektanta układu ekranu dodać formant do ekranu transakcji.
 
 ## <a name="open-layout-designer"></a>Otwieranie projektanta układu
-1.  Wybierz kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Punkt sprzedaży** &gt; **Układy ekranu**.
-2.  Za pomocą szybkiego filtru znajdź ekran, do którego chcesz dodać formant. Na przykład wyfiltruj według pola **Identyfikator układu ekranu**, używając wartości „F2CP16:9M”.
-3.  Na liście znajdź i zaznacz odpowiedni rekord. Na przykład zaznacz pozycję „Nazwa: F2CP16:9M Identyfikator układu ekranu: F2CP16:9M”.
-4.  Kliknij opcję **Projektant układu**.
-5.  Postępuj zgodnie z instrukcjami, aby uruchomić projektanta układu. Gdy zostanie wyświetlony monit o poświadczenia, wpisz te same poświadczenia, które były używane przy uruchamianiu konstruktora układu ze strony **Układy ekranu**.
-6.  Po zalogowaniu się zobaczysz stronę podobną do przedstawionej poniżej. Układ może się różnić w zależności od dostosowań wprowadzonych dla sklepu.
 
-[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png) Wybieranie opcji wyświetlania
------------------------
+1. Wybierz kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Punkt sprzedaży** &gt; **Układy ekranu**.
+2. Za pomocą szybkiego filtru znajdź ekran, do którego chcesz dodać formant. Na przykład wyfiltruj według pola **Identyfikator układu ekranu**, używając wartości „F2CP16:9M”.
+3. Na liście znajdź i zaznacz odpowiedni rekord. Na przykład zaznacz pozycję „Nazwa: F2CP16:9M Identyfikator układu ekranu: F2CP16:9M”.
+4. Kliknij opcję **Projektant układu**.
+5. Postępuj zgodnie z instrukcjami, aby uruchomić projektanta układu. Gdy zostanie wyświetlony monit o poświadczenia, wpisz te same poświadczenia, które były używane przy uruchamianiu konstruktora układu ze strony **Układy ekranu**.
+6. Po zalogowaniu się zobaczysz stronę podobną do przedstawionej poniżej. Układ może się różnić w zależności od dostosowań wprowadzonych dla sklepu.
+
+    [![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+
+## <a name="choose-a-display-option"></a>Wybierz opcję wyświetlaną
 
 Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najlepiej dla Twojego sklepu, a następnie postępuj zgodnie z pozostałymi instrukcjami, aby dokończyć konfigurowanie formantu. Oto te opcje:
--   Rekomendacje są zawsze widoczne.
--   W siatce po prawej stronie ekranu jest wyświetlana karta **Zalecenia**.
 
-#### <a name="to-make-recommendations-always-visible"></a>Aby rekomendacje były zawsze widoczne
+- Rekomendacje są zawsze widoczne.
+- W siatce po prawej stronie ekranu jest wyświetlana karta **Zalecenia**.
 
-1.  Zmniejsz wysokość obszaru szczegółów wierszy transakcji, tak aby była taka sama, jak wysokość panelu odbiorcy po lewej stronie.[](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
-2.  Z menu po lewej stronie przeciągnij formant rekomendacji i upuść go między obszar szczegółów wierszy transakcji a siatkę przycisków na środku w dolnej części ekranu transakcji. Zmień rozmiar formantu, tak aby mieścił się w tej przestrzeni.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
-3.  Kliknij przycisk **X**, aby zapisać zmiany i zamknąć projektanta układu.
-4.  W programie Dynamics 365 for Retail wybierz kolejno opcje **Handel detaliczny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogramy dystrybucji**.
-5.  Na liście zaznacz pozycję **1090 Kasy**.
-6.  Kliknij przycisk **Uruchom teraz**.
+### <a name="make-recommendations-always-visible"></a>Rekomendacje zawsze widoczne
 
-#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Dodawanie karty Zalecenia do siatki przycisków po prawej stronie ekranu
+1. Zmniejsz wysokość obszaru szczegółów wierszy transakcji, tak aby była taka sama, jak wysokość panelu odbiorcy po lewej stronie.
 
-1.  Kliknij prawym przyciskiem myszy puste miejsce pod ostatnią kartą w siatce przycisków umieszczoną z prawej strony ekranu.
-2.  Kliknij przycisk **Dostosuj**.[![pic-5](./media/pic-5.png)](./media/pic-5.png)
-3.  Kliknij opcję **Nowa karta**.
-4.  Znajdź nową kartę, który została właśnie dodana. Może być konieczne przewinięcie ekranu w dół.
-5.  Na liście rozwijanej **Zawartość** wybierz opcję **Rekomendowane produkty**. [![pic-6](./media/pic-6.png)](./media/pic-6.png)
-6.  W polu **Etykieta** wpisz nazwę karty rekomendacji. Na przykład wpisz „Zalecane produkty”.
-7.  W polu **Obraz** zaznacz ilustrację, która ma być wyświetlana na karcie.
-8.  Kliknij przycisk **OK** Nowa karta zostanie wyświetlone w siatce przycisków.
-9.  Kliknij przycisk **X**, aby zapisać zmiany i zamknąć projektanta układu.
+    [![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+
+2. Z menu po lewej stronie przeciągnij formant rekomendacji i upuść go między obszar szczegółów wierszy transakcji a siatkę przycisków na środku w dolnej części ekranu transakcji. Zmień rozmiar formantu, tak aby mieścił się w tej przestrzeni.
+
+    [![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+
+3. Kliknij przycisk **X**, aby zapisać zmiany i zamknąć projektanta układu.
+4. W programie Dynamics 365 for Retail wybierz kolejno opcje **Handel detaliczny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogramy dystrybucji**.
+5. Na liście zaznacz pozycję  **1090 Kasy**.
+6. Kliknij przycisk **Uruchom teraz**.
+
+### <a name="add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Dodawanie karty Zalecenia do siatki przycisków po prawej stronie ekranu
+
+1. Kliknij prawym przyciskiem myszy puste miejsce pod ostatnią kartą w siatce przycisków umieszczoną z prawej strony ekranu.
+2. Kliknij przycisk **Dostosuj**.
+
+    [![pic-5](./media/pic-5.png)](./media/pic-5.png)
+
+3. Kliknij opcję **Nowa karta**.
+4. Znajdź nową kartę, który została właśnie dodana. Może być konieczne przewinięcie ekranu w dół.
+5. Na liście rozwijanej **Zawartość** wybierz opcję **Rekomendowane produkty**.
+
+    [![pic-6](./media/pic-6.png)](./media/pic-6.png)
+
+6. W polu **Etykieta** wpisz nazwę karty rekomendacji. Na przykład wpisz „Zalecane produkty”.
+7. W polu **Obraz** zaznacz ilustrację, która ma być wyświetlana na karcie.
+8. Kliknij **OK**. Nowa karta zostanie wyświetlone w siatce przycisków.
+9. Kliknij przycisk **X**, aby zapisać zmiany i zamknąć projektanta układu.
 10. W programie Dynamics 365 for Retail wybierz kolejno opcje **Handel detaliczny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogramy dystrybucji**.
-11. Na liście zaznacz pozycję **1090 Kasy**.
+11. Na liście zaznacz pozycję  **1090 Kasy**.
 12. Kliknij przycisk **Uruchom teraz**.
 
-
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie spersonalizowanych rekomendacji produktów](personalized-product-recommendations.md)
-
-
-
 

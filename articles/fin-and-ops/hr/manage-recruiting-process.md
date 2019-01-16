@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 80072aebe99b0a7f244c9475dc9ba586bc697893
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 9695a7a3f98220f48627e85a51bc6dae5adb35c2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -32,45 +32,47 @@ ms.lasthandoff: 08/09/2018
 
 W tym temacie opisano proces śledzenia czynności podczas rekrutacji, w tym działania związane z reklamowaniem wolnych stanowisk i rekrutacji kandydatów, śledzenie informacji o kandydatach i zgłoszeniach, prowadzenie rozmów kwalifikacyjnych z kandydatami oraz wybieranie jednego lub kilku kandydatów na wolne stanowiska w organizacji.
 
-<a name="overview"></a>Przegląd
---------
+## <a name="overview"></a>Przegląd
 
-Projekty rekrutacji pomagają organizować kroki, które należy wykonać podczas wypełniania wolnych stanowisk w firmie. Kandydat to osoba, która ubiega się o zatrudnienie w firmie.  Zgłoszenie to wyrażone przez kandydata zainteresowanie zatrudnieniem w firmie, które może być powiązane z projektem rekrutacji w odniesieniu do konkretnego wolnego stanowiska.  Pojedynczy kandydat może mieć wiele zgłoszeń w obrębie tej samej firmy lub między różnymi firmami w organizacji.
+Projekty rekrutacji pomagają organizować kroki, które należy wykonać podczas wypełniania wolnych stanowisk w firmie. Kandydat to osoba, która ubiega się o zatrudnienie w firmie. Zgłoszenie to wyrażone przez kandydata zainteresowanie zatrudnieniem w firmie, które może być powiązane z projektem rekrutacji w odniesieniu do konkretnego wolnego stanowiska. Pojedynczy kandydat może mieć wiele zgłoszeń w obrębie tej samej firmy lub między różnymi firmami w organizacji.
 
-<a name="recruitment-projects"></a>Projekty rekrutacji
---------------------
+## <a name="recruitment-projects"></a>Projekty rekrutacji
 
-Projekty rekrutacji pozwalają rekruterom na śledzenie postępu procesu wypełniania wolnych stanowisk.  Projekt rekrutacji identyfikuje dział oraz zadanie, dla których są wolne stanowiska. Projekty rekrutacji również śledzą następuję informacji o wolnych stanowiskach:
--   Określona liczba wolnych stanowisk
--   Osoba zarządzająca rekrutacją oraz alternatywna osoba kontaktowa dla stanowiska
--   Data zatwierdzenia zapotrzebowania
--   Termin zgłoszenia
--   Prognozowana data rozpoczęcia
+Projekty rekrutacji pozwalają rekruterom na śledzenie postępu procesu wypełniania wolnych stanowisk. Projekt rekrutacji identyfikuje dział oraz zadanie, dla których są wolne stanowiska. Projekty rekrutacji również śledzą następuję informacji o wolnych stanowiskach:
+
+- Określona liczba wolnych stanowisk
+- Osoba zarządzająca rekrutacją oraz alternatywna osoba kontaktowa dla stanowiska
+- Data zatwierdzenia zapotrzebowania
+- Termin zgłoszenia
+- Prognozowana data rozpoczęcia
 
 Projekt rekrutacji zawiera **Ofertę pracy** używaną w systemie **Samoobsługi pracownika** do reklamowanie wolnego stanowiska. Aby wyświetlić wolne stanowisko pracownikom, projekt rekrutacji musi mieć **Ofertę pracy**, pole **Wyświetl na ekranie samoobsługi pracownika** musi mieć wartość Yes, **Ostateczny termin zgłoszenia** musi być ustawiony na datę przyszłą, a projekt rekrutacji musi mieć **Stan projektu** Rozpoczęty. W poniższej tabel wymieniono możliwe stany projektu rekrutacji i ich opisy.
 
-| **Stan**    | **Wskazuje, że…**                                                                  |
-|-----------|------------------------------------------------------------------------------------------|
-| Zaplanowano | Proces rekrutacji jest przygotowywany.  Rekrutacja jeszcze się nie rozpoczęła. |
-| Rozpoczęta   | Zgłoszenia są obecnie przyjmowane na wolne stanowiska w tym projekcie.                    |
-| Zakończono  | Wszystkie wolne stanowiska w tym projekcie zostały wypełnione.                                          |
-| Anulowano  | Rekrutacja została anulowana dla tego projektu.                                           |
+| Stan    | Wskazuje, że…                                                                         |
+|-----------|-----------------------------------------------------------------------------------------|
+| Zaplanowano | Proces rekrutacji jest przygotowywany. Rekrutacja jeszcze się nie rozpoczęła. |
+| Rozpoczęta   | Zgłoszenia są obecnie przyjmowane na wolne stanowiska w tym projekcie.                   |
+| Zakończono  | Wszystkie wolne stanowiska w tym projekcie zostały wypełnione.                                         |
+| Anulowano  | Rekrutacja została anulowana dla tego projektu.                                          |
 
 Rekruterzy mogą również rejestrować **multimedia** używane do reklamowania wolnych stanowisk za pomocą zewnętrznych punktów, a także śledzić **rozwój** dla projektu lub zgłoszenia.
 
-<a name="applicants"></a>Kandydaci
-----------
+## <a name="applicants"></a>Kandydaci
 
-Kandydat to osoba, która ubiega się o pracę w firmie.  Kandydaci są wspólni dla wszystkich firm w organizacji, co powiększa pulę osób do wyszukiwania. Można zachować kompetencje, odwołania, wymagania związane z zakwaterowaniem, dane osobowe kandydatów. Po utworzeniu rekordu kandydata jest tworzony rekord tej osoby w globalnej książce adresowej. Na stronie **Kandydat** można przesyłać następujące informacje globalnej książki adresowej dla osób, które są kandydatami:
--   Informacje adresowe
--   Informacje kontaktowe
--   Informacje identyfikacyjne
--   Szczegóły nazwiska
--   Informacje osobiste
+Kandydat to osoba, która ubiega się o pracę w firmie. Kandydaci są wspólni dla wszystkich firm w organizacji, co powiększa pulę osób do wyszukiwania. Można zachować kompetencje, odwołania, wymagania związane z zakwaterowaniem, dane osobowe kandydatów. Po utworzeniu rekordu kandydata jest tworzony rekord tej osoby w globalnej książce adresowej. Na stronie **Kandydat** można przesyłać następujące informacje globalnej książki adresowej dla osób, które są kandydatami:
+
+- Informacje adresowe
+- Informacje kontaktowe
+- Informacje identyfikacyjne
+- Szczegóły nazwiska
+- Informacje osobiste
 
 ## <a name="applications"></a>Aplikacje
-Na stronie **Zgłoszenie** można rejestrować informacje pochodzące z otrzymanych podań o pracę. Zgłoszenie jest wyrażeniem przez kandydata zainteresowania wolnym stanowiskiem w organizacji.  Aby utworzyć zgłoszenie, kandydat musi już istnieć jako kandydat lub osoba w systemie.
+
+Na stronie **Zgłoszenie** można rejestrować informacje pochodzące z otrzymanych podań o pracę. Zgłoszenie jest wyrażeniem przez kandydata zainteresowania wolnym stanowiskiem w organizacji. Aby utworzyć zgłoszenie, kandydat musi już istnieć jako kandydat lub osoba w systemie.
+
 Podania o pracę przesłane przez kandydata w sieci web są podaniami oczekiwanymi złożonymi w reakcji na ofertę pracy lub są podaniami złożonymi przez kandydata bez związku z ofertami. Podania oczekiwane są automatycznie kojarzone z projektem rekrutacyjnym, którego dotyczyło ogłoszenie. Podania bez związku z ofertami są kojarzone z projektem rekrutacji określonym w polu **Rekrutacja** na stronie **Parametry zasobów ludzkich**.
+
 ### <a name="application-status"></a>Stan zgłoszenia
 
 Stan zgłoszenia wskazuje, w jakim miejscu procesu rekrutacji jest podanie o pracę. W poniższej tabel wymieniono możliwe stany zgłoszenia i ich opisy.
@@ -86,7 +88,7 @@ Stan zgłoszenia wskazuje, w jakim miejscu procesu rekrutacji jest podanie o pra
 
 ### <a name="correspondence-actions"></a>Akcje korespondencyjne
 
-Akcja korespondencyjna dla **Zgłoszenia** określa szablon dokumentu lub wiadomości e-mail, który ma zostać użyty do komunikacji z kandydatem, który przesłał zgłoszenie. Można skojarzyć elementy **Zakładki zgłoszeń** z akcjami korespondencyjnymi, aby w komunikacji z kandydatami można było używać wartości ze stron Zgłoszenie, Kandydat, Rozmowa kwalifikacyjna i Projekt rekrutacji.  Elementy **Szablony wiadomości e-mail dotyczące zgłoszeń** można tworzyć dla akcji korespondencyjnych do szybkiego wysyłania e-maili do kandydatów, którzy mają zgłoszenie z określoną kombinacją stanu i akcji korespondencyjnej. Na przykład można wysłać e-mail z potwierdzeniem do wszystkich zgłoszeń z ustawieniem **Stan** jako Odebrane i ustawieniem **Akcja korespondencyjna** jako Odebrane.  Po wysłaniu e-maila można automatycznie zaktualizować stan zgłoszenia.
+Akcja korespondencyjna dla **Zgłoszenia** określa szablon dokumentu lub wiadomości e-mail, który ma zostać użyty do komunikacji z kandydatem, który przesłał zgłoszenie. Można skojarzyć elementy **Zakładki zgłoszeń** z akcjami korespondencyjnymi, aby w komunikacji z kandydatami można było używać wartości ze stron Zgłoszenie, Kandydat, Rozmowa kwalifikacyjna i Projekt rekrutacji. Elementy **Szablony wiadomości e-mail dotyczące zgłoszeń** można tworzyć dla akcji korespondencyjnych do szybkiego wysyłania e-maili do kandydatów, którzy mają zgłoszenie z określoną kombinacją stanu i akcji korespondencyjnej. Na przykład można wysłać e-mail z potwierdzeniem do wszystkich zgłoszeń z ustawieniem **Stan** jako Odebrane i ustawieniem **Akcja korespondencyjna** jako Odebrane. Po wysłaniu e-maila można automatycznie zaktualizować stan zgłoszenia.
 
 ## <a name="application-routing"></a>Marszruta zgłoszenia
 
@@ -94,7 +96,7 @@ Jeśli zgłoszenie ma zostać przejrzane przez kilku pracowników, w celu zarzą
 
 ## <a name="interviews"></a>Rozmowy kwalifikacyjne
 
-Elementy **Rozmowy kwalifikacyjne z kandydatami** można planować na stronie **Zgłoszenia**.  Użyj przycisku **Wyślij informacje o spotkaniu**, aby wysłać plik kalendarza z informacją o terminie rozmowy kwalifikacyjnej do kandydata i osoby przeprowadzającej rozmowę kwalifikacyjną.
+Elementy **Rozmowy kwalifikacyjne z kandydatami** można planować na stronie **Zgłoszenia**. Użyj przycisku **Wyślij informacje o spotkaniu**, aby wysłać plik kalendarza z informacją o terminie rozmowy kwalifikacyjnej do kandydata i osoby przeprowadzającej rozmowę kwalifikacyjną.
 
 ## <a name="skill-mapping"></a>Mapowanie umiejętności
 
@@ -102,10 +104,5 @@ Elementy **Rozmowy kwalifikacyjne z kandydatami** można planować na stronie **
 
 ## <a name="hiring-applicants"></a>Zatrudnianie kandydatów
 
-Kandydatów zatrudnia się na stronie **Zgłoszenia**. Po zatrudnieniu kandydata rekord zgłoszenia otrzymuje stan **Zatrudniony**, a rekord osoby w globalnej książce adresowej jest kojarzony z rekordem nowego pracownika. Zmiany w danych globalnej książki adresowej dla nowego rekordu pracownika są również wyświetlane w rekordzie kandydata. Zmniejsza to ilość danych, które trzeba wprowadzić, gdyby nowy pracownik złożył wniosek o zatrudnienie na innym stanowisku w tym samym przedsiębiorstwie.  Aby zatrudnić istniejącego pracownika na nowym stanowisku, kliknij opcję **Zmień stanowisko** w menu rozwijanym **Stan zgłoszenia** i uruchom proces przeniesienia.
-
-
-
-
-
+Kandydatów zatrudnia się na stronie **Zgłoszenia**. Po zatrudnieniu kandydata rekord zgłoszenia otrzymuje stan **Zatrudniony**, a rekord osoby w globalnej książce adresowej jest kojarzony z rekordem nowego pracownika. Zmiany w danych globalnej książki adresowej dla nowego rekordu pracownika są również wyświetlane w rekordzie kandydata. Zmniejsza to ilość danych, które trzeba wprowadzić, gdyby nowy pracownik złożył wniosek o zatrudnienie na innym stanowisku w tym samym przedsiębiorstwie. Aby zatrudnić istniejącego pracownika na nowym stanowisku, kliknij opcję **Zmień stanowisko** w menu rozwijanym **Stan zgłoszenia** i uruchom proces przeniesienia.
 

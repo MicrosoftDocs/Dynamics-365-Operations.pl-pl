@@ -3,7 +3,7 @@ title: "Działania w procesach"
 description: "Ten temat zawiera informacje o różnych typach działań, których można używać w procesie rekrutacji."
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: ccd9e2d0ff1f7fb6825c6823936b4013b3054f5d
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -62,6 +62,10 @@ Działanie Rozmowa kwalifikacyjna jest opcjonalne. To działanie ma trzy składn
 - Aby wysłać wiadomości e-mail do kandydatów z pytaniem o ich dostępność, ustaw w opcji **Zażądaj dostępności kandydata** wartość **Włączone**. Jeśli ustawisz tę opcję na **Wyłączone**, ten krok nie będzie wyświetlany w procesie rekrutacji na funkcję.
 - Aby użyć transmisji strumieniowej na żywo lub zorganizować połączenie konferencyjne w programie Skype dla firm, ustaw w polu **Spotkanie online** wartość **Skype dla firm**. Wtedy poprawne łącze **Dołącz do spotkania w aplikacji Skype** zostanie dodane do zaproszenia na rozmowę kwalifikacyjną.
 - Aby wysłać wiadomości e-mail do kandydatów w celu sfinalizowania harmonogramu, ustaw w opcji **Wyślij wiadomość e-mail do kandydata** wartość **Włączone**. Jeśli ustawisz tę opcję na **Wyłączone**, kandydaci otrzymają harmonogram rozmów kwalifikacyjnych tylko wtedy, gdy się zalogują do portalu kandydata.
+
+>[!NOTE]
+> - W przypadku wszystkich rozmów 1:1 przypomnienia są wysyłane do osób prowadzących rozmowę kwalifikacyjną co 24 godziny, jeśli osoba prowadząca rozmowę nie odpowiedziała (nie zaakceptowała ani nie odrzuciła) żądania rozmowy kwalifikacyjnej.
+> - W przypadku wszystkich rozmów grupowych nie ma automatycznych przypomnień o konieczności odpowiedzi na żądanie rozmowy kwalifikacyjnej. Aby ręcznie wyzwolić przypomnienie, edytuj rozmowę kwalifikacyjną i użyj opcji **Aktualizuj & wyślij**, aby odesłać żądanie do osób prowadzących rozmowę kwalifikacyjną.
 
 Składnik Opinia umożliwia osobom wprowadzanie rekomendacji dotyczących kandydata. Osoby te mogą także wpisywać wszelkie komentarze, jakie mają. Po włączeniu opcji **Dziedzicz współtwórców opinii z zespołu rekrutacyjnego** osoba rekrutująca, menedżer zatrudniający i osoby przeprowadzające rozmowy kwalifikacyjne są automatycznie dodawane do składnika Opinia. Organizacje mogą również zezwalać osobom przeprowadzającym rozmowy kwalifikacyjne na przeglądanie opinii innych osób, zanim prześlą swoje własne opinie. Organizacje mogą także pozwalać osobom przeprowadzającym rozmowy kwalifikacyjne na edytowanie już przesłanych opinii.
 

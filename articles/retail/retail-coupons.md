@@ -19,10 +19,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: c718a71ca270c67118a90456bac0cf182032d3db
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,13 +32,13 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="overview-of-coupons"></a>Ogólne informacje o kuponach
 
-Kupony to kody i kody kreskowe używane w celu dodawania rabatów detalicznych do transakcji. Każdy kupon może mieć wiele kodów, a każdy kod może mieć własną datę wejścia w życie. 
+Kupony to kody i kody kreskowe używane w celu dodawania rabatów detalicznych do transakcji. Każdy kupon może mieć wiele kodów, a każdy kod może mieć własną datę wejścia w życie.
 
-Każdy kupon jest powiązany z jednym rabatem detalicznym. Grupy cenowe skojarzone z rabatem określają odbiorców, którzy mogą używać kuponu, lub kanały, w których kupon obowiązuje. 
+Każdy kupon jest powiązany z jednym rabatem detalicznym. Grupy cenowe skojarzone z rabatem określają odbiorców, którzy mogą używać kuponu, lub kanały, w których kupon obowiązuje.
 
 Zasadniczo kupony są dodatkową weryfikacją nad rabatami detalicznymi. Kupon zawiera wymagane kody kuponu i kody kreskowe oraz zakresy dat dla tych kodów. Kupon określa również opcjonalne limity wykorzystania oraz wymagane właściwości odbiorcy. Rabat określa zbiór produktów, dla których kupon jest ważny. Grupy cenowe rabatu określają zbiór odbiorców, kanały lub katalogi, dla których kupon jest ważny.
 
-Aby utworzyć kuponu, należy utworzyć oddzielnie rabat i kupon. Następnie trzeba połączyć te elementy, zaznaczając rabat na stronie kuponu w programie Microsoft Dynamics 365 for Retail. 
+Aby utworzyć kuponu, należy utworzyć oddzielnie rabat i kupon. Następnie trzeba połączyć te elementy, zaznaczając rabat na stronie kuponu w programie Microsoft Dynamics 365 for Retail.
 
 > [!NOTE]
 > Po połączeniu kuponu z rabatem kilka pól na stronie rabatu w programie Microsoft Dynamics 365 for Retail staje się tylko do odczytu, ponieważ są one zarządzane przez ustawienia kuponu. Są to m.in. pola stanu i standardowych zakresów dat.
@@ -54,25 +54,25 @@ Limit jest wymuszany dla kodu kuponu na kuponie. Na przykład kupon jednorazoweg
 
 ## <a name="managing-coupons"></a>Zarządzanie kuponami
 
-Rabat i kupon należy utworzyć oddzielnie. Następnie trzeba połączyć te elementy, zaznaczając rabat na stronie kuponu. Po połączeniu kuponu z rabatem kilka pól na stronie rabatu staje się tylko do odczytu, ponieważ są one zarządzane przez ustawienia kuponu. Są to m.in. pola stanu i standardowych zakresów dat.  
+Rabat i kupon należy utworzyć oddzielnie. Następnie trzeba połączyć te elementy, zaznaczając rabat na stronie kuponu. Po połączeniu kuponu z rabatem kilka pól na stronie rabatu staje się tylko do odczytu, ponieważ są one zarządzane przez ustawienia kuponu. Są to m.in. pola stanu i standardowych zakresów dat.
 
 Zasadniczo kupony są dodatkową weryfikacją nad rabatami detalicznymi. Kupon zawiera kody kuponu i kody kreskowe, zakresy dat dla tych kodów, limity użycia oraz wymagane właściwości odbiorcy. Rabat określa zbiór produktów, dla których kupon jest ważny. Grupy cenowe rabatu określają zbiór odbiorców, kanały lub katalogi, dla których kupon jest ważny.
 
-## <a name="system-setup-for-coupons"></a>Konfiguracja systemu dla kuponów 
+## <a name="system-setup-for-coupons"></a>Konfiguracja systemu dla kuponów
 
-Zanim będzie można utworzyć kupon, należy skonfigurować kod kreskowy kuponu i dwie numeracje kuponu. 
+Zanim będzie można utworzyć kupon, należy skonfigurować kod kreskowy kuponu i dwie numeracje kuponu.
 
-1.  Na stronie **Znaki maski** utwórz nowy znak maski dla kodu kuponu. Można wybrać dowolny nieużywany znak.
-2.  Na stronie **Ustawienia maski kodów kreskowych** utwórz nową maskę kodów kreskowych. W polu **Typ** ustaw wartość **Kupon**.
-3.  Na stronie **Ustawienia kodów kreskowych** utwórz nowy kod kreskowy, który wykorzystuje utworzoną maskę kodów kreskowych.
-4.  Na stronie **Sekwencje identyfikatorów** utwórz dwie nowe numeracje. Jedna numeracja jest przeznaczona dla identyfikatora kod kuponu, a druga dla numeru kuponu. Identyfikator kodu kuponu jest unikatowym identyfikatorem każdego kodu kuponu na kuponie. Numer kuponu to jego unikatowy identyfikator. Każdy kupon może zawierać wiele kodów i kodów kreskowych, które inicjują realizację kuponu.
+1. Na stronie **Znaki maski** utwórz nowy znak maski dla kodu kuponu. Można wybrać dowolny nieużywany znak.
+2. Na stronie **Ustawienia maski kodów kreskowych** utwórz nową maskę kodów kreskowych. W polu **Typ** ustaw wartość **Kupon**.
+3. Na stronie **Ustawienia kodów kreskowych** utwórz nowy kod kreskowy, który wykorzystuje utworzoną maskę kodów kreskowych.
+4. Na stronie **Sekwencje identyfikatorów** utwórz dwie nowe numeracje. Jedna numeracja jest przeznaczona dla identyfikatora kod kuponu, a druga dla numeru kuponu. Identyfikator kodu kuponu jest unikatowym identyfikatorem każdego kodu kuponu na kuponie. Numer kuponu to jego unikatowy identyfikator. Każdy kupon może zawierać wiele kodów i kodów kreskowych, które inicjują realizację kuponu.
 
     > [!NOTE]
     > Dla obu numeracji należy w polu **Zakres** ustawić wartość **Firma**. W większości przypadków numery w obu numeracjach powinny być generowane automatycznie.
 
-5.  Na stronie **Parametry sieci sprzedaży** na karcie **Kody kreskowe** zaznacz utworzony wcześniej kod kreskowy.
-6.  Na stronie **Wspólne parametry sieci sprzedaży** na karcie **Sekwencje numerów** zaznacz utworzone przez siebie numeracje numeru kuponu i identyfikatora kod kuponu.
-7.  Teraz można otworzyć stronę **Kupony** i utworzyć nowe kupony.
+5. Na stronie **Parametry sieci sprzedaży** na karcie **Kody kreskowe** zaznacz utworzony wcześniej kod kreskowy.
+6. Na stronie **Wspólne parametry sieci sprzedaży** na karcie **Sekwencje numerów** zaznacz utworzone przez siebie numeracje numeru kuponu i identyfikatora kod kuponu.
+7. Teraz można otworzyć stronę **Kupony** i utworzyć nowe kupony.
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Wpływ częściowych aktualizacji na kupony
 

@@ -3,7 +3,7 @@ title: Korzystanie z aplikacji LinkedIn Recruiter
 description: "Ten temat zawiera informacje o używaniu funkcji uczenia maszynowego do generowania rekomendacji funkcji i kandydatów na funkcje."
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: 106103e2c3d8f3d89aac5140174e5794da22536f
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -83,7 +83,12 @@ Gdy administrator aplikacji Attract włączy funkcje aplikacji LinkedIn Recruite
 
 W aplikacji Attract można wyświetlić profil kandydata z serwisu LinkedIn. Widżet serwisu LinkedIn będzie pokazywał profil kandydata, jeśli informacje w systemie ATS pasują do danych użytkownika w serwisie LinkedIn.
 
-Aby wyświetlić profil kandydata, przejdź do niego z poziomu stanowiska lub puli umiejętności. W profilu kandydata kliknij kartę **LinkedIn**, a widżet profilu zostanie załadowany. Za pomocą widżetu profilu wskaż, czy jest to pasująca osoba. Jeśli nie, znajdź prawidłową osobę. Z tej strony można również zapisać kandydata do projektów w usłudze LinkedIn Recruiter.
+Aby wyświetlić profil kandydata, przejdź do niego z poziomu stanowiska lub puli umiejętności. W profilu kandydata kliknij kartę **LinkedIn**, a widżet profilu zostanie załadowany. Z tej strony można również zapisać kandydata do projektów w usłudze LinkedIn Recruiter.
+1. Jeśli LinkedIn znalazł (dokładne) dopasowanie na podstawie adresu e-mail i identyfikatora elementu członkowskiego LinkedIn, wyświetlany jest profil kandydata. Użytkownik nadal może połączyć/rozłączyć profil.
+
+2. Jeśli LinkedIn nie może znaleźć kandydata na podstawie jego adresu e-mail lub identyfikatora członka, wyświetli listę możliwych dopasowań kandydatów na podstawie nazwy kandydata i użytkownik może wybrać jednego z nich i połączyć profil.  
+
+3. Jeśli LinkedIn nie może znaleźć żadnego kandydata na podstawie nazwy, zwróci informację, że nie znaleziono dopasowania.
 
 ### <a name="1-click-export"></a>Eksport jednym kliknięciem 
 
@@ -117,11 +122,14 @@ W aplikacji LinkedIn Recruiter można śledzić, czy kandydat aplikował na inne
 
 6.  Na karcie **Notes** (Uwagi) widać notatki sporządzone o tym kandydacie w aplikacji Attract.
 
+> [!NOTE]
+> Dane kandydata i aplikacji nie będą synchronizowane z usługą LinkedIn Recruiter, jeśli kandydat nie wyszedł poza etap prospektu.
+
 ### <a name="inmail-history"></a>Historia wiadomości InMail
 
 Historia wiadomości InMail w serwisie LinkedIn jest aktywna przy dostępie na poziomie umowy do usługi LinkedIn Recruiter. Po włączeniu tej opcji można przeglądać całą historię wiadomości InMail wymienianych z kandydatem. Można także sprawdzić, kto jeszcze z organizacji komunikował się z kandydatem za pomocą wiadomości InMail, jednak nie można wyświetlić treści tych wiadomości.
 
-Aby wyświetlić historię wiadomości InMail, przejdź do profilu kandydata, przejdź do karty **LinkedIn** i przewiń do dołu strony. Historię wiadomości InMail można wyświetlić tylko wtedy, gdy kandydat odpowiedział na Twoją prośbę i udostępnił Ci swój profil w serwisie LinkedIn. Wiadomości InMail są synchronizowane z aplikacją Attract co kilka godzin.
+Aby wyświetlić historię wiadomości InMail, przejdź do profilu kandydata, przejdź do karty **LinkedIn** i przewiń do dołu strony. W przypadku rozmowy z kandydatami można przejrzeć historię InMail. Wiadomości InMail będą synchronizowane z aplikacją Attract co kilka godzin.
 
 ### <a name="notes-history"></a>Historia notatek 
 
@@ -131,7 +139,7 @@ Aby wyświetlić historię notatek, przejdź do profilu kandydata, przejdź do k
 
 ### <a name="inmail-stub-profile"></a>Profil szczątkowy InMail
 
-Profil szczątkowy InMail jest aktywny przy dostępie na poziomie umowy do usługi LinkedIn Recruiter. Jeśli kandydaci zgodzą się udostępnić swoje profile z serwisu LinkedIn któremukolwiek użytkownikowi w Twojej organizacji, możesz śledzić tych kandydatów w aplikacji Attract, a dla każdego kandydata zostanie utworzony nowy rekord kandydata.
+Profil szczątkowy InMail jest aktywny przy dostępie na poziomie umowy do usługi LinkedIn Recruiter. Jeśli kandydaci zgodzą się udostępnić swoje profile z serwisu LinkedIn któremukolwiek użytkownikowi w Twojej organizacji, możesz śledzić tych kandydatów w aplikacji Attract, a dla każdego kandydata zostanie utworzony nowy rekord kandydata. Jeśli kandydat już istnieje w systemie z adresem e-mail lub zdecydował się udostępnić swój adres rekruterowi, można wyświetlić adres e-mail kandydata.
 
 Aby wyświetlić listę kandydatów, przejdź do okna **Pule umiejętności**, a zobaczysz listę pul umiejętności utworzoną w usłudze LinkedIn przez system. Ta pula umiejętności zawiera listę kandydatów i ich profile szczątkowe otrzymane z serwisu LinkedIn, tylko z imionami i nazwiskami kandydatów. Identyfikator e-mail kandydata będzie widoczny tylko wtedy, gdy udostępnił on swój adres e-mail.
 

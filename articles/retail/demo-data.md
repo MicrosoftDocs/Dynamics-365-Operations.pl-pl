@@ -20,10 +20,10 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 41930e89a7cae5cdb84e728da47de3bc5de312ca
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -41,7 +41,7 @@ Przykładowe układy ekranu zawarte w danych demonstracyjnych programu Retail ob
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Struktura identyfikatora układu ekranu
 
-Aby znaleźć układy ekranu w rozwiązaniu Retail, przejdź do **Retail** > **Ustawienia kanału** > **Ustawienia punktu sprzedaży** > **Punkt sprzedaży** > **Układy ekranu**.
+Aby znaleźć układy ekranu w rozwiązaniu Retail, przejdź do **Retail** \> **Ustawienia kanału** \> **Ustawienia punktu sprzedaży** \> **Punkt sprzedaży** \> **Układy ekranu**.
 
 ![Strona układów ekranu w rozwiązaniu Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -107,10 +107,8 @@ Poniższa tabela przedstawia rozmiary układu dostępne dla typowych rozdzielczo
 
 \* Te dodatkowe rozmiary układów są dostępne tylko w układach firmy Adventure Works i Fabrikam.
 
-
->[!TIP]
-> Punkt sprzedaży automatycznie wybiera rozmiary układu na podstawie najbliższego rozmiaru dostępnego dla rozdzielczości ekranu okna bieżącej aplikacji. Aby znaleźć aktualnie używany identyfikator układu ekranu i rozdzielczość układu, w module Retail Modern POS (MPOS) lub Retail Cloud POS (CPOS) otwórz stronę **Ustawienia** i sprawdź informacje w sekcji **Informacje o sesji**. Możesz także zobaczyć rzeczywistą rozdzielczość okna dla bieżącej aplikacji lub ramki przeglądarki. Po uzyskaniu tych informacji można znaleźć źródło zawartości układu w rozwiązaniu Retail, przechodząc do okna **Ustawienia kanału** > **Ustawienia punktu sprzedaży** > **Punkt sprzedaży** > **Układy ekranu**.
-
+> [!TIP]
+> Punkt sprzedaży automatycznie wybiera rozmiary układu na podstawie najbliższego rozmiaru dostępnego dla rozdzielczości ekranu okna bieżącej aplikacji. Aby znaleźć aktualnie używany identyfikator układu ekranu i rozdzielczość układu, w module Retail Modern POS (MPOS) lub Retail Cloud POS (CPOS) otwórz stronę **Ustawienia** i sprawdź informacje w sekcji **Informacje o sesji**. Możesz także zobaczyć rzeczywistą rozdzielczość okna dla bieżącej aplikacji lub ramki przeglądarki. Po uzyskaniu tych informacji można znaleźć źródło zawartości układu w rozwiązaniu Retail, przechodząc do okna **Ustawienia kanału** \> **Ustawienia punktu sprzedaży** \> **Punkt sprzedaży** \> **Układy ekranu**.
 
 ![Układy ekranu i rozdzielczości/rozmiary układu w rozwiązaniu Retail i punkcie sprzedaży](../retail/media/demo-screen-layouts-fig-3-1.png)
 
@@ -126,10 +124,8 @@ Każda firma fikcyjna odnosi się do innego segmentu sprzedaży detalicznej i za
 | Fabrikam        | Houston  | Moda        | Zielony  | Delikatny |
 | Contoso         | Boston   | Elektronika    | Czerwony    | Ciemny  |
 
-
->[!NOTE]
+> [!NOTE]
 > Adventure Works i Fabrikam to dwie marki flagowe. Firma Contoso jest dostępna, ale nie dostarczono wszystkich układów.
-
 
 Poniższe ilustracje przedstawiają przykłady strony powitalnej i strony transakcji dla trzech fikcyjnych firm.
 
@@ -153,28 +149,26 @@ Poniższe ilustracje przedstawiają przykłady strony powitalnej i strony transa
 
 Użytkownikom udostępniono różne układy ekranu. Korzystając z poniższej tabeli, można uzyskać dostęp do dowolnego ekranu. Wystarczy zalogować się, używając odpowiedniego identyfikatora operatora.
 
-| Firma         | Identyfikator układu ekranu | Osoba          | Identyfikatory operatora           |
-|-----------------|------------------|---------------   |------------------------|
-| Adventure Works | A3MGR            | Kierownik sklepu    | 000154, 000137, 000073 |
-| Adventure Works | A3CSH            | Kasjer          | 000150, 000175, 000165 |
-| Adventure Works | A3STK            | Magazynier      | 000155, 000181, 000152 |
-| Fabrikam        | F3MGR            | Kierownik sklepu    | 000160, 000168, 000163 |
-| Fabrikam        | F3CSH            | Kasjer          | 000161, 000113, 000114 |
-| Fabrikam        | F3STK            | Magazynier      | 000164, 000112, 000123 |
-| Contoso         | C3MGR            | Kierownik sklepu    | 000100, 000111         |
-| Contoso         | C3CSH            | Kasjer          | 000110, 000120         |
-| Contoso         | Nie dotyczy   | Magazynier      | Nie dotyczy         |
+| Firma         | Identyfikator układu ekranu | Osoba       | Identyfikatory operatora           |
+|-----------------|------------------|---------------|------------------------|
+| Adventure Works | A3MGR            | Kierownik sklepu | 000154, 000137, 000073 |
+| Adventure Works | A3CSH            | Kasjer       | 000150, 000175, 000165 |
+| Adventure Works | A3STK            | Magazynier   | 000155, 000181, 000152 |
+| Fabrikam        | F3MGR            | Kierownik sklepu | 000160, 000168, 000163 |
+| Fabrikam        | F3CSH            | Kasjer       | 000161, 000113, 000114 |
+| Fabrikam        | F3STK            | Magazynier   | 000164, 000112, 000123 |
+| Contoso         | C3MGR            | Kierownik sklepu | 000100, 000111         |
+| Contoso         | C3CSH            | Kasjer       | 000110, 000120         |
+| Contoso         | Nie dotyczy   | Magazynier   | Nie dotyczy         |
 
-
->[!TIP]
+> [!TIP]
 > Aby uzyskać najlepsze wyniki, uaktywnij kasę w odpowiedniej lokalizacji sklepu i ustaw firmę na dotyczącą osoby, której konta chcesz używać po zalogowaniu. Zapewnia to zgodność profilu wizualnego i obrazów marki z doświadczeniem. Jeżeli na przykład chcesz zobaczyć układ Fabrikam dla kasjera, uaktywnij kasę w sklepie w Houston.
-
 
 <!-- Hiding until the content page is available on CustomerSource -->
 
 <!-- ## Reference icons and images -->
 
-<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail > Channel setup > POS setup > POS > Images**. -->
+<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail \> Channel setup \> POS setup \> POS \> Images**. -->
 
 <!-- ![Images in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-5-1.png) -->
 

@@ -3,7 +3,7 @@ title: Tworzenie, zatwierdzanie i podpisywanie ofert
 description: "W tym temacie szczegółowo wyjaśniono sposób tworzenie, zatwierdzania i podpisywania oferty dla kandydata w aplikacji Dynamics 365 for Talent."
 author: josaw
 manager: AnnBe
-ms.date: 10/19/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: f6b17dca13431a9d674920833b4a44141fac0bd8
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -104,6 +104,11 @@ Istnieje kilka czynności, które można wykonać przed wysłaniem oferty do kan
 -  Można określić datę ważności oferty. Kandydaci muszą zaakceptować lub odrzucić ofertę przed upływem jej daty ważności.  Kandydat otrzyma przypomnienia 48 godzin przed upływem daty ważności oferty.
 
 -  Mogą istnieć dodatkowe dokumenty, które chcesz dołączyć do procesu akceptacji oferty. Będzie można wyświetlić listę typów wymaganych dokumentów.
+
+- Opcja e-podpisu: jeśli wybrano Adobe Sign jako preferowaną metodę e-podpisu, twórcy ofert muszą połączyć swoją licencję Adobe Sign. Istnieją dwa sposoby, aby to zrobić. Przejdź do Ustawień **użytkownika** w **Ofercie** w menu **Połączenia**, aby połączyć się z **Adobe Sign**. Alternatywnie pojawi się monit o połączenie oferty wysłania z ekranem certyfikatu, jeśli połączenie nie zostało jeszcze utworzone na podstawie ustawień użytkownika. 
+
+> [!NOTE]
+> Wystarczy tylko raz połączyć się z kontem Adobe Sign. Ta sama licencja użytkownika jest używana do wszystkich przyszłych pakietów ofert wysyłanych przez tego samego użytkownika. 
 
 -  Można wyświetlić i edytować szablon wiadomości e-mail zgodnie z potrzebami.
 

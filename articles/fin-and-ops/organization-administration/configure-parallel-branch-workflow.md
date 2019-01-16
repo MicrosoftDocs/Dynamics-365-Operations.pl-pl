@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: a0359f8312e5e3fe1349dbc89831c98c46cd61ff
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 73626ad21dfe2be7400f321a3eee272c896276f3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -34,24 +34,22 @@ Aby skonfigurować gałąź równoległą, należy wykonać następujące proced
 Gałąź równoległa to zasadniczo przepływ pracy, który jest wykonywany w kontekście nadrzędnego przepływu pracy.
 
 ## <a name="name-a-branch"></a>Nazywanie gałęzi
+
 Wykonaj następujące kroki, aby nazwać odgałęzienie równoległe.
-1.  Kliknij prawym przyciskiem gałąź równoległą i wybierz polecenie **Właściwości**. Zostanie wyświetlony formularz **Właściwości**.
-2.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
-3.  W polu **Nazwa** wprowadź unikatową nazwę gałęzi równoległej.
-4.  Kliknij przycisk **Zamknij**.
+
+1. Kliknij prawym przyciskiem gałąź równoległą i wybierz polecenie **Właściwości**. Zostanie wyświetlony formularz **Właściwości**.
+2. W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
+3. W polu **Nazwa** wprowadź unikatową nazwę gałęzi równoległej.
+4. Kliknij przycisk **Zamknij**.
 
 ## <a name="design-and-configure-the-elements-of-a-branch"></a>Projektowanie i konfigurowanie elementów gałęzi
+
 Wykonaj następujące kroki, aby zaprojektować i skonfigurować elementy odgałęzienia równoległego.
-1.  Kliknij dwukrotnie gałąź równoległą.
-2.  Przeciągnij elementy przepływu pracy na kanwę, a następnie je skonfiguruj, tak samo jak przy tworzeniu jakiegokolwiek innego przepływu pracy. Aby uzyskać więcej informacji, zobacz temat Tworzenie przepływu pracy.
 
+1. Kliknij dwukrotnie gałąź równoległą.
+2. Przeciągnij elementy przepływu pracy na kanwę, a następnie je skonfiguruj, tak samo jak przy tworzeniu jakiegokolwiek innego przepływu pracy. Aby uzyskać więcej informacji, zobacz temat [Tworzenie przepływu pracy](create-workflow.md).
 
-
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Tworzenie przepływu pracy](create-workflow.md)
-
-
-
 

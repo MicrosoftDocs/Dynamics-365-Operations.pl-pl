@@ -3,7 +3,7 @@ title: "Generowanie raportów do ustawy ACA (Affordable Care Act)"
 description: "Jest dostępna funkcjonalność wspierająca pracodawców, którzy muszą monitorować informacje zgłaszane w deklaracjach 1095-B i 1095-C dotyczących sekcji Employer Mandate (Obowiązki pracodawcy) amerykańskiej ustawy o powszechnym dostępie do opieki zdrowotnej (ACA). Należy zauważyć, że ta funkcjonalność jest włączona tylko dla firm w Stanach Zjednoczonych."
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 25d2b8326bba69ac627f3fa7e05a6c850bd04c91
+ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
+ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/17/2018
 
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Generowanie raportów do ustawy ACA (Affordable Care Act)
@@ -54,7 +54,7 @@ Na stronie **Menedżer dat świadczenia dla osoby będącej na utrzymaniu** moż
 ## <a name="generate-1095b-and-1095c-forms"></a>Generowanie deklaracji 1095B i 1095C
 Formularze 109-B i 1095-C można również wygenerować z poziomu programu i rozesłać je odnośnym pracownikom. Z systemu można też elektronicznie wygenerować deklarację 1095-C i towarzyszące jej pliki 1094-C przekazywane do urzędu skarbowego.  
 
-Podczas generowania formularza 1095-C należy wprowadzić odpowiedni rok kalendarzowy lub podatkowy oraz określić, czy chcesz drukować formularz na dwóch stronach czy trzech. Formularz trzystronicowy jest potrzebny tylko wtedy, gdy pracodawca oferuje dodatkowe świadczenia finansowane przez siebie, a pracownik włączył do świadczeń siebie i ponad pięć osób na swoim utrzymaniu. Podczas generowania deklaracji dwustronicowej system automatycznie wykryje, czy pracownik zapisał do świadczeń więcej niż 6 osób, i nie uwzględni tego pracownika podczas tworzenia formularza. Ponadto podczas generowania deklaracji trzystronicowej system uwzględni tylko tych pracowników, którzy zgłosili siebie i więcej niż pięć osób na utrzymaniu.
+Podczas generowania formularza 1095-C należy wprowadzić odpowiedni rok podatkowy i wskazać, czy numer ubezpieczenia społecznego powinien być zakryty. W wypadku drukowania formularzy 1095-C dla więcej niż 500 pracowników otrzymasz więcej niż jeden plik PDF. Zaleca się zwiększenie **maksymalnego rozmiaru pliku** w oknie **Parametry zarządzania dokumentami** na 150 MB.
 
 ## <a name="viewing-information"></a>Wyświetlanie informacji
 Na stronie **Świadczenie ACA dla pracownika** można zobaczyć, których pracowników przypisano do poszczególnych grup objętych świadczeniem, których pracowników nie trzeba uwzględniać w raporcie i którzy pracownicy są nieprzypisani.

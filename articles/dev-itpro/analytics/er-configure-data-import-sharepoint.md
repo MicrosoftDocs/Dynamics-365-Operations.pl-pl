@@ -3,13 +3,13 @@ title: Konfigurowanie importu danych z programu SharePoint
 description: "W tym temacie wyjaśniono, jak przeprowadzić import danych z programu Microsoft SharePoint."
 author: NickSelin
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 11/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 9f23f73e9a98fc50c622255bf6ed027c41ec8010
+ms.sourcegitcommit: 060c3dec71e2b953d9341c5b5c89e60925fda34d
+ms.openlocfilehash: 8053b0316c86c614b87b0e658dffade3a135f2cc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/08/2018
 
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurowanie importu danych z programu SharePoint
@@ -39,66 +39,71 @@ Aby wykonać przykłady opisane w tym temacie, musisz mieć następujące uprawn
     - Konsultant funkcjonalny raportowania elektronicznego
     - Administrator systemu
 
-- Dostęp do wystąpienia serwera programu Microsoft SharePoint, który jest skonfigurowany do współpracy z programem Finance and Operations
-- Konfiguracje formatu i modelu raportowania elektronicznego na potrzeby płatności wynikających z deklaracji 1099
+- Dostęp do wystąpienia serwera programu Microsoft SharePoint, który jest skonfigurowany do współpracy z programem Finance and Operations.
+- Konfiguracje formatu i modelu raportowania elektronicznego na potrzeby płatności wynikających z deklaracji 1099.
 
 ### <a name="create-required-er-configurations"></a>Tworzenie wymaganych konfiguracji ER
-Odtwórz przewodniki po zadaniach **ER Importowanie danych z pliku programu Microsoft Excel**, które wchodzą w skład procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**. Te wskazówki zadania przeprowadzą Cię przez proces projektowania i używania konfiguracji ER do aktywnego importowania transakcji dostawcy z zewnętrznych plików programu Microsoft Excel. Aby uzyskać więcej informacji, zobacz [Analizowanie dokumentów przychodzących w programie Microsoft Excel](parse-incoming-documents-excel.md). Na koniec uzyskujesz:
+Odtwórz przewodniki po zadaniach **ER Importowanie danych z pliku programu Microsoft Excel**, które wchodzą w skład procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**. Te wskazówki zadania przeprowadzą Cię przez proces projektowania i używania konfiguracji ER do aktywnego importowania transakcji dostawcy z plików programu Microsoft Excel. Aby uzyskać więcej informacji, zobacz [Analizowanie dokumentów przychodzących w programie Microsoft Excel](parse-incoming-documents-excel.md). Po wykonaniu kroków przewodnika po zadaniach będziesz mieć następując konfigurację.
 
-- Konfiguracje ER:
+#### <a name="er-configurations"></a>Konfiguracje ER
 
-    - Konfiguracja modelu ER, **Model płatności 1099**
-    - Konfiguracja formatu ER, **Format importowania transakcji z dostawcami z programu Excel**
+- Konfiguracja modelu ER, **Model płatności 1099**
+- Konfiguracja formatu ER, **Format importowania transakcji z dostawcami z programu Excel**
 
-    [![Konfiguracje ER do importowania danych z programu SharePoint](./media/GERImportFromSharePoint-01-Configurations.PNG)](./media/GERImportFromSharePoint-01-Configurations.PNG)
+![Konfiguracje ER do importowania danych z programu SharePoint](./media/GERImportFromSharePoint-01-Configurations.PNG)
 
-- Przykład pliku przychodzącego w imporcie danych:
+#### <a name="sample-of-the-incoming-file-for-data-import"></a>Przykład pliku przychodzącego w imporcie danych
 
-    - Plik programu Excel **1099import data.xlsx**, z transakcjami z dostawcami, które należy zaimportować do programu Finance and Operations
+- Plik programu Excel **1099import data.xlsx**, z transakcjami z dostawcami, które należy zaimportować do programu Finance and Operations.
 
-    [![Przykładowy plik programu Microsoft Excel do importowania z programu SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)](./media/GERImportFromSharePoint-02-Excel.PNG)
-
+![Przykładowy plik programu Microsoft Excel do importowania z programu SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
+    
 > [!NOTE]
 > Format na potrzeby importowania transakcji dostawcy jest zaznaczony jako domyślne mapowanie modelu. Dlatego po uruchomieniu mapowania modelu **Model płatności 1099”**, jeśli to mapowanie modelu jest typu **Do lokalizacji docelowej**, mapowanie modelu uruchamia ten format, aby importować dane z plików zewnętrznych. Następnie używa tych danych do aktualizowania tabel aplikacji.
 
-## <a name="configure-document-management-parameters"></a>Konfigurowanie parametrów zarządzania dokumentami
-1. Na stronie **Parametry zarządzania dokumentami** skonfiguruj dostęp do wystąpienia serwera programu SharePoint, który będzie używany w firmie, do której obecnie się logujesz. W tym przykładzie firmą jest USMF.
-2. Przetestuj połączenie z wystąpieniem serwera programu SharePoint, aby się upewnić, że przyznano Ci dostęp.
+## <a name="configure-access-to-sharepoint-for-file-storage"></a>Konfigurowanie dostępu do witryny programu SharePoint do przechowywania plików
+Aby zapisywać pliki raportów elektronicznych w lokalizacji programu SharePoint, należy skonfigurować dostęp do wystąpienia programu SharePoint Server używanego przez bieżącą firmę. W tym przykładzie firmą jest USMF. Aby uzyskać instrukcje, zobacz [Konfigurowanie magazynu SharePoint](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-    [![Ustawienie zarządzania dokumentami — serwer programu SharePoint](./media/GERImportFromSharePoint-03-SharePointSetup.png)](./media/GERImportFromSharePoint-03-SharePointSetup.png)
+1. Wykonaj kroki opisane w temacie [Konfigurowanie magazynu SharePoint](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+2. Otwórz skonfigurowaną witrynę programu SharePoint.
+3. Utwórz następujące foldery do magazynowania przychodzących plików raportów elektronicznych.
 
-3. Otwórz skonfigurowaną witrynę programu SharePoint, a następnie utwórz następujące foldery, w których można przechowywać przychodzące pliki:
+     - Źródło importu plików (główne) (przykład pokazany na zrzucie ekranu poniżej)
+     - Źródło importu plików (alternatywne)
 
-    - Źródło importu plików (główne)
-    - Źródło importu plików (alternatywne)
+    ![Źródło importu plików (główne)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
 
-    [![Ustawienie zarządzania dokumentami — serwer programu SharePoint](./media/GERImportFromSharePoint-04-SharePointFolder1.png)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
+4. (Opcjonalnie) Utwórz następujące foldery, w których pliki mogą być zapisywane po zaimportowaniu. 
 
-    [![Ustawienie zarządzania dokumentami — serwer programu SharePoint](./media/GERImportFromSharePoint-05-SharePointFolder2.png)](./media/GERImportFromSharePoint-05-SharePointFolder2.png)
+    - Folder archiwum plików — ten folder jest przeznaczony na pliki pomyślnie zaimportowane.
+    - Folder plików z ostrzeżeniami — ten folder jest przeznaczony na pliki, które zostały zaimportowane z ostrzeżeniem.
+    - Folder plików z błędami — ten folder jest przeznaczony na pliki zaimportowane z błędami.
 
-4. W programie Finance and Operations na stronie **Typy dokumentów** utwórz następujące typy dokumentów, które będą używane w celu uzyskiwania dostępu do nowo utworzonych folderów programu SharePoint:
+4. W programie Finance and Operations przejdź do **Administrowanie organizacją > Zarządzanie dokumentami > Typy dokumentów**.
+5. Utwórz następujące typy dokumentów, które będą używane do uzyskiwania dostępu do folderów programu SharePoint, które zostały właśnie utworzone. Aby uzyskać instrukcje, zobacz [Konfigurowanie typów dokumentów](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
 
-    - SP główny
-    - SP alternatywny
+|Typ dokumentu        | Grupa              | Lokalizacja      | Folder programu SharePoint      |
+|--------------------|--------------------|---------------|------------------------|
+|SP główny             |Plik                |SharePoint     |Źródło importu plików (główne)|
+|SP alternatywny             |Plik                |SharePoint     |Źródło importu plików (alternatywne)|
+|Archiwum SP             |Plik                |SharePoint     |Folder archiwum plików|
+|Ostrzeżenie SP             |Plik                |SharePoint     |Folder plików z ostrzeżeniami|
+|Błąd SP             |Plik                |SharePoint     |Folder plików z błędami|
 
-5. Dla utworzonych typów dokumentów w polu **Grupa** wypełnij pole **Plik**, a w pliku **Lokalizacja** wprowadź **SharePoint**. Wprowadź adres folderu programu SharePoint:
-
-    - Dla typu dokumentu **SP główny**: Źródło importu plików (główne)
-    - Dla typu dokumentu **SP alternatywny**: Źródło importu plików (alternatywne)
-
-    [![Ustawienie programu SharePoint — nowy typ dokumentu](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
+![Ustawienie programu SharePoint — nowy typ dokumentu](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
 
 ## <a name="configure-er-sources-for-the-er-format"></a>Konfigurowanie źródeł ER formatu ER
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Raportowanie elektroniczne** \> **Źródło raportowania elektronicznego**.
 2. Na stronie **Źródło raportowania elektronicznego** skonfiguruj pliki źródłowe importu danych za pomocą skonfigurowanego formatu raportowania elektronicznego.
 3. Zdefiniuj maskę nazwy pliku, aby importować tylko pliki z rozszerzeniem .xlsx. Maska nazwy pliku jest opcjonalna i jest używana tylko wtedy, gdy została zdefiniowana. Dla każdego formatu ER można zdefiniować tylko jedną maskę.
-4. Zaznacz oba utworzone wcześniej foldery programu SharePoint.
+4. Zmień ustawienie **Sortuj pliki przed zaimportowaniem** na **Nie sortuj**, jeśli istnieje wiele plików do importu i kolejność importu nie jest ważna
+5. Zaznacz wszystkie utworzone wcześniej foldery programu SharePoint.
 
     [![Ustawienie źródła plików modułu ER](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
 
 > [!NOTE]
 > - *Źródło* ER jest określane indywidualnie dla każdej firmy aplikacji. Z kolei *konfiguracje* raportowania elektronicznego są wspólne we wszystkich firmach.
-> - Po usunięciu ustawienia źródła ER dla formatu ER wszystkie powiązane stany pliku (patrz poniżej) również zostaną usunięte.
+> - Po usunięciu ustawienia źródła ER dla formatu ER wszystkie powiązane stany pliku (patrz poniżej) również zostaną usunięte przez potwierdzenie.
 
 ## <a name="review-the-files-states-for-the-er-format"></a>Przeglądanie stanów plików formatu raportowania elektronicznego
 1. Na stronie **Źródło raportowania elektronicznego** wybierz opcję **Stany plików dla źródeł**, aby przejrzeć zawartości skonfigurowanych plików źródłowych dla bieżącego formatu ER.
@@ -114,13 +119,13 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 
     [![Zawartość programu SharePoint — plik programu Microsoft Excel do importowania](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
-2. W programie Finance and Operations na stronie **Stany plików dla źródeł** wybierz opcję **Odśwież**, aby odświeżyć stronę. Należy zauważyć, że plik programu Excel przekazany do programu SharePoint były wyświetlany w tym formularzu ze stanem **Gotowe**. Następujące stany postępu są obecnie obsługiwane:
+2. W programie Finance and Operations na stronie **Stany plików dla źródeł** wybierz opcję **Odśwież**, aby odświeżyć stronę. Należy zauważyć, że plik programu Excel przekazany do programu SharePoint były wyświetlany na tej stronie ze stanem **Gotowe**. Następujące stany postępu są obecnie obsługiwane:
 
     - **Gotowe** — Przypisywany automatycznie do każdego nowego pliku w folderze programu SharePoint. Taki stan oznacza, że plik jest gotowy do zaimportowania.
     - **Importowanie** — Przypisywany automatycznie przez raport modułu ER, gdy plik zostanie zablokowany przez proces importu, aby zapobiec wykorzystaniu go przez inne procesy (jeśli wiele procesów jest uruchomionych jednocześnie).
     - **Zaimportowano** — Przypisywany automatycznie przez raport modułu ER, gdy import pliku został pomyślnie wykonany. Taki stan oznacza, że importowany plik został usunięty ze skonfigurowanego źródła plików (folder programu SharePoint).
     - **Niepowodzenie** — Przypisywany automatycznie przez raport modułu ER, gdy import pliku zakończył się z błędami lub wyjątkami.
-    - **Wstrzymane** — Przypisywany ręcznie przez użytkownika w tym formularzu. Taki stan oznacza, że nie będzie można teraz zaimportować pliku. Ten stan może służyć do odłożenia w czasie importowania niektórych plików.
+    - **Wstrzymane** — Przypisywany ręcznie przez użytkownika na tej stronie. Taki stan oznacza, że nie będzie można teraz zaimportować pliku. Ten stan może służyć do odłożenia w czasie importowania niektórych plików.
 
     [![Strona stanu plików modułu ER dla wybranych źródeł](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
@@ -136,13 +141,9 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 
     [![Uruchamianie mapowania modelu ER](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
-4. Mapowanie modelu można uruchomić bez nadzoru w trybie wsadowym. W takim przypadku podczas każdego wykonywania zadania wsadowego z tym formatem ER jest importowany jeden plik ze skonfigurowanych źródeł plików. Poniższy kod służy do wdrożenia uruchomienia tej partii.
+4. Mapowanie modelu można uruchomić bez nadzoru w trybie wsadowym. W takim przypadku podczas każdego wykonywania zadania wsadowego z tym formatem ER jest importowany jeden plik ze skonfigurowanych źródeł plików.
 
-    ```
-    ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId().run()
-    ```
-
-    Plik, który został pomyślnie zaimportowanych z folderu programu SharePoint, jest usuwany z tego folderu.
+    Kiedy plik zostanie pomyślnie zaimportowany do folderu programu SharePoint, jest usuwany z tego folderu i przenoszony do folderu pomyślnie zaimportowanych plików lub do folderu, do którego importowane są pliki z ostrzeżeniami. W przeciwnym jest on przenoszony do folderu na pliki z błędami lub zostaje w tym folderze, jeśli folder plików z błędami nie został skonfigurowany. 
 
 5. Wprowadź identyfikator załącznika, na przykład **V-00001**, a następnie wybierz opcję **OK**.
 
@@ -178,7 +179,7 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 8. Wybierz opcję **Uruchom**, aby uruchomić zmodyfikowane mapowanie modelu ER.
 9. Wprowadź identyfikator załącznika, na przykład **V-00002**, a następnie wybierz opcję **OK**.
 
-    Należy zwrócić uwagę, że dziennik informacyjny zawiera powiadomienie mówiące o tym, że plik znajdujący się w folderze programu SharePoint zawiera niepoprawne konto dostawcy i nie można go zaimportować.
+    Należy zwrócić uwagę, że dziennik informacyjny zawiera powiadomienie mówiące o tym, że w folderze programu SharePoint znajduje się plik zawierający niepoprawne konto dostawcy i nie można go zaimportować.
 
     [![Uruchamianie mapowania modelu ER](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
 
@@ -186,10 +187,9 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 
     [![Strona stanu plików modułu ER dla wybranych źródeł](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
 
-    Sekcja **Dziennik źródeł dla formatu importu** wskazuje, że proces importowania nie powiódł się, a plik jest wciąż w folderze programu SharePoint (pole wyboru **Jest usunięty** nie jest zaznaczone). Jeśli naprawisz ten plik w programie SharePoint poprzez dodanie odpowiedniego kodu dostawcy, a następnie w sekcji **Dziennik źródeł dla formatu importu** zmienisz stan pliku z **Niepowodzenie** na **Gotowe**, można ponownie zaimportować plik.
+   Sekcja **Dziennik źródeł dla formatu importu** wskazuje, że proces importowania nie powiódł się, a plik jest wciąż w folderze plików z błędami programu SharePoint (pole wyboru **Jest usunięty** nie jest zaznaczone). Jeżeli naprawisz ten plik w programie SharePoint, dodając odpowiedni kod dostawcy, a następnie przeniesiesz go do (głównego) folderu źródła importu plików programu SharePoint, możesz zaimportować plik ponownie.
 
-11. Przejrzyj folder programu SharePoint **Źródła importu plików (główne)**. Należy zauważyć, że plik programu Excel, który nie został zaimportowany wciąż znajduje się w tym folderze.
-12. W programie Finance and Operations wybierz kolejno opcje **Rozrachunki z dostawcami** \> **Zadania okresowe** \> **Podatek 1099** \> **Rozliczenia dostawcy dotyczące deklaracji 1099**, wprowadź odpowiednie wartości w polach **Od dnia** i **Do dnia**, a następnie wybierz opcję **Ręczne transakcje podatku 1099**.
+11. W programie Finance and Operations wybierz kolejno opcje **Rozrachunki z dostawcami** \> **Zadania okresowe** \> **Podatek 1099** \> **Rozliczenia dostawcy dotyczące deklaracji 1099**, wprowadź odpowiednie wartości w polach **Od dnia** i **Do dnia**, a następnie wybierz opcję **Ręczne transakcje podatku 1099**.
 
     Dostępne są tylko transakcje załącznika V-00001. Nie są dostępne żadne transakcje związane z załącznikiem V-00002, nawet jeśli w pliku programu Excel wykryto błąd dotyczący ostatniej zaimportowanej transakcji.
 
