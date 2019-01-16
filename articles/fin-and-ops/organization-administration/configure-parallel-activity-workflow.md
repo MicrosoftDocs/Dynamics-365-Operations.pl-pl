@@ -18,42 +18,41 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 64cd387f8a6ab693d159cd659fca51fa6568ee39
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 01c1fa876dd66ba6f0e1cdcecff56f424e117bd9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
-# <a name="configure-parallel-activities-in-a-workflow"></a><span data-ttu-id="eca82-103">Konfigurowanie działań równoległych w przepływie pracy</span><span class="sxs-lookup"><span data-stu-id="eca82-103">Configure parallel activities in a workflow</span></span>
+# <a name="configure-parallel-activities-in-a-workflow"></a><span data-ttu-id="59b56-103">Konfigurowanie działań równoległych w przepływie pracy</span><span class="sxs-lookup"><span data-stu-id="59b56-103">Configure parallel activities in a workflow</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="eca82-104">Aby skonfigurować działanie równoległe, należy wykonać następujące procedury w edytorze przepływu pracy.</span><span class="sxs-lookup"><span data-stu-id="eca82-104">To configure a parallel activity, complete the following procedures in the workflow editor.</span></span>
+<span data-ttu-id="59b56-104">Aby skonfigurować działanie równoległe, należy wykonać następujące procedury w edytorze przepływu pracy.</span><span class="sxs-lookup"><span data-stu-id="59b56-104">To configure a parallel activity, complete the following procedures in the workflow editor.</span></span>
 
-<span data-ttu-id="eca82-105">Działanie równoległe składa się z odgałęzień przepływu pracy, które są uruchomione w tym samym czasie.</span><span class="sxs-lookup"><span data-stu-id="eca82-105">A parallel activity consists of workflow branches that run at the same time.</span></span>
+<span data-ttu-id="59b56-105">Działanie równoległe składa się z odgałęzień przepływu pracy, które są uruchomione w tym samym czasie.</span><span class="sxs-lookup"><span data-stu-id="59b56-105">A parallel activity consists of workflow branches that run at the same time.</span></span>
 
-## <a name="name-a-parallel-activity"></a><span data-ttu-id="eca82-106">Nazywanie działania równoległego</span><span class="sxs-lookup"><span data-stu-id="eca82-106">Name a parallel activity</span></span>
-<span data-ttu-id="eca82-107">Wykonaj następujące kroki, aby nazwać działanie równoległe.</span><span class="sxs-lookup"><span data-stu-id="eca82-107">Follow these steps to enter a name for a parallel activity.</span></span>
-1.  <span data-ttu-id="eca82-108">Kliknij działanie równoległe prawym przyciskiem myszy i wybierz polecenie **Właściwości**, aby otworzyć formularz **Właściwości**.</span><span class="sxs-lookup"><span data-stu-id="eca82-108">Right-click the parallel activity, and then click **Properties** to open the **Properties** form.</span></span>
-2.  <span data-ttu-id="eca82-109">W lewym okienku kliknij przycisk **Ustawienia podstawowe**.</span><span class="sxs-lookup"><span data-stu-id="eca82-109">In the left pane, click **Basic Settings**.</span></span>
-3.  <span data-ttu-id="eca82-110">W polu **Nazwa** wprowadź unikatową nazwę działania równoległego.</span><span class="sxs-lookup"><span data-stu-id="eca82-110">In the **Name** field, enter a unique name for the parallel activity.</span></span>
-4.  <span data-ttu-id="eca82-111">Kliknij przycisk **Zamknij**.</span><span class="sxs-lookup"><span data-stu-id="eca82-111">Click **Close**.</span></span>
+## <a name="name-a-parallel-activity"></a><span data-ttu-id="59b56-106">Nazywanie działania równoległego</span><span class="sxs-lookup"><span data-stu-id="59b56-106">Name a parallel activity</span></span>
 
-## <a name="configure-the-branches-of-a-parallel-activity"></a><span data-ttu-id="eca82-112">Konfigurowanie odgałęzień działania równoległego</span><span class="sxs-lookup"><span data-stu-id="eca82-112">Configure the branches of a parallel activity</span></span>
-<span data-ttu-id="eca82-113">Wykonaj następujące kroki, aby dodać i skonfigurować gałęzie działania równoległego.</span><span class="sxs-lookup"><span data-stu-id="eca82-113">Follow these steps to add and configure the branches of this parallel activity.</span></span>
-1. <span data-ttu-id="eca82-114">Kliknij dwukrotnie działanie równoległe, aby wyświetlić jego odgałęzienia.</span><span class="sxs-lookup"><span data-stu-id="eca82-114">Double-click the parallel activity to display the branches of the parallel activity.</span></span>
-2. <span data-ttu-id="eca82-115">Aby dodać gałąź, przeciągnij element **Gałąź** z obszaru **Elementy przepływu pracy** na punkt wstawiania na kanwie.</span><span class="sxs-lookup"><span data-stu-id="eca82-115">To add a branch, drag the **Branch** element from the **Workflow elements** area to an insertion point on the canvas.</span></span> <span data-ttu-id="eca82-116">Na poniższej ilustracji przedstawiono punkt wstawiania.![Punkt wstawiania](./media/workflow_insertionpoint.gif)</span><span class="sxs-lookup"><span data-stu-id="eca82-116">The following figure shows an insertion point.![Insertion point](./media/workflow_insertionpoint.gif)</span></span>
+<span data-ttu-id="59b56-107">Wykonaj następujące kroki, aby nazwać działanie równoległe.</span><span class="sxs-lookup"><span data-stu-id="59b56-107">Follow these steps to enter a name for a parallel activity.</span></span>
 
-   |                                              <span data-ttu-id="eca82-117"><strong>Uwaga</strong></span><span class="sxs-lookup"><span data-stu-id="eca82-117"><strong>Note</strong></span></span>                                               |
-   |------------------------------------------------------------------------------------------------------------------|
-   | <span data-ttu-id="eca82-118">Kolejność odgałęzień jest nieważna, ponieważ wszystkie gałęzie działania równoległego są uruchamiane jednocześnie.</span><span class="sxs-lookup"><span data-stu-id="eca82-118">The order of the branches is not important because all the branches of a parallel activity run at the same time.</span></span> |
+1. <span data-ttu-id="59b56-108">Kliknij działanie równoległe prawym przyciskiem myszy i wybierz polecenie **Właściwości**, aby otworzyć formularz **Właściwości**.</span><span class="sxs-lookup"><span data-stu-id="59b56-108">Right-click the parallel activity, and then click **Properties** to open the **Properties** form.</span></span>
+2. <span data-ttu-id="59b56-109">W lewym okienku kliknij przycisk **Ustawienia podstawowe**.</span><span class="sxs-lookup"><span data-stu-id="59b56-109">In the left pane, click **Basic Settings**.</span></span>
+3. <span data-ttu-id="59b56-110">W polu **Nazwa** wprowadź unikatową nazwę działania równoległego.</span><span class="sxs-lookup"><span data-stu-id="59b56-110">In the **Name** field, enter a unique name for the parallel activity.</span></span>
+4. <span data-ttu-id="59b56-111">Kliknij przycisk **Zamknij**.</span><span class="sxs-lookup"><span data-stu-id="59b56-111">Click **Close**.</span></span>
 
+## <a name="configure-the-branches-of-a-parallel-activity"></a><span data-ttu-id="59b56-112">Konfigurowanie odgałęzień działania równoległego</span><span class="sxs-lookup"><span data-stu-id="59b56-112">Configure the branches of a parallel activity</span></span>
 
-3. <span data-ttu-id="eca82-119">Aby skonfigurować poszczególne gałęzie, zobacz [Konfigurowanie odgałęzienia równoległego](configure-parallel-branch-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="eca82-119">To configure each branch, see [Configure a parallel branch](configure-parallel-branch-workflow.md).</span></span>
+<span data-ttu-id="59b56-113">Wykonaj następujące kroki, aby dodać i skonfigurować gałęzie działania równoległego.</span><span class="sxs-lookup"><span data-stu-id="59b56-113">Follow these steps to add and configure the branches of this parallel activity.</span></span>
 
+1. <span data-ttu-id="59b56-114">Kliknij dwukrotnie działanie równoległe, aby wyświetlić jego odgałęzienia.</span><span class="sxs-lookup"><span data-stu-id="59b56-114">Double-click the parallel activity to display the branches of the parallel activity.</span></span>
+2. <span data-ttu-id="59b56-115">Aby dodać gałąź, przeciągnij element **Gałąź** z obszaru **Elementy przepływu pracy** na punkt wstawiania na kanwie.</span><span class="sxs-lookup"><span data-stu-id="59b56-115">To add a branch, drag the **Branch** element from the **Workflow elements** area to an insertion point on the canvas.</span></span> <span data-ttu-id="59b56-116">Na poniższej ilustracji przedstawiono punkt wstawiania.</span><span class="sxs-lookup"><span data-stu-id="59b56-116">The following figure shows an insertion point.</span></span>
 
+    ![Punkt wstawiania](./media/workflow_insertionpoint.gif)
 
+    > [!NOTE]
+    > <span data-ttu-id="59b56-118">Kolejność odgałęzień jest nieważna, ponieważ wszystkie gałęzie działania równoległego są uruchamiane jednocześnie.</span><span class="sxs-lookup"><span data-stu-id="59b56-118">The order of the branches is not important because all the branches of a parallel activity run at the same time.</span></span>
 
-
+3. <span data-ttu-id="59b56-119">Aby skonfigurować poszczególne gałęzie, zobacz [Konfigurowanie odgałęzienia równoległego](configure-parallel-branch-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="59b56-119">To configure each branch, see [Configure a parallel branch](configure-parallel-branch-workflow.md).</span></span>
 

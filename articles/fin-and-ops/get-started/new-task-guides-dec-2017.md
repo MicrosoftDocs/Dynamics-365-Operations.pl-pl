@@ -16,1040 +16,358 @@ ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
-ms.openlocfilehash: 2e7b62de678788325534b351e17d95002590e963
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 101eb8fd03303eb590dfef6f598ca507dc8f5548
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
-# <a name="new-or-updated-task-guides-december-2017"></a><span data-ttu-id="33d7f-104">Nowe lub zaktualizowane przewodniki po zadaniach (grudzień 2017 r.)</span><span class="sxs-lookup"><span data-stu-id="33d7f-104">New or updated task guides (December 2017)</span></span>
+# <a name="new-or-updated-task-guides-december-2017"></a><span data-ttu-id="f5528-104">Nowe lub zaktualizowane przewodniki po zadaniach (grudzień 2017 r.)</span><span class="sxs-lookup"><span data-stu-id="f5528-104">New or updated task guides (December 2017)</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="33d7f-105">Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z grudnia 2016 r. — wszystkie języki) dla programu Microsoft Dynamics 365 for Operations.</span><span class="sxs-lookup"><span data-stu-id="33d7f-105">This topic lists the new or updated Task guides that were released to the Microsoft (December 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations.</span></span>
+<span data-ttu-id="f5528-105">Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z grudnia 2016 r. — wszystkie języki) dla programu Microsoft Dynamics 365 for Operations.</span><span class="sxs-lookup"><span data-stu-id="f5528-105">This topic lists the new or updated Task guides that were released to the Microsoft (December 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations.</span></span>
 
+## <a name="new-task-guides"></a><span data-ttu-id="f5528-106">Nowe przewodniki po zadaniach</span><span class="sxs-lookup"><span data-stu-id="f5528-106">New task guides</span></span>
 
-<a name="new-task-guides"></a><span data-ttu-id="33d7f-106">Nowe przewodniki po zadaniach</span><span class="sxs-lookup"><span data-stu-id="33d7f-106">New task guides</span></span>
----------------
+- <span data-ttu-id="f5528-107">ER Tworzenie raportów w formatach programu MS Office z osadzonymi obrazami (Część 1: Konfigurowanie parametrów)</span><span class="sxs-lookup"><span data-stu-id="f5528-107">ER Make reports in MS Office formats with embedded images (Part 1: Set up parameters)</span></span>
+- <span data-ttu-id="f5528-108">Przenoszenie zaplanowanych zadań w systemie Kanban (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-108">Move scheduled Kanban jobs (February 2016)</span></span>
+- <span data-ttu-id="f5528-109">Zarządzanie stanem cyklu życia produktu</span><span class="sxs-lookup"><span data-stu-id="f5528-109">Manage product lifecycle state</span></span>
+- <span data-ttu-id="f5528-110">Tworzenie stanu cyklu życia produktu w celu wykluczania produktów z planowania głównego (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-110">Create a product lifecycle state to exclude products from Master planning (December 2017)</span></span>
+- <span data-ttu-id="f5528-111">Znajdowanie wariantów przestarzałych produktów i przypisywanie stanu cyklu życia produktu (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-111">Find obsolete product variants and assign a product lifecycle state (December 2017)</span></span>
+- <span data-ttu-id="f5528-112">Przypisywanie cyklu życia produktu do zwolnionego produktu głównego (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-112">Assign a product lifecycle state to a released product master (December 2017)</span></span>
+- <span data-ttu-id="f5528-113">Przypisywanie cyklu życia produktu do zwolnionego produktu (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-113">Assign a product lifecycle state to a released product (December 2017)</span></span>
+- <span data-ttu-id="f5528-114">Tworzenie domyślnego stanu cyklu życia produktu (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-114">Create a default product lifecycle state (December 2017)</span></span>
+- <span data-ttu-id="f5528-115">Tworzenie stanu cyklu życia nowego produktu (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-115">Create a new product lifecycle state (December 2017)</span></span>
+- <span data-ttu-id="f5528-116">ER Projektowanie konfiguracji do importowania danych z zewnętrznego pliku w formacie CSV (aktualizacja 7.3)</span><span class="sxs-lookup"><span data-stu-id="f5528-116">ER Design a configuration to import data from an external file in CSV format (7.3 Update)</span></span>
+- <span data-ttu-id="f5528-117">ER Projektowanie wyrażeń do wywoływania metod klas aplikacji za pomocą argumentów, których wartości są definiowane w czasie wykonywania (aktualizacja 7.3)</span><span class="sxs-lookup"><span data-stu-id="f5528-117">ER Design expressions to call methods of application classes with arguments the values of which are defined at run-time (7.3 Update)</span></span>
+- <span data-ttu-id="f5528-118">Ulepszenia ER w zakresie analizowania dokumentów przychodzących do aktualizacji danych aplikacji (aktualizacja 7.3)</span><span class="sxs-lookup"><span data-stu-id="f5528-118">ER improvements in parsing incoming documents to update application data (7.3 Update)</span></span>
+- <span data-ttu-id="f5528-119">ER poprawia wydajność obliczeń agregujących, wykonując je na poziomie bazy danych (aktualizacja 7.3)</span><span class="sxs-lookup"><span data-stu-id="f5528-119">ER improves the efficiency of aggregate calculations by performing them on database level (7.3 Update)</span></span>
+- <span data-ttu-id="f5528-120">ER poprawia wydajność obliczeń agregujących, wykonując je na poziomie bazy danych (część 1: Przygotowywanie konfiguracji)</span><span class="sxs-lookup"><span data-stu-id="f5528-120">ER improves the efficiency of aggregate calculations by performing them on database level (Part 1: Prepare configurations)</span></span>
+- <span data-ttu-id="f5528-121">ER poprawia wydajność obliczeń agregujących, wykonując je na poziomie bazy danych (część 2: Projektowanie mapowania modelu)</span><span class="sxs-lookup"><span data-stu-id="f5528-121">ER improves the efficiency of aggregate calculations by performing them on database level (Part 2: Design model mapping)</span></span>
+- <span data-ttu-id="f5528-122">Konfigurowanie parametrów w celu obliczania amortyzacji (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-122">Set up parameters to calculate depreciation (December 2017)</span></span>
+- <span data-ttu-id="f5528-123">Konfigurowanie amortyzacji grupy środków trwałych w księgach amortyzacji (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-123">Set up asset group depreciation for depreciation books (December 2017)</span></span>
+- <span data-ttu-id="f5528-124">Konfigurowanie dziennego kalendarza obrachunkowego (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-124">Set up a day-based fiscal calendar (December 2017)</span></span>
+- <span data-ttu-id="f5528-125">Określanie typu zmiany i branży dla ksiąg i dołączanie ksiąg do środka trwałego (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-125">Define type of shift and industry for books and attach to fixed asset (December 2017)</span></span>
+- <span data-ttu-id="f5528-126">Definiowanie stawek amortyzacji zmianowej (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-126">Define shift depreciation rates (December 2017)</span></span>
+- <span data-ttu-id="f5528-127">Tworzenie grupy modeli magazynu dla pozycji kapitałowych (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-127">Create an inventory model group for capital items (December 2017)</span></span>
+- <span data-ttu-id="f5528-128">Dołączanie dziennego kalendarza do księgi środków trwałych (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-128">Attach a day-based calendar to a fixed asset book (December 2017)</span></span>
+- <span data-ttu-id="f5528-129">IN – Przenoszenie pozycji kapitałowych do środka trwałego (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-129">IN-Transfer of capital items to the fixed asset (December 2017)</span></span>
 
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-107">ER Tworzenie raportów w formatach programu MS Office z osadzonymi obrazami (Część 1: Konfigurowanie parametrów)</span><span class="sxs-lookup"><span data-stu-id="33d7f-107">ER Make reports in MS Office formats with embedded images (Part 1: Set up parameters)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-108">Przenoszenie zaplanowanych zadań w systemie Kanban (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-108">Move scheduled Kanban jobs (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-109">Zarządzanie stanem cyklu życia produktu</span><span class="sxs-lookup"><span data-stu-id="33d7f-109">Manage product lifecycle state</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-110">Tworzenie stanu cyklu życia produktu w celu wykluczania produktów z planowania głównego (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-110">Create a product lifecycle state to exclude products from Master planning (December 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-111">Znajdowanie wariantów przestarzałych produktów i przypisywanie stanu cyklu życia produktu (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-111">Find obsolete product variants and assign a product lifecycle state (December 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-112">Przypisywanie cyklu życia produktu do zwolnionego produktu głównego (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-112">Assign a product lifecycle state to a released product master (December 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-113">Przypisywanie cyklu życia produktu do zwolnionego produktu (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-113">Assign a product lifecycle state to a released product (December 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-114">Tworzenie domyślnego stanu cyklu życia produktu (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-114">Create a default product lifecycle state (December 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-115">Tworzenie stanu cyklu życia nowego produktu (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-115">Create a new product lifecycle state (December 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-116">ER Projektowanie konfiguracji do importowania danych z zewnętrznego pliku w formacie CSV (aktualizacja 7.3)</span><span class="sxs-lookup"><span data-stu-id="33d7f-116">ER Design a configuration to import data from an external file in CSV format (7.3 Update)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-117">ER Projektowanie wyrażeń do wywoływania metod klas aplikacji za pomocą argumentów, których wartości są definiowane w czasie wykonywania (aktualizacja 7.3)</span><span class="sxs-lookup"><span data-stu-id="33d7f-117">ER Design expressions to call methods of application classes with arguments the values of which are defined at run-time (7.3 Update)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-118">Ulepszenia ER w zakresie analizowania dokumentów przychodzących do aktualizacji danych aplikacji (aktualizacja 7.3)</span><span class="sxs-lookup"><span data-stu-id="33d7f-118">ER improvements in parsing incoming documents to update application data (7.3 Update)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-119">ER poprawia wydajność obliczeń agregujących, wykonując je na poziomie bazy danych (aktualizacja 7.3)</span><span class="sxs-lookup"><span data-stu-id="33d7f-119">ER improves the efficiency of aggregate calculations by performing them on database level (7.3 Update)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-120">ER poprawia wydajność obliczeń agregujących, wykonując je na poziomie bazy danych (część 1: Przygotowywanie konfiguracji)</span><span class="sxs-lookup"><span data-stu-id="33d7f-120">ER improves the efficiency of aggregate calculations by performing them on database level (Part 1: Prepare configurations)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-121">ER poprawia wydajność obliczeń agregujących, wykonując je na poziomie bazy danych (część 2: Projektowanie mapowania modelu)</span><span class="sxs-lookup"><span data-stu-id="33d7f-121">ER improves the efficiency of aggregate calculations by performing them on database level (Part 2: Design model mapping)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-122">Konfigurowanie parametrów w celu obliczania amortyzacji (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-122">Set up parameters to calculate depreciation (December 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-123">Konfigurowanie amortyzacji grupy środków trwałych w księgach amortyzacji (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-123">Set up asset group depreciation for depreciation books (December 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-124">Konfigurowanie dziennego kalendarza obrachunkowego (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-124">Set up a day-based fiscal calendar (December 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-125">Określanie typu zmiany i branży dla ksiąg i dołączanie ksiąg do środka trwałego (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-125">Define type of shift and industry for books and attach to fixed asset (December 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-126">Definiowanie stawek amortyzacji zmianowej (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-126">Define shift depreciation rates (December 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-127">Tworzenie grupy modeli magazynu dla pozycji kapitałowych (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-127">Create an inventory model group for capital items (December 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-128">Dołączanie dziennego kalendarza do księgi środków trwałych (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-128">Attach a day-based calendar to a fixed asset book (December 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-129">IN – Przenoszenie pozycji kapitałowych do środka trwałego (grudzień 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-129">IN-Transfer of capital items to the fixed asset (December 2017)</span></span></td>
-</tr>
-</tbody>
-</table>
+## <a name="task-guides-updated"></a><span data-ttu-id="f5528-130">Zaktualizowano przewodniki po zadaniach</span><span class="sxs-lookup"><span data-stu-id="f5528-130">Task guides updated</span></span>
 
-<a name="task-guides-updated"></a><span data-ttu-id="33d7f-130">Zaktualizowane przewodniki po zadaniach</span><span class="sxs-lookup"><span data-stu-id="33d7f-130">Task Guides updated</span></span>
--------------------
+- <span data-ttu-id="f5528-131">Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-131">Identify and deploy candidate selection tools (February 2016)</span></span>
+- <span data-ttu-id="f5528-132">Konfigurowanie standardowych kosztów robocizny i wydatków (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-132">Configure standard costs for labor and expenses (February 2016)</span></span>
+- <span data-ttu-id="f5528-133">Używanie arkusza zapasu bezpieczeństwa do aktualizowania minimalnego zapotrzebowania (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-133">Use the safety stock journal to update minimum coverage (February 2016)</span></span>
+- <span data-ttu-id="f5528-134">Definiowanie możliwości zasobu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-134">Define resource capabilities (February 2016)</span></span>
+- <span data-ttu-id="f5528-135">Definiowanie odrębnych grup zasobów produkcyjnych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-135">Define discrete manufacturing resource group (February 2016)</span></span>
+- <span data-ttu-id="f5528-136">Współpraca z odbiorcami w ramach wewnętrznego łańcucha dostaw (maj 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-136">Collaborate with internal supply chain customers (May 2016)</span></span>
+- <span data-ttu-id="f5528-137">Wyświetlanie wychodzących danych o zaplanowanym popycie międzyfirmowym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-137">View outbound planned intercompany demand (February 2016)</span></span>
+- <span data-ttu-id="f5528-138">Tworzenie nowego układu magazynu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-138">Create a new warehouse layout (February 2016)</span></span>
+- <span data-ttu-id="f5528-139">Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-139">Enter and compare RFQ bids and award contracts (February 2016)</span></span>
+- <span data-ttu-id="f5528-140">Tworzenie zapytania ofertowego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-140">Create a request for quotation (February 2016)</span></span>
+- <span data-ttu-id="f5528-141">Porównywanie aktywnych, szacowanych i zrealizowanych kosztów w związku ze zleceniem produkcyjnym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-141">Compare active, estimated, and realized costs on a production order (February 2016)</span></span>
+- <span data-ttu-id="f5528-142">Wyświetlanie aktualnego stanu PWT na zleceniu produkcyjnym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-142">View current WIP status on a production order (February 2016)</span></span>
+- <span data-ttu-id="f5528-143">Konfigurowanie fakturowania projektów międzyfirmowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-143">Configure intercompany project invoicing (February 2016)</span></span>
+- <span data-ttu-id="f5528-144">Tworzenie faktur zamówienia sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-144">Create sales order invoices (February 2016)</span></span>
+- <span data-ttu-id="f5528-145">Tworzenie kanałów online i definiowanie atrybutów kanału (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-145">Create online channels and define channel attributes (February 2016)</span></span>
+- <span data-ttu-id="f5528-146">Rejestrowanie przyjęcia towarów w zamówieniu zakupu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-146">Record the receipt of goods on the purchase order (February 2016)</span></span>
+- <span data-ttu-id="f5528-147">Tworzenie zamówienia zakupu w ramach projektu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-147">Create project purchase order (February 2016)</span></span>
+- <span data-ttu-id="f5528-148">Konfigurowanie informacji o zasobach projektu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-148">Set up project resource information (February 2016)</span></span>
+- <span data-ttu-id="f5528-149">Przesyłanie i zatwierdzanie zmian budżetu projektu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-149">Submit and approve project budget revisions (February 2016)</span></span>
+- <span data-ttu-id="f5528-150">Przesyłanie i zatwierdzanie budżetu projektu (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-150">Submit and approve project budgets (November 2016)</span></span>
+- <span data-ttu-id="f5528-151">Włączanie drukowania etykiet numeru identyfikacyjnego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-151">Enable license plate label printing (February 2016)</span></span>
+- <span data-ttu-id="f5528-152">Inicjowanie poziomów zapasów w magazynie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-152">Initialize stock levels in the warehouse (February 2016)</span></span>
+- <span data-ttu-id="f5528-153">Tworzenie umowy instrumentu bankowego na akredytywę (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-153">Create a bank facility agreement for a letter of credit (February 2016)</span></span>
+- <span data-ttu-id="f5528-154">Włączanie procesu listy płac obliczanej na podstawie czasu i frekwencji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-154">Enable the payroll process for time and attendance (February 2016)</span></span>
+- <span data-ttu-id="f5528-155">Zatwierdzanie i księgowanie kart czasu pracy projektu</span><span class="sxs-lookup"><span data-stu-id="f5528-155">Approve and post project timesheets</span></span>
+- <span data-ttu-id="f5528-156">Tworzenie struktur kont (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-156">Create account structures (February 2016)</span></span>
+- <span data-ttu-id="f5528-157">Tworzenie konta głównego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-157">Create a main account (February 2016)</span></span>
+- <span data-ttu-id="f5528-158">Księgowanie arkuszy okresowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-158">Post periodic journals (February 2016)</span></span>
+- <span data-ttu-id="f5528-159">Tworzenie schematów naliczania (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-159">Create accrual schemes (February 2016)</span></span>
+- <span data-ttu-id="f5528-160">Zamykanie roku obrachunkowego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-160">Close the fiscal year (February 2016)</span></span>
+- <span data-ttu-id="f5528-161">Tworzenie grup uprawnień dla punktu sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-161">Create POS permission groups (February 2016)</span></span>
+- <span data-ttu-id="f5528-162">Przeładunek kompletacyjny z magazynu przyjmującego do sklepów (luty 2016 r.)</span><span class="sxs-lookup"><span data-stu-id="f5528-162">Cross-dock products from receiving warehouse to stores (February 2016)</span></span>
+- <span data-ttu-id="f5528-163">Dystrybucja produktów z centrum dystrybucji do sklepu za pomocą dystrybucji na zamówienie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-163">Push products from distribution center to store using buyer's push (February 2016)</span></span>
+- <span data-ttu-id="f5528-164">Konfigurowanie reguł i parametrów dla przeładunku komplementacyjnego i dystrybucji od kupującego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-164">Set up rules and parameters for cross docking and buyer's push (February 2016)</span></span>
+- <span data-ttu-id="f5528-165">Korekty ceny sieci sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-165">Retail price adjustments (February 2016)</span></span>
+- <span data-ttu-id="f5528-166">Cena podstawowa i umowy handlowe (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-166">Base price and trade agreements (February 2016)</span></span>
+- <span data-ttu-id="f5528-167">Reguły wyceny kategorii do tworzenia umów handlowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-167">Category pricing rules to create trade agreements (February 2016)</span></span>
+- <span data-ttu-id="f5528-168">Zwalnianie produktu / produktu głównego do firm (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-168">Release a product/product master to legal entities (February 2016)</span></span>
+- <span data-ttu-id="f5528-169">Tworzenie produktu głównego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-169">Create a product master (February 2016)</span></span>
+- <span data-ttu-id="f5528-170">Tworzenie produktu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-170">Create a product (February 2016)</span></span>
+- <span data-ttu-id="f5528-171">Definiowanie punktów lojalnościowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-171">Define loyalty reward points (February 2016)</span></span>
+- <span data-ttu-id="f5528-172">Projektowanie relacji między jednostkami organizacyjnymi (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-172">Design the relationships between organizational units (February 2016)</span></span>
+- <span data-ttu-id="f5528-173">ES-00016 Księgowanie fakturowania po stronie kredytowej</span><span class="sxs-lookup"><span data-stu-id="f5528-173">ES-00016 Credit invoicing</span></span>
+- <span data-ttu-id="f5528-174">EE-00004 Odwołanie do oryginalnej faktury (luty 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-174">EE-00004 Original invoice reference (July 2017)</span></span>
+- <span data-ttu-id="f5528-175">Definiowanie inwentaryzacji ciągłej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-175">Define cycle counting (February 2016)</span></span>
+- <span data-ttu-id="f5528-176">Korygowanie poziomów zapasów w magazynie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-176">Adjust stock levels in the warehouse (February 2016)</span></span>
+- <span data-ttu-id="f5528-177">Opracowywanie planu dziedziczenia (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-177">Develop succession plan (February 2016)</span></span>
+- <span data-ttu-id="f5528-178">Opracowywanie i otwieranie zapotrzebowania na stanowisko (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-178">Develop and open job requisition (February 2016)</span></span>
+- <span data-ttu-id="f5528-179">Opracowywanie struktury i planu pensji/wynagrodzeń (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-179">Develop salary/compensation structure and plans (February 2016)</span></span>
+- <span data-ttu-id="f5528-180">Dostarczanie programu świadczeń dla pracowników (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-180">Deliver employee benefits program (February 2016)</span></span>
+- <span data-ttu-id="f5528-181">Zarządzanie nieobecnościami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-181">Manage leave of absence (February 2016)</span></span>
+- <span data-ttu-id="f5528-182">Generowanie planu z ograniczeniami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-182">Generate a constrained plan (February 2016)</span></span>
+- <span data-ttu-id="f5528-183">Tworzenie zasobu operacyjnego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-183">Create an operations resource (February 2016)</span></span>
+- <span data-ttu-id="f5528-184">NL-00010 Elektroniczne deklaracje podatkowe (EVAT) (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-184">NL-00010 Electronic tax declarations (EVAT) (February 2016)</span></span>
+- <span data-ttu-id="f5528-185">JP-00027 Formularz 26 dla deklaracji podatku podlegającego amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-185">JP-00027 Form 26 for depreciable tax declaration (February 2016)</span></span>
+- <span data-ttu-id="f5528-186">DE-00003 Elektroniczne przesyłanie deklaracji VAT (ELSTER) (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-186">DE-00003 Electronic transmission of VAT declaration (ELSTER) (February 2016)</span></span>
+- <span data-ttu-id="f5528-187">Definiowanie zasad inspekcji dla dokumentów źródłowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-187">Define audit policies for source documents (February 2016)</span></span>
+- <span data-ttu-id="f5528-188">Tworzenie planu dla oddziału (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-188">Create a plan for a site (February 2016)</span></span>
+- <span data-ttu-id="f5528-189">Tworzenie harmonogramu dla oddziału (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-189">Create a schedule for a site (February 2016)</span></span>
+- <span data-ttu-id="f5528-190">Badanie lub rozwiązywanie wyjątków (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-190">Research or resolve exceptions (February 2016)</span></span>
+- <span data-ttu-id="f5528-191">Wykonywanie audytu faktur i najważniejszych danych w module rozrachunków z dostawcami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-191">Audit invoices and key data in accounts payable (February 2016)</span></span>
+- <span data-ttu-id="f5528-192">FR-00018 Dzienne obliczanie odsetek dla opóźnionej płatności i ryczałtu na fakturze i ponagleniu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-192">FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter (February 2016)</span></span>
+- <span data-ttu-id="f5528-193">EE-00015 Narzędzie do generowania odwołania do płatności (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-193">EE-00015 Payment reference generation tool (November 2016)</span></span>
+- <span data-ttu-id="f5528-194">MX-00010 E-fakturowanie CFDI (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-194">MX-00010 E-invoicing CFDI (February 2016)</span></span>
+- <span data-ttu-id="f5528-195">MY-00005 Drukowanie faktur podatku PTU (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-195">MY-00005 Print GST tax invoices (February 2016)</span></span>
+- <span data-ttu-id="f5528-196">MX-00007 Identyfikatory rejestracji odbiorcy i inne informacje (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-196">MX-00007 Customer registration IDs and other information (February 2016)</span></span>
+- <span data-ttu-id="f5528-197">NO-00002 Płatność odbiorcy na podstawie identyfikatora płatności (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-197">NO-00002 Customer payment based on payment ID (November 2016)</span></span>
+- <span data-ttu-id="f5528-198">CN-00010 Hierarchia planu kont (Chiny) (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-198">CN-00010 Chinese hierarchy of chart of accounts (November 2016)</span></span>
+- <span data-ttu-id="f5528-199">JP-00005 Strona przyjęcia w formularzu konta T (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-199">JP-00005 Input journal in T account page (February 2016)</span></span>
+- <span data-ttu-id="f5528-200">HU-00001 Obliczanie kursu wymiany (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-200">HU-00001 Exchange rate calculation (November 2016)</span></span>
+- <span data-ttu-id="f5528-201">CN-00004 Alokacja amortyzacji środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-201">CN-00004 Fixed asset depreciation allocation (February 2016)</span></span>
+- <span data-ttu-id="f5528-202">DE-00002 Korekty amortyzacji dla dodatkowych nabyć w drugim roku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-202">DE-00002 Depreciate adjustments for additional acquisitions in the second year (February 2016)</span></span>
+- <span data-ttu-id="f5528-203">FR-00002 Wyciągi z konta odbiorcy i dostawcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-203">FR-00002 Customer and vendor account statements (February 2016)</span></span>
+- <span data-ttu-id="f5528-204">NL-00003 Integracja Semansys XBRL (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-204">NL-00003 Semansys XBRL integration (February 2016)</span></span>
+- <span data-ttu-id="f5528-205">BE-00011 BLWI (saldo płatności)</span><span class="sxs-lookup"><span data-stu-id="f5528-205">BE-00011 BLWI (Payment balance)</span></span>
+- <span data-ttu-id="f5528-206">MX-00020 Generowanie raportu rachunku księgi elektronicznej w wersji 1.1 (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-206">MX-00020 Produce electronic ledger accounting report version 1.1 (February 2016)</span></span>
+- <span data-ttu-id="f5528-207">MX-00008: Identyfikatory rejestracji dostawcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-207">MX-00008: Vendor registration IDs (February 2016)</span></span>
+- <span data-ttu-id="f5528-208">IT-00002 Modello 770</span><span class="sxs-lookup"><span data-stu-id="f5528-208">IT-00002 Modello 770</span></span>
+- <span data-ttu-id="f5528-209">MY-00004 Zarządzanie debetem i kredytem dostawcy w zakresie podatku GST (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-209">MY-00004 Manage vendor debit and credit for GST (February 2016)</span></span>
+- <span data-ttu-id="f5528-210">MY-00007 Faktury rozliczane samodzielnie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-210">MY-00007 Self-billed invoices (February 2016)</span></span>
+- <span data-ttu-id="f5528-211">CN-00016 Dziennik operacji użytkownika według reguły pracy (Chiny) (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-211">CN-00016 User operation log by China working rule (November 2016)</span></span>
+- <span data-ttu-id="f5528-212">BR-00057 Podatek w ofertach sprzedaży (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-212">BR-00057 Tax in sales quotations (July 2017)</span></span>
+- <span data-ttu-id="f5528-213">BR-00031 Obliczanie podatku od ofert zakupu (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-213">BR-00031 Calculate tax on purchase quotations (July 2017)</span></span>
+- <span data-ttu-id="f5528-214">BR-00080 Zarządzanie tekstem dokumentów fiskalnych w dokumentach zaopatrzenia (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-214">BR-00080 Manage fiscal document text in procurement documents (July 2017)</span></span>
+- <span data-ttu-id="f5528-215">BR-00038 Wystawianie dokumentów fiskalnych dla odbiorcy (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-215">BR-00038 Issue customer fiscal documents (July 2017)</span></span>
+- <span data-ttu-id="f5528-216">BR-00084 Wystawianie dokumentów fiskalnych dla odbiorcy (usługi) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-216">BR-00084 Issue customer fiscal documents (services) (July 2017)</span></span>
+- <span data-ttu-id="f5528-217">BR-00085 Wystawianie dokumentów fiskalnych dla odbiorcy (środki trwałe) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-217">BR-00085 Issue customer fiscal documents (fixed assets) (July 2017)</span></span>
+- <span data-ttu-id="f5528-218">BR-00086 Wystawianie dokumentów fiskalnych dla odbiorcy (projekt) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-218">BR-00086 Issue customer fiscal documents (project) (July 2017)</span></span>
+- <span data-ttu-id="f5528-219">BR-00087 Wystawianie dokumentów fiskalnych dla odbiorcy (użytkownicy końcowi) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-219">BR-00087 Issue customer fiscal documents (for end users) (July 2017)</span></span>
+- <span data-ttu-id="f5528-220">BR-00088 Wystawianie dokumentów fiskalnych dla odbiorców (SUFRAMA) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-220">BR-00088 Issue customer fiscal documents (for SUFRAMA customers) (July 2017)</span></span>
+- <span data-ttu-id="f5528-221">BR-00050 Opłaty dodatkowe na fakturach niezależnych (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-221">BR-00050 Miscellaneous charge on free text invoices (July 2017)</span></span>
+- <span data-ttu-id="f5528-222">BR-00053 NF-e 3.10 (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-222">BR-00053 NF-e 3.10 (July 2017)</span></span>
+- <span data-ttu-id="f5528-223">BR-00058 Automatyczne przekazywanie dokumentów fiskalnych NF-e (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-223">BR-00058 Automatic transmission of NF-e fiscal documents (July 2017)</span></span>
+- <span data-ttu-id="f5528-224">BR-00042 Potrącone zaliczki na podatek dla płatności odbiorcy (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-224">BR-00042 Withholding taxes on customers payments (July 2017)</span></span>
+- <span data-ttu-id="f5528-225">BR-10016 Operacje niefiskalne (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-225">BR-10016 Non-fiscal operations (July 2017)</span></span>
+- <span data-ttu-id="f5528-226">BR-00076 Noty uznaniowe projektu (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-226">BR-00076 Project debit notes (July 2017)</span></span>
+- <span data-ttu-id="f5528-227">BR-00067 Zarządzanie płatnościami elektronicznymi dla płatności dostawców (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-227">BR-00067 Electronic payment management for vendor payments (July 2017)</span></span>
+- <span data-ttu-id="f5528-228">BR-00061 Potrącone zaliczki na podatek dla płatności dostawców (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-228">BR-00061 Withholding taxes on vendors payments (July 2017)</span></span>
+- <span data-ttu-id="f5528-229">BR-00024 Odbiór dokumentu fiskalnego dostawcy (produkty) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-229">BR-00024 Receive vendor fiscal document (products) (July 2017)</span></span>
+- <span data-ttu-id="f5528-230">BR-00082 Odbiór dokumentu fiskalnego dostawcy (środki trwałe – długoterminowy zwrot podatku ICMS) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-230">BR-00082 Receive vendor fiscal document (fixed assets - ICMS long term recoverable) (July 2017)</span></span>
+- <span data-ttu-id="f5528-231">BR-00014 Przyjęcie dokumentu fiskalnego dostawcy (środki trwałe – długoterminowy zwrot podatków PIS i COFINS) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-231">BR-00014 Receive vendor fiscal document (fixed assets - PIS and COFINS long term recoverable) (July 2017)</span></span>
+- <span data-ttu-id="f5528-232">BR-00033 Wystawianie dokumentu fiskalnego dla dostawców (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-232">BR-00033 Issue fiscal document for vendors (July 2017)</span></span>
+- <span data-ttu-id="f5528-233">BR-00002 Atrybuty podatku od domicylu podatkowego (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-233">BR-00002 Fiscal establishment tax attributes (July 2017)</span></span>
+- <span data-ttu-id="f5528-234">BR-00009 Potrącone zaliczki na podatek (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-234">BR-00009 Withholding taxes (July 2017)</span></span>
+- <span data-ttu-id="f5528-235">BR-10005 Wymiar podatku ISS (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-235">BR-10005 Tax assessment for ISS tax (July 2017)</span></span>
+- <span data-ttu-id="f5528-236">BR-00071 Wystawianie dokumentów fiskalnych za przelew podatku ICMS (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-236">BR-00071 Issue ICMS tax credit transfer fiscal documents (July 2017)</span></span>
+- <span data-ttu-id="f5528-237">BR-00072 Wystawianie dokumentów fiskalnych za kwotę podatku ICMS (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-237">BR-00072 Issue ICMS tax credit fiscal documents (July 2017)</span></span>
+- <span data-ttu-id="f5528-238">Wprowadzanie umów sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-238">Enter sales agreements (February 2016)</span></span>
+- <span data-ttu-id="f5528-239">Zarządzanie wstrzymaniami zamówień (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-239">Manage order holds (February 2016)</span></span>
+- <span data-ttu-id="f5528-240">Tworzenie zamówienia sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-240">Create sales orders (February 2016)</span></span>
+- <span data-ttu-id="f5528-241">Tworzenie harmonogramu dostaw (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-241">Create delivery schedule (February 2016)</span></span>
+- <span data-ttu-id="f5528-242">BR-00041 Dokumenty dostawy (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="f5528-242">BR-00041 Delivery slips (July 2017)</span></span>
+- <span data-ttu-id="f5528-243">Definiowanie wymiarów finansowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-243">Define financial dimensions (February 2016)</span></span>
+- <span data-ttu-id="f5528-244">Tworzenie i przypisywanie dokumentu wpisu redukcji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-244">Create and assign a reduction entry document (February 2016)</span></span>
+- <span data-ttu-id="f5528-245">Nabywanie środka trwałego i roszczenia do dotacji państwowej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-245">Acquire a fixed asset and claim for the government grant subsidy (February 2016)</span></span>
+- <span data-ttu-id="f5528-246">Amortyzowanie środków trwałych z zaksięgowanym wpisem redukcji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-246">Depreciate fixed assets with reduction entry posted (February 2016)</span></span>
+- <span data-ttu-id="f5528-247">Likwidacja środka trwałego z wykorzystaniem wpisu redukcji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-247">Dispose of a fixed asset with reduction entry (February 2016)</span></span>
+- <span data-ttu-id="f5528-248">Tworzenie grupy CGU i ośrodków wypracowujących środki pieniężne (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-248">Create CGU groups and cash generating units (February 2016)</span></span>
+- <span data-ttu-id="f5528-249">Alokacja kwoty magazynowania aktywów wspólnych i wartości firmy w ośrodkach wypracowujących środki pieniężne (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-249">Allocate carrying amount of shared asset and goodwill to cash generating units (February 2016)</span></span>
+- <span data-ttu-id="f5528-250">Tworzenie i potwierdzanie testu rozpoznawania (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-250">Create and confirm a recognition test (February 2016)</span></span>
+- <span data-ttu-id="f5528-251">Proponowanie i księgowanie kwoty utraty w ośrodku wypracowującym środki pieniężne (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-251">Propose and post the impairment amount on a cash generating unit (February 2016)</span></span>
+- <span data-ttu-id="f5528-252">Tworzenie i przypisywanie grupy sprzętu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-252">Create and assign an equipment group (February 2016)</span></span>
+- <span data-ttu-id="f5528-253">Tworzenie profilu amortyzacji przyspieszonej i przypisywanie go do księgi (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-253">Create accelerated depreciation profile and assign it to book (February 2016)</span></span>
+- <span data-ttu-id="f5528-254">Konfigurowanie parametrów przyspieszonej amortyzacji i profili księgowania (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-254">Configure accelerated depreciation parameters and posting profiles (February 2016)</span></span>
+- <span data-ttu-id="f5528-255">Proponowanie i księgowanie przyspieszonej amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-255">Propose and post accelerated depreciation (February 2016)</span></span>
+- <span data-ttu-id="f5528-256">Tworzenie i kojarzenie urządzenia (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-256">Create and associate a device (February 2016)</span></span>
+- <span data-ttu-id="f5528-257">Tworzenie i kojarzenie stanowiska sprzętowego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-257">Create and associate a hardware station (February 2016)</span></span>
+- <span data-ttu-id="f5528-258">Samoobsługa w zakresie pobierania stanowiska sprzętowego (maj 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-258">Perform self-service to download hardware station (May 2016)</span></span>
+- <span data-ttu-id="f5528-259">Tworzenie, obliczanie i księgowanie zestawienia dla sklepu sieci sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-259">Create, calculate, and post a statement for a retail store (February 2016)</span></span>
+- <span data-ttu-id="f5528-260">Konfigurowanie i realizowanie zadań obliczania zestawień (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-260">Configure and run a job to calculate statements (February 2016)</span></span>
+- <span data-ttu-id="f5528-261">Konfigurowanie i realizowanie zadań księgowania zestawień (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-261">Configure and run a job to post statements (February 2016)</span></span>
+- <span data-ttu-id="f5528-262">Księgowanie sprzedaży i płatności online (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-262">Post online sales and payments (February 2016)</span></span>
+- <span data-ttu-id="f5528-263">Konfigurowanie i generowanie informacji o wiekowaniu rozrachunków z odbiorcami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-263">Set up and generate accounts receivable aging information (February 2016)</span></span>
+- <span data-ttu-id="f5528-264">Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą faktury od dostawcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-264">Key invoice data into accounts payable using a vendor invoice (February 2016)</span></span>
+- <span data-ttu-id="f5528-265">Tworzenie nowego środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-265">Create a fixed asset (February 2016)</span></span>
+- <span data-ttu-id="f5528-266">Konfigurowanie urzędów skarbowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-266">Set up sales tax authorities (February 2016)</span></span>
+- <span data-ttu-id="f5528-267">Ustawianie okresów rozliczania podatku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-267">Set up sales tax settlement periods (February 2016)</span></span>
+- <span data-ttu-id="f5528-268">Konfigurowanie grupy księgowania podatku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-268">Set up ledger posting groups for sales tax (February 2016)</span></span>
+- <span data-ttu-id="f5528-269">Ustawianie kodów raportowania podatku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-269">Set up sales tax reporting codes (February 2016)</span></span>
+- <span data-ttu-id="f5528-270">Ustawianie kodów podatku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-270">Set up sales tax codes (February 2016)</span></span>
+- <span data-ttu-id="f5528-271">Konfigurowanie grup podatków i grup podatków dla towarów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-271">Set up sales tax groups and item sales tax groups (February 2016)</span></span>
+- <span data-ttu-id="f5528-272">Konfigurowanie potrąconych zaliczek na podatek (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-272">Set up withholding tax (February 2016)</span></span>
+- <span data-ttu-id="f5528-273">Tworzenie płatności podatku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-273">Create a sales tax payment (February 2016)</span></span>
+- <span data-ttu-id="f5528-274">Tworzenie transakcji podatku w dokumentach (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-274">Create sales tax transactions on documents (February 2016)</span></span>
+- <span data-ttu-id="f5528-275">Obliczanie i korygowanie podatku na fakturze od dostawcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-275">Calculate and adjust sales tax on a vendor invoice (February 2016)</span></span>
+- <span data-ttu-id="f5528-276">GB-00002 Konfigurowanie grup podatków dla opłaty zwrotnej VAT (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-276">GB-00002 Set up sales tax groups for reverse charge VAT (February 2016)</span></span>
+- <span data-ttu-id="f5528-277">GB-00002 Konfigurowanie grup podatków od towaru dla opłaty zwrotnej VAT (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-277">GB-00002 Set up item sales tax groups for reverse charge VAT (February 2016)</span></span>
+- <span data-ttu-id="f5528-278">GB-00002 Konfigurowanie grup towarów z opłatą zwrotną VAT, reguł i parametrów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-278">GB-00002 Set up reverse charge VAT item groups, rules, and parameters (February 2016)</span></span>
+- <span data-ttu-id="f5528-279">MX-00006 Konfigurowanie kodów podatku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-279">MX-00006 Set up sales tax codes (February 2016)</span></span>
+- <span data-ttu-id="f5528-280">MX-00010 Ustawianie parametrów dla faktury elektronicznej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-280">MX-00010 Set parameters for an electronic invoice (February 2016)</span></span>
+- <span data-ttu-id="f5528-281">MX-00010 Żądanie i drukowanie faktury elektronicznej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-281">MX-00010 Inquire and print an electronic invoice (February 2016)</span></span>
+- <span data-ttu-id="f5528-282">MX-00010 Anulowanie faktury elektronicznej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-282">MX-00010 Cancel an electronic invoice (February 2016)</span></span>
+- <span data-ttu-id="f5528-283">MX-00010 Księgowanie faktury niezależnej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-283">MX-00010 Post a free text invoice (February 2016)</span></span>
+- <span data-ttu-id="f5528-284">MY-00010 GST – Generowanie plików GAF w wymaganym formacie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-284">MY-00010 GST - Generate GAF files in the required format (February 2016)</span></span>
+- <span data-ttu-id="f5528-285">Wyświetlanie zaksięgowanych transakcji składników podatkowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-285">View posted sales tax transactions (February 2016)</span></span>
+- <span data-ttu-id="f5528-286">Definiowanie nowych zadań (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-286">Define new jobs (February 2016)</span></span>
+- <span data-ttu-id="f5528-287">Konfigurowanie kont głównych do księgowania zobowiązań do wycofania środków trwałych i obsługi stawek rabatu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-287">Configure main accounts for asset retirement obligation posting and market discount rates (February 2016)</span></span>
+- <span data-ttu-id="f5528-288">Konfigurowanie obowiązku wycofania składnika aktywów i wpisania kwoty ARO dla środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-288">Set up asset retirement obligation documents and enter ARO amount on a fixed asset (February 2016)</span></span>
+- <span data-ttu-id="f5528-289">Nabywanie środka trwałego ze zobowiązaniami do wycofania środków trwałych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-289">Acquire a fixed asset with asset retirement obligations (February 2016)</span></span>
+- <span data-ttu-id="f5528-290">Amortyzacja i naliczanie odsetek od środków trwałych dla zobowiązań do wycofania środków trwałych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-290">Depreciate and accrue the interest expense for asset retirement obligations (February 2016)</span></span>
+- <span data-ttu-id="f5528-291">Dostosowywanie oszacowania zobowiązania do wycofania składników aktywów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-291">Adjust an asset retirement obligation estimate (February 2016)</span></span>
+- <span data-ttu-id="f5528-292">Włączanie formatu pliku płatności JBA (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-292">Enable JBA payment file format (November 2016)</span></span>
+- <span data-ttu-id="f5528-293">Generowanie pliku płatności EFT w formacie JBA (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-293">Generate an EFT payment file with JBA format (February 2016)</span></span>
+- <span data-ttu-id="f5528-294">Importowanie płatności odbiorcy z pliku w formacie JBA (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-294">Import a customer payment with JBA file format (February 2016)</span></span>
+- <span data-ttu-id="f5528-295">Wprowadzanie harmonogramu wskaźnika amortyzacji i kojarzenie z profilem amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-295">Enter a depreciation rate schedule and associate to a depreciation profile (February 2016)</span></span>
+- <span data-ttu-id="f5528-296">Konfigurowanie profilu amortyzacji i profilu księgowania dla amortyzacji dodatkowej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-296">Configure depreciation profile and posting profile for additional depreciation (February 2016)</span></span>
+- <span data-ttu-id="f5528-297">Tworzenie środka trwałego z dodatkową amortyzacją (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-297">Create a fixed asset with additional depreciation (February 2016)</span></span>
+- <span data-ttu-id="f5528-298">Proponowanie dodatkowej amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-298">Propose additional depreciation (February 2016)</span></span>
+- <span data-ttu-id="f5528-299">Konfigurowanie profilu amortyzacji i profilu księgowania dla amortyzacji specjalnej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-299">Configure depreciation profile and posting profile for special depreciation (February 2016)</span></span>
+- <span data-ttu-id="f5528-300">Tworzenie środka trwałego z profilem amortyzacji specjalnej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-300">Create a fixed asset with special depreciation profile (February 2016)</span></span>
+- <span data-ttu-id="f5528-301">Proponowanie amortyzacji specjalnej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-301">Propose special depreciation (February 2016)</span></span>
+- <span data-ttu-id="f5528-302">Tworzenie środków trwałych o amortyzacji ryczałtowej metodą równego podziału (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-302">Create lump-sum depreciation assets using equally-divided method (February 2016)</span></span>
+- <span data-ttu-id="f5528-303">Zmienianie metody amortyzacji w trakcie użytkowania środka trwałego dla jednego składnika aktywów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-303">Change the depreciation method during the asset life for one asset (February 2016)</span></span>
+- <span data-ttu-id="f5528-304">Zmienianie metody amortyzacji w księdze w trakcie użytkowania środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-304">Change the depreciation method during the asset life for book (February 2016)</span></span>
+- <span data-ttu-id="f5528-305">Tworzenie i potwierdzanie skonsolidowanej faktury dla odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-305">Create and confirm a customer consolidated invoice (February 2016)</span></span>
+- <span data-ttu-id="f5528-306">JP-00011 Ponowne otwieranie i edycja skonsolidowanej faktury dla odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-306">JP-00011 Reopen and edit a customer consolidated invoice (February 2016)</span></span>
+- <span data-ttu-id="f5528-307">MY-00011 02 Generowanie noty debetowej odbiorcy dla sprzedaży projektowych (tylko listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-307">MY-00011 02 Generate customer debit for project sales (November 2016 only)</span></span>
+- <span data-ttu-id="f5528-308">Zmiana konwencji amortyzacji dla wielu środków trwałych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-308">Change depreciation conventions for multiple fixed assets (February 2016)</span></span>
+- <span data-ttu-id="f5528-309">Rozbicie środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-309">Split a fixed asset (February 2016)</span></span>
+- <span data-ttu-id="f5528-310">Tworzenie i nabywanie środków trwałych z modułu Rozrachunki z dostawcami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-310">Create and acquire assets from accounts payable (February 2016)</span></span>
+- <span data-ttu-id="f5528-311">Proponowanie nabycia środka trwałego (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-311">Propose fixed asset acquisitions (November 2016)</span></span>
+- <span data-ttu-id="f5528-312">Tworzenie propozycji amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-312">Create depreciation proposal (February 2016)</span></span>
+- <span data-ttu-id="f5528-313">Likwidacja środka trwałego z wykorzystaniem faktury niezależnej (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-313">Dispose of a fixed asset using a free text invoice (November 2016)</span></span>
+- <span data-ttu-id="f5528-314">Przenoszenie środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-314">Transfer a fixed asset (February 2016)</span></span>
+- <span data-ttu-id="f5528-315">Konfigurowanie profili księgowania środków trwałych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-315">Set up fixed asset posting profiles (February 2016)</span></span>
+- <span data-ttu-id="f5528-316">Konfigurowanie i tworzenie profili amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-316">Set up and create depreciation profiles (February 2016)</span></span>
+- <span data-ttu-id="f5528-317">Konfigurowanie ksiąg amortyzacji (tylko maj 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-317">Set up depreciation books (May 2016 only)</span></span>
+- <span data-ttu-id="f5528-318">Konfigurowanie podwyższenia amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-318">Set up bonus depreciation (February 2016)</span></span>
+- <span data-ttu-id="f5528-319">Wprowadzanie środka komplementarnego dla środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-319">Enter an addition to a fixed asset (February 2016)</span></span>
+- <span data-ttu-id="f5528-320">Zmienianie klasyfikacji środków trwałych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-320">Reclassify fixed assets (February 2016)</span></span>
+- <span data-ttu-id="f5528-321">Konfigurowanie modeli ewidencji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-321">Set up value models (February 2016)</span></span>
+- <span data-ttu-id="f5528-322">Ustawianie grup środków trwałych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-322">Set up fixed asset groups (February 2016)</span></span>
+- <span data-ttu-id="f5528-323">GB-00002 Tworzenie zamówienia zakupu zawierającego towary podlegające zwrotowi podatku VAT (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-323">GB-00002 Create a purchase order that includes items subject to reverse charge VAT (February 2016)</span></span>
+- <span data-ttu-id="f5528-324">GB-00002 Tworzenie zamówienia sprzedaży zawierającego towary podlegające zwrotowi podatku VAT (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-324">GB-00002 Create a sales order that includes items subject to reverse charge VAT (February 2016)</span></span>
+- <span data-ttu-id="f5528-325">MY-00006 01 Konfigurowanie klauzul zwolnienia z podatku GST (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-325">MY-00006 01 Set up GST relief clauses (February 2016)</span></span>
+- <span data-ttu-id="f5528-326">MY-00006 02 Drukowanie faktur dla odbiorcy z klauzulą zwolnienia z podatku PTU (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-326">MY-00006 02 Print GST customer invoices with a relief clause (February 2016)</span></span>
+- <span data-ttu-id="f5528-327">Sprawdzanie dostępności zapasów w magazynie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-327">Check the availability of stock (February 2016)</span></span>
+- <span data-ttu-id="f5528-328">Konfigurowanie zleceń kontroli jakości (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-328">Set up quality orders (February 2016)</span></span>
+- <span data-ttu-id="f5528-329">Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą puli faktur (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-329">Key invoice data into the AP system using invoice pool (February 2016)</span></span>
+- <span data-ttu-id="f5528-330">Konfigurowanie sprawdzania uzgadniania faktur rozrachunków z dostawcami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-330">Set up accounts payable invoice matching validation (February 2016)</span></span>
+- <span data-ttu-id="f5528-331">Przetwarzanie arkusza alokacji księgi (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-331">Process ledger allocation journal (February 2016)</span></span>
+- <span data-ttu-id="f5528-332">Obsługa domyślnych szablonów wymiaru finansowego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-332">Maintain financial dimension default templates (February 2016)</span></span>
+- <span data-ttu-id="f5528-333">Tworzenie wpisu w arkuszu za pomocą szablonu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-333">Create a journal entry using a template (February 2016)</span></span>
+- <span data-ttu-id="f5528-334">Tworzenie i sprawdzanie poprawności arkuszy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-334">Create and validate journals (February 2016)</span></span>
+- <span data-ttu-id="f5528-335">Zwalnianie zlecenia produkcyjnego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-335">Release a production order (February 2016)</span></span>
+- <span data-ttu-id="f5528-336">Tworzenie grup konsolidacji i dodatkowych kont konsolidacyjnych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-336">Create consolidation groups and additional consolidation accounts (November 2016)</span></span>
+- <span data-ttu-id="f5528-337">Konfigurowanie kategorii konta głównego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-337">Set up main account categories (February 2016)</span></span>
+- <span data-ttu-id="f5528-338">Konfigurowanie aliasu konta księgowego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-338">Set up a ledger account alias (February 2016)</span></span>
+- <span data-ttu-id="f5528-339">Tworzenie i przypisywanie struktur reguł zaawansowanych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-339">Create and assign advanced rule structures (February 2016)</span></span>
+- <span data-ttu-id="f5528-340">Wyświetlanie wpisów w arkuszu lub transakcji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-340">View journal entries or transactions (February 2016)</span></span>
+- <span data-ttu-id="f5528-341">Tworzenie transakcji naliczeń finansowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-341">Create ledger accrual transactions (February 2016)</span></span>
+- <span data-ttu-id="f5528-342">Definiowanie warunków płatności dla odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-342">Establish customer payment terms (February 2016)</span></span>
+- <span data-ttu-id="f5528-343">Definiowanie metody płatności odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-343">Establish customer method of payment (February 2016)</span></span>
+- <span data-ttu-id="f5528-344">Definiowanie opłat związanych z płatnościami dla odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-344">Establish customer payment fees (February 2016)</span></span>
+- <span data-ttu-id="f5528-345">Deponowanie płatności od odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-345">Deposit customer payments (February 2016)</span></span>
+- <span data-ttu-id="f5528-346">Definiowanie warunków płatności dostawcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-346">Define vendor payment terms (February 2016)</span></span>
+- <span data-ttu-id="f5528-347">Definiowanie opłat związanych z płatnościami dostawcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-347">Define vendor payment fees (February 2016)</span></span>
+- <span data-ttu-id="f5528-348">Obsługa transakcji zobowiązania do wycofania składników aktywów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-348">Inquire on asset retirement obligation-related transactions (February 2016)</span></span>
+- <span data-ttu-id="f5528-349">Definiowanie procesów inwentaryzacji zapasów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-349">Define inventory counting processes (February 2016)</span></span>
+- <span data-ttu-id="f5528-350">Przetwarzanie odsetek (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-350">Process interest (February 2016)</span></span>
+- <span data-ttu-id="f5528-351">Tworzenie kolejności ponagleń (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-351">Create a collection letter sequence (February 2016)</span></span>
+- <span data-ttu-id="f5528-352">Tworzenie szablonu faktury niezależnej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-352">Create a free text invoice template (February 2016)</span></span>
+- <span data-ttu-id="f5528-353">Generowanie i księgowanie cyklicznych faktur niezależnych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-353">Generate and post recurring free text invoices (February 2016)</span></span>
+- <span data-ttu-id="f5528-354">Tworzenie pozwolenia na polecenie zapłaty dla odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-354">Create a direct debit mandate for a customer (February 2016)</span></span>
+- <span data-ttu-id="f5528-355">Tworzenie arkusza odpisów dla odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-355">Create a write off journal for a customer (February 2016)</span></span>
+- <span data-ttu-id="f5528-356">Przypisywanie szablonu faktury niezależnej do odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-356">Assign a free text invoice template to a customer (February 2016)</span></span>
+- <span data-ttu-id="f5528-357">JP-00011 Konfigurowanie faktur skonsolidowanych do rozrachunków z odbiorcami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-357">JP-00011 Set up consolidated invoices for accounts receivable (February 2016)</span></span>
+- <span data-ttu-id="f5528-358">JP-00011 Konfigurowanie odbiorcy i zamówienia sprzedaży jako celu faktury skonsolidowanej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-358">JP-00011 Set up a customer and sales order to be target of consolidated invoice (February 2016)</span></span>
+- <span data-ttu-id="f5528-359">JP-00011 Rozliczanie skonsolidowanych faktur dla odbiorcy przy użyciu arkusza płatności (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-359">JP-00011 Settle customer consolidated invoices by using a payment journal (February 2016)</span></span>
+- <span data-ttu-id="f5528-360">JP-00011 Rozliczanie skonsolidowanych faktur dla odbiorcy przy użyciu transakcji rozliczania (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-360">JP-00011 Settle customer consolidated invoices by using settle transactions (February 2016)</span></span>
+- <span data-ttu-id="f5528-361">Rejestrowanie pozycji dla podstawowej pozycji magazynowej za pomocą arkusza przyjęć towarów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-361">Register items for a basic warehousing enabled item using an item arrival journal (February 2016)</span></span>
+- <span data-ttu-id="f5528-362">Importowanie konfiguracji polecenia przelewu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-362">Import ISO20022 credit transfer configuration (November 2016)</span></span>
+- <span data-ttu-id="f5528-363">Konfigurowanie metody płatności przelewu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-363">Set up method of payment for ISO20022 credit transfer (November 2016)</span></span>
+- <span data-ttu-id="f5528-364">Konfigurowanie dostawców i kont bankowych dostawców dla poleceń przelewu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-364">Set up vendors and vendor bank accounts for ISO20022 credit transfers (November 2016)</span></span>
+- <span data-ttu-id="f5528-365">Konfigurowanie kont bankowych firmy dla poleceń przelewu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-365">Set up company bank accounts for ISO20022 credit transfers (November 2016)</span></span>
+- <span data-ttu-id="f5528-366">Tworzenie i eksport płatności dla dostawcy przy użyciu formatu płatności ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-366">Create and export vendor payments using ISO20022 payment format (November 2016)</span></span>
+- <span data-ttu-id="f5528-367">EUR-00012 Odbiór świadectw wywozowych UE (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-367">EUR-00012 Receive an EU entry certificate (February 2016)</span></span>
+- <span data-ttu-id="f5528-368">EUR-00012 Wydawanie świadectw wywozowych UE (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-368">EUR-00012 Issue an EU entry certificate (February 2016)</span></span>
+- <span data-ttu-id="f5528-369">Importowanie konfiguracji polecenia zapłaty ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-369">Import ISO20022 direct debit configuration (November 2016)</span></span>
+- <span data-ttu-id="f5528-370">Konfigurowanie metody płatności polecenia zapłaty ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-370">Set up method of payment for ISO20022 direct debit (February 2016)</span></span>
+- <span data-ttu-id="f5528-371">Konfigurowanie kont bankowych firmy dla poleceń zapłaty ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-371">Set up company bank accounts for ISO20022 direct debits (November 2016)</span></span>
+- <span data-ttu-id="f5528-372">Konfigurowanie odbiorców i kont bankowych odbiorców dla poleceń zapłaty ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-372">Set up customers and customer bank accounts for ISO20022 direct debits (November 2016)</span></span>
+- <span data-ttu-id="f5528-373">Konfigurowanie deklaracji faktury od dostawcy (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-373">Set up an invoice declaration for vendors (February 2016)</span></span>
+- <span data-ttu-id="f5528-374">Tworzenie konta odbiorcy i dołączanie kategorii deklaracji na fakturze (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-374">Create a vendor account and attach the invoice declaration (February 2016)</span></span>
+- <span data-ttu-id="f5528-375">Aktualizowanie deklaracji faktury od dostawcy i generowanie raportu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-375">Update vendor invoice declarations and generate the report (February 2016)</span></span>
+- <span data-ttu-id="f5528-376">Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego na potrzeby raportowania elektronicznego (ER) (tylko luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-376">Create a configuration provider and mark it as active for electronic reporting (ER) (February 2016 only)</span></span>
+- <span data-ttu-id="f5528-377">Planowanie zadań w systemie kanban (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-377">Schedule kanban jobs (February 2016)</span></span>
+- <span data-ttu-id="f5528-378">Usuwanie zadania systemu Kanban z harmonogramu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-378">Remove a kanban job from the schedule (February 2016)</span></span>
+- <span data-ttu-id="f5528-379">Rejestrowanie pracowników w systemie stałych wynagrodzeń (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-379">Enroll employees in a fixed compensation plan (February 2016)</span></span>
+- <span data-ttu-id="f5528-380">Rejestrowanie pracowników w systemie wynagrodzeń o zmiennej wysokości (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-380">Enroll employees in a variable compensation plan (February 2016)</span></span>
+- <span data-ttu-id="f5528-381">Tworzenie nowego projektu zatrudnienia grupowego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-381">Create a mass hire project (February 2016)</span></span>
+- <span data-ttu-id="f5528-382">Wypożyczanie przedmiotów pracownikom (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-382">Loan items to a worker (February 2016)</span></span>
+- <span data-ttu-id="f5528-383">Wprowadzanie informacji o pracowniku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-383">Enter worker information (February 2016)</span></span>
+- <span data-ttu-id="f5528-384">Zatrudnianie kandydata przez rekrutację (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-384">Hire a candidate through recruiting (February 2016)</span></span>
+- <span data-ttu-id="f5528-385">Tworzenie wielu przedmiotów pożyczki (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-385">Create loan items (February 2016)</span></span>
+- <span data-ttu-id="f5528-386">Zarządzanie datami ważności świadczenia (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-386">Manage benefit expiration dates (February 2016)</span></span>
+- <span data-ttu-id="f5528-387">Definiowanie zasad i reguł uprawnień do świadczenia (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-387">Define benefit eligibility rules and policies (February 2016)</span></span>
+- <span data-ttu-id="f5528-388">Wprowadzanie danych kandydata i aplikacji ręcznie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-388">Enter applicant and application data manually (February 2016)</span></span>
+- <span data-ttu-id="f5528-389">Zatwierdzanie rekordów skrzynki odbiorczej zgłoszeń (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-389">Approve application inbox records (February 2016)</span></span>
+- <span data-ttu-id="f5528-390">Zarządzanie szablonami wiadomości e-mail (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-390">Manage email templates (February 2016)</span></span>
+- <span data-ttu-id="f5528-391">Analizowanie wyników kwestionariusza (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-391">Analyze questionnaire results (February 2016)</span></span>
+- <span data-ttu-id="f5528-392">Tworzenie pytania otwartego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-392">Create an open-ended question (February 2016)</span></span>
+- <span data-ttu-id="f5528-393">Tworzenie i obsługa blokowania zapasów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-393">Create and maintain inventory blocking (February 2016)</span></span>
+- <span data-ttu-id="f5528-394">Sprawdzanie jakości towarów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-394">Inspect the quality of goods (February 2016)</span></span>
+- <span data-ttu-id="f5528-395">Tworzenie prognozy bazowej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-395">Create a baseline forecast (February 2016)</span></span>
+- <span data-ttu-id="f5528-396">Ręczne modyfikowanie prognozy popytu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-396">Modify a demand forecast manually (February 2016)</span></span>
+- <span data-ttu-id="f5528-397">Przygotowywanie zadania procesu w systemie Kanban, gdy materiały nie są dostępne dla komórki roboczej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-397">Prepare a process kanban job when materials are not available for the work cell (February 2016)</span></span>
+- <span data-ttu-id="f5528-398">Przygotowywanie zadania procesu w systemie Kanban, gdy materiały są dostępne dla komórki roboczej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-398">Prepare a process kanban job when materials are available for the work cell (February 2016)</span></span>
+- <span data-ttu-id="f5528-399">Dodawanie zasady obliczania liczby kart Kanban do reguły Kanban (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-399">Add a kanban quantity calculation policy to a kanban rule (February 2016)</span></span>
+- <span data-ttu-id="f5528-400">Tworzenie planu materiałów dla produktów towarzyszących</span><span class="sxs-lookup"><span data-stu-id="f5528-400">Create a material plan for co-products</span></span>
+- <span data-ttu-id="f5528-401">MX-00010 Wpisywanie identyfikatorów podatkowych dla firm (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-401">MX-00010 Enter tax registration IDs for legal entities (February 2016)</span></span>
+- <span data-ttu-id="f5528-402">AU-00006 Dodawanie pól i generowanie deklaracji BAS (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-402">AU-00006 Add report boxes and generate the BAS (February 2016)</span></span>
+- <span data-ttu-id="f5528-403">AU-00006 Konfigurowanie kodów przyczyn dla deklaracji BAS (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-403">AU-00006 Set up reason codes for the BAS (February 2016)</span></span>
+- <span data-ttu-id="f5528-404">Księgowanie faktury projektu z dokumentem płatności (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-404">Post a project invoice with a payment slip (February 2016)</span></span>
+- <span data-ttu-id="f5528-405">Księgowanie faktury niezależnej z dokumentem płatności (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-405">Post a free text invoice with a payment slip (February 2016)</span></span>
+- <span data-ttu-id="f5528-406">Księgowanie faktury sprzedaży z dokumentem płatności (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-406">Post a sales invoice with a payment slip (November 2016)</span></span>
+- <span data-ttu-id="f5528-407">MX-00020 Konfigurowanie planu kont dla firmy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-407">MX-00020 Set up the chart of accounts for a legal entity (February 2016)</span></span>
+- <span data-ttu-id="f5528-408">Konfigurowanie funduszu w podmiocie z sektora publicznego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-408">Set up a fund in the public sector (February 2016)</span></span>
+- <span data-ttu-id="f5528-409">Konfigurowanie pochodnej hierarchii finansowej w sektorze publicznym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-409">Set up a derived financial hierarchy in the public sector (February 2016)</span></span>
+- <span data-ttu-id="f5528-410">Tworzenie wpisów księgowych dotyczących zaliczek w sektorze publicznym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-410">Create an advanced ledger entry in the public sector (February 2016)</span></span>
+- <span data-ttu-id="f5528-411">Tworzenie okładki i stron podpisu dla raportu płatności dla sektora publicznego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-411">Create cover and signature pages for a payments report for the public sector (February 2016)</span></span>
+- <span data-ttu-id="f5528-412">Tworzenie jednorazowego dostawcy i faktury w sektorze publicznym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-412">Create a one-time vendor and invoice in the public sector (February 2016)</span></span>
+- <span data-ttu-id="f5528-413">Importowanie i tworzenie wielu jednorazowych dostawców i faktur w sektorze publicznym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-413">Import and create multiple one-time vendors and invoices in the public sector (February 2016)</span></span>
+- <span data-ttu-id="f5528-414">Konfigurowanie klasyfikacji umów zakupu w sektorze publicznym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-414">Set up purchase agreement classifications in the public sector (February 2016)</span></span>
+- <span data-ttu-id="f5528-415">Tworzenie wstępnego budżetu dla sektora publicznego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-415">Create a preliminary budget for public sector (February 2016)</span></span>
+- <span data-ttu-id="f5528-416">Tworzenie pierwotnego budżetu i odwracanie wpisów budżetu wstępnego dla sektora publicznego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-416">Create an original budget and reverse preliminary budget entries in the public sector (February 2016)</span></span>
+- <span data-ttu-id="f5528-417">Konfigurowanie danych głównych dla włączenia możliwych do odliczenia wydatków dla wielu warstw księgowania (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-417">Set up master data for inclusion of deductible expenses for multiple posting layers (February 2016)</span></span>
+- <span data-ttu-id="f5528-418">Obsługa plików danych głównych środków trwałych dla ujemnych wydatków (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-418">Maintain fixed asset master data files for deductible expenses (February 2016)</span></span>
+- <span data-ttu-id="f5528-419">Okresowe rozliczenia nadpłat i niedopłat amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-419">Periodic settlement of over and under depreciation (February 2016)</span></span>
+- <span data-ttu-id="f5528-420">Informacje o ujemnych wydatkach (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-420">Inquire on deductible expenses (February 2016)</span></span>
+- <span data-ttu-id="f5528-421">JP-00004 Konfigurowanie raportu podatku konsumpcyjnego (lutego 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-421">JP-00004 Set up the consumption tax report (February 2016)</span></span>
+- <span data-ttu-id="f5528-422">JP-00004 Generowanie raportu podatku konsumpcyjnego (lutego 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-422">JP-00004 Generate the consumption tax report (February 2016)</span></span>
+- <span data-ttu-id="f5528-423">EUR-00011 Konfigurowanie raportowania listy sprzedaży do UE (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-423">EUR-00011 Set up EU sales list reporting (February 2016)</span></span>
+- <span data-ttu-id="f5528-424">GB-00009 Konfigurowanie parametrów faktury korygującej dla rabatu za natychmiastową płatność (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-424">GB-00009 Set up parameters for a credit note for prompt payment discount (February 2016)</span></span>
+- <span data-ttu-id="f5528-425">GB-00009 Tworzenie faktury korygującej od rabatu rozliczenia (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-425">GB-00009 Create a credit on the settlement discount (February 2016)</span></span>
+- <span data-ttu-id="f5528-426">MX-00020 Określanie identyfikatora rejestracyjnego RFC dla kont bankowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-426">MX-00020 Specify the RFC registration ID for bank accounts (February 2016)</span></span>
+- <span data-ttu-id="f5528-427">Tworzenie reguł Kanban ze stałą ilością (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-427">Create fixed quantity kanban rules (February 2016)</span></span>
+- <span data-ttu-id="f5528-428">Tworzenie reguły Kanban dla zdarzenia sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-428">Create a sales event kanban rule (February 2016)</span></span>
+- <span data-ttu-id="f5528-429">Tworzenie nowych reguł Kanban przez duplikowanie istniejących reguł Kanban (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-429">Create new kanban rules by duplicating existing kanban rules (February 2016)</span></span>
+- <span data-ttu-id="f5528-430">Tworzenie działań procesu produkcji lean manufacturing (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-430">Create process activities for lean manufacturing (February 2016)</span></span>
+- <span data-ttu-id="f5528-431">Tworzenie działań przeniesienia produkcji lean manufacturing (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-431">Create transfer activities for lean manufacturing (February 2016)</span></span>
+- <span data-ttu-id="f5528-432">Sprawdzanie przepływu i wersji produkcji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-432">Validate a production flow and version (February 2016)</span></span>
+- <span data-ttu-id="f5528-433">Tworzenie relacji działań: Zdarzenie następujące (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-433">Create activity relation: Successor (February 2016)</span></span>
+- <span data-ttu-id="f5528-434">Obliczanie amortyzacji środka trwałego we wszystkich firmach</span><span class="sxs-lookup"><span data-stu-id="f5528-434">Calculate fixed asset depreciation across legal entities</span></span>
+- <span data-ttu-id="f5528-435">Przenoszenie materiału z zadań Kanban (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f5528-435">Transfer material with kanban jobs (February 2016)</span></span>
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-131">Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-131">Identify and deploy candidate selection tools (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-132">Konfigurowanie standardowych kosztów robocizny i wydatków (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-132">Configure standard costs for labor and expenses (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-133">Używanie arkusza zapasu bezpieczeństwa do aktualizowania minimalnego zapotrzebowania (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-133">Use the safety stock journal to update minimum coverage (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-134">Definiowanie możliwości zasobu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-134">Define resource capabilities (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-135">Definiowanie odrębnych grup zasobów produkcyjnych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-135">Define discrete manufacturing resource group (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-136">Współpraca z odbiorcami w ramach wewnętrznego łańcucha dostaw (maj 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-136">Collaborate with internal supply chain customers (May 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-137">Wyświetlanie wychodzących danych o zaplanowanym popycie międzyfirmowym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-137">View outbound planned intercompany demand (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-138">Tworzenie nowego układu magazynu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-138">Create a new warehouse layout (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-139">Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-139">Enter and compare RFQ bids and award contracts (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-140">Tworzenie zapytania ofertowego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-140">Create a request for quotation (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-141">Porównywanie aktywnych, szacowanych i zrealizowanych kosztów w związku ze zleceniem produkcyjnym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-141">Compare active, estimated, and realized costs on a production order (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-142">Wyświetlanie aktualnego stanu PWT na zleceniu produkcyjnym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-142">View current WIP status on a production order (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-143">Konfigurowanie fakturowania projektów międzyfirmowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-143">Configure intercompany project invoicing (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-144">Tworzenie faktur zamówienia sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-144">Create sales order invoices (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-145">Tworzenie kanałów online i definiowanie atrybutów kanału (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-145">Create online channels and define channel attributes (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-146">Rejestrowanie przyjęcia towarów w zamówieniu zakupu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-146">Record the receipt of goods on the purchase order (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-147">Tworzenie zamówienia zakupu w ramach projektu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-147">Create project purchase order (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-148">Konfigurowanie informacji o zasobach projektu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-148">Set up project resource information (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-149">Przesyłanie i zatwierdzanie zmian budżetu projektu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-149">Submit and approve project budget revisions (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-150">Przesyłanie i zatwierdzanie budżetu projektu (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-150">Submit and approve project budgets (November 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-151">Włączanie drukowania etykiet numeru identyfikacyjnego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-151">Enable license plate label printing (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-152">Inicjowanie poziomów zapasów w magazynie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-152">Initialize stock levels in the warehouse (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-153">Tworzenie umowy instrumentu bankowego na akredytywę (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-153">Create a bank facility agreement for a letter of credit (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-154">Włączanie procesu listy płac obliczanej na podstawie czasu i frekwencji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-154">Enable the payroll process for time and attendance (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-155">Zatwierdzanie i księgowanie kart czasu pracy projektu</span><span class="sxs-lookup"><span data-stu-id="33d7f-155">Approve and post project timesheets</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-156">Tworzenie struktur kont (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-156">Create account structures (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-157">Tworzenie konta głównego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-157">Create a main account (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-158">Księgowanie arkuszy okresowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-158">Post periodic journals (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-159">Tworzenie schematów naliczania (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-159">Create accrual schemes (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-160">Zamykanie roku obrachunkowego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-160">Close the fiscal year (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-161">Tworzenie grup uprawnień dla punktu sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-161">Create POS permission groups (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-162">Przeładunek kompletacyjny z magazynu przyjmującego do sklepów (luty 2016 r.)</span><span class="sxs-lookup"><span data-stu-id="33d7f-162">Cross-dock products from receiving warehouse to stores (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-163">Dystrybucja produktów z centrum dystrybucji do sklepu za pomocą dystrybucji na zamówienie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-163">Push products from distribution center to store using buyer's push (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-164">Konfigurowanie reguł i parametrów dla przeładunku komplementacyjnego i dystrybucji od kupującego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-164">Set up rules and parameters for cross docking and buyer's push (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-165">Korekty ceny sieci sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-165">Retail price adjustments (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-166">Cena podstawowa i umowy handlowe (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-166">Base price and trade agreements (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-167">Reguły wyceny kategorii do tworzenia umów handlowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-167">Category pricing rules to create trade agreements (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-168">Zwalnianie produktu / produktu głównego do firm (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-168">Release a product/product master to legal entities (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-169">Tworzenie produktu głównego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-169">Create a product master (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-170">Tworzenie produktu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-170">Create a product (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-171">Definiowanie punktów lojalnościowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-171">Define loyalty reward points (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-172">Projektowanie relacji między jednostkami organizacyjnymi (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-172">Design the relationships between organizational units (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-173">ES-00016 Księgowanie fakturowania po stronie kredytowej</span><span class="sxs-lookup"><span data-stu-id="33d7f-173">ES-00016 Credit invoicing</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-174">EE-00004 Odwołanie do oryginalnej faktury (luty 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-174">EE-00004 Original invoice reference (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-175">Definiowanie inwentaryzacji ciągłej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-175">Define cycle counting (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-176">Korygowanie poziomów zapasów w magazynie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-176">Adjust stock levels in the warehouse (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-177">Opracowywanie planu dziedziczenia (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-177">Develop succession plan (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-178">Opracowywanie i otwieranie zapotrzebowania na stanowisko (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-178">Develop and open job requisition (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-179">Opracowywanie struktury i planu pensji/wynagrodzeń (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-179">Develop salary/compensation structure and plans (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-180">Dostarczanie programu świadczeń dla pracowników (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-180">Deliver employee benefits program (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-181">Zarządzanie nieobecnościami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-181">Manage leave of absence (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-182">Generowanie planu z ograniczeniami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-182">Generate a constrained plan (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-183">Tworzenie zasobu operacyjnego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-183">Create an operations resource (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-184">NL-00010 Elektroniczne deklaracje podatkowe (EVAT) (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-184">NL-00010 Electronic tax declarations (EVAT) (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-185">JP-00027 Formularz 26 dla deklaracji podatku podlegającego amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-185">JP-00027 Form 26 for depreciable tax declaration (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-186">DE-00003 Elektroniczne przesyłanie deklaracji VAT (ELSTER) (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-186">DE-00003 Electronic transmission of VAT declaration (ELSTER) (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-187">Definiowanie zasad inspekcji dla dokumentów źródłowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-187">Define audit policies for source documents (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-188">Tworzenie planu dla oddziału (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-188">Create a plan for a site (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-189">Tworzenie harmonogramu dla oddziału (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-189">Create a schedule for a site (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-190">Badanie lub rozwiązywanie wyjątków (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-190">Research or resolve exceptions (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-191">Wykonywanie audytu faktur i najważniejszych danych w module rozrachunków z dostawcami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-191">Audit invoices and key data in accounts payable (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-192">FR-00018 Dzienne obliczanie odsetek dla opóźnionej płatności i ryczałtu na fakturze i ponagleniu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-192">FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-193">EE-00015 Narzędzie do generowania odwołania do płatności (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-193">EE-00015 Payment reference generation tool (November 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-194">MX-00010 E-fakturowanie CFDI (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-194">MX-00010 E-invoicing CFDI (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-195">MY-00005 Drukowanie faktur podatku PTU (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-195">MY-00005 Print GST tax invoices (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-196">MX-00007 Identyfikatory rejestracji odbiorcy i inne informacje (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-196">MX-00007 Customer registration IDs and other information (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-197">NO-00002 Płatność odbiorcy na podstawie identyfikatora płatności (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-197">NO-00002 Customer payment based on payment ID (November 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-198">CN-00010 Hierarchia planu kont (Chiny) (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-198">CN-00010 Chinese hierarchy of chart of accounts (November 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-199">JP-00005 Strona przyjęcia w formularzu konta T (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-199">JP-00005 Input journal in T account page (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-200">HU-00001 Obliczanie kursu wymiany (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-200">HU-00001 Exchange rate calculation (November 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-201">CN-00004 Alokacja amortyzacji środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-201">CN-00004 Fixed asset depreciation allocation (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-202">DE-00002 Korekty amortyzacji dla dodatkowych nabyć w drugim roku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-202">DE-00002 Depreciate adjustments for additional acquisitions in the second year (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-203">FR-00002 Wyciągi z konta odbiorcy i dostawcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-203">FR-00002 Customer and vendor account statements (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-204">NL-00003 Integracja Semansys XBRL (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-204">NL-00003 Semansys XBRL integration (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-205">BE-00011 BLWI (saldo płatności)</span><span class="sxs-lookup"><span data-stu-id="33d7f-205">BE-00011 BLWI (Payment balance)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-206">MX-00020 Generowanie raportu rachunku księgi elektronicznej w wersji 1.1 (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-206">MX-00020 Produce electronic ledger accounting report version 1.1 (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-207">MX-00008: Identyfikatory rejestracji dostawcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-207">MX-00008: Vendor registration IDs (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-208">IT-00002 Modello 770</span><span class="sxs-lookup"><span data-stu-id="33d7f-208">IT-00002 Modello 770</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-209">MY-00004 Zarządzanie debetem i kredytem dostawcy w zakresie podatku GST (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-209">MY-00004 Manage vendor debit and credit for GST (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-210">MY-00007 Faktury rozliczane samodzielnie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-210">MY-00007 Self-billed invoices (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-211">CN-00016 Dziennik operacji użytkownika według reguły pracy (Chiny) (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-211">CN-00016 User operation log by China working rule (November 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-212">BR-00057 Podatek w ofertach sprzedaży (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-212">BR-00057 Tax in sales quotations (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-213">BR-00031 Obliczanie podatku od ofert zakupu (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-213">BR-00031 Calculate tax on purchase quotations (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-214">BR-00080 Zarządzanie tekstem dokumentów fiskalnych w dokumentach zaopatrzenia (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-214">BR-00080 Manage fiscal document text in procurement documents (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-215">BR-00038 Wystawianie dokumentów fiskalnych dla odbiorcy (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-215">BR-00038 Issue customer fiscal documents (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-216">BR-00084 Wystawianie dokumentów fiskalnych dla odbiorcy (usługi) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-216">BR-00084 Issue customer fiscal documents (services) (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-217">BR-00085 Wystawianie dokumentów fiskalnych dla odbiorcy (środki trwałe) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-217">BR-00085 Issue customer fiscal documents (fixed assets) (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-218">BR-00086 Wystawianie dokumentów fiskalnych dla odbiorcy (projekt) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-218">BR-00086 Issue customer fiscal documents (project) (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-219">BR-00087 Wystawianie dokumentów fiskalnych dla odbiorcy (użytkownicy końcowi) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-219">BR-00087 Issue customer fiscal documents (for end users) (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-220">BR-00088 Wystawianie dokumentów fiskalnych dla odbiorców (SUFRAMA) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-220">BR-00088 Issue customer fiscal documents (for SUFRAMA customers) (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-221">BR-00050 Opłaty dodatkowe na fakturach niezależnych (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-221">BR-00050 Miscellaneous charge on free text invoices (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-222">BR-00053 NF-e 3.10 (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-222">BR-00053 NF-e 3.10 (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-223">BR-00058 Automatyczne przekazywanie dokumentów fiskalnych NF-e (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-223">BR-00058 Automatic transmission of NF-e fiscal documents (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-224">BR-00042 Potrącone zaliczki na podatek dla płatności odbiorcy (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-224">BR-00042 Withholding taxes on customers payments (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-225">BR-10016 Operacje niefiskalne (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-225">BR-10016 Non-fiscal operations (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-226">BR-00076 Noty uznaniowe projektu (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-226">BR-00076 Project debit notes (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-227">BR-00067 Zarządzanie płatnościami elektronicznymi dla płatności dostawców (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-227">BR-00067 Electronic payment management for vendor payments (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-228">BR-00061 Potrącone zaliczki na podatek dla płatności dostawców (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-228">BR-00061 Withholding taxes on vendors payments (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-229">BR-00024 Odbiór dokumentu fiskalnego dostawcy (produkty) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-229">BR-00024 Receive vendor fiscal document (products) (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-230">BR-00082 Odbiór dokumentu fiskalnego dostawcy (środki trwałe – długoterminowy zwrot podatku ICMS) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-230">BR-00082 Receive vendor fiscal document (fixed assets - ICMS long term recoverable) (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-231">BR-00014 Przyjęcie dokumentu fiskalnego dostawcy (środki trwałe – długoterminowy zwrot podatków PIS i COFINS) (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-231">BR-00014 Receive vendor fiscal document (fixed assets - PIS and COFINS long term recoverable) (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-232">BR-00033 Wystawianie dokumentu fiskalnego dla dostawców (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-232">BR-00033 Issue fiscal document for vendors (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-233">BR-00002 Atrybuty podatku od domicylu podatkowego (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-233">BR-00002 Fiscal establishment tax attributes (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-234">BR-00009 Potrącone zaliczki na podatek (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-234">BR-00009 Withholding taxes (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-235">BR-10005 Wymiar podatku ISS (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-235">BR-10005 Tax assessment for ISS tax (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-236">BR-00071 Wystawianie dokumentów fiskalnych za przelew podatku ICMS (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-236">BR-00071 Issue ICMS tax credit transfer fiscal documents (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-237">BR-00072 Wystawianie dokumentów fiskalnych za kwotę podatku ICMS (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-237">BR-00072 Issue ICMS tax credit fiscal documents (July 2017)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-238">Wprowadzanie umów sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-238">Enter sales agreements (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-239">Zarządzanie wstrzymaniami zamówień (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-239">Manage order holds (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-240">Tworzenie zamówienia sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-240">Create sales orders (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-241">Tworzenie harmonogramu dostaw (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-241">Create delivery schedule (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-242">BR-00041 Dokumenty dostawy (lipiec 2017)</span><span class="sxs-lookup"><span data-stu-id="33d7f-242">BR-00041 Delivery slips (July 2017)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-243">Definiowanie wymiarów finansowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-243">Define financial dimensions (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-244">Tworzenie i przypisywanie dokumentu wpisu redukcji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-244">Create and assign a reduction entry document (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-245">Nabywanie środka trwałego i roszczenia do dotacji państwowej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-245">Acquire a fixed asset and claim for the government grant subsidy (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-246">Amortyzowanie środków trwałych z zaksięgowanym wpisem redukcji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-246">Depreciate fixed assets with reduction entry posted (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-247">Likwidacja środka trwałego z wykorzystaniem wpisu redukcji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-247">Dispose of a fixed asset with reduction entry (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-248">Tworzenie grupy CGU i ośrodków wypracowujących środki pieniężne (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-248">Create CGU groups and cash generating units (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-249">Alokacja kwoty magazynowania aktywów wspólnych i wartości firmy w ośrodkach wypracowujących środki pieniężne (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-249">Allocate carrying amount of shared asset and goodwill to cash generating units (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-250">Tworzenie i potwierdzanie testu rozpoznawania (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-250">Create and confirm a recognition test (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-251">Proponowanie i księgowanie kwoty utraty w ośrodku wypracowującym środki pieniężne (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-251">Propose and post the impairment amount on a cash generating unit (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-252">Tworzenie i przypisywanie grupy sprzętu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-252">Create and assign an equipment group (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-253">Tworzenie profilu amortyzacji przyspieszonej i przypisywanie go do księgi (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-253">Create accelerated depreciation profile and assign it to book (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-254">Konfigurowanie parametrów przyspieszonej amortyzacji i profili księgowania (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-254">Configure accelerated depreciation parameters and posting profiles (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-255">Proponowanie i księgowanie przyspieszonej amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-255">Propose and post accelerated depreciation (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-256">Tworzenie i kojarzenie urządzenia (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-256">Create and associate a device (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-257">Tworzenie i kojarzenie stanowiska sprzętowego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-257">Create and associate a hardware station (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-258">Samoobsługa w zakresie pobierania stanowiska sprzętowego (maj 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-258">Perform self-service to download hardware station (May 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-259">Tworzenie, obliczanie i księgowanie zestawienia dla sklepu sieci sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-259">Create, calculate, and post a statement for a retail store (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-260">Konfigurowanie i realizowanie zadań obliczania zestawień (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-260">Configure and run a job to calculate statements (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-261">Konfigurowanie i realizowanie zadań księgowania zestawień (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-261">Configure and run a job to post statements (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-262">Księgowanie sprzedaży i płatności online (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-262">Post online sales and payments (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-263">Konfigurowanie i generowanie informacji o wiekowaniu rozrachunków z odbiorcami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-263">Set up and generate accounts receivable aging information (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-264">Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą faktury od dostawcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-264">Key invoice data into accounts payable using a vendor invoice (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-265">Tworzenie nowego środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-265">Create a fixed asset (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-266">Konfigurowanie urzędów skarbowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-266">Set up sales tax authorities (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-267">Ustawianie okresów rozliczania podatku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-267">Set up sales tax settlement periods (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-268">Konfigurowanie grupy księgowania podatku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-268">Set up ledger posting groups for sales tax (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-269">Ustawianie kodów raportowania podatku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-269">Set up sales tax reporting codes (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-270">Ustawianie kodów podatku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-270">Set up sales tax codes (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-271">Konfigurowanie grup podatków i grup podatków dla towarów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-271">Set up sales tax groups and item sales tax groups (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-272">Konfigurowanie potrąconych zaliczek na podatek (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-272">Set up withholding tax (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-273">Tworzenie płatności podatku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-273">Create a sales tax payment (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-274">Tworzenie transakcji podatku w dokumentach (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-274">Create sales tax transactions on documents (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-275">Obliczanie i korygowanie podatku na fakturze od dostawcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-275">Calculate and adjust sales tax on a vendor invoice (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-276">GB-00002 Konfigurowanie grup podatków dla opłaty zwrotnej VAT (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-276">GB-00002 Set up sales tax groups for reverse charge VAT (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-277">GB-00002 Konfigurowanie grup podatków od towaru dla opłaty zwrotnej VAT (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-277">GB-00002 Set up item sales tax groups for reverse charge VAT (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-278">GB-00002 Konfigurowanie grup towarów z opłatą zwrotną VAT, reguł i parametrów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-278">GB-00002 Set up reverse charge VAT item groups, rules, and parameters (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-279">MX-00006 Konfigurowanie kodów podatku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-279">MX-00006 Set up sales tax codes (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-280">MX-00010 Ustawianie parametrów dla faktury elektronicznej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-280">MX-00010 Set parameters for an electronic invoice (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-281">MX-00010 Żądanie i drukowanie faktury elektronicznej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-281">MX-00010 Inquire and print an electronic invoice (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-282">MX-00010 Anulowanie faktury elektronicznej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-282">MX-00010 Cancel an electronic invoice (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-283">MX-00010 Księgowanie faktury niezależnej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-283">MX-00010 Post a free text invoice (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-284">MY-00010 GST – Generowanie plików GAF w wymaganym formacie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-284">MY-00010 GST - Generate GAF files in the required format (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-285">Wyświetlanie zaksięgowanych transakcji składników podatkowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-285">View posted sales tax transactions (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-286">Definiowanie nowych zadań (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-286">Define new jobs (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-287">Konfigurowanie kont głównych do księgowania zobowiązań do wycofania środków trwałych i obsługi stawek rabatu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-287">Configure main accounts for asset retirement obligation posting and market discount rates (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-288">Konfigurowanie obowiązku wycofania składnika aktywów i wpisania kwoty ARO dla środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-288">Set up asset retirement obligation documents and enter ARO amount on a fixed asset (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-289">Nabywanie środka trwałego ze zobowiązaniami do wycofania środków trwałych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-289">Acquire a fixed asset with asset retirement obligations (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-290">Amortyzacja i naliczanie odsetek od środków trwałych dla zobowiązań do wycofania środków trwałych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-290">Depreciate and accrue the interest expense for asset retirement obligations (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-291">Dostosowywanie oszacowania zobowiązania do wycofania składników aktywów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-291">Adjust an asset retirement obligation estimate (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-292">Włączanie formatu pliku płatności JBA (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-292">Enable JBA payment file format (November 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-293">Generowanie pliku płatności EFT w formacie JBA (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-293">Generate an EFT payment file with JBA format (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-294">Importowanie płatności odbiorcy z pliku w formacie JBA (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-294">Import a customer payment with JBA file format (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-295">Wprowadzanie harmonogramu wskaźnika amortyzacji i kojarzenie z profilem amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-295">Enter a depreciation rate schedule and associate to a depreciation profile (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-296">Konfigurowanie profilu amortyzacji i profilu księgowania dla amortyzacji dodatkowej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-296">Configure depreciation profile and posting profile for additional depreciation (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-297">Tworzenie środka trwałego z dodatkową amortyzacją (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-297">Create a fixed asset with additional depreciation (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-298">Proponowanie dodatkowej amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-298">Propose additional depreciation (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-299">Konfigurowanie profilu amortyzacji i profilu księgowania dla amortyzacji specjalnej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-299">Configure depreciation profile and posting profile for special depreciation (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-300">Tworzenie środka trwałego z profilem amortyzacji specjalnej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-300">Create a fixed asset with special depreciation profile (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-301">Proponowanie amortyzacji specjalnej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-301">Propose special depreciation (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-302">Tworzenie środków trwałych o amortyzacji ryczałtowej metodą równego podziału (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-302">Create lump-sum depreciation assets using equally-divided method (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-303">Zmienianie metody amortyzacji w trakcie użytkowania środka trwałego dla jednego składnika aktywów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-303">Change the depreciation method during the asset life for one asset (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-304">Zmienianie metody amortyzacji w księdze w trakcie użytkowania środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-304">Change the depreciation method during the asset life for book (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-305">Tworzenie i potwierdzanie skonsolidowanej faktury dla odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-305">Create and confirm a customer consolidated invoice (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-306">JP-00011 Ponowne otwieranie i edycja skonsolidowanej faktury dla odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-306">JP-00011 Reopen and edit a customer consolidated invoice (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-307">MY-00011 02 Generowanie noty debetowej odbiorcy dla sprzedaży projektowych (tylko listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-307">MY-00011 02 Generate customer debit for project sales (November 2016 only)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-308">Zmiana konwencji amortyzacji dla wielu środków trwałych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-308">Change depreciation conventions for multiple fixed assets (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-309">Rozbicie środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-309">Split a fixed asset (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-310">Tworzenie i nabywanie środków trwałych z modułu Rozrachunki z dostawcami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-310">Create and acquire assets from accounts payable (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-311">Proponowanie nabycia środka trwałego (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-311">Propose fixed asset acquisitions (November 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-312">Tworzenie propozycji amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-312">Create depreciation proposal (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-313">Likwidacja środka trwałego z wykorzystaniem faktury niezależnej (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-313">Dispose of a fixed asset using a free text invoice (November 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-314">Przenoszenie środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-314">Transfer a fixed asset (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-315">Konfigurowanie profili księgowania środków trwałych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-315">Set up fixed asset posting profiles (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-316">Konfigurowanie i tworzenie profili amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-316">Set up and create depreciation profiles (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-317">Konfigurowanie ksiąg amortyzacji (tylko maj 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-317">Set up depreciation books (May 2016 only)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-318">Konfigurowanie podwyższenia amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-318">Set up bonus depreciation (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-319">Wprowadzanie środka komplementarnego dla środka trwałego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-319">Enter an addition to a fixed asset (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-320">Zmienianie klasyfikacji środków trwałych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-320">Reclassify fixed assets (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-321">Konfigurowanie modeli ewidencji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-321">Set up value models (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-322">Ustawianie grup środków trwałych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-322">Set up fixed asset groups (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-323">GB-00002 Tworzenie zamówienia zakupu zawierającego towary podlegające zwrotowi podatku VAT (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-323">GB-00002 Create a purchase order that includes items subject to reverse charge VAT (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-324">GB-00002 Tworzenie zamówienia sprzedaży zawierającego towary podlegające zwrotowi podatku VAT (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-324">GB-00002 Create a sales order that includes items subject to reverse charge VAT (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-325">MY-00006 01 Konfigurowanie klauzul zwolnienia z podatku GST (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-325">MY-00006 01 Set up GST relief clauses (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-326">MY-00006 02 Drukowanie faktur dla odbiorcy z klauzulą zwolnienia z podatku PTU (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-326">MY-00006 02 Print GST customer invoices with a relief clause (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-327">Sprawdzanie dostępności zapasów w magazynie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-327">Check the availability of stock (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-328">Konfigurowanie zleceń kontroli jakości (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-328">Set up quality orders (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-329">Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą puli faktur (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-329">Key invoice data into the AP system using invoice pool (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-330">Konfigurowanie sprawdzania uzgadniania faktur rozrachunków z dostawcami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-330">Set up accounts payable invoice matching validation (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-331">Przetwarzanie arkusza alokacji księgi (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-331">Process ledger allocation journal (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-332">Obsługa domyślnych szablonów wymiaru finansowego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-332">Maintain financial dimension default templates (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-333">Tworzenie wpisu w arkuszu za pomocą szablonu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-333">Create a journal entry using a template (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-334">Tworzenie i sprawdzanie poprawności arkuszy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-334">Create and validate journals (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-335">Zwalnianie zlecenia produkcyjnego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-335">Release a production order (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-336">Tworzenie grup konsolidacji i dodatkowych kont konsolidacyjnych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-336">Create consolidation groups and additional consolidation accounts (November 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-337">Konfigurowanie kategorii konta głównego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-337">Set up main account categories (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-338">Konfigurowanie aliasu konta księgowego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-338">Set up a ledger account alias (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-339">Tworzenie i przypisywanie struktur reguł zaawansowanych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-339">Create and assign advanced rule structures (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-340">Wyświetlanie wpisów w arkuszu lub transakcji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-340">View journal entries or transactions (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-341">Tworzenie transakcji naliczeń finansowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-341">Create ledger accrual transactions (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-342">Definiowanie warunków płatności dla odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-342">Establish customer payment terms (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-343">Definiowanie metody płatności odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-343">Establish customer method of payment (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-344">Definiowanie opłat związanych z płatnościami dla odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-344">Establish customer payment fees (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-345">Deponowanie płatności od odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-345">Deposit customer payments (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-346">Definiowanie warunków płatności dostawcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-346">Define vendor payment terms (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-347">Definiowanie opłat związanych z płatnościami dostawcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-347">Define vendor payment fees (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-348">Obsługa transakcji zobowiązania do wycofania składników aktywów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-348">Inquire on asset retirement obligation-related transactions (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-349">Definiowanie procesów inwentaryzacji zapasów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-349">Define inventory counting processes (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-350">Przetwarzanie odsetek (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-350">Process interest (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-351">Tworzenie kolejności ponagleń (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-351">Create a collection letter sequence (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-352">Tworzenie szablonu faktury niezależnej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-352">Create a free text invoice template (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-353">Generowanie i księgowanie cyklicznych faktur niezależnych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-353">Generate and post recurring free text invoices (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-354">Tworzenie pozwolenia na polecenie zapłaty dla odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-354">Create a direct debit mandate for a customer (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-355">Tworzenie arkusza odpisów dla odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-355">Create a write off journal for a customer (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-356">Przypisywanie szablonu faktury niezależnej do odbiorcy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-356">Assign a free text invoice template to a customer (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-357">JP-00011 Konfigurowanie faktur skonsolidowanych do rozrachunków z odbiorcami (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-357">JP-00011 Set up consolidated invoices for accounts receivable (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-358">JP-00011 Konfigurowanie odbiorcy i zamówienia sprzedaży jako celu faktury skonsolidowanej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-358">JP-00011 Set up a customer and sales order to be target of consolidated invoice (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-359">JP-00011 Rozliczanie skonsolidowanych faktur dla odbiorcy przy użyciu arkusza płatności (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-359">JP-00011 Settle customer consolidated invoices by using a payment journal (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-360">JP-00011 Rozliczanie skonsolidowanych faktur dla odbiorcy przy użyciu transakcji rozliczania (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-360">JP-00011 Settle customer consolidated invoices by using settle transactions (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-361">Rejestrowanie pozycji dla podstawowej pozycji magazynowej za pomocą arkusza przyjęć towarów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-361">Register items for a basic warehousing enabled item using an item arrival journal (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-362">Importowanie konfiguracji polecenia przelewu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-362">Import ISO20022 credit transfer configuration (November 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-363">Konfigurowanie metody płatności przelewu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-363">Set up method of payment for ISO20022 credit transfer (November 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-364">Konfigurowanie dostawców i kont bankowych dostawców dla poleceń przelewu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-364">Set up vendors and vendor bank accounts for ISO20022 credit transfers (November 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-365">Konfigurowanie kont bankowych firmy dla poleceń przelewu ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-365">Set up company bank accounts for ISO20022 credit transfers (November 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-366">Tworzenie i eksport płatności dla dostawcy przy użyciu formatu płatności ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-366">Create and export vendor payments using ISO20022 payment format (November 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-367">EUR-00012 Odbiór świadectw wywozowych UE (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-367">EUR-00012 Receive an EU entry certificate (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-368">EUR-00012 Wydawanie świadectw wywozowych UE (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-368">EUR-00012 Issue an EU entry certificate (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-369">Importowanie konfiguracji polecenia zapłaty ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-369">Import ISO20022 direct debit configuration (November 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-370">Konfigurowanie metody płatności polecenia zapłaty ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-370">Set up method of payment for ISO20022 direct debit (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-371">Konfigurowanie kont bankowych firmy dla poleceń zapłaty ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-371">Set up company bank accounts for ISO20022 direct debits (November 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-372">Konfigurowanie odbiorców i kont bankowych odbiorców dla poleceń zapłaty ISO20022 (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-372">Set up customers and customer bank accounts for ISO20022 direct debits (November 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-373">Konfigurowanie deklaracji faktury od dostawcy (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-373">Set up an invoice declaration for vendors (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-374">Tworzenie konta odbiorcy i dołączanie kategorii deklaracji na fakturze (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-374">Create a vendor account and attach the invoice declaration (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-375">Aktualizowanie deklaracji faktury od dostawcy i generowanie raportu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-375">Update vendor invoice declarations and generate the report (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-376">Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego na potrzeby raportowania elektronicznego (ER) (tylko luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-376">Create a configuration provider and mark it as active for electronic reporting (ER) (February 2016 only)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-377">Planowanie zadań w systemie kanban (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-377">Schedule kanban jobs (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-378">Usuwanie zadania systemu Kanban z harmonogramu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-378">Remove a kanban job from the schedule (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-379">Rejestrowanie pracowników w systemie stałych wynagrodzeń (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-379">Enroll employees in a fixed compensation plan (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-380">Rejestrowanie pracowników w systemie wynagrodzeń o zmiennej wysokości (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-380">Enroll employees in a variable compensation plan (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-381">Tworzenie nowego projektu zatrudnienia grupowego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-381">Create a mass hire project (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-382">Wypożyczanie przedmiotów pracownikom (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-382">Loan items to a worker (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-383">Wprowadzanie informacji o pracowniku (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-383">Enter worker information (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-384">Zatrudnianie kandydata przez rekrutację (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-384">Hire a candidate through recruiting (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-385">Tworzenie wielu przedmiotów pożyczki (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-385">Create loan items (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-386">Zarządzanie datami ważności świadczenia (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-386">Manage benefit expiration dates (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-387">Definiowanie zasad i reguł uprawnień do świadczenia (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-387">Define benefit eligibility rules and policies (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-388">Wprowadzanie danych kandydata i aplikacji ręcznie (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-388">Enter applicant and application data manually (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-389">Zatwierdzanie rekordów skrzynki odbiorczej zgłoszeń (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-389">Approve application inbox records (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-390">Zarządzanie szablonami wiadomości e-mail (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-390">Manage email templates (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-391">Analizowanie wyników kwestionariusza (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-391">Analyze questionnaire results (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-392">Tworzenie pytania otwartego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-392">Create an open-ended question (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-393">Tworzenie i obsługa blokowania zapasów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-393">Create and maintain inventory blocking (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-394">Sprawdzanie jakości towarów (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-394">Inspect the quality of goods (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-395">Tworzenie prognozy bazowej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-395">Create a baseline forecast (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-396">Ręczne modyfikowanie prognozy popytu (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-396">Modify a demand forecast manually (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-397">Przygotowywanie zadania procesu w systemie Kanban, gdy materiały nie są dostępne dla komórki roboczej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-397">Prepare a process kanban job when materials are not available for the work cell (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-398">Przygotowywanie zadania procesu w systemie Kanban, gdy materiały są dostępne dla komórki roboczej (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-398">Prepare a process kanban job when materials are available for the work cell (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-399">Dodawanie zasady obliczania liczby kart Kanban do reguły Kanban (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-399">Add a kanban quantity calculation policy to a kanban rule (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-400">Tworzenie planu materiałów dla produktów towarzyszących</span><span class="sxs-lookup"><span data-stu-id="33d7f-400">Create a material plan for co-products</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-401">MX-00010 Wpisywanie identyfikatorów podatkowych dla firm (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-401">MX-00010 Enter tax registration IDs for legal entities (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-402">AU-00006 Dodawanie pól i generowanie deklaracji BAS (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-402">AU-00006 Add report boxes and generate the BAS (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-403">AU-00006 Konfigurowanie kodów przyczyn dla deklaracji BAS (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-403">AU-00006 Set up reason codes for the BAS (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-404">Księgowanie faktury projektu z dokumentem płatności (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-404">Post a project invoice with a payment slip (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-405">Księgowanie faktury niezależnej z dokumentem płatności (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-405">Post a free text invoice with a payment slip (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-406">Księgowanie faktury sprzedaży z dokumentem płatności (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-406">Post a sales invoice with a payment slip (November 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-407">MX-00020 Konfigurowanie planu kont dla firmy (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-407">MX-00020 Set up the chart of accounts for a legal entity (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-408">Konfigurowanie funduszu w podmiocie z sektora publicznego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-408">Set up a fund in the public sector (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-409">Konfigurowanie pochodnej hierarchii finansowej w sektorze publicznym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-409">Set up a derived financial hierarchy in the public sector (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-410">Tworzenie wpisów księgowych dotyczących zaliczek w sektorze publicznym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-410">Create an advanced ledger entry in the public sector (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-411">Tworzenie okładki i stron podpisu dla raportu płatności dla sektora publicznego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-411">Create cover and signature pages for a payments report for the public sector (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-412">Tworzenie jednorazowego dostawcy i faktury w sektorze publicznym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-412">Create a one-time vendor and invoice in the public sector (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-413">Importowanie i tworzenie wielu jednorazowych dostawców i faktur w sektorze publicznym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-413">Import and create multiple one-time vendors and invoices in the public sector (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-414">Konfigurowanie klasyfikacji umów zakupu w sektorze publicznym (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-414">Set up purchase agreement classifications in the public sector (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-415">Tworzenie wstępnego budżetu dla sektora publicznego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-415">Create a preliminary budget for public sector (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-416">Tworzenie pierwotnego budżetu i odwracanie wpisów budżetu wstępnego dla sektora publicznego (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-416">Create an original budget and reverse preliminary budget entries in the public sector (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-417">Konfigurowanie danych głównych dla włączenia możliwych do odliczenia wydatków dla wielu warstw księgowania (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-417">Set up master data for inclusion of deductible expenses for multiple posting layers (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-418">Obsługa plików danych głównych środków trwałych dla ujemnych wydatków (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-418">Maintain fixed asset master data files for deductible expenses (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-419">Okresowe rozliczenia nadpłat i niedopłat amortyzacji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-419">Periodic settlement of over and under depreciation (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-420">Informacje o ujemnych wydatkach (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-420">Inquire on deductible expenses (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-421">JP-00004 Konfigurowanie raportu podatku konsumpcyjnego (lutego 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-421">JP-00004 Set up the consumption tax report (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-422">JP-00004 Generowanie raportu podatku konsumpcyjnego (lutego 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-422">JP-00004 Generate the consumption tax report (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-423">EUR-00011 Konfigurowanie raportowania listy sprzedaży do UE (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-423">EUR-00011 Set up EU sales list reporting (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-424">GB-00009 Konfigurowanie parametrów faktury korygującej dla rabatu za natychmiastową płatność (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-424">GB-00009 Set up parameters for a credit note for prompt payment discount (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-425">GB-00009 Tworzenie faktury korygującej od rabatu rozliczenia (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-425">GB-00009 Create a credit on the settlement discount (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-426">MX-00020 Określanie identyfikatora rejestracyjnego RFC dla kont bankowych (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-426">MX-00020 Specify the RFC registration ID for bank accounts (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-427">Tworzenie reguł Kanban ze stałą ilością (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-427">Create fixed quantity kanban rules (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-428">Tworzenie reguły Kanban dla zdarzenia sprzedaży (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-428">Create a sales event kanban rule (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-429">Tworzenie nowych reguł Kanban przez duplikowanie istniejących reguł Kanban (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-429">Create new kanban rules by duplicating existing kanban rules (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-430">Tworzenie działań procesu produkcji lean manufacturing (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-430">Create process activities for lean manufacturing (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-431">Tworzenie działań przeniesienia produkcji lean manufacturing (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-431">Create transfer activities for lean manufacturing (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-432">Sprawdzanie przepływu i wersji produkcji (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-432">Validate a production flow and version (February 2016)</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-433">Tworzenie relacji działań: Zdarzenie następujące (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-433">Create activity relation: Successor (February 2016)</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="33d7f-434">Obliczanie amortyzacji środka trwałego we wszystkich firmach</span><span class="sxs-lookup"><span data-stu-id="33d7f-434">Calculate fixed asset depreciation across legal entities</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-435">Przenoszenie materiału z zadań Kanban (luty 2016)</span><span class="sxs-lookup"><span data-stu-id="33d7f-435">Transfer material with kanban jobs (February 2016)</span></span></td>
-</tr>
-</tbody>
-</table>
+## <a name="bpm-lines-deleted"></a><span data-ttu-id="f5528-436">Usunięto wiersze BPM</span><span class="sxs-lookup"><span data-stu-id="f5528-436">BPM lines deleted</span></span>
 
-<a name="bpm-lines-deleted"></a><span data-ttu-id="33d7f-436">Usunięto wiersze BPM</span><span class="sxs-lookup"><span data-stu-id="33d7f-436">BPM lines deleted</span></span>
------------------
+<span data-ttu-id="f5528-437">Po usunięciu linii BPM Przewodnik po zadaniach, który jest skojarzony z tym wierszem BPM również zostanie usunięty.</span><span class="sxs-lookup"><span data-stu-id="f5528-437">When a BPM line is deleted, any task guide that was associated with the BPM line is also deleted.</span></span>
 
-<span data-ttu-id="33d7f-437">Po usunięciu linii BPM Przewodnik po zadaniach, który jest skojarzony z tym wierszem BPM również zostanie usunięty.</span><span class="sxs-lookup"><span data-stu-id="33d7f-437">When a BPM line is deleted, any task guide that was associated with the BPM line is also deleted.</span></span>
+<span data-ttu-id="f5528-438">**Usunięto wiersze BPM**</span><span class="sxs-lookup"><span data-stu-id="f5528-438">**Deleted BPM line**</span></span>
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><span data-ttu-id="33d7f-438">Usunięto wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="33d7f-438">Deleted BPM Line</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><span data-ttu-id="33d7f-439">Przenoszenie zaplanowanych zadań w systemie Kanban</span><span class="sxs-lookup"><span data-stu-id="33d7f-439">Move scheduled kanban jobs</span></span></td>
-</tr>
-</tbody>
-</table>
-
-
+- <span data-ttu-id="f5528-439">Przenoszenie zaplanowanych zadań w systemie Kanban</span><span class="sxs-lookup"><span data-stu-id="f5528-439">Move scheduled kanban jobs</span></span>
 
