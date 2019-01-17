@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 85581968d9d242460117693174acbf906463997f
+ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
+ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -30,6 +30,9 @@ ms.lasthandoff: 10/22/2018
 [!include[banner](../includes/banner.md)]
 
 Za pomocą biblioteki szablonów wiadomości e-mail administratorzy mogą utworzyć jednolity motyw i identyfikację wizualną dla wszystkich wiadomości e-mail wysyłanych z aplikacji Microsoft Dynamics 365 for Talent: Attract. Administratorzy mogą również przechowywać zbiór szablonów zawartości wiadomości e-mail z przeznaczeniem dla innych użytkowników. Zespół rekrutacyjny może używać tych szablonów w swoich procesach, aby sprawniej wysyłać wiadomości e-mail. Niektóre wiadomości e-mail w aplikacji Attract są skonfigurowane do wysyłania automatycznego, a administrator może używać biblioteki szablonów wiadomości e-mail do personalizowania zawartości tych wiadomości.
+
+> [!NOTE]
+> Aby korzystać z szablonów wiadomości E-mail, organizacja musi mieć dodatek kompleksowej obsługi rekrutacji.
 
 ## <a name="global-template-configurations"></a>Globalne konfiguracje szablonów
 

@@ -19,10 +19,10 @@ ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 17981cef401085ad3af784950fff6260c2c6d9ee
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -31,14 +31,15 @@ ms.lasthandoff: 08/09/2018
 [!include [banner](includes/banner.md)]
 
 Typowy scenariusz u każdego sprzedawcy detalicznego to sprzedaż produktów klientom lub przyjmowanie zwrotów od klientów, nawet jeśli sprzedawcy nie mają tych produktów w sklepie (innymi słowy produkty nie wchodzą w skład asortymentu sklepu).
+
 Poniżej przedstawiono niektóre typowe scenariusze:
 
 + Sprzedawca detaliczny nie posiada wszystkich swoich produktów w określonym sklepie. Pozostałe produkty są przechowywane w magazynie. Pracownik sklepu może pomóc klientowi, wyszukując lub przeglądając produkty w magazynie, dodając je do koszyka, a następnie finalizując transakcję przez wybranie metody dostawy, takiej jak wysyłka na podany adres z magazynu lub osobisty odbiór produktu przez klienta z bieżącego sklepu lub z innego sklepu.
 + Sprzedawca nie ma określonych produktów w sklepie lub nie ma ich w sklepie odwiedzonym przez klienta, ale produkty są dostępne w innych sklepach. Pracownik sklepu może pomóc klientowi, wyszukując lub przeglądając produkty w sklepie, dodając je do koszyka, a następnie finalizując transakcję przez wybranie metody dostawy.
 + Sprzedawca detaliczny ma wiele sklepów w danym mieście lub regionie i nie chce zmuszać klientów, aby zwracali produkty do tego samego sklepu, w którym je kupili. Zamiast tego klienci mogą zwracać produkty do dowolnych sklepów.
 
-
 Te typowe scenariusze są dostępne dla sprzedawców detalicznych używających aplikacji Dynamics 365 for Retail. Aplikacja Retail oferuje następujące możliwości:
+
 + Wyszukiwanie lub przeglądanie produktów w innych sklepach.
 + Wyszukiwanie lub przeglądanie wszystkich zwolnionych produktów.
 + Tworzenie transakcji zapłaty przy kasie i wychodzenia z produktami ze sklepu lub tworzenie zamówień odbiorców.

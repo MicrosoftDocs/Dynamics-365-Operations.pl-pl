@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
-ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
+ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
+ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -174,11 +174,11 @@ Repozytorium **systemu plików** udostępnia listę konfiguracji, które znajduj
 - środowiska hostowane w chmurze wdrożone na potrzeby programowania (zawierające modele testu zamkniętych pakietów)
 - środowiska wdrożone lokalnie (wdrażania danych biznesowych lokalne lub na dysku lokalnym (LBD))
 
-Odwiedź stronę [konfiguracji importu raportowania elektronicznego (RE)](/electronic-reporting-import-ger-configurations.md), aby uzyskać szczegółowe informacje na ten temat.
+Odwiedź stronę [konfiguracji importu raportowania elektronicznego (RE)](./electronic-reporting-import-ger-configurations.md), aby uzyskać szczegółowe informacje na ten temat.
 
 Repozytorium **wystąpienie RCS** zapewnia dostęp do listy konfiguracji określonego wystąpienia RCS wybranego na etapie rejestracji repozytorium. ER pozwala importować kompletne lub udostępniane konfiguracje z wybranego wystąpienia RCS do bieżącego wystąpienia Finance and Operations i używać do raportowania elektronicznego.
 
-Odwiedź stronę [konfiguracji importu raportowania elektronicznego (RE) z Regulatory Configuration Services (RCS)](/rcs-download-configurations.md), aby uzyskać szczegółowe informacje na ten temat.
+Odwiedź stronę [konfiguracji importu raportowania elektronicznego (RE) z Regulatory Configuration Services (RCS)](./rcs-download-configurations.md), aby uzyskać szczegółowe informacje na ten temat.
 
 Wymagane repozytoria **Projekt usługi LCS**, **System plików** i **Regulatory Configuration Services (RCS)** można rejestrować indywidualnie dla każdego dostawcy konfiguracji bieżącego wystąpienia programu Finance and Operations. Każde repozytorium może być dedykowane określonemu dostawcy konfiguracji.
 

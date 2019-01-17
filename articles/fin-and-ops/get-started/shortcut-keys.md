@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
-ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/25/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -29,36 +29,35 @@ ms.lasthandoff: 10/25/2018
 
 [!include [banner](../includes/banner.md)]
 
-Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamics 365 for Finance and Operations. 
+Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamics 365 for Finance and Operations.
 
-**Uwaga:** skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
+> [!NOTE]
+> Skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
 
 ## <a name="finding-a-shortcut"></a>Znajdowanie skrótu
-Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośrednio z poziomu interfejsu użytkownika. Wystarczy kliknąć kontrolkę prawym przyciskiem myszy i wybrać opcję **Wyświetl skróty**. Zostanie otwarte okno dialogowe zawierające skróty jakich można użyć. Są one zależne od strony, na której znajduje się użytkownik. 
 
+Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośrednio z poziomu interfejsu użytkownika. Wystarczy kliknąć kontrolkę prawym przyciskiem myszy i wybrać opcję **Wyświetl skróty**. Zostanie otwarte okno dialogowe zawierające skróty jakich można użyć. Są one zależne od strony, na której znajduje się użytkownik.
 
 ## <a name="action-shortcuts"></a>Skróty akcji
 
-|                                                   |                                  |
-|---------------------------------------------------|----------------------------------|
-| **Funkcja**                                    | **Klawisze**                        |
-| Otwórz wyszukiwanie akcji                                | Ctrl+’ lub Alt+Q                  |
-| Przejdź do standardowego okienka akcji                  | Alt+M, A lub Ctrl+F6               |
-| Otwórz kartę w okienku akcji lub menu           | Enter lub Spacja lub Alt+strzałka w dół |
-| Przejdź do następnej/poprzedniej opcji w menu            | Strzałka w dół / strzałka w górę            |
-| Zamknij kartę w okienku akcji lub menu          | Esc                              |
-| Symulacja kliknięcia prawym przyciskiem myszy                            | Shift+F10                        |
-| Otwieranie menu kontekstowego programu Finance and Operations      | Ctrl+F10                         |
-| Naciśnij domyślny przycisk formularza/okna dialogowego   | Alt+Enter                        |
-| Kliknij przycisk lub kafelek                            | Enter lub Spacja                   |
-| Wyświetl odświeżone informacje dla kafelka liczenia         | Alt+strzałka w górę                     |
-| Wyświetl aktualnie dostępne skróty                | Alt+Shift+K                      |                              
+| Funkcja                                      | Klawisze                            |
+|-------------------------------------------------|----------------------------------|
+| Otwórz wyszukiwanie akcji                              | Ctrl+' lub Alt+Q                  |
+| Przejdź do standardowego okienka akcji                | Alt+M, A lub Ctrl+F6               |
+| Otwórz kartę w okienku akcji lub menu         | Enter lub Spacja lub Alt+strzałka w dół |
+| Przejdź do następnej/poprzedniej opcji w menu          | Strzałka w dół / strzałka w górę            |
+| Zamknij kartę w okienku akcji lub menu        | Esc                              |
+| Symulacja kliknięcia prawym przyciskiem myszy                          | Shift+F10                        |
+| Otwieranie menu kontekstowego programu Finance and Operations    | Ctrl+F10                         |
+| Naciśnij domyślny przycisk formularza/okna dialogowego | Alt+Enter                        |
+| Kliknij przycisk lub kafelek                          | Enter lub Spacja                   |
+| Wyświetl odświeżone informacje dla kafelka liczenia       | Alt+strzałka w górę                     |
+| Wyświetl aktualnie dostępne skróty              | Alt+Shift+K                      |
 
 ## <a name="date-picker-shortcuts"></a>Skróty selektora dat
 
-|                                       |                                           |
+| Funkcja                            | Klawisze                                     |
 |---------------------------------------|-------------------------------------------|
-| **Funkcja**                        | **Klawisze**                                 |
 | Otwórz selektor dat                  | Alt+strzałka w dół                            |
 | Przejdź między datami w selektorze dat | Ctrl+klawisze strzałek                           |
 | Przejdź do następnego/poprzedniego miesiąca       | Page down / Page up                       |
@@ -70,9 +69,8 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 
 ## <a name="factbox-shortcuts"></a>Skróty pola informacji
 
-|                                                                                 |                                           |
+| Funkcja                                                                      | Klawisze                                     |
 |---------------------------------------------------------------------------------|-------------------------------------------|
-| **Funkcja**                                                                  | **Klawisze**                                 |
 | Otwórz okienko pola informacji (lub przenieś zaznaczenie na okienko pola informacji, jeśli jest już otwarte) | Alt+M, B lub Ctrl+F2                        |
 | Zamknij okienko pola informacji (z wyróżnieniem na polu informacji)                         | Esc                                       |
 | Przejdź do następnego/poprzedniego pola informacji (z wyróżnieniem na okienku pola informacji)              | Alt+Shift+strzałka w dół / Alt+Shift+strzałka w górę |
@@ -82,42 +80,39 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 
 ## <a name="filtering-shortcuts"></a>Filtrowanie skrótów
 
-|                                    |                          |
-|------------------------------------|--------------------------|
-| **Funkcja**                     | **Naciśnij**                |
-| Otwórz filtrowanie siatki dla bieżącej kolumny                        | Ctrl+G                   |
-| Zamknij filtrowanie siatki dla bieżącej kolumny                       | Esc                      |
+| Funkcja                                                                                                          | Klawisze                    |
+|---------------------------------------------------------------------------------------------------------------------|--------------------------|
+| Otwórz filtrowanie siatki dla bieżącej kolumny                                                                          | Ctrl+G                   |
+| Zamknij filtrowanie siatki dla bieżącej kolumny                                                                         | Esc                      |
 | Otwórz okienko filtru (lub przełącz wyróżnienie między okienkiem Filtr i formularzem głównym, jeśli okienku Filtr jest już otwarte) | Alt+M, F lub Ctrl+F3       |
-| Zamknij okienko Filtr (z wyróżnieniem na okienku Filtr)             | Esc                      |
-| Otwórz filtrowanie/sortowanie zaawansowane                                      | Ctrl+Shift+F3            | 
+| Zamknij okienko Filtr (z wyróżnieniem na okienku Filtr)                                                               | Esc                      |
+| Otwórz filtrowanie/sortowanie zaawansowane                                                                                        | Ctrl+Shift+F3            |
 
 ## <a name="form-shortcuts"></a>Skróty formularza
 
-|                                                     |                   |
-|-----------------------------------------------------|-------------------|
-| **Funkcja**                                      | **Naciśnij**         |
-| Utwórz nowy rekord                                 | Alt+N             |
-| Usuwanie rekordu                                     | Alt+Del lub Alt+F9 |
-| Zapisz rekord                                         | Alt+S lub Ctrl+S   |
-| Przywróć (przywracanie)                                    | Ctrl+Shift+F5     |
-| Odśwież dane                                        | Shift+F5          |
-| Przejdź do widocznego pierwszego pola na formularzu         | Alt+Shift+F       |
-| Przełącz tryb edycji                                    | F2                |
-| Dołączanie dokumentu                                   | Ctrl+Shift+A      |
-| Eksportuj do programu Excel                                     | Ctrl+Shift+E      |
-| Przejdź do poprzedniego rekordu (poza siatką)        | Ctrl+strzałka w górę     |
-| Przejdź do następnego rekordu (poza siatką)            | Ctrl+strzałka w dół   |
-| Przejdź do pierwszego rekordu (poza siatką)           | CTRL+Home         |
-| Przejdź do ostatniego rekordu (poza siatką)            | CTRL+End          |
-| Zamknij formularz (kliknij Wstecz)                         | Esc               |
-| Zamknij formularz z zapisaniem                   | Shift+Esc         |
-| Zamknij formularz bez zapisywania zmian       | Alt+Shift+Q       |
+| Funkcja                                    | Klawisze             |
+|-----------------------------------------------|-------------------|
+| Utwórz nowy rekord                           | Alt+N             |
+| Usuwanie rekordu                               | Alt+Del lub Alt+F9 |
+| Zapisz rekord                                   | Alt+S lub Ctrl+S   |
+| Przywróć (przywracanie)                              | Ctrl+Shift+F5     |
+| Odśwież dane                                  | Shift+F5          |
+| Przejdź do widocznego pierwszego pola na formularzu   | Alt+Shift+F       |
+| Przełącz tryb edycji                              | F2                |
+| Dołączanie dokumentu                             | Ctrl+Shift+A      |
+| Eksportuj do programu Excel                               | Ctrl+Shift+E      |
+| Przejdź do poprzedniego rekordu (poza siatką)  | Ctrl+strzałka w górę     |
+| Przejdź do następnego rekordu (poza siatką)      | Ctrl+strzałka w dół   |
+| Przejdź do pierwszego rekordu (poza siatką)     | CTRL+Home         |
+| Przejdź do ostatniego rekordu (poza siatką)      | CTRL+End          |
+| Zamknij formularz (kliknij Wstecz)                   | Esc               |
+| Zamknij formularz z zapisaniem             | Shift+Esc         |
+| Zamknij formularz bez zapisywania zmian | Alt+Shift+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Skróty nawigacji formularza
 
-|                                                     |                                              |
+| Funkcja                                          | Klawisze                                        |
 |-----------------------------------------------------|----------------------------------------------|
-| **Funkcja**                                      | **Klawisze**                                    |
 | Przejdź do następnego/poprzedniego pola                     | Tab / Shift+Tab                              |
 | Przejdź do następnej/poprzedniej karty                       | Alt+Shift+strzałka w prawo / Alt+Shift+strzałka w lewo |
 | Przejdź do karty nr &lt;n&gt;                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
@@ -134,30 +129,28 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 
 ## <a name="grid-shortcuts"></a>Skróty siatki
 
-|                                                                                                                        |                                 |
+| Funkcja                                                                                                             | Klawisze                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| **Funkcja**                                                                                                         | **Klawisze**                       |
 | Przejdź do następnej/poprzedniej kolumny                                                                                       | Tab / Shift+Tab                 |
 | Przejdź do następnego/poprzedniego wiersza                                                                                          | Strzałka w dół / strzałka w górę           |
-| Przejdź do następnego/poprzedniego wiersza bez zaznaczania<br><br>**Uwaga:** Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów. | Ctrl+strzałka w górę / Ctrl+strzałka w dół |
-| Wybierz/wyczyść bieżący wiersz<br><br>**Uwaga:** Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.                    | Ctrl+Spacja / Ctrl+kliknięcie         |
-| Dodaj następny/poprzedni wiersz do wybranego zestawu<br><br>**Uwaga:** Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.   | Shift+Spacja                     |
-| Dodaj zakres wierszy do wybranego zestawu<br><br>**Uwaga:** Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.         | Shift+kliknięcie                     |
+| Przejdź do następnego/poprzedniego wiersza bez zaznaczania<blockquote>[!NOTE] Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.</blockquote> | Ctrl+strzałka w górę / Ctrl+strzałka w dół |
+| Wybierz/wyczyść bieżący wiersz<blockquote>[!NOTE] Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.</blockquote>                    | Ctrl+Spacja / Ctrl+kliknięcie         |
+| Dodaj następny/poprzedni wiersz do wybranego zestawu<blockquote>[!NOTE] Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.</blockquote>   | Shift+Spacja                     |
+| Dodaj zakres wierszy do wybranego zestawu<blockquote>[!NOTE] Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.</blockquote>         | Shift+kliknięcie                     |
 | Przejdź do następnej/poprzedniej strony danych                                                                                   | Page up / Page down             |
 | Utwórz nowy wiersz u dołu siatki                                                                             | Strzałka w dół (od ostatniego wiersza)  |
 | Zaznacz lub wyczyść wszystkie wiersze                                                                                               | Ctrl+Shift+M                    |
 | Przejdź do pierwszego rekordu                                                                                               | CTRL+Home                       |
 | Przejdź do ostatniego rekordu                                                                                                | CTRL+End                        |
-| Wykonaj akcję domyślną w tabeli<br><br>**Uwaga:** Ten skrót jest włączony, gdy fokus znajduje się w komórce zawierającej hiperłącze, a wszystkie komórki w tej kolumnie zawierają hiperłącza.                 | Enter                           |
+| Wykonaj akcję domyślną w tabeli<blockquote>[!NOTE] Ten skrót jest włączony, gdy fokus znajduje się w komórce zawierającej hiperłącze, a wszystkie komórki w tej kolumnie zawierają hiperłącza.</blockquote> | Enter                           |
 | Przełączanie fokusa między wybranym wierszem a wierszem nagłówka                                                               | Alt+Shift+H                     |
 | Powiększenie/pomniejszenie bieżącej kolumny (z fokusem w wierszu nagłówka)                                                  | Strzałka w prawo / Strzałka w lewo        |
 | Otwarcie filtrowania siatki dla bieżącej kolumny (z fokusem w wierszu nagłówka)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Skróty wpisywania danych
 
-|                                                                              |                               |
+| Funkcja                                                                   | Klawisze                         |
 |------------------------------------------------------------------------------|-------------------------------|
-| **Funkcja**                                                               | **Klawisze**                     |
 | Otwórz hiperłącze                                                           | Ctrl+Enter                    |
 | Wpisz datę sesji w polu daty                                       | D+Tab                         |
 | Wpisz bieżącą datę w polu daty                                       | T+Tab                         |
@@ -171,17 +164,15 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 
 ## <a name="messaging-shortcuts"></a>Skróty wiadomości
 
-|                          |               |
+| Funkcja               | Klawisze         |
 |--------------------------|---------------|
-| **Funkcja**           | **Klawisze**     |
 | Przejdź do Centrum wiadomości | Ctrl+Shift+F7 |
 | Przejdź do Paska wiadomości    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Skróty nawigacji
 
-|                                                                               |                            |
+| Funkcja                                                                    | Klawisze                      |
 |-------------------------------------------------------------------------------|----------------------------|
-| **Funkcja**                                                                | **Klawisze**                  |
 | Przejdź do pulpitu nawigacyjnego                                                           | Alt+Shift+Home             |
 | Przejdź na pasek nawigacji                                                    | Alt+M, N lub Alt+Shift+F1    |
 | Przejdź do selektora firm                                                    | Ctrl+Shift+O               |
@@ -201,9 +192,8 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 
 ## <a name="personalization-shortcuts"></a>Skróty personalizacji
 
-|                                                                                                                        |                                     |
+| Funkcja                                                                                                             | Klawisze                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| **Funkcja**                                                                                                         | **Klawisze**                           |
 | Przejdź do trybu personalizacji strony                                                                          | Ctrl+Shift+P                        |
 | Użyj narzędzia Zaznaczanie (w trybie personalizacji)                                                                     | S                                   |
 | Otwórz okno dialogowe szybkiej personalizacji wybranego formantu (gdy używane jest narzędzie Zaznaczanie)                              | Spacja lub Enter                      |
@@ -230,9 +220,8 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 
 ## <a name="segmented-entry-shortcuts"></a>Skróty wpis podzielonego na segmenty
 
-|                                                                                                                         |                                  |
+| Funkcja                                                                                                              | Klawisze                            |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **Funkcja**                                                                                                          | **Klawisze**                        |
 | Otwórz listę rozwijaną (gdy lista rozwijana jest zamknięta)                                                             | Alt+strzałka w dół                   |
 | Przenieś wyróżnienie na pole wprowadzania danych dla bieżącego segmentu na liście rozwijanej (gdy lista rozwijana jest otwarta) | Alt+strzałka w dół                   |
 | Zamknij listę rozwijaną                                                                                                | Alt+strzałka w górę                     |
@@ -244,5 +233,4 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przejdź do wiersza wyżej/niżej w wyszukiwaniu                                                                                        | Strzałka w górę / strzałka w dół            |
 | Przejdź do okienka wyżej/niżej w wyszukiwaniu                                                                                       | Page up / Page down              |
 | Przejdź do góry/na dół wyszukiwania                                                                                    | Home / End                       |
-
 

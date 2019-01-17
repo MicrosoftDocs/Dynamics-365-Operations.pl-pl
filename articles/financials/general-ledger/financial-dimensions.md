@@ -3,7 +3,7 @@ title: Wymiary finansowe
 description: "W tym temacie opisano różne typy wymiarów finansowych oraz sposoby ich konfigurowania."
 author: aprilolson
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 01/03/2019
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
-ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
+ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -93,6 +93,8 @@ Wartości z rekordów głównych, takich jak rekordy odbiorców i dostawców, mo
 Ta funkcja jest kontrolowana przez ustawienie w wymiarze. To ustawienie nosi nazwę **Kopiuj wartości do tego wymiaru dla każdej nowo tworzonej wartości DimensionName**, gdzie **DimensionName** jest nazwą wymiaru. Domyślnie ta funkcja jest wyłączona. Jednak można ją włączyć w dowolnym momencie.
 
 Jeśli już istnieją rekordy dla wymiaru, włączenie funkcji spowoduje aktualizację głównych rekordów. Jednak istniejące dokumenty i transakcje nie zostaną zaktualizowane.
+
+Jeśli używasz szablonu do tworzenia rekordu nadrzędnego, upewnij się, że wartość szablonu dla wymiaru głównego jest pusta. Na przykład tworząc odbiorców z szablonu, upewnij się, że wymiar odbiorcy w szablonie jest pusty. Wartość wymiaru odbiorcy zostanie pobrana domyślnie z nowego numeru odbiorcy podczas tworzenia odbiorcy.  
 
 ## <a name="derived-dimensions"></a>Wymiary pochodne
 

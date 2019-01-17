@@ -34,24 +34,24 @@ Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości decyzj
 Decyzja warunkowa to punkt, w którym przepływ pracy rozdziela się na dwie gałęzie. Aby skonfigurować decyzję warunkową, w edytorze przepływu pracy kliknij decyzję warunkową prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarta formularz **Właściwości**.
 
 ## <a name="name-a-decision"></a>Nazywanie decyzji
+
 Wykonaj następujące kroki, aby nazwać decyzję warunkową.
-1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
-2.  W polu **Nazwa** wprowadź unikatową nazwę decyzji warunkowej.
+
+1. W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
+2. W polu **Nazwa** wprowadź unikatową nazwę decyzji warunkowej.
 
 ## <a name="set-conditions"></a> Konfigurowanie warunków
+
 System decyduje, której gałęzi użyć, oceniając przesłany dokument, aby ustalić, czy spełnia określone warunki.
-1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
-2.  Kliknij opcję **Dodaj warunek**.
-3.  Służy do wprowadzania warunku.
-4.  Wprowadź dodatkowe warunki, jeśli są wymagane.
-5.  Aby sprawdzić, czy wprowadzone warunki są poprawnie skonfigurowane, wykonaj następujące czynności:
-    1.  Kliknij opcję **Testuj**, a zostanie otwarty formularz **Warunek testowy przepływu pracy**.
-    2.  Wybierz rekord w obszarze **Sprawdź poprawność warunku** formularza.
-    3.  Kliknij przycisk **Test**. System oszacuje rekord i określi, czy rekord spełnia określone warunki.
-    4.  Kliknij przycisk **OK** lub **Anuluj**, aby powrócić do formularza **Właściwości**.
 
+1. W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
+2. Kliknij opcję **Dodaj warunek**.
+3. Służy do wprowadzania warunku.
+4. Wprowadź dodatkowe warunki, jeśli są wymagane.
+5. Aby sprawdzić, czy wprowadzone warunki są poprawnie skonfigurowane, wykonaj następujące czynności:
 
-
-
-
+    1. Kliknij opcję **Testuj**, a zostanie otwarty formularz **Warunek testowy przepływu pracy**.
+    2. Wybierz rekord w obszarze **Sprawdź poprawność warunku** formularza.
+    3. Kliknij przycisk **Test**. System oszacuje rekord i określi, czy rekord spełnia określone warunki.
+    4. Kliknij przycisk **OK** lub **Anuluj**, aby powrócić do formularza **Właściwości**.
 

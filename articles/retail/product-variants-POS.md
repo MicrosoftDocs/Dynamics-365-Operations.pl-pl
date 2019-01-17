@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: e40c558e03ef230fee6726994bc94979d40493c2
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -52,8 +52,8 @@ Dla każdej lokalizacji są także wyświetlane ilości **Zarezerwowane** i **Za
 
 Lista lokalizacji obejmuje dwa typy jednostek:
 
-- **Sklepy sieci sprzedaży** — lista sklepów skonfigurowanych przy użyciu grupy lokalizatora sklepów dla bieżącego sklepu w aplikacji Retail Headquarters. 
-- **Centra dystrybucji** — w aplikacji Microsoft Dynamics 365 for Retail można skonfigurować różne rodzaje centrów dystrybucyjnych (np. magazyny). Jednak na liście są wyświetlane informacje o dostępności zapasów tylko dla centrów dystrybucyjnych o domyślnym typie **Standardowy**. 
+- **Sklepy sieci sprzedaży** — lista sklepów skonfigurowanych przy użyciu grupy lokalizatora sklepów dla bieżącego sklepu w aplikacji Retail Headquarters.
+- **Centra dystrybucji** — w aplikacji Microsoft Dynamics 365 for Retail można skonfigurować różne rodzaje centrów dystrybucyjnych (np. magazyny). Jednak na liście są wyświetlane informacje o dostępności zapasów tylko dla centrów dystrybucyjnych o domyślnym typie **Standardowy**.
 
     > [!NOTE]
     > Informacje o dostępności zapasów nie są widoczne dla magazynów o typach **Tranzyt**, **Kwarantanna** i **Towary w marszrucie** używanych w aplikacji POS.
@@ -86,7 +86,7 @@ W widoku **Macierz oparta na wymiarach** komórki wariantów produktu zawierają
 | **0** (zero)                             | Wariant został pomyślnie zwolniony do wybranej lokalizacji, ale towar nie jest w niej dostępny. Jednak można wykonywać dodatkowe czynności w komórce. (Te działania są opisane bardziej szczegółowo w dalszej części tego tematu). |
 | **n/d** lub komórka nieaktywna              | Wariant nie został pomyślnie zwolniony do wybranej lokalizacji i nie można wykonywać dodatkowe czynności w komórce. |
 
-Można również zmienić dokument bazowy wymiarów, wybierając nowy wymiar, który ma być używany. 
+Można również zmienić dokument bazowy wymiarów, wybierając nowy wymiar, który ma być używany.
 
 ![Zmienianie dokumentu bazowego](media/ChangePivot.png)
 
@@ -108,14 +108,12 @@ Ponadto w widoku **Macierz oparta na wymiarach** można wykonać więcej działa
 
 Poniższa tabela zawiera więcej informacji o dodatkowych działaniach, które są dostępne.
 
-
-|        Akcja        |                                                                                                                    opis                                                                                                                    |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|       Sprzedaj teraz       |                               Dodawanie wybranego wariantu towaru do transakcji oraz przekierowywanie użytkownika do ekranu transakcji. (Ta akcja jest niedostępna, gdy wybraną lokalizacją jest centrum dystrybucji).                               |
-|   Odbiór w sklepie   |      Tworzenie zamówienia odbiorcy na wariant produktu, który zostanie odebrany z wybranej lokalizacji, i przekierowywanie użytkownika do ekranu transakcji. (Ta akcja jest niedostępna, gdy wybraną lokalizacją jest centrum dystrybucji).       |
-|     Wyślij produkt     |                                                 Tworzenie zamówienia odbiorcy na wariant produktu, który zostanie wysłany z wybranej lokalizacji, i przekierowywanie użytkownika do ekranu transakcji.                                                 |
-|     Dostępność     |                                                                             Wyświetlanie informacji ATP o wybranej kombinacji wariantów dla wybranej lokalizacji.                                                                              |
-|  Pokaż wszystkie lokalizacje  | Przełączanie na standardowy widok wyszukiwania zapasów i wyróżnianie informacji o dostępności zapasów wariantu towaru we wszystkich sklepach w grupie lokalizatora sklepów oraz w centrach dystrybucyjnych o typie <strong>Standardowy/Domyślnie</strong>. |
-| Wyświetlanie szczegółów produktu |                                                                         Przekierowywanie użytkownika do strony <strong>Szczegóły produktu</strong> skojarzonego produktu głównego.                                                                          |
-
+| Akcja               | opis |
+|----------------------|-------------|
+| Sprzedaj teraz             | Dodawanie wybranego wariantu towaru do transakcji oraz przekierowywanie użytkownika do ekranu transakcji. (Ta akcja jest niedostępna, gdy wybraną lokalizacją jest centrum dystrybucji). |
+| Odbiór w sklepie     | Tworzenie zamówienia odbiorcy na wariant produktu, który zostanie odebrany z wybranej lokalizacji, i przekierowywanie użytkownika do ekranu transakcji. (Ta akcja jest niedostępna, gdy wybraną lokalizacją jest centrum dystrybucji). |
+| Wyślij produkt         | Tworzenie zamówienia odbiorcy na wariant produktu, który zostanie wysłany z wybranej lokalizacji, i przekierowywanie użytkownika do ekranu transakcji. |
+| Dostępność         | Wyświetlanie informacji ATP o wybranej kombinacji wariantów dla wybranej lokalizacji. |
+| Pokaż wszystkie lokalizacje   | Przełączanie na standardowy widok wyszukiwania zapasów i wyróżnianie informacji o dostępności zapasów wariantu towaru we wszystkich sklepach w grupie lokalizatora sklepów oraz w centrach dystrybucyjnych o typie **Standardowy/Domyślnie**. |
+| Wyświetlanie szczegółów produktu | Przekierowywanie użytkownika do strony **Szczegóły produktu** skojarzonego produktu głównego. |
 

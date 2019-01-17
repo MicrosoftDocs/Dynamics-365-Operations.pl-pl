@@ -3,7 +3,7 @@ title: Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract
 description: "W tym temacie opisano elementy funkcji w aplikacji Attract. Ponadto wyjaśniono, jak utworzyć funkcję."
 author: josaw
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 12/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: af945042c150fff1a95cdb046f2a712cb2c2c061
+ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
+ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/23/2018
 
 ---
 
@@ -75,7 +75,25 @@ Aby uzyskać więcej informacji o działaniach, które można dodawać do proces
 
 ## <a name="postings"></a>Księgowania
 
-Po uaktywnieniu funkcji można ją opublikować. Tylko osoby rekrutujące i menedżerowie zatrudniający mogą publikować funkcje. Funkcję można opublikować w witrynie Talent Careers (witrynie rozwoju kariery wewnątrz aplikacji Microsoft Dynamics 365 for Talent) lub serwisie LinkedIn. Zespół aplikacji Attract stale pracuje nad dodawaniem agregatorów ogłoszeń o pracę. W związku z tym ta lista będzie regularnie poszerzana.
+Po uaktywnieniu funkcji można ją opublikować. Tylko osoby rekrutujące i menedżerowie zatrudniający mogą publikować funkcje. Funkcję można opublikować w witrynie Talent Careers (witrynie rozwoju kariery wewnątrz aplikacji Microsoft Dynamics 365 for Talent) lub serwisie LinkedIn. 
+
+> [!NOTE]
+> Istnieją trzy ważne zagadnienia, o których należy pamiętać w procesie publikowania zadania w portalu LinkedIn.
+> 1. Zadania opublikowane w LinkedIn są księgowane jako zadania "Ograniczona oferta”. Zadania z ograniczoną ofertą nie mogą być promowane w witrynie LinkedIn. Jeśli chcesz promować zadania z ograniczoną ofertą opublikowane w LinkedIn z aplikacji Attract, musisz skontaktować się z LinkedIn, aby włączyć „Zawijanie zadań". Zobacz poniższe łącza i skontaktuj się z obsługą LinkedIn, aby uzyskać więcej szczegółów.
+>
+>    [Miejsca na zadania z ograniczoną oferta a miejsca na zadania premium w kontekście zawijania zadań](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
+>
+>    [Zawijanie zadań, FAQ](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
+>
+> 1. W przypadku publikowania zadań w LinkedIn, aplikacja Attract przekazuje nazwę organizacji Microsoft 365 skojarzoną z tym zadaniem. LinkedIn łączy zadania z firmą po stronie LinkedIn na podstawie przekazanej nazwy organizacji. Jeśli Twoje zadanie zostanie wystawione w LinkedIn w połączeniu z niewłaściwą firmą, sprawdź czy Twoja nazwa organizacji 365 Microsoft pasuje do nazwy firmy w LinkedIn.  
+>
+>    [Zmienianie adresu kontaktowego i więcej](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
+>
+>    Jeśli masz problemy po wykonaniu tego kroku, skontaktuj się z obsługą LinkedIn. 
+> 
+> 1. Może to potrwać do 24 godzin, aby zadania opublikowane w LinkedIn były widoczne dla kandydatów w ramach w LinkedIn; ma to związek z obecnym procesem przetwarzania zadań wsadowych przez LinkedIn.
+
+Zespół aplikacji Attract stale pracuje nad dodawaniem agregatorów ogłoszeń o pracę. Ta lista będzie regularnie poszerzana.
 
 Aby uzyskać więcej informacji o ofertach pracy, zobacz [Funkcjonalność witryny rozwoju kariery w aplikacji Attract](./career-site.md).
 

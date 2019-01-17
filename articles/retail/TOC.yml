@@ -147,11 +147,13 @@
       href: POS-search-improvements.md
     - name: Wyszukiwanie zapasów w punkcie sprzedaży
       href: product-variants-POS.md
-    - name: Sprzęt i urządzenia peryferyjne
+    - name: Wstrzymywanie i wznawianie transakcji w punkcie sprzedaży
+      href: pos-suspend-recall-transactions.md
+    - name: Sprzętowe urządzenia peryferyjne
       items:
-        - name: Sklepowe urządzenia peryferyjne
+        - name: Urządzenia peryferyjne rozwiązania Retail
           href: retail-peripherals-overview.md
-        - name: Symulator sklepowych urządzeń peryferyjnych
+        - name: Symulator urządzeń peryferyjnych rozwiązania Retail
           href: dev-itpro/retail-peripheral-simulator.md
         - name: Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
           href: define-maintain-channel-clients-registers-hw-stations.md
@@ -478,8 +480,10 @@
       items:
         - name: Obsługa uaktualniania i wersji N-1 w aplikacji Retail
           href: dev-itpro/overview-upgrade-n-minus1.md
-        - name: 'Instalacja, konfiguracja i przełączenie we wdrożeniu etapowym (N-1)'
+        - name: 'Instalacja, konfiguracja i migracja jednorazowa we wdrożeniu etapowym (N-1)'
           href: dev-itpro/n-1-installation-configuration.md
+        - name: Uaktualnienie rozszerzenia kanałów rozwiązania Retail do najnowszej wersji zestawu Retail SDK
+          href: dev-itpro/retailSDK-update.md
     - name: Wskazówki dotyczące implementacji
       items:
         - name: Wskazówki dotyczące implementacji zarządzania urządzeniami

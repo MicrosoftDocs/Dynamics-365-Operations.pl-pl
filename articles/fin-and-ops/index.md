@@ -51,7 +51,7 @@ Wiele z nich dotyczy również produktów pokrewnych: Microsoft Dynamics 365 for
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Rozpoczynanie korzystania z projektu</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Przygotowywanie do rozpoczęcia eksploatacji</a></p>
-  
+
 <h3><a href="../financials/index.md">Zarządzanie finansami</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Rozrachunki z dostawcami</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Rozrachunki z odbiorcami</a></p>
@@ -65,7 +65,7 @@ Wiele z nich dotyczy również produktów pokrewnych: Microsoft Dynamics 365 for
 <p><a href="../financials/public-sector/public-sector-functionality.md">Sektor publiczny</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Funkcje wymagane lokalnymi przepisami prawa</a></p>
 
-<H3><a href="hr/hr-landing-page.md">Zasoby ludzkie</a></h3>
+<h3><a href="hr/hr-landing-page.md">Zasoby ludzkie</a></h3>
 <p><a href="../talent/manage-benefit-program.md">Świadczenia</a></p>
 <p><a href="../talent/performance-management-overview.md">Rozwój i szkolenia pracownika etatowego</a></p>
 <p><a href="../talent/questionnaires.md">Kwestionariusz</a></p>

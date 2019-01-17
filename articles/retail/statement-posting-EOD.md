@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: d428da2a6fb8ce5d63c3373def879c9b32cfd492
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -59,11 +59,12 @@ W ramach ulepszania funkcji księgowania zestawień wprowadzono trzy nowe parame
 
 Ponadto na skróconej karcie **Przetwarzanie wsadowe** wprowadzono pole **Maksymalna liczba równoległych operacji księgowania zestawień**. To pole określa liczbę zadań wsadowych, które powinny być wykonywane w tym samym czasie. Obecnie trzeba ręcznie ustawiać wartość w tym polu.
 
-Ponadto w nowym procesie księgowania konieczne jest zdefiniowanie ustawienia **Produkt karty upominkowej** na skróconej karcie **Karta upominkowa** dostępnej na karcie **Księgowanie** na stronie **Parametry sieci sprzedaży**. Ta zasada obowiązuje, nawet jeśli organizacja nie używa żadnych kart upominkowych. 
+Ponadto w nowym procesie księgowania konieczne jest zdefiniowanie ustawienia **Produkt karty upominkowej** na skróconej karcie **Karta upominkowa** dostępnej na karcie **Księgowanie** na stronie **Parametry sieci sprzedaży**. Ta zasada obowiązuje, nawet jeśli organizacja nie używa żadnych kart upominkowych.
 
 Należy zwrócić uwagę, że wszystkie ustawienia i parametry związane z księgowaniem zestawień, które są zdefiniowane w oknie Sklepy sieci sprzedaży i na stronie **Parametry sieci sprzedaży**, mają zastosowanie do ulepszonej funkcji księgowania zestawień.
 
 ## <a name="processing"></a>Przetwarzanie
+
 Zestawienia mogą być obliczane i księgowane wsadowo za pomocą elementów menu **Oblicz zestawienia w partii** i **Zaksięguj zestawienia w partii**. Alternatywnie zestawienia można ręcznie obliczać i księgować przy użyciu elementu menu **Zestawienia handlu detalicznego** dostępnego w ulepszonej funkcji księgowania zestawień.
 
 Proces oraz etapy obliczania i księgowania zestawień wsadowo są takie same, jak w starszej funkcji księgowania zestawień. Jednak wprowadzono znaczne udoskonalenia w bazowym przetwarzaniu zestawień w systemach zaplecza. Te ulepszenia zwiększają odporność procesu na ewentualne problemy oraz oferują lepszy wgląd w stany i informacje o błędach. Dzięki temu użytkownicy mogą usuwać główne przyczyny błędów, a następnie kontynuować proces księgowania, nie powodując uszkodzenia danych i unikając konieczności stosowania poprawek danych.
@@ -71,6 +72,7 @@ Proces oraz etapy obliczania i księgowania zestawień wsadowo są takie same, j
 W poniższych sekcjach opisano niektóre najważniejsze ulepszenia funkcji księgowania zestawień, które są wyświetlane interfejsie użytkownika dla zestawień sprzedaży detalicznej i zaksięgowanych zestawień.
 
 ### <a name="status-details"></a>Szczegóły stanu
+
 We wszystkich procesach obliczania i księgowania wprowadzono nowy model stanów w procedurze księgowania zestawień.
 
 W poniższej tabeli opisano różne stany i ich kolejność w procesie obliczania.
@@ -109,9 +111,11 @@ Każdy stan w tabelach powyżej ma charakter niezależny i między stanami jest 
 Ponadto nagłówek sekcji drugiej i trzeciej pokazuje całościowy stan odnośnego procesu.
 
 ### <a name="event-logs"></a>Dzienniki zdarzeń
+
 Zestawienie przechodzi przez różne operacje (na przykład tworzenia, obliczania, czyszczenia i księgowania), a w trakcie cyklu życia zestawienia może być wywoływanych wiele wystąpień tej samej operacji. Na przykład po utworzeniu i obliczeniu zestawienia użytkownik może wyczyścić zestawienie i obliczyć je ponownie. Przycisk **Dzienniki zdarzeń** w grupie **Szczegóły wykonania** dla zestawienia wyświetla kompletny dziennik inspekcji wszystkich operacji, które zostały wywołane w sprawozdaniu, wraz z informacjami o tym, kiedy te operacje zostały wywołane.
 
 ### <a name="aggregated-transactions"></a>Zagregowane transakcje
+
 W trakcie procesu księgowania transakcje sprzedaży są agregowane na podstawie konfiguracji. Te zagregowane transakcje są przechowywane w systemie i używane do tworzenia zamówień sprzedaży. Każda zagregowana transakcja tworzy jedno odnośne zamówienie sprzedaży w systemie. Zagregowane transakcje można zobaczyć, naciskając przycisk **Zagregowane transakcje** w grupie **Szczegóły wykonania** dla zestawienia.
 
 Karta **Szczegóły zamówienia sprzedaży** w oknie zagregowanej transakcji pokazuje następujące informacje:
@@ -136,11 +140,13 @@ Widok zagregowanych transakcji oferuje następujące zalety:
 - Zagregowany plik XML ułatwia identyfikowanie problemów podczas tworzenia i fakturowania zamówienia sprzedaży.
 
 ### <a name="journal-vouchers"></a>Załączniki arkusza
+
 Przycisk **Załączniki arkusza** w grupie **Szczegóły wykonania** dla zestawienia powoduje wyświetlenie wszystkich transakcji załącznika utworzonych dla zestawienia, które są powiązane z rabatami, kontami przychodów/wydatków, kartami upominkowymi itd.
 
 Obecnie w programie te dane są wyświetlane tylko dla zaksięgowanych zestawień.
 
 ### <a name="payment-journals"></a>Arkusze płatności
+
 Przycisk **Arkusze płatności** w grupie **Szczegóły wykonania** dla zestawienia pokazuje wszystkie arkusze płatności utworzone dla zestawienia.
 
 Obecnie w programie te dane są wyświetlane tylko dla zaksięgowanych zestawień.

@@ -36,6 +36,7 @@ Podczas tworzenia zamówienia sprzedaży można wybrać metodę dostawy w nagł�
 Aplikacja Retail zawiera funkcje, które pozwalają użytkownikom ograniczać zakres metod dostawy dostępnych do użycia w kanale lub dla produktu oraz dozwolonych dla określonych miejsc docelowych wysyłki. Można również zdefiniować opłaty, tak aby do zamówienia odbiorcy były doliczane opłaty dodatkowe na podstawie metod dostawy wybranych dla zamówienia i na podstawie łącznej wartości zamówienia.
 
 ## <a name="define-delivery-modes"></a>Definiowanie metod dostawy
+
 Zanim będzie można określić, które metody dostawy mogą być używane do zamówień w biurze obsługi, oraz zdefiniować powiązane reguły i opłaty, należy zdefiniować metody dostawy. Wybierz kolejno opcje **Sprzedaż i marketing \> Ustawienia \> Dystrybucja \> Metody dostawy**. Wybierz opcję **Nowy**, aby utworzyć nową metodę dostawy. Alternatywnie wybierz istniejącą metodę dostawy z listy, a następnie wybierz opcję **Edytuj**, aby wprowadzić zmiany.
 
 W polu **Metoda dostawy** można wprowadzić dowolną kombinację znaków alfanumerycznych zgodnie z wymaganiami firmy. Następnie można użyć pola **Opis**, aby zapewnić dodatkowy kontekst. Pola **Grupa opłat** i **Przyspieszone** są opcjonalne i zostały dokładniej wyjaśnione w dalszej części tego tematu.
@@ -47,11 +48,13 @@ Na skróconej karcie **Produkty** można określić produkty i/lub kategorie pro
 Na skróconej karcie **Adresy** można określić kraje, regiony lub województwa, w których można i nie można używać metody dostawy. Na przykład zamówienia wysyłane do Alaski lub Hawajów nie kwalifikują się do dostawy drogą lądową. Dlatego te stany powinny zostać wykluczone z każdej metody dostawy skojarzonej z naziemną usługą dostawy, ale uwzględnione w każdej metodzie dostawy skojarzonej z powietrzną usługą dostawy.
 
 ## <a name="validate-delivery-modes-for-a-call-center-order"></a>Sprawdź poprawność metod dostawy dla zamówienia z biura obsługi
+
 Po zdefiniowaniu są metod dostawy należy wykonać zadanie wsadowe **Metody dostawy dla procesu**. To zadanie udostępnia metody dostawy, tak aby mogły zostać użyte w procesach zamówienia sprzedaży dla kanałów sprzedaży detalicznej. Do uruchomienia **Przetwarzania metod dostawy** zadania, przejdź do **Sprzedaży detalicznej \> IT sprzedaży detalicznej \> Przetwarzanie metod dostawy**. To zadanie powinno być uruchamiane, ilekroć nowe metody dostawy są dodawane do kanału sprzedaży detalicznej lub kiedy wprowadza się zmiany do istniejących relacji trybu dostawy/kanału.
 
 Po wykonaniu zadania wsadowego **Metody dostawy dla procesu** można przejść do okna **Handel detaliczny \> Kanały \> Biura obsługi \> Wszystkie biura obsługi**. Na stronie **Wszystkie biura obsługi** w okienku akcji na karcie **Ustawienia** wybierz opcję **Metody dostawy**. Na stronie **Metody dostawy** znajduje się lista wszystkich prawidłowych metod dostawy dla wybranego kanału biura obsługi. Aby edytować istniejącą metodę dostawy lub dodać nowe metody dostawy, należy wybrać **Zarządzanie metodami dostawy**. Należy zauważyć, że zadanie **Metody dostawy dla procesu** musi zostać uruchomione po wprowadzeniu jakichkolwiek zmian.
 
 ## <a name="define-charges-for-delivery-services"></a>Definiowanie opłat za usługi dostawcze
+
 Podczas tworzenia zamówienia sprzedaży dla odbiorców, firma może dodać koszty, które są naliczane automatycznie w zależności od metody dostawy wybranej dla zamówienia. Opłaty te można skonfigurować tak, aby były takie same dla wszystkich odbiorców i metod dostawy. Alternatywnie opłaty mogą się różnić i zależeć od odbiorcy i/lub metody dostawy wybranych dla zamówienia sprzedaży.
 
 Aby zdefiniować opłaty, przejdź do **Sprzedaż detaliczna \> Konfiguracja kanału \> Opłaty \> Automatyczne opłaty**. Wybierz opcję **Nowy**, aby dodać nowe opłaty. Alternatywnie wybierz istniejący wpis, a następnie wybierz opcję **Edytuj**.
@@ -73,6 +76,7 @@ Można korzystać z kombinacji kategorii opłat w zależności od potrzeb biznes
 ![Przykład mieszanych opłat warstwowych](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Stosowanie metod dostawy podczas wprowadzania zamówień w biurze obsługi
+
 W czasie tworzenia nowego zamówienia sprzedaży, wartość **Metody dostawy** musi być określona w skróconej karcie **Dostawa** nagłówka zamówienia sprzedaży. To pole może być wypełnione automatycznie, na podstawie wartości domyślnych z poziomu rekordu klienta.
 
 Metoda dostawy, która jest określona w nagłówku zamówienia, jest automatycznie kopiowana do wierszy zamówienia sprzedaży przy ich tworzeniu. Można jednak zmienić konfigurację metody dostawy dla określonej pozycji wiersza na karcie **Dostawa** w sekcji **Szczegóły wiersza** na stronie wprowadzania zamówienia sprzedaży.
@@ -80,11 +84,13 @@ Metoda dostawy, która jest określona w nagłówku zamówienia, jest automatycz
 Jeśli wybrana metoda dostawy jest nieprawidłowa dla produktu albo adresu dostawy zdefiniowanego dla zamówienia lub wiersza zamówienia, pojawi się komunikat o błędzie. Następnie należy wybrać tryb dostawy zdefiniowany do obsługi danej konfiguracji produktu lub adresu.
 
 ## <a name="calculation-of-delivery-charges-during-entry-of-order"></a>Obliczanie opłat za dostawę podczas wprowadzania zamówienia
+
 Jeśli ustawienie **Włącz kończenie zamówienia** jest włączone w kanale biura obsługi, opłaty za wysyłkę są obliczane automatycznie dla zamówień sprzedaży, gdy użytkownicy wybierają opcję **Zakończ**. Komunikat jest wyświetlany w górnej części strony **Podsumowanie zamówienia sprzedaży**: „Obliczono opłaty warstwowe”. Opłaty obliczane są dodawane do wartości pola **Suma sprzedaży**. Na skróconej karcie **Kwota** pole **Opłaty** pokazuje łączną kwotę wszystkich opłat, które zostały obliczone dla zamówienia i wierszy. Aby wyświetlić bardziej szczegółowy podział opłat, zaznacz **Zamówienie** na stronie **Podsumowaniu zamówienia sprzedaży**, a następnie wybierz opcję **Opłaty**, aby przeglądać, dodawać lub edytować opłaty. Należy zwrócić uwagę, że obliczanie opłat za dostawę w nagłówku zamówienia jest oparte na metodzie dostawy powiązanej z nagłówkiem. Opłaty za dostawy na poziomie wiersza są obliczane zgodnie z metodą dostawy skonfigurowaną w wierszu sprzedaży. W przypadku używania wielu metod dostawy w różnych wierszach można zastosować wiele opłat i dodać je razem. Łączna kwota zostanie wyświetlona w polu **Opłaty** na stronie **Podsumowanie zamówienia sprzedaży**.
 
 Jeśli ustawienie **Włącz kończenie zamówienia** jest wyłączone, użytkownicy muszą ręcznie inicjować obliczanie opłat. Na stronie **Zamówienie sprzedaży** w okienku akcji na karcie **Sprzedaż** w grupie **Obliczanie** wybierz opcję **Opłaty warstwowe**. Pojawi się komunikat „Obliczono opłaty warstwowe”. Można wybrać opcję **Opłaty** na karcie **Sprzedaż**, aby wyświetlić, edytować lub usuwać obliczone opłaty.
 
 ## <a name="use-expedited-delivery-modes-on-call-center-orders"></a>Użyj metody dostawy przyspieszonej dla zamówień z biura obsługi
+
 Opcjonalnie można dołączyć kod przyspieszenia do wszelkich metod dostawy skonfigurowanych przez użytkownika. Ten kod jest używany jako priorytetyzacja narzędzia do sortowania i raportowania. Obecnie nie powoduje stosowania opłat dodatkowych do zamówienia. Aby ustawić kody wysyłkowe, przejdź do modułu **Sprzedaż i marketing \> Ustawienia \> Dystrybucja \> Kody wysyłki**.
 
 Na przykład dla zamówień, które zostaną wysłane w następnym dniu pocztą lotniczą, pobranie musi zostać wykonane w magazynie do 13.00. W takim przypadku można utworzyć kod przyspieszenia, a następnie połączyć go z dowolną metodą dostawy w następnym dniu skonfigurowanym w systemie. Gdy magazyn tworzy grupę czynności, właściwy kod przyspieszenia w polu **Przyspieszeń** może być używany jako filtr, tak aby pobranie było wykonywane tylko dla zamówień, które mają metodę dostawy połączoną z tym kodem.

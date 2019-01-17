@@ -66,7 +66,7 @@ Lokalne wyszukiwanie produktów jest teraz bardziej przyjazne dla użytkownika. 
 - Sprzedawcy mogą teraz konfigurować wyszukiwanie produktu tak, aby wyświetlać sugestie wyszukiwania, gdy użytkownicy wpisują nazwy produktów. Nowe ustawienie tej funkcji jest dostępne w profilu funkcji POS, w grupie o nazwie **Wyszukiwanie produktu**. To ustawienie nosi nazwę **Pokaż sugestie podczas wpisywania**. Ta funkcja może ułatwić pracownikom szybkie znalezienie wyszukiwanego produktu, ponieważ nie muszą wprowadzać ręcznie pełnej nazwy.
 - Algorytm wyszukiwania produktów wyszukuje także szukane terminy we właściwości **Wyszukaj nazwę** produktu.
 
-![Sugestie produktów](./media/Productsuggestions.png "Sugestie produktów")
+    ![Sugestie produktów](./media/Productsuggestions.png "Sugestie produktów")
 
 ## <a name="customer-search"></a>Wyszukiwanie odbiorcy
 

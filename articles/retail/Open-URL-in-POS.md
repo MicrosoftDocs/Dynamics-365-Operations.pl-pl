@@ -19,14 +19,16 @@ ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
 ms.translationtype: HT
-ms.sourcegitcommit: f7df0a91948a494465fbd55af99757e3890357ce
-ms.openlocfilehash: 4b8a0291855460b79f3a241eccb4b55b009804bf
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: d2b692ac86244eca31780a558112167391fc6d77
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
 # <a name="open-url-in-pos"></a>Otwieranie adresu URL w aplikacji punktu sprzedaży
+
+[!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak można skonfigurować przycisk w punkcie sprzedaży (POS), aby otworzyć adres URL. Ta funkcja nie wymaga dostosowania kodu i może być skonfigurowana przez dowolną osobę, która nie ma roli dewelopera.
 
@@ -34,48 +36,52 @@ Ta funkcja umożliwia konfigurację przycisku w punkcie sprzedaży, otwieranie a
 
 - Otwórz w nowym oknie.
 - Otwórz w punkcie sprzedaży.
-- Otwórz aplikację macierzystą. 
+- Otwórz aplikację macierzystą.
 
 ## <a name="open-in-new-window"></a>Otwórz w nowym oknie
 
 Ta konfiguracja określa, czy należy otworzyć adres URL w nowym oknie lub w ramach aplikacji. W przypadku skonfigurowania, aby otworzyć adres URL sieci web w aplikacji, panel nawigacji z boku i górny pasek punktu sprzedaży są widoczne i dostępne do interakcji z użytkownikiem. W przypadku konfiguracji otwierania w nowym oknie adres URL zostanie otwarty w nowym oknie aplikacji w Modern POS for Windows i na nowej karcie przeglądarki we wszystkich innych klientach punktu sprzedaży. Aby włączyć tę opcję, należy skonfigurować adres URL z zaznaczoną opcją **Otwórz w nowym oknie**.
 
 ## <a name="open-within-pos"></a>Otwórz w punkcie sprzedaży.
+
 Otwieranie adresu URL sieci web w punkcie sprzedaży jest obecnie obsługiwane tylko w systemie Windows Modern POS. Trwa opracowywanie tej funkcji dla innych klientów; będzie dostępna później. Aby włączyć tę opcję, należy skonfigurować adres URL z niezaznaczoną opcją **Otwórz w nowym oknie**.
 
 ## <a name="open-a-native-app"></a>Otwórz aplikację macierzystą.
-Ta funkcja umożliwia określenie URL innych niż sieci web, aby otworzyć aplikację macierzystą. Na przykład można określić protokoły, takie jak MailTo, SIP, IM lub MSTEAMS, które następnie są obsługiwane przez odpowiednie aplikacje natywne na urządzeniu hostującym. Aby włączyć tę opcję, należy skonfigurować adres URL z zaznaczoną opcją **Otwórz w nowym oknie**. 
 
-- Na komputerach z systemem Windows, zobacz [eksport lub import domyślnych skojarzeń aplikacji](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations), aby ustawić domyślne powiązania protokołu, jeśli konfigurujesz komputer przy użyciu Deployment Image Servicing and Management (DISM). 
-- Jeśli używasz MDM, takich jak Intune do zarządzania na komputerach z systemem Windows, zobacz [CSP zasad - ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults). 
-- Jeśli jesteś programistą i tworzysz niestandardową witrynę sieci Web, zobacz [uruchamianie aplikacji domyślnej dla identyfikatora URI](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app). 
+Ta funkcja umożliwia określenie URL innych niż sieci web, aby otworzyć aplikację macierzystą. Na przykład można określić protokoły, takie jak MailTo, SIP, IM lub MSTEAMS, które następnie są obsługiwane przez odpowiednie aplikacje natywne na urządzeniu hostującym. Aby włączyć tę opcję, należy skonfigurować adres URL z zaznaczoną opcją **Otwórz w nowym oknie**.
+
+- Na komputerach z systemem Windows, zobacz [eksport lub import domyślnych skojarzeń aplikacji](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations), aby ustawić domyślne powiązania protokołu, jeśli konfigurujesz komputer przy użyciu Deployment Image Servicing and Management (DISM).
+- Jeśli używasz MDM, takich jak Intune do zarządzania na komputerach z systemem Windows, zobacz [CSP zasad - ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults).
+- Jeśli jesteś programistą i tworzysz niestandardową witrynę sieci Web, zobacz [uruchamianie aplikacji domyślnej dla identyfikatora URI](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app).
 
 ## <a name="open-a-native-app-seamlessly"></a>Otwórz aplikację macierzystą bez problemów.
+
 Windows, iOS i Android także umożliwiają łatwiejsze otwarcie aplikacji na podstawie powiązania protokołu aplikacji. Jeśli aplikacji nie jest jeszcze skonfigurowana do obsługi otwarcia w przeglądarce sieci web, może być konieczne ustawienie tej opcji.
 
 - Dla systemu Windows, zobacz [Włączanie aplikacji dla witryny sieci Web przy użyciu programów obsługi URI](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking).
 - W przypadku iOS zobacz [uniwersalne łącza dla deweloperów](https://developer.apple.com/ios/universal-links/).
-- W przypadku Androida zobacz [obsługa łączy aplikacji Android](https://developer.android.com/training/app-links/).  
+- W przypadku Androida zobacz [obsługa łączy aplikacji Android](https://developer.android.com/training/app-links/).
 
-
-|   Klient                |Otwórz w nowym oknie |Otwórz aplikację macierzystą | Otwórz w punkcie sprzedaży.            | Szczegóły                           |
-|-------------------------|-------------------|----------------|--------------------------|-----------------------------------|
-| Nowoczesny punkt sprzedaży w Windows   | ✓*                |    ✓          |       ✓                  | *(Otwiera w nowym oknie nowoczesnego punktu sprzedaży)   |
-| Cloud POS               | ✓*                |    ✓          |       X                   |  * otwiera się na nowej karcie przeglądarki       |
-| Nowoczesny punkt sprzedaży w iOS       | ✓*                |    ✓          |       X                  |  * otwiera się na nowej karcie przeglądarki        |
-| Modern POS na Androida   | ✓*                |    ✓          |       X                  |  * otwiera się na nowej karcie przeglądarki        |
+| Klient                | Otwórz w nowym oknie | Otwórz aplikację macierzystą | Otwórz w punkcie sprzedaży. | Szczegóły                           |
+|-----------------------|--------------------|-----------------|-----------------|-----------------------------------|
+| Nowoczesny punkt sprzedaży w Windows | ✓\*                | ✓               | ✓              | \* Otwiera w nowym oknie nowoczesnego punktu sprzedaży |
+| Cloud POS             | ✓\*                | ✓               | X              | \* Otwiera się na nowej karcie przeglądarki        |
+| Nowoczesny punkt sprzedaży w iOS     | ✓\*                | ✓               | X              | \* Otwiera się na nowej karcie przeglądarki        |
+| Modern POS na Androida | ✓\*                | ✓               | X              | \* Otwiera się na nowej karcie przeglądarki        |
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
+
 Przed rozpoczęciem zobacz jak skonfigurować [układy ekranu dla punktu sprzedaży (POS)](pos-screen-layouts.md).
 
 ## <a name="open-url-in-pos"></a>Otwieranie adresu URL w aplikacji punktu sprzedaży
+
 Aby skonfigurować adres URL, który można otworzyć w punkcie sprzedaży, wykonaj następujące kroki.
 
-1.  W centrali przejdź do **Sprzedaż detaliczna > Konfiguracja kanału > Konfiguracja punktu sprzedaży > Punkt sprzedaży > Układy ekranu**.
-2.  Wybierz **przycisk siatki > konstruktor**.
-3.  Utwórz nowy przycisk.
-4.  Wybierz Właściwości **przycisku**.
-5.  Wybierz akcję **Otwórz URL**.
-6.  Wprowadź URL, którego chcesz użyć.
-7.  Skonfiguruj, czy należy otworzyć adres URL w nowym oknie.
+1. W centrali przejdź do **Sprzedaż detaliczna \> Konfiguracja kanału \> Konfiguracja punktu sprzedaży \> Punkt sprzedaży \> Układy ekranu**.
+2. Wybierz **Siatki przycisków \> Konstruktor**.
+3. Utwórz nowy przycisk.
+4. Wybierz Właściwości **przycisku**.
+5. Wybierz akcję **Otwórz URL**.
+6. Wprowadź URL, którego chcesz użyć.
+7. Skonfiguruj, czy należy otworzyć adres URL w nowym oknie.
 

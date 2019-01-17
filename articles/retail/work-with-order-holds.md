@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 8dcba52526dd9dad1bd8b9753224f6386923f5a1
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: ba8fade84358c960dcfd1e8d9ffef1ffede34871
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -57,7 +57,7 @@ Po wprowadzeniu i zapisaniu informacji o wstrzymaniu użytkownik może zamknąć
 
 Jeśli flaga **Włącz kończenie zamówienia** jest włączona w kanale biura obsługi, płatność nie musi być stosowana do wstrzymanego zamówienia. Z drugiej strony w przypadku zamówienia sprzedaży, które nie jest wstrzymane, użytkownicy nie mogą opuścić strony wprowadzania zamówienia do momentu zastosowania płatności. Oczywiście przed zwolnieniem wstrzymania zamówienia musi zostać dokonana płatność.
 
-Ponadto użytkownicy biura obsługi mogą nakładać ręczne wstrzymania z powodu oszustwa na zamówienia, które z jakiegoś powodu są podejrzane. Zamówienia mogą także być wstrzymywane automatycznie, jeśli spełniają aktywne kryteria i reguły decydujące o uznaniu za oszustwo. Aby uzyskać więcej informacji na temat tego rodzaju wstrzymania zamówienia, zobacz [Konfigurowanie alertów o oszustwie](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Ponadto użytkownicy biura obsługi mogą nakładać ręczne wstrzymania z powodu oszustwa na zamówienia, które z jakiegoś powodu są podejrzane. Zamówienia mogą także być wstrzymywane automatycznie, jeśli spełniają aktywne kryteria i reguły decydujące o uznaniu za oszustwo. Aby uzyskać więcej informacji na temat tego rodzaju wstrzymania zamówienia, zobacz [Konfigurowanie alertów o oszustwie](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Podgląd i zarządzanie wstrzymanymi zamówieniami
 

@@ -42,25 +42,30 @@ Moduł biura obsługi nie tylko pozwala tworzyć zamówienia, ale również ofer
 Ta strona zawiera łącza do odnośnej dokumentacji związanej z instalacją, konfiguracją i merytorycznym użytkowaniem funkcji biura obsługi w programie Dynamics 365 for Retail.
 
 ## <a name="configure-the-call-center"></a>Konfigurowanie biura obsługi
+
 [Konfigurowanie opcji przetwarzania zamówień](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Konfigurowanie przetwarzania zamówień
+
 [Konfigurowanie alertów o oszustwie](set-up-fraud-alerts.md)
 
 [Ręczne wstrzymania zamówień](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Konfigurowanie przetwarzania płatności
+
 [Metody płatności w biurze obsługi](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Konfigurowanie metod dostawy
+
 [Konfigurowanie metod dostawy i opłat w biurze obsługi](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a>Konfigurowanie marketingu bezpośredniego
+
 [Katalogi biura obsługi](call-center-catalogs.md)
 
 [Konfigurowanie analizy RFM](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Konfigurowanie programów sprzedaży ciągłej
-[Konfigurowanie programu sprzedaży ciągłej dla biura obsługi](set-up-continuity-program.md)
 
+[Konfigurowanie programu sprzedaży ciągłej dla biura obsługi](set-up-continuity-program.md)
 

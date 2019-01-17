@@ -35,21 +35,19 @@ W programie Microsoft Dynamics 365 for Retail istnieje możliwość monitorowani
 
 W programie Dynamics 365 for Retail użytkownicy mogą monitorować wyniki sprzedaży i uzyskiwane marże w czasie rzeczywistym na różnych poziomach hierarchii organizacyjnej dla następujących wymiarów:
 
--   Produkty
--   Kategorie
--   Rabaty
--   Lata jako przedział czasu
--   Kasy/terminale
--   Personel/pracownicy
--   Odbiorcy
--   Jednostki operacyjne
+- Produkty
+- Kategorie
+- Rabaty
+- Lata jako przedział czasu
+- Kasy/terminale
+- Personel/pracownicy
+- Odbiorcy
+- Jednostki operacyjne
 
 Ponadto dwa specjalne raporty wykorzystujące funkcję struktury hierarchicznej pozwalają użytkownikom monitorować osiąganą sprzedaż i marże poprzez przechodzenie do szczegółów z najwyższego węzła kategorii do węzłów poszczególnych liści kategorii w domyślnej hierarchii kategorii produktów detalicznych. Użytkownicy mogą również przechodzić do szczegółów z najwyższej jednostki operacyjnej do poszczególnych kanałów w hierarchii organizacyjnej, którą zdefiniowano jako domyślną hierarchię organizacyjną dla hierarchii raportowania sprzedaży detalicznej. Raporty można otwierać z dowolnej z następujących lokalizacji:
 
--   Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty**
--   Obszar roboczy **Zarządzanie kategoriami i produktami** &gt; **Handel detaliczny** &gt; **Produkty i kategorie** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty**
--   Obszar roboczy **Zarządzanie cenami i rabatami** &gt; **Handel detaliczny** &gt; **Ceny i rabaty** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty**
--   Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży**
-
-
+- Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty**
+- Obszar roboczy **Zarządzanie kategoriami i produktami** &gt; **Handel detaliczny** &gt; **Produkty i kategorie** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty**
+- Obszar roboczy **Zarządzanie cenami i rabatami** &gt; **Handel detaliczny** &gt; **Ceny i rabaty** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty**
+- Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży**
 

@@ -59,4 +59,3 @@ Nowej ulepszonej struktury można używać dla właściwości produktów w celu 
 
 ![Okno dialogowe Aktualizuj produkty](media/NewUpdateProductsEnhancedView.PNG)
 
-

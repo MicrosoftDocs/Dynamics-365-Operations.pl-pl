@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 918f8555bc3d2e4a79262b428d5c7ba278fa7409
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/09/2018
 [!include [banner](includes/banner.md)]
 
 *Atrybuty* umożliwiają dokładniejsze opisanie produktu i jego właściwości za pomocą pól zdefiniowanych przez użytkownika (takich jak **Rozmiar pamięci**, **Pojemność dysku twardego**, **Zgodność z normą Energy Star** i tak dalej). W programie Microsoft Dynamics 365 for Finance and Operations atrybuty można skojarzyć z różnymi jednostkami modułu Retail, takimi jak kategorie produktów i kanały sprzedaży detalicznej, oraz ustawić im wartości domyślne. Wtedy produkty dziedziczą atrybuty i wartości domyślne, gdy zostaną powiązane z kategoriami produktów lub kanałami sprzedaży detalicznej. Wartości domyślne można zastąpić na poziomie poszczególnych produktów, na poziomie kanału sprzedaży detalicznej lub w katalogu sieci sprzedaży.
- 
+
 Na przykład typowy produkt w postaci telewizora może mieć następujące atrybuty.
 
 | Kategoria   | Atrybut                | Możliwe wartości          | Wartość domyślna |
@@ -50,7 +50,7 @@ Na przykład typowy produkt w postaci telewizora może mieć następujące atryb
 | Plazmowy     | Minimalna temperatura      | 32–110 stopni              | 32            |
 |            | Maksymalna temperatura        | 32–110 stopni              | 100           |
 | Projekcyjny | Gwarancja na lampę kineskopową | 6, 12 lub 18 miesięcy         | 12            |
-|            | liczba lamp kineskopowych    | 1–5                         | 3             |
+|            | \# lamp kineskopowych   | 1–5                         | 3             |
 
 ## <a name="attributes-and-attribute-types"></a>Atrybuty i typy atrybutów
 
@@ -104,7 +104,7 @@ Poniżej przedstawiono pozostałe opcje metadanych atrybutów dostępne na stron
 
 Te opcje były pierwotnie przeznaczone do poprawy funkcji wyszukiwania w sklepach internetowych. Co prawda program Finance and Operations nie zawiera w standardzie funkcjonalności sklepu internetowego, ale obejmuje zestaw SDK do publikowania dla handlu elektronicznego. Odbiorcy mogą używać tego zestawu SDK do wprowadzania produktów do dowolnych indeksów wyszukiwania. Mimo iż dane produktów są importowane, odbiorcy nadal powinni być w stanie odróżniać dane, które można przeszukiwać, na których można wykonywać zapytania itd. W ten sposób mogą zbudować optymalny indeks obejmujący tylko atrybuty, które *w ich opinii* powinny być indeksowane.
 
-Aby uzyskać więcej informacje o przeznaczeniu tych pozostałych opcji, zobacz [Omówienie schematu wyszukiwania w programie SharePoint Server 2013](https://technet.microsoft.com/en-us/library/jj219669.aspx).
+Aby uzyskać więcej informacje o przeznaczeniu tych pozostałych opcji, zobacz [Omówienie schematu wyszukiwania w programie SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Ustawienia filtrów atrybutów
 
@@ -121,7 +121,7 @@ Strona **Preferencje wyświetlania filtra** zawiera następujące pola:
 - **Sterowanie wyświetlaniem** — dostępne są następujące opcje:
 
     - **Lista** — ta opcja jest dostępna dla wszystkich typów atrybutów.
-    - **Zakres** — ta opcja jest dostępna dla następujących typów atrybutów: **Waluta**, **Dziesiętna** i **Całkowita**. 
+    - **Zakres** — ta opcja jest dostępna dla następujących typów atrybutów: **Waluta**, **Dziesiętna** i **Całkowita**.
     - **Suwak** — ta opcja jest dostępna dla następujących typów atrybutów: **Waluta**, **Dziesiętna** i **Całkowita**.
     - **Suwak z paskami** — ta opcja jest dostępna dla następujących typów atrybutów: **Waluta**, **Dziesiętna** i **Całkowita**.
 
@@ -228,13 +228,13 @@ Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów 
 5. Na skróconej karcie **Produkty** wybierz wymagany produkt, a następnie nad siatką produktów wybierz opcję **Atrybuty**.
 6. Na następnej skróconej karcie zaktualizuj wartości wymaganych atrybutów:
 
-   - Udostępnione media produktu
-   - Udostępnione atrybuty produktu
-   - Kanał medialny
-   - Atrybuty produktu kanału
+    - Udostępnione media produktu
+    - Udostępnione atrybuty produktu
+    - Kanał medialny
+    - Atrybuty produktu kanału
 
-     > [!NOTE]
-     > Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.
+    > [!NOTE]
+    > Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.
 
 ![Grupy atrybutów produktów z katalogu](media/CatalogProdAttrValues.png)
 
@@ -250,11 +250,11 @@ Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów 
 
 5. Na następnej skróconej karcie zaktualizuj wartości wymaganych atrybutów:
 
-   - Udostępnione media produktu
-   - Udostępnione atrybuty produktu
-   - Kanał medialny
-   - Atrybuty produktu kanału
+    - Udostępnione media produktu
+    - Udostępnione atrybuty produktu
+    - Kanał medialny
+    - Atrybuty produktu kanału
 
-     > [!NOTE]
-     > Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.
+    > [!NOTE]
+    > Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.
 

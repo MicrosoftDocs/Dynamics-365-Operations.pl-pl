@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 64cd387f8a6ab693d159cd659fca51fa6568ee39
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 01c1fa876dd66ba6f0e1cdcecff56f424e117bd9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -34,26 +34,25 @@ Aby skonfigurować działanie równoległe, należy wykonać następujące proce
 Działanie równoległe składa się z odgałęzień przepływu pracy, które są uruchomione w tym samym czasie.
 
 ## <a name="name-a-parallel-activity"></a>Nazywanie działania równoległego
+
 Wykonaj następujące kroki, aby nazwać działanie równoległe.
-1.  Kliknij działanie równoległe prawym przyciskiem myszy i wybierz polecenie **Właściwości**, aby otworzyć formularz **Właściwości**.
-2.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
-3.  W polu **Nazwa** wprowadź unikatową nazwę działania równoległego.
-4.  Kliknij przycisk **Zamknij**.
+
+1. Kliknij działanie równoległe prawym przyciskiem myszy i wybierz polecenie **Właściwości**, aby otworzyć formularz **Właściwości**.
+2. W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
+3. W polu **Nazwa** wprowadź unikatową nazwę działania równoległego.
+4. Kliknij przycisk **Zamknij**.
 
 ## <a name="configure-the-branches-of-a-parallel-activity"></a>Konfigurowanie odgałęzień działania równoległego
+
 Wykonaj następujące kroki, aby dodać i skonfigurować gałęzie działania równoległego.
+
 1. Kliknij dwukrotnie działanie równoległe, aby wyświetlić jego odgałęzienia.
-2. Aby dodać gałąź, przeciągnij element **Gałąź** z obszaru **Elementy przepływu pracy** na punkt wstawiania na kanwie. Na poniższej ilustracji przedstawiono punkt wstawiania.![Punkt wstawiania](./media/workflow_insertionpoint.gif)
+2. Aby dodać gałąź, przeciągnij element **Gałąź** z obszaru **Elementy przepływu pracy** na punkt wstawiania na kanwie. Na poniższej ilustracji przedstawiono punkt wstawiania.
 
-   |                                              <strong>Uwaga</strong>                                               |
-   |------------------------------------------------------------------------------------------------------------------|
-   | Kolejność odgałęzień jest nieważna, ponieważ wszystkie gałęzie działania równoległego są uruchamiane jednocześnie. |
+    ![Punkt wstawiania](./media/workflow_insertionpoint.gif)
 
+    > [!NOTE]
+    > Kolejność odgałęzień jest nieważna, ponieważ wszystkie gałęzie działania równoległego są uruchamiane jednocześnie.
 
 3. Aby skonfigurować poszczególne gałęzie, zobacz [Konfigurowanie odgałęzienia równoległego](configure-parallel-branch-workflow.md).
-
-
-
-
-
 

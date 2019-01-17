@@ -3,7 +3,7 @@ title: "Konfigurowanie zarządzania ofertami"
 description: "W tym temacie opisano sposób konfigurowania zarządzania ofertami w aplikacji Talent."
 author: josaw
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fa2f2f9f67562524961352a87a7db49992776e46
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 # <a name="set-up-offer-management"></a>Konfigurowanie zarządzania ofertami 
@@ -105,7 +105,7 @@ Aby przekazać plik reguł danych oferty, należy wykonać następujące czynno�
 
 1.  Można usunąć istniejący przekazany zestaw reguł, jeśli definiowany symbol zastępczy nie jest używany w innym szablonie dokumentu.
 
->[!UWAGI]
+>[!NOTE]
 > - Pod każdym symbolem zastępczym można umieścić tylko jeden unikatowy zestaw kolumn, od których zależy symbol. Na przykład jeśli symbol zastępczy **Wynagrodzenie roczne** zależy od kolumn **Lokalizacja funkcji** i **Poziom**, nie można przekazać innego zestawu reguł, w którym symbol zastępczy **Wynagrodzenie roczne** zależy od innego zestawu kolumn.
 
 > - Przykładowe zestawy reguł danych oferty można pobierać na karcie **Przykłady** na stronie **Reguły danych oferty**.
@@ -136,7 +136,7 @@ Aby utworzyć szablon dokumentu oferty, wykonaj następujące czynności.
 
     - Umieszczenie hasztagu symbolu zastępczego danych oferty bezpośrednio w odpowiednim miejscu. Wpisz znak **\#**, a następnie rozpocznij wpisywanie nazwy symbolu zastępczego danych oferty. Pojawi się lista rozwijana z opcjami. Kliknij opcję lub naciśnij klawisz **Enter**, aby wstawić symbol zastępczy danych oferty.
 
-    >[!UWAGI]
+    >[!NOTE]
     > - Aby skojarzyć symbol zastępczy z szablonem dokumentu oferty bez pokazywania wartości symbolu kandydatowi, umieść wskaźnik myszy nad symbolem zastępczym danych oferty i kliknij ikonę **Przypnij**. Spowoduje to przesunięcie symbolu zastępczego do sekcji **Przypięte dane oferty** w szablonie dokumentu oferty. Aby odpiąć, wykonaj te same czynności, ale na liście symboli zastępczych danych oferty kliknij pozycję **Odepnij**.
 
     > - Aby wyświetlić listę aktywnych symboli zastępczych danych oferty, przejdź do karty **Aktywne** w prawym okienku.
@@ -175,7 +175,7 @@ Pakiety ofert to drugie artefakty oferty, które są udostępniane kandydatowi. 
 
 1.  Kliknij przycisk **Dodaj szablon**.
 
-    >[!UWAGI]
+    >[!NOTE]
     > - Możesz utworzyć nowy szablon albo wybrać jeden z istniejących.
 
     > - Jeśli postanowisz dodać istniejący szablon, upewnij się, że szablon dokumentu oferty został zapisany, sfinalizowany i oznaczony jako aktywny.
@@ -198,8 +198,10 @@ Istnieje kilka etapów procesu tworzenia oferty, które mogą być konfigurowane
 
 - **Funkcje oferty dla kandydata** — Jako administrator możesz określić, czy wszystkie oferty mają datę ważności, a jeśli tak, ile powinien wynosić domyślny okres ważności oferty. Można również określić, czy kandydaci mają prawo odrzucać oferty.
 
-- **Podpisy elektroniczne** — Obecnie jedną dostępną opcją podpisywania elektronicznego jest wpisanie przez kandydata swojego imienia i nazwiska w pakiecie oferty podczas akceptowania oferty. W przyszłości dodamy integrację z innymi rozwiązaniami dostawców usług podpisu elektronicznego.
+- **e-podpisy** — jako administrator, można także wybrać metodę używaną przez kandydatów do podpisywania ofert.
+    - Adobe Sign — wszystkie pakiety ofert będą wysyłane i podpisywane przez Adobe Sign. Każdy twórca oferty publikujący ofertę musi mieć licencję Adobe Sign połączoną z Attract. 
 
+    - ESign — jest to opcja domyślna, dostępna od razu po pierwszym uruchomieniu, zapewniająca użytkownikowi opcję podpisania oferty przez wpisanie imienia i nazwiska oraz inicjałów.
 
 Aby uzyskać więcej informacji o procesie tworzenia oferty, zobacz [Tworzenie, zatwierdzanie i podpisywanie ofert](./creating-offers.md).
 
