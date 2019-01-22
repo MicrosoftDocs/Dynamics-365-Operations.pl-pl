@@ -26,7 +26,6 @@ ms.lasthandoff: 12/06/2018
 # <a name="process-collection-letters"></a>Przetwarzanie ponagleń
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../../includes/preview-banner.md)]
 
 W tej procedurze pokazano sposób tworzenia, drukowania i księgowania ponagleń. W zadaniu wykorzystano firmę demonstracyjną USMF.
 
