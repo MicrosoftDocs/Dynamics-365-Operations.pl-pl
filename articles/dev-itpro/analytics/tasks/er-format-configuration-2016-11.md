@@ -35,8 +35,10 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu 
 2. Kliknij opcję **Konfiguracje raportowania**.
 3. W drzewie zaznacz element **Płatności (model uproszczony)**.
 4. Kliknij przycisk **Utwórz konfigurację**, aby otworzyć rozwijane okno dialogowe.
+
  > [!NOTE]
  > Jeśli nie widać przycisku **Utwórz konfigurację**, należy włączyć tryb projektowania na stronie **Parametry raportowania elektronicznego**. 
+ 
 5. W polu **Nowy** wpisz **Format oparty na modelu danych PaymentModel**.
 6. W polu **Nazwa** wpisz **BACS (fikcyjny brytyjski)**.
 7. W polu **Opis** wpisz **Format płatności dla dostawcy BACS (fikcyjny brytyjski)**.
@@ -44,6 +46,7 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu 
     * Można zdefiniować określony format dokumentu elektronicznego. Pozostaw to pole puste, aby wybrać format w czasie wykonywania.  
 8. W polu **Definicja modelu danych** wprowadź lub wybierz wartość.
 9. Kliknij przycisk **Utwórz konfigurację**. Utworzono nową konfigurację. Wersja robocza może służyć do przechowywania formatu projektu w celu zarządzania dokumentami elektronicznymi.  
+
  > [!NOTE]
  > Jeśli nie widać przycisku **Utwórz konfigurację**, należy włączyć tryb projektowania na stronie **Parametry raportowania elektronicznego**.
 
