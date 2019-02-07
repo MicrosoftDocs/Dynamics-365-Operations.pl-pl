@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b40b81fc24086e73b54cfe0cb5e6a81ec5838ab5
+ms.sourcegitcommit: 901ab6e309754338925c34c2cbecb3b83a0b0452
+ms.openlocfilehash: 48787d1eb662322c726698573b27023ae9eed56f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 02/07/2019
 
 ---
 
@@ -30,7 +30,6 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 <span data-ttu-id="64c5e-104">W tym temacie opisano elementy koncepcyjne, które może zawierać zadanie, oraz przykłady wykorzystania tych elementów w organizacji.</span><span class="sxs-lookup"><span data-stu-id="64c5e-104">This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization.</span></span> 
 
@@ -41,7 +40,7 @@ ms.lasthandoff: 08/09/2018
 ## <a name="job-titles"></a><span data-ttu-id="64c5e-115">Stanowiska</span><span class="sxs-lookup"><span data-stu-id="64c5e-115">Job titles</span></span>
 <span data-ttu-id="64c5e-116">Przed utworzeniem zadań, należy utworzyć nazwy dla tych stanowisk.</span><span class="sxs-lookup"><span data-stu-id="64c5e-116">Before you create jobs, you must set up titles for those jobs.</span></span> <span data-ttu-id="64c5e-117">Pozycje dziedziczą nazwy stanowisk od stanowisk, z którymi są skojarzone.</span><span class="sxs-lookup"><span data-stu-id="64c5e-117">Positions inherit job titles from the jobs that the positions are associated with.</span></span> 
 
-<span data-ttu-id="64c5e-118">Zarządzanie stanowiskami odbywa się na stronie **Stanowiska**, którą można otworzyć za pomocą funkcji wyszukiwania.</span><span class="sxs-lookup"><span data-stu-id="64c5e-118">Maintain job titles using the **Titles** page, which you can open by using the Search function.</span></span> <span data-ttu-id="64c5e-119">Na stronie **Stanowiska** wprowadź stanowiska, których zamierzasz używać do zadań.</span><span class="sxs-lookup"><span data-stu-id="64c5e-119">On the **Titles **page, enter the titles that you plan to use for your jobs.</span></span>
+<span data-ttu-id="64c5e-118">Zarządzanie stanowiskami odbywa się na stronie **Stanowiska**, którą można otworzyć za pomocą funkcji wyszukiwania.</span><span class="sxs-lookup"><span data-stu-id="64c5e-118">Maintain job titles using the **Titles** page, which you can open by using the Search function.</span></span> <span data-ttu-id="64c5e-119">Na stronie **Stanowiska** wprowadź stanowiska, których zamierzasz używać do zadań.</span><span class="sxs-lookup"><span data-stu-id="64c5e-119">On the \*\*Titles \*\*page, enter the titles that you plan to use for your jobs.</span></span>
 
 ## <a name="job-types"></a><span data-ttu-id="64c5e-120">Typy stanowisk</span><span class="sxs-lookup"><span data-stu-id="64c5e-120">Job types</span></span>
 <span data-ttu-id="64c5e-121">Typy zadań umożliwiają grupowanie podobnych zadań w kategorie.</span><span class="sxs-lookup"><span data-stu-id="64c5e-121">You use job types to group similar jobs into categories.</span></span> <span data-ttu-id="64c5e-122">Typy zadań nie są wymagane.</span><span class="sxs-lookup"><span data-stu-id="64c5e-122">Job types aren't required.</span></span> <span data-ttu-id="64c5e-123">Jednak jeśli planuje się używanie typów zadań podczas tworzenia reguł uprawnienia do zarządzania wynagrodzeniami, przed utworzeniem zadań należy skonfigurować typy zadań.</span><span class="sxs-lookup"><span data-stu-id="64c5e-123">However, if you plan to use job types when you set up eligibility rules for compensation management, you should set up job types before you set up jobs.</span></span> <span data-ttu-id="64c5e-124">Przykłady typów zadań to zatrudnienie w pełnym i niepełnym wymiarze czasu albo wynagrodzenie za etat i za godziny.</span><span class="sxs-lookup"><span data-stu-id="64c5e-124">Some examples of job types are full-time and part-time, or salary and hourly pay.</span></span> <span data-ttu-id="64c5e-125">Zarządzanie typami zadań odbywa się na stronie **Typy stanowisk**.</span><span class="sxs-lookup"><span data-stu-id="64c5e-125">You maintain job types by using the **Job types** page.</span></span> <span data-ttu-id="64c5e-126">Na stronie **Typy stanowisk** wprowadź nazwę i krótki opis typu zadania.</span><span class="sxs-lookup"><span data-stu-id="64c5e-126">On the **Job types** page, enter a name and a brief description for the job type.</span></span> <span data-ttu-id="64c5e-127">W polu **Stan zwolnienia** wybierz jedną z następujących opcji, aby wskazać stan zwolnienia zadania wynikający z Ustawy o standardach uczciwej pracy (FLSA):</span><span class="sxs-lookup"><span data-stu-id="64c5e-127">In the **Exempt status** field, select one of the following options to indicate the Fair Labor Standards Act (FLSA) exempt status of jobs that have this job type:</span></span>
