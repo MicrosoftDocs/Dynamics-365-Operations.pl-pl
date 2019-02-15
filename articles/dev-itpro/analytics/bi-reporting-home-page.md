@@ -1,13 +1,13 @@
 ---
-title: "Strona główna narzędzi analizy biznesowej (BI) i sprawozdawczości"
-description: "Ten temat odsyła do zasobów zawierających informacje na temat narzędzi do wykonywania analiz biznesowych i raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations."
+title: Strona główna narzędzi analizy biznesowej (BI) i sprawozdawczości
+description: Ten temat odsyła do zasobów zawierających informacje na temat narzędzi do wykonywania analiz biznesowych i raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 372113f019cbce790dcd3e356a14a7bb49b8afd7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: bd3704f3b51aad7292571e5c4e6de7b93cf9529f
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302727"
 ---
-
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Strona główna narzędzi analizy biznesowej (BI) i sprawozdawczości
 
 [!include [banner](../includes/banner.md)]
@@ -45,11 +44,11 @@ Użytkownicy mogą obsługiwać dane myszką lub dotykając elementów na stroni
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-- [Osadzona usługa Power BI w obszarach roboczych](embed-power-bi-workspaces.md)
-- [Integracja usługi Power BI Embedded](power-bi-embedded-integration.md)
-- [Dodawanie funkcji analizy do obszarów roboczych za pomocą usługi Power BI Embedded](add-analytics-tab-workspaces.md)
-- [Pomoc w zabezpieczeniu analitycznych obszarów roboczych i raportów przy użyciu usługi Power BI Embedded](secure-analytical-workspaces.md)
-- [Materiały na temat Power BI dla rozwiązania Finance and Operations](power-bi-home-page.md)
+- [Wbudowane Power BI w obszarach roboczych](embed-power-bi-workspaces.md)
+- [Integracja Power BI Embedded — często zadawane pytania](power-bi-embedded-integration.md)
+- [Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded](add-analytics-tab-workspaces.md)
+- [Pomoc w zabezpieczeniu analitycznych obszarów roboczych i raportów za pomocą Power BI Embedded](secure-analytical-workspaces.md)
+- [Zawartość Power BI dla rozwiązania Finance and Operations](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Dokumenty biznesowe i drukowanie
 Rozwiązań raportowania są często używane do zapisywania i przekazywania informacji o transakcjach biznesowych. Dlatego rozwiązanie do raportowania musi umożliwiać tworzenie fizycznych kopii danych biznesowych przy użyciu istniejących urządzeń, takich jak drukarki sieciowe. Są to na przykład faktury sprzedaży, zestawienia odbiorcy i czeki.
@@ -91,4 +90,3 @@ Następujące raporty zawierają informacje na temat obiektów w rozwiązaniu Fi
 - [Raport kodów licencji i kluczy konfiguracji](../sysadmin/license-codes-configuration-keys-report.md)
 - [Raport usług SQL Server Reporting Services](SSRS-report.md)
 - [Raport typów przepływów pracy](../../fin-and-ops/organization-administration/workflow-types-report.md)
-

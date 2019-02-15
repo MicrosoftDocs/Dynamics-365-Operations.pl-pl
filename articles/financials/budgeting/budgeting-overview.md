@@ -1,13 +1,13 @@
 ---
-title: "Budżetowanie — strona główna"
-description: "Ten temat zawiera omówienie składników funkcji budżetowania, narzędzi budżetowania oraz funkcji raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations."
+title: Budżetowanie — strona główna
+description: Ten temat zawiera omówienie składników funkcji budżetowania, narzędzi budżetowania oraz funkcji raportowania dostępnych w systemie Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/09/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 84321b78c9869a4920c3488373876bb56bcb3a29
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: efe348d9967ab7594afd22a3ebb4df76dc6607f8
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302753"
 ---
-
 # <a name="budgeting-home-page"></a>Budżetowanie — strona główna
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Aby uzyskać informacje dotyczące przenoszenia danych planowania z innych modu�
 W rozwiązaniu Finance and Operations użytkownicy mogą tworzyć plany budżetu bezpośrednio w kliencie rozwiązania Finance and Operations (przy użyciu konfigurowalnej strony dokumentu planu budżetu) lub za pomocą programu Excel. Program Excel oferuje kilka dodatkowych funkcji. Można na przykład użyć zewnętrznych danych jako źródła planu budżetu, wykonywać niestandardowe obliczenia oraz używać tabel przestawnych i wykresów. Można skonfigurować większość zmiennych używanych w procesie planowania budżetu. 
 
 Na przykład można określić, kto wykonuje budżetowanie, co jest ujęte w budżecie i jak wygląda proces. Mimo że program Excel umożliwia planowanie budżetu, rozwiązanie Finance and Operations jest jedynym źródłem wiarygodnych informacji i pozwala uniknąć problemów z kontrolą budżetu. Okresowe procesy mogą być używane do wprowadzania danych początkowych budżetowania do planu budżetu. Na potrzeby raportowania rozwiązanie Finance and Operations oferuje zestaw stron standardowych zapytań, które umożliwiają wyświetlanie i analizowanie danych budżetowania. Dane planu budżetu można wyświetlić za pomocą programu Management Reporter, a poszczególne scenariusze planu budżetu mogą być wyświetlane jako kolumny w raporcie tego programu.
-
 
 
 

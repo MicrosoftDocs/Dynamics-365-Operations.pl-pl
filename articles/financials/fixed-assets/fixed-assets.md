@@ -1,13 +1,13 @@
 ---
-title: "Środki trwałe — strona główna"
-description: "Środki trwałe to składniki majątku, takie jak budynki, pojazdy, grunty, maszyny i urządzenia, które należą do osoby fizycznej lub organizacji."
+title: Środki trwałe — strona główna
+description: Środki trwałe to składniki majątku, takie jak budynki, pojazdy, grunty, maszyny i urządzenia, które należą do osoby fizycznej lub organizacji.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 78c70ade5a1ca9794760e72fb94e0735848aae79
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3c49ff15a6ac5dddd64ded4a6e9c755504393346
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302731"
 ---
-
 # <a name="fixed-assets-home-page"></a>Środki trwałe — strona główna
 
 [!include [banner](../includes/banner.md)]
@@ -46,11 +45,11 @@ Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadma
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje dotyczące modułu Środki trwałe możesz znaleźć w [blogu usługi Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+Opinie, wiadomości i inne informacje dotyczące modułu Środki trwałe możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-Wiele wpisów dotyczących modułu Środki trwałe jest dostępnych w [blogu zespołu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Mimo że część z tych wpisów została napisana dla poprzedniej wersji modułu Rozrachunki z dostawcami, to w obecnej wersji są również używane te same pojęcia i podobne procedury.
+Wiele wpisów dotyczących modułu Środki trwałe jest dostępnych w blogu zespołu produktu [Microsoft DynamicsAX](https://blogs.msdn.microsoft.com/dax/) Mimo że część z tych wpisów została napisana dla poprzedniej wersji modułu Rozrachunki z dostawcami, to w obecnej wersji są również używane te same pojęcia i podobne procedury.
 
-Blog [społeczności partnerów zajmujących się oprogramowaniem Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
+[Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 
 #### <a name="task-guides"></a>Przewodniki zadań
 Dodatkowa pomoc jest dostępna w formie przewodników po zadaniach wewnątrz rozwiązania Finance and Operations. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk Pomoc na dowolnej stronie.
@@ -58,7 +57,6 @@ Dodatkowa pomoc jest dostępna w formie przewodników po zadaniach wewnątrz roz
 #### <a name="videos"></a>Filmy
 
 Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
 
 
 

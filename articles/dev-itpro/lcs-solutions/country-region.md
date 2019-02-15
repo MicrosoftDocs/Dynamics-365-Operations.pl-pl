@@ -1,13 +1,13 @@
 ---
-title: "Funkcje związane z lokalizacją i wymagane przepisami prawa"
-description: "Ten temat zawiera listę zasobów, które pomogą Ci dowiedzieć się więcej o funkcjach specyficznych dla kraju/regionu."
+title: Funkcje związane z lokalizacją i wymagane przepisami prawa
+description: Ten temat zawiera listę zasobów, które pomogą Ci dowiedzieć się więcej o funkcjach specyficznych dla kraju/regionu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/30/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a8207af4dc9d5059d487bda97959eff559b7ca06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: e74ad4442e1b6851812f889e79f2fb09060fb87a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/01/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302759"
 ---
-
 # <a name="localization-and-regulatory-features"></a>Funkcje związane z lokalizacją i wymagane przepisami prawa
 
 [!include [banner](../includes/banner.md)]
 
-Rozwiązanie Microsoft Dynamics 365 for Finance and Operations zawiera funkcje specyficzne dla krajów/regionów opisanych w dokumencie [Przewodnik dotyczący dostępności lokalizacji i tłumaczeń produktu](https://aka.ms/ax-availabilityguide). Te funkcje są włączane na podstawie podstawowego adresu aktywnej firmy. 
+Rozwiązanie Microsoft Dynamics 365 for Finance and Operations zawiera funkcje specyficzne dla krajów/regionów opisanych w dokumencie [Przewodnik dostępności z zakresu lokalizacji i tłumaczenia produktu](https://aka.ms/dynamics_365_international_availability_deck). Te funkcje są włączane na podstawie podstawowego adresu aktywnej firmy. 
 
 Ten temat zawiera listę zasobów, które mogą pomóc w wykonywaniu następujących czynności: 
 - Uzyskiwanie dodatkowych informacji na temat projektowania rozwiązań specyficznych dla kraju/regionu
@@ -45,10 +44,11 @@ Wymienione poniżej zasoby zawierają wskazówki i informacje, które mogą być
 -   [Klasyfikowanie funkcji lokalizacji](classify-localization-features.md)
 -   [Kody krajów — ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="localization-updates-and-communication"></a>Aktualizacje lokalizacji i komunikacja
+## <a name="regulatory-updates-and-communication"></a>Aktualizacje wymagane przepisami prawa i komunikacja
 Wymienione poniżej zasoby zawierają informacje o planowanych i nowych funkcjach dotyczących lokalizacji. 
 
-### <a name="localization-updates"></a>Aktualizacje lokalizacji
+### <a name="regulatory-updates"></a>Aktualizacje wymagane przepisami prawa
+-   [Aktualizacje wymagane przepisami prawa](../../financials/localizations/regulatory-updates.md)
 -   [Portal lokalizacji](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (aktualizacja co tydzień)
 -   [Wyszukiwanie problemów w usłudze LCS](../lifecycle-services/issue-search-lcs.md) (aktualizacja codziennie)
 
@@ -68,7 +68,7 @@ Narzędzie Raportowanie elektroniczne (ER) umożliwia konfigurowanie formatów d
 -   [Aplikacje docelowe Raportowania elektronicznego](../analytics/electronic-reporting-destinations.md)
 -   [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
 -   [Importowanie konfiguracji raportowania elektronicznego](../analytics/electronic-reporting-import-ger-configurations.md)
--   [Konfigurowanie Raportowania elektronicznego do ściągania danych do usługi Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Konfigurowanie w module Raportowanie elektroniczne ściągania danych do usługi Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji za pomocą narzędzia Raportowanie elektroniczne](../analytics/generate-electronic-documents-update-application-data.md)
 
 ## <a name="task-guides"></a>Przewodniki zadań
@@ -118,7 +118,6 @@ Aby dowiedzieć się więcej, zobacz [Przewodniki zadań](../../fin-and-ops/get-
         - [Stany Zjednoczone](../../financials/localizations/united-states.md)
     :::column-end:::
 :::row-end:::
-
 
 
 

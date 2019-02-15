@@ -1,13 +1,13 @@
 ---
-title: "Kopiowanie dostawców przy użyciu udostępnionych sekwencji numerów"
-description: "W tym temacie wyjaśniono, w jaki sposób należy używać udostępnionych sekwencji numerów w celu kopiowania dostawców do innej firmy z zachowaniem niezmienionego identyfikatora dostawcy."
+title: Kopiowanie dostawców przy użyciu udostępnionych sekwencji numerów
+description: W tym temacie wyjaśniono, w jaki sposób należy używać udostępnionych sekwencji numerów w celu kopiowania dostawców do innej firmy z zachowaniem niezmienionego identyfikatora dostawcy.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302763"
 ---
-
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopiowanie dostawców przy użyciu udostępnionych sekwencji numerów
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Możesz także kopiować dostawców między firmami, jeśli używasz ręcznie ok
 
 ## <a name="copy-a-vendor"></a>Kopiowanie dostawcy
 
-Aby skopiować dostawcę, wybierz pozycję **Nowy** na stronie listy **Wszyscy dostawcy** w celu otwarcia strony **Wszyscy dostawcy, nowy rekord**. Zauważ, że identyfikator nowego dostawcy nie zostanie przypisany natychmiast. To zachowanie różni się od zachowania w poprzednich wersjach rozwiązania Microsoft Dynamics 365 for Finance and Operations. Dzieje się tak dlatego, że nie wybrano jeszcze grupy dostawców, więc system nie może ustalić poprawnej sekwencji numerów do użycia. Ponadto nie może ustalić, czy próbujesz utworzyć nowego dostawcę, czy skopiować dostawcę. Dlatego też identyfikator dostawcy nie zostanie przypisany, dopóki nie wybierzesz pozycji **Zapisz** u dołu strony.
+Aby skopiować dostawcę, wybierz pozycję **Nowy** na stronie listy **Wszyscy dostawcy** w celu otwarcia strony **Wszyscy dostawcy, nowy rekord**. Zauważ, że identyfikator nowego dostawcy nie zostanie przypisany natychmiast. To zachowanie różni się od zachowania w poprzednich wersjach Microsoft Dynamics 365 for Finance and Operations. Dzieje się tak dlatego, że nie wybrano jeszcze grupy dostawców, więc system nie może ustalić poprawnej sekwencji numerów do użycia. Ponadto nie może ustalić, czy próbujesz utworzyć nowego dostawcę, czy skopiować dostawcę. Dlatego też identyfikator dostawcy nie zostanie przypisany, dopóki nie wybierzesz pozycji **Zapisz** u dołu strony.
 
 Jeśli tworzysz nowego dostawcę, możesz kontynuować wypełnianie wszystkich pól w normalny sposób. Gdy skończysz i wybierzesz pozycję **Zapisz**, zobaczysz, że identyfikator dostawcy został przypisany automatycznie. Alternatywnie, jeśli używasz określanych ręcznie sekwencji numerów, zobaczysz, że został użyty określony ręcznie identyfikator dostawcy.
 
@@ -66,4 +65,3 @@ Dostawców możesz także kopiować za pomocą funkcji wyszukiwania numeru ident
 
 1. Zostanie wyświetlona opcja **Kopiuj dostawcę**. Domyślnie ta opcja ma wartość **Nie**. Aby skopiować dostawcę do bieżącej firmy, ustaw dla tej opcji wartość **Tak**.
 2. Wybierz pozycję **Wybierz**. Zostanie otworzony nowy dostawca.
-

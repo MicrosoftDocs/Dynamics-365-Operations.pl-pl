@@ -1,35 +1,35 @@
 ---
-title: "Konfigurowanie i przetwarzanie wymiany w przypadku zamówienia zwrotu"
-description: "W tym temacie wyjaśniono sposób konfigurowania wymiany w przypadku zwrotu w rozwiązaniu Microsoft Dynamics 365 for Retail."
+title: Konfigurowanie i przetwarzanie wymiany w przypadku zamówienia zwrotu
+description: W tym temacie wyjaśniono sposób konfigurowania wymiany w przypadku zwrotu w rozwiązaniu Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 11/12/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 3331b984693c58c6ee8c49b98ed7d3a8df5b79ff
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 45b628376a483d3d639e5c018dd93570ed8ce7af
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302735"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurowanie i przetwarzanie wymiany w przypadku zamówienia zwrotu
 
 [!include [banner](includes/banner.md)]
 
-W poprzednich wersjach rozwiązania Microsoft Dynamics 365 for Retail zwroty dotyczące zamówień klientów były przetwarzane przy użyciu dokumentu zamówienia zwrotu w module Centrala sieci sprzedaży. Jednak dokumenty zamówienia zwrotu mogą być używane tylko do przetwarzania produktów zwracanych. Zwracane produkty są oznaczone ilością ujemną w wierszach zamówień zwrotu. Z drugiej strony sprzedaż jest wskazywana przez ilość dodatnią. Dokument zamówienia zwrotu nie obsługuje jednak ilości dodatnich. Ze względu na to ograniczenie w poprzednich wersjach aplikacji Retail nie była obsługiwane sytuacje, w których wymiana produktu była dokonywana przy użyciu dokumentu zamówienia zwrotu.
+W poprzednich wersjach rozwiązania Microsoft Dynamics 365 for Retail zwroty dotyczące zamówień klientów były przetwarzane przy użyciu dokumentu zamówienia zwrotu w module Retail headquarters. Jednak dokumenty zamówienia zwrotu mogą być używane tylko do przetwarzania produktów zwracanych. Zwracane produkty są oznaczone ilością ujemną w wierszach zamówień zwrotu. Z drugiej strony sprzedaż jest wskazywana przez ilość dodatnią. Dokument zamówienia zwrotu nie obsługuje jednak ilości dodatnich. Ze względu na to ograniczenie w poprzednich wersjach aplikacji Retail nie była obsługiwane sytuacje, w których wymiana produktu była dokonywana przy użyciu dokumentu zamówienia zwrotu.
 
 Dodano jednak funkcję w celu obsługi sytuacji, w których wymiana odbywa się z wykorzystaniem zamówień zwrotu. Aby przetwarzać tego typu transakcje w aplikacji Retail jest obecnie używany dokument zamówienia sprzedaży zamiast dokumentu zamówienia zwrotu.
 
@@ -51,4 +51,3 @@ Aby zapewnić lepszą widoczność różnych kwot w koszyku, zostały w nim doda
 - **Zastosowana kaucja** — kwota kaucji, która jest stosowana do transakcji, gdy użytkownik pobiera zamówienie odbiorcy. Jeśli nie określono żadnych zastąpień kaucji oraz została skonfigurowana kaucja 10-procentowa, to kwota w tym polu stanowi 90 procent sumy zamówienia odbiorcy.
 - **Kwota zrealizowana** — łączna kwota dla wierszy, w których ustawiono metodę dostawy **Wyniesienie**, gdy zamówienie klienta zostało utworzone lub zmodyfikowane albo podczas wymiany zamówienia odbiorcy. Kwota w tym polu obejmuje podatki i opłaty.
 - **Kwota zwrotu** — suma dla wierszy, które zawierają ilości ujemne podczas wymiany zamówienia odbiorcy. Kwota w tym polu obejmuje podatki i opłaty.
-

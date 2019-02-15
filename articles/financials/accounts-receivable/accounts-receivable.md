@@ -1,13 +1,13 @@
 ---
-title: "Rozrachunki z odbiorcami — strona główna"
-description: "Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorców oraz płatności przychodzących."
+title: Rozrachunki z odbiorcami — strona główna
+description: Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorców oraz płatności przychodzących.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302757"
 ---
-
 # <a name="accounts-receivable-home-page"></a>Rozrachunki z odbiorcami — strona główna
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,7 @@ Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorców i p�
 
 :::row:::
     :::column:::
-        - [Zasady podziału księgowań i wpisy w arkuszu księgi podrzędnej dla faktur niezależnych](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+        - [Zasady podziału księgowań i zapisy w arkuszu księgi podrzędnej dla faktur niezależnych](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
         - [Profile księgowania odbiorców](customer-posting-profiles.md)
         - [Konfiguracja, autoryzacja i przechwytywanie karty kredytowej](credit-card-authorizations.md)
         - [Tworzenie faktury dla odbiorcy](configure-customer-invoices.md)
@@ -101,11 +100,11 @@ Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadma
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje dotyczące modułu Rozrachunki z odbiorcami możesz znaleźć w [blogu usługi Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+Opinie, wiadomości i inne informacje dotyczące modułu Rozrachunki z odbiorcami możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-Wiele wpisów dotyczących modułu Rozrachunki z odbiorcami jest dostępnych w [blogu zespołu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Mimo że niektóre z tych wpisów zostały napisane dla poprzedniej wersji modułu Rozrachunki z odbiorcami, stosowane są w nich te same pojęcia. Także procedury są podobne do procedur w bieżącej wersji.
+Wiele wpisów dotyczących modułu Rozrachunki z odbiorcami jest dostępnych w blogu zespołu produktu [Microsoft DynamicsAX](https://blogs.msdn.microsoft.com/dax/) Mimo że niektóre z tych wpisów zostały napisane dla poprzedniej wersji modułu Rozrachunki z odbiorcami, stosowane są w nich te same pojęcia. Także procedury są podobne do procedur w bieżącej wersji.
 
-Blog [społeczności partnerów zajmujących się oprogramowaniem Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
+[Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 
 #### <a name="task-guides"></a>Przewodniki zadań
 Dodatkowa pomoc jest dostępna w formie przewodników po zadaniach wewnątrz rozwiązania Finance and Operations. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk Pomoc na dowolnej stronie.
@@ -113,7 +112,6 @@ Dodatkowa pomoc jest dostępna w formie przewodników po zadaniach wewnątrz roz
 #### <a name="videos"></a>Filmy
 
 Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
 
 
 

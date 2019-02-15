@@ -1,13 +1,13 @@
 ---
-title: "Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations"
-description: "Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations."
+title: Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations
+description: Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
 ms.date: 08/30/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: edacf76866cf3e078e08dd6e5a69132d0eb15176
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302729"
 ---
-
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations
 
 [!include [banner](includes/banner.md)]
 
 Dowiedz się, jak wykorzystać rozwiązanie Microsoft Dynamics 365 for Finance and Operations w firmie. Poniżej znajdziesz ciekawe materiały dla użytkowników, deweloperów i specjalistów IT. 
 
-Wiele z nich dotyczy również produktów pokrewnych: Microsoft Dynamics 365 for Retail oraz Microsoft Dynamics 365 for Talent. 
+Wiele z tych informacji dotyczy również produktów pokrewnych: Microsoft Dynamics 365 for Retail i Microsoft Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
@@ -43,7 +42,7 @@ Wiele z nich dotyczy również produktów pokrewnych: Microsoft Dynamics 365 for
 <tr class="odd">
 <td>
 <h3><a href="get-started/before-you-buy.md">Zanim kupisz</a></h3>
-<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Rejestracja w celu uzyskania subskrypcji w wersji Preview</a></p>
+<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Wybieranie opcji wdrożenia</a></p>
  <p><a href="get-started/purchase-on-premises.md">Kup rozwiązanie Finance and Operations (lokalne)</a></p>
 
@@ -110,11 +109,11 @@ Wiele z nich dotyczy również produktów pokrewnych: Microsoft Dynamics 365 for
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Uaktualnianie</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Obsługa</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Struktura zarządzania danymi</a></p>
-<p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
+<p>Usługa <a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Administrowanie organizacją</a></p>
 </td>
 <td>
-<h3>Powiązane produkty</h3>
+<h3>Produkty pokrewne</h3>
 <h4><a href="../retail/index.md">Dynamics 365 for Retail</a></h4>
 <p><a href="../retail/call-center-functionality.md">Biuro obsługi</p>
 <p><a href="../retail/define-maintain-retail-channels.md">Konfigurowanie kanałów i zarządzanie nimi</p>
@@ -131,4 +130,3 @@ Wiele z nich dotyczy również produktów pokrewnych: Microsoft Dynamics 365 for
 
 </tbody>
 </table>
-
