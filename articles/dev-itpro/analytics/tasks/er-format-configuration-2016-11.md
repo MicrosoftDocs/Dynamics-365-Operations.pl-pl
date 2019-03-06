@@ -1,13 +1,13 @@
---- 
+---
 title: ER Tworzenie konfiguracji formatu (listopad 2016)
-description: "W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć konfiguracji formatu dla raportowania elektronicznego (ER)."
+description: W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć konfiguracji formatu dla raportowania elektronicznego (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,148 +16,146 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
+ms.sourcegitcommit: 29e19b6d91e5761178627ef2051f3385f5d7cfe5
 ms.translationtype: HT
-ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
-ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377556"
 ---
-# <a name="er-create-a-format-configuration-november-2016"></a><span data-ttu-id="f29ca-103">ER Tworzenie konfiguracji formatu (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="f29ca-103">ER Create a format configuration (November 2016)</span></span>
+# <a name="er-create-a-format-configuration-november-2016"></a><span data-ttu-id="4eff1-103">ER Tworzenie konfiguracji formatu (listopad 2016)</span><span class="sxs-lookup"><span data-stu-id="4eff1-103">ER Create a format configuration (November 2016)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="f29ca-104">W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć konfiguracji formatu dla raportowania elektronicznego (ER).</span><span class="sxs-lookup"><span data-stu-id="f29ca-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER).</span></span> <span data-ttu-id="f29ca-105">Ta konfiguracja formatu określi format dokumentów elektronicznych, które będą używane do przetwarzania płatności.</span><span class="sxs-lookup"><span data-stu-id="f29ca-105">This format configuration will define the format of electronic documents that are used for processing payments.</span></span> <span data-ttu-id="f29ca-106">W tym przykładzie utworzysz konfigurację formatu dla przykładowej firmy Litware, Inc. W celu wykonania tych kroków należy najpierw wykonać procedurę „Mapowanie modelu na wybrane źródła danych”.</span><span class="sxs-lookup"><span data-stu-id="f29ca-106">In this example, you will create a format configuration for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the “Map model to selected datasources” procedure.</span></span>
+<span data-ttu-id="4eff1-104">W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć konfiguracji formatu dla raportowania elektronicznego (ER).</span><span class="sxs-lookup"><span data-stu-id="4eff1-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER).</span></span> <span data-ttu-id="4eff1-105">Ta konfiguracja formatu określi format dokumentów elektronicznych, które będą używane do przetwarzania płatności.</span><span class="sxs-lookup"><span data-stu-id="4eff1-105">This format configuration will define the format of electronic documents that are used for processing payments.</span></span> <span data-ttu-id="4eff1-106">W tym przykładzie utworzysz konfigurację formatu dla przykładowej firmy Litware, Inc. W celu wykonania tych kroków należy najpierw wykonać procedurę „Mapowanie modelu na wybrane źródła danych”.</span><span class="sxs-lookup"><span data-stu-id="4eff1-106">In this example, you will create a format configuration for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the “Map model to selected datasources” procedure.</span></span>
 
 
-## <a name="create-a-new-format-configuration"></a><span data-ttu-id="f29ca-107">Utwórz nową konfigurację formatu.</span><span class="sxs-lookup"><span data-stu-id="f29ca-107">Create a new format configuration</span></span>
-1. <span data-ttu-id="f29ca-108">Wybierz kolejno opcje **Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-108">Go to **Organization administration > Workspaces > Electronic reporting**.</span></span>
-2. <span data-ttu-id="f29ca-109">Kliknij opcję **Konfiguracje raportowania**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-109">Click **Reporting configurations**.</span></span>
-3. <span data-ttu-id="f29ca-110">W drzewie zaznacz element **Płatności (model uproszczony)**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-110">In the tree, select **Payments (simplified model)**.</span></span>
-4. <span data-ttu-id="f29ca-111">Kliknij przycisk **Utwórz konfigurację**, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="f29ca-111">Click **Create configuration** to open the drop dialog.</span></span>
+## <a name="create-a-new-format-configuration"></a><span data-ttu-id="4eff1-107">Utwórz nową konfigurację formatu.</span><span class="sxs-lookup"><span data-stu-id="4eff1-107">Create a new format configuration</span></span>
+1. <span data-ttu-id="4eff1-108">Wybierz kolejno opcje **Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-108">Go to **Organization administration > Workspaces > Electronic reporting**.</span></span>
+2. <span data-ttu-id="4eff1-109">Kliknij opcję **Konfiguracje raportowania**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-109">Click **Reporting configurations**.</span></span>
+3. <span data-ttu-id="4eff1-110">W drzewie zaznacz element **Płatności (model uproszczony)**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-110">In the tree, select **Payments (simplified model)**.</span></span>
+4. <span data-ttu-id="4eff1-111">Kliknij przycisk **Utwórz konfigurację**, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="4eff1-111">Click **Create configuration** to open the drop dialog.</span></span>
+
  > [!NOTE]
- > <span data-ttu-id="f29ca-112">Jeśli nie widać przycisku **Utwórz konfigurację**, należy włączyć tryb projektowania na stronie **Parametry raportowania elektronicznego**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-112">If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.</span></span> 
-5. <span data-ttu-id="f29ca-113">W polu **Nowy** wpisz **Format oparty na modelu danych PaymentModel**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-113">In the **New** field, enter **Format based on data model PaymentModel**.</span></span>
-6. <span data-ttu-id="f29ca-114">W polu **Nazwa** wpisz **BACS (fikcyjny brytyjski)**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-114">In the **Name** field, type **BACS (UK fictitious)**.</span></span>
-7. <span data-ttu-id="f29ca-115">W polu **Opis** wpisz **Format płatności dla dostawcy BACS (fikcyjny brytyjski)**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-115">In the **Description** field, type **BACS vendor payment format (UK fictitious)**.</span></span>
-    * <span data-ttu-id="f29ca-116">Aktywny dostawca konfiguracji jest automatycznie umieszczany w tym miejscu.</span><span class="sxs-lookup"><span data-stu-id="f29ca-116">The active configuration provider is automatically entered here.</span></span> <span data-ttu-id="f29ca-117">Ten dostawca będzie mógł obsługiwać tę konfigurację.</span><span class="sxs-lookup"><span data-stu-id="f29ca-117">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="f29ca-118">Inni dostawcy mogą używać tej konfiguracji, ale nie będą mogli nią zarządzać.</span><span class="sxs-lookup"><span data-stu-id="f29ca-118">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
-    * <span data-ttu-id="f29ca-119">Można zdefiniować określony format dokumentu elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="f29ca-119">A particular format of electronic document can be defined.</span></span> <span data-ttu-id="f29ca-120">Pozostaw to pole puste, aby wybrać format w czasie wykonywania.</span><span class="sxs-lookup"><span data-stu-id="f29ca-120">Leave this field blank if you want to select a format at run-time.</span></span>  
-8. <span data-ttu-id="f29ca-121">W polu **Definicja modelu danych** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="f29ca-121">In the **Data model definition** field, enter or select a value.</span></span>
-9. <span data-ttu-id="f29ca-122">Kliknij przycisk **Utwórz konfigurację**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-122">Click **Create configuration**.</span></span> <span data-ttu-id="f29ca-123">Utworzono nową konfigurację.</span><span class="sxs-lookup"><span data-stu-id="f29ca-123">A new configuration has been created.</span></span> <span data-ttu-id="f29ca-124">Wersja robocza może służyć do przechowywania formatu projektu w celu zarządzania dokumentami elektronicznymi.</span><span class="sxs-lookup"><span data-stu-id="f29ca-124">The draft version can be used to store the design format for managing electronic documents.</span></span>  
- > [!NOTE]
- > <span data-ttu-id="f29ca-125">Jeśli nie widać przycisku **Utwórz konfigurację**, należy włączyć tryb projektowania na stronie **Parametry raportowania elektronicznego**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-125">If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.</span></span>
+ > <span data-ttu-id="4eff1-112">Jeśli nie widać przycisku **Utwórz konfigurację**, należy włączyć tryb projektowania na stronie **Parametry raportowania elektronicznego**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-112">If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.</span></span> 
+ 
+5. <span data-ttu-id="4eff1-113">W polu **Nowy** wpisz **Format oparty na modelu danych PaymentModel**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-113">In the **New** field, enter **Format based on data model PaymentModel**.</span></span>
+6. <span data-ttu-id="4eff1-114">W polu **Nazwa** wpisz **BACS (fikcyjny brytyjski)**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-114">In the **Name** field, type **BACS (UK fictitious)**.</span></span>
+7. <span data-ttu-id="4eff1-115">W polu **Opis** wpisz **Format płatności dla dostawcy BACS (fikcyjny brytyjski)**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-115">In the **Description** field, type **BACS vendor payment format (UK fictitious)**.</span></span>
+    * <span data-ttu-id="4eff1-116">Aktywny dostawca konfiguracji jest automatycznie umieszczany w tym miejscu.</span><span class="sxs-lookup"><span data-stu-id="4eff1-116">The active configuration provider is automatically entered here.</span></span> <span data-ttu-id="4eff1-117">Ten dostawca będzie mógł obsługiwać tę konfigurację.</span><span class="sxs-lookup"><span data-stu-id="4eff1-117">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="4eff1-118">Inni dostawcy mogą używać tej konfiguracji, ale nie będą mogli nią zarządzać.</span><span class="sxs-lookup"><span data-stu-id="4eff1-118">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
+    * <span data-ttu-id="4eff1-119">Można zdefiniować określony format dokumentu elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="4eff1-119">A particular format of electronic document can be defined.</span></span> <span data-ttu-id="4eff1-120">Pozostaw to pole puste, aby wybrać format w czasie wykonywania.</span><span class="sxs-lookup"><span data-stu-id="4eff1-120">Leave this field blank if you want to select a format at run-time.</span></span>  
+8. <span data-ttu-id="4eff1-121">W polu **Definicja modelu danych** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="4eff1-121">In the **Data model definition** field, enter or select a value.</span></span>
+9. <span data-ttu-id="4eff1-122">Kliknij przycisk **Utwórz konfigurację**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-122">Click **Create configuration**.</span></span> <span data-ttu-id="4eff1-123">Utworzono nową konfigurację.</span><span class="sxs-lookup"><span data-stu-id="4eff1-123">A new configuration has been created.</span></span> <span data-ttu-id="4eff1-124">Wersja robocza może służyć do przechowywania formatu projektu w celu zarządzania dokumentami elektronicznymi.</span><span class="sxs-lookup"><span data-stu-id="4eff1-124">The draft version can be used to store the design format for managing electronic documents.</span></span>  
 
+## <a name="design-the-format-of-an-electronic-document"></a><span data-ttu-id="4eff1-125">Zaprojektuj format dokumentu elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="4eff1-125">Design the format of an electronic document</span></span>
+1. <span data-ttu-id="4eff1-126">Kliknij przycisk **Konstruktor**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-126">Click **Designer**.</span></span>
+2. <span data-ttu-id="4eff1-127">Kliknij przycisk **Dodaj element główny**, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="4eff1-127">Click **Add root** to open the drop dialog.</span></span>
+3. <span data-ttu-id="4eff1-128">W drzewie zaznacz element **Wspólne\Plik**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-128">In the tree, select **Common\File**.</span></span>
+4. <span data-ttu-id="4eff1-129">W polu **Nazwa** wpisz **Xml**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-129">In the **Name** field, type **Xml**.</span></span>
+5. <span data-ttu-id="4eff1-130">W polu **Kodowanie** wpisz **UTF-8**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-130">In the **Encoding** field, type **UTF-8**.</span></span>
+6. <span data-ttu-id="4eff1-131">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-131">Click **OK**.</span></span>
+7. <span data-ttu-id="4eff1-132">Kliknij przycisk **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-132">Click **Add**.</span></span>
+8. <span data-ttu-id="4eff1-133">W drzewie zaznacz element **XML\Element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-133">In the tree, select **XML\Element**.</span></span>
+9. <span data-ttu-id="4eff1-134">W polu **Nazwa** wpisz **Komunikat**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-134">In the **Name** field, type **Message**.</span></span>
+10. <span data-ttu-id="4eff1-135">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-135">Click **OK**.</span></span>
+11. <span data-ttu-id="4eff1-136">W drzewie zaznacz element **Xml\Komunikat**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-136">In the tree, select **Xml\Message**.</span></span>
+12. <span data-ttu-id="4eff1-137">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-137">Click **Add Element**.</span></span>
+13. <span data-ttu-id="4eff1-138">W polu **Nazwa** wpisz **ProcessingDate**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-138">In the **Name** field, type **ProcessingDate**.</span></span>
+14. <span data-ttu-id="4eff1-139">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-139">Click **OK**.</span></span>
+15. <span data-ttu-id="4eff1-140">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-140">Click **Add Element**.</span></span>
+16. <span data-ttu-id="4eff1-141">W polu Nazwa wpisz **MessageId**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-141">In the Name field, type **MessageId**.</span></span>
+17. <span data-ttu-id="4eff1-142">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-142">Click **OK**.</span></span>
+18. <span data-ttu-id="4eff1-143">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-143">Click **Add Element**.</span></span>
+19. <span data-ttu-id="4eff1-144">W polu **Nazwa** wpisz **Płatności**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-144">In the **Name** field, type **Payments**.</span></span>
+20. <span data-ttu-id="4eff1-145">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-145">Click **OK**.</span></span>
+21. <span data-ttu-id="4eff1-146">W drzewie zaznacz element **Xml\Komunikat\Płatności**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-146">In the tree, select **Xml\Message\Payments**.</span></span>
+22. <span data-ttu-id="4eff1-147">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-147">Click **Add Element**.</span></span>
+23. <span data-ttu-id="4eff1-148">W polu **Nazwa** wpisz **Towar**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-148">In the **Name** field, type **Item**.</span></span>
+24. <span data-ttu-id="4eff1-149">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-149">Click **OK**.</span></span>
+25. <span data-ttu-id="4eff1-150">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-150">In the tree, select **Xml\Message\Payments\Item**.</span></span>
+26. <span data-ttu-id="4eff1-151">Kliknij przycisk **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-151">Click **Add**.</span></span>
+27. <span data-ttu-id="4eff1-152">W drzewie zaznacz element **XML\Atrybut**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-152">In the tree, select **XML\Attribute**.</span></span>
+28. <span data-ttu-id="4eff1-153">W polu Nazwa wpisz **Identyfikator**</span><span class="sxs-lookup"><span data-stu-id="4eff1-153">In the Name field, type **Id**.</span></span>
+29. <span data-ttu-id="4eff1-154">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-154">Click **OK**.</span></span>
+30. <span data-ttu-id="4eff1-155">Kliknij przycisk **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-155">Click **Add**.</span></span>
+31. <span data-ttu-id="4eff1-156">W drzewie zaznacz element **XML\Element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-156">In the tree, select **XML\Element**.</span></span>
+32. <span data-ttu-id="4eff1-157">W polu Nazwa wpisz **Dostawca**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-157">In the Name field, type **Vendor**.</span></span>
+33. <span data-ttu-id="4eff1-158">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-158">Click **OK**.</span></span>
+34. <span data-ttu-id="4eff1-159">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Dostawca**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-159">In the tree, select **Xml\Message\Payments\Item\Vendor**.</span></span>
+35. <span data-ttu-id="4eff1-160">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-160">Click **Add Element**.</span></span>
+36. <span data-ttu-id="4eff1-161">W polu Nazwa wpisz **Nazwa**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-161">In the Name field, type **Name**.</span></span>
+37. <span data-ttu-id="4eff1-162">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-162">Click **OK**.</span></span>
+38. <span data-ttu-id="4eff1-163">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-163">Click **Add Element**.</span></span>
+39. <span data-ttu-id="4eff1-164">W polu **Nazwa** wpisz **Bank**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-164">In the **Name** field, type **Bank**.</span></span>
+40. <span data-ttu-id="4eff1-165">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-165">Click **OK**.</span></span>
+41. <span data-ttu-id="4eff1-166">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Dostawca\Bank**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-166">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank**.</span></span>
+42. <span data-ttu-id="4eff1-167">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-167">Click **Add Element**.</span></span>
+43. <span data-ttu-id="4eff1-168">W polu **Nazwa** wpisz **RoutingNumber**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-168">In the **Name** field, type **RoutingNumber**.</span></span>
+44. <span data-ttu-id="4eff1-169">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-169">Click **OK**.</span></span>
+45. <span data-ttu-id="4eff1-170">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-170">Click **Add Element**.</span></span>
+46. <span data-ttu-id="4eff1-171">W polu **Nazwa** wpisz **AccountNumber**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-171">In the **Name** field, type **AccountNumber**.</span></span>
+47. <span data-ttu-id="4eff1-172">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-172">Click **OK**.</span></span>
+48. <span data-ttu-id="4eff1-173">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Dostawca**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-173">In the tree, select **Xml\Message\Payments\Item\Vendor**.</span></span>
+49. <span data-ttu-id="4eff1-174">Kliknij opcję **Kopiuj**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-174">Click **Copy**.</span></span>
+50. <span data-ttu-id="4eff1-175">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-175">In the tree, select **Xml\Message\Payments\Item**.</span></span>
+51. <span data-ttu-id="4eff1-176">Kliknij opcję **Wklej**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-176">Click **Paste**.</span></span>
+52. <span data-ttu-id="4eff1-177">W polu **Nazwa** wpisz **Płatnik**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-177">In the **Name** field, type **Payer**.</span></span>
+53. <span data-ttu-id="4eff1-178">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-178">In the tree, select **Xml\Message\Payments\Item**.</span></span>
+54. <span data-ttu-id="4eff1-179">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-179">Click **Add Element**.</span></span>
+55. <span data-ttu-id="4eff1-180">W polu **Nazwa** wpisz **Waluta**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-180">In the **Name** field, type **Currency**.</span></span>
+56. <span data-ttu-id="4eff1-181">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-181">Click **OK**.</span></span>
+57. <span data-ttu-id="4eff1-182">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-182">Click **Add Element**.</span></span>
+58. <span data-ttu-id="4eff1-183">W polu **Nazwa** wpisz **Opis**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-183">In the **Name** field, type **Description**.</span></span>
+59. <span data-ttu-id="4eff1-184">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-184">Click **OK**.</span></span>
+60. <span data-ttu-id="4eff1-185">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-185">Click **Add Element**.</span></span>
+61. <span data-ttu-id="4eff1-186">W polu Nazwa wpisz **TransDate**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-186">In the Name field, type **TransDate**.</span></span>
+62. <span data-ttu-id="4eff1-187">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-187">Click **OK**.</span></span>
+63. <span data-ttu-id="4eff1-188">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-188">Click **Add Element**.</span></span>
+64. <span data-ttu-id="4eff1-189">W polu Nazwa wpisz **Kwota**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-189">In the Name field, type **Amount**.</span></span>
+65. <span data-ttu-id="4eff1-190">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-190">Click **OK**.</span></span>
 
-## <a name="design-the-format-of-an-electronic-document"></a><span data-ttu-id="f29ca-126">Zaprojektuj format dokumentu elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="f29ca-126">Design the format of an electronic document</span></span>
-1. <span data-ttu-id="f29ca-127">Kliknij przycisk **Konstruktor**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-127">Click **Designer**.</span></span>
-2. <span data-ttu-id="f29ca-128">Kliknij przycisk **Dodaj element główny**, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="f29ca-128">Click **Add root** to open the drop dialog.</span></span>
-3. <span data-ttu-id="f29ca-129">W drzewie zaznacz element **Wspólne\Plik**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-129">In the tree, select **Common\File**.</span></span>
-4. <span data-ttu-id="f29ca-130">W polu **Nazwa** wpisz **Xml**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-130">In the **Name** field, type **Xml**.</span></span>
-5. <span data-ttu-id="f29ca-131">W polu **Kodowanie** wpisz **UTF-8**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-131">In the **Encoding** field, type **UTF-8**.</span></span>
-6. <span data-ttu-id="f29ca-132">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-132">Click **OK**.</span></span>
-7. <span data-ttu-id="f29ca-133">Kliknij przycisk **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-133">Click **Add**.</span></span>
-8. <span data-ttu-id="f29ca-134">W drzewie zaznacz element **XML\Element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-134">In the tree, select **XML\Element**.</span></span>
-9. <span data-ttu-id="f29ca-135">W polu **Nazwa** wpisz **Komunikat**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-135">In the **Name** field, type **Message**.</span></span>
-10. <span data-ttu-id="f29ca-136">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-136">Click **OK**.</span></span>
-11. <span data-ttu-id="f29ca-137">W drzewie zaznacz element **Xml\Komunikat**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-137">In the tree, select **Xml\Message**.</span></span>
-12. <span data-ttu-id="f29ca-138">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-138">Click **Add Element**.</span></span>
-13. <span data-ttu-id="f29ca-139">W polu **Nazwa** wpisz **ProcessingDate**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-139">In the **Name** field, type **ProcessingDate**.</span></span>
-14. <span data-ttu-id="f29ca-140">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-140">Click **OK**.</span></span>
-15. <span data-ttu-id="f29ca-141">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-141">Click **Add Element**.</span></span>
-16. <span data-ttu-id="f29ca-142">W polu Nazwa wpisz **MessageId**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-142">In the Name field, type **MessageId**.</span></span>
-17. <span data-ttu-id="f29ca-143">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-143">Click **OK**.</span></span>
-18. <span data-ttu-id="f29ca-144">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-144">Click **Add Element**.</span></span>
-19. <span data-ttu-id="f29ca-145">W polu **Nazwa** wpisz **Płatności**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-145">In the **Name** field, type **Payments**.</span></span>
-20. <span data-ttu-id="f29ca-146">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-146">Click **OK**.</span></span>
-21. <span data-ttu-id="f29ca-147">W drzewie zaznacz element **Xml\Komunikat\Płatności**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-147">In the tree, select **Xml\Message\Payments**.</span></span>
-22. <span data-ttu-id="f29ca-148">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-148">Click **Add Element**.</span></span>
-23. <span data-ttu-id="f29ca-149">W polu **Nazwa** wpisz **Towar**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-149">In the **Name** field, type **Item**.</span></span>
-24. <span data-ttu-id="f29ca-150">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-150">Click **OK**.</span></span>
-25. <span data-ttu-id="f29ca-151">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-151">In the tree, select **Xml\Message\Payments\Item**.</span></span>
-26. <span data-ttu-id="f29ca-152">Kliknij przycisk **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-152">Click **Add**.</span></span>
-27. <span data-ttu-id="f29ca-153">W drzewie zaznacz element **XML\Atrybut**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-153">In the tree, select **XML\Attribute**.</span></span>
-28. <span data-ttu-id="f29ca-154">W polu Nazwa wpisz **Identyfikator**</span><span class="sxs-lookup"><span data-stu-id="f29ca-154">In the Name field, type **Id**.</span></span>
-29. <span data-ttu-id="f29ca-155">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-155">Click **OK**.</span></span>
-30. <span data-ttu-id="f29ca-156">Kliknij przycisk **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-156">Click **Add**.</span></span>
-31. <span data-ttu-id="f29ca-157">W drzewie zaznacz element **XML\Element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-157">In the tree, select **XML\Element**.</span></span>
-32. <span data-ttu-id="f29ca-158">W polu Nazwa wpisz **Dostawca**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-158">In the Name field, type **Vendor**.</span></span>
-33. <span data-ttu-id="f29ca-159">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-159">Click **OK**.</span></span>
-34. <span data-ttu-id="f29ca-160">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Dostawca**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-160">In the tree, select **Xml\Message\Payments\Item\Vendor**.</span></span>
-35. <span data-ttu-id="f29ca-161">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-161">Click **Add Element**.</span></span>
-36. <span data-ttu-id="f29ca-162">W polu Nazwa wpisz **Nazwa**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-162">In the Name field, type **Name**.</span></span>
-37. <span data-ttu-id="f29ca-163">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-163">Click **OK**.</span></span>
-38. <span data-ttu-id="f29ca-164">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-164">Click **Add Element**.</span></span>
-39. <span data-ttu-id="f29ca-165">W polu **Nazwa** wpisz **Bank**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-165">In the **Name** field, type **Bank**.</span></span>
-40. <span data-ttu-id="f29ca-166">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-166">Click **OK**.</span></span>
-41. <span data-ttu-id="f29ca-167">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Dostawca\Bank**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-167">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank**.</span></span>
-42. <span data-ttu-id="f29ca-168">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-168">Click **Add Element**.</span></span>
-43. <span data-ttu-id="f29ca-169">W polu **Nazwa** wpisz **RoutingNumber**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-169">In the **Name** field, type **RoutingNumber**.</span></span>
-44. <span data-ttu-id="f29ca-170">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-170">Click **OK**.</span></span>
-45. <span data-ttu-id="f29ca-171">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-171">Click **Add Element**.</span></span>
-46. <span data-ttu-id="f29ca-172">W polu **Nazwa** wpisz **AccountNumber**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-172">In the **Name** field, type **AccountNumber**.</span></span>
-47. <span data-ttu-id="f29ca-173">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-173">Click **OK**.</span></span>
-48. <span data-ttu-id="f29ca-174">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Dostawca**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-174">In the tree, select **Xml\Message\Payments\Item\Vendor**.</span></span>
-49. <span data-ttu-id="f29ca-175">Kliknij opcję **Kopiuj**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-175">Click **Copy**.</span></span>
-50. <span data-ttu-id="f29ca-176">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-176">In the tree, select **Xml\Message\Payments\Item**.</span></span>
-51. <span data-ttu-id="f29ca-177">Kliknij opcję **Wklej**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-177">Click **Paste**.</span></span>
-52. <span data-ttu-id="f29ca-178">W polu **Nazwa** wpisz **Płatnik**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-178">In the **Name** field, type **Payer**.</span></span>
-53. <span data-ttu-id="f29ca-179">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-179">In the tree, select **Xml\Message\Payments\Item**.</span></span>
-54. <span data-ttu-id="f29ca-180">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-180">Click **Add Element**.</span></span>
-55. <span data-ttu-id="f29ca-181">W polu **Nazwa** wpisz **Waluta**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-181">In the **Name** field, type **Currency**.</span></span>
-56. <span data-ttu-id="f29ca-182">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-182">Click **OK**.</span></span>
-57. <span data-ttu-id="f29ca-183">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-183">Click **Add Element**.</span></span>
-58. <span data-ttu-id="f29ca-184">W polu **Nazwa** wpisz **Opis**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-184">In the **Name** field, type **Description**.</span></span>
-59. <span data-ttu-id="f29ca-185">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-185">Click **OK**.</span></span>
-60. <span data-ttu-id="f29ca-186">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-186">Click **Add Element**.</span></span>
-61. <span data-ttu-id="f29ca-187">W polu Nazwa wpisz **TransDate**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-187">In the Name field, type **TransDate**.</span></span>
-62. <span data-ttu-id="f29ca-188">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-188">Click **OK**.</span></span>
-63. <span data-ttu-id="f29ca-189">Kliknij opcję **Dodaj element**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-189">Click **Add Element**.</span></span>
-64. <span data-ttu-id="f29ca-190">W polu Nazwa wpisz **Kwota**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-190">In the Name field, type **Amount**.</span></span>
-65. <span data-ttu-id="f29ca-191">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-191">Click **OK**.</span></span>
-
-## <a name="prepare-format-components-for-mapping-to-data-model-elements"></a><span data-ttu-id="f29ca-192">Przygotuj składniki formatu w celu zmapowania na elementy modelu danych.</span><span class="sxs-lookup"><span data-stu-id="f29ca-192">Prepare format components for mapping to data model elements</span></span>
-1. <span data-ttu-id="f29ca-193">W drzewie zaznacz element **Xml\Komunikat\ProcessingDate**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-193">In the tree, select **Xml\Message\ProcessingDate**.</span></span>
-2. <span data-ttu-id="f29ca-194">Kliknij przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="f29ca-194">Click **Add** to open the drop dialog.</span></span>
-3. <span data-ttu-id="f29ca-195">W drzewie zaznacz element **Tekst\DateTime**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-195">In the tree, select **Text\DateTime**.</span></span>
-4. <span data-ttu-id="f29ca-196">W polu **Format** wpisz **rrrr-MM-dd**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-196">In the **Format** field, type **yyyy-MM-dd**.</span></span>
-5. <span data-ttu-id="f29ca-197">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-197">Click **OK**.</span></span>
-6. <span data-ttu-id="f29ca-198">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\TransDate**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-198">In the tree, select **Xml\Message\Payments\Item\TransDate**.</span></span>
-7. <span data-ttu-id="f29ca-199">Kliknij opcję **Dodaj datę/godzinę**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-199">Click **Add DateTime**.</span></span>
-8. <span data-ttu-id="f29ca-200">W polu **Format** wpisz **rrrr-MM-dd**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-200">In the **Format** field, type **yyyy-MM-dd**.</span></span>
-9. <span data-ttu-id="f29ca-201">W polu **Typ daty/godziny** wybierz opcję **Data**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-201">In the **DateTime** type field, select **Date**.</span></span>
-10. <span data-ttu-id="f29ca-202">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-202">Click **OK**.</span></span>
-11. <span data-ttu-id="f29ca-203">W drzewie zaznacz element **Xml\Komunikat\MessageId**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-203">In the tree, select **Xml\Message\MessageId**.</span></span>
-12. <span data-ttu-id="f29ca-204">Kliknij przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="f29ca-204">Click **Add** to open the drop dialog.</span></span>
-13. <span data-ttu-id="f29ca-205">W drzewie zaznacz element **Tekst\Ciąg**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-205">In the tree, select **Text\String**.</span></span>
-14. <span data-ttu-id="f29ca-206">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-206">Click **OK**.</span></span>
-15. <span data-ttu-id="f29ca-207">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Dostawca\Nazwa**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-207">In the tree, select **Xml\Message\Payments\Item\Vendor\Name**.</span></span>
-16. <span data-ttu-id="f29ca-208">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-208">Click **Add String**.</span></span>
-17. <span data-ttu-id="f29ca-209">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-209">Click **OK**.</span></span>
-18. <span data-ttu-id="f29ca-210">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Dostawca\Bank\RoutingNumber**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-210">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\RoutingNumber**.</span></span>
-19. <span data-ttu-id="f29ca-211">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-211">Click **Add String**.</span></span>
-20. <span data-ttu-id="f29ca-212">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-212">Click **OK**.</span></span>
-21. <span data-ttu-id="f29ca-213">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Dostawca\Bank\AccountNumber**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-213">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\AccountNumber**.</span></span>
-22. <span data-ttu-id="f29ca-214">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-214">Click **Add String**.</span></span>
-23. <span data-ttu-id="f29ca-215">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-215">Click **OK**.</span></span>
-24. <span data-ttu-id="f29ca-216">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Płatnik\Nazwa**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-216">In the tree, select **Xml\Message\Payments\Item\Payer\Name**.</span></span>
-25. <span data-ttu-id="f29ca-217">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-217">Click **Add String**.</span></span>
-26. <span data-ttu-id="f29ca-218">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-218">Click **OK**.</span></span>
-27. <span data-ttu-id="f29ca-219">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Płatnik\Bank\RoutingNumber**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-219">In the tree, select **Xml\Message\Payments\Item\Payer\Bank\RoutingNumber**.</span></span>
-28. <span data-ttu-id="f29ca-220">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-220">Click **Add String**.</span></span>
-29. <span data-ttu-id="f29ca-221">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-221">Click **OK**.</span></span>
-30. <span data-ttu-id="f29ca-222">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Płatnik\Bank\AccountNumber**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-222">In the tree, select **Xml\Message\Payments\Item\Payer\Bank\AccountNumber**.</span></span>
-31. <span data-ttu-id="f29ca-223">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-223">Click **Add String**.</span></span>
-32. <span data-ttu-id="f29ca-224">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-224">Click **OK**.</span></span>
-33. <span data-ttu-id="f29ca-225">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Waluta**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-225">In the tree, select **Xml\Message\Payments\Item\Currency**.</span></span>
-34. <span data-ttu-id="f29ca-226">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-226">Click **Add String**.</span></span>
-35. <span data-ttu-id="f29ca-227">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-227">Click **OK**.</span></span>
-36. <span data-ttu-id="f29ca-228">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Opis**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-228">In the tree, select **Xml\Message\Payments\Item\Description**.</span></span>
-37. <span data-ttu-id="f29ca-229">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-229">Click **Add String**.</span></span>
-38. <span data-ttu-id="f29ca-230">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-230">Click **OK**.</span></span>
-39. <span data-ttu-id="f29ca-231">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Kwota**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-231">In the tree, select **Xml\Message\Payments\Item\Amount**.</span></span>
-40. <span data-ttu-id="f29ca-232">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-232">Click **Add String**.</span></span>
-41. <span data-ttu-id="f29ca-233">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-233">Click **OK**.</span></span>
-42. <span data-ttu-id="f29ca-234">Kliknij przycisk **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="f29ca-234">Click **Save**.</span></span>
-43. <span data-ttu-id="f29ca-235">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="f29ca-235">Close the page.</span></span>
-
+## <a name="prepare-format-components-for-mapping-to-data-model-elements"></a><span data-ttu-id="4eff1-191">Przygotuj składniki formatu w celu zmapowania na elementy modelu danych.</span><span class="sxs-lookup"><span data-stu-id="4eff1-191">Prepare format components for mapping to data model elements</span></span>
+1. <span data-ttu-id="4eff1-192">W drzewie zaznacz element **Xml\Komunikat\ProcessingDate**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-192">In the tree, select **Xml\Message\ProcessingDate**.</span></span>
+2. <span data-ttu-id="4eff1-193">Kliknij przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="4eff1-193">Click **Add** to open the drop dialog.</span></span>
+3. <span data-ttu-id="4eff1-194">W drzewie zaznacz element **Tekst\DateTime**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-194">In the tree, select **Text\DateTime**.</span></span>
+4. <span data-ttu-id="4eff1-195">W polu **Format** wpisz **rrrr-MM-dd**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-195">In the **Format** field, type **yyyy-MM-dd**.</span></span>
+5. <span data-ttu-id="4eff1-196">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-196">Click **OK**.</span></span>
+6. <span data-ttu-id="4eff1-197">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\TransDate**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-197">In the tree, select **Xml\Message\Payments\Item\TransDate**.</span></span>
+7. <span data-ttu-id="4eff1-198">Kliknij opcję **Dodaj datę/godzinę**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-198">Click **Add DateTime**.</span></span>
+8. <span data-ttu-id="4eff1-199">W polu **Format** wpisz **rrrr-MM-dd**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-199">In the **Format** field, type **yyyy-MM-dd**.</span></span>
+9. <span data-ttu-id="4eff1-200">W polu **Typ daty/godziny** wybierz opcję **Data**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-200">In the **DateTime** type field, select **Date**.</span></span>
+10. <span data-ttu-id="4eff1-201">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-201">Click **OK**.</span></span>
+11. <span data-ttu-id="4eff1-202">W drzewie zaznacz element **Xml\Komunikat\MessageId**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-202">In the tree, select **Xml\Message\MessageId**.</span></span>
+12. <span data-ttu-id="4eff1-203">Kliknij przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="4eff1-203">Click **Add** to open the drop dialog.</span></span>
+13. <span data-ttu-id="4eff1-204">W drzewie zaznacz element **Tekst\Ciąg**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-204">In the tree, select **Text\String**.</span></span>
+14. <span data-ttu-id="4eff1-205">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-205">Click **OK**.</span></span>
+15. <span data-ttu-id="4eff1-206">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Dostawca\Nazwa**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-206">In the tree, select **Xml\Message\Payments\Item\Vendor\Name**.</span></span>
+16. <span data-ttu-id="4eff1-207">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-207">Click **Add String**.</span></span>
+17. <span data-ttu-id="4eff1-208">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-208">Click **OK**.</span></span>
+18. <span data-ttu-id="4eff1-209">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Dostawca\Bank\RoutingNumber**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-209">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\RoutingNumber**.</span></span>
+19. <span data-ttu-id="4eff1-210">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-210">Click **Add String**.</span></span>
+20. <span data-ttu-id="4eff1-211">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-211">Click **OK**.</span></span>
+21. <span data-ttu-id="4eff1-212">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Dostawca\Bank\AccountNumber**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-212">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\AccountNumber**.</span></span>
+22. <span data-ttu-id="4eff1-213">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-213">Click **Add String**.</span></span>
+23. <span data-ttu-id="4eff1-214">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-214">Click **OK**.</span></span>
+24. <span data-ttu-id="4eff1-215">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Płatnik\Nazwa**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-215">In the tree, select **Xml\Message\Payments\Item\Payer\Name**.</span></span>
+25. <span data-ttu-id="4eff1-216">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-216">Click **Add String**.</span></span>
+26. <span data-ttu-id="4eff1-217">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-217">Click **OK**.</span></span>
+27. <span data-ttu-id="4eff1-218">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Płatnik\Bank\RoutingNumber**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-218">In the tree, select **Xml\Message\Payments\Item\Payer\Bank\RoutingNumber**.</span></span>
+28. <span data-ttu-id="4eff1-219">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-219">Click **Add String**.</span></span>
+29. <span data-ttu-id="4eff1-220">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-220">Click **OK**.</span></span>
+30. <span data-ttu-id="4eff1-221">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Płatnik\Bank\AccountNumber**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-221">In the tree, select **Xml\Message\Payments\Item\Payer\Bank\AccountNumber**.</span></span>
+31. <span data-ttu-id="4eff1-222">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-222">Click **Add String**.</span></span>
+32. <span data-ttu-id="4eff1-223">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-223">Click **OK**.</span></span>
+33. <span data-ttu-id="4eff1-224">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Waluta**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-224">In the tree, select **Xml\Message\Payments\Item\Currency**.</span></span>
+34. <span data-ttu-id="4eff1-225">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-225">Click **Add String**.</span></span>
+35. <span data-ttu-id="4eff1-226">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-226">Click **OK**.</span></span>
+36. <span data-ttu-id="4eff1-227">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Opis**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-227">In the tree, select **Xml\Message\Payments\Item\Description**.</span></span>
+37. <span data-ttu-id="4eff1-228">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-228">Click **Add String**.</span></span>
+38. <span data-ttu-id="4eff1-229">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-229">Click **OK**.</span></span>
+39. <span data-ttu-id="4eff1-230">W drzewie zaznacz element **Xml\Komunikat\Płatności\Towar\Kwota**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-230">In the tree, select **Xml\Message\Payments\Item\Amount**.</span></span>
+40. <span data-ttu-id="4eff1-231">Kliknij opcję **Dodaj ciąg**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-231">Click **Add String**.</span></span>
+41. <span data-ttu-id="4eff1-232">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-232">Click **OK**.</span></span>
+42. <span data-ttu-id="4eff1-233">Kliknij przycisk **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="4eff1-233">Click **Save**.</span></span>
+43. <span data-ttu-id="4eff1-234">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="4eff1-234">Close the page.</span></span>
 
