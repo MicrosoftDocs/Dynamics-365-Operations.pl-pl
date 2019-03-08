@@ -1,13 +1,13 @@
---- 
+---
 title: Tworzenie produktu
-description: "Ta procedura poprowadzi przez proces tworzenia nowego produktu w hierarchii produktów sieci sprzedaży."
+description: Ta procedura poprowadzi przez proces tworzenia nowego produktu w hierarchii produktów sieci sprzedaży.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetails, EcoResProductCreate, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,27 +16,26 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: d6c92ee7e5f9beb34c8818d9f885a2624afa48f4
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366818"
 ---
-# <a name="create-a-product"></a><span data-ttu-id="c390e-103">Tworzenie produktu</span><span class="sxs-lookup"><span data-stu-id="c390e-103">Create a product</span></span>
+# <a name="create-a-product"></a><span data-ttu-id="3a414-103">Tworzenie produktu</span><span class="sxs-lookup"><span data-stu-id="3a414-103">Create a product</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="c390e-104">Ta procedura poprowadzi przez proces tworzenia nowego produktu w hierarchii produktów sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="c390e-104">This procedure walks through creating a new product in the retail product hierarchy.</span></span> <span data-ttu-id="c390e-105">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USRT, a zadanie jest przeznaczone dla kierownika ds. merchandisingu i projektanta produktów.</span><span class="sxs-lookup"><span data-stu-id="c390e-105">The demo data company used to create this task is USRT, and this task is intended for the Merchandising Manager and Product Designer.</span></span>
+<span data-ttu-id="3a414-104">Ta procedura poprowadzi przez proces tworzenia nowego produktu w hierarchii produktów sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="3a414-104">This procedure walks through creating a new product in the retail product hierarchy.</span></span> <span data-ttu-id="3a414-105">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USRT, a zadanie jest przeznaczone dla kierownika ds. merchandisingu i projektanta produktów.</span><span class="sxs-lookup"><span data-stu-id="3a414-105">The demo data company used to create this task is USRT, and this task is intended for the Merchandising Manager and Product Designer.</span></span>
 
-1. <span data-ttu-id="c390e-106">Wybierz kolejno opcje Handel detaliczny i inny > ..</span><span class="sxs-lookup"><span data-stu-id="c390e-106">Go to Retail and commerce > ..</span></span> <span data-ttu-id="c390e-107">> Produkty według kategorii.</span><span class="sxs-lookup"><span data-stu-id="c390e-107">> Products by category.</span></span>
-2. <span data-ttu-id="c390e-108">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c390e-108">Click New.</span></span>
-3. <span data-ttu-id="c390e-109">W polu Nazwa produktu wpisz nazwę dla swojego produktu.</span><span class="sxs-lookup"><span data-stu-id="c390e-109">In the Product name field, type a name for your product..</span></span>
-4. <span data-ttu-id="c390e-110">W polu Kategoria sieci sprzedaży kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="c390e-110">In the Retail category field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="c390e-111">W drzewie rozwiń węzeł „WSZYSTKO\Moda”.</span><span class="sxs-lookup"><span data-stu-id="c390e-111">In the tree, expand 'ALL (ALL)\Fashion (Fashion)'.</span></span>
-6. <span data-ttu-id="c390e-112">W drzewie zaznacz element „WSZYSTKO\Moda\Akcesoria modowe”.</span><span class="sxs-lookup"><span data-stu-id="c390e-112">In the tree, select 'ALL (ALL)\Fashion (Fashion)\Fashion Accessories (Fashion Accessories)'.</span></span>
-7. <span data-ttu-id="c390e-113">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c390e-113">Click OK.</span></span>
-8. <span data-ttu-id="c390e-114">W polu Numer produktu wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c390e-114">In the Product number field, type a value.</span></span>
-9. <span data-ttu-id="c390e-115">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c390e-115">Click OK.</span></span>
-
+1. <span data-ttu-id="3a414-106">Wybierz kolejno opcje Handel detaliczny i inny > ..</span><span class="sxs-lookup"><span data-stu-id="3a414-106">Go to Retail and commerce > ..</span></span> <span data-ttu-id="3a414-107">> Produkty według kategorii.</span><span class="sxs-lookup"><span data-stu-id="3a414-107">> Products by category.</span></span>
+2. <span data-ttu-id="3a414-108">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="3a414-108">Click New.</span></span>
+3. <span data-ttu-id="3a414-109">W polu Nazwa produktu wpisz nazwę dla swojego produktu.</span><span class="sxs-lookup"><span data-stu-id="3a414-109">In the Product name field, type a name for your product..</span></span>
+4. <span data-ttu-id="3a414-110">W polu Kategoria sieci sprzedaży kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="3a414-110">In the Retail category field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="3a414-111">W drzewie rozwiń węzeł „WSZYSTKO\Moda”.</span><span class="sxs-lookup"><span data-stu-id="3a414-111">In the tree, expand 'ALL (ALL)\Fashion (Fashion)'.</span></span>
+6. <span data-ttu-id="3a414-112">W drzewie zaznacz element „WSZYSTKO\Moda\Akcesoria modowe”.</span><span class="sxs-lookup"><span data-stu-id="3a414-112">In the tree, select 'ALL (ALL)\Fashion (Fashion)\Fashion Accessories (Fashion Accessories)'.</span></span>
+7. <span data-ttu-id="3a414-113">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="3a414-113">Click OK.</span></span>
+8. <span data-ttu-id="3a414-114">W polu Numer produktu wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="3a414-114">In the Product number field, type a value.</span></span>
+9. <span data-ttu-id="3a414-115">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="3a414-115">Click OK.</span></span>
 

@@ -1,13 +1,13 @@
 ---
-title: "Konta księgowania likwidacji środków trwałych"
-description: "W tym temacie wyjaśniono, jak w księdze głównej skonfigurować konta księgowania operacji likwidacji środków trwałych."
+title: Konta księgowania likwidacji środków trwałych
+description: W tym temacie wyjaśniono, jak w księdze głównej skonfigurować konta księgowania operacji likwidacji środków trwałych.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: shylaw
@@ -18,28 +18,26 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: a8e00c00b0cb7058858fde3774941911ce20fb6f
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367186"
 ---
-
-# <a name="fixed-asset-disposal-posting-accounts"></a><span data-ttu-id="5e549-103">Konta księgowania likwidacji środków trwałych</span><span class="sxs-lookup"><span data-stu-id="5e549-103">Fixed asset disposal posting accounts</span></span>
+# <a name="fixed-asset-disposal-posting-accounts"></a><span data-ttu-id="381b8-103">Konta księgowania likwidacji środków trwałych</span><span class="sxs-lookup"><span data-stu-id="381b8-103">Fixed asset disposal posting accounts</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="5e549-104">W tym temacie wyjaśniono, jak w księdze głównej skonfigurować konta księgowania operacji likwidacji środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="5e549-104">This topic explains how to set up general ledger posting accounts for disposing of assets.</span></span>
+<span data-ttu-id="381b8-104">W tym temacie wyjaśniono, jak w księdze głównej skonfigurować konta księgowania operacji likwidacji środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="381b8-104">This topic explains how to set up general ledger posting accounts for disposing of assets.</span></span>
 
-<span data-ttu-id="5e549-105">Na stronie Profile księgowania środków trwałych na skróconej karcie Konta księgowe wybierz Likwidacja — sprzedaż i Likwidacja — odpadki, aby ustawić księgowanie do księgi.</span><span class="sxs-lookup"><span data-stu-id="5e549-105">In the Fixed asset posting profiles page, on the Ledger accounts FastTab, select Disposal - sale and Disposal - scrap to set up postings to the ledger.</span></span>
+<span data-ttu-id="381b8-105">Na stronie Profile księgowania środków trwałych na skróconej karcie Konta księgowe wybierz Likwidacja — sprzedaż i Likwidacja — odpadki, aby ustawić księgowanie do księgi.</span><span class="sxs-lookup"><span data-stu-id="381b8-105">In the Fixed asset posting profiles page, on the Ledger accounts FastTab, select Disposal - sale and Disposal - scrap to set up postings to the ledger.</span></span>
 
-<span data-ttu-id="5e549-106">Dla obu typów transakcji na konto księgowe wpływa wartość likwidacji środka trwałego.</span><span class="sxs-lookup"><span data-stu-id="5e549-106">For both transaction types, the ledger account is credited for the disposal value of the fixed asset.</span></span> <span data-ttu-id="5e549-107">Księgowanie po stronie debetowej obciąży konto przeciwstawne, którym może być na przykład konto bankowe.</span><span class="sxs-lookup"><span data-stu-id="5e549-107">The debit is posted to an offset account, which might be, for example, a bank account.</span></span> <span data-ttu-id="5e549-108">Jeśli środek trwały zostanie sprzedany odbiorcy, zamiast konta przeciwstawnego użyte zostanie konto odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="5e549-108">If a fixed asset is sold to a customer, the customer account is used instead of the offset account.</span></span>
+<span data-ttu-id="381b8-106">Dla obu typów transakcji na konto księgowe wpływa wartość likwidacji środka trwałego.</span><span class="sxs-lookup"><span data-stu-id="381b8-106">For both transaction types, the ledger account is credited for the disposal value of the fixed asset.</span></span> <span data-ttu-id="381b8-107">Księgowanie po stronie debetowej obciąży konto przeciwstawne, którym może być na przykład konto bankowe.</span><span class="sxs-lookup"><span data-stu-id="381b8-107">The debit is posted to an offset account, which might be, for example, a bank account.</span></span> <span data-ttu-id="381b8-108">Jeśli środek trwały zostanie sprzedany odbiorcy, zamiast konta przeciwstawnego użyte zostanie konto odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="381b8-108">If a fixed asset is sold to a customer, the customer account is used instead of the offset account.</span></span>
 
-<span data-ttu-id="5e549-109">Kliknij Likwidacja, następnie kliknij Sprzedaż lub Odpadki, a następnie skonfiguruj szczegóły kont, aby wycofać wartość księgową netto środka trwałego.</span><span class="sxs-lookup"><span data-stu-id="5e549-109">Click Disposal and then click Sale or Scrap, and then set up detailed accounts to reverse the net book value of the fixed asset.</span></span> <span data-ttu-id="5e549-110">Można również wprowadzić informacje w polach Księguj wartość i Typ wartości sprzedaży na stronie Parametry likwidacji.</span><span class="sxs-lookup"><span data-stu-id="5e549-110">You can also enter information in the Post value and Sales value type fields in the Disposal parameters page.</span></span> 
+<span data-ttu-id="381b8-109">Kliknij Likwidacja, następnie kliknij Sprzedaż lub Odpadki, a następnie skonfiguruj szczegóły kont, aby wycofać wartość księgową netto środka trwałego.</span><span class="sxs-lookup"><span data-stu-id="381b8-109">Click Disposal and then click Sale or Scrap, and then set up detailed accounts to reverse the net book value of the fixed asset.</span></span> <span data-ttu-id="381b8-110">Można również wprowadzić informacje w polach Księguj wartość i Typ wartości sprzedaży na stronie Parametry likwidacji.</span><span class="sxs-lookup"><span data-stu-id="381b8-110">You can also enter information in the Post value and Sales value type fields in the Disposal parameters page.</span></span> 
 
-<span data-ttu-id="5e549-111">Transakcja likwidacji środka trwałego w puli środków trwałych o niskiej wartości zmniejsza wartość księgową netto tej puli tylko o kwotę danej likwidacji.</span><span class="sxs-lookup"><span data-stu-id="5e549-111">The disposal transaction for an asset in a low-value pool reduces the net book value of the low-value pool by the disposed amount only.</span></span> <span data-ttu-id="5e549-112">Jeśli jednak wartość sprzedaży takiego środka trwałego przekracza wartość księgową netto wspomnianej puli, wartość księgowa netto zostanie zmniejszona do zera.</span><span class="sxs-lookup"><span data-stu-id="5e549-112">However, when the sale of an asset exceeds the net book value of the low-value pool, the net book value is reduced to zero.</span></span>
-
+<span data-ttu-id="381b8-111">Transakcja likwidacji środka trwałego w puli środków trwałych o niskiej wartości zmniejsza wartość księgową netto tej puli tylko o kwotę danej likwidacji.</span><span class="sxs-lookup"><span data-stu-id="381b8-111">The disposal transaction for an asset in a low-value pool reduces the net book value of the low-value pool by the disposed amount only.</span></span> <span data-ttu-id="381b8-112">Jeśli jednak wartość sprzedaży takiego środka trwałego przekracza wartość księgową netto wspomnianej puli, wartość księgowa netto zostanie zmniejszona do zera.</span><span class="sxs-lookup"><span data-stu-id="381b8-112">However, when the sale of an asset exceeds the net book value of the low-value pool, the net book value is reduced to zero.</span></span>
 
 
 

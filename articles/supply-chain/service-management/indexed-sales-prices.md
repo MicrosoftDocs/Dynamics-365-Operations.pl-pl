@@ -1,47 +1,45 @@
 ---
-title: "Indeksowane ceny sprzedaży"
-description: "Indeks dla cen sprzedaży subskrypcji konfiguruje się podczas tworzenia opłaty subskrypcji."
+title: Indeksowane ceny sprzedaży
+description: Indeks dla cen sprzedaży subskrypcji konfiguruje się podczas tworzenia opłaty subskrypcji.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMASubscriptionCreateDialog
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 5341e760bf4cde2dcebebee0dacc1e88506368fe
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358354"
 ---
-
-# <a name="indexed-sales-prices"></a><span data-ttu-id="2d6bd-103">Indeksowane ceny sprzedaży</span><span class="sxs-lookup"><span data-stu-id="2d6bd-103">Indexed sales prices</span></span>  
+# <a name="indexed-sales-prices"></a><span data-ttu-id="7840b-103">Indeksowane ceny sprzedaży</span><span class="sxs-lookup"><span data-stu-id="7840b-103">Indexed sales prices</span></span>  
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="2d6bd-104">Indeks dla cen sprzedaży subskrypcji konfiguruje się podczas tworzenia opłaty subskrypcji.</span><span class="sxs-lookup"><span data-stu-id="2d6bd-104">You set up the index for a subscription sales price when you create a subscription fee.</span></span>
+<span data-ttu-id="7840b-104">Indeks dla cen sprzedaży subskrypcji konfiguruje się podczas tworzenia opłaty subskrypcji.</span><span class="sxs-lookup"><span data-stu-id="7840b-104">You set up the index for a subscription sales price when you create a subscription fee.</span></span>
 
-<span data-ttu-id="2d6bd-105">W formularzu **Utwórz opłatę subskrypcji** w polu **Pobierz ceny z** ustaw wartość **Podstawa indeksowana**, a następnie pomnóż cenę podstawową przez procent określony w polu **Procentowa zmiana ceny**, aby uzyskać cenę sprzedaży w transakcji subskrypcji.</span><span class="sxs-lookup"><span data-stu-id="2d6bd-105">In the **Create subscription fee** form, set the **Get pricing from** field to **Indexed base price**, and then multiply the base price by the percentage in the **Percent price change** field to get the sales price of the subscription transaction.</span></span>
+<span data-ttu-id="7840b-105">W formularzu **Utwórz opłatę subskrypcji** w polu **Pobierz ceny z** ustaw wartość **Podstawa indeksowana**, a następnie pomnóż cenę podstawową przez procent określony w polu **Procentowa zmiana ceny**, aby uzyskać cenę sprzedaży w transakcji subskrypcji.</span><span class="sxs-lookup"><span data-stu-id="7840b-105">In the **Create subscription fee** form, set the **Get pricing from** field to **Indexed base price**, and then multiply the base price by the percentage in the **Percent price change** field to get the sales price of the subscription transaction.</span></span>
 
-<span data-ttu-id="2d6bd-106">Na przykład jeśli cena podstawowa wynosi 1000 euro, a indeks 110, cena sprzedaży wynosi 1100 euro.</span><span class="sxs-lookup"><span data-stu-id="2d6bd-106">For example, if the base price is EUR 1,000, and the index is 110, the sales price is EUR 1,100.</span></span>
+<span data-ttu-id="7840b-106">Na przykład jeśli cena podstawowa wynosi 1000 euro, a indeks 110, cena sprzedaży wynosi 1100 euro.</span><span class="sxs-lookup"><span data-stu-id="7840b-106">For example, if the base price is EUR 1,000, and the index is 110, the sales price is EUR 1,100.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="2d6bd-107">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="2d6bd-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7840b-107">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="7840b-107">See also</span></span>
 
-[<span data-ttu-id="2d6bd-108">Utwórz transakcje opłat subskrypcji</span><span class="sxs-lookup"><span data-stu-id="2d6bd-108">Create subscription fee transactions</span></span>](create-subscription-fee-transactions.md)
+[<span data-ttu-id="7840b-108">Utwórz transakcje opłat subskrypcji</span><span class="sxs-lookup"><span data-stu-id="7840b-108">Create subscription fee transactions</span></span>](create-subscription-fee-transactions.md)
 
   
-
 
 
