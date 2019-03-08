@@ -1,13 +1,13 @@
---- 
-title: "Rozbicie środka trwałego"
-description: "W tym przewodniku po zadaniach jedna księga środków trwałych zostanie podzielona procentowo w celu utworzenia nowej księgi środków trwałych."
+---
+title: Rozbicie środka trwałego
+description: W tym przewodniku po zadaniach jedna księga środków trwałych zostanie podzielona procentowo w celu utworzenia nowej księgi środków trwałych.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetSplit, AssetBookLookup, LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,47 +16,46 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6be9de64265a4d7b5c91af3ee8acfce80c78e0f1
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333376"
 ---
-# <a name="split-a-fixed-asset"></a><span data-ttu-id="b3399-103">Rozbicie środka trwałego</span><span class="sxs-lookup"><span data-stu-id="b3399-103">Split a fixed asset</span></span>
+# <a name="split-a-fixed-asset"></a><span data-ttu-id="74405-103">Rozbicie środka trwałego</span><span class="sxs-lookup"><span data-stu-id="74405-103">Split a fixed asset</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b3399-104">W tym przewodniku po zadaniach jedna księga środków trwałych zostanie podzielona procentowo w celu utworzenia nowej księgi środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="b3399-104">This task guide will split a percentage of one asset book to a new asset book.</span></span>  <span data-ttu-id="b3399-105">Przewodnik wykorzystuje rolę Księgowy i dane firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="b3399-105">It uses the Accountant role and USMF demo data.</span></span>
+<span data-ttu-id="74405-104">W tym przewodniku po zadaniach jedna księga środków trwałych zostanie podzielona procentowo w celu utworzenia nowej księgi środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="74405-104">This task guide will split a percentage of one asset book to a new asset book.</span></span>  <span data-ttu-id="74405-105">Przewodnik wykorzystuje rolę Księgowy i dane firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="74405-105">It uses the Accountant role and USMF demo data.</span></span>
 
 
-## <a name="create-a-new-fixed-asset"></a><span data-ttu-id="b3399-106">Utwórz nowy środek trwały</span><span class="sxs-lookup"><span data-stu-id="b3399-106">Create a new fixed asset</span></span>
-1. <span data-ttu-id="b3399-107">Przejdź do Środki trwałe > Środki trwałe > Środki trwałe.</span><span class="sxs-lookup"><span data-stu-id="b3399-107">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
-2. <span data-ttu-id="b3399-108">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="b3399-108">Click New.</span></span>
-3. <span data-ttu-id="b3399-109">W polu Grupa środków trwałych wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="b3399-109">In the Fixed asset group field, enter or select a value.</span></span>
-4. <span data-ttu-id="b3399-110">Zanotuj numer środka trwałego, ponieważ trzeba go będzie później wykorzystać w procesie podziału.</span><span class="sxs-lookup"><span data-stu-id="b3399-110">Note the fixed asset number to use in the split process later.</span></span>
-5. <span data-ttu-id="b3399-111">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="b3399-111">In the Name field, type a value.</span></span>
-6. <span data-ttu-id="b3399-112">Zamknij formularz.</span><span class="sxs-lookup"><span data-stu-id="b3399-112">Close the form.</span></span>
+## <a name="create-a-new-fixed-asset"></a><span data-ttu-id="74405-106">Utwórz nowy środek trwały</span><span class="sxs-lookup"><span data-stu-id="74405-106">Create a new fixed asset</span></span>
+1. <span data-ttu-id="74405-107">Przejdź do Środki trwałe > Środki trwałe > Środki trwałe.</span><span class="sxs-lookup"><span data-stu-id="74405-107">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="74405-108">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="74405-108">Click New.</span></span>
+3. <span data-ttu-id="74405-109">W polu Grupa środków trwałych wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="74405-109">In the Fixed asset group field, enter or select a value.</span></span>
+4. <span data-ttu-id="74405-110">Zanotuj numer środka trwałego, ponieważ trzeba go będzie później wykorzystać w procesie podziału.</span><span class="sxs-lookup"><span data-stu-id="74405-110">Note the fixed asset number to use in the split process later.</span></span>
+5. <span data-ttu-id="74405-111">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="74405-111">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="74405-112">Zamknij formularz.</span><span class="sxs-lookup"><span data-stu-id="74405-112">Close the form.</span></span>
 
-## <a name="split-a-fixed-asset"></a><span data-ttu-id="b3399-113">Rozbicie środka trwałego</span><span class="sxs-lookup"><span data-stu-id="b3399-113">Split a fixed asset</span></span>
-1. <span data-ttu-id="b3399-114">Na liście odszukaj i zaznacz środek trwały, który ma zostać podzielony.</span><span class="sxs-lookup"><span data-stu-id="b3399-114">In the list, find and select the fixed asset to split.</span></span>
-2. <span data-ttu-id="b3399-115">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="b3399-115">In the list, click the link in the selected row.</span></span>
-3. <span data-ttu-id="b3399-116">Kliknij opcję Księgi.</span><span class="sxs-lookup"><span data-stu-id="b3399-116">Click Books.</span></span>
-    * <span data-ttu-id="b3399-117">Wybierz księgę, która zostanie użyta w celu wydzielenia nowego składnika aktywów.</span><span class="sxs-lookup"><span data-stu-id="b3399-117">Select the book to split to the new asset.</span></span>  
-4. <span data-ttu-id="b3399-118">Kliknij przycisk Funkcje.</span><span class="sxs-lookup"><span data-stu-id="b3399-118">Click Functions.</span></span>
-5. <span data-ttu-id="b3399-119">Kliknij opcję Rozbicie środka trwałego.</span><span class="sxs-lookup"><span data-stu-id="b3399-119">Click Split fixed asset.</span></span>
-6. <span data-ttu-id="b3399-120">W polu Do środka trwałego wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="b3399-120">In the To fixed asset field, enter or select a value.</span></span>
-7. <span data-ttu-id="b3399-121">W polu Do księgi kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="b3399-121">In the To book field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="b3399-122">W polu Data transakcji wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="b3399-122">In the Transaction date field, enter a date.</span></span>
-9. <span data-ttu-id="b3399-123">W polu Procent wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="b3399-123">In the Percent field, enter a number.</span></span>
-10. <span data-ttu-id="b3399-124">Wprowadź lub wybierz wartość w polu Nazwa arkusza.</span><span class="sxs-lookup"><span data-stu-id="b3399-124">In the Journal name field, enter or select a value.</span></span>
-11. <span data-ttu-id="b3399-125">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="b3399-125">Click OK.</span></span>
+## <a name="split-a-fixed-asset"></a><span data-ttu-id="74405-113">Rozbicie środka trwałego</span><span class="sxs-lookup"><span data-stu-id="74405-113">Split a fixed asset</span></span>
+1. <span data-ttu-id="74405-114">Na liście odszukaj i zaznacz środek trwały, który ma zostać podzielony.</span><span class="sxs-lookup"><span data-stu-id="74405-114">In the list, find and select the fixed asset to split.</span></span>
+2. <span data-ttu-id="74405-115">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="74405-115">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="74405-116">Kliknij opcję Księgi.</span><span class="sxs-lookup"><span data-stu-id="74405-116">Click Books.</span></span>
+    * <span data-ttu-id="74405-117">Wybierz księgę, która zostanie użyta w celu wydzielenia nowego składnika aktywów.</span><span class="sxs-lookup"><span data-stu-id="74405-117">Select the book to split to the new asset.</span></span>  
+4. <span data-ttu-id="74405-118">Kliknij przycisk Funkcje.</span><span class="sxs-lookup"><span data-stu-id="74405-118">Click Functions.</span></span>
+5. <span data-ttu-id="74405-119">Kliknij opcję Rozbicie środka trwałego.</span><span class="sxs-lookup"><span data-stu-id="74405-119">Click Split fixed asset.</span></span>
+6. <span data-ttu-id="74405-120">W polu Do środka trwałego wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="74405-120">In the To fixed asset field, enter or select a value.</span></span>
+7. <span data-ttu-id="74405-121">W polu Do księgi kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="74405-121">In the To book field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="74405-122">W polu Data transakcji wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="74405-122">In the Transaction date field, enter a date.</span></span>
+9. <span data-ttu-id="74405-123">W polu Procent wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="74405-123">In the Percent field, enter a number.</span></span>
+10. <span data-ttu-id="74405-124">Wprowadź lub wybierz wartość w polu Nazwa arkusza.</span><span class="sxs-lookup"><span data-stu-id="74405-124">In the Journal name field, enter or select a value.</span></span>
+11. <span data-ttu-id="74405-125">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="74405-125">Click OK.</span></span>
 
-## <a name="post-the-journal-transaction"></a><span data-ttu-id="b3399-126">Księgowanie transakcji arkusza</span><span class="sxs-lookup"><span data-stu-id="b3399-126">Post the journal transaction</span></span>
-1. <span data-ttu-id="b3399-127">Wybierz kolejno opcje Środki trwałe > Wpisy w arkuszu > Arkusz środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="b3399-127">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
-2. <span data-ttu-id="b3399-128">Z listy wybierz arkusz utworzony za pomocą procesu podziału.</span><span class="sxs-lookup"><span data-stu-id="b3399-128">In the list, select the journal created with the split process.</span></span>
-3. <span data-ttu-id="b3399-129">Kliknij przycisk Wiersze.</span><span class="sxs-lookup"><span data-stu-id="b3399-129">Click Lines.</span></span>
-    * <span data-ttu-id="b3399-130">Sprawdź utworzone wiersze arkusza.</span><span class="sxs-lookup"><span data-stu-id="b3399-130">Verify the journal lines created.</span></span>  <span data-ttu-id="b3399-131">Dla oryginalnego składnika aktywów jest tworzona transakcja korekty wartości początkowej, aby zmniejszyć wartość o procent określony w procesie podziału.</span><span class="sxs-lookup"><span data-stu-id="b3399-131">An Acquisition adjustment transaction is created for the original asset to decrease the value by the percentage specified during the split process.</span></span>  <span data-ttu-id="b3399-132">Dla nowego składnika aktywów jest tworzona transakcja nabycia na tę samą kwotę.</span><span class="sxs-lookup"><span data-stu-id="b3399-132">An Acquisition transaction is created for the new asset for the same amount.</span></span>  
-4. <span data-ttu-id="b3399-133">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="b3399-133">Click Post.</span></span>
-
+## <a name="post-the-journal-transaction"></a><span data-ttu-id="74405-126">Księgowanie transakcji arkusza</span><span class="sxs-lookup"><span data-stu-id="74405-126">Post the journal transaction</span></span>
+1. <span data-ttu-id="74405-127">Wybierz kolejno opcje Środki trwałe > Wpisy w arkuszu > Arkusz środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="74405-127">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
+2. <span data-ttu-id="74405-128">Z listy wybierz arkusz utworzony za pomocą procesu podziału.</span><span class="sxs-lookup"><span data-stu-id="74405-128">In the list, select the journal created with the split process.</span></span>
+3. <span data-ttu-id="74405-129">Kliknij przycisk Wiersze.</span><span class="sxs-lookup"><span data-stu-id="74405-129">Click Lines.</span></span>
+    * <span data-ttu-id="74405-130">Sprawdź utworzone wiersze arkusza.</span><span class="sxs-lookup"><span data-stu-id="74405-130">Verify the journal lines created.</span></span>  <span data-ttu-id="74405-131">Dla oryginalnego składnika aktywów jest tworzona transakcja korekty wartości początkowej, aby zmniejszyć wartość o procent określony w procesie podziału.</span><span class="sxs-lookup"><span data-stu-id="74405-131">An Acquisition adjustment transaction is created for the original asset to decrease the value by the percentage specified during the split process.</span></span>  <span data-ttu-id="74405-132">Dla nowego składnika aktywów jest tworzona transakcja nabycia na tę samą kwotę.</span><span class="sxs-lookup"><span data-stu-id="74405-132">An Acquisition transaction is created for the new asset for the same amount.</span></span>  
+4. <span data-ttu-id="74405-133">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="74405-133">Click Post.</span></span>
 

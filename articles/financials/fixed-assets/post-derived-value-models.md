@@ -1,13 +1,13 @@
 ---
-title: "Księgowanie za pomocą ksiąg pochodnych"
-description: "W tym artykule opisano sposób korzystania z ksiąg pochodnych."
+title: Księgowanie za pomocą ksiąg pochodnych
+description: W tym artykule opisano sposób korzystania z ksiąg pochodnych.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBookTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: shylaw
@@ -18,46 +18,44 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: ff1dbf67a53a5639e448da707898b55cd00cba94
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339149"
 ---
-
-# <a name="post-with-derived-books"></a><span data-ttu-id="767a2-103">Księgowanie za pomocą ksiąg pochodnych</span><span class="sxs-lookup"><span data-stu-id="767a2-103">Post with derived books</span></span>
+# <a name="post-with-derived-books"></a><span data-ttu-id="e506d-103">Księgowanie za pomocą ksiąg pochodnych</span><span class="sxs-lookup"><span data-stu-id="e506d-103">Post with derived books</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="767a2-104">W tym artykule opisano sposób korzystania z ksiąg pochodnych.</span><span class="sxs-lookup"><span data-stu-id="767a2-104">This article describes how to use derived books.</span></span>
+<span data-ttu-id="e506d-104">W tym artykule opisano sposób korzystania z ksiąg pochodnych.</span><span class="sxs-lookup"><span data-stu-id="e506d-104">This article describes how to use derived books.</span></span>
 
-<span data-ttu-id="767a2-105">W przypadku księgowania transakcji w księdze, która zawiera księgi pochodne, transakcje w księgach pochodnych są księgowane automatycznie z arkuszy, zamówień zakupu i faktur niezależnych.</span><span class="sxs-lookup"><span data-stu-id="767a2-105">When you post transactions for a book that contains derived books, the derived book transactions are posted automatically in journals, purchase orders, or free text invoices.</span></span> <span data-ttu-id="767a2-106">Jeżeli jednak przygotowujesz transakcje dla księgi podstawowej w arkuszu Środki trwałe, możliwe będzie wyświetlanie i modyfikowanie kwot transakcji pochodnych przed ich zaksięgowaniem.</span><span class="sxs-lookup"><span data-stu-id="767a2-106">However, if you prepare the primary book transactions in the Fixed assets journal, you can view and modify the amounts of the derived transactions before you post them.</span></span>
--   <span data-ttu-id="767a2-107">Pewne konta, takie jak konto podatkowe, konto odbiorcy lub konto dostawcy, są aktualizowane tylko raz poprzez księgowanie w księdze podstawowej.</span><span class="sxs-lookup"><span data-stu-id="767a2-107">Certain accounts, such as sales tax and customer or vendor accounts, are updated only once by postings of the primary book.</span></span> <span data-ttu-id="767a2-108">Transakcje księgi pochodnej są księgowane na kontach zdefiniowanych dla księgi pochodnej na stronie Profile księgowania środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="767a2-108">The derived book transactions are posted to the accounts that have been defined for the derived book in the Fixed asset posting profiles page.</span></span>
--   <span data-ttu-id="767a2-109">Dla ksiąg pochodnych jako typ transakcji jest zwykle używana opcja Nabycie.</span><span class="sxs-lookup"><span data-stu-id="767a2-109">Acquisition is often used as the transaction type for the derived books.</span></span> <span data-ttu-id="767a2-110">Z tej opcji można korzystać, jeżeli księga i księga pochodna mają być stosowane dla środków trwałych od momentu ich nabycia.</span><span class="sxs-lookup"><span data-stu-id="767a2-110">You use this when the book and the derived book should be applied to the fixed asset from the time of the acquisition of the fixed asset.</span></span>
--   <span data-ttu-id="767a2-111">Możliwe jest także stosowanie innych wartości dla opcji typu transakcji.</span><span class="sxs-lookup"><span data-stu-id="767a2-111">Other values for the transaction type can also apply.</span></span> <span data-ttu-id="767a2-112">Na przykład jeżeli w księgach podstawowej i pochodnych są te same okresy dotyczące sprzedaży lub likwidacji, wszystkie typy transakcji na środkach trwałych są dostępne podczas konfigurowania księgi pochodnej.</span><span class="sxs-lookup"><span data-stu-id="767a2-112">For example, if the primary book and the derived books have the same intervals regarding sale or disposal, all fixed asset transaction types are available for the setup of a derived book.</span></span>
+<span data-ttu-id="e506d-105">W przypadku księgowania transakcji w księdze, która zawiera księgi pochodne, transakcje w księgach pochodnych są księgowane automatycznie z arkuszy, zamówień zakupu i faktur niezależnych.</span><span class="sxs-lookup"><span data-stu-id="e506d-105">When you post transactions for a book that contains derived books, the derived book transactions are posted automatically in journals, purchase orders, or free text invoices.</span></span> <span data-ttu-id="e506d-106">Jeżeli jednak przygotowujesz transakcje dla księgi podstawowej w arkuszu Środki trwałe, możliwe będzie wyświetlanie i modyfikowanie kwot transakcji pochodnych przed ich zaksięgowaniem.</span><span class="sxs-lookup"><span data-stu-id="e506d-106">However, if you prepare the primary book transactions in the Fixed assets journal, you can view and modify the amounts of the derived transactions before you post them.</span></span>
+-   <span data-ttu-id="e506d-107">Pewne konta, takie jak konto podatkowe, konto odbiorcy lub konto dostawcy, są aktualizowane tylko raz poprzez księgowanie w księdze podstawowej.</span><span class="sxs-lookup"><span data-stu-id="e506d-107">Certain accounts, such as sales tax and customer or vendor accounts, are updated only once by postings of the primary book.</span></span> <span data-ttu-id="e506d-108">Transakcje księgi pochodnej są księgowane na kontach zdefiniowanych dla księgi pochodnej na stronie Profile księgowania środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="e506d-108">The derived book transactions are posted to the accounts that have been defined for the derived book in the Fixed asset posting profiles page.</span></span>
+-   <span data-ttu-id="e506d-109">Dla ksiąg pochodnych jako typ transakcji jest zwykle używana opcja Nabycie.</span><span class="sxs-lookup"><span data-stu-id="e506d-109">Acquisition is often used as the transaction type for the derived books.</span></span> <span data-ttu-id="e506d-110">Z tej opcji można korzystać, jeżeli księga i księga pochodna mają być stosowane dla środków trwałych od momentu ich nabycia.</span><span class="sxs-lookup"><span data-stu-id="e506d-110">You use this when the book and the derived book should be applied to the fixed asset from the time of the acquisition of the fixed asset.</span></span>
+-   <span data-ttu-id="e506d-111">Możliwe jest także stosowanie innych wartości dla opcji typu transakcji.</span><span class="sxs-lookup"><span data-stu-id="e506d-111">Other values for the transaction type can also apply.</span></span> <span data-ttu-id="e506d-112">Na przykład jeżeli w księgach podstawowej i pochodnych są te same okresy dotyczące sprzedaży lub likwidacji, wszystkie typy transakcji na środkach trwałych są dostępne podczas konfigurowania księgi pochodnej.</span><span class="sxs-lookup"><span data-stu-id="e506d-112">For example, if the primary book and the derived books have the same intervals regarding sale or disposal, all fixed asset transaction types are available for the setup of a derived book.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="767a2-113">Amortyzacja zaksięgowana w księdze pochodnej będzie na tę samą kwotą, co kwota zaksięgowana w księdze podstawowej.</span><span class="sxs-lookup"><span data-stu-id="767a2-113">Depreciation posted in the derived book will be the same amount as was posted for the primary book.</span></span> <span data-ttu-id="767a2-114">Jeżeli metody amortyzacji są różne w obu rodzajach ksiąg, nie należy generować transakcji amortyzacji za pomocą procesu ksiąg pochodnych.</span><span class="sxs-lookup"><span data-stu-id="767a2-114">If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process.</span></span> |
+> <span data-ttu-id="e506d-113">Amortyzacja zaksięgowana w księdze pochodnej będzie na tę samą kwotą, co kwota zaksięgowana w księdze podstawowej.</span><span class="sxs-lookup"><span data-stu-id="e506d-113">Depreciation posted in the derived book will be the same amount as was posted for the primary book.</span></span> <span data-ttu-id="e506d-114">Jeżeli metody amortyzacji są różne w obu rodzajach ksiąg, nie należy generować transakcji amortyzacji za pomocą procesu ksiąg pochodnych.</span><span class="sxs-lookup"><span data-stu-id="e506d-114">If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="767a2-115">Przykład</span><span class="sxs-lookup"><span data-stu-id="767a2-115">Example</span></span> 
-<span data-ttu-id="767a2-116">Na podstawie poniższych informacji prześledźmy sposób konfigurowania transakcji nabycia przy użyciu funkcji ksiąg pochodnych.</span><span class="sxs-lookup"><span data-stu-id="767a2-116">The following information describes how to set up acquisition transactions with the derived book functionality.</span></span>
+## <a name="example"></a><span data-ttu-id="e506d-115">Przykład</span><span class="sxs-lookup"><span data-stu-id="e506d-115">Example</span></span> 
+<span data-ttu-id="e506d-116">Na podstawie poniższych informacji prześledźmy sposób konfigurowania transakcji nabycia przy użyciu funkcji ksiąg pochodnych.</span><span class="sxs-lookup"><span data-stu-id="e506d-116">The following information describes how to set up acquisition transactions with the derived book functionality.</span></span>
 
-1.  <span data-ttu-id="767a2-117">Utwórz księgi na stronie Księgi.</span><span class="sxs-lookup"><span data-stu-id="767a2-117">Create the books on the Books page.</span></span>
-    -   <span data-ttu-id="767a2-118">Księga do celów księgowych: VM 1, warstwa księgowania Bieżący</span><span class="sxs-lookup"><span data-stu-id="767a2-118">The book for accounting: VM 1, Current posting layer</span></span>
-    -   <span data-ttu-id="767a2-119">Księga do celów podatkowych: VM 2, warstwa księgowania Podatek</span><span class="sxs-lookup"><span data-stu-id="767a2-119">The book for tax purposes: VM 2, Tax posting layer</span></span>
+1.  <span data-ttu-id="e506d-117">Utwórz księgi na stronie Księgi.</span><span class="sxs-lookup"><span data-stu-id="e506d-117">Create the books on the Books page.</span></span>
+    -   <span data-ttu-id="e506d-118">Księga do celów księgowych: VM 1, warstwa księgowania Bieżący</span><span class="sxs-lookup"><span data-stu-id="e506d-118">The book for accounting: VM 1, Current posting layer</span></span>
+    -   <span data-ttu-id="e506d-119">Księga do celów podatkowych: VM 2, warstwa księgowania Podatek</span><span class="sxs-lookup"><span data-stu-id="e506d-119">The book for tax purposes: VM 2, Tax posting layer</span></span>
 
-2.  <span data-ttu-id="767a2-120">W obszarze VM 1 kliknij kartę Księgi pochodne. Wybierz opcję VM 2 w polu Księga i opcję Nabycie w polu Typ transakcji.</span><span class="sxs-lookup"><span data-stu-id="767a2-120">On VM 1, click the Derived books tab. Select VM 2 in the Book field, and Acquisition in the Transaction type field.</span></span>
+2.  <span data-ttu-id="e506d-120">W obszarze VM 1 kliknij kartę Księgi pochodne. Wybierz opcję VM 2 w polu Księga i opcję Nabycie w polu Typ transakcji.</span><span class="sxs-lookup"><span data-stu-id="e506d-120">On VM 1, click the Derived books tab. Select VM 2 in the Book field, and Acquisition in the Transaction type field.</span></span>
 
-<span data-ttu-id="767a2-121">Księgi można dołączać do określonych środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="767a2-121">The books then can be attached to specific fixed assets.</span></span> 
+<span data-ttu-id="e506d-121">Księgi można dołączać do określonych środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="e506d-121">The books then can be attached to specific fixed assets.</span></span> 
 
-<span data-ttu-id="767a2-122">Jeżeli nabycie środka trwałego zostanie zaksięgowane w księdze VM 1, nie zostanie zaksięgowane tylko w księdze VM 1, ale również w księdze pochodnej VM 2.</span><span class="sxs-lookup"><span data-stu-id="767a2-122">When an acquisition is posted for a fixed asset with book VM 1, the acquisition is posted not only on VM 1, but also on the derived book VM 2.</span></span> <span data-ttu-id="767a2-123">Stan obu ksiąg środków trwałych zmieni się na Otwarty.</span><span class="sxs-lookup"><span data-stu-id="767a2-123">The status of both fixed asset books is updated to Open.</span></span>
+<span data-ttu-id="e506d-122">Jeżeli nabycie środka trwałego zostanie zaksięgowane w księdze VM 1, nie zostanie zaksięgowane tylko w księdze VM 1, ale również w księdze pochodnej VM 2.</span><span class="sxs-lookup"><span data-stu-id="e506d-122">When an acquisition is posted for a fixed asset with book VM 1, the acquisition is posted not only on VM 1, but also on the derived book VM 2.</span></span> <span data-ttu-id="e506d-123">Stan obu ksiąg środków trwałych zmieni się na Otwarty.</span><span class="sxs-lookup"><span data-stu-id="e506d-123">The status of both fixed asset books is updated to Open.</span></span>
 
 > [!NOTE]                                                                                                         
-> <span data-ttu-id="767a2-124">Jeżeli nie jest używana funkcja ksiąg pochodnych, należy zaksięgować nabycie środka trwałego osobno w księgach VM 1 i VM 2.</span><span class="sxs-lookup"><span data-stu-id="767a2-124">If you do not use derived books, you must post the acquisition of the fixed asset both for book VM 1 and book VM 2.</span></span>
+> <span data-ttu-id="e506d-124">Jeżeli nie jest używana funkcja ksiąg pochodnych, należy zaksięgować nabycie środka trwałego osobno w księgach VM 1 i VM 2.</span><span class="sxs-lookup"><span data-stu-id="e506d-124">If you do not use derived books, you must post the acquisition of the fixed asset both for book VM 1 and book VM 2.</span></span>
 
-<span data-ttu-id="767a2-125">Aby uzyskać więcej informacji, zobacz [Księgi pochodne](derived-books.md)</span><span class="sxs-lookup"><span data-stu-id="767a2-125">For more information, see [Derived books](derived-books.md)</span></span>
-
+<span data-ttu-id="e506d-125">Aby uzyskać więcej informacji, zobacz [Księgi pochodne](derived-books.md)</span><span class="sxs-lookup"><span data-stu-id="e506d-125">For more information, see [Derived books](derived-books.md)</span></span>
 
 
 

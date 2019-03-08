@@ -1,49 +1,46 @@
 ---
-title: "Usuwanie zamówienia zwrotu"
-description: "Formularz Usuwanie zamówień zwrotu umożliwia usunięcie wielu zamówień zwrotu."
+title: Usuwanie zamówienia zwrotu
+description: Formularz Usuwanie zamówień zwrotu umożliwia usunięcie wielu zamówień zwrotu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesDeleteOrder
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 4bd6794745de3039d004b40f41325df8b5b78986
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353616"
 ---
-
-
-# <a name="delete-a-return-order"></a><span data-ttu-id="0b842-103">Usuwanie zamówienia zwrotu</span><span class="sxs-lookup"><span data-stu-id="0b842-103">Delete a return order</span></span> 
+# <a name="delete-a-return-order"></a><span data-ttu-id="03278-103">Usuwanie zamówienia zwrotu</span><span class="sxs-lookup"><span data-stu-id="03278-103">Delete a return order</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="0b842-104">Formularz **Usuwanie zamówień zwrotu** umożliwia usunięcie wielu zamówień zwrotu.</span><span class="sxs-lookup"><span data-stu-id="0b842-104">Use the **Delete return order** form to delete multiple return orders.</span></span>
+<span data-ttu-id="03278-104">Formularz **Usuwanie zamówień zwrotu** umożliwia usunięcie wielu zamówień zwrotu.</span><span class="sxs-lookup"><span data-stu-id="03278-104">Use the **Delete return order** form to delete multiple return orders.</span></span>
 
-1.  <span data-ttu-id="0b842-105">Kliknij kolejno opcje **Sprzedaż i marketing** \> **Okresowe** \> **Oczyszczanie** \> **Usuwanie zamówień zwrotu**.</span><span class="sxs-lookup"><span data-stu-id="0b842-105">Click **Sales and marketing** \> **Periodic** \> **Clean up** \> **Delete return orders**.</span></span>
+1.  <span data-ttu-id="03278-105">Kliknij kolejno opcje **Sprzedaż i marketing** \> **Okresowe** \> **Oczyszczanie** \> **Usuwanie zamówień zwrotu**.</span><span class="sxs-lookup"><span data-stu-id="03278-105">Click **Sales and marketing** \> **Periodic** \> **Clean up** \> **Delete return orders**.</span></span>
 
-2.  <span data-ttu-id="0b842-106">Kliknij opcję **Wybierz**, aby otworzyć formularz **Aktualizacja sprzedaży**.</span><span class="sxs-lookup"><span data-stu-id="0b842-106">Click **Select** to open the **Sales update** form.</span></span>
+2.  <span data-ttu-id="03278-106">Kliknij opcję **Wybierz**, aby otworzyć formularz **Aktualizacja sprzedaży**.</span><span class="sxs-lookup"><span data-stu-id="03278-106">Click **Select** to open the **Sales update** form.</span></span>
 
-3.  <span data-ttu-id="0b842-107">Określ kryteria, a następnie kliknij przycisk **OK**, aby wrócić do formularza **Usuwanie zamówień zwrotu**.</span><span class="sxs-lookup"><span data-stu-id="0b842-107">Specify the criteria, and then click **OK** to return to the **Delete return order** form.</span></span> <span data-ttu-id="0b842-108">Zamówienia zwrotu utworzone w firmie są wyświetlane na podstawie określonych kryteriów.</span><span class="sxs-lookup"><span data-stu-id="0b842-108">Return orders that have been created in the legal entity are displayed, based on the specified criteria.</span></span>
+3.  <span data-ttu-id="03278-107">Określ kryteria, a następnie kliknij przycisk **OK**, aby wrócić do formularza **Usuwanie zamówień zwrotu**.</span><span class="sxs-lookup"><span data-stu-id="03278-107">Specify the criteria, and then click **OK** to return to the **Delete return order** form.</span></span> <span data-ttu-id="03278-108">Zamówienia zwrotu utworzone w firmie są wyświetlane na podstawie określonych kryteriów.</span><span class="sxs-lookup"><span data-stu-id="03278-108">Return orders that have been created in the legal entity are displayed, based on the specified criteria.</span></span>
 
-4.  <span data-ttu-id="0b842-109">Zaznacz wiersz zamówienia zwrotu do usunięcia, a następnie kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="0b842-109">Select the return order line to delete, and then click **OK**.</span></span>
+4.  <span data-ttu-id="03278-109">Zaznacz wiersz zamówienia zwrotu do usunięcia, a następnie kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="03278-109">Select the return order line to delete, and then click **OK**.</span></span>
 
-5.  <span data-ttu-id="0b842-110">Kliknij przycisk **Tak**, aby usunąć zamówienia zwrotu.</span><span class="sxs-lookup"><span data-stu-id="0b842-110">Click **Yes** to delete the return orders.</span></span>
-
+5.  <span data-ttu-id="03278-110">Kliknij przycisk **Tak**, aby usunąć zamówienia zwrotu.</span><span class="sxs-lookup"><span data-stu-id="03278-110">Click **Yes** to delete the return orders.</span></span>
 
 
 

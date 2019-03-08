@@ -1,13 +1,13 @@
 ---
-title: "Zliczanie znaczników zapasów"
-description: "Ten artykuł zawiera informacje o procesie zliczania znaczników, który służy do porównywania rzeczywistej zawartości magazynu z zapasami dostępnymi (na stanie)."
+title: Zliczanie znaczników zapasów
+description: Ten artykuł zawiera informacje o procesie zliczania znaczników, który służy do porównywania rzeczywistej zawartości magazynu z zapasami dostępnymi (na stanie).
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalCount, InventJournalCountTag
 audience: Application User
 ms.reviewer: josaw
@@ -18,26 +18,24 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: dff899d0e6d94287c0f1924fe1787189d79c09f4
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328960"
 ---
-
-# <a name="inventory-tag-counting"></a><span data-ttu-id="cc100-103">Zliczanie znaczników zapasów</span><span class="sxs-lookup"><span data-stu-id="cc100-103">Inventory tag counting</span></span>
+# <a name="inventory-tag-counting"></a><span data-ttu-id="88e2b-103">Zliczanie znaczników zapasów</span><span class="sxs-lookup"><span data-stu-id="88e2b-103">Inventory tag counting</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 [!include [retail name](../includes/retail-name.md)]
 
-<span data-ttu-id="cc100-104">Ten artykuł zawiera informacje o procesie zliczania znaczników, który służy do porównywania rzeczywistej zawartości magazynu z zapasami dostępnymi (na stanie).</span><span class="sxs-lookup"><span data-stu-id="cc100-104">This article provides information about tag counting, which you use to compare the actual contents of a warehouse with the on-hand inventory.</span></span>
+<span data-ttu-id="88e2b-104">Ten artykuł zawiera informacje o procesie zliczania znaczników, który służy do porównywania rzeczywistej zawartości magazynu z zapasami dostępnymi (na stanie).</span><span class="sxs-lookup"><span data-stu-id="88e2b-104">This article provides information about tag counting, which you use to compare the actual contents of a warehouse with the on-hand inventory.</span></span>
 
-<span data-ttu-id="cc100-105">Poprzez tworzenie wierszy na stronie **Zliczanie znaczników** na każdym towarze magazynowym umieszcza się numer znacznika, np. od 1 do 500.</span><span class="sxs-lookup"><span data-stu-id="cc100-105">By creating lines on the **Tag counting** page, you place a tag number on each inventory item, such as a number from 1 to 500.</span></span> <span data-ttu-id="cc100-106">Podczas inwentaryzacji należy wprowadzić numer towaru i ilość związaną z odpowiednim znacznikiem.</span><span class="sxs-lookup"><span data-stu-id="cc100-106">During the count, you enter the item number and the quantity on a corresponding tag.</span></span> <span data-ttu-id="cc100-107">Znacznik może być później podstawą dla danych wejściowych arkusza zliczania znaczników.</span><span class="sxs-lookup"><span data-stu-id="cc100-107">This tag can then be used as the basis for input in the tag counting journal.</span></span> <span data-ttu-id="cc100-108">Po zaksięgowaniu arkusza zliczania znaczników na stronie **Zliczanie** tworzony jest nowy arkusz zliczania.</span><span class="sxs-lookup"><span data-stu-id="cc100-108">After you post the tag counting journal, a new counting journal is created on the **Counting** page.</span></span> <span data-ttu-id="cc100-109">Nowy arkusz bazuje na wierszach arkusza zliczania znaczników utworzonych przez użytkownika.</span><span class="sxs-lookup"><span data-stu-id="cc100-109">The new journal is based on the tag counting journal lines that you created.</span></span> <span data-ttu-id="cc100-110">Aby policzyć towary według znaczników w określonym wymiarze magazynu, należy wybrać wymiar na stronie **Wyświetl wymiary**, która jest wyświetlana podczas tworzenia arkusza zliczania znaczników.</span><span class="sxs-lookup"><span data-stu-id="cc100-110">To tag-count items by a specific inventory dimension, select the dimension on the **Display dimension** page that is displayed when you create the tag counting journal.</span></span> <span data-ttu-id="cc100-111">Na przykład aby policzyć towary w określonym magazynie, należy zaznaczyć pole wyboru **Magazyn**.</span><span class="sxs-lookup"><span data-stu-id="cc100-111">For example, to count items in a specific warehouse, select the **Warehouse** check box.</span></span> <span data-ttu-id="cc100-112">Jeśli suwak **Zablokuj towary podczas liczenia** na stronie **Parametry zarządzania zapasami i magazynem** jest zaznaczony, towary nie mogą być fizycznie aktualizowane podczas zliczania.</span><span class="sxs-lookup"><span data-stu-id="cc100-112">If the **Lock items during count** slider on the **Inventory and warehouse management parameters** page is selected, items can't be physically updated during counting.</span></span> <span data-ttu-id="cc100-113">Jednak towary w arkuszach zliczania znaczników nie są zablokowane podczas zliczania.</span><span class="sxs-lookup"><span data-stu-id="cc100-113">However, items in tag counting journals aren't locked during counting.</span></span> <span data-ttu-id="cc100-114">Transakcje magazynowe nie są tworzone, dopóki wiersze zliczania znaczników nie zostaną zaksięgowane ani przeniesione do arkusza zliczania.</span><span class="sxs-lookup"><span data-stu-id="cc100-114">Inventory transactions aren't created until the tag counting lines are posted and transferred to a counting journal.</span></span> <span data-ttu-id="cc100-115">Jeśli znaczniki są wprowadzane losowo, aby zidentyfikować brakujące znaczniki, należy kliknąć nagłówek kolumny **Znacznik**, aby posortować wiersze według znacznika.</span><span class="sxs-lookup"><span data-stu-id="cc100-115">If tags are entered randomly, and you want to identify missing tags, click the **Tag** column header to sort the lines by tag.</span></span>
+<span data-ttu-id="88e2b-105">Poprzez tworzenie wierszy na stronie **Zliczanie znaczników** na każdym towarze magazynowym umieszcza się numer znacznika, np. od 1 do 500.</span><span class="sxs-lookup"><span data-stu-id="88e2b-105">By creating lines on the **Tag counting** page, you place a tag number on each inventory item, such as a number from 1 to 500.</span></span> <span data-ttu-id="88e2b-106">Podczas inwentaryzacji należy wprowadzić numer towaru i ilość związaną z odpowiednim znacznikiem.</span><span class="sxs-lookup"><span data-stu-id="88e2b-106">During the count, you enter the item number and the quantity on a corresponding tag.</span></span> <span data-ttu-id="88e2b-107">Znacznik może być później podstawą dla danych wejściowych arkusza zliczania znaczników.</span><span class="sxs-lookup"><span data-stu-id="88e2b-107">This tag can then be used as the basis for input in the tag counting journal.</span></span> <span data-ttu-id="88e2b-108">Po zaksięgowaniu arkusza zliczania znaczników na stronie **Zliczanie** tworzony jest nowy arkusz zliczania.</span><span class="sxs-lookup"><span data-stu-id="88e2b-108">After you post the tag counting journal, a new counting journal is created on the **Counting** page.</span></span> <span data-ttu-id="88e2b-109">Nowy arkusz bazuje na wierszach arkusza zliczania znaczników utworzonych przez użytkownika.</span><span class="sxs-lookup"><span data-stu-id="88e2b-109">The new journal is based on the tag counting journal lines that you created.</span></span> <span data-ttu-id="88e2b-110">Aby policzyć towary według znaczników w określonym wymiarze magazynu, należy wybrać wymiar na stronie **Wyświetl wymiary**, która jest wyświetlana podczas tworzenia arkusza zliczania znaczników.</span><span class="sxs-lookup"><span data-stu-id="88e2b-110">To tag-count items by a specific inventory dimension, select the dimension on the **Display dimension** page that is displayed when you create the tag counting journal.</span></span> <span data-ttu-id="88e2b-111">Na przykład aby policzyć towary w określonym magazynie, należy zaznaczyć pole wyboru **Magazyn**.</span><span class="sxs-lookup"><span data-stu-id="88e2b-111">For example, to count items in a specific warehouse, select the **Warehouse** check box.</span></span> <span data-ttu-id="88e2b-112">Jeśli suwak **Zablokuj towary podczas liczenia** na stronie **Parametry zarządzania zapasami i magazynem** jest zaznaczony, towary nie mogą być fizycznie aktualizowane podczas zliczania.</span><span class="sxs-lookup"><span data-stu-id="88e2b-112">If the **Lock items during count** slider on the **Inventory and warehouse management parameters** page is selected, items can't be physically updated during counting.</span></span> <span data-ttu-id="88e2b-113">Jednak towary w arkuszach zliczania znaczników nie są zablokowane podczas zliczania.</span><span class="sxs-lookup"><span data-stu-id="88e2b-113">However, items in tag counting journals aren't locked during counting.</span></span> <span data-ttu-id="88e2b-114">Transakcje magazynowe nie są tworzone, dopóki wiersze zliczania znaczników nie zostaną zaksięgowane ani przeniesione do arkusza zliczania.</span><span class="sxs-lookup"><span data-stu-id="88e2b-114">Inventory transactions aren't created until the tag counting lines are posted and transferred to a counting journal.</span></span> <span data-ttu-id="88e2b-115">Jeśli znaczniki są wprowadzane losowo, aby zidentyfikować brakujące znaczniki, należy kliknąć nagłówek kolumny **Znacznik**, aby posortować wiersze według znacznika.</span><span class="sxs-lookup"><span data-stu-id="88e2b-115">If tags are entered randomly, and you want to identify missing tags, click the **Tag** column header to sort the lines by tag.</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="cc100-116">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="cc100-116">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="88e2b-116">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="88e2b-116">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="cc100-117">Inwentaryzacja ciągła</span><span class="sxs-lookup"><span data-stu-id="cc100-117">Cycle counting</span></span>](../warehousing/cycle-counting.md)
-
+[<span data-ttu-id="88e2b-117">Inwentaryzacja ciągła</span><span class="sxs-lookup"><span data-stu-id="88e2b-117">Cycle counting</span></span>](../warehousing/cycle-counting.md)

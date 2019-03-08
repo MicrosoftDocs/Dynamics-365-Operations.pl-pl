@@ -1,13 +1,13 @@
 ---
 title: Raporty finansowe bilansu
-description: "W tym artykule opisano domyślne raporty o bilansach. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami."
+description: W tym artykule opisano domyślne raporty o bilansach. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinanicalReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,69 +18,67 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 9ff778af1bb3af3a10132ab3193ad1cd5daa24e1
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342300"
 ---
-
-# <a name="balance-sheet-financial-reports"></a><span data-ttu-id="d4a69-104">Raporty finansowe bilansu</span><span class="sxs-lookup"><span data-stu-id="d4a69-104">Balance sheet financial reports</span></span>
+# <a name="balance-sheet-financial-reports"></a><span data-ttu-id="d68e6-104">Raporty finansowe bilansu</span><span class="sxs-lookup"><span data-stu-id="d68e6-104">Balance sheet financial reports</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d4a69-105">W tym artykule opisano domyślne raporty o bilansach.</span><span class="sxs-lookup"><span data-stu-id="d4a69-105">This article describes the default reports for balance sheets.</span></span> <span data-ttu-id="d4a69-106">Omówiono również bloki konstrukcyjne skojarzone z tymi raportami.</span><span class="sxs-lookup"><span data-stu-id="d4a69-106">It also describes the building blocks that are associated with these reports.</span></span> 
+<span data-ttu-id="d68e6-105">W tym artykule opisano domyślne raporty o bilansach.</span><span class="sxs-lookup"><span data-stu-id="d68e6-105">This article describes the default reports for balance sheets.</span></span> <span data-ttu-id="d68e6-106">Omówiono również bloki konstrukcyjne skojarzone z tymi raportami.</span><span class="sxs-lookup"><span data-stu-id="d68e6-106">It also describes the building blocks that are associated with these reports.</span></span> 
 
-<a name="default-balance-sheet-reports"></a><span data-ttu-id="d4a69-107">Domyślne raporty finansowe bilansu</span><span class="sxs-lookup"><span data-stu-id="d4a69-107">Default balance sheet reports</span></span>
+<a name="default-balance-sheet-reports"></a><span data-ttu-id="d68e6-107">Domyślne raporty finansowe bilansu</span><span class="sxs-lookup"><span data-stu-id="d68e6-107">Default balance sheet reports</span></span>
 -----------------------------
 
-<span data-ttu-id="d4a69-108">Dostępne są dwa domyślne raporty finansowe bilansu.</span><span class="sxs-lookup"><span data-stu-id="d4a69-108">There are two default balance sheet reports.</span></span> <span data-ttu-id="d4a69-109">Na jednym raporcie sekcje są ułożone w słupkach.</span><span class="sxs-lookup"><span data-stu-id="d4a69-109">On one report, the sections are stacked.</span></span> <span data-ttu-id="d4a69-110">Na drugim raporcie sekcje są ułożone obok siebie.</span><span class="sxs-lookup"><span data-stu-id="d4a69-110">On the other report, the sections are side by side.</span></span>
+<span data-ttu-id="d68e6-108">Dostępne są dwa domyślne raporty finansowe bilansu.</span><span class="sxs-lookup"><span data-stu-id="d68e6-108">There are two default balance sheet reports.</span></span> <span data-ttu-id="d68e6-109">Na jednym raporcie sekcje są ułożone w słupkach.</span><span class="sxs-lookup"><span data-stu-id="d68e6-109">On one report, the sections are stacked.</span></span> <span data-ttu-id="d68e6-110">Na drugim raporcie sekcje są ułożone obok siebie.</span><span class="sxs-lookup"><span data-stu-id="d68e6-110">On the other report, the sections are side by side.</span></span>
 
-| <span data-ttu-id="d4a69-111">Raport domyślny</span><span class="sxs-lookup"><span data-stu-id="d4a69-111">Default report</span></span>                       | <span data-ttu-id="d4a69-112">Działanie</span><span class="sxs-lookup"><span data-stu-id="d4a69-112">What it does</span></span>                                                                                                                           |
+| <span data-ttu-id="d68e6-111">Raport domyślny</span><span class="sxs-lookup"><span data-stu-id="d68e6-111">Default report</span></span>                       | <span data-ttu-id="d68e6-112">Działanie</span><span class="sxs-lookup"><span data-stu-id="d68e6-112">What it does</span></span>                                                                                                                           |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="d4a69-113">Bilans — domyślne</span><span class="sxs-lookup"><span data-stu-id="d4a69-113">Balance Sheet – Default</span></span>              | <span data-ttu-id="d4a69-114">Oferuje widok pozycji finansowej organizacji w danym roku.</span><span class="sxs-lookup"><span data-stu-id="d4a69-114">Provides a view of the organization's financial position for the year.</span></span>                                                                 |
-| <span data-ttu-id="d4a69-115">Obok arkusza bilansowego — domyślna</span><span class="sxs-lookup"><span data-stu-id="d4a69-115">Side by Side Balance Sheet – Default</span></span> | <span data-ttu-id="d4a69-116">Oferuje widok pozycji finansowej organizacji w danym roku.</span><span class="sxs-lookup"><span data-stu-id="d4a69-116">Provides a view of the organization's financial position for the year.</span></span> <span data-ttu-id="d4a69-117">Aktywa i pasywa oraz kapitał własny udziałowców są pokazane równolegle.</span><span class="sxs-lookup"><span data-stu-id="d4a69-117">Assets and liability and shareholder’s equity are side by side.</span></span> |
+| <span data-ttu-id="d68e6-113">Bilans — domyślne</span><span class="sxs-lookup"><span data-stu-id="d68e6-113">Balance Sheet – Default</span></span>              | <span data-ttu-id="d68e6-114">Oferuje widok pozycji finansowej organizacji w danym roku.</span><span class="sxs-lookup"><span data-stu-id="d68e6-114">Provides a view of the organization's financial position for the year.</span></span>                                                                 |
+| <span data-ttu-id="d68e6-115">Obok arkusza bilansowego — domyślna</span><span class="sxs-lookup"><span data-stu-id="d68e6-115">Side by Side Balance Sheet – Default</span></span> | <span data-ttu-id="d68e6-116">Oferuje widok pozycji finansowej organizacji w danym roku.</span><span class="sxs-lookup"><span data-stu-id="d68e6-116">Provides a view of the organization's financial position for the year.</span></span> <span data-ttu-id="d68e6-117">Aktywa i pasywa oraz kapitał własny udziałowców są pokazane równolegle.</span><span class="sxs-lookup"><span data-stu-id="d68e6-117">Assets and liability and shareholder’s equity are side by side.</span></span> |
 
-## <a name="building-blocks"></a><span data-ttu-id="d4a69-118">Podstawowe elementy</span><span class="sxs-lookup"><span data-stu-id="d4a69-118">Building blocks</span></span>
-<span data-ttu-id="d4a69-119">Raporty finansowe bilansu wykorzystują następujące podstawowe elementy.</span><span class="sxs-lookup"><span data-stu-id="d4a69-119">The balance sheet financial reports use the following building blocks.</span></span>
+## <a name="building-blocks"></a><span data-ttu-id="d68e6-118">Podstawowe elementy</span><span class="sxs-lookup"><span data-stu-id="d68e6-118">Building blocks</span></span>
+<span data-ttu-id="d68e6-119">Raporty finansowe bilansu wykorzystują następujące podstawowe elementy.</span><span class="sxs-lookup"><span data-stu-id="d68e6-119">The balance sheet financial reports use the following building blocks.</span></span>
 
-| <span data-ttu-id="d4a69-120">Raport domyślny</span><span class="sxs-lookup"><span data-stu-id="d4a69-120">Default report</span></span>                       | <span data-ttu-id="d4a69-121">Definicja wiersza</span><span class="sxs-lookup"><span data-stu-id="d4a69-121">Row definition</span></span>                       | <span data-ttu-id="d4a69-122">Definicja kolumny</span><span class="sxs-lookup"><span data-stu-id="d4a69-122">Column definition</span></span>             |
+| <span data-ttu-id="d68e6-120">Raport domyślny</span><span class="sxs-lookup"><span data-stu-id="d68e6-120">Default report</span></span>                       | <span data-ttu-id="d68e6-121">Definicja wiersza</span><span class="sxs-lookup"><span data-stu-id="d68e6-121">Row definition</span></span>                       | <span data-ttu-id="d68e6-122">Definicja kolumny</span><span class="sxs-lookup"><span data-stu-id="d68e6-122">Column definition</span></span>             |
 |--------------------------------------|--------------------------------------|-------------------------------|
-| <span data-ttu-id="d4a69-123">Bilans — domyślna</span><span class="sxs-lookup"><span data-stu-id="d4a69-123">Balance Sheet - Default</span></span>              | <span data-ttu-id="d4a69-124">Bilans — domyślna</span><span class="sxs-lookup"><span data-stu-id="d4a69-124">Balance Sheet - Default</span></span>              | <span data-ttu-id="d4a69-125">Od początku roku i odchylenie — domyślna</span><span class="sxs-lookup"><span data-stu-id="d4a69-125">YTD and Variance - Default</span></span>    |
-| <span data-ttu-id="d4a69-126">Obok arkusza bilansowego — domyślna</span><span class="sxs-lookup"><span data-stu-id="d4a69-126">Side by Side Balance Sheet – Default</span></span> | <span data-ttu-id="d4a69-127">Obok arkusza bilansowego — domyślna</span><span class="sxs-lookup"><span data-stu-id="d4a69-127">Side by Side Balance Sheet – Default</span></span> | <span data-ttu-id="d4a69-128">Kolumna Od początku roku — domyślna</span><span class="sxs-lookup"><span data-stu-id="d4a69-128">Year to Date Column - Default</span></span> |
+| <span data-ttu-id="d68e6-123">Bilans — domyślna</span><span class="sxs-lookup"><span data-stu-id="d68e6-123">Balance Sheet - Default</span></span>              | <span data-ttu-id="d68e6-124">Bilans — domyślna</span><span class="sxs-lookup"><span data-stu-id="d68e6-124">Balance Sheet - Default</span></span>              | <span data-ttu-id="d68e6-125">Od początku roku i odchylenie — domyślna</span><span class="sxs-lookup"><span data-stu-id="d68e6-125">YTD and Variance - Default</span></span>    |
+| <span data-ttu-id="d68e6-126">Obok arkusza bilansowego — domyślna</span><span class="sxs-lookup"><span data-stu-id="d68e6-126">Side by Side Balance Sheet – Default</span></span> | <span data-ttu-id="d68e6-127">Obok arkusza bilansowego — domyślna</span><span class="sxs-lookup"><span data-stu-id="d68e6-127">Side by Side Balance Sheet – Default</span></span> | <span data-ttu-id="d68e6-128">Kolumna Od początku roku — domyślna</span><span class="sxs-lookup"><span data-stu-id="d68e6-128">Year to Date Column - Default</span></span> |
 
-### <a name="row-definition"></a><span data-ttu-id="d4a69-129">Definicja wiersza</span><span class="sxs-lookup"><span data-stu-id="d4a69-129">Row definition</span></span>
+### <a name="row-definition"></a><span data-ttu-id="d68e6-129">Definicja wiersza</span><span class="sxs-lookup"><span data-stu-id="d68e6-129">Row definition</span></span>
 
-<span data-ttu-id="d4a69-130">Definicje wierszy dla obu raportów bilansu zwierają konkretne sekcje dla każdej z części bilansu tradycyjnego.</span><span class="sxs-lookup"><span data-stu-id="d4a69-130">The row definitions for both balance sheet reports contain sections for each part of a traditional balance sheet.</span></span> <span data-ttu-id="d4a69-131">Raport równoległy zawiera podział kolumn, tak aby pasywa i kapitał własny właściciela były widoczne obok aktywów.</span><span class="sxs-lookup"><span data-stu-id="d4a69-131">The side-by-side report includes a column break, so that liability and the owner’s equity appear next to assets.</span></span> <span data-ttu-id="d4a69-132">Wymiar Kategoria konta głównego jest używany do tworzenia obu definicji wiersza.</span><span class="sxs-lookup"><span data-stu-id="d4a69-132">The Main Account Category dimension is used to build both row definitions.</span></span> <span data-ttu-id="d4a69-133">Dlatego każdy może wygenerować raporty bez konieczności wprowadzania żadnych zmian.</span><span class="sxs-lookup"><span data-stu-id="d4a69-133">Therefore, anyone can generate the reports without having to make any modifications.</span></span>
+<span data-ttu-id="d68e6-130">Definicje wierszy dla obu raportów bilansu zwierają konkretne sekcje dla każdej z części bilansu tradycyjnego.</span><span class="sxs-lookup"><span data-stu-id="d68e6-130">The row definitions for both balance sheet reports contain sections for each part of a traditional balance sheet.</span></span> <span data-ttu-id="d68e6-131">Raport równoległy zawiera podział kolumn, tak aby pasywa i kapitał własny właściciela były widoczne obok aktywów.</span><span class="sxs-lookup"><span data-stu-id="d68e6-131">The side-by-side report includes a column break, so that liability and the owner’s equity appear next to assets.</span></span> <span data-ttu-id="d68e6-132">Wymiar Kategoria konta głównego jest używany do tworzenia obu definicji wiersza.</span><span class="sxs-lookup"><span data-stu-id="d68e6-132">The Main Account Category dimension is used to build both row definitions.</span></span> <span data-ttu-id="d68e6-133">Dlatego każdy może wygenerować raporty bez konieczności wprowadzania żadnych zmian.</span><span class="sxs-lookup"><span data-stu-id="d68e6-133">Therefore, anyone can generate the reports without having to make any modifications.</span></span>
 
-### <a name="column-definition"></a><span data-ttu-id="d4a69-134">Definicja kolumny</span><span class="sxs-lookup"><span data-stu-id="d4a69-134">Column definition</span></span>
+### <a name="column-definition"></a><span data-ttu-id="d68e6-134">Definicja kolumny</span><span class="sxs-lookup"><span data-stu-id="d68e6-134">Column definition</span></span>
 
-<span data-ttu-id="d4a69-135">Definicje kolumn zawierają różnego rodzaju kolumny oferujący różne poziomu szczegółowości i danych finansowych.</span><span class="sxs-lookup"><span data-stu-id="d4a69-135">The column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
+<span data-ttu-id="d68e6-135">Definicje kolumn zawierają różnego rodzaju kolumny oferujący różne poziomu szczegółowości i danych finansowych.</span><span class="sxs-lookup"><span data-stu-id="d68e6-135">The column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
 
--   <span data-ttu-id="d4a69-136">**Od początku roku i Odchylenie — domyślne typy kolumn:**</span><span class="sxs-lookup"><span data-stu-id="d4a69-136">**YTD and Variance – Default column types:**</span></span>
-    -   <span data-ttu-id="d4a69-137">**DESC** — opis z definicji wiersza</span><span class="sxs-lookup"><span data-stu-id="d4a69-137">**DESC** – The description from the row definition</span></span>
-    -   <span data-ttu-id="d4a69-138">**FD** — dane finansowe od początku roku dla bieżącego roku</span><span class="sxs-lookup"><span data-stu-id="d4a69-138">**FD** – Year-to-date financial data for the current year</span></span>
-    -   <span data-ttu-id="d4a69-139">**FD** — dane finansowe od początku roku dla ostatniego roku</span><span class="sxs-lookup"><span data-stu-id="d4a69-139">**FD** – Year-to-date financial data for the last year</span></span>
-    -   <span data-ttu-id="d4a69-140">**CALC** — odchylenie od odjęcia ostatniego rok od tego roku</span><span class="sxs-lookup"><span data-stu-id="d4a69-140">**CALC** – The variance from subtracting last year from this year</span></span>
+-   <span data-ttu-id="d68e6-136">**Od początku roku i Odchylenie — domyślne typy kolumn:**</span><span class="sxs-lookup"><span data-stu-id="d68e6-136">**YTD and Variance – Default column types:**</span></span>
+    -   <span data-ttu-id="d68e6-137">**DESC** — opis z definicji wiersza</span><span class="sxs-lookup"><span data-stu-id="d68e6-137">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="d68e6-138">**FD** — dane finansowe od początku roku dla bieżącego roku</span><span class="sxs-lookup"><span data-stu-id="d68e6-138">**FD** – Year-to-date financial data for the current year</span></span>
+    -   <span data-ttu-id="d68e6-139">**FD** — dane finansowe od początku roku dla ostatniego roku</span><span class="sxs-lookup"><span data-stu-id="d68e6-139">**FD** – Year-to-date financial data for the last year</span></span>
+    -   <span data-ttu-id="d68e6-140">**CALC** — odchylenie od odjęcia ostatniego rok od tego roku</span><span class="sxs-lookup"><span data-stu-id="d68e6-140">**CALC** – The variance from subtracting last year from this year</span></span>
 
 <!-- -->
 
--   <span data-ttu-id="d4a69-141">**Kolumna Od początku roku — domyślna:**</span><span class="sxs-lookup"><span data-stu-id="d4a69-141">**Year to Date Column – Default:**</span></span>
-    -   <span data-ttu-id="d4a69-142">**DESC** — opis z definicji wiersza</span><span class="sxs-lookup"><span data-stu-id="d4a69-142">**DESC** – The description from the row definition</span></span>
-    -   <span data-ttu-id="d4a69-143">**FD** — dane finansowe od początku roku dla bieżącego roku</span><span class="sxs-lookup"><span data-stu-id="d4a69-143">**FD** – Year-to-date financial data for the current year</span></span>
+-   <span data-ttu-id="d68e6-141">**Kolumna Od początku roku — domyślna:**</span><span class="sxs-lookup"><span data-stu-id="d68e6-141">**Year to Date Column – Default:**</span></span>
+    -   <span data-ttu-id="d68e6-142">**DESC** — opis z definicji wiersza</span><span class="sxs-lookup"><span data-stu-id="d68e6-142">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="d68e6-143">**FD** — dane finansowe od początku roku dla bieżącego roku</span><span class="sxs-lookup"><span data-stu-id="d68e6-143">**FD** – Year-to-date financial data for the current year</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="d4a69-144">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="d4a69-144">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="d68e6-144">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="d68e6-144">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="d4a69-145">Raporty finansowe</span><span class="sxs-lookup"><span data-stu-id="d4a69-145">Financial reporting</span></span>](financial-reporting-getting-started.md)
+[<span data-ttu-id="d68e6-145">Raporty finansowe</span><span class="sxs-lookup"><span data-stu-id="d68e6-145">Financial reporting</span></span>](financial-reporting-getting-started.md)
 
-[<span data-ttu-id="d4a69-146">Wyświetlanie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="d4a69-146">View financial reports</span></span>](view-financial-reports.md)
+[<span data-ttu-id="d68e6-146">Wyświetlanie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="d68e6-146">View financial reports</span></span>](view-financial-reports.md)
 
-[<span data-ttu-id="d4a69-147">Blog o sprawozdawczości finansowej w systemie Dynamics</span><span class="sxs-lookup"><span data-stu-id="d4a69-147">Dynamics Financial Reporting Blog</span></span>](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-
+[<span data-ttu-id="d68e6-147">Blog o sprawozdawczości finansowej w systemie Dynamics</span><span class="sxs-lookup"><span data-stu-id="d68e6-147">Dynamics Financial Reporting Blog</span></span>](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 
