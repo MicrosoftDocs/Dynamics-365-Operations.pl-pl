@@ -1,36 +1,35 @@
 ---
 title: Korzystanie z aplikacji LinkedIn Recruiter
-description: "Ten temat zawiera informacje o używaniu funkcji uczenia maszynowego do generowania rekomendacji funkcji i kandydatów na funkcje."
+description: Ten temat zawiera informacje o używaniu funkcji uczenia maszynowego do generowania rekomendacji funkcji i kandydatów na funkcje.
 author: josaw
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305739"
 ---
-
 # <a name="sourcing-with-linkedin-recruiter"></a>Korzystanie z aplikacji LinkedIn Recruiter
 [!include[banner](../includes/banner.md)]
 
-LinkedIn to największa na świecie baza danych pracowników i osób szukających pracy oraz często główny system, którego osoby rekrutujące używają do wyszukiwania, komunikowania się i pozyskiwania kandydatów na funkcje, które chcą obsadzić. Integracja aplikacji LinkedIn Recruiter z aplikacją Dynamics 365 for Talent Attract ułatwia użytkownikom zatrudnianie osób oraz synchronizowanie danych między oboma systemami.
+LinkedIn to największa na świecie baza danych pracowników i osób szukających pracy oraz często główny system, którego osoby rekrutujące używają do wyszukiwania, komunikowania się i pozyskiwania kandydatów na funkcje, które chcą obsadzić. Integracja aplikacji LinkedIn Recruiter z aplikacją Dynamics 365 for Talent: Attract ułatwia użytkownikom zatrudnianie osób oraz synchronizowanie danych między oboma systemami.
 
 > [!NOTE]
 > Aby można było korzystać z integracji aplikacji LinkedIn Recruiter z aplikacją Attract, trzeba mieć dodatek kompleksowej obsługi rekrutacji oraz wykupione stanowiska w aplikacji LinkedIn Recruiter.
@@ -125,9 +124,9 @@ W aplikacji LinkedIn Recruiter można śledzić, czy kandydat aplikował na inne
 > [!NOTE]
 > Dane kandydata i aplikacji nie będą synchronizowane z usługą LinkedIn Recruiter, jeśli kandydat nie wyszedł poza etap prospektu.
 
-### <a name="inmail-history"></a>Historia wiadomości InMail
+### <a name="inmail-history"></a>Historia InMail
 
-Historia wiadomości InMail w serwisie LinkedIn jest aktywna przy dostępie na poziomie umowy do usługi LinkedIn Recruiter. Po włączeniu tej opcji można przeglądać całą historię wiadomości InMail wymienianych z kandydatem. Można także sprawdzić, kto jeszcze z organizacji komunikował się z kandydatem za pomocą wiadomości InMail, jednak nie można wyświetlić treści tych wiadomości.
+Historia InMail w serwisie LinkedIn jest aktywna przy dostępie na poziomie umowy do usługi LinkedIn Recruiter. Po włączeniu tej opcji można przeglądać całą historię wiadomości InMail wymienianych z kandydatem. Można także sprawdzić, kto jeszcze z organizacji komunikował się z kandydatem za pomocą wiadomości InMail, jednak nie można wyświetlić treści tych wiadomości.
 
 Aby wyświetlić historię wiadomości InMail, przejdź do profilu kandydata, przejdź do karty **LinkedIn** i przewiń do dołu strony. W przypadku rozmowy z kandydatami można przejrzeć historię InMail. Wiadomości InMail będą synchronizowane z aplikacją Attract co kilka godzin.
 
@@ -137,9 +136,8 @@ Historia notatek w serwisie LinkedIn jest aktywna przy dostępie na poziomie umo
 
 Aby wyświetlić historię notatek, przejdź do profilu kandydata, przejdź do karty **LinkedIn** i przewiń do dołu strony. W aplikacji LinkedIn Recruiter można przeglądać wszystkie notatki o kandydacie.
 
-### <a name="inmail-stub-profile"></a>Profil szczątkowy InMail
+### <a name="inmail-stub-profile"></a>Profil wejściowy InMail
 
 Profil szczątkowy InMail jest aktywny przy dostępie na poziomie umowy do usługi LinkedIn Recruiter. Jeśli kandydaci zgodzą się udostępnić swoje profile z serwisu LinkedIn któremukolwiek użytkownikowi w Twojej organizacji, możesz śledzić tych kandydatów w aplikacji Attract, a dla każdego kandydata zostanie utworzony nowy rekord kandydata. Jeśli kandydat już istnieje w systemie z adresem e-mail lub zdecydował się udostępnić swój adres rekruterowi, można wyświetlić adres e-mail kandydata.
 
 Aby wyświetlić listę kandydatów, przejdź do okna **Pule umiejętności**, a zobaczysz listę pul umiejętności utworzoną w usłudze LinkedIn przez system. Ta pula umiejętności zawiera listę kandydatów i ich profile szczątkowe otrzymane z serwisu LinkedIn, tylko z imionami i nazwiskami kandydatów. Identyfikator e-mail kandydata będzie widoczny tylko wtedy, gdy udostępnił on swój adres e-mail.
-

@@ -1,13 +1,13 @@
 ---
-title: "Terminy realizacji zamówień"
-description: "Ten artykuł zawiera informacje o terminach wprowadzania zamówień. Termin wprowadzania zamówień to graniczny czas decydujący o tym, czy zamówienie klienta jest traktowane (i realizowane) tak jakby zostało odebrany w dniu bieżącym lub następnym."
+title: Terminy realizacji zamówień
+description: Ten artykuł zawiera informacje o terminach wprowadzania zamówień. Termin wprowadzania zamówień to graniczny czas decydujący o tym, czy zamówienie klienta jest traktowane (i realizowane) tak jakby zostało odebrany w dniu bieżącym lub następnym.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventOrderEntryDeadlineGroup, InventOrderEntryDeadlineParameters, InventOrderEntryDeadlineTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 412ab5e2e411a93da2424cb8959b4270594bbf57
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4f3905f364ea67eab226323fd3450ebed30e4735
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308766"
 ---
-
 # <a name="order-entry-deadlines"></a>Terminy realizacji zamówień
 
 [!include [banner](../includes/banner.md)]
@@ -107,7 +106,6 @@ W następującej tabeli pokazano terminy wprowadzania zamówień obu oddziałów
 --------
 
 [Harmonogramy dostaw](delivery-schedules.md)
-
 
 
 

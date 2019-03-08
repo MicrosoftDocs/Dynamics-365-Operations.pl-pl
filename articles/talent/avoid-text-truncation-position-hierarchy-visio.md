@@ -1,35 +1,34 @@
 ---
 title: Zapobieganie obcinaniu tekstu w hierarchii stanowisk i eksportowanie do programu Visio
-description: "W tym temacie wyjaśniono, jak można rozwiązać problem polegający na tym, że nazwy stanowisk i imiona i nazwiska osób są obcinane, gdy odbiorcy wyświetlają hierarchię stanowisk w Microsoft Dynamics 365 for Talent. Obcinanie tekstu może utrudniać wykonywanie zrzutów ekranu lub wydrukowanie hierarchii."
+description: W tym temacie wyjaśniono, jak można rozwiązać problem polegający na tym, że nazwy stanowisk i imiona i nazwiska osób są obcinane, gdy odbiorcy wyświetlają hierarchię stanowisk w Microsoft Dynamics 365 for Talent. Obcinanie tekstu może utrudniać wykonywanie zrzutów ekranu lub wydrukowanie hierarchii.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: b688a396e3b384aedb06c470b1634150ae7aa038
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305758"
 ---
-
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Zapobieganie obcinaniu tekstu w hierarchii stanowisk i eksportowanie do programu Visio
 
 [!include [banner](includes/banner.md)]
 
-**Wydaj**
+**Wystawienie**
 
 Gdy odbiorcy wyświetlają hierarchię stanowisk w Microsoft Dynamics 365 for Talent, nazwy stanowisk i imiona oraz nazwiska osób są obcinane. Z tego względu może być trudne wykonanie zrzutu ekranu lub drukowanie i dystrybucja hierarchii.
 
@@ -49,7 +48,7 @@ Wykonaj następujące kroki, aby wyeksportować do programu Visio.
 
     Aby dołączyć więcej informacji w diagramie struktury organizacji, dodaj pola do listy **Stanowiska**, aby były one dostępne podczas korzystania z kreatora w dalszej części tej procedury.
 
-2. W okienku akcji naciśnij przycisk **Otwórz w programie Microsoft Office**, a następnie, w obszarze **Eksportuj do programu Excel**, wybierz opcję **stanowiska**. Alternatywnie naciśnij klawisze Ctrl + T.
+2. W okienku akcji naciśnij przycisk **Otwórz w programie Microsoft Office**, a następnie, w obszarze **Eksportuj do programu Excel**, wybierz opcję **Stanowiska**. Alternatywnie naciśnij klawisze Ctrl + T.
 
     ![Eksportowanie strony listy Stanowiska do programu Microsoft Excel](media/org-admin.png)
 
@@ -107,4 +106,3 @@ Na podstawie pól wybranych do uwzględnienia w schemacie, każdy węzeł wyświ
 **Opcja dodatkowa**
 
 W opcji Talenty również można używać obszaru roboczego **osoby** w celu wyświetlenia niektórych informacji dotyczących hierarchii.
-

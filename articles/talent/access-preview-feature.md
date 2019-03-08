@@ -1,14 +1,14 @@
 ---
-title: "Dostęp do funkcji w wersji zapoznawczej w aplikacji Talent"
-description: "W tym temacie opisano, jak administrator może włączyć funkcje zapoznawcze, oraz podano listę funkcji dostępnych obecnie w wersji zapoznawczej."
+title: Dostęp do funkcji w wersji zapoznawczej w aplikacji Talent
+description: W tym temacie opisano, jak administrator może włączyć funkcje zapoznawcze, oraz podano listę funkcji dostępnych obecnie w wersji zapoznawczej.
 author: rschloma
 manager: AnnBe
 ms.date: 04/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
 ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305773"
 ---
-
 # <a name="access-preview-features-in-talent"></a>Dostęp do funkcji w wersji zapoznawczej w aplikacji Talent
 
 [!include[banner](../includes/banner.md)]
@@ -43,9 +42,9 @@ Ustawienie **Funkcje w wersji zapoznawczej** dostępne w centrum administracyjny
 
 ### <a name="enable-or-disable-preview-features-for-your-organization"></a>Włączanie i wyłączanie funkcji zapoznawczych w organizacji
 
-#### <a name="attract"></a>Attract
+#### <a name="attract"></a>Przyciągaj
 
-1. Zaloguj się w aplikacji Microsoft Dynamics 365 for Talent: Attract.
+1. Zaloguj się do programu Microsoft Dynamics 365 for Talent: Attract.
 2. W menu **Ustawienia** (symbol koła zębatego) w prawym górnym rogu wybierz opcję **Ustawienia administratora**.
 3. Na karcie **Zarządzanie funkcjami** zaznacz opcję obok napisu **Funkcje w wersji zapoznawczej**, tak aby zmieniła kolor na niebieski.
 4. Opcjonalnie można kontrolować poszczególne funkcje poprzez ich włączanie i wyłączanie na tej stronie.
@@ -92,4 +91,3 @@ W przesyłanych opiniach i recenzjach produktu nie podawaj żadnych danych osobo
 
 > [!TIP]
 > Dodaj tej temat do zakładek i zaglądaj tu regularnie, aby być na bieżąco z nowo publikowanymi funkcjami w wersjach zapoznawczych.
-

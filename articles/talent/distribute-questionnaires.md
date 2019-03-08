@@ -1,13 +1,13 @@
 ---
 title: Rozprowadzanie i planowanie kwestionariuszy
-description: "W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać."
+description: W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać.
 author: kherr75
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: eafcb047117eab73fddbd93c4c1d0aafb0023ebd
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305749"
 ---
-
 # <a name="distribute-and-schedule-questionnaires"></a>Rozprowadzanie i planowanie kwestionariuszy
 
 [!include [banner](includes/banner.md)]
@@ -84,7 +83,7 @@ Na stronie **harmonogramów kwestionariuszy** można określić typy planowania 
 
 Typy odwołań służą do wprowadzania kryteriów dla respondentów, które można wybrać podczas planowania kwestionariusza. 
 
-Użyj strony **typy odwołań** do skonfigurowania odwołań do kwestionariusza. Każdy typ odwołania odpowiada tabeli w programie Microsoft Dynamics 365 for Finance and Operations. Podczas tworzenia harmonogramów kwestionariuszy można określić poszczególne rekordy w tabeli lub zakres rekordów, które będzie można skojarzyć z kwestionariuszem. 
+Użyj strony **typy odwołań** do skonfigurowania odwołań do kwestionariusza. Każdy typ odwołania odpowiada tabeli w Microsoft Dynamics 365 for Finance and Operations. Podczas tworzenia harmonogramów kwestionariuszy można określić poszczególne rekordy w tabeli lub zakres rekordów, które będzie można skojarzyć z kwestionariuszem. 
 
 Na przykład zaznaczenie w tabeli kursów pozwala określić, do których kursów będzie się odnosić kwestionariusz. Po skonfigurowaniu odwołanie do tabeli kursów, niektóre pola i przyciski na stronie **kursów** stają się dostępne.
 
@@ -132,6 +131,5 @@ Kwestionariusze można udostępnić wszystkich osobom w sieci, określonym użyt
 [Używanie kwestionariuszy](questionnaires.md)
 
 [Wyświetlanie i ocena wyników kwestionariuszy](evaluate-questionnaire-results.md)
-
 
 

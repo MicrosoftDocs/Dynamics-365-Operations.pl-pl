@@ -1,13 +1,13 @@
 ---
-title: "Zarządzanie urlopami i nieobecnościami"
-description: "Ten temat zawiera omówienie modułu Zarządzanie urlopami i nieobecnościami."
+title: Zarządzanie urlopami i nieobecnościami
+description: Ten temat zawiera omówienie modułu Zarządzanie urlopami i nieobecnościami.
 author: ryansandness
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: rschloma
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: 72bfbb878fa076e204e00c3ccaceb4ba04c00ea9
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305791"
 ---
 # <a name="leave-and-absence-management"></a>Zarządzanie urlopami i nieobecnościami
 
@@ -68,4 +68,3 @@ Moduł Zarządzanie urlopami i nieobecnościami udostępnia następujące funkcj
 - **Przesyłanie wniosków o czas wolny.**
 
     Pracownicy mogą przesyłać wnioski o czas wolny względem dostępnej dla siebie liczby godzin. Wnioski mogą być prostymi wnioskami na jeden dzień lub obejmować wiele dni, z kilkoma typami urlopów i nieobecności. Jeśli funkcja przepływu pracy nie jest włączona, wnioski są automatycznie zatwierdzane. Gdy funkcja przepływu pracy jest włączona, zatwierdzenie może odbywać się automatycznie lub wymagać podpisania, zależnie od konfiguracji przepływu pracy.
-

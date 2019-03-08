@@ -1,14 +1,14 @@
 ---
 title: Inteligentne rekomendacje
-description: "W tym temacie wyjaśniono, jak można wykorzystać aparat uczenia maszynowego do formułowania zaleceń dotyczących funkcji i kandydatów na funkcje."
+description: W tym temacie wyjaśniono, jak można wykorzystać aparat uczenia maszynowego do formułowania zaleceń dotyczących funkcji i kandydatów na funkcje.
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fea36661c65739ef09261c82ec44e16c29fad0e7
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305797"
 ---
-
 # <a name="intelligent-recommendations"></a>Inteligentne rekomendacje
 
 [!include[banner](../includes/banner.md)]
@@ -45,4 +44,3 @@ Dla każdego polecanego kandydata można wybrać opcję **Wyświetl kandydata** 
 ## <a name="job-recommendations"></a>Rekomendacja funkcji 
 
 Gdy potencjalny pracownik wysyła podanie o pracę z witryny rozwoju kariery, widzi rekomendacje innych wolnych stanowisk w organizacji. Zalecenia te bazują na wcześniejszych zgłoszeniach tego prospekta oraz jego życiorysie lub profilu. W związku z tym rekomendacje funkcji pomagają prospektom szybko identyfikować funkcje, które najlepiej do nich pasują. Rekomendacje funkcji są przedstawiane prospektom, jeśli w witrynie rozwoju kariery są opublikowane oferty na więcej niż dziesięć funkcji. Z poziomu karty rekomendacji prospekci mogą otworzyć szczegóły oferty pracy. Mogą także przekazać swoją opinię o rekomendacji, tak aby poprawić trafność przyszłych zaleceń.
-

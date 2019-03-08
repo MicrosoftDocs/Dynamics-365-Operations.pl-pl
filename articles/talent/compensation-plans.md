@@ -1,13 +1,13 @@
 ---
-title: "Plany wynagrodzeń"
-description: "Menedżerowie ds. wynagrodzeń i świadczeń mogą za pomocą modułu Zarządzanie wynagrodzeniami obsługiwać i przetwarzać plany wynagrodzeń o stałej i zmiennej wysokości dla pracowników organizacji."
+title: Plany wynagrodzeń
+description: Menedżerowie ds. wynagrodzeń i świadczeń mogą za pomocą modułu Zarządzanie wynagrodzeniami obsługiwać i przetwarzać plany wynagrodzeń o stałej i zmiennej wysokości dla pracowników organizacji.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: e80b3ebc9c374073ff5a2dfc8c2acf1d7f6c6287
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 86070204769b866b947405436437eb0eb746de11
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305771"
 ---
-
 # <a name="compensation-plans"></a>Plany wynagrodzeń
 
 [!include [banner](includes/banner.md)]
@@ -132,7 +131,6 @@ Po każdym uruchomieniu procesu jest tworzone zdarzenie dotyczące wynagrodzenia
 
 ## <a name="recommendations"></a> Zalecenia
 Po uruchomieniu zdarzenia procesowego może zalecić korekty podwyżki uznaniowej lub kwoty premii pracownika, zgodnie z obliczonymi wytycznymi zdarzenia procesowego. Aby przygotować zalecenia dla pracowników, trzeba włączyć zalecenia podczas konfigurowania systemu wynagrodzeń lub podczas ustawiania zdarzenia procesowego.
-
 
 
 

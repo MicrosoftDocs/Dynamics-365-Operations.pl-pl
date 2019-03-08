@@ -1,31 +1,30 @@
 ---
-title: "Pozyskiwanie kandydatów za pomocą pul umiejętności"
-description: "W tym temacie opisano sposób tworzenia i konfigurowania pul umiejętności w aplikacji Attract."
-author: 
+title: Pozyskiwanie kandydatów za pomocą pul umiejętności
+description: W tym temacie opisano sposób tworzenia i konfigurowania pul umiejętności w aplikacji Attract.
+author: ''
 manager: AnnBe
 ms.date: 10/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 2eb46f436305a4c81ea99553e4dc07288ee74008
 ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305781"
 ---
-
 # <a name="source-candidates-by-using-talent-pools"></a>Pozyskiwanie kandydatów za pomocą pul umiejętności
 
 [!include[banner](../includes/banner.md)]
@@ -108,7 +107,7 @@ Wszyscy użytkownicy mają wspólny widok profili kandydatów. Zaznacz wiersz z 
 
 - Na karcie **Dokumenty** są wyświetlane wszystkie dokumenty, jakie kandydat dodał ze swojego profilu albo podczas ubiegania się o pracę. Na tej karcie można zarządzać życiorysami kandydatów, listami przewodnimi, portfolio zawodowymi itd. Ta karta umożliwia także dodawanie dokumentów.
 
-    Aby wyświetlić dokument, zaznacz jego nazwę na liście dokumentów. Dokumenty programu Microsoft Word można wyświetlić wewnątrz aplikacji za pomocą usługi Microsoft Office 365. Można także pobrać dokumenty do lokalnego komputera za pomocą opcji **Pobierz** widocznej obok każdego dokumentu.
+    Aby wyświetlić dokument, zaznacz jego nazwę na liście dokumentów. Można wyświetlić dokumenty programu Microsoft Word w aplikacji za pomocą Microsoft Office 365. Można także pobrać dokumenty do lokalnego komputera za pomocą opcji **Pobierz** widocznej obok każdego dokumentu.
 
 - Na karcie **LinkedIn** są wyświetlane dane kandydata z serwisu LinkedIn. Aby użyć tej karty, należy podłączyć konto LinkedIn w ustawieniach użytkownika oraz ustanowić połączenie z aplikacji LinkedIn Recruiter w lokalnym środowisku. Aby uzyskać więcej informacji, zobacz [Korzystanie z aplikacji LinkedIn Recruiter](./attract-linked-in-recruiter.md).
 
@@ -139,4 +138,3 @@ Często kilku dobrych kandydatów na funkcję nie zostanie wybranych, ale nie ch
 1. Na stronie zgłoszenia wybierz opcję **Dodaj do puli umiejętności**. Zostanie wyświetlona lista pul umiejętności, do których masz dostęp.
 
 1. Wybierz lub wyszukaj pulę umiejętności, a następnie kliknij przycisk **Dodaj**, aby dodać kandydata do tej puli umiejętności.
-

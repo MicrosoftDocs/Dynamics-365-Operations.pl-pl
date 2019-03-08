@@ -1,13 +1,13 @@
 ---
-title: "Formalizowanie procesów biznesowych"
-description: "W tym temacie wyjaśniono, jak za pomocą funkcji Proces biznesowy można utworzyć szablon procesu biznesowego dla procesów, które muszą być wykonywane w organizacji."
+title: Formalizowanie procesów biznesowych
+description: W tym temacie wyjaśniono, jak za pomocą funkcji Proces biznesowy można utworzyć szablon procesu biznesowego dla procesów, które muszą być wykonywane w organizacji.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: PersonnelBusinessProcessGenericWorkspace, BusinessProcessGenericTemplateListpage, BusinessProcessGenericMyTemplates, BusinessProcessGroupAssignment
 audience: Application User
 ms.reviewer: rschloma
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
 ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305849"
 ---
 # <a name="formalize-business-processes"></a>Formalizowanie procesów biznesowych
 
@@ -58,7 +58,7 @@ Złożone zadania mogą wymagać większej liczby kroków albo podania dodatkowy
 W szablonie procesu biznesowego można uruchomić proces biznesowy, wybierając opcję **Rozpocznij proces**. Po uruchomieniu procesu zadania są tworzone dla wybranych pracowników lub stanowisk określonych w zadaniach, które uwzględniono w szablonie. Do każdego zadania zostanie również przypisany termin wykonania poprzez dodanie lub odjęcie liczby dni przesunięcia względem daty docelowej, jak wyjaśniono w sekcji „Zadania”. Aktywne procesy biznesowe można wyświetlać w obszarze roboczym **Procesy biznesowe**.
 
 ## <a name="employee-self-service"></a>Samoobsługa pracownika
-Gdy zadanie zostanie przypisane do pracownika, pracownik może wyświetlać to zadanie oraz wszystkie inne przypisane mu zadania na stronie **Samoobsługa pracownika etatowego**. Dla każdego przypisanego mu zadania procesu biznesowego pracownik może zobaczyć nazwę i opis zadania, instrukcje wykonania oraz imię i nazwisko osoby kontaktowej. Ze strony **Samoobsługa pracownika etatowego** pracownik może również otworzyć skojarzoną stronę programu Microsoft Dynamics 365 lub skojarzoną stronę internetową oraz oznaczyć zadania jako będące w toku, anulowane lub zakończone.
+Gdy zadanie zostanie przypisane do pracownika, pracownik może wyświetlać to zadanie oraz wszystkie inne przypisane mu zadania na stronie **Samoobsługa pracownika etatowego**. Dla każdego przypisanego mu zadania procesu biznesowego pracownik może zobaczyć nazwę i opis zadania, instrukcje wykonania oraz imię i nazwisko osoby kontaktowej. Ze strony **Samoobsługa pracownika** etatowego pracownik może również otworzyć skojarzoną stronę programu Microsoft Dynamics 365 lub skojarzoną stronę internetową oraz oznaczyć zadania jako będące w toku, anulowane lub zakończone.
 
 ## <a name="business-process-workspace"></a>Obszar roboczy Proces biznesowy
 Pracownicy działu kadr mogą wyświetlać aktywne procesy biznesowe w obszarze roboczym **Proces biznesowy**. Ten obszar roboczy zawiera listę wszystkich aktywnych procesów oraz skojarzonych z nimi zadań. Tę kompleksową listę zadań można filtrować według terminu wykonania. Obszar roboczy zawiera także listę zadań zaległych oraz zadań przypisanych konkretnie pracownikowi działu kadr. Pracownik działu kadr może także aktualizować stan wszystkich zadań, a w razie potrzeby zmieniać przypisanie zadań w celu sprawniejszej realizacji całego procesu biznesowego.
@@ -74,5 +74,4 @@ Aby utworzyć lub skopiować szablon procesu biznesowego lub aby rozpocząć pro
 - Naciśnij przycisk **Rozpocznij proces**, aby uruchomić wybrany proces biznesowy, przypisać zadania i obliczyć terminy wykonania.
 
 Aby wyświetlić aktywne procesy i skojarzone z nimi zadania, otwórz obszar roboczy **Procesy biznesowe**.
-
 

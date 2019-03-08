@@ -1,13 +1,13 @@
 ---
-title: "Przegląd kontroli budżetu"
-description: "Ten artykuł zawiera wprowadzenie do mechanizmu kontroli budżetu oraz informacje pomagające konfigurować kontrolę budżetu w programie Microsoft Dynamics 365 for Finance and Operations na potrzeby zarządzania środkami finansowymi."
+title: Przegląd kontroli budżetu
+description: Ten artykuł zawiera wprowadzenie do mechanizmu kontroli budżetu oraz informacje pomagające konfigurować kontrolę budżetu w Microsoft Dynamics 365 for Finance and Operations na potrzeby zarządzania środkami finansowymi.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetControlConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,24 +18,23 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4dbbbdf403c3e3f7c1bfa391cc32f80505098db9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e77760d6729b8faf3099590c60ea7673cfcb18ec
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308536"
 ---
-
-# <a name="budget-control-overview"></a>Omówienie kontroli budżetu 
+# <a name="budget-control-overview"></a>Omówienie kontroli budżetu
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera wprowadzenie do mechanizmu kontroli budżetu oraz informacje pomagające konfigurować kontrolę budżetu w programie Microsoft Dynamics 365 for Finance and Operations na potrzeby zarządzania środkami finansowymi.
+Ten artykuł zawiera wprowadzenie do mechanizmu kontroli budżetu oraz informacje pomagające konfigurować kontrolę budżetu w Microsoft Dynamics 365 for Finance and Operations na potrzeby zarządzania środkami finansowymi.
 
 <a name="overview"></a>Przegląd
 --------
 
-Kontrola budżetu w programie Microsoft Dynamics 365 for Finance and Operations obsługuje zarządzanie środkami finansowymi organizacji za pomocą planów kont, przepływów pracy, grup użytkowników, dokumentów źródłowych i arkuszy, konfigurowalnego obliczania dostępnych środków, cykli budżetu i progów. Dzięki kontroli organizacja może planować, zmierzyć, zarządzać i prognozować swoje zasoby finansowe w całym roku obrachunkowym. 
+Kontrola budżetu w Microsoft Dynamics 365 for Finance and Operations obsługuje zarządzanie środkami finansowymi organizacji za pomocą planów kont, przepływów pracy, grup użytkowników, dokumentów źródłowych i arkuszy, konfigurowalnego obliczania dostępnych środków, cykli budżetu i progów. Dzięki kontroli organizacja może planować, zmierzyć, zarządzać i prognozować swoje zasoby finansowe w całym roku obrachunkowym. 
 
 Po zatwierdzeniu budżetów w programie Finance and Operations można używać planów budżetów do generowania wpisów do rejestru budżetu w celu rejestrowania budżetu wydatków dla organizacji. Ewentualnie można utworzyć lub zaimportować wpisy do rejestru budżetu z poziomu zewnętrznego programu, zamiast korzystać z funkcji planowania budżetu. 
 
@@ -128,4 +127,3 @@ Po włączeniu kontroli budżetu użytkownicy otrzymają komunikaty ostrzeżeń 
 Z tej strony użytkownicy mogą przechodzić do strony **Statystyk kontroli budżetu według okresu**, aby obejrzeć szczegóły dotyczące dostępności i rezerwacji budżetu dla wybranej kombinacji wymiarów kontroli budżetu. Użytkownicy mogą również przejść do strony **Statystyka kontroli budżetu** w celu wyświetlenia dostępności budżetu dla wszystkich kombinacji wymiarów finansowych, które są używane w kontroli budżetu. 
 
 Po włączeniu kontroli budżetu dla zamówień zakupu menedżer budżetu może w obszarze roboczym **Budżety i prognozy księgi** sprawdzić kolejkę wszystkich niepotwierdzonych zamówień zakupu, które mają ostrzeżenia i błędy kontroli budżetu. Jeśli menedżer budżetu ma skonfigurowane uprawnienia ponadbudżetowe, może potwierdzać zamówienia zakupu bezpośrednio w obszarze roboczym.    
-

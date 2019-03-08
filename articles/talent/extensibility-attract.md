@@ -1,14 +1,14 @@
 ---
-title: "Możliwości rozszerzania w aplikacji Attract"
-description: "W tym temacie opisano, jak można rozszerzyć funkcjonalność aplikacji Microsoft Dynamics 365 for Talent - Attract przy użyciu platformy Microsoft Power Platform."
+title: Możliwości rozszerzania w aplikacji Attract
+description: W tym temacie opisano, jak można rozszerzyć funkcjonalność aplikacji Microsoft Dynamics 365 for Talent - Attract przy użyciu platformy Microsoft Power Platform.
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 0af60a0aea0f7a5de793631445aaebb37dbb0d74
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305767"
 ---
-
 # <a name="extensibility-in-attract"></a>Możliwości rozszerzania w aplikacji Attract
 
 [!include[banner](../includes/banner.md)]
 
-Aplikacja Microsoft Dynamics 365 for Talent bazuje na platformie Common Data Service (CDS) dla aplikacji i można rozszerzać jej funkcjonalność na różne sposoby przy użyciu platformy Microsoft Power Platform oraz funkcji dostępnych w usłudze Common Data Service dla aplikacji. W związku z tym system można konfigurować i personalizować za pomocą usług Microsoft PowerApps i Microsoft Flow. Można także uzyskiwać dodatkowe dane analityczne o osobach za pomocą usługi Microsoft Power BI. Ponadto nowe działania niestandardowe, takie jak PowerApps i Treści internetowe (iframe), umożliwiają znacznie większą niż dotąd elastyczność procesu rekrutacji. Za pomocą tych działań można dostosować proces rekrutacji do własnych potrzeb biznesowych i procesów oraz zapewnić zespołowi rekrutacyjnemu i kandydatom maksymalnie płynną, indywidualną obsługę.
+Aplikacja Microsoft Dynamics 365 for Talent bazuje na platformie Common Data Service (CDS) dla aplikacji i można rozszerzać jej funkcjonalność na różne sposoby przy użyciu platformy Microsoft Power Platform oraz funkcji dostępnych w usłudze Common Data Service for Apps. W związku z tym system można konfigurować i personalizować za pomocą usług Microsoft PowerApps i Microsoft Flow. Można także uzyskiwać dodatkowe dane analityczne o osobach za pomocą usługi Microsoft Power BI. Ponadto nowe działania niestandardowe, takie jak PowerApps i Treści internetowe (iframe), umożliwiają znacznie większą niż dotąd elastyczność procesu rekrutacji. Za pomocą tych działań można dostosować proces rekrutacji do własnych potrzeb biznesowych i procesów oraz zapewnić zespołowi rekrutacyjnemu i kandydatom maksymalnie płynną, indywidualną obsługę.
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Wykorzystywanie platformy Microsoft Power Platform 
 
@@ -40,11 +39,11 @@ Ponieważ wszystkie dane aplikacji Attract są przechowywane na platformie Commo
 
 Usługa PowerApps umożliwia łatwe tworzenie aplikacji, które łączą się z firmowymi danymi w aplikacji Attract oraz używają wyrażeń przypominających wyrażenia z programu Microsoft Excel do dodawania logiki. Aplikacje tworzone za pomocą usługi PowerApps mogą działać w Internecie oraz na urządzeniach z systemami Apple iOS i Google Android.
 
-Na przykład można ułatwić osobom rekrutującym działania na targach kariery organizowanych na wyższych uczelniach, tworząc uproszczoną aplikację, która skanuje życiorysy i wstępnie kojarzy kandydatów ze stanowiskami w aplikacji Attract. Alternatywnie można utworzyć aplikację, która pomaga organizacji spełniać wymogi dotyczące zgodności z przepisami. Aby uzyskać więcej informacji o usłudze PowerApps i jej używaniu do tworzenia aplikacji, zobacz [Integrowanie danych na platformie Common Data Service dla aplikacji](https://docs.microsoft.com/en-us/powerapps).
+Na przykład można ułatwić osobom rekrutującym działania na targach kariery organizowanych na wyższych uczelniach, tworząc uproszczoną aplikację, która skanuje życiorysy i wstępnie kojarzy kandydatów ze stanowiskami w aplikacji Attract. Alternatywnie można utworzyć aplikację, która pomaga organizacji spełniać wymogi dotyczące zgodności z przepisami. Aby uzyskać więcej informacji o usłudze PowerApps i jej używaniu do tworzenia aplikacji, zobacz [Integrowanie danych na platformie Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps).
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Usługa Microsoft Flow służy do tworzenia zautomatyzowanych przepływów pracy działających na danych aplikacji Attract. Można się łatwo łączyć z setkami popularnych aplikacji i usług bez konieczności samodzielnego pisania kodu źródłowego. Utworzenie przepływów, które na platformie Common Data Service dla aplikacji wchodzą w interakcje z jednostkami Funkcja, Kandydat i Zgłoszenie aplikacji Attract, pozwala zautomatyzować różne czynności. Na przykład gdy kandydat zaakceptuje ofertę, może zostać wysłane powiadomienie do zespołu zajmującego się wdrażaniem do pracy albo opublikowana wiadomości w serwisie Twitter. Aby uzyskać więcej informacji o przepływach, zobacz [Dokumentacja usługi Microsoft Flow](https://docs.microsoft.com/en-us/flow/).
+Usługa Microsoft Flow służy do tworzenia zautomatyzowanych przepływów pracy działających na danych aplikacji Attract. Można się łatwo łączyć z setkami popularnych aplikacji i usług bez konieczności samodzielnego pisania kodu źródłowego. Utworzenie przepływów, które na platformie Common Data Service for Apps wchodzą w interakcje z jednostkami Funkcja, Kandydat i Zgłoszenie aplikacji Attract, pozwala zautomatyzować różne czynności. Na przykład gdy kandydat zaakceptuje ofertę, może zostać wysłane powiadomienie do zespołu zajmującego się wdrażaniem do pracy albo opublikowana wiadomości w serwisie Twitter. Aby uzyskać więcej informacji o przepływach, zobacz [dokumentację systemu Microsoft Flow](https://docs.microsoft.com/en-us/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
@@ -67,4 +66,3 @@ Działanie Treści internetowe (iframe) pozwala osadzić samodzielnie zbudowane 
 
 > [!NOTE]
 > Działanie Treści internetowe jest dostępne tylko po zainstalowaniu dodatku kompleksowej obsługi rekrutacji.
-

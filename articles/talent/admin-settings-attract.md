@@ -1,14 +1,14 @@
 ---
 title: Ustawienia administratora w aplikacji Attract
-description: "W tym temacie opisano, jak włączyć funkcje dla organizacji i użytkowników w aplikacji Attract."
-author: 
+description: W tym temacie opisano, jak włączyć funkcje dla organizacji i użytkowników w aplikacji Attract.
+author: ''
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,18 +18,17 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: fb7b5e5b98ddb8e0e44fccbb0ddbb05199265414
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305779"
 ---
-
 # <a name="admin-settings-in-attract"></a>Ustawienia administratora w aplikacji Attract
 [!include[banner](../includes/banner.md)]
 
-Centrum administracyjne w aplikacji Microsoft Dynamics 365 for Talent Attract zawiera ustawienia konfiguracyjne, opcje integracji i opcje konfiguracji dla aplikacji Attract.
+Centrum administracyjne w aplikacji Microsoft Dynamics 365 for Talent: Attract zawiera ustawienia konfiguracyjne, opcje integracji i opcje konfiguracji dla aplikacji Attract.
 
 ## <a name="company-information"></a>Informacje o firmie
 
@@ -69,4 +68,3 @@ Można również skonfigurować opcje związane ze środowiskiem obsługi kandyd
 Można także ustawić i wymuszać daty ważności ofert. Po ustawieniu opcji **Wymagaj daty ważności dla wszystkich ofert** na **Tak** oferty wygasają po określonej przez Ciebie liczbie godzin lub dni.
 
 Aby uzyskać więcej informacji o zarządzaniu ofertami, zobacz [Konfigurowanie zarządzania ofertami](./offer-setup.md).
-

@@ -1,13 +1,13 @@
 ---
-title: "Wymagania systemowe i zasady aktualizacji rozwiązania Talent"
-description: "W tym temacie podano wymagania dotyczące programu Dynamics 365 for Talent. Opisano w nim także zasady aktualizacji."
+title: Wymagania systemowe i zasady aktualizacji rozwiązania Talent
+description: W tym temacie podano wymagania dotyczące programu Dynamics 365 for Talent. Opisano w nim także zasady aktualizacji.
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
 ms.openlocfilehash: 0fa2b7c2dc5b88349cb4012b6b0ba9009a361fa0
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305715"
 ---
-
 # <a name="talent-system-requirements-and-update-policy"></a>Wymagania systemowe i zasady aktualizacji rozwiązania Talent
 
 [!include [banner](includes/banner.md)]
@@ -63,4 +62,3 @@ Aby znaleźć najnowszą wersję dla każdej przeglądarki, przejdź do witryny 
 Program Microsoft Dynamics 365 for Talent jest udostępniany jako rozwiązanie chmurowe. Aktualizacje usługi Dynamics 365 for Talent są dodawane w sposób ciągły i stosowane automatycznie przez firmę Microsoft.
 
 Aktualizacje są publikowane regularnie i dla wszystkich środowisk.  Program Dynamics 365 for Talent jest wspierany zgodnie z [zasadami cyklu życia pomocy technicznej Microsoft](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Cykl życia pomocy technicznej Microsoft"), które określają spójny i przewidywalny harmonogram dostępności wsparcia technicznego dla produktów.
-

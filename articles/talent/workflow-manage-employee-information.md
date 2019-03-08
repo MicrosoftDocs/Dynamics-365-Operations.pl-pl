@@ -1,13 +1,13 @@
 ---
-title: "Zarządzanie informacjami o pracownikach za pomocą przepływów pracy"
-description: "W tym temacie wyjaśniono, jak za pomocą funkcji przepływów pracy dostępnych w module Zasoby ludzkie zarządzać informacjami o pracownikach. Można na przykład skojarzyć przepływ pracy ze stanowiskiem oraz skonfigurować przepływ pracy zatwierdzania, który jest uruchamiany, gdy pracownicy zmodyfikuje swój rekord."
+title: Zarządzanie informacjami o pracownikach za pomocą przepływów pracy
+description: W tym temacie wyjaśniono, jak za pomocą funkcji przepływów pracy dostępnych w module Zasoby ludzkie zarządzać informacjami o pracownikach. Można na przykład skojarzyć przepływ pracy ze stanowiskiem oraz skonfigurować przepływ pracy zatwierdzania, który jest uruchamiany, gdy pracownicy zmodyfikuje swój rekord.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 0ffae206ae1956e5dc41487f04561ed2c48bd20b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: cf2200057053f5a6d4754d37111ebe34849bb99d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/15/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305724"
 ---
-
 # <a name="use-workflows-to-manage-employee-information"></a>Zarządzanie informacjami o pracownikach za pomocą przepływów pracy
 
 [!include [banner](includes/banner.md)]
@@ -69,7 +68,6 @@ Aby skonfigurować podstawowy przepływ pracy uruchamiany w momencie, gdy pracow
 10. Wybierz kolejno opcje **Zasoby ludzkie** &gt; **Stanowiska** &gt; **Typy hierarchii stanowisk**.
 11. Wybierz opcję **Macierz**.
 12. Dodaj przepływ pracy **Numer identyfikacyjny pracownika** do listy.
-
 
 
 

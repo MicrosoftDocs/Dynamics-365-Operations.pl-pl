@@ -1,13 +1,13 @@
 ---
 title: Przetwarzanie wynagrodzenia
-description: "Funkcjonalność przetwarzania wynagrodzeń pozwala obliczyć nowe kwoty podstawy wynagrodzenia dla pracowników w oparciu o korektę wyrównawczą, cele podwyżki uznaniowej i wydajność."
+description: Funkcjonalność przetwarzania wynagrodzeń pozwala obliczyć nowe kwoty podstawy wynagrodzenia dla pracowników w oparciu o korektę wyrównawczą, cele podwyżki uznaniowej i wydajność.
 author: kherr75
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: 3ecadaf20ea82cd1328b266907d2ba43515d76c6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 0886f60dbdfc531893cd2c1b23df5b52a4a2f4b6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305810"
 ---
-
 # <a name="process-compensation"></a>Przetwarzanie wynagrodzenia
 
 [!include [banner](includes/banner.md)]
@@ -80,4 +79,3 @@ Po dokonaniu przeglądu kwot wynagrodzeń dla pracownika i wprowadzeniu korekt w
 Gdy jedno lub więcej zdarzeń pracowników otrzyma aktualizację stanu do Zatwierdzone, mogą zostać załadowane do rekordów stałego wynagrodzenia pracowników. Można to zrobić poprzez zaznaczenie pojedynczo każdego zdarzenia pracownika i kliknięcie przycisku **Załaduj wynagrodzenie pracownika etatowego** na stronie **Wyniki pracownika etatowego** albo poprzez kliknięcie przycisku **Załaduj wynagrodzenie** na stronie **Wyniki procesu** i załadowanie na raz wszystkich zatwierdzonych zdarzeń pracowników.
 
 Kliknięcie przycisku **OK** w oknie dialogowym **Załaduj wynagrodzenie** spowoduje dodanie wierszy niezerowych akcji dotyczących wynagrodzeń do strony **Stałe wynagrodzenie pracownika etatowego**.
-

@@ -1,13 +1,13 @@
 ---
-title: "Zarządzanie wydajnością"
-description: "Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom."
+title: Zarządzanie wydajnością
+description: Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom.
 author: mikefalkner
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 67da25514edc6b27f8478a7b317f6690720ab592
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: e7621b4c1358d1ecd6ff1c9ce2f1de08766a4bf6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305734"
 ---
-
 # <a name="performance-management"></a>Zarządzanie wydajnością
 
 [!include [banner](includes/banner.md)]
@@ -56,9 +55,9 @@ W przypadku otwierania z obszaru roboczego **ESS** na stronie **Arkusz wydajnoś
 
 Arkusz wydajności można również połączyć z zewnętrzną witryną internetową poprzez dodanie jej adresu URL. Jeśli arkusz jest związany z celami lub przeglądami wydajności, można go połączyć także z jednym lub wieloma takimi obiektami. Kiedy arkusz wydajności jest otwierany ze strony **MSS**, można wprowadzić te informacje, jak w arkuszu pracownika. Dodatkowo można określić pracownika, dla którego arkusz jest tworzony. Można wybrać, czy arkusz menedżera ma być udostępniany pracownikowi.
 
-### <a name="praise"></a>Pochwała
+### <a name="send-feedback"></a>Wyślij opinię
 
-Arkusz wydajności zawiera dodatkową funkcję o nazwie Pochwała. Po kliknięciu opcji **Wyślij pochwałę** można wybrać pracownika i przesłać mu informacje zwrotne za pośrednictwem poczty e-mail. Wiadomość zostanie wysłana do chwalonego pracownika, jego menedżera, pracownika wysyłającego pochwałę i jego menedżera. Dla każdej osoby, która otrzyma wiadomość z pochwałą, jest tworzony wpis w arkuszu wydajności.
+Arkusz wydajności zawiera dodatkową funkcję o nazwie Informacja zwrotna. Po kliknięciu opcji **Wyślij informację zwrotną** można wybrać pracownika i przesłać mu informacje zwrotne za pośrednictwem poczty e-mail. Wiadomość zostanie wysłana do pracownika otrzymującego informację zwrotną, jego menedżera, pracownika wysyłającego informację zwrotną i jego menedżera. Dla każdej osoby, która otrzyma wiadomość z informacją zwrotną, jest tworzony wpis w arkuszu wydajności.
 
 ## <a name="goals"></a>Cele
 Strona **Cele dotyczące wydajności** pomaga śledzić cele, które dla pracownika utworzył on sam i jego menedżer. Można utworzyć dowolną liczbę celów, a cele mogą być rozłożone między różne okresy i przeglądy wydajności. Można również tworzyć cele proste lub złożone, zależnie od ilości informacji, które chcesz wprowadzić o celu. Cele nie są potrzebne w przeglądach wydajności. 
@@ -151,7 +150,6 @@ Typy źródeł arkusza wydajności opisują, skąd pochodzą arkusze wydajności
 ### <a name="review-types"></a>Typy przeglądów
 
 Typy przeglądów wydajności pomagają sterować działaniem przeglądu. Można włączyć lub wyłączyć przepływ pracy dla przeglądu. Jeżeli przegląd nie używa przepływu pracy, można zdefiniować domyślny stan, który będzie używany podczas tworzenia przeglądu. Można także określić, czy przegląd musi zostać podpisany przez pracownika i/lub menedżera.
-
 
 
 
