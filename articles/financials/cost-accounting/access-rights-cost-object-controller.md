@@ -1,32 +1,31 @@
 ---
-title: "Definiowanie uprawnień dostępu kontrolerów obiektów kosztów"
-description: "Ten temat zawiera informacje o uprawnieniach dostępu kontrolerów obiektu kosztów."
+title: Definiowanie uprawnień dostępu kontrolerów obiektów kosztów
+description: Ten temat zawiera informacje o uprawnieniach dostępu kontrolerów obiektu kosztów.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 290b16eeb99ac7ddb9b552b289215c99a0451660
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1cac3c3b724dda4ab39a65aa5221eda427767eb8
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355548"
 ---
-
 # <a name="access-rights-of-a-cost-object-controller"></a>Prawa dostępu kontrolera obiektów kosztów
 
 [!include [banner](../includes/banner.md)]
@@ -96,10 +95,10 @@ Ustawienia hierarchii list dostępu umożliwiają kontrolowanie danych, które s
 - Microsoft Power BI:
 
     - Dane wyświetlane w wizualizacjach programu Power BI
-    - Wizualizacje danych z programu Power BI osadzone w aplikacji klienckiej Microsoft Dynamics 365 for Finance and Operations
+    - Wizualizacje danych w rozwiązaniu Power BI osadzone w Microsoft Dynamics 365 for Finance and Operations, wersja kliencka
 
 > [!IMPORTANT]
-> - Aby hierarchia list dostępu mogła wpływać na dane w programie Power BI, należy w tym programie sparować hierarchię list dostępu i zabezpieczenia na poziomie wiersza. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zabezpieczeń pakietu zawartości Rachunek kosztów](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Aby hierarchia list dostępu mogła wpływać na dane w programie Power BI, należy w tym programie sparować hierarchię list dostępu i zabezpieczenia na poziomie wiersza w programie Power BI. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zabezpieczeń pakietu zawartości Rachunek kosztów](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - W tym temacie przedstawiono warunki wstępne, które muszą być spełnione, aby można było używać obszaru roboczego **Kontrola kosztów**.
 
 Dodatkowe zasoby
@@ -107,4 +106,3 @@ Dodatkowe zasoby
 - [Obszar roboczy Kontrola kosztów](cost-control-workspace.md)
 - [Hierarchia wymiarów](dimension-hierarchy.md)
 - [Konfigurowanie zabezpieczeń pakietu zawartości Rachunek kosztów](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Arkusze magazynowe
-description: "W tym temacie opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych."
+description: W tym temacie opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych.
 author: perlynne
 manager: AnnBe
 ms.date: 04/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7e6ac46cc4d4961cdd76f6127d8900a9b3d13a39
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361689"
 ---
-
 # <a name="inventory-journals"></a>Arkusze magazynowe
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 04/13/2018
 
 W tym temacie opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych.
 
-Arkusze magazynowe w programie Microsoft Dynamics 365 for Finance and Operations są używane do księgowania różnych typów transakcji na fizycznych zapasach, np. do księgowania wydań i przyjęć, przesunięć magazynowych, tworzenia list składowych BOM i uzgadniania zapasów fizycznych. Wszystkie arkusze magazynowe są używane w sposób podobny, ale są one podzielone na różne typy.
+Arkusze magazynowe w programie Microsoft Dynamics 365 for Finance and Operations są używane do księgowania transakcji magazynu fizycznego różnych typów, takich jak księgowanie rozchodów i przychodów, przesunięć magazynowych, tworzenie list składowych BOM i uzgadnianie zapasów fizycznych. Wszystkie arkusze magazynowe są używane w sposób podobny, ale są one podzielone na różne typy.
 
 ## <a name="types-of-inventory-journals"></a>Typy arkuszy magazynowych
 Dostępne są następujące typy arkuszy magazynowych:
@@ -120,4 +119,3 @@ Te dwa arkusze magazynowe obsługują scenariusz *Inicjowanie zapasów* tylko w 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Jednostki danych](../../dev-itpro/data-entities/data-entities.md)
-

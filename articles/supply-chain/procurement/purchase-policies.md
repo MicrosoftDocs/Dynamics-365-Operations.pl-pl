@@ -1,13 +1,13 @@
 ---
-title: "Zasady zakupów"
-description: "Ten artykuł zawiera informacje o zasadach zakupów. Zasady zakupów to zbiór reguł, który steruje procesem zapotrzebowań. Zasady zakupów ułatwiają administratorom zaopatrzenia wdrażanie strategii zaopatrzenia poprzez utworzenie struktury zasad dopasowanej do strategicznych wymagań zakupowych organizacji."
+title: Zasady zakupów
+description: Ten artykuł zawiera informacje o zasadach zakupów. Zasady zakupów to zbiór reguł, który steruje procesem zapotrzebowań. Zasady zakupów ułatwiają administratorom zaopatrzenia wdrażanie strategii zaopatrzenia poprzez utworzenie struktury zasad dopasowanej do strategicznych wymagań zakupowych organizacji.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a16f365fa5a8b39dddac2886c36a8231de745a37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 675a7a8b0da228e789ee37ca8fe1d0c0ea01c283
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358768"
 ---
-
 # <a name="purchasing-policies"></a>Zasady zakupów
 
 [!include [banner](../includes/banner.md)]
@@ -148,7 +147,6 @@ Reguła tworzenia zamówienia zakupu i konsolidacji popytu definiuje reguły, kt
     -   **Nie zezwalaj na konsolidację popytu** — brak zatwierdzonych wierszy zapotrzebowania na zakup kwalifikujących się do konsolidacji popytu. Ta opcja jest domyślnie zaznaczona i ma zastosowanie tylko do wierszy zapotrzebowania na zakup, które wymagają ręcznego przetwarzania do tworzenia zamówienia zakupu.
     -   **Zawsze zezwalaj na konsolidację popytu** — wszystkie zatwierdzone wiersze zapotrzebowania na zakup kwalifikują się do konsolidacji popytu. **Uwaga:** jeśli wybierzesz opcję **Zawsze zezwalaj na konsolidację popytu** na karcie **konsolidacji popytu**, ale zaznaczysz **Automatyczne tworzenie zamówień zakupu** na karcie **Ręczne tworzenie zamówienia zakupu**, wszystkie zapotrzebowania na zakup będą zatrzymane do ręcznego przetwarzania.
     -   **Zezwalaj na konsolidację popytu pod tymi warunkami** — służy do definiowania kryteriów, które określają, czy zatwierdzone wiersze zapotrzebowania na zakup kwalifikują się do konsolidacji popytu. Dla każdego typu wiersza zapotrzebowania na zakup można określić kryteria według dostawcy i kategorii zaopatrzenia. Po wybraniu opcji **Zezwalaj na konsolidację popytu pod tymi warunkami** dla każdego typu wiersza zapotrzebowania na zakup można określić kryteria według dostawcy i kategorii zaopatrzenia. Po wybraniu kategorii zaopatrzenia wszelkie podkategorie dla tej kategorii zaopatrzenia są także wybierane. W przypadku wybrania opcji **Wszystkie** dla określonego typu wiersza wszystkie wiersze tego typu kwalifikują się do konsolidacji popytu.
-
 
 
 

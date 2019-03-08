@@ -1,13 +1,13 @@
 ---
-title: "Opcje transakcji środków trwałych"
-description: "W tym artykule opisano różne dostępne metody tworzenia transakcji na środkach trwałych."
+title: Opcje transakcji środków trwałych
+description: W tym temacie opisano różne dostępne metody tworzenia transakcji na środkach trwałych.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, PurchCreateOrder
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6362a63bca43b5ac8da14becf6b966e459365ce1
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 18352ad921c2e2d110a7535f979272685105662f
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377189"
 ---
-
 # <a name="fixed-asset-transaction-options"></a>Opcje transakcji środków trwałych
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano różne dostępne metody tworzenia transakcji na środkach trwałych.
+W tym temacie opisano różne dostępne metody tworzenia transakcji na środkach trwałych.
 
 Istnieje możliwość skonfigurowania modułu Środki trwałe w celu integracji z modułami Księga główna, Rozrachunki z dostawcami, Rozrachunki z odbiorcami i Zaopatrzenie i sourcing. Ponadto towary w module Zarządzanie zapasami można przenieść do modułu Środki trwałeh, aby można było używać tych towarów wewnętrznie.
 
@@ -66,9 +65,6 @@ Transakcje środków trwałych dowolnego typu można księgować na stronie Arku
 | ** **                               | Rozrachunki z odbiorcami      | Faktura niezależna                         |
 
 
+Wartość pozostała Okresu amortyzacji środka trwałego nie jest aktualizowana, kiedy wiersz arkusza typu transakcji opisowej jest tworzony ręcznie lub importowany przez jednostkę danych. Ta wartość jest aktualizowana, kiedy proces propozycję amortyzacji jest używany do tworzenia wiersza arkusza.
 
 Aby uzyskać więcej informacji, zobacz [Integracja środków trwałych](fixed-asset-integration.md).
-
-
-
-

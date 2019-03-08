@@ -1,13 +1,13 @@
 ---
-title: "Uzgadnianie faktur i międzyfirmowe zamówienia zakupu"
-description: "Firmę kupującą, która uczestniczy w transakcjach handlu międzyfirmowego, można skonfigurować tak, aby używała uzgadniania faktur w rozrachunkach z dostawcami. W takim przypadku muszą być spełnione równocześnie wymagania dotyczące księgowania dla handlu międzyfirmowego i uzgadniania faktur w rozrachunkach z dostawcami, aby było można zaksięgować faktury od dostawcy międzyfirmowego."
+title: Uzgadnianie faktur i międzyfirmowe zamówienia zakupu
+description: Firmę kupującą, która uczestniczy w transakcjach handlu międzyfirmowego, można skonfigurować tak, aby używała uzgadniania faktur w rozrachunkach z dostawcami. W takim przypadku muszą być spełnione równocześnie wymagania dotyczące księgowania dla handlu międzyfirmowego i uzgadniania faktur w rozrachunkach z dostawcami, aby było można zaksięgować faktury od dostawcy międzyfirmowego.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 68b586f8afe7557bf6edee3eca0261d1e9cac0f2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357572"
 ---
-
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Uzgadnianie faktur i międzyfirmowe zamówienia zakupu
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Można na przykład wykonać następujące kroki.
 2.  W firmie Fabrikam-Sprzedaż dokonaj procedury aktualizacji faktury z MZS999. Księgowanie nie powiodło się, ponieważ artykuł jest niedostępny w magazynie i nie został jeszcze odebrany. Dlatego nie da się zaktualizować informacji finansowych.
 3.  W firmie Fabrikam-Sprzedaż zarejestruj odebranie towarów i zaksięguj dokument dostawy dla MZS99. Dokument przyjęcia produktów dla MZZ333 jest automatycznie księgowany w firmie Fabrikam-Zakup. W firmie Fabrikam-Zakup odebrana ilość artykułu B-R14 zostaje zmieniona na 100.
 4.  W firmie Fabrikam-Sprzedaż dokonaj procedury aktualizacji faktury z MZS999. Księgowanie powiedzie się w obu podmiotach prawnych. W firmie Fabrikam-Zakup kupowana ilość artykułu B-R14 zmienia się na 100. 
-
 
 
 

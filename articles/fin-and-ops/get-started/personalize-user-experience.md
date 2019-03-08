@@ -1,13 +1,13 @@
 ---
-title: "Personalizacja interfejsu użytkownika"
-description: "W tym temacie wyjaśniono, jak można spersonalizować program Microsoft Dynamics 365 for Finance and Operations."
+title: Personalizowanie środowiska użytkownika
+description: W tym temacie wyjaśniono, jak można spersonalizować Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysUserSetup, DefaultDashboard
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 53aff09746b92372bb38908a526942ebe9bb4c52
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
-ms.openlocfilehash: 1860b603f789aabca1ca58848a88e11a6e08e31f
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/28/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363483"
 ---
-
-# <a name="personalize-the-user-experience"></a>Personalizacja interfejsu użytkownika
+# <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak można spersonalizować program Microsoft Dynamics 365 for Finance and Operations.
+W tym temacie wyjaśniono, jak można spersonalizować Microsoft Dynamics 365 for Finance and Operations.
 
 W programie Finance and Operations istnieją trzy podstawowe klasy personalizacji.
 
@@ -171,4 +170,3 @@ W przypadku personalizowania konfiguracji wymiarów magazynowych na stronie nale
 Ustawienia w sekcji **Wyświetlanie wymiarów** mają zastosowanie do wszystkich stron i zastępują wszelkie spersonalizowane konfiguracje pól wymiarów magazynowych na poszczególnych stronach.
 
 W efekcie w poprzednim przykładzie jeśli nie chcesz wyświetlania kolumny dla wymiaru zapasów Numer partii, musisz wyczyścić ten wymiar w ramach opcji tabeli **Wyświetl wymiary**. Ostatecznie ta zmiana będzie stosowana nie tylko na jednej konkretnej stronie, ale na wszystkich stronach.
-

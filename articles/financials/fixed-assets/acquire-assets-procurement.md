@@ -1,13 +1,13 @@
 ---
-title: "Nabywanie środków trwałych za pomocą zaopatrzenia"
-description: "W tym temacie opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych."
+title: Nabywanie środków trwałych za pomocą zaopatrzenia
+description: W tym temacie opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: eef69de1c93de5c19b9f197838f1f2d3eb2e7645
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1e9b1dc6297f33ea25ca498895740596ebd020b8
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355801"
 ---
-
 # <a name="acquire-assets-through-procurement"></a>Nabywanie środków trwałych za pomocą zaopatrzenia
 
 [!include [banner](../includes/banner.md)]
@@ -91,7 +90,7 @@ Nastąpiły poniższe transakcje.
 | Opis                               | Konto             | Debet    | Kredyt   |
 |-------------------------------------------|---------------------|----------|----------|
 | Zakup, dokument przyjęcia produktów — konto przeciwstawne zakupu | Naliczone zakupy   | 1600,00 |          |
-| Saldo dostawcy                            | Rozrachunki z dostawcami    |          | 1600,00 |
+| Saldo dostawcy                            | Rozrachunki z dostawcami    |          | 3200,00 |
 | Zakup, przychód środków trwałych             | Wydatek komputerowy    | 1600,00 |          |
 | Zakup, dokument przyjęcia produktów — zakup        | Przychody niezafakturowane |          | 1600,00 |
 
@@ -107,7 +106,6 @@ Oto różne odmiany tego scenariusza:
 
 
 Aby uzyskać więcej informacji, zobacz [Integracja środków trwałych](fixed-asset-integration.md).
-
 
 
 

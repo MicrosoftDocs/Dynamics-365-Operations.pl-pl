@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie kroków zatwierdzania w przepływie pracy"
-description: "W tym temacie wyjaśniono sposób konfigurowania właściwości kroku zatwierdzania."
+title: Konfigurowanie kroków zatwierdzania w przepływie pracy
+description: W tym temacie wyjaśniono sposób konfigurowania właściwości kroku zatwierdzania.
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f52b6ffed7c1edb97c7a673cefbc8bf486ba831
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 813866d63f38f5865666bad96f6f3590716a93ad
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368060"
 ---
-
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurowanie kroków zatwierdzania w przepływie pracy
 
 [!include [banner](../includes/banner.md)]
@@ -135,7 +134,7 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisany ten krok zat
     </tr>
     <tr>
     <td>Użytkownik</td>
-    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Finance and Operations</td>
+    <td>Określeni użytkownicy Microsoft Dynamics 365 for Finance and Operations</td>
     <td>
     <ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
@@ -278,4 +277,3 @@ Jeśli użytkownik nie podejmie działania wobec dokumentu w wyznaczonym czasie,
 
 5. Powtórz kroki od 3 do 4 dla każdego użytkownika, który powinien zostać dodany do ścieżki eskalacji. Można zmienić kolejność użytkowników.
 6. Jeśli użytkownicy wymienieni w ścieżce eskalacji nie odpowiedzą w wyznaczonym czasie, system automatycznie wykona operację na dokumencie. Aby określić akcję podejmowaną przez system, wybierz wiersz **Akcja**, a następnie na karcie **Zakończ działanie** wybierz akcję.
-

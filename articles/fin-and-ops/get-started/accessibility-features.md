@@ -1,33 +1,32 @@
 ---
-title: "Funkcje związane z ułatwianiem dostępu"
-description: "W tym temacie opisano funkcje, które pomagają użytkownikom z różnymi niepełnosprawnościami korzystać z rozwiązań Dynamics 365 for Finance and Operations, Dynamics 365 for Retail i Dynamics 365 for Talent."
+title: Funkcje związane z ułatwianiem dostępu
+description: W tym temacie opisano funkcje przeznaczone do wspomagania użytkowników z różnymi niepełnosprawnościami w używaniu Dynamics 365 for Finance and Operations, Dynamics 365 for Retail i Dynamics 365 for Talent.
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: f88b485b0bdbf66532adff530e399bdd9d5b0ed5
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363414"
 ---
-
 # <a name="accessibility-features"></a>Funkcje ułatwień dostępu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano funkcje, które pomagają użytkownikom z różnymi niepełnosprawnościami korzystać z rozwiązań Dynamics 365 for Finance and Operations, Dynamics 365 for Retail i Dynamics 365 for Talent. Dostępne są na przykład funkcje przeznaczone dla osób korzystających z technologii wspomagających dla osób z wadami wzroku, takich jak Narrator w systemie Microsoft Windows.
+W tym temacie opisano funkcje przeznaczone do wspomagania użytkowników z różnymi niepełnosprawnościami w używaniu Dynamics 365 for Finance and Operations, Dynamics 365 for Retail i Dynamics 365 for Talent. Dostępne są na przykład funkcje przeznaczone dla osób korzystających z technologii wspomagających dla osób z wadami wzroku, takich jak Narrator w systemie Microsoft Windows.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Narrator w systemie Windows i dostęp wyłącznie za pomocą klawiatury
 
@@ -97,4 +96,3 @@ Ten produkt jest przeznaczony do pracy na różnych urządzeniach i przy różny
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Wytyczne dotyczące podejścia z uwzględnieniem ułatwiania dostępu w swoich konfiguracjach niestandardowych dla programistów i klientów
 
 Aby uzyskać więcej informacji na temat najlepszych praktyk firmy Microsoft w zakresie ułatwiania dostępu, zobacz [Ułatwienia dostępu w formularzach, produktach i kontrolkach](../../dev-itpro/user-interface/enable-accessibility.md).
-

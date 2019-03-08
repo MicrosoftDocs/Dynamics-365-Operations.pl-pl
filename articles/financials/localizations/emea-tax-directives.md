@@ -1,13 +1,13 @@
 ---
 title: Dyrektywy podatkowe dla Europy
-description: "Można określić, aby uwzględnić wyjaśnienie kodów podatku na fakturach sprzedaży i fakturach projektu. Umożliwia drukowanie numerów odwołania na fakturach sprzedaży, fakturach niezależnych i fakturach projektu."
+description: Można określić, aby uwzględnić wyjaśnienie kodów podatku na fakturach sprzedaży i fakturach projektu. Umożliwia drukowanie numerów odwołania na fakturach sprzedaży, fakturach niezależnych i fakturach projektu.
 author: epodkolz
 manager: AnnBe
 ms.date: 05/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 42861a66b44d6156341bf2d4d895a4bf35295ee6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 1a2d4531e13d158dd8b93d9b9e94a17a8f94c50a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/05/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371443"
 ---
-
 # <a name="tax-directives-for-europe"></a>Dyrektywy podatkowe dla Europy
 
 [!include [banner](../includes/banner.md)]
@@ -31,5 +30,4 @@ Dyrektywa UE zawiera przepisy wymagające stosowania przez wszystkie państwa cz
 
 - Aby drukować opisy kodów podatków na fakturze sprzedaży, fakturze niezależnej lub w raporcie z faktur projektu, ustaw tekst odwołania do dyrektyw podatkowych dla kodów podatków.
 - Na fakturach korygujących są drukowane numer i data pierwotnej faktury oraz przyczyna korekty.
-
 

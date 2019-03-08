@@ -1,13 +1,13 @@
 ---
-title: "Czynności w procesach zatwierdzania w przepływie pracy"
-description: "Ten artykuł wyjaśnia czynności, jakie może wykonywać każdy uczestnik procesu zatwierdzania w ramach przepływu pracy."
+title: Czynności w procesach zatwierdzania w przepływie pracy
+description: Ten artykuł wyjaśnia czynności, jakie może wykonywać każdy uczestnik procesu zatwierdzania w ramach przepływu pracy.
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 829ee16b8fd72a0808a657419524487d9c1b3123
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361758"
 ---
-
 # <a name="actions-in-workflow-approval-processes"></a>Czynności w procesach zatwierdzania w przepływie pracy
 
 [!include [banner](../includes/banner.md)]
@@ -143,4 +142,3 @@ Zażądanie przez osobę zatwierdzającą wprowadzenia zmian w dokumencie powodu
 Na przykład Sam przesłał raport z wydatków na kwotę 12 000 USD, a ten dokument jest przypisany do Sue. Jeśli Sue poprosi o wprowadzenie zmian, raport z wydatków jest wysyłany z powrotem do Sama.
 
 Sam może ponownie przesłać raport z wydatków. Może on najpierw wprowadzić żądane zmiany lub ponownie przesłać oryginalną wersję raportu z wydatków. Jeśli Sam ponownie prześle raport, zostanie on wysłany do zatwierdzenia do Franka, ponieważ Frank jest pierwszą osobą zatwierdzającą w procesie zatwierdzania.
-

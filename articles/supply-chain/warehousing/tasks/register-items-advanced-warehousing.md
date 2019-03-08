@@ -1,13 +1,13 @@
---- 
-title: "Rejestrowanie elementów dla zaawansowanego magazynowania za pomocą arkusza przyjęć towarów"
-description: "W tej procedurze pokazano sposób rejestrowania towarów za pomocą arkusza przyjęcia towaru, gdy jest używany zaawansowany proces zarządzania magazynem."
+---
+title: Rejestrowanie elementów dla zaawansowanego magazynowania za pomocą arkusza przyjęć towarów
+description: W tej procedurze pokazano sposób rejestrowania towarów za pomocą arkusza przyjęcia towaru, gdy jest używany zaawansowany proces zarządzania magazynem.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 392884d2a87c10a5f38bf6f51967f879c68c1ca6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 050d1fcbc59d9bb3253bfed2433987285423b334
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355502"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Rejestrowanie elementów dla zaawansowanego magazynowania za pomocą arkusza przyjęć towarów
 
@@ -75,5 +75,4 @@ Zapisz numer tworzonego zamówienia zakupu, a także numer towaru i oddział uż
 4. Kliknij przycisk OK.
     * Po kliknięciu przycisku OK sprawdź pasek komunikatów. Powinien tam być komunikat z informacją, że operacja została wykonana.  
 5. Zamknij stronę.
-
 

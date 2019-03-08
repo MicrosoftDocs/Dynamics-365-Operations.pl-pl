@@ -1,13 +1,13 @@
 ---
 title: Zadania importowania i eksportowania danych
-description: "Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi."
+description: Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360217"
 ---
-
 # <a name="data-import-and-export-jobs"></a>Zadania importowania i eksportowania danych
 
 [!include [banner](../includes/banner.md)]
 
-Aby tworzyć zadania importu i eksportu w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations i zarządzać nimi, należy korzystać z obszaru roboczego **Zarządzanie danymi**. Domyślne proces importowania i eksportowania danych tworzy tabelę przemieszczania dla każdej jednostki w docelowej bazie danych. Tabele tymczasowe umożliwiają sprawdzenie, czyszczenie lub konwersję danych przed ich przeniesieniem.
+Obszar roboczy **Zarządzanie danymi** umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi w Microsoft Dynamics 365 for Finance and Operations. Domyślne proces importowania i eksportowania danych tworzy tabelę przemieszczania dla każdej jednostki w docelowej bazie danych. Tabele tymczasowe umożliwiają sprawdzenie, czyszczenie lub konwersję danych przed ich przeniesieniem.
 
 > [!NOTE]
 > W tym temacie założono, że znasz koncepcję [jednostek danych](data-entities.md).
@@ -158,4 +157,3 @@ Tabele przemieszczania można wyczyścić, używając funkcji **Czyszczenie prze
 - **Projekty danych** — jeżeli wybrano tylko projekt danych, wszystkie rekordy dla wszystkich obiektów oraz we wszystkich zadaniach dla wybranego projektu danych są usuwane.
 
 Można także połączyć opcje, aby dodatkowo ograniczyć usuwany zestaw rekordów.
-

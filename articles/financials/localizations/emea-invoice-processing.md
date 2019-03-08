@@ -1,13 +1,13 @@
 ---
 title: Przetwarzanie faktur
-description: "Ten temat zawiera informacje dotyczące przetwarzania faktur dla Europy Wschodniej."
+description: Ten temat zawiera informacje dotyczące przetwarzania faktur dla Europy Wschodniej.
 author: v-kikozl
 manager: AnnBe
 ms.date: 07/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters, VendParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 7486282d4fad1f9557d19f33b067242debc264f2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
-ms.openlocfilehash: d1fca30eb6de22c2d2fb2c4d6bfdfd21fd4bbd6e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/14/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371437"
 ---
-
 # <a name="invoice-processing"></a>Przetwarzanie faktur
 
 [!include [banner](../includes/banner.md)]
@@ -122,4 +121,3 @@ Ten temat zawiera krótki opis scenariuszy dla określonych krajów, takich jak 
 </tr>
 </tbody>
 </table>
-

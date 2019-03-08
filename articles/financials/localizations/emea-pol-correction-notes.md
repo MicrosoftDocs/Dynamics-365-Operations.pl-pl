@@ -1,13 +1,13 @@
 ---
-title: "Noty korygujące"
-description: "Ten temat zawiera informacje dotyczące not korygujących. Nota korygująca jest dokumentem wymaganym lokalnymi przepisami w Polsce. Służy do poprawiania błędów na fakturze od dostawcy."
+title: Noty korygujące
+description: Ten temat zawiera informacje dotyczące not korygujących. Nota korygująca jest dokumentem wymaganym lokalnymi przepisami w Polsce. Służy do poprawiania błędów na fakturze od dostawcy.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 918672377445758c44a967cea601158f9e279788
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fbe8ee007e3816e3d07fa0e3c6ecc78b5336e710
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371472"
 ---
-
 # <a name="correction-notes"></a>Noty korygujące
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,6 @@ Jeśli dostawca wystawia firmie dokument sprzedaży, ale błędnie wpisze adres 
 | Zaksięgowany          | Zaznaczenie opcji wskazuje, że wybrana nota korygująca została zaksięgowana.                                                                                                                                                                                           |
 | Tekst oryginalny   | Wprowadź oryginalny tekst z faktury, który musi zostać poprawiony.                                                                                                                                                                                                         |
 | Poprawiony tekst  | Wprowadź poprawiony tekst faktury.                                                                                                                                                                                                                                  |
-
 
 
 

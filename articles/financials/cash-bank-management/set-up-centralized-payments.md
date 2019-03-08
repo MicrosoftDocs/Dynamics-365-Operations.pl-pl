@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie scentralizowanych płatności"
-description: "Wykonaj następujące kroki, aby przygotować się do przetwarzania płatności w jednej firmie w imieniu innych firm w organizacji."
+title: Konfigurowanie scentralizowanych płatności
+description: Wykonaj następujące kroki, aby przygotować się do przetwarzania płatności w jednej firmie w imieniu innych firm w organizacji.
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb0769d605b831da09046a1e7bf0c2a704dba398
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2e309655bbc1d0fe7a088062b90fab34c642ab29
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361919"
 ---
-
 # <a name="set-up-centralized-payments"></a>Konfigurowanie scentralizowanych płatności
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ Gdy w jednej firmie tworzysz płatność, która skutkuje rozliczeniem faktur w 
 
 ## <a name="set-up-default-descriptions"></a>Ustawianie opisów domyślnych
 Można zdefiniować domyślne opisy dla załączników rozliczeń międzyfirmowych. Domyślny opis jest dołączany do transakcji „należne do” i „należne od” w trakcie procesu rozliczeń międzyfirmowych. Na stronie **Opisy domyślne** można tworzyć nowe opisy dla **rozliczenia z odbiorcą międzyfirmowym** i **rozliczenia z dostawcą międzyfirmowym** poprzez wybranie języka i wprowadzenie tekstu.
-
 
 
 

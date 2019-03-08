@@ -1,13 +1,13 @@
---- 
-title: "Modyfikowanie formatów w celu generowania dokumentów zawierających dane aplikacji"
-description: "Aby wykonać kroki opisane w tej procedurze, należy najpierw wykonać procedurę „ER Generowanie dokumentów z aktualizacją danych aplikacji (Część 3 — Modyfikowanie modelu i mapowania)”."
+---
+title: Modyfikowanie formatów w celu generowania dokumentów zawierających dane aplikacji
+description: Aby wykonać kroki opisane w tej procedurze, należy najpierw wykonać procedurę „ER Generowanie dokumentów z aktualizacją danych aplikacji (Część 3 — Modyfikowanie modelu i mapowania)”.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: a095d0326835b0ae7322d5d58307216ee828649e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359527"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Modyfikowanie formatów w celu generowania dokumentów zawierających dane aplikacji
 
@@ -149,5 +149,4 @@ Etapy w tej procedurze wyjaśniają sposób projektowania konfiguracji raportowa
 46. Zamknij stronę.
 47. Zamknij stronę.
 48. Zamknij stronę.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Aparaty do zarządzania transportem"
-description: "Aparaty zarządzania transportem definiują logikę, która służy do tworzenia i przetwarzania stawek transportowych w module Zarządzanie transportem."
+title: Aparaty do zarządzania transportem
+description: Aparaty zarządzania transportem definiują logikę, która służy do tworzenia i przetwarzania stawek transportowych w module Zarządzanie transportem.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dff811723e25952b4c5af20262010ff4b910be7f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361137"
 ---
-
 # <a name="transportation-management-engines"></a>Aparaty do zarządzania transportem
 
 [!include [banner](../includes/banner.md)]
@@ -90,7 +89,7 @@ Metadane dla aparatów zarządzania transportem są skonfigurowane inaczej dla r
 | **Aparat strefy**                                | Wymaga metadanych do skonfigurowania bezpośrednio w głównej strefie.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Aparat czasu tranzytu** i **aparat przebiegu** | Pobiera metadane bezpośrednio z aparatu przebiegu konfiguracji ustawień formularza.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Przykład metadanych dla aparatu stawki** Aparatu zarządzania transportem wymaga identyfikacji adresu pochodzenia, stanu docelowego i kraju/regionu, i rozpoczęcia i punktu końcowego wysyłki. Dzięki spełnieniu tych wymagań metadane będą wyglądać jak w tabeli poniżej. Tabela ta zawiera także informacje o tym, jaki typ danych wejściowych jest wymagany.
+  **Przykład metadanych dla aparatu stawki** Aparatu zarządzania transportem wymaga identyfikacji adresu pochodzenia, stanu docelowego i kraju/regionu, i rozpoczęcia i punktu końcowego wysyłki. Dzięki spełnieniu tych wymagań metadane będą wyglądać jak w tabeli poniżej. Tabela ta zawiera także informacje o tym, jaki typ danych wejściowych jest wymagany.
 -   Określ te informacje w obszarze **Zarządzanie transportem** &gt; **Ustawienia** na stronie **Typ stawki bazowej**.
 
 | Kolejność | Nazwisko                          | Typ pola | Typ danych | Typ wyszukiwania    | Obowiązkowe |
@@ -100,7 +99,6 @@ Metadane dla aparatów zarządzania transportem są skonfigurowane inaczej dla r
 | 3        | Miejsce początkowe — kod pocztowy | Przypisanie | Ciąg    | Kod pocztowy    | Wybrano  |
 | 4        | Miejsce docelowe — kod pocztowy   | Przypisanie | Ciąg    | Kod pocztowy    | Wybrano  |
 | 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych        | Kraj przeznaczenia           | Przypisanie | Ciąg    | Kraj/region |           |
-
 
 
 

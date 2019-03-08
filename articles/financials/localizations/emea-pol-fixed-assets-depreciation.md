@@ -1,13 +1,13 @@
 ---
-title: "Amortyzacja środków trwałych dla Polski"
-description: "Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce."
+title: Amortyzacja środków trwałych dla Polski
+description: Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosting
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 6f7d93c95aa85acdf2c1a3986b1141a3326882e1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: eadb2d8e8292a2d205ccf3f32128afd116fd394d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371487"
 ---
-
 # <a name="fixed-assets-depreciation-for-poland"></a>Amortyzacja środków trwałych dla Polski
 
 [!include [banner](../includes/banner.md)]
@@ -104,7 +103,6 @@ Firmy w Polsce mogą łączyć środki trwałe z grupami amortyzacji. Grupy amor
 </tr>
 </tbody>
 </table>
-
 
 
 

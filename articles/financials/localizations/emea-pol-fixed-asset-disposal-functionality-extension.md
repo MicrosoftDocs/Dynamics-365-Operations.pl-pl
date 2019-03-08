@@ -1,13 +1,13 @@
 ---
-title: "Likwidacja środków trwałych dla Polski"
-description: "Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce."
+title: Likwidacja środków trwałych dla Polski
+description: Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 04b8dcd54b479e93267361b2e2d6214b3d8b9cfb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1befa741c5090547cf11b82799486764cd06b7a3
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371502"
 ---
-
 # <a name="fixed-assets-disposal-for-poland"></a>Likwidacja środków trwałych dla Polski
 
 [!include [banner](../includes/banner.md)]
@@ -83,7 +82,6 @@ Likwidacja środka trwałego przez sprzedaż lub złomowanie umożliwia zlikwido
 -   Karta **Ogólne** w wierszu **Faktura niezależna**.
 
 Domyślnie pole **Sprzedaż częściowa** zawiera wartość **100**. Gdy użytkownik wybierze typ transakcji **Likwidacja — odpadki** lub **Likwidacja — sprzedaż** oraz składnik aktywów w arkuszu, w wierszu arkusza domyślnie zostanie umieszczona wartość księgowa netto. Jeśli użytkownik zmieni wartość procentową, wartość księgowa netto w wierszu arkusza zostanie zmniejszona. Użytkownik może również ręcznie zmienić wartość księgową netto, co spowoduje przeliczenie wartości procentowej w polu **Sprzedaż częściowa**. **Przykład** Środek trwały został nabyty za 10 000 USD, amortyzacja wynosi 1000 USD, czyli wartość księgowa netto to 9000 USD. Pierwszy sprzedaż częściowa opiewa na 50% — wartość księgowa netto obliczona dla wiersza arkusza wynosi 50% z 9000 USD = 4500 USD. Sprzedaż częściowa drugich 50% — obliczona wartość księgowa netto dla wiersza arkusza wynosi 50% pozostałej wartość księgowej netto 4500 USD = 2250 USD. Jeśli użytkownik chce zaliczyć w koszty pozostałą wartość księgową netto 2250 USD, musi wprowadzić wartość procentową 100 w wierszu arkusza lub faktury niezależnej.
-
 
 
 

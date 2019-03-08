@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie składników funkcji"
-description: "W tym temacie opisano elementy koncepcyjne, które może zawierać zadanie, oraz przykłady wykorzystania tych elementów w organizacji."
+title: Konfigurowanie składników funkcji
+description: W tym temacie opisano elementy koncepcyjne, które może zawierać zadanie, oraz przykłady wykorzystania tych elementów w organizacji.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle
 audience: Application User
 ms.author: rschloma
@@ -18,19 +18,17 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 48787d1eb662322c726698573b27023ae9eed56f
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b40b81fc24086e73b54cfe0cb5e6a81ec5838ab5
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377166"
 ---
-
 # <a name="set-up-the-components-of-a-job"></a>Konfigurowanie składników funkcji
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 W tym temacie opisano elementy koncepcyjne, które może zawierać zadanie, oraz przykłady wykorzystania tych elementów w organizacji. 
 
@@ -92,4 +90,3 @@ Zakresy odpowiedzialności pozwalają wskazać pełnione w ramach obowiązków s
 
 ## <a name="steps-for-creating-a-job"></a>Etapy tworzenia zadania
 Zobacz temat [Definiowanie nowych zadań](../fin-and-ops/hr/tasks/define-new-jobs.md) zawierający procedurę krok po kroku dotyczącą tworzenia nowego zadania. 
-

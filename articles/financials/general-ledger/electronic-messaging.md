@@ -1,33 +1,32 @@
 ---
-title: "Obsługa wiadomości elektronicznych"
-description: "Ten temat zawiera przegląd i informacje o konfiguracji dla obsługi wiadomości elektronicznych w Microsoft Dynamics 365 for Finance and Operations."
+title: Obsługa wiadomości elektronicznych
+description: Ten temat zawiera przegląd informacji o konfiguracji elektronicznego przesyłania wiadomości w Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 232398a6c4193d0074881e26fff361deb9784bf2
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 082ad886f40a52457900523f44158da3ed939458
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357940"
 ---
-
 # <a name="electronic-messaging"></a>Obsługa wiadomości elektronicznych
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera przegląd i informacje o konfiguracji dla obsługi wiadomości elektronicznych w Microsoft Dynamics 365 for Finance and Operations.
+Ten temat zawiera przegląd informacji o konfiguracji elektronicznego przesyłania wiadomości w Microsoft Dynamics 365 for Finance and Operations.
 
 W ostatnim czasie władze i prawodawcy różnych krajów i regionów na całym świecie wprowadzili w życie wymagania w zakresie sprawozdawczości dla firm, które są zarejestrowane w tych krajach lub regionach. Celem tych wymagań jest możliwość uzyskiwania od tych firm danych w formie elektronicznej bezpośrednio z systemów, w których są księgowane, zapisywane i przetwarzane.
 
@@ -452,4 +451,3 @@ Można teraz usunąć lub zaktualizować stan wiadomości. Aby zaktualizować st
 ![Aktualizowanie stanu wiadomości](media/update-status.png)
 
 Stan wiadomości jest ustawiony na **Przygotowane** i możesz teraz wygenerować raport, wybierając **Generowanie raportu**. Raport zostanie wygenerowany, a stan wiadomości i dziennik akcji zostaną zaktualizowane. Aby obejrzeć wygenerowany raport, naciśnij przycisk **załącznik** w okienku akcji.
-

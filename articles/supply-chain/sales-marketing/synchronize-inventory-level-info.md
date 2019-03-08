@@ -1,33 +1,32 @@
 ---
-title: "Synchronizowanie informacji poziomu zapasów między aplikacjami Finance and Operations i Field Service"
-description: "Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania danych poziomu zapasów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service."
+title: Synchronizowanie informacji poziomu zapasów między aplikacjami Finance and Operations i Field Service
+description: Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania danych poziomu zapasów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 01/14/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
+ms.openlocfilehash: b81694f1ed56d8542de46203ac5faf5fae2b6645
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 8c6cb481f1a3fe48d329c5936118d8df88a4175b
-ms.openlocfilehash: 3ccc4d406fa4f9800dcdf8697a91892408783196
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/20/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356790"
 ---
-
-# <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Synchronizowanie informacji poziomu zapasów między aplikacjami Finance and Operations i Field Service 
+# <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Synchronizowanie informacji na poziomie zapasów z rozwiązania Finance and Operations do rozwiązania Field Service 
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,10 +37,10 @@ Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używa
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 Poniższy szablon i podstawowe zadania są używane do synchronizowania poziomów dostępnych zapasów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
 
-**Nazwa szablonu w integracji danych:**
+**Mapowanie szablonu w integracji danych**
 - Zapasy produktu (Finance and Operations do Field Service)
   
-**Nazwy zadań w projekcie integracji danych:**
+**Zadani w projekcie integracji danych**
 - Zapasy produktu
 
 Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchronizować poziomy zapasów:
@@ -68,19 +67,19 @@ Finance and Operations będzie działać jako wzorzec poziomów zapasów. Dlateg
 
 Produkty i magazyny, w których poziomy zapasów są wzorowane na Finance and Operations mogą być kontrolowane za pomocą funkcji Zaawansowane zapytania i filtrowanie (Zapytanie zaawansowane).
 
-Uwaga: Istnieje możliwość utworzenia wielu magazynów w usługach Field Service (z polem Obsługiwane zewnętrznie = Nie), a następnie mapowania ich na jeden magazyn w Finance and Operations z funkcją zaawansowanych zapytań i filtrów. Jest to używane w sytuacjach, w których Field Service ma być wzorcem szczegółowego poziomu magazynu i tylko wysyłać aktualizacje do Finance and Operations. W takim przypadku Field Service nie będzie odbierał aktualizacji poziomów zapasów z Finance and Operations. Zobacz dodatkowe informacje w tematach Synchronizowanie korekt zapasów z Field Service do Finance and Operations oraz Synchronizowanie zleceń w Field Service ze zleceniami połączonym z projektami w Finance and Operations.
+> [!NOTE]
+> Istnieje możliwość utworzenia wielu magazynów w usługach Field Service (z polem **Obsługiwane zewnętrznie = Nie**), a następnie mapowania ich na jeden magazyn w Finance and Operations z funkcją zaawansowanych zapytań i filtrów. Jest to używane w sytuacjach, w których Field Service ma być wzorcem szczegółowego poziomu magazynu i tylko wysyłać aktualizacje do Finance and Operations. W takim przypadku Field Service nie będzie odbierał aktualizacji poziomów zapasów z Finance and Operations. Aby uzyskać dodatkowe informacje, zobacz [Synchronizowanie korekt zapasów z Field Service do Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) oraz [Synchronizowanie zleceń w Field Service ze zleceniami połączonym z projektami w Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="field-service-crm-solution"></a>Rozwiązanie CRM Field Service
-Jednostka magazynowa Produkt zewnętrzny jest nową jednostką, która jest używana tylko do integracji w systemach zaplecza. Odbieranych wartości poziomu zapasów z Finance and Operations w ramach integracji, a następnie przekształca te wartości na ręczne arkusze magazynowe, które następnie zmieniają produkty zapasów w magazynie. 
+**Jednostka magazynowa Produkt zewnętrzny** jest używana tylko do integracji w systemach zaplecza. Ta jednostka odbiera wartości poziomu zapasów z Finance and Operations w ramach integracji, a następnie przekształca te wartości na ręczne arkusze magazynowe, które następnie zmieniają produkty zapasów w magazynie.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Wymagania wstępne i ustawienia mapowania
 
-### <a name="in-the-data-integration-project"></a>W projekcie integracji danych
-Zastosuj filtry za pomocą funkcji Zaawansowane zapytanie i filtrowanie, aby tylko żądane produkty i magazyny wysyłały informacji o poziomie zapasów z Finance and Operations do Field Service.
+### <a name="data-integration-project"></a>Projekt integracji danych
+Można zastosować filtry za pomocą funkcji Zaawansowane zapytanie i filtrowanie, aby tylko niektóre produkty i magazyny wysyłały informacji o poziomie zapasów z Finance and Operations do Field Service.
 
 ## <a name="template-mapping-in-data-integration"></a>Mapowanie szablonu w integracji danych
 
 ### <a name="product-inventory-finance-and-operations-to-field-service-product-inventory"></a>Zapasy produktu (Finance and Operations do Field Service): Zapasy produktu
 
 [![Mapowanie szablonu w integracji danych](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
-

@@ -1,13 +1,13 @@
 ---
 title: Alerty
-description: "Ten temat zawiera ogólne informacje alertach w programie Microsoft Dynamics 365 for Finance and Operations. Alerty pozwalają na bieżąco uzyskiwać informacje o zdarzeniach, które chcesz śledzić podczas dnia pracy."
+description: Ten temat zawiera ogólne informacje o alertach w Microsoft Dynamics 365 for Finance and Operations. Alerty pozwalają na bieżąco uzyskiwać informacje o zdarzeniach, które chcesz śledzić podczas dnia pracy.
 author: tjvass
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: 28ee34cd9133c634af98a50168e22efd0f74abce
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 38309e986c1d284ed63be760745b20a5415adb4c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367462"
 ---
-
 # <a name="alerts"></a>Alerty
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="about-alerts"></a>Alerty — informacje
-Alerty stanowią system powiadamiania o zdarzeniach krytycznych w programie Microsoft Dynamics 365 for Finance and Operations. Alerty pozwalają na bieżąco uzyskiwać informacje o zdarzeniach, które chcesz śledzić podczas dnia pracy. Można łatwo utworzyć własny zbiór reguł alertów dotyczących zaległych dostaw, usuniętych zamówień, zmian cen oraz innych zdarzeń, na które należy reagować.
+Alerty stanowią system zgłaszania zdarzeń krytycznych w Microsoft Dynamics 365 for Finance and Operations. Alerty pozwalają na bieżąco uzyskiwać informacje o zdarzeniach, które chcesz śledzić podczas dnia pracy. Można łatwo utworzyć własny zbiór reguł alertów dotyczących zaległych dostaw, usuniętych zamówień, zmian cen oraz innych zdarzeń, na które należy reagować.
 
 W środowisku planowania zasobów przedsiębiorstwa (ERP) istnieje kilka typowych scenariuszy, gdzie można używać funkcji alertów zawartych w programie Finance and Operations. Oto kilka przykładów.
 
@@ -78,4 +77,3 @@ Reguła alertu ma pięć składników:
 ## <a name="email-notifications-from-alerts"></a>Powiadomienia pocztą e-mail z alertów
 
 Funkcja powiadomień pocztą e-mail z alertów nie jest jeszcze obsługiwana. Zostanie wprowadzona w jednej z przyszłych aktualizacji.
-

@@ -1,13 +1,13 @@
 ---
-title: "Zarządzanie gotówką podręczną w aplikacji Retail dla Europy Wschodniej"
-description: "W tym temacie opisano sposób konfigurowania i używania funkcji zarządzania środkami pieniężnymi w aplikacji Retail dla Europy Wschodniej."
+title: Zarządzanie gotówką podręczną w aplikacji Retail dla Europy Wschodniej
+description: W tym temacie opisano sposób konfigurowania i używania funkcji zarządzania środkami pieniężnymi w aplikacji Retail dla Europy Wschodniej.
 author: epopov
 manager: annbe
 ms.date: 10/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail, Operations
@@ -15,15 +15,14 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 01239f0eff3e59f62188fca64f99e93be843d2e2
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: c198cedba9268229dc1057711d9f16ca33acebac
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371462"
 ---
-
 # <a name="petty-cash-management-for-retail-for-eastern-europe"></a>Zarządzanie gotówką podręczną w aplikacji Retail dla Europy Wschodniej
 
 [!include [banner](../includes/banner.md)]
@@ -99,4 +98,3 @@ Poniższa procedura umożliwia konfigurowanie metody płatności dla płatności
 
 > [!NOTE]
 > Konta przeciwstawne należy skonfigurować dla obu metod płatności używanych w sklepie — wpłacania gotówki oraz usunięcia lub przyjęcia środków płatniczych. Spowoduje to utworzenie zbilansowanych zapisów księgi głównej dla transakcji usunięcia lub przyjęcia środków płatniczych.
-

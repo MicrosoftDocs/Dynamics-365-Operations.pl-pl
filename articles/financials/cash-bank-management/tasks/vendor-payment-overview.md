@@ -1,13 +1,13 @@
---- 
-title: "Przegląd płatności dla dostawcy"
-description: "Ten przewodnik po zadaniach zawiera instruktaż różnych metod służących do tworzenia płatności dla dostawców, w tym dotyczących korzystania z propozycji płatności lub ręcznego wprowadzania jednorazowej płatności."
+---
+title: Przegląd płatności dla dostawcy
+description: Ten przewodnik po zadaniach zawiera instruktaż różnych metod służących do tworzenia płatności dla dostawców, w tym dotyczących korzystania z propozycji płatności lub ręcznego wprowadzania jednorazowej płatności.
 author: kweekley
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d892366a11edcd92f34f37b3e855631820ba816b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cafd499e849570cae7b7f58bf2d487a7ac0093e6
-ms.openlocfilehash: e9a94231f755ff23bb442d62e90daff8f2d1f4fb
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/30/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359964"
 ---
 # <a name="vendor-payment-overview"></a>Przegląd płatności dla dostawcy
 
@@ -76,5 +76,4 @@ Ten przewodnik po zadaniach zawiera instruktaż różnych metod służących do 
 32. Kliknij przycisk OK.
 33. Kliknij przycisk OK, aby wygenerować płatności.
 34. Kliknij przycisk Księguj, jeśli wszystkie płatności są zatwierdzone i wygenerowane. 
-
 

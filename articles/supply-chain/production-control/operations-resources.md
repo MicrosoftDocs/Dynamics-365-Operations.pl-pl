@@ -1,13 +1,13 @@
 ---
-title: "Zasoby rozwiązania Operations"
-description: "Zasoby operacyjne wykonują działania projektu lub procesu produkcji. Zasoby mogą być różnego typu i mieć różne możliwości."
+title: Zasoby rozwiązania Operations
+description: Zasoby operacyjne wykonują działania projektu lub procesu produkcji. Zasoby mogą być różnego typu i mieć różne możliwości.
 author: sorenva
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e11d64ec37775f4fe2fc113af238a6294b459454
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366611"
 ---
-
 # <a name="operations-resources"></a>Zasoby rozwiązania Operations
 
 [!include [banner](../includes/banner.md)]
@@ -83,7 +82,6 @@ Jeżeli grupa zasobów jest używana jako komórka robocza produkcji oszczędnej
 
 ## <a name="costing-resources"></a>Zasoby wyceny
 Podczas definiowania działania, takiego jak operacja marszruty lub prognoza godzin projektu, można określić wymagania dla określonych zasobów operacyjnych lub grup zasobów. Można jednak również określić zapotrzebowanie na zasób operacyjny określonego typu lub zasób operacyjny o określonej zdolności produkcyjnej lub żądanych kompetencjach. Z tego powodu rzeczywiste przypisanie zasobów nie zostanie ukończone zanim zakończy się planowanie działań i rezerwacja zdolności produkcyjnych. W związku z tym w przypadku operacji marszruty można określić, że szacowanie i obliczanie BOM muszą być oparte na określonych zasobach operacyjnych. Te zasoby operacyjne są nazywane zasobami wyceny. Można także przenosić kategorii kosztu i czasy operacji z zasobu wyceny do działania. Podczas planowania operacji, szacowania i kalkulacje BOM są wykonywane przy użyciu rzeczywiście zaplanowanego zasobu operacyjnego.
-
 
 
 

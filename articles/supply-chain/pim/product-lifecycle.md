@@ -1,32 +1,31 @@
 ---
-title: "Stan cyklu życia produktu"
-description: "Stan cyklu życia produktu dokumentuje stan cyklu życia zwolnionego produktu lub wariantu produktu."
+title: Stan cyklu życia produktu
+description: Stan cyklu życia produktu dokumentuje stan cyklu życia zwolnionego produktu lub wariantu produktu.
 author: cvocph
 manager: AnnBe
 ms.date: 12/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: bf9e8fe828cae0f643bfb89c34f1d545e3993619
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 236b0253f20330f09f07dbcfa19257350fb5d37f
-ms.openlocfilehash: 8ef72de3f226a3270ac0145a20e4da7dfe64f4ba
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364840"
 ---
-
 # <a name="product-lifecycle-state"></a>Stan cyklu życia produktu 
 
 [!include [banner](../includes/banner.md)]
@@ -114,4 +113,3 @@ W celu wybrania i aktualizacji zwolnionych produktów i wariantów produktów na
 -  [Przypisywanie stanu cyklu życia produktu do zwolnionego produktu (przewodnik zadania)](tasks/product-lifecycle-state-released-product.md)
 -  [Znajdowanie wariantów przestarzałych produktów i przypisywanie stanu cyklu życia produktu (przewodnik po zadaniu)](tasks/obsolete-product-variants.md)
 -  [Tworzenie stanu cyklu życia produktu w celu wykluczania produktów z planowania głównego (przewodnik po zadaniu)](tasks/exclude-products-master-planning.md)
-

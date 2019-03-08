@@ -1,13 +1,13 @@
 ---
 title: Konfiguruj pobieranie dla grupy
-description: "W tym temacie opisano sposób konfigurowania funkcji pobierania dla grupy oraz stosowania potwierdzania towaru z pobieraniem dla grupy."
+description: W tym temacie opisano sposób konfigurowania funkcji pobierania dla grupy oraz stosowania potwierdzania towaru z pobieraniem dla grupy.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSClusterProfile, WHSRFAutoConfirm
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a7adec850cfb473b0bfc9536dcb1ef1cfd74129a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2ec0890963b2b01407acac8003453faf370894b4
-ms.openlocfilehash: 1c23421ddfda8c5f6fa27a31831a00ead6094db9
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/11/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364104"
 ---
-
 [!include[banner](../includes/banner.md)]
 
 # <a name="set-up-cluster-picking"></a>Konfiguruj pobieranie dla grupy
@@ -37,7 +36,7 @@ Po zwolnieniu zleceń pracy do magazynu, pracownik może użyć urządzenia prze
 
 W razie potrzeby, pracownik może przekazać grupę innemu pracownikowi. Powoduje to zmianę stanu grupy na Zdany. Jeżeli pracownik używa urządzenia przenośnego do wskazania, że praca pobierania i odkładania została zakończona, wysyłka lub ładunek muszą zostać potwierdzone na kliencie programu Dynamics 365 for Finance and Operations.
 
-## <a name="set-up-cluster-picking"></a>Konfiguruj pobieranie dla grupy
+## <a name="set-up-cluster-picking"></a>Konfigurowanie pobierania dla grupy
 
 Aby włączyć pobieranie dla grupy, należy skonfigurować następujące opcje:
 
@@ -81,4 +80,3 @@ W przypadku stosowania pobierania dla grupy bardzo ważne jest potwierdzanie tow
 1.  Na urządzeniu przenośnym w menu otwórz formularz ustawień potwierdzenia pracy: **Zarządzanie magazynem** \> **Zarządzanie magazynem** \> **Ustawienia** \> **Urządzenie przenośne** \> **Elementy menu urządzenia przenośnego**.
 
 2.  Na urządzeniu przenośnym w menu otwórz pozycję **Konfiguracja potwierdzenia pracy**. Opcja **Potwierdzenie produktu** umożliwia weryfikowanie każdego artykułu w zapasach z urządzenia przenośnego podczas skanowania.
-

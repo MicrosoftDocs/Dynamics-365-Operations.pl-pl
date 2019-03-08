@@ -1,13 +1,13 @@
---- 
-title: "Definiowanie programów lojalnościowych"
-description: "W tej procedurze pokazano sposób konfigurowania programu lojalnościowego z dwoma warstwami lojalnościowymi."
+---
+title: Definiowanie programów lojalnościowych
+description: W tej procedurze pokazano sposób konfigurowania programu lojalnościowego z dwoma warstwami lojalnościowymi.
 author: jashanno
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9e57bb9c9e3348f2a9853dfda1351a8a75261beb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: a27a2367ac41e86a3038594261c080ad2515eb94
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355318"
 ---
 # <a name="define-loyalty-programs"></a>Definiowanie programów lojalnościowych
 
@@ -78,5 +78,4 @@ W tej procedurze pokazano sposób konfigurowania programu lojalnościowego z dwo
 38. Kliknij przycisk Zapisz.
 39. Zamknij stronę.
 40. Kliknij przycisk Zapisz.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie obrazów i zarządzanie nimi w module Retail Modern POS (MPOS)"
-description: "W tym artykule objaśniono etapy konfigurowania obrazów i zarządzania nimi dla różnych jednostek wyświetlanych w module Retail Modern POS (MPOS)."
+title: Konfigurowanie obrazów w aplikacji Retail Modern POS (MPOS) i zarządzanie nimi
+description: W tym artykule objaśniono etapy konfigurowania obrazów i zarządzania nimi dla różnych jednostek wyświetlanych w module Retail Modern POS (MPOS).
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d2f4cc99ec239c4c35c44a226235d01e18d4185f
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356744"
 ---
-
-# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Konfigurowanie obrazów i zarządzanie nimi w module Retail Modern POS (MPOS)
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Konfigurowanie obrazów w aplikacji Retail Modern POS (MPOS) i zarządzanie nimi
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +37,7 @@ W tym artykule objaśniono etapy konfigurowania obrazów i zarządzania nimi dla
 Obrazy wyświetlane w aplikacji Retail Modern POS (MPOS) muszą być obsługiwane zewnętrznie, poza programem Microsoft Dynamics 365 for Retail. Zazwyczaj znajdują się one w systemie zarządzania zawartością, sieci dostarczania zawartości (CDN) lub na serwerze multimediów. Następnie MPOS przechwytuje i wyświetla obrazy dla odpowiednich jednostek, takich jak produkty i katalogi, po przejściu do docelowego adresu URL. Aby pobierać te zewnętrznie obsługiwane obrazy, MPOS wymaga poprawnego formatu adresu URL dla obrazów. Wymagany format adresu URL dla obrazów można skonfigurować przez skonfigurowanie wartości **Podstawowy adres URL obiektu multimedialnego** w profilu kanału i za pomocą funkcji **Definiuj szablon multimediów** dla każdej jednostki. Można także zastąpić standardowy format adresu URL dla podzbioru jednostek za pomocą funkcji **Edytuj w programie Excel**.
 
 > [!IMPORTANT]
-> W bieżącej wersji programu Dynamics 365 for Retail nie można już konfigurować formatu adresu URL za pomocą kodu XML atrybutu **Obraz** dla aplikacji MPOS w grupie atrybutów **Domyślne** dla jednostek. Jeśli znasz system Microsoft Dynamics AX 2012 R3 i korzystasz obecnie z bieżącej wersji programu Dynamics 365 for Retail, pamiętaj, aby do ustawiania obrazów zawsze korzystać z funkcji **Definiuj szablon multimediów**. Nie używaj i nie zmieniaj atrybutu **obrazu** w **domyślnej** grupie atrybutów dla żadnych jednostek, włącznie z produktami. Zmiany wprowadzone bezpośrednio w **domyślnej** grupie atrybutów dla obrazów nie zostaną odzwierciedlone. Ta opcja będzie wyłączona w kolejnej wersji.
+> W bieżącej wersji programu Dynamics 365 for Retail  nie można już konfigurować formatu adresu URL za pomocą kodu XML atrybutu **Obraz** dla aplikacji MPOS w grupie atrybutów **Domyślne** dla jednostek. Jeśli znasz system Microsoft Dynamics AX 2012 R3 i korzystasz obecnie z bieżącej wersji programu Dynamics 365 for Retail, pamiętaj, aby do ustawiania obrazów zawsze korzystać z funkcji **Definiuj szablon multimediów**. Nie używaj i nie zmieniaj atrybutu **obrazu** w **domyślnej** grupie atrybutów dla żadnych jednostek, włącznie z produktami. Zmiany wprowadzone bezpośrednio w **domyślnej** grupie atrybutów dla obrazów nie zostaną odzwierciedlone. Ta opcja będzie wyłączona w kolejnej wersji.
 
 W poniższych procedurach obrazy są konfigurowane dla jednostki katalogu jako przykład. Procedury te mogą pomogą zapewnić ustawienie prawidłowej docelowej ścieżki obrazu dla wszystkich obrazów z katalogu używających tej samej ścieżki. Na przykład, jeśli serwer multimediów lub CDN został ustawiony zewnętrznie, a chcesz, aby obrazy były wyświetlane w MPOS dla określonego sklepu, użyj funkcji **Definiuj szablon multimediów** w celu ustawienia ścieżki wyszukiwania i pobierania obrazów przez MPOS.
 
@@ -214,4 +213,3 @@ Obrazy katalogu, pracownika, odbiorcy i kategorii, które muszą być używane w
 5. Należy wykonać podobną procedurę dla kategorii, pracownika i odbiorcy.
 
     [![offline2](./media/offline2.png)](./media/offline2.png)
-

@@ -1,34 +1,34 @@
 ---
-title: "Strona główna wdrożeń lokalnych"
-description: "Ten temat zawiera informacje i łącza do zasobów o wdrożeniach lokalnych."
+title: Strona główna wdrożeń lokalnych
+description: Ten temat zawiera informacje i łącza do zasobów o wdrożeniach lokalnych.
 author: kfend
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 02/01/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: c51cce929384b7e822213dcb9df9007edfe3700c
+ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
 ms.translationtype: HT
-ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
-ms.openlocfilehash: c80a41427db18607577b4f89c8e30fe6c8f872d3
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/02/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "373284"
 ---
 # <a name="on-premises-deployments-home-page"></a>Strona główna wdrożeń lokalnych
 
 [!include [banner](../includes/banner.md)]
 
-Rozwiązanie Microsoft Dynamics 365 for Finance and Operations można wdrożyć lokalnie. Po wybraniu typu wdrożenia lokalnego wymagania systemowe, zapotrzebowanie na sprzęt i funkcje różnią się w stosunku do wdrożenia w chmurze. Ten temat zawiera łącza do zasobów z informacjami specyficznymi dla wdrożeń lokalnych.
+Można wdrożyć Microsoft Dynamics 365 for Finance and Operations (lokalnie). Po wybraniu typu wdrożenia lokalnego wymagania systemowe, zapotrzebowanie na sprzęt i funkcje różnią się w stosunku do wdrożenia w chmurze. Ten temat zawiera łącza do zasobów z informacjami specyficznymi dla wdrożeń lokalnych.
 
 ## <a name="get-started"></a>Rozpoczęcie pracy
 - [Opcja wdrożenia lokalnego](on-premises-overview.md)
@@ -59,10 +59,11 @@ Rozwiązanie Microsoft Dynamics 365 for Finance and Operations można wdrożyć 
 ## <a name="retail"></a>Retail
 - [Funkcje handlu detalicznego dostępne we wdrożeniach lokalnych](../../retail/retail-onprem.md)
 - [Kroki instalacji składników kanału detalicznego w środowisku lokalnym](deploy-retail-onprem.md)
-- [Konfigurowanie, instalowanie i aktywowanie aplikacji Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
-- [Konfigurowanie i instalowanie aplikacji Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Konfigurowanie, instalowanie i aktywacja Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
+- [Konfigurowanie i instalowanie Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
-
+## <a name="upgrade"></a>Uaktualnienie
+- [Uaktualnienie w miejscu dla środowisk on-premises](../migration-upgrade/on-prem-upgrade.md)
 
 ## <a name="other-resources"></a>Inne zasoby
 - [Rozwiązywanie problemów z wdrożeniami lokalnymi](troubleshoot-on-prem.md)
@@ -71,4 +72,3 @@ Rozwiązanie Microsoft Dynamics 365 for Finance and Operations można wdrożyć 
 - [Usunięte lub wycofane funkcje](../migration-upgrade/deprecated-features.md)
 - [Zasady dotyczące cyklu życia oprogramowania i wydania lokalne](../migration-upgrade/on-prem-version-update-policy.md)
  
-

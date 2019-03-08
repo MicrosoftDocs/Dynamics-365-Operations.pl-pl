@@ -1,13 +1,13 @@
 ---
-title: "Ograniczenia wyrażenia i ograniczenia tabeli w modelach konfiguracji produktu."
-description: "W tym temacie opisano zastosowanie ograniczeń wyrażenia i ograniczeń tabeli. Ograniczenia służą do kontroli wartości atrybutów, które można wybrać podczas konfigurowania produktów dla zamówienia sprzedaży, oferty sprzedaży, zamówienia zakupu lub zlecenia produkcyjnego. Można użyć ograniczeń wyrażenia lub ograniczeń tabeli, w zależności od preferencji dotyczących tworzenia ograniczeń."
+title: Ograniczenia wyrażenia i ograniczenia tabeli w modelach konfiguracji produktu.
+description: W tym temacie opisano zastosowanie ograniczeń wyrażenia i ograniczeń tabeli. Ograniczenia służą do kontroli wartości atrybutów, które można wybrać podczas konfigurowania produktów dla zamówienia sprzedaży, oferty sprzedaży, zamówienia zakupu lub zlecenia produkcyjnego. Można użyć ograniczeń wyrażenia lub ograniczeń tabeli, w zależności od preferencji dotyczących tworzenia ograniczeń.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 88d52031f4c916f5ec3e970f38864977e69a9d9a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b6b5b7e7894cb74e33e08893934b3eaede957556
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356652"
 ---
-
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Ograniczenia wyrażenia i ograniczenia tabeli w modelach konfiguracji produktu.
 
 [!include [banner](../includes/banner.md)]
@@ -223,7 +222,7 @@ W następnej tabeli przedstawiono przykłady jak zapisać notację infix.
 |        (x)        |                           Nawiasy zastępują domyślny priorytet.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Dlaczego moje ograniczenia wyrażeń nie przechodzą pomyślnie sprawdzania poprawności?
-Nie można używać zarezerwowanych słów kluczowych jako nazwy zamiennej dla atrybutów, komponentów czy podskładniki w modelu konfiguracji produktu. Oto lista zarezerwowanych słów kluczowych, których nie można używać:
+Nie można używać zarezerwowanych słów kluczowych jako nazwy zamiennej dla atrybutów, komponentów czy podskładniki w modelu konfiguracji produktu. Oto lista zarezerwowanych słów kluczowych, których nie można używać:
 
 -   Pułap
 -   Element
@@ -252,7 +251,6 @@ Nie można używać zarezerwowanych słów kluczowych jako nazwy zamiennej dla a
 [Tworzenie ograniczenia wyrażenia (przewodnik zadania)](tasks/add-expression-constraint-product-configuration-model.md)
 
 [Dodawanie obliczenia do modelu konfiguracji produktu (przewodnik zadania)](tasks/add-calculation-product-configuration-model.md)
-
 
 
 

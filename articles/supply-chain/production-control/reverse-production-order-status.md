@@ -1,13 +1,13 @@
 ---
 title: Wycofywanie stanu zlecenia produkcyjnego
-description: "W tym temacie opisano sposób wycofania stanu zlecenia produkcyjnego."
+description: W tym temacie opisano sposób wycofania stanu zlecenia produkcyjnego.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParmStatusDecrease
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ca5a62b4509f0c7e49da94128e72eae5f35829e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4761e44b6bbc93ebf4a395948f42c2a73013ecb9
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367324"
 ---
-
 # <a name="reverse-the-production-order-status"></a>Wycofywanie stanu zlecenia produkcyjnego
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Zmiana stanu zlecenia produkcyjnego ze **Zwolnione** na **Zaplanowane** powoduje
 
 ## <a name="from-started-to-released"></a>Zmiana stanu z Rozpoczęte na Zwolnione
 Zmiana stanu zlecenia produkcyjnego z **Rozpoczęte** na **Zwolnione** powoduje wycofanie wszystkich pozycji zgłoszonych jako gotowe. Cofane są także ustawienia dotyczące pobranych materiałów oraz dostaw przychodzących i wychodzących. Pole **Następny krok** w wierszach BOM zlecenia produkcyjnego zmieniło się z **Zakończone** na **Zużycie materiału**. Jeśli został zarejestrowany czas lub zgłoszono ilości jako gotowe dla operacji w marszrucie produkcji, ustawienia te zostaną wycofane. Pole **Następny krok** zmieniło się z **Zakończone** na **Zużycie marszruty** w marszrucie produkcji. Ustawienia dla wszystkich elementów, które są księgowane jako „w toku” lub „praca w toku”, zostaną wycofane. Na stronie **Szczegóły zlecenia produkcyjnego** pola wskazujące ilość rozpoczętą lub zgłoszoną jako gotową zostaną zresetowane. Resetowane są również daty dla tych transakcji.
-
 
 
 

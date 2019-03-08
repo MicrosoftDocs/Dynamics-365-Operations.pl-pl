@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie środka trwałego"
+---
+title: Tworzenie środka trwałego
 description: W tym przewodniku po zadaniach jest wykorzystywana firma demonstracyjna USMF.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetBook
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0e2975ace61320c227631657a2e51ad785d9e20f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 352d8700df234f80381c4778c5f90b4b6f1a2297
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362563"
 ---
 # <a name="create-a-fixed-asset"></a>Tworzenie środka trwałego
 
@@ -41,5 +41,4 @@ W tym przewodniku po zadaniach jest wykorzystywana firma demonstracyjna USMF.  Z
     * Wprowadź dodatkowe informacje, jakich firma potrzebuje o tej księdze.  
     * Wprowadź dodatkowe informacje, jakich firma potrzebuje o pozostałych księgach.  
 8. Zamknij stronę.
-
 

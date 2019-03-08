@@ -1,13 +1,13 @@
 ---
 title: Bilansowanie partii
-description: "W tym temacie opisano proces równoważenia partii."
+description: W tym temacie opisano proces równoważenia partii.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: 63b986f9f3a1505dba4c2f64f872b9472e1aca87
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7d00df6263530ba9fff4c246cb3593cd607f6719
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358630"
 ---
-
 # <a name="batch-balancing"></a>Bilansowanie partii
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak jest obsługiwany proces równoważenia partii. 
 
-Obejrzyj [film o równoważeniu partii w programie Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
+Obejrzyj [film na temat równoważenia partii w Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
 W procesie równoważenia partii ilość substancji, jaka ma zostać użyta w partii produkcji, jest obliczana na podstawie stężenia substancji aktywnych w wybranych partiach produktów.
 
@@ -194,4 +193,3 @@ Istnieje jeden wyjątek od reguły mówiącej o tym, że równoważenie partii m
 Jeżeli formuła zawiera substancję aktywną dla produktu, w którym włączono obsługę procesów zarządzania magazynem, ale numer partii jest poniżej lokalizacji w hierarchii rezerwacji, do szarży produkcyjnej nie można zastosować równoważenia partii.
 
 Szarża produkcyjna, do której nie można zastosować równoważenia partii, przechodzi przez zwykły cykl przetwarzania szarż produkcyjnych.
-

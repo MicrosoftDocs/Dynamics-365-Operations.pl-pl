@@ -1,13 +1,13 @@
 ---
-title: "Reguły rozliczania"
-description: "W tym temacie opisano cztery reguły rozliczania stosowane do zużycia surowców."
+title: Reguły rozliczania
+description: W tym temacie opisano cztery reguły rozliczania stosowane do zużycia surowców.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e4b9cd918bec9a094744b208821285c57f01798a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: f5fc4db479852ffac5f2b3401a0c1bd92c35a7cb
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358308"
 ---
-
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Kontrola zużycia surowców za pomocą zasad usuwania
 
 [!include [banner](../includes/banner.md)]
@@ -64,4 +63,3 @@ Reguła rozliczania Zakończenie wskazuje, że materiał będzie automatycznie z
 
 ### <a name="available-at-location"></a>Dostępne w lokalizacji
 Reguła rozliczania Dostępne w lokalizacji wskazuje, że materiał będzie automatycznie zużywany z chwilą zarejestrowania jako pobranego do produkcji. Materiał jest rejestrowany jako pobrany z lokalizacji z chwilą ukończenia pracy pobrania surowca lub gdy materiał jest dostępny w lokalizacji wejściowej produkcji, a wiersz materiału został zwolniony do magazynu. Lista pobrania wygenerowana w trakcie procesu jest księgowana w zadaniu wsadowym. Ta reguła ma zastosowanie, jeśli na przykład masz wiele działań pobrania do jednego zlecenia produkcyjnego. W takim wypadku nie trzeba ręcznie aktualizować listy pobrania i można uzyskać bieżący obraz saldo PWT.
-

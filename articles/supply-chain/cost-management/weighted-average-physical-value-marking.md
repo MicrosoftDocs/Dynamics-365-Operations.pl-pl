@@ -1,13 +1,13 @@
 ---
-title: "Średnia ważona z wartością fizyczną i oznaczeniami"
-description: "Średnia ważona jest modelem magazynowym opierającym się na zasadzie średniej ważonej, gdzie rozchody magazynowe są szacowane na podstawie średniej wartości towarów przyjętych do magazynu podczas okresu zamykania magazynu plus dostępnych zapasów z poprzedniego okresu."
+title: Średnia ważona z wartością fizyczną i oznaczeniami
+description: Średnia ważona jest modelem magazynowym opierającym się na zasadzie średniej ważonej, gdzie rozchody magazynowe są szacowane na podstawie średniej wartości towarów przyjętych do magazynu podczas okresu zamykania magazynu plus dostępnych zapasów z poprzedniego okresu.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc70b9cffd8716bc1d90cdb611076b4fc0bf6b30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355686"
 ---
-
 # <a name="weighted-average-with-physical-value-and-marking"></a>Średnia ważona z wartością fizyczną i oznaczeniami
 
 [!include [banner](../includes/banner.md)]
@@ -77,7 +76,7 @@ Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu 
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 - Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 - Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
-- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@cena jednostkowa.
 - Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 - Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 - Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
@@ -111,7 +110,7 @@ Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu 
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 - Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 - Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
-- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@cena jednostkowa.
 - Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 - Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 - Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
@@ -140,7 +139,7 @@ Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu 
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 - Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 - Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
-- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@cena jednostkowa.
 - Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 - Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 - Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
@@ -173,7 +172,7 @@ Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu 
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 - Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 - Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
-- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@cena jednostkowa.
 - Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 - Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 - Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
@@ -221,14 +220,13 @@ Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu 
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 - Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 - Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
-- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@@"Unitprice".
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@"cena jednostkowa".
 - Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 - Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 - Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
 - Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
 - Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą Zamknięcie magazynu.
 - Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci czerwonych linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
-
 
 
 

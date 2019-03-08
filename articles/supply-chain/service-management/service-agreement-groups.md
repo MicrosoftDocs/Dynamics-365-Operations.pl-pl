@@ -1,31 +1,30 @@
 ---
-title: "Grupy umów serwisowych"
-description: "Grupy umów serwisowych są przydatne do sortowania i filtrowania umów serwisowych."
+title: Grupy umów serwisowych
+description: Grupy umów serwisowych są przydatne do sortowania i filtrowania umów serwisowych.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAAgreementGroup
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e7cb89189ed62b6579b2be83dee448c703a15cbb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2a46173a3566a56a21add9d42c111d456b1ae7c1
-ms.openlocfilehash: 7a1e2b6fd4ff86a7cd0bd62a1c434073fd9c473d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/19/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365852"
 ---
-
 # <a name="service-agreement-groups"></a>Grupy umów serwisowych 
 
 [!include [banner](../includes/banner.md)]
@@ -43,4 +42,3 @@ W polu **Grupa umów serwisowych** strony **Parametry modułu Zarządzanie serwi
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Tworzenie grup umów serwisowych](create-service-agreement-groups.md)
-

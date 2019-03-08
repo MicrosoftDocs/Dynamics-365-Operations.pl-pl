@@ -1,51 +1,50 @@
 ---
-title: "Zawartość usługi Power BI dla kierownika praktyk"
-description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI dla kierownika praktyk. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
+title: Pakiet zawartości Kierownik praktyk w usłudze Power BI
+description: W tym temacie opisano, co się znajduje w pakiecie zawartości Kierownik praktyk dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367807"
 ---
-
-# <a name="practice-manager-power-bi-content"></a>Zawartość usługi Power BI dla kierownika praktyk
+# <a name="practice-manager-power-bi-content"></a>Pakiet zawartości Kierownik praktyk w usłudze Power BI
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft Power BI **Kierownik praktyk**. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+W tym temacie opisano, co się znajduje w pakiecie zawartości **Kierownik praktyk** dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
 ## <a name="overview"></a>Przegląd
 
-Zawartości usługi Power BI **Kierownik praktyk** została utworzona dla kierowników praktyk i kierowników projektów. Zawiera podstawowe wskaźniki, które odnoszą się do projektów, nad którymi organizacja pracuje. Pulpit nawigacyjny zawiera przegląd projektów i powiązanych odbiorców. Filtr poziomu raportu może służyć do raportowania dla określonych firm. Ten pakiet zawartości usługi Power BI pobiera dane ze zagregowanych miar rozliczania projektu.
+Zawartości **Kierownik praktyk** usługi Power BI została utworzona dla kierowników praktyk i kierowników projektów. Zawiera podstawowe wskaźniki, które odnoszą się do projektów, nad którymi organizacja pracuje. Pulpit nawigacyjny zawiera przegląd projektów i powiązanych odbiorców. Filtr poziomu raportu może służyć do raportowania dla określonych firm. Ten pakiet zawartości usługi Power BI pobiera dane ze zagregowanych miar rozliczania projektu.
 
-Pakiet zawartości Power BI **Kierownik praktyk** zawiera pięć stron raportu: jedną stronę omówienia i cztery strony zawierające szczegółowe informacje o kosztach projektu, przychodach, zarządzaniu wartością wypracowaną i metrykach godzinowych, które są podzielone według różnych wymiarów.
+Pakiet zawartości **Kierownik praktyk** usługi Power BI zawiera pięć stron raportu: jedną stronę omówienia i cztery strony zawierające szczegółowe informacje o kosztach projektu, przychodach, zarządzaniu wartością wypracowaną i metrykach godzinowych, które są podzielone według różnych wymiarów.
 
 Wszystkie kwoty w zawartości są wyświetlane w walucie systemu. Można ustawiać walutę systemową na stronie **Parametry systemowe**.
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 
-Zawartość usługi Power BI **Kierownik praktyk** jest wyświetlana w obszarze roboczym **Zarządzanie projektem**.
+Pakiet zawartości **Kierownik praktyk** usługi Power BI jest wyświetlana w obszarze roboczym **Zarządzanie projektem**.
 
-## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty dostępne w pakiecie zawartości dla usługi Power BI
 
-W poniższej tabeli przedstawiono szczegóły dotyczące mierników, które znajdują się na każdej stronie raportu w pakiecie zawartości dla usługi Power BI **Kierownik praktyk** .
+W poniższej tabeli przedstawiono szczegóły dotyczące mierników, które znajdują się na każdej stronie raportu w pakiecie zawartości **Kierownik praktyk** usługi Power BI.
 
 | Strona raportu       | Metryki |
 |-------------------|---------|
@@ -55,11 +54,11 @@ W poniższej tabeli przedstawiono szczegóły dotyczące mierników, które znaj
 | EVM               | Wskaźnik bilansu kosztów i zgodności z harmonogramem według projektów |
 | Godziny             | <ul><li>Rzeczywiste wykorzystanie do zafakturowania w godzinach w porównaniu z rzeczywistym obciążeniem do zafakturowania w godzinach w porównaniu z godzinami w budżecie</li><li>Rzeczywiste wykorzystanie do zafakturowania w godzinach w porównaniu z rzeczywistym obciążeniem do zafakturowania w godzinach według projektów</li><li>Rzeczywiste wykorzystanie do zafakturowania w godzinach w porównaniu z rzeczywistym obciążeniem do zafakturowania w godzinach według zasobów</li><li>Rzeczywisty współczynnik godzin do zafakturowania według projektów</li><li>Rzeczywisty współczynnik godzin do zafakturowania według zasobów</li></ul> |
 
-Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Można także użyć funkcji eksportu danych źródłowych do wyeksportowania danych podsumowanych w wizualizacji.
+Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w usłudze Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Można także użyć funkcji eksportu danych źródłowych do wyeksportowania danych podsumowanych w wizualizacji.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 
-Następujące dane są używane do wypełniania stron raportów w pakiecie zawartości **Kierownik praktyk** dla usługi Power BI. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).
+Następujące dane są używane do wypełniania stron raportów w pakiecie zawartości **Kierownik praktyk** usługi Power BI. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).
 
 Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 
@@ -119,4 +118,3 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 | Najważniejsza zagregowana miara       | Pole               | opis |
 |---------------------------------|---------------------|-------------|
 | Planowany koszt ukończonego działania | Sum(TotalCostPrice) | Całkowity koszt własny w oszacowaniach dla wszystkich typów transakcji projektu zawierających ukończone zadania. |
-

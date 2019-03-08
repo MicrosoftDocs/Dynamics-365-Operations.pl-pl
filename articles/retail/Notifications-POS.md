@@ -1,13 +1,13 @@
 ---
-title: "Pokazywanie powiadomień o zamówieniach w aplikacji POS"
-description: "W tym temacie opisano, w jaki sposób włączyć powiadomienia o zamówieniach w aplikacji POS i strukturze powiadomień. Docelowo programiści będą mogli rozszerzyć te powiadomienia na operacje wykraczające poza realizację zamówień."
+title: Pokazywanie powiadomień o zamówieniach w aplikacji POS
+description: W tym temacie opisano, w jaki sposób włączyć powiadomienia o zamówieniach w aplikacji POS i strukturze powiadomień. Docelowo programiści będą mogli rozszerzyć te powiadomienia na operacje wykraczające poza realizację zamówień.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 03/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailOperations, RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361344"
 ---
-
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Pokazywanie powiadomień o zamówieniach w aplikacji POS
 
 [!include [banner](includes/banner.md)]
 
-We współczesnym środowisku sprzedaży detalicznej do pracowników sklepu są przypisane różne zadania, takie jak pomoc klientom, wprowadzanie transakcji, przeprowadzanie inwentaryzacji i odbieranie zamówień w sklepie. Klient punktu sprzedaży (POS) do jedna zintegrowana aplikacja, w której pracownicy mogą wykonywać te i wiele innych zadań. Ponieważ w ciągu dnia trzeba wykonywać różne zadania, pracownicy mogą potrzebować powiadomień, jeżeli coś wymaga ich uwagi. Struktura powiadomień w aplikacji POS rozwiązuje ten problem, umożliwiając pracownikom skonfigurowanie powiadomień opartych na rolach. W rozwiązaniu Microsoft Dynamics 365 for Retail z aktualizacją aplikacji 5 te powiadomienia można skonfigurować tylko dla operacji w aplikacji POS.
+We współczesnym środowisku sprzedaży detalicznej do pracowników sklepu są przypisane różne zadania, takie jak pomoc klientom, wprowadzanie transakcji, przeprowadzanie inwentaryzacji i odbieranie zamówień w sklepie. Klient punktu sprzedaży (POS) do jedna zintegrowana aplikacja, w której pracownicy mogą wykonywać te i wiele innych zadań. Ponieważ w ciągu dnia trzeba wykonywać różne zadania, pracownicy mogą potrzebować powiadomień, jeżeli coś wymaga ich uwagi. Struktura powiadomień w aplikacji POS rozwiązuje ten problem, umożliwiając pracownikom skonfigurowanie powiadomień opartych na rolach. W Microsoft Dynamics 365 for Retail z aktualizacją aplikacji 5 te powiadomienia mogą być skonfigurowane tylko w dla operacji POS.
 
 Obecnie system może być pokazywać powiadomienia tylko dla operacji realizacji zamówień. Jednak ponieważ struktura została zaprojektowana jako rozszerzalna, programiści docelowo będą mogli napisać programy obsługi powiadomień dla każdej operacji oraz powodować wyświetlanie tych powiadomień w aplikacji POS.
 
@@ -72,4 +71,3 @@ Poniższa ilustracja przedstawia ustawienia przekazywania zawartości na żywo w
 Na poniższej ilustracji przedstawiono efekt wybrania opcji **Do góry, do prawej** i **Środek** w polu **Wyrównanie zawartości** dla przycisków o różnej wielkości.
 
 ![Zawartość na żywo na przyciskach aplikacji POS](./media/ButtonsWithLiveContent.png "Zawartość na żywo na przyciskach aplikacji POS")
-

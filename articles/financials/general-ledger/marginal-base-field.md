@@ -1,13 +1,13 @@
 ---
-title: "Stawki podatku na podstawie pól Podstawa limitu i Metoda obliczania"
-description: "W tym temacie wyjaśniono, jak wartości w polach Podstawa limitu i Metoda obliczania ustalają stawki podatków w transakcji sprzedaży i zakupu."
+title: Stawki podatku na podstawie pól Podstawa limitu i Metoda obliczania
+description: W tym temacie wyjaśniono, jak wartości w polach Podstawa limitu i Metoda obliczania ustalają stawki podatków w transakcji sprzedaży i zakupu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0128743e608ec56bea2301ac576551065a1ff290
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bf0f8f2e3f553ea181e8cc9ab5b712fce64a89d4
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366427"
 ---
-
 # <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Stawki podatku na podstawie pól Podstawa limitu i Metoda obliczania
 
 [!include [banner](../includes/banner.md)]
@@ -184,7 +183,6 @@ Podstawa limitu: **Kwota faktury z innymi podatkami** Metoda obliczania: **Zakre
 Każda lampa jest obłożona specjalnym cłem równym 5,00. Kwota cła jest dodawana do kwoty netto przed obliczeniem podatku. Kupujesz 8 lamp po 25,00 każda. Kwota netto dla faktury wynosi 200,00. Kwota brutto dla faktury wynosi 200,00 + (8 x 5,00) = 240,00. Podatek jest obliczany w następujący sposób: Łączny podatek = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 10 + 14 = 39,00 Łączne cło = 5,00 x 8 = 40,00 Łączna kwota faktury = 200,00 + 39,00 + 40,00 = 279,00
 
 Aby uzyskać więcej informacji, zobacz [Opcje obliczania Cała kwota i Zakres dla kodów podatku](whole-amount-interval-options-sales-tax-codes.md) i [Wybieranie metody obliczeń podatków w polu podstawy](sales-tax-calculation-methods-origin-field.md)
-
 
 
 

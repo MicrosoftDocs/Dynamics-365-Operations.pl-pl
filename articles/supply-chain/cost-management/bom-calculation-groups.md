@@ -1,13 +1,13 @@
 ---
-title: "Grupy obliczeń BOM"
-description: "Ten artykuł zawiera informacje o grupach obliczania dla list składowych (BOM) oraz ich konfigurowaniu. Aby uruchomić obliczanie BOM, należy utworzyć grupy obliczania i przypisać je do poszczególnych towarów albo utworzyć domyślną grupę obliczania. Ustawienia obliczania z grupy obliczania są następnie używane jako wartości domyślne na stronie Obliczanie BOM podczas obliczania listy składowej."
+title: Grupy obliczeń BOM
+description: Ten artykuł zawiera informacje o grupach obliczania dla list składowych (BOM) oraz ich konfigurowaniu. Aby uruchomić obliczanie BOM, należy utworzyć grupy obliczania i przypisać je do poszczególnych towarów albo utworzyć domyślną grupę obliczania. Ustawienia obliczania z grupy obliczania są następnie używane jako wartości domyślne na stronie Obliczanie BOM podczas obliczania listy składowej.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 55bca29016e06b6ed71c0f1a4aa412401976ebdd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48d1bc67038c6080bb96d524a549deddbc8d4e0b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362885"
 ---
-
 # <a name="bom-calculations-groups"></a>Grupy obliczeń BOM
 
 [!include [banner](../includes/banner.md)]
@@ -96,7 +95,6 @@ Podczas obliczania BOM są generowane komunikaty ostrzegawcze. Można obejrzeć 
 -   Ostrzegaj, jeśli towar w wierszu BOM ma zbyt mały procent zyskowności.
 
 Można zdefiniować wiele grup obliczania BOM, w zależności od wymaganego zróżnicowania komunikatów ostrzegawczych. Na przykład może wystarczyć jedna grupa obliczania BOM, która ma warunki ostrzegawcze dotyczące aktywnego BOM, zerowej ilości składnika i zerowego kosztu składnika. Podczas rozpoczynania obliczania BOM można zastępować warunki ostrzegawcze skojarzone z grupą obliczania BOM. Można również dodawać i usuwać warunki ostrzegawcze. Na przykład jeśli obecna sytuacja nie obejmuje żadnych danych marszruty, można usunąć warunek ostrzegawczy dotyczący aktywnej marszruty. **Uwaga:** Moduł Czas i frekwencja zawiera stronę **Grupy obliczania**, ale ta strona nie ma żadnego powiązania z grupami obliczania BOM. W module Czas i frekwencja można przypisywać pracowników do grup obliczania, które odzwierciedlają grupy pracowników skojarzonych z tym samym przełożonym lub kierownikiem. Obliczanie rejestracji pracowników może być wykonywane automatycznie lub ręcznie przez przełożonego lub kierownika.
-
 
 
 

@@ -1,32 +1,31 @@
 ---
-title: "Zasady akumulacji kosztów i obliczanie narzutu"
-description: "W tym temacie omówiono sposób określania odpowiedniego poziomu podrzędnych składników kosztów i tworzenia reguł akumulacji kosztów, które pasują do schematów sprawozdawczości i monitorowania kosztów w organizacji."
+title: Zasady akumulacji kosztów i obliczanie narzutu
+description: W tym temacie omówiono sposób określania odpowiedniego poziomu podrzędnych składników kosztów i tworzenia reguł akumulacji kosztów, które pasują do schematów sprawozdawczości i monitorowania kosztów w organizacji.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e809cb2cadadc623134805e028de7f2e64dd662f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356146"
 ---
-
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zasady akumulacji kosztów i obliczanie narzutu 
 
 [!include [banner](../includes/banner.md)]
@@ -257,7 +256,7 @@ Po zakończeniu **obliczania kosztów ogólnych** można zaraportować wyniki pr
 
 Hierarchie wymiarów umożliwiają wyświetlanie danych na różnych poziomach agregacji.
 
-Poniżej przedstawiono przykład raportu przestawnego w programie Excel.
+Poniżej przedstawiono przykład raportu Power Pivot w programie Excel.
 
 | **Rachunek zysków i strat** | **Obiekt kosztów** |                |               |               |  **Suma**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
@@ -302,4 +301,3 @@ Wyraźne rozgraniczenie między **alokacją kosztów** a **zasadami akumulacji k
 -  [Wymiary składników kosztów](cost-elements.md)
 -  [Hierarchie wymiarów](dimension-hierarchy.md)
 -  [Obliczanie narzutu](overhead-calculation.md)
-

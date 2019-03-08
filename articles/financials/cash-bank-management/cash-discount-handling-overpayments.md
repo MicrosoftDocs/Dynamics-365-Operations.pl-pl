@@ -1,13 +1,13 @@
 ---
-title: "Obsługa rabatów gotówkowych w przypadku nadpłat"
-description: "Ten artykuł zawiera scenariusze pokazujące sposób obsługi płatności, gdy odbiorca ma rabat gotówkowy, a mimo to nawet nadpłaca."
+title: Obsługa rabatów gotówkowych w przypadku nadpłat
+description: Ten artykuł zawiera scenariusze pokazujące sposób obsługi płatności, gdy odbiorca ma rabat gotówkowy, a mimo to nawet nadpłaca.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b1af073e1f5a2e36be24fe0b57a878c77bff8907
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b664ad6d084c5437111149266a859d7157b22ee9
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364955"
 ---
-
 # <a name="handling-cash-discounts-for-overpayments"></a>Obsługa rabatów gotówkowych w przypadku nadpłat
 
 [!include [banner](../includes/banner.md)]
@@ -135,7 +134,6 @@ Kwota rabatu gotówkowego zostanie zmniejszona z 10,50 do 10,00. Płatność i f
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
 | Rabat gotówkowy (pole **Konto główne rabatów odbiorcy** na stronie **Rabat gotówkowy**) | 10,50 zł        |               |
 | Rozrachunki z odbiorcami                                                                              |              | 10,50 zł         |
-
 
 
 

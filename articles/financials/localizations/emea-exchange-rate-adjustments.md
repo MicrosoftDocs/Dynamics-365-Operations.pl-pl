@@ -1,13 +1,13 @@
 ---
-title: "Korekty kursów wymiany"
-description: "Ten temat zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji."
+title: Korekty kursów wymiany
+description: Ten temat zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: eece22113824fd520568dc46bbd384bda23c3c8d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dbc715a23e14d96e0ac93e47ff793e49fad24b93
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371535"
 ---
-
 # <a name="exchange-rate-adjustments"></a>Korekty kursów wymiany
 
 [!include [banner](../includes/banner.md)]
@@ -95,7 +94,6 @@ W tym przeszacowaniu zauważ, że wpis z 1 stycznia 2013 r., jest bezpośrednim 
 |3-sty-13 | Strona kredytowa | 0 CAD/5000 USD | Niezrealizowana dodatnia różnica kursowa | Przeszacowanie w walucie obcej | Zysk z tytułu dodatnich różnic kursowych | X |   |
 
 Zachowanie systemu jest takie same, niezależnie od tego, czy w opcji **Korekta** w sekcji **Wycofanie transakcji** na stronie **Parametry księgi głównej** ustawiono wartość **Tak**, czy **Nie**.
-
 
 
 

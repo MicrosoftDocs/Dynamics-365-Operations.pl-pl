@@ -1,14 +1,14 @@
 ---
-title: "Zarządzanie cenami w sprzedaży detalicznej"
-description: "W tym temacie opisano pojęcia związane z tworzeniem i zarządzaniem cenami sprzedaży w programie Microsoft Dynamics 365 for Retail."
+title: Zarządzanie cenami w sprzedaży detalicznej
+description: W tym temacie opisano pojęcia związane z tworzeniem i zarządzaniem cenami sprzedaży w Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 04/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -17,19 +17,18 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 28a095588bd3c312a2d1c4b83e668487a209077f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362149"
 ---
-
-# <a name="retail-sales-price-management"></a>Zarządzanie cenami w sprzedaży detalicznej
+# <a name="retail-sales-price-management"></a>Zarządzanie cenami sprzedaży w aplikacji Retail
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje o procesie tworzenia i zarządzania cenami sprzedaży w programie Microsoft Dynamics 365 for Retail. Koncentruje się na pojęciach występujących w tym procesie oraz na wpływie różnych opcji konfiguracji na ceny sprzedaży.
+Ten temat zawiera informacje o procesie tworzenia i zarządzania ceny sprzedaży w Microsoft Dynamics 365 for Retail. Koncentruje się na pojęciach występujących w tym procesie oraz na wpływie różnych opcji konfiguracji na ceny sprzedaży.
 
 ## <a name="terminology"></a>Terminologia
 
@@ -81,7 +80,7 @@ Programy lojalnościowe mają jeszcze dodatkowe funkcje, oprócz cen i rabatów.
 
 ### <a name="catalogs"></a>Katalogi
 
-Niektórzy sprzedawcy detaliczni używają fizycznych lub wirtualnych katalogów w celu reklamowania produktów i ustawiania cen dla określonych grup klientów. W ramach modelu biznesowego prowadzenia działań marketingowych za pośrednictwem katalogu sieci mogą ustawiać zróżnicowane ceny zależnie od katalogu. Program Microsoft Dynamics 365 obsługuje tę funkcjonalność, umożliwiając definiowanie rabatów i cen specyficznych dla katalogów, podobnie jak można definiować rabaty specyficzne dla kanałów lub przynależności. Podczas edytowania katalogu można skojarzyć grupy cenowe z katalogiem, tak jak można je skojarzyć z kanałem, przynależnością lub programem lojalnościowym.
+Niektórzy sprzedawcy detaliczni używają fizycznych lub wirtualnych katalogów w celu reklamowania produktów i ustawiania cen dla określonych grup klientów. W ramach modelu biznesowego prowadzenia działań marketingowych za pośrednictwem katalogu sieci mogą ustawiać zróżnicowane ceny zależnie od katalogu. Microsoft Dynamics 365 obsługuje tę funkcjonalność, umożliwiając definiowanie rabatów i cen specyficznych dla katalogów, podobnie jak można definiować rabaty specyficzne dla kanałów lub przynależności. Podczas edytowania katalogu można skojarzyć grupy cenowe z katalogiem, tak jak można je skojarzyć z kanałem, przynależnością lub programem lojalnościowym.
 
 ### <a name="best-practices-for-price-groups"></a>Najlepsze praktyki dotyczące grup cenowych
 
@@ -127,13 +126,13 @@ Koszulka jest sprzedawana w tej samej cenie (czyli 15 USD) w sklepach na Manhatt
 
 ## <a name="types-of-prices"></a>Typy cen
 
-W programie Microsoft Dynamics 365 cenę produktu można ustawić w trzech miejscach:
+W Microsoft Dynamics 365 cenę produktu można ustawić w trzech miejscach:
 
 - Bezpośrednio w produkcie (cena podstawowa)
 - W umowie handlowej na cenę sprzedaży
 - W korekcie ceny
 
-Cena podstawowa i cena w umowie handlowej należą do podstawowej funkcjonalności programu Microsoft Dynamics 365 i są dostępne nawet wtedy, gdy nie używasz aplikacji Retail. Funkcjonalność korekty ceny jest dostępna tylko w aplikacji Retail. Następny rozdział zawiera więcej informacji na temat każdej z tych opcji ustawiania cen oraz wyjaśnia, jak opcje współpracują ze sobą.
+Cena podstawowa i cena w umowie handlowej należą do podstawowej funkcjonalności Microsoft Dynamics 365 i są dostępne nawet wtedy, gdy nie używasz aplikacji Retail. Funkcjonalność korekty ceny jest dostępna tylko w aplikacji Retail. Następny rozdział zawiera więcej informacji na temat każdej z tych opcji ustawiania cen oraz wyjaśnia, jak opcje współpracują ze sobą.
 
 ## <a name="setting-prices"></a>Ustawienie cen
 
@@ -149,7 +148,7 @@ Mimo iż jednostka cenowa nie jest popularnym scenariuszem w sprzedaży detalicz
 
 ### <a name="sales-price-trade-agreement"></a>Umowa handlowa na cenę sprzedaży
 
-Za pomocą arkusza umów handlowych można tworzyć umowy handlowe na cenę sprzedaży dla każdego produktu. W programie Microsoft Dynamics 365 istnieją trzy zakresy odbiorców dla umów handlowych na cenę sprzedaży: **Tabela**, **Grupa** i **Wszystko**. Zakres odbiorców decyduje o odbiorcach, do których ma zastosowanie konkretna umowa handlowa na cenę sprzedaży.
+Za pomocą arkusza umów handlowych można tworzyć umowy handlowe na cenę sprzedaży dla każdego produktu. W Microsoft Dynamics 365 istnieją trzy zakresy odbiorców dla umów handlowych na cenę sprzedaży: **Tabela**, **Grupa** i **Wszystko**. Zakres odbiorców decyduje o odbiorcach, do których ma zastosowanie konkretna umowa handlowa na cenę sprzedaży.
 
 Umowa handlowa na cenę sprzedaży o zakresie **Tabela** jest przeznaczona dla pojedynczego odbiorcy ustawionego bezpośrednio w umowie handlowej. Ten scenariusz nie jest typowym scenariuszem sprzedaży detalicznej firma-konsument (B2C). Jednak jeśli wystąpi, aparat kalkulacji cen detalicznych używa do wyznaczania ceny umów handlowych o zakresie **Tabela**.
 
@@ -202,17 +201,17 @@ Aby łatwo aktualizować ceny różnych produktów należących do różnych kat
 
 ## <a name="best-practices"></a>Najlepsze praktyki
 
-Program Microsoft SQL Server Express jest często używane dla baz danych kanałów ze względu na koszty (jest darmowy). Należy pamiętać, że program SQL Server Express ma ograniczenia sprzętowe i ograniczenia dotyczące rozmiaru danych. Przy złym planowaniu można szybko wyczerpać limity rozmiaru danych programu SQL Server Express. Uwagi te odnoszą się nie tylko do cen, ale również do innych obszarów produktu. Poniżej przedstawiono kilka najlepszych praktyk, które mogą pomóc zmniejszyć rozmiar danych:
+Microsoft SQL Server Express jest często używane dla baz danych kanałów ze względu na koszty (jest darmowy). Należy pamiętać, że program SQL Server Express ma ograniczenia sprzętowe i ograniczenia dotyczące rozmiaru danych. Przy złym planowaniu można szybko wyczerpać limity rozmiaru danych programu SQL Server Express. Uwagi te odnoszą się nie tylko do cen, ale również do innych obszarów produktu. Poniżej przedstawiono kilka najlepszych praktyk, które mogą pomóc zmniejszyć rozmiar danych:
 
 - Jeśli korzystasz z umów handlowych, po zmianie cen należy wygasić stare umowy handlowe, ustawiając dla nich datę końcową. To rozwiązanie pomaga zmniejszyć liczbę umów handlowych tworzonych wraz z upływem czasu, które są przechowywane w bazach danych kanałów. Pomaga również zmniejszyć ilość danych, z którymi musi pracować algorytm obliczania cen.
-- Jeśli ceny są różne dla wariantów produktu, rozważ używanie ceny podstawowej produktu jako ceny najpopularniejszego wariantu. Następnie używaj umów handlowych tylko do cen wariantów, które są wyjątkami. Ta metoda umożliwia zredukowanie liczby rekordów umów handlowych. Ponieważ bardzo łatwo jest importować dane do programu Microsoft Dynamics 365, może się pojawić pokusa zaimportowania umowy handlowej dla każdego wariantu każdego produktu. Jednak takie podejście może spowodować powstanie wielu umów handlowych mających tę samą wartość. W związku z tym niepotrzebnie zwiększy to ilość zgromadzonych danych.
+- Jeśli ceny są różne dla wariantów produktu, rozważ używanie ceny podstawowej produktu jako ceny najpopularniejszego wariantu. Następnie używaj umów handlowych tylko do cen wariantów, które są wyjątkami. Ta metoda umożliwia zredukowanie liczby rekordów umów handlowych. Ponieważ bardzo łatwo jest importować dane do Microsoft Dynamics 365, może się pojawić pokusa zaimportowania umowy handlowej dla każdego wariantu każdego produktu. Jednak takie podejście może spowodować powstanie wielu umów handlowych mających tę samą wartość. W związku z tym niepotrzebnie zwiększy to ilość zgromadzonych danych.
 - Aplikacja Retail przetwarza ceny specyficzne dla wariantów w kolejności od najbardziej do najmniej specyficznych. Jeśli wymiar produktu nie ma wpływu na cenę, nie trzeba dla niego definiować umów handlowych. Na przykład produkt jest dostępny w trzech kolorach i czterech rozmiarach, jednak cena różni się tylko w zależności od rozmiaru. Jeśli zdefiniujesz umowę handlową dla każdego wariantu, utworzysz 12 rekordów. Zamiast tego lepiej zdefiniować umowę handlową tylko dla każdego rozmiaru, a pole wymiaru Kolor pozostawić puste. W takim przypadku powstaną tylko cztery rekordy.
 
     Alternatywnie, jeśli nie każda wartość wymiaru skutkuje inną ceną, można zdefiniować jedną umowę handlową dla produktu głównego, a wszystkie wymiary produktu pozostawić puste. Następnie można zdefiniować osobną umowę handlową tylko dla każdej wartości wymiaru, która powoduje inną cenę. Na przykład jeśli rozmiar XXL ma wyższą cenę, ale wszystkie pozostałe rozmiary mają taką samą cenę, potrzebujesz tylko dwóch umów handlowych: jedną dla produktu głównego i jedną dla rozmiaru XXL.
 
 ## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Cen zawierające podatek a ceny bez podatku
 
-Podczas ustawiania cen sprzedaży w programie Microsoft Dynamics 365 nie określasz, czy wprowadzana wartość ceny obejmuje podatek, czy nie. Wartość mówi ogólnie o cenie. Jednak ustawienie **Cena zawiera podatek** dostępne w kanałach sprzedaży detalicznej pozwala skonfigurować kanały sprzedaży detalicznej, tak aby uwzględniały lub nie uwzględniały podatku w cenach. To ustawienie konfiguruje się w kanale i może przybierać różne wartości nawet w jednej firmie.
+Podczas ustawiania cen sprzedaży w Microsoft Dynamics 365 nie określasz, czy wprowadzana wartość ceny obejmuje podatek, czy nie. Wartość mówi ogólnie o cenie. Jednak ustawienie **Cena zawiera podatek** dostępne w kanałach sprzedaży detalicznej pozwala skonfigurować kanały sprzedaży detalicznej, tak aby uwzględniały lub nie uwzględniały podatku w cenach. To ustawienie konfiguruje się w kanale i może przybierać różne wartości nawet w jednej firmie.
 
 Jeśli pracujesz z cenami zawierającymi, jak i niezawierającymi podatku, jest bardzo ważne, aby poprawnie ustawić ceny, ponieważ łączna kwota płacona przez odbiorcę zmieni się, jeżeli w kanale zmienisz wartość ustawienia **Cena zawiera podatek**.
 
@@ -232,4 +231,3 @@ Ponadto **tylko** aparat kalkulacji cen detalicznych obsługuje następujące fu
 
 - Cena bazuje na wymiarach produktów, w kolejności od ceny najbardziej specyficznej dla wariantu, przez najmniej specyficzną dla wariantu, aż do ceny produktu głównego. Cena ustawiana za pomocą dwóch wymiarów produktu (na przykład Kolor i Rozmiar) jest wykorzystywana przed ceną ustawianą za pomocą tylko jednego wymiaru produktu (np. Rozmiar).
 - Jedna grupa cenowa może służyć do kontrolowania cen i rabatów.
-
