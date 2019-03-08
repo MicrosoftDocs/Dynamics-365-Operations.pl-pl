@@ -1,60 +1,58 @@
 ---
-title: "Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (17 września 2018 r.)"
-description: "W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent Core HR."
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (17 września 2018 r.)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
 ms.openlocfilehash: 6586761fc62c13c701e8a8f61e15eedc66e2f751
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305807"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a><span data-ttu-id="49c75-103">Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (17 września 2018 r.)</span><span class="sxs-lookup"><span data-stu-id="49c75-103">What's new or changed in Dynamics 365 for Talent Core HR (September 17, 2018)</span></span>
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a><span data-ttu-id="fd06f-103">Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (17 września 2018 r.)</span><span class="sxs-lookup"><span data-stu-id="fd06f-103">What's new or changed in Dynamics 365 for Talent Core HR (September 17, 2018)</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="49c75-104">**Kompilacja 8.1.154.0**</span><span class="sxs-lookup"><span data-stu-id="49c75-104">**Build 8.1.154.0**</span></span>
+<span data-ttu-id="fd06f-104">**Kompilacja 8.1.154.0**</span><span class="sxs-lookup"><span data-stu-id="fd06f-104">**Build 8.1.154.0**</span></span>
 
-<span data-ttu-id="49c75-105">W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Core HR.</span><span class="sxs-lookup"><span data-stu-id="49c75-105">This topic describes features that are either new or changed in Core HR.</span></span>
+<span data-ttu-id="fd06f-105">W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Core HR.</span><span class="sxs-lookup"><span data-stu-id="fd06f-105">This topic describes features that are either new or changed in Core HR.</span></span>
 
-## <a name="leave-and-absence--accrue-time-based-on-hours-worked"></a><span data-ttu-id="49c75-106">Urlopy i nieobecności — naliczanie czasu na podstawie liczby przepracowanych godzin</span><span class="sxs-lookup"><span data-stu-id="49c75-106">Leave and Absence – Accrue time based on hours worked</span></span>
+## <a name="leave-and-absence--accrue-time-based-on-hours-worked"></a><span data-ttu-id="fd06f-106">Urlopy i nieobecności — naliczanie czasu na podstawie liczby przepracowanych godzin</span><span class="sxs-lookup"><span data-stu-id="fd06f-106">Leave and Absence – Accrue time based on hours worked</span></span>
 
-<span data-ttu-id="49c75-107">Dodano nowy typ naliczania do planów urlopów.</span><span class="sxs-lookup"><span data-stu-id="49c75-107">A new accrual type has been added to Leave plans.</span></span> <span data-ttu-id="49c75-108">Harmonogram naliczania może teraz być oparty na liczbie przepracowanych miesięcy lub liczbie przepracowanych godzin.</span><span class="sxs-lookup"><span data-stu-id="49c75-108">The accrual schedule can now be based on months of service or hours worked.</span></span> <span data-ttu-id="49c75-109">Aby uzyskać więcej informacji, zobacz [Naliczanie czasu wolnego na podstawie liczby przepracowanych godzin](leave-accrue-hours-worked.md).</span><span class="sxs-lookup"><span data-stu-id="49c75-109">For more information, see [Accrue time off based on hours worked](leave-accrue-hours-worked.md).</span></span>
+<span data-ttu-id="fd06f-107">Dodano nowy typ naliczania do planów urlopów.</span><span class="sxs-lookup"><span data-stu-id="fd06f-107">A new accrual type has been added to Leave plans.</span></span> <span data-ttu-id="fd06f-108">Harmonogram naliczania może teraz być oparty na liczbie przepracowanych miesięcy lub liczbie przepracowanych godzin.</span><span class="sxs-lookup"><span data-stu-id="fd06f-108">The accrual schedule can now be based on months of service or hours worked.</span></span> <span data-ttu-id="fd06f-109">Aby uzyskać więcej informacji, zobacz [Naliczanie czasu wolnego na podstawie liczby przepracowanych godzin](leave-accrue-hours-worked.md).</span><span class="sxs-lookup"><span data-stu-id="fd06f-109">For more information, see [Accrue time off based on hours worked](leave-accrue-hours-worked.md).</span></span>
 
-## <a name="platform-update-18"></a><span data-ttu-id="49c75-110">Aktualizacja platformy Update 18</span><span class="sxs-lookup"><span data-stu-id="49c75-110">Platform update 18</span></span>
+## <a name="platform-update-18"></a><span data-ttu-id="fd06f-110">Aktualizacja platformy Update 18</span><span class="sxs-lookup"><span data-stu-id="fd06f-110">Platform update 18</span></span>
 
-<span data-ttu-id="49c75-111">Aplikacja Talent zawiera teraz elementy z aktualizacji platformy 18.</span><span class="sxs-lookup"><span data-stu-id="49c75-111">Platform update 18 is now part of the Talent release.</span></span> 
+<span data-ttu-id="fd06f-111">Aplikacja Talent zawiera teraz elementy z aktualizacji platformy 18.</span><span class="sxs-lookup"><span data-stu-id="fd06f-111">Platform update 18 is now part of the Talent release.</span></span> 
 
--   <span data-ttu-id="49c75-112">Pola obowiązkowe i inne można teraz ukrywać za pośrednictwem personalizacji.</span><span class="sxs-lookup"><span data-stu-id="49c75-112">Mandatory and other fields can be hidden via personalization.</span></span> <span data-ttu-id="49c75-113">Pozwala to użytkownikowi utworzyć uproszczone środowisko, w którym nie są wyświetlane wymagane pola o wartościach ustawianych domyślnie przez logikę biznesową.</span><span class="sxs-lookup"><span data-stu-id="49c75-113">This allows a user to create a simplified experience where mandatory fields that are defaulted by business logic are not shown.</span></span> <span data-ttu-id="49c75-114">Wymagane pola ukryte również są tymczasowo pokazywane, gdy są puste w trakcie próby zapisu.</span><span class="sxs-lookup"><span data-stu-id="49c75-114">Hidden mandatory fields are also temporarily made visible if they are empty when a save is attempted.</span></span>
+-   <span data-ttu-id="fd06f-112">Pola obowiązkowe i inne można teraz ukrywać za pośrednictwem personalizacji.</span><span class="sxs-lookup"><span data-stu-id="fd06f-112">Mandatory and other fields can be hidden via personalization.</span></span> <span data-ttu-id="fd06f-113">Pozwala to użytkownikowi utworzyć uproszczone środowisko, w którym nie są wyświetlane wymagane pola o wartościach ustawianych domyślnie przez logikę biznesową.</span><span class="sxs-lookup"><span data-stu-id="fd06f-113">This allows a user to create a simplified experience where mandatory fields that are defaulted by business logic are not shown.</span></span> <span data-ttu-id="fd06f-114">Wymagane pola ukryte również są tymczasowo pokazywane, gdy są puste w trakcie próby zapisu.</span><span class="sxs-lookup"><span data-stu-id="fd06f-114">Hidden mandatory fields are also temporarily made visible if they are empty when a save is attempted.</span></span>
 
--   <span data-ttu-id="49c75-115">W aktualizacji platformy 18 klient internetowy aplikacji Talent prezentuje obiekty graficzne w sposób zgodny z kanonem wizualizacji Microsoft Fluent.</span><span class="sxs-lookup"><span data-stu-id="49c75-115">In Platform update 18, the Talent web client now aligns its visuals with Microsoft Fluent Design.</span></span>
+-   <span data-ttu-id="fd06f-115">W aktualizacji platformy 18 klient internetowy aplikacji Talent prezentuje obiekty graficzne w sposób zgodny z kanonem wizualizacji Microsoft Fluent.</span><span class="sxs-lookup"><span data-stu-id="fd06f-115">In Platform update 18, the Talent web client now aligns its visuals with Microsoft Fluent Design.</span></span>
 
-    -   <span data-ttu-id="49c75-116">Gdy pola są w trybie odczytu, można po prostu zaznaczyć opcję edycji w polu, aby przełączyć formularz na edytowanie.</span><span class="sxs-lookup"><span data-stu-id="49c75-116">When fields are in “read mode”, you can simply select the edit option in the fields to switch the form to edit.</span></span>
+    -   <span data-ttu-id="fd06f-116">Gdy pola są w trybie odczytu, można po prostu zaznaczyć opcję edycji w polu, aby przełączyć formularz na edytowanie.</span><span class="sxs-lookup"><span data-stu-id="fd06f-116">When fields are in “read mode”, you can simply select the edit option in the fields to switch the form to edit.</span></span>
 
-    -   <span data-ttu-id="49c75-117">Zmieniono sposób wyświetlania pól w trybie odczytu.</span><span class="sxs-lookup"><span data-stu-id="49c75-117">Changes in how fields display when in read mode.</span></span>
+    -   <span data-ttu-id="fd06f-117">Zmieniono sposób wyświetlania pól w trybie odczytu.</span><span class="sxs-lookup"><span data-stu-id="fd06f-117">Changes in how fields display when in read mode.</span></span>
 
-    -   <span data-ttu-id="49c75-118">Nagłówki w obszarach roboczych i na stronach są pogrubione.</span><span class="sxs-lookup"><span data-stu-id="49c75-118">Headings in workspaces and pages are bold.</span></span>
+    -   <span data-ttu-id="fd06f-118">Nagłówki w obszarach roboczych i na stronach są pogrubione.</span><span class="sxs-lookup"><span data-stu-id="fd06f-118">Headings in workspaces and pages are bold.</span></span>
 
--   <span data-ttu-id="49c75-119">Poprawiono zachowanie funkcji wyszukiwania bez zastępowania.</span><span class="sxs-lookup"><span data-stu-id="49c75-119">The behavior of non-replacing lookups has been improved.</span></span> <span data-ttu-id="49c75-120">Aby uzyskać więcej informacji, zobacz [Ulepszone zachowanie wyszukiwań bez zastępowania](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0).</span><span class="sxs-lookup"><span data-stu-id="49c75-120">For more information, see [Improved behavior for non-replacing lookups](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0).</span></span>
+-   <span data-ttu-id="fd06f-119">Poprawiono zachowanie funkcji wyszukiwania bez zastępowania.</span><span class="sxs-lookup"><span data-stu-id="fd06f-119">The behavior of non-replacing lookups has been improved.</span></span> <span data-ttu-id="fd06f-120">Aby uzyskać więcej informacji, zobacz [Ulepszone zachowanie wyszukiwań bez zastępowania](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0).</span><span class="sxs-lookup"><span data-stu-id="fd06f-120">For more information, see [Improved behavior for non-replacing lookups](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0).</span></span>
 
-## <a name="bug-fixes"></a><span data-ttu-id="49c75-121">Poprawki błędów</span><span class="sxs-lookup"><span data-stu-id="49c75-121">Bug fixes</span></span>
+## <a name="bug-fixes"></a><span data-ttu-id="fd06f-121">Poprawki błędów</span><span class="sxs-lookup"><span data-stu-id="fd06f-121">Bug fixes</span></span>
 
-<span data-ttu-id="49c75-122">Ta wersja zawiera kilka dodatkowych poprawek błędów, w tym ograniczenie odwołań do ustaw ACA i ADA oraz deklaracji I9 tylko dla firm w Stanach Zjednoczonych.</span><span class="sxs-lookup"><span data-stu-id="49c75-122">This release includes several additional bug fixes, including references to ACA, ADA, and I9 now will only be enabled in US companies.</span></span>
-
+<span data-ttu-id="fd06f-122">Ta wersja zawiera kilka dodatkowych poprawek błędów, w tym ograniczenie odwołań do ustaw ACA i ADA oraz deklaracji I9 tylko dla firm w Stanach Zjednoczonych.</span><span class="sxs-lookup"><span data-stu-id="fd06f-122">This release includes several additional bug fixes, including references to ACA, ADA, and I9 now will only be enabled in US companies.</span></span>
