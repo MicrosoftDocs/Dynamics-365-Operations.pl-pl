@@ -1,13 +1,13 @@
 ---
-title: "Instalowanie projektanta układów aplikacji Retail Point of Sale (POS)"
-description: "Za pomocą projektanta obsługiwanego jednym kliknięciem można projektować różne układy do programów Retail Modern POS (MPOS) and Cloud POS w orientacji poziomej i trybie pionowej dla różnych sklepów, kas, kasjerów i menedżerów."
+title: Instalowanie projektanta układów aplikacji Retail Point of Sale (POS)
+description: Za pomocą projektanta obsługiwanego jednym kliknięciem można projektować różne układy do programów Retail Modern POS (MPOS) and Cloud POS w orientacji poziomej i trybie pionowej dla różnych sklepów, kas, kasjerów i menedżerów.
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 4c647f49101dcbbe7dd1feac2dd9aad5c6dd5bcc
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327649"
 ---
-
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Instalowanie projektanta układów aplikacji Retail Point of Sale (POS)
 
 [!include [banner](includes/banner.md)]
@@ -41,7 +40,7 @@ O wyglądzie interfejsu graficznego projektowania programu MPOS lub Cloud POS de
 2. Zaznacz dowolny układu, który ma typ aplikacji **Modern POS for Windows** lub **Cloud POS**, a następnie kliknij przycisk **Projektant układu**.
 3. Na pasku powiadomień, który pojawia się u dołu okna programu Internet Explorer, kliknij przycisk **Otwórz** i zainstaluj projektanta obsługiwanego jednym kliknięciem. (Pasek powiadomień może pojawiać się w innych miejscach w innych przeglądarkach).
 4. W wyświetlonym oknie komunikatu **Uruchomienie aplikacji - ostrzeżenie zabezpieczeń** kliknij przycisk **Uruchom** i zainstaluj hosta projektanta programu Retail. Wskaźnik postępu pokazuje postęp procesu instalacji.
-5. Po zakończeniu instalacji przejdź do strony **Zaloguj**, wprowadź nazwę i hasło użytkownika programu Microsoft Dynamics 365 for Retail, a następnie kliknij przycisk **Zaloguj**, aby uruchomić projektanta.
+5. Po zakończeniu instalacji na stronie **logowania** wprowadź nazwę użytkownika programu Microsoft Dynamics 365 for Retail i hasło, a następnie kliknij **Zaloguj**, aby uruchomić projektanta.
 6. Po zweryfikowaniu Twoich poświadczeń i uruchomieniu projektanta możesz zaprojektować własny układ albo zmodyfikować istniejący.
 
     [![Układ w projektancie obsługiwanym jednym kliknięciem](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
@@ -53,15 +52,14 @@ O wyglądzie interfejsu graficznego projektowania programu MPOS lub Cloud POS de
     **Rozwiązania:**
 
     - W programie Internet Explorer upewnij się, że blokada wyskakujących okienek jest wyłączona dla tej witryny. Kliknij kolejno opcje **Ustawienia** &gt; **Opcje** &gt; **Prywatność** &gt; **Blokuj wyskakujące okienka** i w razie potrzeby zmień ustawienie.
-    - W programie Internet Explorer dodaj adres URL programu Dynamics 365 for Retail do zaufanych witryn. Kliknij kolejno opcje **Ustawienia** &gt; **Opcje** &gt; **Zabezpieczenia** &gt; **Zaufane witryny** &gt; **Witryny** &gt; **Dodaj**.
+    - W programie Internet Explorer dodaj adres URL usługi Dynamics 365 for Retail do swoich stron zaufanych. Kliknij kolejno opcje **Ustawienia** &gt; **Opcje** &gt; **Zabezpieczenia** &gt; **Zaufane witryny** &gt; **Witryny** &gt; **Dodaj**.
 
 - Program się nie uruchamia i wyświetlana jest instrukcja o skontaktowanie się z dostawcą.
 
-    **Rozwiązanie:** W programie Internet Explorer dodaj adres URL programu Dynamics 365 for Retail do zaufanych witryn. Kliknij kolejno opcje **Ustawienia** &gt; **Opcje** &gt; **Zabezpieczenia** &gt; **Zaufane witryny** &gt; **Witryny** &gt; **Dodaj**.
+    **Rozwiązanie:** W programie Internet Explorer dodaj adres URL usługi Dynamics 365 for Retail do swoich stron zaufanych. Kliknij kolejno opcje **Ustawienia** &gt; **Opcje** &gt; **Zabezpieczenia** &gt; **Zaufane witryny** &gt; **Witryny** &gt; **Dodaj**.
 
 **Znany problem:** Projektant nie działa poprawnie w przeglądarkach Google Chrome i Mozilla Firefox. Pracujemy nad rozwiązaniem tego problemu.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Konfigurowanie, pobieranie, instalowanie i aktywowanie aplikacji Retail Modern POS](retail-modern-pos-device-activation.md)
-
+[Konfigurowanie, pobieranie, instalowanie i aktywacja Retail Modern POS](retail-modern-pos-device-activation.md)

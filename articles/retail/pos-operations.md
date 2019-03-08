@@ -1,40 +1,39 @@
 ---
-title: "Operacje online i offline w punkcie sprzedaży (POS)"
-description: "Ten temat zawiera szczegółowe informacje na temat operacji dotyczących punktu sprzedaży (POS) w rozwiązaniu Microsoft Dynamics 365 for Retail. Określa, gdzie w aplikacji można wywołać operacje oraz czy są dostępne w trybie offline.."
+title: Operacje online i offline w punkcie sprzedaży (POS)
+description: Ten temat zawiera szczegółowe informacje dotyczące operacji punktu sprzedaży (POS) w Microsoft Dynamics 365 for Retail. Określa, gdzie w aplikacji można wywołać operacje oraz czy są dostępne w trybie offline..
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353823"
 ---
-
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
 [!include [banner](includes/banner.md)]
 
-Większość akcji wykonywanych przez użytkowników punktu sprzedaży (POS) jest uznawanych za operacje. Do konfigurowania i zarządzania operacjami służy zaplecze rozwiązania Microsoft Dynamics 365 for Retail. Do siatki przycisków punktu sprzedaży można dodać wiele operacji. Użytkownicy mogą następnie wybrać przyciski w celu wywołania operacji i wykonania przypisanych do nich funkcji. Inne operacje są częścią głównej aplikacji POS i są wywoływane za pomocą przycisków ekranowych lub jako część innych przepływów pracy lub procesów.
+Większość akcji wykonywanych przez użytkowników punktu sprzedaży (POS) jest uznawanych za operacje. Operacje są skonfigurowane i zarządzania za pomocą środowiska zaplecza Microsoft Dynamics 365 for Retail. Do siatki przycisków punktu sprzedaży można dodać wiele operacji. Użytkownicy mogą następnie wybrać przyciski w celu wywołania operacji i wykonania przypisanych do nich funkcji. Inne operacje są częścią głównej aplikacji POS i są wywoływane za pomocą przycisków ekranowych lub jako część innych przepływów pracy lub procesów.
 
-Poniższa tabela zawiera szczegóły dotyczące operacji dostępnych w nowoczesnym punkcie sprzedaży detalicznej i punkcie sprzedaży w chmurze dla rozwiązania Dynamics 365 for Retail. Tabela umożliwia także określenie, gdzie w aplikacji można wywołać operacje oraz czy są dostępne, gdy punkt sprzedaży działa w trybie offline..
+W poniższej tabeli przedstawiono szczegóły dotyczące operacji, które są dostępne w Retail Modern POS i Cloud POS w Dynamics 365 for Retail. Tabela umożliwia także określenie, gdzie w aplikacji można wywołać operacje oraz czy są dostępne, gdy punkt sprzedaży działa w trybie offline..
 
-Niektóre operacje nie są aktualnie dostępne w nowoczesnym punkcie sprzedaży detalicznej i punkcie sprzedaży w chmurze dla rozwiązania Dynamics 365 for Retail Niektóre z tych operacji zależą od ustawień regionalnych,, które wymagają dodatkowych rozszerzeń i konfiguracji. Inne to funkcje systemu Microsoft Dynamics AX 2012, które nie są aktualnie obsługiwane.
+Niektóre operacje nie są obecnie dostępne w Retail Modern POS lub Cloud POS dla Dynamics 365 for Retail. Niektóre z tych operacji zależą od ustawień regionalnych,, które wymagają dodatkowych rozszerzeń i konfiguracji. Inne to funkcje systemu Microsoft Dynamics AX 2012, które nie są aktualnie obsługiwane.
 
 Poniższe kolumny określają, gdzie można wywołać informacje:
 
@@ -199,4 +198,3 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 § Gdy punkt sprzedaży działa w trybie offline do zwrotu można wycofać tylko transakcje w bieżącej bazie danych offline.
 
 \*\* Gdy punkt sprzedaży działa w trybie offline, w arkuszu są widoczne tylko transakcje w bazie danych bieżącego kanału offline.
-

@@ -1,13 +1,13 @@
 ---
-title: "Planowanie możliwości obciążenia pracą"
-description: "W tym temacie omówiono konfigurowanie i planowanie możliwości obciążenia pracą dla pracowników w magazynie lub dla całego magazynu."
+title: Planowanie możliwości obciążenia pracą
+description: W tym temacie omówiono konfigurowanie i planowanie możliwości obciążenia pracą dla pracowników w magazynie lub dla całego magazynu.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSWorkloadCapacity
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317299"
 ---
-
 # <a name="schedule-workload-capacity"></a>Planowanie możliwości obciążenia pracą
 
 [!include[banner](../includes/banner.md)]
@@ -81,4 +80,3 @@ Jeśli te informacje nie zostały określone poprawnie, zostanie wyświetlony ko
 3. W polu **Typ zamówienia** zaznacz opcję **Planowane i potwierdzone**, **Planowane** lub **Potwierdzone**, aby wskazać typ zamówień, których mają dotyczyć prognozy w raporcie.
 4. W polu **Typ obciążenia pracą** wybierz typ obciążenia i w ten sposób wskazać, czy prognoza możliwości obciążenia ma dotyczyć objętości, czy masy.
 5. W polu **Możliwości obciążenia pracą** wybierz konfigurację możliwości obciążenia pracą.
-

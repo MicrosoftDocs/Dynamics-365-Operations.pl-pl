@@ -1,13 +1,13 @@
 ---
-title: "Obiekty kosztów"
-description: "Ten artykuł zawiera informacje o obiektach kosztów. Wyjaśniono w nim też sposób kumulowania kosztów i ilości. Obiekt kosztów to jednostka, dla której są kumulowane koszty i ilości. Jednostką obiektu kosztów może być produkt lub wariant produktu, takich jak wariant pod względem koloru i stylu."
+title: Obiekty kosztów
+description: Ten artykuł zawiera informacje o obiektach kosztów. Wyjaśniono w nim też sposób kumulowania kosztów i ilości. Obiekt kosztów to jednostka, dla której są kumulowane koszty i ilości. Jednostką obiektu kosztów może być produkt lub wariant produktu, takich jak wariant pod względem koloru i stylu.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 275855f2fb4d32df91449d7ebb9ad9ba2bd3f36b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d35d7971806e2f711d84f172bfacd60edf9f9225
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338436"
 ---
-
 # <a name="cost-objects"></a>Obiekty kosztów
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ W poniższej tabeli przedstawiono, co jest przedmiotem kosztu i co jest obiektem
 [Nowości i zmiany](../../fin-and-ops/get-started/whats-new-changed.md)
 
 [Wpisy kosztów](cost-entries.md)
-
 
 
 

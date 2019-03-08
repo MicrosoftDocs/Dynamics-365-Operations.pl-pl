@@ -1,13 +1,13 @@
 ---
-title: "Przepływ pracy dotyczący wydatków"
-description: "W tym temacie wyjaśniono, jak korzystać z systemu przepływu pracy w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations w celu skonfigurowania procesu kontroli dla raportu wydatków w funkcji Zarządzanie wydatkami."
+title: Przepływ pracy dotyczący wydatków
+description: W tym temacie wyjaśniono, jak korzystać z systemu przepływu pracy w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations w celu skonfigurowania procesu kontroli dla raportu wydatków w funkcji Zarządzanie wydatkami.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WorkflowtableListPageRnr
 audience: Application User
 ms.reviewer: shylaw
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 037a6ae00b7d559f79860901f0cb2ad6ddddd7aa
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6ee607f723659a5b6ecd655ba4fdfca35a4c582d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310123"
 ---
-
 # <a name="expense-workflow"></a>Przepływ pracy dotyczący wydatków
 
 [!include [banner](../includes/banner.md)]
 
-Systemu przepływu pracy w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations można użyć w celu skonfigurowania procesu kontroli dla raportu wydatków w funkcji Zarządzanie wydatkami. Można skonfigurować przepływ pracy, który używa następujących kryteriów do określenia osoby zatwierdzającej raporty wydatków:
+Można korzystać z systemu przepływu pracy w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations w celu skonfigurowania procesu kontroli dla raportu wydatków w funkcji Zarządzanie wydatkami. Można skonfigurować przepływ pracy, który używa następujących kryteriów do określenia osoby zatwierdzającej raporty wydatków:
 
 - Hierarchia raportowania pracownika i wstępnie zdefiniowane limity zatwierdzenia
 - Wielopoziomowe zatwierdzanie, które obsługuje osoby zatwierdzające tymczasowo i osobę ostatecznie zatwierdzającą
@@ -58,4 +57,3 @@ Poniżej przedstawiono przykładowy przepływ pracy zarządzania wydatkami w odn
 Po zweryfikowaniu tych wymagań raport z wydatków jest księgowany.
 
 Po zaksięgowaniu raportu z wydatków płatność jest autoryzowana dla raportu z wydatków, a pracownik otrzymuje zwrot.
-

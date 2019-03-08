@@ -1,13 +1,13 @@
 ---
-title: "Zwalnianie wierszy BOM i wierszy formuły do magazynu"
-description: "W tym temacie opisano proces zwalniania surowca dla wierszy BOM i formuły do magazynu."
+title: Zwalnianie wierszy BOM i wierszy formuły do magazynu
+description: W tym temacie opisano proces zwalniania surowca dla wierszy BOM i formuły do magazynu.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -16,15 +16,14 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 8ccdb71f49652d6cca6ced2e9e9764d9ad0fffd8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343151"
 ---
-
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Zwalnianie wierszy BOM i wierszy formuły do magazynu
 
 [!include [banner](../includes/banner.md)]
@@ -99,4 +98,3 @@ Surowiec można zwolnić dla częściowej ilości wyrobów gotowych lub w okreś
     Dostępne jednostki są zdefiniowane w identyfikatorze grupy sekwencji jednostki wyrobu gotowego.
 
     Przykładowo, wyrób gotowy ma następującą konwersję jednostki z funtów (lbs.) na palety (PL): 1 PL = 100 funtów. Aby utworzyć zlecenie produkcyjne na 10 000 funtów wyrobów gotowych można zwolnić surowce na planowaną do produkcji liczbę palet. Wybierz **PL** jako jednostkę, a następnie wybierz odpowiednią liczbę w polu **Ilość**.
-

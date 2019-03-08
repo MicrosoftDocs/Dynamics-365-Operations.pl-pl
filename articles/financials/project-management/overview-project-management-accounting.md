@@ -1,13 +1,13 @@
 ---
-title: "Zarządzanie projektami i ich księgowanie"
-description: "Funkcji zarządzanie projektami i ich księgowania można używać w wielu branżach w celu świadczenia usług, wytwarzania produktów lub uzyskiwania rezultatów."
+title: Zarządzanie projektami i ich księgowanie
+description: Funkcji zarządzanie projektami i ich księgowania można używać w wielu branżach w celu świadczenia usług, wytwarzania produktów lub uzyskiwania rezultatów.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311342"
 ---
-
 # <a name="project-management-and-accounting"></a>Zarządzanie projektami i ich księgowanie
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Funkcje zarządzania projektami i księgowania można wykorzystywać w różnych
 
 [![Projekty w różnych branżach](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-W biurze obsługi można użyć biletu do opisania zestawu działań wymaganych do rozwiązania zgłoszonego problemu. Firmy konsultingowe, takie jak organizacje zarządzające, reklamowe lub świadczące usługi w zakresie porad technicznych, nazywają swoje działania projektami. W marketingu kampania oznacza pakiet pracy, która musi zostać dostarczona. W produkcji na podstawie projektu, zlecenie produkcyjne dotyczy różnych prac, które muszą być wykonane w celu wyprodukowania gotowego towaru. Niezależnie od nazwy tych projektów, obejmują one zasoby, harmonogramy i koszty, a funkcje zarządzania projektem i księgowania w programie Microsoft Dynamics 365 for Finance and Operations pomagają w planowaniu, wykonaniu i analizie tych projektów.
+W biurze obsługi można użyć biletu do opisania zestawu działań wymaganych do rozwiązania zgłoszonego problemu. Firmy konsultingowe, takie jak organizacje zarządzające, reklamowe lub świadczące usługi w zakresie porad technicznych, nazywają swoje działania projektami. W marketingu kampania oznacza pakiet pracy, która musi zostać dostarczona. W produkcji na podstawie projektu, zlecenie produkcyjne dotyczy różnych prac, które muszą być wykonane w celu wyprodukowania gotowego towaru. Niezależnie od nazwy tych projektów, obejmują one zasoby, harmonogramy i koszty, a funkcje zarządzania projektem i księgowania w Microsoft Dynamics 365 for Finance and Operations pomagają w planowaniu, wykonaniu i analizie tych projektów.
 
 ## <a name="project-phases"></a>Fazy projektu
 Mimo że przebieg poniższego procesu jest ukierunkowany na projekty zewnętrzne lub projekty realizowane dla jednego lub kilku odbiorców, funkcja ma także zastosowanie do wewnętrznych projektów dotyczących tylko kosztów. 
@@ -206,7 +205,7 @@ Można zamówić towary z magazynu firmy do zużycia w projekcie. Można też ku
 
 Sposób zamawiania towarów zależy od tego, skąd się je zamawia:
 
--   Aby zamówić towary z magazynu firmy, trzeba utworzyć zamówienie jako zapotrzebowanie na towary. W przypadku użycia strony **Zapotrzebowanie na towary** można tak skonfigurować zapotrzebowanie, aby odbierać towary jako dostawy częściowe. Dzięki temu można odłożyć zużycie pewnej ilości towarów do czasu, gdy te towary będą wymagane.
+-   Aby zamówić towary z magazynu firmy, trzeba utworzyć zamówienie jako zapotrzebowanie na towary. W przypadku użycia strony **Zapotrzebowanie na towary** można tak skonfigurować zapotrzebowanie, aby odbierać towary jako dostawy częściowe. Dzięki temu można odłożyć zużycie pewnej ilości towarów do czasu, gdy te towary będą wymagane.
 -   W przypadku zamawiania towarów u dostawcy zewnętrznego trzeba utworzyć zamówienie zakupu na stronie **Zamówienie zakupu**.
 
 > [!NOTE] 
@@ -301,7 +300,7 @@ Na podstawie konfiguracji można prognozować wpływy gotówki dla wybranego pro
 -   **Data projektu:** 5 marca 2012.
 -   **Data faktury:** 31 marca 2012. Ta data jest ustalana w oparciu o częstotliwość faktur. W tym przykładzie ustawia się częstotliwość faktury na bieżący miesiąc. W związku z tym wszystkie, które są księgowane w marcu są fakturowane w ostatnim dniu miesiąca.
 -   **Data wykonania:** 14 kwietnia 2012 r. Ta data jest ustalana na podstawie warunków płatności ustawionych dla projektu. W tym przykładzie zaznaczono warunki płatności 14 dni. W związku z tym 14 dni dodaje się do daty faktury, by otrzymać termin realizacji 14 kwietnia 2012.
--   **Data oczekiwanej płatności za sprzedaż:** 27 kwietnia 2012 r. Data ta jest obliczana przez dodanie liczby dni w polu **Ogólne dni buforowe** na stronie **Parametry modułu Zarządzanie projektami i ich księgowanie** do liczby dni w polu **Indywidualne dni buforowe** na stronie **Umowy dotyczące projektu**, a następnie dodane do całkowitej liczby dni w polu **Data wykonania**. Na przykład wprowadzono **3** w polu **ogólne dni buforowe** i **10** w polu **indywidualne dni buforowe**. W związku z tym 13 dni dodaje się do terminu, oczekiwany termin płatności 27 kwietnia 2012 r.
+-   **Data oczekiwanej płatności za sprzedaż:** 27 kwietnia 2012 r. Data ta jest obliczana przez dodanie liczby dni w polu **Ogólne dni buforowe** na stronie **Parametry modułu Zarządzanie projektami i ich księgowanie** do liczby dni w polu **Indywidualne dni buforowe** na stronie **Umowy dotyczące projektu**, a następnie dodane do całkowitej liczby dni w polu **Data wykonania**. Na przykład wprowadzono **3** w polu **ogólne dni buforowe** i **10** w polu **indywidualne dni buforowe**. W związku z tym 13 dni dodaje się do terminu, oczekiwany termin płatności 27 kwietnia 2012 r.
 
 Ogólne dni buforowe mogą zastąpić indywidualne dni buforowe lub zostać dodane do indywidualnych dni buforowych:
 
@@ -441,4 +440,3 @@ Po obliczeniu zestawienia możesz wyświetlić następujące informacje na róż
 -   **Zużycie** — informacje na temat zużycia godzin, wydatków, towarów i transakcji listy płac.
 -   **Faktury** — informacje dotyczące faktury i fakturowania akonto.
 -   **Stawka godzinowa** — stawki godzinowe dla godzin zaksięgowanych na kontach przychodów i kosztów.
-

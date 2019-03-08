@@ -1,13 +1,13 @@
 ---
 title: Definicje drzewa raportowania w raportach finansowych
-description: "Ten artykuł zawiera informacje o definicjach drzew raportowania. Definicja drzewa raportowania to składnik (blok konstrukcyjny) raportu, który pomaga określić strukturę i hierarchię organizacji."
+description: Ten artykuł zawiera informacje o definicjach drzew raportowania. Definicja drzewa raportowania to składnik (blok konstrukcyjny) raportu, który pomaga określić strukturę i hierarchię organizacji.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 00219f21076af60f8e2f16ca365b1138bb279400
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316954"
 ---
-
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definicje drzewa raportowania w raportach finansowych
 
 [!include [banner](../includes/banner.md)]
@@ -49,9 +48,9 @@ Można utworzyć dowolną liczbę drzew raportowania, aby wyświetlić dane firm
 ## <a name="create-a-reporting-tree-definition"></a> Tworzenie definicji drzewa raportowania
 Definicja drzewa raportowania zawiera kolumny opisane w poniższej tabeli.
 
-| Kolumna drzewa raportowania | opis |
+| Kolumna drzewa raportowania | Opis |
 |-----------------------|-------------|
-| Firma               | Nazwa firmy dla jednostki raportowania. Wartość **@ANY**, która jest zazwyczaj przypisywana tylko na poziomie podsumowania, pozwala używać drzewa raportowania dla wszystkich firm. Firma jest przypisywana również do wszystkich gałęzi podrzędnych. |
+| Firma               | Nazwa firmy dla jednostki raportowania. Wartość **@ANY**, zazwyczaj przypisywana tylko na poziomie podsumowania, umożliwia wykorzystywanie drzewa raportowania do wszystkich firm. Firma jest przypisywana również do wszystkich gałęzi podrzędnych. |
 | Nazwa jednostki             | Kod identyfikujący tę jednostkę raportowania w graficznym drzewie raportowania. Pamiętaj, aby ustanowić unikatowy system kodowania, który będzie spójny i łatwy do zrozumienia dla użytkowników. |
 | Opis jednostki      | Tytuł jednostki raportowania jest wyświetlany w nagłówku lub stopce raportu po wprowadzeniu **UnitDesc** jako kodu na karcie **Nagłówki i stopki** w definicji raportu. Tytuł jest wyświetlany w opisie wiersza raportu po wprowadzeniu **UnitDesc** w komórce **Opis** w definicji wiersza. |
 | Wymiary            | Jednostka raportowania, która pobiera dane bezpośrednio z danych finansowych. Definiuje ona logiczne pozycjonowanie i długości dla konta i powiązanych segmentów. Każdy wiersz jednostki raportowania musi mieć wymiar w tej kolumnie. Wymiar można również umieścić w wierszu jednostki podsumowania (np. dla wydatków bezpośrednio związanych z tą jednostką). Jeśli wymiar zostanie wprowadzony w wierszu jednostki podsumowania, konta używane w jednostkach nadrzędnych nie powinny być używane w jednostkach podrzędnych. W przeciwnym razie może dojść do zduplikowania kwot. |
@@ -166,9 +165,9 @@ Aby uniemożliwić wybranym użytkownikom i grupom dostęp do jednostki raportow
 3. W oknie dialogowym **Jednostka zabezpieczeń** zaznacz nazwę i kliknij przycisk **Usuń**.
 4. Kliknij przycisk **OK**
 
-### <a name="link-to-reports"></a>Łącza do raportów
+### <a name="link-toreports"></a>Łącza do raportów
 
-Po utworzeniu kolumny **raportu** w definicji wiersza i wskazaniu raportu, który ma się znaleźć w raporcie, należy zaktualizować drzewo raportowania o połączoną kolumnę oraz informacje o raporcie. Raport można zaimportować do dowolnej jednostki w drzewie raportowania.
+Po utworzeniu kolumny  **raportu** w definicji wiersza i wskazaniu raportu, który ma się znaleźć w raporcie, należy zaktualizować drzewo raportowania o połączoną kolumnę oraz informacje o raporcie. Raport można zaimportować do dowolnej jednostki w drzewie raportowania.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Identyfikowanie raportu w drzewie raportowania
 
@@ -222,4 +221,3 @@ Poniższe przykłady przedstawiają informacje, które mogą być używane w def
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
-

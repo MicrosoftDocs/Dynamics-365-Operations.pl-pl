@@ -1,13 +1,13 @@
---- 
-title: "Delegowanie elementów pracy w przepływie pracy"
-description: "Jeśli nie będzie Cię w pracy lub z innego powodu nie będziesz w stanie zająć się elementami pracy, możesz delegować, czyli przepisać, swoje elementy pracy do innych użytkowników."
+---
+title: Delegowanie elementów pracy w przepływie pracy
+description: Jeśli nie będzie Cię w pracy lub z innego powodu nie będziesz w stanie zająć się elementami pracy, możesz delegować, czyli przepisać, swoje elementy pracy do innych użytkowników.
 author: jasongre
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysUserSetup, WorkflowDelegationUserListLookup
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f85a1318822ceaf829134bf2eb3581e350d5bea4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4765fec0cdce0e2f8859c979ff97d20aa6b20bfa
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346256"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegowanie elementów pracy w przepływie pracy
 
@@ -48,5 +48,4 @@ Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej 
 8. Aby aktywować regułę delegowania, zaznacz pole wyboru Włączone.
     * Jeśli w ustawieniu Zakres zaznaczysz wartość Moduł, należy wybrać moduł w polu Nazwa.    Jeśli w ustawieniu Zakres zaznaczysz wartość Przepływ pracy, w polu Nazwa należy wybrać konkretny przepływ pracy, który ma być delegowany.  
 9. W polu Komentarz wprowadź komentarz wyjaśniający, dlaczego delegujesz elementy pracy.
-
 

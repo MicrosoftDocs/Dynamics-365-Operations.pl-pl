@@ -1,13 +1,13 @@
 ---
-title: "Sekwencje identyfikatorów"
-description: "Sekwencje numerów są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które muszą mieć identyfikatory."
+title: Sekwencje identyfikatorów
+description: Sekwencje numerów są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które muszą mieć identyfikatory.
 author: MargoC
 manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7dadbe811e385ea6d5802c03381093d6693b23ba
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5f4ff7eb8ee9b87b9d90af4d215743596555fd73
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328454"
 ---
-
 # <a name="number-sequences"></a>Sekwencje identyfikatorów
 
 [!include [banner](../includes/banner.md)]
@@ -117,4 +116,3 @@ Jeśli przepisy nie nakazują używania ciągłej sekwencji numerów, zaleca si�
 W przypadku awarii zasilania, błędu aplikacji lub innego nieoczekiwanego problemu system nie może automatycznie odtworzyć numerów dla ciągłych sekwencji numerów. Proces oczyszczania można uruchomić ręcznie lub automatycznie w celu odzyskania zagubionych numerów.
 
 Należy dokładnie rozważyć zużycie serwera podczas planowania procesu oczyszczania. Zalecane jest przeprowadzanie oczyszczania jako zadania wsadowego w godzinach poza szczytem.
-

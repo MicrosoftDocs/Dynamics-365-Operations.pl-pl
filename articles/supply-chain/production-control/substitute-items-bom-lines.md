@@ -1,13 +1,13 @@
 ---
-title: "Zastępowanie materiałów w procesie produkcji"
-description: "W tym temacie opisano sposób zastępowania materiałów w procesie produkcji."
+title: Zastępowanie materiałów w procesie produkcji
+description: W tym temacie opisano sposób zastępowania materiałów w procesie produkcji.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdBOM
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 461b717acafb5ccf37acae23a1564069cea6828a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b3e70a6ad074911438ef45b6aac2523a4a9fccf8
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327626"
 ---
-
 # <a name="material-substitution-in-manufacturing"></a>Zastępowanie materiałów w procesie produkcji
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,6 @@ Materiały można zastąpić podczas planowania tylko za pomocą formuł, nie za
 
 ## <a name="substituting-material-during-production"></a>Zastępowanie materiału podczas produkcji
 Rozważmy następujący scenariusz: do spawania potrzebna jest metalowa płytka. W trakcie realizacji zadania pracownik magazynu informuje operatora maszyny, że zapasy płytki się wyczerpały. Zapada jednak decyzja, że płytkę można zastąpić inną płytką, która jest trochę cieńsza. Dzięki temu zadanie może zostać ukończone. Materiał można dodać do BOM dla otwartego zlecenia produkcyjnego. Jeżeli zlecenie produkcyjne ma stan **Rozpoczęte**, użytkownik musi ponownie oszacować zlecenie w chwili dodania nowego towaru do BOM produkcji. Po dodaniu materiału dla nowej pozycji można utworzyć nową listę pobrania. Nie trzeba dodawać nowego materiału do BOM produkcji. Zamiast tego można go dodać bezpośrednio do listy pobrania produkcji. Następnie podczas księgowania listy pobrania system doda materiał do BOM produkcji.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Konfigurowanie odbiorców i kont bankowych odbiorców dla poleceń zapłaty ISO20022"
-description: "To zadanie prowadzi Cię przez konfigurowanie konta bankowego odbiorcy i zgody dla odbiorcy na polecenia zapłaty, co jest wymagane do generowania pliku płatności od odbiorcy, np. poleceniem zapłaty ISO20022."
+---
+title: Konfigurowanie odbiorców i kont bankowych odbiorców dla poleceń zapłaty ISO20022
+description: To zadanie prowadzi Cię przez konfigurowanie konta bankowego odbiorcy i zgody dla odbiorcy na polecenia zapłaty, co jest wymagane do generowania pliku płatności od odbiorcy, np. poleceniem zapłaty ISO20022.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, CustBankAccounts, CustDirectDebitMandate, BankAccountTableLookUp,  LogisticsAddressCityLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e7d7d79b1d496223b027d800beca105ecaa0bd4c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 5b4652b76e089d6beb2ce1513d06cf07a5ea3195
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342668"
 ---
 # <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a>Konfigurowanie odbiorców i kont bankowych odbiorców dla poleceń zapłaty ISO20022
 
@@ -68,5 +68,4 @@ Jest to czwarta z pięciu procedur, które razem przedstawiają proces płatnoś
 7. W polu Przewidywana liczba płatności wprowadź liczbę.
 8. Kliknij przycisk OK.
 9. Kliknij przycisk Zapisz.
-
 

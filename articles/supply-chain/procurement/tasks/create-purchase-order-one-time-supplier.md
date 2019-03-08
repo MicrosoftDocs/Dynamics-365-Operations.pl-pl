@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie zamówienia zakupu dla dostawcy jednorazowego"
-description: "W tej procedurze pokazano sposób tworzenia zamówienia sprzedaży dla dostawcy jednorazowego."
+---
+title: Tworzenie zamówienia zakupu dla dostawcy jednorazowego
+description: W tej procedurze pokazano sposób tworzenia zamówienia sprzedaży dla dostawcy jednorazowego.
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: beaf6bcbc870e11e74289375611c631306545633
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2d4dabaf6e1d79cbd626294ee4e327f2725a5e43
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312883"
 ---
 # <a name="create-a-purchase-order-for-a-one-time-supplier"></a>Tworzenie zamówienia zakupu dla dostawcy jednorazowego
 
@@ -38,5 +38,4 @@ W tej procedurze pokazano sposób tworzenia zamówienia sprzedaży dla dostawcy 
 4. W polu Nazwa nadaj nazwę dostawcy.
 5. Kliknij przycisk OK.
     * Zamówienie zakupu można teraz sfinalizować i przetwarzać jak każde inne zamówienie. Nie istnieją żadne specjalne cechy w tym procesie. Faktura uwzględni planowaną transakcję na koncie dostawcy utworzonym razem z zamówieniem, po czym zostanie przetworzona płatność. Po zakończeniu tej operacji można usunąć konto dostawcy. Zazwyczaj jest to realizowane przez dział rozrachunków z dostawcami.  
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Równoległe pokazywanie stron przy użyciu funkcji Otwórz w nowym oknie"
-description: "W tym artykule wyjaśniono, jak wyświetlić strony obok siebie w programie Microsoft Dynamics 365 for Finance and Operations."
+title: Równoległe pokazywanie stron przy użyciu funkcji Otwórz w nowym oknie
+description: Ten artykuł zawiera opis sposobu wyświetlania stron obok siebie w Microsoft Dynamics 365 for Finance and Operations.
 author: aneesmsft
 manager: AnnBe
 ms.date: 09/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: df9b091735a4971446c5b5d0e054076260040683
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 8e3ef29618f11b0f247999e3a24e54bff44bf51a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330179"
 ---
-
 # <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Równoległe pokazywanie stron przy użyciu funkcji Otwórz w nowym oknie
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule wyjaśniono, jak wyświetlić strony obok siebie w programie Microsoft Dynamics 365 for Finance and Operations.
+Ten artykuł zawiera opis sposobu wyświetlania stron obok siebie w Microsoft Dynamics 365 for Finance and Operations.
 
 Microsoft Dynamics 365 for Finance and Operations ułatwia efektywne wykonywanie zadań. W niektórych przypadkach może być potrzebne wyświetlenie kliku stron jednocześnie, aby szybko wykonać zadanie. Na przykład może być konieczne sprawdzenie poprawności lub wprowadzenie wierszy w kilku arkuszach. Zwykle w tym celu trzeba przechodzić między stroną z listą arkuszy i stroną zawierającą wiersze dla danego arkusza. Ale dzięki funkcji **Otwórz w nowym oknie** można wyświetlać te strony obok siebie i szybciej wykonywać zadania.
 
@@ -50,4 +49,3 @@ Przed rozpoczęciem korzystania z funkcji **Otwórz w nowym oknie** należy tak 
 Funkcja **Otwórz w nowym oknie** jest dostępna tylko, gdy więcej niż jedna strona jest otwarta w oknie. Ponadto wyskakujące okienko zostanie automatycznie zamknięte, gdy nie ma więcej otwartych stron (tj. gdy ostatnia strona w tym oknie zostanie zamknięta). Program Finance and Operations zamyka również otwarte strony po przejściu do innego obszaru w aplikacji. W związku z tym jeśli masz otwarte wyskakujące okienko i przejdziesz do innego obszaru w aplikacji, wyskakujące okienka są automatycznie zamknięte, ponieważ strony w tych oknach zostały zamknięte przez system.
 
 Górny pasek w wyskakujących okienkach wyświetlają informację o firmie, w której strona została otwarta, i jest tylko do odczytu. Wyskakujące okienko opiera się również na głównym oknie przeglądarki programu Finance and Operations. W przypadku zamknięcia lub odświeżana okna głównego, wszystkie wyskakujące okienka stają się tylko do odczytu. Oznacza to, że nadal można wyświetlić informacje w tych oknach, ale dane nie są interaktywne.
-

@@ -1,13 +1,13 @@
 ---
 title: Lokalizacje docelowe raportowania elektronicznego (ER)
-description: "Można skonfigurować miejsce docelowe dla każdej konfiguracji formatu raportowania elektronicznego (ER) i jej składnika wyjściowego (folderu lub pliku). Użytkownicy, którym udzielono odpowiednich praw dostępu, mogą także modyfikować ustawienia miejsca docelowego w czasie wykonywania. Ten artykuł wyjaśnia problematykę zarządzania miejscami docelowymi w ER, obsługiwane typy miejsc docelowych oraz zagadnienia dotyczące zabezpieczeń."
+description: Można skonfigurować miejsce docelowe dla każdej konfiguracji formatu raportowania elektronicznego (ER) i jej składnika wyjściowego (folderu lub pliku). Użytkownicy, którym udzielono odpowiednich praw dostępu, mogą także modyfikować ustawienia miejsca docelowego w czasie wykonywania. Ten artykuł wyjaśnia problematykę zarządzania miejscami docelowymi w ER, obsługiwane typy miejsc docelowych oraz zagadnienia dotyczące zabezpieczeń.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314930"
 ---
-
 # <a name="electronic-reporting-er-destinations"></a>Lokalizacje docelowe raportowania elektronicznego (ER)
 
 [!include [banner](../includes/banner.md)]
@@ -121,7 +120,7 @@ Jeśli w ustawieniu **Włączone** zaznaczono wartość **Tak**, po zakończeniu
 
 Jeśli ustawisz w opcji **Włączone** wartość **Tak**, będzie tworzony podgląd danych wyjściowych. Niektóre typy plików, takie jak XML, TXT i PDF, można wyświetlać bezpośrednio w oknie przeglądarki internetowej. Dla innych typów plików, takich jak pliki programów Microsoft Excel lub Word, jest używana usługa Microsoft Office Online.
 
-### <a name="power-bi-destination"></a>Miejsce docelowe w usłudze Power BI
+### <a name="power-bi-destination"></a>Miejsce docelowe usługi Power BI
 
 W opcji **Włączone** ustaw wartość **Tak**, aby wykorzystywać konfigurację raportowania elektronicznego (ER) do organizowania przesyłania danych z wystąpienia programu Finance and Operations do usług Microsoft Power BI. Przesłane pliki są przechowywane w wystąpieniu serwera programu Microsoft SharePoint, który musi skonfigurowany do tego celu. Aby uzyskać więcej informacji, zobacz [Używanie konfiguracji raportowania elektronicznego w celu dostarczania do usługi Power BI danych z rozwiązania Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
@@ -165,4 +164,3 @@ Warunkiem wstępnym jest to, aby format był dostępny w konfiguracjach raportow
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie raportowania elektronicznego](general-electronic-reporting.md)
-

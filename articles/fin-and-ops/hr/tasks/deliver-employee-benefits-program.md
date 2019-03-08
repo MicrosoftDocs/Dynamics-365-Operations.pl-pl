@@ -1,13 +1,13 @@
---- 
-title: "Dostarczanie programu świadczeń dla pracowników"
-description: "To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia."
+---
+title: Dostarczanie programu świadczeń dla pracowników
+description: To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 5bf886086fe7ebe20e329c3b69697c390e1db998
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329604"
 ---
 # <a name="deliver-employee-benefits-program"></a>Dostarczanie programu świadczeń dla pracowników
 
@@ -69,5 +69,4 @@ To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą uż
 15. Na liście kliknij łącze w wybranym wierszu.
 16. W polu Podstawa wybierz opcję.
 17. W polu Kwota lub stawka wpisz liczbę.
-
 

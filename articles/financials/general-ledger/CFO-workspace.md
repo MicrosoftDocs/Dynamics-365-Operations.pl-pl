@@ -1,14 +1,14 @@
 ---
-title: "Dodawanie wymiarów finansowych do obszaru roboczego Dyrektor finansowy"
-description: "W tym temacie wyjaśniono, jak dodawać wymiary finansowe do obszaru roboczego Dyrektor finansowy, dzięki czemu będzie można ich używać w raportach ksiąg i budżetów."
+title: Dodawanie wymiarów finansowych do obszaru roboczego Dyrektor finansowy
+description: W tym temacie wyjaśniono, jak dodawać wymiary finansowe do obszaru roboczego Dyrektor finansowy, dzięki czemu będzie można ich używać w raportach ksiąg i budżetów.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -18,24 +18,23 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a15414eff99751d4e77e5b3bf315a556efb7ad5d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5faefe5da8c3a64987a38ebef92eb87049ebe874
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332686"
 ---
-
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Dodawanie wymiarów finansowych do obszaru roboczego Dyrektor finansowy
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak dodawać wymiary finansowe do obszaru roboczego Dyrektor finansowy, dzięki czemu będzie można ich używać w raportach ksiąg i budżetów. Obszar roboczy Dyrektor finansowy zawiera kartę **Przegląd** i kartę **Finanse**. Raporty na tych dwóch kartach dodatkowo wykorzystują dwie miary: LedgerActivityMeasure i BudgetActivityMeasure. W programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.) istnieje relacja między tymi dwoma miarami a jednostką DimensionCombinationEntity. W związku z tym można wybierać wymiary.
+W tym temacie wyjaśniono, jak dodawać wymiary finansowe do obszaru roboczego Dyrektor finansowy, dzięki czemu będzie można ich używać w raportach ksiąg i budżetów. Obszar roboczy Dyrektor finansowy zawiera kartę **Przegląd** i kartę **Finanse**. Raporty na tych dwóch kartach dodatkowo wykorzystują dwie miary: LedgerActivityMeasure i BudgetActivityMeasure. W Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (z lipca 2017) występuje zbiór między tymi dwoma miarami i jednostką DimensionCombinationEntity. W związku z tym można wybierać wymiary.
 
 1. W programie Finance and Operations na stronie **Magazyn jednostek** zaktualizuj miary **LedgerActivityMeasure** i **BudgetActivityMeasure**.
 2. W programie Microsoft Visual Studio otwórz Eksploratora aplikacji i wyszukaj element **LedgerCFO**.
 3. W obszarze **Zasoby** otwórz zasób **LedgerCFOWorkspacePBIX**.
-4. Gdy zasób zostanie otwarty w pulpicie zasobu Microsoft Power BI, wybierz kolejno opcje **Pobierz dane**, **Baza danych programu SQL Server** i **Połącz**.
+4. Gdy zasób zostanie otwarty w Microsoft Power BI Desktop, wybierz kolejno opcje **Pobierz dane**, **Baza danych programu SQL Server** i **Połącz**.
 5. Wprowadź nazwę serwera, a jako bazę danych wpisz **AxDW**. Zaznacz element **DirectQuery** i kliknij przycisk **OK**.
 6. Wyszukaj i zaznacz element **LedgerActivityMeasure\_DimensionCombination**, a następnie wybierz opcję **Załaduj**.
 
@@ -57,4 +56,3 @@ W tym temacie wyjaśniono, jak dodawać wymiary finansowe do obszaru roboczego D
 16. Skompiluj projekt, a następnie otwórz aplikację, aby wyświetlić rezultat.
 
     [![Skonfigurowana przestrzeń robocza](./media/workspace.png)](./media/workspace.png)
-

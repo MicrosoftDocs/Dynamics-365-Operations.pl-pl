@@ -1,13 +1,13 @@
 ---
-title: "Jednostka miary i zasady składowania"
-description: "W tym artykule opisano, jak domyślne jednostki, sekwencje jednostek i konwersje jednostek są używane w procesach magazynowych."
+title: Jednostka miary i zasady składowania
+description: W tym artykule opisano, jak domyślne jednostki, sekwencje jednostek i konwersje jednostek są używane w procesach magazynowych.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended, EcoResStorageDimensionGroup, InventItemOrderSetup, UnitOfMeasureConversion, WHSRFMenuItem, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c484f814d9f1e726fd326e1cd0ea8fe694f797b9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e0a22e07f5a0e5bc30c8ad9dc87c5a506d62847d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318104"
 ---
-
 # <a name="unit-of-measure-and-stocking-policies"></a>Jednostka miary i zasady składowania
 
 [!include [banner](../includes/banner.md)]
@@ -38,8 +37,7 @@ Grupy sekwencji jednostek definiują kolejność jednostek, które mogą być u�
 Jeśli chcesz użyć zwolnionych produktów w procesach roboczych magazynu, grupa sekwencji jednostek musi być do nich przypisana. Przy sprawdzaniu poprawności produktu, który jest skojarzony z grupą wymiarów magazynowania i opcja **Użyj procesów zarządzania magazynami** ma wartość **Tak**, zostanie wyświetlony komunikat o błędzie, jeśli identyfikator grupy sekwencji jednostek nie jest zdefiniowany dla produktu. Jeśli używana grupa sekwencji jednostek zawiera wiele wierszy (i z tego względu wiele jednostek), trzeba skonfigurować konwersję jednostek między jednostkami. Te ustawienia wprowadza się na stronie **Konwersje jednostek**. Najmniejsza jednostka grupy sekwencji kojarzona ze zwolnionym produktem musi odpowiadać jednostce magazynowej określonej dla odpowiadającego produktu. Jednostka magazynowa jest jednostką, która jest używana w podstawowych obliczeniach dostępnych zapasów. Można także skonfigurować konwersje jednostki miary dla wariantów produktów głównych za pomocą opcji **Włącz konwersje jednostek miary**.
 
 ## <a name="license-plate-grouping"></a>Grupowanie numerów identyfikacyjnych
-Można określić, czy przyjęcia mniej niż jednej lub więcej niż określona jednostka powinny być grupowane w ramach jednego numeru identyfikacyjnego, czy podzielone na osobne numery identyfikacyjne dla każdej jednostki. Aby skonfigurować to zachowanie, należy użyć opcji **Grupowanie numerów identyfikacyjnych** na karcie **Szczegóły wiersza** na stronie **Grupy sekwencji jednostek**. Aby używać grupowania według numerów identyfikacyjnych podczas przetwarzania pracy za pomocą urządzenia przenośnego, opcja **Grupowanie numerów identyfikacyjnych** w menu **Urządzenie przenośne**
-musi być zaznaczona. Załóżmy na przykład, że używasz urządzenia przenośnego do rejestracji towaru, który jest skojarzony z grupą sekwencji, która ma dwa wiersze. Pierwszy wiersz odnosi się do Sztuk, a opcja **Grupowanie numerów identyfikacyjnych** ma wartość **Tak**. Drugi wiersz odnosi się do Palety, a opcja **Grupowanie numerów identyfikacyjnych** ma wartość **Nie**. W takim przypadku system może automatycznie przeprowadzić podział i utworzyć numery rejestracyjne dla 100 sztuk.
+Można określić, czy przyjęcia mniej niż jednej lub więcej niż określona jednostka powinny być grupowane w ramach jednego numeru identyfikacyjnego, czy podzielone na osobne numery identyfikacyjne dla każdej jednostki. Aby skonfigurować to zachowanie, należy użyć opcji **Grupowanie numerów identyfikacyjnych** na karcie **Szczegóły wiersza** na stronie **Grupy sekwencji jednostek**. Aby używać grupowania według numerów identyfikacyjnych podczas przetwarzania pracy za pomocą urządzenia przenośnego, opcja **Grupowanie numerów identyfikacyjnych** w menu **Urządzenie przenośne** musi być zaznaczona. Załóżmy na przykład, że używasz urządzenia przenośnego do rejestracji towaru, który jest skojarzony z grupą sekwencji, która ma dwa wiersze. Pierwszy wiersz odnosi się do Sztuk, a opcja **Grupowanie numerów identyfikacyjnych** ma wartość **Tak**. Drugi wiersz odnosi się do Palety, a opcja **Grupowanie numerów identyfikacyjnych** ma wartość **Nie**. W takim przypadku system może automatycznie przeprowadzić podział i utworzyć numery rejestracyjne dla 100 sztuk.
 
 ## <a name="units-for-cycle-counting"></a>Jednostki do inwentaryzacji ciągłej
 Aby zdefiniować, które jednostki powinny być używane w ramach procesu inwentaryzacji ciągłej, wybierz opcję **Użyj jednostki do inwentaryzacji ciągłej** na stronie **Grupy sekwencji jednostek**. Można wybrać maksymalnie cztery jednostki w grupie sekwencji. Jeśli zaznaczy się więcej niż cztery jednostki, dodatkowe jednostki nie będą wyświetlane na urządzeniu przenośnym.
@@ -49,7 +47,6 @@ Aby ustawić domyślne jednostki, które mają być używane do obsługi proces�
 
 ## <a name="default-order-settings"></a>Ustawienia domyślne zamówień
 W ramach tworzenia zwolnionych produktów należy wybrać domyślne jednostki dla zakupów, sprzedaży i zapasów do przetwarzania różnych zamówień. Można ustawić domyślne jednostki i ilości dla różnych dokumentów źródłowych za pomocą stron **Ustawienia domyślne zamówień** i **Ustawienia zamówień właściwe dla oddziału**. Są one dostępne ze strony **Zwolnione produkty**.
-
 
 
 

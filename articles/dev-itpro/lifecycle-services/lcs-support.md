@@ -1,13 +1,13 @@
 ---
-title: "Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations lub usługi Lifecycle Services (LCS)"
-description: "W tym artykule opisano, jak uzyskać pomoc dotyczącą programu Microsoft Dynamics 365 for Finance and Operations lub usługi Microsoft Dynamics Lifecycle Services (LCS)."
+title: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations lub usługi Lifecycle Services (LCS)
+description: W tym artykule opisano, jak uzyskać pomoc dotyczącą programu Microsoft Dynamics 365 for Finance and Operations lub usługi Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
 ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro, Developer, Application user
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
 ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334779"
 ---
-
 # <a name="get-support-for-finance-and-operations-or-lifecycle-services-lcs"></a>Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations lub usługi Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
@@ -53,7 +52,7 @@ Aby uzyskać pomoc techniczną do programu Finance and Operations lub usługi LC
 <tbody>
 <tr class="odd">
 <td>Kierowanie pytań do społeczności.</td>
-<td>Przejdź do strony <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">społeczności użytkowników rozwiązania Dynamics 365 for Finance and Operations</span></a>, gdzie znajdziesz odpowiedzi na pytania udzielane przez członków społeczności użytkowników systemu Dynamics.</td>
+<td>Przejdź do strony społeczności użytkowników rozwiązania <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Dynamics 365 for Finance and Operations</span></a>, gdzie znajdziesz odpowiedzi na pytania udzielane przez członków społeczności użytkowników systemu Dynamics.</td>
 </tr>
 <tr class="even">
 <td>Używanie narzędzia Wyszukiwanie problem.</td>
@@ -75,7 +74,7 @@ Uwaga: Klienci partnerzy uczestniczący w programie Microsoft Premier mogą przy
 <li>Błędy występujące podczas korzystania z usługi LCS lub problemy w trakcie próby uzyskania dostępu do usługi LCS.</li>
 <li>Błędy występujące podczas korzystania z programu Finance and Operations.</li>
 </ul>
-W razie pytań technicznych związanych z logowaniem i uzyskiwaniem dostępu do witryny CustomerSource, szkoleniami internetowymi, wyszukiwaniem, bazą wiedzy, pobieraniem plików lub błędami na stronach i błędami systemowymi przejdź do strony <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">pomocy technicznej dla witryn sieci web</span></a>.</td>
+W razie pytań technicznych związanych z logowaniem i uzyskiwaniem dostępu do witryny CustomerSource, szkoleniami internetowymi, wyszukiwaniem, bazą wiedzy, pobieraniem plików lub błędami na stronach i błędami systemowymi przejdź do <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">strony pomocy technicznej dla witryn sieci web</span></a>.</td>
 </tr>
 <tr class="odd">
 <td>Uzyskiwanie pomocy w sprawie pytań dotyczących licencji na oprogramowanie Finance and Operations.</td>
@@ -93,5 +92,4 @@ W razie pytań technicznych związanych z logowaniem i uzyskiwaniem dostępu do 
 - [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 for Retail](../../retail/retail-support.md)
 - [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 for Talent](../../talent/talent-support.md)
 - Aby uzyskać więcej informacji na temat ofert pomocy technicznej dla systemu Microsoft Dynamics, zobacz [Pomoc techniczna online do systemu Microsoft Dynamics](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
-
 

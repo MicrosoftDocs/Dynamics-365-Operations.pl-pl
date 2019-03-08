@@ -1,13 +1,13 @@
 ---
-title: "Śledzenie prowizji w punkcie sprzedaży (POS) przy użyciu grup sprzedaży"
-description: "W sklepach detalicznych typową praktyką jest śledzenia sprzedaży realizowanej przez pracowników, którzy mają bezpośredni kontakt z odbiorcami: udzielają im pomocy, proponują zakup powiązanych lub dodatkowych produktów, przetwarzają transakcje itd."
+title: Śledzenie prowizji w punkcie sprzedaży (POS) przy użyciu grup sprzedaży
+description: 'W sklepach detalicznych typową praktyką jest śledzenia sprzedaży realizowanej przez pracowników, którzy mają bezpośredni kontakt z odbiorcami: udzielają im pomocy, proponują zakup powiązanych lub dodatkowych produktów, przetwarzają transakcje itd.'
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: ed4f9b3055e164600827b62d57b7a5068edb3b1a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325119"
 ---
-
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>Śledzenie prowizji w punkcie sprzedaży (POS) przy użyciu grup sprzedaży
 
 [!include [banner](includes/banner.md)]
@@ -89,4 +88,3 @@ W aplikacji punktu sprzedaży użytkownicy mogą konfigurować siatki przyciskó
 ## <a name="calculating-commissions"></a>Naliczanie prowizji
 
 Prowizja jest obliczana dla pracowników we wskazanych grupach sprzedaży w momencie księgowania zestawienia lub zamówienia sprzedaży. Kwota prowizji jest określana na podstawie udziału pracownika w prowizji, zgodnie z definicją w grupie sprzedaży oraz odnośnymi ustawieniami obliczania prowizji dla odbiorcy i/lub produktów w transakcji.
-

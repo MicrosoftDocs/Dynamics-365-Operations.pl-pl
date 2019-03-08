@@ -1,13 +1,13 @@
 ---
-title: "Alokacja danych planowania budżetu"
-description: "W tym artykule opisano różne metody alokacji dostępne w programie Microsoft Dynamics 365 for Finance and Operations oraz sposoby ich wykorzystywania."
+title: Alokacja danych planowania budżetu
+description: W tym artykule opisano różne metody alokacji dostępne w Microsoft Dynamics 365 for Finance and Operations oraz sposoby ich wykorzystywania.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 430040f7b3706aa1ad913d70c0dbcab9249ea222
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b5f262318b4defb941f1216d0bfe06961f62bad4
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352512"
 ---
-
 # <a name="budget-planning-data-allocation"></a>Alokacja danych na potrzeby planowania budżetu
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano różne metody alokacji dostępne w programie Microsoft Dynamics 365 for Finance and Operations oraz sposoby ich wykorzystywania.  
+W tym artykule opisano różne metody alokacji dostępne w Microsoft Dynamics 365 for Finance and Operations oraz sposoby ich wykorzystywania.  
 
 Dane planu budżetu można dystrybuować na wiele sposobów, by dokładnie odzwierciedlić przewidywane kwoty.
 
@@ -72,7 +71,6 @@ Następnie należy utworzyć alokację etapu na stronie **Konfiguracja planowani
 Na koniec należy dodać zautomatyzowane zadanie dla alokacji etapu planowania budżetu na wybranych etapie przepływu pracy. W poniższym przykładzie dwie alokacje etapu planowania budżetu (wyróżnione na czerwono) zostały wstawione do przepływu pracy.
 
 [![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
-
 
 
 

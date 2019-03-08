@@ -1,13 +1,13 @@
 ---
-title: "Wprowadzanie ręcznych korekt prognozy bazowej"
-description: "W tym temacie wyjaśniono, jak wprowadzać ręczne korekty prognozy bazowej i jak wyświetlać szczegóły prognozy."
+title: Wprowadzanie ręcznych korekt prognozy bazowej
+description: W tym temacie wyjaśniono, jak wprowadzać ręczne korekty prognozy bazowej i jak wyświetlać szczegóły prognozy.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a7c7d1fcaaeef7a01b43886e4d69458dbd942439
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 543a88a8df4252e5bf1b6b27b5209650c1ceca0b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315896"
 ---
-
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Wprowadzanie ręcznych korekt prognozy bazowej
 
 [!include [banner](../includes/banner.md)]
@@ -82,7 +81,6 @@ Istnieje również możliwość ręcznego korygowania prognozy na stronie **Szcz
 [Monitorowanie dokładności prognozy](monitor-forecast-accuracy.md)
 
 [Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md)
-
 
 
 

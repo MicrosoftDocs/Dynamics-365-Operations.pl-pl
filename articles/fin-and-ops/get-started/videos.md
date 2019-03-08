@@ -1,30 +1,29 @@
 ---
-title: "Filmy o rozwiązaniu Finance and Operations"
-description: "Ta strona zawiera listę filmów instruktażowych i technicznych przygotowanych przez Microsoft, które dotyczą rozwiązania Dynamics 365 for Finance and Operations i są dostępne na YouTube i w innych witrynach."
+title: Filmy o rozwiązaniu Finance and Operations
+description: Ta strona zawiera listę filmów instruktażowych i technicznych przygotowanych przez Microsoft, które dotyczą rozwiązania Dynamics 365 for Finance and Operations i są dostępne na YouTube i w innych witrynach.
 author: josaw1
 manager: AnnBe
 ms.date: 05/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
+ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 7f1fb4d2094076de62873148212c76ae6812d6a2
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/17/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317828"
 ---
-
 # <a name="videos-for-finance-and-operations"></a>Filmy o rozwiązaniu Finance and Operations
 
 [!include [banner](../includes/banner.md)]
@@ -136,13 +135,13 @@ Filmy są uszeregowane według funkcji, dlatego w celu obejrzenia całej treści
 
 #### <a name="develop-and-customize"></a>Tworzenie i dostosowywanie
 
-- [Narzędzia integracji programu Dynamics 365 for Finance and Operations z usługą (DYN386PAL)](https://infopedia.eventbuilder.com/event?eventid=l7f2i9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Narzędzia integracji Azure programu Dynamics 365 for Finance and Operations z usługą (DYN386PAL)](https://infopedia.eventbuilder.com/event?eventid=l7f2i9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Możliwości rozszerzania (DYN384PAL2)](https://infopedia.eventbuilder.com/event?eventid=e0x4q5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Jak rozszerzyć lub utworzyć nowe analityczne obszary robocze (DYN321PAL)](https://infopedia.eventbuilder.com/event?eventid=r7z0f5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Sposoby testowania wydajności (DYN449PAL2)](https://infopedia.eventbuilder.com/event?eventid=k6c6g9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Sposoby testowania wydajności (DYN449PAL)](https://infopedia.eventbuilder.com/event?eventid=i1u5m9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
-#### <a name="financial-reporting"></a>Raportowanie finansowe
+#### <a name="financial-reporting"></a>Raporty finansowe
 
 - [Sprawozdawczość finansowa (DYN305PAL)](https://infopedia.eventbuilder.com/event?eventid=s0d0n3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) 
 - [Opcje sprawozdawczości w programie Dynamics 365 for Finance and Operations (VIR810PAL)](https://infopedia.eventbuilder.com/event?eventid=p8x0s5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
@@ -170,13 +169,13 @@ Filmy są uszeregowane według funkcji, dlatego w celu obejrzenia całej treści
 - [Wybieranie z katalogu zewnętrznego (DYN332PAL2)](https://infopedia.eventbuilder.com/event?eventid=w5u5q8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Współpraca z dostawcami (DYN327PAL)](https://infopedia.eventbuilder.com/event?eventid=c3e4c0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
-#### <a name="retail"></a>Retail
+#### <a name="retail"></a>Sprzedaż detaliczna
 
 - [Możliwość rozszerzania programu Dynamics 365 for Retail POS: od razu na głęboką wodę (DYN342PAL)](https://infopedia.eventbuilder.com/event?eventid=f4s5w1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Architektura aplikacji Retail oraz aplikacja Retail Store Scale Unit (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Nowości dotyczące możliwości rozszerzania programu Dynamics 365 for Retail POS (DYN339PAL2)](https://infopedia.eventbuilder.com/event?eventid=h8b0l1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
-#### <a name="support"></a>Pomoc techniczna
+#### <a name="support"></a>Obsługa
 
 - [Obsługa (VIR805PAL)](https://infopedia.eventbuilder.com/event?eventid=c2k8k3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
@@ -184,7 +183,7 @@ Filmy są uszeregowane według funkcji, dlatego w celu obejrzenia całej treści
 
 - [Narzędzia migracji z programu AX 2009 do Dynamics 365 for Operations (VIR809PAL)](https://infopedia.eventbuilder.com/event?eventid=c3g5k3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Narzędzia migracji z programu AX 2009 (DYN306PAL2)](https://infopedia.eventbuilder.com/event?eventid=u3g7s0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Uaktualnianie z programu AX 2012 do Dynamics 365 for Operations (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Uaktualnianie z systemu AX 2012 do rozwiązania Dynamics 365 for Operations (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Jak uaktualnić do wersji 7.2 (lipiec 2017) z wersji 7.0 (RTW)/7.1 (wydanie 1611) (DYN338PAL2)](https://infopedia.eventbuilder.com/event?eventid=q0w9p0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Konfiguracja rozwiązania Azure DevOps (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
@@ -196,4 +195,3 @@ Filmy są uszeregowane według funkcji, dlatego w celu obejrzenia całej treści
 - [Proces pobierania sztukami (DYN330PAL2)](https://infopedia.eventbuilder.com/event?eventid=u6e0z6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Wizualne planowanie zleceń produkcyjnych i kart Kanban (DYN328PAL)](https://infopedia.eventbuilder.com/event?eventid=h0o0n0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Integracja magazynu z produkcją (DYN344PAL)](https://infopedia.eventbuilder.com/event?eventid=y8p6o1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) - [Aplikacja komórkowa do zarządzania magazynem (VIR816PAL)](https://infopedia.eventbuilder.com/event?eventid=t8t7l8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-

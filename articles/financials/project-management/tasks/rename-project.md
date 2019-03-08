@@ -1,13 +1,13 @@
---- 
+---
 title: Zmiana nazwy lub modyfikowanie etapu projektu
-description: "To zadanie przedstawia sposób zmiany nazwy lub modyfikacji etapu projektu."
+description: To zadanie przedstawia sposób zmiany nazwy lub modyfikacji etapu projektu.
 author: KimANelson
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 373973726aa5a3cc341d3ee1732b7cf86729f6c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c9b2c03f87bc4d43e6795aa2e1ac378637fe11ce
-ms.openlocfilehash: c3fbaa70ee2ae581e87031e5586b500098793c25
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/08/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351776"
 ---
 # <a name="rename-or-modify-a-project-stage"></a>Zmiana nazwy lub modyfikowanie etapu projektu
 
@@ -35,4 +35,3 @@ Etapy projektu mogą służyć za wyznaczniki cyklu życia projektu. Możesz zde
 4. Na liście wybierz wstępnie zdefiniowany etap lub etap zdefiniowany przez użytkownika, który chcesz zmodyfikować. 
 5. Wprowadź nową nazwę w polu Etap projektu.
 6. Kliknij przycisk Zapisz.
-

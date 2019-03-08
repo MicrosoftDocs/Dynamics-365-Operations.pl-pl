@@ -1,32 +1,31 @@
 ---
-title: "Hierarchia wymiarów"
-description: "Ten temat zawiera informacje o hierarchiach wymiarów. Hierarchie wymiarów służą do definiowania struktury raportowania, zasad kosztów i ustawień zabezpieczeń w module Rachunek kosztów."
+title: Hierarchia wymiarów
+description: Ten temat zawiera informacje o hierarchiach wymiarów. Hierarchie wymiarów służą do definiowania struktury raportowania, zasad kosztów i ustawień zabezpieczeń w module Rachunek kosztów.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 55d567eb3b4ad6746f39118b575457bb00fe0a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 40a4a1d7549876b72186f30a9c0089f0d27cf3b6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320220"
 ---
-
 # <a name="dimension-hierarchy"></a>Hierarchia wymiarów
 
 [!include [banner](../includes/banner.md)]
@@ -222,7 +221,7 @@ Z czasem hierarchie wymiarów używane we wspomnianych wyżej narzędziach rapor
 
 Aktualizacje hierarchii wymiarów są pobierane co 24 godziny przez zadanie umieszczone wstępnie w pamięci podręcznej. Po zaktualizowaniu wyeksportowanych danych zaktualizowane hierarchie wymiarów są dostępne w następujących narzędziach:
 
-- Program Excel
+- Plik programu Excel
 - Power BI
 
 > [!NOTE] 
@@ -329,9 +328,8 @@ Ustawienia hierarchii list dostępu umożliwiają kontrolowanie danych, które s
 - Power BI:
 
     - Dane wyświetlane w wizualizacjach programu Power BI
-    - Wizualizacje danych z programu Power BI osadzone w aplikacji klienckiej Microsoft Dynamics 365 for Finance and Operations
+    - Wizualizacje danych w rozwiązaniu Power BI osadzone w Microsoft Dynamics 365 for Finance and Operations, wersja kliencka
 
 > [!NOTE] 
-> - Aby hierarchia list dostępu mogła wpływać na dane w programie Power BI, należy w tym programie sparować hierarchię list dostępu i zabezpieczenia na poziomie wiersza. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zabezpieczeń pakietu zawartości Rachunek kosztów](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Aby hierarchia list dostępu mogła wpływać na dane w programie Power BI, należy w tym programie sparować hierarchię list dostępu i zabezpieczenia na poziomie wiersza w programie Power BI. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zabezpieczeń pakietu zawartości Rachunek kosztów](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Hierarchia list dostępu nie pomaga zabezpieczyć eksportu danych do programu Excel. W związku z tym tego narzędzia sprawozdawczego mogą używać tylko księgowi i menedżerowie kosztów, którzy muszą mieć pełny dostęp w celu wyświetlania danych.
-

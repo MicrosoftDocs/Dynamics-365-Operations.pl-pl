@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie sklepów internetowych"
-description: "Ten artykuł zawiera informacje o internetowych sklepach detalicznych oraz o ich konfigurowaniu w programie Microsoft Dynamics 365 for Retail."
+title: Konfigurowanie sklepów internetowych
+description: Ten artykuł zawiera informacje o internetowych sklepach detalicznych oraz o ich konfigurowaniu w programie Microsoft Dynamics 365 for Retail.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelManagementWorkspace, RetailOnlineStoreList
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 2b736b5e5ce5b5b384181a73c72bbb89b072a284
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324935"
 ---
-
 # <a name="set-up-online-stores"></a>Konfigurowanie sklepów internetowych
 
 [!include [banner](includes/banner.md)]
@@ -60,4 +59,3 @@ Aby można było utworzyć sklep internetowy, należy określić hierarchię naw
 ## <a name="organization-hierarchies"></a>Hierarchie organizacyjne
 
 Hierarchie organizacji są następnie używane do tworzenia struktury kanałów sieci sprzedaży. Hierarchie organizacji reprezentują relacje między organizacjami, które składają się na działalność. Podczas konfigurowania sklepów internetowych, można je dodawać do hierarchii organizacyjnej. Sklepy następnie udostępniają dane, które są używane do asortymentów, uzupełnienia i raportów. Podczas tworzenia hierarchii organizacyjnej, należy przypisać do niej cel. Cel wskazuje sposób użycia hierarchii w strukturze biznesowej. Można utworzyć jedną hierarchię organizacji dla operacji sklepu i używać tej hierarchii dla asortymentów, uzupełnienia i raportowania. Można również utworzyć oddzielną hierarchię organizacji dla każdego celu. Można także tworzyć wiele hierarchii, które mają ten sam cel i przypisać do każdej z nich oddzielny kanał. Jeśli katalogi produktów sieci sprzedaży mają zostać opublikowane w sklepie internetowym, należy co najmniej dodać sklep internetowy do hierarchii organizacyjnej dla asortymentów. Produkty w katalogu wybierane są z asortymentów przypisanych do sklepu internetowego. Podczas publikowania katalogu proces publikowania porównuje daty wejścia w życie asortymentu przypisanego do sklepu internetowego z produktami, które znajdują się w katalogu, w celu określenia produktów, które mają być dostępne w sklepie internetowym.
-

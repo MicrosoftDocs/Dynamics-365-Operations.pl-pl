@@ -1,13 +1,13 @@
---- 
-title: "Zgłaszanie postępu za pomocą urządzenia przenośnego zadania"
-description: "W tej procedurze pokazano sposób uruchamiania i raportowania o postępie zadania produkcyjnego w formularzu rejestracji urządzenia obsługującego zadania."
+---
+title: Zgłaszanie postępu za pomocą urządzenia przenośnego zadania
+description: W tej procedurze pokazano sposób uruchamiania i raportowania o postępie zadania produkcyjnego w formularzu rejestracji urządzenia obsługującego zadania.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgRegistrationTouch, JmgRegistrationTouchUserConfiguration, JmgRegistrationTouchStart, JmgRegistrationTouchReportFeedback, JmgRegistrationTouchAssignedJobs, JmgRegistrationTouchBreak, JmgRegistrationTouchLeave, JmgRegistrationTouchIndirectActivity, JmgDialogForm
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1f5d06b0165a7a3cf7ed9dab46d0bca4d37fdc12
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: acbedc6d27624d9a8d1e6fb9bb0d9abed1b4377f
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330409"
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a>Zgłaszanie postępu za pomocą urządzenia przenośnego zadania
 
@@ -64,5 +64,4 @@ Aby można było uruchomić tę procedurę, musisz mieć rolę Administrator sys
 28. Kliknij przycisk wyrejestrowania.
 29. Kliknij przycisk OK.
 30. Wybierz przyczynę, dlaczego wyrejestrowujesz się wcześniej.
-
 

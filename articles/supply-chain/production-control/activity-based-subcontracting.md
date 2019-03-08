@@ -1,13 +1,13 @@
 ---
-title: "Podwykonawstwo działań"
-description: "W tym temacie opisano szczegółowo, jak używać działań podwykonawczych w przepływie produkcji dla produkcji oszczędnej."
+title: Podwykonawstwo działań
+description: W tym temacie opisano szczegółowo, jak używać działań podwykonawczych w przepływie produkcji dla produkcji oszczędnej.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 59b41b31931a128898ee70a583bfb9c515f90abc
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350051"
 ---
-
 # <a name="activity-based-subcontracting"></a>Podwykonawstwo działań
 
 [!include [banner](../includes/banner.md)]
@@ -104,7 +103,6 @@ Ludzie często uważają transport za nieproduktywny i sądzą, że nie dodaje w
 Podwykonawstwo działań w produkcji oszczędnej pozwala zintegrować przewoźników i dostawców usług transportowych, którzy przemieszczają materiały i produkty między lokalizacjami przepływu produkcji. Modelując działanie przeniesienia, można przypisać przewoźnika lub dostawcę. Działania/zadanie przeniesienia opiera się na usłudze i umowie sprzedaży. Można tworzyć zamówienia zakupu i podsumowania przyjęć na podstawie faktycznych zadań przeniesienia. Ta funkcjonalność jest taka sama, jak funkcjonalność działań procesu podwykonawczego.  
 
 W związku z tym program Finance and Operations obsługuje teraz obliczanie BOM, które obejmuje usługi transportowe, tworzenie powiązanych zamówień zakupu, zintegrowaną rejestrację przyjęć oraz integrację kosztów usług transportowych w wycenie przepływu produkcji.
-
 
 
 

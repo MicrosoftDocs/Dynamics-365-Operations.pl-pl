@@ -1,13 +1,13 @@
 ---
-title: "Wymagania wstępne dotyczące konwersji na koszt standardowy"
-description: "W tym temacie omówiono zadania do wykonania przed dokonaniem konwersji na koszt standardowy."
+title: Wymagania wstępne dotyczące konwersji na koszt standardowy
+description: W tym temacie omówiono zadania do wykonania przed dokonaniem konwersji na koszt standardowy.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 955191a32165a32c455d0dba7424a82eb2559399
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 65844bd78363dc6638b16b3fd4ca163a3fde6a23
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351937"
 ---
-
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Wymagania wstępne dotyczące konwersji na koszt standardowy
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ Przed dokonaniem konwersji na koszt standardowy wykonaj następujące kroki:
 
         Aktywne rozbicie kosztów oznacza, że włączenie kosztu wytworzonego towaru spowoduje zapisanie podziału grupy kosztów w rekordzie kosztu towaru. Jeśli w polu **Podział kosztów** nie zostanie wybrana żadna opcja, podział grupy kosztów nie zostanie zachowany w wypadku towarów, którym przypisano koszty standardowe. Oznacza to, że koszt standardowy wytworzonego towaru będzie obliczany i zachowywany jako jedna kwota bez podziału grup kosztów, a udział kosztów wytworzonych składników będzie obliczany jako jedna kwota.
     -   Pole **Odchylenia od standardu** służy do wybierania, czy odchylenia mają być sumowane czy określane według grup kosztów. Wybór obsługi według grup kosztów umożliwia identyfikowanie odchyleń cen zakupu i odchyleń produkcji według grup kosztów. Umożliwia to również identyfikowanie czterech typów odchyleń produkcji (odchyleń rozmiaru partii, ilości, ceny i podstawiania). Wybór opcji sumowania oznacza, że nie można identyfikować odchyleń według grup kosztów ani czterech typów odchyleń produkcji. Można wyświetlać tylko podsumowanie odchylenia produkcji. Zasady zamiany odchyleń wartości standardowych działają niezależnie od zasad podziału kosztów, tj. można nie wybrać żadnej zasady podziału kosztów i wybrać takie odchylenia na grupę kosztów, aby nadal były rejestrowane odchylenia produkcyjne na grupę kosztów.
-
 
 
 

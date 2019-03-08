@@ -1,13 +1,13 @@
---- 
-title: "Wysyłanie zamówień jako dostaw bezpośrednich"
-description: "W tej procedurze pokazano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży."
+---
+title: Wysyłanie zamówień jako dostaw bezpośrednich
+description: W tej procedurze pokazano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchEditLines, PurchTableReferences, MCRDropShipWorkbench
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5cd68aa1c15672c702db887c08ecf9b3d63f2618
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f674de4877dd2d6e6f1ff02f16a68cb4805d9864
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339287"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Wysyłanie zamówień jako dostaw bezpośrednich
 
@@ -102,5 +102,4 @@ W tej procedurze pokazano sposób tworzenia dostawy bezpośredniej na podstawie 
 14. Kliknij opcję Utwórz dostawę bezpośrednią.
 15. Kliknij kartę Potwierdzenie.
     * Po utworzeniu zamówienia dostawy bezpośrednie jest ono automatycznie przenoszone na kartę Potwierdzenie. Zamówienie można potwierdzić bezpośrednio z tej strony. Po potwierdzeniu zakupu jest on automatyczne przenoszony do karty Dostawa, na której można zarejestrować jego otrzymanie.  
-
 

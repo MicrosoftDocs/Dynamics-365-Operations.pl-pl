@@ -1,13 +1,13 @@
 ---
-title: "Szablony planowania budżetu dla programu Excel"
-description: "W tym temacie opisano sposób tworzenia szablonów programu Microsoft Excel, które mogą być używane w planach budżetu."
+title: Szablony planowania budżetu dla programu Excel
+description: W tym temacie opisano sposób tworzenia szablonów programu Microsoft Excel, które mogą być używane w planach budżetu.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanSetLayout
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 079aa6bb4be020fc050b81c400050ed23d48f6ca
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 156688b705337331e083ebc19fded57b028acb67
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337056"
 ---
-
 # <a name="budget-planning-templates-for-excel"></a>Szablony planowania budżetu dla programu Excel
 
 [!include [banner](../includes/banner.md)]
@@ -136,7 +135,6 @@ Tak, większość standardowych funkcji programu Excel będzie działać w szabl
 Można również tworzyć i używać tabel i wykresów przestawnych w celu dodatkowego grupowania i wizualizacji danych budżetu. Na karcie **Dane** w grupie **Połączenia** kliknij przycisk **Odśwież wszystko**, a następnie kliknij opcję **Właściwości połączenia**. Kliknij kartę **Użycie**. W obszarze **Odśwież** zaznacz pole wyboru **Odśwież dane podczas otwierania pliku**. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
-
 
 
 

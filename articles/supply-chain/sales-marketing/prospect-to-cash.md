@@ -1,32 +1,31 @@
 ---
-title: "Prospekt na gotówkę"
-description: "Ten temat zawiera omówienie rozwiązania Prospekt na gotówkę działającego między programami Dynamics 365 for Finance and Operations a Dynamics 365 for Sales."
+title: Prospekt na gotówkę
+description: Ten temat zawiera omówienie rozwiązania Prospekt na gotówkę działającego między programami Microsoft Dynamics 365 for Finance and Operations i Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: b46ece384a28f8e78989253fcf467fbf3feaf1b7
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309502"
 ---
-
 # <a name="prospect-to-cash"></a>Prospekt na gotówkę
 
 [!include [banner](../includes/banner.md)]
@@ -47,13 +46,13 @@ W bieżącej wersji rozwiązania Prospekt na gotówkę udostępniono następują
 ## <a name="system-requirements-for-finance-and-operations"></a>Wymagania systemowe dla rozwiązania Finance and Operations
 Integracja w procesie Prospekt na gotówkę jest obsługiwana w następujących wersjach:
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition wer. 7.3 (grudzień 2017)
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (grudzień 2017 r.)
 
-- Dynamics 365 for Finance and Operations Enterprise Edition (grudzień 2017) — kompilacja aplikacji 7.3.11971.56116 z aktualizacją platformy 12 (7.0.4709.41129)
+- Dynamics 365 for Finance and Operations, Enterprise edition (grudzień 2017) — kompilacja aplikacji 7.3.11971.56116 z aktualizacją platformy 12 (7.0.4709.41129)
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Układ w rozwiązaniu Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017)
+### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (lipiec 2017 r.)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (lipiec 2017) — z aktualizacją platformy 8 (aplikacja w wersji 7.2.11792.56024 z platformą w wersji 7.0.4565.16212).
+- Dynamics 365 for Finance and Operations, Enterprise edition (lipiec 2017 r.) — z aktualizacją platformy 8 (kompilacji aplikacji 7.2.11792.56024 z platformą w wersji 7.0.4565.16212).
 - Poniżej znajduje się lista wymaganych poprawek:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** — ta poprawka umożliwia synchronizację zamówienia sprzedaży między modułem Sales a modułem Finance and Operations za pomocą funkcji integracji danych. Zapewnia również kilka innych ulepszeń.
@@ -63,9 +62,9 @@ Integracja w procesie Prospekt na gotówkę jest obsługiwana w następujących 
     > [!NOTE]
     > Należy zainstalować tylko poprawkę KB4045570, ponieważ instalacja obejmuje zmiany z innych poprawek. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Wprowadzenie do rozwiązania Dynamics 365 for Finance and Operations w wersji 1611 (listopad 2016)
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations w wersji 1611 (listopad 2016 r.)
 
-- Dynamics 365 for Finance and Operations w wersji 1611 (listopad 2016) z aktualizacją platformy 8 lub nowszą
+- Dynamics 365 for Finance and Operations w wersji 1611 (listopad 2016 r.) z aktualizacją platformy 8 lub nowszą
 
 - Poniżej znajduje się lista wymaganych poprawek:
 
@@ -81,6 +80,5 @@ Integracja w procesie Prospekt na gotówkę jest obsługiwana w następujących 
 
 Aby skorzystać z rozwiązania Prospekt na gotówkę, należy zainstalować następujące składniki:
 
-- Dynamics 365 for Sales wersja 1612 (8.2.1.207) (DB 8.2.1.207) online lub nowsza
+- Dynamics 365 for Sales w wersji 1612 (8.2.1.207) (DB 8.2.1.207) online lub nowszej
 - Rozwiązanie Prospekt na gotówkę dla programu Dynamics 365 for Sales, wersja 1.15.0.0 lub nowsza. To rozwiązanie jest dostępne do pobrania z usługi AppSource. [Pobierz rozwiązanie Prospekt na gotówkę dla programu Dynamics 365](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-

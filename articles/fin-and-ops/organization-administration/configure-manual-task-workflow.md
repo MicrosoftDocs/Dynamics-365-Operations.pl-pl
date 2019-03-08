@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie zadań ręcznych w przepływie pracy"
-description: "W tym temacie wyjaśniono sposób konfigurowania właściwości zadania ręcznego."
+title: Konfigurowanie zadań ręcznych w przepływie pracy
+description: W tym temacie wyjaśniono sposób konfigurowania właściwości zadania ręcznego.
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 669fce3ddade4d6e0a130da2420ab33ca4ff4671
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309755"
 ---
-
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurowanie zadań ręcznych w przepływie pracy
 
 [!include [banner](../includes/banner.md)]
@@ -136,7 +135,7 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisane to zadanie r
     </tr>
     <tr>
     <td>Użytkownik</td>
-    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Finance and Operations</td>
+    <td>Określeni użytkownicy Microsoft Dynamics 365 for Finance and Operations</td>
     <td>
     <ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
@@ -383,4 +382,3 @@ Gdy zadanie ręczne zostanie przypisane użytkownikowi, musi on podjąć wobec n
 5. Zaznacz pole wyboru **Deleguj**, jeśli użytkownik ma mieć możliwość przypisania zadania do innego użytkownika.
 6. Zaznacz pole wyboru **Przypisz ponownie**, jeśli użytkownik ma mieć możliwość przypisania zadania innemu użytkownikowi w kolejce elementów roboczych.
 7. Zaznacz pole wyboru **Zwolnienie**, jeśli użytkownik ma mieć możliwość przypisania zadania do kolejki elementów roboczych. Następnie inny użytkownik może wykonać to zadanie.
-

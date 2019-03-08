@@ -1,13 +1,13 @@
---- 
-title: "Kopiowanie formuły"
-description: "Ta procedura skupia się na tworzenie formuły zawierającej te same składniki co istniejąca formuła, ale z drobnymi różnicami."
+---
+title: Kopiowanie formuły
+description: Ta procedura skupia się na tworzenie formuły zawierającej te same składniki co istniejąca formuła, ale z drobnymi różnicami.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dd87ded3bcc20b94fae723424d9cc6b94049a1a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 036bd9f592ca584afad9d4b9b7a49a9787076056
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312446"
 ---
 # <a name="copy-a-formula"></a>Kopiowanie formuły
 
@@ -64,5 +64,4 @@ Ta procedura skupia się na tworzenie formuły zawierającej te same składniki 
 4. Na liście kliknij łącze w wybranym wierszu.
 5. Kliknij opcję Wybierz.
 6. Kliknij przycisk OK.
-
 

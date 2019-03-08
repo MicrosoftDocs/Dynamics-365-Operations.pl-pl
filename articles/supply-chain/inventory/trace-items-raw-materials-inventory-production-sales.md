@@ -1,13 +1,13 @@
 ---
-title: "Śledzenie towarów i surowców w zapasach, produkcji i sprzedaży"
-description: "W tym temacie opisano sposób korzystania ze śledzenia towaru do identyfikowania, gdzie towary lub surowce zostały użyte, są używane lub będą używane w produkcji i procesach sprzedaży."
+title: Śledzenie towarów i surowców w zapasach, produkcji i sprzedaży
+description: W tym temacie opisano sposób korzystania ze śledzenia towaru do identyfikowania, gdzie towary lub surowce zostały użyte, są używane lub będą używane w produkcji i procesach sprzedaży.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310077"
 ---
-
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Śledzenie towarów i surowców w zapasach, produkcji i sprzedaży
 
 [!include [banner](../includes/banner.md)]
@@ -141,4 +140,3 @@ Można wygenerować raport **Wysłane do klientów** w celu zidentyfikowania ilo
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Czy mogę śledzić produkty towarzyszące i produkty uboczne?
 Można śledzić produkty towarzyszące, ale nie można śledzić produktów ubocznych, ponieważ wymiary śledzenia zwykle nie są przypisane do produktów ubocznych. Podczas śledzenia towaru szczegóły śledzenia uwzględniają wszelkie pokrewne produkty towarzyszące. Węzeł, który zawiera produkt towarzyszący, zawiera określenie „co-product” (produkt towarzyszący) w szczegółach. Można również wyświetlić szczegóły dotyczące produktu towarzyszącego, zaznaczając węzeł w szczegółach śledzenia, a następnie klikając skróconą kartę **Produkcja**.
-

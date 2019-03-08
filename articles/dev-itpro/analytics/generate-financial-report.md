@@ -1,13 +1,13 @@
 ---
-title: "Generowanie raportów finansowych"
+title: Generowanie raportów finansowych
 description: Ten temat zawiera informacje o generowaniu sprawozdania finansowego.
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340897"
 ---
-
 # <a name="generate-financial-reports"></a>Generowanie raportów finansowych
 
 [!include [banner](../includes/banner.md)]
@@ -115,7 +114,7 @@ Brakujące konta są określane przy użyciu najniższej i najwyższej wartości
 > [!TIP]
 > Zalecane jest, aby w ramach sprawdzania poprawności uruchamiać tę procedurę przed generowaniem raportów miesięcznych oraz podczas tworzenia nowych modułów konstrukcyjnych.
 
-W raportach, które mają zakresy wartości, jest mniejsze prawdopodobieństwo brakujących kont. Jeśli to możliwe, używaj zakresów w blokach konstrukcyjnych, aby dodawać nowe konta podczas ich tworzenia. Jeśli jakikolwiek raport jest ustawiony na firmę @ANY, możesz zalogować się do określonej firmy i uruchomić analizę brakujących kont dla tej firmy.
+W raportach, które mają zakresy wartości, jest mniejsze prawdopodobieństwo brakujących kont. Jeśli to możliwe, używaj zakresów w blokach konstrukcyjnych, aby dodawać nowe konta podczas ich tworzenia. Jeśli w definicji raportu ustawiono dla firmy wartość @ANY, można zalogować się do określonej firmy i uruchomić dla niej analizę brakujących kont.
 
 > [!NOTE]
 > Po dodaniu nowej firmy należy ją dodać do drzew raportowania we wszelkich istniejących raportach. W przeciwnym razie firma nie zostanie uwzględniona w analizie brakujących kont.
@@ -158,4 +157,3 @@ Po uruchomieniu analizy brakujących kont dostępne są następujące skróty kl
 [Raporty finansowe](financial-reporting-intro.md)
 
 [Interfejs Projektanta raportów](report-designer-interface.md)
-

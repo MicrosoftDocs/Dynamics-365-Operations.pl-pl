@@ -1,13 +1,13 @@
 ---
-title: "Umowy sprzedaży"
-description: "Ten temat zawiera informacje dotyczące umów sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty."
+title: Umowy sprzedaży
+description: Ten temat zawiera informacje dotyczące umów sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty.
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f4ab396d06383e3d6fc7bfab2e01f1afe4aa8fc4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4db47f445fe820e65389799ddcb6ea4a99949178
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309525"
 ---
-
 # <a name="sales-agreements"></a>Umowy sprzedaży
 
 [!include [banner](../includes/banner.md)]
@@ -111,7 +110,6 @@ W pewnych sytuacjach, kiedy zamówienia sprzedaży są tworzone bezpośrednio, n
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Wymiary finansowe umów sprzedaży
 Wymiary finansowe można skopiować do nagłówków dokumentu lub pojedynczych wierszy umowy sprzedaży. W każdej chwili można zmienić wymiary w nagłówku umowy lub wiersza umowy. W takim przypadku wymiary są automatycznie kopiowane do nagłówka zwolnienia lub wiersza zwolnienia na zleceniach zwolnienia.
-
 
 
 

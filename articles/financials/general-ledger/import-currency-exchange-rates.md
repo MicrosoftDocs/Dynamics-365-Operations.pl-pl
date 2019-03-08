@@ -1,13 +1,13 @@
 ---
-title: "Importowanie kursów wymiany walut"
-description: "Jeżeli firma otrzymała faktury w walutach obcych, jest konieczne przeliczenie tych walut na walutę lokalną. Oznacza to, że są potrzebne aktualne kursy wymiany różnych walut. Ten temat zawiera omówienie wymaganych ustawień i przetwarzania importowania referencyjnych kursów wymiany publikowanych w Internecie przez dostawców kursów wymiany, takich jak Europejski Bank Centralny i Bank Centralny Rosji."
+title: Importowanie kursów wymiany walut
+description: Jeżeli firma otrzymała faktury w walutach obcych, jest konieczne przeliczenie tych walut na walutę lokalną. Oznacza to, że są potrzebne aktualne kursy wymiany różnych walut. Ten temat zawiera omówienie wymaganych ustawień i przetwarzania importowania referencyjnych kursów wymiany publikowanych w Internecie przez dostawców kursów wymiany, takich jak Europejski Bank Centralny i Bank Centralny Rosji.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: edd72b48a640126577dd7a2add3a4891ae505fdf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: df07066371cb7d9c69976c9714b6d2fe456a0308
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333399"
 ---
-
 # <a name="import-currency-exchange-rates"></a>Importowanie kursów wymiany walut
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ Można zaimportować kursy wymiany ze źródła dostawców kursów wymiany oraz 
 | **Utwórz wymagane pary walut**    | To pole wyboru decyduje o automatycznym tworzeniu par walut, jeśli jeszcze nie istnieją pary walut, które chcesz zaimportować. Ta opcja może być niedostępna dla niektórych dostawców.                                                                                                                                                                                               |
 | **Zastąp istniejące kursy wymiany**   | To pole wyboru steruje aktualizacją istniejącego kursu wymiany dla pary walut, gdy kurs wymiany na określony dzień już istnieje. Jeśli to pole wyboru nie jest zaznaczone, kurs wymiany dla określonych dat nie jest importowany, jeśli istnieje już inny kurs wymiany.                                                                                       |
 | **Zapobiegaj importowaniu w święto państwowe** | To pole wyboru steruje importem kursu wymiany z dnia ustawowo wolnego od pracy. Na przykład jeśli zaznaczysz to pole wyboru i używasz Europejskiego Banku Centralnego jako dostawcy kursu wymiany, system nie zaktualizuje kursu wymiany w święto państwowe respektowane przez bieżącą firmę. Ta opcja może być niedostępna dla niektórych dostawców. |
-
 
 
 

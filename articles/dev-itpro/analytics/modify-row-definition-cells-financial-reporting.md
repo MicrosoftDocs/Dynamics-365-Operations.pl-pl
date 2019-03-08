@@ -1,13 +1,13 @@
 ---
-title: "Modyfikowanie komórek definicji wiersza"
-description: "W tym artykule opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje."
+title: Modyfikowanie komórek definicji wiersza
+description: W tym artykule opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323647"
 ---
-
 # <a name="modify-row-definition-cells"></a>Modyfikowanie komórek definicji wiersza
 
 [!include [banner](../includes/banner.md)]
@@ -387,10 +386,10 @@ Możesz ograniczyć wiersz do istniejącego kodu księgi. Definicja kolumny musi
 Niektóre systemy księgowe obsługują atrybuty konta i atrybuty transakcji w danych finansowych. Te atrybuty działają na zasadzie podobnie jak wirtualne segmenty kont i mogą zawierać dodatkowe informacje dotyczące konta lub transakcji. Te dodatkowe informacje mogą być identyfikatorami konta, identyfikatorami partii, kodami pocztowymi lub innymi atrybutami. Jeśli system księgowy obsługuje atrybuty, możesz używać atrybutów konta lub transakcji jako modyfikatorów wierszy w definicji wiersza. Aby uzyskać informacje dotyczące sposobu zastępowania informacji wiersza, zobacz sekcję „Zastępowanie definicji kolumny” we wcześniejszej części tego artykułu.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Określanie łącza do komórki wymiarów finansowych
-Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansowych, które powinny znajdować się w każdym wierszu raportu. Ta komórka zawiera wartości wymiarów, ale można określić komórki w arkuszu programu Microsoft Excel zamiast lub oprócz wartości segmentów lub wartości wymiarów. Aby otworzyć okno dialogowe **Wymiary** kliknij dwukrotnie komórkę **Łącze do wymiarów finansowych**.
+Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansowych, które powinny znajdować się w każdym wierszu raportu. Ta komórka zawiera wartości wymiaru, ale można zamiast nich lub wraz z nimi określić komórki w arkuszu programu Microsoft Excel, wartości segmentu lub wartości wymiaru. Aby otworzyć okno dialogowe **Wymiary** kliknij dwukrotnie komórkę **Łącze do wymiarów finansowych**.
 
 > [!NOTE]
-> Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: \*, \[, \], { lub }. Aby określić informacje dla wiersza, które są już w definicji wiersza, dodaj informacje w komórce **Łącze do wymiarów finansowych**. Aby dodać nowe wiersze połączone z danymi finansowymi, użyj okna dialogowego **Wstaw wiersze z**, aby utworzyć nowe wiersze w definicji raportu. Tytuł kolumny zmienia się w zależności od tego, jak kolumna jest skonfigurowana i wyświetlana w następującej tabeli.
+> Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Aby określić informacje dla wiersza, który jest już wymieniony w definicji wierszy, należy dodać informacje w komórce **Łącze do Wymiary finansowe**. Aby dodać nowe wiersze połączone z danymi finansowymi, użyj okna dialogowego **Wstaw wiersze z**, aby utworzyć nowe wiersze w definicji raportu. Tytuł kolumny zmienia się w zależności od tego, jak kolumna jest skonfigurowana i wyświetlana w następującej tabeli.
 
 | Typ łącza, które jest zaznaczone       | Opis kolumny Łącze zmienia się na ten tekst |
 |----------------------------------|----------------------------------------------------|
@@ -429,14 +428,14 @@ Po wprowadzeniu wartości segmentu naturalnego w oknie dialogowym **Wymiary** mo
 Można określić zakres wartości segmentów lub wartości wymiarów. Zaletą określania zakresu jest to, że nie trzeba aktualizować definicji wiersza za każdym razem, gdy do danych finansowych dodawana jest nowa wartość segmentu lub wartość wymiaru. Na przykład zakres **+Konto=\[6100:6900\]** pobiera wartości z kont od 6100 do 6900 do kwoty wiersza. Gdy zakres zawiera symbol wieloznaczny (?), projektant raportów nie ocenia zakresu na zasadzie znak po znaku. Zamiast tego określane są niższe i wyższe krańce zakresu, a następnie uwzględniane są wartości krańcowe i wszystkie wartości między nimi.
 
 > [!NOTE]
-> Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: \*, \[, \], { lub }. Można dodać znak „&” tylko w przypadku automatycznego tworzenia definicji wierszy przy użyciu okna dialogowego **Wstawianie wierszy z wymiarów**.
+> Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Można dodać znak „&” tylko w przypadku automatycznego tworzenia definicji wierszy przy użyciu okna dialogowego **Wstawianie wierszy z wymiarów**.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Zakresy z wieloma segmentami lub wieloma wymiarami
 
 Jeśli wprowadzany jest zakres przy użyciu kombinacji wielu wartości wymiaru, porównanie zakresu jest wykonywane na zasadzie wymiar po wymiarze. Porównanie zakresu nie może być wykonywane ani na zasadzie znak po znaku ani na podstawie segmentu częściowego. Na przykład zakres **+Konto=\[5000:6000\], Dział=\[1000:2000\], Centrum kosztu=\[00\]** zawiera tylko konta, które pasują do każdego segmentu. W tym scenariuszu pierwszy wymiar musi mieścić się w zakresie od 5000 do 6000, drugi wymiar musi mieścić się w zakresie od 1000 do 2000, a ostatni wymiar musi mieć wartość 00. Na przykład **+Konto=\[5100\], Dział=\[1100\], Centrum kosztu=\[01\]** nie jest uwzględniony w raporcie, ponieważ ostatni segment nie mieści się w określonym zakresie. Jeśli wartość segmentu zawiera spacje, należy umieścić tę wartość w nawiasach kwadratowych (\[ \]). Następujące wartości są prawidłowe dla segmentu złożonego z czterech znaków: **\[ 234\], \[123 \], \[1 34\]**. Wartości wymiarów powinny być ujęte w nawiasy kwadratowe (\[ \]), a projektant raportów dodaje te nawiasy samodzielnie. Jeśli zakres obejmujący wiele segmentów lub wiele wymiarów zawiera symbole wieloznaczne (? lub \*), określane są górne i dolne krańce całego zakresu złożonego z wielu segmentów lub wielu wymiarów, a następnie dodawane są wartości krańcowe i wszystkie wartości między nimi. Jeśli zakres jest duży, np. cały zakres kont od 40000 do 99999, należy określić prawidłowe konto początkowe i końcowe, jeśli jest to możliwe.
 
 > [!NOTE] 
-> Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: \*, \[, \], { lub }. Można dodać znak „&” tylko w przypadku automatycznego tworzenia definicji wierszy przy użyciu okna dialogowego **Wstawianie wierszy z wymiarów**.
+> Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Można dodać znak „&” tylko w przypadku automatycznego tworzenia definicji wierszy przy użyciu okna dialogowego **Wstawianie wierszy z wymiarów**.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Dodawanie i odejmowanie z innych kont w definicji wiersza
 Aby dodać lub odjąć kwoty pieniężne na jednym koncie z kwot pieniężnych na innym koncie, można użyć znaku plus (+) i znaku minus (-) w komórce **Łącze do wymiarów finansowych**. W poniższej tabeli przedstawiono dopuszczalne formaty dla dodawania i odejmowania łącz do danych finansowych.
@@ -459,7 +458,7 @@ Aby dodać lub odjąć kwoty pieniężne na jednym koncie z kwot pieniężnych n
 Chociaż można modyfikować konta bezpośrednio, można również użyć okna dialogowego **Wymiary**, aby zastosować prawidłowe formatowanie do łącza danych finansowych. Każda z wartości może zawierać symbole wieloznaczne (? lub \*). Projektant raportów nie można jednak wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }.
 
 > [!NOTE]
-> Aby odjąć wartości, trzeba umieścić te wartości w nawiasach. Na przykład jeśli wpiszesz operację **450?-(4509)**, będzie ona wyświetlana jako **+Konto=\[4509\]-Konto=\[450?\]**, a projektant otrzymuje instrukcję odejmowania kwoty dla segmentu konta 4509 od kwoty dla każdego segmentu konta, który rozpoczyna się od 450.
+> W celu odjęcia wartości należy je umieścić w nawiasach. Na przykład jeśli wpiszesz operację **450?-(4509)**, będzie ona wyświetlana jako **+Konto=\[4509\]-Konto=\[450?\]**, a projektant otrzymuje instrukcję odejmowania kwoty dla segmentu konta 4509 od kwoty dla każdego segmentu konta, który rozpoczyna się od 450.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Dodawanie kont do innych kont i odejmowanie kont od innych kont
 
@@ -533,4 +532,3 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
-

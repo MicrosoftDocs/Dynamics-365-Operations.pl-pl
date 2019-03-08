@@ -1,13 +1,13 @@
 ---
 title: Obliczenie narzutu
-description: "W tym temacie opisano typowe procesy służące obliczaniu i podzielaniu kosztów ogólnych."
+description: W tym temacie opisano typowe procesy służące obliczaniu i podzielaniu kosztów ogólnych.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: HT
-ms.sourcegitcommit: 12ae99c15bafcd9cc08b30903fe3f251f446b17d
 ms.openlocfilehash: 4de705324ac497cfb11fae3dadc6f57d038fd0b5
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/05/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335124"
 ---
-
 # <a name="overhead-calculation"></a>Obliczenie narzutu
 
 [!include [banner](../includes/banner.md)]
@@ -1413,7 +1412,6 @@ W rachunkowości finansowej koszt 10 000,00 za energię elektryczną jest księg
 
 > [!NOTE]
 > W tym temacie opisano, jak podstawowy składnik kosztów — 10001 Energia elektryczna — przepływa przez obiekty kosztów. W efekcie ten koszt ogólny jest rozdzielany (alokowany) do najniższego poziomu w organizacji. Innymi słowy koszt jest zapisywany w ciężar (obciąża) obiekty kosztów na najniższym poziomie. Jeśli potrzebujesz obrazowego przepływu kosztów między obiektami kosztów, można to uzyskać za pomocą zasad akumulacji kosztów. Aby uzyskać więcej informacji, zobacz [Akumulacja kosztów](cost-rollup.md).
-
 
 
 

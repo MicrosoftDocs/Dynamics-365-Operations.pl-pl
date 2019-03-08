@@ -1,13 +1,13 @@
---- 
-title: "Zgłaszanie wyrobów gotowych do lokalizacji niekontrolowanej przez numer identyfikacyjny (zgłoszenie, maj 2016)"
-description: "Ten przewodnik po zadaniach zawiera przykład zgłaszania wyrobu gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny."
+---
+title: Zgłaszanie wyrobów gotowych do lokalizacji niekontrolowanej przez numer identyfikacyjny (zgłoszenie, maj 2016)
+description: Ten przewodnik po zadaniach zawiera przykład zgłaszania wyrobu gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrResourceGroup, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdParmCostEstimation, ProdParmStartUp, ProdParmReportFinished, WHSWorkTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4da6868a2184a76c435efe824f4670504e1134e7
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344554"
 ---
 # <a name="report-as-finished-to-a-non-license-plate-controlled-location--application-may-2016"></a>Zgłaszanie wyrobów gotowych do lokalizacji niekontrolowanej przez numer identyfikacyjny (zgłoszenie, maj 2016)
 
@@ -61,5 +61,4 @@ Ten przewodnik po zadaniach zawiera przykład zgłaszania wyrobu gotowego do lok
 17. W okienku akcji kliknij pozycję Magazyn.
 18. Kliknij opcję Szczegóły pracy.
     * Po zgłoszeniu zlecenia produkcyjnego jako gotowego nie została wygenerowana żadna praca odłożenia. Dzieje się tak, ponieważ zdefiniowano zasadę pracy, która blokuje generowanie pracy, gdy produkt L0101 jest zgłaszany jako gotowy do lokalizacji 001.  
-
 

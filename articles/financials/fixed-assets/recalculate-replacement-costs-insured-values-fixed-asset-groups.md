@@ -1,13 +1,13 @@
 ---
-title: "Ponowne obliczanie kosztów wymiany i wartości ubezpieczenia dla grup środków trwałych"
-description: "W tym artykule wyjaśniono proces aktualizowania kosztów wymiany i wartości ubezpieczenia środków trwałych."
+title: Ponowne obliczanie kosztów wymiany i wartości ubezpieczenia dla grup środków trwałych
+description: W tym artykule wyjaśniono proces aktualizowania kosztów wymiany i wartości ubezpieczenia środków trwałych.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0756287406ad12237632ffbd455dbc6ba15d9915
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: eb3db5863bf2fcca31b6af878e7324b079f1c630
-ms.openlocfilehash: ad706a9ee441858a6f4a128ff978e24efb6ecfce
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/12/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324383"
 ---
-
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Ponowne obliczanie kosztów wymiany i wartości ubezpieczenia dla grup środków trwałych
 
 [!include [banner](../includes/banner.md)]
@@ -74,7 +73,6 @@ Następnego dnia menedżer informuje Cię, że komputery spadły o 8% zamiast 10
 
 > [!NOTE]  
 > Można wycofać współczynnik –10 poprzez wprowadzenie dodatniego współczynnika 10 (lub współczynnika 2, czyli różnicy między –10 i –8), ponieważ kwoty nie zostaną obliczone zgodnie z zamierzeniem. 
-
 
 
 

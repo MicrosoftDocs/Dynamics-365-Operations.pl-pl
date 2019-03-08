@@ -1,13 +1,13 @@
 ---
-title: "Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)"
-description: "W tym temacie opisano nowe oraz zmienione funkcje dostępne w programie Dynamics 365 for Operations w wersji 1611."
+title: Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)
+description: W tym temacie opisano nowe oraz zmienione funkcje dostępne w programie Dynamics 365 for Operations w wersji 1611.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7e907813323ef6b1c8b83675be75456f5844fa0a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339080"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)
 
 [!include [banner](../includes/banner.md)]
@@ -764,7 +763,7 @@ Bezproblemowy handel wielokanałowy odnosi się do zarządzania i przetwarzania 
 
 | Co można zrobić | Dlaczego to jest ważne |
 |-----------------|-----------------------|
-| Wyświetlanie spersonalizowanych rekomendacje produktów w wielu miejscach bezpośredniej interakcji w punkcie sprzedaży (POS) w celu określenia, czym odbiorca może być zainteresowany, w oparciu o jego historię zakupów, towary na liście ich życzeń oraz towary, które inni podobni odbiorcy kupowali w sklepach internetowych i tradycyjnych. | U sprzedawców detalicznych z dużymi katalogami spersonalizowane rekomendacje pomagają odbiorcom znajdować ciekawe inne produkty, a sprzedawcom umożliwiają bardziej przemyślaną obsługę odbiorców. Eksponując produkty ukierunkowane na zainteresowania i nawyki zakupowe odbiorców, rekomendacje produktów mogą pomóc sprzedawać dodatkowe produkty oraz wzmacniać lojalność odbiorców. W programie Microsoft Dynamics 365 for Retail funkcjonalność rekomendacji produktów bazuje na usługach Cognitive Services i aparacie uczenia maszynowego Microsoft Azure. |
+| Wyświetlanie spersonalizowanych rekomendacje produktów w wielu miejscach bezpośredniej interakcji w punkcie sprzedaży (POS) w celu określenia, czym odbiorca może być zainteresowany, w oparciu o jego historię zakupów, towary na liście ich życzeń oraz towary, które inni podobni odbiorcy kupowali w sklepach internetowych i tradycyjnych. | U sprzedawców detalicznych z dużymi katalogami spersonalizowane rekomendacje pomagają odbiorcom znajdować ciekawe inne produkty, a sprzedawcom umożliwiają bardziej przemyślaną obsługę odbiorców. Eksponując produkty ukierunkowane na zainteresowania i nawyki zakupowe odbiorców, rekomendacje produktów mogą pomóc sprzedawać dodatkowe produkty oraz wzmacniać lojalność odbiorców. W rozwiązaniu Microsoft Dynamics 365 for Retail rekomendacje produktów są zasilane przez usługi kognitywne i uczenie maszynowe Microsoft Azure. |
 
 ### <a name="pos-task-recorder"></a>Rejestrator zadań w punkcie sprzedaży
 
@@ -801,7 +800,7 @@ System sklepu to opcja wdrożeniowa dla sprzedawców detalicznych, która pomaga
 | Sprzedawca detaliczny może mieć bezpieczną komunikację między lokalnym systemem sklepu a centralą. | Sprzedawca detaliczny może bezpiecznie komunikować się z poziomu systemu sklepu, gdy ma łączność z Internetem. |
 | Kierownik działu IT i dział operacyjny Microsoft mogą monitorować lokalny system sklepu i składać o nim sprawozdania (zmiany w zakresie diagnostyki i raportowania). | Kierownik działu IT i dział operacyjny Microsoft mogą bezpiecznie monitorować lokalny system sklepu i sprawnie rozwiązywać problemy. |
 
-### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Aplikacja Retail Modern POS na platformę uniwersalną systemu Windows
+### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Aplikacja Retail Modern POS na platformę uniwersalną systemu Windows Universal
 
 Obecnie moduł Retail Modern POS jest dostępny tylko jako aplikacja systemu Windows 8.1 na komputery stacjonarne i tablety, a moduł Cloud POS jako usługa do przeglądarek na komputerach stacjonarnych i tabletach. W tej wersji moduł Retail Modern POS jest przekształcany na aplikację zgodną z platformą uniwersalną systemu Windows. Ta zmiana umożliwi uruchamianie modułu Retail Modern POS na wszelkich urządzeniach z systemem Windows 10 (komputerach stacjonarnych, tabletach i telefonach), a nawet przełączanie między widokami na urządzeniach obsługujących standard Continuum.
 
@@ -819,7 +818,7 @@ Obecnie moduł Retail Modern POS jest dostępny tylko jako aplikacja systemu Win
 | Dostawca może uzyskiwać informacje o ilości zapasów konsygnacyjnych przesyłanych do odbiorcy. | Aby zafakturować odbiorcę, dostawca potrzebuje informacji o surowcach zakupionych z zapasów konsygnacyjnych i o dacie zakupu. Dostawca może również monitorować dostępne zapasy w siedzibie odbiorcy, używając do tego interfejsu współpracy z dostawcami. |
 | Przenoszenie zapasów należących do dostawcy za pomocą arkusza przeniesień. | Aby śledzić fizyczne położenie zapasów będących własnością dostawcy, trzeba mieć możliwość rejestrowania położenia w systemie. Za pomocą arkusza przeniesień można rejestrować fizyczne przesunięcia zapasów, takie jak przesunięcie z jednej lokalizacji w magazynie do innej lokalizacji w tym samym magazynie. |
 | Korygowanie zapasów należących do dostawcy za pomocą arkusza inwentaryzacji. | Ważne jest, aby ilość dostępnych zapasów zapisana w systemie była taka sama, jak fizycznie istniejące zapasy. Zapasy należące do dostawcy można korygować w górę i w dół przy użyciu procesów inwentaryzacji, takich jak procesy korekty ilości i procesy arkusza inwentaryzacji. |
-| Uzyskiwanie dodatkowych informacji o obsłudze konsygnacji w programie Dynamics 365 for Operations. | Aby uzyskać więcej informacji o obsłudze procesów konsygnacji, zobacz tematy [Konsygnacja](../../supply-chain/inventory/consignment.md), [Konfigurowanie konsygnacji](../../supply-chain/inventory/set-up-consignment.md), [Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych (przewodnik po zadaniu)](../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) i [Zmiana własności zapasów konsygnacyjnych w oparciu o zapotrzebowanie produkcyjne](../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Uzyskiwanie dodatkowych informacji o obsłudze konsygnacji w programie Dynamics 365 for Operations | Aby uzyskać więcej informacji o obsłudze procesów konsygnacji, zobacz tematy [Konsygnacja](../../supply-chain/inventory/consignment.md), [Konfigurowanie konsygnacji](../../supply-chain/inventory/set-up-consignment.md), [Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych (przewodnik po zadaniu)](../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) i [Zmiana własności zapasów konsygnacyjnych w oparciu o zapotrzebowanie produkcyjne](../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Portal współpracy z dostawcami (znany wcześniej jako portal dostawców)
 
@@ -946,4 +945,3 @@ Obecnie moduł Retail Modern POS jest dostępny tylko jako aplikacja systemu Win
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Nowości i zmiany](whats-new-changed.md)
-

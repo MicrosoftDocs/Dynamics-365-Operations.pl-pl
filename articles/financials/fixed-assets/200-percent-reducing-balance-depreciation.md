@@ -1,13 +1,13 @@
 ---
 title: 200% amortyzacja degresywna
-description: "Ten artykuł zawiera omówienie metody amortyzacji 200% amortyzacja degresywna."
+description: Ten artykuł zawiera omówienie metody amortyzacji 200% amortyzacja degresywna.
 author: saraschi2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ec51f9e12e31e81c56fab9e82d0fc18d45beb5e6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 24f677cd3b416c6301a664629cb73e3cbae9f457
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322727"
 ---
-
 # <a name="200-percent-reducing-balance-depreciation"></a>200% amortyzacja degresywna
 
 [!include [banner](../includes/banner.md)]
@@ -82,13 +81,12 @@ Metoda amortyzacji degresywnej 200% dzieli wartość 200% między lata okresu u�
 
 | Okres | Obliczenie kwoty rocznej amortyzacji | Wartość księgowa             | Wartość księgowa netto pod koniec roku |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
-| Rok 1 | (11 000 – 1000) × 40% = 4000                | 11 000 – 4000 = 7000 | 11 000 – 1000 – 4000 = 6000        |
-| Rok 2 | 6000 × 40% = 2400                           | 7000 – 2400 = 4600  | 6000 – 2400 = 3600                 |
-| Rok 3 | 3600 × 40% = 1440                           | 4600 – 1440 = 3160  | 3600 – 1440 = 2160                 |
+| Rok 1 | (11 000 – 1000) × 40% = 4000                | 11 000 – 4000 = 7000 | 11 000 – 1000 – 4000 = 6000        |
+| Rok 2 | 6000 × 40% = 2400                           | 7000 – 2400 = 4600  | 6000 – 2400 = 3600                 |
+| Rok 3 | 3600 × 40% = 1440                           | 4600 – 1440 = 3160  | 3600 – 1440 = 2160                 |
 
 > [!NOTE] 
 > Zwykle kiedy kwota, która jest obliczana przy użyciu metody amortyzacji degresywnej 200%, stanie się niższa od kwoty, która może zostać obliczona za pomocą metody liniowej, następuje przejście do metody liniowej dla pozostałego okresu użytkowania.
-
 
 
 

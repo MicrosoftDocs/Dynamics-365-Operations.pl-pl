@@ -1,13 +1,13 @@
 ---
-title: Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Finance and Operations &#8211; Magazynowanie
-description: "W tym temacie opisano sposób instalowania i konfigurowania programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie."
+title: Instalowanie i konfigurowanie Microsoft Dynamics 365 for Finance and Operations &#8211; magazynowanie
+description: W tym temacie opisano sposób instalowania i konfigurowania programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: f5e99351d79cb5898c6d5565d3d3197a8fe860df
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0967b10c2037c24c044f38c49b1b998f6771c66b
-ms.openlocfilehash: a1f3cb65e370154e8f3f94780ffb5cab223c85f8
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316126"
 ---
-
-# <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Finance and Operations &#8211; Magazynowanie
+# <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Instalowanie i konfigurowanie Microsoft Dynamics 365 for Finance and Operations &#8211; magazynowanie
 
 [!include [banner](../includes/banner.md)]
 
@@ -47,17 +46,19 @@ Aplikacja jest dostępna w systemach operacyjnych Windows i Android. Aby można 
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0, 7.0, 8.0                                                                                                                                                     |
 | Windows (UWP)               | Windows 10 (wszystkie wersje)                                                                                                                                                   |
-| Finance and Operations | Microsoft Dynamics 365 for Operations w wersji 1611 <br>— lub — <br>Microsoft Dynamics AX wersja 7.0/7.0.1 i aktualizacja nr 2 platformy Microsoft Dynamics AX z poprawką KB 3210014 |
+| Finance and Operations | Microsoft Dynamics 365 for Operations, wersja 1611 <br>— lub — <br>Microsoft Dynamics AX w wersji 7.0/7.0.1 i aktualizacja 2 platformy Microsoft Dynamics AX z poprawką KB 3210014 |
 
 ## <a name="get-the-app"></a>Pobieranie aplikacji
 -   Windows (UWP)
      - [Finance and Operations — Magazynowanie w Sklepie Windows](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 -   Android
     - [Finance and Operations — Magazynowanie w sklepie Google Play](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
-    - [Finance and Operations — Magazynowanie w galerii aplikacji Zebra](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
+
+> [!NOTE]
+> Galerii aplikacji Zebra została wycofana, co oznacza, że aplikacja Finance and Operations — Magazynowanie nie będzie już dostępna do pobrania z tej lokalizacji.
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a>Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory
-Aby umożliwić aplikacji interakcje z konkretnym serwerem programu Finance and Operations, należy zarejestrować aplikację usługi internetowej w usłudze Azure Active Directory dla dzierżawy programu Finance and Operations. Ze względów bezpieczeństwa zaleca się utworzenie aplikacji usługi internetowej dla każdego używanego urządzenia. Aby utworzyć aplikację usługi internetowej w usłudze Active Directory Azure (Azure AD), wykonaj następujące kroki:
+Aby umożliwić aplikacji interakcje z konkretnym serwerem programu Finance and Operations, należy zarejestrować aplikację usługi internetowej w usłudze Azure Active Directory dla dzierżawy programu Finance and Operations. Ze względów bezpieczeństwa zaleca się utworzenie aplikacji usługi internetowej dla każdego używanego urządzenia. Aby utworzyć aplikację usługi internetowej w usłudze Azure Active Directory (Azure AD), wykonaj następujące kroki:
 
 1.  W przeglądarce sieci web przejdź do strony <https://portal.azure.com>.
 2.  Wprowadź nazwę i hasło użytkownika mającego dostęp do subskrypcji usługi Azure.
@@ -79,8 +80,8 @@ Aby umożliwić programowi Finance and Operations używanie aplikacji Azure AD, 
     2.  Utwórz nowego użytkownika.
     3.  Przypisz użytkownika urządzenia przenośnego pracującego w magazynie, jak pokazano na poniższym zrzucie ekranu. [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
-2.  Skojarz aplikację Active Directory Azure z użytkownikiem aplikacji magazynowania.
-    1.  W programie Finance and Operations wybierz kolejno opcje **Administrowanie systemem** &gt; **Ustawienia** &gt; **Aplikacje usługi Azure Active Directory**.
+2.  Skojarz aplikację Azure Active Directory z użytkownikiem aplikacji magazynowania.
+    1.  W programie Finance and Operations wybierz kolejno opcje **Administrowanie systemem** &gt; **Ustawienia** &gt; **Aplikacje usługi Azure Active Directory**
     2.  Utwórz nowy wiersz.
     3.  Wypełnij pole **Identyfikator klienta** (identyfikatorem uzyskanym w ostatniej sekcji), nadaj klientowi nazwę i wybierz uprzednio utworzonego użytkownika. Zaleca się znakowanie wszystkich urządzeń, tak aby w razie ich zgubienia można było na tej stronie łatwo usunąć im dostęp do programu Finance and Operations. [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
 
@@ -103,7 +104,7 @@ Aby dowiedzieć się więcej o tym, jak w programie Dynamics 365 for Finance and
 ## <a name="remove-access-for-a-device"></a>Usuwanie dostępu urządzenia
 Jeśli urządzenie zostanie zgubione lub dostanie się w niepowołane ręce, należy usunąć temu urządzeniu dostęp do programu Finance and Operations. Następujące kroki opisują zalecany proces usuwania dostępu.
 
-1.  W programie Finance and Operations wybierz kolejno opcje **Administrowanie systemem** &gt; **Ustawienia** &gt; **Aplikacje usługi Azure Active Directory**.
+1.  W programie Finance and Operations wybierz kolejno opcje **Administrowanie systemem** &gt; **Ustawienia** &gt; **Aplikacje usługi Azure Active Directory**
 2.  Usuń wiersz odpowiadający urządzeniu, któremu chcesz cofnąć dostęp. Należy zapamiętać wartość pola **Identyfikator klienta** używany dla usuniętego urządzenia. Będzie ona potrzebna później.
 3.  Zaloguj się do portalu Azure pod adresem <https://portal.azure.com>.
 4.  W lewym menu kliknij ikonę **Active Directory** i upewnij się, że jesteś w poprawnym katalogu.
@@ -111,4 +112,3 @@ Jeśli urządzenie zostanie zgubione lub dostanie się w niepowołane ręce, nal
 6.  Upewnij się, że wartość **Identyfikator klienta** dla aplikacji jest taka sama, jak w kroku 2 w tej sekcji.
 7.  W górnym okienku kliknij przycisk **Usuń**.
 8.  W komunikacie potwierdzenia kliknij przycisk **Tak**.
-

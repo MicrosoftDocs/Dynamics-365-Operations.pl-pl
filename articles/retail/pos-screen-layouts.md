@@ -1,13 +1,13 @@
 ---
-title: "Układy ekranu w aplikacji POS"
-description: "Ten temat zawiera informacje dotyczące układów ekranu w aplikacji Microsoft Dynamics 365 for Retail Point of Sale (POS)."
+title: Układy ekranu w aplikacji POS
+description: Ten temat zawiera informacje dotyczące układów ekranu w środowiskach POS aplikacji Microsoft Dynamics 365 for Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321899"
 ---
-
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Układy ekranu w aplikacji POS
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje dotyczące układów ekranu w aplikacji Microsoft Dynamics 365 for Retail Point of Sale (POS).
+Ten temat zawiera informacje dotyczące układów ekranu w środowiskach POS aplikacji Microsoft Dynamics 365 for Retail.
 
 Interfejs użytkownika (UI) programu Retail POS można konfigurować przy użyciu kombinacji profili graficznych i układów ekranu, które się przypisuje do sklepów, kas i/lub użytkowników.
 
@@ -51,7 +50,7 @@ Profile graficzne są przypisywane do kas. Określają elementy wizualnych, któ
 - **Opis** — Można wprowadzić znaczącą nazwę, która pomoże identyfikować profil odpowiedni w danej sytuacji.
 - **Motyw** — Można wybierać między motywami aplikacji Jasny i Ciemny. Motyw ma wpływ na kolory czcionki i tła w całej aplikacji.
 - **Kolor wiodący** — Kolor wiodący jest używany w całej aplikacji POS do odróżniania lub wyróżniania pewnych elementów wizualnych, takich jak kafelki, przyciski poleceń i hiperłącza. Zazwyczaj te elementy wykonują różne akcje.
-- **Kolor nagłówka** — Można skonfigurować kolor nagłówka strony spełniający wymagania identyfikacji wizualnej sprzedawcy detalicznego. Ta funkcja jest dostępna tylko w programie Microsoft Dynamics 365 for Retail w wersji 1611.
+- **Kolor nagłówka** — Można skonfigurować kolor nagłówka strony spełniający wymagania identyfikacji wizualnej sprzedawcy detalicznego. Ta funkcja nie jest dostępna tylko w Microsoft Dynamics 365 for Retail wersja 1611.
 - **Tło logowania** — Można określić obraz tła dla ekranu logowania. Rozmiary plików obrazów tła powinny być jak najmniejsze, ponieważ przechowywanie i ładowanie dużych plików może mieć negatywny wpływ na szybkość działania i zachowanie aplikacji.
 - **Tło aplikacji** — Można określić obraz tła, który będzie używany zamiast jednolitego koloru motywu w całej aplikacji. Podobnie jak w przypadku teł logowania, rozmiar pliku powinien być jak najmniejszy.
 
@@ -194,4 +193,3 @@ Projektant siatki przycisków pozwala konfigurować siatki przycisków, których
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Instalowanie projektanta układów aplikacji Retail POS](install-pos-layout-designer.md)
-

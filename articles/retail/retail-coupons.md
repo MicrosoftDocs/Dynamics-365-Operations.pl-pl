@@ -1,31 +1,30 @@
 ---
-title: "Konfigurowanie kuponów dla sprzedaży detalicznej"
-description: "Ten temat zawiera omówienie koncepcji kuponów handlu detalicznego oraz wyjaśnienie, jak je konfigurować."
+title: Konfigurowanie kuponów dla sprzedaży detalicznej
+description: Ten temat zawiera omówienie koncepcji kuponów handlu detalicznego oraz wyjaśnienie, jak je konfigurować.
 author: scott-tucker
 manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336596"
 ---
-
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurowanie kuponów dla sprzedaży detalicznej
 
 [!include [banner](includes/banner.md)]
@@ -81,4 +80,3 @@ Funkcjonalność kuponów obejmuje wiele odrębnych funkcji w programie Dynamics
 - **Program HQ jest częściowo zaktualizowany, ale aplikacje Retail Server i POS nie są zaktualizowane.** W aktualizacji programu HQ są aktualizowane strony kuponu i rabatu oraz aparat ustalania cen detalicznych. Jeśli tylko jeden z tych dwóch składników zostanie zaktualizowany, niektóre strony w module Retail będą zawierały niezgodne dane obliczania cen. W związku z tym podczas obliczania rabatów mogą się pojawić nieoczekiwane obliczenia rabatów lub błędy.
 - **Program HQ jest zaktualizowany, ale aplikacje Retail Server i POS nie są zaktualizowane (N-1).** Ponieważ nie wszystkie sklepy detaliczne mogą zostać zaktualizowane w tym samym czasie, zaleca się, aby przed zaktualizowaniem sklepów detalicznych zaktualizować aplikację HQ. W scenariuszu N-1 nowe funkcje dotyczące kuponów nie będą dostępne w sklepach, które nie zostały jeszcze zaktualizowane. Na przykład funkcjonalność kuponów wprowadza wiersze wykluczenia. Użycie opcji wykluczenia do wierszy rabatu spowoduje, że nie będą one stosowane w sklepie detalicznym, który korzysta ze starszej wersji.
 - **Program HQ nie jest zaktualizowany, ale aplikacje Retail Server i POS są zaktualizowane (N+1).** Ponieważ zaktualizowany aparat kalkulacji cen w aplikacji Retail Server może obsługiwać starsze kody rabatów podczas obliczania cen, aktualizacja nie powinna mieć żadnego funkcjonalnego wpływu w tym scenariuszu.
-

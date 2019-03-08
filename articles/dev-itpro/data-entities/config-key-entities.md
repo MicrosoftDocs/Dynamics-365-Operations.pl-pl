@@ -1,13 +1,13 @@
 ---
 title: Klucze konfiguracji a jednostki danych
-description: "W tym temacie opisano związek między kluczami konfiguracji a jednostkami danych w programie Microsoft Dynamics 365 for Finance and Operations."
+description: W tym temacie opisano relację między kluczami konfiguracji i jednostkami danych w Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 8d07a0572e56e97d42c0e1b841905f828edc6f51
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336481"
 ---
-
-# <a name="configuration-keys-and-data-entities"></a>Klucze konfiguracji a jednostki danych
+# <a name="configuration-keys-and-data-entities"></a>Klucze konfiguracji i jednostki danych
 
 [!include [banner](../includes/banner.md)]
 
@@ -96,4 +95,3 @@ Sprawdzanie podczas wykonywania jest uruchamiane przy użyciu metadanych kluczy 
 Po każdym zaktualizowaniu kluczy konfiguracji na poziomie jednostki, tabeli lub pola należy odświeżyć listę jednostek w strukturze zarządzania danymi. Daje to pewność, że struktura pobierze najnowsze ustawienia kluczy konfiguracji. Do czasu odświeżenia listy jednostek będzie wyświetlane następujące ostrzeżenie na stronie listy jednostek. Aktualizacje kluczy konfiguracji zaczną obowiązywać natychmiast po odświeżeniu listy jednostek. Po wprowadzaniu modyfikacji kluczy konfiguracji zalecamy sprawdzenie poprawności istniejących projektów danych i zadań, aby mieć pewność, że działają zgodnie z oczekiwaniami.
 
 ![Pola docelowe](./media/Target_fields_3.png)
-

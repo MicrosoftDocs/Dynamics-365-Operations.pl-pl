@@ -1,13 +1,13 @@
 ---
 title: Dostawy alternatywne
-description: "Osoby wypełniające zamówienia sprzedaży mogą za pomocą strony Dostawy alternatywne wykrywać alternatywne opcje realizacji zamówień."
+description: Osoby wypełniające zamówienia sprzedaży mogą za pomocą strony Dostawy alternatywne wykrywać alternatywne opcje realizacji zamówień.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesLineDeliveryDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 1fbf8f08322c954a482777abcf041ff0b9d8fb77
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 855fdd0e57a7001628b715038785379d5a986789
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328385"
 ---
-
 # <a name="delivery-alternatives"></a>Dostawy alternatywne
 
 [!include [banner](../includes/banner.md)]
@@ -150,7 +149,6 @@ Na tej karcie są eksponowane skutki wybranej alternatywnej opcji dostawy. Klikn
 --------
 
 [Zobowiązanie do zamówienia](delivery-dates-available-promise-calculations.md)
-
 
 
 

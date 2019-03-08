@@ -1,13 +1,13 @@
---- 
-title: "Dystrybucja produktów z centrum dystrybucji do sklepu za pomocą dystrybucji na zamówienie"
-description: "Ta procedura prowadzi przez kolejne kroki tworzenia i przetwarzania dystrybucji na zamówienie w celu dostarczenia produktów z jednej lokalizacji do jednego lub wielu sklepów."
+---
+title: Dystrybucja produktów z centrum dystrybucji do sklepu za pomocą dystrybucji na zamówienie
+description: Ta procedura prowadzi przez kolejne kroki tworzenia i przetwarzania dystrybucji na zamówienie w celu dostarczenia produktów z jednej lokalizacji do jednego lub wielu sklepów.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailBuyersPush, InventLocationIdLookup, InventItemIdLookupSimple, RetailReplenishmentTreeLookup
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 20c2734a8339279e3f13ca9f0a0d5398c87f846f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 9d9a5d4fdece1cfb573224bd54d96ccd281c0f09
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343289"
 ---
 # <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a>Dystrybucja produktów z centrum dystrybucji do sklepu za pomocą dystrybucji na zamówienie
 
@@ -52,5 +52,4 @@ Ta procedura prowadzi przez kolejne kroki tworzenia i przetwarzania dystrybucji 
 18. Kliknij przycisk Oblicz ilości i przejrzyj ilości, które zostały dodane do wierszy w sekcji Magazyn.
 19. Kliknij opcję Utwórz zamówienie.
 20. Kliknij przycisk Tak.
-
 

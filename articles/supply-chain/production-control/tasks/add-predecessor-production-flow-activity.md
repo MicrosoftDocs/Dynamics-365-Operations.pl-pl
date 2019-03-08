@@ -1,13 +1,13 @@
---- 
-title: "Dodawanie działania poprzedzającego do działania przepływu produkcji"
-description: "W wersji przepływu produkcji wszystkie działania muszą być ustawione kolejno."
+---
+title: Dodawanie działania poprzedzającego do działania przepływu produkcji
+description: W wersji przepływu produkcji wszystkie działania muszą być ustawione kolejno.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityRelationNew, PlanActivityLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9acb1c2672af70f535f3dce1c8f5a97e8d479158
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d19fb20e8cc941daeaa506e4bf1cb0c7031cf2ee
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343680"
 ---
 # <a name="add-a-predecessor-to-a-production-flow-activity"></a>Dodawanie działania poprzedzającego do działania przepływu produkcji
 
@@ -51,5 +51,4 @@ Aby uzyskać więcej informacji, zobacz oficjalny dokument „Przepływy produkc
 4. W polu Wskaźnik czasu cyklu wpisz liczbę.
     * Domyślny współczynnik czasu cyklu dla relacji działań wynosi 1. Zakłada on, że oba działania są wykonywane w tym samym tempie lub czasie taktu. Jeżeli zdarzenie poprzedzające jest wykonywane w szybszym tempie (niższym czasie taktu), współczynnik powinien być niższe niż 1. Jeżeli zdarzenie poprzedzające odbywa się w wolniejszym tempie (wyższy czas taktu), współczynnik czasu cyklu jest większy niż 1.  
 5. Kliknij przycisk OK.
-
 

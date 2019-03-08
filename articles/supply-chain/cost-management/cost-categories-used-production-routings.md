@@ -1,13 +1,13 @@
 ---
-title: "Kategorie kosztów używane w marszrutach produkcji"
-description: "Ten artykuł zawiera informacje o kategoriach kosztów mających zastosowanie do środowisk produkcyjnych, w których są używane marszruty."
+title: Kategorie kosztów używane w marszrutach produkcji
+description: Ten artykuł zawiera informacje o kategoriach kosztów mających zastosowanie do środowisk produkcyjnych, w których są używane marszruty.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCategory, RouteCostCategoryPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 90177a6b8dd277ba1180073c9cf416f857c5d730
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 53e038183a10b8732a9a5e0f25aac440c224400e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315804"
 ---
-
 # <a name="cost-categories-used-in-production-routing"></a>Kategorie kosztów używane w marszrutach produkcji
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,6 @@ Rekord kosztu w kategorii kosztów może być specyficzny dla oddziału lub ogó
 Operacja marszruty zazwyczaj dziedziczy kategorie kosztów przypisane do zasobu operacyjnego lub operacji głównej. Po utworzeniu zlecenia produkcyjnego operacje marszruty produkcji odzwierciedlają wybraną wersję marszruty. Można ręcznie zastąpić kategorie kosztów przypisane do operacji w marszrucie produkcji. 
 
 Niektóre typy działań produkcyjnych mogą mieć zastosowanie do szacowania i raportowania czasu trwania projektu. W takim przypadku kategoria kosztów jest wymagana na potrzeby produkcji i projektu. Jeśli kategoria kosztów jest oznaczona do używania w projektach, należy zdefiniować dodatkowe informacje związane z projektami.
-
 
 
 

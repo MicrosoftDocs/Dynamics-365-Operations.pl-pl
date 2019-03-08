@@ -1,13 +1,13 @@
---- 
-title: "Używanie szablonu rekordu do tworzenia nowego rekordu"
-description: "W tej procedurze pokazano sposób wykorzystania wcześniej zdefiniowanego szablonu rekordu do utworzenia nowego rekordu."
+---
+title: Używanie szablonu rekordu do tworzenia nowego rekordu
+description: W tej procedurze pokazano sposób wykorzystania wcześniej zdefiniowanego szablonu rekordu do utworzenia nowego rekordu.
 author: margoc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, SysRecordTemplateSelect
 audience: Application User
 ms.reviewer: margoc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e32efc72a4f1f60afd9e2c699db1fae0b70d529c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355134"
 ---
 # <a name="use-record-template-to-create-a-new-record"></a>Używanie szablonu rekordu do tworzenia nowego rekordu
 
@@ -38,5 +38,4 @@ Ta procedura wykorzystuje firmę USMF.
     * Pojawi się monit o wybranie szablonu. Wybierz ten, który odpowiada Twojej potrzebie biznesowej.  
 3. Na liście znajdź i zaznacz odpowiedni rekord.
 4. Kliknij przycisk OK.
-
 

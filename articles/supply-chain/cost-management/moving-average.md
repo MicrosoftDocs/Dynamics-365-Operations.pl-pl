@@ -1,13 +1,13 @@
 ---
-title: "Średnia ruchoma"
-description: "Średnia ruchoma to metoda kosztów ciągłych oparta na zasadzie średniej, a w której koszty wydań z magazynu nie zmieniają się po zmianie kosztu zakupu. Różnica jest kapitalizowana i oparta na obliczeniu proporcjonalnym. Pozostała kwota jest zaliczana w koszty."
+title: Średnia ruchoma
+description: Średnia ruchoma to metoda kosztów ciągłych oparta na zasadzie średniej, a w której koszty wydań z magazynu nie zmieniają się po zmianie kosztu zakupu. Różnica jest kapitalizowana i oparta na obliczeniu proporcjonalnym. Pozostała kwota jest zaliczana w koszty.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0befa0e31347c9ee15ac0426fa3314b151a0200d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348073"
 ---
-
 # <a name="moving-average"></a>Średnia ruchoma
 
 [!include [banner](../includes/banner.md)]
@@ -113,8 +112,7 @@ W tym przykładzie ruchomej średniej raport wartości zapasów jest drukowany w
 | 8 października        | 8 października    | Przeszacowanie średniej ruchomej |          | 4,00   | 16.00             |
 |                  | 31 października   | Razem                      | 2        | 32.00  | 16.00             |
 
- **Uwaga:** Nie można uzgodnić księgi głównej z zapasami za pomocą opcji **Sortowanie czasu transakcji**. Raport musi być wydrukowany za pomocą opcji **Data księgowania**.
-
+ **Uwaga:** Nie można uzgodnić księgi głównej z zapasami za pomocą opcji **Sortowanie czasu transakcji**. Raport musi być wydrukowany za pomocą opcji **Data księgowania**.
 
 
 

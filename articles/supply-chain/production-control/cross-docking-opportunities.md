@@ -1,13 +1,13 @@
 ---
-title: "Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych"
-description: "W tym temacie opisano sposób zarządzania procesem przeładunku kompletacyjnego materiału, który jest zgłaszany jako gotowy z linii produkcyjnej do doku transportu wychodzącego."
+title: Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
+description: W tym temacie opisano sposób zarządzania procesem przeładunku kompletacyjnego materiału, który jest zgłaszany jako gotowy z linii produkcyjnej do doku transportu wychodzącego.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8691bb6702028070810a1503add33985de5ede3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 62194012cfbe101d19e9de3254afb004da79a562
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329029"
 ---
-
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
 
 [!include [banner](../includes/banner.md)]
@@ -126,6 +125,5 @@ Po zgłoszeniu produktu jako gotowego na linii produkcyjnej jest on przenoszony 
 ### <a name="additional-information"></a>Informacje dodatkowe
 
 -   Scenariusz przeładunku kompletacyjnego jest obsługiwany dla towarów wchodzących w skład partii i serii, gdzie wymiary partii i numeru seryjnego są zdefiniowane powyżej i poniżej lokalizacji w hierarchii rezerwacji. 
-
 
 

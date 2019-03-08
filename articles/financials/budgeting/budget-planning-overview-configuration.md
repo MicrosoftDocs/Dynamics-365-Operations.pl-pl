@@ -1,13 +1,13 @@
 ---
-title: "Przegląd planowania budżetu"
-description: "Ten artykuł zawiera wprowadzenie do koncepcji planowania budżetu oraz informacje pomocne w konfigurowaniu planowania budżetu i odnośnych procesów."
+title: Przegląd planowania budżetu
+description: Ten artykuł zawiera wprowadzenie do koncepcji planowania budżetu oraz informacje pomocne w konfigurowaniu planowania budżetu i odnośnych procesów.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8a262b5200c8071bec78ff6d3ed7976d4b2057ea
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329926"
 ---
-
 # <a name="budget-planning-overview"></a>Przegląd planowania budżetu
 
 [!include [banner](../includes/banner.md)]
@@ -58,7 +57,7 @@ Planowania budżetu można używać do wykonywania następujących zadań:
 -   Automatyczne wysyłanie planów budżetu, wraz z arkuszami, uzasadnieniami i innymi załącznikami, do przejrzenia i zatwierdzenia.
 -   Konsolidowanie wielu planów budżetu z niższego poziomu organizacji do jednego nadrzędnego planu budżetu na wyższym poziomie w organizacji. Można również opracować pojedynczy plan budżetu na wyższym poziomie organizacji i zaalokować budżet do niższych poziomów organizacji.
 
-Planowanie budżetu jest zintegrowane z innymi modułami programu Microsoft Dynamics 365 for Finance and Operations. Pozwala to przenieść informacje z poprzednich budżetów, rzeczywistych wydatków, środków trwałych i zasobów ludzkich. Planowanie budżetu jest także zintegrowane z programami Microsoft Excel i Microsoft Word, dzięki czemu można użyć tych narzędzi do pracy z danymi planowania budżetu. Na przykład, menedżer budżetu może wyeksportować wniosek budżetowy działu ze scenariusza planu budżetu do arkusza programu Excel. Dane można analizować, aktualizować i obrazować na wykresie w arkuszu, a następnie publikować z powrotem do wierszy planu budżetu.
+Planowanie budżetu jest zintegrowane z innymi modułami Microsoft Dynamics 365 for Finance and Operations. Pozwala to przenieść informacje z poprzednich budżetów, rzeczywistych wydatków, środków trwałych i zasobów ludzkich. Ponieważ planowanie budżetu jest także zintegrowane z programami Microsoft Excel i Microsoft Word, można użyć tych programów do pracy z danymi planowania budżetu. Na przykład, menedżer budżetu może wyeksportować wniosek budżetowy działu ze scenariusza planu budżetu do arkusza programu Excel. Dane można analizować, aktualizować i obrazować na wykresie w arkuszu, a następnie publikować z powrotem do wierszy planu budżetu.
 
 ## <a name="configuring-budget-planning"></a>Konfigurowanie planowania budżetu
 Strona **Konfiguracja planowania budżetu** zawiera większość ustawień, które są wymagane do tworzenia planowania budżetu. W poniższych sekcjach opisano niektóre kluczowe czynniki, o których trzeba pamiętać podczas konfigurowania planowania budżetu. Po zakończeniu konfiguracji można ustawić procesy planowania budżetu.
@@ -188,7 +187,6 @@ W menu **Akcje** można też utworzyć nowy proces przez skopiowanie istniejące
 Innym przydatnym poleceniem w menu **Akcje** jest **Wyświetlenie stanu procesu budżetu**. To polecenie graficznie przedstawia plany budżetu w procesie wraz z odpowiednimi danymi, takimi jak stan przepływu pracy planów, podsumowania według kwot i jednostki oraz przechodzenie jednym kliknięciem do samych planów budżetu.
 
 [![Stan procesu planowania budżetu](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
-
 
 
 

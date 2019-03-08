@@ -1,13 +1,13 @@
 ---
 title: Mobilny obszar roboczy Zatwierdzenia faktur
-description: "Ten temat zawiera informacje o komórkowym obszarze roboczym Zatwierdzenia faktur. Ten obszar roboczy wyświetla listę faktur, które zostały Ci przypisane przez proces przepływu pracy nagłówków faktur od dostawców."
+description: Ten temat zawiera informacje o komórkowym obszarze roboczym Zatwierdzenia faktur. Ten obszar roboczy wyświetla listę faktur, które zostały Ci przypisane przez proces przepływu pracy nagłówków faktur od dostawców.
 author: abruer
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: ff726670e0fd7566a74e6def73555a7c53b86f97
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6c95c2779d996f489679c8dda4cda462ba0a05ac
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327005"
 ---
-
 # <a name="invoice-approvals-mobile-workspace"></a>Mobilny obszar roboczy Zatwierdzenia faktur
 
 [!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Zatwierdzenia faktur**. Ten obszar roboczy wyświetla listę faktur, które zostały Ci przypisane przez proces przepływu pracy nagłówków faktur od dostawców. 
 
-Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations.
+Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations Mobile.
 
 ## <a name="overview"></a>Przegląd
 
@@ -49,7 +48,7 @@ Aby można było używać tego mobilnego obszaru roboczego, muszą być spełnio
 </thead>
 <tbody>
 <tr class="odd">
-<td>W organizacji musi być wdrożone oprogramowanie Microsoft Dynamics 365 for Finance and Operations.</td>
+<td>W organizacji musi być wdrożone rozwiązanie Microsoft Dynamics 365 for Finance and Operations.</td>
 <td>Administrator systemu</td>
 <td>Zobacz <a href="../deployment/deploy-demo-environment.md">Wdrażanie środowiska demonstracyjnego</a>.
 </td>
@@ -66,13 +65,13 @@ Aby można było używać tego mobilnego obszaru roboczego, muszą być spełnio
 
 Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
--   [Telefony z systemem Android](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Logowanie do aplikacji mobilnej
 
 1.  Uruchom aplikację na urządzeniu komórkowym.
-2.  Wprowadź adres URL usługi Microsoft Dynamics 365.
+2.  Wprowadź swój adres URL w usłudze Microsoft Dynamics 365.
 3.  Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła. Wprowadź swoje poświadczenia.
 4.  Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, trzeba odświeżyć listę komórkowych obszarów roboczych.
 
@@ -88,4 +87,3 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 7.  Wybierz opcję **Załączniki**, aby wyświetlić wszelkie notatki lub pliki dołączone do faktury.
 8.  Na stronie **Szczegóły faktury** zaznacz odpowiednią akcję przepływu pracy, aby ukończyć proces przeglądu.
 9.  Wybierz opcję **Gotowe**.
-

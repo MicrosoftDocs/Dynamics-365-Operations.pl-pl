@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie arkusza odpisów dla odbiorcy"
-description: "W tym przewodniku po zadaniach zostanie pokazany sposób konfigurowania parametrów odpisów i następnie transakcji odpisu ze stron Windykacja, Otwarte faktury odbiorcy i Odbiorca."
+---
+title: Tworzenie arkusza odpisów dla odbiorcy
+description: W tym przewodniku po zadaniach zostanie pokazany sposób konfigurowania parametrów odpisów i następnie transakcji odpisu ze stron Windykacja, Otwarte faktury odbiorcy i Odbiorca.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2cd576458bab1e4654d21773b581a5b0f726c928
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 19a816f04283ce4f200de7396617313e45e057db
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339816"
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>Tworzenie arkusza odpisów dla odbiorcy
 
@@ -86,5 +86,4 @@ W tym przewodniku po zadaniach zostanie pokazany sposób konfigurowania parametr
 4. Kliknij opcję Odpisz.
 5. Kliknij przycisk OK.
 6. Zamknij stronę.
-
 

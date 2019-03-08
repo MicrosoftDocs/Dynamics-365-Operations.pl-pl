@@ -1,13 +1,13 @@
 ---
-title: "Omówienie podatku"
-description: "Ten temat zawiera omówienie systemu podatków. Objaśniono w nim elementy konfiguracji podatku od sprzedaży oraz ich współdziałanie."
+title: Omówienie podatku
+description: Ten temat zawiera omówienie systemu podatków. Objaśniono w nim elementy konfiguracji podatku od sprzedaży oraz ich współdziałanie.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 11fe694af6180419460ba5dbf4c55f760a38f987
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 02d28aef2316d7cfe5ad4eb45272dc1a22c96789
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311365"
 ---
-
 # <a name="sales-tax-overview"></a>Omówienie podatku
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ Dla każdej transakcji (wierszy dokumentu sprzedaży/zakupu, arkuszy itd) należ
 Dla każdej transakcji można wyszukać obliczony podatek, otwierając stronę **transakcji podatku**. Można wyszukać podatek dla wiersza dokumentu lub całego dokumentu. W przypadku niektórych dokumentów (na przykład faktury od dostawcy i arkuszy finansowych) można skorygować podatek, jeśli oryginalny dokument wskazuje rozbieżne kwoty.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Rozliczanie i raportowanie podatku
-Podatek należy zgłosić i zapłacić w urzędzie skarbowym w ustalonych interwałach (miesięcznie, kwartalnie itd.). Program Microsoft Dynamics 365 for Finance and Operations zawiera funkcje, które pozwalają rozliczać konto podatku za okres, a następnie ustawić saldo jako przeciwstawne na koncie rozliczania podatku, jak określono w grupach księgowania w księdze. Dostęp do tej funkcji można uzyskać na stronie **Rozlicz i zaksięguj podatek**. Należy określić okres rozliczania podatku, dla którego ma być rozliczony podatek. 
+Podatek należy zgłosić i zapłacić w urzędzie skarbowym w ustalonych interwałach (miesięcznie, kwartalnie itd.). Microsoft Dynamics 365 for Finance and Operations zawiera funkcje, które umożliwiają rozliczanie kont podatku za okres, a następnie ustawić saldo jako przeciwstawne na koncie rozliczania podatku, jak określono w grupach księgowania księgi. Dostęp do tej funkcji można uzyskać na stronie **Rozlicz i zaksięguj podatek**. Należy określić okres rozliczania podatku, dla którego ma być rozliczony podatek. 
 
 Po zapłaceniu podatku saldo na koncie rozliczania podatku należy skorygować względem konta bankowego. Jeśli urząd skarbowy wskazany dla okresu rozliczania podatku jest związany z kontem dostawcy, saldo podatku jest księgowane jako otwarta faktura od dostawcy i może być uwzględnione w normalnej propozycji płatności.
 
@@ -97,4 +96,3 @@ Jednakże jeśli używasz podatku warunkowego, rozliczasz się z urzędem skarbo
 
 
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie potrąconych zaliczek na podatek](tasks/set-up-withholding-tax.md).
-

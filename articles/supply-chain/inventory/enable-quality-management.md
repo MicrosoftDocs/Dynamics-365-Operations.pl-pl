@@ -1,13 +1,13 @@
 ---
-title: "Omówienie zarządzanie jakością"
-description: "W tym temacie opisano, jak za pomocą funkcji zarządzania jakością w programie Microsoft Dynamics 365 for Finance and Operations poprawiać jakość produktów w łańcuchu dostaw."
+title: Omówienie zarządzanie jakością
+description: W tym temacie opisano, jak za pomocą funkcji zarządzania jakością w Microsoft Dynamics 365 for Finance and Operations poprawiać jakość produktów w łańcuchu dostaw.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1630d13437d7e930fdf32ed5fdc61fc62bc33817
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 79b3127f726a08cc24c20145b5ad9969157a899c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338321"
 ---
-
 # <a name="quality-management-overview"></a>Omówienie zarządzanie jakością
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak za pomocą funkcji zarządzania jakością w programie Microsoft Dynamics 365 for Finance and Operations poprawiać jakość produktów w łańcuchu dostaw.
+W tym temacie opisano, jak za pomocą funkcji zarządzania jakością w Microsoft Dynamics 365 for Finance and Operations poprawiać jakość produktów w łańcuchu dostaw.
 
-Zarządzanie jakością pomaga przy zarządzaniu czasem przetwarzania, kiedy masz do czynienia z produktami niespełniającymi norm, bez względu na pochodzenie tych produktów. Ze względu na to, że typy diagnostyki są powiązane z raportowaniem korekt, program Microsoft Dynamics 365 for Finance and Operations może zaplanować zadania usuwania problemów i zapobiegania ich ponownemu występowaniu.
+Zarządzanie jakością pomaga przy zarządzaniu czasem przetwarzania, kiedy masz do czynienia z produktami niespełniającymi norm, bez względu na pochodzenie tych produktów. Ze względu na to, że typy diagnostyki są powiązane z raportowaniem korekt Microsoft Dynamics 365 for Finance and Operations może zaplanować zadania naprawiania problemów i zapobiegania ich ponownemu występowaniu.
 
 Oprócz funkcji związanych z zarządzaniem brakiem zgodności zarządzanie jakością zawiera funkcje monitorowania błędów według typu problemu (łącznie z błędami wewnętrznymi) i identyfikowania rozwiązań krótko- i długoterminowych. Statystyki kluczowych wskaźników wydajności (KPI) pokazują historię wcześniejszych problemów z brakiem zgodności i rozwiązania, które zostały zastosowane do ich korekty. Korzystając z danych historycznych można sprawdzić skuteczność pomiarów jakości, które zostały wcześniej przeprowadzone, i określić odpowiednie rozwiązania na przyszłość.
 
@@ -362,4 +361,3 @@ Należy określić skojarzenie jakości dla każdego odchylenia w procesie bizne
 [Procesy zarządzania jakością](quality-management-processes.md)
 
 [Włączanie zarządzania niezgodnościami](enable-nonconformance-management.md)
-

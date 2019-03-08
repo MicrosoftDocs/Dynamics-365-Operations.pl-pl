@@ -1,13 +1,13 @@
 ---
-title: "Zarządzanie zmianami i szufladami kasowymi"
-description: "W tym temacie wyjaśniono sposób konfigurowania i używania zmian w punkcie sprzedaży detalicznej (POS)."
+title: Zarządzanie zmianami i szufladami kasowymi
+description: W tym temacie wyjaśniono sposób konfigurowania i używania zmian w punkcie sprzedaży detalicznej (POS).
 author: jblucher
 manager: AnnBe
 ms.date: 05/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313021"
 ---
-
 # <a name="shift-and-cash-drawer-management"></a>Zarządzanie zmianami i szufladami kasowymi
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie wyjaśniono sposób konfigurowania i używania zmian w punkcie sprzedaży detalicznej (POS).
 
-W programie Microsoft Dynamics 365 for Rwtail termin *zmiana* opisuje zbiór danych transakcyjnych i działań w puncie sprzedaży między dwoma punktami w czasie. Dla każdej zmiany oczekiwana kwota pieniędzy jest porównywana z kwotą podliczoną i zadeklarowaną.
+W programie Microsoft Dynamics 365 for Retail termin *zmiana* opisuje zbiór danych transakcyjnych i działań w puncie sprzedaży między dwoma punktami w czasie. Dla każdej zmiany oczekiwana kwota pieniędzy jest porównywana z kwotą podliczoną i zadeklarowaną.
 
 Zazwyczaj zmiany są otwierane na początku dnia roboczego. W tym momencie użytkownik deklaruje kwotę początkową znajdującą się w szufladzie kasowej. Następnie w ciągu dnia są wykonywane transakcje sprzedaży. Na koniec dnia stan szuflady jest podliczany, a kwoty zamknięcia są deklarowane. Zmiana jest zamykana i następuje wygenerowanie końcowego raportu sprzedaży. Końcowy raport sprzedaży wskazuje, czy wystąpił nadmiar lub niedobór.
 
@@ -159,4 +158,3 @@ Wybierz kolejno opcje **Handel detaliczny \> Kanały \> Sklepy sieci sprzedaży 
 Ta konfiguracja pozwala zagwarantować, że zestawienia tworzone w systemach zaplecza będą obejmowały te same transakcje, jak zawierane na zmianach w aplikacji POS, a dane będą sumowane według tej zmiany.
 
 Aby uzyskać więcej informacji o metodach tworzenia zestawień i zamykania, zobacz [Konfiguracje sklepu dla zestawień sieci sprzedaży](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
-

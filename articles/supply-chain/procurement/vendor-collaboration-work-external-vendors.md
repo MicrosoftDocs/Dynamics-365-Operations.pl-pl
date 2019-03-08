@@ -1,13 +1,13 @@
 ---
-title: "Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami"
-description: "W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą współpracować z zewnętrznymi dostawcami w celu wymiany informacji o zamówieniach zakupu i zapasach konsygnacyjnych."
+title: Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami
+description: W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą współpracować z zewnętrznymi dostawcami w celu wymiany informacji o zamówieniach zakupu i zapasach konsygnacyjnych.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350028"
 ---
-
 # <a name="vendor-collaboration-with-external-vendors"></a>Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami
 
 [!include [banner](../includes/banner.md)]
@@ -260,4 +259,3 @@ Użytkownik, który konfiguruje parametry procesu ZO może utworzyć wiele szabl
 - %createddate%
 
 Jeśli zmiana jest wymagana i jest wysyłana po przesłaniu ZO , zapytanie ofertowe zostanie wysłane do wszystkich zaproszonych dostawców. Opublikowany dokument zostaną również zaktualizowane na stronie **Otwarte opublikowane zapytania ofertowe**.
-

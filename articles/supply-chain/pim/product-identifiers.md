@@ -1,43 +1,42 @@
 ---
-title: "Identyfikatory produktów"
-description: "Ten temat zawiera informacje o różnych typach identyfikatorów produktów i wyjaśnia, jak można dodawać identyfikatory produktów w danych produktów."
+title: Identyfikatory produktów
+description: Ten temat zawiera informacje o różnych typach identyfikatorów produktów i wyjaśnia, jak można dodawać identyfikatory produktów w danych produktów.
 author: cvocph
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: afd542a652abdf6e45c83a6097dc8f0d36efa905
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/23/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335423"
 ---
-
 # <a name="product-identifiers"></a>Identyfikatory produktów 
 
 [!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o różnych typach identyfikatorów produktów i wyjaśnia, jak można dodawać identyfikatory produktów w danych produktów.
 
-Pracując z produktami na wydziale produkcji lub w magazynie w programie Microsoft Dynamics CRM lub Microsoft Dynamics ERP, trzeba mieć dobrą strategię identyfikowania tych produktów i wariantów produktów.
+Pracując z produktami na wydziale produkcji lub w magazynie w Microsoft Dynamics EPR lub Microsoft Dynamics CRM, trzeba mieć dobrą strategię identyfikowania tych produktów i wariantów produktów.
 
 ## <a name="unique-product-numberproduct-id"></a>Unikatowy numer produktu/identyfikator produktu
 
-W programie Microsoft Dynamics 365 for Finance and Operations podstawowym identyfikatorem produktu jest numer produktu (czyli unikatowy identyfikator produktu). Ten numer może być generowane automatycznie przez mechanizm numeracji albo ręcznie łączony z produktem. Dla wariantów produktów numery można definiować za pomocą szablonu nazewnictwa produktów.
+W Microsoft Dynamics 365 for Finance and Operations podstawowym identyfikatorem produktu jest numer produktu (czyli unikatowy identyfikator produktu). Ten numer może być generowane automatycznie przez mechanizm numeracji albo ręcznie łączony z produktem. Dla wariantów produktów numery można definiować za pomocą szablonu nazewnictwa produktów.
 
 W wielu przypadkach numer produktu nie jest pierwotnie tworzony w programie Finance and Operations. Zamiast tego jest kojarzony z produktem w systemie zarządzania cyklem życia produktu (PLM) lub systemie zarządzania danymi produktów (PDM). W takim przypadku są używane jednostki danych do importowania produktów i wariantów produktów. Odtąd program Finance and Operations będzie używał tych numerów we wszystkich operacjach.
 
@@ -47,7 +46,7 @@ Podczas korzystania z usługi Common Data Service (CDS) numer produktu w program
 
 ## <a name="item-number-and-product-dimensions"></a>Numer towaru i wymiary produktu
 
-Numer towaru to identyfikator produktu używany przez konkretną firmę. Najlepiej, jeśli numer towaru jest taki sam, jak numer produktu. Jeśli nazewnictwo różni się w poszczególnych firmach, trudno jest śledzić produkt w całym łańcuchu dostaw i trzeba wprowadzić uciążliwe procesy zmiany etykiet i tworzenia odniesień. Dla zgodności ze starszymi wersjami (to znaczy z programem Microsoft Dynamics AX 2009 i wcześniejszymi) zachowaliśmy ten model. Jednak zalecamy, aby w miarę możliwości eliminować identyfikatory specyficzne dla firm, a zamiast tego stosować unikatowy numer produktu jako podstawowy identyfikator.
+Numer towaru to identyfikator produktu używany przez konkretną firmę. Najlepiej, jeśli numer towaru jest taki sam, jak numer produktu. Jeśli nazewnictwo różni się w poszczególnych firmach, trudno jest śledzić produkt w całym łańcuchu dostaw i trzeba wprowadzić uciążliwe procesy zmiany etykiet i tworzenia odniesień. Dla zgodności ze starszymi wersjami (to znaczy z Microsoft Dynamics AX 2009 i wcześniejszymi) zachowaliśmy ten model. Jednak zalecamy, aby w miarę możliwości eliminować identyfikatory specyficzne dla firm, a zamiast tego stosować unikatowy numer produktu jako podstawowy identyfikator.
 
 Ponadto wariant produktu nie może być niepowtarzalnie identyfikowany przez numer towaru. Zawsze wymaga on kombinacji numeru towaru i wszystkich wymiarów produktu zdefiniowanych w produkcie głównym. Ten wymóg może stać się kłopotliwy i spowalniać proces identyfikowania. Również z tego powodu zalecamy, aby stosować unikatowy numer produktu zamiast numeru towaru w każdym przypadku, gdy tylko jest to możliwe.
 
@@ -186,4 +185,3 @@ Teraz można używać jednostek danych **Jednostka Identyfikator usługi danych 
 ## <a name="related-topic"></a>Powiązany temat
 
 [Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień](search-products-product-variants.md)
-

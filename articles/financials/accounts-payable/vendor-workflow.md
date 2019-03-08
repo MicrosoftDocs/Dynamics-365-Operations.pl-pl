@@ -1,13 +1,13 @@
 ---
-title: "Przepływ pracy obsługi dostawcy"
-description: "Można zmodyfikować informacje o dostawcy, a następnie użyć przepływu pracy do ich zatwierdzenia."
+title: Przepływ pracy obsługi dostawcy
+description: Można zmodyfikować informacje o dostawcy, a następnie użyć przepływu pracy do ich zatwierdzenia.
 author: mikefalkner
 manager: annbe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
 ms.openlocfilehash: 950a1852acf9f3e4747ce2d55738c0eb3a646897
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/31/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329696"
 ---
-
 # <a name="vendor-workflow"></a>Przepływ pracy obsługi dostawcy
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,7 @@ Aby korzystać z funkcji przepływu pracy, należy ją włączyć.
 
 ## <a name="change-vendor-information-and-submit-the-changes-to-the-workflow"></a>Zmiana informacji o dostawcy i przesyłanie zmian do przepływu pracy
 
-Po zmodyfikowaniu pola objętego przepływem pracy zostanie wyświetlona strona **Proponowane zmiany**. Ta strona pokazuje oryginalną wartość pola i nowo wprowadzoną wartość. W zmodyfikowanym polu jest przywracana pierwotna wartość. Dodatkowo komunikat o stanie informuje, że zmiany nie został przesłane. 
+Po zmodyfikowaniu pola objętego przepływem pracy zostanie wyświetlona strona **Proponowane zmiany**. Na tej stronie jest wyświetlana oryginalna wartość pola oraz nowa wprowadzona przez Ciebie wartość. W zmodyfikowanym polu jest przywracana pierwotna wartość. Dodatkowo komunikat o stanie informuje, że zmiany nie został przesłane. 
 
 Zawsze gdy modyfikujesz pole objęte przepływem pracy, jest ono dodawane do listy na stronie **Proponowane zmiany**. Aby odrzucić proponowaną wartość pola, należy użyć przycisku **Odrzuć** widocznego obok pola na liście. Aby odrzucić wszystkie zmiany, należy użyć przycisku **Odrzuć wszystkie zmiany** znajdującego się u dołu strony. Kliknij przycisk **OK**, aby zamknąć stronę.
 
@@ -59,7 +58,6 @@ Gdy istnieje co najmniej jedna proponowana zmiana, w okienku akcji pojawiają si
 1. Wybierz opcję **Proponowane zmiany**, aby otworzyć stronę **Proponowane zmiany** i przejrzeć zmiany.
 2. Wybierz kolejno opcje **Przepływ pracy \> Prześlij**, aby przesłać zmiany do przepływu pracy.
 
-    Stan na stronie zmieni się na **Zmiany oczekują na zatwierdzenie**.
+    Stan na stronie został zmieniony na **Zmiany oczekują na zatwierdzenie**.
 
-Przepływ pracy przebiega w standardowy sposób określony w programie Microsoft Dynamics 365 for Finance and Operations. Osoba zatwierdzająca jest kierowana do strony **Dostawca**, gdzie może przejrzeć zmiany wyświetlane na stronie **Proponowane zmiany**, a następnie wybrać kolejno opcje **Przepływ pracy \> Zatwierdź** w celu zatwierdzenia przepływu pracy. Po sfinalizowaniu wszystkich zatwierdzeń pola są aktualizowane o zaproponowane wartości.
-
+Przepływ pracy przebiega w standardowy sposób określony w programie Microsoft Dynamics 365 for Finance and Operations. Osoba zatwierdzająca jest kierowana do strony **Dostawca**, gdzie może przejrzeć zmiany wyświetlane na stronie **Proponowane zmiany**, a następnie wybrać kolejno opcje **Przepływ pracy \> Zatwierdź** w celu zatwierdzenia przepływu pracy. Po wykonaniu wszystkich zatwierdzeń pola zostaną zaktualizowane za pomocą proponowanych przez Ciebie wartości.

@@ -1,13 +1,13 @@
 ---
 title: Europa
-description: "Ten temat zawiera łącza do zasobów dokumentacji o programie Microsoft Dynamics 365 for Finance and Operations dla Europy."
+description: Ten temat zawiera łącza do zasobów dokumentacji Microsoft Dynamics 365 for Finance and Operations dla Europy.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
 ms.openlocfilehash: 137fb8cae0766bed16b6b32d99e1d2c6c9f7b606
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321738"
 ---
-
 # <a name="europe"></a>Europa 
 
 [!include [banner](../includes/banner.md)]
@@ -99,5 +98,4 @@ Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w skonfi
 
 - [Omówienie raportowania elektronicznego](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
 

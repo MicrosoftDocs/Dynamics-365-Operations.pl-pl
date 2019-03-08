@@ -1,13 +1,13 @@
 ---
-title: "Wdrażanie dostawców"
-description: "W tym temacie opisano sposób wdrażania nowych dostawców. Wyjaśniono działania wymagane przez różne role w trakcie tego procesu."
+title: Wdrażanie dostawców
+description: W tym temacie opisano sposób wdrażania nowych dostawców. Wyjaśniono działania wymagane przez różne role w trakcie tego procesu.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
 ms.reviewer: josaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: f831d986d7b534bf030bee0fa0c5dcb97af03289
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322152"
 ---
-
 # <a name="onboard-vendors"></a>Wdrażanie dostawców
 [!include [banner](../includes/banner.md)]
 
@@ -49,7 +48,7 @@ W poniższej tabeli przedstawiono kroki i role, które są zawarte w tym procesi
 | Administrator            | | | Tworzy użytkownika w rozwiązaniu Finance and Operations oraz systemie Microsoft Azure. | | | |
 | Osoba kontaktowa ze strony dostawcy    | | | Wysyła wiadomość e-mail do osoby kontaktowej. | Rejestruje informacje o dostawcy. | | |
 
-Aby zapoznać się szybką demonstracją procesu przygotowywania dostawcy, obejrzyj ten krótki film na YouTube: [Przygotowywanie nowego dostawcy w programie Dynamics 365 for Finance and Operations] (https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+Aby zapoznać się szybką demonstracją procesu przygotowywania dostawcy, obejrzyj ten krótki film na YouTube: [Przygotowywanie nowego dostawcy w programie Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importowanie wniosku o rejestrację potencjalnego dostawcy
 
@@ -174,5 +173,4 @@ Wybierając akcję **Usuń** we wniosku o rejestrację potencjalnego dostawcy mo
 |  Utworzono wniosek o nowego dostawcę  |                                                                     Praca kreatora rejestracji dostawcy została ukończona.                                                                      | Wniosek o dezaktywację użytkownika został utworzony, a wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte.<blockquote>[!NOTE]<br>Akcji <strong>Usuń</strong> nie można użyć, gdy wniosek o nowego dostawce jest w trakcie procesu przeglądu w przepływie pracy.</blockquote> |
 |         Zatwierdzona         |                                                                               Wniosek o nowego dostawcę został zatwierdzony.                                                                               |                                                                                                   Wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte.                                                                                                    |
 |         Odrzucona         |                                                                               Wniosek o nowego dostawcę został odrzucony.                                                                               |                                                                                                   Wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte.                                                                                                    |
-
 

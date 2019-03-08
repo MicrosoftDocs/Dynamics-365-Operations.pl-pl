@@ -1,13 +1,13 @@
 ---
 title: Parametry integracji aplikacji Project Service Automation
-description: "W tym temacie wyjaśniono, jak skonfigurować sposób wprowadzania domyślnych danych podczas integrowania programu Microsoft Dynamics 365 for Project Service Automation z programem Microsoft Dynamics 365 for Finance and Operations."
+description: W tym temacie wyjaśniono, jak skonfigurować sposób wprowadzania domyślnych danych podczas integrowania programu Microsoft Dynamics 365 for Project Service Automation z programem Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 33960a97f69d6bcc70a3035d4d68095ca6993a10
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347061"
 ---
-
-# <a name="project-service-automation-integration-parameters"></a>Parametry integracji aplikacji Project Service Automation
+# <a name="project-service-automation-integration-parameters"></a>Parametry integracji z rozwiązaniem Project Service Automation
 
 [!include[banner](../includes/banner.md)]
 
@@ -46,4 +45,3 @@ Na stronie **Parametry integracji aplikacji Project Service Automation** można 
 | Ustawienia domyślne typu fakturowania  | Typ fakturowania         | Kliknij przycisk **Nowy** i dodaj wiersz, w którym będzie można wybrać typ fakturowania, dla którego będzie ustawiana domyślna właściwość wiersza. Konkretny typ fakturowania można wybrać tylko raz w konfiguracji. |
 |                        | Właściwość wiersza        | Wybierz domyślną właściwość wiersza dla podanego typu fakturowania. Gdy nowe szacunki godzinowe, nowe szacunki wydatków lub nowe wartości rzeczywiste są synchronizowane z aplikacji Project Service Automation, pole **Właściwość wiersza** otrzymuje wartość domyślną dla typu fakturowania. |
 | Blokowanie funkcji  | Nie dotyczy       | Wybierz funkcje, które w programie Finance and Operations mają zostać wyłączone dla projektów i umów pochodzących z modułu Project Service Automation. Na przykład można wyłączyć możliwość edytowania umów i projektów, tworzyć struktury podziału pracy oraz wypełniać kart czasu pracy w programie Finance and Operations. Pola związane z księgowaniem nadal będą włączone, nawet jeśli ustawienie parametru spowodowało, że są niedostępne. Domyślnie wszystkie funkcje są włączone. |
-

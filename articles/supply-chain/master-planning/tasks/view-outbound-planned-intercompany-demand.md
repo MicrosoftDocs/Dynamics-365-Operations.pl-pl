@@ -1,13 +1,13 @@
---- 
-title: "Wyświetlanie wychodzących danych o zaplanowanym popycie międzyfirmowym"
-description: "W tej procedurze pokazano sposób wyświetlania wszystkich zamówień planowanych, które zostaną zrealizowane przez dostawcę międzyfirmowego."
+---
+title: Wyświetlanie wychodzących danych o zaplanowanym popycie międzyfirmowym
+description: W tej procedurze pokazano sposób wyświetlania wszystkich zamówień planowanych, które zostaną zrealizowane przez dostawcę międzyfirmowego.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqOutboundIntercompanyDemand
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2e0e3a4613e5598e725c475c7dff7662bf4169a7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 183bbba80351c19d2218c577020b1e852ab45ac4
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333721"
 ---
 # <a name="view-outbound-planned-intercompany-demand"></a>Wyświetlanie wychodzących danych o zaplanowanym popycie międzyfirmowym
 
@@ -42,5 +42,4 @@ W tej procedurze pokazano sposób wyświetlania wszystkich zamówień planowanyc
     * Ta strona zawiera przegląd całego zaplanowanego zapotrzebowanie, które zostanie zaspokojone przez dostawcę w wewnętrznym łańcuchu dostaw.  
 8. Rozwiń sekcję Szczegóły dotyczące popytu przesyłane od odbiorcy do dostawcy.
     * W tej sekcji można zobaczyć szczegóły dotyczące sposobu zaspokojenia popytu. Zanim zobaczysz tutaj dodatkowe informacje, należy poczekać na wykonanie planowania głównego w firmie dostarczającej.  
-
 

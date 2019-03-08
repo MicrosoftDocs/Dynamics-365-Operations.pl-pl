@@ -1,13 +1,13 @@
---- 
-title: "Ustawianie informacji dotyczących urazów i chorób"
-description: "Pracodawcy muszą je znać, kiedy pracownicy doznają urazu lub zachorują z powodu zagrożeń w miejscu pracy."
+---
+title: Ustawianie informacji dotyczących urazów i chorób
+description: Pracodawcy muszą je znać, kiedy pracownicy doznają urazu lub zachorują z powodu zagrożeń w miejscu pracy.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMInjurySetup
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 9fcc924e11ac17b561c5f5840a4fe1b183a8232d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316034"
 ---
 # <a name="set-up-injury-and-illness-information"></a>Ustawianie informacji dotyczących urazów i chorób
 
@@ -64,5 +64,4 @@ Pracodawcy muszą je znać, kiedy pracownicy doznają urazu lub zachorują z pow
 22. Kliknij kartę Agencje raportujące.
     * Agencje raportujące to podmioty, którym muszą być zgłaszane zdarzenia. Zaznacz pole wyboru Domyślnie obok instytucji będącej domyślną agencją na potrzeby raportowania urazów i chorób.  
 23. Kliknij przycisk Zapisz.
-
 

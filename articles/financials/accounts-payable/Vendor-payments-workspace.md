@@ -1,30 +1,29 @@
 ---
-title: "Obszar roboczy płatności dla dostawców"
-description: "Ten temat zawiera informacje o komórkowym obszarze roboczym Płatności dla dostawców. Obszar roboczy Płatności dla dostawców zawiera informacje związane z przetwarzaniem płatności dla dostawców."
+title: Obszar roboczy płatności dla dostawców
+description: Ten temat zawiera informacje o komórkowym obszarze roboczym Płatności dla dostawców. Obszar roboczy Płatności dla dostawców zawiera informacje związane z przetwarzaniem płatności dla dostawców.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPaymentWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 03fd290f8ad780e740a8fe6552c7a64c44b65a67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
-ms.openlocfilehash: fa8ddf52d34c3662e120509156ab0b343bb4cc16
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346118"
 ---
-
 # <a name="vendor-payments-workspace"></a>Obszar roboczy płatności dla dostawców
 
 [!include [banner](../includes/banner.md)]
@@ -69,5 +68,4 @@ W poniższej tabeli pokazano wizualizacje dostępne na każdej stronie raportu.
 |         Przepływ pracy płatności          |                                                                                <ul><li>Wystąpienia przepływu pracy płatności dostawcom</li><li>Wystąpienia przepływu pracy płatności dostawcom wg osób zatwierdzających</li><li>Wystąpienia przepływu pracy płatności dostawcom wg firm</li><li>Średnia liczba dni w przepływie pracy wg osób zatwierdzających</li></ul>                                                                                |
 |    Saldo dostawcy do salda odbiorcy     |                                                                                                                   <ul><li>Saldo dostawcy do salda odbiorcy</li><li>Saldo dostawcy do salda odbiorcy wg firm</li><li>Szczegóły salda dostawcy do salda odbiorcy</li></ul>                                                                                                                    |
 |    Faktury z wstrzymaniem płatności     |                                                                                         <ul><li>Faktury z wstrzymaniem płatności</li><li>Szczegóły faktur z wstrzymaniem płatności</li><li>Faktury z wstrzymaniem płatności wg firm</li><li>Faktury z wstrzymaniem płatności wg grup dostawców</li></ul>                                                                                          |
-
 

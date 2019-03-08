@@ -1,13 +1,13 @@
 ---
-title: "Synchronizowanie wartości rzeczywistych bezpośrednio z programu Project Service Automation do arkusza integracji projektu w celu zaksięgowania w programie Finance and Operations"
-description: "Ten temat zawiera opis szablonów i podstawowych zadań, które są używane do synchronizowania danych rzeczywistych projektu bezpośrednio między programem Microsoft Dynamics 365 for Project Service Automation a programem Microsoft Dynamics 365 for Finance and Operations."
+title: Synchronizowanie wartości rzeczywistych bezpośrednio z programu Project Service Automation do arkusza integracji projektu w celu zaksięgowania w programie Finance and Operations
+description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania wartości rzeczywistych projektu bezpośrednio z Microsoft Dynamics 365 for Project Service Automation do Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 0a965e8de596decf39a15977e6df8a6aa9dd35b0
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343358"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>Synchronizowanie wartości rzeczywistych bezpośrednio z programu Project Service Automation do arkusza integracji projektu w celu zaksięgowania w programie Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-Ten temat zawiera opis szablonów i podstawowych zadań, które są używane do synchronizowania danych rzeczywistych projektu bezpośrednio między programem Microsoft Dynamics 365 for Project Service Automation a programem Microsoft Dynamics 365 for Finance and Operations.
+W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania wartości rzeczywistych projektu bezpośrednio z Microsoft Dynamics 365 for Project Service Automation do Microsoft Dynamics 365 for Finance and Operations.
 
 Szablon synchronizuje transakcje z rozwiązania Project Service Automation do tabeli tymczasowej w rozwiązaniu Finance and Operations. Po zakończeniu synchronizacji **koniecznie trzeba** wykonać import danych z tabeli tymczasowej do arkusza integracji.
 
 > [!NOTE]
-> - Funkcja integrowania wartości rzeczywistych projektu jest dostępna w programie Microsoft Dynamics 365 for Finance and Operations w wersji 8.01 i nowszych.
+> - Funkcja integrowania wartości rzeczywistych projektu jest dostępna w programie Microsoft Dynamics 365 for Finance and Operations w wersji 8.0.1 i nowszych.
 > - Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3.0, po zainstalowaniu aktualizacji KB 4132657 i 4132660 możesz używać szablonów, aby integrować zadania projektu, kategorie transakcji wydatkowych, szacunki godzin, szacunki wydatków i wartości rzeczywiste oraz konfigurować blokowanie funkcji. Jeśli należy zresetować zasady podziału księgowań, zalecamy dodatkowo zainstalować aktualizację KB 4131710.
 > - Jeśli używasz programu Finance and Operations w wersji 7.3.0 i przenosisz transakcje opłat z programu Project Service Automation, należy zainstalować aktualizację KB 4345320, aby te opłaty były uwzględniane w fakturze projektu.
 > - Jeśli wprowadzasz kwoty podatku w transakcjach dotyczących czasu lub wydatków w module Project Service Automation, należy zainstalować aktualizację Update 7 dla programu Project Service Automation. W przeciwnym razie wartości rzeczywiste podatków nie będą łączone z powiązanymi wartościami rzeczywistymi czasu lub wydatków i nie będą synchronizowane z aplikacją Finance and Operations. Aby uzyskać więcej informacji, skontaktuj się z pomocą techniczną.
@@ -140,4 +140,3 @@ Poniższa ilustracja przedstawia przykłady mapowań zadań szablonu w integracj
 [![Mapowanie szablonu](./media/ActualsUpdateMapping.jpg)](./media/ActualsUpdateMapping.jpg)
 
 [![Mapowanie szablonu](./media/TransactionConnectionsUpdate.jpg)](./media/TransactionConnectionsUpdate.jpg)
-

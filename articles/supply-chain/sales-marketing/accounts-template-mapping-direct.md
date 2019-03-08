@@ -1,40 +1,39 @@
 ---
-title: "Synchronizowanie kont bezpośrednio w rozwiązaniu Sales do odbiorców w rozwiązaniu Finance and Operations"
-description: "Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania kont klientów między programem Microsoft Dynamics 365 for Sales a programem Microsoft Dynamics 365 for Finance and Operations."
+title: Synchronizowanie kont bezpośrednio w rozwiązaniu Sales do odbiorców w rozwiązaniu Finance and Operations
+description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania kont z Microsoft Dynamics 365 for Sales do Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: a0cabdab63d4d44010e52303d6f487db1e910059
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317897"
 ---
-
-# <a name="synchronize-accounts-directly-from-sales-to-customers-in-finance-and-operations"></a>Synchronizowanie kont w rozwiązaniu Sales bezpośrednio z odbiorcami w rozwiązaniu Finance and Operations
+# <a name="synchronize-accounts-directly-from-sales-to-customers-in-finance-and-operations"></a>Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do odbiorców w rozwiązaniu Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integrowanie danych na platformie Common Data Service dla aplikacji](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+> Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integrowanie danych na platformie Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
-Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania kont klientów bezpośrednio między programem Microsoft Dynamics 365 for Sales a programem Microsoft Dynamics 365 for Finance and Operations.
+W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania kont bezpośrednio z Microsoft Dynamics 365 for Sales do Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Przepływ danych w rozwiązaniu Prospekt na gotówkę
 
@@ -115,5 +114,4 @@ Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integrato
 [Synchronizowanie nagłówków i wierszy zamówień sprzedaży w rozwiązaniu Finance and Operations bezpośrednio z elementami w rozwiązaniu Sales](sales-order-template-mapping-direct-two-ways.md)
 
 [Synchronizowanie nagłówków i wierszy faktur sprzedaży bezpośrednio w rozwiązaniu Finance and Operations z elementami w rozwiązaniu Sales](sales-invoice-template-mapping-direct.md)
-
 

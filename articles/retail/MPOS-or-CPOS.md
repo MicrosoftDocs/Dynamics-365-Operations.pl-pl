@@ -1,32 +1,31 @@
 ---
-title: "Wybór między aplikacjami Retail Modern POS (MPOS) i Cloud POS"
-description: "W tym temacie objaśniono kluczowe różnice między nowoczesnym punktem sprzedaży a punktem sprzedaży w chmurze w środowisku Retail. Opisano w nim również różne czynniki, jakie sprzedawcy detaliczni wdrażający oprogramowanie Microsoft Dynamics 365 for Retail powinny wziąć pod uwagę przy doborze rozwiązania najlepiej odpowiadającego ich wymaganiom."
+title: Wybór między Retail Modern POS (MPOS) i Cloud POS
+description: W tym temacie objaśniono kluczowe różnice między Retail Modern POS a Cloud POS. Opisano w nim również różne czynniki, jakie sprzedawcy detaliczni wdrażający oprogramowanie Microsoft Dynamics 365 for Retail powinny wziąć pod uwagę przy doborze rozwiązania najlepiej odpowiadającego ich wymaganiom.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 0b137a21a610a8bffc10b03067b429995e8e0662
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336251"
 ---
-
-# <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Wybór między aplikacjami Retail Modern POS (MPOS) i Cloud POS
+# <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Wybór między Retail Modern POS (MPOS) i Cloud POS
 
 [!include [banner](includes/banner.md)]
 
@@ -40,10 +39,10 @@ W temacie tym przedstawiono również dodatkowe tło, wskazówki oraz wytyczne d
 
 Środowisko Retail obsługuje następujące opcje punktu sprzedaży:
 
-- Nowoczesny punkt sprzedaży (MPOS) w środowisku Retail dla systemu Microsoft Windows
-- Nowoczesny punkt sprzedaży dla systemu Microsoft Windows Phone
+- Retail Modern POS (MPOS) dla Microsoft Windows
+- MPOS dla Microsoft Windows Phone
 - Nowoczesny punkt sprzedaży dla urządzenia Apple iPad lub tabletu z systemem Google Android
-- Punkt sprzedaży w chmurze (CPOS) obsługujący przeglądarkę Microsoft Edge, Internet Explorer i Google Chrome
+- Cloud POS (CPOS) obsługujący przeglądarki Microsoft Edge, Internet Explorer Google Chrome
 
 We wszystkich przypadkach punkt sprzedaży (nowoczesny i w chmurze) opiera się na tym samym podstawowym kodzie aplikacji. Jest to istotne z następujących powodów:
 
@@ -61,7 +60,7 @@ Choć punkty MPOS i CPOS są w dużej mierze podobne, istnieją jednak między n
 Punkt MPOS przeznaczony do urządzeń z systemem Windows, iOS lub Android jest aplikacją spakowaną, zainstalowaną i obsługiwaną na danym urządzeniu.
 
 - **Windows** — aplikacja MPOS dla systemu Windows zawiera cały kod instalacji oraz osadzone środowisko uruchomieniowe Commerce runtime (CRT). 
-- **iOS/Android** — w przypadku tych platform aplikacja pełni funkcję hosta dla kodu aplikacji CPOS. Innymi słowy kod aplikacji pochodzi z serwera CPOS Microsoft Azure lub jednostki skalowania sklepów rozwiązania Retail (RSSU). Aby uzyskać więcej informacji, zobacz [Omówienie jednostki skalowania sklepów rozwiązania Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** — w przypadku tych platform aplikacja pełni funkcję hosta dla kodu aplikacji CPOS. Innymi słowy, kod aplikacji pochodzi z serwera CPOS w Microsoft Azure lub Retail Store Scale Unit (RSSU). Aby uzyskać więcej informacji, zobacz [omówienie Retail Store Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
 
 #### <a name="cpos"></a>Punkt sprzedaży w chmurze (CPOS)
 
@@ -106,4 +105,3 @@ Podczas planowania wdrożenia punktu sprzedaży w sklepach detalicznych należy 
 - **Urządzenia sprzętowe/peryferyjne** — jednym z istotnych aspektów systemu punktu sprzedaży Retail jest jego zdolność do obsługi urządzeń peryferyjnych punktu sprzedaży, takich jak drukarki, szuflady na gotówkę i terminale płatnicze. Co prawda wszystkie dostępne opcje punktu sprzedaży mogą korzystać z urządzeń peryferyjnych, jednak wyłącznie punkt MPOS dla systemu Windows obsługuje je w sposób bezpośredni. W przypadku wszystkich innych zastosowań wymagana jest co najmniej jedna stacja sprzętowa. Takie podejście zwiększa elastyczność, jednak wymaga wdrożenia, skonfigurowania i obsługi dodatkowych składników.
 - **Wymagania systemowe** — wymagania systemowe dla aplikacji punktu sprzedaży się różnią. Przed podjęciem ostatecznej decyzji należy sprawdzić najnowsze informacje. Przykładowo punkt CPOS obsługuje więcej systemów operacyjnych, ponieważ działa w przeglądarce. Aby uzyskać więcej informacji na temat wymagań systemowych, zobacz [Wymagania systemowe dla wdrożeń w chmurze](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Wdrażanie i obsługa** — złożoność wymagań związanych z wdrożeniem i obsługą może być różna w zależności od wybranych opcji wdrożenia i aplikacji. Na przykład w przypadku wdrożenia punktu CPOS hostowanego w chmurze nie ma potrzeby instalowania i aktualizowania go na każdym urządzeniu. Dlatego to podejście w znacznym stopniu zmniejsza złożoność oraz koszt. Jednak w przypadku wdrożenia punktu MPOS na każdym rejestrze i aktywacji trybu offline w połączeniu z wdrożeniem współdzielonych stacji sprzętowych znacznie zwiększa się liczba punktów końcowych wymagających zarządzania.
-

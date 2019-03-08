@@ -1,13 +1,13 @@
 ---
-title: "Przegląd budżetu"
-description: "Prawie każda firma, która używa funkcji finansowych w programie Microsoft Dynamics 365 for Finance and Operations, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów."
+title: Przegląd budżetu
+description: Prawie każda firma, która używa funkcji finansowych w Microsoft Dynamics 365 for Finance and Operations, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 01b7970119b9abb26570c19162e159dd05496168
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1d768ee6d2244a237972f7183f27a60b93eea819
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332318"
 ---
-
 # <a name="budgeting-overview"></a>Omówienie budżetu 
 
 [!include [banner](../includes/banner.md)]
 
-Prawie każda firma, która używa funkcji finansowych w programie Microsoft Dynamics 365 for Finance and Operations, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów.
+Prawie każda firma, która używa funkcji finansowych w Microsoft Dynamics 365 for Finance and Operations, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów.
 
 <a name="overview"></a>Przegląd
 --------
@@ -40,7 +39,7 @@ Zatwierdzony budżet dla firmy jest przechowywany w dokumencie pod nazwą *wpisu
 Istnieje wiele metod tworzenia wpisów do rejestru budżetu w programie Finance and Operations:
 
 -   Ręczne wprowadzanie informacji zawartych w dokumencie na stronie **wpisów do rejestru budżetu**.
--   Za pomocą szablonu programu Microsoft Excel, który można otworzyć klikają przycisk **Otwórz w programie Excel** na stronie **wpisów do rejestru budżetu**.
+-   Za pomocą szablonu programu Microsoft Excel, który można otworzyć klikają przycisk **Otwórz w programie Excel** na stronie **Wpisy do rejestru budżetu**.
 -   Używając jednostki danych **zapisów na koncie budżetu** w module zarządzania danymi w celu zaimportowania wpisów do rejestru budżetu. Rozważ użycie tej metody i włączenie parametru **Przetwarzanie** **oparte na zestawie**, jeśli musisz zaimportować do systemu wiele zapisów na koncie budżetu.
 -   Jeśli firma używa funkcji planowania budżetu w celu przygotowania danych budżetu, można użyć procesu okresowego **Generowanie wpisu do rejestru budżetu**.
 
@@ -80,7 +79,6 @@ Menedżer budżetu może sprawdzić bieżący stan budżetu w obszarze roboczym 
 Strona zapytań **Budżet a wartości rzeczywiste** pozwala przejść do szczegółów budżetu w porównaniu z wartościami rzeczywistymi. Wybierz wiersz na stronie zapytania, a następnie kliknij przycisk **Salda okresowe**, aby wyświetlić wartości rzeczywiste w podziale na okresy obrachunkowe. Strona **Zapisów na koncie budżetu** umożliwia przeglądanie szczegółowych kwot budżetu we wpisach do rejestru budżetu. Strona **Zapisy w arkuszu finansowym** otwiera transakcje księgi uwzględnione w obliczonej kwocie **rzeczywistej**. 
 
 Firma, która korzysta z funkcji planowania budżetu może tworzyć i używać *prognoz budżetowych* w obszarze roboczym **Budżety i prognozy księgi**.
-
 
 
 

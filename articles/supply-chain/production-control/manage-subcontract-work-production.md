@@ -1,13 +1,13 @@
 ---
-title: "Zarządzanie pracą podwykonawczą w produkcji"
-description: "W tym temacie wyjaśniono, jak operacje podwykonawcze są zarządzane w programie Microsoft Dynamics 365 for Finance and Operations. Innymi słowy przedstawiono, jak operacje produkcyjne przydzielone do zasobu są zarządzane przez dostawcę."
+title: Zarządzanie pracą podwykonawczą w produkcji
+description: W tym temacie opisano sposób zarządzania operacjami realizowanymi przez podwykonawców w Microsoft Dynamics 365 for Finance and Operations. Innymi słowy przedstawiono, jak operacje produkcyjne przydzielone do zasobu są zarządzane przez dostawcę.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 26feea4d86cf8b976f41342c8543594593c4b135
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326591"
 ---
-
 # <a name="manage-subcontracting-work-in-production"></a>Zarządzanie pracą podwykonawczą w produkcji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak operacje podwykonawcze są zarządzane w programie Microsoft Dynamics 365 for Finance and Operations. Innymi słowy przedstawiono, jak operacje produkcyjne przydzielone do zasobu są zarządzane przez dostawcę.
+W tym temacie opisano sposób zarządzania operacjami realizowanymi przez podwykonawców w Microsoft Dynamics 365 for Finance and Operations. Innymi słowy przedstawiono, jak operacje produkcyjne przydzielone do zasobu są zarządzane przez dostawcę.
 
 W [procesach produkcji](production-process-overview.md) praca może być wykonywana przez zasoby, które należą lub są administrowane przez dostawców. Zazwyczaj zasoby dostawców są używane do zrównoważenia (zaspokojenia) okresowego nadmiernego popytu, który przewyższa dostępne zdolności produkcyjne własnych zasobów firmy. Dostawca może również być w stanie oferować określone [możliwości zasobów](resource-capabilities.md) lub zasoby w niższej cenie.  
 
@@ -101,7 +100,6 @@ Wyjątkiem od tej reguły są półprodukty. Aby przenieść półprodukty, moż
 **Uwaga:** Marszruta produkcji dla jednego zlecenia produkcyjnego może obejmować tylko jedną lokację. Ta reguła dotyczy również prac podwykonawczych. W związku z tym magazyny reprezentujące lokalizacje materiałów zarządzanych przez dostawców muszą być zdefiniowane w tej samej lokacji, co wewnętrzne zasoby używane w marszrucie. Chociaż przepływy produkcji mogą obejmować kilka lokacji, nie umożliwiają transportu półproduktów z jednej lokacji do innej, ponieważ ta operacja pociąga za sobą zmianę kontekstu kosztów.  
 
 Zwykle magazyn wyjściowy i lokalizacja grupy zasobów podwykonawczych są bezpośrednio przydzielane do magazynu i lokalizacji następnego kroku operacji w marszrucie lub przepływie produkcji. Ta konfiguracja pomaga zmniejszyć ilość wykonywanej sprawozdawczości o zadaniach oraz liczbę dodatkowych operacji przeniesienia, które trzeba wymodelować.
-
 
 
 

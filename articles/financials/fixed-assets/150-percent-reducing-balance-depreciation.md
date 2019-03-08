@@ -1,13 +1,13 @@
 ---
 title: 150% amortyzacja degresywna
-description: "Ten artykuł zawiera omówienie metody amortyzacji 150% amortyzacja degresywna."
+description: Ten artykuł zawiera omówienie metody amortyzacji 150% amortyzacja degresywna.
 author: saraschi2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ff4b40663f0da6bcc01b00f3f44cd8d8b43b56a1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b35b8ea652ccb06c45b8091cc7f57e849e1a5915
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331628"
 ---
-
 # <a name="150-percent-reducing-balance-depreciation"></a>150% amortyzacja degresywna
 
 [!include [banner](../includes/banner.md)]
@@ -86,7 +85,6 @@ Metoda amortyzacji degresywnej 150% dzieli wartość 150% między lata okresu u�
 
 > [!NOTE]
 > Zwykle kiedy kwota, która jest obliczana przy użyciu metody amortyzacji degresywnej 150%, stanie się niższa od kwoty, która może zostać obliczona za pomocą metody liniowej, następuje przejście do metody liniowej dla pozostałego okresu użytkowania.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Tworzenie celu
-description: "Można tworzyć cele, dodawać działania do celów, śledzić miary oraz łączyć cele z przeglądem."
+description: Można tworzyć cele, dodawać działania do celów, śledzić miary oraz łączyć cele z przeglądem.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: e3f3bc01113099c5b28f10e702ebf981e26c196a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350718"
 ---
 # <a name="create-a-goal"></a>Tworzenie celu
 
@@ -59,5 +59,4 @@ Można tworzyć cele, dodawać działania do celów, śledzić miary oraz łącz
     * Często istnieją cele, które są takie same lub podobne dla członków zespołu lub wszystkich pracowników.     Administrator działu kadr lub kierownik może utworzyć szablony dla tych celów. Można dodać cel z szablonu, a następnie zmodyfikować go, dostosowując do swojej osi czasu.  
     * Często istnieje kilka celów, które są takie same lub podobne dla członków zespołu lub wszystkich pracowników.     Administrator działu kadr lub kierownik może utworzyć grupy celów zawierające jeden lub więcej szablonów celów. Możesz dodać cele z grupy celów, a następnie zmodyfikować je, dostosowując do swojej osi czasu.  
     * Podczas tworzenia przeglądu można dodać do niego cele. Aby dowiedzieć się, jak dodać cele do swoich przeglądów, skorzystaj z przewodników po zadaniach dotyczących przeglądów.  
-
 

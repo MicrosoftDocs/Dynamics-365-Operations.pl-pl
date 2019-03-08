@@ -1,13 +1,13 @@
 ---
-title: "Klient rozwiązania Finance and Operations — często zadawane pytania"
-description: "Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące klienta programu Microsoft Dynamics 365 for Finance and Operations."
+title: Klient rozwiązania Finance and Operations — często zadawane pytania
+description: Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące klienta Microsoft Dynamics 365 for Finance and Operations.
 author: jasongre
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 74f85f7a1c390d1f21d0423a794ff16c7250d9fa
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316724"
 ---
-
 # <a name="finance-and-operations-client-faq"></a>Klient rozwiązania Finance and Operations — często zadawane pytania
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące klienta programu Microsoft Dynamics 365 for Finance and Operations.
+Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące klienta Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="why-arent-symbols-loaded-when-i-use-finance-and-operations"></a>Dlaczego symbole nie ładują się, gdy używam programu Finance and Operations?
 
@@ -56,4 +55,3 @@ Opcję **Wyświetl szczegóły** można wyświetlić na kilka sposobów:
 
 - Jeśli formant ma funkcję **Wyświetl szczegóły** oraz jeśli formant ma wartość, ta wartość jest wyświetlana jako hiperłącze. Można kliknąć hiperłącze, aby otworzyć stronę zawierającą szczegółowe informacje.
 - Funkcja **Wyświetl szczegóły** jest również opcją w menu skrótów programu Finance and Operations. Więcej informacji o tym, kiedy menu skrótów programu Finance and Operations są wyświetlane po kliknięciu prawym przyciskiem myszy, można znaleźć w poprzedniej sekcji.
-

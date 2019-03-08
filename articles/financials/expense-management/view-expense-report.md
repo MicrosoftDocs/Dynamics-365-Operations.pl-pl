@@ -1,13 +1,13 @@
 ---
-title: "Wyświetlanie raportu z wydatków z księgi głównej lub modułu Zaopatrzenie i sourcing"
-description: "W tym temacie wyjaśniono, jak wyświetlić oryginalny raport z wydatków, w którym zgłoszono transakcję."
+title: Wyświetlanie raportu z wydatków z księgi głównej lub modułu Zaopatrzenie i sourcing
+description: W tym temacie wyjaśniono, jak wyświetlić oryginalny raport z wydatków, w którym zgłoszono transakcję.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPerDiems
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e88af5a815803d20cf97f21f6ae50bcf98539b83
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 6397ca01ef100b6149c70a335ce854bc0439aff2
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316402"
 ---
-
 # <a name="view-an-expense-report"></a>Wyświetl raport z wydatków
 
 [!include [banner](../includes/banner.md)]
@@ -35,4 +34,3 @@ W przypadku raportów z wydatków można przejść od transakcji do oryginalnego
 Aby przejść przez kolejne poziomy szczegółów do oryginalnego raportu z wydatków zawierającego transakcję, zaznacz transakcję, a następnie wybierz opcję **Dokument oryginalny**.
 
 Podczas wyświetlenia indywidualnych transakcji można również obejrzeć wszelkie dodatkowe dane dołączone do transakcji. Na przykład dla wyszczególnionego wydatku za hotel można wyświetlić dokładną listę wszystkich kosztów, takich jak dostęp do Internetu, rozmowy telefoniczne i serwis pokojowy.
-

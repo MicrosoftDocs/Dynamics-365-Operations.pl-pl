@@ -1,14 +1,14 @@
 ---
 title: Konsolidacje finansowe i przeliczenia walut
-description: "W tym temacie opisano funkcje konsolidacji finansowych i przeliczania walut dostępne w księdze głównej."
+description: W tym temacie opisano funkcje konsolidacji finansowych i przeliczania walut dostępne w księdze głównej.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: 8427d53bac3216d362b2bf8983a847f069351b3b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354007"
 ---
-
 # <a name="financial-consolidations-and-currency-translation"></a>Konsolidacje finansowe i przeliczenia walut
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie pokazano krok po kroku mechanizmy konsolidacji dostępne w aplikacjach Microsoft Dynamics 365 for Finance and Operations i Raportowanie finansowe. Opisano scenariusze raportowania międzyfirmowego, agregacji, eliminacji i udziałów mniejszościowych. Wyjaśniono też sposób postępowania w sytuacjach specjalnych, takich jak scenariusze, gdzie firmy mają różne okresy obrachunkowe lub plany kont.
+W tym temacie omówiono podejście stosowane w Microsoft Dynamics 365 for Finance and Operations i raportowaniu finansowym na potrzeby konsolidacji. Opisano scenariusze raportowania międzyfirmowego, agregacji, eliminacji i udziałów mniejszościowych. Wyjaśniono też sposób postępowania w sytuacjach specjalnych, takich jak scenariusze, gdzie firmy mają różne okresy obrachunkowe lub plany kont.
 
 Temat został napisany dla użytkowników i konsultantów funkcjonalnych. Założono w nim, że czytelnicy mają ogólną wiedzę o programach Finance and Operations i Raportowanie finansowe. Nie omówiono podstawowego konfigurowania.
 
@@ -181,4 +180,3 @@ Oto kilka scenariuszy konsolidacji obsługiwanych przez narzędzie Raportowanie 
 
 ## <a name="generating-consolidated-financial-statements"></a>Generowanie skonsolidowanych sprawozdań finansowych
 Aby uzyskać informacje o scenariuszach, w których mogą być tworzone skonsolidowane sprawozdania finansowe, zobacz [Generowanie skonsolidowanych sprawozdań finansowych](./generating-consolidated-financial-statements.md).
-

@@ -1,13 +1,13 @@
 ---
 title: Integracja z klientem Microsoft Project
-description: "Planowanie harmonogramu projektu i zarządzanie nim może być skomplikowane, dlatego menedżerowie projektów powinni używać narzędzi, które pomogą wykonywać to zadanie. Integracja z klientem programu Microsoft Project umożliwia otwieranie struktury podziału pracy projektu oraz zarządzanie nią."
+description: Planowanie harmonogramu projektu i zarządzanie nim może być skomplikowane, dlatego menedżerowie projektów powinni używać narzędzi, które pomogą wykonywać to zadanie. Integracja z klientem programu Microsoft Project umożliwia otwieranie struktury podziału pracy projektu oraz zarządzanie nią.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjWbsTemplate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,15 +17,14 @@ ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-04
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 48feb0182c623714b2acffafc42016c0471ba6c1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a3445417d5ae88e2ff3676962a82921a7ab475d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317483"
 ---
-
 # <a name="microsoft-project-client-integration"></a>Integracja z klientem Microsoft Project
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 03/26/2018
 Planowanie harmonogramu projektu i zarządzanie nim może być skomplikowane, dlatego menedżerowie projektów powinni używać narzędzi, które pomogą wykonywać to zadanie. Integracja z klientem programu Microsoft Project umożliwia otwieranie struktury podziału pracy projektu oraz zarządzanie nią. Menedżer projektu może publikować wszelkie zmiany z powrotem w strukturze podziału pracy projektu w programie Finance and Operations.
 
 > [!NOTE]
-> Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations z lipcową aktualizacją, należy zainstalować poprawki KB 4054797 i 4055884.
+> Jeśli używasz Microsoft Dynamics 365 for Finance and Operations w wersji po aktualizacji z lipca, musisz zainstalować aktualizacje KB 4054797 i 4055884.
 
 ## <a name="configure-the-microsoft-project-client-add-in"></a>Konfigurowanie dodatku klienta programu Microsoft Project
 Aby umożliwić integrację z klientem programu Microsoft Project, w aplikacji klienckiej Microsoft Project u użytkownika musi być zainstalowany dodatek usługi Microsoft Dynamics 365. W tym celu należy otworzyć **obszar roboczy Zarządzanie projektami**.
@@ -89,7 +88,7 @@ Aby utworzyć nową strukturę podziału pracy przy użyciu klienta programu Mic
 
 4.  Wybierz opcję **Projekt**.
 
-5.  Na karcie **Microsoft Dynamics 365** kliknij przycisk **Wyewidencjonuj**.
+5.  Kliknij **Wyewidencjonuj** na karcie **Microsoft Dynamics 365**.
 
 6.  Gotowy masz wszystko przygotowane do publikowania w programie Finance and Operations, na karcie **Microsoft Dynamics 365** kliknij przycisk **Zaewidencjonuj**.
 
@@ -128,4 +127,3 @@ Aby utworzyć nową strukturę podziału pracy za pomocą klienta programu Micro
 8.  Wybierz wartość w polu **Kalendarz** na potrzeby pozyskiwania zasobów.
 
 11. Kliknij przycisk **OK**.
-

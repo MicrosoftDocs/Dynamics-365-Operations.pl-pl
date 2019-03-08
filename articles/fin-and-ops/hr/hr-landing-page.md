@@ -1,13 +1,13 @@
 ---
 title: Zasoby ludzkie
-description: "Moduł Zasoby ludzkie upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Ponadto dla pracowników działu zasobów ludzkich stanowi platformę zarządzania odnośnymi obszarami. Te obszary obejmują rekrutację i utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami."
+description: Moduł Zasoby ludzkie upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Ponadto dla pracowników działu zasobów ludzkich stanowi platformę zarządzania odnośnymi obszarami. Te obszary obejmują rekrutację i utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami.
 author: rschloma
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: faf9b9a70d959719f381ec5171e4fb96af208478
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341771"
 ---
-
 # <a name="human-resources"></a>Zasoby ludzkie
 
 [!include [banner](../includes/banner.md)]
@@ -81,7 +80,7 @@ Poza wynagradzaniem pracowników za pomocą płac, wynagrodzeń i premii możesz
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Zarządzanie bezpieczeństwem i przestrzeganiem przepisów w miejscu pracy
 
-System Microsoft Dynamics AX może pomóc utrzymać bezpieczne środowisko pracy, w którym są przestrzegane obowiązujące przepisy prawa, w tym ustawa o osobach niepełnosprawnych oraz przepisy dotyczące imigracji i naturalizacji. Na przykład możesz zarządzać fizycznymi wymaganiami dla konkretnych funkcji, a także śledzić wnioski o zakwaterowanie, co pomoże organizacji zoptymalizować umiejętności pracowników.
+Rozwiązanie Microsoft Dynamics AX może pomóc utrzymać bezpieczne środowisko pracy, w którym są przestrzegane obowiązujące przepisy prawa, w tym ustawa o osobach niepełnosprawnych oraz przepisy dotyczące imigracji i naturalizacji. Na przykład możesz zarządzać fizycznymi wymaganiami dla konkretnych funkcji, a także śledzić wnioski o zakwaterowanie, co pomoże organizacji zoptymalizować umiejętności pracowników.
 
 - [Weryfikacja zatrudnienia za pomocą formularzy I-9](localizations/noam-usa-form-i-9-verification.md)
 - [Zgodność z ustawą ADA (Americans with Disabilities Act)](localizations/noam-usa-comply-ada.md)
@@ -95,4 +94,3 @@ Możesz projektować kwestionariusze i administrować nimi, aby zbierać informa
 - [Projektowanie kwestionariusza](../../talent/design-questionnaires.md)
 - [Rozsyłanie i wypełnianie kwestionariusza](../../talent/distribute-questionnaires.md)
 - [Wyświetlanie i ocenianie wyników kwestionariusza](../../talent/evaluate-questionnaire-results.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "Rozłożenie wersji BOM"
-description: "Ten artykuł wyjaśnia scenariusz planowania głównego, który obejmuje rozłożenie wersji listy składowej (BOM)."
+title: Rozłożenie wersji BOM
+description: Ten artykuł wyjaśnia scenariusz planowania głównego, który obejmuje rozłożenie wersji listy składowej (BOM).
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqTransExplosion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4f3c800d96805df38a2e31018f2d6c305e3ed7da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 80c9fa6ec98bd2cdc3edd5329e2a619ef9cc8cb2
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353915"
 ---
-
 # <a name="explosion-of-a-bom-version"></a>Rozłożenie wersji BOM
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ Poniższy rysunek przedstawia sposób przetwarzania rozłożenia popytu planu og
 [Planowanie główne — jak określa się wersję BOM](master-plan-bom-version-determined.md)
 
 [Planowanie główne a funkcjonalność wielooddziałowości](master-plan-multisite-functionality.md)
-
 
 
 

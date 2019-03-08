@@ -1,13 +1,13 @@
 ---
 title: Nawigacja z wyszukiwaniem
-description: "W tym temacie wyjaśniono, jak za pomocą funkcji wyszukiwania przechodzić do stron w programie Microsoft Dynamics 365 for Finance and Operations."
+description: W tym temacie wyjaśniono, jak za pomocą funkcji wyszukiwania przechodzić do stron w Microsoft Dynamics 365 for Finance and Operations.
 author: aneesmsft
 manager: AnnBe
 ms.date: 04/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7c05098815c6b330cbb9c7f5ce886779927c6804
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353018"
 ---
-
 # <a name="navigation-search"></a>Nawigacja z wyszukiwaniem
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak za pomocą funkcji wyszukiwania przechodzić do stron w programie Microsoft Dynamics 365 for Finance and Operations.
+W tym temacie wyjaśniono, jak za pomocą funkcji wyszukiwania przechodzić do stron w Microsoft Dynamics 365 for Finance and Operations.
 
 Finance and Operations oferuje funkcje dla szerokiego zakresu branż. Aplikacja zawiera szereg obszarów i stron ułatwiających wykonywanie różnych zadań. Aby szybko znaleźć strony z informacjami o odpowiednich zadaniach, użyj funkcji nawigacji z wyszukiwaniem.
 
@@ -64,4 +63,3 @@ Lista wyników wyszukiwania jest ograniczona do 10 pozycji. Jeśli w wynikach ni
 ## <a name="development"></a>Programowanie
 
 Z programistycznego punktu widzenia funkcja nawigacji z wyszukiwaniem jest łatwa do wykorzystania, ponieważ wdrażane elementy menu mogą pojawiać się w wynikach wyszukiwania niemal natychmiast. Jeśli tylko elementy menu mają łącza do okienka nawigacji lub pulpitu nawigacyjnego, automatycznie stają się one dostępne do wyszukiwania.
-

@@ -1,13 +1,13 @@
 ---
-title: "Wprowadzanie sald początkowych listy płac"
-description: "W tym temacie opisano kroki wprowadzania sald początkowych dla kodów zarobków, potrąceń, świadczeń i podatków. Informacje te są przydatne dla partnerów, którzy chcą zmigrować lub przenieść dane do nowej implementacji modułu Lista płac z innego systemu."
+title: Wprowadzanie sald początkowych listy płac
+description: W tym temacie opisano kroki wprowadzania sald początkowych dla kodów zarobków, potrąceń, świadczeń i podatków. Informacje te są przydatne dla partnerów, którzy chcą zmigrować lub przenieść dane do nowej implementacji modułu Lista płac z innego systemu.
 author: kherr75
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1e7bdfca55e1bdaba0b5ebdf55b46744e584ab2c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312998"
 ---
-
 # <a name="enter-payroll-beginning-balances"></a>Wprowadzanie sald początkowych listy płac
 
 [!include [banner](../../includes/banner.md)]
@@ -168,4 +167,3 @@ Istnieje możliwość wycofywania i ponownego wprowadzania transakcji. Aby wysto
 2. Kliknij przycisk **Tak**, gdy zostanie wyświetlony komunikat „Wycofanie tego sprawozdania o wynagrodzeniach spowoduje utworzenie wycofującego sprawozdania o wynagrodzeniach, które będzie do niego przeciwstawne. Żadnego z tych sprawozdań o wynagrodzeniach nie można edytować. Czy chcesz wycofać to sprawozdanie o wynagrodzeniach?” . 
 
 Po wycofaniu sprawozdania o wynagrodzeniach można wygenerować nowe sprawozdanie o wynagrodzeniach dla pracownika ze sprawozdania o zarobkach, które utworzono wcześniej. Pamiętaj, aby przed wygenerowaniem nowego sprawozdania o wynagrodzeniach poprawić wszelkie nieprawidłowe wiersze w sprawozdaniu o zarobkach, a następnie wygenerować nowe sprawozdania o wynagrodzeniach z właściwymi kwotami. 
-

@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie reguły Kanban dla wypłaty"
-description: "W tej procedurze pokazano konfigurację niezbędną do utworzenia reguły Kanban wycofania w celu przeniesienia materiałów w środowisku produkcji oszczędnej."
+---
+title: Tworzenie reguły Kanban dla wypłaty
+description: W tej procedurze pokazano konfigurację niezbędną do utworzenia reguły Kanban wycofania w celu przeniesienia materiałów w środowisku produkcji oszczędnej.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, UnitOfMeasureLookup, KanbanCreate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a77c66b64512274f2703543293c2f48f2df2acf5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 02c7133d2e02b27fb428874deeda21e2bab28fb6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341633"
 ---
 # <a name="create-a-withdrawal-kanban-rule"></a>Tworzenie reguły Kanban dla wypłaty
 
@@ -63,5 +63,4 @@ W tej procedurze pokazano konfigurację niezbędną do utworzenia reguły Kanban
 3. Kliknij przycisk Utwórz.
     * Spowoduje to utworzenie 2 kart Kanban.  
     * Należy zwrócić uwagę, że dla tej reguły Kanban wycofania zostały utworzone 2 karty Kanban, każda na 5 sztuk.  Jest to ostatni krok w tej procedurze.  
-
 

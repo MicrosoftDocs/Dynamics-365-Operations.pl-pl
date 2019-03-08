@@ -1,13 +1,13 @@
---- 
-title: "Konfigurowanie kont bankowych firmy dla poleceń zapłaty ISO20022"
-description: "To zadanie poprowadzi Cię przez konfigurowanie danych konta bankowego specyficznych dla firmy, które są wymagane do generowania plików płatności od odbiorców."
+---
+title: Konfigurowanie kont bankowych firmy dla poleceń zapłaty ISO20022
+description: To zadanie poprowadzi Cię przez konfigurowanie danych konta bankowego specyficznych dla firmy, które są wymagane do generowania plików płatności od odbiorców.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 290d0eeb383dc3808935809e21b1bf6c99a8550a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 6b61495342b18d6dbadb36d8ca146f5a68ba9f6c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353524"
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-direct-debits"></a>Konfigurowanie kont bankowych firmy dla poleceń zapłaty ISO20022
 
@@ -59,5 +59,4 @@ Jest to druga z pięciu procedur, które razem przedstawiają proces płatności
 5. Na liście kliknij łącze w wybranym wierszu.
     * Na przykład wybierz konto bankowe „DEMF OPER”.  
 6. Kliknij przycisk Zapisz.
-
 

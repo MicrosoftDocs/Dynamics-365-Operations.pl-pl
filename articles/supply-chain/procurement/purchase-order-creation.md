@@ -1,13 +1,13 @@
 ---
-title: "Tworzenie zamówień zakupu"
-description: "W tym artykule opisano proces i opcje ręcznego tworzenia zamówienia zakupu."
+title: Tworzenie zamówień zakupu
+description: W tym artykule opisano proces i opcje ręcznego tworzenia zamówienia zakupu.
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cb703ff7419a59aa174e16d8d988a96814e4fec6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c71ce3045bd91a136288016cb55b460f7ac787ae
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350097"
 ---
-
 # <a name="create-purchase-orders"></a>Tworzenie zamówień zakupu
 
 [!include [banner](../includes/banner.md)]
@@ -96,7 +95,6 @@ Może wystąpić konieczność opóźnienia finalizacji zamówienia zakupu. Na p
 [Przyjęcie produktów względem zamówień zakupu](product-receipt-against-purchase-orders.md)
 
 [Omówienie faktur od dostawców](../../financials/accounts-payable/vendor-invoices-overview.md)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Modelowanie organizacji oszczędnej"
-description: "Ten artykuł zawiera informacje o podstawowych pojęciach używanych w modelowaniu organizacji stosującej produkcję oszczędną."
+title: Modelowanie organizacji oszczędnej
+description: Ten artykuł zawiera informacje o podstawowych pojęciach używanych w modelowaniu organizacji stosującej produkcję oszczędną.
 author: cvocph
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 92cd1ea0a6ab6039da7074e032e0f78dd7443cba
 ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350994"
 ---
-
 # <a name="modeling-a-lean-organization"></a>Modelowanie organizacji oszczędnej
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ W scenariuszach produkcyjnych opartych na zleceniach produkcyjnych materiały s�
 
 Aby zminimalizować czasy realizacji dostaw i ryzyko wystąpienia nadwyżek zapasów między gniazdami produkcyjnymi, co następuje przy produkcji wsadowej, scenariusz produkcji oszczędnej wprowadza funkcje uzupełniania zapasów Kanban i supermarketów w obszarach produkcji i uzupełniania zapasów w magazynie. Zazwyczaj te funkcje zakłócają produkcję w częściowo niezależnych cyklach Kanban. Uzupełnianie zapasów Kanban dla półproduktów nie jest już inicjowane przez zamówienie na gotowy produkt. 
 
-Aby ponownie umożliwić kontekst produkcji i kosztów w różnych scenariuszach Kanban proponowanych w programie Microsoft Dynamics 365 for Finance and Operations, wprowadzono przepływy produkcji oparte na działaniach jako podstawę dla produkcji oszczędnej. Wszystkie reguły Kanban odnoszą się do tej wstępnie zdefiniowanej struktury. Model oparty na działaniach umożliwia konfigurowanie różnorodnych scenariuszy. Jednak nie zwiększa on poziomu komplikacji dla pracowników na produkcji, ponieważ wszystkie scenariusze używają tego samego interfejsu użytkownika opartego na działania.
+Aby ponownie umożliwić kontekst produkcji i kosztów w różnych scenariuszach Kanban proponowanych w usłudze Microsoft Dynamics 365 for Finance and Operations, wprowadzono przepływy produkcji oparte na działaniach jako podstawę dla produkcji oszczędnej. Wszystkie reguły Kanban odnoszą się do tej wstępnie zdefiniowanej struktury. Model oparty na działaniach umożliwia konfigurowanie różnorodnych scenariuszy. Jednak nie zwiększa on poziomu komplikacji dla pracowników na produkcji, ponieważ wszystkie scenariusze używają tego samego interfejsu użytkownika opartego na działania.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Półprodukty (bez poziomów BOM)
 Moduł Lean Manufacturing integruje w jednej strukturze karty Kanban dla produktów i półproduktów umieszczanych w zapasach, oferując w ten sposób ujednolicone środowisko obsługi we wszystkich przypadkach. Dzięki tej architekturze nie trzeba wprowadzać dodatkowych poziomów BOM w celu umożliwienia używania kart Kanban do półproduktów. Ta architektura pozwala także zminimalizować transakcje magazynowe.
@@ -65,7 +64,6 @@ Aby lepiej wspierać ciągłe doskonalenie przepływy produkcji są implementowa
 
 ## <a name="simplicity"></a>Prostota
 W implementacji idei produkcji oszczędnej wybraliśmy podejście oparte na przepływie produkcji i działaniach, ponieważ umożliwia ono modelowanie prostych i złożonych scenariuszy produkcji w jednej skalowalnej architekturze. Bliższe przyjrzenie się koncepcji działań ujawnia prostotę cenioną przez użytkowników — pracowników z produkcji i logistyki. Dzięki funkcji raportowania według zadań opartych na działaniach zamiast na transakcjach magazynowych, jednolity interfejs użytkownika dla wszystkich rodzajów modelu Lean Manufacturing przenoszą złożoność biznesową z interfejsu użytkownika tam gdzie jest jej miejsce: do przepływu produkcji jako podstawy Lean Manufacturing.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Jeden załącznik z wieloma rekordami odbiorców lub dostawców"
-description: "Ten temat zawiera omówienie tego, co się dzieje podczas księgowania jednego załącznika z wieloma rekordami odbiorców lub dostawców. Ta funkcja nie będzie już dostępna w kolejnych wersjach programu Microsoft Dynamics 365 for Finance and Operations, w związku z tym nie zalecamy używania tej metody księgowania ze względu na jej wpływ księgowy na przetwarzanie rozliczeń."
+title: Jeden załącznik z wieloma rekordami odbiorców lub dostawców
+description: Ten temat zawiera omówienie tego, co się dzieje podczas księgowania jednego załącznika z wieloma rekordami odbiorców lub dostawców. Ta funkcja nie będzie już dostępna w kolejnych wersjach programu Microsoft Dynamics 365 for Finance and Operations, w związku z tym nie zalecamy używania tej metody księgowania ze względu na jej wpływ księgowy na przetwarzanie rozliczeń.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d27c4182703b4421763036b2a338b3598f9e969b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4c499e31fb42a69dff6ac41faac0c78f7f4d1876
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330363"
 ---
-
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Jeden załącznik z wieloma rekordami odbiorców lub dostawców
 
 [!include [banner](../includes/banner.md)]
@@ -249,7 +248,6 @@ Aby uniknąć problemów z przyszłymi rozliczeniami tej transakcji, zamiast uż
 | **Załącznik** | **Typ konta** | **Konto** | **Opis** | **Strona debetowa** | **Strona kredytowa** | **Typ przeciwstawny** | **Konto przeciwstawne** |
 | 001         | Odbiorca         | US-008      |                 |           |  75,00     | Księga          | 999999---          |
 | 002         | Dostawca           | 1001        |                 |  75,00    |            | Księga          | 999999---          |
-
 
 
 

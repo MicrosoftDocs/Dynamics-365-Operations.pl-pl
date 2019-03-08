@@ -1,13 +1,13 @@
---- 
-title: "Definiowanie mapowań modeli raportowanie elektronicznego i wybieranie dla nich źródeł danych"
-description: "W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może wybrać źródła danych modelu danych raportowania elektronicznego."
+---
+title: Definiowanie mapowań modeli raportowanie elektronicznego i wybieranie dla nich źródeł danych
+description: W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może wybrać źródła danych modelu danych raportowania elektronicznego.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b5f2f2c699514d723f42f5d1fb25724f46dfc4f4
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348878"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Definiowanie mapowań modeli raportowanie elektronicznego i wybieranie dla nich źródeł danych
 
@@ -157,5 +157,4 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu 
 70. Zamknij stronę.
 71. Zamknij stronę.
 72. Zamknij stronę.
-
 

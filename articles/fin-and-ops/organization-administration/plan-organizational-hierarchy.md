@@ -1,13 +1,13 @@
 ---
 title: Planowanie hierarchii organizacyjnej
-description: "Przed skonfigurowaniem organizacji i hierarchii organizacyjnych upewnij się, że wiesz, jak najlepiej modelować firmę."
+description: Przed skonfigurowaniem organizacji i hierarchii organizacyjnych upewnij się, że wiesz, jak najlepiej modelować firmę.
 author: sericks007
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
@@ -18,23 +18,22 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 633d85333a510cec9cee2721e6e2330a47b6c78c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331996"
 ---
-
 # <a name="plan-your-organizational-hierarchy"></a>Planowanie hierarchii organizacyjnej
 
 [!include [banner](../includes/banner.md)]
 
-Przed skonfigurowaniem organizacji i hierarchii organizacyjnych w programie Microsoft Dynamics 365 for Finance and Operations upewnij się, że masz plan dotyczący modelowania firmy. Model organizacyjny ma znaczny wpływ na implementację programu Finance and Operations i na procesy biznesowe.
+Przed skonfigurowaniem organizacji i hierarchii organizacyjnych w Microsoft Dynamics 365 for Finance and Operations upewnij się, że masz plan dotyczący modelowania firmy. Model organizacyjny ma znaczny wpływ na implementację programu Finance and Operations i na procesy biznesowe.
 
 Hierarchie organizacyjne reprezentują relacje między organizacjami, które składają się na działalność. Dlatego podczas modelowania organizacji należy zwrócić szczególną uwagę na strukturę firmy. Zaleca się określenie struktury organizacji, na podstawie informacji uzyskanych od kadry zarządzającej i menedżerów wyższego stopnia z obszarów funkcjonalnych, takich jak operacje finansowe i rachunkowość, zasoby ludzkie, zakupy, a także sprzedaż i marketing.
 
-Podczas planowania hierarchii należy również wziąć pod uwagę relację między hierarchią organizacyjną i wymiarami finansowymi. Można skonfigurować wiele hierarchii organizacyjnych do reprezentowania różnych widoków dla prowadzonej działalności. Korzystając z wymiarów finansowych, można utworzyć raporty oparte na tych widokach. Praca z partnerem przy wdrażaniu programu Microsoft Dynamics 365 for Finance and Operations umożliwia tworzenie hierarchii organizacyjnej odpowiedniej zarówno pod względem organizacyjnym, jak i spełniającej ustawowe wymogi dotyczące raportowania.
+Podczas planowania hierarchii należy również wziąć pod uwagę relację między hierarchią organizacyjną i wymiarami finansowymi. Można skonfigurować wiele hierarchii organizacyjnych do reprezentowania różnych widoków dla prowadzonej działalności. Korzystając z wymiarów finansowych, można utworzyć raporty oparte na tych widokach. Praca z partnerem Microsoft Dynamics 365 for Finance and Operations umożliwia tworzenie hierarchii organizacyjnej odpowiedniej zarówno pod względem organizacyjnym, jak i spełniającej ustawowe wymogi dotyczące raportowania.
 
 > [!NOTE]
 > Wprawdzie można używać wymiarów finansowych do reprezentowania firmy bez tworzenia firm w programie Finance and Operations, ale wymiary finansowe nie są przeznaczone do zaspokajania operacyjnych lub biznesowych potrzeb firmy. Funkcję księgowania międzyjednostkowego w programie Finance and Operations zaprojektowano tylko z myślą o zapisach księgowych, które są tworzone przy każdej transakcji.
@@ -168,7 +167,7 @@ Jednostki operacyjne używają kontekstu kraju firmy nadrzędnej. Operacyjne jed
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Jeśli organizacja jest modelowana jako firma
 
-Dla krajów/regionów, które są obsługiwane przez program Finance and Operations, można utworzyć większość raportów ustawowych. Aby uzyskać informacje o tym, które raporty są dostępne dla każdego kraju/regionu, zobacz [Portal lokalizacji Microsoft Dynamics](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) dla programu Finance and Operations. (Wymagane jest logowanie CustomerSource).
+Dla krajów/regionów, które są obsługiwane przez program Finance and Operations, można utworzyć większość raportów ustawowych. Aby uzyskać informacje o tym, które raporty są dostępne dla każdego kraju/regionu, zobacz [Portal lokalizacji Microsoft Dynamics](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) dla programu Finance and Operations. (Wymagane jest logowanie w CustomerSource).
 
 > [!NOTE]
 > W module Finance and Operations warstwy księgowania w księdze głównej pozwalają na dodawanie wpisów korygujących dla firmy nadrzędnej, która stosuje inne standardy księgowania niż firma podrzędna. Na przykład dla firmy stosującej zasady ogólnie przyjęte w Wielkiej Brytanii (UK GAAP) można dokonać wpisów korygujących w warstwie księgowania. Te wpisy mogą być konsolidowane dla firmy nadrzędnej, która używa ogólnie przyjętych zasad rachunkowości (GAAP) w Stanach Zjednoczonych. Wpisy korygujące nie wpływają na raportowanie UK GAAP.
@@ -243,4 +242,3 @@ Podczas implementowania hierarchii organizacyjnej należy wziąć pod uwagę nas
 - Przed modelowaniem głównych scenariuszy restrukturyzacji użyj efektywnych dat hierarchii w celu wykonania analizy wpływu i testów weryfikacyjnych.
 - Użyj trybu roboczego w celu zmiany hierarchii, zanim opublikujesz nową wersję w środowisku produkcyjnym.
 - Ogranicz liczbę osób, które mają uprawnienia do dodawania i usuwania organizacji z hierarchii w środowisku produkcyjnym. Mniejsza liczba zmniejsza ryzyko, że mogą wystąpić kosztowne błędy i trzeba będzie dokonywać korekt.
-

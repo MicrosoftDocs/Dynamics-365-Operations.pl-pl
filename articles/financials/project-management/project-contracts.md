@@ -1,13 +1,13 @@
 ---
-title: "Umowy dotyczące projektu"
-description: "Ten temat zawiera przykłady umów dotyczących projektów, które można tworzyć dla różnych typów projektów i źródeł finansowania, oraz opis metod zarządzania umowami i fakturowania klientów projektów w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations."
+title: Umowy dotyczące projektu
+description: Ten temat zawiera przykłady umów dotyczących projektów, które można tworzyć dla różnych typów projektów i źródeł finansowania, oraz opis metod zarządzania umowami i fakturowania klientów projektów w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0f0fcec64ce03c6e1d877fb1c8d004bb416bd95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e46393b9ac8797bf12cca12099d177980b75ba38
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310376"
 ---
-
 # <a name="project-contracts"></a>Umowy dotyczące projektu
 
 [!include [banner](../includes/banner.md)]
@@ -342,7 +341,6 @@ Podczas konfigurowania umowy dotyczącej projektu, zgadzasz się wystawianie com
 -   Tworzysz fakturę dla odbiorcy na koniec każdego miesiąca kalendarzowego, w trakcie trwania projektu.
 
 Podczas pierwszego miesiąca, łącznie rejestrowanych jest 800 godzin pracy przez konsultantów pracujących nad projektem. Koszt materiałów biurowych do obciążenia projektu wynosi 2000. Dlatego na koniec miesiąca, można utworzyć fakturę na sumę 122,000, obliczoną jako 800 godzin przy 150 za godzinę plus 2000 więcej za materiały biurowe.
-
 
 
 

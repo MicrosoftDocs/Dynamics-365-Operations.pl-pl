@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie urządzeń przenośnych do pracy magazynowej"
-description: "W tym temacie opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych."
+title: Konfigurowanie urządzeń przenośnych do pracy magazynowej
+description: W tym temacie opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 74522c97716238b62af3d65a1c23ba9e5e60a68b
 ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/03/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347958"
 ---
-
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy magazynowej
 
 [!include [banner](../includes/banner.md)]
@@ -208,12 +207,12 @@ Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić p
 </thead>
 <tbody>
 <tr class="odd">
-<td>None</td>
+<td>Brak</td>
 <td>Ta wartość domyślna nie przetwarza pracy.</td>
 </tr>
 <tr class="even">
 <td>Sterowane przez system</td>
-<td>Program Microsoft Dynamics 365 for Finance and Operations określa rodzaj pracy, która jest przypisana do pracownika, i kolejność, w jakiej pracownik wykonuje pracę. Po wybraniu tej opcji można kliknąć opcję <strong>Praca sterowana przez system</strong> w okienku akcji, aby otworzyć stronę <strong>Kolejność sortowania określona przez system</strong>, na której można ustawić kryteria sortowania dla pracy. Kryteria sortowania określają porządek wykonywania pracy przez pracownika. Można dodać dowolną liczbę kryteriów zależnie od potrzeb.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations określa rodzaj pracy, która jest przypisana do pracownika, i kolejność, w jakiej pracownik wykonuje pracę. Po wybraniu tej opcji można kliknąć opcję <strong>Praca sterowana przez system</strong> w okienku akcji, aby otworzyć stronę <strong>Kolejność sortowania określona przez system</strong>, na której można ustawić kryteria sortowania dla pracy. Kryteria sortowania określają porządek wykonywania pracy przez pracownika. Można dodać dowolną liczbę kryteriów zależnie od potrzeb.</td>
 </tr>
 <tr class="odd">
 <td>Sterowane przez użytkownika</td>
@@ -225,7 +224,7 @@ Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić p
 </tr>
 <tr class="odd">
 <td>Grupowanie systemowe</td>
-<td>Program Microsoft Dynamics 365 for Finance and Operations grupuje pracę dla pracownika na podstawie określonego pola. Na przykład praca pobierania jest grupowana gdy pracownik skanuje identyfikator wysyłki, identyfikator ładunku lub dowolną wartość, którą można połączyć z poszczególnymi jednostkami pracy. Jeśli wybierzesz tę opcję, wymagane są następujące pola:
+<td>Microsoft Dynamics 365 for Finance and Operations grupuje pracę dla pracownika na podstawie określonego pola. Na przykład praca pobierania jest grupowana gdy pracownik skanuje identyfikator wysyłki, identyfikator ładunku lub dowolną wartość, którą można połączyć z poszczególnymi jednostkami pracy. Jeśli wybierzesz tę opcję, wymagane są następujące pola:
 <ul>
 <li><strong>Pole grup systemowych</strong> — wybierz pole, które pracownik musi przeskanować w celu pogrupowania pracy.</li>
 <li><strong>Etykieta grup systemowych</strong> — wpisz tekst informujący pracownika o tym, co należy zeskanować w celu pogrupowania pracy.</li>
@@ -246,7 +245,7 @@ Ta opcja przydaje się na przykład wtedy, gdy wiele palet jest przygotowanych d
 </tr>
 <tr class="even">
 <td>Grupowanie inwentaryzacji ciągłej</td>
-<td>Pracownik wybiera strefę, pulę pracy lub lokalizację, a program Microsoft Dynamics 365 for Finance and Operations przypisuje pracę na podstawie wyboru. Jeśli wybierzesz tę opcję, możesz też kliknąć <strong>Inwentaryzacja ciągła</strong> w okienku akcji, aby określić dodatkowe informacje do wyświetlenia i możesz też określić, ile razy pracownik musi potworzyć zliczanie, jeśli wystąpi rozbieżność.</td>
+<td>Pracownik wybiera strefę, pulę pracy lub lokalizację, a Microsoft Dynamics 365 for Finance and Operations przypisuje pracę na podstawie wyboru. Jeśli wybierzesz tę opcję, możesz też kliknąć <strong>Inwentaryzacja ciągła</strong> w okienku akcji, aby określić dodatkowe informacje do wyświetlenia i możesz też określić, ile razy pracownik musi potworzyć zliczanie, jeśli wystąpi rozbieżność.</td>
 </tr>
  <tr class="odd">
 <td>Ładowanie transportu</td>
@@ -334,7 +333,7 @@ W poniższej tabeli opisano te opcje.
 </tr>
 <tr class="odd">
 <td>Grupuj odłożone</td>
-<td>Zaznaczenie tej opcji powoduje pogrupowanie pracy odłożenia. Ta opcja jest dostępna, gdy praca została pogrupowana przez pracownika lub przez program Microsoft Dynamics 365 for Finance and Operations. Gdy pracownik zakończy wszystkie prace pobrania w grupie zostanie dla niej utworzona praca odłożenia.</td>
+<td>Zaznaczenie tej opcji powoduje pogrupowanie pracy odłożenia. Ta opcja jest dostępna, gdy praca została pogrupowana według pracownika lub przez Microsoft Dynamics 365 for Finance and Operations. Gdy pracownik zakończy wszystkie prace pobrania w grupie zostanie dla niej utworzona praca odłożenia.</td>
 </tr>
 <tr class="even">
 <td>Typy korekt zapasów </td>
@@ -367,11 +366,11 @@ W poniższej tabeli opisano te opcje.
 </tr>
 <tr class="even">
 <td>Pole grup systemowych</td>
-<td>Wybierz pole określające, jak program Microsoft Dynamics 365 for Finance and Operations pogrupuje pracę pobierania dla pracownika. Na przykład, jeśli wybierzesz pole <strong>ShipmentId</strong>, pracownik będzie skanować identyfikator wysyłki w celu pogrupowania pracy pobrania. Wszystkie prace dla wysyłki są następnie przypisywane do pracownika. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Trzeba też wprowadzić tekst w polu <strong>Etykieta grup systemowych</strong>, informujący pracownika o tym, co należy zeskanować.</td>
+<td>Wybierz pole określające, jak Microsoft Dynamics 365 for Finance and Operations pogrupuje pracę pobrania dla pracowników. Na przykład, jeśli wybierzesz pole <strong>ShipmentId</strong>, pracownik będzie skanować identyfikator wysyłki w celu pogrupowania pracy pobrania. Wszystkie prace dla wysyłki są następnie przypisywane do pracownika. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Trzeba też wprowadzić tekst w polu <strong>Etykieta grup systemowych</strong>, informujący pracownika o tym, co należy zeskanować.</td>
 </tr>
 <tr class="odd">
 <td>Etykieta grup systemowych</td>
-<td>Wpisz tekst informujący pracownika o tym, co należy zeskanować, gdy praca pobierania jest pogrupowana przez program Microsoft Dynamics 365 for Finance and Operations. Na przykład, jeśli używasz pola <strong>ShipmentId</strong> do grupowania pracy pobrania według wysyłki, możesz wprowadzić <strong>Shipment ID</strong> w polu. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Musisz także wybrać pole, według którego będzie przeprowadzane grupowanie w polu <strong>Pole grupowania systemu</strong>.</td>
+<td>Wpisz tekst informujący pracownika o tym, co należy zeskanować, gdy praca odbierania jest pogrupowana przez Microsoft Dynamics 365 for Finance and Operations. Na przykład, jeśli używasz pola <strong>ShipmentId</strong> do grupowania pracy pobrania według wysyłki, możesz wprowadzić <strong>Shipment ID</strong> w polu. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Musisz także wybrać pole, według którego będzie przeprowadzane grupowanie w polu <strong>Pole grupowania systemu</strong>.</td>
 </tr>
 <tr class="even">
 <td>Użyj danych domyślnych</td>
@@ -387,13 +386,13 @@ W poniższej tabeli opisano te opcje.
 </tr>
 <tr class="odd">
 <td>Kod szablonu pracy</td>
-<td>Wybierz szablon pracy, który utworzy pracę dla procesu. Na przykład jeśli otrzymujesz towar dla zamówienia zakupu, praca odłożenia zostanie wygenerowana na podstawie szablonu pracy. Jeśli w tym polu nie wybierzesz szablonu pracy, program Microsoft Dynamics 365 for Finance and Operations przypisze szablon na podstawie kryteriów zapytania. Aby uzyskać więcej informacji dotyczących szablonów pracy, zobacz <a href="control-warehouse-location-directives.md">Kontrolowanie pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji</a>.</td>
+<td>Wybierz szablon pracy, który utworzy pracę dla procesu. Na przykład jeśli otrzymujesz towar dla zamówienia zakupu, praca odłożenia zostanie wygenerowana na podstawie szablonu pracy. Jeśli nie wybierzesz szablonu pracy, Microsoft Dynamics 365 for Finance and Operations przypisze szablon na podstawie kryteriów kwerendy. Aby uzyskać więcej informacji dotyczących szablonów pracy, zobacz <a href="control-warehouse-location-directives.md">Kontrolowanie pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Wymagaj od pracowników potwierdzenia produktów, lokalizacji lub ilości podczas pobierania pozycji
-Można skonfigurować potwierdzenia pracy, które wymagają od pracownika użycia urządzenia mobilnego w celu zarejestrowania lokalizacji lub ilości podczas wykonywania pracy w magazynie. Potwierdzenia pracy pomagają zapewnić, że pracownik jest w prawidłowym miejscu lub obsługuje poprawne ilości towarów. Można także włączyć w programie Microsoft Dynamics 365 for Finance and Operations automatyczne potwierdzanie rejestracji pracownika. Po włączeniu automatycznego potwierdzenia nie można jednocześnie wymagać potwierdzeń dla lokalizacji lub ilości. Potwierdzenia pracy zawierają także produkty i warianty produktu. Ponadto można zarejestrować potwierdzenia przez skanowanie kodu kreskowego. Aby potwierdzić produkty i warianty produktów, trzeba wprowadzić identyfikator produktu/wariantu produktu. Może to być identyfikator produktu, identyfikator wyszukiwania produktu, identyfikator zewnętrzny, GTIN lub kod kreskowy. Po wprowadzeniu identyfikatora lub zeskanowaniu kodu kreskowego wymiary wariantu produktu są wyświetlane w urządzeniu przenośnym. 
+Można skonfigurować potwierdzenia pracy, które wymagają od pracownika użycia urządzenia mobilnego w celu zarejestrowania lokalizacji lub ilości podczas wykonywania pracy w magazynie. Potwierdzenia pracy pomagają zapewnić, że pracownik jest w prawidłowym miejscu lub obsługuje poprawne ilości towarów. Można także włączyć Microsoft Dynamics 365 for Finance and Operations do automatycznego potwierdzenia rejestracji pracownika. Po włączeniu automatycznego potwierdzenia nie można jednocześnie wymagać potwierdzeń dla lokalizacji lub ilości. Potwierdzenia pracy zawierają także produkty i warianty produktu. Ponadto można zarejestrować potwierdzenia przez skanowanie kodu kreskowego. Aby potwierdzić produkty i warianty produktów, trzeba wprowadzić identyfikator produktu/wariantu produktu. Może to być identyfikator produktu, identyfikator wyszukiwania produktu, identyfikator zewnętrzny, GTIN lub kod kreskowy. Po wprowadzeniu identyfikatora lub zeskanowaniu kodu kreskowego wymiary wariantu produktu są wyświetlane w urządzeniu przenośnym. 
 
 W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać potwierdzenia pracy.
 
@@ -420,6 +419,5 @@ W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać
 
 [Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania towarów przyjętych (przewodnik po zadaniu)](tasks/set-up-mobile-device-menu-item-register-received-items.md)
 [Korzyści wynikające z używania stanów zapasów](../inventory/inventory-statuses.md)
-
 
 

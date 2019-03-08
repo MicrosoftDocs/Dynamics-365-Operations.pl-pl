@@ -1,13 +1,13 @@
 ---
-title: "Sklepowe urządzenia peryferyjne"
-description: "W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi sieci sprzedaży."
+title: Sklepowe urządzenia peryferyjne
+description: W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi sieci sprzedaży.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/16/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: c2539af8a29b580a10002bc8648505d42c7b8456
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347866"
 ---
-
 # <a name="retail-peripherals"></a>Sklepowe urządzenia peryferyjne
 
 [!include [banner](includes/banner.md)]
@@ -42,7 +41,7 @@ Nawigacja: Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału
 
 Nawigacja: Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Urządzenia**. Urządzenie to jednostka, która reprezentuje fizyczne wystąpienie urządzenia zmapowanego do kasy POS. Po utworzeniu urządzenie jest mapowane do kasy POS. Jednostka urządzenia śledzi informacje o tym, kiedy kasa punktu sprzedaży jest aktywowana, jaki typ klienta jest używany i jaki pakiet aplikacji został wdrożony na konkretnym urządzeniu. Urządzenia mogą być mapowane do następujących typów aplikacji: Retail Modern POS, Retail Cloud POS, Retail Modern POS dla systemu Windows Phone, Retail Modern POS dla systemu Android i Retail Modern POS dla systemu iOS.
 
-### <a name="retail-modern-pos"></a>Nowoczesny punkt sprzedaży detalicznej
+### <a name="retail-modern-pos"></a>Retail Modern POS
 
 Modern POS to oprogramowanie punktu sprzedaży dla systemu Microsoft Windows. Może być instalowane w systemach operacyjnych Windows 10.
 
@@ -117,7 +116,7 @@ Obsługa urządzeń płatniczych jest implementowana za pośrednictwem aplikacji
 
 ### <a name="opos"></a>OPOS
 
-Aby zagwarantować możliwość współpracy jak największej gamy urządzeń z programem Microsoft Dynamics 365 for Retail, podstawową platformą obsługi urządzeń peryferyjnych sieci sprzedaży w tym programie jest mechanizm OLE for POS stanowiący branżowy standard. Standard OLE for POS sprzedaży został opracowany przez amerykańską Krajową Federację Sprzedawców Detalicznych (NRF), który ustanawia branżowe protokoły komunikacyjne dla urządzeń peryferyjnych sieci sprzedaży. OPOS jest powszechnie przyjętą implementacją standardu OLE for POS. Został opracowany w połowie lat 1990-ych od tego czasu był kilkukrotnie aktualizowany. Standard OPOS określa architekturę sterownika urządzenia, która umożliwia łatwą integrację urządzeń punktu sprzedaży z systemami punktu sprzedaży opartymi na systemie Windows. Formanty OPOS zarządzają komunikacją między zgodnymi urządzeniami a oprogramowaniem punktu sprzedaży. Formant OPOS składa się z dwóch części:
+Aby zagwarantować możliwość współpracy jak największej gamy urządzeń z programem Microsoft Dynamics 365 for Retail, podstawową platformą obsługi urządzeń peryferyjnych sieci sprzedaży w programie Microsoft Dynamics 365 for Retail jest mechanizm OLE for POS stanowiący branżowy standard. Standard OLE for POS sprzedaży został opracowany przez amerykańską Krajową Federację Sprzedawców Detalicznych (NRF), który ustanawia branżowe protokoły komunikacyjne dla urządzeń peryferyjnych sieci sprzedaży. OPOS jest powszechnie przyjętą implementacją standardu OLE for POS. Został opracowany w połowie lat 1990-ych od tego czasu był kilkukrotnie aktualizowany. Standard OPOS określa architekturę sterownika urządzenia, która umożliwia łatwą integrację urządzeń punktu sprzedaży z systemami punktu sprzedaży opartymi na systemie Windows. Formanty OPOS zarządzają komunikacją między zgodnymi urządzeniami a oprogramowaniem punktu sprzedaży. Formant OPOS składa się z dwóch części:
 
 - **Obiekt formantu** — Obiekt formantu klasy urządzeń (na przykład wyświetlaczu wierszowym) udostępnia interfejs dla programu komputerowego. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) dostarcza zestaw standardowych obiektów formatów OPOS, które są znane jako wspólne obiekty formantów (CCO). Obiekty CCO są używane do testowania składnika punktu sprzedaży w programie Microsoft Dynamics 365 for Retail. W związku z tym testowanie pomaga zagwarantować, że jeśli program Microsoft Dynamics 365 for Retail obsługuje klasę urządzeń za pośrednictwem mechanizmu OPOS, będzie obsługiwanych wiele typów urządzeń, o ile tylko producent dostarczy obiekt usługi zaprojektowany dla tego mechanizmu. Nie trzeba osobno testować każdego typu urządzenia.
 - **Obiekt usługi** — Obiekt usługi zapewnia komunikację między obiektem formantu (CCO) a urządzeniem. Zazwyczaj obiekt usługi dla urządzenia jest dostarczany przez producenta urządzenia. Jednak w niektórych przypadkach może być konieczne pobranie obiektu usługi z witryny internetowej producenta. Na przykład może być dostępny nowszy obiekt usługi. Aby odszukać adres witryny producenta w sieci Web, zajrzyj do dokumentacji sprzętu.
@@ -296,7 +295,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <ul>
 <li>OPOS</li>
 <li>Sieć
-<blockquote>[!NOTE] Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę.</blockquote>
+<blockquote>Uwaga: Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę.</blockquote>
 </li>
 </ul>
 </td>
@@ -307,7 +306,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <ul>
 <li>OPOS</li>
 <li>Sieć
-<blockquote>[!NOTE] Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę.</blockquote>
+<blockquote>Uwaga: Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę.</blockquote>
 </li>
 </ul>
 </td>
@@ -375,7 +374,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <ul>
 <li>OPOS</li>
 <li>Sterownik w systemie Windows
-<blockquote>[!NOTE] W przypadku drukarek systemu Windows w sieci stacja sprzętowa musi mieć uprawnienie dostępu do drukarki.</blockquote>
+<blockquote>Uwaga: W przypadku drukarek systemu Windows w sieci stacja sprzętowa musi mieć uprawnienie dostępu do drukarki.</blockquote>
 </li>
 <li>Sieć</li>
 </ul>
@@ -405,7 +404,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <ul>
 <li>OPOS</li>
 <li>Sieć
-<blockquote>[!NOTE] Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę na każdy profil sprzętu.</blockquote>
+<blockquote>Uwaga: Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę na każdy profil sprzętu.</blockquote>
 </li>
 </ul>
 </td>
@@ -470,7 +469,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <ul>
 <li>OPOS</li>
 <li>Sterownik w systemie Windows
-<blockquote>[!NOTE] W przypadku drukarek systemu Windows w sieci stacja sprzętowa musi mieć uprawnienie dostępu do drukarki.</blockquote>
+<blockquote>Uwaga: W przypadku drukarek systemu Windows w sieci stacja sprzętowa musi mieć uprawnienie dostępu do drukarki.</blockquote>
 </li>
 <li>Sieć</li>
 </ul>
@@ -492,7 +491,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <ul>
 <li>OPOS</li>
 <li>Sieć
-<blockquote>[!NOTE] Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę na każdy profil sprzętu.</blockquote>
+<blockquote>Uwaga: Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę na każdy profil sprzętu.</blockquote>
 </li>
 </ul>
 </td>
@@ -743,7 +742,6 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu dedyko
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Niestandardowy    | Połączenie przez sieć     |
-| Star         | TSP100   | OPOS      | Wymaga sterowników do modelu TSP650II |
 | HP           | F7M67AA  | OPOS      | Zasilanie przez USB               |
 
 #### <a name="bar-code-scanner"></a>Skaner kodów kreskowych
@@ -818,7 +816,6 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Niestandardowy    | Połączenie przez sieć     |
-| Star         | TSP100   | OPOS      | Wymaga sterowników do modelu TSP650II |
 | HP           | F7M67AA  | OPOS      | Zasilanie przez USB               |
 
 #### <a name="payment-terminal"></a>Terminal płatniczy 
@@ -845,7 +842,7 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
 - Komputer, na którym jest uruchomiony program Modern POS, ufa certyfikatowi używanemu na komputerze, na którym jest uruchomiona stacja sprzętowa.
 
     - Aby zweryfikować tę konfigurację, w przeglądarce sieci web przejdź do następującego adresu URL: `https://<Computer Name>:<Port Number>/HardwareStation/ping`.
-    - Ten adres URL używa polecenia ping do sprawdzania, czy jest możliwy dostęp do komputera, a przeglądarka wskazuje, czy certyfikat jest zaufany. Na przykład w programie Internet Explorer na pasku adresu pojawia się ikona kłódki. Po kliknięciu tej ikony program Internet Explorer sprawdza, czy certyfikat jest obecnie zaufany. Można zainstalować certyfikat na lokalnym komputerze, wyświetlając szczegóły pokazanego certyfikatu.
+    - Ten adres URL używa polecenia ping do sprawdzania, czy jest możliwy dostęp do komputera, a przeglądarka wskazuje, czy certyfikat jest zaufany. (Na przykład w programie Internet Explorer na pasku adresu pojawia się ikona kłódki. Po kliknięciu tej ikony program Internet Explorer sprawdza, czy certyfikat jest obecnie zaufany. Można zainstalować certyfikat na lokalnym komputerze, wyświetlając szczegóły pokazanego certyfikatu.
 
 - Na komputerze, na którym jest uruchomiona stacja sprzętowa, port przeznaczony do używania przez stację sprzętową jest otwarty w zaporze.
 - Na stacji sprzętowej zostały prawidłowo zainstalowane informacje o koncie handlowca za pomocą narzędzia instalowania informacji o handlowcu uruchamianego na koniec procesu instalowania stacji sprzętowej.
@@ -894,4 +891,3 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Symulator sklepowych urządzeń peryferyjnych](dev-itpro/retail-peripheral-simulator.md)
-

@@ -1,32 +1,31 @@
 ---
-title: "Formuły i wersje formuł"
-description: "Ten temat zawiera informacje o formułach i wersjach formuł. Formuła określa materiały, składniki i wyniki określonego procesu w wytwarzaniu procesowym. Formuły służą do planowania i wytwarzania produktów w wytwarzaniu procesowym."
+title: Formuły i wersje formuł
+description: Ten temat zawiera informacje o formułach i wersjach formuł. Formuła określa materiały, składniki i wyniki określonego procesu w wytwarzaniu procesowym. Formuły służą do planowania i wytwarzania produktów w wytwarzaniu procesowym.
 author: cvocph
 manager: AnnBe
 ms.date: 09/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bbffc298ff5d2442092f8f0c987b7e79a7934a84
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4475695b1a00213ab7e3b5060fd38cc71883d2bd
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350120"
 ---
-
 # <a name="formulas-and-formula-versions"></a>Formuły i wersje formuł
 
 [!include [banner](../includes/banner.md)]
@@ -72,4 +71,3 @@ Funkcja Skalowalne jest dostępna tylko wtedy, gdy wszystkie składniki towaru w
 
 ## <a name="use-step-consumption"></a>Korzystanie ze zużycia etapowego
 Zużycie etapowe eliminuje konieczność wprowadzania ilości na karcie **Wiersz formuły** dla składnika. Zamiast tego konfigurowana jest funkcja Zużycie etapowe z wartościami **Od serii** i **Ilość**. Wybierane są informacje ze zużycia etapowego na rekord serii, które są zgodne z ilością w zamówieniu partii. Zużycie etapowe jest przydatne, gdy wielkość zużycia nie jest liniowa względem rozmiaru zamówienia partii i zwiększa wymaganie dopiero po osiągnięciu określonego progu ilości. Aby włączyć tę funkcję dla nowej formuły, w grupie **Obliczanie zużycia** zmień ustawienie formuły dla odpowiedniego składnika ze **Standardowe** na **Etapowe**. Tę metodę zużycia należy określić na karcie **Konfiguracja** strony **Wiersz formuły**.
-

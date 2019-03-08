@@ -1,13 +1,13 @@
 ---
-title: "Automatyzacja obsługi faktur od dostawców"
-description: "W tym temacie opisano dostępne funkcje kompleksowej automatyzacji obsługi faktur od dostawców, w tym nawet faktur zawierających załączniki."
+title: Automatyzacja obsługi faktur od dostawców
+description: W tym temacie opisano dostępne funkcje kompleksowej automatyzacji obsługi faktur od dostawców, w tym nawet faktur zawierających załączniki.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6ea483a82b8215f0e6d8f420c007da349313daa5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 551f3d5fc52fac725fcc9fedc37dc1c85fac5a26
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324521"
 ---
 # <a name="vendor-invoice-automation"></a>Automatyzacja obsługi faktur od dostawców
 
@@ -232,4 +232,3 @@ Następujące role zapewniają dostęp tylko do odczytu w przeglądarce załącz
 + **Pracownik ds. rozrachunków z dostawcami** i **Menedżer ds. rozrachunków z dostawcami** — Do tych ról jest przypisany obowiązek Obsługa faktur od dostawcy.
 
 Domyślnie jeśli rola użytkownika zawiera prawa do edycji na każdej stronie, użytkownik będzie miał również prawa do edycji w przeglądarce załączników dla akcji wyróżniania, blokowania i adnotowania. Jednak jeśli istnieją scenariusze, w których określona rola powinna mieć prawa do edycji na stronie, ale nie w przeglądarce załączników, można użyć odpowiednich uprawnień z poprzedniej listy, aby zaspokoić wymogi tych przypadków użycia.
-

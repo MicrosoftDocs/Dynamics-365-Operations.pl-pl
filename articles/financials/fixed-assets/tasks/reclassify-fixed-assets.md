@@ -1,13 +1,13 @@
---- 
-title: "Zmień klasyfikację środków trwałych"
-description: "Aby przeklasyfikować środek trwały, należy przenieść go do nowej grupy środków trwałych lub przypisać mu nowy numer środka trwałego w tej samej grupie."
+---
+title: Zmień klasyfikację środków trwałych
+description: Aby przeklasyfikować środek trwały, należy przenieść go do nowej grupy środków trwałych lub przypisać mu nowy numer środka trwałego w tej samej grupie.
 author: saraschi2
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d8e289e2c18fd28829fb4b749933ae1d84e0b631
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cafd499e849570cae7b7f58bf2d487a7ac0093e6
-ms.openlocfilehash: 6bce294329c7ec6dc436c3d3baf6597e0283c9bd
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/30/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323302"
 ---
 # <a name="reclassify-fixed-assets"></a>Zmień klasyfikację środków trwałych
 
@@ -44,5 +44,4 @@ Po przeklasyfikowaniu środka trwałego:
 5. W polu Data przeklasyfikowania wprowadź datę.
 6. W polu Seria załączników wprowadź lub wybierz wartość.
 7. Kliknij przycisk OK.
-
 

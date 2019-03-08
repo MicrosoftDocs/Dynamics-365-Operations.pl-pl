@@ -1,13 +1,13 @@
 ---
-title: "Blokowanie zapasów"
-description: "Ten artykuł zawiera omówienie mechanizmu blokowania zapasów, który jest częścią procesu kontroli jakości w programie Microsoft Dynamics 365 for Finance and Operations. Używając blokowania, można zapobiec przetwarzaniu i zużywaniu zapasów."
+title: Blokowanie zapasów
+description: Ten artykuł zawiera omówienie mechanizmu blokowania zapasów, który jest częścią procesu kontroli jakości w programie Microsoft Dynamics 365 for Finance and Operations. Używając blokowania, można zapobiec przetwarzaniu i zużywaniu zapasów.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventBlocking, InventQualityOrderTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: eb6291e2f012f148b247b747f84155b96cf09677
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b7c788f4b054c7d20df69459c31bb16994d8a9ec
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352052"
 ---
-
 # <a name="inventory-blocking"></a>Blokowanie zapasów
 
 [!include [banner](../includes/banner.md)]
@@ -68,4 +67,3 @@ Można określić, które stany zapasów powodują blokowanie, za pomocą parame
 [Procesy zarządzania jakością](quality-management-processes.md)
 
 [Sprawdzenie jakości towarów (przewodnik zadania)](tasks/inspect-quality-goods.md)
-

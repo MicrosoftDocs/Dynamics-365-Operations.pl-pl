@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie zarządzania wydatkami"
-description: "W tym artykule opisano zagadnienia i decyzje, które należy uwzględnić w procesie planowania przed skonfigurowaniem modułu Zarządzanie wydatkami w programie Microsoft Dynamics 365 for Finance and Operations."
+title: Konfigurowanie zarządzania wydatkami
+description: W tym artykule opisano zagadnienia i decyzje, które należy uwzględnić w procesie planowania przed skonfigurowaniem modułu Zarządzanie wydatkami w Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 08/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: GlobalCategory, ProjCategory, TrvLocations, TrvParameters, TrvPaymethod, TrvPerDiems
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5ac9959a4ee66e52ead5050897403602e407ca10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c87909d9eb3a4d717e0c40289353da0267a51f60
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322037"
 ---
-
 # <a name="configure-expense-management"></a>Konfigurowanie zarządzania wydatkami
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano zagadnienia i decyzje, które należy uwzględnić w procesie planowania przed skonfigurowaniem modułu Zarządzanie wydatkami w programie Microsoft Dynamics 365 for Finance and Operations. W funkcji Zarządzanie wydatkami można przechowywać informacje o metodach płatności, wnioski wyjazdowe, raporty z wydatków oraz zasady itp.
+W tym temacie opisano zagadnienia i decyzje, które należy uwzględnić w procesie planowania przed skonfigurowaniem modułu Zarządzanie wydatkami w Microsoft Dynamics 365 for Finance and Operations. W funkcji Zarządzanie wydatkami można przechowywać informacje o metodach płatności, wnioski wyjazdowe, raporty z wydatków oraz zasady itp.
 
 Ponieważ wiele decyzji podjętych podczas planowania konfiguracji zarządzania wydatkami jest opartych na hierarchii i strukturze finansowej organizacji, musisz konsultować się z dokumentami planowania dla tych dokumentów.
 
@@ -163,4 +162,3 @@ Tworząc zasady raportu wydatków można ułatwić organizacji oszczędność cz
 - Kiedy zasad wygasa?
 - Jaka jest reguła?
 - Jaki jest wynik reguły?
-

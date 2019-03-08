@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie księgi rachunku kosztów"
-description: "Księga rachunku kosztów reprezentuje całościowo jednostkę raportowania."
+---
+title: Tworzenie księgi rachunku kosztów
+description: Księga rachunku kosztów reprezentuje całościowo jednostkę raportowania.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a9878a03181ccb1eb9e31edefae345cee84b40c5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: ba8562f01ef440dd98db242550ee0e60db7acfc5
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310215"
 ---
 # <a name="create-a-cost-accounting-ledger"></a>Tworzenie księgi rachunku kosztów
 
@@ -37,5 +37,4 @@ Księga rachunku kosztów reprezentuje całościowo jednostkę raportowania. Jes
 7. W polu Typ kursu wymiany wprowadź lub wybierz wartość.
 8. W polu Wymiar statystyczny wprowadź lub wybierz wartość.
 9. Kliknij przycisk Zapisz.
-
 

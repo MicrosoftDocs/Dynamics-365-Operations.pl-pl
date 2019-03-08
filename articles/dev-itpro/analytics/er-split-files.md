@@ -1,13 +1,13 @@
 ---
-title: "Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości treści"
-description: "Ten temat zawiera informacje dotyczące dzielenia plików generowanych na podstawie rozmiaru pliku i ilości elementu zawartości."
+title: Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości treści
+description: Ten temat zawiera informacje dotyczące dzielenia plików generowanych na podstawie rozmiaru pliku i ilości elementu zawartości.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 8c3899d5c6602b3afe13b447b40f0b4dcc701448
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 0f13194575e2f19f585f09ffad99144c9a9fc3b1
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347107"
 ---
-
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości treści
 
 [!include[banner](../includes/banner.md)]
@@ -49,4 +48,3 @@ Aby dowiedzieć się więcej o tej funkcji, należy odtworzyć przewodnik po zad
 [Aplikacje docelowe Raportowania elektronicznego](electronic-reporting-destinations.md)
 
 [Projektant formuł w Raportowaniu elektronicznym](general-electronic-reporting-formula-designer.md)
-

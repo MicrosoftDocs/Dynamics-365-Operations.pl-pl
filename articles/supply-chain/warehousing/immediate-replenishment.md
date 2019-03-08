@@ -1,13 +1,13 @@
 ---
-title: "Natychmiastowe uzupełnianie zapasów"
-description: "W tym temacie opisano, jak wykorzystywać funkcję natychmiastowego uzupełniania zapasów do uzupełnienia zapasów, gdy dyrektywa lokalizacji nie alokuje zapasów."
+title: Natychmiastowe uzupełnianie zapasów
+description: W tym temacie opisano, jak wykorzystywać funkcję natychmiastowego uzupełniania zapasów do uzupełnienia zapasów, gdy dyrektywa lokalizacji nie alokuje zapasów.
 author: Mirzaab
 manager: AnnBe
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocDirTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: ab1f06951d5daceaf002b2cc23236dd818457985
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a11a26df85647aa36cd30c42f81be4ec2af4409b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348602"
 ---
-
 # <a name="immediate-replenishment"></a>Natychmiastowe uzupełnianie zapasów
 
 [!include [banner](../includes/banner.md)]
@@ -58,4 +57,3 @@ Jeśli funkcja natychmiastowego uzupełniania zapasów jest wybrana dla wiersza 
 
 - Upewnij się, że zastosowany szablon uzupełnienia zapasów popytu jest skonfigurowany tak, aby używał poprawnych szablonów lokalizacji i szablonów pracy typu **Uzupełnianie zapasów**.
 - Upewnij się, że jest wystarczająca ilość dostępnych zapasów w lokalizacjach, gdzie szablon uzupełniania zapasów popytu szuka dostępnych zapasów dla uzupełnienia.
-

@@ -1,30 +1,29 @@
 ---
-title: "Strona AxErd została wycofana"
-description: "Musieliśmy zamknąć stronę AxErd. Udało nam się umieścić kod źródłowy projektu oraz pliki HTML tej strony sieci web w repozytorium GitHub."
+title: Strona AxErd została wycofana
+description: Musieliśmy zamknąć stronę AxErd. Udało nam się umieścić kod źródłowy projektu oraz pliki HTML tej strony sieci web w repozytorium GitHub.
 author: margoc
 manager: AnnBe
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: margoc
 ms.search.scope: AX 2012
 ms.custom: 62303
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 71c61764ca2dd79df110d257b61bd656804519ef
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313527"
 ---
-
 # <a name="axerd-page-has-been-retired"></a>Strona AxErd została wycofana
 
 [!include [banner](../includes/banner.md)]
@@ -36,4 +35,3 @@ Strony HTML znajdują się w repozytorium pod adresem [https://github.com/Micros
 Opis sposobu tworzenia własnych diagramów ERD znajduje się na stronie [https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm](https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm)
 
 Rozwiązanie znajduje się w katalogu głównym folderu [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd).
-

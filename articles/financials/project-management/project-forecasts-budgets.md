@@ -1,13 +1,13 @@
 ---
-title: "Prognozy i budżety projektów"
-description: "Rozwiązanie Microsoft Dynamics 365 for Finance and Operations udostępnia prognozy i budżety projektów umożliwiające obsługę i kontrolę projektów."
+title: Prognozy i budżety projektów
+description: Microsoft Dynamics 365 for Finance and Operations zapewnia prognozy i budżety projektów do zarządzania projektami i kontrolowania ich.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 530a2717427c540d80509c4862e6fb8ea7c5694a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e31a013d6bf33b92b02bd9645a19380ba07f4a05
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310399"
 ---
-
 # <a name="project-forecasts-and-budgets"></a>Prognozy i budżety projektów
 
 [!include [banner](../includes/banner.md)]
 
-Program Microsoft Dynamics 365 for Finance and Operations umożliwia obsługę i kontrolę projektów na dwa sposoby: za pomocą prognoz projektów i budżetów projektów. 
+Microsoft Dynamics 365 for Finance and Operations zapewnia dwie metody zarządzania projektami i ich kontroli: prognozy projektów i budżety projektów. 
 
 Korzystaj z prognozowania projektu, jeśli Twoja organizacja ma perspektywę organizacyjną i koncentruje się przychodach i kosztach pochodzących z określonych transakcji. Korzystaj z budżetowania projektu, jeśli Twoja organizacja bardziej koncentruje się na kwotach finansowych. 
 
@@ -80,7 +79,6 @@ Budżety projektów są automatycznie kojarzone z dwoma modelami prognozy, jedny
 Modele prognozy mają hierarchię jednowarstwową. To znaczy, że jedna prognoza projektu musi być skojarzona z jednym modelem prognozy.
 
 Jeśli używasz prognozowania projektu, modele można określić jako podmodele Następnie można tworzyć prognozy według okresu, działu lub regionu. Na przykład można utworzyć model prognozy na rok, a następnie utworzyć podmodele prognoz regionalnych Północny Wschód, Południowy Wschód, Północny Zachód i Południowy Zachód dla, które przesyłają szefowie regionów. Wybierając różne opcje w dostępnych raportach, można wyświetlać informacje według całkowitej prognozy lub podmodelu.
-
 
 
 

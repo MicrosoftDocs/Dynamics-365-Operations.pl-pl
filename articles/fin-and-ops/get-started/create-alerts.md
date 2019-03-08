@@ -1,13 +1,13 @@
 ---
-title: "Tworzenie reguł alertów"
-description: "Ten temat zawiera informacje o alertach oraz wyjaśnia, jak utworzyć regułę alertu, dzięki czemu będziesz otrzymywać powiadomienia o zdarzeniach, takich jak nadejście określonego dnia lub wystąpienie konkretnej zmiany."
+title: Tworzenie reguł alertów
+description: Ten temat zawiera informacje o alertach oraz wyjaśnia, jak utworzyć regułę alertu, dzięki czemu będziesz otrzymywać powiadomienia o zdarzeniach, takich jak nadejście określonego dnia lub wystąpienie konkretnej zmiany.
 author: tjvass
 manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: cbf4917424e72a70a6d513b5daf45f6bf9cd57c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 78e1e6f7be04e1d4fecae080cbd4a285358590fb
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329420"
 ---
-
 # <a name="create-alert-rules"></a>Tworzenie reguł alertów
 
 [!include [banner](../includes/banner.md)]
@@ -84,4 +83,3 @@ Na skróconej karcie **Prześlij mi alert za pomocą** w oknie dialogowym **Utw�
 7. Na skróconej karcie **Prześlij mi alert za pomocą** w polu **Temat** zaakceptuj domyślny nagłówek tematu wiadomości e-mail lub wprowadź nowy temat. Tekst używany jako nagłówek tematu dla e-maila ten będzie wyświetlany po wyzwoleniu alertu.
 8. W polu **Wiadomość** wprowadź opcjonalną wiadomość. Wprowadzony tekst jest komunikatem, jaki otrzymuje użytkownik po wyzwoleniu alertu.
 9. Kliknij przycisk **OK**, aby zapisać ustawienia i utworzyć regułę alertu.
-

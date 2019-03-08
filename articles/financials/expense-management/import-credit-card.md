@@ -1,13 +1,13 @@
 ---
-title: "Import i obsługa transakcji kartą kredytową"
-description: "W tym temacie wyjaśniono sposób importowania i obsługi transakcji kartą kredytową dotyczących wydatków. Te transakcje można skonfigurować tak, aby były automatycznie importowane wg cyklicznego harmonogramu lub można je importować ręcznie w razie potrzeby."
+title: Import i obsługa transakcji kartą kredytową
+description: W tym temacie wyjaśniono sposób importowania i obsługi transakcji kartą kredytową dotyczących wydatków. Te transakcje można skonfigurować tak, aby były automatycznie importowane wg cyklicznego harmonogramu lub można je importować ręcznie w razie potrzeby.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPbsMainDataLines
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 9674cf495b7fdd40d8672580b9d10e9ebe626bb0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e640c9e44add5599be4a2e381b4ffd81f212889c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322658"
 ---
-
 # <a name="import-and-maintain-credit-card-transactions"></a>Import i obsługa transakcji kartą kredytową
 
 [!include [banner](../includes/banner.md)]
@@ -53,4 +52,3 @@ Aby uzyskać więcej informacji o jednostkach danych, zobacz [Jednostki danych](
 Po zakończeniu zatrudnienia pracownika jego konto usług Active Directory Domain Services (AD DS) jest wyłączane. Mogą jednak istnieć aktywne transakcje karty kredytowej, które muszą zostać zaliczone i zwrócone. Na stronie **Transakcje karty kredytowej** można zmienić przypisanie pracownika dla każdej transakcji kartą kredytową, której powiązany pracownik zakończył zatrudnienie.
 
 Wybierz co najmniej jedną transakcję karty kredytowej, a następnie wybierz opcję **Przypisz ponownie transakcje**. Następnie możesz wybrać innego pracownika, aby przypisać do niego transakcje karty kredytowej. Po zmianie przypisania transakcji kartą kredytową transakcje można wybrać dla raportu o wydatkach i opłacić za pomocą zwykłego procesu uiszczania należności wykazanych w raporcie z wydatków.
-

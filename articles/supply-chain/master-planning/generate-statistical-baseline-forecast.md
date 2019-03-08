@@ -1,13 +1,13 @@
 ---
 title: Generowanie bazowej prognozy statystycznej
-description: "Ten artykuł zawiera informacje dotyczące parametrów i filtrów, które są używane w obliczeniach prognozy popytu."
+description: Ten artykuł zawiera informacje dotyczące parametrów i filtrów, które są używane w obliczeniach prognozy popytu.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 30f2ccb8c0b4d7c4755e0b8dc66539e165265090
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326430"
 ---
-
 # <a name="generate-a-statistical-baseline-forecast"></a>Generowanie bazowej prognozy statystycznej
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Gdy strategia prognoza jest ustawiona na **Kopiuj na popycie historycznym**, kon
 
 Aby uniknąć nieporozumień w planach produkcji, pewną liczbę przedziałów prognozy można zablokować. Tę liczbę ustala się w polu **Horyzont czasowy zamrożenia**. Na stronie **Skorygowana prognoza popytu** komórki dla zamrożonych przedziałów są wyłączone, by pokazać, że tych wartości nie należy zmieniać. 
 
-Data rozpoczęcia dla bazowa prognozy popytu nie musi być datą bieżącą ani datę w przyszłości. Aby ustawić inną datę rozpoczęcia, użyj pola **Data początkowa prognozy bazowej — Od daty**. Na przykład w czerwcu, użytkownicy mogą wygenerować prognozę w następnym roku. Ponieważ brakuje przedziałów prognozy między końcem prognozy historycznej a początkiem prognozy bazowej, przewidywania mogą być nieprecyzyjne. Jeśli używasz usługi prognozowania popytu w programie Microsoft Dynamics 365 for Finance and Operations, masz do dyspozycji cztery sposoby uzupełniania braków. Metodę wybiera się, ustawiając parametr MISSING\_VALUE\_SUBSTITUTION na stronie **Parametry prognozowania popytu**. 
+Data rozpoczęcia dla bazowa prognozy popytu nie musi być datą bieżącą ani datę w przyszłości. Aby ustawić inną datę rozpoczęcia, użyj pola **Data początkowa prognozy bazowej — Od daty**. Na przykład w czerwcu, użytkownicy mogą wygenerować prognozę w następnym roku. Ponieważ brakuje przedziałów prognozy między końcem prognozy historycznej a początkiem prognozy bazowej, przewidywania mogą być nieprecyzyjne. Jeśli używasz usługi prognozowania popytu w Microsoft Dynamics 365 for Finance and Operations, masz do dyspozycji sposoby wypełniania brakujących miejsc. Metodę wybiera się, ustawiając parametr MISSING\_VALUE\_SUBSTITUTION na stronie **Parametry prognozowania popytu**. 
 
 Pole **Data początkowa prognozy bazowej** - **Od dnia** musi być ustawione na początek przedziału prognozy, np. w Stanach Zjednoczonych w niedzielę, jeśli przedziałem prognozowania jest tydzień. System automatycznie dopasowuje pole **Data początkowa prognozy bazowej** - **Od dnia** do początku przedziału prognozy. 
 
@@ -72,7 +71,6 @@ Jeśli prognoza nie jest generowana dla dużego zestawu towarów, ale na przykł
 [Wprowadzanie ręcznych korekt prognozy bazowej](manual-adjustments-baseline-forecast.md)
 
 [Autoryzowanie skorygowanej prognozy](authorize-adjusted-forecast.md)
-
 
 
 

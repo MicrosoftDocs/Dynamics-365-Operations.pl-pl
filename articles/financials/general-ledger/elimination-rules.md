@@ -1,13 +1,13 @@
 ---
-title: "Reguły eliminacji"
-description: "Ten temat zawiera informacje o różnych regułach eliminacji i opcjach raportowania eliminacji."
+title: Reguły eliminacji
+description: Ten temat zawiera informacje o różnych regułach eliminacji i opcjach raportowania eliminacji.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0736d63c9a582948d197dc267f9941cbbd3e3c6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 882b8f21be94b8cbb0c162c965ffc129b47d7edf
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333100"
 ---
-
 # <a name="elimination-rules"></a>Reguły eliminacji
 
 [!include [banner](../includes/banner.md)]
@@ -153,7 +152,6 @@ Istnieją dwa sposoby przetwarzania transakcji eliminacji: w procesie konsolidac
 W firmie zdefiniowanej jako firma eliminacji wybierz opcję **Arkusz eliminacji** w module Konsolidacje. Po wybraniu arkusza kliknij przycisk **Wiersze**. Propozycję można wygenerować, wybierając menu **Propozycje**, a następnie wybierając opcję **Propozycja eliminacji**.
 
 Wybierz firmę będącą źródłem skonsolidowanych danych, a następnie wybierz regułę, którą chcesz przetwarzać. Wprowadź daty początkową i końcową określające, kiedy ma się zaczynać i kończyć wyszukiwanie kwot eliminacji. Pole **Data księgowania w księdze głównej** zawiera datę zaksięgowania arkusza w księdze głównej. Po kliknięciu przycisku **OK** można przejrzeć kwoty i zaksięgować arkusz.
-
 
 
 

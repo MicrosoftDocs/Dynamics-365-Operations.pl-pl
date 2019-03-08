@@ -1,31 +1,30 @@
 ---
-title: "Koszt własny dla zwrotu i identyfikator partii zwrotu"
-description: "Czasami jest potrzebna sytuacja, aby koszt zwróconych produktów był równy kosztowi produktów w momencie, gdy były sprzedawane odbiorcy. Można to uzyskać za pomocą ustawienia **Identyfikator partii zwrotu**."
+title: Koszt własny dla zwrotu i identyfikator partii zwrotu
+description: Czasami jest potrzebna sytuacja, aby koszt zwróconych produktów był równy kosztowi produktów w momencie, gdy były sprzedawane odbiorcy. Można to uzyskać za pomocą ustawienia **Identyfikator partii zwrotu**.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 33cd3d50fe342ba12a17419f4e759c243a60b3e0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: aeba56128ab6c9ab7d244bdf153faba8e96069d6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335147"
 ---
-
 # <a name="return-cost-price-and-return-lot-id"></a>Koszt własny dla zwrotu i identyfikator partii zwrotu        
 
 [!include [banner](../includes/banner.md)]
@@ -109,7 +108,6 @@ Jeżeli do określenia kosztu własnego zwrotu użyjesz pola **Identyfikator par
 10. W module Zarządzanie zapasami i magazynem użyj formularza **Zamknięcie i korekta**, aby wykonać procedurę **3. Zamknij**.
     
     Ta akcja spowoduje skorygowanie kosztu oryginalnego wiersza sprzedaży, który został wyceniony na -35,00 (5 sztuk \* 7,00), na -30,00 (5 sztuk \* 6,00). Stanie się tak dlatego, że grupa modeli zapasów używa schematu Pierwszy na wejściu — pierwszy na wyjściu (First in, first out; FIFO), a 6,00 za sztukę jest kosztem FIFO z pierwszego zamówienia zakupu. Ponadto działanie spowoduje korektę kosztu w wierszu sprzedaży zwrotu w celu dopasowania kosztu za sztukę w oryginalnym wierszu sprzedaży. W efekcie koszt wiersza zwrotu zostanie skorygowany z 35,00 na 30,00.
-
 
 
 

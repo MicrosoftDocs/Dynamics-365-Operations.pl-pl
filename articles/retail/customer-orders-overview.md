@@ -1,13 +1,13 @@
 ---
-title: "Zamówienia odbiorców w aplikacji Retail Modern POS (MPOS)"
-description: "Ten temat zawiera informacje o funkcjonalności zamówień odbiorców w programie Retail Modern POS (MPOS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji."
+title: Zamówienia odbiorców w aplikacji Retail Modern POS (MPOS)
+description: Ten temat zawiera informacje dotyczące zamówień odbiorcy w Retail Modern POS (MPOS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: b54f39cc7896871d77f9371e6197bf6dbaac51de
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336619"
 ---
-
 # <a name="customer-orders-in-retail-modern-pos-mpos"></a>Zamówienia odbiorców w aplikacji Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje o funkcjonalności zamówień odbiorców w programie Retail Modern POS (MPOS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji.
+Ten temat zawiera informacje dotyczące zamówień odbiorcy w Retail Modern POS (MPOS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji.
 
 W świecie wielokanałowego handlu detalicznego wielu sprzedawców udostępnia opcję składania zamówień przez odbiorców, inaczej zamówień specjalnych, które pomagają spełnić różne wymagania dotyczące produktów i realizacji dostaw. Poniżej przedstawiono niektóre typowe scenariusze:
 
@@ -57,7 +56,7 @@ Oto kilka parametrów, które można skonfigurować na stronie **Parametry sieci
 
 ## <a name="transaction-flow-for-customer-orders"></a>Przepływ transakcji w zamówieniach odbiorców
 
-### <a name="create-a-customer-order-in-retail-modern-pos"></a>Tworzenie zamówienia odbiorcy w aplikacji Retail Modern POS
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Utwórz zamówienie odbiorcy w Retail Modern POS
 
 1. Dodaj odbiorcę do transakcji.
 2. Dodaj produkty do koszyka.
@@ -102,4 +101,3 @@ Gdy opcja **Utwórz zamówienie odbiorcy w trybie asynchronicznym** jest ustawio
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Hybrydowe zamówienia odbiorców](hybrid-customer-orders.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Planowanie wykorzystania przestrzeni magazynowej
-description: "W tym temacie wyjaśniono, jak skonfigurować i zaplanować obciążenie pracą dla magazynu."
+description: W tym temacie wyjaśniono, jak skonfigurować i zaplanować obciążenie pracą dla magazynu.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSSpaceUtilSetup
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 15f3735f79671ac41789d39a5473722a5f35fde0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d52ad452c615a61739582431fcd100a7efa3d93a
-ms.openlocfilehash: 350666cee8f2643c53e9eed8ee73299bbea1e757
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332042"
 ---
-
 # <a name="schedule-load-utilization"></a>Planowanie wykorzystania przestrzeni magazynowej
 
 [!include[banner](../includes/banner.md)]
@@ -73,4 +72,3 @@ W celu sporządzenia prognozy wykorzystania miejsca można wygenerować raport *
 
 4. W polu **Typ obciążenia pracą** wybierz opcję **Objętość** lub **Masa**, aby wskazać jednostkę operacyjną obszaru, dla której ma zostać sporządzona prognoza miejsca.
 5. W polu **Ustawienia wykorzystania miejsca** wybierz konfigurację wykorzystania miejsca, na której ma bazować prognoza.
-

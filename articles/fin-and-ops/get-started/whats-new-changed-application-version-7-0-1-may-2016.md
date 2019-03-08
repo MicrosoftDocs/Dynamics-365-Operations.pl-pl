@@ -1,13 +1,13 @@
 ---
-title: "Nowości i zmiany w aplikacji Dynamics AX w wersji 7.0.1 (maj 2016)"
-description: "W tym artykule opisano nowe oraz zmienione funkcje dostępne w aplikacji Microsoft Dynamics AX w wersji 7.0.1. Ta wersja została wydana w maju 2016 r. i ma numer kompilacji 7.0.1265.23014."
+title: Nowości i zmiany w aplikacji Dynamics AX w wersji 7.0.1 (maj 2016)
+description: W tym artykule opisano nowe oraz zmienione funkcje dostępne w aplikacji Microsoft Dynamics AX w wersji 7.0.1. Ta wersja została wydana w maju 2016 r. i ma numer kompilacji 7.0.1265.23014.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: c830952b5d9e4887a816b5ab66d0944bddf5b505
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314516"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Nowości i zmiany w aplikacji Dynamics AX w wersji 7.0.1 (maj 2016)
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ W tym artykule opisano nowe oraz zmienione funkcje dostępne w aplikacji Microso
 | Konfigurowanie raportu ER w celu wprowadzania danych w dynamicznie generowanych kolumnach dokumentu elektronicznego, który jest tworzony w formacie arkusza OPENXML. | Raport ER może wprowadzać dane do generowanego arkusza OPENXML poprzez poziome replikowanie kolumn. W związku z tym tej samej konfiguracji raportu ER można użyć również do generowania dokumentów elektronicznych, które mają inną liczbę dynamicznie generowanych kolumn. |
 | Konfigurowanie miejsc docelowych aplikacji ER, tak aby dane wyjściowe w określonym formacie były kierowane do określonego miejsca docelowego: pliku, wiadomości e-mail lub archiwum (folderu programu Microsoft SharePoint lub magazynu w usłudze Microsoft Azure). | Wcześniej podczas sesji konfiguracji ER pojawiało się okno komunikatu z monitem do użytkownika, aby zapisał lub otworzył plik. Teraz można wstępnie skonfigurować miejsce docelowe osobno dla każdej konfiguracji formatu i każdego składnika wyjściowego (folderu lub pliku). Użytkownicy mający odpowiednie prawa dostępu mogą także modyfikować ustawienia miejsca docelowego w czasie wykonywania. |
 
-## <a name="pos--microsoft-dynamics-ax-retail"></a>Punkt sprzedaży — moduł sprzedaży detalicznej w systemie Microsoft Dynamics AX
+## <a name="pos--microsoft-dynamics-ax-retail"></a>POS — moduł sprzedaży detalicznej w systemie Microsoft Dynamics AX
 
 | Co można zrobić? | Dlaczego to jest ważne? |
 |------------------|------------------------|
@@ -107,4 +106,3 @@ W tym artykule opisano nowe oraz zmienione funkcje dostępne w aplikacji Microso
 [Nowości i zmiany](whats-new-changed.md)
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)](new-updated-task-guides-available-may-2016.md)
-

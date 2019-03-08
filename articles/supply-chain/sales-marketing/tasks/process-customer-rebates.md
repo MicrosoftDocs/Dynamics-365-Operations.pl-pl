@@ -1,13 +1,13 @@
---- 
-title: "Generowanie i przetwarzanie rabatów dla odbiorców"
-description: "Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapach od wygenerowania wniosku do przekazania ich jako naliczenia do modułu Rozrachunki z odbiorcami."
+---
+title: Generowanie i przetwarzanie rabatów dla odbiorców
+description: Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapach od wygenerowania wniosku do przekazania ich jako naliczenia do modułu Rozrachunki z odbiorcami.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5afe2fa73e218aa9eb21aff866baa509860a83cb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 348793abc6d219f38bcdc2629b77343d93927005
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336458"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generowanie i przetwarzanie rabatów dla odbiorców
 
@@ -83,5 +83,4 @@ Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapac
 9. W polu Odbiorca wprowadź lub wybierz wartość.
 10. Kliknij przycisk OK.
     * Komunikat pokazuje, że rabat został pomyślnie przetworzony, a stan wniosków zmienił się na Zaznacz. Oznacza to, że w wyniku zaksięgowania arkusza naliczania rabatów:) wnioski zostały przeniesione do tymczasowego salda odbiorcy jako potrącenia; b) konto naliczania rabatów zostało uznane przyszłymi zobowiązaniami wobec odbiorcy; i c) konto wydatków rabatowych zostało obciążone kosztami poniesionymi w związku ze sprzedażą.   
-
 

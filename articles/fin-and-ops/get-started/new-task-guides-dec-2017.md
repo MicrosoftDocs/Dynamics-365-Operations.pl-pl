@@ -1,33 +1,32 @@
 ---
-title: "Nowe lub zaktualizowane przewodniki po zadaniach (grudzień 2017 r.)"
-description: "Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z grudnia 2016 r. — wszystkie języki) dla programu Microsoft Dynamics 365 for Operations. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy."
+title: Nowe lub zaktualizowane przewodniki po zadaniach (grudzień 2017 r.)
+description: Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z grudnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics 365 for Operations. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 101eb8fd03303eb590dfef6f598ca507dc8f5548
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319645"
 ---
-
 # <a name="new-or-updated-task-guides-december-2017"></a>Nowe lub zaktualizowane przewodniki po zadaniach (grudzień 2017 r.)
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z grudnia 2016 r. — wszystkie języki) dla programu Microsoft Dynamics 365 for Operations.
+Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z grudnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics 365 for Operations.
 
 ## <a name="new-task-guides"></a>Nowe przewodniki po zadaniach
 
@@ -370,4 +369,3 @@ Po usunięciu linii BPM Przewodnik po zadaniach, który jest skojarzony z tym wi
 **Usunięto wiersze BPM**
 
 - Przenoszenie zaplanowanych zadań w systemie Kanban
-

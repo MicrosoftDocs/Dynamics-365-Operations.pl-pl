@@ -1,13 +1,13 @@
 ---
-title: "Przeszacowanie w walucie obcej dla księgi głównej"
-description: "W tym temacie omówiono następujące aspekty procesu przeszacowania w walucie obcej dla księgi głównej: konfiguracja, uruchamianie procesu, wykonywanie obliczeń dla procesu oraz wycofywanie transakcji przeszacowania, jeśli okaże się to konieczne."
+title: Przeszacowanie w walucie obcej dla księgi głównej
+description: 'W tym temacie omówiono następujące aspekty procesu przeszacowania w walucie obcej dla księgi głównej: konfiguracja, uruchamianie procesu, wykonywanie obliczeń dla procesu oraz wycofywanie transakcji przeszacowania, jeśli okaże się to konieczne.'
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb04c5a9e7db1a6c6a8d8c7126bfa80208d1fd53
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f967854e9a39c7b2d76559744bbc1e16a53d7f6a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315551"
 ---
-
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Przeszacowanie w walucie obcej dla księgi głównej
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Zostanie utworzony następujący zapis księgowy.
 Jeśli musisz wycofać transakcję przeszacowania, kliknij przycisk **Wycofaj transakcję** znajdujący się na stronie **Przeszacowanie w walucie obcej**. Zostanie utworzony nowy rekord historyczny przeszacowania w walucie obcej na potrzeby prowadzenia dziennika historii pokazującego, kiedy przeszacowania nastąpiły lub zostały wycofane. 
 
 Można cofnąć wyniki przeszacowania bez zachowania chronologii, ale wtedy może być również konieczne wystornowanie nowszego przeszacowania, aby zapewnić poprawność sald wszystkich przeszacowywanych kont głównych. Cofnięcie może nastąpić bez zachowania chronologii, ponieważ nie ma możliwości kontrolowania, które konta główne są przeszacowywane i jaką częstotliwością. Na przykład organizacja może zdecydować się na przeszacowywanie kont głównych środków pieniężnych co kwartał, ale wszystkich pozostałych kont głównych co miesiąc.
-
 
 
 

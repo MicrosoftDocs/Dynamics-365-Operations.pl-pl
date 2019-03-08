@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie reguły Kanban dla zdarzenia sprzedaży"
-description: "Ta procedura jest zorientowana na konfigurację potrzebną do utworzenia reguły Kanban uruchamianej podczas tworzenia zamówienia sprzedaży."
+---
+title: Tworzenie reguły Kanban dla zdarzenia sprzedaży
+description: Ta procedura jest zorientowana na konfigurację potrzebną do utworzenia reguły Kanban uruchamianej podczas tworzenia zamówienia sprzedaży.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d2bee6e81acd029406c95237f0b4ba4ab2565ea1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f1f66157b2e74ad1b490e10112cbc121ac9826fb
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342024"
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Tworzenie reguły Kanban dla zdarzenia sprzedaży
 
@@ -73,5 +73,4 @@ Ta procedura jest zorientowana na konfigurację potrzebną do utworzenia reguły
 1. Kliknij opcję Produkt i dostawa.
 2. Kliknij opcję Wyświetl drzewo oznaczania transakcji.
     * Zwróć uwagę, że jest tworzona karta Kanban z taką samą ilością, jak ilość w wierszu sprzedaży. Można również wyświetlić wydania materiałów potrzebnych do wytworzenia produktu L0050. Jest to ostatni krok w tej procedurze.  
-
 

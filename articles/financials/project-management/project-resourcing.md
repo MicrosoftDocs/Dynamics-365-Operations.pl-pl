@@ -1,13 +1,13 @@
 ---
-title: "Organizowanie zasobów projektu"
-description: "Ten temat zawiera informacje o organizowaniu zasobów projektu."
+title: Organizowanie zasobów projektu
+description: Ten temat zawiera informacje o organizowaniu zasobów projektu.
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjProjectsListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 34f80d283bb710d7db3137a439dbe8dc67d22682
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2d31a5dfd16a4404e19c6c9693dacecff6f2f064
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351661"
 ---
-
 # <a name="project-resourcing"></a>Organizowanie zasobów projektu
 
 [!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o organizowaniu zasobów projektu.
 
-Jednym z problemów kierowników projektów i menedżerów zasobów podczas etapu planowania projektu jest alokacja zasobów, gdzie muszą ustalić i zarezerwować właściwe zasoby do pracy nad projektem. W programie Microsoft Dynamics 365 for Finance and Operations funkcje organizowania zasobów projektów umożliwiają zdefiniowanie ról traktowanych jako zasoby tymczasowe, które można zarezerwować dla określonego projektu lub części projektu. Ten rodzaj organizowania zasobów pozwala kierownikom projektów i menedżerom zasobów wykonywać następujące zadania:
+Jednym z problemów kierowników projektów i menedżerów zasobów podczas etapu planowania projektu jest alokacja zasobów, gdzie muszą ustalić i zarezerwować właściwe zasoby do pracy nad projektem. W Microsoft Dynamics 365 for Finance and Operations funkcje organizowania zasobów projektów umożliwiają zdefiniowanie ról traktowanych jako zasoby tymczasowe, które można zarezerwować dla określonego projektu lub części projektu. Ten rodzaj organizowania zasobów pozwala kierownikom projektów i menedżerom zasobów wykonywać następujące zadania:
 
 - Definiowanie roli posiadającej wymagane kompetencje, aby ułatwić dopasowywanie zasobów.
 - Używanie ról do definiowania początkowego harmonogramu projektu opartego na zarezerwowanych zasobach.
@@ -351,4 +350,3 @@ Po wykonaniu poprzedniego zadania można wykonać następujące zadania według 
 ## <a name="monitor-project-teams"></a>Monitorowanie zespołów projektu
 1. Na stronie **Wszystkie projekty** wybierz łącze **Identyfikator projektu** dla projektu **Uaktualnianie XYZ faza 2**.
 2. Na skróconej karcie **Zespół projektu i planowanie** sprawdź poprawność wyświetlanych zasobów projektu.
-

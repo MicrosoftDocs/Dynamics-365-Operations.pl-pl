@@ -1,13 +1,13 @@
 ---
 title: Zapytanie ofertowe (ZO)
-description: "W tym temacie opisano zapytania ofertowe (ZO). Organizacje wystawiają zapytania ofertowe (ZO), kiedy chcą uzyskać od kilku dostawców konkurencyjne oferty na produkty i usługi, które muszą kupić."
+description: W tym temacie opisano zapytania ofertowe (ZO). Organizacje wystawiają zapytania ofertowe (ZO), kiedy chcą uzyskać od kilku dostawców konkurencyjne oferty na produkty i usługi, które muszą kupić.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 714715ccfbdd57e4450c301f5302e008c0c136b1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 9b840f5511f6a0df0e9ce3db4be69a0ab4ec3261
-ms.openlocfilehash: 8d7b07027443d1ca3894ccb7ed7f3cf49a4dc3e3
-ms.contentlocale: pl-pl
-ms.lasthandoff: 06/21/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351293"
 ---
-
 # <a name="requests-for-quotation-rfqs"></a>Zapytanie ofertowe (ZO)
 
 [!include [banner](../includes/banner.md)]
@@ -268,5 +267,4 @@ W przykładzie poniżej widać najwyższy i najniższy stan w sprawie ZO, gdzie 
 |------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------|-------------------------------------------------|----------------------------------------------|-----------------------------------------------|
 | Zaakceptowanie jednej z ofert. (lub co najmniej jeden wiersz) |                          Odebrane                           |                           Zaakceptowana                           |                    Odebrane                    |                    Zaakceptowana                     |                   Odebrane                   |                   Zaakceptowana                    |
 |           Odrzucenie wszystkich innych ofert.           |                          Odrzucona                           |                           Zaakceptowana                           |                    Odrzucona                    |                    Zaakceptowana                     |                   Odrzucona                   |                   Zaakceptowany                    |
-
 

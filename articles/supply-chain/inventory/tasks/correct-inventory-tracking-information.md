@@ -1,13 +1,13 @@
---- 
-title: "Poprawianie informacji o śledzeniu zapasów"
-description: "Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przeniesienia zapasów w celu skorygowania informacji o śledzeniu zapasów."
+---
+title: Poprawianie informacji o śledzeniu zapasów
+description: Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przeniesienia zapasów w celu skorygowania informacji o śledzeniu zapasów.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventBatchIdLookup, InventLocationIdLookup, InventDimTracking, InventTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: cfe0f6995598757dcea824e1bb4f7ef8ab54a67b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e28d10646f01604098de8cedc30c8c7a7c89866b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354490"
 ---
 # <a name="correct-inventory-tracking-information"></a>Poprawianie informacji o śledzeniu zapasów
 
@@ -63,5 +63,4 @@ Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przen
 1. Kliknij opcję Zapasy.
 2. Kliknij opcję Transakcje.
     * W tym miejscu widać transakcje, które zostały utworzone podczas księgowania arkusza.   
-
 

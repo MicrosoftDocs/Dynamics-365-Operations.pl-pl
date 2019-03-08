@@ -1,13 +1,13 @@
 ---
-title: "FIFO z wartością fizyczną i oznaczeniami"
-description: "Pierwszy na wejściu — pierwszy na wyjściu (First in, first out; FIFO) to model magazynu, w którym wcześniejsze nabycia są wydawane w pierwszej kolejności. Finansowo zaktualizowane elementy z magazynu są rozliczane z pierwszymi finansowo zaktualizowanymi przychodami do magazynu, na podstawie daty finansowej transakcji magazynowej."
+title: FIFO z wartością fizyczną i oznaczeniami
+description: Pierwszy na wejściu — pierwszy na wyjściu (First in, first out; FIFO) to model magazynu, w którym wcześniejsze nabycia są wydawane w pierwszej kolejności. Finansowo zaktualizowane elementy z magazynu są rozliczane z pierwszymi finansowo zaktualizowanymi przychodami do magazynu, na podstawie daty finansowej transakcji magazynowej.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c24ce4dab179f439521c22e196b0b190821bc60f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2d3a6c412e497952c0c7f5b113990bbe693b0f22
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348832"
 ---
-
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO z wartością fizyczną i oznaczeniami
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ Nowy średni bieżący koszt własny odzwierciedla średnią finansowo zaktualiz
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 - Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 - Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
-- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@cena jednostkowa.
 - Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 - Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 - Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
@@ -92,7 +91,7 @@ Transakcja 5b będzie rozliczona z transakcją przychodu 1b. Wystąpi korekta kw
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 - Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 - Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
-- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@cena jednostkowa.
 - Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 - Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 - Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
@@ -122,14 +121,13 @@ Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z 
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 - Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 - Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
-- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@cena jednostkowa.
 - Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 - Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 - Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
 - Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
 - Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
 - Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
-
 
 
 

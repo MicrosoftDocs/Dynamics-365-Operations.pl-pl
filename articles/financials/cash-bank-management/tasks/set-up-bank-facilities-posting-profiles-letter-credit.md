@@ -1,13 +1,13 @@
---- 
-title: "Konfigurowanie instrumentów bankowych i profilów księgowania dla akredytyw"
-description: "Ta procedura prowadzi przez proces tworzenia instrumentu bankowego i profilu księgowania wymaganych do przetwarzania akredytyw."
+---
+title: Konfigurowanie instrumentów bankowych i profilów księgowania dla akredytyw
+description: Ta procedura prowadzi przez proces tworzenia instrumentu bankowego i profilu księgowania wymaganych do przetwarzania akredytyw.
 author: kweekley
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3419d975c087350c01c6854dbbae07b6bb20bc03
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 43422627f8529768ab9377c04568da531d6565c6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309939"
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letter-of-credit"></a>Konfigurowanie instrumentów bankowych i profilów księgowania dla akredytyw
 
@@ -73,5 +73,4 @@ Zadania wykorzystują firmę demonstracyjną „USMF”.
 8. W polu Konto marży wybierz konto dla transakcji dotyczących marży.
     * To konto będzie obciążane podczas księgowania marży początkowej, a uznawane podczas księgowania płatności.  
 9. Kliknij przycisk Zapisz.
-
 

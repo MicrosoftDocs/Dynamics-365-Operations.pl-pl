@@ -1,13 +1,13 @@
---- 
-title: "Przenoszenie zaplanowanych zadań w systemie Kanban"
-description: "Ta procedura skupia się na przenoszeniu planowanych zadań przetwarzania w systemie Kanban do innego okresu."
+---
+title: Przenoszenie zaplanowanych zadań w systemie Kanban
+description: Ta procedura skupia się na przenoszeniu planowanych zadań przetwarzania w systemie Kanban do innego okresu.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 11/07/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
 ms.openlocfilehash: f791c9048ef6efe1585c991f998099cd1fc12df7
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310859"
 ---
-
 # <a name="move-scheduled-kanban-jobs"></a>Przenoszenie zaplanowanych zadań w systemie Kanban
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
@@ -63,4 +62,3 @@ Ta procedura skupia się na przenoszeniu planowanych zadań przetwarzania w syst
 2. Kliknij opcję **W przód**. Należy zauważyć, że zadanie zostało przeniesione o jeden wiersz w dół na liście. 
 
 3. Kliknij opcję **Wstecz**. Należy zauważyć, że zadanie zostało przeniesione o jeden wiersz w górę na liście.
-

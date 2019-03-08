@@ -1,13 +1,13 @@
 ---
-title: "Listy składowe (BOM) i formuły"
-description: "Ten temat zawiera informacje o listach składowych (BOM) i formułach, które są najważniejszymi elementami definicji produktów i wariantów produktów."
+title: Listy składowe (BOM) i formuły
+description: Ten temat zawiera informacje o listach składowych (BOM) i formułach, które są najważniejszymi elementami definicji produktów i wariantów produktów.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0833143722df5402a17e4f8f456a923792c478a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 430e2ab0c4438222ceb9102c011940af803acfbc
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317115"
 ---
-
 # <a name="bills-of-materials-and-formulas"></a>Listy składowe (BOM) i formuły
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Wybierz**ustalana dostaw** typ wiersza, aby utworzyć produkcję podrzędną, ka
 Wybierz typ wiersza **Dostawca**, jeśli w procesie produkcji występuje podwykonawca i trzeba automatycznie utworzyć produkcję podrzędną lub zlecenie zakupu dla podwykonawcy.  
 
 **Uwaga na temat operacji produkcji podrzędnej w BOM:** usługi lub praca wykonywane przez podwykonawcę należy utworzyć jako usługę, która jest śledzona w magazynie. Usługę należy dołączyć do elementu nadrzędnego jako wiersz BOM. Marszruta musi zawierać operację przypisaną do zasobu operacyjnego podwykonawcy.
-
 
 
 

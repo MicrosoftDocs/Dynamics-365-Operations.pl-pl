@@ -1,13 +1,13 @@
 ---
-title: "Amortyzacja za pozostały liniowy okres użytkowania"
-description: "Ten artykuł zawiera omówienie metody amortyzacji Liniowy pozostały okres użytkowania."
+title: Amortyzacja za pozostały liniowy okres użytkowania
+description: Ten artykuł zawiera omówienie metody amortyzacji Liniowy pozostały okres użytkowania.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 720a7c581dc0f68b14b769e9c9af0df791d0c273
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ebca31727ecdaa2b94d4930174b2461845ab5578
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329673"
 ---
-
 # <a name="straight-line-life-remaining-depreciation"></a>Amortyzacja za pozostały liniowy okres użytkowania
 
 [!include [banner](../includes/banner.md)]
@@ -76,7 +75,6 @@ Kwota amortyzacji jest taka sama co roku: (koszt nabycia - wartość odzyskana) 
 | Rok 3 | (7000 – 1000) ÷ 3 = 2000                   | 5000                                 |
 | Rok 4 | (5000 – 1000) ÷ 2 = 2000                   | 3000                                 |
 | Rok 5 | (3000 – 1000) ÷ 1 = 2000                   | 1 000                                 |
-
 
 
 

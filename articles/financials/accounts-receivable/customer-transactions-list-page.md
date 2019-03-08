@@ -1,13 +1,13 @@
 ---
 title: Strona listy transakcji odbiorcy
-description: "Ten temat zawiera informacje o stronie listy Transakcje odbiorcy dostępnej w programie Microsoft Dynamics 365 for Finance and Operations."
+description: Ten temat zawiera informacje o stronie listy Transakcje odbiorcy dostępnej w programie Microsoft Dynamics 365 for Finance and Operations.
 author: mikefalkner
 manager: aolson
 ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
+ms.openlocfilehash: b9936a66cc8c8abb24601dae91dcfca77e4f58a4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: 1b359939c867ba0a0c14859c83f0560afe6ba5be
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341702"
 ---
-
 # <a name="customer-transactions-list-page"></a>Strona listy transakcji odbiorcy
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Przycisk **Wyświetl rozliczenia** w okienku akcji zapewnia szybki dostęp do hi
 
 4. W oknie dialogowym można wykonywać różne zadania. Zaznacz jeden lub więcej załączników, a następnie naciśnij jeden z następujących przycisków:
 
-    - **Wyświetl powiązane** — są wyświetlane wszystkie transakcje, które zostały utworzone w arkuszu płatności powiązanym z wybranym dokumentem. Ponadto zostaną wyświetlone wszystkie rozliczenia powiązane z tymi płatnościami. Podczas przeglądania powiązanych płatności etykieta tego przycisku zmienia się na **Wyświetl rozliczenia**. Wybierz opcję **Wyświetl rozliczenia**, a pojawią się tylko transakcje, które były wyświetlane po pierwszym otwarciu okna dialogowego **Wyświetl rozliczenia**.
+    - **Wyświetl powiązane** — umożliwia wyświetlenie wszystkich transakcji arkusza płatności i transakcji arkusza finansowego utworzonych w arkuszach, w których utworzono dokumenty widoczne na liście. Na przykład jeśli płatność jest wyświetlana, wówczas wszystkie płatności w arkuszu płatności, w którym została utworzona, będą widoczne. Jeśli wyświetlane są faktura lub płatność i zostały utworzone w arkuszu finansowym, wówczas wszystkie dokumenty w dzienniku głównym, w którym faktura lub płatność zostały utworzone, będą widoczne. Wszystkie rozliczenia powiązane z listą dokumentów również są wyświetlane. Podczas przeglądania powiązanych płatności etykieta tego przycisku zmienia się na **Wyświetl rozliczenia**. Wybierz opcję **Wyświetl rozliczenia**, a pojawią się tylko transakcje, które były wyświetlane po pierwszym otwarciu okna dialogowego **Wyświetl rozliczenia**.
     - **Wyświetl historię** — wyświetlanie historii rozliczeń dla załączników. Kliknij przycisk **Zamknij**, aby zamknąć okno dialogowe.
     - **Wyświetl księgowanie** — są wyświetlane wszystkie załączniki powiązane z wybranym dokumentem. Kliknij przycisk **Zamknij**, aby zamknąć okno dialogowe.
     - **Eksportuj** — eksportowanie wybranych załączników do programu Microsoft Excel.
@@ -98,4 +97,3 @@ Każde pole podczas edytowania różnie oddziałuje na transakcję:
 - **Edytowanie warunków rabatu gotówkowego** — zmieniają się rabaty gotówkowe na podstawie daty podstawy i warunków rabatu gotówkowego.
 
 Po zakończeniu edytowania ustawień płatności kliknij opcję **Zamknij**, aby zapisać wprowadzone zmiany.
-

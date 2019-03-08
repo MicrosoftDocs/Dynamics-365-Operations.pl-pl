@@ -1,36 +1,35 @@
 ---
-title: "Otwieranie adresu URL w aplikacji punktu sprzedaży"
-description: "Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania odbiorców w rozwiązaniu Microsoft Dynamics 365 for Retail."
+title: Otwieranie adresu URL w aplikacji punktu sprzedaży
+description: Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania klientów w rozwiązaniu Microsoft Dynamics 365 for Retail.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 11/14/2018
+ms.date: 01/28/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Retail
 ms.custom: 141393
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
+ms.openlocfilehash: b07406b4e218b45bdde87c4a579814fe0edbc286
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: d2b692ac86244eca31780a558112167391fc6d77
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327097"
 ---
-
 # <a name="open-url-in-pos"></a>Otwieranie adresu URL w aplikacji punktu sprzedaży
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak można skonfigurować przycisk w punkcie sprzedaży (POS), aby otworzyć adres URL. Ta funkcja nie wymaga dostosowania kodu i może być skonfigurowana przez dowolną osobę, która nie ma roli dewelopera.
+W tym temacie opisano, jak można skonfigurować przycisk w punkcie sprzedaży (POS), aby otworzyć adres URL. Ta funkcja nie wymaga dostosowania kodu i może być skonfigurowana przez dowolną osobę, która nie ma roli dewelopera. Ta funkcja jest dostępna jako część Dynamics 365 for Finance and Operations wersji 8.1.3 (kompilacja 8.1.227.10014) lub nowszej. 
 
 Ta funkcja umożliwia konfigurację przycisku w punkcie sprzedaży, otwieranie adresu URL przy użyciu projektanta siatki przycisków. Obecnie jest to obsługiwane w następujących konfiguracjach:
 
@@ -60,14 +59,14 @@ Windows, iOS i Android także umożliwiają łatwiejsze otwarcie aplikacji na po
 
 - Dla systemu Windows, zobacz [Włączanie aplikacji dla witryny sieci Web przy użyciu programów obsługi URI](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking).
 - W przypadku iOS zobacz [uniwersalne łącza dla deweloperów](https://developer.apple.com/ios/universal-links/).
-- W przypadku Androida zobacz [obsługa łączy aplikacji Android](https://developer.android.com/training/app-links/).
+- W przypadku systemu Android zobacz [obsługa łączy aplikacji Android](https://developer.android.com/training/app-links/).
 
 | Klient                | Otwórz w nowym oknie | Otwórz aplikację macierzystą | Otwórz w punkcie sprzedaży. | Szczegóły                           |
 |-----------------------|--------------------|-----------------|-----------------|-----------------------------------|
 | Nowoczesny punkt sprzedaży w Windows | ✓\*                | ✓               | ✓              | \* Otwiera w nowym oknie nowoczesnego punktu sprzedaży |
 | Cloud POS             | ✓\*                | ✓               | X              | \* Otwiera się na nowej karcie przeglądarki        |
 | Nowoczesny punkt sprzedaży w iOS     | ✓\*                | ✓               | X              | \* Otwiera się na nowej karcie przeglądarki        |
-| Modern POS na Androida | ✓\*                | ✓               | X              | \* Otwiera się na nowej karcie przeglądarki        |
+| Modern POS w systemie Android | ✓\*                | ✓               | X              | \* Otwiera się na nowej karcie przeglądarki        |
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -84,4 +83,3 @@ Aby skonfigurować adres URL, który można otworzyć w punkcie sprzedaży, wyko
 5. Wybierz akcję **Otwórz URL**.
 6. Wprowadź URL, którego chcesz użyć.
 7. Skonfiguruj, czy należy otworzyć adres URL w nowym oknie.
-

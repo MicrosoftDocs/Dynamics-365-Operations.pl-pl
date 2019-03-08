@@ -1,13 +1,13 @@
 ---
-title: "Definicje wierszy w Projektancie raportów finansowych"
-description: "Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym. Definicję wiersza można łączyć z definicjami kolumn, drzewa raportowania i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm."
+title: Definicje wierszy w Projektancie raportów finansowych
+description: Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym. Definicję wiersza można łączyć z definicjami kolumn, drzewa raportowania i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: c829af1da1b3109f4687c9a2536dd156339d5c76
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "350442"
 ---
-
 # <a name="row-definitions-in-financial-report-designer"></a>Definicje wierszy w Projektancie raportów finansowych
 
 [!include [banner](../includes/banner.md)]
@@ -158,9 +157,9 @@ Można tworzyć i modyfikować style czcionek dla raportu. Następnie można zas
 
 ### <a name="format-row-text"></a>Formatowanie tekstu wiersza
 
-Formatowanie określone w definicji wiersza zastępuje wszelkie formatowanie określone w definicji kolumny oraz w definicji raportu. Format tekstu można zmodyfikować za pomocą formantów na pasku narzędzi formatowania. Te opcje są standardowymi opcjami systemu Microsoft Windows.
+Formatowanie określone w definicji wiersza zastępuje wszelkie formatowanie określone w definicji kolumny oraz w definicji raportu. Format tekstu można zmodyfikować za pomocą formantów na pasku narzędzi formatowania. Są to standardowe formanty systemu Microsoft Windows.
 
-1. W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
+1. W Projektancie raportów otwórz definicję wierszy, którą chcesz zmodyfikować.
 2. Zaznacz komórki do formatowania. Aby wybrać wiele komórek, przytrzymaj klawisz Ctrl i zaznaczaj kolejne komórki.
 3. Kliknij przycisk na pasku narzędzi dla formatu, który chcesz zastosować. Na przykład aby zwiększyć wcięcie wiersza, zaznacz wiersz, a następnie na pasku narzędzi kliknij przycisk **Zwiększ wcięcie** ![Zwiększ wcięcie](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Zwiększ wcięcie").
 
@@ -189,4 +188,3 @@ Aby ułatwić wyświetlanie kolumn, nad którymi pracujesz w definicji wiersza, 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
-

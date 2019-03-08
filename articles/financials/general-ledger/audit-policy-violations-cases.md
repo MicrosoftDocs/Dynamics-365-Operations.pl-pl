@@ -1,13 +1,13 @@
 ---
 title: Naruszenia zasad inspekcji i sprawy
-description: "W tym artykule wyjaśniono, jak są generowane sprawy inspekcji na podstawie naruszeń reguł inspekcji. Znajdują się tu także informacje o różnych sposobach, w jakie zasady inspekcji wykorzystują funkcje zakresu dat wyboru dokumentów."
+description: W tym artykule wyjaśniono, jak są generowane sprawy inspekcji na podstawie naruszeń reguł inspekcji. Znajdują się tu także informacje o różnych sposobach, w jakie zasady inspekcji wykorzystują funkcje zakresu dat wyboru dokumentów.
 author: ryansandness
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c3ed72f829ca4060fe0a4c03b6d4a47a98cdebd6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2376a1d6e86eba9f5021cc08dcfaea52f131a3d7
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352535"
 ---
-
 # <a name="audit-policy-violations-and-cases"></a>Naruszenia zasad inspekcji i sprawy
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,6 @@ Oto inne sposoby wykorzystania wyboru zakresu dat dokumentu przez regułę inspe
 
 
 Aby uzyskać więcej informacji, zobacz [Reguły inspekcji](audit-policy-rules.md).
-
 
 
 

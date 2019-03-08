@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie, obliczanie i księgowanie zestawienia dla sklepu sieci sprzedaży"
-description: "Ta procedura prowadzi przez kolejne kroki ręcznego tworzenia, obliczania i księgowania zestawienia dla sklepu."
+---
+title: Tworzenie, obliczanie i księgowanie zestawienia dla sklepu sieci sprzedaży
+description: Ta procedura prowadzi przez kolejne kroki ręcznego tworzenia, obliczania i księgowania zestawienia dla sklepu.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9ea30e7e008bfcce77a7ee2f4d7d01a6cf1ababc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 33ebb28196baa9ae944dbd124274b05cb587fea4
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354398"
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a>Tworzenie, obliczanie i księgowanie zestawienia dla sklepu sieci sprzedaży
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ta procedura prowadzi przez kolejne kroki ręcznego tworzenia, obliczania i księgowania zestawienia dla sklepu. Istnieją także zadania wsadowe, które można skonfigurować na potrzeby tych samych zadań. Kroki konfigurowania i wykonywania zadań wsadowych znajdują się w innych artykułach. Aby wykonać tę procedurę, muszą istnieć transakcji, które zostały wykonane w punkcie sprzedaży, a następnie pobrane do systemu Dynamics AX. Nagranie wykorzystuje dane firmy demonstracyjnej USRT. Ta procedura może się odwoływać do systemu Microsoft Dynamics AX. Należy zwrócić uwagę, że oprogramowanie Dynamics AX nosi obecnie nazwę Microsoft Dynamics 365 for Operations.
+Ta procedura prowadzi przez kolejne kroki ręcznego tworzenia, obliczania i księgowania zestawienia dla sklepu. Istnieją także zadania wsadowe, które można skonfigurować na potrzeby tych samych zadań. Kroki konfigurowania i wykonywania zadań wsadowych znajdują się w innych artykułach. Aby wykonać tę procedurę, muszą istnieć transakcji, które zostały wykonane w punkcie sprzedaży, a następnie pobrane do systemu Dynamics AX. Nagranie wykorzystuje dane firmy demonstracyjnej USRT. Procedura ta może odwoływać się do Microsoft Dynamics AX. Należy zwrócić uwagę, że oprogramowanie Dynamics AX nosi obecnie nazwę Microsoft Dynamics 365 for Operations.
 
 1. Wybierz kolejno opcje Wszystkie obszary robocze > .. > Finanse sklepu sieciowego.
 2. Kliknij opcję Nowe zestawienie.
@@ -47,5 +47,4 @@ Ta procedura prowadzi przez kolejne kroki ręcznego tworzenia, obliczania i ksi�
 10. Kliknij przycisk Zamknij.
 11. Wybierz kolejno opcje Handel detaliczny i inny > Kanały > Finanse sklepu sieciowego.
 12. Kliknij kartę Zaksięgowane zestawienia.
-
 

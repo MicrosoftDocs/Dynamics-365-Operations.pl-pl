@@ -1,13 +1,13 @@
 ---
-title: "Kategorie kosztów używane w kontroli produkcji i rachunkowości zarządczej projektów"
-description: "Niektóre typy działań produkcyjnych mogą mieć zastosowanie do szacowania i raportowania czasu trwania projektu. Ten artykuł zawiera informacje o kategoriach kosztów, które należy zdefiniować dla tego typu działań produkcyjnych na potrzeby produkcji i projektu."
+title: Kategorie kosztów używane w kontroli produkcji i rachunkowości zarządczej projektów
+description: Niektóre typy działań produkcyjnych mogą mieć zastosowanie do szacowania i raportowania czasu trwania projektu. Ten artykuł zawiera informacje o kategoriach kosztów, które należy zdefiniować dla tego typu działań produkcyjnych na potrzeby produkcji i projektu.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCategory
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cab4629740e92f9075b7afc7a5d228b2e01c4664
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d641ce950aed87b0cf6763fc9dae67ef47268b8d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326039"
 ---
-
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Kategorie kosztów używane w kontroli produkcji i rachunkowości zarządczej projektów
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,6 @@ Niektóre typy działań produkcyjnych mogą mieć zastosowanie do szacowania i 
 -   Na ogół konta księgowe związane z kosztami i sprzedażą są definiowane dla grupy kategorii przypisanej do kategorii kosztów. Jednak dla konkretnej kategorii kosztów można zdefiniować określone konta.
 
 Dodatkowe przyciski na stronie **Kategorie kosztu** umożliwiają dostęp do informacji projektowych o wybranej kategorii kosztów. Można na przykład wyświetlić transakcje związane z projektem, zdefiniować pracowników lub projekty, zdefiniować koszty godzinowe i ceny sprzedaży oraz obejrzeć raporty.
-
 
 
 

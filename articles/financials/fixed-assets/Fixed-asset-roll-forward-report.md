@@ -1,14 +1,14 @@
 ---
-title: "Raport przesunięcia środków trwałych do przodu"
-description: "W tym temacie wyjaśniono, jak korzystać z raportu przesunięcia środków trwałych do przodu."
+title: Raport przesunięcia środków trwałych do przodu
+description: W tym temacie wyjaśniono, jak korzystać z raportu przesunięcia środków trwałych do przodu.
 author: saraschi2
-manager: 
+manager: ''
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,23 @@ ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-12-20
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 3f2da6d552dd27566d3e012d3e6055fcaa194e4b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313757"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Raport przesunięcia środków trwałych do przodu
 
 [!include [banner](../includes/banner.md)]
 
-Raport **Przesunięcie środków trwałych do przodu** przedstawia, w czytelnym formacie programu Microsoft Excel, szczegółowe dane środków trwałych wymagane do zamknięcia okresu, sprawozdań finansowych i sprawozdawczości podatkowej. Raport zawiera początkowe i końcowe salda środków trwałych, łącznie z przesunięciami w związku z wyceną w okresie, oraz informacje o wszelkich nabyciach i zbyciach/likwidacjach środków trwałych zaistniałych w okresie. Dane są raportowane dla poszczególnych środków trwałych, a dodatkowo wartości są sumowane dla grup środków trwałych i dla firm.
+Raport **Przesunięcie środków trwałych** do przodu przedstawia, w czytelnym formacie programu Microsoft Excel, szczegółowe dane środków trwałych wymagane do zamknięcia okresu, sprawozdań finansowych i sprawozdawczości podatkowej. Raport zawiera początkowe i końcowe salda środków trwałych, łącznie z przesunięciami w związku z wyceną w okresie, oraz informacje o wszelkich nabyciach i zbyciach/likwidacjach środków trwałych zaistniałych w okresie. Dane są raportowane dla poszczególnych środków trwałych, a dodatkowo wartości są sumowane dla grup środków trwałych i dla firm.
 
 Raport **Przesunięcie środków trwałych do przodu** używa struktury modułu Raportowanie elektroniczne (ER). Aby można było wygenerować raport, konfiguracje modelu środków trwałych i rolowania środków trwałych muszą zostać zaimportowane z usługi Microsoft Dynamics Lifecycle Services (LCS). Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-Raport ten jest dostępny w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition w wersji 7.3 lub jako poprawka programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (z lipca 2017 roku). W środowiskach, w których zainstalowano wersję z lipca 2017 roku, należy zastosować trzy poprawki:
+Ten raport jest dostępny w Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3 lub jako osobna poprawka dla Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (z lipca 2017). W środowiskach, w których zainstalowano wersję z lipca 2017 roku, należy zastosować trzy poprawki:
 
 - **KB 4041754:** Po zastosowaniu pakietu aktualizacji platformy nie można pobrać Konfiguracji modułu Raportowanie elektroniczne (ER) z usługi LCS, ponieważ nie ma ona zastosowania do bieżącej wersji aplikacji
 - **KB 4056107:** Aktualizacja zbiorcza 5 modułu Raportowanie elektroniczne (GER)
@@ -66,5 +66,4 @@ W poniższej tabeli przedstawiono pola dostępne w raporcie.
 |            Likwidacje: Wartość sprzedaży            |                                                                                               Wartość sprzedaży księgi środków trwałych zawierającej transakcję likwidacji poprzez sprzedaż.                                                                                                |
 |           Likwidacje: Wartość złomowania            |                                                                                               Wartość złomowania księgi środków trwałych zawierającej transakcję likwidacji poprzez złomowanie.                                                                                               |
 |           Likwidacje: Zysk/strata            |                                                                                 Wartość zysku lub straty obliczona w ramach transakcji likwidacji księgi środków trwałych.                                                                                 |
-
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Tworzenie zasobu operacyjnego
-description: "Zasób operacyjny wykonuje działania projektu lub procesu produkcji."
+description: Zasób operacyjny wykonuje działania projektu lub procesu produkcji.
 author: sorenva
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f9d8f13e29ea813eb9721ddca795b67837e2aa5e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e05eb5df2d29e90ed24fb13ed16543ad470dfe6b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350074"
 ---
 # <a name="create-an-operations-resource"></a>Tworzenie zasobu operacyjnego
 
@@ -80,5 +80,4 @@ Zasób operacyjny wykonuje działania projektu lub procesu produkcji. Ta procedu
 3. W polu Grupa zasobów wprowadź lub wybierz wartość.
 4. W polu Lokalizacja wejściowa wprowadź lub wybierz wartość.
     * Umożliwia określenie lokalizacji w magazynie, z której zasób operacyjny zużywa materiały.  
-
 

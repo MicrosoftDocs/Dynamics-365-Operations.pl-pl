@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie nowej wersji przepływu produkcji"
-description: "Ta procedura skupia się na tworzeniu nowej wersji przepływu produkcji."
+---
+title: Tworzenie nowej wersji przepływu produkcji
+description: Ta procedura skupia się na tworzeniu nowej wersji przepływu produkcji.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9a76e5bb6f63f793e4644c2ccf70cef21785ff10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8903e618a35e66742b5c2ebcb5b6f0da3853fcaf
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320680"
 ---
 # <a name="create-a-production-flow-version"></a>Tworzenie nowej wersji przepływu produkcji
 
@@ -63,5 +63,4 @@ Ta procedura skupia się na tworzeniu nowej wersji przepływu produkcji. Aby mo�
 12. W polu Okres rzeczywistego czasu cyklu (dni) wpisz liczbę.
     * Wprowadź liczbę dni w polu Okres rzeczywistego czasu cyklu. Okres rzeczywistego czasu cyklu jest liczbą dni agregowania zadań od faktycznej minuty wstecz, aby obliczyć rzeczywisty czas cyklu. Wartość można zmienić w dowolnym momencie i jest ona używana tylko do obliczania rzeczywistych czasów cykli.  
 13. Kliknij przycisk Zapisz.
-
 

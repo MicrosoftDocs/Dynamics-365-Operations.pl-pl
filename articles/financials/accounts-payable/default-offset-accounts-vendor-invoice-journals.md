@@ -1,13 +1,13 @@
 ---
-title: "Domyślne konta przeciwstawne dla arkuszy faktur od dostawców i arkuszy zatwierdzania faktur"
-description: "Ten temat pomoże określić miejsce przypisania domyślnych kont i transakcji przeciwstawnej dla arkuszy faktur."
+title: Domyślne konta przeciwstawne dla arkuszy faktur od dostawców i arkuszy zatwierdzania faktur
+description: Ten temat pomoże określić miejsce przypisania domyślnych kont i transakcji przeciwstawnej dla arkuszy faktur.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f876e5dfdab67dd98b2449993c3ba2baacde1587
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 90b24e8e00a78c122e0f7c712a694c9c62bd4824
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320266"
 ---
-
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Domyślne konta przeciwstawne dla arkuszy faktur od dostawców i arkuszy zatwierdzania faktur
 
 [!include [banner](../includes/banner.md)]
@@ -94,7 +93,6 @@ Skorzystaj z poniższej tabeli, aby określić miejsce przypisania domyślnych k
 </tr>
 </tbody>
 </table>
-
 
 
 

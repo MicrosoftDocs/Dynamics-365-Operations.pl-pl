@@ -1,13 +1,13 @@
 ---
-title: "Integracja środków trwałych"
-description: "Środki trwałe mogą być zintegrowane z modułami Księga główna, Zarządzanie zapasami, Rozrachunki z odbiorcami i Rozrachunki z dostawcami. Istnieje również możliwość takiego skonfigurowania modułu Środki trwałe, aby był on zintegrowany z zamówieniami zakupu."
+title: Integracja środków trwałych
+description: Środki trwałe mogą być zintegrowane z modułami Księga główna, Zarządzanie zapasami, Rozrachunki z odbiorcami i Rozrachunki z dostawcami. Istnieje również możliwość takiego skonfigurowania modułu Środki trwałe, aby był on zintegrowany z zamówieniami zakupu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: af5d33de3af05668bc9aedc94894b12d16daf78e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a598a562b35a8bb1e0ede6bb8f3dc0515c162a06
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336987"
 ---
-
 # <a name="fixed-assets-integration"></a>Integracja środków trwałych
 
 [!include [banner](../includes/banner.md)]
@@ -93,7 +92,6 @@ Aby usunąć skojarzenie między projektem a środkiem trwałym, wyczyść pole 
 Istnieje również możliwość oznaczenia tworzonego lub produkowanego środka trwałego jako elementu projektu szacowania. Na zakończenie projektu szacowanego można automatycznie zaksięgować transakcję nabycia środka trwałego.
 
 Aby uzyskać więcej informacji, zobacz [Nabywanie środków trwałych za pomocą zaopatrzenia](acquire-assets-procurement.md)
-
 
 
 

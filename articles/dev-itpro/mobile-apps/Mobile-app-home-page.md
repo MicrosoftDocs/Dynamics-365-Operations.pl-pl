@@ -1,13 +1,13 @@
 ---
-title: "Strona główna aplikacji komórkowej Dynamics 365 for Unified Operations"
-description: "W tym temacie opisano aplikację mobilną Microsoft Dynamics 365 for Unified Operations oraz zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji."
+title: Strona główna aplikacji komórkowej Dynamics 365 for Unified Operations
+description: W tym temacie opisano aplikację mobilną Microsoft Dynamics 365 for Unified Operations Mobile oraz zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.
 author: sericks007
 manager: AnnBe
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.translationtype: HT
-ms.sourcegitcommit: 3e9ec83e2cecdf8a7ec4ce3db1a80a310fe07255
 ms.openlocfilehash: 5666bee776e3d97244ce4830ac59971831848e71
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321393"
 ---
-
 # <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a>Strona główna aplikacji komórkowej Dynamics 365 for Unified Operations
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano aplikację mobilną Microsoft Dynamics 365 for Unified Operations oraz zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.
+W tym temacie opisano aplikację mobilną Microsoft Dynamics 365 for Unified Operations Mobile oraz zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.
 
 > [!NOTE]
-> Poprzednio aplikacja mobilnej nazywała się *Microsoft Dynamics 365 for Finance and Operations*.
+> Aplikacja mobilna nosiła wcześniej nazwę *Microsoft Dynamics 365 for Finance and Operations*.
 
 <a name="overview"></a>Przegląd
 --------
@@ -90,7 +89,7 @@ Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu 
 <tr class="even">
 <td>2</td>
 <td>Administrator systemu</td>
-<td><strong>Jeśli w organizacji jest już używany program Microsoft Dynamics 365 for Operations w wersji 1611:</strong> Pobranie i zainstalowanie aktualizacji KB, które włączą obsługę mobilnych obszarów roboczych dostarczanych przez Microsoft.</td>
+<td><strong>Jeśli używasz Microsoft Dynamics 365 for Operations w wersji 1611:</strong> Pobranie i zainstalowanie aktualizacji KB, które włączą obsługę mobilnych obszarów roboczych dostarczanych przez Microsoft.</td>
 <td>Aby uzyskać więcej informacji, zobacz następujące tematy:
 <ul>
 
@@ -153,4 +152,3 @@ Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu 
 </tr>
 </tbody>
 </table>
-

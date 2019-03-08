@@ -1,13 +1,13 @@
 ---
-title: "Uzyskiwanie wglądu w wyjątki dotyczące materiałów"
-description: "W tym temacie opisano, jak uzyskać lepszy wgląd w wyjątki dotyczące materiałów dla zleceń produkcyjnych i zamówień partii."
+title: Uzyskiwanie wglądu w wyjątki dotyczące materiałów
+description: W tym temacie opisano, jak uzyskać lepszy wgląd w wyjątki dotyczące materiałów dla zleceń produkcyjnych i zamówień partii.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -16,13 +16,13 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: c7a5cc4f6c6f430a2ceb9125edb3916fe7b71ab8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: eca3141fc48aea24411524e5fc84686d9e4bfaa7
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344761"
 ---
 # <a name="visibility-into-material-exceptions"></a>Uzyskiwanie wglądu w wyjątki dotyczące materiałów
 
@@ -67,4 +67,3 @@ Po wybraniu kafelka otwierana jest strona **Wszystkie grupy czynności produkcji
 Kafelek **Otwarta praca magazynowa wymagająca uwagi** zawiera liczbę wierszy BOM i wierszy formuły które zostały zwolnione do magazynu, mające nieprzetworzoną pracę i taką samą lub wcześniejszą datę surowca jako data obszaru roboczego. Wiersze muszą także zostać wykorzystane przez zasób operacji stosowany do filtra obszaru roboczego.
 
 Po wybraniu kafelka otwierana jest strona **Cała praca**. Ta strona jest filtrowana przez liczbę otwartych nagłówków pracy zawierających wiersze pracy ze zwolnionych wierszy BOM i wierszy formuły spełniających kryteria kafelka. Na stronie **Cała praca** można ręcznie przetworzyć pracę.
-

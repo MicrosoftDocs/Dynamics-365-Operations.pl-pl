@@ -1,13 +1,13 @@
 ---
 title: Ustawianie prognozowania popytu
-description: "W tym temacie opisano ustawienia zadania, które należy wykonać, by przygotować się do prognozowania popytu."
+description: W tym temacie opisano ustawienia zadania, które należy wykonać, by przygotować się do prognozowania popytu.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 59fb8938720ce1634735dd728eee3874660a4289
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: be962bffd9dfe756b444f6946990058971896a27
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330455"
 ---
-
 # <a name="demand-forecasting-setup"></a>Ustawianie prognozowania popytu
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ Towar i jego wymiary muszą być częścią tylko jednego klucza alokacji produk
 Aby dodać jednostkę magazynową do klucza alokacji produktów, przejdź do okna **Planowanie główne** &gt; **Ustawienia** &gt; **Prognozowania popytu** &gt; **Klucze alokacji produktu**. Na stronie **przypisywania towarów** przypisz produkty do klucza alokacji.
 
 ## <a name="intercompany-planning-groups"></a>Grupy planowania międzyfirmowego
-Prognozowanie popytu generuje prognozy w obrębie firmy. W programie Microsoft Dynamics 365 for Finance and Operations, które są planowane razem, są grupowane w jednej grupie planowania międzyfirmowego. Aby określić dla każdej firmy, które klucze alokacji mają być brane pod uwagę przy prognozowaniu popytu, należy przypisać klucz alokacji produktów do członka grupy planowania międzyfirmowego, przechodząc do okna **Planowanie główne** &gt; **Ustawienia** &gt; **Grupy planowania międzyfirmowego**. 
+Prognozowanie popytu generuje prognozy w obrębie firmy. W Microsoft Dynamics 365 for Finance and Operations firmy, które są planowane razem są grupowane w jednej grupie planowania międzyfirmowego. Aby określić dla każdej firmy, które klucze alokacji mają być brane pod uwagę przy prognozowaniu popytu, należy przypisać klucz alokacji produktów do członka grupy planowania międzyfirmowego, przechodząc do okna **Planowanie główne** &gt; **Ustawienia** &gt; **Grupy planowania międzyfirmowego**. 
 
 Domyślnie, jeśli do członków grupy planowania firmowego nie są przypisane klucze alokacji produktów, prognoza popytu jest obliczana dla wszystkich pozycji przypisanych do wszystkich kluczy alokacji z wszystkich firm w programie Finance and Operations. Dodatkowe opcje filtrowania dla firm i klucze alokacji produktów są dostępne na stronie **generowania bazowej prognozy statystycznej**. 
 
@@ -86,7 +85,6 @@ Aby wyświetlić parametry, które można skonfigurować na potrzeby prognozowan
 [Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md)
 
 [Wprowadzanie ręcznych korekt prognozy bazowej](manual-adjustments-baseline-forecast.md)
-
 
 
 

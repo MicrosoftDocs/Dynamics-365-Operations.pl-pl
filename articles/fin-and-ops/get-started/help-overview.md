@@ -1,13 +1,13 @@
 ---
-title: "System Pomocy rozwiązania Finance and Operations"
-description: "Ten temat zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations."
+title: System Pomocy rozwiązania Finance and Operations
+description: Ten temat zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
 ms.date: 11/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350741"
 ---
-
 # <a name="finance-and-operations-help-system"></a>System Pomocy rozwiązania Finance and Operations
 
 [!include [banner](../includes/banner.md)]
@@ -33,11 +32,11 @@ ms.lasthandoff: 12/18/2018
 Ten temat zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations.
 
 > [!NOTE]
-> Następujące produkty są ściśle związane ze sobą: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail i Dynamics 365 for Talent. Te same funkcje mogą być dostępne we wszystkich 3 produktach. W związku z tym w tematach związanych głównie z modułem Retail nazwą produktu będzie Dynamics 365 for Retail, w tematach dotyczących przede wszystkim modułu Talent nazwą produktu będzie Dynamics 365 for Talent, a w tematach związanych z produktem podstawowym nazwą produktu będzie Dynamics 365 for Finance and Operations. Tematów, które zostały napisane dla jednego produktu, można używać w odniesieniu do tych samych funkcji w powiązanym produkcie.
+> Następujące produkty są ściśle związane ze sobą: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; oraz Dynamics 365 for Talent. Te same funkcje mogą być dostępne we wszystkich 3 produktach. W związku z tym w tematach związanych głównie z modułem Retail nazwą produktu będzie Dynamics 365 for Retail, w tematach dotyczących przede wszystkim modułu Talent nazwą produktu będzie Dynamics 365 for Talent, a w tematach związanych z produktem podstawowym nazwą produktu będzie Dynamics 365 for Finance and Operations. Tematów, które zostały napisane dla jednego produktu, można używać w odniesieniu do tych samych funkcji w powiązanym produkcie.
 
 System Pomocy jest wspólny dla następujących produktów:
 
-- Dynamics 365 for Finance and Operations
+- Rozwiązanie Dynamics 365 for Finance and Operations
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -137,7 +136,7 @@ Aby uzyskać dostęp do zawartości pomocy w programie Finance and Operations, k
 Z okienka pomocy można uzyskać dostęp artykułów mających zastosowanie do klienta programu Finance and Operations. Gdy po raz pierwszy otworzysz okienko pomocy i klikniesz kartę **Pomoc**, zobaczysz artykuły mające zastosowanie do strony aktualnie wyświetlonej w programie Finance and Operations. Jeśli nie zostaną znalezione żadne artykuły, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie. Po kliknięciu artykułu w okienku pomocy w przeglądarce zostanie otwarta nowa karta z artykułem.
 
 > [!IMPORTANT]
-> Ta sekcja nie dotyczy programu Dynamics 365 for Talent. System Pomocy programu Talent jest automatycznie łączony z przewodnikami po zadaniach dla tego produktu. Ponadto nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Talent.
+> Ta sekcja nie ma zastosowania do Dynamics 365 for Talent. System Pomocy programu Talent jest automatycznie łączony z przewodnikami po zadaniach dla tego produktu. Ponadto nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Talent.
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Uzyskiwanie dostępu do przewodników po zadaniach z okienka Pomocy
 
@@ -194,10 +193,9 @@ W poniższej tabeli wymieniono nasze witryny internetowe. Witryny z gwiazdką (\
 |------------------------------------------------------------------------------------------------|-------------|
 | [Docs.microsoft.com](/dynamics365/)                                                            | Hosty lub łącza do dokumentacji wszystkich produktów dla systemu Dynamics 365. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Witryna bezpłatnych szkoleń elektronicznych firmy Microsoft. |
-| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Zawiera obszar współpracy oparty na chmurze, w którym klienci i ich partnerzy mogą całościowo zarządzać projektami w programie Dynamics 365 for Finance and Operations — od przedsprzedaży po wdrożenie i bieżącą eksploatację. Ta witryna jest przydatna we wszystkich fazach implementacji. |
+| [Usługa Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Zawiera obszar współpracy oparty na chmurze, w którym klienci i ich partnerzy mogą całościowo zarządzać projektami w programie Dynamics 365 for Finance and Operations — od przedsprzedaży po wdrożenie i bieżącą eksploatację. Ta witryna jest przydatna we wszystkich fazach implementacji. |
 | [Blog pomocy technicznej](http://aka.ms/AXSupportBlog)                                                    | Zawiera porady i wskazówki publikowane przez zespół pomocy technicznej programu Dynamics 365 for Finance and Operations. |
 | [Docs.microsoft.com/poprzednie wersje](https://docs.microsoft.com/previous-versions/dynamics/) | Zawiera treści w poprzednich wydań. |
 | [Społeczność użytkowników produktów Dynamics](https://community.dynamics.com/)                                          | Obsługuje blogi, fora i wideo. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Zawiera ocenę i informacje o sprzedaży. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Zawiera niektóre materiały szkoleniowe dla Finance and Operations oraz raporty i oficjalne dokumenty do pobrania, a także jest główną witryną pomocy technicznej dla posiadaczy planów usług. Dostęp do niektórych zasobów w witrynie może wymagać posiadania planu usług. |
-

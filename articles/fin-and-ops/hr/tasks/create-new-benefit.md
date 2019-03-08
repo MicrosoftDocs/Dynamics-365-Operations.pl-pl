@@ -1,13 +1,13 @@
---- 
-title: "Utwórz nowe świadczenie"
-description: "To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia."
+---
+title: Utwórz nowe świadczenie
+description: To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 5136af93ccd751e6ac710a75914bf5f04750f7a1
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313734"
 ---
 # <a name="create-a-new-benefit"></a>Utwórz nowe świadczenie
 
@@ -54,5 +54,4 @@ To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą uż
 5. W polu Opcja wprowadź lub wybierz wartość.
 6. W polu Data wprowadzenia wprowadź datę i godzinę.
 7. Kliknij przycisk Utwórz świadczenie.
-
 

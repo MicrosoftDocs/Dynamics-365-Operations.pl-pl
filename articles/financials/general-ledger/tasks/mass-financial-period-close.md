@@ -1,13 +1,13 @@
---- 
-title: "Masowe zamykanie okresów obrachunkowych"
-description: "W tej procedurze pokazano sposób zawieszania okresu lub trwałego zamykania okresu albo więcej niż jednej firmy na raz."
+---
+title: Masowe zamykanie okresów obrachunkowych
+description: W tej procedurze pokazano sposób zawieszania okresu lub trwałego zamykania okresu albo więcej niż jednej firmy na raz.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerCalendar, LedgerPeriodModuleAccessControlUpdate, SysLookupPicklist, LedgerFiscalCalendarPeriodStatus
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a2988b7ab0837cc9a3e4f1c4eaf3fe6e219fa721
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8d7151cbcd02f9312ca6b0de5e27231a0b0dc9d6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311388"
 ---
 # <a name="mass-financial-period-close"></a>Masowe zamykanie okresów obrachunkowych
 
@@ -46,5 +46,4 @@ W tej procedurze pokazano sposób zawieszania okresu lub trwałego zamykania okr
 11. Wybierz opcję Aktualizuj stan okresu i ustaw stan Wstrzymane, Otwarte lub Trwale zamknięty.
     * Opcja Otwarta wskazuje, że można księgować w okresie, pod warunkiem, że użytkownik ma dostęp. Wartość Wstrzymane oznacza, że nie może księgować w okresie, ale okres można otworzyć ponownie. Wartość Trwale zamknięty oznacza, że okres jest zamknięty i już nigdy nie można go otworzyć. Nie można księgować korekt. Nie zaleca się ustawiania okresu na Trwale zamknięty do czasu zakończenia wszystkich korekt i inspekcji.  
 12. Kliknij przycisk Aktualizuj.
-
 

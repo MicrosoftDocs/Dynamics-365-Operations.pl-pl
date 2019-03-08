@@ -1,13 +1,13 @@
 ---
-title: "Rejestracja na urządzeniu przenośnym zużycia materiałów"
-description: "W tym temacie opisano przepływ pracy umożliwiający rejestrowanie zużycia surowców w produkcji przy użyciu urządzenia przenośnego (podręcznego)."
+title: Rejestracja na urządzeniu przenośnym zużycia materiałów
+description: W tym temacie opisano przepływ pracy umożliwiający rejestrowanie zużycia surowców w produkcji przy użyciu urządzenia przenośnego (podręcznego).
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5b9c73cf9b23eb8ad9ed872b76b92b395609e9a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: b84b63ec519ae686b55905170c956fcb2b08334a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336136"
 ---
-
 # <a name="register-material-consumption-using-a-mobile-device"></a>Rejestracja na urządzeniu przenośnym zużycia materiałów
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ Ten przepływ pracy ma zastosowanie, jeśli istnieje ścisły wymóg identyfikow
 
 W procesie produkcji ciągłej (5) jest zużywany surowiec RM-100 wchodzący w skład partii. Materiał jest dostępny w lokalizacji Bulk-001 (1) pod numerem identyfikacyjnym PL-1 w dwóch partiach B1 i B2, obu z ilością 100 kg. Dla surowca RM-100 jest zwalniana i przetwarzana praca magazynowa (2), a materiał zostaje pobrany z lokalizacji Bulk-001 do lokalizacji wejściowej produkcji PIL-01 (3), która jest zdefiniowana jako niekontrolowana przez numer identyfikacyjny. Operator maszyny waży materiał z lokalizacji wejściowej produkcji (3) i rejestruje masę oraz numer partii jako zużyte (4). Z lokalizacji wejściowej produkcji część materiału jest ręcznie dodawana do procesu produkcji w zdefiniowanych odstępach czasu. Gdy operator maszyny dodaje materiał, waży go na wadze i rejestruje numer partii.
 
-## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Konfigurowanie przepływu pracy rejestrowania zużycia przy użyciu urządzenia podręcznego
+## <a name="set-up-theworkflow-to-register-consumption-using-a-handheld-device"></a>Konfigurowanie przepływu pracy rejestrowania zużycia przy użyciu urządzenia podręcznego
 Utwórz wyrób gotowy FG-100 z listą składową zawierającą surowiec RM-100 wchodzący w skład partii. Doda dwie partie B1 i B2 surowca RM-100 w ilości 100 do lokalizacji Bulk-001 pod numerem identyfikacyjnym PL-1. Reguła rozliczania w wierszu listy składowej dla surowca RM-100 ma wartość **Ręcznie**. Jako lokalizację wejściową produkcji ustaw PIL-01. Można to zrobić przez zaznaczenie tej lokalizacji jako domyślnej lokalizacji wejściowej produkcji w magazynie 51.
 
 1.  Utwórz nowy element menu w urządzeniu komórkowym: 
@@ -69,7 +68,7 @@ To spowoduje przeniesienie materiału z lokalizacji zbiorczej do lokalizacji wej
 
 Po uruchomieniu zlecenia produkcyjnego można rejestrować zużycie materiału za pomocą przepływu pracy na urządzeniu podręcznym. Zacznijmy od zarejestrowania zużycia 25 kg z partii B1.
 
-6.  Wybierz element menu **Zarejestruj zużycie** **materiałów** w menu na urządzeniu przenośnym i wprowadź następujące informacje: 
+6.  Wybierz element menu  **Zarejestruj zużycie** **materiałów** w menu na urządzeniu przenośnym i wprowadź następujące informacje: 
 
 -    Numer zlecenia produkcyjnego. 
 -    Lokalizacja, w której materiał będzie zużywany, w tym przypadku PIL-01. 
@@ -91,6 +90,5 @@ Po zakończeniu rejestrowania kliknij przycisk **Gotowe**, aby zaksięgować ark
 -   Nowy przepływ pracy umożliwia również rejestrowanie numerów seryjnych.
 -   Można zarejestrować tylko kod towaru zdefiniowany na liście składowej lub w formule dla wybranego zlecenia produkcyjnego lub szarży produkcyjnej.
 -   Materiał może być zużywany ponad miarę. Na przykład jeśli szacuje się, że materiał zostanie zużyty w ilości 100 kg, można go zużyć ponad miarę, na przykład w ilości 105 kg.
-
 
 

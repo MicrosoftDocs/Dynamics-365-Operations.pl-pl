@@ -1,13 +1,13 @@
 ---
 title: Rejestracja w celu uruchomienia produkcji
-description: "W tym temacie opisano podstawowe pojęcia i terminy, które należy znać, aby prawidłowo skonfigurować moduł Wykonywanie produkcji i go używać."
+description: W tym temacie opisano podstawowe pojęcia i terminy, które należy znać, aby prawidłowo skonfigurować moduł Wykonywanie produkcji i go używać.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgRegistration
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1bbcd7ebea869f921c2eadd05e64509ff9246aa4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e5d4ee2fb1cd58107043939c3721fd857909f16b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318173"
 ---
-
 # <a name="registration-for-manufacturing-execution"></a>Rejestracja w celu uruchomienia produkcji
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,6 @@ Pracownicy mogą wykonywać różne typy rejestracji w uruchomieniu produkcji dl
 -   **Rejestrowanie przerw** (dostępne z modułu Czas i frekwencja) — w ciągu dnia pracy, pracownicy mogą rejestrować, że opuszczają stanowisko pracy, by zrobić sobie przerwę. Można skonfigurować kilka typów przerwy. Kiedy pracownik wraca i loguje się ponownie, system rejestruje, że pracownik wrócił i zatrzymuje rejestrację przerwy.
 -   **Rejestrowanie pracy przy działaniach pośrednich** (dostępne z modułu Czas i frekwencja) — działania pośrednie to działania nieproduktywne, które pracownicy mogą wykonywać podczas dnia roboczego, takie jak spotkania pracowników działu, spotkania zespołu lub prace konserwacyjne w dziale produkcyjnym. Pracownicy mogą wykonywać rejestracje na skonfigurowanych działaniach pośrednich.
 -   **Rejestrowanie nadgodzin** (dostępne z modułu Czas i frekwencja) — pracownik, którego poproszono o dłuższe godziny pracy może wybrać, czy nadgodziny mają być zarejestrowane jako elastyczny czas pracy czy jako nadgodziny.
-
 
 
 

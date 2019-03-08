@@ -1,13 +1,13 @@
 ---
-title: "Synchronizowanie umów na projekty i projektów bezpośrednio z programu Project Service Automation do programu Finance and Operations"
-description: "Ten temat zawiera opis szablonu i podstawowych zadań, które są używane do synchronizowania umów projektu i projektów bezpośrednio między programem Microsoft Dynamics 365 for Project Service Automation a programem Microsoft Dynamics 365 for Finance and Operations."
+title: Synchronizowanie umów na projekty i projektów bezpośrednio z programu Project Service Automation do programu Finance and Operations
+description: Ten temat zawiera opis szablonu i podstawowych zadań, które są używane do synchronizowania umów projektu i projektów bezpośrednio między programem Microsoft Dynamics 365 for Project Service Automation a programem Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312124"
 ---
-
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Synchronizowanie umów na projekty i projektów bezpośrednio z programu Project Service Automation do programu Finance and Operations
 
 [!include[banner](../includes/banner.md)]
@@ -95,8 +94,8 @@ Gdy używane są rozwiązania integracji aplikacji Project Service Automation do
 ## <a name="prerequisites-and-mapping-setup"></a>Wymagania wstępne i ustawienia mapowania
 
 - Zanim będzie możliwa synchronizacja umów na projekty i projektów, należy zsynchronizować konta.
-- W zestawie połączeń dodaj mapowanie pola klucza integracji **msdyn\_organizationalunits** do elementu **msdyn\_name \[nazwa\]**. Najpierw trzeba będzie dodać projekt do zestawu połączenia. Aby uzyskać więcej informacji, zobacz [Integrowanie danych na platformie Common Data Service dla aplikacji](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
-- W zestawie połączeń dodaj mapowanie pola klucza integracji z **msdyn\_projects** do elementu **msdynce\_projectnumber \[numer projektu\]**. Najpierw trzeba będzie dodać projekt do zestawu połączenia. Aby uzyskać więcej informacji, zobacz [Integrowanie danych na platformie Common Data Service dla aplikacji](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+- W zestawie połączeń dodaj mapowanie pola klucza integracji **msdyn\_organizationalunits** do elementu **msdyn\_name \[nazwa\]**. Najpierw trzeba będzie dodać projekt do zestawu połączenia. Aby uzyskać więcej informacji, zobacz [Integrowanie danych na platformie Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+- W zestawie połączeń dodaj mapowanie pola klucza integracji z **msdyn\_projects** do elementu **msdynce\_projectnumber \[numer projektu\]**. Najpierw trzeba będzie dodać projekt do zestawu połączenia. Aby uzyskać więcej informacji, zobacz [Integrowanie danych na platformie Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 - Pole **SourceDataID** umów na projekty i projektów można zaktualizować na inną wartość lub usunąć z mapowania. Domyślną wartością szablonu jest **Project Service Automation**.
 - Mapowanie **PaymentTerms** należy zaktualizować, tak aby odzwierciedlało prawidłowe warunki płatności w aplikacji Finance and Operations. Można również usunąć mapowanie z zadania projektu. Mapa wartości domyślnych zawiera wartości domyślne dla danych demonstracyjnych. W poniższej tabeli przedstawiono wartości w rozwiązaniu Project Service Automation.
 
@@ -135,4 +134,3 @@ Poniższa ilustracja przedstawia przykłady mapowań zadań szablonu w integracj
 [![Mapowanie szablonu](./media/ProjectContractLinesMapping.JPG)](./media/ProjectContractLinesMapping.JPG)
 
 [![Mapowanie szablonu](./media/ProjectContractLineMilestonesMapping.JPG)](./media/ProjectContractLineMilestonesMapping.JPG)
-

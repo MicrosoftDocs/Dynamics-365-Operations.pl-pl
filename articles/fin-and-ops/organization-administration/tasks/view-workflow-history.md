@@ -1,13 +1,13 @@
---- 
-title: "Wyświetl historię przepływu pracy"
-description: "Te czynności umożliwiają wyświetlenie stanu dokumentu przesłanego do systemu przepływu pracy w celu przetworzenia i zatwierdzenia."
+---
+title: Wyświetl historię przepływu pracy
+description: Te czynności umożliwiają wyświetlenie stanu dokumentu przesłanego do systemu przepływu pracy w celu przetworzenia i zatwierdzenia.
 author: jasongre
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WorkflowStatus
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a40fe377322e2d64b751f6cace3eda20736cd321
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 212f9fe8bc7807b9209523564ead716959875241
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309663"
 ---
 # <a name="view-workflow-history"></a>Wyświetl historię przepływu pracy
 
@@ -46,5 +46,4 @@ Te czynności umożliwiają wyświetlenie stanu dokumentu przesłanego do system
     * Upewnij się, że jest rozwinięta sekcja Elementy pracy.    W tej sekcji można obejrzeć elementy pracy skojarzone z wybranym dokumentem. Na przykład może być konieczne wykonanie zadania lub zatwierdzenie dokumentu.  
     * Przycisk Przypisz ponownie powoduje otwarcie okna dialogowego, w którym można przepisać element pracy do innego użytkownika.  
     * Upewnij się, że jest rozwinięta sekcja Szczegóły śledzenia.    W tej sekcji można obejrzeć historię przepływu pracy dla wybranego dokumentu.  
-
 

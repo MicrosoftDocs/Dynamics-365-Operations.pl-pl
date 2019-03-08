@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie programów sprzedaży ciągłej dla biur obsługi"
-description: "W tym artykule opisano sposób konfigurowania programu sprzedaży ciągłej dla biura obsługi."
+title: Konfigurowanie programów sprzedaży ciągłej dla biur obsługi
+description: W tym artykule opisano sposób konfigurowania programu sprzedaży ciągłej dla biura obsługi.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 369856f33c6da49b6c6b3f51f42c99a8f07fe777
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 9952785afd8e5d1877e96239ee23f9de1c332bcf
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320979"
 ---
-
 # <a name="set-up-continuity-programs-for-call-centers"></a>Konfigurowanie programów sprzedaży ciągłej dla biur obsługi
 
 [!include [banner](includes/banner.md)]
@@ -51,4 +50,3 @@ Po skonfigurowaniu programu ciągłości zgodnie z opisem powyżej można utworz
 - **Rozszerzanie wierszy sprzedaży ciągłej** (jeśli wymagane) — rozszerzenie liczby przypadków, w których można powtarzać zdarzenia. Powtarzanie wysyłek można następnie powiększyć poza limit, który został ustawiony w polu **Próg powtarzania zdarzenia ciągłości pracy** w parametrach biura obsługi.
 - **Dokonaj aktualizacji ciągłości** (jeśli wymagane) — synchronizuj zmiany między program ciągłości i nadrzędnymi zamówieniami sprzedaży ciągłej.
 - **Zamknij wiersze i zamówienia nadrzędne ciągłe** — zamknij zamówienia ciągłe.
-

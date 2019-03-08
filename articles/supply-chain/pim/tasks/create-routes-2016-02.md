@@ -1,13 +1,13 @@
---- 
+---
 title: Tworzenie marszrut (luty 2016)
-description: "To zadanie koncentruje się na utworzeniu marszrut produkcji wyrobu gotowego i półproduktu."
+description: To zadanie koncentruje się na utworzeniu marszrut produkcji wyrobu gotowego i półproduktu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, RouteInventProd, RouteGroup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
 ms.openlocfilehash: a68b28c0e0ee14429a23d3241cabdae948d706d2
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354099"
 ---
 # <a name="create-routes-february-2016"></a>Tworzenie marszrut (luty 2016)
 
@@ -107,5 +107,4 @@ To zadanie koncentruje się na utworzeniu marszrut produkcji wyrobu gotowego i p
     * Czasy przezbrajania są często uwzględniane w cenach obliczanych dla towarów.  
 5. Kliknij przycisk Zapisz.
 6. Zamknij stronę.
-
 

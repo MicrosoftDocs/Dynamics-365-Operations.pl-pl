@@ -1,13 +1,13 @@
 ---
-title: "Salda głównego konta księgowego"
-description: "W tym artykule opisano dwa sposoby wyświetlania sald kont księgi głównej — ze strony listy Bilans próbny i za pomocą raportów finansowych. Omówiono także sposoby aktualizacji sald zestawów wymiarów."
+title: Salda głównego konta księgowego
+description: W tym artykule opisano dwa sposoby wyświetlania sald kont księgi głównej — ze strony listy Bilans próbny i za pomocą raportów finansowych. Omówiono także sposoby aktualizacji sald zestawów wymiarów.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a505610e94daeb73abef37a88f6c506a6bd7bc30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0ea3cf6887d11fbf9adf745fef691124c88527c6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354858"
 ---
-
 # <a name="general-ledger-account-balances"></a>Salda głównego konta księgowego
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Gdy użytkownik zmienia parametry, salda są odświeżane. Użytkownik może ró
 Użytkownicy mogą wyświetlać bardziej szczegółowe dane transakcji składowych salda.    
 
 Aby uzyskać więcej informacji, zobacz [Wyświetlanie raportów finansowych](view-financial-reports.md).
-
 
 
 

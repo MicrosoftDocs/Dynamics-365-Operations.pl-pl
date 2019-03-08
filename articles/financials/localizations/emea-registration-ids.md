@@ -1,13 +1,13 @@
 ---
 title: Identyfikatory rejestracji
-description: "Ten temat zawiera informacje o konfigurowaniu i używaniu identyfikatorów rejestracyjnych."
+description: Ten temat zawiera informacje o konfigurowaniu i używaniu identyfikatorów rejestracyjnych.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7b663b9a72afdd3c2e2dcf503152f02e0b7861fd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 978c6c6f2a3de803f252e93040d2d7eb2bc4a793
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350511"
 ---
-
 # <a name="registration-ids"></a>Identyfikatory rejestracji
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,7 @@ Kategoria rejestracji to identyfikator rejestracyjny kraju/regionu zatwierdzony 
 |-----------------------|----------------|
 | Typ rejestracji     | Typ rejestracji w określonym kraju/regionie.|
 | Ograniczone do         | Rodzaj ograniczenia stosowany do typu rejestracji podatkowej: Brak, Osoba, Organizacja.|
-| Kategoria rejestracji | Unikatowy identyfikator rejestracyjny dopuszczony do używania w kraju. Poniżej znajduje się kompletna lista kategorii obsługiwanych w programie Microsoft Dynamics 365 for Finance and Operations. |
+| Kategoria rejestracji | Unikatowy identyfikator rejestracyjny dopuszczony do używania w kraju. Poniżej zamieszczono pełną listę kategorii obsługiwanych w Microsoft Dynamics 365 for Finance and Operations. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Wprowadzanie identyfikatorów rejestracyjnych dla rekordów globalnej książki adresowej
 
@@ -90,18 +89,18 @@ Poniższa tabela zawiera listę typów rejestracji obsługiwanych w usłudze Fin
 | Spisová značka (NIP, Agencja wystawiająca, Sekcja) | Czechy     | Numer wpisu (CommercialRegisterInsetNumber) Przechowywane w rejestrze handlowym (CommercialRegister) Sekcja rejestru handlowego (CommercialRegisterSection)|
 | Identyfikator odbiorcy cła                                           | Finlandia | Cło — numer odbiorcy (CustomsCustomerNumber\_FI)|
 | Numer identyfikacyjny                                                           | Federacja Rosyjska| Numer identyfikacyjny (typ ustawodawczy Numer identyfikacyjny w systemie AX 2012 R3)|
-| Kod przyczyny rejestracji                                                           | Federacja Rosyjska| Kod przyczyny rejestracji (typ ustawodawczy Kod przyczyny rejestracji w systemie AX 2012 R3)|
-| Klasyfikacja OKDP                                                          | Federacja Rosyjska| Klasyfikacja OKDP (typ ustawodawczy Klasyfikacja OKDP w systemie AX 2012 R3)|
-| Klasyfikacja OKPO                                                          | Federacja Rosyjska| Klasyfikacja OKPO (typ ustawodawczy Klasyfikacja OKPO w systemie AX 2012 R3)|
+| Kod przyczyny rejestracji                                                           | Federacja Rosyjska| Numer identyfikacyjny (typ ustawodawczy Numer identyfikacyjny w systemie AX 2012 R3)|
+| Klasyfikacja OKDP                                                          | Federacja Rosyjska| Numer identyfikacyjny (typ ustawodawczy Numer identyfikacyjny w systemie AX 2012 R3)|
+| Klasyfikacja OKPO                                                          | Federacja Rosyjska| Numer identyfikacyjny (typ ustawodawczy Numer identyfikacyjny w systemie AX 2012 R3)|
 | Klasyfikacja RCOAD                                                         | Federacja Rosyjska| Klasyfikacja RCOAD (typ ustawodawczy Klasyfikacja RCOAD w systemie AX 2012 R3)|
-| Numer OGRN                                                          | Federacja Rosyjska| Numer OGRN (typ ustawodawczy Numer OGRN w systemie AX 2012 R3) |
+| Numer OGRN                                                          | Federacja Rosyjska| Numer identyfikacyjny (typ ustawodawczy Numer identyfikacyjny w systemie AX 2012 R3) |
 | Numer SNILS                                                         | Federacja Rosyjska| Numer SNILS (typ ustawodawczy Numer SNILS w systemie AX 2012 R3)|
-| Numer CIFTS                                                         | Federacja Rosyjska| Numer CIFTS (typ ustawodawczy Numer CIFTS w systemie AX 2012 R3)|
+| Numer CIFTS                                                         | Federacja Rosyjska| Numer CIFTS (typ ustawodawczy CIFTS w systemie AX 2012 R3)|
 | Paszport                                                      | Hiszpania             | Paszport|
 | Oficjalny dokument tożsamości                              | Hiszpania             | Oficjalny dokument tożsamości|
 | Certyfikat rezydencji                                         | Hiszpania             | Certyfikat rezydencji|
 | Inny dokument tożsamości                                 | Hiszpania             | Inny dokument tożsamości|
-| Niezliczone                                                  | Hiszpania             | Niedostępne w systemie AX 2012 R3|
+| Nie zliczono                                                  | Hiszpania             | Niedostępne w systemie AX 2012 R3|
 
 
 Aby uzyskać więcej informacji na temat przetwarzania identyfikatorów rejestracyjnych, w tym opis wymagań wstępnych, zobacz następujące nagrania zadań o identyfikatorach podatkowych w usłudze Lifecycle Services (LCS):
@@ -109,7 +108,6 @@ Aby uzyskać więcej informacji na temat przetwarzania identyfikatorów rejestra
 -   Konfigurowanie identyfikatora VAT
 -   Rejestrowanie identyfikatora VAT dostawcy
 -    Szukanie strony za pomocą identyfikatora VAT
-
 
 
 
