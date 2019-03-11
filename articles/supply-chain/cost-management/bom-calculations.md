@@ -1,13 +1,13 @@
 ---
 title: Obliczenia BOM
-description: "Obliczenia łącznego kosztu i ceny sprzedaży są nazywane obliczeniami listy składowej BOM i inicjuje się je ze strony Obliczenia. Ten temat zawiera informacje dotyczące obliczeń BOM."
+description: Obliczenia łącznego kosztu i ceny sprzedaży są nazywane obliczeniami listy składowej BOM i inicjuje się je ze strony Obliczenia. Ten temat zawiera informacje dotyczące obliczeń BOM.
 author: AndersGirke
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
+ms.openlocfilehash: 29ea9ddefba3416a33cd0e2f873624cc5c781a55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341564"
 ---
-
 # <a name="bom-calculations"></a>Obliczenia BOM
 
 [!include [banner](../includes/banner.md)]
@@ -91,7 +90,6 @@ Obliczanie BOM dla konkretnego zamówienia jest odmianą obliczania BOM dla wytw
 
 -   Podczas obliczania BOM dla konkretnego zamówienia nie jest generowany rekord kosztu towaru w wersji wyceny. Z tego względu zasady obliczania BOM nie są stosowane, gdy jest tworzony rekord kosztu towaru lub gdy jest zastępowany rekord kosztu.
 -   W obliczaniu BOM dla konkretnego zamówienia zawsze są używane rekordy kosztów aktywnych dla składników, kategorii kosztów i formuł obliczania kosztów pośrednich.
-
 
 
 

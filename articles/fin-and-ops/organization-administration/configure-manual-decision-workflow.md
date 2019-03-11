@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie decyzji ręcznych w przepływie pracy"
-description: "W tym temacie wyjaśniono sposób konfigurowania właściwości decyzji ręcznej."
+title: Konfigurowanie decyzji ręcznych w przepływie pracy
+description: W tym temacie wyjaśniono sposób konfigurowania właściwości decyzji ręcznej.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: d09e99a5bf99593a8fa7682f9d4f29eaa4e7c836
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341403"
 ---
-
 # <a name="configure-manual-decisions-in-a-workflow"></a>Konfigurowanie decyzji ręcznych w przepływie pracy
 
 [!include [banner](../includes/banner.md)]
@@ -164,7 +163,7 @@ Można wysyłać powiadomienia do osób w momencie wprowadzenia decyzji, jej del
     </tr>
     <tr>
     <td>Użytkownik</td>
-    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Finance and Operations</td>
+    <td>Określeni użytkownicy Microsoft Dynamics 365 for Finance and Operations</td>
     <td>
     <ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
@@ -372,4 +371,3 @@ Jeśli decyzja musi zostać podjęta w określonym czasie, wykonaj następujące
     - **Lata** — Wybierz dzień, tydzień i miesiąc, do kiedy należy podjąć decyzję. Może to być na przykład piątek trzeciego tygodnia grudnia.
 
 4. W przypadku przekroczenia tego limitu czasu system sam podejmie decyzję. Na liście **Akcja** zaznacz opcję, którą system powinien wybrać.
-

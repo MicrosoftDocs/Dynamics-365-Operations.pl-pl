@@ -1,29 +1,28 @@
 ---
 title: Polska
-description: "Ten temat zawiera łącza do zasobów dokumentacji o programie Microsoft Dynamics 365 for Finance and Operations dla Polski."
+description: Ten temat zawiera łącza do zasobów dokumentacji Microsoft Dynamics 365 for Finance and Operations dla Polski.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
+ms.custom: ''
 ms.search.region: Poland
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: ae681bd9fb51fc69aada24adfccc7d36ec8f5e52
 ms.openlocfilehash: 34f111430daf136f5ee97cdcad4c7a2b30018e16
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371525"
 ---
-
 # <a name="poland"></a>Polska 
 
 [!include [banner](../includes/banner.md)]
@@ -41,4 +40,3 @@ Ten temat zawiera łącza do zasobów dokumentacji dla Polski.
 - [Standardowy plik audytu](emea-pol-standard-audit-file-saf.md)
 - [Odsetki podatkowe i rynkowe](emea-pol-interest-calculation.md)
 - [Zestawienie obrotów i sald](emea-pol-turnover-balances-statement.md)
-

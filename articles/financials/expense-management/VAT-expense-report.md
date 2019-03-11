@@ -1,13 +1,13 @@
 ---
-title: "Zwrot podatku VAT w module Zarządzanie wydatkami"
-description: "W tym temacie wyjaśniono, jak otrzymywać zwroty z kwalifikujących się transakcji zawierających podatek od towarów i usług (VAT)."
+title: Zwrot podatku VAT w module Zarządzanie wydatkami
+description: W tym temacie wyjaśniono, jak otrzymywać zwroty z kwalifikujących się transakcji zawierających podatek od towarów i usług (VAT).
 author: saraschi2
 manager: AnnBe
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPerDiems
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8bc9e533de40aa8fe8ddfe422cfe0f4078a360c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: d1c9357f8f51e1a87aebeb8f802dbe3b5fdd5aa0
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359573"
 ---
-
 # <a name="vat-recovery-in-expense-management"></a>Zwrot podatku VAT w module Zarządzanie wydatkami
 
 [!include [banner](../includes/banner.md)]
@@ -75,4 +74,3 @@ Gdy Arnie jest gotowy do wysłania danych z raportu wydatków do zewnętrznego d
 Arnie musi sprawdzić, czy transakcje w raportach z wydatków kwalifikują się do zwrotu podatku VAT oraz czy do raportów dołączono cyfrowe paragony. Aby rozpocząć przetwarzanie wydatków za transakcje krajowe kwalifikujących się do zwrotu podatku, Arnie otwiera stronę **Zwrot podatku od wydatków** i wybiera raport z wydatków wymagający weryfikacji. Sprawdza, czy paragony są wystawione na nazwę firmy, a nie imię i nazwisko pracownika. Aby otrzymać zwrot podatku VAT, paragony muszą być wystawione na firmę. Arnie następnie sprawdza, czy zastosowano poprawne grupę podatków i kody podatków dla pozycji.
 
 Gdy Arnie otrzymuje paragony papierowe, zmienia stan raportu z wydatków na **Gotowy do zwrotu**. Może wtedy złożyć wniosek o zwrot do odpowiedniego organu skarbowego. W tym przypadku właściwym organem skarbowym w Stanach Zjednoczonych jest Internal Revenue Service (IRS).
-

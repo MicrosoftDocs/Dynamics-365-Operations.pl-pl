@@ -1,13 +1,13 @@
 ---
-title: "Tworzenie płatności dla dostawców za pomocą propozycji płatności"
-description: "Ten temat zawiera omówienie opcji propozycji płatności wraz z przykładami pokazującymi działanie propozycji płatności."
+title: Tworzenie płatności dla dostawców za pomocą propozycji płatności
+description: Ten temat zawiera omówienie opcji propozycji płatności wraz z przykładami pokazującymi działanie propozycji płatności.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 332a18eb98811505b38c023c97c22b86a9367af1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327419"
 ---
-
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Tworzenie płatności od dostawców za pomocą propozycji płatności
 
 [!include [banner](../includes/banner.md)]
@@ -70,7 +69,7 @@ W dniu 1 lipca April płaci dostawcom. Używa propozycji płatności, aby szybci
 
 ### <a name="option-1-by-cash-discount"></a>Opcja 1: Według rabatu gotówkowego
 
-April wybiera **rabat gotówkowy** jako typ propozycji. Wprowadza zakres dat od 26 czerwca do 10 lipca. W propozycji zostaną uwzględnione następujące faktury:
+April wybiera **rabat gotówkowy** jako typ propozycji. Wprowadza zakres dat od 26 czerwca do 10 lipca. W propozycji zostaną uwzględnione następujące faktury:
 
 -   1002, ponieważ data rabatu 4 lipca mieści się w zakresie dat płatności.
 -   1004, ponieważ data rabatu 1 lipca mieści się w zakresie dat płatności.
@@ -120,8 +119,7 @@ Funkcja kontroli wymiarów umożliwia kontrolowanie grupowania wierszy generowan
 
 #### <a name="bank-account-selection"></a>Wybór konta bankowego
 
-Dla każdej metody płatności można zdefiniować standardowe konto płatności obciążających niezależnie od kontekstu krajowego. Konto jest ustawiane w wierszach płatności generowanych przez propozycję. Za pomocą funkcji konta bankowego można zdefiniować wiele kont bankowych obciążeń, które będą zarządzane według wymiaru i waluty lub ich dowolnej kombinacji, i używać różnych kont zależnie od potrzeb. Te kombinacje można skonfigurować na stronie **Metody płatności**, naciskając przycisk **Konta bankowe** dostępny dla każdej metody płatności i wybierając ustawienie **Typ konta księgowania** = **Bank**.
-
+Dla każdej metody płatności można zdefiniować standardowe konto płatności obciążających niezależnie od kontekstu krajowego. Konto jest ustawiane w wierszach płatności generowanych przez propozycję. Za pomocą funkcji konta bankowego można zdefiniować wiele kont bankowych obciążeń, które będą zarządzane według wymiaru i waluty lub ich dowolnej kombinacji, i używać różnych kont zależnie od potrzeb. Te kombinacje można skonfigurować na stronie **Metody płatności**, naciskając przycisk  **Konta bankowe** dostępny dla każdej metody płatności i wybierając ustawienie **Typ konta księgowania** = **Bank**.
 
 
 

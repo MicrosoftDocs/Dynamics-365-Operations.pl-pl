@@ -1,13 +1,13 @@
 ---
-title: "Dostawy bezpośrednie"
-description: "Ten artykuł zawiera informacje dotyczące dostaw bezpośrednich. Dostawy bezpośrednie to dostawy wysyłane bezpośrednio od dostawcy do odbiorców końcowych."
+title: Dostawy bezpośrednie
+description: Ten artykuł zawiera informacje dotyczące dostaw bezpośrednich. Dostawy bezpośrednie to dostawy wysyłane bezpośrednio od dostawcy do odbiorców końcowych.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchCreateFromSalesOrder, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d9c4a695c591865c52ad5ee6d37a515139f58bf8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1f2cdae674dc88a4d533258e24b1ecf7ec4cf55b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312285"
 ---
-
 # <a name="direct-deliveries"></a>Dostawy bezpośrednie
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ W przypadku usuwania wiersza zamówienia sprzedaży o typie **Dostawa bezpośred
 
 ## <a name="warehouse"></a>Magazyn
 Podczas tworzenia dostawy bezpośredniej, sprzedawane towary nigdy faktycznie nie docierają do magazynu. Niemniej jednak nadal należy określić magazyn w wierszu zamówienia sprzedaży. Podobnie wymagane pobrania mogą być określone w grupie modeli towaru dla towaru. Jednakże ponieważ towary nigdy faktycznie nie docierają do magazynu, wymagania te są ignorowane, gdy zamówienie sprzedaży jest dostawą bezpośrednią.
-
 
 
 

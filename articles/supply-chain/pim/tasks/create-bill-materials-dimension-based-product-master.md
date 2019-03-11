@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie listy składowej (BOM) dla produktu głównego opartego na wymiarach"
-description: "Przed wykonaniem tej procedury należy wykonać 4 poprzednie przewodniki z tej sekwencji ośmiu nagrań."
+---
+title: Tworzenie listy składowej (BOM) dla produktu głównego opartego na wymiarach
+description: Przed wykonaniem tej procedury należy wykonać 4 poprzednie przewodniki z tej sekwencji ośmiu nagrań.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, BOMConsistOf, BOMTable, InventItemIdLookupSimple, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 19578f78c11bf0537708e8d516d478f00b13fa95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4f9f9473d0872d68571b87409b93e0cf5455364c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349752"
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>Tworzenie listy składowej (BOM) dla produktu głównego opartego na wymiarach
 
@@ -78,5 +78,4 @@ Przed wykonaniem tej procedury należy wykonać 4 poprzednie przewodniki z tej s
 4. W polu Czy chcesz także zatwierdzić listę składową (BOM)? zaznacz wartość Tak.
 5. Kliknij przycisk OK.
 6. Kliknij Aktywacja.
-
 

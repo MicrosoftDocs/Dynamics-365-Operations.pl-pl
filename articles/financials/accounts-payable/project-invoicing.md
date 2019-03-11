@@ -1,13 +1,13 @@
 ---
 title: Fakturowanie projektu
-description: "Ten artykuł zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących."
+description: Ten artykuł zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5dd51e442479a05ce715fe91ebab0c99df9a8b6f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2434e0a97846ce9ca0643327a7a032a9998bde5b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346325"
 ---
-
 # <a name="project-invoicing"></a>Fakturowanie projektu
 
 [!include [banner](../includes/banner.md)]
@@ -121,7 +120,6 @@ W tym samym dokumencie mogą się znaleźć transakcje wybrane do księgowania p
 Tworząc fakturę korygującą w celu skorygowania wcześniej zafakturowanej kwoty, najpierw należy wybrać zafakturowaną kwotę, która zostanie zaksięgowana po stronie kredytowej. Należy utworzyć fakturę korygującą, postępując zgodnie z tą samą procedurą, która służy do utworzenia zwykłej faktury dla odbiorcy. 
 
 Można utworzyć fakturę z kwotą ujemną i taka faktura jest klasyfikowana jako faktura korygująca. Aby utworzyć i wydrukować fakturę korygującą, trzeba wybrać transakcje wcześniej księgowane na fakturze dla odbiorcy, a następnie edytować transakcje. Z wyjątkiem firm, których adres podstawowy znajduje się w Niemczech, tytuł takiej faktury brzmi Faktura korygująca.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie osób podpisujących drukowane formularze"
-description: "Dla firm w Czechach, Estonii, na Węgrzech, Litwie, Łotwie, w Polsce i Rosji można skonfigurować osoby podpisujące oraz tytuły dla odbiorców i dostawców, którzy drukują dokumenty, takie jak faktury i zamówienia gotówkowe."
+title: Konfigurowanie osób podpisujących drukowane formularze
+description: Dla firm w Czechach, Estonii, na Węgrzech, Litwie, Łotwie, w Polsce i Rosji można skonfigurować osoby podpisujące oraz tytuły dla odbiorców i dostawców, którzy drukują dokumenty, takie jak faktury i zamówienia gotówkowe.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: c81625e9a042bf88268759065727bde332d37ea9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 51449f2f8448a493ebf7e4496cebdb90d902869a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371501"
 ---
-
 # <a name="set-up-signers-for-print-forms"></a>Konfigurowanie osób podpisujących drukowane formularze
 
 [!include [banner](../includes/banner.md)]
@@ -121,7 +120,7 @@ Aby skonfigurować osoby podpisujące dokumenty drukowane przez firmę, należy 
 <td>Wybór imienia i nazwiska osoby podpisującej. Imiona i nazwiska na liście pochodzą z tabeli Kontakty lub tabeli Pracownicy, w zależności od typu osoby podpisującej (tzn. w zależności od tego, czy jest zaznaczone pole wyboru <strong>Nasz</strong>). Jeśli imienia i nazwiska osoby podpisującej nie ma na liście, należy ręcznie wprowadzić tę informację.</td>
 </tr>
 <tr class="odd">
-<td>Nazwa stanowiska</td>
+<td>Nazwa funkcji</td>
 <td>Wybór stanowiska osoby podpisującej. Jeśli stanowiska osoby podpisującej nie ma na liście, należy ręcznie wprowadzić tę informację.</td>
 </tr>
 <tr class="even">
@@ -163,7 +162,6 @@ Funkcjonalność danych urzędowych pokazuje domyślne predefiniowane osoby podp
 -   Zamówienie gotówkowe
 
 **Uwaga:** Po zaksięgowaniu dokumentu danych urzędowych nie można edytować.
-
 
 
 

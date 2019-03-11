@@ -1,32 +1,31 @@
 ---
-title: "Uzupełnianie zapasów za pomocą kart Kanban wypłat"
-description: "W tym temacie opisano, jak zadanie Kanban wycofania służy do uzupełnienia zapasów materiałów dla działań produkcyjnych."
+title: Uzupełnianie zapasów za pomocą kart Kanban wypłat
+description: W tym temacie opisano, jak zadanie Kanban wycofania służy do uzupełnienia zapasów materiałów dla działań produkcyjnych.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7fe3ebe3c27c380d95cbc12b864264e9538d433f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 011da8cd894cc044b6af8b740e49ed8d7c3c0c67
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320933"
 ---
-
 # <a name="replenishment-with-withdrawal-kanbans"></a>Uzupełnianie zapasów za pomocą kart Kanban wypłat
 
 [!include [banner](../includes/banner.md)]
@@ -87,5 +86,4 @@ W poniższym scenariuszu działanie przeniesienia w zadaniu Kanban wycofania jes
 6.  Proces produkcji
 
 Po zużyciu ilości Kanban w lokalizacji wejściowej produkcji ilość Kanban jest zgłaszana jako pusta i do przepływu jest dodawana nowa karta Kanban. Po utworzeniu zadania Kanban jest dodawany wiersz grupy czynności do grupy czynności Kanban. Podczas przetwarzania grupy czynności Kanban jest tworzona praca magazynowa dla pobrania Kanban. Pracownik magazynu przetwarza pracę pobrania Kanban i otrzymuje instrukcję, aby pobrać materiał dla zadania Kanban z lokalizacji w magazynie. Gdy ten pracownik magazynu potwierdzi pobranie, zadanie Kanban jest automatycznie wypełniane i pracownik otrzymuje instrukcję, aby odłożyć materiał do lokalizacji wejściowej produkcji.
-
 

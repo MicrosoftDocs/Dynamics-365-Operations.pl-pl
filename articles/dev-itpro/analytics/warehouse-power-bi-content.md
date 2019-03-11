@@ -1,13 +1,13 @@
 ---
-title: "Pakiet zawartości usługi Power BI Wydajność magazynu"
-description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wydajność magazynu. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
+title: Pakiet zawartości usługi Power BI Wydajność magazynu
+description: W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wydajność magazynu. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWarehousePerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 99966a67fa1fd91fc54e7100f8e2e41b87f6a406
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365369"
 ---
-
 # <a name="warehouse-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wydajność magazynu
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft
 
 Pakiet zawartości **Wydajność magazynu** dla usługi Power BI został utworzony, aby kierownicy magazynów i kierownicy ds. operacyjnych mogli monitorować ważne wskaźniki dotyczące towarów przychodzących, wychodzących i zapasów. Wykorzystuje dane modułu Zarządzanie magazynem, informacje o produktach i inne dane transakcyjne z firmowego systemu oraz przedstawia zarówno zagregowany widok parametrów działania magazynu, jak i podział według dostawców, grup produktów, produktów, oddziałów i magazynów.
 
-Pakiet zawartości usługi Power **Wydajność magazynu** umożliwia kierownikom magazynów pomiar trzech następujących obszarów:
+Pakiet zawartości usługi Power BI **Wydajność magazynu** umożliwia kierownikom magazynów pomiar trzech następujących obszarów:
 
 - **Wydajność operacji przychodzących** — Mierzenie, na ile dobrze dostawca spełnia wymagania odbiorcy (innymi słowy mierzenie wydajności dostaw), oraz mierzenie wydajności odkładania, dzięki czemu można identyfikować problemy z udziałem pracowników lub towarów w wybranym okresie. Ważna jest wiedza, czy dostawcy dostarczają na czas, przed terminem czy z opóźnieniem, co pozwala określić, jak parametry działania dostawcy wpływają na ogólną wydajność odkładania. Dostawca, który dostarcza poza uzgodnionym zakresem dat, może wywierać dodatkowy nacisk na magazyn z powodu nieoczekiwanej pracy i w ten sposób wydłużać średni czas odłożenia.
 - **Wydajność wysyłki** — Mierzenie, czy magazyn wysyła w całości i w terminie do odbiorców (innymi słowy mierzenie wydajności wysyłek i dostaw towarów wychodzących), dzięki czemu można identyfikować wszelkie problemy z produktami, oddziałami, magazynami lub dedykowanymi odbiorcami. Jeśli się okaże, że wysyłasz z opóźnieniem do określonych regionów lub miejscowości, należy zwrócić większą uwagę na zarządzanie transportem lub klientami.
@@ -46,7 +45,7 @@ Pakiet zawartości usługi Power **Wydajność magazynu** umożliwia kierownikom
 Pakiet zawartości usługi Power BI **Wydajność magazynu** jest wyświetlany na stronie **Wydajność magazynu** (**Zarządzanie magazynem** \> **Zapytania i raporty** \> **Analiza wydajności magazynu** \> **Wydajność magazynu**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
-Pakiet zawartości **Wydajność magazynu** dla usługi Power BI obejmuje raport. Raport zawiera zestaw wskaźników, które są wizualizowane jako wykresy, kafelki i tabele. Poniższa tabela zawiera omówienie wizualizacji dostępnych w pakiecie zawartości usługi Power BI **Wydajność magazynu**.
+Pakiet zawartości **Wydajność magazynu** dla usługi Power BI. Raport zawiera zestaw wskaźników, które są wizualizowane jako wykresy, kafelki i tabele. Poniższa tabela zawiera omówienie wizualizacji dostępnych w pakiecie zawartości usługi Power BI **Wydajność magazynu**.
 
 | Strona raportu                 | Wykresy                                   | opis |
 |-----------------------------|------------------------------------------|-------------|
@@ -113,4 +112,3 @@ Następujące najważniejsze zagregowane miary są używane jako podstawa w paki
 | Wydajność wysyłki        | Wysłane wg produktów                       | CustPackingSlipOnTimeStatus           | Wcześnie, Na czas i Późno (zobacz opisy we wcześniejszej części tej tabeli). |
 | Wydajność wysyłki        | Wysłane wg odbiorców                      | CustPackingSlipOnTimeStatus           | Wcześnie, Na czas i Późno (zobacz opisy we wcześniejszej części tej tabeli). |
 | Wydajność wysyłki        | Wysłane wg oddziałów/magazynów              | CustPackingSlipOnTimeStatus           | Wcześnie, Na czas i Późno (zobacz opisy we wcześniejszej części tej tabeli). |
-

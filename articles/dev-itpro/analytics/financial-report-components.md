@@ -1,13 +1,13 @@
 ---
-title: "Składniki raportu finansowego"
-description: "W tym artykule opisano, jak składniki (bloki konstrukcyjne) definicji raportów są wykorzystywane w sprawozdawczości finansowej. Tymi blokami konstrukcyjnymi mogą być definicje wierszy, kolumn i drzewa raportowania. Artykuł wyjaśnia, jak organizować i blokować bloki konstrukcyjne oraz jak pracować z grupami bloków konstrukcyjnych."
+title: Składniki raportu finansowego
+description: W tym artykule opisano, jak składniki (bloki konstrukcyjne) definicji raportów są wykorzystywane w sprawozdawczości finansowej. Tymi blokami konstrukcyjnymi mogą być definicje wierszy, kolumn i drzewa raportowania. Artykuł wyjaśnia, jak organizować i blokować bloki konstrukcyjne oraz jak pracować z grupami bloków konstrukcyjnych.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 0829c9eb54a8a5ca1f78bfe85de4779e541b945a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "368152"
 ---
-
 # <a name="financial-report-components"></a>Składniki raportu finansowego
 
 [!include [banner](../includes/banner.md)]
@@ -82,7 +81,7 @@ Wszystkie moduły konstrukcyjne przypisane do grupy modułów konstrukcyjnych mo
 
 ### <a name="export-a-building-block-group"></a>Eksportowanie grupy modułów konstrukcyjnych
 
-Można wyeksportować grupę bloków konstrukcyjnych lub tylko bloki konstrukcyjne określonego raportu istniejące w grupie bloków konstrukcyjnych. Wyeksportowanej grupy bloków konstrukcyjnych można używać jako kopii zapasowej. Można także kopiować wyeksportowane dane między lub instalacjami programu Finance and Operations. Projektant raportów zawiera nie tylko grupę bloków konstrukcyjnych, ale również style czcionek i zestawy wymiarów, do których grupa się odwołuje.
+Można wyeksportować grupę bloków konstrukcyjnych lub tylko bloki konstrukcyjne określonego raportu istniejące w grupie bloków konstrukcyjnych. Wyeksportowanej grupy bloków konstrukcyjnych można używać jako kopii zapasowej. Można także kopiować wyeksportowane dane między lub instalacjami programu Finance and Operations. Projektant raportów zawiera nie tylko grupę bloków konstrukcyjnych, ale również style czcionek i zestawy wymiarów, do których grupa się odwołuje.
 
 1. W Projektancie raportów w menu **Firma** kliknij **Grupy bloków konstrukcyjnych**.
 2. W oknie dialogowym **Grupy modułów konstrukcyjnych** zaznacz grupę modułów konstrukcyjnych, którą chcesz wyeksportować, i kliknij przycisk **Eksport**.
@@ -128,4 +127,3 @@ Po otwarciu bloku konstrukcyjnego inni użytkownicy mają do niego dostęp tylko
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
-

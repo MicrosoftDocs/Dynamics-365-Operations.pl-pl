@@ -1,13 +1,13 @@
 ---
-title: "Metoda całkowitej alokacji kosztów"
-description: "Ten temat zawiera wskazówki dotyczące korzystania z metody całkowitej alokacji kosztów (TCA). TCA jest metodą obliczania kosztu między głównym towarem formuły szarży produkcyjnej a produktami towarzyszącymi zdefiniowanymi w formule."
+title: Metoda całkowitej alokacji kosztów
+description: Ten temat zawiera wskazówki dotyczące korzystania z metody całkowitej alokacji kosztów (TCA). TCA jest metodą obliczania kosztu między głównym towarem formuły szarży produkcyjnej a produktami towarzyszącymi zdefiniowanymi w formule.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMConsistOf, PmfFormulaCoBy
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cda1c5251b81a3bb73d4d8703d7c3fa1ab4e9c16
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f3d75411e8c99365f1aba8214c78e93b4741871
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341587"
 ---
-
 # <a name="total-cost-allocation-method"></a>Metoda całkowitej alokacji kosztów
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,6 @@ Pole **Alokacja kosztów produktu ubocznego** na stronie **Produkty towarzysząc
 -   **Procent** — Kwota kosztu jest obliczana jako procent sumy kosztów surowców zużywanych w produkcji. Procent używany do obliczeń należy wpisać w polu.
 -   **W serii** — Kwota kosztu jest obliczana jako kwota dla standardowego rozmiaru partii zlecenia produkcyjnego. Nie zależy od ilości zgłoszonej w produkcji. Kwotę używaną do obliczeń należy wpisać w polu.
 -   **Na ilość** — Kwota kosztu jest obliczana jako kwota dla zgłoszonej ilości towaru formuły w produkcji. Kwotę używaną do obliczeń należy wpisać w polu.
-
 
 
 

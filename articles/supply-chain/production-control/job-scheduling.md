@@ -1,13 +1,13 @@
 ---
-title: "Planowanie zadań"
-description: "Ten artykuł zawiera informacje o planowaniu zadań, co jest bardziej szczegółową formą planowania niż planowanie operacji. Można używać planowania zadań do tworzenia harmonogramu pojedynczych zadań lub zamówień w sklepie i kontrolowania środowiska produkcyjnego."
+title: Planowanie zadań
+description: Ten artykuł zawiera informacje o planowaniu zadań, co jest bardziej szczegółową formą planowania niż planowanie operacji. Można używać planowania zadań do tworzenia harmonogramu pojedynczych zadań lub zamówień w sklepie i kontrolowania środowiska produkcyjnego.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d506a6fbeb7e88dc6b1709203bc0822b1f4dc0f8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8162797256e221192dc3e1a12aa145e28d5bc0f5
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339540"
 ---
-
 # <a name="job-scheduling"></a>Planowanie zadań
 
 [!include [banner](../includes/banner.md)]
@@ -75,7 +74,6 @@ Zasoby są przydzielane do zadań w wyniku planowania zadań. Istnieje możliwo�
 
 ## <a name="resource-efficiency"></a>Wydajność zasobów
 Planowanie zadań bierze pod uwagę procenty wydajności określone dla zasobów. Procenty wydajności skracają lub wydłużają czas rezerwowany dla zasobu. W konsekwencji czas realizacji jest również skracany lub wydłużany. Do obliczania używana jest następująca formuła: czas planowania = czas × 100 ÷ procent wydajności. W tej formule *czas* obejmuje zarówno czas procesu, jak czasu konfigurowania.
-
 
 
 

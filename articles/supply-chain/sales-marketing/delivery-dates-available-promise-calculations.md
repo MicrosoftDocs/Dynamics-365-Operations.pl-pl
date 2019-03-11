@@ -1,13 +1,13 @@
 ---
-title: "Zobowiązanie do zamówienia"
-description: "Ten artykuł zawiera informacje o zobowiązaniach zamówień. Zobowiązania zamówień pomagają wiarygodnie deklarować daty dostawy odbiorcom oraz wprowadzają elastyczność umożliwiającą dotrzymanie tych terminów."
+title: Zobowiązanie do zamówienia
+description: Ten artykuł zawiera informacje o zobowiązaniach zamówień. Zobowiązania zamówień pomagają wiarygodnie deklarować daty dostawy odbiorcom oraz wprowadzają elastyczność umożliwiającą dotrzymanie tych terminów.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesATP, SalesAvailableDlvDates
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ad70e94521fdb8c6d3f9a76a84aa9da5759fcf89
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 039bc5c572d204d9fa3e10a9f33cb4f4eb00b31c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312354"
 ---
-
 # <a name="order-promising"></a>Zobowiązanie do zamówienia
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,6 @@ Tworzysz wiersz zamówienia sprzedaży dla produktu i wprowadzasz ilość **150*
 Ponieważ metodą kontroli daty dostawy jest ATP, obliczana jest data ATP, aby ustalić najwcześniejszą możliwą datę wysyłki. Na podstawie ustawień opóźnione zamówienie zakupu i zamówienie sprzedaży są uwzględniane i otrzymana ilość ATP dla bieżącej daty wynosi 0. Następnego dnia, gdy towary z opóźnionego zamówienia zakupu mają zostać odebrane, ilość ATP jest obliczana jako większa niż 0 (w tym przypadku wynosi 125). Jednak 10 dni od teraz, kiedy oczekuje się przyjęcia towarów z dodatkowego zamówienia zakupu na 100 sztuk towaru, ilość ATP jest większa niż 150.  
 
 Z tego powodu data wysyłki jest ustawiana na 10 dni od teraz na podstawie obliczeń ATP. Teraz można powiedzieć odbiorcy, że żądana ilość towaru może zostać dostarczona 10 dni od teraz.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Modyfikowanie formatów przez ponowne zastosowanie szablonów programu Excel"
-description: "W celu wykonania kroków w tej procedurze należy najpierw wykonać procedurę „ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML”."
+---
+title: Modyfikowanie formatów przez ponowne zastosowanie szablonów programu Excel
+description: W celu wykonania kroków w tej procedurze należy najpierw wykonać procedurę „ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML”.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 3d5752caba9327475bb28c7bc6b0ee7e072f44f3
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327120"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Modyfikowanie formatów przez ponowne zastosowanie szablonów programu Excel
 
@@ -83,5 +83,4 @@ W tej procedurze wyjaśniono sposób modyfikowania konfiguracji formatu raportow
 
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Używanie zmodyfikowanej wersji roboczej formatu ER w przetwarzaniu arkusza płatności
     * Przejrzyj utworzony arkusz, w tym nowy szczegół wierszy płatności — datę płatności.  
-
 

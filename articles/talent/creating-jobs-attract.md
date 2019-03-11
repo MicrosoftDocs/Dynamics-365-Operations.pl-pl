@@ -1,37 +1,36 @@
 ---
 title: Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract
-description: "W tym temacie opisano elementy funkcji w aplikacji Attract. Ponadto wyjaśniono, jak utworzyć funkcję."
+description: W tym temacie opisano elementy funkcji w aplikacji Attract. Ponadto wyjaśniono, jak utworzyć funkcję.
 author: josaw
 manager: AnnBe
 ms.date: 12/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
 ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/23/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305813"
 ---
-
 # <a name="create-approve-and-post-jobs-in-attract"></a>Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano elementy funkcji w aplikacji Microsoft Dynamics 365 for Talent Attract. Ponadto wyjaśniono, jak utworzyć funkcję.
+W tym temacie opisano elementy funkcji w Microsoft Dynamics 365 for Talent: Attract. Ponadto wyjaśniono, jak utworzyć funkcję.
 
 ## <a name="job-creation"></a>Tworzenie funkcji
 
@@ -45,7 +44,7 @@ Karta **Szczegóły funkcji** zawiera szczegółowe informacje o obowiązkach w 
 
 Domyślnie pole **Liczba wolnych posad** jest ustawione na **1**. Można jednak zmienić jego wartość. Po przygotowaniu oferty na funkcję wartość pola **Liczba dostępnych wolnych posad** jest zmniejszana.
 
-Jeśli w Centrum administracyjnym włączono funkcję zarządzanie stanowiska, jest dostępna opcja wyszukiwania **Aktualizuj stanowiska**. Funkcja wyszukiwania odczytuje jednostkę JobPosition w usłudze Common Data Service dla aplikacji i zwraca listę stanowisk, które można wybrać dla funkcji. Jeśli wybrana liczba stanowisk przekracza liczbę otwartych stanowisk, pojawi się ostrzeżenie. Otrzymasz również ostrzeżenie, jeśli stanowisko jest używane w wielu funkcjach.
+Jeśli w Centrum administracyjnym włączono funkcję zarządzanie stanowiska, jest dostępna opcja wyszukiwania **Aktualizuj stanowiska**. Funkcja wyszukiwania odczytuje jednostkę JobPosition w Common Data Service for Apps i zwraca listę stanowisk, które można wybrać dla funkcji. Jeśli wybrana liczba stanowisk przekracza liczbę otwartych stanowisk, pojawi się ostrzeżenie. Otrzymasz również ostrzeżenie, jeśli stanowisko jest używane w wielu funkcjach.
 
 > [!NOTE]
 > Funkcja zarządzania stanowiskami jest dostępna po zainstalowaniu dodatku kompleksowej obsługi rekrutacji.
@@ -75,7 +74,7 @@ Aby uzyskać więcej informacji o działaniach, które można dodawać do proces
 
 ## <a name="postings"></a>Księgowania
 
-Po uaktywnieniu funkcji można ją opublikować. Tylko osoby rekrutujące i menedżerowie zatrudniający mogą publikować funkcje. Funkcję można opublikować w witrynie Talent Careers (witrynie rozwoju kariery wewnątrz aplikacji Microsoft Dynamics 365 for Talent) lub serwisie LinkedIn. 
+Po uaktywnieniu funkcji można ją opublikować. Tylko osoby rekrutujące i menedżerowie zatrudniający mogą publikować funkcje. Funkcję można opublikować w witrynie Talent Careers (witrynie rozwoju kariery wewnątrz Microsoft Dynamics 365 for Talent) lub serwisie LinkedIn. 
 
 > [!NOTE]
 > Istnieją trzy ważne zagadnienia, o których należy pamiętać w procesie publikowania zadania w portalu LinkedIn.
@@ -127,7 +126,7 @@ Po zapisaniu funkcji można ją przesłać do zatwierdzenia. W poniższej tabeli
 
 Na liście funkcji można filtrować według stanów funkcji.
 
-Zatwierdzenia mogą być wysyłane do dowolnego użytkownika usługi Microsoft Azure Active Directory (Azure AD) w firmie. Zatwierdzenia są wysyłane jednocześnie do wszystkich osób wyszczególnionych jako osoby zatwierdzające. Po zatwierdzeniu funkcji można ją aktywować.
+Zatwierdzenia mogą być wysyłane do dowolnego użytkownika Microsoft Azure Active Directory (Azure AD) w firmie. Zatwierdzenia są wysyłane jednocześnie do wszystkich osób wyszczególnionych jako osoby zatwierdzające. Po zatwierdzeniu funkcji można ją aktywować.
 
 Osoby wyświetlane jako osoby zatwierdzające otrzymają powiadomienie w aplikacji Attract informujące, że mają pozycję do zatwierdzenia. Pozycja do zatwierdzenia pojawi się także w sekcji **Przypisane do Ciebie** na pulpicie nawigacyjnym. Gdy ktoś zaakceptuje lub zatwierdzi funkcję, zespół rekrutacyjny otrzyma powiadomienie. Na koniec zespół rekrutacyjny otrzyma powiadomienie po zatwierdzeniu funkcji.
 
@@ -169,4 +168,3 @@ Aby utworzyć funkcję, należy wykonać poniższe kroki.
 
 13. Aby aktywować funkcję, wybierz opcję **Aktywuj**.
 14. Aby opublikować funkcję, przejdź do okna **Oferty**, a następnie wybierz opcję **Opublikuj teraz** w sekcji witryny Talent Carriers lub serwisu LinkedIn.
-

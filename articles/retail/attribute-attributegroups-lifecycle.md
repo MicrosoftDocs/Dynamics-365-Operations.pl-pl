@@ -1,37 +1,36 @@
 ---
-title: "Atrybuty i grupy atrybutów"
-description: "W tym temacie opisano, jak za pomocą atrybutów stworzyć możliwość opisywania produktu i jego cech za pomocą pól definiowanych przez użytkownika."
+title: Atrybuty i grupy atrybutów
+description: W tym temacie opisano, jak za pomocą atrybutów stworzyć możliwość opisywania produktu i jego cech za pomocą pól definiowanych przez użytkownika.
 author: ashishmsft
 manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326246"
 ---
-
 # <a name="attributes-and-attribute-groups"></a>Atrybuty i grupy atrybutów
 
 [!include [banner](includes/banner.md)]
 
-*Atrybuty* umożliwiają dokładniejsze opisanie produktu i jego właściwości za pomocą pól zdefiniowanych przez użytkownika (takich jak **Rozmiar pamięci**, **Pojemność dysku twardego**, **Zgodność z normą Energy Star** i tak dalej). W programie Microsoft Dynamics 365 for Finance and Operations atrybuty można skojarzyć z różnymi jednostkami modułu Retail, takimi jak kategorie produktów i kanały sprzedaży detalicznej, oraz ustawić im wartości domyślne. Wtedy produkty dziedziczą atrybuty i wartości domyślne, gdy zostaną powiązane z kategoriami produktów lub kanałami sprzedaży detalicznej. Wartości domyślne można zastąpić na poziomie poszczególnych produktów, na poziomie kanału sprzedaży detalicznej lub w katalogu sieci sprzedaży.
+*Atrybuty* umożliwiają dokładniejsze opisanie produktu i jego właściwości za pomocą pól zdefiniowanych przez użytkownika (takich jak **Rozmiar pamięci**, **Pojemność dysku twardego**, **Zgodność z normą Energy Star** i tak dalej). W Microsoft Dynamics 365 for Finance and Operations atrybuty można skojarzyć z różnymi jednostkami sprzedaży detalicznej, takimi jak kategorie produktu i kanały handlu detalicznego oraz ustawić ich wartości domyślne. Wtedy produkty dziedziczą atrybuty i wartości domyślne, gdy zostaną powiązane z kategoriami produktów lub kanałami sprzedaży detalicznej. Wartości domyślne można zastąpić na poziomie poszczególnych produktów, na poziomie kanału sprzedaży detalicznej lub w katalogu sieci sprzedaży.
 
 Na przykład typowy produkt w postaci telewizora może mieć następujące atrybuty.
 
@@ -257,4 +256,3 @@ Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów 
 
     > [!NOTE]
     > Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.
-

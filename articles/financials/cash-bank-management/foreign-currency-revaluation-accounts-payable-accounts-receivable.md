@@ -1,13 +1,13 @@
 ---
-title: "Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami"
-description: "Wahania kursów wymiany powodują, że wartość teoretyczna (wartość księgowa) otwartych transakcji w walutach obcych zmienia się w czasie. Ten artykuł zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami."
+title: Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami
+description: Wahania kursów wymiany powodują, że wartość teoretyczna (wartość księgowa) otwartych transakcji w walutach obcych zmienia się w czasie. Ten artykuł zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: da1aee4c678cb4786d52abc81b787edceaa5aa38
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 259b487b0f11b19af9609d63f12114dcaa61be52
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341334"
 ---
-
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,6 @@ Po każdym uruchomieniu przeszacowania w walucie obcej jest wprowadzany zapis. Z
     -   **Brak** — nie są księgowane żadne wymiary finansowe. Jeśli w strukturze konta wymagany jest wymiar finansowy, proces przeszacowania jest nadal aktywny i tworzy wpisy księgowe bez wymiarów finansowych. Otrzymasz najpierw wiadomość z ostrzeżeniem, co pozwala anulować przeszacowanie.
     -   **Tabela** — oznacza, że wymiary finansowe konta odbiorcy lub dostawcy zostały zaksięgowane w przypadku transakcji z przeszacowaniem w walucie obcej.
     -   **Zaksięgowanie** — oznacza, że wymiary finansowe przeszacowywanej transakcji zostały zaksięgowane w transakcjach z przeszacowaniem w walucie obcej. Domyślnie wymiary finansowe konta księgowego rozrachunków z dostawcami/rozrachunków z odbiorcami oryginalnych transakcji będą używane do ponownego przeszacowania konta głównego rozrachunków z dostawcami/rozrachunków z odbiorcami transakcji przeszacowania, a wymiary finansowe konta głównego wydatków/środków trwałych/zysków oryginalnej transakcji będą używane do konta głównego niezrealizowanej dodatniej różnicy kursowej/straty transakcji przeszacowania.
-
 
 
 

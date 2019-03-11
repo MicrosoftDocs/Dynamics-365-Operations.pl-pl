@@ -1,37 +1,36 @@
 ---
 title: Integracja z programem Microsoft Dynamics 365 for Field Service
-description: "Ten temat zawiera omówienie integracji z programem Microsoft Dynamics 365 for Field Service."
+description: Ten temat zawiera omówienie integracji z programem Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/25/2018
+ms.date: 02/05/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: d636e77888fff383849b3a91bf643475a6d516ac
+ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
 ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
-ms.openlocfilehash: 673ab2a101cee1a3dbbb1249f582d959cecc7f7f
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/23/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377885"
 ---
-
 # <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integracja z programem Microsoft Dynamics 365 for Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Program Microsoft Dynamics 365 for Finance and Operations umożliwia synchronizowanie procesów biznesowych między programami Finance and Operations a Microsoft Dynamics 365 for Field Service. Scenariusze integracji konfiguruje się przy użyciu rozszerzalnych szablonów integratora danych oraz usługi Common Data Service (CDS), co umożliwia synchronizowanie procesów biznesowych.
+Program Microsoft Dynamics 365 for Finance and Operations umożliwia synchronizowanie procesów biznesowych między programami Microsoft Dynamics 365 for Field Service. Scenariusze integracji konfiguruje się przy użyciu rozszerzalnych szablonów integratora danych oraz usługi Common Data Service (CDS), co umożliwia synchronizowanie procesów biznesowych.
 Można używać standardowych szablonów do tworzenia niestandardowych projektów integracji, gdzie dodatkowe pola standardowe i niestandardowe, a także jednostki, mogą być mapowane w celu skorygowania integracji i spełnienia określonych wymagań biznesowych. 
 
 Integracja z rozwiązaniem Field Service opiera się na istniejących funkcjach Od prospekta do środków pieniężnych.
@@ -46,25 +45,9 @@ Pierwsza faza integracji między programami Field Service i Finance and Operatio
 - [Zlecenia pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Finance and Operations](field-service-work-order.md)
 - [Faktury w programie Field Service z fakturami niezależnymi w programie Finance and Operations](field-service-invoice.md)
 
-Aby zobaczyć przykład jak synchronizować zlecenie produkcyjne między Field Service a Finance and Operations, zobacz krótki film w serwisie YouTube [Jak zsynchronizować zlecenie pracy za pomocą mechanizmu integracji z rozwiązaniem **7](https://www.youtube.com/watch?v=46ylO7raZAo).
+Aby zobaczyć przykład jak synchronizować zlecenie produkcyjne między Field Service a Finance and Operations, zobacz krótki film w serwisie YouTube [Jak zsynchronizować zlecenie pracy za pomocą mechanizmu integracji z rozwiązaniem Microsoft Dynamics 365](https://www.youtube.com/watch?v=46ylO7raZAo)
 
-## <a name="system-requirements-for-finance-and-operations"></a>Wymagania systemowe dla rozwiązania Finance and Operations
-Program Field Service można integrować z następującymi wersjami:
-
-### <a name="dynamics-365-for-finance-and-operations-version-80-april-2018-or-later"></a>Dynamics 365 for Finance and Operations w wersji 8.0 (kwiecień 2018) i nowszych
-
-- Program Dynamics 365 for Finance and Operations w wersji 8.0 (kwiecień 2018) został wydany w kwietniu 2018 r. i ma numer kompilacji aplikacji 8.0.30.8020 oraz aktualizację Platform Update 15 (7.0.4841.35234). 
-
-## <a name="system-requirements-for-field-service"></a>Wymagania systemowe programu Field Service
-Aby korzystać z rozwiązania integracyjnego Field Service, należy zainstalować następujące składniki:
-
-### <a name="microsoft-dynamics-365-for-field-service-90-or-later"></a>Microsoft Dynamics 365 for Field Service 9.0 lub nowszy
-
-- Dynamics 365 for Field Service wersja 1612 (9.0.1.733) (DB 9.0.1.733) online lub nowsza.
-- Rozwiązanie Prospekt na gotówkę (P2C) dla programu Dynamics 365, wersja 1.15.0.1 lub nowsza. To rozwiązanie jest dostępne do pobrania z usługi [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-- Rozwiązanie integracyjne Field Service dla programu Dynamics 365, wersja 1.0.0.0 lub nowsza. To rozwiązanie jest dostępne do pobrania z usługi [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegration).
-
-# <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>Integracja z programem Microsoft Dynamics 365 for Field Service, w tym informacje i zapasach i projektach
+## <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>Integracja z programem Microsoft Dynamics 365 for Field Service, w tym informacje i zapasach i projektach
 
 Dodatkowe funkcje w tej drugiej fazie koncentrują się na zapewnieniu serwisantom w terenie informacji o zapasach z Finance and Operations, umożliwiając im aktualizowanie poziom zapasów i przenoszenie materiałów. Ponadto firmy instalujące lub serwisujące sprzedawane towary skorzystają na lepszej kontroli i widoczności pełnego procesu sprzedaży i serwisowania z integracją z projektów.
 
@@ -87,15 +70,16 @@ Dodatkowe funkcje w tej drugiej fazie koncentrują się na zapewnieniu serwisant
 - Zlecenia z projektem (Field Service do Fin and Ops) - Zlecenia w Field Service do zamówień sprzedaży w Finance and Operations z obsługą projektu [Zaawansowane zapytanie] 
 - Produkty Field Service z jednostką magazynową (Fin and Ops do Sales) - 'Zwolnione produkty możliwe do sprzedaży' Finance and Operations do 'Produksty' Sales dla Field Service, w tym jednostka magazynowa 
 
-## <a name="system-requirements-for-finance-and-operations"></a>Wymagania systemowe dla rozwiązania Finance and Operations
+## <a name="system-requirements"></a>Wymagania systemowe
+
+### <a name="system-requirements-for-finance-and-operations"></a>Wymagania systemowe dla rozwiązania Finance and Operations
 Program Field Service można integrować z następującymi wersjami:
 
 - Program Dynamics 365 for Finance and Operations w wersji 8.1.2 (grudzień 2019) został wydany w grudniu 2019 r. i ma numer kompilacji aplikacji 8.1.195 oraz aktualizację Platform Update 22 (7.0.5095). 
 
-## <a name="system-requirements-for-field-service"></a>Wymagania systemowe programu Field Service
+### <a name="system-requirements-for-field-service"></a>Wymagania systemowe programu Field Service
 Aby korzystać z rozwiązania integracyjnego Field Service, należy zainstalować następujące składniki:
 
 - Field Service for Dynamics 365 (wersja 8.2.0.286) lub nowsza wersja w programie Dynamics 365 9.1.x - z listopada 2018
 - Rozwiązanie Prospekt na gotówkę (P2C) dla programu Dynamics 365, wersja 1.15.0.1 lub nowsza. To rozwiązanie jest dostępne do pobrania z usługi [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
 - Rozwiązanie 'Field Service Integration, Project and Inventory' dla programu Dynamics 365, wersja 2.0.0.0 lub nowsza. To rozwiązanie jest dostępne do pobrania z usługi [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
-

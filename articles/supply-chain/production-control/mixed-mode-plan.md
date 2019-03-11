@@ -1,13 +1,13 @@
 ---
-title: "Planowanie w trybie mieszanym — łączenie sourcingu dyskretnego, procesowego i produkcji oszczędnej"
+title: Planowanie w trybie mieszanym — łączenie sourcingu dyskretnego, procesowego i produkcji oszczędnej
 description: Ten temat zawiera informacje o mieszanym trybie planowania.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e6a896b2a073e189b956ef189f63908f08606ed
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bb8fa816d48ee808b92a5bf80c2c39c51f33a195
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358239"
 ---
-
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Planowanie w trybie mieszanym — łączenie sourcingu dyskretnego, procesowego i produkcji oszczędnej
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o mieszanym trybie planowania. W planowaniu w trybie mieszanym można modelować łańcuch dostaw na podstawie przepływu materiałów. Program Microsoft Dynamics 365 for Finance and Operations zapewnia, że przepływ materiałów następuje zgodnie z modelami, bez względu na wybrane zasady dostawy (karty Kanban, zlecenia produkcyjne, zamówienia zakupu, szarże produkcyjne lub zamówienia przeniesienia). 
+Ten temat zawiera informacje o mieszanym trybie planowania. W planowaniu w trybie mieszanym można modelować łańcuch dostaw na podstawie przepływu materiałów. Microsoft Dynamics 365 for Finance and Operations zapewnia, że przepływ materiałów następuje zgodnie z modelami, bez względu na wybrane zasady dostawy (karty Kanban, zlecenia produkcyjne, zamówienia zakupu, szarże produkcyjne lub zamówienia przeniesienia). 
 
 Można wybrać ogólną strategię dostarczania produktów, niezależnie od struktury produktów.  
 
@@ -67,7 +66,6 @@ Dla pracy, która jest niezależna od zasad dostaw, nie trzeba zmieniać informa
 
 ## <a name="process-manufacturing--the-production-type"></a>Produkcja procesowa — typ produkcji
 Aby zapewnić pełną elastyczność w trybie mieszanym, zalecamy używanie produkcyjnych list BOM dla wszystkich produktów. Można następnie używać tych zleceń produkcyjnych, kart Kanban, zleceń przeniesienia lub zamówień zakupu do dostarczenia produktu. Dla produkcji procesowej należy użyć typu produkcji **Formuła**, **Produkt towarzyszący**, **produkt uboczny** lub **Element planowania**. Karty Kanban i zamówienia produkcyjne nie mogą być używane do tych typów produkcji.
-
 
 
 

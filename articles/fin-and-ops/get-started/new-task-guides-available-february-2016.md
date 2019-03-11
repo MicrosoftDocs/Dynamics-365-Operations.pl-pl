@@ -1,13 +1,13 @@
 ---
 title: Nowe przewodniki po zadaniach (luty 2016 r.)
-description: "Ten temat przedstawia listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r.  Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla programu Microsoft Dynamics 365 for Operations oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.)."
+description: Ten temat przedstawia listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r.  Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla usługi Microsoft Dynamics 365 for Operations oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.).
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 87384bae08e3fa78ef3deb3830583b16b9d9d6ac
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366450"
 ---
-
 # <a name="new-task-guides-february-2016"></a>Nowe przewodniki po zadaniach (luty 2016 r.)
 
 [!include [banner](../includes/banner.md)]
 
 Ten temat przedstawia listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r. Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla systemu Microsoft Dynamics AX oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.).
 
-## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z lutego 2016 r.) dla systemu Microsoft Dynamics AX
+## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z lutego 2016 r.) dla Microsoft Dynamics AX
 
 Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach, które przewidziano jako pomoc dla systemu Dynamics AX w wersji 7.0.0. Jeśli potrzebujesz zlokalizowanych wersji tych przewodników po zadaniach, są one dostępne w ujednoliconej bibliotece APQC (z maja 2016 r.) dla systemu Microsoft Dynamics AX. Aby uzyskać więcej informacji na temat sposobu łączenia systemu pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).
 
@@ -647,4 +646,3 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 [Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)](new-updated-task-guides-available-august-2016.md)
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
-

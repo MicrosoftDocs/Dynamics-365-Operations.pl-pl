@@ -1,13 +1,13 @@
 ---
-title: "Rejestrowanie numerów seryjnych w procesie sprzedaży"
-description: "Ten temat wyjaśnia sposób rejestrowania numerów seryjnych na dokumentach dostawy i fakturach w procesie sprzedaży. Ta funkcja jest przydatna, gdy firma chce zapisywać numery seryjne na potrzeby serwisu i gwarancji, ale nie chce nimi zarządzać w zapasach na etapach od przyjęcia do wydania."
+title: Rejestrowanie numerów seryjnych w procesie sprzedaży
+description: Ten temat wyjaśnia sposób rejestrowania numerów seryjnych na dokumentach dostawy i fakturach w procesie sprzedaży. Ta funkcja jest przydatna, gdy firma chce zapisywać numery seryjne na potrzeby serwisu i gwarancji, ale nie chce nimi zarządzać w zapasach na etapach od przyjęcia do wydania.
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e86c2f8d1d5920198db74dc3b64f2393c5e13ff7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350419"
 ---
-
 # <a name="register-serial-numbers-in-the-sales-process"></a>Rejestrowanie numerów seryjnych w procesie sprzedaży
 
 [!include [banner](../includes/banner.md)]
@@ -58,8 +57,8 @@ Jeśli numeru seryjnego nie można odczytać ani zeskanować, można utworzyć p
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Czy można poprawić lub zmienić numery seryjne, które zostały zarejestrowane dla zamówienia sprzedaży?
 Tak, można poprawić numery seryjne, o ile spełnione są następujące warunki:
--   **Faktury** — można zmienić numery seryjnych dla towarów, które nie zostały jeszcze zafakturowane. Dokument dostawcy jest również aktualizowany. Jednak, jeśli wiersz zamówienia sprzedaży został poprawiony poprzez rejestrację ilości ujemnej, nie można zmienić numerów seryjnych dla wiersza zamówienia sprzedaży.
--   **Dokumenty dostawy** — nie można częściowo zmieniać wiersza dokumentu dostawy, który zawiera towary seryjne. Musisz wycofać pełną ilość dla wiersza. Jeśli dokument dostawy został anulowany lub skorygowany, nie trzeba ponownie zarejestrować wycofanych numerów seryjnych podczas tworzenia nowego dokumentu dostawy dla tych samych zapasów seryjnych. Zostaną użyte liczby, które zostały zarejestrowane.
+-   **Faktury** — można zmienić numery seryjnych dla towarów, które nie zostały jeszcze zafakturowane. Dokument dostawcy jest również aktualizowany. Jednak, jeśli wiersz zamówienia sprzedaży został poprawiony poprzez rejestrację ilości ujemnej, nie można zmienić numerów seryjnych dla wiersza zamówienia sprzedaży.
+-   **Dokumenty dostawy** — nie można częściowo zmieniać wiersza dokumentu dostawy, który zawiera towary seryjne. Musisz wycofać pełną ilość dla wiersza. Jeśli dokument dostawy został anulowany lub skorygowany, nie trzeba ponownie zarejestrować wycofanych numerów seryjnych podczas tworzenia nowego dokumentu dostawy dla tych samych zapasów seryjnych. Zostaną użyte liczby, które zostały zarejestrowane.
 
 ## <a name="can-i-view-the-serial-numbers-that-were-shipped-together-with-a-specific-packing-slip-or-that-were-included-on-an-invoice"></a>Czy można wyświetlać numery seryjne, które zostały wysłane razem z określonym dokumentem dostawy lub zostały uwzględnione na fakturze?
 Tak, można uruchomić zapytanie na wierszu arkusza dokumentu dostawy lub wierszy arkusza faktury w celu wyświetlenia listy wszystkich numerów seryjnych, które zostały uwzględnione w dokumencie.
@@ -78,7 +77,6 @@ Tak, w punkcie sprzedaży sieci sprzedaży będzie wyświetlany monit o wprowadz
 Ta funkcjonalność jest dostępna dla wszystkich ról, które mogą obsługiwać dokumenty dostawy sprzedaży i faktury sprzedaży. Poniższe obowiązki umożliwiają pracownikom korygowanie numerów seryjnych i rejestrowanie pustych wpisów dla numerów seryjnych, których nie można odczytać lub zeskanować:
 -   Obsługa korekt numerów seryjnych
 -   Obsługa rejestracji nieczytelnych numerów seryjnych
-
 
 
 

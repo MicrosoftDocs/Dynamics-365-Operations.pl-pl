@@ -1,13 +1,13 @@
 ---
-title: "Prognozy dotyczące stanowisk"
-description: "Wydatki, które dotyczą pracowników, często stanowią znaczną część kosztów organizacji. Prognozowanie stanowisk umożliwia planowanie tych wydatków i uwzględnianie ich w planowaniu budżetu."
+title: Prognozy dotyczące stanowisk
+description: Wydatki, które dotyczą pracowników, często stanowią znaczną część kosztów organizacji. Prognozowanie stanowisk umożliwia planowanie tych wydatków i uwzględnianie ich w planowaniu budżetu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmPositionForecast
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bcd7363ba50f1c3a20d9823333df65eab9868d67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356169"
 ---
-
 # <a name="position-forecasting"></a>Prognozy dotyczące stanowisk
 
 [!include [banner](../includes/banner.md)]
@@ -94,7 +93,7 @@ Składnik kosztu typu dochodowego, który jest zaznaczony w grupie wynagrodzeń,
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Tworzenie stanowisk podlegających prognozie dla istniejących stanowisk
 
-W celu uzyskania jak najdokładniejszego planu budżetu można utworzyć stanowiska prognozy za pomocą szczegółów z istniejących stanowisk w programie Microsoft Dynamics 365 for Finance and Operations, bez względu na to, czy stanowisko w danej chwili zajęte, czy wolne. 
+W celu uzyskania jak najdokładniejszego planu budżetu można utworzyć stanowiska prognozy za pomocą szczegółów z istniejących stanowisk w Microsoft Dynamics 365 for Finance and Operations, bez względu na to, czy stanowisko w danej chwili zajęte czy wolne. 
 
 Funkcja **Dodaj istniejące stanowiska** pokazuje wszystkie pozycje dla organizacji. Wybierając datę **Na dzień**, można zmienić listę stanowisk w taki sposób, aby zawierała stanowiska, które istniały na dzień w przeszłości lub, co zdarza się częściej, w przyszłości (np. na początku następnego cyklu budżetowego). Wybierz proces planowania budżetu i scenariusz planu budżetu, wybierz stanowiska na liście, a następnie kliknij **OK**, aby utworzyć stanowisk podlegające prognozie dla wybranych stanowisk. Pamiętaj, że możesz utworzyć tylko jedno stanowiska podlegające prognozie dla każdego istniejącego stanowiska w procesie planowania budżetu i scenariuszu. Można jednak utworzyć dodatkowe wersje, przypisują różne scenariusze planu budżetu. 
 
@@ -216,7 +215,6 @@ Zarówno dla procesu generowania, jak i dla procesu wyboru, data początkowa wie
 Wiersze planu budżetu pokazują źródło kwot budżetu (liczba stanowiska podlegającego prognozie), ale nie są połączone. Dlatego zmiany stanowiska podlegającego prognozie nie są wyświetlane w wierszu planu budżetu, a zmiany wiersza planu budżetu są widoczne w stanowisku podlegającym prognozie. W przypadku zmiany stanowiska podlegającego prognozie i jeśli aktualizacje mają być ujęte w planie budżetu, trzeba ponownie umieścić stanowisko podlegające prognozie w planie. Należy jednak pamiętać, że ten proces usuwa wszystkie wiersze, którym przypisano to stanowiska podlegającego prognozie. Dlatego wszelkie zmiany wprowadzone w tych wierszach są usuwane. 
 
 Aby wyświetlić, do których planach budżetowych dodano stanowisko podlegające prognozie, można wygenerować raport **Pozycje prognozy według planów budżetu**. Ewentualnie na stanowisku podlegającym prognozie można otworzyć skróconą kartę **Skojarzone plany budżetu**, aby wyświetlić plany.
-
 
 
 

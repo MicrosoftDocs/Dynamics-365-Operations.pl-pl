@@ -1,13 +1,13 @@
---- 
-title: "Ręczne modyfikowanie prognozy popytu"
-description: "W tej procedurze pokazano sposób modyfikowania prognozy dla towaru."
+---
+title: Ręczne modyfikowanie prognozy popytu
+description: W tej procedurze pokazano sposób modyfikowania prognozy dla towaru.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, ForecastSales
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 063554c98b8a6261ebe69073f214a8e45850c623
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2e269ef7b33b4d7e171d284d68d28c825c2fe86c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323601"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Ręczne modyfikowanie prognozy popytu
 
@@ -43,8 +43,7 @@ W tej procedurze pokazano sposób modyfikowania prognozy dla towaru. Dane wykorz
 7. Kliknij przycisk Zapisz.
 
 ## <a name="modify-the-forecast-in-excel"></a>Modyfikowanie prognozy w programie Excel
-1. Kliknij opcję Otwórz w pakiecie Microsoft Office.
+1. Kliknij przycisk Otwórz w Microsoft Office.
 2. Kliknij opcję Edytuj prognozę popytu w programie Excel.
     * W programie Excel można dodawać, usuwać i edytować wiersze prognozy popytu. Jeśli nie widzisz danych w programie Excel, musisz się zalogować do programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z włączoną opcją „Nie wylogowuj mnie” i zaufać aplikacji połączenia danych.  
-
 

@@ -1,13 +1,13 @@
 ---
 title: Projektowanie kwestionariuszy
-description: "W tym temacie opisano proces tworzenia kwestionariusza. Pierwszym krokiem jest projektowanie kwestionariusza. Przy projektowaniu kwestionariusza, można nie tylko zapisać pytania i odpowiedzi, ale również utworzyć strukturę, która umożliwia rejestrowanie odpowiedzi i umieszczanie ich w tabelach."
+description: W tym temacie opisano proces tworzenia kwestionariusza. Pierwszym krokiem jest projektowanie kwestionariusza. Przy projektowaniu kwestionariusza, można nie tylko zapisać pytania i odpowiedzi, ale również utworzyć strukturę, która umożliwia rejestrowanie odpowiedzi i umieszczanie ich w tabelach.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: cd13fa1c424d1769b356d90012b187a77473473d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305798"
 ---
-
 # <a name="design-questionnaires"></a>Projektowanie kwestionariuszy
 
 [!include [banner](includes/banner.md)]
@@ -94,7 +93,7 @@ Kody sekwencji numerów służą do organizowania pytań i odpowiedzi. W oparciu
 Wszystkie parametry należy zdefiniować przed rozpoczęciem tworzenia danych. Można zmodyfikować ustawienia parametrów kwestionariusza w dowolnym momencie.
 
 ## <a name="questionnaire-components"></a>Składniki kwestionariusza
-Kwestionariusze obejmują trzy główne elementy: grupy odpowiedzi zawierające odpowiedzi dla pytań wielokrotnego wyboru, pytania oraz sam kwestionariusz. Opcjonalnie można grupować pytania w kwestionariuszu w grupy wyników. Grupy wyników umożliwiają podziału pytań na kategorie i dostarczania dalszych analiz w kwestionariuszu. 
+Kwestionariusze obejmują trzy główne elementy: grupy odpowiedzi zawierające odpowiedzi dla pytań wielokrotnego wyboru, pytania oraz sam kwestionariusz. Opcjonalnie można grupować pytania w kwestionariuszu w grupy wyników. Grupy wyników umożliwiają podziału pytań na kategorie i dostarczania dalszych analiz w kwestionariuszu. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -238,5 +237,4 @@ Alternatywnie można ustawić kwestionariusz tak, że jeśli respondent wybierz 
 [Dystrybucja i wypełnianie kwestionariuszy](distribute-questionnaires.md)
 
 [Wyświetlanie i ocena wyników kwestionariuszy](evaluate-questionnaire-results.md)
-
 

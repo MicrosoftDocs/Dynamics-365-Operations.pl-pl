@@ -1,13 +1,13 @@
 ---
-title: "Określenia optymalnej kombinacji rabatów nakładających się"
-description: "Gdy rabaty się nakładają, należy określić taką kombinację nakładających się rabatów, która wygeneruje najniższą sumę transakcji lub najwyższy rabat końcowy. Gdy kwota rabatu różni się zależności od cen kupowanych produktów, taki jak w popularnym rabacie detalicznym „Kup 1, drugi dostaniesz X procent taniej” (BOGO), ten proces staje się zagadnieniem optymalizacji kombinatorycznej."
+title: Określenia optymalnej kombinacji rabatów nakładających się
+description: Gdy rabaty się nakładają, należy określić taką kombinację nakładających się rabatów, która wygeneruje najniższą sumę transakcji lub najwyższy rabat końcowy. Gdy kwota rabatu różni się zależności od cen kupowanych produktów, taki jak w popularnym rabacie detalicznym „Kup 1, drugi dostaniesz X procent taniej” (BOGO), ten proces staje się zagadnieniem optymalizacji kombinatorycznej.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: eebb532071e7c6bae7cfae93bfe795e79bb16c63
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360700"
 ---
-
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Określenia optymalnej kombinacji rabatów nakładających się
 
 [!include [banner](includes/banner.md)]
 
 Gdy rabaty się nakładają, należy określić taką kombinację nakładających się rabatów, która wygeneruje najniższą sumę transakcji lub najwyższy rabat końcowy. Gdy kwota rabatu różni się zależności od cen kupowanych produktów, taki jak w popularnym rabacie detalicznym „Kup 1, drugi dostaniesz X procent taniej” (BOGO), ten proces staje się zagadnieniem optymalizacji kombinatorycznej.
 
-Ten artykuł dotyczy systemu Microsoft Dynamics AX 2012 R3 z poprawką KB 3105973 (wydaną 2 listopada 2015 r.) i nowszych wersji oraz programu Microsoft Dynamics 365 for Retail. Aby umożliwić bezzwłoczne stosowanie kombinacji nakładających się rabatów, wprowadziliśmy metodę stosowania nakładających się rabatów. Nazywamy tę nową metodę **rankingiem wartości krańcowej**. Ranking wartości krańcowej jest stosowany w przypadku, gdy czas potrzebny do ocenienia możliwych kombinacji nakładających się rabatów przekracza próg skonfigurowany na stronie **Parametry sieci sprzedaży**. W metodzie rankingu wartości krańcowej wartość jest obliczana dla każdego nakładającego się rabatu poprzez użycie wartość rabatu ze wspólnych produktów. Nakładające się rabaty są następnie stosowane w porządku od najwyższej wartości względnej do najniższej wartości względnej. Szczegółowe informacje na temat nowej metody zawiera sekcja „Wartość krańcowa” w dalszej części tego artykułu. Ranking wartości krańcowej nie jest używany, gdy kwoty rabatów na produkt są całkowicie niezależne od innych produktów w transakcji. Na przykład ta metoda nie jest używana dla dwóch rabatów prostych ani dla rabatu prostego i rabatu ilościowego na jeden produkt.
+Ten artykuł dotyczy Microsoft Dynamics AX 2012 R3 z bazy wiedzy KB 3105973 (wersja z 2 listopada 2015 r.) lub nowszej, oraz Microsoft Dynamics 365 for Retail. Aby umożliwić bezzwłoczne stosowanie kombinacji nakładających się rabatów, wprowadziliśmy metodę stosowania nakładających się rabatów. Nazywamy tę nową metodę **rankingiem wartości krańcowej**. Ranking wartości krańcowej jest stosowany w przypadku, gdy czas potrzebny do ocenienia możliwych kombinacji nakładających się rabatów przekracza próg skonfigurowany na stronie **Parametry sieci sprzedaży**. W metodzie rankingu wartości krańcowej wartość jest obliczana dla każdego nakładającego się rabatu poprzez użycie wartość rabatu ze wspólnych produktów. Nakładające się rabaty są następnie stosowane w porządku od najwyższej wartości względnej do najniższej wartości względnej. Szczegółowe informacje na temat nowej metody zawiera sekcja „Wartość krańcowa” w dalszej części tego artykułu. Ranking wartości krańcowej nie jest używany, gdy kwoty rabatów na produkt są całkowicie niezależne od innych produktów w transakcji. Na przykład ta metoda nie jest używana dla dwóch rabatów prostych ani dla rabatu prostego i rabatu ilościowego na jeden produkt.
 
 ## <a name="discount-examples"></a>Przykłady rabatów
 
@@ -85,4 +84,3 @@ Aby rozwiązać problem lawinowo wzrastającej liczby kombinacji wymagających o
 ![Kombinacja nakładających się rabatów 06](./media/overlapping-discount-combo-06.jpg)
 
 Po obliczeniu wartości krańcowej każdego rabatu dla zbioru wspólnych produktów rabaty są stosowane do wspólnych produktów kolejno od najwyższej wartości krańcowej do najniższej wartości krańcowej. W przypadku tej metody wszystkie pozostałe możliwości rabatów nie są porównywane przy każdym stosowaniu jednego wystąpienia rabatu. Zamiast tego nakładające się rabaty są porównywane jeden raz, a następnie stosowane kolejno. Nie są wykonywane żadne inne porównania. Na stronie **Parametry sieci sprzedaży** na karcie **Rabat** można skonfigurować próg przełączania na metodę wartości krańcowej. Dopuszczalny czas na obliczenie rabatu końcowego różni się w poszczególnych branżach wykorzystujących sprzedaż detaliczną. Jednakże zasadniczo wynosi on od kilkudziesięciu milisekund do jednej sekundy.
-

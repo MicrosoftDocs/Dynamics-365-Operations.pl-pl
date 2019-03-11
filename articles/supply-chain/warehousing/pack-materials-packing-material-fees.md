@@ -1,13 +1,13 @@
 ---
-title: "Materiały opakowaniowe i związane z nimi opłaty"
-description: "Opłaty za materiały opakowań są uiszczane firmie recyklingowej w pewnych odstępach czasu. Płaci się kwotę według jednostki masy za każdy materiał, z którego jest wykonana jednostka opakowania. Opłaty za materiały opakowań są obliczane i zgłaszane, ale transakcje finansowe nie są księgowane, ponieważ opłaty nie są uznawane za podatki należne właściwemu organowi."
+title: Materiały opakowaniowe i związane z nimi opłaty
+description: Opłaty za materiały opakowań są uiszczane firmie recyklingowej w pewnych odstępach czasu. Płaci się kwotę według jednostki masy za każdy materiał, z którego jest wykonana jednostka opakowania. Opłaty za materiały opakowań są obliczane i zgłaszane, ale transakcje finansowe nie są księgowane, ponieważ opłaty nie są uznawane za podatki należne właściwemu organowi.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c188651fe8ba3fe3f9678f36ab11ae886ef6f1cf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312308"
 ---
-
 # <a name="packing-materials-and-fees"></a>Materiały opakowaniowe i związane z nimi opłaty
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,6 @@ Jeśli firma uiszcza opłaty materiałów opakowań, nie należy określać nume
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Drukowanie wag materiałów opakowań na fakturach
 Istnieje możliwość drukowania wag materiałów opakowań na fakturze oraz wskazywania podmiotów uiszczających opłaty materiałowe opakowań. Wagi zestawione są na podstawie kodu opakowania.
-
 
 
 

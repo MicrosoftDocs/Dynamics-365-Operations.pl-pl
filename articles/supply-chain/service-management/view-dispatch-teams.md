@@ -1,31 +1,30 @@
 ---
-title: "Przeglądanie zespołów wysyłek"
-description: "Można przeglądać zespoły wysyłek."
+title: Przeglądanie zespołów wysyłek
+description: Można przeglądać zespoły wysyłek.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMADispatchBoard
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: feddc690e597bbf20da1aa7b2e69ebc231bdecc2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7da318128a19da0090b5adcfdd3b89dd53f913ca
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341449"
 ---
-
 # <a name="view-dispatch-teams"></a>Przeglądanie zespołów wysyłek   
 
 [!include [banner](../includes/banner.md)]
@@ -52,6 +51,5 @@ Aby uzyskać więcej informacji o sposobie przypisywania pracownika do zespołu,
 [Pulpit wysyłki (formularz)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))
 
   
-
 
 

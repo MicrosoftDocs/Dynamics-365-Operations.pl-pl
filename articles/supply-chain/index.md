@@ -1,36 +1,35 @@
 ---
-title: "Zarządzanie łańcuchem dostaw — strona główna"
-description: "Ta strona zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji zarządzania łańcuchem dostaw w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations."
+title: Zarządzanie łańcuchem dostaw — strona główna
+description: Ta strona zawiera listę tematów pomocy oraz innych zasobów dotyczących funkcji zarządzania łańcuchem dostaw w Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
+ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
-ms.openlocfilehash: df35f70d8297aa2a832d143217542e3d558040ea
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302755"
 ---
-
 # <a name="supply-chain-management-home-page"></a>Zarządzanie łańcuchem dostaw — strona główna
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji zarządzania łańcuchem dostaw w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations. 
+Ten temat zawiera listę tematów pomocy oraz innych zasobów dotyczących funkcji zarządzania łańcuchem dostaw w Microsoft Dynamics 365 for Finance and Operations. 
 
 ## <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
 Przejdź na stronę <a href="https://roadmap.dynamics.com/">Plan rozwoju usługi Dynamics 365</a>, aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane. 
@@ -53,17 +52,17 @@ Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 
 ## <a name="videos"></a>Filmy
 
-Te krótkie filmy ułatwiają poznanie nowych funkcji rozwiązania Microsoft Dynamics 365 for Finance and Operations w wersji 8.0 (kwiecień 2018).
+Te krótkie filmy pomagają poznać nowe funkcje dostępne w Microsoft Dynamics 365 for Finance and Operations, wersja 8.0 (z kwietnia 2018 r.).
 
 - [Synchronizowanie zlecenia między rozwiązaniami Field Service i Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Te krótkie filmy ułatwiają poznanie nowych funkcji rozwiązania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3 (grudzień 2017).
+Te krótkie filmy pomagają poznać nowe funkcje dostępne w Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (z grudnia 2017 r.)
 
 -  [Integracja scenariusza Od potencjalnego klienta do środków pieniężnych](https://youtu.be/AVV9x5x-XCg) 
 -  [Doradca optymalizacji](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 -  [Używanie szablonu magazynu w celu kopiowania konfiguracji](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Te krótkie filmy ułatwiają poznanie nowych funkcji rozwiązania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017).
+Te krótkie filmy pomagają poznać nowe funkcje dostępne w Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (z lipca 2017 r.)
 
 -  [Rozpoczęcie korzystania z modułu Rachunek kosztów](https://youtu.be/1pUDtJQZ8FU)
 -  [Obszar roboczy kontroli kosztów na urządzeniach przenośnych](https://youtu.be/imsuTg8rUVk)
@@ -85,7 +84,7 @@ Te nagrania konferencji technicznych dotyczą funkcji poprzedniej wersji rozwią
 
 **Zarządzanie informacjami o produktach**
 
--  [Konfigurator produktów w systemie Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
+-  [Konfigurator produktu w oprogramowanieu Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 
 **Zarządzanie magazynem** 
 
@@ -93,7 +92,7 @@ Te nagrania konferencji technicznych dotyczą funkcji poprzedniej wersji rozwią
 -  [Wykorzystywanie pełni możliwości systemu zarządzania magazynem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
 -  [Zaawansowane zarządzanie magazynem w wersji R3 — przetwarzanie przychodzące i minimalne/maksymalne uzupełnianie zapasów](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
 -  [Zaawansowane zarządzanie magazynem w wersji R3 — codzienne procedury, przetwarzanie wychodzące i uzupełnianie zapasów na podstawie popytu](https://youtu.be/Og0gLlVp7jA)
--  [Etykiety w nowym module zarządzania magazynem w systemie Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
+-  [Etykiety modułu Zarządzanie magazynem w nowej wersji oprogramowania Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
 -  [Dynamics AX 2012 R3: zaawansowane zarządzanie magazynem — codzienne procedury w zakresie produkcji procesowej](https://www.youtube.com/embed/QUxXUrN-7n4)
 
 **Kontrola produkcji**
@@ -102,19 +101,18 @@ Te nagrania konferencji technicznych dotyczą funkcji poprzedniej wersji rozwią
 
 **Zarządzanie transportem**
 
--  [Zarządzanie transportem (TMS) w nowym systemie Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
+-  [Zarządzanie transportem (TMS) w nowej wersji oprogramowania Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogi
-Wiele tematów dotyczących zarządzania wytwarzaniem i łańcuchem dostaw można znaleźć w <a href="https://blogs.msdn.microsoft.com/axmfg/">blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX</a> oraz <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">blogu zespołu ds. badań i rozwoju modułu Zarządzanie łańcuchem dostaw systemu Dynamics AX </a>. Większość z nich została napisana dla poprzedniej wersji rozwiązania Finance and Operations, ale w obecnej wersji są używane te same pojęcia i podobne procedury. 
+Wiele tematów dotyczących zarządzania wytwarzaniem i łańcuchem dostaw można znaleźć w blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX</a> oraz <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">blogu zespołu ds. badań i rozwoju modułu Zarządzanie łańcuchem dostaw systemu Dynamics AX</a>. Większość z nich została napisana dla poprzedniej wersji rozwiązania Finance and Operations, ale w obecnej wersji są używane te same pojęcia i podobne procedury. 
 
 ## <a name="white-papers"></a>Oficjalne dokumenty
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Warsztaty szkoleniowe dotyczące rachunku kosztów</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: funkcja Możliwe do zrealizowania i planowanie zadań Kanban</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Obliczenia BOM za pomocą arkusza wyceny</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilność w magazynie dzięki rozwiązaniu Microsoft Dynamics 365 for Finance and Operations</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Funkcje mobilności w module Magazyn możliwe dzięki rozwiązaniu Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## <a name="elearning-courses"></a>Kursy eLearning
-Aby uzyskać informacje na temat szkoleń dotyczących rozwiązania Microsoft Dynamics 365 for Finance and Operations, zobacz <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Portal szkoleniowy systemu Microsoft Dynamics</a>. (wymagane jest konto w witrynie CustomerSource) 
-
+Aby uzyskać więcej informacji o szkoleniach z zakresu Microsoft Dynamics 365 for Finance and Operations, zob. <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Portal szkoleniowy systemu Microsoft Dynamics</a>. (wymaga konta CustomerSource) 
 
 

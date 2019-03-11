@@ -1,13 +1,13 @@
 ---
-title: "Karty czasu pracy projektów na urządzeniu przenośnym"
-description: "Aplikacja Moje karty czasu pracy (zoptymalizowane dla urządzeń przenośnych) pozwala pracownikom tworzyć i przesyłać karty czasu pracy projektów, tak aby na urządzeniu przenośnym rejestrować godziny przepracowane w określonym projekcie."
+title: Karty czasu pracy projektów na urządzeniu przenośnym
+description: Aplikacja Moje karty czasu pracy (zoptymalizowane dla urządzeń przenośnych) pozwala pracownikom tworzyć i przesyłać karty czasu pracy projektów, tak aby na urządzeniu przenośnym rejestrować godziny przepracowane w określonym projekcie.
 author: abruer
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
+ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3e09433a9bb819cf24ee74443dd7e2d80a2b6b2e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360953"
 ---
-
 # <a name="project-timesheets-on-a-mobile-device"></a>Karty czasu pracy projektów na urządzeniu przenośnym
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ Aplikacja **Moje karty czasu pracy (zoptymalizowane dla urządzeń przenośnych)
 
 Aplikacja **Karty czasu pracy do przeglądu przeze mnie (zoptymalizowane dla urządzeń przenośnych)** umożliwia kierownikom projektów, którzy mają prawa do zatwierdzania kart czasu pracy, przeglądanie i zatwierdzanie kart czasu pracy projektu na urządzeniu przenośnym. Edytowanie i wyświetlanie informacji o wymiarach finansowych nie jest obsługiwane w aplikacji mobilnej. Do aplikacji **Karty czasu pracy do przeglądu przeze mnie (zoptymalizowane dla urządzeń przenośnych)** można przejść za pośrednictwem przeglądarki sieci web na urządzeniu przenośnym.
 
-Ta aplikacja komórkowa działa na telefonach iPhone z programem Dynamics 365 for Finance and Operations z aktualizacją platformy 15.
+Ta aplikacja mobilna jest zgodne iPhone z aktualizacją 15 platformy Dynamics 365 for Finance and Operations.
 Aplikacja na urządzenia z systemem Android będzie zgodna z aktualizacją platformy 16, gdy zostanie wydana.
 
 <a name="create-a-project-timesheet-on-your-mobile-device"></a>Tworzenie karty czasu pracy projektu na urządzeniu przenośnym
@@ -66,4 +65,3 @@ Aplikacja na urządzenia z systemem Android będzie zgodna z aktualizacją platf
 13. Opcjonalnie: Wprowadź dodatkowe wiersze karty czasu pracy.
 
 14. Po zakończeniu wprowadzania wierszy karty czasy pracy wybierz akcję **Przepływ pracy** \> **Prześlij**, aby przesłać kartę czasu pracy do procesu zatwierdzenia przepływu pracy.
-

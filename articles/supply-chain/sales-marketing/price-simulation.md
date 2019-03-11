@@ -1,13 +1,13 @@
 ---
 title: Symulacja ceny
-description: "Ten artykuł zawiera informacje o symulacjach cen dla ofert. Symulacja ceny pomaga ocenić wpływ obniżek na przyszłą cenę sprzedaży w trakcie procesu sporządzania oferty, zanim określona cena zostanie potwierdzona."
+description: Ten artykuł zawiera informacje o symulacjach cen dla ofert. Symulacja ceny pomaga ocenić wpływ obniżek na przyszłą cenę sprzedaży w trakcie procesu sporządzania oferty, zanim określona cena zostanie potwierdzona.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316540"
 ---
-
 # <a name="price-simulation"></a>Symulacja ceny
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ Aby zagwarantować, że rabaty i ceny są obliczane prawidłowo, należy zachowa
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typy rabatów w umowach handlowych
 
-Umowy handlowe w programie Microsoft Dynamics 365 for Finance and Operations mogą zawierać cztery typy rabatów. Rabaty te można konfigurować dla różnych towarów, odbiorców lub grup cenowych i można je ograniczać terminem. Aby uniknąć błędów w obliczeniach, podczas wykonywania symulacji ceny należy wziąć pod uwagę umowy handlowe. Oto cztery typy rabatów w umowach handlowych:
+W umowach handlowych w Microsoft Dynamics 365 for Finance and Operations są możliwe cztery typy rabatów. Rabaty te można konfigurować dla różnych towarów, odbiorców lub grup cenowych i można je ograniczać terminem. Aby uniknąć błędów w obliczeniach, podczas wykonywania symulacji ceny należy wziąć pod uwagę umowy handlowe. Oto cztery typy rabatów w umowach handlowych:
 
 -   **Cena sprzedaży** – można określić osobne ceny sprzedaży towarów. Podczas tworzenia wierszy zapytania ofertowego, program wyszukuje poprawnych cen sprzedaży dla towaru i przenosi je do wierszy zamówienia sprzedaży. Z tego względu umowa handlowa zawierająca ten rodzaj rabatu nie wpływa na symulację ceny. Cena sprzedaży, która jest używana w wierszu oferty, odzwierciedla zapisy umowy handlowej.
 -   **Rabat wiersza** — specjalne rabaty określone dla towarów, w zależności od zamówionej ilości. Kwoty wierszy są zwykle pomniejszane o rabat wiersza przed uruchomieniem symulacji ceny. Z tego względu umowa handlowa zawierająca ten rodzaj rabatu wpływa na symulację ceny.
@@ -143,7 +142,6 @@ Uruchomiono symulację cen i zastosowano 10 procent rabatu końcowego dla jednos
 | Nowy sumaryczny poziom marży                      | \[(302,88 – 184,96) ÷ 302,88\] × 100    | 38,93%   |
 
 Symulacja ceny wpływa tylko na wiersz, do którego jest stosowana, powodując zmniejszenie sumy dla tego wiersza.
-
 
 
 

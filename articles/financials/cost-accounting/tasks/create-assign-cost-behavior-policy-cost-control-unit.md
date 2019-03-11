@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie i przypisywanie zasady zachowania kosztów do jednostki kontroli kosztów"
-description: "Zachowanie kosztów to sklasyfikowanie kosztów jako stałe lub zmienne."
+---
+title: Tworzenie i przypisywanie zasady zachowania kosztów do jednostki kontroli kosztów
+description: Zachowanie kosztów to sklasyfikowanie kosztów jako stałe lub zmienne.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c7b39b7649aaef0d354b61e3d70b6cac887282ed
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 392cb83ceb8612a2e73cc54bb2d8d40c62a6b7b6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313826"
 ---
 # <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>Tworzenie i przypisywanie zasady zachowania kosztów do jednostki kontroli kosztów
 
@@ -84,5 +84,4 @@ Zachowanie kosztów to sklasyfikowanie kosztów jako stałe lub zmienne. Aby zas
     * Reguły mają daty obowiązywania, tzn. użytkownik lub system mogą wygasić regułę, jeśli zostanie utworzona nowsza wersja.  
 15. W polu Jednostka kontroli kosztów wprowadź lub wybierz wartość.
 16. Kliknij przycisk Zapisz.
-
 

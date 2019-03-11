@@ -1,13 +1,13 @@
 ---
 title: Amortyzacja degresywna
-description: "Ten artykuł zawiera omówienie metody amortyzacji Degresywna."
+description: Ten artykuł zawiera omówienie metody amortyzacji Degresywna.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e36a7e1a5d83a95de53b70b8e3c3b667aae9c6c0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 29bc8cd02d98479197d7e5f5664b9859c03893b3
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321186"
 ---
-
 # <a name="reduce-balance-depreciation"></a>Amortyzacja degresywna
 
 [!include [banner](../includes/banner.md)]
@@ -81,7 +80,6 @@ Jeśli używasz metody Degresywna, 30 procent podstawy amortyzacji (wartość ks
 
 
 -
-
 
 
 

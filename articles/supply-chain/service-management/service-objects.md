@@ -1,31 +1,30 @@
 ---
 title: Przedmioty serwisu
-description: "Przedmioty serwisu to aktywa i produkty klienta, dla których można wykonać usługi."
+description: Przedmioty serwisu to aktywa i produkty klienta, dla których można wykonać usługi.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceObjectTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5641077de84b6702d2c5621edef74783f2f104fd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: a69fd6a1b07683383d88c7f5c7986529c7bb1875
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/21/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353409"
 ---
-
 # <a name="service-objects"></a>Przedmioty serwisu 
 
 [!include [banner](../includes/banner.md)]
@@ -47,5 +46,4 @@ Firma A obsługuje rekordy finansowe dla kilku małych firm. Jednym z klientów 
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Tworzenie przedmiotów serwisu](create-service-objects.md)
-
 

@@ -1,13 +1,13 @@
 ---
 title: Opakowania zwrotne dla Polski
-description: "Ten temat zawiera opis sposobu konfigurowania i używania opakowań zwrotnych dla Polski."
+description: Ten temat zawiera opis sposobu konfigurowania i używania opakowań zwrotnych dla Polski.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PlCustPackageHolder, PlCustPackageReturn, PlInventPackageTable, PlInventPackageTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Poland
 ms.author: ilyako
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 38cc3f161f3831a17b79e8790287f95041615cf3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 60ca05b76cb22b67f71ddbe6f0b6de6679edc72e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371435"
 ---
-
 # <a name="returnable-packaging-for-poland"></a>Opakowania zwrotne dla Polski
 [!include [banner](../includes/banner.md)]
 
@@ -106,6 +105,5 @@ Aby wprowadzić informacje o opakowaniach zwracanych przez odbiorców, kliknij k
 | Waluta                      | Waluta kwoty, którą należy zapłacić odbiorcy.                                                                                                       |
 
 Po zakończeniu wprowadzania informacji o zwrotach opakowań kliknij przycisk **Księguj**, aby zaksięgować transakcję zwrotu. Na stronie księgowania należy ustawić opcję **Drukuj** na **Tak**, aby wydrukować raport **Potwierdzenie zwrotu opakowań**. Aby ponowne wydrukować raport potwierdzenia później, można kliknąć przycisk **Drukuj** na stronie **Potwierdzenie zwrotu opakowań**. Użytkownicy mogą wysyłać zapytania o transakcje opakowaniami zwrotnymi. Kliknij kolejno opcje **Zarządzanie zapasami** &gt; **Ustawienia** &gt; **Materiały opakowań** &gt; **Opakowania zwrotne**, a następnie na karcie **Transakcje** kliknij opcję **Transakcje**, a zostanie otwarta strona **Transakcje opakowań zwrotnych**. Transakcje na opakowaniach zwrotnych będą miały wartości ujemne w polu **Liczba opakowań**. Kliknij opcję **Załącznik**, aby wyświetlić szczegóły wybranej transakcji. Kliknij przycisk **Drukowanie**, aby wydrukować raport **Potwierdzenie zwrotu opakowań**.
-
 
 

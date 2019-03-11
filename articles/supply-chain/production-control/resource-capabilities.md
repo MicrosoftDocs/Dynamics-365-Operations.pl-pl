@@ -1,13 +1,13 @@
 ---
-title: "Możliwości zasobu"
-description: "Ten artykuł zawiera informacje o organizowaniu możliwościach zasobów. Możliwość to zdolność zasobu operacyjnego do wykonania określonego działania. Wyjaśniono, jak możliwości i związane z nimi funkcje, takie jak poziom biegłości i priorytet, służą do wybierania zasobów odpowiednich dla działań."
+title: Możliwości zasobu
+description: Ten artykuł zawiera informacje o organizowaniu możliwościach zasobów. Możliwość to zdolność zasobu operacyjnego do wykonania określonego działania. Wyjaśniono, jak możliwości i związane z nimi funkcje, takie jak poziom biegłości i priorytet, służą do wybierania zasobów odpowiednich dla działań.
 author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrCapability, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 567b4c5544f2a58801fefb1aa9d4c72815913910
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 533faf78e4cc9a091d64f7c6a0f82d14158710c8
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319300"
 ---
-
 # <a name="resource-capabilities"></a>Możliwości zasobu
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ W tym przykładzie oba urządzenia mogą zostać wybrane przez aparat planowania
 
 ## <a name="competencies-for-human-resources"></a>Kwalifikacje dla zasobów ludzkich
 Jeśli korzystasz z zasobów operacyjnych typu **zasoby ludzkie** połączonych z pracownikami w module Zasoby ludzkie, możesz także korzystać z kwalifikacji pracowników podczas definiowania wymagań źródłowych dla marszruty produkcji. Innymi słowy, można także określić wymagania dotyczące określonych umiejętności, kursów, certyfikatów i tytułów. Aparat planowania może wybrać zasoby, które są połączone z pracownikami, a wybór będzie opierać się na kompetencjach tych pracowników. Kwalifikacje ustawia się w module zasobów ludzkich, nie na stronie **możliwości zasobu**. Podczas definiowania umiejętności, kursów, certyfikatów i tytułów jako wymagania źródłowego należy użyć funkcji zasobów ludzkich i połączyć każdy zasób typu **Zasoby ludzkie** z odpowiednim pracownikiem. Jeśli nie używasz funkcji zasobów ludzkich, możesz określić możliwości na stronie **Możliwości zasobu**, na której znajdują się podobne lub takie same kompetencje, co w module Zasoby ludzkie. Jednakże strona **możliwości zasobu** nie zawiera funkcji koniecznych do obsługi kwalifikacji, kursów, certyfikatów lub tytułów.
-
 
 
 

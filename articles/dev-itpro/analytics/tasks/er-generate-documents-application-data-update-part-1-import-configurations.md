@@ -1,13 +1,13 @@
---- 
-title: "Importowanie konfiguracji w celu generowania dokumentów zawierających dane aplikacji"
-description: "Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”."
+---
+title: Importowanie konfiguracji w celu generowania dokumentów zawierających dane aplikacji
+description: Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 1637ba59525f5f8bd9fe41a00c34eca90f7a2751
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340805"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Importowanie konfiguracji w celu generowania dokumentów zawierających dane aplikacji
 
@@ -75,5 +75,4 @@ Etapy w tej procedurze wyjaśniają sposób projektowania konfiguracji raportowa
 29. W drzewie zaznacz element „Plik”.
     * Przejrzyj strukturę formatu używaną do generowania raportu Intrastat. Należy zwrócić uwagę na to, że jest ona przeznaczona do generowania pliku XML przez wypełnianie danymi z modelu danych zależnego od pozycji głównej „Dla dokumentu wychodzącego”. Upewnij się, że nazwa wygenerowanego pliku jest zdefiniowana w formularzu okna dialogowego użytkownika (do tego jest używane źródło danych „fn”).   
 30. Zamknij stronę.
-
 

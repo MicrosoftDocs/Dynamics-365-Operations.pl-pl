@@ -1,13 +1,13 @@
 ---
-title: "Pakiet zawartości usługi Power BI Zarządzanie kosztami"
-description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie kosztami."
+title: Pakiet zawartości zarządzania kosztami w usłudze Power BI
+description: W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie kosztami.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -19,15 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f67b1c901267bdf79c94e4f4c698c8731c515bb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327810"
 ---
-
-# <a name="cost-management-power-bi-content"></a>Pakiet zawartości usługi Power BI Zarządzanie kosztami
+# <a name="cost-management-power-bi-content"></a>Pakiet zawartości zarządzania kosztami w usłudze Power BI
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +37,7 @@ Pakiet zawartości **Zarządzanie kosztami** dostępny w usłudze Microsoft Powe
 > [!NOTE]
 > Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opisany w tym temacie dotyczy programu Dynamics 365 for Finance and Operations 8.0.
 > 
-> Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opublikowany w witrynie AppSource został wycofany. Aby uzyskać więcej informacji o tym wycofaniu, zobacz [Pakiety zawartości usługi Power BI dostępne w usłudze AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opublikowany w witrynie AppSource został wycofany. Aby uzyskać więcej informacji o tym wycofaniu, zobacz [Pakiety zawartości usługi Power BI dostępne w witrynie AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)
 
 Ten pakiet zawartości usługi Power BI oferuje skategoryzowany format, który pomaga monitorować sytuację w zapasach oraz wizualizować przepływy kosztów przez zapasy. Można uzyskać różne informacje przydatne kierownictwu, takie jak wskaźnik obrotu, liczba dni dostępności zapasów na stanie, dokładność oraz „klasyfikacja ABC” na preferowanym zagregowanym poziomie (firmy, towaru, grupy towarów lub oddziału). Dostępne informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
 
@@ -209,4 +208,3 @@ Następujące najważniejsze wymiary są używane jako filtry do dzielenia zagre
 | Firmy                                          | Nazwy firm                              |
 | Kalendarze obrachunkowe                                        | Kalendarz obrachunkowy, Rok, Kwartał, Okres, Miesiąc   |
 | Witryna                                                    | Identyfikator, Nazwa, Adres, Województwo, Kraj               |
-

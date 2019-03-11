@@ -1,13 +1,13 @@
 ---
 title: Arkusze wyceny
-description: "Konfiguracja arkusza wyceny obejmuje dwa cele. Pierwszym celem jest określenie formatu wyświetlania informacji o kosztach sprzedanych towarów, wyprodukowanych towarów oraz zlecenia produkcyjnego. Sformatowane wyświetlenie nosi nazwę arkusz wyceny. Drugim celem jest określenie podstawy obliczania kosztów pośrednich. Konfiguracja arkusza wyceny opiera się na funkcji grupy kosztów dla wyświetlania informacji oraz wzorów obliczania kosztów pośrednich. Oba cele konfigurowania arkusza wyceny są opisane w tym artykule."
+description: Konfiguracja arkusza wyceny obejmuje dwa cele. Pierwszym celem jest określenie formatu wyświetlania informacji o kosztach sprzedanych towarów, wyprodukowanych towarów oraz zlecenia produkcyjnego. Sformatowane wyświetlenie nosi nazwę arkusz wyceny. Drugim celem jest określenie podstawy obliczania kosztów pośrednich. Konfiguracja arkusza wyceny opiera się na funkcji grupy kosztów dla wyświetlania informacji oraz wzorów obliczania kosztów pośrednich. Oba cele konfigurowania arkusza wyceny są opisane w tym artykule.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostSheetDesigner
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1421049adb86916202ad6f7ee748c8525fd55fa8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3988bd478cfad791b5d4c73d28a86c9cfb68288f
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312768"
 ---
-
 # <a name="costing-sheets"></a>Arkusze wyceny
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ Dwie polityki blokowania dla wersji wyceny określają, czy koszty oczekujące m
 Po zdefiniowaniu formatu arkusza wyceny oraz obliczeniach dla kosztów pośrednich, należy przeprowadzić oddzielną procedurę zatwierdzania i zapisania informacji. Arkusz wyceny reprezentuje format ogólnofirmowy w celu spójnego przedstawiania informacji dotyczących kosztów sprzedanych towarów. 
 
 Arkusz wyceny jest wyświetlany jako część strony **Obliczanie kosztu pozycji**. Arkusz wyceny może być wyświetlany dla rekordu obliczonego kosztu wytwarzanego towaru na stronie **Cena towaru** lub dla rekordu obliczania właściwego dla zamówienia na stronie **Wyniki obliczeń BOM**. Może być on również wyświetlony jako część strony **Obliczanie ceny** dla zlecenia produkcyjnego.
-
 
 
 

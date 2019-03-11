@@ -1,13 +1,13 @@
 ---
 title: Konfigurowanie konsygnacji
-description: "W tym temacie wyjaśniono sposób konfigurowania operacji konsygnacji przychodzącej dla zapasów."
+description: W tym temacie wyjaśniono sposób konfigurowania operacji konsygnacji przychodzącej dla zapasów.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventJournalOwnershipChange, InventOwner, InventTableInventoryDimensionGroups, VendTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 24500ff46cc77ca8fa59c0c16427d9f05f33a87e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 758ea8b658693910edeada3a4c27c34ae187b28c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308720"
 ---
-
 # <a name="set-up-consignment"></a>Konfigurowanie konsygnacji
 
 [!include [banner](../includes/banner.md)]
@@ -51,4 +50,3 @@ Arkusz **Zmiana własności zapasów** służy do rejestrowania przeniesienia w�
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Współpraca z dostawcami w procesach konsygnacji
 Jeśli dostawcy używają interfejsu współpracy z dostawcami, mogą w nim monitorować zużywanie zapasów w oddziale Twojej firmy. Aby uzyskać więcej informacji o konfigurowaniu dostawców do używania portalu współpracy z dostawcami, zobacz [Konfiguracja zabezpieczeń dla użytkowników portalu współpracy z dostawcami](../procurement/configure-security-vendor-portal-users.md).
-

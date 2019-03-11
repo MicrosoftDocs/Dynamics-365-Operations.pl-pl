@@ -1,13 +1,13 @@
 ---
-title: "Zarządzanie aktualizacjami kosztu standardowego"
-description: "Aktualizacjami dotyczącymi danych kosztów standardowych można zarządzać za pomocą dwóch różnych metod — metody jednej wersji lub metody dwóch wersji."
+title: Zarządzanie aktualizacjami kosztu standardowego
+description: Aktualizacjami dotyczącymi danych kosztów standardowych można zarządzać za pomocą dwóch różnych metod — metody jednej wersji lub metody dwóch wersji.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e72d4e90ac83787ed7c58d91c2102696acfac68
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b64d9e53736fd3b81ee997ed28ccfa62ed7e9ce6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367554"
 ---
-
 # <a name="manage-standard-cost-updates"></a>Zarządzanie aktualizacjami kosztu standardowego
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,6 @@ Poniżej pokazano, jak używać metod jednej i dwóch wersji do aktualizacji kos
 -   **Metoda dwóch wersji** — W metodzie dwóch wersji aktualizacji danych o kosztach jest wymagana dodatkowa wersja ceny zawierająca wyłącznie aktualizacje. Przyjmijmy, że identyfikator będzie wyglądał następująco: 2016-STD-ZMIANY. Aktualizacje kosztu są rejestrowane w 2016-STD-CHANGES i otrzymują stan „Oczekujące”. W przypadku metody dwóch wersji obliczenia BOM kosztów oczekujących produkowanych elementów wymagają zasady rezerwowości źródła danych. Zasada rezerwowości może zostać wyrażona jako koszty aktywne lub określona wersja ceny 2016-STD, ponieważ oba parametry identyfikują źródło danych o kosztach, jeśli nie istnieje ono w wersji ceny 2016-STD-ZMIANY. Zasada rezerwowości może zostać wyrażona jako koszty aktywne lub określona wersja ceny 2016-STD, ponieważ oba parametry identyfikują źródło danych o kosztach, jeśli nie istnieje ono w wersji ceny 2016-STD-ZMIANY. Po aktywacji kosztów oczekujących dodatkowa wersja ceny 2016-STD-ZMIANY będzie zawierać aktywne koszty bieżące odzwierciedlające aktualizację, a oryginalna wersja ceny 2016-STD pozostanie bez zmian.Identyfikator dla tej wersji to 2016-STD-ZMIANY. Zasada dwóch wersji oznacza, że zasady blokowania oryginalnej wersji ceny powinny zapobiegać aktualizacjom. Dodatkowa wersja ceny powinna zawierać dokładnie takie same zasady co oryginalna wersja ceny z wyjątkiem daty początkowej oraz udostępniać selektywne użycie zasad blokowania zezwalających na aktualizacje. Określona data początkowa powinna zostać zaktualizowana o każdy zbiór zmian uwzględniających zaplanowaną datę aktywacji.
 
 W tym przykładzie przedstawiono jedną dodatkową wersję wyceny służącą do zarządzania aktualizacjami za rok 2016. Można użyć więcej niż jedną dodatkową wersję wyceny, na przykład osobną wersję dla poszczególnych zbiorów aktualizacji. Jeśli używanych jest kilka opcji dodatkowej wyceny, domyślnej wyraża się jako koszty aktywne, ponieważ koszty aktywne są rozciągnięte jest na kilka wersji.
-
 
 
 

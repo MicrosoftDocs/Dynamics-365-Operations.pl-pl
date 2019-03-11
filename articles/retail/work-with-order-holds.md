@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie i używanie wstrzymań zamówień w biurze obsługi"
-description: "W tym temacie opisano sposób pracy ze wstrzymaniami zamówień za pomocą Microsoft Dynamics 365 dla sprzedaży detalicznej."
+title: Konfigurowanie i używanie wstrzymań zamówień w biurze obsługi
+description: W tym temacie opisano sposób pracy ze wstrzymaniami zamówień za pomocą Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: ba8fade84358c960dcfd1e8d9ffef1ffede34871
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335308"
 ---
-
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurowanie i używanie wstrzymań zamówień w biurze obsługi
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano funkcje wstrzymania zamówienia dostępne w Microsoft Dynamics 365 dla sieci sprzedaży detalicznej dla zamówień w biurze obsługi telefonicznej.
+W tym temacie opisano funkcje wstrzymania zamówienia dostępne w Microsoft Dynamics 365 for Retail dla zamówień w biurze obsługi telefonicznej.
 
 ## <a name="configuring-call-center-order-holds"></a>Konfigurowanie wstrzymań zamówień w biurze obsługi
 
@@ -104,4 +103,3 @@ Jeśli użytkownicy chcą usunąć wstrzymanie, ale wprowadzić dodatkowe zmiany
 ## <a name="reporting-options"></a>Opcje raportowania
 
 Wybierz kolejno opcje **Handel detaliczny** \> **Zapytania i raporty** \> **Raporty biura obsługi** \> **Raport wstrzymań zamówień**, aby uruchomić raport o wstrzymaniach zamówień według zakresów dat, kodów wstrzymania lub innych pokrewnych kryteriów.
-

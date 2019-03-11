@@ -1,13 +1,13 @@
 ---
-title: "Ustawienia języka użytkownika i aplikacji POS"
-description: "W tym temacie opisano, jak zmienić ustawienia języka w programach Retail Modern POS (MPOS) i Cloud POS."
+title: Ustawienia języka użytkownika i aplikacji POS
+description: W tym temacie opisano, jak zmienić ustawienia języka w programach Retail Modern POS (MPOS) i Cloud POS.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: faf8cdcee70b55842072298b51789f6cd7a577af
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336757"
 ---
-
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Ustawienia języka użytkownika i aplikacji POS
 
 [!include [banner](includes/banner.md)]
@@ -35,7 +34,7 @@ W tym temacie opisano, jak zmienić ustawienia języka w programach Retail Moder
 
 ## <a name="overview"></a>Przegląd
 
-Programy Modern POS (MPOS) i Cloud POS obsługują środowiska, w których ustawienia językowe i tłumaczenia mogą się różnić w zależności od sklepu i ustawień użytkownika. Na przykład sklep może znajdować się regionie, w którym głównym językiem odbiorców jest angielski, ale niektórzy pracownicy wolą korzystać z aplikacji w języku francuskim.
+Retail Modern POS (MPOS) i Cloud POS obsługują środowiska, w których ustawienia językowe i tłumaczenia mogą się różnić w zależności od sklepu i ustawień użytkownika. Na przykład sklep może znajdować się regionie, w którym głównym językiem odbiorców jest angielski, ale niektórzy pracownicy wolą korzystać z aplikacji w języku francuskim.
 
 ## <a name="data-language"></a>Język danych
 
@@ -67,4 +66,3 @@ Język użytkownika punktu sprzedaży ustawia się w obszarze **Wszyscy pracowni
 | **Firma** | Domyślna                    | Domyślna                                                       |
 | **Sklep**   | Zastępuje ustawienie dla firmy          | Zastępuje ustawienie dla firmy                                             |
 | **Użytkownik**    | Zastępuje ustawienie dla sklepu lub firmy | Nigdy                                                         |
-

@@ -1,13 +1,13 @@
 ---
-title: "Ulepszenia funkcji księgowania zestawień"
-description: "W tym temacie opisano ulepszenia, które zostały wprowadzone w funkcji księgowania zestawień."
+title: Ulepszenia funkcji księgowania zestawień
+description: W tym temacie opisano ulepszenia, które zostały wprowadzone w funkcji księgowania zestawień.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,19 +16,18 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321439"
 ---
-
 # <a name="improvements-to-statement-posting-functionality"></a>Ulepszenia funkcji księgowania zestawień
 
 [!include[banner](includes/banner.md)]
 
-W tym temacie opisano pierwszy zestaw ulepszeń, które zostały wprowadzone w funkcji księgowania zestawień. Te ulepszenia są dostępne w programie Microsoft Dynamics 365 for Finance and Operations w wersji 7.3.2.
+W tym temacie opisano pierwszy zestaw ulepszeń, które zostały wprowadzone w funkcji księgowania zestawień. Te ulepszenia są dostępne w programie Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## <a name="activation"></a>Aktywacja
 
@@ -171,4 +170,3 @@ W funkcji księgowania zestawień wprowadzono również różne ulepszenia w sys
 
     - Kliknij kolejno opcje **Handel detaliczny** \> **Ustawienia centrali** \> **Parametry** \> **Parametry sieci sprzedaży**. Następnie na karcie **Księgowanie** na skróconej karcie **Aktualizacja zapasów** w polu **Poziom szczegółowości** zaznacz wartość **Podsumowanie**.
     - Kliknij kolejno opcje **Handel detaliczny** \> **Ustawienia centrali** \> **Parametry** \> **Parametry sieci sprzedaży**. Następnie na karcie **Księgowanie** na skróconej karcie **Agregacja** w opcji **Transakcje na załączniku** ustaw wartość **Tak**.
-

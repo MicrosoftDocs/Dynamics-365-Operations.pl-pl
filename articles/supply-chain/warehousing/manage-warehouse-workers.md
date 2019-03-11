@@ -1,13 +1,13 @@
 ---
-title: "Zarządzanie pracownikami magazynu"
-description: "Ten artykuł opisuje sposób korzystania z programu Dynamics 365 for Finance and Operations do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach."
+title: Zarządzanie pracownikami magazynu
+description: Ten artykuł opisuje sposób korzystania z Dynamics 365 for Finance and Operations do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 211ced007e7729265621a05c2162a228eb0023c2
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310997"
 ---
-
 # <a name="manage-warehouse-workers"></a>Zarządzanie pracownikami magazynu
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł opisuje sposób korzystania z programu Microsoft Dynamics 365 for Finance and Operations do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach.
+Ten artykuł opisuje sposób korzystania z Microsoft Dynamics 365 for Finance and Operations do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach.
 
 Jeśli używasz funkcji zarządzania magazynem, wszystkie operacje pracownika magazynu są określane jako *praca*. Praca, taka jak pobieranie, przenoszenie i zliczanie dostępnych zapasów, jest rejestrowana przy użyciu urządzeń przenośnych. Zanim pracownik magazynu będzie mógł wykonać pracę, musi być powiązany z pracownikiem w dziale Zasoby ludzkie. Każde konto **pracownika** może mieć wielu powiązanych użytkowników pracy w magazynie. Ci użytkownicy pracy mogą pracować w różnych magazynach i mieć różne poziomy dostępu do rozmaitych menu urządzeń przenośnych. Użytkowników pracy w magazynie można traktować jak logowanie wielokrotne dla wybranego pracownika. Każdy użytkownik pracy w magazynie ma domyślny magazyn i określone przepływy pracy są używane w pozycjach menu dostępnych dla danego użytkownika pracy. 
 
@@ -54,7 +53,6 @@ Analiza czasu potrzebnego na wykonanie poszczególnych procesów pracy może uł
 
 -   **Praca wg użytkownika** — pokazuje wydajność pracowników na podstawie rzeczywistych czasów względem oczekiwanych godzin.
 -   **Praca wg typu transakcji pracy** — analizuje nieefektywność w procesach określonego magazynu. Na przykład zauważasz, że w danym tygodniu pobrania zamówień przeniesienia zajmują dłużej niż w poprzednich tygodniach. Na podstawie tej informacji możesz dalej zbadać to zjawisko.
-
 
 
 

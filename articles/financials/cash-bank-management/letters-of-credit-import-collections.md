@@ -1,13 +1,13 @@
 ---
 title: Akredytywy i inkasa eksportowe
-description: "Ten artykuł zawiera ogólne informacje o akredytywach i inkasie importowym. Oba rodzaje dokumentów bankowych są często używane do kupna i sprzedaży towarów między krajami."
+description: Ten artykuł zawiera ogólne informacje o akredytywach i inkasie importowym. Oba rodzaje dokumentów bankowych są często używane do kupna i sprzedaży towarów między krajami.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2b5deef65cc4af2fdfee6549660527007c3bed3a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ebabff4d467df54b2e79485ba3a16344435140e6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323049"
 ---
-
 # <a name="letters-of-credit-and-import-collections"></a>Akredytywy i inkasa eksportowe
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,6 @@ Akredytywa może mieć typ **Odwołalne** lub **Nieodwołalne**. Akredytywa moż
 Inkaso importowe to umowa zawierana między bankiem a eksporterem (sprzedawcą), w której bank zobowiązuje się dostarczyć dokumentację wysyłkową o międzynarodowego importera (kupującego). Bank ma dostarczyć dokumentację wysyłki po otrzymaniu płatności za wysłane towary w gotówce lub po otrzymaniu pokwitowania odbioru podpisanego projektu płatności. 
 
 Inkaso importowe pomaga zagwarantować, że sprzedający otrzyma płatność, gdy kupujący odbierze dokumenty w celu podjęcia zaimportowanych towarów.
-
 
 
 

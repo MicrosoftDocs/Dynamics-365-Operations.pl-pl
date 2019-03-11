@@ -1,13 +1,13 @@
 ---
-title: "Skonfiguruj strukturę konta"
-description: "Ten temat zawiera informacje dotyczące struktury kont i wymiarów finansowych."
+title: Skonfiguruj strukturę konta
+description: Ten temat zawiera informacje dotyczące struktury kont i wymiarów finansowych.
 author: aprilolson
 manager: AnnBe
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 8435389a523d8393e9d4daa0cb1244203c0dbb12
 ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351730"
 ---
-
 # <a name="configure-account-structures"></a>Skonfiguruj strukturę konta
 
 [!include[banner](../includes/banner.md)]
@@ -100,4 +99,3 @@ Podczas konfigurowania struktur kont zaleca się przestrzeganie pewnych najlepsz
 Jeśli nowe ustawienie lub zmiana struktury konta została zakończona, należy je aktywować. Jeśli struktura konta jest przypisana do księgi, ten proces aktywacji może potrwać bardzo długo, ponieważ wszystkie niezaksięgowane transakcje w systemie muszą zostać zsynchronizowane z nową strukturą. Zmiany struktury konta nie mają wpływu na zaksięgowane transakcje.
 
 Aby uzyskać więcej informacji, zobacz [Planowanie planu kont](plan-chart-of-accounts.md), [Wymiary finansowe](financial-dimensions.md) i [Wpisywanie kombinacji wymiarów i kont (formant Wpis podzielony na segmenty)](enter-account-dimension-combinations-segmented-entry-control.md).
-

@@ -1,13 +1,13 @@
 ---
 title: Transakcje posiadacza zaliczki
-description: "Dowiedz się, jak pracować z transakcjami posiadaczy zaliczek w programie Microsoft Dynamics 365 for Finance and Operations."
+description: Dowiedz się, jak pracować z transakcjami posiadaczy zaliczek w Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: f71df6fff803855cf08ca0672604ae97efe3f40e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3e1fbb37c75052f10fdac3d3361e2c93c3c8a56c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371531"
 ---
-
 # <a name="advance-holder-transactions"></a>Transakcje posiadacza zaliczki
 
 [!include [banner](../includes/banner.md)]
 
-Dowiedz się, jak pracować z transakcjami posiadaczy zaliczek w programie Microsoft Dynamics 365 for Finance and Operations.
+Dowiedz się, jak pracować z transakcjami posiadaczy zaliczek w Microsoft Dynamics 365 for Finance and Operations.
 
 Transakcje dla pracowników będących posiadaczami zaliczek mogą być księgowane przy użyciu kont posiadaczy zaliczek. Identyfikator pracownika określony dla każdego posiadacza zaliczki może służyć do śledzenia wszystkich transakcji danego posiadacza zaliczki. Ten numer jest pobierany jako numer konta dla transakcji posiadacza zaliczki na stronach **Arkusze finansowe** i **Transakcje posiadacza zaliczki**.
 
@@ -64,5 +63,4 @@ Jeśli po przetwarzaniu arkusza kasowego kwota w polu **Kwota do przeniesienia**
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Zaliczki na rzecz pracownika (Europa Wschodnia)](tasks/advance-payment-employee.md)
-
 

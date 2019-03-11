@@ -1,13 +1,13 @@
 ---
 title: Konfigurowanie importu danych z programu SharePoint
-description: "W tym temacie wyjaśniono, jak przeprowadzić import danych z programu Microsoft SharePoint."
+description: W tym temacie wyjaśniono, jak przeprowadzić import danych z programu Microsoft SharePoint.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 060c3dec71e2b953d9341c5b5c89e60925fda34d
 ms.openlocfilehash: 8053b0316c86c614b87b0e658dffade3a135f2cc
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331099"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurowanie importu danych z programu SharePoint
 
 [!include[banner](../includes/banner.md)]
 
-Aby importować dane z przesyłanego pliku przy użyciu narzędzi raportowania elektronicznego (RE), należy skonfigurować format ER, który obsługuje import i następnie uruchomić mapowanie modelu typu **Do miejsca docelowego**, który używa tego formatu jako źródła danych. Aby importować dane, należy przejść do pliku, który chcesz zaimportować. Plik przychodzący może zostać wybrany ręcznie przez użytkownika. Dzięki nowej funkcjonalności ER, która umożliwia importowanie danych z programu Microsoft SharePoint, można skonfigurować ten proces do pracy bez nadzoru. Konfiguracje ER służą do importowania danych z plików przechowywanych w folderach programu Microsoft SharePoint. W tym temacie opisano, jak przeprowadzić import danych z programu SharePoint do programu Microsoft Dynamics 365 for Finance and Operations. W przykładach użyto transakcji dostawcy jako danych biznesowych.
+Aby importować dane z przesyłanego pliku przy użyciu narzędzi raportowania elektronicznego (RE), należy skonfigurować format ER, który obsługuje import i następnie uruchomić mapowanie modelu typu **Do miejsca docelowego**, który używa tego formatu jako źródła danych. Aby importować dane, należy przejść do pliku, który chcesz zaimportować. Plik przychodzący może zostać wybrany ręcznie przez użytkownika. Dzięki nowej funkcjonalności ER, która umożliwia importowanie danych z programu Microsoft SharePoint, można skonfigurować ten proces do pracy bez nadzoru. Konfiguracje ER służą do importowania danych z plików przechowywanych w folderach programu Microsoft SharePoint. W tym temacie wyjaśniono, jak ukończyć importowanie danych z SharePoint do Microsoft Dynamics 365 for Finance and Operations. W przykładach użyto transakcji dostawcy jako danych biznesowych.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 Aby wykonać przykłady opisane w tym temacie, musisz mieć następujące uprawnienia dostępu:
@@ -56,7 +56,7 @@ Odtwórz przewodniki po zadaniach **ER Importowanie danych z pliku programu Micr
 
 - Plik programu Excel **1099import data.xlsx**, z transakcjami z dostawcami, które należy zaimportować do programu Finance and Operations.
 
-![Przykładowy plik programu Microsoft Excel do importowania z programu SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
+![Przykładowy plik programu Microsoft Excel do zaimportowania z SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
     
 > [!NOTE]
 > Format na potrzeby importowania transakcji dostawcy jest zaznaczony jako domyślne mapowanie modelu. Dlatego po uruchomieniu mapowania modelu **Model płatności 1099”**, jeśli to mapowanie modelu jest typu **Do lokalizacji docelowej**, mapowanie modelu uruchamia ten format, aby importować dane z plików zewnętrznych. Następnie używa tych danych do aktualizowania tabel aplikacji.
@@ -117,7 +117,7 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 ## <a name="import-data-from-excel-files-that-are-in-a-sharepoint-folder"></a>Importowanie danych z plików programu Excel znajdujących się w folderze programu SharePoint
 1. W programie SharePoint przekaż plik programu Microsoft Excel **1099import data.xlsx** zawierający transakcje z dostawcą do utworzonego wcześniej folderu programu SharePoint **Źródło importu plików (główne)**.
 
-    [![Zawartość programu SharePoint — plik programu Microsoft Excel do importowania](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
+    [![Zawartość SharePoint — plik programu Microsoft Excel do zaimportowania](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
 2. W programie Finance and Operations na stronie **Stany plików dla źródeł** wybierz opcję **Odśwież**, aby odświeżyć stronę. Należy zauważyć, że plik programu Excel przekazany do programu SharePoint były wyświetlany na tej stronie ze stanem **Gotowe**. Następujące stany postępu są obecnie obsługiwane:
 
@@ -165,7 +165,7 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 ## <a name="prepare-an-excel-file-for-import"></a>Przygotowywanie pliku programu Excel do importu
 1. Otwórz użyty wcześniej plik programu Excel. W wierszu 1 w kolumnie 3 dodaj kod dostawcy, który nie istnieje w aplikacji. Dodaj do wiersza więcej fałszywych informacji o dostawcy.
 
-    [![Przykładowy plik programu Microsoft Excel do importowania z programu SharePoint](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
+    [![Przykładowy plik programu Microsoft Excel do zaimportowania z programu SharePoint](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
 
 2. Prześlij zaktualizowany plik programu Excel zawierający transakcje dostawcy do folderu programu SharePoint **Źródło importu plików (główne)**.
 3. W programie Finance and Operations otwórz drzewo konfiguracji raportowania elektronicznego, zaznacz pozycję **Model płatności 1099** i rozwiń listę składników modelu ER.
@@ -192,4 +192,3 @@ Można również otworzyć stronę **stanów plików dla źródeł**, wybierają
 11. W programie Finance and Operations wybierz kolejno opcje **Rozrachunki z dostawcami** \> **Zadania okresowe** \> **Podatek 1099** \> **Rozliczenia dostawcy dotyczące deklaracji 1099**, wprowadź odpowiednie wartości w polach **Od dnia** i **Do dnia**, a następnie wybierz opcję **Ręczne transakcje podatku 1099**.
 
     Dostępne są tylko transakcje załącznika V-00001. Nie są dostępne żadne transakcje związane z załącznikiem V-00002, nawet jeśli w pliku programu Excel wykryto błąd dotyczący ostatniej zaimportowanej transakcji.
-

@@ -1,13 +1,13 @@
 ---
-title: "Inwentaryzacja ciągła"
-description: "W tym artykule opisano sposób używania inwentaryzacji ciągłej w aplikacji magazynowej dostępnej w module zarządzania magazynem. Artykuł nie ma zastosowania do aplikacji magazynowej zawartej w module zarządzania zapasami."
+title: Inwentaryzacja ciągła
+description: W tym artykule opisano sposób używania inwentaryzacji ciągłej w aplikacji magazynowej dostępnej w module zarządzania magazynem. Artykuł nie ma zastosowania do aplikacji magazynowej zawartej w module zarządzania zapasami.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9da40e90982d9d4aca38890ed121782f4236712d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323233"
 ---
-
 # <a name="cycle-counting"></a>Inwentaryzacja ciągła
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ W tym artykule opisano sposób używania inwentaryzacji ciągłej w aplikacji ma
 Inwentaryzacja cykliczna jest procesem magazynowym, który służy do inspekcji pozycji magazynowych. Proces inwentaryzacji ciągłej można opisać w trzech krokach:
 
 1.  **Tworzenie inwentaryzacji ciągłej** — Praca inwentaryzacji ciągłej może być tworzona automatycznie na podstawie parametrów progu dla towarów lub za pomocą planu inwentaryzacji ciągłej. Alternatywnie można ręcznie utworzyć pracę inwentaryzacji ciągłej za pomocą parametrów towaru lub magazynu na stronie **Praca inwentaryzacji ciągłej wg pozycji** lub stronie **Praca inwentaryzacji ciągłej wg lokalizacji**.
-2.  **Przetwarzaj inwentaryzację ciągłą** — Po utworzeniu pracy inwentaryzacji ciągłej można wykonać tę pracę, zliczając towary w lokalizacji w magazynie, a następnie za pomocą urządzenia przenośnego wprowadzając wynik w programie Microsoft Dynamics 365 for Finance and Operations. Ewentualnie można zliczyć towary w jednej lokalizacji bez tworzenia inwentaryzacji ciągłej. Ten proces jest określany jako *inwentaryzacja ciągła punktowa*.
+2.  **Przetwarzaj inwentaryzację ciągłą** — Po utworzeniu pracy inwentaryzacji ciągłej można wykonać tę pracę, zliczając towary w lokalizacji w magazynie, a następnie za pomocą urządzenia przenośnego wprowadzając wynik w Microsoft Dynamics 365 for Finance and Operations. Ewentualnie można zliczyć towary w jednej lokalizacji bez tworzenia inwentaryzacji ciągłej. Ten proces jest określany jako *inwentaryzacja ciągła punktowa*.
 3.  **Uzgadnianie różnic w policzonej wartości** — Po wykonaniu inwentaryzacji cyklicznej wszystkie towary, dla których istnieją różnice w zliczonej wartości, będą miały stan pracy **Oczekiwanie na przegląd** na stronie **Cała praca**. Różnice te można uzgodnić na stronie **Praca inwentaryzacji ciągłej oczekuje na przegląd**.
 
 Poniższa ilustracja pokazuje proces inwentaryzacji ciągłej. ![Przebieg procesu w przypadku inwentaryzacji ciągłej](./media/performcyclecountinginawarehouselocation.jpg)
@@ -138,7 +137,6 @@ Na stronie **Inwentaryzacja cykliczna oczekuje na przegląd** można uzgodnić r
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 [Konfigurowanie urządzeń przenośnych do pracy w magazynie](configure-mobile-devices-warehouse.md)
-
 
 
 

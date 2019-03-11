@@ -1,13 +1,13 @@
 ---
-title: "Projektant formuł w module Raportowanie elektroniczne (ER)"
-description: "W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER)."
+title: Projektant formuł w module Raportowanie elektroniczne (ER)
+description: W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 10/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
 ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/23/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331283"
 ---
-
 # <a name="formula-designer-in-electronic-reporting-er"></a>Projektant formuł w module Raportowanie elektroniczne (ER)
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elekt
 
 Moduł ER obsługuje projektanta formuł. Z tego względu w czasie projektowania można konfigurować wyrażenia, które mogą być używane do następujących zadań w czasie wykonywania:
 
-- Przekształcanie danych otrzymanych z bazy danych programu Microsoft Dynamics 365 for Finance and Operations, które powinny być wprowadzone w modelu danych ER (raportowania elektronicznego) zaprojektowanym jako źródło danych dla formatów ER. (Te przekształcenia mogą na przykład obejmować filtrowanie, grupowanie i konwersję typu danych).
+- Przekształć dane odebrane z bazy danych Microsoft Dynamics 365 for Finance and Operations, które należy wprowadzić w modelu danych ER zaprojektowanym jako źródło danych dla formatów ER. (Te przekształcenia mogą na przykład obejmować filtrowanie, grupowanie i konwersję typu danych).
 - Formatowanie danych, które muszą zostać wysłane do generowanego dokumentu elektronicznego zgodnie z układem i warunkami określonego formatu ER. (Formatowanie może się na przykład odbywać zgodnie z żądanym językiem, kulturą, kodowaniem itd.).
 - Kontrolowanie procesu tworzenia dokumentów elektronicznych. (Wyrażenia mogą na przykład włączać lub wyłączać tworzenie określonych elementów formatu w zależności od przetwarzania danych. Mogą również przerywać proces tworzenia dokumentu lub wysyłać komunikaty do użytkowników).
 
@@ -743,4 +742,3 @@ Model raportowania elektronicznego umożliwia rozszerzanie listy funkcji używan
 
 - [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
 - [Poszerzanie listy funkcji raportowania elektronicznego (ER)](general-electronic-reporting-formulas-list-extension.md)
-

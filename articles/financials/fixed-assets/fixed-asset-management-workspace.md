@@ -1,30 +1,29 @@
 ---
-title: "Obszar roboczy Zarządzanie środkami trwałymi"
-description: "Ten temat zawiera informacje o obszarze roboczym Zarządzanie środkami trwałymi. Ten obszar roboczy pokazuje informacje związane z środkami trwałymi wprowadzonymi w systemie. Zawiera widoki podsumowania i analizy."
+title: Obszar roboczy Zarządzanie środkami trwałymi
+description: Ten temat zawiera informacje o obszarze roboczym Zarządzanie środkami trwałymi. Ten obszar roboczy pokazuje informacje związane z środkami trwałymi wprowadzonymi w systemie. Zawiera widoki podsumowania i analizy.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 1e8e02bf308b5506aef41d302755911f6a9ce3e4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8425387d4004e02e9b8adf9ba3b31a0b4e02b6e9
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352328"
 ---
-
 # <a name="fixed-asset-management-workspace"></a>Obszar roboczy Zarządzanie środkami trwałymi
 
 [!include [banner](../includes/banner.md)]
@@ -75,4 +74,3 @@ W poniższej tabeli pokazano wizualizacje dostępne na każdej stronie raportu.
 | Mapy wycen        | Szczegóły dotyczące środków trwałych |
 
 Aby wyświetlić analizy z danymi, należy najpierw odświeżyć zagregowaną miarę AssetTransactionMeasure na stronie **Magazyn jednostek**.
-

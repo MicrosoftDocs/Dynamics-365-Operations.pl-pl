@@ -1,13 +1,13 @@
 ---
-title: "Funkcjonalność konstruktora BOM"
-description: "W tym temacie opisano, jak za pomocą strony projektanta BOM zaprojektować struktury drzewa dla list składowych (BOM) oraz ich używać."
+title: Funkcjonalność konstruktora BOM
+description: W tym temacie opisano, jak za pomocą strony projektanta BOM zaprojektować struktury drzewa dla list składowych (BOM) oraz ich używać.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMDesigner
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d3bae68c9daf7aaaee1802e1def64d04ccea01b8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b7d4530ecccf18d9370d84ff2b61be1514b80192
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338160"
 ---
-
 # <a name="bom-designer-functionality"></a>Funkcjonalność konstruktora BOM
 
 [!include [banner](../includes/banner.md)]
@@ -117,7 +116,6 @@ Kliknij **Ustawienia**, aby dostosować dane wyświetlane w widoku drzewa w Kons
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | lista BOM         | Użyj pól wyboru, aby wybrać kryteria pokazane w strukturze drzewa. W Konstruktorze BOM wybrane kryteria są wyświetlane u dołu obydwu kart. |
 | Trasa       | Użyj pól wyboru, aby wybrać kryteria pokazane dla marszrut.                                                                                    |
-
 
 
 

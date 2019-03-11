@@ -1,13 +1,13 @@
 ---
-title: "Pakiet zawartości usługi Power BI Szkolenia"
-description: "W tym temacie opisano pakiet zawartość Szkolenia dostępny dla usługi Power BI."
+title: Pakiet zawartości usługi Power BI Szkolenia
+description: W tym temacie opisano pakiet zawartość Szkolenia dostępny dla usługi Power BI.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,28 +15,27 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a4ea4606f9987bc08565d43a1f05243acf88883c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ee0cc2e22609d1a87e7d2b6dcd031606191f879
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321462"
 ---
-
 # <a name="learning-power-bi-content"></a>Pakiet zawartości usługi Power BI Szkolenia
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartość **Szkolenia** dostępny dla usługi Microsoft Power BI.
 
-## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty dostępne w pakiecie zawartości dla usługi Power BI
 
 Raporty dostępne w pakiecie zawartości usługi Power BI **Szkolenia** mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
 
 | Raport                | Zawartość |
 |-----------------------|----------|
 | Przegląd szkoleń     | Podsumowanie innych raportów |
-| Analiza kursu       | Rejestracje według lokalizacji, uczestnicy według stanu, kursy według typu dla każdej firmy oraz uczestnictwo w kursach według zadań |
+| Analiza kursu       | Rejestracje według lokalizacji, uczestnicy według stanu, kursy według typu dla każdej firmy oraz uczestnictwo w kursach według zadań |
 | Analiza rejestracji | Lista rejestracyjna |
 | Typy kursów          | Typy kursów wg kwalifikacji |
 | Analiza instruktorów   | Stosunek liczby kursów do liczby instruktorów, liczba instruktorów, kursy według instruktorów, kursy na jednego instruktora oraz terminarze kursów według instruktorów |
@@ -64,4 +63,3 @@ Następujące dane są używane do wypełniania raportów w pakiecie zawartości
 | Pozycja         | Stanowisko, tytuł i równoważnik pełnego etatu (FTE)                  | Terminarz kursu, Uczestnicy kursu |
 | Nazwisko pracownika etatowego    | Imię, drugie imię i nazwisko                             | Uczestnicy kursu |
 | Tytuł pracownika   | Tytuł i data ustalenia stażu pracy                                         | Uczestnicy kursu |
-

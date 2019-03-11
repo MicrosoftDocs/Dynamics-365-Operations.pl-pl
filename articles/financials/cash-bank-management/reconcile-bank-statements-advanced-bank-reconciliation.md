@@ -1,13 +1,13 @@
 ---
-title: "Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego"
-description: "Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych, a następnie ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Finance and Operations. W tym temacie opisano proces uzgadniania."
+title: Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego
+description: Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych, a następnie ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Finance and Operations. W tym temacie opisano proces uzgadniania.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 93b311d541ab588be82e6704dbe9ae3e43deabba
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: ed3a1fae6ca30b9411fde47e7ef8a08150d7d748
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364978"
 ---
-
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego
 
 [!include [banner](../includes/banner.md)]
@@ -94,7 +93,6 @@ Po ukończeniu procesu uzgadniania należy oznaczyć arkusz uzgadniania konta ba
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Księgowanie nowych transakcji skojarzonych z uzgodnieniem
 Transakcje na wyciągu bankowym, które w arkuszu uzgadniania zostały oznaczone jako **Nowy**, są księgowane na stronie **Wyciąg bankowy**. Na stronie **Wyciąg bankowy** zaznacz identyfikator wyciągu, aby wyświetlić szczegóły wyciągu. W menu **Księgowanie** można użyć opcji **Wyświetl dystrybucje** i **Wyświetl księgowanie**, aby wyświetlić szczegóły stojące za nowymi transakcjami i powiązanymi zapisami księgi. Zaznacz opcję **Księguj**, aby w księdze głównej księgować wiersze wyciągu bankowego oznaczone jako **Nowy**. Należy pamiętać, że księgowanie można wykonać tylko raz dla każdego wyciągu bankowego.
-
 
 
 

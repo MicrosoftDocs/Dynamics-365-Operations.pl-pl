@@ -1,13 +1,13 @@
 ---
-title: "Symulacja zmian kosztów przy użyciu wersji wyceny kosztów planowanych"
-description: "W tym artykule wyjaśniono, jak symulować wpływ zmian kosztów na obliczone koszty wytwarzanego towaru poprzez użycie osobnej wersji wyceny dla kosztów planowanych."
+title: Symulacja zmian kosztów przy użyciu wersji wyceny kosztów planowanych
+description: W tym artykule wyjaśniono, jak symulować wpływ zmian kosztów na obliczone koszty wytwarzanego towaru poprzez użycie osobnej wersji wyceny dla kosztów planowanych.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3ef3cdb2ede2c30609db4addfc10b819629cdc64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8d5b6354ee8c627014a6da675bb2a7b52db97348
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318886"
 ---
-
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Symulacja zmian kosztów przy użyciu wersji wyceny kosztów planowanych
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,6 @@ W poniższych scenariuszach przedstawiono użycie wersji wyceny w symulacjach w 
 -   Przeprowadź symulację zmiany kosztu w formule obliczania kosztów pośrednich. Na przykład zmiana kosztu może odzwierciedlać oczekiwany wzrost lub spadek kosztów ogólnych produkcji. Aby zdefiniować zmianę w formule obliczania kosztów pośrednich, na stronie **Konfiguracja arkusza wyceny** wprowadź rekord kosztów oczekujących w wersji wyceny dla symulacji, sprawdź poprawność i zapisz zmianę.
 
 Po wprowadzeniu symulowanych zmian kosztów oblicz koszty wytwarzanych towarów, na które wpłynęły zmiany. Na stronie **Obliczanie** dla wersji wyceny w symulacji zidentyfikuj wybrane produkowane towary, na które wpłynie zmiana kosztu. Jeśli nie wybierzesz konkretnych towarów, obliczenia BOM będą dotyczyć wszystkich wytwarzanych towarów. Alternatywnie za pomocą opcji obliczania BOM można zaktualizować dane miejsc użycia. Wyświetl rekordy kosztów towaru w wersji wyceny w symulacji w celu przeanalizowania wpływu symulowanych zmian kosztów na koszty wybranych wytwarzanych towarów. Do wyświetlania i analizowania kosztów służą strony **Cena pozycji** i **Oblicz koszt pozycji**.
-
 
 
 

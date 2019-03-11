@@ -1,13 +1,13 @@
 ---
-title: "Rejestrator zadań i Pomoc dla aplikacji Retail Modern POS (MPOS) i Cloud POS"
-description: "W tym temacie opisano, jak korzystać z Rejestratora zadań w programach Retail Modern POS (MPOS) i Cloud POS."
+title: Rejestrator zadań i Pomoc dla aplikacji Retail Modern POS (MPOS) i Cloud POS
+description: W tym temacie opisano, jak korzystać z Rejestratora zadań w programach Retail Modern POS (MPOS) i Cloud POS.
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: a74a1275f08e3dba60a1002a102e143eb37fcd9a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346003"
 ---
-
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Rejestrator zadań i Pomoc dla aplikacji Retail Modern POS (MPOS) i Cloud POS
 
 [!include [banner](includes/banner.md)]
@@ -80,7 +79,7 @@ Po zakończeniu sesji rejestrowania wyświetlanych jest kilka opcji, dzięki cze
 
 ### <a name="save-to-this-pc"></a>Zapisz na tym komputerze
 
-Pakiet rejestracji umożliwia odtwarzanie przewodnika po zadaniu, obsługę rejestrowania oraz edytowanie adnotacji do nagrania. (Funkcja ta nie została jeszcze zaimplementowana w programie Retail Modern POS i Cloud POS.)
+Pakiet rejestracji umożliwia odtwarzanie przewodnika po zadaniu, obsługę rejestrowania oraz edytowanie adnotacji do nagrania. (Funkcja ta nie została jeszcze zaimplementowana w programie Retail Modern POS i Cloud POS).
 
 ### <a name="export-as-word-document"></a>Eksportuj jako dokument programu Word
 
@@ -147,4 +146,3 @@ Po kliknięciu pozycji Przewodnik po zadaniu w wynikach wyszukiwania można wyś
 
 > [!NOTE]
 > Pomoc w programach Retail Modern POS and Cloud POS nie powoduje uruchamiania przewodników po zadaniach dopasowanych do otwartego formularza lub wykonywanej operacji. Należy wpisać nazwę procesu w polu wyszukiwania, a następnie kliknąć przycisk **Szukaj**.
-

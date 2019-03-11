@@ -1,13 +1,13 @@
---- 
-title: "Przegląd płatności odbiorców"
-description: "Ten przewodnik zadania zawiera instruktaż różnych metod służących do wprowadzania płatności od odbiorców."
+---
+title: Przegląd płatności odbiorców
+description: Ten przewodnik zadania zawiera instruktaż różnych metod służących do wprowadzania płatności od odbiorców.
 author: kweekley
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6e82be0d68165f62bbdc72a70b0675c7418b14ae
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e6e10d0d0a05b0594ba5cf6a77f474b461bd9dca
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317414"
 ---
 # <a name="customer-payment-overview"></a>Przegląd płatności odbiorców
 
@@ -62,5 +62,4 @@ Ten przewodnik zadania zawiera instruktaż różnych metod służących do wprow
 21. W polu Odwołanie do płatności wprowadź odwołanie do płatności. ,
     * Odwołanie do płatności jest wymagane tylko wtedy, jeśli płatność oznaczono do uwzględnienia na dokumencie wpłaty.  
 22. Zaksięguj płatności od odbiorcy. 
-
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Weryfikacja zatrudnienia weryfikacja i9
-description: "Zgodnie z Ustawą o reformie przepisów imigracyjnych i kontroli imigracji (IRCA) pracodawcy w Stanach Zjednoczonych muszą sprawdzać, czy nowo zatrudniani przez nich pracownicy mają odpowiednie zezwolenie na pracę."
+description: Zgodnie z Ustawą o reformie przepisów imigracyjnych i kontroli imigracji (IRCA) pracodawcy w Stanach Zjednoczonych muszą sprawdzać, czy nowo zatrudniani przez nich pracownicy mają odpowiednie zezwolenie na pracę.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document
 audience: Application User
 ms.reviewer: josaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4d7346507179d237f60459978b9b7c6351f48611
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333330"
 ---
 # <a name="employment-verification-i9-verification"></a>Weryfikacja zatrudnienia weryfikacja i9
 
@@ -54,5 +54,4 @@ Zgodnie z Ustawą o reformie przepisów imigracyjnych i kontroli imigracji (IRCA
 21. W polu Typ dokumentów I-9 zaznacz typ dokumentu dostarczonego przez pracownika.
 22. W polu Numer dokumentu wprowadź lub wybierz wartość.
 23. Kliknij przycisk Zapisz.
-
 

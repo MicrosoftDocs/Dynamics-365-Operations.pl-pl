@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie zabezpieczeń pakietu zawartości usługi Power BI Analiza rachunku kosztów"
-description: "W tym temacie wyjaśniono, jak można rozpowszechnić zabezpieczenia na poziomie dostępu w module Rachunek kosztów do zabezpieczeń na poziomie wierszy w usłudze Microsoft Power BI. Ta funkcja pomaga zagwarantować, że użytkownicy widzą tylko dane usługi Power BI, do których mają dostęp."
+title: Konfigurowanie zabezpieczeń pakietu zawartości usługi Power BI Analiza rachunku kosztów
+description: W tym temacie wyjaśniono, jak można rozpowszechnić zabezpieczenia na poziomie dostępu w module Rachunek kosztów do zabezpieczeń na poziomie wierszy w usłudze Microsoft Power BI. Ta funkcja pomaga zagwarantować, że użytkownicy widzą tylko dane usługi Power BI, do których mają dostęp.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: d1cd378a58d4a4fe4388238f97e84a8e2b07937b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352880"
 ---
-
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Konfigurowanie zabezpieczeń pakietu zawartości usługi Power BI Analiza rachunku kosztów
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Pakiet zawartości **Analiza rachunku kosztów** dla usługi Microsoft Power BI 
 Aby rozpowszechnić zabezpieczenia na poziomie dostępu do usługi Power BI, właściciel pakietu zawartości usługi Power BI musi wykonać czynności opisane poniżej.
 
 > [!NOTE]
-> Użytkownik, który publikuje pakiet zawartości usługi Power BI **Analiza rachunku kosztów**, automatycznie staje się właścicielem. Tylko właściciel może konfigurować zabezpieczenia w usłudze Power BI. Dodatkowo dopóki właściciel nie doda innych użytkowników w witrynie PowerBI.com, nikt oprócz niego nie będzie widział żadnych danych w pakiecie zawartości **Analiza rachunku kosztów**.
+> Użytkownik, który publikuje pakiet zawartości usługi Power BI **Analiza rachunku kosztów**, automatycznie staje się właścicielem. Tylko właściciel może konfigurować zabezpieczenia w usłudze Power BI. Dodatkowo dopóki właściciel nie doda innych użytkowników w witrynie PowerBI.com, nikt oprócz niego nie będzie widział żadnych danych w pakiecie zawartości **Analiza rachunku kosztów** usługi Power BI.
 
 1. Opublikuj plik definicji do usługi Power BI.
 2. Zaloguj się w witrynie PowerBI.com.
@@ -65,4 +64,3 @@ Zakładamy, że Twoja organizacja chce ograniczyć dostęp do danych. Jeśli z j
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie wierszy w usłudze Power BI, zobacz [Zarządzanie zabezpieczeniami modelu w usłudze Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
-

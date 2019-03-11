@@ -1,13 +1,13 @@
---- 
-title: "Przeglądanie informacji o windykacji"
-description: "Ta procedura prowadzi przez proces sprawdzania informacji o windykacji, a także różnych opcji konfiguracji i transakcji windykacji."
+---
+title: Przeglądanie informacji o windykacji
+description: Ta procedura prowadzi przez proces sprawdzania informacji o windykacji, a także różnych opcji konfiguracji i transakcji windykacji.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 44d89d2bacc8f301a19bfd09d229809d492a55fb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: eb0866505702ec5d047b6c8f3f0657aae787bedc
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349108"
 ---
 # <a name="review-collections-information"></a>Przeglądanie informacji o windykacji
 
@@ -131,5 +131,4 @@ Ta procedura prowadzi przez proces sprawdzania informacji o windykacji, a także
     * Wybierz sprawę windykacji przypisaną do odbiorcy lub pozostaw to pole puste. W przypadku wybrania sprawy w tym formularzu są wyświetlane tylko transakcje i działania skojarzone z tą sprawą.  
 8. Kliknij opcję Pokaż listę.
     * Wybierz konto odbiorcy lub zaakceptuj wpis domyślny. Domyślnie jest to konto odbiorcy wybrane na stronie listy lub w formularzu, z którego otwarto ten formularz. Jeśli formularz otwarto ze strony listy, odbiorcami na liście są odbiorcy należący do puli windykacji używanej na stronie listy.  
-
 

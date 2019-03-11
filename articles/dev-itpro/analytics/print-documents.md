@@ -1,13 +1,13 @@
 ---
-title: "Drukowanie dokumentów"
-description: "W programie Microsoft Dynamics 365 for Finance and Operations dokumenty można drukować przy użyciu drukarki lokalnej lub urządzenia podłączonego do sieci. Ten artykuł zawiera omówienie sposobu drukowania dokumentów."
+title: Drukowanie dokumentów
+description: W Microsoft Dynamics 365 for Finance and Operations dokumenty można drukować przy użyciu drukarki lokalnej lub urządzenia podłączonego do sieci. Ten artykuł zawiera omówienie sposobu drukowania dokumentów.
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro, Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 4fd20022ff91fedb6d0323e82fbe3c1acae38e48
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362057"
 ---
-
 # <a name="document-printing"></a>Drukowanie dokumentów
 
 [!include [banner](../includes/banner.md)]
 
-W programie Microsoft Dynamics 365 for Finance and Operations dokumenty można drukować przy użyciu drukarki lokalnej lub urządzenia podłączonego do sieci. Ten artykuł zawiera omówienie sposobu drukowania dokumentów.
+W Microsoft Dynamics 365 for Finance and Operations dokumenty można drukować przy użyciu drukarki lokalnej lub urządzenia podłączonego do sieci. Ten artykuł zawiera omówienie sposobu drukowania dokumentów.
 
 ## <a name="printing-overview"></a>Ogólne informacje o drukowaniu
 
-Program Microsoft Dynamics 365 for Finance and Operations zawiera zintegrowane usługi i aplikacje klienckie, które pozwalają łatwo generować, przechowywać i rozpowszechniać dokumenty wspierające działalność biznesową. W programie Finance and Operations dokumenty można drukować przy użyciu drukarki lokalnej lub urządzenia podłączonego do sieci. Ponadto strony i raporty programu Finance and Operations można eksportować bezpośrednio z klienta jako pliki PDF lub dokumenty programu Microsoft Office. Funkcja rozproszonego obciążenia pracą pozwala drukować dokumenty biznesowe bezpośrednio z urządzenia przenośnego przy użyciu zasobów sieciowych. Wymagania dotyczące drukowania mogą się różnić, jednak zwykle we wszystkich branżach trzeba tworzyć drukowane kopie dokumentów biznesowych przy użyciu programu Finance and Operations. Drukowanie dokumentów na urządzeniach sieciowych z hostowanych aplikacji stwarza unikatowe wyzwania. Oto kilka przykładów:
+Microsoft Dynamics 365 for Finance and Operations zawiera zintegrowane usługi i aplikacje klienckie, które pozwalają łatwo generować, przechowywać i rozpowszechniać dokumenty wspierające działalność biznesową. W programie Finance and Operations dokumenty można drukować przy użyciu drukarki lokalnej lub urządzenia podłączonego do sieci. Ponadto strony i raporty programu Finance and Operations można eksportować bezpośrednio z klienta jako pliki PDF lub dokumenty programu Microsoft Office. Funkcja rozproszonego obciążenia pracą pozwala drukować dokumenty biznesowe bezpośrednio z urządzenia przenośnego przy użyciu zasobów sieciowych. Wymagania dotyczące drukowania mogą się różnić, jednak zwykle we wszystkich branżach trzeba tworzyć drukowane kopie dokumentów biznesowych przy użyciu programu Finance and Operations. Drukowanie dokumentów na urządzeniach sieciowych z hostowanych aplikacji stwarza unikatowe wyzwania. Oto kilka przykładów:
 
 - Sterowniki druku mogą być niedostępne na urządzeniu użytkownika.
 - Urządzenie użytkownika może nie być podłączone do firmowej sieci.
@@ -76,4 +75,3 @@ Na poniższym diagramie przedstawiono podstawowe składniki pomagające obsługi
 [![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Należy zwrócić uwagę, że jedną drukarkę można zarejestrować w wielu Agentach rozsyłania dokumentów. Aby odczytywać preferencje drukarki, hostowana usługa używa ścieżki sieciowej, która unikatowo identyfikuje każdą drukarkę sieciową. W związku z tym nawet jeśli drukarka jest zarejestrowana na wielu klientach, pojawia się jako jedna opcja wyboru na liście dostępnych drukarek w aplikacjach rozwiązania Finance and Operations.
-

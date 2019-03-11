@@ -1,32 +1,30 @@
 ---
-title: "Aktualizowanie faktur w związku ze zwrotami"
-description: "Ta funkcjonalność obsługuje również procesy biznesowe w organizacjach, które określą, że zamówienia zwrotu i zamówienia sprzedaży mają być fakturowane w tym samym czasie i przez tę samą osobę."
+title: Aktualizowanie faktur w związku ze zwrotami
+description: Ta funkcjonalność obsługuje również procesy biznesowe w organizacjach, które określą, że zamówienia zwrotu i zamówienia sprzedaży mają być fakturowane w tym samym czasie i przez tę samą osobę.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2f962641f7fdae18a360567d6f37348fabbfc302
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 53ae1c3bda06d07a0ca633981ddd46092eae507e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364380"
 ---
-
-
 # <a name="perform-invoice-updates-for-returns"></a>Aktualizowanie faktur w związku ze zwrotami 
 
 [!include [banner](../includes/banner.md)]
@@ -57,6 +55,5 @@ W przypadku skonfigurowania wsadowego przetwarzania aktualizacji faktur zamówie
 [Aktualizowanie dokumentów dostawy w związku ze zwrotami](packing-slip-updates-returns.md)
 
   
-
 
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Tworzenie metody punktowania dla ZO
-description: "W tej procedurze pokazano sposób tworzenia metody punktowania."
+description: W tej procedurze pokazano sposób tworzenia metody punktowania.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQScoringMethod
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 98bcffdf63e20a0a620aa87b44449ce13a5df2fe
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6d72678db60254801c6c899f4d405f1c59de8d65
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342714"
 ---
 # <a name="create-a-scoring-method-for-rfqs"></a>Tworzenie metody punktowania dla ZO
 
@@ -46,5 +46,4 @@ W tej procedurze pokazano sposób tworzenia metody punktowania. Metoda punktowan
 13. Wypełnij pole Opis.
 14. W polu Początek zakresu wpisz liczbę.
 15. W polu Koniec zakresu wpisz liczbę.
-
 

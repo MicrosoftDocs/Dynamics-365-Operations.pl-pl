@@ -1,13 +1,13 @@
 ---
-title: "Ustawianie masek kodów kreskowych"
-description: "W tym temacie opisano, jak konfigurować znaki maski kodów kreskowych i maski kodów kreskowych oraz jak przypisywać maski kodów kreskowych do kodów kreskowych."
+title: Ustawianie masek kodów kreskowych
+description: W tym temacie opisano, jak konfigurować znaki maski kodów kreskowych i maski kodów kreskowych oraz jak przypisywać maski kodów kreskowych do kodów kreskowych.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d3527807650061804212abf67e536c17078aabf9
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340621"
 ---
-
 # <a name="set-up-bar-code-masks"></a>Ustawianie masek kodów kreskowych
 
 [!include [banner](includes/banner.md)]
@@ -84,4 +83,3 @@ Aby można było używać masek kodów kreskowych, muszą one zostać przypisane
 5. Kliknij przycisk **Zapisz**.
 
 Teraz można używać maski kodu kreskowego do tworzenia kodów kreskowych dla produktów. Powyższe czynności są przykładowym sposobem tworzenia masek kodów kreskowych dla produktów, ale także ilustrują sposób tworzenia masek kodów kreskowych dla dowolnych obsługiwanych typów kodów kreskowych. Maski, typy i długości kodów kreskowych należy dostosowywać do użytku w swoim konkretnym środowisku.
-

@@ -1,13 +1,13 @@
 ---
-title: "przepływ pracy zapotrzebowań zakupu"
-description: "Przepływ pracy prowadzi zapotrzebowanie na zakup przez proces weryfikacji — od początkowego stanu Wersja robocza do końcowego Zatwierdzone. Gdy zapotrzebowanie na zakup zostanie przesłane do przeglądu, rozpoczyna się proces przepływu pracy. Po zatwierdzeniu zapotrzebowania na zakup można wygenerować zamówienie zakupu dla wierszy zapotrzebowania na zakup i przesłać do dostawcy w celu realizacji zamówienia."
+title: przepływ pracy zapotrzebowań zakupu
+description: Przepływ pracy prowadzi zapotrzebowanie na zakup przez proces weryfikacji — od początkowego stanu Wersja robocza do końcowego Zatwierdzone. Gdy zapotrzebowanie na zakup zostanie przesłane do przeglądu, rozpoczyna się proces przepływu pracy. Po zatwierdzeniu zapotrzebowania na zakup można wygenerować zamówienie zakupu dla wierszy zapotrzebowania na zakup i przesłać do dostawcy w celu realizacji zamówienia.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0adc43f3ed238a7a49cde44dd5f2d3bd55201cb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a5dcc294b3dde7dc7e0f789d9e7678b75bc699b0
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355778"
 ---
-
 # <a name="purchase-requisition-workflow"></a>przepływ pracy zapotrzebowań zakupu
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Aby skorzystać z jednej z osób sprawdzających wydatki, które zostały skonfi
 [Przepływy pracy dla zaopatrzenia i sourcingu](procurement-sourcing-workflows.md)
 
 [Omówienie zapotrzebowania na zakup](purchase-requisitions-overview.md)
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Opracowywanie struktury i planu pensji/wynagrodzeń"
-description: "W tym przewodniku po zadaniu pokazano kolejne etapy procesu tworzenia planu stałych wynagrodzeń oraz włączania pracowników do planu za pomocą reguł uprawnienia."
+---
+title: Opracowywanie struktury i planu pensji/wynagrodzeń
+description: W tym przewodniku po zadaniu pokazano kolejne etapy procesu tworzenia planu stałych wynagrodzeń oraz włączania pracowników do planu za pomocą reguł uprawnienia.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 28d044cedbcc9f483a4deb7739aef0f8e3abf9ec
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332778"
 ---
 # <a name="develop-salarycompensation-structure-and-plan"></a>Opracowywanie struktury i planu pensji/wynagrodzeń
 
@@ -74,5 +74,4 @@ W tym przewodniku po zadaniu pokazano kolejne etapy procesu tworzenia planu sta�
     * Wybierz kryteria, które pracownik musi spełnić, aby kwalifikować się do planu wynagrodzeń. Kryteria mogą obejmować dział, związek zawodowy, lokalizację (region wynagrodzeń), zadanie, funkcję, typ zadania lub poziom wynagrodzeń. Aby kwalifikować się do planu wynagrodzeń, pracownik musi spełniać wszystkie kryteria. W razie nieokreślenia kryteriów wszyscy pracownicy kwalifikują się do planu wynagrodzeń. Jeśli pracownik nie spełnia kryteriów określonych w regule uprawnienia lub jeśli nie określono reguły uprawnienia dla planu wynagrodzeń, plan wynagrodzeń nie pojawi się w wynikach wyszukiwania podczas tworzenia rekordu stałego wynagrodzenia dla pracownika.  
 7. Zamknij stronę.
 8. Zamknij stronę.
-
 

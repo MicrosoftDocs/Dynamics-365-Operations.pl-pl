@@ -1,13 +1,13 @@
 ---
-title: "Preferencje użytkownika w projektancie raportów finansowych"
-description: "W tym artykule wyjaśniono, jak skonfigurować preferencje użytkownika, aby dostosować swoje interakcje w projektancie raportów finansowych i kontrolować zachowanie interfejsu podczas pierwszego logowania. Można też kontrolować sposób wyświetlania indywidualnych raportów, biblioteki raportów i domyślnych lokalizacje plików."
+title: Preferencje użytkownika w projektancie raportów finansowych
+description: W tym artykule wyjaśniono, jak skonfigurować preferencje użytkownika, aby dostosować swoje interakcje w projektancie raportów finansowych i kontrolować zachowanie interfejsu podczas pierwszego logowania. Można też kontrolować sposób wyświetlania indywidualnych raportów, biblioteki raportów i domyślnych lokalizacje plików.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 5483a1d40907fab3ed3da8174f1dfb8a5bc86960
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324222"
 ---
-
 # <a name="user-preferences-in-financial-report-designer"></a>Preferencje użytkownika w projektancie raportów finansowych
 
 [!include [banner](../includes/banner.md)]
@@ -74,4 +73,3 @@ W tym artykule wyjaśniono, jak skonfigurować preferencje użytkownika, aby dos
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
-

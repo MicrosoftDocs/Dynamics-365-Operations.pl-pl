@@ -1,13 +1,13 @@
---- 
-title: "Przywróć stan zadania Kanban"
-description: "Ta procedura skupia się na cofnięciu błędnego stanu zadania w systemie Kanban."
+---
+title: Przywróć stan zadania Kanban
+description: Ta procedura skupia się na cofnięciu błędnego stanu zadania w systemie Kanban.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 27874f89cede151b52b869fa0d58e320d548e6d3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 55d359232da5f3087b1e6baed182a20da09aeff7
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352098"
 ---
 # <a name="revert-kanban-job-status"></a>Przywróć stan zadania Kanban
 
@@ -54,5 +54,4 @@ Ta procedura skupia się na cofnięciu błędnego stanu zadania w systemie Kanba
 5. Na liście usuń oznaczenie wybranego wiersza.
     * Wybierz to samo zadanie.  
     * Należy zauważyć, że stan zadania w systemie kanban został przywrócony do Zaplanowane, co jest wskazywane przez pustą ikonę na karcie Kanban.  
-
 

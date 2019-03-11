@@ -1,13 +1,13 @@
 ---
-title: "Generowanie raportów poprzez dodawanie treści w postaci nieprzetworzonego kodu XML"
-description: "Można zaprojektować formaty raportów elektronicznych ER, które wygenerują wychodzące dokumenty w formacie XML."
+title: Generowanie raportów poprzez dodawanie treści w postaci nieprzetworzonego kodu XML
+description: Można zaprojektować formaty raportów elektronicznych ER, które wygenerują wychodzące dokumenty w formacie XML.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 39503d051e3b4686bbaa0130fe5be7cb980fbcb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312193"
 ---
-
 # <a name="generate-reports-by-adding-content-as-raw-xml"></a>Generowanie raportów poprzez dodawanie treści w postaci nieprzetworzonego kodu XML
 
 [!include[banner](../includes/banner.md)]
@@ -39,4 +38,3 @@ Można użyć nowego elementu formatu **RAW XML** do zaprojektowania formatów R
 > Należy pamiętać, że struktura nie kontroluje, czy zawartości XML umieszczana w wygenerowanym dokumencie za pomocą elementu formatu **RAW XML**, jest poprawna.
 
 Aby dowiedzieć się więcej o tej funkcji, należy odtworzyć przewodniki po zadaniach **Użycie nieprzetworzonych danych XML do generowania raportów XML (część 1: model danych)** i **Użycie nieprzetworzonych danych XML do generowania raportów XML (część 2: projektowanie i tworzenie raportów)**, które są częścią procesu biznesowego **7.5.4.3 Pobieranie/opracowywanie składników usług/rozwiązań informatycznych (10677)** i można je pobrać z [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Te wskazówki zadania przeprowadzą Cię przez proces konfigurowania formatu ER w celu wstawienia nieprzetworzonych danych XML do wygenerowanych plików.
-

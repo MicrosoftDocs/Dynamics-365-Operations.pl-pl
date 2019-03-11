@@ -1,13 +1,13 @@
 ---
-title: "Wstrzymywanie i wznawianie transakcji w punkcie sprzedaży (POS)"
-description: "W tym temacie opisano, jak użytkownicy mogą zawiesić transakcje w trakcie wykonywania i następnie wznowić je później lub na innej kasie przy użyciu Microsoft Dynamics 365 for Retail."
+title: Wstrzymywanie i wznawianie transakcji w punkcie sprzedaży (POS)
+description: W tym temacie opisano, jak użytkownicy mogą zawiesić transakcje w trakcie wykonywania i następnie wznowić je później lub na innej kasie przy użyciu Microsoft Dynamics 365 for Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: ffb04609318c7de4b9ef729a8e03a7f9395806b8
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333905"
 ---
-
 # <a name="suspend-and-resume-transactions-in-the-point-of-sale-pos"></a>Wstrzymywanie i wznawianie transakcji w punkcie sprzedaży (POS)
 
 [!include [banner](includes/banner.md)]
@@ -83,4 +82,3 @@ Aby szybko i łatwo wznowić zawieszoną transakcję, zeskanuj kod kreskowy na w
 ### <a name="void-a-suspended-transaction"></a>Unieważnienie zawieszonej transakcji
 
 Można unieważnić zawieszone transakcje przez ich wywołanie a następnie wykonanie operacji **Unieważnij transakcję** lub przez wybranie transakcji z listy **Wycofaj transakcję** i wybranie opcji **Unieważnij**na pasku aplikacji. Ewentualnie można skonfigurować sklepu do wyświetlania użytkownikom monitów o unieważnienie zawieszonych transakcji w chwili kończenia zmiany.
-

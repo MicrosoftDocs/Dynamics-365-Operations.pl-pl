@@ -1,13 +1,13 @@
---- 
-title: "Zatrudnianie istniejących pracowników etatowych przez rekrutację"
-description: "Czasami wolne stanowiska mogą być obsadzane przez kandydatów, którzy są już pracownikami w danej organizacji."
+---
+title: Zatrudnianie istniejących pracowników etatowych przez rekrutację
+description: Czasami wolne stanowiska mogą być obsadzane przez kandydatów, którzy są już pracownikami w danej organizacji.
 author: rschloma
 manager: AnnBe
 ms.date: 02/10/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
 ms.openlocfilehash: 71793ce48142b19b288e2315dcd44a07d8e39f90
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365392"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Zatrudnianie istniejących pracowników etatowych przez rekrutację
 
@@ -40,5 +40,4 @@ Czasami wolne stanowiska mogą być obsadzane przez kandydatów, którzy są ju�
 8. Opcjonalnie można wybrać kod przyczyny. Przykład: Reorganizacja.
 9. Kliknij opcję Zmień stanowisko.
     * W tym momencie można również zmienić wynagrodzenie. Jeśli wynagrodzenie nie zostanie przypisane w tej chwili, można to zmienić, przechodząc do formularza pracownika, klikając kartę Wynagrodzenie i wybierając opcję „Plan stałych wynagrodzeń”. Po zaznaczeniu opcji „Zmień stanowisko” stan zgłoszenia zostanie zaktualizowana na „Zatrudniony”.  
-
 

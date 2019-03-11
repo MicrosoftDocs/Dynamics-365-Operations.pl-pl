@@ -1,32 +1,31 @@
 ---
-title: "Omówienie informacji o produktach"
-description: "Ten temat zawiera informacje dotyczące zarządzania informacjami o produktach. Moduł Zarządzanie informacjami o produktach współpracuje ze wspólnymi definicjami produktów, kategoriami i identyfikatorami we wszystkich firmach, a także z konkretnymi konfiguracjami produktu, tak aby spełnić wszystkie wymagania procesów biznesowych."
+title: Omówienie informacji o produktach
+description: Ten temat zawiera informacje dotyczące zarządzania informacjami o produktach. Moduł Zarządzanie informacjami o produktach współpracuje ze wspólnymi definicjami produktów, kategoriami i identyfikatorami we wszystkich firmach, a także z konkretnymi konfiguracjami produktu, tak aby spełnić wszystkie wymagania procesów biznesowych.
 author: cvocph
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0ac817fc4e8329563e524cea967c8337262fe2c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363023"
 ---
-
 # <a name="product-information-overview"></a>Omówienie informacji o produktach
 
 [!include [banner](../includes/banner.md)]
@@ -97,4 +96,3 @@ Obszar roboczy zawiera podsumowanie kafelków i dwie listy. Lista **Otwarte spra
 ### <a name="manually-creating-a-new-released-product"></a>Ręczne tworzenie nowego zwolnionego produktu
 
 Można ręcznie utworzyć zwolniony produkt w jednej sesji, w zależności od procesów biznesowych stosowanych w organizacji oraz od reguł decydujących o tym, czy tej funkcji należy użyć. Ta funkcja powoduje utworzenie nowego produktu i jego automatyczne zwolnienie do bieżącej firmy. Aby utworzyć nowy produkt, kliknij opcję **Zwolnione produkty** w obszarze roboczym **Obsługa zwolnionego produktu** lub na stronie listy **Zwolniony produkt**.
-

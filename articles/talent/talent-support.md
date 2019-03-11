@@ -1,13 +1,13 @@
 ---
-title: Uzyskiwanie pomocy dla aplikacji Talent
-description: "W tym temacie wyjaśniono, jak uzyskać pomoc dotyczącą aplikacji Dynamics 365 for Talent."
+title: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Talent
+description: W tym temacie wyjaśniono, jak uzyskać pomoc dotyczącą aplikacji Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 1bf37d65cd8ce6a98fc2d2fb11ae9587cf6958a3
 ms.openlocfilehash: 9b2d7159b458b6f3b2cbb3271210c10ab486f496
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305865"
 ---
-
-# <a name="get-support-for-talent"></a>Uzyskiwanie pomocy dla aplikacji Talent
+# <a name="get-support-for-talent"></a>Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Talent
 
 [!include [banner](includes/banner.md)]
 
@@ -55,4 +54,3 @@ Aby uzyskać pomoc techniczną dotyczącą modułów Attract i Onboard, skorzyst
 | Zgłoś problem                                                        | W menu kliknij ikonę **?** i wybierz odpowiednie opcje, aby zgłosić problem. Wypełnij pole opisu problemu oraz dołącz adres e-mail, jeśli chcesz śledzić proces rozwiązywania.                                                                                           |
 | Uzyskiwanie pomocy na temat licencjonowania aplikacji Talent                         | Skontaktuj się z partnerem lub przedstawicielem handlowym firmy Microsoft.                                                                                                                                                                                                                                        |
 | Wnioskowanie o nowe funkcje w modułach Attract i Onboard | Kliknij ikonę **?** i wybierz opcję **Pomysły** lub użyj następujących łączy, aby wyświetlać, wyszukiwać lub opiniować pomysły albo dodawać nowe: [Attract](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract) lub [Onboard](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard). |
-

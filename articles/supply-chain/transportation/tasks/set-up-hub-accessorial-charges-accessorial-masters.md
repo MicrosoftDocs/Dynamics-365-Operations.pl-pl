@@ -1,13 +1,13 @@
---- 
-title: "Konfigurowanie opłat za usługi dodatkowe centrum i danych głównych usług dodatkowych"
-description: "W tej procedurze pokazano sposób tworzenia danych głównych usług dodatkowych dla centrum oraz użycia tych danych do utworzenie opłaty za usługi dodatkowe centrum."
+---
+title: Konfigurowanie opłat za usługi dodatkowe centrum i danych głównych usług dodatkowych
+description: W tej procedurze pokazano sposób tworzenia danych głównych usług dodatkowych dla centrum oraz użycia tych danych do utworzenie opłaty za usługi dodatkowe centrum.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9959c20f9a8fd07cbf0cfd76f7760b44d7b5cae1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6381416640ffacf0a9d96d7da96bc33612ca7137
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331904"
 ---
 # <a name="set-up-hub-accessorial-charges-and-accessorial-masters"></a>Konfigurowanie opłat za usługi dodatkowe centrum i danych głównych usług dodatkowych
 
@@ -52,5 +52,4 @@ W tej procedurze pokazano sposób tworzenia danych głównych usług dodatkowych
     * Wybierz utworzone właśnie dane główne.  
 9. Kliknij przycisk Zapisz.
 10. Zamknij stronę.
-
 

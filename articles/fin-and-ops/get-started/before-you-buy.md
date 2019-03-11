@@ -1,13 +1,13 @@
 ---
 title: Zanim kupisz
-description: "Wytyczne krok po kroku, które warto uwzględnić przy rozważaniu zakupu programu Dynamics 365 for Finance and Operations."
+description: Wytyczne krok po kroku, które warto uwzględnić przy rozważaniu zakupu programu Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 01/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: 7aed6895d526011e353eef7b85e4e2f096a25e5a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345474"
 ---
-
 # <a name="before-you-buy"></a>Zanim kupisz
 
 [!include [banner](../includes/banner.md)]
@@ -97,4 +96,3 @@ Microsoft FastTrack dla Dynamics 365 to usługa wsparcia wdrożeniowego, która 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>W przypadku uaktualniania z systemu Dynamics AX 2012 lub migracji z systemu AX 2009
 
 Jeśli jesteś klientem, który uaktualniania z systemu Microsoft Dynamics AX 2012 lub migruje z systemu Microsoft Dynamics AX 2009, być może masz prawo do dłuższego okresu próbnego. Napisz na adres <daxcf@microsoft.com>, aby uzyskać więcej informacji.
-

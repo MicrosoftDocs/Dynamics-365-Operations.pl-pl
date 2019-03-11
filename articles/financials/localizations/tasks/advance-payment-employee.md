@@ -1,13 +1,13 @@
---- 
+---
 title: EEU 00047 Zaliczka dla pracownika
-description: "Ta procedura pokazuje, jak skonfigurować i zarejestrować transakcje dla posiadacza zaliczki."
+description: Ta procedura pokazuje, jak skonfigurować i zarejestrować transakcje dla posiadacza zaliczki.
 author: v-oloski
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RCashTable, LedgerJournalSetup, HcmWorkerGroup_RU, EmplPosting_RU, VendParameters, RCashPosting, BankParameters, PaymTerm, HcmWorker, HcmWorkerNewWorker, HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU, PurchTable, PurchCreateOrder, HcmAdvHolderLookup_RU, InventItemIdLookupPurchase, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, EmplTrans_RU, EmplBalance_RU
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e3c07789bfa0839436caf32e428f3abeecb8f2b7
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371508"
 ---
 # <a name="eeu-00047-advance-payment-to-employee"></a>EEU 00047 Zaliczka dla pracownika
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura pokazuje, jak skonfigurować i zarejestrować transakcje dla posiadacza zaliczki. Procedurę utworzono przy użyciu danych firmy demonstracyjnej DEMF, której podstawowy adres mieści się na Litwie. To zadanie działa tylko dla firm, których adres podstawowy znajduje się w Polsce, na Litwie, na Łotwie, w Estonii, w Czechach lub na Węgrzech. Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.
+Ta procedura pokazuje, jak skonfigurować i zarejestrować transakcje dla posiadacza zaliczki. Procedurę utworzono przy użyciu danych firmy demonstracyjnej DEMF, której podstawowy adres mieści się na Litwie. To zadanie działa tylko dla firm, których adres podstawowy znajduje się w Polsce, na Litwie, na Łotwie, w Estonii, w Czechach lub na Węgrzech. Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wersji 1611.
 
 
 ## <a name="create-a-new-cash-account"></a>Tworzenie nowego konta kasowego
@@ -170,5 +170,4 @@ Ta procedura pokazuje, jak skonfigurować i zarejestrować transakcje dla posiad
 11. Kliknij przycisk OK.
 12. Zamknij stronę.
 13. Kliknij opcję Transakcje.
-
 

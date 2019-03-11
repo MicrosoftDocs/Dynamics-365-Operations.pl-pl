@@ -1,13 +1,13 @@
 ---
-title: "Limity kredytu dla odbiorców"
-description: "Ten artykuł zawiera omówienie sposobu działania limitów kredytu w programie Microsoft Dynamics 365 for Finance and Operations."
+title: Limity kredytu dla odbiorców
+description: Ten artykuł zawiera omówienie mechanizmu działania limitów kredytowe w Microsoft Dynamics 365 for Finance and Operations.
 author: omulvad
 manager: AnnBe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: josaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8fd7022eb1ed2671fcfc2861eb8ec7504ebf9f98
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e00828ea24434da6dfd7443153b007ea728375f3
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312676"
 ---
-
 # <a name="credit-limits-for-customers"></a>Limity kredytu dla odbiorców
 
 [!include [banner](../includes/banner.md)]
@@ -139,4 +138,3 @@ Czasami konieczne może być ręczne sprawdzenie limitu kredytu odbiorcy. Limit 
 1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Wspólne** \> **Zamówienia sprzedaży** \> **Wszystkie zamówienia sprzedaży**. Kliknij dwukrotnie na zamówienie sprzedaży.
 
 2.  W formularzu **Zamówienie sprzedaży**, w okienku akcji, na karcie **Zarządzaj** kliknij opcję **Sprawdzanie limitu kredytu**.
-

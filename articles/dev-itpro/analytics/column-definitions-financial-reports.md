@@ -1,13 +1,13 @@
 ---
 title: Definicje kolumn w raportach finansowych
-description: "Ten artykuł zawiera informacje o definicjach kolumn. Definicja kolumny to składnik (blok konstrukcyjny) raportu, który określa zawartość kolumn raportu. Podobnie jak definicje wierszy, definicje kolumn podstawowych mogą być używane w wielu raportach."
+description: Ten artykuł zawiera informacje o definicjach kolumn. Definicja kolumny to składnik (blok konstrukcyjny) raportu, który określa zawartość kolumn raportu. Podobnie jak definicje wierszy, definicje kolumn podstawowych mogą być używane w wielu raportach.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356353"
 ---
-
 # <a name="column-definitions-in-financial-reports"></a>Definicje kolumn w raportach finansowych
 
 [!include [banner](../includes/banner.md)]
@@ -121,11 +120,11 @@ W poniższej tabeli opisano kody ograniczeń dotyczących kolumn.
 | ADJ                     | Ograniczenie kwot w kolumnie do kwot korekty okresu, jeśli te kwoty są dostępne. |
 | XAD                     | Ograniczenie kwot w kolumnie, tak aby kwoty korekty okresu były wykluczone. |
 | PT                      | Ograniczenie kwot w kolumnie, tak aby tylko zaksięgowane transakcje były uwzględniane, jeśli transakcje te są dostępne. |
-| UPT                     | Ograniczenie kwot w kolumnie, tak aby tylko niezaksięgowane transakcje były uwzględniane, jeśli transakcje te są dostępne.<blockquote>[!NOTE] Nie wszyscy dostawcy danych obsługują niezaksięgowane transakcje. Aby uzyskać więcej informacji, zobacz <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>Podręcznik integracji danych</a> dla systemu Microsoft Dynamics ERP.</blockquote> |
+| UPT                     | Ograniczenie kwot w kolumnie, tak aby tylko niezaksięgowane transakcje były uwzględniane, jeśli transakcje te są dostępne.<blockquote>[!NOTE] Nie wszyscy dostawcy danych obsługują niezaksięgowane transakcje. Aby uzyskać więcej informacji, zobacz <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>przewodnik integracji danych</a> dla systemu Microsoft Dynamics ERP.</blockquote> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Ograniczanie kolumny do jednostki raportowania
 
-1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1. W Projektancie raportów otwórz definicję kolumn, którą chcesz zmodyfikować.
 2. Kliknij dwukrotnie komórkę **Jednostka raportowania** dla kolumny, którą chcesz ograniczyć.
 3. W oknie dialogowym **Raportowania wyboru jednostki** na liście **Drzewo raportowania** wybierz drzewo.
 4. Rozwiń lub zwiń listy jednostek, wybierz jednostkę raportowania, a następnie kliknij **OK**.
@@ -171,13 +170,13 @@ Za pomocą okna dialogowego **Nagłówek kolumny** można dodawać, modyfikować
 
 ### <a name="create-an-automatically-generated-header"></a>Tworzenie nagłówka generowanego automatycznie
 
-Projektant raportów może automatycznie wygenerować nagłówki kolumn na podstawie kodów autotekstu. Kody autotekstu są wartościami zmiennymi, które są aktualizowane po każdym wygenerowaniu raportu. Każdy nagłówek kolumny może zawierać te kody, aby określać informacje raportu, które mogą być różne, np. daty czy numery okresów. W związku z tym jedna definicja kolumny może być używana w odniesieniu do wielu definicji raportu, okresów czasu i drzew raportowania. Ponieważ kody autotekstu opierają się na informacjach kalendarza z wierszy szczegółów definicji kolumny, są one obsługiwane tylko kolumn **CALC**, **FD** i **WKS**. Sposób wyświetlania kodu autotekstu w nagłówku kolumny ma wpływ na sposób wyświetlania informacji w raporcie. W oknie dialogowym **Nagłówek kolumny** kody autotekstu są wyświetlane z użyciem małych i wielkich liter. Dlatego w także w raporcie tekst jest wyświetlany przy użyciu małych i dużych liter. Na przykład w standardowym roku kalendarzowy kod **@CalMonthLong** rozwiązuje cyfrę **7** do miesiąca **Lipiec**. Jeśli nazwa miesiąca powinna być pisana dużymi literami (na przykład **LIPIEC**), wprowadź kod autotekstu dużymi literami w polu **Tekst nagłówka kolumny**. Na przykład wpisz **@CALMONTHLONG**. Można łączyć ze sobą kody i tekst. Na przykład można wprowadzić następujący tekst nagłówka: **Okres @FiscalPeriod-@FiscalYear od @StartDate do @EndDate**. Generowany nagłówek raportu będzie wyglądał mniej więcej tak: **Okres 1-02 od 01-01-2002 do 31-01-2002**.
+Projektant raportów może automatycznie wygenerować nagłówki kolumn na podstawie kodów autotekstu. Kody autotekstu są wartościami zmiennymi, które są aktualizowane po każdym wygenerowaniu raportu. Każdy nagłówek kolumny może zawierać te kody, aby określać informacje raportu, które mogą być różne, np. daty czy numery okresów. W związku z tym jedna definicja kolumny może być używana w odniesieniu do wielu definicji raportu, okresów czasu i drzew raportowania. Ponieważ kody autotekstu opierają się na informacjach kalendarza z wierszy szczegółów definicji kolumny, są one obsługiwane tylko kolumn **CALC**, **FD** i **WKS**. Sposób wyświetlania kodu autotekstu w nagłówku kolumny ma wpływ na sposób wyświetlania informacji w raporcie. W oknie dialogowym **Nagłówek kolumny** kody autotekstu są wyświetlane z użyciem małych i wielkich liter. Dlatego w także w raporcie tekst jest wyświetlany przy użyciu małych i dużych liter. Na przykład w standardowym roku kalendarzowy kod **@CalMonthLong** rozwiązuje cyfrę **7** do miesiąca **lipca**. Jeśli nazwa miesiąca ma być pisana wielkimi literami (na przykład **LIPIEC**), w polu **Tekst nagłówka kolumny** należy wpisać kod autotekstu składający się z samych wielkich liter. Na przykład wpisz **@CALMONTHLONG**. Można łączyć ze sobą kody i tekst. Na przykład można wprowadzić następujący tekst nagłówka: **Okres @FiscalPeriod-@FiscalYear od @StartDate do @EndDate**. Generowany nagłówek raportu będzie wyglądał mniej więcej tak: **Okres 1-02 od 01-01-2002 do 31-01-2002**.
 
 > [!NOTE]
 > Format niektórych tekstów, np. długich dat, zależy od ustawień regionalnych na serwerze programu Finance and Operations. Aby zmienić te ustawienia, kliknij przycisk **Start**, kliknij **Panel sterowania**, a następnie kliknij **Region i język**. W poniższej tabeli pokazano dostępne opcje autotekstu dla nagłówków kolumn.
 
 
-| Opcja i kod autotekstu                | opis |
+| Opcja i kod autotekstu                | Opis |
 |-----------------------------------------|-------------|
 | Nazwa miesiąca (@CalMonthLong)              | Pozwala drukować nazwę bieżącego miesiąca w nagłówku kolumny. Jeśli użytkownik zdecyduje się zaokrąglać kwoty w raporcie do tysięcy, milionów lub miliardów, lub jeśli szerokość kolumn w raporcie jest mniejsza niż 9 znaków, nazwa miesiąca jest skracana do pierwszych trzech liter. |
 | Skrócona nazwa miesiąca (@CalMonthShort) | Pozwala drukować skróconą nazwę miesiąca dla wybranego okresu obrachunkowego. |
@@ -216,12 +215,12 @@ Nagłówki rozszerzone mogą obejmować kilka kolumn opartych na danych określo
 Phyllis tworzy raport dla dynamicznej prognozy sześciu miesięcy. Chce, aby słowo „Rzeczywiste” było drukowane nad kolumnami zawierającymi dane rzeczywiste, a słowo „Budżet” — nad kolumnami zawierającymi prognozy budżetu. Każdy kolejny generowany raport zawiera o jedną kolumnę z danymi rzeczywistymi więcej i o jedną kolumnę budżetu mniej. Chociaż Phyllis może zmodyfikować definicję kolumny ręcznie za każdym razem, gdy raport jest generowany, aby dopasować nagłówki, to aby przyspieszyć i uprościć tę procedurę, postanawia utworzyć warunkowe nagłówki rozszerzone, które będą automatycznie tworzyły nagłówki nad odpowiednimi kolumnami w każdym kolejnym raporcie. Phyllis otwiera Projektanta raportów, klika opcję **Definicja kolumny** w panelu nawigacyjnym i otwiera definicję kolumny dla raportu. Wpisuje następujące informacje. Wartość okresu podstawowego w definicji raportu wynosi 4.
 
 
-|                     |  A   | mld             | C             | D             | E             | P             | G             | H             | I             | J             | tys.             | W             | P             |
+|                     |  A   | B             | C             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-| Nagłówek 1            |      | Rzeczywista liczba        | Budżet        |               |               |               |               |               |               |               |               |               |               |
+| Nagłówek 1            |      | Rzeczywiste        | Budżetowe        |               |               |               |               |               |               |               |               |               |               |
 | Nagłówek 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
 | Nagłówek 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
-| Typ kolumny         | DESC | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
+| Typ kolumny         | OPIS | WF            | WF            | WF            | WF            | WF            | WF            | WF            | WF            | WF            | WF            | FD            | FD            |
 | Kod/atrybut księgi |      | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    |
 | Rok obrachunkowy         |      | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          |
 | Okres              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
@@ -612,4 +611,3 @@ Można podzielić kwotę w kolumnie przez określoną liczbę okresów. Na przyk
 [Definicje wierszy w raportowaniu finansowym](row-definitions-financial-reporting.md)
 
 [Zaawansowane opcje formatowania w raportowaniu finansowym](advanced-formatting-options-financial-reporting.md)
-

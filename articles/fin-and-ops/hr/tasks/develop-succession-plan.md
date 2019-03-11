@@ -1,13 +1,13 @@
---- 
+---
 title: Opracowywanie planu dziedziczenia
-description: "Wraz z rozwojem organizacji i planowaniem sukcesji często warto znaleźć kogoś, kto ma podobne umiejętności jak inna osoba."
+description: Wraz z rozwojem organizacji i planowaniem sukcesji często warto znaleźć kogoś, kto ma podobne umiejętności jak inna osoba.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmSkillMapping
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 63999252fa00ba474d1e40f696029973f746ba2c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339195"
 ---
 # <a name="develop-succession-plan"></a>Opracowywanie planu dziedziczenia
 
@@ -59,5 +59,4 @@ Wraz z rozwojem organizacji i planowaniem sukcesji często warto znaleźć kogo�
 27. Kliknij przycisk Wynik.
 28. Kliknij przycisk Raport.
     * W raporcie najlepiej pasujące pozycje znajdą się u góry listy.  Widać element luki.  Jest to różnica między poziomem, który został podany w mapowaniu umiejętności, a poziomem umiejętności przypisanym do osoby.  
-
 

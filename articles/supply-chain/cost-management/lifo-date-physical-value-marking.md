@@ -1,13 +1,13 @@
 ---
-title: "LIFO wg daty z wartością fizyczną i oznaczeniami"
-description: "Ostatnie przyszło, pierwsze wyszło na dzień (LIFO na dzień) to model magazynu oparty na metodzie LIFO. Rozchody zapasów są rozliczane w kolejności odwrotnej do odbierania towarów w magazynie, na podstawie daty transakcji magazynowej. W metodzie LIFO wg daty jeśli nie ma żadnego przyjęcia przed wydaniem, wydanie jest rozliczane względem dowolnego przyjęcia po dacie wydania. Kilka rozchodów tego samego dnia można rozliczyć w kolejności ostatni rozchód, ostatnie przyjęcie."
+title: LIFO wg daty z wartością fizyczną i oznaczeniami
+description: Ostatnie przyszło, pierwsze wyszło na dzień (LIFO na dzień) to model magazynu oparty na metodzie LIFO. Rozchody zapasów są rozliczane w kolejności odwrotnej do odbierania towarów w magazynie, na podstawie daty transakcji magazynowej. W metodzie LIFO wg daty jeśli nie ma żadnego przyjęcia przed wydaniem, wydanie jest rozliczane względem dowolnego przyjęcia po dacie wydania. Kilka rozchodów tego samego dnia można rozliczyć w kolejności ostatni rozchód, ostatnie przyjęcie.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3913801eb35faec858ef4b8e1e5056b755054218
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0b94d3f23c929c45a67894bd08706144c9226491
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311733"
 ---
-
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO wg daty z wartością fizyczną i oznaczeniami
 
 [!include [banner](../includes/banner.md)]
@@ -68,7 +67,7 @@ Poniższa ilustracja pokazuje efekty modelu magazynu LIFO wg daty, gdy nie jest 
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 - Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 - Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
-- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@cena jednostkowa.
 - Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 - Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 - Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
@@ -103,7 +102,7 @@ Poniższa ilustracja pokazuje efekty modelu magazynu LIFO, gdy używana jest opc
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 - Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 - Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
-- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@cena jednostkowa.
 - Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 - Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 - Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
@@ -149,14 +148,13 @@ Poniższa ilustracja pokazuje efekty modelu magazynu LIFO, gdy używane jest ozn
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 - Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 - Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
-- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@cena jednostkowa.
 - Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 - Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 - Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
 - Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
 - Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
 - Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
-
 
 
 

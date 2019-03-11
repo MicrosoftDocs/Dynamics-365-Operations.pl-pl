@@ -1,13 +1,13 @@
 ---
-title: "Międzyfirmowe źródła danych w module Raportowanie elektroniczne (ER)"
-description: "W tym temacie wyjaśniono, jak można używać źródeł danych wielu firm w Raportowaniu elektronicznym (RE)."
+title: Międzyfirmowe źródła danych w module Raportowanie elektroniczne (ER)
+description: W tym temacie wyjaśniono, jak można używać źródeł danych wielu firm w Raportowaniu elektronicznym (RE).
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 3ff94c49eed378d92e995782e73d76d669b44292
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "351983"
 ---
-
 # <a name="cross-company-data-sources-in-electronic-reporting-er"></a>Międzyfirmowe źródła danych w module Raportowanie elektroniczne (ER)
 
 [!include[banner](../includes/banner.md)]
@@ -77,4 +76,3 @@ Aby ukończyć przewodnik po zadaniach, należy pobrać następujące pliki:
 
 - [Konfiguracja modelu ER — CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [Konfiguracja formatu ER — CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
-

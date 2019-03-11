@@ -1,13 +1,13 @@
 ---
-title: "Konfiguracja kompensacji odbiorców oraz dostawców"
-description: "Ten temat zawiera informacje o sposobach wykonywania procesu kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce."
+title: Konfiguracja kompensacji odbiorców oraz dostawców
+description: Ten temat zawiera informacje o sposobach wykonywania procesu kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.
 author: mrolecki
 manager: AnnBe
 ms.date: 05/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Hungary, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8ba93808076b83d7dcb32b1b3dc06d6055f693f3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
-ms.openlocfilehash: d249d64040a6fb2ae645c651ffaf367ddbfca944
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371526"
 ---
-
 # <a name="set-up-customer-and-vendor-compensation"></a>Konfiguracja kompensacji odbiorców oraz dostawców
 
 [!include [banner](../includes/banner.md)]
@@ -95,4 +94,3 @@ Gdy utworzysz propozycje kompensaty w arkuszu i propozycja zostanie następnie z
 **P: Czy funkcja kompensaty jest dostępna dla wszystkich krajów i regionów?**
 
 **O:** Funkcja kompensaty jest dostępna tylko dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.
-

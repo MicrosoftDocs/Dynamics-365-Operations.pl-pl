@@ -1,31 +1,30 @@
 ---
-title: "Integracja umów serwisowych i projektów"
-description: "Podczas pracy z wierszami umów serwisowych i umowami serwisowymi wykorzystywane są dane ustawiane w obszarach modułu Zarządzanie projektami i ich księgowanie."
+title: Integracja umów serwisowych i projektów
+description: Podczas pracy z wierszami umów serwisowych i umowami serwisowymi wykorzystywane są dane ustawiane w obszarach modułu Zarządzanie projektami i ich księgowanie.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6bd2fb1f54a3decb77f019db6b2016cebdcaddb9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9f2640eae299411d633c68795bc16883dbb5eeaf
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323210"
 ---
-
 # <a name="integration-for-service-agreements-and-projects"></a>Integracja umów serwisowych i projektów 
 
 [!include [banner](../includes/banner.md)]
@@ -79,7 +78,6 @@ Ponadto można włączyć pola **Godzina rozpoczęcia** i **Godzina zakończenia
 
 > [!NOTE]
 > <P>Wybierz nazwę arkusza dla zlecenia serwisowego w polu <STRONG>Godzina</STRONG> na karcie <STRONG>Arkusze</STRONG> w formularzu <STRONG>Parametry modułu Zarządzanie serwisem</STRONG>.</P>
-
 
 
 

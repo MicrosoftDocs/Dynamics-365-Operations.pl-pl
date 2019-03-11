@@ -1,13 +1,13 @@
 ---
-title: "Omówienie zaopatrzenia i sourcingu"
-description: "Ten artykuł zawiera omówienie funkcji dostępnych w module Zaopatrzenie i sourcing."
+title: Omówienie zaopatrzenia i sourcingu
+description: Ten artykuł zawiera omówienie funkcji dostępnych w module Zaopatrzenie i sourcing.
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1fc824a308d17c75d9c16391778570272e160699
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351638"
 ---
-
 # <a name="procurement-and-sourcing-overview"></a>Omówienie zaopatrzenia i sourcingu
 
 [!include [banner](../includes/banner.md)]
@@ -90,7 +89,6 @@ Zafakturowane zamówienia zakupu zarejestruje zobowiązanie na koncie dostawcy w
 
 ## <a name="vendor-performance"></a>Wydajność dostawcy
 Wydajność i przegląd zakupów obsługują *raporty zaopatrzenia i rozrachunków z dostawcami,* które obejmują analizy wydatków i analizy wydajności dostawcy.
-
 
 
 

@@ -1,14 +1,14 @@
 ---
-title: "Zarządzanie zabezpieczeniami i rolami w aplikacji Attract"
-description: "Ten temat zawiera informacje na temat zabezpieczeń na podstawie ról w aplikacji Microsoft Dynamics 365 for Talent - Attract."
+title: Zarządzanie zabezpieczeniami i rolami w aplikacji Attract
+description: Ten temat zawiera informacje na temat zabezpieczeń na podstawie ról w aplikacji Microsoft Dynamics 365 for Talent - Attract.
 author: josaw1
 manager: AnnBe
 ms.date: 10/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 9eb12bd6b9fc1aa66002908e5989b3ac504ab673
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374787"
 ---
-
 # <a name="security-and-role-management-in-attract"></a>Zarządzanie zabezpieczeniami i rolami w aplikacji Attract
 
 [!include[banner](../includes/banner.md)]
 
-Aplikacja Microsoft Dynamics 365 for Talent Attract używa zabezpieczeń opartych na rolach. Innymi słowy dostęp nie jest przyznawany poszczególnym użytkownikom, ale rolom zabezpieczeń, do których są przypisywani użytkowników. Użytkownik, którego przypisano do roli zabezpieczeń, ma dostęp do zbioru uprawnień skojarzonego z tą rolą.
+Aplikacja Microsoft Dynamics 365 for Talent: Attract używa zabezpieczeń opartych na rolach. Innymi słowy dostęp nie jest przyznawany poszczególnym użytkownikom, ale rolom zabezpieczeń, do których są przypisywani użytkowników. Użytkownik, którego przypisano do roli zabezpieczeń, ma dostęp do zbioru uprawnień skojarzonego z tą rolą.
 
 Aplikacja Attract oferuje pięć podstawowych ról użytkownika:
 
@@ -63,7 +62,7 @@ Użytkownicy przypisani do roli Menedżer zatrudniający mogą tworzyć funkcje 
 
 Użytkownicy przypisani do roli Osoba rekrutująca mają pełne uprawnienia odczytu, tworzenie, aktualizowania i usuwania uprawnień wobec funkcji, które utworzyli. Mają również pełne uprawnienia tworzenia, odczytu, aktualizowania i usuwania wobec zgłoszeń skojarzonych z funkcjami, których są właścicielami. Tylko użytkownicy przypisani do roli Osoba rekrutująca mogą być dodawani do zespołu rekrutacyjnego jako osoby rekrutujące.
 
-## <a name="interviewer"></a>Osoba przeprowadzająca rozmowę kwalifikacyjną
+## <a name="interviewer"></a>Osoby przeprowadzającej rozmowę kwalifikacyjną
 
 Każdy użytkownik, który ma konto w usłudze Microsoft Azure Active Directory (Azure AD) w organizacji, może zostać dodany do zespołu rekrutacyjnego jako osoba przeprowadzającą rozmowę kwalifikacyjną. Użytkownicy przypisani do roli Osoba przeprowadzająca rozmowę kwalifikacyjną mogą wyświetlać szczegóły funkcji i dane kandydatów dla funkcji, z powodu których znaleźli się w zespole rekrutacyjnym. Dla tych funkcji osoby przeprowadzające rozmowy kwalifikacyjne mogą również formułować rekomendacje zatrudnienia i wystawiać opinie o kandydatach. Nie mogą jednak aktualizować szczegółów funkcji ani danych kandydatów.
 
@@ -108,7 +107,7 @@ Następujące uprawnienia dotyczą danych specyficznych dla funkcji mających za
 | Przenieś na kolejny etap           | Może odrzucać, jeśli znajduje się w zespole rekrutacyjnym | Może przekazywać do kolejnego etapu, jeśli znajduje się w zespole rekrutacyjnym | Niedozwolone |
 | Uruchamianie aplikacji zarządzania ofertami | Może uruchamiać aplikację zarządzania ofertami | Istnieje opcja konfiguracji w działaniu Oferta. | Niedozwolone |
 
-\*\* Opcja konfiguracji w [ustawieniach działań na opiniach](./activities-attract.md#feedback-activity) decyduje, czy osoby przeprowadzające rozmowy kwalifikacyjne widzą nawzajem swoje opinie.
+\*\* Opcja konfiguracji w [ustawieniach działań na opiniach](activities-attract.md#feedback-activity) decyduje, czy osoby przeprowadzające rozmowy kwalifikacyjne widzą nawzajem swoje opinie.
 
 ## <a name="process-templates"></a>Szablony procesów
 
@@ -146,4 +145,3 @@ Kandydaci to osoby, które zostały dodane do puli umiejętności, ale nie są s
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profil — szczegóły kandydata | Tworzenie, odczyt, aktualizowanie i usuwanie | Tworzenie, odczyt, aktualizowanie i usuwanie | Brak dostępu   |
 | Dokumenty                   | Tworzenie, odczyt, aktualizowanie i usuwanie | Tworzenie, odczyt, aktualizowanie i usuwanie | Brak dostępu   |
-

@@ -1,13 +1,13 @@
 ---
-title: "Tworzenie przepływów pracy"
-description: "W tym temacie wyjaśniono, jak utworzyć przepływ pracy."
+title: Tworzenie przepływów pracy
+description: W tym temacie wyjaśniono, jak utworzyć przepływ pracy.
 author: sericks007
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
+ms.openlocfilehash: 7d4a3c5e12b226a7d801d8db9abcbd15738c1ce0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 0edf6f1a97b3bbd074168a3cb8bb5c2375492b71
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353363"
 ---
-
 # <a name="create-workflows"></a>Tworzenie przepływów pracy
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ W tym temacie wyjaśniono, jak utworzyć przepływ pracy.
 
 ## <a name="open-the-workflow-editor"></a>Otwórz edytor przepływu pracy
 
-Moduł programu Microsoft Dynamics 365 for Finance and Operations, w którym pracujesz, określa typy przepływów pracy, jakie można tworzyć. Wykonaj następujące kroki, aby wybrać typ tworzonego przepływu pracy i otworzyć edytora przepływu pracy.
+Moduł Microsoft Dynamics 365 for Finance and Operations, w którym pracujesz, określa typy przepływu pracy, które możesz utworzyć. Wykonaj następujące kroki, aby wybrać typ tworzonego przepływu pracy i otworzyć edytora przepływu pracy.
 
 1. Otwórz moduł, dla którego chcesz utworzyć nowy przepływ pracy. Aby na przykład utworzyć przepływ pracy dla zapotrzebowań na zakup, kliknij opcję **Zaopatrzenie i sourcing**.
 2. Kliknij kolejno opcje **Ustawienia** &gt; **Przepływy pracy modułu \[nazwa modułu\]**.
@@ -85,4 +84,3 @@ Gdy wszystko jest gotowe do zapisania i aktywacji przepływu pracy, wykonaj nast
 
     - Aby uaktywnić tę wersję przepływu pracy, kliknij przycisk **Uruchom nową wersję**. Gdy przepływ pracy jest aktywny, użytkownicy mogą przesyłać do niego dokumenty w celu przetwarzania.
     - Jeśli nie chcesz uaktywnić tej wersję, kliknij przycisk **Nie aktywuj nowej wersji**. Możesz aktywować przepływ pracy później.
-

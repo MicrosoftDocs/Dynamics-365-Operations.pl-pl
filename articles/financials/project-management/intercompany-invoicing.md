@@ -1,13 +1,13 @@
 ---
-title: "Fakturowanie międzyfirmowe"
-description: "Ten artykuł zawiera informacje i przykłady dotyczące międzyfirmowego fakturowania projektów w programie Microsoft Dynamics 365 for Finance and Operations."
+title: Fakturowanie międzyfirmowe
+description: Ten artykuł zawiera informacje i przykłady dotyczące międzyfirmowego fakturowania projektów w progarmie Microsoft Dynamics 365 for Finance and Operations .
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 857aee796db2a4743cdbd91da3eb1cf6f996f9d1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3d4354316d0c37c6556c0ec3d27a3c62c5afb7b0
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333491"
 ---
-
 # <a name="intercompany-invoicing"></a>Fakturowanie międzyfirmowe
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera informacje i przykłady dotyczące międzyfirmowego fakturowania projektów w programie Microsoft Dynamics 365 for Finance and Operations.
+Ten artykuł zawiera informacje i przykłady dotyczące międzyfirmowego fakturowania projektów w progarmie Microsoft Dynamics 365 for Finance and Operations .
 
 Organizacja może posiadać wiele oddziałów, jednostek zależnych i innych firm, które przenoszą produkty i usługi między sobą w ramach projektów. Firma dostarczająca usługę lub produkt jest nazywana *firmą wypożyczającą*, a firma odbierająca usługę lub produkt jest nazywana *firmą pożyczającą*. 
 
@@ -112,6 +111,5 @@ Gdy firma wypożyczająca — USSI — księguje międzyfirmową fakturę dla od
 
 
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie fakturowania projektów międzyfirmowych](tasks/configure-intercompany-project-invoicing.md).
-
 
 

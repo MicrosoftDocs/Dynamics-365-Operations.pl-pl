@@ -1,13 +1,13 @@
 ---
-title: "Mobilny obszar roboczy Mój zespół"
-description: "Ten temat zawiera informacje o komórkowym obszarze roboczym Mój zespół, który umożliwia kierownikom wyświetlanie informacji o bezpośrednich podwładnych i pracownikach na dalszych szczeblach podwładności. Użytkownicy mogą również wysyłać pochwały osobom w swoich łańcuchach relacji służbowych."
+title: Mobilny obszar roboczy Mój zespół
+description: Ten temat zawiera informacje o komórkowym obszarze roboczym Mój zespół, który umożliwia kierownikom wyświetlanie informacji o bezpośrednich podwładnych i pracownikach na dalszych szczeblach podwładności. Użytkownicy mogą również wysyłać pochwały osobom w swoich łańcuchach relacji służbowych.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: fccbedea611228cc57531c89406f72a6664153c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d049c55a40761d0663e3d558b47b4840e5db9bf1
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346923"
 ---
-
 # <a name="my-team-mobile-workspace"></a>Mobilny obszar roboczy Mój zespół
 
 [!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Mój zespół**. Ten obszar roboczy umożliwia kierownikom wyświetlanie informacji o bezpośrednich podwładnych i pracownikach na dalszych szczeblach podwładności. Mogą oni również wysyłać pochwały osobom w swoich łańcuchach relacji służbowych.
 
-Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations.
+Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations Mobile.
 
 ## <a name="overview"></a>Przegląd 
 Mobilny obszar roboczy **Mój zespół** pozwala kierownikom wykonywać następujące zadania:
@@ -73,12 +72,12 @@ Aby można było używać tego mobilnego obszaru roboczego, muszą być spełnio
 
 Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
--   [Telefony z systemem Android](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Logowanie do aplikacji mobilnej
 1.  Uruchom aplikację na urządzeniu komórkowym.
-2.  Wprowadź adres URL usługi Microsoft Dynamics 365.
+2.  Wprowadź swój adres URL w usłudze Microsoft Dynamics 365.
 3.  Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła. Wprowadź swoje poświadczenia.
 4.  Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, trzeba odświeżyć listę komórkowych obszarów roboczych.
 
@@ -99,4 +98,3 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 1.  Kliknij opcję **Wyślij pochwałę**. 
 1. Wprowadź tekst pochwały, jaką chcesz wysłać. 
 1. Wybierz opcję **Gotowe**.
-

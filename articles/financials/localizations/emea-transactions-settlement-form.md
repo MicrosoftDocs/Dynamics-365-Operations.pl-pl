@@ -1,13 +1,13 @@
 ---
-title: "Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej"
-description: "Ten temat zawiera informacje o stronie Transakcje w rozliczeniu dla odbiorców i dostawców."
+title: Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej
+description: Ten temat zawiera informacje o stronie Transakcje w rozliczeniu dla odbiorców i dostawców.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustVendTransPostingLog_RU
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 0ba1731e4b0dcdeb4591d49dacf517f36e472eef
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5ac75d1900a428777374dcc9d7eea10ce4d15b1e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371451"
 ---
-
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,6 @@ Informacje dotyczące rozliczenia są rejestrowane i mogą być wyświetlane na 
 -   **Różnice groszowe** — Faktura jest rozliczana płatnością, która ma nieco inną kwotę niż faktura.
 -   **Warunkowe księgowanie podatku** — Faktura jest rozliczana płatnością, do której zastosowano podatek warunkowy.
 -   **Rozliczenie międzyfirmowe** — Funkcjonalność transakcji międzyfirmowych jest używana do rozliczenia faktury płatnością z wewnątrz organizacji.
-
 
 
 

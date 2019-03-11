@@ -1,14 +1,14 @@
 ---
-title: "Szablony wiadomości e-mail"
-description: "Ten temat zawiera informacje o szablonach wiadomości e-mail, które można tworzyć i ich używać w aplikacji Microsoft Dynamics 365 for Talent - Attract."
+title: Szablony wiadomości e-mail
+description: Ten temat zawiera informacje o szablonach wiadomości e-mail, które można tworzyć i ich używać w aplikacji Microsoft Dynamics 365 for Talent - Attract.
 author: josaw
 manager: AnnBe
 ms.date: 10/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305833"
 ---
-
 # <a name="email-templates"></a>Szablony wiadomości e-mail
 [!include[banner](../includes/banner.md)]
 
@@ -81,4 +80,3 @@ Gdy zespół rekrutacyjny wysyła wiadomość e-mail, może używać szablonów 
 
 > [!NOTE] 
 > Dla wiadomości e-mail wysyłanych automatycznie można utworzyć wiele szablonów. Jednak tylko jeden szablon można ustawić jako aktywny. Ponieważ ten proces jest uruchamiany przez zdarzenia, tylko administrator może określić, który szablon powinien zostać użyty, jako kryterium stosując kombinację znaczków **Domyślnie** i **Wyślij automatycznie** wyświetlanych w bibliotece szablonów.
-

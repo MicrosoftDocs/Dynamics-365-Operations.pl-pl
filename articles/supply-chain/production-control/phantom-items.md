@@ -1,13 +1,13 @@
 ---
 title: Towary fantomowe
-description: "W tym temacie szczegółowo opisano, jak typ wiersza Fantom może być wykorzystywany w wierszach listy składowej (BOM) i formule w programie Microsoft Dynamics 365 for Finance and Operations."
+description: W tym temacie szczegółowo opisano, jak typ wiersza Fantom może być wykorzystywany w wierszach listy składowej (BOM) i formule w Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: shylaw
@@ -15,16 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validfrom: 
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.search.validfrom: ''
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: a92dd82f309867586f047e0dfc36e452a44a0f9c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341817"
 ---
-
 # <a name="phantom-items"></a>Towary fantomowe
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ W tej strukturze widać, że nie występują części F i G, a materiały, z kt�
 
 W przeciwieństwie do inżynieryjnej listy składowej, w której istniały dwa arkusze operacji, produkcyjna lista składowa ma tylko jeden arkusz operacji. Operacja pakowania, która była połączona z częścią G, również została przeniesiona na wyższy poziom i teraz wchodzi w skład arkusza operacji dla produktu H. Zmontowanie jednostki elektrycznej jest pierwszą operacją. Taka kolejność ma duży sens, ponieważ ta jednostka jest używana w następnej operacji, czyli zmontowaniu maszyny. Ostatnią operacją jest operacja pakowania, która zużywa dwa materiały opakowaniowe (C i D).
 
-W programie Microsoft Dynamics 365 for Finance and Operations przejście od inżynieryjnej listy składowej do produkcyjnej listy składowej jest realizowane za pomocą typu wiersza BOM Fantom. Jak sugeruje określenie „fantom”, części F i G znikają w trakcie przekształcania typu BOM. W tym przykładzie wiersz typu Fantom jest stosowany do wierszy BOM dla części F i G w inżynieryjnej liście składowej. Podczas tworzenia zlecenia produkcyjnego lub szarży produkcyjnej inżynieryjna lista składowa jest kopiowana do tego zlecenia/szarży. Następnie podczas szacowania zlecenia następuje przejście od inżynieryjnej listy składowej do produkcyjnej listy składowej, jak pokazano na poprzedniej ilustracji. Z arkusza operacji na drugiej ilustracji materiały opakowaniowe C i D są wprowadzane dla operacji. 
+W Microsoft Dynamics 365 for Finance and Operations przejście od inżynieryjnej listy składowej do produkcyjnej listy składowej jest realizowane za pomocą typu wiersza BOM Fantom. Jak sugeruje określenie „fantom”, części F i G znikają w trakcie przekształcania typu BOM. W tym przykładzie wiersz typu Fantom jest stosowany do wierszy BOM dla części F i G w inżynieryjnej liście składowej. Podczas tworzenia zlecenia produkcyjnego lub szarży produkcyjnej inżynieryjna lista składowa jest kopiowana do tego zlecenia/szarży. Następnie podczas szacowania zlecenia następuje przejście od inżynieryjnej listy składowej do produkcyjnej listy składowej, jak pokazano na poprzedniej ilustracji. Z arkusza operacji na drugiej ilustracji materiały opakowaniowe C i D są wprowadzane dla operacji. 
 
 ## <a name="multilevel-phantom-bom-structures"></a>Wielopoziomowy fantomowe struktury BOM
 Typ wiersza Fantom może być wykorzystywany w wielopoziomowych strukturach BOM, jak pokazano na poniższej ilustracji. Na tej ilustracji (a) to BOM dla produktu G, a (b) to arkusz marszruty dla części E i F oraz produktu G. 
@@ -74,4 +73,3 @@ Fantomowych BOM można również używać dla list składowych zawierających si
 Na ilustracji poniżej (a) to BOM produktu G i części F, a (b) to arkusz marszruty dla produktu G i części F.
 
 ![Produkt G i część F z arkuszami marszruty](media/product-G-part-F-with-route-sheet.png)
-

@@ -1,14 +1,14 @@
 ---
-title: "Działania w procesach"
-description: "Ten temat zawiera informacje o różnych typach działań, których można używać w procesie rekrutacji."
-author: 
+title: Działania w procesach
+description: Ten temat zawiera informacje o różnych typach działań, których można używać w procesie rekrutacji.
+author: ''
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c32db1f563466f05b9fef1a03578392888c0b7e6
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374764"
 ---
-
 # <a name="activities-in-the-hiring-processes"></a>Działania w procesach rekrutacji
 
 [!include[banner](../includes/banner.md)]
 
-Działania można dodawać jako część procesu rekrutacji w programie Microsoft Dynamics 365 for Talent Attract. Działania można dodawać do szablonu procesu albo bezpośrednio do procesu rekrutacji na funkcję. Podczas definiowania funkcji wybiera się szablon procesu i wtedy działania uwzględnione w szablonie są stosowane do funkcji. Jeśli szablon nie zostanie wybrany, będzie używany szablon domyślny. Proces rekrutacji można również modyfikować w funkcji po zastosowaniu szablonu.
+Działania można dodawać jako część procesu rekrutacji w programie Microsoft Dynamics 365 for Talent: Attract. Działania można dodawać do szablonu procesu albo bezpośrednio do procesu rekrutacji na funkcję. Podczas definiowania funkcji wybiera się szablon procesu i wtedy działania uwzględnione w szablonie są stosowane do funkcji. Jeśli szablon nie zostanie wybrany, będzie używany szablon domyślny. Proces rekrutacji można również modyfikować w funkcji po zastosowaniu szablonu.
 
 > [!NOTE] 
 > Szablony procesów są dostępne po zainstalowaniu dodatku kompleksowej obsługi rekrutacji.
@@ -43,31 +42,9 @@ Działanie Prospekt kontroluje, czy do funkcji można dodawać prospektów. Domy
 
 Działanie Zgłoszenie jest wymagane w szablonie procesu rekrutacji. Aby wysyłać wiadomości e-mail kandydatom w reakcji na przesłanie przez nich zgłoszeń lub dodanie ich do etapu Zgłoszenie, ustaw w opcji **Wyślij wiadomość e-mail do kandydata** wartość **Włączone**.
 
-## <a name="scheduler-activity"></a>Działanie Harmonogram
+## <a name="interview-schedule-and-feedback-activity"></a>Działanie planowania rozmów kwalifikacyjnych i informacji zwrotnych
 
-Działanie Harmonogram jest opcjonalne. To działanie ma dwa składniki: Dostępność kandydata i Harmonogram. Składnik Dostępność kandydata umożliwia wysyłanie wiadomości e-mail w celu sprawdzenia dostępności kandydata. Składnik Harmonogram umożliwia planowanie rozmów kwalifikacyjnych z udziałem kandydata i zespołu rekrutacyjnego. W działaniu Harmonogram można skonfigurować następujące opcje: **Zażądaj dostępności kandydata**, **Spotkanie online** i **Wyślij wiadomość e-mail do kandydata**.
-
-- Aby wysłać wiadomości e-mail do kandydatów z pytaniem o ich dostępność, ustaw w opcji **Zażądaj dostępności kandydata** wartość **Włączone**. Jeśli ustawisz tę opcję na **Wyłączone**, ten krok nie będzie wyświetlany w procesie rekrutacji na funkcję.
-- Aby użyć transmisji strumieniowej na żywo lub zorganizować połączenie konferencyjne w programie Skype dla firm, ustaw w polu **Spotkanie online** wartość **Skype dla firm**. Wtedy poprawne łącze **Dołącz do spotkania w aplikacji Skype** zostanie dodane do zaproszenia na rozmowę kwalifikacyjną wysyłanego osobom przeprowadzającym rozmowy kwalifikacyjne.
-- Aby wysłać wiadomości e-mail do kandydatów w celu sfinalizowania harmonogramu, ustaw w opcji **Wyślij wiadomość e-mail do kandydata** wartość **Włączone**. Jeśli ustawisz tę opcję na **Wyłączone**, kandydaci otrzymają harmonogram rozmów kwalifikacyjnych tylko wtedy, gdy się zalogują do portalu kandydata.
-
-## <a name="feedback-activity"></a>Działanie Opinia
-
-Działanie Opinia jest opcjonalne. Umożliwia ono wprowadzanie rekomendacji dotyczących kandydata przez uczestników rozmowy kwalifikacyjnej. Osoby te mogą także wpisywać wszelkie komentarze, jakie mają. Po włączeniu opcji **Dziedzicz współtwórców opinii z zespołu rekrutacyjnego** osoba rekrutująca, menedżer zatrudniający i osoby przeprowadzające rozmowy kwalifikacyjne są automatycznie dodawane do działania Opinia. Organizacje mogą również zezwalać osobom przeprowadzającym rozmowy kwalifikacyjne na przeglądanie opinii innych osób, zanim prześlą swoje własne opinie. Organizacje mogą także pozwalać osobom przeprowadzającym rozmowy kwalifikacyjne na edytowanie już przesłanych opinii.
-
-## <a name="interview-activity"></a>Działanie Rozmowa kwalifikacyjna
-
-Działanie Rozmowa kwalifikacyjna jest opcjonalne. To działanie ma trzy składniki: Dostępność kandydata, Harmonogram i Opinia. Składnik Dostępność kandydata umożliwia wysyłanie wiadomości e-mail w celu sprawdzenia dostępności kandydata. Składnik Harmonogram umożliwia planowanie rozmów kwalifikacyjnych z udziałem kandydata i zespołu rekrutacyjnego. W działaniu Harmonogram można skonfigurować następujące opcje: **Zażądaj dostępności kandydata**, **Spotkanie online** i **Wyślij wiadomość e-mail do kandydata**.
-
-- Aby wysłać wiadomości e-mail do kandydatów z pytaniem o ich dostępność, ustaw w opcji **Zażądaj dostępności kandydata** wartość **Włączone**. Jeśli ustawisz tę opcję na **Wyłączone**, ten krok nie będzie wyświetlany w procesie rekrutacji na funkcję.
-- Aby użyć transmisji strumieniowej na żywo lub zorganizować połączenie konferencyjne w programie Skype dla firm, ustaw w polu **Spotkanie online** wartość **Skype dla firm**. Wtedy poprawne łącze **Dołącz do spotkania w aplikacji Skype** zostanie dodane do zaproszenia na rozmowę kwalifikacyjną.
-- Aby wysłać wiadomości e-mail do kandydatów w celu sfinalizowania harmonogramu, ustaw w opcji **Wyślij wiadomość e-mail do kandydata** wartość **Włączone**. Jeśli ustawisz tę opcję na **Wyłączone**, kandydaci otrzymają harmonogram rozmów kwalifikacyjnych tylko wtedy, gdy się zalogują do portalu kandydata.
-
->[!NOTE]
-> - W przypadku wszystkich rozmów 1:1 przypomnienia są wysyłane do osób prowadzących rozmowę kwalifikacyjną co 24 godziny, jeśli osoba prowadząca rozmowę nie odpowiedziała (nie zaakceptowała ani nie odrzuciła) żądania rozmowy kwalifikacyjnej.
-> - W przypadku wszystkich rozmów grupowych nie ma automatycznych przypomnień o konieczności odpowiedzi na żądanie rozmowy kwalifikacyjnej. Aby ręcznie wyzwolić przypomnienie, edytuj rozmowę kwalifikacyjną i użyj opcji **Aktualizuj & wyślij**, aby odesłać żądanie do osób prowadzących rozmowę kwalifikacyjną.
-
-Składnik Opinia umożliwia osobom wprowadzanie rekomendacji dotyczących kandydata. Osoby te mogą także wpisywać wszelkie komentarze, jakie mają. Po włączeniu opcji **Dziedzicz współtwórców opinii z zespołu rekrutacyjnego** osoba rekrutująca, menedżer zatrudniający i osoby przeprowadzające rozmowy kwalifikacyjne są automatycznie dodawane do składnika Opinia. Organizacje mogą również zezwalać osobom przeprowadzającym rozmowy kwalifikacyjne na przeglądanie opinii innych osób, zanim prześlą swoje własne opinie. Organizacje mogą także pozwalać osobom przeprowadzającym rozmowy kwalifikacyjne na edytowanie już przesłanych opinii.
+To działanie ma trzy składniki: Żądanie dostępność kandydata, Harmonogram i Opinia. Użyj działania rozmowy kwalifikacyjnej w szablonie zadania, jeśli chcesz uwzględnić żądanie dostępności kandydata, harmonogramu i informacje zwrotnych w ramach procesu zamiast używać ich osobno w trakcie zatrudnienia. Aby uzyskać więcej informacji, zobacz [Planowanie rozmów kwalifikacyjnych i informacji zwrotnych](interview-scheduling-feedback.md).
 
 ## <a name="powerapps-activity"></a>Działanie PowerApps
 
@@ -102,4 +79,3 @@ W usłudze Microsoft Forms autorzy mogą zmieniać swoje ustawienia, aby umożli
 
 > [!NOTE]
 > Działanie Microsoft Forms jest dostępne tylko po zainstalowaniu dodatku kompleksowej obsługi rekrutacji.
-

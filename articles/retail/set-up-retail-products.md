@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie produktów sieci sprzedaży"
-description: "W tym artykule opisano, jak konfigurować produkty sieci sprzedaży w programie Microsoft Dynamics 365 for Retail."
+title: Konfigurowanie produktów detalicznych
+description: W tym artykule opisano, jak konfigurować produkty sieci sprzedaży w programie Microsoft Dynamics 365 for Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 991546424a95463315eaa73c2776d0defe66def5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0906d83ea00edcbd4c04a1f21cc0911828286607
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357411"
 ---
-
 # <a name="set-up-retail-products"></a>Konfigurowanie produktów detalicznych
 
 [!include [banner](includes/banner.md)]
@@ -41,4 +40,3 @@ Aby móc odsprzedawać produkty w kanałach sprzedaży detalicznej, musisz utwor
 4. Dodawanie produktów do asortymentu. Asortyment reprezentuje kolekcję produktów, które oferujesz w kanałach sprzedaży detalicznej. Można zdefiniować jeden lub kilka asortymentów, a każdy produkt można włączyć do jednego lub większej liczby asortymentów. Aby przypisać produkty do kanałów sprzedaży, należy przypisać asortymenty do kanałów sprzedaży. Podczas tworzenia asortymentu można dodać produkty, które jeszcze nie zostały zwolnione do firmy. Trzeba jednak zwolnić produkty do firmy przed udostępnieniem ich w kanałach sprzedaży detalicznej.
 5. Dodawanie produktów do hierarchii nawigacji. Aby można było przeglądać produkty online lub w punkcie sprzedaży, muszą zostać sklasyfikowane w hierarchii nawigacji sieci sprzedaży.
 6. Dodawanie produktów do katalogów. Mimo że ten krok jest opcjonalny dla punktu sprzedaży, sklepy internetowe wymagają umieszczenia produktów w co najmniej jednym katalogu.
-

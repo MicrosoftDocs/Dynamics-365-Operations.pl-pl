@@ -1,13 +1,13 @@
 ---
 title: Budowanie modelu konfiguracji produktu
-description: "Konieczność konfigurowania produktów spełniających specjalne oczekiwania coraz częściej jest normą, a nie wyjątkiem, zarówno w relacjach między firmami, jak i między firmą a konsumentem."
+description: Konieczność konfigurowania produktów spełniających specjalne oczekiwania coraz częściej jest normą, a nie wyjątkiem, zarówno w relacjach między firmami, jak i między firmą a konsumentem.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 60a901ce9e87571b2d199a49af2cddbd72fc5808
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfaf16cde329909c167d1ad402e08619bdcd5a2
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327465"
 ---
-
 # <a name="build-a-product-configuration-model"></a>Budowanie modelu konfiguracji produktu
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,7 @@ Ograniczenia tabel mogą być definiowane przez użytkownika lub przez system.
 
 Ograniczenie definiowane przez użytkownika tworzy użytkownik. Użytkownik wybiera kombinację typów atrybutów reprezentujących kolumn tabeli, a następnie wprowadza wartości z domen typu wybranego atrybutu w celu utworzenia wierszy ograniczenia tabeli.  
 
-Ograniczenia tabeli definiowane przez system definiuje się, wybierając tabelę programu Microsoft Dynamics 365 for Finance and Operations, która będzie używana jako odwołanie, a następnie wybierając pola z tej tabeli w celu utworzenia kolumn ograniczenia. Wiersze ograniczenia tabeli to wiersze tabeli programu Finance and Operations, która jest obecna w czasie konfigurowania.  
+Ograniczenia tabeli definiowane przez system definiuje się, wybierając tabelę programu Microsoft Dynamics 365 for Finance and Operations, która będzie używana jako odwołanie, a następnie wybierając pola z tej tabeli do utworzenia kolumn ograniczenia. Wiersze ograniczenia tabeli to wiersze tabeli programu Finance and Operations, która jest obecna w czasie konfigurowania.  
 
 Ograniczenie tabeli jest uwzględnione w modelu konfiguracji produktu poprzez odwołanie do definicji ograniczenia tabeli i mapowanie odpowiednich atrybutów w modelu do kolumn ograniczenia tabeli.
 
@@ -158,7 +157,6 @@ Celem konfiguracji jest utworzenie różnych wariantów produktu, które spełni
 ### <a name="multiple-sites-and-intercompany"></a>Wiele witryn i międzyfirmowe
 
 Jeśli konfiguracja zostanie wykonana w oddziale lub nawet w firmie, która różni się od oddziału lub firmy, w których będzie wykonywana produkcja, zostaną utworzone BOM i marszruta i umieszczone w zakładzie dostawcy w firmie zaopatrzeniowej. Wariant produktu zostanie zwolniony we wszystkich firmach, które uczestniczą w łańcuchu dostaw.
-
 
 
 

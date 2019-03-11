@@ -1,13 +1,13 @@
---- 
-title: "Zwalnianie produktu głównego opartego na wymiarach"
-description: "W tej procedurze pokazano sposób zwalniania produktu głównego, który będzie używany dla konfiguracji opartych na wymiarach."
+---
+title: Zwalnianie produktu głównego opartego na wymiarach
+description: W tej procedurze pokazano sposób zwalniania produktu głównego, który będzie używany dla konfiguracji opartych na wymiarach.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductRelease
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5cf81b3a0c4d139df14d88f5915bb8514741f828
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2070e9a0b5c2c30185c9fda8ac992935219599ee
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325165"
 ---
 # <a name="release-a-dimension-based-product-master"></a>Zwalnianie produktu głównego opartego na wymiarach
 
@@ -40,5 +40,4 @@ W tej procedurze pokazano sposób zwalniania produktu głównego, który będzie
     * Dla tej procedury wybierz firmę USMF.  
 7. Kliknij przycisk Dalej.
 8. Kliknij przycisk Zakończ.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji"
-description: "W tym temacie opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie."
+title: Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji
+description: W tym temacie opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
 author: perlynne
 manager: AnnBe
 ms.date: 09/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
 ms.openlocfilehash: 74e7c36fb912f35252d6e40d17477ac2962cbc23
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325418"
 ---
-
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
 
-Instrukcje otrzymywane przez pracowników magazynu na urządzeniu przenośnym są określane w szablonach pracy konfigurowanych w programie Microsoft Dynamics 365 for Finance and Operations w celu zdefiniowania różnych procesów i zadań magazynowych. Szablony pracy określają, jak wykonywana jest praca dla każdego procesu magazynowego. Połączenie dyrektywy lokalizacji z szablonem pracy pomaga zagwarantować, że praca ma miejsce w określonych obszarach fizycznych magazynów.
+Instrukcje otrzymywane przez pracowników magazynu na urządzeniu przenośnym są określane w szablonach pracy konfigurowanych w Microsoft Dynamics 365 for Finance and Operations w celu zdefiniowania różnych procesów i zadań magazynowych. Szablony pracy określają, jak wykonywana jest praca dla każdego procesu magazynowego. Połączenie dyrektywy lokalizacji z szablonem pracy pomaga zagwarantować, że praca ma miejsce w określonych obszarach fizycznych magazynów.
 
 ## <a name="work-templates"></a>Szablony pracy
 Strona **Szablony pracy** pozwala zdefiniować operacje pracy, które muszą być wykonane w magazynie. Zwykle operacje pracy w magazynie składają się z dwóch działań: pracownik magazynu odbiera dostępny towar w lokalizacji, a następnie odkłada odebrany towar w innej lokalizacji. 
@@ -163,4 +162,3 @@ Zaznaczenie tej opcji umożliwia wykorzystanie strategii wsadowych dla towarów,
 W tym przykładzie zostanie omówiony proces zamówienia zakupu, w którym dyrektywa lokalizacji musi znaleźć wolne zdolności produkcyjne w magazynie dla pozycji magazynowych, które zostały właśnie zarejestrowane w doku rozładunkowym. Najpierw trzeba znaleźć wolne zdolności produkcyjne w magazynie poprzez konsolidację z istniejącymi zapasami dostępnymi. Jeśli konsolidacja jest niemożliwa, trzeba znaleźć pustą lokalizację. 
 
 W tym scenariuszu należy zdefiniować dwa działania dyrektywy lokalizacji. Pierwsze działanie w sekwencji musi wykorzystywać strategię **Konsolidacja**, a drugie powinno używać strategii **Pusta lokalizacja bez przychodzącej pracy**. O ile nie zdefiniowano trzeciego działania dla scenariusza przepełnienia, możliwe są dwa wyniki, jeśli w magazynie nie ma więcej zdolności produkcyjnych: praca może być tworzona nawet bez definiowania lokalizacji lub proces tworzenia pracy może się nie powieść. Wynik jest określany według ustawień na stronie **Błędy dyrektyw lokalizacji**, gdzie można wybrać opcję **Zatrzymaj pracę przy błędzie dyrektywy lokalizacji** dla każdego typu zlecenia.
-

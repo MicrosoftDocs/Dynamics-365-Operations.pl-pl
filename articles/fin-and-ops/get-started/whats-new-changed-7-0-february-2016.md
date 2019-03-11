@@ -1,13 +1,13 @@
 ---
-title: "Nowości i zmiany w systemie Dynamics AX 7.0 (luty 2016)"
-description: "W tym artykule opisano nowe oraz zmienione funkcje dostępne w systemie Microsoft Dynamics AX 7.0. Ta wersja zawiera funkcje zarówno platformy, jak i aplikacji. Została wydana w lutym 2016 r."
+title: Nowości i zmiany w systemie Dynamics AX 7.0 (luty 2016)
+description: W tym artykule opisano nowe oraz zmienione funkcje dostępne w systemie Microsoft Dynamics AX 7.0. Ta wersja zawiera funkcje zarówno platformy, jak i aplikacji. Została wydana w lutym 2016 r.
 author: sericks007
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334894"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nowości i zmiany w systemie Dynamics AX 7.0 (luty 2016)
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ W tym artykule opisano nowe oraz zmienione funkcje dostępne w systemie Microsof
 <td>Teraz można łatwiej skonfigurować system, ponieważ nowe etykiety są powiązane z zdarzeniami operacyjnymi, korzystającymi z tego typu księgowania.</td>
 </tr>
 <tr>
-<td>Importowanie/eksportowanie ceny zakupu, kosztów lub ceny sprzedaży z programu Microsoft Excel do lub z wersji wyceny.</td>
+<td>Importowanie/eksportowanie ceny zakupu, koszty, ceny sprzedaży z programu Microsoft Excel do lub z wersji wyceny.</td>
 <td>Nie można poprawnie importować cen lub kosztów do wersji wyceny, ponieważ model danych wymaga identyfikatora tabeli InventDim.</td>
 <td>Wprowadzenie jednostki danych umożliwia wdrożenie funkcji importu/eksportu. Ta funkcja umożliwia użytkownikom import/eksportu ceny lub koszty do wersji wyceny.
 <ul>
@@ -111,20 +110,20 @@ Ta funkcja działa niezależnie od metod wyceny, które są przypisane do produk
 </tbody>
 </table>
 
-## <a name="developer"></a>Programista
+## <a name="developer"></a>Deweloper
 
 | Co można zrobić? | Dynamics AX 2012 | Dynamics AX 7.0 | Dlaczego to jest ważne? |
 |------------------|------------------|-----------------|------------------------|
-| Można tworzyć rozwiązania oparte na sieci web w chmurze, które są dostępne w wielu urządzeń. | Niedostępny | Bieżąca wersja systemu Dynamics AX została zbudowana na kliencie sieci web i strukturze klienckiej. | Umożliwia to zapewnienie użytkownikom końcowym najnowocześniejszych rozwiązań. |
+| Można tworzyć rozwiązania oparte na sieci web w chmurze, które są dostępne w wielu urządzeń. | Niedostępna | Bieżąca wersja systemu Dynamics AX została zbudowana na kliencie sieci web i strukturze klienckiej. | Umożliwia to zapewnienie użytkownikom końcowym najnowocześniejszych rozwiązań. |
 | Program Microsoft Visual Studio umożliwia opracowywanie rozwiązań. | Microsoft MorphX jest głównym środowiskiem programowania, ale niektóre elementy można wykonać w programie Visual Studio. | Program Visual Studio jest jedynym środowiskiem programowania. | Zachowuje koncepcje znane z wersji Dynamics AX 2012 i bezproblemowo adaptuje je w strukturze i paradygmatach oprogramowania Visual Studio. Umożliwia standardowe współdziałanie z innymi językami i projektami języków .NET. |
 | Umożliwia kompilację wspólnego języka pośredniego (CIL) dla wszystkich języków. | X ++ skompilowano do pseudokodu. | Całkowicie nowy kompilator X ++ generuje CIL dla wszystkich funkcji. CIL jest tym samym pośrednim językiem, który jest używany przez inne języki .NET. | CIL jest szybszy, może efektywnie odwoływać się do klas w zarządzanych bibliotek dołączanych dynamicznie (DDL) i może działać na dużej bazie narzędzi funkcji .NET. |
-| Umożliwia osadzenie raportów BI i wizualizacji w kliencie systemu Microsoft Dynamics AX. | Niedostępny | Tworzenie bardzo intuicyjnych i płynnych wizualizacji. | Zawiera on wgląd w podejmowanie decyzji w oparciu o analizę biznesową. |
-| Integrowanie z programem Microsoft. | Niedostępny | Nowe funkcje obejmują aplikację Excel Data Connector, stronę **Projektant skoroszytów**, interfejs API eksportowania oraz Zarządzanie dokumentami. | Można tworzyć rozwiązania poprawiające wydajność dla użytkowników końcowych. |
+| Umożliwia osadzenie raportów BI i wizualizacji w kliencie systemu Microsoft Dynamics AX. | Niedostępna | Tworzenie bardzo intuicyjnych i płynnych wizualizacji. | Zawiera on wgląd w podejmowanie decyzji w oparciu o analizę biznesową. |
+| Integracja z programem Microsoft Office. | Niedostępna | Nowe funkcje obejmują aplikację Excel Data Connector, stronę **Projektant skoroszytów**, interfejs API eksportowania oraz Zarządzanie dokumentami. | Można tworzyć rozwiązania poprawiające wydajność dla użytkowników końcowych. |
 | Automatyczne kompilowanie, testowanie i wdrażanie. | Dostępne częściowo | Do wdrażania topologii dla deweloperów służą wirtualne maszyny do programowania i kompilacji. Automatyczne konfigurowanie wirtualnej maszyny kompilacji do wykrywania, tworzenia modułów z programu Visual Studio Online (VSO) i testowania. Obsługiwane są kompilacje modułów języków C\# i X++ oraz odwołania. | Zwiększa to wydajność pracy deweloperów poprzez zmniejszenie kosztów i nakładów pracy do testowania i weryfikacji. |
 | Dostosowywanie z nakładaniem i rozszerzaniem. | Rozszerzenia nie są dostępne. | Bieżąca wersja systemu Dynamics AX zawiera nowy model personalizacji. | Można dostosować kod źródłowy i metadane elementów modelu, które zostały wysłane przez firmę Microsoft lub partnerów zewnętrznych firmy Microsoft. |
 | Tworzenie nowych formantów i elementów interfejsu użytkownika za pomocą kodu X ++ i struktury nowoczesnej sieci web. | Formanty niestandardowe opierają się na zewnętrznych struktur, takich jak Microsoft ActiveX i Windows Presentation Foundation (WPF). | W bieżącej wersji łatwiej jest budować formanty. Struktura X++ może być używana do obsługi zachowania aplikacji i logiki biznesowej, a klient oparty na HTML/JavaScript umożliwia nowoczesne wizualizacje. | Formanty użytkownika mogą wyglądać i zachowywać się jak gotowe (out-of-box — OOB) formanty systemu Dynamics AX. |
 | Nowe narzędzia do oceny i regulacji wydajności. | PerfSDK, zestaw narzędzi do rozwijania danych, internetowa aplikacja do analizy śledzenia oraz PerfTimer nie są dostępne. | PerfSDK, zestaw narzędzi do rozwijania danych, internetowa aplikacja do analizy śledzenia oraz PerfTimer są nowymi narzędziami. | Zestaw SDK umożliwia testowanie i sprawdzanie poprawności wszystkich najważniejszych wydajności w teście dla jednego użytkownika, a jeśli trzeba — dla wielu użytkowników. Zestaw narzędzie do rozwijania danych pozwala prawidłowo rozwinąć wszystkie testy wydajności, które muszą wymagają prawidłowego rozwinięcia danych głównych i transakcyjnych. Analizator śledzenia umożliwia sprawdzanie poprawności testu wydajności dla pojedynczego użytkownika lub wielu użytkowników. PerfTimer pozwala sprawdzić, czy jakakolwiek kwerenda lub wywołanie konkretnej metody powodują problemy z wydajnością. Dzięki temu nie trzeba podejmować śledzenia i analizować wszystkiego ze szczegółami. |
-| Ujawnienie widoku możliwego do aktualizacji za pomocą OData. | Niedostępny | Bieżąca wersja systemu Dynamics AX wprowadza publiczny punkt końcowy usługi OData, który umożliwia spójny dostęp do danych systemu Dynamics AX z poziomu różnych aplikacji klienckich. | Twoje rozwiązania mogą współpracować z usługami RESTful, udostępniać dane w sposób umożliwiający ich odnajdywanie, oraz włączać szeroką integrację za pomocą protokołu stosu HTTP. |
+| Ujawnienie widoku możliwego do aktualizacji za pomocą OData. | Niedostępna | Bieżąca wersja systemu Dynamics AX wprowadza publiczny punkt końcowy usługi OData, który umożliwia spójny dostęp do danych systemu Dynamics AX z poziomu różnych aplikacji klienckich. | Twoje rozwiązania mogą współpracować z usługami RESTful, udostępniać dane w sposób umożliwiający ich odnajdywanie, oraz włączać szeroką integrację za pomocą protokołu stosu HTTP. |
 | Korzystanie z programu Business Connector to tworzenia logiki biznesowej i obsługi scenariuszy integracji. | Program Business Connector jest dostępny do wywoływania kodu X++ z kodu zarządzanego. Zalecamy używanie tego programu tylko do tworzenia logiki biznesowej w języku C\#, nie w przypadku scenariuszy integracji. | Business Connector nie jest już obsługiwany. Funkcja tworzenia jest zapewniania dzięki wkompilopwaniu X ++ do kodu zarządzanego. To ułatwia międzyoperacyjność. Scenariusze integracji są realizowane za pomocą OData. | Od teraz nie można już korzystać z Business Connector. |
 | Wybór skali (tj. liczby miejsc dziesiętnych) w polach rzeczywistej bazy danych i rozszerzonych typach danych (EDT). | Skala 16 jest ustawieniem domyślnym i nie programista nie może jej zmienić. | EDT i pola mają teraz właściwość skali, która może być stosowana do poszczególnych pól i rozszerzonego typu danych. Domyślna wartość to 6, a nie 16. | Tabele NCCI (obsługa w pamięci w języku SQL) działają szybciej w przypadku dużych zamówień, do których stosowana jest mniejsza skala. Skalę należy zmienić w zależności od wymagań poszczególnych pól. |
 
@@ -142,7 +141,7 @@ Ta funkcja działa niezależnie od metod wyceny, które są przypisane do produk
 <tbody>
 <tr>
 <td>Eksport struktur księgowych do Microsoft Excel.</td>
-<td>Niedostępny</td>
+<td>Niedostępna</td>
 <td>Teraz można wybrać strukturę konta i wyeksportować ją do programu Excel.</td>
 <td>Wielu odbiorców pytało o możliwość eksportowania struktury kont do programu Excel, aby ułatwić filtrowanie.</td>
 </tr>
@@ -221,7 +220,7 @@ Ta funkcja działa niezależnie od metod wyceny, które są przypisane do produk
 <td>Analizowanie danych finansowych za pomocą pakietu zawartości „Monitorowanie wyników finansowych” dla narzędzia Power BI.</td>
 <td>Niedostępna</td>
 <td>Na stronie PowerBI.com wybierz opcję <strong>Pobierz dane</strong>, a następnie wybierz pakiet zawartości <strong>Dynamics AX — wyniki finansowe</strong>. Wpisz URL dla punktu końcowego Dynamics AX, aby wyświetlić dane na pulpicie nawigacyjnym.</td>
-<td>W trzech lub czterech kliknięciach można wdrożyć pulpit nawigacyjny narzędzia Power BI, który zawiera ważne dane finansowe. Zawartość można spersonalizować.</td>
+<td>W trzech lub czterech kliknięcia można wdrożyć pulpit nawigacyjny Power BI, który zawiera ważne dane finansowe. Zawartość można spersonalizować.</td>
 </tr>
 <tr>
 <td>Śledzenie procesów zamknięcia okresu obrachunkowego.</td>
@@ -231,7 +230,7 @@ Ta funkcja działa niezależnie od metod wyceny, które są przypisane do produk
 </tr>
 <tr>
 <td>Monitorowanie budżetu w porównaniu z wartościami rzeczywistymi i tworzenie prognoz księgi za pomocą obszaru roboczego <strong>Budżety i prognozy księgi</strong> oraz dodatkowych formularzy zapytań.</td>
-<td>Niedostępny</td>
+<td>Niedostępna</td>
 <td> Obszar roboczy jest dostępny przez pulpit nawigacyjny systemu Dynamics AX. Zawiera łącza do kilku nowych stron zapytań: podsumowania <strong>Wartości rzeczywiste a budżet</strong>, podsumowanie <strong>Statystyka kontroli budżetu</strong>, <strong>Wpisy do rejestru budżetu</strong> i <strong>Plany budżetu</strong>.</td>
 <td>Nowe strony zapytań zapewniają łatwy dostęp do informacji o budżecie. Obszar roboczy łączy wszystkie zadania zarządzania budżetem i monitorowania go w jednym miejscu, które jest łatwe w obsłudze dla kierowników odpowiedzialnych za budżet i księgowość.</td>
 </tr>
@@ -276,7 +275,7 @@ Ta funkcja działa niezależnie od metod wyceny, które są przypisane do produk
 <tbody>
 <tr>
 <td>Dostęp do klienta w dowolnym miejscu i czasie.</td>
-<td>Klienta desktopowy systemu AX 2012 zawiera pełny zestaw formularzy, ale można go uruchamiać tylko na komputerach z systemem Microsoft Windows i wymaga on instalacji. Wraz z klientem desktopowym używany jest często Terminal Server, aby umożliwić dostęp przez sieć rozległą (WAN). Klient sieciowy Enterprise Portal oferuje ograniczony zestaw formularzy.</td>
+<td>Klient desktopowy systemu AX 2012 zawiera pełny zestaw formularzy, ale można go uruchamiać tylko na komputerach z systemem Microsoft Windows i wymaga on instalacji. Wraz z klientem desktopowym używany jest często Terminal Server, aby umożliwić dostęp przez sieć rozległą (WAN). Klient sieciowy Enterprise Portal oferuje ograniczony zestaw formularzy.</td>
 <td>Dwie aplikacje klienckie systemu AX 2012 zostały zastąpione przez jedną standardową aplikację kliencką, oferującą pełne zestaw funkcji klienta desktopowoego wraz z zasięgiem dostępnym za pomocą klienta Enterprise Portal.</td>
 <td>Dzięki temu prace programistyczne mogą być w prowadzone w jednym wspólnym środowisku. Dzięki zastosowaniu standardowych interfejsów sieci web Terminal Server nie jest już potrzebny.</td>
 </tr>
@@ -571,7 +570,7 @@ Nie dodano żadnych nowych funkcji.
 
 ### <a name="retail-hq"></a>Centrala handlu detalicznego
 
-Moduł Centrala handlu detalicznego działający na platformie Microsoft Azure oferuje scentralizowane zarządzanie i pełną widoczność wszystkich aspektów operacji handlowych za pośrednictwem klienta sieci web.
+Centrala handlu detalicznego w Microsoft Azure oferuje scentralizowane zarządzanie i pełną widoczność wszystkich aspektów operacji handlowych za pośrednictwem klienta sieci web.
 
 <table>
 <thead>
@@ -655,7 +654,7 @@ Obszar roboczy <strong>Zarządzanie katalogami</strong> oferuje następujące fu
 <tr>
 <td>Zarządzanie operacjami IT w sieci sprzedaży.</td>
 <td>Użytkownik musi mieć dostęp wielu formularzy.</td>
-<td>Obszar roboczy <strong>IT sieci sprzedaży</strong> umożliwia wysyłanie zapytań do Commerce Data Exchange z jednego miejsca dla danego kanału, dzięki czemu można wykonywać następujące zadania:
+<td>Obszar roboczy <strong>Dane IT sieci sprzedaży</strong> umożliwia wysyłanie zapytań za pośrednictwem systemu Commerce Data Exchange w jednym miejscu dla danego kanału, dzięki czemu można wykonywać następujące zadania:
 <ul>
 <li>Sesje pobierania.</li>
 <li>Sesje przekazywania.</li>
@@ -679,8 +678,8 @@ Obszar roboczy <strong>Zarządzanie katalogami</strong> oferuje następujące fu
 <tr>
 <td>Analizowanie danych sprzedażowych z kanału sprzedaży przy użyciu pakietu zawartości „Monitorowanie wyników kanału sieci sprzedaży” dla narzędzia Power BI.</td>
 <td>Niedostępna</td>
-<td>Na stronie PowerBI.com wybierz <strong>Pobierz dane</strong>, a następnie wybierz pakiet danych <strong>Dynamics AX — wyniki kanału sieci sprzedaży</strong>. Wpisz URL dla punktu końcowego Dynamics AX, aby wyświetlić dane na pulpicie nawigacyjnym.</td>
-<td>W trzech lub czterech kliknięciach można wdrożyć pulpit nawigacyjny narzędzia Power BI, który zawiera ważne dane finansowe. Zawartość można spersonalizować. Oprócz tego użytkownicy mogą osadzać kafelki pulpitu nawigacyjnego narzędzia Power BI w spersonalizowanych obszarach roboczych w systemie Dynamics AX, aby później móc wyświetlać skrócone wyniki analiz.</td>
+<td>Na stronie PowerBI.com wybierz opcję <strong>Pobierz dane</strong>, a następnie wybierz pakiet zawartości <strong>Dynamics AX — Retail Channel Performance</strong>. Wpisz URL dla punktu końcowego Dynamics AX, aby wyświetlić dane na pulpicie nawigacyjnym.</td>
+<td>W trzech lub czterech kliknięcia można wdrożyć pulpit nawigacyjny Power BI, który zawiera ważne dane finansowe. Zawartość można spersonalizować. Oprócz tego użytkownicy mogą osadzać kafelki pulpitu nawigacyjnego narzędzia Power BI w spersonalizowanych obszarach roboczych w systemie Dynamics AX, aby później móc wyświetlać skrócone wyniki analiz.</td>
 </tr>
 <tr>
 <td>Konfigurowanie uprawnienia odbiorcy.</td>
@@ -735,7 +734,7 @@ Usługa Retail Server i zarządzanie danymi pozwala odbiorcom i firmom tworzy je
 </tr>
 <tr>
 <td>Przenoszenie danych miedzy zapleczem systemu Microsoft Dynamics AX i kanałami za pomocą usługi Commerce Data Exchange.</td>
-<td>Commerce Data Exchange to system, który przesyła dane między systemem Microsoft Dynamics AX a kanałami sieci sprzedaży, np. między sklepami internetowymi i tradycyjnymi. Aby uzyskać więcej informacji, zobacz artykuł <a href="https://technet.microsoft.com/library/dn741440.aspx">Usługa Commerce Data Exchange [AX 2012]</a>.</td>
+<td>Commerce Data Exchange to system, który przesyła dane między systemem Microsoft Dynamics AX a kanałami sieci sprzedaży, np. między sklepami internetowymi i tradycyjnymi. Aby uzyskać więcej informacji, zobacz <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>Funkcje pokrywają się z systemem Microsoft Dynamics AX 2012 CU8. Warto jednak pamiętać o następujących szczegółach:
 <ul>
 <li>Usługa Commerce Data Exchange została ponownie zaprogramowana pod kątem chmury.</li>
@@ -1034,4 +1033,3 @@ Nie dodano żadnych nowych funkcji.
 [Nowości i zmiany](whats-new-changed.md)
 
 [Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)
-

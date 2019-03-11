@@ -1,13 +1,13 @@
 ---
-title: "Księgowanie produkcji"
-description: "Ten artykuł zawiera informacje o różnych typach księgowań w procesie produkcji."
+title: Księgowanie produkcji
+description: Ten artykuł zawiera informacje o różnych typach księgowań w procesie produkcji.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventItemGroup, ProjCategory, WrkCtrResourceGroup, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0b44d57fe89ef7ae3def835865e4da80c260f907
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 413bf76b40ec1e6d00322605900a71f163c9396c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332410"
 ---
-
 # <a name="production-posting"></a>Księgowanie produkcji
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,6 @@ W **Parametrach kontroli produkcji** można użyć pola **Księgowanie w księdz
 -   **Grupy produkcji** — pozwala używać kont księgowych, które zostały ustawione w grupach produkcji zarówno dla materiałów, jak i zużycia czasu. Grupy produkcji są kojarzone ze zwolnionymi produktami i kopiowane do zleceń produkcyjnych podczas tworzenia tych zleceń. Księgowania w zleceniach produkcyjnych będzie następnie przebiegać według grup produkcji skojarzonych ze zleceniem produkcyjnym.
 
 **Uwaga:** Jeśli koszt gotowego towaru obliczany był w standardowy sposób, uwzględniają to także transakcje końcowe. Jeśli istnieje różnica pomiędzy rzeczywistymi kosztami a kosztami obliczonymi w standardowy sposób, jest to księgowane na koncie wykazującym zysk lub stratę.
-
 
 
 

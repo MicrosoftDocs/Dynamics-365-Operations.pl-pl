@@ -1,13 +1,13 @@
---- 
-title: "Wyświetlanie zestawienia magazynowego i KPI według obiektu kosztów"
-description: "Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF."
+---
+title: Wyświetlanie zestawienia magazynowego i KPI według obiektu kosztów
+description: Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 author: AndersGirke
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, EcoResProductDetailsExtended, InventCostOnhandItem, CostStatement, CostInventoryFlowChart, CostInventoryTurnCard, CostInventoryAccuracyCard
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 7c43acef9e6716158a832dc398363ecf707105ff
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6c83ac2ba2d93dfb0b453a93e92376f09dd86083
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355042"
 ---
 # <a name="view-inventory-statement-and-kpi-by-cost-object"></a>Wyświetlanie zestawienia magazynowego i KPI według obiektu kosztów
 
@@ -38,5 +38,4 @@ Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej 
 6. Kliknij opcję Zestawienie magazynowe i wskaźniki KPI.
 7. W polu Od dnia wprowadź datę.
 8. Wprowadź datę w polu Do dnia.
-
 

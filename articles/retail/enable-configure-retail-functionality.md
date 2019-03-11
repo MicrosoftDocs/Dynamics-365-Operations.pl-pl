@@ -1,13 +1,13 @@
 ---
-title: "Inicjowanie danych początkowych w nowych środowiskach rozwiązania Retail"
-description: "W tym artykule opisano dane, które są tworzone w ramach procesu inicjowania w programie Microsoft Dynamics 365 for Retail."
+title: Inicjowanie danych początkowych w nowych środowiskach rozwiązania Retail
+description: W tym artykule opisano dane, które są tworzone w ramach procesu inicjowania w programie Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327902"
 ---
-
 # <a name="initialize-seed-data-in-new-retail-environments"></a>Inicjowanie danych początkowych w nowych środowiskach rozwiązania Retail
 
 [!include [banner](includes/banner.md)]
@@ -40,7 +39,7 @@ Po wdrożeniu rozwiązania Sieć sprzedaży za pomocą Microsoft Dynamics Lifecy
 
 Aby zainicjować konfigurację sieci sprzedaży, wykonaj następujące kroki.
 
-1. Uruchom klienta programu Dynamics 365 for Retail.
+1. Uruchom klienta systemu Dynamics 365 for Retail.
 2. Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia centrali** &gt; **Parametry** &gt; **Parametry sieci sprzedaży**.
 3. Kliknij **Inicjuj**.
 
@@ -56,9 +55,9 @@ Inicjowanie tworzy następujące dane ogólne konfiguracji domyślnej:
 - Raporty kanału
 - Metadane atrybutu
 - Szablony weryfikacji jednostek
-- Zadanie wsadowe do usuwania historii sesji Commerce Data Exchange
+- Zadania wsadowego do usuwania historii sesji Commerce Data Exchange
 
-Oprócz tego protokołowanie związane ze standardem organizacji Payment Card Industry (PCI) jest włączone dla bazy danych programu Dynamics 365 for Retail.
+Oprócz tego logowanie związane z branżą kart płatności (PCI) jest włączone dla bazy danych Dynamics 365 for Retail.
 
 > [!NOTE]
 > Istnieje możliwość oddzielnego skonfigurowania modułu Transfer danych. Ta opcja pozwala zresetować konfigurację transfer danych w sieci sprzedaży do ustawień domyślnych.
@@ -70,4 +69,3 @@ Po zakończeniu inicjowania należy skonfigurować dodatkowe dane sieci sprzeda�
 - Kanały sprzedaży detalicznej
 - Kasy i urządzenia
 - Asortymenty
-

@@ -1,31 +1,30 @@
 ---
-title: "Relacje przedmiotów serwisu"
-description: "Można utworzyć relacje przedmiotów serwisu oraz umowę serwisową lub zlecenie serwisowe."
+title: Relacje przedmiotów serwisu
+description: Można utworzyć relacje przedmiotów serwisu oraz umowę serwisową lub zlecenie serwisowe.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceObjectRelation
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 03047b3eccf3c90d4cf7426ddaec83f10dbea1b0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: 0e54a0dc9b643077d45fe76e073772e81f99ea44
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/21/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314378"
 ---
-
 # <a name="service-object-relations"></a>Relacje przedmiotów serwisu 
 
 [!include [banner](../includes/banner.md)]
@@ -78,5 +77,4 @@ Uzyskiwanie dostępu do Konstruktora BOM przy użyciu relacji przedmiotu serwisu
 ## <a name="automatically-created-service-orders"></a>Zlecenia serwisowe tworzone automatycznie
 
 W przypadku automatycznego tworzenia zleceń serwisowych dotyczących umowy serwisowej relacje przedmiotów serwisu w umowie znajdują się także w tworzonych zleceniach serwisowych.
-
 

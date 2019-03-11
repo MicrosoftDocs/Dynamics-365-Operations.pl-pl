@@ -1,13 +1,13 @@
 ---
-title: "Generowanie raportów do ustawy ACA (Affordable Care Act)"
-description: "Jest dostępna funkcjonalność wspierająca pracodawców, którzy muszą monitorować informacje zgłaszane w deklaracjach 1095-B i 1095-C dotyczących sekcji Employer Mandate (Obowiązki pracodawcy) amerykańskiej ustawy o powszechnym dostępie do opieki zdrowotnej (ACA). Należy zauważyć, że ta funkcjonalność jest włączona tylko dla firm w Stanach Zjednoczonych."
+title: Generowanie raportów do ustawy ACA (Affordable Care Act)
+description: Jest dostępna funkcjonalność wspierająca pracodawców, którzy muszą monitorować informacje zgłaszane w deklaracjach 1095-B i 1095-C dotyczących sekcji Employer Mandate (Obowiązki pracodawcy) amerykańskiej ustawy o powszechnym dostępie do opieki zdrowotnej (ACA). Należy zauważyć, że ta funkcjonalność jest włączona tylko dla firm w Stanach Zjednoczonych.
 author: kherr75
 manager: AnnBe
 ms.date: 12/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
 ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305784"
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Generowanie raportów do ustawy ACA (Affordable Care Act)
 
@@ -70,4 +70,3 @@ Można wyeksportować wygenerowaną listę pracowników, używając dowolnej opc
 Jeśli musisz zgłosić osoby objęte świadczeniem, ponieważ jako pracodawca oferujesz dodatkowe świadczenia finansowane przez siebie, możesz także wyświetlić wszystkie osoby na utrzymaniu objęte takimi planami świadczeń oznaczone jako **Podlega zgłoszeniu na mocy ACA**, klikając akcję Wyświetl świadczenie dla osoby na utrzymaniu na pasku w okienku akcji.
 
 **Uwaga:** W oknie zapytania będą wyświetlane tylko świadczenia, których plan został oznaczony jako **Podlega zgłoszeniu na mocy ACA**.
-

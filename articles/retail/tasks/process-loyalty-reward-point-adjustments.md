@@ -1,13 +1,13 @@
---- 
-title: "Przetwarzanie korekt punktów lojalnościowych"
-description: "Ta procedura przedstawia sposób wyszukiwania informacji o karcie lojalnościowej i korygowania punktów lojalnościowych."
+---
+title: Przetwarzanie korekt punktów lojalnościowych
+description: Ta procedura przedstawia sposób wyszukiwania informacji o karcie lojalnościowej i korygowania punktów lojalnościowych.
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailLoyaltyCards, RetailLoyaltyCardRewardPointTrans, RetailLoyaltyCardRewardPointAdjustment, RetailAffiliationLookup
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 85aaa82bf56d55c69f39bab49682c79f51247251
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfb5095c1db2a5ab9fb528d08d979ec850543fc
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346164"
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a>Przetwarzanie korekt punktów lojalnościowych
 
@@ -49,5 +49,4 @@ Ta procedura przedstawia sposób wyszukiwania informacji o karcie lojalnościowe
     * Normalnie na tym etapie należałoby odświeżyć stronę, aby wyświetlić wynik korekty punktów lojalnościowych na karcie Podsumowanie punktów lojalnościowych. Jednak jeśli wykonujesz procedurę w ramach przewodnika po zadaniach, nie odświeżaj teraz, ponieważ jeśli to zrobisz, przewodnik się zatrzyma.  
 15. Kliknij opcję Transakcje kartą.
 16. Zamknij stronę.
-
 

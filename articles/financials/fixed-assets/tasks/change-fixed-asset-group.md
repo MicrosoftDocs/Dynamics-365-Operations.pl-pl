@@ -1,13 +1,13 @@
---- 
-title: "Zmienianie grupy środków trwałych"
-description: "Środki trwałe powinny być przypisane do odpowiedniej grupy środków trwałych."
+---
+title: Zmienianie grupy środków trwałych
+description: Środki trwałe powinny być przypisane do odpowiedniej grupy środków trwałych.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetChangeGroup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 32f1daa6de6034d123b1f2cf732059759f6c10ae
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 91dcefe92370733f6558292b195881993f1b71be
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358262"
 ---
 # <a name="change-a-fixed-asset-group"></a>Zmienianie grupy środków trwałych
 
@@ -45,5 +45,4 @@ W przewodniku jest wykorzystywana firma demonstracyjna USMF.
     * Pole Numer środka trwałego jest dostępne, jeśli zaznaczono opcję Nowy numer środka trwałego.   W przypadku skonfigurowania automatycznego numerowania środków trwałych to pole wyświetla kolejny dostępny numer środka trwałego. Można ją zmienić.   W przypadku skonfigurowania ręcznego numerowania to pole jest puste i należy wprowadzić nowy numer środka trwałego.     
 6. Kliknij przycisk OK.
 7. Kliknij przycisk Tak.
-
 

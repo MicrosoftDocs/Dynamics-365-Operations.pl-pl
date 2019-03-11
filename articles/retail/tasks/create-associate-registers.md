@@ -1,13 +1,13 @@
---- 
+---
 title: Tworzenie i kojarzenie kas
-description: "Ta procedura przedstawia sposób tworzenia kasy w punkcie sprzedaży (POS)."
+description: Ta procedura przedstawia sposób tworzenia kasy w punkcie sprzedaży (POS).
 author: rubencdelgado
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 07e4b9f32a3a74b273272bd0b759d35c2a963e2e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 1de4e71fd554ba0486a5d2f65803f0806df37fe4
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360654"
 ---
 # <a name="create-and-associate-registers"></a>Tworzenie i kojarzenie kas
 
@@ -43,5 +43,4 @@ Ta procedura przedstawia sposób tworzenia kasy w punkcie sprzedaży (POS). Proc
 8. W polu Numer kasy EFT w punkcie sprzedaży wpisz wartość.
     * Numer kasy EFT w punkcie sprzedaży jest używany do informowania agenta rozliczeniowego, który terminal płatniczy wysyła żądania autoryzacji. Ta wartość jest często nazywana „identyfikatorem terminala” lub „TID”. Identyfikator TID znajduje się zwykle na nalepce na urządzeniu płatniczym.  
 9. Kliknij przycisk Zapisz.
-
 

@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie zamówień sprzedaży"
-description: "W tej procedurze pokazano sposób tworzenia zamówienia sprzedaży."
+---
+title: Tworzenie zamówień sprzedaży
+description: W tej procedurze pokazano sposób tworzenia zamówienia sprzedaży.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 8af0333d979ba3a4e12d4f22b1225f3b72d66a7a
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4ccd2c4ace41f07dce14498031e3cc29ecb61b1c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "352121"
 ---
 # <a name="create-sales-orders"></a>Tworzenie zamówień sprzedaży
 
@@ -68,5 +68,4 @@ W tej procedurze pokazano sposób tworzenia zamówienia sprzedaży. Procedurę m
 2. Kliknij przycisk Sumy.
     * Na stronie Sumy są wyświetlane informacje dotyczące całego zamówienia. Obejmuje to kwotę sumy częściowej, czyli sumę wszystkich kwot netto z wierszy skorygowaną o ewentualne rabaty do wierszy, łączną kwotę faktury, czyli kwota sumy częściowej skorygowaną o ewentualne rabaty na poziomie zamówienia, opłaty, podatek, ewentualne limity kredytowe przyznane odbiorcy, itd.  Kwota faktury jest kwotą, która pojawi się w dokumencie faktury wystawionej odbiorcy.  
 3. Kliknij przycisk OK.
-
 

@@ -1,30 +1,29 @@
 ---
-title: "Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych"
-description: "W tym temacie opisano wymagania dotyczące szacowania zapotrzebowania na sprzęt w środowisku lokalnym."
+title: Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych
+description: W tym temacie opisano wymagania dotyczące szacowania zapotrzebowania na sprzęt w środowisku lokalnym.
 author: kfend
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: d277bc4c4c815317bade8a04b9111232fb707086
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340736"
 ---
-
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych
 
 [!include [banner](../includes/banner.md)]
@@ -143,4 +142,3 @@ Usługa Orchestrator zarządza wdrożeniem i pokrewną komunikacją z usługą L
 ## <a name="virtualization-and-oversubscription"></a>Wirtualizacja i nadsubskrypcja
 
 Usługi newralgiczne, takie jak serwer AOS, powinny być umieszczone na hostach wirtualnych mających dedykowane zasoby — rdzenie, pamięć operacyjną i dyski.
-

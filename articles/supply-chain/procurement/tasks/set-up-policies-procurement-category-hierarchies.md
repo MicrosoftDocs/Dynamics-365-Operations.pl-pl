@@ -1,13 +1,13 @@
---- 
+---
 title: Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia
-description: "Niniejszej procedury należy użyć w celu skonfigurowania reguły dla zamówionych produktów z kategorii."
+description: Niniejszej procedury należy użyć w celu skonfigurowania reguły dla zamówionych produktów z kategorii.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, ProcCategoryPolicyRule, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d1fdf357466de12bd0188fc43cd266c67af762c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 50764f99be04d27e04047824f870e724336cb452
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323164"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia
 
@@ -58,5 +58,4 @@ Niniejszej procedury należy użyć w celu skonfigurowania reguły dla zamówion
     * Zaznacz regułę mającą kontrolować, jakiego rodzaju dostawców można wybierać dla kategorii podczas tworzenia zapotrzebowań.  
 7. Kliknij przycisk Zamknij.
     * Zdefiniowane przez Ciebie reguły dotyczą zapotrzebowań typu Zużycie. Jeśli trzeba zdefiniować zasady dla zapotrzebowań typu Uzupełnienie zapasów, należy utworzyć regułę dla typu reguły o nazwie „Reguła dostępu do kategorii uzupełniania zapasów”.  
-
 

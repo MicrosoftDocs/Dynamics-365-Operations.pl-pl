@@ -1,14 +1,14 @@
 ---
-title: "Dodawanie lokalizacji i typów relacji stron"
-description: "W tym temacie opisano, jak dodać nową lokalizację i typ relacji stron."
+title: Dodawanie lokalizacji i typów relacji stron
+description: W tym temacie opisano, jak dodać nową lokalizację i typ relacji stron.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: 543784e8072f88c10f63e1b44921b9f2d37308c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e0ab9c9894fdd5fba224c166941abbf52172ae46
-ms.openlocfilehash: 27819c922832a30eb0b20db6bffdbd4504e6d5e6
-ms.contentlocale: pl-pl
-ms.lasthandoff: 06/12/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357503"
 ---
-
 # <a name="add-location-roles-and-party-relationship-types"></a>Dodawanie ról lokalizacji i typów relacji stron 
 
 [!include [banner](../includes/banner.md)]
@@ -75,4 +74,3 @@ Istnieją dwa sposoby dodawania nowego typu relacji:
     3.  Aby przeprowadzić test wypełniania nowego typu relacji, można utworzyć klasę wykonywalną i wywołać DirDataPopulation::insertDirRelationshipTypes() w Main(). Powinien zostać wyświetlony nowy typ relacji w **DirRelationshipTypeTable**. Będzie on widoczny na stronie **Typy relacji**.
 
         ![Klasa możliwa do uruchomienia](media/Runnable.PNG)
-

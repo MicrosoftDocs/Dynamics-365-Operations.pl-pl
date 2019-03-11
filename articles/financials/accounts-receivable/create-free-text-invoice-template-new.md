@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie szablonu faktury niezależnej"
-description: "W tej procedurze przedstawiono tworzenie szablonu faktury niezależnej."
+---
+title: Tworzenie szablonu faktury niezależnej
+description: W tej procedurze przedstawiono tworzenie szablonu faktury niezależnej.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 91f2ec2f8ab21616c6a1b886ee89d6faf84023e4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f69505f0c6137121cae92d42d052b244326c8436
-ms.openlocfilehash: 9b7ce8ba180f67c4a52439f4e03b59f07a71323d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 06/28/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310790"
 ---
 # <a name="create-a-free-text-invoice-template"></a>Tworzenie szablonu faktury niezależnej
 
@@ -68,4 +68,3 @@ Ten przewodnik wykorzystuje firmę demonstracyjną USMF. Ta procedura jest przez
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Zapisywanie faktury niezależnej jako szablonu
 Istniejącą fakturę niezależną można również zapisać jako szablon. Gdy na karcie Faktura wybierzesz opcję Zapisz do szablonu, wprowadź nazwę i opis szablonu. Jeśli szablon o tej nazwie już istnieje, zobaczysz o tym powiadomienie. Nadal można kliknąć przycisk OK, aby zastąpić istniejący szablon. 
-

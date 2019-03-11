@@ -1,37 +1,36 @@
 ---
-title: "Synchronizowanie faktur dotyczących umowy w rozwiązaniu Field Service z fakturami niezależnymi w rozwiązaniu Finance and Operations"
-description: "Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania faktur za umowy w programie Microsoft Dynamics 365 for Field Service z fakturami niezależnymi w programie Microsoft Dynamics 365 for Finance and Operations."
+title: Synchronizowanie faktur dotyczących umowy w rozwiązaniu Field Service z fakturami niezależnymi w rozwiązaniu Finance and Operations
+description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania faktur umowy w Microsoft Dynamics 365 for Field Service z fakturami niezależnymi w Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: 55301ba39dd28fbae5b6c21b1da3c3d9cf6afd8a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
-ms.openlocfilehash: 6672e283a5e56b068e3494d53a0fd6dd08253ba9
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333261"
 ---
-
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-finance-and-operations"></a>Synchronizowanie faktur dotyczących umowy w rozwiązaniu Field Service z fakturami niezależnymi w rozwiązaniu Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania faktur za umowy w programie Microsoft Dynamics 365 for Field Service z fakturami niezależnymi w programie Microsoft Dynamics 365 for Finance and Operations.
+W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania faktur umowy w Microsoft Dynamics 365 for Field Service z fakturami niezależnymi w Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 
@@ -107,4 +106,3 @@ Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja 
 ### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-lines"></a>Faktury za umowy (z Field Service do Fin and Ops): Wiersze faktur
 
 [![Mapowanie szablonu w integracji danych](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
-

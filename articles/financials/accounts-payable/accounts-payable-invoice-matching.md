@@ -1,13 +1,13 @@
 ---
-title: "Uzgadnianie faktur rozrachunków z dostawcami"
-description: "Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów."
+title: Uzgadnianie faktur rozrachunków z dostawcami
+description: Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 11cc2d4ddbd30ff4d010f6b34119a7ad96d5aecb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dc5e072f23cbb0dcc2d3d1d390070bb11a2d2f06
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310284"
 ---
-
 # <a name="accounts-payable-invoice-matching"></a>Uzgadnianie faktur rozrachunków z dostawcami
 
 [!include [banner](../includes/banner.md)]
@@ -191,7 +190,6 @@ Faktury dostawców często są oparte na dokumentach przyjęcia produktów odpow
 -   Przeglądanie i zatwierdzanie rozbieżności przy uzgadnianiu rozbieżności cen występujących między ceną jednostkową netto z faktury a ceną jednostkową netto z zamówienia zakupu. Można skonfigurować dozwolone wartości procentowe dla firm, dostawców i towarów. Jeśli cena wiersza faktury dostawcy nie mieści się w dopuszczonym zakresie cen, można zapisać fakturę i czekać na jej zatwierdzenie przed zaksięgowaniem lub na dostarczenie korekty przez dostawcę.
 
 Aby uzyskać więcej informacji, zobacz [Trzyelementowe zasady uzgadniania](three-way-matching-policies.md) i [Konfigurowanie sprawdzania uzgadniania faktur rozrachunków z dostawcami](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
-
 
 
 

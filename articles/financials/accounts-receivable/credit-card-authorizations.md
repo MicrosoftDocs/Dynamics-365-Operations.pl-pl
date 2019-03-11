@@ -1,13 +1,13 @@
 ---
 title: Konfiguracja i autoryzacja karty kredytowej
-description: "Ten artykuł zawiera omówienie funkcji autoryzacji kart kredytowych w programie Microsoft Dynamics 365 for Finance and Operations. Znajdują się tu informacje o konfigurowaniu usługi płatności, dodawaniu karty kredytowej do zamówienia sprzedaży oraz o unieważnianiu autoryzacji."
+description: Ten artykuł zawiera omówienie mechanizmu autoryzacji karty kredytowej w Microsoft Dynamics 365 for Finance and Operations. Znajdują się tu informacje o konfigurowaniu usługi płatności, dodawaniu karty kredytowej do zamówienia sprzedaży oraz o unieważnianiu autoryzacji.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CreditCardProcessors, CustTable, SalesTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7a1d3c73e4305375ddf356b93b9502b0255df99b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a6354563fdebff901498f1cd6caed3aedae668b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343013"
 ---
-
 # <a name="credit-card-setup-authorization-and-capture"></a>Konfiguracja i autoryzacja karty kredytowej
 
 [!include [banner](../includes/banner.md)]
 
 [!include [retail name](../includes/retail-name.md)]
 
-Ten artykuł zawiera omówienie funkcji autoryzacji kart kredytowych w programie Microsoft Dynamics 365 for Finance and Operations. Znajdują się tu informacje o konfigurowaniu usługi płatności, dodawaniu karty kredytowej do zamówienia sprzedaży oraz o unieważnianiu autoryzacji.
+Ten artykuł zawiera omówienie mechanizmu autoryzacji karty kredytowej w Microsoft Dynamics 365 for Finance and Operations. Znajdują się tu informacje o konfigurowaniu usługi płatności, dodawaniu karty kredytowej do zamówienia sprzedaży oraz o unieważnianiu autoryzacji.
 
 <a name="setting-up-the-credit-card-payment-service"></a>Konfigurowanie usługi płatności kartą kredytową
 ------------------------------------------
@@ -78,7 +77,6 @@ Jeśli wysyłasz części zamówienia, kwota częściowego zamówienia jest reje
 
 ## <a name="voiding-an-authorization"></a>Unieważnianie autoryzacji 
 Abu unieważnić autoryzację karty kredytowej, można zmienić metodę płatności na inną, która nie ma typu karty kredytowej.
-
 
 
 

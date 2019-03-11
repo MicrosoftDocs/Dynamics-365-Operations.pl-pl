@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Czech Republic, Estonia, Latvia, Lithuania, Poland
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ab3218debfd3ad10b781ff3e7b4722f5d625f092
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7e04c046aac0825a6a9d2b2b439bc2261ed61f16
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371511"
 ---
-
 # <a name="currency-revaluation-for-bank-account-transactions"></a>Przeszacowanie w walucie dla transakcji na kontach bankowych
 
 [!include [banner](../includes/banner.md)]
@@ -73,4 +72,3 @@ Musisz przeszacować i dostosować konta bankowe, jeśli istnieje różnica kurs
 
 > [!NOTE]
 > W księdze głównej są wyświetlane dwie oddzielne transakcje: jedna w walucie rozliczeniowej i jedna w walucie raportowania.
-

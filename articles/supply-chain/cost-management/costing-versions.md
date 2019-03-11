@@ -1,13 +1,13 @@
 ---
 title: Wersje wyceny
-description: "Ten artykuł zawiera informacje o wersjach wyceny, zarządzaniu nimi oraz o typach danych, które można w nich uwzględnić. Głównym celem wersji wyceny jest objęcie rekordów kosztów dotyczących towarów, kategorii kosztów oraz wzorów obliczania kosztów pośrednich."
+description: Ten artykuł zawiera informacje o wersjach wyceny, zarządzaniu nimi oraz o typach danych, które można w nich uwzględnić. Głównym celem wersji wyceny jest objęcie rekordów kosztów dotyczących towarów, kategorii kosztów oraz wzorów obliczania kosztów pośrednich.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a73be45d183f3cbdc19efbb9ee29fa621a113c66
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: cb8e8193b3312a63042a44cb082a33a196cbc1be
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330156"
 ---
-
 # <a name="costing-versions"></a>Wersje wyceny
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Głównym powodem dopuszczenia występowania cen zakupu w tym miejscu jest możl
 Aby włączyć dane cen zakupu, należy najpierw zdefiniować grupę obliczania BOM zawierającą model kosztu własnego dla ceny zakupu towaru i przypisać grupę obliczeń BOM do zakupionych towarów. Następnie należy użyć modelu kosztu własnego dla grupy obliczeń BOM podczas obliczania BOM z użyciem kosztów planowanych do obliczenia ceny sprzedaży produkowanych towarów. 
 
 Rekordy ceny zakupu dla towarów są również używane w celach informacyjnych. Zmieniając stan rekordu ceny zakupu towaru z **Oczekujący** na **Aktywny**, można zaktualizować podstawową cenę zakupu towaru. Jednak podstawa cena zakupu nie jest właściwa dla oddziału i może zastąpić ją ręcznie. Podstawowa cena zakupu służy jako domyślna cena zakupu w zamówieniach zakupu.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Księga główna i strona główna raportów finansowych"
-description: "Moduł Księga główna służy do definiowania rekordów finansowych dla firmy i zarządzania nimi."
+title: Księga główna i strona główna raportów finansowych
+description: Moduł Księga główna służy do definiowania rekordów finansowych dla firmy i zarządzania nimi.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 85afebcc88ad1c087d5f1dabaac56f694534cf98
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
-ms.openlocfilehash: 9ee3f73cd11b38ed2237ea3fe08db18000e55f07
-ms.contentlocale: pl-pl
-ms.lasthandoff: 06/25/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363368"
 ---
-
 # <a name="general-ledger"></a>Księga główna 
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Moduł Księga główna służy do definiowania rekordów finansowych dla firmy 
  - [Planowanie planu kont](plan-chart-of-accounts.md)
  - [Typy kont głównych](main-account-types.md)
 
-Można przeprowadzić alokację lub dystrybucję kwot pieniężnych do jednego lub kilku kont albo do kombinacji kont i wymiarów opartych na regułach alokacji. Istnieją dwa typy alokacji: stałe i zmienne. Można również rozliczać transakcje między kontami księgowymi i przeszacować kwoty w walucie. Na koniec roku obrachunkowego należy wygenerować transakcje zamknięcia i przygotować konta do nowego roku obrachunkowego. Funkcja konsolidacji umożliwia połączenie wyników finansowych dla kilku oddziałów firmy w jedne wyniku dla skonsolidowanej organizacji. Oddziały mogą znajdować się w tej samej bazie danych programu Microsoft Dynamics 365 for Finance and Operations lub w oddzielnych bazach danych.
+Można przeprowadzić alokację lub dystrybucję kwot pieniężnych do jednego lub kilku kont albo do kombinacji kont i wymiarów opartych na regułach alokacji. Istnieją dwa typy alokacji: stałe i zmienne. Można również rozliczać transakcje między kontami księgowymi i przeszacować kwoty w walucie. Na koniec roku obrachunkowego należy wygenerować transakcje zamknięcia i przygotować konta do nowego roku obrachunkowego. Funkcja konsolidacji umożliwia połączenie wyników finansowych dla kilku oddziałów firmy w jedne wyniku dla skonsolidowanej organizacji. Oddziały mogą znajdować się w tej samej bazie danych Microsoft Dynamics 365 for Finance and Operations lub w oddzielnych bazach danych.
 
 - [Omówienie konsolidacji i eliminacji](../budgeting/consolidation-elimination-overview.md)
 - [Salda głównego konta księgowego](general-ledger-account-balances.md)
@@ -58,20 +57,19 @@ Ponadto reguły muszą być aktualizowane okresowo, jeśli zmieniają się wymag
 
 Przejdź do sekcji [Informacje o wersji](https://docs.microsoft.com/en-us/business-applications-release-notes/), aby zobaczyć, jakie nowe funkcje zostały dodane. 
 
-### <a name="videos"></a>Filmy
+### <a name="videos"></a>Filmy wideo
 
 Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje dotyczące modułu Rozrachunki z dostawcami możesz znaleźć w [blogu usługi Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+Opinie, wiadomości i inne informacje dotyczące modułu Rozrachunki z dostawcami możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
 Wiele wpisów dotyczących modułu Księga główna jest dostępnych w [blogu zespołu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Mimo że część z tych wpisów została napisana dla poprzedniej wersji modułu Księga główna, to w obecnej wersji są również używane te same pojęcia i podobne procedury.
 
-Blog [społeczności partnerów zajmujących się oprogramowaniem Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
+[Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 
 #### <a name="community-blogs"></a>Blogi społeczności
 
-- [Co należy wiedzieć o księdze w programie Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
-
+- [Co należy wiedzieć o księdze w Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 

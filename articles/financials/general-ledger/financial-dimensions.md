@@ -1,13 +1,13 @@
 ---
 title: Wymiary finansowe
-description: "W tym temacie opisano różne typy wymiarów finansowych oraz sposoby ich konfigurowania."
+description: W tym temacie opisano różne typy wymiarów finansowych oraz sposoby ich konfigurowania.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/03/2019
 ms.topic: article
-ems.prod: 
+ems.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
 ms.reviewer: shylaw
@@ -16,15 +16,14 @@ ms.custom: 25871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317552"
 ---
-
 # <a name="financial-dimensions"></a>Wymiary finansowe
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Strona **Wymiary finansowe** umożliwia tworzenie wymiarów finansowych, które 
 
 Po utworzeniu wymiarów finansowych na stronie **Wartości wymiarów finansowych** przypisz dodatkowe właściwości do każdego wymiaru finansowego.
 
-Wymiary finansowe mogą służyć do reprezentowania firm. Nie ma obowiązku tworzenia firm w programie Microsoft Dynamics 365 for Finance and Operations. Jednak wymiary finansowe nie są zaprojektowane do zaspokajania wymagań operacyjnych ani biznesowych firmy. Funkcję księgowania międzyjednostkowego w programie Finance and Operations zaprojektowano tylko z myślą o zapisach księgowych, które są tworzone przy każdej transakcji.
+Wymiary finansowe mogą służyć do reprezentowania firm. Nie trzeba tworzyć podmiotów prawnych w Microsoft Dynamics 365 for Finance and Operations. Jednak wymiary finansowe nie są zaprojektowane do zaspokajania wymagań operacyjnych ani biznesowych firmy. Funkcję księgowania międzyjednostkowego w programie Finance and Operations zaprojektowano tylko z myślą o zapisach księgowych, które są tworzone przy każdej transakcji.
 
 Przed skonfigurowaniem wymiarów finansowych jako firmy oceń swoje procesy biznesowe w następujących obszarach, aby ustalić, czy ta konfiguracja będzie działać w Twojej organizacji:
 
@@ -141,4 +140,3 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 
 - [Definiowanie wymiarów finansowych](tasks/define-financial-dimensions.md)
 - [Obsługa domyślnych szablonów wymiaru finansowego](tasks/maintain-financial-dimension-default-templates.md)
-

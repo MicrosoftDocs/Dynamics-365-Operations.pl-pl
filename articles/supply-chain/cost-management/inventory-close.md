@@ -1,13 +1,13 @@
 ---
-title: "Zamknięcie zapasów"
-description: "W ramach procesu rozliczania transakcji rozchodu z transakcjami przychodu można również wybrać aktualizowanie księgi głównej, tak aby uwzględniała wprowadzane korekty."
+title: Zamknięcie zapasów
+description: W ramach procesu rozliczania transakcji rozchodu z transakcjami przychodu można również wybrać aktualizowanie księgi głównej, tak aby uwzględniała wprowadzane korekty.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a705853ea27d117c99a00893b862348bbac0b9b0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dfb6b9c2f4bad95c165a8d8a1e888e7a67e66c69
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326499"
 ---
-
 # <a name="inventory-close"></a>Zamknięcie zapasów
 
 [!include [banner](../includes/banner.md)]
@@ -87,7 +86,6 @@ W pewnych sytuacjach nie można nic zrobić w reakcji na ostrzeżenia. Na przyk�
 Czasami może być konieczne wycofanie ukończonego zamknięcia zapasów w celu przywrócenie rozliczeń do stanu sprzed wprowadzenia korekt. Anulowanie ukończonego zamknięcia magazynu powoduje ponowne otwarcie magazynu w celu umożliwienia księgowania we właściwym okresie, który obejmuje to zamknięcie magazynu. Pokrewne zmiany mogą być również dokonane w księdze głównej. Po dokonaniu wszystkich korekt można ponownie wykonać zamknięcie zapasów dla okresu, nad którym pracujesz. 
 
 **Uwaga:** Można ponownie otworzyć tylko ostatni okres zapasów, który został zamknięty. Aby cofnąć wcześniejsze zamknięcie zapasów, należy wycofać jedno po drugim wszystkie kolejne zamknięcie, począwszy od najnowszego.
-
 
 
 

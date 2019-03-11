@@ -1,34 +1,34 @@
 ---
-title: "Konfigurowanie zarządzania ofertami"
-description: "W tym temacie opisano sposób konfigurowania zarządzania ofertami w aplikacji Talent."
+title: Konfigurowanie zarządzania ofertami
+description: W tym temacie opisano sposób konfigurowania zarządzania ofertami w aplikacji Talent.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
+ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "376514"
 ---
 # <a name="set-up-offer-management"></a>Konfigurowanie zarządzania ofertami 
 
 [!include [banner](includes/banner.md)]
 
-Gdy kandydat jest przenoszony do etapu oferty w aplikacji Dynamics 365 for Talent Attract, trzeba mieć możliwość szybkiego tworzenia ofert dla kandydata, ich niezbędnego zatwierdzania i wysyłania do kandydata. Ponieważ większość ofert jest standardowych, można je tworzyć na podstawie szablonów wielokrotnego użytku. W aplikacji Attract wszystkie oferty są łączone w pakiet oferty, który jest kolekcją jednego lub większej dokumentów oferty. 
+Gdy kandydat jest przenoszony do etapu oferty w aplikacji Dynamics 365 for Talent: Attract, trzeba mieć możliwość szybkiego tworzenia ofert dla kandydata, ich niezbędnego zatwierdzania i wysyłania do kandydata. Ponieważ większość ofert jest standardowych, można je tworzyć na podstawie szablonów wielokrotnego użytku. W aplikacji Attract wszystkie oferty są łączone w pakiet oferty, który jest kolekcją jednego lub większej dokumentów oferty. 
 
 Ten temat zawiera listę wszystkich czynności, jakie powinien wykonać administrator aplikacji Attract w celu skonfigurowania różnych szablonów pakietów ofert w ramach funkcji zarządzania ofertami w aplikacji Attract. Użytkownicy nieposiadający ról administratorów nie mają dostępu do tych funkcji.
 
@@ -203,5 +203,7 @@ Istnieje kilka etapów procesu tworzenia oferty, które mogą być konfigurowane
 
     - ESign — jest to opcja domyślna, dostępna od razu po pierwszym uruchomieniu, zapewniająca użytkownikowi opcję podpisania oferty przez wpisanie imienia i nazwiska oraz inicjałów.
 
-Aby uzyskać więcej informacji o procesie tworzenia oferty, zobacz [Tworzenie, zatwierdzanie i podpisywanie ofert](./creating-offers.md).
+>[!NOTE]
+> Licencje Adobe Sign i bezpłatna wersja próbna, zobacz ten [link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+Aby uzyskać więcej informacji o procesie tworzenia oferty, zobacz [Tworzenie, zatwierdzanie i podpisywanie ofert](./creating-offers.md).

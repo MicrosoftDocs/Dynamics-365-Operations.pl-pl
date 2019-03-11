@@ -1,13 +1,13 @@
 ---
-title: "Administrowanie organizacją — strona główna"
-description: "W tym temacie wymieniono zasoby, które pomogą korzystać z rozwiązania Microsoft Dynamics 365 for Finance and Operations w organizacji."
+title: Administrowanie organizacją — strona główna
+description: W tym temacie wymieniono zasoby, które pomogą korzystać z Microsoft Dynamics 365 for Finance and Operations w organizacji.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0a693529b55b66eb940f8215a336d5c4ae0acedd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332824"
 ---
-
 # <a name="organization-administration-home-page"></a>Administrowanie organizacją — strona główna
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o zawartości, która ułatwi zaawansowanym użytkownikom i administratorom skonfigurowanie rozwiązania Microsoft Dynamics 365 for Finance and Operations. Ta zawartość ułatwi im skonfigurowanie systemu w celu płynnej i efektywnej pracy w organizacji.
+Ten temat opisuje zawartość, która pomoże użytkownikom zaawansowanym i administratorom konfigurować usługę Microsoft Dynamics 365 for Finance and Operations. Ta zawartość ułatwi im skonfigurowanie systemu w celu płynnej i efektywnej pracy w organizacji.
 
 Większość zawartości wymienionej tutaj dotyczy funkcji w module **Administracja organizacyjna**. Istnieje jednak kilka zadań, takich jak tworzenie i używanie szablonu rekordu, które mogą zostać wykonane w dowolnym module, aby ułatwić organizacji bardziej efektywne działanie.
 
@@ -103,4 +102,3 @@ Szablony rekordów pomagają w szybkim tworzeniu rekordów w systemie. Można ut
 - [Konfigurowanie zarządzania dokumentami](configure-document-management.md)
 - [Konfigurowanie i wysyłanie wiadomości e-mail](configure-email.md)
 - [Dane dotyczące daty/godziny i strefy czasowe](date-time-zones.md)
-

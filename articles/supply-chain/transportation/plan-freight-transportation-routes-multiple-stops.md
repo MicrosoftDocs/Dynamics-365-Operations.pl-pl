@@ -1,13 +1,13 @@
 ---
 title: Planowanie tras przewozu frachtu z przystankami
-description: "W tym artykule opisano różne elementy używane do planowania tras transportu w programie Dynamics 365 for Finance and Operations."
+description: W tym artykule opisano różne elementy używane do planowania tras transportu w Dynamics 365 for Finance and Operations.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 36cb454477c0d296246c061d2573954a81c9efd7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 16255e812773ed35c0e34ec26a8a689ea09632bd
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328316"
 ---
-
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planowanie tras przewozu frachtu z przystankami
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano różne elementy używane do planowania tras transportu w programie Microsoft Dynamics 365 for Finance and Operations.
+W tym artykule opisano różne elementy używane do planowania tras transportu w Microsoft Dynamics 365 for Finance and Operations.
 
 Dla złożonych tras transportowych, które mają przystanki po drodze, można używać planów tras i przewodników po trasach. Jeśli ta sama trasa będzie stosowana w sposób regularny, można skonfigurować trasę z harmonogramem.
 
@@ -51,7 +50,6 @@ Trasa z harmonogramem to wstępnie zdefiniowany plan trasy, który ma harmonogra
 
 ## <a name="load-building-workbench"></a>Pulpit kompilowania ładunku
 Do proponowania ładunków Pulpit kompilowania ładunku używa adresów odbiorców i dat dostaw z zamówień sprzedaży oraz dostępnych tras z harmonogramami. Domyślnie w pulpicie są wprowadzane wartości z trasy. Można jednak wybrać datę „od” wcześniejszą niż data „od” na trasie. Podczas proponowania ładunku są sprawdzane adres dostawy i data dostawy we wszystkich otwartych zamówieniach sprzedaży. Jeśli kod pocztowy adresu dostawy jest zgodny z kodem pocztowym centrum w planie trasy, a data dostawy mieści się w zakresie wybranym w kryteriach, zamówienie sprzedaży jest proponowane dla dostawy. Jest także uwzględniana pojemność określona w szablonie ładunku. Proponowany jest tylko jeden ładunek na raz. Jeśli masz zamówienie sprzedaży, które nie zostało uwzględnione, może być konieczne użycie innego szablonu ładunku (na przykład szablonu dla większej ciężarówki lub kontenera) albo zaplanowanie dodatkowej dostawy.
-
 
 
 

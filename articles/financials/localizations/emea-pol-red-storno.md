@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 09/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,20 +15,18 @@ ms.search.region: Poland
 ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
+ms.openlocfilehash: 465d4b5330309462d4b72fc1a387f584a1ac81bd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: 004dd233ce5c2d25b2699b89e7595dcca75b31ed
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/01/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371469"
 ---
-
-
-# <a name="activate-storno-accounting"></a>Uaktywnienie stornowania
+# <a name="activate-storno-accounting"></a>Aktywowanie stornowania
 
 [!include [banner](../includes/banner.md)]
 
-Te procedury służą do konfigurowania funkcjonalności stornowania w programie Microsoft Dynamics 365 for Finance and Operations. Stornowanie polega na zmianie znaku kwot w celu wycofania błędnych oryginalnych transakcji. Na przykład następujące transakcje są zarejestrowane niepoprawnie.
+Niniejsze procedury służą do konfigurowania operacji stornowania w Microsoft Dynamics 365 for Finance and Operations. Stornowanie polega na zmianie znaku kwot w celu wycofania błędnych oryginalnych transakcji. Na przykład następujące transakcje są zarejestrowane niepoprawnie.
 
 |opis        | Strona debetowa |Strona kredytowa  |
 |-------------------|-------|--------|
@@ -83,5 +81,4 @@ Na stronie **Parametry modułu rozrachunków z dostawcami** w obszarze **Faktura
  7. W polu **Numer** wpisz wartość.  
  8. W polu **Data faktury** wprowadź datę.  
  9. Kliknij przycisk **Księguj**.  
-
 

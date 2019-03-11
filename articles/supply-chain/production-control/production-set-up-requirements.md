@@ -1,13 +1,13 @@
 ---
 title: Wymagania konfiguracji produkcji
-description: "Ten artykuł zawiera informacje o konfiguracji, jaką należy zapewnić przed rozpoczęciem używania modułu Kontrola produkcji."
+description: Ten artykuł zawiera informacje o konfiguracji, jaką należy zapewnić przed rozpoczęciem używania modułu Kontrola produkcji.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b811c11271097f4bb7910c34f7775955abba526d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 47fe11168ad2ddea2a7033eda8d8bd8220efea32
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366634"
 ---
-
 # <a name="production-setup-requirements"></a>Wymagania konfiguracji produkcji
 
 [!include [banner](../includes/banner.md)]
@@ -78,7 +77,6 @@ W wypadku stosowania marszrut operacje muszą zostać zdefiniowane dla każdej s
 1.  **Grupy produkcji** — skonfiguruj grupy produkcji w celu utworzenia relacji między zleceniem produkcyjnym i kontami księgowymi. Konta księgowe są używane do księgowania lub grupowania zleceń do raportowania.
 2.  **Grupy produkcji** — utwórz pule produkcji w celu pogrupowania zleceń produkcyjnych do przetwarzania pilnych zleceń produkcyjnych lub usunięcia i księgowania grup zleceń.
 3.  **Właściwości** — zdefiniuj właściwości, aby utworzyć atrybuty specjalne, które można przypisać do zasobów w celu kontrolowania kolejnością produkcji. Te atrybuty są powiązane z szablonem czasu pracy.
-
 
 
 

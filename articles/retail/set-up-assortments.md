@@ -1,13 +1,13 @@
 ---
 title: Konfigurowanie asortymentu
-description: "W tym artykule opisano, co jest asortyment, i wyjaśniono, jak konfigurować asortymenty w programie Microsoft Dynamics 365 for Retail."
+description: W tym artykule opisano, co jest asortyment, i wyjaśniono, jak konfigurować asortymenty w programie Microsoft Dynamics 365 for Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: a9578a0784d4f4fbfca27ec4093a3f61d1068a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 91713a4492ad82520f7dde611c17a5ea168ed80d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314976"
 ---
-
-# <a name="set-up-assortments"></a>Konfigurowanie asortymentu
+# <a name="set-up-assortments"></a>Konfigurowanie asortymentów
 
 [!include [banner](includes/banner.md)]
 
@@ -56,4 +55,3 @@ Po spełnieniu wymagań wstępnych można tworzyć asortyment i przypisywać go 
 2. Wybierz kanały sprzedaży detalicznej grup wysokiego poziomu kanałów sprzedaży, których dotyczy asortyment.
 3. Dodaj kategorie produktu, pojedyncze produkty lub ich warianty do asortymentu. Można uwzględnić wszystkie produkty w konkretnej kategorii lub można wykluczyć wybrane produkty z kategorii, która jest uwzględniona w asortymencie.
 4. Opublikuj asortyment. Po opublikowaniu asortymentu harmonogram Asortymenty jest uruchamiany automatycznie. Ten proces generuje listę produktów. Po zakończeniu tego procesu, produkty stają się dostępne dla kanałów sprzedaży przypisanych do asortymentu produktów. Jeśli wprowadzono zmiany asortymentu, który został opublikowany lub kanałów sprzedaży przypisanych do asortymentu, należy zaktualizować asortyment. Do aktualizacji asortymentu, gdy zostaną wprowadzone zmiany, można uruchomić zadanie przetwarzania wsadowego asortymentu sieci sprzedaży.
-

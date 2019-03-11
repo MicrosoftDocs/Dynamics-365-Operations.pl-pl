@@ -1,13 +1,13 @@
---- 
-title: "Wyświetlanie wpisów kosztów obiektów kosztów"
-description: "W tej procedurze pokazano sposób wyświetlania wpisów kosztu dla obiektu kosztów."
+---
+title: Wyświetlanie wpisów kosztów obiektów kosztów
+description: W tej procedurze pokazano sposób wyświetlania wpisów kosztu dla obiektu kosztów.
 author: AndersGirke
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, EcoResProductDetailsExtended, InventCostOnhandItem, InventValueTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9c67ac7dd06219b9521e4832b18204bcf8662a81
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 611d4c211d59d3077a54f92dea82a078145eb310
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350327"
 ---
 # <a name="view-cost-entries-for-a-cost-object"></a>Wyświetlanie wpisów kosztów obiektów kosztów
 
@@ -38,5 +38,4 @@ W tej procedurze pokazano sposób wyświetlania wpisów kosztu dla obiektu koszt
 6. Kliknij opcję Wpisy kosztów.
 7. Użyj szybkiego filtru, aby wyfiltrować pole Numer według wartości „p000031”.
     * Jeśli wpisy kosztów są puste, ustaw pole Od dnia na 31 stycznia 2012 r, a pole Do dnia na 31 grudnia 2012 r.  
-
 

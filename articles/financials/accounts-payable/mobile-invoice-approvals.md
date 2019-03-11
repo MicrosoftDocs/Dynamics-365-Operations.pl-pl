@@ -1,13 +1,13 @@
 ---
-title: "Zatwierdzanie faktur na urządzeniach przenośnych"
-description: "Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych w programie Dynamics 365 for Finance and Operations na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych."
+title: Zatwierdzanie faktur na urządzeniach przenośnych
+description: Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych w Dynamics 365 for Finance and Operations na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e39d81b0d600012f936865b53f8556eb3ef0a3d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314401"
 ---
-
 # <a name="mobile-invoice-approvals"></a>Zatwierdzanie faktur na urządzeniach przenośnych
 
 [!include [banner](../includes/banner.md)]
 
-Funkcje komórkowe w programie Microsoft Dynamics 365 for Finance and Operations pozwalają użytkownikom biznesowym projektować mobilne środowiska obsługi. W scenariuszach zaawansowanych platforma umożliwia również deweloperom rozszerzanie funkcjonalności zgodnie z potrzebami. Najbardziej skutecznym sposobem, aby poznać niektóre nowe koncepcje obsługi na telefonach komórkowych, jest przejście przez proces projektowania w kilku scenariuszach. Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych. Ten temat powinien ułatwić projektowanie w innych wariantach scenariuszy i może być również wykorzystywany w innych scenariuszach, niezwiązanych z fakturami od dostawców.
+Opcje mobilne w Microsoft Dynamics 365 for Finance and Operations pozwalają użytkownikom biznesowym na projektowanie środowiska mobilnego. W scenariuszach zaawansowanych platforma umożliwia również deweloperom rozszerzanie funkcjonalności zgodnie z potrzebami. Najbardziej skutecznym sposobem, aby poznać niektóre nowe koncepcje obsługi na telefonach komórkowych, jest przejście przez proces projektowania w kilku scenariuszach. Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych. Ten temat powinien ułatwić projektowanie w innych wariantach scenariuszy i może być również wykorzystywany w innych scenariuszach, niezwiązanych z fakturami od dostawców.
 
 <a name="prerequisites"></a>Wymagania wstępne
 -------------
@@ -37,7 +36,7 @@ Funkcje komórkowe w programie Microsoft Dynamics 365 for Finance and Operations
 | Wymaganie wstępne                                                                                            | opis                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Podręcznik wprowadzający do platformy komórkowej                                                                                |[Platforma mobilna](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
-| Dynamics 365 for Finance and Operations                                                                             | Środowisko, w którym zainstalowano program Microsoft Dynamics 365 for Operations w wersji 1611 oraz aktualizację nr 3 platformy Microsoft Dynamics 365 for Operations (z listopada 2016 r.)                   |
+| Rozwiązanie Dynamics 365 for Finance and Operations                                                                             | Środowisko, w którym zainstalowano program Microsoft Dynamics 365 for Operations w wersji 1611 oraz aktualizację nr 3 platformy Microsoft Dynamics for Operations (z listopada 2016 r.)                   |
 | Instalacja poprawki KB 3204341.                                                                              | Rejestrator zadań może błędnie nagrywać dwa polecenia Zamknij dla rozwijanych okien dialogowych. Poprawka jest dołączona do aktualizacji nr 3 platformy Dynamics 365 for Operations (aktualizacja z listopada 2016 r.). |
 | Instalacja poprawki KB 3207800.                                                                              | Ta poprawka umożliwia wyświetlanie załączników na klientach mobilnych. Poprawka jest dołączona do aktualizacji nr 3 platformy Dynamics 365 for Operations (aktualizacja z listopada 2016 r.).           |
 | Instalacja poprawki KB 3208224.                                                                              | Kod źródłowy aplikacji zatwierdzania faktur od dostawców na urządzeniach komórkowych. Poprawka jest dołączona w aplikacji Microsoft Dynamics AX w wersji 7.0.1 (z maja 2016 r.).                          |
@@ -488,7 +487,6 @@ W scenariuszu 1 można wprowadzić zmiany wymienione poniżej zgodnie z wymagani
     3.  W idealnej sytuacji w tym scenariuszu dystrybucje powinny być pokazywane w kontekście wiersza faktury. W związku z tym upewnij się, że użytkownik może szczegółowo przejść do wiersza, aby zobaczyć stronę dystrybucji. Użyj funkcji łącza do strony, aby ustanowić drążenie wskroś, tak samo, jak to zrobiono dla stron nagłówka i szczegółów w scenariuszu 1.
 
 2.  Ponieważ dystrybucje w scenariuszu 2 wymagają więcej niż jednego typu kwoty (podatek, opłaty i tak dalej), warto, aby były wyświetlane opisy typów kwot. (Pominęliśmy te informacje w scenariuszu 1).
-
 
 
 

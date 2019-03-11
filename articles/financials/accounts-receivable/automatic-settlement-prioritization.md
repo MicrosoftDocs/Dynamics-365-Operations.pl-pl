@@ -1,13 +1,13 @@
 ---
 title: Automatyczne rozliczanie i priorytety
-description: "W tym temacie opisano, jak transakcje są rozliczane po wybraniu opcji Automatyczne rozliczanie na stronie Parametry modułu rozrachunków z odbiorcami. Wyjaśniono również możliwości używania automatycznego rozliczania w połączeniu z priorytetem płatności."
+description: W tym temacie opisano, jak transakcje są rozliczane po wybraniu opcji Automatyczne rozliczanie na stronie Parametry modułu rozrachunków z odbiorcami. Wyjaśniono również możliwości używania automatycznego rozliczania w połączeniu z priorytetem płatności.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 775ce10cdba5e38fbb5fc058c6df297143229f79
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318978"
 ---
-
 # <a name="automatic-settlement-and-prioritization"></a>Automatyczne rozliczanie i priorytety
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak transakcje są rozliczane po wybraniu opcji Automatyczne rozliczanie na stronie Parametry modułu rozrachunków z odbiorcami. Wyjaśniono również możliwości używania automatycznego rozliczania w połączeniu z priorytetem płatności.
 
-Dostępne są dwie opcje rozliczania płatności za pomocą faktur i innych transakcji. Można ręcznie wybrać transakcje do rozliczenia lub program Microsoft Dynamics 365 for Finance and Operations może wybrać transakcje automatycznie za pomocą funkcji automatycznego rozliczania. Można także dostosować sposób przetwarzania automatycznych rozliczeń przy użyciu opcji **Określanie priorytetów rozliczenia**. Wszystkie te opcje są częścią parametrów rozliczenia określanych na stronie **Parametry modułu rozrachunków z odbiorcami**. Sposób automatycznego rozliczania transakcji może się różnić w zależności od używanej metody automatycznego rozliczania. Dostępne są następujące metody:
+Dostępne są dwie opcje rozliczania płatności za pomocą faktur i innych transakcji. Można ręcznie wybrać transakcje do rozliczenia lub Microsoft Dynamics 365 for Finance and Operations może wybrać transakcje automatycznie za pomocą funkcji automatycznego rozliczania. Można także dostosować sposób przetwarzania automatycznych rozliczeń przy użyciu opcji **Określanie priorytetów rozliczenia**. Wszystkie te opcje są częścią parametrów rozliczenia określanych na stronie **Parametry modułu rozrachunków z odbiorcami**. Sposób automatycznego rozliczania transakcji może się różnić w zależności od używanej metody automatycznego rozliczania. Dostępne są następujące metody:
 
 -   Priorytet rozliczania zdefiniowany przez użytkownika
 -   Domyślne automatyczne rozliczanie
@@ -42,11 +41,11 @@ W poniższych sekcjach opisano sposób rozliczania transakcji w przypadku każde
 ## <a name="example-transactions"></a>Przykładowe transakcje
 Przykłady rozliczeń w dalszej części tego artykułu są oparte na następujących transakcjach. Wszystkie transakcje dotyczą odbiorcy 2050.
 
-| Transakcja   | Data        | Kwota | Warunki rabatu gotówkowego | Data rabatu gotówkowego | Komentarze                                                                                                                                                                                      |
+| Transakcja   | Data        | Kwota | Warunki rabatu gotówkowego | Data rabatu | Komentarze                                                                                                                                                                                      |
 |---------------|-------------|--------|---------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Faktura 1     | 15 sierpnia   | 100,00 | 2%14, netto 30        | 29 sierpnia          |                                                                                                                                                                                               |
-| Faktura 2     | 1 września | 250,00 | 2%14, netto 30        | 15 września       |                                                                                                                                                                                               |
-| Faktura 3     | 15 października  | 500,00 | 2%14/ netto 30        | 29 października         |                                                                                                                                                                                               |
+| Faktura 1     | 15 sierpnia   | 100,00 | 2%14, Netto 30        | 29 sierpnia          |                                                                                                                                                                                               |
+| Faktura 2     | 1 września | 250.00 | 2%14, Netto 30        | 15 września       |                                                                                                                                                                                               |
+| Faktura 3     | 15 października  | 500.00 | 2%14/ netto 30        | 29 października         |                                                                                                                                                                                               |
 | Nota odsetkowa | 15 października  | 7,00   |                     |                    | Ta nota odsetkowa dotyczy faktur 1 i 2. Kwota wynosi 2% odsetek od kwot zaległych co najmniej 30 dni. Na przykład: 0,02 × (100,00 + 250,00) = 7,00. |
 
 ## <a name="user-defined-settlement-priority"></a>Priorytet rozliczania zdefiniowany przez użytkownika
@@ -79,7 +78,6 @@ W przypadku braku priorytetu rozliczenia zdefiniowanego przez użytkownika trans
 | Faktura 2     | 9/1/2015   | 10002   | 250,00                         | 250,00           | 0,00    | USD      |
 | Faktura 3     | 10/15/2015 |         | 500,00                         | 350,00           | 150,00  | USD      |
 | Nota odsetkowa | 10/15/2015 |         | 7,00                           | 0,00             | 0,00    | USD      |
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Zarządzanie asortymentem"
-description: "W tym temacie wyjaśniono podstawowe pojęcia dotyczące zarządzania asortymentem w programie Microsoft Dynamics 365 for Retail oraz omówiono różne opcje projektu wdrożenia."
+title: Zarządzanie asortymentem
+description: W tym temacie wyjaśniono podstawowe pojęcia dotyczące zarządzania asortymentem w Microsoft Dynamics 365 for Retail oraz omówiono różne opcje projektu wdrożenia.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail, Operations
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
+ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365047"
 ---
-
 # <a name="assortment-management"></a>Zarządzanie asortymentem
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Przegląd
 
-Program Microsoft Dynamics 365 for Retail zawiera funkcję *asortymentów*, która pozwala zarządzać dostępnością produktów w różnych kanałach. Asortymenty decydują, które produkty są dostępne w konkretnych sklepach i okresach.
+Microsoft Dynamics 365 for Retail zawiera funkcję *asortymentów*, która pozwala zarządzać dostępnością produktów w różnych kanałach. Asortymenty decydują, które produkty są dostępne w konkretnych sklepach i okresach.
 
 W aplikacji Retail asortyment to mapowanie jednego lub więcej kanałów (lub grup kanałów, gdy są używane hierarchie organizacyjne) na jeden lub więcej produktów (lub grup produktów, gdy są używane hierarchie kategorii).
 
@@ -108,4 +107,3 @@ Planując i organizując asortymenty dla swojego wdrożenia aplikacji Retail, na
 - **Sprzedaż i zwroty poza asortymentami** — ta funkcja pozwala sprzedawcom detalicznym efektywnie zarządzać liczebnością asortymentów poprzez ograniczenie dostępności produktów tylko do tych, które należą do podstawowego asortymentu sklepu. Pomaga również reagować w sytuacjach, gdy produkt został omyłkowo pominięty z asortyment lub zwrócony poza datami obowiązywania asortymentu.
 
 Jeśli dane produktu nie istnieją w bazie danych kanału, aplikacja POS wykonuje w czasie rzeczywistym wywołania do centrali w celu pobrania wymaganych informacji, dzięki czemu produkt można sprzedać, zwrócić lub umieścić w zamówieniu klienta. Informacje o produkcie pobrane w ten sposób są dostępne tylko w zakresie danej transakcji. Produkt nie jest dodawany do definicji asortymentu. W związku później również będą wykonywane wywołania w czasie rzeczywistym tylko w razie potrzeby.
-

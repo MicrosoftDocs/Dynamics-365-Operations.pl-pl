@@ -1,13 +1,13 @@
 ---
 title: Odsetki podatkowe i rynkowe w Polsce
-description: "W tym temacie omówiono proces konfigurowania i obliczania odsetek od podatku dla Polski."
+description: W tym temacie omówiono proces konfigurowania i obliczania odsetek od podatku dla Polski.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Poland
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: a79049750ad81a529f6a6cdd5c176cee5d43379c
 ms.openlocfilehash: 5ee6c7c7d556c64f54849e02958ef34536ae1687
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371517"
 ---
-
 # <a name="tax-interest-and-free-hand-interest"></a>Odsetki podatkowe i rynkowe
 
 [!include[banner](../includes/banner.md)]
@@ -101,4 +100,3 @@ W Polsce stawki odsetek od podatku określa Minister Finansów. Dostawca oblicza
 11. W ustawieniu **Odsetki od podatków** zaznacz opcję **Tak**, aby obliczać odsetki rynkowe oraz odsetki od podatków.
 12. Na skróconej karcie **Rekordy do uwzględnienia** wybierz opcję **Filtr**, aby znaleźć i wybrać rekordy dla obliczania odsetek.
 13. Kliknij przycisk **OK**.
-

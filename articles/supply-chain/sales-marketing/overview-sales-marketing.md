@@ -1,13 +1,13 @@
 ---
-title: "Sprzedaż i marketing"
-description: "Moduł Sprzedaż i marketing umożliwia pozyskiwanie, przechowywanie i wykorzystywanie różnego rodzaju danych w procesie sprzedaży. Te dane obejmują pierwotną akcję handlową, przyszłe działanie uzupełniające oraz dodatkowe transakcje sprzedaży."
+title: Sprzedaż i marketing
+description: Moduł Sprzedaż i marketing umożliwia pozyskiwanie, przechowywanie i wykorzystywanie różnego rodzaju danych w procesie sprzedaży. Te dane obejmują pierwotną akcję handlową, przyszłe działanie uzupełniające oraz dodatkowe transakcje sprzedaży.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 4de2ac36ec13f95c7603d097a0800b317014bbd0
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321071"
 ---
-
 # <a name="sales-and-marketing"></a>Sprzedaż i marketing
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,7 @@ W sprzedaży i marketingu początkowe interakcje z potencjalnymi klientami mogą
 
 ### <a name="campaigns"></a>Kampanie
 
-Celem kampanii są osoby kontaktowe u potencjalnych klientów, leadów sprzedażowych, szans sprzedaży i istniejących klientów, których wybrano do udziału w kampanii. W programie Microsoft Dynamics 365 for Finance and Operations można utworzyć kilka typów kampanii, np. telemarketingowe, wykorzystujące korespondencję seryjną i wykorzystujące pocztę e-mail, aby zmaksymalizować spodziewane korzyści z klienta. Wraz z postępem kampanii i notowaniem pozytywnych reakcji można rozpocząć proces sprzedaży wobec najlepiej rokujących adresatów.
+Celem kampanii są osoby kontaktowe u potencjalnych klientów, leadów sprzedażowych, szans sprzedaży i istniejących klientów, których wybrano do udziału w kampanii. W Microsoft Dynamics 365 for Finance and Operations można utworzyć kilka typów kampanii, np. telemarketingowe, wykorzystujące korespondencję seryjną i wykorzystujące pocztę e-mail, aby zmaksymalizować spodziewane korzyści z klienta. Wraz z postępem kampanii i notowaniem pozytywnych reakcji można rozpocząć proces sprzedaży wobec najlepiej rokujących adresatów.
 
 ## <a name="sales"></a>Sprzedaż
 Funkcje sprzedaży umożliwiają tworzenie ofert, sprzedaż dodatkową i powiązaną nowym i istniejącym klientom, tworzenie zamówień sprzedaży oraz tworzenie faktur sprzedaży dla odbiorców. Poniższy schemat procesu ilustruje proces biznesowy sprzedaży. [![Proces biznesowy sprzedaży](./media/sales01.jpg)](./media/sales01.jpg)
@@ -126,4 +125,3 @@ Faktura pro forma to faktura przygotowana jako oszacowanie rzeczywistej kwoty fa
 #### <a name="blogs"></a>Blogi
 
 Przegląd procesu sprzedaży można znaleźć we wpisie [Jak działa sprzedaż w Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
-

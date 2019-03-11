@@ -1,13 +1,13 @@
 ---
 title: Co nowego, jakie zmiany
-description: "Ta strona wskazuje tematy, które mogą pomóc dowiedzieć się o nowych funkcjach w najnowszych wersjach programu Microsoft Dynamics 365 for Finance and Operations."
+description: Ta strona wskazuje tematy, które mogą pomóc dowiedzieć się o nowych funkcjach w najnowszych wersjach programu Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 12/05/2018
+ms.date: 02/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
+ms.openlocfilehash: 982b72b3fd71d58038218e007f9f3790874ceddc
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
-ms.openlocfilehash: 7d2a334792655a762c136a367c43ad56393001f5
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377212"
 ---
-
 # <a name="whats-new-or-changed"></a>Nowości i zmiany
 
 [!include [banner](../includes/banner.md)]
@@ -44,7 +43,7 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 <table>
 <thead>
 <tr>
-<th>Wydanie</th>
+<th>Zwolnienie</th>
 <th>Wersja</th>
 <th>Numer utworzenia</th>
 <th>Dostępność</th>
@@ -52,6 +51,13 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0</td>
+<td>10.0.8</td>
+<td>2019 kwietnia</td>
+<td><a href="whats-new-changed-10.md">Nowości i zmiany w programie Dynamics 365 for Finance and Operations w wersji 10.0 (kwiecień 2019)</a></td>
+</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.1.3</td>
@@ -71,35 +77,35 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 <td>8.1.1</td>
 <td>8.1.170</td>
 <td>2018 października</td>
-<td><a href="whats-new-changed-8-1-1.md">Nowości i zmiany w programie Dynamics 365 for Finance and Operations w wersji 8.1.1 (październik 2018 r.)</a></td>
+<td><a href="whats-new-changed-8-1-1.md">Nowości i zmiany w programie Dynamics 365 for Finance and Operations w wersji 8.1.1 (październik 2018)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.1</td>
 <td>8.1.136</td>
 <td>2018 października</td>
-<td><a href="whats-new-changed-8-1-October-2018.md">Nowości i zmiany w programie Dynamics 365 for Finance and Operations w wersji 8.1 (październik 2018 r.)</a></td>
+<td><a href="whats-new-changed-8-1-October-2018.md">Nowości i zmiany w programie Dynamics 365 for Finance and Operations w wersji 8.1 (październik 2018)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.0</td>
 <td>8.0.30, 8.0.35</td>
 <td>2018 kwietnia</td>
-<td><a href="whats-new-changed-8-0-April-2018.md">Nowości i zmiany w programie Dynamics 365 for Finance and Operations w wersji 8.0 (z kwietnia 2018 r.)</a></td>
+<td><a href="whats-new-changed-8-0-April-2018.md">Nowości i zmiany w programie Dynamics 365 for Finance and Operations w wersji 8.0 (kwiecień 2018)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>7.3</td>
 <td>7.3.11971.56116</td>
 <td>2017 grudnia</td>
-<td><a href="whats-new-application-7.3-update.md">Nowości i zmiany w programie Dynamics 365 for Finance and Operations Enterprise Edition 7.3</a></td>
+<td><a href="whats-new-application-7.3-update.md">Nowości i zmiany w programie Dynamics 365 for Finance and Operations, Enterprise Edition 7.3</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Lipiec 2017</td>
 <td>7.2.11792.56024</td>
 <td>2017 czerwca</td>
-<td><a href="whats-new-application-July-2017-update.md">Nowości i zmiany w programie Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.)</a></td>
+<td><a href="whats-new-application-July-2017-update.md">Nowości i zmiany w programie Dynamics 365 for Finance and Operations, Enterprise Edition (lipiec 2017)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Operations</td>
@@ -109,14 +115,14 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 <td><a href="whats-new-dynamics-365-operations-1611.md">Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)</a></td>
 </tr>
 <tr>
-<td>System Microsoft Dynamics AX</td>
+<td>Microsoft Dynamics AX</td>
 <td>7.0.1</td>
 <td>7.0.1265.23014</td>
 <td>2016 maja</td>
 <td><a href="whats-new-changed-application-version-7-0-1-may-2016.md">Nowości i zmiany w aplikacji Dynamics AX w wersji 7.0.1 (maj 2016)</a></td>
 </tr>
 <tr>
-<td>System Microsoft Dynamics AX</td>
+<td>Microsoft Dynamics AX</td>
 <td>7.0</td>
 <td>7.0.1265.3015</td>
 <td>2016 lutego</td>
@@ -140,24 +146,31 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 <tbody>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Aktualizacja platformy Update 24</td>
+<td>7.0.5179</td>
+<td>2019 marca</td>
+<td><a href="whats-new-platform-update-24.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations w aktualizacji 24 (marzec 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Aktualizacja platformy Update 23</td>
 <td>7.0.5126</td>
 <td>styczeń 2019</td>
-<td><a href="whats-new-platform-update-23.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations w aktualizacji 23 (styczeń 2019 r.)</a></td>
+<td><a href="whats-new-platform-update-23.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations w aktualizacji 23 (styczeń 2019)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Aktualizacja platformy Update 22</td>
 <td>7.0.5095</td>
 <td>2018 grudnia</td>
-<td><a href="whats-new-platform-update-22.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations w aktualizacji 22 (grudzień 2018 r.)</a></td>
+<td><a href="whats-new-platform-update-22.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations w aktualizacji 22 (grudzień 2018)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Aktualizacja platformy Update 21</td>
 <td>7.0.5073</td>
-<td>2018 października</td>
-<td><a href="whats-new-platform-update-21.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations w aktualizacji 21 (październik 2018 r.)</a></td>
+<td>Listopad 2018</td>
+<td><a href="whats-new-platform-update-21.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations w aktualizacji 21 (listopad 2018)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
@@ -167,46 +180,46 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 <td><a href="whats-new-platform-update-20.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations w aktualizacji 20 (wrzesień 2018)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Aktualizacja platformy Update 15</td>
 <td>7.0.4841</td>
 <td>2018 marca</td>
-<td><a href="whats-new-platform-update-15.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations Enterprise Edition w aktualizacji 15 (marzec 2018)</a></td>
+<td><a href="whats-new-platform-update-15.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations, Enterprise Edition w aktualizacji 15 (marzec 2018)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Aktualizacja platformy Update 12</td>
 <td>7.0.4709</td>
 <td>Listopad 2017</td>
-<td><a href="whats-new-platform-update-12.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations Enterprise Edition w aktualizacji 12 (listopad 2017 r.)</a></td>
+<td><a href="whats-new-platform-update-12.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations, Enterprise Edition w aktualizacji 12 (listopad 2017)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Aktualizacja platformy Update 11</td>
 <td>7.0.4679.35176</td>
 <td>2017 października</td>
-<td><a href="whats-new-platform-update-11.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations Enterprise Edition w aktualizacji 11 (październik 2017 r.)</a></td>
+<td><a href="whats-new-platform-update-11.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations, Enterprise Edition w aktualizacji 11 (październik 2017)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Aktualizacja platformy Update 10</td>
 <td>7.0.4641.16233</td>
 <td>2017 sierpnia</td>
-<td><a href="whats-new-platform-update-10.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations Enterprise Edition w aktualizacji 10 (sierpień 2017 r.)</a></td>
+<td><a href="whats-new-platform-update-10.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations, Enterprise Edition w aktualizacji 10 (sierpień 2017)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Aktualizacja platformy Update 9</td>
 <td>7.0.4612.35162</td>
 <td>Lipiec 2017</td>
-<td><a href="whats-new-platform-update-9.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations Enterprise Edition w aktualizacji 9 (lipiec 2017)</a></td>
+<td><a href="whats-new-platform-update-9.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations, Enterprise Edition w aktualizacji 9 (lipiec 2017)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Aktualizacja platformy Update 8</td>
 <td>7.0.4565.16212</td>
 <td>2017 czerwca</td>
-<td><a href="whats-new-platform-update-8.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations Enterprise Edition w aktualizacji 8 (lipiec 2017)</a></td>
+<td><a href="whats-new-platform-update-8.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations, Enterprise Edition w aktualizacji 8 (czerwiec 2017)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Operations</td>
@@ -244,21 +257,21 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 <td><a href="whats-new-platform-update-3.md">Nowości i zmiany na platformie Dynamics 365 for Operations w aktualizacji 3 (listopad 2016)</a></td>
 </tr>
 <tr>
-<td>System Microsoft Dynamics AX</td>
+<td>Microsoft Dynamics AX</td>
 <td>Aktualizacja platformy Update 2</td>
 <td>7.0.4230.16130</td>
 <td>2016 sierpnia</td>
 <td><a href="whats-new-platform-update-2.md">Nowości i zmiany na platformie Dynamics AX w aktualizacji 2 (sierpień 2016)</a></td>
 </tr>
 <tr>
-<td>System Microsoft Dynamics AX</td>
+<td>Microsoft Dynamics AX</td>
 <td>Aktualizacja platformy Update 1</td>
 <td>7.0.4127.16103</td>
 <td>2016 maja</td>
 <td><a href="whats-new-changed-platform-version-7-1-may-2016.md">Nowości i zmiany na platformie Dynamics AX w aktualizacji 1 (maj 2016)</a></td>
 </tr>
 <tr>
-<td>System Microsoft Dynamics AX</td>
+<td>Microsoft Dynamics AX</td>
 <td>7.0</td>
 <td>7.0.4030.16079</td>
 <td>2016 lutego</td>
@@ -266,4 +279,3 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 </tr>
 </tbody>
 </table>
-

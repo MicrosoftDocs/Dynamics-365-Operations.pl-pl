@@ -1,13 +1,13 @@
 ---
-title: "Dostępne mobilne obszary robocze"
-description: "W tym temacie wymieniono dostępne komórkowe obszary robocze."
+title: Dostępne mobilne obszary robocze
+description: W tym temacie wymieniono dostępne komórkowe obszary robocze.
 author: sericks007
 manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 75f7df4ca3b675d720eb46395118529d09f2f9d4
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354973"
 ---
-
 # <a name="available-mobile-workspaces"></a>Dostępne mobilne obszary robocze
 
 [!include [banner](../includes/banner.md)]
@@ -30,7 +29,7 @@ ms.lasthandoff: 08/09/2018
 W tym temacie wymieniono listę mobilnych obszarów roboczych, których można używać w aplikacji komórkowej Dynamics 365 for Unified Operations.
 
 > [!NOTE]
-> Poprzednio aplikacja mobilnej nazywała się *Microsoft Dynamics 365 for Finance and Operations*.
+> Aplikacja mobilna nosiła wcześniej nazwę *Microsoft Dynamics 365 for Finance and Operations*.
 
 | Mobilny obszar roboczy     | opis   | Dostępność   |
 |----------------------|---------------|--------------|
@@ -44,5 +43,4 @@ W tym temacie wymieniono listę mobilnych obszarów roboczych, których można u
 | [Dostępne zapasy](../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Pozwala uzyskać wgląd w zapasy zarezerwowane i dostępne.                                                                                                    |   2017 stycznia       |
 | [Zamówienia sprzedaży](../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Pozwala być na bieżąco z zamówieniami sprzedaży.                                                                                                                          |  2017 stycznia                  |
 | [Portal współpracy z dostawcami](../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Dostawcy mogą być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych. |2017 stycznia    |
-
 

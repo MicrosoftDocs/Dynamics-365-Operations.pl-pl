@@ -1,13 +1,13 @@
 ---
-title: "Zamknięcie na koniec roku"
-description: "W tym temacie opisano wymaganą konfigurację i kroki wykonywania procesu zamknięcia roku w księdze głównej."
+title: Zamknięcie na koniec roku
+description: W tym temacie opisano wymaganą konfigurację i kroki wykonywania procesu zamknięcia roku w księdze głównej.
 author: kweekley
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerClosingSheet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9ec2316dd259cd12a5cab187b08dbd17ca100572
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bf9d0a6ab0fcf7d6f5a31813d68f0bd452ce1019
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347889"
 ---
-
 # <a name="year-end-close"></a>Zamknięcie na koniec roku
 
 [!include [banner](../includes/banner.md)]
@@ -86,7 +85,6 @@ Jeśli chcesz wycofać poprzednie zamknięcie roku dla wybranego roku obrachunko
 Proces zamknięcia roku domyślnie jest wykonywany w trybie wsadowym. Najlepszym rozwiązaniem jest uruchamianie procesu w trybie wsadowym, aby umożliwić użytkownikowi zajęcie się innymi zadaniami. Po zakończeniu procesu zamknięcia roku pole **Data ostatniego zamknięcia na koniec roku** zostanie zaktualizowane o datę sesji.
 
 Aby uzyskać więcej informacji, zobacz [Zamknięcie księgi głównej na koniec okresu](close-general-ledger-at-period-end.md) i [Zamykanie roku obrachunkowego](tasks/close-fiscal-year.md).
-
 
 
 

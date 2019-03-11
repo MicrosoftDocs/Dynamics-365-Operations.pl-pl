@@ -1,13 +1,13 @@
 ---
-title: "Omówienie programu lojalnościowego"
-description: "W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Microsoft Dynamics 365 for Retail oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych."
+title: Omówienie programu lojalnościowego
+description: W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Microsoft Dynamics 365 for Retail oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych.
 author: scott-tucker
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 01/08/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: bb1a1ff28c846a35858df971e29bb7a551c8012a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: 09d4e46694e89b648981352f64da4a43ab1522e1
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320128"
 ---
-
 # <a name="loyalty-overview"></a>Omówienie programu lojalnościowego
 
 [!include [banner](includes/banner.md)]
@@ -118,12 +117,29 @@ Aplikacja Retail w wydaniu z października 2018 roku zawiera nowe funkcje progra
 
     ![Wygasające punkty](./media/Expiring%20points.png "Wyświetlanie wygasających punktów")
     
-## <a name="upcoming-enhancements"></a>Nadchodzące ulepszenia
 
-Następujące funkcje zostaną udostępnione w przyszłych miesięcznych aktualizacjach aplikacji Dynamics 365 for Retail.
-    
-- Klienci chcą mieć możliwość wyświetlania szczegółów swoich sald w programach lojalnościowych w kanałach, których używają. Podobnie ważne jest, aby kasjerzy mogli wyświetlać historie punktów lojalnościowych odbiorców w aplikacji MPOS/CPOS, co pozwoli szybko odpowiadać na pytania odbiorców. W nadchodzącej miesięcznej aktualizacji klienci i kasjerzy będą mogli wyświetlać szczegóły historii sald w programach lojalnościowych.
-- Wielu sprzedawców detalicznych jest w stanie przyznawać punkty lojalnościowe wyłącznie na podstawie transakcji sprzedaży, ale sprzedawcy zorientowani bardziej prokonsumencko chcą też nagradzać za każdą interakcję z marką. Na przykład chcą przyznawać punkty za wypełnienie ankiety internetowej, odwiedziny sklepu, polubienie sprzedawcy w serwisie Facebook, wysłanie tweeta o sprzedawcy itd. W przyszłości dodamy możliwość przyznawania punktów lojalnościowych za każdą aktywność odbiorcy. W tym celu sprzedawca detaliczny może zdefiniować „inny typ działania”, a następnie zdefiniować reguły zdobywania punktów za to działanie. Udostępnimy interfejs API usługi Retail Server, który można wywoływać po zidentyfikowaniu działania mającego użyć reguły zdobywania punktów do przyznania odpowiedniej liczby punktów lojalnościowych.
-- Aby stworzyć faktycznie wielokanałowe środowisko handlu detalicznego, pozwolimy klientom na zdobywanie i realizowanie punktów lojalnościowych we wszystkich kanałach.
-- Jednym z czynników istotnie motywujących klientów do kupowania przez Internet jest bezpłatna lub tania dostawa. Aby umożliwić sprzedawcom detalicznym konfigurowanie promocji na dostawy, wprowadzimy nowy rodzaj promocji, w którym sprzedawca detaliczny może definiować progi, po których osiągnięciu odbiorcy otrzymają korzyść w postaci tańszej lub bezpłatnej dostawy.
+- W wersji 8.1.3 udostępniliśmy opcję „płatności lojalnościowej” w kanale biura obsługi. Aby włączyć tę opcję, utwórz typ lojalnościowych metod płatności i skojarz go z biurem obsługi. 
 
+>[!NOTE]
+> Ponieważ płatności lojalnościowe są konfigurowane jako płatności kartą, należy wybrać kartę ze strony **Ustawienia karty**. 
+
+![Konfiguracja karty lojalnościowej](./media/LoyaltyCardSetup.png "Konfiguracja karty lojalnościowej")
+
+Po skonfigurowaniu tej opcji odbiorcy mogą wykorzystywać swoje punkty lojalnościowe w biurze obsługi. Ulepszamy też środowisko użytkownika, aby pokazywało „Kwotę pokrywaną przez punkty lojalnościowe”, żeby użytkownicy biura obsługi nie musieli przechodzić do innego ekranu celem sprawdzenia salda w programie lojalnościowym.
+
+- Wielu sprzedawców detalicznych przyznaje punkty lojalnościowe wyłącznie na podstawie transakcji sprzedaży, ale sprzedawcy zorientowani bardziej prokonsumencko chcą też nagradzać za każdą interakcję z marką. Na przykład chcą przyznawać punkty za wypełnienie ankiety internetowej, odwiedziny sklepu, polubienie sprzedawcy w serwisie Facebook, wysłanie tweeta o sprzedawcy itd. W tym celu sprzedawca detaliczny może zdefiniować dowolną liczbę „innego typu działań”, a następnie zdefiniować reguły zdobywania punktów za to działanie. Dostępny jest również otwarty interfejs API Retail Server „PostNonTransactionalActivityLoyaltyPoints”, który można wywołać w przypadku identyfikacji działania, za które klient powinien otrzymać punkty lojalnościowe. Ten interfejs API oczekuje identyfikatora karty lojalnościowej, identyfikatora kanału i identyfikatora typu innego działania, tak aby klient, który powinien otrzymać punkty, mógł zostać zlokalizowany i mogła zostać zidentyfikowana zasada przyznawania punktów za działanie. 
+
+    Przyznawanie punktów za działania nietransakcyjne zwykle ma dwa główne etapy:
+    - Zarejestrowanie wykonania działania, za które należą się punkty.
+    - Przyznanie odpowiedniej liczby punktów.
+
+    Pierwszy etap jest zewnętrzny względem programu Microsoft Dynamics 365 for Retail, na przykład wysłanie tweeta o marce lub opublikowanie linku do marki na portalu Facebook. Po zarejestrowaniu wystąpienia działania sprzedawca może wywołać powyższy interfejs API Retail Server i przyznać punkty lojalnościowe w czasie rzeczywistym. W takich scenariuszach nie ma potrzeby kroku oceny, ponieważ aktywność już wystąpiła i powinny zostać przyznane odpowiednie punkty. Są jednak scenariusze, w których sprzedawca chce ocenić rekordy przed przyznaniem punktów. Na przykład sprzedawca ustawił warsztat w sklepie, do którego klienci rejestrują się w witrynie e-commerce lub na dowolnym innym wydarzeniu rejestrującym zgłoszenia. Jednak punkty lojalnościowe należą się tylko tym, którzy przyjdą na warsztat osobiście. W wersji 10.0 dla takich scenariuszach możemy wprowadzić jednostkę danych o nazwie **Punkty lojalnościowe w sklepie inne niż wiersze typu działania**. Ta jednostka danych umożliwia sprzedawcom używanie narzędzia importu/eksportu danych (DIXF) lub interfejsu API OData do rejestrowania działań, w których należy przyznać odbiorcom punkty lojalnościowe. Jednostka danych zapisuje działania w arkuszu o nazwie **Wierszy lojalnościowe dla innych działań**, którego można używać do celów oceny i modyfikacji. Po sprawdzeniu danych użytkownik IT może albo ręcznie zaksięgować wiersze działania lub uruchomić zadanie o nazwie **Przetwarzaj inne typy działania dla wierszy lojalności**, które zaksięguje wszystkie niezaksięgowane wiersze działania i przyzna punkty odbiorcom na podstawie reguł otrzymywania punktów. W powyższym scenariuszu wniosek o rejestrację zdarzenia wywoła interfejs API OData do wysyłania informacji do programu Dynamics 365 for Retail. Jednak użytkownik IT można zaksięgować wiersze czynności tylko tych klientów, którzy przyszli na warsztat, i usunąć wiersze działania innych klientów. 
+
+> [!NOTE]
+> Obecnie system zmusza użytkowników do ustawienia sekwencji numerów dla „innych typów działań”, ale nie będzie to krok wymagany w przyszłych wersjach. Aby ustawić sekwencję numerów, przejdź do **Wspólne parametry sieci sprzedaży > Sekwencje numerów** i wybierz sekwencję numerów dla **Identyfikator innego typu działania w programie lojalnościowym**.
+
+- Aby zapewnić dobrą obsługę klienta i skutecznie rozwiązywać kwerendy klientów, kasjer musi mieć dostęp kompletnego profilu klienta. W wersji 10.0 kasjer będzie mógł wyświetlać szczegóły historii lojalnościową wraz ze skojarzonym programem lojalnościowym oraz informacje warstwy w POS.
+- Jednym z czynników istotnie motywujących klientów do kupowania przez Internet jest bezpłatna lub tania dostawa. Aby umożliwić sprzedawcom detalicznym konfigurowanie promocji na dostawy, w wersji 10.0 wprowadziliśmy nowy rodzaj promocji o nazwie „Rabat progu wysyłki”, w którym sprzedawca detaliczny może definiować progi, po których osiągnięciu odbiorcy otrzymają korzyść w postaci tańszej lub bezpłatnej dostawy. Na przykład, wydaj $35, aby otrzymać darmową wysyłkę w ciągu dwóch dni lub darmową wysyłkę w ciągu dwóch dni dla wszystkich odbiorców w programie lojalnościowym. Te rabaty są stosowane tylko do opłaty transportowych odnośnie do zamówień. Ponieważ sprzedawca może skonfigurować wiele typów opłat, takich jak obsługa czy instalacja, trzeba określić, która opłata jest uważana za opłatę transportową. Taka konfiguracja nosi nazwę „Kod opłaty transportowej” i jest dostępna na karcie **Zamówienia odbiorcy** na stronie **Parametry sieci sprzedaży**. Ten rabat uwzględnia wszystkie istniejące standardowe opcje rabatu, takie jak zezwolenie sprzedawcy na ograniczenie tych rabatów za pomocą kuponów, aby tylko odbiorcy z kuponami mogli korzystać z tych rabatów. Ponadto rabaty te wykorzystują również funkcję Grup cen do określenia dostępności takich rabatów. Na przykład sprzedawca może uruchomić te promocje tylko w kanałach online i/lub w różnych kanałów dla pewnych grup odbiorców, takich jak odbiorcy w programie lojalnościowym. Gdy wiersze zamówienia z określonym trybem dostawy spełniają warunki określonego progu, rabat wysyłkowy jest stosowany i ogranicza opłatę transportową na podstawie konfiguracji rabatu. 
+
+> [!NOTE]
+> W przeciwieństwie do innych rabatów okresowych, takich jak ilościowy, prosty, mieszany i progowy rabat wysyłkowy nie tworzy wierszy rabatu, zmiany opłaty transportowej trzeba wprowadzić bezpośrednio.

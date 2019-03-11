@@ -1,32 +1,31 @@
 ---
-title: "Zarządzanie kosztami — strona główna"
-description: "Moduł Zarządzanie kosztami pozwala wykonywać operacje wyceny i księgowania surowców, półproduktów, wyrobów gotowych oraz zasobów produkcji w toku."
+title: Zarządzanie kosztami — strona główna
+description: Moduł Zarządzanie kosztami pozwala wykonywać operacje wyceny i księgowania surowców, półproduktów, wyrobów gotowych oraz zasobów produkcji w toku.
 author: AndersGirke
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fd94ae4c5ea855139fd1c41060de7db455ffab06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
-ms.openlocfilehash: b1513e5a7cb3a19fd3743a5aac8efd211aa02ce8
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/21/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333951"
 ---
-
 # <a name="cost-management-home-page"></a>Zarządzanie kosztami — strona główna
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,7 @@ Do modułów Księgowanie zapasów i Księgowanie produkcji można przejść z o
 
 Moduł Księgowanie produkcji umożliwia obsługę [kalkulacji doliczeniowej zleceniowej](production-order-cost-analysis.md) w zleceniach produkcyjnych i szarżach produkcyjnych oraz [wyceny wstecznej](backflush-costing.md) w produkcji oszczędnej.
 
-[Pakiet zawartości usługi Power BI Zarządzanie kosztami](../../dev-itpro/analytics/cost-management-content-pack.md) zapewnia zaawansowany wgląd w zapasy i zapasy pracy w toku (PWT) oraz przepływy kosztów między tymi zapasami z podziałem na kategorie w ujęciu czasowym. Informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
+[Pakiet zawartości Zarządzanie kosztami usługi Power BI](../../dev-itpro/analytics/cost-management-content-pack.md) zapewnia zaawansowany wgląd w zapasy i zapasy pracy w toku (PWT) oraz przepływy kosztów między tymi zapasami z podziałem na kategorie w ujęciu czasowym. Informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
 
 ### <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -71,5 +70,4 @@ Opinie, wiadomości i inne informacje na temat modułu Zarządzanie kosztami mo�
 
 #### <a name="task-guides"></a>Przewodniki zadań
 Dodatkowa pomoc jest dostępna w formie przewodników po zadaniach wewnątrz rozwiązania Finance and Operations. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk Pomoc na dowolnej stronie.
-
 

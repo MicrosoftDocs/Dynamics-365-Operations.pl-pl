@@ -1,13 +1,13 @@
 ---
-title: "Strona główna rozwiązań opartych na usłudze PowerBI.com"
-description: "W tym temacie wymieniono dostępne pakiety zawartości rozwiązań PowerBI.com oraz wskazano zasoby, gdzie można uzyskać więcej informacji o tych rozwiązaniach."
+title: Strona główna rozwiązań opartych na usłudze PowerBI.com
+description: W tym temacie wymieniono dostępne pakiety zawartości rozwiązań PowerBI.com oraz wskazano zasoby, gdzie można uzyskać więcej informacji o tych rozwiązaniach.
 author: sericks007
 manager: AnnBe
 ms.date: 05/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: PowerBIPbixDeployForm
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,26 +18,25 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 64b1c09b781b7bdbaf01a374e321b8dd9418f3da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 1a391c0111ad39cb8c4ec809eccb3eb7cfb18687
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316701"
 ---
-
 # <a name="powerbicom-solutions-home-page"></a>Strona główna rozwiązań opartych na usłudze PowerBI.com
 
 [!include [banner](../includes/banner.md)]
 
-Następujące rozwiązania PowerBI.com są dostępne dla środowisk programu Dynamics 365 for Finance and Operations.
+Poniższe rozwiązania PowerBI.com są dostępne dla środowisk Dynamics 365 for Finance and Operations.
 
 ## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>Rozwiązania PowerBI.com dostępne w usłudze Lifecycle Services (LCS)
 
 Następujące rozwiązania PowerBI.com są dostępne w bibliotece zasobów współużytkowanych LCS. Aby pobrać wersję odpowiednią dla swojego środowiska, patrz informacje o wersji w bibliotece zasobów wspólnych.
 
 > [!NOTE]
-> Większość rozwiązań PowerBI.com na poniższej liście została osadzona w analitycznych obszarach roboczych w nowszych wersjach programu Dynamics 365 for Finance and Operations. Użycie analitycznych obszarów roboczych eliminuje konieczność pobrania tych rozwiązań z biblioteki zasobów udostępnionych w usłudze LCS. Tematy przedstawione na tej liście wskazują, gdzie te rozwiązania PowerBI.com zostały zagnieżdżone w rozwiązaniu Finance and Operations, jeśli ma to zastosowanie.
+> Większość rozwiązań PowerBI.com na poniższej liście została osadzona w analitycznych obszarach roboczych w nowszych wersjach Dynamics 365 for Finance and Operations. Użycie analitycznych obszarów roboczych eliminuje konieczność pobrania tych rozwiązań z biblioteki zasobów udostępnionych w usłudze LCS. Tematy przedstawione na tej liście wskazują, gdzie te rozwiązania PowerBI.com zostały zagnieżdżone w rozwiązaniu Finance and Operations, jeśli ma to zastosowanie.
 
 - [Wartości rzeczywiste a budżet](ledger-budgets-power-bi.md)
 - [Omówienie operacji gotówkowych](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
@@ -59,12 +58,11 @@ Następujące rozwiązania PowerBI.com są dostępne w bibliotece zasobów wspó
 
 ## <a name="powerbicom-solutions-available-from-appsource"></a>Rozwiązania PowerBI.com dostępne w usłudze AppSource
 
-Następujące rozwiązania PowerBI.com są dostępne na stronie [Microsoft AppSource](https://appsource.microsoft.com).
+Są dostępne dla następujących rozwiązań PowerBI.com z [Microsoft AppSource](https://appsource.microsoft.com).
 
 > [!NOTE]
-> Te rozwiązania zostały wycofane, zgodnie z opisem w temacie [Pakiety zawartości usługi Power BI dostępne w usłudze AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Te rozwiązania zostały wycofane, zgodnie z opisem w temacie [Pakiety zawartości usługi Power BI w usłudze AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 - Zarządzanie kosztami
 - [Wyniki finansowe](financial-performance-power-bi-content-pack.md)
 - [Wyniki kanału detalicznego ](retail-channel-performance-dashboard-power-bi-data.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "Mobilny obszar roboczy Zarządzanie wydatkami"
-description: "Ten temat zawiera informacje o komórkowym obszarze roboczym Zarządzanie wydatkami. Ten obszar roboczy pozwala użytkownikom rejestrować i przekazywać paragony, dzięki czemu można je później dołączać do raportów z wydatków. Użytkownicy szybko utworzyć wiersz wydatku za pomocą dołączonego paragonu oraz tworzyć raporty z wydatków i nimi zarządzać."
+title: Mobilny obszar roboczy Zarządzanie wydatkami
+description: Ten temat zawiera informacje o komórkowym obszarze roboczym Zarządzanie wydatkami. Ten obszar roboczy pozwala użytkownikom rejestrować i przekazywać paragony, dzięki czemu można je później dołączać do raportów z wydatków. Użytkownicy szybko utworzyć wiersz wydatku za pomocą dołączonego paragonu oraz tworzyć raporty z wydatków i nimi zarządzać.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 6ec9966826830e9ceaa3ed7e1b06e2cb89e8a780
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344347"
 ---
-
 # <a name="expense-management-mobile-workspace"></a>Mobilny obszar roboczy Zarządzanie wydatkami
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 03/26/2018
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Zarządzanie wydatkami**. Ten obszar roboczy pozwala użytkownikom rejestrować i przekazywać paragony, dzięki czemu można je później dołączać do raportów z wydatków. Użytkownicy szybko utworzyć wiersz wydatku za pomocą dołączonego paragonu oraz tworzyć raporty z wydatków i nimi zarządzać. Osoby zatwierdzające mogą w mobilnym obszarze roboczym **Zarządzanie wydatkami** wyświetlać raporty z wydatków, które im przypisano, oraz zatwierdzać lub odrzucać te raporty.
 
 
-Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations.
+Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations Mobile.
 
 
 ## <a name="overview"></a>Przegląd
@@ -60,10 +59,10 @@ Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations, masz
 ## <a name="prerequisites"></a>Wymagania wstępne
 Wymagania wstępne różnią się w zależności od wersji programu Microsoft Dynamics 365 wdrożonej w organizacji.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Warunki wstępne w przypadku korzystania z programu Microsoft Dynamics 365 for Finance and Operations 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Warunki wstępne w przypadku korzystania z Microsoft Dynamics 365 for Finance and Operations 
 Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Finance and Operations, administrator systemu musi opublikować mobilny obszar roboczy **Zarządzanie wydatkami**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Warunki wstępne w przypadku korzystania z Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
 Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą, administrator systemu musi wykonać następujące zadania wstępne. 
 
 <table>
@@ -94,10 +93,10 @@ Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operati
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Pobieranie i instalowanie aplikacji komórkowej Dynamics 365 for Operations
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Pobranie i zainstalowanie aplikacji komórkowej Dynamics 365 for Operations
 Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
-- [Telefony z systemem Android](https://go.microsoft.com/fwlink/?linkid=850662)
+- [Telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 - [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Logowanie do aplikacji mobilnej
@@ -243,4 +242,3 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 22. Wybierz opcję **Prześlij**.
 23. Wprowadź wszelkie komentarze dla osoby zatwierdzającej.
 24. Wybierz opcję **Gotowe**.
-

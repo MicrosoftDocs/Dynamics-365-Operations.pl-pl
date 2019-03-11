@@ -1,13 +1,13 @@
 ---
-title: "Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS"
-description: "Ten temat omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS."
+title: Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
+description: Ten temat omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 544f109a4f46bd7511ee564902f627beddd29f15
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308789"
 ---
-
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/04/2019
 Ten temat omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS.
 
 > [!NOTE]
-> Aby uzyskać szczegółowe instrukcje instalacji, zobacz artykuły [Konfiguracja i instalacja składnika Retail Hardware Station](retail-hardware-station-configuration-installation.md) i [Samodzielne pobieranie/instalacja składnika Retail Modern POS oraz aktywacja urządzeń typu Modern POS i Cloud POS](retail-modern-pos-device-activation.md).
+> Aby uzyskać szczegółowe instrukcje instalacji, zobacz artykuły [Konfiguracja i instalacja składnika Retail](retail-hardware-station-configuration-installation.md) i [Samodzielne pobieranie/instalacja składnika Retail Modern POS oraz aktywacja urządzeń typu Modern POS i Cloud POS](retail-modern-pos-device-activation.md).
 
 ## <a name="key-components"></a>Najważniejsze składniki
 
@@ -188,4 +187,3 @@ Dodatkowe informacje związane z aktywacją obejmują dane pracownika, który zm
 ### <a name="client-data-synchronization"></a>Synchronizacja danych klienta
 
 Wszystkie zmiany na kliencie punktu sprzedaży, z wyjątkiem zmian stanu aktywacji urządzenia, działają dopiero po zsynchronizowaniu z bazą danych kanału. Aby zsynchronizować zmiany z bazą danych kanału, wybierz kolejno opcje **Handel detaliczny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji** i uruchom wymagany harmonogram dystrybucji. W przypadku zmian na kliencie należy uruchomić harmonogramy dystrybucji „Rejestry” i „Konfiguracja kanału”.
-

@@ -1,31 +1,30 @@
 ---
-title: "Tworzenie zapotrzebowań na towary na podstawie zleceń serwisowych"
-description: "Jeśli konieczne jest zarezerwowanie określonych towarów dla zlecenia serwisowego, można utworzyć zapotrzebowanie na pozycje magazynowe dla takiego zlecenia."
+title: Tworzenie zapotrzebowań na towary na podstawie zleceń serwisowych
+description: Jeśli konieczne jest zarezerwowanie określonych towarów dla zlecenia serwisowego, można utworzyć zapotrzebowanie na pozycje magazynowe dla takiego zlecenia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a5a730ae945af15c7bd4020c734bac971d8186e2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e76b0c636470a89ba2091363efe2f34eb3d58f88
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312216"
 ---
-
 # <a name="create-item-requirements-for-service-orders"></a>Tworzenie zapotrzebowań na towary na podstawie zleceń serwisowych 
 
 [!include [banner](../includes/banner.md)]
@@ -71,6 +70,5 @@ Zapotrzebowania na towary dla zlecenia serwisowego są przetwarzane za pomocą p
 [Automatyczne tworzenie zleceń serwisowych](create-service-orders-automatically.md).
 
   
-
 
 

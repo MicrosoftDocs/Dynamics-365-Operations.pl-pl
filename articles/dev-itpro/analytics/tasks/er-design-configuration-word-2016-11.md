@@ -1,13 +1,13 @@
---- 
-title: "Projektowanie konfiguracji raportowania elektronicznego w celu generowania raportów w formacie programu Word"
-description: "W poniższych krokach wyjaśniono, jak użytkownik posiadający rolę Administrator systemu lub Deweloper raportowania elektronicznego może tak skonfigurować formaty raportowania elektronicznego, aby raporty były generowane jako pliki programu Microsoft Word."
+---
+title: Projektowanie konfiguracji raportowania elektronicznego w celu generowania raportów w formacie programu Word
+description: W poniższych krokach wyjaśniono, jak użytkownik posiadający rolę Administrator systemu lub Deweloper raportowania elektronicznego może tak skonfigurować formaty raportowania elektronicznego, aby raporty były generowane jako pliki programu Microsoft Word.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362356"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Projektowanie konfiguracji raportowania elektronicznego w celu generowania raportów w formacie programu Word
 
@@ -35,7 +35,7 @@ W celu wykonania tych kroków należy najpierw wykonać kroki opisane w przewodn
 - [Ograniczony szablon raportu o płatnościach](https://go.microsoft.com/fwlink/?linkid=862266)
 
 
-Ta procedura dotyczy funkcji, która została dodana w programie Microsoft Dynamics 365 for Operations w wersji 1611.
+Procedura dotyczy funkcji dodanej w programie Microsoft Dynamics 365 for Operations w wersji 1611.
 
 
 ## <a name="select-the-existing-er-report-configuration"></a>Zaznaczenie istniejącej konfiguracji raportu ER
@@ -99,5 +99,4 @@ Ta procedura dotyczy funkcji, która została dodana w programie Microsoft Dynam
 16. Kliknij przycisk OK.
 17. Kliknij przycisk OK.
     * Zbadaj wygenerowane dane wyjściowe. Zwróć uwagę, że utworzone dane wyjściowe są przedstawione w formacie programu Word i zawierają szczegóły przetworzonych płatności.  
-
 

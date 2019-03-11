@@ -1,13 +1,13 @@
 ---
-title: "Obszar roboczy zamknięcia okresu obrachunkowego"
-description: "Ten artykuł zawiera omówienie obszaru roboczego Zamknięcie okresu obrachunkowego oraz pokrewnej konfiguracji."
+title: Obszar roboczy zamknięcia okresu obrachunkowego
+description: Ten artykuł zawiera omówienie obszaru roboczego Zamknięcie okresu obrachunkowego oraz pokrewnej konfiguracji.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e9c3c7f00d0a0e4379547edc5199f4a9a6727f3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326913"
 ---
-
 # <a name="financial-period-close-workspace"></a>Obszar roboczy zamknięcia okresu obrachunkowego
 
 [!include [banner](../includes/banner.md)]
@@ -53,7 +52,7 @@ Dwa wskaźniki są używane do zadań:
 -   Ikona wykrzyknika wskazuje, że zadanie jest zaległe. W przypadku zadań, które są zaległe, data wykonania jest wyróżniona kolorem czerwonym.
 -   Ikona kłódki wskazuje, że zadanie zależy od innych zadań, które nie są jeszcze zakończone. To zadanie jest zablokowane przez zależności i nie można oznaczyć go jako zakończonego. Zależności zadania można ustawić za pomocą akcji **Ustaw zależność**.
 
-Nazwa zadania jest hiperłączem do strony programu Microsoft Dynamics 365 for Operations lub innej strony sieci Web, na którą użytkownik musi przejść, aby ukończyć pracę. To hiperłącze można ustawić za pomocą pola **Łącze zadania** podczas edytowania lub tworzenia zadania. 
+Nazwa zadania jest hiperłączem do strony programu Microsoft Dynamics 365 for Operations lub inne strony internetowej, na którą użytkownik musi przejść, aby ukończyć pracę. To hiperłącze można ustawić za pomocą pola **Łącze zadania** podczas edytowania lub tworzenia zadania. 
 
 Do zadania można dołączać pliki, notatki, obrazy i adresy URL za pomocą akcji **Załączniki**. Na przykład można wskazać numery arkuszy używanych w ramach zadania, dodać komentarze dotyczące konkretnego zadania lub dołączyć plik raportu, który był drukowany dla zadania. Ikona pojawia się w kolumnie **Załącznik** dla zadania, jeśli załącznik jest obecny. 
 
@@ -63,7 +62,7 @@ Opcję **Zadanie ukończone** należy zaznaczyć ręcznie po ukończeniu zadania
 Wszystkie zadania zamknięcia bieżącego i poprzedniego okresu można wyświetlić na stronie listy **Wszystkie zadania zamknięcia okresu obrachunkowego**. Ta strona listy najlepiej nadaje się do historycznej analizy procesu zamknięcia, ponieważ zawiera informacje o zaplanowanej dacie wykonania, dacie rzeczywistego zakończenia i osobie, która ukończyła zadanie. Informacje na tej stronie listy można łatwo wyeksportować do programu Microsoft Excel do celów raportowania i inspekcji.
 
 ## <a name="financial-period-close-configuration-page"></a>Strona konfiguracji zamknięcia okresu obrachunkowego
-Aby można było używać przestrzeni roboczej **Zamknięcie okresu obrachunkowego**, należy skonfigurować proces w programie Microsoft Dynamics 365 for Finance and Operations za pomocą strony **Konfiguracja zamknięcia okresu obrachunkowego**. (Kliknij kolejno opcje **Księga główna** &gt; **Zamknięcie okresu** &gt; **Konfiguracja zamknięcia okresu obrachunkowego**).
+Aby można było używać przestrzeni roboczej **Zamknięcie okresu obrachunkowego**, należy skonfigurować proces w Microsoft Dynamics 365 for Finance and Operations za pomocą strony **Konfiguracja zamknięcia okresu finansowego**. (Kliknij kolejno opcje **Księga główna** &gt; **Zamknięcie okresu** &gt; **Konfiguracja zamknięcia okresu obrachunkowego**).
 
 ### <a name="resources"></a>Zasoby
 
@@ -106,7 +105,6 @@ Przypisz kalendarz odpowiedni dla harmonogramu zamknięcia, aby wskazać dni rob
 Należy także zdefiniować firmy, które mają zostać skojarzone z harmonogramem zamknięcia. Jeśli zadania szablonu są przypisane do wielu firm, oddzielne zadania zostaną utworzone dla każdej firmy figurującej w harmonogramie zamknięcia i przydzielone do zadania szablonu. 
 
 Po wykonaniu harmonogramu zamknięcia wybierz dla niego opcję **Zamknięty**. Historia zadań nadal będzie dostępna ze strony listy **Wszystkie zadania zamknięcia okresu obrachunkowego**, ale harmonogram zamknięcia zostanie usunięty z obszaru roboczego. Po oznaczeniu harmonogramu zamknięcia jako **Zamknięty** nie będzie można dodawać do niego zadań, edytować zadań ani usuwać zadań.
-
 
 
 

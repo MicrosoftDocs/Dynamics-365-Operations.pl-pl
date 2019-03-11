@@ -1,13 +1,13 @@
 ---
 title: Proces ustawienia zaawansowanego uzgodnienia konta bankowego
-description: "Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych oraz ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Finance and Operations.  Ten artykuł wyjaśnia procesy konfigurowania na potrzeby uzgadniania."
+description: Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych oraz ich automatyczne uzgadnianie z transakcjami bankowymi w Microsoft Dynamics 365 for Finance and Operations.  Ten artykuł wyjaśnia procesy konfigurowania na potrzeby uzgadniania.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c95589b013b569f15fce80612a11eca621944f6b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f77a9c927232c95558ba78037f6a6e9f77e202c2
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357342"
 ---
-
 # <a name="advanced-bank-reconciliation-setup-process"></a>Proces ustawienia zaawansowanego uzgodnienia konta bankowego
 
 [!include [banner](../includes/banner.md)]
 
-Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych oraz ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Finance and Operations.  Ten artykuł wyjaśnia procesy konfigurowania na potrzeby uzgadniania.  
+Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych oraz ich automatyczne uzgadnianie z transakcjami bankowymi w Microsoft Dynamics 365 for Finance and Operations.  Ten artykuł wyjaśnia procesy konfigurowania na potrzeby uzgadniania.  
 
 Istnieje wiele elementów, które muszą zostać skonfigurowane przed używaniem funkcji zaawansowanego uzgadniania konta bankowego. Aby uzyskać więcej informacji na temat konfigurowania importu wyciągu bankowego, zobacz [Konfigurowanie procesu importowania wyciągu bankowego](set-up-advanced-bank-reconciliation-import-process.md).  Poniżej wyszczególniono wymagania dotyczące konfigurowania procesu uzgadniania.
 
@@ -59,7 +58,6 @@ Funkcja **Uznaj wyciągi bankowe jako potwierdzenia płatności elektronicznych*
 Pole **Nazwa konta bankowego na wyciągach** zawiera nazwę używaną dla konta bankowego na elektronicznych wyciągach bankowych.  Ta nazwa jest wykorzystywana podczas ustalania konta bankowego, którego transakcje mają zostać zaimportowane z wyciągu mogącego zawierać informacje dla wielu kont bankowych. 
 
 Opcja **Uzgodnij po imporcie** powoduje automatyczne sprawdzanie poprawność wyciągu bankowego, tworzenie nowego uzgodnienia konta bankowego i arkusza oraz uruchomienie domyślnego zestawu reguł uzgadniania.  Ta funkcja automatyzuje proces do momentu znalezienia transakcji, które muszą zostać dopasowane ręcznie.  To ustawienie jest domyślnie włączane dla konta bankowego podczas importowania.
-
 
 
 

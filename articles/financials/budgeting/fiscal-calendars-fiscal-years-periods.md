@@ -1,13 +1,13 @@
 ---
 title: Kalendarze, lata i okresy obrachunkowe
-description: "W tym artykule omówiono narzędzia kalendarzy obrachunkowych, lat obrachunkowych i okresów oraz możliwości ich wykorzystywania dla firm, środków trwałych i budżetowania."
+description: W tym artykule omówiono narzędzia kalendarzy obrachunkowych, lat obrachunkowych i okresów oraz możliwości ich wykorzystywania dla firm, środków trwałych i budżetowania.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FiscalCalendars
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 431d654aaffc27d54fd590dc7d5d2ab6c2313908
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361666"
 ---
-
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Kalendarze, lata i okresy obrachunkowe
 
 [!include [banner](../includes/banner.md)]
@@ -60,7 +59,6 @@ Cykle budżetu to okres czasu, w którym używany jest budżet. Cykle budżetu m
 
 ## <a name="maintain-periods-for-your-organization"></a>Obsługa okresów dla organizacji
 Można użyć strony Kalendarz księgi, aby wyświetlić szczegóły dla kalendarza obrachunkowego, lat obrachunkowych i okresów używanych przez organizację. Można także zmienić stan okresów i wybrać użytkowników, którzy mogą księgować transakcje rachunku kosztów dla okresów. Na przykład na początku nowego okresu możesz chcieć zakończyć księgowanie transakcji finansowych z poprzedniego okresu dla danej grupy użytkowników, natomiast dla innych grup, aby pracowały tylko w nowym okresie.
-
 
 
 

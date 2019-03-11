@@ -1,13 +1,13 @@
 ---
-title: "Produkcja oszczędna — omówienie"
-description: "Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w programie Dynamics 365 for Finance and Operations."
+title: Produkcja oszczędna — omówienie
+description: Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w usłudze Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c6db940548018c9d6bbb31891c21f7c334ba8956
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 99030966587a2784f61cecbfc7f9985f75f6d779
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359895"
 ---
-
 # <a name="lean-manufacturing-overview"></a>Omówienie wytwarzania typu lean manufacturing
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w programie Microsoft Dynamics 365 for Finance and Operations.
+Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w usłudze Microsoft Dynamics 365 for Finance and Operations.
 
 Lean manufacturing oferuje narzędzia służące do modelowania produkcji oszczędnej. Te narzędzia obsługują i promują stosowanie następujących pojęć i działań:
 -   Tworzenie podstaw produkcji oszczędnej (lean manufacturing) przez modelowania procesów produkcji i logistyki jako przepływów produkcji.
@@ -52,7 +51,7 @@ Aby stworzyć podstawy produkcji oszczędnej (lean manufacturing), trzeba opraco
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Sygnalizowanie wymagań popytu za pomocą kart Kanban
 System ściągania wytwarza towary tylko wtedy, gdy są one potrzebne. Praktyka ta zmniejsza czasy realizacji dostawy i magazynowych nadwyżki. Można użyć kart Kanban do planowania, śledzenia i przetwarzania wymagań, które są oparte na przepływach produkcji. Aby utworzyć strukturę kanban, utwórz reguły kanban określające, kiedy są tworzone karty Kanban i jak wypełniane są wymagania. Możesz utworzyć dwa typy reguł Kanban. Reguły produkcji tworzą zadania przetwarzania w systemie Kanban, a reguły wycofania w systemie Kanban tworzą zadania przeniesienia w systemie Kanban. Można skonfigurować następujące strategie uzupełniania:
--   Reguły Kanban typu **Stała ilość** są powiązane ze stałą liczbą jednostek obsługi, co oznacza, że liczba aktywnych kart Kanban jest stała. Zawsze gdy wszystkie produkty z karty Kanban są zużywane i jednostki załadunkowe są ręcznie opróżniane, tworzona jest nowa karta Kanban tego samego typu. Podczas tworzenia reguł Kanban ze stałą ilością można obliczyć optymalną liczbę używanych kart Kanban i ilości produktu. Obliczenia uwzględniają prognozę, rzeczywisty popyt z otwartych zamówień, czas realizacji uzupełnienia towarów i historyczne zapotrzebowania.
+-   Reguły Kanban typu **Stała ilość** są powiązane ze stałą liczbą jednostek obsługi, co oznacza, że liczba aktywnych kart Kanban jest stała. Zawsze gdy wszystkie produkty z karty Kanban są zużywane i jednostki załadunkowe są ręcznie opróżniane, tworzona jest nowa karta Kanban tego samego typu. Podczas tworzenia reguł Kanban ze stałą ilością można obliczyć optymalną liczbę używanych kart Kanban i ilości produktu. Obliczenia uwzględniają prognozę, rzeczywisty popyt z otwartych zamówień, czas realizacji uzupełnienia towarów i historyczne zapotrzebowania.
 -   Reguły Kanban typu **Zaplanowane** służą do uzupełniania zapotrzebowań obliczanych podczas planowania głównego. Planowanie główne generuje zaplanowane reguły Kanban, które mogą zostać ustalone na kartach Kanban.
 -   Reguły Kanban typu **Zdarzenie** służą do uzupełniania zapotrzebowań pochodzących z wierszy zamówienia sprzedaży, wierszy listy składowej BOM produkcji, wierszy w systemie Kanban lub ustawień minimalnego poziomu zapasów. Kiedy generowane są zdarzenia Kanban, są one ustalane na podstawie wymagań źródłowych.
 
@@ -79,7 +78,6 @@ Zadania Kanban są w pełni zintegrowane z aktualnymi procesami dla transakcji m
 Oprócz tego produkcja oszczędna (lean manufacturing) obsługuje procesy zakupu i fakturowania dla usług, do których odwołują się działania podwykonawcze.
 -   Wiersze umowy zakupu można przypisać do działań podwykonawczych.
 -   Można tworzyć okresowe zamówienia zakupu i podsumowania przyjęć pod kątem kupowania i fakturowania usług.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Posiadacze zaliczek
-description: "Ten temat zawiera więcej informacji o funkcjonalności posiadacza zaliczki w programie Microsoft Dynamics 365 for Finance and Operations."
+description: Więcej informacji na temat funkcji posiadaczy zaliczek w Microsoft Dynamics 365 for Finance and Operations.
 author: LizaGolub
 manager: AnnBe
 ms.date: 08/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
 ms.openlocfilehash: 1fc13461ab166d8f20ea2f56f641c86c3172f33b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371449"
 ---
-
 # <a name="advance-holders"></a>Posiadacze zaliczek
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera więcej informacji o funkcjonalności posiadacza zaliczki w programie Microsoft Dynamics 365 for Finance and Operations.
+Więcej informacji na temat funkcji posiadaczy zaliczek w Microsoft Dynamics 365 for Finance and Operations.
 
 *Posiadacz zaliczki* to pracownik firmy, który odpowiada za kwotę wydatku pokrytą przez organizację. Posiadaczem zaliczki może być tylko pracownik firmy. Gdy następuje zaopatrzenie, posiadacz zaliczki informuje firmę o dokonanych wydatkach. Wtedy firma zwraca pracownikowi wydatkowaną kwotę. Firma kontroluje salda wszystkich posiadaczy zaliczek. Użytkownicy w firmach w Estonii, na Łotwie, Litwie, w Polsce, Czechach, na Węgrzech i w Rosji mogą wykazywać konkretne transakcje towarzyszące operacjom z udziałem pracowników firmy odpowiedzialnych za kwoty wydatków pokrywane przez organizację.
 
@@ -124,7 +123,7 @@ Aby wyświetlić podgląd i wydrukować raport oparty na transakcjach posiadaczy
 
 ## <a name="advance-holder-transactions"></a>Transakcje posiadacza zaliczki
 
-Dowiedz się, jak pracować z transakcjami posiadaczy zaliczek w programie Microsoft Dynamics 365 for Finance and Operations.
+Dowiedz się, jak pracować z transakcjami posiadaczy zaliczek w Microsoft Dynamics 365 for Finance and Operations.
 
 Transakcje dla pracowników będących posiadaczami zaliczek mogą być księgowane przy użyciu kont posiadaczy zaliczek. Identyfikator pracownika określony dla każdego posiadacza zaliczki może służyć do śledzenia wszystkich transakcji danego posiadacza zaliczki. Ten numer jest pobierany jako numer konta dla transakcji posiadacza zaliczki na stronach **Arkusze finansowe** i **Transakcje posiadacza zaliczki**.
 
@@ -160,7 +159,6 @@ Jeśli po przetwarzaniu arkusza kasowego kwota w polu **Kwota do przeniesienia**
 
 - [Zaliczki na rzecz pracownika etatowego (Europa Wschodnia)](tasks/advance-payment-employee.md)
 - [Posiadacze zaliczek dla Rosji](rus-advance-holders.md)
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Definiowanie modeli przepływu produkcji"
-description: "Modele przepływu produkcji opisują sposób obliczania i obsługi zdolności produkcyjnych komórek roboczych w produkcji oszczędnej."
+---
+title: Definiowanie modeli przepływu produkcji
+description: Modele przepływu produkcji opisują sposób obliczania i obsługi zdolności produkcyjnych komórek roboczych w produkcji oszczędnej.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e410928bc850e1f3427c9536e9943d1196be7a05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7850a121ca06f25f6c532e49e18c0b6811bd7455
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336734"
 ---
 # <a name="define-production-flow-models"></a>Definiowanie modeli przepływu produkcji
 
@@ -45,5 +45,4 @@ Modele przepływu produkcji opisują sposób obliczania i obsługi zdolności pr
     * Horyzont czasowy planowania opisuje liczbę dni, kiedy można tworzyć rezerwacje zdolności produkcyjnych dla powiązanych komórek roboczych. W polu Horyzont czasowy planowania wpisz liczbę dni.   Zadania przetwarzania w systemie Kanban, które wykraczają poza ten okres, nie będą planowano przy użyciu planowania automatycznego. Horyzont jest zazwyczaj dwa razy dłuższy niż średni czas realizacji zapasów dla produktów wytwarzanych w przepływie produkcji lub komórce roboczej. Cykl EPE nie powinien być dłuższy niż połowa horyzontu czasowego planowania.     
 8. W polu Reakcja na niedobór zdolności produkcyjnych wybierz opcję.
     * Opóźnij — Odroczenie pełnego popytu w zdarzeniu planowania do następnego dostępnego dnia produkcji mającego dostępną produktywność. Anuluj — Zakończenie automatycznego planowania w zdarzeniu planowania i pozostawienie powiązanych zadań niezaplanowanych.   Dodaj do żądanego dnia — Planowanie żądanych zadań na żądany okres. Powoduje to przeciążenie komórki w danym dniu i wymaga od planisty przeglądu i ręcznej interakcji.   Dystrybucja do dostępnych okresów — Rozdział różnych zadań zdarzenia planowania między wszystkie dostępne produkcji dni, począwszy od pierwszego dostępnego dnia. Minimalną ilością do rozdziału jest ilość z zadania w systemie Kanban. Dystrybucja powoduje przypisanie minimalnej ilości planowania (ilości z kart Kanban) do każdego dnia o wystarczającej dostępnej produktywności.  
-
 

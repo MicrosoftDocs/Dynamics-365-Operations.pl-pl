@@ -1,13 +1,13 @@
 ---
-title: "Zarządzanie cyklem życia konfiguracji modułu Raportowanie elektroniczne (ER)"
-description: "W tym temacie opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w programie Microsoft Dynamics 365 for Finance and Operations."
+title: Zarządzanie cyklem życia konfiguracji modułu Raportowanie elektroniczne (ER)
+description: W tym temacie opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -18,23 +18,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5724ba62bfb2c6e75ae895dc9285966c25f387a2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 76ea412a3c10bf33fc06603bab8b94b2eadb9803
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344807"
 ---
-
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Zarządzanie cyklem życia konfiguracji modułu Raportowanie elektroniczne (ER)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w programie Microsoft Dynamics 365 for Finance and Operations.
+W tym temacie opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="overview"></a>Przegląd
 
-Raportowanie elektroniczne (ER) jest aparatem, który obsługuje dokumenty elektroniczne wymagane ustawowo i specyficzne dla danego kraju w programie Microsoft Dynamics 365 for Finance and Operations. Zasadniczo moduł ER umożliwia wykonywanie następujących zadań dla pojedynczego dokumentu elektronicznego. Aby uzyskać więcej szczegółowych informacji, zobacz [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md).
+Raportowanie elektroniczne (ER) jest aparatem, który obsługuje dokumenty elektroniczne wymagane ustawowo i specyficzne dla danego kraju w Microsoft Dynamics 365 for Finance and Operations. Zasadniczo moduł ER umożliwia wykonywanie następujących zadań dla pojedynczego dokumentu elektronicznego. Aby uzyskać więcej szczegółowych informacji, zobacz [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md).
 
 - Projektowanie szablonu dokumentu elektronicznego:
 
@@ -89,4 +88,3 @@ Konfiguracje ER zaprojektowane w środowisku programistycznym można przesłać 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie raportowania elektronicznego](general-electronic-reporting.md)
-

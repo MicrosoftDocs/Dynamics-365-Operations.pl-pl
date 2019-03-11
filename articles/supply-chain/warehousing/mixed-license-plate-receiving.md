@@ -1,13 +1,13 @@
 ---
-title: "Przyjęcie mieszanego numeru identyfikacyjnego"
-description: "W tym temacie opisano sposób używania funkcji przyjęć z mieszanych numerów identyfikacyjnych do rejestrowania i tworzenia pracy dla wielu towarów na urządzeniu komórkowym."
+title: Przyjęcie mieszanego numeru identyfikacyjnego
+description: W tym temacie opisano sposób używania funkcji przyjęć z mieszanych numerów identyfikacyjnych do rejestrowania i tworzenia pracy dla wielu towarów na urządzeniu komórkowym.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFAutoConfirm
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a44165bc59d65a9dfdf8e591152f427b97930b34
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ec3fdff6e1118f4a4ef4146d315fe8c58664f453
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365898"
 ---
-
 # <a name="mixed-license-plate-receiving"></a>Przyjęcie mieszanego numeru identyfikacyjnego
 
 [!include [banner](../includes/banner.md)]
@@ -50,4 +49,3 @@ Należy utworzyć nowy element menu z trybem Praca, który nie wykorzystuje istn
 - Przyjęcie i odłożenie mieszanego numeru identyfikacyjnego
 
 Dostępne są następujące opcje identyfikujące wiersze dokumentu źródłowego: pozycja zamówienia zakupu, wiersz zamówienia zakupu, zamówienia zwrotu, pozycja zamówienia przeniesienia i wiersz zamówienia przeniesienia. Te opcje mogą zmieniać kolejność przyjęcia dla pojedynczego numeru identyfikacyjnego. Ostatnia opcja to według pozycji ładunku. Do numeru identyfikacyjnego można dodać wiele towarów, ale nie można się przełączać między różnymi ładunkami.
-

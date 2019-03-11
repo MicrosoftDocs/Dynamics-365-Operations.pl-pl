@@ -1,13 +1,13 @@
---- 
-title: "Tworzenie pytania zamkniętego"
-description: "Pytania zamknięte umożliwiają udostępnienie osobie udzielającej odpowiedzi opcji do wyboru."
+---
+title: Tworzenie pytania zamkniętego
+description: Pytania zamknięte umożliwiają udostępnienie osobie udzielającej odpowiedzi opcji do wyboru.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6b08988a3872cec39b7592732d23862e959aae79
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332272"
 ---
 # <a name="create-a-closed-ended-question"></a>Tworzenie pytania zamkniętego
 
@@ -67,5 +67,4 @@ Pytania zamknięte umożliwiają udostępnienie osobie udzielającej odpowiedzi 
 4. W polu Typ danych wejściowych wybierz opcję.
 5. W polu Grupa odpowiedzi wpisz lub wprowadź wartość.
 6. W polu Tekst wpisz wartość.
-
 

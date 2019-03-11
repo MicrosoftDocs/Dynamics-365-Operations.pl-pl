@@ -1,28 +1,27 @@
 ---
-title: "Koncepcje urlopów i nieobecności"
-description: "W tym temacie opisano pojęcia dotyczące urlopów i nieobecności oraz sposób określania sald czasu wolnego."
+title: Koncepcje urlopów i nieobecności
+description: W tym temacie opisano pojęcia dotyczące urlopów i nieobecności oraz sposób określania sald czasu wolnego.
 author: jcart
 manager: AnnBe
 ms.date: 01/03/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: a388e0efe6c19a3aabe04e7fff039ce11ae023c4
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 563593d6c93b0488c681f5b43004f5c0d22cc004
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/07/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305857"
 ---
-
 # <a name="leave-and-absence-concepts"></a>Koncepcje urlopów i nieobecności
 
 [!include[banner](../includes/banner.md)]
@@ -297,4 +296,3 @@ Prognozowane saldo (30) = Kwota naliczeń (10 × 1) + Saldo bieżące (40) – K
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0,00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3,00    |
 | Jay Norman          | 0,00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
-

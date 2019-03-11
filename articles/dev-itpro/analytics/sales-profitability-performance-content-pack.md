@@ -1,13 +1,13 @@
 ---
-title: "Zawartość usługi Power BI dotycząca wyników sprzedaży i rentowności"
-description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wyniki sprzedaży i rentowności. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
+title: Pakiet zawartości usługi Power BI Wyniki sprzedaży i rentowności
+description: W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wyniki sprzedaży i rentowności. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesProfitabilityPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: cf4d3e12d33b67158ff4f96580b4ac2eb903bb93
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360424"
 ---
-
-# <a name="sales-and-profitability-performance-power-bi-content"></a>Zawartość usługi Power BI dotycząca wyników sprzedaży i rentowności
+# <a name="sales-and-profitability-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wyniki sprzedaży i rentowności
 
 [!include [banner](../includes/banner.md)]
 
@@ -52,7 +51,7 @@ Rentowność można analizować w następujące sposoby:
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Pakiet zawartości Power BI **Wyniki w zakresie sprzedaży i rentowności** jest wyświetlany na stronie **Wyniki w zakresie sprzedaży i rentowności** (**Sprzedaż i marketing** \> **Zapytania i raporty** \> **Analiza wydajności sprzedaży** \> **Wyniki w zakresie sprzedaży i rentowności**).
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
+## <a name="metricsthat-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI.
 Pakiet zawartości usługi Power BI **Wyniki sprzedaży i rentowności** zawiera raport obejmujący zbiór miar. Te wskaźniki są wizualizowane jako wykresy, kafelki i tabele. Następująca tabela zawiera przegląd wizualizacji dostępnych w pakiecie zawartości.
 
 | Strona raportu            | Wykresy                                     | Kafelki                                                   |
@@ -109,4 +108,3 @@ Następująca najważniejsze wymiary w module Sprzedaż są używane jako filtry
 | Daty            | Daty                                                |
 
 Domyślnie pakiet zawartości przestawia dane bieżącego roku kalendarzowego. Można jednak zmienić wartość filtra dat w sekcji filtrów raportu. Można również zmienić wartość filtra firm.
-

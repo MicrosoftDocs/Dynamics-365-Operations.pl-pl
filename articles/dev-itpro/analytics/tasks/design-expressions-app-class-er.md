@@ -1,13 +1,13 @@
---- 
-title: "Projektowanie wyrażeń ER do wywoływania metod klas aplikacji"
-description: "Ten przewodnik zawiera informacje, jak ponownie użyć istniejącej logiki aplikacji w konfiguracjach elektronicznego raportowania (RE) poprzez wywołanie wymaganych metod klas aplikacji w wyrażeniach ER."
+---
+title: Projektowanie wyrażeń ER do wywoływania metod klas aplikacji
+description: Ten przewodnik zawiera informacje, jak ponownie użyć istniejącej logiki aplikacji w konfiguracjach elektronicznego raportowania (RE) poprzez wywołanie wymaganych metod klas aplikacji w wyrażeniach ER.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: fdacd852eeed33b443a3c79b96fc4c4af04bb6b2
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357250"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Projektowanie wyrażeń ER do wywoływania metod klas aplikacji
 
@@ -103,7 +103,7 @@ Aby wykonać te kroki, należy najpierw wykonać kroki zawarte w procedurze „E
     * Mapowanie do modelu danych  
 6. Kliknij przycisk Zapisz.
 7. Kliknij przycisk Konstruktor.
-8. W drzewie zaznacz element „Dynamics 365 for Operations\Klasa”.
+8. W drzewie wybierz kolejno „Dynamics 365 for Operations\Klasa”.
 9. Kliknij opcję Dodaj element główny.
     * Dodaj nowe źródło danych, aby wywołać istniejącą logikę aplikacji do sprawdzenia poprawności kodów IBAN.  
 10. W polu Nazwa wpisz „check_codes”.
@@ -157,5 +157,4 @@ W celach testowych wykonaj mapowanie formatu z użyciem pliku SampleIncomingMess
     * Kliknij przycisk Przeglądaj i przejdź do pliku SampleIncomingMessage.txt, który został wcześniej pobrany.  
 2. Kliknij przycisk OK.
     * Przejrzyj dane wyjściowe w formacie XML, które reprezentują dane zaimportowane z wybranego pliku i przeniesione do modelu danych. Należy zauważyć, że tylko 3 wiersze zaimportowanego pliku TXT zostały przetworzone. Nieprawidłowy kod IBAN w wierszu 4 został pominięty, a w dzienniku informacyjnym pojawił się komunikat o błędzie.  
-
 

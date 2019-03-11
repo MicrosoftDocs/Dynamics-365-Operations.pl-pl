@@ -1,13 +1,13 @@
 ---
-title: "Zgłaszanie zleceń produkcyjnych jako gotowych"
-description: "Zgłoszenie wyrobów gotowych to etap produkcji. Na tym etapie produkt gotowy jest zgłaszany i przenoszony ze zlecenia produkcyjnego do zapasów."
+title: Zgłaszanie zleceń produkcyjnych jako gotowych
+description: Zgłoszenie wyrobów gotowych to etap produkcji. Na tym etapie produkt gotowy jest zgłaszany i przenoszony ze zlecenia produkcyjnego do zapasów.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdJournalTransJob, ProdJournalTransProd, ProdJournalTransRoute, ProdParmReportFinished, ProdRouteOprOverview
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 61c12ee3a831abcb46af18645eba55fe100c99c9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 80a882e51332d87835bdfb41a1bb1fcda2471f02
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315827"
 ---
-
 # <a name="report-production-orders-as-finished"></a>Zgłaszanie zleceń produkcyjnych jako gotowych
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ Ilość jest zgłaszana do lokalizacji wyjściowej. Następnie generowana jest p
 
 ## <a name="set-a-production-order-to-reporting-as-finished"></a>Ustawianie stanu zlecenia produkcyjnego na Zgłoszenie wyrobów gotowych
 Można ustawić stan zlecenia produkcyjnego na **Zgłoszenie wyrobów gotowych** a pomocą standardowej funkcji aktualizacji zlecenia produkcyjnego lub za pomocą arkusza marszruty i karty karta zadań albo za pomocą arkusza **Zgłoszenie wyrobów gotowych**. Można także zaktualizować etap na **Zgłoszenie wyrobów gotowych** za pomocą stron terminalu karty zadań i urządzenia karty zadań podczas zgłaszania ostatniego zadania zlecenia produkcyjnego. Wreszcie można włączyć opcję **Zgłoszenie wyrobów gotowych** jako proces dla rozwiązania urządzenia podręcznego magazynu.  
-
 
 
 

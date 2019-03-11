@@ -1,13 +1,13 @@
 ---
-title: "Pakiet zawartości usługi Power BI Przegląd dla dyrektora finansowego"
-description: "W tym temacie opisano pakiet zawartość Przegląd dla dyrektora finansowego dostępny dla usługi Microsoft Power BI."
+title: Pakiet zawartości Dyrektor finansowy — przegląd w usłudze Power BI
+description: W tym temacie opisano pakiet zawartości Dyrektor finansowy — przegląd dla usługi Microsoft Power BI.
 author: kweekley
 manager: AnnBe
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -15,28 +15,27 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 026274e06d27fb1254ffa971bcb0fbdbb5e7eac7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 01233890603f6f199b7a815eb91d1d5a7f2ae53e
-ms.contentlocale: pl-pl
-ms.lasthandoff: 02/23/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331398"
 ---
-
-# <a name="cfo-overview-power-bi-content"></a>Pakiet zawartości usługi Power BI Przegląd dla dyrektora finansowego
+# <a name="cfo-overview-power-bi-content"></a>Pakiet zawartości Dyrektor finansowy — przegląd w usłudze Power BI
 
 [!include [banner](../includes/banner.md)] 
 
-W tym temacie opisano pakiet zawartość **Przegląd dla dyrektora finansowego** dostępny dla usługi Microsoft Power BI. Ten pakiet zawartości usługi Power BI ma zastosowanie do klientów używających programu Microsoft Dynamics 365 for Finance and Operations w wersji 7.2. Jeśli używasz wersji 7.3 lub nowszej, zobacz [Szczegółowe dane finansowe](financial-insights.md).
+W tym temacie opisano pakiet zawartości **Dyrektor finansowy — przegląd** dostępny dla usługi Microsoft Power BI. Pakiet zawartości usługi Power BI dotyczy tylko tych użytkowników, którzy używają Microsoft Dynamics 365 for Finance and Operations wersja 7.2. Jeśli używasz wersji 7.3 lub nowszej, zobacz [Szczegółowe dane finansowe](financial-insights.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 
-Raporty z zawartości usługi Power BI **Omówienie funkcji Dyrektor finansowy** są wyświetlane w obszarze roboczym **Omówienie funkcji Dyrektor finansowy**.
+Raporty z zawartości usługi Power BI **Dyrektor finansowy — przegląd** są wyświetlane w obszarze roboczym **Dyrektor finansowy — przegląd**.
 
-## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
-Pakiet zawartości usługi Power BI **Przegląd dla dyrektora finansowego** jest zbiorem raportów z różnych innych pakietów zawartości usługi Power BI, a także zawiera niektóre salda wartości rzeczywistych i zabudżetowanych z księgi głównej. W efekcie ten pakiet zawartości usługi Power BI oferuje dyrektorowi finansowemu (CFO) podgląd na całą organizację.
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty dostępne w pakiecie zawartości dla usługi Power BI
+Pakiet zawartości **Dyrektor finansowy — przegląd** usługi Power BI jest zbiorem raportów z różnych innych pakietów zawartości usługi Power BI, a także zawiera niektóre salda wartości rzeczywistych i zabudżetowanych z księgi głównej. W efekcie ten pakiet zawartości usługi Power BI oferuje dyrektorowi finansowemu (CFO) podgląd na całą organizację.
 
-W poniższej tabeli przedstawiono pakiety zawartości usługi Power BI, z których są kopiowane raporty, oraz raporty znajdujące się w obszarze roboczym **Przegląd dla dyrektora finansowego**. Znajdują się tu również łącza do dokumentacji różnych pakietów zawartości usługi Power BI.
+W poniższej tabeli przedstawiono pakiety zawartości usługi Power BI, z których są kopiowane raporty, oraz raporty znajdujące się w obszarze roboczym **Dyrektor finansowy — przegląd**. Znajdują się tu również łącza do dokumentacji różnych pakietów zawartości usługi Power BI.
 
 | Pakiety zawartości usługi Power BI, z których pochodzi treść | Raporty |
 |-----------------------------------|---------|
@@ -45,4 +44,3 @@ W poniższej tabeli przedstawiono pakiety zawartości usługi Power BI, z który
 | [Sprzedaż i rentowność](sales-profitability-performance-content-pack.md) | <ul><li>Przychód wg regionów</li><li>10 najważniejszych odbiorców wg przychodów</li><li>10 najważniejszych produktów wg przychodów</li></ul> |
 | [Zarządzanie kredytami i windykacją](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Zaległości odbiorców</li><li>Odbiorcy przekraczający limit kredytu</li><li>Wiekowane salda</li></ul> |
 | [Analiza wydatków zakupowych](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Zakupy wg miesięcy/dni</li><li>10 dostawców z najwyższymi zakupami</li><li>10 najczęściej kupowanych produktów</li></ul> |
-

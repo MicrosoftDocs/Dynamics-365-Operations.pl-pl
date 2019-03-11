@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie produktów, które mogą być produkowane lub zamawiane"
-description: "Produkty można pozyskiwać na różne sposoby — mogą być produkowane (wytwarzane) lub zamawiane (kupowane). W tym artykule opisano niektóre typowe kwestie do rozważenia podczas konfigurowania dla produktów obsługi pozyskiwania z wielu źródeł."
+title: Konfigurowanie produktów, które mogą być produkowane lub zamawiane
+description: Produkty można pozyskiwać na różne sposoby — mogą być produkowane (wytwarzane) lub zamawiane (kupowane). W tym artykule opisano niektóre typowe kwestie do rozważenia podczas konfigurowania dla produktów obsługi pozyskiwania z wielu źródeł.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a910b5782c8f15cfdd4cf93ea883bc28a5ce8e1a
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5ed8c93c13746249605ad8742549c23bb1e0e10
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "338459"
 ---
-
 # <a name="set-up-products-that-can-be-produced-or-procured"></a>Konfigurowanie produktów, które mogą być produkowane lub zamawiane
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,6 @@ Model wielu źródeł jest zwykle używany do kupowania towarów, które są wyt
 Jeśli używasz kosztu standardowego, rekord kosztu towaru można obliczyć dla towaru wytwarzanego. Jednak rekord kosztu towaru nie może pokrywać się z kosztem standardowym, który ma być stosowany dla celów zakupów. W takim przypadku koszt standardowy należy wprowadzić i aktywować dla rekordu kosztu towaru. Do obliczania kosztów należy wziąć pod uwagę specjalną listę BOM i marszrutę, odzwierciedlające kombinację dostaw produktu w okresie obrachunkowym, aby zminimalizować odchylenia w czasie. Ponadto towar wytwarzany w jednym oddziale może zostać przeniesiony do innego oddziału. W związku z tym koszt towaru musi być ręcznie wprowadzony i aktywowany dla oddziału, do którego jest przenoszony. Jeśli towar wytwarzany jest składnikiem produktu wyższego poziomu, koszt składnika powinien być traktowany jak koszt towaru kupowanego. Niniejsze wytyczne obowiązują niezależnie od tego, czy koszty składników zostały obliczone czy wprowadzone ręcznie. Innymi słowy, w przypadku obliczania BOM koszty towaru powinny być traktowane jako koszty składnika kupowanego, zamiast używać informacji dotyczących BOM i marszruty dla towaru w celu obliczenia kosztów. 
 
 Aby zablokować takie obliczenia, wybierz flagę **Zatrzymanie rozłożenia** znajdującą się w grupie obliczania BOM przypisanej do towaru. Aby w przypadku obliczeń w procesie planowania głównego uniemożliwić rozłożenie kosztów towaru, ustaw horyzont rozłożenia na 0 (zero) dni w zapotrzebowaniu na towary lub w grupie zapotrzebowania. W obliczaniu planowania głównego towar będzie traktowany jako kupowany i nie zostaną przeprowadzone dodatkowe obliczenia dla informacji dotyczących BOM i marszruty towaru.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Pakiet zawartości usługi Power BI Szkolenie organizacyjne"
-description: "W tym temacie opisano pakiet zawartości Finance and Operations — Szkolenie organizacyjne dla usługi Power BI."
+title: Pakiet zawartości Szkolenie organizacyjne dla usługi Power BI
+description: W tym temacie opisano pakiet zawartości Finance and Operations — Szkolenie organizacyjne dla usługi Power BI.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6c1855013dc449950877f8727a5453942aeb75de
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367531"
 ---
-
-# <a name="organizational-training-power-bi-content"></a>Pakiet zawartości usługi Power BI Szkolenie organizacyjne
+# <a name="organizational-training-power-bi-content"></a>Pakiet zawartości Szkolenie organizacyjne dla usługi Power BI
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartości Finance and Operations — Szkolenie organizacyjne dla usługi Power BI.
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Raporty dostępne w pakiecie zawartości
-Gdy utworzysz połączenie między pakietem zawartości a danymi programu Finance and Operations, w raportach są wyświetlone dane organizacji. Jeśli to Twoja pierwsza styczność z narzędziem Microsoft Power BI, możesz się o nim dowiedzieć więcej na [stronie Przewodnika z instruktażem po narzędziu Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporty dostępne w pakiecie zawartości mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
+Gdy utworzysz połączenie między pakietem zawartości a danymi programu Finance and Operations, w raportach są wyświetlone dane organizacji. Jeśli to Twoja pierwsza styczność z narzędziem Microsoft Power BI, możesz się o nim dowiedzieć więcej na stronie [Przewodnika z instruktażem po narzędziu Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporty dostępne w pakiecie zawartości mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
 
 | Raport          | Zawartość                                                                    |
 |-----------------|-----------------------------------------------------------------------------|
@@ -59,4 +58,3 @@ Dane programu Finance and Operations są używane do wypełniania raportów w pa
 | Training\_Position        | Stanowisko, tytuł i równoważnik pełnego etatu (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | Imię, drugie imię i nazwisko                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Tytuł i data ustalenia stażu pracy                                         | Training\_CourseAttendees |
-

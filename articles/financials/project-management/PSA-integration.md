@@ -1,13 +1,13 @@
 ---
 title: Project Service Automation
-description: "Ten temat zawiera informacje o rozwiązaniu integrującym rozwiązanie Project Service Automation z rozwiązaniem Finance and Operations. To rozwiązanie integracyjne używa funkcji integracji danych do synchronizacji danych między wystąpieniami programu Microsoft Dynamics 365 for Finance and Operations a rozwiązaniem Microsoft Dynamics 365 for Project Service Automation za pośrednictwem usługi Common Data Service (CDS)."
+description: Ten temat zawiera informacje o rozwiązaniu integrującym rozwiązanie Project Service Automation z rozwiązaniem Finance and Operations. To rozwiązanie integracyjne używa funkcji integracji danych do synchronizacji danych między wystąpieniami programu Microsoft Dynamics 365 for Finance and Operations a rozwiązaniem Microsoft Dynamics 365 for Project Service Automation za pośrednictwem usługi Common Data Service (CDS).
 author: KimANelson
 manager: AnnBe
 ms.date: 06/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 841ea53f754f61c2930e77fdafc85eac72f47d7a
 ms.openlocfilehash: 4b1d2ae69899a2937d47f6547ee4ba72b2d1ece4
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335699"
 ---
-
 # <a name="project-service-automation"></a>Project Service Automation
 
 [!include[banner](../includes/banner.md)]
 
-Rozwiązanie integracji rozwiązania Project Service Automation oraz Finance and Operations korzysta z funkcji integracji danych do synchronizowania danych między wystąpieniami systemu Microsoft Dynamics 365 for Finance and Operations oraz Microsoft Dynamics 365 for Project Service Automation poprzez usługę Common Data Service. Szablony integracji, które są dostępne z funkcji integracji danych, umożliwiają przepływ danych na temat projektów, umów dotyczących projektów, wierszy umowy dotyczącej projektu, punktów kontrolnych wiersza umowy projektu, zadań w ramach projektu, kategorii transakcji wydatkowych, szacunków godzinowych i szacowań wydatków z rozwiązania Project Service Automation do rozwiązania Finance and Operations.
+Rozwiązanie integracji rozwiązania Project Service Automation oraz Finance and Operations korzysta z funkcji integracji danych do synchronizowania danych między wystąpieniami programu Microsoft Dynamics 365 for Finance and Operations oraz Microsoft Dynamics 365 for Project Service Automation poprzez usługę Common Data Service. Szablony integracji, które są dostępne z funkcji integracji danych, umożliwiają przepływ danych na temat projektów, umów dotyczących projektów, wierszy umowy dotyczącej projektu, punktów kontrolnych wiersza umowy projektu, zadań w ramach projektu, kategorii transakcji wydatkowych, szacunków godzinowych i szacowań wydatków z rozwiązania Project Service Automation do rozwiązania Finance and Operations.
 
 > [!NOTE]
 > - Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3.0, po zainstalowaniu aktualizacji KB 4132657 i 4132660 możesz używać szablonów, aby integrować zadania projektu, kategorie transakcji wydatkowych, szacunki godzin, szacunki wydatków i wartości rzeczywiste oraz konfigurować blokowanie funkcji. Jeśli należy zresetować zasady podziału księgowań, zalecamy dodatkowo zainstalować aktualizację KB 4131710.
@@ -76,4 +75,3 @@ Aby użyć aplikacji Project Service Automation dla rozwiązań integracji dla F
 ## <a name="install-the-project-service-automation-to-finance-and-operations-integration-solution-in-your-project-service-automation-instance"></a>Instalowanie rozwiązania do integrowania aplikacji Project Service Automation z Finance and Operations w wystąpieniu programu Project Service Automation
 
 Pobierz rozwiązanie do integrowania aplikacji Project Service Automation z Finance and Operations z [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=57016) i postępuj zgodnie z instrukcjami dołączonymi do rozwiązania.
-

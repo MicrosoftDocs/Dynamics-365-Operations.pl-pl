@@ -1,13 +1,13 @@
 ---
-title: "Mobilny obszar roboczy Firmowa książka adresowa"
-description: "W tym temacie przedstawiono informacje o komórkowym obszarze roboczym Firmowa książka adresowa, gdzie użytkownicy mogą wyświetlać dane i kontaktować się z innymi pracownikami w organizacji."
+title: Mobilny obszar roboczy Firmowa książka adresowa
+description: W tym temacie przedstawiono informacje o komórkowym obszarze roboczym Firmowa książka adresowa, gdzie użytkownicy mogą wyświetlać dane i kontaktować się z innymi pracownikami w organizacji.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308628"
 ---
-
 # <a name="company-directory-mobile-workspace"></a>Mobilny obszar roboczy Firmowa książka adresowa
 
 [!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Firmowa książka adresowa**. Ten obszar roboczy umożliwia użytkownikom wyświetlanie danych i kontaktowanie się z innymi pracownikami w organizacji.
 
-Ten mobilny obszar roboczy może być używany w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations.
+Ten mobilny obszar roboczy może być używany w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations Mobile.
 
 ## <a name="overview"></a>Przegląd
 Mobilny obszar roboczy **Firmowa książka adresowa** pozwala użytkownikom wykonywać następujące zadania:
@@ -72,12 +71,12 @@ Aby można było używać tego mobilnego obszaru roboczego, muszą być spełnio
 ## <a name="download-and-install-the-mobile-app"></a>Pobieranie i instalowanie aplikacji mobilnej
 Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
--   [Telefony z systemem Android](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Logowanie do aplikacji mobilnej
 1.  Uruchom aplikację na urządzeniu komórkowym.
-2.  Wprowadź adres URL usługi Microsoft Dynamics 365.
+2.  Wprowadź swój adres URL w usłudze Microsoft Dynamics 365.
 3.  Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła. Wprowadź swoje poświadczenia.
 4.  Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, trzeba odświeżyć listę komórkowych obszarów roboczych.
 
@@ -91,4 +90,3 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 1.  W aplikacji komórkowej zaznacz obszar roboczy **Firmowa książka adresowa**.
 2.  W polu **Szukaj** wprowadź imię, nazwisko, tytuł lub dział pracownika, aby rozpocząć wyszukiwanie.
 3.  Wybierz pracownika. Zostanie wyświetlona strona **Profil pracownika**. Informacje na tej stronie obejmują imię, nazwisko, tytuł i dział pracownika.
-

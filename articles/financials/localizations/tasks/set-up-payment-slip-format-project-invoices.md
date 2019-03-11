@@ -1,13 +1,13 @@
---- 
-title: "Konfigurowanie formatu dokumentu płatności dla faktur projektu"
-description: "Firmy zazwyczaj dołączają drukowane dokumenty płatności do faktur, aby pomóc klientom i dostarczyć referencyjne informacje płatnicze na potrzeby księgowania i rozliczania."
+---
+title: Konfigurowanie formatu dokumentu płatności dla faktur projektu
+description: Firmy zazwyczaj dołączają drukowane dokumenty płatności do faktur, aby pomóc klientom i dostarczyć referencyjne informacje płatnicze na potrzeby księgowania i rozliczania.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMLegalEntity, CustFormletterParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b365585e884749bb73f8ba9054e446f210e10f37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 9700571110a1b488e250dd8ee7b8c5c8f15cbc01
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345612"
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>Konfigurowanie formatu dokumentu płatności dla faktur projektu
 
@@ -65,5 +65,4 @@ Ta funkcja jest dostępna w firmach, których adresem podstawowym jest Dania.
     * Brak — Dokument płatności nie jest drukowany. Zaznacz tę opcję, jeśli kwota płatności jest w walucie innej niż duńska korona (DKK).   FIK 751 — Drukowanie dokumentu płatności FIK 751, gdy kwota płatności i termin płatności mają być wpisane ręcznie do dokumentu płatności.   FIK 752 — Zostanie wydrukowany dokument płatności FIK 752, jeśli ma być używany generowany komputerowo dokument z nadrukiem terminu i kwoty płatności.  
 16. Kliknij przycisk Zapisz.
 17. Zamknij stronę.
-
 

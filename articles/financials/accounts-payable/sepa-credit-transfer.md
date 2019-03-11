@@ -1,13 +1,13 @@
 ---
-title: "Przegląd przeniesienia kredytu SEPA"
-description: "Ten artykuł zawiera ogólne informacje o poleceniach przelewu ISO 20022, co obejmuje polecenia przelewu Jednolitego Obszaru Płatniczego w Euro (SEPA) oraz wszelkie inne elektroniczne płatności dla dostawców. Polecenie przelewu SEPA jest szczególną formą płatności (w euro) realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. W temacie wyjaśniono również, jak ustawić i przesłać plik płatności poleceniem przelewu."
+title: Przegląd przeniesienia kredytu SEPA
+description: Ten artykuł zawiera ogólne informacje o poleceniach przelewu ISO 20022, co obejmuje polecenia przelewu Jednolitego Obszaru Płatniczego w Euro (SEPA) oraz wszelkie inne elektroniczne płatności dla dostawców. Polecenie przelewu SEPA jest szczególną formą płatności (w euro) realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. W temacie wyjaśniono również, jak ustawić i przesłać plik płatności poleceniem przelewu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d6081c12ea65812a15b50c627330b4566ab4c679
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1aa70dea3b0e7056afbdba96f4475c3e7e71f57c
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363782"
 ---
-
 # <a name="sepa-credit-transfer-overview"></a>Przegląd przeniesienia kredytu SEPA
 
 [!include [banner](../includes/banner.md)]
@@ -124,7 +123,6 @@ Międzynarodowy numer konta bankowego (IBAN) i kod identyfikacyjny banku (SWIFT)
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Jak przekazać plik płatności do banku?
 Podczas generowania płatności zostanie wygenerowany plik płatności, a użytkownik jest proszony o zapisanie go w przeglądarce sieci web w dowolnej dostępnej lokalizacji. Następnym krokiem jest wysłanie pliku XML do banku. Ten proces różni się w zależności od banku. Postępuj zgodnie z instrukcjami otrzymanymi z banku, aby przesłać pliki do banku do przetworzenia.
-
 
 
 

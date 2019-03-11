@@ -1,13 +1,13 @@
 ---
-title: "Ustawienia wyświetlania urządzenia przenośnego używanego w magazynie"
-description: "W tym artykule opisano konfigurowanie wyglądu ekranu urządzenia przenośnego oraz mapowanie skrótów klawiaturowych na formanty takie jak przyciski."
+title: Ustawienia wyświetlania urządzenia przenośnego używanego w magazynie
+description: W tym artykule opisano konfigurowanie wyglądu ekranu urządzenia przenośnego oraz mapowanie skrótów klawiaturowych na formanty takie jak przyciski.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16f332da00d2230ecb4cebc526b6456314564e55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328040"
 ---
-
 # <a name="warehouse-mobile-device-display-settings"></a>Ustawienia wyświetlania urządzenia przenośnego używanego w magazynie
 
 [!include [banner](../includes/banner.md)]
@@ -87,7 +86,7 @@ Można użyć strony **kolory tekstu urządzenia przenośnego** do kontrolowania
 Aby wybrać kolor, na stronie **Wybierz kolor** kliknij w palecie lub wpisz kod szesnastkowy koloru.
 
 ## <a name="define-the-date-format-to-use-on-mobile-devices"></a>Określanie formatu daty używanego na urządzeniach przenośnych
-Można rozszerzyć listę zaakceptowanych formatów dat dla każdej instalacji. Na funkcja może być przydatna, jeśli chcesz podać format, który ułatwi pracownikowi wprowadzenie daty na urządzeniu przenośnym. Domyślny format zależy domyślnego języka użytkownika, który określono w polu **języka** na stronie **opcji użytkownika**. (Na tej samej stronie można skojarzyć pracownika z określonym użytkownikiem pracy magazynu). **Uwaga:** Portal urządzeń przenośnych używanych w magazynie nie używa ustawienia w polu **Format daty, godziny i liczb** na stronie **Preferencje języka i regionu**. Aby zmienić format daty, należy zapoznać się z wyrażeniami regularnymi w programie .NET Framework. Aby uzyskać więcej informacji, zobacz temat [Wyrażenia regularne systemu .NET Framework](http://go.microsoft.com/fwlink/?LinkId=391260). Aby zdefiniować formaty daty, edytuj plik Dates.ini, który znajduje się w ścieżce Content\\Settings\\Dates.ini na serwerze Portalu urządzeń przenośnych używanych w magazynie. Ten plik zawiera wyrażenia regularne .NET do określenia formatu daty. Wyrażenie regularne musi zawierać podrzędne wyrażenia tworzące grupy nazw dla dnia, miesiąca i roku (DDMMYY), jak to przedstawiono w poniższym przykładzie:
+Można rozszerzyć listę zaakceptowanych formatów dat dla każdej instalacji. Na funkcja może być przydatna, jeśli chcesz podać format, który ułatwi pracownikowi wprowadzenie daty na urządzeniu przenośnym. Domyślny format zależy domyślnego języka użytkownika, który określono w polu **języka** na stronie **opcji użytkownika**. (Na tej samej stronie można skojarzyć pracownika z określonym użytkownikiem pracy magazynu). **Uwaga:** Portal urządzeń przenośnych używanych w magazynie nie używa ustawienia w polu **Format daty, godziny i liczb** na stronie **Preferencje języka i regionu**. Aby zmienić format daty, należy zapoznać się z wyrażeniami regularnymi w programie Microsoft .NET Framework. Aby uzyskać więcej informacji, zobacz temat [Wyrażenia regularne systemu .NET Framework](http://go.microsoft.com/fwlink/?LinkId=391260). Aby zdefiniować formaty daty, edytuj plik Dates.ini, który znajduje się w ścieżce Content\\Settings\\Dates.ini na serwerze Portalu urządzeń przenośnych używanych w magazynie. Ten plik zawiera wyrażenia regularne .NET do określenia formatu daty. Wyrażenie regularne musi zawierać podrzędne wyrażenia tworzące grupy nazw dla dnia, miesiąca i roku (DDMMYY), jak to przedstawiono w poniższym przykładzie:
 
 ^(?&lt;dzień&gt;\\d{2})(?&lt;miesiąc&gt;\\d{2})(?&lt;rok&gt;\\d{2})$
 
@@ -101,7 +100,6 @@ Można określić więcej niż jedno wyrażenie w tym samym pliku. Każde wyraż
 --------
 
 [Konfiguracja urządzeń przenośnych do pracy w magazynie](configure-mobile-devices-warehouse.md)
-
 
 
 

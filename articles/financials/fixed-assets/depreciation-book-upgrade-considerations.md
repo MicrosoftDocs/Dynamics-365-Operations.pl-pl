@@ -1,13 +1,13 @@
 ---
-title: "Omówienie uaktualniania księgi amortyzacji"
-description: "W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji. W programie Microsoft Dynamics 365 for Operations (wydanie 1611) funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą. Ten temat porusza kilka zagadnień, które należy wziąć pod uwagę przy uaktualnianiu."
+title: Omówienie uaktualniania księgi amortyzacji
+description: 'W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji. W programie Microsoft Dynamics 365 for Operations (wydanie 1611) funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą. Ten temat porusza kilka zagadnień, które należy wziąć pod uwagę przy uaktualnianiu.'
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 805f6ab1cd1d0996e685278cc997f532213c76c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e95fa9dd15dfe5e6b26de61b5dbc1a9a6c0d768d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359320"
 ---
-
 # <a name="depreciation-book-upgrade-overview"></a>Omówienie uaktualniania księgi amortyzacji
 
 [!include [banner](../includes/banner.md)]
@@ -81,7 +80,6 @@ W przypadku używania metody z numeracją systemową (opcja 1) uaktualnienie bę
 W przypadku używania metody z istniejącą numeracją zdefiniowaną przez użytkownika (opcja 2) aparat uaktualnienia danych sprawdza, czy numeracja z podanym zakresem istnieje w bazie danych dla każdej partycji i firmy z transakcjami księgi amortyzacji. Jeżeli tak, w uaktualnieniu będzie wykonywane przetwarzanie wiersz po wierszu w celu alokacji numerów załączników zgodnie z parametrami numeracji przy użyciu struktury numeracji. Jeżeli numeracja z podanym zakresem nie istnieje, w uaktualnieniu do przydzielenia numerów załączników zostanie użyta numeracja systemowa, a po zakończeniu alokacji zostanie utworzona nowa numeracja z podanymi parametrami domyślnymi.
 
 W obu metodach skrypt uaktualniania danych będzie również używał numeracji dla pola **Seria załączników** w nowych arkuszach księgi głównej utworzonych dla poprzednich arkuszy księgi amortyzacji.
-
 
 
 

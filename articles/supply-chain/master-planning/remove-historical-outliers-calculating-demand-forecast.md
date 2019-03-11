@@ -1,13 +1,13 @@
 ---
-title: "Usuwanie wartości odstających z danych transakcji historycznych podczas obliczania prognozy popytu"
-description: "W tym artykule opisano sposób wykluczania wartości odstających z historycznych danych, które są używane do obliczania prognozy popytu. Poprzez wykluczenie wartości odstających, można zwiększyć dokładność prognozy."
+title: Usuwanie wartości odstających z danych transakcji historycznych podczas obliczania prognozy popytu
+description: W tym artykule opisano sposób wykluczania wartości odstających z historycznych danych, które są używane do obliczania prognozy popytu. Poprzez wykluczenie wartości odstających, można zwiększyć dokładność prognozy.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanForecastParameters, ReqDemPlanOutlierQuerySetup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ce8ebaf32b30c57b307f0d8799660ba6b42365a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b4805d343518a880ad0d6e6568c5493583a17783
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323624"
 ---
-
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Usuwanie wartości odstających z danych transakcji historycznych podczas obliczania prognozy popytu
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Można wykluczyć wartości odstające, aby zwiększyć dokładność prognozy. 
 [Wprowadzenie do prognozowania popytu](introduction-demand-forecasting.md)
 
 [Monitorowanie dokładności prognozy](monitor-forecast-accuracy.md)
-
 
 
 

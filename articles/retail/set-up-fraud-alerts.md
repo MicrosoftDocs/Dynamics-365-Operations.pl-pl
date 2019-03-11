@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie i praca z alertami o oszustwach w biurze obsługi"
-description: "W tym temacie wyjaśniono sposób konfigurowania reguł powiadomień dla działu obsługi klienta o potencjalnie fałszywych informacjach przy przetwarzaniu zamówień. Można zdefiniować określone kody używane do automatycznego lub ręcznego wstrzymania podejrzanych zamówień."
+title: Konfigurowanie i praca z alertami o oszustwach w biurze obsługi
+description: W tym temacie wyjaśniono sposób konfigurowania reguł powiadomień dla działu obsługi klienta o potencjalnie fałszywych informacjach przy przetwarzaniu zamówień. Można zdefiniować określone kody używane do automatycznego lub ręcznego wstrzymania podejrzanych zamówień.
 author: josaw1
 manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 13b6a18750e79a17c7f6034780922c64b12390e2
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361505"
 ---
-
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Konfigurowanie i praca z alertami o oszustwach w biurze obsługi
 
 [!include [banner](includes/banner.md)]
@@ -69,4 +68,3 @@ Zamówienie zostanie zapisane, ale z flagą **Nie przetwarzaj**. Ta flaga pozwal
 Aby zobaczyć podgląd i zarządzać zamówieniami, które są wstrzymane ze względu na kontrolę pod kątem oszustwa, przejdź do **Sprzedaży detalicznej** \> **Odbiorców** \> **Wstrzymane zamówienia**. Na stronie **Wstrzymania zamówień** wybierz pozycję na liście, a następnie kliknij opcję **Wstrzymanie zamówienia**, aby zobaczyć bardziej szczegółowy widok zawierający m.in. informacje o przyczynie wstrzymania. Na skróconej karcie **Szczegóły oszustwa** można obejrzeć systematyczne kryteria oszustwa, dla których znaleziono pasujące elementy w zamówieniu, oraz zastosowane wyniki. Jeśli zamówienie zostało wstrzymane ręcznie, można przejrzeć wszystkie komentarze wprowadzone przez użytkownika, który nałożył zawieszenie, zaglądając do sekcji **Notatki dotyczące oszustwa** na skróconej karcie **Uwagi**.
 
 Aby uzyskać więcej informacji na temat pracy z funkcją wstrzymywania zamówień, zobacz [Wstrzymania zamówień](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
-

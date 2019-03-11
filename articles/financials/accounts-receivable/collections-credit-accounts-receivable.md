@@ -1,13 +1,13 @@
 ---
 title: Kredyty i windykacja w rozrachunkach z odbiorcami
-description: "Zarządzanie informacjami dotyczącymi windykacji w module Rozrachunki z odbiorcami odbywa się w jednym centralnym widoku przy użyciu strony Windykacja dostępnej w programie Microsoft Dynamics 365 for Finance and Operations. Kierownicy ds. kredytów i windykacji mogą używać tego centralnego widoku do zarządzania windykacją. Agenci ds. windykacji mogą rozpocząć proces windykacji na podstawie list odbiorców, które są generowane przy użyciu wstępnie zdefiniowanych kryteriów windykacji, lub ze strony Windykacja."
+description: Informacje dotyczące windykacji w module Rozrachunki z odbiorcami są zarządzane w jednym centralnym widoku na stronie Windykacje w Microsoft Dynamics 365 for Finance and Operations. Kierownicy ds. kredytów i windykacji mogą używać tego centralnego widoku do zarządzania windykacją. Agenci ds. windykacji mogą rozpocząć proces windykacji na podstawie list odbiorców, które są generowane przy użyciu wstępnie zdefiniowanych kryteriów windykacji, lub ze strony Windykacja.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c36e7a5d28baf149b982a0afd5fdd79fe8a91850
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 23fc1a160cf25255a1677ca0e501c374746b6e34
-ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351684"
 ---
-
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredyty i windykacja w rozrachunkach z odbiorcami
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,7 @@ Dla każdego okresu wiekowania w definicji okresów wiekowania jest tworzony szc
 Pule odbiorców są kwerendami definiującymi grupę rekordów odbiorców, które mogą być wyświetlane i zarządzane dla windykacji lub procesów wiekowania. Używaj pul klientów, aby filtrować informacje na stronach listy Wiekowane salda, Działania związane z windykacją i sprawy związane z windykacją. Pule klientów mogą również służyć do filtrowania kont odbiorców, które są uwzględniane podczas tworzenia migawki wiekowania.
 
 ## <a name="collections-agents"></a>Agenci ds. windykacji
-Domyślnie użytkownicy programu Microsoft Dynamics 365 for Finance and Operations mogą wyświetlać wszystkie informacje o odbiorcy na stronach listy windykacji. Rekordy agenta ds. windykacji służą do określania pul klientów, dostępnych do filtrowania informacji na stronach listy windykacji i na stronie windykacji. 
+Domyślnie użytkownicy Microsoft Dynamics 365 for Finance and Operations mogą wyświetlać wszystkie informacje o odbiorcy na stronach listy windykacji. Rekordy agenta ds. windykacji służą do określania pul klientów, dostępnych do filtrowania informacji na stronach listy windykacji i na stronie windykacji. 
 
 Agent ds. windykacji jest osobą, która współpracuje z odbiorcami w celu upewnienia się, że płatności są inkasowane w terminie. W programie Finance and Operations agentami ds. windykacji są pracownicy przypisani do użytkowników na stronie ustawień użytkownika.
 
@@ -107,7 +106,6 @@ Aby uzyskać więcej informacji, zobacz [Tworzenie arkusza odpisów dla odbiorcy
 --------------------------------------------
 
 Klikając płatności przy niewystarczających funduszach na stronie kolekcje można przetwarzać płatności przy niewystarczających funduszach. Po kliknięciu tego przycisku nastąpi anulowanie płatności. Jeśli do odbiorcy ma być stosowana opłata za niewystarczające fundusze, w arkuszu płatności jest tworzona transakcja opłat. Kwota opłaty jest oparta na ustawieniach dla automatycznych opłat. Automatyczne opłaty, które są stosowane do płatności przy niewystarczających funduszach, są określone przez grupę opłat wybraną na stronie Konta bankowe dla danego konta bankowego.
-
 
 
 

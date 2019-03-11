@@ -1,13 +1,13 @@
 ---
-title: "Katalogi biura obsługi"
-description: "W tym temacie opisano funkcje katalogów specyficzne dla biur obsługi dostępne w programie Microsoft Dynamics 365 for Retail."
+title: Katalogi biura obsługi
+description: W tym artykule opisano funkcje katalogów specyficzne dla biur obsługi dostępne w Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322750"
 ---
-
 # <a name="call-center-catalogs"></a>Katalogi biura obsługi
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano funkcje powiązane z możliwościami katalogów specyficzne dla biur obsługi dostępne w programie Microsoft Dynamics 365 for Retail.
+W tym temacie opisano funkcje powiązane z możliwościami katalogów specyficzne dla biur obsługi dostępne w Microsoft Dynamics 365 for Retail.
 
-Funkcje katalogu w programoe Dynamics 365 for Retail mogą służyć do wielu celów. Początkowo funkcje katalogu utworzono do obsługi integracji z systemami handlu elektronicznego innych producentów. W konfiguracji katalogu firmy mogły tworzyć grupy produktów i atrybutów przeznaczonych do opublikowania na zewnątrz, tak aby mogły być wykorzystywane przez systemy handlu elektronicznego innych producentów.
+Funkcje katalogu w programie Dynamics 365 for Retail mogą służyć do wielu celów. Początkowo funkcje katalogu utworzono do obsługi integracji z systemami handlu elektronicznego innych producentów. W konfiguracji katalogu firmy mogły tworzyć grupy produktów i atrybutów przeznaczonych do opublikowania na zewnątrz, tak aby mogły być wykorzystywane przez systemy handlu elektronicznego innych producentów.
 
 Jeśli do Dynamics 365 for Retail dodano wsparcie biura obsługi, projekt katalogu został rozszerzony w celu dodania dodatkowych możliwości obsługi i zarządzania funkcjami związane z tradycyjnymi katalogami marketingu bezpośredniego. Firma sprzedająca bezpośrednio konsumentom często tworzy drukowane katalogi, które następnie są wysyłane pocztą do klientów z jednego lub więcej segmentów. Te katalogi zazwyczaj będą zawierać specjalne promocje lub oferty, które zostaną zrealizowane, jeśli w czasie tworzenia zamówienia klient przedstawi kod identyfikacyjny katalogu.
 
@@ -102,4 +101,3 @@ Na karcie **Katalogi** znajdują się również sekcje z opcjami konfiguracyjnym
 ## <a name="additional-notes"></a>Dodatkowe notatki
 
 Obecnie gdy identyfikator kodu źródłowego jest stosowany do zamówienia sprzedaży w biurze obsługi, służy do ustalania cen, promocji, skryptów i produktów przeznaczonych do sprzedaży dodatkowej/powiązanej specyficznych dla katalogu. System nie będzie zabraniać ani uniemożliwiać złożenia zamówienia sprzedaży na produkt nieznajdujący się w katalogu. Jeśli zostanie zamówiony towar, który nie jest częścią katalogu, system najpierw użyje **grupy cenowej** zdefiniowanej w kanale biura obsługi (**Handel detaliczny** \> **Kanały** \> **Biura obsługi** \> **Wszystkie biura obsługi**) dla ceny towaru lub promocji. Jeśli nie zostanie znaleziona żadna konkretna cena dla kanału, będzie używana podstawowa cena sprzedaży towaru.
-

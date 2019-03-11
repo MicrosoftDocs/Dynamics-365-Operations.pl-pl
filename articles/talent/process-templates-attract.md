@@ -5,9 +5,9 @@ author: hasrivas
 manager: AnnBe
 ms.date: 10/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Talent
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
 ms.openlocfilehash: 2b9cac68093be65584192757229c20b1a1546342
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "305787"
 ---
-
 # <a name="create-a-process-template-in-attract"></a>Tworzenie szablonu procesu w aplikacji Attract
 
 [!include [banner](includes/banner.md)]
 
-*Szablon procesu rekrutacji* zawiera wszystkie działania, które należy wykonać w procesie rekrutacji na funkcję. W tym temacie opisano elementy szablonu procesu w aplikacji Microsoft Dynamics 365 for Talent Attract. Ponadto wyjaśniono, jak utworzyć szablon.
+*Szablon procesu rekrutacji* zawiera wszystkie działania, które należy wykonać w procesie rekrutacji na funkcję. W tym temacie opisano elementy szablonu procesu w Microsoft Dynamics 365 for Talent: Attract. Ponadto wyjaśniono, jak utworzyć szablon.
 
 > [!NOTE]
 > Tworzenie szablonu to funkcjonalność dostępna w dodatku kompleksowej obsługi rekrutacji dla aplikacji Attract.
@@ -72,4 +71,3 @@ Aby utworzyć szablon procesu rekrutacji, wykonaj poniższe czynności.
     - Aby usunąć działanie, rozwiń je, a następnie kliknij przycisk kosza w nagłówku działania.
 
 8. Wybierz opcję **Zapisz**.
-

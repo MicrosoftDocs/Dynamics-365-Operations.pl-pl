@@ -1,13 +1,13 @@
---- 
-title: "Księgowanie sprzedaży i płatności online"
-description: "Ta procedura zawiera instruktaż konfigurowania i wykonywania cyklicznego zadania wsadowego, aby tworzyć zamówienia sprzedaży i płatności dla transakcji w sklepie internetowym."
+---
+title: Księgowanie sprzedaży i płatności online
+description: Ta procedura zawiera instruktaż konfigurowania i wykonywania cyklicznego zadania wsadowego, aby tworzyć zamówienia sprzedaży i płatności dla transakcji w sklepie internetowym.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailOperatingUnitPicker, SysRecurrence
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 13839bbe6ca03f3cfc7036fce87477bf7d5af2a7
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353501"
 ---
 # <a name="posting-of-online-sales-and-payments"></a>Księgowanie sprzedaży i płatności online
 
@@ -42,5 +42,4 @@ Ta procedura zawiera instruktaż konfigurowania i wykonywania cyklicznego zadani
 8. W polu Liczba wpisz liczbę.
 9. Kliknij przycisk OK.
 10. Kliknij przycisk OK.
-
 

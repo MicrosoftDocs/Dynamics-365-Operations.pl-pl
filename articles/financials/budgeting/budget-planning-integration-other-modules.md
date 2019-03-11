@@ -1,13 +1,13 @@
 ---
-title: "Integracja modułu Planowanie budżetu z innymi modułami"
-description: "Plany budżetu mogą być generowane z kilku różnych zasobów: Podstawowe elementy przetwarzania okresowego są takie same dla wszystkich zasobów."
+title: Integracja modułu Planowanie budżetu z innymi modułami
+description: 'Plany budżetu mogą być generowane z kilku różnych zasobów: Podstawowe elementy przetwarzania okresowego są takie same dla wszystkich zasobów.'
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanGenerate
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 97c33a222d31e690d2a395f972c0ddc4b89e8fdb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4a18190152b6e5ea520a81f1db2cf67ded652bbe
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353041"
 ---
-
 # <a name="budget-planning-integration-with-other-modules"></a>Integracja modułu Planowanie budżetu z innymi modułami
 
 [!include [banner](../includes/banner.md)]
@@ -145,7 +144,6 @@ Wybierz wiersz i kliknij przycisk **Wiersze planu budżetu**, aby uruchomić zap
 Te zapytania można wysyłać za pomocą przycisków **Prognoza podaży** i **Prognoza popytu**. W obu przypadkach zapytanie wyszukuje wierszy prognozy, które mogły utworzyć wiersze budżetu. 
 
 Wśród raportów dodatkowych, które są dostępne, jest raport **Pozycje prognozy według planów budżetu**. Ten raport jest szczególnie przydatny do ustalania, czy alokacja pozycji do planów budżetu jest prawidłowa.
-
 
 
 

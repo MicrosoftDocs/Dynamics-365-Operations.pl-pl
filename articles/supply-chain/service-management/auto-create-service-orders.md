@@ -1,31 +1,30 @@
 ---
-title: "Automatyczne tworzenie zleceń serwisowych"
-description: "Zlecenia serwisowe można generować na podstawie umowy serwisowej w trakcie okresu ważności umowy serwisowej."
+title: Automatyczne tworzenie zleceń serwisowych
+description: Zlecenia serwisowe można generować na podstawie umowy serwisowej w trakcie okresu ważności umowy serwisowej.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0189a9f99ffbb6ed2387211ba9e3b9f3bcdb3b52
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2d942d4448e0f792945603d3f5960fb82095be30
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331191"
 ---
-
 # <a name="automatically-create-service-orders"></a>Automatyczne tworzenie zleceń serwisowych 
 
 [!include [banner](../includes/banner.md)]
@@ -58,6 +57,5 @@ Umowa serwisowa obowiązuje od 1 stycznia 2012 r. do 31 grudnia 2012 r. Jeśli o
 Umowa serwisowa obowiązuje od 1 stycznia 2012 r. do 31 grudnia 2012 r. Do umowy serwisowej są dołączone dwa wiersze umowy serwisowej. Pierwszy wiersz umowy serwisowej ma datę rozpoczęcia 2 stycznia 2012 r., a datę zakończenia 1 marca 2012 r. Drugi wiersz umowy serwisowej ma datę rozpoczęcia 1 kwietnia 2012 r., a datę zakończenia 31 grudnia 2012 r. W formularzu **Utwórz zlecenia serwisowe** określasz okres sięgając od 1 października 2012 r. do 31 grudnia 2012 r. W efekcie zlecenia serwisowe będą generowane tylko dla drugiego wiersza umowy serwisowej, ponieważ daty początkowa i końcowa pierwszego wiersza umowy przypadają przed zdefiniowanym okresem zlecenia serwisowego.
 
   
-
 
 

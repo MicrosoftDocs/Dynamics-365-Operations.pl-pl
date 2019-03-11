@@ -1,13 +1,13 @@
 ---
 title: Wycena wsteczna
-description: "Ten temat zawiera wprowadzenie do koncepcji wyceny wstecznej używanej w produkcji oszczędnej."
+description: Ten temat zawiera wprowadzenie do koncepcji wyceny wstecznej używanej w produkcji oszczędnej.
 author: cvocph
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanCosting, LeanCostingTimeBucket
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 484bac74ccb498f0b006458f5e6d8fb0e9461a8f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9fe717752da4c697cf0d896c0d40832330f0d118
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352719"
 ---
-
 # <a name="backflush-costing"></a>Wycena wsteczna
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ W przypadku produktów dostarczanych z przepływu produkcji obliczanie BOM musi 
 
 ### <a name="calculation-that-is-based-on-the-production-flow"></a>Obliczanie oparte na przepływie produkcji
 
-W programie Microsoft Dynamics 365 for Finance and Operations produkcja oszczędna jest niezależna od marszrut. Obliczanie kosztów dla produktów dostarczanych z przepływu produkcji może być oparte na samym przepływie produkcji. Zanim będzie możliwe obliczanie, należy utworzyć regułę Kanban dostarczającą produkt z przepływu produkcji. Jeśli produkt może być dostarczany z wielu przepływów produkcji w tym samym oddziale w dniu obliczania, można wybrać przepływ produkcji dla obliczania BOM. Na stronie **Domyślny przepływ produkcji** można skonfigurować domyślny przepływ produkcji dla każdego towaru. Jeśli istnieje wiele reguł Kanban dla tego samego produktu w przepływie produkcji aktywnym w dniu obliczania, aparat obliczania wybiera pierwszą regułę Kanban aktywną dla obliczenia.
+Lean manufacturing dla Microsoft Dynamics 365 for Finance and Operations nie zależy od marszrut. Obliczanie kosztów dla produktów dostarczanych z przepływu produkcji może być oparte na samym przepływie produkcji. Zanim będzie możliwe obliczanie, należy utworzyć regułę Kanban dostarczającą produkt z przepływu produkcji. Jeśli produkt może być dostarczany z wielu przepływów produkcji w tym samym oddziale w dniu obliczania, można wybrać przepływ produkcji dla obliczania BOM. Na stronie **Domyślny przepływ produkcji** można skonfigurować domyślny przepływ produkcji dla każdego towaru. Jeśli istnieje wiele reguł Kanban dla tego samego produktu w przepływie produkcji aktywnym w dniu obliczania, aparat obliczania wybiera pierwszą regułę Kanban aktywną dla obliczenia.
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Obliczanie oparte na marszrucie
 
@@ -122,7 +121,6 @@ Należy okresowo uruchamiać wycenę wsteczną, aby wyceniać wartość PWT i ge
     -   Wszystkie koszty pośrednie obliczone dla materiału zużytego w okresie są obliczane i odejmowane od PWT. Pozostały koszt pośredni jest księgowany jako odchylenie.
 
 5.  Obliczenie odchyleń produkcji względem kosztu standardowego. Odchylenie jest obliczane dla każdej grupy kosztów.
-
 
 
 

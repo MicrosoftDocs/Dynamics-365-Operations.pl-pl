@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI"
-description: "W tym temacie wyjaśniono sposób wykorzystania konfiguracji raportowania elektronicznego (ER) do organizowania przesyłania danych z wystąpienia programu Finance and Operations do usług Power BI."
+title: Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI
+description: W tym temacie wyjaśniono sposób wykorzystania konfiguracji raportowania elektronicznego (ER) do organizowania przesyłania danych z wystąpienia programu Finance and Operations do usług Power BI.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e2d3c03a75fd03dfd3a96a181eff20f934546ec4
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335791"
 ---
-
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ W tym temacie wyjaśniono sposób wykorzystania konfiguracji raportowania elektr
 
 ## <a name="overview"></a>Przegląd
 
-Microsoft Power BI to zbiór usług oprogramowania, aplikacji i łączników, które wspólnie wydobywają z zewnętrznych źródeł danych spójne, realistyczne wizualnie i interaktywne wnioski. Moduł Raportowanie elektroniczne (ER) pozwala użytkownikom programu Microsoft Dynamics 365 for Finance and Operations łatwo konfigurować źródła danych i organizować przesyłanie danych z programu Finance and Operations do programu Power BI. Dane są przesyłane jako pliki w formacie arkusza OpenXML (plik skoroszytu programu Microsoft Excel). Przesłane pliki są przechowywane na serwerze programu Microsoft SharePoint, który został skonfigurowany do tego celu. Przechowywane pliki są używane w programie Power BI do tworzenia raportów zawierających wizualizacje (tabele, wykresy, mapy i tak dalej). Raporty programu Power BI są udostępniane użytkownikom programu Power BI i można je otwierać w pulpitach nawigacyjnych programu Power BI i na stronach programu Finance and Operations. W tym temacie wyjaśniono następujące zadania:
+Microsoft Power BI to zbiór usług oprogramowania, aplikacji i łączników, które wspólnie wydobywają z zewnętrznych źródeł danych spójne, realistyczne wizualnie i interaktywne wnioski. Raportowanie elektroniczne (ER) pozwala użytkownikom Microsoft Dynamics 365 for Finance and Operations łatwo konfigurować źródła danych i zaplanować transfer danych z rozwiązania Finance and Operations do Power BI. Dane są przesyłane jako pliki w formacie arkusza OpenXML (plik skoroszytu programu Microsoft Excel). Przesłane pliki są przechowywane na serwerze programu Microsoft SharePoint, który został skonfigurowany do tego celu. Przechowywane pliki są używane w programie Power BI do tworzenia raportów zawierających wizualizacje (tabele, wykresy, mapy i tak dalej). Raporty programu Power BI są udostępniane użytkownikom programu Power BI i można je otwierać w pulpitach nawigacyjnych programu Power BI i na stronach programu Finance and Operations. W tym temacie wyjaśniono następujące zadania:
 
 - Konfigurowanie programu Finance and Operations.
 - Przygotowywanie konfiguracji formatu ER do pobierania danych z programu Finance and Operations.
@@ -51,7 +50,7 @@ Aby wykonać przykład opisany w tym temacie, musisz mieć następujące uprawni
     - Administrator systemu
 
 - Dostęp do serwera programu SharePoint, który jest skonfigurowany do współpracy z programem Finance and Operations.
-- Dostęp do środowiska programu Power BI.
+- Dostęp do struktury Power BI
 
 ## <a name="configure-document-management-parameters"></a>Konfigurowanie parametrów zarządzania dokumentami
 1. Na stronie **Parametry zarządzania dokumentami** skonfiguruj dostęp do serwera programu SharePoint, który będzie używany w firmie, do której się logujesz (w tym przykładzie jest to firma DEMF).
@@ -59,7 +58,7 @@ Aby wykonać przykład opisany w tym temacie, musisz mieć następujące uprawni
 
     [![Strona Parametry zarządzania dokumentami](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
 
-3. Otwórz skonfigurowaną witrynę programu SharePoint. Utwórz nowy folder, gdzie moduł ER będzie przechowywał pliki programu Excel zawierające dane biznesowe, których raporty programu Power BI wymagają jako źródła zestawów danych.
+3. Otwórz skonfigurowaną witrynę programu SharePoint. Utwórz nowy folder, gdzie moduł ER będzie przechowywał pliki programu Excel zawierające dane biznesowe, których raporty programu Power BI wymagają jako źródła zestawów danych Power BI.
 4. W programie Finance and Operations na stronie **Typy dokumentów** utwórz nowy typ dokumentu, który będzie używany w celu uzyskiwania dostępu do nowo utworzonego folderu programu SharePoint. Wpisz **Plik** w polu **Grupa** i **SharePoint** w polu **Lokalizacja**, a następnie wprowadź adres folderu programu SharePoint.
 
     [![Strona Typy dokumentów](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
@@ -198,4 +197,3 @@ Skonfiguruj integrację między programami Finance and Operations i Power BI. Ab
 [Aplikacje docelowe Raportowania elektronicznego](electronic-reporting-destinations.md)
 
 [Omówienie raportowania elektronicznego](general-electronic-reporting.md)
-

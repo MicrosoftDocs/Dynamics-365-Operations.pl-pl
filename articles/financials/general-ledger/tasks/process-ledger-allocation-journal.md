@@ -1,13 +1,13 @@
---- 
-title: "Przetwarzanie arkusza alokacji księgi"
-description: "Na stronie Przetwarzanie żądania alokacji można utworzyć arkusz alokacji, który może być przeglądany i zatwierdzany przed księgowaniem w księdze głównej lub bezpośrednio księgowany w księdze głównej."
+---
+title: Przetwarzanie arkusza alokacji księgi
+description: Na stronie Przetwarzanie żądania alokacji można utworzyć arkusz alokacji, który może być przeglądany i zatwierdzany przed księgowaniem w księdze głównej lub bezpośrednio księgowany w księdze głównej.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransAllocation
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d2046e25719c9023bee99736488a4ee6f22723fe
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7d299657758b1e1322aef07bfe8c71f7bf00b0ca
-ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335653"
 ---
 # <a name="process-ledger-allocation-journal"></a>Przetwarzanie arkusza alokacji księgi
 
@@ -43,5 +43,4 @@ Na stronie Przetwarzanie żądania alokacji można utworzyć arkusz alokacji, kt
 10. Kliknij przycisk Wiersze.
 11. Kliknij przycisk Księguj.
 12. Kliknij przycisk Księguj.
-
 

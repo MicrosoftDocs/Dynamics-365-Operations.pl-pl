@@ -1,13 +1,13 @@
 ---
-title: "Raportowanie listy sprzedaży do UE"
-description: "Ten artykuł zawiera informacje o raportowaniu listy sprzedaży do państw Unii Europejskiej (UE)."
+title: Raportowanie listy sprzedaży do UE
+description: Ten artykuł zawiera informacje o raportowaniu listy sprzedaży do państw Unii Europejskiej (UE).
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e2c4fe1c93693cee9164f2c22ad71a29abd6473d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e1eff86902170401e593019ea555d9c2a4c11c04
-ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371518"
 ---
-
 # <a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
 
 [!include [banner](../includes/banner.md)]
@@ -158,7 +157,6 @@ Można wygenerować raport **Lista sprzedaży do UE** za pomocą funkcji **Rapor
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>Zamykanie okresu raportowania ESL
 
 Po zakończeniu procesu generowania raportów w danym okresie (na przykład, kiedy urząd skarbowy zaakceptował raport **Lista sprzedaży do UE**), można oznaczyć rekordy ESL znajdujące się w raporcie dla danego okresu, ustawiając **Stan raportowania** na **Zamknięty**. Aby ustawić ten stan, użyj funkcji **Zaznacz jako zamknięty** na stronie **Lista sprzedaży do UE**. W przypadku cofnięcia zamknięcia okresu można oznaczyć rekordy ESL, ustawiając **Stan raportowania** na **Uwzględniony**. Następnie można ponownie umieszczać te rekordy w raporcie **Lista sprzedaży do UE**. Aby ustawić ten stan, użyj funkcji **Zaznacz jako** **zgłoszony** na stronie **Lista sprzedaży do UE**.
-
 
 
 

@@ -1,31 +1,30 @@
 ---
-title: "Zarządzanie naprawami"
-description: "Warto systematycznie grupować problemy, tak aby ułatwić podpowiadanie rozwiązań, które wcześniej okazały się trafne."
+title: Zarządzanie naprawami
+description: Warto systematycznie grupować problemy, tak aby ułatwić podpowiadanie rozwiązań, które wcześniej okazały się trafne.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAConditionTable, SMASymptomArea, SMADiagnosisArea, SMAResolutionTable, SMARepairStage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 32202344f77352cd3f9c1a807d14192a9bf0d9e6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 937571968c6956ce3dba1427082b298983540f59
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349292"
 ---
-
 # <a name="repair-management"></a>Zarządzanie naprawami       
 
 [!include [banner](../includes/banner.md)]
@@ -112,6 +111,5 @@ Po rozwiązaniu problemu można zamknąć wiersz naprawy. Ustaw etap naprawy z w
 3.  W polu **Etap naprawy** wybierz etap z włączoną właściwością **Zakończono**.
 
   
-
 
 

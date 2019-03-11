@@ -1,13 +1,13 @@
 ---
-title: "Średnia ważona z datą"
-description: "Średnia ważona z datą jest modelem magazynu opartym na zasadzie średniej ważonej, w którym towary magazynowe są szacowane na podstawie średniej wartości towarów przyjętych na magazyn dla każdego dnia osobno w okresie zamknięcia magazynu."
+title: Średnia ważona z datą
+description: Średnia ważona z datą jest modelem magazynu opartym na zasadzie średniej ważonej, w którym towary magazynowe są szacowane na podstawie średniej wartości towarów przyjętych na magazyn dla każdego dnia osobno w okresie zamknięcia magazynu.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9963c17d8ac1854a42cac2a0e19615f13e8cc006
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
-ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355410"
 ---
-
 # <a name="weighted-average-date"></a>Średnia ważona z datą
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ Jeśli do tego dnia miało miejsce tylko jedno przyjęcie, nie trzeba obliczać 
 
 Średnia ważona na dzień na potrzeby wyceny zapasów jest obliczana w następujący sposób: 
 
-Średnia ważona = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
+Średnia ważona = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
 
 Podczas zamknięcia zapasów obliczenia są wykonywane na każdy dzień okresu zamknięcia, zgodnie z poniższą ilustracją. 
 
@@ -54,7 +53,7 @@ Transakcje magazynowe powodujące wydania z zapasów, takie jak transakcje wynik
 
 Rozliczenia to księgowania dotyczące zamknięcia magazynu, które dostosowują wartość rozchodów do właściwej średniej ważonej na dzień zamknięcia. 
 
-**Uwaga:** Aby uzyskać więcej informacji o rozliczeniach, zobacz artykuł o zamknięciu zapasów. Poniższe przykłady ilustrują skutek zastosowania metody średniej ważonej w pięciu konfiguracjach:
+**Uwaga:** Aby uzyskać więcej informacji o rozliczeniach, zobacz artykuł o zamknięciu zapasów. Poniższe przykłady ilustrują skutek zastosowania metody średniej ważonej w pięciu konfiguracjach:
 
 -   Rozliczenie bezpośrednie z zastosowaniem średniej ważonej na dzień bez opcji **Włącz wartość fizyczną**
 -   Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień bez opcji **Włącz wartość fizyczną**
@@ -195,7 +194,6 @@ Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z 
 -   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
 -   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
 -   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci czerwonych linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
-
 
 
 

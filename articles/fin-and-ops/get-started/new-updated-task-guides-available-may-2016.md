@@ -1,13 +1,13 @@
 ---
 title: Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)
-description: "Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy."
+description: Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cf12f2dfb62645fc5d6886ef429441c48982d484
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341357"
 ---
-
 # <a name="new-or-updated-task-guides-may-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadania
 
 ## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX
 
-Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji systemu Microsoft Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach zamieszczone w ujednoliconej bibliotece APQC z lutego 2016 r. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).
+Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, które przewidziano jako pomoc dla systemu Microsoft Dynamics AX z aktualizacją z maja 2016 r. i wersji systemu Microsoft Dynamics AX z lutego 2016 r. W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach zamieszczone w ujednoliconej bibliotece APQC z lutego 2016 r. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).
 
 > [!NOTE]
 > Znak gwiazdki (\*) obok tytułu wiersza narzędzia do modelowania procesów biznesowych (BPM) wskazuje, że przewodnik po zadaniach dla tego procesu biznesowego został utworzony dla aktualizacji systemu Dynamics AX z maja 2016 r. i nie jest obsługiwany we wcześniejszych wersjach systemu Microsoft Dynamics AX.
@@ -42,7 +41,7 @@ Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, 
 
 | Wiersz BPM                                                                 | Kraj/region                    |
 |--------------------------------------------------------------------------|-----------------------------------|
-| Konfigurowanie fakturowania elektronicznego OIOXML                                       | Dania                           |
+| Konfigurowanie fakturowania elektronicznego OIOUBL                                       | Dania                           |
 | EUR-00002 Generowanie unijnej deklaracji Intrastat                           | Europa                            |
 | EUR-00002 Przesyłanie transakcji do systemu Intrastat                         | Europa                            |
 | FR-00004 Aktualizacja metody płatności dla odbiorcy                            | Europa                            |
@@ -195,4 +194,3 @@ Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, 
 [Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)](new-updated-task-guides-available-august-2016.md)
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
-

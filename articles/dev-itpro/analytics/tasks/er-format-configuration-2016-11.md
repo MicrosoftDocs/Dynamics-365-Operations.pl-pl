@@ -1,13 +1,13 @@
---- 
+---
 title: ER Tworzenie konfiguracji formatu (listopad 2016)
-description: "W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć konfiguracji formatu dla raportowania elektronicznego (ER)."
+description: W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć konfiguracji formatu dla raportowania elektronicznego (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
+ms.sourcegitcommit: 29e19b6d91e5761178627ef2051f3385f5d7cfe5
 ms.translationtype: HT
-ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
-ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377556"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER Tworzenie konfiguracji formatu (listopad 2016)
 
@@ -35,8 +35,10 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu 
 2. Kliknij opcję **Konfiguracje raportowania**.
 3. W drzewie zaznacz element **Płatności (model uproszczony)**.
 4. Kliknij przycisk **Utwórz konfigurację**, aby otworzyć rozwijane okno dialogowe.
+
  > [!NOTE]
  > Jeśli nie widać przycisku **Utwórz konfigurację**, należy włączyć tryb projektowania na stronie **Parametry raportowania elektronicznego**. 
+ 
 5. W polu **Nowy** wpisz **Format oparty na modelu danych PaymentModel**.
 6. W polu **Nazwa** wpisz **BACS (fikcyjny brytyjski)**.
 7. W polu **Opis** wpisz **Format płatności dla dostawcy BACS (fikcyjny brytyjski)**.
@@ -44,9 +46,6 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu 
     * Można zdefiniować określony format dokumentu elektronicznego. Pozostaw to pole puste, aby wybrać format w czasie wykonywania.  
 8. W polu **Definicja modelu danych** wprowadź lub wybierz wartość.
 9. Kliknij przycisk **Utwórz konfigurację**. Utworzono nową konfigurację. Wersja robocza może służyć do przechowywania formatu projektu w celu zarządzania dokumentami elektronicznymi.  
- > [!NOTE]
- > Jeśli nie widać przycisku **Utwórz konfigurację**, należy włączyć tryb projektowania na stronie **Parametry raportowania elektronicznego**.
-
 
 ## <a name="design-the-format-of-an-electronic-document"></a>Zaprojektuj format dokumentu elektronicznego.
 1. Kliknij przycisk **Konstruktor**.
@@ -159,5 +158,4 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu 
 41. Kliknij przycisk **OK**.
 42. Kliknij przycisk **Zapisz**.
 43. Zamknij stronę.
-
 

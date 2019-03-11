@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie procesów zatwierdzania w przepływie pracy"
-description: "Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości procesu zatwierdzania."
+title: Konfigurowanie procesów zatwierdzania w przepływie pracy
+description: Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości procesu zatwierdzania.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 08641eaac31813a8bee3231118f8e2bf802ea3e1
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325648"
 ---
-
 # <a name="configure-approval-processes-in-a-workflow"></a>Konfigurowanie procesów zatwierdzania w przepływie pracy
 
 [!include [banner](../includes/banner.md)]
@@ -124,11 +123,11 @@ Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku zatwierd
     </tr>
     <tr>
     <td><strong>Użytkownik</strong></td>
-    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Finance and Operations</td>
+    <td>Określeni użytkownicy Microsoft Dynamics 365 for Finance and Operations</td>
     <td>
     <ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Microsoft Dynamics 365 for Finance and Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy</strong> zawiera wszystkich użytkowników Microsoft Dynamics 365 for Finance and Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol>
     </td>
     </tr>
@@ -184,4 +183,3 @@ Proces zatwierdzania składa się z kroków zatwierdzania. Należy wykonać poni
 1. W edytorze przepływu pracy kliknij dwukrotnie procesu zatwierdzania. Edytor przepływu pracy wyświetli etapy procesu zatwierdzania.
 2. Aby dodać krok zatwierdzania, przeciągnij go z obszaru **Elementy przepływu pracy** na kanwę.
 3. Aby skonfigurować krok zatwierdzania, zobacz [Konfigurowanie kroku zatwierdzania](configure-approval-step-workflow.md).
-

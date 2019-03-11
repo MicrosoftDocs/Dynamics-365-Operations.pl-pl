@@ -1,13 +1,13 @@
 ---
-title: "Konfigurowanie i projektowanie formatów paragonów"
-description: "W tym artykule opisano modyfikowanie układów formularzy w celu sterowania sposobem drukowania paragonów, faktur i innych dokumentów. Moduł Microsoft Dynamics 365 for Retail zawiera projektanta układów, który pozwala łatwo tworzyć i modyfikować różne układy formularzy."
+title: Konfigurowanie i projektowanie formatów paragonów
+description: W tym artykule opisano modyfikowanie układów formularzy w celu sterowania sposobem drukowania paragonów, faktur i innych dokumentów. Moduł Microsoft Dynamics 365 for Retail zawiera projektanta układów, który pozwala łatwo tworzyć i modyfikować różne układy formularzy.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.contentlocale: pl-pl
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357825"
 ---
-
 # <a name="set-up-and-design-receipt-formats"></a>Konfigurowanie i projektowanie formatów paragonów
 
 [!include [banner](includes/banner.md)]
@@ -83,4 +82,3 @@ Profile paragonów są przypisywane bezpośrednio do drukarki za pomocą profilu
 
 > [!NOTE]
 > Jeśli używane są dwie drukarki, jedna drukarka może służyć do standardowych 40-kolumnowych paragonów. Druga drukarka jest zwykle używana do drukowania paragonów pełnostronicowych, które muszą zawierać więcej informacji. Paragony te uwzględniają paragony do zamówienia sprzedaży odbiorcy i faktury odbiorcy.
-

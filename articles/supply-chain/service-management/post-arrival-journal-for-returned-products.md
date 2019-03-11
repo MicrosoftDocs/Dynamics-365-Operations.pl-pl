@@ -1,32 +1,30 @@
 ---
-title: "Księgowanie arkusza przyjęcia dla zwrotu produktów"
-description: "Można zaksięgować arkusz przywozu zwróconych produktów."
+title: Księgowanie arkusza przyjęcia dla zwrotu produktów
+description: Można zaksięgować arkusz przywozu zwróconych produktów.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSArrivalOverview
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 75f37ce016acb4b479a9cf4dff205562ce00f02c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: cbe60846f0a16b5061349d9960c49bb5310bd6f9
-ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343588"
 ---
-
-
 # <a name="post-arrival-journal-for-returned-products"></a>Księgowanie arkusza przyjęcia dla zwrotu produktów 
 
 [!include [banner](../includes/banner.md)]
@@ -58,6 +56,5 @@ Po zaksięgowaniu arkusza zwrócone towary są rejestrowane w zapasach, a formul
 [Arkusz lokalizacji (formularz)](https://technet.microsoft.com/en-us/library/aa584822\(v=ax.60\))
 
   
-
 
 

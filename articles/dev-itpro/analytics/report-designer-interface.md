@@ -1,13 +1,13 @@
 ---
-title: "Interfejs Projektanta raportów"
-description: "Ten artykuł wyjaśnia, jak się poruszać w Projektancie raportów i jak używać różnych opcji do własnych potrzeb."
+title: Interfejs Projektanta raportów
+description: Ten artykuł wyjaśnia, jak się poruszać w Projektancie raportów i jak używać różnych opcji do własnych potrzeb.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e9b77e2b510a72d1e3fe3c68c997d58245a86a27
-ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368037"
 ---
-
 # <a name="report-designer-interface"></a>Interfejs Projektanta raportów
 
 [!include [banner](../includes/banner.md)]
@@ -139,7 +138,7 @@ Menu **Narzędzia** jest dostępne dla wszystkich użytkowników, ale niektóre 
 |-------------------------------|-------------|
 | Ochrona                       | Umożliwia zabezpieczenie bieżącego bloku konstrukcyjnego hasłem. To polecenie jest dostępne dla użytkowników, którzy mają rolę **Projektant** lub **Administrator**. |
 | Stan kolejki raportów           | Pozwala otworzyć okno dialogowe **Stan kolejki raportów** okno dialogowe, w którym widoczne są wszystkie niedawno generowane raporty i szczegółów dla każdego raportu. |
-| Informacje źródłowe o systemie     | Umożliwia wyświetlenie ustawień dla systemu Microsoft Dynamics ERP. To polecenie jest dostępne dla użytkowników, którzy mają rolę **Projektant** lub **Administrator**. |
+| Informacje o systemie źródłowym     | Umożliwia wyświetlenie ustawień dla systemu Microsoft Dynamics ERP. To polecenie jest dostępne dla użytkowników, którzy mają rolę **Projektant** lub **Administrator**. |
 | Elementy wyewidencjonowane             | Umożliwia wyświetlenie definicji wierszy, definicji kolumn, definicje drzew raportowania i definicje raportów, które są aktualnie otwarte. To polecenie jest dostępne dla użytkowników, którzy mają rolę **Projektant** lub **Administrator**. |
 | Odśwież dane finansowe w pamięci podręcznej | Pozwala zaktualizować dane w kolumnie wymiary finansowe. |
 | Opcje                       | Otwórz okno dialogowe **Opcje**, w którym można zmodyfikować preferencje użytkownika dla Projektanta raportów. |
@@ -229,4 +228,3 @@ Pasek narzędzi projektanta raportów oferuje szybki dostęp do poleceń nawigow
 [Raporty finansowe](financial-reporting-intro.md)
 
 [Generowanie raportu finansowego](generate-financial-report.md)
-

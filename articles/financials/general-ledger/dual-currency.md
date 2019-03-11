@@ -1,30 +1,29 @@
 ---
-title: "Dwuwalutowość"
-description: "Ten temat zawiera informacje o dwuwalutowości, gdzie waluta raportowania służy jako druga waluta rozliczeniowa w programie Microsoft Dynamics 365 for Finance and Operations."
+title: Dwuwalutowość
+description: Ten temat zawiera informacje o dwuwalutowości, gdzie waluta raportowania służy jako druga waluta rozliczeniowa w programie Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.contentlocale: pl-pl
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330317"
 ---
-
-# <a name="dual-currency"></a>Dwuwalutowość
+# <a name="dual-currency"></a>Dwie waluty
 
 [!include [banner](../includes/banner.md)]
 
@@ -184,4 +183,3 @@ Ponadto wprowadzono znaczne zmiany w procesie amortyzacji. Te zmiany wymagają d
     - Jeśli typ transakcji amortyzacji wprowadzono w arkuszu środków trwałych, w nowych kolumnach będą wyświetlane kwoty w walucie raportowania. Kwoty te mogą być zmieniane.
     - Jeśli waluta rozliczeniowa i waluty raportowania w księdze są takie same, kwoty będą zsynchronizowane. W przypadku zmiany kwoty w kolumnie **Strona kredytowa** kwota w kolumnie **Uznania w walucie raportowania** automatycznie się odpowiednio zmieni.
     - Jeśli w arkuszu środków trwałych zostanie wprowadzony jakikolwiek inny typ transakcji, kwoty w kolumnach **Obciążenia w walucie raportowania** i **Uznania w walucie raportowania** nigdy nie są wyświetlane — ani przed zaksięgowaniem, ani po. Kwoty w walutach rozliczeniowej i raportowania są nadal dostępne w załączniku, z którego informacje są księgowane do księgi głównej.
-
