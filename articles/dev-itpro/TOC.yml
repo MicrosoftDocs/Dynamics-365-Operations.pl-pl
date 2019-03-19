@@ -46,6 +46,10 @@ items:
       href: dev-tools/development-tools-overview.md
     - name: Narzędzia programistyczne — samouczek
       href: dev-tools/introduction-visual-studio.md
+    - name: AppChecker
+      items:
+      - name: Instalowanie BaseX dla AppChecker
+        href: dev-tools/install-basex.md
     - name: Eksplorator aplikacji
       href: dev-tools/application-explorer.md
     - name: Kompilowanie i debugowanie projektów
@@ -264,6 +268,8 @@ items:
         href: extensibility/extensibility-changes-812.md
       - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1.3
         href: extensibility/extensibility-changes-813.md
+      - name: Zmiany w zakresie możliwości rozszerzania — wersja 10.0
+        href: extensibility/extensibility-changes-10.md
     - name: Informacje podstawowe
       items:
       - name: Narzucane dostosowania
@@ -887,6 +893,7 @@ items:
   - name: Wdrażanie środowisk demonstracyjnych
     href: deployment/deploy-demo-environment.md
   - name: Wdrożenie w chmurze
+    href: deployment/cloud-deployment-overview.md
     items:
     - name: Wdrożenie samoobsługowe
       href: deployment/infrastructure-stack.md
@@ -969,7 +976,7 @@ items:
   - name: Uaktualnianie z systemu AX 2012 do rozwiązania Finance and Operations
     href: migration-upgrade/upgrade-overview-2012.md
     items:
-    - name: Uaktualnianie systemu AX2012 — planowanie przy użyciu narzędzia Analizator możliwości uaktualnienia
+    - name: Uaktualnianie systemu AX 2012 — planowanie przy użyciu narzędzia Analizator możliwości uaktualnienia
       href: migration-upgrade/upgrade-analyzer-tool.md
     - name: Uaktualnianie systemu AX 2012 — szacowanie nakładu pracy za pomocą usługi uaktualniania kodu
       href: migration-upgrade/analyze-code-upgrade.md
@@ -1051,7 +1058,7 @@ items:
       href: dev-tools/update-development-tools.md
     - name: Planowanie i przygotowywanie kompilowania kodu z użyciem najnowszej aktualizacji
       href: migration-upgrade/compile-considerations.md
-  - name: Uaktualnianie do najnowszej aktualizacji (lokalne)
+  - name: Uaktualnianie do najnowszej aktualizacji (on-premises)
     items:
     - name: Stosowanie aktualizacji do wdrożeń lokalnych
       href: deployment/apply-updates-on-premises.md
@@ -1073,10 +1080,12 @@ items:
       href: dev-tools/update-development-tools.md
   - name: Przestarzałe elementy
     items:
-    - name: Przestarzałe interfejsy API
-      href: migration-upgrade/deprecated-apis.md
-    - name: Przestarzałe funkcje
+    - name: Usunięte lub wycofane funkcje
       href: migration-upgrade/deprecated-features.md
+    - name: Zakończenie obsługi metod i elementów metadanych
+      href: migration-upgrade/deprecation-deletion-apis.md
+    - name: Przestarzałe interfejsy API (czerwiec 2017)
+      href: migration-upgrade/deprecated-apis.md
 - name: Administrowanie systemem
   href: sysadmin/system-administration-home-page.md
   items:
@@ -1122,6 +1131,8 @@ items:
       href: sysadmin/activeperiod.md
     - name: Rola zabezpieczeń Menedżer partii
       href: sysadmin/runby.md
+    - name: Zadanie wsadowe do obsługi defragmentacji indeksu SQL
+      href: sysadmin/batch-job-SQL-defragmentation.md
   - name: Doradca optymalizacji
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1200,18 +1211,30 @@ items:
       href: lifecycle-services/use-translation-service-ua.md
     - name: Pliki pamięci tłumaczeniowych
       href: lifecycle-services/use-translation-service-tm.md
-- name: Zarządzania bazami danych
+- name: Operacje przenoszenia bazy danych
   items:
-  - name: Kopiowanie baz danych z usługi Azure SQL Database do środowisk programu SQL Server
-    href: database/copy-database-from-azure-sql-to-sql-server.md
-  - name: Kopiowanie baz danych z programu SQL Server do środowisk produkcyjnych usługi Azure SQL Database
-    href: database/copy-database-from-sql-server-to-azure-sql.md
-  - name: Przywracanie baz danych w środowiskach nieprodukcyjnych
-    href: database/request-point-in-time-restore.md
-  - name: Eksportowanie kopii baz danych w celu późniejszego przywrócenia
-    href: database/copy-operations-database.md
-  - name: Żądania odświeżenia bazy danych w środowisku piaskownicy
-    href: database/database-refresh.md
+  - name: Przegląd
+    href: database/dbmovement-operations.md
+  - name: Przewodniki Szybki start
+    items:
+    - name: Odśwież bazę danych
+      href: database/database-refresh.md
+    - name: Eksportuj bazę danych
+      href: database/export-database.md
+    - name: Importuj bazę danych
+      href: database/import-database.md
+    - name: Przywracanie bazy danych do punktu w czasie
+      href: database/database-point-in-time-restore.md
+  - name: Samouczki
+    items:
+    - name: Odśwież w celach szkoleniowych
+      href: database/dbmovement-scenario-general-refresh.md
+    - name: Debugowanie i diagnostyka
+      href: database/dbmovement-scenario-debugdiag.md
+    - name: Promowanie złotej konfiguracji
+      href: database/dbmovement-scenario-goldenconfig.md
+    - name: Testy destrukcyjne
+      href: database/dbmovement-scenario-destructivetests.md
 - name: Pomoc techniczna
   items:
   - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations i usługi Lifecycle Services
@@ -1228,9 +1251,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: Zarządzanie środowiskiem pomocy technicznej rozwiązania Finance and Operations
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: 9baabd73eb9a6e0c33b41bc30a1ba0788a858ce9
-ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
+ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
+ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "373330"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "773809"

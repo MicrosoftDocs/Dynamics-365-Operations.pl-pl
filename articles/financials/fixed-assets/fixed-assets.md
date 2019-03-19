@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78c70ade5a1ca9794760e72fb94e0735848aae79
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a925d16239ec78b09403a0c0db1346e35b7eee20
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302731"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403269"
 ---
 # <a name="fixed-assets-home-page"></a>Środki trwałe — strona główna
 
@@ -41,13 +41,11 @@ Po skonfigurowaniu i wprowadzeniu informacji o nabyciu środków trwałych może
 
 #### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
 
-Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadmap.dynamics.com/), aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane. 
+Przejdź do [Informacji o wersji Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158), aby zobaczyć, jakie nowe funkcje zostały zaplanowane. 
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje dotyczące modułu Środki trwałe możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Wiele wpisów dotyczących modułu Środki trwałe jest dostępnych w blogu zespołu produktu [Microsoft DynamicsAX](https://blogs.msdn.microsoft.com/dax/) Mimo że część z tych wpisów została napisana dla poprzedniej wersji modułu Rozrachunki z dostawcami, to w obecnej wersji są również używane te same pojęcia i podobne procedury.
+Opinie, wiadomości i inne informacje możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)oraz blogu rozwiązania Financials usługi [Microsoft Dynamics 365 Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 

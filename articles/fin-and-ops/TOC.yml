@@ -35,13 +35,7 @@ items:
     - name: Nowości i zmiany
       href: get-started/whats-new-changed.md
       items:
-      - name: Aktualizacje do jednej wersji usługi — często zadawane pytania
-        href: get-started/one-version.md
-      - name: Zasady dotyczące cyklu życia oprogramowania i wydania w chmurze
-        href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
-      - name: Zasady dotyczące cyklu życia oprogramowania i wydania wersji lokalnych
-        href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
-      - name: Zakończenie wsparcia podstawowego dla Microsoft DynamicsAX 2009 i 2012
+      - name: Zakończenie wsparcia podstawowego dla Microsoft Dynamics AX 2009 i 2012
         href: get-started/mainstream-support-ax-2009-2012.md
       - name: Usunięte lub wycofane funkcje
         href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
@@ -49,10 +43,14 @@ items:
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Funkcje niezaimplementowane we wdrożeniach lokalnych
         href: get-started/features-not-implemented-on-prem.md
+      - name: Funkcje podglądu w rozwiązaniu Finance and Operations w wersji 10.0.1 (kwiecień 2019)
+        href: get-started/whats-new-changed-10-0-1.md
       - name: Finance and Operations w wersji 10.0 (kwiecień 2019)
         href: get-started/whats-new-changed-10.md
       - name: Finance and Operations w wersji 8.1.3 (styczeń 2019)
         href: get-started/whats-new-changed-8-1-3.md
+      - name: Funkcje podglądu w aktualizacji Platform update 25 rozwiązania Finance and Operations (kwiecień 2019)
+        href: get-started/whats-new-platform-25.md
       - name: Aktualizacja Platform update 24 (marzec 2019)
         href: get-started/whats-new-platform-update-24.md
       - name: Aktualizacja Platform update 23 (styczeń 2019)
@@ -202,6 +200,29 @@ items:
       href: get-started/move-lcs-implementation-project-tenant.md
     - name: Wielu projektów usługi LCS i środowisk produkcyjnych w tej samej dzierżawie usługi Azure AD
       href: get-started/implement-multiple-projects-aad-tenant.md
+  - name: Aktualizacje do jednej wersji usługi
+    href: ../dev-itpro/lifecycle-services/oneversion-overview.md
+    items:
+    - name: Aktualizacje do jednej wersji usługi — często zadawane pytania
+      href: get-started/one-version.md
+    - name: 'Zasady dotyczące cyklu życia oprogramowania: wersje chmurowe'
+      href: ../dev-itpro/migration-upgrade/versions-update-policy.md
+    - name: 'Zasady dotyczące cyklu życia oprogramowania: wersje lokalne'
+      href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
+    - name: Standardowe i dostępne w programie Pierwsze wydanie aktualizacje usługi
+      href: get-started/public-preview-releases.md
+    - name: Stosowanie aktualizacji do środowisk w chmurze
+      href: ../dev-itpro/deployment/apply-deployable-package-system.md
+    - name: Konfiguruj aktualizacje usługi
+      href: ../dev-itpro/lifecycle-services/configure-service-updates.md
+    - name: Wstrzymaj aktualizacje usługi
+      href: ../dev-itpro/lifecycle-services/pause-service-updates.md
+    - name: Odbieraj powiadomienia o aktualizacjach usług
+      href: ../dev-itpro/lifecycle-services/notifications-service-updates.md
+    - name: Automatyzacja zadań danych
+      href: ../dev-itpro/data-entities/data-task-automation.md
+    - name: Regression Suite Automation Tool
+      href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
   - name: Zdarzenia biznesowe
     href: ../dev-itpro/business-events/home-page.md
     items:
@@ -401,7 +422,7 @@ items:
             href: ../supply-chain/sales-marketing/synchronize-project-list.md
           - name: Synchronizowanie magazynów z rozwiązania Finance and Operations do rozwiązania Field Service
             href: ../supply-chain/sales-marketing/synchronize-warehouse.md
-          - name: Synchronizowanie zleceń z rozwiązania Finance and Operations do rozwiązania Field Service
+          - name: Synchronizowanie zleceń z projektem z rozwiązania Field Service do Finance and Operations
             href: ../supply-chain/sales-marketing/synchronize-work-orders.md
         - name: Konfigurowanie integracji z rozwiązaniem Project Service Automation
           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
@@ -1416,6 +1437,8 @@ items:
           href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
         - name: Konfigurowanie parametrów dokumentu NF-e na potrzeby domicylu podatkowego
           href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+      - name: SPED ECD
+        href: ../financials/localizations/latam-bra-sped-ecd.md
       - name: Sprawozdanie podatkowe SPED-Reinf
         href: ../financials/localizations/latam-bra-sped-reinf.md
       - name: Parametry dla firm
@@ -2236,6 +2259,8 @@ items:
           href: ../financials/localizations/rus-sales-books-purchase-books.md
       - name: Środki trwałe
         items:
+        - name: Konfigurowanie środków trwałych
+          href: ../financials/localizations/rus-set-up-fixed-assets.md
         - name: Nabywanie środków trwałych i włączanie ich do działalności operacyjnej
           href: ../financials/localizations/rus-fixed-asset-acquisition.md
         - name: Rejestrowanie operacji nabycia środków trwałych
@@ -2266,6 +2291,18 @@ items:
           href: ../financials/localizations/rus-bonus-depreciation.md
         - name: Obliczanie amortyzacji
           href: ../financials/localizations/rus-depreciation-calculation.md
+      - name: Rozrachunki z dostawcami i odbiorcami
+        items:
+        - name: Faktury do zapłaty
+          href: ../financials/localizations/rus-invoice-payment.md
+        - name: Konfigurowanie kontroli wymiarów dla rozliczeń
+          href: ../financials/localizations/rus-transactions-settlement-date.md
+        - name: Zarządzanie przepływem pieniężnym
+          href: ../financials/localizations/rus-cash-flow.md
+      - name: Raportowanie
+        items:
+        - name: Raportowanie finansowe
+          href: ../financials/localizations/rus-financial-reports.md
       - name: Oddziały firmy
         href: ../financials/localizations/rus-company-divisions.md
       - name: Konfigurowanie kursów wymiany na potrzeby transakcji walutowych
@@ -2280,8 +2317,10 @@ items:
         href: ../financials/localizations/rus-invoice-payment.md
       - name: Raportowanie finansowe
         href: ../financials/localizations/rus-financial-reports.md
-      - name: Tworzenie księgi zakupów
-        href: ../financials/localizations/rus-sales-books-purchase-books.md
+      - name: Sprawozdawczość księgowa w formacie elektronicznym
+        href: ../financials/localizations/rus-accounting-reporting.md
+      - name: Zarządzanie przepływem pieniężnym
+        href: ../financials/localizations/rus-cash-flow.md
     - name: Arabia Saudyjska
       href: ../financials/localizations/saudi-arabia.md
       items:
@@ -2367,6 +2406,8 @@ items:
         href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
       - name: Konfigurowanie grup podatkowych do opłaty zwrotnej VAT
         href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+      - name: Zamiana podatku na format cyfrowy na potrzeby VAT
+        href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
     - name: Stany Zjednoczone
       href: ../financials/localizations/united-states.md
       items:
@@ -2827,6 +2868,8 @@ items:
           href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
         - name: Zmiany w interfejsie API struktury raportowania elektronicznego w aktualizacji Application update 7.3
           href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+        - name: Określanie niestandardowego magazynu wygenerowanych dokumentów
+          href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
     - name: Osadzone rozwiązania analityczne
       items:
       - name: Wbudowane Power BI w obszarach roboczych
@@ -3281,6 +3324,8 @@ items:
         href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
       - name: Raport o typach przepływów pracy
         href: organization-administration/workflow-types-report.md
+      - name: Przepływ pracy — FAQ
+        href: organization-administration/workflow-FAQ.md
     - name: Alerty
       href: get-started/alerts-overview.md
       items:
@@ -3799,8 +3844,6 @@ items:
         href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
       - name: Realizacja umów sprzedaży
         href: ../supply-chain/sales-marketing/tasks/fulfill-sales-agreements.md
-      - name: Tworzenie nowej umowy handlowej
-        href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
       - name: Generowanie i przetwarzanie rabatów dla odbiorców
         href: ../supply-chain/sales-marketing/tasks/process-customer-rebates.md
       - name: Przetwarzanie rabatów za płatność
@@ -3827,6 +3870,8 @@ items:
         href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
     - name: Odpis handlowy
       href: ../supply-chain/sales-marketing/trade-allowance.md
+    - name: Tworzenie nowej umowy handlowej
+      href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
   - name: Zarządzanie serwisem
     href: ../supply-chain/service-management/service-management-home-page.md
     items:
@@ -4241,9 +4286,9 @@ items:
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 for Retail
   href: ../retail/toc.yml
-ms.openlocfilehash: cb58a9f8fa8305a3d8b956804ef74bef86ca04b9
-ms.sourcegitcommit: 7e0097bdd835e04521bffbce2fd802e6381dde0d
+ms.openlocfilehash: a1c64fd645063db11c632b34e8e0b934c97f2251
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "376925"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836403"

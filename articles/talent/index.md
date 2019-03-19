@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Dynamics 365 for Talent — Zapraszamy!
-description: Rozwiązanie Talent upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Te procesy obejmują utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami.
+description: 'Rozwiązanie Talent upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Te procesy obejmują utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami.'
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-365-talent
-ms.technology: ''
+ms.technology: null
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: 'Core, Operations, Talent'
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302725"
+ms.search.validFrom: '2016-02-28'
+ms.dyn365.ops.version: 'AX 7.0.0, Talent July 2017 update'
 ---
+
 # <a name="welcome-to-dynamics-365-for-talent"></a>Dynamics 365 for Talent — Zapraszamy!
 
 [!include [banner](includes/banner.md)]
@@ -79,7 +75,7 @@ Możesz skonfigurować plany umożliwiające skuteczne i sprawiedliwe zarządzan
 
 ## <a name="develop-and-train-employees"></a>Wspomaganie rozwoju i szkolenie pracowników etatowych
 
-Aby pomóc pracownikom etatowym w osiągnięciu celów związanych z karierą przy jednoczesnym spełnianiu wymagań, jakie stawie im firma, możesz skonfigurować cele, tworzyć przeglądy wydajności oraz śledzić opinie. Aby pomóc pracownikom w rozwijaniu wymaganych umiejętności, możesz też skonfigurować instruktorów, typy kursów, opisy kursów, terminarze, ścieżki i sesje, zanim przypiszesz instruktora do kursu lub zarejestrujesz kogoś do udziału w kursie. Instruktorzy muszą być istniejącymi pracownikami, kandydatami lub kontaktami.
+Aby ułatwić pracownikom realizację ich planów zawodowych i spełnienie krytycznych wymagań biznesowych, można określić cele, tworzyć przeglądy wydajności i śledzić opinie. Aby ułatwić pracownikom rozwijanie umiejętności, przed przypisaniem instruktora lub uczestników do kursu, można także ustawić instruktorów, przydzielić typy kursów, kursy, ich opisy, harmonogramy, mechanizmy monitorowania i sesje. Instruktorzy muszą być istniejącymi pracownikami, kandydatami lub kontaktami.
 
 -   [Zarządzanie wydajnością](performance-management-overview.md)
 -   [Dopasowywanie umiejętności pracowników do potrzeb biznesowych](skills.md)
