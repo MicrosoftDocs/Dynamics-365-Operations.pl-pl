@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0fa2b7c2dc5b88349cb4012b6b0ba9009a361fa0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 64362ae9e4ebb63ca6da2cd2f41376d1d9047694
+ms.sourcegitcommit: c6af2de37309b574dcb69c9caad436b55136600f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305715"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768492"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Wymagania systemowe i zasady aktualizacji rozwiązania Talent
 
@@ -36,8 +36,8 @@ Aplikacja internetowa Microsoft Dynamics 365 for Talent może działać w każde
 
 *   Microsoft Edge (najnowsza publicznie dostępna wersja) w systemie Windows 10
 *   Internet Explorer 11 w systemach Windows 10, Windows 8.1 lub Windows 7
-*   Google Chrome (najnowsza publicznie dostępna wersja) w systemach Windows 10, Windows 8.1, Windows 8 i Windows 7 lub na tablecie Google Nexus 10
-*   Apple Safari (najnowsze publicznie dostępna wersja) w systemie Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) lub 10.12 (Sierra) albo na iPadzie firmy Apple
+*   Google Chrome (najnowsza publicznie dostępna wersja)
+*   Apple Safari (najnowsza publicznie dostępna wersja)
 
 Aby znaleźć najnowszą wersję dla każdej przeglądarki, przejdź do witryny producenta oprogramowania. 
 

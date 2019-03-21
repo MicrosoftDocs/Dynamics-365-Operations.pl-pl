@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377142"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773284"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Omówienie integracji fiskalnej dla kanałów modułu Retail
 
@@ -30,7 +30,7 @@ ms.locfileid: "377142"
 
 ## <a name="introduction"></a>Wprowadzenie
 
-Ten temat zawiera omówienie funkcji integracji fiskalnej dostępnych w programie Microsoft Dynamics 365 for Retail. Integracja fiskalna obejmuje integrację z różnymi urządzeniami i usługami fiskalnych umożliwiających rejestrację fiskalną sprzedaży detalicznej zgodnie z lokalnymi przepisami podatkowymi, które mają na celu zapobieganie oszustwom podatkowym w sprzedaży detalicznej. Oto kilka typowych scenariuszy wykorzystania funkcji integracji fiskalnej: 
+Ten temat zawiera omówienie funkcji integracji fiskalnej dostępnych w programie Microsoft Dynamics 365 for Retail. Integracja fiskalna obejmuje integrację z różnymi urządzeniami i usługami fiskalnych umożliwiających rejestrację fiskalną sprzedaży detalicznej zgodnie z lokalnymi przepisami podatkowymi, które mają na celu zapobieganie oszustwom podatkowym w sprzedaży detalicznej. Oto kilka typowych scenariuszy wykorzystania funkcji integracji fiskalnej:
 
 - Rejestrowanie sprzedaży detalicznej na urządzeniu fiskalnym w punkcie sprzedaży Retail (POS), np. na drukarce fiskalnej, i drukowanie paragonu fiskalnego dla klienta.
 - Bezpieczne przesyłanie informacji związanych ze sprzedażą i zwrotami, które są wykonywane w programie Retail POS, do zewnętrznej usługi sieci web, która jest prowadzona przez urząd skarbowy.
@@ -87,6 +87,7 @@ Po pomyślnym zakończeniu rejestracji fiskalnej transakcji lub zdarzenia transa
 
 Transakcje fiskalne są przenoszone do Centrali sieci sprzedaży z pomocą *zadania P* wraz z transakcjami sieci sprzedaży. Na skróconej karcie **Transakcje fiskalne** na stronie **Transakcje sklepu detalicznego** można wyświetlić transakcje fiskalne, które są połączone z transakcjami sieci sprzedaży.
 
+
 Transakcja fiskalna przechowuje następujące informacje:
 
 - Szczegóły procesu rejestracji fiskalnej (proces, grupa łącznika, łącznik itd.) Przechowywane są także numer seryjny urządzenia fiskalnego w polu **Numer rejestru**, jeśli te informacje są uwzględniane w odpowiedzi fiskalnej.
@@ -115,4 +116,5 @@ Następujące funkcje integracji fiskalnej są także dostępne w zestawie SDK m
 
 - [Podpis cyfrowy dla Francji](emea-fra-cash-registers.md)
 - [Podpis cyfrowy dla Norwegii](emea-nor-cash-registers.md)
-- [Przykładowa integracja jednostki kontrolnej dla Szwecji](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+- [Przykładowa integracja jednostki kontrolnej dla Szwecji](./retail-sdk-control-unit-sample.md)
+

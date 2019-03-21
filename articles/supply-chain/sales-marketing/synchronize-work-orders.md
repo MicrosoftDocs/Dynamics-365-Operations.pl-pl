@@ -3,7 +3,7 @@ title: Synchronizowanie zamówień z projektem między aplikacjami Field Service
 description: Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania zamówień z numerem projektu między programem Microsoft Dynamics 365 for Field Service a Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b61411a5a235e2d0aad8bb25ae4a3bfcf1248d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ca01b085315d916a18c512af28fc7534ce76ee8
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329857"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836449"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-finance-and-operations"></a>Synchronizowanie zamówień z projektem między aplikacjami Field Service i Finance and Operations
 
@@ -34,9 +34,11 @@ Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używ
 
 [![Synchronizacja procesów biznesowych między aplikacjami Finance and Operations i Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
-Używany szablon **Produkty programu Field Service (z Finance and Operations do Field Service)** jest oparty na szablonie **Produkty (z Finance and Operations do Sales) — bezpośrednie** rozwiązania Prospekt na gotówkę. Aby uzyskać więcej informacji, zobacz [Produkty (z rozwiązania Finance and Operations do rozwiązania Sales) – bezpośrednio](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+Używany szablon **Zlecenia z projektem (z Field Service do Fin and Ops)** jest oparty na szablonie **Zlecenia (z Field Service do Fin Ops)**. Więcej informacji znajduje się w temacie [Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
 
-Ten temat wyłącznie opisuje różnice między szablonami **Produkty programu Field Service (z Finance and Operations do Field Service)** i **Produkty Field Service (z Finance and Operations do Field Service) — bezpośrednie**.
+W tym temacie opisano tylko różnice między dwoma szablonami:
+- **Zlecenia z projektem (z Field Service do Finance and Operations)**
+- **Zlecenia (z Field Service do Finance and Operations)**
 
 Główna różnica polega na tym, że ten szablon obejmuje mapowanie numeru projektu przypisanego do zlecenia w aplikacji Field Service, który zapewnia, że zlecenie sprzedaży utworzone w aplikacji Finance and Operations zawiera numer projektu i że fakturowanie może zostać wykonane w odniesieniu do powiązanego projektu. Poza tym szablon używa Zaawansowanego zapytania i filtrowania.
 
@@ -60,18 +62,18 @@ Pole **Projekt zewnętrzny** zostało dodane do jednostka Zlecenie. To pole jest
 
 Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja danych.
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderheader"></a>Zlecenia z projektem (z Field Service do Finance and Operations): WorkOrderHeader
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderheader"></a>Zlecenia z projektem (z Field Service do Finance and Operations): WorkOrderHeader
 
 [![Mapowanie szablonu w integracji danych](./media/FSWOP1.png)](./media/FSWOP1.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderheaderproject"></a>Zlecenia z projektem (z Field Service do Finance and Operations): WorkOrderHeaderProject
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderheaderproject"></a>Zlecenia z projektem (z Field Service do Finance and Operations): WorkOrderHeaderProject
 
 [![Mapowanie szablonu w integracji danych](./media/FSWOP2.png)](./media/FSWOP2.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderproduct"></a>Zlecenia z projektem (z Field Service do Finance and Operations): WorkOrderProduct
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderproduct"></a>Zlecenia z projektem (z Field Service do Finance and Operations): WorkOrderProduct
 
 [![Mapowanie szablonu w integracji danych](./media/FSWOP3.png)](./media/FSWOP3.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderservice"></a>Zlecenia z projektem (z Field Service do Finance and Operations): WorkOrderService
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderservice"></a>Zlecenia z projektem (z Field Service do Finance and Operations): WorkOrderService
 
 [![Mapowanie szablonu w integracji danych](./media/FSWOP4.png)](./media/FSWOP4.png)

@@ -3,7 +3,7 @@ title: Zarządzanie zabezpieczeniami i rolami w aplikacji Attract
 description: Ten temat zawiera informacje na temat zabezpieczeń na podstawie ról w aplikacji Microsoft Dynamics 365 for Talent - Attract.
 author: josaw1
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374787"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789704"
 ---
 # <a name="security-and-role-management-in-attract"></a>Zarządzanie zabezpieczeniami i rolami w aplikacji Attract
 
@@ -100,14 +100,16 @@ Następujące uprawnienia dotyczą danych specyficznych dla funkcji mających za
 | Dane lub czynność          | Osoba rekrutująca | Menedżer zatrudniający | Osoba przeprowadzająca rozmowę kwalifikacyjną |
 |-------------------------|-----------|----------------|-------------|
 | Dokumenty zgłoszeń   | Tworzenie, odczyt, aktualizowanie i usuwanie funkcji, z powodu których użytkownik znalazł się w zespole rekrutacyjnym | Tworzenie, odczyt, aktualizowanie i usuwanie funkcji, z powodu których użytkownik znalazł się w zespole rekrutacyjnym | Tylko do odczytu |
-| Uwagi do zgłoszeń       | Tworzenie, odczyt, aktualizowanie i usuwanie funkcji, z powodu których użytkownik znalazł się w zespole rekrutacyjnym | Tworzenie, odczyt, aktualizowanie i usuwanie funkcji, z powodu których użytkownik znalazł się w zespole rekrutacyjnym | Tworzenie |
+| Uwagi do zgłoszeń       | Tworzenie, odczyt, aktualizowanie i usuwanie funkcji, z powodu których użytkownik znalazł się w zespole rekrutacyjnym | Tworzenie, odczyt, aktualizowanie i usuwanie funkcji, z powodu których użytkownik znalazł się w zespole rekrutacyjnym | Tylko do odczytu|
 | Działania na zgłoszeniach    | Wyświetlanie, jeśli użytkownik znajduje się w zespole rekrutacyjnym | Wyświetlanie, jeśli użytkownik znajduje się w zespole rekrutacyjnym | Tylko do odczytu |
 | Opinie o zgłoszeniach    | Dodawanie i wyświetlanie wszystkich opinii, jeśli użytkownik należy do zespołu rekrutacyjnego | Dodawanie i wyświetlanie wszystkich opinii, jeśli użytkownik należy do zespołu rekrutacyjnego | Może dodawać opinie\*\* |
 | Odrzucanie zgłoszeń      | Może odrzucać, jeśli znajduje się w zespole rekrutacyjnym | Niedozwolone | Niedozwolone |
 | Przenieś na kolejny etap           | Może odrzucać, jeśli znajduje się w zespole rekrutacyjnym | Może przekazywać do kolejnego etapu, jeśli znajduje się w zespole rekrutacyjnym | Niedozwolone |
 | Uruchamianie aplikacji zarządzania ofertami | Może uruchamiać aplikację zarządzania ofertami | Istnieje opcja konfiguracji w działaniu Oferta. | Niedozwolone |
 
-\*\* Opcja konfiguracji w [ustawieniach działań na opiniach](activities-attract.md#feedback-activity) decyduje, czy osoby przeprowadzające rozmowy kwalifikacyjne widzą nawzajem swoje opinie.
+
+\*\* Opcja konfiguracji w [ustawieniach działań na opiniach](./activities-attract.md) decyduje, czy osoby przeprowadzające rozmowy kwalifikacyjne widzą nawzajem swoje opinie.
+
 
 ## <a name="process-templates"></a>Szablony procesów
 

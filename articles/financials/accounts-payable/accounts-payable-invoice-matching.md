@@ -3,7 +3,7 @@ title: Uzgadnianie faktur rozrachunków z dostawcami
 description: Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11cc2d4ddbd30ff4d010f6b34119a7ad96d5aecb
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6d1582d268be759cd1f1686c9e80f6cf7eeb2da8
+ms.sourcegitcommit: 1ee613a88edddab036d145f27f19d071a4b8ad24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310284"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "389940"
 ---
 # <a name="accounts-payable-invoice-matching"></a>Uzgadnianie faktur rozrachunków z dostawcami
 
@@ -49,7 +49,7 @@ Można użyć następujących typów uzgadniania faktur w rozliczeniach z dostaw
 
 Uzgadnianie dwuelementowe i trzyelementowe zawsze uzgadnia informacje o cenie na podstawie ceny jednostki. Za pomocą tych zasad można też uzgadniać informacje o cenach według ceny całkowitej.
 -   Uzgadnianie ceny jednostkowej netto — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia ceną jednostkową netto na zamówieniu zakupu. Cena jednostkowa netto jest określana według następującego wzoru: kwota netto wiersza / ilość w wierszu
--   Uzgodnienie cen całkowitych — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia kwotą netto na zamówieniu zakupu. Kwota netto jest określana według następującego wzoru: (cena jednostkowa \* ilość w wierszu) + opłaty za wiersze - rabaty wiersza
+-   Uzgodnienie cen całkowitych — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia kwotą netto na zamówieniu zakupu. Kwota netto jest określana według następującego wzoru: *(cena jednostkowa \* ilość w wierszu) + opłaty za wiersze - rabaty wiersza*. Podczas uzgadniania cen całkowitych według wartości procentowej system porównuje wartości w walucie transakcji. Podczas uzgadniania cen całkowitych według kwoty system porównuje wartości w walucie rozliczeniowej.
 
 Na ogół obliczenia związane z uzgadnianiem faktur są wykonywane automatycznie podczas edytowania faktur od dostawcy na stronie Faktura od dostawcy. Ewentualnie uzgadnianie faktur może być wykonywane na żądanie, jeśli jest taka potrzeba. Uzgadnianie faktur na żądanie jest kontrolowane dla firmy za pomocą opcji Automatycznie aktualizuj stan nagłówka faktury na stronie Parametry modułu rozrachunków z dostawcami na karcie Weryfikacja faktury. Uzgadnianie faktury może być również wykonane w ramach procesu przeglądania faktury. Można wyświetlić wyniki uzgadniania faktury na stronie Faktura od dostawcy i na pokrewnych stronach uzgadniania faktur.
 

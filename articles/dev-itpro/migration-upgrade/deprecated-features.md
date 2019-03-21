@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia.
 author: sericks007
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329259"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836355"
 ---
 # <a name="removed-or-deprecated-features"></a>Usunięte lub przestarzałe funkcje
 
@@ -35,11 +35,77 @@ W tym temacie opisano funkcje, które zostały usunięte lub wycofane w Dynamics
 
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
-> [!Note]
+> [!NOTE]
 > Począwszy od programu Dynamics 365 for Finance and Operations w wersji z lipca 2017 z aktualizacją platformy 8 dla każdej usuniętej lub przestarzałej funkcji podano typy wdrożeń. Wszystkie poprzednie wersje podane w tym temacie obsługiwały tylko wdrożenie w chmurze.
 
-> [!Note]
+> [!NOTE]
 > Szczegółowe informacje o obiektów w rozwiązaniu Finance and Operations można znaleźć w [raportach z wykazami parametrów technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach programu Finance and Operations.
+
+## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 z aktualizacją platformy 25
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.1 z aktualizacją platform update 25 jest dostępna dla użytkowników docelowych w ramach wersji wstępnej. Zawartość oraz funkcje mogą ulec zmianie. Aby uzyskać dodatkowe informacje na temat wersji zapoznawczych, zobacz [wersje pierwsze i oficjalne: aktualizacje usługi](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### <a name="deprecated-apis-and-potential-breaking-changes"></a>Wycofane interfejsy API i potencjalnie istotne zmiany
+
+#### <a name="deriving-from-internal-classes-is-deprecated"></a>Dziedziczenie z wewnętrznych klas jest przestarzałe
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | W wersjach sprzed aktualizacji platformy 25 można było utworzyć klasę lub tabelę, która pochodzi z wewnętrznej klasy/tabeli zdefiniowanej w innym pakiecie/module. Nie jest to bezpieczna praktyka kodowania. Począwszy od aktualizacji platformy 25, kompilator będzie wyświetlał komunikat o błędzie przy próbie zrobienia tego.|
+| **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w nadchodzącej aktualizacji platformy. Ta zmiana jest zgodna z poprzednimi wersjami w czasie wykonywania, co oznacza, że po uruchomieniu aktualizacji platformy 25 lub nowszej można ją wdrożyć w dowolnym środowisku piaskownicy lub produkcji, bez konieczności modyfikowania kodu niestandardowego. Ta zmiana wpływa tylko na czas projektowania i kompilacji. |
+| **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Przestarzałe - ostrzeżenie stanie się błędem kompilacji w nadchodzącej aktualizacji platformy. |
+
+#### <a name="overriding-internal-methods-is-deprecated"></a>Zastępowanie wewnętrznych metod jest przestarzałe
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | W wersjach sprzed aktualizacji platformy 25 można było zastąpić wewnętrzną metodę w klasie pochodnej zdefiniowanej w innym pakiecie/module. Nie jest to bezpieczna praktyka kodowania. Począwszy od aktualizacji platformy 25, kompilator będzie wyświetlał komunikat o błędzie przy próbie zrobienia tego.|
+| **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w nadchodzącej aktualizacji platformy. Ta zmiana jest zgodna z poprzednimi wersjami w czasie wykonywania, co oznacza, że po uruchomieniu aktualizacji platformy 25 lub nowszej można ją wdrożyć w dowolnym środowisku piaskownicy lub produkcji, bez konieczności modyfikowania kodu niestandardowego. Ta zmiana wpływa tylko na czas projektowania i kompilacji. |
+| **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Przestarzałe - ostrzeżenie stanie się błędem kompilacji w nadchodzącej aktualizacji platformy. |
+
+## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 z aktualizacją platformy 23
+
+### <a name="print-to-screen-functionality"></a>Funkcja drukowania ekranu
+Klienci mogą używać akcji **importowania** udostępnianych przez formant Report Viewer w celu pobierania dokumentów wytwarzanych przez aplikacje Finance and Operations. Ta prezentacja raportu oparta na języku HTML oferuje podgląd dokumentu niedzielonego na strony.
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Podgląd HTML bez podziału na strony **nie** zapewnia dokładności takiej, jak mają fizyczne dokumenty z Finance and Operations. Jednak PDF z całym dokumentem jako standardowy format dla operacji biznesowych umożliwia bardzo duże uproszczenie interakcji użytkownika z raportami z aplikacji i ułatwia proces renderowania dokumentów. |
+| **Zamieniona przez inną funkcję?**   | W przyszłości, dokumenty PDF będą formatami domyślnymi dla reportów renderowanych przez Finance and Operations.   |
+| **Powiązane obszary produktów**         | Ta zmiana **nie** wpływa na scenariusze klientów, kiedy raporty są rozsyłane elektronicznie lub wysyłane bezpośrednio do drukarki.    |
+| **Opcja wdrażania**              | Wszyscy  |
+| **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji. Wprowadzenie funkcji automatycznego pobierania raportów aplikacji do przeglądarki jako dokumentów PDF jest planowane w majowej aktualizacji platformy 2019. <br><br>**Ważne:**  obecnym klientom korzystającym z funkcji drukowania ekranu zalecamy powiadomienie [pomocy technicznej](../lifecycle-services/lcs-support.md) przed rozpoczęciem uaktualniania do aktualizacji platformy 26. |
+
+### <a name="client-kpi-controls"></a>Formanty KPI klienta
+Wbudowanie kluczowych wskaźników wydajności (KPI) może być modelowane w Visual Studio przez dewelopera i dodatkowo dostosowane przez użytkownika końcowego.
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Natywne formanty klienta używane do zdefiniowania KPI są rzadko pobierane i od dewelopera zależy dodanie miar, które można śledzić. |
+| **Zamieniona przez inną funkcję?**   | Usługa PowerBI.com oferuje światowej klasy narzędzie do definiowania KPI i zarządzania nimi na podstawie danych z zewnętrznych źródeł.  W nowej wersji planujemy umożliwienia osadzania rozwiązań hostowanych przez PowerBI.com w aplikacjach roboczych.   |
+| **Powiązane obszary produktów**         | Ta aktualizacja uniemożliwi deweloperom wprowadzenie nowych formantów KPI w Visual Studio designer.    |
+| **Opcja wdrażania**              | Wszyscy  |
+| **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji. |
+
+### <a name="deprecated-apis-and-future-breaking-changes"></a>Wycofane interfejsy API i przyszłe ważne zmiany
+
+#### <a name="field-groups-containing-invalid-field-references"></a>Grupy pól zawierających nieprawidłowe pole odwołania
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Definicje metadanych tabeli mogą mieć grupy pól zawierające nieprawidłowe odniesienia do pól. Ten problem jest obecnie zaliczony do kategorii *ostrzeżenia kompilatora*, a nie *błąd*, co oznacza, że można tworzyć pakiety możliwe do wdrożenia i wdrażać je bez naprawiania problemu. W razie wdrożenia może to spowodować błędy raportowania finansowego i usług SQL Server Reporting Services (SSRS). Aby rozwiązać ten problem:<br><br>1. Usuń nieprawidłowe odwołanie pola z definicji grupy pól tabel.<br><br>2. Kompiluj ponownie.<br><br>3. Upewnij się, ostrzeżenia lub błędy zostały naprawione. |
+| **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w przyszłości.  |
+| **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
+| **Opcja wdrażania**              | Wszystko. |
+| **Stan**                         | Przestarzałe — ostrzeżenie będzie w przyszłości błędem czasu kompilacji. W tej chwili planujemy aktualizację platformy 30. |
+
+#### <a name="complete-list"></a>Pełna lista
+Aby wyświetlić listę wszystkich interfejsów API, które zostaną wycofane, zobacz [Wycofanie metod i elementów metadanych](deprecation-deletion-apis.md).
 
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 z aktualizacją platformy 20
 

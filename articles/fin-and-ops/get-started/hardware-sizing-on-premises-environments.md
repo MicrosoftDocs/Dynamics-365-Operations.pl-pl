@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d277bc4c4c815317bade8a04b9111232fb707086
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e11742c62ea8d10f391ed2d417024f9c80e39591
+ms.sourcegitcommit: 21bbdac152e0cbb0576df9d5e6e90283175834ef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340736"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768421"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych
 
@@ -86,7 +86,7 @@ Aby poznać zapotrzebowanie na elementy infrastruktury, konieczne jest ustalenie
     - Używanie dodatkowych funkcji, takich jak dzienniki i alerty baz danych. Ekstremalne protokołowanie zdarzeń bazy danych jeszcze bardziej ograniczy przepustowość na godzinę na każdy rdzeń do poziomu poniżej 3 tysięcy wierszy.
     - Złożoność składu danych — Na przykład różnica między prostymi planami kont a szczegółowymi, drobiazgowymi planami kont ma wpływ na przepustowość.
     - Cechy transakcji.
-    - Od 2 GB do 4 GB pamięci RAM na każdy rdzeń.
+    - Od 2 GB do 16 GB pamięci RAM na każdy rdzeń.
     - Pomocnicze bazy danych na serwerze baz danych, takie jak bazy danych programu Management Reporter i usługi SSRS.
     - Tymczasowa baza danych = 15% standardowego rozmiaru bazy danych, z liczbą plików równą liczbie fizycznych procesorów.
     - Rozmiar i przepustowości sieci SAN ustalone na podstawie łącznej liczby/wykorzystywania transakcji równoczesnych.

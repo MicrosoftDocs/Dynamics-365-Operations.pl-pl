@@ -3,7 +3,7 @@ title: Tworzenie, zatwierdzanie i podpisywanie ofert
 description: W tym temacie szczegółowo wyjaśniono sposób tworzenie, zatwierdzania i podpisywania oferty dla kandydata w Dynamics 365 for Talent.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ad7ce1e089d2a8b5c52e7cd01bb3d89070004b1
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305835"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768912"
 ---
 # <a name="creating-approving-and-signing-offers"></a>Tworzenie, zatwierdzanie i podpisywanie ofert
 
@@ -104,15 +104,20 @@ Istnieje kilka czynności, które można wykonać przed wysłaniem oferty do kan
 
 -  Mogą istnieć dodatkowe dokumenty, które chcesz dołączyć do procesu akceptacji oferty. Będzie można wyświetlić listę typów wymaganych dokumentów.
 
-- Opcja e-podpisu: jeśli wybrano Adobe Sign jako preferowaną metodę e-podpisu, twórcy ofert muszą połączyć swoją licencję Adobe Sign. Istnieją dwa sposoby, aby to zrobić. Przejdź do Ustawień **użytkownika** w **Ofercie** w menu **Połączenia**, aby połączyć się z **Adobe Sign**. Alternatywnie pojawi się monit o połączenie oferty wysłania z ekranem certyfikatu, jeśli połączenie nie zostało jeszcze utworzone na podstawie ustawień użytkownika. 
+- Opcja e-podpisu: są dwa sposoby połączenia dostawcy e-podpisu wybranego przez użytkownika. Przejdź do **Ustawień użytkownika** w **Ofercie** w menu **Połączenia**, aby połączyć się z **Adobe Sign** lub **DocuSign**. Alternatywnie pojawi się monit o połączenie strony **wysłania oferty do kandydata**, jeśli połączenie nie zostało jeszcze utworzone na podstawie ustawień użytkownika. Konto e-podpis trzeba połączyć tylko raz. Ta sama licencja użytkownika jest używana do wszystkich przyszłych pakietów ofert wysyłanych przez tego samego użytkownika. 
 
-> [!NOTE]
-> Wystarczy tylko raz połączyć się z kontem Adobe Sign. Ta sama licencja użytkownika jest używana do wszystkich przyszłych pakietów ofert wysyłanych przez tego samego użytkownika. 
+### <a name="adobe-sign"></a>Adobe Sign
+Jeśli wybrano Adobe Sign jako preferowaną metodę e-podpisu, twórcy ofert muszą na tym etapie połączyć swoją licencję Adobe Sign. 
+
+### <a name="docusign"></a>DocuSign
+Jeśli wybrano DocuSign jako preferowaną metodę e-podpisu, twórcy ofert muszą na tym etapie połączyć swoją licencję DocuSign. Po zalogowaniu się domyślne konto i uprawnienia skojarzone z profilem użytkownika DocuSign są połączone z Talent Attract. 
 
 -  Można wyświetlić i edytować szablon wiadomości e-mail zgodnie z potrzebami.
 
 Gdy oferta jest gotowa i klikniesz przycisk **Wyślij do kandydata**, kandydat otrzyma wiadomość e-mail z informacją, że oferta czeka na przeczytanie.
 
+>[!NOTE]
+> Jeśli używasz Adobe Sign lub DocuSign i wystąpi błąd podczas wysyłania oferty do kandydata, spróbuj rozłączyć i ponownie połączyć konto użytkownika e-podpisu w **Ustawieniach użytkownika**. Jeśli ten problem będzie nadal występował, skontaktuj się z naszą pomocą techniczną, używając łącza **Zgłoś problem**.
 
 ## <a name="candidates-actions-after-receiving-an-offer"></a>Czynności wykonywane przez kandydata po otrzymaniu oferty
 

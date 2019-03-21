@@ -3,7 +3,7 @@ title: Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract
 description: W tym temacie opisano elementy funkcji w aplikacji Attract. Ponadto wyjaśniono, jak utworzyć funkcję.
 author: josaw
 manager: AnnBe
-ms.date: 12/21/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
+ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305813"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "772818"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract
 
@@ -76,8 +76,23 @@ Aby uzyskać więcej informacji o działaniach, które można dodawać do proces
 
 Po uaktywnieniu funkcji można ją opublikować. Tylko osoby rekrutujące i menedżerowie zatrudniający mogą publikować funkcje. Funkcję można opublikować w witrynie Talent Careers (witrynie rozwoju kariery wewnątrz Microsoft Dynamics 365 for Talent) lub serwisie LinkedIn. 
 
+Zespół aplikacji Attract stale pracuje nad dodawaniem agregatorów ogłoszeń o pracę. Ta lista będzie regularnie poszerzana.
+
+Aby uzyskać więcej informacji o ofertach pracy, zobacz [Funkcjonalność witryny rozwoju kariery w aplikacji Attract](career-site.md).
+
 > [!NOTE]
-> Istnieją trzy ważne zagadnienia, o których należy pamiętać w procesie publikowania zadania w portalu LinkedIn.
+> Funkcjonalność ofert pracy jest dostępna tylko po zainstalowaniu dodatku kompleksowej obsługi rekrutacji dla aplikacji Attract.
+
+### <a name="posting-jobs-to-linkedin"></a>Publikowanie ofert pracy w serwisie LinkedIn 
+
+Przed opublikowaniem oferty pracy z Attract w LinkedIn, administrator musi dodać nazwę Identyfikatora firmy LinkedIn i nazwę firmy LinkedIn w **ustawienia administratora**. Identyfikator firmy LinkedIn jest wymagany, aby oferty publikowane z Attract były mapowane na odpowiednią stronę firmy.
+
+Identyfikator firmy LinkedIn to ciąg liczb, które jednoznacznie identyfikują Twoją firmę na LinkedIn. Więcej informacji o tym, jak znaleźć swój identyfikator firmy na LinkedIn znajduje się na stronie [LinkedIn](https://aka.ms/findID).
+
+Aby zaktualizować firmę LinkedIn, wybierz **Centrum administracyjne** w menu **ustawienia** (symbol koła zębatego), a następnie wybierz kartę **integracji LinkedIn** . W obszarze **łączenie z LinkedIn** wprowadź identyfikator i nazwę LinkedIn firmy, a następnie zapisz te ustawienia.
+
+> [!NOTE]
+> Istnieją cztery ważne zagadnienia, o których należy pamiętać w procesie publikowania zadania w portalu LinkedIn.
 > 1. Zadania opublikowane w LinkedIn są księgowane jako zadania "Ograniczona oferta”. Zadania z ograniczoną ofertą nie mogą być promowane w witrynie LinkedIn. Jeśli chcesz promować zadania z ograniczoną ofertą opublikowane w LinkedIn z aplikacji Attract, musisz skontaktować się z LinkedIn, aby włączyć „Zawijanie zadań". Zobacz poniższe łącza i skontaktuj się z obsługą LinkedIn, aby uzyskać więcej szczegółów.
 >
 >    [Miejsca na zadania z ograniczoną oferta a miejsca na zadania premium w kontekście zawijania zadań](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
@@ -90,16 +105,12 @@ Po uaktywnieniu funkcji można ją opublikować. Tylko osoby rekrutujące i mene
 >
 >    Jeśli masz problemy po wykonaniu tego kroku, skontaktuj się z obsługą LinkedIn. 
 > 
+> 1. Oferty pracy publikowane na LinkedIn są wyświetlane od razu na oficjalnej stronie LinkedIn. Nie ma żadnego środowiska testowego dla publikowania ofert pracy na LinkedIn. 
+>
 > 1. Może to potrwać do 24 godzin, aby zadania opublikowane w LinkedIn były widoczne dla kandydatów w ramach w LinkedIn; ma to związek z obecnym procesem przetwarzania zadań wsadowych przez LinkedIn.
 
-Zespół aplikacji Attract stale pracuje nad dodawaniem agregatorów ogłoszeń o pracę. Ta lista będzie regularnie poszerzana.
 
-Aby uzyskać więcej informacji o ofertach pracy, zobacz [Funkcjonalność witryny rozwoju kariery w aplikacji Attract](./career-site.md).
-
-> [!NOTE]
-> Funkcjonalność ofert pracy jest dostępna tylko po zainstalowaniu dodatku kompleksowej obsługi rekrutacji dla aplikacji Attract.
-
-## <a name="activate"></a>Uaktywnianie
+## <a name="activate"></a>Uaktywnij
 
 Po uaktywnieniu funkcji można ją opublikować oraz dodawać do niej prospektów i kandydatów. Opcję dodawania prospektów do funkcji ustawia się w działaniu Prospekt w procesie rekrutacji.
 

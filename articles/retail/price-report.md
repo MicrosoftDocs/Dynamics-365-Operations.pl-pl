@@ -3,7 +3,7 @@ title: Raporty cen detalicznych
 description: Ten temat zawiera omówienie funkcji raportu cen, która pozwala na wyświetlanie nadchodzące zmian cen dla produktów w asortymencie.
 author: shajain
 manager: AnnBe
-ms.date: 01/18/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 6db6d1c6b6eb1d69b40fe75d97eeb71564986707
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 72f4d248f3ac49bbfd8e5a7a12352d92b89bb0eb
+ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353064"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "777209"
 ---
 # <a name="retail-price-reports"></a>Raporty cen detalicznych
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 

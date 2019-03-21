@@ -3,7 +3,7 @@ title: Scentralizowane płatności dla rozrachunków z dostawcami
 description: Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą jednej firmy, która obsługuje wszystkie płatności. Dlatego tych samych płatności nie trzeba wpisywać w wielu firmach. Ten artykuł zawiera przykłady pokazujące sposób księgowania scentralizowanych płatności w różnych scenariuszach.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/12/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6744aae97499385405e192cd6d6cb8590dd79b7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b61320617dd85a880414b31ad6c88e611beca161
+ms.sourcegitcommit: ca1a472a670393f7aa208189dc8964c9691e2cdc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "327074"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "390173"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Scentralizowane płatności dla rozrachunków z dostawcami
 
@@ -33,7 +33,7 @@ Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami z
 
 Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą firmy, która obsługuje wszystkie płatności. Dlatego tych samych płatności nie trzeba wpisywać w wielu firmach. Ponadto organizacja oszczędza czas, ponieważ proces płatności przebiega sprawniej.
 
-W organizacji stosującej scentralizowane płatności występuje wiele firm dla operacji i każdej firma operacyjna zarządza własnymi fakturami od dostawców. Płatności dla wszystkich operacyjnych firm są generowane z jednej firmy nazywanej firmą płatności. W trakcie procesu rozrachunku tworzone są odpowiednie transakcje „należne dla” i „należne od”. Użytkownik może określić, która firma w organizacji ma odbierać transakcje zrealizowanych dodatnich oraz ujemnych różnic kursowych i w jaki sposób mają być obsługiwane transakcje rabatów gotówkowych związane z płatnościami międzyfirmowymi. 
+W organizacji stosującej scentralizowane płatności występuje wiele firm dla operacji i każdej firma operacyjna zarządza własnymi fakturami od dostawców. Płatności dla wszystkich operacyjnych firm są generowane z jednej firmy nazywanej firmą płatności. W trakcie procesu rozrachunku tworzone są odpowiednie transakcje „należne dla” i „należne od”. Użytkownik może określić, która firma w organizacji ma odbierać transakcje zrealizowanych dodatnich oraz ujemnych różnic kursowych i w jaki sposób mają być obsługiwane transakcje rabatów gotówkowych związane z płatnościami międzyfirmowymi. W wierszu dziennika płatności scentralizowanych **typ konta** powinien być ustawiony jako Dostawca. **Typ konta przeciwstawnego** powinien być ustawiony jako Bank lub Księga. Rachunek bankowy powinien być w bieżącej firmie. 
 
 Poniższe przykłady ilustrują sposób księgowania w przypadku różnych scenariuszy. Wszystkie przykłady dotyczą następującej konfiguracji:
 

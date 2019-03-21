@@ -3,7 +3,7 @@ title: Możliwości rozszerzania w aplikacji Attract
 description: W tym temacie opisano, jak można rozszerzyć funkcjonalność aplikacji Microsoft Dynamics 365 for Talent - Attract przy użyciu platformy Microsoft Power Platform.
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,18 +18,41 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c77c64070cb82180441f4b629b6884981b9b81d2
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305767"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789658"
 ---
 # <a name="extensibility-in-attract"></a>Możliwości rozszerzania w aplikacji Attract
 
 [!include[banner](../includes/banner.md)]
 
 Aplikacja Microsoft Dynamics 365 for Talent bazuje na platformie Common Data Service (CDS) dla aplikacji i można rozszerzać jej funkcjonalność na różne sposoby przy użyciu platformy Microsoft Power Platform oraz funkcji dostępnych w usłudze Common Data Service for Apps. W związku z tym system można konfigurować i personalizować za pomocą usług Microsoft PowerApps i Microsoft Flow. Można także uzyskiwać dodatkowe dane analityczne o osobach za pomocą usługi Microsoft Power BI. Ponadto nowe działania niestandardowe, takie jak PowerApps i Treści internetowe (iframe), umożliwiają znacznie większą niż dotąd elastyczność procesu rekrutacji. Za pomocą tych działań można dostosować proces rekrutacji do własnych potrzeb biznesowych i procesów oraz zapewnić zespołowi rekrutacyjnemu i kandydatom maksymalnie płynną, indywidualną obsługę.
+
+## <a name="extending-option-sets-in-attract"></a>Rozszerzanie zestawów opcji w Attract
+
+**Zestaw opcji** (Lista wyboru) jest typem pola, które mogą być uwzględniane w jednostkach. Definiuje zestaw opcji. Kiedy zestaw opcji jest wyświetlany w formularzu, używa formantu listy rozwijanej.  W Attract jest wiele pól będących zestawami opcji.  Wprowadzamy możliwości rozszerzania zestawów opcji, począwszy od pola przyczyny odrzucenia, pola Typ zatrudnienia i pola typu stażu pracy.   Ponadto można dodać zlokalizowane etykiety wyświetlania dla dodawanych opcji.  Skorzystaj z następującego łącza, aby dowiedzieć się więcej: [Etykiety zestawu opcji Dostosowywanie etykiet](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+
+> [!NOTE]
+> Dodawanie oferty pracy do funkcji LinkedIn wymaga stosowania pól **Typ zatrudnienia** i **typu stażu pracy** na stronie **Szczegóły stanowiska**. Domyślne wartości tych pól nie są obsługiwane przez LinkedIn i są wyświetlane, gdy oferta jest publikowana. Dlatego, jeśli publikujesz ofertę pracy na LinkedIn i zmienisz istniejące zestawy wartości dla tych pól, oferta zostanie opublikowana, ale LinkedIn nie wyświetli wartości niestandardowych **Typ zatrudnienia** i **typu stażu pracy**.  
+
+Poniżej wymieniono kroki, aby zaktualizować pole **przyczyny odrzucenia** wartościami, które są specyficzne dla firmy.  
+
+1. Aby rozszerzyć zestaw opcji **przyczyny odrzucenia**, przejdź do [witryny administratora PowerApps.](Https://admin.powerapps.microsoft.com)
+2. Może zostać wyświetlony monit do zalogowania się do swojego konta. Podaj poświadczenia identyfikatora użytkownika i hasła, które można użyć w celu zalogowania się do Dynamics365 i/lub Office 365, a następnie kliknij **Dalej**.
+3. Na karcie **środowiska** wybierz środowisko, którym chcesz zarządzać i dwukrotnie kliknij, aby wyświetlić kartę **szczegóły**.
+4. Na karcie **szczegóły** wybierz opcję **Centrum administracyjne usługi Dynamics 365**.
+5. Wybierz wystąpienie, które chcesz zmienić i wybierz **Otwórz**.
+6. Przejdź do **ustawienia**, a następnie **dostosowania**, a następnie wybierz polecenie **dostosuj system**.
+7. Znajdowanie jednostkę, dla której chcesz rozwinąć zestaw opcji, wybierając **Jednostki** i rozwijając grupę. W tym przykładzie będzie to **Jednostka zgłoszenia o pracę**.
+8. Przejdź do pola, dla którego chcesz rozszerzyć zestaw opcji, wybierając opcję **Pola**. W tym przykładzie będzie to **msdyn_rejectionreason**. Kliknij dwukrotnie pole.
+9. W polu **zestaw opcji** wybierz opcję **edytuj**.
+10. Wybierz ikonę **+**.
+11. Wprowadź **etykietę**.  (Musi to być niepowtarzalna wartość — bez duplikatów).
+12. Wybierz opcję **Zapisz**.
+13. Wybierz **Opublikuj** u góry strony.
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Wykorzystywanie platformy Microsoft Power Platform 
 

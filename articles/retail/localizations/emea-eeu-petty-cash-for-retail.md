@@ -16,20 +16,20 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c198cedba9268229dc1057711d9f16ca33acebac
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5b91d8589fa4226a2c28e6935b32109e702afc1a
+ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371462"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "760652"
 ---
 # <a name="petty-cash-management-for-retail-for-eastern-europe"></a>Zarządzanie gotówką podręczną w aplikacji Retail dla Europy Wschodniej
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera informacje dotyczące lokalizacji dla Europy Wschodniej i specyficznej dla branży handlu detalicznego. 
+Ten artykuł zawiera informacje dotyczące lokalizacji dla Europy Wschodniej i specyficznej dla branży handlu detalicznego.
 
-Zgodnie z wymaganiami dotyczącymi księgowania w krajach Europy Wschodniej operacje kont kasowych można skonfigurować do automatycznego przetwarzania paragonów, dokumentów kasowych i raportów kasowych. Aby uzyskać więcej informacji, zobacz [(EEUR) Konfigurowanie parametrów zarządzania gotówką](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management). 
+Zgodnie z wymaganiami dotyczącymi księgowania w krajach Europy Wschodniej operacje kont kasowych można skonfigurować do automatycznego przetwarzania paragonów, dokumentów kasowych i raportów kasowych. Aby uzyskać więcej informacji, zobacz [(EEUR) Konfigurowanie parametrów zarządzania gotówką](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management).
 
 Sprzadawcy detaliczni mogą akceptować różne typy płatności w zamian za produkty i usługi, które sprzedają. Jakkolwiek środki pieniężne to najczęściej używana forma płatności, sprzedawcy detaliczni mogą również pobierać płatności w formie czeków, kart lub załączników. W punkcie sprzedaży detalicznej, kasa przetwarza gotówkę, paragony z kart kredytowych i inne płatności.
 
@@ -39,61 +39,56 @@ Przy użyciu zarządzania środkami pieniężnymi w aplikacji Retail można wyko
 - Umożliwia korzystanie z arkuszy kasowych w celu księgowania transakcji kasowych i płatności odbiorcy , które są przyjmowane w punkcie sprzedaży detalicznej.
 - Agregowanie transakcji w wierszu zestawienia podczas księgowania zestawienia sieci sprzedaży. Można agregować przekazywanie pieniędzy do sejfu i banku, transakcje na załącznikach, transakcje usunięcia środków płatniczych, transakcje deklaracji przyjęcia do kasy, transakcje przychodów, transakcje wydatków, płatności odbiorcy, transakcje sprzedaży i transakcji zwrotu.
 
-Wszystkie transakcje, które miały miejsce w module punktu sprzedaży detalicznej Retail POS, są księgowane w arkuszu księgi. Arkusze płatności gotówkowych, arkusze płatności odbiorcy i arkusze finansowe służą do tworzenia i księgowania zestawień. Aby uzyskać więcej informacji, zobacz [Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
+Wszystkie transakcje, które miały miejsce w module punktu sprzedaży detalicznej Retail POS, są księgowane w arkuszu księgi. Arkusze płatności gotówkowych, arkusze płatności odbiorcy i arkusze finansowe służą do tworzenia i księgowania zestawień. Aby uzyskać więcej informacji, zobacz [Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
 
 Na stronie **Zaksięgowane zestawienia** w okienku akcji można wykonać następujące czynności:
-  - Wybierz kolejno opcje **Informacje > Arkusz płatności gotówką**, aby uzyskać dostęp do arkuszy płatności gotówkowych powiązanych z zestawieniem.
-  - Wybierz kolejno opcje **Informacje > Arkusz finansowy** , aby uzyskać dostęp do arkuszy księgi związanych z zestawieniami innych niż płatności odbiorcy i płatności gotówką.
+
+- Wybierz kolejno opcje **Informacje \> Arkusz płatności gotówką**, aby uzyskać dostęp do arkuszy płatności gotówkowych powiązanych z zestawieniem.
+- Wybierz kolejno opcje **Informacje \> Arkusz finansowy** , aby uzyskać dostęp do arkuszy księgi związanych z zestawieniami innych niż płatności odbiorcy i płatności gotówką.
 
 ## <a name="set-up-for-cash-management-for-retail-pos"></a>Konfiguracja zarządzania gotówką dla programu Retail POS
 
 Przed użyciem zarządzania gotówką w programie Retail, należy wykonać poniższą procedurę konfiguracji:
-- Na stronie **Metody płatności** skonfiguruj metody płatności dla każdego typu płatności akceptowanego przez sprzedawcę detalicznego. Można używać różnych metod płatności do księgowania transakcji w aplikacji Retail POS. Aby uzyskać więcej informacji o metodach płatności w aplikacji Retail, zobacz [Metody płatności](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/payment-methods).
 
+- Na stronie **Metody płatności** skonfiguruj metody płatności dla każdego typu płatności akceptowanego przez sprzedawcę detalicznego. Można używać różnych metod płatności do księgowania transakcji w aplikacji Retail POS. Aby uzyskać więcej informacji o metodach płatności w aplikacji Retail, zobacz [Metody płatności](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
 - Skonfiguruj parametry sprzedaży detalicznej dla operacji gotówkowych.
-
 - Ustaw metodę płatności dla płatności gotówką w sklepie sieci sprzedaży.
 
 ### <a name="set-up-retail-parameters-for-cash-operations"></a>Konfigurowanie parametrów sprzedaży detalicznej dla operacji gotówkowych
 
-Można skonfigurować parametry, aby utworzyć i zaksięgować transakcje gotówkowe w sieci sprzedaży. W aplikacji Retail POS można używać arkuszy płatności gotówkowych, arkuszy płatności odbiorcy lub arkuszy finansowych do księgowania transakcji sprzedaży i płatności. Można zagregować transakcje, które mają te same właściwości, podczas księgowania zestawienia. 
+Można skonfigurować parametry, aby utworzyć i zaksięgować transakcje gotówkowe w sieci sprzedaży. W aplikacji Retail POS można używać arkuszy płatności gotówkowych, arkuszy płatności odbiorcy lub arkuszy finansowych do księgowania transakcji sprzedaży i płatności. Można zagregować transakcje, które mają te same właściwości, podczas księgowania zestawienia.
 
-1. Kliknij kolejno opcje **Handel detaliczny > Ustawienia centrali > Parametry > Parametry sieci sprzedaży**. W lewym okienku kliknij opcję **Księgowanie**.
-
+1. Kliknij kolejno opcje **Handel detaliczny \> Ustawienia centrali \> Parametry \> Parametry sieci sprzedaży**. W lewym okienku kliknij opcję **Księgowanie**.
 2. W obszarze **Księgowanie** na skróconej karcie **Agregacja** w opcji **Usunięcie/zmiana środków płatniczych** ustaw wartość **Tak**, aby agregować transakcje usunięcia lub przyjęcia środków płatniczych, które są skojarzone z wierszem zestawienia podczas księgowania zestawienia. Transakcja usunięcia środków płatniczych jest tworzona podczas wypłaty gotówki z szuflady kasowej w punkcie sprzedaży. Transakcja przyjęcia środków płatniczych jest tworzona podczas wpłaty gotówki do szuflady kasowej w punkcie sprzedaży.
-
 3. Aktywuj poszczególne parametry wymienione poniżej, aby agregować transakcje, które są skojarzone z wierszem zestawienia podczas księgowania zestawienia:
-   - **Przekazanie pieniędzy do banku** — Agregowanie transakcji bankowych.
-   - **Przekazanie do sejfu** — Agregowanie transakcji przekazania do sejfu.
-   - **Transakcje przychodów/wydatków** — Agregowanie transakcji wpływu/wpłaty lub wypływu/wypłaty.
-   - **Transakcje na załączniku** — Agregowanie transakcji w załączniku.
-   - **Płatności odbiorcy** — Agregowanie płatności od odbiorców.
-   - **Sprzedaż i zwroty** — Agregowanie transakcji sprzedaży i zwrotu.
+
+    - **Przekazanie pieniędzy do banku** — Agregowanie transakcji bankowych.
+    - **Przekazanie do sejfu** — Agregowanie transakcji przekazania do sejfu.
+    - **Transakcje przychodów/wydatków** — Agregowanie transakcji wpływu/wpłaty lub wypływu/wypłaty.
+    - **Transakcje na załączniku** — Agregowanie transakcji w załączniku.
+    - **Płatności odbiorcy** — Agregowanie płatności od odbiorców.
+    - **Sprzedaż i zwroty** — Agregowanie transakcji sprzedaży i zwrotu.
 
 4. Na skróconej karcie **Płatności** wybierz domyślną nazwę arkusza dla następujących opcji:
-     - **Arkusz płatności odbiorcy** — Ten arkusz jest używany do księgowania płatności od odbiorców.
-     - **Arkusz płatności gotówką** — Ten arkusz jest używany do księgowania płatności gotówką.
-     - **Arkusz finansowy** — Ten arkusz jest używany do księgowania transakcji innych niż płatności gotówkowe i płatności od odbiorców.
+
+    - **Arkusz płatności odbiorcy** — Ten arkusz jest używany do księgowania płatności od odbiorców.
+    - **Arkusz płatności gotówką** — Ten arkusz jest używany do księgowania płatności gotówką.
+    - **Arkusz finansowy** — Ten arkusz jest używany do księgowania transakcji innych niż płatności gotówkowe i płatności od odbiorców.
 
 ### <a name="set-up-a-payment-method-for-cash-payments-in-a-retail-store"></a>Konfigurowanie metody płatności dla płatności gotówką w sklepie sieci sprzedaży
 
 Poniższa procedura umożliwia konfigurowanie metody płatności dla płatności gotówką w sklepie sieci sprzedaży.
 
-1. Wybierz kolejno opcje **Handel detaliczny > Kanały > Sklepy sieci sprzedaży > Wszystkie sklepy sieci sprzedaży**.
-
+1. Wybierz kolejno opcje **Handel detaliczny \> Kanały \> Sklepy sieci sprzedaży \> Wszystkie sklepy sieci sprzedaży**.
 2. Na stronie listy **Wszystkie sklepy sieci sprzedaży** wybierz sklep, dla którego chcesz skonfigurować metodę płatności.
-
 3. W okienku akcji na karcie **Konfiguracja** w grupie **Konfiguracja** kliknij opcję **Metody płatności**.
-
-4. Na stronie **Metody płatności** utwórz lub wybierz metodę płatności. 
-
+4. Na stronie **Metody płatności** utwórz lub wybierz metodę płatności.
 5. Na skróconej karcie **Księgowanie** w grupie pól **Konto** w polu **Typ konta** zaznacz opcję **Konto kasowe**.
 
-   > [!NOTE]
+    > [!NOTE]
     > Opcję **Konto kasowe** w polu **Typ konta** można wybrać tylko po zaznaczeniu opcji **Normalnie** lub **Usunięcie/zmiana środków płatniczych** w polu **Funkcja**.
 
 6. W polu **Numer konta** wybierz numer konta kasowego dla metody płatności.
-
 7. W grupie pól **Usunięcie/zmiana środków płatniczych** w polu **Konto przeciwstawne** wybierz konto przeciwstawne do księgowania transakcji usunięcia lub deklaracji przyjęcia dla metody płatności.
 
 > [!NOTE]

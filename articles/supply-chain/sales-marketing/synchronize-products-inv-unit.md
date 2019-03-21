@@ -3,7 +3,7 @@ title: Synchronizowanie produktów z jednostką zapasów między aplikacjami Fin
 description: Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania produktów z jednostką zapasów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5d3767c1a499f3d888d8fc2ce06c2837442e39f0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8e421be79fde6103be6344040b6ae6cda0626c5a
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359251"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836309"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Synchronizowanie produktów z jednostką magazynową z rozwiązania Finance and Operations do rozwiązania Field Service
 
@@ -34,9 +34,11 @@ Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używ
 
 [![Synchronizacja procesów biznesowych między aplikacjami Finance and Operations i Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-Używany szablon **Produkty programu Field Service (z Finance and Operations do Field Service)** jest oparty na szablonie **Produkty (z Finance and Operations do Sales) — bezpośrednie** rozwiązania Prospekt na gotówkę. Aby uzyskać więcej informacji, zobacz [Produkty (z rozwiązania Finance and Operations do rozwiązania Sales) – bezpośrednio](products-template-mapping-direct.md).
+Szablon **Produkty Field Service z jednostką magazynową (Finance and Operations do Field Service)** jest oparty na szablonie **Produkt Field Service (Finance and Operations do Field Service)**. Aby uzyskać więcej informacji, zobacz [Produkty Field Service (z rozwiązania Finance and Operations do rozwiązania Field Service)](field-service-product.md).
 
-Ten temat wyłącznie opisuje różnice między szablonami **Produkty programu Field Service (z Finance and Operations do Field Service)** i **Produkty Field Service (z Finance and Operations do Field Service) — bezpośrednie**.
+W tym temacie opisano tylko różnice między dwoma szablonami: 
+- **Produkty Field Service z jednostką magazynową (Finance and Operations do Sales)**
+- **Produkty Field Service (z rozwiązania Finance and Operations do rozwiązania Field Service)** 
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 

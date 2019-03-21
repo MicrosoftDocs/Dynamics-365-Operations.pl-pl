@@ -3,7 +3,7 @@ title: Zadania importowania i eksportowania danych
 description: Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
+ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360217"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "834667"
 ---
 # <a name="data-import-and-export-jobs"></a>Zadania importowania i eksportowania danych
 
@@ -128,6 +128,9 @@ Zadanie można jednocześnie zabezpieczyć według ról, użytkowników i firm.
 
 ## <a name="run-the-import-or-export-job"></a>Uruchamianie zadania importu lub eksportu
 Zadanie można uruchomić jeden raz, klikając przycisk **Importuj** lub **Eksportuj** po zdefiniowaniu zadania. Aby skonfigurować zadanie cykliczne, wybierz opcję **Utwórz cykliczne zadanie danych**.
+
+[!NOTE]
+Zadania importu i eksportu mogą być włączane asynchronicznie za pomocą przycisku **importuj** lub **Eksportuj**. Przesyłanie asynchroniczne używa struktury asynchronicznej w Finance and Operations, co różni się od struktury przetwarzania wsadowego. Jednak, podobnie jak struktura przetwarzania wsadowego, struktura asynchroniczna może również napotkać ograniczenia i w związku z tym zadanie może nie zostać natychmiast wykonane. Zadania można również uruchamiać synchronicznie, wybierając **Importuj teraz** lub **Eksportuj teraz**. Powoduje to natychmiastowe włączenie zadania i jest przydatne, jeśli z powodu ograniczeń nie można uruchomić zadania wsadowego lub asynchronicznego. Zadania mogą być również wykonywane w partiach po wybraniu opcji **Uruchom w partii**. Zasoby przetwarzania wsadowego podlegają ograniczeniom, więc zadanie wsadowe może nie rozpocząć się natychmiast. Opcja asynchroniczna jest przydatna, gdy użytkownik kontaktuje się bezpośrednio z interfejsem użytkownika i nie jest zaawansowany na tyle, żeby znać tworzenie harmonogramów zadań wsadowych. Używanie zadania wsadowego jest rozwiązaniem alternatywnym, jeżeli trzeba wyeksportować lub zaimportować duże ilości danych. Zadania wsadowe można zaplanować pod kątem uruchomienia w grupie określonej partii, co daje większą kontrolę z perspektywy równoważenia obciążenia. Jeśli występuje problem z przetwarzaniem asynchronicznym i wsadowym z powodu dużego zużycia zasobów systemu, można rozwiązać ten problem, używając synchronicznych wersji eksportu/importu. Opcja synchroniczna rozpocznie się natychmiast i zablokuje interfejsu użytkownika, ponieważ jest on wykonywany synchronicznie. Musi pozostać otwarte okno przeglądarki, gdy synchroniczna operacja jest w toku.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Sprawdzanie, czy zadanie zostało uruchomione zgodnie z oczekiwaniami
 Dostępna jest historia zadań umożliwiająca rozwiązywanie problemów i badanie zadań importu i eksportu. Historyczne uruchomienia zadań są zorganizowane według zakresów czasu.

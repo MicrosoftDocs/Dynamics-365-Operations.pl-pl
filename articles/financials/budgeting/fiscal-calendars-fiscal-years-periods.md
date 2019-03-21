@@ -3,7 +3,7 @@ title: Kalendarze, lata i okresy obrachunkowe
 description: W tym artykule omówiono narzędzia kalendarzy obrachunkowych, lat obrachunkowych i okresów oraz możliwości ich wykorzystywania dla firm, środków trwałych i budżetowania.
 author: aprilolson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 01f8f939079d55d5a75d1a4b1fd718bf2a3f9700
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361666"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778208"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Kalendarze, lata i okresy obrachunkowe
 
@@ -43,7 +43,7 @@ Okres zamknięcia jest używany do oddzielania transakcji księgi głównej, kt�
 Podczas tworzenia okresu zamknięcia, należy wybrać okres o stanie Otwarty i posiadający daty, które mają być użyte. Nowy okres zamknięcia skopiuje daty rozpoczęcia i zakończenia z istniejącego okresu. Pierwotny okres będzie istniał w dalszym ciągu. Na przykład należy wybrać Okres 12, który jest ostatnim okresem w roku obrachunkowym, a jego daty to 1 sierpnia do 31 sierpnia. Należy wprowadzić nazwę dla okresu zamknięcia, na przykład Zamknięcie. Po utworzeniu nowego okresu zamknięcia, użytkownik ma teraz pierwotny okres i okres zamknięcia. Oba rozpoczynają się dniu 1 sierpnia, a kończą 31 sierpnia.
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>Wybieranie kalendarzy obrachunkowych dla ksiąg, środkami trwałymi i cyklów budżetu
-Kalendarze obrachunkowe są używane z amortyzacją środków trwałych, transakcjami finansowymi i cyklami budżetu. Po utworzeniu kalendarza obrachunkowego, można go używać do obsługi wielu celów. Można wybrać kalendarz obrachunkowy dla modelu ewidencji lub księgi amortyzacji z myślą o kalendarzu środków trwałych. Można wybrać kalendarz obrachunkowy dla księgi z myślą o kalendarzu księgi. Ponadto można wybrać kalendarz obrachunkowy dla cyklu budżetu z myślą o kalendarzu budżetu. Dla wszystkich opcji można używać tego samego kalendarza obrachunkowego.
+Kalendarze obrachunkowe są używane z amortyzacją środków trwałych, transakcjami finansowymi i cyklami budżetu. Po utworzeniu kalendarza obrachunkowego, można go używać do obsługi wielu celów. Można wybrać kalendarz obrachunkowy dla księgi środków trwałych i ustawić go jako kalendarz środków trwałych. Można wybrać kalendarz obrachunkowy dla księgi z myślą o kalendarzu księgi. Ponadto można wybrać kalendarz obrachunkowy dla cyklu budżetu z myślą o kalendarzu budżetu. Dla wszystkich opcji można używać tego samego kalendarza obrachunkowego.
 
 ### <a name="select-a-fiscal-calendar-for-your-legal-entity"></a>Wybierz kalendarz obrachunkowy dla danej firmy.
 
@@ -51,7 +51,7 @@ Formularz Księga umożliwia wybranie kalendarza obrachunkowego, który ma być 
 
 ### <a name="select-a-fiscal-calendar-for-fixed-assets"></a>Wybierz kalendarz obrachunkowy dla środków trwałych
 
-Można wybrać kalendarz obrachunkowy dla modelu ewidencji lub księgi amortyzacji, tak że kalendarz obrachunkowy będzie używany przez środki trwałe korzystające z wybranego modelu ewidencjonowania lub księgi amortyzacji. Można wybrać dowolne kalendarze obrachunkowe zdefiniowane na stronie Kalendarze obrachunkowe.
+Można wybrać kalendarz obrachunkowy dla księgi środków trwałych, tak że kalendarz obrachunkowy będzie używany przez środki trwałe korzystające z wybranego modelu ewidencjonowania lub księgi amortyzacji. Można wybrać dowolne kalendarze obrachunkowe zdefiniowane na stronie Kalendarze obrachunkowe.
 
 ### <a name="define-budget-cycle-time-spans"></a>Określanie okresów cyklu budżetu
 

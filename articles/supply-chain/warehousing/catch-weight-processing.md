@@ -3,7 +3,7 @@ title: Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzan
 description: W tym temacie opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 5161860e3b1c5b0ae795d109159268be085ec5af
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
+ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334066"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "777279"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem
-[!include [preview banner](../../includes/preview-banner.md)]
+
 [!include [banner](../includes/banner.md)]
 
-**Funkcja ekspozycji**
+## <a name="feature-exposure"></a>Funkcja ekspozycji
 
 Aby używać funkcji zarządzania magazynem do przetwarzania ilości efektywnej produktów, trzeba użyć klucza konfiguracji licencji do włączania tej funkcji. (Wybierz kolejno opcje **Administrowanie systemem \> Ustawienia \> Konfiguracja licencji**. Następnie na karcie **Klucze konfiguracji** rozwiń opcje **Handel \> Zarządzanie magazynem i transportem** i zaznacz pole wyboru dla **Ilość efektywna dla magazynu**).
 
 > [!NOTE]
-> Zarówno klucz konfiguracji licencji **Zarządzanie magazynem i transportem**, jak i klucz konfiguracji licencji **Dystrybucja procesów ilości efektywnej** muszą być również włączone.
+> Zarówno klucz konfiguracji licencji **Zarządzanie magazynem i transportem**, jak i klucz konfiguracji licencji **Dystrybucja procesów \>ilości efektywnej** muszą być również włączone.
 
 Po włączeniu klucza konfiguracji licencji, gdy tworzysz zwolniony produkt, możesz wybierać **Ilości efektywną**. Można także skojarzyć zwolniony produkt z grupą wymiarów magazynowania, dla której wybrany jest parametr **Użyj procesów zarządzania magazynami**.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 082ad886f40a52457900523f44158da3ed939458
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5326642553c7efcebc6c6af953e2dafe9e62e9ec
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "357940"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832202"
 ---
 # <a name="electronic-messaging"></a>Obsługa wiadomości elektronicznych
 
@@ -69,6 +69,7 @@ Jeśli nie importujesz pakietu jednostek danych, możesz ręcznie ustawić funkc
 - [Dodatkowe pola](#additional-fields)
 - [Ustawienia klasy wykonywalnej](#executable-class-settings)
 - [Akcje wypełniania rekordów](#populate-records-actions)
+- [Aplikacje sieci Web](#web-applications)
 - [Ustawienia usługi sieci Web](#web-service-settings)
 - [Akcje przetwarzania wiadomości](#message-processing-actions)
 - [Przetwarzanie wiadomości elektronicznych](#electronic-message-processing)
@@ -85,27 +86,49 @@ Typy elementów wiadomości określają typy rekordów, które będą używane w
 
 Stany elementu wiadomości określają stany, które będą stosowane w elementach wiadomości w przetwarzaniu, które konfigurujesz. Można skonfigurować typy elementów wiadomości na stronie **Stany elementów wiadomości** (**Podatek** \> **Ustawienia** \> **Wiadomości elektroniczne**\> **Stany elementów wiadomości**).
 
+Parametr stanu elementu wiadomości **Zezwalaj na usuwanie** określa, czy użytkownik może usunąć pozycję wiadomości w tym stanie przez formularz **wiadomości elektroniczne** lub **Elementy wiadomości elektronicznych**. 
+
 ### <a name="message-statuses"></a>Stany wiadomości
 
 Ustaw stany wiadomości, które mają być dostępne w przetwarzania wiadomości. Można skonfigurować stany wiadomości na stronie **Stany wiadomości** (**Podatek** \> **Ustawienia** \> **Wiadomości elektroniczne**\> **Stany wiadomości**).
+
+Opis pola:
+
+| Nazwa pola           | Opis |
+|----------------------|-------------|
+|Stan wiadomości        | Unikatowa nazwa stanu wiadomości elektronicznej, który oznacza stan wiadomości w każdym okresie czasu. Ta nazwa jest pokazywana w formularzu wiadomości elektronicznej i w dzienniku związanym z wiadomością elektroniczną. |
+|Opis           | Opis związany ze stanem wiadomości elektronicznej      |
+|Typ odpowiedzi         | Niektóre akcje w przetwarzaniu mogą spowodować więcej niż jeden typ odpowiedzi. Jak na przykład akcja typu **usługa sieci Web** może spowodować typ odpowiedzi albo **pomyślnie wykonane** albo **błąd techniczny** w zależności od wyniku jej wykonania. W takim przypadku należy zdefiniować stan komunikatu dla obu typów odpowiedzi. Zobacz [Typy akcji przetwarzania wiadomości](#message-processing-action-types), aby uzyskać więcej informacji dotyczących typów akcji i związanych z nimi typów odpowiedzi. |
+|Stan elementu wiadomości   |Istnieją przypadki, gdy stan wiadomości elektronicznej musi mieć wpływ na statusy elementów pokrewnych wiadomości. Skojarz taki status elementu wiadomości w tym polu poprzez wybranie go z wyszukiwania. |
+|Zezwalaj na usuwanie          | Parametr stanu elementu wiadomości elektronicznej **Zezwalaj na usuwanie** określa, czy użytkownik może usunąć wiadomość elektroniczną w tym stanie przez formularz **wiadomości elektroniczne**.            |
 
 ### <a name="additional-fields"></a>Dodatkowe pola
 
 Funkcja wiadomości elektronicznych umożliwia wypełnianie rekordów na podstawie tabeli transakcji. W ten sposób można przygotować rekordy do raportowania i je raportować. Czasami nie ma wystarczających informacji w tabeli transakcji do zraportowania rekordu zgodnie z wymaganiami raportu. Możesz wypełnić wszystkie informacje, które muszą zostać przekazane dla rekordu, ustawiając dodatkowe pola. Dodatkowe pola mogą być skojarzone zarówno z wiadomościami, jak i elementami wiadomości. Możesz ustawić dodatkowe pola na stronie **dodatkowe pola** (**Podatek**\>**ustawienia**\>**wiadomości elektroniczne**\>**dodatkowe pola**).
 
-W poniższej tabeli opisano pola znajdujące się na stronie **Dodatkowe pola**.
+W poniższej tabeli opisano ogólne pola znajdujące się na stronie **Dodatkowe pola**.
 
-| Pole                | opis |
+| Pole                | Opis |
 |----------------------|-------------|
 | Nazwa pola           | Wprowadź nazwę dodatkowego atrybutu elementów wiadomości, które są związane z procesem. Ta nazwa jest wyświetlana w interfejsie użytkownika podczas pracy z procesem. Może również być używana w konfiguracjach ER, które są związane z procesem. |
 | opis          | Wprowadź opis dodatkowego atrybutu elementów wiadomości, które są związane z procesem. |
-| Wartość pola          | Wprowadź wartość pola, która ma być użyta w odniesieniu do elementu wiadomości podczas raportowania. |
-| Opis pola    | Wprowadź opis pola, który ma być użyty w odniesieniu do elementu wiadomości podczas raportowania. |
+| Edycja użytkownika            | W przypadku gdy użytkownik musi mieć możliwość zmiany wartości dodatkowych pól z interfejsu użytkownika, ustaw to pole wyboru jako **tak**, w przeciwnym razie jako **nie**. |
+| Licznik              | Gdy dodatkowe pole musi zawierać numer sekwencyjny w wiadomości elektronicznej, zaznacz to pole wyboru. Wartości dodatkowe pola są wypełniane automatycznie podczas uruchamiania akcji typu „Eksport raportowania elektronicznego”.  |
+| Ukryte               | Jeśli dodatkowe pole musi być ukryte w interfejsie użytkownika, zaznacz to pole wyboru.  |
+
+Pozostałe pola mogą mieć różne wartości dla przetwarzania. Wartości te można zdefiniować na skróconej karcie wartości:
+
+| Pole                | Opis |
+|----------------------|-------------|
+| Wartość pola          | Wprowadź wartość pola, która ma być użyta w odniesieniu do wiadomości lub elementu wiadomości podczas raportowania. |
+| Opis pola    | Wprowadź opis pola, który ma być użyty w odniesieniu do wiadomości lub elementu wiadomości podczas raportowania. |
 | Typ konta         | Niektóre wartości pola dodatkowego mogą być ograniczone do określonych typów kont. Wybierz jedną z następujących wartości: **wszystkie**, **odbiorca** lub **dostawca**. |
 | Kod konta         | Jeśli wybrano opcję **odbiorcy** lub **dostawcy** w polu **typ konta**, możesz dodatkowo ograniczyć użycie wartości pól do określonej grupy lub tabeli. |
 | Numer konta/grupy | W przypadku wybrania **odbiorcy** lub **dostawcy** w polu **typ konta** i po wprowadzeniu grupy lub tabeli w polu **kod konta** można wprowadzić określoną grupę lub kontrahenta w tym polu. |
 | Weszła w życie            | Umożliwia wybranie daty rozpoczęcia uwzględniania wartości. |
 | Data wygaśnięcia           | Umożliwia wybranie daty zakończenia uwzględniania wartości. |
+
+Kombinacje kryteriów określonych w **numer konta/grupy**, **kod konta**, **data wprowadzenia**, **data ważności** nie wpływają domyślnie na wybór wartości dodatkowych pól, ale mogą być używane w klasie wykonywalnej do wprowadzenia w życie niektórych określonych logik obliczania wartości dodatkowej pola.
 
 ### <a name="executable-class-settings"></a>Ustawienia klasy wykonywalnej
 
@@ -120,6 +143,8 @@ Można ręcznie ustawić klasę wykonywalną na stronie **Ustawienia klasy wykon
 | Nazwa klasy wykonywalnej | Wybierz klasę wykonywalną X ++. |
 | Poziom wykonywania       | To pole jest ustawiane automatycznie, ponieważ wartość powinna być wstępnie zdefiniowana dla wybranej klasy wykonywalnej. To pole ogranicza poziom, przy którym jest uruchamiana powiązana ocena. |
 | Opis klasy     | To pole jest ustawiane automatycznie, ponieważ wartość powinna być wstępnie zdefiniowana dla wybranej klasy wykonywalnej. |
+
+Niektóre klasy wykonywalne mogą mieć wymagane parametry, które muszą być zdefiniowane zanim klasa wykonywalna zostanie uruchomiona po raz pierwszy. Aby zdefiniować takie parametry, kliknij przycisk **parametry** w okienku akcji, ustaw odpowiadające wartości i pola w oknie dialogowym i kliknij przycisk **OK**. Ważne jest, aby kliknąć przycisk **OK** tutaj, ponieważ w przeciwnym razie parametry nie zostaną zapisane w bazie i klasa wykonywalna nie zostanie poprawnie wywołana.
 
 ### <a name="populate-records-actions"></a>Akcje wypełniania rekordów
 
@@ -143,6 +168,37 @@ Na skróconej karcie **ustawienia źródeł danych** dodaj wiersz dla każdego �
 | Pole konta dokumentu | Wybierz pole, z którego ma być pobrane konto dokumentu w wybranej tabeli. |
 | Zapytanie użytkownika             | Jeśli to pole wyboru jest zaznaczone, istnieje możliwość ustawienia kwerendy przez zaznaczenie **Edytuj kwerendę** powyżej siatki. W przeciwnym razie będą wypełnione wszystkie rekordy ze źródła danych. |
 
+### <a name="web-applications"></a>Aplikacje sieci Web
+
+Strona aplikacji sieciowych umożliwia ustawianie parametrów aplikacji sieciowych, tak aby obsługiwały otwarty standard OAuth 2.0, co pozwala przyznać „bezpieczny delegowany dostęp” do aplikacji w imieniu użytkownika, bez udostępniania poświadczeń dostępu. Na tej stronie można także przejść przez proces autoryzacji, otrzymując kod autoryzacji i token dostępu. Istnieje możliwość ustawienia aplikacji sieci web na stronie **ustawienia aplikacji sieci Web** (**Podatek**\>**ustawienia**\>**wiadomości elektroniczne**\>**ustawienia aplikacji sieci Web**) .
+
+W poniższej tabeli opisano pola znajdujące się na stronie **Ustawienia aplikacji sieci Web**.
+
+| Pole                         | Opis |
+|-------------------------------|-------------|
+| Nazwa aplikacji              | Wprowadź nazwę składnika aplikacji sieci Web. |
+| Opis                   | Umożliwia wprowadzanie opisu aplikacji sieci web. |
+| Podstawowy adres URL                      | Umożliwia wprowadzenie podstawowego adresu internetowego aplikacji sieci Web. |
+| Ścieżka URL autoryzacji        | Określ ścieżkę do utworzenia adresu URL dla autoryzacji.  |
+| Ścieżka URL tokenu                | Określ ścieżkę do utworzenia adresu URL dla tokenu.  |
+| Adres URL przekierowania                  | Wprowadź adres URL przekierowania.  |
+| Identyfikator klienta                     | Wprowadź identyfikator klienta aplikacji sieci web.  |
+| Wpis tajny klienta                 | Wprowadź wpis tajny klienta aplikacji sieci web.  |
+| Token serwera                  | Wprowadź token serwera aplikacji sieci web.  |
+| Mapowanie formatu autoryzacji  | Wybierz format raportowania elektronicznego, który będzie używany do generowania żądania autoryzacji.   |
+| Mapowanie modelu tokenu importu    | Wybierz mapowanie modelu importowania raportu elektronicznego używane do przechowywania tokenu dostępu.  |
+| Przyznany zakres      token dostępu wygaśnie za  | To pole zostanie automatycznie zaktualizowane. Wartość zawiera przyznany zakres żądań do aplikacji sieci web.  |
+| Zaakceptuj                        | Określ właściwość akceptacji żądania sieciowego. Na przykład „application/vnd.hmrc.1.0+json”.  |
+| Typ zawartości           | Określ typ zawartości. Na przykład „application/json”.  |
+
+Następujące funkcje są dostępne na stronie **aplikacje sieciowe** obsługujące proces autoryzacji:
+-   **Pobierz kod autoryzacji:** Inicjowanie autoryzacji aplikacji sieci web.
+-   **Uzyskać tokenu dostępu** — inicjowanie pobierania tokenu dostępu.
+-   **Odśwież token dostępu** — Aby odświeżyć tokenu dostępu.
+
+Gdy token dostępu do aplikacji sieci web przechowywany w bazie danych systemu w formacie zaszyfrowanym może służyć do żądań do usługi sieci web. Ze względów bezpieczeństwa dostęp do tokenu dostępu musi być ograniczony tylko do tych ról zabezpieczeń, które muszą mieć możliwość odpowiedzi na te żądania. Gdy użytkownik spoza grupy zabezpieczeń próbuje odpowiedzieć na żądanie, wyjątek poinformuje go, że nie ma uprawnień do współdziałania w wybranej aplikacji sieci web.
+Użyj szybkiej tabeli **ról zabezpieczeń** na stronie Podatek > Ustawienia > wiadomości elektroniczne > aplikacje sieci Web, aby skonfigurować role, które muszą zawierać dostęp do tokenu dostępu. Gdy role zabezpieczeń nie zostały zdefiniowane dla aplikacji sieci web, administrator systemu tylko będzie mógł współpracować przy użyciu tej aplikacji sieci web.
+
 ### <a name="web-service-settings"></a>Ustawienia usługi sieci Web
 
 Ustawienia usługi sieci web umożliwiają konfigurowanie bezpośredniego przesyłania danych do usługi sieci web. Istnieje możliwość ustawienia usługi sieci web na stronie **ustawienia usługi sieci Web** (**Podatek**\>**ustawienia**\>**wiadomości elektroniczne**\>**ustawienia usługi sieci Web**) .
@@ -153,13 +209,17 @@ W poniższej tabeli opisano pola znajdujące się na stronie **Ustawienia usług
 |-------------------------|-------------|
 | Usługa sieci Web             | Wprowadź nazwę składnika usługi sieci Web. |
 | opis             | Umożliwia wprowadzanie opisu usługi sieci web. |
-| Adres internetowy        | Umożliwia wprowadzenie adresu internetowego usługi sieci Web. |
+| Adres internetowy        | Umożliwia wprowadzenie adresu internetowego usługi sieci Web. Jeśli dla usługi sieciowej jest określona aplikacja sieci web i adres internetowy powinien być taki sam, jak zdefiniowany dla wybranej aplikacji sieci web, kliknij **Kopiuj bazowy URL**, aby skopiować **Bazowy URL** z aplikacji sieci web do pola **adres internetowy** usługi sieciowej.  |
 | Certyfikat             | Wybierz certyfikat Key Vault, który został wcześniej skonfigurowany. |
+| Aplikacja sieci Web         | Wybierz certyfikat Key Vault, który został wcześniej skonfigurowany. |
 | Typ odpowiedzi — XML | Ustaw tę opcję na **Tak** w przypadku typu odpowiedzi XML. |
 | Metoda żądania          | Określ metodę żądania. HTTP definiuje zestaw metod zapytania, który wskazuje akcję, która powinna być wykonywana dla danego zasobu. Metoda może być **GET**, **POST**, lub inną metodą HTTP. |
 | Nagłówki żądań         | Określ żądania nagłówka. Żądanie nagłówka jest nagłówkiem protokołu HTTP, który może zostać użyty w żądaniu HTTP, a który nie jest powiązany z zawartością wiadomości. |
+| Zaakceptuj                  | Określ właściwość akceptacji żądania sieciowego. |
 | Akceptuj kodowanie         | Określ akceptowanie kodowania. Nagłówek HTTP żądania akceptowania kodowania anonsuje kodowanie zawartości, które klient może zrozumieć. To kodowanie zawartości jest zazwyczaj algorytmem kompresji. |
 | Typ zawartości            | Określ typ zawartości: Nagłówek jednostki typu zawartości wskazuje typ nośnika zasobu. |
+| Kod pomyślnej odpowiedzi   | Określ status HTTP określający, że żądanie zakończyło się pomyślnie. |
+| Mapowanie formatu nagłówków żądań  | Wybierz format raportowania elektronicznego do generowania nagłówków żądania sieci web. |
 
 ### <a name="message-processing-actions"></a>Akcje przetwarzania wiadomości
 
@@ -173,16 +233,20 @@ W poniższych tabelach opisano pola na stronie **Akcje przetwarzania wiadomości
 |-------------------------|-------------|
 | Typ akcji             | Umożliwia wybranie typu akcji. Aby uzyskać informacje o dostępnych opcjach, zobacz sekcję [Typy akcji przetwarzania wiadomości](#message-processing-action-types). |
 | Mapowanie formatu          | Wybierz format ER, który powinien zostać wywołany dla akcji. To pole jest dostępne tylko dla działań tupu **Eksport raportowania elektronicznego**, **Import raportowania elektronicznego**, i **Wiadomość dotycząca eksportu raportowania elektronicznego**. |
-| Typ elementu wiadomości       | Wybierz typ rekordów, dla których powinna być oceniana akcja. To pole jest dostępne dla działań tupu **Poziom wykonywania elementu wiadomości**, **Eksport raportowania elektronicznego**, i **Import raportowania elektronicznego** i innych typów. Jeśli to pole pozostanie puste, wszystkie typy elementów wiadomości zdefiniowanych dla przetwarzania wiadomości są sprawdzane. |
+| Mapowanie formatu w ścieżce URL | Wybierz format ER, który powinien zostać wywołany dla akcji. To pole jest dostępne tylko dla działań **usługi sieci Web** i jest używane do określania ścieżki adresu URL, który zostanie dodany do podstawowego adresu internetowego określonego dla wybranego serwera sieci web. |
+| Typ elementu wiadomości       | Wybierz typ rekordów, dla których powinna być oceniana akcja. To pole jest dostępne dla działań tupu **Poziom wykonywania elementu wiadomości**, **Eksport raportowania elektronicznego**, i **Import raportowania elektronicznego**, **Usługa sieci Web** i innych typów. Jeśli to pole pozostanie puste, wszystkie typy elementów wiadomości zdefiniowanych dla przetwarzania wiadomości są sprawdzane. |
 | Klasa wykonywalna        | Wybierz ustawienia klasy wykonywalnej utworzone wcześniej. To pole jest dostępne tylko dla działań typu **Poziom wykonywania elementu wiadomości** i **Poziom wykonywania elementu wiadomości**. |
 | Akcja wypełniania rekordów | Wybierz akcję Wypełnij rekordy, która została wcześniej skonfigurowana. To pole jest dostępne tylko dla działań typu **Wypełnij rekordy**. |
+| Usługa sieci Web  | Wybierz usługę sieci web, która została wcześniej skonfigurowana. To pole jest dostępne tylko dla działań typu **Usługa sieci Web**.  |
+| Nazwa pliku  | Określ nazwę pliku, co spowoduje akcję w odpowiedzi z serwera sieci web lub generowania raportu. To pole jest dostępne tylko dla działań **usługi sieci Web** i **Wiadomość eksportu raportowania elektronicznego**.   |
+| Pokaż okno dialogowe  | Zaznacz to pole wyboru, jeśli okno dialogowe musi być widoczne dla użytkownika przed generowaniem raportu. To pole jest dostępne tylko dla działań typu **Wiadomość eksportu raportowania elektronicznego**.   |
 
 ##### <a name="message-processing-action-types"></a>Typy akcji przetwarzania wiadomości
 
 W polu **Typ akcji** są dostępne następujące opcje:
 
-- **Wypełnij rekordy** — akcję **Wypełnij rekordy** należy wcześniej skonfigurować. Skojarz ją z akcją typu **Wypełnij rekordy**, aby umożliwić jej przetwarzanie. Zakłada się, że ten typ akcji jest używany dla pierwszej akcji w przetwarzaniu wiadomości. Z tego względu tylko stan wyniku można skonfigurować dla tego typu akcji. Nie można ustawić stanu początkowego.
 - **Utwórz wiadomość** — użycie tego typu umożliwia użytkownikom ręczne tworzenia wiadomości na stronie **Wiadomość elektroniczna**. Stanu wyniku nie można skonfigurować dla tego typu akcji.
+- **Wypełnij rekordy** — akcję **Wypełnij rekordy** należy wcześniej skonfigurować. Skojarz ją z akcją typu **Wypełnij rekordy**, aby umożliwić jej przetwarzanie. Zakłada się, że ten typ akcji jest używany dla pierwszej akcji w trakcie przetwarzania wiadomości (gdy nie jest tworzona wiadomość z wyprzedzeniem) lub jako akcja dodawania elementów wiadomości do wcześniej utworzonej wiadomości (przez akcję typu **Utwórz wiadomość**). Z tego względu można ustawić tylko stan wyniku elementów wiadomości dla tego typu akcji. Stan początkowy można ustawić tylko dla wiadomości.
 - **Poziom wykonywania wiadomości** — Użyj tego typu, aby skonfigurować wykonywalną klasę, która powinna zostać oceniona na poziomie wiadomości.
 - **Poziom wykonywania elementu wiadomości** — Użyj tego typu, aby skonfigurować wykonywalną klasę, która powinna zostać oceniona na poziomie elementu wiadomości.
 - **Eksport raportowania elektronicznego** — użyj tego szablonu dla akcji, które powinny generować raport, który opiera się na eksportowaniu konfiguracji ER na poziomie elementu wiadomości.
@@ -190,15 +254,15 @@ W polu **Typ akcji** są dostępne następujące opcje:
 - **Import raportowania elektronicznego** — użyj tego szablonu dla akcji, które powinny generować raport, który opiera się na importowaniu konfiguracji ER.
 - **Wiadomość dotycząca przetwarzania poziomu użytkownika** — użyj tego szablonu dla akcji, które zakładają wykonywanie niektórych akcji ręcznie przez użytkownika. Na przykład użytkownik może aktualizować stan wiadomości.
 - **Przetwarzanie użytkownika** — użyj tego szablonu dla akcji, które zakładają wykonywanie niektórych akcji ręcznie przez użytkownika. Na przykład użytkownik może aktualizować stan elementów wiadomości.
-- **Usługa sieci Web** — użyj tego szablonu dla akcji, które powinny przekazywać wygenerowany raport do usługi sieci web. Ten typ akcji nie jest używany do raportów komunikacji związanej z fakturami sprzedaży/zakupu we Włoszech.
+- **Usługa sieci Web** — użyj tego szablonu dla akcji, które powinny przekazywać wygenerowany raport do usługi sieci web. Ten typ akcji nie jest używany do raportów komunikacji związanej z fakturami sprzedaży/zakupu we Włoszech. W przypadku akcji typu **usługa sieci Web** można określić **tekst potwierdzenia** na szybkiej karcie **dodatkowe szczegóły** w obszarze **akcje przetwarzania wiadomości**. Ten tekst potwierdzenia będzie widoczny dla użytkownika zanim zostanie udzielona odpowiedź na żądanie do wybranej usługi sieciowej.
 - **Weryfikacja żądania** — użyj tego typu, aby żądać weryfikacji z serwera.
 
 #### <a name="initial-statuses-fasttab"></a>Skrócona karta Stany początkowe
 
 > [!NOTE]
-> Skrócona karta **Stany początkowe** nie jest dostępna dla akcji, które mają typ początkowy **Wypełnij rekordy** lub **Utwórz wiadomość**.
+> Skrócona karta **Stany początkowe** nie jest dostępna dla akcji, które mają typ początkowy **Utwórz wiadomość**.
 
-| Pole               | opis                                                                                         |
+| Pole               | Opis                                                                                         |
 |---------------------|-----------------------------------------------------------------------------------------------------|
 | Stan elementu wiadomości | Wybierz status elementu wiadomości, dla której ma być oceniana wybrana akcji przetwarzania wiadomości. |
 | opis         | Opis wybranego stanu elementu wiadomości.                                                  |
@@ -212,11 +276,29 @@ W polu **Typ akcji** są dostępne następujące opcje:
 | Typ odpowiedzi       | Typ odpowiedzi wybranego stanu wiadomości. |
 | Stan elementu wiadomości | Wybierz stany wynikowe, które powinny być dostępne po ocenie wybranej akcji przetwarzania wiadomości. To pole jest dostępne tylko dla akcji przetwarzania wiadomości, które zostały ocenione na poziomie elementu wiadomości. Na przykład jest dostępne dla akcji typu **Przetwarzanie użytkownika** i **Poziom wykonywania elementu wiadomości**. W przypadku akcji przetwarzania, które są oceniane na poziomie wiadomości, to pole wyświetla stan pozycji wiadomości, który został skonfigurowany dla stanu wybranej wiadomości. |
 
+W poniższej tabeli przedstawiono, które stany wyników muszą być ustawione w odniesieniu do typów akcji:
+
+| Typ akcji wiadomości elektronicznej \ Typ odpowiedzi  | Wykonano pomyślnie  | Błąd biznesowy  | Błąd techniczny  | Definiowana przez użytkownika  | Anulowanie  |
+|-------------------------------------------------|--------------|---------|-------|-----|-----------------|
+| Utwórz komunikat                                  | X            |         |       |     |                 |
+| Eksport raportowania elektronicznego                     | X            |         |       |     |                 |
+| Import raportowania elektronicznego                     |              |         |       |     |                 |
+| Usługa sieci Web                                     | X            |         | X     |     |                 |
+| Przetwarzanie użytkownika                                 |              |         |       |     |                 |
+| Poziom wykonywania wiadomości                         |              |         |       |     |                 |
+| Wypełnij rekordy                                |              |         |       |     |                 |
+| Poziom wykonywania elementu wiadomości                    |              |         |       |     |                 |
+| Weryfikacja żądania                            | X            |  X      | X     |     |                 |
+| Wiadomość dotycząca eksportu raportowania elektronicznego             | X            |         |       |     |                 |
+| Wiadomość dotycząca przetwarzania poziomu użytkownika                   |              |         |       |     |                 |
+
 ### <a name="electronic-message-processing"></a>Przetwarzanie wiadomości elektronicznych
 
-Wiadomość elektroniczna jest pojęciem podstawowych funkcji Wiadomości elektroniczne. Agreguje akcje, które mają być wykonywane dla wiadomości elektronicznych. Akcje można połączyć za pomocą stanu początkowego i stanu wynikowego. Ewentualnie akcje typu **Przetwarzanie użytkownika** mogą być rozpoczynane niezależnie. Na stronie **Przetwarzanie wiadomości elektronicznych** (**Podatek**\>**Ustawienia**\>**Wiadomości elektroniczne**\>**Przetwarzanie wiadomości elektronicznych**), można również wybrać dodatkowe pola, które mają być obsługiwane do przetwarzania.
+Wiadomość elektroniczna jest pojęciem podstawowych funkcji Wiadomości elektroniczne. Agreguje akcje, które mają być wykonywane dla wiadomości elektronicznych. Akcje można połączyć za pomocą stanu początkowego i stanu wynikowego. Ewentualnie akcje typu **Przetwarzanie użytkownika** mogą być rozpoczynane niezależnie. Na stronie **Przetwarzanie wiadomości elektronicznych** (**Podatek**\>**Ustawienia**\>**Wiadomości elektroniczne**\>**Przetwarzanie wiadomości elektronicznych**), można również wybrać dodatkowe pola, które mają być obsługiwane do przetwarzania na poziomie wiadomości lub elementu wiadomości.
 
-Skrócona karta **Akcja** pozwala na dodanie wstępnie zdefiniowanych akcji do przetwarzania. Można określić, czy akcję należy uruchomić osobno lub czy może być zainicjowana przez przetwarzanie. (Akcje użytkownika muszą być uruchamiane oddzielnie).
+Skrócona karta **Akcja** pozwala na dodanie wstępnie zdefiniowanych akcji do przetwarzania. Można określić, czy akcję należy uruchomić osobno lub czy może być zainicjowana przez przetwarzanie. Aby określić, czy akcja może być inicjowana tylko przez użytkownika, zaznacz pole **Uruchom osobno** dla akcji w przetwarzaniu. Usuń oznaczenie parametru **Uruchom osobno**, jeśli chcesz, aby akcja była uruchamiana przez przetwarzanie, gdy dla wiadomości lub elementów wiadomości w stanie określonym jako początkowy stan tej akcji. Akcja typu **akcji użytkownika** musi być uruchomiona oddzielnie. 
+
+Czasami może być potrzebne zagregowanie kilku akcji w sekwencji, nawet jeżeli pierwsza z nich jest zdefiniowana do uruchomienia osobno. Na przykład gdy jest wymagane, żeby generowanie raportu było inicjowane przez użytkownika, ale wygenerowany raport musi być natychmiast wysłany to usługi sieci web i odpowiedź z usługi sieci web musi być zarejestrowana w systemie. Do tego celu można użyć **nierozdzielnych sekwencji**. Aby to zrobić, naciśnij przycisk **nierozdzielnych sekwencji** w okienku akcji na karcie **akcji** na stronie **przetwarzania wiadomości elektronicznych**, utwórz sekwencję i wybierz ją w kolumnie **nierozdzielnych sekwencji** dla akcji, które muszą być uruchamiane zawsze razem. Pierwsza akcja w takim przypadku może być ustawiona jako **uruchomić oddzielnie**, ale wszystkie inne nie.
 
 Skrócona karta **Dodatkowe pola elementów wiadomości** pozwala na dodanie wstępnie zdefiniowanych dodatkowych pól, które są związane z elementami wiadomości. Należy dodać dodatkowe pola dla każdego typu elementu wiadomości do którego odnoszą się pola.
 
@@ -238,16 +320,22 @@ Skrócona karta **Wiadomości** pokazuje wiadomości elektroniczne dla wybranego
 
 - **Nowy** – ten przycisk jest skojarzony z akcjami typu **Utwórz wiadomość**.
 - **Usuń** — ten przycisk jest dostępny, jeśli jest zaznaczone pole wyboru **Zezwalaj na usuwanie** dla bieżącego stanu wybranej wiadomości.
+- **Zbieranie danych** — ten przycisk jest skojarzony z typem akcji **wypełnienia rekordów**.
 - **Generuj raport** — ten przycisk jest skojarzony z akcjami typu **Wiadomość dotycząca eksportu raportowania elektronicznego**.
 - **Wyślij raport** – ten przycisk jest skojarzony z akcjami typu **Usługa sieci web**.
+- **Importuj raport** — ten przycisk jest skojarzony z akcjami typu **Import raportu elektronicznego**.
 - **Aktualizuj stan** — ten przycisk jest skojarzony z akcjami typu **Wiadomość dotycząca przetwarzania poziomu użytkownika** typu.
 - **Element wiadomości** – otwórz stronę **Elementy wiadomości elektronicznej**.
 
-Skrócona karta **Dziennik akcji** wyświetla informacje o wszystkich akcjach uruchomionych dla wybranej wiadomości.
+Skrócona karta **Dziennik akcji** wyświetla informacje o wszystkich akcjach uruchomionych dla wybranej wiadomości. Jeśli akcja spowodowała błąd, informacje o błędzie są dołączane do powiązanego wiersza dziennika akcji. Wybierz wiersz i kliknij przycisk **spinacz** w prawym górnym rogu na stronie, aby zapoznać się z informacjami o błędzie.
 
 Skrócona karta **Dodatkowe pola wiadomości** pokazuje wszystkie dodatkowe pola, które są zdefiniowane dla wiadomości w ustawieniach przetwarzania. Pokazuje także wartości z tych dodatkowych pól.
 
-Skrócona karta **Elementy wiadomości** pokazuje wszystkie elementy wiadomości, które są powiązane z wybraną wiadomością.
+Skrócona karta **Elementy wiadomości** pokazuje wszystkie elementy wiadomości, które są powiązane z wybraną wiadomością. Dla każdego z elementów wiadomości może być użyta następująca funkcja w zależności od statusu tego elementu wiadomości:
+
+- **Usuń** — ten przycisk jest dostępny, jeśli jest zaznaczone pole wyboru **Zezwalaj na usuwanie** dla bieżącego stanu wybranego elementu wiadomości.
+- **Aktualizuj stan** — ten przycisk jest skojarzony z akcjami typu **Przetwarzanie przez użytkownika**.
+- **Oryginalny dokument** — kliknięcie tego przycisku umożliwia użytkownikowi otworzenie strony z oryginalnego dokumentu wybranej wiadomości.
 
 Można przejrzeć wszystkie załączniki wybranej wiadomości. Załączniki to raporty, które zostały już wygenerowane i odebrane. Zaznacz wiadomość, aby przejrzeć załączniki, a następnie wybierz przycisk **Załącznik** w okienku akcji.
 

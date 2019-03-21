@@ -3,7 +3,7 @@ title: Klucze redukcji
 description: Ten artykuł zawiera przykłady pokazujące konfigurowanie klucza redukcji. Zawiera informacje o różnych ustawieniach kluczy redukcji i wynikach ich zastosowania. Za pomocą klucza redukcji można określić sposób zmniejszania prognozowanych zapotrzebowań.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e62431a1fdbeb81dda68297f034ee00adece079
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7457aca4ca4d5188bafb497d3052276cfc154ad1
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "364817"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770923"
 ---
 # <a name="reduction-keys"></a>Klucze redukcji
 
@@ -98,6 +98,7 @@ W większości przypadków systemy są skonfigurowane tak, aby transakcje zmniej
 
    W tej prognozie wyraźnie widać okres między datami prognozy: między pierwszą i drugą datą są 4 dni, a między drugą i trzecią jest 7 dni. Te różne zakresy to są okresy dynamiczne.
 2. Utwórz wiersze zamówienia sprzedaży w następujący sposób.
+
    | Data                             | Ilość dla zamówienia sprzedaży |
    |----------------------------------|----------------------|
    | 15 grudnia w poprzednim roku | 500                  |

@@ -3,7 +3,7 @@ title: Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
 description: Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania klientów w rozwiązaniu Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1fa38002377fac24a5f3e25bd5924ecb23fec70a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313596"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789876"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
 
@@ -69,7 +69,7 @@ Lokalne wyszukiwanie produktów jest teraz bardziej przyjazne dla użytkownika. 
 
 ## <a name="customer-search"></a>Wyszukiwanie odbiorcy
 
-Wyszukiwanie odbiorcy służy do znalezienia odbiorców w różnych celach. Kasjerzy mogą na przykład wyświetlić listę życzeń lub historię zakupów odbiorców albo dodać odbiorcę do transakcji. W przypadku wyszukiwania wielu słów kluczowych algorytm wyszukiwania odbiorcy zwraca wszystkich odbiorców zgodnych z dowolnym wyszukiwanym słowem kluczowym. Jednakże odbiorcy zgodni z większością słów kluczowych są wyświetlani na początku wyników. To zachowanie jest analogiczne do sposobu wyświetlania wyników przez inne mechanizmy wyszukiwania. Najpierw pokazują wyniki zgodne z największą liczbą wyszukiwanych terminów most, a następnie wyniki częściowo zgodne z wyszukiwanymi słowami kluczowymi. To zachowanie pomaga kasjerom w sytuacjach, gdy używają wielu słów kluczowych w wyszukiwaniu, ale jedno ze słów kluczowych zawiera błąd pisowni.
+Wyszukiwanie odbiorcy służy do znalezienia odbiorców w różnych celach. Kasjerzy mogą na przykład wyświetlić listę życzeń lub historię zakupów odbiorców albo dodać odbiorcę do transakcji. Algorytm wyszukiwania pasuje do warunków wyszukiwania pod kątem wartości w następujących właściwościach odbiorcy: nazwa, e-mail, telefon, numer karty lojalnościowej, adres i numer konta. Wśród tych właściwość nazwa zapewnia największą elastyczność w przypadku wyszukiwania według wielu słów kluczowych, ponieważ algorytm zwraca wszystkich odbiorców, którzy pasują do któregokolwiek z tych słów kluczowych, a odbiorcy, którzy pasują do większości słów kluczowych, są wyświetlani na górze wyników wyszukiwania. Ta funkcja pomaga kasjerom w sytuacjach, gdy szukają, wpisując pełne imiona i nazwiska, ale imię i nazwisko zostały zamienione podczas pierwotnego wprowadzania danych. Jednak ze względu na wydajność, wszystkie inne właściwości zachowują kolejność wyszukiwanych słów, więc jeśli słowa kluczowe nie są takie same jak kolejność przechowywanych danych, system nie zwróci żadnych wyników.
 
 Domyślnie wyszukiwanie odbiorców jest wykonywane w książkach adresowych odbiorców skojarzonych ze sklepem. Ten typ wyszukiwania jest nazywany *lokalnym wyszukiwaniem odbiorcy*. Pracownicy mogą jednak wyszukiwać odbiorców globalnie. Inaczej mówiąc, mogą przeszukiwać sklepy w firmie oraz we wszystkich innych firmach. Ten typ wyszukiwania jest nazywany *zdalnym wyszukiwaniem odbiorcy*.
 

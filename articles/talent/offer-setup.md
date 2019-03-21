@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
-ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
+ms.openlocfilehash: 43cf13d96e345747e06541267d820e17de7c1763
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "376514"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768889"
 ---
 # <a name="set-up-offer-management"></a>Konfigurowanie zarządzania ofertami 
 
@@ -199,11 +199,11 @@ Istnieje kilka etapów procesu tworzenia oferty, które mogą być konfigurowane
 - **Funkcje oferty dla kandydata** — Jako administrator możesz określić, czy wszystkie oferty mają datę ważności, a jeśli tak, ile powinien wynosić domyślny okres ważności oferty. Można również określić, czy kandydaci mają prawo odrzucać oferty.
 
 - **e-podpisy** — jako administrator, można także wybrać metodę używaną przez kandydatów do podpisywania ofert.
-    - Adobe Sign — wszystkie pakiety ofert będą wysyłane i podpisywane przez Adobe Sign. Każdy twórca oferty publikujący ofertę musi mieć licencję Adobe Sign połączoną z Attract. 
+    - Adobe Sign — wszystkie pakiety ofert będą wysyłane i podpisywane przez Adobe Sign. Każdy twórca oferty publikujący ofertę musi mieć konto Adobe Sign połączone z Attract. Licencje Adobe Sign i bezpłatna wersja próbna, zobacz ten [link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+    - DocuSign — wszystkie pakiety ofert będą wysyłane i podpisywane przez DocuSign. Każdy twórca oferty publikujący ofertę musi mieć konto DocuSign połączone z Attract. 
+    
     - ESign — jest to opcja domyślna, dostępna od razu po pierwszym uruchomieniu, zapewniająca użytkownikowi opcję podpisania oferty przez wpisanie imienia i nazwiska oraz inicjałów.
 
->[!NOTE]
-> Licencje Adobe Sign i bezpłatna wersja próbna, zobacz ten [link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
 Aby uzyskać więcej informacji o procesie tworzenia oferty, zobacz [Tworzenie, zatwierdzanie i podpisywanie ofert](./creating-offers.md).
