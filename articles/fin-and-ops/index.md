@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations
 description: Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 08/30/2018
+ms.date: 03/08/2019
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-ax-applications
-ms.technology: ''
+ms.technology: null
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: 'Core, Operations'
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302729"
 ---
+
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations
 
 [!include [banner](includes/banner.md)]
@@ -44,12 +40,26 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Microsoft Dynam
 <h3><a href="get-started/before-you-buy.md">Zanim kupisz</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Wybieranie opcji wdrożenia</a></p>
- <p><a href="get-started/purchase-on-premises.md">Kup rozwiązanie Finance and Operations (lokalne)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Kup rozwiązanie Finance and Operations (on-premises)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Cykl życia implementacji</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Rozpoczynanie korzystania z projektu</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Przygotowywanie do rozpoczęcia eksploatacji</a></p>
+
+<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Aktualizacje do jednej wersji usługi</a></h3>
+<p><a href="get-started/one-version.md">Aktualizacje do jednej wersji usługi — często zadawane pytania</a></p>
+<p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Zasady dotyczące cyklu życia oprogramowania: wersje chmurowe</a></p>
+<p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Zasady dotyczące cyklu życia oprogramowania: wersje lokalne</a></p>
+<p><a href="get-started/public-preview-releases.md">Standardowe i dostępne w programie Pierwsze wydanie aktualizacje usługi</a></p>
+<p><a href="get-started/whats-new-changed.md">Nowości i zmiany</a></p>
+<p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Uaktualnienia, aktualizacje i poprawki</a></p>
+<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Stosowanie aktualizacji do środowisk w chmurze</a></p>
+<p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Konfiguruj aktualizacje usługi</a></p>
+<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Wstrzymaj aktualizacje usługi</a></p>
+<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Odbieraj powiadomienia o aktualizacjach usług</a></p>
+<p><a href="../dev-itpro/data-entities/data-task-automation.md">Automatyzacja zadań danych</a></p>
+<p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
 
 <h3><a href="../financials/index.md">Zarządzanie finansami</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Rozrachunki z dostawcami</a></p>
@@ -71,6 +81,8 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Microsoft Dynam
 <p><a href="hr/manage-recruiting-process.md">Rekrutacja</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Lista płac (USA)</a></p>
 
+</td>
+<td>
 <h3><a href="../supply-chain/index.md">Zarządzanie łańcuchem dostaw</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Zarządzanie kosztami</a></p>
 <p><a href="../supply-chain/inventory/inventory-home-page.md">Zarządzanie zapasami</a></p>
@@ -82,8 +94,7 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Microsoft Dynam
 <p><a href="../supply-chain/transportation/transportation-management-overview.md">Zarządzanie transportem</a></p>
 <p><a href="../supply-chain/warehousing/warehouse-configuration.md">Zarządzanie magazynem</a></p>
 
-</td>
-<td>
+
 <h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Analizy</a></h3>
 <p><a href="../dev-itpro/analytics/analytics.md">Analizy</a></p>
  <p><a href="../dev-itpro/analytics/document-reporting-services.md">Dokumenty biznesowe</a></p>

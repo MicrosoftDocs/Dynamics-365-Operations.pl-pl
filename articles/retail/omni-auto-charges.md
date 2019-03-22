@@ -3,7 +3,7 @@ title: Wielokanałowe zaawansowane opłaty automatyczne
 description: W tym temacie opisano funkcje zarządzania opłatami za dodatkowe zamówienia dla zamówień kanału Retail przy użyciu zaawansowanych funkcji opłat automatycznych.
 author: hhaines
 manager: annbe
-ms.date: 01/22/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a980ae9571fb47522d3966dc172b2343641b827e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b63a1bb8791ab3f0c71a2fd03677e7d0bf71e62
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "345566"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789778"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Wielokanałowe zaawansowane opłaty automatyczne
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Ten temat zawiera informacje o konfiguracji i wdrażaniu funkcji zaawansowanych opłat automatycznych, które są dostępne w programie Dynamics 365 for Retail w wersji 10.0.
@@ -49,7 +48,7 @@ Na stronie **Handel detaliczny \> Ustawienia centrali \> Parametry \> Parametry 
 
 ![Parametr zaawansowanych opłat automatycznych](media/advancedchargesparameter.png)
 
-Po włączeniu zaawansowanych opłaty automatycznych użytkownicy nie są już monitowani o ręczne wprowadzanie opłat transportowych na terminalu POS podczas tworzenia zamówienia odbiorcy „wyślij wszystko” lub „wyślij wybrane”. Opłaty za zamówienie POS są systemowo obliczane i dodawane do transakcji POS (w przypadku znalezienia odpowiedniej tabeli opłat automatycznych pasującej do kryteriów tworzonego zamówienia). Użytkownik może również dodawać i obsługiwać opłaty na poziomie nagłówka lub wiersza ręcznie za pośrednictwem nowo dodanych operacji POS, które mogą być dodane do układów ekranu POS.  
+Po włączeniu zaawansowanych opłat automatycznych użytkownicy nie są już monitowani o ręczne wprowadzanie opłat transportowych na terminalu POS podczas tworzenia zamówienia odbiorcy „wyślij wszystko” lub „wyślij wybrane”. Opłaty za zamówienie POS są systemowo obliczane i dodawane do transakcji POS (w przypadku znalezienia odpowiedniej tabeli opłat automatycznych pasującej do kryteriów tworzonego zamówienia). Użytkownik może również dodawać i obsługiwać opłaty na poziomie nagłówka lub wiersza ręcznie za pośrednictwem nowo dodanych operacji POS, które mogą być dodane do układów ekranu POS.  
 
 Po włączeniu zaawansowanych opłat automatycznych, istniejące **Parametry sieci sprzedaży** dla **Kodu opłat transportowych** i **Zwrotu opłat transportowych** nie są używane. Parametry te mają zastosowanie tylko wtedy jeśli parametr **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych** ma wartość **Nie**.
 
@@ -67,6 +66,8 @@ Oto nowe operacje:
 - **143 — Oblicz ponownie opłaty** — umożliwia wykonanie pełnego ponownego obliczania opłat dla transakcji sprzedaży. Wszystkie wcześniej zastąpione przez użytkownika automatyczne opłaty dodatkowe zostaną przeliczone na podstawie bieżącej konfiguracji koszyka.  
 
 Tak jak w przypadku wszystkie operacji POS konfiguracja zabezpieczeń może również wymagać zatwierdzenia menedżera w celu wykonania operacji.
+
+Należy zwrócić uwagę, że powyżej wymienione operacje punktu sprzedaży można również dodawać do układu punktu sprzedaży nawet wtedy, gdy jest wyłączony parametr **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych**. W tym scenariuszu, organizacje będą nadal korzystać z dodanych udogodnień w postaci możliwości wyświetlenia recznie dodanych opłat i edytowania ich za pomocą operacji **Zarządzaj opłatami**. Użytkownicy mogą również korzystać z operacji **Dodaj opłaty z nagłówka** i **dodaj opłaty z wiersza** dla transakcji w punkcie sprzedaży, nawet wówczas, gdy jest wyłączony parametr **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych**. Operacja **Ponownie Oblicz opłaty** ma mniej funkcji, kiedy parametr **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych** jest wyłączony. W tym scenariuszu nie będziemy niczego ponownie przeliczać, a opłaty dodane ręcznie do transakcji zostaną zresetowane do wartości $0.00.
 
 ## <a name="use-case-examples"></a>Przykłady zastosowania
 W tej sekcji pokazano przykładu zastosowania, które pomogą zrozumieć konfigurację i używać automatycznych opłat dodatkowych i opłat różnych w kontekście zamówień w kanale sieci sprzedaży. Następujące przykłady przedstawiają sposób działania aplikacji po włączeniu parametru **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych**.
@@ -207,3 +208,7 @@ Zalecane jest, aby organizacja także dodała pola dowolnego tekstu do stopki pr
 ### <a name="preventing-charges-from-being-calculated-until-the-pos-order-is-completed"></a>Uniemożliwienie obliczania opłat aż do zamknięcia zamówienia POS
 
 Niektóre organizacje mogą woleć czekać, aż użytkownik zakończy dodawanie wszystkich wierszy sprzedaży do transakcji POS przed obliczeniem opłat. Aby zapobiec obliczaniu opłat w trakcie dodawania pozycji do transakcji POS, włącz parametr **Ręczne obliczanie opłat** w **Profilu funkcjonalnym** używanym w danym sklepie. Włączenie tego parametru będzie wymagać od użytkownika POS użycia operacji **Oblicz sumy** po zakończeniu dodawania produktów do transakcji POS. Operacja **Oblicz sumy** spowoduje następnie obliczenie wszelkich automatycznych opłat dodatkowych dla nagłówka lub wierszy zamówienia, stosownie do przypadku.
+
+### <a name="charges-override-reports"></a>Raporty zastępowania opłat
+
+Jeśli użytkownik ręcznie zastąpi obliczone opłaty lub doda ręcznie opłatę do transakcji, te dane będą dostępne na potrzeby audytu w raporcie **Historia zastąpień opłat**. Raport można znaleźć w menu **Handel detaliczny \> Zapytania i raporty \> Historia zastąpień opłat**.  Należy pamiętać, że dane potrzebne dla tego raportu będą importowane z bazy danych kanałów do Centrali za pośrednictwem zadań harmonogramu dystrybucji „P”. W związku z tym informacje o zastąpieniach właśnie wprowadzonych w punkcie sprzedaży mogą nie być natychmiast dostępne w tym raporcie, chyba że to zadanie przesłało dane o transakcjach w sklepie do centrali. 

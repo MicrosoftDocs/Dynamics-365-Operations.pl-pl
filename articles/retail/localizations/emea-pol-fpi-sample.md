@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-2-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 878e27a35dc73c37c25e1a92db4e8a4d8c87ec5b
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 386249a5a16aa76958efa5cbc3dd77ce5482dc5f
+ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377335"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "760774"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Przykładowa integracja drukarki fiskalnej dla Polski
 
@@ -189,8 +189,8 @@ Program obsługi jest dziedziczony z interfejsu **INamedRequestHandler**. Metoda
 - **GetSupportedRegistrableEventsDocumentProviderRequest** — to zapytanie zwraca listę zdarzeń do subskrybowania. Obecnie są obsługiwane następujące zdarzenia: sprzedaż, drukowanie raportu X i drukowanie końcowego raportu sprzedaży.
 - **SaveFiscalRegistrationResultDocumentProviderRequest** — to żądanie zapisuje odpowiedź z drukarki.
 
-
 ### <a name="configuration"></a>Konfiguracja
+
 Plik konfiguracyjny znajduje się w folderze **Konfiguracja** projektu rozszerzenia. Ten plik służy do obsługi konfiguracji ustawień dostawcy dokumentu z Centrali sieci sprzedaży. Format pliku jest zgodny z wymaganiami konfiguracji integracji fiskalnej. Dodano następujące ustawienia:
 
 - Mapowanie stawek VAT

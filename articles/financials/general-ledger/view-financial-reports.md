@@ -1,9 +1,9 @@
 ---
 title: Wyświetlanie raportów finansowych
-description: W tym artykule opisano sposób wyświetlania i eksplorowania sprawozdań finansowych w programie Microsoft Dynamics 365 for Finance and Operations. Artykuł zawiera informacje dotyczące różnych opcji, które można zastosować do sprawozdań finansowych, aby zmienić ich wygląd i zawarte dane.
+description: W tym temacie opisano sposób wyświetlania i eksplorowania sprawozdań finansowych w programie Microsoft Dynamics 365 for Finance and Operations. Artykuł zawiera informacje dotyczące różnych opcji, które można zastosować do sprawozdań finansowych, aby zmienić ich wygląd i zawarte dane.
 author: kweekley
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
+ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312952"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791448"
 ---
 # <a name="view-financial-reports"></a>Wyświetlanie raportów finansowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano sposób wyświetlania i eksplorowania sprawozdań finansowych w programie Microsoft Dynamics 365 for Finance and Operations. Artykuł zawiera informacje dotyczące różnych opcji, które można zastosować do sprawozdań finansowych, aby zmienić ich wygląd i zawarte dane.
+W tym temacie opisano sposób wyświetlania i eksplorowania sprawozdań finansowych w programie Microsoft Dynamics 365 for Finance and Operations. Artykuł zawiera informacje dotyczące różnych opcji, które można zastosować do sprawozdań finansowych, aby zmienić ich wygląd i zawarte dane.
 
 <a name="financial-reporting-overview"></a>Omówienie raportowania finansowego
 ----------------------------
@@ -67,18 +67,15 @@ Raport finansowy może być wyświetlany w dowolnej walucie w dowolnym momencie.
 ## <a name="display-a-summarized-view-of-the-financial-report"></a>Wyświetlanie sumarycznego widoku raportu finansowego
 Raport finansowy może zawierać wiersze szczegółów i wiersze zestawień. Wiersze szczegółów to wiersze, które zawierają konta głównego i wymiary. Wiersze zestawień to wiersze opisu, sumy i obliczeń. Aby wyświetlić tylko wiersze podsumowania raportu, kliknij przycisk **Pokaż**, a następnie kliknij przycisk **Tylko wiersze podsumowania**. Raport jest zwinięty i wyświetla tylko wiersze podsumowania. Aby wyświetlić wiersze szczegółów wraz z wierszami zestawień, kliknij **Pokaż**, a następnie kliknij ponownie przycisk **Tylko wiersze podsumowania**.
 
-## <a name="open-a-financial-report-from-a-previous-month"></a>Otwieranie raport finansowego z poprzedniego miesiąca
-Raporty można wyświetlać dla bieżącego miesiąca lub poprzednich miesięcy bez ponownego generowania raportu. Aby otworzyć raport dla poprzedniego miesiąca, kliknij przycisk **Pokaż**, a następnie kliknij przycisk **Poprzednie raporty**. Zostanie wyświetlona lista wcześniejszych miesięcy, dla których wygenerowano raport. Rozwiń miesiąc, dla którego chcesz wyświetlić raport, wybierz datę, a następnie kliknij **OK**. Wyświetlany jest raport za poprzedni miesiąc. Aby powrócić do raportu bieżącego miesiąca, kliknij **Anuluj**.
-
 ## <a name="print-a-financial-report"></a>Drukowanie raportu finansowego
-Aby wydrukować raport finansowy w okienku akcji kliknij **Drukuj**, a następnie wykonaj jeden lub więcej z tych kroków, aby ustawić opcje drukowania:
+Drukowanie raportu finansowego spowoduje utworzenie pliku PDF, który można następnie ręcznie wydrukować. Aby wydrukować raport finansowy do wydrukowania w okienku akcji kliknij **Drukuj**, a następnie wykonaj jeden lub więcej z tych kroków, aby ustawić opcje drukowania:
 
 -   Aby uwzględnić różne poziomy szczegółów w wydrukowanym raporcie, ustaw suwak na **Tak** lub **Nie**. Jeśli raport używa drzewa raportowania, można uwzględnić wszystkie jednostki raportowania lub tylko bieżącą jednostkę raportowania.
 -   Aby ustawić rozmiar strony, wybierz rozmiar strony z listy.
 -   Aby ustawić układ strony, wybierz układ z listy. Jeśli chcesz, by zawartość raportu pasowała do wybranej szerokości, ustaw suwak na **Tak**.
 -   Aby ustawić marginesy strony, wpisz rozmiar marginesów górnego, dolnego, lewego i prawego w calach.
 
-Po zakończeniu ustawiania opcji drukowania, kliknij przycisk **Druku** w celu wydrukowania raportu. Jeśli nie chcesz drukować raportu, kliknij zamiast tego przycisk **Anuluj**. Zostanie wyświetlony podgląd drukowanego raportu. Można wybrać, aby wysłać raport do drukarki, a także dostosować opcje drukowania.
+Po zakończeniu ustawiania opcji drukowania, kliknij przycisk **Drukuj** aby kontynuować i otrzymywać powiadomienia, gdy będzie potrzebne pobranie pliku lub zapisanie go w OneDrive lub SharePoint. Jeśli nie chcesz kontynuować, kliknij zamiast tego przycisk **Anuluj**. Gdy kontynuujesz, zacznie się renderowanie raportu na serwerze i zostanie wyświetlone powiadomienie o konieczności pobrania raportu w formacie PDF. Można teraz wyświetlić raport w podglądzie na PDF, i w tym miejscu można wybrać drukarkę, aby wysłać do niej raport oraz wprowadzić inne zmiany dla opcji drukowania.
 
 ## <a name="export-a-financial-report"></a>Eksportowanie raportu finansowego
 Aby wyeksportować raport finansowy, w okienku akcji kliknij **Eksportuj**. Raport jest eksportowany do programu Microsoft Excel, a Twoja przeglądarka wyświetli monit o otwarcie lub zapisanie wyeksportowanego pliku. Ustawienia eksportu zdefiniowane w projekcie raportu są stosowane do wyeksportowanego raport.    
@@ -86,7 +83,7 @@ Aby wyeksportować raport finansowy, w okienku akcji kliknij **Eksportuj**. Rapo
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Raportowanie finansowe w systemie Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Raportowanie finansowe](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

@@ -3,7 +3,7 @@ title: Integracja środków trwałych
 description: Środki trwałe mogą być zintegrowane z modułami Księga główna, Zarządzanie zapasami, Rozrachunki z odbiorcami i Rozrachunki z dostawcami. Istnieje również możliwość takiego skonfigurowania modułu Środki trwałe, aby był on zintegrowany z zamówieniami zakupu.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5d33de3af05668bc9aedc94894b12d16daf78e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2023d68a1455c6bb5ec569b6ae19fc3268f8769d
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336987"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778162"
 ---
 # <a name="fixed-assets-integration"></a>Integracja środków trwałych
 
@@ -41,7 +41,7 @@ Na stronie **Profile księgowania środków trwałych** należy określić konta
 ## <a name="inventory-management"></a>Zarządzanie zapasami
 W arkuszu magazynowym środków trwałych można wprowadzić nabycie środków trwałych, które firma wyprodukowała lub skonstruowała dla siebie. Następnie można przenieść towary magazynowe do środków trwałych jako nabycie lub część nabycia. 
 
-Środki trwałe można również nabywać za pomocą zamówień zakupu. Jeśli zamówienia zakupu zawierają pozycje magazynowe określone jako środki trwałe, wartość opcji **Zezwalaj na nabywanie środków trwałych z zakupów** na stronie **Parametry środków trwałych** określa, czy nabycie środka trwałego jest księgowane w momencie księgowania faktury. Wpływ nabycia środków trwałych na magazyn zależy od konfiguracji firmy. 
+Środki trwałe można również nabywać za pomocą zamówień zakupu. Jeśli zamówienia zakupu zawierają pozycje magazynowe określone jako środki trwałe, wartość opcji **Zezwalaj na nabywanie środków trwałych z zakupów** na stronie **Parametry środków trwałych** określa, czy nabycie środka trwałego jest księgowane w momencie księgowania faktury. Jeden wiersz zakupu spowoduje utworzenie jednego środka trwałego, niezależnie od ilości. Wpływ nabycia środków trwałych na magazyn zależy od konfiguracji firmy. 
 
 Gdy pozycja magazynowa staje się nabyciem środków trwałych za pośrednictwem arkusza magazynowego, zamówienia zakupu lub propozycji nabycia, jest tworzona transakcja nabycia do księgi środków trwałych. Jeśli nabycie do księgi obejmuje księgę pochodną, jest również tworzona transakcja nabycia do księgi pochodnej. 
 

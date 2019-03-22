@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 45b628376a483d3d639e5c018dd93570ed8ce7af
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 43571099727830e81c41416b6fe250dba398b3f8
+ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302735"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "379931"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurowanie i przetwarzanie wymiany w przypadku zamówienia zwrotu
 
 [!include [banner](includes/banner.md)]
 
-W poprzednich wersjach rozwiązania Microsoft Dynamics 365 for Retail zwroty dotyczące zamówień klientów były przetwarzane przy użyciu dokumentu zamówienia zwrotu w module Retail headquarters. Jednak dokumenty zamówienia zwrotu mogą być używane tylko do przetwarzania produktów zwracanych. Zwracane produkty są oznaczone ilością ujemną w wierszach zamówień zwrotu. Z drugiej strony sprzedaż jest wskazywana przez ilość dodatnią. Dokument zamówienia zwrotu nie obsługuje jednak ilości dodatnich. Ze względu na to ograniczenie w poprzednich wersjach aplikacji Retail nie była obsługiwane sytuacje, w których wymiana produktu była dokonywana przy użyciu dokumentu zamówienia zwrotu.
+W poprzednich wersjach rozwiązania Microsoft Dynamics 365 for Retail zwroty dotyczące zamówień klientów były przetwarzane przy użyciu dokumentu zamówienia zwrotu w Retail Headquarters. Jednak dokumenty zamówienia zwrotu mogą być używane tylko do przetwarzania produktów zwracanych. Zwracane produkty są oznaczone ilością ujemną w wierszach zamówień zwrotu. Z drugiej strony sprzedaż jest wskazywana przez ilość dodatnią. Dokument zamówienia zwrotu nie obsługuje jednak ilości dodatnich. Ze względu na to ograniczenie w poprzednich wersjach aplikacji Retail nie była obsługiwane sytuacje, w których wymiana produktu była dokonywana przy użyciu dokumentu zamówienia zwrotu.
 
 Dodano jednak funkcję w celu obsługi sytuacji, w których wymiana odbywa się z wykorzystaniem zamówień zwrotu. Aby przetwarzać tego typu transakcje w aplikacji Retail jest obecnie używany dokument zamówienia sprzedaży zamiast dokumentu zamówienia zwrotu.
 
@@ -44,7 +44,7 @@ Aby skonfigurować system do obsługi wymiany w przypadku zamówień zwrotu, nal
 
 Po skonfigurowaniu systemu w sposób opisany w poprzedniej sekcji użytkownik punktu sprzedaży (POS), aby przetworzyć zwrot, będzie w dalszym ciągu musiał wybrać zamówienie sprzedaży lub fakturę sprzedaży, podobnie jak w poprzednich wersjach aplikacji Retail. Jednak po dodaniu zwracanych towarów do koszyka, użytkownik będzie mógł dodawać nowe wiersze sprzedaży do koszyka.
 
-Dla tych nowych wierszy sprzedaży użytkownik musi zdefiniować wszystkie atrybuty, które są wymagane w celu przetworzenia wiersza zamówienia odbiorcy. Do tych atrybutów należy metoda dostawy i lokalizacja realizacji. Płatność należna za transakcję będzie kwotą netto wierszy zamówienia zwrotu i wierszy zamówienia sprzedaży. Po przekazaniu płatności za transakcję zamówienie zwrotu zostanie zaksięgowane w module Centrala sieci sprzedaży jako dokument zamówienia sprzedaży, a w systemie zostanie natychmiast wystawiona faktura dotycząca wierszy zwrotu.
+Dla tych nowych wierszy sprzedaży użytkownik musi zdefiniować wszystkie atrybuty, które są wymagane w celu przetworzenia wiersza zamówienia odbiorcy. Do tych atrybutów należy metoda dostawy i lokalizacja realizacji. Płatność należna za transakcję będzie kwotą netto wierszy zamówienia zwrotu i wierszy zamówienia sprzedaży. Po przekazaniu płatności za transakcję zamówienie zwrotu zostanie zaksięgowane w Retail Headquarters jako dokument zamówienia sprzedaży, a w systemie zostanie natychmiast wystawiona faktura dotycząca wierszy zwrotu.
 
 Aby zapewnić lepszą widoczność różnych kwot w koszyku, zostały w nim dodane trzy nowe pola kwoty. W celu udostępnienia tych nowych pól w interfejsie użytkownika (UI) punktu sprzedaży można użyć projektanta układu ekranu.
 

@@ -3,7 +3,7 @@ title: Akredytywa importowa
 description: Ta procedura poprowadzi przez proces tworzenia akredytywy importowej.
 author: kweekley
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c1768494182a79d7a33044498c1e768e61d937d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3d5539fbd17c880d8bbadd47444c9cc53fce039c
+ms.sourcegitcommit: 0c1deb100d0bf6dacd14b328968bbc7a9d92583a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313573"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "771238"
 ---
 # <a name="import-letter-of-credit"></a>Akredytywa importowa
 
@@ -111,8 +111,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 1. Wybierz kolejno opcje Zarządzanie gotówką i bankami > Akredytywy > Akredytywa importowa i inkaso importowe.
 2. Na liście znajdź i zaznacz odpowiedni rekord.
 3. Na liście kliknij łącze w wybranym wierszu.
-    * Zweryfikuj stan akredytywy importowej.    
-    *   
+    * Zweryfikuj stan akredytywy importowej.     
 4. Zamknij stronę.
 5. Zamknij stronę.
 

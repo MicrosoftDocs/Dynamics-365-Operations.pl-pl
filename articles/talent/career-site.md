@@ -1,79 +1,95 @@
 ---
-title: "Funkcjonalność witryny rozwoju kariery w aplikacji Attract"
-description: "Ten artykuł zawiera omówienie funkcjonalności witryny rozwoju kariery dostępnej dla kandydatów w programie Microsoft Dynamics 365 for Talent - Attract. Wyjaśniono również, jak skonfigurować tę funkcjonalność."
-author: josaw
+title: Funkcjonalność witryny rozwoju kariery w aplikacji Attract
+description: Ten temat zawiera omówienie funkcji witryny kariery zawodowej w aplikacji Attract dostępne dla kandydatów.
+author: josaw1
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 02/12/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Talent
-ms.custom: 
-ms.assetid: 
+ms.search.scope: Talent, Core
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.author: rschloma
-ms.search.validFrom: 2018-10-18
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: josaw
+ms.search.validFrom: 2019-02-12
+ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
+ms.openlocfilehash: 087ab4034a1e601e7f3514c77d56ef54b0c5c52d
+ms.sourcegitcommit: 1ee613a88edddab036d145f27f19d071a4b8ad24
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 452e3e92ea32ab5f1e3720ab81ff2f7ea18b2a06
-ms.contentlocale: pl-pl
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "389980"
 ---
 # <a name="career-site-functionality-in-attract"></a>Funkcjonalność witryny rozwoju kariery w aplikacji Attract
 
-[!include [banner](includes/banner.md)]
+[!include[banner](../includes/banner.md)]
 
-Ten artykuł zawiera omówienie funkcjonalności witryny rozwoju kariery dostępnej dla kandydatów w programie Microsoft Dynamics 365 for Talent Attract. Wyjaśniono również, jak skonfigurować tę funkcjonalność.
+Ten temat zawiera omówienie funkcji witryny kariery zawodowej w Microsoft Dynamics 365 for Talent: Attract dostępne dla kandydatów. Wyjaśniono również, jak skonfigurować tę funkcjonalność.
 
-## <a name="overview"></a>Przegląd
-
-Aplikacja Attract udostępnia jedną witrynę rozwoju kariery dla każdego środowiska w dzierżawie. Na przykład jeśli organizacja ma środowiska projektowe i testowe, dla każdego z nich jest generowana osobna witryna rozwoju kariery. Każda witryna rozwoju kariery jest **całkowicie odizolowana** i ma własny mechanizm uwierzytelniania. Funkcje i profile kandydatów nie są udostępniane między witrynami rozwoju kariery.
+Aplikacja Attract udostępnia jedną witrynę rozwoju kariery dla każdego środowiska w dzierżawie. Na przykład jeśli organizacja ma środowiska projektowe i testowe, dla każdego z nich jest generowana osobna witryna rozwoju kariery. Każda witryna rozwoju kariery jest całkowicie odizolowana i ma własny mechanizm uwierzytelniania. Funkcje i profile kandydatów nie są udostępniane między witrynami rozwoju kariery.
 
 Domyślnie witryna rozwoju kariery jest publiczna. Z tego względu kandydaci mogą wyświetlić wszystkie funkcje oznaczone jako zewnętrzne bez konieczności logowania się. Jednak wszystkie pozostałe czynności wymagają, aby kandydaci się zalogowali.
 
 ## <a name="career-site-management"></a>Zarządzanie witryną rozwoju kariery
 
-Następujące elementy w witrynie rozwoju kariery są kontrolowane przez ustawienia:
+Aby ustawić wartości następujących elementów, zaloguj się w aplikacji Attract jako administrator, wybierz opcję **Centrum administracyjne** w menu **Ustawienia** (symbol koła zębatego), a następnie wybierz kartę **Informacje o firmie**.
 
-- **Nazwa organizacji:** Nazwa organizacji jest wyświetlana na pasku nawigacji u góry witryny rozwoju kariery. Gdy kandydat kliknie nazwę organizacji, przejdzie do strony, która zawiera listę wszystkich otwartych funkcji.
-- **Logo organizacji:** Obraz logo organizacji pojawia się w lewym górnym rogu witryny rozwoju kariery. Gdy kandydat kliknie obraz logo, przejdzie do strony, która zawiera listę wszystkich otwartych funkcji.
+-   **Nazwa organizacji:** Nazwa organizacji jest wyświetlana na pasku nawigacji u góry witryny rozwoju kariery. Gdy kandydat kliknie nazwę organizacji, przejdzie do strony, która zawiera listę wszystkich otwartych funkcji.
 
-Aby ustawić wartości nazwy i logo organizacji, zaloguj się w aplikacji Attract jako administrator, wybierz opcję **Centrum administracyjne** w menu **Ustawienia** (symbol koła zębatego), a następnie wybierz kartę **Informacje o firmie**.
+-   **Logo organizacji:** Obraz logo organizacji pojawia się w lewym górnym rogu witryny rozwoju kariery. Gdy kandydat kliknie obraz logo, przejdzie do strony, która zawiera listę wszystkich otwartych funkcji.
 
-> [!NOTE]
-> Obraz logo wyświetlany w witrynie rozwoju kariery ma stałą wysokość 20 pikseli (px). Obraz dodany w Centrum administracyjnym zostanie wyskalowany, tak aby pasował do tego limitu. W związku z tym w zależności od obrazu szerokość może się zmienić.
+    >   [!NOTE] 
+    >   Obraz logo wyświetlany w witrynie rozwoju kariery ma stałą wysokość 20 pikseli (px). Obraz dodany w Centrum administracyjnym zostanie wyskalowany, tak aby pasował do tego limitu. W związku z tym w zależności od obrazu szerokość może się zmienić.
+ 
+Aby ustawić wartości następujących elementów, zaloguj się w aplikacji Attract jako administrator, wybierz opcję **Centrum administracyjne** w menu **Ustawienia**, a następnie wybierz kartę **Zarządzanie witryną rozwoju kariery**.
 
-## <a name="career-site-url"></a>Adres URL witryny rozwoju kariery
+-   **Optymalizacja aparatu wyszukiwania:** Po włączeniu tej opcji wszystkie publicznie dostępne oferty w witrynie rozwoju kariery Attract będzie można znaleźć za pomocą wyszukiwarek, takich jak Bing i Google.
 
-Gdy [publikujesz ofertę na funkcję dla kandydatów zewnętrznych](./Creating-jobs-Attract.md#postings) po raz pierwszy, możesz skopiować łącze **Zgłoś się** z aplikacji Attract. Adres URL tego łącza będzie miał następujący format: `https://jobs.talent.dynamics.com/jobs/<company_name>/<environment_number>/<job_number>/apply`
+    >   [!NOTE] 
+    >   Może wystąpić opóźnienie między włączeniem tego ustawienia, a uwzględnianiem ofert w wynikach wyszukiwania, w zależności od używanego aparatu wyszukiwania.
+         
+## <a name="career-site-urls"></a>Adresu URL witryny rozwoju kariery
 
-Adres URL witryny rozwoju kariery jest podciągiem adresu URL **Zgłoś się**. Zawiera wszystkie elementy aż do nazwy firmy włącznie. Z tego względu w podanym wyżej adresie URL **Zgłoś się** adresem URL witryny rozwoju kariery jest `https://jobs.talent.dynamics.com/jobs/<company_name>/`.
+Poniższa lista zawiera często używane adresy URL witryny rozwoju kariery i metody dostępu do nich.
+
+-   **Adres URL strony głównej witryny kariery zawodowej** — Aby wyświetlić adres URL strony głównej witryny kariery zawodowej, zaloguj się w Attract jako administrator, wybierz opcję **Centrum administracyjne** w menu **ustawienia**, a następnie wybierz opcję **Zarządzanie witryną kariery zawodowej**.
+
+-   **Indywidualny adres URL zgłoszenia na ofertę pracy**Gdy [publikujesz ofertę](Creating-jobs-Attract.md#postings) dla kandydatów zewnętrznych po raz pierwszy, możesz skopiować łącze **Zgłoś się** z aplikacji Attract. Adres URL tego łącza będzie miał następujący format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+
+-   **Indywidualny adres URL oferty pracy** adres URL oferty pracy jest podciągiem adresu URL zgłoszenia. Zawiera wszystkie elementy aż do numeru stanowiska włącznie. Z tego względu w podanym wyżej adresie URL Zgłoś się adresem URL oferty pracy jest [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e).
 
 ## <a name="authentication-options"></a>Opcje uwierzytelniania
 
 Kandydaci mają do dyspozycji następujące opcje logowania do witryny rozwoju kariery w aplikacji Attract:
 
-- Konto osobiste:
+-   Konto osobiste:
 
-    - LinkedIn
-    - Microsoft
-    - Google
-    - Facebook
+    -   LinkedIn
 
-- Konto służbowe:
+    -   Microsoft
 
-    - Microsoft Azure Active Directory (Azure AD)
+    -   Google
 
-Logowanie przez usługę Azure AD jest przeznaczone tylko dla kandydatów wewnętrznych. Z tego względu działa tylko dla kandydatów wewnętrznych, którzy używają firmowych poświadczeń dostępu do usługi Azure AD. Na przykład kandydat, który jest obecnie pracownikiem firmy Contoso Ltd., chce ubiegać się o pracę w niepowiązanej firmie Alpine Ski House. W takim przypadku logowanie się nie powiedzie, jeśli pracownik spróbuje użyć swoich poświadczeń dostępu do usługi Azure AD z firmy Contoso Ltd.
+    -   Facebook
+
+-   Konto służbowe lub szkolne:
+
+    -   Microsoft Azure Active Directory (Azure AD)
+
+Azure AD Logowanie przez usługę Azure AD jest przeznaczone tylko dla kandydatów wewnętrznych. Z tego względu działa tylko dla kandydatów wewnętrznych, którzy używają firmowych poświadczeń dostępu do usługi Azure AD. Na przykład kandydat, który jest obecnie pracownikiem firmy Contoso Ltd., chce ubiegać się o pracę w niepowiązanej firmie Alpine Ski House. W takim przypadku logowanie się nie powiedzie, jeśli pracownik spróbuje użyć swoich poświadczeń dostępu do usługi Azure AD z firmy Contoso Ltd.
 
 ## <a name="create-and-maintain-a-profile"></a>Tworzenie profilu i zarządzanie nim
 
-Gdy kandydaci logują się do witryny rozwoju kariery, mogą wybrać opcję **Mój profil** na pasku nawigacji u góry strony, aby utworzyć sobie profil i nim zarządzać. Profil zawiera informacje osobiste, informacje o doświadczeniu zawodowym, szczegóły wykształcenia, dokumenty, łącza oraz informacji o umiejętnościach. Po utworzeniu profilu można go używać do ubiegania się o funkcje interesujące kandydata. Profile pomagają również aplikacji Attract rekomendować odpowiednie stanowiska dla kandydatów.
+Gdy kandydaci logują się do witryny rozwoju kariery, mogą wybrać opcję **Mój profil** na pasku nawigacji u góry strony, aby utworzyć sobie profil i nim zarządzać.
+Profil zawiera informacje osobiste, informacje o doświadczeniu zawodowym, szczegóły wykształcenia, dokumenty, łącza oraz informacji o umiejętnościach. Po utworzeniu profilu można go używać do ubiegania się o funkcje interesujące kandydata. Profile pomagają również aplikacji Attract rekomendować odpowiednie stanowiska dla kandydatów.
+
+>   [!NOTE]
+>   Jeśli kandydat używa identyfikatora e-mail, aby zalogować się przy użyciu jednego z dostawców uwierzytelniania wymienionych powyżej, ten identyfikator e-mail zostanie ustawiony jako domyślny dla kontaktowego adresu e-mail skojarzonego z profilem. Jednak to ostatnie można zmienić w dowolnym momencie i jest to całkowicie niezależne od pierwszego. Attract będzie zawsze używać Identyfikatora e-mail osoby kontaktowej do skojarzenia go z Twoim profilem dla całej komunikacji e-mail.
 
 ## <a name="find-the-right-job"></a>Znajdowanie odpowiedniej funkcji
 
@@ -81,18 +97,18 @@ Na stronie listy funkcji kandydaci mogą wyszukiwać konkretne funkcje, wpisują
 
 Kandydaci mogą również w witrynie rozwoju kariery przeglądać zestaw zalecanych funkcji. Funkcje rekomendowane kandydatowi bazują na poprzednich zgłoszeniach, profilu i życiorysie kandydata.
 
-> [!NOTE]
-> Rekomendacje funkcji są wyświetlane tylko wtedy, gdy co najmniej 10 funkcji jest opublikowanych w witrynie rozwoju kariery, a kandydat ma uzupełniony profil.
+>   [!NOTE] 
+>   Rekomendacje funkcji są wyświetlane tylko wtedy, gdy co najmniej 10 funkcji jest opublikowanych w witrynie rozwoju kariery, a kandydat ma uzupełniony profil.
 
 ## <a name="apply-for-jobs"></a>Ubieganie się o pracę
 
-Gdy kandydat znajdzie odpowiednią funkcję, może złożyć podanie, klikając przycisk **Zgłoś się** na stronie szczegółów funkcji. W tym momencie kandydat może utworzyć całkowicie nowy profil lub przejrzeć informacje w swoim istniejącym profilu. Kandydat może także w razie potrzeby przekazać życiorys, a następnie przesłać zgłoszenie na funkcję (podanie o pracę).
+Gdy kandydat znajdzie odpowiednią funkcję, może złożyć podanie, klikając przycisk **Zgłoś** się na stronie **szczegółów stanowiska**. W tym momencie kandydat może utworzyć całkowicie nowy profil lub przejrzeć informacje w swoim istniejącym profilu.
+Kandydat może także w razie potrzeby przekazać życiorys, a następnie przesłać zgłoszenie na funkcję (podanie o pracę).
 
 ## <a name="check-application-status"></a>Sprawdzanie stanu zgłoszenia
 
-Gdy kandydat prześle zgłoszenie na jedną lub więcej funkcji, może wybrać opcję **Zgłoszenia** na pasku nawigacji u góry strony i wyświetlić swoje otwarte i zamknięte zgłoszenia. Gdy kandydat otworzy jedno ze swoich zgłoszeń, zobaczy jego obecny etap oraz wszelkie oczekujące czynności, jakie musi wykonać. Na przykład jeśli kandydat musi zaproponować daty osobistej rozmowy kwalifikacyjnej, na stronie będą widoczne odpowiednie opcje.
+Gdy kandydat prześle zgłoszenie na jedną lub więcej funkcji, może wybrać opcję **Zgłoszenia** na pasku nawigacji u góry strony i wyświetlić swoje otwarte i zamknięte zgłoszenia. Gdy kandydat otworzy jedno ze swoich zgłoszeń, zobaczy jego obecny etap oraz wszelkie oczekujące czynności, jakie musi wykonać. Na przykład jeśli kandydat musi zaproponować daty osobistej rozmowy kwalifikacyjnej, na stronie będą widoczne dostępne opcje.
 
 ## <a name="internal-jobs"></a>Funkcje wewnętrzne
 
 Obecnie funkcje oznaczone jako wewnętrzne i opublikowane w witrynie rozwoju kariery w aplikacji Attract nie są wyświetlane w witrynie rozwoju kariery. Są one dostępne wyłącznie za pośrednictwem bezpośredniego adresu URL **Zgłoś się**, który można skopiować z aplikacji Attract.
-

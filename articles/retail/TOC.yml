@@ -5,6 +5,10 @@ items:
   items:
   - name: Nowości i zmiany
     href: get-started/whats-new.md
+  - name: Funkcje w wersji zapoznawczej w Dynamics 365 for Retail 10.0.1
+    href: get-started/whats-new-10-0-1.md
+  - name: Nowości i zmiany w Dynamics 365 for Retail (kwiecień 2019)
+    href: get-started/april-whats-new.md
   - name: Zanim kupisz aplikację Retail
     href: get-started/before-you-buy.md
   - name: Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej
@@ -109,7 +113,11 @@ items:
   - name: Opcje Cała kwota i Obliczanie interwału dla kodów podatku
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
 - name: Wielokanałowe zaawansowane opłaty automatyczne
-  href: omni-auto-charges.md
+  items:
+  - name: Konfigurowanie i używanie zaawansowanych funkcji zmian automatycznych
+    href: omni-auto-charges.md
+  - name: Wartość proporcjonalna i grupowanie automatycznych zmian nagłówka
+    href: pro-rate-charges-matching-lines.md
 - name: Biuro obsługi
   items:
   - name: Funkcje sprzedaży przez biuro obsługi
@@ -387,7 +395,7 @@ items:
     - name: Funkcje kasy
       href: localizations/emea-swe-cash-registers.md
     - name: Przykład do użycia w integracji aplikacji Retail POS z jednostkami kontrolnymi
-      href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+      href: localizations/retail-sdk-control-unit-sample.md
 - name: Zadania w aplikacji Retail
   items:
   - name: Tworzenie produktu
@@ -553,6 +561,8 @@ items:
       href: dev-itpro/hybridApp.md
     - name: Zastępowanie programu obsługi żądań punktu sprzedaży
       href: dev-itpro/pos-handler.md
+    - name: Widok informacji pakietu rozszerzenia POS
+      href: view-pos-extension-package-details.md
   - name: Rozszerzalność aplikacji Hardware Station
     href: dev-itpro/hardware-station-extensibility.md
   - name: Rozszerzalność usługi Retail Server
@@ -659,9 +669,9 @@ items:
     items:
     - name: Rozszerzenie lojalnościowe
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-ms.openlocfilehash: 1f86096b0572f0309afa04e086d53294a7a8f4fa
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 0d6ec0ba8723f81c21d735be455e35d8f1b62187
+ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377258"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791645"

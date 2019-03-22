@@ -1,9 +1,9 @@
 ---
 title: Modyfikowanie komórek definicji wiersza
-description: W tym artykule opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje.
+description: W tym temacie opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
+ms.sourcegitcommit: eb24b63b10c4d06f7550bba9fbd1910ba2719b0a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "323647"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "379671"
 ---
 # <a name="modify-row-definition-cells"></a>Modyfikowanie komórek definicji wiersza
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje.
+W tym temacie opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje.
 
 ## <a name="specify-a-row-code-in-a-row-definition"></a>Określanie kodu wiersza w definicji wiersza
 
@@ -386,7 +386,7 @@ Możesz ograniczyć wiersz do istniejącego kodu księgi. Definicja kolumny musi
 Niektóre systemy księgowe obsługują atrybuty konta i atrybuty transakcji w danych finansowych. Te atrybuty działają na zasadzie podobnie jak wirtualne segmenty kont i mogą zawierać dodatkowe informacje dotyczące konta lub transakcji. Te dodatkowe informacje mogą być identyfikatorami konta, identyfikatorami partii, kodami pocztowymi lub innymi atrybutami. Jeśli system księgowy obsługuje atrybuty, możesz używać atrybutów konta lub transakcji jako modyfikatorów wierszy w definicji wiersza. Aby uzyskać informacje dotyczące sposobu zastępowania informacji wiersza, zobacz sekcję „Zastępowanie definicji kolumny” we wcześniejszej części tego artykułu.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Określanie łącza do komórki wymiarów finansowych
-Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansowych, które powinny znajdować się w każdym wierszu raportu. Ta komórka zawiera wartości wymiaru, ale można zamiast nich lub wraz z nimi określić komórki w arkuszu programu Microsoft Excel, wartości segmentu lub wartości wymiaru. Aby otworzyć okno dialogowe **Wymiary** kliknij dwukrotnie komórkę **Łącze do wymiarów finansowych**.
+Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansowych, które powinny znajdować się w każdym wierszu raportu. Ta komórka zawiera wartości wymiarów. Aby otworzyć okno dialogowe **Wymiary** kliknij dwukrotnie komórkę **Łącze do wymiarów finansowych**.
 
 > [!NOTE]
 > Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Aby określić informacje dla wiersza, który jest już wymieniony w definicji wierszy, należy dodać informacje w komórce **Łącze do Wymiary finansowe**. Aby dodać nowe wiersze połączone z danymi finansowymi, użyj okna dialogowego **Wstaw wiersze z**, aby utworzyć nowe wiersze w definicji raportu. Tytuł kolumny zmienia się w zależności od tego, jak kolumna jest skonfigurowana i wyświetlana w następującej tabeli.
@@ -394,9 +394,7 @@ Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansow
 | Typ łącza, które jest zaznaczone       | Opis kolumny Łącze zmienia się na ten tekst |
 |----------------------------------|----------------------------------------------------|
 | Wymiary finansowe             | Łącze do wymiarów finansowych                       |
-| Zewnętrzny arkusz               | Łącze do arkusza                                  |
-| Wymiary finansowe + Arkusz | Łącze do Wymiary finansowe + Arkusz           |
-| Raport programu Management Reporter       | Raport programu Management Reporter                         |
+| Arkusz raportu                 | Raport z raportowania finansowego                         |
 
 ### <a name="specify-a-dimension-or-range"></a>Określanie wymiaru lub zakresu
 

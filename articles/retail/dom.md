@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8f1b07243ec2d42e47073d8d90f00ea563020d82
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4f682e0c98ff70d526648bc50f8a5d6cb884ac93
+ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302749"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "380023"
 ---
 # <a name="distributed-order-management-dom"></a>Zarządzanie zamówieniami rozdzielonymi (DOM)
 
@@ -63,8 +63,8 @@ Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie D
 
         1. W usłudze Microsoft Dynamics Lifecycle Services otwórz bibliotekę udostępnionych elementów zawartości, wybierz wartość **Model** jako typ elementu zawartości i pobierz plik **licencji DOM**.
         2. Uruchom Menedżera usług Microsoft Internet Information Services (IIS) kliknij prawym przyciskiem myszy pozycję **AOSService website**, a następnie wybierz opcję **Eksploruj**. Zostanie wyświetlone okno Eksploratora Windows z lokalizacją **\<katalog główny usługi AOS\>\\webroot**. Zanotuj ścieżkę \<katalogu głównego usługi AOS\>, ponieważ będzie ona potrzebna w kolejnym kroku.
-        3. Skopiuj plik konfiguracji do katalogu **\<katalog główny usługi AOS\>\\PackagesLocalDirectory\\DOM\\bin**.
-        4. Przejdź do klienta aplikacji Centrala sieci sprzedaży, a następnie otwórz stronę **Parametry DOM**. Na karcie **Zmienna** w polu **Typ zmiennej** zaznacz opcję **Zmienna produkcji**i upewnij się, że nie są wyświetlane żadne komunikaty o błędach.
+        3. Skopiuj plik konfiguracji do katalogu **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        4. Przejdź do klienta Retail Headquarters, a następnie otwórz stronę **Parametry DOM**. Na karcie **Zmienna** w polu **Typ zmiennej** zaznacz opcję **Zmienna produkcji**i upewnij się, że nie są wyświetlane żadne komunikaty o błędach.
 
         > [!NOTE]
         > Zmienna uproszczona została udostępniona, aby sprzedawcy detaliczni mogli wypróbować funkcję DOM bez konieczności wdrażania specjalnej licencji. Organizacje nie powinny używać zmiennej uproszczonej w środowiskach produkcyjnych.

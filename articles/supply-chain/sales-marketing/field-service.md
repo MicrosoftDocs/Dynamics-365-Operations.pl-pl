@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d636e77888fff383849b3a91bf643475a6d516ac
-ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
+ms.openlocfilehash: efda4e39f63155785386ecec6d21973e01a0f69f
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "377885"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770900"
 ---
 # <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integracja z programem Microsoft Dynamics 365 for Field Service
 
@@ -75,7 +75,7 @@ Dodatkowe funkcje w tej drugiej fazie koncentrują się na zapewnieniu serwisant
 ### <a name="system-requirements-for-finance-and-operations"></a>Wymagania systemowe dla rozwiązania Finance and Operations
 Program Field Service można integrować z następującymi wersjami:
 
-- Program Dynamics 365 for Finance and Operations w wersji 8.1.2 (grudzień 2019) został wydany w grudniu 2019 r. i ma numer kompilacji aplikacji 8.1.195 oraz aktualizację Platform Update 22 (7.0.5095). 
+- Program Dynamics 365 for Finance and Operations w wersji 8.1.2 (grudzień 2018) został wydany w grudniu 2018 r. i ma numer kompilacji aplikacji 8.1.195 oraz aktualizację Platform Update 22 (7.0.5095). 
 
 ### <a name="system-requirements-for-field-service"></a>Wymagania systemowe programu Field Service
 Aby korzystać z rozwiązania integracyjnego Field Service, należy zainstalować następujące składniki:

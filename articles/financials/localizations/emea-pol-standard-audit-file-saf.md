@@ -3,7 +3,7 @@ title: Standardowy plik audytu (SAF) dla Polski
 description: Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten temat zawiera informacje o formatach dla Polski.
 author: LizaGolub
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Poland
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 7908e430eb4e158fa09fdea41add6f1dfae5f23a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 57d6924c7b1fde450a14a5083e84a77fc6549ead
+ms.sourcegitcommit: bacec9ceb40bba604c86c8adbd0ccd0a6aa175a1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371537"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "769566"
 ---
 # <a name="standard-audit-file-saf-for-poland"></a>Standardowy plik audytu (SAF) dla Polski
 
@@ -34,7 +34,7 @@ Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla pod
 Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten dokument zawiera informacje o formatach dla Polski. Niniejszy dokument odnosi się do funkcji, która nie została jeszcze wdrożona.
 
 ## <a name="set-up-the-standard-audit-file-for-tax-for-poland"></a>Konfigurowanie standardowego pliku audytu dla podatku dla Polski
-Aby określić format raportowania elektronicznego (ER) dla każdego schematu SAF-T, kliknij przycisk kolejno opcje **Księga główna** &gt; **Ustawienia księgi** &gt; **Parametry księgi głównej**, a następnie na karcie **Standardowy plik audytu dla podatków (SAF-T)** skonfiguruj konkretne formaty dla każdego z następujących schematów:
+Aby określić format raportowania elektronicznego (ER) dla każdego schematu SAF-T, kliknij przycisk kolejno opcje **Księga główna > Ustawienia księgi > Parametry księgi głównej**, a następnie na karcie **Standardowy plik audytu dla podatków (SAF-T)** skonfiguruj konkretne formaty dla każdego z następujących schematów:
 
 -   Księgi księgowania SAF
 -   Wyciągi bankowe SAF
@@ -45,7 +45,7 @@ Aby określić format raportowania elektronicznego (ER) dla każdego schematu SA
 Każdy format raportowania elektronicznego powinien być wstępnie zdefiniowany i pozwalać na aktualizowanie w module Raportowanie elektroniczne.
 
 ## <a name="generate-a-saf-accounting-books-file"></a>Generowanie pliku ksiąg księgowania SAF
-Aby wygenerować plik ksiąg księgowania SAF, kliknij kolejno opcje **Księga główna** &gt; **Zapytania i raporty** &gt; **Standardowy plik audytu dla podatku (SAF-T)** &gt; **Księgi księgowania SAF** i ustaw następujące parametry:
+Aby wygenerować plik ksiąg księgowania SAF, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Księgi księgowania SAF** i ustaw następujące parametry:
 
 |Parametr                                        |  opis            |
 |-------------------------------------------------|-------------------------|
@@ -60,7 +60,7 @@ Aby wygenerować plik ksiąg księgowania SAF, kliknij kolejno opcje **Księga g
 Dodatkowe parametry wyboru można określić za pomocą funkcji **Filtr** na karcie **Rekordy do uwzględnienia**.
 
 ## <a name="generate-a-saf-bank-statement-file"></a>Generowanie pliku wyciągu bankowego SAF
-Aby wygenerować plik wyciągu bankowego SAF, kliknij kolejno opcje **Księga główna** &gt; **Zapytania i raporty** &gt; **Standardowy plik audytu dla podatku (SAF-T)** &gt; **Wyciąg bankowy SAF** i ustaw następujące parametry:
+Aby wygenerować plik wyciągu bankowego SAF, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Wyciąg bankowy SAF** i ustaw następujące parametry:
 
 | Parametr                    | opis                                                                        |
 |------------------------------|------------------------------------------------------------------------------------|
@@ -72,7 +72,7 @@ Aby wygenerować plik wyciągu bankowego SAF, kliknij kolejno opcje **Księga g�
  
 
 ## <a name="generate-a-saf-inventory-file"></a>Generowanie pliku zapasów SAF
-Aby wygenerować plik zapasów SAF, kliknij kolejno opcje **Księga główna** &gt; **Zapytania i raporty** &gt; **Standardowy plik audytu dla podatku (SAF-T)** &gt; **Zapasy SAF** i ustaw następujące parametry:
+Aby wygenerować plik zapasów SAF, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Zapasy SAF** i ustaw następujące parametry:
 
 | Parametr                    | opis                                                                        |
 |------------------------------|------------------------------------------------------------------------------------|
@@ -95,7 +95,7 @@ Aby uzyskać więcej informacji o ustawieniach deklaracji VAT, zobacz [Raportowa
 
 ### <a name="set-up-sales-tax-authorities"></a>Konfigurowanie urzędów skarbowych
 
-Aby uzyskać ogólne informacje dotyczące sposobu konfigurowania urzędu skarbowego, zobacz [Konfigurowanie urzędów skarbowych (przewodnik po zadaniu)](../general-ledger/tasks/set-up-sales-tax-authorities.md). Aby wygenerować rejestr SAF sprzedaży i zakupów objętych podatkiem VAT w wymaganym formacie dla odpowiedniego urzędu skarbowego, należy zdefiniować układ raportu dla urzędów skarbowych. Na stronie **Urzędy skarbowe** (**Podatek** &gt; **Podatki pośrednie** &gt; **Podatek** &gt; **Urzędy skarbowe**) w polu **Układ raportu** zaznacz wartość **Domyślnie**. Zaznacz ten sam urząd skarbowy dla okresu rozliczeniowego podatku, który będzie używany dla kodów podatków.
+Aby uzyskać ogólne informacje dotyczące sposobu konfigurowania urzędu skarbowego, zobacz [Konfigurowanie urzędów skarbowych (przewodnik po zadaniu)](../general-ledger/tasks/set-up-sales-tax-authorities.md). Aby wygenerować rejestr SAF sprzedaży i zakupów objętych podatkiem VAT w wymaganym formacie dla odpowiedniego urzędu skarbowego, należy zdefiniować układ raportu dla urzędów skarbowych. Na stronie **Urzędy skarbowe** (**Podatek > Podatki pośrednie > Podatek > Urzędy skarbowe**) w polu **Układ raportu** zaznacz wartość **Domyślnie**. Zaznacz ten sam urząd skarbowy dla okresu rozliczeniowego podatku, który będzie używany dla kodów podatków.
 
 ### <a name="set-up-sales-tax-codes-and-sales-tax-reporting-codes"></a>Konfigurowanie kodów podatków i kodów sprawozdawczości podatkowej
 
@@ -370,7 +370,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="4"><strong>ImportOfServices</strong></td>
+<td rowspan="5"><strong>ImportOfServices</strong></td>
 <td>20207</td>
 <td>Import opodatkowany</td>
 <td>K_45</td>
@@ -381,6 +381,12 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>Przeciwstawna wartość importu podlegająca opodatkowaniu</td>
 <td>K_27</td>
 <td>-</td>
+</tr>
+<tr>
+<td>11117</td>
+<td>Sprzedaż opodatkowana (opłata zwrotna)</td>
+<td>K_27</td>
+<td>+</td>
 </tr>
 <tr>
 <td>20209</td>
@@ -395,7 +401,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="4"><strong>ImportART28</strong></td>
+<td rowspan="5"><strong>ImportART28</strong></td>
 <td>20207</td>
 <td>Import opodatkowany</td>
 <td>K_45</td>
@@ -406,6 +412,12 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>Przeciwstawna wartość importu podlegająca opodatkowaniu</td>
 <td>K_29</td>
 <td>-</td>
+</tr>
+<tr>
+<td>111119</td>
+<td>Sprzedaż opodatkowana (opłata zwrotna)</td>
+<td>K_29</td>
+<td>+</td>
 </tr>
 <tr>
 <td>20209</td>
@@ -535,7 +547,7 @@ Początkowo konfiguracja jest przykładem rejestru VAT opartego na kodach raport
 
 ### <a name="generate-a-saf-vat-sales-and-purchase-register"></a>Generowanie rejestru SAF sprzedaży i zakupów objętych podatkiem VAT
 
-Aby wygenerować rejestr SAF sprzedaży i zakupów objętych podatkiem VAT, kliknij kolejno opcje **Księga główna** &gt; **Zapytania i raporty** &gt; **Standardowy plik audytu dla podatku (SAF-T)** &gt; **Rejestr SAF sprzedaży i zakupów objętych podatkiem VAT** i ustaw następujące parametry:
+Aby wygenerować rejestr SAF sprzedaży i zakupów objętych podatkiem VAT, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Rejestr SAF sprzedaży i zakupów objętych podatkiem VAT** i ustaw następujące parametry:
 
 |   Parametr                  |   opis                                                                      |
 |------------------------------|------------------------------------------------------------------------------------|
@@ -568,7 +580,7 @@ Początkowo konfiguracja jest przykładem rejestru VAT opartego na kodach raport
 
 ### <a name="generate-a-saf-vat-invoices"></a>Generowanie faktur VAT SAF
 
-Aby wygenerować plik faktur VAT SAF, kliknij kolejno opcje **Księga główna** &gt; **Zapytania i raporty** &gt; **Standardowy plik audytu dla podatku (SAF-T)** &gt; **Faktury VAT SAF** i ustaw następujące parametry:
+Aby wygenerować plik faktur VAT SAF, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Faktury VAT SAF** i ustaw następujące parametry:
 
 |  Parametr                   | opis                                                                            |
 |------------------------------|----------------------------------------------------------------------------------------|

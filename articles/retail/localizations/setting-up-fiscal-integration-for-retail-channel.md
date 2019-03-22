@@ -3,7 +3,7 @@ title: Konfigurowanie integracji fiskalnej dla kanałów sprzedaży detalicznej
 description: W tym temacie zawarto wskazówki dotyczące konfigurowania funkcji integracji fiskalnej dla kanałów sprzedaży detalicznej.
 author: josaw
 manager: annbe
-ms.date: 2/01/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3c2945c4310dc4c1ae74f215e9b28056e7d1ede9
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377323"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773334"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Konfigurowanie integracji fiskalnej dla kanałów sprzedaży detalicznej
 
@@ -175,7 +175,7 @@ W niektórych przypadkach specjalny tekst musi zostać wydrukowany na paragonie 
     3. W polu **Tekst paragonu fiskalnego** określ tekst fiskalny, który ma być drukowany na paragonie fiskalnym.
 
     > [!NOTE]
-    > Jeśli kilka rabatów jest stosowanych do tego samego wiersza transakcji, paragon fiskalny będzie zawierał teksty fiskalne z wszystkich rabatów, które są połączone z tymi wierszami transakcji. 
+    > Jeśli kilka rabatów jest stosowanych do tego samego wiersza transakcji, paragon fiskalny będzie zawierał teksty fiskalne z wszystkich rabatów, które są połączone z tymi wierszami transakcji.
 
 ## <a name="set-error-handling-settings"></a>Określanie ustawienia ustawień obsługi błędów
 
@@ -210,3 +210,4 @@ Aby włączyć raporty fiskalne X / końcowe raporty sprzedaży z POS, należy d
     2. Dodaj nowy przycisk i ustaw właściwość przycisku **Drukuj częściowy raport obrachunkowy sprzedaży częściowej**.
     3. Dodaj nowy przycisk i ustaw właściwość przycisku **Drukuj obrachunkowy końcowy raport sprzedaży**.
     4. Na stronie **Harmonogram dystrybucji** uruchom zadanie **1090**, aby przenieść zmiany do bazy danych kanału.
+

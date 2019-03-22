@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 98ec7d9a57cc39c22a31c025754c83dc1a95139e
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302757"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403385"
 ---
 # <a name="accounts-receivable-home-page"></a>Rozrachunki z odbiorcami — strona główna
 
@@ -96,13 +96,11 @@ Można akceptować różne rodzaje płatności od odbiorców, takich jak weksle,
 
 #### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
 
-Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadmap.dynamics.com/), aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane. 
+Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158), aby zobaczyć, jakie nowe funkcje są planowane. 
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje dotyczące modułu Rozrachunki z odbiorcami możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Wiele wpisów dotyczących modułu Rozrachunki z odbiorcami jest dostępnych w blogu zespołu produktu [Microsoft DynamicsAX](https://blogs.msdn.microsoft.com/dax/) Mimo że niektóre z tych wpisów zostały napisane dla poprzedniej wersji modułu Rozrachunki z odbiorcami, stosowane są w nich te same pojęcia. Także procedury są podobne do procedur w bieżącej wersji.
+Opinie, wiadomości i inne informacje dotyczące modułu Rozrachunki z odbiorcami możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)oraz blogu rozwiązania Financials usługi [Microsoft Dynamics 365 Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 

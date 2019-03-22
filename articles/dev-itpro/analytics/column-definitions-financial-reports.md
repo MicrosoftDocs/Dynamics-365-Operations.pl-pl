@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356353"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832155"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Definicje kolumn w raportach finansowych
 
@@ -62,7 +62,7 @@ Definicja kolumny może zawierać do dwóch do 255 kolumn.
 Definicja kolumny zawiera następujące informacje:
 
 - Kolumny opisów dla definicji wiersza
-- Kolumny kwot, które wyświetlają dane finansowe z arkusza programu Microsoft Excel lub obliczenia oparte na innych danych w definicji kolumny
+- Kolumny kwot, które wyświetlają dane finansowe lub obliczenia oparte na innych danych w definicji kolumny
 - Formatowanie kolumn
 - Kolumny atrybutów
 
@@ -170,7 +170,7 @@ Za pomocą okna dialogowego **Nagłówek kolumny** można dodawać, modyfikować
 
 ### <a name="create-an-automatically-generated-header"></a>Tworzenie nagłówka generowanego automatycznie
 
-Projektant raportów może automatycznie wygenerować nagłówki kolumn na podstawie kodów autotekstu. Kody autotekstu są wartościami zmiennymi, które są aktualizowane po każdym wygenerowaniu raportu. Każdy nagłówek kolumny może zawierać te kody, aby określać informacje raportu, które mogą być różne, np. daty czy numery okresów. W związku z tym jedna definicja kolumny może być używana w odniesieniu do wielu definicji raportu, okresów czasu i drzew raportowania. Ponieważ kody autotekstu opierają się na informacjach kalendarza z wierszy szczegółów definicji kolumny, są one obsługiwane tylko kolumn **CALC**, **FD** i **WKS**. Sposób wyświetlania kodu autotekstu w nagłówku kolumny ma wpływ na sposób wyświetlania informacji w raporcie. W oknie dialogowym **Nagłówek kolumny** kody autotekstu są wyświetlane z użyciem małych i wielkich liter. Dlatego w także w raporcie tekst jest wyświetlany przy użyciu małych i dużych liter. Na przykład w standardowym roku kalendarzowy kod **@CalMonthLong** rozwiązuje cyfrę **7** do miesiąca **lipca**. Jeśli nazwa miesiąca ma być pisana wielkimi literami (na przykład **LIPIEC**), w polu **Tekst nagłówka kolumny** należy wpisać kod autotekstu składający się z samych wielkich liter. Na przykład wpisz **@CALMONTHLONG**. Można łączyć ze sobą kody i tekst. Na przykład można wprowadzić następujący tekst nagłówka: **Okres @FiscalPeriod-@FiscalYear od @StartDate do @EndDate**. Generowany nagłówek raportu będzie wyglądał mniej więcej tak: **Okres 1-02 od 01-01-2002 do 31-01-2002**.
+Projektant raportów może automatycznie wygenerować nagłówki kolumn na podstawie kodów autotekstu. Kody autotekstu są wartościami zmiennymi, które są aktualizowane po każdym wygenerowaniu raportu. Każdy nagłówek kolumny może zawierać te kody, aby określać informacje raportu, które mogą być różne, np. daty czy numery okresów. W związku z tym jedna definicja kolumny może być używana w odniesieniu do wielu definicji raportu, okresów czasu i drzew raportowania. Ponieważ kody autotekstu opierają się na informacjach kalendarza z wierszy szczegółów definicji kolumny, są one obsługiwane tylko kolumn **CALC** i **FD**. Sposób wyświetlania kodu autotekstu w nagłówku kolumny ma wpływ na sposób wyświetlania informacji w raporcie. W oknie dialogowym **Nagłówek kolumny** kody autotekstu są wyświetlane z użyciem małych i wielkich liter. Dlatego w także w raporcie tekst jest wyświetlany przy użyciu małych i dużych liter. Na przykład w standardowym roku kalendarzowy kod **@CalMonthLong** rozwiązuje cyfrę **7** do miesiąca **lipca**. Jeśli nazwa miesiąca ma być pisana wielkimi literami (na przykład **LIPIEC**), w polu **Tekst nagłówka kolumny** należy wpisać kod autotekstu składający się z samych wielkich liter. Na przykład wpisz **@CALMONTHLONG**. Można łączyć ze sobą kody i tekst. Na przykład można wprowadzić następujący tekst nagłówka: **Okres @FiscalPeriod-@FiscalYear od @StartDate do @EndDate**. Generowany nagłówek raportu będzie wyglądał mniej więcej tak: **Okres 1-02 od 01-01-2002 do 31-01-2002**.
 
 > [!NOTE]
 > Format niektórych tekstów, np. długich dat, zależy od ustawień regionalnych na serwerze programu Finance and Operations. Aby zmienić te ustawienia, kliknij przycisk **Start**, kliknij **Panel sterowania**, a następnie kliknij **Region i język**. W poniższej tabeli pokazano dostępne opcje autotekstu dla nagłówków kolumn.
@@ -291,7 +291,7 @@ Komórka **Dodatkowe odstępy przed kolumną** określa szerokość separatora p
 1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
 2. W komórce **Dodatkowe odstępy przed kolumną** wpisz, ile odstępów chcesz wstawić pomiędzy kolumnami.
 
-### <a name="specify-a-currency"></a>Wybór waluty
+### <a name="specify-a-format-currency-override"></a>Określanie zamiany formatu waluty
 
 Komórka **Zmiana formatu/waluty** określa formatowanie wartości dziesiętnych, waluty i kwot procentowych w kolumnie. To formatowanie zastępuje wszelkie formatowanie określone w definicji raportu lub domyślnych ustawieniach systemu.
 
@@ -360,8 +360,8 @@ Typy danych zawartych w każdej kolumnie w raporcie określa wartość w wierszu
     </thead>
     <tbody>
     <tr>
-    <td>FD</td>
-    <td>Wyświetlanie danych finansowych lub danych z arkusza programu Excel, jeśli w definicji wiersza zostanie określona kolumna <strong>Łącze do wymiarów finansowych</strong> lub <strong>Łącze do arkusza</strong>. W przypadku zaznaczenia typu kolumny <strong>WF</strong> następuje automatyczne wprowadzenie ustawień w następujących wierszach: <ul>
+    <td>WF</td>
+    <td>Wyświetl dane finansowe, korzystając z kolumny <strong>łącza do wymiarów finansowych</strong> w definicji wiersza. W przypadku zaznaczenia typu kolumny <strong>WF</strong> następuje automatyczne wprowadzenie ustawień w następujących wierszach: <ul>
     <li><strong>Kod księgi/kategoria atrybutu:</strong> RZECZYWISTE</li>
     <li><strong>Kod księgi/kategoria atrybutu:</strong> RZECZYWISTE</li>
     <li><strong>Rok obrachunkowy:</strong> PODSTAWOWE</li>
@@ -394,14 +394,6 @@ Można zmieniać takie ustawienia domyślne.</td>
     <tr>
     <td>PAGE</td>
     <td>Umożliwia wstawienie pionowego podziału strony w raporcie. Kolumny znajdujące się na prawo od kolumny <strong>STRONA</strong> trafiają na następną stronę.</td>
-    </tr>
-    <tr>
-    <td>WKS</td>
-    <td>Umożliwia wyświetlanie danych pobieranych z arkusza programu Excel. W przypadku zaznaczenia typu kolumny <strong>ARK</strong> następuje automatyczne wprowadzenie ustawień w następujących wierszach: <ul>
-    <li><strong>Rok obrachunkowy:</strong> OKRESOWE</li>
-    <li><strong>Okres:</strong> PODSTAWOWE</li>
-    </ul>
-Można zmieniać takie ustawienia domyślne.</td>
     </tr>
     <tr>
     <td>ATTR</td>
@@ -518,13 +510,13 @@ Można także użyć dowolnej kombinacji znaków alfanumerycznych dla dokładneg
 
 ### <a name="format-a-multiple-currency-report-in-a-column-definition"></a>Formatowanie raportu z wieloma walutami w definicji kolumny
 
-Raport z wieloma walutami może wyświetlać kwoty w walucie naturalnej (lokalnej), funkcjonalnej (domyślnej) lub w walucie raportowania. Waluta funkcjonalna dla firmy jest definiowana w systemie Microsoft Dynamics ERP. Nie należy mylić tego ustawienia ERP z ustawieniem opcji regionalnych systemu operacyjnego, w którym można skonfigurować domyślne symbole waluty używane w raportach. W definicji kolumny dostępne są następujące komórki dotyczące waluty:
+Raport wielu walut może wyświetlać kwoty w walucie rozliczeniowej księgi, raportowania w księdze, walutę transakcji źródłowej lub przeliczone waluty raportowania. Waluta rozliczeniowa dla firmy jest definiowana konfiguracji księgi. Nie należy mylić tego ustawienia z ustawieniem opcji regionalnych systemu operacyjnego, w którym można skonfigurować domyślne symbole waluty używane w raportach. W definicji kolumny dostępne są następujące komórki dotyczące waluty:
 
-- **Sposób wyświetlania waluty** — pozwala określić typ waluty (naturalna, funkcjonalna lub raportowania) używany do wyświetlania transakcji. Ta funkcja jest czasami nazywana przeliczaniem waluty. Przeliczania waluty polega na raportowaniu kwot księgi głównej w walucie, która nie musi być walutą funkcjonalną firmy lub walutą, w której wprowadzono transakcję.
+- **Sposób wyświetlania waluty** — pozwala określić typ waluty (księgowania, raportowania, transakcji lub przeliczonego raportowania) używany do wyświetlania transakcji. Przeliczanie na walutę raportowania to funkcja nazywana czasem przeliczeniem waluty. Przeliczania waluty polega na raportowaniu kwot księgi głównej w walucie, która nie musi być walutą funkcjonalną firmy lub walutą raportowania, w której wprowadzono transakcję.
 - **Filtr waluty** — pozwala określić filtr waluty. W raporcie są wyświetlane tylko transakcje, które są wprowadzane w wybranej walucie.
 
-> [!NOTE]
-> W celu tworzenia raportów obejmujących wiele walut należy zaznaczyć pole wyboru **Uwzględniaj wszystkie waluty raportowania** na karcie **Raporty** w definicji raportu. Aby określić walutę funkcjonalną firmy, należy wykonać następujące czynności.
+> 
+Aby określić walutę rozliczeniową firmy, należy wykonać następujące czynności.
 
 1. W Projektancie raportów w menu **Firma** kliknij polecenie **Firmy**.
 2. W oknie dialogowym **Firmy** wybierz firmę, a następnie kliknij **Widok**.
@@ -533,20 +525,18 @@ Raport z wieloma walutami może wyświetlać kwoty w walucie naturalnej (lokalne
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Określanie waluty w raporcie z wieloma walutami
 
 1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
-2. Kliknij dwukrotnie komórkę **Sposób wyświetlania waluty** w odpowiedniej kolumnie **FD**, a następnie wybierz opcję wyświetlania informacji o walucie: **Waluta naturalna/pierwotna**, **Waluta funkcjonalna z informacjami o firmie**, lub waluta raportowania.
+2. Kliknij dwukrotnie komórkę **Wyświetlanie waluty** w odpowiedniej kolumnie **FD**, a następnie wybierz opcję wyświetlania danych waluty: **Wyświetlanie waluty**, **Raportowanie księgi**, waluta transakcji lub wybierz przeliczenie waluty na inną walutę raportowania.
 3. Kliknij dwukrotnie komórkę **Filtr waluty** w odpowiedniej kolumnie **FD**, a następnie wybierz odpowiedni kod waluty na liście. W raporcie są wyświetlane tylko transakcje, które są wprowadzane w tej walucie.
 
-> [!NOTE]
-> Opisane tutaj opcje mogą się różnić, w zależności od systemu ERP. Więcej informacji można znaleźć w [dokumentacji systemu Microsoft ERP](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Przykład komórek Sposób wyświetlania waluty i Filtr waluty
 
 Phyllis wybrała następujące waluty w definicji kolumny:
 
 - **Filtr waluty:** Jen
-- **Sposób wyświetlania waluty:** Funkcjonalna (USD)
+- **Wyświetlanie walut:** waluta rozliczeniowa z księgi (dolary amerykańskie)
 
-Wybrany filtr waluty powoduje, że raport obejmuje tylko transakcje wprowadzone w jenach (JPY). Wybrany sposób wyświetlania waluty sprawia, że raport wyświetla te transakcje w walucie funkcjonalnej, czyli w dolarach amerykańskich (USD).
+Wybrany filtr waluty powoduje, że raport obejmuje tylko transakcje wprowadzone w jenach (JPY). Wybrany sposób wyświetlania waluty sprawia, że raport wyświetla te transakcje w walucie rozliczeniowej, czyli w dolarach amerykańskich (USD).
 
 #### <a name="currency-filter-and-currency-display-combinations"></a>Kombinacje filtr waluty i sposobu wyświetlania waluty
 
@@ -555,10 +545,10 @@ W poniższej tabeli przedstawiono wyniki raportu, które mogą pojawić się dla
 
 | Komórka Sposób wyświetlania waluty                        | Komórka Filtr waluty | Wynik raportu |
 |----------------------------------------------|----------------------|---------------|
-| Waluta naturalna/pierwotna                 | **YEN**              | **Y6,000** — wynik pokazuje tylko transakcje, które zostały wprowadzone w JPY. |
-| Waluta funkcjonalna na podstawie informacji o firmie | **YEN**              |**60 USD** — wynik pokazuje tylko transakcje, które zostały wprowadzone w JPY i wyświetla te transakcje w USD.<blockquote>[!NOTE] Kurs wymiany to w przybliżeniu 100 JPY za 1 USD.</blockquote> |
-| Waluta funkcjonalna z informacji o firmie | Pusty                | **2310 USD** — wynik pokazuje wszystkie dane w walucie funkcjonalnej określonej w informacjach o firmie.<blockquote>[!NOTE] Ta kwota jest sumą wszystkich transakcji w walucie funkcjonalnej.</blockquote> |
-| Waluta naturalna/pierwotna                 | Puste                | **2250 USD** — wynik pokazuje wszystkie kwoty w walucie, w której transakcja została przeprowadzona. |
+| Waluta transakcji                 | **YEN**              | **Y6,000** — wynik pokazuje tylko transakcje, które zostały wprowadzone w JPY. |
+| Waluta rozliczeniowa księgi | **YEN**              |**60 USD** — wynik pokazuje tylko transakcje, które zostały wprowadzone w JPY i wyświetla te transakcje w USD.<blockquote>[!NOTE] Kurs wymiany to w przybliżeniu 100 JPY za 1 USD.</blockquote> |
+| Waluta rozliczeniowa księgi | Pusty                | **2310 USD** — wynik pokazuje wszystkie dane w walucie rozliczeniowej określonej w księdze.<blockquote>[!NOTE] Ta kwota jest sumą wszystkich transakcji w walucie rozliczeniowej.</blockquote> |
+| Waluta transakcji                 | Pusty                | **2250 USD** — wynik pokazuje wszystkie kwoty w walucie, w której transakcja została przeprowadzona. Oznacza to, że suma jest zsumowaniem kwot w różnych walutach. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Kolumna obliczania w definicji kolumny
 

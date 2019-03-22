@@ -3,7 +3,7 @@ title: Strategia zmiennej na potrzeby konfiguracji produktów
 description: W tym temacie opisano, jak za pomocą strategii doboru solverów poprawić działanie konfiguracji produktu.
 author: cvocph
 manager: AnnBe
-ms.date: 01/02/2018
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0abb9313ec62cfdfe3bf7c810e2143dcf502bf9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
+ms.sourcegitcommit: 0ceee30a60468a01db6f5b3526dcb9c6abc9d4dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "351155"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "403923"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Strategia zmiennej na potrzeby konfiguracji produktów
 
@@ -62,8 +62,8 @@ W poniższej tabeli przedstawiono zalecenia dotyczące strategii doboru solveró
 | Strategia zmiennej      | Użyj strategii w tym scenariuszu |
 |----------------------|-----------------------------------|
 | Domyślnie              | Strategia **Domyślnie** została zoptymalizowana do rozwiązywania problemów z modelami, które opierają się na powiązanych tabelach. Analizy wdrożeń u klientów pokazały, że ta strategia jest najbardziej efektywna w scenariuszach, gdzie są szeroko stosowane powiązania tabel. |
-| Najpierw domeny minimalne | Strategie **Najpierw domeny minimalne** i **Od góry do dołu** są ściśle powiązane. Analizy wdrożeń u klientów pokazały, że strategia **Od góry do dołu**, która została wprowadzona w aktualizacji CU8, przynosi lepsze efekty, niż strategia **Najpierw domeny minimalne**. Jednak strategia **Najpierw domeny minimalne** została zachowana w produkcie w celu zapewnienia zgodności z poprzednimi wersjami. Obie te strategie doboru solverów okazują się skuteczniejsze w rozwiązywaniu problemów z modelami zawierającymi kilka wyrażeń arytmetycznych, gdzie nie są używane powiązane tabele. Jednak w niektórych przypadkach lepsze efekty przynosi strategia **Domyślnie**. Z tego względu należy pamiętać o wypróbowaniu każdej strategii. |
-| Od góry do dołu             | Strategie **Najpierw domeny minimalne** i **Od góry do dołu** są ściśle powiązane. Analizy wdrożeń u klientów pokazały, że strategia **Od góry do dołu**, która została wprowadzona w aktualizacji CU8, przynosi lepsze efekty, niż strategia **Najpierw domeny minimalne**. Jednak strategia **Najpierw domeny minimalne** została zachowana w produkcie w celu zapewnienia zgodności z poprzednimi wersjami. Obie te strategie doboru solverów okazują się skuteczniejsze w rozwiązywaniu problemów z modelami zawierającymi kilka wyrażeń arytmetycznych, gdzie nie są używane powiązane tabele. Jednak w niektórych przypadkach lepsze efekty przynosi strategia **Domyślnie**. Z tego względu należy pamiętać o wypróbowaniu każdej strategii. |
+| Najpierw domeny minimalne | Strategie **Najpierw domeny minimalne** i **Od góry do dołu** są ściśle powiązane. Analizy wdrożeń u klientów pokazały, że strategia **Od góry do dołu** przynosi lepsze efekty, niż strategia **Najpierw domeny minimalne**. Jednak strategia **Najpierw domeny minimalne** została zachowana w produkcie w celu zapewnienia zgodności z poprzednimi wersjami. Obie te strategie doboru solverów okazują się skuteczniejsze w rozwiązywaniu problemów z modelami zawierającymi kilka wyrażeń arytmetycznych, gdzie nie są używane powiązane tabele. Jednak w niektórych przypadkach lepsze efekty przynosi strategia **Domyślnie**. Z tego względu należy pamiętać o wypróbowaniu każdej strategii. |
+| Od góry do dołu             | Strategie **Najpierw domeny minimalne** i **Od góry do dołu** są ściśle powiązane. Analizy wdrożeń u klientów pokazały, że strategia **Od góry do dołu** przynosi lepsze efekty, niż strategia **Najpierw domeny minimalne**. Jednak strategia **Najpierw domeny minimalne** została zachowana w produkcie w celu zapewnienia zgodności z poprzednimi wersjami. Obie te strategie doboru solverów okazują się skuteczniejsze w rozwiązywaniu problemów z modelami zawierającymi kilka wyrażeń arytmetycznych, gdzie nie są używane powiązane tabele. Jednak w niektórych przypadkach lepsze efekty przynosi strategia **Domyślnie**. Z tego względu należy pamiętać o wypróbowaniu każdej strategii. |
 | Z3                   | Zalecamy używanie strategii **Z3** jako domyślnej strategii doboru solverów. W przypadku obaw o wydajność i skalowalność można przetestować pozostałe strategie. |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
