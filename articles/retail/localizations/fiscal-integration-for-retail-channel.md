@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773284"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950411"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Omówienie integracji fiskalnej dla kanałów modułu Retail
 
@@ -81,12 +81,37 @@ Schemat integracji fiskalnej zapewnia następujące opcje obsługi błędów pod
 
 Opcje **Pomiń** i **Oznacz jako zarejestrowaną** pozwalają na rejestrowanie określonych informacji przez kody informacyjne dotyczących awarii, np. przyczyny awarii lub uzasadnienia pominięcia rejestracji fiskalnej lub oznaczenia transakcji jako zarejestrowanej. Aby uzyskać więcej informacji o sposobie konfigurowania parametrów obsługi błędów, zobacz [Konfigurowanie obsługi błędów](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
+### <a name="optional-fiscal-registration"></a>Opcjonalna rejestracja fiskalna
+
+Rejestracja fiskalna może być obowiązkowa dla niektórych operacji i opcjonalna dla innych scenariuszy. Na przykład rejestracja fiskalna zwykłej sprzedaży i zwrotów może być obowiązkowa, ale rejestracja fiskalna operacji związanych z wpłatami odbiorcy może być opcjonalna. W tym przypadku brak rejestracji fiskalnej sprzedaży może blokować sprzedaż w przyszłości, ale niedokonanie rejestracji fiskalnej wpłat odbiorcy nie będzie blokowało sprzedaży w przyszłości. Aby odróżnić operacje obowiązkowe od opcjonalnych, zalecamy ich obsługę przez osobnych dostawców dokumentów oraz ustalenie osobnych kroków w rejestracji fiskalnej dla tych dostawców. Parametr **Kontynuuj przy błędzie** powinien być włączony dla wszystkich kroków związanych z opcjonalną rejestracją fiskalną. Aby uzyskać więcej informacji o sposobie konfigurowania parametrów obsługi błędów, zobacz [Konfigurowanie obsługi błędów](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
+### <a name="manually-running-fiscal-registration"></a>Ręczne uruchomienie rejestracji fiskalnej
+
+Jeśli rejestracja fiskalna transakcji lub zdarzenia zostały odroczone po awarii (np. operator wybrał opcję **Anuluj** w polu dialogowym obsługi błędu), można ręcznie ponownie uruchomić rejestrację fiskalną przez wywołanie odpowiedniej operacji. Aby dowiedzieć się więcej, zobacz [Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+### <a name="fiscal-registration-health-check"></a>Sprawdzanie kondycji rejestracji fiskalnej
+
+Procedury sprawdzania kondycji rejestracji fiskalnej weryfikują dostępność urządzenia fiskalnego lub usługi po wystąpieniu określonego zdarzenia. Jeśli nie można obecnie dokończyć rejestracji fiskalnej, operator zostanie powiadomiony z wyprzedzeniem.
+
+Punkty sprzedaży uruchamiają procedurę sprawdzania kondycji, gdy wystąpią następujące zdarzenia:
+
+- Nowa transakcja jest otwarta.
+- Wstrzymana transakcja została wznowiona.
+- Transakcja sprzedaży lub zwrotu jest zakończona.
+
+Jeśli sprawdzanie kondycji nie powiedzie się, przy punkcie sprzedaży zostanie wyświetlone okno dialogowe sprawdzania kondycji. To okno dialogowe zawiera następujące przyciski:
+
+- **OK** — kliknięcie tego przycisku umożliwia operatorowi zignorowanie błędu sprawdzania kondycji i kontynuowanie przetwarzania operacji. Operator może nacisnąć ten przycisk tylko wtedy, gdy ma włączone uprawnienie **Zezwalaj na pominięcie błędu sprawdzania kondycji**.
+- **Anuluj** — Jeśli operator wybierze ten przycisk, punkt sprzedaży anuluje ostatnią akcję (na przykład towar nie zostanie dodany do nowej transakcji).
+
+> [!NOTE]
+> Sprawdzanie kondycji jest uruchamiane tylko wtedy, gdy bieżąca operacja wymaga rejestracji fiskalnej, a parametr **Kontynuuj przy błędzie** jest wyłączony dla bieżącego etapu procesu rejestracji fiskalnej. Aby uzyskać więcej informacji, zobacz [Określanie ustawienia ustawień obsługi błędów](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Zapisywanie odpowiedzi fiskalnej w transakcji fiskalnej
 
 Po pomyślnym zakończeniu rejestracji fiskalnej transakcji lub zdarzenia transakcja fiskalna jest tworzona w bazie danych kanału z łączem do oryginalnej transakcji lub oryginalnego zdarzenia. Podobnie w przypadku wybrania opcji **Pomiń** lub **Oznaczanie jako zarejestrowaną** dla nieudanej rejestracji fiskalnej ta informacja jest zapisywana w transakcji fiskalnej. Transakcja fiskalna zawiera odpowiedź fiskalną z urządzenia fiskalnego lub usługi fiskalnej Jeśli proces rejestracji fiskalnej składa się z kilku kroków, transakcja fiskalna jest tworzona dla każdego kroku procesu, który spowodował powodzenie lub niepowodzenie rejestracji.
 
-Transakcje fiskalne są przenoszone do Centrali sieci sprzedaży z pomocą *zadania P* wraz z transakcjami sieci sprzedaży. Na skróconej karcie **Transakcje fiskalne** na stronie **Transakcje sklepu detalicznego** można wyświetlić transakcje fiskalne, które są połączone z transakcjami sieci sprzedaży.
-
+Transakcje fiskalne są przenoszone do Retail Headquarters z pomocą *zadania P* wraz z transakcjami sieci sprzedaży. Na skróconej karcie **Transakcje fiskalne** na stronie **Transakcje sklepu detalicznego** można wyświetlić transakcje fiskalne, które są połączone z transakcjami sieci sprzedaży.
 
 Transakcja fiskalna przechowuje następujące informacje:
 
@@ -110,11 +135,12 @@ Funkcja integracji fiskalnej obsługuje generowanie zestawień na koniec dnia, k
 Następujące przykładowe integracje fiskalne są obecnie dostępne w zestawie SDK modułu Retail, który jest udostępniany razem z modułem Retail:
 
 - [Przykładowa integracja drukarki fiskalnej dla Włoch](emea-ita-fpi-sample.md)
-- [Przykładowa integracja drukarki fiskalnej dla Polski](emea-pol-fpi-sample.md)
+- [Przykładowa integracja drukarki fiskalnej (Polska)](emea-pol-fpi-sample.md)
+- [Przykład integracji usługi rejestracji fiskalnej (Austria)](emea-aut-fi-sample.md)
+- [Przykład integracji usługi rejestracji fiskalnej (Czechy)](emea-cze-fi-sample.md)
 
 Następujące funkcje integracji fiskalnej są także dostępne w zestawie SDK modułu Retail, ale obecnie nie używają schematu integracji fiskalnej. Migracja tej funkcji do schematu integracji fiskalnej jest planowana w późniejszych aktualizacjach.
 
 - [Podpis cyfrowy dla Francji](emea-fra-cash-registers.md)
 - [Podpis cyfrowy dla Norwegii](emea-nor-cash-registers.md)
 - [Przykładowa integracja jednostki kontrolnej dla Szwecji](./retail-sdk-control-unit-sample.md)
-

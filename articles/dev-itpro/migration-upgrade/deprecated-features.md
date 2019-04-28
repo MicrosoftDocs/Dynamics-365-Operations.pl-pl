@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia.
 author: sericks007
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
-ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
+ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "836355"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992890"
 ---
 # <a name="removed-or-deprecated-features"></a>Usunięte lub przestarzałe funkcje
 
@@ -41,45 +41,114 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 > [!NOTE]
 > Szczegółowe informacje o obiektów w rozwiązaniu Finance and Operations można znaleźć w [raportach z wykazami parametrów technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach programu Finance and Operations.
 
+
+## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 z aktualizacją platformy 26
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.2 z aktualizacją Platform update 26 jest dostępna dla użytkowników docelowych w ramach wersji wstępnej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Dostępność aktualizacji usługi](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="legacy-default-action-behavior"></a>Starsze domyślne zachowanie akcji
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Starsze zachowanie dla domyślnych akcji w siatkach skutkuje tym, że nieoczekiwana kolumna ma łącze do domyślnej akcji, kiedy kolumny siatki zostaną przeorganizowane w procesie personalizacji. Nowa funkcja domyślnej akcji trwałej naprawia ten problem. Aby uzyskać więcej informacji, zobacz [Domyślne akcje trwałe w siatkach](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Zamieniona przez inną funkcję?**   | Począwszy od aktualizacji platformy 21, została wprowadzona funkcja „domyślne akcje trwałe”. Ta funkcja może być włączona na stronie **opcji wydajności klienta**. |
+| **Powiązane obszary produktów**         | Siatki w kliencie sieci web |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Wycofane: Począwszy od kwietnia 2020, domyślne akcje trwałe będą domyślnym zachowaniem, bez mechanizmu odwrócenia starszego zachowania. |
+
+### <a name="legacy-is-one-of-filtering-experience"></a>Starsza wersja "jest jednym z" opcji filtrowania
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Filtrowanie "jest jednym z" zostało zmienione w aktualizacji Platform update 22, z możliwością, że "jest jednym z" będzie jedyną opcją filtrowania. |
+| **Zamieniona przez inną funkcję?**   | Począwszy od aktualizacji Platform update 22, ulepszone filtrowanie „jest jednym z” jest dostępne na stronie **opcji wydajności klienta**. Aby dowiedzieć się więcej, zobacz [Optymalizowanie funkcji filtrowania „jest jednym z”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Powiązane obszary produktów**         | Klient sieci Web |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Wycofane: Począwszy od kwietnia 2020, poprawiona funkcja "jest jednym z" będzie domyślnym zachowaniem, bez mechanizmu odwrócenia starszego zachowania. |
+
+### <a name="deriving-from-internal-classes-is-deprecated"></a>Dziedziczenie z wewnętrznych klas jest przestarzałe
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | W wersjach sprzed aktualizacji platformy 25 można było utworzyć klasę lub tabelę, która pochodzi z wewnętrznej klasy/tabeli zdefiniowanej w innym pakiecie/module. Nie jest to bezpieczna praktyka kodowania. Począwszy od aktualizacji platformy 25 kompilator wyświetli komunikat ostrzegawczy. |
+| **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w nadchodzącej aktualizacji Platform update 26. Ta zmiana jest zgodna z poprzednimi wersjami w czasie wykonywania, co oznacza, że po uruchomieniu aktualizacji platformy 25 lub nowszej można ją wdrożyć w dowolnym środowisku piaskownicy lub produkcji, bez konieczności modyfikowania kodu niestandardowego. Ta zmiana wpływa tylko na czas projektowania i kompilacji.|
+| **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Przestarzałe - ostrzeżenie stanie się błędem kompilacji w nadchodzącej aktualizacji platformy 26. |
+
+### <a name="overriding-internal-methods-is-deprecated"></a>Zastępowanie wewnętrznych metod jest przestarzałe
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | W wersjach sprzed aktualizacji platformy 25 można było zastąpić wewnętrzną metodę w klasie pochodnej zdefiniowanej w innym pakiecie/module. Nie jest to bezpieczna praktyka kodowania. Począwszy od aktualizacji platformy 25 kompilator wyświetli komunikat ostrzegawczy. |
+| **Zamieniona przez inną funkcję?**   | Ostrzeżenie zostanie zastąpione błędem kompilacji w nadchodzącej aktualizacji Platform update 26. Ta zmiana jest zgodna z poprzednimi wersjami w czasie wykonywania, co oznacza, że po uruchomieniu aktualizacji platformy 25 lub nowszej można ją wdrożyć w dowolnym środowisku piaskownicy lub produkcji, bez konieczności modyfikowania kodu niestandardowego. Ta zmiana wpływa tylko na czas projektowania i kompilacji. |
+| **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Przestarzałe - ostrzeżenie stanie się błędem kompilacji w nadchodzącej aktualizacji platformy 26. |
+
+### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parametr umożliwia włączenie zamówień sprzedaży z wielu źródeł finansowania umowy dotyczącej projektu
+Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycząca projektu ma wiele źródeł finansowania i została włączona za pomocą ustawienia **Zezwalaj na zamówienia sprzedaży w projektach z wieloma źródłami finansowania** w menu **Parametry zarządzania projektem**. Ten parametr nie jest włączony domyślnie. 
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Po usunięciu tego parametru funkcja zawsze będzie włączona. |
+| **Zamieniona przez inną funkcję?**   | Nr Funkcje do obsługi zamówień sprzedaży w oparciu o projekt zawierających wiele źródeł finansowania będą zawsze włączone.   |
+| **Powiązane obszary produktów**         |Parametr **Zezwalaj na zamówienia sprzedaży w projektach z wieloma źródłami finansowania** zostanie usunięty. Następujące metody zostaną zmodyfikowana po usunięciu parametru: **ctrlSalesOrderTable** w klasie **ProjStatusType**, **sprawdzania poprawności** w polu **ProjId** i **uruchamiania** w formularzu **SalescreateOrder**. Po usunięciu parametru zostaną wycofane następujące metody: **IsSalesOrderAllowedForMultipleFundingSources** w pliku tabeli **ProjTable**, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** w pliku tabeli **ProjTable**, pole danych **AllowSalesOrdersForMultipleFundingSources** w formularzu **ProjParameters** i pliki **ProjParameterEntity**, metoda prywatna **IsAssociatedToMultipleFundingSourcesContract** w pliku tabeli **ProjTable**. |
+| **Opcja wdrażania**              | Wszystkich  |
+| **Stan**                         | Zakończenie obsługi jest planowane na kwiecień 2020. |
+
+### <a name="legacy-workflow-reports-for-tracking-and-instance-status"></a>Raporty ze starszych przepływów pracy do śledzenia i identyfikacji i stanów wystąpienia
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Raporty ze starszych przepływów pracy do śledzenia i identyfikacji i stanów wystąpienia są wycofywane, pnieważ nie ma już do nich odniesień z nawigacji. Nazwy raportów to WorkflowWorkflowInstanceByStatusReport i WorkflowWorkflowTrackingReport. |
+| **Zamieniona przez inną funkcję?**   | Zamiennie można używać formularza historii przepływu pracy. |
+| **Powiązane obszary produktów**         | Klient sieci Web |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Wycofane: docelowy okres usuwania funkcji to kwiecień 2020 roku. |
+
 ## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 z aktualizacją platformy 25
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 z aktualizacją platform update 25 jest dostępna dla użytkowników docelowych w ramach wersji wstępnej. Zawartość oraz funkcje mogą ulec zmianie. Aby uzyskać dodatkowe informacje na temat wersji zapoznawczych, zobacz [wersje pierwsze i oficjalne: aktualizacje usługi](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+> Dynamics 365 for Finance and Operations 10.0.1 z aktualizacją Platform update 25 jest dostępna dla użytkowników docelowych w ramach wersji wstępnej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Dostępność aktualizacji usługi](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Wycofane interfejsy API i potencjalnie istotne zmiany
+
 
 #### <a name="deriving-from-internal-classes-is-deprecated"></a>Dziedziczenie z wewnętrznych klas jest przestarzałe
 
 |   |  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | W wersjach sprzed aktualizacji platformy 25 można było utworzyć klasę lub tabelę, która pochodzi z wewnętrznej klasy/tabeli zdefiniowanej w innym pakiecie/module. Nie jest to bezpieczna praktyka kodowania. Począwszy od aktualizacji platformy 25, kompilator będzie wyświetlał komunikat o błędzie przy próbie zrobienia tego.|
-| **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w nadchodzącej aktualizacji platformy. Ta zmiana jest zgodna z poprzednimi wersjami w czasie wykonywania, co oznacza, że po uruchomieniu aktualizacji platformy 25 lub nowszej można ją wdrożyć w dowolnym środowisku piaskownicy lub produkcji, bez konieczności modyfikowania kodu niestandardowego. Ta zmiana wpływa tylko na czas projektowania i kompilacji. |
+| **Przyczyna wycofania/usunięcia** | W wersjach sprzed aktualizacji platformy 25 można było utworzyć klasę lub tabelę, która pochodzi z wewnętrznej klasy/tabeli zdefiniowanej w innym pakiecie/module. Nie jest to bezpieczna praktyka kodowania. Począwszy od aktualizacji platformy 25 kompilator wyświetli komunikat ostrzegawczy. |
+| **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w nadchodzącej aktualizacji Platform update 26. Ta zmiana jest zgodna z poprzednimi wersjami w czasie wykonywania, co oznacza, że po uruchomieniu aktualizacji platformy 25 lub nowszej można ją wdrożyć w dowolnym środowisku piaskownicy lub produkcji, bez konieczności modyfikowania kodu niestandardowego. Ta zmiana wpływa tylko na czas projektowania i kompilacji.|
 | **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
-| **Opcja wdrażania**              | Wszyscy |
-| **Stan**                         | Przestarzałe - ostrzeżenie stanie się błędem kompilacji w nadchodzącej aktualizacji platformy. |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Przestarzałe - ostrzeżenie stanie się błędem kompilacji w nadchodzącej aktualizacji platformy 26. |
 
 #### <a name="overriding-internal-methods-is-deprecated"></a>Zastępowanie wewnętrznych metod jest przestarzałe
 
 |   |  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | W wersjach sprzed aktualizacji platformy 25 można było zastąpić wewnętrzną metodę w klasie pochodnej zdefiniowanej w innym pakiecie/module. Nie jest to bezpieczna praktyka kodowania. Począwszy od aktualizacji platformy 25, kompilator będzie wyświetlał komunikat o błędzie przy próbie zrobienia tego.|
-| **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w nadchodzącej aktualizacji platformy. Ta zmiana jest zgodna z poprzednimi wersjami w czasie wykonywania, co oznacza, że po uruchomieniu aktualizacji platformy 25 lub nowszej można ją wdrożyć w dowolnym środowisku piaskownicy lub produkcji, bez konieczności modyfikowania kodu niestandardowego. Ta zmiana wpływa tylko na czas projektowania i kompilacji. |
+| **Przyczyna wycofania/usunięcia** | W wersjach sprzed aktualizacji platformy 25 można było zastąpić wewnętrzną metodę w klasie pochodnej zdefiniowanej w innym pakiecie/module. Nie jest to bezpieczna praktyka kodowania. Począwszy od aktualizacji platformy 25 kompilator wyświetli komunikat ostrzegawczy. |
+| **Zamieniona przez inną funkcję?**   | Ostrzeżenie zostanie zastąpione błędem kompilacji w nadchodzącej aktualizacji Platform update 26. Ta zmiana jest zgodna z poprzednimi wersjami w czasie wykonywania, co oznacza, że po uruchomieniu aktualizacji platformy 25 lub nowszej można ją wdrożyć w dowolnym środowisku piaskownicy lub produkcji, bez konieczności modyfikowania kodu niestandardowego. Ta zmiana wpływa tylko na czas projektowania i kompilacji. |
 | **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
-| **Opcja wdrażania**              | Wszyscy |
-| **Stan**                         | Przestarzałe - ostrzeżenie stanie się błędem kompilacji w nadchodzącej aktualizacji platformy. |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Przestarzałe - ostrzeżenie stanie się błędem kompilacji w nadchodzącej aktualizacji platformy 26. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 z aktualizacją platformy 23
 
-### <a name="print-to-screen-functionality"></a>Funkcja drukowania ekranu
-Klienci mogą używać akcji **importowania** udostępnianych przez formant Report Viewer w celu pobierania dokumentów wytwarzanych przez aplikacje Finance and Operations. Ta prezentacja raportu oparta na języku HTML oferuje podgląd dokumentu niedzielonego na strony.
+### <a name="sql-server-reporting-services-reportviewer-control"></a>Formant SQL Server Reporting Services ReportViewer
+Klienci mogą używać akcji **eksportowania** wbudowanych w formant SQL Server Reporting Services (SSRS) ReportViewer w celu pobierania dokumentów wytwarzanych przez aplikacje Finance and Operations. Ta prezentacja raportu oparta na języku HTML oferuje podgląd dokumentu niedzielonego na strony.
 
 |   |  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Podgląd HTML bez podziału na strony **nie** zapewnia dokładności takiej, jak mają fizyczne dokumenty z Finance and Operations. Jednak PDF z całym dokumentem jako standardowy format dla operacji biznesowych umożliwia bardzo duże uproszczenie interakcji użytkownika z raportami z aplikacji i ułatwia proces renderowania dokumentów. |
+| **Przyczyna wycofania/usunięcia** | Podgląd HTML bez podziału na strony **nie** zapewnia dokładności takiej, jak mają fizyczne dokumenty z Finance and Operations. Dzięki wdrożeniu PDF jako standardowego formatu dla dokumentów biznesowych, użytkownicy będą mogli wykorzystać nowoczesne widoki z lepszą wydajnością podczas sporządzania raportów aplikacji. |
 | **Zamieniona przez inną funkcję?**   | W przyszłości, dokumenty PDF będą formatami domyślnymi dla reportów renderowanych przez Finance and Operations.   |
 | **Powiązane obszary produktów**         | Ta zmiana **nie** wpływa na scenariusze klientów, kiedy raporty są rozsyłane elektronicznie lub wysyłane bezpośrednio do drukarki.    |
 | **Opcja wdrażania**              | Wszyscy  |
-| **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji. Wprowadzenie funkcji automatycznego pobierania raportów aplikacji do przeglądarki jako dokumentów PDF jest planowane w majowej aktualizacji platformy 2019. <br><br>**Ważne:**  obecnym klientom korzystającym z funkcji drukowania ekranu zalecamy powiadomienie [pomocy technicznej](../lifecycle-services/lcs-support.md) przed rozpoczęciem uaktualniania do aktualizacji platformy 26. |
+| **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji. Wprowadzenie funkcji automatycznego podglądania raportów używającej wbudowanej przeglądarki PDF jest planowane w majowej aktualizacji platformy 2019. |
 
 ### <a name="client-kpi-controls"></a>Formanty KPI klienta
 Wbudowanie kluczowych wskaźników wydajności (KPI) może być modelowane w Visual Studio przez dewelopera i dodatkowo dostosowane przez użytkownika końcowego.
@@ -110,7 +179,7 @@ Aby wyświetlić listę wszystkich interfejsów API, które zostaną wycofane, z
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 z aktualizacją platformy 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Reguły przetwarzania wsadowego zapisów na koncie w arkuszu księgi podrzędnej
-Tryb przesyłania synchronicznego jest usuwany z parametrów księgi głównej.  Zastępują go tryby przesyłania asynchronicznego i zaplanowanych zadań wsadowych, które już istnieją jako opcje przesyłania. 
+Tryb przesyłania synchronicznego jest usuwany z parametrów księgi głównej.  Zastępują go tryby przesyłania asynchronicznego i zaplanowanych zadań wsadowych, które już istnieją jako opcje przesyłania. Aby uzyskać dodatkowe informacje, zobacz [blog Parametry księgi głównej — reguły przetwarzania wsadowego](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules).
 
 |   |  |
 |------------|--------------------|
@@ -172,7 +241,7 @@ Funkcja do tworzenia szablonów dla nowych rejestrów podatku dochodowego. Ta fu
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 z aktualizacją platformy 12
 
 ### <a name="personalized-product-recommendations"></a>Spersonalizowane rekomendacje produktów 
-Począwszy od 15 lutego 2018 roku sprzedawcy detaliczni nie będą już mogli wyświetlać spersonalizowanych rekomendacji produktów na urządzeniach w punktach sprzedaży (POS). Aby uzyskać więcej informacji, zobacz [Spersonalizowane rekomendacje produktów](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+Począwszy od 15 lutego 2018 roku sprzedawcy detaliczni nie będą już mogli wyświetlać spersonalizowanych rekomendacji produktów na urządzeniach w punktach sprzedaży (POS). Aby uzyskać więcej informacji, zobacz [Spersonalizowane rekomendacje produktów](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -277,7 +346,7 @@ Użytkownicy mogą pobrać go z portalu rządowego.
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
 ### <a name="personalized-product-recommendations"></a>Spersonalizowane rekomendacje produktów 
-Począwszy od 15 lutego 2018 roku sprzedawcy detaliczni nie będą już mogli wyświetlać spersonalizowanych rekomendacji produktów na urządzeniach w punktach sprzedaży (POS). Aby uzyskać więcej informacji, zobacz [Spersonalizowane rekomendacje produktów](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+Począwszy od 15 lutego 2018 roku sprzedawcy detaliczni nie będą już mogli wyświetlać spersonalizowanych rekomendacji produktów na urządzeniach w punktach sprzedaży (POS). Aby uzyskać więcej informacji, zobacz [Spersonalizowane rekomendacje produktów](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -309,7 +378,7 @@ Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym 
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Pokrywające się funkcje.       |
-| **Zamieniona przez inną funkcję?**   | Tak. Ta funkcja została zastąpiona przez moduł Finance and Operations — Magazynowanie. Aby uzyskać więcej informacji na temat konfiguracji i wymagań wstępnych, zobacz [Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Zamieniona przez inną funkcję?**   | Tak. Ta funkcja została zastąpiona przez moduł Finance and Operations — Magazynowanie. Aby uzyskać więcej informacji na temat konfiguracji i wymagań wstępnych, zobacz [Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie](../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Powiązane obszary produktów**         | Zarządzanie magazynem, Zarządzanie transportem     |
 | **Opcja wdrażania**              | Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym składnikiem przeznaczonym do lokalnego samodzielnego instalowania.               |
 | **Stan**                         | Wycofane: docelowy okres usuwania funkcji to czwarty kwartał 2019 roku.   |
@@ -687,6 +756,17 @@ W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z z
 | **Zamieniona przez inną funkcję?**   | Ta funkcja zastępuje strukturę importu/eksportu danych, która obsługuje cykliczny import/eksport zbiorczy. Dla klasy AxBC zaleca się użycie samych tabel. |
 | **Powiązane obszary produktów**         | AxD, AxBC i AIF   |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.   |
+
+### <a name="billing-code-rate-scripts"></a>Skryptów stawek dla kodów fakturowania
+
+Skrypty fakturowania były używane do obliczania stawki fakturowania dla kodów rozliczeń. Te skrypty wymagały niestandardowego projektowania w C Sharp lub Visual Basic. W bieżącej wersji systemu Dynamics AX, **skrypty stawek dla kodów fakturowania** nie są obsługiwane.
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Obsługa niestandardowych skryptów C Sharp lub Visual Basic nie została dodana w systemie Dynamics AX 7.0. |
+| **Zamieniona przez inną funkcję?**   | Nie                                                                                      |
+| **Powiązane obszary produktów**         | Rozrachunki z odbiorcami (sektor publiczny)                                    |
+| **Stan**                         | Usunięto w systemie Dynamics AX 7.0.                                                          |
 
 ### <a name="boms-without-bom-versions"></a>BOM bez wersji BOM
 
@@ -1068,7 +1148,7 @@ Konstruktor produktów był używany do dynamicznego konfigurowania elementów z
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Konstruktor produktów pokazywał kod X ++ użytkownikom końcowym, a w aktualnej wersji systemu Dynamics AX nie powinno do tego dochodzić. Funkcja została usunięta, by uniknąć duplikowania się działań na zachodzących na siebie, dużych podstawach kodu.  |
-| **Zamieniona przez inną funkcję?**   | Tak. Konfigurację opartą na ograniczeniach wprowadzono w systemie Dynamics AX 2012, w którym ogłoszono już wycofanie funkcji Konstruktor produktów w przyszłych wersjach. Technologia konfiguracji opartej na ograniczeniach jest wybierana w produktach głównych w celu włączenia konfiguracji. Aby dowiedzieć się więcej, zobacz [Tworzenie modelu konfiguracji produktu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
+| **Zamieniona przez inną funkcję?**   | Tak. Konfigurację opartą na ograniczeniach wprowadzono w systemie Dynamics AX 2012, w którym ogłoszono już wycofanie funkcji Konstruktor produktów w przyszłych wersjach. Technologia konfiguracji opartej na ograniczeniach jest wybierana w produktach głównych w celu włączenia konfiguracji. Aby dowiedzieć się więcej, zobacz [Tworzenie modelu konfiguracji produktu](../../supply-chain/pim/build-product-configuration-model.md). |
 | **Powiązane obszary produktów**         | Zarządzanie informacjami o produktach, Sprzedaż i marketing  |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.      |
 

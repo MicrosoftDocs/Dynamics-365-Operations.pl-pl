@@ -3,7 +3,7 @@ title: Personalizowanie środowiska użytkownika
 description: W tym temacie wyjaśniono, jak można spersonalizować Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 04/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53aff09746b92372bb38908a526942ebe9bb4c52
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363483"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975858"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 W tym temacie wyjaśniono, jak można spersonalizować Microsoft Dynamics 365 for Finance and Operations.
 
@@ -47,6 +48,8 @@ Strona **Opcje użytkownika** zawiera kilka ustawień ogólnosystemowych dla bie
 - **Preferencje** — Umożliwia wybór domyślnych wartości, które będą używane przy każdym otwarciu aplikacji Finance and Operations. Wartości te dotyczą firmy, strony początkowej i domyślnego trybu wyświetlania/edycji. (Tryb wyświetlania/edycji określa, czy strona jest zablokowana do wyświetlania, czy otwarta do edycji po jej każdym otwarciu). Ta karta zawiera również opcje języka, strefy czasowej, daty i godziny oraz formatu liczb. Ponadto ta karta zawiera szereg różnych preferencji, które różnią się zależnie od wersji programu.
 - **Konto** — Umożliwia podanie nazwy użytkownika i innych opcji związanych z kontem.
 - **Przepływ pracy** — Umożliwia wybranie opcji związanych z przepływem pracy.
+
+Oprócz możliwości modyfikowania ustawień użytkownika, można wyświetlić i usunąć swoje dane dotyczące użycia i personalizacji, klikając przycisk **dane dotyczące użycia**. Podczas używania aplikacji wiele wyborów użytkownika jest zapamiętywanych, aby ułatwić użytkownikowi korzystanie z systemu w przyszłości. Karta **Personalizacja** umożliwia wyświetlanie osobistych zmian wprowadzonych na stronach systemu przez użytkownika i zarządzanie nimi. Objaśnienia funkcji, wyskakujące okienka przedstawiające nowe funkcje w produkcie (dostępne w aktualizacji platformy 26), również można zresetować na tej karcie, tak aby znowu otrzymywać alerty dotyczące funkcji napotkanych wcześniej.  
 
 ## <a name="implicit-personalizations"></a>Personalizacje pośrednie
 
@@ -160,7 +163,7 @@ Użytkownicy posiadający uprawnienia administratora mogą też zarządzać pers
 
 - **Zastosuj** — ta opcja pozwala zaimportować lub wybrać personalizację dla co najmniej jednego użytkownika. Aby zastosować personalizację dla jednego lub kilku użytkowników, należy najpierw zaznaczyć rolę i użytkowników, którzy pełnią tę rolę. Następnie wybierz istniejącą personalizację do zastosowania do wybranych użytkowników lub zaimportuj plik personalizacji. Personalizacja jest zweryfikowana i zostanie zastosowana do wszystkich zaznaczonych użytkowników następnym razem, gdy otworzą wybraną stronę.
 - **Wyczyść** — Tutaj można wyczyścić wszystkie personalizacje strony lub obszaru roboczego dla jednego lub więcej użytkowników. Najpierw wybierz stronę lub obszar roboczy, aby wyświetlić listę użytkowników, którzy spersonalizowali tę stronę/obszar. Następnie wybierz użytkowników, dla których chcesz wyczyścić personalizację danej strony lub obszaru roboczego, i wybierz opcję **Wyczyść**. Wszystkie personalizacje zastosowane przez wybranych użytkowników do wybranej strony lub obszaru roboczego zostaną usunięte. Tej operacji nie można cofnąć. Jednak jeśli dla strony lub obszaru roboczego zapisano personalizację, można ją ponownie zaimportować.
-- **Menedżer użytkownika** — Wybierz użytkownika, aby wyświetlić listę stron spersonalizowanych przez niego. Następnie można włączyć lub wyłączyć dla wybranego użytkownika możliwość korzystania z personalizacji określonych stron lub całego systemu. Można również zaimportować, wyeksportować lub wyczyścić personalizację dla wybranego użytkownika.
+- **Menedżer użytkownika** — Wybierz użytkownika, aby wyświetlić listę stron spersonalizowanych przez tę osobę. Następnie można włączyć lub wyłączyć dla wybranego użytkownika możliwość korzystania z personalizacji określonych stron lub całego systemu. Można również zaimportować, wyeksportować lub wyczyścić personalizację dla wybranego użytkownika. Ponadto można zresetować objaśnienia funkcji dla wybranego użytkownika. Po wykonaniu tej akcji każde okno podręczne przedstawiające nową funkcję, które wcześniej zostało odrzucone przez użytkownika, będzie wyświetlane ponownie, gdy użytkownik znów napotka tę funkcję.   
 - **System** — ta opcja pozwala tymczasowo wyłączyć wszystkie personalizacje dla wszystkich użytkowników w systemie. W takim przypadku personalizacje są usuwane. Wszystkie strony zostaną przywrócone do swoich stanów domyślnych dla wszystkich użytkowników. W przypadku ponownego włączenia personalizacji wszystkie personalizacje zostaną zastosowane ponownie. Można również trwale usunąć wszystkie personalizacje dla wszystkich użytkowników w systemie. Nie jest możliwe odzyskanie personalizacji, które zostały usunięte. Dlatego przed wykonaniem tego zadania należy koniecznie wyeksportować wszystkie personalizacje, które potem możesz chcieć zaimportować.
 
 ## <a name="personalization-of-inventory-dimensions"></a>Personalizacja wymiarów magazynowych

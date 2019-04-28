@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e6b490a696dc0a00c47e56f57373f330d0e53dde
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782977"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949812"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (5 marca 2019 r.)
 
@@ -35,7 +35,7 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Talent
 
 ### <a name="extending-option-sets-in-attract"></a>Rozszerzanie zestawów opcji w Attract
 
-W Attract jest wiele pól będących zestawami opcji w Common Data Service (CD). Wprowadzono nowe możliwości rozszerzania zestawów opcji, począwszy od pola przyczyny **odrzucenia**, pola **Typ zatrudnienia** i pola **typu stażu pracy**.
+W Attract jest wiele pól będących zestawami opcji w Common Data Service. Wprowadzono nowe możliwości rozszerzania zestawów opcji, począwszy od pola przyczyny **odrzucenia**, pola **Typ zatrudnienia** i pola **typu stażu pracy**.
 
 > [!IMPORTANT]
 > Dodawanie oferty pracy do funkcji LinkedIn wymaga stosowania pól **Typ zatrudnienia** i **typu stażu pracy** na stronie **Szczegóły stanowiska**. Domyślne wartości tych pól nie są obsługiwane przez LinkedIn i są wyświetlane, gdy oferta jest publikowana. Jeśli publikujesz ofertę pracy na LinkedIn i zmienisz istniejące zestawy wartości dla tych pól, oferta zostanie opublikowana, ale LinkedIn nie wyświetli wartości niestandardowych **Typ zatrudnienia** i **typu stażu pracy**.
@@ -70,8 +70,8 @@ Wraz z tą zmianą, podczas żądania zmiany istniejących stanowisk, pola listy
 ### <a name="other-miscellaneous-bug-fixes"></a>Inne dodatkowe poprawki błędów
 Inne niewielkie poprawki są dołączone do tej wersji.
 
-### <a name="upgrade-to-cds-for-apps"></a>Uaktualnienie do usługi CDS dla aplikacji
-Zbliżają się terminy uaktualniania do CDS dla aplikacji. Zaloguj się do Centrum administracyjnego usługi PowerApps, aby określić, czy baza danych wymaga uaktualnienia. Aby uzyskać więcej informacji dotyczących terminów i niezbędne kroki w celu uaktualnienia, zobacz [uaktualnienia do Common Data Service dla aplikacji](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+### <a name="upgrade-to-common-data-service"></a>Uaktualnianie do rozwiązania Common Data Service
+Zbliżają się terminy uaktualniania do Common Data Service dla aplikacji. Zaloguj się do Centrum administracyjnego usługi PowerApps, aby określić, czy baza danych wymaga uaktualnienia. Aby uzyskać więcej informacji dotyczących terminów i niezbędne kroki w celu uaktualnienia, zobacz [uaktualnienia do Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Wkrótce
 

@@ -1,9 +1,9 @@
 ---
 title: Przegląd faktur od dostawcy
 description: Ten artykuł zawiera ogólne informacje o fakturach od dostawców. Faktur od dostawców są wnioskami o płatność za produkty i usługi, które zostały odebrane. Faktury od dostawców mogą dotyczyć usług świadczonych w sposób ciągły albo bazować na zamówieniach zakupu za określone towary i usługi.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,24 +15,24 @@ ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
-ms.author: shpandey
+ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e563688b46c556ffbf46f9d20d9b9f248d26e02c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1d7cec48b1e01d308cfc67260ac82a50a8d76844
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329765"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975809"
 ---
 # <a name="vendor-invoices-overview"></a>Przegląd faktur od dostawcy
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Ten artykuł zawiera ogólne informacje o fakturach od dostawców. Faktur od dostawców są wnioskami o płatność za produkty i usługi, które zostały odebrane. Faktury od dostawców mogą dotyczyć usług świadczonych w sposób ciągły albo bazować na zamówieniach zakupu za określone towary i usługi. 
 
-<a name="vendor-invoices"></a>Faktury dostawcy
----------------
+## <a name="vendor-invoices"></a>Faktury dostawcy
 
 Faktura od dostawcy z zamówienia zakupu jest tworzona po odebraniu produktu lub usługi zgodnie z zamówieniem zakupu, które zostało założone u dostawcy. Faktura od dostawcy zawiera nagłówek oraz jeden lub więcej wierszy dla towarów lub usług. Faktura od dostawcy kończy cykl od zamówienia zakupu po przyjęcie produktów i fakturę od dostawcy. 
 
@@ -79,10 +79,17 @@ Aby uzyskać więcej informacji, zobacz [Rejestrowanie faktury od dostawcy i por
 
 Można pracować z wieloma fakturami w tym samym czasie i księgować je wszystkie równocześnie. Jeśli zachodzi potrzeba utworzenia wielu faktur, użyj strony **oczekujących faktur od dostawcy**. Jeśli musisz zaksięgować i wydrukować wiele faktur od dostawcy, użyj strony arkusza zatwierdzania faktur. Jeśli używasz arkusza zatwierdzania faktur, przynajmniej jeden dokument przyjęcia produktów musi być zaksięgowany dla zamówienia zakupu oraz faktura dla zamówienia zakupu musi być zaksięgowana w rejestrze faktur. Informacje finansowe dla faktury pochodzą z faktury, która została zaksięgowana w rejestrze.
 
+## <a name="recovering-vendor-invoices-that-are-in-use"></a>Odzyskiwanie faktur od dostawców, które są obecnie w użyciu
 
-Aby uzyskać więcej informacji, zobacz: .
+Gdy faktura dostawcy jest obecnie używana, inny użytkownik nie może jej edytować. Jednak stan faktury może czasami wskazywać, że faktura jest używana, nawet jeśli nie jest przez nikogo aktywnie edytowana. Na przykład aplikacja przestała odpowiadać, podczas gdy była edytowana faktura lub użytkownik przypadkowo zostawił fakturę otwartą w aplikacji.
 
- - [Ustawianie zasad faktur od dostawców](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
+Na stronie **Odzyskaj faktury od dostawców** można odzyskać lub zwolnić faktury od dostawców, które były używane przez ponad cztery godziny, tak aby można było je edytować. Aby otworzyć tę stronę, przejdź do menu **Zadanie okresowe** lub wybierz kafelek w obszarze roboczym **Wprowadzanie faktur od dostawcy**. Po odzyskaniu faktury można ją znowu edytować na stronie **faktury od dostawcy**.
+
+Dostęp do strony **Odzyskaj faktury od dostawcy** można uzyskać tylko wtedy, gdy masz przypisane uprawnienie i obowiązek zabezpieczeń **Odzyskaj faktury od dostawców będące w użyciu**. Ponadto parametr **Zezwalaj na odzyskiwanie faktur od dostawców** na stronie **Parametry modułu rozrachunków z dostawcami** musi być włączony.
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+ - [Konfigurowanie zasad faktur od dostawców](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 
  - [Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą faktury od dostawcy](tasks/key-invoice-data-ap-system-vendor-invoice.md)
 

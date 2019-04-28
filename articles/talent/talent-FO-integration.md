@@ -1,7 +1,7 @@
 ---
 title: Integracja między programami Dynamics 365 for Talent a Dynamics 365 for Finance and Operations — FAQ
 description: W tym temacie wyjaśniono, jakie dane są synchronizowane w integracji programów Talent i Finance and Operations.
-author: negudava
+author: andreabichsel
 manager: AnnBe
 ms.date: 01/09/2019
 ms.topic: article
@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: negudava
+ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: aea025bc4898d6399e82030cf1f52b21949e014f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 438c2b5689e450b9aae9c55168993f2ee84be4d5
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305821"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950090"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Integracja między programami Dynamics 365 for Talent a Dynamics 365 for Finance and Operations — FAQ
 
@@ -34,15 +34,15 @@ W tym temacie zawarto odpowiedzi na podstawowe pytania dotyczące sposobu synchr
 
 W Core Human Resources (HR) synchronizowany jest tylko podzbiór danych. Pełną listę wszystkich jednostek można znaleźć w temacie [Integracja z programu Dynamics 365 for Talent do programu Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).
 
-W przypadku Attract i Onboard wszystkie dane są natywne dla Common Data Services (CDS) for Apps.
+W przypadku Attract i Onboard wszystkie dane są natywne dla Common Data Service.
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Czy mogę tworzyć nowe mapowania bez szablonów?
 
-Szablony są punktem początkowym. Można utworzyć własny szablon, ale szablonu zawsze jest wymagany podczas tworzenia projektu integracji. Aby uzyskać więcej informacji o integratorze danych (DI), szablonach i projektach, zobacz [Integracji danych do Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+Szablony są punktem początkowym. Można utworzyć własny szablon, ale szablonu zawsze jest wymagany podczas tworzenia projektu integracji. Aby uzyskać więcej informacji o integratorze danych (DI), szablonach i projektach, zobacz [Integracja danych do Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Czy można mapować wymiary finansowe do przeniesienia między programami Talent i Finance and Operations?
 
-Wymiary finansowe nie są obecnie w CDS for Apps i w związku z tym nie są częścią szablonu domyślnego. Ta jednostka jest planowana, ale aktualnie nie wiadomo, kiedy zostanie udostępniona.
+Wymiary finansowe nie są obecnie w Common Data Service i w związku z tym nie są częścią szablonu domyślnego. Ta jednostka jest planowana, ale aktualnie nie wiadomo, kiedy zostanie udostępniona.
 
 Dla danych, które znajdują się w Finance and Operations, ale nie istnieje w Talent, należy połączyć dwa systemy ze sobą za pomocą opcji **Skonfiguruj łącza** w programie Talent. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania powiązań między programami Talent i Finance and Operations, zobacz [Nowości i zmiany w rozwiązaniu w Dynamics 365 for Talent Core HR (31 października 2018)](whats-new-talent-october-31.md).
 
@@ -64,7 +64,7 @@ Za pomocą opcji „Zaawansowane zapytanie” można filtrować i przekształca�
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Czy mogę określić, które pola należy wysłać do programu Finance and Operations w odniesieniu do określonej jednostki?
 
-Pola można dodawać i usuwać z zadania integracji. Nie wszystkie pola danych, które istnieją w jednostce CDS for Apps (CDS 2.0) będą wypełnione dla Core HR.
+Pola można dodawać i usuwać z zadania integracji. Nie wszystkie pola danych, które istnieją w jednostce Common Data Service, będą wypełnione dla Core HR.
 Dodatkowe dane mogą być wprowadzane prze PowerApps.
 
 ![](media/SpecifyFieldsIncludedInIntegration.png)
@@ -83,7 +83,7 @@ Nie. Integrator danych nie przechwyci usuniętych rekordów w kontekście przeno
 
 ## <a name="can-i-rerun-the-errored-execution-if-so-will-it-send-a-full-file-or-only-the-changes"></a>Czy mogę ponownie uruchomić błędne wykonanie? Jeśli tak, czy wysyłany jest pełny plik czy tylko zmiany?
 
-Pierwsze uruchomienie Integratora danych jest zawsze pełnym uruchomieniem. Kolejne uruchomienia opierają się na śledzeniu zmian. W przypadku błędnego uruchomienia następuje wyodrębnienie rekordów w zakresie uruchomienia i wysłanie najnowszych zmian z CDS.
+Pierwsze uruchomienie Integratora danych jest zawsze pełnym uruchomieniem. Kolejne uruchomienia opierają się na śledzeniu zmian. W przypadku błędnego uruchomienia następuje wyodrębnienie rekordów w zakresie uruchomienia i wysłanie najnowszych zmian z Common Data Service.
 
 ## <a name="when-i-save-the-project-i-get-the-error-project-has-mapping-errors-what-do-i-do"></a>Po zapisaniu projektu pojawia się błąd: „Projekt ma błędy mapowania”. Co należy zrobić?
 
@@ -97,15 +97,15 @@ Tak, dla każdej firmy w Finance and Operations konieczne będzie utworzenie odr
 
 ## <a name="i-need-to-transfer-data-that-is-not-part-of-the-default-template-provided-by-microsoft-can-i-do-this"></a>Muszę przenieść dane, które nie są częścią domyślnego szablonu dostarczonego przez Microsoft. Czy jest to możliwe?
 
-Tak, można dodawać i usuwać zawartość pól w istniejącym szablonie. Szablon można modyfikować, aby uwzględnić dodatkowe dane z jednostek innych niż CDS for Apps. Jednostka musi być w CDS for Apps, aby mogła zostać uwzględniona w szablonie. 
+Tak, można dodawać i usuwać zawartość pól w istniejącym szablonie. Szablon można modyfikować, aby uwzględnić dodatkowe dane z jednostek innych niż Common Data Service. Jednostka musi być w Common Data Service, aby mogła zostać uwzględniona w szablonie. 
 
 ## <a name="i-just-created-new-finance-and-operations-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>Po utworzeniu nowego środowiska rozwiązań Finance and Operations i Talent pojawia się błąd „Wartość danych narusza ograniczenie integralności”. Dlaczego?
 
 Przyczyny tego błędu mogą być następujące:
 
-- Przeniesienie danych spowodowało zduplikowanie wyodrębnienia rekordów w lokalizacji źródłowej (CDS).
+- Przeniesienie danych spowodowało zduplikowanie wyodrębnienia rekordów w lokalizacji źródłowej (Common Data Service).
 
-- Przeniesienie danych zawiera wartości null dla pól, które są wymagane w Finance and Operations. Sprawdź dane, które są w CD i czy spełniają wymagania dotyczące Finance and Operations.
+- Przeniesienie danych zawiera wartości null dla pól, które są wymagane w Finance and Operations. Sprawdź dane, które są w Common Data Service i czy spełniają wymagania dotyczące Finance and Operations.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Jeśli występują błędy wykonania i identyfikator pracownika nie został zsynchronizowany, jak znaleźć zadanie historii, które zawiera rekord pracownika, dla którego wystąpił błąd?
 
@@ -127,17 +127,17 @@ Prześledź czas z historii wykonywania Integratora danych i poszukaj projektu z
 
 ## <a name="after-integrating-talent-and-finance-and-operations-i-dont-see-my-talent-data-in-finance-and-operations-what-do-i-do"></a>Po integracji Talent i Finance and Operations nie widzę danych Talent w Finance and Operations. Co należy zrobić?
 
-Integracja do Finance and Operations jest procesem dwuetapowym. Najpierw sprawdź, czy dane Talent są zaktualizowane i dostępne w CDS. Ta synchronizacja odbywa się niemal w czasie rzeczywistym i można ją sprawdzić za pomocą PowerApps, sprawdzając dane w jednostce danych.
+Integracja do Finance and Operations jest procesem dwuetapowym. Najpierw sprawdź, czy dane Talent są zaktualizowane i dostępne w Common Data Service. Ta synchronizacja odbywa się niemal w czasie rzeczywistym i można ją sprawdzić za pomocą PowerApps, sprawdzając dane w jednostce danych.
 
-![Dane w CDS](media/DataInCDS.png)
+![Dane w Common Data Service](media/DataInCDS.png)
 
-Jeśli dane nie są wyświetlane zgodnie z oczekiwaniami w CDS, sprawdź, czy jednostka jest obsługiwana w integracji. Aby uwzględnić dodatkowe dane w CD, zmiana będzie wymagana w witrynie Microsoft.
+Jeśli dane nie są wyświetlane zgodnie z oczekiwaniami w Common Data Service, sprawdź, czy jednostka jest obsługiwana w integracji. Aby uwzględnić dodatkowe dane w Common Data Service, zmiana będzie wymagana w witrynie Microsoft.
 
-Jeśli jednostka jest obsługiwana, a dane są dostępne w CDS, sprawdź, czy mapowanie jest prawidłowe w Integratorze danych. Jeśli mapowanie integratora jest poprawne, następnie sprawdź czy zadania zarządzania danymi zostały pomyślnie uruchomione. Błędy mogą wystąpić podczas wykonywania zadań wsadowych. Aby uzyskać więcej informacji o zarządzaniu danymi, zobacz [Zarządzanie danymi](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Jeśli jednostka jest obsługiwana, a dane są dostępne w Common Data Service, sprawdź, czy mapowanie jest prawidłowe w Integratorze danych. Jeśli mapowanie integratora jest poprawne, następnie sprawdź czy zadania zarządzania danymi zostały pomyślnie uruchomione. Błędy mogą wystąpić podczas wykonywania zadań wsadowych. Aby uzyskać więcej informacji o zarządzaniu danymi, zobacz [Zarządzanie danymi](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Po zaimportowaniu adresów pracowników do Finance and Operations są one nieprawidłowe. Co należy zrobić?
 
-Sekwencja numerów dla **Identyfikatora lokalizacji** korzysta z takiego samego wzorca zarówno w Talent jaki i w Finance and Operations. Sekwencja numerów musi być unikatowa po obu stronach, żeby nie było żadnych konfliktów adresów podczas integrowania danych z CDS do Finance and Operations.
+Sekwencja numerów dla **Identyfikatora lokalizacji** korzysta z takiego samego wzorca zarówno w Talent jaki i w Finance and Operations. Sekwencja numerów musi być unikatowa po obu stronach, żeby nie było żadnych konfliktów adresów podczas integrowania danych z Common Data Service do Finance and Operations.
 
 Podczas wprowadzania środowiska Talent należy sprawdzić, czy sekwencja numerów nie jest taka sama w Talent i Finance and Operations. Sprawdź, czy wszystkie sekwencje numerów nie są identyczne tam gdzie dane mogą być obsługiwane przez oba systemy.
 
@@ -147,7 +147,7 @@ Upewnij się, że podczas tworzenia połączenia została wybrana opcja Dynamics
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Podczas synchronizowania zatrudnienia pojawiają się błędy „CompanyInfo_FK nie istnieje.” lub „Wartość '12/31/2154 11:59:59 pm' w polu 'Data zakończenia zatrudnienia' nie występuje w odpowiedniej tabeli 'Zatrudnienie'”. Co należy zrobić?
 
-Upewnij się, że mapujesz prawidłowe firmy. Synchronizowanie firmy nie jest częścią szablonu domyślnego, więc oczekuje się, że każda firma, która znajduje się w Talent i CDS, znajduje się również w Finance and Operations.
+Upewnij się, że mapujesz prawidłowe firmy. Synchronizowanie firmy nie jest częścią szablonu domyślnego, więc oczekuje się, że każda firma, która znajduje się w Talent i Common Data Service, znajduje się również w Finance and Operations.
 Upewnij się również, że wybierasz prawidłowe firmy dla skojarzonego zestawu połączeń.
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-and-operations-appears-to-be-empty-what-should-i-do"></a>Po skonfigurowaniu projektu mapowanie pól dla Finance and Operations wydaje się puste. Co należy zrobić?
@@ -160,11 +160,11 @@ Odśwież jednostki danych w Finance and Operations, przechodząc do **Zarządza
 
 - Integrator danych (DI): 
 
-  - [Integracja danych do Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Integracja danych w Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
 
   - [Zarządzanie błędami integratora danych i rozwiązywanie problemów](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
 
-  - [Odpowiadanie na żądania DSR dla dzienników generowanych przez system w PowerApps, Microsoft Flow i Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Odpowiadanie na żądania DSR dla dzienników generowanych przez system w PowerApps, Microsoft Flow i Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Zarządzanie danymi:
 

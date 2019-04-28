@@ -3,7 +3,7 @@ title: Synchronizowanie przeniesień i korekt zapasów z Field Service do Financ
 description: Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania korekt i przeniesień zapasów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: aa54945cea5821da163e1f6ea1747ac29b31a3ce
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 75181661c41d238cdc06ffbb6969a2efd7d88d46
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "308375"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842422"
 ---
 # <a name="synchronize-inventory-adjustments-from-field-service-to-finance-and-operations"></a>Synchronizowanie korekt zapasów z Field Service do Finance and Operations
 
@@ -38,8 +38,8 @@ Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używa
 Poniższy szablon i podstawowe zadania są używane do synchronizowania korekt i przeniesień zapasów między programem Microsoft Dynamics 365 for Field Service a programem Microsoft Dynamics 365 for Finance and Operations.
 
 **Mapowanie szablonów w integracji danych**
-- Korekta zapasów (Field Service do Finance and Operations)
-- Przeniesienia zapasów (Field Service do Finance and Operations)
+- Korekta zapasów (z Field Service do Fin and Ops)
+- Przeniesienia zapasów (z Field Service do Fin and Ops)
 
 **Zadania w projektach integracji danych**
 - Korekty zapasów
@@ -71,11 +71,11 @@ Arkusze magazynowe integracji wygenerowane przez integrację mogą być automaty
 
 Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja danych.
 
-### <a name="inventory-adjustment-field-service-to-finance-and-operations-inventory-adjustment"></a>Korekta zapasów (Field Service do Finance and Operations): Korekta zapasów
+### <a name="inventory-adjustment-field-service-to-fin-and-ops-inventory-adjustment"></a>Korekta zapasów (Field Service do Finance and Operations): Korekta zapasów
 
 [![Mapowanie szablonu w integracji danych](./media/FSAdj1.png)](./media/FSAdj1.png)
 
 
-### <a name="inventory-transfer-field-service-to-finance-and-operations-inventory-transfer"></a>Przeniesienie zapasów (Field Service do Finance and Operations): Przeniesienie zapasów
+### <a name="inventory-transfer-field-service-to-fin-and-ops-inventory-transfer"></a>Przeniesienie zapasów (Field Service do Finance and Operations): Przeniesienie zapasów
 
 [![Mapowanie szablonu w integracji danych](./media/FSTrans1.png)](./media/FSTrans1.png)

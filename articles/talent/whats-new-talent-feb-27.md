@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b622276000c56a5af1bb258dbc3c6c4a56af4d20
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782978"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949904"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (27 lutego 2019 r.)
 
@@ -87,7 +87,7 @@ Jest to typowe, że nowo zatrudniani pracownicy mają daty rozpoczęcia pracy w 
 
 ## <a name="known-issues"></a>Znane problemy
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-for-apps-to-finance-and-operations"></a>Zmiany w szablonie integracji Core HR (Talent Common Data Service for Apps to Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Zmiany w szablonie integracji Core HR (Talent Common Data Service to Finance and Operations)
 Szablon Core HR został zaktualizowany do „szablonu zaawansowanej kwerendy”. Dlatego domyślnie zaawansowana kwerenda będzie dostępna dla projektów, które zostały utworzone za pomocą tego szablonu. Ponadto wszelkie funkcje mapowania domyślnego będą widoczne tylko w edytorze zaawansowanej kwerendy. (Funkcje domyślnego mapowania są wyświetlane jako „FN” w mapowaniach.)
 
 Aby uzyskać więcej informacji na temat błędów mapowania, zobacz [Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (14 grudnia 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
@@ -100,19 +100,19 @@ Aby zaktualizować istniejący szablon, wykonaj następujące kroki:
 
     - **Zadanie Stanowiska do stanowiska:** usuń to mapowanie.
     - **Zadanie Stanowiska do Przypisania pracy nadrzędnej do stanowisk:** usuń to mapowanie.
-    - **Zadanie stanowiska do bazowego stanowiska:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service for Apps do pozycji **bazowe stanowisko** w Finance and Operations. Przenieś je na pozycję 7 w sekwencji.
+    - **Zadanie stanowiska do bazowego stanowiska:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service do pozycji **bazowe stanowisko** w Finance and Operations. Przenieś je na pozycję 7 w sekwencji.
 
         [![Mapowanie zadania stanowiska do bazowego stanowiska](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Zadanie stanowiska do szczegółów dotyczących stanowiska:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service for Apps do pozycji **szczegóły dotyczące stanowiska** w Finance and Operations. Przenieś je na pozycję 8 w sekwencji.
+    - **Zadanie stanowiska do szczegółów dotyczących stanowiska:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service do pozycji **szczegóły dotyczące stanowiska** w Finance and Operations. Przenieś je na pozycję 8 w sekwencji.
 
         [![Mapowanie zadania stanowiska do szczegółów dotyczących stanowiska](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **Zadanie stanowiska do okresów ważności stanowiska:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service for Apps do pozycji **okresy ważności stanowiska** w Finance and Operations.
+    - **Zadanie stanowiska do okresów ważności stanowiska:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service do pozycji **okresy ważności stanowiska** w Finance and Operations.
 
         [![Mapowanie zadania stanowiska do okresów ważności stanowiska](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Zadanie stanowiska do hierarchii stanowisk:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service for Apps do pozycji **hierarchia stanowisk** w Finance and Operations. Wybierz **kwerenda zaawansowana**, aby kwerenda zaawansowana była dostępna dla tego projektu.
+    - **Zadanie stanowiska do hierarchii stanowisk:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service do pozycji **hierarchia stanowisk** w Finance and Operations. Wybierz **kwerenda zaawansowana**, aby kwerenda zaawansowana była dostępna dla tego projektu.
 
        [![Przycisk kwerendy zaawansowanej](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 

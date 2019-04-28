@@ -1,30 +1,30 @@
 ---
 title: Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract
 description: W tym temacie opisano elementy funkcji w aplikacji Attract. Ponadto wyjaśniono, jak utworzyć funkcję.
-author: josaw
+author: hasrivas
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: josaw
+ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
-ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
+ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "772818"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "969356"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract
 
@@ -44,7 +44,7 @@ Karta **Szczegóły funkcji** zawiera szczegółowe informacje o obowiązkach w 
 
 Domyślnie pole **Liczba wolnych posad** jest ustawione na **1**. Można jednak zmienić jego wartość. Po przygotowaniu oferty na funkcję wartość pola **Liczba dostępnych wolnych posad** jest zmniejszana.
 
-Jeśli w Centrum administracyjnym włączono funkcję zarządzanie stanowiska, jest dostępna opcja wyszukiwania **Aktualizuj stanowiska**. Funkcja wyszukiwania odczytuje jednostkę JobPosition w Common Data Service for Apps i zwraca listę stanowisk, które można wybrać dla funkcji. Jeśli wybrana liczba stanowisk przekracza liczbę otwartych stanowisk, pojawi się ostrzeżenie. Otrzymasz również ostrzeżenie, jeśli stanowisko jest używane w wielu funkcjach.
+Jeśli w Centrum administracyjnym włączono funkcję zarządzanie stanowiska, jest dostępna opcja wyszukiwania **Aktualizuj stanowiska**. Funkcja wyszukiwania odczytuje jednostkę JobPosition w Common Data Service i zwraca listę stanowisk, które można wybrać dla funkcji. Jeśli wybrana liczba stanowisk przekracza liczbę otwartych stanowisk, pojawi się ostrzeżenie. Otrzymasz również ostrzeżenie, jeśli stanowisko jest używane w wielu funkcjach.
 
 > [!NOTE]
 > Funkcja zarządzania stanowiskami jest dostępna po zainstalowaniu dodatku kompleksowej obsługi rekrutacji.
@@ -74,9 +74,7 @@ Aby uzyskać więcej informacji o działaniach, które można dodawać do proces
 
 ## <a name="postings"></a>Księgowania
 
-Po uaktywnieniu funkcji można ją opublikować. Tylko osoby rekrutujące i menedżerowie zatrudniający mogą publikować funkcje. Funkcję można opublikować w witrynie Talent Careers (witrynie rozwoju kariery wewnątrz Microsoft Dynamics 365 for Talent) lub serwisie LinkedIn. 
-
-Zespół aplikacji Attract stale pracuje nad dodawaniem agregatorów ogłoszeń o pracę. Ta lista będzie regularnie poszerzana.
+Po uaktywnieniu funkcji można ją opublikować. Tylko osoby rekrutujące i menedżerowie zatrudniający mogą publikować funkcje. Funkcję można opublikować w witrynie Talent Careers (witrynie rozwoju kariery wewnątrz Microsoft Dynamics 365 for Talent) lub serwisie LinkedIn. Zespół aplikacji Attract stale pracuje nad dodawaniem agregatorów ogłoszeń o pracę. Ta lista będzie regularnie poszerzana. Jeśli oferta jest opublikowana jako tylko wewnętrzna, kandydaci muszą dodać konto, aby wyświetlić ofertę i zgłosić się. Jeśli oferta jest opublikowana jako publiczna, kandydaci mogą wyświetlać ofertę i zgłaszać się za pomocą wszystkich opcji uwierzytelniania. 
 
 Aby uzyskać więcej informacji o ofertach pracy, zobacz [Funkcjonalność witryny rozwoju kariery w aplikacji Attract](career-site.md).
 
@@ -137,9 +135,14 @@ Po zapisaniu funkcji można ją przesłać do zatwierdzenia. W poniższej tabeli
 
 Na liście funkcji można filtrować według stanów funkcji.
 
-Zatwierdzenia mogą być wysyłane do dowolnego użytkownika Microsoft Azure Active Directory (Azure AD) w firmie. Zatwierdzenia są wysyłane jednocześnie do wszystkich osób wyszczególnionych jako osoby zatwierdzające. Po zatwierdzeniu funkcji można ją aktywować.
+Zatwierdzenia mogą być wysyłane do dowolnego użytkownika Microsoft Azure Active Directory (Azure AD) w firmie. Zatwierdzenia są wysyłane jednocześnie do wszystkich osób wyszczególnionych jako osoby zatwierdzające. Wszystkie osoby zatwierdzające muszą zatwierdzić ofertę pracy, zanim będzie można ją przenieść na następny etap. Jeśli jedna osoba zatwierdzająca odrzuci ofertę pracy, będzie miała status **Odrzucona**. Po zatwierdzeniu funkcji można ją aktywować.
 
-Osoby wyświetlane jako osoby zatwierdzające otrzymają powiadomienie w aplikacji Attract informujące, że mają pozycję do zatwierdzenia. Pozycja do zatwierdzenia pojawi się także w sekcji **Przypisane do Ciebie** na pulpicie nawigacyjnym. Gdy ktoś zaakceptuje lub zatwierdzi funkcję, zespół rekrutacyjny otrzyma powiadomienie. Na koniec zespół rekrutacyjny otrzyma powiadomienie po zatwierdzeniu funkcji.
+Jeśli użytkownik dokona edycji oferty po jej zatwierdzeniu, ale nie aktywowaniu, stan oferty zostanie zresetowany do **wersji roboczej**, a oferta musi być ponownie przesłana do zatwierdzenia. Po aktywowaniu zatwierdzonej oferty pracy nie można jej edytować.
+
+Osoby wyświetlane jako osoby zatwierdzające otrzymają powiadomienie w aplikacji Attract i e-mailem informujące, że mają pozycję do zatwierdzenia.  W wiadomości e-mail osoby zatwierdzające mogą kliknąć łącze, aby otworzyć stanowisko, przejrzeć szczegóły, a następnie zatwierdzić lub odrzucić. Po ustawieniu stanu oferty pracy jako **zatwierdzona** lub **odrzucona**, osoba przesyłająca zostanie powiadomiona w Attract i otrzyma wiadomość e-mail. Ponadto osoby zatwierdzające otrzymają przypomnienia e-mailem, jeśli nie odpowiedzą na żądanie zatwierdzenia w ciągu 24 godzin.
+
+> [!NOTE]
+> Można utworzyć szablony wiadomości e-mail niestandardowej dla wiadomości dotyczących zatwierdzeń. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów e-mail i zarządzanie nimi ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Tworzenie stanowiska
 

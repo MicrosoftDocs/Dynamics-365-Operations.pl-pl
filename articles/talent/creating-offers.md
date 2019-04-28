@@ -1,7 +1,7 @@
 ---
 title: Tworzenie, zatwierdzanie i podpisywanie ofert
 description: W tym temacie szczegółowo wyjaśniono sposób tworzenie, zatwierdzania i podpisywania oferty dla kandydata w Dynamics 365 for Talent.
-author: josaw
+author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5ad7ce1e089d2a8b5c52e7cd01bb3d89070004b1
-ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
+ms.openlocfilehash: 8b2b49621624e937bed310c9d3f3193a10b38290
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "768912"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859650"
 ---
 # <a name="creating-approving-and-signing-offers"></a>Tworzenie, zatwierdzanie i podpisywanie ofert
 

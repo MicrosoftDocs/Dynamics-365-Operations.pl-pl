@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773334"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "898984"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Konfigurowanie integracji fiskalnej dla kanałów sprzedaży detalicznej
 
@@ -60,7 +60,7 @@ Przed użyciem funkcji integracji fiskalnej należy skonfigurować następujące
 2. Prześlij konfiguracje łączników fiskalnych i dostawców dokumentów fiskalnych.
 
     Dostawca dokumentów fiskalnych jest odpowiedzialny za generowanie dokumentów fiskalnych, które reprezentują transakcję sieci sprzedaży oraz zdarzenia, które są rejestrowane w POS w formacie, który służy do interakcji z urządzeniem fiskalnym lub usługą fiskalną. Na przykład dostawca dokumentu fiskalnego może wygenerować reprezentację paragonu fiskalnego w formacie XML.
-    
+
     Łącznik fiskalny jest odpowiedzialny za komunikację z urządzeniem fiskalnym lub usługą fiskalną. Na przykład łącznik fiskalny może wysłać paragon fiskalny utworzony przez dostawcę dokumentu fiskalnego w formacie XML na drukarce fiskalnej. Aby uzyskać więcej informacji o komponentach integracji fiskalnej, zobacz [Proces rejestracji fiskalnej i przykłady integracji fiskalnej dla urządzeń fiskalnych](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
     1. Na stronie **Łączniki fiskalne** (**Handel detaliczny\> Ustawienia kanału \> Integracja fiskalna \> Łączniki fiskalne**) prześlij konfigurację XML dla każdego urządzenia lub usługi, których planujesz używać na potrzeby integracji fiskalnej.
@@ -185,8 +185,12 @@ Opcje obsługi błędów dostępne w integracji fiskalnej ustawia się w procesi
 
     - **Zezwalaj na pomijanie** – ten parametr pozwala korzystać z opcji **Pomiń** w oknie dialogowym obsługi błędów.
     - **Zezwalaj na oznaczanie jako zarejestrowane** — ten parametr umożliwia korzystanie z opcji **Oznacz jako zarejestrowane** w oknie dialogowym obsługi błędów.
+    - **Kontynuuj przy błędzie** — Jeśli ten parametr jest włączony, proces rejestracji fiskalnej może być kontynuowany w rejestracji punktu sprzedaży po niepowodzeniu rejestracji transakcji lub zdarzenia. W przeciwnym razie do uruchomienia rejestracji fiskalnej następnej transakcji lub następnego zdarzenia operator musi podjąć ponowną próbę nieudanej rejestracji fiskalnej, pominąć ten krok lub oznaczyć transakcję lub zdarzenie jako zarejestrowane. Aby uzyskać więcej informacji, zobacz [Opcjonalna rejestracja fiskalna](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
-2. Opcje **Pomiń** i **Oznacz jako zarejestrowane** w oknie dialogowym obsługi błędów wymagają uprawnienia **Zezwalaj na pomijanie lub oznaczanie jako zarejestrowane**. Dlatego na stronie **Grupy uprawnień** (**Handel detaliczny \> Pracownicy \> Grupy uprawnień**) trzeba włączyć uprawnienie **Zezwalaj na pomijanie lub oznaczanie jako zarejestrowane**.
+    > [!NOTE]
+    > Po włączeniu parametru **Kontynuuj przy błędzie** parametry **Zezwalaj na pomijanie** i **Zezwalaj na oznaczanie jako zarejestrowane** są automatycznie wyłączone.
+
+2. Opcje **Pomiń** i **Oznacz jako zarejestrowane** w oknie dialogowym obsługi błędów wymagają uprawnienia **Zezwalaj na pomijanie rejestracji lub oznaczanie jako zarejestrowane**. Dlatego na stronie **Grupy uprawnień** (**Handel detaliczny \> Pracownicy \> Grupy uprawnień**) trzeba włączyć uprawnienie **Zezwalaj na pomijanie rejestracji lub oznaczanie jako zarejestrowane**.
 3. Opcje **Pomiń** i **Oznacz jako zarejestrowane** umożliwiają operatorom wprowadzanie dodatkowych informacji, kiedy rejestracja fiskalna nie powiedzie się. Aby udostępnić tę funkcję, należy określić kody informacji **Pomiń** i **Oznacz jako zarejestrowane** dla grupy łączników fiskalnych. Informacje wprowadzane przez operatorów są wtedy zapisywane jako transakcja kodu informacji połączona z transakcją fiskalną. Aby dowiedzieć się więcej na temat kodów informacji, zobacz [Kody informacji i grupy kodów informacji](../info-codes-retail.md).
 
     > [!NOTE]
@@ -200,6 +204,8 @@ Opcje obsługi błędów dostępne w integracji fiskalnej ustawia się w procesi
     > - **Dokument fiskalny** — wymagany dokument, który powinien zostać zarejestrowany pomyślnie (na przykład paragon fiskalny).
     > - **Dokument niefiskalny** — dodatkowy dokument dla transakcji lub zdarzenia (na przykład dokument karty upominkowej).
 
+4. Jeśli operator musi mieć możliwość kontynuowania bieżącej operacji (np. tworzenia lub finalizowania transakcji) po wystąpieniu błędu sprawdzania kondycji, należy włączyć uprawnienie **Zezwalaj na pominięcie błędu sprawdzania kondycji** na stronie **grup uprawnień** (**Handel detaliczny \> Pracownicy \> Grupy uprawnień**). Aby uzyskać więcej informacji dotyczących procedury sprawdzania kondycji, zobacz [sprawdzanie kondycji rejestracji fiskalnej](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+
 ## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Konfigurowanie raportów fiskalnych X / końcowych raportów sprzedaży z POS
 
 Aby włączyć raporty fiskalne X / końcowe raporty sprzedaży z POS, należy dodać nowe przyciski do układu POS.
@@ -211,3 +217,12 @@ Aby włączyć raporty fiskalne X / końcowe raporty sprzedaży z POS, należy d
     3. Dodaj nowy przycisk i ustaw właściwość przycisku **Drukuj obrachunkowy końcowy raport sprzedaży**.
     4. Na stronie **Harmonogram dystrybucji** uruchom zadanie **1090**, aby przenieść zmiany do bazy danych kanału.
 
+## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej
+
+Aby włączyć ręczne wykonywanie odroczonej rejestracji fiskalnej, należy dodać nowy przycisk do układu punktu sprzedaży.
+
+- Na stronie **Siatka przycisków** postępuj zgodnie instrukcjami w [Dodawanie przycisków niestandardowych operacji do układu POS w Centrali sieci sprzedaży](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters), aby zainstalować projektanta i zaktualizować układ POS.
+
+    1. Wybierz układ do zaktualizowania.
+    2. Dodaj nowy przycisk i ustaw właściwość przycisku **Zakończ proces rejestracji fiskalnej**.
+    3. Na stronie **Harmonogram dystrybucji** uruchom zadanie **1090**, aby przenieść zmiany do bazy danych kanału.

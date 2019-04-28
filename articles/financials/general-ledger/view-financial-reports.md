@@ -3,7 +3,7 @@ title: Wyświetlanie raportów finansowych
 description: W tym temacie opisano sposób wyświetlania i eksplorowania sprawozdań finansowych w programie Microsoft Dynamics 365 for Finance and Operations. Artykuł zawiera informacje dotyczące różnych opcji, które można zastosować do sprawozdań finansowych, aby zmienić ich wygląd i zawarte dane.
 author: kweekley
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
-ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
+ms.openlocfilehash: 0ba92ab4f751758c4adf26885ebb7b2c5290ecac
+ms.sourcegitcommit: 1e8dfa62989dbd7601bafdc933558f6bea1638ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791448"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "894595"
 ---
 # <a name="view-financial-reports"></a>Wyświetlanie raportów finansowych
 
@@ -46,12 +46,11 @@ Raporty finansowe mogą zawierać wiele poziomów szczegółów. Poziom finansow
 Jeśli dane są danymi budżetu, można otworzyć zapisy na koncie budżetu. Aby zamknąć dowolny poziom raportu i wrócić do miejsca, od którego zaczęto przeglądanie, należy nacisnąć klawisz Esc lub kliknąć przycisk **Zamknij** przycisk (**X**) w prawym górnym rogu.
 
 ## <a name="change-report-options"></a>Zmiana opcji raportu
-Możesz zmienić dane raportu, dodać atrybuty i filtry wymiarów lub zmienić scenariusz budżetu w raporcie **Wartości rzeczywiste i budżet**. W okienku akcji kliknij **opcje raportów**, a następnie wykonaj jedną lub więcej z następujących czynności:
+Możesz dodać atrybuty i filtry wymiarów lub zmienić scenariusz budżetu w raporcie **Wartości rzeczywiste i budżet**. W okienku akcji kliknij **opcje raportów**, a następnie wykonaj jedną lub więcej z następujących czynności:
 
--   Aby zmienić podstawowe okres i rok bazowy raportu, wybierz okres bazowy i rok bazowy, a następnie kliknij **OK**.
 -   Aby zastosować filtry atrybutu do raportu, zaznacz **Dodaj filtr atrybutu**. Wybierz atrybut, wpisz wartość atrybutu, a następnie kliknij **OK**. Na przykład, jeśli wybierzesz atrybut **kategoria konta**, wprowadź **sprzedaż** jako wartość atrybutu. Aby usunąć filtr atrybutów, kliknij **wyczyść**.
 -   Aby zastosować filtry wymiarów do raportu, zaznacz opcję **Dodaj filtr wymiarów**. Wybierz wymiar, a następnie wpisz identyfikator wymiaru lub wybierz wymiar z listy. Aby usunąć filtr atrybutów, kliknij **wyczyść**.
--   Aby zmienić scenariusz w raporcie **Wartości rzeczywiste i budżet**, wybierz nowy scenariusz, a następnie kliknij **OK**. Jeśli wybrano scenariusz inny rok, należy zaktualizować rok bazowy. Na przykład, jeśli bieżący scenariusz dotyczy roku obrachunkowego 2015, i wybierzesz nowy scenariusz na 2016 r., zmień rok bazowy na **2016**.
+-   Aby zmienić scenariusz w raporcie **Wartości rzeczywiste i budżet**, wybierz nowy scenariusz, a następnie kliknij **OK**. Jeśli jest wybrany scenariusz dla innego roku obrachunkowego, nie zostaną zwrócone żadne wyniki. Na przykład jeśli raport jest generowany dla FY2015 i bieżący scenariusz jest dla FY2015, a wybrano nowy scenariusz dla FY2016, system nie zwróci żadnych wyników. Jeśli wymagany jest nowy scenariusz dla innego roku obrachunkowego, wygeneruj nową wersję raportu dla roku obrachunkowego związanego z tym scenariuszem.
 
 Po kliknięciu przycisku **OK**, wybrane opcje są stosowane do raportu. Jeśli nie chcesz zastosować wybranych opcji, kliknij przycisk **Anuluj**.
 

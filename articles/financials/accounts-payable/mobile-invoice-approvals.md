@@ -1,7 +1,7 @@
 ---
 title: Zatwierdzanie faktur na urządzeniach przenośnych
 description: Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych w Dynamics 365 for Finance and Operations na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e39d81b0d600012f936865b53f8556eb3ef0a3d9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5a48ea7b0c1faf5726de21a246e3d8b4d98f166a
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "314401"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "897185"
 ---
 # <a name="mobile-invoice-approvals"></a>Zatwierdzanie faktur na urządzeniach przenośnych
 

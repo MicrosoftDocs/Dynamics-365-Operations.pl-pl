@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach
 description: Należy skonfigurować wspólne parametry dla rekordów współużytkowanych przez wiele firm, takie jak rekordy stanowisk. W tym artykule wyjaśniono, jak skonfigurować parametry modułu Zasoby ludzkie dla różnych firm.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: HcmSharedParameters
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.custom: 51891
 ms.assetid: c7d8f58c-d78a-4035-abbf-2b0ce16109fe
 ms.search.region: Global
-ms.author: shielas
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: cc5acf7ba1b350ee2c91923c7de3b4780385f3ef
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a8167545864a1cc2fc22f044f7d16ca590d59b43
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305717"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859213"
 ---
 # <a name="set-up-human-resources-hr-parameters-across-legal-entities"></a>Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach
 

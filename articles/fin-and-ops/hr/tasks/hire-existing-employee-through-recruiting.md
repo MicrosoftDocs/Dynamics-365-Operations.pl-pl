@@ -1,7 +1,7 @@
 ---
 title: Zatrudnianie istniejących pracowników etatowych przez rekrutację
 description: Czasami wolne stanowiska mogą być obsadzane przez kandydatów, którzy są już pracownikami w danej organizacji.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 02/10/2017
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71793ce48142b19b288e2315dcd44a07d8e39f90
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: fa020f17a6f893fc1360bfdec80b478e6f5dd686
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "365392"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "858866"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Zatrudnianie istniejących pracowników etatowych przez rekrutację
 

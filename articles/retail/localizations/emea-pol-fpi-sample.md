@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-2-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 386249a5a16aa76958efa5cbc3dd77ce5482dc5f
-ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
+ms.openlocfilehash: 55e102f2dad150f8aa25e7521e56de9cc8247daa
+ms.sourcegitcommit: 063a9296e645e0da182241941869d8102954540a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "760774"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "898990"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Przykładowa integracja drukarki fiskalnej dla Polski
 
@@ -72,6 +72,7 @@ Poniższe scenariusze są objęte próbką integracją drukarki fiskalnej dla Po
     - Ponowienie próby rejestracji fiskalnej, jeśli ponownie jest możliwe, np. jeśli drukarka fiskalna nie jest podłączona, jest niegodowa lub nie odpowiada, w drukarce nie ma papieru lub występuje zakleszczenie papieru.
     - Odroczenie rejestracji fiskalnej.
     - Pominięcie rejestracji fiskalnej lub oznaczenie transakcji jako zarejestrowanej i wprowadzenie kodów informacji oznaczających przyczynę błędu oraz dodatkowe informacje.
+    - Sprawdź dostępność drukarki fiskalnej przed otwarciem nowej transakcji sprzedaży lub zakończeniem transakcji sprzedaży.
 
 ### <a name="default-data-mapping"></a>Domyślne mapowanie danych
 
@@ -85,7 +86,7 @@ Następujące domyślne mapowanie danych jest uwzględnione w bieżącej konfigu
 
     *0 : 0 ; 1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0*
 
-### <a name="handling-gift-cards"></a>Obsługa kart upominkowych
+### <a name="gift-cards"></a>Karty upominkowe
 
 Przykładowa integracja drukarki fiskalnej implementuje następujące reguły związane z kartami upominkowymi:
 
@@ -95,7 +96,7 @@ Przykładowa integracja drukarki fiskalnej implementuje następujące reguły zw
 - Zapisanie obliczanych korekt wierszy płatności w bazie danych kanału w odniesieniu do odpowiedniej transakcji fiskalnej.
 - Płatność kartą upominkową jest traktowana jako zwykła płatność.
 
-### <a name="handling-customer-deposits-and-customer-order-deposits"></a>Obsługa wpłat odbiorcy i wpłat za zamówienie odbiorcy
+### <a name="customer-deposits-and-customer-order-deposits"></a>Obsługa wpłat odbiorcy i wpłat za zamówienie odbiorcy
 
 Przykładowa integracji drukarki fiskalnej implementuje następujące reguły, które są związane z wpłatami odbiorcy i wpłatami za zamówienie odbiorcy:
 
@@ -105,11 +106,27 @@ Przykładowa integracji drukarki fiskalnej implementuje następujące reguły, k
 - Odejmij kwotę wpłaty za zamówienie odbiorcy od wiersza płatności, kiedy tworzone jest zamówienie hybrydowe odbiorcy.
 - Zapisz obliczane korekty wierszy płatności w bazie danych kanału w odniesieniu do odpowiedniej transakcji fiskalnej dla hybrydowego zamówienia odbiorcy.
 
+### <a name="limitations-of-the-sample"></a>Ograniczenia przykładowej integracji
+
+- Drukarka fiskalna obsługuje tylko scenariusze, w których podatek od sprzedaży jest uwzględniony w cenie. Z tego względu opcja **Cena zawiera podatek** musi być ustawiona na **Tak** zarówno dla sklepów detalicznych, jak i odbiorców.
+- Raporty dzienne (fiskalne X i końcowy raport sprzedaży)są drukowane przy użyciu osadzonego formatu *Raport zmiany*.
+- Drukowanie kodu kreskowego na paragonach fiskalnych jest traktowane jako potencjalne dostosowanie, ponieważ ta funkcja nie jest obsługiwana w formatach osadzonych i jej wprowadzenie może nastąpić wyłącznie przy użyciu dostosowywanego raportu **Super-format**.
+- Mieszane transakcje nie są obsługiwane przez drukarkę fiskalną. Opcja **Zabraniaj umieszczania sprzedaży i zwrotów na jednym paragonie** powinna być ustawiona na **Tak**w profilach funkcji POS.
+
 ## <a name="set-up-retail-for-poland"></a>Konfigurowanie modułu Retail dla Polski
+
+### <a name="configure-fiscal-integration"></a>Konfiguracja integracji fiskalnej
+
+Wykonaj kroki konfiguracji integracji fiskalnej w sposób opisany w [Konfigurowanie integracji fiskalnej dla kanałów sprzedaży detalicznej](setting-up-fiscal-integration-for-retail-channel.md):
+
+- [Konfigurowanie procesu rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Należy zauważyć również ustawienia dla procesu rejestracji fiskalnej [specyficzne dla tej drukarki fiskalnej w przykładzie integracji](#set-up-the-registration-process).
+- [Określanie ustawienia ustawień obsługi błędów](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+- [Konfigurowanie raportów fiskalnych X / końcowych raportów sprzedaży z POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
+- [Włączanie ręcznego wykonywania odroczonej rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 
 ### <a name="enable-extensions"></a>Włączanie rozszerzeń
 
-##### <a name="commerce-runtime-extension-components"></a>Komponentu rozszerzenia środowiska uruchomieniowego Commerce
+#### <a name="commerce-runtime-extension-components"></a>Komponentu rozszerzenia środowiska uruchomieniowego Commerce
 
 Komponenty rozszerzenia środowiska uruchomieniowego Commerce (CRT) znajdują się w zestawie SDK modułu Retail. Aby wykonać poniższe procedury, otwórz rozwiązania CRT (**CommerceRuntimeSamples.sln**) w obszarze **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
@@ -131,7 +148,7 @@ Komponenty rozszerzenia środowiska uruchomieniowego Commerce (CRT) znajdują si
     - **Retail Server:** uruchom ponownie witrynę usługi Retail z menedżera IIS.
     - **Broker klienta:** zakończ proces **dllhost.exe** w Menedżerze zadań, a następnie uruchom Modern POS.
 
-##### <a name="hardware-station-extension-components"></a>Komponenty rozszerzenia Hardware Station
+#### <a name="hardware-station-extension-components"></a>Komponenty rozszerzenia Hardware Station
 
 Komponenty rozszerzenia Hardware Station znajdują się w zestawie SDK modułu Retail. Aby wykonać poniższe procedury, otwórz rozwiązania Hardware Station (**HardwareStationSamples.sln**) w obszarze **RetailSdk\\SampleExtensions\\HardwareStation**.
 
@@ -147,7 +164,7 @@ Komponenty rozszerzenia Hardware Station znajdują się w zestawie SDK modułu R
 
 5. Dodaj następującą sekcję do sekcji **kompozycja** pliku konfiguracji.
 
-    ```
+    ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample" />
     ```
 
@@ -157,7 +174,7 @@ Komponenty rozszerzenia Hardware Station znajdują się w zestawie SDK modułu R
 
 ### <a name="set-up-the-registration-process"></a>Konfigurowanie procesu rejestracji
 
-Aby włączyć proces rejestracji, wykonaj następujące kroki do skonfigurowania Centrali sieci sprzedaży. Aby uzyskać więcej informacji, zobacz [Konfigurowanie procesu rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+Aby włączyć proces rejestracji, wykonaj następujące kroki do skonfigurowania Retail Headquarters. Aby uzyskać więcej informacji, zobacz [Konfigurowanie procesu rejestracji fiskalnej](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Wybierz kolejno **Handel detaliczny \> Konfigurowanie kanału \> Integracja fiskalna \> Łączniki fiskalne**. Zaimportuj konfigurację z **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorConnectorPosnetThermalFVEJ.xml**.
 2. Wybierz kolejno **Handel detaliczny \> Ustawienia kanału \> Integracja fiskalna \> Dostawcy dokumentów fiskalnych**. Zaimportuj konfigurację z **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml**.
@@ -167,47 +184,84 @@ Aby włączyć proces rejestracji, wykonaj następujące kroki do skonfigurowani
 6. Wybierz kolejno **Handel detaliczny \> Konfigurowanie kanału \> Integracja fiskalna \> Proces rejestracji**. Utwórz nowy proces i wybierz grupę funkcji łącznika z poprzedniego kroku.
 7. Wybierz kolejno **Handel detaliczny \> Ustawienia kanału punkt sprzedaży \> Ustawienia punktu sprzedaży \> Profile punktów sprzedaży \> Profile funkcji**. Otwórz profil funkcji, który jest połączony z magazynem, w którym należy aktywować proces rejestracji. Na skróconej karcie **Proces rejestracji fiskalnej** wybierz proces rejestracji, który został utworzony wcześniej.
 8. Wybierz kolejno opcje **Handel detaliczny \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Profile punktów sprzedaży \> Profile sprzętu**. Otwórz profil sprzętu, który jest połączony z usługą Hardware Station, do której będzie połączona drukarka fiskalna. Na skróconej karcie **Fiskalne urządzenia peryferyjne** wybierz profil techniczny łącznika.
-9. Otwórz harmonogram dystrybucji (**Handel detaliczny \> Składniki IT w handlu detalicznym \> Harmonogram dystrybucji**) i wybierz zadanie **1070** do przesyłania danych do bazy danych kanału.
+9. Otwórz harmonogram dystrybucji (**Handel detaliczny \> Składniki IT w handlu detalicznym \> Harmonogram dystrybucji**) i wybierz zadania **1070** i **1090** do przesyłania danych do bazy danych kanału.
 
-## <a name="commerce-runtime-extension-design"></a>Projekt rozszerzenia środowiska uruchomieniowego Commerce
+### <a name="production-environment"></a>Środowisko produkcyjne
 
-Celem rozszerzenia (dostawcy dokumentów) jest generowanie dokumentów specyficznych dla drukarki i obsługa odpowiedzi z drukarki fiskalnej.
+Wykonaj następujące kroki, aby utworzyć możliwe do wdrożenia pakiety, które zawierają składniki sieci sprzedaży i aby stosować te pakiety w środowisku produkcyjnym.
 
-Rozszerzenie środowiska uruchomieniowego Commerce to **Commerce.Runtime.DocumentProvider.PosnetSample.DocumentProviderPosnetProtocol**. To rozszerzenie generuje zestaw poleceń specyficznych dla drukarki, które są definiowane przez specyfikację POSNET 19-3678 w formacie JavaScript Object Notation (JSON).
+1. Wykonaj kroki opisane w części [Włączanie rozszerzeń](#enable-extensions) w tym temacie.
+2. Wprowadź następujące zmiany w pliku konfiguracji pakietu w folderze **RetailSdk\\aktywów**:
+
+    - W plikach konfiguracji **commerceruntime.ext.config** i **CommerceRuntime.MPOSOffline.Ext.config** dodaj następujący wiersz w sekcji **kompozycja**.
+
+        ``` xml 
+        <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample" />
+        ```
+
+    - W pliku konfiguracji **HardwareStation.Extension.config** dodaj następujący wiersz w sekcji **kompozycja**.
+
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample" />
+        ```
+
+3. Należy wprowadzić następujące zmiany w pliku konfiguracji dostosowań pakietu **BuildTools\\Customization.settings**:
+
+    - Dodaj poniższy wiersz, aby dołączyć rozszerzenie CRT w pakietach, które można wdrożyć.
+
+        ``` xml 
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample.dll"/>
+        ```
+
+    - Dodaj poniższy wiersz, aby dołączyć rozszerzenie stacji sprzętu w pakietach, które można wdrożyć.
+
+        ``` xml 
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll"/>
+        ```
+
+4. Uruchom wiersz polecenia MSBuild dla Visual Studio i uruchom **msbuild** w folderze Retail SDK, aby utworzyć pakiety, które można wdrożyć.
+5. Zastosuj pakiety za pośrednictwem Microsoft Dynamics Lifecycle Services (LCS) lub ręcznie. Aby uzyskać więcej informacji, zobacz [Tworzenie wdrażalnych pakietów rozwiązania Retail](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+## <a name="design-of-extensions"></a>Projekt rozszerzenia
+
+### <a name="commerce-runtime-extension-design"></a>Projekt rozszerzenia środowiska uruchomieniowego Commerce
+
+Celem rozszerzenia (dostawcy dokumentów fiskalnych) jest generowanie dokumentów specyficznych dla drukarki i obsługa odpowiedzi z drukarki fiskalnej.
+
+Rozszerzenie środowiska uruchomieniowego Commerce to **Runtime.Extensions.DocumentProvider.PosnetSample**. To rozszerzenie generuje zestaw poleceń specyficznych dla drukarki, które są definiowane przez specyfikację POSNET 19-3678 w formacie JavaScript Object Notation (JSON).
 
 Aby uzyskać więcej informacji o projektowaniu rozwiązań integracji fiskalnej, zobacz [Proces rejestracji fiskalnej i przykładowe integracje fiskalne dla urządzeń fiskalnych](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
-### <a name="request-handler"></a>Program obsługi żądań
+#### <a name="request-handler"></a>Program obsługi żądań
     
 Program obsługi żądań **DocumentProviderPosnetProtocol** jest punktem wejścia dla żądania generowania dokumentów z drukarki fiskalnej.
 
-Program obsługi jest dziedziczony z interfejsu **INamedRequestHandler**. Metoda **HandlerName** odpowiada za zwrócenie nazwa programu obsługi. Nazwa programu obsługi powinna odpowiadać nazwie dostawcy dokumentów łącznika określonej w Centrali sieci sprzedaży.
+Program obsługi jest dziedziczony z interfejsu **INamedRequestHandler**. Metoda **HandlerName** odpowiada za zwrócenie nazwa programu obsługi. Nazwa programu obsługi powinna odpowiadać nazwie dostawcy dokumentów łącznika określonej w Retail Headquarters.
 
 Łącznik obsługuje następujące żądania:
 
 - **GetFiscalDocumentDocumentProviderRequest** – to żądanie zawiera informacje dotyczące dokumentu, który ma być generowany. Zwraca dokument specyficzny dla drukarki, który powinien zostać zarejestrowany w drukarce fiskalnej.
 - **GetSupportedRegistrableEventsDocumentProviderRequest** — to zapytanie zwraca listę zdarzeń do subskrybowania. Obecnie są obsługiwane następujące zdarzenia: sprzedaż, drukowanie raportu X i drukowanie końcowego raportu sprzedaży.
-- **SaveFiscalRegistrationResultDocumentProviderRequest** — to żądanie zapisuje odpowiedź z drukarki.
 
-### <a name="configuration"></a>Konfiguracja
+#### <a name="configuration"></a>Konfiguracja
 
-Plik konfiguracyjny znajduje się w folderze **Konfiguracja** projektu rozszerzenia. Ten plik służy do obsługi konfiguracji ustawień dostawcy dokumentu z Centrali sieci sprzedaży. Format pliku jest zgodny z wymaganiami konfiguracji integracji fiskalnej. Dodano następujące ustawienia:
+Plik konfiguracyjny znajduje się w folderze **Konfiguracja** projektu rozszerzenia. Ten plik służy do obsługi konfiguracji ustawień dostawcy dokumentu z Retail Headquarters. Format pliku jest zgodny z wymaganiami konfiguracji integracji fiskalnej. Dodano następujące ustawienia:
 
 - Mapowanie stawek VAT
 - Mapowanie typów metod płatności
 - Typ płatności wpłaty
 
-## <a name="hardware-station-extension-design"></a>Projekt rozszerzenia Hardware Station
+### <a name="hardware-station-extension-design"></a>Projekt rozszerzenia Hardware Station
 
-Zastosowaniem rozszerzenia (łącznika) jest do komunikowanie się z drukarką fiskalną.
+Zastosowaniem rozszerzenia (łącznika fiskalnego) jest do komunikowanie się z drukarką fiskalną.
 
-Rozszerzenie Hardware Station to **Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.FiscalPrinterHandler**. To rozszerzenie przesyła polecenia, które rozszerzenia środowiska uruchomieniowego Commerce generuje na drukarce fiskalnej, przez wywołanie funkcji POSNET sterownika dostarczonego przez producenta. Obsługuje również błędy urządzenia.
+Rozszerzenie Hardware Station to **HardwareStation.Extension.PosnetThermalFVFiscalPrinterSample**. To rozszerzenie przesyła polecenia, które rozszerzenia środowiska uruchomieniowego Commerce generuje na drukarce fiskalnej, przez wywołanie funkcji POSNET sterownika dostarczonego przez producenta. Obsługuje również błędy urządzenia.
 
-### <a name="request-handler"></a>Program obsługi żądań
+#### <a name="request-handler"></a>Program obsługi żądań
 
 Program obsługi żądań **FiscalPrinterHandler** jest punktem wejściowym dla obsługi żądania przez fiskalne urządzenie peryferyjne.
 
-Program obsługi jest dziedziczony z interfejsu **INamedRequestHandler**. Metoda **HandlerName** odpowiada za zwrócenie nazwa programu obsługi. Nazwa programu obsługi powinna odpowiadać nazwie łącznika fiskalnego określonej w Centrali sieci sprzedaży.
+Program obsługi jest dziedziczony z interfejsu **INamedRequestHandler**. Metoda **HandlerName** odpowiada za zwrócenie nazwa programu obsługi. Nazwa programu obsługi powinna odpowiadać nazwie łącznika fiskalnego określonej w Retail Headquarters.
 
 Łącznik obsługuje następujące żądania:
 
@@ -215,17 +269,10 @@ Program obsługi jest dziedziczony z interfejsu **INamedRequestHandler**. Metoda
 - **IsReadyFiscalDeviceRequest** — to żądanie służy do sprawdzania stanu urządzenia.
 - **InitializeFiscalDeviceRequest** — to żądanie jest używane do inicjowania drukarki.
 
-### <a name="configuration"></a>Konfiguracja
+#### <a name="configuration"></a>Konfiguracja
 
-Plik konfiguracyjny znajduje się w folderze **Konfiguracja** projektu rozszerzenia. Ten plik służy do obsługi konfiguracji ustawień dostawcy łącznika z Centrali sieci sprzedaży. Format pliku jest zgodny z wymaganiami konfiguracji integracji fiskalnej. Dodano następujące ustawienia:
+Plik konfiguracyjny znajduje się w folderze **Konfiguracja** projektu rozszerzenia. Ten plik służy do obsługi konfiguracji ustawień łącznika z Retail Headquarters. Format pliku jest zgodny z wymaganiami konfiguracji integracji fiskalnej. Dodano następujące ustawienia:
 
 - **Ciąg połączenia** — ten ciąg opisuje szczegóły połączenia do urządzenia w formacie obsługiwanym przez sterownik urządzenia. Aby uzyskać szczegółowe informacje, zobacz dokumentację sterownika POSNET.
-- **Data i godzina synchronizacji** — to ustawienie określa, czy należy zsynchronizować datę i godzinę drukarki ze stacją połączoną Hardware Station Data i godzina drukarki będą zsynchronizowane w godziną Hardware Station.
+- **Data i godzina synchronizacji** — to ustawienie określa, czy należy zsynchronizować datę i godzinę drukarki ze stacją połączoną Hardware Station
 - **Limit czasu urządzenia** — ilość czasu, w milisekundach, przez który sterownik czeka na odpowiedź z urządzenia. Aby uzyskać szczegółowe informacje, zobacz dokumentację sterownika POSNET.
-
-## <a name="limitations-of-the-sample"></a>Ograniczenia przykładowej integracji
-
-- Drukarka fiskalna obsługuje tylko scenariusze, w których podatek od sprzedaży jest uwzględniony w cenie. Z tego względu opcja **Cena zawiera podatek** musi być ustawiona na **Tak** zarówno dla sklepów detalicznych, jak i odbiorców.
-- Raporty dzienne (fiskalne X i końcowy raport sprzedaży)są drukowane przy użyciu osadzonego formatu *Raport zmiany*.
-- Drukowanie kodu kreskowego na paragonach fiskalnych jest traktowane jako potencjalne dostosowanie, ponieważ ta funkcja nie jest obsługiwana w formatach osadzonych i jej wprowadzenie może nastąpić wyłącznie przy użyciu dostosowywanego raportu **Super-format**.
-- Mieszane transakcje nie są obsługiwane przez drukarkę fiskalną. Opcja **Zabraniaj umieszczania sprzedaży i zwrotów na jednym paragonie** powinna być ustawiona na **Tak**w profilach funkcji POS.

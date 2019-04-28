@@ -1,7 +1,7 @@
 ---
 title: Ustawienia administratora w aplikacji Attract
 description: W tym temacie opisano, jak włączyć funkcje dla organizacji i użytkowników w aplikacji Attract.
-author: ''
+author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: fb7b5e5b98ddb8e0e44fccbb0ddbb05199265414
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0de215103306ef7115ba390b1b4855179979c77b
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305779"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "856377"
 ---
 # <a name="admin-settings-in-attract"></a>Ustawienia administratora w aplikacji Attract
 [!include[banner](../includes/banner.md)]
@@ -36,7 +36,7 @@ Wprowadź nazwę wyświetlaną firmy i dodaj logo firmy. Odtąd nazwa wyświetla
 
 ## <a name="linkedin-integration"></a>Integracja z serwisem LinkedIn
 
-Skonfiguruj integrację z aplikacją LinkedIn Recruiter System Connect (RSC). Gdy się połączysz z serwisem LinkedIn przy użyciu swoich poświadczeń użytkownika serwisu LinkedIn, możesz zsynchronizować profil kandydata na LinkedIn, zgłoszenia, opinie po rozmowach kwalifikacyjnych i notatki zespołu rekrutacyjnego. Wymagana jest pełna licencja usługi LinkedIn Recruiter. Aby uzyskać więcej informacji o usłudze LinkedIn Recruiter, zobacz [Recruiter System Connect (RSC) — często zadawane pytania](https://www.linkedin.com/help/recruiter/answer/90483).
+Konfigurowanie integracji z modułem LinkedIn Recruiter System Connect (RSC). Gdy się połączysz z serwisem LinkedIn przy użyciu swoich poświadczeń użytkownika serwisu LinkedIn, możesz zsynchronizować profil kandydata na LinkedIn, zgłoszenia, opinie po rozmowach kwalifikacyjnych i notatki zespołu rekrutacyjnego. Wymagana jest pełna licencja usługi LinkedIn Recruiter. Aby uzyskać więcej informacji o LinkedIn Recruiter, zobacz [Recruiter System Connect (RSC) — często zadawane pytania](https://www.linkedin.com/help/recruiter/answer/90483).
 
 ## <a name="user-permissions"></a>Uprawnienia użytkownika
 

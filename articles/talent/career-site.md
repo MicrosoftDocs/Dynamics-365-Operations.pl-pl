@@ -1,29 +1,29 @@
 ---
 title: Funkcjonalność witryny rozwoju kariery w aplikacji Attract
 description: Ten temat zawiera omówienie funkcji witryny kariery zawodowej w aplikacji Attract dostępne dla kandydatów.
-author: josaw1
+author: hasrivas
 manager: AnnBe
-ms.date: 02/12/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: josaw
+ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 087ab4034a1e601e7f3514c77d56ef54b0c5c52d
-ms.sourcegitcommit: 1ee613a88edddab036d145f27f19d071a4b8ad24
+ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
+ms.sourcegitcommit: 063a9296e645e0da182241941869d8102954540a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "389980"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "898938"
 ---
 # <a name="career-site-functionality-in-attract"></a>Funkcjonalność witryny rozwoju kariery w aplikacji Attract
 
@@ -43,15 +43,15 @@ Aby ustawić wartości następujących elementów, zaloguj się w aplikacji Attr
 
 -   **Logo organizacji:** Obraz logo organizacji pojawia się w lewym górnym rogu witryny rozwoju kariery. Gdy kandydat kliknie obraz logo, przejdzie do strony, która zawiera listę wszystkich otwartych funkcji.
 
-    >   [!NOTE] 
-    >   Obraz logo wyświetlany w witrynie rozwoju kariery ma stałą wysokość 20 pikseli (px). Obraz dodany w Centrum administracyjnym zostanie wyskalowany, tak aby pasował do tego limitu. W związku z tym w zależności od obrazu szerokość może się zmienić.
+    > [!NOTE] 
+    > Obraz logo wyświetlany w witrynie rozwoju kariery ma stałą wysokość 20 pikseli (px). Obraz dodany w Centrum administracyjnym zostanie wyskalowany, tak aby pasował do tego limitu. W związku z tym w zależności od obrazu szerokość może się zmienić.
  
 Aby ustawić wartości następujących elementów, zaloguj się w aplikacji Attract jako administrator, wybierz opcję **Centrum administracyjne** w menu **Ustawienia**, a następnie wybierz kartę **Zarządzanie witryną rozwoju kariery**.
 
 -   **Optymalizacja aparatu wyszukiwania:** Po włączeniu tej opcji wszystkie publicznie dostępne oferty w witrynie rozwoju kariery Attract będzie można znaleźć za pomocą wyszukiwarek, takich jak Bing i Google.
 
-    >   [!NOTE] 
-    >   Może wystąpić opóźnienie między włączeniem tego ustawienia, a uwzględnianiem ofert w wynikach wyszukiwania, w zależności od używanego aparatu wyszukiwania.
+    > [!NOTE] 
+    > Może wystąpić opóźnienie między włączeniem tego ustawienia, a uwzględnianiem ofert w wynikach wyszukiwania, w zależności od używanego aparatu wyszukiwania.
          
 ## <a name="career-site-urls"></a>Adresu URL witryny rozwoju kariery
 
@@ -81,15 +81,17 @@ Kandydaci mają do dyspozycji następujące opcje logowania do witryny rozwoju k
 
     -   Microsoft Azure Active Directory (Azure AD)
 
-Azure AD Logowanie przez usługę Azure AD jest przeznaczone tylko dla kandydatów wewnętrznych. Z tego względu działa tylko dla kandydatów wewnętrznych, którzy używają firmowych poświadczeń dostępu do usługi Azure AD. Na przykład kandydat, który jest obecnie pracownikiem firmy Contoso Ltd., chce ubiegać się o pracę w niepowiązanej firmie Alpine Ski House. W takim przypadku logowanie się nie powiedzie, jeśli pracownik spróbuje użyć swoich poświadczeń dostępu do usługi Azure AD z firmy Contoso Ltd.
+Azure AD Logowanie przez usługę Azure AD jest przeznaczone tylko dla kandydatów wewnętrznych. Z tego względu działa tylko dla kandydatów wewnętrznych, którzy używają firmowych poświadczeń dostępu do usługi Azure AD. Na przykład kandydat, który jest obecnie pracownikiem firmy Contoso Ltd., chce ubiegać się o pracę w niepowiązanej firmie Alpine Ski House. W takim przypadku logowanie się nie powiedzie, jeśli pracownik spróbuje użyć swoich poświadczeń dostępu do usługi Azure AD z firmy Contoso Ltd. 
+
+Kandydaci muszą zalogować się przy użyciu Azure AD, jeśli oferta pracy, którą oglądają lub chcą aplikować, jest wymieniona jako tylko wewnętrzna.
 
 ## <a name="create-and-maintain-a-profile"></a>Tworzenie profilu i zarządzanie nim
 
 Gdy kandydaci logują się do witryny rozwoju kariery, mogą wybrać opcję **Mój profil** na pasku nawigacji u góry strony, aby utworzyć sobie profil i nim zarządzać.
 Profil zawiera informacje osobiste, informacje o doświadczeniu zawodowym, szczegóły wykształcenia, dokumenty, łącza oraz informacji o umiejętnościach. Po utworzeniu profilu można go używać do ubiegania się o funkcje interesujące kandydata. Profile pomagają również aplikacji Attract rekomendować odpowiednie stanowiska dla kandydatów.
 
->   [!NOTE]
->   Jeśli kandydat używa identyfikatora e-mail, aby zalogować się przy użyciu jednego z dostawców uwierzytelniania wymienionych powyżej, ten identyfikator e-mail zostanie ustawiony jako domyślny dla kontaktowego adresu e-mail skojarzonego z profilem. Jednak to ostatnie można zmienić w dowolnym momencie i jest to całkowicie niezależne od pierwszego. Attract będzie zawsze używać Identyfikatora e-mail osoby kontaktowej do skojarzenia go z Twoim profilem dla całej komunikacji e-mail.
+> [!NOTE]
+> Jeśli kandydat używa identyfikatora e-mail, aby zalogować się przy użyciu jednego z dostawców uwierzytelniania wymienionych powyżej, ten identyfikator e-mail zostanie ustawiony jako domyślny dla kontaktowego adresu e-mail skojarzonego z profilem. Jednak to ostatnie można zmienić w dowolnym momencie i jest to całkowicie niezależne od pierwszego. Attract będzie zawsze używać Identyfikatora e-mail osoby kontaktowej do skojarzenia go z Twoim profilem dla całej komunikacji e-mail.
 
 ## <a name="find-the-right-job"></a>Znajdowanie odpowiedniej funkcji
 
@@ -97,13 +99,38 @@ Na stronie listy funkcji kandydaci mogą wyszukiwać konkretne funkcje, wpisują
 
 Kandydaci mogą również w witrynie rozwoju kariery przeglądać zestaw zalecanych funkcji. Funkcje rekomendowane kandydatowi bazują na poprzednich zgłoszeniach, profilu i życiorysie kandydata.
 
->   [!NOTE] 
->   Rekomendacje funkcji są wyświetlane tylko wtedy, gdy co najmniej 10 funkcji jest opublikowanych w witrynie rozwoju kariery, a kandydat ma uzupełniony profil.
+> [!NOTE] 
+> Rekomendacje funkcji są wyświetlane tylko wtedy, gdy co najmniej 10 funkcji jest opublikowanych w witrynie rozwoju kariery, a kandydat ma uzupełniony profil.
+
+Wewnętrzni kandydaci mogą również sprawdzić, kto jest menedżerem zatrudniającym/osobą rekrutującą na stanowisko, jeśli chcą się skontaktować z taką osobą w swoim zespole. Kandydaci zewnętrzni nie mają wglądu w skład zespołu rekrutującego.
+
+## <a name="contact-the-hiring-team"></a>Skontaktuj się z zespołu rekrutacyjnym
+Wyłącznie kandydaci wewnętrzni mogą kontaktować się z zespołem zatrudnienia. To ograniczenie dotyczy wszystkich ofert pracy bez względu na to, czy jest to oferta wewnętrzna, czy dostępna publicznie.
+
+Kandydaci mogą chcieć skontaktować się z zespołem rekrutacyjnym, aby wyrazić zainteresowanie ofertą lub dowiedzieć się więcej na ten temat. Mogą skontaktować się z dowolnymi członkami zespołu rekrutacyjnego, którzy zostali wymienieni (menedżer zatrudniający lub osoba rekrutująca). Kandydaci mogą też opcjonalnie dołączyć życiorys do wiadomości lub mogą wybrać istniejący życiorys, który wcześniej przesłali jako część ich profilu.
+
+Jeśli kandydat wewnętrzny wybierze członków zespołu rekrutacyjnego, z którymi chce się skontaktować, Attract wysyła wiadomość e-mail do wybranych osób w imieniu kandydata. W tym samym czasie profil kandydata zostanie dodany do etapu **prospektu**, jeśli ten etap jest dostępny dla danego stanowiska. Na etapie **prospektu** menedżer zatrudniający lub osoba rekrutująca mogą wyświetlać kandydatów, którzy się do nich zgłosili. Mogą także przeglądać profile kandydatów i zaprosić potencjalnych kandydatów do złożenia propozycji.
+
+Kandydaci mogą ubiegać się o pracę, w sprawie której już skontaktowali się z zespołem rekrutacyjnym. Po złożeniu aplikacji kandydat nie może kontaktować się z zespołem rekrutacyjnym za pośrednictwem witryny kariery zawodowej.
 
 ## <a name="apply-for-jobs"></a>Ubieganie się o pracę
 
-Gdy kandydat znajdzie odpowiednią funkcję, może złożyć podanie, klikając przycisk **Zgłoś** się na stronie **szczegółów stanowiska**. W tym momencie kandydat może utworzyć całkowicie nowy profil lub przejrzeć informacje w swoim istniejącym profilu.
+Gdy kandydat znajdzie odpowiednią funkcję, może złożyć podanie, klikając przycisk  **Zgłoś się**  na stronie  **szczegółów stanowiska**. W tym momencie kandydat może utworzyć całkowicie nowy profil lub przejrzeć informacje w swoim istniejącym profilu.
 Kandydat może także w razie potrzeby przekazać życiorys, a następnie przesłać zgłoszenie na funkcję (podanie o pracę).
+
+### <a name="enable-applying-for-jobs-with-linkedin-profiles"></a>Włącz składanie podań o pracę za pomocą profili LinkedIn
+
+Kandydaci mogą łatwo składać aplikacje na stanowisko, jeśli skonfigurujesz Attract w taki sposób, żeby było możliwe przesyłanie zgłoszeń przez LinkedIn.
+
+> [!NOTE] 
+> Musisz mieć jedną lub więcej licencji Osoby rekrutującej z LinkedIn, aby zezwolić kandydatom składanie aplikacji przez LinkedIn.
+
+1. Zaloguj się w Attract jako administrator.
+2. Wybierz przycisk **ustawienia** (symbol koła zębatego) w prawym górnym rogu strony, a następnie wybierz opcję **Centrum administracyjnego**.
+3. Wybierz kartę **integracji LinkedIn** i połącz z kontem LinkedIn Recruiter.
+4. W integracji **LinkedIn Recruiter System Connect** zaznacz **Wł.** dla ustawienia **Zgłoś się za pomocą LinkedIn**.
+
+Po włączeniu tego ustawienia kandydaci będą mogli zgłaszać się, używając danych profilowych na LinkedIn. Gdy kandydaci składają aplikacje, naciskając przycisk **Zgłoś się za pomocą LinkedIn**, są proszeni o uwierzytelnienie się na LinkedIn, jeśli nie są zalogowani. Po uwierzytelnieniu kandydatów ich profile LinkedIn zastępują wszelkie istniejące dane profilu wyświetlana na stronie zgłoszenia. Kandydaci mogą edytować informacje i przesłać zgłoszenie. Jeśli kandydat opuści stronę bez zgłoszenia się na stanowisko, jego dane profilowe nie zostaną zaktualizowane w Attract.
 
 ## <a name="check-application-status"></a>Sprawdzanie stanu zgłoszenia
 

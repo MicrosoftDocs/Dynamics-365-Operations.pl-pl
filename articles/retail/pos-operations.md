@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353823"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842729"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
@@ -93,7 +93,7 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 614 | Edytuj zamówienie odbiorcy | Wycofaj wybrane zamówienie, aby umożliwić jego zmianę w punkcie sprzedaży. | Nr | Nr | Nr | Nr | Nr |
 | 615 | Edytuj ofertę | Wycofaj wybraną ofertę, aby umożliwić jej zmianę w punkcie sprzedaży. | Nr | Nr | Nr | Nr | Nr |
 | 518 | Konta wypływu/wypłat | Rejestruj pieniądze wyjęte z szuflady kasowej w związku z okazjonalnymi wydatkami. | Tak | Tak | Tak | Tak | Nr |
-| 919 | Logowanie rozszerzone | Przypisz lub usuń uprawnienie do logowania się przez skanowanie kodu kreskowego lub zbliżenie karty. | Tak | Tak | Tak | Nr | Nr |
+| 919 | Logowanie rozszerzone | Przypisz lub usuń uprawnienie do logowania się przez skanowanie kodu kreskowego lub zbliżenie karty. | Tak | Tak | Tak | Tak | Nie |
 | 1201 | Pozycja zmiennoprzecinkowa | Ta operacja umożliwia użytkownikowi dodanie pieniędzy do bieżącej szuflady lub zmiany. | Tak | Tak | Tak | Tak | Nr |
 | 1218 | Wymuś odblokowanie urządzenia peryferyjnego | System wykorzystuję tę operację wewnętrznie do odblokowania urządzeń peryferyjnych punktu sprzedaży. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nr |
 | 520 | Saldo na karcie upominkowej | Pokaż saldo karty upominkowej. | Tak | Tak | Nr | Nr | Nr |

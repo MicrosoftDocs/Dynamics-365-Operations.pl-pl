@@ -1,29 +1,29 @@
 ---
 title: Pozyskiwanie kandydatów za pomocą pul umiejętności
 description: W tym temacie opisano sposób tworzenia i konfigurowania pul umiejętności w aplikacji Attract.
-author: ''
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/22/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305781"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949351"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Pozyskiwanie kandydatów za pomocą pul umiejętności
 
@@ -44,7 +44,7 @@ Wykonaj poniższe kroki, aby utworzyć i udostępnić pulę umiejętności.
 
     Na karcie **Moje pule umiejętności** są wyświetlane wszystkie pule umiejętności, do których masz dostęp, wraz ze szczegółowymi informacjami o każdej puli. Szczegóły obejmują dane właściciela puli oraz liczbę kandydatów w puli.
 
-1. W prawym górnym rogu wybierz opcję **+ Nowy**, aby otworzyć okno dialogowe **Utwórz pulę umiejętności**.
+1. W prawym górnym rogu strony wybierz opcję **+ Nowy**, aby otworzyć okno dialogowe **Utwórz pulę umiejętności**.
 1. Nadaj puli umiejętności unikatową nazwę.
 1. Aby dodać osoby jako współautorów puli, odszukaj ich imiona i nazwiska przy użyciu selektora osób, a następnie dodaj do listy. Pulę umiejętności można udostępnić tylko użytkownikom posiadającym rolę osoby rekrutującej, menedżera zatrudniającego lub administratora aplikacji Attract.
 1. Kliknij przycisk **Dodaj**, aby utworzyć pulę umiejętności.
@@ -78,26 +78,35 @@ Właściciel i współautorzy puli umiejętności mogą dodawać kandydatów do 
 
 ## <a name="search-and-view-candidate-profiles"></a>Wyszukiwanie i wyświetlanie profili kandydatów
 
-Użytkownicy puli umiejętności mogą wyświetlać profil kandydata, jego dane z serwisu LinkedIn, pokrewne dokumenty oraz całą historię zgłoszeń. Można również przeszukać całą bazę danych kandydatów w celu znalezienia wszystkich kandydatów, którzy kiedykolwiek składali podanie o pracę w Twojej organizacji lub kiedykolwiek zostali dodani do którejkolwiek puli umiejętności.
+> [!NOTE] 
+> Ta funkcja jest obecnie w wersjach zapoznawczych. Jeśli chcesz ją wypróbować, musisz najpierw [ją włączyć w ustawieniach administratora Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
 
-1. Użyj pola wyszukiwania u góry karty **Moje pule umiejętności**, aby przeszukiwać całą bazę danych kandydatów.
-1. Szukaj według różnych atrybutów profilu. Wybierz kategorię atrybutów wyszukiwania, utwórz zapytanie wyszukujące, a następnie kliknij przycisk strzałki w prawo (**-\>**), aby uruchomić wyszukiwanie.
+Pule umiejętności i kandydatów pozwalają na wyświetlanie profilu kandydata, informacji LinkedIn, związanych z tym dokumentów i historia zgłoszeń. Można przeszukać całą bazę danych wszystkich kandydatów dodanych do dowolnej puli, w tym kandydatów, dla których procedury są otwarte lub zamknięte.
 
-    Można wyszukiwać kandydatów według imion i nazwisk, organizacji, w których pracują, oznaczonych umiejętności, historii wykształcenia, obecnej funkcji lub uzyskanego stopnia naukowego, jeśli te informacje znajdują się w ich profilach.
+>[!NOTE]
+> Po dodaniu nowych kandydatów, zaindeksowanie nowych użytkowników w wynikach wyszukiwania może potrwać do 15 minut.
 
-    Można również utworzyć zapytanie wyszukujące, w którym co najmniej dwa z tych atrybutów są używane jako kryterium. Kryteria łączy się za pomocą operatora **i**.
+Dzięki poprawionemu mechanizmowi wyszukiwania można przeszukiwać wszystkie dokumenty kandydata i filtrować według srebrnych medalistów, źródeł, umiejętności, wykształcenia itd. W poprzednich wersjach trzeba było określić jednostkę, którą chcesz przeszukać. Attract może teraz przeszukiwać wszystkie pola związane z kandydatem i oceniać wyniki.
 
-    Jeśli którykolwiek kandydat pasuje do zapytania wyszukującego, zostanie wyświetlony w wynikach wyszukiwania.
+1. Aby rozpocząć nowe wyszukiwanie za pomocą bazy danych kandydata, wprowadź tekst, który chcesz wyszukać w polu wyszukiwania na karcie **Pule umiejętności i kandydatów**. 
 
-1. Aby zawęzić wyświetlane wyniki, można zaktualizować zapytanie wyszukujące przy użyciu pola wyszukiwania u góry.
+Można wpisać nazwisko kandydata lub atrybuty, których szukasz. Do oddzielania atrybutów użyj spacji.
 
-    Alternatywnie użyj filtrów inteligentnych z listy po prawej stronie. Te inteligentne filtry są ustawiane dynamicznie na podstawie wyników wyszukiwania.
+Wyniki wyszukiwania można zawęzić, zmieniając kwerendę wyszukiwania lub za pomocą filtrów inteligentnych po lewej stronie.
 
-    W wynikach wyszukiwania widać 20 umiejętności, uczelni, organizacji itd., które są najczęściej znajdowane u kandydatów na liście. Dla każdego z tych atrybutów można dodać więcej filtrów, aby jeszcze bardziej zawęzić listę wyników wyszukiwania.
+Wyniki wyszukiwania pokażą wyróżnione trafienia dla różnych atrybutów pasujących do kwerendy wyszukiwania. Wybierz kandydata, aby wyświetlić jego profil.
 
-1. Po zidentyfikowaniu kandydata zaznacz wiersz z tym kandydatem, aby wyświetlić jego profil.
+### <a name="syntax-highlights"></a>Wyróżnienia składniowe 
 
-Wszyscy użytkownicy mają wspólny widok profili kandydatów. Zaznacz wiersz z kandydatem w zbiorze wyników wyszukiwania lub w puli umiejętności, aby wyświetlić jego profil. Karta **Profil** zawiera wszystkie informacje o umiejętnościach, doświadczeniu zawodowym i wykształceniu, jakie kandydat zaktualizował z portalu rozwoju kariery.
+| Operator | Użycie                                                      | Przykład              |
+|----------|------------------------------------------------------------|----------------------|
+| \*       | Wyszukuje podciągi; można zwrócić wszystkie rekordy | Dane wejściowe: Mi\* <br></br> Wynik: Wszystkie rekordy zawierające pola zaczynające się od „Mi”, takich jak Microsoft, systemy Micro, Midtown lub Middleton <br></br>Lokalizacja wejściowa: \* <br></br> Wynik: Wszystkie rekordy w bazie danych |
+| “”       | Wyszukuje dokładne dopasowanie                                | Dane wejściowe: „Microsoft” <br></br> Wynik: Wszystkie rekordy zawierające „Microsoft”                    |
+
+>[!WARNING]
+> Nie należy wyłączać istotności dla wystąpienia Common Data Service. Spowoduje to wyłączenie funkcji wyszukiwania w Attract.
+
+Wszyscy użytkownicy mają wspólny widok profili kandydatów. Karta **Profil** zawiera wszystkie informacje o umiejętnościach, doświadczeniu zawodowym i wykształceniu, jakie kandydat zaktualizował z portalu rozwoju kariery.
 
 - Można wyświetlić dane kontaktowe kandydata. Można także edytować i aktualizować informacje zgodnie z potrzebą, używając przycisku **Edytuj szczegóły**.
 
@@ -117,7 +126,7 @@ Z listy wyników wyszukiwania lub puli umiejętności można wysłać kandydata 
 
 1. Znajdź kandydata za pomocą opcji wyszukiwania, a następnie otwórz jego profil. Alternatywnie otwórz pulę umiejętności z poziomu karty **Moje pule umiejętności**, wyszukaj kandydata w puli umiejętności, a następnie otwórz jego profil.
 
-1. Na stronie profilu kandydata kliknij przycisk **+ Dodaj do funkcji** w prawym górnym rogu. 
+1. Na stronie profilu kandydata kliknij przycisk **Dodaj do funkcji** w prawym górnym rogu. 
      
      Zostanie wyświetlona lista funkcji, z powodu których należysz do zespołu rekrutacyjnego jako osoba rekrutująca lub menedżer zatrudniający.
 
