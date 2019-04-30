@@ -3,7 +3,7 @@ title: Delegowanie elementów pracy w przepływie pracy
 description: Jeśli nie będzie Cię w pracy lub z innego powodu nie będziesz w stanie zająć się elementami pracy, możesz delegować, czyli przepisać, swoje elementy pracy do innych użytkowników.
 author: jasongre
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 04/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,25 +16,26 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f85a1318822ceaf829134bf2eb3581e350d5bea4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: feace647d7acef6abf86b13fcb8019c622c55ff6
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346256"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "976788"
 ---
-# <a name="delegate-work-items-in-a-workflow"></a>Delegowanie elementów pracy w przepływie pracy
+# <a name="delegate-work-items-in-a-workflow"></a>Delegowanie pozycji pracy w przepływie pracy
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Jeśli nie będzie Cię w pracy lub z innego powodu nie będziesz w stanie zająć się elementami pracy, możesz delegować, czyli przepisać, swoje elementy pracy do innych użytkowników. Ta procedura służy do takiego konfigurowania systemu, aby automatycznie delegował Twoje elementy pracy do innego użytkownika.
+## <a name="manually-delegate-a-work-item"></a>Ręczne delegowanie elementu pracy
 
+Aby delegować pojedynczy element pracy, zaznacz opcję **Delegowanie** w menu **przepływu pracy**, a następnie wprowadź użytkownika, który ma być delegowany, wraz z komentarzem. To spowoduje ponowne przypisanie elementu pracy do tego użytkownika, umożliwiającego mu wykonywanie go.
 
+## <a name="automatically-delegate-work-items"></a>Automatyczne delegowanie elementów pracy
 
-Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
+Jeśli zamierzasz być poza biurem lub nie będziesz mieć możliwości wykonywania elementów pracy przez jakiś czas, możesz automatycznie delegować nowe elementy pracy innym użytkownikom na stronie **opcje użytkownika**.
 
-
-## <a name="set-up-automatic-delegation"></a>Ustawienie automatycznej delegacji
+### <a name="set-up-automatic-delegation"></a>Ustawienie automatycznej delegacji
 1. Wybierz kolejno opcje Wspólne > Ustawienia > Opcje użytkownika.
 2. Kliknij kartę Przepływ pracy.
     * Upewnij się, że jest rozwinięta sekcja Delegacja.    Aby skonfigurować w systemie automatyczne delegowanie elementów pracy do innych użytkowników, należy utworzyć reguły delegowania, które określają, kiedy wybrane typy elementów pracy są delegowane. Aby utworzyć reguły delegowania, należy wykonać poniższe kroki.  

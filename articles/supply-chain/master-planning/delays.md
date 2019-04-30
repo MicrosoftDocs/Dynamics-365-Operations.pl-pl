@@ -1,9 +1,9 @@
 ---
 title: Opóźnienia
-description: Ten artykuł zawiera informacje o datach opóźnień w planowaniu głównym. Data opóźnienia to realistyczny termin przypisywany transakcji, jeśli najwcześniejsza data realizacji obliczona w planowaniu głównym jest późniejsza niż wnioskowana data.
+description: Ten temat zawiera informacje o datach opóźnień w planowaniu głównym. Data opóźnienia to realistyczny termin przypisywany transakcji, jeśli najwcześniejsza data realizacji obliczona w planowaniu głównym jest późniejsza niż wnioskowana data.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a87b19732f413aa2844101f76dea83535da86599
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7c26fedf15118a304469604527c33a25871356be
+ms.sourcegitcommit: 8eac5eee94bb32143df44c82a2dfdbe903967af8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359619"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "878317"
 ---
 # <a name="delays"></a>Opóźnienia
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera informacje o datach opóźnień w planowaniu głównym. Data opóźnienia to realistyczny termin przypisywany transakcji, jeśli najwcześniejsza data realizacji obliczona w planowaniu głównym jest późniejsza niż wnioskowana data.
+Ten temat zawiera informacje o datach opóźnień w planowaniu głównym. Data opóźnienia to realistyczny termin przypisywany transakcji, jeśli najwcześniejsza data realizacji obliczona w planowaniu głównym jest późniejsza niż wnioskowana data.
 
 Planowanie główne pozwala obliczać najwcześniejszą datę realizacji transakcji na podstawie czasów realizacji, dostępności materiałów, dostępności zdolności produkcyjnych i różnych parametrów planowania. 
 
@@ -42,12 +42,13 @@ Można skonfigurować sposób obliczania opóźnienia dla grupy zapotrzebowania.
 
 Na stronie **Parametry planowania głównego** można ustawić czas rozpoczęcia dla obliczania opóźnień. Jeżeli zamówienie zostało zamknięte po tym czasie, do daty opóźnienia zamówienia dodawany jest jeden dzień opóźnienia. 
 
-**Uwaga:** We wcześniejszych wersjach obliczane opóźnienia były nazywane *komunikatami prognoz*, data opóźniona była nazywana *datą prognozy*, a transakcja opóźnienia była nazywana *transakcją z datą w przyszłości*.
+> [!Uwaga}: We wcześniejszych wersjach obliczane opóźnienia były nazywane *komunikatami prognoz*, data opóźniona była nazywana *datą prognozy*, a transakcja opóźnienia była nazywana *transakcją z datą w przyszłości*.
+
+## <a name="desired-date"></a>Wymagana data
+
+Na stronie **zamówienia planowanego** na karcie **opóźnień** jest **Żądana data** dla tego zamówienia. Wymagana data planowanego zamówienia jest podstawową datą dla opóźnień, która jest obliczona i jest równa **Żądanej dacie** obliczonej ze **zapotrzebowania netto**. Jeśli planowane zamówienie jest wierszem BOM, wierszem produkcji lub wierszem na karcie kanban, wymagana data opiera się na **Dacie zapotrzebowania** i żądana data nie będzie wyświetlana na stronie **zamówienia planowanego**.
 
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Ustawienia zapotrzebowania](coverage-settings.md)
-
-
-

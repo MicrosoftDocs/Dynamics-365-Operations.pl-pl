@@ -1,7 +1,7 @@
 ---
 title: Zastosowanie rabatu gotówkowego poza okresem rabatu gotówkowego
 description: Ten artykuł zawiera dwa scenariusze pokazujące stosowanie rabatu gotówkowego nawet w przypadku, gdy płatność jest dokonywana poza okresem rabatu gotówkowego.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f02bba975e5438443c4719e887a38247094cb20b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 07d7c2740b23f6ad291bd295c878817e466da3bb
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356882"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896794"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Zastosowanie rabatu gotówkowego poza okresem rabatu gotówkowego
 

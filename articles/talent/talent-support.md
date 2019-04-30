@@ -1,7 +1,7 @@
 ---
 title: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Talent
 description: W tym temacie wyjaśniono, jak uzyskać pomoc dotyczącą aplikacji Dynamics 365 for Talent.
-author: Darinkramer
+author: andreabichsel
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.search.region: Global
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.openlocfilehash: 9b2d7159b458b6f3b2cbb3271210c10ab486f496
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 39aadda6e4c221e243d55e2fd60bbc8484d3b21d
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305865"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992819"
 ---
 # <a name="get-support-for-talent"></a>Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Talent
 
@@ -33,24 +33,14 @@ W tym temacie opisano, jak uzyskać pomoc dotyczącą modułów Core HR, Attract
 
 Używając informacji w tym temacie, kontaktuj się z firmą Microsoft w przypadku pytań technicznych o aplikację Talent.
 
-### <a name="talent-support---core-hr"></a>Pomoc techniczna do aplikacji Talent — moduł Core HR
+### <a name="talent-support"></a>Pomoc techniczna rozwiązania Talent 
 
 Aby uzyskać pomoc techniczną dotyczącą aplikacji Talent, skorzystaj z zasobów wymienionych w tabeli poniżej. Zasoby te są wymienione w kolejności, w jakiej zalecamy ich używać podczas rozwiązywania problemów.
 
 | **Zadanie**                                                | **Więcej informacji**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Zapytaj społeczność                                      | Przejdź do strony [Zapytaj społeczność](https://community.dynamics.com/365/talent), aby znaleźć odpowiedzi na pytania, a za pomocą opcji „Pomoc” poszukaj tematów dotyczących modułu Core HR.                                                                                                                                                                                                                                                                                                                                                                                  |
-| Używanie narzędzia Pomoc techniczna w chmurze                     | W usłudze [Lifecycle Services (LCS)](https://lcs.dynamics.com/) kafelek **Pomoc techniczna** jest narzędziem, które pomaga zarządzać zdarzeniami pomocy technicznej. Aby przesłać informacje o problemach bezpośrednio do firmy Microsoft, przejdź do kafelka **Pomoc techniczna** w swoim projekcie usługi LCS lub przejdź do **sekcji zgłoszeń o pomoc techniczną** w usłudze LCS i kliknij opcję **Pomoc techniczna w chmurze**. Z wyświetlonego okna można przesyłać problemy na dwa sposoby: 1. Jeśli przesyłasz zgłoszenie problemu za pośrednictwem usługi LCS, na karcie **Aktywny problem** zaznacz swój problem, a następnie kliknij opcję **Prześlij do Microsoft**. 2. Na karcie **Przesłano do firmy Microsoft** kliknij przycisk **Prześlij nowe zdarzenie**, aby zgłosić nowe problemy. |
-| Uzyskiwanie pomocy na temat licencjonowania aplikacji Talent         | Skontaktuj się z partnerem lub przedstawicielem handlowym firmy Microsoft.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Wnioskowanie o nowe funkcje w aplikacji Talent | W aplikacji Talent na jej stronie głównej kliknij ikonę **?** i wybierz opcję **Pomysły** lub użyj łącza [Pomysły](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources), aby wyświetlać, wyszukiwać lub opiniować pomysły albo dodawać nowe.                                                                                                                                                                                                                                                                                                                      |
-
-### <a name="talent-support--attract-and-onboard"></a>Pomoc techniczna do aplikacji Talent — moduły Attract i Onboard
-
-Aby uzyskać pomoc techniczną dotyczącą modułów Attract i Onboard, skorzystaj z zasobów wymienionych w tabeli poniżej. Zasoby te są wymienione w kolejności, w jakiej zalecamy ich używać podczas rozwiązywania problemów. Wszystkie opcje pomocy technicznej znajdują się w menu pod ikoną **?** w prawej górnej części okna produktu.
-
-| **Zadanie**                                                                | **Więcej informacji**                                                                                                                                                                                                                                                                           |
-|-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Zapytaj społeczność                                                      | Przejdź do strony [Zapytaj społeczność](https://community.dynamics.com/365/talent), gdzie znajdziesz odpowiedzi na pytania.                                                                                                                                                                                |
-| Zgłoś problem                                                        | W menu kliknij ikonę **?** i wybierz odpowiednie opcje, aby zgłosić problem. Wypełnij pole opisu problemu oraz dołącz adres e-mail, jeśli chcesz śledzić proces rozwiązywania.                                                                                           |
-| Uzyskiwanie pomocy na temat licencjonowania aplikacji Talent                         | Skontaktuj się z partnerem lub przedstawicielem handlowym firmy Microsoft.                                                                                                                                                                                                                                        |
-| Wnioskowanie o nowe funkcje w modułach Attract i Onboard | Kliknij ikonę **?** i wybierz opcję **Pomysły** lub użyj następujących łączy, aby wyświetlać, wyszukiwać lub opiniować pomysły albo dodawać nowe: [Attract](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract) lub [Onboard](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard). |
+| Używanie narzędzia Pomoc techniczna w chmurze                     | W usłudze [Lifecycle Services (LCS)](https://lcs.dynamics.com/) kafelek **Pomoc techniczna** jest narzędziem, które pomaga zarządzać zdarzeniami pomocy technicznej. Aby przesłać informacje o problemach bezpośrednio do firmy Microsoft, przejdź do kafelka **Pomoc techniczna** w swoim projekcie usługi LCS lub przejdź do **sekcji zgłoszeń o pomoc techniczną** w usłudze LCS i kliknij opcję **Pomoc techniczna w chmurze**. Z wyświetlonego okna można przesyłać problemy na dwa sposoby: 1. Jeśli przesyłasz zgłoszenie problemu za pośrednictwem usługi LCS, na karcie **Aktywny problem** zaznacz swój problem, a następnie kliknij opcję **Prześlij do Microsoft**. 2. Na karcie **Przesłano do firmy Microsoft** kliknij przycisk **Prześlij nowe zdarzenie**, aby zgłosić nowe problemy.  |
+| Pomoc techniczna w aplikacji                                 | W menu kliknij ikonę **?**, a następnie wybierz opcję **pomoc techniczna (Core HR) Zgłoś problem (Attract, Onboard)**. Problemy będą raportowane na karcie **aktywnych problemów** w LCS. Należy zauważyć, że w przypadku zakupu samodzielnej wersji programu Onboard, zgłaszane problemy będą wysyłane do firmy Microsoft.  |
+| Uzyskiwanie pomocy na temat licencjonowania aplikacji Talent         | Skontaktuj się z partnerem lub przedstawicielem handlowym firmy Microsoft.     |
+| Wnioskowanie o nowe funkcje w aplikacji Talent | W aplikacji Talent na jej stronie głównej wybierz ikonę **?** i wybierz opcję **Pomysły** lub użyj łącza [Pomysły](https://experience.dynamics.com/ideas/), aby wyświetlać, wyszukiwać lub opiniować pomysły albo dodawać nowe.          |                                                                                                                                                                                                                                                                                           

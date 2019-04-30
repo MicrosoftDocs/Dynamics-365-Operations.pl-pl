@@ -1,7 +1,7 @@
 ---
 title: Dostęp do funkcji w wersji zapoznawczej w aplikacji Talent
 description: W tym temacie opisano, jak administrator może włączyć funkcje zapoznawcze, oraz podano listę funkcji dostępnych obecnie w wersji zapoznawczej.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 04/17/2018
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 060a36185641d5bb7912631b7c857c5c4331c8b7
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305773"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "856331"
 ---
 # <a name="access-preview-features-in-talent"></a>Dostęp do funkcji w wersji zapoznawczej w aplikacji Talent
 

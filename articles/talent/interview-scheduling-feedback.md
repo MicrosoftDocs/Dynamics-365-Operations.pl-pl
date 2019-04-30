@@ -1,25 +1,25 @@
 ---
 title: Planowanie rozmów kwalifikacyjnych i informacji zwrotnych
 description: W tym temacie omówiono działania planowania rozmów kwalifikacyjnych i wysyłania informacji zwrotnych w Attract.
-author: ''
+author: hasrivas
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 04/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
-ms.author: hasrivas
-ms.openlocfilehash: 7bc5a66bb221cb0ab2c69fcb1013ed48a7c664a6
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.author: shielas
+ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374961"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "989944"
 ---
 # <a name="interview-scheduling-and-feedback"></a>Planowanie rozmów kwalifikacyjnych i informacji zwrotnych
 
@@ -28,6 +28,8 @@ ms.locfileid: "374961"
 ## <a name="scheduler-activity"></a>Działanie Harmonogram
 
 Działanie harmonogramu są opcjonalne i składa się z dwóch składników: Pytanie o dostępność kandydata oraz Harmonogram. Składnik Dostępność kandydata umożliwia wysyłanie wiadomości e-mail w celu sprawdzenia dostępności kandydata. Składnik Harmonogram umożliwia planowanie rozmów kwalifikacyjnych z udziałem kandydata i zespołu rekrutacyjnego.
+
+Aby skonfigurować działania harmonogramu, tak aby uwzględnić lub ograniczyć kandydatów do zaplanowania, wybierz wartość w polu **Kogo planujesz**. Dostępne opcje to **Wszyscy kandydaci**, **Zewnętrzni kandydaci** i **Wewnętrzni kandydaci**. Na przykład, jeśli chcesz pominąć wewnętrznych kandydatów w pierwszej kolejce planowania, można przypisać działanie harmonogramu tylko do zewnętrznych kandydatów przez ustawienie parametru **Kogo planujesz** jako **Zewnętrzni kandydaci**.
 
 ### <a name="candidate-availability-request"></a>Pytanie o dostępność kandydata
 
@@ -54,7 +56,7 @@ Istnieje kilka konfiguracji harmonogramu rozmów kwalifikacyjnych służących d
 
 2. Wybierz czas trwania rozmowy kwalifikacyjnej dla każdego zdarzenia rozmowy kwalifikacyjnej, a następnie kliknij przycisk **OK**, aby rozpocząć tworzenie harmonogramu.
 
-    Jeśli wybrana jest opcja **Zalecenia**, będą wyświetlane sugestie, a siatka rozmowy kwalifikacyjnej zostanie wstępnie wypełniona. Można wyświetlić bieżący kalendarz dostępności wszystkich znaczonego osób prowadzących rozmowę kwalifikacyjną. Ponadto można wyświetlać kalendarz kandydata, jeśli jest on wewnętrznym kandydatem.
+    Jeśli wybrana jest opcja **Zalecenia**, będą wyświetlane sugestie, a siatka rozmowy kwalifikacyjnej zostanie wstępnie wypełniona. Można wyświetlić bieżący kalendarz dostępności wszystkich znaczonego osób prowadzących rozmowę kwalifikacyjną. Ponadto można wyświetlać kalendarz kandydata, jeśli jest on wewnętrznym kandydatem. Dla osób prowadzących rozmowę kwalifikacyjną i wewnętrznych kandydatów można wyświetlać ich zajęty czas, godziny pracy, godziny poza biurem, a także określić, czy oznaczyli swoje kalendarze jako robocze w innych miejscach dla określonych przedziałów czasowych. 
 
 3. Jeśli nie dostępnych sugestii, w kolumnie **Rozmowy kwalifikacyjne**kliknij przedział czasowy, podaj tytuł rozmowy kwalifikacyjnej, szczegóły i wypełnij szczegóły lokalizacji, w razie potrzeby. Do rozmowy kwalifikacyjnej można dodać łącze programu **Skype dla firm**.
 
@@ -73,7 +75,7 @@ Istnieje kilka konfiguracji harmonogramu rozmów kwalifikacyjnych służących d
 
     Odpowiedzi osób prowadzących rozmowę kwalifikacyjną są rejestrowane i wyświetlane w Attract. Jeśli osoba prowadząca rozmowę kwalifikacyjną odrzuci zaproszenie, otrzymasz powiadomienie o konieczności wprowadzenia zmiany. Aby wyświetlić odpowiedź w widoku siatki **Harmonogram**kliknij ikonę dymka.
 
-[![Widok rekrutera odpowiedzi osoby prowadzącej rozmowę kwalifikacyjną](./media/schedule-interviewer-response.png)](./media/schedule-interviewer-response.png)
+[![Widok rekrutera odpowiedzi osoby prowadzącej rozmowę kwalifikacyjną](./media/schedule-interviewer-response2.png)](./media/schedule-interviewer-response2.png)
 
 7. Gdy harmonogramu rozmowy kwalifikacyjnej jest gotowy do udostępnienia kandydatowi, kliknij **Wyślij do kandydata**. Imiona i nazwiska osób prowadzących rozmowę kwalifikacyjną oraz przedziały czasu mogą być widoczne dla kandydatów lub ukryte.
 
@@ -82,10 +84,21 @@ Istnieje kilka konfiguracji harmonogramu rozmów kwalifikacyjnych służących d
 >[!NOTE] 
 > Dostępność w kalendarzu kandydata jest wyświetlana tylko wtedy, jeśli kandydat jest wewnętrzny. Podobnie tylko wewnętrzni kandydaci mogą być używani do ulepszania zaleceń harmonogramu rozmowy kwalifikacyjnej. Obecnie kandydaci (zewnętrzni lub wewnętrzni) nie otrzymują wiadomości e-mail z zaproszeniem na spotkanie, natomiast kandydat otrzymuje tylko podsumowanie rozmów kwalifikacyjnych.
 
-## <a name="feedback-activity"></a>Działanie Opinia
+Kandydaci otrzymają wiadomość e-mail podsumowującą ich rozmowę kwalifikacyjną. Wiadomości e-mail zawierają plik .ics, który można zapisać osobistych kalendarzach kandydatów, aby mieć do niego łatwiejszy dostęp i wysyłać powiadomienia o rozmowie kwalifikacyjnej.
 
-Opinie są opcjonalne w szablonie stanowisk. Umożliwia ono wprowadzanie rekomendacji dotyczących kandydata lub komentarzy z opiniami przez uczestników rozmowy kwalifikacyjnej. Jeśli pole **Dziedzicz współtwórców opinii z zespołu rekrutacyjnego** jest zaznaczone, osoba rekrutująca, menedżer zatrudniający i osoby przeprowadzające rozmowy kwalifikacyjne są automatycznie dodawane do działania Opinia. Organizacje mogą również zezwalać osobom przeprowadzającym rozmowy kwalifikacyjne na przeglądanie opinii innych osób, zanim prześlą swoje własne opinie. Organizacje mogą także pozwalać osobom przeprowadzającym rozmowy kwalifikacyjne na edytowanie już przesłanych opinii. Zaleca się, aby osoby prowadzące rozmowę kwalifikacyjną przesłały opinię na temat ostatnio przeprowadzonych rozmów kwalifikacyjnych na podstawie aktualnej konfiguracji w ramach szablonu stanowisk. Menedżer zatrudniający lub rekruter na stanowisko może również ręcznie przypominać osobom prowadzącym rozmowy kwalifikacyjne o przesłaniu opinii.
+>[!TIP] 
+> W przypadku ponownego wysłania harmonogramu rozmów kwalifikacyjnych do kandydata, kandydat otrzyma załącznik z innym plikiem .ics. Zaleca się zaktualizowanie szablonów wiadomości e-mail dla podsumowania rozmów kwalifikacyjnych z kandydatem, aby zapewnić, że kandydat usunie poprzednio dodane zdarzenia rozmów kwalifikacyjnych, tak aby nie były zduplikowane w jego kalendarzu. 
+
+## <a name="feedback-activity"></a>Działanie na opinii
+
+Opinie są opcjonalne w szablonie stanowisk. Umożliwia ono wprowadzanie rekomendacji dotyczących kandydata lub komentarzy z opiniami przez uczestników rozmowy kwalifikacyjnej. 
+
+Aby dodać lub ograniczyć liczbę kandydatów, którym trzeba będzie wysłać informację zwrotną, wybierz wartość w polu **Którym kandydatkom należy podać informacje zwrotne**.  Dostępne opcje to **Wszyscy kandydaci**, **Zewnętrzni kandydaci** i **Wewnętrzni kandydaci**. Na przykład, jeśli chcesz pominąć wewnętrznych kandydatów w pierwszym cyklu planowania, ustaw pole **Którym kandydatkom należy podać informacje zwrotne** jako **Zewnętrzni kandydaci**.
+
+Jeśli pole **Dziedzicz współtwórców opinii z zespołu rekrutacyjnego** jest zaznaczone, osoba rekrutująca, menedżer zatrudniający i osoby przeprowadzające rozmowy kwalifikacyjne są automatycznie dodawane do działania Opinia. Organizacje mogą również zezwalać osobom przeprowadzającym rozmowy kwalifikacyjne na przeglądanie opinii innych osób, zanim prześlą swoje własne opinie. Organizacje mogą także pozwalać osobom przeprowadzającym rozmowy kwalifikacyjne na edytowanie już przesłanych opinii. Zaleca się, aby osoby prowadzące rozmowę kwalifikacyjną przesłały opinię na temat ostatnio przeprowadzonych rozmów kwalifikacyjnych na podstawie aktualnej konfiguracji w ramach szablonu stanowisk. Menedżer zatrudniający lub rekruter na stanowisko może również ręcznie przypominać osobom prowadzącym rozmowy kwalifikacyjne o przesłaniu opinii.
 
 ## <a name="interview-activity"></a>Działanie Rozmowa kwalifikacyjna
 
-Działanie rozmowy kwalifikacyjnej jest opcjonalne w trzech komponentach: Pytanie o dostępność kandydata, Harmonogram oraz Opinia. Użyj działania rozmowy kwalifikacyjnej w szablonie zadania, jeśli chcesz uwzględnić wszystkie pytania o dostępność kandydata, harmonogram i informacje zwrotnych w ramach procesu zamiast używać ich osobno w trakcie zatrudnienia.
+Działanie rozmowy kwalifikacyjnej jest opcjonalne w trzech komponentach: **Pytanie o dostępność kandydata**, **Harmonogram** oraz **Opinia**. Użyj działania rozmowy kwalifikacyjnej w szablonie zadania, jeśli chcesz uwzględnić żądanie dostępności wszystkich kandydatów, harmonogramu i informacje zwrotnych w ramach procesu zamiast używać ich osobno.
+
+Aby zmniejszyć lub zwiększyć liczbę kandydatów zapraszanych na rozmowy kwalifikacyjne, wybierz wartość w polu **Z kim przeprowadzisz rozmowę kwalifikacyjną**. Dostępne opcje to **Wszyscy kandydaci**, **Zewnętrzni kandydaci** i **Wewnętrzni kandydaci**. Na przykład, jeśli chcesz pominąć wewnętrznych kandydatów w pierwszym cyklu rozmów kwalifikacyjnych, ustaw pole **Z kim przeprowadzisz rozmowę kwalifikacyjną** jako **Zewnętrzni kandydaci**.

@@ -1,7 +1,7 @@
 ---
 title: Rozliczenie płatności częściowej dostawcy, która ma wiele okresów rabatu
 description: Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele częściowych płatności do dostawcy oferującego wiele różnych rabatów gotówkowych.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c697d20bcbe6ab8f2bc38c03b181104db1f36838
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 84f8721c3bea232b7930e174eaf43ad550dd8ab6
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "357963"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "897070"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Rozliczenie płatności częściowej dostawcy, która ma wiele okresów rabatu
 

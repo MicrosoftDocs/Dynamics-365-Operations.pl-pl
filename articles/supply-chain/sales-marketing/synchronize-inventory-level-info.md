@@ -3,7 +3,7 @@ title: Synchronizowanie informacji poziomu zapasów między aplikacjami Finance 
 description: Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania danych poziomu zapasów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b81694f1ed56d8542de46203ac5faf5fae2b6645
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b2bdf1ca6f6ae43cd85c8a1353ee8305052761d
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356790"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842563"
 ---
 # <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Synchronizowanie informacji na poziomie zapasów z rozwiązania Finance and Operations do rozwiązania Field Service 
 
@@ -38,13 +38,13 @@ Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używa
 Poniższy szablon i podstawowe zadania są używane do synchronizowania poziomów dostępnych zapasów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
 
 **Mapowanie szablonu w integracji danych**
-- Zapasy produktu (Finance and Operations do Field Service)
+- Zapasy produktu (z Fin and Ops do Field Service)
   
 **Zadani w projekcie integracji danych**
 - Zapasy produktu
 
 Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchronizować poziomy zapasów:
-- Magazyny (Finance and Operations do Field Service) 
+- Magazyny (z Fin and Ops do Field Service) 
 - Produkty Field Service z jednostką magazynową (Finance and Operations do Sales) 
 
 ## <a name="entity-set"></a>Zestaw jednostek
@@ -80,6 +80,6 @@ Można zastosować filtry za pomocą funkcji Zaawansowane zapytanie i filtrowani
 
 ## <a name="template-mapping-in-data-integration"></a>Mapowanie szablonu w integracji danych
 
-### <a name="product-inventory-finance-and-operations-to-field-service-product-inventory"></a>Zapasy produktu (Finance and Operations do Field Service): Zapasy produktu
+### <a name="product-inventory-fin-and-ops-to-field-service-product-inventory"></a>Zapasy produktu (Finance and Operations do Field Service): Zapasy produktu
 
 [![Mapowanie szablonu w integracji danych](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

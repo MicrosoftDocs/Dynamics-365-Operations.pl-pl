@@ -3,7 +3,7 @@ title: Marszruty i operacje
 description: Ten temat zawiera informacje o marszrutach i operacjach.
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 417fd960a43ad3fd023ea0c4a17be735b69743de
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
+ms.sourcegitcommit: dc90d56050d7353930d048476451542cce147e37
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333353"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "850675"
 ---
 # <a name="routes-and-operations"></a>Marszruty i operacje
 
@@ -57,13 +57,12 @@ Jeśli w oknie Parametry kontroli produkcji zostanie włączona obsługa tylko p
 
 Jeśli w oknie Parametry kontroli produkcji włączysz obsługę bardziej złożonych marszrut sieciowych, można definiować marszruty mające wiele punktów początkowych oraz operacje, które mogą być wykonywane równolegle.  
 
-[![Marszruta sieciowa](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Marszruty sieciowe](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
-**Uwagi:**
-
--   Każda operacja może mieć tylko jedną operację następującą, a cała marszruta musi się kończyć w jednej operacji.
--   Nie ma żadnej gwarancji, że wiele operacji mających tę samą operację następującą (na przykład operacje 30 i 40 na wcześniejszej ilustracji) będą rzeczywiście wykonywane równolegle. Dostępność i zdolności produkcyjne zasobów mogą nakładać ograniczenia na sposób planowania operacji.
--   Nie można używać wartości 0 (zero) jako numeru operacji. Ten numer jest zarezerwowany i służy do określania, że ostatnia operacja w marszrucie ma żadnej operacji następującej.
+> [!NOTE]
+> -   Każda operacja może mieć tylko jedną operację następującą, a cała marszruta musi się kończyć w jednej operacji.
+> -   Nie ma żadnej gwarancji, że wiele operacji mających tę samą operację następującą (na przykład operacje 30 i 40 na wcześniejszej ilustracji) będą rzeczywiście wykonywane równolegle. Dostępność i zdolności produkcyjne zasobów mogą nakładać ograniczenia na sposób planowania operacji.
+> -   Nie można używać wartości 0 (zero) jako numeru operacji. Ten numer jest zarezerwowany i służy do określania, że ostatnia operacja w marszrucie ma żadnej operacji następującej.
 
 ### <a name="parallel-operations"></a>Operacje równoległe
 
@@ -122,7 +121,8 @@ Można również określić, że relacja operacji jest specyficzna dla oddziału
 
 Relacje operacji dają dużą elastyczność podczas definiowania marszrut. Ponadto możliwość definiowania właściwości domyślnych pomaga zmniejszyć ilość danych głównych, które należy przechowywać. Jednak ta elastyczność oznacza również, że trzeba mieć na uwadze kontekst, w którym jest modyfikowana relacja operacji.  
 
-**Uwaga:** Ponieważ właściwości operacyjne są przechowywane w relacjach operacji dla poszczególnych operacji z podziałem na marszruty, wszystkie wystąpienia tej samej operacji (na przykład Montaż) mają taki sam czas przezbrajania, czasu wykonywania, zapotrzebowania na zasoby i tak dalej. W związku z tym jeśli dwa wystąpienia operacji muszą występować w tej samej marszrucie, ale mają różne czasy wykonywania, należy utworzyć dwie odrębne operacje, takie jak Montaż1 i Montaż2.
+> [!NOTE]
+> Uwaga: Ponieważ właściwości operacyjne są przechowywane w relacjach operacji dla poszczególnych operacji z podziałem na marszruty, wszystkie wystąpienia tej samej operacji (na przykład Montaż) mają taki sam czas przezbrajania, czasu wykonywania, zapotrzebowania na zasoby i tak dalej. W związku z tym jeśli dwa wystąpienia operacji muszą występować w tej samej marszrucie, ale mają różne czasy wykonywania, należy utworzyć dwie odrębne operacje, takie jak Montaż1 i Montaż2.
 
 ### <a name="modifying-product-specific-routes"></a>Modyfikowanie marszrut specyficznych dla produktów
 
@@ -132,7 +132,8 @@ Na stronie **Marszruta** można zmodyfikować właściwości operacyjnych operac
 
 Można także ręcznie utworzyć operację specyficzną dla marszruty i zwolnionego produktu za pomocą funkcji **Kopiuj i edytuj relację**.  
 
-**Uwaga:** Jeśli dodasz nową operację do marszruty na stronie **Marszruta**, relacja operacji zostanie utworzona tylko dla bieżącego zwolnionego produktu. Dlatego jeśli marszruta jest również używana do wytwarzania innych zwolnionych produktów, nie będzie istniała żadna relacja operacji mająca zastosowanie do tych zwolnionych produktów i marszruty nie będzie można już używać dla tych zwolnionych produktów.
+> [!NOTE]
+> Jeśli dodasz nową operację do marszruty na stronie **Marszruta**, relacja operacji zostanie utworzona tylko dla bieżącego zwolnionego produktu. Dlatego jeśli marszruta jest również używana do wytwarzania innych zwolnionych produktów, nie będzie istniała żadna relacja operacji mająca zastosowanie do tych zwolnionych produktów i marszruty nie będzie można już używać dla tych zwolnionych produktów.
 
 ### <a name="maintaining-operation-relations-per-route"></a>Obsługa relacji operacji w marszrucie
 
@@ -228,17 +229,32 @@ Jeśli w ramach zapotrzebowania na zasoby dla operacji nie określisz zasobu ope
 -   **Partia** — Wielkość partii jest obliczana przy użyciu informacji z relacji operacji. Liczbę partii, i w związku z tym czas procesu, można następnie obliczyć na podstawie ilości zamówienia.
 -   **Partia zasobów** — Ta opcja zasadniczo działa tak samo, jak opcja **Partia**. Jednak obliczanie obejmuje pole **Wielkość partii** z zasobu operacyjnego. W związku z tym czas jest zależny od zasobu.
 
+### <a name="set-up-route-groups"></a>Ustawianie grup marszrut
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+Można zdefiniować grupy marszrut i ustawienia dotyczące marszruty oraz typów zadań w obszarze **kontrola produkcji > Ustawienia > marszruty > grupy marszrut**. Dla każdego typu marszruty/zadania grupy marszruty można zaznaczyć lub wyczyścić następujące opcje:
 
-[Listy składowe (BOM) i formuły](bill-of-material-bom.md)
+- **Aktywacja** — Wybierz tę opcję, aby włączyć obliczenia i planowanie dla wybranego typu zadania i otrzymywać informacje zwrotne podczas uruchamiania planowania zadań. Należy wybrać tę opcję, aby włączyć typ zadania, a następnie trzeba wybrać pozostałe opcje dla tego typu zadania. Jeśli aktywacja nie jest zaznaczona, tego typu zadania nie zostaną włączone, bez względu na wybór innych opcji. 
+- **Zarządzanie zadaniem** — Wybierz tę opcję, aby uwzględnić typ zadania w zarządzaniu zadaniami, gdy uruchamiasz planowanie zadań. 
+- **Czas pracy** — Wybierz tę opcję, aby zaplanować typ zadania według kalendarza czasu pracy zdefiniowanego dla zasobu operacyjnego, w przeciwnym razie będzie używany kalendarz gregoriański. Czas pracy można planować według kalendarza gregoriańskiego lub zdefiniowanego kalendarza czasu pracy. Wybranie tej opcji sprawia, że planowanie jest oparte zdefiniowanym kalendarzu czasu pracy. Ponadto zadanie danego typu jest planowane od północy dnia zdefiniowanego jako data rozpoczęcia zadania.
+- **Zdolności produkcyjne** — Wybierz tę opcję, aby zarezerwować zdolności produkcyjne dla typu zadania, gdy uruchamiasz planowanie zadań. Jeśli zostanie wybrana ta opcja, zdolności produkcyjne są rezerwowane po uruchomieniu planowania dla wybranego typu zadania. Dzięki temu można zobaczyć, które typy zadań w poszczególnych grupach marszruty używają zasobów operacyjnych. Na przykład w sytuacji, gdy zasoby suszące, są wąskimi gardłami, te zasoby muszą być określone jako wąskie gardła. Operacje suszenia, które są przypisane do zadań typu Czas oczekiwania będą rezerwowały zasoby suszące. 
 
-[Kategorie kosztów używane podczas wyboru trasy produkcji](../cost-management/cost-categories-used-production-routings.md)
+Dla każdego typu zadania należy najpierw włączyć lub wyłączyć go. W przypadku wyłączenia żadne z pozostałych konfiguracji (zarządzania zadaniami, czasu pracy i zdolności produkcyjnych) nie będą brane pod uwagę, ponieważ typ zadania nie będzie aktywny. 
 
-[Możliwości zasobu](resource-capabilities.md)
+Wśród typów zadań można znaleźć Nakładanie. Nakładanie pozwala na wykonywanie różnych zadań w tym samym czasie. Gdy zadania nakładają się, zasoby mogą być używane, ale nie mogą być zarezerwowane dla określonych zadań.
+Z tego względu po aktywacji Nakładania pozostałe ustawienia (zarządzanie zadaniem, czas pracy i zdolności produkcyjne) nie będą miały żadnego wpływu na grupę marszruty. 
 
-[Omówienie podpisów elektronicznych](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+> [!NOTE]
+> Po uaktualnieniu wersji, może wystąpić następujący błąd: **Podczas wywoływania aparatu planowania wystąpił błąd środowiska CLR**. Jeśli wystąpi ten błąd, należy przejść na stronę **grupy marszruty** i dla wszystkich marszrut, dla których zostało aktywowane **Nakładanie**, należy usunąć zaznaczenie opcji **zarządzanie zadaniem**, **czas pracy** i **zdolności produkcyjne**. 
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+- [Listy składowe (BOM) i formuły](bill-of-material-bom.md)
+
+- [Kategorie kosztów używane podczas wyboru trasy produkcji](../cost-management/cost-categories-used-production-routings.md)
+
+- [Możliwości zasobu](resource-capabilities.md)
+
+- [Omówienie podpisów elektronicznych](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 

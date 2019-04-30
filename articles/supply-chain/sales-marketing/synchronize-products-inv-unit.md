@@ -3,7 +3,7 @@ title: Synchronizowanie produktów z jednostką zapasów między aplikacjami Fin
 description: Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania produktów z jednostką zapasów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 8e421be79fde6103be6344040b6ae6cda0626c5a
-ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
+ms.openlocfilehash: 080672b9a6acd9fd6137580b5b7e14d12cfccf19
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "836309"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842469"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Synchronizowanie produktów z jednostką magazynową z rozwiązania Finance and Operations do rozwiązania Field Service
 
@@ -38,7 +38,7 @@ Szablon **Produkty Field Service z jednostką magazynową (Finance and Operation
 
 W tym temacie opisano tylko różnice między dwoma szablonami: 
 - **Produkty Field Service z jednostką magazynową (Finance and Operations do Sales)**
-- **Produkty Field Service (z rozwiązania Finance and Operations do rozwiązania Field Service)** 
+- **Produkty programu Field Service (z Fin and Ops do Field Service)** 
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 
@@ -60,6 +60,6 @@ INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryuni
 
 Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja danych.
 
-### <a name="field-service-products-with-inventory-unit-finance-and-operations-to-field-service-products"></a>Produkty Field Service z jednostką magazynową (Finance and Operations do Field Service): Produkty
+### <a name="field-service-products-with-inventory-unit-fin-and-ops-to-field-service-products"></a>Produkty Field Service z jednostką magazynową (Finance and Operations do Field Service): Produkty
 
 [![Mapowanie szablonu w integracji danych](./media/FSProduct1.png)](./media/FSProduct1.png)

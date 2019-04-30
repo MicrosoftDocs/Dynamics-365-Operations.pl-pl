@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z aplikacji LinkedIn Recruiter
 description: Ten temat zawiera informacje o używaniu funkcji uczenia maszynowego do generowania rekomendacji funkcji i kandydatów na funkcje.
-author: josaw
+author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
@@ -10,31 +10,31 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4ac7a302e5bf589beb2b560b0ff5818e90c67139
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305739"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859581"
 ---
 # <a name="sourcing-with-linkedin-recruiter"></a>Korzystanie z aplikacji LinkedIn Recruiter
 [!include[banner](../includes/banner.md)]
 
-LinkedIn to największa na świecie baza danych pracowników i osób szukających pracy oraz często główny system, którego osoby rekrutujące używają do wyszukiwania, komunikowania się i pozyskiwania kandydatów na funkcje, które chcą obsadzić. Integracja aplikacji LinkedIn Recruiter z aplikacją Dynamics 365 for Talent: Attract ułatwia użytkownikom zatrudnianie osób oraz synchronizowanie danych między oboma systemami.
+LinkedIn to największa na świecie baza danych pracowników i osób szukających pracy oraz często główny system, którego osoby rekrutujące używają do wyszukiwania, komunikowania się i pozyskiwania kandydatów na funkcje, które chcą obsadzić.  Integracja aplikacji LinkedIn Recruiter z aplikacją Dynamics 365 for Talent: Attract ułatwia użytkownikom zatrudnianie osób oraz synchronizowanie danych między oboma systemami.
 
 > [!NOTE]
 > Aby można było korzystać z integracji aplikacji LinkedIn Recruiter z aplikacją Attract, trzeba mieć dodatek kompleksowej obsługi rekrutacji oraz wykupione stanowiska w aplikacji LinkedIn Recruiter.
 
-## <a name="set-up-linkedin-recruiter-with-attract"></a>Konfigurowanie współdziałania aplikacji LinkedIn Recruiter z aplikacją Attract 
+## <a name="set-up-linkedin-recruiter-with-attract"></a>Ustawianie LinkedIn Recruiter z Attract 
 
 Zanim będzie można używać funkcji aplikacji LinkedIn Recruiter, należy skonfigurować dostęp na poziomie umowy lub firmy w wystąpieniu aplikacji Attract. W celu przeprowadzenia procesu konfiguracji należy współpracować z użytkownikiem, który jest administratorem umowy na usługę LinkedIn Recruiter. Aby skonfigurować współdziałanie aplikacji LinkedIn Recruiter i Attract, wykonaj poniższe kroki.
 
@@ -50,7 +50,7 @@ Zanim będzie można używać funkcji aplikacji LinkedIn Recruiter, należy skon
 
 5.  Widżet serwisu LinkedIn załaduje teraz Twoje ustawienia administratora z wyświetloną listą integracji. W obszarze **Połącz z systemem Recruiter** kliknij przycisk **Poproś**.
 
-[![Widok administratora aplikacji Attract przy wnioskowaniu o integrację z aplikacją LinkedIn Recruiter](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
+[![Widok administratora aplikacji Attract przy żądaniu integracji z aplikacją LinkedIn Recruiter](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
 
 6.  Po wysłaniu prośby o integrację z aplikacji Attract aplikacja będzie wyświetlana jako **Gotowa do współpracy** i można ją włączyć z okna **Ustawienia administratora aplikacji Recruiter**. Jeśli na tej stronie zobaczysz przycisk **Powiadom partnera**, poczekaj kilka sekund, kliknij przycisk **Powiadom partnera**, a następnie odśwież stronę. Napis powinien się zmienić na **Gotowa do współpracy**.
 
@@ -66,15 +66,15 @@ System Attract będzie wyświetlony z kilkoma opcjami, które można włączyć.
 
 9. Jeśli chcesz włączyć tylko funkcję eksportu jednym kliknięciem dla **wskaźnika danych z systemu ATS** i **widżetu profilu danych z systemu ATS**, wybierz opcję **Company-level access** (Dostęp na poziomie firmy). Aby włączyć wszystkie funkcje dostępu na poziomie firmy oraz dostęp do historii wiadomości InMail, historii notatek i profilu szczątkowego InMail, wybierz opcję **Contract-level access** (Dostęp na poziomie umowy).
 
-10. Włącz żądany poziom dostępu w ustawieniach **administratora systemu ATS** w aplikacji LinkedIn Recruiter.
+10. Włącz żądany poziom dostępu w ustawieniach **Admin-ATS** w aplikacji LinkedIn Recruiter.
 
 [![Włączanie integracji z aplikacją Attract z widoku administratora aplikacji LinkedIn Recruiter](./media/EnableRSC.png)](./media/EnableRSC.png)
 
 12. Wróć do okna ustawień administratora aplikacji Attract jako administrator aplikacji Attract i kliknij kartę **Integracja z serwisem LinkedIn**. Powinien być teraz widoczny załadowany widżet serwisu LinkedIn z podpisem **Włączone** oraz włączonym wybranym poziomem dostępu.
 
-[![Integracja z aplikacją LinkedIn Recruiter zakończona](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
+[![LinkedIn Recruiter: Składniki integracyjne](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
 
-## <a name="using-linkedin-recruiter-capabilities"></a>Używanie funkcji aplikacji LinkedIn Recruiter
+## <a name="using-linkedin-recruiter-capabilities"></a>Używanie funkcji LinkedIn Recruiter
 
 Gdy administrator aplikacji Attract włączy funkcje aplikacji LinkedIn Recruiter, będą one dostępne dla menedżerów zatrudniających i osób rekrutujących. Aby korzystać z tych funkcji, podłącz konto serwisu LinkedIn w obszarze **Ustawienia użytkownika**. Połączenie ustawień administratora i użytkownika spowoduje udostępnienie kilku funkcji.
 
@@ -126,7 +126,7 @@ W aplikacji LinkedIn Recruiter można śledzić, czy kandydat aplikował na inne
 
 ### <a name="inmail-history"></a>Historia InMail
 
-Historia InMail w serwisie LinkedIn jest aktywna przy dostępie na poziomie umowy do usługi LinkedIn Recruiter. Po włączeniu tej opcji można przeglądać całą historię wiadomości InMail wymienianych z kandydatem. Można także sprawdzić, kto jeszcze z organizacji komunikował się z kandydatem za pomocą wiadomości InMail, jednak nie można wyświetlić treści tych wiadomości.
+Historia LinkedIn InMail jest aktywna przy dostępie na poziomie umowy do usługi LinkedIn Recruiter. Po włączeniu tej opcji można przeglądać całą historię wiadomości InMail wymienianych z kandydatem. Można także sprawdzić, kto jeszcze z organizacji komunikował się z kandydatem za pomocą wiadomości InMail, jednak nie można wyświetlić treści tych wiadomości.
 
 Aby wyświetlić historię wiadomości InMail, przejdź do profilu kandydata, przejdź do karty **LinkedIn** i przewiń do dołu strony. W przypadku rozmowy z kandydatami można przejrzeć historię InMail. Wiadomości InMail będą synchronizowane z aplikacją Attract co kilka godzin.
 

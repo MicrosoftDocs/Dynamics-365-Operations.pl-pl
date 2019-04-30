@@ -3,7 +3,7 @@ title: Synchronizowanie listy projekty między aplikacjami Finance and Operation
 description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania projektów z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b5aeb4c3925994d7488e8e113e88b9d06ee6b350
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ea5c188891bb97ba73d2d022e86bbff50897381b
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312515"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842611"
 ---
 # <a name="synchronize-project-list-from-finance-and-operations-to-field-service"></a>Synchronizowanie listy projektów z rozwiązania Finance and Operations do rozwiązania Field Service
 
@@ -38,13 +38,13 @@ W tym temacie omówiono szablony i podstawowe zadania, które są używane do sy
 Poniższy szablon i podstawowe zadania są używane do synchronizowania projektów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
 
 **Mapowanie szablonu w integracji danych**
-- Projekty (Finance and Operations do Field Service)
+- Projekty (z Fin and Ops do Field Service)
 
 **Zadani w projekcie integracji danych**
 - Projekty
 
 Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchronizować listę projektu:
-- Konta (Sales do Finance and Operations) 
+- Produkty (z Sales do Fin and Ops) 
 
 ## <a name="entity-set"></a>Zestaw jednostek
 | Field Service           | Finance and Operations  |
@@ -64,6 +64,6 @@ Włączanie śledzenia zmian w projektach jednostek danych
 ## <a name="template-mapping-in-data-integration"></a>Mapowanie szablonu w integracji danych
 
 
-### <a name="projects-finance-and-operations-to-field-service-projects"></a>Projekty (Finance and Operations do Field Service): Projekty
+### <a name="projects-fin-and-ops-to-field-service-projects"></a>Projekty (z Fin and Ops do Field Service): Projekty
 
 [![Mapowanie szablonu w integracji danych](./media/FSProject1.png)](./media/FSProject1.png)

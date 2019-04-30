@@ -1,7 +1,7 @@
 ---
 title: Rozprowadzanie i planowanie kwestionariuszy
 description: W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eafcb047117eab73fddbd93c4c1d0aafb0023ebd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 37c9392263e8c113c541b64e8e79853520a13d11
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305749"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "857968"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Rozprowadzanie i planowanie kwestionariuszy
 

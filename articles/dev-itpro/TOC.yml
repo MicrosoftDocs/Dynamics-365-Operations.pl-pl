@@ -276,11 +276,11 @@ items:
         href: extensibility/intrusive-customizations.md
       - name: Model rozszerzenia klasy
         href: extensibility/class-extensions.md
-      - name: Rozszerzenie klasy metodą pakowania i podporządkowania
+      - name: Rozszerzanie klas za pomocą umieszczania metod w otoce oraz łańcucha poleceń
         href: extensibility/method-wrapping-coc.md
-      - name: Wytyczne dotyczące nazewnictwa rozszerzeń modeli
+      - name: Wytyczne dotyczące nazewnictwa rozszerzeń
         href: extensibility/naming-guidelines-extensions.md
-      - name: Łagodzenie ograniczeń w modelu w celu zmiany warstw w rozszerzenia
+      - name: Łagodzenie ograniczeń modelu w celu refaktoryzacji nakładania na rozszerzenia
         href: extensibility/refactoring-over-layering.md
     - name: Tworzenie rozszerzeń
       items:
@@ -356,7 +356,7 @@ items:
     items:
     - name: Śledzenie danych za pomocą programu Trace Parser
       href: perf-test/trace-trace-tutorial.md
-    - name: Zestaw Performance SDK i testowanie dla wielu użytkowników za pomocą Visual Studio Online
+    - name: Zestaw Performance SDK i testowanie dla wielu użytkowników za pomocą usługi Visual Studio Online
       href: perf-test/perfsdk-tutorial.md
     - name: Zestaw Performance SDK i testowanie dla wielu użytkowników w środowiskach lokalnych
       href: perf-test/perfsdk-tutorial-lbd.md
@@ -370,10 +370,32 @@ items:
       href: perf-test/testing-validation.md
     - name: Projekty testowe w Visual Studio
       href: perf-test/testing-support.md
-    - name: Wdrażanie topologii wspierających ciągłą kompilację i automatyzację testów
+    - name: Wdrażanie topologii obsługujących ciągłą kompilację i automatyzację testów
       href: perf-test/continuous-build-test-automation.md
-    - name: Filtrowanie SysTest przy użyciu atrybutów klasy i metody
+    - name: Filtrowanie w środowisku SysTest przy użyciu atrybutów klas i metod
       href: perf-test/systest-filtering.md
+    - name: Biblioteka testów akceptacji
+      href: perf-test/acceptance-test-library.md
+    - name: Koncepcje dotyczące nawigacji
+      href: perf-test/concepts-navigation.md
+    - name: Metody testowania danych
+      href: perf-test/test-data-methods.md
+    - name: Jednostki w bibliotece testów akceptacji
+      href: perf-test/concepts-entities.md
+    - name: Polecenia biblioteki testów akceptacji
+      href: perf-test/concepts-commands.md
+    - name: Klasy kreatorów w bibliotece testów akceptacji
+      href: perf-test/concepts-creators.md
+    - name: Zapytania w bibliotece testów akceptacji
+      href: perf-test/concepts-queries.md
+    - name: Klasy specyfikacji
+      href: perf-test/concepts-specifications.md
+    - name: Kreator generowania kodu biblioteki testów akceptacji
+      href: perf-test/code-generation-wizard.md
+    - name: Najlepsze rozwiązania dotyczące biblioteki testów akceptacji
+      href: perf-test/atl-best-practices.md
+    - name: Często zadawane pytania
+      href: perf-test/atl-faq.md
   - name: Obowiązywanie dat
     href: dev-tools/date-effectivity.md
   - name: Licencjonowanie dostawców ISV
@@ -395,7 +417,7 @@ items:
       href: user-interface/build-workspace.md
   - name: Formularze
     items:
-    - name: Koncepcje nawigacyjne
+    - name: Koncepcje dotyczące nawigacji
       href: user-interface/page-navigation.md
     - name: Układ strony na kliencie sieci web
       href: user-interface/page-layout.md
@@ -451,6 +473,8 @@ items:
       href: user-interface/control-checklist.md
   - name: Komunikaty
     items:
+    - name: Objaśnienia funkcji
+      href: user-interface/feature-callouts.md
     - name: Okna dialogowe Suwak i Pole komunikatu
       href: user-interface/slider-messagebox.md
     - name: Interfejs API Centrum komunikatów, paska komunikatów i szczegółów komunikatów
@@ -920,7 +944,7 @@ items:
       href: deployment/apply-deployable-package-system.md
     - name: Stosowanie aktualizacji i rozszerzeń do hostowanych w chmurze składników rozwiązania Retail
       href: deployment/Update-retail-channel.md
-    - name: Inicjowanie hostowanych w chmurze składników kanału rozwiązania Retail
+    - name: Inicjowanie rozwiązania Retail Cloud Scale Unit
       href: deployment/Initialize-Retail-Channels.md
   - name: Wdrożenie lokalne
     href: deployment/on-premises-deployment-landing-page.md
@@ -1044,7 +1068,7 @@ items:
     items:
     - name: Proces przechodzenia do najnowszej aktualizacji
       href: migration-upgrade/upgrade-latest-update.md
-    - name: Aktualizowanie środowisk z wersji 8.0 do wersji 8.1
+    - name: Aktualizowanie środowisk z wersji 8.0 do wersji 8.1.X/10.X
       href: migration-upgrade/appupdate-80-81.md
     - name: Zasady dotyczące cyklu życia oprogramowania i wydania w chmurze
       href: migration-upgrade/versions-update-policy.md
@@ -1133,6 +1157,12 @@ items:
       href: sysadmin/runby.md
     - name: Zadanie wsadowe do obsługi defragmentacji indeksu SQL
       href: sysadmin/batch-job-SQL-defragmentation.md
+    - name: Konfigurowanie alertów dotyczących zadań wsadowych
+      href: sysadmin/alerts.md
+    - name: Rozszerzone formularze zadań wsadowych
+      href: sysadmin/enhanced-forms.md
+    - name: Czyszczenie historii zadań wsadowych
+      href: sysadmin/batch-history-cleanup.md
   - name: Doradca optymalizacji
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1227,10 +1257,12 @@ items:
       href: database/database-point-in-time-restore.md
   - name: Samouczki
     items:
-    - name: Odśwież w celach szkoleniowych
+    - name: Odświeżanie w celach szkoleniowych
       href: database/dbmovement-scenario-general-refresh.md
-    - name: Debugowanie i diagnostyka
+    - name: Debugowanie kopii produkcyjnej bazy danych
       href: database/dbmovement-scenario-debugdiag.md
+    - name: Eksportowanie kopii standardowej bazy danych testów akceptacji użytkownika (UAT)
+      href: database/dbmovement-scenario-exportuat.md
     - name: Promowanie złotej konfiguracji
       href: database/dbmovement-scenario-goldenconfig.md
     - name: Testy destrukcyjne
@@ -1251,9 +1283,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: Zarządzanie środowiskiem pomocy technicznej rozwiązania Finance and Operations
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
-ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
+ms.openlocfilehash: 93081e4ccc64b68ae8f5cb3aa0f0c499bc1a426b
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "773809"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "976019"

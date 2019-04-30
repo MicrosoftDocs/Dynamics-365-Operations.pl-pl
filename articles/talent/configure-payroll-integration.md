@@ -1,26 +1,26 @@
 ---
 title: Konfigurowanie integracji listy płac między rozwiązaniami Talent i Dayforce
 description: W tym temacie wyjaśniono sposób konfigurowania integracji między programami Microsoft Dynamics 365 for Talent i Ceridian Dayforce, dzięki czemu można przetwarzać sekcję płatności.
-author: jcart1106
+author: andreabichsel
 manager: AnnBe
-ms.date: 07/10/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fcddf82cffb9f0ba94b83eb21809b810585ebc9e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 9a88bf61dbb12520b555ceb7363b1c646d95386e
+ms.sourcegitcommit: 204e4554e409c39fbbf7b273ad138ce2809931a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305763"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "898451"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurowanie integracji listy płac między rozwiązaniami Talent i Dayforce
 
@@ -358,7 +358,10 @@ Jeśli generujesz płace dla pracowników na terenie Stanów Zjednoczonych i Kan
 - Dla stanowisk muszą być określone działy.
 - Centra kosztów muszą być ustawione jako wymiary finansowe i muszą być pierwszym elementem w ciągu domyślnych wymiarów finansowych.
 
-### <a name="job-types"></a>Typy stanowisk
+> [!NOTE] 
+> Można skonfigurować Talent tak, aby Stanowiska umożliwiały określenie działu. Aby to zrobić, przejdź do **stanowisk udostępnionych zasobów ludzkich > Stanowisk > wymagają działów stanowisk**. Zaleca się, aby to ustawienie zostało wymuszone dla integracji.
+
+### <a name="job-types"></a>Typy funkcji
 
 Typy funkcji służą do grupowanie podobnych funkcji w kategorie. Typy funkcji są wymagane w celu przetwarzania listy płac w Stanach Zjednoczonych i Kanadzie. Przykłady typów funkcji to zatrudnienie w pełnym i niepełnym wymiarze czasu albo wynagrodzenie za etat i za godziny. Typy funkcji są mapowane do systemu Dayforce jako typy płac, które wskazują, czy pracownik jest na stawce godzinowej, czy stałej pensji.
 

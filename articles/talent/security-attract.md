@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie zabezpieczeniami i rolami w aplikacji Attract
 description: Ten temat zawiera informacje na temat zabezpieczeń na podstawie ról w aplikacji Microsoft Dynamics 365 for Talent - Attract.
-author: josaw1
+author: andreabichsel
 manager: AnnBe
 ms.date: 03/08/2019
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: josaw1
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 9c0f9d3304b1b15aa84fd1a296267d606bf9c59d
+ms.sourcegitcommit: 1653d1e28d02f8a9a4bea8df562ac98d7a350ed1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789704"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "993698"
 ---
 # <a name="security-and-role-management-in-attract"></a>Zarządzanie zabezpieczeniami i rolami w aplikacji Attract
 
@@ -70,6 +70,16 @@ Każdy użytkownik, który ma konto w usłudze Microsoft Azure Active Directory 
 
 Użytkownicy przypisani do roli Tylko do odczytu mają dostęp tylko do odczytu do wszystkich danych w środowisku Attract. Nie mogą jednak tworzyć ani edytować żadnych danych.
 
+## <a name="find-out-which-roles-you-have"></a>Dowiedz się, które role masz
+
+1.  W Attract kliknij znak zapytania (**?**) w prawym górnym rogu strony.
+
+2.  Kliknij przycisk **Informacje**.
+
+    W wyświetlonym oknie zobaczysz wszystkie role, jakie masz w Attract:
+
+    ![Wyświetl typ licencji użytkownika Attract](media/attract-license-types.png)
+    
 ## <a name="delegated-roles"></a>Role delegowane
 
 Dla każdego stanowiska, z którego powodu znajdują się w zespole rekrutacyjnym, osoby rekrutujące i menedżerowie zatrudniający mogą wyznaczyć jednego lub kilku swoich delegatów (pełnomocników, użytkowników delegowanych). Nie mogą jednak wyznaczać pełnomocników innych osób w zespole rekrutacyjnym.

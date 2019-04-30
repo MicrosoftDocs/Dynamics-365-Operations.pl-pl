@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7d2866923efd7f115ad5290f35ed4fcac5e47573
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c2d209cac52665053b664a93bfb6c35e171b0948
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305716"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949858"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (14 grudnia 2018 r.)
 
@@ -65,7 +65,7 @@ Po wprowadzeniu tej zmiany dni przestępne są teraz obsługiwane w Power BI.
 
 ### <a name="integration-between-core-hr-and-attract"></a>Integracja między Core HR i Attract
 
-Wprowadzono zmianę w celu aktualizacji integracji między Core HR and Attract w związku z kandydatami do zatrudnienia. Aby kandydaci do zatrudnienia byli widoczni w przestrzeni roboczej **Zarządzanie personelem**, używane są następujące obiekty CDS for Apps (CDS 2.0):
+Wprowadzono zmianę w celu aktualizacji integracji między Core HR and Attract w związku z kandydatami do zatrudnienia. Aby kandydaci do zatrudnienia byli widoczni w przestrzeni roboczej **Zarządzanie personelem**, używane są następujące obiekty Common Data Service:
 
 Podanie o pracę
 - Przyczyna stanu musi być ustawiona do Oferta zaakceptowana
@@ -139,7 +139,7 @@ Zadanie Pracownicy na pracownika musi mieć zaktualizowane następujące mapowan
 
 Przekształcenie pola płci również musi zostać zaktualizowane. Wybierz typ mapy **fn** (funkcja) dla płci i zaktualizuj następujące mapowania wartości.
 
-| Wartość CDS                   | Wartość Finance and Operations                     |
+| wartość Common Data Service                   | Wartość Finance and Operations                     |
 | ----------------------------|--------------------------------------------------|
 | 75440000                    | Mężczyzna                                             |
 | 75440001                    | Kobieta                                           |

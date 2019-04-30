@@ -3,7 +3,7 @@ title: Aktualizacje wymagane przepisami prawa
 description: Ten temat zawiera listę planowanych i udostępnionych aktualizacji wymaganych przepisami prawa dla programu Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/19/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3beeb77819661de3f6b55766a1f8a5bd1fe023ba
-ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
+ms.openlocfilehash: 0bd72bb5bebed84c092142b2b18f8fbbc3d4f711
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "832108"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992843"
 ---
 # <a name="regulatory-updates"></a>Aktualizacje wymagane przepisami prawa
 
@@ -28,12 +28,18 @@ ms.locfileid: "832108"
 
 W tym temacie opisano aktualizacji wymaganych przepisami prawa dla wersji w lokalizacjach obsługiwanych przez program Microsoft Dynamics 365 for Finance and Operations. Harmonogram dostarczania może się zmienić i planowane funkcje mogą się zmienić lub mogą nie zostać udostępnione. Aby uzyskać więcej informacji, przeczytaj [zasady Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Aktualizacje wymagane przepisami prawa różnią od funkcji zgodności z przepisami. Aby dowiedzieć się o planowanych lub udostępnionych funkcjach zgodności z przepisami, odwołaj się do następujących zasobów.
+Aktualizacje wymagane przepisami prawa to funkcje implementowane w celu zachowania zgodności z nowymi lub zmienionymi przepisami w danym kraju. Aby dowiedzieć się o innych planowanych lub udostępnionych funkcjach specyficznych dla kraju, odwołaj się do następujących zasobów.
 
-- [Informacje o werfsji Dynamics 365 i Power Platform](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Dynamics 365 i informacje o wersji Power Platform ](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Nowości w programie Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
 
-Jeżeli miesiąc jest użyty w kolumnie Data, aktualizacja wymagana przepisami prawa powinna zostać udostępniona w ciągu miesiąca. Data dostawy może być dowolną datą w ciągu tego miesiąca, nie koniecznie musi to być pierwszy dzień miesiąca.
+Firma Microsoft dokłada starań w celu wprowadzenia w życie nowych wymagań prawnych możliwie jak najszybciej. Rzeczywista data dostarczenia zależy od daty zawiadomienia o zmianie przepisów, dostępności szczegółów nowych wymagań, dostępności narzędzi do walidacji i rozmiaru oraz stopnia skomplikowania zmiany w prawie. 
+
+Planujemy dostarczać aktualizacje wymagane przepisami prawa w jednej wersji aktualizacji usług udostępnionej w czasie pozwalającym klientom na uaktualnienie ich narzędzi, tak aby wszystko było gotowe w dniu wejścia w życie nowego przepisu (w przypadku zmian przepisów dot. transakcji) lub w terminie składania obowiązkowych raportów (w przypadku zmian prawa dotyczącego sprawozdawczości). Klienci i partnerzy mogą przeglądać nowe aktualizacje przepisów w programie Preview Early Adoption Program (PEAP).
+
+W przypadku późnego ogłoszenia zmian, późnej dostępności szczegółów wymagań lub narzędzi do walidacji, albo w przypadku wyjątkowo obszernych i skomplikowanych zmian może nie być możliwe udostępnienie aktualizacji wymaganej przepisami prawa do dnia udostępnienia ogólnej comiesięcznej aktualizacji. W takich przypadkach aktualizacja wymagana przepisami prawa będzie rozsyłana jako poprawki dla niektórych dostępnych comiesięcznych aktualizacji.
+
+Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych przepisami prawa, zapoznaj się z poniższą tabelą. 
 
 |Planowana data wydania|Wersja wydania|Kraj|Aktualizacje wymagane przepisami prawa|
 |--------------------|---------------|-------|-------|
@@ -47,7 +53,9 @@ Jeżeli miesiąc jest użyty w kolumnie Data, aktualizacja wymagana przepisami p
 |      2019 kwietnia          |   10.0.1      |    Zjednoczone Królestwo     |[Zmiany w przesyłaniu deklaracji VAT (Zamiana podatku na format cyfrowy)](emea-gbr-mtd-vat-integration.md)    |    
 |      2019 kwietnia          |   10.0.1      |    Brazylia     |NF - nowe NT 2018.005         |
 |      2019 kwietnia          |   10.0.1      |    Rosja     |Format deklaracji VAT zmienia się od 2019 r.         |
-|      2019 kwietnia          |   10.0.1      |    Rosja     |Format deklaracji VAT zmienia się od 2019 r. (formaty ksiąg zakupów i sprzedaży)  |
+|      2019 kwietnia          |   10.0.1      |    Rosja     |Format deklaracji VAT zmienia się od 2019 r. (formaty ksiąg zakupów i sprzedaży) 
+|      2019 maja            |   10.0.2      | Brazylia      |   Układ SPED ECD 7   |
+
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 - Wszystkie planowane i udostępnione aktualizacje wymagane przepisami prawa znajdziesz w [wyszukiwarce problemów Lifecycle Service](https://lcs.dynamics.com/Logon/Index) (wymagane logowanie).

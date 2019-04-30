@@ -1,29 +1,29 @@
 ---
 title: Inteligentne rekomendacje
 description: W tym temacie wyjaśniono, jak można wykorzystać aparat uczenia maszynowego do formułowania zaleceń dotyczących funkcji i kandydatów na funkcje.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: fb31b413cfe3cd168bbb12ce6070325ff5f736da
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305797"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896564"
 ---
 # <a name="intelligent-recommendations"></a>Inteligentne rekomendacje
 
@@ -32,8 +32,9 @@ ms.locfileid: "305797"
 Aparat uczenia maszynowego może pomagać osobom rekrutującym i menedżerom zatrudniającym w szybkim identyfikowaniu najlepszych kandydatów na określone stanowiska. Może także pomagać prospektom znajdować stanowiska, które najlepiej pasują do ich profilu i zainteresowań. Wraz z używaniem tych funkcji i przekazywaniem informacji zwrotnych jakość rekomendacji będzie się poprawiać.
 
 > [!NOTE] 
-> - Funkcje inteligentnych rekomendacji są dostępne tylko po zainstalowaniu dodatku kompleksowej obsługi rekrutacji.
-> - Aby włączyć funkcje rekomendowania kandydatów i funkcji, administrator musi w nich włączyć opcje używania wersji zapoznawczych. W Centrum administracyjnym na karcie **Zarządzanie funkcjami**, upewnij się, że opcja **Funkcje w wersji zapoznawczej** jest ustawiona na **Włączone**. Następnie upewnij się, że opcje **Rekomendacja kandydata** i **Rekomendacja funkcji** są ustawione na **Włączone**.
+> - Funkcje inteligentnych rekomendacji są dostępne tylko po zainstalowaniu [dodatku kompleksowej obsługi rekrutacji](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Funkcje wymienione w tym temacie są dostępne w ramach wydania wersji zapoznawczej. Zawartość i funkcje mogą ulec zmianie. Aby użyć tej funkcji, poproś administratora o włączenie jej za pomocą **ustawień administratora** w Attract. Ustaw parametry **Rekomendacja kandydata**, **Rekomendacja funkcji** i **Rekomendacja prospektów** jako **Wł**. Aby uzyskać więcej informacji, zobacz [Dostęp do funkcji w wersji zapoznawczej w aplikacji Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+
 
 ## <a name="candidate-recommendations"></a>Rekomendacje kandydatów
 
@@ -43,4 +44,15 @@ Dla każdego polecanego kandydata można wybrać opcję **Wyświetl kandydata** 
 
 ## <a name="job-recommendations"></a>Rekomendacja funkcji 
 
-Gdy potencjalny pracownik wysyła podanie o pracę z witryny rozwoju kariery, widzi rekomendacje innych wolnych stanowisk w organizacji. Zalecenia te bazują na wcześniejszych zgłoszeniach tego prospekta oraz jego życiorysie lub profilu. W związku z tym rekomendacje funkcji pomagają prospektom szybko identyfikować funkcje, które najlepiej do nich pasują. Rekomendacje funkcji są przedstawiane prospektom, jeśli w witrynie rozwoju kariery są opublikowane oferty na więcej niż dziesięć funkcji. Z poziomu karty rekomendacji prospekci mogą otworzyć szczegóły oferty pracy. Mogą także przekazać swoją opinię o rekomendacji, tak aby poprawić trafność przyszłych zaleceń.
+Gdy potencjalny pracownik wysyła podanie o pracę z witryny rozwoju kariery, Attract rekomenduje inne wolne stanowiska w organizacji. Zalecenia te bazują na wcześniejszych zgłoszeniach oraz życiorysie lub profilu kandydata prospektu. W związku z tym rekomendacje funkcji pomagają prospektom szybko identyfikować funkcje, które najlepiej do nich pasują. Rekomendacje funkcji są przedstawiane prospektom, jeśli w witrynie rozwoju kariery są opublikowane oferty na więcej niż dziesięć funkcji. Z poziomu karty rekomendacji prospekci mogą otworzyć szczegóły oferty pracy. Mogą także przekazać swoją opinię o rekomendacji, tak aby poprawić trafność przyszłych zaleceń.
+
+## <a name="prospect-recommendations"></a>Rekomendacja prospektów 
+
+Gdy nowe stanowisko staje się dostępne, przeszukanie wszystkich kandydatów z przeszłości i całej sieci talentów może zająć dużo czasu. Aby aplikacja Attract mogła w tym pomóc, można używać inteligentnych algorytmów uczenia maszynowego. Oznacza to, że Attract przegląda wszystkich kandydatów i proponuje tych, którzy odpowiadają kryteriom utworzonego stanowiska. Aby wyświetlić te rekomendacje, włącz etap **prospekt** dla stanowiska. W ciągu maksymalnie minuty Attract zeskanuje całą bazę danych kandydatów i wyświetli rekomendacje.
+
+Zalecenia są wyświetlane jako karty na karcie **prospektów** wszystkich stanowisk, które mają włączony etap **prospektu**. Te karty zawierają listy umiejętności znalezionych w profilu prospektu, jak również wszelkie informacje na temat wykształcenia. Jeśli znajdziesz odpowiednią rekomendację, możesz dodać kandydata jako prospekta na dane stanowisko.
+
+> [!NOTE]
+> Jeśli używasz aplikacji Attract od niedawna, musisz zaczekać, aż w bazie pojawi się co najmniej 10 pełnych profili lub życiorysów, aby korzystać z tej funkcji.
+
+Aby uniknąć potencjalnych różnic w rekomendacjach, Attract skanuje tylko profile kandydatów pod kątem umiejętności, kwalifikacji i innych słów kluczowych odpowiadających opisowi stanowiska. Ponadto Attract usuwa z profilu informacje umożliwiające identyfikację kandydata przed dokonaniem oceny.

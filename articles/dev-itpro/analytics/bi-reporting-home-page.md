@@ -3,7 +3,7 @@ title: Strona główna narzędzi analizy biznesowej (BI) i sprawozdawczości
 description: Ten temat odsyła do zasobów zawierających informacje na temat narzędzi do wykonywania analiz biznesowych i raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 03/27/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 372113f019cbce790dcd3e356a14a7bb49b8afd7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: efd96759c5fb50e30d213e9e5d58a22fd77bc7a2
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302727"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902849"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Strona główna narzędzi analizy biznesowej (BI) i sprawozdawczości
 
@@ -32,11 +32,11 @@ Ten temat odsyła do zasobów zawierających informacje na temat narzędzi do wy
 
 ## <a name="get-started"></a>Rozpoczynanie pracy
 - [Dostęp do informacji i raportowanie](information-access-reporting.md)
-- [Informacje dotyczące technologii: opcje raportowania](https://www.youtube.com/watch?v=NzZONjKs5xA) (wideo)
-- [Finance and Operations: Business Intelligence](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (blog)
+- [Informacje dotyczące technologii: opcje raportowania](https://www.youtube.com/watch?v=NzZONjKs5xA) (film)
+- [Blog poświęcony usługom analiz i raportowania w rozwiązaniu Finance and Operations: Power BI](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
 
 ## <a name="analytical-workspaces"></a>Analityczne obszary robocze
-Rozwiązanie Finance and Operations oferuje interaktywne raporty, które są płynnie zintegrowane z obszarami roboczymi aplikacji. Obszary robocze mogą wykorzystywać bogate infografiki i wizualizacje obsługiwane przez Microsoft Power BI. Te infografiki i wizualizacje obejmują wiele formantów dostarczanych przez firmy zewnętrzne. Dlatego materiały w obszarach roboczych są bardzo wzrokowe i interaktywne.
+Rozwiązanie Finance and Operations oferuje interaktywne raporty, które można bezproblemowo integrować z obszarami roboczymi aplikacji. Obszary robocze mogą wykorzystywać bogate infografiki i wizualizacje obsługiwane przez Microsoft Power BI. Te infografiki i wizualizacje obejmują wiele formantów dostarczanych przez firmy zewnętrzne. Dlatego materiały w obszarach roboczych są bardzo wzrokowe i interaktywne.
 
 Użytkownicy mogą obsługiwać dane myszką lub dotykając elementów na stronie. Skutki interakcji są natychmiast widoczne, więc można szybko sprawdzić efekt jakiegoś działania bez zamykania obszaru roboczego. Piękne, interaktywne wizualizacje zachęcają użytkowników do eksploracji danych i poznawania ukrytych trendów.
 

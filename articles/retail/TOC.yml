@@ -5,11 +5,13 @@ items:
   items:
   - name: Nowości i zmiany
     href: get-started/whats-new.md
-  - name: Funkcje w wersji zapoznawczej w Dynamics 365 for Retail 10.0.1
+  - name: Funkcje w wersji zapoznawczej w rozwiązaniu Dynamics 365 for Retail 10.0.2
+    href: get-started/whats-new-10-0-2.md
+  - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Retail 10.0.1
     href: get-started/whats-new-10-0-1.md
-  - name: Nowości i zmiany w Dynamics 365 for Retail (kwiecień 2019)
+  - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Retail (kwiecień 2019)
     href: get-started/april-whats-new.md
-  - name: Zanim kupisz aplikację Retail
+  - name: Zanim kupisz rozwiązanie Retail
     href: get-started/before-you-buy.md
   - name: Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej
     href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
@@ -114,9 +116,9 @@ items:
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
 - name: Wielokanałowe zaawansowane opłaty automatyczne
   items:
-  - name: Konfigurowanie i używanie zaawansowanych funkcji zmian automatycznych
+  - name: Konfigurowanie i używanie zaawansowanych opłat automatycznych
     href: omni-auto-charges.md
-  - name: Wartość proporcjonalna i grupowanie automatycznych zmian nagłówka
+  - name: Proporcjonalne dzielenie opłat z nagłówka między pasujące wiersze sprzedaży
     href: pro-rate-charges-matching-lines.md
 - name: Biuro obsługi
   items:
@@ -274,7 +276,7 @@ items:
     href: price-management.md
   - name: Korekty ceny i rabaty
     href: price-adjustments-discounts.md
-  - name: Stosowanie wielu rabatów sieci sprzedaży do produktu
+  - name: Stosowanie wielu rabatów do produktu
     href: Apply-multiple-retail-discounts.md
   - name: Ustalanie optymalnej kombinacji nakładających się rabatów
     href: optimal-combination-overlapping-discounts.md
@@ -282,6 +284,8 @@ items:
     href: define-channel-specific-discounts.md
   - name: Opcje blokowania rabatów na produkty detaliczne
     href: prevent-discounts.md
+  - name: Przegląd rabatów wysyłkowych
+    href: retail-shipping-discount.md
   - name: Konfigurowanie kuponów dla sprzedaży detalicznej
     href: retail-coupons.md
 - name: Produkty i merchandising
@@ -354,9 +358,13 @@ items:
     href: localizations/fiscal-integration-for-retail-channel.md
   - name: Konfigurowanie integracji fiskalnej dla kanału sprzedaży detalicznej
     href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+  - name: Austria
+    items:
+    - name: Przykład integracji usługi rejestracji fiskalnej (Austria)
+      href: localizations/emea-aut-fi-sample.md
   - name: Europa Wschodnia
     items:
-    - name: Faktury zaliczkowe w aplikacji Retail dla Europy Wschodniej
+    - name: Faktury zaliczkowe w rozwiązaniu Retail dla Europy Wschodniej
       href: localizations/emea-eeu-advance-invoices-for-retail.md
     - name: Zarządzanie gotówką podręczną w aplikacji Retail dla Europy Wschodniej
       href: localizations/emea-eeu-petty-cash-for-retail.md
@@ -364,19 +372,21 @@ items:
       href: localizations/emea-eeu-retail-invoices.md
     - name: Wytyczne dotyczące wdrażania kas w Czechach, na Węgrzech i w Polsce
       href: localizations/emea-eeu-deployment.md
-    - name: Przykładowa integracja drukarki fiskalnej dla Polski
+    - name: Przykładowa integracja drukarki fiskalnej (Polska)
       href: localizations/emea-pol-fpi-sample.md
+    - name: Przykład integracji usługi rejestracji fiskalnej (Czechy)
+      href: localizations/emea-cze-fi-sample.md
   - name: Francja
     items:
     - name: Funkcje kasy
       href: localizations/emea-fra-cash-registers.md
-    - name: Przewodniki wdrażania kas
+    - name: Wytyczne dotyczące wdrażania kas
       href: localizations/emea-fra-deployment.md
   - name: Indie
     items:
     - name: Integracja podatku od towarów i usług (GST) w kasach
       href: localizations/apac-ind-cash-registers.md
-    - name: Przewodniki wdrażania kas
+    - name: Wytyczne dotyczące wdrażania kas
       href: localizations/apac-ind-loc-deployment-guidelines.md
     - name: Pomoc techniczna dotycząca uaktualniania i wersji N-1 dla Indii
       href: localizations/apac-ind-n-1-for-india.md
@@ -388,7 +398,7 @@ items:
     items:
     - name: Funkcje kasy
       href: localizations/emea-nor-cash-registers.md
-    - name: Przewodniki wdrażania kas
+    - name: Wytyczne dotyczące wdrażania kas
       href: localizations/emea-nor-loc-deployment-guidelines.md
   - name: Szwecja
     items:
@@ -477,11 +487,13 @@ items:
       href: retail-components.md
     - name: Architektura usługi Retail Server
       href: dev-itpro/retail-server-architecture.md
+    - name: Wybieranie topologii w sklepie
+      href: dev-itpro/retail-in-store-topology.md
     - name: Komunikacja w kanale Commerce Data Exchange i sprzedaży detalicznej
       href: dev-itpro/define-retail-channel-communications-cdx.md
-    - name: Architektura Retail Modern POS
+    - name: Architektura aplikacji Retail Modern POS
       href: dev-itpro/retail-modern-pos-architecture.md
-    - name: Architektura publikowania sklepu internetowego Retail
+    - name: Architektura publikowania sklepu internetowego w rozwiązaniu Retail
       href: dev-itpro/retail-online-store-publishing-architecture.md
     - name: Zawartość Retail Channel Performance Power BI
       href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
@@ -561,8 +573,8 @@ items:
       href: dev-itpro/hybridApp.md
     - name: Zastępowanie programu obsługi żądań punktu sprzedaży
       href: dev-itpro/pos-handler.md
-    - name: Widok informacji pakietu rozszerzenia POS
-      href: view-pos-extension-package-details.md
+    - name: Widok informacji pakietu rozszerzenia punktu sprzedaży
+      href: dev-itpro/view-pos-extension-package-details.md
   - name: Rozszerzalność aplikacji Hardware Station
     href: dev-itpro/hardware-station-extensibility.md
   - name: Rozszerzalność usługi Retail Server
@@ -669,9 +681,9 @@ items:
     items:
     - name: Rozszerzenie lojalnościowe
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-ms.openlocfilehash: 0d6ec0ba8723f81c21d735be455e35d8f1b62187
-ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
+ms.openlocfilehash: 179295f4397120f46391885760c980b2c9baa028
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791645"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "975927"

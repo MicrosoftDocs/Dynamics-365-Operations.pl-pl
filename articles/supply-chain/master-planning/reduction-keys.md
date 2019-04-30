@@ -1,6 +1,6 @@
 ---
-title: Klucze redukcji
-description: Ten artykuł zawiera przykłady pokazujące konfigurowanie klucza redukcji. Zawiera informacje o różnych ustawieniach kluczy redukcji i wynikach ich zastosowania. Za pomocą klucza redukcji można określić sposób zmniejszania prognozowanych zapotrzebowań.
+title: Klucze redukcji prognozy
+description: Ten temat zawiera przykłady pokazujące konfigurowanie klucza redukcji. Zawiera informacje o różnych ustawieniach kluczy redukcji i wynikach ich zastosowania. Za pomocą klucza redukcji można określić sposób zmniejszania prognozowanych zapotrzebowań.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 02/28/2019
@@ -19,52 +19,83 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7457aca4ca4d5188bafb497d3052276cfc154ad1
-ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
+ms.openlocfilehash: b915570145a48db7a182b9fce34e1544e3600107
+ms.sourcegitcommit: a95ccf4cee8757c5fb2442a2aaeb45b1e33b6492
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "770923"
+ms.lasthandoff: 04/14/2019
+ms.locfileid: "993051"
 ---
-# <a name="reduction-keys"></a>Klucze redukcji
+# <a name="method-used-to-reduce-forecast-requirements"></a>Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera przykłady pokazujące konfigurowanie klucza redukcji. Zawiera informacje o różnych ustawieniach kluczy redukcji i wynikach ich zastosowania. Za pomocą klucza redukcji można określić sposób zmniejszania prognozowanych zapotrzebowań.
+W tym temacie omówiono różne metody, które służą do zmniejszania prognozowanych zapotrzebowań. Zawiera przykłady wyników każdej z tych metod. Ponadto wyjaśniono, jak tworzyć, konfigurować i używać kluczy redukcji prognoz. Niektóre metody używają kluczy redukcji prognoz do zmniejszania prognozowanych zapotrzebowań.
 
-<a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>Przykład 1: Procent — zasada redukcji prognozy klucza redukcji
----------------------------------------------------------------
+## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Metody używane w celu zmniejszenia prognozowanych zapotrzebowań
+
+Po dołączeniu prognozy do planu głównego można wybrać sposób redukowania prognozowanych zapotrzebowań, gdy rzeczywisty popyt jest uwzględniony.
+
+Aby uwzględnić prognozę w planie głównym i wybrać metodę, która jest używana do zmniejszenia prognozowanych zapotrzebowań, przejdź do **Planowanie główne \> ustawienia \> Plany \> plany główne**. W polu **Model prognozy** wybierz model prognozy. W polu **Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań** wybierz metodę. Dostępne są następujące opcje:
+
+- Brak
+- Procent — klucz redukcji
+- Transakcje — klucz redukcji
+- Transakcje — okres dynamiczny
+
+Poniższe sekcje zawierają więcej informacji o każdej funkcji.
+
+### <a name="none"></a>Brak
+
+Jeśli wybrana zostanie wartość **Brak**: Prognozowane zapotrzebowanie nie będzie redukowane podczas planowania głównego. W takim przypadku planowanie główne tworzy zamówienia planowane w celu dostarczania prognozy popytu (prognozowane zapotrzebowania). Planowane zamówienia zachowują sugerowaną ilość bez względu na inne typy popytu. Na przykład, jeśli zostaną złożone zamówienia sprzedaży, planowanie główne tworzy dodatkowe zamówienia planowane w celu dostarczenia zamówienia sprzedaży. Ilość prognozowanego zapotrzebowania nie jest zmniejszona.
+
+### <a name="percent--reduction-key"></a>Procent — klucz redukcji
+
+Jeśli wybierzesz **Procent — klucz redukcji**, zmniejsza wymagania dotyczące prognozy popytu według wartości procentowych i okresów czasu, które są definiowane według klucza redukcji. W takim przypadku planowanie główne tworzy zamówienia planowane, gdzie ilość jest obliczana jako klucz redukcji × Prognozowana ilość w każdym okresie. Jeśli istnieją inne typy zapotrzebowania, planowanie główne tworzy również zamówienia planowane w celu zaspokojenia tego popytu.
+
+#### <a name="example-percent--reduction-key"></a>Przykład: Procent — klucz redukcji
 
 W tym przykładzie pokazano, jak klucz redukcji zmniejsza wymagania dotyczące prognozy popytu według wartości procentowych i okresów, które są definiowane według klucza redukcji.
 
-1. Na stronie **Klucz redukcji** ustaw następujące wiersze.
+Na przykład wprowadzono następującą prognozę sprzedaży w planie głównym.
 
-   | Reszta | Jednostka  | Procent |
-   |--------|-------|---------|
-   |   1 przypada na wpłatę z zysku na rzecz budżetu państwa    | Miesiąc |   100   |
-   |   2    | Miesiąc |   75    |
-   |   3    | Miesiąc |   50    |
-   |   4    | Miesiąc |   25    |
+| Miesiąc    | Prognoza popytu |
+|----------|-----------------|
+| Styczeń  | 1 000           |
+| luty | 1 000           |
+| marzec    | 1 000           |
+| kwiecień    | 1 000           |
 
+Na stronie **Klucz redukcji** ustaw następujące wiersze.
 
-2. Połącz klucz redukcji z grupą zapotrzebowania dla towaru.
-3. Na stronie **Plany główne** w polu **Reguła redukcji** zaznacz **Procent — klucz redukcji**.
-4. Utwórz prognozę redukcji dla 1000 szt. na miesiąc.
+| Zmiana | Jednostka  | Procent |
+|--------|-------|---------|
+| 1      | Miesiąc | 100     |
+| 2      | Miesiąc | 75      |
+| 3      | Miesiąc | 50      |
+| 4      | Miesiąc | 25      |
 
-Uruchomienie planowania w dniu 1 stycznia spowoduje, że wymagania prognozy popytu zostaną zużyte według wartości procentowych ustawionych na stronie **Klucze redukcji**. Następujące ilości wymagania są przenoszone do planu głównego.
+Przypisz klucz redukcji do grupy zapotrzebowania dla towaru. Następnie na stronie **plany główne** w polu **Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań** wybierz **procent — klucz redukcji**.
 
-| Miesiąc                | Wymagana liczba sztuk |
-|----------------------|---------------------------|
-| Styczeń              | 0                         |
-| Luty             | 250                       |
-| Marzec                | 500                       |
-| kwiecień                | 750                       |
-| Od maja do grudnia | 1 000                     |
+W tym przypadku uruchomienie planowania w dniu 1 stycznia spowoduje, że wymagania prognozy popytu zostaną zużyte według wartości procentowych ustawionych na stronie **Klucze redukcji**. Następujące ilości wymagania są przenoszone do planu głównego.
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Przykład 2: Transakcja — zasada redukcji prognozy klucza redukcji
+| Miesiąc                | Planowana ilość zamówienia | Obliczenie    |
+|----------------------|------------------------|----------------|
+| Styczeń              | 0                      | = 0% × 1,000   |
+| luty             | 250                    | = 25% × 1,000  |
+| marzec                | 500                    | = 50% × 1,000  |
+| kwiecień                | 750                    | = 75% × 1,000  |
+| Od maja do grudnia | 1 000                  | = 100% × 1,000 |
+
+### <a name="transactions--reduction-key"></a>Transakcje — klucz redukcji
+
+Jeśli wybierzesz **Transakcje — klucz redukcji** zmniejsza wymagania dotyczące prognozy popytu według transakcji zachodzących w okresach czasu, które są definiowane według klucza redukcji.
+
+#### <a name="example-transactions--reduction-key"></a>Przykład: Transakcje— klucz redukcji
+
 W tym przykładzie pokazano, jak rzeczywiste zamówienia występujące w okresach zdefiniowanych przez klucz redukują wymagania prognozy popytu.
 
--   Na stronie **Plany główne** w polu **Reguła redukcji** zaznacz **Transakcje — klucz redukcji**.
+W tym przykładzie wybierasz **Transakcje — klucz redukcji** w **Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań** na stronie **Plany główne**.
 
 1 stycznia istnieją następujące zamówienia sprzedaży.
 
@@ -80,61 +111,119 @@ Przy tej samej prognozie popytu dla 1000 sztuk na miesiąc do planu głównego p
 | Miesiąc                | Wymagana liczba sztuk |
 |----------------------|---------------------------|
 | Styczeń              | 44                        |
-| Luty             | 0                         |
-| Marzec                | 549                       |
+| luty             | 0                         |
+| marzec                | 549                       |
 | kwiecień                | 881                       |
 | Od maja do grudnia | 1 000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Przykład 3: Transakcja — zasada redukcji prognozy okresu dynamicznego
+### <a name="transactions--dynamic-period"></a>Transakcje — okres dynamiczny
+
+W przypadku wybrania **transakcje — okres dynamiczny**, prognozowane zapotrzebowania są redukowane zgodnie z rzeczywistymi transakcjami zamówień w okresie dynamicznym. Okres dynamiczny obejmuje aktualne daty prognozy i kończy się na początku kolejnej prognozy. W takim przypadku planowanie główne tworzy zamówienia planowane w celu dostarczania prognozy popytu (prognozowane zapotrzebowania). Jednak po zrealizowaniu rzeczywistych transakcji zamówień prognozowane wymagania są redukowane. Rzeczywiste transakcje zużywają część prognozowanego zapotrzebowania.
+
+Ta opcja jest używana, występują następujące zachowania:
+
+- Klucze redukcji nie są wymagane/używane. 
+- Jeśli prognoza zostanie zmniejszona do zera, wymagania prognozy dla bieżącej prognozy przybierają wartość 0 (zero).
+- Jeśli nie ma żadnej przyszłej prognozy, wymagania prognozy z ostatnio wprowadzonej prognozy są redukowane.
+- Horyzonty czasowe są uwzględniane w obliczeniach redukcji prognozy.
+- Dni pasywne są uwzględniane w obliczeniach redukcji prognozy.
+- Jeśli transakcje rzeczywistego zamówienia przekraczają prognozowane zapotrzebowanie, pozostałe transakcje nie są przekazywane do następnego okresu prognozy.
+
+#### <a name="example-1-transactions--dynamic-period"></a>Przykład 1: Transakcje — okres dynamiczny
+
+Tutaj jest prosty przykład pokazujący sposób działania metody **transakcje — okres dynamiczny**.
+
+Na przykład wprowadzono następującą prognozę sprzedaży w planie głównym.
+
+| Data       | Prognoza popytu |
+|------------|-----------------|
+| 1 stycznia  | 1 000           |
+| 1 lutego | 500             |
+
+Można również utworzyć następujące zamówienia sprzedaży.
+
+| Data        | Ilość dla zamówienia sprzedaży |
+|-------------|----------------------|
+| 15 stycznia  | 500                  |
+| 15 lutego | 100                  |
+
+W takim wypadku są tworzone następujące zamówienia planowane.
+
+| Data prognozy popytu | Ilość | Wyjaśnienie                           |
+|--------------------- |----------|---------------------------------------|
+| 1 stycznia            | 800      | Prognozowane zapotrzebowanie (= 1000 – 200) |
+| 15 stycznia           | 200      | Zapotrzebowanie w zamówieniach sprzedaży             |
+| 1 lutego           | 600      | Prognozowane zapotrzebowanie (= 1000 – 400) |
+| 15 lutego          | 400      | Zapotrzebowanie w zamówieniach sprzedaży             |
+
+#### <a name="example-2-transactions--dynamic-period"></a>Przykład 2: Transakcje — okres dynamiczny
+
 W większości przypadków systemy są skonfigurowane tak, aby transakcje zmniejszały prognozy popytu w określonych okresach prognozy: tygodnie, miesiąca itd. Te okresy są definiowane w kluczu redukcji. Jednak czas między dwoma wierszami popytu mogą również *implikować* okresu.
 
-1. Utwórz prognozę popytu dla następujących dat i ilości.
+W tym przykładzie tworzymy prognozę popytu dla następujących dat i ilości.
 
-   | Data       | Prognoza popytu |
-   |------------|-----------------|
-   | 1 stycznia  | 1 000           |
-   | 5 stycznia  | 500             |
-   | 12 stycznia | 1 000           |
+| Data       | Prognoza popytu |
+|------------|-----------------|
+| 1 stycznia  | 1 000           |
+| 5 stycznia  | 500             |
+| 12 stycznia | 1 000           |
 
-   W tej prognozie wyraźnie widać okres między datami prognozy: między pierwszą i drugą datą są 4 dni, a między drugą i trzecią jest 7 dni. Te różne zakresy to są okresy dynamiczne.
-2. Utwórz wiersze zamówienia sprzedaży w następujący sposób.
+Należy zauważyć, że w tej prognozie, nie ma okresu pomiędzy datami prognoz. Między pierwszą a drugą datą jest czterodniowy odstęp, a między drugą a trzecią datą jest odstęp 7 dni. Te różne zakresy są okresami dynamicznymi.
 
-   | Data                             | Ilość dla zamówienia sprzedaży |
-   |----------------------------------|----------------------|
-   | 15 grudnia w poprzednim roku | 500                  |
-   | 3 stycznia                        | 100                  |
-   | 10 stycznia                       | 200                  |
+Można również utworzyć następujące wiersze zamówienia sprzedaży.
 
-Prognoza będzie ograniczona w następujący sposób:
+| Data                             | Ilość dla zamówienia sprzedaży |
+|----------------------------------|----------------------|
+| 15 grudnia w poprzednim roku | 500                  |
+| 3 stycznia                        | 100                  |
+| 10 stycznia                       | 200                  |
 
--   Pierwsze zamówienie sprzedaży nie mieści się w żadnym okresie, więc nie będzie ograniczona przez żadną prognozę.
--   Drugie zamówienie sprzedaży mieści się w dniach 1-5 stycznia, więc ograniczy prognozę dla 1 stycznia o 100.
--   Trzecie zamówienie sprzedaży mieści się w dniach 5-12 stycznia, więc ograniczy prognozę dla 5 stycznia o 200.
+W takim przypadku prognoza jest zmniejszana w następujący sposób:
 
-Zostanie utworzone następujące planowane zamówienie w celu wypełnienia prognozy.
+- Ponieważ pierwsze zamówienie sprzedaży nie mieści się w żadnym okresie, więc nie ograniczy żadnej prognozy.
+- Ponieważ drugie zamówienie sprzedaży mieści się w dniach 1-5 stycznia, więc ograniczy prognozę dla 1 stycznia o 100.
+- Ponieważ trzecie zamówienie sprzedaży mieści się w dniach 5-12 stycznia, więc ograniczy prognozę dla 5 stycznia o 200.
 
-| Data prognozy popytu | Zmniejszona ilość |
-|----------------------|------------------|
-| 1 stycznia            | 900              |
-| 5 stycznia            | 300              |
-| 12 stycznia           | 1 000            |
+W takim wypadku są tworzone następujące zamówienia planowane.
 
-Poniżej przedstawiono podsumowanie redukcji **transakcji — okres dynamiczny**:
+| Data prognozy popytu             | Ilość | Wyjaśnienie                                                         |
+|----------------------------------|----------|---------------------------------------------------------------------|
+| 15 grudnia w poprzednim roku | 500      | Zapotrzebowanie w zamówieniach sprzedaży                                            |
+| 1 stycznia                        | 900      | Prognozowane zapotrzebowanie na okres od 1 stycznia do 5 stycznia (= 1000 – 100) |
+| 3 stycznia                        | 100      | Zapotrzebowanie w zamówieniach sprzedaży                                            |
+| 5 stycznia                        | 300      | Prognozowane zapotrzebowanie na okres od 5 stycznia do 10 stycznia (= 500 – 200)  |
+| 12 stycznia                       | 1 000    | Prognozowane zapotrzebowanie na okres od 12 stycznia końca                      |
 
--   Wymagania prognozy są ograniczone przez rzeczywiste transakcje zamówienia występujące w okresie dynamicznym. Okres dynamiczny obejmuje aktualne daty prognozy i kończy się na początku kolejnej prognozy.
--   Ta metoda nie używa ani nie wymaga klucza redukcji.
--   Ta opcja jest używana, występują następujące zachowania:
-    -   Jeśli prognoza zostanie zmniejszona do zera, wymagania prognozy dla bieżącej prognozy przybierają wartość 0 (zero).
-    -   Jeśli nie ma żadnej przyszłej prognozy, wymagania prognozy z ostatnio wprowadzonej prognozy są redukowane.
-    -   Horyzonty czasowe są uwzględniane w obliczeniach redukcji prognozy.
-    -   Dni pasywne są uwzględniane w obliczeniach redukcji prognozy.
-    -   Jeśli transakcje rzeczywistego zamówienia przekraczają prognozowane zapotrzebowanie, pozostałe transakcje nie są przekazywane do następnego okresu prognozy.
+## <a name="create-and-set-up-a-forecast-reduction-key"></a>Tworzenie i konfigurowanie klucza redukcji prognoz
 
+Klucz redukcji prognozy jest używany w metodach **transakcje — klucz redukcji** i **procent — klucz redukcji** redukcji prognozowanego zapotrzebowania. Wykonaj następujące kroki, aby utworzyć i skonfigurować klucz redukcji.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+1. Przejdź do menu **Planowanie główne \> Konfiguracja \> Zapotrzebowanie \> Klucze redukcji**.
+2. Wybierz **nowy** lub naciśnij **Ctrl + N**, aby utworzyć klucz redukcji.
+3. W polu **klucza redukcji** wprowadź unikatowy identyfikator klucza redukcji prognoz. Następnie w polu **Nazwa** nadaj nazwę. 
+4. Definiowanie okresów i procenta klucza redukcji w każdym okresie:
+
+    - Pole **Data wejścia w życie** wskazuje datę rozpoczęcia tworzenia okresów. Jeśli opcja **Użyj daty obowiązywania** jest ustawiona jako **Tak**, okresy zaczynają się zgodnie z datą wejścia w życie. Jeśli ta opcja jest ustawiona jako **Nie**, okresy zaczynają się w dniu uruchomienia planowania głównego.
+    - Definiowanie okresów, w których powinna mieć miejsce redukcja prognozy.
+    - W danym okresie należy określić wartości procentowe, o które powinno być zmniejszane prognozowane zapotrzebowanie. Można wprowadzić wartość dodatnią, aby zmniejszyć wymagania, lub wartość ujemną, aby zwiększyć zapotrzebowanie.
+
+## <a name="use-a-reduction-key"></a>Użyj Klucza redukcji
+
+Klucz redukcji prognoz musi być przypisany do grupy zapotrzebowania towaru. Wykonaj następujące kroki, aby przypisać klucz redukcji do grupy zapotrzebowania dla towaru.
+
+1. Przejdź do menu **Planowanie główne \> Konfiguracja \> Zapotrzebowanie \> Grupy zapotrzebowania**.
+2. Na skróconej karcie **Inne** w polu **Klucz redukcji** wybierz klucz redukcji, który zostanie przypisany do grupy zapotrzebowania. Klucz redukcji następnie stosuje się do wszystkich elementów, które należą do grupy zapotrzebowania.
+3. Aby użyć klucza redukcji do obliczania redukcji prognozy w planowaniu głównym, to ustawienie należy zdefiniować w oknie ustawień planu głównego lub planu wg prognozy. Przejdź do jednej z następujących lokalizacji:
+
+    - Planowanie główne \> Konfiguracja \> Plany \> Plany wg prognoz
+    - Planowanie główne \> Ustawienia \> Plany \> Plany główne
+
+4. Na stronie **planów wg prognozy** lub **planów głównych** na skróconej karcie **ogólne** w polu **metoda używana do zmniejszenia prognozowanych zapotrzebowań** wybierz opcję **procent — klucz redukcji**lub **transakcje — klucz redukcji**.
+
+## <a name="reduce-a-forecast-by-transactions"></a>Redukcja prognoz według transakcji
+
+Po wybraniu metody **Transakcje — klucz redukcji** lub **Transakcje — okres dynamiczny** do redukcji prognozowanego zapotrzebowania można wybrać, które transakcje będą uwzględniane w redukowaniu prognozy. Na stronie **Zwolnione produkty** na skróconej karcie **Inne** w polu **Zmniejsz prognozę o** wybierz **Wszystkie transakcje**, jeśli wszystkie transakcje mają redukować prognozę, lub **Zamówienia**, jeśli tylko zamówienia sprzedaży mają redukować prognozę.
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Plany główne](master-plans.md)
-
-
-

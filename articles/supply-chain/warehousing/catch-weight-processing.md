@@ -3,7 +3,7 @@ title: Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzan
 description: W tym temacie opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
 author: perlynne
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
-ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
+ms.openlocfilehash: d4082464dafebfcadd02425081f5f9b5716af01a
+ms.sourcegitcommit: 118cd383a327519a266dfe27720b12e9bbfbac14
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "777279"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "946440"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem
 
@@ -97,7 +97,9 @@ Na przykład jednostką ilości efektywnej jest **Opakowanie** i odbierasz jedn�
 
 Jeśli śledzenie znaczników ilości efektywnej nie jest używane, można zarejestrować wagę dla każdego wymiaru (na przykład, dla każdego numeru identyfikacyjnego i wymiaru śledzenia). Alternatywnie waga może być rejestrowana na podstawie poziomu zagregowanego, np. pięciu numerów identyfikacyjnych (palet).
 
-Dla metod rejestrowania wagi wychodzącej można określić, czy ważenia jest wykonywane dla każdej jednostki ilości efektywnej (czyli wg opakowania) czy też waga jest rejestrowana na podstawie odebranej ilości (np. trzy opakowania). Należy zwrócić uwagę, że dla procesu odbioru z linii produkcyjnej, średnia waga będzie używana, jeśli używana jest opcja **Nie zarejestrowano**.
+Dla metod rejestrowania wagi wychodzącej można określić, czy ważenia jest wykonywane dla każdej jednostki ilości efektywnej (czyli wg opakowania) czy też waga jest rejestrowana na podstawie odebranej ilości (np. trzy opakowania). Należy zwrócić uwagę, że dla procesu odbioru z linii produkcyjnej i wewnętrznego przeniesienia, średnia waga będzie używana, jeśli używana jest opcja **Nie zarejestrowano**.
+
+Aby uniemożliwić procesom pobrania zarządzania magazynem przechwytywanie wag powodujące dopasowania zysku/straty ilości efektywnej, można użyć metody zarządzania odchyleniem masy dostawy wychodzącej.
 
 ## <a name="supported-scenarios"></a>Obsługiwane scenariusze
 
@@ -121,14 +123,12 @@ Nie wszystkie przepływy prac obsługują przetwarzanie ilości efektywnej produ
  
 ### <a name="order-processing"></a>Przetwarzanie zamówień
 
-- Przetwarzanie zamówienia międzyfirmowego nie jest obsługiwane.
 - Tworzenie wcześniejszego powiadomienia o wysyłce (struktury WPW/pakowania) nie obsługuje informacji o wadze.
 - Ilość zamówienia musi być zachowana na podstawie jednostki ilości efektywnej.
  
 ### <a name="inbound-warehouse-processing"></a>Przetwarzanie przyjęć do magazynu
 
 - Przyjęcie numeru identyfikacyjnego wymaga przypisania wagi podczas rejestracji, ponieważ informacje o wadze nie są obsługiwane w ramach wcześniejszego powiadomienia o wysyłce. Jeśli procesy znacznika ilości efektywnej są używane, numer znacznika musi być ręcznie przypisany wg jednostki ilości efektywnej.
-- Przyjęcie mieszanych numerów identyfikacyjnych nie jest obsługiwane do produktów w ilości efektywnej.
  
 ### <a name="inventory-and-warehouse-operations"></a>Operacje magazynowe i na zapasach
 
@@ -169,7 +169,6 @@ Nie wszystkie przepływy prac obsługują przetwarzanie ilości efektywnej produ
  
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Inne ograniczenia i zachowania dla przetwarzania produktów w ilości efektywnej w kontekście zarządzania magazynem
 
-- Gdy oznakowania ilości efektywnej są rejestrowane w ramach przetwarzania przez aplikację magazynu, użytkownik nie może anulować przepływu pracy.
 - Podczas procesów pobierania, gdy użytkownik nie otrzymuje monitu o określenie wymiarów śledzenia, przypisanie wagi odbywa się a podstawie średniej wagi. To zachowanie występuje, kiedy np. kombinacja wymiarów śledzenia jest używana w tej samej lokalizacji i po wykonaniu odbioru przez użytkownika w lokalizacji pozostaje tylko jedna wartość wymiaru śledzenia.
 - Jeśli zapasy są rezerwowane dla produktu w ilości efektywnej skonfigurowanego dla procesów zarządzania magazynem, rezerwacja odbywa się na podstawie zdefiniowanej wagi minimalnej, nawet jeśli ta ilość jest ostatnią obsługiwaną ilością stanu zapasów. To zachowanie różni się od zachowania dla towarów, które nie są skonfigurowane dla procesów zarządzania magazynem.
 - Nie należy używać rzeczywistej wagi w ramach obliczeń zdolności produkcyjnych (progów grupy czynności, maksymalnej liczby podziałów pracy, maksymalnej liczby kontenerów, możliwości obciążenia pracą lokalizacji itd.) Zamiast tego procesy opierają się na wadze bezpośredniej obsługi towarów zdefiniowanej dla produktu.
@@ -193,3 +192,5 @@ Obecnie funkcja znaczników ilości efektywnej jest obsługiwana tylko w ramach 
 - Gdy kontenery są ponownie otwierane.
 - Kiedy produkty formuły są zgłaszane jako gotowe wyroby przy użyciu aplikacji magazynu.
 - Kiedy ładunki transportu są przetwarzane przy użyciu aplikacji magazynu.
+
+Znacznik ilości efektywnej można utworzyć za pomocą procesu aplikacji magazynu, ręcznie za pomocą formularza, albo za pomocą procesu jednostki danych. Jeśli znacznik ilości efektywnej jest skojarzony z wierszem dokumentu źródłowego przychodzącego, takim jak wiersz zamówienia zakupu, znacznik zostanie zarejestrowany. Jeśli wiersz jest używany do przetwarzania wychodzącego. Znacznik zostanie zaktualizowany jako wysłany.
