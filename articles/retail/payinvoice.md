@@ -18,31 +18,31 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b7132dc9b3c78fa04fcfc38ea72b5678ad08deb2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 158d8ca8a97c473e940f76dd3f35cecc4e9dd7f4
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302743"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517143"
 ---
-# <a name="set-up-pay-invoice-scenarios"></a><span data-ttu-id="2b930-103">Konfigurowanie scenariuszy płatności za faktury</span><span class="sxs-lookup"><span data-stu-id="2b930-103">Set up pay invoice scenarios</span></span>
+# <a name="set-up-pay-invoice-scenarios"></a><span data-ttu-id="9bdde-103">Konfigurowanie scenariuszy płatności za faktury</span><span class="sxs-lookup"><span data-stu-id="9bdde-103">Set up pay invoice scenarios</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="2b930-104">Funkcja Zapłać fakturę w rozwiązaniu Dynamics 365 for Retail została rozszerzona, aby obsługiwać:</span><span class="sxs-lookup"><span data-stu-id="2b930-104">The Pay invoice functionality in Dynamics 365 for Retail has been expanded to support:</span></span>
+<span data-ttu-id="9bdde-104">Funkcja Zapłać fakturę w rozwiązaniu Dynamics 365 for Retail została rozszerzona, aby obsługiwać:</span><span class="sxs-lookup"><span data-stu-id="9bdde-104">The Pay invoice functionality in Dynamics 365 for Retail has been expanded to support:</span></span>
 
-- <span data-ttu-id="2b930-105">zapłatę za wiele faktur zamówienia sprzedaży w ramach pojedynczej transakcji w punkcie sprzedaży,</span><span class="sxs-lookup"><span data-stu-id="2b930-105">Payoff of multiple sales order invoices in a single POS transaction.</span></span>
-- <span data-ttu-id="2b930-106">płatność za różne typy faktur dla odbiorców, takie jak faktury niezależne, projektu i korygujące.</span><span class="sxs-lookup"><span data-stu-id="2b930-106">Payment of various customer invoice types including free text invoices, project-based invoices, and credit notes.</span></span>
+- <span data-ttu-id="9bdde-105">zapłatę za wiele faktur zamówienia sprzedaży w ramach pojedynczej transakcji w punkcie sprzedaży,</span><span class="sxs-lookup"><span data-stu-id="9bdde-105">Payoff of multiple sales order invoices in a single POS transaction.</span></span>
+- <span data-ttu-id="9bdde-106">płatność za różne typy faktur dla odbiorców, takie jak faktury niezależne, projektu i korygujące.</span><span class="sxs-lookup"><span data-stu-id="9bdde-106">Payment of various customer invoice types including free text invoices, project-based invoices, and credit notes.</span></span>
 
-<span data-ttu-id="2b930-107">Aby te scenariusze były dostępne, należy skonfigurować profil funkcji dla sklepów zgodnie z poniższym opisem.</span><span class="sxs-lookup"><span data-stu-id="2b930-107">To enable these scenarios, the functionality profile for stores must be configured as outlined in below.</span></span>
+<span data-ttu-id="9bdde-107">Aby te scenariusze były dostępne, należy skonfigurować profil funkcji dla sklepów zgodnie z poniższym opisem.</span><span class="sxs-lookup"><span data-stu-id="9bdde-107">To enable these scenarios, the functionality profile for stores must be configured as outlined in below.</span></span>
 
-1. <span data-ttu-id="2b930-108">Przejdź do opcji **Handel detaliczny \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Profile punktów sprzedaży \> Profile funkcji** i wybierz powiązany ze sklepami profil, dla którego chcesz wprowadzić zmiany.</span><span class="sxs-lookup"><span data-stu-id="2b930-108">Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles** and select a profile that's linked to the stores that you want to make the changes for.</span></span>
-2. <span data-ttu-id="2b930-109">Na karcie **Funkcje** skonfiguruj poniższe parametry zgodnie z potrzebami.</span><span class="sxs-lookup"><span data-stu-id="2b930-109">On the **Functions** tab, configure the following parameters as needed.</span></span>
+1. <span data-ttu-id="9bdde-108">Przejdź do opcji **Handel detaliczny \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Profile punktów sprzedaży \> Profile funkcji** i wybierz powiązany ze sklepami profil, dla którego chcesz wprowadzić zmiany.</span><span class="sxs-lookup"><span data-stu-id="9bdde-108">Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles** and select a profile that's linked to the stores that you want to make the changes for.</span></span>
+2. <span data-ttu-id="9bdde-109">Na karcie **Funkcje** skonfiguruj poniższe parametry zgodnie z potrzebami.</span><span class="sxs-lookup"><span data-stu-id="9bdde-109">On the **Functions** tab, configure the following parameters as needed.</span></span>
 
-    - <span data-ttu-id="2b930-110">**Faktura zamówienia sprzedaży** — wybierz opcję **Tak**, aby umożliwić użytkownikom opłacenie co najmniej jednej faktury utworzonej na podstawie zamówienia sprzedaży w ramach pojedynczej transakcji w punkcie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="2b930-110">**Sales order invoice** – Select **Yes** to allow users to pay one or more sales order-based invoices in a single POS transaction.</span></span>
-    - <span data-ttu-id="2b930-111">**Faktura niezależna** — wybierz opcję **Tak**, aby umożliwić użytkownikom opłacenie co najmniej jednej faktury niezależnej w ramach pojedynczej transakcji w punkcie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="2b930-111">**Free text invoice** – Select **Yes** to allow users to pay one or more free text-based invoices in a single POS transaction.</span></span>
-    - <span data-ttu-id="2b930-112">**Faktura projektu** — wybierz opcję **Tak**, aby umożliwić użytkownikom opłacenie co najmniej jednej faktury utworzonej na podstawie projektu w ramach pojedynczej transakcji w punkcie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="2b930-112">**Project invoice** – Select **Yes** to allow users to pay one or more project-based invoices in a single POS transaction.</span></span>
-    - <span data-ttu-id="2b930-113">**Faktura korygująca zamówienia sprzedaży** — wybierz opcję **Tak**, aby umożliwić użytkownikom rozliczenie wielu faktur korygujących na podstawie zamówień sprzedaży dla otwartych faktur lub przetworzyć zwrot dla odbiorcy na podstawie otwartej faktury korygującej.</span><span class="sxs-lookup"><span data-stu-id="2b930-113">**Sales order credit note** – Select **Yes** to allow users to settle multiple sales order-based credit notes against open invoices or process a refund to the customer for an open credit note.</span></span>
+    - <span data-ttu-id="9bdde-110">**Faktura zamówienia sprzedaży** — wybierz opcję **Tak**, aby umożliwić użytkownikom opłacenie co najmniej jednej faktury utworzonej na podstawie zamówienia sprzedaży w ramach pojedynczej transakcji w punkcie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="9bdde-110">**Sales order invoice** – Select **Yes** to allow users to pay one or more sales order-based invoices in a single POS transaction.</span></span>
+    - <span data-ttu-id="9bdde-111">**Faktura niezależna** — wybierz opcję **Tak**, aby umożliwić użytkownikom opłacenie co najmniej jednej faktury niezależnej w ramach pojedynczej transakcji w punkcie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="9bdde-111">**Free text invoice** – Select **Yes** to allow users to pay one or more free text-based invoices in a single POS transaction.</span></span>
+    - <span data-ttu-id="9bdde-112">**Faktura projektu** — wybierz opcję **Tak**, aby umożliwić użytkownikom opłacenie co najmniej jednej faktury utworzonej na podstawie projektu w ramach pojedynczej transakcji w punkcie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="9bdde-112">**Project invoice** – Select **Yes** to allow users to pay one or more project-based invoices in a single POS transaction.</span></span>
+    - <span data-ttu-id="9bdde-113">**Faktura korygująca zamówienia sprzedaży** — wybierz opcję **Tak**, aby umożliwić użytkownikom rozliczenie wielu faktur korygujących na podstawie zamówień sprzedaży dla otwartych faktur lub przetworzyć zwrot dla odbiorcy na podstawie otwartej faktury korygującej.</span><span class="sxs-lookup"><span data-stu-id="9bdde-113">**Sales order credit note** – Select **Yes** to allow users to settle multiple sales order-based credit notes against open invoices or process a refund to the customer for an open credit note.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2b930-114">Płatność lub rozliczenie kwot częściowych nie są jeszcze obsługiwane.</span><span class="sxs-lookup"><span data-stu-id="2b930-114">Payment or settlement of partial amounts is not yet supported.</span></span>
+> <span data-ttu-id="9bdde-114">Płatność lub rozliczenie kwot częściowych nie są jeszcze obsługiwane.</span><span class="sxs-lookup"><span data-stu-id="9bdde-114">Payment or settlement of partial amounts is not yet supported.</span></span>
