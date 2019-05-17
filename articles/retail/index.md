@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bc1c74ab6940fe0f7ed2e541edad0bce657faeb5
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3b7bad688103db469965e41b2fdc7228fcddc04f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517149"
 ---
 # <a name="welcome-to-dynamics-365-for-retail"></a>Dynamics 365 for Retail — Zapraszamy!
 
@@ -91,6 +91,6 @@ Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadma
 
 Opinie, wiadomości i inne informacje dotyczące rozwiązania Retail trwałe możesz znaleźć w [blogu usługi Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog).
 
-Wiele wpisów dotyczących rozwiązania Retail jest dostępnych w [blogu zespołu produktu Microsoft DynamicsAX](https://blogs.msdn.microsoft.com/dax/) Mimo że niektóre z tych wpisów zostały napisane dla poprzedniej wersji rozwiązania Retail, stosowane są w nich te same pojęcia. Także procedury są podobne do procedur w bieżącej wersji.
+Wiele wpisów dotyczących rozwiązania Retail jest dostępnych w [blogu zespołu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Mimo że niektóre z tych wpisów zostały napisane dla poprzedniej wersji rozwiązania Retail, stosowane są w nich te same pojęcia. Także procedury są podobne do procedur w bieżącej wersji.
 
 [Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.

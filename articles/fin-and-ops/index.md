@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations
 description: Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 04/11/2019
 ms.topic: index-page
-ms.prod: null
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: null
+ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
-ms.search.scope: 'Core, Operations'
+ms.search.scope: Core, Operations
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4547a0c8d43584e4cb8981e0a055c514c184f6dd
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1507596"
 ---
-
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations
 
 [!include [banner](includes/banner.md)]
@@ -40,7 +44,7 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Microsoft Dynam
 <h3><a href="get-started/before-you-buy.md">Zanim kupisz</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Wybieranie opcji wdrożenia</a></p>
- <p><a href="get-started/purchase-on-premises.md">Kup rozwiązanie Finance and Operations (on-premises)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Zakup rozwiązania Finance and Operations (on-premises)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Cykl życia implementacji</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
@@ -56,10 +60,15 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Microsoft Dynam
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Uaktualnienia, aktualizacje i poprawki</a></p>
 <p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Stosowanie aktualizacji do środowisk w chmurze</a></p>
 <p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Konfiguruj aktualizacje usługi</a></p>
-<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Wstrzymaj aktualizacje usługi</a></p>
-<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Odbieraj powiadomienia o aktualizacjach usług</a></p>
+<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Wstrzymywanie aktualizacji usługi</a></p>
+<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Odbieranie powiadomień o aktualizacjach usług</a></p>
 <p><a href="../dev-itpro/data-entities/data-task-automation.md">Automatyzacja zadań danych</a></p>
 <p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
+
+<h3><a href="../dev-itpro/data-entities/integration-overview.md">Integracje</a></h3>
+<p><a href="../dev-itpro/business-events/home-page.md">Zdarzenia biznesowe</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Jednostki danych</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integracja przy użyciu usługi Microsoft Flow</a></p>
 
 <h3><a href="../financials/index.md">Zarządzanie finansami</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Rozrachunki z dostawcami</a></p>
@@ -105,10 +114,6 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Microsoft Dynam
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Programowanie</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Możliwości rozszerzania</a></p>
-
-<p><a href="../dev-itpro/data-entities/integration-overview.md">Integracja danych</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Zarządzanie danymi</a></p>
-
 <p><a href="../dev-itpro/office-integration/office-integration.md">Integracja z pakietem Office</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Ciągłe dostarczanie</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Platforma mobilna</a></p>
@@ -119,12 +124,11 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Microsoft Dynam
 <p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">Wdrożenie lokalne</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Uaktualnianie</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Obsługa</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Struktura zarządzania danymi</a></p>
-<p>Usługa <a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
+<p><a href="../dev-itpro/lifecycle-services/lcs.md">Usługa Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Administrowanie organizacją</a></p>
 </td>
 <td>
-<h3>Produkty pokrewne</h3>
+<h3>Powiązane produkty</h3>
 <h4><a href="../retail/index.md">Dynamics 365 for Retail</a></h4>
 <p><a href="../retail/call-center-functionality.md">Biuro obsługi</p>
 <p><a href="../retail/define-maintain-retail-channels.md">Konfigurowanie kanałów i zarządzanie nimi</p>

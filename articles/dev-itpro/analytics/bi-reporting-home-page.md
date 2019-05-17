@@ -18,11 +18,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: efd96759c5fb50e30d213e9e5d58a22fd77bc7a2
-ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "902849"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1504109"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Strona główna narzędzi analizy biznesowej (BI) i sprawozdawczości
 
@@ -44,8 +44,8 @@ Użytkownicy mogą obsługiwać dane myszką lub dotykając elementów na stroni
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-- [Wbudowane Power BI w obszarach roboczych](embed-power-bi-workspaces.md)
-- [Integracja Power BI Embedded — często zadawane pytania](power-bi-embedded-integration.md)
+- [Osadzona usługa Power BI w obszarach roboczych](embed-power-bi-workspaces.md)
+- [Integracja usługi Power BI Embedded](power-bi-embedded-integration.md)
 - [Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded](add-analytics-tab-workspaces.md)
 - [Pomoc w zabezpieczeniu analitycznych obszarów roboczych i raportów za pomocą Power BI Embedded](secure-analytical-workspaces.md)
 - [Zawartość Power BI dla rozwiązania Finance and Operations](power-bi-home-page.md)
