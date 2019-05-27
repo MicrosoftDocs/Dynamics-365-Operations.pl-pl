@@ -17,51 +17,51 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 5d7458c62b3b71adf981a1ce5a7260da9bfdbcd2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330225"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549567"
 ---
-# <a name="record-vendor-invoice-and-match-against-received-quantity"></a><span data-ttu-id="1cb36-103">Rejestrowanie faktury od dostawcy i porównywanie z przyjętą ilością</span><span class="sxs-lookup"><span data-stu-id="1cb36-103">Record vendor invoice and match against received quantity</span></span>
+# <a name="record-vendor-invoice-and-match-against-received-quantity"></a><span data-ttu-id="76aa6-103">Rejestrowanie faktury od dostawcy i porównywanie z przyjętą ilością</span><span class="sxs-lookup"><span data-stu-id="76aa6-103">Record vendor invoice and match against received quantity</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="1cb36-104">Po otrzymaniu od dostawcy faktury za towary lub usługi na zamówieniu zakupu w procesach biznesowych firmy może być wymagane, aby towary lub usługi zostały dostarczone przed zatwierdzeniem płatności za fakturę.</span><span class="sxs-lookup"><span data-stu-id="1cb36-104">When you receive an invoice from a vendor for goods or services on a purchase order, the business processes might require that the goods or services be received before the invoice can be approved for payment.</span></span> <span data-ttu-id="1cb36-105">Zanim rozpoczniesz, upewnij się, że wybrano klucz konfiguracji Uzgadnianie faktur.</span><span class="sxs-lookup"><span data-stu-id="1cb36-105">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span> 
+<span data-ttu-id="76aa6-104">Po otrzymaniu od dostawcy faktury za towary lub usługi na zamówieniu zakupu w procesach biznesowych firmy może być wymagane, aby towary lub usługi zostały dostarczone przed zatwierdzeniem płatności za fakturę.</span><span class="sxs-lookup"><span data-stu-id="76aa6-104">When you receive an invoice from a vendor for goods or services on a purchase order, the business processes might require that the goods or services be received before the invoice can be approved for payment.</span></span> <span data-ttu-id="76aa6-105">Zanim rozpoczniesz, upewnij się, że wybrano klucz konfiguracji Uzgadnianie faktur.</span><span class="sxs-lookup"><span data-stu-id="76aa6-105">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span> 
 
-<span data-ttu-id="1cb36-106">Na stronie Parametry modułu rozrachunków z dostawcami upewnij się, że zaznaczono opcję Włącz weryfikację uzgadniania faktur, w polu Księguj fakturę z rozbieżnościami zaznaczono opcję Wymagaj zatwierdzania, a pole Zasady uzgadniania wierszy ma wartość Uzgadnianie trzyelementowe.</span><span class="sxs-lookup"><span data-stu-id="1cb36-106">In the Accounts payable parameters page, ensure that the Enable invoice matching validation option is selected, the Post invoice with discrepancies field is set to Require approval, and the Line matching policy field is set to Three-way matching.</span></span>
+<span data-ttu-id="76aa6-106">Na stronie Parametry modułu rozrachunków z dostawcami upewnij się, że zaznaczono opcję Włącz weryfikację uzgadniania faktur, w polu Księguj fakturę z rozbieżnościami zaznaczono opcję Wymagaj zatwierdzania, a pole Zasady uzgadniania wierszy ma wartość Uzgadnianie trzyelementowe.</span><span class="sxs-lookup"><span data-stu-id="76aa6-106">In the Accounts payable parameters page, ensure that the Enable invoice matching validation option is selected, the Post invoice with discrepancies field is set to Require approval, and the Line matching policy field is set to Three-way matching.</span></span>
 
-<span data-ttu-id="1cb36-107">Ta procedura wykorzystuje firmę demonstracyjną USMF.</span><span class="sxs-lookup"><span data-stu-id="1cb36-107">This procedure uses the USMF demo company.</span></span> <span data-ttu-id="1cb36-108">Czynności te wykonuje menedżer ds. rozrachunków z dostawcami lub menedżer księgowości.</span><span class="sxs-lookup"><span data-stu-id="1cb36-108">The accounts payable manager or accounting manager role would perform these steps.</span></span>
+<span data-ttu-id="76aa6-107">Ta procedura wykorzystuje firmę demonstracyjną USMF.</span><span class="sxs-lookup"><span data-stu-id="76aa6-107">This procedure uses the USMF demo company.</span></span> <span data-ttu-id="76aa6-108">Czynności te wykonuje menedżer ds. rozrachunków z dostawcami lub menedżer księgowości.</span><span class="sxs-lookup"><span data-stu-id="76aa6-108">The accounts payable manager or accounting manager role would perform these steps.</span></span>
 
 
-## <a name="create-a-purchase-order"></a><span data-ttu-id="1cb36-109">Tworzenie zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="1cb36-109">Create a purchase order</span></span>
-1. <span data-ttu-id="1cb36-110">Przejdź do okna Wszystkie zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="1cb36-110">Go to All purchase orders.</span></span>
-2. <span data-ttu-id="1cb36-111">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="1cb36-111">Click New.</span></span>
-3. <span data-ttu-id="1cb36-112">W polu Konto dostawcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="1cb36-112">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="1cb36-113">W polu Konto dostawcy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="1cb36-113">In the Vendor account field, type a value.</span></span>
-5. <span data-ttu-id="1cb36-114">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="1cb36-114">Click OK.</span></span>
-6. <span data-ttu-id="1cb36-115">Kliknij przycisk Dodaj wiersz.</span><span class="sxs-lookup"><span data-stu-id="1cb36-115">Click Add line.</span></span>
-7. <span data-ttu-id="1cb36-116">W polu Numer towaru wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="1cb36-116">In the Item number field, type a value.</span></span>
-8. <span data-ttu-id="1cb36-117">W okienku akcji kliknij pozycję Zakup.</span><span class="sxs-lookup"><span data-stu-id="1cb36-117">On the Action Pane, click Purchase.</span></span>
-9. <span data-ttu-id="1cb36-118">Kliknij przycisk Potwierdź.</span><span class="sxs-lookup"><span data-stu-id="1cb36-118">Click Confirm.</span></span>
+## <a name="create-a-purchase-order"></a><span data-ttu-id="76aa6-109">Tworzenie zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="76aa6-109">Create a purchase order</span></span>
+1. <span data-ttu-id="76aa6-110">Przejdź do okna Wszystkie zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="76aa6-110">Go to All purchase orders.</span></span>
+2. <span data-ttu-id="76aa6-111">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="76aa6-111">Click New.</span></span>
+3. <span data-ttu-id="76aa6-112">W polu Konto dostawcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="76aa6-112">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="76aa6-113">W polu Konto dostawcy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="76aa6-113">In the Vendor account field, type a value.</span></span>
+5. <span data-ttu-id="76aa6-114">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="76aa6-114">Click OK.</span></span>
+6. <span data-ttu-id="76aa6-115">Kliknij przycisk Dodaj wiersz.</span><span class="sxs-lookup"><span data-stu-id="76aa6-115">Click Add line.</span></span>
+7. <span data-ttu-id="76aa6-116">W polu Numer towaru wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="76aa6-116">In the Item number field, type a value.</span></span>
+8. <span data-ttu-id="76aa6-117">W okienku akcji kliknij pozycję Zakup.</span><span class="sxs-lookup"><span data-stu-id="76aa6-117">On the Action Pane, click Purchase.</span></span>
+9. <span data-ttu-id="76aa6-118">Kliknij przycisk Potwierdź.</span><span class="sxs-lookup"><span data-stu-id="76aa6-118">Click Confirm.</span></span>
 
-## <a name="post-a-product-receipt"></a><span data-ttu-id="1cb36-119">Księgowanie dokumentu przyjęcia produktów</span><span class="sxs-lookup"><span data-stu-id="1cb36-119">Post a product receipt</span></span>
-1. <span data-ttu-id="1cb36-120">W okienku akcji kliknij pozycję Odbierz.</span><span class="sxs-lookup"><span data-stu-id="1cb36-120">On the Action Pane, click Receive.</span></span>
-2. <span data-ttu-id="1cb36-121">Kliknij opcję Dokument przyjęcia produktów.</span><span class="sxs-lookup"><span data-stu-id="1cb36-121">Click Product receipt.</span></span>
-3. <span data-ttu-id="1cb36-122">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="1cb36-122">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="1cb36-123">W polu Dokument przyjęcia produktów wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="1cb36-123">In the Product receipt field, type a value.</span></span>
-5. <span data-ttu-id="1cb36-124">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="1cb36-124">Click OK.</span></span>
+## <a name="post-a-product-receipt"></a><span data-ttu-id="76aa6-119">Księgowanie dokumentu przyjęcia produktów</span><span class="sxs-lookup"><span data-stu-id="76aa6-119">Post a product receipt</span></span>
+1. <span data-ttu-id="76aa6-120">W okienku akcji kliknij pozycję Odbierz.</span><span class="sxs-lookup"><span data-stu-id="76aa6-120">On the Action Pane, click Receive.</span></span>
+2. <span data-ttu-id="76aa6-121">Kliknij opcję Dokument przyjęcia produktów.</span><span class="sxs-lookup"><span data-stu-id="76aa6-121">Click Product receipt.</span></span>
+3. <span data-ttu-id="76aa6-122">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="76aa6-122">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="76aa6-123">W polu Dokument przyjęcia produktów wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="76aa6-123">In the Product receipt field, type a value.</span></span>
+5. <span data-ttu-id="76aa6-124">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="76aa6-124">Click OK.</span></span>
 
-## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a><span data-ttu-id="1cb36-125">Rejestrowanie i uzgadnianie faktury od dostawcy z dokumentem przyjęcia produktów</span><span class="sxs-lookup"><span data-stu-id="1cb36-125">Record and match a vendor invoice to a product receipt</span></span>
-1. <span data-ttu-id="1cb36-126">W okienku akcji kliknij pozycję Faktura.</span><span class="sxs-lookup"><span data-stu-id="1cb36-126">On the Action Pane, click Invoice.</span></span>
-2. <span data-ttu-id="1cb36-127">Kliknij opcję Faktura.</span><span class="sxs-lookup"><span data-stu-id="1cb36-127">Click Invoice.</span></span>
-3. <span data-ttu-id="1cb36-128">W polu Numer wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="1cb36-128">In the Number field, type a value.</span></span>
-4. <span data-ttu-id="1cb36-129">Na liście Domyślnie z zaznacz opcję Zamówiona ilość, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="1cb36-129">Click Default from: Ordered quantity to open the drop dialog.</span></span>
-5. <span data-ttu-id="1cb36-130">W polu Domyślna ilość dla wierszy zaznacz opcję.</span><span class="sxs-lookup"><span data-stu-id="1cb36-130">In the Default quantity for lines field, select an option.</span></span>
-6. <span data-ttu-id="1cb36-131">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="1cb36-131">Click OK.</span></span>
-7. <span data-ttu-id="1cb36-132">Kliknij przycisk Tak.</span><span class="sxs-lookup"><span data-stu-id="1cb36-132">Click Yes.</span></span>
-8. <span data-ttu-id="1cb36-133">Kliknij opcję Dopasuj dokumenty przyjęcia produktów.</span><span class="sxs-lookup"><span data-stu-id="1cb36-133">Click Match product receipts.</span></span>
-9. <span data-ttu-id="1cb36-134">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="1cb36-134">Click OK.</span></span>
-10. <span data-ttu-id="1cb36-135">W okienku akcji kliknij pozycję Przegląd.</span><span class="sxs-lookup"><span data-stu-id="1cb36-135">On the Action Pane, click Review.</span></span>
-11. <span data-ttu-id="1cb36-136">Kliknij przycisk Szczegóły uzgadniania.</span><span class="sxs-lookup"><span data-stu-id="1cb36-136">Click Matching details.</span></span>
+## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a><span data-ttu-id="76aa6-125">Rejestrowanie i uzgadnianie faktury od dostawcy z dokumentem przyjęcia produktów</span><span class="sxs-lookup"><span data-stu-id="76aa6-125">Record and match a vendor invoice to a product receipt</span></span>
+1. <span data-ttu-id="76aa6-126">W okienku akcji kliknij pozycję Faktura.</span><span class="sxs-lookup"><span data-stu-id="76aa6-126">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="76aa6-127">Kliknij opcję Faktura.</span><span class="sxs-lookup"><span data-stu-id="76aa6-127">Click Invoice.</span></span>
+3. <span data-ttu-id="76aa6-128">W polu Numer wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="76aa6-128">In the Number field, type a value.</span></span>
+4. <span data-ttu-id="76aa6-129">Na liście Domyślnie z zaznacz opcję Zamówiona ilość, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="76aa6-129">Click Default from: Ordered quantity to open the drop dialog.</span></span>
+5. <span data-ttu-id="76aa6-130">W polu Domyślna ilość dla wierszy zaznacz opcję.</span><span class="sxs-lookup"><span data-stu-id="76aa6-130">In the Default quantity for lines field, select an option.</span></span>
+6. <span data-ttu-id="76aa6-131">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="76aa6-131">Click OK.</span></span>
+7. <span data-ttu-id="76aa6-132">Kliknij przycisk Tak.</span><span class="sxs-lookup"><span data-stu-id="76aa6-132">Click Yes.</span></span>
+8. <span data-ttu-id="76aa6-133">Kliknij opcję Dopasuj dokumenty przyjęcia produktów.</span><span class="sxs-lookup"><span data-stu-id="76aa6-133">Click Match product receipts.</span></span>
+9. <span data-ttu-id="76aa6-134">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="76aa6-134">Click OK.</span></span>
+10. <span data-ttu-id="76aa6-135">W okienku akcji kliknij pozycję Przegląd.</span><span class="sxs-lookup"><span data-stu-id="76aa6-135">On the Action Pane, click Review.</span></span>
+11. <span data-ttu-id="76aa6-136">Kliknij przycisk Szczegóły uzgadniania.</span><span class="sxs-lookup"><span data-stu-id="76aa6-136">Click Matching details.</span></span>
 

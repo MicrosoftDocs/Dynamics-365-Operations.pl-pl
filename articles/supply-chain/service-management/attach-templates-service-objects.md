@@ -19,38 +19,38 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3cfd653278169c935095b54f488b65a8939d8309
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "311020"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1545343"
 ---
-# <a name="attach-templates-to-service-objects"></a><span data-ttu-id="3bdd9-103">Dołączanie szablonów do przedmiotów serwisu</span><span class="sxs-lookup"><span data-stu-id="3bdd9-103">Attach templates to service objects</span></span>    
+# <a name="attach-templates-to-service-objects"></a><span data-ttu-id="14aa1-103">Dołączanie szablonów do przedmiotów serwisu</span><span class="sxs-lookup"><span data-stu-id="14aa1-103">Attach templates to service objects</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="3bdd9-104">Do relacji przedmiotu serwisu można dołączyć szablon listy składowej (BOM).</span><span class="sxs-lookup"><span data-stu-id="3bdd9-104">A template bill of materials (BOM) can be attached to a service object relation.</span></span> <span data-ttu-id="3bdd9-105">Następnie relację przedmiotu serwisu można skojarzyć ze zleceniami serwisowymi lub umowami serwisowymi.</span><span class="sxs-lookup"><span data-stu-id="3bdd9-105">The service object relation can then be associated with either service orders or service agreements.</span></span>
+<span data-ttu-id="14aa1-104">Do relacji przedmiotu serwisu można dołączyć szablon listy składowej (BOM).</span><span class="sxs-lookup"><span data-stu-id="14aa1-104">A template bill of materials (BOM) can be attached to a service object relation.</span></span> <span data-ttu-id="14aa1-105">Następnie relację przedmiotu serwisu można skojarzyć ze zleceniami serwisowymi lub umowami serwisowymi.</span><span class="sxs-lookup"><span data-stu-id="14aa1-105">The service object relation can then be associated with either service orders or service agreements.</span></span>
 
-1.  <span data-ttu-id="3bdd9-106">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Przedmioty serwisu** \> **Przedmioty serwisu**.</span><span class="sxs-lookup"><span data-stu-id="3bdd9-106">Click **Service management** \> **Setup** \> **Service objects** \> **Service objects**.</span></span>
+1.  <span data-ttu-id="14aa1-106">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Przedmioty serwisu** \> **Przedmioty serwisu**.</span><span class="sxs-lookup"><span data-stu-id="14aa1-106">Click **Service management** \> **Setup** \> **Service objects** \> **Service objects**.</span></span>
 
-2.  <span data-ttu-id="3bdd9-107">Wybierz przedmiot serwisu.</span><span class="sxs-lookup"><span data-stu-id="3bdd9-107">Select a service object.</span></span>
+2.  <span data-ttu-id="14aa1-107">Wybierz przedmiot serwisu.</span><span class="sxs-lookup"><span data-stu-id="14aa1-107">Select a service object.</span></span>
 
-3.  <span data-ttu-id="3bdd9-108">Kliknij opcję **Umowy serwisowe** lub **Zlecenia serwisowe**, aby wyświetlić umowy lub zlecenia serwisowe, z którymi skojarzono przedmiot serwisu.</span><span class="sxs-lookup"><span data-stu-id="3bdd9-108">Click **Service agreements** or **Service orders** to display the service agreements or service orders that the service object has been associated with.</span></span>
+3.  <span data-ttu-id="14aa1-108">Kliknij opcję **Umowy serwisowe** lub **Zlecenia serwisowe**, aby wyświetlić umowy lub zlecenia serwisowe, z którymi skojarzono przedmiot serwisu.</span><span class="sxs-lookup"><span data-stu-id="14aa1-108">Click **Service agreements** or **Service orders** to display the service agreements or service orders that the service object has been associated with.</span></span>
 
-4.  <span data-ttu-id="3bdd9-109">Zaznacz umowę serwisową lub zlecenie serwisowe, kliknij opcję **Funkcje**, a następnie kliknij przycisk **Dołącz szablon BOM**.</span><span class="sxs-lookup"><span data-stu-id="3bdd9-109">Select a service agreement or a service order, click **Functions**, and then click **Attach template BOM**.</span></span>
+4.  <span data-ttu-id="14aa1-109">Zaznacz umowę serwisową lub zlecenie serwisowe, kliknij opcję **Funkcje**, a następnie kliknij przycisk **Dołącz szablon BOM**.</span><span class="sxs-lookup"><span data-stu-id="14aa1-109">Select a service agreement or a service order, click **Functions**, and then click **Attach template BOM**.</span></span>
 
-5.  <span data-ttu-id="3bdd9-110">Wybierz szablon BOM, który chcesz dołączyć do przedmiotu.</span><span class="sxs-lookup"><span data-stu-id="3bdd9-110">Select the template BOM to attach to the object.</span></span>
+5.  <span data-ttu-id="14aa1-110">Wybierz szablon BOM, który chcesz dołączyć do przedmiotu.</span><span class="sxs-lookup"><span data-stu-id="14aa1-110">Select the template BOM to attach to the object.</span></span>
 
 
 > [!TIP]
-> <P><span data-ttu-id="3bdd9-111">Aby przenieść dołączoną listę BOM do innego przedmiotu serwisu lub usunąć ją, w formularzu <STRONG>Przedmioty serwisu</STRONG> kliknij opcję <STRONG>Funkcje</STRONG>, a następnie opcję <STRONG>Przenieś BOM serwisu</STRONG> lub <STRONG>Usuń BOM serwisu</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="3bdd9-111">To move an attached BOM to another service object or to delete an attached BOM, in the <STRONG>Service objects</STRONG> form, click <STRONG>Functions</STRONG>, and then click <STRONG>Move service BOM</STRONG> or <STRONG>Delete service BOM</STRONG>.</span></span></P>
+> <P><span data-ttu-id="14aa1-111">Aby przenieść dołączoną listę BOM do innego przedmiotu serwisu lub usunąć ją, w formularzu <STRONG>Przedmioty serwisu</STRONG> kliknij opcję <STRONG>Funkcje</STRONG>, a następnie opcję <STRONG>Przenieś BOM serwisu</STRONG> lub <STRONG>Usuń BOM serwisu</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="14aa1-111">To move an attached BOM to another service object or to delete an attached BOM, in the <STRONG>Service objects</STRONG> form, click <STRONG>Functions</STRONG>, and then click <STRONG>Move service BOM</STRONG> or <STRONG>Delete service BOM</STRONG>.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="3bdd9-112">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="3bdd9-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="14aa1-112">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="14aa1-112">See also</span></span>
 
-[<span data-ttu-id="3bdd9-113">Tworzenie przedmiotów serwisu</span><span class="sxs-lookup"><span data-stu-id="3bdd9-113">Create service objects</span></span>](create-service-objects.md)
+[<span data-ttu-id="14aa1-113">Tworzenie przedmiotów serwisu</span><span class="sxs-lookup"><span data-stu-id="14aa1-113">Create service objects</span></span>](create-service-objects.md)
 
   
 

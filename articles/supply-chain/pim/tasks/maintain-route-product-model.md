@@ -17,53 +17,53 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 0e793466e021671501570aed06959d684d5e9c15
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "317161"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1567706"
 ---
-# <a name="maintain-route-for-a-product-model"></a><span data-ttu-id="365f4-103">Obsługa marszruty modelu produktu</span><span class="sxs-lookup"><span data-stu-id="365f4-103">Maintain route for a product model</span></span>
+# <a name="maintain-route-for-a-product-model"></a><span data-ttu-id="188ea-103">Obsługa marszruty modelu produktu</span><span class="sxs-lookup"><span data-stu-id="188ea-103">Maintain route for a product model</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="365f4-104">Wykonanie tej procedury wymaga istnienia modelu konfiguracji produktu.</span><span class="sxs-lookup"><span data-stu-id="365f4-104">Running this procedure requires that a product configuration model exists.</span></span> <span data-ttu-id="365f4-105">Ta procedura wykorzystuje w kolejnych krokach model Głośnik o wysokiej jakości zdefiniowany w firmie demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="365f4-105">This procedure uses the High end speaker model in the demo company USMF to walk you through the process.</span></span>
+<span data-ttu-id="188ea-104">Wykonanie tej procedury wymaga istnienia modelu konfiguracji produktu.</span><span class="sxs-lookup"><span data-stu-id="188ea-104">Running this procedure requires that a product configuration model exists.</span></span> <span data-ttu-id="188ea-105">Ta procedura wykorzystuje w kolejnych krokach model Głośnik o wysokiej jakości zdefiniowany w firmie demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="188ea-105">This procedure uses the High end speaker model in the demo company USMF to walk you through the process.</span></span>
 
 
-## <a name="add-a-route-operation"></a><span data-ttu-id="365f4-106">Dodawanie operacji marszruty</span><span class="sxs-lookup"><span data-stu-id="365f4-106">Add a route operation</span></span>
-1. <span data-ttu-id="365f4-107">Kliknij opcję Definicja modelu wariantu produktu.</span><span class="sxs-lookup"><span data-stu-id="365f4-107">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="365f4-108">Kliknij opcję Modele konfiguracji produktu.</span><span class="sxs-lookup"><span data-stu-id="365f4-108">Click Product configuration models.</span></span>
-3. <span data-ttu-id="365f4-109">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="365f4-109">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="365f4-110">Do tego ćwiczenia wybierz model Głośnik o wysokiej jakości.</span><span class="sxs-lookup"><span data-stu-id="365f4-110">Select the High end speaker model for this exercise.</span></span>  
-4. <span data-ttu-id="365f4-111">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="365f4-111">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="365f4-112">Rozwiń sekcję Operacje marszruty.</span><span class="sxs-lookup"><span data-stu-id="365f4-112">Expand the Route operations section.</span></span>
-6. <span data-ttu-id="365f4-113">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="365f4-113">Click Add.</span></span>
-7. <span data-ttu-id="365f4-114">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="365f4-114">In the Name field, type a value.</span></span>
-8. <span data-ttu-id="365f4-115">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="365f4-115">In the Description field, type a value.</span></span>
-9. <span data-ttu-id="365f4-116">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="365f4-116">Click Save.</span></span>
+## <a name="add-a-route-operation"></a><span data-ttu-id="188ea-106">Dodawanie operacji marszruty</span><span class="sxs-lookup"><span data-stu-id="188ea-106">Add a route operation</span></span>
+1. <span data-ttu-id="188ea-107">Kliknij opcję Definicja modelu wariantu produktu.</span><span class="sxs-lookup"><span data-stu-id="188ea-107">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="188ea-108">Kliknij opcję Modele konfiguracji produktu.</span><span class="sxs-lookup"><span data-stu-id="188ea-108">Click Product configuration models.</span></span>
+3. <span data-ttu-id="188ea-109">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="188ea-109">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="188ea-110">Do tego ćwiczenia wybierz model Głośnik o wysokiej jakości.</span><span class="sxs-lookup"><span data-stu-id="188ea-110">Select the High end speaker model for this exercise.</span></span>  
+4. <span data-ttu-id="188ea-111">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="188ea-111">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="188ea-112">Rozwiń sekcję Operacje marszruty.</span><span class="sxs-lookup"><span data-stu-id="188ea-112">Expand the Route operations section.</span></span>
+6. <span data-ttu-id="188ea-113">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="188ea-113">Click Add.</span></span>
+7. <span data-ttu-id="188ea-114">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="188ea-114">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="188ea-115">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="188ea-115">In the Description field, type a value.</span></span>
+9. <span data-ttu-id="188ea-116">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="188ea-116">Click Save.</span></span>
 
-## <a name="enter-route-operation-details"></a><span data-ttu-id="365f4-117">Wprowadzanie szczegółów operacji marszruty</span><span class="sxs-lookup"><span data-stu-id="365f4-117">Enter route operation details</span></span>
-1. <span data-ttu-id="365f4-118">Kliknij opcję Szczegóły operacji marszruty.</span><span class="sxs-lookup"><span data-stu-id="365f4-118">Click Route operation details.</span></span>
-2. <span data-ttu-id="365f4-119">W polu Operacja wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="365f4-119">In the Operation field, enter or select a value.</span></span>
-3. <span data-ttu-id="365f4-120">W polu Nr operacji</span><span class="sxs-lookup"><span data-stu-id="365f4-120">In the Oper.</span></span> <span data-ttu-id="365f4-121">Nr</span><span class="sxs-lookup"><span data-stu-id="365f4-121">No.</span></span> <span data-ttu-id="365f4-122">wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="365f4-122">field, enter a number.</span></span>
-    * <span data-ttu-id="365f4-123">Numery operacji decydują o kolejności czynności w marszrucie.</span><span class="sxs-lookup"><span data-stu-id="365f4-123">Operation numbers determine the route sequence.</span></span>  
-    * <span data-ttu-id="365f4-124">Każda właściwość operacji marszruty może przybierać wartość statyczną lub być zmapowana do atrybutu.</span><span class="sxs-lookup"><span data-stu-id="365f4-124">Each property on a route operation can get a static value or be mapped to an attribute.</span></span> <span data-ttu-id="365f4-125">Mapowanie do atrybutu spowoduje ustawianie wartość w trakcie konfigurowania.</span><span class="sxs-lookup"><span data-stu-id="365f4-125">Mapping to an attribute will result in the value being set as part of the configuration.</span></span>  
-4. <span data-ttu-id="365f4-126">W polu Grupa marszruty wpisz lub wprowadź wartość.</span><span class="sxs-lookup"><span data-stu-id="365f4-126">In the Route group field, enter or select a value.</span></span>
-    * <span data-ttu-id="365f4-127">Grupa marszrut określa podstawowe zachowania dotyczące wyceny, zużycia i konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="365f4-127">The route group determines essential behavior for costing, consumption, and setup.</span></span>  
-5. <span data-ttu-id="365f4-128">Kliknij kartę Ustawienia.</span><span class="sxs-lookup"><span data-stu-id="365f4-128">Click the Setup tab.</span></span>
-6. <span data-ttu-id="365f4-129">Kliknij kartę Czasy.</span><span class="sxs-lookup"><span data-stu-id="365f4-129">Click the Times tab.</span></span>
-7. <span data-ttu-id="365f4-130">W polu Ilość z procesu wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="365f4-130">In the Process qty. field, enter a number.</span></span>
-    * <span data-ttu-id="365f4-131">Określ, ile będzie przetwarzanych w jednej operacji.</span><span class="sxs-lookup"><span data-stu-id="365f4-131">Determine how many will be processed during one operation.</span></span>  
-8. <span data-ttu-id="365f4-132">W polu Godziny/czas wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="365f4-132">In the Hours/time field, enter a number.</span></span>
-    * <span data-ttu-id="365f4-133">Wprowadź współczynnik czasu.</span><span class="sxs-lookup"><span data-stu-id="365f4-133">Enter the time ratio.</span></span>  
-9. <span data-ttu-id="365f4-134">Zaznacz pole wyboru Ustaw.</span><span class="sxs-lookup"><span data-stu-id="365f4-134">Select the Set check box.</span></span>
-10. <span data-ttu-id="365f4-135">W polu Czas procesu wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="365f4-135">In the Run time field, enter a number.</span></span>
-    * <span data-ttu-id="365f4-136">Określ czas przetwarzania dla podanej ilości.</span><span class="sxs-lookup"><span data-stu-id="365f4-136">Determine the processing time for the quantity that you have specified.</span></span>  
-11. <span data-ttu-id="365f4-137">Kliknij kartę Zapotrzebowanie na zasoby.</span><span class="sxs-lookup"><span data-stu-id="365f4-137">Click the Resource requirements tab.</span></span>
-12. <span data-ttu-id="365f4-138">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="365f4-138">Click Add.</span></span>
-13. <span data-ttu-id="365f4-139">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="365f4-139">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="365f4-140">W polu Typ wymagania wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="365f4-140">In the Requirement type field, select an option.</span></span>
-    * <span data-ttu-id="365f4-141">Zdecyduj, czy chcesz określić konkretne zasoby czy możliwości, które muszą posiadać.</span><span class="sxs-lookup"><span data-stu-id="365f4-141">Decide if you want to specify specific resources or capabilities that they must possess.</span></span>  
-15. <span data-ttu-id="365f4-142">W polu Zapotrzebowanie wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="365f4-142">In the Requirement field, enter or select a value.</span></span>
-16. <span data-ttu-id="365f4-143">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="365f4-143">Click OK.</span></span>
+## <a name="enter-route-operation-details"></a><span data-ttu-id="188ea-117">Wprowadzanie szczegółów operacji marszruty</span><span class="sxs-lookup"><span data-stu-id="188ea-117">Enter route operation details</span></span>
+1. <span data-ttu-id="188ea-118">Kliknij opcję Szczegóły operacji marszruty.</span><span class="sxs-lookup"><span data-stu-id="188ea-118">Click Route operation details.</span></span>
+2. <span data-ttu-id="188ea-119">W polu Operacja wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="188ea-119">In the Operation field, enter or select a value.</span></span>
+3. <span data-ttu-id="188ea-120">W polu Nr operacji</span><span class="sxs-lookup"><span data-stu-id="188ea-120">In the Oper.</span></span> <span data-ttu-id="188ea-121">Nr</span><span class="sxs-lookup"><span data-stu-id="188ea-121">No.</span></span> <span data-ttu-id="188ea-122">wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="188ea-122">field, enter a number.</span></span>
+    * <span data-ttu-id="188ea-123">Numery operacji decydują o kolejności czynności w marszrucie.</span><span class="sxs-lookup"><span data-stu-id="188ea-123">Operation numbers determine the route sequence.</span></span>  
+    * <span data-ttu-id="188ea-124">Każda właściwość operacji marszruty może przybierać wartość statyczną lub być zmapowana do atrybutu.</span><span class="sxs-lookup"><span data-stu-id="188ea-124">Each property on a route operation can get a static value or be mapped to an attribute.</span></span> <span data-ttu-id="188ea-125">Mapowanie do atrybutu spowoduje ustawianie wartość w trakcie konfigurowania.</span><span class="sxs-lookup"><span data-stu-id="188ea-125">Mapping to an attribute will result in the value being set as part of the configuration.</span></span>  
+4. <span data-ttu-id="188ea-126">W polu Grupa marszruty wpisz lub wprowadź wartość.</span><span class="sxs-lookup"><span data-stu-id="188ea-126">In the Route group field, enter or select a value.</span></span>
+    * <span data-ttu-id="188ea-127">Grupa marszrut określa podstawowe zachowania dotyczące wyceny, zużycia i konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="188ea-127">The route group determines essential behavior for costing, consumption, and setup.</span></span>  
+5. <span data-ttu-id="188ea-128">Kliknij kartę Ustawienia.</span><span class="sxs-lookup"><span data-stu-id="188ea-128">Click the Setup tab.</span></span>
+6. <span data-ttu-id="188ea-129">Kliknij kartę Czasy.</span><span class="sxs-lookup"><span data-stu-id="188ea-129">Click the Times tab.</span></span>
+7. <span data-ttu-id="188ea-130">W polu Ilość z procesu wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="188ea-130">In the Process qty. field, enter a number.</span></span>
+    * <span data-ttu-id="188ea-131">Określ, ile będzie przetwarzanych w jednej operacji.</span><span class="sxs-lookup"><span data-stu-id="188ea-131">Determine how many will be processed during one operation.</span></span>  
+8. <span data-ttu-id="188ea-132">W polu Godziny/czas wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="188ea-132">In the Hours/time field, enter a number.</span></span>
+    * <span data-ttu-id="188ea-133">Wprowadź współczynnik czasu.</span><span class="sxs-lookup"><span data-stu-id="188ea-133">Enter the time ratio.</span></span>  
+9. <span data-ttu-id="188ea-134">Zaznacz pole wyboru Ustaw.</span><span class="sxs-lookup"><span data-stu-id="188ea-134">Select the Set check box.</span></span>
+10. <span data-ttu-id="188ea-135">W polu Czas procesu wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="188ea-135">In the Run time field, enter a number.</span></span>
+    * <span data-ttu-id="188ea-136">Określ czas przetwarzania dla podanej ilości.</span><span class="sxs-lookup"><span data-stu-id="188ea-136">Determine the processing time for the quantity that you have specified.</span></span>  
+11. <span data-ttu-id="188ea-137">Kliknij kartę Zapotrzebowanie na zasoby.</span><span class="sxs-lookup"><span data-stu-id="188ea-137">Click the Resource requirements tab.</span></span>
+12. <span data-ttu-id="188ea-138">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="188ea-138">Click Add.</span></span>
+13. <span data-ttu-id="188ea-139">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="188ea-139">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="188ea-140">W polu Typ wymagania wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="188ea-140">In the Requirement type field, select an option.</span></span>
+    * <span data-ttu-id="188ea-141">Zdecyduj, czy chcesz określić konkretne zasoby czy możliwości, które muszą posiadać.</span><span class="sxs-lookup"><span data-stu-id="188ea-141">Decide if you want to specify specific resources or capabilities that they must possess.</span></span>  
+15. <span data-ttu-id="188ea-142">W polu Zapotrzebowanie wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="188ea-142">In the Requirement field, enter or select a value.</span></span>
+16. <span data-ttu-id="188ea-143">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="188ea-143">Click OK.</span></span>
 

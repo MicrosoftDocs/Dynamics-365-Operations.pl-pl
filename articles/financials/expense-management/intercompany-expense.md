@@ -17,16 +17,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 9e1f2b9593d50d5ec04f039b9b995c8792b40612
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "351454"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566631"
 ---
-# <a name="intercompany-expenses"></a><span data-ttu-id="2e8ef-104">Wydatki międzyfirmowe</span><span class="sxs-lookup"><span data-stu-id="2e8ef-104">Intercompany expenses</span></span>
+# <a name="intercompany-expenses"></a><span data-ttu-id="e5167-104">Wydatki międzyfirmowe</span><span class="sxs-lookup"><span data-stu-id="e5167-104">Intercompany expenses</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="2e8ef-105">Pracownik zatrudniony przez jedną firmę w organizacji może wykonywać pracę dla innej firmy w tej samej organizacji.</span><span class="sxs-lookup"><span data-stu-id="2e8ef-105">A worker who is employed by one legal entity in an organization might perform work for another legal entity in the same organization.</span></span> <span data-ttu-id="2e8ef-106">W takiej sytuacji można użyć funkcji wydatków międzyfirmowych w celu przypisania wydatków pracownika do firmy, dla której wykonano pracę.</span><span class="sxs-lookup"><span data-stu-id="2e8ef-106">In this situation, you can use the intercompany expense feature to assign the worker’s expenses to the legal entity for which the work was performed.</span></span> <span data-ttu-id="2e8ef-107">Firma zatrudniająca pracownika nosi nazwę firmy wypożyczającej.</span><span class="sxs-lookup"><span data-stu-id="2e8ef-107">The legal entity that employs the worker is called the loaning legal entity.</span></span> <span data-ttu-id="2e8ef-108">Firma, dla której pracownik ponosi wydatki nosi nazwę firmy pożyczającej.</span><span class="sxs-lookup"><span data-stu-id="2e8ef-108">The legal entity for which the worker incurs expenses is called the borrowing legal entity.</span></span> 
+<span data-ttu-id="e5167-105">Pracownik zatrudniony przez jedną firmę w organizacji może wykonywać pracę dla innej firmy w tej samej organizacji.</span><span class="sxs-lookup"><span data-stu-id="e5167-105">A worker who is employed by one legal entity in an organization might perform work for another legal entity in the same organization.</span></span> <span data-ttu-id="e5167-106">W takiej sytuacji można użyć funkcji wydatków międzyfirmowych w celu przypisania wydatków pracownika do firmy, dla której wykonano pracę.</span><span class="sxs-lookup"><span data-stu-id="e5167-106">In this situation, you can use the intercompany expense feature to assign the worker’s expenses to the legal entity for which the work was performed.</span></span> <span data-ttu-id="e5167-107">Firma zatrudniająca pracownika nosi nazwę firmy wypożyczającej.</span><span class="sxs-lookup"><span data-stu-id="e5167-107">The legal entity that employs the worker is called the loaning legal entity.</span></span> <span data-ttu-id="e5167-108">Firma, dla której pracownik ponosi wydatki nosi nazwę firmy pożyczającej.</span><span class="sxs-lookup"><span data-stu-id="e5167-108">The legal entity for which the worker incurs expenses is called the borrowing legal entity.</span></span> 
 
-<span data-ttu-id="2e8ef-109">Zanim pracownik będzie mógł utworzyć i przesłać wydatki za pracę wykonaną dla różnych firm, w firmie wypożyczającej, na stronie **Parametry zarządzania wydatkami** wybierz opcję **Zezwalaj na wiersze wydatków międzyfirmowych**.</span><span class="sxs-lookup"><span data-stu-id="2e8ef-109">Before a worker can create and submit expenses for work that is performed for a different legal entity, in the loaning legal entity, on the **Expense management parameters** page, select the **Allow intercompany expense lines** option.</span></span> 
+<span data-ttu-id="e5167-109">Zanim pracownik będzie mógł utworzyć i przesłać wydatki za pracę wykonaną dla różnych firm, w firmie wypożyczającej, na stronie **Parametry zarządzania wydatkami** wybierz opcję **Zezwalaj na wiersze wydatków międzyfirmowych**.</span><span class="sxs-lookup"><span data-stu-id="e5167-109">Before a worker can create and submit expenses for work that is performed for a different legal entity, in the loaning legal entity, on the **Expense management parameters** page, select the **Allow intercompany expense lines** option.</span></span> 
