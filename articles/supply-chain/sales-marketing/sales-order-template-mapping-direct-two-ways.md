@@ -3,7 +3,7 @@ title: Synchronizacja zamówień sprzedaży bezpośrednio między rozwiązaniami
 description: Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do rozpoczynania synchronizacji zamówień sprzedaży między programami Microsoft Dynamics 365 for Sales i Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/11/2018
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a427bff3cd07adbf4d3d81f98bdf7f85a194730b
+ms.sourcegitcommit: 3f02d8a874d1696cbf21d100f1ad205c57224e4b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "339126"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539121"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Synchronizacja zamówień sprzedaży bezpośrednio między rozwiązaniem Sales a rozwiązaniem Finance and Operations
 
@@ -146,6 +146,16 @@ Przed zsynchronizowaniem zamówień sprzedaży należy zaktualizować poniższe 
 ### <a name="setup-in-finance-and-operations"></a>Konfiguracja w programie Finance and Operations
 
 - Przejdź do okna **Sprzedaż i marketing** &gt; **Zadania okresowe** &gt; **Obliczanie sum sprzedaży** i skonfiguruj zadanie tak, aby było uruchamiane jako zadanie wsadowe. Ustaw opcję **Oblicz sumy dla zamówień sprzedaży** na **Tak**. Ten krok jest ważny, ponieważ z rozwiązaniem Sales zostaną synchronizowane tylko zamówienia sprzedaży, dla których obliczono sumy sprzedaży. Częstotliwość zadania wsadowego powinna być zgodna z częstotliwością synchronizacji zamówienia sprzedaży.
+
+Jeśli używasz również integracji zlecenia, należy skonfigurować pochodzenie sprzedaży. Pochodzenie sprzedaży służy w programie Finance and Operations do odróżniania zamówień sprzedaży, które zostały utworzone na podstawie zleceń pracy w programie Field Service. Jeśli zamówienie sprzedaży ma pochodzenie sprzedaży typu **Integracja zlecenia**, w nagłówku zamówienia sprzedaży znajduje się pole **Zewnętrzny stan zlecenia**. Ponadto pochodzenie sprzedaży zapewnia, że zamówienia sprzedaży utworzone ze zleceń pracy w programie Field Service będą odfiltrowywane podczas synchronizacji zamówień sprzedaży między aplikacjami Finance and Operations i Field Service.
+
+1. Wybierz kolejno opcje **Sprzedaż i marketing** \> **Ustawienia** \> **Zamówienia sprzedaży** \> **Pochodzenie sprzedaży**.
+2. Wybierz opcję **Nowy**, aby utworzyć nowe pochodzenie sprzedaży.
+3. W polu **Pochodzenie sprzedaży** nadaj nazwę pochodzeniu sprzedaży, taką jak **SalesOrder**.
+4. W polu **Opis** wprowadź opis, taki jak **Zamówienie sprzedaży ze Sprzedaży**.
+5. Zaznacz pole wyboru **Przypisanie typu pochodzenia**.
+6. W polu **Typ pochodzenia sprzedaży** ustaw wartość **Integracja zamówienia sprzedaży**.
+7. Wybierz opcję **Zapisz**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-fin-and-ops---direct-data-integration-project"></a>Konfiguracja w projekcie integracji Zamówienia sprzedaży (z Sales do Fin and Ops) — projekt integracji danych bezpośrednich
 

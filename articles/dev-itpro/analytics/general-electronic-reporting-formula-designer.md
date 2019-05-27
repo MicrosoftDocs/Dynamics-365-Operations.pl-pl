@@ -3,7 +3,7 @@ title: Projektant formuł w module Raportowanie elektroniczne (ER)
 description: W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/03/2018
+ms.date: 05/14/2014
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "331283"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541275"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Projektant formuł w module Raportowanie elektroniczne (ER)
 
@@ -440,12 +440,17 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <td>Zwracanie określonej listy po zmodyfikowaniu zapytania w celu wyfiltrowania według podanego warunku. Ta funkcja różni się od funkcji <strong>WHERE</strong>, ponieważ podany warunek jest stosowany do każdego źródła danych ER o typie <strong>Rekordy tabeli</strong> na poziomie bazy danych. Listę i warunek można zdefiniować przy użyciu tabel i relacji.</td>
 <td>Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> zwraca listę wyłącznie dostawców należących do grupy dostawców 40. Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych ER odwołujące się do tabeli VendTable, a element <strong>parmVendorBankGroup</strong> jest skonfigurowany jako źródło danych ER zwracające wartość o typie danych <strong>String</strong>, to funkcja <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> zwraca listę tylko kont dostawców należących do określonej grupy bankowej.</td>
 </tr>
+<tr>
+<td>INDEKS (lista, indeks)</td>
+<td>Ta funkcja zwraca rekord wybrany przez określony indeks liczbowy z listy. Jeśli indeks jest poza zakresem rekordów na liście, zostanie zwrócony wyjątek.</td>
+<td>Jeśli wprowadzisz źródło danych <strong>DS</strong> dla typu <strong>Pole obliczeniowe</strong>, a w polu zostanie uwzględnione wyrażenie <strong>SPLIT ("A|B|C", “|”), 2)</strong>, wyrażenie <strong>DS.Value</strong> zwraca wartość tekstową „B”. Wyrażenie <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> także zwróci wartość tekstową „B”.</td>
+</tr>
 </tbody>
 </table>
 
 ### <a name="logical-functions"></a>Funkcje logiczne
 
-| Funkcja | opis | Przykład |
+| Funkcja | Opis | Przykład |
 |----------|-------------|---------|
 | CASE (wyrażenie, opcja 1, wynik 1 \[, opcja 2, wynik 2\] ... \[, wynik domyślny\]) | Wyznaczanie wartości określonego wyrażenia względem określonych opcji alternatywnych. Zwracanie wyniku opcji równego wartości wyrażenia. W przeciwnym razie zwracanie opcjonalnego wyniku domyślnego, jeśli jest on zdefiniowany. (Wynikiem domyślnym jest ostatni parametr niepoprzedzony opcją). | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "ZIMA", "11", "ZIMA", "12", "ZIMA", "")** zwraca ciąg **"ZIMA"**, gdy data bieżącej sesji programu Finance and Operations mieści się w okresie od października do grudnia. W przeciwnym razie zwraca ciąg pusty. |
 | IF (warunek, wartość 1, wartość 2) | Zwracanie pierwszej określonej wartości, jeśli jest spełniony podany warunek. W przeciwnym razie zwracanie drugiej określonej wartości. Jeśli wartości 1 i 2 są rekordami lub listami rekordów, wynik zawiera tylko pola, które istnieją na obu listach. | **IF (1=2, "warunek jest spełniony", "warunek nie jest spełniony")** zwraca ciąg **"warunek nie jest spełniony"**. |

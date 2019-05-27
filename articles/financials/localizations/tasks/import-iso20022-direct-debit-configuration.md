@@ -17,11 +17,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1757a1477e46f71e327bb70cf4780767b7509e55
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333077"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568730"
 ---
 # <a name="import-iso20022-direct-debit-configuration"></a>Importowanie konfiguracji polecenia zapłaty ISO20022
 

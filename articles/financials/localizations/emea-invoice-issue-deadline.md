@@ -17,12 +17,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 942b48170d7c164e16d2b8f5544b8777668adab3
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6c6a8b4c187678d01a3c61818bb7c300f12555a3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371513"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1538251"
 ---
 # <a name="invoice-issue-deadline"></a>Termin wystawienia faktury
 
