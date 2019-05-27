@@ -1,9 +1,9 @@
 ---
 title: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Talent
-description: W tym temacie wyjaśniono, jak uzyskać pomoc dotyczącą aplikacji Dynamics 365 for Talent.
+description: W tym temacie wyjaśniono, jak uzyskać pomoc dotyczącą Microsoft Dynamics 365 for Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/18/2018
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,32 +15,38 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.openlocfilehash: 39aadda6e4c221e243d55e2fd60bbc8484d3b21d
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: 9895ae8bdc6326b3863585d77b93576fe5fddcb4
+ms.sourcegitcommit: ab88de98a1958734213eb9d9b1988508b055f748
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992819"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538780"
 ---
 # <a name="get-support-for-talent"></a>Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Talent
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak uzyskać pomoc dotyczącą modułów Core HR, Attract i Onboard w aplikacji Talent.
+W tym temacie opisano, jak uzyskać pomoc dotyczącą modułów Microsoft Dynamics 365 for Talent Core HR, Dynamics 365 Talent: Attract i Dynamics 365 Talent: Onboard.
 
-<a name="contact-support"></a>Skontaktuj się z pomocą techniczną
----------------
-
-Używając informacji w tym temacie, kontaktuj się z firmą Microsoft w przypadku pytań technicznych o aplikację Talent.
-
-### <a name="talent-support"></a>Pomoc techniczna rozwiązania Talent 
+## <a name="support-for-talent"></a>Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Talent
 
 Aby uzyskać pomoc techniczną dotyczącą aplikacji Talent, skorzystaj z zasobów wymienionych w tabeli poniżej. Zasoby te są wymienione w kolejności, w jakiej zalecamy ich używać podczas rozwiązywania problemów.
 
-| **Zadanie**                                                | **Więcej informacji**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Zapytaj społeczność                                      | Przejdź do strony [Zapytaj społeczność](https://community.dynamics.com/365/talent), aby znaleźć odpowiedzi na pytania, a za pomocą opcji „Pomoc” poszukaj tematów dotyczących modułu Core HR.                                                                                                                                                                                                                                                                                                                                                                                  |
-| Używanie narzędzia Pomoc techniczna w chmurze                     | W usłudze [Lifecycle Services (LCS)](https://lcs.dynamics.com/) kafelek **Pomoc techniczna** jest narzędziem, które pomaga zarządzać zdarzeniami pomocy technicznej. Aby przesłać informacje o problemach bezpośrednio do firmy Microsoft, przejdź do kafelka **Pomoc techniczna** w swoim projekcie usługi LCS lub przejdź do **sekcji zgłoszeń o pomoc techniczną** w usłudze LCS i kliknij opcję **Pomoc techniczna w chmurze**. Z wyświetlonego okna można przesyłać problemy na dwa sposoby: 1. Jeśli przesyłasz zgłoszenie problemu za pośrednictwem usługi LCS, na karcie **Aktywny problem** zaznacz swój problem, a następnie kliknij opcję **Prześlij do Microsoft**. 2. Na karcie **Przesłano do firmy Microsoft** kliknij przycisk **Prześlij nowe zdarzenie**, aby zgłosić nowe problemy.  |
-| Pomoc techniczna w aplikacji                                 | W menu kliknij ikonę **?**, a następnie wybierz opcję **pomoc techniczna (Core HR) Zgłoś problem (Attract, Onboard)**. Problemy będą raportowane na karcie **aktywnych problemów** w LCS. Należy zauważyć, że w przypadku zakupu samodzielnej wersji programu Onboard, zgłaszane problemy będą wysyłane do firmy Microsoft.  |
-| Uzyskiwanie pomocy na temat licencjonowania aplikacji Talent         | Skontaktuj się z partnerem lub przedstawicielem handlowym firmy Microsoft.     |
-| Wnioskowanie o nowe funkcje w aplikacji Talent | W aplikacji Talent na jej stronie głównej wybierz ikonę **?** i wybierz opcję **Pomysły** lub użyj łącza [Pomysły](https://experience.dynamics.com/ideas/), aby wyświetlać, wyszukiwać lub opiniować pomysły albo dodawać nowe.          |                                                                                                                                                                                                                                                                                           
+| Zadanie | Więcej informacji |
+|------|------------------|
+| Kierowanie pytań do społeczności. | Przejdź do społeczności [Dynamics 365 for Talent](https://community.dynamics.com/365/talent), aby uzyskać pomoc dotyczącą pytań. Aby znaleźć odpowiedzi, wprowadź pytanie w polu wyszukiwania obok **pytania.** Aby zadać pytanie, wybierz opcję **Zadaj pytanie**. |
+| Użyj narzędzia Pomoc techniczna w chmurze. | W [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) przejdź do swojego projektu i wybierz kafelek **Pomoc techniczna**. Z wyświetlonego okna można przesyłać problemy na dwa sposoby:<ul><li>Na karcie **Aktywne problemy** wybierz problem, który chcesz przesłać, a następnie wybierz pozycję **Prześlij do firmy Microsoft**.</li><li>Na karcie **Przesłano do firmy Microsoft** kliknij przycisk **Prześlij nowe zdarzenie**, aby zgłosić nowy problem.</li></ul> |
+| Uzyskiwanie pomocy w aplikacji. | Kliknij przycisk **Pomoc** (**?**) w prawym górnym rogu strony. Następnie, jeśli jesteś w Core HR, wybierz opcję **pomoc techniczna**. Jeśli jesteś w Attract lub Onboard, wybierz **Zgłoś problem**. Problemy są raportowane na karcie **problemy aktywne** w systemie usługi LCS, gdzie administrator może określić, czy udzielić pomocy technicznej, czy też należy przekazać problemy do firmy Microsoft. (Jeśli masz autonomiczną wersję Onboard, problemy są przesyłane bezpośrednio do firmy Microsoft.) |
+| Uzyskiwanie pomocy na temat licencjonowania aplikacji Talent. | Skontaktuj się z partnerem lub przedstawicielem handlowym firmy Microsoft. |
+| Wnioskowanie o nowe funkcje w aplikacji Talent. | Na głównej stronie aplikacji Talent naciśnij przycisk **Pomoc** (**?**), a następnie wybierz opcję **pomysły.** Można również odwiedzić [pomysły dotyczące aplikacji Dynamics 365](https://experience.dynamics.com/ideas/), aby wyświetlić, wyszukać lub zagłosować na istniejące pomysły lub dodać nowe pomysły. |
+
+## <a name="support-for-the-onboard-stand-alone-app"></a>Pomoc techniczna do autonomicznej aplikacji Onboard
+
+Aby uzyskać pomoc techniczną dotyczącą autonomicznej instalacji Onboard, skorzystaj z zasobów wymienionych w tabeli poniżej. Zasoby te są wymienione w kolejności, w jakiej zalecamy ich używać podczas rozwiązywania problemów. Aby znaleźć wszystkie opcje pomocy technicznej, należy wybrać przycisk **pomoc** (**?**) znajdujący się w prawym górnym rogu strony.
+
+| Zadanie | Więcej informacji |
+|------|------------------|
+| Kierowanie pytań do społeczności. | Przejdź do społeczności [Dynamics 365 for Talent](https://community.dynamics.com/365/talent), aby uzyskać pomoc. Aby znaleźć odpowiedzi, wprowadź pytanie w polu wyszukiwania obok **pytania.** Aby zadać pytanie, wybierz opcję **Zadaj pytanie**. |
+| Zgłoś problem. | Wybierz przycisk **pomoc** (**?**) znajdujący się w prawym górnym rogu strony, a następnie wybierz opcję **Zgłoś problem**. Wypełnij pole opisu problemu oraz dołącz adres e-mail, jeśli chcesz śledzić proces rozwiązywania. |
+| Uzyskiwanie pomocy na temat licencjonowania aplikacji Talent. | Skontaktuj się z partnerem lub przedstawicielem handlowym firmy Microsoft. |
+| Wnioskowanie o nowe funkcje w aplikacji Onboard. | Wybierz przycisk **pomoc** (**?**), a następnie wybierz opcję **pomysły**. Można również odwiedzić pomysły dotyczące aplikacji [Dynamics 365 for Talent: Onboard](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard), aby wyświetlić, wyszukać lub zagłosować na istniejące pomysły lub dodać nowe pomysły. |

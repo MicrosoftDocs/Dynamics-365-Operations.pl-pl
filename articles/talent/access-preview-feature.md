@@ -1,12 +1,12 @@
 ---
 title: Dostęp do funkcji w wersji zapoznawczej w aplikacji Talent
 description: W tym temacie opisano, jak administrator może włączyć funkcje zapoznawcze, oraz podano listę funkcji dostępnych obecnie w wersji zapoznawczej.
-author: andreabichsel
+author: tracykeya
 manager: AnnBe
-ms.date: 04/17/2018
+ms.date: 04/29/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,15 +15,15 @@ ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: trkeya
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 060a36185641d5bb7912631b7c857c5c4331c8b7
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
+ms.openlocfilehash: 72e2a3c62c7aab0f5cf8900c540a22d91be00609
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "856331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518876"
 ---
 # <a name="access-preview-features-in-talent"></a>Dostęp do funkcji w wersji zapoznawczej w aplikacji Talent
 
@@ -72,6 +72,7 @@ Ustawienie **Funkcje w wersji zapoznawczej** dostępne w centrum administracyjny
 
 - **Zgłoszenie kandydata** — Teraz kandydaci wewnętrzni i zewnętrzni mogą składać podania o pracę bezpośrednio ze strony funkcji w witrynie rozwoju kariery.
 - **Zarządzanie ofertami** — Użytkownicy mogą teraz tworzyć pisma ofertowe za pomocą szablonów zawierających symbole zastępcze. Gdy kandydat dociera do etapu oferty, osoby rekrutujące i menedżerowie ds. zatrudnienia mogą za pomocą narzędzia Offer przygotować formalną ofertę dla kandydata przy użyciu szablonów, wysłać ofertę do wewnętrznego zatwierdzenia, a na koniec wysłać ofertę kandydatowi do podpisu. Z czasem do narzędzia Offer zostanie dodanych wiele nowych możliwości, a funkcja zapoznawcza zostanie zaktualizowana o te możliwości, gdy je dopracujemy do poziomu wersji zapoznawczej.
+- **[Raporty analityczne](analytic-reports.md)** — zespoły zatrudniające mogą wyświetlać kluczowe dane dla pojedynczego zadania w analizie zadań lub zagregowane dane o wszystkich zadaniach w Centrum analiz.
 
 ### <a name="core-hr"></a>Core HR
 

@@ -18,11 +18,11 @@ ms.author: v-dmpere
 ms.search.validFrom: 2019-2-1
 ms.dyn365.ops.version: 10.0.1
 ms.openlocfilehash: 55e102f2dad150f8aa25e7521e56de9cc8247daa
-ms.sourcegitcommit: 063a9296e645e0da182241941869d8102954540a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "898990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1515718"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Przykładowa integracja drukarki fiskalnej dla Polski
 

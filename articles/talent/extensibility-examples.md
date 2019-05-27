@@ -3,14 +3,14 @@ title: Rozszerzanie rozwiązania Talent przy użyciu usług PowerApps i Microsof
 description: W tym temacie opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 for Talent używanych przez Microsoft PowerApps i Microsoft Flow.
 author: negudava
 manager: Annbe
-ms.date: 03/04/2018
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent;Core;Experience Apps
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0aa3578047b9397682a7039d0dbcc05cc1b167e4
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "949927"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518818"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Rozszerzanie rozwiązania Talent przy użyciu usług PowerApps i Microsoft Flow — przykładowe scenariusze
 
@@ -101,7 +101,21 @@ Ten szablon może zostać rozszerzony tak, aby można go było używać w dowoln
 
 Aby pobrać szablon **przepływ — integracja SharePoint**, przejdź do [przepływ — integracja SharePoint](https://go.microsoft.com/fwlink/?linkid=2082109) w centrum pobierania Microsoft.
 
+## <a name="admin-console-to-manage-talent-pools"></a>Konsola administracyjna do zarządzania pulami talentów
 
+Po włączeniu integracji z usługą LinkedIn Attract automatycznie tworzy pulę talentów w serwisie LinkedIn. Kiedy osoba rekrutująca wymienia InMail z osobą rekrutowaną na LinkedIn, Attract tworzy profil osoby rekrutowanej i ta osoba staje się członkiem puli talentów serwisu LinkedIn. Ta aplikacja PowerApps jest przydatna do reorganizacji kandydatów w pulach talentów na podstawie kwalifikacji.
+
+Uruchom tę aplikację PowerApps jako konsolę administracyjną, aby wykonać następujące zadania:
+
+- Sporządzenie listy kandydatów w puli talentów
+- Dodawanie kandydatów do puli talentów i usuwanie
+- Przenoszenie kandydatów z jednej puli talentów do drugiej
+- Przed przeniesieniem należy określić, czy kandydaci są już częścią puli talentów
+- Sprawdź umiejętności kandydatów przed przeniesieniem ich do innych pul talentów
+
+Ta aplikacja PowerApps używa relacji typu wiele-do-wielu, więc można jej użyć jako szablonu dla innych scenariuszy, w których jest konieczne wyodrębnienie rekordów z relacjami typu „wiele do wielu”.
+
+Aby pobrać szablon **konsola administracyjna do zarządzania pulami talentów**, przejdź do [konsola administracyjna do zarządzania pulami talentów](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) w centrum pobierania Microsoft.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

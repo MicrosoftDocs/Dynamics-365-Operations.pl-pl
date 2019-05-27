@@ -16,12 +16,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c81625e9a042bf88268759065727bde332d37ea9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c3b97de064d7e151c6136d77d993ff4323055bc8
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371501"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1538237"
 ---
 # <a name="set-up-signers-for-print-forms"></a>Konfigurowanie osób podpisujących drukowane formularze
 
