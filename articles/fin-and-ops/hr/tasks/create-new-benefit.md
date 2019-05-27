@@ -17,41 +17,41 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: a74900f288fb5ce145f89e0ccad509deaac505cb
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "856285"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1507873"
 ---
-# <a name="create-a-new-benefit"></a><span data-ttu-id="b2c70-103">Utwórz nowe świadczenie</span><span class="sxs-lookup"><span data-stu-id="b2c70-103">Create a new benefit</span></span>
+# <a name="create-a-new-benefit"></a><span data-ttu-id="6b3e1-103">Utwórz nowe świadczenie</span><span class="sxs-lookup"><span data-stu-id="6b3e1-103">Create a new benefit</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b2c70-104">To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia.</span><span class="sxs-lookup"><span data-stu-id="b2c70-104">This task will show you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="b2c70-105">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="b2c70-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="b2c70-106">Zadanie jest przeznaczona dla menedżer ds. wynagrodzeń i świadczeń.</span><span class="sxs-lookup"><span data-stu-id="b2c70-106">This task is intended for a Compensation and Benefits manager.</span></span>
+<span data-ttu-id="6b3e1-104">To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-104">This task will show you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="6b3e1-105">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="6b3e1-106">Zadanie jest przeznaczona dla menedżer ds. wynagrodzeń i świadczeń.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-106">This task is intended for a Compensation and Benefits manager.</span></span>
 
 
-## <a name="create-benefit-elements"></a><span data-ttu-id="b2c70-107">Tworzenie elementów świadczenia</span><span class="sxs-lookup"><span data-stu-id="b2c70-107">Create benefit elements</span></span>
-1. <span data-ttu-id="b2c70-108">Wybierz kolejno opcje Zasoby ludzkie > Świadczenia > Ustawienia > Elementy świadczenia.</span><span class="sxs-lookup"><span data-stu-id="b2c70-108">Go to Human resources > Benefits > Setup > Benefit elements.</span></span>
-2. <span data-ttu-id="b2c70-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="b2c70-109">Click New.</span></span>
-3. <span data-ttu-id="b2c70-110">W polu Typ nadaj nazwę typowi świadczenia, które tworzysz.</span><span class="sxs-lookup"><span data-stu-id="b2c70-110">In the Type field, Enter the name of the type of benefit you are creating..</span></span>
-4. <span data-ttu-id="b2c70-111">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="b2c70-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="b2c70-112">W polu Rejestrowanie współbieżne wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="b2c70-112">In the Concurrent enrollment field, select an option.</span></span>
-    * <span data-ttu-id="b2c70-113">Aby ograniczyć pracownikom możliwość rejestracji w wielu planach medycznych, zaznacz opcję Jedna rejestracja na typ.</span><span class="sxs-lookup"><span data-stu-id="b2c70-113">To restrict employees' ability to enroll in multiple medical plans, select One enrollment per type.</span></span>  
-6. <span data-ttu-id="b2c70-114">W polu Kategoria listy płac wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="b2c70-114">In the Payroll category field, select an option.</span></span>
-7. <span data-ttu-id="b2c70-115">Kliknij kartę Plany.</span><span class="sxs-lookup"><span data-stu-id="b2c70-115">Click the Plans tab.</span></span>
-8. <span data-ttu-id="b2c70-116">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="b2c70-116">Click New.</span></span>
-9. <span data-ttu-id="b2c70-117">W polu Plan wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="b2c70-117">In the Plan field, type a value.</span></span>
-10. <span data-ttu-id="b2c70-118">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="b2c70-118">In the Description field, type a value.</span></span>
-11. <span data-ttu-id="b2c70-119">W polu Typ wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="b2c70-119">In the Type field, enter or select a value.</span></span>
-12. <span data-ttu-id="b2c70-120">W polu Wpływ na listę płac wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="b2c70-120">In the Payroll impact field, select an option.</span></span>
-13. <span data-ttu-id="b2c70-121">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="b2c70-121">Click Save.</span></span>
+## <a name="create-benefit-elements"></a><span data-ttu-id="6b3e1-107">Tworzenie elementów świadczenia</span><span class="sxs-lookup"><span data-stu-id="6b3e1-107">Create benefit elements</span></span>
+1. <span data-ttu-id="6b3e1-108">Wybierz kolejno opcje Zasoby ludzkie > Świadczenia > Ustawienia > Elementy świadczenia.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-108">Go to Human resources > Benefits > Setup > Benefit elements.</span></span>
+2. <span data-ttu-id="6b3e1-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-109">Click New.</span></span>
+3. <span data-ttu-id="6b3e1-110">W polu Typ nadaj nazwę typowi świadczenia, które tworzysz.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-110">In the Type field, Enter the name of the type of benefit you are creating..</span></span>
+4. <span data-ttu-id="6b3e1-111">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="6b3e1-112">W polu Rejestrowanie współbieżne wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-112">In the Concurrent enrollment field, select an option.</span></span>
+    * <span data-ttu-id="6b3e1-113">Aby ograniczyć pracownikom możliwość rejestracji w wielu planach medycznych, zaznacz opcję Jedna rejestracja na typ.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-113">To restrict employees' ability to enroll in multiple medical plans, select One enrollment per type.</span></span>  
+6. <span data-ttu-id="6b3e1-114">W polu Kategoria listy płac wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-114">In the Payroll category field, select an option.</span></span>
+7. <span data-ttu-id="6b3e1-115">Kliknij kartę Plany.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-115">Click the Plans tab.</span></span>
+8. <span data-ttu-id="6b3e1-116">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-116">Click New.</span></span>
+9. <span data-ttu-id="6b3e1-117">W polu Plan wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-117">In the Plan field, type a value.</span></span>
+10. <span data-ttu-id="6b3e1-118">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-118">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="6b3e1-119">W polu Typ wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-119">In the Type field, enter or select a value.</span></span>
+12. <span data-ttu-id="6b3e1-120">W polu Wpływ na listę płac wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-120">In the Payroll impact field, select an option.</span></span>
+13. <span data-ttu-id="6b3e1-121">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-121">Click Save.</span></span>
 
-## <a name="create-a-benefit"></a><span data-ttu-id="b2c70-122">Tworzenie świadczenia</span><span class="sxs-lookup"><span data-stu-id="b2c70-122">Create a benefit</span></span>
-1. <span data-ttu-id="b2c70-123">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="b2c70-123">Close the page.</span></span>
-2. <span data-ttu-id="b2c70-124">Wybierz kolejno opcje Zasoby ludzkie > Świadczenia > Świadczenia.</span><span class="sxs-lookup"><span data-stu-id="b2c70-124">Go to Human resources > Benefits > Benefits.</span></span>
-3. <span data-ttu-id="b2c70-125">Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="b2c70-125">Click New to open the drop dialog.</span></span>
-4. <span data-ttu-id="b2c70-126">W polu Plan wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="b2c70-126">In the Plan field, enter or select a value.</span></span>
-5. <span data-ttu-id="b2c70-127">W polu Opcja wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="b2c70-127">In the Option field, enter or select a value.</span></span>
-6. <span data-ttu-id="b2c70-128">W polu Data wprowadzenia wprowadź datę i godzinę.</span><span class="sxs-lookup"><span data-stu-id="b2c70-128">In the Effective field, enter a date and time.</span></span>
-7. <span data-ttu-id="b2c70-129">Kliknij przycisk Utwórz świadczenie.</span><span class="sxs-lookup"><span data-stu-id="b2c70-129">Click Create benefit.</span></span>
+## <a name="create-a-benefit"></a><span data-ttu-id="6b3e1-122">Tworzenie świadczenia</span><span class="sxs-lookup"><span data-stu-id="6b3e1-122">Create a benefit</span></span>
+1. <span data-ttu-id="6b3e1-123">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-123">Close the page.</span></span>
+2. <span data-ttu-id="6b3e1-124">Wybierz kolejno opcje Zasoby ludzkie > Świadczenia > Świadczenia.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-124">Go to Human resources > Benefits > Benefits.</span></span>
+3. <span data-ttu-id="6b3e1-125">Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-125">Click New to open the drop dialog.</span></span>
+4. <span data-ttu-id="6b3e1-126">W polu Plan wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-126">In the Plan field, enter or select a value.</span></span>
+5. <span data-ttu-id="6b3e1-127">W polu Opcja wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-127">In the Option field, enter or select a value.</span></span>
+6. <span data-ttu-id="6b3e1-128">W polu Data wprowadzenia wprowadź datę i godzinę.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-128">In the Effective field, enter a date and time.</span></span>
+7. <span data-ttu-id="6b3e1-129">Kliknij przycisk Utwórz świadczenie.</span><span class="sxs-lookup"><span data-stu-id="6b3e1-129">Click Create benefit.</span></span>
 

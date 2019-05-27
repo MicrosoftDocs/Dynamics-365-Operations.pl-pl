@@ -19,34 +19,34 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cdade89d07fec6a01926015a8c73bacce015fd7a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363552"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1563840"
 ---
-# <a name="reason-codes-for-service-orders"></a><span data-ttu-id="75fef-103">Kody przyczyn zleceń serwisowych</span><span class="sxs-lookup"><span data-stu-id="75fef-103">Reason codes for service orders</span></span>   
+# <a name="reason-codes-for-service-orders"></a><span data-ttu-id="42030-103">Kody przyczyn zleceń serwisowych</span><span class="sxs-lookup"><span data-stu-id="42030-103">Reason codes for service orders</span></span>   
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="75fef-104">Można używać kodów przyczyn do wyjaśniania stanu zlecenia serwisowego, gdy aktualizowany jest jego etap.</span><span class="sxs-lookup"><span data-stu-id="75fef-104">You can use reason codes to help explain the status of a service order when the stage of a service order is updated.</span></span> <span data-ttu-id="75fef-105">Na przykład w przypadku anulowania zlecenia serwisowego, można wybrać kod przyczyny anulowania.</span><span class="sxs-lookup"><span data-stu-id="75fef-105">For example, if you cancel a service order, you can select a reason code for the cancellation.</span></span>
+<span data-ttu-id="42030-104">Można używać kodów przyczyn do wyjaśniania stanu zlecenia serwisowego, gdy aktualizowany jest jego etap.</span><span class="sxs-lookup"><span data-stu-id="42030-104">You can use reason codes to help explain the status of a service order when the stage of a service order is updated.</span></span> <span data-ttu-id="42030-105">Na przykład w przypadku anulowania zlecenia serwisowego, można wybrać kod przyczyny anulowania.</span><span class="sxs-lookup"><span data-stu-id="42030-105">For example, if you cancel a service order, you can select a reason code for the cancellation.</span></span>
 
-<span data-ttu-id="75fef-106">Aby przeglądać informacje o kodach przyczyn używanych do śledzenia postępu zleceń serwisowych, należy uruchomić raport postępu zlecenia serwisowego.</span><span class="sxs-lookup"><span data-stu-id="75fef-106">To view information about reason codes that are used to track the progress of service orders, run the Service order progress report.</span></span> <span data-ttu-id="75fef-107">W raporcie tym są wyświetlane wszystkie zlecenia serwisowe, niezależnie od ich etapu, oraz kody przyczyn określone w momencie aktualizacji etapu zlecenia serwisowego.</span><span class="sxs-lookup"><span data-stu-id="75fef-107">This report lists all service orders, regardless of their stage, and the reason codes that are specified when a service order stage is updated.</span></span>
+<span data-ttu-id="42030-106">Aby przeglądać informacje o kodach przyczyn używanych do śledzenia postępu zleceń serwisowych, należy uruchomić raport postępu zlecenia serwisowego.</span><span class="sxs-lookup"><span data-stu-id="42030-106">To view information about reason codes that are used to track the progress of service orders, run the Service order progress report.</span></span> <span data-ttu-id="42030-107">W raporcie tym są wyświetlane wszystkie zlecenia serwisowe, niezależnie od ich etapu, oraz kody przyczyn określone w momencie aktualizacji etapu zlecenia serwisowego.</span><span class="sxs-lookup"><span data-stu-id="42030-107">This report lists all service orders, regardless of their stage, and the reason codes that are specified when a service order stage is updated.</span></span>
 
-## <a name="turn-reason-codes-on-or-off"></a><span data-ttu-id="75fef-108">Włączanie lub wyłączanie kodów przyczyn</span><span class="sxs-lookup"><span data-stu-id="75fef-108">Turn reason codes on or off</span></span>
+## <a name="turn-reason-codes-on-or-off"></a><span data-ttu-id="42030-108">Włączanie lub wyłączanie kodów przyczyn</span><span class="sxs-lookup"><span data-stu-id="42030-108">Turn reason codes on or off</span></span>
 
-<span data-ttu-id="75fef-109">Kody przyczyn są opcjonalne.</span><span class="sxs-lookup"><span data-stu-id="75fef-109">Reason codes are optional.</span></span> <span data-ttu-id="75fef-110">Użytkownik może zdecydować, czy potrzebny jest kod przyczyny podczas aktualizowania zlecenia serwisowego w związku z rozpoczęciem określonego etapu.</span><span class="sxs-lookup"><span data-stu-id="75fef-110">You can decide whether to require a reason code when you update a service order to a specific service stage.</span></span>
+<span data-ttu-id="42030-109">Kody przyczyn są opcjonalne.</span><span class="sxs-lookup"><span data-stu-id="42030-109">Reason codes are optional.</span></span> <span data-ttu-id="42030-110">Użytkownik może zdecydować, czy potrzebny jest kod przyczyny podczas aktualizowania zlecenia serwisowego w związku z rozpoczęciem określonego etapu.</span><span class="sxs-lookup"><span data-stu-id="42030-110">You can decide whether to require a reason code when you update a service order to a specific service stage.</span></span>
 
-1.  <span data-ttu-id="75fef-111">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Zlecenia serwisowe** \> **Etapy serwisu**.</span><span class="sxs-lookup"><span data-stu-id="75fef-111">Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.</span></span>
+1.  <span data-ttu-id="42030-111">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Zlecenia serwisowe** \> **Etapy serwisu**.</span><span class="sxs-lookup"><span data-stu-id="42030-111">Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.</span></span>
 
-2.  <span data-ttu-id="75fef-112">W formularzu **Etapy serwisu** wybierz etap serwisu, a następnie zaznacz pole wyboru **Przyczyna** dla etapu serwisu.</span><span class="sxs-lookup"><span data-stu-id="75fef-112">In the **Service stages** form, select a service stage, and then select the **Reason** check box for the service stage.</span></span>
+2.  <span data-ttu-id="42030-112">W formularzu **Etapy serwisu** wybierz etap serwisu, a następnie zaznacz pole wyboru **Przyczyna** dla etapu serwisu.</span><span class="sxs-lookup"><span data-stu-id="42030-112">In the **Service stages** form, select a service stage, and then select the **Reason** check box for the service stage.</span></span>
 
-3.  <span data-ttu-id="75fef-113">Zamknij formularz, aby zapisać zmiany.</span><span class="sxs-lookup"><span data-stu-id="75fef-113">Close the form to save your changes.</span></span>
+3.  <span data-ttu-id="42030-113">Zamknij formularz, aby zapisać zmiany.</span><span class="sxs-lookup"><span data-stu-id="42030-113">Close the form to save your changes.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="75fef-114">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="75fef-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="42030-114">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="42030-114">See also</span></span>
 
-[<span data-ttu-id="75fef-115">Ustawianie etapów zlecenia serwisowego</span><span class="sxs-lookup"><span data-stu-id="75fef-115">Set up service order stages</span></span>](set-up-service-order-stages.md)
+[<span data-ttu-id="42030-115">Ustawianie etapów zlecenia serwisowego</span><span class="sxs-lookup"><span data-stu-id="42030-115">Set up service order stages</span></span>](set-up-service-order-stages.md)
 
 
 

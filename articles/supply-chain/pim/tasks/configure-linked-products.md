@@ -16,27 +16,27 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 9f3ef8314c3b6122627de0a730e912c7ebcd99be
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "322474"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568657"
 ---
-# <a name="configure-linked-products"></a><span data-ttu-id="d9b55-103">Konfigurowanie połączonych produktów</span><span class="sxs-lookup"><span data-stu-id="d9b55-103">Configure linked products</span></span>
+# <a name="configure-linked-products"></a><span data-ttu-id="382fb-103">Konfigurowanie połączonych produktów</span><span class="sxs-lookup"><span data-stu-id="382fb-103">Configure linked products</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="d9b55-104">Ta procedura prowadzi przez kolejne etapy konfigurowania połączonych produktów.</span><span class="sxs-lookup"><span data-stu-id="d9b55-104">This procedure walks through configuring linked products.</span></span> <span data-ttu-id="d9b55-105">Procedura używa danych demonstracyjnych firmy USRT i zakłada, że oba produkty zostały już utworzone i zwolnione.</span><span class="sxs-lookup"><span data-stu-id="d9b55-105">This procedure uses the USRT demo data, and assumes both products have already been created and released.</span></span>
+<span data-ttu-id="382fb-104">Ta procedura prowadzi przez kolejne etapy konfigurowania połączonych produktów.</span><span class="sxs-lookup"><span data-stu-id="382fb-104">This procedure walks through configuring linked products.</span></span> <span data-ttu-id="382fb-105">Procedura używa danych demonstracyjnych firmy USRT i zakłada, że oba produkty zostały już utworzone i zwolnione.</span><span class="sxs-lookup"><span data-stu-id="382fb-105">This procedure uses the USRT demo data, and assumes both products have already been created and released.</span></span>
 
-1. <span data-ttu-id="d9b55-106">Przejdź do Zarządzanie informacjami o produktach > Produkty > Zwolnione produkty.</span><span class="sxs-lookup"><span data-stu-id="d9b55-106">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="d9b55-107">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="d9b55-107">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="d9b55-108">W okienku akcji kliknij pozycję Handel detaliczny.</span><span class="sxs-lookup"><span data-stu-id="d9b55-108">On the Action Pane, click Retail.</span></span>
-4. <span data-ttu-id="d9b55-109">Kliknij opcję Połączone produkty.</span><span class="sxs-lookup"><span data-stu-id="d9b55-109">Click Linked products.</span></span>
-5. <span data-ttu-id="d9b55-110">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="d9b55-110">Click Edit.</span></span>
-6. <span data-ttu-id="d9b55-111">W polu Numer połączonego produktu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="d9b55-111">In the Linked product number field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="d9b55-112">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="d9b55-112">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="d9b55-113">W polu Jednostka kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="d9b55-113">In the Unit field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="d9b55-114">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="d9b55-114">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="d9b55-115">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="d9b55-115">In the Quantity field, enter a number.</span></span>
-11. <span data-ttu-id="d9b55-116">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="d9b55-116">Click Save.</span></span>
+1. <span data-ttu-id="382fb-106">Przejdź do Zarządzanie informacjami o produktach > Produkty > Zwolnione produkty.</span><span class="sxs-lookup"><span data-stu-id="382fb-106">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="382fb-107">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="382fb-107">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="382fb-108">W okienku akcji kliknij pozycję Handel detaliczny.</span><span class="sxs-lookup"><span data-stu-id="382fb-108">On the Action Pane, click Retail.</span></span>
+4. <span data-ttu-id="382fb-109">Kliknij opcję Połączone produkty.</span><span class="sxs-lookup"><span data-stu-id="382fb-109">Click Linked products.</span></span>
+5. <span data-ttu-id="382fb-110">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="382fb-110">Click Edit.</span></span>
+6. <span data-ttu-id="382fb-111">W polu Numer połączonego produktu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="382fb-111">In the Linked product number field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="382fb-112">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="382fb-112">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="382fb-113">W polu Jednostka kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="382fb-113">In the Unit field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="382fb-114">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="382fb-114">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="382fb-115">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="382fb-115">In the Quantity field, enter a number.</span></span>
+11. <span data-ttu-id="382fb-116">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="382fb-116">Click Save.</span></span>
 

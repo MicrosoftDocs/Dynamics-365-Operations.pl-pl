@@ -18,28 +18,28 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 676216d90c50c0d3fa1a839cab7a734e624708ba
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346302"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550123"
 ---
-# <a name="configure-and-run-job-to-post-statements"></a><span data-ttu-id="026c5-103">Konfigurowanie i realizowanie zadań księgowania zestawień</span><span class="sxs-lookup"><span data-stu-id="026c5-103">Configure and run job to post statements</span></span>
+# <a name="configure-and-run-job-to-post-statements"></a><span data-ttu-id="c7f3d-103">Konfigurowanie i realizowanie zadań księgowania zestawień</span><span class="sxs-lookup"><span data-stu-id="c7f3d-103">Configure and run job to post statements</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="026c5-104">Ta procedura zawiera instruktaż konfigurowania i wykonywania cyklicznego zadania wsadowego w celu księgowania zestawień dla wybranego sklepu lub grupy sklepów.</span><span class="sxs-lookup"><span data-stu-id="026c5-104">This procedure walks through configuring and running a recurrent batch job to post statements for a selected store or group of stores.</span></span> <span data-ttu-id="026c5-105">Procedura wykorzystuje dane firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="026c5-105">This procedure uses the USRT company in demo data.</span></span>
+<span data-ttu-id="c7f3d-104">Ta procedura zawiera instruktaż konfigurowania i wykonywania cyklicznego zadania wsadowego w celu księgowania zestawień dla wybranego sklepu lub grupy sklepów.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-104">This procedure walks through configuring and running a recurrent batch job to post statements for a selected store or group of stores.</span></span> <span data-ttu-id="c7f3d-105">Procedura wykorzystuje dane firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-105">This procedure uses the USRT company in demo data.</span></span>
 
-1. <span data-ttu-id="026c5-106">Wybierz kolejno opcje Wszystkie obszary robocze > ..</span><span class="sxs-lookup"><span data-stu-id="026c5-106">Go to All workspaces > ..</span></span> <span data-ttu-id="026c5-107">> Finanse sklepu sieciowego.</span><span class="sxs-lookup"><span data-stu-id="026c5-107">> Retail store financials.</span></span>
-2. <span data-ttu-id="026c5-108">Kliknij opcję Księgowanie zestawień.</span><span class="sxs-lookup"><span data-stu-id="026c5-108">Click Post statements.</span></span>
-    * <span data-ttu-id="026c5-109">Wybierz hierarchię organizacyjną, a następnie w drzewie węzłów organizacji zaznacz jeden sklep lub węzeł.</span><span class="sxs-lookup"><span data-stu-id="026c5-109">Select an organizational hierarchy and then in the organization nodes tree, select either an individual store or a node.</span></span> <span data-ttu-id="026c5-110">Wybierz węzeł, jeśli chcesz utworzyć zadanie wsadowe dla grupy sklepów.</span><span class="sxs-lookup"><span data-stu-id="026c5-110">Select a node if you want to create the batch job for a group of stores.</span></span>  
-    * <span data-ttu-id="026c5-111">Kliknij strzałkę, aby dodać zaznaczone obiekty.</span><span class="sxs-lookup"><span data-stu-id="026c5-111">Click the arrow to add your selection.</span></span>  
-3. <span data-ttu-id="026c5-112">Kliknij kartę Uruchom w tle.</span><span class="sxs-lookup"><span data-stu-id="026c5-112">Click the Run in the background tab.</span></span>
-4. <span data-ttu-id="026c5-113">Zaznacz pole wyboru Przetwarzanie wsadowe lub usuń jego zaznaczenie.</span><span class="sxs-lookup"><span data-stu-id="026c5-113">Check or uncheck the Batch processing checkbox.</span></span>
-5. <span data-ttu-id="026c5-114">Kliknij przycisk Cykl.</span><span class="sxs-lookup"><span data-stu-id="026c5-114">Click Recurrence.</span></span>
-6. <span data-ttu-id="026c5-115">W polu Data początkowa wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="026c5-115">In the Start date field, enter a date.</span></span>
-7. <span data-ttu-id="026c5-116">W polu Godzina rozpoczęcia wprowadź godzinę.</span><span class="sxs-lookup"><span data-stu-id="026c5-116">In the Start time field, enter a time.</span></span>
-    * <span data-ttu-id="026c5-117">Wybierz, czy chcesz zakończyć cykl po określonej liczbie sesji, w określonym dniu czy nigdy.</span><span class="sxs-lookup"><span data-stu-id="026c5-117">Choose whether you want to end the recurrence after a specific number of runs, at a specific date, or never.</span></span> <span data-ttu-id="026c5-118">Następnie wybierz różne opcje, aby określić, jak często zadanie ma być wykonywane.</span><span class="sxs-lookup"><span data-stu-id="026c5-118">Then choose the various options to define how frequently you want the job to run.</span></span>  
-8. <span data-ttu-id="026c5-119">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="026c5-119">Click OK.</span></span>
-9. <span data-ttu-id="026c5-120">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="026c5-120">Click OK.</span></span>
+1. <span data-ttu-id="c7f3d-106">Wybierz kolejno opcje Wszystkie obszary robocze > ..</span><span class="sxs-lookup"><span data-stu-id="c7f3d-106">Go to All workspaces > ..</span></span> <span data-ttu-id="c7f3d-107">> Finanse sklepu sieciowego.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-107">> Retail store financials.</span></span>
+2. <span data-ttu-id="c7f3d-108">Kliknij opcję Księgowanie zestawień.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-108">Click Post statements.</span></span>
+    * <span data-ttu-id="c7f3d-109">Wybierz hierarchię organizacyjną, a następnie w drzewie węzłów organizacji zaznacz jeden sklep lub węzeł.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-109">Select an organizational hierarchy and then in the organization nodes tree, select either an individual store or a node.</span></span> <span data-ttu-id="c7f3d-110">Wybierz węzeł, jeśli chcesz utworzyć zadanie wsadowe dla grupy sklepów.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-110">Select a node if you want to create the batch job for a group of stores.</span></span>  
+    * <span data-ttu-id="c7f3d-111">Kliknij strzałkę, aby dodać zaznaczone obiekty.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-111">Click the arrow to add your selection.</span></span>  
+3. <span data-ttu-id="c7f3d-112">Kliknij kartę Uruchom w tle.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-112">Click the Run in the background tab.</span></span>
+4. <span data-ttu-id="c7f3d-113">Zaznacz pole wyboru Przetwarzanie wsadowe lub usuń jego zaznaczenie.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-113">Check or uncheck the Batch processing checkbox.</span></span>
+5. <span data-ttu-id="c7f3d-114">Kliknij przycisk Cykl.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-114">Click Recurrence.</span></span>
+6. <span data-ttu-id="c7f3d-115">W polu Data początkowa wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-115">In the Start date field, enter a date.</span></span>
+7. <span data-ttu-id="c7f3d-116">W polu Godzina rozpoczęcia wprowadź godzinę.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-116">In the Start time field, enter a time.</span></span>
+    * <span data-ttu-id="c7f3d-117">Wybierz, czy chcesz zakończyć cykl po określonej liczbie sesji, w określonym dniu czy nigdy.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-117">Choose whether you want to end the recurrence after a specific number of runs, at a specific date, or never.</span></span> <span data-ttu-id="c7f3d-118">Następnie wybierz różne opcje, aby określić, jak często zadanie ma być wykonywane.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-118">Then choose the various options to define how frequently you want the job to run.</span></span>  
+8. <span data-ttu-id="c7f3d-119">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-119">Click OK.</span></span>
+9. <span data-ttu-id="c7f3d-120">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c7f3d-120">Click OK.</span></span>
 

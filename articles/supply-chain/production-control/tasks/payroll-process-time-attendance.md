@@ -18,55 +18,55 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 0174f438396d814d153befe4a59a79b6eebb2288
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "311112"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560193"
 ---
-# <a name="enable-the-payroll-process-for-time-and-attendance"></a><span data-ttu-id="22f9d-103">Włączanie procesu listy płac obliczanej na podstawie czasu i frekwencji</span><span class="sxs-lookup"><span data-stu-id="22f9d-103">Enable the payroll process for time and attendance</span></span>
+# <a name="enable-the-payroll-process-for-time-and-attendance"></a><span data-ttu-id="fddea-103">Włączanie procesu listy płac obliczanej na podstawie czasu i frekwencji</span><span class="sxs-lookup"><span data-stu-id="fddea-103">Enable the payroll process for time and attendance</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="22f9d-104">W tej procedurze pokazano sposób włączania procesu listy płac dla modułu Czas i frekwencja.</span><span class="sxs-lookup"><span data-stu-id="22f9d-104">This procedure shows how to enable the payroll process for time and attendance.</span></span> <span data-ttu-id="22f9d-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="22f9d-105">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="fddea-104">W tej procedurze pokazano sposób włączania procesu listy płac dla modułu Czas i frekwencja.</span><span class="sxs-lookup"><span data-stu-id="fddea-104">This procedure shows how to enable the payroll process for time and attendance.</span></span> <span data-ttu-id="fddea-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="fddea-105">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-a-pay-type-with-a-related-pay-rate"></a><span data-ttu-id="22f9d-106">Tworzenie typu płacy z powiązaną stawką płacy</span><span class="sxs-lookup"><span data-stu-id="22f9d-106">Create a pay type with a related pay rate</span></span>
-1. <span data-ttu-id="22f9d-107">Czas i frekwencja > Ustawienia > Lista płac > Typy płac</span><span class="sxs-lookup"><span data-stu-id="22f9d-107">Time and attendance > Setup > Payroll > Pay types</span></span>
-2. <span data-ttu-id="22f9d-108">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="22f9d-108">Click New.</span></span>
-3. <span data-ttu-id="22f9d-109">W polu Typ płacy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="22f9d-109">In the Pay type field, type a value.</span></span>
-4. <span data-ttu-id="22f9d-110">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="22f9d-110">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="22f9d-111">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="22f9d-111">Click Save.</span></span>
-6. <span data-ttu-id="22f9d-112">Kliknij przycisk Stawki.</span><span class="sxs-lookup"><span data-stu-id="22f9d-112">Click Rates.</span></span>
-    * <span data-ttu-id="22f9d-113">Stawki dla typów płac są konfigurowane w odniesieniu do określonych przedziałów czasowych, a dla poszczególnych pracowników można tworzyć indywidualne stawki.</span><span class="sxs-lookup"><span data-stu-id="22f9d-113">Rates for pay types are set up for specific time intervals, and individual rates can be created for workers.</span></span> <span data-ttu-id="22f9d-114">Nie zawsze jest konieczne tworzenie stawek dla typów płacy w module Czas i frekwencja.</span><span class="sxs-lookup"><span data-stu-id="22f9d-114">It is not always necessary to create rates for pay types in time and attendance.</span></span> <span data-ttu-id="22f9d-115">Te informacje mogą już istnieć w systemie listy płac, który służy do generowania pensji.</span><span class="sxs-lookup"><span data-stu-id="22f9d-115">This information may already exist in the payroll system that is used to generate wages.</span></span>  
-7. <span data-ttu-id="22f9d-116">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="22f9d-116">Click New.</span></span>
-8. <span data-ttu-id="22f9d-117">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="22f9d-117">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="22f9d-118">W polu Stawka wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="22f9d-118">In the Rate field, enter a number.</span></span>
-10. <span data-ttu-id="22f9d-119">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="22f9d-119">Click Save.</span></span>
+## <a name="create-a-pay-type-with-a-related-pay-rate"></a><span data-ttu-id="fddea-106">Tworzenie typu płacy z powiązaną stawką płacy</span><span class="sxs-lookup"><span data-stu-id="fddea-106">Create a pay type with a related pay rate</span></span>
+1. <span data-ttu-id="fddea-107">Czas i frekwencja > Ustawienia > Lista płac > Typy płac</span><span class="sxs-lookup"><span data-stu-id="fddea-107">Time and attendance > Setup > Payroll > Pay types</span></span>
+2. <span data-ttu-id="fddea-108">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="fddea-108">Click New.</span></span>
+3. <span data-ttu-id="fddea-109">W polu Typ płacy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="fddea-109">In the Pay type field, type a value.</span></span>
+4. <span data-ttu-id="fddea-110">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="fddea-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="fddea-111">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="fddea-111">Click Save.</span></span>
+6. <span data-ttu-id="fddea-112">Kliknij przycisk Stawki.</span><span class="sxs-lookup"><span data-stu-id="fddea-112">Click Rates.</span></span>
+    * <span data-ttu-id="fddea-113">Stawki dla typów płac są konfigurowane w odniesieniu do określonych przedziałów czasowych, a dla poszczególnych pracowników można tworzyć indywidualne stawki.</span><span class="sxs-lookup"><span data-stu-id="fddea-113">Rates for pay types are set up for specific time intervals, and individual rates can be created for workers.</span></span> <span data-ttu-id="fddea-114">Nie zawsze jest konieczne tworzenie stawek dla typów płacy w module Czas i frekwencja.</span><span class="sxs-lookup"><span data-stu-id="fddea-114">It is not always necessary to create rates for pay types in time and attendance.</span></span> <span data-ttu-id="fddea-115">Te informacje mogą już istnieć w systemie listy płac, który służy do generowania pensji.</span><span class="sxs-lookup"><span data-stu-id="fddea-115">This information may already exist in the payroll system that is used to generate wages.</span></span>  
+7. <span data-ttu-id="fddea-116">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="fddea-116">Click New.</span></span>
+8. <span data-ttu-id="fddea-117">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="fddea-117">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="fddea-118">W polu Stawka wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="fddea-118">In the Rate field, enter a number.</span></span>
+10. <span data-ttu-id="fddea-119">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="fddea-119">Click Save.</span></span>
 
-## <a name="create-a-pay-agreement"></a><span data-ttu-id="22f9d-120">Tworzenie umowy płacowych</span><span class="sxs-lookup"><span data-stu-id="22f9d-120">Create a pay agreement</span></span>
-1. <span data-ttu-id="22f9d-121">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="22f9d-121">Close the page.</span></span>
-2. <span data-ttu-id="22f9d-122">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="22f9d-122">Close the page.</span></span>
-3. <span data-ttu-id="22f9d-123">Przejdź do okna Umowy płacowe.</span><span class="sxs-lookup"><span data-stu-id="22f9d-123">Go to Pay agreements.</span></span>
-    * <span data-ttu-id="22f9d-124">Czas i frekwencja > Ustawienia > Umowy płacowe</span><span class="sxs-lookup"><span data-stu-id="22f9d-124">Time and attendance > Setup > Pay agreements</span></span>  
-4. <span data-ttu-id="22f9d-125">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="22f9d-125">Click New.</span></span>
-5. <span data-ttu-id="22f9d-126">W polu Umowa płacowa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="22f9d-126">In the Pay agreement field, type a value.</span></span>
-6. <span data-ttu-id="22f9d-127">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="22f9d-127">In the Description field, type a value.</span></span>
-7. <span data-ttu-id="22f9d-128">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="22f9d-128">Click Save.</span></span>
-8. <span data-ttu-id="22f9d-129">Kliknij przycisk Wiersze umowy.</span><span class="sxs-lookup"><span data-stu-id="22f9d-129">Click Agreement lines.</span></span>
-9. <span data-ttu-id="22f9d-130">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="22f9d-130">Click New.</span></span>
-10. <span data-ttu-id="22f9d-131">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="22f9d-131">In the list, mark the selected row.</span></span>
-11. <span data-ttu-id="22f9d-132">W polu Typ profilu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="22f9d-132">In the Profile type field, enter or select a value.</span></span>
-12. <span data-ttu-id="22f9d-133">W polu Typ płacy wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="22f9d-133">In the Pay type field, enter or select a value.</span></span>
+## <a name="create-a-pay-agreement"></a><span data-ttu-id="fddea-120">Tworzenie umowy płacowych</span><span class="sxs-lookup"><span data-stu-id="fddea-120">Create a pay agreement</span></span>
+1. <span data-ttu-id="fddea-121">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="fddea-121">Close the page.</span></span>
+2. <span data-ttu-id="fddea-122">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="fddea-122">Close the page.</span></span>
+3. <span data-ttu-id="fddea-123">Przejdź do okna Umowy płacowe.</span><span class="sxs-lookup"><span data-stu-id="fddea-123">Go to Pay agreements.</span></span>
+    * <span data-ttu-id="fddea-124">Czas i frekwencja > Ustawienia > Umowy płacowe</span><span class="sxs-lookup"><span data-stu-id="fddea-124">Time and attendance > Setup > Pay agreements</span></span>  
+4. <span data-ttu-id="fddea-125">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="fddea-125">Click New.</span></span>
+5. <span data-ttu-id="fddea-126">W polu Umowa płacowa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="fddea-126">In the Pay agreement field, type a value.</span></span>
+6. <span data-ttu-id="fddea-127">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="fddea-127">In the Description field, type a value.</span></span>
+7. <span data-ttu-id="fddea-128">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="fddea-128">Click Save.</span></span>
+8. <span data-ttu-id="fddea-129">Kliknij przycisk Wiersze umowy.</span><span class="sxs-lookup"><span data-stu-id="fddea-129">Click Agreement lines.</span></span>
+9. <span data-ttu-id="fddea-130">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="fddea-130">Click New.</span></span>
+10. <span data-ttu-id="fddea-131">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="fddea-131">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="fddea-132">W polu Typ profilu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="fddea-132">In the Profile type field, enter or select a value.</span></span>
+12. <span data-ttu-id="fddea-133">W polu Typ płacy wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="fddea-133">In the Pay type field, enter or select a value.</span></span>
 
-## <a name="set-up-pay-agreement-for-time-and-registration-worker"></a><span data-ttu-id="22f9d-134">Konfigurowanie umowy płacowej dla pracownika rozliczanego według czasu i rejestracji</span><span class="sxs-lookup"><span data-stu-id="22f9d-134">Set up pay agreement for time and registration worker</span></span>
-1. <span data-ttu-id="22f9d-135">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="22f9d-135">Close the page.</span></span>
-2. <span data-ttu-id="22f9d-136">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="22f9d-136">Close the page.</span></span>
-3. <span data-ttu-id="22f9d-137">Przejdź do okna Pracownicy odpowiedzialni za rejestrację czasu.</span><span class="sxs-lookup"><span data-stu-id="22f9d-137">Go to Time registration workers.</span></span>
-    * <span data-ttu-id="22f9d-138">Czas i frekwencja > Ustawienia > Pracownicy odpowiedzialni za rejestrację czasu</span><span class="sxs-lookup"><span data-stu-id="22f9d-138">Time and attendance > Setup > Time registration workers</span></span>  
-4. <span data-ttu-id="22f9d-139">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="22f9d-139">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="22f9d-140">Kliknij kartę Zatrudnienie.</span><span class="sxs-lookup"><span data-stu-id="22f9d-140">Click the Employment tab.</span></span>
-6. <span data-ttu-id="22f9d-141">Rozwiń sekcję Rejestracja czasu.</span><span class="sxs-lookup"><span data-stu-id="22f9d-141">Expand the Time registration section.</span></span>
-7. <span data-ttu-id="22f9d-142">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="22f9d-142">Click Edit.</span></span>
-8. <span data-ttu-id="22f9d-143">W polu Umowa płacowa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="22f9d-143">In the Pay agreement field, enter or select a value.</span></span>
+## <a name="set-up-pay-agreement-for-time-and-registration-worker"></a><span data-ttu-id="fddea-134">Konfigurowanie umowy płacowej dla pracownika rozliczanego według czasu i rejestracji</span><span class="sxs-lookup"><span data-stu-id="fddea-134">Set up pay agreement for time and registration worker</span></span>
+1. <span data-ttu-id="fddea-135">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="fddea-135">Close the page.</span></span>
+2. <span data-ttu-id="fddea-136">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="fddea-136">Close the page.</span></span>
+3. <span data-ttu-id="fddea-137">Przejdź do okna Pracownicy odpowiedzialni za rejestrację czasu.</span><span class="sxs-lookup"><span data-stu-id="fddea-137">Go to Time registration workers.</span></span>
+    * <span data-ttu-id="fddea-138">Czas i frekwencja > Ustawienia > Pracownicy odpowiedzialni za rejestrację czasu</span><span class="sxs-lookup"><span data-stu-id="fddea-138">Time and attendance > Setup > Time registration workers</span></span>  
+4. <span data-ttu-id="fddea-139">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="fddea-139">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="fddea-140">Kliknij kartę Zatrudnienie.</span><span class="sxs-lookup"><span data-stu-id="fddea-140">Click the Employment tab.</span></span>
+6. <span data-ttu-id="fddea-141">Rozwiń sekcję Rejestracja czasu.</span><span class="sxs-lookup"><span data-stu-id="fddea-141">Expand the Time registration section.</span></span>
+7. <span data-ttu-id="fddea-142">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="fddea-142">Click Edit.</span></span>
+8. <span data-ttu-id="fddea-143">W polu Umowa płacowa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="fddea-143">In the Pay agreement field, enter or select a value.</span></span>
 

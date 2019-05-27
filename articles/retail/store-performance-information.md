@@ -20,28 +20,28 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: c975c021b6db49d1e25fd036f4955c7223e438ea
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346187"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1569270"
 ---
-# <a name="analyze-store-performance"></a><span data-ttu-id="7a829-103">Analizowanie wydajności sklepu</span><span class="sxs-lookup"><span data-stu-id="7a829-103">Analyze store performance</span></span>
+# <a name="analyze-store-performance"></a><span data-ttu-id="caf97-103">Analizowanie wydajności sklepu</span><span class="sxs-lookup"><span data-stu-id="caf97-103">Analyze store performance</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="7a829-104">W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o efektywności działania sklepów na podstawie danych programu Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="7a829-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Microsoft Dynamics 365 for Retail data.</span></span>
+<span data-ttu-id="caf97-104">W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o efektywności działania sklepów na podstawie danych programu Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="caf97-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Microsoft Dynamics 365 for Retail data.</span></span>
 
-<span data-ttu-id="7a829-105">W ramach programu Dynamics 365 for Retail użytkownicy mogą badać wydajność sklepu w czasie rzeczywistym na różnych poziomach hierarchii organizacyjnej przez wybrany okres. W tym celu należy otworzyć gotowy raport **Podsumowanie kanału** w dowolnym z następujących miejsc:</span><span class="sxs-lookup"><span data-stu-id="7a829-105">As part of Dynamics 365 for Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
+<span data-ttu-id="caf97-105">W ramach programu Dynamics 365 for Retail użytkownicy mogą badać wydajność sklepu w czasie rzeczywistym na różnych poziomach hierarchii organizacyjnej przez wybrany okres. W tym celu należy otworzyć gotowy raport **Podsumowanie kanału** w dowolnym z następujących miejsc:</span><span class="sxs-lookup"><span data-stu-id="caf97-105">As part of Dynamics 365 for Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
 
-- <span data-ttu-id="7a829-106">Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport podsumowania kanału**</span><span class="sxs-lookup"><span data-stu-id="7a829-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
-- <span data-ttu-id="7a829-107">Obszar roboczy **Finanse sklepu sieciowego** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Finanse sklepu sieciowego** &gt; **Raporty** &gt; **Raport podsumowania kanału**</span><span class="sxs-lookup"><span data-stu-id="7a829-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
-- <span data-ttu-id="7a829-108">Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport podsumowania kanału**</span><span class="sxs-lookup"><span data-stu-id="7a829-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="caf97-106">Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport podsumowania kanału**</span><span class="sxs-lookup"><span data-stu-id="caf97-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="caf97-107">Obszar roboczy **Finanse sklepu sieciowego** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Finanse sklepu sieciowego** &gt; **Raporty** &gt; **Raport podsumowania kanału**</span><span class="sxs-lookup"><span data-stu-id="caf97-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="caf97-108">Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport podsumowania kanału**</span><span class="sxs-lookup"><span data-stu-id="caf97-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
 
-<span data-ttu-id="7a829-109">Ten raport zawiera migawkę poniższych podsumowań w ramach wydajności sklepu:</span><span class="sxs-lookup"><span data-stu-id="7a829-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
+<span data-ttu-id="caf97-109">Ten raport zawiera migawkę poniższych podsumowań w ramach wydajności sklepu:</span><span class="sxs-lookup"><span data-stu-id="caf97-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
 
-- <span data-ttu-id="7a829-110">Podsumowanie sprzedaży brutto</span><span class="sxs-lookup"><span data-stu-id="7a829-110">Gross sales summary</span></span>
-- <span data-ttu-id="7a829-111">Podsumowanie typów metod płatności</span><span class="sxs-lookup"><span data-stu-id="7a829-111">Tender type summary</span></span>
-- <span data-ttu-id="7a829-112">Podsumowanie podatków</span><span class="sxs-lookup"><span data-stu-id="7a829-112">Tax summary</span></span>
-- <span data-ttu-id="7a829-113">Podsumowanie zastępowania cen</span><span class="sxs-lookup"><span data-stu-id="7a829-113">Price overrides summary</span></span>
-- <span data-ttu-id="7a829-114">Podsumowanie rabatów</span><span class="sxs-lookup"><span data-stu-id="7a829-114">Discounts summary</span></span>
+- <span data-ttu-id="caf97-110">Podsumowanie sprzedaży brutto</span><span class="sxs-lookup"><span data-stu-id="caf97-110">Gross sales summary</span></span>
+- <span data-ttu-id="caf97-111">Podsumowanie typów metod płatności</span><span class="sxs-lookup"><span data-stu-id="caf97-111">Tender type summary</span></span>
+- <span data-ttu-id="caf97-112">Podsumowanie podatków</span><span class="sxs-lookup"><span data-stu-id="caf97-112">Tax summary</span></span>
+- <span data-ttu-id="caf97-113">Podsumowanie zastępowania cen</span><span class="sxs-lookup"><span data-stu-id="caf97-113">Price overrides summary</span></span>
+- <span data-ttu-id="caf97-114">Podsumowanie rabatów</span><span class="sxs-lookup"><span data-stu-id="caf97-114">Discounts summary</span></span>

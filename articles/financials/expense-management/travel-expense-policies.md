@@ -1,50 +1,54 @@
 ---
 title: Definiowanie zasad dotyczących wydatków
 description: Można zdefiniować zasady dotyczące wydatków, których pracownicy muszą przestrzegać przy wprowadzaniu i wysyłaniu raportów z wydatków i wniosków wyjazdowych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations.
-author: saraschi2
+author: ryansandness
 manager: AnnBe
-ms.date: 02/23/2018
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicyListPage, TrvPolicyRule
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04eaff110fea021ddee32be650be540894eb703b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 9f0ff56f0ff106bc168b6a27612e08743a539a07
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "342438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1514446"
 ---
-# <a name="expense-policies"></a><span data-ttu-id="291a2-103">Zasady dotyczące wydatków</span><span class="sxs-lookup"><span data-stu-id="291a2-103">Expense policies</span></span>
+# <a name="expense-policies"></a><span data-ttu-id="58294-103">Zasady dotyczące wydatków</span><span class="sxs-lookup"><span data-stu-id="58294-103">Expense policies</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="291a2-104">Można zdefiniować zasady, których pracownicy muszą przestrzegać podczas wprowadzania i przesyłania raportów z wydatków i wniosków wyjazdowych.</span><span class="sxs-lookup"><span data-stu-id="291a2-104">You can define policies that your workers must follow when entering and submitting expense reports and travel requisitions.</span></span>         
-<span data-ttu-id="291a2-105">Wdrożenie zasad dotyczących wydatków może się przyczynić do efektywniejszego zarządzania wydatkami.</span><span class="sxs-lookup"><span data-stu-id="291a2-105">Implementing expense policies can help you manage expenses effectively.</span></span>         
+<span data-ttu-id="58294-104">Można zdefiniować zasady, których pracownicy muszą przestrzegać podczas wprowadzania i przesyłania raportów z wydatków i wniosków wyjazdowych.</span><span class="sxs-lookup"><span data-stu-id="58294-104">You can define policies that your workers must follow when entering and submitting expense reports and travel requisitions.</span></span>         
+<span data-ttu-id="58294-105">Wdrożenie zasad dotyczących wydatków może się przyczynić do efektywniejszego zarządzania wydatkami.</span><span class="sxs-lookup"><span data-stu-id="58294-105">Implementing expense policies can help you manage expenses effectively.</span></span>         
 
-<span data-ttu-id="291a2-106">Można na przykład określić zasadę dotyczącą wydatków na zakwaterowanie w Nowym Jorku, która stanowi, że wydatki nie mogą przekroczyć 250 zł za noc.</span><span class="sxs-lookup"><span data-stu-id="291a2-106">For example, you can set a policy for hotel expenses in New York City, which states that the per night expense cannot exceed USD 250.</span></span>       
-<span data-ttu-id="291a2-107">Jeśli pracownik prześle raport z wydatków lub wniosek wyjazdowy, w którym ta kwota będzie przekroczona, system powiadomi pracownika,</span><span class="sxs-lookup"><span data-stu-id="291a2-107">If a worker submits an expense report or a travel requisition in which the room rate exceeds this amount, the system will notify the</span></span>        
-<span data-ttu-id="291a2-108">że została przekroczona kwota wydatków określona w zasadach.</span><span class="sxs-lookup"><span data-stu-id="291a2-108">worker that the policy amount for the expense has been exceeded.</span></span> <span data-ttu-id="291a2-109">Podczas definiowania zasady można skonfigurować wiadomość,</span><span class="sxs-lookup"><span data-stu-id="291a2-109">You can configure the message that the worker will receive when you</span></span>        
-<span data-ttu-id="291a2-110">jaką otrzyma pracownik.</span><span class="sxs-lookup"><span data-stu-id="291a2-110">define the policy.</span></span>      
+<span data-ttu-id="58294-106">Można na przykład określić zasadę dotyczącą wydatków na zakwaterowanie w Nowym Jorku, która stanowi, że wydatki nie mogą przekroczyć 250 zł za noc.</span><span class="sxs-lookup"><span data-stu-id="58294-106">For example, you can set a policy for hotel expenses in New York City, which states that the per night expense cannot exceed USD 250.</span></span>       
+<span data-ttu-id="58294-107">Jeśli pracownik prześle raport z wydatków lub wniosek wyjazdowy, w którym ta kwota będzie przekroczona, system powiadomi pracownika,</span><span class="sxs-lookup"><span data-stu-id="58294-107">If a worker submits an expense report or a travel requisition in which the room rate exceeds this amount, the system will notify the</span></span>        
+<span data-ttu-id="58294-108">że została przekroczona kwota wydatków określona w zasadach.</span><span class="sxs-lookup"><span data-stu-id="58294-108">worker that the policy amount for the expense has been exceeded.</span></span> <span data-ttu-id="58294-109">Podczas definiowania zasady można skonfigurować wiadomość,</span><span class="sxs-lookup"><span data-stu-id="58294-109">You can configure the message that the worker will receive when you</span></span>        
+<span data-ttu-id="58294-110">jaką otrzyma pracownik.</span><span class="sxs-lookup"><span data-stu-id="58294-110">define the policy.</span></span>      
         
-<span data-ttu-id="291a2-111">Można zdefiniować trzy typy zasad:</span><span class="sxs-lookup"><span data-stu-id="291a2-111">You can define three types of policies:</span></span>         
+<span data-ttu-id="58294-111">Można zdefiniować trzy typy zasad:</span><span class="sxs-lookup"><span data-stu-id="58294-111">You can define three types of policies:</span></span>         
         
-- <span data-ttu-id="291a2-112">Ostrzeżenie — umożliwia pracownikowi przesłanie raportu z wydatków lub wniosku wyjazdowego, ale wydatek zostanie oznaczony dla wszystkich osób zatwierdzających i</span><span class="sxs-lookup"><span data-stu-id="291a2-112">Warning – Allows the worker to submit an expense report or travel requisition but the expense will be marked for all approvers and</span></span>        
-  <span data-ttu-id="291a2-113">do późniejszego raportowania.</span><span class="sxs-lookup"><span data-stu-id="291a2-113">for later reporting.</span></span>        
+- <span data-ttu-id="58294-112">Ostrzeżenie — umożliwia pracownikowi przesłanie raportu z wydatków lub wniosku wyjazdowego, ale wydatek zostanie oznaczony dla wszystkich osób zatwierdzających i</span><span class="sxs-lookup"><span data-stu-id="58294-112">Warning – Allows the worker to submit an expense report or travel requisition but the expense will be marked for all approvers and</span></span>        
+  <span data-ttu-id="58294-113">do późniejszego raportowania.</span><span class="sxs-lookup"><span data-stu-id="58294-113">for later reporting.</span></span>        
 
-- <span data-ttu-id="291a2-114">Błąd — wymaga, aby pracownik zmienił wydatek na zgodny z zasadami przed przesłaniem raportu z wydatków lub wniosku wyjazdowego.</span><span class="sxs-lookup"><span data-stu-id="291a2-114">Error – Requires the worker to revise the expense to comply with the policy before submitting the expense report or travel requisition.</span></span>       
+- <span data-ttu-id="58294-114">Błąd — wymaga, aby pracownik zmienił wydatek na zgodny z zasadami przed przesłaniem raportu z wydatków lub wniosku wyjazdowego.</span><span class="sxs-lookup"><span data-stu-id="58294-114">Error – Requires the worker to revise the expense to comply with the policy before submitting the expense report or travel requisition.</span></span>       
  
-  - <span data-ttu-id="291a2-115">Uzasadnienie — wymaga, aby pracownik lub menedżer wprowadził uzasadnienie przekroczenia kwoty w zasadach przed przesłaniem raportu z wydatków lub wniosku wyjazdowego.</span><span class="sxs-lookup"><span data-stu-id="291a2-115">Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.</span></span>        
- 
-  <span data-ttu-id="291a2-116">Można również skonfigurować zakres dat, dla którego obowiązują zasady dotyczące wydatków.</span><span class="sxs-lookup"><span data-stu-id="291a2-116">You can also set up a date range for which expense policies are in effect.</span></span> <span data-ttu-id="291a2-117">Na przykład bilety na loty między Warszawą a Kopenhagą</span><span class="sxs-lookup"><span data-stu-id="291a2-117">For example, airline fares for flights between Denmark</span></span>      
-  <span data-ttu-id="291a2-118">mogą być drogie w sezonie turystycznym.</span><span class="sxs-lookup"><span data-stu-id="291a2-118">and New York City can be expensive during the peak holiday travel season.</span></span> <span data-ttu-id="291a2-119">Można określić regułę dotyczącą wydatków na bilety lotnicze,</span><span class="sxs-lookup"><span data-stu-id="291a2-119">You can define a flight expense rule that restricts the</span></span>      
-  <span data-ttu-id="291a2-120">która ogranicza koszty przelotu do Kopenhagi do 500 zł, i można określić, że ta reguła obowiązuje między 15 marca a</span><span class="sxs-lookup"><span data-stu-id="291a2-120">cost of flights to New York City to a limit of DKK 5000, and you can specify that this rule be in effect between March 15 and</span></span>      
-  <span data-ttu-id="291a2-121">15 września.</span><span class="sxs-lookup"><span data-stu-id="291a2-121">September 15.</span></span>
+ - <span data-ttu-id="58294-115">Uzasadnienie — wymaga, aby pracownik lub menedżer wprowadził uzasadnienie przekroczenia kwoty w zasadach przed przesłaniem raportu z wydatków lub wniosku wyjazdowego.</span><span class="sxs-lookup"><span data-stu-id="58294-115">Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.</span></span>        
+
+# <a name="policy-tips"></a><span data-ttu-id="58294-116">Porady dotyczące zasad</span><span class="sxs-lookup"><span data-stu-id="58294-116">Policy tips</span></span>
+<span data-ttu-id="58294-117">Oto kilka sugestii ułatwiających tworzenie nowych zasad zarządzania wydatkami.</span><span class="sxs-lookup"><span data-stu-id="58294-117">Here are a few suggestions that can assist you whe creating new policies for expense management.</span></span> 
+* <span data-ttu-id="58294-118">Zasady obowiązują od dnia ich wprowadzenia; nie zaczną obowiązywać, jeśli zasada zostanie utworzona z datą późniejszą niż data wystąpienia wydatku.</span><span class="sxs-lookup"><span data-stu-id="58294-118">Policies are date effective and won't take effect if the policy is created with a date after the date that the expense occurred.</span></span> <span data-ttu-id="58294-119">Jeśli na przykład nowe zasady są tworzone dzisiaj w celu wymuszenia maksymalnego kosztu posiłku wynoszącego $50, wówczas wszelkie istniejące wydatki wprowadzone z datą wczorajszą nie będą sprawdzane w odniesieniu do tej zasady.</span><span class="sxs-lookup"><span data-stu-id="58294-119">For example, if you are creating a new policy today to enforce a maximum meal expense of $50, then any existing expenses entered as of yesterday won't be checked against this policy.</span></span>
+* <span data-ttu-id="58294-120">Podczas tworzenia zasady dla kategorii wydatków, która może być wyszczególniona, należy rozważyć dodanie warunku dla typu wiersza wydatku.</span><span class="sxs-lookup"><span data-stu-id="58294-120">When creating a policy for an expense category that can be itemized, consider adding a condition for expense line type.</span></span> <span data-ttu-id="58294-121">Niektóre zasady, takie jak wymaganie przyjęcia paragonu, mogą nie mieć sensu w przypadku wierszy wyszczególnionych i powinny być stosowane tylko do wierszy nagłówka lub wierszy bez pozycji.</span><span class="sxs-lookup"><span data-stu-id="58294-121">Some policies such as requiring a receipt may not make sense for itemized lines and should only be applied to the header line or a non-itemized line.</span></span> 
+
+# <a name="when-to-evaluate-policies"></a><span data-ttu-id="58294-122">Kiedy oceniać zasady</span><span class="sxs-lookup"><span data-stu-id="58294-122">When to evaluate policies</span></span>
+
+<span data-ttu-id="58294-123">W parametrach zarządzania wydatkami istnieje możliwość oceny zasad zarządzania wydatkami podczas zapisywania wiersza lub przesyłania raportu z wydatków.</span><span class="sxs-lookup"><span data-stu-id="58294-123">In expense management parameters, there is an option to either evaluate expense management policies when a line is saved or when an expense report is submitted.</span></span> <span data-ttu-id="58294-124">Jeśli zostanie wybrana opcja oceny, kiedy wiersz zostanie zapisany, użytkownicy będą wcześniej wiedzieli, co muszą zrobić, aby od razu wypełnić cały raporty z wydatków.</span><span class="sxs-lookup"><span data-stu-id="58294-124">If you choose to evaluate when a line is saved this ensures that users have earlier visibility into what they need to do to complete their expense report all at once.</span></span> <span data-ttu-id="58294-125">W przeciwnym wypadku można opóźnić ocenianie zasad i zaoszczędzić czas, jeśli podczas przesyłania do przepływu pracy następuje weryfikacja.</span><span class="sxs-lookup"><span data-stu-id="58294-125">Otherwise, you can delay policy evaluation and save time if you have validation occur at the end, during submission to workflow.</span></span>

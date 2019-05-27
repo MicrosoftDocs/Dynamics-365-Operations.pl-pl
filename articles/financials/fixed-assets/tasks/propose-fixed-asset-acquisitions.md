@@ -17,33 +17,33 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1891206bb266b126eccfa789b8c8062c9bfa688b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "350649"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570887"
 ---
-# <a name="propose-fixed-asset-acquisitions"></a><span data-ttu-id="b33b5-103">Proponowanie nabycia środka trwałego</span><span class="sxs-lookup"><span data-stu-id="b33b5-103">Propose fixed asset acquisitions</span></span>
+# <a name="propose-fixed-asset-acquisitions"></a><span data-ttu-id="4c1d8-103">Proponowanie nabycia środka trwałego</span><span class="sxs-lookup"><span data-stu-id="4c1d8-103">Propose fixed asset acquisitions</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b33b5-104">W tej procedurze pokazano sposób nabywania środka trwałego przy użyciu propozycji nabycia zdefiniowanej w arkuszu środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="b33b5-104">This procedure shows how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal.</span></span> <span data-ttu-id="b33b5-105">Procedura korzysta z roli księgowego i danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="b33b5-105">It uses the accountant role and demo data for the USMF legal entity.</span></span>
+<span data-ttu-id="4c1d8-104">W tej procedurze pokazano sposób nabywania środka trwałego przy użyciu propozycji nabycia zdefiniowanej w arkuszu środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-104">This procedure shows how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal.</span></span> <span data-ttu-id="4c1d8-105">Procedura korzysta z roli księgowego i danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-105">It uses the accountant role and demo data for the USMF legal entity.</span></span>
 
-1. <span data-ttu-id="b33b5-106">Wybierz kolejno opcje Środki trwałe > Wpisy w arkuszu > Arkusz środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="b33b5-106">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
-2. <span data-ttu-id="b33b5-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="b33b5-107">Click New.</span></span>
-3. <span data-ttu-id="b33b5-108">W polu Nazwa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="b33b5-108">In the Name field, enter or select a value.</span></span>
-4. <span data-ttu-id="b33b5-109">Kliknij przycisk Wiersze.</span><span class="sxs-lookup"><span data-stu-id="b33b5-109">Click Lines.</span></span>
-5. <span data-ttu-id="b33b5-110">Kliknij opcję Propozycje.</span><span class="sxs-lookup"><span data-stu-id="b33b5-110">Click Proposals.</span></span>
-6. <span data-ttu-id="b33b5-111">Kliknij opcję Propozycja nabycia.</span><span class="sxs-lookup"><span data-stu-id="b33b5-111">Click Acquisition proposal.</span></span>
-7. <span data-ttu-id="b33b5-112">Kliknij przycisk Filtr.</span><span class="sxs-lookup"><span data-stu-id="b33b5-112">Click Filter.</span></span>
-8. <span data-ttu-id="b33b5-113">Kliknij przycisk Resetuj, aby wyczyścić poprzednie wartości.</span><span class="sxs-lookup"><span data-stu-id="b33b5-113">Click Reset to clear out previous values.</span></span>
-9. <span data-ttu-id="b33b5-114">Zaznacz wiersz Numer środka trwałego.</span><span class="sxs-lookup"><span data-stu-id="b33b5-114">Select the Fixed asset number row.</span></span>
-10. <span data-ttu-id="b33b5-115">W polu Kryteria wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="b33b5-115">In the Criteria field, enter or select a value.</span></span>
-    * <span data-ttu-id="b33b5-116">Skonfiguruj pozostałe kryteria środków trwałych, które chcesz nabyć za pomocą tej propozycji.</span><span class="sxs-lookup"><span data-stu-id="b33b5-116">Set the remaining criteria for the fixed assets that you want to acquire with this proposal.</span></span>  
-11. <span data-ttu-id="b33b5-117">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="b33b5-117">Click OK.</span></span>
-12. <span data-ttu-id="b33b5-118">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="b33b5-118">Click OK.</span></span>
-    * <span data-ttu-id="b33b5-119">Sprawdź utworzone wiersze transakcji.</span><span class="sxs-lookup"><span data-stu-id="b33b5-119">Verify the transaction lines created.</span></span>  
-    * <span data-ttu-id="b33b5-120">W propozycji nabycia zostaną uwzględnione tylko środki trwałe, które w księdze mają ustawioną datę nabycia i cenę nabycia.</span><span class="sxs-lookup"><span data-stu-id="b33b5-120">Only fixed assets with the acquisition date and acquisition price set on the book will be included in the acquisition proposal.</span></span>  
-13. <span data-ttu-id="b33b5-121">Kliknij kartę Księgi.</span><span class="sxs-lookup"><span data-stu-id="b33b5-121">Click the Books tab.</span></span>
-14. <span data-ttu-id="b33b5-122">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="b33b5-122">Click Post.</span></span>
+1. <span data-ttu-id="4c1d8-106">Wybierz kolejno opcje Środki trwałe > Wpisy w arkuszu > Arkusz środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-106">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
+2. <span data-ttu-id="4c1d8-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-107">Click New.</span></span>
+3. <span data-ttu-id="4c1d8-108">W polu Nazwa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-108">In the Name field, enter or select a value.</span></span>
+4. <span data-ttu-id="4c1d8-109">Kliknij przycisk Wiersze.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-109">Click Lines.</span></span>
+5. <span data-ttu-id="4c1d8-110">Kliknij opcję Propozycje.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-110">Click Proposals.</span></span>
+6. <span data-ttu-id="4c1d8-111">Kliknij opcję Propozycja nabycia.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-111">Click Acquisition proposal.</span></span>
+7. <span data-ttu-id="4c1d8-112">Kliknij przycisk Filtr.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-112">Click Filter.</span></span>
+8. <span data-ttu-id="4c1d8-113">Kliknij przycisk Resetuj, aby wyczyścić poprzednie wartości.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-113">Click Reset to clear out previous values.</span></span>
+9. <span data-ttu-id="4c1d8-114">Zaznacz wiersz Numer środka trwałego.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-114">Select the Fixed asset number row.</span></span>
+10. <span data-ttu-id="4c1d8-115">W polu Kryteria wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-115">In the Criteria field, enter or select a value.</span></span>
+    * <span data-ttu-id="4c1d8-116">Skonfiguruj pozostałe kryteria środków trwałych, które chcesz nabyć za pomocą tej propozycji.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-116">Set the remaining criteria for the fixed assets that you want to acquire with this proposal.</span></span>  
+11. <span data-ttu-id="4c1d8-117">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-117">Click OK.</span></span>
+12. <span data-ttu-id="4c1d8-118">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-118">Click OK.</span></span>
+    * <span data-ttu-id="4c1d8-119">Sprawdź utworzone wiersze transakcji.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-119">Verify the transaction lines created.</span></span>  
+    * <span data-ttu-id="4c1d8-120">W propozycji nabycia zostaną uwzględnione tylko środki trwałe, które w księdze mają ustawioną datę nabycia i cenę nabycia.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-120">Only fixed assets with the acquisition date and acquisition price set on the book will be included in the acquisition proposal.</span></span>  
+13. <span data-ttu-id="4c1d8-121">Kliknij kartę Księgi.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-121">Click the Books tab.</span></span>
+14. <span data-ttu-id="4c1d8-122">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="4c1d8-122">Click Post.</span></span>
 
