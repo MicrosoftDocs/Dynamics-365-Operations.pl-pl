@@ -3,7 +3,7 @@ title: Bank — przeszacowanie w walucie obcej
 description: Ten temat zawiera omówienie procesu bankowego przeszacowania w walucie obcej. Zawiera informacje dotyczące programu instalacyjnego, procesu, obliczenia dla procesu i wycofywania transakcji przeszacowania.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3aed5a6c12e8dd39956f906f922bfbed1b8fb680
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 4ec9814a4a35a1b3ba7ba05a04b53e5b150f4a04
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976693"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538639"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank — przeszacowanie w walucie obcej
 
@@ -52,7 +52,7 @@ Musisz włączyć funkcję przeszacowania w walucie obcej, aby wykonać przeszac
 3. Na karcie **sekwencje numerów** dodaj sekwencję numerów dla przeszacowania w walucie obcej.
 4. Odśwież przeglądarkę, aby zobaczyć **przeszacowania w walucie obcej** w części **zadania okresowe** strony obszaru.
 
-Należy włączyć tę funkcję dla każdej firmy, dla której będzie używane przeszacowanie w walucie obcej.
+Należy włączyć tę funkcję dla każdej firmy, dla której będzie używane przeszacowanie w walucie obcej. Jeśli użytkownik jest przypisany do roli administratora systemu lub Menedżera funkcji, można pominąć ten krok, włączając funkcję o nazwie **Włącz przeszacowanie konta bankowego bez parametru** w obszarze roboczym **zarządzanie funkcjami**.
 
 > [!NOTE]
 > Jeśli firma używa rosyjskiego/polskiego lub węgierskiego kodu kraju/regionu, możesz już robić przeszacowanie w walucie obcej. Nie można używać przeszacowania w walucie obcej, używanego w innych krajach lub regionach.

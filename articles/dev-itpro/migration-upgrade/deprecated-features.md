@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992890"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527678"
 ---
 # <a name="removed-or-deprecated-features"></a>Usunięte lub przestarzałe funkcje
 
@@ -66,26 +66,6 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 | **Powiązane obszary produktów**         | Klient sieci Web |
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | Wycofane: Począwszy od kwietnia 2020, poprawiona funkcja "jest jednym z" będzie domyślnym zachowaniem, bez mechanizmu odwrócenia starszego zachowania. |
-
-### <a name="deriving-from-internal-classes-is-deprecated"></a>Dziedziczenie z wewnętrznych klas jest przestarzałe
-
-|   |  |
-|------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | W wersjach sprzed aktualizacji platformy 25 można było utworzyć klasę lub tabelę, która pochodzi z wewnętrznej klasy/tabeli zdefiniowanej w innym pakiecie/module. Nie jest to bezpieczna praktyka kodowania. Począwszy od aktualizacji platformy 25 kompilator wyświetli komunikat ostrzegawczy. |
-| **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w nadchodzącej aktualizacji Platform update 26. Ta zmiana jest zgodna z poprzednimi wersjami w czasie wykonywania, co oznacza, że po uruchomieniu aktualizacji platformy 25 lub nowszej można ją wdrożyć w dowolnym środowisku piaskownicy lub produkcji, bez konieczności modyfikowania kodu niestandardowego. Ta zmiana wpływa tylko na czas projektowania i kompilacji.|
-| **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
-| **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Przestarzałe - ostrzeżenie stanie się błędem kompilacji w nadchodzącej aktualizacji platformy 26. |
-
-### <a name="overriding-internal-methods-is-deprecated"></a>Zastępowanie wewnętrznych metod jest przestarzałe
-
-|   |  |
-|------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | W wersjach sprzed aktualizacji platformy 25 można było zastąpić wewnętrzną metodę w klasie pochodnej zdefiniowanej w innym pakiecie/module. Nie jest to bezpieczna praktyka kodowania. Począwszy od aktualizacji platformy 25 kompilator wyświetli komunikat ostrzegawczy. |
-| **Zamieniona przez inną funkcję?**   | Ostrzeżenie zostanie zastąpione błędem kompilacji w nadchodzącej aktualizacji Platform update 26. Ta zmiana jest zgodna z poprzednimi wersjami w czasie wykonywania, co oznacza, że po uruchomieniu aktualizacji platformy 25 lub nowszej można ją wdrożyć w dowolnym środowisku piaskownicy lub produkcji, bez konieczności modyfikowania kodu niestandardowego. Ta zmiana wpływa tylko na czas projektowania i kompilacji. |
-| **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
-| **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Przestarzałe - ostrzeżenie stanie się błędem kompilacji w nadchodzącej aktualizacji platformy 26. |
 
 ### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parametr umożliwia włączenie zamówień sprzedaży z wielu źródeł finansowania umowy dotyczącej projektu
 Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycząca projektu ma wiele źródeł finansowania i została włączona za pomocą ustawienia **Zezwalaj na zamówienia sprzedaży w projektach z wieloma źródłami finansowania** w menu **Parametry zarządzania projektem**. Ten parametr nie jest włączony domyślnie. 

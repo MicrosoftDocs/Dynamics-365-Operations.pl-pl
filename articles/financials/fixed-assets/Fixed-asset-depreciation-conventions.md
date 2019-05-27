@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6880a4b97af0a819684dac7e0132ae10a8997533
-ms.sourcegitcommit: 60aa392e7762d9b62baf007be27dec043bd078df
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "884606"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1514308"
 ---
 # <a name="fixed-asset-depreciation-conventions"></a>Konwencje amortyzacji środków trwałych
 

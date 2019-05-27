@@ -1,9 +1,9 @@
 ---
-title: Przegląd rozliczenia
-description: Ten artykuł zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczać, czas i metody rozliczania transakcji oraz wyniki procesu rozliczania.
+title: Omówienie rozliczeń
+description: Ten temat zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczać, czas i metody rozliczania transakcji oraz wyniki procesu rozliczania.
 author: kweekley
 manager: AnnBe
-ms.date: 12/06/2018
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b82c6afa2812344ff8200e227ee8c5f2451584f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e13bdcdcf6dac68a95e6c2759a66bc59013464cb
+ms.sourcegitcommit: fd3db9f2052c76a5d906b9ec23cb16222452a362
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "338298"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "1539974"
 ---
-# <a name="settlement-overview"></a>Przegląd rozliczenia
+# <a name="settlement-overview"></a>Omówienie rozliczeń
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczać, czas i metody rozliczania transakcji oraz wyniki procesu rozliczania.
+Ten temat zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczać, czas i metody rozliczania transakcji oraz wyniki procesu rozliczania.
 
 Podczas rozliczania transakcje w jednym dokumencie są stosowane do transakcji z innego dokumentu w celu zwiększenia lub zmniejszenia salda każdego dokumentu. Na przykład płatność może być zastosowana do faktury. Różne typy transakcji mogą być rozliczane w różnym czasie i różnymi metodami. Rozliczenie może również spowodować wygenerowanie nowych transakcji.
 
@@ -40,7 +40,7 @@ Rozliczenia w ramach rozrachunków z dostawcami i rozrachunków z odbiorcami mog
 Transakcje można rozliczyć w momencie wpisu płatności. Na przykład, płacąc odbiorcy zazwyczaj zaznacza się fakturę do zapłacenia. Wybierając faktury, można je oznaczyć do rozliczenia płatnością. Gdy pracownicy ds. płatności rozrachunków z odbiorcami rejestrują płatność odbiorcy, mogą oznaczyć odpowiednie faktury do rozliczenia na podstawie informacji dołączonej do płatności odbiorcy. Na stornie **Rozliczenia transakcji** można oznaczyć transakcje do rozliczenia. Tę stronę można otworzyć z dowolnej niezaksięgowanej faktury lub płatności. Kiedy transakcja jest księgowana, rozliczenie jest również księgowane. Transakcje mogą również być rozliczane po zaksięgowaniu. Można wprowadzać i zaksięgować płatność odbiorcy bez rozliczania jej względem wszystkich faktur. Czasami trzeba jednak wykonać sprawdzenie, by mieć pewność, że płatność jest rozliczana względem właściwej faktury. Stronę **Rozliczanie transakcji** można otworzyć ze strony **Wszyscy odbiorcy** lub **Wszyscy dostawcy** lub ze strony **Transakcje** dla dowolnego odbiorcy lub dostawcy. Można też zarezerwować zaksięgowane przedpłaty za faktury poprzez zaznaczenie płatności dla rozliczeń za zamówienia zakupu lub zamówienia sprzedaży. W takim przypadku płatność będzie nadal miała otwarte saldo, ale nie będzie można jej rozliczyć względem innej faktury. Płatność będzie automatycznie rozliczana względem faktury utworzonej na podstawie zamówienia zakupu lub zamówienia sprzedaży.
 
 ## <a name="how-to-settle-transactions"></a>Jak rozliczać transakcje
-Transakcje mogą zostać rozliczane ręcznie, automatycznie lub używając jednej z dwóch metod. Wybór metody rozliczenia zależy od procesów biznesowych, które następnie można wdrożyć przez ustawienie rozliczania w Parametrach modułu rozrachunków z dostawcami i Parametrach modułu rozrachunków z odbiorcami. Można utworzyć płatności dostawcy i płatności odbiorcy poleceniem zapłaty za pomocą propozycji płatności, które służą do wyboru faktur do zapłaty. Propozycja płatności jest inicjowana ręcznie, a następnie program Microsoft Dynamics 365 for Finance and Operations automatycznie oznacza wybrane faktury do rozliczenia podczas tworzenia płatności. Jeśli płatności zostały utworzone ręcznie, możesz użyć strony **Rozlicz transakcje**, aby wybrać faktury do rozliczenia. Możesz ręcznie wybrać faktury lub skorzystać z opcji **Oznacz według priorytetu**, aby faktury były zaznaczane automatycznie do rozliczenia. Opcja **Oznacz według priorytetu** jest dostępna tylko w przypadku Rozrachunków z odbiorcami. Aby włączyć tę opcję, należy użyć strony **Priorytet rozliczenia** w Parametrach modułu rozrachunków z odbiorcami. Jeśli pracownik zajmujący się płatnościami wprowadza płatność, ale nie rozlicza jej przed zaksięgowaniem, płatność może być rozliczana automatycznie. Można włączyć automatyczne rozliczanie w Parametrach modułu rozrachunków z odbiorcami i Parametrach modułu rozrachunków z dostawcami. W przypadku zastosowania opcji automatycznego rozliczenia można użyć wstępnie zdefiniowanej kolejności rozliczania lub można zdefiniować własną kolejność w oknie Parametry modułu rozrachunków z odbiorcami. Ta funkcja jest dostępna tylko dla Rozrachunków z odbiorcami.
+Transakcje mogą zostać rozliczane ręcznie, automatycznie lub używając jednej z dwóch metod. Wybór metody rozliczenia zależy od procesów biznesowych, które następnie można wdrożyć przez ustawienie rozliczania w Parametrach modułu rozrachunków z dostawcami i Parametrach modułu rozrachunków z odbiorcami. Można utworzyć płatności dostawcy i płatności odbiorcy poleceniem zapłaty za pomocą propozycji płatności, które służą do wyboru faktur do zapłaty. Propozycja płatności jest inicjowana ręcznie, a następnie program Dynamics 365 for Finance and Operations automatycznie oznacza wybrane faktury do rozliczenia podczas tworzenia płatności. Jeśli płatności zostały utworzone ręcznie, możesz użyć strony **Rozlicz transakcje**, aby wybrać faktury do rozliczenia. Możesz ręcznie wybrać faktury lub skorzystać z opcji **Oznacz według priorytetu**, aby faktury były zaznaczane automatycznie do rozliczenia. Opcja **Oznacz według priorytetu** jest dostępna tylko w przypadku Rozrachunków z odbiorcami. Aby włączyć tę opcję, należy użyć strony **Priorytet rozliczenia** w Parametrach modułu rozrachunków z odbiorcami. Jeśli pracownik zajmujący się płatnościami wprowadza płatność, ale nie rozlicza jej przed zaksięgowaniem, płatność może być rozliczana automatycznie. Można włączyć automatyczne rozliczanie w Parametrach modułu rozrachunków z odbiorcami i Parametrach modułu rozrachunków z dostawcami. Automatyczne rozliczenie rozlicza transakcje w tej samej firmie; nie jest możliwe rozliczanie w wielu firmach. W przypadku zastosowania opcji automatycznego rozliczenia można użyć wstępnie zdefiniowanej kolejności rozliczania lub można zdefiniować własną kolejność w oknie Parametry modułu rozrachunków z odbiorcami. Ta funkcja jest dostępna tylko dla Rozrachunków z odbiorcami.
 
 ## <a name="results-of-settlement"></a>Wyniki rozliczania
 Gdy transakcje są rozliczane niezapłacone saldo każdej z nich rośnie lub maleje. W typowym scenariuszu, w którym rozliczane są faktury i płatności, stan i saldo każdej transakcji jest aktualizowane zgodnie z następującymi zasadami:

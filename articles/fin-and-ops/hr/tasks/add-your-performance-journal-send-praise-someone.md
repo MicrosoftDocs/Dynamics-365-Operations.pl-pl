@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 0f2f8e0e858a27bec09eee6f7f02dc952fe8e408
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "856469"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1510712"
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Dodawanie do swojego arkusza wydajności i wysyłanie pochwały innej osobie
 

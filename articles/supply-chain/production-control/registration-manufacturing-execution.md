@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1bbcd7ebea869f921c2eadd05e64509ff9246aa4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "318173"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1567510"
 ---
 # <a name="registration-for-manufacturing-execution"></a>Rejestracja w celu uruchomienia produkcji
 

@@ -3,7 +3,7 @@ title: Ulepszenia funkcji księgowania zestawień
 description: W tym temacie opisano ulepszenia, które zostały wprowadzone w funkcji księgowania zestawień.
 author: josaw1
 manager: AnnBe
-ms.date: 04/26/2016
+ms.date: 05/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 02880edda6c34c24f8dad8cc8cbeafe215f46896
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321439"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541298"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Ulepszenia funkcji księgowania zestawień
 
@@ -43,7 +43,7 @@ Program Finance and Operations zawiera następujące mechanizmy sprawdzania popr
 - Ten sam klucz konfiguracji musi być używany do wszystkich operacji wykonywanych na danym zestawieniu podczas jego całego cyklu (tworzenie, obliczanie, czyszczenie, księgowanie itd.). Na przykład nie można utworzyć i obliczyć zestawienia przy włączonym kluczu konfiguracji **Zestawienia handlu detalicznego (starsze)**, a następnie próbować zaksięgować to samo zestawienie przy włączonym kluczu konfiguracji **Zestawienia handlu detalicznego** .
 
 > [!NOTE]
-> Zalecamy, aby używać klucza konfiguracji **Zestawienia handlu detalicznego** zapewniającego dostęp do ulepszonej funkcji księgowania zestawień, chyba że istnieją istotne powody do używania klucza konfiguracji **Zestawienia handlu detalicznego (starsze)**. Microsoft będzie nadal inwestować w ulepszoną funkcję księgowania zestawień, dlatego ważne jest, aby użytkownicy jak najwcześniej zaczęli się z nią oswajać. Starsza funkcja księgowania zestawień zostanie wycofana w jednym z przyszłych wydań.
+> Zalecamy, aby używać klucza konfiguracji **Zestawienia handlu detalicznego** zapewniającego dostęp do ulepszonej funkcji księgowania zestawień, chyba że istnieją istotne powody do używania klucza konfiguracji **Zestawienia handlu detalicznego (starsze)**. Microsoft będzie nadal inwestować w ulepszoną funkcję księgowania zestawień, dlatego ważne jest, aby użytkownicy jak najwcześniej zaczęli się z nią oswajać. Starsza funkcja księgowania zestawień będzie wycofywana, począwszy od wersji 8.0.
 
 ## <a name="setup"></a>Konfiguracja
 
@@ -56,11 +56,15 @@ W ramach ulepszania funkcji księgowania zestawień wprowadzono trzy nowe parame
 
 - **Wymagane wyłączenie zliczania** — Jeśli ta opcja jest ustawiona na **Tak**, proces księgowania zestawienia jest kontynuowany, nawet gdy różnica między kwotą obliczoną a kwotą transakcji wykracza poza próg zdefiniowany na skróconej karcie **Zestawienie** w oknie Sklepy sieci sprzedaży.
 
-Ponadto na skróconej karcie **Przetwarzanie wsadowe** wprowadzono pole **Maksymalna liczba równoległych operacji księgowania zestawień**. To pole określa liczbę zadań wsadowych, które powinny być wykonywane w tym samym czasie. Obecnie trzeba ręcznie ustawiać wartość w tym polu.
+Ponadto w skróconej karcie **przetwarzania wsadowego** na karcie **Księgowanie** na stronie **parametry sieci sprzedaży** wprowadzono następujące parametry: 
 
-Ponadto w nowym procesie księgowania konieczne jest zdefiniowanie ustawienia **Produkt karty upominkowej** na skróconej karcie **Karta upominkowa** dostępnej na karcie **Księgowanie** na stronie **Parametry sieci sprzedaży**. Ta zasada obowiązuje, nawet jeśli organizacja nie używa żadnych kart upominkowych.
+- **Maksymalna liczba równoległych operacji księgowania zestawień** — to pole określa liczbę zadań wsadowych, które będą używane do księgowania wielu zestawień. 
+- **Maksymalny wątek na potrzeby przetwarzania zamówień na zestawienie** — to pole reprezentuje maksymalną liczbę wątków używanych przez zadanie wsadowe księgowania zestawienia do tworzenia i fakturowania zamówień sprzedaży dla jednego zestawienia. Łączna liczba wątków, które będą używane przez proces księgowania zestawienia, zostanie obliczona na podstawie wartości w tym parametrze pomnożonej przez wartość w polu parametru **Maksymalna liczba równoległych operacji księgowania zestawień**. Ustawienie zbyt dużej wartości tego parametru może mieć negatywny wpływ na wydajność procesu księgowania zestawienia.
+- **Maksymalna liczba wierszy transakcji uwzględnionych w agregacji** — to pole określa liczbę wierszy transakcji, które zostaną uwzględnione w jednej zagregowanej transakcji przed utworzeniem nowej. Zagregowane transakcje są tworzone na podstawie różnych kryteriów agregacji, takich jak odbiorca, Data firmy lub wymiary finansowe. Należy pamiętać, że wiersze z pojedynczej transakcji detalicznej nie będą dzielone między różne zagregowane transakcje. Oznacza to, że istnieje możliwość, że liczba wierszy w zagregowanej transakcji jest nieco wyższa lub niższa w zależności od czynników, takich jak liczba odrębnych produktów.
+- **Maksymalna liczba wątków sprawdzania poprawność transakcji w sklepie** — to pole określa liczbę wątków, które będą używane do sprawdzania poprawności transakcji detalicznych. Sprawdzanie transakcji detalicznych jest wymaganym krokiem, który musi nastąpić, zanim transakcje będą mogły zostać uwzględnione w zestawieniach. Ponadto konieczne jest zdefiniowanie ustawienia **Produkt karty upominkowej** na skróconej karcie **Karta upominkowa** dostępnej na karcie **Księgowanie** na stronie **Parametry sieci sprzedaży**. Ta zasada obowiązuje, nawet jeśli organizacja nie używa żadnych kart upominkowych.
 
-Należy zwrócić uwagę, że wszystkie ustawienia i parametry związane z księgowaniem zestawień, które są zdefiniowane w oknie Sklepy sieci sprzedaży i na stronie **Parametry sieci sprzedaży**, mają zastosowanie do ulepszonej funkcji księgowania zestawień.
+> [!NOTE]
+> Wszystkie ustawienia i parametry związane z księgowaniem zestawień, które są zdefiniowane w oknie Sklepy sieci sprzedaży i na stronie **Parametry sieci sprzedaży**, mają zastosowanie do ulepszonej funkcji księgowania zestawień.
 
 ## <a name="processing"></a>Przetwarzanie
 

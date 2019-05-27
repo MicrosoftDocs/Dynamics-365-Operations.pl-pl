@@ -3,7 +3,7 @@ title: Personalizowanie środowiska użytkownika
 description: W tym temacie wyjaśniono, jak można spersonalizować Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 78c96c58b8c3331fcadb3e5c9b25dfef3b1b4cbc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1528851"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -75,7 +75,7 @@ Niektóre z najbardziej typowych i ważnych zmiany, jakie użytkownicy wprowadza
 
 Ponadto większość podstawowych typów personalizacji jawnych jest dostępnych po kliknięciu elementu prawym przyciskiem myszy i wybraniu polecenia **Personalizuj**. (Pamiętaj, że nie wszystkie elementy na stronie można personalizować). Podczas używania tej metody personalizacji pojawi się okno właściwości elementu.
 
-[![Personalizowanie właściwości elementu](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
+[![Personalizowanie właściwości elementu](./media/personalization-element-properties.png)](./media/personalization-element-properties.png)
 
 Okno właściwości służy do spersonalizowania elementu na następujące sposoby:
 
@@ -91,7 +91,7 @@ Okno właściwości może zawierać inne możliwości personalizacji w zależno�
 
 Jeśli chcesz wprowadzić wiele zmian na stronie lub wprowadzić zmiany, które nie są dostępne za pośrednictwem innych mechanizmów (np. zmiany kolejności elementów), można użyć pasek narzędzi **Personalizacja**. Aby otworzyć pasek narzędzi **Personalizacji** wybierz opcję **Spersonalizuj ten formularz** w oknie właściwości elementu. Można również wybrać pozycję **Spersonalizuj ten formularz** w grupie **Personalizacja** na karcie **Opcje** okienka akcji każdej ze stron.
 
-[![Pasek narzędzi personalizacji](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
+[![Pasek narzędzi personalizacji](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Nawigacja po stronie
 
