@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 66ee7215dc21921f9d8e405c3f77d9b5e0b89a9e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 60b22c3e15a9d7b228ec724ca77a61a18b11b257
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371493"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1538225"
 ---
 # <a name="eur-00015-set-up-vat-id"></a>EUR-00015 Konfigurowanie identyfikatora VAT
 

@@ -19,11 +19,11 @@ ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
-ms.sourcegitcommit: 063a9296e645e0da182241941869d8102954540a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "898938"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518879"
 ---
 # <a name="career-site-functionality-in-attract"></a>Funkcjonalność witryny rozwoju kariery w aplikacji Attract
 

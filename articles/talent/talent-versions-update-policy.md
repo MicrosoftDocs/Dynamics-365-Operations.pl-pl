@@ -3,7 +3,7 @@ title: Wymagania systemowe i zasady aktualizacji rozwiązania Talent
 description: W tym temacie podano wymagania dotyczące programu Dynamics 365 for Talent. Opisano w nim także zasady aktualizacji.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2389f00b22ec3b5284eeffb2c015533b7a3d13e0
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.openlocfilehash: ea8b7485b142245a359648a2a85d2a3e2a6d6629
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "856308"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518849"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Wymagania systemowe i zasady aktualizacji rozwiązania Talent
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie podano wymagania dotyczące programu Microsoft Dynamics 365 for Talent. Opisano w nim także zasady aktualizacji.
+W tym temacie opisano wymagania dotyczące rozwiązania Microsoft Dynamics 365 for Talent, w tym Attract, Onboard i Core HR. Zawiera także opis krajów i regionów, w których jest dostępne rozwiązanie Talent oraz informacje na temat języków i lokalizacji danych aplikacji Talent. Ponadto temat ten zawiera zasady aktualizacji dla aplikacji Talent.
 
 ## <a name="supported-web-browsers"></a>Obsługiwane przeglądarki
 
@@ -57,8 +57,17 @@ Aby znaleźć najnowszą wersję dla każdej przeglądarki, przejdź do witryny 
 * Aby można było uruchamiać dodatki programów Microsoft Excel i Word, musi być zainstalowany pakiet Microsoft Office 2016 dla systemu Windows lub Mac. Aby uzyskać więcej szczegółów na temat wymagań dotyczących wersji, zobacz [Rozwiązywanie problemów z integracją pakietu Office](../dev-itpro/office-integration/office-integration-troubleshooting.md "Rozwiązywanie problemów z integracją pakietu Office").
 * Aby wyświetlać dokumenty generowane przez funkcję Eksportuj do programu Excel lub Eksportuj do programu Word, należy mieć zainstalowany pakiet Microsoft Office 2007 lub nowszy.
 
+## <a name="regional-availability-languages-and-localization"></a>Regionalna dostępność, Języki i lokalizacja
+
+Można pobrać plik PDF zawierający listy krajów, regionów i języków obsługiwanych w aplikacji Talent [międzynarodowa dostępność Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability). 
+
+> [!NOTE]
+> Gdy interfejs użytkownika jest zlokalizowany w innych językach, wszystkie dane użytkownika są przechowywane w języku, w którym zostały wprowadzone. Możesz tworzyć wiadomości e-mail i szablony w innych językach, ale dane, takie jak informacje o harmonogramie, są w tej chwili dostępne tylko w języku angielskim.
+
+Jeśli jesteś programistą zainteresowanym tworzeniem dostosowań specyficznych dla kraju lub regionu lub stworzeniem rozwiązania dla kraju lub regionu, który nie jest obecnie obsługiwany przez firmę Microsoft, zobacz [Globalizacja](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
+
 ## <a name="update-policy"></a>Zasady aktualizacji
 
 Program Microsoft Dynamics 365 for Talent jest udostępniany jako rozwiązanie chmurowe. Aktualizacje usługi Dynamics 365 for Talent są dodawane w sposób ciągły i stosowane automatycznie przez firmę Microsoft.
 
-Aktualizacje są publikowane regularnie i dla wszystkich środowisk.  Program Dynamics 365 for Talent jest wspierany zgodnie z [zasadami cyklu życia pomocy technicznej Microsoft](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Cykl życia pomocy technicznej Microsoft"), które określają spójny i przewidywalny harmonogram dostępności wsparcia technicznego dla produktów.
+Aktualizacje są publikowane regularnie i dla wszystkich środowisk. Program Dynamics 365 for Talent jest wspierany zgodnie z [zasadami cyklu życia pomocy technicznej Microsoft](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Cykl życia pomocy technicznej Microsoft"), które określają spójny i przewidywalny harmonogram dostępności wsparcia technicznego dla produktów.

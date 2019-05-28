@@ -15,12 +15,12 @@ ms.search.region: Poland
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 916031a6ee537a42040d8187db6407ed7e0fffb9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7f64cb8d82d7fdf5fc3a5af18512a40063dae523
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371460"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1513081"
 ---
 # <a name="set-up-number-sequences-by-warehouse"></a>Konfigurowanie numeracji według magazynów
 

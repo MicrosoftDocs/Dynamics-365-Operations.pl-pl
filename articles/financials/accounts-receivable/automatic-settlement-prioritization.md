@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 775ce10cdba5e38fbb5fc058c6df297143229f79
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "318978"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566324"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automatyczne rozliczanie i priorytety
 
@@ -45,7 +45,7 @@ Przykłady rozliczeń w dalszej części tego artykułu są oparte na następuj�
 |---------------|-------------|--------|---------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Faktura 1     | 15 sierpnia   | 100,00 | 2%14, Netto 30        | 29 sierpnia          |                                                                                                                                                                                               |
 | Faktura 2     | 1 września | 250.00 | 2%14, Netto 30        | 15 września       |                                                                                                                                                                                               |
-| Faktura 3     | 15 października  | 500.00 | 2%14/ netto 30        | 29 października         |                                                                                                                                                                                               |
+| Faktura 3     | 15 października  | 500.00 | 2% 14/ netto 30        | 29 października         |                                                                                                                                                                                               |
 | Nota odsetkowa | 15 października  | 7,00   |                     |                    | Ta nota odsetkowa dotyczy faktur 1 i 2. Kwota wynosi 2% odsetek od kwot zaległych co najmniej 30 dni. Na przykład: 0,02 × (100,00 + 250,00) = 7,00. |
 
 ## <a name="user-defined-settlement-priority"></a>Priorytet rozliczania zdefiniowany przez użytkownika

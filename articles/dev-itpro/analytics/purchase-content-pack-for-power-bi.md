@@ -3,7 +3,7 @@ title: Pakiet zawartości usługi Power BI Analiza wydatków zakupowych
 description: W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Analiza wydatków zakupowych. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3206573022c0f843b07a468987a112ca6ac435ef
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313849"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527724"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Pakiet zawartości usługi Power BI Analiza wydatków zakupowych
 
@@ -44,88 +44,88 @@ Pakiet zawartości wykorzystuje dane transakcyjne zakupów i przedstawia zarówn
 Pakiet zawartości usługi Power BI **Analiza wydatków związanych z zakupami** jest wyświetlany na stronie **Analiza wydatków i zakupów** (**Zaopatrzenie i sourcing** \> **Zapytania i raporty** \> **Analiza wydajności zakupów** \> **Analiza wydatków i zakupów**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
-Pakiet zawartości usługi Power BI **Analiza wydatków zakupowych** obejmuje raport zawierający zestaw wskaźników. Te wskaźniki są wizualizowane jako wykresy, kafelki i tabele. Następująca tabela zawiera przegląd dostępnych wizualizacji.
+Pakiet zawartości usługi Power BI **Analiza wydatków zakupowych** obejmuje raport zawierający zestaw wskaźników. Te wskaźniki są wizualizowane jako wykresy, kafelki i tabele. 
 
-<table>
-<thead>
-<tr>
-<th>Strona raportu</th>
-<th>Wykresy</th>
-<th>Kafelki</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Zakupy wg dostawców</td>
-<td><ul>
-<li>10 najważniejszych dostawców wg wartości zakupów (wykres skumulowany słupkowy)</li>
-<li>Łączne zakupy wg grupy dostawców/kraju/nazwy (wykres kołowy)</li>
-<li>Zakupy wg grupy dostawców/kraju/nazwy (wykres kolumnowy)</li>
-<li>Średnie zakupy wg grupy dostawców/kraju/nazwy (wykres kolumnowy)</li>
-</ul></td>
-<td><ul>
-<li>Suma zakupów</li>
-<li>Wzrost zakupów r/r</li>
-<li>Łączna liczba dostawców</li>
-<li>Łączna liczba aktywnych dostawców</li>
-</ul></td>
-</tr>
-<tr>
-<td>Zakupy wg produktów</td>
-<td><ul>
-<li>Zakupy wg kategorii zaopatrzenia/nazwy produktu (wykres kolumnowy)</li>
-<li>Łączne zakupy wg kategorii zaopatrzenia/nazwy produktu (wykres kołowy)</li>
-<li>10 najważniejszych produktów wg wartości zakupów (wykres skumulowany słupkowy)</li>
-</ul></td>
-<td><ul>
-<li>Łączna liczba produktów</li>
-<li>Procent aktywnych produktów w łącznej liczbie produktów</li>
-<li>Liczba produktów odpowiedzialnych za 80% zakupów</li>
-</ul></td>
-</tr>
-<tr>
-<td>Zakupy wg okresu*</td>
-<td><ul>
-<li>Zakupy wg miesiąca/dnia (wykres kolumnowy)</li>
-<li>Odchylenie łącznych zakupów r/r (wykres kaskadowy)</li>
-<li>Wzrost łącznych zakupów r/r (wykres kolumnowy)</li>
-<li>Zestawienie zaopatrzenia (macierz)</li>
-</ul></td>
-<td><ul>
-<li>Wzrost zakupów r/r</li>
-<li>% wzrostu zakupów r/r</li>
-</ul></td>
-</tr>
-<tr>
-<td>Zakupy wg lokalizacji dostawców</td>
-<td><ul>
-<li>Zakupy wg miejscowości</li>
-<li>% wzrostu zakupów r/r</li>
-<li>Zakupy wg krajów</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Analiza wydatków zakupowych wg okresów</td>
-<td><ul>
-<li>Zakupy w bieżącym roku wg miesiąca/dnia (wykres liniowy)</li>
-<li>Zakupy w bieżącym i ubiegłym roku (wykres liniowy i kolumnowy)</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Analiza wydatków zakupowych wg dostawców</td>
-<td><ul>
-<li>% udziału 10 najważniejszych dostawców w zakupach (wykres lejkowy)</li>
-<li>10 dostawców z największym wzrostem wydatków r/r</li>
-<li>10 dostawców z największym spadkiem wydatków r/r</li>
-</ul></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+Następująca sekcja zawiera przegląd dostępnych wizualizacji.
 
-\* Zakupy w tym i ubiegłym roku oraz wzrost według kategorii zaopatrzenia.
+### <a name="purchase-by-vendor-report-page"></a>Strona raportu o zakupach wg dostawcy
+**Wykresy**
+- 10 najważniejszych dostawców wg wartości zakupów (wykres skumulowany słupkowy)
+- Łączne zakupy wg grupy dostawców/kraju/nazwy (wykres kołowy)
+- Zakupy wg grupy dostawców/kraju/nazwy (wykres kolumnowy)
+- Średnie zakupy wg grupy dostawców/kraju/nazwy (wykres kolumnowy)
+
+**Kafelki**
+- Suma zakupów
+- Wzrost zakupów r/r
+- Łączna liczba dostawców
+- Łączna liczba aktywnych dostawców
+
+**Przykład**
+<img src="media/spend1.PNG" alt="Purchase by vendor">
+
+### <a name="purchase-by-product-report-page"></a>Strona raportu o produktach wg dostawcy
+
+**Wykresy**
+- Zakupy wg kategorii zaopatrzenia/nazwy produktu (wykres kolumnowy)
+- Łączne zakupy wg kategorii zaopatrzenia/nazwy produktu (wykres kołowy)
+- 10 najważniejszych produktów wg wartości zakupów (wykres skumulowany słupkowy)
+
+**Kafelki**
+- Łączna liczba produktów</li>
+- Procent aktywnych produktów w łącznej liczbie produktów
+- Liczba produktów odpowiedzialnych za 80% zakupów
+
+**Przykład**
+
+
+<img src="media/purchaseByProduct.PNG" alt="Purchase by Product">
+
+### <a name="purchase-by-period-report-page"></a>Strona raportu o okresie wg dostawcy
+Ta strona pokazuje zakupy w tym i ubiegłym roku oraz wzrost według kategorii zaopatrzenia.
+
+**Wykresy** 
+- Zakupy wg miesiąca/dnia (wykres kolumnowy)
+- Odchylenie łącznych zakupów r/r (wykres kaskadowy)
+- Wzrost łącznych zakupów r/r (wykres kolumnowy)
+- Zestawienie zaopatrzenia (macierz)
+
+**Kafelki**
+- Wzrost zakupów r/r
+- % wzrostu zakupów r/r
+
+**Przykład**
+<img src="media/purchaseByPeriod.PNG" alt="Purchase by Period">
+
+### <a name="purchase-by-vendor-location-report-page"></a>Strona raportu o zakupach wg lokalizacji dostawcy
+
+**Wykresy**
+- Zakupy wg miejscowości
+- % wzrostu zakupów r/r
+- Zakupy wg krajów
+
+**Przykład**
+<img src="media/purchByVendorLocation.PNG" alt="Purchase by Vendor Location">
+
+### <a name="purchase-spend-analysis-by-time-report-page"></a>Analiza wydatków zakupowych wg strony raportu
+
+**Wykresy** 
+- Zakupy w bieżącym roku wg miesiąca/dnia (wykres liniowy)
+- Zakupy w bieżącym i ubiegłym roku (wykres liniowy i kolumnowy)
+
+**Przykład**
+<img src="media/PurchByTIme.PNG" alt="Purchase by Time">
+
+### <a name="purchase-spend-analysis-by-vendor-report-page"></a>Analiza wydatków zakupowych wg strony raportu dot. dostawcy
+
+**Wykresy** 
+- % udziału 10 najważniejszych dostawców w zakupach (wykres lejkowy)
+- 10 dostawców z największym wzrostem wydatków r/r
+- 10 dostawców z największym spadkiem wydatków r/r
+
+**Przykład** 
+<img src="media/PurchSpendAnalysisByVendor.PNG" alt="Purchase spend by vendor">
+
 
 ## <a name="data-model-and-entities"></a>Model i jednostki danych
 Następujące dane są używane do wypełniania stron raportów w pakiecie zawartości **Analiza wydatków zakupowych** dla usługi Power BI. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).

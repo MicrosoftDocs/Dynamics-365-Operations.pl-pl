@@ -16,12 +16,12 @@ ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05ac2d33b699805808bdff5e4076a0c6cd27e5a8
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 838e69286b42b22be772cdf6af37689702f1bca8
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371505"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1538242"
 ---
 # <a name="line-discount-calculation-from-the-unit-price-for-poland"></a>Obliczanie rabatu wiersza od ceny jednostkowej dla Polski
 

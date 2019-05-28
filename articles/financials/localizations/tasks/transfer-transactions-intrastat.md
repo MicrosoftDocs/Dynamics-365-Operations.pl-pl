@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13cc9dc2119ad3dc85d580e92edee7bb9ef2075c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a0e332d5cae09c5026a64a4463e301a008860bd9
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371521"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1538218"
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a>Przesyłanie transakcji do systemu Intrastat
 

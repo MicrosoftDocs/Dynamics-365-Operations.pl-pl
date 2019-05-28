@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 44d89d2bacc8f301a19bfd09d229809d492a55fb
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "349108"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570229"
 ---
 # <a name="review-collections-information"></a>Przeglądanie informacji o windykacji
 

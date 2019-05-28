@@ -18,11 +18,11 @@ ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
 ms.openlocfilehash: 9d5d6fd65717cd886f1c6576aabf2bc59ca4fcaf
-ms.sourcegitcommit: a47f705976b7a5b34492294e28aa8cd47ea38825
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "345934"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1573241"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Przeliczanie jednostki miary dla wariantów produktów
 

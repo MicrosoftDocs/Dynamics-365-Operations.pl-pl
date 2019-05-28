@@ -18,11 +18,11 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: b3eeda217e00b33962561bcb2ee6185275f52fe2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363690"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556951"
 ---
 # <a name="store-order-fulfillment"></a>Realizacja zamówienia w sklepie
 

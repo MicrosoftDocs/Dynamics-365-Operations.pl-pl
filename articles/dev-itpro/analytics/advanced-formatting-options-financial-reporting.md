@@ -1,16 +1,16 @@
 ---
 title: Zaawansowane opcje formatowania w raportowaniu finansowym
 description: Podczas tworzenia raportu w module raportowania finansowego są dostępne dodatkowe funkcje formatowania, włącznie z filtrami wymiarów, ograniczeniami kolumn i jednostek sprawozdawczych, wierszami niedrukowanymi i instrukcjami IF/THEN/ELSE w obliczeniach.
-author: ShylaThompson
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 70f69fdad3d9186886190c62fba08af06d2a24d6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335584"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1502572"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Zaawansowane opcje formatowania w raportowaniu finansowym
 
@@ -41,6 +41,7 @@ W poniższej tabeli opisano zaawansowane funkcje formatowania, które są dostę
 | Ograniczenie kolumny         | Ograniczenie kolumny w definicji wiersza jest przydatne do ukrywania wartości, które są istotne tylko w przypadku niektórych wierszy raportu. Podczas obliczania wartości procentowej dla wiersza, ograniczenie kolumny uniemożliwia drukowanie kolumn sum lub innych kolumn, gdy te wartości nie mają zastosowania. |
 | Podział kolumny               | Można dodać podziały kolumn w definicji wiersza, aby wyświetlić dane raportu obok siebie. W jednej definicji wiersza można dodać wiele podziałów kolumn, a nagłówki kolumn są powtarzane na górze każdej kolumny po jej podziale. Komentarze dotyczące raportu są wyświetlane między podziałami kolumn. |
 | Instrukcja IF/THEN/ELSE     | Można zmodyfikować obliczenia w definicji wiersza lub definicji kolumny. |
+| W przypadku wartości wymiarów należy zastosować pojedyncze cudzysłowy ('') i znak „i” (&) | Do projektowania raportu można stosować wartości wymiarów, łącznie z znakiem „i” (&). |
 
 ## <a name="advanced-cell-placement"></a>Zaawansowane rozmieszczanie komórek
 Zaawansowane rozmieszczenie komórek (*wymuszenie*) polega na wstawianiu określonych wartości do określonych komórek. Na przykład wymuszenie jest często używane do przenoszenia poprawnego salda w zestawieniu przepływów pieniężnych. Można używać wymuszenia do następujących celów:
@@ -297,3 +298,9 @@ Instrukcja **IF/THEN/ELSE** pozwala uzależnić każde obliczenie od wyników z 
 
 > [!NOTE]
 > Nie można umieszczać wyników obliczeń w dowolnej innej kolumnie. Wyniki muszą być w kolumnie zawierające formułę.
+
+#### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>W przypadku wartości wymiarów w rzędzie, kolumnie lub drzewie należy zastosować pojedyncze cudzysłowy ('') i znak „i” (&)
+
+Raporty można projektować przy użyciu wartości wymiarów, które zawierają znak „i” (&). 
+
+W polu **łącze do wymiaru finansowego** można wprowadzić wartość, np. **'P&L'**. Włączenie pojedynczych cudzysłowów (' ') po obu stronach wartości wymiaru oznacza, że jest używana wartość literalna, taka jak m.in. „i” (&). 

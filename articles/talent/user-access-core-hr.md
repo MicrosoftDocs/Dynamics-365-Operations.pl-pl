@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: ece6a81c54ef1421284fc79ab82ed3e31a972255
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "855663"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518852"
 ---
 # <a name="user-can-access-core-hr-but-not-the-onboard-or-attract-app"></a>Użytkownik ma dostęp do aplikacji Core HR, ale nie do Onboard albo Attract
 

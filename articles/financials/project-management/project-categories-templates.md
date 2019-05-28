@@ -18,11 +18,11 @@ ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: c4d09fde2cf4335553243c136590f9f3135db97a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "347843"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1558249"
 ---
 # <a name="synchronize-project-expense-categories-between-finance-and-operations-and-project-service-automation"></a>Synchronizowanie kategorii wydatków w projekcie między programami Finance and Operations i Project Service Automation
 

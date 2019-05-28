@@ -18,11 +18,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: b90b4a71e2447e942dbb4a9645ef93064da630d3
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "347728"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1558040"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>Konfigurowanie pakowania ręcznego (luty 2016 i maj 2016)
 

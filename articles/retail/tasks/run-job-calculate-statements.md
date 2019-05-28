@@ -18,11 +18,11 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: f52603672e95d0ae4973844851c4ed260484e5f0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "365185"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550169"
 ---
 # <a name="configure-and-run-job-to-calculate-statements"></a>Konfigurowanie i realizowanie zadań obliczania zestawień
 

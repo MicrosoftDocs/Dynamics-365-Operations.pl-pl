@@ -15,12 +15,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 26f7f3f11408cac387c58a5345b566ac50ed426f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 627b90659ce4e285667492e37be203cd9dbb7c9c
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371533"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1538248"
 ---
 # <a name="reverse-charge-vat"></a>Opłata zwrotna VAT
 

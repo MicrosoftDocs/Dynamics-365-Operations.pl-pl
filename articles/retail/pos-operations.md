@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842729"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505103"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
@@ -70,7 +70,9 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 106 | Wyczyszczenie ilości | Zresetuj ilość w aktualnie wybranym wierszu do **1**. | Tak | Tak | Nr | Tak | Nr |
 | 640 | Wyczyść przedstawiciela handlowego w wierszu | Usuń grupę prowizji sprzedaży (przedstawiciel handlowy) z aktualnie wybranego wiersza. | Tak | Tak | Nr | Tak | Nr |
 | 121 | Wyczyść dane sprzedawcy | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nr |
-| 1055 | Zamknięcie zmiany | Zamknij bieżącą zmian, wydrukuj Końcowy raport sprzedaży i wyloguj użytkownika z systemu. | Tak | Tak | Tak | Nr | Nr |
+| 1055 | Zamknięcie zmiany | Zamknij bieżącą zmian, wydrukuj Końcowy raport sprzedaży i wyloguj użytkownika z systemu. | Tak | Tak | Tak | Nie | Nie |
+| 139 | Sfinalizuj transakcję | Monituje użytkownika o wybranie metodzie płatności | Tak | Tak | Nie | Tak | Nie |
+| 620 | Utwórz zamówienie odbiorcy | Konwertuj transakcję punktu sprzedaży na zamówienie odbiorcy. | Tak | Tak | Nie | Tak\* | Nie |
 | 925 | Kopiuj czek bankowy | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Tak |
 | 620 | Utwórz zamówienie odbiorcy | Konwertuj transakcję punktu sprzedaży na zamówienie odbiorcy. | Tak | Tak | Nr | Tak\* | Nr |
 | 621 | Tworzenie oferty | Konwertuj transakcję punktu sprzedaży na ofertę sprzedaży. | Tak | Tak | Nr | Tak\* | Nr |

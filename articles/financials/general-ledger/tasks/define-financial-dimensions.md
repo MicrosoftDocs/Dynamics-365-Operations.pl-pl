@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 20a7781486c6e0612c27af02a1bccbc48c55a932
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c5cfe92b8733a0a6d76e074cc31eec3f3935b512
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353800"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530875"
 ---
 # <a name="define-financial-dimensions"></a>Definiowanie wymiarów finansowych
 
@@ -33,7 +33,7 @@ W tym przewodniku po zadaniach pokazano dodawanie wymiaru finansowego opartego n
 ## <a name="create-an-entity-backed-financial-dimension"></a>Tworzenie wymiaru finansowego opartego na jednostce
 1. Wybierz kolejno opcje Księga główna > Plan kont > Wymiary > Wymiary finansowe.
 2. Kliknij przycisk Nowy.
-3. W polu Użyj wartości z wybierz zdefiniowaną w systemie jednostkę, na podstawie której zostanie utworzony wymiar finansowy. 
+3. W polu Formularz wartości użytkownika wybierz zdefiniowaną w systemie jednostkę, na podstawie której zostanie utworzony wymiar finansowy. 
 4. W polu Nazwa wymiaru wpisz wartość, która będzie opisywać wymiar finansowy.
     * Nazwa może być inna niż nazwa jednostki zdefiniowana przez system, ale nie może zawierać spacji ani znaków specjalnych.  
 5. Kliknij Aktywacja.
@@ -47,7 +47,7 @@ W tym przewodniku po zadaniach pokazano dodawanie wymiaru finansowego opartego n
 ## <a name="create-a-custom-financial-dimension"></a>Tworzenie niestandardowego wymiaru finansowego
 1. Zamknij stronę.
 2. Kliknij przycisk Nowy.
-3. W polu Użyj wartości z wybierz opcję <Custom dimension>.
+3. W polu Użyj wartości wybierz opcję Wymiar niestandardowy.
 4. W polu Nazwa wymiaru wpisz wartość, która będzie opisywać wymiar finansowy.
     * Nazwa nie może zawierać spacji ani znaków specjalnych.  
     * Można również określić maskę konta, aby ograniczyć typ i ilość informacji, które można wprowadzić dla wartości wymiarów,.   

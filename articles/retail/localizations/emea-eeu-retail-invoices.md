@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 34a31cee817447697b5d7d3e3ea2cfd2865d2bb1
-ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
+ms.openlocfilehash: 38520d8f3173cc96a1ac175d6338e8e60095615d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "760712"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512232"
 ---
 # <a name="retail-customer-invoices-and-return-sales-orders-in-eastern-european-countries"></a>Faktury dla odbiorcy i zwrotne zamówienia sprzedaży w aplikacji Retail w krajach środkowoeuropejskich
 

@@ -15,11 +15,11 @@ ms.search.scope: Talent, Core
 ms.search.region: Global
 ms.author: shielas
 ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "989944"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518827"
 ---
 # <a name="interview-scheduling-and-feedback"></a>Planowanie rozmów kwalifikacyjnych i informacji zwrotnych
 

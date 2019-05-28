@@ -18,11 +18,11 @@ ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.openlocfilehash: e11742c62ea8d10f391ed2d417024f9c80e39591
-ms.sourcegitcommit: 21bbdac152e0cbb0576df9d5e6e90283175834ef
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "768421"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1562005"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych
 

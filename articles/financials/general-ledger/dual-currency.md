@@ -3,7 +3,7 @@ title: Dwuwalutowość
 description: Ten temat zawiera informacje o dwuwalutowości, gdzie waluta raportowania służy jako druga waluta rozliczeniowa w programie Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3665ec1cb15fc63e5707a4721699872fe81424a0
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330317"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1532255"
 ---
 # <a name="dual-currency"></a>Dwie waluty
 
@@ -61,6 +61,9 @@ W różnych raportach i zapytaniach dodano również logikę wyłączającą kwo
 ## <a name="financial-journals"></a>Arkusze finansowe
 
 Arkusze finansowe, takie jak arkusz finansowy i arkusz faktur od dostawców, zostały zaktualizowane, aby zawierały dodatkowe informacje o walucie raportowania. Sumy załączników i arkuszy są teraz wyświetlane w walucie raportowania. Ponadto informacje o kursie wymiany waluty raportowania są teraz wyświetlane na karcie **Ogólne** w wierszach arkusza. Z tego względu podczas wprowadzania transakcji można zastąpić kurs wymiany waluty raportowania.
+
+## <a name="vendor-invoices-sales-orders-and-sales-agreements"></a>Faktury dostawcy, zamówienia sprzedaży i umowy sprzedaży
+Faktury dostawcy, zamówienia sprzedaży i umowy sprzedaży zostały zaktualizowane, tak aby zawierały stały kurs wymiany dla waluty raportowania. Stały kurs wymiany można zdefiniować dla waluty rozliczeniowej i waluty raportowania w przypadku, gdy waluta transakcji jest inna. Jeśli waluta rozliczeniowa i waluta raportowania są takie same, stały kurs wymiany będzie zsynchronizowany przy użyciu stałej stawki waluty rozliczeniowej jako stałej stawki waluty raportowania. Nie można zmienić stałego kursu wymiany waluty raportowania dla tej konfiguracji. Gdy waluta rozliczeniowa jest inna niż waluta raportowania, stały kurs wymiany można zdefiniować dla waluty rozliczeniowej i waluty raportowania podczas wprowadzania transakcji. Jeśli waluta raportowania nie została zdefiniowana w księdze, pole **stały kurs wymiany waluty raportowania** nie jest włączone i nie jest obliczana żadna kwota w walucie raportowania.
 
 ## <a name="module-changes"></a>Zmiany w modułach
 
