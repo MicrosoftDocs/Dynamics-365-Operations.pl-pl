@@ -1,99 +1,216 @@
----
-title: Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)
-description: W tym temacie omówiono konfigurowanie analizy ostatniego zakupu, częstotliwości i wartości pieniężnej (RFM) dla odbiorców.
-author: josaw1
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-ms.search.form: MCRRFMDefinition
-audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: 78943
-ms.assetid: 8ff9aac3-5ada-4150-85fd-18901c926d53
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: josaw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4314c81823940ce3192da23dfdf777e8ebf781f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553052"
----
-# <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)
-
-[!include [banner](includes/banner.md)]
-
-W tym temacie omówiono konfigurowanie analizy ostatniego zakupu, częstotliwości i wartości pieniężnej (RFM) dla odbiorców.
-
-Analiza RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej) to narzędzie marketingowe, które organizacja może używać do oceny danych generowanych przez zakupy. Po skonfigurowaniu analizy RFM, do odbiorców przypisywana jest obliczona punktacja RFM według wykonanych zakupów. Punktacja RFM może być trzycyfrową oceną lub sumę liczbową, zależnie od sposobu skonfigurowania analizy RFM przez organizację. Poniżej przedstawiono sposób działania ocen, jeżeli organizacja używa wyniku w postaci trzycyfrowej oceny:
-
-- Pierwsza wartość to ocena odbiorcy według daty ostatniego zakupu.
-- Druga wartość to ocena częstotliwości odbiorcy, czyli jak często odbiorca dokonuje zakupów od organizacji.
-- Trzecia wartość to ocena wartości pieniężnej odbiorcy, czyli ile pieniędzy odbiorca wydaje, gdy kupuje towary w Twojej firmie.
-
-Załóżmy, że w Twojej firmie używana jest skala ocen od 1 do 5, gdzie 5 oznacza najwyższą ocenę. W tym przypadku jeśli odbiorca otrzymał ocenę 535, można z tego wywnioskować następujące fakty:
-
-- **Ocena daty ostatniego zakupu 5** — ostatni zakup dokonany przez odbiorcę miał miejsce niedawno.
-- **Ocena częstotliwości 3** — odbiorca kupuje produkty od organizacji z średnią częstotliwością.
-- **Ocena wartości pieniężnej 5** — gdy odbiorca dokonuje zakupu, wydaje znaczną kwotę pieniędzy.
-
-Jeśli organizacja używa sum liczbowych do określania wyniku, poszczególne wyniki są sumowane. Jeśli weźmiemy jeszcze raz ten sam przykład, odbiorca otrzymuje ocenę 13 (5 + 3 + 5).
-
-## <a name="to-set-up-rfm-analysis-for-the-customers-in-your-organization"></a>Aby skonfigurować analizę RFM dla odbiorców w organizacji
-
-1. Wybierz kolejno opcje **Biuro obsługi** \> **Okresowe** \> **Analiza RFM**.
-2. Na stronie **Analiza RFM** wybierz opcję **Nowa**. W polu **Definicja RFM** wprowadź nazwę definicji RFM. Na przykład można nazwać definicję RFM-A.
-3. Wprowadź datę początkową i końcową dla definicji RFM.
-4. Na skróconej karcie **Ogólne** wykonaj poniższe czynności:
-
-    - Jeśli każda sekcja punktacji RFM musi zawierać równe liczby odbiorców, zaznacz pole wyboru **Rozkład równomierny**.
-    - Zaznacz pole wyboru **Dodaj punktacje**, aby otworzyć sumę trzech wyników. W ten sposób, przykładowo, odbiorca uzyska punktację RFM równą 13 zamiast 535.
-    - Zaznacz pole wyboru **Zapisz historię**, aby wymagać od systemu zapisywanie danych statystycznych dla odbiorców, tak aby dane mogły służyć do obliczania punktacji RFM.
-
-5. Na skróconej karcie **Recency** wykonaj poniższe czynności:
-
-    - W polu **Oddziały** wprowadź numer dzielenia lub grup, które będą używane do obliczania punktacji recency dla odbiorców. Na przykład, jeśli masz 100 odbiorców, dzielenie 5 oznacza, że nie ma 20 odbiorców dla każdego wyniku. 20 odbiorców, którzy ostatnio dokonali zakupu ma punktację recency wynoszącą 5. Kolejnych 20 odbiorców ma punktację recency wynoszącą 4 itd. Jeśli masz 50 odbiorców, 10 odbiorców otrzyma punktację recency równą 5, 10 otrzyma punktację recency 4 i tak dalej.
-    - W polu **Priorytet** wybierz, jaką wagę można przyznać dla parametru recency w stosunku do innych parametrów przy obliczaniu punktacji RFM dla odbiorcy. Na przykład użytkownikowi może zależeć bardziej na punktacji recency niż na punktacji wg wartości pieniężnej.
-    - W polu **Mnożnik** wprowadź wartość, przez którą ma zostać pomnożona punktacja recency. Jeśli wartość nie zostanie wprowadzona, punktacja nie będzie mnożona.
-    - W polu **Okres** wybierz przedział czasu, w których jest obliczana punktacja recency. Na przykład, według tygodnia lub miesiąca.
-
-6. Na skróconej karcie **Częstotliwość** wykonaj poniższe czynności:
-
-    - W polu **Oddziały** wprowadź numer dzielenia lub grup, które będą używane do obliczania punktacji częstotliwości dla odbiorców.
-    - W polu **Priorytet** wybierz, jaką wagę można przyznać dla parametru częstotliwości w stosunku do innych parametrów przy obliczaniu punktacji RFM dla odbiorcy.
-    - W polu **Mnożnik** wprowadź wartość, przez którą ma zostać pomnożona punktacja częstotliwości. Jeśli wartość nie zostanie wprowadzona, punktacja nie będzie mnożona.
-
-7. Na skróconej karcie **Waluta** wykonaj poniższe czynności:
-
-    - W polu **Oddziały** wprowadź numer dzielenia lub grup, które będą używane do obliczania punktacji wg wartości pieniężnej dla odbiorców.
-    - W polu **Priorytet** wybierz, jaką wagę można przyznać dla parametru wartości pieniężnej w stosunku do innych parametrów przy obliczaniu punktacji RFM dla odbiorcy.
-    - W polu **Mnożnik** wprowadź wartość, przez którą ma zostać pomnożona punktacja wg wartości pieniężnej. Jeśli wartość nie zostanie wprowadzona, punktacja nie będzie mnożona.
-    - W polu **Brutto/netto** wybierz, czy przy obliczaniu punktacji wg wartości pieniężnej system powinien używać kwoty zafakturowanej brutto czy netto.
-    - Jeśli kwoty zwrotu dla odbiorcy powinny zostać odjęte od łącznej kwoty faktury dla odbiorcy, zaznacz pole wyboru **Odejmij zwroty**.
-
-## <a name="view-a-customers-rfm-score"></a>Wyświetlanie wyniku RFM klienta
-
-Ta procedura umożliwia wyświetlenie wyniku RFM odbiorcy.
-
-1. Wybierz kolejno opcje **Biuro obsługi** \> **Arkusze** \> **Obsługa klienta**.
-2. Na stronie **Obsługa klienta**, w okienku **Obsługa klienta**, w polach wyszukiwania, wybierz typ słowa kluczowego do wyszukania i wprowadź wyszukiwany tekst.
-3. Wybierz opcję **Wyszukaj**.
-4. Na stronie **Wyszukiwanie odbiorcy** wybierz odpowiedni rekord odbiorcy, a następnie kliknij przycisk **Wybierz odbiorcę**.
-
-Wynik RFM jest wyświetlany w grupie **Historia zamówienia** w prawej części strony **Obsługa klienta**.
-
-## <a name="view-or-clear-the-history-of-an-rfm-analysis-record"></a>Wyświetlanie lub czyszczenie historii rekordu analizy RFM
-
-Należy użyć tej procedury w celu wyświetlenia lub wyczyszczenia historii rekordu analizy RFM.
-
-1. Wybierz kolejno opcje **Biuro obsługi** \> **Okresowe** \> **Analiza RFM**.
-2. Na stronie **Analiza RFM** wybierz rekord do wyświetlenia.
-3. Aby wyświetlić historię rekordu, wybierz kartę skróconą**Historia**.
-4. Aby wyczyścić historię rekordu, wybierz opcję **Wyczyść historię**.
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="set-up-rfm-analysis.md" target-language="pl-PL">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>set-up-rfm-analysis.69f5cb.c7cb79fa82b579bee01e51cb635597cc5f711a98.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>c7cb79fa82b579bee01e51cb635597cc5f711a98</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>e2fb0846fcc6298050a0ec82c302e5eb5254e0b5</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/27/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\set-up-rfm-analysis.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Set up Recency, Frequency, and Monetary (RFM) analysis</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic explains how to set up a Recency, Frequency, and Monetary (RFM) analysis of your customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym temacie omówiono konfigurowanie analizy ostatniego zakupu, częstotliwości i wartości pieniężnej (RFM) dla odbiorców.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Set up Recency, Frequency, and Monetary (RFM) analysis</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic explains how to set up a Recency, Frequency, and Monetary (RFM) analysis of your customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym temacie omówiono konfigurowanie analizy ostatniego zakupu, częstotliwości i wartości pieniężnej (RFM) dla odbiorców.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Recency, frequency, and monetary (RFM) analysis is a marketing tool that your organization can use to evaluate the data that is generated by customer purchases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Analiza RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej) to narzędzie marketingowe, które organizacja może używać do oceny danych generowanych przez zakupy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>After you set up RFM analysis, customers are assigned a calculated RFM score as they make purchases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po skonfigurowaniu analizy RFM, do odbiorców przypisywana jest obliczona punktacja RFM według wykonanych zakupów.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The RFM score can be a three-digit rating or an aggregate number, depending on how your organization has configured RFM analysis.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Punktacja RFM może być trzycyfrową oceną lub sumę liczbową, zależnie od sposobu skonfigurowania analizy RFM przez organizację.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Here's how the rating works if your organization uses a three-digit rating for the score:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poniżej przedstawiono sposób działania ocen, jeżeli organizacja używa wyniku w postaci trzycyfrowej oceny:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>The first digit is the customer's recency rating, which is how recently the customer made a purchase from your organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pierwsza wartość to ocena odbiorcy według daty ostatniego zakupu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The second digit is the customer's frequency rating, which is how often the customer makes purchases from your organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Druga wartość to ocena częstotliwości odbiorcy, czyli jak często odbiorca dokonuje zakupów od organizacji.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The third digit is the customer's monetary rating, which is how much the customer spends when he makes purchases from your organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Trzecia wartość to ocena wartości pieniężnej odbiorcy, czyli ile pieniędzy odbiorca wydaje, gdy kupuje towary w Twojej firmie.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>For example, your organization has set the ratings on a scale of 1 through 5, where 5 is the highest rating.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Załóżmy, że w Twojej firmie używana jest skala ocen od 1 do 5, gdzie 5 oznacza najwyższą ocenę.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>In this case, a customer rating of 535 tells you the following information about the customer:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym przypadku jeśli odbiorca otrzymał ocenę 535, można z tego wywnioskować następujące fakty:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">**</bpt>Recency rating of 5<ept id="p1">**</ept> – The customer recently made a purchase.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ocena daty ostatniego zakupu 5<ept id="p1">**</ept> — ostatni zakup dokonany przez odbiorcę miał miejsce niedawno.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">**</bpt>Frequency rating of 3<ept id="p1">**</ept> – The customer purchases products from your organization moderately often.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ocena częstotliwości 3<ept id="p1">**</ept> — odbiorca kupuje produkty od organizacji z średnią częstotliwością.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">**</bpt>Monetary rating of 5<ept id="p1">**</ept> – When the customer makes a purchase, he spends a significant amount of money.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ocena wartości pieniężnej 5<ept id="p1">**</ept> — gdy odbiorca dokonuje zakupu, wydaje znaczną kwotę pieniędzy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>If your organization uses an aggregate number for the score, the individual ratings are added together.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli organizacja używa sum liczbowych do określania wyniku, poszczególne wyniki są sumowane.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>For the same example, the customer has a rating of 13 (5 + 3 + 5).</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Jeśli weźmiemy jeszcze raz ten sam przykład, odbiorca otrzymuje ocenę 13 (5 + 3 + 5).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Set up RFM analysis for the customers in your organization</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">Konfigurowanie analizy RFM dla odbiorców w organizacji</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Go to <bpt id="p1">**</bpt>Call center<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Periodic<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>RFM analysis<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Biuro obsługi<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Okresowe<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Analiza RFM<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>On <bpt id="p1">**</bpt>RFM analysis<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>New<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stronie <bpt id="p1">**</bpt>Analiza RFM<ept id="p1">**</ept> wybierz opcję <bpt id="p2">**</bpt>Nowa<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>In the <bpt id="p1">**</bpt>RFM definition<ept id="p1">**</ept> field, enter a name for the RFM definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Definicja RFM<ept id="p1">**</ept> wprowadź nazwę definicji RFM.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>For example, you could call the definition RFM-A.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład można nazwać definicję RFM-A.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Enter a start date and end date for this RFM definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wprowadź datę początkową i końcową dla definicji RFM.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>On the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> FastTab, do the following:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na skróconej karcie <bpt id="p1">**</bpt>Ogólne<ept id="p1">**</ept> wykonaj poniższe czynności:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>If each section of the RFM score must contain an equal count of customers, select the <bpt id="p1">**</bpt>Even distribution<ept id="p1">**</ept> check box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli każda sekcja punktacji RFM musi zawierać równe liczby odbiorców, zaznacz pole wyboru <bpt id="p1">**</bpt>Rozkład równomierny<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Select the <bpt id="p1">**</bpt>Add scores<ept id="p1">**</ept> check box to aggregate the three scores.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaznacz pole wyboru <bpt id="p1">**</bpt>Dodaj punktacje<ept id="p1">**</ept>, aby otworzyć sumę trzech wyników.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>For example, this would give a customer an RFM score of 13 instead of 535.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W ten sposób, przykładowo, odbiorca uzyska punktację RFM równą 13 zamiast 535.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Select the <bpt id="p1">**</bpt>Save history<ept id="p1">**</ept> check box to require the system to save the statistical data for customers so that the data can be used to calculate the RFM score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaznacz pole wyboru <bpt id="p1">**</bpt>Zapisz historię<ept id="p1">**</ept>, aby wymagać od systemu zapisywanie danych statystycznych dla odbiorców, tak aby dane mogły służyć do obliczania punktacji RFM.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>On the <bpt id="p1">**</bpt>Recency<ept id="p1">**</ept> FastTab, do the following:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na skróconej karcie <bpt id="p1">**</bpt>Recency<ept id="p1">**</ept> wykonaj poniższe czynności:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>In the <bpt id="p1">**</bpt>Divisions<ept id="p1">**</ept> field, enter the number of divisions, or groups, which will be used to calculate the recency score for customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Oddziały<ept id="p1">**</ept> wprowadź numer dzielenia lub grup, które będą używane do obliczania punktacji recency dla odbiorców.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>For example, if you have 100 customers, a division of 5 means that there are 20 customers for each score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład, jeśli masz 100 odbiorców, dzielenie 5 oznacza, że nie ma 20 odbiorców dla każdego wyniku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>The 20 customers who have made purchases most recently have a recency score of 5.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">20 odbiorców, którzy ostatnio dokonali zakupu ma punktację recency wynoszącą 5.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>The next 20 customers have a recency score of 4, and so on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kolejnych 20 odbiorców ma punktację recency wynoszącą 4 itd.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>If you have 50 customers, 10 customers have a recency score of 5, 10 have a recency score of 4, and so on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli masz 50 odbiorców, 10 odbiorców otrzyma punktację recency równą 5, 10 otrzyma punktację recency 4 i tak dalej.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>In the <bpt id="p1">**</bpt>Priority<ept id="p1">**</ept> field, select how much weight to give the recency parameter in relation to the other parameters when the RFM score is calculated for a customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Priorytet<ept id="p1">**</ept> wybierz, jaką wagę można przyznać dla parametru recency w stosunku do innych parametrów przy obliczaniu punktacji RFM dla odbiorcy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>For example, you might place more value on the recency score than the monetary score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład użytkownikowi może zależeć bardziej na punktacji recency niż na punktacji wg wartości pieniężnej.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In the <bpt id="p1">**</bpt>Multiplier<ept id="p1">**</ept> field, enter the value by which to multiply the recency score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Mnożnik<ept id="p1">**</ept> wprowadź wartość, przez którą ma zostać pomnożona punktacja recency.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>If you do not enter a value, the score will not be multiplied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli wartość nie zostanie wprowadzona, punktacja nie będzie mnożona.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>In the <bpt id="p1">**</bpt>Period<ept id="p1">**</ept> field, select the time period by which the recency score is calculated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Okres<ept id="p1">**</ept> wybierz przedział czasu, w których jest obliczana punktacja recency.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>For example, by week or by month.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład, według tygodnia lub miesiąca.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>On the <bpt id="p1">**</bpt>Frequency<ept id="p1">**</ept> FastTab, do the following:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na skróconej karcie <bpt id="p1">**</bpt>Częstotliwość<ept id="p1">**</ept> wykonaj poniższe czynności:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>In the <bpt id="p1">**</bpt>Divisions<ept id="p1">**</ept> field, enter the number of divisions, or groups, which will be used to calculate the frequency score for customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Oddziały<ept id="p1">**</ept> wprowadź numer dzielenia lub grup, które będą używane do obliczania punktacji częstotliwości dla odbiorców.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>In the <bpt id="p1">**</bpt>Priority<ept id="p1">**</ept> field, select how much weight to give the frequency parameter in relation to the others when the RFM score is calculated for a customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Priorytet<ept id="p1">**</ept> wybierz, jaką wagę można przyznać dla parametru częstotliwości w stosunku do innych parametrów przy obliczaniu punktacji RFM dla odbiorcy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>In the <bpt id="p1">**</bpt>Multiplier<ept id="p1">**</ept> field, enter the value by which to multiply the frequency score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Mnożnik<ept id="p1">**</ept> wprowadź wartość, przez którą ma zostać pomnożona punktacja częstotliwości.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>If you do not enter a value, the score will not be multiplied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli wartość nie zostanie wprowadzona, punktacja nie będzie mnożona.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>On the <bpt id="p1">**</bpt>Monetary<ept id="p1">**</ept> FastTab, do the following:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na skróconej karcie <bpt id="p1">**</bpt>Waluta<ept id="p1">**</ept> wykonaj poniższe czynności:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>In the <bpt id="p1">**</bpt>Divisions<ept id="p1">**</ept> field, enter the number of divisions, or groups, which will be used to calculate the monetary score for customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Oddziały<ept id="p1">**</ept> wprowadź numer dzielenia lub grup, które będą używane do obliczania punktacji wg wartości pieniężnej dla odbiorców.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>In the <bpt id="p1">**</bpt>Priority<ept id="p1">**</ept> field, select how much weight to give the monetary parameter in relation to the others when the RFM score is calculated for a customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Priorytet<ept id="p1">**</ept> wybierz, jaką wagę można przyznać dla parametru wartości pieniężnej w stosunku do innych parametrów przy obliczaniu punktacji RFM dla odbiorcy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>In the <bpt id="p1">**</bpt>Multiplier<ept id="p1">**</ept> field, enter the value by which to multiply the monetary score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Mnożnik<ept id="p1">**</ept> wprowadź wartość, przez którą ma zostać pomnożona punktacja wg wartości pieniężnej.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>If you do not enter a value, the score will not be multiplied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli wartość nie zostanie wprowadzona, punktacja nie będzie mnożona.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>In the <bpt id="p1">**</bpt>Gross/net<ept id="p1">**</ept> field, select whether the customer's monetary score should be calculated by using the gross or net invoice amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Brutto/netto<ept id="p1">**</ept> wybierz, czy przy obliczaniu punktacji wg wartości pieniężnej system powinien używać kwoty zafakturowanej brutto czy netto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>If a customer's return amounts should be subtracted from the customer's total invoice calculation, select the <bpt id="p1">**</bpt>Subtract returns<ept id="p1">**</ept> check box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli kwoty zwrotu dla odbiorcy powinny zostać odjęte od łącznej kwoty faktury dla odbiorcy, zaznacz pole wyboru <bpt id="p1">**</bpt>Odejmij zwroty<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>View a customer's RFM score</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wyświetlanie wyniku RFM klienta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Use this procedure to view a customer's RFM score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ta procedura umożliwia wyświetlenie wyniku RFM odbiorcy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Go to <bpt id="p1">**</bpt>Call center<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Journals<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Customer service<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Biuro obsługi<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Arkusze<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Obsługa klienta<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>On the <bpt id="p1">**</bpt>Customer service<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Customer service<ept id="p2">**</ept> pane, in the search fields, select the keyword type to search on and enter the search text.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stronie <bpt id="p1">**</bpt>Obsługa klienta<ept id="p1">**</ept>, w okienku <bpt id="p2">**</bpt>Obsługa klienta<ept id="p2">**</ept>, w polach wyszukiwania, wybierz typ słowa kluczowego do wyszukania i wprowadź wyszukiwany tekst.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Select <bpt id="p1">**</bpt>Search<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz opcję <bpt id="p1">**</bpt>Wyszukaj<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>On the <bpt id="p1">**</bpt>Customer search<ept id="p1">**</ept> page, select the customer record that you want, and then click <bpt id="p2">**</bpt>Select customer<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stronie <bpt id="p1">**</bpt>Wyszukiwanie odbiorcy<ept id="p1">**</ept> wybierz odpowiedni rekord odbiorcy, a następnie kliknij przycisk <bpt id="p2">**</bpt>Wybierz odbiorcę<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The RFM score is displayed in the <bpt id="p1">**</bpt>Order history<ept id="p1">**</ept> group on the right side of the <bpt id="p2">**</bpt>Customer service<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wynik RFM jest wyświetlany w grupie <bpt id="p1">**</bpt>Historia zamówienia<ept id="p1">**</ept> w prawej części strony <bpt id="p2">**</bpt>Obsługa klienta<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>View or clear the history of an RFM analysis record</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wyświetlanie lub czyszczenie historii rekordu analizy RFM</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Use this procedure to view or clear the history of an RFM analysis record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Należy użyć tej procedury w celu wyświetlenia lub wyczyszczenia historii rekordu analizy RFM.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Go to <bpt id="p1">**</bpt>Call center<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Periodic<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>RFM analysis<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Biuro obsługi<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Okresowe<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Analiza RFM<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>On the <bpt id="p1">**</bpt>RFM analysis<ept id="p1">**</ept> page, select the record that you want to view.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stronie <bpt id="p1">**</bpt>Analiza RFM<ept id="p1">**</ept> wybierz rekord do wyświetlenia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>To view the record history, select the <bpt id="p1">**</bpt>History<ept id="p1">**</ept> FastTab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby wyświetlić historię rekordu, wybierz kartę skróconą<bpt id="p1">**</bpt>Historia<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>To clear the history of the record, select <bpt id="p1">**</bpt>Clear history<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby wyczyścić historię rekordu, wybierz opcję <bpt id="p1">**</bpt>Wyczyść historię<ept id="p1">**</ept>.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
