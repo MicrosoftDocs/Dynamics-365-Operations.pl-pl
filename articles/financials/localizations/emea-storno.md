@@ -1,172 +1,657 @@
----
-title: Stornowanie
-description: Stornowanie to praktyka używania liczb ujemnych, aby odwrócić oryginalne zapisy na koncie arkusza.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 1219713
-ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: v-semaz
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f42e7819eba74608f33ea8ec5f7b7e978953b460
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538235"
----
-# <a name="storno-accounting"></a><span data-ttu-id="59fd1-103">Stornowanie</span><span class="sxs-lookup"><span data-stu-id="59fd1-103">Storno accounting</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="59fd1-104">Stornowanie to praktyka używania liczb ujemnych, aby odwrócić oryginalne zapisy na koncie arkusza.</span><span class="sxs-lookup"><span data-stu-id="59fd1-104">Storno accounting is the practice of using negative numbers to reverse original journal account entries.</span></span>
-
-<span data-ttu-id="59fd1-105">*Stornowanie* to praktyka używania ujemnych liczb po stronie winien lub ma, aby odwrócić oryginalne zapisy na koncie arkusza.</span><span class="sxs-lookup"><span data-stu-id="59fd1-105">*Storno accounting* is a practice of using negative debit or credit amounts to reverse original journal account entries.</span></span> <span data-ttu-id="59fd1-106">Ponieważ księgowi zazwyczaj zapisują pozycje storna czerwonym atramentem, ta praktyka księgowa jest również znana jako *storno czerwone*.</span><span class="sxs-lookup"><span data-stu-id="59fd1-106">Because bookkeepers typically write Storno entries in red ink, this accounting practice is also known as *Red Storno*.</span></span> <span data-ttu-id="59fd1-107">Za pomocą stornowania można anulować dokument z niepoprawnymi kwotami, ale po anulowaniu należy zawsze wprowadzić poprawne kwoty dokumentu.</span><span class="sxs-lookup"><span data-stu-id="59fd1-107">Using Storno accounting you can cancel a document with incorrect amounts, however you should always enter the correct document amount after the cancellation.</span></span>
-
-## <a name="example"></a><span data-ttu-id="59fd1-108">Przykład</span><span class="sxs-lookup"><span data-stu-id="59fd1-108">Example</span></span>
-<span data-ttu-id="59fd1-109">Księgowy księguje fakturę od dostawcy na 120 USD.</span><span class="sxs-lookup"><span data-stu-id="59fd1-109">A bookkeeper posts an invoice from a vendor for 120 USD.</span></span> <span data-ttu-id="59fd1-110">W procesie realizacji płatności okazało się, że księgowy wprowadził przez pomyłkę kwotę 120 USD zamiast 102 USD.</span><span class="sxs-lookup"><span data-stu-id="59fd1-110">During the payment process, it's discovered that the bookkeeper mistakenly entered 120 USD instead of 102 USD.</span></span> <span data-ttu-id="59fd1-111">Teraz księgowy musi utworzyć storno dla oryginalnego dokumentu, a następnie utworzyć poprawną fakturę na 102 USD.</span><span class="sxs-lookup"><span data-stu-id="59fd1-111">Now, the bookkeeper needs to create Storno for the original document, and then create the correct invoice for 102 USD.</span></span> <span data-ttu-id="59fd1-112">Aby uzyskać więcej informacji, zobacz  [Faktura od dostawcy](../accounts-payable/vendor-invoices-overview.md).</span><span class="sxs-lookup"><span data-stu-id="59fd1-112">For more information, see [Invoice from Vendor](../accounts-payable/vendor-invoices-overview.md).</span></span> <span data-ttu-id="59fd1-113">W poniższej tabeli przedstawiono ogólny wpis storna.</span><span class="sxs-lookup"><span data-stu-id="59fd1-113">The following table shows the general entry for Storno.</span></span>
-
-| <span data-ttu-id="59fd1-114">**Identyfikator dokumentu**</span><span class="sxs-lookup"><span data-stu-id="59fd1-114">**Document ID**</span></span> | <span data-ttu-id="59fd1-115">**Konto**</span><span class="sxs-lookup"><span data-stu-id="59fd1-115">**Account**</span></span> | <span data-ttu-id="59fd1-116">**Strona debetowa**</span><span class="sxs-lookup"><span data-stu-id="59fd1-116">**Debit**</span></span> | <span data-ttu-id="59fd1-117">**Strona kredytowa**</span><span class="sxs-lookup"><span data-stu-id="59fd1-117">**Credit**</span></span> | <span data-ttu-id="59fd1-118">**Komentarz**</span><span class="sxs-lookup"><span data-stu-id="59fd1-118">**Comment**</span></span>                  |
-|-----------------|-------------|-----------|------------|------------------------------|
-| <span data-ttu-id="59fd1-119">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="59fd1-119">Invoice0001</span></span>     | <span data-ttu-id="59fd1-120">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="59fd1-120">Purch acc</span></span>   | <span data-ttu-id="59fd1-121">120</span><span class="sxs-lookup"><span data-stu-id="59fd1-121">120</span></span>       |            | <span data-ttu-id="59fd1-122">Oryginalna faktura (błędna)</span><span class="sxs-lookup"><span data-stu-id="59fd1-122">Original Invoice (incorrect)</span></span> |
-| <span data-ttu-id="59fd1-123">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="59fd1-123">Invoice0001</span></span>     | <span data-ttu-id="59fd1-124">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="59fd1-124">Vendor acc</span></span>  |           | <span data-ttu-id="59fd1-125">120</span><span class="sxs-lookup"><span data-stu-id="59fd1-125">120</span></span>        | <span data-ttu-id="59fd1-126">Oryginalna faktura (błędna)</span><span class="sxs-lookup"><span data-stu-id="59fd1-126">Original Invoice (incorrect)</span></span> |
-|                 |             |           |            |                              |
-| <span data-ttu-id="59fd1-127">Storno0001</span><span class="sxs-lookup"><span data-stu-id="59fd1-127">Storno0001</span></span>      | <span data-ttu-id="59fd1-128">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="59fd1-128">Purch acc</span></span>   | <span data-ttu-id="59fd1-129">-120</span><span class="sxs-lookup"><span data-stu-id="59fd1-129">-120</span></span>     |            | <span data-ttu-id="59fd1-130">Storno</span><span class="sxs-lookup"><span data-stu-id="59fd1-130">Storno</span></span>                       |
-| <span data-ttu-id="59fd1-131">Storno0001</span><span class="sxs-lookup"><span data-stu-id="59fd1-131">Storno0001</span></span>      | <span data-ttu-id="59fd1-132">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="59fd1-132">Vendor acc</span></span>  |           | <span data-ttu-id="59fd1-133">-120</span><span class="sxs-lookup"><span data-stu-id="59fd1-133">-120</span></span>      | <span data-ttu-id="59fd1-134">Storno</span><span class="sxs-lookup"><span data-stu-id="59fd1-134">Storno</span></span>                       |
-|                 |             |           |            |                              |
-| <span data-ttu-id="59fd1-135">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="59fd1-135">Invoice0002</span></span>     | <span data-ttu-id="59fd1-136">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="59fd1-136">Purch acc</span></span>   | <span data-ttu-id="59fd1-137">102</span><span class="sxs-lookup"><span data-stu-id="59fd1-137">102</span></span>       |            | <span data-ttu-id="59fd1-138">Poprawna faktura</span><span class="sxs-lookup"><span data-stu-id="59fd1-138">Correct Invoice</span></span>              |
-| <span data-ttu-id="59fd1-139">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="59fd1-139">Invoice0002</span></span>     | <span data-ttu-id="59fd1-140">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="59fd1-140">Vendor acc</span></span>  |           | <span data-ttu-id="59fd1-141">102</span><span class="sxs-lookup"><span data-stu-id="59fd1-141">102</span></span>        | <span data-ttu-id="59fd1-142">Poprawna faktura</span><span class="sxs-lookup"><span data-stu-id="59fd1-142">Correct Invoice</span></span>              |
-
-<span data-ttu-id="59fd1-143">W tym przykładzie saldo wyciągu pokazuje następujące dane.</span><span class="sxs-lookup"><span data-stu-id="59fd1-143">In this example, the balance statement shows the following.</span></span>
-
-| <span data-ttu-id="59fd1-144">Konto</span><span class="sxs-lookup"><span data-stu-id="59fd1-144">Account</span></span>    | <span data-ttu-id="59fd1-145">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="59fd1-145">Debit</span></span> | <span data-ttu-id="59fd1-146">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="59fd1-146">Credit</span></span> | <span data-ttu-id="59fd1-147">Bilansowe</span><span class="sxs-lookup"><span data-stu-id="59fd1-147">Balance</span></span> |
-|------------|-------|--------|---------|
-| <span data-ttu-id="59fd1-148">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="59fd1-148">Purch acc</span></span>  | <span data-ttu-id="59fd1-149">102</span><span class="sxs-lookup"><span data-stu-id="59fd1-149">102</span></span>   | <span data-ttu-id="59fd1-150">0</span><span class="sxs-lookup"><span data-stu-id="59fd1-150">0</span></span>      | <span data-ttu-id="59fd1-151">102</span><span class="sxs-lookup"><span data-stu-id="59fd1-151">102</span></span>     |
-| <span data-ttu-id="59fd1-152">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="59fd1-152">Vendor acc</span></span> | <span data-ttu-id="59fd1-153">0</span><span class="sxs-lookup"><span data-stu-id="59fd1-153">0</span></span>     | <span data-ttu-id="59fd1-154">102</span><span class="sxs-lookup"><span data-stu-id="59fd1-154">102</span></span>    | <span data-ttu-id="59fd1-155">-102</span><span class="sxs-lookup"><span data-stu-id="59fd1-155">-102</span></span>    |
-
-## <a name="differences-between-storno-and-reverse-entries"></a><span data-ttu-id="59fd1-156">Różnica między zapisami stornującymi a korygującymi</span><span class="sxs-lookup"><span data-stu-id="59fd1-156">Differences between Storno and reverse entries</span></span>
-<span data-ttu-id="59fd1-157">Istnieją dwa sposoby poprawiania wpisów księgowania — wycofanie i storno.</span><span class="sxs-lookup"><span data-stu-id="59fd1-157">There are two ways in which to correct posting entries – reverse and storno.</span></span> <span data-ttu-id="59fd1-158">Podczas używania wpisu korygującego jest generowana kopia oryginalnego wpisu ogólnego na odwrotnych kontach debetowych i kredytowych, a kwoty zachowują pierwotny znak.</span><span class="sxs-lookup"><span data-stu-id="59fd1-158">If you use a reverse entry, a copy of the original general entry is created with reverse debit and credit accounts, and the amounts remain with the same sign.</span></span> <span data-ttu-id="59fd1-159">Jeśli używasz storna, system tworzy kopię oryginalnego wpisu ogólnego, ale kwoty są rejestrowane ze znakiem minusa.</span><span class="sxs-lookup"><span data-stu-id="59fd1-159">If you use Storno, the system creates a copy of the original general entry, but the amounts are recorded with a negative sign.</span></span> <span data-ttu-id="59fd1-160">W poniższej tabeli przedstawiono ogólny wpis storna.</span><span class="sxs-lookup"><span data-stu-id="59fd1-160">The following table shows the general entry for Storno.</span></span>
-
-| <span data-ttu-id="59fd1-161">**Identyfikator dokumentu**</span><span class="sxs-lookup"><span data-stu-id="59fd1-161">**Document ID**</span></span> | <span data-ttu-id="59fd1-162">**Konto**</span><span class="sxs-lookup"><span data-stu-id="59fd1-162">**Account**</span></span> | <span data-ttu-id="59fd1-163">**Strona debetowa**</span><span class="sxs-lookup"><span data-stu-id="59fd1-163">**Debit**</span></span> | <span data-ttu-id="59fd1-164">**Strona kredytowa**</span><span class="sxs-lookup"><span data-stu-id="59fd1-164">**Credit**</span></span> | <span data-ttu-id="59fd1-165">**Komentarz**</span><span class="sxs-lookup"><span data-stu-id="59fd1-165">**Comment**</span></span>                  |
-|-----------------|-------------|-----------|------------|------------------------------|
-| <span data-ttu-id="59fd1-166">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="59fd1-166">Invoice0001</span></span>     | <span data-ttu-id="59fd1-167">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="59fd1-167">Purch acc</span></span>   | <span data-ttu-id="59fd1-168">120</span><span class="sxs-lookup"><span data-stu-id="59fd1-168">120</span></span>       |            | <span data-ttu-id="59fd1-169">Oryginalna faktura (błędna)</span><span class="sxs-lookup"><span data-stu-id="59fd1-169">Original Invoice (incorrect)</span></span> |
-| <span data-ttu-id="59fd1-170">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="59fd1-170">Invoice0001</span></span>     | <span data-ttu-id="59fd1-171">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="59fd1-171">Vendor acc</span></span>  |           | <span data-ttu-id="59fd1-172">120</span><span class="sxs-lookup"><span data-stu-id="59fd1-172">120</span></span>        | <span data-ttu-id="59fd1-173">Oryginalna faktura (błędna)</span><span class="sxs-lookup"><span data-stu-id="59fd1-173">Original Invoice (incorrect)</span></span> |
-|                 |             |           |            |                              |
-| <span data-ttu-id="59fd1-174">Wycofanie0001</span><span class="sxs-lookup"><span data-stu-id="59fd1-174">Reverse0001</span></span>     | <span data-ttu-id="59fd1-175">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="59fd1-175">Purch acc</span></span>   |           | <span data-ttu-id="59fd1-176">120</span><span class="sxs-lookup"><span data-stu-id="59fd1-176">120</span></span>        | <span data-ttu-id="59fd1-177">Wycofaj</span><span class="sxs-lookup"><span data-stu-id="59fd1-177">Reverse</span></span>                      |
-| <span data-ttu-id="59fd1-178">Wycofanie0001</span><span class="sxs-lookup"><span data-stu-id="59fd1-178">Reverse0001</span></span>     | <span data-ttu-id="59fd1-179">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="59fd1-179">Vendor acc</span></span>  | <span data-ttu-id="59fd1-180">120</span><span class="sxs-lookup"><span data-stu-id="59fd1-180">120</span></span>       |            | <span data-ttu-id="59fd1-181">Wycofaj</span><span class="sxs-lookup"><span data-stu-id="59fd1-181">Reverse</span></span>                      |
-|                 |             |           |            |                              |
-| <span data-ttu-id="59fd1-182">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="59fd1-182">Invoice0002</span></span>     | <span data-ttu-id="59fd1-183">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="59fd1-183">Purch acc</span></span>   | <span data-ttu-id="59fd1-184">102</span><span class="sxs-lookup"><span data-stu-id="59fd1-184">102</span></span>       |            | <span data-ttu-id="59fd1-185">Poprawna faktura</span><span class="sxs-lookup"><span data-stu-id="59fd1-185">Correct Invoice</span></span>              |
-| <span data-ttu-id="59fd1-186">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="59fd1-186">Invoice0002</span></span>     | <span data-ttu-id="59fd1-187">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="59fd1-187">Vendor acc</span></span>  |           | <span data-ttu-id="59fd1-188">102</span><span class="sxs-lookup"><span data-stu-id="59fd1-188">102</span></span>        | <span data-ttu-id="59fd1-189">Poprawna faktura</span><span class="sxs-lookup"><span data-stu-id="59fd1-189">Correct Invoice</span></span>              |
-
-<span data-ttu-id="59fd1-190">W tym przykładzie saldo wyciągu pokazuje następujące dane.</span><span class="sxs-lookup"><span data-stu-id="59fd1-190">In this example, the balance statement shows the following.</span></span>
-
-| <span data-ttu-id="59fd1-191">Konto</span><span class="sxs-lookup"><span data-stu-id="59fd1-191">Account</span></span>    | <span data-ttu-id="59fd1-192">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="59fd1-192">Debit</span></span> | <span data-ttu-id="59fd1-193">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="59fd1-193">Credit</span></span> | <span data-ttu-id="59fd1-194">Bilansowe</span><span class="sxs-lookup"><span data-stu-id="59fd1-194">Balance</span></span> |
-|------------|-------|--------|---------|
-| <span data-ttu-id="59fd1-195">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="59fd1-195">Purch acc</span></span>  | <span data-ttu-id="59fd1-196">222</span><span class="sxs-lookup"><span data-stu-id="59fd1-196">222</span></span>   | <span data-ttu-id="59fd1-197">120</span><span class="sxs-lookup"><span data-stu-id="59fd1-197">120</span></span>    | <span data-ttu-id="59fd1-198">102</span><span class="sxs-lookup"><span data-stu-id="59fd1-198">102</span></span>     |
-| <span data-ttu-id="59fd1-199">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="59fd1-199">Vendor acc</span></span> | <span data-ttu-id="59fd1-200">120</span><span class="sxs-lookup"><span data-stu-id="59fd1-200">120</span></span>   | <span data-ttu-id="59fd1-201">222</span><span class="sxs-lookup"><span data-stu-id="59fd1-201">222</span></span>    | <span data-ttu-id="59fd1-202">-102</span><span class="sxs-lookup"><span data-stu-id="59fd1-202">-102</span></span>    |
-
-<span data-ttu-id="59fd1-203">Należy zauważyć, że salda są takie same dla wycofania i storna.</span><span class="sxs-lookup"><span data-stu-id="59fd1-203">Note that the balances are equal for the reverse and the storno.</span></span> <span data-ttu-id="59fd1-204">Różnią się obroty po stronach winien i ma, ponieważ wpis korygujący tworzy nadmiarowy obrót po obu stronach.</span><span class="sxs-lookup"><span data-stu-id="59fd1-204">There is a difference between debit turnover and credit turnover, because the reverse entry makes redundant debit and credit turnover.</span></span> <span data-ttu-id="59fd1-205">Wpis korygujący jest używany w krajach/regionach, gdzie rzadko używa się obrotu.</span><span class="sxs-lookup"><span data-stu-id="59fd1-205">The reverse entry is used in countries/regions where turnover is rarely use.</span></span> <span data-ttu-id="59fd1-206">W pozostałych krajach/regionach stosuje się stornowanie.</span><span class="sxs-lookup"><span data-stu-id="59fd1-206">Other countries/regions use Storno accounting.</span></span>
-
-## <a name="partial-storno"></a><span data-ttu-id="59fd1-207">Storno częściowe</span><span class="sxs-lookup"><span data-stu-id="59fd1-207">Partial Storno</span></span>
-<span data-ttu-id="59fd1-208">*Storno częściowe* to praktyka księgowa używania ujemnych liczb po stronie winien lub ma, aby odwrócić część oryginalnych zapisów na koncie arkusza.</span><span class="sxs-lookup"><span data-stu-id="59fd1-208">*Partial Storno* is an accounting practice of using negative debit or credit amounts to reverse part of the original journal account entries.</span></span> <span data-ttu-id="59fd1-209">Niektóre kraje/regiony pozwalają na używanie storna częściowego.</span><span class="sxs-lookup"><span data-stu-id="59fd1-209">Some countries/regions allow the use the partial Storno.</span></span> <span data-ttu-id="59fd1-210">Na przykład księgowy księguje fakturę od dostawcy na 120 USD.</span><span class="sxs-lookup"><span data-stu-id="59fd1-210">For example, a bookkeeper posts an invoice from a vendor for 120 USD.</span></span> <span data-ttu-id="59fd1-211">W procesie realizacji płatności okazało się, że księgowy przez pomyłkę wpisał błędny numer kolejny.</span><span class="sxs-lookup"><span data-stu-id="59fd1-211">During the payment process, it's discovered that the bookkeeper mistakenly entered an incorrect number sequence.</span></span> <span data-ttu-id="59fd1-212">Oryginalna fakturą na 102 USD ma błąd w numeracji.</span><span class="sxs-lookup"><span data-stu-id="59fd1-212">The original invoice for 102 USD had a mistake in the number sequence.</span></span><span data-ttu-id="59fd1-213"> Używając funkcji storna częściowego, księgowy powinien utworzyć storno na 18 USD.</span><span class="sxs-lookup"><span data-stu-id="59fd1-213"> Using partial Storno, the bookkeeper should create Storno for 18 USD.</span></span> <span data-ttu-id="59fd1-214">W poniższej tabeli przedstawiono ogólny wpis storna częściowego.</span><span class="sxs-lookup"><span data-stu-id="59fd1-214">The following table shows the general entry for partial Storno.</span></span>
-
-| <span data-ttu-id="59fd1-215">**Identyfikator dokumentu**</span><span class="sxs-lookup"><span data-stu-id="59fd1-215">**Document ID**</span></span> | <span data-ttu-id="59fd1-216">**Konto**</span><span class="sxs-lookup"><span data-stu-id="59fd1-216">**Account**</span></span> | <span data-ttu-id="59fd1-217">**Strona debetowa**</span><span class="sxs-lookup"><span data-stu-id="59fd1-217">**Debit**</span></span> | <span data-ttu-id="59fd1-218">**Strona kredytowa**</span><span class="sxs-lookup"><span data-stu-id="59fd1-218">**Credit**</span></span> | <span data-ttu-id="59fd1-219">**Komentarz**</span><span class="sxs-lookup"><span data-stu-id="59fd1-219">**Comment**</span></span>                  |
-|-----------------|-------------|-----------|------------|------------------------------|
-| <span data-ttu-id="59fd1-220">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="59fd1-220">Invoice0001</span></span>     | <span data-ttu-id="59fd1-221">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="59fd1-221">Purch acc</span></span>   | <span data-ttu-id="59fd1-222">120</span><span class="sxs-lookup"><span data-stu-id="59fd1-222">120</span></span>       |            | <span data-ttu-id="59fd1-223">Oryginalna faktura (błędna)</span><span class="sxs-lookup"><span data-stu-id="59fd1-223">Original Invoice (incorrect)</span></span> |
-| <span data-ttu-id="59fd1-224">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="59fd1-224">Invoice0001</span></span>     | <span data-ttu-id="59fd1-225">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="59fd1-225">Vendor acc</span></span>  |           | <span data-ttu-id="59fd1-226">120</span><span class="sxs-lookup"><span data-stu-id="59fd1-226">120</span></span>        | <span data-ttu-id="59fd1-227">Oryginalna faktura (błędna)</span><span class="sxs-lookup"><span data-stu-id="59fd1-227">Original Invoice (incorrect)</span></span> |
-|                 |             |           |            |                              |
-| <span data-ttu-id="59fd1-228">Storno0001</span><span class="sxs-lookup"><span data-stu-id="59fd1-228">Storno0001</span></span>      | <span data-ttu-id="59fd1-229">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="59fd1-229">Purch acc</span></span>   | <span data-ttu-id="59fd1-230">18\-</span><span class="sxs-lookup"><span data-stu-id="59fd1-230">\-18</span></span>      |            | <span data-ttu-id="59fd1-231">Storno częściowe</span><span class="sxs-lookup"><span data-stu-id="59fd1-231">Partial Storno</span></span>               |
-| <span data-ttu-id="59fd1-232">Storno0001</span><span class="sxs-lookup"><span data-stu-id="59fd1-232">Storno0001</span></span>      | <span data-ttu-id="59fd1-233">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="59fd1-233">Vendor acc</span></span>  |           | <span data-ttu-id="59fd1-234">18\-</span><span class="sxs-lookup"><span data-stu-id="59fd1-234">\-18</span></span>       | <span data-ttu-id="59fd1-235">Storno częściowe</span><span class="sxs-lookup"><span data-stu-id="59fd1-235">Partial Storno</span></span>               |
-
-<span data-ttu-id="59fd1-236">W tym przykładzie saldo wyciągu pokazuje następujące dane.</span><span class="sxs-lookup"><span data-stu-id="59fd1-236">In this example, the balance statement shows the following.</span></span>
-
-| <span data-ttu-id="59fd1-237">Konto</span><span class="sxs-lookup"><span data-stu-id="59fd1-237">Account</span></span>    | <span data-ttu-id="59fd1-238">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="59fd1-238">Debit</span></span> | <span data-ttu-id="59fd1-239">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="59fd1-239">Credit</span></span> | <span data-ttu-id="59fd1-240">Bilansowe</span><span class="sxs-lookup"><span data-stu-id="59fd1-240">Balance</span></span> |
-|------------|-------|--------|---------|
-| <span data-ttu-id="59fd1-241">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="59fd1-241">Purch acc</span></span>  | <span data-ttu-id="59fd1-242">102</span><span class="sxs-lookup"><span data-stu-id="59fd1-242">102</span></span>   | <span data-ttu-id="59fd1-243">0</span><span class="sxs-lookup"><span data-stu-id="59fd1-243">0</span></span>      | <span data-ttu-id="59fd1-244">102</span><span class="sxs-lookup"><span data-stu-id="59fd1-244">102</span></span>     |
-| <span data-ttu-id="59fd1-245">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="59fd1-245">Vendor acc</span></span> | <span data-ttu-id="59fd1-246">0</span><span class="sxs-lookup"><span data-stu-id="59fd1-246">0</span></span>     | <span data-ttu-id="59fd1-247">102</span><span class="sxs-lookup"><span data-stu-id="59fd1-247">102</span></span>    | <span data-ttu-id="59fd1-248">-102</span><span class="sxs-lookup"><span data-stu-id="59fd1-248">-102</span></span>    |
-
-<span data-ttu-id="59fd1-249">Storno częściowe może powodować problem na oryginalnie drukowanym formularzu.</span><span class="sxs-lookup"><span data-stu-id="59fd1-249">Partial Storno can create an issue on the Original Print form.</span></span><span data-ttu-id="59fd1-250"> Jeśli istnieje różnica między datą oryginalnego dokumentu a datą storna, może być trudne ustalenie dokładnej kwoty w walucie.</span><span class="sxs-lookup"><span data-stu-id="59fd1-250"> If there is a difference between the date of the original document and the date of Storno, it can make it difficult to get an accurate currency amount.</span></span> <span data-ttu-id="59fd1-251">W efekcie storno częściowe jest dozwolone tylko w niektórych dokumentach.</span><span class="sxs-lookup"><span data-stu-id="59fd1-251">As a result, partial Storno is only allowed for certain documents.</span></span> <span data-ttu-id="59fd1-252">Microsoft Dynamics 365 for Operations zawiera funkcjonalność storna częściowego dla dokumentów i krajów/regionów, gdzie jest ona dozwolona.</span><span class="sxs-lookup"><span data-stu-id="59fd1-252">Microsoft Dynamics 365 for Operations provides partial Storno functionality for documents and countries/regions where it is allowed.</span></span>
-
-## <a name="how-to-enter-stornoon-journal-lines"></a><span data-ttu-id="59fd1-253">Jak wprowadzić storno w wierszach arkusza</span><span class="sxs-lookup"><span data-stu-id="59fd1-253">How to enter Storno on journal lines</span></span>
-<span data-ttu-id="59fd1-254">Aby wprowadzić zapis stornujący, wpisz kwotę po stronie winien lub ma ze znakiem minusa w wierszu arkusza.</span><span class="sxs-lookup"><span data-stu-id="59fd1-254">Enter the debit or credit amount with a negative sign on the journal line to make a Storno entry.</span></span> <span data-ttu-id="59fd1-255">Wartość w polu **Korekta** jest ustawiana w trakcie procesu księgowania.</span><span class="sxs-lookup"><span data-stu-id="59fd1-255">The **Correction** field is set during the posting process.</span></span> 
-
-## <a name="how-storno-is-displayed"></a><span data-ttu-id="59fd1-256">Sposób wyświetlania storna</span><span class="sxs-lookup"><span data-stu-id="59fd1-256">How Storno is displayed</span></span>
-<span data-ttu-id="59fd1-257">Dynamics 365 for Operations traktuje ujemne kwoty arkuszy w szczególny sposób.</span><span class="sxs-lookup"><span data-stu-id="59fd1-257">Dynamics 365 for Operations handles negative journal amounts in a special way.</span></span> <span data-ttu-id="59fd1-258">Wpis arkusza finansowego, transakcja odbiorcy, transakcja dostawcy i inne typy transakcji zawierają funkcję storna, jak pokazano poniżej.</span><span class="sxs-lookup"><span data-stu-id="59fd1-258">The general journal entry, customer transaction, vendor transaction, and other transactions provide a Storno function, as shown below.</span></span>
-
-<table>
-<thead>
-<tr class="row-1">
-<th class="column-1" rowspan="2"><span data-ttu-id="59fd1-259">Dane wprowadzone przez użytkownika w wierszu arkusza</span><span class="sxs-lookup"><span data-stu-id="59fd1-259">User input at journal line</span></span></th>
-<th class="column-2" colspan="2"><span data-ttu-id="59fd1-260">Zasada przechowywania</span><span class="sxs-lookup"><span data-stu-id="59fd1-260">Storage principle</span></span></th>
-<th class="column-4" colspan="2"><span data-ttu-id="59fd1-261">Reguła wyświetlania</span><span class="sxs-lookup"><span data-stu-id="59fd1-261">Display principle</span></span></th>
-<th class="column-6" colspan="3"><span data-ttu-id="59fd1-262">Wpływ na sprawozdanie</span><span class="sxs-lookup"><span data-stu-id="59fd1-262">Impact to the Statement report</span></span></th>
-</tr>
-<tr class="row-1">
-<th class="column-2"><span data-ttu-id="59fd1-263">Pole korekty</span><span class="sxs-lookup"><span data-stu-id="59fd1-263">Correction field</span></span></th>
-<th class="column-3"><span data-ttu-id="59fd1-264">Pole kwoty</span><span class="sxs-lookup"><span data-stu-id="59fd1-264">Amount field</span></span></th>
-<th class="column-4"><span data-ttu-id="59fd1-265">Kwota w walucie transakcji</span><span class="sxs-lookup"><span data-stu-id="59fd1-265">Amount in transaction currency</span></span></th>
-<th class="column-5"><span data-ttu-id="59fd1-266">Ilość</span><span class="sxs-lookup"><span data-stu-id="59fd1-266">Amount</span></span></th>
-<th class="column-6"><span data-ttu-id="59fd1-267">Kolumna Winien</span><span class="sxs-lookup"><span data-stu-id="59fd1-267">Debit column</span></span></th>
-<th class="column-7"><span data-ttu-id="59fd1-268">Kolumna Ma</span><span class="sxs-lookup"><span data-stu-id="59fd1-268">Credit column</span></span></th>
-<th class="column-8"><span data-ttu-id="59fd1-269">Kolumna salda</span><span class="sxs-lookup"><span data-stu-id="59fd1-269">Balance column</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-2">
-<td class="column-1"><span data-ttu-id="59fd1-270"> Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="59fd1-270"> Debit</span></span></td>
-<td class="column-2"><span data-ttu-id="59fd1-271">Nr</span><span class="sxs-lookup"><span data-stu-id="59fd1-271">No</span></span></td>
-<td class="column-3"><span data-ttu-id="59fd1-272">0&gt;</span><span class="sxs-lookup"><span data-stu-id="59fd1-272">&gt;0</span></span></td>
-<td class="column-4" align="right"><span data-ttu-id="59fd1-273">Ilość</span><span class="sxs-lookup"><span data-stu-id="59fd1-273">Amount</span></span></td>
-<td class="column-5" align="right"><span data-ttu-id="59fd1-274">Ilość</span><span class="sxs-lookup"><span data-stu-id="59fd1-274">Amount</span></span></td>
-<td class="column-6"><span data-ttu-id="59fd1-275">Zwiększa</span><span class="sxs-lookup"><span data-stu-id="59fd1-275">Increases</span></span></td>
-<td class="column-7"></td>
-<td class="column-8"><span data-ttu-id="59fd1-276">Zwiększa</span><span class="sxs-lookup"><span data-stu-id="59fd1-276">Increases</span></span></td>
-</tr>
-<tr class="row-3">
-<td class="column-1"><span data-ttu-id="59fd1-277"> Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="59fd1-277"> Credit</span></span></td>
-<td class="column-2"><span data-ttu-id="59fd1-278">Nr</span><span class="sxs-lookup"><span data-stu-id="59fd1-278">No</span></span></td>
-<td class="column-3"><span data-ttu-id="59fd1-279">0&lt;</span><span class="sxs-lookup"><span data-stu-id="59fd1-279">&lt;0</span></span></td>
-<td class="column-4" align="right"><span data-ttu-id="59fd1-280">-Kwota</span><span class="sxs-lookup"><span data-stu-id="59fd1-280">-Amount</span></span></td>
-<td class="column-5" align="right"><span data-ttu-id="59fd1-281">Ilość</span><span class="sxs-lookup"><span data-stu-id="59fd1-281">Amount</span></span></td>
-<td class="column-6"></td>
-<td class="column-7"><span data-ttu-id="59fd1-282">Zwiększa</span><span class="sxs-lookup"><span data-stu-id="59fd1-282">Increases</span></span></td>
-<td class="column-8"><span data-ttu-id="59fd1-283">Zmniejsza</span><span class="sxs-lookup"><span data-stu-id="59fd1-283">Decreases</span></span></td>
-</tr>
-<tr class="row-4">
-<td class="column-1"><span data-ttu-id="59fd1-284">-Winien</span><span class="sxs-lookup"><span data-stu-id="59fd1-284">-Debit</span></span></td>
-<td class="column-2"><span data-ttu-id="59fd1-285">Tak</span><span class="sxs-lookup"><span data-stu-id="59fd1-285">Yes</span></span></td>
-<td class="column-3"><span data-ttu-id="59fd1-286">0&gt;</span><span class="sxs-lookup"><span data-stu-id="59fd1-286">&gt;0</span></span></td>
-<td class="column-4" align="right"><span data-ttu-id="59fd1-287">+Kwota</span><span class="sxs-lookup"><span data-stu-id="59fd1-287">+Amount</span></span></td>
-<td class="column-5" align="right"><span data-ttu-id="59fd1-288">-Kwota</span><span class="sxs-lookup"><span data-stu-id="59fd1-288">-Amount</span></span></td>
-<td class="column-6"><span data-ttu-id="59fd1-289">Zmniejsza</span><span class="sxs-lookup"><span data-stu-id="59fd1-289">Decreases</span></span></td>
-<td class="column-7"></td>
-<td class="column-8"><span data-ttu-id="59fd1-290">Zwiększa</span><span class="sxs-lookup"><span data-stu-id="59fd1-290">Increases</span></span></td>
-</tr>
-<tr class="row-5">
-<td class="column-1"><span data-ttu-id="59fd1-291">-Ma</span><span class="sxs-lookup"><span data-stu-id="59fd1-291">-Credit</span></span></td>
-<td class="column-2"><span data-ttu-id="59fd1-292">Tak</span><span class="sxs-lookup"><span data-stu-id="59fd1-292">Yes</span></span></td>
-<td class="column-3"><span data-ttu-id="59fd1-293">0&lt;</span><span class="sxs-lookup"><span data-stu-id="59fd1-293">&lt;0</span></span></td>
-<td class="column-4" align="right"><span data-ttu-id="59fd1-294">-Kwota</span><span class="sxs-lookup"><span data-stu-id="59fd1-294">-Amount</span></span></td>
-<td class="column-5" align="right"><span data-ttu-id="59fd1-295">-Kwota</span><span class="sxs-lookup"><span data-stu-id="59fd1-295">-Amount</span></span></td>
-<td class="column-6"></td>
-<td class="column-7"><span data-ttu-id="59fd1-296">Zmniejsza</span><span class="sxs-lookup"><span data-stu-id="59fd1-296">Decreases</span></span></td>
-<td class="column-8"><span data-ttu-id="59fd1-297">Zmniejsza</span><span class="sxs-lookup"><span data-stu-id="59fd1-297">Decreases</span></span></td>
-</tr>
-</tbody>
-</table>
-
-<span data-ttu-id="59fd1-298">Można dostosować wyświetlanie storna w formularzach, siatkach, kolumnach i polach.</span><span class="sxs-lookup"><span data-stu-id="59fd1-298">You can customize the display of Storno in forms, grids, columns, and fields.</span></span> <span data-ttu-id="59fd1-299">Na przykład można wyłączyć wyświetlanie znaku lub zmienić dopełnianie dla kwot ujemnych.</span><span class="sxs-lookup"><span data-stu-id="59fd1-299">For example, you can turn off sign display or change padding for negative amounts.</span></span> <span data-ttu-id="59fd1-300">Można również używać pola **Korekta** ze wszystkimi ustawieniami wyświetlania. Jeśli pole **Korekta** ma ustawioną wartość „tak”, jest zapisem stornującym.</span><span class="sxs-lookup"><span data-stu-id="59fd1-300">You can also use the **Correction** field with all display settings, if the **Correction** field has ‘Yes’, then it is a Storno entry.</span></span>
-
-![Kwoty storna we wpisach w arkuszu](./media/journal-storno.png)
-
-## <a name="how-documents-create-storno"></a><span data-ttu-id="59fd1-302">Jak dokumenty tworzą storna</span><span class="sxs-lookup"><span data-stu-id="59fd1-302">How documents create Storno</span></span>
-<span data-ttu-id="59fd1-303">Niektóre dokumenty powodują tworzenie transakcji anulowania.</span><span class="sxs-lookup"><span data-stu-id="59fd1-303">Certain documents create cancellation transactions.</span></span> <span data-ttu-id="59fd1-304">Na przykład przeszacowania w walucie obcej dla dokumentów księgi głównej, rozrachunków z dostawcami i rozrachunków z odbiorcami powodują anulowanie niezrealizowanych dodatnich i ujemnych różnic kursowych.</span><span class="sxs-lookup"><span data-stu-id="59fd1-304">For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss.</span></span> <span data-ttu-id="59fd1-305">Aby uzyskać więcej informacji, zobacz [Przeszacowanie w walucie obcej dla księgi głównej](../general-ledger/foreign-currency-revaluation-general-ledger.md) lub [Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md).</span><span class="sxs-lookup"><span data-stu-id="59fd1-305">For more details, see [Foreign currency revaluation for General Ledger](../general-ledger/foreign-currency-revaluation-general-ledger.md) or [Accounts payable and Accounts receivable](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md).</span></span> <span data-ttu-id="59fd1-306">Po utworzeniu transakcji anulowania zostaną utworzone nowe transakcje z niezrealizowanymi dodatnimi i ujemnymi różnicami kursowymi.</span><span class="sxs-lookup"><span data-stu-id="59fd1-306">After a cancellation transaction is created, new transactions will be created with unrealized gain and loss.</span></span> <span data-ttu-id="59fd1-307">Transakcje anulowania są również tworzone dla zapasów.</span><span class="sxs-lookup"><span data-stu-id="59fd1-307">Cancellation transactions are also created for inventory.</span></span> <span data-ttu-id="59fd1-308">Aby uzyskać więcej informacji, zobacz  [Zamknięcie zapasów](../../supply-chain/cost-management/inventory-close.md).</span><span class="sxs-lookup"><span data-stu-id="59fd1-308">For more information, see [Inventory close](../../supply-chain/cost-management/inventory-close.md).</span></span> <span data-ttu-id="59fd1-309">Istnieją dokumenty pozwalające anulować uprzednio zaksięgowany dokument.</span><span class="sxs-lookup"><span data-stu-id="59fd1-309">There are documents that allow you to cancel the previously posted document.</span></span> <span data-ttu-id="59fd1-310">Na przykład użytkownik może utworzyć fakturę korygującą w celu anulowania uprzednio utworzonej faktury.</span><span class="sxs-lookup"><span data-stu-id="59fd1-310">For example, the User can create a Credit Note to cancel a previously created Invoice.</span></span> <span data-ttu-id="59fd1-311">Do tworzenia transakcji storna lub wycofania dokumenty wykorzystują określone parametry.</span><span class="sxs-lookup"><span data-stu-id="59fd1-311">Documents use specific parameters to create reverse or Storno transactions.</span></span> <span data-ttu-id="59fd1-312">Na przykład przeszacowanie w walucie obcej tworzy transakcje wycofania lub storna przy użyciu parametru korekty księgi głównej.</span><span class="sxs-lookup"><span data-stu-id="59fd1-312">For example, the foreign currency revaluation creates reverse or Storno transactions based on the general ledger correction parameter.</span></span> <span data-ttu-id="59fd1-313">Faktura korygująca dla odbiorcy tworzy transakcję wycofania lub storna przy użyciu parametru korekty na fakturze korygującej dostępnego w module rozrachunków z odbiorcami.</span><span class="sxs-lookup"><span data-stu-id="59fd1-313">The customer credit note creates reverse or Storno transactions based on the accounts receivable credit note correction parameter.</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-storno.md" target-language="pl-PL">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-storno.ef97bf.a9352b0a80d8c5fe013e951bd4380b87834c0030.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>a9352b0a80d8c5fe013e951bd4380b87834c0030</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-storno.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Storno accounting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stornowanie</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>Storno accounting is the practice of using negative numbers to reverse original journal account entries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stornowanie to praktyka używania liczb ujemnych, aby odwrócić oryginalne zapisy na koncie arkusza.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Storno accounting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stornowanie</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Storno accounting is the practice of using negative numbers to reverse original journal account entries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stornowanie to praktyka używania liczb ujemnych, aby odwrócić oryginalne zapisy na koncie arkusza.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source><bpt id="p1">*</bpt>Storno accounting<ept id="p1">*</ept> is a practice of using negative debit or credit amounts to reverse original journal account entries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>Stornowanie<ept id="p1">*</ept> to praktyka używania ujemnych liczb po stronie winien lub ma, aby odwrócić oryginalne zapisy na koncie arkusza.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Because bookkeepers typically write Storno entries in red ink, this accounting practice is also known as <bpt id="p1">*</bpt>Red Storno<ept id="p1">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ponieważ księgowi zazwyczaj zapisują pozycje storna czerwonym atramentem, ta praktyka księgowa jest również znana jako <bpt id="p1">*</bpt>storno czerwone<ept id="p1">*</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Using Storno accounting you can cancel a document with incorrect amounts, however you should always enter the correct document amount after the cancellation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Za pomocą stornowania można anulować dokument z niepoprawnymi kwotami, ale po anulowaniu należy zawsze wprowadzić poprawne kwoty dokumentu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przykład</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>A bookkeeper posts an invoice from a vendor for 120 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Księgowy księguje fakturę od dostawcy na 120 USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>During the payment process, it's discovered that the bookkeeper mistakenly entered 120 USD instead of 102 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W procesie realizacji płatności okazało się, że księgowy wprowadził przez pomyłkę kwotę 120 USD zamiast 102 USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Now, the bookkeeper needs to create Storno for the original document, and then create the correct invoice for 102 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Teraz księgowy musi utworzyć storno dla oryginalnego dokumentu, a następnie utworzyć poprawną fakturę na 102 USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>For more information, see<bpt id="p1"> [</bpt>Invoice from Vendor<ept id="p1">](../accounts-payable/vendor-invoices-overview.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby uzyskać więcej informacji, zobacz <bpt id="p1"> [</bpt>Faktura od dostawcy<ept id="p1">](../accounts-payable/vendor-invoices-overview.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The following table shows the general entry for Storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W poniższej tabeli przedstawiono ogólny wpis storna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">**</bpt>Document ID<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Identyfikator dokumentu<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">**</bpt>Account<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Konto<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">**</bpt>Debit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Strona debetowa<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">**</bpt>Credit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Strona kredytowa<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source><bpt id="p1">**</bpt>Comment<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Komentarz<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto zakupu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oryginalna faktura (błędna)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto dostawcy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oryginalna faktura (błędna)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Storno0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto zakupu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>-120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Storno0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto dostawcy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>-120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Invoice0002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto zakupu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Correct Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poprawna faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Invoice0002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto dostawcy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Correct Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poprawna faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>In this example, the balance statement shows the following.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym przykładzie saldo wyciągu pokazuje następujące dane.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilansowe</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto zakupu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto dostawcy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>-102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Differences between Storno and reverse entries</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Różnica między zapisami stornującymi a korygującymi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>There are two ways in which to correct posting entries – reverse and storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Istnieją dwa sposoby poprawiania wpisów księgowania — wycofanie i storno.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>If you use a reverse entry, a copy of the original general entry is created with reverse debit and credit accounts, and the amounts remain with the same sign.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podczas używania wpisu korygującego jest generowana kopia oryginalnego wpisu ogólnego na odwrotnych kontach debetowych i kredytowych, a kwoty zachowują pierwotny znak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>If you use Storno, the system creates a copy of the original general entry, but the amounts are recorded with a negative sign.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli używasz storna, system tworzy kopię oryginalnego wpisu ogólnego, ale kwoty są rejestrowane ze znakiem minusa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The following table shows the general entry for Storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W poniższej tabeli przedstawiono ogólny wpis storna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source><bpt id="p1">**</bpt>Document ID<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Identyfikator dokumentu<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source><bpt id="p1">**</bpt>Account<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Konto<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source><bpt id="p1">**</bpt>Debit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Strona debetowa<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source><bpt id="p1">**</bpt>Credit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Strona kredytowa<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source><bpt id="p1">**</bpt>Comment<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Komentarz<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto zakupu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oryginalna faktura (błędna)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto dostawcy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oryginalna faktura (błędna)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Reverse0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wycofanie0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto zakupu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Reverse</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wycofaj</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Reverse0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wycofanie0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto dostawcy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Reverse</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wycofaj</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Invoice0002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto zakupu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Correct Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poprawna faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Invoice0002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto dostawcy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Correct Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poprawna faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>In this example, the balance statement shows the following.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym przykładzie saldo wyciągu pokazuje następujące dane.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilansowe</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto zakupu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>222</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">222</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto dostawcy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>222</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">222</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>-102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Note that the balances are equal for the reverse and the storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Należy zauważyć, że salda są takie same dla wycofania i storna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>There is a difference between debit turnover and credit turnover, because the reverse entry makes redundant debit and credit turnover.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Różnią się obroty po stronach winien i ma, ponieważ wpis korygujący tworzy nadmiarowy obrót po obu stronach.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>The reverse entry is used in countries/regions where turnover is rarely use.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wpis korygujący jest używany w krajach/regionach, gdzie rzadko używa się obrotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Other countries/regions use Storno accounting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W pozostałych krajach/regionach stosuje się stornowanie.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Partial Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno częściowe</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source><bpt id="p1">*</bpt>Partial Storno<ept id="p1">*</ept> is an accounting practice of using negative debit or credit amounts to reverse part of the original journal account entries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>Storno częściowe<ept id="p1">*</ept> to praktyka księgowa używania ujemnych liczb po stronie winien lub ma, aby odwrócić część oryginalnych zapisów na koncie arkusza.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Some countries/regions allow the use the partial Storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niektóre kraje/regiony pozwalają na używanie storna częściowego.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>For example, a bookkeeper posts an invoice from a vendor for 120 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład księgowy księguje fakturę od dostawcy na 120 USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>During the payment process, it's discovered that the bookkeeper mistakenly entered an incorrect number sequence.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W procesie realizacji płatności okazało się, że księgowy przez pomyłkę wpisał błędny numer kolejny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>The original invoice for 102 USD had a mistake in the number sequence.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oryginalna fakturą na 102 USD ma błąd w numeracji.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source> Using partial Storno, the bookkeeper should create Storno for 18 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Używając funkcji storna częściowego, księgowy powinien utworzyć storno na 18 USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>The following table shows the general entry for partial Storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W poniższej tabeli przedstawiono ogólny wpis storna częściowego.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source><bpt id="p1">**</bpt>Document ID<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Identyfikator dokumentu<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source><bpt id="p1">**</bpt>Account<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Konto<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source><bpt id="p1">**</bpt>Debit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Strona debetowa<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source><bpt id="p1">**</bpt>Credit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Strona kredytowa<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source><bpt id="p1">**</bpt>Comment<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Komentarz<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto zakupu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oryginalna faktura (błędna)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto dostawcy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oryginalna faktura (błędna)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Storno0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto zakupu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source><ph id="ph1">\-</ph>18</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">18<ph id="ph1">\-</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Partial Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno częściowe</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Storno0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto dostawcy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source><ph id="ph1">\-</ph>18</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">18<ph id="ph1">\-</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Partial Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno częściowe</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>In this example, the balance statement shows the following.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym przykładzie saldo wyciągu pokazuje następujące dane.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilansowe</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto zakupu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto dostawcy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>-102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Partial Storno can create an issue on the Original Print form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno częściowe może powodować problem na oryginalnie drukowanym formularzu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source> If there is a difference between the date of the original document and the date of Storno, it can make it difficult to get an accurate currency amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Jeśli istnieje różnica między datą oryginalnego dokumentu a datą storna, może być trudne ustalenie dokładnej kwoty w walucie.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>As a result, partial Storno is only allowed for certain documents.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W efekcie storno częściowe jest dozwolone tylko w niektórych dokumentach.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Microsoft Dynamics 365 for Operations provides partial Storno functionality for documents and countries/regions where it is allowed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Operations zawiera funkcjonalność storna częściowego dla dokumentów i krajów/regionów, gdzie jest ona dozwolona.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>How to enter Storno on journal lines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jak wprowadzić storno w wierszach arkusza</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Enter the debit or credit amount with a negative sign on the journal line to make a Storno entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby wprowadzić zapis stornujący, wpisz kwotę po stronie winien lub ma ze znakiem minusa w wierszu arkusza.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>The <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> field is set during the posting process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wartość w polu <bpt id="p1">**</bpt>Korekta<ept id="p1">**</ept> jest ustawiana w trakcie procesu księgowania.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>How Storno is displayed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sposób wyświetlania storna</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Dynamics 365 for Operations handles negative journal amounts in a special way.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Operations traktuje ujemne kwoty arkuszy w szczególny sposób.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>The general journal entry, customer transaction, vendor transaction, and other transactions provide a Storno function, as shown below.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wpis arkusza finansowego, transakcja odbiorcy, transakcja dostawcy i inne typy transakcji zawierają funkcję storna, jak pokazano poniżej.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>User input at journal line</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dane wprowadzone przez użytkownika w wierszu arkusza</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Storage principle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zasada przechowywania</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Display principle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Reguła wyświetlania</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Impact to the Statement report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wpływ na sprawozdanie</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Correction field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole korekty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Amount field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole kwoty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Amount in transaction currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kwota w walucie transakcji</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ilość</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Debit column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kolumna Winien</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Credit column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kolumna Ma</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Balance column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kolumna salda</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source><ph id="ph1"> </ph>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1"> </ph>Strona debetowa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nr</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source><ph id="ph1">&amp;gt;</ph>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0<ph id="ph1">&amp;gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ilość</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ilość</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Increases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zwiększa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Increases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zwiększa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source><ph id="ph1"> </ph>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1"> </ph>Strona kredytowa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nr</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source><ph id="ph1">&amp;lt;</ph>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0<ph id="ph1">&amp;lt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>-Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Kwota</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ilość</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Increases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zwiększa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Decreases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zmniejsza</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>-Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Winien</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tak</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source><ph id="ph1">&amp;gt;</ph>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0<ph id="ph1">&amp;gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>+Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">+Kwota</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>-Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Kwota</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Decreases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zmniejsza</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Increases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zwiększa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>-Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Ma</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tak</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source><ph id="ph1">&amp;lt;</ph>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0<ph id="ph1">&amp;lt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>-Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Kwota</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>-Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Kwota</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>Decreases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zmniejsza</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Decreases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zmniejsza</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>You can customize the display of Storno in forms, grids, columns, and fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Można dostosować wyświetlanie storna w formularzach, siatkach, kolumnach i polach.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>For example, you can turn off sign display or change padding for negative amounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład można wyłączyć wyświetlanie znaku lub zmienić dopełnianie dla kwot ujemnych.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>You can also use the <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> field with all display settings, if the <bpt id="p2">**</bpt>Correction<ept id="p2">**</ept> field has ‘Yes’, then it is a Storno entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Można również używać pola <bpt id="p1">**</bpt>Korekta<ept id="p1">**</ept> ze wszystkimi ustawieniami wyświetlania. Jeśli pole <bpt id="p2">**</bpt>Korekta<ept id="p2">**</ept> ma ustawioną wartość „tak”, jest zapisem stornującym.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Journal Entry Storno amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kwoty storna we wpisach w arkuszu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>How documents create Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jak dokumenty tworzą storna</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Certain documents create cancellation transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niektóre dokumenty powodują tworzenie transakcji anulowania.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład przeszacowania w walucie obcej dla dokumentów księgi głównej, rozrachunków z dostawcami i rozrachunków z odbiorcami powodują anulowanie niezrealizowanych dodatnich i ujemnych różnic kursowych.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>For more details, see <bpt id="p1">[</bpt>Foreign currency revaluation for General Ledger<ept id="p1">](../general-ledger/foreign-currency-revaluation-general-ledger.md)</ept> or <bpt id="p2">[</bpt>Accounts payable and Accounts receivable<ept id="p2">](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby uzyskać więcej informacji, zobacz <bpt id="p1">[</bpt>Przeszacowanie w walucie obcej dla księgi głównej<ept id="p1">](../general-ledger/foreign-currency-revaluation-general-ledger.md)</ept> lub <bpt id="p2">[</bpt>Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami<ept id="p2">](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>After a cancellation transaction is created, new transactions will be created with unrealized gain and loss.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po utworzeniu transakcji anulowania zostaną utworzone nowe transakcje z niezrealizowanymi dodatnimi i ujemnymi różnicami kursowymi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>Cancellation transactions are also created for inventory.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Transakcje anulowania są również tworzone dla zapasów.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>For more information, see<bpt id="p1"> [</bpt>Inventory close<ept id="p1">](../../supply-chain/cost-management/inventory-close.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby uzyskać więcej informacji, zobacz <bpt id="p1"> [</bpt>Zamknięcie zapasów<ept id="p1">](../../supply-chain/cost-management/inventory-close.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>There are documents that allow you to cancel the previously posted document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Istnieją dokumenty pozwalające anulować uprzednio zaksięgowany dokument.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>For example, the User can create a Credit Note to cancel a previously created Invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład użytkownik może utworzyć fakturę korygującą w celu anulowania uprzednio utworzonej faktury.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Documents use specific parameters to create reverse or Storno transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Do tworzenia transakcji storna lub wycofania dokumenty wykorzystują określone parametry.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>For example, the foreign currency revaluation creates reverse or Storno transactions based on the general ledger correction parameter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład przeszacowanie w walucie obcej tworzy transakcje wycofania lub storna przy użyciu parametru korekty księgi głównej.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>The customer credit note creates reverse or Storno transactions based on the accounts receivable credit note correction parameter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura korygująca dla odbiorcy tworzy transakcję wycofania lub storna przy użyciu parametru korekty na fakturze korygującej dostępnego w module rozrachunków z odbiorcami.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
