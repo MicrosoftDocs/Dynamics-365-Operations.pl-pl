@@ -1,101 +1,276 @@
----
-title: Skonfiguruj strukturę konta
-description: Ten temat zawiera informacje dotyczące struktury kont i wymiarów finansowych.
-author: aprilolson
-manager: AnnBe
-ms.date: 05/21/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: LedgerEliminationRule
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 13131
-ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
-ms.search.region: Global
-ms.author: aolson
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552024"
----
-# <a name="configure-account-structures"></a><span data-ttu-id="1953a-103">Skonfiguruj strukturę konta</span><span class="sxs-lookup"><span data-stu-id="1953a-103">Configure account structures</span></span>
-
-[!include[banner](../includes/banner.md)]
-
-<span data-ttu-id="1953a-104">Struktury kont wykorzystują konto główne i wymiary finansowe do tworzenie zestawu reguł, które określają kolejność i wartości używane podczas wprowadzania numeru konta.</span><span class="sxs-lookup"><span data-stu-id="1953a-104">Account structures use the main account and financial dimensions to create a set of rules that determine the order and values used when entering the account number.</span></span> <span data-ttu-id="1953a-105">Można stworzyć dowolną liczbę struktur kont potrzebnych w firmie.</span><span class="sxs-lookup"><span data-stu-id="1953a-105">You can set up as many account structures as you need for your business.</span></span> <span data-ttu-id="1953a-106">Struktury konta są przypisywane do ustawień księgi firmy, więc mogą być współużytkowane.</span><span class="sxs-lookup"><span data-stu-id="1953a-106">The account structures are assigned to a company’s ledger setup, so they can be shared.</span></span>
-
-<span data-ttu-id="1953a-107">Podczas tworzenia struktury konta maksymalna liczba segmentów to 11.</span><span class="sxs-lookup"><span data-stu-id="1953a-107">When creating an account structure, the maximum number of segments is 11.</span></span> <span data-ttu-id="1953a-108">Jeśli potrzebujesz jeszcze więcej segmentów, kompleksowo oceń swoją konfigurację i wymagania, ponieważ wpłynie to na środowisko obsługi użytkowników.</span><span class="sxs-lookup"><span data-stu-id="1953a-108">If you need more segments than this, thoroughly evaluate your setup and requirements, as it will impact the user experience.</span></span> <span data-ttu-id="1953a-109">Należy wziąć pod uwagę, czy można utworzyć segment pochodny w scenariuszu raportowania przy użyciu hierarchii, a nie podczas wprowadzania danych, lub za pomocą pola zdefiniowane przez użytkownika.</span><span class="sxs-lookup"><span data-stu-id="1953a-109">Consider if a segment could be derived in a reporting scenario using a hierarchy instead of during data entry, or by using a user-defined field.</span></span> <span data-ttu-id="1953a-110">Na przykład jeśli chcesz raportować z lokalizacji, ale nie można ustalić działu lub centrum kosztów, w którym znajduje się lokalizacja, nie potrzebujesz lokalizacji jako wymiaru finansowego.</span><span class="sxs-lookup"><span data-stu-id="1953a-110">For example, if you want to report on location, but you can figure location by department or cost center, you would not need location as a financial dimension.</span></span> <span data-ttu-id="1953a-111">Jeśli po ocenie stwierdzisz, że potrzeba więcej niż 11 segmentów, można dodać kolejne segmenty za pomocą reguł zaawansowanych.</span><span class="sxs-lookup"><span data-stu-id="1953a-111">If after evaluation you do determine more than 11 segments are needed, you can add additional segments using advanced rules.</span></span>
-
-<span data-ttu-id="1953a-112">Struktury kont wymagają konta głównego.</span><span class="sxs-lookup"><span data-stu-id="1953a-112">Account structures require the main account.</span></span> <span data-ttu-id="1953a-113">Konto główne nie musi być pierwszym segmentem w strukturze, ale wskazuje, jaka struktura konta jest używana podczas wprowadzania numeru konta.</span><span class="sxs-lookup"><span data-stu-id="1953a-113">The main account does not need to be the first segment in the structure, but it does identify what account structure is being used during the account number entry.</span></span> <span data-ttu-id="1953a-114">W związku z tym wartości konta głównego może istnieć tylko w jednej strukturze przypisanej do księgi, tak aby wartości nie zachodziły na siebie.</span><span class="sxs-lookup"><span data-stu-id="1953a-114">Because of this, a main account value can only exist in one structure assigned to the ledger so that they do not overlap.</span></span> <span data-ttu-id="1953a-115">Po zidentyfikowaniu struktury konta zostanie wyfiltrowana lista dozwolonych wartości, pozwalając użytkownikowi wybierać tylko prawidłowe wartości wymiarów i w ten sposób zmniejszając ryzyko dokonania błędnego wpisu w arkuszu.</span><span class="sxs-lookup"><span data-stu-id="1953a-115">After the account structure is identified, the allowed values list is filtered to guide the user through picking only valid dimension values, decreasing the possibility of an incorrect journal entry.</span></span>
-
-> [!NOTE] 
-> <span data-ttu-id="1953a-116">Jeśli masz zamiar budżetować względem wymiaru finansowego, musi on być częścią struktury konta.</span><span class="sxs-lookup"><span data-stu-id="1953a-116">If you plan to budget against a financial dimension, it will need to be part of an account structure.</span></span> <span data-ttu-id="1953a-117">Obecnie mechanizm budżetowania nie korzysta z reguł zaawansowanych.</span><span class="sxs-lookup"><span data-stu-id="1953a-117">Budgeting does not currently utilize advanced rules.</span></span>
-
-## <a name="example"></a><span data-ttu-id="1953a-118">Przykład</span><span class="sxs-lookup"><span data-stu-id="1953a-118">Example</span></span>
-<span data-ttu-id="1953a-119">Aby zilustrować najlepszy sposób konfigurowania struktury konta, załóżmy, że firma chce śledzić konta bilansowe (100000..399999) na poziomie konta i wymiaru finansowego jednostki biznesowej.</span><span class="sxs-lookup"><span data-stu-id="1953a-119">To illustrate a best practice for setting up an account structure, let's assume that a company wants to track their balance sheet accounts (100000..399999) at the account and business unit financial dimension level.</span></span> <span data-ttu-id="1953a-120">Dla kont przychodów i wydatków (400000..999999) śledzi wymiary finansowe Jednostka biznesowa, Dział i Centrum kosztów.</span><span class="sxs-lookup"><span data-stu-id="1953a-120">For revenue and expense accounts (400000..999999), they track financial dimensions Business Unit, Department, and Cost center.</span></span> <span data-ttu-id="1953a-121">Jeśli coś sprzeda, chce również śledzić odbiorcę.</span><span class="sxs-lookup"><span data-stu-id="1953a-121">If they make a sale, they also like to track Customer.</span></span> <span data-ttu-id="1953a-122">W czasie używania tego scenariusza, zalecane jest posiadanie dwóch struktur kont przypisanych do księgi firmy — jeden dla kont bilansowych, a drugi dla rachunków zysków i strat.</span><span class="sxs-lookup"><span data-stu-id="1953a-122">Using this scenario, it would be recommended to have two account structures assigned to the company’s ledger - one for Balance sheet accounts, and one for Profit and Loss accounts.</span></span> <span data-ttu-id="1953a-123">Aby zoptymalizować czynności użytkownika i sprawdzanie poprawności, Odbiorca powinien być regułą zaawansowaną, która jest używana tylko w przypadku użycia konta sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="1953a-123">To optimize the user experience and validation, Customer should be an advanced rule that is only used when a sales account is used.</span></span>
-
-<span data-ttu-id="1953a-124">**Struktura konta bilansowego**</span><span class="sxs-lookup"><span data-stu-id="1953a-124">**Balance sheet account structure**</span></span>
-
-|<span data-ttu-id="1953a-125">Konto główne</span><span class="sxs-lookup"><span data-stu-id="1953a-125">Main account</span></span>          | <span data-ttu-id="1953a-126">Jednostka biznesowa</span><span class="sxs-lookup"><span data-stu-id="1953a-126">Business unit</span></span>    |
-|----------------------|-----------|
-|<span data-ttu-id="1953a-127">100000..399999</span><span class="sxs-lookup"><span data-stu-id="1953a-127">100000..399999</span></span> | <span data-ttu-id="1953a-128">\*;” “</span><span class="sxs-lookup"><span data-stu-id="1953a-128">\*;” “</span></span>|
-
-<span data-ttu-id="1953a-129">**Struktura konta wynikowego**</span><span class="sxs-lookup"><span data-stu-id="1953a-129">**Profit and loss account structure**</span></span>
-
-|<span data-ttu-id="1953a-130">Konto główne</span><span class="sxs-lookup"><span data-stu-id="1953a-130">Main account</span></span>          | <span data-ttu-id="1953a-131">Jednostka biznesowa</span><span class="sxs-lookup"><span data-stu-id="1953a-131">Business unit</span></span>    |<span data-ttu-id="1953a-132">Dział</span><span class="sxs-lookup"><span data-stu-id="1953a-132">Department</span></span>          | <span data-ttu-id="1953a-133">Centrum kosztu</span><span class="sxs-lookup"><span data-stu-id="1953a-133">Cost center</span></span>    |
-|----------------------|-----------|----------------------|-----------|
-|<span data-ttu-id="1953a-134">400000..999999</span><span class="sxs-lookup"><span data-stu-id="1953a-134">400000..999999</span></span> | <span data-ttu-id="1953a-135">\*;” “</span><span class="sxs-lookup"><span data-stu-id="1953a-135">\*;” “</span></span>|<span data-ttu-id="1953a-136">\*;” “</span><span class="sxs-lookup"><span data-stu-id="1953a-136">\*;” “</span></span>|<span data-ttu-id="1953a-137">\*;” “</span><span class="sxs-lookup"><span data-stu-id="1953a-137">\*;” “</span></span>|<span data-ttu-id="1953a-138">\*;” “</span><span class="sxs-lookup"><span data-stu-id="1953a-138">\*;” “</span></span>|
-
-<span data-ttu-id="1953a-139">**Zaawansowana reguła dodawania odbiorcy**</span><span class="sxs-lookup"><span data-stu-id="1953a-139">**Advanced rule for adding a Customer**</span></span>
-
-<span data-ttu-id="1953a-140">Kryteria: Gdy konto główne mieści się w zakresie id 400000 do 499999, należy dodać odbiorcę.</span><span class="sxs-lookup"><span data-stu-id="1953a-140">Criteria: Where Main account is between 400000 and 499999, then add customer.</span></span> <span data-ttu-id="1953a-141">Nie może pozostać puste.</span><span class="sxs-lookup"><span data-stu-id="1953a-141">It cannot be left blank.</span></span>
-
-|<span data-ttu-id="1953a-142">Odbiorca</span><span class="sxs-lookup"><span data-stu-id="1953a-142">Customer</span></span>         |
-|-----------------|
-|* |
-
-<span data-ttu-id="1953a-143">W tym uproszczonym przykładzie są dozwolone wszystkie wartości i puste pole, więc są używane symbole \* i „ ”.</span><span class="sxs-lookup"><span data-stu-id="1953a-143">In this simplified example, all values and blank are allowed so \* and “ “ are used.</span></span>
-
-## <a name="segments-and-allowed-values"></a><span data-ttu-id="1953a-144">Segmenty i dozwolone wartości</span><span class="sxs-lookup"><span data-stu-id="1953a-144">Segments and allowed values</span></span>
-<span data-ttu-id="1953a-145">Sekcje **Segmenty** i **Szczegóły dozwolonych wartości** zawierają siatkę umożliwiającą wprowadzanie reguł, które będą egzekwowane podczas sprawdzania poprawności w trakcie księgowania.</span><span class="sxs-lookup"><span data-stu-id="1953a-145">The **Segments** and **Allowed values details** section provides a grid like experience for entering the rules that will be followed on validation during posting.</span></span> <span data-ttu-id="1953a-146">Można wprowadzać tekst bezpośrednio w komórkach siatki, zaimportować go z programu Excel lub użyć sekcji **Szczegóły wartości dozwolonych** w celu otrzymania wskazówek wypełniania.</span><span class="sxs-lookup"><span data-stu-id="1953a-146">You can type directly in the cells in the grid, import it from Excel, or use the **Allowed value details** section to guide you through it.</span></span>
-
-<span data-ttu-id="1953a-147">Opcje w sekcji **Szczegóły dozwolonych wartości** prowadzą użytkownika przez proces tworzenia kryteriów za pomocą elementów **Operatory**, takich jak „zaczyna się od”, „zawiera się między”, „zawiera” itd.</span><span class="sxs-lookup"><span data-stu-id="1953a-147">The **Allowed value details** section guides you through creating criteria using **Operators** such as begins with, is between, includes, and many others.</span></span>
-
-<span data-ttu-id="1953a-148">[![Dozwolone wartości](./media/account.png)](./media/account.png)</span><span class="sxs-lookup"><span data-stu-id="1953a-148">[![Allow values](./media/account.png)](./media/account.png)</span></span> 
-
-## <a name="more-than-7-criteria-needed"></a><span data-ttu-id="1953a-149">Potrzebna więcej niż 7 kryteriów</span><span class="sxs-lookup"><span data-stu-id="1953a-149">More than 7 criteria needed</span></span>
-
-<span data-ttu-id="1953a-150">Jeśli potrzebujesz więcej niż 7 kryteriów, możesz je dodać w następnym wierszu.</span><span class="sxs-lookup"><span data-stu-id="1953a-150">If you have more than 7 criteria that are needed, you can continue adding them on the next line.</span></span> <span data-ttu-id="1953a-151">Podczas pracy w sekcji **Szczegóły wartości dozwolonych**, że po wprowadzeniu siódmego kryterium nie jest już aktywne pole dodawania kryteriów **+Dodaj nowe**.</span><span class="sxs-lookup"><span data-stu-id="1953a-151">You will notice when working in the **Allowed value details** section that the **+Add new** criteria is nt longer active after the seventh criteria is entered.</span></span> <span data-ttu-id="1953a-152">Jest to spowodowane wieloma czynnikami takimi jak:</span><span class="sxs-lookup"><span data-stu-id="1953a-152">This is due to many factors such as:</span></span> 
- - <span data-ttu-id="1953a-153">Szerokość kolumny</span><span class="sxs-lookup"><span data-stu-id="1953a-153">Column width</span></span> 
- - <span data-ttu-id="1953a-154">Sposób przechowywania danych</span><span class="sxs-lookup"><span data-stu-id="1953a-154">How the data is stored</span></span> 
- - <span data-ttu-id="1953a-155">Działanie formantu **Szczegóły dozwolonych wartości**</span><span class="sxs-lookup"><span data-stu-id="1953a-155">Performance of the **Allowed value details** control</span></span>
- - <span data-ttu-id="1953a-156">Zdatność</span><span class="sxs-lookup"><span data-stu-id="1953a-156">Usability</span></span>  
- 
-<span data-ttu-id="1953a-157">Aby kontynuować dodawanie dodatkowych kryteriów, kliknij przycisk **Duplikuj segment** i **Sekcja dozwolonych wartości**.</span><span class="sxs-lookup"><span data-stu-id="1953a-157">To continue to add additional criteria, click **Duplicate in the Segment** and **Allowed values section**.</span></span> <span data-ttu-id="1953a-158">Spowoduje to skopiowanie kryteriów do nowego wiersza.</span><span class="sxs-lookup"><span data-stu-id="1953a-158">This will copy the criteria to a new line.</span></span> <span data-ttu-id="1953a-159">Można następnie nadpisać lub zmodyfikować sekcję **Szczegóły wartości dozwolonych**.</span><span class="sxs-lookup"><span data-stu-id="1953a-159">You can then type over or modify the **Allowed value details** section.</span></span>
-
-<span data-ttu-id="1953a-160">(ŁĄCZE DO FILMU, KTÓRY ZOSTANIE UTWORZONY)</span><span class="sxs-lookup"><span data-stu-id="1953a-160">(LINK TO VIDEO THAT WILL BE CREATED)</span></span>
-
-## <a name="best-practices"></a><span data-ttu-id="1953a-161">Najlepsze praktyki</span><span class="sxs-lookup"><span data-stu-id="1953a-161">Best practices</span></span>
-<span data-ttu-id="1953a-162">Podczas konfigurowania struktur kont zaleca się przestrzeganie pewnych najlepszych praktyk.</span><span class="sxs-lookup"><span data-stu-id="1953a-162">When setting up your account structures there are some best practices you can follow.</span></span> <span data-ttu-id="1953a-163">Jednak jest to tylko wskazówka, a całościowa dyskusja powinna uwzględniać kwestie sytuacji firmy, planu rozwoju i planu konserwacji.</span><span class="sxs-lookup"><span data-stu-id="1953a-163">However, this is only guidance so a holistic discussion about your business, growth plan, and maintenance plan should be considered as part of that discussion.</span></span>
-
-- <span data-ttu-id="1953a-164">Utwórz konto główne najpierw lub umieść je jak najbliżej z przodu struktury konta, tak aby podczas dokonywania zapisów na koncie użytkownicy byli najlepiej kierowani przez kolejne etapy.</span><span class="sxs-lookup"><span data-stu-id="1953a-164">Make main account first or as close to the front of the account structure as possible, so users get the best guided experience they can during account entry.</span></span>
-
-- <span data-ttu-id="1953a-165">W jak największym stopniu wykorzystuj istniejące struktury kont, aby uprościć zarządzanie we wszystkich firmach.</span><span class="sxs-lookup"><span data-stu-id="1953a-165">Reuse account structures as much as possible to reduce maintenance across your legal entities.</span></span>
-
-- <span data-ttu-id="1953a-166">Dla odmian istniejących w różnych firmach należy rozważyć używanie reguł zaawansowanych, tak aby wykorzystywać istniejące struktury konta.</span><span class="sxs-lookup"><span data-stu-id="1953a-166">For variations across legal entities, consider using advanced rules so that account structures can be reused.</span></span>
-
-- <span data-ttu-id="1953a-167">Podczas definiowania dozwolonych wartości, należy użyć jak najwięcej zakresów i symboli wieloznacznych.</span><span class="sxs-lookup"><span data-stu-id="1953a-167">When defining allowed values, use ranges and wildcards as much as possible.</span></span> <span data-ttu-id="1953a-168">Nie tylko umożliwia to wzrost i zmianę bez obsługi technicznej, ale system również działa lepiej w tej konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="1953a-168">This not only allows you to grow and change without maintenance, but the system also performs more ideally with this configuration.</span></span>
-
-- <span data-ttu-id="1953a-169">Nie ograniczaj się tylko do umieszczenia gwiazdki obok każdego segmentu w strukturze konta, a następnie nie polegaj wyłącznie na regułach zaawansowanych.</span><span class="sxs-lookup"><span data-stu-id="1953a-169">Do not just put an asterisk for every segment in the account structure and then solely rely on the advanced rules.</span></span> <span data-ttu-id="1953a-170">Może to być trudne do zarządzania i często prowadzi do błędów użytkownika podczas obsługi technicznej, co może powodować niemożność zaksięgowania przez system.</span><span class="sxs-lookup"><span data-stu-id="1953a-170">This can be difficult to manage and often leads to user error during maintenance that can make the system unable to post.</span></span>
-
-## <a name="account-structure-activation"></a><span data-ttu-id="1953a-171">Aktywacja struktury konta</span><span class="sxs-lookup"><span data-stu-id="1953a-171">Account structure activation</span></span>
-<span data-ttu-id="1953a-172">Jeśli nowe ustawienie lub zmiana struktury konta została zakończona, należy je aktywować.</span><span class="sxs-lookup"><span data-stu-id="1953a-172">When you are satifisfied with your new setup or a change to an account structure, you must activate it.</span></span> <span data-ttu-id="1953a-173">Jeśli struktura konta jest przypisana do księgi, ten proces aktywacji może potrwać bardzo długo, ponieważ wszystkie niezaksięgowane transakcje w systemie muszą zostać zsynchronizowane z nową strukturą.</span><span class="sxs-lookup"><span data-stu-id="1953a-173">If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure.</span></span> <span data-ttu-id="1953a-174">Zmiany struktury konta nie mają wpływu na zaksięgowane transakcje.</span><span class="sxs-lookup"><span data-stu-id="1953a-174">Posted transactions are not impacted with account structure changes.</span></span>
-
-<span data-ttu-id="1953a-175">Aby uzyskać więcej informacji, zobacz [Planowanie planu kont](plan-chart-of-accounts.md), [Wymiary finansowe](financial-dimensions.md) i [Wpisywanie kombinacji wymiarów i kont (formant Wpis podzielony na segmenty)](enter-account-dimension-combinations-segmented-entry-control.md).</span><span class="sxs-lookup"><span data-stu-id="1953a-175">For more information, see [Plan your chart of accounts](plan-chart-of-accounts.md), [Financial dimensions](financial-dimensions.md) and [Enter account and dimension combinations (segmented entry control)](enter-account-dimension-combinations-segmented-entry-control.md).</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="configure-account-structures.md" target-language="pl-PL">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>configure-account-structures.6e0715.5fbd4b34d09b4ba8e1d34234c8e32268bba18778.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>5fbd4b34d09b4ba8e1d34234c8e32268bba18778</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>aec1dcd44274e9b8d0770836598fde5533b7b569</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>06/03/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\general-ledger\configure-account-structures.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Configure account structures</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skonfiguruj strukturę konta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information about account structures and financial dimensions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ten temat zawiera informacje dotyczące struktury kont i wymiarów finansowych.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Configure account structures</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skonfiguruj strukturę konta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Account structures use the main account and financial dimensions to create a set of rules that determine the order and values used when entering the account number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Struktury kont wykorzystują konto główne i wymiary finansowe do tworzenie zestawu reguł, które określają kolejność i wartości używane podczas wprowadzania numeru konta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>You can set up as many account structures as you need for your business.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Można stworzyć dowolną liczbę struktur kont potrzebnych w firmie.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>The account structures are assigned to a company’s ledger setup, so they can be shared.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Struktury konta są przypisywane do ustawień księgi firmy, więc mogą być współużytkowane.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>When creating an account structure, the maximum number of segments is 11.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podczas tworzenia struktury konta maksymalna liczba segmentów to 11.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>If you need more segments than this, thoroughly evaluate your setup and requirements, as it will impact the user experience.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli potrzebujesz jeszcze więcej segmentów, kompleksowo oceń swoją konfigurację i wymagania, ponieważ wpłynie to na środowisko obsługi użytkowników.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Consider if a segment could be derived in a reporting scenario using a hierarchy instead of during data entry, or by using a user-defined field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Należy wziąć pod uwagę, czy można utworzyć segment pochodny w scenariuszu raportowania przy użyciu hierarchii, a nie podczas wprowadzania danych, lub za pomocą pola zdefiniowane przez użytkownika.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>For example, if you want to report on location, but you can figure location by department or cost center, you would not need location as a financial dimension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład jeśli chcesz raportować z lokalizacji, ale nie można ustalić działu lub centrum kosztów, w którym znajduje się lokalizacja, nie potrzebujesz lokalizacji jako wymiaru finansowego.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>If after evaluation you do determine more than 11 segments are needed, you can add additional segments using advanced rules.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli po ocenie stwierdzisz, że potrzeba więcej niż 11 segmentów, można dodać kolejne segmenty za pomocą reguł zaawansowanych.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Account structures require the main account.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Struktury kont wymagają konta głównego.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The main account does not need to be the first segment in the structure, but it does identify what account structure is being used during the account number entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto główne nie musi być pierwszym segmentem w strukturze, ale wskazuje, jaka struktura konta jest używana podczas wprowadzania numeru konta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Because of this, a main account value can only exist in one structure assigned to the ledger so that they do not overlap.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W związku z tym wartości konta głównego może istnieć tylko w jednej strukturze przypisanej do księgi, tak aby wartości nie zachodziły na siebie.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>After the account structure is identified, the allowed values list is filtered to guide the user through picking only valid dimension values, decreasing the possibility of an incorrect journal entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po zidentyfikowaniu struktury konta zostanie wyfiltrowana lista dozwolonych wartości, pozwalając użytkownikowi wybierać tylko prawidłowe wartości wymiarów i w ten sposób zmniejszając ryzyko dokonania błędnego wpisu w arkuszu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>If you plan to budget against a financial dimension, it will need to be part of an account structure.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli masz zamiar budżetować względem wymiaru finansowego, musi on być częścią struktury konta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Budgeting does not currently utilize advanced rules.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obecnie mechanizm budżetowania nie korzysta z reguł zaawansowanych.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przykład</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>To illustrate a best practice for setting up an account structure, let's assume that a company wants to track their balance sheet accounts (100000..399999) at the account and business unit financial dimension level.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby zilustrować najlepszy sposób konfigurowania struktury konta, załóżmy, że firma chce śledzić konta bilansowe (100000..399999) na poziomie konta i wymiaru finansowego jednostki biznesowej.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>For revenue and expense accounts (400000..999999), they track financial dimensions Business Unit, Department, and Cost center.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dla kont przychodów i wydatków (400000..999999) śledzi wymiary finansowe Jednostka biznesowa, Dział i Centrum kosztów.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>If they make a sale, they also like to track Customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli coś sprzeda, chce również śledzić odbiorcę.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Using this scenario, it would be recommended to have two account structures assigned to the company’s ledger - one for Balance sheet accounts, and one for Profit and Loss accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W czasie używania tego scenariusza, zalecane jest posiadanie dwóch struktur kont przypisanych do księgi firmy — jeden dla kont bilansowych, a drugi dla rachunków zysków i strat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>To optimize the user experience and validation, Customer should be an advanced rule that is only used when a sales account is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby zoptymalizować czynności użytkownika i sprawdzanie poprawności, Odbiorca powinien być regułą zaawansowaną, która jest używana tylko w przypadku użycia konta sprzedaży.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source><bpt id="p1">**</bpt>Balance sheet account structure<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Struktura konta bilansowego<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Main account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto główne</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Business unit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jednostka biznesowa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>100000..399999</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">100000..399999</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>*;” “</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">*;” “</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">**</bpt>Profit and loss account structure<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Struktura konta wynikowego<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Main account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto główne</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Business unit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jednostka biznesowa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Department</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dział</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Cost center</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Centrum kosztu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>400000..999999</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">400000..999999</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>*;” “</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">*;” “</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>*;” “</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">*;” “</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>*;” “</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">*;” “</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>*;” “</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">*;” “</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source><bpt id="p1">**</bpt>Advanced rule for adding a Customer<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Zaawansowana reguła dodawania odbiorcy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Criteria: Where Main account is between 400000 and 499999, then add customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kryteria: Gdy konto główne mieści się w zakresie id 400000 do 499999, należy dodać odbiorcę.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>It cannot be left blank.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nie może pozostać puste.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odbiorca</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>In this simplified example, all values and blank are allowed so * and “ “ are used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym uproszczonym przykładzie są dozwolone wszystkie wartości i puste pole, więc są używane symbole * i „ ”.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Segments and allowed values</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Segmenty i dozwolone wartości</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>The <bpt id="p1">**</bpt>Segments<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Allowed values details<ept id="p2">**</ept> section provides a grid like experience for entering the rules that will be followed on validation during posting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sekcje <bpt id="p1">**</bpt>Segmenty<ept id="p1">**</ept> i <bpt id="p2">**</bpt>Szczegóły dozwolonych wartości<ept id="p2">**</ept> zawierają siatkę umożliwiającą wprowadzanie reguł, które będą egzekwowane podczas sprawdzania poprawności w trakcie księgowania.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>You can type directly in the cells in the grid, import it from Excel, or use the <bpt id="p1">**</bpt>Allowed value details<ept id="p1">**</ept> section to guide you through it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Można wprowadzać tekst bezpośrednio w komórkach siatki, zaimportować go z programu Excel lub użyć sekcji <bpt id="p1">**</bpt>Szczegóły wartości dozwolonych<ept id="p1">**</ept> w celu otrzymania wskazówek wypełniania.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>The <bpt id="p1">**</bpt>Allowed value details<ept id="p1">**</ept> section guides you through creating criteria using <bpt id="p2">**</bpt>Operators<ept id="p2">**</ept> such as begins with, is between, includes, and many others.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Opcje w sekcji <bpt id="p1">**</bpt>Szczegóły dozwolonych wartości<ept id="p1">**</ept> prowadzą użytkownika przez proces tworzenia kryteriów za pomocą elementów <bpt id="p2">**</bpt>Operatory<ept id="p2">**</ept>, takich jak „zaczyna się od”, „zawiera się między”, „zawiera” itd.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Allow values<ept id="p1">](./media/account.png)](./media/account.png)</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Dozwolone wartości<ept id="p1">](./media/account.png)](./media/account.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Allowed values will default onto a journal or accounting distribution entry page when there are no other possible values to select according to the account structure setup.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Dozwolone wartości będą domyślne na stronie wprowadzania arkusza lub zasad podziału księgowań, jeśli nie istnieją inne wartości, które można wybrać zgodnie z ustawieniami struktury konta.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Here's an example of the <bpt id="p1">**</bpt>Profit and loss account structure<ept id="p1">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Oto przykład <bpt id="p1">**</bpt>struktury konta wynikowego<ept id="p1">**</ept>.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Main account</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Konto główne</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Business unit</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Jednostka biznesowa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Department</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dział</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Cost center</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">MPK</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>400000..999999</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">400000..999999</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>002</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>022</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">022</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>014</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">014</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>When entering a journal and selecting an account in the profit and loss range, selecting business unit '002' will cause values 022 and 014 to be the default on the account control.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Podczas wprowadzania arkusza i wybierania konta w zakresie wyników wybranie jednostki biznesowej „002” spowoduje, że wartości 022 i 014 będą domyślne w formancie konta.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>This behavior will also occur with the accounting distribution page.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Takie zachowanie będzie również występowało na stronie zasady podziału księgowań.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>More than 7 criteria needed</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Potrzebna więcej niż 7 kryteriów</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>If you have more than 7 criteria that are needed, you can continue adding them on the next line.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Jeśli potrzebujesz więcej niż 7 kryteriów, możesz je dodać w następnym wierszu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>You will notice when working in the <bpt id="p1">**</bpt>Allowed value details<ept id="p1">**</ept> section that the <bpt id="p2">**</bpt>+Add new<ept id="p2">**</ept> criteria is nt longer active after the seventh criteria is entered.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podczas pracy w sekcji <bpt id="p1">**</bpt>Szczegóły wartości dozwolonych<ept id="p1">**</ept>, że po wprowadzeniu siódmego kryterium nie jest już aktywne pole dodawania kryteriów <bpt id="p2">**</bpt>+Dodaj nowe<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>This is due to many factors such as:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jest to spowodowane wieloma czynnikami takimi jak:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Column width</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szerokość kolumny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>How the data is stored</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sposób przechowywania danych</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Performance of the <bpt id="p1">**</bpt>Allowed value details<ept id="p1">**</ept> control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Działanie formantu <bpt id="p1">**</bpt>Szczegóły dozwolonych wartości<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Usability</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zdatność</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>To continue to add additional criteria, click <bpt id="p1">**</bpt>Duplicate in the Segment<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Allowed values section<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby kontynuować dodawanie dodatkowych kryteriów, kliknij przycisk <bpt id="p1">**</bpt>Duplikuj segment<ept id="p1">**</ept> i <bpt id="p2">**</bpt>Sekcja dozwolonych wartości<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>This will copy the criteria to a new line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Spowoduje to skopiowanie kryteriów do nowego wiersza.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>You can then type over or modify the <bpt id="p1">**</bpt>Allowed value details<ept id="p1">**</ept> section.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Można następnie nadpisać lub zmodyfikować sekcję <bpt id="p1">**</bpt>Szczegóły wartości dozwolonych<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Best practices</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Najlepsze praktyki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>When setting up your account structures there are some best practices you can follow.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Podczas konfigurowania struktur kont zaleca się przestrzeganie pewnych najlepszych praktyk.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>However, this is only guidance so a holistic discussion about your business, growth plan, and maintenance plan should be considered as part of that discussion.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jednak jest to tylko wskazówka, a całościowa dyskusja powinna uwzględniać kwestie sytuacji firmy, planu rozwoju i planu konserwacji.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Make main account first or as close to the front of the account structure as possible, so users get the best guided experience they can during account entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utwórz konto główne najpierw lub umieść je jak najbliżej z przodu struktury konta, tak aby podczas dokonywania zapisów na koncie użytkownicy byli najlepiej kierowani przez kolejne etapy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Reuse account structures as much as possible to reduce maintenance across your legal entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W jak największym stopniu wykorzystuj istniejące struktury kont, aby uprościć zarządzanie we wszystkich firmach.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>For variations across legal entities, consider using advanced rules so that account structures can be reused.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dla odmian istniejących w różnych firmach należy rozważyć używanie reguł zaawansowanych, tak aby wykorzystywać istniejące struktury konta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>When defining allowed values, use ranges and wildcards as much as possible.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podczas definiowania dozwolonych wartości, należy użyć jak najwięcej zakresów i symboli wieloznacznych.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>This not only allows you to grow and change without maintenance, but the system also performs more ideally with this configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nie tylko umożliwia to wzrost i zmianę bez obsługi technicznej, ale system również działa lepiej w tej konfiguracji.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Do not just put an asterisk for every segment in the account structure and then solely rely on the advanced rules.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nie ograniczaj się tylko do umieszczenia gwiazdki obok każdego segmentu w strukturze konta, a następnie nie polegaj wyłącznie na regułach zaawansowanych.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>This can be difficult to manage and often leads to user error during maintenance that can make the system unable to post.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Może to być trudne do zarządzania i często prowadzi do błędów użytkownika podczas obsługi technicznej, co może powodować niemożność zaksięgowania przez system.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Account structure activation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktywacja struktury konta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>When you are satifisfied with your new setup or a change to an account structure, you must activate it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli nowe ustawienie lub zmiana struktury konta została zakończona, należy je aktywować.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli struktura konta jest przypisana do księgi, ten proces aktywacji może potrwać bardzo długo, ponieważ wszystkie niezaksięgowane transakcje w systemie muszą zostać zsynchronizowane z nową strukturą.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Posted transactions are not impacted with account structure changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zmiany struktury konta nie mają wpływu na zaksięgowane transakcje.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>For more information, see <bpt id="p1">[</bpt>Plan your chart of accounts<ept id="p1">](plan-chart-of-accounts.md)</ept>, <bpt id="p2">[</bpt>Financial dimensions<ept id="p2">](financial-dimensions.md)</ept> and <bpt id="p3">[</bpt>Enter account and dimension combinations (segmented entry control)<ept id="p3">](enter-account-dimension-combinations-segmented-entry-control.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby uzyskać więcej informacji, zobacz <bpt id="p1">[</bpt>Planowanie planu kont<ept id="p1">](plan-chart-of-accounts.md)</ept>, <bpt id="p2">[</bpt>Wymiary finansowe<ept id="p2">](financial-dimensions.md)</ept> i <bpt id="p3">[</bpt>Wpisywanie kombinacji wymiarów i kont (formant Wpis podzielony na segmenty)<ept id="p3">](enter-account-dimension-combinations-segmented-entry-control.md)</ept>.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
