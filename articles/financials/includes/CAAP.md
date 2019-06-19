@@ -1,24 +1,2 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="CAAP.md" target-language="pl-PL">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>CAAP.4052a7.cb3cb01109afb0b6243592eb54bfdfa0f4ead54b.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>cb3cb01109afb0b6243592eb54bfdfa0f4ead54b</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\includes\CAAP.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101">
-          <source>Some enhancements noted in this topic are available to targeted users who have opted in to the Continuous Auto-update Advantage Program (CAAP) for platform updates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niektóre ulepszenia wymienione w tym temacie są dostępne dla wybranych użytkowników, którzy biorą udział w programie Continuous Auto-update Advantage Program (CAAP) dotyczącym aktualizacji platformy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102">
-          <source>For more information about standard and targeted releases, see <bpt id="p1">[</bpt>Standard and targeted platform releases<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby uzyskać więcej informacji dotyczących wydań standardowych i kierowanych, zobacz <bpt id="p1">[</bpt>Standardowe i kierowane wydania platformy<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+> [!IMPORTANT]
+> <span data-ttu-id="e1c1d-101">Niektóre ulepszenia wymienione w tym temacie są dostępne dla wybranych użytkowników, którzy biorą udział w programie Continuous Auto-update Advantage Program (CAAP) dotyczącym aktualizacji platformy.</span><span class="sxs-lookup"><span data-stu-id="e1c1d-101">Some enhancements noted in this topic are available to targeted users who have opted in to the Continuous Auto-update Advantage Program (CAAP) for platform updates.</span></span> <span data-ttu-id="e1c1d-102">Aby uzyskać więcej informacji dotyczących wydań standardowych i kierowanych, zobacz [Standardowe i kierowane wydania platformy](../../fin-and-ops/get-started/public-preview-releases.md).</span><span class="sxs-lookup"><span data-stu-id="e1c1d-102">For more information about standard and targeted releases, see [Standard and targeted platform releases](../../fin-and-ops/get-started/public-preview-releases.md).</span></span>

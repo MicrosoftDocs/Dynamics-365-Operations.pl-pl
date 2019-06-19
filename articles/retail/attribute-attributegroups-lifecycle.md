@@ -1,699 +1,258 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="attribute-attributegroups-lifecycle.md" target-language="pl-PL">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>attribute-attributegroups-lifecycle.90dcb9.7c722c311048258ce75170ac4276d397fe2828fe.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>7c722c311048258ce75170ac4276d397fe2828fe</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>e2fb0846fcc6298050a0ec82c302e5eb5254e0b5</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/27/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\attribute-attributegroups-lifecycle.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Attributes and attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atrybuty i grupy atrybutów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym temacie opisano, jak za pomocą atrybutów stworzyć możliwość opisywania produktu i jego cech za pomocą pól definiowanych przez użytkownika.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Attributes and attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atrybuty i grupy atrybutów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source><bpt id="p1">*</bpt>Attributes<ept id="p1">*</ept> provide a way to further describe a product and its characteristics through user-defined fields (such as <bpt id="p2">**</bpt>Memory size<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Hard disk capacity<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Is Energy star compliant<ept id="p4">**</ept>, and so on).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>Atrybuty<ept id="p1">*</ept> umożliwiają dokładniejsze opisanie produktu i jego właściwości za pomocą pól zdefiniowanych przez użytkownika (takich jak <bpt id="p2">**</bpt>Rozmiar pamięci<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Pojemność dysku twardego<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Zgodność z normą Energy Star<ept id="p4">**</ept> i tak dalej).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>In Microsoft Dynamics 365 for Finance and Operations, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W Microsoft Dynamics 365 for Finance and Operations atrybuty można skojarzyć z różnymi jednostkami sprzedaży detalicznej, takimi jak kategorie produktu i kanały handlu detalicznego oraz ustawić ich wartości domyślne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Products then inherit the attributes and the default values when they are associated with the product categories or retail channels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wtedy produkty dziedziczą atrybuty i wartości domyślne, gdy zostaną powiązane z kategoriami produktów lub kanałami sprzedaży detalicznej.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wartości domyślne można zastąpić na poziomie poszczególnych produktów, na poziomie kanału sprzedaży detalicznej lub w katalogu sieci sprzedaży.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>For example, a typical television product might have the following attributes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład typowy produkt w postaci telewizora może mieć następujące atrybuty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Category</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kategoria</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Attribute</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atrybut</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Permissible values</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Możliwe wartości</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Default value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wartość domyślna</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>TV &amp; Video</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Telewizja i wideo</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Brand</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Marka</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Any valid brand value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dowolna prawidłowa nazwa marki</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>None</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">None</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>TV</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TELEWIZJA</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Screen Size</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozmiar ekranu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>20–80 inches</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">20–80 cali</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>None</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">None</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Vertical Resolution</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozdzielczość w pionie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>480i, 720p, 1080i, or 1080p</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">480i, 720p, 1080i, lub 1080p</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>1080p</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1080p</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Screen Refresh Rate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Częstotliwość odświeżania ekranu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>60hz, 120hz, or 240hz</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">60hz, 120hz, lub 240hz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>60hz</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">60hz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>HDMI Inputs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wejścia HDMI</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>0–10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0–10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>DVI Inputs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wejścia DVI</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>0–10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0–10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Composite Inputs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wejście kompozytowe</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>0–10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0–10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Component Inputs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wejścia komponentów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>0–10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0–10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>LCD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>3D Ready</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3D Ready</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Yes or No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tak lub Nie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tak</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>3D Enabled</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsługa 3D</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Yes or No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tak lub Nie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nr</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Plasma</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Plazmowy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Operating Temp From</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Minimalna temperatura</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>32–110 degrees</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">32–110 stopni</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>32</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">32</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Operating Temp To</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksymalna temperatura</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>32–110 degrees</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">32–110 stopni</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>100</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">100</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Projection</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Projekcyjny</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Projection Tube Warranty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gwarancja na lampę kineskopową</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>6, 12, or 18 months</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6, 12 lub 18 miesięcy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source><ph id="ph1">\#</ph> of Projection Tubes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\#</ph> lamp kineskopowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>1–5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1–5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Attributes and attribute types</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atrybuty i typy atrybutów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Attributes are based on <bpt id="p1">*</bpt>attribute types<ept id="p1">*</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atrybuty są oparte na <bpt id="p1">*</bpt>typach atrybutów<ept id="p1">*</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>The attribute type identifies the type of data that can be entered for a specific attribute.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ atrybutu określa typ danych, które można wprowadzić dla określonego atrybutu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Finance and Operations currently supports the following attribute types:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obecnie program Finance and Operations obsługuje następujące typy atrybutów:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source><bpt id="p1">**</bpt>Currency<ept id="p1">**</ept> – This type supports a currency value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Waluta<ept id="p1">**</ept> — ten typ obsługuje wartości waluty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>It can be bounded (that is, it can support a range of values), or it can be left open.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Może być ograniczony (czyli obsługuje zakres wartości) lub może pozostać otwarty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source><bpt id="p1">**</bpt>DateTime<ept id="p1">**</ept> – This type supports a date and time value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Data i godzina<ept id="p1">**</ept> — ten typ obsługuje wartości daty i godziny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>It can be bounded or left open.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Może być ograniczony lub pozostać otwarty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source><bpt id="p1">**</bpt>Decimal<ept id="p1">**</ept> – This type supports a numerical value that includes decimal places.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dziesiętna<ept id="p1">**</ept> — ten typ obsługuje wartości liczbowe, które zawierają miejsca dziesiętne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>It also supports a unit of measure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsługuje również jednostki miary.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>It can be bounded or left open.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Może być ograniczony lub pozostać otwarty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source><bpt id="p1">**</bpt>Integer<ept id="p1">**</ept> – This type supports a numerical value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Całkowita<ept id="p1">**</ept> — ten typ obsługuje wartości liczbowe.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>It also supports a unit of measure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsługuje również jednostki miary.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>It can be bounded or left open.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Może być ograniczony lub pozostać otwarty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source><bpt id="p1">**</bpt>Text<ept id="p1">**</ept> – This type supports a text value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tekst<ept id="p1">**</ept> — ten typ obsługuje wartości tekstowe.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>It also supports a predefined set of possible values (that is, an <bpt id="p1">*</bpt>enumeration<ept id="p1">*</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsługuje również wstępnie zdefiniowany zestaw możliwych wartości (tzn. <bpt id="p1">*</bpt>elementy stałotekstowe<ept id="p1">*</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source><bpt id="p1">**</bpt>Boolean<ept id="p1">**</ept> – This type supports a binary value (<bpt id="p2">**</bpt>true<ept id="p2">**</ept> or <bpt id="p3">**</bpt>false<ept id="p3">**</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Logiczna<ept id="p1">**</ept> — ten typ obsługuje wartości binarne (<bpt id="p2">**</bpt>prawda<ept id="p2">**</ept> lub <bpt id="p3">**</bpt>fałsz<ept id="p3">**</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source><bpt id="p1">**</bpt>Reference<ept id="p1">**</ept> – This type references other attributes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Odwołanie<ept id="p1">**</ept> — ten typ odwołuje się do innych atrybutów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Set up attribute types in Finance and Operations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurowanie typów atrybutów w programie Finance and Operations</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Sign in to the Finance and Operations back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaloguj się na kliencie narzędzi zaplecza programu Finance and Operations jako kierownik ds. merchandisingu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Go to <bpt id="p1">**</bpt>Product information management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Categories and attributes<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Attribute types<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Zarządzanie informacjami o produktach<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Ustawienia<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kategorie i atrybuty<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Typy atrybutów<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Create two attribute types of the <bpt id="p1">**</bpt>Text<ept id="p1">**</ept> type, set the <bpt id="p2">**</bpt>Fixed list<ept id="p2">**</ept> option to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>, and then add a list of values:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utwórz dwa typy atrybutów o typie <bpt id="p1">**</bpt>Tekst<ept id="p1">**</ept>, w opcji <bpt id="p2">**</bpt>Stała lista<ept id="p2">**</ept> zaznacz wartość <bpt id="p3">**</bpt>Tak<ept id="p3">**</ept>, a następnie dodaj listę wartości:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Name one attribute type <bpt id="p1">**</bpt>Lens shape<ept id="p1">**</ept>, and add the following values: <bpt id="p2">**</bpt>Oval<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Square<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Rectangle<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nazwij jeden typ atrybutu <bpt id="p1">**</bpt>Kształt soczewek<ept id="p1">**</ept> i dodaj następujące wartości: <bpt id="p2">**</bpt>Owal<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Kwadrat<ept id="p3">**</ept> i <bpt id="p4">**</bpt>Prostokąt<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Name the other attribute type <bpt id="p1">**</bpt>Sunglass brand<ept id="p1">**</ept>, and add the following values: <bpt id="p2">**</bpt>Ray ban<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Aviator<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Oakley<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nazwij drugi typ atrybutu <bpt id="p1">**</bpt>Marka okularów przeciwsłonecznych<ept id="p1">**</ept> i dodaj następujące wartości: <bpt id="p2">**</bpt>Ray ban<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Aviator<ept id="p3">**</ept> i <bpt id="p4">**</bpt>Oakley<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Attribute types</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typy atrybutów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Set up an attribute in Finance and Operations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurowanie atrybutu w programie Finance and Operations</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Go to <bpt id="p1">**</bpt>Product information management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Categories and attributes<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Attributes<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Zarządzanie informacjami o produktach<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Ustawienia<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kategorie i atrybuty<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Atrybuty<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Create an attribute that is named <bpt id="p1">**</bpt>Lens<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utwórz atrybut o nazwie <bpt id="p1">**</bpt>Soczewki<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Set the <bpt id="p1">**</bpt>Attribute type<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Lens shape<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W polu <bpt id="p1">**</bpt>Typ atrybutu<ept id="p1">**</ept> ustaw wartość <bpt id="p2">**</bpt>Kształt soczewek<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atrybuty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Attribute metadata</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metadane atrybutu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source><bpt id="p1">*</bpt>Attribute metadata<ept id="p1">*</ept> lets you select options to specify how the attributes for each product should behave.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>Metadane atrybutów<ept id="p1">*</ept> umożliwiają wybranie opcji określających, jak mają się zachować atrybuty każdego produktu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>For example, you can specify whether attributes are required, whether they can be used for searches, and whether they can be used as a filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Można na przykład wskazać, czy atrybuty są wymagane, czy mogą być używana w wyszukiwaniach i czy można ich używać jako filtrów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>For retail products, the attribute metadata settings can be overridden at the channel level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dla produktów sieci sprzedaży ustawienia metadanych atrybutów mogą być zastępowane na poziomie kanału.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>This capability will be discussed later in this topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ta funkcjonalność zostanie omówiona w dalszej części tego tematu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>As you might notice, the <bpt id="p1">**</bpt>Attributes<ept id="p1">**</ept> page includes options that are related to attribute metadata.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jak można zauważyć, strona <bpt id="p1">**</bpt>Atrybuty<ept id="p1">**</ept> zawiera opcje powiązane z metadanymi atrybutów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Under <bpt id="p1">**</bpt>Attribute metadata for POS<ept id="p1">**</ept>, one option that is named <bpt id="p2">**</bpt>Can be refined<ept id="p2">**</ept> affects the behavior of the attribute values in the retail point of sale (POS) or the way that the system handles those attribute values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W obszarze <bpt id="p1">**</bpt>Metadane atrybutów aplikacji POS<ept id="p1">**</ept> opcja o nazwie <bpt id="p2">**</bpt>Może być doprecyzowany<ept id="p2">**</ept> wpływa na zachowanie wartości atrybutów w aplikacji Retail POS oraz na sposób obsługi tych wartości atrybutów przez system.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Only attributes for which you may set the <bpt id="p1">**</bpt>Can be refined<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>, will show up for refinement or filtering of products in the retail POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tylko atrybuty, dla których w opcji <bpt id="p1">**</bpt>Może być doprecyzowany<ept id="p1">**</ept> można ustawić wartość <bpt id="p2">**</bpt>Tak<ept id="p2">**</ept>, będą wyświetlane w aplikacji Retail POS dla operacji doprecyzowywania i filtrowania produktów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Here are the remaining attribute metadata options on the <bpt id="p1">**</bpt>Attributes<ept id="p1">**</ept> page:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poniżej przedstawiono pozostałe opcje metadanych atrybutów dostępne na stronie <bpt id="p1">**</bpt>Atrybuty<ept id="p1">**</ept>:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Searchable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Z możliwością wyszukiwania</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Retrievable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Z możliwością pobierania</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Can be queried</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Może być przedmiotem kwerendy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Sortable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Z możliwością sortowania</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Allow multiple values</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zezwalaj na wiele wartości</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Ignore case and format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ignorowanie wielkości liter i formatu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Complete match</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pełne dopasowanie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>These options were originally intended to improve the search functionality for the online storefront.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Te opcje były pierwotnie przeznaczone do poprawy funkcji wyszukiwania w sklepach internetowych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Although Finance and Operations doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Co prawda program Finance and Operations nie zawiera w standardzie funkcjonalności sklepu internetowego, ale obejmuje zestaw SDK do publikowania dla handlu elektronicznego.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Customers can use this SDK to put products into a search index of their choice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odbiorcy mogą używać tego zestawu SDK do wprowadzania produktów do dowolnych indeksów wyszukiwania.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Although the product data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mimo iż dane produktów są importowane, odbiorcy nadal powinni być w stanie odróżniać dane, które można przeszukiwać, na których można wykonywać zapytania itd.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>In that way, they can build an optimal index to make sure that they index only attributes that, <bpt id="p1">*</bpt>in their opinion<ept id="p1">*</ept>, should be indexed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W ten sposób mogą zbudować optymalny indeks obejmujący tylko atrybuty, które <bpt id="p1">*</bpt>w ich opinii<ept id="p1">*</ept> powinny być indeksowane.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>For information about the purpose of these remaining options, see <bpt id="p1">[</bpt>Overview of the search schema in SharePoint Server 2013<ept id="p1">](https://technet.microsoft.com/library/jj219669.aspx)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby uzyskać więcej informacje o przeznaczeniu tych pozostałych opcji, zobacz <bpt id="p1">[</bpt>Omówienie schematu wyszukiwania w programie SharePoint Server 2013<ept id="p1">](https://technet.microsoft.com/library/jj219669.aspx)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Filter settings for attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ustawienia filtrów atrybutów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Filter settings for attributes let you define how the filters for attributes are shown in the retail POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ustawienia filtrów atrybutów pozwalają określić sposób wyświetlania filtrów atrybutów w aplikacji Retail POS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>To access the filter settings for an attribute, on the <bpt id="p1">**</bpt>Attributes<ept id="p1">**</ept> page in Finance and Operations, select the attribute, and then, on the Action Pane, select <bpt id="p2">**</bpt>Filter settings<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby uzyskać dostęp do ustawień filtrów atrybutów, w programie Finance and Operations na stronie <bpt id="p1">**</bpt>Atrybuty<ept id="p1">**</ept> zaznacz atrybut, a następnie w okienku akcji wybierz opcję <bpt id="p2">**</bpt>Ustawienia filtra<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>The <bpt id="p1">**</bpt>Filter display preferences<ept id="p1">**</ept> page includes the following fields:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona <bpt id="p1">**</bpt>Preferencje wyświetlania filtra<ept id="p1">**</ept> zawiera następujące pola:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source><bpt id="p1">**</bpt>Name<ept id="p1">**</ept> – By default, this field is set to the name of the attribute.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nazwa<ept id="p1">**</ept> — to pole jest domyślnie ustawione na nazwę atrybutu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>However, you can change the value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Można jednak zmienić jego wartość.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source><bpt id="p1">**</bpt>Display option<ept id="p1">**</ept> – The following options are available:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Opcja wyświetlania<ept id="p1">**</ept> — dostępne są następujące opcje:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source><bpt id="p1">**</bpt>Single value<ept id="p1">**</ept> – This option is available for the following attribute types: <bpt id="p2">**</bpt>Boolean<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Currency<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Decimal<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Integer<ept id="p5">**</ept>, and <bpt id="p6">**</bpt>Text<ept id="p6">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Jedna wartość<ept id="p1">**</ept> — ta opcja jest dostępna dla następujących typów atrybutów: <bpt id="p2">**</bpt>Logiczna<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Waluta<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Dziesiętna<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Całkowita<ept id="p5">**</ept> i <bpt id="p6">**</bpt>Tekst<ept id="p6">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>This option enables single value selection for these attributes in the client for refinement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ta opcja umożliwia wybór jednej wartości dla tych atrybutów na kliencie w celu doprecyzowania.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source><bpt id="p1">**</bpt>Multi value<ept id="p1">**</ept> – This option is available for the following attribute types: <bpt id="p2">**</bpt>Currency<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Decimal<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Integer<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>Text<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Wiele wartości<ept id="p1">**</ept> — ta opcja jest dostępna dla następujących typów atrybutów: <bpt id="p2">**</bpt>Waluta<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Dziesiętna<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Całkowita<ept id="p4">**</ept> i <bpt id="p5">**</bpt>Tekst<ept id="p5">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>This option enables multi-value selection for this attribute in the client for refinement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ta opcja umożliwia wybór wielu wartości dla tego atrybutu na kliencie w celu doprecyzowania.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source><bpt id="p1">**</bpt>Display control<ept id="p1">**</ept> – The following options are available:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Sterowanie wyświetlaniem<ept id="p1">**</ept> — dostępne są następujące opcje:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source><bpt id="p1">**</bpt>List<ept id="p1">**</ept> – This option is available for the all attribute types.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Lista<ept id="p1">**</ept> — ta opcja jest dostępna dla wszystkich typów atrybutów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source><bpt id="p1">**</bpt>Range<ept id="p1">**</ept> – This option is available for the following attribute types: <bpt id="p2">**</bpt>Currency<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Decimal<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Integer<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Zakres<ept id="p1">**</ept> — ta opcja jest dostępna dla następujących typów atrybutów: <bpt id="p2">**</bpt>Waluta<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Dziesiętna<ept id="p3">**</ept> i <bpt id="p4">**</bpt>Całkowita<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source><bpt id="p1">**</bpt>Slider<ept id="p1">**</ept> – This option is available for the following attribute types: <bpt id="p2">**</bpt>Currency<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Decimal<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Integer<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Suwak<ept id="p1">**</ept> — ta opcja jest dostępna dla następujących typów atrybutów: <bpt id="p2">**</bpt>Waluta<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Dziesiętna<ept id="p3">**</ept> i <bpt id="p4">**</bpt>Całkowita<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source><bpt id="p1">**</bpt>Slider with bars<ept id="p1">**</ept> – This option is available for the following attribute types: <bpt id="p2">**</bpt>Currency<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Decimal<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Integer<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Suwak z paskami<ept id="p1">**</ept> — ta opcja jest dostępna dla następujących typów atrybutów: <bpt id="p2">**</bpt>Waluta<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Dziesiętna<ept id="p3">**</ept> i <bpt id="p4">**</bpt>Całkowita<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source><bpt id="p1">**</bpt>Threshold value<ept id="p1">**</ept> – This setting is required if you selected <bpt id="p2">**</bpt>Range<ept id="p2">**</ept> as the display control type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Wartość progowa<ept id="p1">**</ept> — to ustawienie jest wymagane, jeśli jako typ sterowania wyświetlaniem wybrano opcję <bpt id="p2">**</bpt>Zakres<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>You can define values by using a semicolon (;) as a delimiter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W celu zdefiniowania wartości można użyć średnika (;) jako separatora.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>For example, for the filter like <bpt id="p1">**</bpt>Bag Volume<ept id="p1">**</ept>, a threshold value can be <bpt id="p2">**</bpt>10; 20; 50; 100; 200; 500; 1000; 5000<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład dla filtra takiego jak <bpt id="p1">**</bpt>Objętości worka<ept id="p1">**</ept> pole wartości progowej może zawierać wartości <bpt id="p2">**</bpt>10; 20; 50; 100; 200; 500; 1000; 5000<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>In this case, the retail POS will show the following ranges.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym przypadku w aplikacji Retail POS będą wyświetlane następujące zakresy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Any ranges that don't have any products in the result set will appear dimmed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wszystkie zakresy, które w zbiorze wyników nie mają żadnych produktów, będą wyświetlane jako wygaszone.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Less than 10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mniej niż 10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>10 – 20</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10 – 20</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>20 – 50</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">20 – 50</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>50 – 100</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">50 – 100</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>100 – 200</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">100 – 200</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>200 – 500</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">200 – 500</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>500 or more</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ponad 500</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Attribute filter settings</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ustawienia filtrów atrybutów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grupy atrybutów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>After attributes have been defined, they can be assigned to attribute groups.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po zdefiniowaniu atrybutów można je przypisać do grup atrybutów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>An <bpt id="p1">*</bpt>attribute group<ept id="p1">*</ept> is used to group the individual attributes for a component or subcomponent in a product configuration model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>Grupa atrybutów<ept id="p1">*</ept> jest używana do grupowania indywidualnych atrybutów składnika lub podskładnika w modelu konfiguracji produktu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>An attribute can be included in more than one attribute group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ten sam atrybut można dołączyć do więcej niż jednej grupy atrybutów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Attribute groups can help users configure products, because the various selections are arranged in a specific context.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grupy atrybutów mogą pomóc użytkownikom konfigurować produkty, ponieważ różne opcje wyboru są rozmieszczane w określonym kontekście.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>Attribute groups can be assigned to retail categories or retail channels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grupy atrybutów można przypisywać do kategorii sieci sprzedaży i kanałów sprzedaży detalicznej.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>You can also set default values for attributes that are included in an attribute group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Można również ustawić domyślne wartości dla atrybutów dołączonych do grupy atrybutów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>For example, you add an attribute for color to an attribute group and select <bpt id="p1">**</bpt>Blue<ept id="p1">**</ept> as the default attribute value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład do grupy atrybutów można dodać atrybut koloru oraz wybrać <bpt id="p1">**</bpt>Niebieski<ept id="p1">**</ept> jako domyślną wartość atrybutu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>In this case, when the attribute group is added to a retail product that includes color as one of its attributes, <bpt id="p1">**</bpt>Blue<ept id="p1">**</ept> appears as the default color for that product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W takim przypadku po dodaniu grupy atrybutów do produktu sieci sprzedaży zawierającego kolor jako jeden z atrybutów wartość <bpt id="p1">**</bpt>Niebieski<ept id="p1">**</ept> będzie wyświetlana jako domyślny kolor tego produktu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grupy atrybutów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Create an attribute group</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tworzenie grup atrybutów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Go to <bpt id="p1">**</bpt>Product information management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Categories and attributes<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Attribute groups<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Zarządzanie informacjami o produktach<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Ustawienia<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kategorie i atrybuty<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Grupy atrybutów<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Create an attribute group that is named <bpt id="p1">**</bpt>Fashion Sunglasses<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utwórz grupę atrybutów o nazwie <bpt id="p1">**</bpt>Modne okulary przeciwsłoneczne<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Add the following attributes: <bpt id="p1">**</bpt>Lens shape<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Sunglass brand<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dodaj następujące atrybuty: <bpt id="p1">**</bpt>Kształt soczewek<ept id="p1">**</ept> i <bpt id="p2">**</bpt>Marka okularów przeciwsłonecznych<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Assign attribute groups to retail categories</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przypisywanie grup atrybutów do kategorii sieci sprzedaży</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>One or more attribute groups can be associated with category nodes in the following types of retail category hierarchies: Retail product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jedną lub więcej grup atrybutów można skojarzyć z węzłami kategorii w następujących typach hierarchii kategorii sieci sprzedaży: Hierarchia produktów sieci sprzedaży, Hierarchia kategorii nawigacji w kanale i Hierarchia uzupełniających kategorii produktów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Then, when products are categorized, they inherit the attributes that are included in the attribute groups.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wtedy gdy produkty będą kategoryzowane, odziedziczą atrybuty włączone do grup atrybutów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Retail product hierarchy – Product attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hierarchia produktów sieci sprzedaży — grupy atrybutów produktów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Follow these steps to assign attribute groups to categories in the Retail product hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wykonaj następujące kroki, aby przypisać grupy atrybutów do kategorii w hierarchii produktów sieci sprzedaży.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Category and product management<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail product hierarchy<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Handel detaliczny<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Zarządzanie kategoriami i produktami<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Hierarchia produktów sieci sprzedaży<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Select <bpt id="p1">**</bpt>Fashion navigation hierarchy<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz opcję <bpt id="p1">**</bpt>Hierarchia nawigacji Moda<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>Under <bpt id="p1">**</bpt>Menswear<ept id="p1">**</ept>, select the <bpt id="p2">**</bpt>Pants<ept id="p2">**</ept> category, and then, on the <bpt id="p3">**</bpt>Product attribute groups<ept id="p3">**</ept> FastTab, add an attribute group that is named <bpt id="p4">**</bpt>Men's belt<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W obszarze <bpt id="p1">**</bpt>Odzież męska<ept id="p1">**</ept> wybierz kategorię <bpt id="p2">**</bpt>Spodnie<ept id="p2">**</ept>, a następnie na skróconej karcie <bpt id="p3">**</bpt>Grupy atrybutów produktu<ept id="p3">**</ept> dodaj grupę atrybutów o nazwie <bpt id="p4">**</bpt>Pasek męski<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Select the <bpt id="p1">**</bpt>Fashion sunglasses<ept id="p1">**</ept> category, and verify the new attributes in the <bpt id="p2">**</bpt>Fashion Sunglasses<ept id="p2">**</ept> attribute group by selecting <bpt id="p3">**</bpt>View attributes<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaznacz kategorię <bpt id="p1">**</bpt>Modne okulary przeciwsłoneczne<ept id="p1">**</ept> i zweryfikuj nowe atrybuty w grupie atrybutów <bpt id="p2">**</bpt>Modne okulary przeciwsłoneczne<ept id="p2">**</ept>, wybierając opcję <bpt id="p3">**</bpt>Wyświetlenie atrybutów<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>The attribute group should show the new <bpt id="p1">**</bpt>Lens shape<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Sunglass brand<ept id="p2">**</ept> attributes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W grupie atrybutów powinny być teraz widoczne nowe atrybuty <bpt id="p1">**</bpt>Kształt soczewek<ept id="p1">**</ept> i <bpt id="p2">**</bpt>Marka okularów przeciwsłonecznych<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Under <bpt id="p1">**</bpt>Menswear<ept id="p1">**</ept>, select the <bpt id="p2">**</bpt>Pants<ept id="p2">**</ept> category, and verify the attributes for the <bpt id="p3">**</bpt>Men's belt<ept id="p3">**</ept> attribute group by selecting <bpt id="p4">**</bpt>View attributes<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W obszarze <bpt id="p1">**</bpt>Odzież męska<ept id="p1">**</ept> wybierz kategorię <bpt id="p2">**</bpt>Spodnie<ept id="p2">**</ept> i zweryfikuj atrybuty w grupie atrybutów <bpt id="p3">**</bpt>Pasek męski<ept id="p3">**</ept>, wybierając opcję <bpt id="p4">**</bpt>Wyświetlenie atrybutów<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>The attribute group should show the <bpt id="p1">**</bpt>Men's belt brand<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Belt fabric<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Belt size<ept id="p3">**</ept> attributes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W grupie atrybutów powinny być teraz widoczne atrybuty <bpt id="p1">**</bpt>Marka pasków męskich<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Tkanina paska<ept id="p2">**</ept> i <bpt id="p3">**</bpt>Rozmiar paska<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>This procedure can also be used to assign attribute groups to categories in the Channel navigation category hierarchy and the Supplemental product category hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tej procedury można również użyć w celu przypisania grup atrybutów do kategorii w hierarchiach Hierarchia kategorii nawigacji w kanale i Hierarchia uzupełniających kategorii produktów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>In step 2, use the following navigation paths:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W kroku 2 użyj następujących ścieżek nawigacji:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Retail <ph id="ph1">&amp;gt;</ph> Category and product management <ph id="ph2">&amp;gt;</ph> Channel navigation categories</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Sprzedaż detaliczna <ph id="ph1">&amp;gt;</ph> Zarządzanie kategoriami i produktami <ph id="ph2">&amp;gt;</ph> Kategorie nawigacji kanału</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>Retail <ph id="ph1">&amp;gt;</ph> Category and product management <ph id="ph2">&amp;gt;</ph> Supplemental product categories</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Sprzedaż detaliczna <ph id="ph1">&amp;gt;</ph> Zarządzanie kategoriami i produktami <ph id="ph2">&amp;gt;</ph> Uzupełniające kategorie produktów</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Assign attribute groups to retail stores</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przypisywanie grup atrybutów do kategorii sklepów sieci sprzedaży</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>One or more attribute groups can be associated with one or more retail stores in the retail store hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Można skojarzyć jedną lub kilka grup atrybutów z jednym lub więcej sklepami sieci sprzedaży w hierarchii sklepów sieci sprzedaży.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>Then, when products are enriched for specific retail stores, they inherit the attributes that are included in the attribute groups.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wtedy gdy produkty zostaną uwzględnione w określonych sklepach sieci sprzedaży, odziedziczą atrybuty włączone do grup atrybutów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Channel setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Channel categories and product attributes<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Handel detaliczny<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Ustawienia kanału<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kategorie kanału sprzedaży i atrybuty produktów<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Assign attribute groups to the Houston channel:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przypisz grupy atrybutów do kanału Houston:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>Select the <bpt id="p1">**</bpt>Houston<ept id="p1">**</ept> channel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kanał <bpt id="p1">**</bpt>Houston<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>On the <bpt id="p1">**</bpt>Attribute group<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and then, in the <bpt id="p3">**</bpt>Name<ept id="p3">**</ept> field, select <bpt id="p4">**</bpt>SharePointProvisionedProductAttributeGroup<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na skróconej karcie <bpt id="p1">**</bpt>Grupy atrybutów<ept id="p1">**</ept> wybierz opcję <bpt id="p2">**</bpt>Dodaj<ept id="p2">**</ept>, a następnie w polu <bpt id="p3">**</bpt>Nazwa<ept id="p3">**</ept> zaznacz pozycję <bpt id="p4">**</bpt>SharePointProvisionedProductAttributeGroup<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Select <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> again, and then, in the <bpt id="p2">**</bpt>Name<ept id="p2">**</ept> field, select <bpt id="p3">**</bpt>Men's belt<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz ponownie przycisk <bpt id="p1">**</bpt>Dodaj<ept id="p1">**</ept>, a następnie w polu <bpt id="p2">**</bpt>Nazwa<ept id="p2">**</ept> zaznacz wartość <bpt id="p3">**</bpt>Pasek męski<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Select <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> again, and then, in the <bpt id="p2">**</bpt>Name<ept id="p2">**</ept> field, select <bpt id="p3">**</bpt>Fashion Sunglasses<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz ponownie przycisk <bpt id="p1">**</bpt>Dodaj<ept id="p1">**</ept>, a następnie w polu <bpt id="p2">**</bpt>Nazwa<ept id="p2">**</ept> zaznacz wartość <bpt id="p3">**</bpt>Modne okulary przeciwsłoneczne<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>An option lets you specify that this channel should inherit the attribute groups from its parent channel in the hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opcja pozwala określić, że ten kanał powinien dziedziczyć grupy atrybutów ze swojego kanału nadrzędnego w hierarchii.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>If you set the <bpt id="p1">**</bpt>Inherit<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>, the child channel node inherits all the attribute groups and all the attributes in those attribute groups.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli w opcji <bpt id="p1">**</bpt>Dziedzicz<ept id="p1">**</ept> ustawisz wartość <bpt id="p2">**</bpt>Tak<ept id="p2">**</ept>, węzeł kanału podrzędnego odziedziczy wszystkie grupy atrybutów oraz wszystkie znajdujące się w nich atrybuty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>Enable the attributes so that they are available in the Houston channel:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Włącz atrybuty, tak aby były dostępne w kanale Houston:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>On the Action Pane, select <bpt id="p1">**</bpt>Set attribute metadata<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W okienku akcji wybierz opcję <bpt id="p1">**</bpt>Metadane ustawiania atrybutu<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>Select the <bpt id="p1">**</bpt>Fashion<ept id="p1">**</ept> category node, and then, on the <bpt id="p2">**</bpt>Channel product attributes<ept id="p2">**</ept> FastTab, select <bpt id="p3">**</bpt>Include attribute<ept id="p3">**</ept> for each attribute.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz węzeł kategorii <bpt id="p1">**</bpt>Moda<ept id="p1">**</ept>, a następnie na skróconej karcie <bpt id="p2">**</bpt>Atrybuty produktu kanału<ept id="p2">**</ept> dla każdego atrybutu wybierz opcję <bpt id="p3">**</bpt>Uwzględnienie atrybutu<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Select the <bpt id="p1">**</bpt>Fashion Accessories<ept id="p1">**</ept> category node, select the <bpt id="p2">**</bpt>Fashion Sunglasses<ept id="p2">**</ept> category, and then, on the <bpt id="p3">**</bpt>Channel product attributes<ept id="p3">**</ept> FastTab, select <bpt id="p4">**</bpt>Include attribute<ept id="p4">**</ept> for each attribute.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz węzeł kategorii <bpt id="p1">**</bpt>Akcesoria modowe<ept id="p1">**</ept>, zaznacz kategorię <bpt id="p2">**</bpt>Modne okulary przeciwsłoneczne<ept id="p2">**</ept>, a następnie na skróconej karcie <bpt id="p3">**</bpt>Atrybuty produktu kanału<ept id="p3">**</ept> dla każdego atrybutu wybierz opcję <bpt id="p4">**</bpt>Uwzględnienie atrybutu<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>Select the <bpt id="p1">**</bpt>Menswear<ept id="p1">**</ept> category node, select the <bpt id="p2">**</bpt>Pants<ept id="p2">**</ept> category, and then, on the <bpt id="p3">**</bpt>Channel product attributes<ept id="p3">**</ept> FastTab, select <bpt id="p4">**</bpt>Include attribute<ept id="p4">**</ept> for each attribute.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz węzeł kategorii <bpt id="p1">**</bpt>Odzież męska<ept id="p1">**</ept>, zaznacz kategorię <bpt id="p2">**</bpt>Spodnie<ept id="p2">**</ept>, a następnie na skróconej karcie <bpt id="p3">**</bpt>Atrybuty produktu kanału<ept id="p3">**</ept> dla każdego atrybutu wybierz opcję <bpt id="p4">**</bpt>Uwzględnienie atrybutu<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>Channel categories and product attributes – Attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kategorie kanału sprzedaży i atrybuty produktów — grupy atrybutów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>Overriding attribute values</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastępowanie wartości atrybutów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>The default values of attributes can be overridden for individual products at the product level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów na poziomie produktu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>Default values can also be overridden for individual products in specific catalogs that are targeted at specific retail channels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dla poszczególnych produktów można również zastąpić domyślne wartości atrybutów w określonych katalogach kierowanych do konkretnych kanałów sprzedaży detalicznej.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>Override the attribute values of an individual product</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastępowanie wartości atrybutów w poszczególnych produktach</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Category and product management<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Released products by category<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Handel detaliczny<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Zarządzanie kategoriami i produktami<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Zwolnione produkty według kategorii<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>Select the <bpt id="p1">**</bpt>Fashion<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Fashion Accessories<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Fashion Sunglasses<ept id="p3">**</ept> category node.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Moda<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Akcesoria modowe<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> węzeł kategorii <bpt id="p3">**</bpt>Modne okulary przeciwsłoneczne<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>Select the required product in the grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz żądany produkt w siatce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Then, on the Action Pane, on the <bpt id="p1">**</bpt>Product<ept id="p1">**</ept> tab, in the <bpt id="p2">**</bpt>Set up<ept id="p2">**</ept> group, select <bpt id="p3">**</bpt>Product attributes<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Następnie w okienku akcji na karcie <bpt id="p1">**</bpt>Produkt<ept id="p1">**</ept> w grupie <bpt id="p2">**</bpt>Konfiguracja<ept id="p2">**</ept> wybierz opcję <bpt id="p3">**</bpt>Atrybuty produktu<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>Select an attribute in the left pane, and then update its value in the right pane.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaznacz atrybut w lewym okienku, a następnie zaktualizuj jego wartość w prawym okienku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>Product details page – Product attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona Szczegóły produktu — grupy atrybutów produktów</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Override the attribute values of products in a catalog</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastępowanie wartości atrybutów produktów w katalogu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Catalog management<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>All catalogs<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Handel detaliczny<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Zarządzanie katalogami<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Wszystkie katalogi<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>Select the <bpt id="p1">**</bpt>Fabrikam Base Catalog<ept id="p1">**</ept> catalog.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz katalog <bpt id="p1">**</bpt>Fabrikam Base Catalog<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>Select the <bpt id="p1">**</bpt>Fashion<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Fashion Accessories<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Fashion Sunglasses<ept id="p3">**</ept> category node.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Moda<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Akcesoria modowe<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> węzeł kategorii <bpt id="p3">**</bpt>Modne okulary przeciwsłoneczne<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>On the <bpt id="p1">**</bpt>Products<ept id="p1">**</ept> FastTab, select the required product, and then select <bpt id="p2">**</bpt>Attributes<ept id="p2">**</ept> above the product grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na skróconej karcie <bpt id="p1">**</bpt>Produkty<ept id="p1">**</ept> wybierz wymagany produkt, a następnie nad siatką produktów wybierz opcję <bpt id="p2">**</bpt>Atrybuty<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>On the following FastTabs, update the values of the required attributes:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na następnej skróconej karcie zaktualizuj wartości wymaganych atrybutów:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>Shared product media</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udostępnione media produktu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>Shared product attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udostępnione atrybuty produktu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>Channel media</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kanał medialny</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>Channel product attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atrybuty produktu kanału</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>Catalog product attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grupy atrybutów produktów z katalogu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>Override the attribute values of products in a channel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastępowanie wartości atrybutów produktów w kanale</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>Sign in to the back-office client as a retail merchandising manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Channel setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Channel categories and product attributes<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kolejno opcje <bpt id="p1">**</bpt>Handel detaliczny<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Ustawienia kanału<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kategorie kanału sprzedaży i atrybuty produktów<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Select the <bpt id="p1">**</bpt>Houston<ept id="p1">**</ept> channel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wybierz kanał <bpt id="p1">**</bpt>Houston<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>On the <bpt id="p1">**</bpt>Products<ept id="p1">**</ept> FastTab, select the required product, and then select <bpt id="p2">**</bpt>Attributes<ept id="p2">**</ept> above the product grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na skróconej karcie <bpt id="p1">**</bpt>Produkty<ept id="p1">**</ept> wybierz wymagany produkt, a następnie nad siatką produktów wybierz opcję <bpt id="p2">**</bpt>Atrybuty<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>If no products are available, add products by selecting <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>Products<ept id="p2">**</ept> FastTab and then selecting the required products in the <bpt id="p3">**</bpt>Add products<ept id="p3">**</ept> dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeżeli nie są dostępne żadne produkty, dodaj produkty, wybierając opcję <bpt id="p1">**</bpt>Dodaj<ept id="p1">**</ept> na skróconej karcie <bpt id="p2">**</bpt>Produkty<ept id="p2">**</ept>, a następnie wybierając żądane produkty w oknie dialogowym <bpt id="p3">**</bpt>Dodaj produkty<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>On the following FastTabs, update the values of the required attributes:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na następnej skróconej karcie zaktualizuj wartości wymaganych atrybutów:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>Shared product media</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udostępnione media produktu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>Shared product attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udostępnione atrybuty produktu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>Channel media</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kanał medialny</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>Channel product attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atrybuty produktu kanału</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Atrybuty i grupy atrybutów
+description: W tym temacie opisano, jak za pomocą atrybutów stworzyć możliwość opisywania produktu i jego cech za pomocą pól definiowanych przez użytkownika.
+author: ashishmsft
+manager: AnnBe
+ms.date: 04/28/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: asharchw
+ms.search.validFrom: 2018-03-30
+ms.dyn365.ops.version: Application pdate 5, AX 8.0
+ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606902"
+---
+# <a name="attributes-and-attribute-groups"></a><span data-ttu-id="cb887-103">Atrybuty i grupy atrybutów</span><span class="sxs-lookup"><span data-stu-id="cb887-103">Attributes and attribute groups</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="cb887-104">*Atrybuty* umożliwiają dokładniejsze opisanie produktu i jego właściwości za pomocą pól zdefiniowanych przez użytkownika (takich jak **Rozmiar pamięci**, **Pojemność dysku twardego**, **Zgodność z normą Energy Star** i tak dalej).</span><span class="sxs-lookup"><span data-stu-id="cb887-104">*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on).</span></span> <span data-ttu-id="cb887-105">W Microsoft Dynamics 365 for Finance and Operations atrybuty można skojarzyć z różnymi jednostkami sprzedaży detalicznej, takimi jak kategorie produktu i kanały handlu detalicznego oraz ustawić ich wartości domyślne.</span><span class="sxs-lookup"><span data-stu-id="cb887-105">In Microsoft Dynamics 365 for Finance and Operations, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them.</span></span> <span data-ttu-id="cb887-106">Wtedy produkty dziedziczą atrybuty i wartości domyślne, gdy zostaną powiązane z kategoriami produktów lub kanałami sprzedaży detalicznej.</span><span class="sxs-lookup"><span data-stu-id="cb887-106">Products then inherit the attributes and the default values when they are associated with the product categories or retail channels.</span></span> <span data-ttu-id="cb887-107">Wartości domyślne można zastąpić na poziomie poszczególnych produktów, na poziomie kanału sprzedaży detalicznej lub w katalogu sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="cb887-107">The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.</span></span>
+
+<span data-ttu-id="cb887-108">Na przykład typowy produkt w postaci telewizora może mieć następujące atrybuty.</span><span class="sxs-lookup"><span data-stu-id="cb887-108">For example, a typical television product might have the following attributes.</span></span>
+
+| <span data-ttu-id="cb887-109">Kategoria</span><span class="sxs-lookup"><span data-stu-id="cb887-109">Category</span></span>   | <span data-ttu-id="cb887-110">Atrybut</span><span class="sxs-lookup"><span data-stu-id="cb887-110">Attribute</span></span>                | <span data-ttu-id="cb887-111">Możliwe wartości</span><span class="sxs-lookup"><span data-stu-id="cb887-111">Permissible values</span></span>          | <span data-ttu-id="cb887-112">Wartość domyślna</span><span class="sxs-lookup"><span data-stu-id="cb887-112">Default value</span></span> |
+|------------|--------------------------|-----------------------------|---------------|
+| <span data-ttu-id="cb887-113">Telewizja i wideo</span><span class="sxs-lookup"><span data-stu-id="cb887-113">TV & Video</span></span> | <span data-ttu-id="cb887-114">Marka</span><span class="sxs-lookup"><span data-stu-id="cb887-114">Brand</span></span>                    | <span data-ttu-id="cb887-115">Dowolna prawidłowa nazwa marki</span><span class="sxs-lookup"><span data-stu-id="cb887-115">Any valid brand value</span></span>       | <span data-ttu-id="cb887-116">None</span><span class="sxs-lookup"><span data-stu-id="cb887-116">None</span></span>          |
+| <span data-ttu-id="cb887-117">TELEWIZJA</span><span class="sxs-lookup"><span data-stu-id="cb887-117">TV</span></span>         | <span data-ttu-id="cb887-118">Rozmiar ekranu</span><span class="sxs-lookup"><span data-stu-id="cb887-118">Screen Size</span></span>              | <span data-ttu-id="cb887-119">20–80 cali</span><span class="sxs-lookup"><span data-stu-id="cb887-119">20–80 inches</span></span>                | <span data-ttu-id="cb887-120">None</span><span class="sxs-lookup"><span data-stu-id="cb887-120">None</span></span>          |
+|            | <span data-ttu-id="cb887-121">Rozdzielczość w pionie</span><span class="sxs-lookup"><span data-stu-id="cb887-121">Vertical Resolution</span></span>      | <span data-ttu-id="cb887-122">480i, 720p, 1080i, lub 1080p</span><span class="sxs-lookup"><span data-stu-id="cb887-122">480i, 720p, 1080i, or 1080p</span></span> | <span data-ttu-id="cb887-123">1080p</span><span class="sxs-lookup"><span data-stu-id="cb887-123">1080p</span></span>         |
+|            | <span data-ttu-id="cb887-124">Częstotliwość odświeżania ekranu</span><span class="sxs-lookup"><span data-stu-id="cb887-124">Screen Refresh Rate</span></span>      | <span data-ttu-id="cb887-125">60hz, 120hz, lub 240hz</span><span class="sxs-lookup"><span data-stu-id="cb887-125">60hz, 120hz, or 240hz</span></span>       | <span data-ttu-id="cb887-126">60hz</span><span class="sxs-lookup"><span data-stu-id="cb887-126">60hz</span></span>          |
+|            | <span data-ttu-id="cb887-127">Wejścia HDMI</span><span class="sxs-lookup"><span data-stu-id="cb887-127">HDMI Inputs</span></span>              | <span data-ttu-id="cb887-128">0–10</span><span class="sxs-lookup"><span data-stu-id="cb887-128">0–10</span></span>                        | <span data-ttu-id="cb887-129">3</span><span class="sxs-lookup"><span data-stu-id="cb887-129">3</span></span>             |
+|            | <span data-ttu-id="cb887-130">Wejścia DVI</span><span class="sxs-lookup"><span data-stu-id="cb887-130">DVI Inputs</span></span>               | <span data-ttu-id="cb887-131">0–10</span><span class="sxs-lookup"><span data-stu-id="cb887-131">0–10</span></span>                        | <span data-ttu-id="cb887-132">1</span><span class="sxs-lookup"><span data-stu-id="cb887-132">1</span></span>             |
+|            | <span data-ttu-id="cb887-133">Wejście kompozytowe</span><span class="sxs-lookup"><span data-stu-id="cb887-133">Composite Inputs</span></span>         | <span data-ttu-id="cb887-134">0–10</span><span class="sxs-lookup"><span data-stu-id="cb887-134">0–10</span></span>                        | <span data-ttu-id="cb887-135">2</span><span class="sxs-lookup"><span data-stu-id="cb887-135">2</span></span>             |
+|            | <span data-ttu-id="cb887-136">Wejścia komponentów</span><span class="sxs-lookup"><span data-stu-id="cb887-136">Component Inputs</span></span>         | <span data-ttu-id="cb887-137">0–10</span><span class="sxs-lookup"><span data-stu-id="cb887-137">0–10</span></span>                        | <span data-ttu-id="cb887-138">1</span><span class="sxs-lookup"><span data-stu-id="cb887-138">1</span></span>             |
+| <span data-ttu-id="cb887-139">LCD</span><span class="sxs-lookup"><span data-stu-id="cb887-139">LCD</span></span>        | <span data-ttu-id="cb887-140">3D Ready</span><span class="sxs-lookup"><span data-stu-id="cb887-140">3D Ready</span></span>                 | <span data-ttu-id="cb887-141">Tak lub Nie</span><span class="sxs-lookup"><span data-stu-id="cb887-141">Yes or No</span></span>                   | <span data-ttu-id="cb887-142">Tak</span><span class="sxs-lookup"><span data-stu-id="cb887-142">Yes</span></span>           |
+|            | <span data-ttu-id="cb887-143">Obsługa 3D</span><span class="sxs-lookup"><span data-stu-id="cb887-143">3D Enabled</span></span>               | <span data-ttu-id="cb887-144">Tak lub Nie</span><span class="sxs-lookup"><span data-stu-id="cb887-144">Yes or No</span></span>                   | <span data-ttu-id="cb887-145">Nr</span><span class="sxs-lookup"><span data-stu-id="cb887-145">No</span></span>            |
+| <span data-ttu-id="cb887-146">Plazmowy</span><span class="sxs-lookup"><span data-stu-id="cb887-146">Plasma</span></span>     | <span data-ttu-id="cb887-147">Minimalna temperatura</span><span class="sxs-lookup"><span data-stu-id="cb887-147">Operating Temp From</span></span>      | <span data-ttu-id="cb887-148">32–110 stopni</span><span class="sxs-lookup"><span data-stu-id="cb887-148">32–110 degrees</span></span>              | <span data-ttu-id="cb887-149">32</span><span class="sxs-lookup"><span data-stu-id="cb887-149">32</span></span>            |
+|            | <span data-ttu-id="cb887-150">Maksymalna temperatura</span><span class="sxs-lookup"><span data-stu-id="cb887-150">Operating Temp To</span></span>        | <span data-ttu-id="cb887-151">32–110 stopni</span><span class="sxs-lookup"><span data-stu-id="cb887-151">32–110 degrees</span></span>              | <span data-ttu-id="cb887-152">100</span><span class="sxs-lookup"><span data-stu-id="cb887-152">100</span></span>           |
+| <span data-ttu-id="cb887-153">Projekcyjny</span><span class="sxs-lookup"><span data-stu-id="cb887-153">Projection</span></span> | <span data-ttu-id="cb887-154">Gwarancja na lampę kineskopową</span><span class="sxs-lookup"><span data-stu-id="cb887-154">Projection Tube Warranty</span></span> | <span data-ttu-id="cb887-155">6, 12 lub 18 miesięcy</span><span class="sxs-lookup"><span data-stu-id="cb887-155">6, 12, or 18 months</span></span>         | <span data-ttu-id="cb887-156">12</span><span class="sxs-lookup"><span data-stu-id="cb887-156">12</span></span>            |
+|            | <span data-ttu-id="cb887-157">\# lamp kineskopowych</span><span class="sxs-lookup"><span data-stu-id="cb887-157">\# of Projection Tubes</span></span>   | <span data-ttu-id="cb887-158">1–5</span><span class="sxs-lookup"><span data-stu-id="cb887-158">1–5</span></span>                         | <span data-ttu-id="cb887-159">3</span><span class="sxs-lookup"><span data-stu-id="cb887-159">3</span></span>             |
+
+## <a name="attributes-and-attribute-types"></a><span data-ttu-id="cb887-160">Atrybuty i typy atrybutów</span><span class="sxs-lookup"><span data-stu-id="cb887-160">Attributes and attribute types</span></span>
+
+<span data-ttu-id="cb887-161">Atrybuty są oparte na *typach atrybutów*.</span><span class="sxs-lookup"><span data-stu-id="cb887-161">Attributes are based on *attribute types*.</span></span> <span data-ttu-id="cb887-162">Typ atrybutu określa typ danych, które można wprowadzić dla określonego atrybutu.</span><span class="sxs-lookup"><span data-stu-id="cb887-162">The attribute type identifies the type of data that can be entered for a specific attribute.</span></span> <span data-ttu-id="cb887-163">Obecnie program Finance and Operations obsługuje następujące typy atrybutów:</span><span class="sxs-lookup"><span data-stu-id="cb887-163">Finance and Operations currently supports the following attribute types:</span></span>
+
+- <span data-ttu-id="cb887-164">**Waluta** — ten typ obsługuje wartości waluty.</span><span class="sxs-lookup"><span data-stu-id="cb887-164">**Currency** – This type supports a currency value.</span></span> <span data-ttu-id="cb887-165">Może być ograniczony (czyli obsługuje zakres wartości) lub może pozostać otwarty.</span><span class="sxs-lookup"><span data-stu-id="cb887-165">It can be bounded (that is, it can support a range of values), or it can be left open.</span></span>
+- <span data-ttu-id="cb887-166">**Data i godzina** — ten typ obsługuje wartości daty i godziny.</span><span class="sxs-lookup"><span data-stu-id="cb887-166">**DateTime** – This type supports a date and time value.</span></span> <span data-ttu-id="cb887-167">Może być ograniczony lub pozostać otwarty.</span><span class="sxs-lookup"><span data-stu-id="cb887-167">It can be bounded or left open.</span></span>
+- <span data-ttu-id="cb887-168">**Dziesiętna** — ten typ obsługuje wartości liczbowe, które zawierają miejsca dziesiętne.</span><span class="sxs-lookup"><span data-stu-id="cb887-168">**Decimal** – This type supports a numerical value that includes decimal places.</span></span> <span data-ttu-id="cb887-169">Obsługuje również jednostki miary.</span><span class="sxs-lookup"><span data-stu-id="cb887-169">It also supports a unit of measure.</span></span> <span data-ttu-id="cb887-170">Może być ograniczony lub pozostać otwarty.</span><span class="sxs-lookup"><span data-stu-id="cb887-170">It can be bounded or left open.</span></span>
+- <span data-ttu-id="cb887-171">**Całkowita** — ten typ obsługuje wartości liczbowe.</span><span class="sxs-lookup"><span data-stu-id="cb887-171">**Integer** – This type supports a numerical value.</span></span> <span data-ttu-id="cb887-172">Obsługuje również jednostki miary.</span><span class="sxs-lookup"><span data-stu-id="cb887-172">It also supports a unit of measure.</span></span> <span data-ttu-id="cb887-173">Może być ograniczony lub pozostać otwarty.</span><span class="sxs-lookup"><span data-stu-id="cb887-173">It can be bounded or left open.</span></span>
+- <span data-ttu-id="cb887-174">**Tekst** — ten typ obsługuje wartości tekstowe.</span><span class="sxs-lookup"><span data-stu-id="cb887-174">**Text** – This type supports a text value.</span></span> <span data-ttu-id="cb887-175">Obsługuje również wstępnie zdefiniowany zestaw możliwych wartości (tzn. *elementy stałotekstowe*).</span><span class="sxs-lookup"><span data-stu-id="cb887-175">It also supports a predefined set of possible values (that is, an *enumeration*).</span></span>
+- <span data-ttu-id="cb887-176">**Logiczna** — ten typ obsługuje wartości binarne (**prawda** lub **fałsz**).</span><span class="sxs-lookup"><span data-stu-id="cb887-176">**Boolean** – This type supports a binary value (**true** or **false**).</span></span>
+- <span data-ttu-id="cb887-177">**Odwołanie** — ten typ odwołuje się do innych atrybutów.</span><span class="sxs-lookup"><span data-stu-id="cb887-177">**Reference** – This type references other attributes.</span></span>
+
+### <a name="set-up-attribute-types-in-finance-and-operations"></a><span data-ttu-id="cb887-178">Konfigurowanie typów atrybutów w programie Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="cb887-178">Set up attribute types in Finance and Operations</span></span>
+
+1. <span data-ttu-id="cb887-179">Zaloguj się na kliencie narzędzi zaplecza programu Finance and Operations jako kierownik ds. merchandisingu.</span><span class="sxs-lookup"><span data-stu-id="cb887-179">Sign in to the Finance and Operations back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="cb887-180">Wybierz kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Ustawienia** &gt; **Kategorie i atrybuty** &gt; **Typy atrybutów**.</span><span class="sxs-lookup"><span data-stu-id="cb887-180">Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute types**.</span></span>
+3. <span data-ttu-id="cb887-181">Utwórz dwa typy atrybutów o typie **Tekst**, w opcji **Stała lista** zaznacz wartość **Tak**, a następnie dodaj listę wartości:</span><span class="sxs-lookup"><span data-stu-id="cb887-181">Create two attribute types of the **Text** type, set the **Fixed list** option to **Yes**, and then add a list of values:</span></span>
+
+    - <span data-ttu-id="cb887-182">Nazwij jeden typ atrybutu **Kształt soczewek** i dodaj następujące wartości: **Owal**, **Kwadrat** i **Prostokąt**.</span><span class="sxs-lookup"><span data-stu-id="cb887-182">Name one attribute type **Lens shape**, and add the following values: **Oval**, **Square**, and **Rectangle**.</span></span>
+    - <span data-ttu-id="cb887-183">Nazwij drugi typ atrybutu **Marka okularów przeciwsłonecznych** i dodaj następujące wartości: **Ray ban**, **Aviator** i **Oakley**.</span><span class="sxs-lookup"><span data-stu-id="cb887-183">Name the other attribute type **Sunglass brand**, and add the following values: **Ray ban**, **Aviator**, and **Oakley**.</span></span>
+
+![Typy atrybutów](media/AttributeType.png)
+
+### <a name="set-up-an-attribute-in-finance-and-operations"></a><span data-ttu-id="cb887-185">Konfigurowanie atrybutu w programie Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="cb887-185">Set up an attribute in Finance and Operations</span></span>
+
+1. <span data-ttu-id="cb887-186">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</span><span class="sxs-lookup"><span data-stu-id="cb887-186">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="cb887-187">Wybierz kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Ustawienia** &gt; **Kategorie i atrybuty** &gt; **Atrybuty**.</span><span class="sxs-lookup"><span data-stu-id="cb887-187">Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attributes**.</span></span>
+3. <span data-ttu-id="cb887-188">Utwórz atrybut o nazwie **Soczewki**.</span><span class="sxs-lookup"><span data-stu-id="cb887-188">Create an attribute that is named **Lens**.</span></span>
+4. <span data-ttu-id="cb887-189">W polu **Typ atrybutu** ustaw wartość **Kształt soczewek**.</span><span class="sxs-lookup"><span data-stu-id="cb887-189">Set the **Attribute type** field to **Lens shape**.</span></span>
+
+![Atrybuty](media/Attribute.png)
+
+## <a name="attribute-metadata"></a><span data-ttu-id="cb887-191">Metadane atrybutu</span><span class="sxs-lookup"><span data-stu-id="cb887-191">Attribute metadata</span></span>
+
+<span data-ttu-id="cb887-192">*Metadane atrybutów* umożliwiają wybranie opcji określających, jak mają się zachować atrybuty każdego produktu.</span><span class="sxs-lookup"><span data-stu-id="cb887-192">*Attribute metadata* lets you select options to specify how the attributes for each product should behave.</span></span> <span data-ttu-id="cb887-193">Można na przykład wskazać, czy atrybuty są wymagane, czy mogą być używana w wyszukiwaniach i czy można ich używać jako filtrów.</span><span class="sxs-lookup"><span data-stu-id="cb887-193">For example, you can specify whether attributes are required, whether they can be used for searches, and whether they can be used as a filter.</span></span>
+
+<span data-ttu-id="cb887-194">Dla produktów sieci sprzedaży ustawienia metadanych atrybutów mogą być zastępowane na poziomie kanału.</span><span class="sxs-lookup"><span data-stu-id="cb887-194">For retail products, the attribute metadata settings can be overridden at the channel level.</span></span> <span data-ttu-id="cb887-195">Ta funkcjonalność zostanie omówiona w dalszej części tego tematu.</span><span class="sxs-lookup"><span data-stu-id="cb887-195">This capability will be discussed later in this topic.</span></span>
+
+<span data-ttu-id="cb887-196">Jak można zauważyć, strona **Atrybuty** zawiera opcje powiązane z metadanymi atrybutów.</span><span class="sxs-lookup"><span data-stu-id="cb887-196">As you might notice, the **Attributes** page includes options that are related to attribute metadata.</span></span> <span data-ttu-id="cb887-197">W obszarze **Metadane atrybutów aplikacji POS** opcja o nazwie **Może być doprecyzowany** wpływa na zachowanie wartości atrybutów w aplikacji Retail POS oraz na sposób obsługi tych wartości atrybutów przez system.</span><span class="sxs-lookup"><span data-stu-id="cb887-197">Under **Attribute metadata for POS**, one option that is named **Can be refined** affects the behavior of the attribute values in the retail point of sale (POS) or the way that the system handles those attribute values.</span></span> <span data-ttu-id="cb887-198">Tylko atrybuty, dla których w opcji **Może być doprecyzowany** można ustawić wartość **Tak**, będą wyświetlane w aplikacji Retail POS dla operacji doprecyzowywania i filtrowania produktów.</span><span class="sxs-lookup"><span data-stu-id="cb887-198">Only attributes for which you may set the **Can be refined** option to **Yes**, will show up for refinement or filtering of products in the retail POS.</span></span>
+
+<span data-ttu-id="cb887-199">Poniżej przedstawiono pozostałe opcje metadanych atrybutów dostępne na stronie **Atrybuty**:</span><span class="sxs-lookup"><span data-stu-id="cb887-199">Here are the remaining attribute metadata options on the **Attributes** page:</span></span>
+
+- <span data-ttu-id="cb887-200">Z możliwością wyszukiwania</span><span class="sxs-lookup"><span data-stu-id="cb887-200">Searchable</span></span>
+- <span data-ttu-id="cb887-201">Z możliwością pobierania</span><span class="sxs-lookup"><span data-stu-id="cb887-201">Retrievable</span></span>
+- <span data-ttu-id="cb887-202">Może być przedmiotem kwerendy</span><span class="sxs-lookup"><span data-stu-id="cb887-202">Can be queried</span></span>
+- <span data-ttu-id="cb887-203">Z możliwością sortowania</span><span class="sxs-lookup"><span data-stu-id="cb887-203">Sortable</span></span>
+- <span data-ttu-id="cb887-204">Zezwalaj na wiele wartości</span><span class="sxs-lookup"><span data-stu-id="cb887-204">Allow multiple values</span></span>
+- <span data-ttu-id="cb887-205">Ignorowanie wielkości liter i formatu</span><span class="sxs-lookup"><span data-stu-id="cb887-205">Ignore case and format</span></span>
+- <span data-ttu-id="cb887-206">Pełne dopasowanie</span><span class="sxs-lookup"><span data-stu-id="cb887-206">Complete match</span></span>
+
+<span data-ttu-id="cb887-207">Te opcje były pierwotnie przeznaczone do poprawy funkcji wyszukiwania w sklepach internetowych.</span><span class="sxs-lookup"><span data-stu-id="cb887-207">These options were originally intended to improve the search functionality for the online storefront.</span></span> <span data-ttu-id="cb887-208">Co prawda program Finance and Operations nie zawiera w standardzie funkcjonalności sklepu internetowego, ale obejmuje zestaw SDK do publikowania dla handlu elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="cb887-208">Although Finance and Operations doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK).</span></span> <span data-ttu-id="cb887-209">Odbiorcy mogą używać tego zestawu SDK do wprowadzania produktów do dowolnych indeksów wyszukiwania.</span><span class="sxs-lookup"><span data-stu-id="cb887-209">Customers can use this SDK to put products into a search index of their choice.</span></span> <span data-ttu-id="cb887-210">Mimo iż dane produktów są importowane, odbiorcy nadal powinni być w stanie odróżniać dane, które można przeszukiwać, na których można wykonywać zapytania itd.</span><span class="sxs-lookup"><span data-stu-id="cb887-210">Although the product data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on.</span></span> <span data-ttu-id="cb887-211">W ten sposób mogą zbudować optymalny indeks obejmujący tylko atrybuty, które *w ich opinii* powinny być indeksowane.</span><span class="sxs-lookup"><span data-stu-id="cb887-211">In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.</span></span>
+
+<span data-ttu-id="cb887-212">Aby uzyskać więcej informacje o przeznaczeniu tych pozostałych opcji, zobacz [Omówienie schematu wyszukiwania w programie SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).</span><span class="sxs-lookup"><span data-stu-id="cb887-212">For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).</span></span>
+
+## <a name="filter-settings-for-attributes"></a><span data-ttu-id="cb887-213">Ustawienia filtrów atrybutów</span><span class="sxs-lookup"><span data-stu-id="cb887-213">Filter settings for attributes</span></span>
+
+<span data-ttu-id="cb887-214">Ustawienia filtrów atrybutów pozwalają określić sposób wyświetlania filtrów atrybutów w aplikacji Retail POS.</span><span class="sxs-lookup"><span data-stu-id="cb887-214">Filter settings for attributes let you define how the filters for attributes are shown in the retail POS.</span></span> <span data-ttu-id="cb887-215">Aby uzyskać dostęp do ustawień filtrów atrybutów, w programie Finance and Operations na stronie **Atrybuty** zaznacz atrybut, a następnie w okienku akcji wybierz opcję **Ustawienia filtra**.</span><span class="sxs-lookup"><span data-stu-id="cb887-215">To access the filter settings for an attribute, on the **Attributes** page in Finance and Operations, select the attribute, and then, on the Action Pane, select **Filter settings**.</span></span>
+
+<span data-ttu-id="cb887-216">Strona **Preferencje wyświetlania filtra** zawiera następujące pola:</span><span class="sxs-lookup"><span data-stu-id="cb887-216">The **Filter display preferences** page includes the following fields:</span></span>
+
+- <span data-ttu-id="cb887-217">**Nazwa** — to pole jest domyślnie ustawione na nazwę atrybutu.</span><span class="sxs-lookup"><span data-stu-id="cb887-217">**Name** – By default, this field is set to the name of the attribute.</span></span> <span data-ttu-id="cb887-218">Można jednak zmienić jego wartość.</span><span class="sxs-lookup"><span data-stu-id="cb887-218">However, you can change the value.</span></span>
+- <span data-ttu-id="cb887-219">**Opcja wyświetlania** — dostępne są następujące opcje:</span><span class="sxs-lookup"><span data-stu-id="cb887-219">**Display option** – The following options are available:</span></span>
+
+    - <span data-ttu-id="cb887-220">**Jedna wartość** — ta opcja jest dostępna dla następujących typów atrybutów: **Logiczna**, **Waluta**, **Dziesiętna**, **Całkowita** i **Tekst**.</span><span class="sxs-lookup"><span data-stu-id="cb887-220">**Single value** – This option is available for the following attribute types: **Boolean**, **Currency**, **Decimal**, **Integer**, and **Text**.</span></span> <span data-ttu-id="cb887-221">Ta opcja umożliwia wybór jednej wartości dla tych atrybutów na kliencie w celu doprecyzowania.</span><span class="sxs-lookup"><span data-stu-id="cb887-221">This option enables single value selection for these attributes in the client for refinement.</span></span>
+    - <span data-ttu-id="cb887-222">**Wiele wartości** — ta opcja jest dostępna dla następujących typów atrybutów: **Waluta**, **Dziesiętna**, **Całkowita** i **Tekst**.</span><span class="sxs-lookup"><span data-stu-id="cb887-222">**Multi value** – This option is available for the following attribute types: **Currency**, **Decimal**, **Integer**, and **Text**.</span></span> <span data-ttu-id="cb887-223">Ta opcja umożliwia wybór wielu wartości dla tego atrybutu na kliencie w celu doprecyzowania.</span><span class="sxs-lookup"><span data-stu-id="cb887-223">This option enables multi-value selection for this attribute in the client for refinement.</span></span>
+
+- <span data-ttu-id="cb887-224">**Sterowanie wyświetlaniem** — dostępne są następujące opcje:</span><span class="sxs-lookup"><span data-stu-id="cb887-224">**Display control** – The following options are available:</span></span>
+
+    - <span data-ttu-id="cb887-225">**Lista** — ta opcja jest dostępna dla wszystkich typów atrybutów.</span><span class="sxs-lookup"><span data-stu-id="cb887-225">**List** – This option is available for the all attribute types.</span></span>
+    - <span data-ttu-id="cb887-226">**Zakres** — ta opcja jest dostępna dla następujących typów atrybutów: **Waluta**, **Dziesiętna** i **Całkowita**.</span><span class="sxs-lookup"><span data-stu-id="cb887-226">**Range** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.</span></span>
+    - <span data-ttu-id="cb887-227">**Suwak** — ta opcja jest dostępna dla następujących typów atrybutów: **Waluta**, **Dziesiętna** i **Całkowita**.</span><span class="sxs-lookup"><span data-stu-id="cb887-227">**Slider** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.</span></span>
+    - <span data-ttu-id="cb887-228">**Suwak z paskami** — ta opcja jest dostępna dla następujących typów atrybutów: **Waluta**, **Dziesiętna** i **Całkowita**.</span><span class="sxs-lookup"><span data-stu-id="cb887-228">**Slider with bars** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.</span></span>
+
+- <span data-ttu-id="cb887-229">**Wartość progowa** — to ustawienie jest wymagane, jeśli jako typ sterowania wyświetlaniem wybrano opcję **Zakres**.</span><span class="sxs-lookup"><span data-stu-id="cb887-229">**Threshold value** – This setting is required if you selected **Range** as the display control type.</span></span> <span data-ttu-id="cb887-230">W celu zdefiniowania wartości można użyć średnika (;) jako separatora.</span><span class="sxs-lookup"><span data-stu-id="cb887-230">You can define values by using a semicolon (;) as a delimiter.</span></span>
+
+    <span data-ttu-id="cb887-231">Na przykład dla filtra takiego jak **Objętości worka** pole wartości progowej może zawierać wartości **10; 20; 50; 100; 200; 500; 1000; 5000**.</span><span class="sxs-lookup"><span data-stu-id="cb887-231">For example, for the filter like **Bag Volume**, a threshold value can be **10; 20; 50; 100; 200; 500; 1000; 5000**.</span></span> <span data-ttu-id="cb887-232">W tym przypadku w aplikacji Retail POS będą wyświetlane następujące zakresy.</span><span class="sxs-lookup"><span data-stu-id="cb887-232">In this case, the retail POS will show the following ranges.</span></span> <span data-ttu-id="cb887-233">Wszystkie zakresy, które w zbiorze wyników nie mają żadnych produktów, będą wyświetlane jako wygaszone.</span><span class="sxs-lookup"><span data-stu-id="cb887-233">Any ranges that don't have any products in the result set will appear dimmed.</span></span>
+
+    - <span data-ttu-id="cb887-234">Mniej niż 10</span><span class="sxs-lookup"><span data-stu-id="cb887-234">Less than 10</span></span>
+    - <span data-ttu-id="cb887-235">10 – 20</span><span class="sxs-lookup"><span data-stu-id="cb887-235">10 – 20</span></span>
+    - <span data-ttu-id="cb887-236">20 – 50</span><span class="sxs-lookup"><span data-stu-id="cb887-236">20 – 50</span></span>
+    - <span data-ttu-id="cb887-237">50 – 100</span><span class="sxs-lookup"><span data-stu-id="cb887-237">50 – 100</span></span>
+    - <span data-ttu-id="cb887-238">100 – 200</span><span class="sxs-lookup"><span data-stu-id="cb887-238">100 – 200</span></span>
+    - <span data-ttu-id="cb887-239">200 – 500</span><span class="sxs-lookup"><span data-stu-id="cb887-239">200 – 500</span></span>
+    - <span data-ttu-id="cb887-240">Ponad 500</span><span class="sxs-lookup"><span data-stu-id="cb887-240">500 or more</span></span>
+
+![Ustawienia filtrów atrybutów](media/AttributeFilterSettings.PNG)
+
+## <a name="attribute-groups"></a><span data-ttu-id="cb887-242">Grupy atrybutów</span><span class="sxs-lookup"><span data-stu-id="cb887-242">Attribute groups</span></span>
+
+<span data-ttu-id="cb887-243">Po zdefiniowaniu atrybutów można je przypisać do grup atrybutów.</span><span class="sxs-lookup"><span data-stu-id="cb887-243">After attributes have been defined, they can be assigned to attribute groups.</span></span> <span data-ttu-id="cb887-244">*Grupa atrybutów* jest używana do grupowania indywidualnych atrybutów składnika lub podskładnika w modelu konfiguracji produktu.</span><span class="sxs-lookup"><span data-stu-id="cb887-244">An *attribute group* is used to group the individual attributes for a component or subcomponent in a product configuration model.</span></span> <span data-ttu-id="cb887-245">Ten sam atrybut można dołączyć do więcej niż jednej grupy atrybutów.</span><span class="sxs-lookup"><span data-stu-id="cb887-245">An attribute can be included in more than one attribute group.</span></span> <span data-ttu-id="cb887-246">Grupy atrybutów mogą pomóc użytkownikom konfigurować produkty, ponieważ różne opcje wyboru są rozmieszczane w określonym kontekście.</span><span class="sxs-lookup"><span data-stu-id="cb887-246">Attribute groups can help users configure products, because the various selections are arranged in a specific context.</span></span> <span data-ttu-id="cb887-247">Grupy atrybutów można przypisywać do kategorii sieci sprzedaży i kanałów sprzedaży detalicznej.</span><span class="sxs-lookup"><span data-stu-id="cb887-247">Attribute groups can be assigned to retail categories or retail channels.</span></span>
+
+<span data-ttu-id="cb887-248">Można również ustawić domyślne wartości dla atrybutów dołączonych do grupy atrybutów.</span><span class="sxs-lookup"><span data-stu-id="cb887-248">You can also set default values for attributes that are included in an attribute group.</span></span> <span data-ttu-id="cb887-249">Na przykład do grupy atrybutów można dodać atrybut koloru oraz wybrać **Niebieski** jako domyślną wartość atrybutu.</span><span class="sxs-lookup"><span data-stu-id="cb887-249">For example, you add an attribute for color to an attribute group and select **Blue** as the default attribute value.</span></span> <span data-ttu-id="cb887-250">W takim przypadku po dodaniu grupy atrybutów do produktu sieci sprzedaży zawierającego kolor jako jeden z atrybutów wartość **Niebieski** będzie wyświetlana jako domyślny kolor tego produktu.</span><span class="sxs-lookup"><span data-stu-id="cb887-250">In this case, when the attribute group is added to a retail product that includes color as one of its attributes, **Blue** appears as the default color for that product.</span></span>
+
+![Grupy atrybutów](media/AttributeGroup.png)
+
+### <a name="create-an-attribute-group"></a><span data-ttu-id="cb887-252">Tworzenie grup atrybutów</span><span class="sxs-lookup"><span data-stu-id="cb887-252">Create an attribute group</span></span>
+
+1. <span data-ttu-id="cb887-253">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</span><span class="sxs-lookup"><span data-stu-id="cb887-253">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="cb887-254">Wybierz kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Ustawienia** &gt; **Kategorie i atrybuty** &gt; **Grupy atrybutów**.</span><span class="sxs-lookup"><span data-stu-id="cb887-254">Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute groups**.</span></span>
+3. <span data-ttu-id="cb887-255">Utwórz grupę atrybutów o nazwie **Modne okulary przeciwsłoneczne**.</span><span class="sxs-lookup"><span data-stu-id="cb887-255">Create an attribute group that is named **Fashion Sunglasses**.</span></span>
+4. <span data-ttu-id="cb887-256">Dodaj następujące atrybuty: **Kształt soczewek** i **Marka okularów przeciwsłonecznych**.</span><span class="sxs-lookup"><span data-stu-id="cb887-256">Add the following attributes: **Lens shape** and **Sunglass brand**.</span></span>
+
+### <a name="assign-attribute-groups-to-retail-categories"></a><span data-ttu-id="cb887-257">Przypisywanie grup atrybutów do kategorii sieci sprzedaży</span><span class="sxs-lookup"><span data-stu-id="cb887-257">Assign attribute groups to retail categories</span></span>
+
+<span data-ttu-id="cb887-258">Jedną lub więcej grup atrybutów można skojarzyć z węzłami kategorii w następujących typach hierarchii kategorii sieci sprzedaży: Hierarchia produktów sieci sprzedaży, Hierarchia kategorii nawigacji w kanale i Hierarchia uzupełniających kategorii produktów.</span><span class="sxs-lookup"><span data-stu-id="cb887-258">One or more attribute groups can be associated with category nodes in the following types of retail category hierarchies: Retail product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy.</span></span> <span data-ttu-id="cb887-259">Wtedy gdy produkty będą kategoryzowane, odziedziczą atrybuty włączone do grup atrybutów.</span><span class="sxs-lookup"><span data-stu-id="cb887-259">Then, when products are categorized, they inherit the attributes that are included in the attribute groups.</span></span>
+
+![Hierarchia produktów sieci sprzedaży — grupy atrybutów produktów](media/AGRetailProdHierarchy.PNG)
+
+<span data-ttu-id="cb887-261">Wykonaj następujące kroki, aby przypisać grupy atrybutów do kategorii w hierarchii produktów sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="cb887-261">Follow these steps to assign attribute groups to categories in the Retail product hierarchy.</span></span>
+
+1. <span data-ttu-id="cb887-262">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</span><span class="sxs-lookup"><span data-stu-id="cb887-262">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="cb887-263">Wybierz kolejno opcje **Handel detaliczny** &gt; **Zarządzanie kategoriami i produktami** &gt; **Hierarchia produktów sieci sprzedaży**.</span><span class="sxs-lookup"><span data-stu-id="cb887-263">Go to **Retail** &gt; **Category and product management** &gt; **Retail product hierarchy**.</span></span>
+3. <span data-ttu-id="cb887-264">Wybierz opcję **Hierarchia nawigacji Moda**.</span><span class="sxs-lookup"><span data-stu-id="cb887-264">Select **Fashion navigation hierarchy**.</span></span>
+4. <span data-ttu-id="cb887-265">W obszarze **Odzież męska** wybierz kategorię **Spodnie**, a następnie na skróconej karcie **Grupy atrybutów produktu** dodaj grupę atrybutów o nazwie **Pasek męski**.</span><span class="sxs-lookup"><span data-stu-id="cb887-265">Under **Menswear**, select the **Pants** category, and then, on the **Product attribute groups** FastTab, add an attribute group that is named **Men's belt**.</span></span>
+5. <span data-ttu-id="cb887-266">Zaznacz kategorię **Modne okulary przeciwsłoneczne** i zweryfikuj nowe atrybuty w grupie atrybutów **Modne okulary przeciwsłoneczne**, wybierając opcję **Wyświetlenie atrybutów**.</span><span class="sxs-lookup"><span data-stu-id="cb887-266">Select the **Fashion sunglasses** category, and verify the new attributes in the **Fashion Sunglasses** attribute group by selecting **View attributes**.</span></span>
+
+    <span data-ttu-id="cb887-267">W grupie atrybutów powinny być teraz widoczne nowe atrybuty **Kształt soczewek** i **Marka okularów przeciwsłonecznych**.</span><span class="sxs-lookup"><span data-stu-id="cb887-267">The attribute group should show the new **Lens shape** and **Sunglass brand** attributes.</span></span>
+
+6. <span data-ttu-id="cb887-268">W obszarze **Odzież męska** wybierz kategorię **Spodnie** i zweryfikuj atrybuty w grupie atrybutów **Pasek męski**, wybierając opcję **Wyświetlenie atrybutów**.</span><span class="sxs-lookup"><span data-stu-id="cb887-268">Under **Menswear**, select the **Pants** category, and verify the attributes for the **Men's belt** attribute group by selecting **View attributes**.</span></span>
+
+    <span data-ttu-id="cb887-269">W grupie atrybutów powinny być teraz widoczne atrybuty **Marka pasków męskich**, **Tkanina paska** i **Rozmiar paska**.</span><span class="sxs-lookup"><span data-stu-id="cb887-269">The attribute group should show the **Men's belt brand**, **Belt fabric**, and **Belt size** attributes.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="cb887-270">Tej procedury można również użyć w celu przypisania grup atrybutów do kategorii w hierarchiach Hierarchia kategorii nawigacji w kanale i Hierarchia uzupełniających kategorii produktów.</span><span class="sxs-lookup"><span data-stu-id="cb887-270">This procedure can also be used to assign attribute groups to categories in the Channel navigation category hierarchy and the Supplemental product category hierarchy.</span></span> <span data-ttu-id="cb887-271">W kroku 2 użyj następujących ścieżek nawigacji:</span><span class="sxs-lookup"><span data-stu-id="cb887-271">In step 2, use the following navigation paths:</span></span>
+>
+> - <span data-ttu-id="cb887-272">Sprzedaż detaliczna &gt; Zarządzanie kategoriami i produktami &gt; Kategorie nawigacji kanału</span><span class="sxs-lookup"><span data-stu-id="cb887-272">Retail &gt; Category and product management &gt; Channel navigation categories</span></span>
+> - <span data-ttu-id="cb887-273">Sprzedaż detaliczna &gt; Zarządzanie kategoriami i produktami &gt; Uzupełniające kategorie produktów</span><span class="sxs-lookup"><span data-stu-id="cb887-273">Retail &gt; Category and product management &gt; Supplemental product categories</span></span>
+
+### <a name="assign-attribute-groups-to-retail-stores"></a><span data-ttu-id="cb887-274">Przypisywanie grup atrybutów do kategorii sklepów sieci sprzedaży</span><span class="sxs-lookup"><span data-stu-id="cb887-274">Assign attribute groups to retail stores</span></span>
+
+<span data-ttu-id="cb887-275">Można skojarzyć jedną lub kilka grup atrybutów z jednym lub więcej sklepami sieci sprzedaży w hierarchii sklepów sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="cb887-275">One or more attribute groups can be associated with one or more retail stores in the retail store hierarchy.</span></span> <span data-ttu-id="cb887-276">Wtedy gdy produkty zostaną uwzględnione w określonych sklepach sieci sprzedaży, odziedziczą atrybuty włączone do grup atrybutów.</span><span class="sxs-lookup"><span data-stu-id="cb887-276">Then, when products are enriched for specific retail stores, they inherit the attributes that are included in the attribute groups.</span></span>
+
+1. <span data-ttu-id="cb887-277">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</span><span class="sxs-lookup"><span data-stu-id="cb887-277">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="cb887-278">Wybierz kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Kategorie kanału sprzedaży i atrybuty produktów**.</span><span class="sxs-lookup"><span data-stu-id="cb887-278">Go to **Retail** &gt; **Channel setup** &gt; **Channel categories and product attributes**.</span></span>
+3. <span data-ttu-id="cb887-279">Przypisz grupy atrybutów do kanału Houston:</span><span class="sxs-lookup"><span data-stu-id="cb887-279">Assign attribute groups to the Houston channel:</span></span>
+
+    1. <span data-ttu-id="cb887-280">Wybierz kanał **Houston**.</span><span class="sxs-lookup"><span data-stu-id="cb887-280">Select the **Houston** channel.</span></span>
+    2. <span data-ttu-id="cb887-281">Na skróconej karcie **Grupy atrybutów** wybierz opcję **Dodaj**, a następnie w polu **Nazwa** zaznacz pozycję **SharePointProvisionedProductAttributeGroup**.</span><span class="sxs-lookup"><span data-stu-id="cb887-281">On the **Attribute group** FastTab, select **Add**, and then, in the **Name** field, select **SharePointProvisionedProductAttributeGroup**.</span></span>
+    3. <span data-ttu-id="cb887-282">Wybierz ponownie przycisk **Dodaj**, a następnie w polu **Nazwa** zaznacz wartość **Pasek męski**.</span><span class="sxs-lookup"><span data-stu-id="cb887-282">Select **Add** again, and then, in the **Name** field, select **Men's belt**.</span></span>
+    4. <span data-ttu-id="cb887-283">Wybierz ponownie przycisk **Dodaj**, a następnie w polu **Nazwa** zaznacz wartość **Modne okulary przeciwsłoneczne**.</span><span class="sxs-lookup"><span data-stu-id="cb887-283">Select **Add** again, and then, in the **Name** field, select **Fashion Sunglasses**.</span></span>
+
+        > [!NOTE]
+        > <span data-ttu-id="cb887-284">Opcja pozwala określić, że ten kanał powinien dziedziczyć grupy atrybutów ze swojego kanału nadrzędnego w hierarchii.</span><span class="sxs-lookup"><span data-stu-id="cb887-284">An option lets you specify that this channel should inherit the attribute groups from its parent channel in the hierarchy.</span></span> <span data-ttu-id="cb887-285">Jeśli w opcji **Dziedzicz** ustawisz wartość **Tak**, węzeł kanału podrzędnego odziedziczy wszystkie grupy atrybutów oraz wszystkie znajdujące się w nich atrybuty.</span><span class="sxs-lookup"><span data-stu-id="cb887-285">If you set the **Inherit** option to **Yes**, the child channel node inherits all the attribute groups and all the attributes in those attribute groups.</span></span>
+
+4. <span data-ttu-id="cb887-286">Włącz atrybuty, tak aby były dostępne w kanale Houston:</span><span class="sxs-lookup"><span data-stu-id="cb887-286">Enable the attributes so that they are available in the Houston channel:</span></span>
+
+    1. <span data-ttu-id="cb887-287">W okienku akcji wybierz opcję **Metadane ustawiania atrybutu**.</span><span class="sxs-lookup"><span data-stu-id="cb887-287">On the Action Pane, select **Set attribute metadata**.</span></span>
+    2. <span data-ttu-id="cb887-288">Wybierz węzeł kategorii **Moda**, a następnie na skróconej karcie **Atrybuty produktu kanału** dla każdego atrybutu wybierz opcję **Uwzględnienie atrybutu**.</span><span class="sxs-lookup"><span data-stu-id="cb887-288">Select the **Fashion** category node, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.</span></span>
+    3. <span data-ttu-id="cb887-289">Wybierz węzeł kategorii **Akcesoria modowe**, zaznacz kategorię **Modne okulary przeciwsłoneczne**, a następnie na skróconej karcie **Atrybuty produktu kanału** dla każdego atrybutu wybierz opcję **Uwzględnienie atrybutu**.</span><span class="sxs-lookup"><span data-stu-id="cb887-289">Select the **Fashion Accessories** category node, select the **Fashion Sunglasses** category, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.</span></span>
+    4. <span data-ttu-id="cb887-290">Wybierz węzeł kategorii **Odzież męska**, zaznacz kategorię **Spodnie**, a następnie na skróconej karcie **Atrybuty produktu kanału** dla każdego atrybutu wybierz opcję **Uwzględnienie atrybutu**.</span><span class="sxs-lookup"><span data-stu-id="cb887-290">Select the **Menswear** category node, select the **Pants** category, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.</span></span>
+
+![Kategorie kanału sprzedaży i atrybuty produktów — grupy atrybutów](media/CCPAttrGrp.png)
+
+## <a name="overriding-attribute-values"></a><span data-ttu-id="cb887-292">Zastępowanie wartości atrybutów</span><span class="sxs-lookup"><span data-stu-id="cb887-292">Overriding attribute values</span></span>
+
+<span data-ttu-id="cb887-293">Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów na poziomie produktu.</span><span class="sxs-lookup"><span data-stu-id="cb887-293">The default values of attributes can be overridden for individual products at the product level.</span></span> <span data-ttu-id="cb887-294">Dla poszczególnych produktów można również zastąpić domyślne wartości atrybutów w określonych katalogach kierowanych do konkretnych kanałów sprzedaży detalicznej.</span><span class="sxs-lookup"><span data-stu-id="cb887-294">Default values can also be overridden for individual products in specific catalogs that are targeted at specific retail channels.</span></span>
+
+### <a name="override-the-attribute-values-of-an-individual-product"></a><span data-ttu-id="cb887-295">Zastępowanie wartości atrybutów w poszczególnych produktach</span><span class="sxs-lookup"><span data-stu-id="cb887-295">Override the attribute values of an individual product</span></span>
+
+1. <span data-ttu-id="cb887-296">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</span><span class="sxs-lookup"><span data-stu-id="cb887-296">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="cb887-297">Wybierz kolejno opcje **Handel detaliczny** &gt; **Zarządzanie kategoriami i produktami** &gt; **Zwolnione produkty według kategorii**.</span><span class="sxs-lookup"><span data-stu-id="cb887-297">Go to **Retail** &gt; **Category and product management** &gt; **Released products by category**.</span></span>
+3. <span data-ttu-id="cb887-298">Wybierz kolejno opcje **Moda** &gt; **Akcesoria modowe** &gt; węzeł kategorii **Modne okulary przeciwsłoneczne**.</span><span class="sxs-lookup"><span data-stu-id="cb887-298">Select the **Fashion** &gt; **Fashion Accessories** &gt; **Fashion Sunglasses** category node.</span></span>
+4. <span data-ttu-id="cb887-299">Wybierz żądany produkt w siatce.</span><span class="sxs-lookup"><span data-stu-id="cb887-299">Select the required product in the grid.</span></span> <span data-ttu-id="cb887-300">Następnie w okienku akcji na karcie **Produkt** w grupie **Konfiguracja** wybierz opcję **Atrybuty produktu**.</span><span class="sxs-lookup"><span data-stu-id="cb887-300">Then, on the Action Pane, on the **Product** tab, in the **Set up** group, select **Product attributes**.</span></span>
+5. <span data-ttu-id="cb887-301">Zaznacz atrybut w lewym okienku, a następnie zaktualizuj jego wartość w prawym okienku.</span><span class="sxs-lookup"><span data-stu-id="cb887-301">Select an attribute in the left pane, and then update its value in the right pane.</span></span>
+
+![Strona Szczegóły produktu — grupy atrybutów produktów](media/ProdDetailsProdAttrValues.png)
+
+### <a name="override-the-attribute-values-of-products-in-a-catalog"></a><span data-ttu-id="cb887-303">Zastępowanie wartości atrybutów produktów w katalogu</span><span class="sxs-lookup"><span data-stu-id="cb887-303">Override the attribute values of products in a catalog</span></span>
+
+1. <span data-ttu-id="cb887-304">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</span><span class="sxs-lookup"><span data-stu-id="cb887-304">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="cb887-305">Wybierz kolejno opcje **Handel detaliczny** &gt; **Zarządzanie katalogami** &gt; **Wszystkie katalogi**.</span><span class="sxs-lookup"><span data-stu-id="cb887-305">Go to **Retail** &gt; **Catalog management** &gt; **All catalogs**.</span></span>
+3. <span data-ttu-id="cb887-306">Wybierz katalog **Fabrikam Base Catalog**.</span><span class="sxs-lookup"><span data-stu-id="cb887-306">Select the **Fabrikam Base Catalog** catalog.</span></span>
+4. <span data-ttu-id="cb887-307">Wybierz kolejno opcje **Moda** &gt; **Akcesoria modowe** &gt; węzeł kategorii **Modne okulary przeciwsłoneczne**.</span><span class="sxs-lookup"><span data-stu-id="cb887-307">Select the **Fashion** &gt; **Fashion Accessories** &gt; **Fashion Sunglasses** category node.</span></span>
+5. <span data-ttu-id="cb887-308">Na skróconej karcie **Produkty** wybierz wymagany produkt, a następnie nad siatką produktów wybierz opcję **Atrybuty**.</span><span class="sxs-lookup"><span data-stu-id="cb887-308">On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.</span></span>
+6. <span data-ttu-id="cb887-309">Na następnej skróconej karcie zaktualizuj wartości wymaganych atrybutów:</span><span class="sxs-lookup"><span data-stu-id="cb887-309">On the following FastTabs, update the values of the required attributes:</span></span>
+
+    - <span data-ttu-id="cb887-310">Udostępnione media produktu</span><span class="sxs-lookup"><span data-stu-id="cb887-310">Shared product media</span></span>
+    - <span data-ttu-id="cb887-311">Udostępnione atrybuty produktu</span><span class="sxs-lookup"><span data-stu-id="cb887-311">Shared product attributes</span></span>
+    - <span data-ttu-id="cb887-312">Kanał medialny</span><span class="sxs-lookup"><span data-stu-id="cb887-312">Channel media</span></span>
+    - <span data-ttu-id="cb887-313">Atrybuty produktu kanału</span><span class="sxs-lookup"><span data-stu-id="cb887-313">Channel product attributes</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="cb887-314">Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="cb887-314">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
+
+![Grupy atrybutów produktów z katalogu](media/CatalogProdAttrValues.png)
+
+### <a name="override-the-attribute-values-of-products-in-a-channel"></a><span data-ttu-id="cb887-316">Zastępowanie wartości atrybutów produktów w kanale</span><span class="sxs-lookup"><span data-stu-id="cb887-316">Override the attribute values of products in a channel</span></span>
+
+1. <span data-ttu-id="cb887-317">Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.</span><span class="sxs-lookup"><span data-stu-id="cb887-317">Sign in to the back-office client as a retail merchandising manager.</span></span>
+2. <span data-ttu-id="cb887-318">Wybierz kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Kategorie kanału sprzedaży i atrybuty produktów**.</span><span class="sxs-lookup"><span data-stu-id="cb887-318">Go to **Retail** &gt; **Channel setup** &gt; **Channel categories and product attributes**.</span></span>
+3. <span data-ttu-id="cb887-319">Wybierz kanał **Houston**.</span><span class="sxs-lookup"><span data-stu-id="cb887-319">Select the **Houston** channel.</span></span>
+4. <span data-ttu-id="cb887-320">Na skróconej karcie **Produkty** wybierz wymagany produkt, a następnie nad siatką produktów wybierz opcję **Atrybuty**.</span><span class="sxs-lookup"><span data-stu-id="cb887-320">On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="cb887-321">Jeżeli nie są dostępne żadne produkty, dodaj produkty, wybierając opcję **Dodaj** na skróconej karcie **Produkty**, a następnie wybierając żądane produkty w oknie dialogowym **Dodaj produkty**.</span><span class="sxs-lookup"><span data-stu-id="cb887-321">If no products are available, add products by selecting **Add** on the **Products** FastTab and then selecting the required products in the **Add products** dialog box.</span></span>
+
+5. <span data-ttu-id="cb887-322">Na następnej skróconej karcie zaktualizuj wartości wymaganych atrybutów:</span><span class="sxs-lookup"><span data-stu-id="cb887-322">On the following FastTabs, update the values of the required attributes:</span></span>
+
+    - <span data-ttu-id="cb887-323">Udostępnione media produktu</span><span class="sxs-lookup"><span data-stu-id="cb887-323">Shared product media</span></span>
+    - <span data-ttu-id="cb887-324">Udostępnione atrybuty produktu</span><span class="sxs-lookup"><span data-stu-id="cb887-324">Shared product attributes</span></span>
+    - <span data-ttu-id="cb887-325">Kanał medialny</span><span class="sxs-lookup"><span data-stu-id="cb887-325">Channel media</span></span>
+    - <span data-ttu-id="cb887-326">Atrybuty produktu kanału</span><span class="sxs-lookup"><span data-stu-id="cb887-326">Channel product attributes</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="cb887-327">Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="cb887-327">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>

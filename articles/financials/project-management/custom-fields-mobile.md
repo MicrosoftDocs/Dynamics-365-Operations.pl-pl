@@ -1,591 +1,435 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="custom-fields-mobile.md" target-language="pl-PL">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>custom-fields-mobile.2a9e5e.4343c875da05641c57b7784bf52f1c814dd26d20.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>4343c875da05641c57b7784bf52f1c814dd26d20</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>19859d8566a8c7840066b2c10c6b08b67f1b83f4</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>06/04/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\project-management\custom-fields-mobile.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile app on iOS and Android</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Implementowanie pól niestandardowych aplikacji mobilnej Microsoft Dynamics 365 Project Timesheet w systemach iOS i Android</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides common patterns for using extensions to implement custom fields.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">W tym temacie przedstawiono typowe wzorce używania rozszerzeń do implementowania pól niestandardowych.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile app on iOS and Android</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Implementowanie pól niestandardowych aplikacji mobilnej Microsoft Dynamics 365 Project Timesheet w systemach iOS i Android</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic provides common patterns for using extensions to implement custom fields.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">W tym temacie przedstawiono typowe wzorce używania rozszerzeń do implementowania pól niestandardowych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The following topics are covered:</source><target logoport:matchpercent="80" state="translated" state-qualifier="fuzzy-match">Omawiane są następujące tematy:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>The various data types that the custom field framework supports</source><target logoport:matchpercent="70" state="translated" state-qualifier="x-fuzzy-match-unedited">Różne typy danych obsługiwane przez strukturę pól niestandardowych</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>How to show read-only or editable fields on timesheet entries, and save user-provided values back to the database</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Sposób wyświetlania pól tylko do odczytu lub edytowalnych we wpisach karty czasu pracy oraz zapisywania wartości wprowadzonych przez użytkownika z powrotem do bazy danych</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>How to show read-only fields on the timesheet header</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Sposób wyświetlania pól tylko do odczytu w nagłówku karty czasu pracy</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>How to integrate other custom business logic to enter default values in fields and do additional validation</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Sposób integrowania innej niestandardowej logiki biznesowej w celu wprowadzania wartości domyślnych w polach i przeprowadzania dodatkowej weryfikacji</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Audience</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Odbiorcy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>This topic is intended for developers who are integrating their custom fields into the Microsoft Dynamics 365 Project Timesheet mobile application that is available for Apple iOS and Google Android.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ten temat jest przeznaczony dla deweloperów integrujących pola niestandardowe w aplikacji mobilnej Microsoft Dynamics 365 Project Timesheet dostępnej na systemy Apple iOS i Google Android.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>The assumption is that readers are familiar with X++ development and project timesheet functionality.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Przyjmuje się, że czytelnicy umieją programować w języku X++ i znają funkcje karty czasu pracy projektu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Data contract – TSTimesheetCustomField X++ class</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Umowa dotycząca danych — klasa X++ TSTimesheetCustomField</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>The <bpt id="p1">**</bpt>TSTimesheetCustomField<ept id="p1">**</ept> class is the X++ data contract class that represents information about a custom field for timesheet functionality.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Klasa <bpt id="p1">**</bpt>TSTimesheetCustomField<ept id="p1">**</ept> jest klasą umowy dotyczącej danych języka X++, która reprezentuje informacje o polu niestandardowym dla funkcji karty czasu pracy.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Lists of the custom field objects are passed on both the TSTimesheetDetails data contract and the TSTimesheetEntry data contract to show custom fields in the mobile app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Listy obiektów pól niestandardowych są przekazywane zarówno w umowie dotyczącej danych TSTimesheetDetails, jak i umowie dotyczącej danych TSTimesheetEntry w celu wyświetlania pól niestandardowych w aplikacji mobilnej.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">**</bpt>TSTimesheetDetails<ept id="p1">**</ept> - The timesheet header contract.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSTimesheetDetails<ept id="p1">**</ept> — umowa dotycząca nagłówka karty czasu pracy.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">**</bpt>TSTimesheetEntry<ept id="p1">**</ept> - The timesheet transaction contract.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSTimesheetEntry<ept id="p1">**</ept> — umowa dotycząca transakcji karty czasu pracy</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Groups of these objects that have the same project information and <bpt id="p1">**</bpt>timesheetLineRecId<ept id="p1">**</ept> value constitute a line.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Grupy tych obiektów, których same informacje o projekcie i wartość <bpt id="p1">**</bpt>timesheetLineRecId<ept id="p1">**</ept> są takie same, tworzą wiersz.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>fieldBaseType (Types)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">fieldBaseType (typy)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>The <bpt id="p1">**</bpt>FieldBaseType<ept id="p1">**</ept> property on the <bpt id="p2">**</bpt>TsTimesheetCustom<ept id="p2">**</ept> object determines the type of the field that appears in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Właściwość <bpt id="p1">**</bpt>FieldBaseType<ept id="p1">**</ept> obiektu <bpt id="p2">**</bpt>TsTimesheetCustom<ept id="p2">**</ept> określa typ pola, które pojawia się w aplikacji.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>The following <bpt id="p1">**</bpt>Types<ept id="p1">**</ept> values that are supported.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Obsługiwane są następujące wartości <bpt id="p1">**</bpt>Typu<ept id="p1">**</ept>:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Types value</source><target logoport:matchpercent="81" state="translated" state-qualifier="fuzzy-match">Wartości typu</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Type</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Typ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Notes</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Notatki</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>0</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>String (and Enum)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ciąg (i Wyliczenie)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The field appears as a text field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Pole jest wyświetlane jako pole tekstowe.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>1</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Integer</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Wartość całkowita</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>The value is shown as a number without decimal places.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Wartość jest pokazywana jako liczba bez miejsc dziesiętnych.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>2</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Real</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Rzeczywisty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>The value is shown as a number that has decimal places.</source><target logoport:matchpercent="84" state="translated" state-qualifier="fuzzy-match">Wartość jest pokazywana jako liczba z miejscami dziesiętnymi.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>To show the real value as a currency in the app, use the <bpt id="p1">**</bpt>fieldExtenededType<ept id="p1">**</ept> property.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Aby w aplikacji była wyświatlana wartość rzeczywista w walucie, należy skorzystać z właściwości <bpt id="p1">**</bpt>fieldExtenededType<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>You can use the <bpt id="p1">**</bpt>numberOfDecimals<ept id="p1">**</ept> property to set the number of decimal places that are shown.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Właściwość <bpt id="p1">**</bpt>numberOfDecimals<ept id="p1">**</ept> służy do ustawiania liczby wyświetlanych miejsc dziesiętnych.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>3</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Date</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Date formats are determined by the user's <bpt id="p1">**</bpt>Date, times, and number format<ept id="p1">**</ept> setting that is specified under <bpt id="p2">**</bpt>Language and country/region preference<ept id="p2">**</ept> in <bpt id="p3">**</bpt>User options<ept id="p3">**</ept>.</source><target logoport:matchpercent="0" state="translated">Formaty daty zależą od ustawienia <bpt id="p1">**</bpt>Format daty, godziny i liczb<ept id="p1">**</ept> użytkownika, które jest określone w sekcji <bpt id="p2">**</bpt>Preferencje dotyczące języka i kraju/regionu<ept id="p2">**</ept> w oknie <bpt id="p3">**</bpt>Opcje użytkownika<ept id="p3">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>4</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Boolean</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Wartość logiczna</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>15</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">15</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>GUID</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">GUID</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>16</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">16</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Int64</source><target logoport:matchpercent="0" state="translated">Int64</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>If the <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> property isn't provided on the <bpt id="p2">**</bpt>TSTimesheetCustomField<ept id="p2">**</ept> object, a free-text field is provided to the user.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jeśli właściwość <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> nie została podana w obiekcie <bpt id="p2">**</bpt>TSTimesheetCustomField<ept id="p2">**</ept>, użytkownikowi jest udostępniane pole tekstu niezależnego.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>The <bpt id="p1">**</bpt>stringLength<ept id="p1">**</ept> property can be used to set the maximum string length that users can enter.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Właściwość <bpt id="p1">**</bpt>stringLength<ept id="p1">**</ept> może służyć do ustawienia maksymalnej długości ciągu, jaką użytkownicy mogą wprowadzać.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>If the <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> property is provided on the <bpt id="p2">**</bpt>TSTimesheetCustomField<ept id="p2">**</ept> object, those list elements are the only values that users can select by using option buttons (radio buttons).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jeśli właściwość <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> jest podana w obiekcie <bpt id="p2">**</bpt>TSTimesheetCustomField<ept id="p2">**</ept>, te elementy listy są jedynymi wartościami, które użytkownicy mogą wybierać za pomocą przycisków opcji (przycisków radiowych).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>In this case, the string field can act as an enum value for the purpose of user entry.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">W takim przypadku pole ciągu może pełnić funkcję wartości wyliczenia na potrzeby wprowadzania wartości przez użytkownika.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>To save the value to the database as an enum, manually map the string value back to the enum value before you save to the database by using chain of command (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Aby zapisać wartość w bazie danych jako wyliczenie, należy ręcznie zmapować wartość ciągu z powrotem na wartość wyliczenia przed zapisaniem jej w bazie danych za pomocą łańcucha poleceń (stosowny przykład jest pokazany w sekcji „Zapisywanie wpisu karty czasu pracy zwrotnie z aplikacji w bazie danych przy użyciu łańcucha poleceń na klasie TSTimesheetEntryService”).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>fieldExtendedType (TSCustomFieldExtendedType)</source><target logoport:matchpercent="0" state="translated">fieldExtendedType (TSCustomFieldExtendedType)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>You can use this property to format real values as currency.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ta właściwość służy do formatowania wartości rzeczywistych w walucie.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>This approach is applicable only when the <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> value is <bpt id="p2">**</bpt>Real<ept id="p2">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Takie podejście ma zastosowanie tylko wtedy, gdy wartością <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> jest <bpt id="p2">**</bpt>Rzeczywista<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source><bpt id="p1">**</bpt>TSCustomFieldExtendedType:None<ept id="p1">**</ept> – No formatting is applied.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSCustomFieldExtendedType: brak<ept id="p1">**</ept> — formatowanie nie jest stosowane.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source><bpt id="p1">**</bpt>TSCustomFieldExtendedType::Currency<ept id="p1">**</ept> – Format the value as currency.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">**</bpt>TSCustomFieldExtendedType::Waluta<ept id="p1">**</ept> — formatowanie wartości jako waluty.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>When currency formatting is active, the <bpt id="p1">**</bpt>stringValue<ept id="p1">**</ept> field can be used pass the currency code that should be shown in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jeśli formatowanie waluty jest aktywne, przy użyciu pola <bpt id="p1">**</bpt>stringValue<ept id="p1">**</ept> można przekazać kod waluty, który ma być wyświetlany w aplikacji.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>The value is a read-only value.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Wartość jest tylko do odczytu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>The <bpt id="p1">**</bpt>realValue<ept id="p1">**</ept> field contains the money amount that should be saved to the database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Pole <bpt id="p1">**</bpt>realValue<ept id="p1">**</ept> zawiera kwotę pieniędzy, która ma zostać zapisana w bazie danych.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>fieldSection (TSCustomFieldSection)</source><target logoport:matchpercent="0" state="translated">fieldSection (TSCustomFieldSection)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>You can use this property specify where the custom field should appear in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ta właściwość służy do określania, gdzie w aplikacji ma być wyświetlane pole niestandardowe.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source><bpt id="p1">**</bpt>TSCustomFieldSection::Header<ept id="p1">**</ept> – The field will appear in the <bpt id="p2">**</bpt>View more details<ept id="p2">**</ept> section in the app.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">**</bpt>TSCustomFieldSection::Nagłówek<ept id="p1">**</ept> — pole będzie wyświetlane w sekcji <bpt id="p2">**</bpt>Wyświetl więcej szczegółów<ept id="p2">**</ept> w aplikacji.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>These fields are always read-only.</source><target logoport:matchpercent="83" state="translated" state-qualifier="fuzzy-match">Te pola są zawsze tylko do odczytu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source><bpt id="p1">**</bpt>TSCustomFieldSection::Line<ept id="p1">**</ept> – The field will appear after all the out-of-box line fields on timesheet entries.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">**</bpt>TSCustomFieldSection::Wiersz<ept id="p1">**</ept> — pole będzie wyświetlane po wszystkich polach gotowych wierszy we wpisach karty czasu pracy.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>These fields can be either editable or read-only.</source><target logoport:matchpercent="0" state="translated">Mogą to być pola z możliwością edycji lub tylko do odczytu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>fieldName (FieldNameShort)</source><target logoport:matchpercent="0" state="translated">fieldName (FieldNameShort)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>This property identifies the field when values that the app provides are saved back to the database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ta właściwość identyfikuje pole, gdy wartości dostarczone przez aplikację są zapisywane z powrotem w bazie danych.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>tableName (TableNameShort)</source><target logoport:matchpercent="0" state="translated">tableName (TableNameShort)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>This property identifies the field when values that the app provides are saved back to the database.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Ta właściwość identyfikuje pole, gdy wartości dostarczone przez aplikację są zapisywane z powrotem w bazie danych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>isEditable (NoYes)</source><target logoport:matchpercent="0" state="translated">isEditable (NoYes)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Set this property to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to specify that the field in the timesheet entry section should be editable by users.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jeśli użytkownicy mają mieć możliwość edytowania pola w sekcji wpisu karty czasy pracy, należy ustawić wartość <bpt id="p1">**</bpt>Tak<ept id="p1">**</ept> tej właściwości.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Set the property to <bpt id="p1">**</bpt>No<ept id="p1">**</ept> to make the field read-only.</source><target logoport:matchpercent="0" state="translated">Jeśli pole ma być tylko do odczytu, należy ustawić wartość <bpt id="p1">**</bpt>Nie<ept id="p1">**</ept> właściwości.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>isMandatory (NoYes)</source><target logoport:matchpercent="0" state="translated">isMandatory (NoYes)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Set this property to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to specify that the field in the timesheet entry section should be mandatory.</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Jeśli pole w sekcji wpisu karty czasy pracy ma być obowiązkowe, należy ustawić wartość <bpt id="p1">**</bpt>Tak<ept id="p1">**</ept> tej właściwości.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>label (str)</source><target logoport:matchpercent="0" state="translated">label (str)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>This property specifies the label that is shown next the field in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ta właściwość określa etykietę wyświetlaną obok pola w aplikacji.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>stringOptions (List of Strings)</source><target logoport:matchpercent="0" state="translated">stringOptions (lista ciągów)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>This property is applicable only when <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> is set to <bpt id="p2">**</bpt>String<ept id="p2">**</ept>.</source><target logoport:matchpercent="0" state="translated">Ta właściwość ma znaczenie tylko wtedy, gdy ustawioną wartością właściwości <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> jest <bpt id="p2">**</bpt>Ciąg<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>If <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> is set, the string values that are available for selection via option buttons (radio buttons) are specified by the strings in the list.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jeśli jest ustawiona właściwość <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept>, wartości ciągów, które użytkownik może wybrać za pomocą przycisków opcji (przycisków radiowych), są określane przez ciągi na liście.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>If no strings are provided, free-text entry in the string field is allowed (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).</source><target logoport:matchpercent="61" state="translated" state-qualifier="fuzzy-match">Jeśli nie podano żadnych ciągów, w polu ciągu jest dozwolony tekst niezależny (stosowny przykład jest pokazany w sekcji „Zapisywanie wpisu karty czasu pracy zwrotnie z aplikacji w bazie danych przy użyciu łańcucha poleceń na klasie TSTimesheetEntryService”).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>stringLength (int)</source><target logoport:matchpercent="0" state="translated">stringLength (int)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>This property specifies the maximum length for a string field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ta właściwość określa maksymalną długość pola ciągu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>It's applicable only when <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> is set to <bpt id="p2">**</bpt>String<ept id="p2">**</ept>.</source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match">Ma znaczenie tylko wtedy, gdy ustawioną wartością właściwości <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> jest <bpt id="p2">**</bpt>Ciąg<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>numberOfDecimals (int)</source><target logoport:matchpercent="0" state="translated">numberOfDecimals (int)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>This property specifies the number of decimal places that are shown for a real field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ta właściwość określa liczbę miejsc dziesiętnych wyświetlanych dla pola wartości rzeczywistej.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>It's applicable only when <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> is set to <bpt id="p2">**</bpt>Real<ept id="p2">**</ept>.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">Ma znaczenie tylko wtedy, gdy ustawioną wartością właściwości <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> jest <bpt id="p2">**</bpt>Rzeczywista<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>orderSequence (int)</source><target logoport:matchpercent="0" state="translated">orderSequence (int)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>This property controls the order in which the custom fields are shown in the app when more than one custom field is specified.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ta właściwość określa kolejność wyświetlania pól niestandardowych w aplikacji w przypadku określenia więcej niż jednego pola niestandardowego.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Fields that have lower numbers are shown first.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Pola, które mają mniejsze numery, są wyświetlane jako pierwsze.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>booleanValue (boolean)</source><target logoport:matchpercent="70" state="translated" state-qualifier="x-fuzzy-match-unedited">booleanValue (wartość logiczna)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>For fields of the <bpt id="p1">**</bpt>Boolean<ept id="p1">**</ept> type, this property passes the Boolean value of the field between the server and the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">W przypadku pól typu <bpt id="p1">**</bpt>Wartość logiczna<ept id="p1">**</ept> ta właściwość przekazuje wartość logiczną pola między serwerem i aplikacją.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>guidValue (guid)</source><target logoport:matchpercent="0" state="translated">guidValue (guid)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>For fields of the <bpt id="p1">**</bpt>GUID<ept id="p1">**</ept> type, this property passes the globally unique identifier (GUID) value of the field between the server and the app.</source><target logoport:matchpercent="81" state="translated" state-qualifier="fuzzy-match">W przypadku pól typu <bpt id="p1">**</bpt>GUID<ept id="p1">**</ept> ta właściwość przekazuje wartość unikatowego identyfikatora globalnego (GUID) pola między serwerem i aplikacją.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>int64Value (int64)</source><target logoport:matchpercent="0" state="translated">int64Value (int64)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>For fields of the <bpt id="p1">**</bpt>Int64<ept id="p1">**</ept> type, this property passes the int64 value of the field between the server and the app.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">W przypadku pól typu <bpt id="p1">**</bpt>Int64<ept id="p1">**</ept> ta właściwość przekazuje wartość int64 pola między serwerem i aplikacją.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>intValue (int)</source><target logoport:matchpercent="0" state="translated">intValue (int)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>For fields of the <bpt id="p1">**</bpt>Int<ept id="p1">**</ept> type, this property passes the int value of the field between the server and the app.</source><target logoport:matchpercent="92" state="translated" state-qualifier="fuzzy-match">W przypadku pól typu <bpt id="p1">**</bpt>Int<ept id="p1">**</ept> ta właściwość przekazuje wartość int pola między serwerem i aplikacją.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>realValue (real)</source><target logoport:matchpercent="0" state="translated">realValue (real)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>For fields of the <bpt id="p1">**</bpt>Real<ept id="p1">**</ept> type, this property passes the real value of the field between the server and the app .</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">W przypadku pól typu <bpt id="p1">**</bpt>Rzeczywista<ept id="p1">**</ept> ta właściwość przekazuje wartość rzeczywistą pola między serwerem i aplikacją.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>stringValue (str)</source><target logoport:matchpercent="0" state="translated">stringValue (str)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>For fields of the <bpt id="p1">**</bpt>String<ept id="p1">**</ept> type, this property passes the string value of the field between the server and the app.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">W przypadku pól typu <bpt id="p1">**</bpt>Ciąg<ept id="p1">**</ept> ta właściwość przekazuje wartość ciągu pola między serwerem i aplikacją.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>It's also used for fields of the <bpt id="p1">**</bpt>Real<ept id="p1">**</ept> type that are formatted as currency.</source><target logoport:matchpercent="0" state="translated">Jest ona również stosowana do pól typu <bpt id="p1">**</bpt>Rzeczywista<ept id="p1">**</ept>, które są sformatowane jako waluta.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>For those fields, the property is used to pass the currency code to the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">W przypadku tych pól właściwość służy do przekazania kodu waluty do aplikacji.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>dateValue (date)</source><target logoport:matchpercent="0" state="translated">dateValue (data)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>For fields of the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> type, this property passes the date value of the field between the server and the app.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">W przypadku pól typu <bpt id="p1">**</bpt>Data<ept id="p1">**</ept> ta właściwość przekazuje wartość daty pola między serwerem i aplikacją.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Show and save a custom field in the timesheet entry section</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Wyświetlanie i zapisywanie pola niestandardowego w sekcji wpisu karty czasu pracy</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Below is a screenshot from the mobile app of a timesheet entry creation.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Poniżej znajduje się zrzut ekranu tworzenia wpisu karty czasu pracy w aplikacji mobilnej.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>It shows the out-of-box fields and a custom field in the "Time entry" section called "Test string" with an enum value of "Second option" already set.</source><target logoport:matchpercent="0" state="translated">Są w nim widoczne gotowe pola oraz pole niestandardowe w sekcji „Wpis czasu” o nazwie „Ciąg testowy” z ustawioną wartością wyliczenia „Druga opcja”.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Test string custom field in the app</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Pole niestandardowe ciągu testowego w aplikacji</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Below is a screenshot from the mobile app of the user selecting one of the enum options available for the "Test string" custom field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Poniżej znajduje się zrzut ekranu, na którym użytkownik wybiera jedną z opcji wyliczenia dostępnych w polu niestandardowym „Ciąg testowy” w aplikacji mobilnej.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>The two options are "First option" and "Second option" shown as radio buttons.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Opcje „Pierwsza opcja” i „Druga opcja” są wyświetlane jako przyciski radiowe.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>The second option is currently selected.</source><target logoport:matchpercent="0" state="translated">Zaznaczona jest druga opcja.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Option buttons (radio buttons) for the Test string custom field</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Przyciski opcji (przyciski radiowe) pola niestandardowego ciągu testowego</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Extend the TSTimesheetLine table so that it has a custom field</source><target logoport:matchpercent="0" state="translated">Rozszerzanie tabeli TSTimesheetLine o pole niestandardowe</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>In typical scenarios, it's likely that the data for a custom field in the timesheet entry section will be saved to the TSTimesheetLine table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">W typowych scenariuszach pole niestandardowe sekcji wpisu karty czasu pracy jest zazwyczaj zapisywane w tabeli TSTimesheetLine.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>However, other tables can be used if the data can be retrieved based on a TSTimesheetTrans record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Możliwe jest jednak użycie innych tabel, jeśli dane mogą być pobierane na podstawie dostarczonego rekordu TSTimesheetTrans lub jeśli nie ma on określonego kontekstu rekordów (na przykład, jeśli w parametrach projektu pole jest ustawione jako tylko do odczytu).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Note that custom fields don't have to have any backing database records.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Należy pamiętać, że pola niestandardowe nie muszą zawierać żadnych kopii zapasowych rekordów bazy danych.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>They can be dynamically generated based on X++ logic.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Można je dynamicznie generować na podstawie logiki X++.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>This approach can be useful in read-only scenarios (see the “Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to fill in timesheet details” section for an example of dynamically generated custom field values.)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ta metoda może być przydatna w scenariuszach tylko do odczytu (przykłady dynamicznie generowanych wartości pól niestandardowych są pokazane w sekcji „Wypełnianie szczegółów karty czasy pracy przy użyciu łańcucha poleceń na klasie TSTimesheetDetails class, metodzie buildCustomFieldListForHeader”).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Below is a screenshot from Visual Studio of the Application Object Tree.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Poniżej znajduje się zrzut ekranu drzewa obiektów aplikacji z programu Visual Studio.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>It shows an extension of the TSTimesheetLine table with the TestLineString field added as a custom field.</source><target logoport:matchpercent="0" state="translated">Jest w nim widoczne rozszerzenie tabeli TSTimesheetLine z polem TestLineString dodanym jako pole niestandardowe.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Line string</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ciąg wiersza</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the timesheet entry section</source><target logoport:matchpercent="0" state="translated">Wyświetlanie pola w sekcji wpisu karty czasu pracy przy użyciu łańcucha poleceń na metodzie buildCustomFieldList klasy TSTimesheetSettings</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>This code controls the display settings for the field in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ten kod steruje ustawieniami wyświetlania pola w aplikacji.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Na przykład określa typ pola, etykietę, czy pole jest wymagane oraz sekcję, w której jest wyświetlane pole.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>The following example shows a string field on time entries.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Poniższy przykład przedstawia pole ciągu we wpisach czasu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>This field has two options, <bpt id="p1">**</bpt>First option<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Second option<ept id="p2">**</ept>, that are available via option buttons (radio buttons).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">W tym polu dostępne są dwie opcje, <bpt id="p1">**</bpt>Pierwsza opcja<ept id="p1">**</ept> i <bpt id="p2">**</bpt>Druga opcja<ept id="p2">**</ept>, które są dostępne za pośrednictwem przycisków opcji (przycisków radiowych).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>The field in the app is associated with the <bpt id="p1">**</bpt>TestLineString<ept id="p1">**</ept> field that is added to the TSTimesheetLine table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Pole w aplikacji jest skojarzone z polem <bpt id="p1">**</bpt>TestLineString<ept id="p1">**</ept>, które jest dodawane do tabeli TSTimesheetLine.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Note the use of the <bpt id="p1">**</bpt>TSTimesheetCustomField::newFromMetatdata()<ept id="p1">**</ept> method to simplify the initialization of the custom field properties: <bpt id="p2">**</bpt>fieldBaseType<ept id="p2">**</ept>, <bpt id="p3">**</bpt>tableName<ept id="p3">**</ept>, <bpt id="p4">**</bpt>fieldname<ept id="p4">**</ept>, <bpt id="p5">**</bpt>label<ept id="p5">**</ept>, <bpt id="p6">**</bpt>isEditable<ept id="p6">**</ept>, <bpt id="p7">**</bpt>isMandatory<ept id="p7">**</ept>, <bpt id="p8">**</bpt>stringLength<ept id="p8">**</ept>, and <bpt id="p9">**</bpt>numberOfDecimals<ept id="p9">**</ept>.</source><target logoport:matchpercent="0" state="translated">Należy zwrócić uwagę na użycie metody <bpt id="p1">**</bpt>TSTimesheetCustomField::newFromMetatdata()<ept id="p1">**</ept> w celu uproszczenia inicjowania właściwości pól niestandardowych: <bpt id="p2">**</bpt>fieldBaseType<ept id="p2">**</ept>, <bpt id="p3">**</bpt>tableName<ept id="p3">**</ept>, <bpt id="p4">**</bpt>fieldname<ept id="p4">**</ept>, <bpt id="p5">**</bpt>label<ept id="p5">**</ept>, <bpt id="p6">**</bpt>isEditable<ept id="p6">**</ept>, <bpt id="p7">**</bpt>isMandatory<ept id="p7">**</ept>, <bpt id="p8">**</bpt>stringLength<ept id="p8">**</ept> i <bpt id="p9">**</bpt>numberOfDecimals<ept id="p9">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>You can also set these parameters manually, as you prefer.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Parametry te można również ustawić ręcznie.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Use chain of command on the buildCustomFieldListForEntry method of the TSTimesheetEntry class to enter values in a timesheet entry</source><target logoport:matchpercent="0" state="translated">Wprowadzanie wartości we wpisie karty czasu pracy użyciu łańcucha poleceń na metodzie buildCustomFieldListForEntry klasy TSTimesheetEntry</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>The <bpt id="p1">**</bpt>buildCustomFieldListForEntry<ept id="p1">**</ept> method is used to enter values on the saved timesheet lines in the mobile app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Metoda <bpt id="p1">**</bpt>buildCustomFieldListForEntry<ept id="p1">**</ept> służy do wprowadzania wartości w zapisanych wierszach karty czasu pracy w aplikacji mobilnej.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>It takes a TSTimesheetTrans record as a parameter.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Przyjmuje ona rekord TSTimesheetTrans jako parametr.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Fields from that record can be used to fill in the custom field value in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Pola z tego rekordu mogą być używane do wstawiania wartości pola niestandardowego w aplikacji.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database</source><target logoport:matchpercent="0" state="translated">Zapisywanie wpisu karty czasu pracy zwrotnie z aplikacji w bazie danych przy użyciu łańcucha poleceń na klasie TSTimesheetEntryService</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>To save a custom field back to the database in typical usage, you must extend multiple methods:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Aby zapisać pole niestandardowe z powrotem w bazie danych w typowym użyciu, należy rozszerzyć wiele metod:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>The <bpt id="p1">**</bpt>timesheetLineNeedsUpdating<ept id="p1">**</ept> method is used to determine whether the line record has been changed by the user in the app and must be saved to the database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Metoda <bpt id="p1">**</bpt>timesheetLineNeedsUpdating<ept id="p1">**</ept> służy do określenia, czy rekord wiersza został zmieniony przez użytkownika w aplikacji i musi zostać zapisany w bazie danych.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>If performance isn't a concern, this method can be simplified so that it always returns <bpt id="p1">**</bpt>true<ept id="p1">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jeśli wydajność nie jest istotna, można uprościć tę metodę, tak aby zawsze zwracała wartość <bpt id="p1">**</bpt>true<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>The <bpt id="p1">**</bpt>populateTimesheetLineFromEntryDuringCreate<ept id="p1">**</ept> and <bpt id="p2">**</bpt>populateTimesheetLineFromEntryDuringUpdate<ept id="p2">**</ept> methods can be extended so that they enter values in the TSTimesheetLine database record from the TSTimesheetEntry data contract record that is provided.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Metody <bpt id="p1">**</bpt>populateTimesheetLineFromEntryDuringCreate<ept id="p1">**</ept> i <bpt id="p2">**</bpt>populateTimesheetLineFromEntryDuringUpdate<ept id="p2">**</ept> można rozszerzać, tak aby wprowadzały w rekordzie bazy danych TSTimesheetLine wartości z dostarczonego rekordu umowy dotyczącej danych TSTimesheetEntry.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>In the example that follows, notice how the mapping between the database field and the entry field is manually done via X++ code.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">W poniższym przykładzie należy zauważyć, że mapowanie między polem bazy danych i polem wprowadzania jest wykonywane ręcznie za pomocą kodu X++.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>The <bpt id="p1">**</bpt>populateTimesheetWeekFromEntry<ept id="p1">**</ept> method can also be extended if the custom field that is mapped to the <bpt id="p2">**</bpt>TSTimesheetEntry<ept id="p2">**</ept> object must write back to the TSTimesheetLineweek database table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Metodę <bpt id="p1">**</bpt>populateTimesheetWeekFromEntry<ept id="p1">**</ept> można również rozszerzyć, jeśli pole niestandardowe zmapowane do obiektu <bpt id="p2">**</bpt>TSTimesheetEntry<ept id="p2">**</ept> musi zostać zapisane z powrotem w tabeli bazy danych TSTimesheetLineweek.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>The following example saves the <bpt id="p1">**</bpt>firstOption<ept id="p1">**</ept> or <bpt id="p2">**</bpt>secondOption<ept id="p2">**</ept> value that the user selects to the database as a raw string value.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">W poniższym przykładzie wartość <bpt id="p1">**</bpt>firstOption<ept id="p1">**</ept> lub <bpt id="p2">**</bpt>secondOption<ept id="p2">**</ept>, zależnie od wyboru użytkownika, jest zapisywana w bazie danych jako wartość ciągu nieprzetworzonego.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>If the database field is a field of the <bpt id="p1">**</bpt>Enum<ept id="p1">**</ept> type, those values can be manually mapped to an enum value and then saved to an enum field on the database table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jeśli pole bazy danych jest polem typu <bpt id="p1">**</bpt>Wyliczenie<ept id="p1">**</ept>, wartości te można zamapować ręcznie na wartość wyliczenia, a następnie zapisać je w polu wyliczenia w tabeli bazy danych.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Show a custom field in the timesheet header section</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">Wyświetlanie pola niestandardowego w sekcji nagłówka karty czasu pracy</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Below is a screenshot from the mobile app of a user viewing a timesheet.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">Poniżej znajduje się zrzut ekranu do przeglądania karty czasu pracy w aplikacji mobilnej przez użytkownika.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>The "More information" button has been selected in the upper-right corner to show the "View more details" option.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">W prawym górnym rogu naciśnięto przycisk „Więcej informacji”, aby wyświetlić opcję „Wyświetl więcej szczegółów”.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>View more details command</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Polecenie Wyświetl więcej szczegółów</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Below is a screenshot from the mobile app showing the “More” section of a timesheet.</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">Poniżej znajduje się zrzut ekranu z sekcją „Więcej” karty czasu pracy w aplikacji mobilnej.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>A custom field called “Utilization rate of this timesheet (computed custom field)” has been added to the timesheet header section.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Do sekcji nagłówka karty czasu pracy dodano pole niestandardowe o nazwie „Stopień wykorzystania tej karty czasu pracy (obliczone pole niestandardowe)”</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>A read-only value of "0.667" is set on the custom field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">W polu niestandardowym ustawiono wartość tylko do odczytu „0,667”.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>More section</source><target logoport:matchpercent="0" state="translated">Sekcja Więcej</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Extend the TSTimesheetTable table so that it has a custom field</source><target logoport:matchpercent="90" state="translated" state-qualifier="fuzzy-match">Rozszerzanie tabeli TSTimesheetTable o pole niestandardowe</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>In typical scenarios, it's likely that the data for a custom field in the header section will be pulled from the TSTimesheetHeader table.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">W typowych scenariuszach pole niestandardowe sekcji nagłówka pochodzi zazwyczaj z tabeli TSTimesheetHeader.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>However, other tables can be used if the data can be retrieved based on a TSTimesheetTable record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).</source><target logoport:matchpercent="97" state="translated" state-qualifier="fuzzy-match">Możliwe jest jednak użycie innych tabel, jeśli dane mogą być pobierane na podstawie dostarczonego rekordu TSTimesheetTable lub jeśli nie ma on określonego kontekstu rekordów (na przykład, jeśli w parametrach projektu pole jest ustawione jako tylko do odczytu).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Note that custom fields don't have to have any backing database records.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Należy pamiętać, że pola niestandardowe nie muszą zawierać żadnych kopii zapasowych rekordów bazy danych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>They can be dynamically generated based on X++ logic.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Można je dynamicznie generować na podstawie logiki X++.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>The example that follows shows this approach.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Poniższy przykład ilustruje to podejście.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Fields in the header section are always read-only in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Pola w sekcji nagłówka są zawsze tylko do odczytu w aplikacji.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the header section</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">Wyświetlanie pola w sekcji nagłówka przy użyciu łańcucha poleceń na metodzie buildCustomFieldList klasy TSTimesheetSettings</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>This code controls the display settings for the field in the app.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Ten kod steruje ustawieniami wyświetlania pola w aplikacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Na przykład określa typ pola, etykietę, czy pole jest wymagane oraz sekcję, w której jest wyświetlane pole.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>The following example shows a computed value in the header section in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">W poniższym przykładzie przedstawiono obliczoną wartość w sekcji nagłówka w aplikacji.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Use chain of command on the buildCustomFieldListForHeader method of the TSTimesheetDetails class to fill in timesheet details</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">Wypełnianie szczegółów karty czasu pracy użyciu łańcucha poleceń na metodzie buildCustomFieldListForHeader klasy TSTimesheetDetails</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>The <bpt id="p1">**</bpt>buildCustomFieldListForHeader<ept id="p1">**</ept> method is used to fill in the timesheet header details in the mobile app.</source><target logoport:matchpercent="71" state="translated" state-qualifier="fuzzy-match">Metoda <bpt id="p1">**</bpt>buildCustomFieldListForHeader<ept id="p1">**</ept> służy do wypełniania szczegółów nagłówka karty czasu pracy w aplikacji mobilnej.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>It takes a TSTimesheetTable record as a parameter.</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Przyjmuje ona rekord TSTimesheetTable jako parametr.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Fields from that record can be used to fill in the custom field value in the app.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Pola z tego rekordu mogą być używane do wstawiania wartości pola niestandardowego w aplikacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>The following example doesn't read any values from the database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">W poniższym przykładzie nie są odczytywane żadne wartości z bazy danych.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Instead, it uses X++ logic to generate a computed value that is then shown in the app.</source><target logoport:matchpercent="0" state="translated">Zamiast tego przy użyciu logiki X++ generowana jest obliczona wartość, która jest następnie wyświetlana w aplikacji.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Other configurability/extensibility opportunities</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Inne możliwości konfigurowania/rozszerzania</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Adding additional validation for the app</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Wstawianie dodatkowych weryfikacji do aplikacji</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Existing logic for timesheet functionality at the database level will still work as expected.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Istniejąca logika funkcji karty czasu pracy na poziomie bazy danych będzie nadal działać zgodnie z oczekiwaniami.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>To interrupt the completion of save or submit operations and show a specific error message, you can add <bpt id="p1">**</bpt>throw error("message to user")<ept id="p1">**</ept> to the code via a chain of command extension.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Aby przerwać kończenie operacji zapisywania lub przesyłania i wyświetlić określony komunikat o błędzie, można dodać wiersz <bpt id="p1">**</bpt>throw error("message to user")<ept id="p1">**</ept> do kodu za pośrednictwem łańcucha rozszerzenia polecenia.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Here are three examples of useful extensible methods:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Oto trzy przykłady przydatnych metod rozszerzania:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>If <bpt id="p1">**</bpt>validateWrite<ept id="p1">**</ept> on the TSTimesheetLine table returns <bpt id="p2">**</bpt>false<ept id="p2">**</ept> during a save operation for a timesheet line, an error message is shown in the mobile app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jeśli <bpt id="p1">**</bpt>validateWrite<ept id="p1">**</ept> w tabeli TSTimesheetLine zwraca wartość <bpt id="p2">**</bpt>false<ept id="p2">**</ept> podczas operacji zapisywania wiersza karty czasu pracy, w aplikacji mobilnej jest wyświetlany komunikat o błędzie.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>If <bpt id="p1">**</bpt>validateSubmit<ept id="p1">**</ept> on the TSTimesheetTable table returns <bpt id="p2">**</bpt>false<ept id="p2">**</ept> during timesheet submission in the app, an error message is shown to the user.</source><target logoport:matchpercent="72" state="translated" state-qualifier="fuzzy-match">Jeśli <bpt id="p1">**</bpt>validateSubmit<ept id="p1">**</ept> w tabeli TSTimesheetTable zwraca wartość <bpt id="p2">**</bpt>false<ept id="p2">**</ept> podczas przesyłania karty czasu pracy w aplikacji, użytkownikowi jest wyświetlany komunikat o błędzie.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Logic that fills in fields (for example, <bpt id="p1">**</bpt>Line Property<ept id="p1">**</ept>) during the <bpt id="p2">**</bpt>insert<ept id="p2">**</ept> method on the TSTimesheetLine table will still run.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Logika, która wypełnia pola (na przykład <bpt id="p1">**</bpt>Właściwośćwiersza<ept id="p1">**</ept>) w trakcie metody <bpt id="p2">**</bpt>insert<ept id="p2">**</ept> w tabeli TSTimesheetLine, będzie nadal działać.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Hiding and marking out-of-box fields as read-only via configuration</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ukrywanie i oznaczanie gotowych pól jako tylko do odczytu za pomocą konfiguracji</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>From the project parameters, you can make out-of-box fields read-only or hidden in the mobile app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Z poziomu parametrów projektu można tworzyć gotowe pola tylko do odczytu lub ukryte w aplikacji mobilnej.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Set the options in the <bpt id="p1">**</bpt>Mobile timesheets<ept id="p1">**</ept> section on the <bpt id="p2">**</bpt>Timesheet<ept id="p2">**</ept> tab of the <bpt id="p3">**</bpt>Project management and accounting parameters<ept id="p3">**</ept> page.</source><target logoport:matchpercent="0" state="translated">Opcje są ustawiane w sekcji <bpt id="p1">**</bpt>Mobilne karty czasu pracy<ept id="p1">**</ept> na karcie <bpt id="p2">**</bpt>Karta czasu pracy<ept id="p2">**</ept> strony <bpt id="p3">**</bpt>Parametry modułu Zarządzanie projektami i ich księgowanie<ept id="p3">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Project parameters</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Parametry projektu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Changing the activities that are available for selection via extensions</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Zmienianie działań dostępnych do wybrania za pomocą rozszerzeń</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>The activities that are available for selection for a project are filled in via the <bpt id="p1">**</bpt>getActivitiesForProject()<ept id="p1">**</ept> and <bpt id="p2">**</bpt>getActivityQuery()<ept id="p2">**</ept> methods in the <bpt id="p3">**</bpt>TsTimesheetProjectService<ept id="p3">**</ept> class.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Działania dostępne do wybrania dla projektu są wypełniane za pośrednictwem metod <bpt id="p1">**</bpt>getActivitiesForProject ()<ept id="p1">**</ept> i <bpt id="p2">**</bpt>getActivityQuery ()<ept id="p2">**</ept> w klasie <bpt id="p3">**</bpt>TsTimesheetProjectService<ept id="p3">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>You can use chain of command to change this behavior to match your business scenario for the activities that are available for selection for a specific project.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Za pomocą łańcucha poleceń można zmienić to zachowanie w celu dopasowania go do scenariusza biznesowego dla działań dostępnych do wybrania dla konkretnego projektu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Entering a default project category on timesheet entries</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Wprowadzanie domyślnej kategorii projektu we wpisach karty czasu pracy</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Entry of a default project category on timesheet entries occurs at three levels.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Wprowadzanie domyślnej kategorii projektu we wpisach karty czasu pracy odbywa się na trzech poziomach.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>You can use chain of command to extend the behavior at any or all of these levels to achieve the desired behavior.</source><target logoport:matchpercent="0" state="translated">Zachowanie na dowolnym z tych poziomów można rozszerzyć za pomocą łańcucha poleceń, aby osiągnąć pożądane zachowanie.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>The following hierarchy is used:</source><target logoport:matchpercent="0" state="translated">Obowiązuje następująca hierarchia:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>The app tries to put the default category from the project resource.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Aplikacja próbuje umieścić domyślną kategorię z zasobu projektu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>This default category is set in the <bpt id="p1">**</bpt>getCurrentUserResource<ept id="p1">**</ept> and <bpt id="p2">**</bpt>getDelegatedResourcesForCurrentUser<ept id="p2">**</ept> methods in the <bpt id="p3">**</bpt>TSTimesheetSettingsService<ept id="p3">**</ept> class.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ta kategoria domyślna jest ustawiana w metodach <bpt id="p1">**</bpt>getCurrentUserResource<ept id="p1">**</ept> i <bpt id="p2">**</bpt>getDelegatedResourcesForCurrentUser<ept id="p2">**</ept> w klasie <bpt id="p3">**</bpt>TSTimesheetSettingsService<ept id="p3">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>If the default category isn't provided at the project resource level, the app tries to pull it from the project activity.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jeśli na poziomie zasobów projektu nie określono kategorii domyślnej, aplikacja próbuje ściągnąć ją z działania projektu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>This default category is set in the <bpt id="p1">**</bpt>getActivitiesForProject<ept id="p1">**</ept> method in the <bpt id="p2">**</bpt>TSTimesheetProjectService<ept id="p2">**</ept> class.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ta kategoria domyślna jest ustawiana w metodzie <bpt id="p1">**</bpt>getActivitiesForProject<ept id="p1">**</ept> w klasie <bpt id="p2">**</bpt>TSTimesheetProjectService<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>If the default category isn't provided at the project activity level, the default category it taken from the project parameters.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">Jeśli na poziomie działania projektu nie określono kategorii domyślnej, kategoria domyślna jest pobierana z parametrów projektu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>This default category is set in the <bpt id="p1">**</bpt>getProjectDetailsbyRule<ept id="p1">**</ept> method in the <bpt id="p2">**</bpt>TSTimesheetProjectService<ept id="p2">**</ept> class.</source><target logoport:matchpercent="91" state="translated" state-qualifier="fuzzy-match">Ta kategoria domyślna jest ustawiana w metodzie <bpt id="p1">**</bpt>getProjectDetailsbyRule<ept id="p1">**</ept> w klasie <bpt id="p2">**</bpt>TSTimesheetProjectService<ept id="p2">**</ept>.</target>
-        </trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Implementowanie pól niestandardowych aplikacji mobilnej Microsoft Dynamics 365 Project Timesheet w systemach iOS i Android
+description: W tym temacie przedstawiono typowe wzorce używania rozszerzeń do implementowania pól niestandardowych.
+author: KimANelson
+manager: AnnBe
+ms.date: 05/29/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.search.industry: Service industries
+ms.author: knelson
+ms.dyn365.ops.version: 10.0.3
+ms.search.validFrom: 2019-05-29
+ms.openlocfilehash: 4343c875da05641c57b7784bf52f1c814dd26d20
+ms.sourcegitcommit: 19859d8566a8c7840066b2c10c6b08b67f1b83f4
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "1618003"
+---
+# <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a><span data-ttu-id="ddea2-103">Implementowanie pól niestandardowych aplikacji mobilnej Microsoft Dynamics 365 Project Timesheet w systemach iOS i Android</span><span class="sxs-lookup"><span data-stu-id="ddea2-103">Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile app on iOS and Android</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="ddea2-104">W tym temacie przedstawiono typowe wzorce używania rozszerzeń do implementowania pól niestandardowych.</span><span class="sxs-lookup"><span data-stu-id="ddea2-104">This topic provides common patterns for using extensions to implement custom fields.</span></span> <span data-ttu-id="ddea2-105">Omawiane są następujące tematy:</span><span class="sxs-lookup"><span data-stu-id="ddea2-105">The following topics are covered:</span></span>
+
+- <span data-ttu-id="ddea2-106">Różne typy danych obsługiwane przez strukturę pól niestandardowych</span><span class="sxs-lookup"><span data-stu-id="ddea2-106">The various data types that the custom field framework supports</span></span>
+- <span data-ttu-id="ddea2-107">Sposób wyświetlania pól tylko do odczytu lub edytowalnych we wpisach karty czasu pracy oraz zapisywania wartości wprowadzonych przez użytkownika z powrotem do bazy danych</span><span class="sxs-lookup"><span data-stu-id="ddea2-107">How to show read-only or editable fields on timesheet entries, and save user-provided values back to the database</span></span>
+- <span data-ttu-id="ddea2-108">Sposób wyświetlania pól tylko do odczytu w nagłówku karty czasu pracy</span><span class="sxs-lookup"><span data-stu-id="ddea2-108">How to show read-only fields on the timesheet header</span></span>
+- <span data-ttu-id="ddea2-109">Sposób integrowania innej niestandardowej logiki biznesowej w celu wprowadzania wartości domyślnych w polach i przeprowadzania dodatkowej weryfikacji</span><span class="sxs-lookup"><span data-stu-id="ddea2-109">How to integrate other custom business logic to enter default values in fields and do additional validation</span></span>
+
+## <a name="audience"></a><span data-ttu-id="ddea2-110">Odbiorcy</span><span class="sxs-lookup"><span data-stu-id="ddea2-110">Audience</span></span>
+
+<span data-ttu-id="ddea2-111">Ten temat jest przeznaczony dla deweloperów integrujących pola niestandardowe w aplikacji mobilnej Microsoft Dynamics 365 Project Timesheet dostępnej na systemy Apple iOS i Google Android.</span><span class="sxs-lookup"><span data-stu-id="ddea2-111">This topic is intended for developers who are integrating their custom fields into the Microsoft Dynamics 365 Project Timesheet mobile application that is available for Apple iOS and Google Android.</span></span> <span data-ttu-id="ddea2-112">Przyjmuje się, że czytelnicy umieją programować w języku X++ i znają funkcje karty czasu pracy projektu.</span><span class="sxs-lookup"><span data-stu-id="ddea2-112">The assumption is that readers are familiar with X++ development and project timesheet functionality.</span></span>
+
+## <a name="data-contract--tstimesheetcustomfield-x-class"></a><span data-ttu-id="ddea2-113">Umowa dotycząca danych — klasa X++ TSTimesheetCustomField</span><span class="sxs-lookup"><span data-stu-id="ddea2-113">Data contract – TSTimesheetCustomField X++ class</span></span>
+
+<span data-ttu-id="ddea2-114">Klasa **TSTimesheetCustomField** jest klasą umowy dotyczącej danych języka X++, która reprezentuje informacje o polu niestandardowym dla funkcji karty czasu pracy.</span><span class="sxs-lookup"><span data-stu-id="ddea2-114">The **TSTimesheetCustomField** class is the X++ data contract class that represents information about a custom field for timesheet functionality.</span></span> <span data-ttu-id="ddea2-115">Listy obiektów pól niestandardowych są przekazywane zarówno w umowie dotyczącej danych TSTimesheetDetails, jak i umowie dotyczącej danych TSTimesheetEntry w celu wyświetlania pól niestandardowych w aplikacji mobilnej.</span><span class="sxs-lookup"><span data-stu-id="ddea2-115">Lists of the custom field objects are passed on both the TSTimesheetDetails data contract and the TSTimesheetEntry data contract to show custom fields in the mobile app.</span></span>
+
+- <span data-ttu-id="ddea2-116">**TSTimesheetDetails** — umowa dotycząca nagłówka karty czasu pracy.</span><span class="sxs-lookup"><span data-stu-id="ddea2-116">**TSTimesheetDetails** - The timesheet header contract.</span></span>
+- <span data-ttu-id="ddea2-117">**TSTimesheetEntry** — umowa dotycząca transakcji karty czasu pracy</span><span class="sxs-lookup"><span data-stu-id="ddea2-117">**TSTimesheetEntry** - The timesheet transaction contract.</span></span> <span data-ttu-id="ddea2-118">Grupy tych obiektów, których same informacje o projekcie i wartość **timesheetLineRecId** są takie same, tworzą wiersz.</span><span class="sxs-lookup"><span data-stu-id="ddea2-118">Groups of these objects that have the same project information and **timesheetLineRecId** value constitute a line.</span></span>
+
+### <a name="fieldbasetype-types"></a><span data-ttu-id="ddea2-119">fieldBaseType (typy)</span><span class="sxs-lookup"><span data-stu-id="ddea2-119">fieldBaseType (Types)</span></span>
+
+<span data-ttu-id="ddea2-120">Właściwość **FieldBaseType** obiektu **TsTimesheetCustom** określa typ pola, które pojawia się w aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ddea2-120">The **FieldBaseType** property on the **TsTimesheetCustom** object determines the type of the field that appears in the app.</span></span> <span data-ttu-id="ddea2-121">Obsługiwane są następujące wartości **Typu**:</span><span class="sxs-lookup"><span data-stu-id="ddea2-121">The following **Types** values that are supported.</span></span>
+
+| <span data-ttu-id="ddea2-122">Wartości typu</span><span class="sxs-lookup"><span data-stu-id="ddea2-122">Types value</span></span> | <span data-ttu-id="ddea2-123">Typ</span><span class="sxs-lookup"><span data-stu-id="ddea2-123">Type</span></span>              | <span data-ttu-id="ddea2-124">Notatki</span><span class="sxs-lookup"><span data-stu-id="ddea2-124">Notes</span></span> |
+|-------------|-------------------|-------|
+| <span data-ttu-id="ddea2-125">0</span><span class="sxs-lookup"><span data-stu-id="ddea2-125">0</span></span>           | <span data-ttu-id="ddea2-126">Ciąg (i Wyliczenie)</span><span class="sxs-lookup"><span data-stu-id="ddea2-126">String (and Enum)</span></span> | <span data-ttu-id="ddea2-127">Pole jest wyświetlane jako pole tekstowe.</span><span class="sxs-lookup"><span data-stu-id="ddea2-127">The field appears as a text field.</span></span> |
+| <span data-ttu-id="ddea2-128">1</span><span class="sxs-lookup"><span data-stu-id="ddea2-128">1</span></span>           | <span data-ttu-id="ddea2-129">Wartość całkowita</span><span class="sxs-lookup"><span data-stu-id="ddea2-129">Integer</span></span>           | <span data-ttu-id="ddea2-130">Wartość jest pokazywana jako liczba bez miejsc dziesiętnych.</span><span class="sxs-lookup"><span data-stu-id="ddea2-130">The value is shown as a number without decimal places.</span></span> |
+| <span data-ttu-id="ddea2-131">2</span><span class="sxs-lookup"><span data-stu-id="ddea2-131">2</span></span>           | <span data-ttu-id="ddea2-132">Rzeczywisty</span><span class="sxs-lookup"><span data-stu-id="ddea2-132">Real</span></span>              | <span data-ttu-id="ddea2-133">Wartość jest pokazywana jako liczba z miejscami dziesiętnymi.</span><span class="sxs-lookup"><span data-stu-id="ddea2-133">The value is shown as a number that has decimal places.</span></span><p><span data-ttu-id="ddea2-134">Aby w aplikacji była wyświatlana wartość rzeczywista w walucie, należy skorzystać z właściwości **fieldExtenededType**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-134">To show the real value as a currency in the app, use the **fieldExtenededType** property.</span></span> <span data-ttu-id="ddea2-135">Właściwość **numberOfDecimals** służy do ustawiania liczby wyświetlanych miejsc dziesiętnych.</span><span class="sxs-lookup"><span data-stu-id="ddea2-135">You can use the **numberOfDecimals** property to set the number of decimal places that are shown.</span></span></p> |
+| <span data-ttu-id="ddea2-136">3</span><span class="sxs-lookup"><span data-stu-id="ddea2-136">3</span></span>           | <span data-ttu-id="ddea2-137">Data</span><span class="sxs-lookup"><span data-stu-id="ddea2-137">Date</span></span>              | <span data-ttu-id="ddea2-138">Formaty daty zależą od ustawienia **Format daty, godziny i liczb** użytkownika, które jest określone w sekcji **Preferencje dotyczące języka i kraju/regionu** w oknie **Opcje użytkownika**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-138">Date formats are determined by the user's **Date, times, and number format** setting that is specified under **Language and country/region preference** in **User options**.</span></span> |
+| <span data-ttu-id="ddea2-139">4</span><span class="sxs-lookup"><span data-stu-id="ddea2-139">4</span></span>           | <span data-ttu-id="ddea2-140">Wartość logiczna</span><span class="sxs-lookup"><span data-stu-id="ddea2-140">Boolean</span></span>           | |
+| <span data-ttu-id="ddea2-141">15</span><span class="sxs-lookup"><span data-stu-id="ddea2-141">15</span></span>          | <span data-ttu-id="ddea2-142">GUID</span><span class="sxs-lookup"><span data-stu-id="ddea2-142">GUID</span></span>              | |
+| <span data-ttu-id="ddea2-143">16</span><span class="sxs-lookup"><span data-stu-id="ddea2-143">16</span></span>          | <span data-ttu-id="ddea2-144">Int64</span><span class="sxs-lookup"><span data-stu-id="ddea2-144">Int64</span></span>             | |
+
+- <span data-ttu-id="ddea2-145">Jeśli właściwość **stringOptions** nie została podana w obiekcie **TSTimesheetCustomField**, użytkownikowi jest udostępniane pole tekstu niezależnego.</span><span class="sxs-lookup"><span data-stu-id="ddea2-145">If the **stringOptions** property isn't provided on the **TSTimesheetCustomField** object, a free-text field is provided to the user.</span></span>
+
+    <span data-ttu-id="ddea2-146">Właściwość **stringLength** może służyć do ustawienia maksymalnej długości ciągu, jaką użytkownicy mogą wprowadzać.</span><span class="sxs-lookup"><span data-stu-id="ddea2-146">The **stringLength** property can be used to set the maximum string length that users can enter.</span></span>
+
+- <span data-ttu-id="ddea2-147">Jeśli właściwość **stringOptions** jest podana w obiekcie **TSTimesheetCustomField**, te elementy listy są jedynymi wartościami, które użytkownicy mogą wybierać za pomocą przycisków opcji (przycisków radiowych).</span><span class="sxs-lookup"><span data-stu-id="ddea2-147">If the **stringOptions** property is provided on the **TSTimesheetCustomField** object, those list elements are the only values that users can select by using option buttons (radio buttons).</span></span>
+
+    <span data-ttu-id="ddea2-148">W takim przypadku pole ciągu może pełnić funkcję wartości wyliczenia na potrzeby wprowadzania wartości przez użytkownika.</span><span class="sxs-lookup"><span data-stu-id="ddea2-148">In this case, the string field can act as an enum value for the purpose of user entry.</span></span> <span data-ttu-id="ddea2-149">Aby zapisać wartość w bazie danych jako wyliczenie, należy ręcznie zmapować wartość ciągu z powrotem na wartość wyliczenia przed zapisaniem jej w bazie danych za pomocą łańcucha poleceń (stosowny przykład jest pokazany w sekcji „Zapisywanie wpisu karty czasu pracy zwrotnie z aplikacji w bazie danych przy użyciu łańcucha poleceń na klasie TSTimesheetEntryService”).</span><span class="sxs-lookup"><span data-stu-id="ddea2-149">To save the value to the database as an enum, manually map the string value back to the enum value before you save to the database by using chain of command (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).</span></span>
+
+### <a name="fieldextendedtype-tscustomfieldextendedtype"></a><span data-ttu-id="ddea2-150">fieldExtendedType (TSCustomFieldExtendedType)</span><span class="sxs-lookup"><span data-stu-id="ddea2-150">fieldExtendedType (TSCustomFieldExtendedType)</span></span>
+
+<span data-ttu-id="ddea2-151">Ta właściwość służy do formatowania wartości rzeczywistych w walucie.</span><span class="sxs-lookup"><span data-stu-id="ddea2-151">You can use this property to format real values as currency.</span></span> <span data-ttu-id="ddea2-152">Takie podejście ma zastosowanie tylko wtedy, gdy wartością **fieldBaseType** jest **Rzeczywista**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-152">This approach is applicable only when the **fieldBaseType** value is **Real**.</span></span>
+
+- <span data-ttu-id="ddea2-153">**TSCustomFieldExtendedType: brak** — formatowanie nie jest stosowane.</span><span class="sxs-lookup"><span data-stu-id="ddea2-153">**TSCustomFieldExtendedType:None** – No formatting is applied.</span></span>
+- <span data-ttu-id="ddea2-154">**TSCustomFieldExtendedType::Waluta** — formatowanie wartości jako waluty.</span><span class="sxs-lookup"><span data-stu-id="ddea2-154">**TSCustomFieldExtendedType::Currency** – Format the value as currency.</span></span>
+
+    <span data-ttu-id="ddea2-155">Jeśli formatowanie waluty jest aktywne, przy użyciu pola **stringValue** można przekazać kod waluty, który ma być wyświetlany w aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ddea2-155">When currency formatting is active, the **stringValue** field can be used pass the currency code that should be shown in the app.</span></span> <span data-ttu-id="ddea2-156">Wartość jest tylko do odczytu.</span><span class="sxs-lookup"><span data-stu-id="ddea2-156">The value is a read-only value.</span></span>
+
+    <span data-ttu-id="ddea2-157">Pole **realValue** zawiera kwotę pieniędzy, która ma zostać zapisana w bazie danych.</span><span class="sxs-lookup"><span data-stu-id="ddea2-157">The **realValue** field contains the money amount that should be saved to the database.</span></span>
+
+### <a name="fieldsection-tscustomfieldsection"></a><span data-ttu-id="ddea2-158">fieldSection (TSCustomFieldSection)</span><span class="sxs-lookup"><span data-stu-id="ddea2-158">fieldSection (TSCustomFieldSection)</span></span>
+
+<span data-ttu-id="ddea2-159">Ta właściwość służy do określania, gdzie w aplikacji ma być wyświetlane pole niestandardowe.</span><span class="sxs-lookup"><span data-stu-id="ddea2-159">You can use this property specify where the custom field should appear in the app.</span></span>
+
+- <span data-ttu-id="ddea2-160">**TSCustomFieldSection::Nagłówek** — pole będzie wyświetlane w sekcji **Wyświetl więcej szczegółów** w aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ddea2-160">**TSCustomFieldSection::Header** – The field will appear in the **View more details** section in the app.</span></span> <span data-ttu-id="ddea2-161">Te pola są zawsze tylko do odczytu.</span><span class="sxs-lookup"><span data-stu-id="ddea2-161">These fields are always read-only.</span></span>
+- <span data-ttu-id="ddea2-162">**TSCustomFieldSection::Wiersz** — pole będzie wyświetlane po wszystkich polach gotowych wierszy we wpisach karty czasu pracy.</span><span class="sxs-lookup"><span data-stu-id="ddea2-162">**TSCustomFieldSection::Line** – The field will appear after all the out-of-box line fields on timesheet entries.</span></span> <span data-ttu-id="ddea2-163">Mogą to być pola z możliwością edycji lub tylko do odczytu.</span><span class="sxs-lookup"><span data-stu-id="ddea2-163">These fields can be either editable or read-only.</span></span>
+
+### <a name="fieldname-fieldnameshort"></a><span data-ttu-id="ddea2-164">fieldName (FieldNameShort)</span><span class="sxs-lookup"><span data-stu-id="ddea2-164">fieldName (FieldNameShort)</span></span>
+
+<span data-ttu-id="ddea2-165">Ta właściwość identyfikuje pole, gdy wartości dostarczone przez aplikację są zapisywane z powrotem w bazie danych.</span><span class="sxs-lookup"><span data-stu-id="ddea2-165">This property identifies the field when values that the app provides are saved back to the database.</span></span>
+
+### <a name="tablename-tablenameshort"></a><span data-ttu-id="ddea2-166">tableName (TableNameShort)</span><span class="sxs-lookup"><span data-stu-id="ddea2-166">tableName (TableNameShort)</span></span>
+
+<span data-ttu-id="ddea2-167">Ta właściwość identyfikuje pole, gdy wartości dostarczone przez aplikację są zapisywane z powrotem w bazie danych.</span><span class="sxs-lookup"><span data-stu-id="ddea2-167">This property identifies the field when values that the app provides are saved back to the database.</span></span>
+
+### <a name="iseditable-noyes"></a><span data-ttu-id="ddea2-168">isEditable (NoYes)</span><span class="sxs-lookup"><span data-stu-id="ddea2-168">isEditable (NoYes)</span></span>
+
+<span data-ttu-id="ddea2-169">Jeśli użytkownicy mają mieć możliwość edytowania pola w sekcji wpisu karty czasy pracy, należy ustawić wartość **Tak** tej właściwości.</span><span class="sxs-lookup"><span data-stu-id="ddea2-169">Set this property to **Yes** to specify that the field in the timesheet entry section should be editable by users.</span></span> <span data-ttu-id="ddea2-170">Jeśli pole ma być tylko do odczytu, należy ustawić wartość **Nie** właściwości.</span><span class="sxs-lookup"><span data-stu-id="ddea2-170">Set the property to **No** to make the field read-only.</span></span>
+
+### <a name="ismandatory-noyes"></a><span data-ttu-id="ddea2-171">isMandatory (NoYes)</span><span class="sxs-lookup"><span data-stu-id="ddea2-171">isMandatory (NoYes)</span></span>
+
+<span data-ttu-id="ddea2-172">Jeśli pole w sekcji wpisu karty czasy pracy ma być obowiązkowe, należy ustawić wartość **Tak** tej właściwości.</span><span class="sxs-lookup"><span data-stu-id="ddea2-172">Set this property to **Yes** to specify that the field in the timesheet entry section should be mandatory.</span></span>
+
+### <a name="label-str"></a><span data-ttu-id="ddea2-173">label (str)</span><span class="sxs-lookup"><span data-stu-id="ddea2-173">label (str)</span></span>
+
+<span data-ttu-id="ddea2-174">Ta właściwość określa etykietę wyświetlaną obok pola w aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ddea2-174">This property specifies the label that is shown next the field in the app.</span></span>
+
+### <a name="stringoptions-list-of-strings"></a><span data-ttu-id="ddea2-175">stringOptions (lista ciągów)</span><span class="sxs-lookup"><span data-stu-id="ddea2-175">stringOptions (List of Strings)</span></span>
+
+<span data-ttu-id="ddea2-176">Ta właściwość ma znaczenie tylko wtedy, gdy ustawioną wartością właściwości **fieldBaseType** jest **Ciąg**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-176">This property is applicable only when **fieldBaseType** is set to **String**.</span></span> <span data-ttu-id="ddea2-177">Jeśli jest ustawiona właściwość **stringOptions**, wartości ciągów, które użytkownik może wybrać za pomocą przycisków opcji (przycisków radiowych), są określane przez ciągi na liście.</span><span class="sxs-lookup"><span data-stu-id="ddea2-177">If **stringOptions** is set, the string values that are available for selection via option buttons (radio buttons) are specified by the strings in the list.</span></span> <span data-ttu-id="ddea2-178">Jeśli nie podano żadnych ciągów, w polu ciągu jest dozwolony tekst niezależny (stosowny przykład jest pokazany w sekcji „Zapisywanie wpisu karty czasu pracy zwrotnie z aplikacji w bazie danych przy użyciu łańcucha poleceń na klasie TSTimesheetEntryService”).</span><span class="sxs-lookup"><span data-stu-id="ddea2-178">If no strings are provided, free-text entry in the string field is allowed (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).</span></span>
+
+### <a name="stringlength-int"></a><span data-ttu-id="ddea2-179">stringLength (int)</span><span class="sxs-lookup"><span data-stu-id="ddea2-179">stringLength (int)</span></span>
+
+<span data-ttu-id="ddea2-180">Ta właściwość określa maksymalną długość pola ciągu.</span><span class="sxs-lookup"><span data-stu-id="ddea2-180">This property specifies the maximum length for a string field.</span></span> <span data-ttu-id="ddea2-181">Ma znaczenie tylko wtedy, gdy ustawioną wartością właściwości **fieldBaseType** jest **Ciąg**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-181">It's applicable only when **fieldBaseType** is set to **String**.</span></span>
+
+### <a name="numberofdecimals-int"></a><span data-ttu-id="ddea2-182">numberOfDecimals (int)</span><span class="sxs-lookup"><span data-stu-id="ddea2-182">numberOfDecimals (int)</span></span>
+
+<span data-ttu-id="ddea2-183">Ta właściwość określa liczbę miejsc dziesiętnych wyświetlanych dla pola wartości rzeczywistej.</span><span class="sxs-lookup"><span data-stu-id="ddea2-183">This property specifies the number of decimal places that are shown for a real field.</span></span> <span data-ttu-id="ddea2-184">Ma znaczenie tylko wtedy, gdy ustawioną wartością właściwości **fieldBaseType** jest **Rzeczywista**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-184">It's applicable only when **fieldBaseType** is set to **Real**.</span></span>
+
+### <a name="ordersequence-int"></a><span data-ttu-id="ddea2-185">orderSequence (int)</span><span class="sxs-lookup"><span data-stu-id="ddea2-185">orderSequence (int)</span></span>
+
+<span data-ttu-id="ddea2-186">Ta właściwość określa kolejność wyświetlania pól niestandardowych w aplikacji w przypadku określenia więcej niż jednego pola niestandardowego.</span><span class="sxs-lookup"><span data-stu-id="ddea2-186">This property controls the order in which the custom fields are shown in the app when more than one custom field is specified.</span></span> <span data-ttu-id="ddea2-187">Pola, które mają mniejsze numery, są wyświetlane jako pierwsze.</span><span class="sxs-lookup"><span data-stu-id="ddea2-187">Fields that have lower numbers are shown first.</span></span>
+
+### <a name="booleanvalue-boolean"></a><span data-ttu-id="ddea2-188">booleanValue (wartość logiczna)</span><span class="sxs-lookup"><span data-stu-id="ddea2-188">booleanValue (boolean)</span></span>
+
+<span data-ttu-id="ddea2-189">W przypadku pól typu **Wartość logiczna** ta właściwość przekazuje wartość logiczną pola między serwerem i aplikacją.</span><span class="sxs-lookup"><span data-stu-id="ddea2-189">For fields of the **Boolean** type, this property passes the Boolean value of the field between the server and the app.</span></span>
+
+### <a name="guidvalue-guid"></a><span data-ttu-id="ddea2-190">guidValue (guid)</span><span class="sxs-lookup"><span data-stu-id="ddea2-190">guidValue (guid)</span></span>
+
+<span data-ttu-id="ddea2-191">W przypadku pól typu **GUID** ta właściwość przekazuje wartość unikatowego identyfikatora globalnego (GUID) pola między serwerem i aplikacją.</span><span class="sxs-lookup"><span data-stu-id="ddea2-191">For fields of the **GUID** type, this property passes the globally unique identifier (GUID) value of the field between the server and the app.</span></span>
+
+### <a name="int64value-int64"></a><span data-ttu-id="ddea2-192">int64Value (int64)</span><span class="sxs-lookup"><span data-stu-id="ddea2-192">int64Value (int64)</span></span>
+
+<span data-ttu-id="ddea2-193">W przypadku pól typu **Int64** ta właściwość przekazuje wartość int64 pola między serwerem i aplikacją.</span><span class="sxs-lookup"><span data-stu-id="ddea2-193">For fields of the **Int64** type, this property passes the int64 value of the field between the server and the app.</span></span>
+
+### <a name="intvalue-int"></a><span data-ttu-id="ddea2-194">intValue (int)</span><span class="sxs-lookup"><span data-stu-id="ddea2-194">intValue (int)</span></span>
+
+<span data-ttu-id="ddea2-195">W przypadku pól typu **Int** ta właściwość przekazuje wartość int pola między serwerem i aplikacją.</span><span class="sxs-lookup"><span data-stu-id="ddea2-195">For fields of the **Int** type, this property passes the int value of the field between the server and the app.</span></span>
+
+### <a name="realvalue-real"></a><span data-ttu-id="ddea2-196">realValue (real)</span><span class="sxs-lookup"><span data-stu-id="ddea2-196">realValue (real)</span></span>
+
+<span data-ttu-id="ddea2-197">W przypadku pól typu **Rzeczywista** ta właściwość przekazuje wartość rzeczywistą pola między serwerem i aplikacją.</span><span class="sxs-lookup"><span data-stu-id="ddea2-197">For fields of the **Real** type, this property passes the real value of the field between the server and the app .</span></span>
+
+### <a name="stringvalue-str"></a><span data-ttu-id="ddea2-198">stringValue (str)</span><span class="sxs-lookup"><span data-stu-id="ddea2-198">stringValue (str)</span></span>
+
+<span data-ttu-id="ddea2-199">W przypadku pól typu **Ciąg** ta właściwość przekazuje wartość ciągu pola między serwerem i aplikacją.</span><span class="sxs-lookup"><span data-stu-id="ddea2-199">For fields of the **String** type, this property passes the string value of the field between the server and the app.</span></span> <span data-ttu-id="ddea2-200">Jest ona również stosowana do pól typu **Rzeczywista**, które są sformatowane jako waluta.</span><span class="sxs-lookup"><span data-stu-id="ddea2-200">It's also used for fields of the **Real** type that are formatted as currency.</span></span> <span data-ttu-id="ddea2-201">W przypadku tych pól właściwość służy do przekazania kodu waluty do aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ddea2-201">For those fields, the property is used to pass the currency code to the app.</span></span>
+
+### <a name="datevalue-date"></a><span data-ttu-id="ddea2-202">dateValue (data)</span><span class="sxs-lookup"><span data-stu-id="ddea2-202">dateValue (date)</span></span>
+
+<span data-ttu-id="ddea2-203">W przypadku pól typu **Data** ta właściwość przekazuje wartość daty pola między serwerem i aplikacją.</span><span class="sxs-lookup"><span data-stu-id="ddea2-203">For fields of the **Date** type, this property passes the date value of the field between the server and the app.</span></span>
+
+## <a name="show-and-save-a-custom-field-in-the-timesheet-entry-section"></a><span data-ttu-id="ddea2-204">Wyświetlanie i zapisywanie pola niestandardowego w sekcji wpisu karty czasu pracy</span><span class="sxs-lookup"><span data-stu-id="ddea2-204">Show and save a custom field in the timesheet entry section</span></span>
+
+<span data-ttu-id="ddea2-205">Poniżej znajduje się zrzut ekranu tworzenia wpisu karty czasu pracy w aplikacji mobilnej.</span><span class="sxs-lookup"><span data-stu-id="ddea2-205">Below is a screenshot from the mobile app of a timesheet entry creation.</span></span> <span data-ttu-id="ddea2-206">Są w nim widoczne gotowe pola oraz pole niestandardowe w sekcji „Wpis czasu” o nazwie „Ciąg testowy” z ustawioną wartością wyliczenia „Druga opcja”.</span><span class="sxs-lookup"><span data-stu-id="ddea2-206">It shows the out-of-box fields and a custom field in the "Time entry" section called "Test string" with an enum value of "Second option" already set.</span></span>
+
+![Pole niestandardowe ciągu testowego w aplikacji](media/timesheet-entry.jpg)
+
+
+
+<span data-ttu-id="ddea2-208">Poniżej znajduje się zrzut ekranu, na którym użytkownik wybiera jedną z opcji wyliczenia dostępnych w polu niestandardowym „Ciąg testowy” w aplikacji mobilnej.</span><span class="sxs-lookup"><span data-stu-id="ddea2-208">Below is a screenshot from the mobile app of the user selecting one of the enum options available for the "Test string" custom field.</span></span>  <span data-ttu-id="ddea2-209">Opcje „Pierwsza opcja” i „Druga opcja” są wyświetlane jako przyciski radiowe.</span><span class="sxs-lookup"><span data-stu-id="ddea2-209">The two options are "First option" and "Second option" shown as radio buttons.</span></span> <span data-ttu-id="ddea2-210">Zaznaczona jest druga opcja.</span><span class="sxs-lookup"><span data-stu-id="ddea2-210">The second option is currently selected.</span></span>
+
+![Przyciski opcji (przyciski radiowe) pola niestandardowego ciągu testowego](media/enum-option.jpg)
+
+
+
+### <a name="extend-the-tstimesheetline-table-so-that-it-has-a-custom-field"></a><span data-ttu-id="ddea2-212">Rozszerzanie tabeli TSTimesheetLine o pole niestandardowe</span><span class="sxs-lookup"><span data-stu-id="ddea2-212">Extend the TSTimesheetLine table so that it has a custom field</span></span>
+
+<span data-ttu-id="ddea2-213">W typowych scenariuszach pole niestandardowe sekcji wpisu karty czasu pracy jest zazwyczaj zapisywane w tabeli TSTimesheetLine.</span><span class="sxs-lookup"><span data-stu-id="ddea2-213">In typical scenarios, it's likely that the data for a custom field in the timesheet entry section will be saved to the TSTimesheetLine table.</span></span> <span data-ttu-id="ddea2-214">Możliwe jest jednak użycie innych tabel, jeśli dane mogą być pobierane na podstawie dostarczonego rekordu TSTimesheetTrans lub jeśli nie ma on określonego kontekstu rekordów (na przykład, jeśli w parametrach projektu pole jest ustawione jako tylko do odczytu).</span><span class="sxs-lookup"><span data-stu-id="ddea2-214">However, other tables can be used if the data can be retrieved based on a TSTimesheetTrans record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).</span></span>
+
+<span data-ttu-id="ddea2-215">Należy pamiętać, że pola niestandardowe nie muszą zawierać żadnych kopii zapasowych rekordów bazy danych.</span><span class="sxs-lookup"><span data-stu-id="ddea2-215">Note that custom fields don't have to have any backing database records.</span></span> <span data-ttu-id="ddea2-216">Można je dynamicznie generować na podstawie logiki X++.</span><span class="sxs-lookup"><span data-stu-id="ddea2-216">They can be dynamically generated based on X++ logic.</span></span> <span data-ttu-id="ddea2-217">Ta metoda może być przydatna w scenariuszach tylko do odczytu (przykłady dynamicznie generowanych wartości pól niestandardowych są pokazane w sekcji „Wypełnianie szczegółów karty czasy pracy przy użyciu łańcucha poleceń na klasie TSTimesheetDetails class, metodzie buildCustomFieldListForHeader”).</span><span class="sxs-lookup"><span data-stu-id="ddea2-217">This approach can be useful in read-only scenarios (see the “Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to fill in timesheet details” section for an example of dynamically generated custom field values.)</span></span>
+
+<span data-ttu-id="ddea2-218">Poniżej znajduje się zrzut ekranu drzewa obiektów aplikacji z programu Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="ddea2-218">Below is a screenshot from Visual Studio of the Application Object Tree.</span></span> <span data-ttu-id="ddea2-219">Jest w nim widoczne rozszerzenie tabeli TSTimesheetLine z polem TestLineString dodanym jako pole niestandardowe.</span><span class="sxs-lookup"><span data-stu-id="ddea2-219">It shows an extension of the TSTimesheetLine table with the TestLineString field added as a custom field.</span></span>
+
+![Ciąg wiersza](media/b6756b4a3fc5298093327a088a7710fd.png)
+
+### <a name="use-chain-of-command-on-the-buildcustomfieldlist-method-of-the-tstimesheetsettings-class-to-show-a-field-in-the-timesheet-entry-section"></a><span data-ttu-id="ddea2-221">Wyświetlanie pola w sekcji wpisu karty czasu pracy przy użyciu łańcucha poleceń na metodzie buildCustomFieldList klasy TSTimesheetSettings</span><span class="sxs-lookup"><span data-stu-id="ddea2-221">Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the timesheet entry section</span></span>
+
+<span data-ttu-id="ddea2-222">Ten kod steruje ustawieniami wyświetlania pola w aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ddea2-222">This code controls the display settings for the field in the app.</span></span> <span data-ttu-id="ddea2-223">Na przykład określa typ pola, etykietę, czy pole jest wymagane oraz sekcję, w której jest wyświetlane pole.</span><span class="sxs-lookup"><span data-stu-id="ddea2-223">For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.</span></span>
+
+<span data-ttu-id="ddea2-224">Poniższy przykład przedstawia pole ciągu we wpisach czasu.</span><span class="sxs-lookup"><span data-stu-id="ddea2-224">The following example shows a string field on time entries.</span></span> <span data-ttu-id="ddea2-225">W tym polu dostępne są dwie opcje, **Pierwsza opcja** i **Druga opcja**, które są dostępne za pośrednictwem przycisków opcji (przycisków radiowych).</span><span class="sxs-lookup"><span data-stu-id="ddea2-225">This field has two options, **First option** and **Second option**, that are available via option buttons (radio buttons).</span></span> <span data-ttu-id="ddea2-226">Pole w aplikacji jest skojarzone z polem **TestLineString**, które jest dodawane do tabeli TSTimesheetLine.</span><span class="sxs-lookup"><span data-stu-id="ddea2-226">The field in the app is associated with the **TestLineString** field that is added to the TSTimesheetLine table.</span></span>
+
+<span data-ttu-id="ddea2-227">Należy zwrócić uwagę na użycie metody **TSTimesheetCustomField::newFromMetatdata()** w celu uproszczenia inicjowania właściwości pól niestandardowych: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength** i **numberOfDecimals**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-227">Note the use of the **TSTimesheetCustomField::newFromMetatdata()** method to simplify the initialization of the custom field properties: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength**, and **numberOfDecimals**.</span></span> <span data-ttu-id="ddea2-228">Parametry te można również ustawić ręcznie.</span><span class="sxs-lookup"><span data-stu-id="ddea2-228">You can also set these parameters manually, as you prefer.</span></span>
+
+```
+...
+[ExtensionOf(classStr(TsTimesheetSettings))]
+final class TSTimesheetSettings_Extension
+{
+    protected List buildCustomFieldList()
+    {
+        List customFieldList = next buildCustomFieldList();
+        TSTimesheetCustomField tsTimesheetCustomField;
+        tsTimesheetCustomField =
+        TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
+        fieldNum(TSTimesheetLine, TestLineString));
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
+        tsTimesheetCustomField.parmOrderSequence(1);
+        List stringOptions = new List(Types::String);
+        stringOptions.addEnd('First option');
+        stringOptions.addEnd('Second option');
+        tsTimesheetCustomField.parmStringOptions(stringOptions);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
+    }
+}
+...
+```
+
+### <a name="use-chain-of-command-on-the-buildcustomfieldlistforentry-method-of-the-tstimesheetentry-class-to-enter-values-in-a-timesheet-entry"></a><span data-ttu-id="ddea2-229">Wprowadzanie wartości we wpisie karty czasu pracy użyciu łańcucha poleceń na metodzie buildCustomFieldListForEntry klasy TSTimesheetEntry</span><span class="sxs-lookup"><span data-stu-id="ddea2-229">Use chain of command on the buildCustomFieldListForEntry method of the TSTimesheetEntry class to enter values in a timesheet entry</span></span>
+
+<span data-ttu-id="ddea2-230">Metoda **buildCustomFieldListForEntry** służy do wprowadzania wartości w zapisanych wierszach karty czasu pracy w aplikacji mobilnej.</span><span class="sxs-lookup"><span data-stu-id="ddea2-230">The **buildCustomFieldListForEntry** method is used to enter values on the saved timesheet lines in the mobile app.</span></span> <span data-ttu-id="ddea2-231">Przyjmuje ona rekord TSTimesheetTrans jako parametr.</span><span class="sxs-lookup"><span data-stu-id="ddea2-231">It takes a TSTimesheetTrans record as a parameter.</span></span> <span data-ttu-id="ddea2-232">Pola z tego rekordu mogą być używane do wstawiania wartości pola niestandardowego w aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ddea2-232">Fields from that record can be used to fill in the custom field value in the app.</span></span>
+
+```
+...
+[ExtensionOf(classStr(TsTimesheetEntry))]
+final class TsTimesheetEntry_Extension
+{
+    protected List buildCustomFieldListForEntry(TSTimesheetTrans _tsTimesheetTrans)
+    {
+        List customFieldList = next buildCustomFieldListForEntry(_tsTimesheetTrans);
+        TSTimesheetLine tsTimesheetLine = _tsTimesheetTrans.timesheetLine();
+        TSTimesheetCustomField tsTimesheetCustomField;
+        tsTimesheetCustomField =
+        TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
+        fieldNum(TSTimesheetLine, TestLineString));
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
+        tsTimesheetCustomField.parmOrderSequence(1);
+        tsTimesheetCustomField.parmStringValue(tsTimesheetLine.TestLineString);
+        List stringOptions = new List(Types::String);
+        stringOptions.addEnd('First option');
+        stringOptions.addEnd('second option;);
+        tsTimesheetCustomField.parmStringOptions(stringOptions);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
+    }
+}
+...
+```
+
+### <a name="use-chain-of-command-on-the-tstimesheetentryservice-class-to-save-a-timesheet-entry-from-the-app-back-to-the-database"></a><span data-ttu-id="ddea2-233">Zapisywanie wpisu karty czasu pracy zwrotnie z aplikacji w bazie danych przy użyciu łańcucha poleceń na klasie TSTimesheetEntryService</span><span class="sxs-lookup"><span data-stu-id="ddea2-233">Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database</span></span>
+
+<span data-ttu-id="ddea2-234">Aby zapisać pole niestandardowe z powrotem w bazie danych w typowym użyciu, należy rozszerzyć wiele metod:</span><span class="sxs-lookup"><span data-stu-id="ddea2-234">To save a custom field back to the database in typical usage, you must extend multiple methods:</span></span>
+
+- <span data-ttu-id="ddea2-235">Metoda **timesheetLineNeedsUpdating** służy do określenia, czy rekord wiersza został zmieniony przez użytkownika w aplikacji i musi zostać zapisany w bazie danych.</span><span class="sxs-lookup"><span data-stu-id="ddea2-235">The **timesheetLineNeedsUpdating** method is used to determine whether the line record has been changed by the user in the app and must be saved to the database.</span></span> <span data-ttu-id="ddea2-236">Jeśli wydajność nie jest istotna, można uprościć tę metodę, tak aby zawsze zwracała wartość **true**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-236">If performance isn't a concern, this method can be simplified so that it always returns **true**.</span></span>
+- <span data-ttu-id="ddea2-237">Metody **populateTimesheetLineFromEntryDuringCreate** i **populateTimesheetLineFromEntryDuringUpdate** można rozszerzać, tak aby wprowadzały w rekordzie bazy danych TSTimesheetLine wartości z dostarczonego rekordu umowy dotyczącej danych TSTimesheetEntry.</span><span class="sxs-lookup"><span data-stu-id="ddea2-237">The **populateTimesheetLineFromEntryDuringCreate** and **populateTimesheetLineFromEntryDuringUpdate** methods can be extended so that they enter values in the TSTimesheetLine database record from the TSTimesheetEntry data contract record that is provided.</span></span> <span data-ttu-id="ddea2-238">W poniższym przykładzie należy zauważyć, że mapowanie między polem bazy danych i polem wprowadzania jest wykonywane ręcznie za pomocą kodu X++.</span><span class="sxs-lookup"><span data-stu-id="ddea2-238">In the example that follows, notice how the mapping between the database field and the entry field is manually done via X++ code.</span></span>
+- <span data-ttu-id="ddea2-239">Metodę **populateTimesheetWeekFromEntry** można również rozszerzyć, jeśli pole niestandardowe zmapowane do obiektu **TSTimesheetEntry** musi zostać zapisane z powrotem w tabeli bazy danych TSTimesheetLineweek.</span><span class="sxs-lookup"><span data-stu-id="ddea2-239">The **populateTimesheetWeekFromEntry** method can also be extended if the custom field that is mapped to the **TSTimesheetEntry** object must write back to the TSTimesheetLineweek database table.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="ddea2-240">W poniższym przykładzie wartość **firstOption** lub **secondOption**, zależnie od wyboru użytkownika, jest zapisywana w bazie danych jako wartość ciągu nieprzetworzonego.</span><span class="sxs-lookup"><span data-stu-id="ddea2-240">The following example saves the **firstOption** or **secondOption** value that the user selects to the database as a raw string value.</span></span> <span data-ttu-id="ddea2-241">Jeśli pole bazy danych jest polem typu **Wyliczenie**, wartości te można zamapować ręcznie na wartość wyliczenia, a następnie zapisać je w polu wyliczenia w tabeli bazy danych.</span><span class="sxs-lookup"><span data-stu-id="ddea2-241">If the database field is a field of the **Enum** type, those values can be manually mapped to an enum value and then saved to an enum field on the database table.</span></span>
+
+```
+...
+[ExtensionOf(classStr(TSTimesheetEntryService))]
+final class TSTimesheetEntryService_Extension
+{
+    protected boolean timesheetLineNeedsUpdating(TSTimesheetLine _tsTimesheetLine,
+    TsTimesheetEntry _tsTimesheetEntry)
+    {
+        boolean ret = next timesheetLineNeedsUpdating(_tsTimesheetLine,
+        _tsTimesheetEntry);
+        if (!ret)
+        {
+            */ Loop through custom fields to see if value needs updating*/
+            ListEnumerator enumerator =  _tsTimesheetEntry.parmCustomFields().getEnumerator();
+            while (enumerator.moveNext())
+            {
+                TSTimesheetCustomField customField = enumerator.current();
+                if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
+                fieldNum(TSTimesheetLine, TestLineString)))
+                {
+                    */ If Custom field value for TestLineString field has changed, We need to update the timesheet line.*/
+                    if (_tsTimesheetLine.TestLineString != customField.parmStringValue())
+                    {
+                        ret = true;
+                    }
+                }
+            }
+        }
+        return ret;
+    }
+    protected void populateTimesheetLineFromEntryDuringCreate(TSTimesheetLine
+    _tsTimesheetLine, TSTimesheetEntry _tsTimesheetEntry)
+    {
+        next populateTimesheetLineFromEntryDuringCreate(_tsTimesheetLine,
+        _tsTimesheetEntry);
+        this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
+        _tsTimesheetEntry);
+        }
+        protected void populateTimesheetLineFromEntryDuringUpdate(TSTimesheetLine
+        \_tsTimesheetLine, TSTimesheetEntry _tsTimesheetEntry)
+        {
+            next populateTimesheetLineFromEntryDuringUpdate(_tsTimesheetLine,
+            _tsTimesheetEntry);
+            this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
+            _tsTimesheetEntry);
+        }
+        private void populateTimesheetLineFromCustomFields(TSTimesheetLine
+        _tsTimesheetLine, TSTimesheetEntry _tsTimesheetEntry)
+        {
+            ListEnumerator enumerator =
+            _tsTimesheetEntry.parmCustomFields().getEnumerator();
+            while (enumerator.moveNext())
+            {
+                TSTimesheetCustomField customField = enumerator.current();
+                if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
+                fieldNum(TSTimesheetLine, TestLineString)))
+                {
+                    _tsTimesheetLine.TestLineString = customField.parmStringValue();
+                }
+            }
+        }
+    }
+...
+```
+
+## <a name="show-a-custom-field-in-the-timesheet-header-section"></a><span data-ttu-id="ddea2-242">Wyświetlanie pola niestandardowego w sekcji nagłówka karty czasu pracy</span><span class="sxs-lookup"><span data-stu-id="ddea2-242">Show a custom field in the timesheet header section</span></span>
+
+<span data-ttu-id="ddea2-243">Poniżej znajduje się zrzut ekranu do przeglądania karty czasu pracy w aplikacji mobilnej przez użytkownika.</span><span class="sxs-lookup"><span data-stu-id="ddea2-243">Below is a screenshot from the mobile app of a user viewing a timesheet.</span></span> <span data-ttu-id="ddea2-244">W prawym górnym rogu naciśnięto przycisk „Więcej informacji”, aby wyświetlić opcję „Wyświetl więcej szczegółów”.</span><span class="sxs-lookup"><span data-stu-id="ddea2-244">The "More information" button has been selected in the upper-right corner to show the "View more details" option.</span></span>  
+
+![Polecenie Wyświetl więcej szczegółów](media/show-more.png)
+
+
+
+<span data-ttu-id="ddea2-246">Poniżej znajduje się zrzut ekranu z sekcją „Więcej” karty czasu pracy w aplikacji mobilnej.</span><span class="sxs-lookup"><span data-stu-id="ddea2-246">Below is a screenshot from the mobile app showing the “More” section of a timesheet.</span></span> <span data-ttu-id="ddea2-247">Do sekcji nagłówka karty czasu pracy dodano pole niestandardowe o nazwie „Stopień wykorzystania tej karty czasu pracy (obliczone pole niestandardowe)”</span><span class="sxs-lookup"><span data-stu-id="ddea2-247">A custom field called “Utilization rate of this timesheet (computed custom field)” has been added to the timesheet header section.</span></span> <span data-ttu-id="ddea2-248">W polu niestandardowym ustawiono wartość tylko do odczytu „0,667”.</span><span class="sxs-lookup"><span data-stu-id="ddea2-248">A read-only value of "0.667" is set on the custom field.</span></span>
+
+![Sekcja Więcej](media/more-section.jpg)
+
+
+
+### <a name="extend-the-tstimesheettable-table-so-that-it-has-a-custom-field"></a><span data-ttu-id="ddea2-250">Rozszerzanie tabeli TSTimesheetTable o pole niestandardowe</span><span class="sxs-lookup"><span data-stu-id="ddea2-250">Extend the TSTimesheetTable table so that it has a custom field</span></span>
+
+<span data-ttu-id="ddea2-251">W typowych scenariuszach pole niestandardowe sekcji nagłówka pochodzi zazwyczaj z tabeli TSTimesheetHeader.</span><span class="sxs-lookup"><span data-stu-id="ddea2-251">In typical scenarios, it's likely that the data for a custom field in the header section will be pulled from the TSTimesheetHeader table.</span></span> <span data-ttu-id="ddea2-252">Możliwe jest jednak użycie innych tabel, jeśli dane mogą być pobierane na podstawie dostarczonego rekordu TSTimesheetTable lub jeśli nie ma on określonego kontekstu rekordów (na przykład, jeśli w parametrach projektu pole jest ustawione jako tylko do odczytu).</span><span class="sxs-lookup"><span data-stu-id="ddea2-252">However, other tables can be used if the data can be retrieved based on a TSTimesheetTable record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).</span></span>
+
+<span data-ttu-id="ddea2-253">Należy pamiętać, że pola niestandardowe nie muszą zawierać żadnych kopii zapasowych rekordów bazy danych.</span><span class="sxs-lookup"><span data-stu-id="ddea2-253">Note that custom fields don't have to have any backing database records.</span></span> <span data-ttu-id="ddea2-254">Można je dynamicznie generować na podstawie logiki X++.</span><span class="sxs-lookup"><span data-stu-id="ddea2-254">They can be dynamically generated based on X++ logic.</span></span> <span data-ttu-id="ddea2-255">Poniższy przykład ilustruje to podejście.</span><span class="sxs-lookup"><span data-stu-id="ddea2-255">The example that follows shows this approach.</span></span>
+
+<span data-ttu-id="ddea2-256">Pola w sekcji nagłówka są zawsze tylko do odczytu w aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ddea2-256">Fields in the header section are always read-only in the app.</span></span>
+
+### <a name="use-chain-of-command-on-the-buildcustomfieldlist-method-of-the-tstimesheetsettings-class-to-show-a-field-in-the-header-section"></a><span data-ttu-id="ddea2-257">Wyświetlanie pola w sekcji nagłówka przy użyciu łańcucha poleceń na metodzie buildCustomFieldList klasy TSTimesheetSettings</span><span class="sxs-lookup"><span data-stu-id="ddea2-257">Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the header section</span></span>
+
+<span data-ttu-id="ddea2-258">Ten kod steruje ustawieniami wyświetlania pola w aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ddea2-258">This code controls the display settings for the field in the app.</span></span> <span data-ttu-id="ddea2-259">Na przykład określa typ pola, etykietę, czy pole jest wymagane oraz sekcję, w której jest wyświetlane pole.</span><span class="sxs-lookup"><span data-stu-id="ddea2-259">For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.</span></span>
+
+<span data-ttu-id="ddea2-260">W poniższym przykładzie przedstawiono obliczoną wartość w sekcji nagłówka w aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ddea2-260">The following example shows a computed value in the header section in the app.</span></span>
+
+```
+...
+[ExtensionOf(classStr(TsTimesheetSettings))]
+final class TSTimesheetSettings_Extension
+{
+    protected List buildCustomFieldList()
+    {
+        List customFieldList = next buildCustomFieldList();
+        TSTimesheetCustomField tsTimesheetCustomField;
+
+        */ Computed utilization rate*/
+        tsTimesheetCustomField = new TSTimesheetCustomField();
+        tsTimesheetCustomField.parmFieldBaseType(Types::Real);
+        tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
+        custom field)");
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
+        tsTimesheetCustomField.parmOrderSequence(2);
+        tsTimesheetCustomField.parmNumberOfDecimals(3);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
+    }
+}
+...
+```
+
+### <a name="use-chain-of-command-on-the-buildcustomfieldlistforheader-method-of-the-tstimesheetdetails-class-to-fill-in-timesheet-details"></a><span data-ttu-id="ddea2-261">Wypełnianie szczegółów karty czasu pracy użyciu łańcucha poleceń na metodzie buildCustomFieldListForHeader klasy TSTimesheetDetails</span><span class="sxs-lookup"><span data-stu-id="ddea2-261">Use chain of command on the buildCustomFieldListForHeader method of the TSTimesheetDetails class to fill in timesheet details</span></span>
+
+<span data-ttu-id="ddea2-262">Metoda **buildCustomFieldListForHeader** służy do wypełniania szczegółów nagłówka karty czasu pracy w aplikacji mobilnej.</span><span class="sxs-lookup"><span data-stu-id="ddea2-262">The **buildCustomFieldListForHeader** method is used to fill in the timesheet header details in the mobile app.</span></span> <span data-ttu-id="ddea2-263">Przyjmuje ona rekord TSTimesheetTable jako parametr.</span><span class="sxs-lookup"><span data-stu-id="ddea2-263">It takes a TSTimesheetTable record as a parameter.</span></span> <span data-ttu-id="ddea2-264">Pola z tego rekordu mogą być używane do wstawiania wartości pola niestandardowego w aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ddea2-264">Fields from that record can be used to fill in the custom field value in the app.</span></span> <span data-ttu-id="ddea2-265">W poniższym przykładzie nie są odczytywane żadne wartości z bazy danych.</span><span class="sxs-lookup"><span data-stu-id="ddea2-265">The following example doesn't read any values from the database.</span></span> <span data-ttu-id="ddea2-266">Zamiast tego przy użyciu logiki X++ generowana jest obliczona wartość, która jest następnie wyświetlana w aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ddea2-266">Instead, it uses X++ logic to generate a computed value that is then shown in the app.</span></span>
+
+
+```
+...
+[ExtensionOf(classStr(TSTimesheetDetails))]
+final class TSTimesheetDetails_Extension
+{
+    protected List buildCustomFieldListForHeader(TSTimesheetTable
+    _tsTimesheetTable)
+    {
+        List customFieldList = next buildCustomFieldListForHeader(_tsTimesheetTable);
+        TSTimesheetCustomField tsTimesheetCustomField;
+
+        */ Computed utilization rate*/
+        tsTimesheetCustomField = new TSTimesheetCustomField();
+        tsTimesheetCustomField.parmFieldBaseType(Types::Real);
+        tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
+        custom field)");
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
+        tsTimesheetCustomField.parmOrderSequence(2);
+        tsTimesheetCustomField.parmNumberOfDecimals(3);
+        real utilizationRate = 0;
+        if (_tsTimesheetTable.totalHours() != 0)
+        {
+            utilizationRate = _tsTimesheetTable.totalHoursBillable() /
+            _tsTimesheetTable.totalHours();
+        }
+        tsTimesheetCustomField.parmRealValue(utilizationRate);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
+    }
+}
+...
+```
+
+## <a name="other-configurabilityextensibility-opportunities"></a><span data-ttu-id="ddea2-267">Inne możliwości konfigurowania/rozszerzania</span><span class="sxs-lookup"><span data-stu-id="ddea2-267">Other configurability/extensibility opportunities</span></span>
+
+### <a name="adding-additional-validation-for-the-app"></a><span data-ttu-id="ddea2-268">Wstawianie dodatkowych weryfikacji do aplikacji</span><span class="sxs-lookup"><span data-stu-id="ddea2-268">Adding additional validation for the app</span></span>
+
+<span data-ttu-id="ddea2-269">Istniejąca logika funkcji karty czasu pracy na poziomie bazy danych będzie nadal działać zgodnie z oczekiwaniami.</span><span class="sxs-lookup"><span data-stu-id="ddea2-269">Existing logic for timesheet functionality at the database level will still work as expected.</span></span> <span data-ttu-id="ddea2-270">Aby przerwać kończenie operacji zapisywania lub przesyłania i wyświetlić określony komunikat o błędzie, można dodać wiersz **throw error("message to user")** do kodu za pośrednictwem łańcucha rozszerzenia polecenia.</span><span class="sxs-lookup"><span data-stu-id="ddea2-270">To interrupt the completion of save or submit operations and show a specific error message, you can add **throw error("message to user")** to the code via a chain of command extension.</span></span> <span data-ttu-id="ddea2-271">Oto trzy przykłady przydatnych metod rozszerzania:</span><span class="sxs-lookup"><span data-stu-id="ddea2-271">Here are three examples of useful extensible methods:</span></span>
+
+- <span data-ttu-id="ddea2-272">Jeśli **validateWrite** w tabeli TSTimesheetLine zwraca wartość **false** podczas operacji zapisywania wiersza karty czasu pracy, w aplikacji mobilnej jest wyświetlany komunikat o błędzie.</span><span class="sxs-lookup"><span data-stu-id="ddea2-272">If **validateWrite** on the TSTimesheetLine table returns **false** during a save operation for a timesheet line, an error message is shown in the mobile app.</span></span>
+- <span data-ttu-id="ddea2-273">Jeśli **validateSubmit** w tabeli TSTimesheetTable zwraca wartość **false** podczas przesyłania karty czasu pracy w aplikacji, użytkownikowi jest wyświetlany komunikat o błędzie.</span><span class="sxs-lookup"><span data-stu-id="ddea2-273">If **validateSubmit** on the TSTimesheetTable table returns **false** during timesheet submission in the app, an error message is shown to the user.</span></span>
+- <span data-ttu-id="ddea2-274">Logika, która wypełnia pola (na przykład **Właściwośćwiersza**) w trakcie metody **insert** w tabeli TSTimesheetLine, będzie nadal działać.</span><span class="sxs-lookup"><span data-stu-id="ddea2-274">Logic that fills in fields (for example, **Line Property**) during the **insert** method on the TSTimesheetLine table will still run.</span></span>
+
+### <a name="hiding-and-marking-out-of-box-fields-as-read-only-via-configuration"></a><span data-ttu-id="ddea2-275">Ukrywanie i oznaczanie gotowych pól jako tylko do odczytu za pomocą konfiguracji</span><span class="sxs-lookup"><span data-stu-id="ddea2-275">Hiding and marking out-of-box fields as read-only via configuration</span></span>
+
+<span data-ttu-id="ddea2-276">Z poziomu parametrów projektu można tworzyć gotowe pola tylko do odczytu lub ukryte w aplikacji mobilnej.</span><span class="sxs-lookup"><span data-stu-id="ddea2-276">From the project parameters, you can make out-of-box fields read-only or hidden in the mobile app.</span></span> <span data-ttu-id="ddea2-277">Opcje są ustawiane w sekcji **Mobilne karty czasu pracy** na karcie **Karta czasu pracy** strony **Parametry modułu Zarządzanie projektami i ich księgowanie**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-277">Set the options in the **Mobile timesheets** section on the **Timesheet** tab of the **Project management and accounting parameters** page.</span></span>
+
+![Parametry projektu](media/5753b8ecccd1d8bb2b002dd538b3f762.png)
+
+### <a name="changing-the-activities-that-are-available-for-selection-via-extensions"></a><span data-ttu-id="ddea2-279">Zmienianie działań dostępnych do wybrania za pomocą rozszerzeń</span><span class="sxs-lookup"><span data-stu-id="ddea2-279">Changing the activities that are available for selection via extensions</span></span>
+
+<span data-ttu-id="ddea2-280">Działania dostępne do wybrania dla projektu są wypełniane za pośrednictwem metod **getActivitiesForProject ()** i **getActivityQuery ()** w klasie **TsTimesheetProjectService**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-280">The activities that are available for selection for a project are filled in via the **getActivitiesForProject()** and **getActivityQuery()** methods in the **TsTimesheetProjectService** class.</span></span> <span data-ttu-id="ddea2-281">Za pomocą łańcucha poleceń można zmienić to zachowanie w celu dopasowania go do scenariusza biznesowego dla działań dostępnych do wybrania dla konkretnego projektu.</span><span class="sxs-lookup"><span data-stu-id="ddea2-281">You can use chain of command to change this behavior to match your business scenario for the activities that are available for selection for a specific project.</span></span>
+
+### <a name="entering-a-default-project-category-on-timesheet-entries"></a><span data-ttu-id="ddea2-282">Wprowadzanie domyślnej kategorii projektu we wpisach karty czasu pracy</span><span class="sxs-lookup"><span data-stu-id="ddea2-282">Entering a default project category on timesheet entries</span></span>
+
+<span data-ttu-id="ddea2-283">Wprowadzanie domyślnej kategorii projektu we wpisach karty czasu pracy odbywa się na trzech poziomach.</span><span class="sxs-lookup"><span data-stu-id="ddea2-283">Entry of a default project category on timesheet entries occurs at three levels.</span></span> <span data-ttu-id="ddea2-284">Zachowanie na dowolnym z tych poziomów można rozszerzyć za pomocą łańcucha poleceń, aby osiągnąć pożądane zachowanie.</span><span class="sxs-lookup"><span data-stu-id="ddea2-284">You can use chain of command to extend the behavior at any or all of these levels to achieve the desired behavior.</span></span> <span data-ttu-id="ddea2-285">Obowiązuje następująca hierarchia:</span><span class="sxs-lookup"><span data-stu-id="ddea2-285">The following hierarchy is used:</span></span>
+
+1. <span data-ttu-id="ddea2-286">Aplikacja próbuje umieścić domyślną kategorię z zasobu projektu.</span><span class="sxs-lookup"><span data-stu-id="ddea2-286">The app tries to put the default category from the project resource.</span></span> <span data-ttu-id="ddea2-287">Ta kategoria domyślna jest ustawiana w metodach **getCurrentUserResource** i **getDelegatedResourcesForCurrentUser** w klasie **TSTimesheetSettingsService**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-287">This default category is set in the **getCurrentUserResource** and **getDelegatedResourcesForCurrentUser** methods in the **TSTimesheetSettingsService** class.</span></span>
+2. <span data-ttu-id="ddea2-288">Jeśli na poziomie zasobów projektu nie określono kategorii domyślnej, aplikacja próbuje ściągnąć ją z działania projektu.</span><span class="sxs-lookup"><span data-stu-id="ddea2-288">If the default category isn't provided at the project resource level, the app tries to pull it from the project activity.</span></span> <span data-ttu-id="ddea2-289">Ta kategoria domyślna jest ustawiana w metodzie **getActivitiesForProject** w klasie **TSTimesheetProjectService**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-289">This default category is set in the **getActivitiesForProject** method in the **TSTimesheetProjectService** class.</span></span>
+3. <span data-ttu-id="ddea2-290">Jeśli na poziomie działania projektu nie określono kategorii domyślnej, kategoria domyślna jest pobierana z parametrów projektu.</span><span class="sxs-lookup"><span data-stu-id="ddea2-290">If the default category isn't provided at the project activity level, the default category it taken from the project parameters.</span></span> <span data-ttu-id="ddea2-291">Ta kategoria domyślna jest ustawiana w metodzie **getProjectDetailsbyRule** w klasie **TSTimesheetProjectService**.</span><span class="sxs-lookup"><span data-stu-id="ddea2-291">This default category is set in the **getProjectDetailsbyRule** method in the **TSTimesheetProjectService** class.</span></span>
