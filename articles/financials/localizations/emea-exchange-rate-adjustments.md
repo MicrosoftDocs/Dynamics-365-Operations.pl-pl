@@ -1,534 +1,99 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="emea-exchange-rate-adjustments.md" target-language="pl-PL">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>emea-exchange-rate-adjustments.8c3cbc.eece22113824fd520568dc46bbd384bda23c3c8d.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>eece22113824fd520568dc46bbd384bda23c3c8d</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-exchange-rate-adjustments.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Exchange rate adjustments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korekty kursów wymiany</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ten temat zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Exchange rate adjustments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korekty kursów wymiany</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ten temat zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The functionality for exchange rate adjustments for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia includes the following extensions that are relevant for Accounts receivable and Accounts payable:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkcja korekty kursów wymiany dla Estonii, Węgier, Czech, Łotwy, Litwy, Polski i Rosji obejmuje następujące rozszerzenia dla modułów Rozrachunki z odbiorcami i Rozrachunki z dostawcami:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Postings of exchange rate adjustments can be reversed as corrections (negative amounts) to the original adjustments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Księgowania korekt kursów wymiany można wycofywać jako korekty (kwoty ujemne) pierwotnych korekt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>When consecutive unrealized adjustments are posted, the same general ledger posting account and transaction type are used, regardless of whether the adjustments represent a gain or a loss.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podczas księgowania następujących po sobie niezrealizowanych korekt kursu wymiany są używane to samo konto księgowania w księdze głównej i typ transakcji, bez względu na to, czy korekty reprezentują dodanie, czy ujemne różnice kursowe.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Calculated exchange rate gains are always posted to gain accounts, and calculated exchange rate losses are always posted to loss accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obliczone dodatnie różnice kursowe są zawsze księgowane na kontach dodatnich różnic kursowych, a obliczone ujemne różnice kursowych są zawsze księgowane na kontach ujemnych różnic kursowych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Legal entities that have their primary address in the Czech Republic can use a special method for exchange rate adjustment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Firmy mające adres podstawowy w Czechach mogą stosować specjalną metodę do korygowania kursów wymiany.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>This method is known as the Incremental method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ta metoda nosi nazwę metody przyrostowej.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>When this method is turned on, changes that the current feature introduces aren't applied.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gdy ta metoda jest włączona, zmiany wprowadzone przez bieżącą funkcję nie są stosowane.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Unrealized and realized gains or losses are calculated against the last exchange rate that was used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niezrealizowane i zrealizowane dodatnie lub ujemne różnice kursowe są obliczane względem ostatniego użytego kursu wymiany.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>The adjusted amount is used instead of the original amount as the basis of calculation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skorygowana kwota jest używana zamiast oryginalnej kwoty jako podstawa obliczeń.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>To switch to the Incremental exchange rate adjustment method, on the <bpt id="p1">**</bpt>General ledger parameters<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Foreign currency revaluation<ept id="p2">**</ept> section, in the <bpt id="p3">**</bpt>Calculation method<ept id="p3">**</ept> field, select <bpt id="p4">**</bpt>Incremental<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby przełączyć na metodę przyrostową korekty kursu wymiany, na stronie <bpt id="p1">**</bpt>Parametry księgi głównej<ept id="p1">**</ept> w sekcji <bpt id="p2">**</bpt>Przeszacowanie w walucie obcej<ept id="p2">**</ept> w polu <bpt id="p3">**</bpt>Metoda obliczania<ept id="p3">**</ept> zaznacz opcję <bpt id="p4">**</bpt>Zwiększany<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>The following example shows how the exchange rate adjustment functionality works for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W poniższym przykładzie pokazano, jak działa funkcja korekty kursu wymiany dla Estonii, Węgier, Czech, Łotwy, Litwy, Polski i Rosji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Here is the business scenario for this example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oto scenariusz biznesowy dla tego przykładu:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>An invoice in a foreign currency is posted on December 1, 2012.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura w walucie obcej jest księgowana 1 grudnia 2012 r.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>The payment in the foreign currency is posted on January 3, 2013</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Płatność w walucie obcej jest księgowana 3 stycznia 2013 r.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Settlement is done to apply the payment to the invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jest wykonywane rozliczenie w celu zastosowania płatności do faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Exchange rates adjustment is done on December 31, 2012 (method = Standard).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korekta kursu wymiany jest wykonywana 31 grudnia 2012 r. (metoda = Standardowo).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Exchange rates adjustment is done on January 1, 2013 (method = Invoice date).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korekta kursu wymiany jest wykonywana 1 stycznia 2013 r. (metoda = Data faktury).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Here are the exchange rates for Canadian dollars (CAD) to U.S. dollars (USD) for this example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oto kursy wymiany dolarów kanadyjskich (CAD) na dolary amerykańskie (USD) dla tego przykładu:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>December 1, 2012: 400.0000</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 grudnia 2012: 400,0000</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>December 31, 2012: 450.0000</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">31 grudnia 2012: 450,0000</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>January 3, 2013: 420.0000</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3 stycznia 2013: 420,0000</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura VAT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Date</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Debit/credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa/kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Amounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kwoty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>General ledger (GL) account</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto księgi głównej (KG)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Transaction type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ transakcji</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Posting type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ księgowania</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Correction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korekta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>1-Dec-12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1-gru-12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Debit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>10,000 CAD/40,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10 000 CAD/40 000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>AR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rozrachunki z odbiorcami</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura VAT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Customer balance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saldo odbiorcy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>1-Dec-12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1-gru-12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>10,000 CAD/40,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10 000 CAD/40 000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Offset</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kompensaty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura VAT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Ledger journal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arkusz księgi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>X</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Payment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Płatność</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Date</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Debit/credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa/kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Amounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kwoty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>General ledger (GL) account</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto księgi głównej (KG)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Transaction type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ transakcji</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Posting type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ księgowania</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Correction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korekta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>3-Jan-13</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3-sty-13</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Debit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>10,000 CAD/42,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10 000 CAD/42 000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Offset</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kompensaty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Payment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Płatność</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Ledger journal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arkusz księgi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>3-Jan-13</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3-sty-13</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>10,000 CAD/42,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10 000 CAD/42 000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>AR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rozrachunki z odbiorcami</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Payment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Płatność</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Customer balance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saldo odbiorcy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>X</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Settlement</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Miejscowość</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Date</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Debit/credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa/kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Amounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kwoty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>General ledger (GL) account</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto księgi głównej (KG)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Transaction type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ transakcji</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Posting type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ księgowania</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Correction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korekta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>January 3, 2013 (= payment date)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3 stycznia 2013 (= data płatności)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Debit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>0 CAD/2,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/2000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>AR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rozrachunki z odbiorcami</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Customer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odbiorca</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Exchange rate gain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zysk z tytułu dodatnich różnic kursowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>January 3, 2013 (= payment date)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3 stycznia 2013 (= data płatności)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>0 CAD/2,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/2000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Realized currency adj profit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zrealizowana dodatnia różnica kursowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Customer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odbiorca</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Exchange rate gain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zysk z tytułu dodatnich różnic kursowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>X</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Revaluation  (Standard method; date = December 31, 2012)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie (metoda Standardowo; data = 31 grudnia 2012)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>For this revaluation example, notice that the entry from January 3, 2013, is a direct reversal of the December 31, 2012 entry.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym przykładzie przeszacowania zauważ, że wpis z 3 stycznia 2013 r., jest bezpośrednim cofnięciem wpisu z 31 grudnia 2012 r.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Even the GL accounts and posting types are the same.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nawet konta KG i typy księgowania są takie same.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Additionally, notice that the <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> flag has been set.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ponadto zauważ, że została ustawiona flaga <bpt id="p1">**</bpt>Korekta<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Date</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Debit/credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa/kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Amounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kwoty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>General ledger (GL) account</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto księgi głównej (KG)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Transaction type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ transakcji</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Posting type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ księgowania</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Correction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korekta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>31-Dec-12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">31-gru-12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Debit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>0 CAD/5,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>AR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rozrachunki z odbiorcami</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Foreign currency revaluation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie w walucie obcej</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Exchange rate gain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zysk z tytułu dodatnich różnic kursowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>31-Dec-12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">31-gru-12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>0 CAD/5,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Unrealized currency adj profit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niezrealizowana dodatnia różnica kursowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Foreign currency revaluation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie w walucie obcej</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Exchange rate gain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zysk z tytułu dodatnich różnic kursowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>X</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>3-Jan-13</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3-sty-13</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Debit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>0 CAD/5,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>AR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rozrachunki z odbiorcami</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Foreign currency revaluation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie w walucie obcej</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Exchange rate gain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zysk z tytułu dodatnich różnic kursowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>X</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>3-Jan-13</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3-sty-13</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>0 CAD/5,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Unrealized currency adj profit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niezrealizowana dodatnia różnica kursowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>Foreign currency revaluation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie w walucie obcej</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Exchange rate gain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zysk z tytułu dodatnich różnic kursowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>X</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>X</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Revaluation (Invoice date method; date = January 1, 2013)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie (metoda Data faktury; data = 1 stycznia 2013)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>For this revaluation, notice that the entry from January 1, 2013, is a direct reversal of the January 3, 2013 entry).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym przeszacowaniu zauważ, że wpis z 1 stycznia 2013 r., jest bezpośrednim cofnięciem wpisu z 3 stycznia 2013 r.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Even the GL accounts and posting types are the same.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nawet konta KG i typy księgowania są takie same.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Additionally, notice that the <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> flag has been set.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ponadto zauważ, że została ustawiona flaga <bpt id="p1">**</bpt>Korekta<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Date</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Debit/credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa/kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>Amounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kwoty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>General ledger (GL) account</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto księgi głównej (KG)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>Transaction type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ transakcji</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Posting type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ księgowania</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Correction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korekta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>1-Jan-13</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1-sty-13</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Debit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>0 CAD/5,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>AR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rozrachunki z odbiorcami</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>Foreign currency revaluation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie w walucie obcej</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>Exchange rate gain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zysk z tytułu dodatnich różnic kursowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>X</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>1-Jan-13</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1-sty-13</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>0 CAD/5,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Unrealized currency adj profit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niezrealizowana dodatnia różnica kursowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Foreign currency revaluation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie w walucie obcej</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Exchange rate gain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zysk z tytułu dodatnich różnic kursowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>X</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>X</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>3-Jan-13</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3-sty-13</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Debit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona debetowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>0 CAD/5,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>AR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rozrachunki z odbiorcami</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Foreign currency revaluation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie w walucie obcej</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Exchange rate gain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zysk z tytułu dodatnich różnic kursowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>3-Jan-13</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3-sty-13</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strona kredytowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>0 CAD/5,000 USD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5000 USD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Unrealized currency adj profit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niezrealizowana dodatnia różnica kursowa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Foreign currency revaluation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie w walucie obcej</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Exchange rate gain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zysk z tytułu dodatnich różnic kursowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>X</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>The system behavior is the same, regardless of whether the <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> option in the <bpt id="p2">**</bpt>Transaction reversal<ept id="p2">**</ept> section on the <bpt id="p3">**</bpt>General ledger parameters<ept id="p3">**</ept> page is set to <bpt id="p4">**</bpt>Yes<ept id="p4">**</ept> or <bpt id="p5">**</bpt>No<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zachowanie systemu jest takie same, niezależnie od tego, czy w opcji <bpt id="p1">**</bpt>Korekta<ept id="p1">**</ept> w sekcji <bpt id="p2">**</bpt>Wycofanie transakcji<ept id="p2">**</ept> na stronie <bpt id="p3">**</bpt>Parametry księgi głównej<ept id="p3">**</ept> ustawiono wartość <bpt id="p4">**</bpt>Tak<ept id="p4">**</ept>, czy <bpt id="p5">**</bpt>Nie<ept id="p5">**</ept>.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Korekty kursów wymiany
+description: Ten temat zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 04/10/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: LedgerParameters
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 272683
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+ms.author: v-elgolu
+ms.dyn365.ops.version: Version 1611
+ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: eece22113824fd520568dc46bbd384bda23c3c8d
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547189"
+---
+# <a name="exchange-rate-adjustments"></a><span data-ttu-id="6ce2b-103">Korekty kursów wymiany</span><span class="sxs-lookup"><span data-stu-id="6ce2b-103">Exchange rate adjustments</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="6ce2b-104">Ten temat zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-104">This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</span></span>
+
+<span data-ttu-id="6ce2b-105">Funkcja korekty kursów wymiany dla Estonii, Węgier, Czech, Łotwy, Litwy, Polski i Rosji obejmuje następujące rozszerzenia dla modułów Rozrachunki z odbiorcami i Rozrachunki z dostawcami:</span><span class="sxs-lookup"><span data-stu-id="6ce2b-105">The functionality for exchange rate adjustments for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia includes the following extensions that are relevant for Accounts receivable and Accounts payable:</span></span>
+
+-   <span data-ttu-id="6ce2b-106">Księgowania korekt kursów wymiany można wycofywać jako korekty (kwoty ujemne) pierwotnych korekt.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-106">Postings of exchange rate adjustments can be reversed as corrections (negative amounts) to the original adjustments.</span></span>
+-   <span data-ttu-id="6ce2b-107">Podczas księgowania następujących po sobie niezrealizowanych korekt kursu wymiany są używane to samo konto księgowania w księdze głównej i typ transakcji, bez względu na to, czy korekty reprezentują dodanie, czy ujemne różnice kursowe.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-107">When consecutive unrealized adjustments are posted, the same general ledger posting account and transaction type are used, regardless of whether the adjustments represent a gain or a loss.</span></span>
+-   <span data-ttu-id="6ce2b-108">Obliczone dodatnie różnice kursowe są zawsze księgowane na kontach dodatnich różnic kursowych, a obliczone ujemne różnice kursowych są zawsze księgowane na kontach ujemnych różnic kursowych.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-108">Calculated exchange rate gains are always posted to gain accounts, and calculated exchange rate losses are always posted to loss accounts.</span></span>
+
+<span data-ttu-id="6ce2b-109">Firmy mające adres podstawowy w Czechach mogą stosować specjalną metodę do korygowania kursów wymiany.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-109">Legal entities that have their primary address in the Czech Republic can use a special method for exchange rate adjustment.</span></span> <span data-ttu-id="6ce2b-110">Ta metoda nosi nazwę metody przyrostowej.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-110">This method is known as the Incremental method.</span></span> <span data-ttu-id="6ce2b-111">Gdy ta metoda jest włączona, zmiany wprowadzone przez bieżącą funkcję nie są stosowane.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-111">When this method is turned on, changes that the current feature introduces aren't applied.</span></span> <span data-ttu-id="6ce2b-112">Niezrealizowane i zrealizowane dodatnie lub ujemne różnice kursowe są obliczane względem ostatniego użytego kursu wymiany.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-112">Unrealized and realized gains or losses are calculated against the last exchange rate that was used.</span></span> <span data-ttu-id="6ce2b-113">Skorygowana kwota jest używana zamiast oryginalnej kwoty jako podstawa obliczeń.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-113">The adjusted amount is used instead of the original amount as the basis of calculation.</span></span> <span data-ttu-id="6ce2b-114">Aby przełączyć na metodę przyrostową korekty kursu wymiany, na stronie **Parametry księgi głównej** w sekcji **Przeszacowanie w walucie obcej** w polu **Metoda obliczania** zaznacz opcję **Zwiększany**.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-114">To switch to the Incremental exchange rate adjustment method, on the **General ledger parameters** page, in the **Foreign currency revaluation** section, in the **Calculation method** field, select **Incremental**.</span></span> <span data-ttu-id="6ce2b-115">W poniższym przykładzie pokazano, jak działa funkcja korekty kursu wymiany dla Estonii, Węgier, Czech, Łotwy, Litwy, Polski i Rosji.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-115">The following example shows how the exchange rate adjustment functionality works for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</span></span> <span data-ttu-id="6ce2b-116">Oto scenariusz biznesowy dla tego przykładu:</span><span class="sxs-lookup"><span data-stu-id="6ce2b-116">Here is the business scenario for this example:</span></span>
+
+-   <span data-ttu-id="6ce2b-117">Faktura w walucie obcej jest księgowana 1 grudnia 2012 r.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-117">An invoice in a foreign currency is posted on December 1, 2012.</span></span>
+-   <span data-ttu-id="6ce2b-118">Płatność w walucie obcej jest księgowana 3 stycznia 2013 r.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-118">The payment in the foreign currency is posted on January 3, 2013</span></span>
+-   <span data-ttu-id="6ce2b-119">Jest wykonywane rozliczenie w celu zastosowania płatności do faktury.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-119">Settlement is done to apply the payment to the invoice.</span></span>
+-   <span data-ttu-id="6ce2b-120">Korekta kursu wymiany jest wykonywana 31 grudnia 2012 r. (metoda = Standardowo).</span><span class="sxs-lookup"><span data-stu-id="6ce2b-120">Exchange rates adjustment is done on December 31, 2012 (method = Standard).</span></span>
+-   <span data-ttu-id="6ce2b-121">Korekta kursu wymiany jest wykonywana 1 stycznia 2013 r. (metoda = Data faktury).</span><span class="sxs-lookup"><span data-stu-id="6ce2b-121">Exchange rates adjustment is done on January 1, 2013 (method = Invoice date).</span></span>
+
+<span data-ttu-id="6ce2b-122">Oto kursy wymiany dolarów kanadyjskich (CAD) na dolary amerykańskie (USD) dla tego przykładu:</span><span class="sxs-lookup"><span data-stu-id="6ce2b-122">Here are the exchange rates for Canadian dollars (CAD) to U.S. dollars (USD) for this example:</span></span>
+
+-   <span data-ttu-id="6ce2b-123">1 grudnia 2012: 400,0000</span><span class="sxs-lookup"><span data-stu-id="6ce2b-123">December 1, 2012: 400.0000</span></span>
+-   <span data-ttu-id="6ce2b-124">31 grudnia 2012: 450,0000</span><span class="sxs-lookup"><span data-stu-id="6ce2b-124">December 31, 2012: 450.0000</span></span>
+-   <span data-ttu-id="6ce2b-125">3 stycznia 2013: 420,0000</span><span class="sxs-lookup"><span data-stu-id="6ce2b-125">January 3, 2013: 420.0000</span></span>
+
+### <a name="invoice"></a><span data-ttu-id="6ce2b-126">Faktura VAT</span><span class="sxs-lookup"><span data-stu-id="6ce2b-126">Invoice</span></span>
+
+| <span data-ttu-id="6ce2b-127">Data</span><span class="sxs-lookup"><span data-stu-id="6ce2b-127">Date</span></span>                             | <span data-ttu-id="6ce2b-128">Strona debetowa/kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-128">Debit/credit</span></span> | <span data-ttu-id="6ce2b-129">Kwoty</span><span class="sxs-lookup"><span data-stu-id="6ce2b-129">Amounts</span></span>               | <span data-ttu-id="6ce2b-130">Konto księgi głównej (KG)</span><span class="sxs-lookup"><span data-stu-id="6ce2b-130">General ledger (GL) account</span></span>    | <span data-ttu-id="6ce2b-131">Typ transakcji</span><span class="sxs-lookup"><span data-stu-id="6ce2b-131">Transaction type</span></span>             | <span data-ttu-id="6ce2b-132">Typ księgowania</span><span class="sxs-lookup"><span data-stu-id="6ce2b-132">Posting type</span></span>       | <span data-ttu-id="6ce2b-133">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-133">Credit</span></span> | <span data-ttu-id="6ce2b-134">Korekta</span><span class="sxs-lookup"><span data-stu-id="6ce2b-134">Correction</span></span> |
+|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
+| <span data-ttu-id="6ce2b-135">1-gru-12</span><span class="sxs-lookup"><span data-stu-id="6ce2b-135">1-Dec-12</span></span>                         | <span data-ttu-id="6ce2b-136">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-136">Debit</span></span>        | <span data-ttu-id="6ce2b-137">10 000 CAD/40 000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-137">10,000 CAD/40,000 USD</span></span> | <span data-ttu-id="6ce2b-138">rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="6ce2b-138">AR</span></span>                             | <span data-ttu-id="6ce2b-139">Faktura VAT</span><span class="sxs-lookup"><span data-stu-id="6ce2b-139">Invoice</span></span>                      | <span data-ttu-id="6ce2b-140">Saldo odbiorcy</span><span class="sxs-lookup"><span data-stu-id="6ce2b-140">Customer balance</span></span>   |        |            |
+| <span data-ttu-id="6ce2b-141">1-gru-12</span><span class="sxs-lookup"><span data-stu-id="6ce2b-141">1-Dec-12</span></span>                         | <span data-ttu-id="6ce2b-142">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-142">Credit</span></span>       | <span data-ttu-id="6ce2b-143">10 000 CAD/40 000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-143">10,000 CAD/40,000 USD</span></span> | <span data-ttu-id="6ce2b-144">Kompensaty</span><span class="sxs-lookup"><span data-stu-id="6ce2b-144">Offset</span></span>                         | <span data-ttu-id="6ce2b-145">Faktura VAT</span><span class="sxs-lookup"><span data-stu-id="6ce2b-145">Invoice</span></span>                      | <span data-ttu-id="6ce2b-146">Arkusz księgi</span><span class="sxs-lookup"><span data-stu-id="6ce2b-146">Ledger journal</span></span>     | <span data-ttu-id="6ce2b-147">X</span><span class="sxs-lookup"><span data-stu-id="6ce2b-147">X</span></span>      |
+
+### <a name="payment"></a><span data-ttu-id="6ce2b-148">Płatność</span><span class="sxs-lookup"><span data-stu-id="6ce2b-148">Payment</span></span>
+
+| <span data-ttu-id="6ce2b-149">Data</span><span class="sxs-lookup"><span data-stu-id="6ce2b-149">Date</span></span>                             | <span data-ttu-id="6ce2b-150">Strona debetowa/kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-150">Debit/credit</span></span> | <span data-ttu-id="6ce2b-151">Kwoty</span><span class="sxs-lookup"><span data-stu-id="6ce2b-151">Amounts</span></span>               | <span data-ttu-id="6ce2b-152">Konto księgi głównej (KG)</span><span class="sxs-lookup"><span data-stu-id="6ce2b-152">General ledger (GL) account</span></span>    | <span data-ttu-id="6ce2b-153">Typ transakcji</span><span class="sxs-lookup"><span data-stu-id="6ce2b-153">Transaction type</span></span>             | <span data-ttu-id="6ce2b-154">Typ księgowania</span><span class="sxs-lookup"><span data-stu-id="6ce2b-154">Posting type</span></span>       | <span data-ttu-id="6ce2b-155">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-155">Credit</span></span> | <span data-ttu-id="6ce2b-156">Korekta</span><span class="sxs-lookup"><span data-stu-id="6ce2b-156">Correction</span></span> |
+|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
+| <span data-ttu-id="6ce2b-157">3-sty-13</span><span class="sxs-lookup"><span data-stu-id="6ce2b-157">3-Jan-13</span></span>                         | <span data-ttu-id="6ce2b-158">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-158">Debit</span></span>        | <span data-ttu-id="6ce2b-159">10 000 CAD/42 000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-159">10,000 CAD/42,000 USD</span></span> | <span data-ttu-id="6ce2b-160">Kompensaty</span><span class="sxs-lookup"><span data-stu-id="6ce2b-160">Offset</span></span>                         | <span data-ttu-id="6ce2b-161">Płatność</span><span class="sxs-lookup"><span data-stu-id="6ce2b-161">Payment</span></span>                      | <span data-ttu-id="6ce2b-162">Arkusz księgi</span><span class="sxs-lookup"><span data-stu-id="6ce2b-162">Ledger journal</span></span>     |        |            |
+| <span data-ttu-id="6ce2b-163">3-sty-13</span><span class="sxs-lookup"><span data-stu-id="6ce2b-163">3-Jan-13</span></span>                         | <span data-ttu-id="6ce2b-164">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-164">Credit</span></span>       | <span data-ttu-id="6ce2b-165">10 000 CAD/42 000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-165">10,000 CAD/42,000 USD</span></span> | <span data-ttu-id="6ce2b-166">rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="6ce2b-166">AR</span></span>                             | <span data-ttu-id="6ce2b-167">Płatność</span><span class="sxs-lookup"><span data-stu-id="6ce2b-167">Payment</span></span>                      | <span data-ttu-id="6ce2b-168">Saldo odbiorcy</span><span class="sxs-lookup"><span data-stu-id="6ce2b-168">Customer balance</span></span>   | <span data-ttu-id="6ce2b-169">X</span><span class="sxs-lookup"><span data-stu-id="6ce2b-169">X</span></span>      |            |
+
+### <a name="settlement"></a><span data-ttu-id="6ce2b-170">Miejscowość</span><span class="sxs-lookup"><span data-stu-id="6ce2b-170">Settlement</span></span>
+
+| <span data-ttu-id="6ce2b-171">Data</span><span class="sxs-lookup"><span data-stu-id="6ce2b-171">Date</span></span>                             | <span data-ttu-id="6ce2b-172">Strona debetowa/kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-172">Debit/credit</span></span> | <span data-ttu-id="6ce2b-173">Kwoty</span><span class="sxs-lookup"><span data-stu-id="6ce2b-173">Amounts</span></span>               | <span data-ttu-id="6ce2b-174">Konto księgi głównej (KG)</span><span class="sxs-lookup"><span data-stu-id="6ce2b-174">General ledger (GL) account</span></span>    | <span data-ttu-id="6ce2b-175">Typ transakcji</span><span class="sxs-lookup"><span data-stu-id="6ce2b-175">Transaction type</span></span>             | <span data-ttu-id="6ce2b-176">Typ księgowania</span><span class="sxs-lookup"><span data-stu-id="6ce2b-176">Posting type</span></span>       | <span data-ttu-id="6ce2b-177">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-177">Credit</span></span> | <span data-ttu-id="6ce2b-178">Korekta</span><span class="sxs-lookup"><span data-stu-id="6ce2b-178">Correction</span></span> |
+|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
+|<span data-ttu-id="6ce2b-179">3 stycznia 2013 (= data płatności)</span><span class="sxs-lookup"><span data-stu-id="6ce2b-179">January 3, 2013 (= payment date)</span></span> | <span data-ttu-id="6ce2b-180">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-180">Debit</span></span>        | <span data-ttu-id="6ce2b-181">0 CAD/2000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-181">0 CAD/2,000 USD</span></span>       | <span data-ttu-id="6ce2b-182">rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="6ce2b-182">AR</span></span>                             | <span data-ttu-id="6ce2b-183">Odbiorca</span><span class="sxs-lookup"><span data-stu-id="6ce2b-183">Customer</span></span>                     | <span data-ttu-id="6ce2b-184">Zysk z tytułu dodatnich różnic kursowych</span><span class="sxs-lookup"><span data-stu-id="6ce2b-184">Exchange rate gain</span></span> |        |            |
+<span data-ttu-id="6ce2b-185">3 stycznia 2013 (= data płatności)</span><span class="sxs-lookup"><span data-stu-id="6ce2b-185">January 3, 2013 (= payment date)</span></span> | <span data-ttu-id="6ce2b-186">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-186">Credit</span></span>       | <span data-ttu-id="6ce2b-187">0 CAD/2000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-187">0 CAD/2,000 USD</span></span>       | <span data-ttu-id="6ce2b-188">Zrealizowana dodatnia różnica kursowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-188">Realized currency adj profit</span></span>   | <span data-ttu-id="6ce2b-189">Odbiorca</span><span class="sxs-lookup"><span data-stu-id="6ce2b-189">Customer</span></span>                     | <span data-ttu-id="6ce2b-190">Zysk z tytułu dodatnich różnic kursowych</span><span class="sxs-lookup"><span data-stu-id="6ce2b-190">Exchange rate gain</span></span> | <span data-ttu-id="6ce2b-191">X</span><span class="sxs-lookup"><span data-stu-id="6ce2b-191">X</span></span>      |            |
+
+
+### <a name="revaluation--standard-method-date--december-31-2012"></a><span data-ttu-id="6ce2b-192">Przeszacowanie (metoda Standardowo; data = 31 grudnia 2012)</span><span class="sxs-lookup"><span data-stu-id="6ce2b-192">Revaluation  (Standard method; date = December 31, 2012)</span></span>
+<span data-ttu-id="6ce2b-193">W tym przykładzie przeszacowania zauważ, że wpis z 3 stycznia 2013 r., jest bezpośrednim cofnięciem wpisu z 31 grudnia 2012 r.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-193">For this revaluation example, notice that the entry from January 3, 2013, is a direct reversal of the December 31, 2012 entry.</span></span> <span data-ttu-id="6ce2b-194">Nawet konta KG i typy księgowania są takie same.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-194">Even the GL accounts and posting types are the same.</span></span> <span data-ttu-id="6ce2b-195">Ponadto zauważ, że została ustawiona flaga **Korekta**.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-195">Additionally, notice that the **Correction** flag has been set.</span></span>
+
+| <span data-ttu-id="6ce2b-196">Data</span><span class="sxs-lookup"><span data-stu-id="6ce2b-196">Date</span></span>                             | <span data-ttu-id="6ce2b-197">Strona debetowa/kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-197">Debit/credit</span></span> | <span data-ttu-id="6ce2b-198">Kwoty</span><span class="sxs-lookup"><span data-stu-id="6ce2b-198">Amounts</span></span>               | <span data-ttu-id="6ce2b-199">Konto księgi głównej (KG)</span><span class="sxs-lookup"><span data-stu-id="6ce2b-199">General ledger (GL) account</span></span>    | <span data-ttu-id="6ce2b-200">Typ transakcji</span><span class="sxs-lookup"><span data-stu-id="6ce2b-200">Transaction type</span></span>             | <span data-ttu-id="6ce2b-201">Typ księgowania</span><span class="sxs-lookup"><span data-stu-id="6ce2b-201">Posting type</span></span>       | <span data-ttu-id="6ce2b-202">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-202">Credit</span></span> | <span data-ttu-id="6ce2b-203">Korekta</span><span class="sxs-lookup"><span data-stu-id="6ce2b-203">Correction</span></span> |
+|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
+| <span data-ttu-id="6ce2b-204">31-gru-12</span><span class="sxs-lookup"><span data-stu-id="6ce2b-204">31-Dec-12</span></span>           | <span data-ttu-id="6ce2b-205">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-205">Debit</span></span>        | <span data-ttu-id="6ce2b-206">0 CAD/5000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-206">0 CAD/5,000 USD</span></span>       | <span data-ttu-id="6ce2b-207">rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="6ce2b-207">AR</span></span>                             | <span data-ttu-id="6ce2b-208">Przeszacowanie w walucie obcej</span><span class="sxs-lookup"><span data-stu-id="6ce2b-208">Foreign currency revaluation</span></span> | <span data-ttu-id="6ce2b-209">Zysk z tytułu dodatnich różnic kursowych</span><span class="sxs-lookup"><span data-stu-id="6ce2b-209">Exchange rate gain</span></span> |        |            |
+| <span data-ttu-id="6ce2b-210">31-gru-12</span><span class="sxs-lookup"><span data-stu-id="6ce2b-210">31-Dec-12</span></span>           | <span data-ttu-id="6ce2b-211">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-211">Credit</span></span>       | <span data-ttu-id="6ce2b-212">0 CAD/5000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-212">0 CAD/5,000 USD</span></span>       | <span data-ttu-id="6ce2b-213">Niezrealizowana dodatnia różnica kursowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-213">Unrealized currency adj profit</span></span> | <span data-ttu-id="6ce2b-214">Przeszacowanie w walucie obcej</span><span class="sxs-lookup"><span data-stu-id="6ce2b-214">Foreign currency revaluation</span></span> | <span data-ttu-id="6ce2b-215">Zysk z tytułu dodatnich różnic kursowych</span><span class="sxs-lookup"><span data-stu-id="6ce2b-215">Exchange rate gain</span></span> | <span data-ttu-id="6ce2b-216">X</span><span class="sxs-lookup"><span data-stu-id="6ce2b-216">X</span></span>      |            |
+| <span data-ttu-id="6ce2b-217">3-sty-13</span><span class="sxs-lookup"><span data-stu-id="6ce2b-217">3-Jan-13</span></span>            | <span data-ttu-id="6ce2b-218">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-218">Debit</span></span>        | <span data-ttu-id="6ce2b-219">0 CAD/5000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-219">0 CAD/5,000 USD</span></span>       | <span data-ttu-id="6ce2b-220">rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="6ce2b-220">AR</span></span>                             | <span data-ttu-id="6ce2b-221">Przeszacowanie w walucie obcej</span><span class="sxs-lookup"><span data-stu-id="6ce2b-221">Foreign currency revaluation</span></span> | <span data-ttu-id="6ce2b-222">Zysk z tytułu dodatnich różnic kursowych</span><span class="sxs-lookup"><span data-stu-id="6ce2b-222">Exchange rate gain</span></span> |        | <span data-ttu-id="6ce2b-223">X</span><span class="sxs-lookup"><span data-stu-id="6ce2b-223">X</span></span>          |
+ <span data-ttu-id="6ce2b-224">3-sty-13</span><span class="sxs-lookup"><span data-stu-id="6ce2b-224">3-Jan-13</span></span>            | <span data-ttu-id="6ce2b-225">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-225">Credit</span></span>       | <span data-ttu-id="6ce2b-226">0 CAD/5000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-226">0 CAD/5,000 USD</span></span>       | <span data-ttu-id="6ce2b-227">Niezrealizowana dodatnia różnica kursowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-227">Unrealized currency adj profit</span></span> | <span data-ttu-id="6ce2b-228">Przeszacowanie w walucie obcej</span><span class="sxs-lookup"><span data-stu-id="6ce2b-228">Foreign currency revaluation</span></span> | <span data-ttu-id="6ce2b-229">Zysk z tytułu dodatnich różnic kursowych</span><span class="sxs-lookup"><span data-stu-id="6ce2b-229">Exchange rate gain</span></span> | <span data-ttu-id="6ce2b-230">X</span><span class="sxs-lookup"><span data-stu-id="6ce2b-230">X</span></span>      | <span data-ttu-id="6ce2b-231">X</span><span class="sxs-lookup"><span data-stu-id="6ce2b-231">X</span></span>          |
+
+
+### <a name="revaluation-invoice-date-method-date--january-1-2013"></a><span data-ttu-id="6ce2b-232">Przeszacowanie (metoda Data faktury; data = 1 stycznia 2013)</span><span class="sxs-lookup"><span data-stu-id="6ce2b-232">Revaluation (Invoice date method; date = January 1, 2013)</span></span>
+<span data-ttu-id="6ce2b-233">W tym przeszacowaniu zauważ, że wpis z 1 stycznia 2013 r., jest bezpośrednim cofnięciem wpisu z 3 stycznia 2013 r.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-233">For this revaluation, notice that the entry from January 1, 2013, is a direct reversal of the January 3, 2013 entry).</span></span> <span data-ttu-id="6ce2b-234">Nawet konta KG i typy księgowania są takie same.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-234">Even the GL accounts and posting types are the same.</span></span> <span data-ttu-id="6ce2b-235">Ponadto zauważ, że została ustawiona flaga **Korekta**.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-235">Additionally, notice that the **Correction** flag has been set.</span></span>
+
+| <span data-ttu-id="6ce2b-236">Data</span><span class="sxs-lookup"><span data-stu-id="6ce2b-236">Date</span></span>   | <span data-ttu-id="6ce2b-237">Strona debetowa/kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-237">Debit/credit</span></span> | <span data-ttu-id="6ce2b-238">Kwoty</span><span class="sxs-lookup"><span data-stu-id="6ce2b-238">Amounts</span></span> | <span data-ttu-id="6ce2b-239">Konto księgi głównej (KG)</span><span class="sxs-lookup"><span data-stu-id="6ce2b-239">General ledger (GL) account</span></span>| <span data-ttu-id="6ce2b-240">Typ transakcji</span><span class="sxs-lookup"><span data-stu-id="6ce2b-240">Transaction type</span></span>| <span data-ttu-id="6ce2b-241">Typ księgowania</span><span class="sxs-lookup"><span data-stu-id="6ce2b-241">Posting type</span></span>| <span data-ttu-id="6ce2b-242">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-242">Credit</span></span> | <span data-ttu-id="6ce2b-243">Korekta</span><span class="sxs-lookup"><span data-stu-id="6ce2b-243">Correction</span></span> |
+|--------|--------------|---------|----------------------------|----------------|--------|------------|--------------|
+|<span data-ttu-id="6ce2b-244">1-sty-13</span><span class="sxs-lookup"><span data-stu-id="6ce2b-244">1-Jan-13</span></span> | <span data-ttu-id="6ce2b-245">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-245">Debit</span></span>  | <span data-ttu-id="6ce2b-246">0 CAD/5000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-246">0 CAD/5,000 USD</span></span> | <span data-ttu-id="6ce2b-247">rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="6ce2b-247">AR</span></span>                             | <span data-ttu-id="6ce2b-248">Przeszacowanie w walucie obcej</span><span class="sxs-lookup"><span data-stu-id="6ce2b-248">Foreign currency revaluation</span></span> | <span data-ttu-id="6ce2b-249">Zysk z tytułu dodatnich różnic kursowych</span><span class="sxs-lookup"><span data-stu-id="6ce2b-249">Exchange rate gain</span></span> |   | <span data-ttu-id="6ce2b-250">X</span><span class="sxs-lookup"><span data-stu-id="6ce2b-250">X</span></span> |
+|<span data-ttu-id="6ce2b-251">1-sty-13</span><span class="sxs-lookup"><span data-stu-id="6ce2b-251">1-Jan-13</span></span> | <span data-ttu-id="6ce2b-252">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-252">Credit</span></span> | <span data-ttu-id="6ce2b-253">0 CAD/5000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-253">0 CAD/5,000 USD</span></span> | <span data-ttu-id="6ce2b-254">Niezrealizowana dodatnia różnica kursowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-254">Unrealized currency adj profit</span></span> | <span data-ttu-id="6ce2b-255">Przeszacowanie w walucie obcej</span><span class="sxs-lookup"><span data-stu-id="6ce2b-255">Foreign currency revaluation</span></span> | <span data-ttu-id="6ce2b-256">Zysk z tytułu dodatnich różnic kursowych</span><span class="sxs-lookup"><span data-stu-id="6ce2b-256">Exchange rate gain</span></span> | <span data-ttu-id="6ce2b-257">X</span><span class="sxs-lookup"><span data-stu-id="6ce2b-257">X</span></span> | <span data-ttu-id="6ce2b-258">X</span><span class="sxs-lookup"><span data-stu-id="6ce2b-258">X</span></span> |
+|<span data-ttu-id="6ce2b-259">3-sty-13</span><span class="sxs-lookup"><span data-stu-id="6ce2b-259">3-Jan-13</span></span> | <span data-ttu-id="6ce2b-260">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-260">Debit</span></span>  | <span data-ttu-id="6ce2b-261">0 CAD/5000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-261">0 CAD/5,000 USD</span></span> | <span data-ttu-id="6ce2b-262">rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="6ce2b-262">AR</span></span>                             | <span data-ttu-id="6ce2b-263">Przeszacowanie w walucie obcej</span><span class="sxs-lookup"><span data-stu-id="6ce2b-263">Foreign currency revaluation</span></span> | <span data-ttu-id="6ce2b-264">Zysk z tytułu dodatnich różnic kursowych</span><span class="sxs-lookup"><span data-stu-id="6ce2b-264">Exchange rate gain</span></span> |   |   |
+|<span data-ttu-id="6ce2b-265">3-sty-13</span><span class="sxs-lookup"><span data-stu-id="6ce2b-265">3-Jan-13</span></span> | <span data-ttu-id="6ce2b-266">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-266">Credit</span></span> | <span data-ttu-id="6ce2b-267">0 CAD/5000 USD</span><span class="sxs-lookup"><span data-stu-id="6ce2b-267">0 CAD/5,000 USD</span></span> | <span data-ttu-id="6ce2b-268">Niezrealizowana dodatnia różnica kursowa</span><span class="sxs-lookup"><span data-stu-id="6ce2b-268">Unrealized currency adj profit</span></span> | <span data-ttu-id="6ce2b-269">Przeszacowanie w walucie obcej</span><span class="sxs-lookup"><span data-stu-id="6ce2b-269">Foreign currency revaluation</span></span> | <span data-ttu-id="6ce2b-270">Zysk z tytułu dodatnich różnic kursowych</span><span class="sxs-lookup"><span data-stu-id="6ce2b-270">Exchange rate gain</span></span> | <span data-ttu-id="6ce2b-271">X</span><span class="sxs-lookup"><span data-stu-id="6ce2b-271">X</span></span> |   |
+
+<span data-ttu-id="6ce2b-272">Zachowanie systemu jest takie same, niezależnie od tego, czy w opcji **Korekta** w sekcji **Wycofanie transakcji** na stronie **Parametry księgi głównej** ustawiono wartość **Tak**, czy **Nie**.</span><span class="sxs-lookup"><span data-stu-id="6ce2b-272">The system behavior is the same, regardless of whether the **Correction** option in the **Transaction reversal** section on the **General ledger parameters** page is set to **Yes** or **No**.</span></span>
+
+
+

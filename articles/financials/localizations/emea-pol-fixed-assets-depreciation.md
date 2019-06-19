@@ -1,219 +1,110 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="emea-pol-fixed-assets-depreciation.md" target-language="pl-PL">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>emea-pol-fixed-assets-depreciation.ef312f.6f7d93c95aa85acdf2c1a3986b1141a3326882e1.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>6f7d93c95aa85acdf2c1a3986b1141a3326882e1</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-pol-fixed-assets-depreciation.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Fixed assets depreciation for Poland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Amortyzacja środków trwałych dla Polski</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides information about fixed assets depreciation for legal entities in Poland.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Fixed assets depreciation for Poland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Amortyzacja środków trwałych dla Polski</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic provides information about fixed assets depreciation for legal entities in Poland.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The Fixed assets depreciation features that are based on legal requirements in Poland include:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkcje amortyzacji środków trwałych oparte na wymaganiach prawnych w Polsce obejmują następujące elementy:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Depreciation methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metody amortyzacji</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Depreciation percent level</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poziom procentu amortyzacji</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Depreciation groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grupy amortyzacji</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>The same date, which is an option in the depreciation proposal to fill in the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> field value in all journal lines with a <bpt id="p2">**</bpt>To date<ept id="p2">**</ept> value that is defined in the Depreciation proposal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ta sama data, co jest opcją w propozycji amortyzacji. Powoduje ona wypełnianie pola <bpt id="p1">**</bpt>Data<ept id="p1">**</ept> we wszystkich wierszach arkusza wartością z pola <bpt id="p2">**</bpt>Do dnia<ept id="p2">**</ept> zdefiniowanego w propozycji amortyzacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Poland-specific depreciation methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metody amortyzacji specyficzne dla Polski</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>For legal entities in Poland there are additional depreciation methods, rules, and settings that are used to meet specific fixed asset accounting requirements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dla firm w Polsce istnieją dodatkowe metody, reguły i ustawienia amortyzacji, które są używane do spełnienia określonych wymogów rachunkowości środków trwałych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>According to Polish regulations, depreciation is calculated using a yearly depreciation rate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zgodnie z polskimi przepisami amortyzacja jest obliczana przy użyciu rocznej stawki amortyzacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>For more information about depreciation methods, see <bpt id="p1">[</bpt>Fixed asset depreciation<ept id="p1">](../fixed-assets/fixed-asset-depreciation.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby uzyskać więcej informacji na temat metod amortyzacji, zobacz <bpt id="p1">[</bpt>Amortyzacja środka trwałego<ept id="p1">](../fixed-assets/fixed-asset-depreciation.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>The following depreciation methods are available for legal entities in Poland:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dla firm w Polsce są dostępne następujące metody amortyzacji:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source><bpt id="p1">**</bpt>Reducing balance (Poland)<ept id="p1">**</ept> – This depreciation method considers special local legal requirements about the value of fixed assets changing during the fiscal year and cost part recognition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Degresywna (Polska)<ept id="p1">**</ept> — Ta metoda amortyzacji uwzględnia lokalne specjalne wymogi prawne dotyczące zmiany wartości środków trwałych w trakcie roku obrachunkowego i rozpoznawania części kosztowej.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>The base for this depreciation method includes the following transaction types:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podstawa dla tej metody amortyzacji uwzględnia następujące typy transakcji:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Acquisition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nabycie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Acquisition adjustment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korekta wartości początkowej</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Write up</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zwiększenie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Write down</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zmniejszenie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Revaluation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Previous depreciation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poprzednia amortyzacja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source><bpt id="p1">**</bpt>Straight line (Poland)<ept id="p1">**</ept> – Depreciation is calculated for the first period based on the number of days that the asset was used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Liniowa (Polska)<ept id="p1">**</ept> — Amortyzacja jest obliczana dla pierwszego okresu na podstawie liczby dni używania środka trwałego.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>For example, if a fixed asset was purchased on January 15 and the depreciation period starts on January 1, depreciation will be calculated for half of the period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład jeśli środek trwały zakupiono 15 stycznia, a okres amortyzacji rozpoczyna się 1 stycznia, amortyzacja jest obliczana dla połowy okresu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>The base for this depreciation method includes the following transaction types:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podstawa dla tej metody amortyzacji uwzględnia następujące typy transakcji:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Acquisition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nabycie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Acquisition adjustment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korekta wartości początkowej</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Write up</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zwiększenie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Write down</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zmniejszenie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Revaluation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source><bpt id="p1">**</bpt>Straight line percentage (Poland)<ept id="p1">**</ept> – The service life is calculated by entering a percentage and dividing 100 percent by the percentage entered.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Liniowa procentowa (Polska)<ept id="p1">**</ept> — Okres użytkowania jest obliczany przez wprowadzenie wartości procentowej i podzielenie 100% przez wprowadzony procent.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>For example, if you entered 20 percent, 100 percent divided by 20 percent is 5 service years.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład jeśli wprowadzono 20%, 100% podzielone przez 20% to 5 lat użytkowania.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>The base for this depreciation method includes the following transaction types:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podstawa dla tej metody amortyzacji uwzględnia następujące typy transakcji:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Acquisition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nabycie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Acquisition adjustment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korekta wartości początkowej</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Write up</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zwiększenie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Write down</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zmniejszenie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Revaluation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeszacowanie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>For more information about depreciation methods, see <bpt id="p1">[</bpt>Fixed asset depreciation<ept id="p1">](../fixed-assets/fixed-asset-depreciation.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby uzyskać więcej informacji na temat metod amortyzacji, zobacz <bpt id="p1">[</bpt>Amortyzacja środka trwałego<ept id="p1">](../fixed-assets/fixed-asset-depreciation.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Depreciation percent level parameter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametr Poziom procentu amortyzacji</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Reducing balance (Poland) and Straight line percentage (Poland) depreciation methods use the <bpt id="p1">**</bpt>Depreciation percent level<ept id="p1">**</ept> field on the <bpt id="p2">**</bpt>Fixed assets parameters<ept id="p2">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metody amortyzacji Degresywna (Polska) i Liniowa procentowa (Polska) używają pola <bpt id="p1">**</bpt>Poziom procentu amortyzacji<ept id="p1">**</ept> znajdującego się na stronie <bpt id="p2">**</bpt>Parametry środków trwałych<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>This field allows you to choose if the depreciation percent level should be taken from either the depreciation method or an individual fixed asset to calculate depreciation:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">To pole pozwala wybrać, czy na potrzeby obliczenia amortyzacji poziom procentu amortyzacji ma być pobierany z metody amortyzacji czy z konkretnego środka trwałego:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">**</bpt>Profile (standard)<ept id="p1">**</ept> – Select this option to use the percentage from the** **depreciation profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Profil (standardowy)<ept id="p1">**</ept> — Wybierz tę opcję, aby używać wartości procentowej z** **profilu amortyzacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source><bpt id="p1">**</bpt>Fixed asset book<ept id="p1">**</ept> – Select this option to use the same depreciation method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Księga środków trwałych<ept id="p1">**</ept> — Wybierz tę opcję, aby używać tej samej metody amortyzacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>The depreciation will be calculated using the percentage on the Fixed assets book.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Amortyzacja będzie obliczana przy użyciu wartości procentowej z księgi środków trwałych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Depreciation groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grupy amortyzacji</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Legal entities in Poland can link fixed assets to depreciation groups.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Firmy w Polsce mogą łączyć środki trwałe z grupami amortyzacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Depreciation groups are defined for a fixed asset book to specify fixed asset details such as increasing factor, alternative factor, or cost limit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grupy amortyzacji są definiowane dla księgi środków trwałych w celu określenia szczegółów środków trwałych, takich jak współczynnik podwyższający, współczynnik alternatywny i limit kosztu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>If a depreciation group is assigned to a fixed asset, the depreciation group controls the depreciation amount, using an increasing factor by which the depreciation amount is multiplied.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli grupa amortyzacji jest przypisana do środka trwałego, kontroluje kwotę amortyzacji za pomocą współczynnika podwyższającego, przez który jest mnożona kwota amortyzacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Create or edit the following depreciation groups on the <bpt id="p1">**</bpt>Depreciation group<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stronie <bpt id="p1">**</bpt>Grupy amortyzacji<ept id="p1">**</ept> można tworzyć i edytować następujące grupy amortyzacji:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Field name<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Nazwa pola<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Description<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Opis<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Start date<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Data początkowa<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Date that the Increasing factor and cost limit value will be used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dzień, w którym zostaną użyte wartości współczynnika podwyższającego i limitu kosztu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Increasing factor<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Współczynnik podwyższający<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Factor which multiplies the depreciation amount.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wskaźnik, przez który jest mnożona kwota amortyzacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>An increasing factor can be set up if an alternative depreciation profile (alternative factor) or extraordinary depreciation profile (extraordinary factor) are used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Współczynnik podwyższający można skonfigurować, gdy jest używany profil amortyzacji alternatywnej (współczynnik alternatywny) lub profil amortyzacji dodatkowej (współczynnik dodatkowy).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Alternative factor<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Współczynnik alternatywny<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>The alternative factor of the depreciation value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alternatywny współczynnik wartości amortyzacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Cost limit<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Limit kosztu<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Amount of acquisition price, which will be posted to a separate account for non-cost depreciation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kwota ceny nabycia, która zostanie zaksięgowana na osobnym koncie amortyzacji niekosztowej.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Amounts to be posted to the account for non-cost depreciation are calculated during depreciation proposal, which splits the full depreciation calculation into two lines:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kwoty do zaksięgowania na koncie amortyzacji niekosztowej są obliczane w trakcie formułowania propozycji amortyzacji, która dzieli pełne obliczenie amortyzacji na dwa wiersze:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>(Adjusted) Depreciation<ept id="p1">&lt;/strong&gt;</ept> -The full depreciation amount calculated based on fixed asset book setup minus the portion related to non-cost depreciation (Portion = Cost limit divided by Depreciation base).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>(Skorygowana) Amortyzacja<ept id="p1">&lt;/strong&gt;</ept> — Pełna kwota amortyzacji obliczona na podstawie konfiguracji w księdze środków trwałych minus część związana z amortyzacją niekosztową (część = limit kosztu podzielony przez podstawę amortyzacji).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>This depreciation is posted to accounts for depreciation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ta amortyzacja jest księgowana na kontach amortyzacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Non-cost part of Depreciation<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">-</ph> A portion of depreciation related to the cost limit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Część niekosztowa amortyzacji<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">-</ph> Część amortyzacji związana z limitem kosztu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>This depreciation is posted to accounts for non-cost depreciation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ta amortyzacja jest księgowana na kontach amortyzacji niekosztowej.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>To set up accounts for non-cost depreciation, open <bpt id="p1">&lt;strong&gt;</bpt>Fixed assets<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Setup<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Fixed asset posting<ept id="p3">&lt;/strong&gt;</ept> profiles, and select <bpt id="p4">&lt;strong&gt;</bpt>Non-cost depreciation<ept id="p4">&lt;/strong&gt;</ept> in the <bpt id="p5">&lt;strong&gt;</bpt>Ledger account<ept id="p5">&lt;/strong&gt;</ept> FastTab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby skonfigurować konta amortyzacji niekosztowej, wybierz kolejno opcje <bpt id="p1">&lt;strong&gt;</bpt>Środki trwałe<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Ustawienia<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Profile księgowania środków trwałych<ept id="p3">&lt;/strong&gt;</ept>, a następnie na skróconej karcie <bpt id="p5">&lt;strong&gt;</bpt>Konto księgowe<ept id="p5">&lt;/strong&gt;</ept> wybierz opcję <bpt id="p4">&lt;strong&gt;</bpt>Amortyzacja niekosztowa<ept id="p4">&lt;/strong&gt;</ept>.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Amortyzacja środków trwałych dla Polski
+description: Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/31/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosting
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 264274
+ms.search.region: Poland
+ms.author: v-elgolu
+ms.search.validFrom: 2016-05-31
+ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 6f7d93c95aa85acdf2c1a3986b1141a3326882e1
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549044"
+---
+# <a name="fixed-assets-depreciation-for-poland"></a><span data-ttu-id="4b718-103">Amortyzacja środków trwałych dla Polski</span><span class="sxs-lookup"><span data-stu-id="4b718-103">Fixed assets depreciation for Poland</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="4b718-104">Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.</span><span class="sxs-lookup"><span data-stu-id="4b718-104">This topic provides information about fixed assets depreciation for legal entities in Poland.</span></span>
+
+<span data-ttu-id="4b718-105">Funkcje amortyzacji środków trwałych oparte na wymaganiach prawnych w Polsce obejmują następujące elementy:</span><span class="sxs-lookup"><span data-stu-id="4b718-105">The Fixed assets depreciation features that are based on legal requirements in Poland include:</span></span>
+
+-   <span data-ttu-id="4b718-106">Metody amortyzacji</span><span class="sxs-lookup"><span data-stu-id="4b718-106">Depreciation methods</span></span>
+-   <span data-ttu-id="4b718-107">Poziom procentu amortyzacji</span><span class="sxs-lookup"><span data-stu-id="4b718-107">Depreciation percent level</span></span>
+-   <span data-ttu-id="4b718-108">Grupy amortyzacji</span><span class="sxs-lookup"><span data-stu-id="4b718-108">Depreciation groups</span></span>
+-   <span data-ttu-id="4b718-109">Ta sama data, co jest opcją w propozycji amortyzacji. Powoduje ona wypełnianie pola **Data** we wszystkich wierszach arkusza wartością z pola **Do dnia** zdefiniowanego w propozycji amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="4b718-109">The same date, which is an option in the depreciation proposal to fill in the **Date** field value in all journal lines with a **To date** value that is defined in the Depreciation proposal.</span></span>
+
+## <a name="poland-specific-depreciation-methods"></a><span data-ttu-id="4b718-110">Metody amortyzacji specyficzne dla Polski</span><span class="sxs-lookup"><span data-stu-id="4b718-110">Poland-specific depreciation methods</span></span>
+<span data-ttu-id="4b718-111">Dla firm w Polsce istnieją dodatkowe metody, reguły i ustawienia amortyzacji, które są używane do spełnienia określonych wymogów rachunkowości środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="4b718-111">For legal entities in Poland there are additional depreciation methods, rules, and settings that are used to meet specific fixed asset accounting requirements.</span></span> <span data-ttu-id="4b718-112">Zgodnie z polskimi przepisami amortyzacja jest obliczana przy użyciu rocznej stawki amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="4b718-112">According to Polish regulations, depreciation is calculated using a yearly depreciation rate.</span></span> <span data-ttu-id="4b718-113">Aby uzyskać więcej informacji na temat metod amortyzacji, zobacz [Amortyzacja środka trwałego](../fixed-assets/fixed-asset-depreciation.md).</span><span class="sxs-lookup"><span data-stu-id="4b718-113">For more information about depreciation methods, see [Fixed asset depreciation](../fixed-assets/fixed-asset-depreciation.md).</span></span> <span data-ttu-id="4b718-114">Dla firm w Polsce są dostępne następujące metody amortyzacji:</span><span class="sxs-lookup"><span data-stu-id="4b718-114">The following depreciation methods are available for legal entities in Poland:</span></span>
+
+-   <span data-ttu-id="4b718-115">**Degresywna (Polska)** — Ta metoda amortyzacji uwzględnia lokalne specjalne wymogi prawne dotyczące zmiany wartości środków trwałych w trakcie roku obrachunkowego i rozpoznawania części kosztowej.</span><span class="sxs-lookup"><span data-stu-id="4b718-115">**Reducing balance (Poland)** – This depreciation method considers special local legal requirements about the value of fixed assets changing during the fiscal year and cost part recognition.</span></span> <span data-ttu-id="4b718-116">Podstawa dla tej metody amortyzacji uwzględnia następujące typy transakcji:</span><span class="sxs-lookup"><span data-stu-id="4b718-116">The base for this depreciation method includes the following transaction types:</span></span>
+    -   <span data-ttu-id="4b718-117">Nabycie</span><span class="sxs-lookup"><span data-stu-id="4b718-117">Acquisition</span></span>
+    -   <span data-ttu-id="4b718-118">Korekta wartości początkowej</span><span class="sxs-lookup"><span data-stu-id="4b718-118">Acquisition adjustment</span></span>
+    -   <span data-ttu-id="4b718-119">Zwiększenie</span><span class="sxs-lookup"><span data-stu-id="4b718-119">Write up</span></span>
+    -   <span data-ttu-id="4b718-120">Zmniejszenie</span><span class="sxs-lookup"><span data-stu-id="4b718-120">Write down</span></span>
+    -   <span data-ttu-id="4b718-121">Przeszacowanie</span><span class="sxs-lookup"><span data-stu-id="4b718-121">Revaluation</span></span>
+    -   <span data-ttu-id="4b718-122">Poprzednia amortyzacja</span><span class="sxs-lookup"><span data-stu-id="4b718-122">Previous depreciation</span></span>
+-   <span data-ttu-id="4b718-123">**Liniowa (Polska)** — Amortyzacja jest obliczana dla pierwszego okresu na podstawie liczby dni używania środka trwałego.</span><span class="sxs-lookup"><span data-stu-id="4b718-123">**Straight line (Poland)** – Depreciation is calculated for the first period based on the number of days that the asset was used.</span></span> <span data-ttu-id="4b718-124">Na przykład jeśli środek trwały zakupiono 15 stycznia, a okres amortyzacji rozpoczyna się 1 stycznia, amortyzacja jest obliczana dla połowy okresu.</span><span class="sxs-lookup"><span data-stu-id="4b718-124">For example, if a fixed asset was purchased on January 15 and the depreciation period starts on January 1, depreciation will be calculated for half of the period.</span></span> <span data-ttu-id="4b718-125">Podstawa dla tej metody amortyzacji uwzględnia następujące typy transakcji:</span><span class="sxs-lookup"><span data-stu-id="4b718-125">The base for this depreciation method includes the following transaction types:</span></span>
+    -   <span data-ttu-id="4b718-126">Nabycie</span><span class="sxs-lookup"><span data-stu-id="4b718-126">Acquisition</span></span>
+    -   <span data-ttu-id="4b718-127">Korekta wartości początkowej</span><span class="sxs-lookup"><span data-stu-id="4b718-127">Acquisition adjustment</span></span>
+    -   <span data-ttu-id="4b718-128">Zwiększenie</span><span class="sxs-lookup"><span data-stu-id="4b718-128">Write up</span></span>
+    -   <span data-ttu-id="4b718-129">Zmniejszenie</span><span class="sxs-lookup"><span data-stu-id="4b718-129">Write down</span></span>
+    -   <span data-ttu-id="4b718-130">Przeszacowanie</span><span class="sxs-lookup"><span data-stu-id="4b718-130">Revaluation</span></span>
+-   <span data-ttu-id="4b718-131">**Liniowa procentowa (Polska)** — Okres użytkowania jest obliczany przez wprowadzenie wartości procentowej i podzielenie 100% przez wprowadzony procent.</span><span class="sxs-lookup"><span data-stu-id="4b718-131">**Straight line percentage (Poland)** – The service life is calculated by entering a percentage and dividing 100 percent by the percentage entered.</span></span> <span data-ttu-id="4b718-132">Na przykład jeśli wprowadzono 20%, 100% podzielone przez 20% to 5 lat użytkowania.</span><span class="sxs-lookup"><span data-stu-id="4b718-132">For example, if you entered 20 percent, 100 percent divided by 20 percent is 5 service years.</span></span> <span data-ttu-id="4b718-133">Podstawa dla tej metody amortyzacji uwzględnia następujące typy transakcji:</span><span class="sxs-lookup"><span data-stu-id="4b718-133">The base for this depreciation method includes the following transaction types:</span></span>
+    -   <span data-ttu-id="4b718-134">Nabycie</span><span class="sxs-lookup"><span data-stu-id="4b718-134">Acquisition</span></span>
+    -   <span data-ttu-id="4b718-135">Korekta wartości początkowej</span><span class="sxs-lookup"><span data-stu-id="4b718-135">Acquisition adjustment</span></span>
+    -   <span data-ttu-id="4b718-136">Zwiększenie</span><span class="sxs-lookup"><span data-stu-id="4b718-136">Write up</span></span>
+    -   <span data-ttu-id="4b718-137">Zmniejszenie</span><span class="sxs-lookup"><span data-stu-id="4b718-137">Write down</span></span>
+    -   <span data-ttu-id="4b718-138">Przeszacowanie</span><span class="sxs-lookup"><span data-stu-id="4b718-138">Revaluation</span></span>
+
+<span data-ttu-id="4b718-139">Aby uzyskać więcej informacji na temat metod amortyzacji, zobacz [Amortyzacja środka trwałego](../fixed-assets/fixed-asset-depreciation.md).</span><span class="sxs-lookup"><span data-stu-id="4b718-139">For more information about depreciation methods, see [Fixed asset depreciation](../fixed-assets/fixed-asset-depreciation.md).</span></span>
+
+## <a name="depreciation-percent-level-parameter"></a><span data-ttu-id="4b718-140">Parametr Poziom procentu amortyzacji</span><span class="sxs-lookup"><span data-stu-id="4b718-140">Depreciation percent level parameter</span></span>
+<span data-ttu-id="4b718-141">Metody amortyzacji Degresywna (Polska) i Liniowa procentowa (Polska) używają pola **Poziom procentu amortyzacji** znajdującego się na stronie **Parametry środków trwałych**.</span><span class="sxs-lookup"><span data-stu-id="4b718-141">Reducing balance (Poland) and Straight line percentage (Poland) depreciation methods use the **Depreciation percent level** field on the **Fixed assets parameters** page.</span></span> <span data-ttu-id="4b718-142">To pole pozwala wybrać, czy na potrzeby obliczenia amortyzacji poziom procentu amortyzacji ma być pobierany z metody amortyzacji czy z konkretnego środka trwałego:</span><span class="sxs-lookup"><span data-stu-id="4b718-142">This field allows you to choose if the depreciation percent level should be taken from either the depreciation method or an individual fixed asset to calculate depreciation:</span></span>
+
+-   <span data-ttu-id="4b718-143">**Profil (standardowy)** — Wybierz tę opcję, aby używać wartości procentowej z\*\* \*\*profilu amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="4b718-143">**Profile (standard)** – Select this option to use the percentage from the\*\* \*\*depreciation profile.</span></span>
+-   <span data-ttu-id="4b718-144">**Księga środków trwałych** — Wybierz tę opcję, aby używać tej samej metody amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="4b718-144">**Fixed asset book** – Select this option to use the same depreciation method.</span></span> <span data-ttu-id="4b718-145">Amortyzacja będzie obliczana przy użyciu wartości procentowej z księgi środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="4b718-145">The depreciation will be calculated using the percentage on the Fixed assets book.</span></span>
+
+## <a name="depreciation-groups"></a><span data-ttu-id="4b718-146">Grupy amortyzacji</span><span class="sxs-lookup"><span data-stu-id="4b718-146">Depreciation groups</span></span>
+<span data-ttu-id="4b718-147">Firmy w Polsce mogą łączyć środki trwałe z grupami amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="4b718-147">Legal entities in Poland can link fixed assets to depreciation groups.</span></span> <span data-ttu-id="4b718-148">Grupy amortyzacji są definiowane dla księgi środków trwałych w celu określenia szczegółów środków trwałych, takich jak współczynnik podwyższający, współczynnik alternatywny i limit kosztu.</span><span class="sxs-lookup"><span data-stu-id="4b718-148">Depreciation groups are defined for a fixed asset book to specify fixed asset details such as increasing factor, alternative factor, or cost limit.</span></span> <span data-ttu-id="4b718-149">Jeśli grupa amortyzacji jest przypisana do środka trwałego, kontroluje kwotę amortyzacji za pomocą współczynnika podwyższającego, przez który jest mnożona kwota amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="4b718-149">If a depreciation group is assigned to a fixed asset, the depreciation group controls the depreciation amount, using an increasing factor by which the depreciation amount is multiplied.</span></span> <span data-ttu-id="4b718-150">Na stronie **Grupy amortyzacji** można tworzyć i edytować następujące grupy amortyzacji:</span><span class="sxs-lookup"><span data-stu-id="4b718-150">Create or edit the following depreciation groups on the **Depreciation group** page.</span></span>
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><span data-ttu-id="4b718-151"><strong>Nazwa pola</strong></span><span class="sxs-lookup"><span data-stu-id="4b718-151"><strong>Field name</strong></span></span></td>
+<td><span data-ttu-id="4b718-152"><strong>Opis</strong></span><span class="sxs-lookup"><span data-stu-id="4b718-152"><strong>Description</strong></span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="4b718-153"><strong>Data początkowa</strong></span><span class="sxs-lookup"><span data-stu-id="4b718-153"><strong>Start date</strong></span></span></td>
+<td><span data-ttu-id="4b718-154">Dzień, w którym zostaną użyte wartości współczynnika podwyższającego i limitu kosztu.</span><span class="sxs-lookup"><span data-stu-id="4b718-154">Date that the Increasing factor and cost limit value will be used.</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="4b718-155"><strong>Współczynnik podwyższający</strong></span><span class="sxs-lookup"><span data-stu-id="4b718-155"><strong>Increasing factor</strong></span></span></td>
+<td><span data-ttu-id="4b718-156">Wskaźnik, przez który jest mnożona kwota amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="4b718-156">Factor which multiplies the depreciation amount.</span></span> <span data-ttu-id="4b718-157">Współczynnik podwyższający można skonfigurować, gdy jest używany profil amortyzacji alternatywnej (współczynnik alternatywny) lub profil amortyzacji dodatkowej (współczynnik dodatkowy).</span><span class="sxs-lookup"><span data-stu-id="4b718-157">An increasing factor can be set up if an alternative depreciation profile (alternative factor) or extraordinary depreciation profile (extraordinary factor) are used.</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="4b718-158"><strong>Współczynnik alternatywny</strong></span><span class="sxs-lookup"><span data-stu-id="4b718-158"><strong>Alternative factor</strong></span></span></td>
+<td><span data-ttu-id="4b718-159">Alternatywny współczynnik wartości amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="4b718-159">The alternative factor of the depreciation value.</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="4b718-160"><strong>Limit kosztu</strong></span><span class="sxs-lookup"><span data-stu-id="4b718-160"><strong>Cost limit</strong></span></span></td>
+<td><span data-ttu-id="4b718-161">Kwota ceny nabycia, która zostanie zaksięgowana na osobnym koncie amortyzacji niekosztowej.</span><span class="sxs-lookup"><span data-stu-id="4b718-161">Amount of acquisition price, which will be posted to a separate account for non-cost depreciation.</span></span> <span data-ttu-id="4b718-162">Kwoty do zaksięgowania na koncie amortyzacji niekosztowej są obliczane w trakcie formułowania propozycji amortyzacji, która dzieli pełne obliczenie amortyzacji na dwa wiersze:</span><span class="sxs-lookup"><span data-stu-id="4b718-162">Amounts to be posted to the account for non-cost depreciation are calculated during depreciation proposal, which splits the full depreciation calculation into two lines:</span></span>
+<ul>
+<li><span data-ttu-id="4b718-163"><strong>(Skorygowana) Amortyzacja</strong> — Pełna kwota amortyzacji obliczona na podstawie konfiguracji w księdze środków trwałych minus część związana z amortyzacją niekosztową (część = limit kosztu podzielony przez podstawę amortyzacji).</span><span class="sxs-lookup"><span data-stu-id="4b718-163"><strong>(Adjusted) Depreciation</strong> -The full depreciation amount calculated based on fixed asset book setup minus the portion related to non-cost depreciation (Portion = Cost limit divided by Depreciation base).</span></span> <span data-ttu-id="4b718-164">Ta amortyzacja jest księgowana na kontach amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="4b718-164">This depreciation is posted to accounts for depreciation.</span></span></li>
+<li><span data-ttu-id="4b718-165"><strong>Część niekosztowa amortyzacji</strong> - Część amortyzacji związana z limitem kosztu.</span><span class="sxs-lookup"><span data-stu-id="4b718-165"><strong>Non-cost part of Depreciation</strong> - A portion of depreciation related to the cost limit.</span></span> <span data-ttu-id="4b718-166">Ta amortyzacja jest księgowana na kontach amortyzacji niekosztowej.</span><span class="sxs-lookup"><span data-stu-id="4b718-166">This depreciation is posted to accounts for non-cost depreciation.</span></span> <span data-ttu-id="4b718-167">Aby skonfigurować konta amortyzacji niekosztowej, wybierz kolejno opcje <strong>Środki trwałe</strong> &gt; <strong>Ustawienia</strong> &gt; <strong>Profile księgowania środków trwałych</strong>, a następnie na skróconej karcie <strong>Konto księgowe</strong> wybierz opcję <strong>Amortyzacja niekosztowa</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b718-167">To set up accounts for non-cost depreciation, open <strong>Fixed assets</strong> &gt; <strong>Setup</strong> &gt; <strong>Fixed asset posting</strong> profiles, and select <strong>Non-cost depreciation</strong> in the <strong>Ledger account</strong> FastTab.</span></span></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+

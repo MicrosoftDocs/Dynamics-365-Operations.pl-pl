@@ -1,471 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="financial-reporting-getting-started.md" target-language="pl-PL">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>financial-reporting-getting-started.2bf0de.b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>06c8dc5bc4e1c41f68e1cda141d61529768be958</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\general-ledger\financial-reporting-getting-started.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Financial reporting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raporty finansowe</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w programie Microsoft Dynamics 365 for Finance and Operations i jak korzystać z funkcji raportowania finansowego.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>It includes a description of the default financial reports that are provided.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zawiera opis domyślnych raportów finansowych, które są zawarte w programie.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Financial reporting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raporty finansowe</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w programie Microsoft Dynamics 365 for Finance and Operations i jak korzystać z funkcji raportowania finansowego.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>It includes a description of the default financial reports that are provided.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zawiera opis domyślnych raportów finansowych, które są zawarte w programie.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Accessing financial reporting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uzyskiwanie dostępu do raportowania finansowego</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>You can find the <bpt id="p1">**</bpt>Financial reporting<ept id="p1">**</ept> menu in the following places in Finance and Operations:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Menu <bpt id="p1">**</bpt>Raporty finansowe<ept id="p1">**</ept> można znaleźć w następujących miejscach w programie Finance and Operations:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><bpt id="p1">**</bpt>General Ledger<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Księga główna<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Zapytania i raporty<ept id="p2">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source><bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquires and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Basic budgeting<ept id="p3">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Budżetowanie<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Zapytania i raporty<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Budżetowanie podstawowe<ept id="p3">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source><bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Budget planning<ept id="p3">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Budżetowanie<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Zapytania i raporty<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Planowanie budżetu<ept id="p3">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Budget control<ept id="p3">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Budżetowanie<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Zapytania i raporty<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kontrola budżetu<ept id="p3">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Consolidations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konsolidacje</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>To create and generate financial reports for a legal entity, you must set up the following information for that legal entity:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby tworzyć i generować raporty finansowe firmy, należy ustawić następujące informacje o tej firmie:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Fiscal calendar</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kalendarz obrachunkowy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Księga</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Chart of accounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Plan kont</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Waluta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają odpowiednie uprawnienia i obowiązki przypisane za pomocą ich ról zabezpieczeń.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>The following sections list these privileges and duties, together with the associated roles.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W poniższych sekcjach wymieniono te uprawnienia i obowiązki, łącznie z powiązanymi rolami.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Duties</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obowiązki</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Duty label</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etykieta cła</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>AOT name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nazwa drzewa obiektów aplikacji (AOT)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Maintain financial reporting security</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsługa zabezpieczeń raportowania finansowego</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Maintain financial reporting security and perform administrative tasks.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsługa zabezpieczeń raportowania finansowego oraz wykonywanie zadań administracyjnych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>FinancialReportsSecurityMaintain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsSecurityMaintain</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Maintain financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsługa raportów finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Design and maintain financial reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Projektowanie i obsługa raportów finansowych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>FinancialReportsMaintain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsMaintain</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Generate financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generowanie raportów finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Generate and refresh financial reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generowanie i odświeżanie raportów finansowych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>FinancialReportsGenerate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsGenerate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Review financial performance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeglądanie wyników finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Review and analyze financial performance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeglądanie i analizowanie wyników finansowych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>FinancialReportsPerfReview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsPerfReview</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Privileges</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uprawnienia</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Privilege label</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uprawnienie etykiety</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>AOT name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nazwa drzewa obiektów aplikacji (AOT)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Maintain financial reporting security</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsługa zabezpieczeń raportowania finansowego</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Maintain financial reporting security and perform administrative tasks.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Obsługa zabezpieczeń raportowania finansowego oraz wykonywanie zadań administracyjnych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>FinancialReportsSecuritySystemMaintain</source><target logoport:matchpercent="0" state="translated">FinancialReportsSecuritySystemMaintain</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Maintain financial reports</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Obsługa raportów finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Design and maintain financial reports.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Projektowanie i obsługa raportów finansowych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>FinancialReportsMaintainReports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsMaintainReports</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Generate financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generowanie raportów finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Generate and refresh financial reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generowanie i odświeżanie raportów finansowych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>FinancialReportsGenerateReports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsGenerateReports</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>View financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wyświetlanie raportów finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>View financial reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wyświetlanie raportów finansowych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>FinancialReportsView</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsView</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Roles</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Role</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Privilege label</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uprawnienie etykiety</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Duty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obowiązek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Roles</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Role</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Maintain financial reporting security</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsługa zabezpieczeń raportowania finansowego</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Maintain financial reporting security</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsługa zabezpieczeń raportowania finansowego</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Security administrator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Administrator zabezpieczeń</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Maintain financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsługa raportów finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Maintain financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsługa raportów finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Accounting Manager, Accounting Supervisor, Financial Controller, Budget Manager</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Menedżer ds. księgowania, Kierownik ds. księgowania, Kontroler finansowy, Menedżer budżetu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Generate financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generowanie raportów finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Generate financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generowanie raportów finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>CEO, CFO, Accountant</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dyrektor generalny, Dyrektor finansowy, Księgowy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>View financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wyświetlanie raportów finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Review financial performance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przeglądanie wyników finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>None assigned</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nie przypisano</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>After a user is added or a role is changed, the user should be able to access financial reporting within a few minutes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po dodaniu użytkownika lub zmianie roli, użytkownik powinien mieć dostęp do raportów finansowych za kilka minut.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The sysadmin role is added to all roles in financial reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Uwaga:<ept id="p1">**</ept> Rola sysadmin jest dodawana do wszystkich ról w module sprawozdawczości finansowej.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Default reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raporty domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Financial reporting provides 22 default financial reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raporty finansowe to 22 domyślne raporty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Every report uses the default main account categories in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Każdy raport używa domyślnych kategorii konta głównego w programie Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>You can use these reports as is or as a starting point for your financial reporting needs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raporty te można wykorzystywać w takiej formie, w jakiej są lub jako bazy do utworzenia własnego raportu finansowego.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprócz tradycyjnych sprawozdań finansowych, takich jak Zestawienie przychodów i Bilans, te domyślne raporty obejmują raporty, które pokazują różne typy raportów finansowych, które możesz utworzyć.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Default report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raport domyślny</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>12 Month Rolling Single Column Income Statement – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12-miesięczne kroczące jednokolumnowe zestawienie przychodów — domyślny</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>View an organization’s profitability for the past 12 months in a single column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Służy do wyświetlania dochodowości organizacji przez okres 12 miesięcy w jednej kolumnie.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>12 Month Trend Income Statement – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12-miesięczne zestawienie trendów przychodów — domyślny</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>View an organization’s profitability for each of the last 12 months.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Służy do wyświetlania dochodowości organizacji przez okres 12 miesięcy w jednej kolumnie.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>These 12 months can span more than one fiscal year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Te 12 miesięcy może obejmować więcej niż jeden rok obrachunkowy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Actual vs Budget – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rzeczywiste a budżet — domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Służy do wyświetlania informacji szczegółowych salda dla wszystkich kont dla pierwotnego budżetu i porównywania skorygowanego budżetu do wartości rzeczywistych, w których zanotowano odchylenia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Audit Details – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szczegóły inspekcji — domyślny</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>View detailed balance information for all accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Służy do wyświetlania szczegółowych danych salda dla wszystkich kont.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ten raport przedstawia salda po stronie debetowej i kredytowej w walucie raportowania i walucie lokalnej, wraz z dodatkowymi informacjami o transakcji, takimi jak identyfikator użytkownika, użytkownik, który jako ostatni zmodyfikował dane, data ostatniej modyfikacji i identyfikator arkusza.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Balance List – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lista salda — domyślna</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>View detailed balance information for all accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Służy do wyświetlania szczegółowych danych salda dla wszystkich kont.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ten raport przedstawia otwierające i zamykające salda oraz salda po stronie kredytowej i debetowej dla bieżącego okresu i roku do danego dnia, wraz z dodatkowymi informacjami o transakcji, takimi jak załącznik.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Balance Sheet – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilans — domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>View the organization's financial position for the year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oferuje widok pozycji finansowej organizacji w danym roku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Balance Sheet and Income Statement Side by Side - Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilans i rachunek wyników obok siebie — domyślny</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>View the organization’s financial position and profitability for the year side by side.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Służy do wyświetlania sytuacji finansowej organizacji i rentowności na rok obok siebie.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Cash Flow – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Przepływy pieniężne — domyślny</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Gain insight into the cash that is coming in to and going out of the organization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lepszy wgląd w środki pieniężne przychodzące i wychodzącą organizacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Detailed JE and TB Review – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szczegółowe JE i Przegląd TB — domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>View opening balance and activity information for all accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Widok otwarcia salda i informacje o działaniach dla wszystkich kont.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Detailed Trial Balance - Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Szczegółowy bilans próbny — domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wyświetla informacje dla wszystkich kont i obejmuje wszystkie salda po stronie debetowej i kredytowej, oraz ich wartości netto, wraz z datą transakcji, załącznikiem i opisem arkusza.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Expenses Three Year Quarterly Trend – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Trend kwartalny wydatków z trzech lat — domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Gain insight into expenses for the past 12 quarters over the previous three years.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lepszy wgląd w wydatki w poprzednich 12 kwartałach w ciągu ostatnich 3 lat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Financial Captions JE and TB Review – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podpisy finansowe JE i Przegląd TB — domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>See an overview of the balances and activity for the asset, liability, owner’s equity, revenue, expense, gain, or loss financial captions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wyświetlanie przeglądu sald i działania dla środków trwałych, zobowiązań, kapitału własnego właściciela, przychodu, wydatków, zysków i strat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Income Statement – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zestawienie przychodów — domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>View the organization’s profitability for the current period and the year to date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokazuje rentowność organizacji w bieżącym okresie i od początku roku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Ledger Transaction List – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lista transakcji księgi — domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>View detailed balance information for all accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Służy do wyświetlania szczegółowych danych salda dla wszystkich kont.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raport ten zawiera salda debetu i kredytu, łącznie dodatkowymi informacjami o transakcji, takimi jak data transakcji, numer arkusza, załącznik, typ księgowania i numer śledzenia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Ratios – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Współczynniki — domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>View the solvency, profitability, and efficiency ratios for the organization for the year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokazuje współczynniki wypłacalności, rentowności i efektywności organizacji w bieżącym roku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Rolling 12 Month Expenses – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kroczące wydatki 12-miesięczne — domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Gain insight into expenses for each of the last 12 months.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lepszy wgląd w wydatki dla każdego z ostatnich 12 miesięcy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>These 12 months can span more than one fiscal year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Te 12 miesięcy może obejmować więcej niż jeden rok obrachunkowy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Rolling Quarter Income Statement – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kroczące kwartalne zestawienie przychodów — domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>View the organization’s profitability on a quarterly basis for the past year and the year to date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Służy do wyświetlania rentowności organizacji co kwartał za miniony rok i od początku bieżącego roku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Side by Side Balance Sheet – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obok arkusza bilansowego — domyślna</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>View the organization's financial position for the year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oferuje widok pozycji finansowej organizacji w danym roku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>This report shows assets and liability, and shareholder equity side by side.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ten raport pokazuje aktywa i pasywa oraz kapitał własny udziałowców są pokazane równolegle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Summary Trial Balance – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sumaryczny bilans próbny — domyślny</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oferuje informacje o saldzie dla wszystkich kont zawierających salda otwarcia i zamknięcia oraz salda po stronie debetowej i kredytowej razem z ich różnicą netto.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Summary Trial Balance Year Over Year – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sumaryczny bilans próbny rok do roku — domyślny</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oferuje informacje o saldzie dla wszystkich kont zawierających salda otwarcia i zamknięcia oraz salda po stronie debetowej i kredytowej razem z ich różnicą netto dla bieżącego roku i roku ubiegłego.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Weekly Sales and Discounts - Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tygodniowa sprzedaż i rabaty — domyślne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Gain insight into sales and discounts for each week in a month.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lepszy wgląd w sprzedaż i rabaty dla każdego tygodnia w miesiącu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>This report includes a four-week total.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ten raport zawiera sumę z czterech tygodni.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Budget Funds Available - Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dostępne środki budżetowe — domyślny</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>View a detailed comparison of revised budget, actual expenditures, budget reservations, and budget funds available for all accounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wyświetlanie szczegółowego porównania skorygowanego budżetu, rzeczywistych rozchodów, rezerwacji budżetu i środków budżetowych dostępnych dla wszystkich kont</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Opening financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Otwieranie raportów finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>When you click the <bpt id="p1">**</bpt>Financial reporting<ept id="p1">**</ept> menu, the list of default financial reports for the company is shown.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po kliknięciu menu <bpt id="p1">**</bpt>Raporty finansowe<ept id="p1">**</ept> jest wyświetlana lista domyślnych raportów finansowych firmy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>You can then open or modify a report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Następnie można otworzyć lub zmodyfikować raport.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>To open one of the default reports, select the report name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby otworzyć jeden z domyślnych raportów, należy wybrać nazwę raportu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>The first time that a report is opened, it's automatically generated for the previous month.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kiedy raport zostanie otwarty po raz pierwszy, zostanie automatycznie wygenerowany raport za poprzedni miesiąc.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>For example, if you open a report for the first time in August 2016, the report is generated for July 31, 2016.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na przykład jeśli raport zostanie otwarty po raz pierwszy w sierpniu 2016, jest generowany raport na 31 lipca 2016 r.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po otwarciu raportu, możesz zapoznać się ze szczegółowymi danymi i opcjami modyfikacji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Creating and modifying financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tworzenie i modyfikowanie raportów finansowych</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>From the financial reports list, you can create a new report or modify an existing report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Z listy raportów finansowych można utworzyć nowy raport lub zmodyfikować istniejący raport.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>If you have the appropriate permissions, you can create a new financial report by clicking <bpt id="p1">**</bpt>New<ept id="p1">**</ept> on the Action Pane.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli masz odpowiednie uprawnienia, możesz utworzyć nowy raport finansowy, klikając przycisk <bpt id="p1">**</bpt>Nowy<ept id="p1">**</ept> w okienku akcji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>A report designer program is downloaded to your device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Projektant raportów zostanie pobrany na Twoje urządzenie i uruchomiony.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>After the report designer starts you can then create the new report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po uruchomieniu projektanta raportów można utworzyć nowy raport.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>After you save the new report, it appears in the financial reports list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>The list shows only reports that were created for the company that you're using in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na liście są wyświetlane tylko raporty, które zostały utworzone dla firmy używanej w programie Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>The computer that you are downloading the report designer client on must have version 4.6.2 of the Microsoft .NET Framework installed on it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Komputer, do którego pobierasz aplikację kliencką projektanta raportów, musi mieć zainstalowane oprogramowanie Microsoft .NET Framework w wersji 4.6.2.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>This version of the Microsoft .NET Framework can be downloaded and installed from the <bpt id="p1">[</bpt>Microsoft Download Center<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=53345)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować z witryny <bpt id="p1">[</bpt>Centrum pobierania Microsoft<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=53345)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>If you are using Chrome, you must install a ClickOnce extension in order to download the report designer client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta projektanta raportów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>You can also modify a report that appears in the financial reports list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>When the area around the report name is selected, click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> on the Action Pane.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po wybraniu obszaru wokół nazwy raportu kliknij przycisk <bpt id="p1">**</bpt>Edytuj<ept id="p1">**</ept> w okienku akcji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>The report designer program starts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zostanie uruchomiony projektant raportów.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dodatkowe zasoby</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source><bpt id="p1">[</bpt>View financial reports<ept id="p1">](view-financial-reports.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Wyświetlanie raportów finansowych<ept id="p1">](view-financial-reports.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Raporty finansowe
+description: W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w programie Microsoft Dynamics 365 for Finance and Operations i jak korzystać z funkcji raportowania finansowego. Zawiera opis domyślnych raportów finansowych, które są zawarte w programie.
+author: aprilolson
+manager: AnnBe
+ms.date: 05/22/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: FinancialReports
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 10444
+ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
+ms.search.region: Global
+ms.author: aolson
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec
+ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1594967"
+---
+# <a name="financial-reporting"></a><span data-ttu-id="de741-104">Raporty finansowe</span><span class="sxs-lookup"><span data-stu-id="de741-104">Financial reporting</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="de741-105">W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w programie Microsoft Dynamics 365 for Finance and Operations i jak korzystać z funkcji raportowania finansowego.</span><span class="sxs-lookup"><span data-stu-id="de741-105">This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities.</span></span> <span data-ttu-id="de741-106">Zawiera opis domyślnych raportów finansowych, które są zawarte w programie.</span><span class="sxs-lookup"><span data-stu-id="de741-106">It includes a description of the default financial reports that are provided.</span></span>
+
+<a name="accessing-financial-reporting"></a><span data-ttu-id="de741-107">Uzyskiwanie dostępu do raportowania finansowego</span><span class="sxs-lookup"><span data-stu-id="de741-107">Accessing financial reporting</span></span>
+-----------------------------
+
+<span data-ttu-id="de741-108">Menu **Raporty finansowe** można znaleźć w następujących miejscach w programie Finance and Operations:</span><span class="sxs-lookup"><span data-stu-id="de741-108">You can find the **Financial reporting** menu in the following places in Finance and Operations:</span></span>
+
+-   <span data-ttu-id="de741-109">**Księga główna** &gt; **Zapytania i raporty**</span><span class="sxs-lookup"><span data-stu-id="de741-109">**General Ledger** &gt; **Inquiries and reports**</span></span>
+-   <span data-ttu-id="de741-110">**Budżetowanie** &gt; **Zapytania i raporty** &gt; **Budżetowanie podstawowe**</span><span class="sxs-lookup"><span data-stu-id="de741-110">**Budgeting** &gt; **Inquires and reports** &gt; **Basic budgeting**</span></span>
+-   <span data-ttu-id="de741-111">**Budżetowanie** &gt; **Zapytania i raporty** &gt; **Planowanie budżetu**</span><span class="sxs-lookup"><span data-stu-id="de741-111">**Budgeting** &gt; **Inquiries and reports** &gt; **Budget planning**</span></span>
+-   <span data-ttu-id="de741-112">**Budżetowanie** &gt; **Zapytania i raporty** &gt; **Kontrola budżetu**</span><span class="sxs-lookup"><span data-stu-id="de741-112">**Budgeting** &gt; **Inquiries and reports** &gt; **Budget control**</span></span>
+-   <span data-ttu-id="de741-113">Konsolidacje</span><span class="sxs-lookup"><span data-stu-id="de741-113">Consolidations</span></span>
+
+<span data-ttu-id="de741-114">Aby tworzyć i generować raporty finansowe firmy, należy ustawić następujące informacje o tej firmie:</span><span class="sxs-lookup"><span data-stu-id="de741-114">To create and generate financial reports for a legal entity, you must set up the following information for that legal entity:</span></span>
+
+-   <span data-ttu-id="de741-115">Kalendarz obrachunkowy</span><span class="sxs-lookup"><span data-stu-id="de741-115">Fiscal calendar</span></span>
+-   <span data-ttu-id="de741-116">Księga</span><span class="sxs-lookup"><span data-stu-id="de741-116">Ledger</span></span>
+-   <span data-ttu-id="de741-117">Plan kont</span><span class="sxs-lookup"><span data-stu-id="de741-117">Chart of accounts</span></span>
+-   <span data-ttu-id="de741-118">Waluta</span><span class="sxs-lookup"><span data-stu-id="de741-118">Currency</span></span>
+
+<span data-ttu-id="de741-119">Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają odpowiednie uprawnienia i obowiązki przypisane za pomocą ich ról zabezpieczeń.</span><span class="sxs-lookup"><span data-stu-id="de741-119">The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles.</span></span> <span data-ttu-id="de741-120">W poniższych sekcjach wymieniono te uprawnienia i obowiązki, łącznie z powiązanymi rolami.</span><span class="sxs-lookup"><span data-stu-id="de741-120">The following sections list these privileges and duties, together with the associated roles.</span></span>
+
+### <a name="duties"></a><span data-ttu-id="de741-121">Obowiązki</span><span class="sxs-lookup"><span data-stu-id="de741-121">Duties</span></span>
+
+| <span data-ttu-id="de741-122">Etykieta cła</span><span class="sxs-lookup"><span data-stu-id="de741-122">Duty label</span></span>                            | <span data-ttu-id="de741-123">Opis</span><span class="sxs-lookup"><span data-stu-id="de741-123">Description</span></span>                                                             | <span data-ttu-id="de741-124">Nazwa drzewa obiektów aplikacji (AOT)</span><span class="sxs-lookup"><span data-stu-id="de741-124">AOT name</span></span>                         |
+|---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
+| <span data-ttu-id="de741-125">Obsługa zabezpieczeń raportowania finansowego</span><span class="sxs-lookup"><span data-stu-id="de741-125">Maintain financial reporting security</span></span> | <span data-ttu-id="de741-126">Obsługa zabezpieczeń raportowania finansowego oraz wykonywanie zadań administracyjnych.</span><span class="sxs-lookup"><span data-stu-id="de741-126">Maintain financial reporting security and perform administrative tasks.</span></span> | <span data-ttu-id="de741-127">FinancialReportsSecurityMaintain</span><span class="sxs-lookup"><span data-stu-id="de741-127">FinancialReportsSecurityMaintain</span></span> |
+| <span data-ttu-id="de741-128">Obsługa raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-128">Maintain financial reports</span></span>            | <span data-ttu-id="de741-129">Projektowanie i obsługa raportów finansowych.</span><span class="sxs-lookup"><span data-stu-id="de741-129">Design and maintain financial reports.</span></span>                                  | <span data-ttu-id="de741-130">FinancialReportsMaintain</span><span class="sxs-lookup"><span data-stu-id="de741-130">FinancialReportsMaintain</span></span>         |
+| <span data-ttu-id="de741-131">Generowanie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-131">Generate financial reports</span></span>            | <span data-ttu-id="de741-132">Generowanie i odświeżanie raportów finansowych.</span><span class="sxs-lookup"><span data-stu-id="de741-132">Generate and refresh financial reports.</span></span>                                 | <span data-ttu-id="de741-133">FinancialReportsGenerate</span><span class="sxs-lookup"><span data-stu-id="de741-133">FinancialReportsGenerate</span></span>         |
+| <span data-ttu-id="de741-134">Przeglądanie wyników finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-134">Review financial performance</span></span>          | <span data-ttu-id="de741-135">Przeglądanie i analizowanie wyników finansowych.</span><span class="sxs-lookup"><span data-stu-id="de741-135">Review and analyze financial performance.</span></span>                               | <span data-ttu-id="de741-136">FinancialReportsPerfReview</span><span class="sxs-lookup"><span data-stu-id="de741-136">FinancialReportsPerfReview</span></span>       |
+
+### <a name="privileges"></a><span data-ttu-id="de741-137">Uprawnienia</span><span class="sxs-lookup"><span data-stu-id="de741-137">Privileges</span></span>
+
+| <span data-ttu-id="de741-138">Uprawnienie etykiety</span><span class="sxs-lookup"><span data-stu-id="de741-138">Privilege label</span></span>                       | <span data-ttu-id="de741-139">Opis</span><span class="sxs-lookup"><span data-stu-id="de741-139">Description</span></span>                                                             | <span data-ttu-id="de741-140">Nazwa drzewa obiektów aplikacji (AOT)</span><span class="sxs-lookup"><span data-stu-id="de741-140">AOT name</span></span>                         |
+|---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
+| <span data-ttu-id="de741-141">Obsługa zabezpieczeń raportowania finansowego</span><span class="sxs-lookup"><span data-stu-id="de741-141">Maintain financial reporting security</span></span> | <span data-ttu-id="de741-142">Obsługa zabezpieczeń raportowania finansowego oraz wykonywanie zadań administracyjnych.</span><span class="sxs-lookup"><span data-stu-id="de741-142">Maintain financial reporting security and perform administrative tasks.</span></span> | <span data-ttu-id="de741-143">FinancialReportsSecuritySystemMaintain</span><span class="sxs-lookup"><span data-stu-id="de741-143">FinancialReportsSecuritySystemMaintain</span></span> |
+| <span data-ttu-id="de741-144">Obsługa raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-144">Maintain financial reports</span></span>            | <span data-ttu-id="de741-145">Projektowanie i obsługa raportów finansowych.</span><span class="sxs-lookup"><span data-stu-id="de741-145">Design and maintain financial reports.</span></span>                                  | <span data-ttu-id="de741-146">FinancialReportsMaintainReports</span><span class="sxs-lookup"><span data-stu-id="de741-146">FinancialReportsMaintainReports</span></span>  |
+| <span data-ttu-id="de741-147">Generowanie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-147">Generate financial reports</span></span>            | <span data-ttu-id="de741-148">Generowanie i odświeżanie raportów finansowych.</span><span class="sxs-lookup"><span data-stu-id="de741-148">Generate and refresh financial reports.</span></span>                                 | <span data-ttu-id="de741-149">FinancialReportsGenerateReports</span><span class="sxs-lookup"><span data-stu-id="de741-149">FinancialReportsGenerateReports</span></span>  |
+| <span data-ttu-id="de741-150">Wyświetlanie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-150">View financial reports</span></span>                | <span data-ttu-id="de741-151">Wyświetlanie raportów finansowych.</span><span class="sxs-lookup"><span data-stu-id="de741-151">View financial reports.</span></span>                                                 | <span data-ttu-id="de741-152">FinancialReportsView</span><span class="sxs-lookup"><span data-stu-id="de741-152">FinancialReportsView</span></span>             |
+
+### <a name="roles"></a><span data-ttu-id="de741-153">Role</span><span class="sxs-lookup"><span data-stu-id="de741-153">Roles</span></span>
+
+| <span data-ttu-id="de741-154">Uprawnienie etykiety</span><span class="sxs-lookup"><span data-stu-id="de741-154">Privilege label</span></span>                       | <span data-ttu-id="de741-155">Obowiązek</span><span class="sxs-lookup"><span data-stu-id="de741-155">Duty</span></span>                                  | <span data-ttu-id="de741-156">Role</span><span class="sxs-lookup"><span data-stu-id="de741-156">Roles</span></span>                                                                           |
+|---------------------------------------|---------------------------------------|---------------------------------------------------------------------------------|
+| <span data-ttu-id="de741-157">Obsługa zabezpieczeń raportowania finansowego</span><span class="sxs-lookup"><span data-stu-id="de741-157">Maintain financial reporting security</span></span> | <span data-ttu-id="de741-158">Obsługa zabezpieczeń raportowania finansowego</span><span class="sxs-lookup"><span data-stu-id="de741-158">Maintain financial reporting security</span></span> | <span data-ttu-id="de741-159">Administrator zabezpieczeń</span><span class="sxs-lookup"><span data-stu-id="de741-159">Security administrator</span></span>                                                          |
+| <span data-ttu-id="de741-160">Obsługa raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-160">Maintain financial reports</span></span>            | <span data-ttu-id="de741-161">Obsługa raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-161">Maintain financial reports</span></span>            | <span data-ttu-id="de741-162">Menedżer ds. księgowania, Kierownik ds. księgowania, Kontroler finansowy, Menedżer budżetu</span><span class="sxs-lookup"><span data-stu-id="de741-162">Accounting Manager, Accounting Supervisor, Financial Controller, Budget Manager</span></span> |
+| <span data-ttu-id="de741-163">Generowanie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-163">Generate financial reports</span></span>            | <span data-ttu-id="de741-164">Generowanie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-164">Generate financial reports</span></span>            | <span data-ttu-id="de741-165">Dyrektor generalny, Dyrektor finansowy, Księgowy</span><span class="sxs-lookup"><span data-stu-id="de741-165">CEO, CFO, Accountant</span></span>                                                            |
+| <span data-ttu-id="de741-166">Wyświetlanie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-166">View financial reports</span></span>                | <span data-ttu-id="de741-167">Przeglądanie wyników finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-167">Review financial performance</span></span>          | <span data-ttu-id="de741-168">Nie przypisano</span><span class="sxs-lookup"><span data-stu-id="de741-168">None assigned</span></span>                                                                   |
+
+<span data-ttu-id="de741-169">Po dodaniu użytkownika lub zmianie roli, użytkownik powinien mieć dostęp do raportów finansowych za kilka minut.</span><span class="sxs-lookup"><span data-stu-id="de741-169">After a user is added or a role is changed, the user should be able to access financial reporting within a few minutes.</span></span> <span data-ttu-id="de741-170">**Uwaga:** Rola sysadmin jest dodawana do wszystkich ról w module sprawozdawczości finansowej.</span><span class="sxs-lookup"><span data-stu-id="de741-170">**Note:** The sysadmin role is added to all roles in financial reporting.</span></span>
+
+## <a name="default-reports"></a><span data-ttu-id="de741-171">Raporty domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-171">Default reports</span></span>
+<span data-ttu-id="de741-172">Raporty finansowe to 22 domyślne raporty.</span><span class="sxs-lookup"><span data-stu-id="de741-172">Financial reporting provides 22 default financial reports.</span></span> <span data-ttu-id="de741-173">Każdy raport używa domyślnych kategorii konta głównego w programie Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="de741-173">Every report uses the default main account categories in Finance and Operations.</span></span> <span data-ttu-id="de741-174">Raporty te można wykorzystywać w takiej formie, w jakiej są lub jako bazy do utworzenia własnego raportu finansowego.</span><span class="sxs-lookup"><span data-stu-id="de741-174">You can use these reports as is or as a starting point for your financial reporting needs.</span></span> <span data-ttu-id="de741-175">Oprócz tradycyjnych sprawozdań finansowych, takich jak Zestawienie przychodów i Bilans, te domyślne raporty obejmują raporty, które pokazują różne typy raportów finansowych, które możesz utworzyć.</span><span class="sxs-lookup"><span data-stu-id="de741-175">In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create.</span></span> 
+
+<!--Each report in the following table links to an Office Mix presentation about the report.-->
+
+| <span data-ttu-id="de741-176">Raport domyślny</span><span class="sxs-lookup"><span data-stu-id="de741-176">Default report</span></span>                                                                                         | <span data-ttu-id="de741-177">Opis</span><span class="sxs-lookup"><span data-stu-id="de741-177">Description</span></span>                                                                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="de741-178">12-miesięczne kroczące jednokolumnowe zestawienie przychodów — domyślny</span><span class="sxs-lookup"><span data-stu-id="de741-178">12 Month Rolling Single Column Income Statement – Default</span></span> | <span data-ttu-id="de741-179">Służy do wyświetlania dochodowości organizacji przez okres 12 miesięcy w jednej kolumnie.</span><span class="sxs-lookup"><span data-stu-id="de741-179">View an organization’s profitability for the past 12 months in a single column.</span></span>                                                                                                                                                                                                                                      |
+| <span data-ttu-id="de741-180">12-miesięczne zestawienie trendów przychodów — domyślny</span><span class="sxs-lookup"><span data-stu-id="de741-180">12 Month Trend Income Statement – Default</span></span>                 | <span data-ttu-id="de741-181">Służy do wyświetlania dochodowości organizacji przez okres 12 miesięcy w jednej kolumnie.</span><span class="sxs-lookup"><span data-stu-id="de741-181">View an organization’s profitability for each of the last 12 months.</span></span> <span data-ttu-id="de741-182">Te 12 miesięcy może obejmować więcej niż jeden rok obrachunkowy.</span><span class="sxs-lookup"><span data-stu-id="de741-182">These 12 months can span more than one fiscal year.</span></span>                                                                                                                                                                                             |
+| <span data-ttu-id="de741-183">Rzeczywiste a budżet — domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-183">Actual vs Budget – Default</span></span>                                | <span data-ttu-id="de741-184">Służy do wyświetlania informacji szczegółowych salda dla wszystkich kont dla pierwotnego budżetu i porównywania skorygowanego budżetu do wartości rzeczywistych, w których zanotowano odchylenia.</span><span class="sxs-lookup"><span data-stu-id="de741-184">View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.</span></span>                                                                                                                                                                          |
+| <span data-ttu-id="de741-185">Szczegóły inspekcji — domyślny</span><span class="sxs-lookup"><span data-stu-id="de741-185">Audit Details – Default</span></span>                                  | <span data-ttu-id="de741-186">Służy do wyświetlania szczegółowych danych salda dla wszystkich kont.</span><span class="sxs-lookup"><span data-stu-id="de741-186">View detailed balance information for all accounts.</span></span> <span data-ttu-id="de741-187">Ten raport przedstawia salda po stronie debetowej i kredytowej w walucie raportowania i walucie lokalnej, wraz z dodatkowymi informacjami o transakcji, takimi jak identyfikator użytkownika, użytkownik, który jako ostatni zmodyfikował dane, data ostatniej modyfikacji i identyfikator arkusza.</span><span class="sxs-lookup"><span data-stu-id="de741-187">This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID.</span></span> |
+| <span data-ttu-id="de741-188">Lista salda — domyślna</span><span class="sxs-lookup"><span data-stu-id="de741-188">Balance List – Default</span></span>                                   | <span data-ttu-id="de741-189">Służy do wyświetlania szczegółowych danych salda dla wszystkich kont.</span><span class="sxs-lookup"><span data-stu-id="de741-189">View detailed balance information for all accounts.</span></span> <span data-ttu-id="de741-190">Ten raport przedstawia otwierające i zamykające salda oraz salda po stronie kredytowej i debetowej dla bieżącego okresu i roku do danego dnia, wraz z dodatkowymi informacjami o transakcji, takimi jak załącznik.</span><span class="sxs-lookup"><span data-stu-id="de741-190">This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.</span></span>                                                                    |
+| <span data-ttu-id="de741-191">Bilans — domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-191">Balance Sheet – Default</span></span>                                   | <span data-ttu-id="de741-192">Oferuje widok pozycji finansowej organizacji w danym roku.</span><span class="sxs-lookup"><span data-stu-id="de741-192">View the organization's financial position for the year.</span></span>                                                                                                                                                                                                                                                             |
+| <span data-ttu-id="de741-193">Bilans i rachunek wyników obok siebie — domyślny</span><span class="sxs-lookup"><span data-stu-id="de741-193">Balance Sheet and Income Statement Side by Side - Default</span></span> | <span data-ttu-id="de741-194">Służy do wyświetlania sytuacji finansowej organizacji i rentowności na rok obok siebie.</span><span class="sxs-lookup"><span data-stu-id="de741-194">View the organization’s financial position and profitability for the year side by side.</span></span>                                                                                                                                                                                                                              |
+| <span data-ttu-id="de741-195">Przepływy pieniężne — domyślny</span><span class="sxs-lookup"><span data-stu-id="de741-195">Cash Flow – Default</span></span>                                       | <span data-ttu-id="de741-196">Lepszy wgląd w środki pieniężne przychodzące i wychodzącą organizacji.</span><span class="sxs-lookup"><span data-stu-id="de741-196">Gain insight into the cash that is coming in to and going out of the organization.</span></span>                                                                                                                                                                                                                                   |
+| <span data-ttu-id="de741-197">Szczegółowe JE i Przegląd TB — domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-197">Detailed JE and TB Review – Default</span></span>                      | <span data-ttu-id="de741-198">Widok otwarcia salda i informacje o działaniach dla wszystkich kont.</span><span class="sxs-lookup"><span data-stu-id="de741-198">View opening balance and activity information for all accounts.</span></span>                                                                                                                                                                                                                                                      |
+| <span data-ttu-id="de741-199">Szczegółowy bilans próbny — domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-199">Detailed Trial Balance - Default</span></span>                         | <span data-ttu-id="de741-200">Wyświetla informacje dla wszystkich kont i obejmuje wszystkie salda po stronie debetowej i kredytowej, oraz ich wartości netto, wraz z datą transakcji, załącznikiem i opisem arkusza.</span><span class="sxs-lookup"><span data-stu-id="de741-200">View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.</span></span>                                                                                                                                  |
+| <span data-ttu-id="de741-201">Trend kwartalny wydatków z trzech lat — domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-201">Expenses Three Year Quarterly Trend – Default</span></span>             | <span data-ttu-id="de741-202">Lepszy wgląd w wydatki w poprzednich 12 kwartałach w ciągu ostatnich 3 lat.</span><span class="sxs-lookup"><span data-stu-id="de741-202">Gain insight into expenses for the past 12 quarters over the previous three years.</span></span>                                                                                                                                                                                                                                   |
+| <span data-ttu-id="de741-203">Podpisy finansowe JE i Przegląd TB — domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-203">Financial Captions JE and TB Review – Default</span></span>            | <span data-ttu-id="de741-204">Wyświetlanie przeglądu sald i działania dla środków trwałych, zobowiązań, kapitału własnego właściciela, przychodu, wydatków, zysków i strat.</span><span class="sxs-lookup"><span data-stu-id="de741-204">See an overview of the balances and activity for the asset, liability, owner’s equity, revenue, expense, gain, or loss financial captions.</span></span>                                                                                                                                                                           |
+| <span data-ttu-id="de741-205">Zestawienie przychodów — domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-205">Income Statement – Default</span></span>                                | <span data-ttu-id="de741-206">Pokazuje rentowność organizacji w bieżącym okresie i od początku roku.</span><span class="sxs-lookup"><span data-stu-id="de741-206">View the organization’s profitability for the current period and the year to date.</span></span>                                                                                                                                                                                                                                   |
+| <span data-ttu-id="de741-207">Lista transakcji księgi — domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-207">Ledger Transaction List – Default</span></span>                        | <span data-ttu-id="de741-208">Służy do wyświetlania szczegółowych danych salda dla wszystkich kont.</span><span class="sxs-lookup"><span data-stu-id="de741-208">View detailed balance information for all accounts.</span></span> <span data-ttu-id="de741-209">Raport ten zawiera salda debetu i kredytu, łącznie dodatkowymi informacjami o transakcji, takimi jak data transakcji, numer arkusza, załącznik, typ księgowania i numer śledzenia.</span><span class="sxs-lookup"><span data-stu-id="de741-209">This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.</span></span>                                                                            |
+| <span data-ttu-id="de741-210">Współczynniki — domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-210">Ratios – Default</span></span>                                          | <span data-ttu-id="de741-211">Pokazuje współczynniki wypłacalności, rentowności i efektywności organizacji w bieżącym roku.</span><span class="sxs-lookup"><span data-stu-id="de741-211">View the solvency, profitability, and efficiency ratios for the organization for the year.</span></span>                                                                                                                                                                                                                           |
+| <span data-ttu-id="de741-212">Kroczące wydatki 12-miesięczne — domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-212">Rolling 12 Month Expenses – Default</span></span>                       | <span data-ttu-id="de741-213">Lepszy wgląd w wydatki dla każdego z ostatnich 12 miesięcy.</span><span class="sxs-lookup"><span data-stu-id="de741-213">Gain insight into expenses for each of the last 12 months.</span></span> <span data-ttu-id="de741-214">Te 12 miesięcy może obejmować więcej niż jeden rok obrachunkowy.</span><span class="sxs-lookup"><span data-stu-id="de741-214">These 12 months can span more than one fiscal year.</span></span>                                                                                                                                                                                                       |
+| <span data-ttu-id="de741-215">Kroczące kwartalne zestawienie przychodów — domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-215">Rolling Quarter Income Statement – Default</span></span>               | <span data-ttu-id="de741-216">Służy do wyświetlania rentowności organizacji co kwartał za miniony rok i od początku bieżącego roku.</span><span class="sxs-lookup"><span data-stu-id="de741-216">View the organization’s profitability on a quarterly basis for the past year and the year to date.</span></span>                                                                                                                                                                                                                   |
+| <span data-ttu-id="de741-217">Obok arkusza bilansowego — domyślna</span><span class="sxs-lookup"><span data-stu-id="de741-217">Side by Side Balance Sheet – Default</span></span>                      | <span data-ttu-id="de741-218">Oferuje widok pozycji finansowej organizacji w danym roku.</span><span class="sxs-lookup"><span data-stu-id="de741-218">View the organization's financial position for the year.</span></span> <span data-ttu-id="de741-219">Ten raport pokazuje aktywa i pasywa oraz kapitał własny udziałowców są pokazane równolegle.</span><span class="sxs-lookup"><span data-stu-id="de741-219">This report shows assets and liability, and shareholder equity side by side.</span></span>                                                                                                                                                                                |
+| <span data-ttu-id="de741-220">Sumaryczny bilans próbny — domyślny</span><span class="sxs-lookup"><span data-stu-id="de741-220">Summary Trial Balance – Default</span></span>                          | <span data-ttu-id="de741-221">Oferuje informacje o saldzie dla wszystkich kont zawierających salda otwarcia i zamknięcia oraz salda po stronie debetowej i kredytowej razem z ich różnicą netto.</span><span class="sxs-lookup"><span data-stu-id="de741-221">View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.</span></span>                                                                                                                                                                  |
+| <span data-ttu-id="de741-222">Sumaryczny bilans próbny rok do roku — domyślny</span><span class="sxs-lookup"><span data-stu-id="de741-222">Summary Trial Balance Year Over Year – Default</span></span>           | <span data-ttu-id="de741-223">Oferuje informacje o saldzie dla wszystkich kont zawierających salda otwarcia i zamknięcia oraz salda po stronie debetowej i kredytowej razem z ich różnicą netto dla bieżącego roku i roku ubiegłego.</span><span class="sxs-lookup"><span data-stu-id="de741-223">View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.</span></span>                                                                                                                           |
+| <span data-ttu-id="de741-224">Tygodniowa sprzedaż i rabaty — domyślne</span><span class="sxs-lookup"><span data-stu-id="de741-224">Weekly Sales and Discounts - Default</span></span>                     | <span data-ttu-id="de741-225">Lepszy wgląd w sprzedaż i rabaty dla każdego tygodnia w miesiącu.</span><span class="sxs-lookup"><span data-stu-id="de741-225">Gain insight into sales and discounts for each week in a month.</span></span> <span data-ttu-id="de741-226">Ten raport zawiera sumę z czterech tygodni.</span><span class="sxs-lookup"><span data-stu-id="de741-226">This report includes a four-week total.</span></span>                                                                                                                                                                                                              |
+| <span data-ttu-id="de741-227">Dostępne środki budżetowe — domyślny</span><span class="sxs-lookup"><span data-stu-id="de741-227">Budget Funds Available - Default</span></span>                         | <span data-ttu-id="de741-228">Wyświetlanie szczegółowego porównania skorygowanego budżetu, rzeczywistych rozchodów, rezerwacji budżetu i środków budżetowych dostępnych dla wszystkich kont</span><span class="sxs-lookup"><span data-stu-id="de741-228">View a detailed comparison of revised budget, actual expenditures, budget reservations, and budget funds available for all accounts</span></span>                                                                                                                                                                                  |
+
+## <a name="opening-financial-reports"></a><span data-ttu-id="de741-229">Otwieranie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-229">Opening financial reports</span></span>
+<span data-ttu-id="de741-230">Po kliknięciu menu **Raporty finansowe** jest wyświetlana lista domyślnych raportów finansowych firmy.</span><span class="sxs-lookup"><span data-stu-id="de741-230">When you click the **Financial reporting** menu, the list of default financial reports for the company is shown.</span></span> <span data-ttu-id="de741-231">Następnie można otworzyć lub zmodyfikować raport.</span><span class="sxs-lookup"><span data-stu-id="de741-231">You can then open or modify a report.</span></span> <span data-ttu-id="de741-232">Aby otworzyć jeden z domyślnych raportów, należy wybrać nazwę raportu.</span><span class="sxs-lookup"><span data-stu-id="de741-232">To open one of the default reports, select the report name.</span></span> <span data-ttu-id="de741-233">Kiedy raport zostanie otwarty po raz pierwszy, zostanie automatycznie wygenerowany raport za poprzedni miesiąc.</span><span class="sxs-lookup"><span data-stu-id="de741-233">The first time that a report is opened, it's automatically generated for the previous month.</span></span> <span data-ttu-id="de741-234">Na przykład jeśli raport zostanie otwarty po raz pierwszy w sierpniu 2016, jest generowany raport na 31 lipca 2016 r.</span><span class="sxs-lookup"><span data-stu-id="de741-234">For example, if you open a report for the first time in August 2016, the report is generated for July 31, 2016.</span></span> <span data-ttu-id="de741-235">Po otwarciu raportu, możesz zapoznać się ze szczegółowymi danymi i opcjami modyfikacji.</span><span class="sxs-lookup"><span data-stu-id="de741-235">After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.</span></span>
+
+## <a name="creating-and-modifying-financial-reports"></a><span data-ttu-id="de741-236">Tworzenie i modyfikowanie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-236">Creating and modifying financial reports</span></span>
+<span data-ttu-id="de741-237">Z listy raportów finansowych można utworzyć nowy raport lub zmodyfikować istniejący raport.</span><span class="sxs-lookup"><span data-stu-id="de741-237">From the financial reports list, you can create a new report or modify an existing report.</span></span> <span data-ttu-id="de741-238">Jeśli masz odpowiednie uprawnienia, możesz utworzyć nowy raport finansowy, klikając przycisk **Nowy** w okienku akcji.</span><span class="sxs-lookup"><span data-stu-id="de741-238">If you have the appropriate permissions, you can create a new financial report by clicking **New** on the Action Pane.</span></span> <span data-ttu-id="de741-239">Projektant raportów zostanie pobrany na Twoje urządzenie i uruchomiony.</span><span class="sxs-lookup"><span data-stu-id="de741-239">A report designer program is downloaded to your device.</span></span> <span data-ttu-id="de741-240">Po uruchomieniu projektanta raportów można utworzyć nowy raport.</span><span class="sxs-lookup"><span data-stu-id="de741-240">After the report designer starts you can then create the new report.</span></span> <span data-ttu-id="de741-241">Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych.</span><span class="sxs-lookup"><span data-stu-id="de741-241">After you save the new report, it appears in the financial reports list.</span></span> <span data-ttu-id="de741-242">Na liście są wyświetlane tylko raporty, które zostały utworzone dla firmy używanej w programie Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="de741-242">The list shows only reports that were created for the company that you're using in Finance and Operations.</span></span> 
+
+> [!NOTE] 
+> <span data-ttu-id="de741-243">Komputer, do którego pobierasz aplikację kliencką projektanta raportów, musi mieć zainstalowane oprogramowanie Microsoft .NET Framework w wersji 4.6.2.</span><span class="sxs-lookup"><span data-stu-id="de741-243">The computer that you are downloading the report designer client on must have version 4.6.2 of the Microsoft .NET Framework installed on it.</span></span> <span data-ttu-id="de741-244">Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować z witryny [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53345).</span><span class="sxs-lookup"><span data-stu-id="de741-244">This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53345).</span></span> <span data-ttu-id="de741-245">Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta projektanta raportów.</span><span class="sxs-lookup"><span data-stu-id="de741-245">If you are using Chrome, you must install a ClickOnce extension in order to download the report designer client.</span></span> <span data-ttu-id="de741-246">Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito.</span><span class="sxs-lookup"><span data-stu-id="de741-246">If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode.</span></span> <span data-ttu-id="de741-247">Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych.</span><span class="sxs-lookup"><span data-stu-id="de741-247">You can also modify a report that appears in the financial reports list.</span></span> <span data-ttu-id="de741-248">Po wybraniu obszaru wokół nazwy raportu kliknij przycisk **Edytuj** w okienku akcji.</span><span class="sxs-lookup"><span data-stu-id="de741-248">When the area around the report name is selected, click **Edit** on the Action Pane.</span></span> <span data-ttu-id="de741-249">Zostanie uruchomiony projektant raportów.</span><span class="sxs-lookup"><span data-stu-id="de741-249">The report designer program starts.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="de741-250">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="de741-250">Additional resources</span></span>
+- [<span data-ttu-id="de741-251">Wyświetlanie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="de741-251">View financial reports</span></span>](view-financial-reports.md)
+
+
+
