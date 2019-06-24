@@ -17,22 +17,22 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-2-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 55e102f2dad150f8aa25e7521e56de9cc8247daa
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: aa65438412bb0e16b06a58ffc8136f08388429fa
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1515718"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595469"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Przykładowa integracja drukarki fiskalnej dla Polski
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="introduction"></a>Wprowadzenie
 
-Funkcja programu Microsoft Dynamics 365 for Retail dla Polski obejmuje przykładową integrację punktu sprzedaży (POS) z drukarką fiskalną. Przykładowa integracja rozszerza [funkcję integracji fiskalnej](fiscal-integration-for-retail-channel.md) i obsługuje protokół POSNET THERMAL HD 2.02 dla drukarek fiskalnych z [Posnet Polska S.A.](http://www.posnet.com.pl) Przykład umożliwia komunikację z drukarką fiskalną połączoną przez port COM przy użyciu natywnego oprogramowania sterownika. Implementację i testy przeprowadzono przy użyciu emulatora oprogramowania dostarczonego przez Posnet dla drukarki fiskalnej Posnet Thermal HD FV EJ. Przykładowa integracja ma formę kodu źródłowego i jest częścią zestawu SDK modułu Retail.
+Funkcja programu Microsoft Dynamics 365 for Retail dla Polski obejmuje przykładową integrację punktu sprzedaży (POS) z drukarką fiskalną. Przykładowa integracja rozszerza [funkcję integracji fiskalnej](fiscal-integration-for-retail-channel.md) i obsługuje protokół POSNET THERMAL HD 2.02 dla drukarek fiskalnych z [Posnet Polska S.A.](https://www.posnet.com.pl) Przykład umożliwia komunikację z drukarką fiskalną połączoną przez port COM przy użyciu natywnego oprogramowania sterownika. Implementację i testy przeprowadzono przy użyciu emulatora oprogramowania dostarczonego przez Posnet dla drukarki fiskalnej Posnet Thermal HD FV EJ. Przykładowa integracja ma formę kodu źródłowego i jest częścią zestawu SDK modułu Retail.
 
-Microsoft nie udostępnia żadnego sprzętu, oprogramowania ani dokumentacji firmy Posnet. Aby dowiedzieć się, jak uzyskać drukarkę fiskalną i jak ją obsługiwać, skontaktuj się z [Posnet Polska S.A.](http://www.posnet.com.pl)
+Microsoft nie udostępnia żadnego sprzętu, oprogramowania ani dokumentacji firmy Posnet. Aby dowiedzieć się, jak uzyskać drukarkę fiskalną i jak ją obsługiwać, skontaktuj się z [Posnet Polska S.A.](https://www.posnet.com.pl)
 
 ## <a name="scenarios"></a>Scenariusze
 
@@ -128,19 +128,19 @@ Wykonaj kroki konfiguracji integracji fiskalnej w sposób opisany w [Konfigurowa
 
 #### <a name="commerce-runtime-extension-components"></a>Komponentu rozszerzenia środowiska uruchomieniowego Commerce
 
-Komponenty rozszerzenia środowiska uruchomieniowego Commerce (CRT) znajdują się w zestawie SDK modułu Retail. Aby wykonać poniższe procedury, otwórz rozwiązania CRT (**CommerceRuntimeSamples.sln**) w obszarze **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+Komponenty rozszerzenia Commerce Runtime (CRT) znajdują się w zestawie SDK modułu Retail. Aby wykonać poniższe procedury, otwórz rozwiązanie CRT, **CommerceRuntimeSamples.sln**, w obszarze **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
 1. Znajdź projekt **Runtime.Extensions.DocumentProvider.PosnetSample** i zbuduj go.
 2. W folderze **Extensions.DocumentProvider.PosnetSample\\bin\\Debug** znajdź plik zestawu **Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample.dll**.
 3. Skopiuj plik zestawu do folderu rozszerzenia CRT:
 
     - **Retail Server:** skopiuj zestaw do folderu **\\bin\\ext** w lokalizacji Microsoft Internet Information Services (IIS) witryny Retail Server.
-    - **Lokalna instancja CRT na Modern POS:** skopiuj zestaw do folderu **\\ext** w lokalizacji brokera lokalnego klienta CRT.
+    - **Lokalne wystąpienie CRT na Modern POS:** skopiuj zestaw do folderu **\\ext** w lokalizacji brokera lokalnego klienta CRT.
 
 4. Znajdź plik konfiguracji rozszerzeń dla CRT:
 
     - **Retail Server:** plik nosi nazwę **commerceruntime.ext.config** i jest w folderze bin\\ext w lokalizacji IIS witryny Retail Server.
-    - **Localna instancja CRT na Modern POS:** plik nosi nazwę **CommerceRuntime.MPOSOffline.Ext.config** i jest w lokalizacji brokera lokalnego klienta CRT.
+    - **Lokalne wystąpienie CRT na Modern POS:** plik nosi nazwę **CommerceRuntime.MPOSOffline.Ext.config** i znajduje się w lokalizacji brokera lokalnego klienta CRT.
 
 5. Zarejestruj zmianę CRT w pliku konfiguracji rozszerzenia. Dodaj **source="assembly" value="Contoso.Commerce.Runtime.Extensions.DocumentProvider.PosnetSample"**.
 6. Uruchom ponownie usługę Retail.

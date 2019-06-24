@@ -3,7 +3,7 @@ title: Raporty finansowe
 description: W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w programie Microsoft Dynamics 365 for Finance and Operations i jak korzystać z funkcji raportowania finansowego. Zawiera opis domyślnych raportów finansowych, które są zawarte w programie.
 author: aprilolson
 manager: AnnBe
-ms.date: 09/26/2018
+ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec
+ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550312"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1594967"
 ---
 # <a name="financial-reporting"></a>Raporty finansowe
 
@@ -64,7 +64,7 @@ Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają
 
 | Uprawnienie etykiety                       | Opis                                                             | Nazwa drzewa obiektów aplikacji (AOT)                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| Obsługa zabezpieczeń raportowania finansowego | Obsługa zabezpieczeń raportowania finansowego oraz wykonywanie zadań administracyjnych. | FinancialReportsSecurityMaintain |
+| Obsługa zabezpieczeń raportowania finansowego | Obsługa zabezpieczeń raportowania finansowego oraz wykonywanie zadań administracyjnych. | FinancialReportsSecuritySystemMaintain |
 | Obsługa raportów finansowych            | Projektowanie i obsługa raportów finansowych.                                  | FinancialReportsMaintainReports  |
 | Generowanie raportów finansowych            | Generowanie i odświeżanie raportów finansowych.                                 | FinancialReportsGenerateReports  |
 | Wyświetlanie raportów finansowych                | Wyświetlanie raportów finansowych.                                                 | FinancialReportsView             |

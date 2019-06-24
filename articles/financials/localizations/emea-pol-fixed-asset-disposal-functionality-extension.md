@@ -17,12 +17,12 @@ ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6c8ae957907901743524310e9435bf8171ab4513
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 04b8dcd54b479e93267361b2e2d6214b3d8b9cfb
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538246"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549043"
 ---
 # <a name="fixed-assets-disposal-for-poland"></a>Likwidacja środków trwałych dla Polski
 

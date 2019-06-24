@@ -3,7 +3,7 @@ title: Filmy o rozwiązaniu Finance and Operations
 description: Ta strona zawiera listę filmów instruktażowych i technicznych przygotowanych przez Microsoft, które dotyczą rozwiązania Dynamics 365 for Finance and Operations i są dostępne na YouTube i w innych witrynach.
 author: josaw1
 manager: AnnBe
-ms.date: 05/11/2018
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1b828382f9f81d796fcfaef0e9c7dc9450a97992
+ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561675"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1591555"
 ---
 # <a name="videos-for-finance-and-operations"></a>Filmy o rozwiązaniu Finance and Operations
 
@@ -50,7 +50,7 @@ Filmy są uszeregowane według funkcji, dlatego w celu obejrzenia całej treści
 - [Doradca optymalizacji](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Konfigurowanie odgałęzień i kompilacji](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Konfigurowanie komputera deweloperskiego](https://www.youtube.com/watch?v=cqp9MetfiyM)
-- [Integracja rozwiązania Azure DevOps z usługą Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
+- [Integracja Azure DevOps z usługą Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
 
 #### <a name="explore-the-user-interface"></a>Poznawanie interfejsu użytkownika
 
@@ -63,6 +63,7 @@ Filmy są uszeregowane według funkcji, dlatego w celu obejrzenia całej treści
 - [Obszar roboczy kontroli kosztów na urządzeniach przenośnych](https://youtu.be/imsuTg8rUVk)
 - [Rozpoczęcie korzystania z modułu Rachunek kosztów](https://youtu.be/1pUDtJQZ8FU)
 - [Korzystanie z programu Excel podczas analizy kosztów](https://youtu.be/-HKHYdClvx8)
+- [Obsługa wydatków](https://youtu.be/Ocy-MsTvEE0)
 
 #### <a name="intelligence"></a>Analizy
 
@@ -185,7 +186,7 @@ Filmy są uszeregowane według funkcji, dlatego w celu obejrzenia całej treści
 - [Narzędzia migracji z programu AX 2009 (DYN306PAL2)](https://infopedia.eventbuilder.com/event?eventid=u3g7s0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Uaktualnianie z systemu AX 2012 do rozwiązania Dynamics 365 for Operations (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Jak uaktualnić do wersji 7.2 (lipiec 2017) z wersji 7.0 (RTW)/7.1 (wydanie 1611) (DYN338PAL2)](https://infopedia.eventbuilder.com/event?eventid=q0w9p0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Konfiguracja rozwiązania Azure DevOps (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Konfiguracja Azure DevOps (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="warehouse-management"></a>Zarządzanie magazynem
 

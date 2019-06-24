@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4314c81823940ce3192da23dfdf777e8ebf781f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553052"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606833"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)
 
@@ -46,7 +46,7 @@ Załóżmy, że w Twojej firmie używana jest skala ocen od 1 do 5, gdzie 5 ozna
 
 Jeśli organizacja używa sum liczbowych do określania wyniku, poszczególne wyniki są sumowane. Jeśli weźmiemy jeszcze raz ten sam przykład, odbiorca otrzymuje ocenę 13 (5 + 3 + 5).
 
-## <a name="to-set-up-rfm-analysis-for-the-customers-in-your-organization"></a>Aby skonfigurować analizę RFM dla odbiorców w organizacji
+## <a name="set-up-rfm-analysis-for-the-customers-in-your-organization"></a>Konfigurowanie analizy RFM dla odbiorców w organizacji
 
 1. Wybierz kolejno opcje **Biuro obsługi** \> **Okresowe** \> **Analiza RFM**.
 2. Na stronie **Analiza RFM** wybierz opcję **Nowa**. W polu **Definicja RFM** wprowadź nazwę definicji RFM. Na przykład można nazwać definicję RFM-A.

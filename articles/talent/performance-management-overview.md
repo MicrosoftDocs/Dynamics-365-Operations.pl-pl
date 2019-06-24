@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1954b691d84b0aa8710da621af21415c6c116539
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
+ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518833"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1590512"
 ---
 # <a name="performance-management"></a>Zarządzanie wydajnością
 
@@ -109,7 +109,7 @@ Można wyświetlić elementy arkusza wydajności powiązane z przeglądem. Możn
 
 ### <a name="ratings"></a>Wyniki oceny
 
-Wynik oceny można zastosować do każdego celu i kompetencji, która znajduje się w przeglądzie. Dla każdego przeglądu można zdefiniować modele oceniania. Domyślne ustawienia wyników oceny znajdują się na stronie **Parametry zasobów ludzkich** w obszarze **Wydajność**.
+Wynik oceny można zastosować do każdego celu i kompetencji, która znajduje się w przeglądzie. Dla każdego przeglądu można zdefiniować modele oceniania. Domyślne ustawienia wyników oceny znajdują się na stronie **Udostępniane parametry zasobów ludzkich** w obszarze **Wydajność.**
 
 ### <a name="sign-offs"></a>Podpisy
 

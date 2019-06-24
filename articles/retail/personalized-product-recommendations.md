@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c73bc10332329e81986a259969f8fe34b57f4ee6
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559565"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607017"
 ---
 # <a name="personalized-product-recommendations"></a>Spersonalizowane rekomendacje produktów
 
@@ -44,7 +44,7 @@ Rekomendacje produktów działają w opisanych niżej scenariuszach w punkcie sp
     - Jeśli pracownik sklepu otworzy stronę **Szczegóły produktu** podczas oglądania wcześniejszych transakcji w różnych kanałach, aparat rekomendacji proponuje dodatkowe towary, które inni odbiorcy często kupowali razem z analizowanym produktem.
     - Jeśli pracownik sklepu doda odbiorcę do transakcji, a następnie otworzy stronę **Szczegóły produktu**, aparat rekomendacji przedstawi spersonalizowane zalecenia na podstawie historii transakcji odbiorcy.
 
-    [![proddetails](./media/proddetails.png)](./media/proddetails.png)
+    [![Rekomendacje na stronie Szczegóły produktu](./media/proddetails.png)](./media/proddetails.png)
 
 2. Na stronie **Transakcja**:
 
@@ -54,13 +54,11 @@ Rekomendacje produktów działają w opisanych niżej scenariuszach w punkcie sp
     > [!NOTE]
     > Aby rekomendacje były wyświetlane na stronie **Transakcja**, sprzedawca detaliczny musi zaktualizować układ ekranu w programie Dynamics 365 for Retail. Formant **Zalecenia** należy upuścić na stronę **Transakcja**.
 
-    [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Rekomendacje na stronie Transakcja](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3. Na stronie **Szczegóły odbiorcy**:
+3. Na stronie **Szczegóły klienta** aparat rekomendacji proponuje towary na podstawie identyfikatora użytkownika oraz towarów na liście życzeń odbiorcy.
 
-    - Aparat rekomendacji proponuje towary na podstawie identyfikatora użytkownika oraz towarów na liście życzeń odbiorcy.
-
-    [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
+    [![Rekomendacje na stronie Szczegóły klienta](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
 ## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurowanie Dynamics 365 for Retail do obsługi rekomendacji POS
 

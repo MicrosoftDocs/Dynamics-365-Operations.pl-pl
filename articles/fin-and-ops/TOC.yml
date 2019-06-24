@@ -44,9 +44,11 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funkcje niezaimplementowane we wdrożeniach lokalnych
               href: get-started/features-not-implemented-on-prem.md
+            - name: Funkcje w wersji zapoznawczej w rozwiązaniu Finance and Operations w wersji 10.0.4 (lipiec 2019)
+              href: get-started/whats-new-changed-10-0-4.md
             - name: Funkcje w wersji zapoznawczej w rozwiązaniu Finance and Operations w wersji 10.0.3 (czerwiec 2019)
               href: get-started/whats-new-changed-10-0-3.md
-            - name: Funkcje w wersji zapoznawczej w rozwiązaniu Finance and Operations w wersji 10.0.2 (maj 2019)
+            - name: Finance and Operations w wersji 10.0.2 (maj 2019)
               href: get-started/whats-new-changed-10-0-2.md
             - name: Finance and Operations w wersji 10.0.1 (kwiecień 2019)
               href: get-started/whats-new-changed-10-0-1.md
@@ -54,9 +56,11 @@
               href: get-started/whats-new-changed-10.md
             - name: Finance and Operations w wersji 8.1.3 (styczeń 2019)
               href: get-started/whats-new-changed-8-1-3.md
+            - name: Funkcje w wersji zapoznawczej w aktualizacji Platform update 28 rozwiązania Finance and Operations (lipiec 2019)
+              href: get-started/whats-new-platform-update-28.md
             - name: Funkcje w wersji zapoznawczej w aktualizacji Platform update 27 rozwiązania Finance and Operations (czerwiec 2019)
               href: get-started/whats-new-platform-update-27.md
-            - name: Funkcje w wersji zapoznawczej w aktualizacji Platform update 26 rozwiązania Finance and Operations (maj 2019)
+            - name: Aktualizacja Platform update 26 (maj 2019)
               href: get-started/whats-new-platform-update-26.md
             - name: Aktualizacja Platform update 25 (kwiecień 2019)
               href: get-started/whats-new-platform-25.md
@@ -1261,6 +1265,8 @@
                   href: ../financials/public-sector/tasks/create-original-budget.md
                 - name: Tworzenie wstępnego budżetu dla sektora publicznego
                   href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
+                - name: Raport z analizy budżetu
+                  href: ../financials/public-sector/budget-analysis-report.md
                 - name: Analiza budżetu w sektorze publicznym
                   href: ../financials/public-sector/budget-analysis-public-sector.md
                 - name: Wstępne budżety i przydziały w sektorze publicznym
@@ -2277,6 +2283,7 @@
                   href: ../financials/localizations/rus-ledger-transactions-preview.md
                 - name: Konfigurowanie kursów wymiany na potrzeby transakcji walutowych
                   href: ../financials/localizations/rus-exchange-difference.md
+                - name: Importowanie aktualnych kursów wymiany z banku centralnego Federacji Rosyjskiej ../financials/general-ledger/import-currency-exchange-rates.md
             - name: Posiadacze zaliczek
               href: ../financials/localizations/rus-advance-holders.md
               items:
@@ -2638,8 +2645,7 @@
                   href: hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
                 - name: Konfigurowanie świadczeń
                   href: hr/localizations/noam-usa-benefit-set-up-tasks.md
-            - name: Częstotliwości i cykle
-            - name: Konfigurowanie cykli kalkulacji płac i okresów kalkulacji płac
+            - name: Konfigurowanie cykli płac i okresów płac
               href: hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
             - name: Konfigurowanie częstotliwości obliczania listy płac
               href: hr/localizations/noam-usa-payroll-calculation-frequencies-tasks.md
@@ -2922,7 +2928,9 @@
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
             - name: Analizowanie dokumentów przychodzących w formacie CSV
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
-            - name: Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości treści
+            - name: Śledzenie wykonywania formatów raportowania elektronicznego w celu rozwiązywania problemów z wydajnością
+              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
+            - name: Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości zawartości
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Rozszerzanie listy funkcji modułu Raportowanie elektroniczne
@@ -3184,7 +3192,7 @@
           href: organization-administration/configure-email.md
         - name: Tworzenie środowisk obsługi wiadomości e-mail
           href: ../dev-itpro/dev-tools/sysmailer-develop.md
-        - name: Rozwiązywanie problemów z integracją pakietu Office
+        - name: Rozwiązywanie problemów z integracją z pakietem Office
           href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json
     - name: Zaopatrzenie i sourcing
       href: ../supply-chain/procurement/procurement-sourcing-overview.md
@@ -3321,7 +3329,7 @@
         - name: Sekwencje identyfikatorów
           href: organization-administration/number-sequence-overview.md
           items:
-            - name: Konfigurowanie indywidualnych numeracji
+            - name: Konfigurowanie indywidualnych sekwencji numerów
               href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
             - name: Konfigurowanie numeracji za pomocą kreatora
               href: organization-administration/tasks/set-up-number-sequences-wizard.md
@@ -3877,6 +3885,10 @@
           href: ../financials/project-management/project-time-entry-mobile-workspace.md
         - name: Aplikacja mobilna Karta czasu pracy projektu
           href: ../financials/project-management/project-timesheet.md
+        - name: Karty czasu pracy projektów na urządzeniu przenośnym
+          href: ../financials/project-management/mobile-timesheets.md
+        - name: Implementowanie pól niestandardowych dla aplikacji mobilnej Karta czasu pracy projektu
+          href: ../financials/project-management/custom-fields-mobile.md
     - name: Sprzedaż i marketing
       href: ../supply-chain/sales-marketing/overview-sales-marketing.md
       items:

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f0ff56f0ff106bc168b6a27612e08743a539a07
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6923a4d5420cd768d1b0da24eab406033c17fd67
+ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1514446"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1594943"
 ---
 # <a name="expense-policies"></a>Zasady dotyczące wydatków
 
@@ -44,11 +44,11 @@ Można zdefiniować trzy typy zasad:
  
  - Uzasadnienie — wymaga, aby pracownik lub menedżer wprowadził uzasadnienie przekroczenia kwoty w zasadach przed przesłaniem raportu z wydatków lub wniosku wyjazdowego.        
 
-# <a name="policy-tips"></a>Porady dotyczące zasad
+## <a name="policy-tips"></a>Porady dotyczące zasad
 Oto kilka sugestii ułatwiających tworzenie nowych zasad zarządzania wydatkami. 
 * Zasady obowiązują od dnia ich wprowadzenia; nie zaczną obowiązywać, jeśli zasada zostanie utworzona z datą późniejszą niż data wystąpienia wydatku. Jeśli na przykład nowe zasady są tworzone dzisiaj w celu wymuszenia maksymalnego kosztu posiłku wynoszącego $50, wówczas wszelkie istniejące wydatki wprowadzone z datą wczorajszą nie będą sprawdzane w odniesieniu do tej zasady.
 * Podczas tworzenia zasady dla kategorii wydatków, która może być wyszczególniona, należy rozważyć dodanie warunku dla typu wiersza wydatku. Niektóre zasady, takie jak wymaganie przyjęcia paragonu, mogą nie mieć sensu w przypadku wierszy wyszczególnionych i powinny być stosowane tylko do wierszy nagłówka lub wierszy bez pozycji. 
 
-# <a name="when-to-evaluate-policies"></a>Kiedy oceniać zasady
+## <a name="when-to-evaluate-policies"></a>Kiedy oceniać zasady
 
 W parametrach zarządzania wydatkami istnieje możliwość oceny zasad zarządzania wydatkami podczas zapisywania wiersza lub przesyłania raportu z wydatków. Jeśli zostanie wybrana opcja oceny, kiedy wiersz zostanie zapisany, użytkownicy będą wcześniej wiedzieli, co muszą zrobić, aby od razu wypełnić cały raporty z wydatków. W przeciwnym wypadku można opóźnić ocenianie zasad i zaoszczędzić czas, jeśli podczas przesyłania do przepływu pracy następuje weryfikacja.

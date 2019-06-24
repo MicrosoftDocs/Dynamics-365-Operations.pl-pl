@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 7aed6895d526011e353eef7b85e4e2f096a25e5a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dc34ca33d2844eaedfa1734fe6d7c7f2ef4a622d
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546844"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595692"
 ---
 # <a name="before-you-buy"></a>Zanim kupisz
 
@@ -63,7 +63,7 @@ Istnieją dwa sposoby kupowania subskrypcji dla wdrożenia lokalnego
 
 ### <a name="buy-through-volume-licensing"></a>Zakup w programie licencjonowania zbiorowego
 
-Jeśli organizacja ma 250 lub więcej użytkowników usługi Dynamics 365, warto rozważyć [umowę licencjonowania zbiorowego](https://www.microsoft.com/en-us/Licensing/product-licensing/dynamics365).
+Jeśli organizacja ma 250 lub więcej użytkowników usługi Dynamics 365, warto rozważyć [umowę licencjonowania zbiorowego](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
 W programie licencjonowania zbiorowego program Finance and Operations można pozyskać w następujący sposób:
 
@@ -87,7 +87,7 @@ Microsoft oferuje elastyczną pomoc techniczną, usługi i zasoby należące do 
 Więcej informacji:
 
 - [Pomoc techniczna usługi Dynamics 365](https://www.microsoft.com/dynamics365/support)
-- [Przewodnik Szybki start po zaletach pomocy technicznej do usługi chmurowej Microsoft Dynamics](http://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
+- [Przewodnik Szybki start po zaletach pomocy technicznej do usługi chmurowej Microsoft Dynamics](https://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Krok 4: Więcej informacji o programie FastTrack i planowanie wdrożenia
 

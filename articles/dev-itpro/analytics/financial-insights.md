@@ -3,7 +3,7 @@ title: Szczegółowe dane finansowe
 description: Wykorzystując usługę Microsoft Power BI, obszar roboczy Szczegółowe dane finansowe zbiera w jednym miejscu kluczowe wskaźniki wydajności (KPI) dotyczące finansów, wykresy i sprawozdania finansowe.
 author: kweekley
 manager: AnnBe
-ms.date: 08/14/2018
+ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2c261d2aea66b578bc976a66b6184384f0a5bf5d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9edcb192d2fac5acb954d8b87be691f0943e0db7
+ms.sourcegitcommit: 23ab3c99d05869ea2c73514754608e8684697d8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554099"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595083"
 ---
 # <a name="financial-insights"></a>Szczegółowe dane finansowe
 
@@ -67,10 +67,9 @@ Dane obszaru roboczego **Szczegółowe dane finansowe** są pobierane z magazynu
 
 Należy zaktualizować następujące jednostki, aby widzieć dane w obszarach roboczych **Szczegółowe dane finansowe** i **Przegląd dla dyrektora finansowego**:
 
+- Dane transakcji raportowania finansowego w wersji 2 (**Uwaga:** to jest nowość w wersji 10.0.1, która zastępuje poprzednią jednostkę).
+- Dane transakcji raportowania finansowego
 - CustCollectionsBIMeasurements
-- FinancialReportingOtherData
-- FinancialReportingReferenceData
-- FinancialReportingTransactionData
 - LedgerCovLiquidityMeasurement
 - Moduł Zakupy
 - Moduł Sprzedaż

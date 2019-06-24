@@ -16,12 +16,12 @@ ms.search.region: Poland
 ms.author: v-semaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a0ae0fe08e9aa8220d50811000290c4e6e880637
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6cd0eb20bf667a7248f4218473e0d6a2257b3e72
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538233"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559353"
 ---
 # <a name="turnover-and-balances-statement-for-poland"></a>Zestawienie obrotów i sald dla Polski
 

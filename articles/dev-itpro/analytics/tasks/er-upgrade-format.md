@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 151b8936a46a1945e98bfe0ed040ca50c93db4b0
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544456"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595447"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej
 
@@ -36,7 +36,7 @@ Przed wykonaniem tych kroków należy najpierw wykonać procedury „Tworzenie d
 
 ## <a name="select-format-configuration-for-customization"></a>Wybór konfiguracji formatu do dostosowania
 1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
-    * W tym przykładzie przykładowa firma Litware, Inc. (http://www.litware.com) będzie pełniła rolę dostawcy konfiguracji, który obsługuje konfiguracje formatów płatności elektronicznych dla określonego kraju.    Przykładowa firma Proseware, Inc. (http://www.proseware.com) będzie pełniła rolę użytkownika konfiguracji formatu dostarczonej przez firmę Litware, Inc. Firma Proseware, Inc. będzie używać tych formatów w niektórych regionach tego kraju.  
+    * W tym przykładzie przykładowa firma Litware, Inc. (https://www.litware.com) będzie pełniła rolę dostawcy konfiguracji, który obsługuje konfiguracje formatów płatności elektronicznych dla określonego kraju.    Przykładowa firma Proseware, Inc. (http://www.proseware.com) będzie pełniła rolę użytkownika konfiguracji formatu dostarczonej przez firmę Litware, Inc. Firma Proseware, Inc. będzie używać tych formatów w niektórych regionach tego kraju.  
 2. Kliknij opcję Konfiguracje raportowania.
 3. Kliknij przycisk Pokaż filtry.
 4. Zastosuj następujące filtry: w polu „Nazwa” wprowadź wartość filtru „BACS (fikcyjny brytyjski)”, używając operatora filtru „zaczyna się od”.

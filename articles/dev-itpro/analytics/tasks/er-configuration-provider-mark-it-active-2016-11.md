@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13a27c2fec2a2b226e9ae8d5b8f9a61e8b79ceb0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a4b1cd7a02cdf4c650af50199f4425eb53cef0a8
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544916"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595402"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych
 
@@ -34,11 +34,11 @@ W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administra
 1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
 2. Kliknij opcję Dostawcy konfiguracji.
 3. Kliknij przycisk Nowy.
-    * Rekord dostawcy ma unikatową nazwę i adres URL. Przejrzyj zawartość tej strony i pomiń procedurę, jeśli rekord firmy Litware, Inc. (http://www.litware.com) już istnieje.  
+    * Rekord dostawcy ma unikatową nazwę i adres URL. Przejrzyj zawartość tej strony i pomiń procedurę, jeśli rekord firmy Litware, Inc. (https://www.litware.com) już istnieje.  
 4. W polu Nazwa wpisz „Litware, Inc.”.
     * Litware, Inc.  
-5. W polu Adres internetowy wpisz wartość „http://www.litware.com”.
-    * http://www.litware.com  
+5. W polu Adres internetowy wpisz wartość „https://www.litware.com”.
+    * https://www.litware.com  
 6. Kliknij przycisk Zapisz.
 7. Zamknij stronę.
 

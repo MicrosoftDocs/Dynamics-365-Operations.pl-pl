@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia.
 author: sericks007
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1527678"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620652"
 ---
 # <a name="removed-or-deprecated-features"></a>Usunięte lub przestarzałe funkcje
 
@@ -38,8 +38,35 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 > [!NOTE]
 > Począwszy od programu Dynamics 365 for Finance and Operations w wersji z lipca 2017 z aktualizacją platformy 8 dla każdej usuniętej lub przestarzałej funkcji podano typy wdrożeń. Wszystkie poprzednie wersje podane w tym temacie obsługiwały tylko wdrożenie w chmurze.
 
-> [!NOTE]
 > Szczegółowe informacje o obiektów w rozwiązaniu Finance and Operations można znaleźć w [raportach z wykazami parametrów technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach programu Finance and Operations.
+
+## <a name="dynamics-365-for-finance-and-operations-1004"></a>Dynamics 365 for Finance and Operations 10.0.4 
+
+### <a name="france-fec-accounting-data-export-in-xml"></a>Francja: eksportowanie danych księgowych FEC w XML
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Zastąpiony przez format TXT, **francuski plik audytu FEC** jest dostępny za pomocą opcji **Księga główna** \> **Zadania okresowe** \> **Eksportowanie danych**.
+| **Zamieniona przez inną funkcję?**   | Tak |
+| **Powiązane obszary produktów**         | Księga główna |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Wycofane. Docelowy okres usuwania funkcji to lipiec 2020 r. |
+
+=======
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 z aktualizacją platformy 28
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 z aktualizacją Platform update 28 jest dostępna dla użytkowników docelowych w ramach wersji wstępnej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Dostępność aktualizacji usługi](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="legacy-navigation-bar"></a>Pasek nawigacji starego typu
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Wyrównanie nagłówka z innymi produktami Dynamics i Office. Więcej szczegółów można znaleźć w artykule [Zaktualizowany pasek nawigacyjny wyrównany z nagłówkiem pakietu Office](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).
+| **Zamieniona przez inną funkcję?**   | Począwszy od aktualizacji platformy 24, został wprowadzony nowy pasek nawigacyjny z funkcją wyszukiwania. |
+| **Powiązane obszary produktów**         | Klient sieci Web |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Wycofane: od kwietnia 2020 r. pasek nawigacyjny starego typu przestanie być dostępny. Do tego momentu odbiorcy mogą powrócić do paska nawigacyjnego starego typu za pośrednictwem strony **Opcje wydajności klienta**. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 z aktualizacją platformy 26

@@ -3,7 +3,7 @@ title: Tworzenie kanału online i definiowanie atrybutów kanału
 description: Ta procedura zawiera instruktaż tworzenia nowego kanału online i dodawania go do hierarchii organizacyjnej.
 author: jashanno
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/04/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e066e9901a97bd5b72815a7af472247ef519ecb9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4547731d7e3bc56b1ba5e0a35ff4746c6c0e9863
+ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569528"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1618303"
 ---
 # <a name="create-online-channel-and-define-channel-attributes"></a>Tworzenie kanału online i definiowanie atrybutów kanału
 
@@ -60,4 +60,10 @@ Ta procedura zawiera instruktaż tworzenia nowego kanału online i dodawania go 
 9. Kliknij przycisk Publikuj, aby otworzyć rozwijane okno dialogowe.
 10. W polu Data obowiązywania wprowadź datę i godzinę.
 11. Kliknij przycisk Publikuj.
+
+## <a name="configure-orders-for-near-realtime-notification"></a>Konfigurowanie zamówień w celu powiadamiania w czasie zbliżonym do rzeczywistego
+1. Kliknij kolejno opcje Sprzedaż detaliczna > Ustawienia centrali > Parametry > Parametry sieci sprzedaży.
+2. Zmień ustawienie opcji Użyj usługi czasu rzeczywistego dla tworzenia zamówień handlu elektronicznego na „Tak”.
+3. Wykonaj harmonogram dystrybucji 1070, aby zsynchronizować zmiany z bazą danych kanału. 
+
 

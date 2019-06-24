@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9b73c52a72c82c109a1ff874d2369ce9c0b3a6d2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 94f8cf5b5753c530c42327e251a2102b876c1c8a
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505894"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606879"
 ---
 # <a name="loyalty-overview"></a>Omówienie programu lojalnościowego
 
@@ -93,10 +93,10 @@ Aplikacja Retail w wydaniu z października 2018 roku zawiera nowe funkcje progra
 
     ![Generowanie karty lojalnościowej](./media/Generate%20loyalty%20card.png "Automatyczne generowanie numeru karty lojalnościowej")
 
-- Uzyskane i zrealizowane punkty lojalnościowe są teraz zapisywane dla każdej transakcji i zamówienia sprzedaży względem wiersza sprzedaży, dzięki czemu tę samą kwotę można zrefundować lub wycofać w przypadku zwrotów pełnych lub częściowych. Ponadto widoczność punktów na poziomie wiersza sprzedaży pozwala użytkownikom w biurze obsługi odpowiadać na pytania klientów o liczbę punktów zarobionych lub zrealizowanych dla każdego wiersza. Przed tą zmianą punkty lojalnościowe były zawsze ponownie obliczane w przypadku zwrotów, co powodowało różnicę kwot w porównaniu z oryginalnymi, jeśli w międzyczasie zmieniły się reguły zdobywania lub realizacji punktów, a użytkownicy w biurze obsługi nie widzieli szczegółowego podziału punktów. Punkty można obejrzeć w formularzu **Transakcje kartą** dla każdej karty lojalnościowej. Aby włączyć tę funkcję, włącz konfigurację **Księguj punkty lojalnościowe według wierszy sprzedaży** na karcie **Wspólne parametry sieci sprzedaży**  > **Ogólne**.
+- Uzyskane i zrealizowane punkty lojalnościowe są teraz zapisywane dla każdej transakcji i zamówienia sprzedaży względem wiersza sprzedaży, dzięki czemu tę samą kwotę można zrefundować lub wycofać w przypadku zwrotów pełnych lub częściowych. Ponadto widoczność punktów na poziomie wiersza sprzedaży pozwala użytkownikom w biurze obsługi odpowiadać na pytania klientów o liczbę punktów zarobionych lub zrealizowanych dla każdego wiersza. Przed tą zmianą punkty lojalnościowe były zawsze ponownie obliczane w przypadku zwrotów, co powodowało różnicę kwot w porównaniu z oryginalnymi, jeśli w międzyczasie zmieniły się reguły zdobywania lub realizacji punktów, a użytkownicy w biurze obsługi nie widzieli szczegółowego podziału punktów. Punkty można obejrzeć w formularzu **Transakcje kartą** dla każdej karty lojalnościowej. Aby włączyć tę funkcję, włącz konfigurację **Księguj punkty lojalnościowe według wierszy sprzedaży** na karcie **Wspólne parametry sieci sprzedaży** \> **Ogólne**.
 
->[!NOTE]
-> Zdecydowanie zalecamy włączenie tej funkcji w celu zapewnienia, w przypadku zwrotów, refundacji lub potrącenia poprawnej liczby punktów klienta.
+    > [!NOTE]
+    > Zdecydowanie zalecamy włączenie tej funkcji w celu zapewnienia, w przypadku zwrotów, refundacji lub potrącenia poprawnej liczby punktów klienta.
 
 - Teraz sprzedawcy detaliczni mogą definiować okres aktywowania każdego punktu lojalnościowego. Konfiguracja okresu aktywacji określi czas od dnia otrzymania punktów lojalnościowych, po którym punkty stają się dostępne dla odbiorców. Nieaktywne punkty można obejrzeć w kolumnie **Nieaktywowane punkty** na stronie **Karty lojalnościowe**. Ponadto sprzedawcy detaliczni mogą określać limit maksymalnej liczby punktów lojalnościowych dla każdej karty lojalnościowej. To pole umożliwia zmniejszenie negatywnych skutków oszustw w programach lojalnościowych. Po uzyskaniu maksymalnej liczby punktów lojalnościowych użytkownik nie może zdobyć ich więcej. Sprzedawca detaliczny może postanowić blokować takie karty do czasu zbadania, czy faktycznie doszło do oszustwa. W razie stwierdzenia oszustwa sprzedawca może nie tylko zablokować kartę lojalnościową odbiorcy, ale również zablokować samego odbiorcę. Aby to zrobić, należy ustawić właściwość **Blokuj rejestrację odbiorcy w programie lojalnościowym** na **Tak** w obszarze **Wszyscy odbiorcy** na skróconej karcie **Handel detaliczny**. Zablokowanym klientom nie będzie można wystawiać kart lojalnościowych w każdym z kanałów.
 
@@ -120,31 +120,32 @@ Aplikacja Retail w wydaniu z października 2018 roku zawiera nowe funkcje progra
     ![Pokrycie punktami z salda w programie lojalnościowym](./media/Points%20covered%20by%20loyalty%20balance.png "Wyświetlanie salda pokrytego punktami lojalnościowymi")
 
     ![Wygasające punkty](./media/Expiring%20points.png "Wyświetlanie wygasających punktów")
-    
 
 - W wersji 8.1.3 udostępniliśmy opcję „płatności lojalnościowej” w kanale biura obsługi. Aby włączyć tę opcję, utwórz typ lojalnościowych metod płatności i skojarz go z biurem obsługi. 
 
->[!NOTE]
-> Ponieważ płatności lojalnościowe są konfigurowane jako płatności kartą, należy wybrać kartę ze strony **Ustawienia karty**. 
+    > [!NOTE]
+    > Ponieważ płatności lojalnościowe są konfigurowane jako płatności kartą, należy wybrać kartę ze strony **Ustawienia karty**. 
 
-![Konfiguracja karty lojalnościowej](./media/LoyaltyCardSetup.png "Konfiguracja karty lojalnościowej")
+    ![Konfiguracja karty lojalnościowej](./media/LoyaltyCardSetup.png "Konfiguracja karty lojalnościowej")
 
-Po skonfigurowaniu tej opcji odbiorcy mogą wykorzystywać swoje punkty lojalnościowe w biurze obsługi. Ulepszamy też środowisko użytkownika, aby pokazywało „Kwotę pokrywaną przez punkty lojalnościowe”, żeby użytkownicy biura obsługi nie musieli przechodzić do innego ekranu celem sprawdzenia salda w programie lojalnościowym.
+    Po skonfigurowaniu tej opcji odbiorcy mogą wykorzystywać swoje punkty lojalnościowe w biurze obsługi. Ulepszamy też środowisko użytkownika, aby pokazywało „Kwotę pokrywaną przez punkty lojalnościowe”, żeby użytkownicy biura obsługi nie musieli przechodzić do innego ekranu celem sprawdzenia salda w programie lojalnościowym.
 
 - Wielu sprzedawców detalicznych przyznaje punkty lojalnościowe wyłącznie na podstawie transakcji sprzedaży, ale sprzedawcy zorientowani bardziej prokonsumencko chcą też nagradzać za każdą interakcję z marką. Na przykład chcą przyznawać punkty za wypełnienie ankiety internetowej, odwiedziny sklepu, polubienie sprzedawcy w serwisie Facebook, wysłanie tweeta o sprzedawcy itd. W tym celu sprzedawca detaliczny może zdefiniować dowolną liczbę „innego typu działań”, a następnie zdefiniować reguły zdobywania punktów za to działanie. Dostępny jest również otwarty interfejs API Retail Server „PostNonTransactionalActivityLoyaltyPoints”, który można wywołać w przypadku identyfikacji działania, za które klient powinien otrzymać punkty lojalnościowe. Ten interfejs API oczekuje identyfikatora karty lojalnościowej, identyfikatora kanału i identyfikatora typu innego działania, tak aby klient, który powinien otrzymać punkty, mógł zostać zlokalizowany i mogła zostać zidentyfikowana zasada przyznawania punktów za działanie. 
 
     Przyznawanie punktów za działania nietransakcyjne zwykle ma dwa główne etapy:
+
     - Zarejestrowanie wykonania działania, za które należą się punkty.
     - Przyznanie odpowiedniej liczby punktów.
 
     Pierwszy etap jest zewnętrzny względem programu Microsoft Dynamics 365 for Retail, na przykład wysłanie tweeta o marce lub opublikowanie linku do marki na portalu Facebook. Po zarejestrowaniu wystąpienia działania sprzedawca może wywołać powyższy interfejs API Retail Server i przyznać punkty lojalnościowe w czasie rzeczywistym. W takich scenariuszach nie ma potrzeby kroku oceny, ponieważ aktywność już wystąpiła i powinny zostać przyznane odpowiednie punkty. Są jednak scenariusze, w których sprzedawca chce ocenić rekordy przed przyznaniem punktów. Na przykład sprzedawca ustawił warsztat w sklepie, do którego klienci rejestrują się w witrynie e-commerce lub na dowolnym innym wydarzeniu rejestrującym zgłoszenia. Jednak punkty lojalnościowe należą się tylko tym, którzy przyjdą na warsztat osobiście. W wersji 10.0 dla takich scenariuszach możemy wprowadzić jednostkę danych o nazwie **Punkty lojalnościowe w sklepie inne niż wiersze typu działania**. Ta jednostka danych umożliwia sprzedawcom używanie narzędzia importu/eksportu danych (DIXF) lub interfejsu API OData do rejestrowania działań, w których należy przyznać odbiorcom punkty lojalnościowe. Jednostka danych zapisuje działania w arkuszu o nazwie **Wierszy lojalnościowe dla innych działań**, którego można używać do celów oceny i modyfikacji. Po sprawdzeniu danych użytkownik IT może albo ręcznie zaksięgować wiersze działania lub uruchomić zadanie o nazwie **Przetwarzaj inne typy działania dla wierszy lojalności**, które zaksięguje wszystkie niezaksięgowane wiersze działania i przyzna punkty odbiorcom na podstawie reguł otrzymywania punktów. W powyższym scenariuszu wniosek o rejestrację zdarzenia wywoła interfejs API OData do wysyłania informacji do programu Dynamics 365 for Retail. Jednak użytkownik IT można zaksięgować wiersze czynności tylko tych klientów, którzy przyszli na warsztat, i usunąć wiersze działania innych klientów. 
 
-> [!NOTE]
-> Obecnie system zmusza użytkowników do ustawienia sekwencji numerów dla „innych typów działań”, ale nie będzie to krok wymagany w przyszłych wersjach. Aby ustawić sekwencję numerów, przejdź do **Wspólne parametry sieci sprzedaży > Sekwencje numerów** i wybierz sekwencję numerów dla **Identyfikator innego typu działania w programie lojalnościowym**.
+    > [!NOTE]
+    > Obecnie system zmusza użytkowników do ustawienia sekwencji numerów dla „innych typów działań”, ale nie będzie to krok wymagany w przyszłych wersjach. Aby ustawić sekwencję numerów, przejdź do opcji **Wspólne parametry sieci sprzedaży** \> **Sekwencje numerów** i wybierz sekwencję numerów dla pozycji **Identyfikator innego typu działania w programie lojalnościowym**.
 
 - Aby zapewnić dobrą obsługę klienta i skutecznie rozwiązywać kwerendy klientów, kasjer musi mieć dostęp kompletnego profilu klienta. W wersji 10.0 kasjer będzie mógł wyświetlać szczegóły historii lojalnościową wraz ze skojarzonym programem lojalnościowym oraz informacje warstwy w POS.
-- Jednym z czynników istotnie motywujących klientów do kupowania przez Internet jest bezpłatna lub tania dostawa. Aby umożliwić sprzedawcom detalicznym konfigurowanie promocji na dostawy, w wersji 10.0 wprowadziliśmy nowy rodzaj promocji o nazwie „Rabat progu wysyłki”, w którym sprzedawca detaliczny może definiować progi, po których osiągnięciu odbiorcy otrzymają korzyść w postaci tańszej lub bezpłatnej dostawy. Na przykład, wydaj $35, aby otrzymać darmową wysyłkę w ciągu dwóch dni lub darmową wysyłkę w ciągu dwóch dni dla wszystkich odbiorców w programie lojalnościowym. Ta funkcja wykorzystuje nową funkcję Zaawansowane opłaty automatyczne. Dokumentację funkcji Zaawansowane opłaty automatyczne można znaleźć tutaj: https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-auto-charges. Zaawansowane opłaty automatyczne trzeba włączyć dla wysyłania promocji do pracy. Można je włączyć na karcie **Zamówienia odbiorcy** na stronie **Parametry sieci sprzedaży** oraz włączyć konfigurację "Użyj zaawansowanego automatycznego naliczania opłat". Dodatkowo, ponieważ sprzedawca może skonfigurować wiele typów opłat, takich jak obsługa czy instalacja, trzeba określić, która opłata jest uważana za opłatę transportową. Te rabaty są stosowane tylko do opłat transportowych. Aby określić opłatę jako transportową, przejdź do formularza **kody opłat** w menu **sieci sprzedaży** > **IT sieci sprzedaży** > **konfiguracja kanału** > **opłaty** i zaznacz pole wyboru „Opłata transportowa” dla żądanej opłaty. Teraz można przejść do formularza **rabatu sieci sprzedaży za próg wysyłki** i skonfigurować rabat.
+- Jednym z czynników istotnie motywujących klientów do kupowania przez Internet jest bezpłatna lub tania dostawa. Aby umożliwić sprzedawcom detalicznym konfigurowanie promocji na dostawy, w wersji 10.0 wprowadziliśmy nowy rodzaj promocji o nazwie „Rabat progu wysyłki”, w którym sprzedawca detaliczny może definiować progi, po osiągnięciu których odbiorcy otrzymają korzyść w postaci tańszej lub bezpłatnej dostawy. Na przykład, wydaj $35, aby otrzymać darmową wysyłkę w ciągu dwóch dni lub darmową wysyłkę w ciągu dwóch dni dla wszystkich odbiorców w programie lojalnościowym. Ta funkcja wykorzystuje nową funkcję Zaawansowane opłaty automatyczne. Zobacz [dokumentację funkcji Zaawansowane opłaty automatyczne](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Zaawansowane opłaty automatyczne trzeba włączyć dla wysyłania promocji do pracy. Można je włączyć na karcie **Zamówienia odbiorcy** na stronie **Parametry sieci sprzedaży** oraz włączyć konfigurację "Użyj zaawansowanego automatycznego naliczania opłat". Dodatkowo, ponieważ sprzedawca może skonfigurować wiele typów opłat, takich jak obsługa czy instalacja, trzeba określić, która opłata jest uważana za opłatę transportową. Te rabaty są stosowane tylko do opłat transportowych. Aby określić opłatę jako transportową, przejdź do formularza **Kody opłaty** w menu **Sprzedaż detaliczna** \> **Składniki IT w handlu detalicznym** \> **Konfiguracja kanału** \> **Opłaty** i zaznacz pole wyboru „Opłata transportowa” dla żądanych opłat. Teraz można przejść do formularza **rabatu sieci sprzedaży za próg wysyłki** i skonfigurować rabat.
+
     Podobnie jak rabat na produkty, ten rabat uwzględnia wszystkie istniejące standardowe opcje rabatu, takie jak zezwolenie sprzedawcy na ograniczenie tych rabatów za pomocą kuponów, aby tylko odbiorcy z kuponami mogli korzystać z tych rabatów. Ponadto rabaty te wykorzystują również funkcję Grup cen do określenia dostępności takich rabatów. Na przykład sprzedawca może uruchomić te promocje tylko w kanałach online i/lub w różnych kanałów dla pewnych grup odbiorców, takich jak odbiorcy w programie lojalnościowym. Gdy wiersze zamówienia z określonym trybem dostawy spełniają warunki określonego progu, rabat wysyłkowy jest stosowany i ogranicza opłatę transportową na podstawie konfiguracji rabatu. 
 
-> [!NOTE]
-> W przeciwieństwie do innych rabatów okresowych, takich jak ilościowy, prosty, mieszany i progowy rabat wysyłkowy nie tworzy wierszy rabatu, tylko edytuje zmiany opłaty transportowej bezpośrednio i dodaje nazwę rabatu do opisu opłaty.
+    > [!NOTE]
+    > W przeciwieństwie do innych rabatów okresowych, takich jak ilościowy, prosty, mieszany i progowy rabat wysyłkowy nie tworzy wierszy rabatu, tylko edytuje zmiany opłaty transportowej bezpośrednio i dodaje nazwę rabatu do opisu opłaty.

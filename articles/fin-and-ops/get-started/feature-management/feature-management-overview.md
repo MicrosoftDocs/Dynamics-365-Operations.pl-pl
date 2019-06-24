@@ -3,7 +3,7 @@ title: Zarządzanie funkcjami — omówienie
 description: W tym temacie opisano funkcję zarządzania funkcjami i sposób jego używania.
 author: mikefalkner
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,16 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: e75e42926db22d4fccda86c755b12d9d121a9c0e
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: b200156a623c67a562cc1a5952899e3a77517528
+ms.sourcegitcommit: bbc9aa0d6b94a942e1f4d5b038601509dcc87937
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538705"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1619151"
 ---
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
 Funkcje są dodawane i aktualizowane w każdym wydaniu Microsoft Dynamics 365 for Finance and Operations. Środowisko zarządzania funkcjami udostępnia obszar roboczy, w którym można wyświetlić listę funkcji, które zostały dostarczone w każdej wersji. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich.
@@ -39,64 +39,88 @@ Obszar roboczy **zarządzanie funkcjami** można otworzyć, wybierając odpowied
 Lista funkcji zawiera następujące informacje:
 
 - **Nazwa funkcji** — opis dodanej funkcji.
-- **Stan włączony** — symbol wskazuje, czy funkcja została włączona (znacznik wyboru), nie jest włączona (pusta), została zaplanowana do włączenia (zegar) lub jest obowiązkowa (blokada). Pokazane tutaj ustawienie jest używane dla wszystkich firm. Należy pamiętać, że nawet wtedy, gdy funkcja została włączona, jest nadal kontrolowana przez zabezpieczenia. W związku z tym funkcja będzie dostępna tylko dla użytkowników, którzy mają do niej dostęp, na podstawie ich roli zabezpieczeń. Będzie ona również dostępna tylko dla osób prawnych, do których użytkownik ma dostęp.
-- **Data włączenia** — data, kiedy funkcja została włączona lub zostanie włączona, jeśli data jest datą przyszłą.
+- **Stan włączony** — symbol wskazuje, czy funkcja została włączona (znacznik wyboru), nie została włączona (pusta), została zaplanowana do włączenia (zegar) lub jest obowiązkowo włączona (blokada). Pokazane tutaj ustawienie jest używane dla wszystkich firm. Należy pamiętać, że nawet wtedy, gdy funkcja została włączona, jest nadal kontrolowana przez zabezpieczenia. W związku z tym funkcja będzie dostępna tylko dla użytkowników, którzy mają do niej dostęp, na podstawie ich roli zabezpieczeń. Będzie ona również dostępna tylko w firmach, do których użytkownik ma dostęp.
+- **Data włączenia** — data, kiedy funkcja została włączona lub jest zaplanowana do włączenia.
 - **Dodano funkcję** – data, kiedy funkcja została dodana do danego środowiska. Ta data jest automatycznie wprowadzana podczas aktualizowania środowiska podczas comiesięcznych wydań.
 - **Moduł** — moduł, którego dotyczy nowa funkcja.
 
-Po wybraniu funkcji w okienku szczegółów po prawej stronie listy funkcji pojawią się dodatkowe informacje. W górnej części okienka zobaczysz nazwę funkcji, datę dodania funkcji, moduł, którego dotyczy ta funkcja, oraz łacze **Dowiedz się więcej**. Wybierz to łącze, aby wyświetlić dokumentację dla tej funkcji. Jeśli dokumentacja nie jest dostępna, nastąpi przekierowanie na stronę tymczasową. Okienko szczegółów zawiera również pole **komentarzy**, w którym można dodawać własne komentarze dotyczące tej funkcji.
+Po wybraniu funkcji w okienku szczegółów po prawej stronie listy funkcji pojawią się dodatkowe informacje. W górnej części okienka zobaczysz nazwę funkcji, datę dodania funkcji, moduł, którego dotyczy ta funkcja, oraz łacze **Dowiedz się więcej**. Wybierz to łącze, aby wyświetlić dokumentację dla tej funkcji. Jeśli dokumentacja nie jest dostępna, nastąpi przekierowanie do strony tymczasowej. Okienko szczegółów zawiera również pole **komentarzy**, w którym można dodawać własne komentarze dotyczące tej funkcji.
 
-Obszar roboczy **zarządzanie funkcjami** zawiera również kilka kart z listą funkcji. 
-- **Nowość** - pokazuje wszystkie funkcje, które zostały dodane od czasu ostatniej aktualizacji miesięcznej. Jeśli użytkownik pominął comiesięczne aktualizacje, w obszarze nowość będą wszystkie nowe funkcje od czasu ostatniej aktualizacji. Najnowsze funkcje są wyświetlane na górze listy. Całkowita liczba nowych funkcji jest również wyświetlana na kafelku u góry strony.
-- **Nie włączono** - pokazuje wszystkie funkcje, które nie zostały włączone. Najnowsze funkcje są wyświetlane na górze listy. Całkowita liczba nowych funkcji jest również wyświetlana na kafelku u góry strony.
-- **Zaplanowane** — pokazuje wszystkie funkcje, które zostały zaplanowane do włączenia w przyszłości. Funkcje, które mają najwcześniejszą zaplanowaną datę pojawią się u góry listy. Całkowita liczba nowych funkcji jest również wyświetlana na kafelku u góry strony.
-- **Wszystkie** - pokazuje wszystkie funkcje. Najnowsze funkcje są wyświetlane na górze listy.
+Obszar roboczy **Zarządzanie funkcjami** zawiera również kilka kart i na każdej z nich jest wyświetlona lista funkcji.
 
+- **Nowe** — na tej karcie są pokazane wszystkie funkcje, które zostały dodane od czasu ostatniej aktualizacji miesięcznej. Jeśli użytkownik pominął comiesięczne aktualizacje, na karcie są pokazane wszystkie nowe funkcje, które zostały dodane od czasu ostatniej aktualizacji. Najnowsze funkcje są wyświetlane na górze listy. Całkowita liczba nowych funkcji jest również wyświetlana na kafelku u góry strony.
+- **Nie włączono** — na tej karcie są pokazane wszystkie funkcje, które nie zostały włączone. Najnowsze funkcje są wyświetlane na górze listy. Całkowita liczba nowych funkcji, które nie zostały włączone, jest również podana na kafelku u góry strony.
+- **Zaplanowane** — na tej karcie są pokazane wszystkie funkcje, które zostały zaplanowane do włączenia w przyszłości. Funkcje, które mają najwcześniejszą zaplanowaną datę znajdują się u góry listy. Całkowita liczba nowych zaplanowanych funkcji jest również wyświetlana na kafelku u góry strony.
+- **Wszystkie** — na tej karcie są pokazane wszystkie funkcje. Najnowsze funkcje są wyświetlane na górze listy.
 
-## <a name="enable-a-feature"></a>Włączanie funkcji
+## <a name="turn-on-a-feature"></a>Włączanie funkcji
 
-Jeśli funkcja nie została włączona, w okienku szczegółów zostanie wyświetlony przycisk **Włącz**. Za pomocą tego przycisku można włączyć tę funkcję.
+Jeśli funkcja nie została włączona, w okienku szczegółów zostanie wyświetlony przycisk **Włącz teraz**. Za pomocą tego przycisku można włączyć funkcję.
 
-1. Wybierz funkcję, którą chcesz włączyć, a następnie w okienku szczegółów wybierz pozycję **Włącz.**
-2. Pojawi się suwak, w którym można określić datę włączenia tej funkcji. Domyślnie suwak jest ustawiony na bieżącej dacie.
-3. Wybierz **Włącz**, aby włączyć tę funkcję.
+- Wybierz funkcję, którą chcesz włączyć, a następnie w okienku szczegółów naciśnij przycisk **Włącz teraz**. Funkcja jest włączona.
 
-Niektóre funkcje nie mogą być wyłączone po ich włączeniu. Jeśli funkcja, którą próbujesz włączyć, nie może być wyłączona, pojawi się ostrzeżenie. W tym momencie możesz wybrać **Anuluj**, aby anulować operację i pozostawić tę funkcję wyłączoną. Jeśli jednak wybierzesz opcję **Włącz** i włączysz tę funkcję, nie będzie można jej później wyłączyć.
+Niektóre funkcje nie mogą zostać wyłączone po ich włączeniu. Jeśli funkcja, którą próbujesz włączyć, nie może zostać wyłączona, zostanie wyświetlone ostrzeżenie. W tym momencie możesz nacisnąć przycisk **Anuluj**, aby anulować operację i pozostawić funkcję wyłączoną. Jeśli jednak wybierzesz opcję **Włącz**, aby włączyć funkcję, nie będzie można jej później wyłączyć.
 
-Po włączeniu tej funkcji w okienku szczegółów zostanie wyświetlony komunikat poniżej łącza **Dowiedz się więcej**. Ten komunikat informuje, że funkcja została włączona lub wskazuje, kiedy funkcja zostanie włączona w przyszłości. Jeśli korzystasz z przyszłej daty, funkcja będzie wyświetlana na liście **zaplanowane.** Ta wiadomość pojawi się za każdym razem, gdy wybierzesz operację na liście funkcji. Funkcje zaplanowane w przyszłości zostaną włączone o północy przez proces wsadowy na podstawie strefy czasowej reprezentowanej przez datę systemową. 
+Po włączeniu tej funkcji w okienku szczegółów zostanie wyświetlony komunikat poniżej łącza **Dowiedz się więcej**. Ten komunikat informuje, że funkcja została włączona lub wskazuje przyszłą datę, na kiedy jest zaplanowane włączenie funkcji. Ta wiadomość pojawia się za każdym razem, gdy wybierzesz funkcję na liście funkcji.
+
+Funkcje zaplanowane do włączenia w przyszłości pojawią się na karcie **Zaplanowane**. Proces wsadowy będzie je włączać o północy danego dnia na podstawie strefy czasowej reprezentowanej przez datę systemową.
 
 ## <a name="reschedule-a-feature"></a>Zmiana harmonogramu funkcji
 
-Jeśli dla funkcji ustawiono przyszłą datę włączenia, w okienku szczegółów zostanie wyświetlony przycisk **Przeplanuj**. Można użyć tego przycisku, aby zmienić datę **włączenia**.
+Jeśli zaplanowano włączenie funkcji w przyszłości, w okienku szczegółów jest wyświetlany przycisk **Zaplanuj**. Można użyć tego przycisku, aby zmienić wartość **Data włączenia**.
 
-1. Wybierz zaplanowaną funkcję, której datę włączenia chcesz zmienić, a następnie w okienku szczegółów wybierz pozycję **Przeplanuj.**
-2. Pojawi się suwak, w którym można określić datę włączenia tej funkcji. 
+1. Wybierz zaplanowaną funkcję, której plan chcesz zmienić, a następnie w okienku szczegółów naciśnij przycisk **Planuj.**
+2. W wyświetlonym oknie dialogowym, w polu **Data włączenia** określ nową datę włączenia funkcji.
 3. Wybierz opcję **Włącz**, aby ponownie zaplanować operację lub **wyłącz**, aby anulować harmonogram.
 
-## <a name="disable-a-feature"></a>Wyłączanie funkcji
+## <a name="turn-off-a-feature"></a>Wyłączanie funkcji
 
-Jeśli funkcja została już włączona, w okienku szczegółów zostanie wyświetlony przycisk **Wyłącz**. Za pomocą tego przycisku można wyłączyć tę funkcję. Przycisk **Wyłącz** jest niedostępny, jeśli po włączeniu tej funkcji nie można jej wyłączyć.
+Jeśli funkcja została już włączona, w okienku szczegółów jest wyświetlany przycisk **Wyłącz**. Za pomocą tego przycisku można wyłączyć funkcję. Przycisk **Wyłącz** jest niedostępny, jeśli po włączeniu funkcji nie można jej wyłączyć.
 
-- Wybierz funkcję, którą chcesz wyłączyć, a następnie w okienku szczegółów wybierz pozycję **Wyłącz.**
+- Wybierz funkcję, którą chcesz wyłączyć, a następnie w okienku szczegółów naciśnij przycisk **Wyłącz.** Funkcja zostanie wyłączona, a pole **Data włączenia** zostanie opróżnione.
 
-- Funkcja jest wyłączona, a data jest wyczyszczona.
+Po wyłączeniu tej funkcji w okienku szczegółów zostanie wyświetlony komunikat poniżej łącza **Dowiedz się więcej**. Ten komunikat stwierdza, że funkcja nie została jeszcze włączona. Ta wiadomość pojawia się za każdym razem, gdy wybierzesz funkcję na liście funkcji. Funkcje, które nie są włączone, są wyświetlane na karcie **Nie włączono**.
 
-Po wyłączeniu tej funkcji w okienku szczegółów zostanie wyświetlony komunikat poniżej łącza **Dowiedz się więcej**. Ten komunikat stwierdza, że funkcja nie została jeszcze włączona i pojawi się na liście **Niewłączone**. Ta wiadomość pojawi się za każdym razem, gdy wybierzesz operację na liście funkcji.
+## <a name="features-that-must-be-turned-on"></a>Funkcje, które muszą być włączone
 
-## <a name="features-that-must-be-enabled"></a>Funkcje, które muszą być włączone
+Czasami jest dostarczana krytyczna funkcja, która musi zostać włączona automatycznie po wykonaniu aktualizacji. Te funkcje będą włączane automatycznie w dniu określonym w polu **Data włączenia**. W przypadku tych funkcji w okienku szczegółów zostanie wyświetlony komunikat poniżej łącza **Dowiedz się więcej**. Ten komunikat informuje, że funkcja została włączona lub wskazuje przyszłą datę, kiedy zostanie ona włączona. Ta wiadomość pojawia się za każdym razem, gdy wybierzesz funkcję na liście funkcji.
 
-Może zostać dostarczona krytyczna funkcja, która musi być włączona automatycznie po wykonaniu aktualizacji. Zostanie ona automatycznie włączona w dniu **włączenia.** Pod łączem **Dowiedz się więcej** w okienku szczegółów pojawi się komunikat. Ten komunikat będzie informował, że funkcja została włączona lub zostanie włączona automatycznie w **dniu włączenia**. Ta wiadomość pojawi się za każdym razem, gdy wybierzesz operację na liście funkcji.
+## <a name="turn-on-all-features-automatically"></a>Automatyczne włączanie wszystkich funkcji
+
+Domyślnie wszystkie funkcje dodawane do środowiska są wyłączone, o ile nie są obowiązkowe. Jeśli jednak chcesz, aby wszystkie nowe funkcje były automatycznie włączane, możesz użyć listy rozwijanej pod tytułem obszaru roboczego, aby zmienić to, co dzieje się przy dodawaniu nowych funkcji.
+
+- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie włączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie włączane po dodaniu ich do środowiska.
+- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie wyłączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie wyłączane po dodaniu ich do środowiska.
 
 ## <a name="assigning-roles"></a>Przypisywanie ról
 
-Obszar roboczy **zarządzanie funkcjami** mogą otwierać administratorzy systemu i użytkownicy przypisani do Menedżera funkcji lub ról podglądu funkcji utworzonych w celu obsługi środowiska zarządzania funkcją. Użytkownicy w roli Menedżera funkcji mogą włączać i wyłączać dowolne funkcje. Mogą również aktualizować sekcję komentarzy dla tej funkcji. Użytkownicy w roli podglądu funkcji mogą wyświetlać tylko obszar roboczy **zarządzanie funkcją**. Nie mogą włączać ani wyłączać funkcji.
+Obszar roboczy **Zarządzanie funkcjami** mogą otwierać administratorzy systemu i użytkownicy przypisani do roli Menedżer funkcji lub roli Podgląd funkcji. Te dwie role zostały utworzone w celu obsługi zarządzania funkcjami. Użytkownicy w roli Menedżera funkcji mogą włączać i wyłączać dowolne funkcje. Mogą również aktualizować pole **Komentarze** funkcji. Użytkownicy w roli podglądu funkcji mogą wyświetlać tylko obszar roboczy **zarządzanie funkcją**. Nie mogą włączać ani wyłączać funkcji.
 
-Rola Menedżera funkcji i roli podglądu funkcji nie zastępują istniejących zabezpieczeń przypisanych do użytkownika. Role kontrolują tylko dostęp do funkcji włączania. Nie zapewniają dostępu do samych funkcji.
+Rola Menedżera funkcji i roli podglądu funkcji nie zastępują istniejących zabezpieczeń przypisanych do użytkownika. Kontrolują one tylko, czy użytkownik może włączać i wyłączać funkcje. Nie zapewniają dostępu do samych funkcji.
 
-## <a name="using-feature-management-to-enable-isv-features-or-custom-features"></a>Korzystanie z funkcji zarządzania funkcjami w celu włączania funkcji ISV lub funkcji niestandardowych
+## <a name="features-that-use-configuration-keys"></a>Funkcje korzystające z kluczy konfiguracji
 
-Proces zarządzania funkcjami nie jest obecnie dostępny dla funkcji ISV lub funkcji niestandardowych. Dodajemy dodatkowe funkcje w celu usprawnienia zarządzania funkcjami i, gdy te ulepszenia są kompletne, będziemy poszerzać Zarządzanie funkcjami na wszystkie funkcje i dostarczyć szczegółowe instrukcje, jak zaktualizować swoją funkcję, aby korzystać z tej możliwości.
+Jeśli funkcja korzysta z klucza konfiguracji, ale klucz konfiguracji nie jest włączony, obszar roboczy **Zarządzanie funkcjami** nie pokazuje tej funkcji na liście dostępnych funkcji. Po włączeniu klucza konfiguracji należy zaktualizować listę funkcji przy użyciu opcji menu **Wyszukaj aktualizacje**. Wtedy funkcja zostanie wyświetlona na liście funkcji.
+
+Po wyłączeniu klucza konfiguracji funkcja nie zostanie usunięta z listy funkcji.
+
+## <a name="data-entities"></a>Jednostki danych
+
+Jednostka danych o nazwie **Zarządzanie funkcjami** umożliwia eksportowanie ustawień zarządzania funkcją z jednego środowiska, a następnie importowanie ich do innego środowiska. Ta jednostka aktualizuje tylko istniejące funkcje. Logika biznesowa w jednostce pomaga również zagwarantować, że po zakończeniu importu zostaną zastosowane te same reguły, które są używane w obszarze roboczym **Zarządzanie funkcjami**. Na przykład nie można zastąpić obowiązkowych ustawień funkcji, usuwając datę podczas importowania.
+
+Poniższe przykłady opisują, co się dzieje w przypadku importowania danych przy użyciu jednostki **Zarządzanie funkcjami**.
+
+- Zmiana wartości pola **Włączone** na **Tak** powoduje włączenie funkcji oraz wstawienie bieżącej daty w polu **Data włączenia**.
+- Zmiana wartości pola **Włączone** na **Nie** lub pozostawienie pola **Data włączenia** pustego powoduje wyłączenie funkcji oraz opróżnienie pola **Data włączenia**. Nie można wyłączyć obowiązkowej funkcji lub funkcji, która nie może zostać wyłączona po jej włączeniu.
+- Zmana wartości pola **Data włączenia** na datę przyszłą powoduje zaplanowanie funkcji na tę datę.
+- Zmiana wartości pola **Włączone** na **Tak** i zmiana wartości pola **Data włączenia** na datę przyszłą powoduje zaplanowanie funkcji na tę datę. 
+- Zmiana wartości pola **Włączone** na **Nie** równocześnie ze zmianą wartości pola **Data włączenia** na datę przyszłą powoduje zaplanowanie funkcji na tę datę.
+- Jeśli funkcja jest włączona i zostanie dodane pole **Data włączenia** z datą przyszłą, funkcja pozostanie włączona. Aby zmienić zaplanowaną datę funkcji, należy zmienić wartość w polu **Włączone** na **Nie**.
 
 ## <a name="feature-management-and-flighting"></a>Zarządzanie funkcją i dystrybucja testowa
 
-Zarządzanie funkcjami umożliwia kontrolowanie funkcji, które są dostarczane w każdej wersji. Dystrybucja testowa umożliwia zespołom firmy Microsoft udostępnianie funkcji ograniczonej liczbie klientów, dzięki czemu funkcje mogą być testowane i weryfikowane bez wpływu na wszystkich klientów. Zarządzanie funkcjami nie kontroluje dystrybucji testowej żadnych funkcji.
+Zarządzanie funkcjami umożliwia kontrolowanie funkcji, które są dostarczane w poszczególnych wersjach. Dystrybucja testowa umożliwia Microsoft Teams udostępnianie funkcji ograniczonej liczbie klientów, dzięki czemu funkcje mogą być testowane i weryfikowane bez wpływu na wszystkich klientów. Zarządzanie funkcjami nie kontroluje dystrybucji testowej żadnych funkcji.
+
+## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Korzystanie z funkcji Zarządzanie funkcjami w celu włączania funkcji ISV lub funkcji niestandardowych
+
+Zarządzanie funkcjami nie jest obecnie dostępne dla funkcji pochodzących od niezależnych dostawców oprogramowania (ISV) i funkcji niestandardowych. Jednak firma Microsoft rozszerza możliwości Zarządzania funkcjami. Po zakończeniu tych ulepszeń firma Microsoft będzie udostępniać Zarządzanie funkcjami dla wszystkich funkcje i przekaże instrukcje aktualizowania posiadanych funkcji, aby były obsługiwane przez Zarządzanie funkcjami.

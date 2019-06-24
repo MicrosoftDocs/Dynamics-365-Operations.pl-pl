@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a645ee6f7e6085abc6e872d490b078f512c15aa1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b71fde2d1b56b237dec2a08d3bd27e8ba6c35fef
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552376"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595553"
 ---
 # <a name="demand-forecasting-overview"></a>Podstawowe informacje o prognozowaniu popytu
 
@@ -52,7 +52,7 @@ Trzy najważniejsze motywy w prognozowaniu popytu:
     -   Można pobrać eksperymenty prognozowania popytu programu Finance and Operations, zmienić je odpowiednio do wymagań biznesowych, publikować jako usługi sieci web na Azure i używać ich do generowania prognoz popytu. Eksperymenty są dostępne do pobrania w ramach subskrypcji programu Finance and Operations do planowania produkcji przez użytkowników na poziomie organizacji.
     -   Można pobrać dowolne z obecnie dostępnych eksperymentów przewidywania popytu z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Eksperymenty prognozowania popytu programu Finance and Operations są automatycznie integrowane z programem, natomiast klienci i partnerzy muszą ręcznie integrować eksperymenty pobierane z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Z tego względu eksperymenty z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/) nie są tak samo proste w użytkowaniu, jak eksperymenty w programie Finance and Operations. Konieczne jest zmodyfikowanie kodu eksperymentów, aby mogły korzystać z interfejsu API programu Finance and Operations.
     -   Można utworzyć własne eksperymenty w programie Microsoft Azure Machine Learning Studio, opublikować je jako usługi na Azure i używać do generowania prognoz popytu.
-    -   Jeśli nie jest wymagana wysoka wydajność lub nie potrzeba przetwarzać bardzo dużych ilości danych, można korzystać z bezpłatnej wersji oprogramowania do uczenia maszynowego. Zalecamy rozpoczęcie pracy od wersji bezpłatnej, zwłaszcza w fazie testowania i implementacji. Jeśli konieczna jest większa wydajność i dodatkowa pamięć, można korzystać z wersji standardowej oprogramowania do uczenia maszynowego. Ta wersja wymaga subskrypcji usługi Azure i wiąże się z dodatkowymi kosztami. Aby uzyskać szczegółowe informacje o cenach oprogramowania do uczenia maszynowego, zobacz <http://aka.ms/machine-learning-price-info>.
+    -   Jeśli nie jest wymagana wysoka wydajność lub nie potrzeba przetwarzać bardzo dużych ilości danych, można korzystać z bezpłatnej wersji oprogramowania do uczenia maszynowego. Zalecamy rozpoczęcie pracy od wersji bezpłatnej, zwłaszcza w fazie testowania i implementacji. Jeśli konieczna jest większa wydajność i dodatkowa pamięć, można korzystać z wersji standardowej oprogramowania do uczenia maszynowego. Ta wersja wymaga subskrypcji usługi Azure i wiąże się z dodatkowymi kosztami. Aby uzyskać szczegółowe informacje o cenach oprogramowania do uczenia maszynowego, zobacz [Ceny studio uczenia maszynowego](https://aka.ms/machine-learning-price-info).
 -   **Zmniejszenie prognozy w dowolnym punkcie oddzielania** — Prognoza popytu w programie Finance and Operations dla tej funkcji, która pozwala prognozować zarówno zależny, jak i niezależny popyt w dowolnym punkcie oddzielania.
 
 ## <a name="basic-flow-in-demand-forecasting"></a>Podstawowy przepływ w prognozowaniu popytu

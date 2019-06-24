@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 85d2370353520ee588dfe2aedf9998d707f0eda6
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "1541275"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592667"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Projektant formuł w module Raportowanie elektroniczne (ER)
 
@@ -443,7 +443,7 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <tr>
 <td>INDEKS (lista, indeks)</td>
 <td>Ta funkcja zwraca rekord wybrany przez określony indeks liczbowy z listy. Jeśli indeks jest poza zakresem rekordów na liście, zostanie zwrócony wyjątek.</td>
-<td>Jeśli wprowadzisz źródło danych <strong>DS</strong> dla typu <strong>Pole obliczeniowe</strong>, a w polu zostanie uwzględnione wyrażenie <strong>SPLIT ("A|B|C", “|”), 2)</strong>, wyrażenie <strong>DS.Value</strong> zwraca wartość tekstową „B”. Wyrażenie <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> także zwróci wartość tekstową „B”.</td>
+<td>Jeśli wprowadzisz źródło danych <strong>DS</strong> dla typu <strong>Pole obliczeniowe</strong> i zawiera ono wyrażenie <strong>SPLIT ("A|B|C", “|”), 2</strong>, wyrażenie <strong>DS.Value</strong> zwraca wartość tekstową „B”. Wyrażenie <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> także zwróci wartość tekstową „B”.</td>
 </tr>
 </tbody>
 </table>
@@ -642,7 +642,7 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <blockquote>[!NOTE] W formułach raportowania elektronicznego dla etykiet jest stosowana następująca składnia:
 <ul>
 <li><strong>Etykiety zasobów programu Finance and Operations:</strong> <strong>@&quot;X&quot;</strong>, gdzie <strong>X</strong> oznacza identyfikator etykiety w drzewie obiektów aplikacji (AOT)</li>
-<li><strong>Etykiety, które znajdują się w konfiguracjach ER::</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, gdzie <strong>X</strong> oznacza identyfikator etykiety w konfiguracji raportowania elektronicznego</li>
+<li><strong>Etykiety, które znajdują się w konfiguracjach ER:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, gdzie <strong>X</strong> oznacza identyfikator etykiety w konfiguracji raportowania elektronicznego</li>
 </ul>
 </blockquote>
 </td>

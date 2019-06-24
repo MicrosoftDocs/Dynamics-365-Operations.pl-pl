@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 14f2c6eb3baf0de65de3b72e10b42b03a8c6b21a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6e295456838ca0195a472518b5979dfdc7819f74
+ms.sourcegitcommit: 19859d8566a8c7840066b2c10c6b08b67f1b83f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536717"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "1617980"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/pivate-preview-banner.md)]
+[!include [banner](../includes/pivate-preview-banner.md)]
 
 
 ## <a name="feature-exposure"></a>Funkcja ekspozycji
@@ -138,10 +138,6 @@ Nie wszystkie przepływy prac obsługują przetwarzanie ilości efektywnej produ
 - Ręczne tworzenie zleceń kwarantanny nie jest obsługiwana dla produktów w ilości efektywnej.
 - Ręczne przesuwanie zapasów powiązanych z pracę nie jest obsługiwane dla produktów w ilości efektywnej.
 - Konsolidacja numerów identyfikacyjnych nie jest obsługiwane dla produktów w ilości efektywnej.
-- Zmiany stanu magazynowego zapasów w ramach codziennych zadań nie są obsługiwane dla produktów w ilości efektywnej.
-- Zmiany stanu zapasów zdefiniowanych za pomocą kwerendy nie są obsługiwane dla produktów w ilości efektywnej. (Zmiany stanu zapasów zlecenia również nie są obsługiwane).
-- Dla produktów w ilości efektywnej nie można zmienić stanu zapasów ze strony **Dostępne zapasy według lokalizacji**.
-- Dla produktów w ilości efektywnej nie można zmienić stanu zapasów w ramach pracy przenoszenia w aplikacji magazynu.
 - Ładowanie numeru identyfikacyjnego do zainicjowania zapasów w magazynie nie jest obsługiwane dla produktów w ilości efektywnej.
 - Procesy równoważenia partii nie są obsługiwane dla produktów w ilości efektywnej.
 - Obsługa ujemnej inwentaryzacji nie jest obsługiwane dla produktów w ilości efektywnej.
@@ -151,7 +147,6 @@ Nie wszystkie przepływy prac obsługują przetwarzanie ilości efektywnej produ
 
 - Funkcja pobierania dla grupy nie jest obsługiwana dla produktów w ilości efektywnej.
 - Przetwarzanie odbiorów i pakowania w magazynie nie jest obsługiwane dla produktów w ilości efektywnej.
-- Dla produktów w ilości efektywnej nie można ukończyć pracy za strony **Praca**.
 - Dla produktów w ilości efektywnej praca zdefiniowana w szablonie pracy może być uruchamiana automatycznie.
 - Funkcja cofania pracy nie jest obsługiwana dla produktów w ilości efektywnej.
 - Dla produktów w ilości efektywnej ręczne przetwarzanie w punkcie odbierania, gdzie praca jest tworzona po zamknięciu kontenerów, nie jest obsługiwane.
@@ -163,7 +158,7 @@ Nie wszystkie przepływy prac obsługują przetwarzanie ilości efektywnej produ
 - Funkcja Kanban nie jest obsługiwana dla produktów w ilości efektywnej.
 - Dla produktów w ilości efektywnej numery seryjne nie mogą być rejestrowane przed skonsumowaniem.
 - Funkcja cofania numerów identyfikacyjnych nie jest obsługiwana dla produktów w ilości efektywnej.
-- Dla produktów w ilości efektywnej zgłaszanie jako wyrobów gotowych może być rejestrowane wg numeru seryjnego.
+- Dla produktów w ilości efektywnej zgłaszanie jako wyrobów gotowych nie może być rejestrowane wg numeru seryjnego.
 
 ### <a name="transportation-management-processing"></a>Przetwarzanie zarządzania transportem
 

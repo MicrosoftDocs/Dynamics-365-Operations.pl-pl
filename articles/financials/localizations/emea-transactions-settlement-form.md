@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 39fb7ca05c9abfcb7ae3668e8f995fa8adcbde1a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 0ba1731e4b0dcdeb4591d49dacf517f36e472eef
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538232"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559646"
 ---
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej
 

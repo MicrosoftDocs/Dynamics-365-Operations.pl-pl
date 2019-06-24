@@ -6,7 +6,7 @@
       href: get-started/whats-new.md
     - name: Funkcje w wersji zapoznawczej w rozwiązaniu Dynamics 365 for Retail 10.0.3
       href: get-started/whats-new-10-0-3.md
-    - name: Funkcje w wersji zapoznawczej w rozwiązaniu Dynamics 365 for Retail 10.0.2
+    - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Retail 10.0.2
       href: get-started/whats-new-10-0-2.md
     - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Retail 10.0.1
       href: get-started/whats-new-10-0-1.md
@@ -56,7 +56,11 @@
     - name: Testowanie i problemy z wydajnością
       href: dev-itpro/retail-implementation-testing-performance.md
 - name: Zarządzanie zamówieniami rozdzielonymi (DOM)
-  href: dom.md
+  items:
+    - name: Zarządzanie zamówieniami rozdzielonymi — omówienie
+      href: dom.md
+    - name: Konfiguracja kosztów
+      href: cost.md
 - name: Płatności
   items:
     - name: Metody płatności
@@ -65,13 +69,15 @@
       href: ../financials/accounts-receivable/credit-card-authorizations.md
     - name: Konfigurowanie nominałów gotówki dla punktu sprzedaży
       href: cash-denominations.md
-    - name: Łącznik płatności Dynamics 365 dla Adyen
+    - name: Łącznik płatności usługi Dynamics 365 dla Adyen
       href: dev-itpro/adyen-connector.md
+    - name: Zapisywanie instrumentów płatniczych online za pomocą łącznika Adyen
+      href: dev-itpro/adyen-connector-listPI.md
     - name: Konfigurowanie scenariuszy płatności za faktury
       href: payinvoice.md
     - name: Płatności — często zadawane pytania
       href: dev-itpro/payments-retail.md
-    - name: Zapobieganie podwójnym płatnościom
+    - name: Zapobieganie zduplikowanym płatnościom
       href: duplicate-payment-protection.md
 - name: Zamówienia zakupu
   items:
@@ -95,6 +101,8 @@
       href: tasks/create-calculate-post-statement-retail-store.md
     - name: Ulepszenia funkcji księgowania zestawień
       href: statement-posting-EOD.md
+    - name: Ulepszona obsługa towarów śledzonych w partii
+      href: batch.md
     - name: Konfigurowanie parametrów aplikacji Retail wpływających na zestawienia sieci sprzedaży
       href: tasks/parameter-configurations-retail-statements.md
     - name: Konfigurowanie ustawień metody płatności wpływających na zestawienia sieci sprzedaży
@@ -115,6 +123,8 @@
       href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
     - name: Opcje Cała kwota i Obliczanie interwału dla kodów podatku
       href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Omówienie płatności wielokanałowych
+  href: omni-channel-payments.md
 - name: Wielokanałowe zaawansowane opłaty automatyczne
   items:
     - name: Konfigurowanie i używanie zaawansowanych opłat automatycznych
@@ -159,12 +169,14 @@
       href: MPOS-or-CPOS.md
     - name: Operacje online i offline w punkcie sprzedaży
       href: pos-operations.md
-    - name: Aktywacja urządzenia dostosowanego rozwiązania Retail Modern POS
+    - name: Aktywacja urządzenia dostosowanej aplikacji Retail MPOS
       href: dev-itpro/retail-POS-activation-changes.md
     - name: Układy ekranu danych demonstracyjnych w aplikacjach MPOS i Cloud POS
       href: demo-data.md
     - name: Wyszukiwanie produktów i odbiorców w punkcie sprzedaży
       href: POS-search-improvements.md
+    - name: Ulepszenia w zakresie zarządzania gotówką
+      href: cash-mgmt.md
     - name: Wyszukiwanie zapasów w punkcie sprzedaży
       href: product-variants-POS.md
     - name: Wstrzymywanie i wznawianie transakcji w punkcie sprzedaży
@@ -588,13 +600,13 @@
           href: dev-itpro/retail-server-customer-consumer-api.md
         - name: Rozszerzanie domyślnego kontrolera metadanych usługi Retail Server
           href: dev-itpro/extend-metadata.md
-        - name: Wywoływanie usługi CRT w trybie offline
+        - name: Wywoływanie usługi środowiska CRT w trybie offline
           href: dev-itpro/call-crt-service-offline.md
     - name: Rozszerzalność środowiska uruchomieniowego Commerce Runtime (CRT)
       items:
         - name: Architektura i konfiguracja środowiska CRT
           href: dev-itpro/commerce-runtime-overview.md
-        - name: Usługi CRT
+        - name: Usługi środowiska CRT
           href: dev-itpro/crt-services.md
         - name: Rozszerzalność środowiska CRT i usługi Retail Server
           href: dev-itpro/commerce-runtime-extensibility.md

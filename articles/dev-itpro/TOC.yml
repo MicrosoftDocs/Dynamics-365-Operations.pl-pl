@@ -227,8 +227,9 @@
             - name: Klasy — X
               href: dev-ref/x-classes.md
     - name: Możliwości rozszerzania
-      href: extensibility/extensibility-home-page.md
       items:
+        - name: Możliwości rozszerzania — strona główna
+          href: extensibility/extensibility-home-page.md
         - name: Wprowadzenie i rozpoczęcie pracy
           items:
             - name: Plan rozszerzania aplikacji
@@ -239,42 +240,44 @@
               href: extensibility/app-sealing-faq.md
             - name: Migracja z nakładania warstw do rozszerzeń
               href: extensibility/migrate-overlayer-extension.md
-            - name: Dostosowywanie elementów modelu za pomocą rozszerzeń (samouczek)
+            - name: Dostosowywanie elementów modelu za pomocą rozszerzenia (samouczek)
               href: extensibility/customize-model-elements-extensions.md
             - name: Dostosowywanie za pomocą rozszerzeń i nakładania warstw
               href: extensibility/customization-overlayering-extensions.md
         - name: Co nowego
           items:
-            - name: Zmiany w zakresie możliwości rozszerzania — lipiec 2017
-              href: extensibility/changes-july-2017.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 7.3
-              href: extensibility/extensibility-changes-73.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0
-              href: extensibility/changes-80.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0.1
-              href: extensibility/extensibility-changes-801.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0.2
-              href: extensibility/extensibility-changes-802.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0.3
-              href: extensibility/extensibility-changes-803.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0.4
-              href: extensibility/extensibility-changes-804.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1
-              href: extensibility/extensibility-changes-81.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1.1
-              href: extensibility/extensibility-changes-811.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1.2
-              href: extensibility/extensibility-changes-812.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1.3
-              href: extensibility/extensibility-changes-813.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 10.0
-              href: extensibility/extensibility-changes-10.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 10.0.1
-              href: extensibility/extensibility-changes-10-1.md
-            - name: Zmiany w zakresie możliwości rozszerzania — wersja 10.0.2
-              href: extensibility/extensibility-changes-10-2.md
+            - name: Nowości i zmiany w zakresie możliwości rozszerzania
+              href: extensibility/extensibility-new.md
             - name: Zmiany w zakresie możliwości rozszerzania — wersja 10.0.3
               href: extensibility/extensibility-changes-10-3.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 10.0.2
+              href: extensibility/extensibility-changes-10-2.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 10.0.1
+              href: extensibility/extensibility-changes-10-1.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 10.0
+              href: extensibility/extensibility-changes-10.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1.3
+              href: extensibility/extensibility-changes-813.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1.2
+              href: extensibility/extensibility-changes-812.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1.1
+              href: extensibility/extensibility-changes-811.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1
+              href: extensibility/extensibility-changes-81.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0.4
+              href: extensibility/extensibility-changes-804.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0.3
+              href: extensibility/extensibility-changes-803.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0.2
+              href: extensibility/extensibility-changes-802.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0.1
+              href: extensibility/extensibility-changes-801.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0
+              href: extensibility/changes-80.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 7.3
+              href: extensibility/extensibility-changes-73.md
+            - name: Zmiany w zakresie możliwości rozszerzania — lipiec 2017
+              href: extensibility/changes-july-2017.md
         - name: Informacje podstawowe
           items:
             - name: Narzucane dostosowania
@@ -361,9 +364,15 @@
       items:
         - name: Śledzenie danych za pomocą programu Trace Parser
           href: perf-test/trace-trace-tutorial.md
-        - name: Zestaw Performance SDK i testowanie dla wielu użytkowników za pomocą usługi Visual Studio Online
-          href: perf-test/perfsdk-tutorial.md
-        - name: Zestaw Performance SDK i testowanie dla wielu użytkowników w środowiskach lokalnych
+        - name: Testowanie przez jednego użytkownika przy użyciu Rejestratora zadań i zestawu Performance SDK
+          href: perf-test/single-user-test-perf-sdk.md
+        - name: Testowanie przez wielu użytkowników przy użyciu zestawu Performance SDK i lokalnego kontrolera testów
+          href: perf-test/multi-user-testing-local-test-controller.md
+        - name: Testowanie przez wielu użytkowników przy użyciu zestawu Performance SDK i usługi Azure DevOps
+          href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+        - name: Przewodnik rozwiązywania problemów związanych z testowaniem przez jednego lub wielu użytkowników przy użyciu zestawu Performance SDK
+          href: perf-test/troubleshoot-perf-sdk-user-testing.md
+        - name: Zestaw Performance SDK i testowanie przez wielu użytkowników w środowiskach lokalnych
           href: perf-test/perfsdk-tutorial-lbd.md
         - name: Diagnozowanie problemów i analizowanie wydajności za pomocą programu Trace Parser
           href: perf-test/trace-parser.md
@@ -922,6 +931,8 @@
           href: financial/create-exchange-rate-providers.md
         - name: Tworzenie bankowych kursów wymiany w rozwiązaniu Finance and Operations w wersji 8.0
           href: financial/create-exchange-rate-8.md
+    - name: 'Rozliczanie transakcji przy użyciu metody CustTrans::settleTransaction'
+      href: financial/settletransact-obsolete.md
 - name: Opracowywanie łańcucha dostaw
   items:
     - name: Podręcznik programowania kontrolki wykresu Gantta

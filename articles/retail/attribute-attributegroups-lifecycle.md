@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552724"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606902"
 ---
 # <a name="attributes-and-attribute-groups"></a>Atrybuty i grupy atrybutów
 
@@ -176,8 +176,8 @@ Wykonaj następujące kroki, aby przypisać grupy atrybutów do kategorii w hier
 > [!NOTE]
 > Tej procedury można również użyć w celu przypisania grup atrybutów do kategorii w hierarchiach Hierarchia kategorii nawigacji w kanale i Hierarchia uzupełniających kategorii produktów. W kroku 2 użyj następujących ścieżek nawigacji:
 >
-> - **Handel detaliczny** &gt; **Zarządzanie kategoriami i produktami** &gt; **Kategorie nawigacji kanału**
-> - **Handel detaliczny** &gt; **Zarządzanie kategoriami i produktami** &gt; **Uzupełniające kategorie produktów**
+> - Sprzedaż detaliczna &gt; Zarządzanie kategoriami i produktami &gt; Kategorie nawigacji kanału
+> - Sprzedaż detaliczna &gt; Zarządzanie kategoriami i produktami &gt; Uzupełniające kategorie produktów
 
 ### <a name="assign-attribute-groups-to-retail-stores"></a>Przypisywanie grup atrybutów do kategorii sklepów sieci sprzedaży
 

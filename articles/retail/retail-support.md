@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567983"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577851"
 ---
 # <a name="get-support-for-dynamics-365-for-retail"></a>Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 for Retail
 
@@ -61,7 +61,7 @@ Aby uzyskać pomoc techniczną dotyczącą aplikacji Retail, skorzystaj z zasob�
 <li>Na karcie <strong>Aktywny problem</strong> zaznacz swój problem, a następnie kliknij opcję <strong>Prześlij do Microsoft</strong>.</li>
 <li>Na karcie <strong>Przesłano do firmy Microsoft</strong> kliknij przycisk <strong>Prześlij nowe zdarzenie</strong>, aby zgłosić problem.</li>
 </ul>
-<blockquote>[!NOTE] Klienci partnerzy uczestniczący w programie Microsoft Premier mogą przy użyciu powyższych kroków przesyłać także zgłoszenia o pomoc techniczną typu Premier.</blockquote>
+<p><strong>Uwaga:</strong> klienci i partnerzy uczestniczący w programie Microsoft Premier mogą przy użyciu powyższych kroków przesyłać także zgłoszenia o pomoc techniczną typu Premier.</p>
 </td>
 </tr>
 <tr>
@@ -84,4 +84,4 @@ W razie pytań technicznych związanych z logowaniem i uzyskiwaniem dostępu do 
 </tbody>
 </table>
 
-Aby uzyskać więcej informacji na temat ofert pomocy technicznej dla systemu Microsoft Dynamics, zobacz [Pomoc techniczna online do systemu Microsoft Dynamics](https://dynamics.microsoft.com/en-us/support/).
+Aby uzyskać więcej informacji na temat ofert pomocy technicznej dla systemu Microsoft Dynamics, zobacz [Pomoc techniczna online do systemu Microsoft Dynamics](https://dynamics.microsoft.com/support/).

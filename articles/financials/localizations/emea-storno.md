@@ -16,12 +16,12 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-semaz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f42e7819eba74608f33ea8ec5f7b7e978953b460
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9352b0a80d8c5fe013e951bd4380b87834c0030
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538235"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571123"
 ---
 # <a name="storno-accounting"></a>Stornowanie
 

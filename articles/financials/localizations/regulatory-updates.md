@@ -3,7 +3,7 @@ title: Aktualizacje wymagane przepisami prawa
 description: Ten temat zawiera listę planowanych i udostępnionych aktualizacji wymaganych przepisami prawa dla programu Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0bd72bb5bebed84c092142b2b18f8fbbc3d4f711
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
+ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530714"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "1593350"
 ---
 # <a name="regulatory-updates"></a>Aktualizacje wymagane przepisami prawa
 
@@ -41,7 +41,8 @@ W przypadku późnego ogłoszenia zmian, późnej dostępności szczegółów wy
 
 Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych przepisami prawa, zapoznaj się z poniższą tabelą. 
 
-|Planowana data wydania|Wersja wydania|Kraj|Aktualizacje wymagane przepisami prawa|
+|Planowana data wydania|Wersja wydania
+  |Kraj|Aktualizacje wymagane przepisami prawa|
 |--------------------|---------------|-------|-------|
 |      2019 marca          |   10.0.0      | Austria      |   Zmiany w Kammerumlage 2019 (cło od zakupu)    |
 |      2019 marca          |   10.0.0      |   Brazylia    |     Udział w SPED EFD — układ 004 i 005  |
@@ -52,12 +53,23 @@ Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych
 |      2019 kwietnia          |   10.0.1      |   Niemcy     |Faktury elektroniczne dla odbiorców są eksportowane w formacie xRechnung 1.1         |
 |      2019 kwietnia          |   10.0.1      |    Zjednoczone Królestwo     |[Zmiany w przesyłaniu deklaracji VAT (Zamiana podatku na format cyfrowy)](emea-gbr-mtd-vat-integration.md)    |    
 |      2019 kwietnia          |   10.0.1      |    Brazylia     |NF - nowe NT 2018.005         |
-|      2019 kwietnia          |   10.0.1      |    Rosja     |Format deklaracji VAT zmienia się od 2019 r.         |
-|      2019 kwietnia          |   10.0.1      |    Rosja     |Format deklaracji VAT zmienia się od 2019 r. (formaty ksiąg zakupów i sprzedaży) 
+|      2019 kwietnia          |   10.0.1      |    Rosja     |[Format deklaracji VAT zmienia się od 2019 r.](rus-VAT-declaration.md) |
+|      2019 kwietnia          |   10.0.1      |    Rosja     |Format deklaracji VAT zmienia się od 2019 r. (formaty ksiąg zakupów i sprzedaży) |
+|      2019 kwietnia          |   10.0.1      |    Rosja     |Format deklaracji podatku gruntowego zmienia się od 2018 r. |
+|      2019 kwietnia          |   10.0.1      |    Rosja     |[Format deklaracji podatku od nieruchomości zmienia się od 2019 r.](rus-assessed-tax-declaration.md)|
+|      2019 kwietnia          |   10.0.1      |    Rosja     |Format deklaracji podatku transportowego zmienia się od 2019 r.  |
+|      2019 kwietnia            |   10.0.1      | Węgry      |  Węgry: fakturowanie w trybie online w wersji 1.1 2019 w programie Microsoft Dynamics 365 for Finance and Operations  |
 |      2019 maja            |   10.0.2      | Brazylia      |   Układ SPED ECD 7   |
+|      Oczekujące            |   10.0.3      | Brazylia      |   NF-e nowe NT 2018.005 — wersja 1.20   |
+|      Oczekujące            |   10.0.3      | Brazylia      |   Układ SPED ECD 7   |
+|      Oczekujące            |   10.0.3      | Brazylia      |   SPED ECF — układ 5 na 2019 r.   |
+|      Oczekujące            |   10.0.3      | Litwa    |   Raport i.SAF pozwala użytkownikowi zdefiniować systemowe kody podatku związane z prawnymi kodami podatku.    |
+|      Oczekujące            |   10.0.3      | Polska     |   JPK faktur (JPK_FA) wersja 2 od 1 lipca 2019 r.  |
+|      Oczekujące            |   10.0.3      | Brazylia   |   Korekty dokumentu fiskalnego ICMS obsługujące tabelę 5.2   |
+|      Oczekujące            |   10.0.3      | Brazylia    |   NF-e dekret 54.308/18 (RS)   |
 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-- Wszystkie planowane i udostępnione aktualizacje wymagane przepisami prawa znajdziesz w [wyszukiwarce problemów Lifecycle Service](https://lcs.dynamics.com/Logon/Index) (wymagane logowanie).
+- Wszystkie planowane i udostępnione aktualizacje wymagane przepisami prawa znajdziesz w [wyszukiwarce problemów Lifecycle Service](https://lcs.dynamics.com/Logon/Index) (wymagane zalogowanie).
 - Aby uzyskać listę lokalizacji obsługiwanych dla programu Dynamics 365 for Finance and Operations, zobacz [Przewodnik dostępności w różnych krajach](https://aka.ms/dynamics_365_international_availability_deck).
 

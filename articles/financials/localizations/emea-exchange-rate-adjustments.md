@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 83f1b5686088292a4f23da2b479e963a8ed086fa
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: eece22113824fd520568dc46bbd384bda23c3c8d
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1513094"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547189"
 ---
 # <a name="exchange-rate-adjustments"></a>Korekty kursów wymiany
 

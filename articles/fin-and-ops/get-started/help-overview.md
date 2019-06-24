@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
-ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
+ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1538963"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595646"
 ---
 # <a name="finance-and-operations-help-system"></a>System Pomocy rozwiązania Finance and Operations
 
@@ -192,7 +192,7 @@ W poniższej tabeli wymieniono nasze witryny internetowe. Witryny z gwiazdką (\
 | [Docs.microsoft.com](/dynamics365/)                                                            | Hosty lub łącza do dokumentacji wszystkich produktów dla systemu Dynamics 365. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Witryna bezpłatnych szkoleń elektronicznych firmy Microsoft. |
 | [Usługa Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Zawiera obszar współpracy oparty na chmurze, w którym klienci i ich partnerzy mogą całościowo zarządzać projektami w programie Dynamics 365 for Finance and Operations — od przedsprzedaży po wdrożenie i bieżącą eksploatację. Ta witryna jest przydatna we wszystkich fazach implementacji. |
-| [Blog pomocy technicznej](http://aka.ms/AXSupportBlog)                                                    | Zawiera porady i wskazówki publikowane przez zespół pomocy technicznej programu Dynamics 365 for Finance and Operations. |
+| [Blog pomocy technicznej](https://aka.ms/AXSupportBlog)                                                    | Zawiera porady i wskazówki publikowane przez zespół pomocy technicznej programu Dynamics 365 for Finance and Operations. |
 | [Docs.microsoft.com/poprzednie wersje](https://docs.microsoft.com/previous-versions/dynamics/) | Zawiera treści w poprzednich wydań. |
 | [Społeczność użytkowników produktów Dynamics](https://community.dynamics.com/)                                          | Obsługuje blogi, fora i wideo. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Zawiera ocenę i informacje o sprzedaży. |

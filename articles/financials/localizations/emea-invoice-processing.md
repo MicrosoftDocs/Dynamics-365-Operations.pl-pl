@@ -16,12 +16,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7b8279531d932a1c3cac75d2f72766475465345a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 7486282d4fad1f9557d19f33b067242debc264f2
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538247"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566767"
 ---
 # <a name="invoice-processing"></a>Przetwarzanie faktur
 

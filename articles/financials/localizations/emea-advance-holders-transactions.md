@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 36d8915ef9707185bf065484ed78553aa2a18852
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f71df6fff803855cf08ca0672604ae97efe3f40e
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538254"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564452"
 ---
 # <a name="advance-holder-transactions"></a>Transakcje posiadacza zaliczki
 

@@ -17,12 +17,12 @@ ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: dc228e729397f9cab3ec14b89179a30a59b7f67b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6f7d93c95aa85acdf2c1a3986b1141a3326882e1
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1513083"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549044"
 ---
 # <a name="fixed-assets-depreciation-for-poland"></a>Amortyzacja środków trwałych dla Polski
 

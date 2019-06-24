@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bb08833cca843c370e2c845bce56d6f5a8b5f2ed
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502737"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595346"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Definicje kolumn w raportach finansowych
 
@@ -120,7 +120,7 @@ W poniższej tabeli opisano kody ograniczeń dotyczących kolumn.
 | ADJ                     | Ograniczenie kwot w kolumnie do kwot korekty okresu, jeśli te kwoty są dostępne. |
 | XAD                     | Ograniczenie kwot w kolumnie, tak aby kwoty korekty okresu były wykluczone. |
 | PT                      | Ograniczenie kwot w kolumnie, tak aby tylko zaksięgowane transakcje były uwzględniane, jeśli transakcje te są dostępne. |
-| UPT                     | Ograniczenie kwot w kolumnie, tak aby tylko niezaksięgowane transakcje były uwzględniane, jeśli transakcje te są dostępne.<blockquote>[!NOTE] Nie wszyscy dostawcy danych obsługują niezaksięgowane transakcje. Aby uzyskać więcej informacji, zobacz <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>przewodnik integracji danych</a> dla systemu Microsoft Dynamics ERP.</blockquote> |
+| UPT                     | Ograniczenie kwot w kolumnie, tak aby tylko niezaksięgowane transakcje były uwzględniane, jeśli transakcje te są dostępne.<p><strong>Uwaga:</strong> nie wszyscy dostawcy danych obsługują niezaksięgowane transakcje. Aby uzyskać więcej informacji, zobacz <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>przewodnik integracji danych</a> dla systemu Microsoft Dynamics ERP.</p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Ograniczanie kolumny do jednostki raportowania
 
@@ -310,7 +310,7 @@ Komórka **Sterowanie wydrukiem** może zawierać kody zmieniające widok lub us
 | Kod sterowania wydrukiem | Przeliczanie walut                                     | Opis |
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Niedrukowane                                     | Pozwala wykluczyć kwoty w tej kolumnie z drukowanego raportu oraz z obliczeń. Aby uwzględnić kolumnie niedrukowaną, należy odwołać się do niej bezpośrednio w formule obliczania. Na przykład kolumna niedrukowana C jest uwzględniona w następującym obliczeniu: **B+C+D**. Nie jest ona jednak uwzględniona w następującym obliczeniu: **B:D**. |
-| XCR                | Zmienianie znaku, jeśli zwykłe saldo wiersza jest po stronie kredytowej | Utwórz budżet lub raport porównawczy, jeśli jakiekolwiek niekorzystne odchylenia (takie jak niedobór przychodów lub przekroczenie wydatków) ma zawsze wartość ujemną. Zastosuj ten kod do kolumny **CALC**, aby odwrócić znak kwoty w kolumnie, jeśli zwykłe saldo danego wiersza jest po stronie kredytowej (na co wskazuje **C** w kolumnie **Zwykłe saldo** w definicji wiersza).<blockquote>[!NOTE] Dla wierszy <strong>TOT</strong> i </strong>CAL</strong>, które zwykle uwzględniają saldo kredytu, należy pamiętać o wprowadzeniu litery <strong>C</strong> w kolumnie <strong>Zwykłe saldo</strong> w definicji wiersza.</blockquote> |
+| XCR                | Zmienianie znaku, jeśli zwykłe saldo wiersza jest po stronie kredytowej | Utwórz budżet lub raport porównawczy, jeśli jakiekolwiek niekorzystne odchylenia (takie jak niedobór przychodów lub przekroczenie wydatków) ma zawsze wartość ujemną. Zastosuj ten kod do kolumny **CALC**, aby odwrócić znak kwoty w kolumnie, jeśli zwykłe saldo danego wiersza jest po stronie kredytowej (na co wskazuje **C** w kolumnie **Zwykłe saldo** w definicji wiersza).<p><strong>Uwaga:</strong> dla wierszy <strong>TOT</strong> i </strong>CAL</strong>, które zwykle uwzględniają saldo kredytu, należy pamiętać o wprowadzeniu litery <strong>C</strong> w kolumnie <strong>Zwykłe saldo</strong> w definicji wiersza.</p> |
 | X0                 | Pomijanie kolumny, jeśli występując same zera lub puste pola          | Wyklucz kolumnę **FD** z raportu, jeśli wszystkie komórki w tej kolumnie są puste lub zawierają zera. |
 | SR                 | Pomijanie zaokrąglania                               | Zapobiegaj zaokrąglaniu kwoty w tej kolumnie. |
 | XR                 | Pomijanie akumulacji                                 | Pomijaj akumulację. Jeśli raport używa trzeba raportowania, kwoty w tej kolumnie nie są akumulowane w następnych węzłach nadrzędnych. |
@@ -546,8 +546,8 @@ W poniższej tabeli przedstawiono wyniki raportu, które mogą pojawić się dla
 | Komórka Sposób wyświetlania waluty                        | Komórka Filtr waluty | Wynik raportu |
 |----------------------------------------------|----------------------|---------------|
 | Waluta transakcji                 | **YEN**              | **Y6,000** — wynik pokazuje tylko transakcje, które zostały wprowadzone w JPY. |
-| Waluta rozliczeniowa księgi | **YEN**              |**60 USD** — wynik pokazuje tylko transakcje, które zostały wprowadzone w JPY i wyświetla te transakcje w USD.<blockquote>[!NOTE] Kurs wymiany to w przybliżeniu 100 JPY za 1 USD.</blockquote> |
-| Waluta rozliczeniowa księgi | Pusty                | **2310 USD** — wynik pokazuje wszystkie dane w walucie rozliczeniowej określonej w księdze.<blockquote>[!NOTE] Ta kwota jest sumą wszystkich transakcji w walucie rozliczeniowej.</blockquote> |
+| Waluta rozliczeniowa księgi | **YEN**              |**60 USD** — wynik pokazuje tylko transakcje, które zostały wprowadzone w JPY i wyświetla te transakcje w USD.<p><strong>Uwaga:</strong> kurs wymiany to w przybliżeniu 100 JPY za 1 USD.</p> |
+| Waluta rozliczeniowa księgi | Pusty                | **2310 USD** — wynik pokazuje wszystkie dane w walucie rozliczeniowej określonej w księdze.<p><strong>Uwaga:</strong> Ta kwota jest sumą wszystkich transakcji w walucie rozliczeniowej.</p> |
 | Waluta transakcji                 | Pusty                | **2250 USD** — wynik pokazuje wszystkie kwoty w walucie, w której transakcja została przeprowadzona. Oznacza to, że suma jest zsumowaniem kwot w różnych walutach. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Kolumna obliczania w definicji kolumny
@@ -565,7 +565,7 @@ Aby dodać, odjąć, pomnożyć lub podzielić kolumny, wpisz litery kolumn w ko
 |----------|---------------------|-------------|
 | +        | A+C                 | Dodawanie kwoty w kolumnie A do kwoty w kolumnie C. |
 | :        | A:C A:C-D           | Dodawanie zakresu kolejnych kolumn. Na przykład formuła **A:C** dodaje sumy kolumn od A do C, a formuła **A:C-D** dodaje sumy kolumny od A do C, a następnie odejmuje kwotę w kolumnie D. |
-| -        | A-C                 | Powoduje odjęcie kwoty w kolumnie A od kwoty w kolumnie C.<blockquote>[!NOTE] Znaku minus (-) można też użyć do odwrócenia znaków w kolumnie. Na przykład formuła <strong>-A+B</strong> pozwala dodać odwrotną wartość kwoty w kolumnie A do kwoty w kolumnie B.</blockquote> |
+| -        | A-C                 | Powoduje odjęcie kwoty w kolumnie A od kwoty w kolumnie C.<p><strong>Uwaga:</strong> Można także użyć znaku minusa (-), aby zmienić znak w kolumnie. Na przykład formuła <strong>-A+B</strong> pozwala dodać odwrotną wartość kwoty w kolumnie A do kwoty w kolumnie B.</p> |
 | \*       | A\*C                | Mnożenie kwoty w kolumnie A przez kwotę w kolumnie C. |
 | /        | A/C                 | Dzielenie kwoty w kolumnie A przez kwotę w kolumnie C. |
 

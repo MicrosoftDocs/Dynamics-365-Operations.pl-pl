@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571648"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595618"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut eProcurement
 
@@ -59,8 +59,10 @@ W tej sekcji dokładniej omówiono 4 zadania z poprzedniej części.
 4. Wybierz dostawcę dla katalogu. Na liście **Firmy** jest wiersz dla każdej firmy, w której skonfigurowano dostawcę. Aby zezwolić użytkownikom na wnioskowanie o produkty bezpośrednio z katalogu dostawcy w niektórych firmach, a w innych nie, można użyć przycisku **Zabroń dostępu** lub **Zezwalaj na dostęp** dla każdej firmy, w której katalog ma być dostępny lub nie.
 5. W polu **Domyślne wygaśnięcie (dni)** wprowadź liczbę dni, przez jaką oferta otrzymana z zewnętrznego katalogu jest ważna i może być używana do kupowania od zewnętrznego dostawcy. Po utworzeniu oferty i pobraniu jej z witryny zewnętrznego katalogu dostawcy oferta jest ważna na dzień określony bieżącą datą systemową i pozostaje ważna przez liczbę dni wprowadzoną w tym polu.
 6. Kliknij przycisk **Dodaj**, aby rozpocząć mapowanie kategorii zaopatrzenia na zewnętrzny katalog. Następnie na liście Nazwa kategorii wybierz kategorię. Lista kategorii jest podzbiorem kategorii zaopatrzenia, do których zamapowano dostawcę we wszystkich firmach skonfigurowanych dla tego dostawcy.
-[!NOTE]
-Zasady zaopatrzenia są używane w celu zezwolenia na dostęp lub ograniczenia dostępu do kategorii dla kupującej firmy lub przyjmującej jednostki operacyjnej. Możliwość wybierania z zewnętrznego katalogu wymaga zezwolenia na dostęp do co najmniej jednej kategorii zaopatrzenia zamapowanej do katalogu.
+
+    > [!NOTE]
+    > Zasady zaopatrzenia są używane w celu zezwolenia na dostęp lub ograniczenia dostępu do kategorii dla kupującej firmy lub przyjmującej jednostki operacyjnej. Możliwość wybierania z zewnętrznego katalogu wymaga zezwolenia na dostęp do co najmniej jednej kategorii zaopatrzenia zamapowanej do katalogu.
+
 7. Skonfiguruj komunikat żądania konfiguracji cXML, który będzie wysyłany dostawcy. Format automatycznie generowanego komunikatu jest minimalnym szablonem wymaganym do rozpoczęcia sesji. Wprowadź wartości znaczników.
 
 W dowolnym momencie można ponownie załadować systemowy szablon komunikatu, klikając przycisk **Przywróć format komunikatu**. 
@@ -85,7 +87,7 @@ Poniżej znajduje się opis znaczników zawartych w szablonie:
 
 Element zewnętrzny to dodatkowe informacje, takie jak nazwa użytkownika, które zależy od użytkownika dokonującego wyboru w zewnętrznym katalogu. Element zewnętrzny jest ustawiany podczas wybierania w zewnętrznym katalogu i może być wysyłany w komunikacie żądania konfiguracji.
 Dostawca może ustanowić wymóg, aby w żądaniu konfiguracji był mu przesyłany element zewnętrzny. W takim przypadku należy dodać element zewnętrzny do listy elementów zewnętrznych na stronie **Katalog zewnętrzny** w sekcji **Format komunikatu**. Nadaj elementowi zewnętrznemu nazwę, którą dostawca może rozpoznać, i zamapuj ją na wartość. Dostępne opcje wartości: Nazwa użytkownika, Adres e-mail użytkownika lub Wartość losowa.
-Aby uzyskać więcej informacji o protokole cXML, zobacz: http://cxml.org/.
+Więcej informacji o protokole cXML można znaleźć w [witrynie internetowej cXML.org](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Komunikat ogłaszania zwrotnego
 Komunikat ogłaszania zwrotnego to komunikat otrzymywany od dostawcy, gdy użytkownik finalizuje transakcję w zewnętrznej witrynie i wraca do programu Finance and Operations. Komunikatów ogłaszania zwrotnego nie można konfigurować. Komunikat bazuje na definicji protokołu cXML. Poniżej przedstawiono informacje, które mogą wchodzić w skład komunikatu ogłaszania zwrotnego otrzymywanego w wierszu zapotrzebowania:

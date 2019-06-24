@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1525332"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577907"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Konfigurowanie integracji fiskalnej dla kanałów sprzedaży detalicznej
 
@@ -88,7 +88,7 @@ Przed użyciem funkcji integracji fiskalnej należy skonfigurować następujące
         Można zmienić parametry mapowania danych w profilu funkcjonalnym łącznika. Aby przywrócić domyślne parametry zdefiniowane w konfiguracji dostawcy dokumentów fiskalnych, wybierz **Zaktualizuj**.
 
         **Przykłady**
-    
+
         |   | Format | Przykład |
         |---|--------|---------|
         | **Ustawienia stawek podatku VAT** | wartość : VATrate | 1 : 2000, 2 : 1800 |
@@ -111,7 +111,7 @@ Przed użyciem funkcji integracji fiskalnej należy skonfigurować następujące
 4. Tworzenie grup łączników fiskalnych.
 
     Grupa łączników fiskalnych łączy profile funkcjonalne łączników fiskalnych, które wykonują te same funkcje i są używane na tym samym etapie procesu rejestracji fiskalnej. Na przykład jeśli kilka modeli drukarki fiskalnej może być używanych w sklepie detalicznym, łączniki fiskalne dla tych drukarek fiskalnych mogą być połączone w grupie łączników fiskalnych.
-    
+
     1. Na stronie **Grupa łączników fiskalnych** (**Handel detaliczny \> Ustawienia kanału \> Integracja fiskalna \> Grupy łączników fiskalnych**) utwórz nową grupę łączników fiskalnych.
     2. Dodaj profile funkcjonalności do grupy łączników. Na karcie **Profile funkcjonalne** wybierz **Dodaj** i wybierz numer profilu. Każdy łącznik fiskalny w grupie łączników może mieć tylko jeden profil funkcjonalności.
     3. Aby zawiesić używanie profilu funkcjonalności, ustaw opcję **Wyłącz** na wartość **Tak**. Ta zmiana dotyczy tylko bieżącej grupy łączników. Możesz kontynuować używanie tego samego profilu funkcjonalności w innych grupach łączników.
@@ -119,7 +119,7 @@ Przed użyciem funkcji integracji fiskalnej należy skonfigurować następujące
 5. Tworzenie procesu rejestracji fiskalnej.
 
     Proces rejestracji fiskalnej jest definiowany przez sekwencję etapów rejestracji oraz przez grupę łączników używaną na każdym etapie.
-    
+
     1. Na stronie **Proces rejestracji fiskalnej** (**Handel detaliczny \> Ustawienia kanału \> Integracja fiskalna \> Procesy rejestracji fiskalnych**) utwórz nowy rekord dla każdego unikatowego procesu rejestracji fiskalnej.
     2. Dodaj etapy rejestracji do procesu:
 
@@ -145,7 +145,7 @@ Przed użyciem funkcji integracji fiskalnej należy skonfigurować następujące
 7. Na stronie **Proces rejestracji fiskalnej** (**Handel detaliczny \> Ustawienia kanału \> Integracja fiskalna \> Procesy rejestracji fiskalnych**) wybierz **Sprawdź**, aby sprawdzić proces rejestracji fiskalnej.
 
     Zalecamy uruchomienie tego typu weryfikacji w następujących przypadkach:
-    
+
     - Po zakończeniu wprowadzania wszystkich ustawień dla nowego procesu rejestracji, w tym podczas przypisywania procesu rejestracji do profili funkcjonalności POS i profili sprzętowych.
     - Po wprowadzeniu zmian do istniejącego procesu rejestracji fiskalnej i kiedy te zmiany mogą powodować wybieranie różnych łączników fiskalnych w momencie uruchomienia (np. jeśli zmienisz grupę łączników dla konfiguracji procesu rejestracji fiskalnej, włączysz profil funkcjonalny łącznika w grupie łączników lub dodasz nowy profil funkcjonalny do grupy łączników).
     - Po wprowadzeniu zmian w przypisaniu profilów technicznych łącznika do profilów sprzętowych.

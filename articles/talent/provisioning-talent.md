@@ -3,7 +3,7 @@ title: Inicjowanie obsługi rozwiązania Talent
 description: Ten temat przeprowadzi użytkownika przez proces inicjacji nowego środowiska dla oprogramowania Microsoft Dynamics 365 for Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 00/05/2019
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 98f60e466b8b97215fdba0f48ca53ca57157283b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 03edb5d626f221863f45804ce84168692c2bd1f3
+ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518843"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1576928"
 ---
 # <a name="provision-talent"></a>Inicjowanie obsługi rozwiązania Talent
 
@@ -47,13 +47,14 @@ Aby uzyskać informacje dotyczące rozpoczęcia pracy z aplikacją talent, zapoz
 Po utworzeniu projektu LCS można zainicjować aplikację Talent w środowisku.
 
 1. W projekcie LCS wybierz kafel **Zarządzanie aplikacją Talent**.
-2. Aplikacja Talent jest zawsze inicjowana w środowisku Microsoft PowerApps, aby umożliwić integrację z PoweApps i możliwość rozszerzenia. Przed kontynuowaniem przeczytaj w tym temacie sekcję „Wybieranie środowiska usługi PowerApps”. Jeśli nie masz jeszcze środowiska PowerApps, wybierz opcję Zarządzaj środowiskami w oknie usługi LCS lub przejdź do Centrum administracyjnego usługi PowerApps. Następnie wykonaj procedurę [tworzenia środowiska usługi PowerApps](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
+2. Wskaż, czy jest to wystąpienie produkcyjne czy piaskownicy aplikacji Talent. Funkcje w wersji zapoznawczej mogą być dostępne w wystąpieniach piaskownicy, aby umożliwić wczesne przesłanie opinii i testowanie. 
+3. Zaznacz opcję **Dołącz dane demonstracyjne**, jeżeli chcesz, aby Twoje środowisko zawierało ten sam zestaw danych demonstracyjnych, jak używany w środowisku testowym aplikacji Talent. Jest to korzystne w środowiskach długoterminowych demonstracji lub szkoleń, natomiast nigdy nie należy używać tej opcji w środowisku produkcyjnym.  Należy wybrać tę opcję po wdrożeniu wstępnym. Nie można później zaktualizować istniejącego wdrożenia.
+4. Aplikacja Talent jest zawsze inicjowana w środowisku Microsoft PowerApps, aby umożliwić integrację z PoweApps i możliwość rozszerzenia. Przed kontynuowaniem przeczytaj w tym temacie sekcję „Wybieranie środowiska usługi PowerApps”. Jeśli nie masz jeszcze środowiska PowerApps, wybierz opcję Zarządzaj środowiskami w oknie usługi LCS lub przejdź do Centrum administracyjnego usługi PowerApps. Następnie wykonaj procedurę [tworzenia środowiska usługi PowerApps](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 
     > [!NOTE]
     > Aby wyświetlić istniejące środowiska lub utworzyć nowe, należy przypisać delegowanego administratora odpowiedzialnego za inicjację aplikacji Talent do licencji P2 środowiska PowerApps. Jeśli organizacja nie posiada licencji P2 środowiska PowerApps, można ją uzyskać u CSP lub ze [strony cennika środowiska PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
 
-4. Wybierz opcję **Dodaj**, a następnie wybierz środowisko, w którym zostanie zainicjowana aplikacja Talent.
-5. Zaznacz opcję **Dołącz dane demonstracyjne**, jeżeli chcesz, aby Twoje środowisko zawierało ten sam zestaw danych demonstracyjnych, jak używany w środowisku testowym aplikacji Talent. Jest to korzystne w środowiskach długoterminowych demonstracji lub szkoleń, natomiast nigdy nie należy używać tej opcji w środowisku produkcyjnym.  Należy wybrać tę opcję po wdrożeniu wstępnym. Nie można później zaktualizować istniejącego wdrożenia.
+5. Wybierz środowisko, w którym ma zostać zainicjowana aplikacja Talent.
 6. Wybierz opcję **Tak**, aby zaakceptować warunki i rozpocząć wdrażanie.
 
     Nowe środowisko pojawi się na liście środowisk w okienku nawigacji po lewej stronie. Jednak nie można rozpocząć korzystania ze środowiska, dopóki stan wdrożenia nie zostanie zaktualizowany do **Wdrożony**. Ten proces zajmuje zwykle tylko kilka minut. Jeśli proces inicjowania obsługi się nie powiedzie, należy się skontaktować z pomocą techniczną.

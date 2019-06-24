@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c1c8a58c36b20935c26d8f0d13a6719c7c8877cf
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9fcafa2beca5d998b2556ba73e9f3cc2bdd314ba
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538226"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564436"
 ---
 # <a name="eur-00011-generate-the-eu-sales-list-report"></a>EUR-00011 Generowanie raportu listy sprzedaży do UE
 

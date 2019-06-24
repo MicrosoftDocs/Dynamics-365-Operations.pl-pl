@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee04632eee45aff1fe4b286c65024b0bc57bbb73
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5a566b1d25064e3fccc8953dc883aa63bd16a301
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538224"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566780"
 ---
 # <a name="eur-00012-issue-an-eu-entry-certificate"></a>EUR-00012 Wystawianie świadectwa wywozowego UE
 

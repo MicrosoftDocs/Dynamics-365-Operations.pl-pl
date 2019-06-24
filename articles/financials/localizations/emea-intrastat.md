@@ -17,12 +17,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: df02ce4ed43bc0cb1d2ff519c92ac41ca2983357
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 50eb50c636d70dbdc374e8cfc89438433fb1f1b0
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538250"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555517"
 ---
 # <a name="intrastat"></a>Intrastat
 

@@ -16,12 +16,12 @@ ms.search.region: Poland
 ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: 50e06d6dedcba5ec4137c2631dd5d92a0acf5e07
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 650a9139d232ef90681689b79617622b04f85888
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538245"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560441"
 ---
 # <a name="sales-tax-reports-for-poland"></a>Sprawozdania podatkowe dla Polski
 [!include [banner](../includes/banner.md)]

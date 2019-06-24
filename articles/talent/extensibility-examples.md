@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518818"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577802"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Rozszerzanie rozwiązania Talent przy użyciu usług PowerApps i Microsoft Flow — przykładowe scenariusze
 
@@ -115,7 +115,7 @@ Uruchom tę aplikację PowerApps jako konsolę administracyjną, aby wykonać na
 
 Ta aplikacja PowerApps używa relacji typu wiele-do-wielu, więc można jej użyć jako szablonu dla innych scenariuszy, w których jest konieczne wyodrębnienie rekordów z relacjami typu „wiele do wielu”.
 
-Aby pobrać szablon **konsola administracyjna do zarządzania pulami talentów**, przejdź do [konsola administracyjna do zarządzania pulami talentów](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) w centrum pobierania Microsoft.
+Aby pobrać szablon **konsola administracyjna do zarządzania pulami talentów**, przejdź do [konsola administracyjna do zarządzania pulami talentów](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) w centrum pobierania Microsoft.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 07be1241bd971ed1823e38e094451304c0fa59a7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 77159c0ef8e8046b50fa1dae60423823865e80b5
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538249"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549052"
 ---
 # <a name="petty-cash-for-eastern-europe"></a>Gotówka podręczna dla krajów Europy Wschodniej
 

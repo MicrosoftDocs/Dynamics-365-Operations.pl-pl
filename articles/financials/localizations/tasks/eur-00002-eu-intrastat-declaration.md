@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 170c73d2ace75f990df9d57c658e859dcd30dd36
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1236f27a3a5c208ffec41374a6593d1f0e7c4433
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538228"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566794"
 ---
 # <a name="eur-00002-generate-an-eu-intrastat-declaration"></a>EUR-00002 Generowanie unijnej deklaracji Intrastat
 

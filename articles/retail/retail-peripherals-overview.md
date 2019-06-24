@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571565"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577936"
 ---
 # <a name="retail-peripherals"></a>Sklepowe urządzenia peryferyjne
 
@@ -295,7 +295,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <ul>
 <li>OPOS</li>
 <li>Sieć
-<blockquote>Uwaga: Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę.</blockquote>
+<p><strong>Uwaga:</strong> jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę.</p>
 </li>
 </ul>
 </td>
@@ -306,7 +306,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <ul>
 <li>OPOS</li>
 <li>Sieć
-<blockquote>Uwaga: Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę.</blockquote>
+<p><strong>Uwaga:</strong> jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę.</p>
 </li>
 </ul>
 </td>
@@ -374,7 +374,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <ul>
 <li>OPOS</li>
 <li>Sterownik w systemie Windows
-<blockquote>Uwaga: W przypadku drukarek systemu Windows w sieci stacja sprzętowa musi mieć uprawnienie dostępu do drukarki.</blockquote>
+<p><strong>Uwaga:</strong> w przypadku drukarek systemu Windows w sieci stacja sprzętowa musi mieć uprawnienie dostępu do drukarki.</p>
 </li>
 <li>Sieć</li>
 </ul>
@@ -404,7 +404,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <ul>
 <li>OPOS</li>
 <li>Sieć
-<blockquote>Uwaga: Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę na każdy profil sprzętu.</blockquote>
+<p><strong>Uwaga:</strong> jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę na każdy profil sprzętu.</p>
 </li>
 </ul>
 </td>
@@ -469,7 +469,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <ul>
 <li>OPOS</li>
 <li>Sterownik w systemie Windows
-<blockquote>Uwaga: W przypadku drukarek systemu Windows w sieci stacja sprzętowa musi mieć uprawnienie dostępu do drukarki.</blockquote>
+<p><strong>Uwaga:</strong> w przypadku drukarek systemu Windows w sieci stacja sprzętowa musi mieć uprawnienie dostępu do drukarki.</p>
 </li>
 <li>Sieć</li>
 </ul>
@@ -491,7 +491,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <ul>
 <li>OPOS</li>
 <li>Sieć
-<blockquote>Uwaga: Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę na każdy profil sprzętu.</blockquote>
+<p><strong>Uwaga:</strong> jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę na każdy profil sprzętu.</p>
 </li>
 </ul>
 </td>

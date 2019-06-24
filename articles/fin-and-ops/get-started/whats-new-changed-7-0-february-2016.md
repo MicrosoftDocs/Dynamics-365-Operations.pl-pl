@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5fb6b23d11ab263ed158a0a4476f77ed22b5084
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561817"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595669"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nowości i zmiany w systemie Dynamics AX 7.0 (luty 2016)
 
@@ -721,7 +721,7 @@ Usługa Retail Server i zarządzanie danymi pozwala odbiorcom i firmom tworzy je
 </thead>
 <tbody>
 <tr>
-<td>Łączenie z bazą danych Commerce Runtime (CRT), w której są przechowywane dane biznesowe dla kanału za pomocą usług CRT.</td>
+<td>Łączenie z bazą danych Commerce Runtime (CRT), w której są przechowywane dane biznesowe dla kanału, za pomocą usług CRT.</td>
 <td>Funkcja OData V3 jest obsługiwana.</td>
 <td>Funkcja OData V4 jest obsługiwana.</td>
 <td>Pomaga odbiorcom w zachowaniu zgodności z najnowszymi normami OData. Tworzy też stabilne środowisko w rozproszonym kanale dzięki integracji sprzedaży w kanałach sklepu, mobilnych i online.</td>
@@ -971,7 +971,7 @@ Dostępna jest opcja ulepszonej instalacji składnika odbiorcy z niskim nakłade
 </tr>
 <tr>
 <td>Monitorowanie stanu systemu i diagnozowanie błędów i problemów.</td>
-<td>Ta funkcja wymaga <a href="http://www.microsoft.com/download/details.aspx?id=42636">pakietu System Center 2012 Management dla programu Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
+<td>Ta funkcja wymaga <a href="https://www.microsoft.com/download/details.aspx?id=42636">pakietu System Center 2012 Management dla programu Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
 <td>Monitorowanie i diagnostyka dla składników usługi Retail są teraz dostępne za pośrednictwem pulpitu nawigacyjnego <strong>Wgląd operacyjny</strong> w LCS.</td>
 <td>Pulpit nawigacyjny <strong>Wgląd operacyjny</strong> to chmurowy portal monitorowania, który eliminuje konieczność instalacji infrastruktury System Center Operations Manager (SCOM).</td>
 </tr>

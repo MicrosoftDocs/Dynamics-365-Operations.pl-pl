@@ -16,12 +16,12 @@ ms.search.region: Poland
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 103d203b7ea942062f789228b4a3e7bf9b7a1d86
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 34f111430daf136f5ee97cdcad4c7a2b30018e16
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538230"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565097"
 ---
 # <a name="poland"></a>Polska 
 

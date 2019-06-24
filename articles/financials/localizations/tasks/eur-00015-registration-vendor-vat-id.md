@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33e21137e604ead6cc3a7ad6f0b5bb6bfdc6992e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d9788a35e768a4a289742e9cd864b3ca185a0407
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538220"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566879"
 ---
 # <a name="eur-00015-registration-of-vendor-vat-id"></a>EUR-00015 Rejestrowanie identyfikatora VAT dostawcy
 

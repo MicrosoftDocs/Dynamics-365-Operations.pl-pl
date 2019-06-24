@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530277"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577987"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Pokazywanie powiadomień o zamówieniach w aplikacji POS
 
@@ -68,7 +68,7 @@ Poniższa ilustracja przedstawia ustawienia przekazywania zawartości na żywo w
 
 ![Ustawienia zawartości na żywo w konstruktorze siatki przycisków](./media/ButtonGridDesigner.png "Ustawienia zawartości na żywo w konstruktorze siatki przycisków")
 
-Aby wyświetlić na przycisku licznik powiadomień, należy upewnić się, że jest aktualizowany właściwy układ ekranu. Aby określić układ ekranu używany przez punkt sprzedaży, wybierz ikonę **Ustawienia** w prawym górnym rogu i zanotuj jej **Identyfikator układu ekranu** i **Rozdzielczość układu**. Za pomocą przeglądarki krawędzi przejdź do strony **Układ ekranu** w Dynamics 365 for Finance and Operations, znajdź **Identyfikator układu ekranu** i **Rozdzielczość układu** określone powyżej i zaznacz pole wyboru **Włącz zawartość na żywo**. Przejdź do **Sprzedaż detaliczna > IT sprzedaży detalicznej > Harmonogram dystrybucji** i uruchom zadanie 1090 (rejestry), aby zsynchronizować zmiany w układzie. 
+Aby wyświetlić na przycisku licznik powiadomień, należy upewnić się, że jest aktualizowany właściwy układ ekranu. Aby określić układ ekranu używany przez punkt sprzedaży, wybierz ikonę **Ustawienia** w prawym górnym rogu i zanotuj jej **Identyfikator układu ekranu** i **Rozdzielczość układu**. Za pomocą przeglądarki krawędzi przejdź do strony **Układ ekranu** w Dynamics 365 for Finance and Operations, znajdź **Identyfikator układu ekranu** i **Rozdzielczość układu** określone powyżej i zaznacz pole wyboru **Włącz zawartość na żywo**. Przejdź do **Sprzedaż detaliczna \> IT sprzedaży detalicznej \> Harmonogram dystrybucji** i uruchom zadanie 1090 (rejestry), aby zsynchronizować zmiany w układzie.
 
 ![Znajdowanie układu ekranu używanego w punkcie sprzedaży](./media/Choose_screen_layout.png "Znajdź układ ekranu ")
 
