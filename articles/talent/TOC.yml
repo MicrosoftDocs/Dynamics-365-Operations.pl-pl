@@ -8,6 +8,16 @@
         - name: Nowości i zmiany w rozwiązaniu Talent
           href: whats-new.md
           items:
+            - name: 2 lipca 2019 r.
+              href: whats-new-talent-july-2-2019.md
+            - name: 25 czerwca 2019 r.
+              href: whats-new-talent-june-25-2019.md
+            - name: 18 czerwca 2019 r.
+              href: whats-new-talent-june-18-2019.md
+            - name: 11 czerwca 2019 r.
+              href: whats-new-talent-june-11-2019.md
+            - name: 4 czerwca 2019 r.
+              href: whats-new-talent-june-4-2019.md
             - name: 28 maja 2019 r.
               href: whats-new-talent-may-28-2019.md
             - name: 21 maja 2019 r.
@@ -16,26 +26,26 @@
               href: whats-new-talent-may-13-2019.md
             - name: 6 maja 2019 r.
               href: whats-new-talent-may-6-2019.md
-            - name: 30 kwietnia 2019 r.
-              href: whats-new-talent-april-30-2019.md
-            - name: 25 kwietnia 2019 r.
-              href: whats-new-talent-april-25-2019.md
-            - name: 16 kwietnia 2019 r.
-              href: whats-new-talent-april-16-2019.md
-            - name: 9 kwietnia 2019 r.
-              href: whats-new-talent-april-9-2019.md
-            - name: 2 kwietnia 2019 r.
-              href: whats-new-talent-april-2-2019.md
-            - name: 26 marca 2019 r.
-              href: whats-new-talent-march-26-2019.md
-            - name: 20 marca 2019 r.
-              href: whats-new-talent-march-20.md
-            - name: 14 marca 2019 r.
-              href: whats-new-talent-march-14.md
-            - name: 5 marca 2019 r.
-              href: whats-new-talent-march-5.md
             - name: Archiwum nowości z 2019 r.
               items:
+                - name: 30 kwietnia 2019 r.
+                  href: whats-new-talent-april-30-2019.md
+                - name: 25 kwietnia 2019 r.
+                  href: whats-new-talent-april-25-2019.md
+                - name: 16 kwietnia 2019 r.
+                  href: whats-new-talent-april-16-2019.md
+                - name: 9 kwietnia 2019 r.
+                  href: whats-new-talent-april-9-2019.md
+                - name: 2 kwietnia 2019 r.
+                  href: whats-new-talent-april-2-2019.md
+                - name: 26 marca 2019 r.
+                  href: whats-new-talent-march-26-2019.md
+                - name: 20 marca 2019 r.
+                  href: whats-new-talent-march-20.md
+                - name: 14 marca 2019 r.
+                  href: whats-new-talent-march-14.md
+                - name: 5 marca 2019 r.
+                  href: whats-new-talent-march-5.md
                 - name: 27 lutego 2019 r.
                   href: whats-new-talent-feb-27.md
                 - name: 14 lutego 2019 r.
@@ -102,16 +112,24 @@
           href: attract-comprehensive-hiring.md
         - name: Funkcje i możliwości aplikacji Attract
           href: attract-overview.md
+        - name: Często zadawane pytania dotyczące serwisu LinkedIn
+          href: attract-linkedin-faq.md
+        - name: Konfigurowanie ustawień poczty e-mail
+          href: attract-configure-email-settings.md
         - name: Tworzenie szablonu procesu w aplikacji Attract
           href: Process-templates-Attract.md
-        - name: 'Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract'
+        - name: Tworzenie i księgowanie zadań
           href: Creating-jobs-Attract.md
-        - name: Publikowanie funkcji w zewnętrznych witrynach rozwoju kariery z poziomu aplikacji Attract
+        - name: Konfigurowanie integracji z serwisem LinkedIn
+          href: attract-admin-linkedin.md
+        - name: Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Attract
+          href: attract-post-jobs-to-linkedin.md
+        - name: Publikowanie ofert pracy w serwisie Broadbean z poziomu aplikacji Attract
           href: posting-jobs-external.md
         - name: Pozyskiwanie kandydatów za pomocą pul umiejętności i kandydatów
           href: attract-talent-pools.md
-        - name: Korzystanie z aplikacji LinkedIn Recruiter
-          href: attract-linked-in-recruiter.md
+        - name: Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter
+          href: attract-linkedin-recruiter.md
         - name: Działania w procesach rekrutacji
           href: activities-attract.md
         - name: Planowanie rozmów kwalifikacyjnych i informacji zwrotnych
@@ -132,12 +150,28 @@
           href: Admin-Settings-Attract.md
         - name: Inteligentne rekomendacje
           href: Intelligent-Recommendations.md
-        - name: Tworzenie atrakcyjnych materiałów związanych z wdrażaniem do pracy
-          href: create-onboarding-experience.md
         - name: Śledzenie źródeł profilów i zgłoszeń kandydatów
           href: source-tracking.md
         - name: Używanie raportów analitycznych na potrzeby analizowania procesu zatrudniania
           href: analytic-reports.md
+    - name: Witanie nowych pracowników za pomocą rozwiązania Onboard
+      items:
+        - name: Rozpoczęcie korzystania z rozwiązania Onboard
+          href: create-onboarding-experience.md
+        - name: Pobieranie aplikacji Onboard
+          href: onboard-get-app.md
+        - name: Tworzenie i wysyłanie przewodnika wdrażania do pracy
+          href: onboard-create-guide.md
+        - name: Tworzenie szablonu wdrażania do pracy
+          href: onboard-create-template.md
+        - name: Edytowanie przewodników i szablonów
+          href: onboard-edit-guides-templates.md
+        - name: Udostępnianie zawartości
+          href: onboard-share-template.md
+        - name: Wyświetlanie stanu
+          href: onboard-view-status.md
+        - name: Tworzenie zespołu rekrutacyjnego
+          href: onboard-create-team.md
     - name: Zarządzanie pracownikami za pomocą aplikacji Core HR
       items:
         - name: Organizowanie pracowników
@@ -357,6 +391,8 @@
           href: corehr-custom-fields.md
     - name: Rozwiązywanie problemów z aplikacją Talent
       items:
+        - name: Rozwiązywanie problemów z publikowaniem ofert pracy w serwisie LinkedIn
+          href: attract-troubleshoot-linkedin.md
         - name: Raporty analityczne nie są aktualizowane
           href: analytic-reports-not-updated.md
         - name: Nie można utworzyć środowiska w centrum administracyjnym usługi PowerApps
