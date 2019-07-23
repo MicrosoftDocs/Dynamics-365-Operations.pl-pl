@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: b88ba4386dbf3513d75990acca1c07fa6f0dc9b0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1c7c017cce26b6b250d899bba891d6823b40c282
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518855"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729733"
 ---
 # <a name="email-templates"></a>Szablony wiadomości e-mail
 [!include[banner](../includes/banner.md)]
 
-Za pomocą biblioteki szablonów wiadomości e-mail administratorzy mogą utworzyć jednolity motyw i identyfikację wizualną dla wszystkich wiadomości e-mail wysyłanych z aplikacji Microsoft Dynamics 365 for Talent: Attract. Administratorzy mogą również przechowywać zbiór szablonów zawartości wiadomości e-mail z przeznaczeniem dla innych użytkowników. Zespół rekrutacyjny może używać tych szablonów w swoich procesach, aby sprawniej wysyłać wiadomości e-mail. Niektóre wiadomości e-mail w aplikacji Attract są skonfigurowane do wysyłania automatycznego, a administrator może używać biblioteki szablonów wiadomości e-mail do personalizowania zawartości tych wiadomości.
+Korzystając z biblioteki szablonów wiadomości e-mail, administratorzy mogą tworzyć jednolity motyw i branding dla wszystkich wiadomości e-mail wysyłanych przez Microsoft Dynamics 365 for Talent: Attract i Offer. Administratorzy mogą również przechowywać zbiór szablonów zawartości wiadomości e-mail z przeznaczeniem dla innych użytkowników. Zespół rekrutacyjny może używać tych szablonów w swoich procesach, aby sprawniej wysyłać wiadomości e-mail. Niektóre wiadomości e-mail są skonfigurowane tak, aby były wysyłane automatycznie, a administrator może użyć biblioteki szablonów wiadomości e-mail i dostosować treść tych wiadomości e-mail.
 
 > [!NOTE]
 > Aby korzystać z szablonów wiadomości E-mail, organizacja musi mieć dodatek kompleksowej obsługi rekrutacji.
@@ -37,7 +37,7 @@ Za pomocą biblioteki szablonów wiadomości e-mail administratorzy mogą utworz
 
 Aby utworzyć spójną identyfikację wizualną dla całej korespondencji pocztą e-mail, administrator musi najpierw ustawić globalne nagłówek i stopkę dla wszystkich szablonów wiadomości e-mail. W Centrum administracyjnym na karcie **Ustawienia szablonu wiadomości e-mail** w sekcji **Nagłówek** administrator może przekazać obraz, który będzie używany jako nagłówek lub transparent we wszystkich wiadomościach e-mail. Obrazem może być logo firmy, nagłówek listowy lub jakikolwiek inny reprezentatywny obraz. Zalecamy, aby obraz miał szerokość od 25 do 800 pikseli, a wysokość od 25 do 150 pikseli, ponieważ te wymiary są optymalne dla większości klienckich aplikacji poczty e-mail, takich jak Microsoft Outlook. Obraz musi być plikiem w formacie JPG, JPEG, PNG lub SVG, a jego rozmiar nie może przekraczać 1 megabajta (MB). Po przekazaniu obrazu zostanie wygenerowany i wyświetlony podgląd nagłówka. Jeśli obraz nagłówka należy usunąć lub zamienić, administrator można użyć opcji **Usuń** znajdującej się nad podglądem.
 
-W sekcji **Stopka** administrator może umieścić łącza do firmowych zasad ochrony prywatności w komunikacji oraz do warunków i postanowień. Te łącza znajdą się w automatycznie generowanej stopce. Zostanie wyświetlony podgląd stopki.
+W sekcji **Stopka** administrator może umieścić łącza do firmowych zasad ochrony prywatności w komunikacji oraz do warunków i postanowień. Te łącza znajdą się w automatycznie generowanej stopce. Zostanie wyświetlony podgląd stopki. Administrator może również wybrać konkretny język, w którym stopki wiadomości e-mail będą wysyłane jako część wszystkich wiadomości e-mail. Ta sama konfiguracja języka zostanie również wykorzystana do zestawienia tabeli podsumowania wywiadu. 
 
 Pamiętaj, aby zapisać zmiany, zanim zamkniesz Centrum administracyjne.
 
@@ -46,7 +46,7 @@ Pamiętaj, aby zapisać zmiany, zanim zamkniesz Centrum administracyjne.
 
 ## <a name="email-template-library"></a>Biblioteka szablonów wiadomości e-mail 
 
-Po utworzeniu globalnych konfiguracji szablonów administrator może rozpocząć tworzenie i nadzorowanie szablonów dla wszystkich wiadomości e-mail wysyłanych z aplikacji Attract. Biblioteka szablonów wiadomości e-mail jest dostępna tylko dla administratorów. Aby otworzyć bibliotekę, w głównym menu nawigacji wybierz kartę **Szablony wiadomości e-mail**. Biblioteka jest uporządkowana według różnych działań w aplikacji Attract, dla których należy wysyłać wiadomości e-mail, takich jak planowanie, ocena i tworzenie funkcji. Administrator może wybrać dowolną kategorię i wtedy zobaczy wszystkie typy wiadomości e-mail skojarzone z działaniem. Na przykład po wybraniu opcji **Planowanie** zobaczysz różne typy wiadomości e-mail wysyłane w procesie planowania oraz wszystkie szablony, które są dostępne dla każdego typu wiadomości e-mail. Każda podsekcja w kategorii reprezentuje typ wiadomości e-mail.
+Po skonfigurowaniu globalnych konfiguracji szablonów, administrator może rozpocząć tworzenie i kształtowanie szablonów dla wszystkich wiadomości e-mail wysyłanych z aplikacji Attract i Offer. Biblioteka szablonów wiadomości e-mail jest dostępna tylko dla administratorów. Aby otworzyć bibliotekę, w głównym menu nawigacyjnym wybierz kartę **Szablony wiadomości e-mail**. Biblioteka jest podzielona na kategorie według różnych działań w aplikacji Attract, które wymagają wiadomości e-mail, takie jak planowanie, ocena, tworzenie miejsc pracy i oferta. Administrator może wybrać dowolną kategorię i wtedy zobaczy wszystkie typy wiadomości e-mail skojarzone z działaniem. Na przykład po wybraniu opcji **Planowanie** zobaczysz różne typy wiadomości e-mail wysyłane w procesie planowania oraz wszystkie szablony, które są dostępne dla każdego typu wiadomości e-mail. Każda podsekcja w kategorii reprezentuje typ wiadomości e-mail.
 
 Niektóre typy wiadomości e-mail mogą mieć więcej niż jednego adresata. Na przykład w kategorii **Planowanie** wiadomości e-mail, które są wysyłane, gdy jest potrzebne podsumowanie harmonogramu rozmów kwalifikacyjnych, są wysyłane do kandydatów i osób przeprowadzających rozmowy kwalifikacyjne. Każda sekcja zawiera dwie główne kolumny: **Tytuł szablonu** i **Adresat**. Każdy wiersz w sekcji reprezentuje jeden szablon dla typu wiadomości e-mail. Na początku w wierszu każdego szablonu znajduje się symbol kłódki. Ten symbol oznacza, że szablon jest standardowym szablonem dostarczonym w aplikacji Attract i nie można go usunąć. Dla każdego szablonu administrator może użyć przycisku wielokropka (**...**) w celu zduplikowania szablonu, ustawienia go jako domyślnego lub usunięcia. Gdy szablon jest ustawiony jako szablon domyślny, może wystąpić jedno z dwóch zachowań. Zachowanie jest wskazane na znaczku lub znaczkach wyświetlanych w wierszu szablonu:
 

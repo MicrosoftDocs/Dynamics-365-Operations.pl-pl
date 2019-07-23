@@ -3,7 +3,7 @@ title: Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
 description: Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania klientów w rozwiązaniu Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530783"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625649"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
 
@@ -40,7 +40,7 @@ Domyślnie wyszukiwania produktów są przeprowadzane w asortymencie sklepu. Ten
 Na stronie **Zmień katalog** pracownicy mogą łatwo wybrać dowolny sklep, lub wyszukać produkty we wszystkich sklepach.
 
 ![Zmiana katalogu](./media/Changecatalog.png "Zmiana katalogu")
- 
+
 Lokalne wyszukiwanie produktów powoduje wyszukiwanie w następujących właściwościach produktów:
 
 - Numer produktu
@@ -55,7 +55,7 @@ Lokalne wyszukiwanie produktów powoduje wyszukiwanie w następujących właści
 Lokalne wyszukiwanie produktów jest teraz bardziej przyjazne dla użytkownika. Wprowadzono również następujące ulepszenia:
 
 - Do paska wyszukiwania dodano menu rozwijane produktu i klienta, aby pracownicy mogli wybrać opcję **Produkt** lub **Klient** przed rozpoczęciem wyszukiwania. Domyślnie wybrana jest opcja **Produkt**, jak pokazano na poniższej ilustracji.
-- W przypadku wyszukiwania słów kluczowych (tj. wyszukiwań wykorzystujących terminy) sprzedawcy mogą skonfigurować, czy wyniki wyszukiwania obejmują wyniki zgodne z *dowolnym* wyszukiwanym terminem czy tylko wyniki zgodne ze *wszystkimi* wyszukiwanymi terminami. To ustawienie jest dostępne w profilu funkcji POS, w nowej grupie o nazwie **Wyszukiwanie produktu**. Ustawienie domyślne to **Dopasuj dowolne szukane terminy**. To ustawienie jest także ustawieniem zalecanym. Gdy używane jest ustawienie **Dopasuj dowolne szukane terminy**, wszystkie produkty całkowicie lub częściowo zgodne z co najmniej jednym szukanym terminem są zwracane jako wyniki. Te wyniki są automatycznie sortowane w kolejności rosnącej produktów dopasowanych do największej liczby słów kluczowych (całkowicie lub częściowo).
+- W przypadku wyszukiwania słów kluczowych (tj. wyszukiwań wykorzystujących terminy) sprzedawcy mogą skonfigurować, czy wyniki wyszukiwania obejmują wyniki zgodne z *dowolnym* wyszukiwanym terminem czy tylko wyniki zgodne ze *wszystkimi* wyszukiwanymi terminami. Ustawienie tej funkcji jest dostępne w profilu funkcji POS, w nowej grupie o nazwie **Wyszukiwanie produktu**. Ustawienie domyślne to **Dopasuj dowolne szukane terminy**. To ustawienie jest także ustawieniem zalecanym. Gdy używane jest ustawienie **Dopasuj dowolne szukane terminy**, wszystkie produkty całkowicie lub częściowo zgodne z co najmniej jednym szukanym terminem są zwracane jako wyniki. Te wyniki są automatycznie sortowane w kolejności rosnącej produktów dopasowanych do największej liczby słów kluczowych (całkowicie lub częściowo).
 
     Ustawienie **Dopasuj wszystkie szukane terminy** zwraca tylko produkty zgodne ze wszystkimi szukanymi terminami (całkowicie lub częściowo). To ustawienie jest przydatne, gdy nazwy produktów są długie, a pracownicy chcą zobaczyć w wynikach wyszukiwania tylko ograniczoną liczbę produktów. Jednak ten rodzaj wyszukiwania ma dwa ograniczenia:
 
@@ -65,11 +65,20 @@ Lokalne wyszukiwanie produktów jest teraz bardziej przyjazne dla użytkownika. 
 - Sprzedawcy mogą teraz konfigurować wyszukiwanie produktu tak, aby wyświetlać sugestie wyszukiwania, gdy użytkownicy wpisują nazwy produktów. Nowe ustawienie tej funkcji jest dostępne w profilu funkcji POS, w grupie o nazwie **Wyszukiwanie produktu**. To ustawienie nosi nazwę **Pokaż sugestie podczas wpisywania**. Ta funkcja może ułatwić pracownikom szybkie znalezienie wyszukiwanego produktu, ponieważ nie muszą wprowadzać ręcznie pełnej nazwy.
 - Algorytm wyszukiwania produktów wyszukuje także szukane terminy we właściwości **Wyszukaj nazwę** produktu.
 
-    ![Sugestie produktów](./media/Productsuggestions.png "Sugestie produktów")
+![Sugestie produktów](./media/Productsuggestions.png "Sugestie produktów")
 
 ## <a name="customer-search"></a>Wyszukiwanie odbiorcy
 
-Wyszukiwanie odbiorcy służy do znalezienia odbiorców w różnych celach. Kasjerzy mogą na przykład wyświetlić listę życzeń lub historię zakupów odbiorców albo dodać odbiorcę do transakcji. Algorytm wyszukiwania pasuje do warunków wyszukiwania pod kątem wartości w następujących właściwościach odbiorcy: nazwa, e-mail, telefon, numer karty lojalnościowej, adres i numer konta. Wśród tych właściwość nazwa zapewnia największą elastyczność w przypadku wyszukiwania według wielu słów kluczowych, ponieważ algorytm zwraca wszystkich odbiorców, którzy pasują do któregokolwiek z tych słów kluczowych, a odbiorcy, którzy pasują do większości słów kluczowych, są wyświetlani na górze wyników wyszukiwania. Ta funkcja pomaga kasjerom w sytuacjach, gdy szukają, wpisując pełne imiona i nazwiska, ale imię i nazwisko zostały zamienione podczas pierwotnego wprowadzania danych. Jednak ze względu na wydajność, wszystkie inne właściwości zachowują kolejność wyszukiwanych słów, więc jeśli słowa kluczowe nie są takie same jak kolejność przechowywanych danych, system nie zwróci żadnych wyników.
+Wyszukiwanie odbiorcy służy do znalezienia odbiorców w różnych celach. Kasjerzy mogą na przykład wyświetlić listę życzeń lub historię zakupów odbiorców albo dodać odbiorcę do transakcji. Algorytm wyszukiwania dopasowuje terminy wyszukiwania do wartości obecnych w następujących właściwościach odbiorcy:
+
+- Nazwisko
+- Adres e-mail
+- Numer telefonu
+- Numer karty lojalnościowej
+- Adres 
+- Numer konta
+
+Wśród tych właściwości nazwa zapewnia największą elastyczność podczas wyszukiwania z wieloma słowami kluczowym, ponieważ algorytm zwraca wszystkich klientów, którzy pasują do któregokolwiek z wyszukiwanych słów kluczowych. Odbiorcy zgodni z większością słów kluczowych są wyświetlani na początku wyników. Ta funkcja pomaga kasjerom w sytuacjach, gdy szukają, wpisując pełne imię i nazwisko, ale nazwisko i imię zostały zamienione podczas wstępnego wprowadzania danych. Jednak ze względu na wydajność wszystkie pozostałe właściwości zachowują kolejność słów kluczowych wyszukiwania. Jeśli więc kolejność słów kluczowych wyszukiwania nie odpowiada kolejności, w jakiej dane są przechowywane, żadne wyniki nie zostaną zwrócone.
 
 Domyślnie wyszukiwanie odbiorców jest wykonywane w książkach adresowych odbiorców skojarzonych ze sklepem. Ten typ wyszukiwania jest nazywany *lokalnym wyszukiwaniem odbiorcy*. Pracownicy mogą jednak wyszukiwać odbiorców globalnie. Inaczej mówiąc, mogą przeszukiwać sklepy w firmie oraz we wszystkich innych firmach. Ten typ wyszukiwania jest nazywany *zdalnym wyszukiwaniem odbiorcy*.
 
@@ -86,7 +95,7 @@ W zdalnym wyszukiwaniu odbiorców identyfikator odbiorcy nie jest widoczny dla o
 
 Wyszukiwania oparte na numerze telefonu zostały uproszczone. Te wyszukiwania teraz ignorują znaki specjalne, takie jak spacje, łączniki i nawiasy, które mogły zostać dodane podczas tworzenia odbiorcy. Dzięki temu kasjerzy nie muszą się już martwić o formaty numerów telefonów podczas wyszukiwania. Mogą również szukać odbiorców przez wpisanie częściowego numeru telefonu. Jeśli numer telefonu zawiera znaki specjalne, również można go znaleźć, wyszukując numery występujące po znakach specjalnych. Jeżeli na przykład numer telefonu odbiorcy wprowadzono jako **123-456-7890**, kasjer może wyszukać odbiorcę, wpisując **123**, **456**, **7890** lub **1234567890** albo wpisując kilka pierwszych cyfr numeru telefonu.
 
-Tradycyjne wyszukiwanie odbiorcy może być czasochłonne, ponieważ obejmuje wiele pól. Zamiast tego kasjerzy mogą teraz szukać w jednej niestandardowej właściwości, takiej jak imię i nazwisko, adres e-mail lub numer telefonu. Właściwości używane przez algorytm wyszukiwania odbiorców są zbiorczo nazywane *kryteriami wyszukiwania odbiorców*. Administrator systemu może w prosty sposób skonfigurować jedno lub więcej kryteriów jako skróty, które będą wyświetlane w aplikacji POS. Ponieważ wyszukiwanie jest ograniczone do jednego kryterium, są wyświetlane tylko pasujące wyniki wyszukiwania, a proces działa znacznie szybciej, niż standardowe wyszukiwanie odbiorców. Poniższa ilustracja przedstawia skróty wyszukiwania odbiorców w aplikacji POS.
+Tradycyjne wyszukiwanie odbiorcy może być czasochłonne, ponieważ obejmuje wiele pól. Zamiast tego kasjerzy mogą teraz szukać jedną właściwość klienta, taką jak imię i nazwisko, adres e-mail lub numer telefonu. Właściwości używane przez algorytm wyszukiwania odbiorców są zbiorczo nazywane *kryteriami wyszukiwania odbiorców*. Administrator systemu może w prosty sposób skonfigurować jedno lub więcej kryteriów jako skróty, które będą wyświetlane w aplikacji POS. Ponieważ wyszukiwanie jest ograniczone do jednego kryterium, są wyświetlane tylko pasujące wyniki wyszukiwania, a proces działa znacznie szybciej, niż standardowe wyszukiwanie odbiorców. Poniższa ilustracja przedstawia skróty wyszukiwania odbiorców w aplikacji POS.
 
 ![Skróty wyszukiwania odbiorców](./media/SearchShortcutsPOS.png "Skróty wyszukiwania odbiorców")
 
@@ -101,3 +110,7 @@ Pole **Kolejność wyświetlania** określa kolejność, w jakiej skróty są wy
 
 > [!NOTE]
 > Niestandardowa właściwość dodana do elementu stałotekstowego nie wpływa na standardowy algorytm wyszukiwania odbiorców. Innymi słowy algorytm wyszukiwania odbiorców nie wyszukuje w niestandardowej właściwości. Użytkownicy mogą stosować niestandardową właściwość do wyszukiwania tylko wtedy, gdy jest ona dodana jako skrót albo gdy domyślny algorytm wyszukiwania zostanie zastąpiony.
+
+W nadchodzącej wersji Microsoft Dynamics 365 for Retail, sprzedawcy detaliczni będą mogli skonfigurować domyślny tryb wyszukiwania klientów w punkcie sprzedaży, aby **Przeszukiwać wszystkie sklepy**. Ta konfiguracja może być przydatna w scenariuszach, w których klienci, którzy zostali wytworzeniu poza systemem, muszą być natychmiast wyszukiwani (na przykład, jeszcze przed uruchomieniem zadania dystrybucji). Nowa opcja **Domyślny tryb wyszukiwania odbiorców** będzie dostępna w profilu funkcji punktu sprzedaży. Ustaw na **Włączony** aby skonfigurować domyślny tryb wyszukiwania na **Szukaj we wszystkich sklepach**. Każda próba wyszukania odbiorcy spowoduje przetworzenie połączenia w czasie rzeczywistym z centralą.
+
+Aby zapobiec nieoczekiwanem problemom z wydajnością, ta konfiguracja jest ukryta za flagą lotu o nazwie **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Dlatego w celu wyświetlenia ustawienia interfejs użytkownika (UI) **Tryb domyślnego wyszukiwania klientów**, należy utworzyć bilet pomocy technicznej dla systemu testowania akceptacji użytkowników (UAT) i środowisk produkcyjnych. Po otrzymaniu biletu zespół inżynierów będzie pracował ze sprzedawcą, aby upewnić się, że sprzedawca przeprowadza testy w środowiskach nieprodukcyjnych, aby ocenić wydajność i wdrożyć wymagane optymalizacje.

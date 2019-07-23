@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518879"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729710"
 ---
 # <a name="career-site-functionality-in-attract"></a>Funkcjonalność witryny rozwoju kariery w aplikacji Attract
 
@@ -48,11 +48,14 @@ Aby ustawić wartości następujących elementów, zaloguj się w aplikacji Attr
  
 Aby ustawić wartości następujących elementów, zaloguj się w aplikacji Attract jako administrator, wybierz opcję **Centrum administracyjne** w menu **Ustawienia**, a następnie wybierz kartę **Zarządzanie witryną rozwoju kariery**.
 
--   **Optymalizacja aparatu wyszukiwania:** Po włączeniu tej opcji wszystkie publicznie dostępne oferty w witrynie rozwoju kariery Attract będzie można znaleźć za pomocą wyszukiwarek, takich jak Bing i Google.
+-   **Optymalizacja aparatu wyszukiwania:** Po włączeniu tej opcji wszystkie publicznie dostępne oferty w witrynie rozwoju kariery Attract będzie można znaleźć za pomocą wyszukiwarek, takich jak Bing i Google. 
 
     > [!NOTE] 
     > Może wystąpić opóźnienie między włączeniem tego ustawienia, a uwzględnianiem ofert w wynikach wyszukiwania, w zależności od używanego aparatu wyszukiwania.
-         
+    
+-   **Zasady i warunki** - Po włączeniu wszyscy kandydaci muszą wyrazić zgodę na zasady i warunki organizacji podczas ubiegania się o pracę. Administrator w witrynie Attract może skonfigurować swój własny tekst Zgody oraz link do swojej strony Zasady i warunki. 
+
+        
 ## <a name="career-site-urls"></a>Adresu URL witryny rozwoju kariery
 
 Poniższa lista zawiera często używane adresy URL witryny rozwoju kariery i metody dostępu do nich.
@@ -128,7 +131,7 @@ Kandydaci mogą łatwo składać aplikacje na stanowisko, jeśli skonfigurujesz 
 1. Zaloguj się w Attract jako administrator.
 2. Wybierz przycisk **ustawienia** (symbol koła zębatego) w prawym górnym rogu strony, a następnie wybierz opcję **Centrum administracyjnego**.
 3. Wybierz kartę **integracji LinkedIn** i połącz z kontem LinkedIn Recruiter.
-4. W integracji **LinkedIn Recruiter System Connect** zaznacz **Wł.** dla ustawienia **Zgłoś się za pomocą LinkedIn**.
+4. W **integracji LinkedIn Recruiter System Connect** zaznacz **Wł.** dla ustawienia **Zgłoś się za pomocą LinkedIn**.
 
 Po włączeniu tego ustawienia kandydaci będą mogli zgłaszać się, używając danych profilowych na LinkedIn. Gdy kandydaci składają aplikacje, naciskając przycisk **Zgłoś się za pomocą LinkedIn**, są proszeni o uwierzytelnienie się na LinkedIn, jeśli nie są zalogowani. Po uwierzytelnieniu kandydatów ich profile LinkedIn zastępują wszelkie istniejące dane profilu wyświetlana na stronie zgłoszenia. Kandydaci mogą edytować informacje i przesłać zgłoszenie. Jeśli kandydat opuści stronę bez zgłoszenia się na stanowisko, jego dane profilowe nie zostaną zaktualizowane w Attract.
 

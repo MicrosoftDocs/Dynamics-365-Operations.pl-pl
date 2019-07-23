@@ -3,7 +3,7 @@ title: Co nowego, jakie zmiany
 description: Ta strona wskazuje tematy, które mogą pomóc dowiedzieć się o nowych funkcjach w najnowszych wersjach programu Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: bc13efe11f383157338ccd6b2ae378ee1f92a698
-ms.sourcegitcommit: bbc9aa0d6b94a942e1f4d5b038601509dcc87937
+ms.openlocfilehash: 42c31195a0b1a785afadfefc33f5cf7e1a6fce1f
+ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1619199"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "1632012"
 ---
 # <a name="whats-new-or-changed"></a>Nowości i zmiany
 
@@ -63,7 +63,7 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 <td>10.0.3</td>
 <td>10.0.107</td>
 <td>2019 czerwca</td>
-<td><a href="whats-new-changed-10-0-3.md">Funkcje podglądu w Dynamics 365 for Finance and Operations w wersji 10.0.3 (czerwiec 2019)</a></td>
+<td><a href="whats-new-changed-10-0-3.md">Nowości i zmiany w programie Dynamics 365 for Finance and Operations w wersji 10.0.3 (czerwiec 2019)</a></td>
 </tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.2</td>
@@ -183,7 +183,7 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 <td>Aktualizacja platformy Update 27</td>
 <td>7.0.5286</td>
 <td>2019 czerwca</td>
-<td><a href="whats-new-platform-update-27.md">Funkcje podglądu w aktualizacji Platform update 27 rozwiązania Dynamics 365 for Finance and Operations (czerwiec 2019)</a></td>
+<td><a href="whats-new-platform-update-27.md">Nowości i zmiany na platformie Dynamics 365 for Finance and Operations w aktualizacji 27 (czerwiec 2019)</a></td>
 </tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Aktualizacja platformy Update 26</td>

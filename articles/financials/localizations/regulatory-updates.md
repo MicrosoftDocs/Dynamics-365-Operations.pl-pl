@@ -3,7 +3,7 @@ title: Aktualizacje wymagane przepisami prawa
 description: Ten temat zawiera listę planowanych i udostępnionych aktualizacji wymaganych przepisami prawa dla programu Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/16/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
-ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
+ms.openlocfilehash: ba01fe7ad3e4326e8ab52b78220d3ba79e94af7c
+ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "1593350"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624318"
 ---
 # <a name="regulatory-updates"></a>Aktualizacje wymagane przepisami prawa
 
@@ -67,6 +67,13 @@ Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych
 |      Oczekujące            |   10.0.3      | Polska     |   JPK faktur (JPK_FA) wersja 2 od 1 lipca 2019 r.  |
 |      Oczekujące            |   10.0.3      | Brazylia   |   Korekty dokumentu fiskalnego ICMS obsługujące tabelę 5.2   |
 |      Oczekujące            |   10.0.3      | Brazylia    |   NF-e dekret 54.308/18 (RS)   |
+  | Oczekujące            |   10.0.4      | Brazylia    |   Przychodzący dokument fiskalny 66   |
+   | Oczekujące            |   10.0.4      | Brazylia    |   NF-e i NFC-e-rozdzielczość 13/2019 i rozporządzenie SUCIEF 55/2019-RJ — nowe warunki dotyczące wykluczania znaczników na wyjściu w NF-e   |
+   | Oczekujące            |   10.0.4      | Indie   |   Wyświetlanie „Miejsce dostawy” i „Stan” w fakturze podatkowej GST  |
+   | Oczekujące            |   10.0.4      | Meksyk   |  Deklaracja strony trzeciej DIOT — zmiany w układzie 2019   |
+   | Oczekujące            |   10.0.4      | Brazylia    |   NF-e ICMS — ST — rozporządzenie CAT 42/18 dla SP o stanie 42/18
+   | Oczekujące            |   10.0.4      | Brazylia    |   NF-e dekret 54.308/18 - RS NF   |
+   
 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

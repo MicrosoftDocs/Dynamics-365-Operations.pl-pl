@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85d2370353520ee588dfe2aedf9998d707f0eda6
-ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
+ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
+ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "1592667"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625879"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Projektant formuł w module Raportowanie elektroniczne (ER)
 
@@ -651,6 +651,11 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <td>NUMBERFORMAT (liczba, format)</td>
 <td>Zwracanie określonej liczby w określonym formacie w postaci ciągu tekstowego. (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standardowe</a> i <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">niestandardowe</a>). Kontekst, w którym ta funkcja jest uruchamiana, decyduje o kulturze używanej do formatowania liczb.</td>
 <td>W kulturze EN-US <strong>NUMBERFORMAT (0,45, &quot;p&quot;)</strong> zwraca <strong>&quot;% 45,00&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> zwraca <strong>&quot;10&quot;</strong>.</td>
+</tr>
+<tr>
+<td>NUMBERFORMAT (liczba, format, kultura)</td>
+<td>Zwracanie określonego ciągu tekstowego o określonym numerze w określonym formacie i danej kulturze. (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">standardowe</a> i <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">niestandardowe</a>.).</td>
+<td><strong>NUMBERFORMAT (10/3, „F2”, „de”)</strong> powoduje <strong>zwrócenie 3,33,</strong> a <strong>NUMBERFORMAT (10/3, „F2”, „en-us”)</strong> powoduje <strong>zwrócenie 3.33</strong>.</td>
 </tr>
 <tr>
 <td>NUMERALSTOTEXT (liczba, język, waluta, flaga nazwy waluty wydruku, miejsca dziesiętne)</td>

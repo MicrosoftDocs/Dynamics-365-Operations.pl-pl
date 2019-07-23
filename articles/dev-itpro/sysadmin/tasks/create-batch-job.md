@@ -3,7 +3,7 @@ title: Tworzenie zadania wsadowego
 description: Zadanie wsadowe to grupa podzadań, które są przesyłane do wystąpienia serwera obiektów aplikacji (AOS) w celu automatycznego przetworzenia.
 author: maertenm
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fbb844ebcf8d4b47b127132a5bf0ea45fa40f747
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d211dcd7cb47df135d395d2a993429746aa35a85
+ms.sourcegitcommit: 6ba4006fb6a67ddd4b1e54e3d62b9d1239b5e5a3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562888"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "1700848"
 ---
 # <a name="create-a-batch-job"></a>Tworzenie zadania wsadowego
 
@@ -31,21 +31,27 @@ Zadanie wsadowe to grupa podzadań, które są przesyłane do wystąpienia serwe
 
 
 ## <a name="create-the-batch-job"></a>Tworzenie zadania wsadowego
-1. Wybierz kolejno opcje Administrowanie systemem > Zapytania > Zadania wsadowe.
-2. Kliknij przycisk Nowy.
-3. W polu Opis stanowiska wpisz wartość.
-4. W polu Planowana data/godzina rozpoczęcia wprowadź datę i godzinę.
-5. Kliknij przycisk Zapisz.
+1. Otwórz **Okienko nawigacji > Moduły > Administracja systemu > Zapytania > Zadania wsadowe**.
+2. Kliknij przycisk **Nowy**.
+3. W polu **Opis stanowiska** wpisz wartość.
+4. W polu **Zaplanowana data/godzina rozpoczęcia** wpisz datę i godzinę.
+5. Kliknij przycisk **Zapisz**.
 
 ## <a name="create-a-recurrence"></a>Tworzenie cyklu
-1. W okienku akcji kliknij opcję Zadanie wsadowe.
-2. Kliknij przycisk Cykl.
-    * Te opcje służą do wprowadzania zakresu i wzorca cyklu.  
-3. Kliknij przycisk OK.
+1. W Panelu akcji kliknij **Zadanie wsadowe**.
+2. Kliknij **Cykl**. Te opcje służą do wprowadzania zakresu i wzorca cyklu.  
+3. Kliknij przycisk **OK**.
 
 ## <a name="add-alerts"></a>Dodawanie alertów
-1. W okienku akcji kliknij opcję Zadanie wsadowe.
-2. Kliknij opcję Alerty.
-    * Wskaż, czy komunikaty alarmowe mają być wysłane, po zakończeniu zadania wsadowego, wystąpieniu w nim błędu lub anulowaniu. Następnie określ, czy alerty mają być wyświetlane w postaci komunikatów podręcznych.   
-3. Kliknij przycisk OK.
+1. W Panelu akcji kliknij **Zadanie wsadowe**.
+2. Kliknij **Ostrzeżenia**. Wskaż, czy komunikaty alarmowe mają być wysłane, po zakończeniu zadania wsadowego, wystąpieniu w nim błędu lub anulowaniu. Następnie określ, czy alerty mają być wyświetlane w postaci komunikatów podręcznych.   
+3. Kliknij przycisk **OK**.
 
+## <a name="adjust-batch-job-status"></a>Dostosuj status zadania wsadowego
+1. Otwórz **Administracja systemu > Zapytania > Zadania wsadowe**.
+2. Wybierz właściwe zadanie wsadowe.
+3. W Panelu akcji kliknij **Zadanie wsadowe > Funkcje > Zmień status**.
+4. Wybierz właściwy status:
+    - **Wstrzymane**: Ustaw status zadania wsadowego jako **wstrzymane**, żeby zostało usunięte z planu zadań wsadowych. Jest to odpowiednik *stop*.
+    - **Oczekujące**: Ustaw status zadania wsadowego jako **oczekujące**, żeby zostało wpisane na listę zadań oczekujących na dodanie do planu zadań wsadowych. Jest to odpowiednik *iść*.
+5. Kliknij przycisk **OK**.

@@ -3,7 +3,7 @@ title: 'Przepływ pracy: często zadawane pytania'
 description: W tym temacie znajdują się odpowiedzi na często zadawane pytania dotyczące systemu przepływu pracy w Microsoft Dynamics 365 for Finance and Operations.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,25 +15,39 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6240b1b5136937aa47f455547fed6f0c7c08e2c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: adcc9bbc422a3fddfd51d248daf95c0da6d4c9bb
+ms.sourcegitcommit: 8cf77e9171d6cad8ae6c8bfad9e4f9a46fef6d23
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509298"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "1689007"
 ---
-# <a name="workflow-system"></a>System przepływu pracy
+# <a name="workflow-faq"></a>Przepływ pracy — często zadawane pytania
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie znajdują się odpowiedzi na często zadawane pytania dotyczące systemu przepływu pracy w Microsoft Dynamics 365 for Finance and Operations.
 
-## <a name="notifications"></a>Powiadomienia
-
-### <a name="why-are-multiple-notifications-received-when-a-work-item-is-rejected"></a>Dlaczego otrzymuję wiele powiadomień, gdy element pracy został odrzucony?
+## <a name="why-are-multiple-notifications-received-when-a-work-item-is-rejected"></a>Dlaczego otrzymuję wiele powiadomień, gdy element pracy został odrzucony?
 Gdy element pracy został odrzucony, zostaje zakończony jako odrzucony. Inny element pracy zostanie utworzony i przypisany do inicjatora. Oznacza to, że inicjator otrzyma powiadomienie o odrzuconym elemencie pracy, a osobne powiadomienie zostanie wysłane do użytkownika przypisanego nowego elementu pracy „Zażądano zmiany”. 
 
 Każde powiadomienie dotyczy innego elementu pracy, ale podobieństwa mogą powodować zamieszanie. Szukamy sposobów, aby to poprawić w przyszłej wersji.
 
-### <a name="why-are-my-workflow-exports-failing"></a>Dlaczego moje próby eksportu przepływu pracy kończą się niepowodzeniem?
+## <a name="why-are-my-workflow-exports-failing"></a>Dlaczego moje próby eksportu przepływu pracy kończą się niepowodzeniem?
 Obecnie istnieje ograniczenie funkcji eksportu przepływu pracy, które zapobiega przekraczaniu 48 znaków w nazwach przepływów pracy. Użycie nazwy, która jest dłuższa niż 48 znaków może spowodować wyświetlenie komunikatu o błędzie „Serwer nie może uwierzytelnić żądania” lub uniemożliwienie wyeksportowania pliku bez typu pliku. Poniższy wpis w blogu zawiera dodatkowe szczegóły [Rozwiązywanie problemów z eksportowaniem przepływów pracy](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting).
+
+## <a name="can-the-submitter-of-a-workflow-also-approve-the-workflow"></a>Czy osoba przesyłająca przepływ pracy może również zatwierdzić przepływ pracy?
+Tak, osoba przesyłająca przepływ pracy może również zatwierdzić przepływ pracy, jeśli jest skonfigurowany w ten sposób. Aby temu zapobiec, należy skonfigurować **Parametry przepływu pracy >Ogólne > Osoba zatwierdzająca > Nie zezwalają na zatwierdzenie przez osobę przesyłającą** na wartości **Tak**.
+
+## <a name="can-i-add-alerts-to-workflows-to-provide-notifications-to-users"></a>Czy mogę dodawać alerty do przepływów pracy w celu dostarczania powiadomień użytkownikom?
+Poniżej znajduje się kilka kluczowych obszarów, w których należy pamiętać przy dodawaniu alertów do przepływów pracy w celu dostarczenia powiadomień:
+- Alerty a mechanizmy powiadomień przepływu pracy
+    - Alerty można konfigurować do wprowadzania zmian w rekordach. W przepływach pracy są zmieniane rekordy, dzięki czemu można skonfigurować alert związany ze zmianą rekordu spowodowany przez przepływ pracy. Ponieważ jednak przepływy pracy mają różne wbudowane opcje powiadamiania, korzystanie z alertów nie jest idealne.
+- Standardowe powiadomienia z przepływów pracy 
+    - Przepływy pracy zostały utworzone w powiadomieniach pocztą e-mail. Klient może tak skonfigurować powiadomienia, aby wiadomości e-mail były wysłane do użytkowników. Te powiadomienia nie skutkują komunikatami centrum akcji dla użytkowników.
+    - W przyszłej aktualizacji zostanie dodany komunikat centrum akcji, dzięki czemu użytkownikowi zostanie przypisany element pracy przepływu pracy. 
+- Dodawanie powiadomień do przepływów pracy
+    - Komunikaty centrum akcji mogą być tworzone dla określonych użytkowników, takich jak wiadomość utworzona z przepływu pracy w X ++.
+    - [Przepływy pracy mają zdarzenia biznesowe](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), których odbiorca może wywoływać w celu wyzwolenia na wyszukiwane przez nich powiadomienia.   
+
+Podsumowując, jeśli użytkownik nie otrzyma odpowiedniego powiadomienia z centrum akcji, gdy ma przypisany element pracy przepływu pracy, będzie korzystać [ze zdarzeń biznesowych przepływu pracy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) w Microsoft Flow w celu wprowadzenia dodatkowych lub różnych powiadomień.

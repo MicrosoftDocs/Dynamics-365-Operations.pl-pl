@@ -3,7 +3,7 @@ title: Profile księgowania dostawców
 description: Profile księgowania dostawców umożliwiają nadzór nad księgowaniem transakcji z dostawcami w księdze głównej.
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e81f8b472e7ac7578c184716dcb4e5f3d7aeb65d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c3f62df7ec5627556561db950d54ff4347d2b4d6
+ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512175"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625902"
 ---
 # <a name="vendor-posting-profiles"></a>Profile księgowania dostawców
 
@@ -34,22 +34,22 @@ Profile księgowania dostawców umożliwiają nadzór nad księgowaniem transakc
 <a name="vendor-posting-profiles"></a>Profile księgowania dostawców
 -----------------------
 
-Profile księgowania dostawców pozwalają na przypisywanie kont księgi głównej i ustawień dokumentów do wszystkich dostawców, grupy dostawców lub jednego dostawcy. Te ustawienia będą obowiązywać podczas tworzenia zamówień zakupu, faktur od dostawcy i płatności gotówką. W przypadku niektórych transakcji można wybrać profil księgowania, który różni się od profilów księgowania ustawionych dla transakcji na tej stronie i ma względem nich pierwszeństwo. Domyślny profil księgowania jest zdefiniowany na skróconej karcie Księga i podatek na stronie parametrów rozrachunków z dostawcami. Domyślny profil księgowania jest następnie automatycznie uwzględniany w nagłówku nowych dokumentów, gdzie można go zmienić na inny profil księgowania w razie potrzeby.
+Profile księgowania dostawców pozwalają na przypisywanie kont księgi głównej i ustawień dokumentów do wszystkich dostawców, grupy dostawców lub jednego dostawcy. Te ustawienia będą obowiązywać podczas tworzenia zamówień zakupu, faktur od dostawcy i płatności gotówką. W przypadku niektórych transakcji można wybrać profil księgowania, który różni się od profilów księgowania ustawionych dla transakcji na tej stronie i ma względem nich pierwszeństwo. Domyślny profil księgowania jest zdefiniowany na skróconej karcie **Księga główna i podatek** na stronie  **Parametry rozrachunków z dostawcami**. Domyślny profil księgowania jest następnie automatycznie uwzględniany w nagłówku nowych dokumentów, gdzie można go zmienić na inny profil księgowania w razie potrzeby.
 
-Można także skojarzyć definicje księgowania transakcji z typami księgowania transakcji na stronie Definicje księgowania transakcji. Definicja księgowania umożliwia kontrolowanie księgowania transakcji dostawcy w księdze głównej zamiast przez profile księgowania.
+Można także skojarzyć definicje księgowania transakcji z typami księgowania transakcji na stronie **Definicje księgowania transakcji** . Definicja księgowania umożliwia kontrolowanie księgowania transakcji dostawcy w księdze głównej zamiast przez profile księgowania.
 
 ## <a name="creating-a-posting-profile"></a>Tworzenie profilu księgowania
 ### <a name="setup"></a>**Konfiguracja**
 
-Służy do określania kont księgowych używanych podczas księgowania transakcji z wybranym profilem księgowania. Służy do wybierania kodu konta i, jeżeli jest to możliwe, numeru konta lub grupy dla wybranego profilu księgowania. W procesie księgowania najodpowiedniejszy profil księgowania dla każdej transakcji jest wyszukiwany według najbardziej charakterystycznej kombinacji kodu konta, numeru konta lub numeru grupy z następującym priorytetem:
+Służy do określania kont księgowych używanych podczas księgowania transakcji z wybranym profilem księgowania. Służy do wybierania kodu konta i, jeżeli jest to możliwe, numeru konta lub grupy dla wybranego profilu księgowania. W procesie księgowania najodpowiedniejszy profil księgowania dla każdej transakcji jest wyszukiwany według najbardziej charakterystycznej kombinacji kodu konta, numeru konta lub gyupy i numeru z następującym priorytetem:
 
 | Wartość pola **Kod konta** | Wartość pola **Numer konta/grupy**        | Priorytet wyszukiwania |
 |------------------------------|---------------------------------------------|-----------------|
-| **Tabela**                    | Konto określonego dostawcy                     | 1 przypada na wpłatę z zysku na rzecz budżetu państwa               |
+| **Tabela**                    | Konto określonego dostawcy                     | 1               |
 | **Grupa**                    | Grupa dostawców, do której należy dostawca. | 2               |
-| **Wszystkie**                      | Puste                                       | 3               |
+| **Wszystkich**                      | Puste                                       | 3               |
 
-Jeśli wszystkie transakcje dostawcy mają mieć ten sam profil księgowania, należy ustawić tylko jeden profil księgowania o wartości Wszystko polu Kod konta. Określ następujące wartości do konfigurowania profilu księgowania:
+Jeśli wszystkie transakcje dostawcy mają mieć ten sam profil księgowania, należy ustawić tylko jeden profil księgowania o wartości **Wszystko** w polu **Kod konta**. Określ następujące wartości do konfigurowania profilu księgowania.
 
 <table>
 <thead>
@@ -71,32 +71,20 @@ Jeśli wszystkie transakcje dostawcy mają mieć ten sam profil księgowania, na
 <td><strong>Kod konta</strong></td>
 <td>Umożliwia określenie, czy profil księgowania dotyczy określonego dostawcy, grupy dostawców czy wszystkich dostawców:
 <ul>
-<li><strong>Tabela</strong> — profil księgowania dotyczy jednego dostawcy. Wybierz konto dostawcy w polu Numer konta/grupy.</li>
-<li><strong>Grupa</strong> — profil księgowania dotyczy grupy dostawców. Wybierz grupę dostawców w polu Numer konta/grupy.</li>
-<li><strong>Wszyscy</strong> — profil księgowania dotyczy wszystkich dostawców. Pole Numer konta/grupy zostaw niewypełnione</li>
+<li><strong>Tabela</strong> — profil księgowania dotyczy jednego dostawcy. Wybierz konto dostawcy w polu <strong>Numer konta/Numer grupy</strong>.</li>
+<li><strong>Grupa</strong> — profil księgowania dotyczy grupy dostawców. Wybierz grupę dostawców w polu <strong>Numer konta/Numer grupy</strong>.</li>
+<li><strong>Wszyscy</strong> — profil księgowania dotyczy wszystkich dostawców. Pole <strong>Numer konta/ Numer grupy</strong> zostaw niewypełnione.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Numer konta/grupy</strong></td>
-<td>W przypadku wybrania opcji Tabela w polu Kod konta należy wybrać numer konta dostawcy skojarzony z profilem księgowania. W przypadku wybrania opcji Grupa należy wybrać grupę dostawców. W przypadku wybrania opcji Wszystko należy pozostawić to pole puste.</td>
+<td>W przypadku wybrania opcji <strong>Tabela</strong> w polu <strong>Kod konta</strong> należy wybrać numer konta dostawcy skojarzony z profilem księgowania. W przypadku wybrania opcji <strong>Grupa</strong> należy wybrać grupę dostawców. W przypadku wybrania opcji <strong>Wszystko</strong> należy pozostawić to pole puste.</td>
 </tr>
 <tr class="odd">
 <td><strong>Konto rozrachunkowe</strong></td>
-<td>Umożliwia wybranie konta księgowego, które będzie używane jako konto rozrachunkowe dostawcy dla dostawców objętych tym profilem księgowania.
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Uwaga" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Uwaga</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Po wybraniu przełącznika Użyj definicji księgowania na stronie Parametry księgi głównej transakcja definicji księgowania dla faktur od dostawcy jest używana zamiast konta rozrachunkowego.</td>
-</tr>
-</tbody>
-</table>
-</div></td>
+<td>Umożliwia wybranie konta księgowego, które będzie używane jako konto rozrachunkowe dostawcy dla dostawców objętych tym profilem księgowania. Parametr <strong>Nie zezwalaj na ręczne wprowadzanie</strong> dla tego konta głównego zostanie oznaczony. Jeśli później usuniesz to konto z profilu księgowania, sprawdź ustawienie  opcji <strong>Nie zezwalaj na ręczne wprowadzanie wpisów </strong> na stronie <strong>Konta główne</strong>. 
+<p><strong>Uwaga: </strong>Po wybraniu przełącznika <strong>Użyj definicji księgowania</strong> na stronie <strong>Parametry księgi głównej</strong> transakcja definicji księgowania dla faktur od dostawcy jest używana zamiast konta rozrachunkowego.</p>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Konto rozliczeniowe</strong></td>
@@ -105,24 +93,12 @@ Jeśli wszystkie transakcje dostawcy mają mieć ten sam profil księgowania, na
 <tr class="odd">
 <td><strong>Przedpłaty podatku</strong></td>
 <td>Wybierz konto dla płatności podatków z góry.
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Uwaga" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Uwaga</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Profil księgowania używany, gdy płatność jest oznaczona jako przedpłata jest zaznaczony w profilu księgowania z polem załącznika arkusza zaliczki w księdze i obszarze podatku strony Parametry rozrachunków z dostawcami.</td>
-</tr>
-</tbody>
-</table>
-</div></td>
+<p><strong>Uwaga:</strong> Profil księgowania używany, gdy płatność jest oznaczona jako przedpłata jest zaznaczony w profilu <strong>Księgowanie</strong> z polem <strong>Załącznik arkusza zaliczki</strong> w obszarze <strong>Księga i podatek</strong> na stronie <strong>Parametry rozrachunków z dostawcami</strong>.</p>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Przyjęcie</strong></td>
-<td>Wybierz konto księgowe, na którym zostały zaksięgowane informacje o niezatwierdzonych fakturach od dostawcy. Informacje są wprowadzane w arkuszu rejestru faktur. Na przykład użytkownik wprowadza najbardziej podstawowe informacje o otrzymywanych fakturach dostawców w rejestrze faktur. Podczas księgowania rejestru faktur transakcje są księgowane na koncie wprowadzonym w tym miejscu oraz w polu Konto przeciwstawne. Po zatwierdzeniu faktur zadłużenie jest przenoszone z Konto przybycia na konto rozrachunkowe dostawcy.</td>
+<td>Wybierz konto księgowe, na którym zostały zaksięgowane informacje o niezatwierdzonych fakturach od dostawcy. Informacje są wprowadzane w arkuszu rejestru faktur. Na przykład użytkownik wprowadza najbardziej podstawowe informacje o otrzymywanych fakturach dostawców w rejestrze faktur. Podczas księgowania rejestru faktur transakcje są księgowane na koncie wprowadzonym w tym miejscu oraz w polu <strong>Konto przeciwstawne</strong>. Po zatwierdzeniu faktur zadłużenie jest przenoszone z konta przybycia na konto rozrachunkowe dostawcy.</td>
 </tr>
 <tr class="odd">
 <td><strong>Konto przeciwstawne</strong></td>
@@ -136,15 +112,10 @@ Jeśli wszystkie transakcje dostawcy mają mieć ten sam profil księgowania, na
 
 Dla transakcji z tym profilem księgowania określ, czy transakcje będą rozliczane automatycznie, czy będą obliczane odsetki i czy będą wysyłane ponaglenia. Można również wybrać konto, które będzie używane podczas zamykania transakcji z wybranym profilem księgowania.
 
-Określ następujące wartości do konfigurowania profilu księgowania:
+Określ następujące wartości do konfigurowania profilu księgowania.
 
 | Pole          | Opis                                                                                                                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Rozliczenie** | Wybierz tę opcję, aby włączyć automatyczne rozliczanie transakcji, które mają ten profil księgowania. Jeśli ta opcja jest wyczyszczona, należy ręcznie rozliczyć transakcje na stronie Rozliczanie otwartych transakcji. |
+| **Rozliczenie** | Wybierz tę opcję, aby włączyć automatyczne rozliczanie transakcji, które mają ten profil księgowania. Jeśli ta opcja jest wyczyszczona, należy ręcznie rozliczyć transakcje na stronie **Rozliczanie otwartych transakcji**. |
 | **Anuluj**     | Wybierz tę opcję, aby umożliwić anulowanie transakcji, które mają ten profil księgowania.                                                                                                               |
 | **Zamknij**      | Umożliwia wybranie docelowego profilu księgowania, który ma zostać włączony po zamknięciu transakcji bieżącego profilu księgowania. Transakcja jest traktowana jako zamknięta, jeśli jest w pełni rozliczona.                                       |
-
-
-
-
-

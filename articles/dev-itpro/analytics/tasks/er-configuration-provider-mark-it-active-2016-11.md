@@ -1,9 +1,9 @@
 ---
 title: Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych
-description: W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć dostawcę konfiguracji dla raportowania elektronicznego (ER).
+description: W tym temacie wyjaśniono, w jaki sposób użytkownik przypisany do roli Administratora Systemu lub Programisty Elektronicznego Raportowania może utworzyć dostawcę konfiguracji dla Elektronicznego Raportowania (ER) w Dynamics 365 for Finance and Operations.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,33 +16,31 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4b1cd7a02cdf4c650af50199f4425eb53cef0a8
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: e02cd51478528db56a4f50b134fabf7f9e1dc8ea
+ms.sourcegitcommit: a1354c6218b328d4d7dcc149d1339a7af10c48bf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595402"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "1723127"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć dostawcę konfiguracji dla raportowania elektronicznego (ER). Każda konfiguracja ER będzie się odnosiła do dostawcy jako autora konfiguracji. W tym przykładzie utworzysz dostawcę konfiguracji dla przykładowej firmy Litware, Inc. Podane kroki można wykonać w dowolnej firmie, ponieważ dostawcy konfiguracji ER są współużytkowani przez wszystkie firmy.
-
+W tym temacie wyjaśniono, w jaki sposób użytkownik przypisany do roli Administratora Systemu lub Programisty Elektronicznego Raportowania może utworzyć dostawcę konfiguracji dla Elektronicznego Raportowania (ER) w Dynamics 365 for Finance and Operations. Każda konfiguracja ER będzie się odnosiła do dostawcy jako autora konfiguracji. W tym przykładzie utworzysz dostawcę konfiguracji dla przykładowej firmy Litware, Inc. Podane kroki można wykonać w dowolnej firmie, ponieważ dostawcy konfiguracji ER są współużytkowani przez wszystkie firmy.
 
 ## <a name="create-a-provider"></a>Tworzenie dostawcy
-1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
-2. Kliknij opcję Dostawcy konfiguracji.
-3. Kliknij przycisk Nowy.
-    * Rekord dostawcy ma unikatową nazwę i adres URL. Przejrzyj zawartość tej strony i pomiń procedurę, jeśli rekord firmy Litware, Inc. (https://www.litware.com) już istnieje.  
-4. W polu Nazwa wpisz „Litware, Inc.”.
-    * Litware, Inc.  
-5. W polu Adres internetowy wpisz wartość „https://www.litware.com”.
-    * https://www.litware.com  
-6. Kliknij przycisk Zapisz.
-7. Zamknij stronę.
+1. Otwórz **okienko nawigacji** w górnym lewym rogu i wybierz **Administracja organizacji**.
+2. Otwórz **Miejsca pracy > Electroniczne Raportowanie**.
+3. Otwórz **Powiązane linki > Dostawcy konfiguracji**.
+4. Wybierz pozycję **Nowy**.
+    - Rekord dostawcy ma unikatową nazwę i adres URL. Przejrzyj zawartość tej strony i pomiń procedurę, jeśli rekord firmy Litware, Inc. (https://www.litware.com) już istnieje.  
+5. W polu Nazwa wpisz `Litware, Inc.`.
+6. W polu adres internetowy wpisz `https://www.litware.com`.
+7. Wybierz opcję **Zapisz**.
+8. Zamknij stronę.
 
 ## <a name="select-as-an-active-provider"></a>Ustawianie jako aktywnego dostawcy
 1. Zaznacz dostawcę Litware, Inc.  
-2. Kliknij opcję Ustaw jako aktywny.
+2. Wybierz **Aktywuj**.
 

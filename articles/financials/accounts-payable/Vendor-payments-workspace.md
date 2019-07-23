@@ -3,7 +3,7 @@ title: Obszar roboczy płatności dla dostawców
 description: Ten temat zawiera informacje o komórkowym obszarze roboczym Płatności dla dostawców. Obszar roboczy Płatności dla dostawców zawiera informacje związane z przetwarzaniem płatności dla dostawców.
 author: abruer
 manager: AnnBe
-ms.date: 05/09/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 789acd3f403e322ec00388ca8184ccd30c3ea436
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6f5ffe65b2f9be7423f1fe420594c936e15550fb
+ms.sourcegitcommit: 6f0e5bf82a5f61bab52c3cf4c82849fae5c5d50b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509229"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702942"
 ---
 # <a name="vendor-payments-workspace"></a>Obszar roboczy płatności dla dostawców
 
 [!include [banner](../includes/banner.md)]
 
 Obszar roboczy **Płatności dla dostawców** zawiera informacje związane z przetwarzaniem płatności dla dostawców. Ten obszar roboczy zawiera widok **Moja praca** i stronę **Analizy**. Widok **Moja praca** zawiera kafelki podsumowań, siatki transakcji z dostawcami i informacje o odnośnych dostawcach. Strona **Analizy** wykorzystuje funkcje programu Microsoft Power BI, aby pokazywać wizualizacje dotyczące płatności dla dostawców.
+
+## <a name="setup-needed-to-view-power-bi-content"></a>Konfiguracja potrzebna do wyświetlenia zawartości Power BI.
+
+Aby dane były wyświetlane w elementach wizualnych **Płatność dostawców** Power BI, należy wykonać następujące czynności konfiguracyjne.
+1. Otwórz **Administracja Systemu > Konfiguracja > Parametry Systemu** i ustaw **Walutę systemu** oraz **Kurs wymiany systemu**.
+2. Przejdź do ustawień **Księga główna > Ustawienie > Księga** aby określić **Waluta rozliczeniowa** i **Typ kursu wymiany**. 
+2. Zdefiniuj kursy wymiany między walutami Transakcji a Walutą księgową, Walutą księgową a Walutą systemu. Żeby to zrobić, otwórz **Księga Ogólna > Waluty > Kursy wymiany walut**.
+3. Przejdź do **Administracja systemu > Ustawienie > Magazynu jednostki**, aby odświeżyć **VendPaymentBIMeasure** miarę agregacji. 
 
 ## <a name="my-work-view"></a>Widok Moja praca
 

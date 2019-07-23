@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia.
 author: sericks007
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620652"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624914"
 ---
 # <a name="removed-or-deprecated-features"></a>Usunięte lub przestarzałe funkcje
 
@@ -40,7 +40,10 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 > Szczegółowe informacje o obiektów w rozwiązaniu Finance and Operations można znaleźć w [raportach z wykazami parametrów technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach programu Finance and Operations.
 
-## <a name="dynamics-365-for-finance-and-operations-1004"></a>Dynamics 365 for Finance and Operations 10.0.4 
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 z aktualizacją platformy 28
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 z aktualizacją Platform update 28 jest dostępna dla użytkowników docelowych w ramach wersji wstępnej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Dostępność aktualizacji usługi](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Francja: eksportowanie danych księgowych FEC w XML
 
@@ -52,17 +55,12 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | Wycofane. Docelowy okres usuwania funkcji to lipiec 2020 r. |
 
-=======
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 z aktualizacją platformy 28
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 z aktualizacją Platform update 28 jest dostępna dla użytkowników docelowych w ramach wersji wstępnej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Dostępność aktualizacji usługi](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="legacy-navigation-bar"></a>Pasek nawigacji starego typu
 
 |   |  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Wyrównanie nagłówka z innymi produktami Dynamics i Office. Więcej szczegółów można znaleźć w artykule [Zaktualizowany pasek nawigacyjny wyrównany z nagłówkiem pakietu Office](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).
+| **Przyczyna wycofania/usunięcia** | Wyrównanie nagłówka z innymi produktami Dynamics i Office. Więcej szczegółów można znaleźć w artykule [Zaktualizowany pasek nawigacyjny wyrównany z nagłówkiem pakietu Office](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Zamieniona przez inną funkcję?**   | Począwszy od aktualizacji platformy 24, został wprowadzony nowy pasek nawigacyjny z funkcją wyszukiwania. |
 | **Powiązane obszary produktów**         | Klient sieci Web |
 | **Opcja wdrażania**              | Wszystkich |
@@ -71,8 +69,6 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 ## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 z aktualizacją platformy 26
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.2 z aktualizacją Platform update 26 jest dostępna dla użytkowników docelowych w ramach wersji wstępnej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Dostępność aktualizacji usługi](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="legacy-default-action-behavior"></a>Starsze domyślne zachowanie akcji
 
@@ -116,9 +112,6 @@ Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycz�
 | **Stan**                         | Wycofane: docelowy okres usuwania funkcji to kwiecień 2020 roku. |
 
 ## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 z aktualizacją platformy 25
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 z aktualizacją Platform update 25 jest dostępna dla użytkowników docelowych w ramach wersji wstępnej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Dostępność aktualizacji usługi](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Wycofane interfejsy API i potencjalnie istotne zmiany
 
@@ -715,7 +708,7 @@ Dwa formaty eksportowania płatności są dostępne dla Finlandii. LM02 (FI) jes
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Rozwiązanie WMS II (Zarządzania magazynem II), które było dostępne w module **Zarządzanie zapasami**, dubluje funkcje dostępne w module **Zarządzanie magazynem**, który został udostępniony w systemie Microsoft Dynamics AX 2012 R3.                                                                         |
-| **Zamieniona przez inną funkcję?**   | Moduł **Zarządzanie magazynem**, który został udostępniony w wersjach systemu AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 i Microsoft Dynamics AX 2012 R3 CU9, zastępuje funkcje modułu WMS II. Nowy moduł ma bardziej zaawansowane funkcje i elastyczniejsze procesy zarządzania magazynem niż oferowane w module Zarządzanie magazynem II. |
+| **Zamieniona przez inną funkcję?**   | Moduł **Zarządzanie magazynem**, który został udostępniony w wersjach systemu AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 i Dynamics AX 2012 R3 CU9, zastępuje funkcje modułu WMS II. Nowy moduł ma bardziej zaawansowane funkcje i elastyczniejsze procesy zarządzania magazynem niż oferowane w module Zarządzanie magazynem II. |
 | **Powiązane obszary produktów**         | Zarządzanie zapasami, sprzedaż i marketing, zaopatrzenie i sourcing   |
 | **Stan**                         | Usunięto w rozwiązaniu Dynamics 365 for Operations w wersji 1611.    |
 
@@ -877,7 +870,7 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta funkcja została zastąpiona inną funkcją. |
-| **Zamieniona przez inną funkcję?**   | Common Data Service                                      |
+| **Zamieniona przez inną funkcję?**   | Common data service                                      |
 | **Powiązane obszary produktów**         | Connector for Microsoft Dynamics                         |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.                           |
 
@@ -964,7 +957,7 @@ W programie Dynamics AX 2012 R3 aplikacja Retail Modern POS mogła się łączy�
 
 |   |  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Bezpośrednia łączność z bazą danych wymagała protokołów o słabszych zabezpieczeniach i była używana głównie do osiągnięcia najwyższej wydajności. Ze względu na ulepszenia w dziedzinach wydajności i zabezpieczeń, które wprowadzono przy okazji programu Dynamics 365 for Finance and Operations, ta funkcjonalność wywołuje teraz więcej problemów, niż rozwiązuje. |
+| **Przyczyna wycofania/usunięcia** | Bezpośrednia łączność z bazą danych wymagała protokołów o słabszych zabezpieczeniach i była używana głównie do osiągnięcia najwyższej wydajności. Ze względu na ulepszenia w dziedzinach wydajności i zabezpieczeń, które wprowadzono w rozwiązaniu Finance and Operations, ta funkcjonalność wywołuje teraz więcej problemów, niż rozwiązuje. |
 | **Zamieniona przez inną funkcję?**   | Nr Teraz jest obsługiwana tylko standardowa komunikacja za pośrednictwem serwera sieci sprzedaży.  |
 | **Powiązane obszary produktów**         | Baza danych kanału/Retail Modern POS   |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.  |
@@ -1246,7 +1239,7 @@ Funkcja firm wirtualnych nie jest już obsługiwana w systemie Dynamics AX. Funk
 
 |   |  | 
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | - Firmy wirtualne należy skonfigurować przed zapisaniem danych w tabelach. Dostosowywanie firm wirtualnych do istniejącego wdrożenia jest bardzo trudne.<br><br>- Ponieważ w bieżącej wersji systemu Microsoft Dynamics AX dokonano rozległej normalizacji danych, bardzo trudne stało się ustalanie danych, które należało dodać do zbiorów tabel. Na przykład trudno stwierdzić, które tabele należy udostępnić. Wszystkie tabele z odwołaniami z tabel, które były w firmie wirtualnej, też muszą być dodane. Z powodu normalizacji tabel nawet proste dane główne rozłożone między wiele tabel muszą być częścią firmy wirtualnej. Wszelkie popełnione tutaj błędy wywołają problemy funkcjonalne.<br><br>- Jeśli tabela jest częścią firmy wirtualnej, traci informacje o źródle danych i rejestrowane są tylko dane firmy wirtualnej.   |
+| **Przyczyna wycofania/usunięcia** | - Firmy wirtualne należy skonfigurować przed zapisaniem danych w tabelach. Dostosowywanie firm wirtualnych do istniejącego wdrożenia jest bardzo trudne.<br><br>- Ponieważ w bieżącej wersji systemu Dynamics AX dokonano rozległej normalizacji danych, bardzo trudne stało się ustalanie danych, które należało dodać do zbiorów tabel. Na przykład trudno stwierdzić, które tabele należy udostępnić. Wszystkie tabele z odwołaniami z tabel, które były w firmie wirtualnej, też muszą być dodane. Z powodu normalizacji tabel nawet proste dane główne rozłożone między wiele tabel muszą być częścią firmy wirtualnej. Wszelkie popełnione tutaj błędy wywołają problemy funkcjonalne.<br><br>- Jeśli tabela jest częścią firmy wirtualnej, traci informacje o źródle danych i rejestrowane są tylko dane firmy wirtualnej.   |
 | **Zamieniona przez inną funkcję?** | Tabele globalne mogą służyć do udostępniania tabel ze wszystkich firm. Obecnie nie ma funkcji zastępczej. |   
 | **Powiązane obszary produktów**       | Wszystkie moduły |   
 | **Stan**                       | Usunięto w systemie Dynamics AX 7.0.   |   
