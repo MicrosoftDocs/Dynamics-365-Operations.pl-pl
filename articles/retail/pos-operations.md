@@ -3,7 +3,7 @@ title: Operacje online i offline w punkcie sprzedaży (POS)
 description: Ten temat zawiera szczegółowe informacje dotyczące operacji punktu sprzedaży (POS) w Microsoft Dynamics 365 for Retail. Określa, gdzie w aplikacji można wywołać operacje oraz czy są dostępne w trybie offline..
 author: jblucher
 manager: AnnBe
-ms.date: 10/12/2017
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505103"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625672"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
@@ -159,9 +159,9 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 114 | Transakcja zwrotu | Wycofaj poprzednią transakcję według jej numeru paragonu, aby zwrócić niektóre lub wszystkie produkty. | Tak | Tak | Tak | Tak§ | Nr |
 | 1211 | Przekazanie pieniędzy do sejfu | Przekazać pieniądze z kasy do sejfu. | Tak | Tak | Tak | Tak | Nr |
 | 516 | Faktura sprzedaży | Ta operacja umożliwia odbiorcy dokonanie płatności za wybraną fakturę sprzedaży. | Tak | Tak | Nr | Nr | Nr |
-| 502 | Sprzedawca | Ta operacja umożliwia użytkownikowi ustawienie wartości opcji **Osoba przyjmująca sprzedaż** w zamówieniu sprzedaży dla zamówień odbiorców w punkcie sprzedaży. | Tak | Tak | Nr | Tak\* | Nr |
-| 2000 | Zarządzanie harmonogramem | Ta operacja umożliwia użytkownikowi tworzenie, modyfikowanie lub wyświetlanie harmonogramów pracowników. | Tak | Tak | Tak | Nr | Nr |
-| 2001 | Planowanie żądań | Ta operacja umożliwia użytkownikowi zażądanie czasu wolnego, zamianę zmian lub zaoferowanie zmian innym pracownikom. | Tak | Tak | Tak | Nr | Nr |
+| 502 | Sprzedawca | Ta operacja umożliwia użytkownikowi ustawienie wartości opcji **Osoba przyjmująca sprzedaż** w zamówieniu sprzedaży dla zamówień odbiorców w punkcie sprzedaży. | Tak | Tak | Nie | Tak\* | Nie |
+| 2000 | Zarządzanie harmonogramem | Ta operacja nie jest jeszcze obsługiwana. | Tak | Tak | Tak | Nie | Nie |
+| 2001 | Planowanie żądań | Ta operacja nie jest jeszcze obsługiwana. | Tak | Tak | Tak | Nie | Nie |
 | 622 | Wyszukaj zamówienia | Ta operacja umożliwia użytkownikom wstępne skonfigurowanie przycisków punktu sprzedaży w celu wyszukiwania według pozycji, odbiorcy lub kategorii. | Tak | Tak | Tak | Tak | Nr |
 | 1213 | Wyszukaj adres wysyłkowy | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nr |
 | 709 | Wybierz stację sprzętową | Ta operacja umożliwia użytkownikowi wybranie stacji sprzętowej z listy dostępnych stacji sprzętowych. | Tak | Tak | Tak | Tak | Nr |

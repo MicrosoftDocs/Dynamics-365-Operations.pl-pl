@@ -3,7 +3,7 @@ title: Zarządzanie cenami w sprzedaży detalicznej
 description: W tym temacie opisano pojęcia związane z tworzeniem i zarządzaniem cenami sprzedaży w Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afa553fd0562b306f720f2a30c7f901db7ad1b3a
-ms.sourcegitcommit: 0fbfb9b0ab78c804f3931a083028d2ce313d6521
+ms.openlocfilehash: 813547f522f5c69920eadf9df61e7f01b13ecd36
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "1594077"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624796"
 ---
 # <a name="retail-sales-price-management"></a>Zarządzanie cenami sprzedaży w aplikacji Retail
 
@@ -234,6 +234,6 @@ Ponadto **tylko** aparat kalkulacji cen detalicznych obsługuje następujące fu
 
 ## <a name="pricing-api-enhancements"></a>Udoskonalenia interfejsu API ustalania cen
 
-Cena jest jednym z najważniejszych czynników, które regulują decyzje dotyczące kupowania wielu odbiorców, a wielu z nich przed dokonaniem zakupu porównuje ceny w różnych oddziałach. Aby zagwarantować konkurencyjne ceny, detaliści bacznie obserwują swoich konkurentów i często organizują promocje. Dlatego też, aby ułatwić tym detalistom przyciąganie odbiorców, bardzo ważne jest, by w wyszukiwaniu produktów, funkcji przeglądania, listach i stronach szczegółów produktów były wyświetlane najbardziej dokładne ceny.
+Cena jest jednym z najważniejszych czynników kontrolujących decyzje dotyczące kupowania wielu odbiorców, a wielu z nich przed dokonaniem zakupu porównuje ceny w różnych oddziałach. Aby zapewnić konkurencyjne ceny, detaliści uważnie obserwują swoich konkurentów i często organizują promocje. Dlatego też, aby ułatwić tym detalistom przyciąganie odbiorców, bardzo ważne jest, by w wyszukiwaniu produktów, funkcja przeglądania, listy i strona szczegółów produktów pokazywały najbardziej dokładne ceny.
 
 W nadchodzącej wersji modułu Retail interfejs programowania aplikacji (API) **GetActivePrices** będzie zwracał ceny obejmujące rabaty proste (np. rabaty jednowierszowe niezależne od innych towarów w koszyku). W ten sposób wyświetlane ceny są zbliżone do rzeczywistej kwoty, jaką odbiorcy zapłacą za towary. Ten interfejs API będzie uwzględniał wszystkie typy rabatów prostych: oparte na przynależności, lojalnościowe, oparte na katalogach i oparte na kanałach. Ponadto interfejs API zwróci nazwy i informacje o ważności dla zastosowanych rabatów, dzięki czemu sprzedawcy detaliczni będą mogli dostarczać bardziej szczegółowy opis ceny i zachęcać do pośpiechu, jeśli ważność rabatu ma wkrótce wygasnąć.

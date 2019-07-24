@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 03edb5d626f221863f45804ce84168692c2bd1f3
-ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
+ms.openlocfilehash: c249df697553cd42eccd59d3f2c3f5f083ead1cb
+ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576928"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624614"
 ---
 # <a name="provision-talent"></a>Inicjowanie obsługi rozwiązania Talent
 
@@ -48,6 +48,8 @@ Po utworzeniu projektu LCS można zainicjować aplikację Talent w środowisku.
 
 1. W projekcie LCS wybierz kafel **Zarządzanie aplikacją Talent**.
 2. Wskaż, czy jest to wystąpienie produkcyjne czy piaskownicy aplikacji Talent. Funkcje w wersji zapoznawczej mogą być dostępne w wystąpieniach piaskownicy, aby umożliwić wczesne przesłanie opinii i testowanie. 
+    > [!NOTE]
+    > Typ wystąpienia talentów jest niezależny od typu wystąpienia środowiska PowerApps, które zostało ustawione w centrum administracyjnym PowerApps.
 3. Zaznacz opcję **Dołącz dane demonstracyjne**, jeżeli chcesz, aby Twoje środowisko zawierało ten sam zestaw danych demonstracyjnych, jak używany w środowisku testowym aplikacji Talent. Jest to korzystne w środowiskach długoterminowych demonstracji lub szkoleń, natomiast nigdy nie należy używać tej opcji w środowisku produkcyjnym.  Należy wybrać tę opcję po wdrożeniu wstępnym. Nie można później zaktualizować istniejącego wdrożenia.
 4. Aplikacja Talent jest zawsze inicjowana w środowisku Microsoft PowerApps, aby umożliwić integrację z PoweApps i możliwość rozszerzenia. Przed kontynuowaniem przeczytaj w tym temacie sekcję „Wybieranie środowiska usługi PowerApps”. Jeśli nie masz jeszcze środowiska PowerApps, wybierz opcję Zarządzaj środowiskami w oknie usługi LCS lub przejdź do Centrum administracyjnego usługi PowerApps. Następnie wykonaj procedurę [tworzenia środowiska usługi PowerApps](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 

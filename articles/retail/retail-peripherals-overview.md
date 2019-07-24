@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577936"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624819"
 ---
 # <a name="retail-peripherals"></a>Sklepowe urządzenia peryferyjne
 
@@ -156,13 +156,13 @@ Typ urządzenia **Windows** jest używany tylko do drukarek. Podczas konfigurowa
 
 ### <a name="network"></a>Sieć
 
-Szuflady kasowe adresowalne w sieci, drukarki paragonów i terminale płatnicze mogą być używane w sieci albo bezpośrednio przez stację sprzętową obsługującą funkcję komunikacji międzyprocesowej (IPC) wbudowaną w aplikacji Modern POS for Windows, albo za pośrednictwem stacji sprzętowej z usługami IIS w przypadku innych urządzeń klienckich programu Modern POS.
+Szuflady kasowe adresowalne w sieci, drukarki paragonów i terminale płatnicze mogą być używane w sieci albo bezpośrednio przez stację sprzętową obsługującą funkcję komunikacji międzyprocesowej (IPC) wbudowaną w aplikacji Modern POS for Android, albo za pośrednictwem stacji sprzętowej z usługami IIS w przypadku innych urządzeń klienckich programu Modern POS.
 
 ## <a name="hardware-station-deployment-options"></a>Opcje wdrażania stacji sprzętowej
 
 ### <a name="ipc-built-in"></a>IPC (wbudowana)
 
-Stacja sprzętowa z funkcją komunikacji międzyprocesowej (IPC) jest wbudowana w aplikacji Modern POS for Windows. Aby użyć stacji sprzętowej z funkcją IPC, przypisz profil sprzętu do kasy, która będzie używać aplikacji Modern POS for Windows. Następnie utwórz stację sprzętową typu **Dedykowana** dla sklepu, w którym kasa będzie używana. Po uruchomieniu aplikacji Modern POS stacja sprzętowa z funkcją IPC będzie aktywna, a skonfigurowane urządzenia peryferyjne punktu sprzedaży będą gotowe do użycia. Jeśli z jakiegoś powodu tymczasowo nie potrzebujesz lokalnych urządzeń, za pomocą operacji **Zarządzaj stacjami sprzętowymi** wyłącz funkcje stacji sprzętowej. Program Modern POS może również używać stacji sprzętowej z funkcją IPC do bezpośredniego komunikowania się z sieciowymi urządzeniami peryferyjnymi.
+Stacja sprzętowa z funkcją komunikacji międzyprocesowej (IPC) jest wbudowana w aplikacji Modern POS dla Windows oraz Modern POS dla Android. Aby użyć stacji sprzętowej z funkcją IPC, przypisz profil sprzętu do kasy, która będzie używać aplikacji Modern POS for Windows. Następnie utwórz stację sprzętową typu **Dedykowana** dla sklepu, w którym kasa będzie używana. Po uruchomieniu aplikacji Modern POS stacja sprzętowa z funkcją IPC będzie aktywna, a skonfigurowane urządzenia peryferyjne punktu sprzedaży będą gotowe do użycia. Jeśli z jakiegoś powodu tymczasowo nie potrzebujesz lokalnych urządzeń, za pomocą operacji **Zarządzaj stacjami sprzętowymi** wyłącz funkcje stacji sprzętowej. Program Modern POS może również używać stacji sprzętowej z funkcją IPC do bezpośredniego komunikowania się z sieciowymi urządzeniami peryferyjnymi.
 
 ### <a name="iis"></a>Usługi IIS
 
@@ -190,7 +190,11 @@ Sieciowe oznaczenie urządzeń w profilu sprzętu umożliwia podłączanie szufl
 
 Adresy IP sieciowych urządzeń peryferyjnych można określić w dwóch miejscach. Jeśli klient programu Modern POS Windows używa jednego zestawu peryferyjnych urządzeń sieciowych, w celu ustawienia adresów IP tych urządzeń należy użyć opcji **Konfiguracja protokołu IP** w okienku akcji w samej kasie. W przypadku urządzeń sieciowych, które będą współużytkowane przez kilka kas w punkcie sprzedaży, profil sprzętu zawierający przypisane urządzenia sieciowe można zmapować bezpośrednio na wspólną stację sprzętową. Aby przypisać adresy IP, wybierz stację sprzętową na stronie **Sklepy sieci sprzedaży**, a następnie w opcji **Konfiguracja protokołu IP** w sekcji **Stacje sprzętowe** wskaż urządzenia sieciowe przypisane do tej stacji sprzętowej. W przypadku stacji sprzętowych zawierających tylko urządzenia sieciowe nie trzeba instalować samej stacji sprzętowej. W takim przypadku stacja sprzętowa jest wymagana tylko w celu koncepcyjnego zgrupowania urządzeń adresowalnych w sieci zgodnie z ich umiejscowieniem w sklepie sieci sprzedaży.
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloud POS, Modern POS for iOS i Modern POS for Android
+#### <a name="modern-pos-for-android"></a>Modern POS for Android
+
+W Dynamics 365 for Retail wersji 8.1.3, aplikacja Modern POS dla Android zawiera wbudowaną stację sprzętową IPC. Ta Stacja sprzętowa obsługuje komunikację z drukarkami sieciowymi i łącznikami płatności. Aby uzyskać więcej informacji, odwiedź [artykuł „aplikacja Android hybrydowa dla dokumentów”](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+
+#### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS i Modern POS dla systemu iOS
 
 Logika sterująca urządzeniami peryferyjnymi połączonymi fizycznie i adresowalnymi w sieci jest zawarta w stacji sprzętowej. W związku z tym dla wszystkich urządzeń klienckich oprogramowania punktu sprzedaży, z wyjątkiem urządzeń z aplikacją Modern POS for Windows, stacja sprzętowa z usługami IIS musi być zainstalowana i aktywna, aby aplikacja punktu sprzedaży mogła się komunikować się z urządzeniami peryferyjnymi, niezależnie od tego, czy te urządzenia peryferyjne są fizycznie podłączone do stacji sprzętowej czy też adresowane przez sieć.
 
@@ -222,9 +226,9 @@ W poniższej tabeli przedstawiono obsługiwane topologie i scenariusze wdrożeni
 | Klient      | Stacja sprzętowa z funkcją IPC | Stacja sprzętowa z usługami IIS |
 |-------------|----------------------|----------------------|
 | Aplikacja systemu Windows | Tak                  | Tak                  |
-| Cloud POS   | Nr                   | Tak                  |
-| Android     | Nr                   | Tak                  |
-| iOS         | Nr                   | Tak                  |
+| Cloud POS   | Nie                   | Tak                  |
+| Android     | Tak                  | Tak                  |
+| iOS         | Nie                   | Tak                  |
 
 ### <a name="network-peripherals"></a>Sieciowe urządzenia peryferyjne
 
@@ -233,9 +237,9 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 | Klient      | Stacja sprzętowa z funkcją IPC | Stacja sprzętowa z usługami IIS |
 |-------------|----------------------|----------------------|
 | Aplikacja systemu Windows | Tak                  | Tak                  |
-| Cloud POS   | Nr                   | Tak                  |
-| Android     | Nr                   | Tak                  |
-| iOS         | Nr                   | Tak                  |
+| Cloud POS   | Nie                   | Tak                  |
+| Android     | Tak                  | Tak                  |
+| iOS         | Nie                   | Tak                  |
 
 ## <a name="supported-device-types-by-hardware-station-type"></a>Obsługiwane typy urządzeń według typów stacji sprzętowych
 
@@ -661,14 +665,15 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu stacji
 
 #### <a name="printer"></a>Drukarka
 
-| Producent | Model    | Interfejs | Komentarze                |
-|--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
-| Star         | TSP650II | Niestandardowy    | Połączenie przez sieć   |
-| Star         | mPOP     | OPOS      | Połączenie przez Bluetooth |
-| HP           | F7M67AA  | OPOS      | Zasilanie przez USB             |
+| Producent | Model      | Interfejs | Komentarze                |
+|--------------|------------|-----------|-------------------------|
+| Epson        | Tm-T88IV   | OPOS      |                         |
+| Epson        | TM-T88V    | OPOS      |                         |
+| Epson        | ePOS — drukowanie | Niestandardowy    | Połączenie przez sieć   |
+| Star         | TSP650II   | OPOS      |                         |
+| Star         | TSP650II   | Niestandardowy    | Połączenie przez sieć   |
+| Star         | mPOP       | OPOS      | Połączenie przez Bluetooth |
+| HP           | F7M67AA    | OPOS      | Zasilanie przez USB             |
 
 #### <a name="bar-code-scanner"></a>Skaner kodów kreskowych
 
@@ -688,15 +693,16 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu stacji
 
 #### <a name="payment-terminal"></a>Terminal płatniczy 
 
-| Producent | Model | Interfejs | Komentarze                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności                                |
-| VeriFone     | MX925 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności; połączenie przez sieć i USB |
-| VeriFone     | MX915 | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności; połączenie przez sieć i USB |
+| Producent | Model        | Interfejs | Komentarze                                                                       |
+|--------------|--------------|-----------|--------------------------------------------------------------------------------|
+| Equinox      | L5300        | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności                                |
+| VeriFone     | MX925        | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności; połączenie przez sieć i USB |
+| VeriFone     | MX915        | Niestandardowy    | Wymaga dostosowania aplikacji łącznika płatności; połączenie przez sieć i USB |
+| Verifone     | Zobacz komentarze | Adyen     | Łącznik Adyen obsługuje wszystkie urządzenia wymienione [w tym miejscu](https://www.adyen.com/pos-payments/terminals) |
 
 #### <a name="cash-drawer"></a>Szuflada kasowa
 
-| Producent | Model     | Interfejs | Komentarze                |
+| Wytwórca | Model     | Interfejs | Komentarze                |
 |--------------|-----------|-----------|-------------------------|
 | Star         | mPOP      | OPOS      | Połączenie przez Bluetooth |
 | APG          | Atwood    | Niestandardowy    | Połączenie przez sieć   |

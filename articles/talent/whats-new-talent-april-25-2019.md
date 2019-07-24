@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 13cfe68e3d06001c56770fa60838404c43d0b38d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5ec10820761cb22cbff6229babe8a250848214b7
+ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518814"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624588"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-23-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (23 kwietnia 2019)
 
@@ -46,7 +46,7 @@ W wydaniu z tego tygodnia następujące jednostki obsługują pola niestandardow
 ### <a name="additional-odata-entities-302992"></a>Dodatkowe jednostki OData (302992)
 Poniższe jednostki są obecnie obsługiwane w ramach funkcji OData: doświadczenie zawodowe i wykształcenie pracownika.
    
-### <a name="performance-journal-attachments-for-nanagers-and-employees-308248"></a>Załączniki arkusza wydajności dla menedżerów i pracowników (308248)
+### <a name="performance-journal-attachments-for-managers-and-employees-308248"></a>Załączniki arkusza wydajności dla menedżerów i pracowników (308248)
 W tym wydaniu załączniki są teraz dostępne dla menedżerów i pracowników podczas tworzenia i aktualizowania wpisów w arkuszu wydajności.
 
 ### <a name="employee-rehire-flag-always-available-310047"></a>Flaga ponownego zatrudnienia pracownika jest zawsze dostępna (310047)

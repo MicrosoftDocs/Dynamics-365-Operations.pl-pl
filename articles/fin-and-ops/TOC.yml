@@ -44,9 +44,9 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funkcje niezaimplementowane we wdrożeniach lokalnych
               href: get-started/features-not-implemented-on-prem.md
-            - name: Funkcje w wersji zapoznawczej w rozwiązaniu Finance and Operations w wersji 10.0.4 (lipiec 2019)
+            - name: Finance and Operations w wersji 10.0.4 (lipiec 2019)
               href: get-started/whats-new-changed-10-0-4.md
-            - name: Funkcje w wersji zapoznawczej w rozwiązaniu Finance and Operations w wersji 10.0.3 (czerwiec 2019)
+            - name: Finance and Operations w wersji 10.0.3 (czerwiec 2019)
               href: get-started/whats-new-changed-10-0-3.md
             - name: Finance and Operations w wersji 10.0.2 (maj 2019)
               href: get-started/whats-new-changed-10-0-2.md
@@ -56,9 +56,9 @@
               href: get-started/whats-new-changed-10.md
             - name: Finance and Operations w wersji 8.1.3 (styczeń 2019)
               href: get-started/whats-new-changed-8-1-3.md
-            - name: Funkcje w wersji zapoznawczej w aktualizacji Platform update 28 rozwiązania Finance and Operations (lipiec 2019)
+            - name: Aktualizacja Platform update 28 (lipiec 2019)
               href: get-started/whats-new-platform-update-28.md
-            - name: Funkcje w wersji zapoznawczej w aktualizacji Platform update 27 rozwiązania Finance and Operations (czerwiec 2019)
+            - name: Aktualizacja Platform update 27 (czerwiec 2019)
               href: get-started/whats-new-platform-update-27.md
             - name: Aktualizacja Platform update 26 (maj 2019)
               href: get-started/whats-new-platform-update-26.md
@@ -238,8 +238,14 @@
           href: ../dev-itpro/data-entities/data-task-automation.md
         - name: Dostarczanie rozwiązań niezależnych dostawców oprogramowania przy użyciu funkcji Jedna wersja
           href: ../dev-itpro/lifecycle-services/oneversion-isv.md
-        - name: Regression Suite Automation Tool
-          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+        - name: Automatyzacja testów
+          items:
+            - name: Tworzenie i automatyzowanie testów akceptacji użytkownika
+              href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+            - name: Konfigurowanie samouczka narzędzia Regression Suite Automation Tool
+              href: get-started/hol-set-up-regression-suite-automation-tool.md
+            - name: Korzystanie z samouczka narzędzia Regression Suite Automation Tool
+              href: get-started/hol-use-regression-suite-automation-tool.md
     - name: Zdarzenia biznesowe
       href: ../dev-itpro/business-events/home-page.md
       items:
@@ -257,6 +263,10 @@
           href: ../dev-itpro/business-events/troubleshooting.md
         - name: Używanie spraw na potrzeby zdarzeń biznesowych
           href: ../dev-itpro/business-events/potential-use-cases.md
+        - name: Samouczki
+          items:
+            - name: Zużywanie zdarzeń biznesowych za pomocą usługi Microsoft Flow
+              href: ../dev-itpro/business-events/how-to/how-to-flow.md
     - name: Zgodność z przepisami
       items:
         - name: Reguły audytu
@@ -849,7 +859,7 @@
               href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
             - name: Wymiary finansowe
               href: ../financials/general-ledger/financial-dimensions.md
-            - name: Struktury kont
+            - name: Wymiary finansowe i księgowanie
               href: ../financials/general-ledger/Default-dimensions.md
             - name: Dodawanie wymiarów finansowych do obszaru roboczego Dyrektor finansowy
               href: ../financials/general-ledger/CFO-workspace.md
@@ -1080,6 +1090,8 @@
                   href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
                 - name: Tworzenie struktur kont
                   href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: Wymiary finansowe i księgowanie
+                  href: ../financials/general-ledger/default-dimensions.md
                 - name: Tworzenie schematów naliczania
                   href: ../financials/general-ledger/tasks/create-accrual-schemes.md
                 - name: Konsolidacje finansowe i przeliczenia walut
@@ -1936,10 +1948,144 @@
                   href: ../financials/localizations/apac-ind-gst-reference-groups.md
                 - name: Integracja podatku GST w kasach
                   href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: Zakup towaru podlegającego opodatkowaniu od niezarejestrowanych dostawcy
-                  href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
-            - name: Wytyczne dotyczące wdrażania kas
-              href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+                - name: Ustawienia danych głównych
+                  items:
+                    - name: Tworzenie segmentu rynku
+                      href: ../financials/localizations/apac-ind-GST-create-business-vertical.md
+                    - name: Aktualizowanie kodu stanu i terytorium związkowego
+                      href: ../financials/localizations/apac-ind-GST-update-state-code-union-territory.md
+                    - name: Tworzenie danych głównych GSTIN
+                      href: ../financials/localizations/apac-ind-GST-create-gstin-master.md
+                    - name: Definiowanie numerów GSTIN i sekwencji numerów odwołania
+                      href: ../financials/localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
+                    - name: Definiowanie kodów HSN i kodów księgowania usług
+                      href: ../financials/localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                    - name: Tworzenie kont głównych dla typu księgowania GST
+                      href: ../financials/localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
+                    - name: Tworzenie okresu rozliczenia podatku
+                      href: ../financials/localizations/apac-ind-GST-create-tax-settlement-period.md
+                    - name: Dołączanie GSTIN do grupy identyfikacji podatkowej
+                      href: ../financials/localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
+                - name: Ustawienia podatku
+                  items:
+                    - name: Definiowanie konfiguracji podatku i wdrażanie jej w firmach
+                      href: ../financials/localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
+                    - name: Mapowanie typów konfiguracji podatku — cło
+                      href: ../financials/localizations/apac-ind-GST-map-configuration-tax-types.md
+                    - name: Konfigurowanie tabeli stawek i wartości procentowych
+                      href: ../financials/localizations/apac-ind-GST-set-up-rate-percentage-tables.md
+                    - name: Konfigurowanie hierarchii podatku i reguł kompensacji
+                      href: ../financials/localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
+                - name: Transakcja zakupu
+                  items:
+                    - name: Zakupy od niezarejestrowanych dostawców
+                      href: ../financials/localizations/apac-ind-GST-purchases-unregistered-vendor.md
+                    - name: Zakup towaru podlegającego opodatkowaniu od niezarejestrowanego dostawcy
+                      href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
+                    - name: Zakupy od zarejestrowanych dostawców
+                      href: ../financials/localizations/apac-ind-GST-purchases-registered-vendor.md
+                    - name: Zakupy towarów z rabatem
+                      href: ../financials/localizations/apac-ind-GST-purchase-discounted-goods.md
+                    - name: Zakup towarów zwolnionych z podatku
+                      href: ../financials/localizations/apac-ind-GST-purchase-exempted-goods.md
+                    - name: Zakup towarów o stawce zerowej
+                      href: ../financials/localizations/apac-ind-GST-purchase-zero-rated-goods.md
+                    - name: Zakupy towarów nieopodatkowanych podatkiem GST
+                      href: ../financials/localizations/apac-ind-GST-purchase-non-gst-goods.md
+                    - name: Zakupy od dealerów zbiorczych
+                      href: ../financials/localizations/apac-ind-GST-purchase-from-composite-dealer.md
+                    - name: Zakupy towarów podlegających opodatkowaniu i opłatom transportowym
+                      href: ../financials/localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
+                    - name: Korygowanie faktury zakupu z towarami podlegającymi opodatkowaniu
+                      href: ../financials/localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
+                    - name: Zakupy środków trwałych
+                      href: ../financials/localizations/apac-ind-GST-purchase-fixed-asset.md
+                    - name: Tworzenie faktury korygującej do faktury zakupu
+                      href: ../financials/localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
+                    - name: Tworzenie noty uznaniowej do faktury zakupu
+                      href: ../financials/localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
+                    - name: Zlecenia kontroli jakości wymagające zniszczenia próbki
+                      href: ../financials/localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
+                    - name: Zamówienia zwrotu zakupu
+                      href: ../financials/localizations/apac-ind-GST-purchase-return-order.md
+                    - name: Płatności z tytułu zaliczek dostawcy w przypadku opłat zwrotnych
+                      href: ../financials/localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                - name: Transakcja sprzedaży
+                  items:
+                    - name: Sprzedaż towarów podlegających opodatkowaniu konsumentom
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-consumer.md
+                    - name: Sprzedaż zarejestrowanym odbiorcom
+                      href: ../financials/localizations/apac-ind-GST-sell-registered-customer.md
+                    - name: Faktury niezależne
+                      href: ../financials/localizations/apac-ind-GST-free-text-invoices.md
+                    - name: Sprzedaż towarów podlegających opodatkowaniu w przypadku opłaty zwrotnej
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
+                    - name: Sprzedaż pozycji podlegających zwolnieniu
+                      href: ../financials/localizations/apac-ind-GST-sales-exempted-item.md
+                    - name: Sprzedaż towarów o stawce zerowej
+                      href: ../financials/localizations/apac-ind-GST-sell-zero-rated-goods.md
+                    - name: Sprzedaż towarów nieopodatkowanych podatkiem GST
+                      href: ../financials/localizations/apac-ind-GST-sell-non-gst-goods.md
+                    - name: 'Sprzedaż towarów podlegających opodatkowaniu, które mają rabat i tymczasową wycenę'
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
+                    - name: 'Sprzedaż towarów podlegających opodatkowaniu, które mają podatek od opłat transportowych'
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
+                    - name: 'Sprzedaż, w której ceny zawierają i nie zawierają podatku'
+                      href: ../financials/localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
+                    - name: Tworzenie noty uznaniowej do faktury sprzedaży
+                      href: ../financials/localizations/apac-ind-GST-debit-note-against-sales-invoice.md
+                    - name: Tworzenie faktury korygującej do faktury sprzedaży
+                      href: ../financials/localizations/apac-ind-GST-credit-note-against-sales-invoice.md
+                    - name: Faktury sprzedaży dzielone na podstawie adresów dostawy
+                      href: ../financials/localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
+                    - name: Zamówienia zwrotu
+                      href: ../financials/localizations/apac-ind-GST-return-order-form.md
+                - name: Transakcje zagraniczne
+                  items:
+                    - name: Importowanie towarów opodatkowanych podatkiem GST
+                      href: ../financials/localizations/apac-ind-GST-import-goods-gst.md
+                    - name: Importowanie usług opodatkowanych podatkiem GST
+                      href: ../financials/localizations/apac-ind-import-services-gst.md
+                    - name: Eksportowanie towarów opodatkowanych podatkiem o stawce zerowej
+                      href: ../financials/localizations/apac-ind-GST-export-goods-zero-rated-tax.md
+                    - name: Eksportowanie usług opodatkowanych podatkiem o stawce zerowej
+                      href: ../financials/localizations/apac-ind-GST-export-services-zero-rated-tax.md
+                - name: Transakcja zapasów
+                  items:
+                    - name: 'Zamówienia przeniesienia zapasów, które mają podatek od ceny przeniesienia'
+                      href: ../financials/localizations/apac-ind-GST-stock-transfer-transactions.md
+                - name: Transakcja płatności odbiorcy
+                  items:
+                    - name: Płatności zaliczkowe zawierające podatek
+                      href: ../financials/localizations/apac-ind-GST-advance-payment-includes-tax.md
+                    - name: Płatności zaliczkowe rozliczane podczas księgowania faktury
+                      href: ../financials/localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
+                    - name: Ręczne rozliczanie płatności zaliczkowej i faktury zawierającej podatek
+                      href: ../financials/localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
+                    - name: Płatności faktur zawierających podatek
+                      href: ../financials/localizations/apac-ind-GST-pay-invoice-includes-tax.md
+                    - name: Poprawianie płatności zaliczkowych zawierających podatek
+                      href: ../financials/localizations/apac-ind-GST-revise-advanced-payment-tax.md
+                    - name: Zwroty płatności odbiorcy
+                      href: ../financials/localizations/apac-ind-GST-customer-payment-refund.md
+                - name: Transakcja opodatkowana bezpośrednio
+                  items:
+                    - name: Wliczanie GST podczas obliczania potrąceń podatku
+                      href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                    - name: Wliczanie GST podczas obliczania windykacji podatku
+                      href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+                - name: Korekta kwoty podatku
+                  href: ../financials/localizations/apac-ind-GST-tax-adjustments.md
+                - name: Rozliczenie podatku oparte na regułach
+                  href: ../financials/localizations/apac-ind-GST-tax-settlement.md
+                - name: Tworzenie arkusza podatku
+                  href: ../financials/localizations/apac-ind-GST-tax-journal.md
+                - name: Generowanie danych raportu GSTR dla zwrotów podatku
+                  href: ../financials/localizations/apac-ind-GST-tax-returns.md
+                - name: Zapytanie dotyczące podatków
+                  href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
+                - name: Wytyczne dotyczące wdrażania kas
+                  href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
             - name: Omówienie aparatu podatków
               href: ../financials/general-ledger/tax-engine.md
               items:
@@ -2377,6 +2523,10 @@
                   href: ../financials/localizations/rus-accounting-reporting.md
                 - name: Deklaracja szacowanego podatku
                   href: ../financials/localizations/rus-assessed-tax-declaration.md
+                - name: Deklaracja podatku transportowego
+                  href: ../financials/localizations/rus-transport-tax-declaration.md
+                - name: Deklaracja podatku gruntowego
+                  href: ../financials/localizations/rus-land-tax-declaration.md
             - name: Administrowanie organizacją
               items:
                 - name: Informacje dotyczące identyfikacji podatkowej związane z adresem
@@ -2797,160 +2947,222 @@
               href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
             - name: Tworzenie niestandardowych projektów dokumentów biznesowych
               href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
-        - name: Raportowanie elektroniczne
+            - name: Przeglądanie dokumentów PDF za pomocą osadzonej przeglądarki
+              href: ../dev-itpro/analytics/preview-pdf-documents.md?toc=/fin-and-ops/toc.json
+    - name: Raportowanie elektroniczne
+      items:
+        - name: Omówienie raportowania elektronicznego
           href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
+        - name: Konfiguracje
           items:
-            - name: Konfigurowanie struktury raportowania elektronicznego
-              href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
             - name: Tworzenie konfiguracji
               href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
+            - name: Przygotowanie składników rozwiązania do raportowania elektronicznego
               items:
-                - name: Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych
-                  href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Projektowanie modeli danych specyficznych dla domeny
+                - name: Projektowanie modelu danych specyficznego dla domeny
                   href: ../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json
+                - name: Przygotowywanie metadanych specyficznych dla aplikacji
+                  items:
+                    - name: (Raportowanie elektroniczne) Przygotowywanie metadanych aplikacji używanych w RCS
+                      href: ../dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/fin-and-ops/toc.json
+                    - name: (RCS) Dostęp do metadanych aplikacji przy użyciu konfiguracji modułu Raportowanie elektroniczne
+                      href: ../dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/fin-and-ops/toc.json
+                    - name: (RCS) Dostęp do metadanych aplikacji przy użyciu połączonych aplikacji
+                      href: ../dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/fin-and-ops/toc.json
                 - name: Definiowanie mapowań modeli i wybieranie źródeł danych
                   href: ../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Mapowanie modeli danych na wybrane źródła danych
+                - name: Mapowanie modelu danych na wybrane źródła danych
                   href: ../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Tworzenie konfiguracji formatów
+                - name: Tworzenie konfiguracji formatu
                   href: ../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Mapa składników formatów na elementy modelu danych
+                - name: Mapowanie składników utworzonego formatu na elementy modelu danych
                   href: ../dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Testowanie przygotowanego rozwiązania Raportowanie elektroniczne w aplikacji docelowej
+              items:
+                - name: (Raportowanie elektroniczne) Importowanie konfiguracji z RCS
+                  href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/fin-and-ops/toc.json
                 - name: Generowanie dokumentów elektronicznych dla płatności przy użyciu konfiguracji formatu
                   href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
-                - name: Uaktualnianie formatów poprzez zastosowanie nowych wersji podstawowych
-                  href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
-                - name: Projektowanie konfiguracji raportowania elektronicznego w celu wypełniania szablonów w formacie PDF
-                  href: ../dev-itpro/analytics/er-fillable-pdf.md
-            - name: Projektant formuł w module Raportowanie elektroniczne
-              href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
-            - name: Konfigurowanie w module Raportowanie elektroniczne ściągania danych do usługi Power BI
-              href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
-            - name: Miejsca docelowe
-              href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: Konfigurowanie miejsc docelowych
-                  href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Projektowanie konfiguracji w celu generowania raportów w formacie programu Word
-              href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Projektowanie konfiguracji w celu generowania raportów w formacie OpenXML
+            - name: Uaktualnianie formatu przez przyjęcie jego nowej wersji podstawowej
+              href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
+        - name: Projektant formuł w module Raportowanie elektroniczne
+          href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
+        - name: Zarządzanie mapowaniem modelu modułu Raportowanie elektroniczne w oddzielnych konfiguracjach modułu Raportowanie elektroniczne
+          href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: Wybieranie definicji modelu danych podczas tworzenia formatów
+          href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: Generowanie raportów poprzez dodawanie treści w postaci nieprzetworzonego kodu XML
+          href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
+        - name: (Raportowanie elektroniczne) Międzyfirmowe źródła danych w module Raportowanie elektroniczne
+          href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
+        - name: Projektowanie formatów modułu Raportowanie elektroniczne w celu generowania wychodzących dokumentów elektronicznych w różnych formatach
+          items:
+            - name: (Raportowanie elektroniczne) Projektowanie konfiguracji do generowania raportów w formacie OPENXML
               href: ../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Modyfikowanie formatów raportowania elektronicznego przez ponowne zastosowanie szablonów programu Excel
-              href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: Wybieranie definicji modelu danych podczas tworzenia formatów
-              href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
-            - name: Definiowanie zależności konfiguracji od innych składników
-              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: (Raportowanie elektroniczne) Projektowanie konfiguracji w celu generowania raportów w formacie programu Word
+              href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Projektowanie konfiguracji w celu wypełniania szablonów w formacie PDF
+              href: ../dev-itpro/analytics/er-fillable-pdf.md?toc=/fin-and-ops/toc.json
+        - name: Osadzanie obrazów i kształtów
+          items:
+            - name: (Raportowanie elektroniczne) Osadzanie obrazów i kształtów w generowanych dokumentach
+              href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
+            - name: Przykłady osadzania obrazów i kształtów
               items:
-                - name: Projektowanie modeli danych w celu używania wymiarów finansowych jako źródeł danych
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
-                - name: Mapowanie modeli w celu używania wymiarów finansowych jako źródeł danych
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
-                - name: Projektowanie raportów w celu używania wymiarów finansowych jako źródeł danych
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
-                - name: Generowanie raportów używających wymiarów finansowych jako źródeł danych
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
-                - name: Tworzenie formatów w celu wykonania zliczania i sumowania
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
-                - name: Konfigurowanie obliczeń służących do zliczania i sumowania
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
-                - name: Używanie obliczeń w celu generowania wyników zliczania i sumowania
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
-                - name: Uruchamianie formatów w celu wykonania zliczania i sumowania
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
-                - name: Projektowanie formatów w celu dynamicznego dodawania kolumn jako poziomo rozszerzalnych zakresów
-                  href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
-                - name: Uruchamianie formatów w celu dynamicznego dodawania kolumn jako poziomo rozszerzalnych zakresów
-                  href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
-                - name: Przygotowywanie modeli danych w celu używania plików zarządzania dokumentami w danych wyjściowych
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
-                - name: Rozszerzanie modeli danych w celu używania plików zarządzania dokumentami w danych wyjściowych
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
-                - name: Tworzenie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
-                - name: Uruchamianie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
-                - name: Modyfikowanie i uruchamianie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
-                - name: Projektowanie konfiguracji służących do generowania raportów w formatach pakietu Office z osadzonymi obrazami
+                - name: 'Projektowanie konfiguracji służących do generowania raportów w formatach pakietu Office, które zawierają osadzone obrazy'
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json
-                - name: Przeglądanie konfiguracji służących do generowania raportów w formatach pakietu Office z osadzonymi obrazami
+                - name: 'Przeglądanie konfiguracji służących do generowania raportów w formatach pakietu Office, które zawierają osadzone obrazy'
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json
-                - name: Generowanie raportów w formatach pakietu Office z osadzonymi obrazami
+                - name: 'Generowanie raportów w formatach pakietu Office, które zawierają osadzone obrazy'
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
+        - name: Modyfikowanie formatów raportowania elektronicznego przez ponowne zastosowanie szablonów programu Excel
+          href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
+        - name: Projektowanie konfiguracji modułu Raportowanie elektroniczne zależnych od wersji rozwiązania Finance and Operation
+          items:
+            - name: Definiowanie zależności konfiguracji modułu Raportowanie elektroniczne od innych składników
+              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: Projektowanie rozwiązania Raportowanie elektroniczne w celu korzystania z wymiarów finansowych
+          items:
+            - name: Projektowanie modeli danych w celu używania wymiarów finansowych jako źródeł danych
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
+            - name: Mapowanie modeli w celu używania wymiarów finansowych jako źródeł danych
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
+            - name: Projektowanie raportów w celu używania wymiarów finansowych jako źródeł danych
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
+            - name: Generowanie raportów używających wymiarów finansowych jako źródeł danych
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
+        - name: Projektowanie formatów modułu Raportowanie elektroniczne w celu wykonywania zliczania i sumowania przy użyciu informacji z wygenerowanych danych wyjściowych
+          items:
+            - name: Tworzenie formatów w celu wykonywania zliczania i sumowania
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
+            - name: Konfigurowanie formatu w celu wykonywania zliczania i sumowania
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
+            - name: Używanie obliczeń w celu generowania wyników zliczania i sumowania
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
+            - name: Uruchamianie formatów w celu wykonywania zliczania i sumowania
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
+        - name: Dynamiczne dodawanie kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów
+          items:
+            - name: Projektowanie formatów w celu dynamicznego dodawania kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów
+              href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
+            - name: Uruchamianie formatów w celu dynamicznego dodawania kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów
+              href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
+        - name: Używanie plików zarządzania dokumentami w danych wyjściowych formatu
+          items:
+            - name: Przygotowywanie modeli danych w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
+            - name: Rozszerzanie modeli danych w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
+            - name: Tworzenie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
+            - name: Uruchamianie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
+            - name: Modyfikowanie i uruchamianie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
+        - name: Aktualizowanie danych aplikacji przy użyciu modułu Raportowanie elektroniczne
+          items:
             - name: Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji
               href: ../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json
+            - name: Importowanie konfiguracji w celu generowania dokumentów z danymi aplikacji
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
+            - name: Projektowanie konfiguracji w celu generowania dokumentów z danymi aplikacji
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
+            - name: Modyfikowanie modeli i mapowań w celu generowania dokumentów z danymi aplikacji
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
+            - name: Modyfikowanie formatów w celu generowania dokumentów z danymi aplikacji
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
+            - name: Generowanie dokumentów zawierających dane aplikacji
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
+        - name: Importowanie danych z plików przychodzących przy użyciu rozwiązań Raportowanie elektroniczne
+          items:
+            - name: Analizowanie dokumentów przychodzących w innych formatach
+              href: ../dev-itpro/analytics/er-parse-incoming-documents.md?toc=/fin-and-ops/toc.json
+            - name: Konfigurowanie importowania danych z ręcznie wybranych plików
               items:
-                - name: Importowanie konfiguracji w celu generowania dokumentów z danymi aplikacji
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
-                - name: Projektowanie konfiguracji w celu generowania dokumentów z danymi aplikacji
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
-                - name: Modyfikowanie modeli i mapowań w celu generowania dokumentów z danymi aplikacji
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
-                - name: Modyfikowanie formatów w celu generowania dokumentów z danymi aplikacji
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
-                - name: Generowanie dokumentów z danymi aplikacji
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
-            - name: Generowanie drukowalnych formularzy FTI
-              href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
-            - name: Generowanie raportów poprzez dodawanie treści w postaci nieprzetworzonego kodu XML
-              href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
-            - name: Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi
-              href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
-            - name: Międzyfirmowe źródła danych w module Raportowanie elektroniczne
-              href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
-            - name: Osadzanie obrazów i kształtów w generowanych dokumentach
-              href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
-            - name: Zarządzanie cyklem życia konfiguracji
-              href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: Przekazywanie konfiguracji do usługi Lifecycle Services
-                  href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: Importowanie konfiguracji z usługi Lifecycle Services
-                  href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: Importowanie konfiguracji raportowania elektronicznego (RE) z usługi Regulatory Configuration Services (RCS)
-                  href: ../dev-itpro/analytics/rcs-download-configurations.md
-                - name: Pobieranie konfiguracji z usługi Lifecycle Services
-                  href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
-                - name: Importowanie konfiguracji
-                  href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
-            - name: Zarządzanie konfiguracjami mapowania modeli
-              href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: Tworzenie konfiguracji w celu importowania danych z plików zewnętrznych
+                - name: Tworzenie konfiguracji w celu importowania danych z zewnętrznego pliku XML
                   href: ../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json
-                - name: Konfigurowanie importu danych z programu SharePoint
-                  href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
-            - name: Analizowanie dokumentów przychodzących w formacie programu Excel
-              href: ../dev-itpro/analytics/parse-incoming-documents-excel.md?toc=/fin-and-ops/toc.json
-            - name: Analizowanie dokumentów przychodzących w celu aktualizacji danych aplikacji
-              href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
-            - name: Analizowanie dokumentów przychodzących w formacie CSV
-              href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
-            - name: Śledzenie wykonywania formatów raportowania elektronicznego w celu rozwiązywania problemów z wydajnością
-              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
+            - name: Konfigurowanie importowania danych w trybie wsadowym z danych zlokalizowanych w programie SharePoint
+              href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
+            - name: Importowanie plików w formacie XML
+              items:
+                - name: Importowanie plików w formacie XML z opcjonalnymi atrybutami
+                  href: ../dev-itpro/analytics/rcs-optional-attributes.md?toc=/fin-and-ops/toc.json
+                - name: Konfigurowanie formatów modułu Raportowanie elektroniczne w celu importowania plików w formacie XML z opcjonalnymi atrybutami
+                  href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
             - name: Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości zawartości
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
+        - name: Cykl życia konfiguracji
+          items:
+            - name: Zarządzanie cyklem życia konfiguracji
+              href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
+            - name: Przekazywanie konfiguracji do usługi Lifecycle Services
+              href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
+            - name: Importowanie konfiguracji z usługi Lifecycle Services
+              href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+            - name: Pobieranie konfiguracji z usługi Lifecycle Services
+              href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
+            - name: Importowanie konfiguracji
+              href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
+            - name: Pobieranie konfiguracji modułu Raportowanie elektroniczne z repozytorium RCS
               items:
-                - name: Rozszerzanie listy funkcji modułu Raportowanie elektroniczne
-                  href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
-                - name: Zmiany w interfejsie API struktury raportowania elektronicznego w aktualizacji Application update 7.3
-                  href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
-                - name: Określanie niestandardowego magazynu wygenerowanych dokumentów
-                  href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
+                - name: Pobieranie konfiguracji z repozytorium modułu Raportowanie elektroniczne dla typu RCS
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md?toc=/fin-and-ops/toc.json
+                - name: Importowanie konfiguracji z RCS
+                  href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md
+        - name: Używanie rozwiązań modułu Raportowanie elektroniczne w rozwiązaniu Finance and Operations
+          items:
+            - name: Konfigurowanie struktury
+              items:
+                - name: Konfigurowanie struktury modułu Raportowanie elektroniczne
+                  href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
+                - name: Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych
+                  href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Miejsca docelowe
+              items:
+                - name: Przegląd miejsc docelowych
+                  href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
+                - name: Konfigurowanie miejsc docelowych
+                  href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Automatyczne sprawdzanie poprawności wygenerowanych raportów
+              items:
+                - name: Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi
+                  href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
+                - name: Ulepszenia w śledzeniu wyników wygenerowanych raportów i porównaniach z wartościami bazowymi
+                  href: ../dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/fin-and-ops/toc.json
+                - name: Automatyzacja testowania za pomocą modułu Raportowanie elektroniczne
+                  href: ../dev-itpro/analytics/er-automate-testing.md?toc=/fin-and-ops/toc.json
+            - name: Automatyzacja procesów biznesowych za pomocą konfiguracji modułu Raportowanie elektroniczne
+              items:
+                - name: Konfigurowanie w module Raportowanie elektroniczne ściągania danych do usługi Power BI
+                  href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
+                - name: Generowanie formularzy faktur niezależnych (FTI) do wydruku
+                  href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
+            - name: Śledzenie wykonywania formatów modułu Raportowanie elektroniczne w celu rozwiązywania problemów z wydajnością
+              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+        - name: Interfejs API struktury modułu Raportowanie elektroniczne
+          items:
+            - name: Rozszerzanie listy funkcji modułu Raportowanie elektroniczne
+              href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
+            - name: Zmiany w interfejsie API struktury raportowania elektronicznego w aktualizacji Application update 7.3
+              href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+            - name: Określanie niestandardowej lokalizacji wygenerowanych dokumentów
+              href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
         - name: Osadzone rozwiązania analityczne
           items:
             - name: Osadzona usługa Power BI w obszarach roboczych
               href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json
-            - name: Integracja usługi Power BI Embedded
+            - name: Integracja z usługą Power BI Embedded
               href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
+            - name: Wybieranie analitycznych obszarów roboczych z witryny PowerBI.com
+              href: ../dev-itpro/analytics/select-analytical-workspace.md
         - name: Opcje personalizacji w witrynie PowerBI.com
           items:
             - name: Funkcje i usługi dostępne poprzez integrację z usługą Power BI
               href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
             - name: Przypinanie raportów usługi Power BI do obszarów roboczych
               href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
+            - name: Dostosowywanie raportów osadzonych w analitycznych obszarach roboczych
+              href: ../dev-itpro/analytics/customize-analytical-workspace.md
         - name: Narzędzia do tworzenia i rozszerzania rozwiązań
           items:
             - name: 'Analizy, miary agregacji i modelowanie wskaźników KPI'
@@ -3067,12 +3279,16 @@
               href: ../supply-chain/cost-management/adjust-hand-inventory-cost-values.md
             - name: Śledzenie dynamicznych średnich kosztów dla wymiaru magazynowego
               href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+    - name: Łańcuch dostaw
+      href: ../supply-chain/index.md
     - name: Planowanie główne
       href: ../supply-chain/master-planning/master-planning-home-page.md
       items:
         - name: Plany główne
           href: ../supply-chain/master-planning/master-plans.md
           items:
+            - name: Ustawianie planów głównych
+              href: ../supply-chain/master-planning/master-planning-setup.md
             - name: Ustawienia zapotrzebowania
               href: ../supply-chain/master-planning/coverage-settings.md
             - name: Definiowanie reguł zapotrzebowania na towary
@@ -3099,6 +3315,8 @@
               href: ../supply-chain/master-planning/tasks/create-plan-site.md
             - name: Kalendarze i planowanie główne
               href: ../supply-chain/master-planning/supply-chain-calendars-master-planning.md
+            - name: Zwiększanie wydajności planowania głównego
+              href: ../supply-chain/master-planning/master-planning-performance.md
             - name: Plany główne i funkcjonalność wielooddziałowości
               href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
               items:
@@ -3114,6 +3332,8 @@
                   href: ../supply-chain/master-planning/master-plan-bom-version-determined.md
                 - name: Rozkładanie wersji BOM
                   href: ../supply-chain/master-planning/master-plan-explosion-bom-version.md
+            - name: Liczba dni z ujemnym stanem magazynu i dynamiczna liczba dni z ujemnym stanem magazynu
+              href: ../supply-chain/master-planning/more-about-dynamic-negative-days.md
             - name: Tworzenie planu międzyfirmowego
               href: ../supply-chain/master-planning/tasks/create-intercompany-plan.md
             - name: Wyświetlanie wychodzących danych o zaplanowanym popycie międzyfirmowym

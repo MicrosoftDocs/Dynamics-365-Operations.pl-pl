@@ -997,6 +997,8 @@
               href: deployment/deploy-retail-onprem.md
         - name: Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych
           href: deployment/develop-deploy-custom-models-on-premises.md
+        - name: Integracja PowerBI.com z lokalnymi środowiskami
+          href: analytics/entity-store-on-prem.md
         - name: Konfigurowanie zwrotnych serwerów proxy dla środowisk lokalnych
           href: deployment/onprem-reverseproxy.md
         - name: Stosowanie aktualizacji do wdrożenia lokalnego
@@ -1013,6 +1015,8 @@
           href: user-interface/client-disconnected.md
         - name: Rozwiązywanie problemów z wdrożeniami lokalnymi
           href: deployment/troubleshoot-on-prem.md
+        - name: Wymiana certyfikatów
+          href: deployment/certificate-rotation-on-prem.md
     - name: Wdrażanie kodu niestandardowego
       items:
         - name: Tworzenie wdrażalnych pakietów modeli

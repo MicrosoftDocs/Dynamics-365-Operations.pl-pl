@@ -3,7 +3,7 @@ title: Śledzenie wykonywania formatu ER w celu rozwiązywania problemów z wyda
 description: Ten temat zawiera informacje dotyczące korzystania z funkcji śledzenia wydajności w module Raportowanie elektroniczne (ER) w celu rozwiązywania problemów z wydajnością.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/08/2019
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: aa71db2752889bc905c22bab1cf2fa46d7ee07c7
-ms.sourcegitcommit: 67d00b95952faf0db580d341249d4e50be59119c
+ms.openlocfilehash: 55f3fd95a87bcf62824021ebfbf3bcd11af6013f
+ms.sourcegitcommit: f6581bab16225a027f4fbfad25fdef45bd286489
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576553"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "1703882"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Śledzenie wykonywania formatów ER w celu rozwiązywania problemów z wydajnością
 
@@ -346,3 +346,29 @@ W przypadku korzystania z jednej z tych wersji modułu Finance and Operations mo
 Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego tematu, aby wygenerować nowy ślad wydajności.
 
 Przeglądarka sieci Web zaproponuje pobranie pliku zip. Ten plik zawiera ślad wydajności w formacie PerfView. Następnie można przeanalizować szczegóły wykonania formatu ER w narzędziu do analizy wydajności PerfView.
+
+![Informacje o śledzeniu dla wykonanego formatu ER w PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+
+## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Narzędzia zewnętrzne umożliwiają przejrzenie śledzenie wykonywania obejmującego kwerendy bazy danych
+
+Ze względu na udoskonalenia, które zostały wprowadzone w ramach systemu, śledzenie wydajności generowane w formacie PerfView zawiera więcej szczegółów dotyczących wykonywania operacji na formacie ER. W Microsoft Dynamics 365 for Finance and Operations wersji 10.0.4 (lipiec 2019) ten ślad może również zawierać szczegóły wykonanych kwerend SQL w bazie danych aplikacji.
+
+### <a name="configure-user-parameters"></a>Konfigurowanie parametrów użytkownika
+
+1. W module Finance and Operations przejdź do opcji **Administrowanie organizacją** \> **Raportowanie elektroniczne** \> **Konfiguracje**.
+2. Na stronie **Konfiguracje** w okienku akcji na karcie **Konfiguracje** w grupie **Ustawienia zaawansowane** wybierz opcję **Parametry użytkownika**.
+3. W oknie dialogowym **Parametry użytkownika** w sekcji **Śledzenie wykonywania** ustaw następujące parametry:
+
+    - W polu **Format śledzenia wykonania** wybierz opcję **PerfView XML**.
+    - Ustawienie opcji **Zbierz statystyki kwerendy** na wartość **Tak**.
+    - Ustawienie opcji wartość **śledzenie kwerendy** na wartość **Tak**.
+
+    ![Okno dialogowe Parametry użytkownika w module Finance and Operations](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+
+### <a name="run-the-er-format"></a>Uruchamianie formatu ER
+
+Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego tematu, aby wygenerować nowy ślad wydajności.
+
+Przeglądarka sieci Web zaproponuje pobranie pliku zip. Ten plik zawiera ślad wydajności w formacie PerfView. Następnie można przeanalizować szczegóły wykonania formatu ER w narzędziu do analizy wydajności PerfView. Teraz ten ślad zawiera szczegóły dostępu do bazy danych SQL podczas wykonywania formatu ER.
+
+![Informacje o śledzeniu dla wykonanego formatu ER w PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)

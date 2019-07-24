@@ -3,7 +3,7 @@ title: Planowanie operacji
 description: Ten temat zawiera informacje o planowaniu operacji. Funkcji planowania operacji można używać, aby przedstawić ogólne oszacowanie procesu produkcji w wybranym okresie.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 298c07346427a949ffa544e66eb6b01995dadc38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9447474e0878077659a80dc49f7c7c1313db2cbe
+ms.sourcegitcommit: 8741b4b32ef32a54de3d064bf40a9c0179d4139a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560273"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "1691469"
 ---
 # <a name="operations-scheduling"></a>Planowanie operacji
 
@@ -67,6 +67,9 @@ Harmonogram operacji decyduje również o planowaniu głównym i obliczaniu zapo
 -   **Produkcje zaległe** — produkty, które są zaplanowane, zwolnione lub rozpoczęte
 -   **Dostępność materiałów** — zapasy, produkcje podrzędne i dostawcy
 -   **Zdolności produkcyjne** — zasoby wymagane do produkcji
+
+> [!NOTE]
+> W przypadku korzystania z wielowątkowego planowania głównego i planowania operacji, ostateczne zdolności produkcyjne nie będą brane pod uwagę. 
 
 ## <a name="cancellations"></a>Anulowania
 Podczas planowania operacji można anulować określone części marszruty. Tymi częściami są czas oczekiwania, czas przezbrajania, czas przetwarzania, czas nakładania i czasy transportu.

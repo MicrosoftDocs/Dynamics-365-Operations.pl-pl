@@ -3,7 +3,7 @@ title: Konfigurowanie kursów szkoleniowych
 description: Administratorzy zasobów ludzkich i menedżerowie mogą korzystać z funkcji kursów do obsługi informacji o szkoleniu oferowanym pracownikom.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 83f88d17c744bb53dad975b77d169a09375d20d1
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 26e76d68c6d5c8bd965e65e65d57f239fb8a2918
+ms.sourcegitcommit: 87e8b811680b1f87a973ce1680f07d657fa23046
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518795"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "1701397"
 ---
 # <a name="set-up-training-courses"></a>Konfigurowanie kursów szkoleniowych
 
@@ -128,12 +128,12 @@ W poniższej tabeli wymieniono możliwe stany i akcje kursu, które można wykon
 </table>
 
 ## <a name="course-participants"></a>Uczestnicy kursu
-Uczestnicy kursu to pracownicy, kandydaci lub osoby kontaktowe biorące udział w kursie lub w imprezie szkoleniowej. Można zarejestrować uczestników tylko na kursach otwartych. Minimalną i maksymalną liczbę uczestników, jaką można zarejestrować na kurs, określa się na skróconej karcie **Ogólne** na stronie **Kursy**.
+Uczestnikami kursu są pracownicy, którzy biorą udział w kursie lub wydarzeniu. Można zarejestrować uczestników tylko na kursach otwartych. Minimalną i maksymalną liczbę uczestników, jaką można zarejestrować na kurs, określa się na skróconej karcie **Ogólne** na stronie **Kursy**.
 
 <a name="workflow"></a>System Workflow
 --------
 
-Rejestracje pracowników, którzy zapisali się na kurs poprzez stronę **Samoobsługa pracownika etatowego**, mogą zostać przekierowane przez przepływ pracy celem zatwierdzenia.  Przepływ pracy dla kursu można ustawić na skróconej karcie **Ogólne** na stronie **Kursy**.
+Rejestracje pracowników, którzy zapisali się na kurs poprzez stronę **Samoobsługa pracownika etatowego**, mogą zostać przekierowane przez przepływ pracy celem zatwierdzenia. Możesz przypisać przepływ pracy do kursu na skróconej karcie **Ogólne** na stronie **Kursy**.
 
 
 

@@ -3,7 +3,7 @@ title: Omówienie faktur od dostawców
 description: Ten temat zawiera ogólne informacje o fakturach od dostawców. Faktur od dostawców są wnioskami o płatność za produkty i usługi, które zostały odebrane. Faktury od dostawców mogą dotyczyć usług świadczonych w sposób ciągły albo bazować na zamówieniach zakupu za określone towary i usługi.
 author: abruer
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b57c18b5b2cf690111511e4c5a92d51fc23dd68c
-ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
+ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
+ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1618280"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625086"
 ---
 # <a name="vendor-invoices-overview"></a>Omówienie faktur od dostawców
 
@@ -91,13 +91,6 @@ Na stronie **Odzyskaj faktury od dostawców** można odzyskać lub zwolnić fakt
 
 Dostęp do strony **Odzyskaj faktury od dostawcy** można uzyskać tylko wtedy, gdy masz przypisane uprawnienie i obowiązek zabezpieczeń **Odzyskaj faktury od dostawców będące w użyciu**. Ponadto parametr **Zezwalaj na odzyskiwanie faktur od dostawców** na stronie **Parametry modułu rozrachunków z dostawcami** musi być włączony.
 
-## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Zmiana stanu przepływu pracy dla faktur od dostawcy z Nieodwracalne na Wersja robocza
-
-Wystąpienie przepływu pracy, które zostało zatrzymane z powodu nieodwracalnego błędu będzie miało stan przepływu pracy **Nieodwracalne**. Jeśli stan przepływu pracy faktury od dostawcy to **Nieodwracalne**, można go zmienić na **Wersja robocza**. Wtedy można edytować fakturę od dostawcy. Ta funkcja jest dostępna, jeśli jest włączony parametr **Przywróć stan wersji roboczej w przepływie pracy faktury od dostawcy**na stronie **Zarządzanie funkcjami**.
-
-Za pomocą strony **Zmiana stanu przepływu pracy faktury od dostawcy** można zmienić stan przepływu pracy na **Wersja robocza**. Tę stronę można otworzyć z menu **Zadanie okresowe**. Na stronie są wyświetlane wszystkie faktury od dostawcy, których stan przepływu pracy to **Nieodwracalne** w bieżącej firmie. Jest również podany użytkownik, który przesłał fakturę do przepływu pracy, oraz identyfikator faktury, a także łącze do historii przepływu pracy. Aby zmienić stan przepływu pracy na **Wersja robocza**, zaznacz jedną lub więcej faktur, a następnie kliknij przycisk **Aktualizuj do stanu Wersja robocza**. Po zmianie stanu przepływu pracy na **Wersja robocza**, fakturę będzie można edytować na stronie**Faktura od dostawcy**.
-
-Dostęp do strony **Zmiana stanu przepływu pracy faktury od dostawcy** możesz uzyskać tylko wtedy, gdy masz przypisany obowiązek zabezpieczeń **Aktualizowanie stanu przepływu pracy faktury od dostawcy** i uprawnienie **Zmiana stanu przepływu pracy faktury od dostawcy**.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -3,7 +3,7 @@ title: Pakiet zawartości Przegląd środków pieniężnych dla usługi Power BI
 description: W tym temacie opisano pakiet zawartość Przegląd środków pieniężnych dostępny dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 author: saraschi2
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5dccb5c5c6c336607603dfc7a935c039e5ac4aa5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: bff0b1b0a68eccec1cebf130bc40ec3e6d88c3a9
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568924"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702802"
 ---
 # <a name="cash-overview-power-bi-content"></a>Pakiet zawartości Przegląd środków pieniężnych dla usługi Power BI
 
@@ -33,6 +33,17 @@ W tym temacie opisano pakiet zawartości **Przegląd środków pieniężnych** d
 
 Pakiet zawartości **Przegląd środków pieniężnych** dla usługi Power BI jest przeznaczony dla osób odpowiedzialnych za zarządzanie gotówką w swoich organizacjach. Pakiet zawartości **Przegląd środków pieniężnych** dla usługi Power BI zapewnia wgląd w przepływy środków pieniężnych w firmie. Dostarcza również prognoz, które mogą pomóc podejmować lepsze decyzje i w efekcie optymalizować przepływ środków pieniężnych. Można analizować środki pieniężne według firm, walut i rachunków bankowych, aby lepiej zrozumieć przyczyny nadwyżek i niedoborów.
 
+## <a name="setup-needed-to-view-power-bi-content"></a>Konfiguracja potrzebna do wyświetlenia zawartości Power BI.
+
+Aby dane były wyświetlane w przeglądach Power BI **środków pieniężnych** i **zarządzania bankami**, należy zastosować następującą konfigurację.
+
+1. Otwórz **Administracja Systemu > Konfiguracja > Parametry Systemu** i ustaw **Walutę systemu** oraz **Kurs wymiany systemu**.
+2. Otwórz **Księga ogólna > Konfiguracja > Księga** i ustaw **Waluta księgowa** oraz **Typ kursu wymiany**.
+2. Zdefiniuj kursy wymiany między walutami Transakcji a Walutą księgową, Walutą księgową a Walutą systemu oraz Walutą księgową oraz Walutami banku. Żeby to zrobić, otwórz **Księga Ogólna > Waluty > Kursy wymiany walut**.
+3. Skonfiguruj i uruchom proces Prognozy Przepływów Pieniężnych. Więcej informacji na temat uruchamiania Prognozy przepływów pieniężnych znajdziesz: <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
+">Prognozy przepływów pieniężnych</a>. 
+4. Otwórz **Administracja Systemu > Konfiguracja > Sklep podmiotu** i odśwież łączny wskaźnik **CustCollectionsBIMeasurements**.
+
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 
 Raporty z zawartości **Przegląd środków pieniężnych** dla usługi Power BI są wyświetlane w obszarach roboczych **Przegląd środków pieniężnych** i **Zarządzanie rachunkami bankowymi**.
@@ -42,6 +53,7 @@ Aby wyświetlić raporty prognozowania przepływów pieniężnych z danymi, najp
 Dla celów demonstracyjnych można za pomocą strony **Generuj dane** dodać dane demonstracyjne prognozowania przepływów pieniężnych z modułu Dane demonstracyjne.  Ten skrypt spowoduje wstawienie danych do tabel prognozowania przepływów pieniężnych, tak aby szybko wypełnić pola informacji niezbędnych dla raportów.  Ten moduł jest dostępny tylko wtedy, gdy w środowisku masz wdrożony model pakietu danych demonstracyjnych. 
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty dostępne w pakiecie zawartości dla usługi Power BI
+
 W poniższej tabeli przedstawiono szczegóły dotyczące mierników, które znajdują się na każdej stronie raportu w pakiecie zawartości **Przegląd środków pieniężnych** dla usługi Power BI.
 
 | Raport                                | Zawartość |
@@ -67,5 +79,3 @@ W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet zawartoś
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Zsumowane przychody, rozchody i salda środków pieniężnych w walucie rozliczeniowej każdej firmy |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Zsumowane przychody, rozchody i salda środków pieniężnych w walucie systemowej dla wszystkich firm |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Zsumowana kwota netto transakcji oraz salda walut w walutach transakcji |
-
-

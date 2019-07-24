@@ -3,7 +3,7 @@ title: Pozyskiwanie kandydatów za pomocą pul umiejętności
 description: W tym temacie opisano sposób tworzenia i konfigurowania pul umiejętności w aplikacji Attract.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/02/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
+ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518801"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "1711301"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Pozyskiwanie kandydatów za pomocą pul umiejętności
 
@@ -110,15 +110,16 @@ Wszyscy użytkownicy mają wspólny widok profili kandydatów. Karta **Profil** 
 
 - Można wyświetlić dane kontaktowe kandydata. Można także edytować i aktualizować informacje zgodnie z potrzebą, używając przycisku **Edytuj szczegóły**.
 
-- Można dodać więcej znaczników umiejętności, co pomoże identyfikować kwalifikacje kandydata.
-
 - Można wyświetlić całą historię zgłoszeń kandydata. Można obejrzeć wszystkie funkcje w organizacji, na które aplikował kandydat, oraz stan tych zgłoszeń. Jeśli należysz zespołu rekrutacyjnego, możesz kliknąć przycisk **Wyświetl** i szczegółowo obejrzeć zgłoszenie.
 
-- Na karcie **Dokumenty** są wyświetlane wszystkie dokumenty, jakie kandydat dodał ze swojego profilu albo podczas ubiegania się o pracę. Na tej karcie można zarządzać życiorysami kandydatów, listami przewodnimi, portfolio zawodowymi itd. Ta karta umożliwia także dodawanie dokumentów.
+- Na karcie **Dokumenty** są wyświetlane wszystkie dokumenty, jakie kandydat dodał ze swojego profilu albo podczas ubiegania się o pracę. Możesz użyć tej karty do zarządzania CV, listami motywacyjnymi, portfolio prac i innymi dokumentami złożonymi przez kandydata. Ta karta umożliwia także dodawanie dokumentów.
 
     Aby wyświetlić dokument, zaznacz jego nazwę na liście dokumentów. Można wyświetlić dokumenty programu Microsoft Word w aplikacji za pomocą Microsoft Office 365. Można także pobrać dokumenty do lokalnego komputera za pomocą opcji **Pobierz** widocznej obok każdego dokumentu.
 
 - Na karcie **LinkedIn** są wyświetlane dane kandydata z serwisu LinkedIn. Aby użyć tej karty, należy podłączyć konto LinkedIn w ustawieniach użytkownika oraz ustanowić połączenie z aplikacji LinkedIn Recruiter w lokalnym środowisku. Aby uzyskać więcej informacji, zobacz [Korzystanie z aplikacji LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+
+> [!NOTE]
+> Tylko kandydaci mogą aktualizować swoje umiejętności, historię wykształcenia i doświadczenie zawodowe.
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>Dodawanie kandydatów z puli umiejętności do funkcji
 

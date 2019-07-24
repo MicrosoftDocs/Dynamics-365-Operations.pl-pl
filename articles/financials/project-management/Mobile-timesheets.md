@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
-ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7eff0ce166785cb777fbf58ecf08ca8915be5af
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557336"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624891"
 ---
 # <a name="project-timesheets-on-a-mobile-device"></a>Karty czasu pracy projektów na urządzeniu przenośnym
 
 [!include [banner](../includes/banner.md)]
-
-# <a name="overview"></a>Przegląd
 
 Aplikacja **Moje karty czasu pracy (zoptymalizowane dla urządzeń przenośnych)** pozwala pracownikom tworzyć i przesyłać karty czasu pracy projektów, tak aby na urządzeniu przenośnym rejestrować godziny przepracowane w określonym projekcie. Pracownicy mogą utworzyć nową kartę czasu pracy dane lub skopiować dane z istniejącej karty czasu pracy, co pozwala szybko i bezbłędnie wprowadzić informacje o czasie. Jeśli wyznaczono Cię jako pełnomocnika, należy również wprowadzić kartę czasu pracy dla innego pracownika. Aplikacja umożliwia pracownikom filtrowanie według projektu, zasobu lub stanu zatwierdzenia, aby szybko znaleźć i zaznaczyć kartę czasu pracy. Umożliwia także pracownikom zapisywanie ulubionych, co powoduje zapisanie informacji dotyczących projektu i działań w karcie czasu pracy. Zapisane ulubione mogą służyć do tworzenia kart czasu pracy w przyszłości, co przyspiesza proces wprowadzania czasu. Edytowanie i wyświetlanie informacji o wymiarach finansowych nie jest obsługiwane w aplikacji mobilnej. Do aplikacji **Moje karty czasu pracy (zoptymalizowane dla urządzeń przenośnych)** można przejść za pośrednictwem przeglądarki sieci web na urządzeniu przenośnym.
 
@@ -35,8 +33,7 @@ Aplikacja **Karty czasu pracy do przeglądu przeze mnie (zoptymalizowane dla urz
 Ta aplikacja mobilna jest zgodne iPhone z aktualizacją 15 platformy Dynamics 365 for Finance and Operations.
 Aplikacja na urządzenia z systemem Android będzie zgodna z aktualizacją platformy 16, gdy zostanie wydana.
 
-<a name="create-a-project-timesheet-on-your-mobile-device"></a>Tworzenie karty czasu pracy projektu na urządzeniu przenośnym
-------------------------------------------------
+## <a name="create-a-project-timesheet-on-your-mobile-device"></a>Tworzenie karty czasu pracy projektu na urządzeniu przenośnym
 
 1.  Należy zwrócić uwagę na adres URL programu Dynamics 365 na stronie **Zarządzanie projektami i ich księgowanie** \> **Karty czasu pracy** \> **Moje karty czasu pracy (zoptymalizowane dla urządzeń przenośnych)**.
 

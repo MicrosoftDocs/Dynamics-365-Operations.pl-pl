@@ -3,7 +3,7 @@ title: Personalizowanie środowiska użytkownika
 description: W tym temacie wyjaśniono, jak można spersonalizować Microsoft Dynamics 365 for Finance and Operations.
 author: jasongre
 manager: AnnBe
-ms.date: 05/17/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67ba1a95299de09c74e2fa2808cb63f61acf5862
-ms.sourcegitcommit: c576b81dc3c93c09fb08fb0ba0c19f417360c5ab
+ms.openlocfilehash: 51c4cbbba36ed4c93fbbba907031023060d51495
+ms.sourcegitcommit: 0273905ceb371ba17d3a37d690e1f568aa968b4f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620021"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625018"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -169,6 +169,6 @@ Użytkownicy posiadający uprawnienia administratora mogą też zarządzać pers
 
 W przypadku personalizowania konfiguracji wymiarów magazynowych na stronie należy wziąć pod uwagę ustawienia utworzone przy użyciu opcji **Wyświetl wymiary**. Na przykład można użyć personalizacji w celu ukrycia kolumny dla wymiaru zapasów Numer partii, ale kolumna pojawi się przy następnym otwarciu strony. To zachowanie występuje, ponieważ ustawienia **Wyświetlanie wymiarów** sterują wyświetlanymi kolumnami wymiaru zapasów.
 
-Ustawienia w sekcji **Wyświetlanie wymiarów** mają zastosowanie do wszystkich stron i zastępują wszelkie spersonalizowane konfiguracje pól wymiarów magazynowych na poszczególnych stronach.
+Ustawienia w sekcji **Wyświetlanie wymiarów** mają zastosowanie do wszystkich stron i zastępują wszelkie spersonalizowane konfiguracje pól wymiarów magazynowych na każdej stronie.
 
-W efekcie w poprzednim przykładzie jeśli nie chcesz wyświetlania kolumny dla wymiaru zapasów Numer partii, musisz wyczyścić ten wymiar w ramach opcji tabeli **Wyświetl wymiary**. Ostatecznie ta zmiana będzie stosowana nie tylko na jednej konkretnej stronie, ale na wszystkich stronach.
+W efekcie w poprzednim przykładzie, jeśli nie chcesz wyświetlania kolumny dla wymiaru inwentaryzacji numeru partii na stronie, musisz wyczyścić ten wymiar w ramach opcji tabeli **Wyświetl wymiary** dla tej strony.

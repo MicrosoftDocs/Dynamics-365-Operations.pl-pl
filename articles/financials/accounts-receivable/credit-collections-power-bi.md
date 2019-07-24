@@ -3,7 +3,7 @@ title: Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją
 description: W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie kredytami i windykacją. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5f6b1c9338670a2f2f26ecbef1d349171457e1ac
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547239"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702779"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją
 
@@ -42,7 +42,17 @@ Wszystkie kwoty są wyświetlane w walucie systemowej. Można ustawiać walutę 
 
 Domyślnie są wyświetlane dane kredytów i windykacji dla bieżącej firmy. Aby wyświetlić dane dla wszystkich firm, należy przypisać obowiązek **CustCollectionsBICrossCompany** do roli.
 
+## <a name="setup-needed-to-view-power-bi-content"></a>Konfiguracja potrzebna do wyświetlenia zawartości Power BI.
+
+Aby dane były wyświetlane, należy wykonać następujące ustawienia **Kredyty i windykacja odbiorcy** materiały ilustracyjne Power BI.
+
+1. Otwórz **Administracja Systemu > Konfiguracja > Parametry Systemu** i ustaw **Walutę systemu** oraz **Kurs wymiany systemu**.
+2. Otwórz **Księga ogólna > Konfiguracja > Księga** i ustaw **Waluta księgowa** oraz **Typ kursu wymiany**.
+3. Zdefiniuj kursy wymiany między walutami Transakcji a Walutą księgową, Walutą księgową a Walutą systemu. Żeby to zrobić, otwórz **Księga Ogólna > Waluty > Kursy wymiany walut**.
+4. Otwórz **Administracja Systemu > Konfiguracja > Sklep podmiotu** i odśwież łączny wskaźnik **CustCollectionsBIMeasurements**.
+
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
+
 Zawartość usługi Power BI **Zarządzanie kredytami i windykację** jest wyświetlana w obszarze roboczym **Kredyty i windykacja odbiorcy**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty dostępne w pakiecie zawartości dla usługi Power BI
@@ -63,28 +73,3 @@ Pakiet zawartości usługi Power BI **CustCollectionsBICrossCompany** obejmuje r
 | Ponaglenia         | <ul><li>Kwoty kodu ponaglenia</li><li>Szczegóły kwoty kodu ponaglenia</li><li>Kwoty ponagleń według firmy</li><li>Kwoty ponagleń według grupy odbiorców</li><li>Kwoty ponagleń według regionów</li></ul> |
 
 Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w usłudze Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Można także użyć funkcji eksportu danych źródłowych do wyeksportowania danych podsumowanych w wizualizacji.
-
-## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
-
-Następujące dane są używane do wypełniania raportów w pakiecie zawartości usługi Power BI **Zarządzanie kredytami i windykacją**. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
-
-
-|                   Jednostka                    |      Najważniejsze zagregowane miary      |             Źródło danych              |                           Pole                            |                                    opis                                     |
-|---------------------------------------------|--------------------------------------|--------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------|
-| CustCollectionsBIActivitiesAverageCloseTime | NumOfActivities, AveragecClosedTime  |            smmActivities             | AverageOfChildren(AverageClosedTime) Count(ActivityNumber) |     Liczba zamkniętych działań i średni czas potrzebny do zamknięcia tych działań.     |
-|       CustCollectionsBIActivitiesOpen       |            ActivityNumber            |            smmActivities             |                   Count(ActivityNumber)                    |                           Liczba otwartych działań.                            |
-|        CustCollectionsBIAgedBalances        |             AgedBalances             |  CustCollectionsBIAgedBalancesView   |                 Sum(SystemCurrencyBalance)                 |                             Suma wiekowanych sald.                              |
-|        CustCollectionsBIBalancesDue         |         SystemCurrencyAmount         |   CustCollectionsBIBalanceDueView    |                 Sum(SystemCurrencyAmount)                  |                           Kwoty, które są zaległe.                            |
-|    CustCollectionsBICaseAverageCloseTIme    |  NumOfCases, CaseAverageClosedTime   |      CustCollectionsCaseDetail       | AverageOfChildren(CaseAverageClosedTime) Count(NumOfCases) |        Liczba zamkniętych spraw i średni czas potrzebny do zamknięcia tych spraw.        |
-|         CustCollectionsBICasesOpen          |                CaseId                |      CustCollectionsCaseDetail       |                       Count(CaseId)                        |                              Liczba otwartych spraw.                              |
-|      CustCollectionsBICollectionLetter      |         CollectionLetterNum          |       CustCollectionLetterJour       |                 Count(CollectionLetterNum)                 |                       Liczba otwartych ponagleń.                        |
-|   CustCollectionsBICollectionLetterAmount   |       CollectionLetterAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                     Saldo zaksięgowanych ponagleń.                      |
-|      CustCollectionsBICollectionStatus      |       CollectionStatusAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                Saldo transakcji ze stanem windykacji.                 |
-|           CustCollectionsBICredit           | CreditExposed, AmountOverCreditLimit |     CustCollectionsBICreditView      |       Sum(CreditExposed), Sum(AmountOverCreditLimit)       | Suma udzielonych kredytów oraz kwoty, o jakie odbiorcy przekraczają swoje limity kredytowe. |
-|         CustCollectionsBICustOnHold         |               Zablokowana                |      CustCollectionsBICustTable      |                       Count(Blocked)                       |                     Liczba odbiorców, którzy są wstrzymani.                      |
-|            CustCollectionsBIDSO             |                DSO30                 |       CustCollectionsBIDSOView       |                  AverageOfChildren(DSO30)                  |                        Wskaźnik rotacji należności wynoszący co najmniej 30 dni.                         |
-|      CustCollectionsBIExpectedPayment       |           ExpectedPayment            | CustCollectionsBIExpectedPaymentView |                 Sum(SystemCurrencyAmounts)                 |                 Suma oczekiwanych płatności w ciągu najbliższego roku.                 |
-|        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                Liczba not odsetkowych, które zostały utworzone.                |
-|        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Łączna liczba zamówień sprzedaży, które są wstrzymane.                 |
-|          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                Suma transakcji, które zostały odpisane.                 |
-
