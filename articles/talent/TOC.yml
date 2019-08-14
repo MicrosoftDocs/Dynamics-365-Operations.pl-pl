@@ -8,6 +8,12 @@
         - name: Nowości i zmiany w rozwiązaniu Talent
           href: whats-new.md
           items:
+            - name: 23 lipca 2019 r.
+              href: whats-new-talent-july-24-2019.md
+            - name: 16 lipca 2019 r.
+              href: whats-new-talent-july-16-2019.md
+            - name: 9 lipca 2019 r.
+              href: whats-new-talent-july-9-2019.md
             - name: 2 lipca 2019 r.
               href: whats-new-talent-july-2-2019.md
             - name: 25 czerwca 2019 r.
@@ -102,8 +108,6 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Aplikacja Core HR i usługa Common Data Service
           href: CoreHREntities.md
-        - name: Dostęp do funkcji w wersji zapoznawczej
-          href: access-preview-feature.md
         - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Talent
           href: talent-support.md
     - name: Rekrutacja w organizacji z użyciem aplikacji Attract
@@ -112,48 +116,68 @@
           href: attract-comprehensive-hiring.md
         - name: Funkcje i możliwości aplikacji Attract
           href: attract-overview.md
-        - name: Często zadawane pytania dotyczące serwisu LinkedIn
-          href: attract-linkedin-faq.md
-        - name: Konfigurowanie ustawień poczty e-mail
-          href: attract-configure-email-settings.md
-        - name: Tworzenie szablonu procesu w aplikacji Attract
-          href: Process-templates-Attract.md
-        - name: Tworzenie i księgowanie zadań
-          href: Creating-jobs-Attract.md
-        - name: Konfigurowanie integracji z serwisem LinkedIn
-          href: attract-admin-linkedin.md
-        - name: Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Attract
-          href: attract-post-jobs-to-linkedin.md
-        - name: Publikowanie ofert pracy w serwisie Broadbean z poziomu aplikacji Attract
-          href: posting-jobs-external.md
-        - name: Pozyskiwanie kandydatów za pomocą pul umiejętności i kandydatów
-          href: attract-talent-pools.md
-        - name: Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter
-          href: attract-linkedin-recruiter.md
-        - name: Działania w procesach rekrutacji
-          href: activities-attract.md
-        - name: Planowanie rozmów kwalifikacyjnych i informacji zwrotnych
-          href: interview-scheduling-feedback.md
+        - name: Często zadawane pytania
+          items:
+            - name: Integracja z serwisem LinkedIn — często zadawane pytania
+              href: attract-linkedin-faq.md
+        - name: Konfigurowanie ustawień systemu
+          items:
+            - name: Konfigurowanie informacji o firmie
+              href: admin-settings-attract.md
+            - name: Ustawianie uprawnień użytkownika
+              href: security-attract.md
+            - name: Zarządzanie funkcjami
+              href: access-preview-feature.md
+            - name: Konfigurowanie witryny kariery
+              href: career-site.md
+            - name: Włączanie integracji z aplikacją Broadbean
+              href: attract-admin-job-board-settings.md
+            - name: Konfigurowanie ustawień poczty e-mail
+              href: attract-configure-email-settings.md
+            - name: Konfigurowanie integracji z serwisem LinkedIn
+              href: attract-admin-linkedin.md
+        - name: Tworzenie procesu rekrutacji
+          items:
+            - name: Tworzenie szablonu procesu
+              href: process-templates-attract.md
+            - name: Działania w procesach rekrutacji
+              href: activities-attract.md
+            - name: Szablony wiadomości e-mail
+              href: email-templates.md
+            - name: Korzystanie z raportów analitycznych
+              href: analytic-reports.md
+        - name: Tworzenie i publikowanie ofert pracy
+          items:
+            - name: Tworzenie funkcji
+              href: creating-jobs-attract.md
+            - name: Publikowanie ofert pracy w serwisie LinkedIn
+              href: attract-post-jobs-to-linkedin.md
+            - name: Publikowanie ofert pracy w serwisie Broadbean
+              href: posting-jobs-external.md
+            - name: Zamykanie funkcji
+              href: attract-close-job.md
+        - name: Pozyskiwanie kandydatów
+          items:
+            - name: Pozyskiwanie kandydatów za pomocą puli umiejętności i kandydatów
+              href: attract-talent-pools.md
+            - name: Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter
+              href: attract-linkedin-recruiter.md
+            - name: Śledzenie źródeł kandydatów
+              href: source-tracking.md
+            - name: Inteligentne rekomendacje
+              href: Intelligent-Recommendations.md
+        - name: Konfigurowanie rozmów kwalifikacyjnych
+          items:
+            - name: Planowanie rozmów kwalifikacyjnych i informacji zwrotnych
+              href: interview-scheduling-feedback.md
+        - name: Składanie oferty
+          items:
+            - name: Konfigurowanie zarządzania ofertami
+              href: offer-setup.md
+            - name: 'Tworzenie, zatwierdzanie i podpisywanie ofert'
+              href: creating-offers.md
         - name: Możliwości rozszerzania w aplikacji Attract
           href: extensibility-attract.md
-        - name: Funkcjonalność witryny rozwoju kariery w aplikacji Attract
-          href: career-site.md
-        - name: Konfigurowanie zarządzania ofertami
-          href: offer-setup.md
-        - name: 'Tworzenie, zatwierdzanie i podpisywanie ofert'
-          href: creating-offers.md
-        - name: Szablony wiadomości e-mail
-          href: email-templates.md
-        - name: Zarządzanie zabezpieczeniami i rolami w aplikacji Attract
-          href: security-attract.md
-        - name: Ustawienia administratora w aplikacji Attract
-          href: Admin-Settings-Attract.md
-        - name: Inteligentne rekomendacje
-          href: Intelligent-Recommendations.md
-        - name: Śledzenie źródeł profilów i zgłoszeń kandydatów
-          href: source-tracking.md
-        - name: Używanie raportów analitycznych na potrzeby analizowania procesu zatrudniania
-          href: analytic-reports.md
     - name: Witanie nowych pracowników za pomocą rozwiązania Onboard
       items:
         - name: Rozpoczęcie korzystania z rozwiązania Onboard
@@ -186,7 +210,9 @@
               href: set-up-hr-parameters-across-legal-entities.md
             - name: Konfigurowanie specyficznych dla firmy parametrów modułu Zasoby ludzkie
               href: set-up-company-specific-hr-parameters.md
-            - name: Czynności personalne — często zadawane pytania
+            - name: Pola Data i Godzina w aplikacji Talent
+              href: date-time-fields-in-talent.md
+            - name: Akcje dotyczące pracowników — często zadawane pytania
               href: personnel-actions-faq.md
             - name: Formalizowanie procesów biznesowych
               href: formalize-business-processes.md
