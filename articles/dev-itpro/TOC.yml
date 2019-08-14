@@ -106,10 +106,28 @@
           items:
             - name: Informacje dotyczące języka X++
               href: dev-ref/xpp-language-reference.md
-            - name: Zmienne i typy danych języka X++
-              href: dev-ref/xpp-variables-data-types.md
-            - name: 'Instrukcje, pętle i obsługa wyjątków w języku X++'
-              href: dev-ref/xpp-statements-loops.md
+            - name: Zmienne i typy danych
+              items:
+                - name: Zmienne
+                  href: dev-ref/xpp-variables-data-types.md
+                - name: Pierwotne typy danych
+                  href: dev-ref/xpp-data-primitive.md
+                - name: Złożone typy danych
+                  href: dev-ref/xpp-data-composite.md
+                - name: Klasy kolekcji
+                  href: dev-ref/xpp-data-collection.md
+                - name: Rozszerzone typy danych
+                  href: dev-ref/xpp-data-edt.md
+            - name: 'Instrukcje, pętle i obsługa wyjątków'
+              items:
+                - name: 'Komentarze, używanie i drukowanie'
+                  href: dev-ref/xpp-statements-loops.md
+                - name: Instrukcje warunkowe
+                  href: dev-ref/xpp-conditional.md
+                - name: Instrukcje pętli
+                  href: dev-ref/xpp-loops.md
+                - name: Obsługa wyjątków
+                  href: dev-ref/xpp-exceptions.md
             - name: Wyjątek języka X++ dotyczący błędu połączenia SQL
               href: dev-ref/sql-connection-error.md
             - name: Operatory w języku X++
@@ -120,6 +138,8 @@
               href: dev-ref/xpp-classes-methods.md
             - name: Wybór danych i wykonywanie na nich operacji w języku X++
               href: dev-ref/xpp-data-query.md
+            - name: Dostęp do danych za pomocą interfejsu API SysDa
+              href: dev-ref/sysda.md
             - name: Makra w języku X++
               href: dev-ref/xpp-macros.md
             - name: Klasy atrybutów w języku X++
@@ -438,6 +458,10 @@
           href: user-interface/page-layout.md
         - name: Czcionka Symbol w systemie Dynamics
           href: user-interface/symbol-font.md
+        - name: Zapisane widoki
+          href: ../fin-and-ops/get-started/saved-views.md
+        - name: 'Tworzenie formularzy, które w pełni wykorzystują zapisane widoki'
+          href: user-interface/understanding-saved-views.md
         - name: Testowanie formularzy wykorzystujących wzorce niestandardowe
           href: user-interface/testing-forms-custom-patterns.md
         - name: Tworzenie zabezpieczonych adresów URL możliwych do udostępnienia (linków bezpośrednich)
@@ -496,7 +520,7 @@
           href: user-interface/messaging-api-center-bar-details.md
         - name: 'Centrum komunikatów, pasek komunikatów i szczegóły komunikatów — często zadawane pytania'
           href: user-interface/messaging-user.md
-    - name: Wytyczne dotyczące podstawowych wzorców formularzy
+    - name: Wytyczne dotyczące wzorców formularzy
       items:
         - name: Wzorce migrowanych formularzy
           href: user-interface/select-form-pattern.md
@@ -1125,11 +1149,11 @@
           href: deployment/apply-updates-on-premises.md
         - name: Ponowne wdrażanie wdrożenia lokalnego
           href: deployment/redeploy-on-prem.md
-        - name: Uaktualnienie w miejscu dla implementacji on-premises z wersji 7.x do 8.1
+        - name: Uaktualnienie w miejscu wdrożeń lokalnych z wersji 7.x do 8.1
           href: migration-upgrade/on-prem-upgrade.md
     - name: Poprawki
       items:
-        - name: Pobieranie poprawek z usługi Lifecycle Services
+        - name: Uzyskiwanie aktualizacji z usługi Lifecycle Services
           href: migration-upgrade/download-hotfix-lcs.md
         - name: Stosowanie aktualizacji do środowisk w chmurze
           href: deployment/apply-deployable-package-system.md
@@ -1160,8 +1184,10 @@
       href: sysadmin/maintenance-mode.md
     - name: Wstępnie skonfigurowane konta systemowe
       href: sysadmin/pre-configured-system-accounts.md
-    - name: Eksportowanie użytkowników B2B do Azure AD
+    - name: Eksportowanie użytkowników B2B do usługi Azure AD
       href: sysadmin/implement-b2b.md
+    - name: Ustawianie limitu czasu bezczynności sesji
+      href: sysadmin/session-idle-timeout.md
     - name: Zabezpieczenia oparte na rolach
       href: sysadmin/role-based-security.md
       items:
@@ -1310,6 +1336,8 @@
   items:
     - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations i usługi Lifecycle Services
       href: lifecycle-services/lcs-support.md
+    - name: Omówienie pomocy technicznej systemu Dynamics 365
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
     - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations obsługiwanego przez firmę 21Vianet w Chinach
       href: lifecycle-services/21vianet-support.md
     - name: Rejestrowanie zgłoszenia do pomocy technicznej typu Premier
