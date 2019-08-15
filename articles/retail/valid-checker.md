@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
+ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617327"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "1790428"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Sprawdzanie spójności transakcji w rozwiązaniu Retail
 
@@ -50,6 +50,7 @@ Proces wsadowy **Sprawdź poprawność transakcji w sklepie** sprawdza spójnoś
 - **Konto odbiorcy** — sprawdza, czy konto odbiorcy w tabelach transakcji sprzedaży detalicznej istnieje w danych głównych odbiorcy w centrali.
 - **Liczba wierszy** — sprawdza, czy liczba wierszy w tabeli nagłówka transakcji jest zgodna z liczbą wierszy w tabelach transakcji sprzedaży.
 - **Cena zawiera podatek** — sprawdza, czy parametr **Cena zawiera podatek** jest spójny w wierszach transakcji.
+- **Kwota płatności** — sprawdza, czy rekordy płatności pasują do kwoty płatności w nagłówku.
 - **Kwota brutto** — sprawdza, czy kwota brutto w nagłówku jest sumą kwot netto w wierszach i kwoty podatku.
 - **Kwota netto** — sprawdza, czy kwota netto w nagłówku jest sumą kwot netto w wierszach.
 - **Niedopłata/Nadpłata** — sprawdza, czy różnica między kwotą brutto w nagłówku a kwotą płatności nie przekracza maksymalnej skonfigurowanej niedopłaty/nadpłaty.
@@ -58,10 +59,11 @@ Proces wsadowy **Sprawdź poprawność transakcji w sklepie** sprawdza spójnoś
 - **Towar na kartę upominkową** — rozwiązanie Retail nie obsługuje zwrotów towarów przekazanych za pośrednictwem karty upominkowej. Można jednak wypłacić saldo karty upominkowej. Każdy towar na karcie upominkowej, który jest przetwarzany jako wiersz zwrotu, a nie wiersz wypłaty, powoduje niepowodzenie wykonywania procesu księgowania zestawienia. Proces weryfikacji towarów przekazanych za pośrednictwem karty upominkowej pomaga zagwarantować, że w tabelach transakcji detalicznych będą istnieć tylko wiersze wypłat kart upominkowych.
 - **Cena ujemna** — sprawdza, czy nie występują wiersze transakcji z ujemną ceną.
 - **Towar i wariant** — sprawdza, czy towary i warianty wymienione w wierszach transakcji istnieją w pliku głównym towarów i wariantów.
+- **Kwota podatku** — sprawdza, czy rekordy podatku pasują do kwot podatku w wierszach. 
 
 ## <a name="set-up-the-consistency-checker"></a>Konfigurowanie modułu sprawdzania spójności
 
-Skonfiguruj proces wsadowy „Sprawdź poprawność transakcji w sklepie” (w obszarze **Handel detaliczny \> Składniki IT w handlu detalicznym \> Księgowanie w punkcie sprzedaży**) do okresowego uruchamiania. Zadanie wsadowe można zaplanować według hierarchii organizacyjnej sklepu w sposób podobny do tego, w jaki skonfigurowane są procesy „Oblicz zestawienie w trybie wsadowym” i „Księgowanie zestawienia w trybie wsadowym”. Zalecamy skonfigurowanie tego procesu w taki sposób, aby uruchamiał się wiele razy w ciągu dnia i każdorazowo po wykonaniu zadania ściągania.
+Skonfiguruj cykliczne uruchamianie procesu wsadowego „Sprawdź poprawność transakcji w sklepie” (w obszarze **Handel detaliczny \> Składniki IT w handlu detalicznym \> Księgowanie w punkcie sprzedaży**). Zadanie wsadowe można zaplanować według hierarchii organizacyjnej sklepu w sposób podobny do tego, w jaki skonfigurowane są procesy „Oblicz zestawienie w trybie wsadowym” i „Księgowanie zestawienia w trybie wsadowym”. Zalecamy skonfigurowanie tego procesu w taki sposób, aby uruchamiał się wiele razy w ciągu dnia i każdorazowo po wykonaniu zadania ściągania.
 
 ## <a name="results-of-validation-process"></a>Wyniki procesu sprawdzania
 
