@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustVendTransPostingLog_RU
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 270544
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0ba1731e4b0dcdeb4591d49dacf517f36e472eef
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d527f5417ddee57a54b0d65b1de0b4c8ced6ab75
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559646"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852511"
 ---
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej
 

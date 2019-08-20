@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4a4733dc4da7a8713ac7ddec5c96ae18c91edc18
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551750"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863678"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organizowanie składników raportu w projektancie raportów
 
@@ -50,7 +50,7 @@ Można grupować definicje raportów, by generować wiele raportów w tym samym 
 ### <a name="create-a-report-group"></a>Tworzenie grupy raportów
 
 1. W Projektancie raportów w okienku nawigacji kliknij opcję **Grupy raportów**.
-2. W menu **Plik** kliknij kolejno opcje **Nowy** &gt; **Definicja grupy raportów**, aby otworzyć nową grupę raportów w oknie podglądu. Alternatywnie kliknij przycisk **Grupa raportów** ![Grupa raportów](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Grupa raportów") na pasku narzędzi.
+2. W menu **Plik** kliknij kolejno opcje **Nowy** &gt; **Definicja grupy raportów**, aby otworzyć nową grupę raportów w oknie podglądu. Alternatywnie kliknij przycisk **Grupa raportów** ![Grupa raportów](media/report-group.gif "Grupa raportów") na pasku narzędzi.
 3. Kliknij kartę **Grupa raportów**. Aby zastąpić informacje o definicjach poszczególnych raportów do generowania tego raportu, zaznacz pole wyboru **Zastąp ustawienia firmy, szczegółów i daty z poszczególnych definicji raportów**. Nazwa firmy, poziom szczegółowości, ustawienie tymczasowości i informacje o datach są wypełniane automatycznie, ale można je aktualizować.
 4. Aby wygenerować wiele raportów z walutami raportowania, zaznacz pole wyboru **Uwzględnij wszystkie waluty raportowania**. Następnie podczas oglądania raportów w przeglądarce sieci web można kliknąć przycisk **Waluta**, a będzie dostępnych wiele widoków.
 5. W polu **Raporty w grupie** kliknij opcję **Dodaj**, aby wybrać raporty w celu ich dodania do grupy raportów. Aby wybrać wiele raportów w oknie dialogowym **Dodaj**, przytrzymaj klawisz Ctrl podczas wybierania raportów. Po zakończeniu wybierania raportów kliknij przycisk **OK**.
@@ -61,7 +61,7 @@ Można grupować definicje raportów, by generować wiele raportów w tym samym 
 1. W Projektancie raportów w okienku nawigacji kliknij opcję **Grupy raportów**.
 2. Kliknij dwukrotnie grupę raportów, którą chcesz zmodyfikować.
 3. Na karcie **Grupa raportów** wprowadź żądane zmiany.
-4. W menu **Plik** kliknij polecenie **Zapisz**, aby zapisać zmodyfikowaną grupę raportów. Alternatywnie kliknij przycisk **Zapisz** ![Zapisz](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Zapisz") na pasku narzędzi.
+4. W menu **Plik** kliknij polecenie **Zapisz**, aby zapisać zmodyfikowaną grupę raportów. Alternatywnie kliknij przycisk **Zapisz** ![Zapisz](media/save.gif "Zapisz") na pasku narzędzi.
 
 > Jeśli masz zaplanowane raporty do generowania w ustalonych odstępach czasu, można zastąpić te ustawienia i natychmiast wygenerować raport.
 
@@ -69,7 +69,7 @@ Można grupować definicje raportów, by generować wiele raportów w tym samym 
 
 1. W Projektancie raportów w okienku nawigacji kliknij opcję **Grupy raportów**.
 2. Otwórz grupę raportów do wygenerowania.
-3. Kliknij przycisk **Generuj raport** ![Generuj raport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Generuj raport"), aby wygenerować raport.
+3. Kliknij przycisk **Generuj raport** ![Generuj raport](media/generate-report.gif "Generuj raport"), aby wygenerować raport.
 
 ### <a name="delete-a-report-group"></a>Usuwanie grupy raportu
 

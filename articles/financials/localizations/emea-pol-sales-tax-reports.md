@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 274063
 ms.search.region: Poland
 ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: 650a9139d232ef90681689b79617622b04f85888
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0aaa59e0be3a213100f3f6bd2f1369c28899698b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560441"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852434"
 ---
 # <a name="sales-tax-reports-for-poland"></a>Sprawozdania podatkowe dla Polski
 [!include [banner](../includes/banner.md)]

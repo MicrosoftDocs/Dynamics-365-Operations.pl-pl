@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 94f8cf5b5753c530c42327e251a2102b876c1c8a
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 8c2a2347abddf03ed884dcfe68f645fde84c092a
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606879"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863779"
 ---
 # <a name="loyalty-overview"></a>Omówienie programu lojalnościowego
 
@@ -83,15 +83,15 @@ Aplikacja Retail w wydaniu z października 2018 roku zawiera nowe funkcje progra
     > [!NOTE]
     > Reguły zdobywania punktów w ramach programu lojalnościowego mają charakter dodatkowy. Na przykład jeśli utworzysz regułę przyznającą członkowi na szczeblu Gold 10 punktów za każdego wydanego dolara amerykańskiego, a dodatkowo utworzysz regułę przyznającą 5 punktów za każdego wydanego dolara amerykańskiego dla odbiorców o przynależności „stały klient”, to stały klient należący do warstwy Gold otrzyma 15 punktów za każdego wydanego dolara amerykańskiego, ponieważ spełnia oba kryteria. Jednak jeśli stały klient nie kwalifikował się do poziomu Gold, otrzyma 5 punktów za każdego dolara. Aby odzwierciedlić te zmiany w kanałach, uruchom zadania **Przetwarzanie programów lojalnościowych** i **1050** (informacje o lojalności).
     
-    ![Zdobywanie punktów poprzez przynależność](./media/Affiliation%20based%20earning.png "Zdobywanie punktów poprzez przynależność")
+    ![Zdobywanie punktów poprzez przynależność](./media/Affiliation-based-earning.png "Zdobywanie punktów poprzez przynależność")
 
 - Sprzedawcy detaliczni często mają specjalne ceny dla określonych grup klientów, do których nie chcą stosować programów lojalnościowych. Na przykład odbiorcy hurtowni i pracownicy dostają specjalne ceny, ale nie otrzymują punktów lojalnościowych. Zazwyczaj ustawianie specjalnych cen dla takich grup odbiorców odbywa się za pomocą „przynależności”. Aby uniemożliwić określonym grupom odbiorców zdobywanie punktów lojalnościowych, sprzedawca detaliczny może zdefiniować jedną lub więcej przynależności w obszarze **Wykluczone przynależności** w ustawieniach programu lojalnościowego. W ten gdy odbiorcami należącymi do wykluczonych przynależności są uczestnicy programu lojalnościowego, nie będą otrzymywać punktów lojalnościowych za swoje zakupy. Aby odzwierciedlić te zmiany w kanałach, uruchom zadania **Przetwarzanie programów lojalnościowych** i **1050** (informacje o lojalności).
 
-    ![Wykluczone przynależności](./media/Excluded%20affiliations.png "Wykluczanie przynależności z naliczania punktów lojalnościowych")
+    ![Wykluczone przynależności](./media/Excluded-affiliations.png "Wykluczanie przynależności z naliczania punktów lojalnościowych")
     
 - Sprzedawcy detaliczni mogą generować numery kart lojalnościowych w kanałach. Przed aktualizacją z października 2018 r. sprzedawcy detaliczni mogli używać fizycznych kart lojalnościowych lub generować karty lojalnościowe przy użyciu wybranych unikatowy danych odbiorców, takich jak numer telefonu. Aby umożliwić automatyczne generowanie kart lojalnościowych w sklepach detalicznych, należy włączyć funkcję **Generuj numer karty lojalnościowej** w profilu funkcjonalności skojarzonym ze sklepem. W kanałach internetowych sprzedawcy detaliczni mogą używać interfejsu API IssueLoyaltyCard w celu wystawiania kart lojalnościowych odbiorcom. Sprzedawcy detaliczni mogą w tym interfejsie API podać numer karty lojalnościowej, który zostanie użyty do wygenerowania karty lojalnościowej, lub też system użyje numeracji kart lojalnościowych ustawionej w aplikacji Dynamics 365 for Retail. Jednak jeśli numeracja nie jest zdefiniowana, a sprzedawca detaliczny nie poda numeru karty lojalnościowej podczas wywoływania interfejsu API, zostanie wyświetlony błąd.
 
-    ![Generowanie karty lojalnościowej](./media/Generate%20loyalty%20card.png "Automatyczne generowanie numeru karty lojalnościowej")
+    ![Generowanie karty lojalnościowej](./media/Generate-loyalty-card.png "Automatyczne generowanie numeru karty lojalnościowej")
 
 - Uzyskane i zrealizowane punkty lojalnościowe są teraz zapisywane dla każdej transakcji i zamówienia sprzedaży względem wiersza sprzedaży, dzięki czemu tę samą kwotę można zrefundować lub wycofać w przypadku zwrotów pełnych lub częściowych. Ponadto widoczność punktów na poziomie wiersza sprzedaży pozwala użytkownikom w biurze obsługi odpowiadać na pytania klientów o liczbę punktów zarobionych lub zrealizowanych dla każdego wiersza. Przed tą zmianą punkty lojalnościowe były zawsze ponownie obliczane w przypadku zwrotów, co powodowało różnicę kwot w porównaniu z oryginalnymi, jeśli w międzyczasie zmieniły się reguły zdobywania lub realizacji punktów, a użytkownicy w biurze obsługi nie widzieli szczegółowego podziału punktów. Punkty można obejrzeć w formularzu **Transakcje kartą** dla każdej karty lojalnościowej. Aby włączyć tę funkcję, włącz konfigurację **Księguj punkty lojalnościowe według wierszy sprzedaży** na karcie **Wspólne parametry sieci sprzedaży** \> **Ogólne**.
 
@@ -100,26 +100,26 @@ Aplikacja Retail w wydaniu z października 2018 roku zawiera nowe funkcje progra
 
 - Teraz sprzedawcy detaliczni mogą definiować okres aktywowania każdego punktu lojalnościowego. Konfiguracja okresu aktywacji określi czas od dnia otrzymania punktów lojalnościowych, po którym punkty stają się dostępne dla odbiorców. Nieaktywne punkty można obejrzeć w kolumnie **Nieaktywowane punkty** na stronie **Karty lojalnościowe**. Ponadto sprzedawcy detaliczni mogą określać limit maksymalnej liczby punktów lojalnościowych dla każdej karty lojalnościowej. To pole umożliwia zmniejszenie negatywnych skutków oszustw w programach lojalnościowych. Po uzyskaniu maksymalnej liczby punktów lojalnościowych użytkownik nie może zdobyć ich więcej. Sprzedawca detaliczny może postanowić blokować takie karty do czasu zbadania, czy faktycznie doszło do oszustwa. W razie stwierdzenia oszustwa sprzedawca może nie tylko zablokować kartę lojalnościową odbiorcy, ale również zablokować samego odbiorcę. Aby to zrobić, należy ustawić właściwość **Blokuj rejestrację odbiorcy w programie lojalnościowym** na **Tak** w obszarze **Wszyscy odbiorcy** na skróconej karcie **Handel detaliczny**. Zablokowanym klientom nie będzie można wystawiać kart lojalnościowych w każdym z kanałów.
 
-    ![Aktywowanie i maksymalna liczba punktów lojalnościowych](./media/Vesting%20and%20maximum%20reward%20points.png "Definiowanie aktywowania i maksymalnej liczby punktów lojalnościowych")
+    ![Aktywowanie i maksymalna liczba punktów lojalnościowych](./media/Vesting-and-maximum-reward-points.png "Definiowanie aktywowania i maksymalnej liczby punktów lojalnościowych")
 
 - Przynależności umożliwiają stosowanie specjalnych cen i rabatów, ale istnieją też przynależności, których sprzedawcy detaliczni nie chcą pokazywać klientom. Na przykład przynależność zatytułowana „Klient wydający dużo” może być negatywnie odbierana przez przedmiotowego odbiorcę. Ponadto istnieją przynależności, którymi nie powinno się zarządzać w sklepie. Przykładem jest przynależność „pracownicy”, ponieważ nie chcesz, aby kasjerzy decydowali, kto jest pracownikiem, i na tej podstawie przyznawali rabaty pracownicze. Sprzedawcy detaliczni mogą teraz wybierać przynależności, które mają być ukryte w kanałach sprzedaży detalicznej. Przynależności oznaczone jako **Ukryj w kanałach** nie mogą być wyświetlane, dodawane ani usuwane w punkcie sprzedaży. Jednak ceny i rabaty skojarzone z przynależnością nadal będą stosowane do produktów.
 
-    ![Ukrywanie przynależności](./media/Hide%20affiliations.png "Ukrywanie przynależności w kanałach")
+    ![Ukrywanie przynależności](./media/Hide-affiliations.png "Ukrywanie przynależności w kanałach")
     
 - Użytkownicy w biurze obsługi mogą teraz łatwiej wyszukiwać odbiorców przy użyciu danych z ich kart lojalnościowych oraz przechodzić do stron karty lojalnościowej i transakcji na karcie lojalnościowej odbiorcy ze strony **Obsługa klienta**.
 
-    ![Obsługa klienta](./media/Customer%20service.png "Znajdowanie informacji lojalnościowych dla odbiorcy")
+    ![Obsługa klienta](./media/Customer-service.png "Znajdowanie informacji lojalnościowych dla odbiorcy")
     
 - W razie naruszenia zabezpieczeń karty lojalnościowej należy wygenerować kartę zastępczą, a następnie przenieść do niej istniejące punkty. W tej wersji uproszczono proces wymiany karty. Ponadto klienci mogą przekazywać część lub wszystkie punkty lojalnościowe znajomym i członkom rodziny. Po przeniesieniu punktów dla każdej karty lojalnościowej są tworzone wpisy korekty punktów. Funkcje wymiany karty i przenoszenia sald są dostępne na stronie **Karty lojalnościowe**.
 
-    ![Wymiana karty i przenoszenie punktów](./media/Replace%20and%20transfer%20points.png "Wymiana karty lojalnościowej lub przeniesienie salda punktów")
+    ![Wymiana karty i przenoszenie punktów](./media/Replace-and-transfer-points.png "Wymiana karty lojalnościowej lub przeniesienie salda punktów")
     
 - Sprzedawcy detaliczni mogą chcieć sprawdzać efektywność rejestrowania odbiorców w programie lojalnościowym przez określony kanał. Źródło rejestrowania kart lojalnościowych jest teraz zapisywane, dzięki czemu sprzedawcy detaliczni mogą generować raporty o tych danych. Źródło rejestracji jest automatycznie zapisywane dla wszystkich wydanych kartach lojalnościowych z aplikacji MPOS/CPOS i kanałów handlu elektronicznego. Dla kart lojalnościowych wydanych z aplikacji zaplecza użytkownik w biurze obsługi może wybrać odpowiedni kanał.
 - W starszych wersjach sprzedawcy detaliczni mogli używać aplikacji MPOS/CPOS do realizowania punktów lojalnościowych odbiorców w sklepie. Jednak w tych wersjach saldo w programie lojalnościowym jest wyświetlane w punktach lojalnościowych, dlatego kasjer nie widział kwoty pieniężnej, którą można było wykorzystać w bieżącej transakcji. Kasjer musiał ręcznie przeliczyć punkty na walutę, zanim klient mógł zapłacić punktami lojalnościowymi. W obecnej wersji po dodaniu wierszy do transakcji kasjer widzi kwotę, jaką można pokryć punktami lojalnościowymi w bieżącej transakcji, dzięki czemu można łatwo zastosować część lub wszystkie punkty lojalnościowe do transakcji. Ponadto kasjer widzi punkty wygasające w ciągu najbliższych 30 dni, więc może zaproponować sprzedaż dodatkową lub wiązaną, aby zmotywować klienta do wydania wygasających punktów w tej transakcji.
 
-    ![Pokrycie punktami z salda w programie lojalnościowym](./media/Points%20covered%20by%20loyalty%20balance.png "Wyświetlanie salda pokrytego punktami lojalnościowymi")
+    ![Pokrycie punktami z salda w programie lojalnościowym](./media/Points-covered-by-loyalty-balance.png "Wyświetlanie salda pokrytego punktami lojalnościowymi")
 
-    ![Wygasające punkty](./media/Expiring%20points.png "Wyświetlanie wygasających punktów")
+    ![Wygasające punkty](./media/Expiring-points.png "Wyświetlanie wygasających punktów")
 
 - W wersji 8.1.3 udostępniliśmy opcję „płatności lojalnościowej” w kanale biura obsługi. Aby włączyć tę opcję, utwórz typ lojalnościowych metod płatności i skojarz go z biurem obsługi. 
 

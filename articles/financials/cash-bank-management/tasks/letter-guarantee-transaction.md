@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Reasons, SalesTableListPage, SalesCreateOrder, SalesTable, BankLGRequestForm, BankLGRequestFormRequest, BankLGGuarantee, BankLGFormSubmitToBank, BankDocumentAgreementLineLookup, BankLGFormReceiveFromBank, LedgerJournalTable, LedgerJournalTransDaily, BankLGRequestFormGiveToBeneficiary, BankLGFormGiveToBeneficiary, BankLGRequestFormIncreaseValue, BankLGFormIncreaseValue, BankLGRequestFormLiquidate, BankLGFormLiquidate
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4dc6ee178121fae05d538f5103919442d91e65eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff105bdefff2ea93c853d590c77391653f50a4dc
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566117"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842000"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Transakcja poręczenia
 
@@ -61,7 +61,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 15. W polu Żądana data wysyłki wpisz datę.
 16. W polu Potwierdzona data wysyłki wpisz datę.
 
-## <a name="process-letter-of-guaranteerequest"></a>Przetwarzanie poręczenia_Wniosek
+## <a name="process-letter-of-guarantee_request"></a>Przetwarzanie poręczenia_Wniosek
 1. W okienku akcji kliknij pozycję Zarządzaj.
 2. Kliknij opcję Poręczenie.
 3. W okienku akcji kliknij opcję Poręczenie.
@@ -73,7 +73,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 9. Kliknij przycisk OK.
 10. Zamknij stronę.
 
-## <a name="process-letter-of-guaranteesubmit-to-bank"></a>Przetwarzanie poręczenia_Prześlij do banku
+## <a name="process-letter-of-guarantee_submit-to-bank"></a>Przetwarzanie poręczenia_Prześlij do banku
 1. Wybierz kolejno opcje Zarządzanie gotówką i bankami > Poręczenia > Poręczenia.
 2. Na liście znajdź i zaznacz odpowiedni rekord.
 3. Kliknij przycisk Prześlij do banku, aby otworzyć rozwijane okno dialogowe.
@@ -81,7 +81,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 5. Na liście kliknij łącze w wybranym wierszu.
 6. Kliknij przycisk OK.
 
-## <a name="process-letter-of-guaranteereceive-from-bank"></a>Przetwarzanie poręczenia_Otrzymaj z banku
+## <a name="process-letter-of-guarantee_receive-from-bank"></a>Przetwarzanie poręczenia_Otrzymaj z banku
 1. Kliknij opcję Otrzymaj z banku, aby otworzyć rozwijane okno dialogowe.
 2. W polu Kod banku wpisz wartość.
     * Sprawdź wartości w polach obliczeniowych Marża i Wydatki.  
@@ -93,7 +93,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
     * Sprawdź księgowanie wpisów w arkuszu.  
 7. Zamknij stronę.
 
-## <a name="process-letter-of-guaranteegive-to-beneficiary"></a>Przetwarzanie poręczenia_Przekaż beneficjentowi
+## <a name="process-letter-of-guarantee_give-to-beneficiary"></a>Przetwarzanie poręczenia_Przekaż beneficjentowi
 1. Wybierz kolejno opcje Rozrachunki z odbiorcami > Zamówienia > Wszystkie zamówienia sprzedaży.
 2. Na liście kliknij łącze w wybranym wierszu.
 3. W okienku akcji kliknij pozycję Zarządzaj.
@@ -108,7 +108,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 12. Rozwiń sekcję Akcje.
     * Sprawdź rekord „Przekaż beneficjentowi”.  
 
-## <a name="process-letter-of-guaranteeincrease-value"></a>Przetwarzanie poręczenia_Zwiększ wartość
+## <a name="process-letter-of-guarantee_increase-value"></a>Przetwarzanie poręczenia_Zwiększ wartość
 1. Wybierz kolejno opcje Rozrachunki z odbiorcami > Zamówienia > Wszystkie zamówienia sprzedaży.
 2. Na liście kliknij łącze w wybranym wierszu.
 3. W okienku akcji kliknij pozycję Zarządzaj.
@@ -128,7 +128,7 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
 16. Kliknij przycisk Wiersze.
     * Sprawdź zaksięgowanie wpisy w arkuszu.  
 
-## <a name="process-letter-of-guaranteeliquidate"></a>Przetwarzanie poręczenia_Zlikwiduj
+## <a name="process-letter-of-guarantee_liquidate"></a>Przetwarzanie poręczenia_Zlikwiduj
 1. Wybierz kolejno opcje Rozrachunki z odbiorcami > Zamówienia > Wszystkie zamówienia sprzedaży.
 2. Na liście kliknij łącze w wybranym wierszu.
 3. W okienku akcji kliknij pozycję Zarządzaj.

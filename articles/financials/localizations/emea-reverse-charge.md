@@ -1,26 +1,26 @@
 ---
 title: Opłata zwrotna VAT
-description: W tym temacie opisano, jak skonfigurować odwrócony podatek od towarów i usług (VAT) dla krajów europejskich i Arabii Saudyjskiej.
+description: W tym temacie opisano, jak skonfigurować odwrócony podatek od towarów i usług (VAT) dla krajów europejskich i Arabii Saudyjskiej i Singapurze.
 author: epodkolz
 manager: AnnBe
-ms.date: 04/05/2017
+ms.date: 07/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 26f7f3f11408cac387c58a5345b566ac50ed426f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 530ff52abb1dd36c473ae436d61ea925c5696a30
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571175"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852427"
 ---
 # <a name="reverse-charge-vat"></a>Opłata zwrotna VAT
 
@@ -28,7 +28,7 @@ ms.locfileid: "1571175"
 [!include [banner](../includes/banner.md)]
 
 
-W tym temacie opisano standardową metodę konfigurowania odwróconego podatku od towarów i usług (VAT) dla Arabii Saudyjskiej i krajów europejskich.
+W tym temacie opisano standardową metodę konfigurowania odwróconego podatku od towarów i usług (VAT) dla Arabii Saudyjskiej, Singapuru i krajów europejskich.
 
 Podatek odwrócony to schemat podatkowy, w którym odpowiedzialność za rozliczenie i sprawozdawczość podatku VAT jest przenoszona ze sprzedawcy na nabywcę towarów i/lub usług. W związku z tym odbiorcy towarów i/lub usług raportują w swoich deklaracjach VAT zarówno należny podatek VAT (w roli sprzedawcy), jak i naliczony podatek VAT (w roli nabywcy).
 

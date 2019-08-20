@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 270294
 ms.assetid: 3a7ba8b0-ac57-4159-9cd8-4308f6021f36
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d1cd378a58d4a4fe4388238f97e84a8e2b07937b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ab9b9533ae650c05f57a45be25aec6cbe2e3db76
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551467"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849874"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Konfigurowanie zabezpieczeń pakietu zawartości usługi Power BI Analiza rachunku kosztów
 
@@ -63,4 +63,4 @@ Jeśli w module Rachunek kosztów dokonano aktualizacji zabezpieczeń na poziomi
 Zakładamy, że Twoja organizacja chce ograniczyć dostęp do danych. Jeśli z jakiegoś powodu parametry zabezpieczeń zostaną wyłączone podczas używania modułu Rachunek kosztów, właściciel musi dodać użytkowników do roli **Księgowy kosztów** w usłudze Power BI. Jeśli zmienisz zabezpieczenie ze stanu włączenia na stan wyłączenia, dobrym rozwiązaniem jest usunięcie użytkowników z roli **Kontroler obiektów kosztów**. I odwrotnie, jeśli ponownie włączyć zabezpieczenia. Użytkownicy mogą należeć do obu ról. Wspólny dostęp stanowi część wspólną uprawnień obu ról. W odniesieniu do pakietu zawartości **Analiza rachunku kosztów** dla usługi Power BI użytkownicy posiadający wspólny dostęp mają nieograniczony dostęp do danych. Jeśli Twoim celem jest stosowanie ograniczonego dostępu, użytkownicy muszą być przypisani tylko do roli **Kontroler obiektów kosztów**. Te aktualizacje zabezpieczeń na poziomie wierszy zaczynają obowiązywać natychmiast. Odnośni użytkownicy powinni odświeżyć swoje przeglądarki.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie wierszy w usłudze Power BI, zobacz [Zarządzanie zabezpieczeniami modelu w usłudze Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie wierszy w usłudze Power BI, zobacz [Zarządzanie zabezpieczeniami modelu w usłudze Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).

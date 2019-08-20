@@ -3,28 +3,29 @@ title: Zadania importowania i eksportowania danych
 description: Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 07/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b16966fe1c3a48d772c7c9982f8802119675255f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505801"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862911"
 ---
 # <a name="data-import-and-export-jobs"></a>Zadania importowania i eksportowania danych
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Obszar roboczy **Zarządzanie danymi** umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi w Microsoft Dynamics 365 for Finance and Operations. Domyślne proces importowania i eksportowania danych tworzy tabelę przemieszczania dla każdej jednostki w docelowej bazie danych. Tabele tymczasowe umożliwiają sprawdzenie, czyszczenie lub konwersję danych przed ich przeniesieniem.
 
@@ -129,8 +130,8 @@ Zadanie można jednocześnie zabezpieczyć według ról, użytkowników i firm.
 ## <a name="run-the-import-or-export-job"></a>Uruchamianie zadania importu lub eksportu
 Zadanie można uruchomić jeden raz, klikając przycisk **Importuj** lub **Eksportuj** po zdefiniowaniu zadania. Aby skonfigurować zadanie cykliczne, wybierz opcję **Utwórz cykliczne zadanie danych**.
 
-[!NOTE]
-Zadania importu i eksportu mogą być włączane asynchronicznie za pomocą przycisku **importuj** lub **Eksportuj**. Przesyłanie asynchroniczne używa struktury asynchronicznej w Finance and Operations, co różni się od struktury przetwarzania wsadowego. Jednak, podobnie jak struktura przetwarzania wsadowego, struktura asynchroniczna może również napotkać ograniczenia i w związku z tym zadanie może nie zostać natychmiast wykonane. Zadania można również uruchamiać synchronicznie, wybierając **Importuj teraz** lub **Eksportuj teraz**. Powoduje to natychmiastowe włączenie zadania i jest przydatne, jeśli z powodu ograniczeń nie można uruchomić zadania wsadowego lub asynchronicznego. Zadania mogą być również wykonywane w partiach po wybraniu opcji **Uruchom w partii**. Zasoby przetwarzania wsadowego podlegają ograniczeniom, więc zadanie wsadowe może nie rozpocząć się natychmiast. Opcja asynchroniczna jest przydatna, gdy użytkownik kontaktuje się bezpośrednio z interfejsem użytkownika i nie jest zaawansowany na tyle, żeby znać tworzenie harmonogramów zadań wsadowych. Używanie zadania wsadowego jest rozwiązaniem alternatywnym, jeżeli trzeba wyeksportować lub zaimportować duże ilości danych. Zadania wsadowe można zaplanować pod kątem uruchomienia w grupie określonej partii, co daje większą kontrolę z perspektywy równoważenia obciążenia. Jeśli występuje problem z przetwarzaniem asynchronicznym i wsadowym z powodu dużego zużycia zasobów systemu, można rozwiązać ten problem, używając synchronicznych wersji eksportu/importu. Opcja synchroniczna rozpocznie się natychmiast i zablokuje interfejsu użytkownika, ponieważ jest on wykonywany synchronicznie. Musi pozostać otwarte okno przeglądarki, gdy synchroniczna operacja jest w toku.
+> [!NOTE]
+> Zadania importu i eksportu mogą być włączane asynchronicznie za pomocą przycisku **importuj** lub **Eksportuj**. Przesyłanie asynchroniczne używa struktury asynchronicznej w Finance and Operations, co różni się od struktury przetwarzania wsadowego. Jednak, podobnie jak struktura przetwarzania wsadowego, struktura asynchroniczna może również napotkać ograniczenia i w związku z tym zadanie może nie zostać natychmiast wykonane. Zadania można również uruchamiać synchronicznie, wybierając **Importuj teraz** lub **Eksportuj teraz**. Powoduje to natychmiastowe włączenie zadania i jest przydatne, jeśli z powodu ograniczeń nie można uruchomić zadania wsadowego lub asynchronicznego. Zadania mogą być również wykonywane w partiach po wybraniu opcji **Uruchom w partii**. Zasoby przetwarzania wsadowego podlegają ograniczeniom, więc zadanie wsadowe może nie rozpocząć się natychmiast. Opcja asynchroniczna jest przydatna, gdy użytkownik kontaktuje się bezpośrednio z interfejsem użytkownika i nie jest zaawansowany na tyle, żeby znać tworzenie harmonogramów zadań wsadowych. Używanie zadania wsadowego jest rozwiązaniem alternatywnym, jeżeli trzeba wyeksportować lub zaimportować duże ilości danych. Zadania wsadowe można zaplanować pod kątem uruchomienia w grupie określonej partii, co daje większą kontrolę z perspektywy równoważenia obciążenia. Jeśli występuje problem z przetwarzaniem asynchronicznym i wsadowym z powodu dużego zużycia zasobów systemu, można rozwiązać ten problem, używając synchronicznych wersji eksportu/importu. Opcja synchroniczna rozpocznie się natychmiast i zablokuje interfejsu użytkownika, ponieważ jest on wykonywany synchronicznie. Musi pozostać otwarte okno przeglądarki, gdy synchroniczna operacja jest w toku.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Sprawdzanie, czy zadanie zostało uruchomione zgodnie z oczekiwaniami
 Dostępna jest historia zadań umożliwiająca rozwiązywanie problemów i badanie zadań importu i eksportu. Historyczne uruchomienia zadań są zorganizowane według zakresów czasu.
@@ -144,15 +145,17 @@ Dla każdego uruchomionego zadania dostępne są następujące informacje:
 
 Szczegóły wykonania pokazują stan każdej jednostki danych przetworzonych przez zadanie. Dlatego można szybko znaleźć następujące informacje:
 
-- Które jednostki zostały przetworzone
-- Ile rekordów zostało pomyślnie przetworzonych, a przetworzenie ilu nie powiodło się dla każdej jednostki
-- Rekordy przemieszczania dla każdej jednostki
+- Które jednostki zostały przetworzone.
+- Ile rekordów zostało pomyślnie przetworzonych, a przetworzenie ilu nie powiodło się dla każdej jednostki.
+- Rekordy przemieszczania dla każdej jednostki.
 
 Dane przemieszczania można pobrać w pliku dla zadań eksportu lub pobrać je jako pakiet dla zadań importu i eksportu.
 
 W oknie szczegółów wykonania można także otworzyć dziennik wykonania.
 
 ## <a name="clean-up-the-staging-tables"></a>Czyszczenie tabel przemieszczania
+Począwszy od aktualizacji platformy 29, ta funkcja jest przestarzała. Jest to zastąpione nową wersją funkcji oczyszczania historii zadań wyjaśnioną poniżej.
+
 Tabele przemieszczania można wyczyścić, używając funkcji **Czyszczenie przemieszczania###** w obszarze roboczym **Zarządzanie danymi**. Następujących opcji można użyć, aby wybrać, które rekordy mają zostać usunięte z danej tabeli przemieszczania:
 
 - **Jednostka** — jeżeli dostępna jest tylko jednostka, wszystkie rekordy z tabeli przemieszczania tej jednostki są usuwane. Wybierz tę opcję, aby wyczyścić wszystkie dane dla jednostki we wszystkich projektach danych i wszystkich zadaniach.
@@ -160,3 +163,37 @@ Tabele przemieszczania można wyczyścić, używając funkcji **Czyszczenie prze
 - **Projekty danych** — jeżeli wybrano tylko projekt danych, wszystkie rekordy dla wszystkich obiektów oraz we wszystkich zadaniach dla wybranego projektu danych są usuwane.
 
 Można także połączyć opcje, aby dodatkowo ograniczyć usuwany zestaw rekordów.
+
+## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Czyszczenie historii zadań (dostępne w aktualizacji platformy 29 i nowszych)
+
+Funkcja oczyszczania historii zadań w zarządzaniu danymi musi być używana do planowania okresowego oczyszczania historii wykonywania. Ta funkcja zastępuje poprzednią funkcję oczyszczania tabeli przemieszczania, która jest obecnie przestarzała. Poniższe tabele zostaną oczyszczone przez proces oczyszczania.
+
+-   Wszystkie tabele przemieszczania
+
+-   DMFSTAGINGVALIDATIONLOG
+
+-   DMFSTAGINGEXECUTIONERRORS
+
+-   DMFSTAGINGLOGDETAIL
+
+-   DMFSTAGINGLOG
+
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+
+-   DMFEXECUTION
+
+-   DMFDEFINITIONGROUPEXECUTION
+
+Dostęp do funkcji można uzyskać z menu **Zarządzanie danymi \> Oczyszczanie historii zadań**.
+
+### <a name="scheduling-parameters"></a>Parametry planowania
+
+Podczas planowania procesu oczyszczania, należy określić następujące parametry, aby zdefiniować kryteria oczyszczania.
+
+-   **Liczba dni do zachowania historii** — to ustawienie służy do kontrolowania ilości historii wykonywania, która ma zostać zachowana. Jest to określone liczbą dni. Gdy zadanie oczyszczania jest zaplanowane jako cykliczne zadanie wsadowe, to ustawienie będzie działać jak stale przesuwające się okno, tym samym zawsze pozostawiając historię dla określonej liczby dni w stanie nienaruszonym i usuwając resztę. Wartość domyślna to 7 dni.
+
+-   **Liczba godzin do wykonania zadania** — w zależności od ilości historii do oczyszczenia całkowity czas wykonania zadania oczyszczania może wynosić od kilku minut do kilku godzin. Ponieważ oczyszczanie wymienionych tabel musi mieć miejsce, kiedy w danymi systemie nie ma żadnych innych działań zarządzania, ważne jest, aby upewnić się, że zadanie oczyszczania zaczyna się i kończy poza godzinami pracy.
+
+    Maksymalny czas wykonywania można określić przez ustawienie maksymalnego limitu liczby godzin działania zadania przy użyciu tego ustawienia. Logika oczyszczania analizuje po jednym identyfikatorze wykonywania zadania w sekwencji chronologicznej, w której jako pierwszy oczyszczane są najstarsza powiązana historia uruchamiania. Zbieranie nowych identyfikatorów wykonywania podczas oczyszczania zatrzyma się, gdy pozostały czas wykonywania jest w zakresie ostatnich 10% określonego czasu trwania. W niektórych przypadkach zadanie oczyszczania będzie mogło trwać dłużej niż maksymalny czas trwania. Będzie to w dużej mierze zależeć od liczby rekordów, które mają zostać usunięte dla bieżącego identyfikatora wykonania, który został uruchomiony przed osiągnięciem progu 10%. Oczyszczanie, który zostało uruchomione, musi zostać dokończone, aby zapewnić integralność danych, co oznacza, że oczyszczanie będzie kontynuowane pomimo przekroczenia określonego limitu czasu. Po zakończeniu, nowe identyfikatory wykonywania nie pobierane i zadanie oczyszczania jest kończone. Pozostała historia wykonania, która nie została wyczyszczona ze względu na brak wystarczającej ilości czasu wykonania, zostanie pobrana przy następnym zaplanowanym zadaniu oczyszczania. Wartość domyślna i minimalna dla tego ustawienia jest ustawiona na 2 godziny.
+
+-   **Partia cykliczna** — zadanie oczyszczania można uruchomić jako jednorazowe, ręczne wykonanie lub może być również zaplanowane dla cyklicznego wykonywania w partii. Partia może być zaplanowana przy użyciu ustawienia **Uruchom w tle**, co jest standardową konfiguracją partii.

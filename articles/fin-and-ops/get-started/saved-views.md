@@ -3,13 +3,12 @@ title: Zapisane widoki
 description: W tym temacie opisano sposób korzystania z funkcji zapisanych widoków.
 author: jasongre
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 08/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,17 +16,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: ea2f2dbd615480bb76e1d04a106ae69bf6f45f4b
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: 9d19987a44c467381828acb81b6161601268d84f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620785"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863067"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
 [!include [banner](../includes/banner.md)]
-[!include [private preview banner](../includes/private-preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Wprowadzenie
 Personalizacja odgrywa ważną rolę w umożliwieniu użytkownikom i organizacjom optymalizacji doświadczenia użytkownika w programie Microsoft Dynamics 365 for Finance and Operations stosownie do ich potrzeb. Aby uzyskać szczegółowe informacje dotyczące personalizacji, zobacz [Dostosowanie do użytkownika](personalize-user-experience.md).
@@ -49,7 +48,7 @@ Istnieją dwa warianty wielkości selektora widoków:
 
 -   **Duże selektory widoków**: strony z dobrze widoczną listą będą miały duży selektor widoków z kilku powodów. Co najważniejsze, większy selektor widoku wskazuje strony, na których widok może zawierać filtry zdefiniowane przez użytkownika. Ponieważ filtry są uwzględniane w widokach, większy selektor jest również uzasadniony tym, że nazwy widoków często stanowią najlepszy opis danych wyświetlanych na ekranie i można oczekiwać, że użytkownicy będą częściej przełączali widoki na stronach tych typów.  
  
--   **Małe selektory widoków**: wszystkie inne formularze pełnostronicowe będą miały mniejszy selektor widoku wyświetlany obok podpisu strony. Widoki na tych stronach zawierają tylko personalizacje (a nie filtry zdefiniowane przez użytkownika). Na tych stronach podpis formularza lub tytuł rekordu często są najważniejszymi informacjami w górnej części formularza. Mniejszy rozmiar odzwierciedla także mniejszą oczekiwaną częstotliwość przełączania widoku na tych stronach. 
+-   **Małe selektory widoków**: wszystkie inne formularze pełnostronicowe (z wyjątkiem obszaru roboczego i pulpitu nawigacyjnego) będą miały mniejszy selektor widoku wyświetlany obok podpisu strony. Widoki na tych stronach zawierają tylko personalizacje (a nie filtry zdefiniowane przez użytkownika). Na tych stronach podpis formularza lub tytuł rekordu często są najważniejszymi informacjami w górnej części formularza. Mniejszy rozmiar odzwierciedla także mniejszą oczekiwaną częstotliwość przełączania widoku na tych stronach. 
  
 Kliknięcie nazwy widoku powoduje otwarcie selektora widoku i wyświetlenie listy dostępnych widoków tej strony
 
@@ -75,7 +74,7 @@ Jeśli chcesz zapisać te zmiany, wykonaj następujące kroki.
      3.    Wybierz opcję **Zapisz**.
 
 ## <a name="changing-the-default-view"></a>Zmienianie domyślnego widoku
-Widok domyślny to widok, który system będzie próbował otworzyć po pierwszym przejściu do strony. Powinien to być widok, który prawdopodobnie będzie często używany.  
+Widok domyślny to widok, który system będzie próbował otworzyć po pierwszym przejściu do strony. Powinien to być widok, który prawdopodobnie będzie najczęściej używany.  
 
 Aby zmienić domyślny widok strony, wykonaj następujące czynności: 
 1.  Przełącz się na widok, który jest używany jako domyślny. 
@@ -100,14 +99,14 @@ Zmiany wprowadzone w tym oknie dialogowym zaczną obowiązywać po naciśnięciu
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Zarządzanie personalizacjami na poziomie organizacyjnym za pomocą widoków
 Aby zrozumieć udoskonalenia zarządzania personalizacjami na poziomie organizacyjnym, najpierw zapoznaj się z działaniem zarządzania personalizacjami bez widoków.  
 
-Bez widoków administratorzy musieli zastosować zestaw personalizacji strony do użytkownika, grupy użytkowników lub użytkowników za pomocą formularza Personalizacja. Jeśli ci użytkownicy mieli uprawnienia do personalizacji, personalizacje zostały zastosowane do tej strony. Nie było jednak możliwe zakazanie użytkownikom dalszego personalizowania strony, czyli organizacja nie mogła sprawić, aby jej użytkownicy mieli spójny interfejs użytkownika. Jeśli dowolny z tych użytkowników nie miał uprawnień do personalizacji, personalizacje wysłane mu przez administratora nie były ładowane. Ponadto, jeśli w organizacji zostali zatrudnieni nowi użytkownicy, administratorzy musieli im ręcznie załadować zestaw personalizacji. Nie było automatycznego mechanizmu określania pewnego zestawu personalizacji, który powinien być dostępny dla tego użytkownika.
+Bez widoków administratorzy musieli zastosować zestaw personalizacji strony do użytkownika lub grupy użytkowników za pomocą strony Personalizacja. Jeśli ci użytkownicy mieli uprawnienia do personalizacji, personalizacje zostały zastosowane do tej strony. Nie było jednak możliwe zakazanie użytkownikom dalszego personalizowania strony, czyli organizacja nie mogła sprawić, aby jej użytkownicy mieli spójny interfejs użytkownika. Jeśli dowolny z tych użytkowników nie miał uprawnień do personalizacji, personalizacje wysłane mu przez administratora nie były ładowane. Ponadto, jeśli w organizacji zostali zatrudnieni nowi użytkownicy, administratorzy musieli im ręcznie załadować zestaw personalizacji. Nie było automatycznego mechanizmu określania pewnego zestawu personalizacji, który powinien być dostępny dla użytkownika w danej roli.
 
 Przy użyciu funkcji zapisanych widoków zarządzanie organizacyjne personalizacjami jest znacznie łatwiejsze, głównie ze względu na możliwość publikowania widoków w rolach zabezpieczeń. Gdy widok zostanie opublikowany, każdy użytkownik mający taką rolę będzie mógł uzyskać dostęp do tego widoku i korzystać z niego, niezależnie od dostępności funkcji personalizacji dla użytkownika. Chociaż każdy użytkownik ma kopię opublikowanego widoku, do której jest stosowane użycie strony (jawne personalizacje), żaden użytkownik nie może zapisać jawnych personalizacji lub aktualizacji kwerendy w opublikowanym widoku (co oznacza, że opublikowane widoki są zablokowane). Ponadto, jeśli nowi użytkownicy otrzymają rolę, w której widok został opublikowany, będą automatycznie widzieć widoki skojarzone z ich rolami bez żadnych działań administratora. Podobnie, jeśli użytkownik zmieni role w organizacji, widoki skojarzone z jego poprzednią rolą nie będą już dla niego dostępne bez konieczności wykonania żadnych działań przez administratora. Aktualizacje opublikowanego widoku mogą być łatwo dystrybuowane użytkownikom przez ponowne opublikowanie widoku do odpowiednich ról zabezpieczeń.
 
 Możliwość publikowania umożliwia organizacjom definiowanie standardowych widoków firmowych zoptymalizowanych pod kątem ich działalności skierowanych do użytkowników mających określone role zabezpieczeń.  
 
 ## <a name="publishing-views"></a>Publikowanie widoków
-Podczas procesu publikowania można przypisać widoki do roli lub ról zabezpieczeń, co oznacza, że każdy użytkownik dysponujący tą rolą będzie mógł uzyskać dostęp do tego widoku i korzystać z niego, ale nie będzie mógł go edytować. Obecnie tylko administratorzy systemu mają uprawnienie do akcji **Publikuj** w menu rozwijanym selektora widoku.  
+Podczas procesu publikowania można przypisać widoki do roli lub ról zabezpieczeń, co oznacza, że każdy użytkownik dysponujący tą rolą będzie mógł uzyskać dostęp do tego widoku i korzystać z niego, ale nie będzie mógł go edytować. Obecnie tylko administratorzy systemu mają prawa do akcji **Publikuj** w menu rozwijanym selektor widoku, ale nowa rola zabezpieczeń będzie dostępna w przyszłej aktualizacji, aby nadać prawa publikowania innym zaufanym użytkownikom.  
 
 Aby opublikować widok, należy wykonać następujące kroki: 
 1.  Utwórz i zapisz osobistą kopię widoku, który chcesz opublikować. 
@@ -150,14 +149,19 @@ Zmiany wprowadzone w tym oknie dialogowym zaczną obowiązywać, gdy zostanie na
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Jak włączyć zapisane widoki w środowisku? 
-Aby włączyć zapisane widoki, administrator systemu musi wykonać następujące czynności: 
-1.  Przejdź do strony **Personalizacja** przy użyciu funkcji wyszukiwania nawigacji 
-2.  Kliknij kartę **Ustawienia**.
-3.  Ustaw wartość **Tak** opcji **Włącz zapisane widoki**.
+Aby włączyć zapisane widoki, gdy funkcja jest w podglądzie, wykonaj następujące czynności: 
 
-Po włączeniu tej funkcji we wszystkich sesjach użytkownika od początku będą włączone widoki.  
+1.  **Włącz funkcję testową**: wykonaj następującą instrukcję SQL: 
 
-Jeśli personalizacja jest wyłączona dla środowiska, widoki zostaną włączone nawet po wykonaniu powyższych kroków. Jest to spowodowane tym, że funkcja widoków jest nałożona na podsystem personalizacji.
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('Dynamics.AX.Application.CLISavedViewsEnableFeature', 1, 0, 5637144576);`
+
+2.  **Znajdź funkcję**: Przejdź do obszaru roboczego **Zarządzanie funkcjami**. Jeśli **Zapisane widoki** nie są wyświetlane na liście, wybierz przycisk **Sprawdź aktualizacje.**   
+
+3.  **Włącz funkcję**: Znajdź funkcję **Zapisane widoki** na liście funkcji i kliknij przycisk **Włącz teraz** w okienku szczegółów.
+
+Wszystkie kolejne sesje użytkownika będą uruchamiane z włączonymi zapisanymi widokami.  
+
+Jeśli personalizacja jest wyłączona dla środowiska, widoki zostaną wyłączone nawet po wykonaniu powyższych kroków. Jest to spowodowane tym, że funkcja widoków jest nałożona na podsystem personalizacji.
 
 ### <a name="what-happens-to-existing-personalizations-when-views-are-enabled"></a>Co się dzieje z istniejącymi personalizacjami, gdy są włączone widoki? 
 Po włączeniu widoków wszelkie istniejące personalizacje użytkownika i formularza są zapisywane w nowym widoku o nazwie **Mój widok**, który jest automatycznie ustawiany jako widok domyślny. Ma to na celu zapewnienie spójnego środowiska użytkownika przed włączeniem widoków i po nim, z wyjątkiem formantu selektora widoków wyświetlanego w formularzach.  
@@ -166,7 +170,7 @@ Po włączeniu widoków wszelkie istniejące personalizacje użytkownika i formu
 Widoki są dostępne dla większości, ale nie wszystkich stron w module Finance and Operations. Dokładnie rzecz biorąc, widoki są obecnie dostępne na wszystkich stronach pełnoekranowych, z wyjątkiem pulpitów nawigacyjnych i obszarów roboczych. Strony niepełnoekranowe, zawierające okna dialogowe, okna dialogowe rozwijane, wyszukiwania, rozszerzone podglądy, również obecnie nie obsługują widoków. Obsługa widoków na dodatkowych stronach, jak obszary robocze i okna dialogowe, być może zostanie dodana w przyszłej aktualizacji.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Kto ma prawo do publikowania widoków?
-Obecnie jedynymi użytkownikami, którzy mają uprawnienia do publikowania widoków, są administratorzy systemu.  Planowana jest nowa rola zabezpieczeń, która pozwoli klientom z większą elastycznością decydować, kto może publikować.  
+Obecnie jedynymi użytkownikami, którzy mają uprawnienia do publikowania widoków, są administratorzy systemu.  W przyszłej aktualizacji planowana jest nowa rola zabezpieczeń, która pozwoli klientom z większą elastycznością decydować, kto może publikować.  
 
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Dlaczego nie można zapisać filtrów w widoku? 
 Istnieje kilka przyczyn uniemożliwiających zapisanie filtru w widoku: 
@@ -179,4 +183,4 @@ Istnieje kilka przyczyn uniemożliwiających zapisanie filtru w widoku:
      
   O wystąpieniu takiej sytuacji powinien ostrzegać komunikat informacyjny wyświetlany podczas ładowania widoku. Można to również potwierdzić, przełączając się do tego widoku po załadowaniu strony, ponieważ wtedy kwerenda widoku powinna zostać bezwzględnie wykonana.  
 
-- Dana strona może niepoprawnie obsługiwać widoki, ponieważ może całkowicie ignorować kwerendę widoku. Takie sytuacje należy zgłaszać za pomocą mechanizmu **Opinia**. Aby przejść do strony opinii, kliknij łącze **Pomoc i obsługa techniczna**, a następnie **Opinie**.  
+- Ta strona może nie obsługiwać poprawnie widoków, ponieważ może całkowicie zignorować kwerendę widoku lub może działać na tymczasowej tabeli, której dane nie są trwałe. 

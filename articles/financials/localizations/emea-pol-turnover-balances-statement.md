@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 264354
 ms.search.region: Poland
 ms.author: v-semaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6cd0eb20bf667a7248f4218473e0d6a2257b3e72
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 54d8beabeca65133ebd3876238ea391e9774e028
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559353"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852432"
 ---
 # <a name="turnover-and-balances-statement-for-poland"></a>Zestawienie obrotów i sald dla Polski
 

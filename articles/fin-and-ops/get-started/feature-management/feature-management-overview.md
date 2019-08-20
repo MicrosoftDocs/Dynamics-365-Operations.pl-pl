@@ -3,7 +3,7 @@ title: Zarządzanie funkcjami — omówienie
 description: W tym temacie opisano funkcję zarządzania funkcjami i sposób jego używania.
 author: mikefalkner
 manager: AnnBe
-ms.date: 06/14/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d6aea8651c00b975cf158492e38bb147e908bc56
-ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
+ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "1632060"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862945"
 ---
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Funkcje są dodawane i aktualizowane w każdym wydaniu Microsoft Dynamics 365 for Finance and Operations. Środowisko zarządzania funkcjami udostępnia obszar roboczy, w którym można wyświetlić listę funkcji, które zostały dostarczone w każdej wersji. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich.
 
@@ -38,7 +39,7 @@ Obszar roboczy **zarządzanie funkcjami** można otworzyć, wybierając odpowied
 Lista funkcji zawiera następujące informacje:
 
 - **Nazwa funkcji** — opis dodanej funkcji.
-- **Stan włączony** — symbol wskazuje, czy funkcja została włączona (znacznik wyboru), nie została włączona (pusta), została zaplanowana do włączenia (zegar) lub jest obowiązkowo włączona (blokada). Pokazane tutaj ustawienie jest używane dla wszystkich firm. Należy pamiętać, że nawet wtedy, gdy funkcja została włączona, jest nadal kontrolowana przez zabezpieczenia. W związku z tym funkcja będzie dostępna tylko dla użytkowników, którzy mają do niej dostęp, na podstawie ich roli zabezpieczeń. Będzie ona również dostępna tylko w firmach, do których użytkownik ma dostęp.
+- **Stan włączony** — symbol wskazuje, czy funkcja została włączona (znacznik wyboru), nie została włączona (pusta), została zaplanowana do włączenia (zegar) lub jest obowiązkowo włączona (blokada), wymaga uwagi przed włączeniem (ostrzeżenie) lub nie może zostać włączony (X). Pokazane ustawienie jest używane dla wszystkich firm. Należy pamiętać, że nawet wtedy, gdy funkcja została włączona, jest nadal kontrolowana przez zabezpieczenia. W związku z tym funkcja będzie dostępna tylko dla użytkowników, którzy mają do niej dostęp, na podstawie ich roli zabezpieczeń. Będzie ona również dostępna tylko w firmach, do których użytkownik ma dostęp.
 - **Data włączenia** — data, kiedy funkcja została włączona lub jest zaplanowana do włączenia.
 - **Dodano funkcję** – data, kiedy funkcja została dodana do danego środowiska. Ta data jest automatycznie wprowadzana podczas aktualizowania środowiska podczas comiesięcznych wydań.
 - **Moduł** — moduł, którego dotyczy nowa funkcja.
@@ -59,6 +60,10 @@ Jeśli funkcja nie została włączona, w okienku szczegółów zostanie wyświe
 - Wybierz funkcję, którą chcesz włączyć, a następnie w okienku szczegółów naciśnij przycisk **Włącz teraz**. Funkcja jest włączona.
 
 Niektóre funkcje nie mogą zostać wyłączone po ich włączeniu. Jeśli funkcja, którą próbujesz włączyć, nie może zostać wyłączona, zostanie wyświetlone ostrzeżenie. W tym momencie możesz nacisnąć przycisk **Anuluj**, aby anulować operację i pozostawić funkcję wyłączoną. Jeśli jednak wybierzesz opcję **Włącz**, aby włączyć funkcję, nie będzie można jej później wyłączyć.
+
+Niektóre funkcje będą wyświetlały komunikat, który zawiera dodatkowe informacje, zanim je włączysz. Funkcje te są oznaczone żółtym symbolem ostrzegawczym. Należy uważnie przeczytać dodatkowe informacje, aby lepiej zrozumieć, co się stanie, gdy funkcja jest włączona. Jednak nadal można wybrać **Włącz**, aby włączyć funkcję.
+
+Niektóre funkcje będą wyświetlał komunikat, że funkcja nie może być włączona, dopóki nie zostanie podjęta akcja. Funkcje te są oznaczone czerwonym symbolem X. Przed uaktywnieniem tej funkcji należy wykonać czynności opisane w opisie. Na przykład jeśli nie można użyć funkcji do momentu wyłączenia klucza konfiguracji, należy najpierw wyłączyć klucz konfiguracji, a następnie powrócić do funkcji Zarządzanie funkcją, aby włączyć tę funkcję.
 
 Po włączeniu tej funkcji w okienku szczegółów zostanie wyświetlony komunikat poniżej łącza **Dowiedz się więcej**. Ten komunikat informuje, że funkcja została włączona lub wskazuje przyszłą datę, na kiedy jest zaplanowane włączenie funkcji. Ta wiadomość pojawia się za każdym razem, gdy wybierzesz funkcję na liście funkcji.
 
@@ -84,12 +89,28 @@ Po wyłączeniu tej funkcji w okienku szczegółów zostanie wyświetlony komuni
 
 Czasami jest dostarczana krytyczna funkcja, która musi zostać włączona automatycznie po wykonaniu aktualizacji. Te funkcje będą włączane automatycznie w dniu określonym w polu **Data włączenia**. W przypadku tych funkcji w okienku szczegółów zostanie wyświetlony komunikat poniżej łącza **Dowiedz się więcej**. Ten komunikat informuje, że funkcja została włączona lub wskazuje przyszłą datę, kiedy zostanie ona włączona. Ta wiadomość pojawia się za każdym razem, gdy wybierzesz funkcję na liście funkcji.
 
+## <a name="enable-all-features"></a>Włącz wszystkie funkcje
+
+Domyślnie wszystkie funkcje dodawane do środowiska są wyłączone. Wszystkie funkcje można włączyć, zaznaczając przycisk **Włącz wszystkie**. 
+
+Po wybraniu **Włącz wszystkie**, opcja pojawi się tam, gdzie potrzebujesz podać następujące informacje:
+- Lista wszystkich funkcji, które wymagają potwierdzenia, zanim będą mogły być włączone. Jeśli chcesz włączyć funkcje z list, wybierz **Tak** dla przycisku **Włącz funkcje wymagające potwierdzenia**.
+- Zostanie wyświetlona lista wszystkich funkcji, które nie mogą być włączone. Te funkcje nie zostaną włączone.
+
+Wszystkie funkcje, które mogą być włączone, zostaną włączone. Jeśli funkcja została już zaplanowana do włączenia w przyszłości, harmonogram nie zmieni się. 
+
 ## <a name="turn-on-all-features-automatically"></a>Automatyczne włączanie wszystkich funkcji
 
 Domyślnie wszystkie funkcje dodawane do środowiska są wyłączone, o ile nie są obowiązkowe. Jeśli jednak chcesz, aby wszystkie nowe funkcje były automatycznie włączane, możesz użyć listy rozwijanej pod tytułem obszaru roboczego, aby zmienić to, co dzieje się przy dodawaniu nowych funkcji.
 
 - Wybierz opcję **Wszystkie nowe funkcje będą domyślnie włączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie włączane po dodaniu ich do środowiska.
 - Wybierz opcję **Wszystkie nowe funkcje będą domyślnie wyłączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie wyłączane po dodaniu ich do środowiska.
+
+Jeśli włączysz wszystkich funkcji automatycznie, spowoduje to włączenie wszystkich funkcji, które byłyby włączone, po kliknięciu przycisku **Włącz wszystkie**. Nie zostaną włączone funkcje wymagające potwierdzenia lub funkcje, które nie mogą być włączone, dopóki nie zostanie podjęta akcja.
+
+## <a name="check-for-updates"></a>Sprawdź, czy są aktualizacje
+
+Funkcje są dodawane do środowiska po każdej aktualizacji. Można jednak ręcznie sprawdzić dostępność aktualizacji, klikając przycisk **Sprawdź aktualizacje.** Każda funkcja dodana do systemu po aktualizacji zostanie dodana do listy funkcji. Na przykład w przypadku włączenia funkcji testowej po jej wydaniu, można sprawdzić, czy są dostępne aktualizacje i funkcja zostanie dodana do Twojej listy.
 
 ## <a name="assigning-roles"></a>Przypisywanie ról
 

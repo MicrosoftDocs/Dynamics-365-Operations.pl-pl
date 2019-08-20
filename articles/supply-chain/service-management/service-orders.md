@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4da0b965f3719bc16b5a73538df111ff6df071be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b4d347556d25831bb3f9175e8606e0b41d98bdd8
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555381"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743263"
 ---
 # <a name="service-orders"></a>Zlecenia serwisowe   
 
@@ -76,7 +76,7 @@ Jedno z pozostałych zleceń serwisowych wygenerowanych dla stycznia stało się
 
 ## <a name="post-from-projects"></a>Księgowanie z projektów
 
-W końcu każdego tygodnia dyspozytor chce zaksięgować wszystkie zlecenia serwisowe dołączone do określonego projektu. W związku z tym dyspozytor odszukuje odpowiedni projekt w formularzu **Projekty** i księguje zlecenia serwisowe, które zostały ukończone. Aby uzyskać więcej informacji, zobacz [Księgowanie zleceń serwisowych (formularzy klasy)](https://technet.microsoft.com/en-us/library/aa574685\(v=ax.60\)).
+W końcu każdego tygodnia dyspozytor chce zaksięgować wszystkie zlecenia serwisowe dołączone do określonego projektu. W związku z tym dyspozytor odszukuje odpowiedni projekt w formularzu **Projekty** i księguje zlecenia serwisowe, które zostały ukończone. Aby uzyskać więcej informacji, zobacz [Księgowanie zleceń serwisowych (formularzy klasy)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Usuń zlecenia serwisowe
 
@@ -84,7 +84,7 @@ W drugiej połowie roku odbiorca doszedł do wniosku, że wizyty serwisowe są z
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Zlecenia serwisowe (formularz)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
+[Zlecenia serwisowe (formularz)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 
   
 
