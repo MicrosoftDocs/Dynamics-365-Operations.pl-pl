@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: ada04948c4775091091cc30664dd7d9405b4f9da
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3c3873991c33347c1358dc98381c6b5f4c6ce2aa
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553207"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846904"
 ---
 # <a name="one-voucher"></a>Pojedynczy załącznik
 
@@ -51,7 +51,7 @@ Istniejąca funkcjonalność arkuszy finansowych (arkusza finansowego, arkusza �
 
 ## <a name="issues-with-one-voucher"></a>Problemy z pojedynczym załącznikiem
 
-Funkcja pojedynczego załącznika powoduje problemy podczas rozliczania, obliczania podatku, wycofywania transakcji, uzgadniania księgi podrzędnej z księgą główną, sprawozdawczości finansowej itd. (Aby uzyskać więcej informacji o problemach, które mogą wystąpić podczas rozliczania, zobacz na przykład [Jeden załącznik z wieloma rekordami odbiorców lub dostawców](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records)). Do prawidłowego działania i sprawozdawczości te procesy i raporty wymagają szczegółów transakcji. Mimo iż przy odpowiedniej konfiguracji w organizacji niektóre scenariusze nadal mogą działać prawidłowo, często występują problemy przy wprowadzaniu wielu transakcji do jednego załącznika.
+Funkcja pojedynczego załącznika powoduje problemy podczas rozliczania, obliczania podatku, wycofywania transakcji, uzgadniania księgi podrzędnej z księgą główną, sprawozdawczości finansowej itd. (Aby uzyskać więcej informacji o problemach, które mogą wystąpić podczas rozliczania, zobacz na przykład [Jeden załącznik z wieloma rekordami odbiorców lub dostawców](https://docs.microsoft.com/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records)). Do prawidłowego działania i sprawozdawczości te procesy i raporty wymagają szczegółów transakcji. Mimo iż przy odpowiedniej konfiguracji w organizacji niektóre scenariusze nadal mogą działać prawidłowo, często występują problemy przy wprowadzaniu wielu transakcji do jednego załącznika.
 
 Przypuśćmy na przykład, że księgujesz następujący załącznik wielowierszowy.
 

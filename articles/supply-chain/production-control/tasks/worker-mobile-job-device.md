@@ -1,72 +1,70 @@
 ---
 title: Konfigurowanie pracownika za pomocą urządzenia przenośnego zadania
-description: W tej procedurze pokazano, jak przypisać poprawne role do konta użytkownika pracownika, a następnie włączyć pracownikowi możliwość rejestrowania się na produkcji.
+description: Ten temat objaśnia, jak przypisać poprawne role do konta użytkownika pracownika, a następnie włączyć pracownikowi możliwość rejestrowania się na produkcji.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bb4d806810660e55ef13a9ff21c07e0ce194496
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a6e45ea8fdbe30436badd88d4972fda970755275
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571365"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1835788"
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a>Konfigurowanie pracownika za pomocą urządzenia przenośnego zadania
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano, jak przypisać poprawne role do konta użytkownika pracownika, a następnie włączyć pracownikowi możliwość rejestrowania się na produkcji.
+Ten temat objaśnia, jak przypisać poprawne role do konta użytkownika pracownika, a następnie włączyć pracownikowi możliwość rejestrowania się na produkcji.
 
+## <a name="verify-that-a-worker-is-assigned-a-certain-role"></a>Sprawdzanie, czy pracownik ma przypisaną odpowiednią rolę
 
-## <a name="assign-roles-to-user-account"></a>Przypisywanie ról do konta użytkownika
-1. Wybierz kolejno opcje Administrowanie systemem > Użytkownicy > Użytkownicy.
-2. Za pomocą szybkiego filtru wyfiltruj imię i nazwisko pracownika, którego konto użytkownika jest skojarzone z rolą operatora maszyny. W przykładowych danych jest to Shannon.
-3. Zaznacz rekord konta użytkownika.
-4. Na liście w zaznaczonym wierszu kliknij łącze „Nazwa”, aby wyświetlić szczegółowe informacje o koncie użytkownika.
-5. W drzewie zaznacz element „Role\Operator maszyny”.
-6. Zamknij stronę szczegółów konta użytkownika.
-7. Zamknij stronę.
+W tym przykładzie należy sprawdzić, czy użytkownik „SHANNON” ma przypisaną rolę operatora maszyny przed skonfigurowaniem konta pracownika.
+
+1. Otwórz **Okienko nawigacji > Moduły > Administracja systemu > Użytkownicy > Użytkownicy**.
+2. Wyszukaj użytkownika w szybkim filtrze. W tym przykładzie wpisz `shannon`.
+3. Wybierz łącze w kolumnie **Identyfikator użytkownika** wyświetlonego konta użytkownika.
+4. W drzewie **Role użytkownika** wybierz **Role > Operator maszyny**.
+5. Zamknij strony **szczegóły użytkownika** i **użytkownicy**, aby powrócić do strony głównej.
 
 ## <a name="configure-worker-account"></a>Konfigurowanie konta pracownika
-1. Wybierz kolejno opcje Zasoby ludzkie > Pracownicy > Pracownicy.
-2. Za pomocą szybkiego filtru wyfiltruj imię i nazwisko pracownika, którego konto użytkownika jest skojarzone z rolą operatora maszyny. W przykładowych danych jest to Shannon.
-3. Zaznacz rekord konta użytkownika.
-4. Na liście w zaznaczonym wierszu kliknij łącze „Nazwa”, aby wyświetlić szczegółowe informacje o koncie użytkownika.
-5. Kliknij kartę Zatrudnienie.
-6. Rozwiń skróconą kartę rejestracji czasu, a następnie kliknij przycisk Aktywowanie na terminalach rejestracji.
-7. Kliknij opcję Aktywowanie na terminalach rejestracji
-8. W polu Grupa obliczania wprowadź lub wybierz wartość.
-9. W polu Domyślna grupa obliczania wprowadź lub wybierz wartość.
-10. W polu Grupa zatwierdzania wprowadź lub wybierz wartość.
-11. W polu Profil standardowy wprowadź lub wybierz wartość.
-12. W polu Grupa profilu wprowadź lub wybierz wartość.
-13. Kliknij przycisk OK.
-14. Kliknij przycisk Edytuj, aby wprowadzić numer karty identyfikacyjnej nowego pracownika odpowiedzialnego za rejestrację czasu.
-15. W polu Identyfikator karty identyfikacyjnej wpisz wartość.
-16. Kliknij przycisk Zapisz.
-17. Użyj skrótu SaveRecord.
-18. Zamknij stronę szczegółów pracownika.
-19. Zamknij stronę.
+1. Przejdź do **okienka nawigacji > Moduły > Zasoby ludzkie > Pracownicy > Pracownicy**.
+2. Wyszukaj użytkownika w szybkim filtrze. W tym przykładzie wpisz `shannon`.
+3. Wybierz łącze w kolumnie **Nazwa** wyświetlonego konta użytkownika.
+4. Wybierz kartę **Rejestracja czasu**.
+5. Wybierz **Aktywowanie na terminalach rejestracji**.
+6. Wpisz lub wybierz wartości w następujących polach:  
+
+    - **Grupa obliczania**  
+    - **Domyślna grupa obliczania**  
+    - **Grupa zatwierdzania**  
+    - **Profil standardowy**  
+    - **Grupa profilu**  
+
+7. Kliknij przycisk **OK**.
+8. Wybierz **Edytuj**, aby wprowadzić numer karty identyfikacyjnej nowego pracownika odpowiedzialnego za rejestrację czasu. Wprowadź wartość w polu **Identyfikator karty identyfikacyjnej**.
+9. Wybierz opcję **Zapisz**.
+10. Zamknij strony **Szczegóły pracownika** i **Pracownicy**.
 
 ## <a name="assign-worker-to-device-group"></a>Przypisywanie pracownika do grupy urządzeń
-1. Wybierz kolejno opcje Kontrola produkcji > Ustawienia > Wykonywanie produkcji > Konfiguruj kartę zadań dla urządzeń.
-2. Kliknij przycisk Dodaj.
-3. Na liście oznacz wybrany wiersz.
-4. Kliknij przycisk OK.
-5. Kliknij przycisk Edytuj.
-6. W polu Jednostka produkcyjna można ustawić domyślny filtr dla pracownika. Daje to pewność, że gdy pracownik loguje się do urządzenia, wyświetlane są tylko zadania produkcyjne dla wybranej jednostki produkcyjnej.
+1. Wybierz kolejno opcje **Kontrola produkcji > Ustawienia > Wykonywanie produkcji > Konfiguruj kartę zadań dla urządzeń**.
+2. Wybierz opcję **Dodaj**.
+3. Na liście zaznacz żądanego pracownika. W tym przykładzie wybierz **SHANNON**.
+4. Kliknij przycisk **OK**.
+5. Wybierz opcję **Edycja**.
+6. W polu **Jednostka produkcyjna** można ustawić domyślny filtr dla pracownika. Daje to pewność, że gdy pracownik loguje się do urządzenia, wyświetlane są tylko zadania produkcyjne dla wybranej jednostki produkcyjnej. Wprowadź odpowiednią wartość.
 7. Zamknij stronę.
 

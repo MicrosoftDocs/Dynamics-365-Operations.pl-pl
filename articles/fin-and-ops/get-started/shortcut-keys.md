@@ -3,7 +3,7 @@ title: Skróty klawiaturowe
 description: Następujące skróty klawiaturowe mają zastosowanie w całym systemie Dynamics 365 for Finance and Operations.
 author: jasongre
 manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 95a6b6bd70c4a5bb684c605d364a28b85ed4e120
+ms.sourcegitcommit: d88d3d504e85c5bf6f6e9dc842488a2b644261cf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561840"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1780065"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
@@ -138,9 +138,13 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Dodaj zakres wierszy do wybranego zestawu<blockquote>[!NOTE] Ten skrót dotyczy tylko scenariuszy wyboru wielu elementów.</blockquote>         | Shift+kliknięcie                     |
 | Przejdź do następnej/poprzedniej strony danych                                                                                   | Page up / Page down             |
 | Utwórz nowy wiersz u dołu siatki                                                                             | Strzałka w dół (od ostatniego wiersza)  |
-| Zaznacz lub wyczyść wszystkie wiersze                                                                                               | Ctrl+Shift+M                    |
 | Przejdź do pierwszego rekordu                                                                                               | CTRL+Home                       |
 | Przejdź do ostatniego rekordu                                                                                                | CTRL+End                        |
+| Zaznacz lub wyczyść wszystkie wiersze                                                                                               | Ctrl+Shift+M                    |
+| Przejdź do pierwszego zaznaczonego wiersza                                                                                           | Alt+Shift+M, F                    |
+| Przejdź do następnego zaznaczonego wiersza                                                                                            | Alt+Shift+M, L                    |
+| Przejdź do poprzedniego zaznaczonego wiersza                                                                                        | Alt+Shift+M, P                    |
+| Przejdź do ostatniego zaznaczonego wiersza                                                                                           | Alt+Shift+M, N                    |
 | Wykonaj akcję domyślną w tabeli<blockquote>[!NOTE] Ten skrót jest włączony, gdy fokus znajduje się w komórce zawierającej hiperłącze, a wszystkie komórki w tej kolumnie zawierają hiperłącza.</blockquote> | Enter                           |
 | Przełączanie fokusa między wybranym wierszem a wierszem nagłówka                                                               | Alt+Shift+H                     |
 | Powiększenie/pomniejszenie bieżącej kolumny (z fokusem w wierszu nagłówka)                                                  | Strzałka w prawo / Strzałka w lewo        |

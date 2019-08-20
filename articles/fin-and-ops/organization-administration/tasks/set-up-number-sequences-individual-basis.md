@@ -1,9 +1,9 @@
 ---
-title: Konfigurowanie indywidualnych sekwencji identyfikatorów
-description: Sekwencje numeracji są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które ich wymagają.
+title: Konfigurowanie indywidualnych sekwencji numerów
+description: Ten temat wyjaśnia, jak konfiguruje się indywidualne sekwencje numerów.
 author: sericks007
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,28 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6734d66a06f8a8dc90a48bd68b7b4e22177b4672
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 58e69b680c006c814e9408135b6947161ad7c4f3
+ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560597"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "1738888"
 ---
-# <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurowanie indywidualnych sekwencji identyfikatorów
+# <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurowanie indywidualnych sekwencji numerów
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Sekwencje numeracji są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które ich wymagają. Rekord transakcji lub danych głównych, który wymaga identyfikatora, odnosi się do odwołania. Aby można było tworzyć nowe rekordy dla odwołania, należy ustawić sekwencję numerów i skojarzyć je z odwołaniem. Można skonfigurować wszystkie wymagane sekwencje identyfikatorów w tym samym czasie przy użyciu kreatora Ustawienie sekwencji identyfikatorów albo skonfigurować lub zmodyfikować indywidualne sekwencje identyfikatorów za pomocą strony Sekwencje identyfikatorów.
+Ten temat wyjaśnia, jak konfiguruje się indywidualne sekwencje numerów. Sekwencje numeracji są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które ich wymagają. Rekord transakcji lub danych głównych, który wymaga identyfikatora, odnosi się do odwołania. Aby można było tworzyć nowe rekordy dla odwołania, należy ustawić sekwencję numerów i skojarzyć je z odwołaniem. Można skonfigurować wszystkie wymagane sekwencje identyfikatorów w tym samym czasie przy użyciu kreatora **Ustawienie sekwencji identyfikatorów** albo skonfigurować lub zmodyfikować indywidualne sekwencje identyfikatorów za pomocą strony **Sekwencje identyfikatorów**.
 
-1. Wybierz kolejno opcje Administrowanie organizacją > Sekwencje numerów > Sekwencje numerów.
-2. Kliknij sekwencja identyfikatorów.
-3. W polu Kod sekwencji numerów wpisz wartość.
-4. W polu Nazwa wpisz wartość.
-5. Rozwiń sekcję Parametry zakresu.
-    * Na skróconej karcie Parametry zakresu wybierz zakres dla sekwencji identyfikatorów i wybierz zakres wartości.     Zakres definiuje, która organizacje używają sekwencji numerów. Ponadto sekwencje identyfikatorów o zakresie innym niż Udostępniono mogą mieć segmenty odpowiadające ich zakresowi. Na przykład sekwencja identyfikatorów z zakresem Firma może zawierać segment firmy. Aby uzyskać więcej informacji na temat zakresów, zobacz temat pomocy „Omówienie sekwencji numerów”.  
-6. Rozwiń sekcję Segmenty.
-    * Na skróconej karcie Segmenty zdefiniuj format dla sekwencji identyfikatorów, dodając, usuwając i zmieniając kolejność segmentów.  
-    * Sekwencje identyfikatorów wszystkich zakresów mogą zawierać segmenty stałe i alfanumeryczne. Segmenty stałe zawierają zestaw znaków alfanumerycznych, które się nie zmieniają. Tego typu segmentu należy używać, aby dodać łącznik lub inne separatory między segmentami sekwencji identyfikatorów. Segmenty alfanumeryczne zawierają kombinację znaków cyfry (#) oraz handlowego i (&). Te znaki reprezentują litery i cyfry, które zwiększają się za każdym razem, gdy jest używany numer z tej sekwencji. Użyj znaku liczbowego (#), aby wskazać numery rosnąco i znaku handlowego „i”, aby wskazać litery rosnąco. Na przykład format #####_2014 pozwala tworzyć sekwencje 00001_2014, 00002_2014 i tak dalej.     Musi istnieć co najmniej jeden segment alfanumeryczny. Segmenty zakresów, takich jak przedsiębiorstwo lub firma, nie są wymagane. Jednak nawet jeśli nie umieścisz segmentów zakresów w formacie, numery dla wybranego odwołania nadal są generowane dla zakresu.  
-7. Rozwiń sekcję Odwołania.
-    * Na skróconej karcie Odwołania wybierz typ lub rekord dokumentu, dla którego chcesz przypisać tę sekwencję identyfikatorów.     Ten krok jest opcjonalny dla sekwencji, które są zdefiniowane dla wzorów użycia specjalnych zgłoszeń. W tych scenariuszach nowy numer jest generowany przy użyciu wartości kodu sekwencji numerów lub identyfikatora, bez korzystania z odwołania. Przykład specjalnego wzorca użycia zgłoszenia to seria załączników i jest używany dla określonych nazw arkuszy. Jednak nie zaleca się używanie takich wzorców.  
-8. Rozwiń sekcję Ogólne.
-    * Na skróconej karcie Ogólne określ, czy sekwencja identyfikatorów jest wprowadzana ręcznie oraz ciągła czy nieciągła. Poza tym umożliwia wprowadzenie największych i najmniejszych numerów, które mogą być używane w sekwencji.     Nie zaleca się zmieniać nieciągłej sekwencji numerów na ciągłą sekwencji numerów. Nie będzie to naprawdę ciągła sekwencja numerów. Zmiana ta może też spowodować zduplikowanie naruszeń kluczy w bazie danych. Ponadto ciągłe sekwencje numerów mają największy wpływ na wydajność.   
-9. Kliknij przycisk Zapisz.
+1. Otwórz **Okienko nawigacji > Moduły > Administrowanie organizacją > Sekwencje numerów > Sekwencje numerów**.
+2. Wybierz opcję **Sekwencja numerów**.
+3. W polu **Kod sekwencji numerów** wpisz wartość.
+4. W polu **Nazwa** wpisz wartość.
+5. Na skróconej karcie **Parametry zakresu** wybierz zakres dla sekwencji identyfikatorów i wybierz zakres wartości z listy rozwijanej. Zakres definiuje, która organizacje używają sekwencji numerów. Ponadto sekwencje identyfikatorów o zakresie innym niż **Udostępniono** mogą mieć segmenty odpowiadające ich zakresowi. Na przykład sekwencja identyfikatorów z zakresem **Firma** może zawierać segment firmy. Aby uzyskać więcej informacji na temat zakresów, zobacz temat pomocy [Omówienie sekwencji numerów](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/fin-and-ops/organization-administration/number-sequence-overview.md).  
+6. Rozwiń sekcję **Segmenty**.
+    - Zdefiniuj formatu dla sekwencji numerów, dodając, usuwając i zmieniając kolejność segmentów.  
+    - Sekwencje identyfikatorów wszystkich zakresów mogą zawierać *segmenty stałe* i *segmenty alfanumeryczne*. Segmenty stałe zawierają zestaw znaków alfanumerycznych, które się nie zmieniają. Tego typu segmentu należy używać, aby dodać łącznik lub inne separatory między segmentami sekwencji identyfikatorów. Segmenty alfanumeryczne zawierają kombinację znaków cyfry (#) oraz handlowego i (&). Te znaki reprezentują litery i cyfry, które zwiększają się za każdym razem, gdy jest używany numer z tej sekwencji. Użyj znaku liczbowego (#), aby wskazać numery rosnąco i znaku handlowego „i”, aby wskazać litery rosnąco. Na przykład format `#####_2014` pozwala tworzyć sekwencje `00001_2014`, `00002_2014` i tak dalej. Musi istnieć co najmniej jeden segment alfanumeryczny. Segmenty zakresów, takich jak przedsiębiorstwo lub firma, nie są wymagane. Jednak nawet jeśli nie umieścisz segmentów zakresów w formacie, numery dla wybranego odwołania nadal są generowane dla zakresu.  
+7. Rozwiń sekcję **Odwołania**. Wybierz rekord lub typ dokumentu, aby przypisać tę sekwencję numerów. Ten krok jest opcjonalny dla sekwencji, które są zdefiniowane dla wzorów użycia specjalnych zgłoszeń. W tych scenariuszach nowy numer jest generowany przy użyciu wartości kodu sekwencji numerów lub identyfikatora, bez korzystania z odwołania. Przykład specjalnego wzorca użycia zgłoszenia to seria załączników i jest używany dla określonych nazw arkuszy. Jednak nie zaleca się używanie takich wzorców.  
+8. Rozwiń sekcję **Ogólne**. Na skróconej karcie Ogólne określ, czy sekwencja identyfikatorów jest wprowadzana ręcznie oraz ciągła czy nieciągła. Poza tym umożliwia wprowadzenie największych i najmniejszych numerów, które mogą być używane w sekwencji. Nie zaleca się zmieniać nieciągłej sekwencji numerów na ciągłą sekwencji numerów. Nie będzie to naprawdę ciągła sekwencja numerów. Zmiana ta może też spowodować zduplikowanie naruszeń kluczy w bazie danych. Ponadto ciągłe sekwencje numerów mają największy wpływ na wydajność.   
+9. Kliknij przycisk **Zapisz**.
 

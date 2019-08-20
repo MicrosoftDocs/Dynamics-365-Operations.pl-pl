@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8457182fee49e28256f2a1102ba77b2b4e89d5b2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fad076ae61da4845b65518f75747fec791b3b78c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548704"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848430"
 ---
 # <a name="compensation-power-bi-content"></a>Pakiet zawartości Wynagrodzenia w usłudze Power BI
 
@@ -45,7 +45,7 @@ Raporty dostępne w pakiecie zawartości **Wynagrodzenia** usługi Power BI maj�
 | Analiza wynagrodzeń na stanowiskach      | Najwyższe i najniższe stawka godzinowe i stałe wynagrodzenia, stanowiska z najwyższą i najniższą płacą oraz stanowiska z pełnym i niepełnym wymiarem godzin |
 | Analiza systemu wynagrodzeń | Rejestracje pracowników wg wybranego świadczenia |
 
-Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 Następujące dane są używane do wypełniania raportów w pakiecie zawartości **Wynagrodzenie** usługi Power BI. W tej tabeli przedstawiono jednostki, na których bazuje pakiet.

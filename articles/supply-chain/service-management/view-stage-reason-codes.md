@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df69ea3655329ea17d81549c54b092cab140016c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6d8c2ec55bb9ea400b87ad23a3c514d5c3d5fd8e
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548821"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742175"
 ---
 # <a name="view-stage-reason-codes"></a>Przeglądanie kodów przyczyny etapu 
 
@@ -40,7 +40,7 @@ Można wyświetlić i zmodyfikować listę przyczyn etapów zlecenia serwisowego
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Przyczyny etapów (formularz)](https://technet.microsoft.com/en-us/library/aa582897\(v=ax.60\))
+[Przyczyny etapów (formularz)](https://technet.microsoft.com/library/aa582897\(v=ax.60\))
 
   
 

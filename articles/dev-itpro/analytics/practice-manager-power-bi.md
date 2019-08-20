@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c526bc42595c20024016d0d7da78b8638b0daa4b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551678"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850104"
 ---
 # <a name="practice-manager-power-bi-content"></a>Pakiet zawartości Kierownik praktyk w usłudze Power BI
 
@@ -54,7 +54,7 @@ W poniższej tabeli przedstawiono szczegóły dotyczące mierników, które znaj
 | EVM               | Wskaźnik bilansu kosztów i zgodności z harmonogramem według projektów |
 | Godziny             | <ul><li>Rzeczywiste wykorzystanie do zafakturowania w godzinach w porównaniu z rzeczywistym obciążeniem do zafakturowania w godzinach w porównaniu z godzinami w budżecie</li><li>Rzeczywiste wykorzystanie do zafakturowania w godzinach w porównaniu z rzeczywistym obciążeniem do zafakturowania w godzinach według projektów</li><li>Rzeczywiste wykorzystanie do zafakturowania w godzinach w porównaniu z rzeczywistym obciążeniem do zafakturowania w godzinach według zasobów</li><li>Rzeczywisty współczynnik godzin do zafakturowania według projektów</li><li>Rzeczywisty współczynnik godzin do zafakturowania według zasobów</li></ul> |
 
-Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w usłudze Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Można także użyć funkcji eksportu danych źródłowych do wyeksportowania danych podsumowanych w wizualizacji.
+Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w usłudze Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Można także użyć funkcji eksportu danych źródłowych do wyeksportowania danych podsumowanych w wizualizacji.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 
@@ -62,7 +62,7 @@ Następujące dane są używane do wypełniania stron raportów w pakiecie zawar
 
 Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 
-### <a name="entity-projectaccountingcubeactualhourutilization"></a>Jednostka: ProjectAccountingCube\_ActualHourUtilization
+### <a name="entity-projectaccountingcube_actualhourutilization"></a>Jednostka: ProjectAccountingCube\_ActualHourUtilization
 **Źródło danych**: ProjEmplTrans
 
 | Najważniejsza zagregowana miara      | Pole                              | opis |
@@ -70,7 +70,7 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 | Rzeczywiste wykorzystanie do zafakturowania — godziny | Sum(ActualUtilizationBillableRate) | Rzeczywiste wykorzystanie do zafakturowania w godzinach łącznie. |
 | Rzeczywiste obciążenie do zafakturowania — godziny   | Sum(ActualBurdenBillableRate)      | Wskaźnik rzeczywistego obciążenia łącznie. |
 
-### <a name="entity-projectaccountingcubeactuals"></a>Jednostka: ProjectAccountingCube\_Actuals
+### <a name="entity-projectaccountingcube_actuals"></a>Jednostka: ProjectAccountingCube\_Actuals
 **Źródło danych**: ProjTransPosting
 
 | Najważniejsza zagregowana miara | Pole              | opis |
@@ -78,14 +78,14 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 | Rzeczywisty przychód            | Sum(ActualRevenue) | Przychód zaksięgowany dla wszystkich transakcji łącznie. |
 | Koszt rzeczywisty               | Sum(ActualCost)    | Koszt zaksięgowany dla wszystkich typów transakcji łącznie. |
 
-### <a name="entity-projectaccountingcubecustomer"></a>Jednostka: ProjectAccountingCube\_Customer
+### <a name="entity-projectaccountingcube_customer"></a>Jednostka: ProjectAccountingCube\_Customer
 **Źródło danych**: CustTable
 
 | Najważniejsza zagregowana miara | Pole                                             | opis |
 |---------------------------|---------------------------------------------------|-------------|
 | Liczba projektów        | COUNTA(ProjectAccountingCube\_Projects\[PROJECTS\]) | Liczba dostępnych projektów. |
 
-### <a name="entity-projectaccountingcubeforecasts"></a>Jednostka: ProjectAccountingCube\_Forecasts
+### <a name="entity-projectaccountingcube_forecasts"></a>Jednostka: ProjectAccountingCube\_Forecasts
 **Źródło danych**: ProjTransBudget
 
 | Najważniejsza zagregowana miara | Pole                  | opis |
@@ -94,14 +94,14 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 | Przychód budżetowy            | Sum(BudgetRevenue)     | Prognozowany przychód naliczony/zafakturowany łącznie. |
 | Budżetowa marża brutto       | Sum(BudgetGrossMargin) | Różnica między sumą prognozowanego przychodu łącznie a sumą kosztów prognozowanych łącznie. |
 
-### <a name="entity-projectaccountingcubeprojectplancostsview"></a>Jednostka: ProjectAccountingCube\_ProjectPlanCostsView
+### <a name="entity-projectaccountingcube_projectplancostsview"></a>Jednostka: ProjectAccountingCube\_ProjectPlanCostsView
 **Źródło danych**: Projekt
 
 | Najważniejsza zagregowana miara | Pole                    | opis |
 |---------------------------|--------------------------|-------------|
 | Planowany koszt              | Sum(SumOfTotalCostPrice) | Całkowity koszt własny w oszacowaniach dla wszystkich typów transakcji projektu zawierających planowane zadania. |
 
-### <a name="entity-projectaccountingcubeprojects"></a>Jednostka: ProjectAccountingCube\_Projects
+### <a name="entity-projectaccountingcube_projects"></a>Jednostka: ProjectAccountingCube\_Projects
 **Źródło danych**: Projekt
 
 | Najważniejsza zagregowana miara    | Pole | opis |
@@ -112,7 +112,7 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 | Wskaźnik rzeczywistych godzin do zafakturowania  | ProjectAccountingCube\_Projects\[rzeczywiste wykorzystanie do zafakturowania w godzinach łącznie dla projektu\] ÷ (ProjectAccountingCube\_Projects\[rzeczywiste wykorzystanie do zafakturowania w godzinach łącznie dla projektu\] + ProjectAccountingCube\_Projects\[rzeczywiste obciążenie do zafakturowania w godzinach łącznie dla projektu\]) | Rzeczywista suma godzin do zafakturowania na podstawie godzin wykorzystanych (produktywnych) i obciążenia (nieproduktywnych). |
 | Uzyskana wartość                 | ProjectAccountingCube\_Projects\[suma kosztów planowanych projektu\] × ProjectAccountingCube\_Projects\[procent wykonanej pracy\] | Całkowity planowany koszt pomnożony przez procent wykonanej pracy. |
 
-### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Jednostka: ProjectAccountingCube\_TotalEstimatedCosts 
+### <a name="entity-projectaccountingcube_totalestimatedcosts"></a>Jednostka: ProjectAccountingCube\_TotalEstimatedCosts 
 **Źródło danych**: ProjTable
 
 | Najważniejsza zagregowana miara       | Pole               | opis |

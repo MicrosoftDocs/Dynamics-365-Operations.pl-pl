@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
-ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
+ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624819"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742640"
 ---
 # <a name="retail-peripherals"></a>Sklepowe urządzenia peryferyjne
 
@@ -192,7 +192,7 @@ Adresy IP sieciowych urządzeń peryferyjnych można określić w dwóch miejsca
 
 #### <a name="modern-pos-for-android"></a>Modern POS for Android
 
-W Dynamics 365 for Retail wersji 8.1.3, aplikacja Modern POS dla Android zawiera wbudowaną stację sprzętową IPC. Ta Stacja sprzętowa obsługuje komunikację z drukarkami sieciowymi i łącznikami płatności. Aby uzyskać więcej informacji, odwiedź [artykuł „aplikacja Android hybrydowa dla dokumentów”](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+W Dynamics 365 for Retail wersji 8.1.3, aplikacja Modern POS dla Android zawiera wbudowaną stację sprzętową IPC. Ta Stacja sprzętowa obsługuje komunikację z drukarkami sieciowymi i łącznikami płatności. Aby uzyskać więcej informacji, odwiedź [artykuł „aplikacja Android hybrydowa dla dokumentów”](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS i Modern POS dla systemu iOS
 
@@ -541,7 +541,7 @@ Ta konfiguracja jest najbardziej typową konfigurację dla kas w tradycyjnych, s
 
 4. Kliknij kolejno opcje **Handel detaliczny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji**.
 5. Wybierz harmonogram dystrybucji **1090**, aby zsynchronizować nowy profil sprzętu ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
-6. Wybierz harmonogram dystrybucji **1040**, aby zsynchronizować nową stację sprzętową ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
+6. Wybierz harmonogram dystrybucji **1070**, aby zsynchronizować nową stację sprzętową ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 7. Zainstaluj i aktywuj aplikację Modern POS for Windows.
 8. Uruchom aplikację Modern POS for Windows i zacznij używać podłączonych urządzeń peryferyjnych.
 

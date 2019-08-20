@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: t-benebo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 266eec2bb870be270b7796b35903a402e014c67c
-ms.sourcegitcommit: 1f211ac6bd384fd8a2b5352104baf264d88f39b0
+ms.openlocfilehash: ca473de65135ddddea12ddc72e902056cc7b1db7
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538733"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845312"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendarze i planowanie główne
 
@@ -93,7 +93,7 @@ Aby wskazać daty, kiedy odbiorca może przyjąć dostawy, można przypisać kal
 
 Należy pamiętać, że można dla każdego odbiorcy można dodać tylko jeden kalendarz. Jeśli chcesz dodać kalendarz dla każdego adresu odbiorcy, możesz utworzyć jednego odbiorcę dla każdego adresu i następnie przypisać do nich odpowiedni kalendarz. 
 
-Na żądaną datę przyjęcia w wierszach zamówienia sprzedaży wpływa kalendarz odbiorcy i metoda kontroli daty dostawy. Można znaleźć więcej informacji o sposobie obliczania najwcześniejszej daty dostawy w temacie [Zobowiązanie do zamówienia.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Na żądaną datę przyjęcia w wierszach zamówienia sprzedaży wpływa kalendarz odbiorcy i metoda kontroli daty dostawy. Można znaleźć więcej informacji o sposobie obliczania najwcześniejszej daty dostawy w temacie [Zobowiązanie do zamówienia.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Kalendarz wysyłek dla firmy
 Aby wskazać daty, kiedy firma może wysłać towary, można ustawić kalendarz w **Administrowanie organizacją > Organizacje > Firmy**. Wybierz firmę i dodaj kalendarz na karcie **Handel zagraniczny i logistyka** w polu **Kalendarz wysyłek**. Kalendarz wysyłek będzie działać jako źródło wartości domyślnych dla wszystkich kalendarzy magazynu w firmie. 

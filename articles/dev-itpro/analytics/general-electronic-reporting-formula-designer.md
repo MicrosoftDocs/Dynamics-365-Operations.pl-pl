@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
-ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
+ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625879"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849516"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Projektant formuł w module Raportowanie elektroniczne (ER)
 
@@ -215,12 +215,12 @@ W poniższych tabelach opisano funkcje edycji danych, które mogą służyć do 
 | TODAY () | Zwracanie bieżącej daty i godziny serwera aplikacji Finance and Operations jako wartości daty. | |
 | NULLDATE () | Zwracanie wartości daty **null**. | |
 | NULLDATETIME () | Zwracanie wartości daty/godziny **null**. | |
-| DATETIMEFORMAT (data i godzina, format) | Konwertowanie określonej wartości daty/godziny na ciąg znaków w określonym formacie. (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz [standardowe](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (NOW(), "dd-MM-rrrr")** zwraca datę serwera aplikacji Finance and Operations, 24 grudnia 2015 roku, jako **"24-12-2015"**, zgodnie z określonym formatem niestandardowym. |
-| DATETIMEFORMAT (data i godzina, format, kultura) | Konwertowanie określonej wartości daty/godziny na ciąg znaków w określonym formacie i [kulturze](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz [standardowe](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (NOW(), "d", "de")** zwraca bieżącą datę serwera aplikacji Finance and Operations, 24 grudnia 2015 roku, jako **"24.12.2015"**, zgodnie z wybraną kulturą niemiecką. |
+| DATETIMEFORMAT (data i godzina, format) | Konwertowanie określonej wartości daty/godziny na ciąg znaków w określonym formacie. (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz [standardowe](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (NOW(), "dd-MM-rrrr")** zwraca datę serwera aplikacji Finance and Operations, 24 grudnia 2015 roku, jako **"24-12-2015"**, zgodnie z określonym formatem niestandardowym. |
+| DATETIMEFORMAT (data i godzina, format, kultura) | Konwertowanie określonej wartości daty/godziny na ciąg znaków w określonym formacie i [kulturze](https://msdn.microsoft.com/goglobal/bb896001.aspx). (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz [standardowe](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (NOW(), "d", "de")** zwraca bieżącą datę serwera aplikacji Finance and Operations, 24 grudnia 2015 roku, jako **"24.12.2015"**, zgodnie z wybraną kulturą niemiecką. |
 | SESSIONTODAY () | Zwracanie bieżącej daty i godziny sesji programu Finance and Operations jako wartości daty. | |
 | SESSIONNOW () | Zwracanie bieżącej daty i godziny sesji programu Finance and Operations jako wartości daty/godziny. | |
 | DATEFORMAT (data, format) | Zwracanie określonej daty w określonym formacie w postaci ciągu tekstowego. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-rrrr")** zwraca datę sesji programu Finance and Operations, 24 grudnia 2015 roku, jako **"24-12-2015"**, zgodnie z określonym formatem niestandardowym. |
-| DATEFORMAT (data, format, kultura) | Konwertowanie określonej wartości daty na ciąg znaków w określonym formacie i [kulturze](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz [standardowe](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** zwraca bieżącą datę sesji programu Finance and Operations, 24 grudnia 2015 roku, jako **"24.12.2015"**, zgodnie z wybraną kulturą niemiecką. |
+| DATEFORMAT (data, format, kultura) | Konwertowanie określonej wartości daty na ciąg znaków w określonym formacie i [kulturze](https://msdn.microsoft.com/goglobal/bb896001.aspx). (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz [standardowe](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** zwraca bieżącą datę sesji programu Finance and Operations, 24 grudnia 2015 roku, jako **"24.12.2015"**, zgodnie z wybraną kulturą niemiecką. |
 | DAYOFYEAR (data) | Zwracanie reprezentacji liczby dni między 1 stycznia a określoną datą w postaci liczby całkowitej. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-rrrr"))** zwraca wartość **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-rrrr"))** zwraca wartość **1**. |
 | DAYS (data 1, data 2) | Zwracanie liczby dni między pierwszą określoną datą a drugą określoną datą. Zwracanie wartości dodatniej, gdy pierwsza data jest późniejsza niż druga data, zwracanie wartości **0** (zero), gdy pierwsza data jest równa drugiej dacie, lub zwracanie wartości ujemnej, gdy pierwsza data jest wcześniejsza niż druga data. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT(ADDDAYS(NOW(), 1), "rrrrMMdd"), "rrrrMMdd"))** zwraca wartość **-1**. |
 
@@ -649,12 +649,12 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </tr>
 <tr>
 <td>NUMBERFORMAT (liczba, format)</td>
-<td>Zwracanie określonej liczby w określonym formacie w postaci ciągu tekstowego. (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standardowe</a> i <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">niestandardowe</a>). Kontekst, w którym ta funkcja jest uruchamiana, decyduje o kulturze używanej do formatowania liczb.</td>
+<td>Zwracanie określonej liczby w określonym formacie w postaci ciągu tekstowego. (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz <a href="https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx">standardowe</a> i <a href="https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx">niestandardowe</a>). Kontekst, w którym ta funkcja jest uruchamiana, decyduje o kulturze używanej do formatowania liczb.</td>
 <td>W kulturze EN-US <strong>NUMBERFORMAT (0,45, &quot;p&quot;)</strong> zwraca <strong>&quot;% 45,00&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> zwraca <strong>&quot;10&quot;</strong>.</td>
 </tr>
 <tr>
 <td>NUMBERFORMAT (liczba, format, kultura)</td>
-<td>Zwracanie określonego ciągu tekstowego o określonym numerze w określonym formacie i danej kulturze. (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">standardowe</a> i <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">niestandardowe</a>.).</td>
+<td>Zwracanie określonego ciągu tekstowego o określonym numerze w określonym formacie i danej kulturze. (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz <a href="https://docs.microsoft.com/dotnet/standard/base-types/standard-numeric-format-strings">standardowe</a> i <a href="https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings">niestandardowe</a>.).</td>
 <td><strong>NUMBERFORMAT (10/3, „F2”, „de”)</strong> powoduje <strong>zwrócenie 3,33,</strong> a <strong>NUMBERFORMAT (10/3, „F2”, „en-us”)</strong> powoduje <strong>zwrócenie 3.33</strong>.</td>
 </tr>
 <tr>
