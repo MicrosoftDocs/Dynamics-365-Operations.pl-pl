@@ -1,9 +1,9 @@
 ---
 title: Ustawianie preferowanej strefy czasowej
-description: W poniższej procedurze pokazano, jak użytkownik w roli administratora systemu może ustawić strefę czasową dla użytkownika.
+description: W tym temacie pokazano, jak użytkownik w roli administratora systemu może ustawić strefę czasową dla użytkownika.
 author: pvillads
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,24 +16,23 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b5eac00d5054296921c3f22004f8c8e710727afc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d6dc521fe4fc7ea901c882abad47d5fc899e0326
+ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560528"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "1738818"
 ---
-# <a name="set-a-users-preferred-time-zone"></a><span data-ttu-id="2cc3f-103">Ustawianie preferowanej strefy czasowej</span><span class="sxs-lookup"><span data-stu-id="2cc3f-103">Set a user's preferred time zone</span></span>
+# <a name="set-a-users-preferred-time-zone"></a><span data-ttu-id="c6b41-103">Ustawianie preferowanej strefy czasowej</span><span class="sxs-lookup"><span data-stu-id="c6b41-103">Set a user's preferred time zone</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="2cc3f-104">W poniższej procedurze pokazano, jak użytkownik w roli administratora systemu może ustawić strefę czasową dla użytkownika.</span><span class="sxs-lookup"><span data-stu-id="2cc3f-104">The following procedure explains how a user in the System Administrator role can set the time zone for a user.</span></span>
+<span data-ttu-id="c6b41-104">W poniższym temacie pokazano, jak użytkownik w roli administratora systemu może ustawić strefę czasową dla użytkownika.</span><span class="sxs-lookup"><span data-stu-id="c6b41-104">The following topic explains how a user in the System Administrator role can set the time zone for a user.</span></span>
 
-1. <span data-ttu-id="2cc3f-105">Wybierz kolejno opcje Administrowanie systemem > Użytkownicy > Użytkownicy.</span><span class="sxs-lookup"><span data-stu-id="2cc3f-105">Go to System administration > Users > Users.</span></span>
-2. <span data-ttu-id="2cc3f-106">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="2cc3f-106">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="2cc3f-107">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="2cc3f-107">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="2cc3f-108">Kliknij opcję Opcje użytkownika.</span><span class="sxs-lookup"><span data-stu-id="2cc3f-108">Click User options.</span></span>
-5. <span data-ttu-id="2cc3f-109">Kliknij kartę Preferencje.</span><span class="sxs-lookup"><span data-stu-id="2cc3f-109">Click the Preferences tab.</span></span>
-6. <span data-ttu-id="2cc3f-110">W polu Strefa czasowa wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="2cc3f-110">In the Time zone field, select an option.</span></span>
-7. <span data-ttu-id="2cc3f-111">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="2cc3f-111">Click Save.</span></span>
+1. <span data-ttu-id="c6b41-105">Otwórz **Okienko nawigacji > Moduły > Administracja systemu > Użytkownicy > Użytkownicy**.</span><span class="sxs-lookup"><span data-stu-id="c6b41-105">Go to **Navigation pane > Modules > System administration > Users > Users**.</span></span>
+2. <span data-ttu-id="c6b41-106">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="c6b41-106">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="c6b41-107">Wybierz **Opcje użytkownika**.</span><span class="sxs-lookup"><span data-stu-id="c6b41-107">Select **User options**.</span></span>
+4. <span data-ttu-id="c6b41-108">Kliknij kartę **Preferencje**.</span><span class="sxs-lookup"><span data-stu-id="c6b41-108">Select the **Preferences** tab.</span></span>
+5. <span data-ttu-id="c6b41-109">W polu **Strefa czasowa** wybierz opcję z listy rozwijanej.</span><span class="sxs-lookup"><span data-stu-id="c6b41-109">In the **Time zone** field, select an option from the drop-down list.</span></span>
+6. <span data-ttu-id="c6b41-110">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="c6b41-110">Select **Save**.</span></span>
 
