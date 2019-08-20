@@ -10,42 +10,42 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransAccrual, LedgerJournalTransAccrualTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a65bec066bdcb01ce8acf8cfbf2d31611104921
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 06743ca3ed13906e3f65d3783db7a7f74fb53e3f
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562501"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846614"
 ---
-# <a name="create-ledger-accrual-transactions"></a><span data-ttu-id="73665-103">Tworzenie transakcji naliczeń finansowych</span><span class="sxs-lookup"><span data-stu-id="73665-103">Create ledger accrual transactions</span></span>
+# <a name="create-ledger-accrual-transactions"></a><span data-ttu-id="a620d-103">Tworzenie transakcji naliczeń finansowych</span><span class="sxs-lookup"><span data-stu-id="a620d-103">Create ledger accrual transactions</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="73665-104">Ten przewodnik po zadaniach prowadzi przez generowanie transakcji naliczeń finansowych opartych na schematach naliczania.</span><span class="sxs-lookup"><span data-stu-id="73665-104">This task guide steps through generating ledger accrual transactions that are based on accrual schemes</span></span>
+<span data-ttu-id="a620d-104">Ten przewodnik po zadaniach prowadzi przez generowanie transakcji naliczeń finansowych opartych na schematach naliczania.</span><span class="sxs-lookup"><span data-stu-id="a620d-104">This task guide steps through generating ledger accrual transactions that are based on accrual schemes</span></span>
 
-1. <span data-ttu-id="73665-105">Wybierz kolejno opcje Księga główna > Wpisy w arkuszu > Arkusze finansowe.</span><span class="sxs-lookup"><span data-stu-id="73665-105">Go to General ledger > Journal entries > General journals.</span></span>
-2. <span data-ttu-id="73665-106">Na liście znajdź i zaznacz odpowiedni arkusz lub utwórz nowy.</span><span class="sxs-lookup"><span data-stu-id="73665-106">In the list, find and select the desired journal or create a new one.</span></span>
-3. <span data-ttu-id="73665-107">Kliknij, aby otworzyć łącze znajdujące się w polu Arkusz z numerem partii.</span><span class="sxs-lookup"><span data-stu-id="73665-107">Click to follow the link in the Journal batch number field.</span></span>
-4. <span data-ttu-id="73665-108">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="73665-108">In the list, mark the selected row.</span></span>
-5. <span data-ttu-id="73665-109">W polu Konto podaj żądane wartości.</span><span class="sxs-lookup"><span data-stu-id="73665-109">In the Account field, specify the desired values.</span></span>
-    * <span data-ttu-id="73665-110">W tym przykładzie definiujemy wydatek na ubezpieczenie.</span><span class="sxs-lookup"><span data-stu-id="73665-110">In this example, we are defining the expense for the insurance.</span></span> <span data-ttu-id="73665-111">Stanie się on wydatkiem okresowym.</span><span class="sxs-lookup"><span data-stu-id="73665-111">It will be come periodic expense amount.</span></span>  
-6. <span data-ttu-id="73665-112">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="73665-112">In the Description field, type a value.</span></span>
-7. <span data-ttu-id="73665-113">W polu Debet wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="73665-113">In the Debit field, enter a number.</span></span>
-8. <span data-ttu-id="73665-114">W polu Konto przeciwstawne podaj żądane wartości.</span><span class="sxs-lookup"><span data-stu-id="73665-114">In the Offset account field, specify the desired values.</span></span>
-9. <span data-ttu-id="73665-115">Kliknij przycisk Funkcje.</span><span class="sxs-lookup"><span data-stu-id="73665-115">Click Functions.</span></span>
-10. <span data-ttu-id="73665-116">Kliknij opcję Naliczenia finansowe.</span><span class="sxs-lookup"><span data-stu-id="73665-116">Click Ledger accruals.</span></span>
-11. <span data-ttu-id="73665-117">W polu Identyfikacja naliczania kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="73665-117">In the Accrual identification field, click the drop-down button to open the lookup.</span></span>
-12. <span data-ttu-id="73665-118">Na liście odszukaj i zaznacz schemat naliczania, który chcesz zastosować.</span><span class="sxs-lookup"><span data-stu-id="73665-118">In the list, find and select the accural scheme you want to apply.</span></span>
-13. <span data-ttu-id="73665-119">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="73665-119">In the list, click the link in the selected row.</span></span>
-14. <span data-ttu-id="73665-120">W polu Data początkowa wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="73665-120">In the Start date field, enter a date.</span></span>
-15. <span data-ttu-id="73665-121">Kliknij opcję Transakcje.</span><span class="sxs-lookup"><span data-stu-id="73665-121">Click Transactions.</span></span>
-16. <span data-ttu-id="73665-122">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="73665-122">Close the page.</span></span>
-17. <span data-ttu-id="73665-123">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="73665-123">Click OK.</span></span>
-18. <span data-ttu-id="73665-124">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="73665-124">Click Post.</span></span>
+1. <span data-ttu-id="a620d-105">Wybierz kolejno opcje Księga główna > Wpisy w arkuszu > Arkusze finansowe.</span><span class="sxs-lookup"><span data-stu-id="a620d-105">Go to General ledger > Journal entries > General journals.</span></span>
+2. <span data-ttu-id="a620d-106">Na liście znajdź i zaznacz odpowiedni arkusz lub utwórz nowy.</span><span class="sxs-lookup"><span data-stu-id="a620d-106">In the list, find and select the desired journal or create a new one.</span></span>
+3. <span data-ttu-id="a620d-107">Kliknij, aby otworzyć łącze znajdujące się w polu Arkusz z numerem partii.</span><span class="sxs-lookup"><span data-stu-id="a620d-107">Click to follow the link in the Journal batch number field.</span></span>
+4. <span data-ttu-id="a620d-108">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="a620d-108">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="a620d-109">W polu Konto podaj żądane wartości.</span><span class="sxs-lookup"><span data-stu-id="a620d-109">In the Account field, specify the desired values.</span></span>
+    * <span data-ttu-id="a620d-110">W tym przykładzie definiujemy wydatek na ubezpieczenie.</span><span class="sxs-lookup"><span data-stu-id="a620d-110">In this example, we are defining the expense for the insurance.</span></span> <span data-ttu-id="a620d-111">Stanie się on wydatkiem okresowym.</span><span class="sxs-lookup"><span data-stu-id="a620d-111">It will be come periodic expense amount.</span></span>  
+6. <span data-ttu-id="a620d-112">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="a620d-112">In the Description field, type a value.</span></span>
+7. <span data-ttu-id="a620d-113">W polu Debet wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="a620d-113">In the Debit field, enter a number.</span></span>
+8. <span data-ttu-id="a620d-114">W polu Konto przeciwstawne podaj żądane wartości.</span><span class="sxs-lookup"><span data-stu-id="a620d-114">In the Offset account field, specify the desired values.</span></span>
+9. <span data-ttu-id="a620d-115">Kliknij przycisk Funkcje.</span><span class="sxs-lookup"><span data-stu-id="a620d-115">Click Functions.</span></span>
+10. <span data-ttu-id="a620d-116">Kliknij opcję Naliczenia finansowe.</span><span class="sxs-lookup"><span data-stu-id="a620d-116">Click Ledger accruals.</span></span>
+11. <span data-ttu-id="a620d-117">W polu Identyfikacja naliczania kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="a620d-117">In the Accrual identification field, click the drop-down button to open the lookup.</span></span>
+12. <span data-ttu-id="a620d-118">Na liście odszukaj i zaznacz schemat naliczania, który chcesz zastosować.</span><span class="sxs-lookup"><span data-stu-id="a620d-118">In the list, find and select the accural scheme you want to apply.</span></span>
+13. <span data-ttu-id="a620d-119">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="a620d-119">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="a620d-120">W polu Data początkowa wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="a620d-120">In the Start date field, enter a date.</span></span>
+15. <span data-ttu-id="a620d-121">Kliknij opcję Transakcje.</span><span class="sxs-lookup"><span data-stu-id="a620d-121">Click Transactions.</span></span>
+16. <span data-ttu-id="a620d-122">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a620d-122">Close the page.</span></span>
+17. <span data-ttu-id="a620d-123">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="a620d-123">Click OK.</span></span>
+18. <span data-ttu-id="a620d-124">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="a620d-124">Click Post.</span></span>
 

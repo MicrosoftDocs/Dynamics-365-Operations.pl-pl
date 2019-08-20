@@ -9,38 +9,38 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 922914a50932fcf91e80c80333d7ab0b4a66f089
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f693e8d2cbe197b2bdbb5c3961e8b17424908f77
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572495"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845984"
 ---
-# <a name="adjust-project-transactions"></a><span data-ttu-id="91a6d-103">Koryguj transakcje projektu</span><span class="sxs-lookup"><span data-stu-id="91a6d-103">Adjust project transactions</span></span>
+# <a name="adjust-project-transactions"></a><span data-ttu-id="ea991-103">Koryguj transakcje projektu</span><span class="sxs-lookup"><span data-stu-id="ea991-103">Adjust project transactions</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="91a6d-104">Ten przewodnik zadania przedstawia sposób korygowania transakcji w projekcie.</span><span class="sxs-lookup"><span data-stu-id="91a6d-104">This task guide shows you how to adjust a transaction on a project.</span></span> <span data-ttu-id="91a6d-105">Można jednak korygować transakcje projektu w systemie pojedynczo lub wybierając je z listy wszystkich transakcji projektu.</span><span class="sxs-lookup"><span data-stu-id="91a6d-105">However, you can adjust project transactions one at a time, or select from a list of all project transactions.</span></span> <span data-ttu-id="91a6d-106">To zadanie kończy zwykle kierownik projektu.</span><span class="sxs-lookup"><span data-stu-id="91a6d-106">This task is usually completed by the Project supervisor.</span></span> <span data-ttu-id="91a6d-107">W tym przewodniku zadania jest wykorzystywany zestaw danych firmy USSI.</span><span class="sxs-lookup"><span data-stu-id="91a6d-107">This task guide uses the USSI data set.</span></span>
+<span data-ttu-id="ea991-104">Ten przewodnik zadania przedstawia sposób korygowania transakcji w projekcie.</span><span class="sxs-lookup"><span data-stu-id="ea991-104">This task guide shows you how to adjust a transaction on a project.</span></span> <span data-ttu-id="ea991-105">Można jednak korygować transakcje projektu w systemie pojedynczo lub wybierając je z listy wszystkich transakcji projektu.</span><span class="sxs-lookup"><span data-stu-id="ea991-105">However, you can adjust project transactions one at a time, or select from a list of all project transactions.</span></span> <span data-ttu-id="ea991-106">To zadanie kończy zwykle kierownik projektu.</span><span class="sxs-lookup"><span data-stu-id="ea991-106">This task is usually completed by the Project supervisor.</span></span> <span data-ttu-id="ea991-107">W tym przewodniku zadania jest wykorzystywany zestaw danych firmy USSI.</span><span class="sxs-lookup"><span data-stu-id="ea991-107">This task guide uses the USSI data set.</span></span>
 
-1. <span data-ttu-id="91a6d-108">Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie> Projekty > Wszystkie projekty.</span><span class="sxs-lookup"><span data-stu-id="91a6d-108">Go to Project management and accounting > Projects > All projects.</span></span> 
-2. <span data-ttu-id="91a6d-109">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="91a6d-109">In the list, mark the selected row.</span></span> 
-3. <span data-ttu-id="91a6d-110">Kliknij opcję Korekta transakcji.</span><span class="sxs-lookup"><span data-stu-id="91a6d-110">Click Adjust transactions.</span></span> 
-4. <span data-ttu-id="91a6d-111">Kliknij opcję Wybierz.</span><span class="sxs-lookup"><span data-stu-id="91a6d-111">Click Select.</span></span> 
-5. <span data-ttu-id="91a6d-112">W polu Godzina wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="91a6d-112">Select Yes in the Hour field.</span></span> 
-6. <span data-ttu-id="91a6d-113">Wprowadź datę w polu Do dnia.</span><span class="sxs-lookup"><span data-stu-id="91a6d-113">In the To date field, enter a date.</span></span> 
-7. <span data-ttu-id="91a6d-114">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="91a6d-114">Click OK.</span></span> 
-8. <span data-ttu-id="91a6d-115">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="91a6d-115">In the list, mark the selected row.</span></span> 
-9. <span data-ttu-id="91a6d-116">Kliknij opcję Skoryguj.</span><span class="sxs-lookup"><span data-stu-id="91a6d-116">Click Adjust.</span></span> 
-10. <span data-ttu-id="91a6d-117">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="91a6d-117">In the list, mark the selected row.</span></span> 
-11. <span data-ttu-id="91a6d-118">W polu Właściwość wiersza wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="91a6d-118">In the Line property field, enter or select a value.</span></span> 
-12. <span data-ttu-id="91a6d-119">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="91a6d-119">Click OK.</span></span> 
-13. <span data-ttu-id="91a6d-120">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="91a6d-120">In the list, mark the selected row.</span></span> 
-14. <span data-ttu-id="91a6d-121">W polu Koszt własny wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="91a6d-121">In the Cost price field, enter a number.</span></span> 
-15. <span data-ttu-id="91a6d-122">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="91a6d-122">Click Post.</span></span> 
+1. <span data-ttu-id="ea991-108">Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie> Projekty > Wszystkie projekty.</span><span class="sxs-lookup"><span data-stu-id="ea991-108">Go to Project management and accounting > Projects > All projects.</span></span> 
+2. <span data-ttu-id="ea991-109">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="ea991-109">In the list, mark the selected row.</span></span> 
+3. <span data-ttu-id="ea991-110">Kliknij opcję Korekta transakcji.</span><span class="sxs-lookup"><span data-stu-id="ea991-110">Click Adjust transactions.</span></span> 
+4. <span data-ttu-id="ea991-111">Kliknij opcję Wybierz.</span><span class="sxs-lookup"><span data-stu-id="ea991-111">Click Select.</span></span> 
+5. <span data-ttu-id="ea991-112">W polu Godzina wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="ea991-112">Select Yes in the Hour field.</span></span> 
+6. <span data-ttu-id="ea991-113">Wprowadź datę w polu Do dnia.</span><span class="sxs-lookup"><span data-stu-id="ea991-113">In the To date field, enter a date.</span></span> 
+7. <span data-ttu-id="ea991-114">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="ea991-114">Click OK.</span></span> 
+8. <span data-ttu-id="ea991-115">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="ea991-115">In the list, mark the selected row.</span></span> 
+9. <span data-ttu-id="ea991-116">Kliknij opcję Skoryguj.</span><span class="sxs-lookup"><span data-stu-id="ea991-116">Click Adjust.</span></span> 
+10. <span data-ttu-id="ea991-117">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="ea991-117">In the list, mark the selected row.</span></span> 
+11. <span data-ttu-id="ea991-118">W polu Właściwość wiersza wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="ea991-118">In the Line property field, enter or select a value.</span></span> 
+12. <span data-ttu-id="ea991-119">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="ea991-119">Click OK.</span></span> 
+13. <span data-ttu-id="ea991-120">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="ea991-120">In the list, mark the selected row.</span></span> 
+14. <span data-ttu-id="ea991-121">W polu Koszt własny wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="ea991-121">In the Cost price field, enter a number.</span></span> 
+15. <span data-ttu-id="ea991-122">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="ea991-122">Click Post.</span></span> 

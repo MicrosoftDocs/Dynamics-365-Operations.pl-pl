@@ -10,45 +10,45 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2a84408ea24e4221b041782b681c2a2bf1bd8436
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2bbbf55ed28ad2131d7e1253dd44842d85d39315
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552430"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848751"
 ---
-# <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a><span data-ttu-id="c87db-103">Konfigurowanie kont bankowych firmy dla poleceń przelewu ISO20022</span><span class="sxs-lookup"><span data-stu-id="c87db-103">Set up company bank accounts for ISO20022 credit transfers</span></span>
+# <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a><span data-ttu-id="fd191-103">Konfigurowanie kont bankowych firmy dla poleceń przelewu ISO20022</span><span class="sxs-lookup"><span data-stu-id="fd191-103">Set up company bank accounts for ISO20022 credit transfers</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="c87db-104">Ta procedura przedstawia sposób konfigurowania danych konta bankowego specyficznych dla firmy wymaganych do generowania pliku płatności.</span><span class="sxs-lookup"><span data-stu-id="c87db-104">This procedure shows how to set up company-specific bank account information that is required for payment file generation.</span></span> <span data-ttu-id="c87db-105">Ustawiasz informacje wymagane do wygenerowania formatu polecenia przelewu ISO 20022, ale w zależności od formatu mogą być wymagane dodatkowe informacje, takie jak identyfikator firmy lub numer rozliczeniowy.</span><span class="sxs-lookup"><span data-stu-id="c87db-105">You set up information required to generate ISO 20022 credit transfer format but depending on the format there might be other information required, such as the Company ID or the Sort code.</span></span> 
+<span data-ttu-id="fd191-104">Ta procedura przedstawia sposób konfigurowania danych konta bankowego specyficznych dla firmy wymaganych do generowania pliku płatności.</span><span class="sxs-lookup"><span data-stu-id="fd191-104">This procedure shows how to set up company-specific bank account information that is required for payment file generation.</span></span> <span data-ttu-id="fd191-105">Ustawiasz informacje wymagane do wygenerowania formatu polecenia przelewu ISO 20022, ale w zależności od formatu mogą być wymagane dodatkowe informacje, takie jak identyfikator firmy lub numer rozliczeniowy.</span><span class="sxs-lookup"><span data-stu-id="fd191-105">You set up information required to generate ISO 20022 credit transfer format but depending on the format there might be other information required, such as the Company ID or the Sort code.</span></span> 
 
-<span data-ttu-id="c87db-106">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej DEMF.</span><span class="sxs-lookup"><span data-stu-id="c87db-106">The demo data company used to create this procedure is DEMF.</span></span>
+<span data-ttu-id="fd191-106">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej DEMF.</span><span class="sxs-lookup"><span data-stu-id="fd191-106">The demo data company used to create this procedure is DEMF.</span></span>
 
-<span data-ttu-id="c87db-107">Jest to druga z pięciu procedur, które razem ilustrują proces płatności dostawcom przy użyciu konfiguracji raportowania elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="c87db-107">This is the second procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="c87db-108">Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="c87db-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="fd191-107">Jest to druga z pięciu procedur, które razem ilustrują proces płatności dostawcom przy użyciu konfiguracji raportowania elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="fd191-107">This is the second procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="fd191-108">Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="fd191-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="set-up-iban-and-swift-code"></a><span data-ttu-id="c87db-109">Konfigurowanie kodów IBAN i SWIFT</span><span class="sxs-lookup"><span data-stu-id="c87db-109">Set up IBAN and SWIFT code</span></span>
-1. <span data-ttu-id="c87db-110">Wybierz kolejno opcje Zarządzanie gotówką i bankami > Konta bankowe.</span><span class="sxs-lookup"><span data-stu-id="c87db-110">Go to Cash and bank management > Bank accounts.</span></span>
-2. <span data-ttu-id="c87db-111">Użyj szybkiego filtru, aby wyfiltrować pole Konto bankowe według wartości „DEMF OPER”.</span><span class="sxs-lookup"><span data-stu-id="c87db-111">Use the Quick Filter to filter on the Bank account field with a value of 'DEMF OPER'.</span></span>
-3. <span data-ttu-id="c87db-112">Kliknij pozycję DEMF OPER, aby otworzyć szczegóły konta bankowego.</span><span class="sxs-lookup"><span data-stu-id="c87db-112">Click DEMF OPER to open bank account details.</span></span>
-4. <span data-ttu-id="c87db-113">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="c87db-113">Click Edit.</span></span>
-5. <span data-ttu-id="c87db-114">Rozwiń sekcję Dodatkowa identyfikacja.</span><span class="sxs-lookup"><span data-stu-id="c87db-114">Expand the Additional identification section.</span></span>
-6. <span data-ttu-id="c87db-115">W polu IBAN wpisz wartość „DE89370400440532013000”.</span><span class="sxs-lookup"><span data-stu-id="c87db-115">In the IBAN field, type 'DE89370400440532013000'.</span></span>
-7. <span data-ttu-id="c87db-116">W polu Kod SWIFT wpisz wartość „DEUTDEFF”.</span><span class="sxs-lookup"><span data-stu-id="c87db-116">In the SWIFT code field, type 'DEUTDEFF'.</span></span>
-    * <span data-ttu-id="c87db-117">Należy zauważyć, że kod SWIFT\BIC nie jest wymagany dla wielu formatów płatności, jednak zaleca się zarejestrowanie go dla konta bankowego.</span><span class="sxs-lookup"><span data-stu-id="c87db-117">Note that SWIFT\BIC is not required for many payment formats, however it is recommended to have it registered for a bank account.</span></span>  
-8. <span data-ttu-id="c87db-118">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c87db-118">Click Save.</span></span>
+## <a name="set-up-iban-and-swift-code"></a><span data-ttu-id="fd191-109">Konfigurowanie kodów IBAN i SWIFT</span><span class="sxs-lookup"><span data-stu-id="fd191-109">Set up IBAN and SWIFT code</span></span>
+1. <span data-ttu-id="fd191-110">Wybierz kolejno opcje Zarządzanie gotówką i bankami > Konta bankowe.</span><span class="sxs-lookup"><span data-stu-id="fd191-110">Go to Cash and bank management > Bank accounts.</span></span>
+2. <span data-ttu-id="fd191-111">Użyj szybkiego filtru, aby wyfiltrować pole Konto bankowe według wartości „DEMF OPER”.</span><span class="sxs-lookup"><span data-stu-id="fd191-111">Use the Quick Filter to filter on the Bank account field with a value of 'DEMF OPER'.</span></span>
+3. <span data-ttu-id="fd191-112">Kliknij pozycję DEMF OPER, aby otworzyć szczegóły konta bankowego.</span><span class="sxs-lookup"><span data-stu-id="fd191-112">Click DEMF OPER to open bank account details.</span></span>
+4. <span data-ttu-id="fd191-113">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="fd191-113">Click Edit.</span></span>
+5. <span data-ttu-id="fd191-114">Rozwiń sekcję Dodatkowa identyfikacja.</span><span class="sxs-lookup"><span data-stu-id="fd191-114">Expand the Additional identification section.</span></span>
+6. <span data-ttu-id="fd191-115">W polu IBAN wpisz wartość „DE89370400440532013000”.</span><span class="sxs-lookup"><span data-stu-id="fd191-115">In the IBAN field, type 'DE89370400440532013000'.</span></span>
+7. <span data-ttu-id="fd191-116">W polu Kod SWIFT wpisz wartość „DEUTDEFF”.</span><span class="sxs-lookup"><span data-stu-id="fd191-116">In the SWIFT code field, type 'DEUTDEFF'.</span></span>
+    * <span data-ttu-id="fd191-117">Należy zauważyć, że kod SWIFT\BIC nie jest wymagany dla wielu formatów płatności, jednak zaleca się zarejestrowanie go dla konta bankowego.</span><span class="sxs-lookup"><span data-stu-id="fd191-117">Note that SWIFT\BIC is not required for many payment formats, however it is recommended to have it registered for a bank account.</span></span>  
+8. <span data-ttu-id="fd191-118">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="fd191-118">Click Save.</span></span>
 
-## <a name="set-up-bank-account-for-the-legal-entity"></a><span data-ttu-id="c87db-119">Konfigurowanie konta bankowego firmy</span><span class="sxs-lookup"><span data-stu-id="c87db-119">Set up bank account for the legal entity</span></span>
-1. <span data-ttu-id="c87db-120">Wybierz kolejno opcje Administrowanie organizacją > Organizacje > Firmy.</span><span class="sxs-lookup"><span data-stu-id="c87db-120">Go to Organization administration > Organizations > Legal entities.</span></span>
-2. <span data-ttu-id="c87db-121">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="c87db-121">Click Edit.</span></span>
-3. <span data-ttu-id="c87db-122">Rozwiń sekcję Informacje o koncie bankowym.</span><span class="sxs-lookup"><span data-stu-id="c87db-122">Expand the Bank account information section.</span></span>
-4. <span data-ttu-id="c87db-123">W polu Konto bankowe wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c87db-123">In the Bank account field, enter or select a value.</span></span>
-5. <span data-ttu-id="c87db-124">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c87db-124">Click Save.</span></span>
+## <a name="set-up-bank-account-for-the-legal-entity"></a><span data-ttu-id="fd191-119">Konfigurowanie konta bankowego firmy</span><span class="sxs-lookup"><span data-stu-id="fd191-119">Set up bank account for the legal entity</span></span>
+1. <span data-ttu-id="fd191-120">Wybierz kolejno opcje Administrowanie organizacją > Organizacje > Firmy.</span><span class="sxs-lookup"><span data-stu-id="fd191-120">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="fd191-121">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="fd191-121">Click Edit.</span></span>
+3. <span data-ttu-id="fd191-122">Rozwiń sekcję Informacje o koncie bankowym.</span><span class="sxs-lookup"><span data-stu-id="fd191-122">Expand the Bank account information section.</span></span>
+4. <span data-ttu-id="fd191-123">W polu Konto bankowe wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="fd191-123">In the Bank account field, enter or select a value.</span></span>
+5. <span data-ttu-id="fd191-124">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="fd191-124">Click Save.</span></span>
 

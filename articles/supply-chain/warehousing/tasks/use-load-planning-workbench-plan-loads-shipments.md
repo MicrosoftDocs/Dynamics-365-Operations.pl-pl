@@ -1,9 +1,9 @@
 ---
-title: Planowanie ładunków i wysyłki za pomocą warsztatu planowania wysyłki ładunku
-description: W tej procedurze pokazano sposób używania pulpitu planowania wysyłki ładunku w celu utworzenia ładunku dla zamówienia sprzedaży.
+title: Planowanie ładunków i wysyłek za pomocą pulpitu planowania wysyłki ładunku
+description: W tym temacie pokazano sposób używania pulpitu planowania wysyłki ładunku w celu utworzenia ładunku dla zamówienia sprzedaży.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,53 +16,47 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1927cff48beb30f934bd066c32ab48dfb9d06f74
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5e20eef8aa748bb64c6c14dd7e1d92ccf6592e0
+ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564810"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "1739072"
 ---
-# <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a><span data-ttu-id="f644a-103">Planowanie ładunków i wysyłki za pomocą warsztatu planowania wysyłki ładunku</span><span class="sxs-lookup"><span data-stu-id="f644a-103">Plan loads and shipments using the Load planning workbench</span></span>
+# <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a><span data-ttu-id="35bcf-103">Planowanie ładunków i wysyłek za pomocą pulpitu planowania wysyłki ładunku</span><span class="sxs-lookup"><span data-stu-id="35bcf-103">Plan loads and shipments using the Load planning workbench</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="f644a-104">W tej procedurze pokazano sposób używania pulpitu planowania wysyłki ładunku w celu utworzenia ładunku dla zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="f644a-104">This procedure shows how to use the load planning workbench to create a load for a sales order.</span></span> <span data-ttu-id="f644a-105">Warunkiem wstępnym jest utworzenie zamówienia sprzedaży, co zrobimy najpierw.</span><span class="sxs-lookup"><span data-stu-id="f644a-105">As a prerequisite we'll create the sales order first.</span></span> <span data-ttu-id="f644a-106">Ta procedura jest częścią codziennej pracy koordynatora transportu.</span><span class="sxs-lookup"><span data-stu-id="f644a-106">This procedure is part of the daily work for the transportation coordinator.</span></span> <span data-ttu-id="f644a-107">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="f644a-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="35bcf-104">W tym temacie pokazano sposób używania pulpitu planowania wysyłki ładunku w celu utworzenia ładunku dla zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="35bcf-104">This topic shows how to use the load planning workbench to create a load for a sales order.</span></span> <span data-ttu-id="35bcf-105">Warunkiem wstępnym jest utworzenie zamówienia sprzedaży, co zrobimy najpierw.</span><span class="sxs-lookup"><span data-stu-id="35bcf-105">As a prerequisite we'll create the sales order first.</span></span> <span data-ttu-id="35bcf-106">Ta procedura jest częścią codziennej pracy koordynatora transportu.</span><span class="sxs-lookup"><span data-stu-id="35bcf-106">This procedure is part of the daily work for the transportation coordinator.</span></span> <span data-ttu-id="35bcf-107">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="35bcf-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-a-sales-order"></a><span data-ttu-id="f644a-108">Utwórz zamówienie sprzedaży</span><span class="sxs-lookup"><span data-stu-id="f644a-108">Create a sales order</span></span>
-1. <span data-ttu-id="f644a-109">Wybierz kolejno opcje Rozrachunki z odbiorcami > Zamówienia > Wszystkie zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="f644a-109">Go to Accounts receivable > Orders > All sales orders.</span></span>
-2. <span data-ttu-id="f644a-110">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="f644a-110">Click New.</span></span>
-3. <span data-ttu-id="f644a-111">W polu Konto odbiorcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="f644a-111">In the Customer account field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="f644a-112">Wybierz konto US-004.</span><span class="sxs-lookup"><span data-stu-id="f644a-112">Select account US-004.</span></span>
-5. <span data-ttu-id="f644a-113">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f644a-113">Click OK.</span></span>
-6. <span data-ttu-id="f644a-114">W polu Numer towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="f644a-114">In the Item number field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="f644a-115">Wybierz towar A0001.</span><span class="sxs-lookup"><span data-stu-id="f644a-115">Select item A0001.</span></span>
-    * <span data-ttu-id="f644a-116">Towar A0001 jest włączony dla zarządzania transportem.</span><span class="sxs-lookup"><span data-stu-id="f644a-116">A0001 is enabled for transportation management.</span></span>  
-8. <span data-ttu-id="f644a-117">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="f644a-117">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="f644a-118">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="f644a-118">In the Quantity field, enter a number.</span></span>
-10. <span data-ttu-id="f644a-119">W polu Magazyn wpisz wartość „24”.</span><span class="sxs-lookup"><span data-stu-id="f644a-119">In the Warehouse field, type '24'.</span></span>
-    * <span data-ttu-id="f644a-120">W tym przykładzie należy wybrać magazyn 24.</span><span class="sxs-lookup"><span data-stu-id="f644a-120">In this example select warehouse 24.</span></span> <span data-ttu-id="f644a-121">Ten magazyn jest włączony dla zarządzania transportem i zaawansowanego zarządzania magazynem.</span><span class="sxs-lookup"><span data-stu-id="f644a-121">This warehouse is enabled for transportation management and advanced warehouse management.</span></span>  
-11. <span data-ttu-id="f644a-122">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="f644a-122">Click Save.</span></span>
-12. <span data-ttu-id="f644a-123">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="f644a-123">Close the page.</span></span>
+## <a name="create-a-sales-order"></a><span data-ttu-id="35bcf-108">Utwórz zamówienie sprzedaży</span><span class="sxs-lookup"><span data-stu-id="35bcf-108">Create a sales order</span></span>
+1. <span data-ttu-id="35bcf-109">Otwórz **Okienko nawigacji > Moduły > Rozrachunki z odbiorcami > Zamówienia > Wszystkie zamówienia zakupu**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-109">Go to the **Navigation pane > Modules > Accounts receivable > Orders > All sales orders**.</span></span>
+2. <span data-ttu-id="35bcf-110">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-110">Select **New**.</span></span>
+3. <span data-ttu-id="35bcf-111">W polu **Konto konta** kliknij rozwijany przycisk, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="35bcf-111">In the **Customer account** field, select the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="35bcf-112">Wybierz konto **US-004**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-112">Select account **US-004**.</span></span>
+5. <span data-ttu-id="35bcf-113">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-113">Select **OK**.</span></span>
+6. <span data-ttu-id="35bcf-114">W polu **Numer produktu** kliknij rozwijany przycisk, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="35bcf-114">In the **Item number** field, select the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="35bcf-115">Wybierz towar **A0001**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-115">Select item **A0001**.</span></span> <span data-ttu-id="35bcf-116">Towar **A0001** jest włączony dla zarządzania transportem.</span><span class="sxs-lookup"><span data-stu-id="35bcf-116">**A0001** is enabled for transportation management.</span></span>  
+8. <span data-ttu-id="35bcf-117">W polu **Oddział** wybierz przycisk rozwijany, aby otworzyć wyszukiwanie, a następnie wybierz towar.</span><span class="sxs-lookup"><span data-stu-id="35bcf-117">In the **Site** field, select the drop-down button to open the lookup, then select an item.</span></span>
+9. <span data-ttu-id="35bcf-118">W polu **Ilość** wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="35bcf-118">In the **Quantity** field, enter a number.</span></span>
+10. <span data-ttu-id="35bcf-119">W polu **Magazyn** wpisz „24” na potrzeby tego przykładu.</span><span class="sxs-lookup"><span data-stu-id="35bcf-119">In the **Warehouse** field, type '24' for this example.</span></span> <span data-ttu-id="35bcf-120">Ten magazyn jest włączony dla zarządzania transportem i zaawansowanego zarządzania magazynem.</span><span class="sxs-lookup"><span data-stu-id="35bcf-120">This warehouse is enabled for transportation management and advanced warehouse management.</span></span>  
+11. <span data-ttu-id="35bcf-121">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-121">Select **Save**.</span></span>
+12. <span data-ttu-id="35bcf-122">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="35bcf-122">Close the page.</span></span>
 
-## <a name="create-a-new-load"></a><span data-ttu-id="f644a-124">Tworzenie nowego ładunku</span><span class="sxs-lookup"><span data-stu-id="f644a-124">Create a new load</span></span>
-1. <span data-ttu-id="f644a-125">Wybierz kolejno opcje Zarządzanie transportem > Planowanie > Warsztat planowania wysyłki ładunku.</span><span class="sxs-lookup"><span data-stu-id="f644a-125">Go to Transportation management > Planning > Load planning workbench.</span></span>
-2. <span data-ttu-id="f644a-126">Kliknij kartę Wiersze sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="f644a-126">Click the Sales lines tab.</span></span>
-    * <span data-ttu-id="f644a-127">Teraz utworzysz ładunek dla utworzonego właśnie zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="f644a-127">Now you'll build the load for the sales order that you just created.</span></span> <span data-ttu-id="f644a-128">Ładunki można tworzyć na podstawie podaży i popytu z zamówień zakupu, zamówień przeniesienia i zamówień sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="f644a-128">Loads can be built based on supply and demand from purchase orders, transfer orders, and sales orders.</span></span>  
-3. <span data-ttu-id="f644a-129">W okienku akcji kliknij opcję Popyt i podaż.</span><span class="sxs-lookup"><span data-stu-id="f644a-129">On the Action Pane, click Supply and demand.</span></span>
-4. <span data-ttu-id="f644a-130">Kliknij opcję Do nowego ładunku.</span><span class="sxs-lookup"><span data-stu-id="f644a-130">Click To new load.</span></span>
-5. <span data-ttu-id="f644a-131">W polu Identyfikator szablonu ładunku kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="f644a-131">In the Load template ID field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="f644a-132">Szablon Ładunek określa maksymalne parametry wagi i objętości całego ładunku.</span><span class="sxs-lookup"><span data-stu-id="f644a-132">The Load template defines maximum measurements for weight and volume of the entire load.</span></span> <span data-ttu-id="f644a-133">Na przykład szablon ładunku może reprezentować rozmiar kontenera lub ciężarówki.</span><span class="sxs-lookup"><span data-stu-id="f644a-133">For example, the load template might represent the size of a container or truck.</span></span>  
-6. <span data-ttu-id="f644a-134">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="f644a-134">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="f644a-135">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f644a-135">Click OK.</span></span>
+## <a name="create-a-new-load"></a><span data-ttu-id="35bcf-123">Tworzenie nowego ładunku</span><span class="sxs-lookup"><span data-stu-id="35bcf-123">Create a new load</span></span>
+1. <span data-ttu-id="35bcf-124">Otwórz **Okienko nawigacji > Moduły > Zarządzanie transportem > Planowanie > Warsztat planowania wysyłki ładunku**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-124">Go to the **Navigation pane > Modules > Transportation management > Planning > Load planning workbench**.</span></span>
+2. <span data-ttu-id="35bcf-125">Wybierz kartę **Wiersze sprzedaży**. Teraz utworzysz ładunek dla utworzonego właśnie zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="35bcf-125">Select the **Sales lines** tab. Now you'll build the load for the sales order that you just created.</span></span> <span data-ttu-id="35bcf-126">Ładunki można tworzyć na podstawie podaży i popytu z zamówień zakupu, zamówień przeniesienia i zamówień sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="35bcf-126">Loads can be built based on supply and demand from purchase orders, transfer orders, and sales orders.</span></span>  
+3. <span data-ttu-id="35bcf-127">W okienku akcji wybierz opcję **Popyt i podaż**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-127">On the Action Pane, select **Supply and demand**.</span></span>
+4. <span data-ttu-id="35bcf-128">Wybierz opcję **Do nowego ładunku**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-128">Select **To new load**.</span></span>
+5. <span data-ttu-id="35bcf-129">W polu **Identyfikator szablonu ładunku** wybierz przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="35bcf-129">In the **Load template ID** field, select the drop-down button to open the lookup.</span></span> <span data-ttu-id="35bcf-130">Szablon Ładunek określa maksymalne parametry wagi i objętości całego ładunku.</span><span class="sxs-lookup"><span data-stu-id="35bcf-130">The Load template defines maximum measurements for weight and volume of the entire load.</span></span> <span data-ttu-id="35bcf-131">Na przykład szablon ładunku może reprezentować rozmiar kontenera lub ciężarówki.</span><span class="sxs-lookup"><span data-stu-id="35bcf-131">For example, the load template might represent the size of a container or truck.</span></span> <span data-ttu-id="35bcf-132">Wybierz towar.</span><span class="sxs-lookup"><span data-stu-id="35bcf-132">Select an item.</span></span>
+6. <span data-ttu-id="35bcf-133">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-133">Select **OK**.</span></span>
 
-## <a name="rate-and-route-the-load"></a><span data-ttu-id="f644a-136">Ustawiania stawek i wyznaczania trasy dla ładunku</span><span class="sxs-lookup"><span data-stu-id="f644a-136">Rate and route the load</span></span>
-1. <span data-ttu-id="f644a-137">Kliknij opcję Ustawianie stawek i wybór trasy.</span><span class="sxs-lookup"><span data-stu-id="f644a-137">Click Rating and routing.</span></span>
-2. <span data-ttu-id="f644a-138">Kliknij opcję Pulpit ustalania stawek i wyznaczania tras.</span><span class="sxs-lookup"><span data-stu-id="f644a-138">Click Rate route workbench.</span></span>
-3. <span data-ttu-id="f644a-139">Kliknij opcję Szukanie najlepszej stawki.</span><span class="sxs-lookup"><span data-stu-id="f644a-139">Click Rate shop.</span></span>
-4. <span data-ttu-id="f644a-140">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="f644a-140">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="f644a-141">Kliknij opcję Przypisz.</span><span class="sxs-lookup"><span data-stu-id="f644a-141">Click Assign.</span></span>
-6. <span data-ttu-id="f644a-142">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="f644a-142">Close the page.</span></span>
-7. <span data-ttu-id="f644a-143">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="f644a-143">Close the page.</span></span>
+## <a name="rate-and-route-the-load"></a><span data-ttu-id="35bcf-134">Ustawiania stawek i wyznaczania trasy dla ładunku</span><span class="sxs-lookup"><span data-stu-id="35bcf-134">Rate and route the load</span></span>
+1. <span data-ttu-id="35bcf-135">Wybierz opcję **Ustawianie stawek i wybór trasy**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-135">Select **Rating and routing**.</span></span>
+2. <span data-ttu-id="35bcf-136">Wybierz opcję **Pulpit ustalania stawek i wyznaczania tras**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-136">Select **Rate route workbench**.</span></span>
+3. <span data-ttu-id="35bcf-137">Wybierz opcję **Szukanie najlepszej stawki**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-137">Select **Rate shop**.</span></span>
+4. <span data-ttu-id="35bcf-138">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="35bcf-138">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="35bcf-139">Wybierz opcję **Przypisz**.</span><span class="sxs-lookup"><span data-stu-id="35bcf-139">Select **Assign**.</span></span>
+6. <span data-ttu-id="35bcf-140">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="35bcf-140">Close the page.</span></span>
 

@@ -10,50 +10,50 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventBlocking, InventItemIdLookupSimple, InventLocationIdLookup
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 09789dc0b89f8bd36cca9b3e5be366bf17246243
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 845d517ad10245df3b208874df61e235c199c7fe
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549778"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836415"
 ---
-# <a name="create-and-maintain-an-inventory-blocking"></a><span data-ttu-id="098d6-103">Tworzenie i obsługa blokowania zapasów</span><span class="sxs-lookup"><span data-stu-id="098d6-103">Create and maintain an inventory blocking</span></span>
+# <a name="create-and-maintain-an-inventory-blocking"></a><span data-ttu-id="22c6f-103">Tworzenie i obsługa blokowania zapasów</span><span class="sxs-lookup"><span data-stu-id="22c6f-103">Create and maintain an inventory blocking</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="098d6-104">W tej procedurze pokazano, jak za pomocą funkcji blokowania zapasów zapobiec rezerwowaniu fizycznie dostępnych zapasów przez inne dokumenty źródłowe dotyczące towarów wychodzących.</span><span class="sxs-lookup"><span data-stu-id="098d6-104">This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking.</span></span> <span data-ttu-id="098d6-105">Tę procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF z przykładowymi wartościami, które są wyświetlane.</span><span class="sxs-lookup"><span data-stu-id="098d6-105">You can run the procedure in demo data company USMF using the example values that are shown.</span></span> <span data-ttu-id="098d6-106">Przed rozpoczęciem tej procedury musisz mieć fizycznie dostępne zapasy towaru.</span><span class="sxs-lookup"><span data-stu-id="098d6-106">You need to have an item with physical on-hand inventory available before you start this procedure.</span></span>
+<span data-ttu-id="22c6f-104">W tej procedurze pokazano, jak za pomocą funkcji blokowania zapasów zapobiec rezerwowaniu fizycznie dostępnych zapasów przez inne dokumenty źródłowe dotyczące towarów wychodzących.</span><span class="sxs-lookup"><span data-stu-id="22c6f-104">This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking.</span></span> <span data-ttu-id="22c6f-105">Tę procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF z przykładowymi wartościami, które są wyświetlane.</span><span class="sxs-lookup"><span data-stu-id="22c6f-105">You can run the procedure in demo data company USMF using the example values that are shown.</span></span> <span data-ttu-id="22c6f-106">Przed rozpoczęciem tej procedury musisz mieć fizycznie dostępne zapasy towaru.</span><span class="sxs-lookup"><span data-stu-id="22c6f-106">You need to have an item with physical on-hand inventory available before you start this procedure.</span></span>
 
 
-## <a name="create-an-inventory-blocking"></a><span data-ttu-id="098d6-107">Tworzenie blokowania zapasów</span><span class="sxs-lookup"><span data-stu-id="098d6-107">Create an inventory blocking</span></span>
-1. <span data-ttu-id="098d6-108">Kliknij kolejno opcje Zarządzanie zapasami > Zadania okresowe > Blokowanie zapasów.</span><span class="sxs-lookup"><span data-stu-id="098d6-108">Go to Inventory management > Periodic tasks > Inventory blocking.</span></span>
-2. <span data-ttu-id="098d6-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="098d6-109">Click New.</span></span>
-3. <span data-ttu-id="098d6-110">W polu Numer towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="098d6-110">In the Item number field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="098d6-111">Na liście zaznacz towar, który chcesz wybrać.</span><span class="sxs-lookup"><span data-stu-id="098d6-111">In the list, select the item you want to choose.</span></span> 
-    * <span data-ttu-id="098d6-112">Wybierz numer towaru fizycznie dostępnych zapasów, które chcesz zablokować.</span><span class="sxs-lookup"><span data-stu-id="098d6-112">Select an item number with physical on-hand inventory that you want to block.</span></span> <span data-ttu-id="098d6-113">Jeśli używasz firmy demonstracyjnej USMF, można wybrać towar M9201.</span><span class="sxs-lookup"><span data-stu-id="098d6-113">If you’re using USMF you can select item M9201.</span></span>  
-5. <span data-ttu-id="098d6-114">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="098d6-114">In the Quantity field, enter a number.</span></span>
-    * <span data-ttu-id="098d6-115">Jeśli używasz towaru M9201, wybierz mniej niż 200.</span><span class="sxs-lookup"><span data-stu-id="098d6-115">If you’re using item M9201, you need to select less than 200.</span></span>  
-6. <span data-ttu-id="098d6-116">Przełącz rozwinięcie sekcji Wymiary magazynowe.</span><span class="sxs-lookup"><span data-stu-id="098d6-116">Toggle the expansion of the Inventory dimensions section.</span></span>
-7. <span data-ttu-id="098d6-117">W polu Magazyn kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="098d6-117">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="098d6-118">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="098d6-118">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="098d6-119">Jeśli używasz towaru M9201, można wybrać magazyn 51.</span><span class="sxs-lookup"><span data-stu-id="098d6-119">If you’re using item M9201, you can select warehouse 51.</span></span>  
-9. <span data-ttu-id="098d6-120">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="098d6-120">Click Save.</span></span>
+## <a name="create-an-inventory-blocking"></a><span data-ttu-id="22c6f-107">Tworzenie blokowania zapasów</span><span class="sxs-lookup"><span data-stu-id="22c6f-107">Create an inventory blocking</span></span>
+1. <span data-ttu-id="22c6f-108">Kliknij kolejno opcje Zarządzanie zapasami > Zadania okresowe > Blokowanie zapasów.</span><span class="sxs-lookup"><span data-stu-id="22c6f-108">Go to Inventory management > Periodic tasks > Inventory blocking.</span></span>
+2. <span data-ttu-id="22c6f-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="22c6f-109">Click New.</span></span>
+3. <span data-ttu-id="22c6f-110">W polu Numer towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="22c6f-110">In the Item number field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="22c6f-111">Na liście zaznacz towar, który chcesz wybrać.</span><span class="sxs-lookup"><span data-stu-id="22c6f-111">In the list, select the item you want to choose.</span></span> 
+    * <span data-ttu-id="22c6f-112">Wybierz numer towaru fizycznie dostępnych zapasów, które chcesz zablokować.</span><span class="sxs-lookup"><span data-stu-id="22c6f-112">Select an item number with physical on-hand inventory that you want to block.</span></span> <span data-ttu-id="22c6f-113">Jeśli używasz firmy demonstracyjnej USMF, można wybrać towar M9201.</span><span class="sxs-lookup"><span data-stu-id="22c6f-113">If you’re using USMF you can select item M9201.</span></span>  
+5. <span data-ttu-id="22c6f-114">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="22c6f-114">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="22c6f-115">Jeśli używasz towaru M9201, wybierz mniej niż 200.</span><span class="sxs-lookup"><span data-stu-id="22c6f-115">If you’re using item M9201, you need to select less than 200.</span></span>  
+6. <span data-ttu-id="22c6f-116">Przełącz rozwinięcie sekcji Wymiary magazynowe.</span><span class="sxs-lookup"><span data-stu-id="22c6f-116">Toggle the expansion of the Inventory dimensions section.</span></span>
+7. <span data-ttu-id="22c6f-117">W polu Magazyn kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="22c6f-117">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="22c6f-118">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="22c6f-118">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="22c6f-119">Jeśli używasz towaru M9201, można wybrać magazyn 51.</span><span class="sxs-lookup"><span data-stu-id="22c6f-119">If you’re using item M9201, you can select warehouse 51.</span></span>  
+9. <span data-ttu-id="22c6f-120">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="22c6f-120">Click Save.</span></span>
 
-## <a name="update-the-conditions-of-the-inventory-blocking"></a><span data-ttu-id="098d6-121">Aktualizowanie warunków blokowania zapasów</span><span class="sxs-lookup"><span data-stu-id="098d6-121">Update the conditions of the inventory blocking</span></span>
-1. <span data-ttu-id="098d6-122">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="098d6-122">In the Quantity field, enter a number.</span></span>
-    * <span data-ttu-id="098d6-123">Zaktualizuj pole ilości zapasów, aby uwzględniało ilość do zablokowania.</span><span class="sxs-lookup"><span data-stu-id="098d6-123">Update the inventory quantity field to reflect the quantity to block.</span></span>  
-2. <span data-ttu-id="098d6-124">W polu Oczekiwana data wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="098d6-124">In the Expected date field, enter a date.</span></span>
-    * <span data-ttu-id="098d6-125">Warto określić, kiedy zablokowane zapasy powinny stać się dostępne do rezerwacji, przypisując im oczekiwaną datę.</span><span class="sxs-lookup"><span data-stu-id="098d6-125">You might want to indicate when the blocked inventory is expected to become available for reservation by assigning an expected date.</span></span> <span data-ttu-id="098d6-126">Jeśli w ustawieniu blokowania zapasów zostanie zaznaczona opcja Przewidywane do przyjęcia, co ma miejsce domyślnie podczas ręcznego tworzenia blokowania, ta data będzie wyświetlana na oczekiwanej transakcji.</span><span class="sxs-lookup"><span data-stu-id="098d6-126">If the Expected receipts option is selected for the inventory blocking, as it is by default when you manually create a blocking, this date will appear on the expected transaction.</span></span>  
-3. <span data-ttu-id="098d6-127">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="098d6-127">Click Save.</span></span>
+## <a name="update-the-conditions-of-the-inventory-blocking"></a><span data-ttu-id="22c6f-121">Aktualizowanie warunków blokowania zapasów</span><span class="sxs-lookup"><span data-stu-id="22c6f-121">Update the conditions of the inventory blocking</span></span>
+1. <span data-ttu-id="22c6f-122">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="22c6f-122">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="22c6f-123">Zaktualizuj pole ilości zapasów, aby uwzględniało ilość do zablokowania.</span><span class="sxs-lookup"><span data-stu-id="22c6f-123">Update the inventory quantity field to reflect the quantity to block.</span></span>  
+2. <span data-ttu-id="22c6f-124">W polu Oczekiwana data wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="22c6f-124">In the Expected date field, enter a date.</span></span>
+    * <span data-ttu-id="22c6f-125">Warto określić, kiedy zablokowane zapasy powinny stać się dostępne do rezerwacji, przypisując im oczekiwaną datę.</span><span class="sxs-lookup"><span data-stu-id="22c6f-125">You might want to indicate when the blocked inventory is expected to become available for reservation by assigning an expected date.</span></span> <span data-ttu-id="22c6f-126">Jeśli w ustawieniu blokowania zapasów zostanie zaznaczona opcja Przewidywane do przyjęcia, co ma miejsce domyślnie podczas ręcznego tworzenia blokowania, ta data będzie wyświetlana na oczekiwanej transakcji.</span><span class="sxs-lookup"><span data-stu-id="22c6f-126">If the Expected receipts option is selected for the inventory blocking, as it is by default when you manually create a blocking, this date will appear on the expected transaction.</span></span>  
+3. <span data-ttu-id="22c6f-127">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="22c6f-127">Click Save.</span></span>
 
-## <a name="remove-the-inventory-blocking"></a><span data-ttu-id="098d6-128">Usuwanie blokowania zapasów</span><span class="sxs-lookup"><span data-stu-id="098d6-128">Remove the inventory blocking</span></span>
-1. <span data-ttu-id="098d6-129">Kliknij przycisk Usuń.</span><span class="sxs-lookup"><span data-stu-id="098d6-129">Click Delete.</span></span>
-2. <span data-ttu-id="098d6-130">Kliknij przycisk Tak.</span><span class="sxs-lookup"><span data-stu-id="098d6-130">Click Yes.</span></span>
-3. <span data-ttu-id="098d6-131">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="098d6-131">Close the page.</span></span>
+## <a name="remove-the-inventory-blocking"></a><span data-ttu-id="22c6f-128">Usuwanie blokowania zapasów</span><span class="sxs-lookup"><span data-stu-id="22c6f-128">Remove the inventory blocking</span></span>
+1. <span data-ttu-id="22c6f-129">Kliknij przycisk Usuń.</span><span class="sxs-lookup"><span data-stu-id="22c6f-129">Click Delete.</span></span>
+2. <span data-ttu-id="22c6f-130">Kliknij przycisk Tak.</span><span class="sxs-lookup"><span data-stu-id="22c6f-130">Click Yes.</span></span>
+3. <span data-ttu-id="22c6f-131">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="22c6f-131">Close the page.</span></span>
 

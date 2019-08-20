@@ -18,42 +18,42 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 75f37ce016acb4b479a9cf4dff205562ce00f02c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 63659288ab8551e458f6e92a5045c72441ff68cc
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545320"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743286"
 ---
-# <a name="post-arrival-journal-for-returned-products"></a><span data-ttu-id="e3c80-103">Księgowanie arkusza przyjęcia dla zwrotu produktów</span><span class="sxs-lookup"><span data-stu-id="e3c80-103">Post arrival journal for returned products</span></span> 
+# <a name="post-arrival-journal-for-returned-products"></a><span data-ttu-id="978c6-103">Księgowanie arkusza przyjęcia dla zwrotu produktów</span><span class="sxs-lookup"><span data-stu-id="978c6-103">Post arrival journal for returned products</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="e3c80-104">Aby przetworzyć zwrot, najpierw sprawdź poprawność wielkości zwrotu i zaktualizuj pole wielkości w arkuszu przyjęć towarów.</span><span class="sxs-lookup"><span data-stu-id="e3c80-104">To process a return, first validate the return quantity, update the quantity field in the item arrival journal.</span></span> <span data-ttu-id="e3c80-105">Następnie wybierz kod dyspozycji lub wskaż, że zwracane towary muszą być sprawdzone.</span><span class="sxs-lookup"><span data-stu-id="e3c80-105">Then select a disposition code or indicate that the returned items have to be inspected.</span></span> <span data-ttu-id="e3c80-106">Po wykonaniu tych kroków można zaksięgować arkusz przyjęcia towaru dla zamówienia zwrotu.</span><span class="sxs-lookup"><span data-stu-id="e3c80-106">After completing these steps, you can post the item arrival journal for the return order.</span></span>
+<span data-ttu-id="978c6-104">Aby przetworzyć zwrot, najpierw sprawdź poprawność wielkości zwrotu i zaktualizuj pole wielkości w arkuszu przyjęć towarów.</span><span class="sxs-lookup"><span data-stu-id="978c6-104">To process a return, first validate the return quantity, update the quantity field in the item arrival journal.</span></span> <span data-ttu-id="978c6-105">Następnie wybierz kod dyspozycji lub wskaż, że zwracane towary muszą być sprawdzone.</span><span class="sxs-lookup"><span data-stu-id="978c6-105">Then select a disposition code or indicate that the returned items have to be inspected.</span></span> <span data-ttu-id="978c6-106">Po wykonaniu tych kroków można zaksięgować arkusz przyjęcia towaru dla zamówienia zwrotu.</span><span class="sxs-lookup"><span data-stu-id="978c6-106">After completing these steps, you can post the item arrival journal for the return order.</span></span>
 
-1.  <span data-ttu-id="e3c80-107">Wybierz kolejno opcje **Zarządzanie zapasami** \> **Okresowe** \> **Przegląd przyjęć**.</span><span class="sxs-lookup"><span data-stu-id="e3c80-107">Click **Inventory management** \> **Periodic** \> **Arrival overview**.</span></span>
+1.  <span data-ttu-id="978c6-107">Wybierz kolejno opcje **Zarządzanie zapasami** \> **Okresowe** \> **Przegląd przyjęć**.</span><span class="sxs-lookup"><span data-stu-id="978c6-107">Click **Inventory management** \> **Periodic** \> **Arrival overview**.</span></span>
 
-2.  <span data-ttu-id="e3c80-108">W filtrze **Nazwa konfiguracji** wybierz opcję **Zamówienie zwrotu**.</span><span class="sxs-lookup"><span data-stu-id="e3c80-108">In the **Setup name** filter, select **Return order**.</span></span>
+2.  <span data-ttu-id="978c6-108">W filtrze **Nazwa konfiguracji** wybierz opcję **Zamówienie zwrotu**.</span><span class="sxs-lookup"><span data-stu-id="978c6-108">In the **Setup name** filter, select **Return order**.</span></span>
 
-3.  <span data-ttu-id="e3c80-109">Jeśli lista przyjęć jest długa, użyj pól w obszarze **Zakres**, aby ją zawęzić.</span><span class="sxs-lookup"><span data-stu-id="e3c80-109">If the list of receipts is long, use the fields in the **Range** area to narrow the list.</span></span>
+3.  <span data-ttu-id="978c6-109">Jeśli lista przyjęć jest długa, użyj pól w obszarze **Zakres**, aby ją zawęzić.</span><span class="sxs-lookup"><span data-stu-id="978c6-109">If the list of receipts is long, use the fields in the **Range** area to narrow the list.</span></span>
 
-4.  <span data-ttu-id="e3c80-110">Zlokalizuj wiersz zamówienia zwrotu, który chcesz zaksięgować, zaznacz jego pole wyboru **Zaznacz do przyjęcia**, a następnie kliknij przycisk **Rozpocznij przyjęcie**.</span><span class="sxs-lookup"><span data-stu-id="e3c80-110">Locate the line of the return order that you want to post, select its **Select for arrival** box, and then click **Start arrival**.</span></span>
+4.  <span data-ttu-id="978c6-110">Zlokalizuj wiersz zamówienia zwrotu, który chcesz zaksięgować, zaznacz jego pole wyboru **Zaznacz do przyjęcia**, a następnie kliknij przycisk **Rozpocznij przyjęcie**.</span><span class="sxs-lookup"><span data-stu-id="978c6-110">Locate the line of the return order that you want to post, select its **Select for arrival** box, and then click **Start arrival**.</span></span>
 
-5.  <span data-ttu-id="e3c80-111">Kliknij kolejno opcje **Arkusze** \> **Pokaż arkusze przyjęcia**, aby otworzyć formularz **Arkusz lokalizacji**.</span><span class="sxs-lookup"><span data-stu-id="e3c80-111">Click **Journals** \> **Show arrivals from receipts** to open the **Location journal** form.</span></span>
+5.  <span data-ttu-id="978c6-111">Kliknij kolejno opcje **Arkusze** \> **Pokaż arkusze przyjęcia**, aby otworzyć formularz **Arkusz lokalizacji**.</span><span class="sxs-lookup"><span data-stu-id="978c6-111">Click **Journals** \> **Show arrivals from receipts** to open the **Location journal** form.</span></span>
     
 
     > [!TIP]
-    > <P><span data-ttu-id="e3c80-112">Aby wyświetlić szczegółowe informacje, wybierz arkusz, a następnie kliknij opcję <STRONG>Wiersze</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="e3c80-112">To view detailed information, select a journal, and then click <STRONG>Lines</STRONG>.</span></span></P>
+    > <P><span data-ttu-id="978c6-112">Aby wyświetlić szczegółowe informacje, wybierz arkusz, a następnie kliknij opcję <STRONG>Wiersze</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="978c6-112">To view detailed information, select a journal, and then click <STRONG>Lines</STRONG>.</span></span></P>
 
 
-6.  <span data-ttu-id="e3c80-113">Wprowadź wszelkie niezbędne aktualizacje, a następnie kliknij przycisk **Księguj**.</span><span class="sxs-lookup"><span data-stu-id="e3c80-113">Make any necessary updates, and then click **Post**.</span></span>
+6.  <span data-ttu-id="978c6-113">Wprowadź wszelkie niezbędne aktualizacje, a następnie kliknij przycisk **Księguj**.</span><span class="sxs-lookup"><span data-stu-id="978c6-113">Make any necessary updates, and then click **Post**.</span></span>
 
-<span data-ttu-id="e3c80-114">Po zaksięgowaniu arkusza zwrócone towary są rejestrowane w zapasach, a formularz **Zamówienia zwrotu** wskazuje, że towary zostały przyjęte na magazyn.</span><span class="sxs-lookup"><span data-stu-id="e3c80-114">After the journal is posted, the returned items are registered in inventory, and the **Return orders** form indicates that the items have arrived at the warehouse.</span></span>
+<span data-ttu-id="978c6-114">Po zaksięgowaniu arkusza zwrócone towary są rejestrowane w zapasach, a formularz **Zamówienia zwrotu** wskazuje, że towary zostały przyjęte na magazyn.</span><span class="sxs-lookup"><span data-stu-id="978c6-114">After the journal is posted, the returned items are registered in inventory, and the **Return orders** form indicates that the items have arrived at the warehouse.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="e3c80-115">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="e3c80-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="978c6-115">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="978c6-115">See also</span></span>
 
-<span data-ttu-id="e3c80-116">[Arkusz lokalizacji (formularz)](https://technet.microsoft.com/en-us/library/aa584822\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="e3c80-116">[Location journal (form)](https://technet.microsoft.com/en-us/library/aa584822\(v=ax.60\))</span></span>
+<span data-ttu-id="978c6-116">[Arkusz lokalizacji (formularz)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="978c6-116">[Location journal (form)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))</span></span>
 
   
 

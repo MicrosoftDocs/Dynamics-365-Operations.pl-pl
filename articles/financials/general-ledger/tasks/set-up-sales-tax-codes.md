@@ -1,6 +1,6 @@
 ---
-title: Ustawianie kodów podatków
-description: Kody podatków tworzy się dla każdego podatku pośredniego lub cła, które firma musi naliczać, pobierać i wpłacać do urzędu skarbowego.
+title: Konfigurowanie kodów podatków
+description: W tym temacie wyjaśniono sposób konfigurowania kodów podatków w Dynamics 365 for Finance and Operations.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
@@ -10,46 +10,39 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f29442c2ef2e3d0008a74298fda218e4cbd93f8e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3419c6b569093d717158e80bd9bc01054d82bff9
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571590"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834837"
 ---
-# <a name="set-up-sales-tax-codes"></a><span data-ttu-id="70f1d-103">Ustawianie kodów podatków</span><span class="sxs-lookup"><span data-stu-id="70f1d-103">Set up sales tax codes</span></span>
+# <a name="set-up-sales-tax-codes"></a><span data-ttu-id="6bc75-103">Konfigurowanie kodów podatków</span><span class="sxs-lookup"><span data-stu-id="6bc75-103">Set up sales tax codes</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="70f1d-104">Kody podatków tworzy się dla każdego podatku pośredniego lub cła, które firma musi naliczać, pobierać i wpłacać do urzędu skarbowego.</span><span class="sxs-lookup"><span data-stu-id="70f1d-104">Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.</span></span>
+<span data-ttu-id="6bc75-104">W tym temacie wyjaśniono sposób konfigurowania kodów podatków w Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="6bc75-104">This topic explains how to set up sales tax codes in Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="6bc75-105">Kody podatków tworzy się dla każdego podatku pośredniego lub cła, które firma musi naliczać, pobierać i wpłacać do urzędu skarbowego.</span><span class="sxs-lookup"><span data-stu-id="6bc75-105">Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.</span></span>
 
-<span data-ttu-id="70f1d-105">W zadaniu wykorzystano firmę demonstracyjną USMF.</span><span class="sxs-lookup"><span data-stu-id="70f1d-105">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="6bc75-106">W zadaniu wykorzystano firmę demonstracyjną USMF.</span><span class="sxs-lookup"><span data-stu-id="6bc75-106">This task uses the USMF demo company.</span></span>
 
-
-
-1. <span data-ttu-id="70f1d-106">Wybierz kolejno opcje Podatek > Podatki pośrednie > Podatek > Kody podatków.</span><span class="sxs-lookup"><span data-stu-id="70f1d-106">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
-2. <span data-ttu-id="70f1d-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="70f1d-107">Click New.</span></span>
-3. <span data-ttu-id="70f1d-108">W polu Kod podatku wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="70f1d-108">In the Sales tax code field, type a value.</span></span>
-4. <span data-ttu-id="70f1d-109">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="70f1d-109">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="70f1d-110">Wybierz okres rozliczenia, aby określić, do którego urzędu skarbowego i w których interwałach ten podatek musi być zgłaszany i płacony.</span><span class="sxs-lookup"><span data-stu-id="70f1d-110">Select a Settlement period to specify which Sales tax authority and in which intervals this sales tax needs to be reported and paid.</span></span>
-6. <span data-ttu-id="70f1d-111">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="70f1d-111">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="70f1d-112">Wybierz grupę księgowania, aby określić konta główne w Księdze głównej, na których będzie księgowany podatek.</span><span class="sxs-lookup"><span data-stu-id="70f1d-112">Select a Ledger posting group to specify the main accounts to post sales tax to the general ledger.</span></span>
-8. <span data-ttu-id="70f1d-113">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="70f1d-113">In the list, find and select the desired record.</span></span>
-9. <span data-ttu-id="70f1d-114">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="70f1d-114">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="70f1d-115">Rozwiń skróconą kartę Obliczanie.</span><span class="sxs-lookup"><span data-stu-id="70f1d-115">Expand the Calculation FastTab.</span></span>
-    * <span data-ttu-id="70f1d-116">Skrócona karta Obliczanie zawiera wiele pól, które kontrolują sposób obliczania kwot podatków.</span><span class="sxs-lookup"><span data-stu-id="70f1d-116">The Calculation FastTab has multiple fields that control how sales tax amounts will be calculated.</span></span>  
-11. <span data-ttu-id="70f1d-117">W okienku akcji kliknij opcję Kod podatku.</span><span class="sxs-lookup"><span data-stu-id="70f1d-117">On the Action Pane, click Sales tax code.</span></span>
-12. <span data-ttu-id="70f1d-118">Kliknij opcję Wartości.</span><span class="sxs-lookup"><span data-stu-id="70f1d-118">Click Values.</span></span>
-13. <span data-ttu-id="70f1d-119">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="70f1d-119">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="70f1d-120">Wprowadź wartość tego kodu podatku.</span><span class="sxs-lookup"><span data-stu-id="70f1d-120">Enter the value for this tax code.</span></span>
-    * <span data-ttu-id="70f1d-121">Jeśli na skróconej karcie Obliczanie w polu Podstawa opodatkowania wybrano opcję Kwota na jednostkę, w celu obliczenia kwoty podatku wartość będzie mnożona przez ilość w transakcji.</span><span class="sxs-lookup"><span data-stu-id="70f1d-121">On the Calculation FastTab, in the Origin field, if Amount per unit is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.</span></span>  <span data-ttu-id="70f1d-122">Jeśli kod podatku nie dotyczy podatku jednostkowego, w celu obliczenia kwoty podatku wartość jest procentem stosowanym do podstawy opodatkowania dla tego kodu podatku.</span><span class="sxs-lookup"><span data-stu-id="70f1d-122">If the tax code is not a unit based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.</span></span>     
-15. <span data-ttu-id="70f1d-123">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="70f1d-123">Click Save.</span></span>
-16. <span data-ttu-id="70f1d-124">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="70f1d-124">Close the page.</span></span>
-17. <span data-ttu-id="70f1d-125">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="70f1d-125">Click Save.</span></span>
+1. <span data-ttu-id="6bc75-107">Otwórz **Okienko nawigacji > Podatek > Podatki pośrednie > Podatek > Kody podatków**.</span><span class="sxs-lookup"><span data-stu-id="6bc75-107">Go to **Navigation pane > Tax > Indirect taxes > Sales tax > Sales tax codes**.</span></span>
+2. <span data-ttu-id="6bc75-108">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="6bc75-108">Select **New**.</span></span>
+3. <span data-ttu-id="6bc75-109">W polu **Kod podatku** wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6bc75-109">In the **Sales tax code** field, type a value.</span></span>
+4. <span data-ttu-id="6bc75-110">W polu **Nazwa** wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6bc75-110">In the **Name** field, type a value.</span></span>
+5. <span data-ttu-id="6bc75-111">Wybierz **okres rozliczenia**, otwierając listę rozwijaną, aby określić, do którego urzędu skarbowego i w których interwałach ten podatek musi być zgłaszany i płacony.</span><span class="sxs-lookup"><span data-stu-id="6bc75-111">Select a **Settlement period** by opening the pull-down list to specify which Sales tax authority and in which intervals this sales tax needs to be reported and paid.</span></span>
+6. <span data-ttu-id="6bc75-112">Wybierz **grupę księgowania**, aby określić konta główne w Księdze głównej, na których będzie księgowany podatek.</span><span class="sxs-lookup"><span data-stu-id="6bc75-112">Select a **Ledger posting group** to specify the main accounts to post sales tax to the general ledger.</span></span>
+7. <span data-ttu-id="6bc75-113">Rozwiń skróconą kartę **Obliczanie**.</span><span class="sxs-lookup"><span data-stu-id="6bc75-113">Expand the **Calculation** FastTab.</span></span> <span data-ttu-id="6bc75-114">Zawiera ona wiele pól, które kontrolują sposób obliczania kwot podatków.</span><span class="sxs-lookup"><span data-stu-id="6bc75-114">This includes multiple fields that control how sales tax amounts will be calculated.</span></span> <span data-ttu-id="6bc75-115">Odpowiednio wypełnij te pola.</span><span class="sxs-lookup"><span data-stu-id="6bc75-115">Fill these fields out as needed.</span></span>  
+8. <span data-ttu-id="6bc75-116">W **okienku akcji** u góry interfejsu wybierz **Kod podatku**.</span><span class="sxs-lookup"><span data-stu-id="6bc75-116">On the **Action Pane** at the top of the interface, select **Sales tax code**.</span></span>
+9. <span data-ttu-id="6bc75-117">Wybierz **Wartości**.</span><span class="sxs-lookup"><span data-stu-id="6bc75-117">Select **Values**.</span></span>
+10. <span data-ttu-id="6bc75-118">Wprowadź wartość dla tego kodu podatków w kolumnie **Wartość**.</span><span class="sxs-lookup"><span data-stu-id="6bc75-118">Enter the value for this tax code in the **value** column.</span></span>
+    - <span data-ttu-id="6bc75-119">Jeśli na skróconej karcie **Obliczanie** w polu Podstawa opodatkowania wybrano opcję Kwota na jednostkę, w celu obliczenia kwoty podatku wartość będzie mnożona przez ilość w transakcji.</span><span class="sxs-lookup"><span data-stu-id="6bc75-119">On the **Calculation** FastTab, in the Origin field, if Amount per unit is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.</span></span>  <span data-ttu-id="6bc75-120">Jeśli kod podatku nie dotyczy podatku jednostkowego, w celu obliczenia kwoty podatku wartość jest procentem stosowanym do podstawy opodatkowania dla tego kodu podatku.</span><span class="sxs-lookup"><span data-stu-id="6bc75-120">If the tax code is not a unit based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.</span></span>     
+11. <span data-ttu-id="6bc75-121">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="6bc75-121">Select **Save**.</span></span>
+12. <span data-ttu-id="6bc75-122">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="6bc75-122">Close the page.</span></span>
+13. <span data-ttu-id="6bc75-123">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="6bc75-123">Select **Save**.</span></span>
 

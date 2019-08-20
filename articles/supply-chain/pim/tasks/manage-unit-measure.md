@@ -3,72 +3,63 @@ title: Zarządzanie jednostką miary
 description: W tej procedurze pokazano sposób definiowania jednostki miary, wprowadzania tłumaczenia i opisu jednostki oraz określania reguł konwersji względem powiązanych jednostek.
 author: sorenva
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/08/2018
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3e208b7f1faab77f2b97ff7b440a228656684fca
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 042a7495d55fb9d884771972cfc18e5ddb25330d
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567660"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844328"
 ---
-# <a name="manage-unit-of-measure"></a><span data-ttu-id="e8610-103">Zarządzanie jednostką miary</span><span class="sxs-lookup"><span data-stu-id="e8610-103">Manage unit of measure</span></span>
+# <a name="manage-unit-of-measure"></a><span data-ttu-id="28826-103">Zarządzanie jednostką miary</span><span class="sxs-lookup"><span data-stu-id="28826-103">Manage unit of measure</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="e8610-104">W tej procedurze pokazano sposób definiowania jednostki miary, wprowadzania tłumaczenia i opisu jednostki oraz określania reguł konwersji względem powiązanych jednostek.</span><span class="sxs-lookup"><span data-stu-id="e8610-104">This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units.</span></span> <span data-ttu-id="e8610-105">Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="e8610-105">You can walk through this procedure using demo data, or using your own data.</span></span>
+<span data-ttu-id="28826-104">W tej procedurze pokazano sposób definiowania jednostki miary, wprowadzania tłumaczenia i opisu jednostki oraz określania reguł konwersji względem powiązanych jednostek.</span><span class="sxs-lookup"><span data-stu-id="28826-104">This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units.</span></span> <span data-ttu-id="28826-105">Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="28826-105">You can walk through this procedure using demo data, or using your own data.</span></span>
 
-1. <span data-ttu-id="e8610-106">Przejdź do okna Obsługa zwolnionego produktu.</span><span class="sxs-lookup"><span data-stu-id="e8610-106">Go to Released product maintenance.</span></span>
-2. <span data-ttu-id="e8610-107">Kliknij opcję Jednostki.</span><span class="sxs-lookup"><span data-stu-id="e8610-107">Click Units.</span></span>
+1. <span data-ttu-id="28826-106">Otwórz **Okienko nawigacji > Moduły > Informacje o zarządzaniu produktem > Produkty > Obsługa zwolnionego produktu**.</span><span class="sxs-lookup"><span data-stu-id="28826-106">Go to **Navigation pane > Modules > Product information management > Released product maintenance**.</span></span>
+2. <span data-ttu-id="28826-107">Kliknij opcję **Jednostki**.</span><span class="sxs-lookup"><span data-stu-id="28826-107">Click **Units**.</span></span>
 
-## <a name="create-a-unit-of-measure"></a><span data-ttu-id="e8610-108">Tworzenie jednostki miary</span><span class="sxs-lookup"><span data-stu-id="e8610-108">Create a unit of measure</span></span>
-1. <span data-ttu-id="e8610-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="e8610-109">Click New.</span></span>
-2. <span data-ttu-id="e8610-110">W polu Jednostka wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="e8610-110">In the Unit field, type a value.</span></span>
-    * <span data-ttu-id="e8610-111">Wprowadź identyfikator lub symbol, który ma być używany przy odwoływaniu się do jednostki miary.</span><span class="sxs-lookup"><span data-stu-id="e8610-111">Enter the ID or symbol to use when referring to the unit of measure.</span></span>  
-3. <span data-ttu-id="e8610-112">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="e8610-112">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="e8610-113">Wprowadź opisową nazwę jednostki miary w wersji językowej systemu.</span><span class="sxs-lookup"><span data-stu-id="e8610-113">Enter a descriptive name for the unit of measure in the system language.</span></span>  
-4. <span data-ttu-id="e8610-114">W polu Klasa jednostek wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="e8610-114">In the Unit class field, select an option.</span></span>
-    * <span data-ttu-id="e8610-115">Klasa jednostki określa grupę logiczną, taką jak obszar, masa lub ilość, której jednostka miary jest częścią.</span><span class="sxs-lookup"><span data-stu-id="e8610-115">The unit class defines what logical grouping, such as area, mass, or quantity, the unit of measure is part of.</span></span>  
-5. <span data-ttu-id="e8610-116">W polu Dokładność po przecinku wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="e8610-116">In the Decimal precision field, enter a number.</span></span>
-    * <span data-ttu-id="e8610-117">Określ liczbę miejsc po przecinku, do jakiej musi zostać zaokrąglona przekonwertowana jednostka miary po wykonaniu na niej obliczeń.</span><span class="sxs-lookup"><span data-stu-id="e8610-117">Specify the number of decimals that the converted unit of measure must be rounded to when a calculation is completed for the unit of measure.</span></span>  
-6. <span data-ttu-id="e8610-118">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="e8610-118">Click Save.</span></span>
+## <a name="create-a-unit-of-measure"></a><span data-ttu-id="28826-108">Tworzenie jednostki miary</span><span class="sxs-lookup"><span data-stu-id="28826-108">Create a unit of measure</span></span>
+1. <span data-ttu-id="28826-109">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="28826-109">Click **New**.</span></span>
+2. <span data-ttu-id="28826-110">W polu **Jednostka** wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="28826-110">In the **Unit** field, type a value.</span></span> <span data-ttu-id="28826-111">Wprowadź identyfikator lub symbol, który ma być używany przy odwoływaniu się do jednostki miary.</span><span class="sxs-lookup"><span data-stu-id="28826-111">Enter the ID or symbol to use when referring to the unit of measure.</span></span>  
+3. <span data-ttu-id="28826-112">W polu **Opis** wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="28826-112">In the **Description** field, type a value.</span></span> <span data-ttu-id="28826-113">Wprowadź opisową nazwę jednostki miary w wersji językowej systemu.</span><span class="sxs-lookup"><span data-stu-id="28826-113">Enter a descriptive name for the unit of measure in the system language.</span></span>  
+4. <span data-ttu-id="28826-114">W polu **Klasa jednostek** wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="28826-114">In the **Unit class** field, select an option.</span></span> <span data-ttu-id="28826-115">Klasa jednostki określa grupę logiczną, taką jak obszar, masa lub ilość, której jednostka miary jest częścią.</span><span class="sxs-lookup"><span data-stu-id="28826-115">The unit class defines what logical grouping, such as area, mass, or quantity, the unit of measure is part of.</span></span>  
+5. <span data-ttu-id="28826-116">W polu **Dokładność po przecinku** wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="28826-116">In the **Decimal precision** field, enter a number.</span></span> <span data-ttu-id="28826-117">Określ liczbę miejsc po przecinku, do jakiej musi zostać zaokrąglona przekonwertowana jednostka miary po wykonaniu na niej obliczeń.</span><span class="sxs-lookup"><span data-stu-id="28826-117">Specify the number of decimals that the converted unit of measure must be rounded to when a calculation is completed for the unit of measure.</span></span>  
+6. <span data-ttu-id="28826-118">Kliknij przycisk **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="28826-118">Click **Save**.</span></span>
 
-## <a name="define-unit-translations"></a><span data-ttu-id="e8610-119">Definiowanie tłumaczeń jednostek</span><span class="sxs-lookup"><span data-stu-id="e8610-119">Define unit translations</span></span>
-1. <span data-ttu-id="e8610-120">Kliknij opcję Opisy jednostek.</span><span class="sxs-lookup"><span data-stu-id="e8610-120">Click Unit texts.</span></span>
-2. <span data-ttu-id="e8610-121">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="e8610-121">Click New.</span></span>
-    * <span data-ttu-id="e8610-122">Użyj opisu jednostki w celu utworzenia tłumaczenie identyfikatora lub symbolu reprezentującego jednostkę miary z przeznaczeniem do używania w dokumentach zewnętrznych w językach określonych odbiorców lub dostawców.</span><span class="sxs-lookup"><span data-stu-id="e8610-122">Use unit text to create a translation of the ID or a symbol representing the unit of measure for use on external documents in customer- or vendor-specific languages.</span></span>  
-3. <span data-ttu-id="e8610-123">W polu Język wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="e8610-123">In the Language field, enter or select a value.</span></span>
-4. <span data-ttu-id="e8610-124">W polu Tekst wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="e8610-124">In the Text field, type a value.</span></span>
-5. <span data-ttu-id="e8610-125">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="e8610-125">Click Save.</span></span>
-6. <span data-ttu-id="e8610-126">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="e8610-126">Close the page.</span></span>
-7. <span data-ttu-id="e8610-127">Kliknij opcję Przetłumaczone opisy jednostki.</span><span class="sxs-lookup"><span data-stu-id="e8610-127">Click Translated unit descriptions.</span></span>
-8. <span data-ttu-id="e8610-128">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="e8610-128">Click New.</span></span>
-    * <span data-ttu-id="e8610-129">Utwórz opisy jednostki miary w różnych językach.</span><span class="sxs-lookup"><span data-stu-id="e8610-129">Define language-specific descriptions for the unit of measure.</span></span>  
-9. <span data-ttu-id="e8610-130">W polu Język wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="e8610-130">In the Language field, enter or select a value.</span></span>
-10. <span data-ttu-id="e8610-131">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="e8610-131">In the Description field, type a value.</span></span>
-11. <span data-ttu-id="e8610-132">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="e8610-132">Click Save.</span></span>
-12. <span data-ttu-id="e8610-133">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="e8610-133">Close the page.</span></span>
+## <a name="define-unit-translations"></a><span data-ttu-id="28826-119">Definiowanie tłumaczeń jednostek</span><span class="sxs-lookup"><span data-stu-id="28826-119">Define unit translations</span></span>
+1. <span data-ttu-id="28826-120">W **okienku akcji** kliknij pozycję **Teksty jednostek**.</span><span class="sxs-lookup"><span data-stu-id="28826-120">On the **Action pane**, click **Unit texts**.</span></span>
+2. <span data-ttu-id="28826-121">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="28826-121">Click **New**.</span></span> <span data-ttu-id="28826-122">Użyj opisu jednostki w celu utworzenia tłumaczenie identyfikatora lub symbolu reprezentującego jednostkę miary z przeznaczeniem do używania w dokumentach zewnętrznych w językach określonych odbiorców lub dostawców.</span><span class="sxs-lookup"><span data-stu-id="28826-122">Use unit text to create a translation of the ID or a symbol representing the unit of measure for use on external documents in customer- or vendor-specific languages.</span></span>  
+3. <span data-ttu-id="28826-123">W polu **Język** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="28826-123">In the **Language** field, enter or select a value.</span></span>
+4. <span data-ttu-id="28826-124">W polu **Tekst** wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="28826-124">In the **Text** field, type a value.</span></span>
+5. <span data-ttu-id="28826-125">Kliknij przycisk **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="28826-125">Click **Save**.</span></span>
+6. <span data-ttu-id="28826-126">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="28826-126">Close the page.</span></span>
+7. <span data-ttu-id="28826-127">W **okienku akcji** kliknij pozycję **Przetłumaczone opisy jednostki**.</span><span class="sxs-lookup"><span data-stu-id="28826-127">On the **Action pane**, click **Translated unit descriptions**.</span></span>
+8. <span data-ttu-id="28826-128">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="28826-128">Click **New**.</span></span> <span data-ttu-id="28826-129">Utwórz opisy jednostki miary w różnych językach.</span><span class="sxs-lookup"><span data-stu-id="28826-129">Define language-specific descriptions for the unit of measure.</span></span>  
+9. <span data-ttu-id="28826-130">W polu **Język** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="28826-130">In the **Language** field, enter or select a value.</span></span>
+10. <span data-ttu-id="28826-131">W polu **Opis** wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="28826-131">In the **Description** field, type a value.</span></span>
+11. <span data-ttu-id="28826-132">Kliknij przycisk **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="28826-132">Click **Save**.</span></span>
+12. <span data-ttu-id="28826-133">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="28826-133">Close the page.</span></span>
 
-## <a name="define-unit-conversion-rules"></a><span data-ttu-id="e8610-134">Definiowanie reguł konwersji jednostek</span><span class="sxs-lookup"><span data-stu-id="e8610-134">Define unit conversion rules</span></span>
-1. <span data-ttu-id="e8610-135">Kliknij opcję Konwersje jednostek.</span><span class="sxs-lookup"><span data-stu-id="e8610-135">Click Unit conversions.</span></span>
-    * <span data-ttu-id="e8610-136">Zdefiniuj reguły konwersji jednostki miary na i z innych jednostek miary w wybranej klasie jednostek.</span><span class="sxs-lookup"><span data-stu-id="e8610-136">Define rules for converting the unit of measure to and from other units of measure in the selected unit class.</span></span>  
-2. <span data-ttu-id="e8610-137">Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="e8610-137">Click New to open the drop dialog.</span></span>
-3. <span data-ttu-id="e8610-138">W polu Współczynnik wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="e8610-138">In the Factor field, enter a number.</span></span>
-    * <span data-ttu-id="e8610-139">Wskaźnik konwersji między jednostkami źródłową i docelową.</span><span class="sxs-lookup"><span data-stu-id="e8610-139">Conversion factor between the From unit and the To unit.</span></span> <span data-ttu-id="e8610-140">Na przykład współczynnik konwersji centymetra na metr wynosi 100, ponieważ w jednym metrze jest 100 centymetrów.</span><span class="sxs-lookup"><span data-stu-id="e8610-140">For example, the conversion factor from centimeter to meter is 100 because there are 100 centimeters in one meter.</span></span>  
-4. <span data-ttu-id="e8610-141">W polu Do jednostki wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="e8610-141">In the To unit field, enter or select a value.</span></span>
-5. <span data-ttu-id="e8610-142">W polu Zaokrąglanie wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="e8610-142">In the Rounding field, select an option.</span></span>
-    * <span data-ttu-id="e8610-143">Określ sposób zaokrąglania skonwertowanej wartości.</span><span class="sxs-lookup"><span data-stu-id="e8610-143">Define how the converted value should be rounded.</span></span>  
-6. <span data-ttu-id="e8610-144">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="e8610-144">Click OK.</span></span>
-7. <span data-ttu-id="e8610-145">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="e8610-145">Close the page.</span></span>
+## <a name="define-unit-conversion-rules"></a><span data-ttu-id="28826-134">Definiowanie reguł konwersji jednostek</span><span class="sxs-lookup"><span data-stu-id="28826-134">Define unit conversion rules</span></span>
+1. <span data-ttu-id="28826-135">W **okienku akcji** kliknij pozycję **Konwersje jednostek**.</span><span class="sxs-lookup"><span data-stu-id="28826-135">On the **Action pane**, click **Unit conversions**.</span></span> <span data-ttu-id="28826-136">Zdefiniuj reguły konwersji jednostki miary na i z innych jednostek miary w wybranej klasie jednostek.</span><span class="sxs-lookup"><span data-stu-id="28826-136">Define rules for converting the unit of measure to and from other units of measure in the selected unit class.</span></span>  
+2. <span data-ttu-id="28826-137">Kliknij przycisk **Nowy** aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="28826-137">Click **New** to open the drop dialog.</span></span>
+3. <span data-ttu-id="28826-138">W polu **Współczynnik** wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="28826-138">In the **Factor** field, enter a number.</span></span> <span data-ttu-id="28826-139">Wskaźnik konwersji między jednostkami źródłową i docelową.</span><span class="sxs-lookup"><span data-stu-id="28826-139">Conversion factor between the From unit and the To unit.</span></span> <span data-ttu-id="28826-140">Na przykład współczynnik konwersji centymetra na metr wynosi 100, ponieważ w jednym metrze jest 100 centymetrów.</span><span class="sxs-lookup"><span data-stu-id="28826-140">For example, the conversion factor from centimeter to meter is 100 because there are 100 centimeters in one meter.</span></span>  
+4. <span data-ttu-id="28826-141">W polu **Do jednostki** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="28826-141">In the **To unit** field, enter or select a value.</span></span>
+5. <span data-ttu-id="28826-142">W polu **Zaokrąglanie** wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="28826-142">In the **Rounding** field, select an option.</span></span> <span data-ttu-id="28826-143">Określ sposób zaokrąglania skonwertowanej wartości.</span><span class="sxs-lookup"><span data-stu-id="28826-143">Define how the converted value should be rounded.</span></span>  
+6. <span data-ttu-id="28826-144">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="28826-144">Click **OK**.</span></span>
+7. <span data-ttu-id="28826-145">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="28826-145">Close the page.</span></span>
 

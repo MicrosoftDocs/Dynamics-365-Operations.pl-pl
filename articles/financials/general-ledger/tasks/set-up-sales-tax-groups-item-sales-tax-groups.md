@@ -10,43 +10,43 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxGroup,  TaxItemGroup
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec5bbe37aa06f18172c417e903538cadc8a6f312
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0c58755be2c927de1d308576a2bff2ed3340db34
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559418"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846278"
 ---
-# <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="6a512-103">Konfigurowanie grup podatków i grup podatków dla towarów</span><span class="sxs-lookup"><span data-stu-id="6a512-103">Set up sales tax groups and item sales tax groups</span></span>
+# <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="3b073-103">Konfigurowanie grup podatków i grup podatków dla towarów</span><span class="sxs-lookup"><span data-stu-id="3b073-103">Set up sales tax groups and item sales tax groups</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="6a512-104">W tym nagraniu zadania przejdziesz przez proces konfigurowania grup podatków i podatków dla towarów.</span><span class="sxs-lookup"><span data-stu-id="6a512-104">This task recording walks you through the setup of Sales tax and Item sales tax groups.</span></span> <span data-ttu-id="6a512-105">Grupy podatków są grupami kodów podatków dołączonymi do odbiorców i dostawców.</span><span class="sxs-lookup"><span data-stu-id="6a512-105">Sales tax groups are groups of sales tax codes that are attached to customers and vendors.</span></span> <span data-ttu-id="6a512-106">Są one także dołączane do kont księgowych dla transakcji, które nie zostały zaksięgowane do określonego dostawcy lub odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="6a512-106">They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer.</span></span>  <span data-ttu-id="6a512-107">Grupy podatków dla towarów są grupami kodów podatków dołączonymi do zasobów takich jak produkty.</span><span class="sxs-lookup"><span data-stu-id="6a512-107">Item sales tax groups are groups of sales tax codes that are attached to resources like products.</span></span>  <span data-ttu-id="6a512-108">Podatki mające zastosowanie do konkretnej transakcji są określane na podstawie kodów podatków, które są zawarte zarówno w grupie podatków, jak i grupie podatków dla towaru związanej z transakcją.</span><span class="sxs-lookup"><span data-stu-id="6a512-108">The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction.</span></span>  <span data-ttu-id="6a512-109">Podatek można obliczyć tylko wtedy, gdy grupa podatków i grupa podatków dla towaru są wybrane dla każdej transakcji, w przypadku której istnieje konieczność obliczenia lub zarejestrowania podatku.</span><span class="sxs-lookup"><span data-stu-id="6a512-109">Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.</span></span>  
+<span data-ttu-id="3b073-104">W tym nagraniu zadania przejdziesz przez proces konfigurowania grup podatków i podatków dla towarów.</span><span class="sxs-lookup"><span data-stu-id="3b073-104">This task recording walks you through the setup of Sales tax and Item sales tax groups.</span></span> <span data-ttu-id="3b073-105">Grupy podatków są grupami kodów podatków dołączonymi do odbiorców i dostawców.</span><span class="sxs-lookup"><span data-stu-id="3b073-105">Sales tax groups are groups of sales tax codes that are attached to customers and vendors.</span></span> <span data-ttu-id="3b073-106">Są one także dołączane do kont księgowych dla transakcji, które nie zostały zaksięgowane do określonego dostawcy lub odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="3b073-106">They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer.</span></span>  <span data-ttu-id="3b073-107">Grupy podatków dla towarów są grupami kodów podatków dołączonymi do zasobów takich jak produkty.</span><span class="sxs-lookup"><span data-stu-id="3b073-107">Item sales tax groups are groups of sales tax codes that are attached to resources like products.</span></span>  <span data-ttu-id="3b073-108">Podatki mające zastosowanie do konkretnej transakcji są określane na podstawie kodów podatków, które są zawarte zarówno w grupie podatków, jak i grupie podatków dla towaru związanej z transakcją.</span><span class="sxs-lookup"><span data-stu-id="3b073-108">The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction.</span></span>  <span data-ttu-id="3b073-109">Podatek można obliczyć tylko wtedy, gdy grupa podatków i grupa podatków dla towaru są wybrane dla każdej transakcji, w przypadku której istnieje konieczność obliczenia lub zarejestrowania podatku.</span><span class="sxs-lookup"><span data-stu-id="3b073-109">Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.</span></span>  
 
-1. <span data-ttu-id="6a512-110">Wybierz kolejno opcje Podatek > Podatki pośrednie > Podatek > Grupy podatków.</span><span class="sxs-lookup"><span data-stu-id="6a512-110">Go to Tax > Indirect taxes > Sales tax > Sales tax groups.</span></span>
-2. <span data-ttu-id="6a512-111">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="6a512-111">Click New.</span></span>
-3. <span data-ttu-id="6a512-112">W polu Grupa podatków wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6a512-112">In the Sales tax group field, type a value.</span></span>
-4. <span data-ttu-id="6a512-113">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="6a512-113">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="6a512-114">Przełącz rozwinięcie sekcji Ustawienia.</span><span class="sxs-lookup"><span data-stu-id="6a512-114">Toggle the expansion of the Setup section.</span></span>
-6. <span data-ttu-id="6a512-115">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="6a512-115">Click Add.</span></span>
-7. <span data-ttu-id="6a512-116">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="6a512-116">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="6a512-117">W polu Kod podatku kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="6a512-117">In the Sales tax code field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="6a512-118">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="6a512-118">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="6a512-119">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6a512-119">Click Save.</span></span>
-11. <span data-ttu-id="6a512-120">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="6a512-120">Close the page.</span></span>
-12. <span data-ttu-id="6a512-121">Wybierz kolejno opcje Podatek > Podatki pośrednie > Podatek > Grupy podatków dla towaru.</span><span class="sxs-lookup"><span data-stu-id="6a512-121">Go to Tax > Indirect taxes > Sales tax > Item sales tax groups.</span></span>
-13. <span data-ttu-id="6a512-122">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="6a512-122">Click New.</span></span>
-14. <span data-ttu-id="6a512-123">W polu Grupa podatków dla towaru wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6a512-123">In the Item sales tax group field, type a value.</span></span>
-15. <span data-ttu-id="6a512-124">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="6a512-124">In the Description field, type a value.</span></span>
-16. <span data-ttu-id="6a512-125">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="6a512-125">Click Add.</span></span>
-17. <span data-ttu-id="6a512-126">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="6a512-126">In the list, mark the selected row.</span></span>
-18. <span data-ttu-id="6a512-127">W polu Kod podatku kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="6a512-127">In the Sales tax code field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="6a512-128">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="6a512-128">In the list, click the link in the selected row.</span></span>
-20. <span data-ttu-id="6a512-129">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6a512-129">Click Save.</span></span>
+1. <span data-ttu-id="3b073-110">Wybierz kolejno opcje Podatek > Podatki pośrednie > Podatek > Grupy podatków.</span><span class="sxs-lookup"><span data-stu-id="3b073-110">Go to Tax > Indirect taxes > Sales tax > Sales tax groups.</span></span>
+2. <span data-ttu-id="3b073-111">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="3b073-111">Click New.</span></span>
+3. <span data-ttu-id="3b073-112">W polu Grupa podatków wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="3b073-112">In the Sales tax group field, type a value.</span></span>
+4. <span data-ttu-id="3b073-113">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="3b073-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="3b073-114">Przełącz rozwinięcie sekcji Ustawienia.</span><span class="sxs-lookup"><span data-stu-id="3b073-114">Toggle the expansion of the Setup section.</span></span>
+6. <span data-ttu-id="3b073-115">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="3b073-115">Click Add.</span></span>
+7. <span data-ttu-id="3b073-116">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="3b073-116">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="3b073-117">W polu Kod podatku kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="3b073-117">In the Sales tax code field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="3b073-118">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="3b073-118">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="3b073-119">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="3b073-119">Click Save.</span></span>
+11. <span data-ttu-id="3b073-120">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="3b073-120">Close the page.</span></span>
+12. <span data-ttu-id="3b073-121">Wybierz kolejno opcje Podatek > Podatki pośrednie > Podatek > Grupy podatków dla towaru.</span><span class="sxs-lookup"><span data-stu-id="3b073-121">Go to Tax > Indirect taxes > Sales tax > Item sales tax groups.</span></span>
+13. <span data-ttu-id="3b073-122">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="3b073-122">Click New.</span></span>
+14. <span data-ttu-id="3b073-123">W polu Grupa podatków dla towaru wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="3b073-123">In the Item sales tax group field, type a value.</span></span>
+15. <span data-ttu-id="3b073-124">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="3b073-124">In the Description field, type a value.</span></span>
+16. <span data-ttu-id="3b073-125">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="3b073-125">Click Add.</span></span>
+17. <span data-ttu-id="3b073-126">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="3b073-126">In the list, mark the selected row.</span></span>
+18. <span data-ttu-id="3b073-127">W polu Kod podatku kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="3b073-127">In the Sales tax code field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="3b073-128">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="3b073-128">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="3b073-129">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="3b073-129">Click Save.</span></span>
 

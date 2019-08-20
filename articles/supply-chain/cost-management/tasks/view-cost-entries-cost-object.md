@@ -10,32 +10,32 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, EcoResProductDetailsExtended, InventCostOnhandItem, InventValueTrans
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9c67ac7dd06219b9521e4832b18204bcf8662a81
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ec5a156fc04f1381a9c45756801d7855d7db69da
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563165"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836487"
 ---
-# <a name="view-cost-entries-for-a-cost-object"></a><span data-ttu-id="965a8-103">Wyświetlanie wpisów kosztów obiektów kosztów</span><span class="sxs-lookup"><span data-stu-id="965a8-103">View cost entries for a cost object</span></span>
+# <a name="view-cost-entries-for-a-cost-object"></a><span data-ttu-id="77638-103">Wyświetlanie wpisów kosztów obiektów kosztów</span><span class="sxs-lookup"><span data-stu-id="77638-103">View cost entries for a cost object</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="965a8-104">W tej procedurze pokazano sposób wyświetlania wpisów kosztu dla obiektu kosztów.</span><span class="sxs-lookup"><span data-stu-id="965a8-104">This procedure shows how to view cost entries for a cost object.</span></span> <span data-ttu-id="965a8-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="965a8-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="965a8-106">Ta procedura jest przeznaczona dla kontrolera kosztów.</span><span class="sxs-lookup"><span data-stu-id="965a8-106">This procedure is intended for the cost controller.</span></span>
+<span data-ttu-id="77638-104">W tej procedurze pokazano sposób wyświetlania wpisów kosztu dla obiektu kosztów.</span><span class="sxs-lookup"><span data-stu-id="77638-104">This procedure shows how to view cost entries for a cost object.</span></span> <span data-ttu-id="77638-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="77638-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="77638-106">Ta procedura jest przeznaczona dla kontrolera kosztów.</span><span class="sxs-lookup"><span data-stu-id="77638-106">This procedure is intended for the cost controller.</span></span>
 
-1. <span data-ttu-id="965a8-107">Kliknij przycisk Administrowanie kosztami.</span><span class="sxs-lookup"><span data-stu-id="965a8-107">Click Cost administration.</span></span>
-2. <span data-ttu-id="965a8-108">Kliknij opcję Zwolnione produkty.</span><span class="sxs-lookup"><span data-stu-id="965a8-108">Click Released products.</span></span>
-3. <span data-ttu-id="965a8-109">Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy.</span><span class="sxs-lookup"><span data-stu-id="965a8-109">Use the Quick Filter to find records.</span></span> <span data-ttu-id="965a8-110">Na przykład wyfiltruj według pola Numer towaru z wartością „m0004”.</span><span class="sxs-lookup"><span data-stu-id="965a8-110">For example, filter on the Item number field with a value of 'm0004'.</span></span>
-4. <span data-ttu-id="965a8-111">W okienku akcji kliknij pozycję Zarządzanie kosztami.</span><span class="sxs-lookup"><span data-stu-id="965a8-111">On the Action Pane, click Manage costs.</span></span>
-5. <span data-ttu-id="965a8-112">Kliknij opcję Obiekty kosztów.</span><span class="sxs-lookup"><span data-stu-id="965a8-112">Click Cost objects.</span></span>
-6. <span data-ttu-id="965a8-113">Kliknij opcję Wpisy kosztów.</span><span class="sxs-lookup"><span data-stu-id="965a8-113">Click Cost entries.</span></span>
-7. <span data-ttu-id="965a8-114">Użyj szybkiego filtru, aby wyfiltrować pole Numer według wartości „p000031”.</span><span class="sxs-lookup"><span data-stu-id="965a8-114">Use the Quick Filter to filter on the Number field with a value of 'p000031'.</span></span>
-    * <span data-ttu-id="965a8-115">Jeśli wpisy kosztów są puste, ustaw pole Od dnia na 31 stycznia 2012 r, a pole Do dnia na 31 grudnia 2012 r.</span><span class="sxs-lookup"><span data-stu-id="965a8-115">If cost entries are blank, set From date to January 31, 2012 and To date to December 31, 2012.</span></span>  
+1. <span data-ttu-id="77638-107">Kliknij przycisk Administrowanie kosztami.</span><span class="sxs-lookup"><span data-stu-id="77638-107">Click Cost administration.</span></span>
+2. <span data-ttu-id="77638-108">Kliknij opcję Zwolnione produkty.</span><span class="sxs-lookup"><span data-stu-id="77638-108">Click Released products.</span></span>
+3. <span data-ttu-id="77638-109">Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy.</span><span class="sxs-lookup"><span data-stu-id="77638-109">Use the Quick Filter to find records.</span></span> <span data-ttu-id="77638-110">Na przykład wyfiltruj według pola Numer towaru z wartością „m0004”.</span><span class="sxs-lookup"><span data-stu-id="77638-110">For example, filter on the Item number field with a value of 'm0004'.</span></span>
+4. <span data-ttu-id="77638-111">W okienku akcji kliknij pozycję Zarządzanie kosztami.</span><span class="sxs-lookup"><span data-stu-id="77638-111">On the Action Pane, click Manage costs.</span></span>
+5. <span data-ttu-id="77638-112">Kliknij opcję Obiekty kosztów.</span><span class="sxs-lookup"><span data-stu-id="77638-112">Click Cost objects.</span></span>
+6. <span data-ttu-id="77638-113">Kliknij opcję Wpisy kosztów.</span><span class="sxs-lookup"><span data-stu-id="77638-113">Click Cost entries.</span></span>
+7. <span data-ttu-id="77638-114">Użyj szybkiego filtru, aby wyfiltrować pole Numer według wartości „p000031”.</span><span class="sxs-lookup"><span data-stu-id="77638-114">Use the Quick Filter to filter on the Number field with a value of 'p000031'.</span></span>
+    * <span data-ttu-id="77638-115">Jeśli wpisy kosztów są puste, ustaw pole Od dnia na 31 stycznia 2012 r, a pole Do dnia na 31 grudnia 2012 r.</span><span class="sxs-lookup"><span data-stu-id="77638-115">If cost entries are blank, set From date to January 31, 2012 and To date to December 31, 2012.</span></span>  
 
