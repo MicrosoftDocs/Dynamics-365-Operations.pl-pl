@@ -1,49 +1,46 @@
 ---
 title: Proponowanie nabycia środka trwałego
-description: W tej procedurze pokazano sposób nabywania środka trwałego przy użyciu propozycji nabycia zdefiniowanej w arkuszu środków trwałych.
+description: W tym temacie pokazano sposób nabywania środka trwałego przy użyciu propozycji nabycia zdefiniowanej w arkuszu środków trwałych.
 author: saraschi2
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1891206bb266b126eccfa789b8c8062c9bfa688b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4b35b13dc266fd5bccde437526400832d394b9aa
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570887"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1839912"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Proponowanie nabycia środka trwałego
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób nabywania środka trwałego przy użyciu propozycji nabycia zdefiniowanej w arkuszu środków trwałych. Procedura korzysta z roli księgowego i danych firmy demonstracyjnej USMF.
+W tym temacie pokazano sposób nabywania środka trwałego przy użyciu propozycji nabycia zdefiniowanej w arkuszu środków trwałych. Procedura korzysta z roli księgowego i danych firmy demonstracyjnej USMF.
 
-1. Wybierz kolejno opcje Środki trwałe > Wpisy w arkuszu > Arkusz środków trwałych.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa wprowadź lub wybierz wartość.
-4. Kliknij przycisk Wiersze.
-5. Kliknij opcję Propozycje.
-6. Kliknij opcję Propozycja nabycia.
-7. Kliknij przycisk Filtr.
-8. Kliknij przycisk Resetuj, aby wyczyścić poprzednie wartości.
-9. Zaznacz wiersz Numer środka trwałego.
-10. W polu Kryteria wprowadź lub wybierz wartość.
-    * Skonfiguruj pozostałe kryteria środków trwałych, które chcesz nabyć za pomocą tej propozycji.  
-11. Kliknij przycisk OK.
-12. Kliknij przycisk OK.
-    * Sprawdź utworzone wiersze transakcji.  
-    * W propozycji nabycia zostaną uwzględnione tylko środki trwałe, które w księdze mają ustawioną datę nabycia i cenę nabycia.  
-13. Kliknij kartę Księgi.
-14. Kliknij przycisk Księguj.
+1. W okienku nawigacji przejdź do **Moduły > Środki trwałe > Wpisy w arkuszu > Arkusz środków trwałych**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Nazwa** wprowadź lub wybierz wartość.
+4. W okienku akcji wybierz **Wiersze**.
+5. Wybierz **Propozycje**.
+6. Wybierz **Propozycja nabycia**.
+7. Wybierz **Filtry**. Wybierz **Resetuj**, aby wyczyścić poprzednie wartości.
+8. Zaznacz wiersz **Numer środka trwałego**.
+9. W polu **Kryteria** wprowadź lub wybierz wartość. Skonfiguruj pozostałe kryteria środków trwałych, które chcesz nabyć za pomocą tej propozycji.  
+10. Wybierz dwa razy **OK**, aby wyjść z okienka.
+- Sprawdź utworzone wiersze transakcji.  
+- W propozycji nabycia zostaną uwzględnione tylko środki trwałe, które w księdze mają ustawioną datę nabycia i cenę nabycia.  
+11. Na stronie wybierz kartę **Księgi**.
+12. Wybierz opcję **Zaksięguj**.
 

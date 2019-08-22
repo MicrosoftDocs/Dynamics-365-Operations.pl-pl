@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557738"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863707"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generowanie skonsolidowanych sprawozdań finansowych
 
@@ -49,11 +49,11 @@ Jak pokazuje skonsolidowany raport na poniższej ilustracji, używając drzewa r
 
 Można również utworzyć wielopoziomowe drzewo raportowania, które zawiera dowolną potrzebną liczbę poziomów. Na poniższej ilustracji przedstawiono definicję wielopoziomowego drzewa raportowania akumulowanego według regionów świata.
 
-![Definicja wielopoziomowego drzewa raportowania akumulowanego według regionów](./media/multilevel-reporting-tree-definition-roll-ups%20-worldwide-region.png "Definicja wielopoziomowego drzewa raportowania akumulowanego według regionów")
+![Definicja wielopoziomowego drzewa raportowania akumulowanego według regionów](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Definicja wielopoziomowego drzewa raportowania akumulowanego według regionów")
 
 Na poniższej ilustracji przedstawiono definicję wielopoziomowego drzewa raportowania akumulowanego według funkcji.
 
-![Definicja wielopoziomowego drzewa raportowania akumulowanego według funkcji](./media/multilevel-reporting-tree-definition-roll-ups%20-by-function.png "Definicja wielopoziomowego drzewa raportowania akumulowanego według funkcji")
+![Definicja wielopoziomowego drzewa raportowania akumulowanego według funkcji](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Definicja wielopoziomowego drzewa raportowania akumulowanego według funkcji")
 
 ### <a name="viewing-companies-side-by-side"></a>Wyświetlanie firm obok siebie
 Wielu klientów preferuje raporty, w których firmy są wyświetlane obok siebie, a kolumna pokazuje skonsolidowaną sumę. Ten format jest łatwy do osiągnięcia po utworzeniu drzewa raportowania. Poniżej przedstawiono ogólne czynności, jakie należy wykonać w celu wyświetlenia firm obok siebie w skonsolidowanych sprawozdaniach finansowych.
@@ -98,7 +98,7 @@ W definicji drzewa raportowania wprowadź procent własności w kolumnie **Zesta
 > [!NOTE]
 > Ten procent własności można zastosować do dowolnej jednostki raportowania, nie tylko do poziomu firmy. 
 
-![Używanie wartości procentowej w definicji drzewa raportowania](./media/Using-reporting%20tree-definition-percentage.png "Używanie wartości procentowej w definicji drzewa raportowania")
+![Używanie wartości procentowej w definicji drzewa raportowania](./media/Using-reporting-tree-definition-percentage.png "Używanie wartości procentowej w definicji drzewa raportowania")
 
 Podczas generowania raportu raport o firmie Contoso Niemcy będzie pokazywał 100-procentowy udział w kwocie sprzedaży, a 80 procent kwoty zostanie przydzielone i akumulowane na skonsolidowanym poziomie sprzedaży.
 

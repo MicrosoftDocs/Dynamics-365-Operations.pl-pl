@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 263894
 ms.assetid: 7d375d8a-b2de-4bec-b575-93d1d4521b79
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0442e795eadf28a07132c160d69ad44e9fb05eed
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1b1a0c8f756601dc342ab44364ea362cf2698f3c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553284"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849744"
 ---
 # <a name="employee-competencies-and-development-power-bi-content"></a>Pakiet zawartości Kompetencje i rozwój pracownika etatowego dla usługi Power BI
 
@@ -31,7 +31,7 @@ ms.locfileid: "1553284"
 W tym temacie opisano pakiet zawartości Finance and Operations — Kompetencje i rozwój pracownika etatowego dla usługi Power BI. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Raporty dostępne w pakiecie zawartości
-Gdy utworzysz połączenie między pakietem zawartości a danymi programu Finance and Operations, w raportach są wyświetlone dane organizacji. Jeśli to Twoja pierwsza styczność z narzędziem Microsoft Power BI, możesz się o nim dowiedzieć więcej na stronie [Przewodnika z instruktażem po narzędziu Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporty dostępne w pakiecie zawartości mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
+Gdy utworzysz połączenie między pakietem zawartości a danymi programu Finance and Operations, w raportach są wyświetlone dane organizacji. Jeśli to Twoja pierwsza styczność z narzędziem Microsoft Power BI, możesz się o nim dowiedzieć więcej na stronie [Przewodnika z instruktażem po narzędziu Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). Raporty dostępne w pakiecie zawartości mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
 
 | Raport                            | Zawartość                                               |
 |-----------------------------------|--------------------------------------------------------|
@@ -39,7 +39,7 @@ Gdy utworzysz połączenie między pakietem zawartości a danymi programu Financ
 | Profil kwalifikacji                     | Profil kwalifikacji wybranego pracownika etatowego                |
 | Analiza kwalifikacji                    | Umiejętności według typu i kategorii                              |
 
-Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 Dane programu Finance and Operations są używane do wypełniania raportów w pakiecie zawartości Kompetencje i rozwój pracownika etatowego. W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet.

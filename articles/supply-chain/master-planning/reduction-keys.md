@@ -3,7 +3,7 @@ title: Klucze redukcji prognozy
 description: Ten temat zawiera przykłady pokazujące konfigurowanie klucza redukcji. Zawiera informacje o różnych ustawieniach kluczy redukcji i wynikach ich zastosowania. Za pomocą klucza redukcji można określić sposób zmniejszania prognozowanych zapotrzebowań.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 02/28/2019
+ms.date: 07/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b915570145a48db7a182b9fce34e1544e3600107
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5efa5b2c7a4c45bbf6e940170000b391384fe7ff
+ms.sourcegitcommit: add48ece3864645a89a28327c4add607714befb5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1504086"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "1736311"
 ---
 # <a name="method-used-to-reduce-forecast-requirements"></a>Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań
 
@@ -138,14 +138,14 @@ Na przykład wprowadzono następującą prognozę sprzedaży w planie głównym.
 | Data       | Prognoza popytu |
 |------------|-----------------|
 | 1 stycznia  | 1 000           |
-| 1 lutego | 500             |
+| 1 lutego | 1 000             |
 
 Można również utworzyć następujące zamówienia sprzedaży.
 
 | Data        | Ilość dla zamówienia sprzedaży |
 |-------------|----------------------|
-| 15 stycznia  | 500                  |
-| 15 lutego | 100                  |
+| 15 stycznia  | 200                  |
+| 15 lutego | 400                  |
 
 W takim wypadku są tworzone następujące zamówienia planowane.
 

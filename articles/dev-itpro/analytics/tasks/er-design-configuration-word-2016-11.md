@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fd138fb5fea4098a862fbecba5e8ec226ed6afa9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551526"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850310"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Projektowanie konfiguracji raportowania elektronicznego w celu generowania raportów w formacie programu Word
 
@@ -64,7 +64,7 @@ Procedura dotyczy funkcji dodanej w programie Microsoft Dynamics 365 for Operati
     * Oprócz zapisania zmian w konfiguracji akcja Zapisz aktualizuje także dołączony szablon programu Word. Struktura zaprojektowanego formatu jest przenoszona do dołączonego dokumentu programu Word jako nowy niestandardowa część w postaci kodu źródłowego XML o nazwie „Raport”. Należy zauważyć, że dołączony szablon programu Word zawiera nie tylko układ dokumentu, który chcemy wygenerować jako dane wyjściowe modułu ER, ale również strukturę danych, które moduł raportowania elektronicznego umieści w tym szablonie podczas wykonywania.  
 2. Kliknij opcję Załączniki.
     * Teraz należy powiązać elementy niestandardowego fragmentu XML „Raport” z częściami będącymi dokumentem programu Word.  
-    * Jeśli masz wystarczającą wiedzę o dokumentach programu Word, które można projektować jako formularze zawierające formanty treści powiązane z elementami niestandardowych części XML, odtwórz kroki następnego podzadania, aby utworzyć taki dokument. Aby uzyskać bardziej szczegółowe informacje, zobacz łącze https://support.office.com/en-us/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. W przeciwnym razie pomiń wszystkie kroki następnego podzadania.  
+    * Jeśli masz wystarczającą wiedzę o dokumentach programu Word, które można projektować jako formularze zawierające formanty treści powiązane z elementami niestandardowych części XML, odtwórz kroki następnego podzadania, aby utworzyć taki dokument. Aby uzyskać bardziej szczegółowe informacje, zobacz łącze https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. W przeciwnym razie pomiń wszystkie kroki następnego podzadania.  
 
 ## <a name="get-word-with-custom-xml-part-to-do-data-bindings"></a>Pobranie dokumentu programu Word z niestandardową częścią XML w celu utworzenia powiązań danych
     * Otwórz ten dokument w programie Word i wykonaj następujące czynności:  - Otwórz kartę Deweloper programu Word (jeśli nie jest jeszcze włączona, dostosuj odpowiednio wstążkę).  - Kliknij okienko Mapowanie XML.  - Na liście odnośników zaznacz niestandardowa część XML „Raport”.  - Zamapuj elementy wybranej niestandardowej części XML i formanty zawartości dokumentu programu Word.  - Zapisz zaktualizowany dokument programu Word na dysku lokalnym.  

@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PlCustPackageHolder, PlCustPackageReturn, PlInventPackageTable, PlInventPackageTrans
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 273043
 ms.assetid: decdb3af-9fc3-4aff-add1-bbb9d2eadc27
@@ -18,12 +18,12 @@ ms.search.region: Poland
 ms.author: ilyako
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 38cc3f161f3831a17b79e8790287f95041615cf3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55150454d721fde0d13eb2dee503bbdc05eea52a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560416"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852436"
 ---
 # <a name="returnable-packaging-for-poland"></a>Opakowania zwrotne dla Polski
 [!include [banner](../includes/banner.md)]

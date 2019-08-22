@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: be23b99ddc224328cf067fe0bf36be93fcef4337
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561469"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846047"
 ---
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Synchronizowanie umów na projekty i projektów bezpośrednio z programu Project Service Automation do programu Finance and Operations
 
@@ -94,8 +94,8 @@ Gdy używane są rozwiązania integracji aplikacji Project Service Automation do
 ## <a name="prerequisites-and-mapping-setup"></a>Wymagania wstępne i ustawienia mapowania
 
 - Zanim będzie możliwa synchronizacja umów na projekty i projektów, należy zsynchronizować konta.
-- W zestawie połączeń dodaj mapowanie pola klucza integracji **msdyn\_organizationalunits** do elementu **msdyn\_name \[nazwa\]**. Najpierw trzeba będzie dodać projekt do zestawu połączenia. Aby uzyskać więcej informacji, zobacz [Integrowanie danych na platformie Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
-- W zestawie połączeń dodaj mapowanie pola klucza integracji z **msdyn\_projects** do elementu **msdynce\_projectnumber \[numer projektu\]**. Najpierw trzeba będzie dodać projekt do zestawu połączenia. Aby uzyskać więcej informacji, zobacz [Integrowanie danych na platformie Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+- W zestawie połączeń dodaj mapowanie pola klucza integracji **msdyn\_organizationalunits** do elementu **msdyn\_name \[nazwa\]**. Najpierw trzeba będzie dodać projekt do zestawu połączenia. Aby uzyskać więcej informacji, zobacz [Integrowanie danych na platformie Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+- W zestawie połączeń dodaj mapowanie pola klucza integracji z **msdyn\_projects** do elementu **msdynce\_projectnumber \[numer projektu\]**. Najpierw trzeba będzie dodać projekt do zestawu połączenia. Aby uzyskać więcej informacji, zobacz [Integrowanie danych na platformie Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 - Pole **SourceDataID** umów na projekty i projektów można zaktualizować na inną wartość lub usunąć z mapowania. Domyślną wartością szablonu jest **Project Service Automation**.
 - Mapowanie **PaymentTerms** należy zaktualizować, tak aby odzwierciedlało prawidłowe warunki płatności w aplikacji Finance and Operations. Można również usunąć mapowanie z zadania projektu. Mapa wartości domyślnych zawiera wartości domyślne dla danych demonstracyjnych. W poniższej tabeli przedstawiono wartości w rozwiązaniu Project Service Automation.
 

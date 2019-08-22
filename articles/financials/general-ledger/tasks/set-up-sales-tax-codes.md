@@ -1,6 +1,6 @@
 ---
-title: Ustawianie kodów podatków
-description: Kody podatków tworzy się dla każdego podatku pośredniego lub cła, które firma musi naliczać, pobierać i wpłacać do urzędu skarbowego.
+title: Konfigurowanie kodów podatków
+description: W tym temacie wyjaśniono sposób konfigurowania kodów podatków w Dynamics 365 for Finance and Operations.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
@@ -10,46 +10,39 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f29442c2ef2e3d0008a74298fda218e4cbd93f8e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3419c6b569093d717158e80bd9bc01054d82bff9
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571590"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834837"
 ---
-# <a name="set-up-sales-tax-codes"></a>Ustawianie kodów podatków
+# <a name="set-up-sales-tax-codes"></a>Konfigurowanie kodów podatków
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Kody podatków tworzy się dla każdego podatku pośredniego lub cła, które firma musi naliczać, pobierać i wpłacać do urzędu skarbowego.
+W tym temacie wyjaśniono sposób konfigurowania kodów podatków w Dynamics 365 for Finance and Operations. Kody podatków tworzy się dla każdego podatku pośredniego lub cła, które firma musi naliczać, pobierać i wpłacać do urzędu skarbowego.
 
 W zadaniu wykorzystano firmę demonstracyjną USMF.
 
-
-
-1. Wybierz kolejno opcje Podatek > Podatki pośrednie > Podatek > Kody podatków.
-2. Kliknij przycisk Nowy.
-3. W polu Kod podatku wpisz wartość.
-4. W polu Nazwa wpisz wartość.
-5. Wybierz okres rozliczenia, aby określić, do którego urzędu skarbowego i w których interwałach ten podatek musi być zgłaszany i płacony.
-6. Na liście kliknij łącze w wybranym wierszu.
-7. Wybierz grupę księgowania, aby określić konta główne w Księdze głównej, na których będzie księgowany podatek.
-8. Na liście znajdź i zaznacz odpowiedni rekord.
-9. Na liście kliknij łącze w wybranym wierszu.
-10. Rozwiń skróconą kartę Obliczanie.
-    * Skrócona karta Obliczanie zawiera wiele pól, które kontrolują sposób obliczania kwot podatków.  
-11. W okienku akcji kliknij opcję Kod podatku.
-12. Kliknij opcję Wartości.
-13. Na liście oznacz wybrany wiersz.
-14. Wprowadź wartość tego kodu podatku.
-    * Jeśli na skróconej karcie Obliczanie w polu Podstawa opodatkowania wybrano opcję Kwota na jednostkę, w celu obliczenia kwoty podatku wartość będzie mnożona przez ilość w transakcji.  Jeśli kod podatku nie dotyczy podatku jednostkowego, w celu obliczenia kwoty podatku wartość jest procentem stosowanym do podstawy opodatkowania dla tego kodu podatku.     
-15. Kliknij przycisk Zapisz.
-16. Zamknij stronę.
-17. Kliknij przycisk Zapisz.
+1. Otwórz **Okienko nawigacji > Podatek > Podatki pośrednie > Podatek > Kody podatków**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Kod podatku** wpisz wartość.
+4. W polu **Nazwa** wpisz wartość.
+5. Wybierz **okres rozliczenia**, otwierając listę rozwijaną, aby określić, do którego urzędu skarbowego i w których interwałach ten podatek musi być zgłaszany i płacony.
+6. Wybierz **grupę księgowania**, aby określić konta główne w Księdze głównej, na których będzie księgowany podatek.
+7. Rozwiń skróconą kartę **Obliczanie**. Zawiera ona wiele pól, które kontrolują sposób obliczania kwot podatków. Odpowiednio wypełnij te pola.  
+8. W **okienku akcji** u góry interfejsu wybierz **Kod podatku**.
+9. Wybierz **Wartości**.
+10. Wprowadź wartość dla tego kodu podatków w kolumnie **Wartość**.
+    - Jeśli na skróconej karcie **Obliczanie** w polu Podstawa opodatkowania wybrano opcję Kwota na jednostkę, w celu obliczenia kwoty podatku wartość będzie mnożona przez ilość w transakcji.  Jeśli kod podatku nie dotyczy podatku jednostkowego, w celu obliczenia kwoty podatku wartość jest procentem stosowanym do podstawy opodatkowania dla tego kodu podatku.     
+11. Wybierz opcję **Zapisz**.
+12. Zamknij stronę.
+13. Wybierz opcję **Zapisz**.
 

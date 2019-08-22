@@ -1,33 +1,33 @@
 ---
 title: Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień
-description: W tej procedurze pokazano sposób wprowadzania odpowiedzi na ZO, oceniania i porównywania ofert, a następnie zawierania umowy z jednym z dostawców.
+description: W tym temacie pokazano sposób wprowadzania odpowiedzi na ZO, oceniania i porównywania ofert, a następnie zawierania umowy z jednym z dostawców.
 author: mkirknel
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 45ddab03810b331bcd8965f6a2ba699ffb138910
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: faef2a347886b0efe5066a5d5a9c9572070f1d07
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1533359"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1838029"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób wprowadzania odpowiedzi na ZO, oceniania i porównywania otrzymywanych ofert, a następnie zawierania umowy z jednym z dostawców, którzy złożyli oferty. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej **USMF**.
+W tym temacie pokazano sposób wprowadzania odpowiedzi na ZO, oceniania i porównywania ofert, a następnie zawierania umowy z jednym z dostawców. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej **USMF**.
 
 Przed rozpoczęciem trzeba mieć ZO z dwoma wierszami, które zostało wysłane co najmniej do dwóch dostawców. Aby utworzyć to ZO, wykonaj procedurę [tworzenia zapytania ofertowego](create-request-quotation.md). Przed wykonaniem tej procedury należy skonfigurować kryteria punktowania.
 
@@ -47,13 +47,8 @@ Ofertę można wprowadzić albo jako dostawca, albo jako pracownik działu zaopa
 10. Otwórz skróconą kartę **Szczegóły wiersza**, aby wyświetlić rozszerzone informacje o wierszu.
 11. Wybierz **Resetuj na podstawie ZO** tylko wtedy, gdy musisz zresetować wartości wprowadzone w pierwotnych wartościach ZO.
 12. Ofertę można zapisać w dowolnym momencie i później wykonać dodatkowe przetwarzanie, pod warunkiem że data i godzina wygaśnięcia nie minęły. W takim przypadku ofertę można znaleźć na liście **oferty w toku** w obszarze roboczym **Składanie ofert przez dostawców**.
-13. Gdy oferta jest gotowa do wysłania, wybierz opcję **Prześlij**. Jeśli nie chcesz składać oferty, wybierz opcję **Odrzuć**.
-
-    Przesłane oferty są dostępne na liście **przesłanych ofert** w obszarze roboczym **Składanie ofert przez dostawców**.
-
-14. Po przesłaniu oferty można ją odwołać w dowolnym momencie przed datą i godziną wygaśnięcia. Należy pamiętać, że po wycofaniu oferty nie jest ona traktowana jako przesłana.
-
-    Gdy oferta zostanie zaakceptowana lub odrzucona przez dział zaopatrzenia, będzie widoczna na liście **Wybrane oferty** lub **Przegrane oferty** w obszarze roboczym **Składanie ofert przez dostawców**.
+13. Gdy oferta jest gotowa do wysłania, wybierz opcję **Prześlij**. Jeśli nie chcesz składać oferty, wybierz opcję **Odrzuć**. Przesłane oferty są dostępne na liście **przesłanych ofert** w obszarze roboczym **Składanie ofert przez dostawców**.  
+14. Po przesłaniu oferty można ją odwołać w dowolnym momencie przed datą i godziną wygaśnięcia. Należy pamiętać, że po wycofaniu oferty nie jest ona traktowana jako przesłana. Gdy oferta zostanie zaakceptowana lub odrzucona przez dział zaopatrzenia, będzie widoczna na liście **Wybrane oferty** lub **Przegrane oferty** w obszarze roboczym **Składanie ofert przez dostawców**.  
 
 ## <a name="enter-a-reply-from-a-vendor-as-a-procurement-professional"></a>Wprowadź odpowiedź od dostawcy jako pracownik działu zaopatrzenia
 
@@ -62,10 +57,7 @@ Ofertę można wprowadzić albo jako dostawca, albo jako pracownik działu zaopa
 3. Zaznacz ZO o stanie **Wysłane**, a następnie kliknij łącze w polu **Sprawa dotycząca zapytania ofertowego**.
 4. Wybierz **Zarządzaj odpowiedziami**. Na wyświetlonej stronie jest widoczna informacja o ZO dla każdego dostawcy, który został zaproszony do składania ofert.
 5. Wybierz ZO, na które nie udzielono odpowiedzi. (Pole **Postęp odpowiedzi** powinno zostać ustawione jako **Nierozpoczęte**.)
-6. Wybierz **Edycja \> Edytuj odpowiedź na ZO**.
-
-    Zostanie wyświetlona strona **Odpowiedź na ZO**. Jako pracownik działu zaopatrzenia możesz teraz wprowadzić odpowiedź w imieniu dostawcy. Zauważ, że pole **Oferta w toku** jest ustawione jako **Nabywca aktualizuje**.
-
+6. Wybierz **Edycja \> Edytuj odpowiedź na ZO**. Zostanie wyświetlona strona **Odpowiedź na ZO**. Jako pracownik działu zaopatrzenia możesz teraz wprowadzić odpowiedź w imieniu dostawcy. Zauważ, że pole **Oferta w toku** jest ustawione jako **Nabywca aktualizuje**.  
 7. Wprowadź dane ofertowe. Po zakończeniu wybierz przycisk **Prześlij**.
 
 ## <a name="score-the-bids"></a>Ocenianie ofert
@@ -74,10 +66,7 @@ Ofertę można wprowadzić albo jako dostawca, albo jako pracownik działu zaopa
 2. Wybierz **Zarządzaj odpowiedziami**.
 3. Wybierz opcję Odpowiedz na wynik.
 4. Wybierz **nagłówek**, aby wyświetlić ocenę oferty.
-5. Na skróconej karcie **Punktowanie oferty** wprowadź liczbę w polu **Wynik** dla jednego z kryteriów punktowania.
-
-    Po umieszczeniu wskaźnika myszy nad jednym z kryteriów punktowania pojawia się etykietka narzędzia pokazująca zakres punktów, w którym trzeba się zmieścić. W tej demonstracji można podać liczbę z zakresu od 1 do 5 do każdego z kryteriów.
-
+5. Na skróconej karcie **Punktowanie oferty** wprowadź liczbę w polu **Wynik** dla jednego z kryteriów punktowania. Po umieszczeniu wskaźnika myszy nad jednym z kryteriów punktowania pojawia się etykietka narzędzia pokazująca zakres punktów, w którym trzeba się zmieścić. W tej demonstracji można podać liczbę z zakresu od 1 do 5 do każdego z kryteriów.  
 6. Powtórz krok 5 dla innego kryterium określania wyników.
 7. Jeśli sprawa ZO zawiera kwestionariusz, który został wysłany do dostawców, można wprowadzić ich odpowiedzi w na skróconej karcie **kwestionariuszy**.
 8. Zamknij stronę.
@@ -86,60 +75,35 @@ Ofertę można wprowadzić albo jako dostawca, albo jako pracownik działu zaopa
 ## <a name="compare-the-replies"></a>Porównywanie odpowiedzi
 
 1. W okienku akcji na karcie **Ogólne** wybierz opcję **Porównaj odpowiedzi**.
-2. W polu **Ranga** wprowadź liczbę.
-
-    Ta strona pokazuje oferty z nagłówkami i informacjami w wierszach oraz łączny wynik punktowy na poziomie nagłówka. Wiersze można porównywać poprzez sortowanie ich w siatce, tak aby porównywalne wiersze znalazły się obok siebie. Podane są również następujące informacje:
-
+2. W polu **Ranga** wprowadź liczbę.  
+    - Ta strona pokazuje oferty z nagłówkami i informacjami w wierszach oraz łączny wynik punktowy na poziomie nagłówka. Wiersze można porównywać poprzez sortowanie ich w siatce, tak aby porównywalne wiersze znalazły się obok siebie. Podane są również następujące informacje:
     - **Ilość**: wielkości podane przez dostawcę. Ta ilość może nie być równa ilości określonej w ZO.
     - **Kwota netto**: Cena wskazana przez dostawcę, po odjęciu rabatów dla towarów w wierszu.
-    - **Odchylenie**: Liczba dni różnicy między datą dostawy w ofercie lub wierszu a wymaganą datą dostawy w nagłówku lub wierszu zapytania ofertowego. Dla każdej oferty można wprowadzić rangę.
-
+    - **Odchylenie**: Liczba dni różnicy między datą dostawy w ofercie lub wierszu a wymaganą datą dostawy w nagłówku lub wierszu zapytania ofertowego. Dla każdej oferty można wprowadzić rangę.  
 3. Zaznacz wiersz nagłówka dla drugiej oferty, którą chcesz sklasyfikować.
 4. W polu **Ranga** wprowadź liczbę.
 5. Wybierz opcję **Zapisz**.
 
 ## <a name="reject-a-bid"></a>Odrzucanie oferty
 
-1. Zaznacz wiersz nagłówka dla oferty, którą odrzucić.
-
-    Można zaakceptować, odrzucić albo zwrócić tylko jedną ofertę lub wiersz jednej oferty na raz.
-
-2. Zaznacz pole wyboru **Zaznacz.**
-
-    Zaznaczenie pola wyboru **Zaznacz** w nagłówku oferty spowoduje oznaczenie również wszystkich wierszy. Aby odrzucić lub zaakceptować tylko niektóre wiersze oferty, można oznaczyć tylko te wiersze. Ponadto można zaakceptować oferty jednego dostawcy dla niektórych wierszy ZO, ale nagrodzić pozostałe wiersze ZO innego dostawcy. Należy jednak przetwarzać jedną ofertę na raz.
-
-    Jeśli istnieją wiersze alternatywne, można zaakceptować oryginalny wiersz oferty lub jego alternatywę, ale nie oba.
-
+1. Zaznacz wiersz nagłówka dla oferty, którą odrzucić. Można zaakceptować, odrzucić albo zwrócić tylko jedną ofertę lub wiersz jednej oferty na raz.
+2. Zaznacz pole wyboru **Zaznacz.**  
+    - Zaznaczenie pola wyboru **Zaznacz** w nagłówku oferty spowoduje oznaczenie również wszystkich wierszy. Aby odrzucić lub zaakceptować tylko niektóre wiersze oferty, można oznaczyć tylko te wiersze. Ponadto można zaakceptować oferty jednego dostawcy dla niektórych wierszy ZO, ale nagrodzić pozostałe wiersze ZO innego dostawcy. Należy jednak przetwarzać jedną ofertę na raz.  
+    - Jeśli istnieją wiersze alternatywne, można zaakceptować oryginalny wiersz oferty lub jego alternatywę, ale nie oba.  
 3. Wybierz opcję **Odrzuć**.
-4. Wybierz **parametry**, a następnie w polu **Przyczyna odrzucenia** wprowadź lub wybierz przyczynę odrzucenia oferty.
-
-    Przyczyna jest przechowywana w odpowiedzi.
-
+4. Wybierz **parametry**, a następnie w polu **Przyczyna odrzucenia** wprowadź lub wybierz przyczynę odrzucenia oferty. Przyczyna jest przechowywana w odpowiedzi.  
 5. Kliknij przycisk **OK**.
 6. Kliknij przycisk **OK**.
 
 ## <a name="accept-a-bid"></a>Akceptowanie oferty
 
-1. Wybierz ofertę, którą chcesz zaakceptować, a następnie kliknij łącze w polu **Zapytanie ofertowe**.
-
-    Jeśli znajdujesz się na stronie **porównywanie odpowiedzi na zapytanie ofertowe**, podświetlona oferta jest ofertą, którą system uwzględni w trakcie akcji „Akceptuj”. W danej chwili można akceptować wiersze tylko z jednej oferty.
-
+1. Wybierz ofertę, którą chcesz zaakceptować, a następnie kliknij łącze w polu **Zapytanie ofertowe**. Jeśli znajdujesz się na stronie **porównywanie odpowiedzi na zapytanie ofertowe**, podświetlona oferta jest ofertą, którą system uwzględni w trakcie akcji „Akceptuj”. W danej chwili można akceptować wiersze tylko z jednej oferty.  
 2. W okienku akcji kliknij pozycję **Odpowiedz**.
-3. Wybierz **Akceptuj**.
-
-    W przypadku zaznaczenia tylko określonych wierszy akcja Akceptuj spowoduje uwzględnienie tylko tych wierszy. Jeśli chcesz zaakceptować wszystkie wiersze oferty, nie musisz ich zaznaczać.
-
-4. Wybierz **parametry**, a następnie w polu **Przyczyna akceptacji** wprowadź lub wybierz przyczynę zaakceptowania oferty.
-
-    Przyczyna jest przechowywana w ofercie.
-
+3. Wybierz **Akceptuj**. W przypadku zaznaczenia tylko określonych wierszy akcja Akceptuj spowoduje uwzględnienie tylko tych wierszy. Jeśli chcesz zaakceptować wszystkie wiersze oferty, nie musisz ich zaznaczać.  
+4. Wybierz **parametry**, a następnie w polu **Przyczyna akceptacji** wprowadź lub wybierz przyczynę zaakceptowania oferty. Przyczyna jest przechowywana w ofercie.  
 5. Kliknij przycisk **OK**.
-6. Kliknij przycisk **OK**.
-
-    Po kliknięciu przycisku **OK** zostanie wygenerowane zamówienie zakupu na podstawie wierszy objętych akceptacją ZO. Jeśli istnieją inne oferty, które nie zostały przetworzone (zaakceptowane, odrzucone lub zwrócone), system wyświetli monit o odrzucenie pozostałych ofert.
+6. Kliknij przycisk **OK**. Po kliknięciu przycisku **OK** zostanie wygenerowane zamówienie zakupu na podstawie wierszy objętych akceptacją ZO. Jeśli istnieją inne oferty, które nie zostały przetworzone (zaakceptowane, odrzucone lub zwrócone), system wyświetli monit o odrzucenie pozostałych ofert.  
 
 ## <a name="view-the-purchase-order-that-is-generated"></a>Wyświetlanie wygenerowanego zamówienia zakupu
 
-- W okienku akcji na karcie **Ogólne** wybierz opcję **Zamówienie zakupu**.
-
-    Na wyświetlonej stronie widać zamówienie zakupu wygenerowane w momencie akceptacji oferty.
+W okienku akcji na karcie **Ogólne** wybierz opcję **Zamówienie zakupu**. Na wyświetlonej stronie widać zamówienie zakupu wygenerowane w momencie akceptacji oferty.

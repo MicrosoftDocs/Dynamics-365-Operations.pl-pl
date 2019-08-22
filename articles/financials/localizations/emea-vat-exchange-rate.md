@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 272703
 ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
@@ -18,12 +18,12 @@ ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 5f3988e9dea7687d710a7580c0c63d720f3baa0a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7e23581c73c3eb62e21dc3a53b5730c7c7cb0e62
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570682"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852332"
 ---
 # <a name="vat-exchange-rate-overview"></a>Podstawowe informacje o kursie wymiany dla podatku VAT
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fd7022eb1ed2671fcfc2861eb8ec7504ebf9f98
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 37e860a969d527a334af7524c70e5ea15be7801e
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551821"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742385"
 ---
 # <a name="credit-limits-for-customers"></a>Limity kredytu dla odbiorców
 
@@ -93,7 +93,7 @@ Użyj formularza **Parametry modułu rozrachunków z odbiorcami**, aby określi�
 
 **Gdzie są używane informacje o pozostałym kredycie odbiorcy?**
 
-Informacje o saldzie odbiorcy i pozostałej kwocie kredytu są obliczane i zapisywane po utworzeniu migawki wiekowania i wyświetlane w formularzu **Windykacja**. Kwoty wyświetlane w formularzu **Windykacja** mogą nie obejmować wszystkich działań dotyczących transakcji do momentu utworzenia nowej migawki wiekowania. Aby uzyskać więcej informacji, zobacz temat [Windykacja i kredyt w rozrachunkach z odbiorcami](https://technet.microsoft.com/en-us/library/hh209221.aspx).
+Informacje o saldzie odbiorcy i pozostałej kwocie kredytu są obliczane i zapisywane po utworzeniu migawki wiekowania i wyświetlane w formularzu **Windykacja**. Kwoty wyświetlane w formularzu **Windykacja** mogą nie obejmować wszystkich działań dotyczących transakcji do momentu utworzenia nowej migawki wiekowania. Aby uzyskać więcej informacji, zobacz temat [Windykacja i kredyt w rozrachunkach z odbiorcami](https://technet.microsoft.com/library/hh209221.aspx).
 
 W zależności od wybranych dokumentów informacje o saldzie odbiorcy i pozostałej kwocie kredytu są obliczane po aktualizacji zamówień sprzedaży, dokumentów dostawy i faktur odbiorcy. Jeżeli kwota używanego dokumentu może spowodować przekroczenie limitu kredytu, wyświetlany jest komunikat.
 

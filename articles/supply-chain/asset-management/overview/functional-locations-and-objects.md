@@ -1,0 +1,60 @@
+---
+title: Lokalizacje czynności konserwacyjnych i składniki majątku
+description: W tym temacie opisano lokalizacje funkcjonalne i składniki majątku w Zarządzaniu składnikami majątku. Zarządzanie składnikami majątku to zaawansowany moduł do zarządzania zasobami i zadaniami konserwacyjnymi w Microsoft Dynamics 365 for Finance and Operations.
+author: josaw1
+manager: AnnBe
+ms.date: 06/24/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.custom: 2214
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.search.region: Global
+ms.author: mkirknel
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 351e27dfbbd5227a9642f14a48afe194c447a0f3
+ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "1783530"
+---
+# <a name="functional-locations-and-assets"></a>Lokalizacje czynności konserwacyjnych i składniki majątku
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
+
+W tym temacie opisano lokalizacje funkcjonalne i składniki majątku w Zarządzaniu składnikami majątku. Zarządzanie składnikami majątku to zaawansowany moduł do zarządzania zasobami i zadaniami konserwacyjnymi w Microsoft Dynamics 365 for Finance and Operations.
+
+## <a name="overview"></a>Przegląd
+
+Zarządzanie składnikami majątku jest zintegrowany bezproblemowo z kilkoma modułami w programie Finance and Operations. Na poniższej ilustracji przedstawiono interfejsy z innymi modułami.
+
+![Rysunek 1](media/01-overview-image.png)
+
+Zarządzanie składnikami majątku umożliwia efektywne zarządzanie i wykonywanie wszystkich zadań związanych z zarządzaniem i obsługą wielu typów urządzeń w firmie. Te urządzenia obejmują maszyny, urządzenia produkcyjne i pojazdy. Zarządzanie składnikami majątku również wspiera rozwiązania w wielu branżach.
+
+Poniższa ilustracja przedstawia omówienie głównych funkcji dostępnych w module Zarządzanie składnikami majątku.
+
+![Rysunek 2](media/02-overview-image.png)
+
+## <a name="functional-locations-and-assets"></a>Lokalizacje czynności konserwacyjnych i składniki majątku
+
+Lokalizacje czynności konserwacyjnych służą do zarządzania zasobami w lokalizacjach. To zarządzanie obejmuje śledzenie kosztów aktywów w lokalizacjach czynności konserwacyjnych. Lokalizacje czynności konserwacyjnych są uporządkowane hierarchicznie, a lokalizacje mogą mieć Podlokalizacje. Struktura lokalizacji czynności konserwacyjnych jest statyczna. Innymi słowy, lokalizacje nie mogą zmieniać miejsca. Składniki majątku mogą być instalowane w lokalizacjach czynności konserwacyjnych i, zgodnie z wymaganiami, mogą być instalowane później w innych lokalizacjach czynności konserwacyjnych.
+
+Koszty składników majątku zawsze są zgodne z lokalizacją składnika majątku. Innymi słowy jeśli zasób jest instalowany w nowej lokalizacji czynności konserwacyjnych, zasób automatycznie używa wymiarów finansowych, które są powiązane z nową lokalizacją czynności konserwacyjnych. W związku z tym koszty składnika majątku są zawsze związane z lokalizacją czynności konserwacyjnych, na której jest aktualnie zainstalowany składnik majątku. Ta automatyczna obsługa wymiarów finansowych pomaga zagwarantować całkowite śledzenie kosztów, gdy Twoja firma kontroluje i raportuje lokalizacje czynności konserwacyjnych.
+
+Sposób budowania hierarchii lokalizacji czynności konserwacyjnych zależy od wymagań firmy w zakresie utrzymywania wewnętrznego sprzętu lub obsługi sprzętu klienta. Na poniższej ilustracji przedstawiono przykład lokalizacji czynności konserwacyjnych, które są oparte na lokalizacjach geograficznych.
+
+![Rysunek 3](media/03-overview-image.png)
+
+Na poniższej ilustracji przedstawiono przykład lokalizacji czynności konserwacyjnych, które są oparte na klientach.
+
+![Rysunek 4](media/04-overview-image.png)

@@ -1,105 +1,84 @@
 ---
 title: Wysyłanie zamówień jako dostaw bezpośrednich
-description: W tej procedurze pokazano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży.
+description: W tym temacie opisano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchEditLines, PurchTableReferences, MCRDropShipWorkbench
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5cd68aa1c15672c702db887c08ecf9b3d63f2618
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1bce2674b321475bc516724f74bac2d3a648e257
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557786"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1843368"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Wysyłanie zamówień jako dostaw bezpośrednich
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży. Dostawy bezpośredniej można użyć w celu wysłania towarów do odbiorcy bezpośrednio od dostawcy, zamiast wysyłać je najpierw do własnego magazynu. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Aby pomyślnie wykonać drugie podzadanie „Tworzenie dostaw bezpośrednich z pulpitu”, upewnij się, że towar wybrany w zamówieniu sprzedaży ma zdefiniowanego domyślnego dostawcę na skróconej karcie Zakupu w danych podstawowych zwalnianego produktu.
-
+W tym temacie opisano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży. Dostawy bezpośredniej można użyć w celu wysłania towarów do odbiorcy bezpośrednio od dostawcy, zamiast wysyłać je najpierw do własnego magazynu. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Aby pomyślnie wykonać drugie podzadanie „Tworzenie dostaw bezpośrednich z pulpitu”, upewnij się, że towar wybrany w zamówieniu sprzedaży ma zdefiniowanego domyślnego dostawcę na skróconej karcie Zakupu w danych podstawowych zwalnianego produktu.
 
 ## <a name="set-an-individual-order-for-direct-delivery"></a>Konfigurowanie jednego zamówienie dla dostawy bezpośredniej
-1. Przejdź do okna Wszystkie zamówienia sprzedaży.
-2. Kliknij przycisk Nowy.
-3. W polu Konto odbiorcy wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, można wybrać klienta US-001.  
-4. Kliknij przycisk OK.
-5. W polu Numer towaru wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy demonstracyjnej USMF, można wybrać towar T0020.  
-6. Kliknij przycisk Zapisz.
-7. W okienku akcji kliknij opcję Zamówienie sprzedaży.
-8. Kliknij opcję Dostawa bezpośrednia.
-    * Strona Utwórz dostawę zawiera listę wszystkich otwartych wierszy zamówienia sprzedaży w postaci, w jakiej zostały skopiowane z zamówienia sprzedaży. Przed utworzeniem dostawy bezpośredniej można przejrzeć szczegóły zamówienia i w razie potrzeby zmodyfikować szczegóły, takie jak ilość zakupu i warunki cenowe.  
-9. W polu Uwzględnij wszystko wybierz wartość Tak.
-    * Jeśli chcesz wygenerować dostawę bezpośrednią tylko dla podzbioru wierszy zamówienia sprzedaży, wybierz je pojedynczo.  
-    * Pole Konto dostawcy może, ale nie musi, być już wypełnione numerem dostawcy. Jeśli dla produktu jest zdefiniowany dostawca domyślny (w powiązanym zapotrzebowaniu na towar), ten dostawca zostanie skopiowany do wiersza. W przeciwnym razie dostawcę należy wprowadzić ręcznie. W tym przykładzie w kolejnym kroku wybierzemy nowego dostawcę, nawet wtedy, gdy pole dostawcy jest już wypełnione.   
-10. W polu Konto dostawcy wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, można wybrać klienta 1001.  
-11. Kliknij przycisk OK.
-    * Komunikat informuje, że zamówienia zakupu zostało utworzone.   
-12. Rozwiń sekcję Szczegóły wiersza.
-13. Kliknij kartę Dostawa.
-    * Pole Dostawa bezpośrednia ma teraz wartość Tak.  
-    * W polu Dostawa bezpośrednia widać teraz tekst Zamówienie zakupu utworzone.   
-14. W okienku akcji kliknij pozycję Ogólne.
-15. Kliknij opcję Powiązane zamówienia.
-16. Kliknij, aby śledzić łącze w polu Zamówienie zakupu.
-17. Rozwiń sekcję Szczegóły wiersza.
-18. Kliknij kartę Adres.
-    * Należy zauważyć, że adresem dostawy dla tego wiersza zamówienia zakupu jest adres dostawy odbiorcy, a nie adres firmy.  
-    * Zmiana adresu dostawy w wierszu zamówienia sprzedaży lub wierszu źródłowego zamówienia sprzedaży spowoduje automatyczną aktualizację adresu w wierszu odnośnego zamówienia.  
-19. Kliknij kartę Dostawa.
-    * Podobnie jak w przypadku wiersza zamówienia sprzedaży, powiązany typ wiersza zamówienia zakupu ma ustawioną wartość Dostawa bezpośrednia.  
-    * W wierszu zamówienia zakupu pola Data dostawy i Potwierdzona daty dostawy zawierają odpowiednio wartości Żądana data odbioru i Potwierdzona data odbioru z wiersza źródłowego zamówienia sprzedaży.   
-    * W przypadku aktualizacji którejkolwiek z tych dat w wierszu zakupu lub wierszu sprzedaży daty w odnośnym zamówieniu zostaną automatycznie zaktualizowane.     
-    * Zamówienie zakupu, w którym ustawiono dostarczanie towarów bezpośrednio do odbiorcy, jest połączone ze źródłowym zamówieniem sprzedaży za pomocą specjalnego skojarzenia. To skojarzenie nakłada regułę, że aktualizacji dokumentu dostawy zamówienia sprzedaży nie można wykonać z poziomu samego zamówienia sprzedaży, ale trzeba do tego użyć zamówienia zakupu. Jednak fakturowanie odbiorcy należy wykonać z zamówienia sprzedaży.  
-20. W okienku akcji kliknij pozycję Zakup.
-21. Kliknij opcję Potwierdzenie.
-22. Kliknij przycisk OK.
-23. W okienku akcji kliknij pozycję Odbierz.
-24. Kliknij opcję Dokument przyjęcia produktów.
-25. W polu Dokument przyjęcia produktów wpisz wartość.
-26. Kliknij przycisk OK.
-27. W okienku akcji kliknij pozycję Ogólne.
-28. Kliknij opcję Powiązane zamówienia.
-29. Na liście oznacz wybrany wiersz.
-    * Po zaktualizowaniu zamówienia zakupu do statusu przyjęcia, lub innymi słowy gdy dostawca wysłał towary na adres odbiorcy, stan źródłowego zamówienia sprzedaży jest automatycznie aktualizowany na Dostarczone.  
-    * Zamówienie sprzedaży można teraz zafakturować.    
-30. Kliknij przycisk OK.
-31. Zamknij stronę.
-32. Kliknij przycisk OK.
+1. Otwórz **Okienko nawigacji > Moduły > Rozrachunki z odbiorcami > Zamówienia > Wszystkie zamówienia zakupu**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Konto odbiorcy** wprowadź lub wybierz wartość, a następnie wybierz **OK**.
+4. Wprowadź lub wybierz wartości w polach **Numer zapasu** i **Oddział**, a następnie wybierz **Zapisz**.
+5. W okienku akcji wybierz **Zamówienia sprzedaży**, a następnie wybierz **Dostawa bezpośrednia**. Strona Utwórz dostawę zawiera listę wszystkich otwartych wierszy zamówienia sprzedaży w postaci, w jakiej zostały skopiowane z zamówienia sprzedaży. Przed utworzeniem dostawy bezpośredniej można przejrzeć szczegóły zamówienia i w razie potrzeby zmodyfikować szczegóły, takie jak ilość zakupu i warunki cenowe.  
+6. W polu **Uwzględnij** wszystko wybierz opcję **Tak**.
+    - Jeśli chcesz wygenerować dostawę bezpośrednią tylko dla podzbioru wierszy zamówienia sprzedaży, wybierz je pojedynczo.  
+    - Pole **Konto dostawcy** może, ale nie musi, być już wypełnione numerem dostawcy. Jeśli dla produktu jest zdefiniowany dostawca domyślny (w powiązanym zapotrzebowaniu na towar), ten dostawca zostanie skopiowany do wiersza. W przeciwnym razie dostawcę należy wprowadzić ręcznie. W tym przykładzie w kolejnym kroku wybierzemy nowego dostawcę, nawet wtedy, gdy pole dostawcy jest już wypełnione.   
+7. W polu **Konto dostawcy** wprowadź lub wybierz wartość, a następnie wybierz **OK**. Komunikat informuje, że zamówienia zakupu zostało utworzone.   
+8. Rozwiń sekcję **Szczegóły wiersza**.
+9. Wybierz kartę **Dostawa** i sprawdź, czy pole **Dostawa bezpośrednia** jest ustawione na **Tak**.
+10. W okienku akcji wybierz pozycję **Ogólne**.
+11. Wybierz opcję **Powiązane zamówienia**.
+12. Wybierz łącze w polu **Zamówienie zakupu**.
+13. Rozwiń sekcję **Szczegóły wiersza** i wybierz kartę **Adres**.
+    - Adresem dostawy dla tego wiersza zamówienia zakupu jest adres dostawy odbiorcy, a nie adres firmy.  
+    - Zmiana adresu dostawy w wierszu zamówienia sprzedaży lub wierszu źródłowego zamówienia sprzedaży spowoduje automatyczną aktualizację adresu w wierszu odnośnego zamówienia.  
+14. Wybierz kartę **Dostawa**.
+    - Podobnie jak w przypadku wiersza zamówienia sprzedaży, powiązany typ wiersza zamówienia zakupu ma ustawioną wartość Dostawa bezpośrednia.  
+    - W wierszu zamówienia zakupu pola Data dostawy i Potwierdzona daty dostawy zawierają odpowiednio wartości Żądana data odbioru i Potwierdzona data odbioru z wiersza źródłowego zamówienia sprzedaży.   
+    - W przypadku aktualizacji którejkolwiek z tych dat w wierszu zakupu lub wierszu sprzedaży daty w odnośnym zamówieniu zostaną automatycznie zaktualizowane.     
+    - Zamówienie zakupu, w którym ustawiono dostarczanie towarów bezpośrednio do odbiorcy, jest połączone ze źródłowym zamówieniem sprzedaży za pomocą specjalnego skojarzenia. To skojarzenie nakłada regułę, że aktualizacji dokumentu dostawy zamówienia sprzedaży nie można wykonać z poziomu samego zamówienia sprzedaży, ale trzeba do tego użyć zamówienia zakupu. Jednak fakturowanie odbiorcy należy wykonać z zamówienia sprzedaży.  
+15. W okienku akcji wybierz **Zakup**.
+16. Wybierz **Potwierdzenie**.
+17. Kliknij przycisk **OK**.
+18. W okienku akcji wybierz pozycję **Odbierz**.
+19. Wybierz pozycję **Przyjęcie produktu**.
+20. W polu **Dokument przyjęcia produktów** wpisz wartość.
+21. Kliknij przycisk **OK**.
+22. W okienku akcji wybierz pozycję **Ogólne**.
+23. Wybierz opcję **Powiązane zamówienia** i zaznacz odpowiedni rekord.
+    - Po zaktualizowaniu zamówienia zakupu do statusu przyjęcia, lub innymi słowy gdy dostawca wysłał towary na adres odbiorcy, stan źródłowego zamówienia sprzedaży jest automatycznie aktualizowany na Dostarczone.  
+    - Zamówienie sprzedaży można teraz zafakturować.    
+24. Kliknij przycisk **OK**.
+25. Zamknij stronę.
+26. Kliknij przycisk **OK**. Zamknij te strony, aby powrócić do strony głównej.
 
 ## <a name="create-direct-deliveries-from-the-workbench"></a>Tworzenie dostaw bezpośrednich z pulpitu
-1. Zamknij stronę.
-2. Zamknij stronę.
-3. Przejdź do okna Wszystkie zamówienia sprzedaży.
-4. Kliknij przycisk Nowy.
-5. W polu Konto odbiorcy wprowadź lub wybierz wartość.
-6. Kliknij przycisk OK.
-7. W polu Numer towaru wprowadź lub wybierz wartość.
-8. Rozwiń sekcję Szczegóły wiersza.
-9. Kliknij kartę Dostawa.
-    * Zamiast tworzyć dostawę bezpośrednią jako część przetwarzania zamówienia sprzedaży, co miało miejsce w poprzedniej procedurze, można przekazać to zadanie specjaliście z działu zakupów. Aby uwzględnić wiersz zamówienia sprzedaży w procesie obsługi dostawy bezpośredniej, należy oznaczyć wiersz dla dostawy bezpośredniej.  
-10. W polu Dostawa bezpośrednia wybierz opcję Tak.
-    *   Jeśli towar został już domyślnie skonfigurowany dla dostawy bezpośredniej, podczas wprowadzania wiersza zamówienia w polu zostanie automatycznie ustawiona wartość Tak. Towar można skonfigurować dla dostawy bezpośredniej w danych podstawowych zwalnianego produktu przez ustawienie w opcji Dostawa bezpośrednia wartości Tak i wybranie domyślnego magazynu dostawy bezpośredniej.  
-    * Ponieważ zamówienie zakupu nie zostało jeszcze utworzone, w polu Dostawa bezpośrednia jest ustawiany stan Do dostawy bezpośredniej.   
-11. Zamknij stronę.
-12. Zamknij stronę.
-13. Przejdź do okna Dostawa bezpośrednia.
-    * Strona Dostawa bezpośrednia działa jak pulpit dostarczający pracownikowi działu zakupów całościowy obraz wszystkich wierszy zamówienia sprzedaży, które mają być dostarczane bezpośrednio, i umożliwia tworzenie odpowiednich zamówień zakupu. Ponadto na kartach Potwierdzenie i Dostawa można wyświetlać otwarte zamówienia z dostawą bezpośrednią i zamówienia potwierdzone.   
-14. Kliknij opcję Utwórz dostawę bezpośrednią.
-15. Kliknij kartę Potwierdzenie.
-    * Po utworzeniu zamówienia dostawy bezpośrednie jest ono automatycznie przenoszone na kartę Potwierdzenie. Zamówienie można potwierdzić bezpośrednio z tej strony. Po potwierdzeniu zakupu jest on automatyczne przenoszony do karty Dostawa, na której można zarejestrować jego otrzymanie.  
+1. Otwórz **Nawigacja > Moduły > Rozrachunki z odbiorcami > Zamówienia > Wszystkie zamówienia zakupu**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Konto odbiorcy** wprowadź lub wybierz wartość, a następnie wybierz **OK**.
+4. W polach **Kod pozycji** i **Oddział** wprowadź lub wybierz wartość.
+5. Rozwiń sekcję **Szczegóły wiersza**, a następnie wybierz kartę **Dostawa**. Zamiast tworzyć dostawę bezpośrednią jako część przetwarzania zamówienia sprzedaży, co miało miejsce w poprzedniej procedurze, można przekazać to zadanie specjaliście z działu zakupów. Aby uwzględnić wiersz zamówienia sprzedaży w procesie obsługi dostawy bezpośredniej, należy oznaczyć wiersz dla dostawy bezpośredniej.  
+6. W polu **Dostawa bezpośrednia** wybierz opcję **Tak**.
+    - Jeśli towar został już domyślnie skonfigurowany dla dostawy bezpośredniej, podczas wprowadzania wiersza zamówienia w polu zostanie automatycznie ustawiona wartość Tak. Towar można skonfigurować dla dostawy bezpośredniej w danych podstawowych zwalnianego produktu przez ustawienie w opcji Dostawa bezpośrednia wartości Tak i wybranie domyślnego magazynu dostawy bezpośredniej.  
+    - Ponieważ zamówienie zakupu nie zostało jeszcze utworzone, w polu Dostawa bezpośrednia jest ustawiany stan „Do dostawy bezpośredniej”.   
+7. Wybierz opcję **Zapisz**.
+8. Zamykaj strony, aż wrócisz do strony głównej.
+9. Na pasku wyszukiwania wprowadź `Direct delivery`.
+    - Strona Dostawa bezpośrednia działa jak pulpit dostarczający pracownikowi działu zakupów całościowy obraz wszystkich wierszy zamówienia sprzedaży, które mają być dostarczane bezpośrednio, i umożliwia tworzenie odpowiednich zamówień zakupu. Ponadto na kartach Potwierdzenie i Dostawa można wyświetlać otwarte zamówienia z dostawą bezpośrednią i zamówienia potwierdzone.  
+    - Po utworzeniu zamówienia dostawy bezpośrednie jest ono automatycznie przenoszone na kartę Potwierdzenie. Zamówienie można potwierdzić bezpośrednio z tej strony. Po potwierdzeniu zakupu jest on automatyczne przenoszony do karty Dostawa, na której można zarejestrować jego otrzymanie.  
 

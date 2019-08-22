@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RegisterVAT_W, TaxTable
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 270434
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c5f42302a294700f5acf50c7a8c0fe531937be5c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d7cc0302cb0c6c7dcf9a95bdd399dbdb979c79d4
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558260"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852503"
 ---
 # <a name="vat-register-transactions-for-eastern-europe"></a>Transakcje rejestru VAT dla Europy Wschodniej
 

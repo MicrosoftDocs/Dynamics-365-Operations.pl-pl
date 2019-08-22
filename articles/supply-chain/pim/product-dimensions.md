@@ -3,7 +3,7 @@ title: Wymiary produktu
 description: Istnieją cztery wymiary produktu — Kolor, Konfiguracja, Rozmiar i Styl. Wymiary produktu łączy się w grupy wymiarów, a następnie przypisuje grupy wymiarów do produktów głównych. Kombinacje wymiarów produktu decydują o definicjach wariantów produktu.
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ccb9d47bf6f081dbcc9590bddd4516cf7385ec23
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3391679696c0e1dd84840821480ccbfb544829a6
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563581"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863043"
 ---
 # <a name="product-dimensions"></a>Wymiary produktu
 
@@ -35,8 +35,8 @@ ms.locfileid: "1563581"
 Istnieją cztery wymiary produktu — Kolor, Konfiguracja, Rozmiar i Styl. Wymiary produktu łączy się w grupy wymiarów, a następnie przypisuje grupy wymiarów do produktów głównych. Kombinacje wymiarów produktu decydują o definicjach wariantów produktu.
 
 Wymiary produktu to cechy, które służą do określenia wariantu produktu. Kombinacje wymiarów produktu służą do definiowania wariantów produktu. Należy zdefiniować co najmniej jeden wymiar produktu dla produktu głównego w celu utworzenia wariantu produktu.
-Warianty produktu
-----------------
+
+## <a name="product-variants"></a>Warianty produktu
 
 Warianty produktu są również określane jako elementy. Towar to produkt materialny, który nie jest usługą. Istnieje również możliwość zdefiniowania produktu głównego typu Usługa. Za pomocą typu Usługa można określić warianty produktu, które zawierają usługi. Na przykład można określić produkt główny dla pracy w zakresie doradztwa i warianty produktu dla pracy wykonywanej przez starszych konsultantów i młodszych konsultantów.
 

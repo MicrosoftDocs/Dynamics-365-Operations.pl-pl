@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: e78d0a82d3ca66a6912ea1a9517296ca241edf1c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5ec9197c2e8b7970fcbf5ea42612c60f940bcae0
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559053"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742941"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Skanowanie kodów kreskowych za pomocą aparatu w programie Dynamics 365 for Finance and Operations — Magazynowanie
 
@@ -36,7 +36,7 @@ Aby można było używać tej funkcji, trzeba mieć zainstalowaną wersję 1.2.0
 ## <a name="setup"></a>Konfiguracja
 W aplikacji Magazynowanie w ustawieniach wyświetlania można określić, czy aparat ma być używany do skanowania kodów kreskowych. Po włączeniu opcji **Używaj aparatu jako skanera** można używać aparatu do każdego pola wejściowego, które ma ustawiony preferowany tryb wprowadzania **Skanowanie**. 
 
-Aby określić, czy pole wejściowe powinno obsługiwać skanowanie, w programie Dynamics 365 for Finance and Operations na stronie **Nazwy pól w aplikacji magazynowej** w ustawieniu **Preferowany tryb wprowadzania** zaznacz wartość **Skanowanie**. Gdy ta opcja jest zaznaczona, aparat może służyć do skanowania w aplikacji Magazynowanie. Aby uzyskać informacje dotyczące sposobu konfigurowania nazw pól w aplikacji Magazynowanie, zobacz [Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
+Aby określić, czy pole wejściowe powinno obsługiwać skanowanie, w programie Dynamics 365 for Finance and Operations na stronie **Nazwy pól w aplikacji magazynowej** w ustawieniu **Preferowany tryb wprowadzania** zaznacz wartość **Skanowanie**. Gdy ta opcja jest zaznaczona, aparat może służyć do skanowania w aplikacji Magazynowanie. Aby uzyskać informacje dotyczące sposobu konfigurowania nazw pól w aplikacji Magazynowanie, zobacz [Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
 
 ## <a name="supported-bar-code-formats"></a>Obsługiwane formaty kodów kreskowych
 Obsługiwane są najpopularniejsze formaty kodów kreskowych, w tym Kod 128, Kod 39, Kod 93, EAN-8, EAN-13, UPC-E, UPC-A i kody QR. 

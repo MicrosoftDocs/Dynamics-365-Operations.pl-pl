@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 85cb5c5618346f1e5132f818911be21df86fbfcb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554997"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741117"
 ---
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Otwieranie danych jednostki w programie Excel i aktualizowanie ich przy użyciu dodatku programu Excel
 
@@ -60,7 +60,7 @@ Dodatek programu Excel automatycznie odczytuje dane wybranej jednostki. Należy 
 
 6. Wybierz przycisk **OK**, a następnie przycisk **Tak**, aby potwierdzić zmianę. Dodatek programu Excel zostanie ponownie uruchomiony i załaduje metadane.
 
-    Będzie teraz dostępny przycisk **Projekt**. Jeśli dodatek programu Excel zawiera przycisk **Ładuj aplety**, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby uzyskać więcej informacji, zobacz „Jest wyświetlany przycisk Ładuj aplety” w sekcji [Rozwiązywanie problemów](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) w tym temacie.
+    Będzie teraz dostępny przycisk **Projekt**. Jeśli dodatek programu Excel zawiera przycisk **Ładuj aplety**, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby uzyskać więcej informacji, zobacz „Jest wyświetlany przycisk Ładuj aplety” w sekcji [Rozwiązywanie problemów](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) w tym temacie.
 
 7. Wybierz opcję **Projekt** Dodatek programu Excel pobierze metadane jednostki.
 8. Wybierz opcję **Dodaj tabelę**. Zostanie wyświetlona lista jednostek. Jednostki są wyświetlane w formacie „Nazwa — Etykieta”.

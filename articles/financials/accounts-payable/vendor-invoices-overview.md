@@ -3,14 +3,14 @@ title: Omówienie faktur od dostawców
 description: Ten temat zawiera ogólne informacje o fakturach od dostawców. Faktur od dostawców są wnioskami o płatność za produkty i usługi, które zostały odebrane. Faktury od dostawców mogą dotyczyć usług świadczonych w sposób ciągły albo bazować na zamówieniach zakupu za określone towary i usługi.
 author: abruer
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
-ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
+ms.openlocfilehash: c69291214796847af7169cf261865860998f0d27
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625086"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863330"
 ---
 # <a name="vendor-invoices-overview"></a>Omówienie faktur od dostawców
 
 [!include [banner](../includes/banner.md)]
-
+[!include [banner](../includes/preview-banner.md)]
 
 Ten temat zawiera ogólne informacje o fakturach od dostawców. Faktur od dostawców są wnioskami o płatność za produkty i usługi, które zostały odebrane. Faktury od dostawców mogą dotyczyć usług świadczonych w sposób ciągły albo bazować na zamówieniach zakupu za określone towary i usługi.
 
@@ -90,6 +90,13 @@ Gdy faktura dostawcy jest obecnie używana, inny użytkownik nie może jej edyto
 Na stronie **Odzyskaj faktury od dostawców** można odzyskać lub zwolnić faktury od dostawców, które były używane przez ponad cztery godziny, tak aby można było je edytować. Aby otworzyć tę stronę, przejdź do menu **Zadanie okresowe** lub wybierz kafelek w obszarze roboczym **Wprowadzanie faktur od dostawcy**. Po odzyskaniu faktury można ją znowu edytować na stronie **faktury od dostawcy**.
 
 Dostęp do strony **Odzyskaj faktury od dostawcy** można uzyskać tylko wtedy, gdy masz przypisane uprawnienie i obowiązek zabezpieczeń **Odzyskaj faktury od dostawców będące w użyciu**. Ponadto parametr **Zezwalaj na odzyskiwanie faktur od dostawców** na stronie **Parametry modułu rozrachunków z dostawcami** musi być włączony.
+
+## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Zmiana stanu przepływu pracy dla faktur od dostawcy z Nieodwracalne na Wersja robocza
+
+Wystąpienie przepływu pracy, które zostało zatrzymane z powodu nieodwracalnego błędu będzie miało stan przepływu pracy **Nieodwracalne**. Jeśli stan przepływu pracy faktury od dostawcy to **Nieodwracalne**, można go zmienić na **Wersja robocza**, wybierając opcję **Odwołaj**. Wtedy można edytować fakturę od dostawcy. Ta funkcja jest dostępna, jeśli jest włączony parametr **Przywróć stan wersji roboczej w przepływie pracy faktury od dostawcy**na stronie **Zarządzanie funkcjami**.
+
+Za pomocą strony **Historia przepływu pracy** można zmienić stan przepływu pracy na **Wersja robocza**. Można otworzyć tę stronę z menu **Faktura dostawcy** lub z menu nawigacji **Wspólne > Zapytania > Przepływ pracy**. Aby zresetować stan przepływu pracy na **Wersja robocza**, wybierz opcję **Odwołaj**. Możesz również zresetować stan przepływu pracy do wersji roboczej, wybierając akcję **Odwołaj** na stronie **Faktura od dostawcy** lub na stronie **Oczekujące faktury od dostawcy**. Po zmianie stanu przepływu pracy na **Wersja robocza**, fakturę będzie można edytować na stronie**Faktura od dostawcy**.
+
 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

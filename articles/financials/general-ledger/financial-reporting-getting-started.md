@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec
-ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
+ms.openlocfilehash: 7a55c0a1ac8ac833315afa179c1b6d4eb78195fc
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1594967"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1839214"
 ---
 # <a name="financial-reporting"></a>Raporty finansowe
 
@@ -117,7 +117,7 @@ Po kliknięciu menu **Raporty finansowe** jest wyświetlana lista domyślnych ra
 Z listy raportów finansowych można utworzyć nowy raport lub zmodyfikować istniejący raport. Jeśli masz odpowiednie uprawnienia, możesz utworzyć nowy raport finansowy, klikając przycisk **Nowy** w okienku akcji. Projektant raportów zostanie pobrany na Twoje urządzenie i uruchomiony. Po uruchomieniu projektanta raportów można utworzyć nowy raport. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Na liście są wyświetlane tylko raporty, które zostały utworzone dla firmy używanej w programie Finance and Operations. 
 
 > [!NOTE] 
-> Komputer, do którego pobierasz aplikację kliencką projektanta raportów, musi mieć zainstalowane oprogramowanie Microsoft .NET Framework w wersji 4.6.2. Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować z witryny [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta projektanta raportów. Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Po wybraniu obszaru wokół nazwy raportu kliknij przycisk **Edytuj** w okienku akcji. Zostanie uruchomiony projektant raportów.
+> Komputer, do którego pobierasz aplikację kliencką projektanta raportów, musi mieć zainstalowane oprogramowanie Microsoft .NET Framework w wersji 4.6.2. Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować z witryny [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53345). Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta projektanta raportów. Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Po wybraniu obszaru wokół nazwy raportu kliknij przycisk **Edytuj** w okienku akcji. Zostanie uruchomiony projektant raportów.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 - [Wyświetlanie raportów finansowych](view-financial-reports.md)

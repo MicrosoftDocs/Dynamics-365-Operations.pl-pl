@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551847"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863731"
 ---
 # <a name="modify-row-definition-cells"></a>Modyfikowanie komórek definicji wiersza
 
@@ -402,7 +402,7 @@ Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansow
 2. Kliknij dwukrotnie komórkę w kolumnie **Łącze do Wymiary finansowe**.
 3. W oknie dialogowym **Wymiary** kliknij dwukrotnie komórkę pod nazwą wymiaru.
 4. W oknie dialogowym wymiaru wybierz **Pojedynczy lub zakres**.
-5. W polu **Z** wpisz wymiar początkowy lub kliknij przycisk ![Przeglądaj](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Przeglądaj"), aby wyszukać dostępne wymiary. Aby wprowadzić zakres wymiarów, należy wprowadzić wymiar końcowy w polu **Do**.
+5. W polu **Z** wpisz wymiar początkowy lub kliknij przycisk ![Przeglądaj](media/browse.gif "Przeglądaj"), aby wyszukać dostępne wymiary. Aby wprowadzić zakres wymiarów, należy wprowadzić wymiar końcowy w polu **Do**.
 6. Kliknij **OK**, aby zamknąć okno dialogowe wymiaru. Okno dialogowe **Wymiary** wyświetla zaktualizowane wymiary lub zakresy.
 7. Kliknij **OK**, aby zamknąć okno dialogowe **Wymiary**.
 
@@ -479,7 +479,7 @@ W poniższej tabeli opisano pola w tym oknie dialogowym **Wymiary**.
 
 | Pozycja                | Opis |
 |---------------------|-------------|
-| Pojedynczy lub zakres | W polu **Z** wpisz nazwę konta lub kliknij przycisk **Przeglądaj** ![Przeglądaj](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Przeglądaj"), aby przejść do konta. Aby wybrać zakres, wpisz lub przeglądaj, aby wybrać wartość w polu **Do**. |
+| Pojedynczy lub zakres | W polu **Z** wpisz nazwę konta lub kliknij przycisk **Przeglądaj** ![Przeglądaj](media/browse.gif "Przeglądaj"), aby przejść do konta. Aby wybrać zakres, wpisz lub przeglądaj, aby wybrać wartość w polu **Do**. |
 | Zestaw wartości wymiarów | W polu **Nazwa** wprowadź nazwę zestawu wartości wymiarów. Aby utworzyć, zmodyfikować lub usunąć zestaw, kliknij **Zarządzaj zestawami wartości wymiarów**. Pole **Formuła** jest wypełniane przy użyciu formuły z komórki **Łącze do wymiarów finansowych** dla tego zestawu wartości wymiarów w definicji wiersza. |
 | Konta sumujące   | W polu **Nazwa** wprowadź lub przeglądaj, aby wybrać wymiar kont sumujących. Pole **Formuła** jest wypełniane przy użyciu formuły w komórce **Łącze do wymiarów finansowych** dla tego konta sumującego w definicji raportowania. |
 

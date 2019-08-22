@@ -1,5 +1,5 @@
 ---
-title: Przygotuj metadane dla konkretnej aplikacji dla RCS i ER
+title: Importowanie plików w formacie XML z opcjonalnymi atrybutami
 description: Ten temat zawiera informacje dotyczące projektowania formatów ER, które określają atrybuty XML służące do analizy przychodzących dokumentów elektronicznych w formacie XML.
 author: NickSelin
 manager: AnnBe
@@ -10,20 +10,20 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a6fc1e54444584895aa75ae91d39143f27e34d8
-ms.sourcegitcommit: d0fa7eb2166a30314205e7f70bbeaff6fbd5fb55
+ms.openlocfilehash: eb5d721784f45097ab466f75d43256495aac36ca
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "1726582"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850002"
 ---
-# <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Przygotuj metadane dla konkretnej aplikacji dla RCS i ER
+# <a name="import-files-in-xml-format-with-optional-attributes"></a>Importowanie plików w formacie XML z opcjonalnymi atrybutami
 
 Można zaprojektować formaty raportów elektronicznych ER w taki sposób, aby analizowały przychodzące dokumenty elektroniczne w formacie XML. Niektóre atrybuty elementów XML można określać w zaprojektowanym formacie ER jako opcjonalne. Pozwoli to na prawidłową obsługę przychodzących plików z takimi atrybutami XML lub bez nich. Następnie można użyć zawartości tych plików do aktualizacji danych aplikacji.
 
@@ -97,11 +97,11 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli administratora systemu
 5.  Kliknij przycisk **Zapisz**.
 6.  Kliknij przycisk **Konstruktor**.
 7.  W drzewie rozwiń węzeł **format**.
-8.  W drzewie rozwiń węzeł **format\root: XML Element (root)**.
-9.  W drzewie wybierz **1format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-10. Kliknij opcję **Powiąż**.
+8.  W drzewie rozwiń **format\root: XML Element(root)**.
+9.  W drzewie wybierz **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+10. Kliknij **Powiąż**.
 11. W drzewie rozwiń **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-12. W drzewie wybierz **1format\root: XML Element(root)\document: XML Element 1..* (dokument)\id**.
+12. W drzewie wybierz **format\root: XML Element(root)\document: XML Element 1..* (dokument)\identyfikator**.
 13. W drzewie rozwiń węzeł **List = format.root.document**.
 14. W drzewie wybierz **List = format.root.document\Code**.
 15. Kliknij opcję **Powiąż**.

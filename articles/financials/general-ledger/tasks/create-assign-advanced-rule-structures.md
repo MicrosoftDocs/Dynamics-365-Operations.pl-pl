@@ -1,71 +1,61 @@
 ---
 title: Tworzenie i przypisywanie struktur reguł zaawansowanych
-description: Ten przewodnik po zadaniach prowadzi przez kolejne kroki tworzenia i przypisywania struktury reguły zaawansowanej do struktury konta.
+description: W tym temacie wyjaśniono, jak utworzyć i przypisać strukturę reguły zaawansowanej do struktury konta.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountRuleStructure, DimensionCreateAccountRuleStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate, DimensionConfigureAccountStructure, DimensionConfigureAccountRule, DimensionCreateAccountRule, DimensionSelectAccountRuleStructure
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd62254c20cf5d77677d03c7d7335fb793d7f5f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cff07c13553ea140f537160da7f93820d5e3f77a
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558913"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834906"
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>Tworzenie i przypisywanie struktur reguł zaawansowanych
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ten przewodnik po zadaniach prowadzi przez kolejne kroki tworzenia i przypisywania struktury reguły zaawansowanej do struktury konta. W przewodniku jest wykorzystywana firma demonstracyjna USMF.
-
+W tym temacie wyjaśniono, jak utworzyć i przypisać strukturę reguły zaawansowanej do struktury konta. W przewodniku jest wykorzystywana firma demonstracyjna USMF.
 
 ## <a name="create-an-advanced-rule-structure"></a>Utwórz strukturę reguły zaawansowanej
-1. Wybierz kolejno opcje Księga główna > Plan kont > Struktury > Struktury reguł zaawansowanych.
-2. Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.
-3. W polu Struktura reguły zaawansowanej wprowadź nazwę opisującą strukturę reguły.
-4. W polu Opis wprowadź bardziej rozbudowany opis struktury.
-5. Kliknij przycisk OK.
-6. Kliknij przycisk Dodaj segment.
-7. Na liście segmentów wybierz wymiar finansowy.
-    * Na przykład Sklep.  
-8. Kliknij przycisk Dodaj segment.
-9. Na liście kliknij łącze struktury reguły zaawansowanej, aby wyświetlić strukturę.
-10. Kliknij Aktywacja.
-11. Kliknij Aktywacja.
+1. Wybierz kolejno opcje **Okienko nawigacji > Moduły > Księga główna > Plan kont > Struktury > Struktury reguł zaawansowanych**.
+2. Wybierz **Nowe**, aby otworzyć listę rozwijania.
+3. W polu **Struktura reguły zaawansowanej** wprowadź nazwę opisującą strukturę reguły.
+4. Kliknij przycisk **OK**.
+5. Wybierz opcję **Dodaj segment**.
+6. Na liście segmentów wybierz wymiar finansowy. Na przykład **Sklep**.  
+7. Wybierz opcję **Dodaj segment**.
+8. Wybierz **Aktywuj**.
 
 ## <a name="apply-an-advanced-rule-structure-to-an-account-structure"></a>Stosowanie struktury reguły zaawansowanej do struktury konta
-1. Zamknij formularz.
-2. Zamknij stronę.
-3. Wybierz kolejno opcje Księga główna > Plan kont > Struktury > Skonfiguruj strukturę konta.
-4. Na liście znajdź i wybierz strukturę konta, do której chcesz zastosować regułę zaawansowaną.
-5. Kliknij nazwę struktury konta, aby otworzyć strukturę.
-6. Kliknij przycisk Edytuj.
-    * Można także kliknąć opcję Reguły zaawansowane, a pojawi się monit o przełączenie struktury konta do trybu roboczego.  
-7. Kliknij opcję Reguły zaawansowane.
-8. Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.
-9. W polu Reguła zaawansowana wpisz wartość.
-10. W polu Nazwa wpisz wartość.
-11. Kliknij Utwórz.
-12. Kliknij opcję Dodaj nowe kryteria.
-13. W polu Gdzie wybierz konto główne lub wymiar finansowy.
-14. W polu Operator wybierz opcję, taką jak „zawiera się między” lub „zawiera”.
-15. W polu Wartość wpisz wartość.
-16. W polu „za pomocą” wpisz wartość.
-17. Kliknij przycisk Dodaj, aby otworzyć rozwijane okno dialogowe.
-18. Na liście znajdź strukturę reguły zaawansowanej, która ma być używana po spełnieniu wprowadzonych kryteriów.
-19. Kliknij przycisk Dodaj.
-20. Zamknij stronę.
-21. Kliknij Aktywacja.
-22. Kliknij Aktywacja.
+1. Wybierz kolejno opcje **Okienko nawigacji > Moduły > Księga główna > Plan kont > Struktury > Konfigurowanie struktur kont**.
+2. Na liście znajdź i wybierz strukturę konta, do której chcesz zastosować regułę zaawansowaną.
+3. Wybierz opcję **Edycja**. Można także wybrać opcję **Reguły zaawansowane**, a pojawi się monit o przełączenie struktury konta do **Trybu roboczego**.  
+4. Wybierz opcję **Reguły zaawansowane**.
+5. Wybierz **Nowe**, aby otworzyć listę rozwijania.
+6. W polu **Reguła zaawansowana** wpisz wartość.
+7. W polu **Nazwa** wpisz wartość.
+8. Wybierz opcję **Utwórz**.
+9. Wybierz opcję **Dodaj nowe kryteria**.
+10. W polu **Gdzie** wybierz konto główne lub wymiar finansowy.
+11. W polu **Operator** wybierz opcję, taką jak **zawiera się między** lub **zawiera**.
+12. W polu **Wartość** wpisz wartość.
+13. W polu **za pomocą** wpisz wartość.
+14. Wybierz przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.
+15. Na liście znajdź strukturę reguły zaawansowanej, która ma być używana po spełnieniu wprowadzonych kryteriów.
+16. Wybierz opcję **Dodaj**.
+17. Zamknij stronę.
+18. Wybierz **Aktywuj**.
 

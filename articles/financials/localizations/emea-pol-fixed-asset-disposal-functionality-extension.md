@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 266964
 ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 04b8dcd54b479e93267361b2e2d6214b3d8b9cfb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 274d2a73305bbf4bd3bcda0294b9ec0418f26930
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549043"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852442"
 ---
 # <a name="fixed-assets-disposal-for-poland"></a>Likwidacja środków trwałych dla Polski
 

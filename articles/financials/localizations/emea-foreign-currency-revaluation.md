@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 11464
 ms.search.region: Czech Republic, Estonia, Latvia, Lithuania, Poland
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab3218debfd3ad10b781ff3e7b4722f5d625f092
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3d61fd9fa59f45ac022cb7a884951f4d40d7cf68
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547181"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852256"
 ---
 # <a name="currency-revaluation-for-bank-account-transactions"></a>Przeszacowanie w walucie dla transakcji na kontach bankowych
 

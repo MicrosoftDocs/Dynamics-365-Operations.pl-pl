@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5f6b1c9338670a2f2f26ecbef1d349171457e1ac
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: 5ac47ee086569cdaaa3c30f76435432e64f8fac6
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702779"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1835149"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją
 
@@ -72,4 +72,4 @@ Pakiet zawartości usługi Power BI **CustCollectionsBICrossCompany** obejmuje r
 | Stan windykacji          | <ul><li>Sporne</li><li>Złamane przyrzeczenie zapłaty</li><li>Przyrzeczenie zapłaty</li><li>Szczegóły stanu windykacji</li><li>Kwoty stanu windykacji</li><li>Otwarte sprawy</li><li>Otwarte działania</li></ul> |
 | Ponaglenia         | <ul><li>Kwoty kodu ponaglenia</li><li>Szczegóły kwoty kodu ponaglenia</li><li>Kwoty ponagleń według firmy</li><li>Kwoty ponagleń według grupy odbiorców</li><li>Kwoty ponagleń według regionów</li></ul> |
 
-Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w usłudze Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Można także użyć funkcji eksportu danych źródłowych do wyeksportowania danych podsumowanych w wizualizacji.
+Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w usłudze Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Można także użyć funkcji eksportu danych źródłowych do wyeksportowania danych podsumowanych w wizualizacji.

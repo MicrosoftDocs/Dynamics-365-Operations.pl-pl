@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: 221294
 ms.assetid: 357931ed-f843-4bf5-bc85-0da3de0619ec
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e907813323ef6b1c8b83675be75456f5844fa0a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b200f6b8a636a5e7c4ee2625226510f538ff023c
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548039"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863500"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)
 
@@ -757,7 +757,7 @@ Bezproblemowy handel wielokanałowy odnosi się do zarządzania i przetwarzania 
 
 | Co można zrobić | Dlaczego to jest ważne |
 |-----------------|-----------------------|
-| CRT/Retail Server: Sprzedawcy detaliczni i dostawcy ISV mogą rozszerzać funkcjonalność środowiska CRT za pomocą mechanizmów przechwytywania komunikatów. Zmiany wewnątrz kodu źródłowego nie są już obsługiwane. | Aby umożliwić ustawiczną integrację i wdrażanie, należy całkowicie unikać modyfikowania kodu źródłowego programu. Ponadto umożliwi to łatwe pobieranie poprawek bez konieczności scalania kodu ani specjalnego wdrażania składników środowiska CRT. |
+| CRT/Retail Server: Sprzedawcy detaliczni i dostawcy ISV mogą rozszerzać środowiska CRT za pomocą mechanizmów przechwytywania komunikatów. Zmiany wewnątrz kodu źródłowego nie są już obsługiwane. | Aby umożliwić ustawiczną integrację i wdrażanie, należy całkowicie unikać modyfikowania kodu źródłowego programu. Ponadto umożliwi to łatwe pobieranie poprawek bez konieczności scalania kodu ani specjalnego wdrażania składników środowiska CRT. |
 
 ### <a name="personalized-product-recommendations"></a>Spersonalizowane rekomendacje produktów
 

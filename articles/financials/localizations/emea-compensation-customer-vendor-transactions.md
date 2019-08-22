@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 1691503
 ms.search.region: Hungary, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ba93808076b83d7dcb32b1b3dc06d6055f693f3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9e9135e52356b5025a8018028825371b967531b1
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565322"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852122"
 ---
 # <a name="set-up-customer-and-vendor-compensation"></a>Konfiguracja kompensacji odbiorców oraz dostawców
 

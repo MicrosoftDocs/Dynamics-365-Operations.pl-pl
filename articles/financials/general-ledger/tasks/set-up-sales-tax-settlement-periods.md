@@ -3,25 +3,25 @@ title: Ustawianie okresów rozliczania podatku
 description: Okresy rozliczania podatków zawierają informacje o interwałach okresu, za które należy zgłosić i zapłacić podatki.
 author: twheeloc
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 08/05/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8304d9e8997a5d31740ee1203aa4bf0603014056
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569593"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862995"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Ustawianie okresów rozliczania podatku
 
@@ -50,6 +50,8 @@ W zadaniu wykorzystano firmę demonstracyjną USMF.
 12. Wprowadź liczbę jednostek interwału okresu w okresie. Na przykład kwartał ma 3 miesiące.
 13. Zaznacz lub wyczyść pole wyboru Użyj przetwarzania wsadowego w celu rozliczenia podatku.
     * Proces rozliczania dla okresu rozliczeniowego może być wykonywany w trybie wsadowym w tle. Jest to zalecane dla dużej liczby transakcji podatkowych w interwale okresu.  
+    > [!NOTE]
+    > Obecnie nie jest to obsługiwane w Austrii, Belgii, Hiszpanii, Włoszech, Japonii i Holandii.
 14. Zaznacz lub wyczyść pole wyboru Zapobiegaj generowaniu transakcji podatków przeciwstawnych.
     * Domyślnie system generuje transakcje podatków przeciwstawnych w trakcie rozliczania, co może spowalniać działanie, jeżeli w okresie występuje duża liczba transakcji podatkowych. Zaznaczenie tego pola wyboru uniemożliwi generowanie transakcji podatków przeciwstawnych.
 15. Rozwiń kartę Interwały okresu.

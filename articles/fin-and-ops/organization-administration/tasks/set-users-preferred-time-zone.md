@@ -1,9 +1,9 @@
 ---
 title: Ustawianie preferowanej strefy czasowej
-description: W poniższej procedurze pokazano, jak użytkownik w roli administratora systemu może ustawić strefę czasową dla użytkownika.
+description: W tym temacie pokazano, jak użytkownik w roli administratora systemu może ustawić strefę czasową dla użytkownika.
 author: pvillads
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,24 +16,23 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b5eac00d5054296921c3f22004f8c8e710727afc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d6dc521fe4fc7ea901c882abad47d5fc899e0326
+ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560528"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "1738818"
 ---
 # <a name="set-a-users-preferred-time-zone"></a>Ustawianie preferowanej strefy czasowej
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W poniższej procedurze pokazano, jak użytkownik w roli administratora systemu może ustawić strefę czasową dla użytkownika.
+W poniższym temacie pokazano, jak użytkownik w roli administratora systemu może ustawić strefę czasową dla użytkownika.
 
-1. Wybierz kolejno opcje Administrowanie systemem > Użytkownicy > Użytkownicy.
+1. Otwórz **Okienko nawigacji > Moduły > Administracja systemu > Użytkownicy > Użytkownicy**.
 2. Na liście znajdź i zaznacz odpowiedni rekord.
-3. Na liście kliknij łącze w wybranym wierszu.
-4. Kliknij opcję Opcje użytkownika.
-5. Kliknij kartę Preferencje.
-6. W polu Strefa czasowa wybierz opcję.
-7. Kliknij przycisk Zapisz.
+3. Wybierz **Opcje użytkownika**.
+4. Kliknij kartę **Preferencje**.
+5. W polu **Strefa czasowa** wybierz opcję z listy rozwijanej.
+6. Wybierz opcję **Zapisz**.
 

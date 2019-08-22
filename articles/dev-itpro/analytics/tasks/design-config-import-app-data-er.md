@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 23004930d2377a3d647435b53b6809cd500f44ac
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551490"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741362"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>Projektowanie konfiguracji raportowania elektronicznego do analizowania dokumentów przychodzących
 
@@ -30,7 +30,7 @@ Ta procedura przedstawia sposób projektowania konfiguracji raportowania elektro
 
 Ta procedura została utworzona dla użytkowników z przypisaną rola administratora systemu lub dewelopera raportowania elektronicznego. 
 
-Kroki te można wykonać przy użyciu dowolnego zestawu danych. Zanim rozpoczniesz, pobierz i zapisz pliki wymienione w temacie „Analizowanie dokumentów przychodzących w celu aktualizacji danych aplikacji” (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Są to następujące pliki: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
+Kroki te można wykonać przy użyciu dowolnego zestawu danych. Zanim rozpoczniesz, pobierz i zapisz pliki wymienione w temacie „Analizowanie dokumentów przychodzących w celu aktualizacji danych aplikacji” (https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Są to następujące pliki: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
     * Upewnij się, że dostawca konfiguracji przykładowej firmy Litware, Inc. jest dostępny i oznaczony jako Aktywny. Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj procedurę „Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”.  

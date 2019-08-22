@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 268014
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fab099ccd8f3dd9269143670fee0abdc24ff4782
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 95b15b05ab71dfa90b7bbf7da2d7963d09d9017e
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561451"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852209"
 ---
 # <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Wschodniej
 

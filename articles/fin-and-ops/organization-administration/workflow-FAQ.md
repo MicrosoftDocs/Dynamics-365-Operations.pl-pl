@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adcc9bbc422a3fddfd51d248daf95c0da6d4c9bb
-ms.sourcegitcommit: 8cf77e9171d6cad8ae6c8bfad9e4f9a46fef6d23
+ms.openlocfilehash: 7ca04433937d0d7a16b450f190cd3814533e270d
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "1689007"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741063"
 ---
 # <a name="workflow-faq"></a>Przepływ pracy — często zadawane pytania
 
@@ -48,6 +48,6 @@ Poniżej znajduje się kilka kluczowych obszarów, w których należy pamiętać
     - W przyszłej aktualizacji zostanie dodany komunikat centrum akcji, dzięki czemu użytkownikowi zostanie przypisany element pracy przepływu pracy. 
 - Dodawanie powiadomień do przepływów pracy
     - Komunikaty centrum akcji mogą być tworzone dla określonych użytkowników, takich jak wiadomość utworzona z przepływu pracy w X ++.
-    - [Przepływy pracy mają zdarzenia biznesowe](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), których odbiorca może wywoływać w celu wyzwolenia na wyszukiwane przez nich powiadomienia.   
+    - [Przepływy pracy mają zdarzenia biznesowe](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), których odbiorca może wywoływać w celu wyzwolenia na wyszukiwane przez nich powiadomienia.   
 
-Podsumowując, jeśli użytkownik nie otrzyma odpowiedniego powiadomienia z centrum akcji, gdy ma przypisany element pracy przepływu pracy, będzie korzystać [ze zdarzeń biznesowych przepływu pracy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) w Microsoft Flow w celu wprowadzenia dodatkowych lub różnych powiadomień.
+Podsumowując, jeśli użytkownik nie otrzyma odpowiedniego powiadomienia z centrum akcji, gdy ma przypisany element pracy przepływu pracy, będzie korzystać [ze zdarzeń biznesowych przepływu pracy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) w Microsoft Flow w celu wprowadzenia dodatkowych lub różnych powiadomień.

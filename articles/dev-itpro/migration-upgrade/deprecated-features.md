@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia.
 author: sericks007
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
-ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
+ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624914"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863390"
 ---
 # <a name="removed-or-deprecated-features"></a>Usunięte lub przestarzałe funkcje
 
@@ -40,10 +40,32 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 > Szczegółowe informacje o obiektów w rozwiązaniu Finance and Operations można znaleźć w [raportach z wykazami parametrów technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach programu Finance and Operations.
 
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 z aktualizacją platformy 28
+## <a name="dynamics-365-for-finance-and-operations-1005-with-platform-update-29"></a>Dynamics 365 for Finance and Operations 10.0.5 z aktualizacją platformy 29
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 z aktualizacją Platform update 28 jest dostępna dla użytkowników docelowych w ramach wersji wstępnej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Dostępność aktualizacji usługi](../../fin-and-ops/get-started/public-preview-releases.md).
+> Dynamics 365 for Finance and Operations 10.0.5 z aktualizacją Platform update 29 jest dostępna dla użytkowników docelowych w ramach wersji wstępnej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Dostępność aktualizacji usługi](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="us-payroll-tax-updates"></a>Aktualizacje amerykańskiego podatku od wynagrodzeń
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Wycofujemy funkcję aktualizacji amerykańskiego podatku od wynagrodzeń z powodu jej niskiego wykorzystania oraz wprowadzenia rozszerzonej funkcja, która jest teraz dostępna za pośrednictwem strategicznych integracji.  |
+| **Zamieniona przez inną funkcję?**   | Tak |
+| **Powiązane obszary produktów**         | Lista płac |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Przestarzałe: do 1 października 2021 planujemy wycofać funkcję aktualizacji amerykańskiego podatku od wynagrodzeń. Funkcjonalność pozostanie w produkcie, jednak ulepszenia nie będą już utrzymywać aktualności funkcjonalności, a wszelkie wady produktu będą oceniane indywidualnie dla każdego przypadku. Aby uzyskać więcej informacji, zobacz [Wycofanie funkcji aktualizacji amerykańskiego podatku od wynagrodzeń w Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq). |
+
+
+### <a name="data-management-staging-clean-up"></a>Czyszczenie przemieszczania zarządzania danych
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Nie spełnia podstawowych wymagań, które są potrzebne do planowania okresowego oczyszczania. |
+| **Zamieniona przez inną funkcję?**   | Tak, funkcja oczyszczania historii zadań jest dodawana w celu całościowego spełnienia tych scenariuszy. |
+| **Powiązane obszary produktów**         | Zarządzanie danymi |
+| **Opcja wdrażania**              | Wszystkich  |
+| **Stan**                         | Wycofane: docelowy okres usuwania funkcji to grudzień 2020 roku. |
+
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 z aktualizacją platformy 28
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Francja: eksportowanie danych księgowych FEC w XML
 
@@ -1235,7 +1257,7 @@ Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzaj
 
 ### <a name="virtual-company-accounts"></a>Firmy wirtualne
 
-Funkcja firm wirtualnych nie jest już obsługiwana w systemie Dynamics AX. Funkcja firm wirtualnych pozwalała użytkownikom na konfigurowanie tabel wspólnych dla zbioru firm. Opis tej funkcji można znaleźć w temacie [Firmy oraz firmy wirtualne](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). Funkcja działa poprzez grupowanie tabel w zbiory przypisane do wirtualnych firm będących grupami istniejących „rzeczywistych” firm. Tworzone są zapytania, tak aby wszystkie firmy w firmie wirtualnej miały dostęp do danych w tabelach skojarzonych zbiorów tabel.
+Funkcja firm wirtualnych nie jest już obsługiwana w systemie Dynamics AX. Funkcja firm wirtualnych pozwalała użytkownikom na konfigurowanie tabel wspólnych dla zbioru firm. Opis tej funkcji można znaleźć w temacie [Firmy oraz firmy wirtualne](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Funkcja działa poprzez grupowanie tabel w zbiory przypisane do wirtualnych firm będących grupami istniejących „rzeczywistych” firm. Tworzone są zapytania, tak aby wszystkie firmy w firmie wirtualnej miały dostęp do danych w tabelach skojarzonych zbiorów tabel.
 
 |   |  | 
 |------------|--------------------|

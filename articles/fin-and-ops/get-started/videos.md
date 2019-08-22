@@ -3,13 +3,13 @@ title: Filmy o rozwiązaniu Finance and Operations
 description: Ta strona zawiera listę filmów instruktażowych i technicznych przygotowanych przez Microsoft, które dotyczą rozwiązania Dynamics 365 for Finance and Operations i są dostępne na YouTube i w innych witrynach.
 author: josaw1
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 5ede5bfa3b7a61461adb1514b7e96c4eba5a75c7
-ms.sourcegitcommit: fdc37a3c2ca2bac5741e7017fb225344e64f041a
+ms.openlocfilehash: d2bf2c45f6298205dbed67f6921234757a2b736a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625404"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852088"
 ---
 # <a name="videos-for-finance-and-operations"></a>Filmy o rozwiązaniu Finance and Operations
 
@@ -71,6 +71,8 @@ Filmy są uszeregowane według funkcji, dlatego w celu obejrzenia całej treści
 
 #### <a name="intelligence"></a>Analizy
 
+- [Jak edytować osadzony raport w analitycznym obszarze roboczym](https://youtu.be/_8WlwmSggcQ)
+- [Jak osadzić raporty PowerBI.com w Dynamics 365 for Finance and Operations](https://youtu.be/gGWuNJDoi-M)
 - [Używanie własnej bazy danych (BYOD) w programie Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Jak w rozwiązaniu Dynamics 365 używać pakietu zawartości usługi Power BI Zarządzanie kosztami](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
