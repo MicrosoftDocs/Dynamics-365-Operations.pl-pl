@@ -1,20 +1,23 @@
-- name: Rozwiązanie Dynamics 365 for Finance and Operations
-  href: index.md
+- name: Dynamics 365 for Finance and Operations
   items:
+    - name: Dokumentacja rozwiązania Dynamics 365 for Finance and Operations
+      href: index.md
     - name: Rozpoczynanie pracy
       items:
         - name: Zanim kupisz
-          href: get-started/before-you-buy.md
           items:
+            - name: Zanim kupisz — strona główna
+              href: get-started/before-you-buy.md
             - name: Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
             - name: Wdrażanie środowiska demonstracyjnego
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
             - name: Porównanie funkcji w chmurze i lokalnych
               href: get-started/cloud-prem-comparison.md
-            - name: Opcje wdrażania
-              href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
+            - name: Uwagi dotyczące wdrażania
               items:
+                - name: Opcje wdrażania
+                  href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
                 - name: Wdrożenie w chmurze
                   href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/fin-and-ops/toc.json
                 - name: Wymagania systemowe dotyczące wdrożeń w chmurze
@@ -36,8 +39,9 @@
                 - name: Zakup rozwiązania Finance and Operations (on-premises)
                   href: get-started/purchase-on-premises.md
         - name: Nowości i zmiany
-          href: get-started/whats-new-changed.md
           items:
+            - name: Nowości i zmiany — strona główna
+              href: get-started/whats-new-changed.md
             - name: Zakończenie wsparcia podstawowego dla Microsoft Dynamics AX 2009 i 2012
               href: get-started/mainstream-support-ax-2009-2012.md
             - name: Usunięte lub wycofane funkcje
@@ -140,6 +144,8 @@
                   href: get-started/new-task-guides-available-february-2016.md
         - name: Poznawanie interfejsu użytkownika
           items:
+            - name: Elementy interfejsu użytkownika
+              href: get-started/user-interface-elements.md
             - name: Funkcje ułatwień dostępu
               href: get-started/accessibility-features.md
             - name: Zarządzanie funkcjami — omówienie
@@ -197,11 +203,12 @@
         - name: Filmy o rozwiązaniu Finance and Operations
           href: get-started/videos.md
     - name: Zarządzanie cyklem życia implementacji
-      href: imp-lifecycle/implementation-lifecycle.md
       items:
+        - name: Strona główna zarządzania cyklem życia implementacji
+          href: imp-lifecycle/implementation-lifecycle.md
         - name: Architektura rozwiązania Finance and Operations
           href: imp-lifecycle/architecture-overview.md
-        - name: Program Microsoft FastTrack for Finance and Operations
+        - name: Microsoft FastTrack for Finance and Operations
           href: get-started/fasttrack-dynamics-365-overview.md
         - name: Przygotowanie do przeprowadzenia projektu implementacji
           href: imp-lifecycle/onboard.md
@@ -224,11 +231,12 @@
         - name: Wielu projektów usługi LCS i środowisk produkcyjnych w tej samej dzierżawie usługi Azure AD
           href: get-started/implement-multiple-projects-aad-tenant.md
     - name: Aktualizacje do jednej wersji usługi
-      href: ../dev-itpro/lifecycle-services/oneversion-overview.md
       items:
+        - name: Omówienie aktualizacji do jednej wersji usługi
+          href: ../dev-itpro/lifecycle-services/oneversion-overview.md
         - name: Aktualizacje do jednej wersji usługi — często zadawane pytania
           href: get-started/one-version.md
-        - name: Zasady dotyczące cyklu życia oprogramowania — wersje w chmurze
+        - name: 'Zasady dotyczące cyklu życia oprogramowania: wersje chmurowe'
           href: ../dev-itpro/migration-upgrade/versions-update-policy.md
         - name: Zasady dotyczące cyklu życia oprogramowania — wersje lokalne
           href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
@@ -244,19 +252,14 @@
           href: ../dev-itpro/lifecycle-services/notifications-service-updates.md
         - name: Automatyzacja zadań danych
           href: ../dev-itpro/data-entities/data-task-automation.md
-        - name: Dostarczanie rozwiązań niezależnych dostawców oprogramowania przy użyciu funkcji Jedna wersja
+        - name: Dostarczanie rozwiązań niezależnych dostawców oprogramowania przy użyciu jednej wersji usługi
           href: ../dev-itpro/lifecycle-services/oneversion-isv.md
-        - name: Automatyzacja testów
-          items:
-            - name: Tworzenie i automatyzowanie testów akceptacji użytkownika
-              href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-            - name: Konfigurowanie samouczka narzędzia Regression Suite Automation Tool
-              href: get-started/hol-set-up-regression-suite-automation-tool.md
-            - name: Korzystanie z samouczka narzędzia Regression Suite Automation Tool
-              href: get-started/hol-use-regression-suite-automation-tool.md
+        - name: Tworzenie i automatyzowanie testów akceptacji użytkownika
+          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
     - name: Zdarzenia biznesowe
-      href: ../dev-itpro/business-events/home-page.md
       items:
+        - name: Omówienie zdarzeń biznesowych
+          href: ../dev-itpro/business-events/home-page.md
         - name: Zdarzenia biznesowe aplikacji
           href: ../dev-itpro/business-events/app-business-events.md
         - name: Zdarzenia biznesowe przepływu pracy
@@ -273,22 +276,34 @@
           href: ../dev-itpro/business-events/potential-use-cases.md
         - name: Samouczki
           items:
-            - name: Zużywanie zdarzeń biznesowych za pomocą usługi Microsoft Flow
+            - name: Zdarzenia biznesowe i usługa Microsoft Flow
               href: ../dev-itpro/business-events/how-to/how-to-flow.md
-            - name: Zużywanie zdarzeń biznesowych przy użyciu usługi Azure Event Grid
+            - name: Zdarzenia biznesowe i Azure Event Grid
               href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
-            - name: Zużywanie zdarzeń biznesowych przy użyciu usługi Azure Service Bus
+            - name: Zdarzenia biznesowe i Azure Service Bus
               href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
-            - name: Zużywanie zdarzeń biznesowych zatwierdzenia przepływu pracy
+            - name: Zdarzenia biznesowe i zatwierdzenia przepływu pracy
               href: ../dev-itpro/business-events/how-to/how-to-workflow.md
-            - name: Korzystanie z programu Microsoft Forms Pro w połączeniu ze zdarzeniami biznesowymi
+            - name: Zdarzenia biznesowe i usługa Microsoft Forms Pro
               href: ../dev-itpro/business-events/how-to/FormsPro.md
-    - name: Zarządzanie kosztami
-      href: ../supply-chain/cost-management/cost-management-home-page.md
+            - name: Zdarzenia biznesowe i Azure Event Hubs
+              href: ../dev-itpro/business-events/how-to/event-hub.md
+    - name: Zgodność z przepisami
       items:
+        - name: Reguły audytu
+          href: ../financials/general-ledger/audit-policy-rules.md
+        - name: Naruszenia zasad audytu i sprawy
+          href: ../financials/general-ledger/audit-policy-violations-cases.md
+        - name: Definiowanie zasad audytu dla dokumentów źródłowych
+          href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+    - name: Zarządzanie kosztami
+      items:
+        - name: Zarządzanie kosztami — strona główna
+          href: ../supply-chain/cost-management/cost-management-home-page.md
         - name: Wymagania wstępne dotyczące kosztów standardowych
-          href: ../supply-chain/cost-management/prerequisites-standard-costs.md
           items:
+            - name: Omówienie wymagań wstępnych dotyczących kosztów standardowych
+              href: ../supply-chain/cost-management/prerequisites-standard-costs.md
             - name: Omówienie konwersji na koszt standardowy
               href: ../supply-chain/cost-management/standard-cost-conversion-overview.md
             - name: Wymaganie wstępne dotyczące konwersji na koszt standardowy
@@ -308,8 +323,9 @@
             - name: Przygotowanie do zarządzania kosztami standardowymi wytworzonych towarów
               href: ../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md
         - name: Wersje wyceny
-          href: ../supply-chain/cost-management/costing-versions.md
           items:
+            - name: Omówienie wersji wyceny
+              href: ../supply-chain/cost-management/costing-versions.md
             - name: Arkusze wyceny
               href: ../supply-chain/cost-management/costing-sheets.md
             - name: Symulowanie zmian kosztów przy użyciu wersji wyceny dla kosztów planowanych
@@ -397,11 +413,12 @@
             - name: Interfejs REST API pakietu zarządzania danymi
               href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
             - name: Punkty końcowe usług
-              href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Omówienie punktów końcowych usług
+                  href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
                 - name: Rozwiązywanie problemów z uwierzytelnianiem usług
                   href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
-            - name: Interfejs OData
+            - name: OData
               href: ../dev-itpro/data-entities/odata.md?toc=/fin-and-ops/toc.json
             - name: Opracowywanie usług niestandardowych
               href: ../dev-itpro/data-entities/custom-services.md?toc=/fin-and-ops/toc.json
@@ -414,8 +431,9 @@
         - name: Programowanie na potrzeby integracji
           items:
             - name: Integracja danych za pomocą jednostek danych
-              href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Omówienie integracji danych za pomocą jednostek danych
+                  href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
                 - name: Opracowywanie jednostki na potrzeby migracji danych
                   href: ../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/fin-and-ops/toc.json
                 - name: Opracowywanie złożonych jednostek danych
@@ -428,7 +446,7 @@
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
             - name: Integracja danych przy użyciu Common Data Service
               items:
-                - name: Omówienie integracji danych
+                - name: Omówienie integracji danych przy użyciu Common Data Service
                   href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
                 - name: 'Synchroniczna, dwukierunkowa integracja'
                   items:
@@ -444,13 +462,13 @@
                       href: ../dev-itpro/data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
                     - name: Wstępna synchronizacja
                       href: ../dev-itpro/data-entities/dual-write-initial.md?toc=/fin-and-ops/toc.json
-                    - name: Rozwiązywanie problemów z integracją danych
+                    - name: Rozwiązywanie problemów związanych z integracją danych
                       href: ../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/fin-and-ops/toc.json
                 - name: 'Asynchroniczna, jednokierunkowa integracja'
                   items:
-                    - name: Od prospekta do gotówki
+                    - name: Konfigurowanie scenariusza Od prospekta do gotówki
                       items:
-                        - name: Konfigurowanie scenariusza Od prospekta do gotówki
+                        - name: Od prospekta do gotówki
                           href: ../supply-chain/sales-marketing/prospect-to-cash.md
                         - name: Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do odbiorców w rozwiązaniu Finance and Operations
                           href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
@@ -464,9 +482,9 @@
                           href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
                         - name: Synchronizowanie nagłówków i wierszy faktur sprzedaży w rozwiązaniu Finance and Operations bezpośrednio z elementami w rozwiązaniu Sales
                           href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                    - name: Field Service
+                    - name: Konfigurowanie integracji z rozwiązaniem Field Service
                       items:
-                        - name: Konfigurowanie integracji z rozwiązaniem Field Service
+                        - name: Omówienie konfigurowania integracji z rozwiązaniem Field Service
                           href: ../supply-chain/sales-marketing/field-service.md
                         - name: Synchronizowanie produktów w rozwiązaniu Finance and Operations z produktami w rozwiązaniu Field Service
                           href: ../supply-chain/sales-marketing/field-service-product.md
@@ -486,9 +504,9 @@
                           href: ../supply-chain/sales-marketing/synchronize-warehouse.md
                         - name: Synchronizowanie zleceń z projektem z rozwiązania Field Service do Finance and Operations
                           href: ../supply-chain/sales-marketing/synchronize-work-orders.md
-                    - name: Project Service Automation
+                    - name: Konfigurowanie integracji z rozwiązaniem Project Service Automation
                       items:
-                        - name: Konfigurowanie integracji z rozwiązaniem Project Service Automation
+                        - name: Omówienie rozwiązania Project Service Automation
                           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
                         - name: Parametry integracji z rozwiązaniem Project Service Automation
                           href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
@@ -507,16 +525,19 @@
         - name: Obsługa wiadomości elektronicznych
           href: ../financials/general-ledger/electronic-messaging.md
     - name: Zarządzanie danymi
-      href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Omówienie zarządzania danymi
+          href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
         - name: Jednostki danych
-          href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Omówienie jednostek danych
+              href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
             - name: Projekty danych konfiguracji
               href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/fin-and-ops/toc.json
             - name: Kopiowanie danych konfiguracji między firmami
-              href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Omówienie kopiowania danych konfiguracji
+                  href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
                 - name: Pakiety danych konfiguracji
                   href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Pakiety danych konfiguracji (tylko wydanie z lipca 2017)
@@ -538,8 +559,9 @@
             - name: Pakiety danych konfiguracji
               href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
         - name: Zadania importowania i eksportowania danych
-          href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Omówienie zadań importowania i eksportowania danych
+              href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
             - name: Najlepsze rozwiązania w zakresie importowania załączników za pomocą jednostki Arkusz finansowy
               href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
         - name: Opracowywanie jednostek danych
@@ -581,16 +603,19 @@
         - name: Opisy błędów zarządzania danymi
           href: ../dev-itpro/data-entities/dm-error-descriptions.md
     - name: Zarządzanie finansami
-      href: ../financials/index.md
       items:
+        - name: Zarządzanie finansami — strona główna
+          href: ../financials/index.md
         - name: Rozrachunki z dostawcami
-          href: ../financials/accounts-payable/accounts-payable.md
           items:
+            - name: Rozrachunki z dostawcami — strona główna
+              href: ../financials/accounts-payable/accounts-payable.md
             - name: Omówienie faktur od dostawców
               href: ../financials/accounts-payable/vendor-invoices-overview.md
             - name: Konfigurowanie modułu Rozrachunki z dostawcami
-              href: ../financials/accounts-payable/accounts-payable-overview.md
               items:
+                - name: Omówienie konfiguracji modułu Rozrachunki z dostawcami
+                  href: ../financials/accounts-payable/accounts-payable-overview.md
                 - name: Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą faktury od dostawcy
                   href: ../financials/accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
                 - name: Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą arkusza zatwierdzania
@@ -604,11 +629,12 @@
             - name: Trzyelementowe zasady uzgadniania
               href: ../financials/accounts-payable/three-way-matching-policies.md
             - name: Uzgadnianie faktur rozrachunków z dostawcami
-              href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
               items:
+                - name: Omówienie uzgadniania rozrachunków z dostawcami
+                  href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
                 - name: Konfigurowanie weryfikacji uzgadniania faktur w module Rozrachunki z dostawcami
                   href: ../financials/accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
-            - name: Zasady podziału księgowań i wpisy w arkuszu księgi podrzędnej dla faktur od dostawcy
+            - name: Zasady podziału księgowań i zapisów w arkuszu księgi podrzędnej dla faktur od dostawcy
               href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Uzgadnianie faktur i międzyfirmowe zamówienia zakupu
               href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
@@ -625,8 +651,9 @@
             - name: Przepływ pracy dostawcy
               href: ../financials/accounts-payable/vendor-workflow.md
             - name: Usuwanie rozbieżności podczas uzgadniania sum faktur
-              href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
               items:
+                - name: Omówienie usuwania rozbieżności podczas dopasowywania sum faktur
+                  href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
                 - name: Badanie lub rozwiązywanie wyjątków
                   href: ../financials/accounts-payable/tasks/research-resolve-exceptions.md
             - name: Profile księgowania dostawców
@@ -688,8 +715,9 @@
                 - name: Strona listy transakcji dostawcy
                   href: ../financials/accounts-payable/vendor-transaction-list-page.md
         - name: Rozrachunki z odbiorcami
-          href: ../financials/accounts-receivable/accounts-receivable.md
           items:
+            - name: Rozrachunki z odbiorcami — strona główna
+              href: ../financials/accounts-receivable/accounts-receivable.md
             - name: Kredyt i windykacje w module Rozrachunki z odbiorcami
               href: ../financials/accounts-receivable/collections-credit-accounts-receivable.md
             - name: Konfigurowanie modułu Rozrachunki z odbiorcami oraz kredytu i windykacji
@@ -783,13 +811,14 @@
                 - name: Strona listy transakcji odbiorcy
                   href: ../financials/accounts-receivable/customer-transactions-list-page.md
         - name: Budżetowanie
-          href: ../financials/budgeting/budgeting-overview.md
           items:
+            - name: Budżetowanie — strona główna
+              href: ../financials/budgeting/budgeting-overview.md
             - name: Omówienie planowania budżetu
               href: ../financials/budgeting/budget-planning-overview-configuration.md
             - name: Omówienie kontroli budżetu
               href: ../financials/budgeting/budget-control-overview-configuration.md
-            - name: 'Omówienie budżetu '
+            - name: Omówienie budżetowania
               href: ../financials/budgeting/basic-budgeting-overview-configuration.md
             - name: Prognozy dotyczące stanowisk
               href: ../financials/budgeting/position-forecasting.md
@@ -808,8 +837,9 @@
             - name: Integracja modułu Planowanie budżetu z innymi modułami
               href: ../financials/budgeting/budget-planning-integration-other-modules.md
         - name: Zarządzanie gotówką i bankami
-          href: ../financials/cash-bank-management/cash-bank-management.md
           items:
+            - name: Zarządzanie gotówką i bankami — strona główna
+              href: ../financials/cash-bank-management/cash-bank-management.md
             - name: Prognozowanie przepływów pieniężnych
               href: ../financials/cash-bank-management/cash-flow-forecasting.md
             - name: Obszar roboczy Zarządzanie bankami
@@ -885,8 +915,9 @@
                 - name: Aktualizowanie złożonej jednostki arkusza bankowego
                   href: ../financials/cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Rachunek kosztów
-          href: ../financials/cost-accounting/cost-accounting-home-page.md
           items:
+            - name: Rachunek kosztów — strona główna
+              href: ../financials/cost-accounting/cost-accounting-home-page.md
             - name: Terminologia z dziedziny rachunku kosztów
               href: ../financials/cost-accounting/terms-cost-accounting.md
             - name: 'Kalendarze obrachunkowe, lata obrachunkowe oraz okresy'
@@ -958,8 +989,9 @@
             - name: Używanie obszaru roboczego Kontrola kosztów w aplikacji mobilnej Finance and Operations
               href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
         - name: Zarządzanie wydatkami
-          href: ../financials/expense-management/expense-management.md
           items:
+            - name: Omówienie zarządzania wydatkami
+              href: ../financials/expense-management/expense-management.md
             - name: Raporty wydatków w nowej wersji
               href: ../financials/expense-management/ExpenseWorkspaceNew.md
             - name: Planowanie zarządzania wydatkami
@@ -995,8 +1027,9 @@
             - name: Wydatki osobiste w raporcie z wydatków
               href: ../financials/expense-management/personal-expenses.md
         - name: Środki trwałe
-          href: ../financials/fixed-assets/fixed-assets.md
           items:
+            - name: Środki trwałe — strona główna
+              href: ../financials/fixed-assets/fixed-assets.md
             - name: Tworzenie środka trwałego
               href: ../financials/fixed-assets/tasks/create-fixed-asset.md
             - name: Wprowadzanie środka komplementarnego dla środka trwałego
@@ -1100,15 +1133,187 @@
                 - name: Amortyzacja liniowa za okres użytkowania
                   href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
         - name: Księga główna
-          href: ../financials/general-ledger/general-ledger.md
           items:
+            - name: Omówienie księgi głównej
+              href: ../financials/general-ledger/general-ledger.md
+            - name: Konta
+              items:
+                - name: Omówienie naliczeń
+                  href: ../financials/general-ledger/accruals-overview.md
+                - name: Reguły eliminacji
+                  href: ../financials/general-ledger/elimination-rules.md
+                - name: Kombinacje kont i wymiarów
+                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                - name: Zbilansowane arkusze dla księgowania międzyjednostkowego
+                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
+                - name: Definicje księgowania
+                  href: ../financials/general-ledger/posting-definitions.md
+                - name: Przykłady definicji księgowania
+                  href: ../financials/general-ledger/example-posting-definitions.md
+                - name: Salda kont księgi głównej
+                  href: ../financials/general-ledger/general-ledger-account-balances.md
+                - name: Definiowanie wymiarów finansowych
+                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
+                - name: Obsługa domyślnych szablonów wymiarów finansowych
+                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: Tworzenie struktur kont
+                  href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: Wymiary finansowe i księgowanie
+                  href: ../financials/general-ledger/default-dimensions.md
+                - name: Tworzenie schematów naliczania
+                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
+                - name: Konsolidacje finansowe i przeliczanie walut
+                  items:
+                    - name: Omówienie konsolidacji finansowych i przeliczania walut
+                      href: ../financials/general-ledger/financial-consolidations-currency-translation.md
+                    - name: Konsolidowanie w trybie online
+                      href: ../financials/general-ledger/consolidate-online.md
+                    - name: Generowanie skonsolidowanych sprawozdań finansowych
+                      href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+                - name: Tworzenie grup konsolidacji i dodatkowego konta konsolidacyjnego
+                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
+                - name: Typy kont głównych
+                  href: ../financials/general-ledger/main-account-types.md
+                - name: Tworzenie konta głównego
+                  href: ../financials/general-ledger/tasks/create-main-account.md
+                - name: Planowanie planu kont
+                  href: ../financials/general-ledger/plan-chart-of-accounts.md
+                - name: Rozliczanie transakcji między kontami księgowymi
+                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
+                - name: Konfigurowanie aliasu konta księgowego
+                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
+                - name: Konfigurowanie kategorii konta głównego
+                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
+                - name: Eksplorator źródeł księgowania
+                  href: ../financials/accounts-payable/accounting-source-explorer.md
+                - name: Zasady podziału księgowań
+                  href: ../financials/accounts-payable/accounting-distributions.md
+                - name: Przetwarzanie alokacji
+                  href: ../financials/general-ledger/process-allocations.md
+                - name: Wymiary finansowe
+                  href: ../financials/general-ledger/financial-dimensions.md
+                - name: Konwersja waluty rozliczeniowej lub raportowania
+                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
+                - name: Grupy i konta dla konta konsolidacyjnego
+                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
+                - name: Omówienie konsolidacji i eliminacji
+                  href: ../financials/budgeting/consolidation-elimination-overview.md
+                - name: 'Kalendarze obrachunkowe, lata obrachunkowe oraz okresy'
+                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+                - name: Konfigurowanie struktur kont
+                  href: ../financials/general-ledger/configure-account-structures.md
+                - name: Dwie waluty
+                  href: ../financials/general-ledger/dual-currency.md
+            - name: Arkusze i księgi
+              items:
+                - name: Przetwarzanie arkuszy finansowych
+                  href: ../financials/general-ledger/general-journal-processing.md
+                - name: Księgowanie arkuszy okresowych
+                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
+                - name: Przetwarzanie arkusza alokacji księgi
+                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
+                - name: Ustawienia księgowania międzyfirmowego
+                  href: ../financials/general-ledger/intercompany-accounting-setup.md
+                - name: Reguły alokacji księgi
+                  href: ../financials/general-ledger/ledger-allocation-rules.md
+                - name: Tworzenie reguł zaawansowanych dla arkuszy
+                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
+                - name: Tworzenie i przypisywanie struktur reguł zaawansowanych
+                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
+                - name: Typy arkuszy księgi
+                  href: ../financials/general-ledger/ledger-journal-types.md
+                - name: Tworzenie i sprawdzanie arkuszy
+                  href: ../financials/general-ledger/tasks/create-validate-journals.md
+                - name: Wyświetlanie wpisów w arkuszu lub transakcji
+                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
+                - name: Wyświetlanie powiązanego załącznika międzyfirmowego z arkusza
+                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                - name: Tworzenie wpisu w arkuszu za pomocą szablonu
+                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
+                - name: Tworzenie transakcji naliczeń finansowych
+                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Publikowanie wierszy arkuszy oraz dokumentów z programu Excel
+                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
+                - name: Wyświetlanie wpisów w arkuszu i transakcji
+                  href: ../financials/general-ledger/view-journal-entries-transactions.md
+                - name: Zapisywanie w arkuszu zaksięgowanych wpisów w arkuszu
+                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
+                - name: Przeszacowanie waluty w konsolidowanej firmie
+                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
+                - name: Przeszacowanie w walucie obcej dla księgi głównej
+                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
+                - name: Importowanie kursów wymiany walut
+                  href: ../financials/general-ledger/import-currency-exchange-rates.md
+                - name: Pojedynczy załącznik
+                  href: ../financials/general-ledger/one-voucher.md
+                - name: Rozliczenia księgi
+                  href: ../financials/general-ledger/ledger-settlements.md
+            - name: Zamknięcie na koniec okresu
+              items:
+                - name: Zamknięcie księgi głównej na koniec okresu
+                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
+                - name: Obszar roboczy Zamknięcie okresu obrachunkowego
+                  href: ../financials/general-ledger/financial-period-close-workspace.md
+                - name: Zamknięcie na koniec roku
+                  href: ../financials/general-ledger/year-end-close.md
+                - name: Zamykanie roku obrachunkowego
+                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
+                - name: Zbiorowe zamykanie okresów obrachunkowych
+                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
+            - name: Podatek
+              items:
+                - name: Omówienie podatku
+                  href: ../financials/general-ledger/indirect-taxes-overview.md
+                - name: Stawki podatku w zależności od podstawy i metod obliczania
+                  href: ../financials/general-ledger/marginal-base-field.md
+                - name: Reguły płatności podatku i zaokrąglania
+                  href: ../financials/general-ledger/round-sales-tax-payments.md
+                - name: Wybieranie metody obliczania podatku w polu Źródło
+                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+                - name: Opcje Cała kwota i Obliczanie interwału dla kodów podatku
+                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                - name: Obliczanie i korygowanie podatku na fakturze od dostawcy
+                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: Tworzenie płatności podatku
+                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
+                - name: Tworzenie transakcji podatku w dokumentach
+                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
+                - name: Konfigurowanie grupy księgowania podatku
+                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                - name: Konfigurowanie urzędów skarbowych
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
+                - name: Konfigurowanie kodów podatków
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
+                - name: Konfigurowanie grup podatków i grup podatków dla towarów
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                - name: Ustawianie kodów raportowania podatku
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Konfigurowanie okresów rozliczania podatku
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                - name: Konfigurowanie potrąconych zaliczek na podatek
+                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
+                - name: Wyświetlanie zaksięgowanych transakcji podatkowych
+                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
+            - name: Pulpit inspekcji
+              items:
+                - name: Reguły audytu
+                  href: ../financials/general-ledger/audit-policy-rules.md
+                - name: Naruszenia zasad audytu i sprawy
+                  href: ../financials/general-ledger/audit-policy-violations-cases.md
+                - name: Definiowanie zasad audytu dla dokumentów źródłowych
+                  href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+        - name: Sektor publiczny
+          items:
+            - name: Sektor publiczny — strona główna
+              href: ../financials/public-sector/public-sector-functionality.md
             - name: Planowanie funkcjonalności dla sektora publicznego
               href: ../financials/public-sector/plan-public-sector-functionality.md
             - name: Tworzenie okładki i stron podpisu dla raportu płatności dla sektora publicznego
               href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
             - name: Rozrachunki z dostawcami w sektorze publicznym
-              href: ../financials/public-sector/accounts-payable-public-sector.md
               items:
+                - name: Omówienie rozrachunków z dostawcami w sektorze publicznym
+                  href: ../financials/public-sector/accounts-payable-public-sector.md
                 - name: Kody zamówień zakupu w sektorze publicznym
                   href: ../financials/public-sector/purchase-order-codes-public-sector.md
                 - name: Tworzenie i przypisywanie kodu partnera handlowego w sektorze publicznym
@@ -1130,8 +1335,9 @@
                 - name: Konfigurowanie klasyfikacji umów zakupu w sektorze publicznym
                   href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
             - name: Rozrachunki z odbiorcami w sektorze publicznym
-              href: ../financials/public-sector/accounts-receivable-public-sector.md
               items:
+                - name: Omówienie rozrachunków z odbiorcami w sektorze publicznym
+                  href: ../financials/public-sector/accounts-receivable-public-sector.md
                 - name: Klasyfikacje faktur i kody fakturowania w sektorze publicznym
                   href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
                 - name: Tworzenie klasyfikacji faktur w sektorze publicznym
@@ -1145,8 +1351,9 @@
                 - name: Zwroty nadpłat w sektorze publicznym
                   href: ../financials/public-sector/reimbursements-public-sector.md
             - name: Budżetowanie w sektorze publicznym
-              href: ../financials/public-sector/budgeting-public-sector.md
               items:
+                - name: Omówienie budżetowania w sektorze publicznym
+                  href: ../financials/public-sector/budgeting-public-sector.md
                 - name: Tworzenie pierwotnego budżetu i odwracanie wpisów budżetu wstępnego dla sektora publicznego
                   href: ../financials/public-sector/tasks/create-original-budget.md
                 - name: Tworzenie wstępnego budżetu dla sektora publicznego
@@ -1172,8 +1379,9 @@
             - name: Środki trwałe w sektorze publicznym
               href: ../financials/public-sector/fixed-asset-public-sector.md
             - name: Księga główna w sektorze publicznym
-              href: ../financials/public-sector/general-ledger-public-sector.md
               items:
+                - name: Omówienie księgi głównej w sektorze publicznym
+                  href: ../financials/public-sector/general-ledger-public-sector.md
                 - name: Zapisy księgowe dotyczące zaliczek w sektorze publicznym
                   href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
                 - name: Tworzenie wpisów księgowych dotyczących zaliczek w sektorze publicznym
@@ -1199,8 +1407,9 @@
             - name: Dodawanie typu certyfikacji do dostawcy w sektorze publicznym
               href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
         - name: Raportowanie finansowe
-          href: ../financials/general-ledger/financial-reporting-getting-started.md
           items:
+            - name: Omówienie raportowania finansowego
+              href: ../financials/general-ledger/financial-reporting-getting-started.md
             - name: Omówienie raportowania finansowego
               href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
             - name: Składniki raportu finansowego
@@ -1236,13 +1445,15 @@
         - name: Obsługa wiadomości elektronicznych
           href: ../financials/general-ledger/electronic-messaging.md
     - name: Globalizacja
-      href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Zasoby globalizacji
+          href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
         - name: Aktualizacje wymagane przepisami prawa
           href: ../financials/localizations/regulatory-updates.md
         - name: Australia
-          href: ../financials/localizations/australia.md
           items:
+            - name: Australia — omówienie
+              href: ../financials/localizations/australia.md
             - name: Oświadczenie o działalności gospodarczej (BAS)
               href: ../financials/localizations/apac-aus-business-activity-statement.md
             - name: Dodawanie pól raportu i generowanie deklaracji BAS
@@ -1252,8 +1463,9 @@
             - name: Konfigurowanie kodów przyczyn w deklaracji BAS
               href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
         - name: Austria
-          href: ../financials/localizations/austria.md
           items:
+            - name: Austria — omówienie
+              href: ../financials/localizations/austria.md
             - name: Amortyzacja dla dodatkowych nabyć co pół roku
               href: ../financials/localizations/emea-aut-half-year-depreciation.md
             - name: Opłaty materiałowe opakowań
@@ -1261,8 +1473,9 @@
             - name: Deklaracja VAT
               href: ../financials/localizations/emea-aut-vat-statement-details.md
         - name: Belgia
-          href: ../financials/localizations/belgium.md
           items:
+            - name: Belgia — omówienie
+              href: ../financials/localizations/belgium.md
             - name: Wyciąg bankowy CODA
               href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
             - name: Tworzenie i transferowanie transakcji do BLWI
@@ -1276,13 +1489,15 @@
             - name: Konfiguracja i obsługa badania PRODCOM
               href: ../financials/localizations/emea-bel-prodcom-report.md
         - name: Brazylia
-          href: ../financials/localizations/brazil.md
           items:
+            - name: Brazylia — omówienie
+              href: ../financials/localizations/brazil.md
             - name: Zakres lokalizacji
               href: ../financials/localizations/latam-bra-scope.md
             - name: Księgi podatkowe
-              href: ../financials/localizations/latam-bra-fiscal-books.md
               items:
+                - name: Omówienie ksiąg podatkowych — Brazylia
+                  href: ../financials/localizations/latam-bra-fiscal-books.md
                 - name: Konfigurowanie ksiąg podatkowych
                   href: ../financials/localizations/latam-bra-configure-fiscal-books.md
                 - name: Dokumenty fiskalne dotyczące podatku ICMS
@@ -1350,8 +1565,9 @@
                 - name: Noty uznaniowe projektu
                   href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
             - name: Proces NF-e
-              href: ../financials/localizations/latam-bra-nf-e-process.md
               items:
+                - name: Omówienie procesu NF-e — Brazylia
+                  href: ../financials/localizations/latam-bra-nf-e-process.md
                 - name: Automatyczne przekazywanie dokumentów fiskalnych NF-e
                   href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
                 - name: Generowanie wiadomości e-mail dla zatwierdzonych dokumentów NF-e i dołączanie plików PDF DANFE i XML NF-e do wiadomości e-mail
@@ -1397,8 +1613,9 @@
             - name: Obliczanie odsetek i kar pieniężnych dotyczących płatności odbiorcy
               href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
             - name: Podatki
-              href: ../financials/localizations/latam-bra-calculate-taxes.md
               items:
+                - name: Omówienie podatków — Brazylia
+                  href: ../financials/localizations/latam-bra-calculate-taxes.md
                 - name: Obliczanie podatku od ofert zakupu
                   href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
                 - name: Tworzenie wymiaru podatku — ICMS
@@ -1444,8 +1661,9 @@
                 - name: Potrącone zaliczki na podatek dla płatności dla dostawcy
                   href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
         - name: Chiny
-          href: ../financials/localizations/china.md
           items:
+            - name: Chiny — omówienie
+              href: ../financials/localizations/china.md
             - name: Rozwiązanie Finance and Operations obsługiwane przez firmę 21Vianet w Chinach
               href: ../dev-itpro/deployment/china-local-deployment.md
             - name: Porównanie list składowych (BOM)
@@ -1485,8 +1703,9 @@
             - name: Faktury VAT dla odbiorców — często zadawane pytania
               href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
         - name: Republika Czeska
-          href: ../financials/localizations/czech-republic.md
           items:
+            - name: Republika Czeska
+              href: ../financials/localizations/czech-republic.md
             - name: Faktura korygująca na rabacie gotówkowym
               href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
             - name: Środki trwałe
@@ -1514,8 +1733,9 @@
             - name: Zamknięcie na koniec roku
               href: ../financials/localizations/emea-cze-hun-year-end.md
         - name: Dania
-          href: ../financials/localizations/denmark.md
           items:
+            - name: Dania — omówienie
+              href: ../financials/localizations/denmark.md
             - name: Przypisywanie formatu dokumentu płatności do konta odbiorcy
               href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
             - name: Tworzenie i księgowanie faktury dla odbiorcy z sektora publicznego
@@ -1539,18 +1759,21 @@
             - name: Konfigurowanie formatu dokumentu płatności
               href: ../financials/localizations/tasks/set-up-payment-slip-format.md
         - name: Estonia
-          href: ../financials/localizations/estonia.md
           items:
+            - name: Estonia — omówienie
+              href: ../financials/localizations/estonia.md
             - name: Żądania danych osobowych
               href: ../financials/localizations/emea-est-personal-info.md
             - name: Deklaracja VAT
               href: ../financials/localizations/emea-est-vat-statement-details.md
         - name: Europa
-          href: ../financials/localizations/europe.md
           items:
+            - name: Europa — omówienie
+              href: ../financials/localizations/europe.md
             - name: Posiadacze zaliczek
-              href: ../financials/localizations/emea-advance-holders.md
               items:
+                - name: Omówienie posiadaczy zaliczek
+                  href: ../financials/localizations/emea-advance-holders.md
                 - name: Transakcje posiadaczy zaliczek
                   href: ../financials/localizations/emea-advance-holders-transactions.md
                 - name: Zaliczki na rzecz pracownika etatowego (Europa Wschodnia)
@@ -1606,8 +1829,9 @@
                 - name: Tworzenie i eksportowanie płatności dla dostawcy przy użyciu formatu płatności ISO20022
                   href: ../financials/localizations/tasks/create-export-vendor-payments-iso20022-payment-format.md
             - name: Intrastat
-              href: ../financials/localizations/emea-intrastat.md
               items:
+                - name: Omówienie systemu Intrastat
+                  href: ../financials/localizations/emea-intrastat.md
                 - name: Przesyłanie transakcji do systemu Intrastat
                   href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
                 - name: Określanie adresu załadunku dla transakcji wewnątrzwspólnotowej
@@ -1685,8 +1909,9 @@
             - name: Wyświetlanie transakcji w rozliczeniu
               href: ../financials/localizations/emea-transactions-settlement-form.md
         - name: Francja
-          href: ../financials/localizations/france.md
           items:
+            - name: Francja — omówienie
+              href: ../financials/localizations/france.md
             - name: Sektor publiczny
               items:
                 - name: Księgowanie w sektorze publicznym
@@ -1740,13 +1965,15 @@
                 - name: Wytyczne dotyczące wdrażania kas
                   href: ../retail/localizations/emea-fra-deployment.md
         - name: Niemcy
-          href: ../financials/localizations/germany.md
           items:
+            - name: Niemcy — omówienie
+              href: ../financials/localizations/germany.md
             - name: Amortyzacja dodatkowych nabyć
               href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
             - name: Plik audytu
-              href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
               items:
+                - name: Omówienie pliku audytu — Niemcy
+                  href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
                 - name: Dostosowywanie konfiguracji pliku audytu
                   href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
                 - name: Generowanie pliku audytu
@@ -1762,8 +1989,9 @@
             - name: Konfigurowanie elektronicznych deklaracji podatkowych
               href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
         - name: Węgry
-          href: ../financials/localizations/hungary.md
           items:
+            - name: Węgry — omówienie
+              href: ../financials/localizations/hungary.md
             - name: Obliczanie kursu wymiany
               href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
             - name: Metody amortyzacji środków trwałych
@@ -1777,8 +2005,9 @@
             - name: Zamknięcie na koniec roku
               href: ../financials/localizations/emea-cze-hun-year-end.md
         - name: Islandia
-          href: ../financials/localizations/iceland.md
           items:
+            - name: Islandia — omówienie
+              href: ../financials/localizations/iceland.md
             - name: Tworzenie konta odbiorcy i dołączanie kategorii deklaracji na fakturze
               href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
             - name: Konfigurowanie deklaracji faktury od dostawcy
@@ -1788,11 +2017,15 @@
             - name: Aktualizowanie deklaracji faktury od dostawcy i generowanie raportu
               href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
         - name: Indie
-          href: ../financials/localizations/india.md
           items:
+            - name: Indie — omówienie
+              href: ../financials/localizations/india.md
+            - name: Zakres lokalizacji indyjskich
+              href: ../financials/localizations/apac-ind-scope.md
             - name: Środki trwałe
-              href: ../financials/localizations/apac-ind-fixed-assets.md
               items:
+                - name: Przegląd środków trwałych w Indiach
+                  href: ../financials/localizations/apac-ind-fixed-assets.md
                 - name: Dołączanie dziennego kalendarza do księgi środków trwałych
                   href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
                 - name: Obliczanie amortyzacji zmianowej
@@ -1816,8 +2049,9 @@
                 - name: Przenoszenie pozycji kapitałowych do środka trwałego
                   href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
             - name: Podatek GST (Indie)
-              href: ../financials/localizations/apac-ind-gst.md
               items:
+                - name: Omówienie podatku GST w Indiach
+                  href: ../financials/localizations/apac-ind-gst.md
                 - name: Grupy odwołania podatku GST (Indie)
                   href: ../financials/localizations/apac-ind-gst-reference-groups.md
                 - name: Integracja podatku GST w kasach
@@ -1960,22 +2194,27 @@
                   href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
                 - name: Wytyczne dotyczące wdrażania kas
                   href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-            - name: Omówienie aparatu podatków
-              href: ../financials/general-ledger/tax-engine.md
+            - name: Aparat podatków
               items:
-                - name: Importuj konfigurację
-                  href: ../financials/general-ledger/tax-engine-import-configuration.md
-                - name: Możliwość stosowania aparatu podatków
-                  href: ../financials/general-ledger/tax-engine-applicability.md
-                - name: Integracja aparatu podatków
-                  href: ../financials/general-ledger/tax-engine-integration.md
-                - name: Rozszerzanie aparatu podatków
-                  href: ../financials/general-ledger/extend-tax-engine-configurations.md
+                - name: Omówienie aparatu podatków
+                  href: ../financials/general-ledger/tax-engine.md
+                  items:
+                    - name: Importowanie konfiguracji
+                      href: ../financials/general-ledger/tax-engine-import-configuration.md
+                    - name: Możliwość stosowania aparatu podatków
+                      href: ../financials/general-ledger/tax-engine-applicability.md
+                    - name: Integracja aparatu podatków
+                      href: ../financials/general-ledger/tax-engine-integration.md
+                    - name: Rozszerzanie aparatu podatków
+                      href: ../financials/general-ledger/extend-tax-engine-configurations.md
             - name: Progi podatkowe — często zadawane pytania
               href: ../financials/localizations/apac-ind-tax-thresholds.md
+            - name: Przeniesienia zapasów
+              href: ../financials/localizations/apac-ind-stock-transfer.md
         - name: Włochy
-          href: ../financials/localizations/italy.md
           items:
+            - name: Włochy — omówienie
+              href: ../financials/localizations/italy.md
             - name: Szczegóły deklaracji VAT
               href: ../financials/localizations/emea-ita-vat-statements-details.md
             - name: Raport czarnej listy
@@ -1997,8 +2236,9 @@
             - name: Potrącona zaliczka na podatek
               href: ../financials/localizations/emea-ita-withholding-tax.md
         - name: Japonia
-          href: ../financials/localizations/japan.md
           items:
+            - name: Japonia — omówienie
+              href: ../financials/localizations/japan.md
             - name: Nabywanie środka trwałego i roszczenia do dotacji państwowej
               href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
             - name: Nabywanie środka trwałego ze zobowiązaniami do wycofania środków trwałych
@@ -2156,8 +2396,9 @@
             - name: Używanie listy demontażu środków trwałych
               href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
         - name: Łotwa
-          href: ../financials/localizations/latvia.md
           items:
+            - name: Łotwa — omówienie
+              href: ../financials/localizations/latvia.md
             - name: Księgowanie środków trwałych
               href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
             - name: Śledzenie zmian lokalizacji środków trwałych
@@ -2169,8 +2410,9 @@
             - name: Szczegóły deklaracji VAT
               href: ../financials/localizations/emea-lva-vat-statement-details.md
         - name: Litwa
-          href: ../financials/localizations/lithuania.md
           items:
+            - name: Litwa — omówienie
+              href: ../financials/localizations/lithuania.md
             - name: Zestawienie napraw środków trwałych
               href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
             - name: Generowanie dokumentu przeniesienia środków trwałych między magazynami
@@ -2180,8 +2422,9 @@
             - name: Szczegóły deklaracji VAT
               href: ../financials/localizations/emea-ltu-vat-statement-details.md
         - name: Malezja
-          href: ../financials/localizations/malaysia.md
           items:
+            - name: Malezja — omówienie
+              href: ../financials/localizations/malaysia.md
             - name: Generowanie kredytu odbiorcy dla sprzedaży projektu
               href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
             - name: Generowanie debetu odbiorcy dla sprzedaży projektu
@@ -2203,8 +2446,9 @@
             - name: Konfigurowanie klauzul zwolnienia z podatku GST
               href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
         - name: Meksyk
-          href: ../financials/localizations/mexico.md
           items:
+            - name: Meksyk — omówienie
+              href: ../financials/localizations/mexico.md
             - name: Zakres lokalizacji
               href: ../financials/localizations/latam-mex-scope.md
             - name: Raport deklaracji korekty o inflację
@@ -2242,15 +2486,17 @@
             - name: Identyfikatory rejestracji dostawcy
               href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
         - name: Holandia
-          href: ../financials/localizations/netherlands.md
           items:
+            - name: Holandia — omówienie
+              href: ../financials/localizations/netherlands.md
             - name: Elektroniczne deklaracje podatkowe (EVAT)
               href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
             - name: Integracja Semansys XBRL
               href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
         - name: Norwegia
-          href: ../financials/localizations/norway.md
           items:
+            - name: Norwegia — omówienie
+              href: ../financials/localizations/norway.md
             - name: Formaty płatności odbiorcy i dostawcy
               href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
             - name: Płatność odbiorcy na podstawie identyfikatora płatności
@@ -2264,8 +2510,9 @@
             - name: Wytyczne dotyczące wdrażania kas
               href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Polska
-          href: ../financials/localizations/poland.md
           items:
+            - name: Polska — omówienie
+              href: ../financials/localizations/poland.md
             - name: Aktywowanie stornowania
               href: ../financials/localizations/emea-pol-red-storno.md
             - name: Obliczanie rabatów wiersza na podstawie ceny jednostkowej
@@ -2293,8 +2540,9 @@
             - name: Zestawienie obrotów i sald
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
         - name: Rosja
-          href: ../financials/localizations/russia.md
           items:
+            - name: Rosji — omówienie
+              href: ../financials/localizations/russia.md
             - name: Księga główna
               items:
                 - name: Zgodność kont
@@ -2306,8 +2554,9 @@
                 - name: Importowanie kursów wymiany walut z CBRF
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
             - name: Posiadacze zaliczek
-              href: ../financials/localizations/rus-advance-holders.md
               items:
+                - name: Omówienie posiadaczy zaliczek (Rosja)
+                  href: ../financials/localizations/rus-advance-holders.md
                 - name: Tworzenie posiadacza zaliczki
                   href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
                 - name: Codzienne operacje dotyczące posiadaczy zaliczek
@@ -2318,18 +2567,26 @@
                   href: ../financials/localizations/rus-advance-adjustment-parameters.md
                 - name: Raporty posiadaczy zaliczek
                   href: ../financials/localizations/rus-local-management-reports-primary-forms.md
-            - name: Bank
+            - name: Gotówka i banki
               items:
                 - name: Konfigurowanie kont bankowych
                   href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
                 - name: Konfigurowanie i przetwarzanie poleceń zapłaty
                   href: ../financials/localizations/rus-payment-order-settings-processing.md
+                - name: Różnica kursowa
+                  href: ../financials/localizations/rus-exchange-adjustment.md
                 - name: 'Sprzedaż, zakupy i przeniesienia w walucie obcej'
                   href: ../financials/localizations/rus-currency-sale-purchase.md
+                - name: Gotówka podręczna
+                  href: ../financials/localizations/emea-petty-cash.md
             - name: VAT
               items:
                 - name: Lokalne księgowanie należnego podatku VAT
                   href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
+                - name: Przetwarzanie i drukowanie faktur
+                  href: ../financials/localizations/rus-invoice-facture-process-print.md
+                - name: Dokumenty faktur korekt i dokumenty faktur korygujących
+                  href: ../financials/localizations/rus-revise-invoice-facture.md
                 - name: Podatek od towarów i usług (VAT) dla agentów podatkowych
                   href: ../financials/localizations/rus-tax-agent.md
                 - name: Deklaracja VAT
@@ -2378,10 +2635,12 @@
                   href: ../financials/localizations/printing-forms-fixed-assets.md
                 - name: Księgowanie odzieży roboczej/narzędzi (Rosja)
                   href: ../financials/localizations/rus-working-clothes-instruments-accounting.md
-                - name: Środki trwałe o niskiej wartości (Rosja)
+                - name: Środki trwałe o niskiej wartości (NVFA) (Rosja)
                   href: ../financials/localizations/rus-not-valuable-assets.md
             - name: Rozrachunki z dostawcami i odbiorcami
               items:
+                - name: Korekty noty kredytowej (Rosja)
+                  href: ../financials/localizations/rus-credit-note-correction.md
                 - name: Faktury do zapłaty
                   href: ../financials/localizations/rus-invoice-payment.md
                 - name: Konfigurowanie kontroli wymiarów dla rozliczeń
@@ -2416,7 +2675,7 @@
               items:
                 - name: Konfigurowanie odroczeń
                   href: ../financials/localizations/rus-set-up-deferrals.md
-                - name: Tworzenie lub generowanie referencji
+                - name: Tworzenie lub generowanie odroczeń
                   href: ../financials/localizations/rus-create-generate-deferrals.md
                 - name: Przyjmowanie odroczeń
                   href: ../financials/localizations/rus-deferral-transactions.md
@@ -2429,20 +2688,23 @@
                 - name: Raportowanie odroczeń
                   href: ../financials/localizations/rus-reporting-deferrals.md
         - name: Arabia Saudyjska
-          href: ../financials/localizations/saudi-arabia.md
           items:
+            - name: Arabii Saudyjska — omówienie
+              href: ../financials/localizations/saudi-arabia.md
             - name: Podatek
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: Raportowanie Zakat dla Arabii Saudyjskiej
               href: ../financials/localizations/emea-sau-zakat-reporting.md
         - name: Singapur
-          href: ../financials/localizations/singapore.md
           items:
+            - name: Singapur — omówienie
+              href: ../financials/localizations/singapore.md
             - name: Generowanie raportu GST-05
               href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
         - name: Hiszpania
-          href: ../financials/localizations/spain.md
           items:
+            - name: Hiszpania — omówienie
+              href: ../financials/localizations/spain.md
             - name: Stosowanie rabatów gotówkowych na fakturze
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: Opcje weksla
@@ -2472,8 +2734,9 @@
             - name: Specjalne wpisy i arkusze otwarcia
               href: ../financials/localizations/emea-esp-opening-sheets-spain.md
         - name: Szwecja
-          href: ../financials/localizations/sweden.md
           items:
+            - name: Szwecja — omówienie
+              href: ../financials/localizations/sweden.md
             - name: Eksportowanie informacji finansowych dla audytorów (Szwecja)
               href: ../financials/localizations/emea-swe-sie-standard-report.md
             - name: Formaty importowania płatności
@@ -2481,13 +2744,15 @@
             - name: Kasy
               href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
         - name: Szwajcaria
-          href: ../financials/localizations/switzerland.md
           items:
+            - name: Szwajcaria — omówienie
+              href: ../financials/localizations/switzerland.md
             - name: Importowanie płatności odbiorcy w formacie ESR
               href: ../financials/localizations/emea-che-esr-customer-payments-import.md
         - name: Tajlandia
-          href: ../financials/localizations/thailand.md
           items:
+            - name: Tajlandia — omówienie
+              href: ../financials/localizations/thailand.md
             - name: Raporty kart zapasów
               href: ../financials/localizations/apac-tha-stock-card-reports.md
             - name: Faktura podatkowa podstawiania/korekty
@@ -2497,8 +2762,9 @@
             - name: Potrącona zaliczka na podatek
               href: ../financials/localizations/apac-tha-withholding-tax.md
         - name: Zjednoczone Królestwo
-          href: ../financials/localizations/united-kingdom.md
           items:
+            - name: Zjednoczone Królestwo — omówienie
+              href: ../financials/localizations/united-kingdom.md
             - name: Schemat Construction Industry Scheme
               href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
             - name: Tworzenie kredytu na podstawie ustalonego rabatu
@@ -2516,15 +2782,17 @@
             - name: Zamiana podatku na format cyfrowy na potrzeby VAT
               href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
         - name: Stany Zjednoczone
-          href: ../financials/localizations/united-states.md
           items:
+            - name: Stany Zjednoczone — omówienie
+              href: ../financials/localizations/united-states.md
             - name: Raporty 1099 na koniec roku w Stanach Zjednoczonych
               href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
             - name: Formularz 1099 dla sektora publicznego
               href: ../financials/localizations/noam-usa-form-1099-public-sector.md
     - name: Zasoby ludzkie
-      href: hr/hr-landing-page.md
       items:
+        - name: Zasoby ludzkie — omówienie
+          href: hr/hr-landing-page.md
         - name: Opracowywanie strategii dotyczącej zasobów ludzkich
           items:
             - name: Tworzenie celów
@@ -2676,8 +2944,9 @@
             - name: Obsługa informacji dotyczących urazów i chorób pracowników etatowych
               href: hr/tasks/maintain-employee-injury-illness-information.md
         - name: Lista płac (USA)
-          href: hr/localizations/noam-usa-payroll.md
           items:
+            - name: Przegląd listy płac dla Stanów Zjednoczonych
+              href: hr/localizations/noam-usa-payroll.md
             - name: Ustawienia listy płac
               items:
                 - name: Konfigurowanie listy płac dla pracowników
@@ -2743,28 +3012,31 @@
                 - name: Standardowe raporty dotyczące listy płac
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
     - name: Analizy
-      href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Analizy — strona główna
+          href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
         - name: Dostęp do informacji i raportowanie
           href: ../dev-itpro/analytics/information-access-reporting.md?toc=/fin-and-ops/toc.json
         - name: Zawartość Power BI
-          href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Zawartość Power BI — strona główna
+              href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
             - name: Wartości rzeczywiste a budżet
               href: ../dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/fin-and-ops/toc.json
             - name: Świadczenia
               href: ../dev-itpro/analytics/benefits-power-bi.md?toc=/fin-and-ops/toc.json
             - name: Omówienie operacji gotówkowych
               href: ../financials/cash-bank-management/Cash-Overview-Power-BI-content.md
-            - name: Dyrektor finansowy — przegląd
+            - name: Dyrektor finansowy — omówienie
               href: ../dev-itpro/analytics/CFO-power-bi.md?toc=/fin-and-ops/toc.json
             - name: Wynagrodzenie
               href: ../dev-itpro/analytics/compensation-power-bi.md?toc=/fin-and-ops/toc.json
             - name: Wynagrodzenie i świadczenia
               href: ../dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Analiza rachunku kosztów
-              href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Analiza rachunku kosztów dostępny w usłudze Power BI
+                  href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurowanie zabezpieczeń pakietu zawartości usługi Power BI Analiza rachunku kosztów
                   href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Zarządzanie kosztami
@@ -2812,8 +3084,9 @@
             - name: Konfigurowanie usług SSRS na potrzeby wdrożeń lokalnych
               href: ../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json
             - name: Drukowanie
-              href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Omówienie drukowania dokumentu
+                  href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
                 - name: Instalowanie Agenta rozsyłania dokumentów w celu obsługi druku przez sieć
                   href: ../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json
                 - name: Uaktualnianie Agenta rozsyłania dokumentów
@@ -2910,10 +3183,8 @@
                       href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
             - name: Modyfikowanie formatów raportowania elektronicznego przez ponowne zastosowanie szablonów programu Excel
               href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: Projektowanie konfiguracji modułu Raportowanie elektroniczne zależnych od wersji rozwiązania Finance and Operation
-              items:
-                - name: Definiowanie zależności konfiguracji modułu Raportowanie elektroniczne od innych składników
-                  href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: Definiowanie zależności konfiguracji raportowania elektronicznego od innych składników
+              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
             - name: Projektowanie rozwiązania Raportowanie elektroniczne w celu korzystania z wymiarów finansowych
               items:
                 - name: Projektowanie modeli danych w celu używania wymiarów finansowych jako źródeł danych
@@ -2936,9 +3207,9 @@
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
             - name: Dynamiczne dodawanie kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów
               items:
-                - name: Projektowanie formatów w celu dynamicznego dodawania kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów
+                - name: Projektowanie formatów w celu dynamicznego dodawania kolumn do raportów w programie Excel jako poziomo rozszerzalnych zakresów
                   href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
-                - name: Uruchamianie formatów w celu dynamicznego dodawania kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów
+                - name: Uruchamianie formatów w celu dynamicznego dodawania kolumn do raportów w programie Excel jako poziomo rozszerzalnych zakresów
                   href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
             - name: Używanie plików zarządzania dokumentami w danych wyjściowych formatu
               items:
@@ -3032,9 +3303,11 @@
                       href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
                 - name: Śledzenie wykonywania formatów modułu Raportowanie elektroniczne w celu rozwiązywania problemów z wydajnością
                   href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+                - name: Omówienie zarządzania dokumentami biznesowymi
+                  href: ../dev-itpro/analytics/er-business-document-management.md?toc=/fin-and-ops/toc.json
             - name: Interfejs API struktury modułu Raportowanie elektroniczne
               items:
-                - name: Rozszerzanie listy funkcji modułu Raportowanie elektroniczne
+                - name: Rozszerzanie listy funkcji Raportowania elektronicznego
                   href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
                 - name: Zmiany w interfejsie API struktury raportowania elektronicznego w aktualizacji Application update 7.3
                   href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
@@ -3081,16 +3354,19 @@
             - name: Używanie własnej bazy danych
               href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
     - name: Zarządzanie zapasami
-      href: ../supply-chain/inventory/inventory-home-page.md
       items:
-        - name: Przegląd przyjęć
-          href: ../supply-chain/inventory/arrival-overview.md
+        - name: Omówienie zarządzania zapasami
+          href: ../supply-chain/inventory/inventory-home-page.md
+        - name: Przyjęcie
           items:
+            - name: Omówienie przyjęć
+              href: ../supply-chain/inventory/arrival-overview.md
             - name: Konfigurowanie profilu przeglądu przyjęć pozycji
               href: ../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md
         - name: Zarządzanie jakością
-          href: ../supply-chain/inventory/enable-quality-management.md
           items:
+            - name: Omówienie zarządzanie jakością
+              href: ../supply-chain/inventory/enable-quality-management.md
             - name: Procesy zarządzania jakością
               href: ../supply-chain/inventory/quality-management-processes.md
             - name: Zarządzanie brakiem zgodności
@@ -3156,8 +3432,9 @@
             - name: Mobilny obszar roboczy Dostępne zapasy
               href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md
         - name: Proces wychodzący
-          href: ../supply-chain/inventory/outbound-process.md
           items:
+            - name: Omówienie procesu wychodzącego
+              href: ../supply-chain/inventory/outbound-process.md
             - name: Rezerwowanie ilości zapasów
               href: ../supply-chain/inventory/reserve-inventory-quantities.md
             - name: Rezerwowanie tej samej partii dla zamówienia sprzedaży
@@ -3265,12 +3542,140 @@
               href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
             - name: Raporty żądania konserwacji
               href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
-    - name: Planowanie główne
-      href: ../supply-chain/master-planning/master-planning-home-page.md
-      items:
-        - name: Plany główne
-          href: ../supply-chain/master-planning/master-plans.md
+        - name: Ustawienia zleceń roboczych
           items:
+            - name: 'Kategorie typów zadań obsługi i typy zadań serwisowych, warianty typu zadań obsługi, handel zadaniami konserwacyjnymi oraz listy kontrolne konserwacji'
+              href: ../supply-chain/asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+            - name: Stany cyklu życia zlecenia pracy
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+            - name: Typy zleceń pracy
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-types.md
+            - name: Ustawienia projektu zlecenia pracy
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-project-setup.md
+            - name: Poziom i opis usługi
+              href: ../supply-chain/asset-management/setup-for-work-orders/service-level-and-description.md
+            - name: Zaplanowane wykonanie
+              href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
+            - name: Zarządzanie usterkami
+              href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
+        - name: Zlecenia pracy
+          items:
+            - name: Wprowadzenie do zleceń pracy
+              href: ../supply-chain/asset-management/work-orders/introduction-to-work-orders.md
+            - name: Ręcznie utworzone zlecenia pracy
+              href: ../supply-chain/asset-management/work-orders/manually-created-workorders.md
+            - name: Prognozy konserwacji
+              href: ../supply-chain/asset-management/work-orders/maintenance-forecasts.md
+            - name: Zaopatrzenie
+              href: ../supply-chain/asset-management/work-orders/procurement.md
+            - name: Ręczna aktualizacja liczników zasobów
+              href: ../supply-chain/asset-management/work-orders/manual-update-of-asset-counters.md
+            - name: Automatyczna aktualizacja liczników zasobów
+              href: ../supply-chain/asset-management/work-orders/automatic-update-of-asset-counters.md
+            - name: Listy kontrolne konserwacji
+              href: ../supply-chain/asset-management/work-orders/maintenance-checklists.md
+            - name: Przerwa konserwacyjna
+              href: ../supply-chain/asset-management/work-orders/maintenance-downtime.md
+            - name: Dodawanie błędu do zlecenia pracy
+              href: ../supply-chain/asset-management/work-orders/add-fault-to-work-order.md
+            - name: Raport zlecenia pracy
+              href: ../supply-chain/asset-management/work-orders/work-order-report.md
+            - name: Pule zleceń pracy
+              href: ../supply-chain/asset-management/work-orders/work-order-pools.md
+            - name: Zadania konserwacji aktywnych zleceń pracy
+              href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
+            - name: Środki trwałe i zlecenia pracy
+              href: ../supply-chain/asset-management/work-orders/work-orders-and-fixed-assets.md
+        - name: Integracja z modułem Zarządzanie projektami i ich księgowanie
+          items:
+            - name: 'Prognozy, zlecenia pracy i projekty'
+              href: ../supply-chain/asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+        - name: Konserwacja zapobiegawcza i reakcyjna
+          items:
+            - name: Konserwacja zapobiegawcza
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+            - name: Plany konserwacji
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+            - name: Planowanie planów konserwacji
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+            - name: Serie czynności konserwacyjnych
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+            - name: Harmonogram konserwacji
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+            - name: Koszt harmonogramu konserwacji
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+            - name: Tworzenie zlecenia pracy
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+            - name: Przerwa konserwacyjna
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+        - name: Planowanie zdolności produkcyjnych
+          items:
+            - name: Obliczanie obciążenia zdolności produkcyjnych
+              href: ../supply-chain/asset-management/capacity-planning/calculate-capacity-load.md
+            - name: Obliczanie prognozy dla pozycji
+              href: ../supply-chain/asset-management/capacity-planning/calculate-item-forecast.md
+        - name: Planowanie zlecenia pracy
+          items:
+            - name: Kalendarz pracowników obsługi i planowanie
+              href: ../supply-chain/asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+            - name: Preferowani konserwatorzy
+              href: ../supply-chain/asset-management/work-order-scheduling/preferred-maintenance-workers.md
+            - name: Planowanie zlecenia pracy
+              href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-orders.md
+            - name: Wysyłanie zlecenia pracy
+              href: ../supply-chain/asset-management/work-order-scheduling/dispatch-work-order.md
+            - name: Planowanie zlecenia pracy według konkretnej daty i godziny
+              href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+            - name: Zaplanowane konserwacyjne zlecania pracy
+              href: ../supply-chain/asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+            - name: Obliczanie obciążenia zdolności produkcyjnych na zaplanowanych zleceniach pracy
+              href: ../supply-chain/asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+        - name: Zużycie
+          items:
+            - name: Rejestracja zużycia
+              href: ../supply-chain/asset-management/consumption/register-consumption.md
+            - name: Tworzenie raportu zużycia
+              href: ../supply-chain/asset-management/consumption/create-consumption-reports.md
+        - name: Gwarancja
+          items:
+            - name: Umowa gwarancyjna
+              href: ../supply-chain/asset-management/warranty/warranty-agreement.md
+            - name: Gwarancja na składniki majątku i typy składników majątku
+              href: ../supply-chain/asset-management/warranty/warranty-on-assets-and-asset-types.md
+        - name: Budżety konserwacji
+          items:
+            - name: Budżety konserwacji
+              href: ../supply-chain/asset-management/maintenance-budgets/create-maintenance-budget.md
+            - name: Aktualizowanie budżetu konserwacji
+              href: ../supply-chain/asset-management/maintenance-budgets/update-maintenance-budget.md
+        - name: Kontrola i raportowanie
+          items:
+            - name: Kontrola kosztu i daty
+              href: ../supply-chain/asset-management/controlling-and-reporting/cost-and-date-control.md
+            - name: Kontrola godzin pracy
+              href: ../supply-chain/asset-management/controlling-and-reporting/work-hour-control.md
+            - name: Formant kosztów usterki składnika majątku
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-cost-control.md
+            - name: Analiza usterek składników majątku
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-analysis.md
+            - name: Wskaźniki KPI składnika majątku
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-kpis.md
+            - name: Używająca pozycja
+              href: ../supply-chain/asset-management/controlling-and-reporting/item-where-used.md
+            - name: Stan konserwacji
+              href: ../supply-chain/asset-management/controlling-and-reporting/maintenance-status.md
+        - name: Zarządzanie danymi
+          items:
+            - name: Jednostki docelowe
+              href: ../supply-chain/asset-management/data-management/target-entities.md
+    - name: Planowanie główne
+      items:
+        - name: Planowanie główne — strona główna
+          href: ../supply-chain/master-planning/master-planning-home-page.md
+        - name: Plany główne
+          items:
+            - name: Omówienie planów głównych
+              href: ../supply-chain/master-planning/master-plans.md
             - name: Ustawianie planów głównych
               href: ../supply-chain/master-planning/master-planning-setup.md
             - name: Kreator konfiguracji planowania głównego
@@ -3304,8 +3709,9 @@
             - name: Zwiększanie wydajności planowania głównego
               href: ../supply-chain/master-planning/master-planning-performance.md
             - name: Plany główne i funkcjonalność wielooddziałowości
-              href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
               items:
+                - name: Omówienie planowania głównego i funkcjonalności wielooddziałowości
+                  href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
                 - name: 'Planowanie główne dla zapotrzebowania oddziału, magazyn wymagany'
                   href: ../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md
                 - name: 'Planowanie główne dla zapotrzebowania oddziału, magazyn niewymagany'
@@ -3327,8 +3733,9 @@
             - name: Współpraca z odbiorcami w ramach wewnętrznego łańcucha dostaw
               href: ../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md
         - name: Prognozowanie popytu
-          href: ../supply-chain/master-planning/introduction-demand-forecasting.md
           items:
+            - name: Omówienie prognozowania popytu
+              href: ../supply-chain/master-planning/introduction-demand-forecasting.md
             - name: Ustawienia prognozowania popytu
               href: ../supply-chain/master-planning/demand-forecasting-setup.md
             - name: Importowanie danych historycznych na potrzeby prognozowania popytu
@@ -3349,12 +3756,14 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Ręczne modyfikowanie prognozy popytu
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Aplikacja mobilna
-      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+    - name: Aplikacja mobilna Dynamics 365 for Unified Operations
       items:
-        - name: Dostępne mobilne obszary robocze
-          href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
+        - name: Aplikacja mobilna Dynamics 365 for Unified Operations — strona główna
+          href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+        - name: Mobilne obszary robocze
           items:
+            - name: Dostępne mobilne obszary robocze
+              href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
             - name: Firmowa książka adresowa
               href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/fin-and-ops/toc.json
             - name: Kontrola kosztów
@@ -3367,11 +3776,11 @@
               href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/fin-and-ops/toc.json
             - name: Mój zespół
               href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/fin-and-ops/toc.json
-            - name: Przegląd aplikacji mobilnych do obsługi projektów
+            - name: Przegląd aplikacji mobilnych do obsługi Project
               href: ../financials/project-management/project-mobile-application-overview.md
             - name: Wpis czasu projektu
               href: ../financials/project-management/project-time-entry-mobile-workspace.md
-            - name: Karta czasu pracy projektu
+            - name: Project Timesheet
               href: ../financials/project-management/project-timesheet.md
             - name: Zatwierdzenie zamówienia zakupu
               href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
@@ -3382,8 +3791,9 @@
         - name: Publikowanie mobilnych obszarów roboczych
           href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
     - name: Integracja z pakietem Office
-      href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Omówienie integracji danych z pakietem Office
+          href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
         - name: Integracja z pakietem Office — samouczek
           href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
         - name: Otwieranie danych jednostki w programie Excel i aktualizowanie ich przy użyciu dodatku programu Excel
@@ -3401,25 +3811,29 @@
         - name: Rozwiązywanie problemów z integracją z pakietem Office
           href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json
     - name: Zaopatrzenie i sourcing
-      href: ../supply-chain/procurement/procurement-sourcing-overview.md
       items:
+        - name: Omówienie zaopatrzenia i sourcingu
+          href: ../supply-chain/procurement/procurement-sourcing-overview.md
         - name: Przepływ pracy dla zaopatrzenia i sourcingu
           href: ../supply-chain/procurement/procurement-sourcing-workflows.md
         - name: Katalogi zaopatrzenia
-          href: ../supply-chain/procurement/procurement-catalogs.md
           items:
+            - name: Omówienie katalogów zaopatrzenia
+              href: ../supply-chain/procurement/procurement-catalogs.md
             - name: Tworzenie katalogu zaopatrzenia
               href: ../supply-chain/procurement/tasks/create-procurement-catalog.md
             - name: Ustawianie hierarchii kategorii zaopatrzenia
               href: ../supply-chain/procurement/tasks/set-up-procurement-category-hierarchy.md
         - name: Zapotrzebowania na zakup
-          href: ../supply-chain/procurement/purchase-requisitions-overview.md
           items:
-            - name: Przepływ pracy zapotrzebowań zakupu
+            - name: Omówienie zapotrzebowania na zakup
+              href: ../supply-chain/procurement/purchase-requisitions-overview.md
+            - name: Przepływ pracy zapotrzebowań na zakup
               href: ../supply-chain/procurement/purchase-requisitions-workflow.md
         - name: Zapytania ofertowe
-          href: ../supply-chain/procurement/request-quotations.md
           items:
+            - name: Prośba o omówienie zapytań ofertowych
+              href: ../supply-chain/procurement/request-quotations.md
             - name: Tworzenie zapytania ofertowego
               href: ../supply-chain/procurement/tasks/create-request-quotation.md
             - name: Tworzenie zapotrzebowania wykorzystującego ZO
@@ -3471,8 +3885,9 @@
             - name: Rabaty dostawcy
               href: ../supply-chain/procurement/vendor-rebates.md
         - name: Zasady zakupów
-          href: ../supply-chain/procurement/purchase-policies.md
           items:
+            - name: Omówienie zasad zakupów
+              href: ../supply-chain/procurement/purchase-policies.md
             - name: Tworzenie zasad zakupów
               href: ../supply-chain/procurement/tasks/create-purchasing-policies.md
             - name: Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia
@@ -3530,18 +3945,21 @@
             - name: Przesyłanie i zatwierdzanie zmian budżetu projektu
               href: ../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md
     - name: Administrowanie organizacją
-      href: organization-administration/organization-administration-home-page.md
       items:
+        - name: Administrowanie organizacją — strona główna
+          href: organization-administration/organization-administration-home-page.md
         - name: Sekwencje identyfikatorów
-          href: organization-administration/number-sequence-overview.md
           items:
+            - name: Omówienie sekwencji identyfikatorów
+              href: organization-administration/number-sequence-overview.md
             - name: Konfigurowanie indywidualnych sekwencji numerów
               href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
-            - name: Konfigurowanie numeracji za pomocą kreatora
+            - name: Konfigurowanie sekwencji identyfikatorów za pomocą kreatora
               href: organization-administration/tasks/set-up-number-sequences-wizard.md
         - name: Organizacje i hierarchie organizacyjne
-          href: organization-administration/organizations-organizational-hierarchies.md
           items:
+            - name: Omówienie organizacji i hierarchii organizacyjnych
+              href: organization-administration/organizations-organizational-hierarchies.md
             - name: Planowanie hierarchii organizacyjnej
               href: organization-administration/plan-organizational-hierarchy.md
             - name: Tworzenie hierarchii organizacyjnej
@@ -3551,8 +3969,9 @@
             - name: Tworzenie jednostek operacyjnych
               href: organization-administration/tasks/create-operating-unit.md
         - name: Globalna książka adresowa
-          href: organization-administration/overview-global-address-book.md
           items:
+            - name: Omówienie globalnej książki adresowej
+              href: organization-administration/overview-global-address-book.md
             - name: Planowanie globalnej książki adresowej i innych książek adresowych
               href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
             - name: Konfigurowanie globalnej książki adresowej
@@ -3562,8 +3981,9 @@
             - name: Konfigurowanie książek adresowych
               href: organization-administration/tasks/address-books.md
         - name: System przepływu pracy
-          href: organization-administration/overview-workflow-system.md
           items:
+            - name: Omówienie systemu przepływów pracy
+              href: organization-administration/overview-workflow-system.md
             - name: Architektura systemu przepływu pracy
               href: organization-administration/workflow-system-architecture.md
             - name: Elementy przepływu pracy
@@ -3571,8 +3991,9 @@
             - name: Akcje przepływu pracy
               href: organization-administration/workflow-actions.md
             - name: Tworzenie przepływów pracy
-              href: organization-administration/create-workflow.md
               items:
+                - name: Omówienie tworzenia przepływów pracy
+                  href: organization-administration/create-workflow.md
                 - name: Konfigurowanie właściwości przepływu pracy
                   href: organization-administration/configure-workflow-properties.md
                 - name: Konfigurowanie zadań ręcznych
@@ -3624,8 +4045,9 @@
             - name: Przepływ pracy — często zadawane pytania
               href: organization-administration/workflow-FAQ.md
         - name: Alerty
-          href: get-started/alerts-overview.md
           items:
+            - name: Omówienie alertów
+              href: get-started/alerts-overview.md
             - name: Tworzenie reguł alertów
               href: get-started/create-alerts.md
             - name: Przetwarzanie wsadowe alertów
@@ -3633,18 +4055,21 @@
             - name: Powiadomienia o alertach klienta wysyłane pocztą e-mail
               href: get-started/alert-email-notifications.md
         - name: Podpisy elektroniczne
-          href: organization-administration/electronic-signature-overview.md
           items:
+            - name: Omówienie podpisów elektronicznych
+              href: organization-administration/electronic-signature-overview.md
             - name: Konfigurowanie podpisów elektronicznych
               href: organization-administration/tasks/set-up-electronic-signatures.md
         - name: Zarządzanie sprawami
-          href: organization-administration/cases.md
           items:
+            - name: Omówienie zarządzania sprawami
+              href: organization-administration/cases.md
             - name: 'Planowanie zabezpieczeń, procesów i kategorii spraw'
               href: organization-administration/plan-case-management.md
         - name: Szablony rekordów
-          href: organization-administration/record-templates.md
           items:
+            - name: Omówienie szablonów rekordów
+              href: organization-administration/record-templates.md
             - name: Tworzenie szablonu rekordów
               href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
             - name: Używanie szablonu rekordu do tworzenia nowego rekordu
@@ -3656,8 +4081,9 @@
         - name: Dane dotyczące daty/godziny i strefy czasowe
           href: organization-administration/date-time-zones.md
     - name: Kontrola produkcji
-      href: ../supply-chain/production-control/production-process-overview.md
       items:
+        - name: Omówienie procesu produkcji
+          href: ../supply-chain/production-control/production-process-overview.md
         - name: 'Planowanie w trybie mieszanym: łączenie sourcingu dyskretnego, procesowego i oszczędnego'
           href: ../supply-chain/production-control/mixed-mode-plan.md
         - name: Zarządzanie pracą podwykonawczą w produkcji
@@ -3721,8 +4147,9 @@
             - name: Wykonywanie zadań związanych z produkcją
               items:
                 - name: Zarządzanie cyklem życia zlecenia produkcyjnego
-                  href: ../supply-chain/production-control/create-production-orders.md
                   items:
+                    - name: Omówienie cyklu życia zlecenia produkcyjnego
+                      href: ../supply-chain/production-control/create-production-orders.md
                     - name: Tworzenie zlecenia produkcyjnego
                       href: ../supply-chain/production-control/tasks/create-production-order.md
                     - name: Szacowanie zlecenia produkcyjnego
@@ -3782,8 +4209,9 @@
                 - name: Księgowanie produkcji
                   href: ../supply-chain/cost-management/production-posting.md
             - name: Rejestracja czasu i frekwencji
-              href: ../supply-chain/production-control/time-attendance-registrations.md
               items:
+                - name: Omówienie rejestracji czasu i frekwencji
+                  href: ../supply-chain/production-control/time-attendance-registrations.md
                 - name: Płaca oparta na rejestracjach
                   href: ../supply-chain/production-control/pay-based-on-registrations.md
                 - name: Rejestracja nieobecności w module Czas i frekwencja
@@ -3945,8 +4373,9 @@
                 - name: Księgowanie produkcji
                   href: ../supply-chain/cost-management/production-posting.md
     - name: Zarządzanie informacjami o produktach
-      href: ../supply-chain/pim/product-information.md
       items:
+        - name: Omówienie informacji o produktach
+          href: ../supply-chain/pim/product-information.md
         - name: Informacje o produktach
           items:
             - name: Identyfikatory produktów
@@ -3972,8 +4401,9 @@
             - name: Tworzenie zwolnionego produktu dla jednej firmy
               href: ../supply-chain/pim/tasks/create-released-product-single-company.md
             - name: Stan cyklu życia produktu
-              href: ../supply-chain/pim/product-lifecycle.md
               items:
+                - name: Omówienie stanów cyklu życia produktu
+                  href: ../supply-chain/pim/product-lifecycle.md
                 - name: Tworzenie nowego stanu cyklu życia produktu
                   href: ../supply-chain/pim/tasks/new-product-lifecycle-state.md
                 - name: Tworzenie domyślnego stanu cyklu życia produktu
@@ -4017,11 +4447,13 @@
             - name: Obliczenia BOM
               href: ../supply-chain/cost-management/bom-calculations.md
         - name: Konfiguracja produktu
-          href: ../supply-chain/pim/build-product-configuration-model.md
           items:
+            - name: Omówienie konfiguracji produktu
+              href: ../supply-chain/pim/build-product-configuration-model.md
             - name: Tworzenie konfiguracji opartej na wymiarach
-              href: ../supply-chain/pim/dimension-based-product-configuration.md
               items:
+                - name: Omówienie konfiguracji produktów opartych na wymiarach
+                  href: ../supply-chain/pim/dimension-based-product-configuration.md
                 - name: Wymiar produktu
                   href: ../supply-chain/pim/product-dimensions.md
                 - name: Tworzenie produktu głównego opartego na wymiarach
@@ -4041,8 +4473,9 @@
                 - name: Tworzenie konfiguracji opartych na wymiarach
                   href: ../supply-chain/pim/tasks/create-dimension-based-configurations.md
             - name: Tworzenie konfiguracji opartej na ograniczeniach
-              href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
               items:
+                - name: Konfiguracja modelu konfiguracji produktu
+                  href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
                 - name: Obliczenia na potrzeby modelu konfiguracji produktu — często zadawane pytania
                   href: ../supply-chain/pim/calculate-product-configuration-models.md
                 - name: Reguła konfiguracji
@@ -4072,8 +4505,9 @@
                 - name: Przesyłanie danych dla modeli produktu
                   href: ../supply-chain/pim/tasks/transfer-data-product-models.md
     - name: Zarządzanie projektami i ich księgowanie
-      href: ../financials/project-management/overview-project-management-accounting.md
       items:
+        - name: Omówienie zarządzania projektami i ich księgowania
+          href: ../financials/project-management/overview-project-management-accounting.md
         - name: Fakturowanie międzyfirmowe
           href: ../financials/project-management/intercompany-invoicing.md
         - name: Konfigurowanie fakturowania projektów międzyfirmowych
@@ -4099,23 +4533,25 @@
         - name: Przyjmowanie towarów wymienionych na zamówieniu zakupu na podstawie zapotrzebowania na towary
           href: ../financials/project-management/tasks/receive-items-purchase-order-item-requirement.md
         - name: Struktury podziału pracy
-          href: ../financials/project-management/work-breakdown-structures.md
           items:
-            - name: Integracja z klientem programu Microsoft Project
+            - name: Omówienie struktur podziału pracy
+              href: ../financials/project-management/work-breakdown-structures.md
+            - name: Integracja z Microsoft Project Client
               href: ../financials/project-management/project-integration.md
-        - name: Przegląd aplikacji mobilnych do obsługi projektów
+        - name: Przegląd aplikacji mobilnych do obsługi Project
           href: ../financials/project-management/project-mobile-application-overview.md
         - name: Mobilny obszar roboczy Wpis czasu projektu
           href: ../financials/project-management/project-time-entry-mobile-workspace.md
-        - name: Aplikacja mobilna Karta czasu pracy projektu
+        - name: Aplikacja mobilna Project Timesheet
           href: ../financials/project-management/project-timesheet.md
         - name: Karty czasu pracy projektów na urządzeniu przenośnym
           href: ../financials/project-management/mobile-timesheets.md
-        - name: Implementowanie pól niestandardowych dla aplikacji mobilnej Karta czasu pracy projektu
+        - name: Implementowanie pól niestandardowych dla aplikacji mobilnej Project Timesheet
           href: ../financials/project-management/custom-fields-mobile.md
     - name: Sprzedaż i marketing
-      href: ../supply-chain/sales-marketing/overview-sales-marketing.md
       items:
+        - name: Sprzedaż i marketing — omówienie
+          href: ../supply-chain/sales-marketing/overview-sales-marketing.md
         - name: Zamówienia sprzedaży
           items:
             - name: Zobowiązanie do zamówienia
@@ -4149,8 +4585,9 @@
             - name: Potwierdzanie zamówień sprzedaży
               href: ../supply-chain/sales-marketing/tasks/confirm-sales-orders.md
         - name: Umowy sprzedaży
-          href: ../supply-chain/sales-marketing/sales-agreements.md
           items:
+            - name: Omówienie umów sprzedaży
+              href: ../supply-chain/sales-marketing/sales-agreements.md
             - name: Wprowadzanie umów sprzedaży
               href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
             - name: Realizacja umów sprzedaży
@@ -4183,14 +4620,16 @@
           href: ../supply-chain/sales-marketing/trade-allowance.md
         - name: Tworzenie nowej umowy handlowej
           href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
-    - name: Zarządzanie serwisem
-      href: ../supply-chain/service-management/service-management-home-page.md
+    - name: Zarządzanie usługą
       items:
+        - name: Omówienie zarządzania usługą
+          href: ../supply-chain/service-management/service-management-home-page.md
         - name: Konfigurowanie obsługi klienta
           items:
             - name: Konfigurowanie umów serwisowych
-              href: ../supply-chain/service-management/service-agreement-groups.md
               items:
+                - name: Omówienie umów serwisowych
+                  href: ../supply-chain/service-management/service-agreement-groups.md
                 - name: Tworzenie umów serwisowych
                   href: ../supply-chain/service-management/create-service-agreements.md
                 - name: Interwały serwisu
@@ -4204,13 +4643,15 @@
                 - name: Tworzenie grupy szablonów serwisu
                   href: ../supply-chain/service-management/create-service-template-group.md
             - name: Konfigurowanie zadań serwisowych
-              href: ../supply-chain/service-management/service-tasks.md
               items:
+                - name: Omówienie zadań serwisowych
+                  href: ../supply-chain/service-management/service-tasks.md
                 - name: Tworzenie relacji zadania serwisowego
                   href: ../supply-chain/service-management/create-service-task-relations.md
             - name: Ustawianie przedmiotów serwisu
-              href: ../supply-chain/service-management/service-objects.md
               items:
+                - name: Omówienie przedmiotów serwisu
+                  href: ../supply-chain/service-management/service-objects.md
                 - name: Tworzenie przedmiotów serwisu
                   href: ../supply-chain/service-management/create-service-task-relations.md
                 - name: Dołączanie pozycji magazynowych do przedmiotów serwisu
@@ -4230,8 +4671,9 @@
                 - name: Dołączanie szablonów do przedmiotów serwisu
                   href: ../supply-chain/service-management/attach-templates-service-objects.md
             - name: Definiowanie kodów przyczyny dla zleceń serwisowych
-              href: ../supply-chain/service-management/reason-codes-service-orders.md
               items:
+                - name: Kody przyczyny dla zleceń serwisowych
+                  href: ../supply-chain/service-management/reason-codes-service-orders.md
                 - name: Etapy zleceń serwisowych
                   href: ../supply-chain/service-management/service-order-stages.md
                 - name: Konfigurowanie etapów zlecenia serwisowego
@@ -4239,8 +4681,9 @@
                 - name: Tworzenie kodów przyczyn
                   href: ../supply-chain/service-management/create-reason-codes.md
             - name: Konfigurowanie umów serwisowych i subskrypcji
-              href: ../supply-chain/service-management/service-level-agreements.md
               items:
+                - name: Omówienie umów dotyczących poziomu usług
+                  href: ../supply-chain/service-management/service-level-agreements.md
                 - name: Subskrypcja — ceny sprzedaży
                   href: ../supply-chain/service-management/subscription-sales-prices.md
                 - name: Grupy subskrypcji
@@ -4254,8 +4697,9 @@
             - name: Konfiguracja zarządzania naprawą
               href: ../supply-chain/service-management/repair-management.md
             - name: Konfigurowanie zwrotów od odbiorców
-              href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
               items:
+                - name: Omówienie zwrotów od odbiorcy
+                  href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
                 - name: Konfigurowanie kodów dyspozycji
                   href: ../supply-chain/service-management/set-up-disposition-codes.md
                 - name: Konfigurowanie kodów przyczyn zwrotu
@@ -4263,19 +4707,22 @@
                 - name: Określanie sposobu likwidacji zwróconych towarów
                   href: ../supply-chain/service-management/specify-how-to-dispose-of-returned-items.md
         - name: Praca z funkcjami obsługi klienta
-          href: ../supply-chain/service-management/working-with-customer-service.md
           items:
+            - name: Omówienie pracy z funkcjami obsługi klienta
+              href: ../supply-chain/service-management/working-with-customer-service.md
             - name: Realizacja umowy serwisowej
-              href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
               items:
+                - name: Omówienie realizacji umów serwisowych
+                  href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
                 - name: Opracowywanie i ustalanie umów
-                  href: ../supply-chain/service-management/service-agreements.md
                   items:
+                    - name: Omówienie opracowania i ustanawiania przeglądów umów serwisowych
+                      href: ../supply-chain/service-management/service-agreements.md
                     - name: Tworzenie umów serwisowych
                       href: ../supply-chain/service-management/create-service-agreements.md
                     - name: Subskrypcje serwisowe
                       href: ../supply-chain/service-management/service-subscriptions.md
-                    - name: Szablony serwisu
+                    - name: Szablony usługi
                       href: ../supply-chain/service-management/service-template.md
                     - name: Kopiowanie wierszy szablonów serwisu
                       href: ../supply-chain/service-management/copy-service-template-lines.md
@@ -4296,8 +4743,9 @@
                     - name: Aktualizacja i subskrypcje indeksu cen sprzedaży
                       href: ../supply-chain/service-management/update-and-index-subscription-sales-prices.md
             - name: Obsługa zapytań odbiorców
-              href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
               items:
+                - name: Omówienie realizacji umów serwisowych
+                  href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
                 - name: Rozpoczynanie i zatrzymywanie rejestrowania czasu dla zlecenia serwisowego
                   href: ../supply-chain/service-management/start-and-stop-time-recording-on-a-service-order.md
                 - name: Wyświetlanie czasu rozpoczęcia i trwania zlecenia serwisowego
@@ -4407,8 +4855,9 @@
                     - name: Fakturowanie transakcji subskrypcji
                       href: ../supply-chain/service-management/invoice-subscription-transactions.md
     - name: Zarządzanie transportem
-      href: ../supply-chain/transportation/transportation-management-overview.md
       items:
+        - name: Omówienie zarządzania transportem
+          href: ../supply-chain/transportation/transportation-management-overview.md
         - name: Aparaty zarządzania transportem
           href: ../supply-chain/transportation/transportation-management-engines.md
         - name: Tworzenie nowego aparatu zarządzania transportem
@@ -4420,8 +4869,9 @@
         - name: Planowanie marszrut transportowych frachtu
           href: ../supply-chain/transportation/plan-freight-transportation-routes-multiple-stops.md
         - name: Planowanie ładunków przy użyciu konsolidacji w centrum
-          href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
           items:
+            - name: Omówienie planowania ładunków przy użyciu konsolidacji w centrum
+              href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
             - name: Planowanie ładunków i wysyłek za pomocą pulpitu planowania wysyłki ładunku
               href: ../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
         - name: Uwzględnianie wagi i objętości kontenera w ładunku
@@ -4451,11 +4901,13 @@
         - name: Konfigurowanie ograniczeń transportu towaru
           href: ../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md
     - name: Zarządzanie magazynem
-      href: ../supply-chain/warehousing/warehouse-management-overview.md
       items:
+        - name: Omówienie zarządzania magazynem
+          href: ../supply-chain/warehousing/warehouse-management-overview.md
         - name: Konfiguracja magazynu
-          href: ../supply-chain/warehousing/warehouse-configuration.md
           items:
+            - name: Omówienie konfiguracji magazynu
+              href: ../supply-chain/warehousing/warehouse-configuration.md
             - name: Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu
               href: ../supply-chain/inventory/warehouse-template.md
             - name: Kontrola pracy przy użyciu szablonów pracy i dyrektyw lokalizacji
@@ -4485,8 +4937,9 @@
             - name: Konfigurowanie magazynu dla zamówień przeniesienia
               href: ../supply-chain/warehousing/transfer-orders-warehouse.md
         - name: Zasady pracy magazynowej
-          href: ../supply-chain/warehousing/warehouse-work-policies.md
           items:
+            - name: Omówienie zasad pracy magazynowej
+              href: ../supply-chain/warehousing/warehouse-work-policies.md
             - name: Konfigurowanie zasad pracy magazynowej
               href: ../supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
             - name: Przenoszenie zapasów za pomocą skojarzonej pracy w module Zarządzanie magazynem
@@ -4546,8 +4999,9 @@
             - name: Zliczanie znaczników zapasów
               href: ../supply-chain/inventory/inventory-tag-counting.md
         - name: Uzupełnianie zapasów
-          href: ../supply-chain/warehousing/replenishment.md
           items:
+            - name: Omówienie uzupełniania zapasów
+              href: ../supply-chain/warehousing/replenishment.md
             - name: Natychmiastowe uzupełnianie zapasów
               href: ../supply-chain/warehousing/immediate-replenishment.md
             - name: Uzupełnianie zapasów za pomocą kart Kanban wypłat
@@ -4555,8 +5009,9 @@
             - name: Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości zapasów
               href: ../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md
         - name: Instalowanie i konfigurowanie aplikacji magazynu
-          href: ../supply-chain/warehousing/install-configure-warehousing-app.md
           items:
+            - name: Omówienie instalacji i konfiguracji
+              href: ../supply-chain/warehousing/install-configure-warehousing-app.md
             - name: Konfigurowanie nazw pól w aplikacji magazynu
               href: ../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md
             - name: Konfigurowanie urządzeń przenośnych do pracy magazynowej
