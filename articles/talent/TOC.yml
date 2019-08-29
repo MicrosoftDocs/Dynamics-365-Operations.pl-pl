@@ -8,6 +8,14 @@
         - name: Nowości i zmiany w rozwiązaniu Talent
           href: whats-new.md
           items:
+            - name: 22 sierpnia 2019 r.
+              href: whats-new-talent-august-21-2019.md
+            - name: 13 sierpnia 2019 r.
+              href: whats-new-talent-august-15-2019.md
+            - name: 6 sierpnia 2019 r.
+              href: whats-new-talent-august-7-2019.md
+            - name: 30 lipca 2019 r.
+              href: whats-new-talent-july-31-2019.md
             - name: 23 lipca 2019 r.
               href: whats-new-talent-july-24-2019.md
             - name: 16 lipca 2019 r.
@@ -24,16 +32,16 @@
               href: whats-new-talent-june-11-2019.md
             - name: 4 czerwca 2019 r.
               href: whats-new-talent-june-4-2019.md
-            - name: 28 maja 2019 r.
-              href: whats-new-talent-may-28-2019.md
-            - name: 21 maja 2019 r.
-              href: whats-new-talent-may-21-2019.md
-            - name: 13 maja 2019 r.
-              href: whats-new-talent-may-13-2019.md
-            - name: 6 maja 2019 r.
-              href: whats-new-talent-may-6-2019.md
             - name: Archiwum nowości z 2019 r.
               items:
+                - name: 28 maja 2019 r.
+                  href: whats-new-talent-may-28-2019.md
+                - name: 21 maja 2019 r.
+                  href: whats-new-talent-may-21-2019.md
+                - name: 13 maja 2019 r.
+                  href: whats-new-talent-may-13-2019.md
+                - name: 6 maja 2019 r.
+                  href: whats-new-talent-may-6-2019.md
                 - name: 30 kwietnia 2019 r.
                   href: whats-new-talent-april-30-2019.md
                 - name: 25 kwietnia 2019 r.
@@ -204,6 +212,8 @@
               href: departments-jobs-positions.md
             - name: Konfigurowanie składników funkcji
               href: create-job.md
+            - name: Usprawnione wprowadzanie pracowników i nawigacja
+              href: streamlined-employee-entry.md
             - name: Tworzenie działów i dołączanie ich do hierarchii działów
               href: create-department-add-department-hierarchy.md
             - name: Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach
