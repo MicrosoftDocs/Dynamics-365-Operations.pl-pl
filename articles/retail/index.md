@@ -3,7 +3,7 @@ title: Dynamics 365 for Retail — Zapraszamy!
 description: Strona główna rozwiązania Dynamics 365 for Retail
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bc1c74ab6940fe0f7ed2e541edad0bce657faeb5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 22dc340ff5ea381dd2a335c8c81332d11d1257a0
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572180"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874934"
 ---
 # <a name="welcome-to-dynamics-365-for-retail"></a>Dynamics 365 for Retail — Zapraszamy!
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail to kompleksowe rozwiązanie dla handlu detalicznego oferujące ujednolicone możliwości handlowe we wszystkich kanałach. Te możliwości obejmują sprzedaż, mobilność, analizy i produktywność, dzięki czemu pomagają sprzedawcom detalicznych i pracownikom osiągać lepsze wyniki dzięki maksymalnemu wykorzystaniu zalet chmury i mobilności. Rozwiązanie Retail oferuje rozbudowaną obsługę różnych procesów biznesowych, takich jak promowanie produktów, zarządzanie zapasami i zarządzanie kanałami. Oferuje także rozszerzone funkcje i możliwości dla odbiorców we wszystkich miejscach bezpośredniej interakcji.
+Microsoft Dynamics 365 for Retail to kompleksowe rozwiązanie dla handlu detalicznego oferujące ujednolicone możliwości handlowe we wszystkich kanałach. Oferuje sprzedaż, mobilność, inteligencję i produktywność, aby pomóc sprzedawcom i pracownikom osiągnąć więcej w sposób skupiający się na przechowywaniu danych w chmurze i mobilności. Rozwiązanie Retail oferuje rozbudowaną obsługę różnych procesów biznesowych, takich jak promowanie produktów, zarządzanie zapasami i zarządzanie kanałami. Oferuje także rozszerzone funkcje i możliwości dla odbiorców we wszystkich miejscach bezpośredniej interakcji.
 
 > [!NOTE]
 > Rozwiązanie Dynamics 365 for Retail jest ściśle powiązane z produktami Dynamics 365 for Finance and Operations i Dynamics 365 for Talent. Te same funkcje mogą być dostępne we wszystkich trzech produktach. W związku z tym w tematach związanych głównie z modułem Sprzedaż detaliczna nazwą produktu będzie Microsoft Dynamics 365 for Retail; w tematach związanych głównie z produktem podstawowym (Finance and Operations) nazwą produktu będzie Microsoft Dynamics 365 for Finance and Operations; w tematach związanych głównie z modułem Zasoby ludzkie nazwą produktu będzie Dynamics 365 for Talent.
@@ -38,7 +38,7 @@ W lewym okienku wybierz obszar funkcji, aby dowiedzieć się więcej na jego tem
 
 ## <a name="channel-management"></a>Zarządzanie kanałami
 
-Po skonfigurowaniu środowiska rozwiązania Retail musisz zdecydować, jak chcesz definiować i konfigurować sklepy. Mogą to być sklepy tradycyjne, sklepy internetowe lub biura obsługi.
+Po skonfigurowaniu środowiska rozwiązania Retail możesz określić definicję i konfigurację swoich sklepów — fizycznego, internetowego i biura obsługi.
 
 Każdy sklep detaliczny może mieć własne metody płatności, metody dostawy, grupy cen, konta przychodów i wydatków, rejestry oraz personel. Po utworzeniu sklepu detalicznego musisz utworzyć asortyment produktów, które mają być oferowane w tym sklepie. Możesz również zdefiniować specyficzne dla sklepu ceny i rabaty, które można będzie stosować do produktów dostępnych w sklepie.
 

@@ -26,12 +26,13 @@
       href: retail-support.md
     - name: Aktualizacje do jednej wersji usługi — często zadawane pytania
       href: ../fin-and-ops/get-started/one-version.md
-- name: Opis cyklu życia implementacji
-  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+- name: Zarządzanie cyklem życia implementacji
   items:
-    - name: Program Microsoft FastTrack for Dynamics 365
+    - name: Strona główna zarządzania cyklem życia implementacji
+      href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+    - name: Microsoft FastTrack for Dynamics 365
       href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
-    - name: Wdrażanie do pracy
+    - name: Wdrożenie
       href: ../fin-and-ops/imp-lifecycle/onboard.md
     - name: Przygotowywanie do rozpoczęcia eksploatacji
       href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
@@ -165,7 +166,9 @@
       href: retail-hardware-station-configuration-installation.md
     - name: Czas i frekwencja w rozwiązaniu Retail
       href: retail-time-attendance.md
-- name: Aplikacje Modern Point of Sale (MPOS) i Cloud POS
+    - name: Tworzenie i zmiana godzin w sklepie
+      href: dev-itpro/store-hours.md
+- name: Modern Point of Sale (MPOS) i Cloud POS
   items:
     - name: Wybór między aplikacjami MPOS i Cloud POS
       href: MPOS-or-CPOS.md
@@ -315,10 +318,12 @@
       href: attribute-attributegroups-lifecycle.md
     - name: Tworzenie atrybutów i zarządzanie nimi
       href: create-manage-attributes.md
-    - name: Konfigurowanie produktów detalicznych
+    - name: Konfigurowanie produktów sprzedaży
       href: set-up-retail-products.md
-    - name: Zarządzanie kategoriami produktów i produktami w aplikacji Retail
+    - name: Zarządzanie kategoriami produktów i produktami sieci sprzedaży
       href: category-management-product-creation.md
+    - name: Zmiana porządku sortowania dla podmiotów merchandisingowych
+      href: custom-order-categories-nav-retail-prod-hierarchy.md
     - name: Wymiary produktu
       href: ../supply-chain/pim/product-dimensions.md
     - name: Konfigurowanie kodów kreskowych
@@ -500,8 +505,9 @@
     - name: Konfigurowanie pracowników sieci sprzedaży
       href: tasks/worker.md
 - name: Programowanie dla rozwiązania Retail i zarządzanie nim
-  href: dev-itpro/dev-retail-home-page.md
   items:
+    - name: Rozwiązanie Retail dla profesjonalistów IT i deweloperów
+      href: dev-itpro/dev-retail-home-page.md
     - name: Architektura
       items:
         - name: Składniki rozwiązania Retail
@@ -598,6 +604,8 @@
           href: dev-itpro/view-pos-extension-package-details.md
     - name: Rozszerzalność aplikacji Hardware Station
       href: dev-itpro/hardware-station-extensibility.md
+    - name: Integruj punkt sprzedaży z nowym urządzeniem sprzętowym
+      href: dev-itpro/hardware-device-extension.md
     - name: Rozszerzalność usługi Retail Server
       items:
         - name: Rozszerzanie kontrolera Retail Server OData
@@ -655,8 +663,9 @@
         - name: Włącz ochronę przed podwójnymi płatnościami dla łącznika płatności
           href: dev-itpro/duplicate-payment-protection.md
     - name: Retail SDK
-      href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: Architektura zestawu Retail SDK
+          href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Nadchodzące zmiany w zestawie Retail SDK
           href: dev-itpro/UpcomingSDKChanges.md
         - name: Scalanie systemów kompilacji dla rozwiązań Retail i Finance and Operations
@@ -667,9 +676,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Przykłady zestawu Retail SDK
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
-          items:
-            - name: Punkty rozszerzenia dla dokumentów dostawy
-              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: Punkty rozszerzenia dla dokumentów dostawy
+          href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Rozszerzenia bazy danych kanału
           href: dev-itpro/channel-db-extensions.md
         - name: Umożliwianie niestandardowej synchronizacji z usługą CDX za pomocą rozszerzenia

@@ -1,9 +1,9 @@
 ---
-title: Globalizacja
-description: Ten temat zawiera listę zasobów, które pomogą Ci dowiedzieć się więcej o funkcjach i ofertach specyficznych dla danego kraju/regionu.
+title: Zasoby globalizacji
+description: Ten temat zawiera listę zasobów, które mogą pomóc Ci dowiedzieć się więcej na temat funkcjonalności i ofert dla danego kraju/regionu.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/01/2019
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d2fe0b357edf3594aa7d795eb2a15f03a886d79
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 668a24c54ded798658a136b8482823b595962306
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850622"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864973"
 ---
-# <a name="globalization"></a>Globalizacja
+# <a name="globalization-resources"></a>Zasoby globalizacji
 
-## <a name="local-and-regional-deployments"></a>Wdrożenia lokalne i regionalne
-Jeśli przepisy obowiązujące w danym kraju wymagają, aby dane były przechowywane w inny sposób, niż jest to wymagane w innych krajach/regionach, podczas wdrażania rozwiązania Finance and Operations może być konieczne uwzględnienie wymagań specyficznych dla danego kraju/regionu. Pamiętaj o następujących zasobach, które mogą być przydatne w Twojej sytuacji:
+## <a name="local-and-regional-deployments"></a>Lokalne i regionalne wdrożenia
+Jeśli przepisy obowiązujące w danym kraju wymagają, aby dane były przechowywane w inny sposób lub obsługiwane inaczej niż wymagane w innych krajach/regionach, mogą istnieć wymagania kraju/regionu, które należy wziąć pod uwagę podczas wdrażania rozwiązania Finance and Operations. Pamiętaj o następujących zasobach, które mogą być przydatne w Twojej sytuacji:
 
 [Microsoft Dynamics 365 for Finance and Operations — obsługiwane przez firmę 21Vianet w Chinach](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
