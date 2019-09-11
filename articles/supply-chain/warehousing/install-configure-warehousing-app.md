@@ -1,9 +1,9 @@
 ---
-title: Instalowanie i konfigurowanie Microsoft Dynamics 365 for Finance and Operations &#8211; magazynowanie
+title: Omówienie instalowania i konfiguracji aplikacji magazynu
 description: W tym temacie opisano sposób instalowania i konfigurowania programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/12/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f5e99351d79cb5898c6d5565d3d3197a8fe860df
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 742e8753aafca670b94c9f0361ef1dbbe42f0eb8
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559193"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1866120"
 ---
-# <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Instalowanie i konfigurowanie Microsoft Dynamics 365 for Finance and Operations &#8211; magazynowanie
+# <a name="install-and-configure-the-warehousing-app-overview"></a>Omówienie instalowania i konfiguracji aplikacji magazynu
 
 [!include [banner](../includes/banner.md)]
 
@@ -91,10 +91,10 @@ Aplikację w urządzeniu należy skonfigurować do łączenia się z serwerem pr
 1.  W aplikacji przejdź do okna **Ustawienia połączenia**.
 2.  Wyczyść pole **Tryb demonstracyjny**. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
 3.  Podaj poniższe informacje: 
-    + **Identyfikator klienta usługi Azure Active Directory** — identyfikator klienta uzyskuje się w kroku 9 procedury „Tworzenie aplikacji usługi internetowej w usłudze Active Directory”. 
-    + **Klucz tajny klienta usługi Azure Active Directory** — klucz tajny klienta uzyskuje się w kroku 11 procedury „Tworzenie aplikacji usługi internetowej w usłudze Active Directory”. 
+    + **Identyfikator klienta usługi katalogu Azure Active** — identyfikator klienta uzyskuje się w kroku 9 procedury „Tworzenie aplikacji usługi internetowej w usłudze Active Directory”. 
+    + **Klucz tajny klienta katalogu usługi Azure Active** — klucz tajny klienta uzyskuje się w kroku 11 procedury „Tworzenie aplikacji usługi internetowej w usłudze Active Directory”. 
     + **Zasób usługi Azure Active Directory** — zasób katalogowy usługi Azure AD opisuje adres URL głównego katalogu programu Finance and Operations. **Uwaga:**: Na końcu pola nie należy umieszczać znaku kreski ułamkowej (/). 
-    + **Dzierżawca usługi Azure Active Directory** — Dzierżawa katalogu usługi Azure AD używana na serwerze programu Finance and Operations: `https://login.windows.net/your-AD-tenant-ID`. Na przykład: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
+    + **Dzierżawca katalogu usługi Azure Active** — Dzierżawa katalogu usługi Azure AD używana na serwerze programu Finance and Operations: `https://login.windows.net/your-AD-tenant-ID`. Na przykład: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Uwaga:**: Na końcu pola nie należy umieszczać znaku kreski ułamkowej (/). 
     + **Firma** — wpisz firmę zdefiniowaną w programie Finance and Operations, z którą ma się łączyć aplikacja. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Kliknij przycisk **Wstecz** w lewym górnym rogu aplikacji. Aplikacja połączy się teraz z serwerem programu Finance and Operations i zostanie wyświetlony ekran logowania dla pracownika magazynu. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)

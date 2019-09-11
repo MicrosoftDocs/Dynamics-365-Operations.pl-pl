@@ -3,7 +3,7 @@ title: Konfigurowanie firm przewozowych
 description: W tej procedurze opisano sposób konfigurowania firmy przewozowej i definiowania szczegółów, takich jak usługi, tryb wysyłki, metoda płatności za transport, ograniczenia transportu i stawka kosztów wysyłki.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c5ac13d17c97f20ee79e7faf57c570f02158424
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7a43a99e10b915f1265be14f2442069dae3a22e5
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569109"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867034"
 ---
 # <a name="set-up-shipping-carriers"></a>Konfigurowanie firm przewozowych
 
@@ -31,67 +31,44 @@ W tej procedurze opisano sposób konfigurowania firmy przewozowej i definiowania
 
 
 ## <a name="create-a-new-shipping-carrier"></a>Tworzenie nowej firmy przewozowej
-1. Wybierz kolejno opcje Zarządzanie transportem > Ustawienia > Przewoźnicy > Firmy przewozowe.
-2. Kliknij przycisk Nowy.
-3. W polu Firma przewozowa wpisz wartość.
-4. W polu Nazwa wpisz wartość.
-5. W polu Tryb kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-6. Na liście znajdź i zaznacz odpowiedni rekord.
-7. Na liście kliknij łącze w wybranym wierszu.
+1. Wybierz kolejno opcje **Okienko Nawigacji > Moduły > Zarządzanie transportem > Ustawienia > Przewoźnicy > Firmy przewozowe**.
+2. W okienku akcji wybierz opcję **Nowy**.
+3. W polu **Firma przewozowa** wpisz wartość.
+4. W polu **Nazwa** wpisz wartość.
+5. W polu **Tryb** wybierz opcję z menu rozwijanego.
 
 ## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>Wprowadzanie ogólnych informacji o firmie przewozowej
-1. Przełącz rozwinięcie sekcji Przegląd.
-2. Zaznacz lub usuń zaznaczenie pola wyboru Aktywuj firmę przewozową.
-3. W polu Dostawca kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-    * Wybierz konto dostawcy, do którego chcesz przypisać firmę przewozową.  
-4. Na liście znajdź i zaznacz odpowiedni rekord.
-5. Na liście kliknij łącze w wybranym wierszu.
-6. W polu Typ metody płatności za transport wybierz opcję.
-    * Wybierz opcję Ręczne, aby użyć strony Metoda płatności za transport, lub opcję EDI, aby zaktualizować metodę płatności na elektroniczną wymianę danych (EDI).  
-7. Zaznacz lub usuń zaznaczenie pola wyboru Aktywuj oceny przewoźników.
+1. Przełącz rozwinięcie sekcji **Przegląd**.
+2. Zaznacz lub usuń zaznaczenie pola wyboru **Aktywuj firmę przewozową**.
+3. W polu **Konto dostawcy** wybierz opcję z menu rozwijanego. Wybierz konto dostawcy, do którego chcesz przypisać firmę przewozową.  
+4. W polu **Typ metody płatności** za transport wybierz opcję. Wybierz opcję **Ręczne**, aby użyć strony Metoda płatności za transport, lub opcję **EDI**, aby zaktualizować metodę płatności na elektroniczną wymianę danych (EDI).  
+5. Zaznacz lub usuń zaznaczenie pola wyboru **Aktywuj oceny przewoźników**.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Tworzenie niezbędnych usług dla firmy przewozowej
-1. Przełącz rozwinięcie sekcji Usługi.
-2. Kliknij przycisk Nowy.
-3. Na liście oznacz wybrany wiersz.
-4. W polu Usługa przewozowa wpisz wartość.
-5. W polu Nazwa wpisz wartość.
-6. W polu Metoda transportu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-7. Na liście znajdź i zaznacz odpowiedni rekord.
-8. Na liście kliknij łącze w wybranym wierszu.
+1. Przełącz rozwinięcie sekcji **Usługi**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Usługa przewozowa** wpisz wartość.
+4. W polu **Nazwa** wpisz wartość.
+5. W polu **Metoda transportu** wybierz opcję z menu rozwijanego.
 
 ## <a name="set-up-the-address-for-the-carrier-optional"></a>Konfigurowanie adresu przewoźnika (opcjonalnie)
-1. Przełącz rozwinięcie sekcji Adresy.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa lub opis wpisz wartość.
-4. W polu Kraj/region kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-5. Na liście kliknij łącze w wybranym wierszu.
-6. W polu Kod pocztowy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-7. Na liście znajdź i zaznacz odpowiedni rekord.
-8. Na liście kliknij łącze w wybranym wierszu.
-9. W polu Ulica wpisz wartość.
-10. Kliknij przycisk OK.
+1. Przełącz rozwinięcie sekcji **Adresy**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Nazwa lub opis** wpisz wartość.
+4. W polu **Kraj/region** wybierz opcję z menu rozwijanego.
+5. W polu **Kod pocztowy** wybierz opcję z menu rozwijanego.
+6. W polu **Ulica** wpisz wartość.
+7. Kliknij przycisk **OK**.
 
 ## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>Konfigurowanie profilu wyznaczania stawek dla przewoźnika
-1. Przełącz rozwinięcie sekcji Profile oceny.
-2. Kliknij przycisk Nowy.
-3. Na liście oznacz wybrany wiersz.
-4. W polu Profil oceny wpisz wartość.
-5. W polu Nazwa wpisz wartość.
-6. W polu Oddział kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-7. Na liście znajdź i zaznacz odpowiedni rekord.
-8. Na liście kliknij łącze w wybranym wierszu.
-9. W polu Magazyn kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-10. Na liście znajdź i zaznacz odpowiedni rekord.
-11. Na liście kliknij łącze w wybranym wierszu.
-12. W polu Aparat wyznaczania stawki kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-    * Wybierz aparat wyznaczania stawki zgodny z umową zawartą z przewoźnikiem.  
-13. Na liście znajdź i zaznacz odpowiedni rekord.
-14. Na liście kliknij łącze w wybranym wierszu.
-15. W polu Główna stawka kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-16. Na liście znajdź i zaznacz odpowiedni rekord.
-17. Na liście kliknij łącze w wybranym wierszu.
-18. W polu Aparat czasu tranzytu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-19. Na liście kliknij łącze w wybranym wierszu.
-20. Kliknij przycisk Zapisz.
+1. Przełącz rozwinięcie sekcji **Profile oceny**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Profil oceny** wpisz wartość.
+4. W polu **Nazwa** wpisz wartość.
+5. W polu **Oddział** wybierz opcję z menu rozwijanego.
+6. W polu **Magazyn** wybierz opcję z menu rozwijanego.
+7. W polu **Aparat wyznaczania stawki** wybierz opcję z menu rozwijanego. Wybierz aparat wyznaczania stawki zgodny z umową zawartą z przewoźnikiem.  
+8. W polu **Główna stawka** wybierz opcję z menu rozwijanego.
+9. W polu **Aparat czasu tranzytu** wybierz opcję z menu rozwijanego.
+10. Wybierz opcję **Zapisz**.
 

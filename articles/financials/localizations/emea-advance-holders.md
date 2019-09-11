@@ -1,9 +1,9 @@
 ---
-title: Posiadacze zaliczek
+title: Omówienie posiadaczy zaliczek
 description: Więcej informacji na temat funkcji posiadaczy zaliczek w Microsoft Dynamics 365 for Finance and Operations.
 author: LizaGolub
 manager: AnnBe
-ms.date: 08/23/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 587af5644cfcbb648157b2e3b42b387729c99ca5
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 2eda288581e155ef20ce57251982c50dc44059a9
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1852152"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865709"
 ---
-# <a name="advance-holders"></a>Posiadacze zaliczek
+# <a name="advance-holders-overview"></a>Omówienie posiadaczy zaliczek
 
 [!include [banner](../includes/banner.md)]
 

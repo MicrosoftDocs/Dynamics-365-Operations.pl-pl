@@ -3,7 +3,7 @@ title: Tworzenie i obsługa blokowania zapasów
 description: W tej procedurze pokazano, jak za pomocą funkcji blokowania zapasów zapobiec rezerwowaniu fizycznie dostępnych zapasów przez inne dokumenty źródłowe dotyczące towarów wychodzących.
 author: perlynne
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 845d517ad10245df3b208874df61e235c199c7fe
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: b2485eaf31226b11106895074ae0ad95e561777b
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836415"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916606"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>Tworzenie i obsługa blokowania zapasów
 
@@ -32,28 +32,23 @@ W tej procedurze pokazano, jak za pomocą funkcji blokowania zapasów zapobiec r
 
 
 ## <a name="create-an-inventory-blocking"></a>Tworzenie blokowania zapasów
-1. Kliknij kolejno opcje Zarządzanie zapasami > Zadania okresowe > Blokowanie zapasów.
-2. Kliknij przycisk Nowy.
-3. W polu Numer towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-4. Na liście zaznacz towar, który chcesz wybrać. 
-    * Wybierz numer towaru fizycznie dostępnych zapasów, które chcesz zablokować. Jeśli używasz firmy demonstracyjnej USMF, można wybrać towar M9201.  
-5. Wprowadź liczbę w polu Ilość.
-    * Jeśli używasz towaru M9201, wybierz mniej niż 200.  
-6. Przełącz rozwinięcie sekcji Wymiary magazynowe.
-7. W polu Magazyn kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-8. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Jeśli używasz towaru M9201, można wybrać magazyn 51.  
-9. Kliknij przycisk Zapisz.
+1. W **Okienku nawigacji** otwórz **Moduły > Zarządzanie zapasami > Zadania okresowe > Blokowanie zapasów**.
+2. Kliknij przycisk **Nowy**.
+3. W polu **Numer towaru** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+4. Na liście zaznacz towar, który chcesz wybrać. Wybierz numer towaru fizycznie dostępnych zapasów, które chcesz zablokować. Jeśli używasz firmy demonstracyjnej USMF, można wybrać towar M9201.  
+5. W polu **Ilość** wpisz liczbę. Jeśli używasz towaru M9201, wybierz mniej niż 200.
+6. Rozwiń skróconą kartę **Wymiary magazynowe**.
+7. W polu **Magazyn** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+8. Na liście znajdź i zaznacz odpowiedni rekord. Jeśli używasz towaru M9201, można wybrać magazyn 51.  
+9. Kliknij przycisk **Zapisz**.
 
 ## <a name="update-the-conditions-of-the-inventory-blocking"></a>Aktualizowanie warunków blokowania zapasów
-1. Wprowadź liczbę w polu Ilość.
-    * Zaktualizuj pole ilości zapasów, aby uwzględniało ilość do zablokowania.  
-2. W polu Oczekiwana data wprowadź datę.
-    * Warto określić, kiedy zablokowane zapasy powinny stać się dostępne do rezerwacji, przypisując im oczekiwaną datę. Jeśli w ustawieniu blokowania zapasów zostanie zaznaczona opcja Przewidywane do przyjęcia, co ma miejsce domyślnie podczas ręcznego tworzenia blokowania, ta data będzie wyświetlana na oczekiwanej transakcji.  
-3. Kliknij przycisk Zapisz.
+1. W skróconej karcie **Ogólne** w polu **Ilość** wprowadź liczbę. Zaktualizuj pole ilości zapasów, aby uwzględniało ilość do zablokowania.  
+2. W polu **Oczekiwana data** wprowadź datę. Warto określić, kiedy zablokowane zapasy powinny stać się dostępne do rezerwacji, przypisując im oczekiwaną datę. Jeśli w ustawieniu blokowania zapasów zostanie zaznaczona opcja Przewidywane do przyjęcia, co ma miejsce domyślnie podczas ręcznego tworzenia blokowania, ta data będzie wyświetlana na oczekiwanej transakcji.  
+3. Kliknij przycisk **Zapisz**.
 
 ## <a name="remove-the-inventory-blocking"></a>Usuwanie blokowania zapasów
-1. Kliknij przycisk Usuń.
-2. Kliknij przycisk Tak.
+1. W **Okienku akcji** kliknij pozycję **Usuń**.
+2. Kliknij przycisk **Tak**.
 3. Zamknij stronę.
 

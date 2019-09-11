@@ -1,9 +1,9 @@
 ---
 title: Konfigurowanie standardowych kosztów robocizny i wydatków
-description: W tej procedurze pokazano sposób konfigurowania standardowych kosztów robocizny i wydatków dla projektu.
+description: W tym temacie pokazano sposób konfigurowania standardowych kosztów robocizny i wydatków dla projektu.
 author: KimANelson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,46 +17,40 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b76956e9b1ce1a1e977aaa7c4974e73754e0d261
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 60ab8eb94d4a8a0fb2c1e732ec7b25bfd5e7611e
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845902"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867733"
 ---
 # <a name="configure-standard-costs-for-labor-and-expenses"></a>Konfigurowanie standardowych kosztów robocizny i wydatków
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób konfigurowania standardowych kosztów robocizny i wydatków dla projektu. W tym zadaniu jest wykorzystywany zestaw danych firmy USSI.
+W tym temacie pokazano sposób konfigurowania standardowych kosztów robocizny i wydatków dla projektu. W tym zadaniu jest wykorzystywany zestaw danych firmy USSI.
 
-1. Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie > Ustawienia > Ceny > Koszt własny (godzina).
-2. Kliknij przycisk Nowy.
-3. W polu Data obowiązywania wprowadź datę.
-4. W polu Koszt własny wpisz liczbę.
-    * Można ustawić standardową wartość kosztu własnego dla kategorii projektu lub ustawić koszt własny według numeru pracownika, numeru projektu, kategorii, daty lub dowolnej kombinacji tych parametrów. Stosowany będzie koszt własny o najwyższym poziomie szczegółowości.  
-5. Kliknij przycisk Zapisz.
-6. Zamknij stronę.
-7. Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie > Ustawienia > Ceny > Cena sprzedaży (godzina).
-8. Kliknij przycisk Nowy.
-9. W polu Data obowiązywania wprowadź datę.
-10. W polu Ważny dla wybierz opcję.
-11. W polu Ceny wpisz liczbę.
-    * Użytkownik może ustawić standardową cenę sprzedaży dla transakcji godzinowych lub dla kategorii projektu. Może również ustawić ceny sprzedaży według numeru pracownika, numeru projektu, kategorii, daty transakcji albo dowolnej kombinacji tych wartości. Rzeczywista cena sprzedaży stosowana podczas wprowadzania transakcji przez pracownika w arkuszu godzin jest ceną sprzedaży o najwyższym poziomie szczegółowości. Jeśli na przykład ustawiono zarówno ogólną cenę sprzedaży, jak i cenę sprzedaży dla danego pracownika, będzie używana cena sprzedaży dla danego pracownika.  
-12. Kliknij przycisk Zapisz.
-13. Zamknij stronę.
-14. Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie > Ustawienia > Ceny > Koszt własny (wydatek).
-15. Kliknij przycisk Nowy.
-16. W polu Data obowiązywania wprowadź datę.
-17. W polu Koszt własny wpisz liczbę.
-    * Można wypełnić wiele pól, ale to jest minimum niezbędne do zapisania rekordu.  
-18. Kliknij przycisk Zapisz.
-19. Zamknij stronę.
-20. Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie > Ustawienia > Ceny > Cena sprzedaży (wydatek).
-21. Kliknij przycisk Nowy.
-22. W polu Data obowiązywania wprowadź datę.
-23. W polu Ważny dla wybierz opcję.
-24. W polu Ceny wpisz liczbę.
-    * Rzeczywista cena sprzedaży stosowana podczas wprowadzania transakcji przez pracownika w arkuszu wydatków jest ceną sprzedaży o najwyższym poziomie szczegółowości. Jeśli na przykład ustawiono cenę sprzedaży zarówno ogólną, jak i dla danego pracownika, będzie używana cena sprzedaży dla danego pracownika.  
-25. Kliknij przycisk Zapisz.
+1. W okienku nawigacji przejdź do **Moduły > Zarządzanie projektami i ich księgowanie > Ustawienia > Ceny > Koszt własny (godzina)**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Data wejścia w życie** wprowadź datę.
+4. W polu **Koszt własny** wpisz liczbę. Można ustawić standardową wartość kosztu własnego dla kategorii projektu lub ustawić koszt własny według numeru pracownika, numeru projektu, kategorii, daty lub dowolnej kombinacji tych parametrów. Stosowany będzie koszt własny o najwyższym poziomie szczegółowości.  
+5. Wybierz opcję **Zapisz**.
+6. W okienku nawigacji przejdź do **Moduły > Zarządzanie projektami i ich księgowanie > Ustawienia > Ceny > Cena sprzedaży (godzina)**.
+7. Wybierz pozycję **Nowy**.
+8. W polu **Data wejścia w życie** wprowadź datę.
+9. W polu **Ważny dla** wybierz opcję.
+10. W polu **Ceny** wpisz liczbę. Użytkownik może ustawić standardową cenę sprzedaży dla transakcji godzinowych lub dla kategorii projektu. Może również ustawić ceny sprzedaży według numeru pracownika, numeru projektu, kategorii, daty transakcji albo dowolnej kombinacji tych wartości. Rzeczywista cena sprzedaży stosowana podczas wprowadzania transakcji przez pracownika w arkuszu godzin jest ceną sprzedaży o najwyższym poziomie szczegółowości. Jeśli na przykład ustawiono zarówno ogólną cenę sprzedaży, jak i cenę sprzedaży dla danego pracownika, będzie używana cena sprzedaży dla danego pracownika.  
+11. Wybierz opcję **Zapisz**.
+12. Zamknij stronę.
+13. W okienku nawigacji przejdź do **Moduły > Zarządzanie projektami i ich księgowanie > Ustawienia > Ceny > Koszt własny (wydatek)**.
+14. Wybierz pozycję **Nowy**.
+15. W polu **Data wejścia w życie** wprowadź datę.
+16. W polu **Koszt własny** wpisz liczbę. Można wypełnić wiele pól, ale to jest minimum niezbędne do zapisania rekordu.  
+17. Wybierz opcję **Zapisz**.
+18. W okienku nawigacji przejdź do **Moduły > Zarządzanie projektami i ich księgowanie > Ustawienia > Ceny > Cena sprzedaży (wydatek)**.
+19. Wybierz pozycję **Nowy**.
+20. W polu **Data wejścia w życie** wprowadź datę.
+21. W polu **Ważny dla** wybierz opcję.
+22. W polu **Ceny** wpisz liczbę. Rzeczywista cena sprzedaży stosowana podczas wprowadzania transakcji przez pracownika w arkuszu wydatków jest ceną sprzedaży o najwyższym poziomie szczegółowości. Jeśli na przykład ustawiono cenę sprzedaży zarówno ogólną, jak i dla danego pracownika, będzie używana cena sprzedaży dla danego pracownika.  
+23. Wybierz opcję **Zapisz**.
 

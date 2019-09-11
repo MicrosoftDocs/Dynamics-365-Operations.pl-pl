@@ -1,9 +1,9 @@
 ---
-title: Integracja z programem Microsoft Dynamics 365 for Field Service
+title: Omówienie integracji z Microsoft Dynamics 365 for Field Service
 description: Ten temat zawiera omówienie integracji z programem Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 02/05/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: efda4e39f63155785386ecec6d21973e01a0f69f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 22abe83f06b7fc57c73fb82ccafc4b426667e7c6
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564035"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865213"
 ---
-# <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integracja z programem Microsoft Dynamics 365 for Field Service
+# <a name="integration-with-microsoft-dynamics-365-for-field-service-overview"></a>Omówienie integracji z Microsoft Dynamics 365 for Field Service
 
 [!include[banner](../includes/banner.md)]
 

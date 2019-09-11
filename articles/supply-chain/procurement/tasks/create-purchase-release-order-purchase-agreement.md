@@ -3,7 +3,7 @@ title: Tworzenie zlecenia wydania zakupu na podstawie umów zakupu
 description: W tej procedurze pokazano sposób korzystania z umowy zakupu podczas tworzenia zamówienia zakupu.
 author: mkirknel
 manager: AnnBe
-ms.date: 12/04/2015
+ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c45db4ac01be831c0c75f888d313d61d934fc33f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: da161c9066c822f8c09e5eda90994e8b03af4681
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547602"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916872"
 ---
 # <a name="create-a-purchase-release-order-from-a-purchase-agreement"></a>Tworzenie zlecenia wydania zakupu na podstawie umów zakupu
 
@@ -30,37 +30,32 @@ W tej procedurze pokazano sposób korzystania z umowy zakupu podczas tworzenia z
 
 
 ## <a name="create-a-purchase-order"></a>Tworzenie zamówienia zakupu
-1. Otwórz obszar roboczy Przygotowanie zamówienia zakupu.
-2. Kliknij opcję Nowe zamówienie zakupu.
-3. W polu Konto dostawcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+1. W **okienku nawigacji** przejdź do **Obszary robocze > Przygotowanie zamówienia zakupu**. 
+2. Kliknij opcję **Nowe zamówienie zakupu**.
+3. W polu **Konto dostawcy** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 4. Na liście znajdź i zaznacz odpowiedni rekord.
 5. Na liście kliknij łącze w wybranym wierszu.
-6. Przełącz rozwinięcie sekcji Ogólne.
-7. W polu Umowa zakupu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-    * Wszystkie dostępne umowy z dostawcą są wymienione w tym miejscu. Znajdź obowiązującą umowę, której chcesz używać.  
+6. Rozwiń skróconą kartę **Ogólne**.
+7. W polu **Umowa zakupu** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie. Wszystkie dostępne umowy z dostawcą są wymienione w tym miejscu. Znajdź obowiązującą umowę, której chcesz używać.  
 8. Na liście kliknij łącze w wybranym wierszu.
-9. Kliknij przycisk Tak.
-10. Kliknij przycisk OK.
+9. Kliknij przycisk **Tak**.
+10. Kliknij przycisk **OK**.
 
 ## <a name="add-a-line"></a>Dodawanie wiersza
-1. W polu Numer towaru wpisz wartość.
-    * Jeśli w zobowiązaniu istnieją określone wymiary magazynowe lub wymiary lokalizacji, te same wartości należy wprowadzić w wierszu zamówienia zakupu, aby umowa była używana.  
-2. W polu Oddział kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-    * Pole oddziału może już być wypełnione wartością domyślną z zamówienia lub od dostawcy. W takim przypadku pomiń ten krok.  
+1. W polu **Numer towaru** wpisz wartość. Jeśli w zobowiązaniu istnieją określone wymiary magazynowe lub wymiary lokalizacji, te same wartości należy wprowadzić w wierszu zamówienia zakupu, aby umowa była używana.  
+2. W polu **Oddział** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie. Pole oddziału może już być wypełnione wartością domyślną z zamówienia lub od dostawcy. W takim przypadku pomiń ten krok.  
 3. Na liście znajdź i zaznacz odpowiedni rekord.
 4. Na liście kliknij łącze w wybranym wierszu.
-5. Wprowadź liczbę w polu Ilość.
-    * Sprawdź, czy cena została skopiowana ze zobowiązania.  
+5. W polu **Ilość** wpisz liczbę. Sprawdź, czy cena została skopiowana ze zobowiązania.  
 
 ## <a name="look-up-the-commitment"></a>Wyszukiwanie zobowiązania
-1. Kliknij opcję Aktualizuj wiersz.
-2. Kliknij opcję Powiązany.
-    * W tym miejscu można uzyskać szczegółowe informacje dotyczące umowy zakupu. Na przykład można wyświetlić cenę i sprawdzić, czy cena i rabat są stałe, co oznacza, że jeśli zmienisz cenę lub rabat w zamówieniu zakupu na inną wartość niż podana w zobowiązaniu, system usunie łącze, w związku z czym wiersz zamówienia zakupu nie będzie spełniał zobowiązania. Można również sprawdzić, czy jest zaznaczona opcja Wymuszono maks., która oznacza, że ilość w zobowiązaniu nie może zostać przekroczona po zsumowaniu wszystkich zakupów spełniających zobowiązanie.  
+1. Kliknij opcję **Aktualizuj wiersz**.
+2. Kliknij opcję **Powiązany**. W tym miejscu można uzyskać szczegółowe informacje dotyczące umowy zakupu. Na przykład można wyświetlić cenę i sprawdzić, czy cena i rabat są stałe, co oznacza, że jeśli zmienisz cenę lub rabat w zamówieniu zakupu na inną wartość niż podana w zobowiązaniu, system usunie łącze, w związku z czym wiersz zamówienia zakupu nie będzie spełniał zobowiązania. Można również sprawdzić, czy jest zaznaczona opcja Wymuszono maks., która oznacza, że ilość w zobowiązaniu nie może zostać przekroczona po zsumowaniu wszystkich zakupów spełniających zobowiązanie.  
 3. Zamknij stronę.
 
 ## <a name="look-up-the-purchase-agreement"></a>Wyszukiwanie umowy zakupu
-1. W okienku akcji kliknij pozycję Ogólne.
-2. Kliknij opcję Umowa zakupu.
+1. W **okienku akcji** kliknij pozycję **Ogólne**.
+2. Kliknij opcję **Umowa zakupu**.
 3. Zamknij stronę.
 4. Zamknij stronę.
 

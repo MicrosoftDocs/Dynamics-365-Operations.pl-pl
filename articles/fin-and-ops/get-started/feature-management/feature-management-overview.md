@@ -3,7 +3,7 @@ title: Zarządzanie funkcjami — omówienie
 description: W tym temacie opisano funkcję zarządzania funkcjami i sposób jego używania.
 author: mikefalkner
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 6aeb5383520f799223d62420f6e0c1079c6c961f
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862945"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887118"
 ---
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
@@ -103,8 +103,9 @@ Wszystkie funkcje, które mogą być włączone, zostaną włączone. Jeśli fun
 
 Domyślnie wszystkie funkcje dodawane do środowiska są wyłączone, o ile nie są obowiązkowe. Jeśli jednak chcesz, aby wszystkie nowe funkcje były automatycznie włączane, możesz użyć listy rozwijanej pod tytułem obszaru roboczego, aby zmienić to, co dzieje się przy dodawaniu nowych funkcji.
 
-- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie włączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie włączane po dodaniu ich do środowiska.
-- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie wyłączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie wyłączane po dodaniu ich do środowiska.
+- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie włączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie włączane po dodaniu ich do Twojego środowiska.
+- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie wyłączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie wyłączane po dodaniu ich do Twojego środowiska.
+
 
 Jeśli włączysz wszystkich funkcji automatycznie, spowoduje to włączenie wszystkich funkcji, które byłyby włączone, po kliknięciu przycisku **Włącz wszystkie**. Nie zostaną włączone funkcje wymagające potwierdzenia lub funkcje, które nie mogą być włączone, dopóki nie zostanie podjęta akcja.
 

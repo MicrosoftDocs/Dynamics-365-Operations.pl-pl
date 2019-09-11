@@ -3,7 +3,7 @@ title: Tworzenie planu międzyfirmowego
 description: Ta procedura pokazuje, jak utworzyć plan międzyfirmowy.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 194bb78eed5a673030f7cead031cf286cddbe77c
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f7fe8d155b39190f6c0ee1ee310a5edd2400623c
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845216"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916721"
 ---
 # <a name="create-an-intercompany-plan"></a>Tworzenie planu międzyfirmowego
 
@@ -31,33 +31,26 @@ Ta procedura pokazuje, jak utworzyć plan międzyfirmowy. Dane wykorzystane do s
 
 
 ## <a name="set-up-an-intercompany-planning-group"></a>Konfigurowanie grupy planowania międzyfirmowego 
-1. Przejdź do okna Grupy planowania międzyfirmowego.
-    * Planowanie główne > Ustawienia > Grupy planowania międzyfirmowego  
+1. W **okienku nawigacji** przejdź do **Moduły > Planowanie główne > Konfiguracja > Grupy planowania międzyfirmowego**. 
 2. Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy. Na przykład wyfiltruj według pola Nazwa z wartością „10”.
 3. Na liście oznacz wybrany wiersz.
-4. Kliknij przycisk Usuń.
-    * Ten krok jest konieczny w celu przyspieszenia planowania międzyfirmowego.   Planowanie międzyfirmowe spowoduje wykonanie planowania głównego we wszystkich firmach w grupie planowania, zaczynając od planowania o najniższym numerze.  
-5. Kliknij przycisk Tak.
+4. Kliknij przycisk **Usuń**. Ten krok jest konieczny w celu przyspieszenia planowania międzyfirmowego.   Planowanie międzyfirmowe spowoduje wykonanie planowania głównego we wszystkich firmach w grupie planowania, zaczynając od planowania o najniższym numerze.  
+5. Kliknij przycisk **Tak**.
 6. Zamknij stronę.
 
 ## <a name="create-an-intercompany-plan"></a>Tworzenie planu międzyfirmowego
-1. Kliknij opcję Międzyfirmowe planowanie główne.
-    * To jest w obszarze roboczym Planowanie główne.  
-2. W polu Grupa planowania międzyfirmowego kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-3. Na liście kliknij łącze w wybranym wierszu.
-    * Wybierz grupę planowania międzyfirmowego 10.  
-4. W polu Liczba iteracji planowania międzyfirmowego wpisz „2”.
-    * Grupa planowania międzyfirmowego 10 ma dwa elementy członkowskie. W celu rozpowszechnienia opóźnień z firmy źródłowej (USMF) do firmy odbiorcy (DEMF) należy wykonać planowanie międzyfirmowe dwa razy w obu firmach. Pierwsza iteracja spowoduje rozpowszechnienie informacji o zapotrzebowaniu i zidentyfikowanie opóźnień w firmie źródłowej (USMF). Druga iteracja rozpowszechni opóźnienia z firmy USMF do firmy DEMF.  
-5. W polu Pierwsza iteracja wybierz opcję.
-6. W polu Pierwsza iteracja wybierz opcję „Ponowne generowanie”.
-7. W polu Kolejne iteracje wybierz opcję „Ponowne generowanie”.
-8. W polu Liczba wątków wprowadź liczbę.
-    * Reprezentuje liczbę równoległych wątków używanych w planowaniu.  
-9. Kliknij przycisk OK.
+1. W **okienku nawigacji** przejdź do **Moduły > Planowanie główne > Obszary robocze > Planowanie główne**.
+2. Kliknij opcję **Międzyfirmowe planowanie główne**.  
+3. W polu **IGrupa planowania międzyfirmowego** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+4. Na liście kliknij łącze w wybranym wierszu. Wybierz grupę planowania międzyfirmowego 10.  
+5. W polu **Liczba iteracji planowania międzyfirmowego** wpisz „2”. Grupa planowania międzyfirmowego 10 ma dwa elementy członkowskie. W celu rozpowszechnienia opóźnień z firmy źródłowej (USMF) do firmy odbiorcy (DEMF) należy wykonać planowanie międzyfirmowe dwa razy w obu firmach. Pierwsza iteracja spowoduje rozpowszechnienie informacji o zapotrzebowaniu i zidentyfikowanie opóźnień w firmie źródłowej (USMF). Druga iteracja rozpowszechni opóźnienia z firmy USMF do firmy DEMF.  
+6. W polu **Pierwsza iteracja** wybierz opcję „Ponowne generowanie”.
+7. W polu **Kolejne iteracje** wybierz opcję „Ponowne generowanie”.
+8. W polu **Liczba wątków** wprowadź liczbę. Reprezentuje liczbę równoległych wątków używanych w planowaniu.  
+9. Kliknij przycisk **OK**.
 
 ## <a name="view-the-result-of-the-plan"></a>Wyświetlanie wyniku planowania
-1. W polu Plan kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-2. Na liście kliknij łącze w wybranym wierszu.
-    * Kliknij łącze do planu statycznego. Musisz być w firmie USMF.  
-3. Kliknij opcję Zamówienia planowane.
+1. W polu **Plan** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+2. Na liście kliknij łącze w wybranym wierszu. Kliknij łącze do planu statycznego. Musisz być w firmie USMF.  
+3. Kliknij opcję **Zamówienia planowane**.
 

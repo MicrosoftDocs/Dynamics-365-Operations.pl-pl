@@ -1,9 +1,9 @@
 ---
-title: Zapytanie ofertowe (ZO)
+title: Omówienie zapytań ofertowych (ZO)
 description: W tym temacie opisano zapytania ofertowe (ZO). Organizacje wystawiają zapytania ofertowe (ZO), kiedy chcą uzyskać od kilku dostawców konkurencyjne oferty na produkty i usługi, które muszą kupić.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/21/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a904529dccbe392793d0d108335b623bb1ed8b2
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: e2276f5296a77d620e0084c0247b1e25071fe029
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742547"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865287"
 ---
-# <a name="requests-for-quotation-rfqs"></a>Zapytanie ofertowe (ZO)
+# <a name="requests-for-quotation-rfqs-overview"></a>Omówienie zapytań ofertowych (ZO)
 
 [!include [banner](../includes/banner.md)]
 

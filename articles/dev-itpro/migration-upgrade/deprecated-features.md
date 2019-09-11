@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia.
 author: sericks007
 manager: AnnBe
-ms.date: 07/30/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 4aad4f2cf42b72256b5c4727bfd145d16af033ed
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863390"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867108"
 ---
 # <a name="removed-or-deprecated-features"></a>Usunięte lub przestarzałe funkcje
 
@@ -157,6 +157,17 @@ Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycz�
 | **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | Przestarzałe - ostrzeżenie stanie się błędem kompilacji w nadchodzącej aktualizacji platformy 26. |
+
+## <a name="dynamics-365-for-finance-and-operations-1000-with-platform-update-24"></a>Dynamics 365 for Finance and Operations 10.0.0 z aktualizacją platformy 24
+
+### <a name="renaming-released-products"></a>Zmienianie nazw zwolnionych produktów 
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | W przypadku użycia funkcji **Zmień nazwę klucza podstawowego** w celu zmiany wartości identyfikatora towaru (ItemId) zwolnionego produktu, aktualizowane są tylko bezpośrednie odwołania do klucza obcego. Wszelkie inne odwołania do zwolnionego produktu, na przykład ze zlecenia produkcyjnego, będą zachowywały stary identyfikator towaru (ItemId). W efekcie mogą istnieć niespójne dane, które ostatecznie zablokują procesy biznesowe. |
+| **Zamieniona przez inną funkcję?**   | Nr |
+| **Powiązane obszary produktów**         | Zarządzanie informacjami o produktach |
+| **Opcja wdrażania**              | Wszystkich  |
+| **Stan**                         | Usunięte od wersji Dynamics 365 for Finance and Operations 10.0.0 z aktualizacją platformy 24. W wyjątkowych przypadkach, na przykład w celu cofnięcia poprzedniej zmiany nazwy klucza podstawowego zwolnionego produktu, można wysłać prośbę do Microsoftu o tymczasowe usunięce tego ograniczenia operacji zmiany nazwy klucza podstawowego dla zwolnionych produktów. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 z aktualizacją platformy 23

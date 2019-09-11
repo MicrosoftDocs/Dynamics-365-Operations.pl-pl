@@ -3,7 +3,7 @@ title: Tworzenie reguł zaawansowanych dla arkuszy
 description: Ta procedura prowadzi przez proces tworzenia zaawansowanych reguł dla arkuszy.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ec0db1bc5018649acaca05c71a510880b415777
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 3eb34ac419aeab3663a8931d022abf7bcbfddd37
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846686"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916159"
 ---
 # <a name="create-advanced-rules-for-journals"></a>Tworzenie reguł zaawansowanych dla arkuszy
 
@@ -31,30 +31,30 @@ Ta procedura prowadzi przez proces tworzenia zaawansowanych reguł dla arkuszy. 
 
 
 ## <a name="set-up-journal-control"></a>Konfigurowanie kontroli arkusza
-1. Wybierz kolejno opcje Księga główna > Konfiguracja arkusza > Nazwy arkuszy.
+1. W **Okienku nawigacji** otwórz **Moduły > Księga główna > Konfiguracja arkusza > Nazwy arkuszy**.
 2. Na liście znajdź i zaznacz odpowiedni rekord.
-3. Kliknij opcję Kontrola arkusza.
-4. Kliknij przycisk Dodaj.
-5. W polu Firmy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+3. W **Okienku akcji** kliknij **Kontrola arkusza**.
+4. W formularzu można zaksięgować skróconej karcie **Na jakiego typu kontach można księgować** kliknij przycisk **Dodaj**.
+5. W polu **Firmy** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 6. Na liście znajdź i zaznacz odpowiedni rekord.
 7. Na liście kliknij łącze w wybranym wierszu.
-8. Kliknij przycisk Dodaj.
-9. W polu Struktura konta kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+8. Na skróconej karcie **Które wartości segmentów są dozwolone dla tego arkusza** kliknij przycisk **Dodaj**.
+9. W polu **Struktura konta** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 10. Na liście znajdź i zaznacz odpowiedni rekord.
 11. Na liście kliknij łącze w wybranym wierszu.
-12. W polu Segment kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+12. W polu **Segment** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 13. Na liście kliknij łącze w wybranym wierszu.
-14. W polu Od wartości kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+14. W polu **Od wartości** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 15. Na liście znajdź i zaznacz odpowiedni rekord.
 16. Na liście kliknij łącze w wybranym wierszu.
-17. W polu Do wartości kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+17. W polu **Do wartości** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 18. Na liście znajdź i zaznacz odpowiedni rekord.
 19. Na liście kliknij łącze w wybranym wierszu.
 
 ## <a name="set-up-posting-restrictions"></a>Konfigurowanie ograniczeń księgowania
 1. Zamknij stronę.
-2. Kliknij opcję Ograniczenia księgowania.
-3. W ustawieniu Jak chcesz skonfigurować ograniczenia księgowania wybierz opcję Według grupy użytkowników.
+2. Kliknij opcję **Ograniczenia księgowania**.
+3. W polu **Jak chcesz skonfigurować ograniczenia księgowania** wybierz opcję „Według grupy użytkowników”.
 4. W drzewie zaznacz grupę, której chcesz pozwolić na księgowanie w tym arkuszu.
-5. Kliknij przycisk OK.
+5. Kliknij przycisk **OK**.
 

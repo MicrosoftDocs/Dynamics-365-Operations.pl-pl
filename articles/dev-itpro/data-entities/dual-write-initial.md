@@ -19,50 +19,55 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: b74bc2d3133af7e87663a4e6bafb8780e0a6a66f
-ms.sourcegitcommit: efcc0dee8bde5f8f93f6291e7f059ad426843e57
+ms.openlocfilehash: 1473c3bad55734d5f83ee3e4c1654921b872f3bb
+ms.sourcegitcommit: 3f05ede8b8acdf0550240a83a013e093b4ad043d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "1797305"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1873135"
 ---
-# <a name="execution-order-for-initial-sychronization-of-finance-and-operations-and-common-data-service"></a>Zlecenie wykonania dla wstępnej synchronizacji programów Finance and Operations i Common Data Service
+# <a name="execution-order-for-initial-synchronization-of-finance-and-operations-and-common-data-service"></a>Zlecenie wykonania dla wstępnej synchronizacji programów Finance and Operations i Common Data Service
 
-Przed użyciem integracji danych należy utworzyć początkowe dane wymagane dla odbiorców, dostawców i kontaktów. Na przykład, jeśli chcesz utworzyć nowy element **Grupa dostawców** i ustawić jego **Warunki płatności** jako **Net30**, przed podjęciem próby utworzenia elementu **Grupy dostawców** należy upewnić się, że **Net30** istnieje zarówno w programie Finance and Operations, jak i Common Data Service. (W przyszłości udostępnimy funkcję platformy podwójnego zapisu o nazwie **Synchronizacja początkowa**. Będzie to jednorazowa synchronizacja danych między programami Finance and Operations i Common Data Service w ramach konfiguracji podwójnego zapisu).
+[!include [banner](../includes/banner.md)]
 
-Wskazówki: udostępniamy mapę podwójnego zapisu dla wszystkich danych referencyjnych, w tym **Warunki płatności**. Jeśli masz już dane początkowe w jednym systemie, operacja małej aktualizacji na rekordzie może wyzwolić podwójny zapisu w tym rekordzie. 
+[!include [preview](../includes/preview-banner.md)]
 
-Należy postępować zgodnie z poniższą kolejnością pierwszeństwa i upewnić się, że dane początkowe są dostępne zarówno w programie Finance and Operations, jak i w programie Common Data Service.   
+Przed użyciem integracji danych należy utworzyć początkowe dane, które są wymagane dla odbiorców, dostawców i kontaktów. Na przykład użytkownik chce utworzyć nowy towar **Grupy dostawców** i określić **Warunki płatności** jako **Net30**. W takim przypadku przed próbą utworzenia pozycji **grupy dostawców** należy upewnić się, że **Net30** istnieje w obu Microsoft Dynamics 365 for Finance and Operations i Common Data Service. (W przyszłości Microsoft udostępni funkcję platformy podwójnego zapisu o nazwie Synchronizacja początkowa. Będzie to jednorazowa synchronizacja danych między programami Finance and Operations i Common Data Service w ramach konfiguracji podwójnego zapisu).
+
+> [!TIP]
+> Microsoft udostępnia mapę podwójnego zapisu dla wszystkich danych referencyjnych, w tym **Warunki płatności** (warunki płatności). Jeśli masz już dane początkowe w jednym systemie, operacja małej aktualizacji na rekordzie może wyzwolić podwójny zapisu w tym rekordzie.
+
+Należy postępować zgodnie z poniższą kolejnością pierwszeństwa i upewnić się, że dane początkowe są dostępne zarówno w programie Finance and Operations, jak i w programie Common Data Service.
 
 ## <a name="vendor"></a>Dostawca
 
-Kolejność wykonywania dla dostawcy to:
+Oto kolejność wykonywania jednostki **Dostawca**:
 
-```
-Vendor Group
-    Terms of payment
-        Payment day & lines
-        Payment schedule
-Vendor payment method
-```
+1. Grupa dostawców
+
+    1. Warunki płatności
+
+        1. Dzień zapłaty i wiersze
+        2. Harmonogram płatności
+
+2. Metoda płatności dostawcy
 
 ## <a name="customer-organization"></a>Klient (Organizacja)
 
-Kolejność wykonywania dla klienta to:
+Oto kolejność wykonywania jednostki **Odbiorca**:
 
-```
-Customer Group
-    Terms of payment
-        Payment day & lines
-        Payment 
-Customer payment method
-```
+1. Grupa odbiorców
+
+    1. Warunki płatności
+
+        1. Dzień zapłaty i wiersze
+        2. Płatność 
+
+2. Metoda płatności odbiorcy
 
 ## <a name="contact-person"></a>Osoba kontaktowa (Osoba)
 
-Kolejność wykonywania dla osoby kontaktowej to:
+Oto kolejność wykonywania jednostki **Kontakt**:
 
-```
-Customer
-Vendor               
-```
+1. Odbiorca
+2. Dostawca

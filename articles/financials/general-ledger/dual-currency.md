@@ -3,7 +3,7 @@ title: Dwuwalutowość
 description: Ten temat zawiera informacje o dwuwalutowości, gdzie waluta raportowania służy jako druga waluta rozliczeniowa w programie Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,31 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: dfd4c116552510ee42cd2f3e8a0f31100826b9d2
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d5128ea9daaf22ee962ca5fc70a05cba05c7edb
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839410"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867518"
 ---
 # <a name="dual-currency"></a>Dwie waluty
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Funkcjonalność wprowadzona w programie Microsoft Dynamics 365 for Finance and Operations w wersji 8.1 (w październiku 2018 r.) umożliwia zmianę przeznaczenia waluty raportowania i używanie jej jako drugiej waluty rozliczeniowej. Ta funkcja jest nazywana *dwuwalutowością*. Zmian ustawień dwuwalutowości nie można wyłączyć za pomocą klucza konfiguracji lub parametru. Ponieważ waluta raportowania jest używana jako druga waluta rozliczeniowa, zmieniono sposób obliczana waluty raportowania w logice księgowania.
 
-Ponadto zmodyfikowano wiele modułów, tak aby śledziły, raportowały i wykorzystywały walutę raportowania w różnych procesach. Dotyczy to następujących modułów: **Księga główna**, **Raportowanie finansowe**, **Rozrachunki z dostawcami**, **Rozrachunki z odbiorcami**, **Zarządzanie gotówką i bankami** oraz **Środki trwałe**. Po uaktualnieniu należy wykonać określone czynności w modułach Zarządzanie gotówką i bankami oraz Środki trwałe. W związku z tym należy uważnie przeczytać odpowiednie sekcje tego tematu.
+Ponadto zmodyfikowano kilka modułów, tak aby śledziły, raportowały i wykorzystywały walutę raportowania w różnych procesach. Dotyczy to następujących modułów:
+
+- Księga główna 
+- Raportowanie finansowe 
+- Rozrachunki z dostawcami
+- Rozrachunki z odbiorcami 
+- Zarządzanie gotówką i bankami 
+- Środki trwałe 
+- Konsolidacje
+
+Po uaktualnieniu należy wykonać określone czynności w modułach Zarządzanie gotówką i bankami oraz Środki trwałe. W związku z tym należy uważnie przeczytać i zrozumieć odpowiednie sekcje tego tematu.
 
 ## <a name="posting-process"></a>Proces księgowania
 
@@ -75,6 +86,7 @@ Następujące moduły używają waluty raportowania jako drugiej waluty rozlicze
 - [Rozrachunki z odbiorcami](#accounts-payable-and-accounts-receivable)
 - [Zarządzanie gotówką i bankami](#cash-and-bank-management)
 - [Środki trwałe](#fixed-assets)
+- [Konsolidacje](#consolidations)
 
 ### <a name="general-ledger"></a>Księga główna
 
@@ -124,6 +136,8 @@ Dawniej moduł **Środki trwałe** nie śledził żadnych kwot w walucie raporto
 Ponadto wprowadzono znaczne zmiany w procesie amortyzacji. Te zmiany wymagają działań ze strony użytkownika po uaktualnieniu. Ważne jest, aby przeczytać i zrozumieć zmiany opisane poniżej, nawet jeśli jeszcze nie używasz modułu Środki trwałe.
 
 - Zmienił się sposób określania kwoty w walucie raportowania w procesie amortyzacji. W poniższym scenariuszu porównano sposób ustalania kwoty w walucie raportowania w procesie amortyzacji poprzednio i obecnie.
+
+
 
     **Scenariusz amortyzacji**
 
@@ -186,3 +200,13 @@ Ponadto wprowadzono znaczne zmiany w procesie amortyzacji. Te zmiany wymagają d
     - Jeśli typ transakcji amortyzacji wprowadzono w arkuszu środków trwałych, w nowych kolumnach będą wyświetlane kwoty w walucie raportowania. Kwoty te mogą być zmieniane.
     - Jeśli waluta rozliczeniowa i waluty raportowania w księdze są takie same, kwoty będą zsynchronizowane. W przypadku zmiany kwoty w kolumnie **Strona kredytowa** kwota w kolumnie **Uznania w walucie raportowania** automatycznie się odpowiednio zmieni.
     - Jeśli w arkuszu środków trwałych zostanie wprowadzony jakikolwiek inny typ transakcji, kwoty w kolumnach **Obciążenia w walucie raportowania** i **Uznania w walucie raportowania** nigdy nie są wyświetlane — ani przed zaksięgowaniem, ani po. Kwoty w walutach rozliczeniowej i raportowania są nadal dostępne w załączniku, z którego informacje są księgowane do księgi głównej.
+    
+### <a name="consolidations"></a>Konsolidacje
+    
+Funkcjonalność wprowadzona w wersji 10.0.5 Microsoft Dynamics 365 for Finance and Operations (październik 2019) umożliwia korzystanie z funkcji zarządzania funkcjami w celu zapewnienia lepszej elastyczności konsolidacji i podwójnej waluty. Aby włączyć tę funkcję, przejdź do obszaru roboczego **Zarządzanie funkcjami** i wybierz **Włącz funkcję podwójnej waluty w obszarze konsolidacja księgi głównej**.
+
+W przypadku konsolidacji w księdze głównej dodano nową opcję w celu konsolidacji kwot w walucie rozliczeniowej lub raportowania z firm źródłowych. Jeśli waluta księgowania lub raportowania jest taka sama jak waluta księgowania lub waluta raportowania w konsolidowanej firmie, kwoty zostaną skopiowane bezpośrednio, a nie przeliczone.
+
+-  Teraz można określić, czy w firmie źródłowej ma być używana waluta rozliczeniowa czy waluta raportowania, jako waluta transakcji w konsolidowanej firmie.
+
+- Kwoty w walucie księgowej lub sprawozdawczej pochodzące od spółki źródłowej będą kopiowane bezpośrednio do kwot w walucie księgowej lub raportowanej w spółce konsolidacyjnej, jeżeli którakolwiek z tych walut jest taka sama. Kwoty w walucie księgowania i raportowania w konsolidowanej firmie są obliczane przy użyciu kursu wymiany, jeśli żadna z tych walut nie jest taka sama.

@@ -1,9 +1,9 @@
 ---
 title: Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach
 description: Ten temat zawiera informacje dotyczące aktualizacji sposobu wyświetlania kwot w raportach i innych dokumentach dla Estonii, Łotwy, Litwy, Polski, Czech, Węgier i Rosji.
-author: ShylaThompson
+author: anasyash
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2c19023a5b1edf75b7b355adccb3c00bd19c01c0
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 29d9369aaeef8cb62d4dd8f9eb8fcc171a28ca6a
+ms.sourcegitcommit: 109a6ef2d20758dc4a25c51b11e22dd2214a1cc4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1852142"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886658"
 ---
 # <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach
 
@@ -37,8 +37,8 @@ Aby skonfigurować długie i krótkie nazwy jednostek i podjednostek walut dla j
 
 1. Otwórz stronę **Waluty**.
 2. Służy do wybrania waluty.
-3. W okienku akcji kliknij pozycję **Odchylenie**.
-4. Aby dodać pełną nazwę i krótką nazwę dla języka, kliknij przycisk **Nowy** i wypełnij poniższe pola.
+3. W Okienku akcji kliknij pozycję **Odchylenie**.
+4. Aby dodać pełną nazwę i krótką nazwę dla języka, kliknij przycisk **Nowy** i wpisz informacje w poniższych polach.
 
    |                                                                        |                                                                                                                                                                                                                                                                        |
    |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -51,10 +51,7 @@ Aby skonfigurować długie i krótkie nazwy jednostek i podjednostek walut dla j
    |    <strong>Nazwa skrótowa jednostek (grupa pól Krótka nazwa)</strong>    |                                                                                         Wprowadź kod ISO identyfikujący walutę. Na przykład wpisz LTL w celu identyfikowania litów.                                                                                         |
    |   <strong>Nazwa skrótowa części (grupa pól Krótka nazwa)</strong>    |                                                                                               Wprowadź nazwę podjednostki waluty. Na przykład wpisz „groszy”.                                                                                               |
    |       <strong>Spójnik „i” między jednostkami i częściami</strong>       |                                     Zaznacz tę opcję, aby drukować spójnik„i” między jednostkami i częściami waluty. Na przykład w fakturach i raportach kwota 100,20 PLN będzie wyświetlana jako „100 złotych i 20 groszy”.                                      |
+   |       <strong>Rodzaj</strong>       |  Wybierz **Mężczyzna**, **Kobieta** lub **Neutralne**. Ten parametr może mieć wpływ na tekst kwoty odchylenia, która jest wyświetlana w tekście języka lokalnego na Zamówieniu gotówkowym. Na przykład po skonfigurowaniu **Płci** dla waluty euro jako **Neutralne**, kwota 1,01 euro jest zapisywana w języku czeskim na zamówieniu gotówkowym jako *Edno euro 01 cent*.  |
 
-
-5. Kliknij przycisk **Zapisz**.
-
-
-
+5. Wybierz opcję **Zapisz**.
 

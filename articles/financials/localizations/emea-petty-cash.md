@@ -1,5 +1,5 @@
 ---
-title: Gotówka podręczna dla krajów Europy Wschodniej
+title: Zarządzanie gotówką podręczną dla Europy Wschodniej i Rosji
 description: Ten temat zawiera informacje o funkcji gotówki podręcznej, która pozwala użytkownikom w Estonii, na Litwie, w Czechach, na Węgrzech, na Łotwie, w Polsce i w Rosji uwzględniać operacje gotówkowe w systemie.
 author: ShylaThompson
 manager: AnnBe
@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6ba7d34b2b4f1e2f003627c8f055802e66ad9d92
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: f016c9a210dbb131c3cb6959cd051a2216fcc15f
+ms.sourcegitcommit: 6545bef4584d72dd7789f2d3935cf00ac8f489b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1852450"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1871075"
 ---
 # <a name="petty-cash-for-eastern-europe"></a>Gotówka podręczna dla krajów Europy Wschodniej
 

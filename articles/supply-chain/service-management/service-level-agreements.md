@@ -1,9 +1,9 @@
 ---
-title: Umowy dotyczące poziomu usług
+title: Omówienie umów dotyczących poziomu usług
 description: Podpisując umowę dotyczącą poziomu usług, klient akceptuje minimalny czas reakcji liczony od momentu przyjęcia zgłoszenia przez firmę usługową do chwili rozwiązania problemu.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/01/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cffe3a7766502dd5d888a7a99a32150967911301
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 90915502100c6165838f7eb2ebc620c7b15e6ec8
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562633"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865928"
 ---
-# <a name="service-level-agreements"></a>Umowy dotyczące poziomu usług        
+# <a name="service-level-agreements-overview"></a>Omówienie umów dotyczących poziomu usług       
 
 [!include [banner](../includes/banner.md)]
 

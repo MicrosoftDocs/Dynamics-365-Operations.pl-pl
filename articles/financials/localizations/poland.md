@@ -1,9 +1,9 @@
 ---
-title: Polska
+title: Polska — omówienie
 description: Ten temat zawiera łącza do zasobów dokumentacji Microsoft Dynamics 365 for Finance and Operations dla Polski.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.search.region: Poland
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52e35ffd558d7cc716d9558f9188e8eeb86666f5
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: fdc897d6512c3e7bf2edead7cb2c47e1445f6d0f
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849346"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865652"
 ---
-# <a name="poland"></a>Polska 
+# <a name="poland-overview"></a>Polska — omówienie
 
 [!include [banner](../includes/banner.md)]
 

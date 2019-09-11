@@ -1,9 +1,9 @@
 ---
 title: Tworzenie szablonu rekordu w celu ułatwienia wprowadzania danych
-description: Ta procedura przedstawia sposób tworzenia szablonu rekordu, tak aby wartości pól, które są często używane, nie musiały być jawnie wprowadzane dla każdego nowego rekordu.
+description: Ten temat przedstawia sposób tworzenia szablonu rekordu, tak aby wartości pól, które są często używane, nie musiały być jawnie wprowadzane dla każdego nowego rekordu.
 author: margoc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,37 +16,31 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3b2ba56b6146f2495fb6a53c3cef9f549b1ad837
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 08ee7d0f0ce7e92eaa85137dcd2761bfd702eb8c
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1848214"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866935"
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Tworzenie szablonu rekordu w celu ułatwienia wprowadzania danych
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura przedstawia sposób tworzenia szablonu rekordu, tak aby wartości pól, które są często używane, nie musiały być jawnie wprowadzane dla każdego nowego rekordu. W tej procedurze zostanie utworzy nowy rekord dla nowych laptopów, które należy dodać do środków trwałych. Procedura wykorzystuje przykładową firmę USMF.
+Ten temat przedstawia sposób tworzenia szablonu rekordu, tak aby wartości pól, które są często używane, nie musiały być jawnie wprowadzane dla każdego nowego rekordu. W tej procedurze zostanie utworzy nowy rekord dla nowych laptopów, które należy dodać do środków trwałych. Procedura wykorzystuje przykładową firmę USMF.
 
-1. Przejdź do Środki trwałe > Środki trwałe > Środki trwałe.
-2. Kliknij przycisk Nowy.
-3. W polu Grupa środków trwałych wprowadź lub wybierz wartość.
-4. W polu Nazwa wpisz wartość.
-    * Na przykład wpisz „Laptop dyrektora w firmie”.  
-5. W polu Alias wpisz wartość.
-    * Na przykład wpisz „laptop”.  
-6. Rozwiń sekcję Informacje techniczne.
-7. W polu Marka wpisz wartość.
-8. W polu Model wpisz wartość.
-9. W polu Rok modelu wpisz wartość.
-10. W okienku akcji kliknij pozycję Opcje.
-11. Kliknij opcję Informacje o rekordzie.
-12. Kliknij opcję Szablon użytkownika.
-13. W polu Nazwa wpisz wartość.
-    * Na przykład wpisz „Firmowy laptop”.  
-14. Wypełnij pole Opis.
-    * Na przykład wpisz „Firmowy laptop”.  
-15. Kliknij przycisk OK.
-16. Kliknij przycisk Zamknij.
+1. W okienku nawigacji przejdź do **Moduły > Środki trwałe > Środki trwałe > Środki trwałe**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Grupa środków trwałych** wprowadź lub wybierz wartość.
+4. W polu **Nazwa** wpisz wartość. Na przykład wpisz **Laptop dyrektora w firmie**.  
+5. W polu **Wyszukaj nazwę** wpisz wartość. Na przykład wpisz **laptop**.  
+6. Rozwiń sekcję **Informacje techniczne** .
+7. W polach **Marka**, **Model** i **Rok modelu** wpisz wartości.
+8. W okienku akcji kliknij pozycję **Opcje**.
+9. Wybierz **Informacje o rekordzie**.
+10. Wybierz **Szablon użytkownika**.
+11. W polu **Nazwa** wpisz wartość.
+12. W polu **Opis** wpisz wartość.
+13. Kliknij przycisk **OK**.
+14. Kliknij przycisk **Zamknij**.
 

@@ -3,7 +3,7 @@ title: Konfiguracje sklepu dla zestawień sieci sprzedaży
 description: Ta procedura prowadzi przez konfiguracje sprzedaży sklepu sieci sprzedaży, które mają wpływ na sposób tworzenia i księgowana zestawień sieci sprzedaży.
 author: jashanno
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fddeb8434d916df1613d61da88110dec8fb4465
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dbedcda59f503b103d5448e59038e4ed8ca0b51d
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563651"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916537"
 ---
 # <a name="store-configurations-for-retail-statements"></a>Konfiguracje sklepu dla zestawień sieci sprzedaży
 
@@ -30,21 +30,22 @@ ms.locfileid: "1563651"
 
 Ta procedura prowadzi przez konfiguracje sprzedaży sklepu sieci sprzedaży, które mają wpływ na sposób tworzenia i księgowana zestawień sieci sprzedaży. Wymiary finansowe w sklepach sieci sprzedaży są omówione w innej procedurze. Ta procedura wykorzystuje firmę demonstracyjną USRT.
 
-1. Wybierz kolejno opcje Handel detaliczny i inny > Kanały > Sklepy sieci sprzedaży > Wszystkie sklepy sieci sprzedaży.
+1. W **Okienku nawigacji** kliknij kolejno opcje **Moduły > Handel detaliczny i inny > Kanały > Sklepy sieci sprzedaży > Wszystkie sklepy sieci sprzedaży**.
 2. Na liście znajdź i zaznacz odpowiedni rekord.
 3. Na liście kliknij łącze w wybranym wierszu.
-    * Ustawienia w sekcji Zestawienie/zamknięcie wpływają na tworzenie, sprawdzanie poprawności i księgowanie zestawień dla sklepu.  Otwórz sekcję Zestawienie/zamknięcie.  
-    * Wybierz metodę, której chcesz używać do grupowania wierszy zestawienia.  
-    * Wybierz opcję „Tak”, jeśli ma być tworzone tylko jedno zestawienie dziennie podczas wykonywania zadania wsadowego tworzenia zestawień.  
-    * Pole Obliczenia deklaracji środków płatniczych określa, czy deklaracje środków płatniczych powinny być dodawane razem czy też ma być używana ostatnia deklaracja.  
-    * Wybierz konto księgowe do księgowania różnic zaokrągleń.  
-    * W polu Maksymalna różnica zaokrągleń można wprowadzić maksymalną dozwoloną różnicę zaokrąglenia.  
-    * W polu Księgowanie można wprowadzić maksymalną łączną rozbieżność księgowania dozwoloną dla zestawienia.  
-    * W polu Zmiana można wprowadzić maksymalną łączną rozbieżność dozwoloną w granicach zmiany w zestawieniu.  
-    * W polu Transakcja można wprowadzić maksymalną łączną rozbieżność dozwoloną w wierszu zestawienia.  
-    * W polu Metoda zamknięcia można określić, czy transakcje, które zostaną uwzględnione w zestawieniu, powinny być częścią zamkniętej zmiany czy też mogą być dowolnymi transakcjami o zdefiniowanym zakresie daty/godziny.  
-    * W polu Koniec dnia roboczego można wprowadzić godzinę, jeśli transakcje zachodzące po północy mają być księgowane w poprzednim dniu.  
-    * Wybierz opcję „Tak”, jeśli transakcje zachodzące po północy mają być księgowane jako część poprzedniego dnia.  
-    * Wybierz opcję „Tak”, aby zestawienia były tworzone dla każdej zdefiniowanej metody wykonywania zestawień. Może to być przydatne, jeśli wydajność księgowania wymaga poprawy dla sklepów o dużym wolumenie transakcji, ponieważ spowoduje to utworzenie wielu mniejszych zestawień, które mogą być przetwarzane jednocześnie.  
-    * W polu Domyślny odbiorca można wybrać konto odbiorcy na potrzeby sprzedaży klientom przypadkowym.  
+4. Kliknij przycisk **Edytuj**.
+5. Ustawienia w skróconej karcie **Zestawienie/zamknięcie** wpływają na tworzenie, sprawdzanie poprawności i księgowanie zestawień dla sklepu. Rozwiń skróconą kartę **Zestawienie/zamknięcie**.  
+6. W polu **Metoda zestawienia** wybierz metodę, której chcesz używać do grupowania wierszy zestawienia.  
+7. Wybierz opcję „Tak” w **Jedno zestawienie na dzień**, jeśli ma być tworzone tylko jedno zestawienie dziennie podczas wykonywania zadania wsadowego tworzenia zestawień.  
+8. Pole **Obliczenia deklaracji środków płatniczych** określa, czy deklaracje środków płatniczych powinny być dodawane razem czy też ma być używana ostatnia deklaracja.  
+9. W polu **Zaokrąglanie** wybierz konto księgowe do księgowania różnic zaokrągleń.  
+10. W polu **Maksymalna różnica zaokrągleń** można wprowadzić maksymalną dozwoloną różnicę zaokrąglenia.
+11. W polu **Księgowanie** można wprowadzić maksymalną łączną rozbieżność księgowania dozwoloną dla zestawienia.
+12. W polu **Zmiana** można wprowadzić maksymalną łączną rozbieżność dozwoloną w granicach zmiany w zestawieniu.  
+13. W polu **Transakcja** można wprowadzić maksymalną łączną rozbieżność dozwoloną w wierszu zestawienia.  
+14. W polu **Metoda zamknięcia** można określić, czy transakcje, które zostaną uwzględnione w zestawieniu, powinny być częścią zamkniętej zmiany czy też mogą być dowolnymi transakcjami o zdefiniowanym zakresie daty/godziny.  
+15. W polu **Koniec dnia roboczego** można wprowadzić godzinę, jeśli transakcje zachodzące po północy mają być księgowane w poprzednim dniu.  
+16. Wybierz opcję „Tak” w **Księguj z dniem roboczym**, jeśli transakcje zachodzące po północy mają być księgowane jako część poprzedniego dnia.  
+17. Wybierz opcję „Tak” w **Podziel wg metody zestawienia** , aby zestawienia były tworzone dla każdej zdefiniowanej metody wykonywania zestawień. Może to być przydatne, jeśli wydajność księgowania wymaga poprawy dla sklepów o dużym wolumenie transakcji, ponieważ spowoduje to utworzenie wielu mniejszych zestawień, które mogą być przetwarzane jednocześnie.  
+18. Na karcie skróconej **Ogólne** w polu **Domyślny odbiorca** można wybrać konto odbiorcy na potrzeby sprzedaży klientom przypadkowym.  
 
