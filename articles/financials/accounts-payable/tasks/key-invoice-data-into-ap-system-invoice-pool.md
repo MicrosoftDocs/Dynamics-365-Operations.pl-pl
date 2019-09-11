@@ -1,9 +1,9 @@
 ---
 title: Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą puli faktur
-description: W tym przewodniku po zadaniach zostanie pokazane, jak korzystać z rejestru faktur do tworzenia faktur.
+description: W tym temacie opisano sposób używania rejestru faktur do tworzenia faktur.
 author: abruer
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,66 +15,56 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b870613512a8f4a5c19a0a05cd72b35ea32861b
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f7d72c1d98100d1313109e8b5e55df02e2163174
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843224"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867709"
 ---
-# <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a><span data-ttu-id="64a4f-103">Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą puli faktur</span><span class="sxs-lookup"><span data-stu-id="64a4f-103">Key invoice data into the AP system using invoice pool</span></span>
+# <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a><span data-ttu-id="8bbef-103">Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą puli faktur</span><span class="sxs-lookup"><span data-stu-id="8bbef-103">Key invoice data into the AP system using invoice pool</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="64a4f-104">W tym przewodniku po zadaniach zostanie pokazane, jak korzystać z rejestru faktur do tworzenia faktur.</span><span class="sxs-lookup"><span data-stu-id="64a4f-104">This task guide will show you how to use the invoice register to create invoices.</span></span>  <span data-ttu-id="64a4f-105">Następnie pula faktur posłuży dopasowaniu faktury do zamówienia zakupu i sfinalizowaniu wydatku na stronie faktury od dostawcy.</span><span class="sxs-lookup"><span data-stu-id="64a4f-105">Then use the invoice pool to match the invoice to a purchase order and finalize the expense in the vendor invoice page.</span></span>
+<span data-ttu-id="8bbef-104">W tym temacie opisano sposób używania rejestru faktur do tworzenia faktur.</span><span class="sxs-lookup"><span data-stu-id="8bbef-104">This topic describes how to use the invoice register to create invoices.</span></span> <span data-ttu-id="8bbef-105">Następnie pula faktur posłuży dopasowaniu faktury do zamówienia zakupu i sfinalizowaniu wydatku na stronie faktury od dostawcy.</span><span class="sxs-lookup"><span data-stu-id="8bbef-105">Then use the invoice pool to match the invoice to a purchase order and finalize the expense in the vendor invoice page.</span></span>
 
 
-## <a name="create-a-purchase-order"></a><span data-ttu-id="64a4f-106">Tworzenie zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="64a4f-106">Create a purchase order</span></span>
-1. <span data-ttu-id="64a4f-107">Wybierz kolejno opcje Rozrachunki z dostawcami > Zamówienia zakupu > Zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="64a4f-107">Go to Accounts payable > Purchase orders > Purchase orders.</span></span>
-2. <span data-ttu-id="64a4f-108">Kliknij przycisk Nowy, aby utworzyć zamówienie zakupu.</span><span class="sxs-lookup"><span data-stu-id="64a4f-108">Click New to create a purchase order.</span></span>
-3. <span data-ttu-id="64a4f-109">W polu Konto dostawcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="64a4f-109">In the Vendor account field, click the drop down button to open the lookup.</span></span>
-4. <span data-ttu-id="64a4f-110">Wybierz dostawcę z listy.</span><span class="sxs-lookup"><span data-stu-id="64a4f-110">Select the vendor from the list.</span></span> <span data-ttu-id="64a4f-111">Na przykład dostawcę 1001.</span><span class="sxs-lookup"><span data-stu-id="64a4f-111">For example, vendor 1001.</span></span>
-5. <span data-ttu-id="64a4f-112">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="64a4f-112">Click OK.</span></span>
-6. <span data-ttu-id="64a4f-113">W polu Numer towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="64a4f-113">In the Item number field, click the drop down button to open the lookup.</span></span>
-7. <span data-ttu-id="64a4f-114">Na liście odszukaj numer towaru będącego usługami.</span><span class="sxs-lookup"><span data-stu-id="64a4f-114">Find the services item number in the list.</span></span> <span data-ttu-id="64a4f-115">Na przykład zaznacz S0001.</span><span class="sxs-lookup"><span data-stu-id="64a4f-115">For example, select S0001.</span></span>
-8. <span data-ttu-id="64a4f-116">Kliknij numer towaru i go zaznacz.</span><span class="sxs-lookup"><span data-stu-id="64a4f-116">Click on the item number and select it.</span></span>
-    * <span data-ttu-id="64a4f-117">Kwota netto wynosi 75,00 zł.</span><span class="sxs-lookup"><span data-stu-id="64a4f-117">The net amount is 75.00.</span></span>  <span data-ttu-id="64a4f-118">To kwota, której oczekujemy na fakturze.</span><span class="sxs-lookup"><span data-stu-id="64a4f-118">That is the amount that we will expect on the invoice.</span></span>  
-9. <span data-ttu-id="64a4f-119">W okienku akcji kliknij pozycję Zakup.</span><span class="sxs-lookup"><span data-stu-id="64a4f-119">On the action pane, click Purchase.</span></span>
-10. <span data-ttu-id="64a4f-120">Kliknij przycisk Potwierdź.</span><span class="sxs-lookup"><span data-stu-id="64a4f-120">Click Confirm.</span></span>
+## <a name="create-a-purchase-order"></a><span data-ttu-id="8bbef-106">Tworzenie zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="8bbef-106">Create a purchase order</span></span>
+1. <span data-ttu-id="8bbef-107">W okienku nawigacji wybierz kolejno **Moduły > Rozrachunki z dostawcami > Zamówienia zakupu > Zamówienia zakupu**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-107">In the navigation pane, go to **Modules > Accounts payable > Purchase orders > Purchase orders**.</span></span>
+2. <span data-ttu-id="8bbef-108">Kliknij przycisk **Nowe**, aby utworzyć nowe zamówienie zakupu.</span><span class="sxs-lookup"><span data-stu-id="8bbef-108">Select **New** to create a purchase order.</span></span>
+3. <span data-ttu-id="8bbef-109">W polu **Konto dostawcy** otwórz listę rozwijaną, aby wybrać dostaawcę.</span><span class="sxs-lookup"><span data-stu-id="8bbef-109">In the **Vendor account** field, select a vendor for the drop-down list.</span></span> <span data-ttu-id="8bbef-110">Na przykład zaznacz dostawcę **1001**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-110">For example, select vendor **1001**.</span></span>
+4. <span data-ttu-id="8bbef-111">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-111">Select **OK**.</span></span>
+5. <span data-ttu-id="8bbef-112">W polu **Numer produktu** wybierz odpowiedni numer produktu z listy rozwijanej.</span><span class="sxs-lookup"><span data-stu-id="8bbef-112">In the **Item number** field, select the services item number in the drop-down list.</span></span> <span data-ttu-id="8bbef-113">Na przykład zaznacz **S0001**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-113">For example, select **S0001**.</span></span> <span data-ttu-id="8bbef-114">Kwota netto wynosi 75,00 zł.</span><span class="sxs-lookup"><span data-stu-id="8bbef-114">The net amount is 75.00.</span></span>  <span data-ttu-id="8bbef-115">To kwota, której oczekujemy na fakturze.</span><span class="sxs-lookup"><span data-stu-id="8bbef-115">That is the amount that we will expect on the invoice.</span></span>  
+6. <span data-ttu-id="8bbef-116">W okienku akcji wybierz pozycję **Zakup**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-116">On the action pane, select **Purchase**.</span></span>
+7. <span data-ttu-id="8bbef-117">Wybierz opcję **Potwierdź**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-117">Select **Confirm**.</span></span>
 
-## <a name="create-and-post-and-invoice"></a><span data-ttu-id="64a4f-121">Tworzenie i księgowanie faktury</span><span class="sxs-lookup"><span data-stu-id="64a4f-121">Create and post and invoice</span></span>
-1. <span data-ttu-id="64a4f-122">Wybierz kolejno opcje Rozrachunki z dostawcami > Faktury > Rejestr faktur.</span><span class="sxs-lookup"><span data-stu-id="64a4f-122">Go to Accounts payable > Invoices > Invoice register.</span></span>
-2. <span data-ttu-id="64a4f-123">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="64a4f-123">Click New.</span></span>
-3. <span data-ttu-id="64a4f-124">Otwórz wyszukiwanie i zaznacz nazwę rejestru faktur, którego chcesz używać.</span><span class="sxs-lookup"><span data-stu-id="64a4f-124">Open the lookup to select the name of the invoice register that you want to use.</span></span>
-4. <span data-ttu-id="64a4f-125">Wybierz nazwę rejestru faktur, którego chcesz używać.</span><span class="sxs-lookup"><span data-stu-id="64a4f-125">Select the name of the invoice register that you want to use.</span></span>
-5. <span data-ttu-id="64a4f-126">Kliknij przycisk Wiersze, aby otworzyć rejestr i wprowadzić wiersze wydatków.</span><span class="sxs-lookup"><span data-stu-id="64a4f-126">Click on Lines to open the register and enter expense lines.</span></span>
-6. <span data-ttu-id="64a4f-127">W wyszukiwaniu wybierz dostawcę.</span><span class="sxs-lookup"><span data-stu-id="64a4f-127">In the lookup, select a vendor.</span></span> <span data-ttu-id="64a4f-128">Na przykład kliknij dostawcę 1001.</span><span class="sxs-lookup"><span data-stu-id="64a4f-128">For example, click on vendor 1001.</span></span>
-7. <span data-ttu-id="64a4f-129">W polu Faktura wprowadź numer faktury.</span><span class="sxs-lookup"><span data-stu-id="64a4f-129">In the Invoice field, enter the invoice number.</span></span>
-8. <span data-ttu-id="64a4f-130">W polu Opis wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="64a4f-130">In the Description field, type a value.</span></span>
-9. <span data-ttu-id="64a4f-131">W polu Kredyt wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="64a4f-131">In the Credit field, enter a number.</span></span>
-10. <span data-ttu-id="64a4f-132">W polu Zamówienie zakupu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="64a4f-132">In the Purchase order field, click the drop down button to open the lookup.</span></span>
-11. <span data-ttu-id="64a4f-133">Zaznacz utworzone wcześniej zamówienie zakupu.</span><span class="sxs-lookup"><span data-stu-id="64a4f-133">Select the purchase order that you created earlier.</span></span>
-12. <span data-ttu-id="64a4f-134">W polu Zatwierdzone przez kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="64a4f-134">In the Approved by field, click the drop down button to open the lookup.</span></span>
-13. <span data-ttu-id="64a4f-135">Zaznacz osobę zatwierdzającą i kliknij przycisk Wybierz, aby ją wybrać.</span><span class="sxs-lookup"><span data-stu-id="64a4f-135">Highlight an approver and click Select to select that approver.</span></span>
-14. <span data-ttu-id="64a4f-136">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="64a4f-136">Click Post.</span></span>
-15. <span data-ttu-id="64a4f-137">Zamknij formularz.</span><span class="sxs-lookup"><span data-stu-id="64a4f-137">Close the form.</span></span>
-16. <span data-ttu-id="64a4f-138">Zamknij formularz.</span><span class="sxs-lookup"><span data-stu-id="64a4f-138">Close the form.</span></span>
+## <a name="create-and-post-and-invoice"></a><span data-ttu-id="8bbef-118">Tworzenie i księgowanie faktury</span><span class="sxs-lookup"><span data-stu-id="8bbef-118">Create and post and invoice</span></span>
+1. <span data-ttu-id="8bbef-119">W okienku nawigacji przejdź do **Moduły > Rozrachunki z dostawcami > Faktury > Rejestr faktur**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-119">In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice register**.</span></span>
+2. <span data-ttu-id="8bbef-120">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-120">Select **New**.</span></span>
+3. <span data-ttu-id="8bbef-121">Otwórz wyszukiwanie i zaznacz nazwę rejestru faktur, którego chcesz używać.</span><span class="sxs-lookup"><span data-stu-id="8bbef-121">Open the lookup to select the name of the invoice register that you want to use.</span></span>
+4. <span data-ttu-id="8bbef-122">Wybierz nazwę rejestru faktur, którego chcesz używać.</span><span class="sxs-lookup"><span data-stu-id="8bbef-122">Select the name of the invoice register that you want to use.</span></span>
+5. <span data-ttu-id="8bbef-123">Kliknij przycisk **Wiersze**, aby otworzyć rejestr i wprowadzić wiersze wydatków.</span><span class="sxs-lookup"><span data-stu-id="8bbef-123">Select **Lines** to open the register and enter expense lines.</span></span>
+6. <span data-ttu-id="8bbef-124">W wyszukiwaniu wybierz dostawcę.</span><span class="sxs-lookup"><span data-stu-id="8bbef-124">In the lookup, select a vendor.</span></span> <span data-ttu-id="8bbef-125">Na przykład zaznacz dostawcę **1001**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-125">For example, select vendor **1001**.</span></span>
+7. <span data-ttu-id="8bbef-126">W polu **Faktura** wprowadź numer faktury.</span><span class="sxs-lookup"><span data-stu-id="8bbef-126">In the **Invoice** field, enter the invoice number.</span></span>
+8. <span data-ttu-id="8bbef-127">W polu **Opis** wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="8bbef-127">In the **Description** field, type a value.</span></span>
+9. <span data-ttu-id="8bbef-128">W polu **Kredyt** wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="8bbef-128">In the **Credit** field, enter a number.</span></span>
+10. <span data-ttu-id="8bbef-129">W polu **zamówienie zakupu** otwórz listę rozwijaną, aby wybrać utworzone wcześniej zamówienie zakupu.</span><span class="sxs-lookup"><span data-stu-id="8bbef-129">In the **Purchase order** field, open the drop-down list to select the purchase order that you created earlier.</span></span>
+11. <span data-ttu-id="8bbef-130">W polu **zatwierdzone przez** wybierz pozycję osoba zatwierdzająca z listy rozwijanej i kliknij przycisk **wybierz**, aby wybrać tę osobę zatwierdzającą.</span><span class="sxs-lookup"><span data-stu-id="8bbef-130">In the **Approved by** field, highlight an approver in the drop-down list and click **Select** to select that approver.</span></span>
+12. <span data-ttu-id="8bbef-131">Wybierz opcję **Zaksięguj**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-131">Select **Post**.</span></span>
 
-## <a name="open-an-invoice-from-the-pool-and-match-it-to-a-purchase-order-to-complete-the-invoice-process"></a><span data-ttu-id="64a4f-139">Otwieranie faktury z puli i uzgadnianie jej z zamówieniem zakupu w celu dokończenia procesu fakturowania</span><span class="sxs-lookup"><span data-stu-id="64a4f-139">Open an invoice from the pool and match it to a purchase order to complete the invoice process</span></span>
-1. <span data-ttu-id="64a4f-140">Wybierz kolejno opcje Rozrachunki z dostawcami > Faktury > Pula faktur.</span><span class="sxs-lookup"><span data-stu-id="64a4f-140">Go to Accounts payable > Invoices > Invoice pool.</span></span>
-2. <span data-ttu-id="64a4f-141">Kliknij opcję Zamówienie zakupu, aby utworzyć fakturę od dostawcy na bazie faktury z puli.</span><span class="sxs-lookup"><span data-stu-id="64a4f-141">Click Purchase order to create a vendor invoice from the invoice in the pool.</span></span>
-3. <span data-ttu-id="64a4f-142">Wybierz fakturę, którą chcesz przejrzeć.</span><span class="sxs-lookup"><span data-stu-id="64a4f-142">Select the invoice that you want to review.</span></span>
-4. <span data-ttu-id="64a4f-143">Kliknij przycisk Aktualizuj stan uzgadniania, aby dokończyć uzgadnianie.</span><span class="sxs-lookup"><span data-stu-id="64a4f-143">Click Update match status to complete the matching.</span></span>
-5. <span data-ttu-id="64a4f-144">W okienku akcji kliknij pozycję Opcje.</span><span class="sxs-lookup"><span data-stu-id="64a4f-144">On the action pane, click Options.</span></span>
-6. <span data-ttu-id="64a4f-145">Kliknij przycisk Zmień widok.</span><span class="sxs-lookup"><span data-stu-id="64a4f-145">Click Change view.</span></span>
-7. <span data-ttu-id="64a4f-146">Kliknij opcję Widok siatki.</span><span class="sxs-lookup"><span data-stu-id="64a4f-146">Click Grid view.</span></span>
-8. <span data-ttu-id="64a4f-147">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="64a4f-147">Click Post.</span></span>
-9. <span data-ttu-id="64a4f-148">Zamknij formularz.</span><span class="sxs-lookup"><span data-stu-id="64a4f-148">Close the form.</span></span>
-10. <span data-ttu-id="64a4f-149">Wybierz kolejno opcje Rozrachunki z dostawcami > Dostawcy > Dostawcy.</span><span class="sxs-lookup"><span data-stu-id="64a4f-149">Go to Accounts payable > Vendors > Vendors.</span></span>
-11. <span data-ttu-id="64a4f-150">Zaznacz dostawcę, który figurował w zamówieniu zakupu.</span><span class="sxs-lookup"><span data-stu-id="64a4f-150">Select the vendor that was on the purchase order.</span></span> <span data-ttu-id="64a4f-151">Na przykład zaznacz dostawcę 1001.</span><span class="sxs-lookup"><span data-stu-id="64a4f-151">For example, select vendor 1001.</span></span>
-12. <span data-ttu-id="64a4f-152">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="64a4f-152">In the list, click the link in the selected row.</span></span>
-13. <span data-ttu-id="64a4f-153">W okienku akcji kliknij pozycję Dostawca.</span><span class="sxs-lookup"><span data-stu-id="64a4f-153">On the action pane, click Vendor.</span></span>
-14. <span data-ttu-id="64a4f-154">Kliknij opcję Transakcje.</span><span class="sxs-lookup"><span data-stu-id="64a4f-154">Click Transactions.</span></span>
-15. <span data-ttu-id="64a4f-155">Zaznacz utworzoną przez siebie fakturę.</span><span class="sxs-lookup"><span data-stu-id="64a4f-155">Select the invoice that you created.</span></span>
-    * <span data-ttu-id="64a4f-156">Naliczenie w rejestrze faktur zostało wycofane, a następnie zaksięgowane na odpowiednim koncie wydatków.</span><span class="sxs-lookup"><span data-stu-id="64a4f-156">The invoice register accrual was reversed and posted to the appropriate expense account.</span></span>  
+## <a name="open-an-invoice-from-the-pool-and-match-it-to-a-purchase-order-to-complete-the-invoice-process"></a><span data-ttu-id="8bbef-132">Otwieranie faktury z puli i uzgadnianie jej z zamówieniem zakupu w celu dokończenia procesu fakturowania</span><span class="sxs-lookup"><span data-stu-id="8bbef-132">Open an invoice from the pool and match it to a purchase order to complete the invoice process</span></span>
+1. <span data-ttu-id="8bbef-133">W okienku nawigacji przejdź do **Moduły > Rozrachunki z dostawcami > Faktury > Pula faktur**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-133">In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice pool**.</span></span>
+2. <span data-ttu-id="8bbef-134">Kliknij opcję **Zamówienie zakupu**, aby utworzyć fakturę od dostawcy na bazie faktury z puli.</span><span class="sxs-lookup"><span data-stu-id="8bbef-134">Select **Purchase order** to create a vendor invoice from the invoice in the pool.</span></span>
+3. <span data-ttu-id="8bbef-135">Wybierz fakturę, którą chcesz przejrzeć.</span><span class="sxs-lookup"><span data-stu-id="8bbef-135">Select the invoice that you want to review.</span></span>
+4. <span data-ttu-id="8bbef-136">Kliknij **Aktualizuj stan uzgadniania**, aby dokończyć uzgadnianie.</span><span class="sxs-lookup"><span data-stu-id="8bbef-136">Select **Update match status** to complete the matching.</span></span>
+5. <span data-ttu-id="8bbef-137">W okienku akcji kliknij pozycję **Opcje**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-137">On the action pane, select **Options**.</span></span>
+6. <span data-ttu-id="8bbef-138">Wybierz **Zmień widok**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-138">Select **Change view**.</span></span>
+7. <span data-ttu-id="8bbef-139">Wybierz **Widok siatki**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-139">Select **Grid view**.</span></span>
+8. <span data-ttu-id="8bbef-140">Wybierz opcję **Zaksięguj**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-140">Select **Post**.</span></span>
+9. <span data-ttu-id="8bbef-141">Zamknij formularz.</span><span class="sxs-lookup"><span data-stu-id="8bbef-141">Close the form.</span></span>
+10. <span data-ttu-id="8bbef-142">W okienku nawigacji przejdź do **Moduły > Rozrachunki z dostawcami > Dostawcy > Dostawcy**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-142">In the navigation pane, go to **Modules > Accounts payable > Vendors > Vendors**.</span></span>
+11. <span data-ttu-id="8bbef-143">Zaznacz dostawcę, który figurował w zamówieniu zakupu.</span><span class="sxs-lookup"><span data-stu-id="8bbef-143">Select the vendor that was on the purchase order.</span></span> <span data-ttu-id="8bbef-144">Na przykład zaznacz dostawcę **1001**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-144">For example, select vendor **1001**.</span></span>
+12. <span data-ttu-id="8bbef-145">W okienku akcji wybierz pozycję **Dostawca**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-145">On the action pane, select **Vendor**.</span></span>
+13. <span data-ttu-id="8bbef-146">Wybierz **transakcje**.</span><span class="sxs-lookup"><span data-stu-id="8bbef-146">Select **Transactions**.</span></span>
+14. <span data-ttu-id="8bbef-147">Zaznacz utworzoną przez siebie fakturę.</span><span class="sxs-lookup"><span data-stu-id="8bbef-147">Select the invoice that you created.</span></span> <span data-ttu-id="8bbef-148">Naliczenie w rejestrze faktur zostało wycofane, a następnie zaksięgowane na odpowiednim koncie wydatków.</span><span class="sxs-lookup"><span data-stu-id="8bbef-148">The invoice register accrual was reversed and posted to the appropriate expense account.</span></span>  
 

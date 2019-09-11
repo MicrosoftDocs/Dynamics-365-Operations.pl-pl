@@ -1,9 +1,9 @@
 ---
-title: Tworzenie zleceń produkcyjnych
+title: Omówienie cyklu życia zlecenia produkcyjnego
 description: Po utworzeniu zlecenia produkcyjnego jest inicjowane żądanie rozpoczęcia produkcji towaru. Zlecenie produkcyjne zawiera informacje o produkowanym towarze, ilości do wyprodukowania i planowanej dacie zakończenia. Znajdują się w nim również informacje o materiałach, które będą zużywane, i procesach, jakie należy stosować w produkcji.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,28 +19,28 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2957b387aac9e0218f88572fa605cde1a30c52e5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 79b1866cdca885d408aca07c546ca54aa0c3616b
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572634"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865205"
 ---
-# <a name="create-production-orders"></a><span data-ttu-id="93e06-105">Tworzenie zleceń produkcyjnych</span><span class="sxs-lookup"><span data-stu-id="93e06-105">Create production orders</span></span>
+# <a name="production-order-lifecycle-overview"></a><span data-ttu-id="c910c-105">Omówienie cyklu życia zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="c910c-105">Production order lifecycle overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="93e06-106">Po utworzeniu zlecenia produkcyjnego jest inicjowane żądanie rozpoczęcia produkcji towaru.</span><span class="sxs-lookup"><span data-stu-id="93e06-106">When a production order is created, a request is initiated to start producing an item.</span></span> <span data-ttu-id="93e06-107">Zlecenie produkcyjne zawiera informacje o produkowanym towarze, ilości do wyprodukowania i planowanej dacie zakończenia.</span><span class="sxs-lookup"><span data-stu-id="93e06-107">The production order contains information about what will be produced, the quantity to produce, and the planned finish date.</span></span> <span data-ttu-id="93e06-108">Znajdują się w nim również informacje o materiałach, które będą zużywane, i procesach, jakie należy stosować w produkcji.</span><span class="sxs-lookup"><span data-stu-id="93e06-108">It also contains information about which materials to consume and which process to follow to produce the item.</span></span>
+<span data-ttu-id="c910c-106">Po utworzeniu zlecenia produkcyjnego jest inicjowane żądanie rozpoczęcia produkcji towaru.</span><span class="sxs-lookup"><span data-stu-id="c910c-106">When a production order is created, a request is initiated to start producing an item.</span></span> <span data-ttu-id="c910c-107">Zlecenie produkcyjne zawiera informacje o produkowanym towarze, ilości do wyprodukowania i planowanej dacie zakończenia.</span><span class="sxs-lookup"><span data-stu-id="c910c-107">The production order contains information about what will be produced, the quantity to produce, and the planned finish date.</span></span> <span data-ttu-id="c910c-108">Znajdują się w nim również informacje o materiałach, które będą zużywane, i procesach, jakie należy stosować w produkcji.</span><span class="sxs-lookup"><span data-stu-id="c910c-108">It also contains information about which materials to consume and which process to follow to produce the item.</span></span>
 
-<span data-ttu-id="93e06-109">Zlecenie produkcyjne przechodzą przez kolejne etapy cyklu produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="93e06-109">A production order passes through stages of the production life cycle.</span></span> <span data-ttu-id="93e06-110">Po utworzeniu zlecenie otrzymuje stan **Utworzone**.</span><span class="sxs-lookup"><span data-stu-id="93e06-110">When an order is created, it is assigned the status **Created**.</span></span> <span data-ttu-id="93e06-111">Po zakończeniu zlecenie otrzymuje stan **Zakończone**.</span><span class="sxs-lookup"><span data-stu-id="93e06-111">When an order is finished, it is assigned the status **Ended**.</span></span> <span data-ttu-id="93e06-112">Ustawienia parametru na każdym etapie umożliwia użytkownikowi konfigurowanie każdego kroku.</span><span class="sxs-lookup"><span data-stu-id="93e06-112">A parameter setting in each stage allows a user to configure each step.</span></span> <span data-ttu-id="93e06-113">Ustawienie można skonfigurować dla pojedynczego użytkownika lub dla wszystkich użytkowników.</span><span class="sxs-lookup"><span data-stu-id="93e06-113">The setting can be set up for a single user or for all users.</span></span>
+<span data-ttu-id="c910c-109">Zlecenie produkcyjne przechodzą przez kolejne etapy cyklu produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="c910c-109">A production order passes through stages of the production life cycle.</span></span> <span data-ttu-id="c910c-110">Po utworzeniu zlecenie otrzymuje stan **Utworzone**.</span><span class="sxs-lookup"><span data-stu-id="c910c-110">When an order is created, it is assigned the status **Created**.</span></span> <span data-ttu-id="c910c-111">Po zakończeniu zlecenie otrzymuje stan **Zakończone**.</span><span class="sxs-lookup"><span data-stu-id="c910c-111">When an order is finished, it is assigned the status **Ended**.</span></span> <span data-ttu-id="c910c-112">Ustawienia parametru na każdym etapie umożliwia użytkownikowi konfigurowanie każdego kroku.</span><span class="sxs-lookup"><span data-stu-id="c910c-112">A parameter setting in each stage allows a user to configure each step.</span></span> <span data-ttu-id="c910c-113">Ustawienie można skonfigurować dla pojedynczego użytkownika lub dla wszystkich użytkowników.</span><span class="sxs-lookup"><span data-stu-id="c910c-113">The setting can be set up for a single user or for all users.</span></span>
 
-<span data-ttu-id="93e06-114">Lista składowa (BOM) produkcji i marszruta produkcji są głównymi elementami zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="93e06-114">The production bill of material and the production route are the main entities of the production order.</span></span> <span data-ttu-id="93e06-115">Są one kopiowane do zlecenia produkcyjnego na podstawie wybranego towaru i ilości zaplanowanej do produkcji.</span><span class="sxs-lookup"><span data-stu-id="93e06-115">They are copied to the production order based on the selected item and quantity that are going to be produced.</span></span> <span data-ttu-id="93e06-116">Przed rozpoczęciem zlecenia produkcyjnego można edytować BOM i marszrutę produkcji.</span><span class="sxs-lookup"><span data-stu-id="93e06-116">Before the production order is started, the production bill of material and route can be edited.</span></span>
+<span data-ttu-id="c910c-114">Lista składowa (BOM) produkcji i marszruta produkcji są głównymi elementami zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="c910c-114">The production bill of material and the production route are the main entities of the production order.</span></span> <span data-ttu-id="c910c-115">Są one kopiowane do zlecenia produkcyjnego na podstawie wybranego towaru i ilości zaplanowanej do produkcji.</span><span class="sxs-lookup"><span data-stu-id="c910c-115">They are copied to the production order based on the selected item and quantity that are going to be produced.</span></span> <span data-ttu-id="c910c-116">Przed rozpoczęciem zlecenia produkcyjnego można edytować BOM i marszrutę produkcji.</span><span class="sxs-lookup"><span data-stu-id="c910c-116">Before the production order is started, the production bill of material and route can be edited.</span></span>
 
-<span data-ttu-id="93e06-117">Zlecenie produkcyjne można tworzyć w następujących sytuacjach:</span><span class="sxs-lookup"><span data-stu-id="93e06-117">A production order can be created in the following scenarios:</span></span>
+<span data-ttu-id="c910c-117">Zlecenie produkcyjne można tworzyć w następujących sytuacjach:</span><span class="sxs-lookup"><span data-stu-id="c910c-117">A production order can be created in the following scenarios:</span></span>
 
--   <span data-ttu-id="93e06-118">Tworzenie przez wykonanie głównego planowania według zapotrzebowania materiałów.</span><span class="sxs-lookup"><span data-stu-id="93e06-118">Created by master planning execution based on material demand.</span></span>
--   <span data-ttu-id="93e06-119">Tworzenie bezpośrednio z wiersza zamówienia sprzedaży lub gdy zlecenie produkcyjne wyższego poziomu zostanie utworzone i oszacowane (ustalona dostawa).</span><span class="sxs-lookup"><span data-stu-id="93e06-119">Created directly from a sales order line or when a higher-level production order is created and estimated (pegged supply).</span></span>
--   <span data-ttu-id="93e06-120">Tworzenie ręczne.</span><span class="sxs-lookup"><span data-stu-id="93e06-120">Created manually.</span></span>
+-   <span data-ttu-id="c910c-118">Tworzenie przez wykonanie głównego planowania według zapotrzebowania materiałów.</span><span class="sxs-lookup"><span data-stu-id="c910c-118">Created by master planning execution based on material demand.</span></span>
+-   <span data-ttu-id="c910c-119">Tworzenie bezpośrednio z wiersza zamówienia sprzedaży lub gdy zlecenie produkcyjne wyższego poziomu zostanie utworzone i oszacowane (ustalona dostawa).</span><span class="sxs-lookup"><span data-stu-id="c910c-119">Created directly from a sales order line or when a higher-level production order is created and estimated (pegged supply).</span></span>
+-   <span data-ttu-id="c910c-120">Tworzenie ręczne.</span><span class="sxs-lookup"><span data-stu-id="c910c-120">Created manually.</span></span>
 
 
 

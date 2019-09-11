@@ -1,9 +1,9 @@
 ---
-title: Wyświetl zaksięgowane transakcje podatkowe
-description: Zaksięgowane transakcje podatkowe można wyświetlać z różnych stron, w zależności od tego, co chcesz obejrzeć.
+title: Wyświetlanie zaksięgowanych transakcji podatkowych
+description: W tym temacie opisano kilka sposobów wyświetlania zaksięgowanych transakcji podatkowych.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,36 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c5668c1cd4325f557d83a2291c8139f65c4d170e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5a2ff8b46d20fa012cbce817ae4e95b4799149ec
+ms.sourcegitcommit: 0e2e4d8419c03a30d2223662ba8d403a28fa31eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846206"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "1870875"
 ---
-# <a name="view-posted-sales-tax-transactions"></a><span data-ttu-id="1adfd-103">Wyświetl zaksięgowane transakcje podatkowe</span><span class="sxs-lookup"><span data-stu-id="1adfd-103">View posted sales tax transactions</span></span>
+# <a name="view-posted-sales-tax-transactions"></a><span data-ttu-id="ec45c-103">Wyświetlanie zaksięgowanych transakcji podatkowych</span><span class="sxs-lookup"><span data-stu-id="ec45c-103">View posted sales tax transactions</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="1adfd-104">Zaksięgowane transakcje podatkowe można wyświetlać z różnych stron, w zależności od tego, co chcesz obejrzeć.</span><span class="sxs-lookup"><span data-stu-id="1adfd-104">You can view posted sales tax transactions from various page depending on what you need to view.</span></span> <span data-ttu-id="1adfd-105">W zadaniu wykorzystano firmę demonstracyjną USMF.</span><span class="sxs-lookup"><span data-stu-id="1adfd-105">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="ec45c-104">W tym temacie opisano kilka sposobów wyświetlania zaksięgowanych transakcji podatkowych.</span><span class="sxs-lookup"><span data-stu-id="ec45c-104">This topic describes some ways to view posted sales tax transactions.</span></span> <span data-ttu-id="ec45c-105">Zaksięgowane transakcje podatkowe można wyświetlać z różnych stron, w zależności od tego, co chcesz obejrzeć.</span><span class="sxs-lookup"><span data-stu-id="ec45c-105">You can view posted sales tax transactions from various pages depending on what you need to view.</span></span> <span data-ttu-id="ec45c-106">W zadaniu wykorzystano firmę demonstracyjną USMF.</span><span class="sxs-lookup"><span data-stu-id="ec45c-106">This task uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="1adfd-106">Wybierz kolejno opcje Podatek > Zapytania i raporty > Zapytania o podatki > Zaksięgowany podatek.</span><span class="sxs-lookup"><span data-stu-id="1adfd-106">Go to Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax.</span></span>
-2. <span data-ttu-id="1adfd-107">Kliknij przycisk Pokaż filtry.</span><span class="sxs-lookup"><span data-stu-id="1adfd-107">Click Show filters.</span></span>
-3. <span data-ttu-id="1adfd-108">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1adfd-108">Close the page.</span></span>
-4. <span data-ttu-id="1adfd-109">Wybierz kolejno opcje Podatek > Podatki pośrednie > Podatek > Okresy rozliczania podatku.</span><span class="sxs-lookup"><span data-stu-id="1adfd-109">Go to Tax > Indirect taxes > Sales tax > Sales tax settlement periods.</span></span>
-5. <span data-ttu-id="1adfd-110">Rozwiń sekcję Interwały okresu.</span><span class="sxs-lookup"><span data-stu-id="1adfd-110">Expand the Period intervals section.</span></span>
-6. <span data-ttu-id="1adfd-111">Wybierz interesujący Cię interwał.</span><span class="sxs-lookup"><span data-stu-id="1adfd-111">Select the interval you are interested in.</span></span>
-7. <span data-ttu-id="1adfd-112">Wyświetlanie zaksięgowanych transakcji podatkowych dla wybranego interwału okresu rozliczeniowego.</span><span class="sxs-lookup"><span data-stu-id="1adfd-112">Display posted sales tax transactions for the selected settlement period interval.</span></span>
-8. <span data-ttu-id="1adfd-113">Można dodatkowo filtrować listę zaksięgowanych transakcji podatkowych.</span><span class="sxs-lookup"><span data-stu-id="1adfd-113">You can further filter the list of posted sales tax transactions.</span></span>
-9. <span data-ttu-id="1adfd-114">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1adfd-114">Close the page.</span></span>
-10. <span data-ttu-id="1adfd-115">Wybierz kolejno opcje Podatek > Podatki pośrednie > Podatek > Kody podatków.</span><span class="sxs-lookup"><span data-stu-id="1adfd-115">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
-11. <span data-ttu-id="1adfd-116">W okienku akcji kliknij opcję Kod podatku.</span><span class="sxs-lookup"><span data-stu-id="1adfd-116">On the Action Pane, click Sales tax code.</span></span>
-12. <span data-ttu-id="1adfd-117">Kliknij opcję Zaksięgowany podatek.</span><span class="sxs-lookup"><span data-stu-id="1adfd-117">Click Posted sales tax.</span></span>
+# <a name="posted-sales-tax-page"></a><span data-ttu-id="ec45c-107">Strona zaksięgowany podatek</span><span class="sxs-lookup"><span data-stu-id="ec45c-107">Posted sales tax page</span></span>
+
+1. <span data-ttu-id="ec45c-108">W okienku nawigacji przejdź do **Moduły > Podatek > Zapytania i raporty > Zapytania o podatki > Zaksięgowany podatek**.</span><span class="sxs-lookup"><span data-stu-id="ec45c-108">In the navigation pane, go to **Modules > Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax**.</span></span>
+2. <span data-ttu-id="ec45c-109">Wybierz **Pokaż filtry**, aby zawęzić widok do wybranych transakcji.</span><span class="sxs-lookup"><span data-stu-id="ec45c-109">Select **Show filters** to narrow the view to specific transactions.</span></span>
+3. <span data-ttu-id="ec45c-110">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="ec45c-110">Close the page.</span></span>
+
+# <a name="sales-tax-settlement-periods-page"></a><span data-ttu-id="ec45c-111">Strona Okresy rozliczania podatku</span><span class="sxs-lookup"><span data-stu-id="ec45c-111">Sales tax settlement periods page</span></span>
+
+1. <span data-ttu-id="ec45c-112">Otwórz w okienku nawigacji otwórz **Moduły > Podatek > Podatki pośrednie > Podatek > Okresy rozliczania podatku**.</span><span class="sxs-lookup"><span data-stu-id="ec45c-112">In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax settlement periods**.</span></span>
+2. <span data-ttu-id="ec45c-113">Rozwiń sekcję **Interwały okresu**.</span><span class="sxs-lookup"><span data-stu-id="ec45c-113">Expand the **Period intervals** section.</span></span>
+3. <span data-ttu-id="ec45c-114">Wybierz interesujący Cię interwał.</span><span class="sxs-lookup"><span data-stu-id="ec45c-114">Select the interval you are interested in.</span></span>
+4. <span data-ttu-id="ec45c-115">Można dodatkowo filtrować listę zaksięgowanych transakcji podatkowych.</span><span class="sxs-lookup"><span data-stu-id="ec45c-115">You can further filter the list of posted sales tax transactions.</span></span>
+5. <span data-ttu-id="ec45c-116">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="ec45c-116">Close the page.</span></span>
+
+# <a name="sales-tax-codes-page"></a><span data-ttu-id="ec45c-117">Strona kody podatku</span><span class="sxs-lookup"><span data-stu-id="ec45c-117">Sales tax codes page</span></span>
+
+1. <span data-ttu-id="ec45c-118">Otwórz w okienku nawigacji **Moduły > Podatek > Podatki pośrednie > Podatek > Kody podatków**.</span><span class="sxs-lookup"><span data-stu-id="ec45c-118">In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax codes**.</span></span>
+2. <span data-ttu-id="ec45c-119">W okienku akcji wybierz opcję **Kod podatku**.</span><span class="sxs-lookup"><span data-stu-id="ec45c-119">On the Action Pane, select **Sales tax code**.</span></span>
+3. <span data-ttu-id="ec45c-120">Wybierz **Zaksięgowany podatek**.</span><span class="sxs-lookup"><span data-stu-id="ec45c-120">Select **Posted sales tax**.</span></span>
 

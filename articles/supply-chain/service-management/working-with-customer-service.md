@@ -1,9 +1,9 @@
 ---
-title: Praca z funkcjami obsługi klienta
+title: Omówienie pracy z funkcjami obsługi klienta
 description: Moduł obsługi klienta umożliwia obsługę firm serwisowych i organizacji obsługujących produkcję.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/07/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,33 +18,33 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f51b749cc9527cb3e86352b0373babd6c524dbe7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a73852bf6163a887c7bab954a61581fd8e0a8ded
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550475"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865800"
 ---
-# <a name="work-with-customer-service"></a><span data-ttu-id="1dfd1-103">Praca z funkcjami obsługi klienta</span><span class="sxs-lookup"><span data-stu-id="1dfd1-103">Work with customer service</span></span> 
+# <a name="work-with-customer-service-overview"></a><span data-ttu-id="23445-103">Omówienie pracy z funkcjami obsługi klienta</span><span class="sxs-lookup"><span data-stu-id="23445-103">Work with customer service overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="1dfd1-104">Moduł obsługi klienta umożliwia obsługę firm serwisowych i organizacji obsługujących produkcję.</span><span class="sxs-lookup"><span data-stu-id="1dfd1-104">Customer service supports professional, service-based companies and manufacturing service organizations.</span></span>
+<span data-ttu-id="23445-104">Moduł obsługi klienta umożliwia obsługę firm serwisowych i organizacji obsługujących produkcję.</span><span class="sxs-lookup"><span data-stu-id="23445-104">Customer service supports professional, service-based companies and manufacturing service organizations.</span></span>
 
-<span data-ttu-id="1dfd1-105">Proces obsługi klienta obejmuje następujące funkcje:</span><span class="sxs-lookup"><span data-stu-id="1dfd1-105">Customer service includes the following functionality:</span></span>
+<span data-ttu-id="23445-105">Proces obsługi klienta obejmuje następujące funkcje:</span><span class="sxs-lookup"><span data-stu-id="23445-105">Customer service includes the following functionality:</span></span>
 
-  - <span data-ttu-id="1dfd1-106">Podstawowe procesy zarządzania obsługą klienta, takie jak umowy serwisowe, zlecenia serwisowe i zarządzanie zwrotami</span><span class="sxs-lookup"><span data-stu-id="1dfd1-106">Key processes for service management, such as service agreements, service orders, and return management</span></span>
+  - <span data-ttu-id="23445-106">Podstawowe procesy zarządzania obsługą klienta, takie jak umowy serwisowe, zlecenia serwisowe i zarządzanie zwrotami</span><span class="sxs-lookup"><span data-stu-id="23445-106">Key processes for service management, such as service agreements, service orders, and return management</span></span>
 
-  - <span data-ttu-id="1dfd1-107">Zaawansowana konfiguracja zarządzania naprawami obejmująca śledzenie napraw i tworzenie wersji BOM</span><span class="sxs-lookup"><span data-stu-id="1dfd1-107">An advanced setup for repair management that includes tracking of repairs and versioning for bills of materials (BOMs)</span></span>
+  - <span data-ttu-id="23445-107">Zaawansowana konfiguracja zarządzania naprawami obejmująca śledzenie napraw i tworzenie wersji BOM</span><span class="sxs-lookup"><span data-stu-id="23445-107">An advanced setup for repair management that includes tracking of repairs and versioning for bills of materials (BOMs)</span></span>
 
-  - <span data-ttu-id="1dfd1-108">Obsługa ról pracowników, takich jak kierownik serwisu, dyspozytor oraz serwisant lub konsultant serwisu</span><span class="sxs-lookup"><span data-stu-id="1dfd1-108">Support for employee roles, such as service manager, dispatcher, and service technician or service consultant</span></span>
+  - <span data-ttu-id="23445-108">Obsługa ról pracowników, takich jak kierownik serwisu, dyspozytor oraz serwisant lub konsultant serwisu</span><span class="sxs-lookup"><span data-stu-id="23445-108">Support for employee roles, such as service manager, dispatcher, and service technician or service consultant</span></span>
 
-  - <span data-ttu-id="1dfd1-109">Subskrypcje serwisowe, które mogą generować okresowe strumienie przychodów niezależnie od częstotliwości wykonywania prac serwisowych</span><span class="sxs-lookup"><span data-stu-id="1dfd1-109">Service subscriptions, which can generate periodic streams of revenue that are independent of the frequency of service</span></span>
+  - <span data-ttu-id="23445-109">Subskrypcje serwisowe, które mogą generować okresowe strumienie przychodów niezależnie od częstotliwości wykonywania prac serwisowych</span><span class="sxs-lookup"><span data-stu-id="23445-109">Service subscriptions, which can generate periodic streams of revenue that are independent of the frequency of service</span></span>
 
-  - <span data-ttu-id="1dfd1-110">Umowy dotyczące poziomu usług umożliwiające obsługę różnych odbiorców</span><span class="sxs-lookup"><span data-stu-id="1dfd1-110">Service-level agreements that support a differentiated customer base</span></span>
+  - <span data-ttu-id="23445-110">Umowy dotyczące poziomu usług umożliwiające obsługę różnych odbiorców</span><span class="sxs-lookup"><span data-stu-id="23445-110">Service-level agreements that support a differentiated customer base</span></span>
 
-<span data-ttu-id="1dfd1-111">Tematy przedstawione w tej sekcji zawierają omówienie procesu biznesowego obsługi klienta oraz każdego składnika tego procesu.</span><span class="sxs-lookup"><span data-stu-id="1dfd1-111">The topics in this section provide an overview of the Customer service business process and each business process component.</span></span> <span data-ttu-id="1dfd1-112">Znajduje się tu również wykaz formularzy powiązanych z każdym składnikiem procesu biznesowego oraz omówienie zadań skojarzonych z każdym takim składnikiem.</span><span class="sxs-lookup"><span data-stu-id="1dfd1-112">They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.</span></span>
+<span data-ttu-id="23445-111">Tematy przedstawione w tej sekcji zawierają omówienie procesu biznesowego obsługi klienta oraz każdego składnika tego procesu.</span><span class="sxs-lookup"><span data-stu-id="23445-111">The topics in this section provide an overview of the Customer service business process and each business process component.</span></span> <span data-ttu-id="23445-112">Znajduje się tu również wykaz formularzy powiązanych z każdym składnikiem procesu biznesowego oraz omówienie zadań skojarzonych z każdym takim składnikiem.</span><span class="sxs-lookup"><span data-stu-id="23445-112">They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.</span></span>
 
 
 
