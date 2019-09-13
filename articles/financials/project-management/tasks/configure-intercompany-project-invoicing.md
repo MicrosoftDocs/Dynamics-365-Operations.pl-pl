@@ -1,9 +1,9 @@
 ---
 title: Konfigurowanie fakturowania projektów międzyfirmowych
-description: W tej procedurze pokazano sposób konfigurowania fakturowania projektów między dwoma firmami w tej samej organizacji.
+description: W tym temacie pokazano sposób konfigurowania fakturowania projektów między dwoma firmami w tej samej organizacji.
 author: KimANelson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,54 +17,50 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 53871db9223eef6ba78f2e327e60f45110891478
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: c89b17c09a4f145b5a4ca9cdd127b4e635447d4b
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838278"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867326"
 ---
 # <a name="configure-intercompany-project-invoicing"></a>Konfigurowanie fakturowania projektów międzyfirmowych
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób konfigurowania fakturowania projektów między dwoma firmami w tej samej organizacji. W tym zadaniu jest wykorzystywany zestaw danych firmy USSI.
+W tym temacie pokazano sposób konfigurowania fakturowania projektów między dwoma firmami w tej samej organizacji. W tym zadaniu jest wykorzystywany zestaw danych firmy USSI.
 
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Dostawcy > Wszyscy dostawy.
-2. Na liście znajdź i zaznacz odpowiedni rekord.
-3. W okienku akcji kliknij pozycję Ogólne.
-4. Kliknij opcję Międzyfirmowe.
-5. W ustawieniu Aktywne zaznacz wartość Tak, aby włączyć handel międzyfirmowy.
-6. W polu Firma odbiorcy wprowadź lub wybierz wartość.
-7. W polu Moje konto wprowadź lub wybierz wartość.
-8. Kliknij przycisk Zapisz.
-9. Zamknij stronę.
-10. Zamknij stronę.
-11. Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie > Ustawienia > Parametry modułu Zarządzanie projektami i ich księgowanie.
-12. Kliknij kartę Międzyfirmowe.
-13. Przesuń suwak do pozycji Tak, aby włączyć międzyfirmowe planowanie zasobów i karty czasu pracy.
-14. Na liście oznacz wybrany wiersz.
-15. Kliknij przycisk Nowy.
-16. Na liście oznacz wybrany wiersz.
-17. W polu Firma pożyczająca wprowadź lub wybierz wartość.
-18. Zaznacz pole wyboru Nalicz przychód.
-19. W polu Domyślna kategoria karty czasu pracy wprowadź lub wybierz wartość.
-20. W polu Domyślna kategoria wydatku pracy wprowadź lub wybierz wartość.
-21. Kliknij przycisk Zapisz.
-22. Zamknij stronę.
-23. Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie > Ustawienia > Księgowanie > Konfiguracja księgowania.
-24. W polu Typy kont księgowych zaznacz opcję.
-25. Kliknij przycisk Nowy.
-26. Na liście oznacz wybrany wiersz.
-27. Na liście oznacz wybrany wiersz.
-28. W polu Konto główne podaj żądane wartości.
-29. Kliknij przycisk Zapisz.
-30. Zamknij stronę.
-31. Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie > Ustawienia > Ceny > Cena transferowa.
-32. Kliknij przycisk Nowy.
-33. W polu Data obowiązywania wprowadź datę.
-34. W polu Firma pożyczająca wprowadź lub wybierz wartość.
-35. W polu Model ceny transferu wybierz opcję.
-36. W polu Ceny wpisz liczbę.
-37. Kliknij przycisk Zapisz.
+1. W okienku nawigacji przejdź do **Moduły > Rozrachunki z dostawcami > Dostawcy > Wszyscy dostawcy**.
+2. Na liście **Wszyscy dostawcy** znajdź i zaznacz odpowiedni rekord.
+3. W okienku akcji wybierz pozycję **Ogólne**.
+4. Wybierz **Międzyfirmowe**.
+5. W ustawieniu **Aktywne zaznacz** wartość **Tak**, aby włączyć handel międzyfirmowy.
+6. W polu **Firma odbiorcy** wprowadź lub wybierz wartość.
+7. W polu **Moje konto** wprowadź lub wybierz wartość.
+8. Wybierz opcję **Zapisz**.
+9. Zamknij te strony, aby powrócić do strony głównej.
+10. W okienku nawigacji przejdź kolejno do **Moduły > Zarządzanie projektami i ich księgowanie > Ustawienia > Parametry modułu Zarządzanie projektami i ich księgowanie**.
+11. Wybierz kartę **Międzyfirmowe**.
+12. Przesuń suwak do pozycji **Tak**, aby włączyć międzyfirmowe planowanie zasobów i karty czasu pracy.
+13. Na liście oznacz wybrany wiersz.
+14. Wybierz pozycję **Nowy**.
+15. W polu **Firma pożyczająca** wprowadź lub wybierz wartość.
+16. Zaznacz pole wyboru **Naliczanie przychodu**.
+17. W polu **Domyślna kategoria karty czasu pracy** wprowadź lub wybierz wartość.
+18. W polu **Domyślna kategoria wydatku pracy** wprowadź lub wybierz wartość.
+19. Wybierz opcję **Zapisz**.
+20. Zamknij stronę.
+21. W okienku nawigacji przejdź do **Moduły > Zarządzanie projektami i ich księgowanie > Ustawienia > Księgowanie > Konfiguracja księgowania**.
+22. W polu **Typy kont księgowych** zaznacz opcję.
+23. Wybierz pozycję **Nowy**.
+24. W polu **Konto główne** w mpwym wierszu podaj żądane wartości.
+25. Wybierz opcję **Zapisz**.
+26. Zamknij stronę.
+27. W okienku nawigacji przejdź do **Moduły > Zarządzanie projektami i ich księgowanie > Ustawienia > Ceny > Cena transferowa**.
+28. Wybierz pozycję **Nowy**.
+29. W polu **Data wejścia w życie** wprowadź datę.
+30. W polu **Firma pożyczająca** wprowadź lub wybierz wartość.
+31. W polu **Model ceny transferu** wybierz opcję.
+32. W polu **Ceny** wpisz liczbę.
+33. Wybierz opcję **Zapisz**.
 

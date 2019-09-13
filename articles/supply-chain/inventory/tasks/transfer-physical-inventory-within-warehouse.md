@@ -3,7 +3,7 @@ title: Przenoszenie zapasów fizycznych w magazynie
 description: Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przeniesienia zapasów w celu zarejestrowania przesunięcia towaru z jednej lokalizacji w magazynie do innej.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7344bfa3be0d7345d3ac68202c7bc26bcac8ebb9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7715c8e7a56703993e8512af03f2ab8d6802a987
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845264"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916583"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Przenoszenie zapasów fizycznych w magazynie
 
@@ -32,40 +32,30 @@ Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przen
 
 
 ## <a name="create-an-inventory-transfer-journal"></a>Tworzenie arkusza przeniesienia zapasów
-1. Przejdź do okna Przeniesienie.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa wprowadź lub wybierz wartość.
-4. Kliknij przycisk OK.
-    * Istnieje opcja umożliwiająca określenie wymiarów „Z” i „Do” dla każdego wiersza arkusza. Są one niezbędne dla tego typu arkusza. Towary można przenosić do lokalizacji za pomocą różnych reguł. W tym przykładzie przeniesiemy towar w ramach tego samego magazynu z lokalizacji kontrolowanej przez numer identyfikacyjny do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny.   
+1. W **okienku nawigacji** przejdź do **Zarządzanie zapasami > Wpisy w arkuszu > Pozycje > Transfer**.
+2. Kliknij przycisk **Nowy**.
+3. W polu **Nazwa** wprowadź lub wybierz wartość.
+4. Kliknij przycisk **OK**. Istnieje opcja umożliwiająca określenie wymiarów „Z” i „Do” dla każdego wiersza arkusza. Są one niezbędne dla tego typu arkusza. Towary można przenosić do lokalizacji za pomocą różnych reguł. W tym przykładzie przeniesiemy towar w ramach tego samego magazynu z lokalizacji kontrolowanej przez numer identyfikacyjny do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny.   
 
-## <a name="create-journal-lines"></a>Tworzenie wierszy arkusza
-1. Kliknij przycisk Nowy.
-2. W polu Numer towaru wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „A0001”.  
-3. W polu Z oddziału wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „2”.  
-4. W polu Do oddziału wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „2”.  
-5. W polu Z magazynu wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „24”.  
-6. W polu Do magazynu wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „24”.  
-7. W polu Z lokalizacji wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „FL-001”.  
-8. W polu Do lokalizacji wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „BULK-001”.  
-9. Wprowadź liczbę w polu Ilość.
-10. Kliknij kartę Wymiary magazynowe.
-11. W polu Numer identyfikacyjny wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „24”.  
-12. Kliknij przycisk Zapisz.
+## <a name="create-journal-lines"></a>Utwórz wiersze arkusza
+1. Na **Wiersze arkusza skróconej karcie**, kliknij przycisk **Nowy**.
+2. W polu **Kod towaru** wpisz lub wprowadź wartość. Jeśli używasz firmy USMF, możesz wybrać opcję „A0001”.  
+3. W polu **Z oddziału** wprowadź lub wybierz wartość. Jeśli używasz firmy USMF, możesz wybrać opcję „2”.  
+4. W polu **Do oddziału** wprowadź lub wybierz wartość. Jeśli używasz firmy USMF, możesz wybrać opcję „2”.  
+5. W polu **Z magazynu** wprowadź lub wybierz wartość. Jeśli używasz firmy USMF, możesz wybrać opcję „24”.  
+6. W polu **Do magazynu** wprowadź lub wybierz wartość. Jeśli używasz firmy USMF, możesz wybrać opcję „24”.  
+7. W polu **Z lokalizacji** wprowadź lub wybierz wartość. Jeśli używasz firmy USMF, możesz wybrać opcję „FL-001”.  
+8. W polu **Do lokalizacji** wprowadź lub wybierz wartość. Jeśli używasz firmy USMF, możesz wybrać opcję „BULK-001”.  
+9. W polu **Ilość** wpisz liczbę.
+10. W skróconej karcie **Szczegóły wiersza** kliknij kartę **Wymiary magazynowe**.
+11. W **Od wymiarów magazynowych** w polu **Numer identyfikacyjny** wprowadź lub wybierz wartość. Jeśli używasz firmy USMF, możesz wybrać opcję „24”.  
+12. Kliknij przycisk **Zapisz**.
 
 ## <a name="post-the-inventory-transfer-journal"></a>Księgowanie arkusza przeniesienia zapasów
-1. Kliknij przycisk Księguj.
-2. Kliknij przycisk OK.
+1. W **okienku akcji** kliknij pozycję **Księguj**.
+2. Kliknij przycisk **OK**.
 
 ## <a name="view-inventory-transactions"></a>Wyświetlanie transakcji magazynowych
-1. Kliknij opcję Zapasy.
-2. Kliknij opcję Transakcje.
-    * W tym miejscu widać transakcje, które zostały utworzone podczas księgowania arkusza.  
+1. Kliknij przycisk **Zapasy**.
+2. Kliknij opcję **Transakcje**. W tym miejscu widać transakcje, które zostały utworzone podczas księgowania arkusza.  
 

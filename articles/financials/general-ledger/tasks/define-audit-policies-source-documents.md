@@ -1,9 +1,9 @@
 ---
-title: Definiowanie zasad inspekcji dla dokumentów źródłowych
-description: W tej procedurze pokazano sposób konfigurowania i uruchamiania reguł inspekcji.
+title: Definiowanie zasad audytu dla dokumentów źródłowych
+description: W tym temacie pokazano sposób konfigurowania i uruchamiania reguł inspekcji.
 author: ryansandness
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,80 +16,75 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17b712f07a0ffe6874eb6d98b47ced96f5a54483
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a6b0fa28d778a4d9fa1f718b1d50bf1dce00be00
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846494"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914843"
 ---
-# <a name="define-audit-policies-for-source-documents"></a>Definiowanie zasad inspekcji dla dokumentów źródłowych
+# <a name="define-audit-policies-for-source-documents"></a>Definiowanie zasad audytu dla dokumentów źródłowych
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób konfigurowania i uruchamiania reguł inspekcji. W przykładzie użyto raportów z wydatków hotelowych. Ta procedura wykorzystuje firmę demonstracyjną USMF. Rola audytora zawiera odpowiednie uprawnienia niezbędne do wykonania tych zadań.
+W tym temacie pokazano sposób konfigurowania i uruchamiania reguł inspekcji. W przykładzie użyto raportów z wydatków hotelowych. Ta procedura wykorzystuje firmę demonstracyjną USMF. Rola audytora zawiera odpowiednie uprawnienia niezbędne do wykonania tych zadań.
 
-1. Wybierz kolejno opcje Pulpit inspekcji > Ustawienia > Typ reguły.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa reguły wpisz wartość.
-4. Wypełnij pole Opis.
-5. W polu Nazwa kwerendy wybierz opcję Wiersz raportu wydatków.
-6. W polu typu kwerendy wybierz opcję Agregacja.
-7. W polu Firma wybierz firmę.
-8. W polu Odwołanie do daty dokumentu wybierz opcję Data i godzina modyfikacji.
-9. Kliknij przycisk Zapisz.
-10. Wybierz kolejno opcje Pulpit inspekcji > Ustawienia > Zasady inspekcji.
-11. Kliknij przycisk Nowy.
-12. W polu Nazwa wpisz wartość.
-13. Rozwiń sekcję Organizacje zasad.
-14. W drzewie zaznacz pozycję „Contoso Entertainment System USA”.
-15. Kliknij przycisk Dodaj.
-16. W drzewie zaznacz pozycję „Contoso Consulting USA”.
-17. Kliknij przycisk Dodaj.
-18. W drzewie zaznacz pozycję „Contoso Retail USA”.
-19. Kliknij przycisk Dodaj.
-20. Zwiń sekcję Organizacje zasad.
-21. Rozwiń sekcję Reguły zasad.
-22. Na liście znajdź i zaznacz regułę, która została wcześniej utworzona.
-23. Kliknij przycisk Utwórz regułę.
-24. W polu Data obowiązywania wprowadź datę i godzinę.
-25. Kliknij przycisk Filtr.
-26. Na liście zaznacz wiersz kategorii wydatku oraz ustaw szczegóły dotyczące hotelu.
-27. W polu Kryteria wprowadź lub wybierz wartość.
-28. Kliknij kartę Agregacja.
-29. Kliknij przycisk Dodaj.
-30. Na liście zaznacz wartość Kwota transakcji.
-31. W polu Pole wprowadź lub wybierz wartość.
-32. W polu Funkcja agregująca wybierz opcję „Suma”.
-33. Kliknij kartę Grupuj wg .
-34. Kliknij przycisk Dodaj.
-35. Na liście zaznacz wartość Pracownik.  
-36. Kliknij przycisk Dodaj.
-37. Na liście zaznacz wartość Kategoria wydatku.
-38. W polu Pole wprowadź lub wybierz wartość.
-39. Kliknij kartę Zawiera.
-40. Kliknij przycisk Dodaj.
-41. Zaznacz opcję Kwota transakcji.
-42. W polu Pole wprowadź lub wybierz wartość.
-43. W polu Funkcja agregująca wybierz opcję „Suma”.
-44. W polu Kryteria wpisz wartość „>2000”.
-45. Kliknij przycisk OK.
-46. Kliknij przycisk Test.
-47. W polu Data początkowa wyboru dokumentów wprowadź datę i godzinę.
-48. W polu Data końcowa wyboru dokumentów wprowadź datę i godzinę.
-49. Kliknij przycisk Uruchom test.
-50. W okienku akcji kliknij pozycję Zasady inspekcji.
-51. Kliknij przycisk Opcje dodatkowe.
-52. W polu Data rozpoczęcia wprowadź datę i godzinę.
-53. W polu Data zakończenia wprowadź datę i godzinę.
-54. Kliknij przycisk Zadanie wsadowe.
-55. Rozwiń sekcję Uruchom w tle.
-56. W polu Przetwarzanie wsadowe zaznacz opcję Tak.
-57. Kliknij przycisk OK.
-58. Wybierz kolejno opcje Pulpit inspekcji > Sprawy inspekcji.
-59. Na liście znajdź i zaznacz odpowiedni rekord.
-60. Na liście kliknij łącze w wybranym wierszu.
-61. Rozwiń sekcję Powiązania.
-62. Na liście znajdź i zaznacz odpowiedni rekord.
-63. Na liście kliknij łącze w wybranym wierszu.
+1. W okienku nawigacji przejdź do **Moduły > Pulpit inspekcji > Ustawienia > Typ reguły**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Nazwa reguły** wpisz wartość.
+4. W polu **Opis** wpisz wartość.
+5. W polu **Nazwa kwerendy** wybierz opcję **Wiersz raportu wydatków**
+6. W polu **typ kwerendy** wybierz opcję **Agregacja**.
+7. W polu **Firma** wybierz **firmę**.
+8. W polu **Odwołanie do daty dokumentu** wybierz opcję **Data i godzina modyfikacji**
+9. Wybierz opcję **Zapisz**.
+10. W okienku nawigacji przejdź do **Moduły > Pulpit inspekcji > Ustawienia > Zasady inspekcji**.
+11. Wybierz pozycję **Nowy**.
+12. W polu **Nazwa** wpisz wartość.
+13. Rozwiń sekcję **Organizacje zasad**.
+14. W drzewie zaznacz pozycję **Contoso Entertainment System USA**, a następnie wybierz **Dodaj**.
+15. W drzewie zaznacz pozycję **Contoso Consulting USA**, a następnie wybierz **Dodaj**.
+16. W drzewie zaznacz pozycję **Contoso Retail USA**, a następnie wybierz **Dodaj**.
+17. Zwiń sekcję **Organizacje zasad**.
+18. Rozwiń sekcję **Reguły zasad**.
+19. Na liście znajdź i zaznacz regułę, która została wcześniej utworzona.
+20. Wybierz pozycję **Utwórz regułę**.
+21. W polu **Data obowiązywania** wprowadź datę i godzinę.
+22. Wybierz **Filtry**.
+23. Na liście zaznacz wiersz **kategorii wydatku** oraz ustaw szczegóły dotyczące **hotelu**.
+24. W polu **Kryteria** wprowadź lub wybierz wartość.
+25. Wybierz kartę **Agreguj**.
+26. Wybierz opcję **Dodaj**.
+27. Na liście zaznacz wartość **Kwota transakcji**.
+28. W polu **Pole** wprowadź lub wybierz wartość.
+29. W polu **Funkcja agregująca** wybierz opcję **Suma**.
+30. Wybierz kartę **Grupuj wg**.
+31. Wybierz opcję **Dodaj**.
+32. Na liście zaznacz wartość **Pracownik**.
+33. Wybierz opcję **Dodaj**.
+34. Na liście zaznacz wartość **Kategoria wydatku**.
+35. W polu **Pole** wprowadź lub wybierz wartość.
+36. Kliknij kartę **Posiadanie**.
+37. Wybierz opcję **Dodaj**.
+38. Zaznacz opcję **Kwota transakcji**.
+39. W polu **Pole** wprowadź lub wybierz wartość.
+40. W polu **Funkcja agregująca** wybierz opcję **Suma**.
+41. W polu **Kryteria** wpisz wartość `>2000`.
+42. Kliknij przycisk **OK**.
+43. Wybierz **test**.
+44. W polu **Data początkowa wyboru dokumentów** wprowadź datę i godzinę.
+45. W polu **Data końcowa wyboru dokumentów** wprowadź datę i godzinę.
+46. Wybierz **Uruchamianie przypadków testowych**.
+47. W okienku akcji kliknij pozycję **Zasady inspekcji**.
+48. Wybierz **Opcje dodatkowe**.
+49. W polu **Data rozpoczęcia** wprowadź datę i godzinę.
+50. W polu **Data zakończenia** wprowadź datę i godzinę.
+51. Wybierz **Partia**.
+52. Rozwiń sekcję **Uruchom w tle**.
+53. W polu **Przetwarzanie wsadowe** zaznacz opcję **Tak**.
+54. Kliknij przycisk **OK**.
+55. W okienku nawigacji przejdź do **Moduły > Pulpit inspekcji > Sprawy inspekcji**.
+56. Na liście znajdź i zaznacz odpowiedni rekord.
+57. Rozwiń sekcję **Powiązania**.
+58. Na liście znajdź i zaznacz odpowiedni rekord.
 

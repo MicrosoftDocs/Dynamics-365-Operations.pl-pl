@@ -1,9 +1,9 @@
 ---
-title: Utwórz propozycję amortyzacji
-description: W tej procedurze opisano sposób działania propozycji amortyzacji partii i wyjaśniono, jak proponować amortyzację dla środków trwałych.
+title: Tworzenie propozycji amortyzacji
+description: W tym temacie opisano sposób działania propozycji amortyzacji partii i wyjaśniono, jak proponować amortyzację dla środków trwałych.
 author: abruer
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,34 +16,35 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 07146adfe1ead2b6e06e3c323963f8c012381b76
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 90c24e9d89c055ea95ca5f25cd85ef4042476a90
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1840008"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867614"
 ---
-# <a name="create-depreciation-proposal"></a>Utwórz propozycję amortyzacji
+# <a name="create-a-depreciation-proposal"></a>Tworzenie propozycji amortyzacji
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze opisano sposób działania propozycji amortyzacji partii i wyjaśniono, jak proponować amortyzację dla środków trwałych. Zadanie używa firmy demonstracyjnej USMF i roli Księgowy.
+W tym temacie opisano sposób działania propozycji amortyzacji partii i wyjaśniono, jak proponować amortyzację dla środków trwałych. Zadanie używa firmy demonstracyjnej USMF i roli Księgowy.
 
 
-## <a name="create-depreciation-proposal"></a>Utwórz propozycję amortyzacji
-1. Wybierz kolejno opcje Środki trwałe > Wpisy w arkuszu > Utwórz propozycję amortyzacji.
-2. W polu Nazwa arkusza kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-3. Na liście kliknij łącze w wybranym wierszu.
-4. Wprowadź datę w polu Do dnia.
-    * Wybierz opcję Podsumowanie amortyzacji, aby zsumować miesięczne amortyzacje w jednym wierszu arkusza.  
-    * Na przykład jeśli wartość pola Do dnia wynosi 31 marca 2015, zostanie wygenerowany następujący opis: „Amortyzacja od 31 stycznia 2015”. Pole Data w proponowanych wierszach arkusza zostanie następnie ustawione na wartość 31 marca 2015.  
-    * Propozycję amortyzacji można filtrować według składników aktywów, grup składników aktywów lub innych kryteriów przy użyciu opcji Filtr.  
-    * W przypadku używania formularza Tworzenie propozycji nabycia lub amortyzacji środków trwałych można zaproponować amortyzację partiami. Jest to zalecane dla większych propozycji, które zużywają więcej zasobów systemowych. Jeśli zostanie wybrana opcja przetwarzania wsadowego, możliwe jest wykonywanie innych zadań w tym samym czasie. Gdy proponujesz amortyzację w ten sposób, amortyzacja jest obliczana dla modeli ewidencji środków trwałych.  
-5. Kliknij opcję Utwórz arkusz.
+## <a name="create-a-depreciation-proposal"></a>Tworzenie propozycji amortyzacji
+1. W okienku nawigacji przejdź do **Moduły > Środki trwałe > Wpisy w arkuszu > Utwórz propozycję amortyzacji**.
+2. W polu **Nazwa arkusza** wybierz opcję z menu rozwijanego.
+3. Wprowadź datę w polu **Do dnia**.
+
+    - Wybierz opcję **Podsumowanie amortyzacji**, aby zsumować miesięczne amortyzacje w jednym wierszu arkusza.  
+    - Na przykład jeśli wartość pola Do dnia wynosi 31 marca 2015, zostanie wygenerowany następujący opis: „Amortyzacja od 31 stycznia 2015”. Pole **Data** w proponowanych wierszach arkusza zostanie następnie ustawione na wartość 31 marca 2015 r.  
+    - Propozycję amortyzacji można filtrować według składników majątku, grup składników majątku lub innych kryteriów przy użyciu opcji **Filtruj**.  
+    - W przypadku używania formularza **Tworzenie propozycji nabycia lub amortyzacji środków trwałych** można zaproponować amortyzację partiami. Jest to zalecane dla większych propozycji, które zużywają więcej zasobów systemowych. Jeśli zostanie wybrana opcja przetwarzania wsadowego, możliwe jest wykonywanie innych zadań w tym samym czasie. Gdy proponujesz amortyzację w ten sposób, amortyzacja jest obliczana dla modeli ewidencji środków trwałych.  
+
+4. Wybierz **Utwórz arkusz**.
 
 ## <a name="review-depreciation-entries"></a>Przeglądanie zapisów amortyzacji
-1. Wybierz kolejno opcje Środki trwałe > Wpisy w arkuszu > Arkusz środków trwałych.
+1. W okienku nawigacji przejdź do **Moduły > Środki trwałe > Wpisy w arkuszu > Arkusz środków trwałych**.
 2. Na liście znajdź i zaznacz odpowiedni rekord.
-3. Kliknij przycisk Wiersze.
-4. Kliknij przycisk Księguj.
+3. Wybierz **Linie**.
+4. Wybierz opcję **Zaksięguj**.
 

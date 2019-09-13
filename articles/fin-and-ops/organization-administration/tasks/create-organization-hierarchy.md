@@ -3,7 +3,7 @@ title: Tworzenie hierarchii organizacyjnej
 description: Użyj poniższej procedury, aby utworzyć hierarchię organizacyjną.
 author: sericks007
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 203a586b06a13a7c67f246384152d17627e22041
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 48c8564694b22a5110341d853a79096fbe805c91
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545552"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916468"
 ---
 # <a name="create-an-organization-hierarchy"></a>Tworzenie hierarchii organizacyjnej
 
@@ -29,31 +29,23 @@ ms.locfileid: "1545552"
 
 Użyj poniższej procedury, aby utworzyć hierarchię organizacyjną. Hierarchie organizacyjne umożliwiają przeglądanie i raportowanie działalności biznesowej z różnych perspektyw. Można na przykład skonfigurować jedną hierarchię na potrzeby tworzenia raportów podatkowych, statutowych i ustawowych. Następnie można ustawić inną hierarchię do raportowania informacji finansowych nie wymaganych przez prawo, ale używanych w raportach wewnętrznych. 
 
-
-
 Przed utworzeniem hierarchii organizacyjnej należy utworzyć organizacje. Aby uzyskać więcej informacji, zobacz zadania „Tworzenie firmy” lub „Tworzenie jednostki operacyjnej”. Można też tworzyć działy i zespoły. 
-
-
 
 Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 
-
 ## <a name="create-a-hierarchy"></a>Tworzenie hierarchii
-1. Wybierz kolejno opcje Administrowanie organizacją > Organizacje > Hierarchie organizacyjne.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa wpisz wartość.
-4. Kliknij przycisk Przypisywanie celu.
-5. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Wybierz cel, który zostanie przypisany do hierarchii organizacyjnej.  
-6. Kliknij przycisk Dodaj.
-7. Na liście oznacz wybrany wiersz.
-    * Znajdź właśnie utworzoną hierarchię.  
-8. Kliknij przycisk OK.
+1. Otwórz **Okienko nawigacji > Moduły > Administrowanie organizacją > Organizacje > Hierarchie organizacyjne**.
+2. W **okienku akcji** kliknij **Nowy**.
+3. W polu **Nazwa** wpisz wartość.
+4. W sekcji **Cel** kliknij przycisk **Przypisywanie celu**.
+5. Na liście znajdź i zaznacz odpowiedni rekord. Wybierz cel, który zostanie przypisany do hierarchii organizacyjnej.  
+6. W sekcji **Przypisane hierarchie** kliknij przycisk **Dodaj**.
+7. Na liście oznacz wybrany wiersz. Znajdź właśnie utworzoną hierarchię.  
+8. Kliknij przycisk **OK**.
 
 ## <a name="add-organizations-to-the-hierarchy"></a>Dodawanie organizacji do hierarchii
-1. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Zaznacz hierarchię.  
-2. Kliknij opcję Wyświetl hierarchię.
-    * W razie potrzeby dodaj organizację.  
-    * Aby dodać organizację, kliknij przycisk Edytuj, a następnie opcję Wstaw.     Po zakończeniu wprowadzania zmian można zapisać wersję roboczą i/lub opublikować zmiany.  
+1. Na liście znajdź i zaznacz odpowiedni rekord. Zaznacz hierarchię.  
+2. W sekcji **Przypisane hierarchie** kliknij przycisk **Wyświetl hierarchię**.
+    - W razie potrzeby dodaj organizację.  
+    - Aby dodać organizację, kliknij przycisk **Edytuj**, a następnie opcję **Wstaw** , aby dodać organizację. Po zakończeniu wprowadzania zmian można **zapisać** wersję roboczą i/lub **opublikować** zmiany.  
 

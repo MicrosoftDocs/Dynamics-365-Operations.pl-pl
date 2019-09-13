@@ -1,9 +1,9 @@
 ---
-title: Uzgadnianie faktur rozrachunków z dostawcami
+title: Omówienie uzgadniania rozrachunków z dostawcami
 description: Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów.
 author: abruer
 manager: AnnBe
-ms.date: 02/13/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe464c714620590d77a0a5b2c2aeadb29381bf60
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: b45c6f20bf5b6fb02379f71b5806c6c147789e73
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837501"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865071"
 ---
-# <a name="accounts-payable-invoice-matching"></a>Uzgadnianie faktur rozrachunków z dostawcami
+# <a name="accounts-payable-invoice-matching-overview"></a>Omówienie uzgadniania rozrachunków z dostawcami
 
 [!include [banner](../includes/banner.md)]
 

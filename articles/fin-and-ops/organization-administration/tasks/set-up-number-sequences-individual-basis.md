@@ -3,7 +3,7 @@ title: Konfigurowanie indywidualnych sekwencji numerów
 description: Ten temat wyjaśnia, jak konfiguruje się indywidualne sekwencje numerów.
 author: sericks007
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58e69b680c006c814e9408135b6947161ad7c4f3
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 818e641d19444e94a287134b68b25d52a05021d0
+ms.sourcegitcommit: 6ff2c25d859c435106192e07c9ef0a9067c1e8d0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738888"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886607"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurowanie indywidualnych sekwencji numerów
 
@@ -33,7 +33,7 @@ Ten temat wyjaśnia, jak konfiguruje się indywidualne sekwencje numerów. Sekwe
 2. Wybierz opcję **Sekwencja numerów**.
 3. W polu **Kod sekwencji numerów** wpisz wartość.
 4. W polu **Nazwa** wpisz wartość.
-5. Na skróconej karcie **Parametry zakresu** wybierz zakres dla sekwencji identyfikatorów i wybierz zakres wartości z listy rozwijanej. Zakres definiuje, która organizacje używają sekwencji numerów. Ponadto sekwencje identyfikatorów o zakresie innym niż **Udostępniono** mogą mieć segmenty odpowiadające ich zakresowi. Na przykład sekwencja identyfikatorów z zakresem **Firma** może zawierać segment firmy. Aby uzyskać więcej informacji na temat zakresów, zobacz temat pomocy [Omówienie sekwencji numerów](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/fin-and-ops/organization-administration/number-sequence-overview.md).  
+5. Na skróconej karcie **Parametry zakresu** wybierz zakres dla sekwencji identyfikatorów i wybierz zakres wartości z listy rozwijanej. Zakres definiuje, która organizacje używają sekwencji numerów. Ponadto sekwencje identyfikatorów o zakresie innym niż **Udostępniono** mogą mieć segmenty odpowiadające ich zakresowi. Na przykład sekwencja identyfikatorów z zakresem **Firma** może zawierać segment firmy. Aby uzyskać więcej informacji na temat zakresów, zobacz temat pomocy [Omówienie sekwencji numerów](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
 6. Rozwiń sekcję **Segmenty**.
     - Zdefiniuj formatu dla sekwencji numerów, dodając, usuwając i zmieniając kolejność segmentów.  
     - Sekwencje identyfikatorów wszystkich zakresów mogą zawierać *segmenty stałe* i *segmenty alfanumeryczne*. Segmenty stałe zawierają zestaw znaków alfanumerycznych, które się nie zmieniają. Tego typu segmentu należy używać, aby dodać łącznik lub inne separatory między segmentami sekwencji identyfikatorów. Segmenty alfanumeryczne zawierają kombinację znaków cyfry (#) oraz handlowego i (&). Te znaki reprezentują litery i cyfry, które zwiększają się za każdym razem, gdy jest używany numer z tej sekwencji. Użyj znaku liczbowego (#), aby wskazać numery rosnąco i znaku handlowego „i”, aby wskazać litery rosnąco. Na przykład format `#####_2014` pozwala tworzyć sekwencje `00001_2014`, `00002_2014` i tak dalej. Musi istnieć co najmniej jeden segment alfanumeryczny. Segmenty zakresów, takich jak przedsiębiorstwo lub firma, nie są wymagane. Jednak nawet jeśli nie umieścisz segmentów zakresów w formacie, numery dla wybranego odwołania nadal są generowane dla zakresu.  

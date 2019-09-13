@@ -1,9 +1,9 @@
 ---
-title: Planowanie ładunków przy użyciu konsolidacji w centrum
+title: Omówienie planowania ładunków przy użyciu konsolidacji w centrum
 description: W tym artykule opisano funkcjonalność konsolidowania wysyłek w centrum, gdy towary są dostarczane z różnych magazynów do tego samego odbiorcy albo od wielu dostawców do tego samego magazynu.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6743338819da3821cde18ec34a9c79290036ca23
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 74f152a227bec3b402eba9384dfb5db53b46d83a
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560985"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1866072"
 ---
-# <a name="plan-loads-using-hub-consolidation"></a>Planowanie ładunków przy użyciu konsolidacji w centrum
+# <a name="plan-loads-using-hub-consolidation-overview"></a>Omówienie planowania ładunków przy użyciu konsolidacji w centrum
 
 [!include [banner](../includes/banner.md)]
 

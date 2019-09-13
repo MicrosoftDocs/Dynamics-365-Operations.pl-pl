@@ -1,9 +1,9 @@
 ---
 title: Zarządzanie szablonami wiadomości e-mail
-description: Można przenieść informacje z bazy danych organizacji do zakładek w nowym dokumencie i używać ich w szablonach, które pomagają efektywnie komunikować się z kandydatami.
+description: W tym temacie wyjaśniono sposób można zarządzać szablonami wiadomości e-mail.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4667d0506c5ae6bea87b982c7feebab8963797a6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3ecfa720dfa9b3ed6ee15ec68498d2a46612a9ae
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1508040"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867494"
 ---
 # <a name="manage-email-templates"></a>Zarządzanie szablonami wiadomości e-mail
 
@@ -31,23 +31,20 @@ Można przenieść informacje z bazy danych organizacji do zakładek w nowym dok
 
 
 ## <a name="select-which-bookmarks-to-use-in-your-email-templates"></a>Wybieranie zakładek do używania w szablonach wiadomości e-mail
-1. Kliknij opcję Zakładki zgłoszeń.
+1. W okienku nawigacji przejdź do **Moduły > Zasoby ludzkie > Rekrutacja > Komunikacja > Zakładki zgłoszeń**.
 2. Na liście znajdź i zaznacz odpowiednią akcję korespondencyjną.
-3. Kliknij przycisk Edytuj.
-4. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Wybierz pola, których chcesz móc używać w szablonie wiadomości e-mail dla wybranej akcji korespondencyjnej, i przenieś je do pól zakładek.  
+3. Wybierz opcję **Edycja**.
+4. Wybierz pola, których chcesz móc używać w szablonie wiadomości e-mail dla wybranej akcji korespondencyjnej, i przenieś je do pól zakładek.  
 5. Zamknij stronę.
 
 ## <a name="create-an-email-template"></a>Tworzenie szablonu wiadomości e-mail
-1. Wybierz kolejno opcje Zasoby ludzkie > Rekrutacja > Komunikacja > Szablony wiadomości e-mail dotyczące zgłoszeń.
-2. Kliknij przycisk Nowy.
-3. W polu Akcja korespondencyjna wybierz opcję „Rozmowa kwalifikacyjna”.
-    * Wybierz akcję korespondencyjną, którą zawiera zakładki przeznaczone do używania w tego typu komunikacji pocztą e-mail.  
-4. W polu Szablon wiadomości e-mail wpisz wartość.
-5. W polu Temat wpisz wartość.
-6. W polu Tekst wpisz wartość.
+1. W okienku nawigacji przejdź do **Moduły > Zasoby ludzkie > Rekrutacja > Komunikacja > Szablony wiadomości e-mail dotyczące zgłoszeń**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Akcja korespondencyjna** wybierz opcję **Rozmowa kwalifikacyjna**. Wybierz akcję korespondencyjną, którą zawiera zakładki przeznaczone do używania w tego typu komunikacji pocztą e-mail.  
+4. W polu **Szablon wiadomości e-mail** wpisz wartość.
+5. W polu **Temat** wpisz wartość.
+6. W polu **Tekst** wpisz wartość.
 7. Na liście znajdź i zaznacz odpowiednie pole zakładki.
 8. Kontynuuj wpisywanie swojej wiadomości e-mail, w razie potrzeby wstawiając pola zakładek.
-    * Kontynuuj wpisywanie swojej wiadomości e-mail, w razie potrzeby wstawiając pola zakładek.  
-9. Kliknij przycisk Zapisz.
+9. Wybierz opcję **Zapisz**.
 

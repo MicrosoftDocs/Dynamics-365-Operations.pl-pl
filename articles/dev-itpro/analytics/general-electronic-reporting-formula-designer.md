@@ -2,8 +2,8 @@
 title: Projektant formuł w module Raportowanie elektroniczne (ER)
 description: W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER).
 author: NickSelin
-manager: AnnBe
-ms.date: 05/14/2014
+manager: kfend
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 1f6caa6afd0ce36340caf237c1acca0ea343824f
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849516"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864301"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Projektant formuł w module Raportowanie elektroniczne (ER)
 
@@ -113,6 +113,33 @@ Projektant formuł ER pozwala również ustawić nazwę pliku generowanego dokum
 - Wyrażenie umożliwia (poprzez zwrócenie wartości **TRUE**) proces tworzenia plików dla partii zawierających co najmniej jeden rekord.
 
 [![Kontrolowanie pliku](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+
+### <a name="documents-content-control"></a>Kontrola zawartości dokumentów
+
+Projektantowi formuł ER można używać do konfigurowania wyrażeń kontrolujących, jakie dane będą umieszczane w wygenerowanych elektronicznych dokumentach w czasie wykonywania. Wyrażenia mogą na przykład włączać lub wyłączać tworzenie określonych elementów formatu w zależności od przetwarzania danych. To wyrażenie można wprowadzić dla pojedynczego elementu formatu w polu **włączone** na karcie **mapowanie** na stronie **projektanta operacji** jako warunek logiczny zwracający wartość **logiczną**:
+
+-   Gdy jest zwracana wartość **prawda**, wykonywany jest bieżący element formatu.
+-   Gdy jest zwracana wartość **fałsz**, pomijany jest bieżący element formatu.
+
+Na poniższej ilustracji przedstawiono wyrażenia tego typu (wersja **11.12.11** w **ISO20022 konfiguracji formatu przelewu kredytowego (No)** dostarczonej przez firmę Microsoft jest przykładem). Składnik formatu **xmlhead** został skonfigurowany do opisywania struktury komunikatu kredytowego, zgodnie ze standardami wiadomości XML w formacie ISO 20022. Składnik formatu **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** jest skonfigurowany do dodania do wygenerowanego komunikatu, **Ustrd** elementu XML i umieszczenia informacji o przekazie w Format bez struktury jako tekst następujących elementów XML:
+
+-   Składnik **PaymentNotes** jest używany do wyprowadzania tekstu uwag do płatności.
+-   Składnik **DelimitedSequence** umożliwia wyprowadzanie faktur rozdzielanych przecinkami, które służą do rozliczenia bieżącego przelewu kredytowego.
+
+[![Projektant operacji](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+
+> [!NOTE]
+> Składniki **PaymentNotes** i **DelimitedSequence** są oznaczane przy użyciu znaku zapytania. Oznacza to, że użycie obu składników jest warunkowe na podstawie następujących kryteriów:
+
+-   Zdefiniowany dla składnika **PaymentNote** **@.PaymentsNotes<>""** wyrażenie włącza (zwracając wartość **TRUE**) populację do elementu **Ustrd** XML, tekst not płatniczych, jeśli ten tekst dla bieżącego przelewu kredytowego nie jest pusty.
+
+[![Projektant operacji](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+
+-   Określono dla składnika **DelimitedSequence** wyrażenie **@.PaymentsNotes=""** włącza (zwracając wartość **TRUE**) populację do elementu **Ustrd** XML, oddzielając je przecinkami numery faktur używane do rozliczania bieżącego przelewu kredytowego, gdy tekst płatności uwagi dotyczące tego przelewu kredytowego są puste
+
+[![Projektant operacji](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+
+Na podstawie tego ustawienia wygenerowana wiadomość dla każdej płatności dłużnika, **Ustrd** element XML, będzie zawierać tekst not płatniczych lub, jeśli taki tekst jest pusty, Tekst rozdzielany przecinkami za pomocą numerów faktur używanych do rozliczenia tej płatności.
 
 ### <a name="basic-syntax"></a>Podstawowa składnia
 

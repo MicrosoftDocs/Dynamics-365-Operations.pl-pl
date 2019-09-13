@@ -1,9 +1,9 @@
 ---
-title: Wpisywanie danych faktury w systemie AP za pomocą arkusza zatwierdzania
-description: W tym przewodniku po zadaniach pokazano sposób używania rejestru faktur do tworzenia faktur, a następnie używania arkusza zatwierdzania do aktualizowania kont wydatków.
+title: Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą arkusza zatwierdzania
+description: W tym przewodniku pokazano sposób używania rejestru faktur do tworzenia faktur, a następnie używania arkusza zatwierdzania do aktualizowania kont wydatków.
 author: abruer
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,50 +16,41 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0faece510cc85fd86113d8b62d54b71f3014b1db
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: fb690769a33f88e63ab8f54cec69a5e927fd324c
+ms.sourcegitcommit: 6545bef4584d72dd7789f2d3935cf00ac8f489b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837053"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1871012"
 ---
-# <a name="key-invoice-data-into-ap-system-using-approval-journal"></a>Wpisywanie danych faktury w systemie AP za pomocą arkusza zatwierdzania
+# <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a>Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą arkusza zatwierdzania
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W tym przewodniku po zadaniach pokazano sposób używania rejestru faktur do tworzenia faktur, a następnie używania arkusza zatwierdzania do aktualizowania kont wydatków.
-
+W tym przewodniku pokazano sposób używania rejestru faktur do tworzenia faktur, a następnie używania arkusza zatwierdzania do aktualizowania kont wydatków.
 
 ## <a name="create-and-post-and-invoice"></a>Tworzenie i księgowanie faktury
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Faktury > Rejestr faktur.
-2. Kliknij przycisk Nowy.
+1. W okienku nawigacji przejdź do **Moduły > Rozrachunki z dostawcami > Faktury > Rejestr faktur**.
+2. Wybierz pozycję **Nowy**.
 3. Wybierz nazwę rejestru faktur, którego chcesz używać.
-4. Na liście kliknij łącze w wybranym wierszu.
-5. Kliknij przycisk Wiersze, aby otworzyć rejestr i wprowadzić wiersze wydatków.
-6. Wybierz dostawcę. Na przykład wprowadź lub wybierz dostawcę US-104.
-7. W polu Faktura wpisz wartość.
-8. W polu Opis wpisz wartość.
-9. W polu Kredyt wpisz liczbę.
-10. W polu Zatwierdzone przez kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-11. Zaznacz osobę zatwierdzającą i kliknij przycisk Wybierz, aby ją wybrać.
-12. Kliknij przycisk Księguj.
-13. Zamknij stronę.
-14. Zamknij stronę.
+4. Kliknij przycisk **Wiersze**, aby otworzyć rejestr i wprowadzić wiersze wydatków.
+5. Wybierz dostawcę. Na przykład wprowadź lub wybierz dostawcę `US-104`.
+6. W polu **Faktura** wpisz wartość.
+7. W polu **Opis** wpisz wartość.
+8. W polu **Kredyt** wpisz liczbę.
+9. W polu **Zatwierdzone przez** wybierz osobę zatwierdzającą z menu rozwijanego.
+10. Wybierz opcję **Zaksięguj**.
 
 ## <a name="approve-an-invoice"></a>Zatwierdzanie faktury
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Faktury > Zatwierdzenie faktury.
-2. Kliknij przycisk Nowy.
+1. W okienku nawigacji przejdź do **Moduły > Rozrachunki z dostawcami > Faktury > Zatwierdzenie faktury**.
+2. Wybierz pozycję **Nowy**.
 3. Wybierz nazwę arkusza zatwierdzania faktur, którego chcesz używać.
-4. Na liście kliknij łącze w wybranym wierszu.
-5. Kliknij przycisk Wiersze, a zostanie wyświetlona strona, gdzie będzie można wybrać faktury do zatwierdzenia.
-6. Kliknij przycisk Znajdź załączniki, aby wyświetlić wszystkie faktury gotowe do zatwierdzenia.
-7. Oznacz utworzoną przez siebie fakturę.
-8. Kliknij opcję Wybierz.
-    * Załączniki wybrane powyżej zostaną po zaznaczeniu przeniesione do tej listy.  
-9. Kliknij przycisk OK.
-10. Kliknij pole Numer konta, aby dodać konto wydatków do faktury.
-11. Wprowadź numer konta i opuść to pole. Na przykład wpisz 600120.
-12. Kliknij przycisk Księguj.
-13. Kliknij opcję Załącznik, aby wyświetlić zapisy, które zostały zaksięgowane.
-    * Konto faktur oczekujących na zatwierdzenie zostanie wycofane i zastąpione kontem wydatków rzeczywistych.  
+4. Wybierz **Wiersze**, a zostanie wyświetlona strona, gdzie będzie można wybrać faktury do zatwierdzenia.
+5. Kliknij przycisk **Znajdź załączniki**, aby wyświetlić wszystkie faktury gotowe do zatwierdzenia.
+6. Zaznacz utworzoną fakturę, a następnie kliknij przycisk **Wybierz**. Załączniki wybrane powyżej zostaną po zaznaczeniu przeniesione do tej listy.  
+7. Kliknij przycisk **OK**.
+8. Wybierz **Numer konta**, aby dodać konto wydatków do faktury.
+9. Wprowadź numer konta i opuść to pole. Na przykład wpisz `600120`.
+10. Wybierz opcję **Zaksięguj**.
+11. Wybierz **Załącznik**, aby wyświetlić zapisy, które zostały zaksięgowane. Konto faktur oczekujących na zatwierdzenie zostanie wycofane i zastąpione kontem wydatków rzeczywistych.  
 

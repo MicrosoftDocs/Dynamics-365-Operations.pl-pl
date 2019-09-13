@@ -3,7 +3,7 @@ title: Skróty klawiaturowe
 description: Następujące skróty klawiaturowe mają zastosowanie w całym systemie Dynamics 365 for Finance and Operations.
 author: jasongre
 manager: AnnBe
-ms.date: 07/22/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95a6b6bd70c4a5bb684c605d364a28b85ed4e120
-ms.sourcegitcommit: d88d3d504e85c5bf6f6e9dc842488a2b644261cf
+ms.openlocfilehash: 91e3f202d479fd77893da3cc746f3d23587107b1
+ms.sourcegitcommit: 69bd97dcc191a0cabfed91f678bac0ba2aebb1b8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "1780065"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "1920658"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
@@ -155,8 +155,8 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Funkcja                                                                   | Klawisze                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Otwórz hiperłącze                                                           | Ctrl+Enter                    |
-| Wpisz datę sesji w polu daty                                       | D+Tab                         |
-| Wpisz bieżącą datę w polu daty                                       | T+Tab                         |
+| Wpisz datę sesji w polu daty                                       | D                         |
+| Wpisz bieżącą datę w polu daty                                       | N                         |
 | Otwórz wyszukiwanie, pole kombi, wybór daty, okno dialogowe przerywania                         | Alt+strzałka w dół                |
 | Zamknij wyszukiwanie, pole kombi, wybór daty, okno dialogowego przerywania                        | Esc                           |
 | Przenieś wyróżnienie do wyszukiwania (jeśli wyszukiwanie jest otwarte)                   | Alt+strzałka w dół                |

@@ -1,9 +1,9 @@
 ---
 title: Przetwarzanie arkusza alokacji księgi
-description: Na stronie Przetwarzanie żądania alokacji można utworzyć arkusz alokacji, który może być przeglądany i zatwierdzany przed księgowaniem w księdze głównej lub bezpośrednio księgowany w księdze głównej.
+description: W tym temacie wyjaśniono, jak przetwarzać żądania alokacji Dynamics 365 for Finance and Operations.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/26/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,31 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 087bd4f203e8762447e823b19076b79296a390d6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 0798d9f1c09e827bf64635cf67102f77244948c5
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846374"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867446"
 ---
 # <a name="process-ledger-allocation-journal"></a>Przetwarzanie arkusza alokacji księgi
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Na stronie Przetwarzanie żądania alokacji można utworzyć arkusz alokacji, który może być przeglądany i zatwierdzany przed księgowaniem w księdze głównej lub bezpośrednio księgowany w księdze głównej. Przed utworzeniem arkusza alokacji musi istnieć co najmniej jedna aktywna reguła alokacji księgi. W zadaniu wykorzystano firmę demonstracyjną USMF.
+W tym temacie wyjaśniono, jak przetwarzać żądania alokacji Dynamics 365 for Finance and Operations. Na stronie Przetwarzanie żądania alokacji można utworzyć arkusz alokacji, który może być przeglądany i zatwierdzany przed księgowaniem w księdze głównej lub bezpośrednio księgowany w księdze głównej. Przed utworzeniem arkusza alokacji musi istnieć co najmniej jedna aktywna reguła alokacji księgi. W zadaniu wykorzystano firmę demonstracyjną USMF.
 
-1. Wybierz kolejno opcje Księga główna > Alokacje > Przetwarzanie żądania alokacji.
-2. W polu Reguła kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-3. Na liście znajdź i zaznacz odpowiedni rekord.
-4. Na liście kliknij łącze w wybranym wierszu.
-5. W polu Na dzień wprowadź datę.
-    * Wartość Na dzień jest bardzo ważna, jeżeli jest źródłem danych reguły jest księga. Ta data określa, które salda księgi mają być uwzględnione w alokacji.     W polu Źródło zerowe wybierz opcję Zatrzymaj. Spowoduje to zatrzymanie procesu alokacji i wyświetlenie komunikatu o wybraniu kwoty źródłowej równej 0 (zero).  
-6. W polu Opcje propozycji wybierz opcję "Tylko propozycja".
-    * Wybierz opcję Tylko propozycja, aby przejrzeć i opcjonalnie zatwierdzić wynik w arkuszach alokacji przed księgowaniem alokacji w księdze głównej.  
-7. W polu Data księgowania w księdze głównej wprowadź datę.
-8. Kliknij przycisk OK.
-9. Wybierz kolejno opcje Księga główna > Alokacje > Arkusze alokacji.
-10. Kliknij przycisk Wiersze.
-11. Kliknij przycisk Księguj.
-12. Kliknij przycisk Księguj.
+1. W okienku nawigacji przejdź do **Moduły > Księga główna > Alokacja > Przetwarzanie żądania alokacji**.
+2. W polu **Reguła** wybierz odpowiedni rekord z menu rozwijanego.
+3. W polu **Na dzień** wprowadź datę.
+
+    - Wartość **Na dzień** jest bardzo ważna, jeżeli źródłem danych reguły jest księga. Ta data określa, które salda księgi mają być uwzględnione w alokacji.  
+    - W polu **Źródło zerowe** wybierz opcję **Zatrzymaj**. Spowoduje to zatrzymanie procesu alokacji i wyświetlenie komunikatu o wybraniu kwoty źródłowej równej zero.  
+
+4. W polu **Opcje propozycji** wybierz opcję **Tylko propozycja**. Wybierz opcję **Tylko propozycja**, aby przejrzeć i opcjonalnie zatwierdzić wynik w arkuszach alokacji przed księgowaniem alokacji w księdze głównej.  
+5. W polu Data księgowania w księdze głównej wprowadź datę.
+6. Kliknij przycisk **OK**.
+7. W okienku nawigacji przejdź do **Moduły > Księga główna > Alokacja > Arkusze alokacji**.
+8. Wybierz **Linie**.
+9. Wybierz opcję **Zaksięguj**.
+10. Wybierz opcję **Zaksięguj**.
 

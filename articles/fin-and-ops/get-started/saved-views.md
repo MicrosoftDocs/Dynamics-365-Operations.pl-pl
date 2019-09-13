@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 9d19987a44c467381828acb81b6161601268d84f
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 43f25796e6271f14acfc72f931398ab63338a307
+ms.sourcegitcommit: b068b17ef708a0b349db8df1542e4244bb983d13
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863067"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "1870840"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
@@ -153,11 +153,13 @@ Aby włączyć zapisane widoki, gdy funkcja jest w podglądzie, wykonaj następu
 
 1.  **Włącz funkcję testową**: wykonaj następującą instrukcję SQL: 
 
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('Dynamics.AX.Application.CLISavedViewsEnableFeature', 1, 0, 5637144576);`
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLISavedViewsEnableFeature', 1, 0, 5637144576);`
 
-2.  **Znajdź funkcję**: Przejdź do obszaru roboczego **Zarządzanie funkcjami**. Jeśli **Zapisane widoki** nie są wyświetlane na liście, wybierz przycisk **Sprawdź aktualizacje.**   
+2. **Zresetuj usługi IIS**, aby opróżnić statyczną dystrybucję testową pamięci podręcznej. 
 
-3.  **Włącz funkcję**: Znajdź funkcję **Zapisane widoki** na liście funkcji i kliknij przycisk **Włącz teraz** w okienku szczegółów.
+3.  **Znajdź funkcję**: przejdź do obszaru roboczego **Zarządzanie funkcjami**. Jeśli **Zapisane widoki** nie są wyświetlane na liście, wybierz przycisk **Sprawdź aktualizacje**.   
+
+4.  **Włącz funkcję**: Znajdź funkcję **Zapisane widoki** na liście funkcji i wybierz przycisk **Włącz teraz** w okienku szczegółów.
 
 Wszystkie kolejne sesje użytkownika będą uruchamiane z włączonymi zapisanymi widokami.  
 

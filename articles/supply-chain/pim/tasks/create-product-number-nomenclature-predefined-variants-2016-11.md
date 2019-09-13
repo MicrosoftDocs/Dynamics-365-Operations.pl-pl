@@ -1,9 +1,9 @@
 ---
 title: Tworzenie konwencji nazewnictwa identyfikatorów produktów dla wstępnie zdefiniowanych wariantów produktu
-description: Ten przewodnik pokazuje, jak skonfigurować konwencję nazewnictwa numerów produktu dla wstępnie zdefiniowanych wariantów produktu i jak ją przypisać do odpowiedniej grupy wymiarów produktu.
+description: Ten temat pokazuje, jak skonfigurować konwencję nazewnictwa numerów produktu dla wstępnie zdefiniowanych wariantów produktu i jak ją przypisać do odpowiedniej grupy wymiarów produktu.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,45 +16,45 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a2e61fd99cb80a1a9cc3d8e985fb0f14e3c2fc2
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5cf0efeac2851e6ead6fc5e15a016370dfa620bc
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844688"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914914"
 ---
 # <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a>Tworzenie konwencji nazewnictwa identyfikatorów produktów dla wstępnie zdefiniowanych wariantów produktu
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ten przewodnik pokazuje, jak skonfigurować konwencję nazewnictwa numerów produktu dla wstępnie zdefiniowanych wariantów produktu i jak ją przypisać do odpowiedniej grupy wymiarów produktu. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Nowa konwencja nazewnictwa numerów produktu jest przypisana do grupy wymiarów koloru i rozmiaru. Zazwyczaj zadanie wykonuje projektant produktów.
+Ten temat pokazuje, jak skonfigurować konwencję nazewnictwa numerów produktu dla wstępnie zdefiniowanych wariantów produktu i jak ją przypisać do odpowiedniej grupy wymiarów produktu. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Nowa konwencja nazewnictwa numerów produktu jest przypisana do grupy wymiarów koloru i rozmiaru. Zazwyczaj zadanie wykonuje projektant produktów.
 
 
 ## <a name="create-a-product-number-nomenclature"></a>Tworzenie konwencji nazewnictwa numerów produktu
-1. Kliknij opcję Definicja modelu wariantu produktu.
-2. Kliknij opcję Nazewnictwo produktów.
-3. Kliknij przycisk Nowy.
-4. W polu Nazwa wprowadź nazwę konwencji nazewnictwa, która pomoże w identyfikacji docelowej grupy wymiarów produktu, na przykład KolorRozmiar.
-5. Wypełnij pole Opis.
-6. Kliknij przycisk Dodaj.
-7. Kliknij opcję Numer produktu głównego.
-8. Kliknij przycisk Dodaj.
-9. Kliknij opcję Stała tekstowa.
-10. W polu Tekst wpisz wartość.
-11. Kliknij przycisk Dodaj.
-12. Kliknij opcję Kolor.
-13. Kliknij przycisk Dodaj.
-14. Kliknij opcję Stała tekstowa.
-15. W polu Tekst wpisz wartość.
-16. Kliknij przycisk Dodaj.
-17. Kliknij opcję Rozmiar.
+1. Wybierz **Definicja modelu wariantu produktu**.
+2. Wybierz **Nazewnictwo produktów**.
+3. Wybierz pozycję **Nowy**.
+4. W polu **Nazwa** wprowadź nazwę konwencji nazewnictwa, która pomoże w identyfikacji docelowej grupy wymiarów produktu, na przykład `ColorSize`.
+5. W polu **Opis** wpisz wartość.
+6. Wybierz opcję **Dodaj**.
+7. Wybierz numer **produktu głównego**.
+8. Wybierz opcję **Dodaj**.
+9. Wybierz **Stała tekstowa**.
+10. W polu **Tekst** wpisz wartość.
+11. Wybierz opcję **Dodaj**.
+12. Wybierz **Kolor**.
+13. Wybierz opcję **Dodaj**.
+14. Wybierz **Stała tekstowa**.
+15. W polu **Tekst** wpisz wartość.
+16. Wybierz opcję **Dodaj**.
+17. Wybierz **Rozmiar**.
 18. Zamknij stronę.
 
 ## <a name="assign-the-nomenclature-to-a-product-master"></a>Przypisywanie konwencji nazewnictwa do produktu głównego
-1. Kliknij opcję Grupy wymiarów produktu.
-2. Zaznacz grupę wymiarów produktu SizeCol.
-3. Kliknij przycisk Edytuj.
-4. W polu Użyj nazewnictwa zaznacz opcję Tak.
-5. W polu Nazewnictwo numerów wariantów produktu wprowadź lub wybierz wartość.
+1. Wybierz **Grupy wymiarów produktu**.
+2. Zaznacz grupę **wymiarów produktu SizeCol**.
+3. Wybierz opcję **Edycja**.
+4. W polu **Użyj nazewnictwa** zaznacz opcję **Tak**.
+5. W polu **Nazewnictwo numerów wariantów produktu** wprowadź lub wybierz wartość.
 6. Zamknij stronę.
 

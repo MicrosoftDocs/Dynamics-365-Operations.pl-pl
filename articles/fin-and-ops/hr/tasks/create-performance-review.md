@@ -1,9 +1,9 @@
 ---
-title: Tworzenie przeglądu wydajności
-description: W tej procedurze pokazano sposób utworzenia przeglądu wydajności oraz opisano przeznaczenie każdej sekcji przeglądu.
+title: Tworzenie przeglądów wydajności
+description: W tym temacie pokazano sposób utworzenia przeglądu wydajności oraz opisano przeznaczenie każdej sekcji przeglądu.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,67 +16,66 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a387180386d65d31bf89004b374c43d377e7d349
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3583f974d1768e0efefb80f0ad8aa011669c1301
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1508157"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867361"
 ---
-# <a name="create-a-performance-review"></a>Tworzenie przeglądu wydajności
+# <a name="create-performance-reviews"></a>Tworzenie przeglądów wydajności
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób utworzenia przeglądu wydajności oraz opisano przeznaczenie każdej sekcji przeglądu. Procedurę utworzono przy użyciu danych firmy demonstracyjnej USMF. Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wersji 1611.
+W tym temacie pokazano sposób utworzenia przeglądu wydajności oraz opisano przeznaczenie każdej sekcji przeglądu. Procedurę utworzono przy użyciu danych firmy demonstracyjnej USMF.
 
-1. Kliknij samoobsługa pracownika.
-2. Kliknij przycisk Nowy przegląd, aby utworzyć nowy przegląd.
-3. W polu Typ przeglądu wprowadź lub wybierz wartość.
-4. Wprowadź lub wybierz wartość w polu Okres wydajności.
-5. W polu Data końcowa wprowadź datę.
-6. Kliknij przycisk OK.
-    * Można również utworzyć przegląd na podstawie szablonu. Jest to najlepszy sposób tworzenie przeglądu, ponieważ każda sekcja będzie zawierać informacje potrzebne do rozpoczęcia przeglądu.  
-7. Kliknij pozycję Pokaż sekcje, aby otworzyć rozwijane okno dialogowe.
-8. W polu Pokaż załączniki wybierz opcję Nie.
-9. Kliknij przycisk Zapisz.
-    * Zwróć uwagę, że karta Załączniki jest teraz ukryta.  
-10. Kliknij pozycję Pokaż sekcje, aby otworzyć rozwijane okno dialogowe.
-11. W polu Pokaż załączniki wybierz opcję Tak.
-12. Kliknij przycisk Zapisz.
-13. Kliknij przycisk Dodaj cel do przeglądu.
-14. Kliknij przycisk Anuluj.
-15. Kliknij przycisk Dodaj kompetencję, aby otworzyć rozwijane okno dialogowe.
-16. W polu Tytuł wpisz wartość.
-17. W polu Opis wprowadź wyrażenie „Zwiększenie umiejętności obsługi klienta poprzez współpracę z zespołem pomocy technicznej”.
-18. Kliknij przycisk OK.
-19. Kliknij przycisk Zwiń wszystko.
-20. Kliknij przycisk Rozwiń wszystko.
-21. Kliknij opcję Dodaj komentarz.
-22. Kliknij przycisk Księguj.
-23. Kliknij kartę Miary.
-24. Kliknij przycisk Dodaj miarę, aby otworzyć rozwijane okno dialogowe.
-25. Wprowadź lub wybierz wartość w polu Miara.
-26. W polu Kwota docelowa wpisz liczbę.
-27. Kliknij przycisk OK.
-28. Kliknij kartę Działania.
-29. Kliknij przycisk Dodaj.
-30. W polu Tytuł wpisz wartość.
-31. Wypełnij pole Opis.
-32. W polu Data początkowa wprowadź datę.
-33. W polu Data ukończenia wprowadź datę.
-34. W polu Plan rozwoju wybierz opcję Tak.
-35. W polu Słowa kluczowe wpisz wartość.
-36. Kliknij przycisk Zapisz.
-37. Kliknij kartę Oceny.
-    * Skrócona karta Szczegóły oceny umożliwia pracownikom ocenianie samych siebie, a kierownikom ocenianie pracowników. Jeśli są używane wagi, wartość wagi wyniku będzie obliczana automatycznie.    Aby zobaczyć tę sekcję, należy włączyć ustawienia parametrów wyświetlania ocen pracowników.  
-38. Kliknij kartę Podpisy.
-    * Jeśli przegląd używa przepływu pracy, podpisy pojawią się dopiero po zakończeniu przepływu pracy. Jeśli nie jest używany przepływ pracy, są tutaj wyświetlani zarówno pracownik, jak i kierownik. Wymagane pole wyboru jest zaznaczone na podstawie ustawień typu przeglądu.  
-39. Kliknij kartę Ogólne.
-    * Okres wydajności tworzy domyślne daty rozpoczęcia i zakończenia. Te daty są edytowalne.  
-    * Stany kontrolują dostęp do przeglądu. Stan Nie rozpoczęto umożliwia wszystkim osobom edytowanie przeglądu. Stan W toku umożliwia wyświetlania i edytowanie przeglądu tylko konkretnemu pracownikowi. Stan Gotowe do przeglądu umożliwia wyświetlanie i edytowanie przeglądu tylko kierownikowi. Stan Ostateczny przegląd umożliwia pracownikowi i kierownikowi wyświetlanie przeglądu oraz edytowanie go, jeśli pozwala na to konfiguracja typu przeglądu. Stany Zakończono, Odrzucono i Anulowano powodują, że przegląd jest tylko do odczytu.  
-40. W polu Przegląd wpisz wartość.
-41. Kliknij kartę Przegląd.
-    * Gdy przegląd przechodzi przez kolejne stany, pracownik i kierownik mogą dodawać komentarze do każdego celu lub kompetencji.  
-42. Kliknij kartę Podpisy.
-    * Pracownik i kierownik mogą podpisać przegląd. Po złożeniu wszystkich wymaganych podpisów stan zmienia się na Zakończono i nie można wprowadzać więcej zmian.  
+1. Na stronie głównej wybierz obszar roboczy **Samoobsługa pracownika etatowego**.
+2. Wybierz przycisk **Nowy przegląd**, aby utworzyć nowy przegląd.
+3. W polu **Typ przeglądu** wprowadź lub wybierz wartość.
+4. Wprowadź lub wybierz wartość w polu **Okres wydajności**.
+5. W polu **Data końcowa** wprowadź datę.
+6. Kliknij przycisk **OK**. Można również utworzyć przegląd na podstawie szablonu. Jest to najlepszy sposób tworzenie przeglądu, ponieważ każda sekcja będzie zawierać informacje potrzebne do rozpoczęcia przeglądu.  
+7. Karty, takie jak karta załączniki, można wyświetlać i ukrywać:
+
+    1. W okienku akcji wybierz **Pokaż sekcje**, aby otworzyć rozwijane okno dialogowe.
+    1. Wybierz opcję **Tak** lub **Nie** w polu **Pokaż załączniki**, aby wyświetlić lub ukryć kartę załączniki
+    1. Wybierz opcję **Zapisz**.
+
+8. Wybierz **Dodaj cel do przeglądu**, aby dodać cel. Po zakończeniu wybierz **OK**.
+9. Wybierz przycisk **Dodaj wymagania**, aby otworzyć rozwijane okno dialogowe.
+10. W polu **Tytuł** wpisz wartość.
+11. W polu **Opis** wpisz `Increase customer skills by working with the support team`.
+12. Kliknij przycisk **OK**.
+13. Wybierz **Zwiń wszystkie**.
+14. Wybierz **Rozwiń wszystkie**.
+15. Wybierz opcję **Dodaj komentarz**.
+16. Wybierz opcję **Zaksięguj**.
+17. Wybierz kartę **Miary**.
+18. Wybierz przycisk **Dodaj miarę**, aby otworzyć rozwijane okno dialogowe.
+19. Wprowadź lub wybierz wartość w polu **Miara**.
+26. W polu **Kwota docelowa** wpisz liczbę.
+20. Kliknij przycisk **OK**.
+21. Kliknij kartę **Działania**.
+22. Wybierz opcję **Dodaj**.
+23. W polu **Tytuł** wpisz wartość.
+24. W polu **Opis** wpisz wartość.
+25. W polu **Data początkowa** wprowadź datę.
+26. W polu **Data ukończenia** wprowadź datę.
+27. W polu **Plan rozwoju** wybierz opcję **Tak**.
+28. W polu **Słowa kluczowe** wpisz wartość.
+29. Wybierz opcję **Zapisz**.
+30. Kliknij kartę **Wyniki oceny**.  
+
+    - Skrócona karta **Szczegóły oceny** umożliwia pracownikom ocenianie samych siebie, a kierownikom ocenianie pracowników. Jeśli są używane wagi, wartość wagi wyniku będzie obliczana automatycznie.  
+    - Aby zobaczyć tę sekcję, należy włączyć ustawienia parametrów wyświetlania ocen pracowników.  
+
+31. Wybierz kartę **Podpisy**. Jeśli przegląd używa przepływu pracy, podpisy pojawią się dopiero po zakończeniu przepływu pracy. Jeśli nie jest używany przepływ pracy, są tutaj wyświetlani zarówno pracownik, jak i kierownik. Wymagane pole wyboru jest zaznaczone na podstawie ustawień typu przeglądu.  
+32. Kliknij kartę **Ogólne**.
+
+    - Okres wydajności tworzy domyślne daty rozpoczęcia i zakończenia. Te daty są edytowalne.  
+    - Stany kontrolują dostęp do przeglądu. Stan **Nie rozpoczęto** umożliwia wszystkim osobom edytowanie przeglądu. Stan **W toku** umożliwia wyświetlania i edytowanie przeglądu tylko konkretnemu pracownikowi. Stan Gotowe do przeglądu umożliwia wyświetlanie i edytowanie przeglądu tylko kierownikowi. Stan Ostateczny przegląd umożliwia pracownikowi i kierownikowi wyświetlanie przeglądu oraz edytowanie go, jeśli pozwala na to konfiguracja typu przeglądu. Stany **Zakończono**, **Odrzucono** i **Anulowano** powodują, że przegląd jest tylko do odczytu.  
+
+33. W polu **Przegląd** wpisz wartość.
+34. Wybierz kartę **Przegląd**. Gdy przegląd przechodzi przez kolejne stany, pracownik i kierownik mogą dodawać komentarze do każdego celu lub kompetencji.  
+35. Wybierz kartę **Podpisy**. Pracownik i Menedżer mogą wyrejestrować się z przeglądu. Po złożeniu wszystkich wymaganych podpisów stan zmienia się na **Zakończono** i nie można wprowadzać więcej zmian.  
 

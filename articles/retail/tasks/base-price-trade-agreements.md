@@ -3,7 +3,7 @@ title: Podstawa ceny i umowy handlowe
 description: Ta procedura poprowadzi przez proces tworzenia umów handlowych na cenę sprzedaży specyficznych dla kanału.
 author: josaw1
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4830ac553318cfbb3cb74395d1662e74dff75290
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8138b6144cc6ba09834f2bfb61cc7334767307d6
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548538"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916560"
 ---
 # <a name="base-price-and-trade-agreements"></a>Podstawa ceny i umowy handlowe
 
@@ -30,48 +30,43 @@ ms.locfileid: "1548538"
 
 Ta procedura poprowadzi przez proces tworzenia umów handlowych na cenę sprzedaży specyficznych dla kanału. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
 
-1. Wybierz kolejno opcje Handel detaliczny i inny > Ceny i rabaty > Grupy cenowe > Wszystkie grupy cenowe.
-    * Grupy cenowe służą przypisywaniu umów handlowych do określonych kanałów. Używanie grup cenowych, aby przypisać umowy handlowe do kanału, pozwala stosować ceny specyficzne dla kanałów.  
-2. Kliknij przycisk Nowy.
-3. W polu Grupy cenowe wpisz wartość.
-4. W polu Nazwa wpisz wartość.
-5. Kliknij przycisk Zapisz.
+1. W **okienku nawigacji** przejdź do **Moduły > Handel detaliczny i inny > Zarządzanie cenami i rabatami > Grupy cenowe > Wszystkie grupy cenowe**. Grupy cenowe służą przypisywaniu umów handlowych do określonych kanałów. Używanie grup cenowych, aby przypisać umowy handlowe do kanału, pozwala stosować ceny specyficzne dla kanałów.  
+2. Kliknij przycisk **Nowy**.
+3. W polu **Grupy cenowe** wpisz wartość.
+4. W polu **Nazwa** wpisz wartość.
+5. Kliknij przycisk **Zapisz**.
 6. Zamknij stronę.
-7. Wybierz kolejno opcje Handel detaliczny i inny > Kanały > Sklepy sieci sprzedaży > Wszystkie sklepy sieci sprzedaży.
+7. W **okienku nawigacji** kliknij kolejno opcje **Moduły > Handel detaliczny i inny > Kanały > Sklepy sieci sprzedaży > Wszystkie sklepy sieci sprzedaży**.
 8. Na liście wybierz opcję „Nowy Jork”.
-9. W okienku akcji kliknij pozycję Sklep.
-10. Kliknij opcję Grupy cenowe.
-11. Kliknij przycisk Nowy.
-12. W polu Grupy cenowe kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+9. W okienku akcji kliknij pozycję **Sklep**.
+10. Kliknij opcję **Grupy cenowe**.
+11. Kliknij przycisk **Nowy**.
+12. W polu **Grupy cenowe** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 13. Na liście znajdź i zaznacz odpowiedni rekord.
-14. Kliknij przycisk Zapisz.
+14. Kliknij przycisk **Zapisz**.
 15. Zamknij stronę.
 16. Zamknij stronę.
-17. Wybierz kolejno opcje Handel detaliczny i inny > Produkty i kategorie > Zwolnione produkty według kategorii.
+17. W **okienku nawigacji** przejdź do **Moduły > Handel detaliczny i inny > Produkty i kategorie > Zwolnione produkty według kategorii**.
 18. Na liście kliknij łącze w wybranym wierszu.
-19. Kliknij przycisk Edytuj.
-20. Przełącz rozwinięcie sekcji Sprzedaż.
-21. W polu Cena wpisz liczbę.
-    * Ta cena jest używana, gdy nie znaleziono żadnych umów handlowych mających zastosowanie.  
-22. Kliknij przycisk Zapisz.
-23. W okienku akcji kliknij pozycję Sprzedaż.
-24. Kliknij opcję Utwórz umowy handlowe.
-25. Kliknij przycisk Nowy.
-26. W polu Nazwa kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-27. Z listy wybierz pozycję „Handel detaliczny”.
-    * W danych demonstracyjnych arkusz o nazwie „Handel detaliczny” ma domyślną relację „Cena (sprzedaż)”. Oznacza to, że wszystkie nowo tworzone wiersze domyślnie są dla umów handlowych na cenę sprzedaży.  
-28. Kliknij przycisk Wiersze.
-29. W polu Kod konta wybierz opcję „Grupa”.
-30. W polu Wybór konta kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-31. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Zakończy to operację łączenia kanału z grupą cenową, a następnie grupy z umową handlową.  
-32. W polu Relacja towaru wpisz wartość.
-33. W polu Kwota w walucie wpisz liczbę.
-34. Zaznacz pole wyboru Znajdź następny lub usuń jego zaznaczenie.
-    * Jeśli opcja Znajdź następny jest ustawiona na wartość „Tak”, aparat kalkulacji cen będzie wyszukiwał odnośne umowy handlowe z niższą ceną sprzedaży. Jeśli opcja Znajdź następny jest ustawiony na „Nie”, aparat kalkulacji cen przestanie szukać i użyje bieżącej umowy handlowej.  
-35. Kliknij przycisk Księguj.
-36. Kliknij przycisk OK.
+19. Kliknij przycisk **Edytuj**.
+20. Rozwiń skróconą kartę **Sprzedaż**.
+21. W polu **Cena** wpisz liczbę. Ta cena jest używana, gdy nie znaleziono żadnych umów handlowych mających zastosowanie.  
+22. Kliknij przycisk **Zapisz**.
+23. W **Panelu akcji** kliknij **Sprzedaj**.
+24. Kliknij opcję **Utwórz umowy handlowe**.
+25. Kliknij przycisk **Nowy**.
+26. W polu **Nazwa** kliknij rozwijany przycisk, aby otworzyć wyszukiwanie.
+27. Z listy wybierz pozycję „Handel detaliczny”. W danych demonstracyjnych arkusz o nazwie „Handel detaliczny” ma domyślną relację „Cena (sprzedaż)”. Oznacza to, że wszystkie nowo tworzone wiersze domyślnie są dla umów handlowych na cenę sprzedaży.  
+28. W **okienku akcji** kliknij pozycję **Wiersze**.
+29. W polu **Kod konta** wybierz opcję „Grupa”.
+30. W polu **Wybór konta** kliknij rozwijany przycisk, aby otworzyć wyszukiwanie.
+31. Na liście znajdź i zaznacz odpowiedni rekord. Zakończy to operację łączenia kanału z grupą cenową, a następnie grupy z umową handlową.  
+32. W polu **Relacja produktu** wpisz wartość.
+33. W polu **Kwota w walucie** wpisz liczbę.
+34. W skróconej karcie **Szczegóły** zaznacz lub usuń zaznaczenie pola wyboru **Znajdź następny**. Jeśli opcja **Znajdź następny** jest ustawiona na wartość „Tak”, aparat kalkulacji cen będzie wyszukiwał odpowiednie umowy handlowe z niższą ceną sprzedaży. Jeśli opcja **Znajdź następny** jest ustawiony na „Nie”, aparat kalkulacji cen przestanie szukać i użyje bieżącej umowy handlowej.  
+35. Kliknij przycisk **Księguj**.
+36. Kliknij przycisk **OK**.
 37. Zamknij stronę.
-38. W okienku akcji kliknij pozycję Sprzedaż.
-39. Kliknij opcję Cena sprzedaży.
+38. W **okienku akcji** kliknij pozycję Sprzedaż.
+39. Kliknij opcję **Cena sprzedaży**.
 

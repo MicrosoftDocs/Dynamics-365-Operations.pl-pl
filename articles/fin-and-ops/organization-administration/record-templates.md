@@ -1,9 +1,9 @@
 ---
-title: Szablony rekordów
+title: Omówienie szablonów rekordów
 description: Ten artykuł zawiera wprowadzenie do koncepcji szablonów rekordów oraz wyjaśnienia, jak używać tych szablonów do tworzenia rekordów udostępniających informacje.
 author: pvillads
 manager: AnnBe
-ms.date: 08/18/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 426fd8fafec061b649cbb31109ffe8fabc24917d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 81a878fccf2b544ffe94edac2c7c41be78bade3f
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545684"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864751"
 ---
-# <a name="record-templates"></a>Szablony rekordów
+# <a name="record-templates-overview"></a>Omówienie szablonów rekordów
 
 [!include [banner](../includes/banner.md)]
 

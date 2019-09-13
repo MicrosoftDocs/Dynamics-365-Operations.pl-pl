@@ -1,9 +1,9 @@
 ---
-title: Konfiguracja produktu oparta na wymiarach
+title: Omówienie konfiguracji produktów opartych na wymiarach
 description: Konfiguracja produktu oparta na wymiarach to prosty sposób tworzenia wielu wariantów produktu z jednego produktu głównego i jego BOM.
 author: cvocph
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb2690ec5296f65430268a211108551348a4a060
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ca7e5555a242c10d2268182ed440e686a1dc46ad
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555961"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865359"
 ---
-# <a name="dimension-based-product-configuration"></a>Konfiguracja produktu oparta na wymiarach
+# <a name="dimension-based-product-configuration-overview"></a>Omówienie konfiguracji produktów opartych na wymiarach
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,9 +1,9 @@
 ---
 title: Rejestrowanie prowizji od sprzedaży
-description: W tej procedurze pokazano sposób obliczania i rejestrowania prowizji od sprzedaży.
+description: W tym temacie objaśniono sposób obliczania i rejestrowania prowizji od sprzedaży.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,61 +16,58 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4c0e63923d0cb9a4a2c2bed87cfb72edfb0d2741
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: db27255c74c55b10680594ad23424253e4c3f79e
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833913"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867060"
 ---
 # <a name="register-sales-commissions"></a>Rejestrowanie prowizji od sprzedaży
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób obliczania i rejestrowania prowizji od sprzedaży. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Przed rozpoczęciem tego przewodnika wykonaj przewodnik o nazwie „Konfigurowanie reguł dla prowizji od sprzedaży”, aby się upewnić, że wszystkie niezbędne obliczenia prowizji są skonfigurowane.
+W tym temacie objaśniono sposób obliczania i rejestrowania prowizji od sprzedaży. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Przed rozpoczęciem tego przewodnika wykonaj przewodnik o nazwie „Konfigurowanie reguł dla prowizji od sprzedaży”, aby się upewnić, że wszystkie niezbędne obliczenia prowizji są skonfigurowane.
 
 Zwróć uwagę na odbiorcę i numery towarów wybrane dla procesu naliczania prowizji i używaj ich, kiedy w przewodniku pojawi się monit o utworzenie zamówienia sprzedaży.
 
 
 ## <a name="invoice-a-sales-order-that-qualifies-a-salesperson-for-a-commission"></a>Fakturowanie zamówienia sprzedaży kwalifikującego sprzedawcę do prowizji
-1. Wybierz kolejno opcje Sprzedaż i marketing > Zamówienia sprzedaży > Wszystkie zamówienia sprzedaży.
-2. Kliknij przycisk Nowy.
-3. W polu Konto odbiorcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-4. Na liście znajdź i zaznacz odpowiedni rekord.
-5. Na liście kliknij łącze w wybranym wierszu.
-6. Kliknij przycisk OK.
-7. W okienku akcji kliknij pozycję Opcje.
-8. Kliknij przycisk Zmień widok.
-9. Kliknij opcję Widok nagłówka.
-10. Rozwiń sekcję Ustawienia.
-    * Wartość w polu Grupa sprzedaży reprezentuje grupę z przypisanym jednego lub więcej przedstawicielami handlowymi. Osoby w grupie są tymi, które otrzymają prowizję podczas fakturowania zamówienia, zgodnie ze wstępnie zdefiniowanymi stawkami i rozdziałem.   Wartość jest kopiowana z karty odbiorcy, ale w razie potrzeby można ją zmienić.  Grupa sprzedaży jest również kopiowana do wiersza zamówienia sprzedaży. Można ją zmienić, tak aby była inna niż podana w nagłówku i/lub różniła się między wierszami.  
-    * Wartość w polu Grupa prowizji reprezentuje grupę utworzoną dla jednego lub więcej odbiorców w celu śledzenia prowizji.   Wartość jest kopiowana z karty odbiorcy, ale w razie potrzeby można ją zmienić.   
-11. W okienku akcji kliknij pozycję Opcje.
-12. Kliknij przycisk Zmień widok.
-13. Kliknij opcję Widok wiersza.
-14. W polu Numer towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-15. Na liście zaznacz towar, który skonfigurowano dla prowizji. 
-16. Wprowadź liczbę w polu Ilość.
-    * Zwróć uwagę na kwotę netto w wierszu. Reprezentuje ona przychody ze sprzedaży, które w tym przykładzie są podstawą do obliczania prowizji.  
-17. Kliknij przycisk Zapisz.
-18. W okienku akcji kliknij pozycję Faktura.
-19. Kliknij opcję Faktura.
-20. Rozwiń sekcję Parametry.
-21. W polu Ilość zaznacz opcję Wszystko.
-22. W polu Księgowanie wybierz opcję Tak.
-23. Kliknij przycisk OK.
-24. Kliknij przycisk OK.
-    * Zaksięgowanie transakcji może zająć ok. minutę. Poczekaj na zakończenie przetwarzania — nie zamykaj w tym czasie strony.  
+1. W okienku nawigacji przejdź do **Moduły > Sprzedaż i marketing >Wszystkie zamówienia sprzedaży**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Konto odbiorcy** wybierz odpowiedni rekord z menu rozwijanego.
+4. Kliknij przycisk **OK**.
+5. W okienku akcji kliknij pozycję **Opcje**.
+6. Wybierz **Zmień widok**.
+7. Wybierz **Widok nagłówka**.
+8. Rozwiń sekcję **Ustawienia**.
+
+    - Wartość w polu **Grupa sprzedaży** reprezentuje grupę z przypisanym jednym lub więcej przedstawicielami handlowymi. Osoby w grupie są tymi, które otrzymają prowizję podczas fakturowania zamówienia, zgodnie ze wstępnie zdefiniowanymi stawkami i rozdziałem.   
+    - Wartość jest kopiowana z karty odbiorcy, ale w razie potrzeby można ją zmienić.  
+    - Grupa sprzedaży jest również kopiowana do wiersza zamówienia sprzedaży. Można ją zmienić, tak aby była inna niż podana w nagłówku i/lub różniła się między wierszami.  
+    - Wartość w polu **Grupa prowizji** reprezentuje grupę utworzoną dla jednego lub więcej odbiorców w celu śledzenia prowizji.   
+    - Wartość jest kopiowana z karty odbiorcy, ale w razie potrzeby można ją zmienić.   
+
+9. W okienku akcji kliknij pozycję **Opcje**.
+10. Wybierz **Zmień widok**.
+11. Wybierz **Widok wiersza**.
+12. W menu rozwijanym pola **Kod towaru** wybierz towar skonfigurowany dla prowizji. 
+13. W polu **Ilość** wpisz liczbę. Zwróć uwagę na kwotę netto w wierszu. Reprezentuje ona przychody ze sprzedaży, które w tym przykładzie są podstawą do obliczania prowizji.  
+14. Wybierz opcję **Zapisz**.
+15. W okienku akcji kliknij pozycję **Faktura**.
+16. Wybierz **Faktura**.
+17. Rozwiń sekcję **Parametry**.
+18. W polu **Ilość** zaznacz opcję **Wszystko**.
+19. W polu **Księgowanie** wybierz opcję **Tak**.
+20. Wybierz **OK**, a następnie kliknij przycisk **OK** w następnym okienku. Zaksięgowanie transakcji może zająć ok. minutę. Poczekaj na zakończenie przetwarzania — nie zamykaj w tym czasie strony.  
 
 ## <a name="review-the-registered-sales-commissions"></a>Przegląd zarejestrowanych prowizji od sprzedaży
-1. W okienku akcji kliknij pozycję Faktura.
-2. Kliknij opcję Faktura.
-3. W okienku akcji kliknij pozycję Faktura.
-4. Kliknij opcję Transakcje prowizji.
-    * Na karcie Przegląd są wyświetlane wiersze reprezentujące kwoty prowizji należne przedstawicielom handlowym skojarzonym z fakturowanym zamówieniem sprzedaży. Przyjrzyjmy się szczegółom.     
-    * Jeśli użyto przewodnika „Konfigurowanie reguł dla prowizji od sprzedaży” w celu skonfigurowania grupy prowizji sprzedaży, istnieje dwoje sprzedawców, którzy otrzymają prowizje od sprzedaży, a prowizja jest dzielona równo między nich.  
-    * W tym przykładzie suma prowizji jest obliczana jako procent przychodu ze sprzedaży (kwota netto wiersza zamówienia).   
-5. Zamknij stronę.
-6. Kliknij opcję Załącznik.
-    * Można przejrzeć transakcje załącznika dla kwot prowizji, które zostały zaksięgowane na wstępnie zdefiniowanych kontach wydatków z tytułu prowizji i należnych prowizji.  
+1. W okienku akcji wybierz opcję **Faktura**, a następnie ponownie wybierz opcję **Faktura**.
+2. W okienku akcji wybierz opcję **Faktura**, a następnie wybierz opcję **Transakcje prowizji**.
+
+    - Na karcie **Przegląd** są wyświetlane wiersze reprezentujące kwoty prowizji należne przedstawicielom handlowym skojarzonym z fakturowanym zamówieniem sprzedaży. Przyjrzyjmy się szczegółom.  
+    - Jeśli użyto przewodnika „Konfigurowanie reguł dla prowizji od sprzedaży” w celu skonfigurowania grupy **prowizji sprzedaży**, istnieje dwoje sprzedawców, którzy otrzymają prowizje od sprzedaży, a prowizja jest dzielona równo między nich.  
+    - W tym przykładzie suma prowizji jest obliczana jako procent przychodu ze sprzedaży (kwota netto wiersza zamówienia).  
+3. Zamknij stronę.
+4. Wybierz **Załącznik**. Można przejrzeć transakcje załącznika dla kwot prowizji, które zostały zaksięgowane na wstępnie zdefiniowanych kontach wydatków z tytułu prowizji i należnych prowizji.  
 

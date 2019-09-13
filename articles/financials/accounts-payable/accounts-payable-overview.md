@@ -1,9 +1,9 @@
 ---
-title: Konfigurowanie modułu Rozrachunki z dostawcami
+title: Omówienie konfiguracji Zobowiązań
 description: Ten artykuł zawiera opis stron, które służą do konfigurowania podstawowych i opcjonalnych funkcji modułu Rozrachunki z dostawcami w Microsoft Dynamics 365 for Finance and Operations. Opisano również kroki konfiguracji, które należy wykonać przed rozpoczęciem konfigurowania modułu Rozrachunki z dostawcami.
 author: abruer
 manager: AnnBe
-ms.date: 08/08/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8642b27f222ed080539e63b0608a52aefbe64e8
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ce2caf8df871ee8f577b3a1af9d71244a1dc4694
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837477"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864997"
 ---
-# <a name="configure-accounts-payable"></a>Konfigurowanie modułu Rozrachunki z dostawcami
+# <a name="configure-accounts-payable-overview"></a>Omówienie konfiguracji Zobowiązań
 
 [!include [banner](../includes/banner.md)]
 

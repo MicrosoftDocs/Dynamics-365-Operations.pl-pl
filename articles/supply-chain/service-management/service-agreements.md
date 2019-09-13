@@ -1,9 +1,9 @@
 ---
-title: Umowy serwisowe
+title: Omówienie opracowania i ustanawiania przeglądów umów serwisowych
 description: Umowy serwisowe pozwalają definiować zasoby, które mają być używane podczas typowej wizyty serwisowej, i sposób fakturowania tych zasobów dla klienta.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/19/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6425dcf1c89f625d997be0dd4a52aaecb6e6d65
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ae7c3b6e1df9751d886f6eeff778e8045bd7df85
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568288"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865952"
 ---
-# <a name="service-agreements"></a>Umowy serwisowe
+# <a name="develop-and-establish-service-agreements-overview"></a>Omówienie opracowania i ustanawiania przeglądów umów serwisowych
 
 [!include [banner](../includes/banner.md)]
 

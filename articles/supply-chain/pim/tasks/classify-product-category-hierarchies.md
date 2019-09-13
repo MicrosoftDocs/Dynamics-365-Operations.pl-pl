@@ -1,9 +1,9 @@
 ---
 title: Klasyfikowanie produktu przy użyciu hierarchii kategorii
-description: Hierarchie kategorii służą do klasyfikowania produktów na potrzeby eksportu, zaopatrzenia, sprzedaży lub innych celów.
+description: W tym temacie opisano sposób klasyfikowania produktu przy użyciu hierarchii kategorii.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/26/2016
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,29 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59c74ff34fde9064c54f8e6e6c4717df83680fae
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f0d3a69de8999d106818e187f8ffe6181e90aea0
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568680"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866959"
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Klasyfikowanie produktu przy użyciu hierarchii kategorii
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Hierarchie kategorii służą do klasyfikowania produktów na potrzeby eksportu, zaopatrzenia, sprzedaży lub innych celów. To zadanie jest zwykle wykonywane przez menedżera produktu. W przykładzie użyto numeru produktu M0009 z danych firmy demonstracyjnej USMF.
+W tym temacie opisano sposób klasyfikowania produktu przy użyciu hierarchii kategorii. Hierarchie kategorii służą do klasyfikowania produktów na potrzeby eksportu, zaopatrzenia, sprzedaży lub innych celów. To zadanie jest zwykle wykonywane przez menedżera produktu. W przykładzie użyto numeru produktu M0009 z danych firmy demonstracyjnej USMF.
 
-1. Kliknij pozycję Obsługa zwolnionego produktu.
-2. Kliknij opcję Wszystkie zwolnione produkty.
+1. Wybierz **Obsługa zwolnionego produktu**.
+2. Wybierz **Wszystkie zwolnione produkty**.
 3. Na liście znajdź i zaznacz odpowiedni rekord.
-4. W okienku akcji kliknij pozycję Produkt.
-5. Kliknij kategorie produktów.
-6. Kliknij przycisk Nowy.
-7. W polu Hierarchia kategorii wprowadź lub wybierz wartość.
-8. W polu Kategoria wprowadź lub wybierz wartość.
-9. Kliknij przycisk Nowy.
-10. W polu Hierarchia kategorii wprowadź lub wybierz wartość.
-11. W polu Kategoria wprowadź lub wybierz wartość.
+4. W okienku akcji wybierz pozycję **Produkt**.
+5. Wybierz **Kategorie produktów**.
+6. Wybierz pozycję **Nowy**.
+7. W polu **Hierarchia kategorii** wprowadź lub wybierz wartość.
+8. W polu **Kategoria** wprowadź lub wybierz wartość.
+9. Wybierz pozycję **Nowy**.
+10. W polu **Hierarchia kategorii** wprowadź lub wybierz wartość.
+11. W polu **Kategoria** wprowadź lub wybierz wartość.
 12. Zamknij stronę.
 
