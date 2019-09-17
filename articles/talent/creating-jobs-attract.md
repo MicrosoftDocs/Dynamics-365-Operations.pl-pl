@@ -3,7 +3,7 @@ title: Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract
 description: W tym temacie opisano elementy funkcji w aplikacji Attract. Ponadto wyjaśniono, jak utworzyć funkcję.
 author: hasrivas
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 07/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
+ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518824"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "1773270"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract
+# <a name="create-a-job"></a>Tworzenie funkcji
 
 [!include [banner](includes/banner.md)]
 
@@ -81,34 +81,7 @@ Aby uzyskać więcej informacji o ofertach pracy, zobacz [Funkcjonalność witry
 > [!NOTE]
 > Funkcjonalność ofert pracy jest dostępna tylko po zainstalowaniu dodatku kompleksowej obsługi rekrutacji dla aplikacji Attract.
 
-### <a name="posting-jobs-to-linkedin"></a>Publikowanie ofert pracy w serwisie LinkedIn 
-
-Przed opublikowaniem oferty pracy z Attract w LinkedIn, administrator musi dodać nazwę Identyfikatora firmy LinkedIn i nazwę firmy LinkedIn w **ustawienia administratora**. Identyfikator firmy LinkedIn jest wymagany, aby oferty publikowane z Attract były mapowane na odpowiednią stronę firmy.
-
-Identyfikator firmy LinkedIn to ciąg liczb, które jednoznacznie identyfikują Twoją firmę na LinkedIn. Więcej informacji o tym, jak znaleźć swój identyfikator firmy na LinkedIn znajduje się na stronie [LinkedIn](https://aka.ms/findID).
-
-Aby zaktualizować firmę LinkedIn, wybierz **Centrum administracyjne** w menu **ustawienia** (symbol koła zębatego), a następnie wybierz kartę **integracji LinkedIn** . W obszarze **łączenie z LinkedIn** wprowadź identyfikator i nazwę LinkedIn firmy, a następnie zapisz te ustawienia.
-
-> [!NOTE]
-> Istnieją cztery ważne zagadnienia, o których należy pamiętać w procesie publikowania zadania w portalu LinkedIn.
-> 1. Zadania opublikowane w LinkedIn są księgowane jako zadania "Ograniczona oferta”. Zadania z ograniczoną ofertą nie mogą być promowane w witrynie LinkedIn. Jeśli chcesz promować zadania z ograniczoną ofertą opublikowane w LinkedIn z aplikacji Attract, musisz skontaktować się z LinkedIn, aby włączyć „Zawijanie zadań". Zobacz poniższe łącza i skontaktuj się z obsługą LinkedIn, aby uzyskać więcej szczegółów.
->
->    [Miejsca na zadania z ograniczoną oferta a miejsca na zadania premium w kontekście zawijania zadań](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
->
->    [Zawijanie zadań, FAQ](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
->
-> 1. W przypadku publikowania zadań w LinkedIn, aplikacja Attract przekazuje nazwę organizacji Microsoft 365 skojarzoną z tym zadaniem. LinkedIn łączy zadania z firmą po stronie LinkedIn na podstawie przekazanej nazwy organizacji. Jeśli Twoje zadanie zostanie wystawione w LinkedIn w połączeniu z niewłaściwą firmą, sprawdź czy Twoja nazwa organizacji 365 Microsoft pasuje do nazwy firmy w LinkedIn.  
->
->    [Zmienianie adresu kontaktowego i więcej](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
->
->    Jeśli masz problemy po wykonaniu tego kroku, skontaktuj się z obsługą LinkedIn. 
-> 
-> 1. Oferty pracy publikowane na LinkedIn są wyświetlane od razu na oficjalnej stronie LinkedIn. Nie ma żadnego środowiska testowego dla publikowania ofert pracy na LinkedIn. 
->
-> 1. Może to potrwać do 24 godzin, aby zadania opublikowane w LinkedIn były widoczne dla kandydatów w ramach w LinkedIn; ma to związek z obecnym procesem przetwarzania zadań wsadowych przez LinkedIn.
-
-
-## <a name="activate"></a>Uaktywnij
+## <a name="activate"></a>Uaktywnianie
 
 Po uaktywnieniu funkcji można ją opublikować oraz dodawać do niej prospektów i kandydatów. Opcję dodawania prospektów do funkcji ustawia się w działaniu Prospekt w procesie rekrutacji.
 
@@ -142,7 +115,7 @@ Jeśli użytkownik dokona edycji oferty po jej zatwierdzeniu, ale nie aktywowani
 Osoby wyświetlane jako osoby zatwierdzające otrzymają powiadomienie w aplikacji Attract i e-mailem informujące, że mają pozycję do zatwierdzenia.  W wiadomości e-mail osoby zatwierdzające mogą kliknąć łącze, aby otworzyć stanowisko, przejrzeć szczegóły, a następnie zatwierdzić lub odrzucić. Po ustawieniu stanu oferty pracy jako **zatwierdzona** lub **odrzucona**, osoba przesyłająca zostanie powiadomiona w Attract i otrzyma wiadomość e-mail. Ponadto osoby zatwierdzające otrzymają przypomnienia e-mailem, jeśli nie odpowiedzą na żądanie zatwierdzenia w ciągu 24 godzin.
 
 > [!NOTE]
-> Można utworzyć szablony wiadomości e-mail niestandardowej dla wiadomości dotyczących zatwierdzeń. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów e-mail i zarządzanie nimi ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
+> Można utworzyć szablony wiadomości e-mail niestandardowej dla wiadomości dotyczących zatwierdzeń. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów e-mail i zarządzanie nimi ](https://docs.microsoft.com/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Tworzenie stanowiska
 

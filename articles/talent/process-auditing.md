@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 803c935493a4080b8c1d0ef92bbe7db601f3ca03
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 448fceccb507bec5b60b686043a303c1997a9ac0
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518836"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742682"
 ---
 # <a name="track-changes-in-recruiting-data"></a>Śledzenie zmian w danych dotyczących rekrutacji
 
 Można śledzić zmiany wprowadzone do kandydatów, otwartych zadań lub zgłoszeń o pracę, korzystając z funkcji przetwarzania inspekcji. Jest to przydatne w przypadku raportowania i zgodności.
 
-Można wyświetlić śledzone dane w Power BI za pomocą łącznika OData. Aby uzyskać więcej informacji, zobacz [łączenie ze źródłami danych OData w systemie Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata).
+Można wyświetlić śledzone dane w Power BI za pomocą łącznika OData. Aby uzyskać więcej informacji, zobacz [łączenie ze źródłami danych OData w systemie Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-connect-odata).
 
 ## <a name="track-changes"></a>Śledzenie zmian
 Aby skonfigurować śledzenie zmian w danych dotyczących rekrutacji, wykonaj następujące kroki:

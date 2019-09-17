@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620627"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741759"
 ---
 # <a name="intelligent-recommendations"></a>Inteligentne rekomendacje
 
@@ -32,7 +32,7 @@ ms.locfileid: "1620627"
 Aparat uczenia maszynowego może pomagać osobom rekrutującym i menedżerom zatrudniającym w szybkim identyfikowaniu najlepszych kandydatów na określone stanowiska. Może także pomagać prospektom znajdować stanowiska, które najlepiej pasują do ich profilu i zainteresowań. Wraz z używaniem tych funkcji i przekazywaniem informacji zwrotnych jakość rekomendacji będzie się poprawiać.
 
 > [!NOTE] 
-> - Funkcje inteligentnych rekomendacji są dostępne tylko po zainstalowaniu [dodatku kompleksowej obsługi rekrutacji](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Funkcje inteligentnych rekomendacji są dostępne tylko po zainstalowaniu [dodatku kompleksowej obsługi rekrutacji](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 > - Funkcje wymienione w tym temacie są dostępne w ramach wydania wersji zapoznawczej. Zawartość i funkcje mogą ulec zmianie. Aby użyć tej funkcji, poproś administratora o włączenie jej za pomocą opcji **Centrum administracyjne** w Attract. Ustaw parametry **Rekomendacja kandydata**, **Rekomendacja funkcji** i **Rekomendacja prospektów** jako **Wł**. Aby uzyskać więcej informacji, zobacz [Dostęp do funkcji w wersji zapoznawczej w aplikacji Talent](./access-preview-feature.md). 
 
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518875"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741897"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (5 marca 2019 r.)
 
@@ -43,10 +43,10 @@ W Attract jest wiele pól będących zestawami opcji w Common Data Service. Wpro
 ## <a name="changes-in-onboarding"></a>Zmiany we wdrażaniu do pracy
 
 ### <a name="private-preview-for-onboard-teams"></a>Podgląd prywatny zespołów wdrażania do pracy
-Teraz można łatwo udostępniać i współpracować w szablonach w całej organizacji. Aby uzyskać więcej informacji, zobacz [udostępnienia najlepszych praktyk w całej organizacji przy pomocy zespołów wdrażania do pracy](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
+Teraz można łatwo udostępniać i współpracować w szablonach w całej organizacji. Aby uzyskać więcej informacji, zobacz [udostępnienia najlepszych praktyk w całej organizacji przy pomocy zespołów wdrażania do pracy](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
 
 ### <a name="private-preview-for-assignee-placeholders"></a>Prywatny podgląd symboli zastępczych wykonawcy
-Szablony można wzbogacać przez przypisanie działania do ról, a nie osobom. Role są następnie przypisywane do osób w momencie utworzenia przewodnika. Aby uzyskać więcej informacji, zobacz [tworzenie Przewodnika po administracji przez przypisanie działania do ról](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
+Szablony można wzbogacać przez przypisanie działania do ról, a nie osobom. Role są następnie przypisywane do osób w momencie utworzenia przewodnika. Aby uzyskać więcej informacji, zobacz [tworzenie Przewodnika po administracji przez przypisanie działania do ról](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
 
 ## <a name="changes-in-core-hr"></a>Zmiany w Core HR
 **Kompilacja 8.1.2178**
@@ -71,7 +71,7 @@ Wraz z tą zmianą, podczas żądania zmiany istniejących stanowisk, pola listy
 Inne niewielkie poprawki są dołączone do tej wersji.
 
 ### <a name="upgrade-to-common-data-service"></a>Uaktualnianie do rozwiązania Common Data Service
-Zbliżają się terminy uaktualniania do Common Data Service dla aplikacji. Zaloguj się do Centrum administracyjnego usługi PowerApps, aby określić, czy baza danych wymaga uaktualnienia. Aby uzyskać więcej informacji dotyczących terminów i niezbędne kroki w celu uaktualnienia, zobacz [uaktualnienia do Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Zbliżają się terminy uaktualniania do Common Data Service dla aplikacji. Zaloguj się do Centrum administracyjnego usługi PowerApps, aby określić, czy baza danych wymaga uaktualnienia. Aby uzyskać więcej informacji dotyczących terminów i niezbędne kroki w celu uaktualnienia, zobacz [uaktualnienia do Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Wkrótce
 
@@ -79,4 +79,4 @@ Zbliżają się terminy uaktualniania do Common Data Service dla aplikacji. Zalo
 W wielu organizacjach menedżerowie ds. wynagrodzeń i świadczeń mają dostęp tylko do określonych rekordów wynagrodzeń, takich jak rekordy dla kadry zarządzającej i pracowników regionalnych. W przypadku tej zmiany można zarządzać różnymi planami wynagrodzeń dla różnych grup pracowników w organizacji. Stałe i zmienne plany mogą mieć przypisane role zabezpieczeń, które będą określały dostęp do planów i danych pracowników związanych z planami, takich jak rekordy płac i premii. Tylko role z danym dostępem mogą przetwarzać wynagrodzenia dla tych pracowników.
 
 ###  <a name="platform-update-24"></a>Aktualizacja platformy Update 24
-Aby uzyskać dodatkowe szczegółowe informacje dotyczące Platform update 24, zobacz [nowe lub zmienione funkcje w Platform update 24 Finance and Operations (2019 marca)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Aby uzyskać dodatkowe szczegółowe informacje dotyczące Platform update 24, zobacz [nowe lub zmienione funkcje w Platform update 24 Finance and Operations (2019 marca)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

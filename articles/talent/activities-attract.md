@@ -1,9 +1,9 @@
 ---
-title: Działania w procesach
-description: Ten temat zawiera informacje o różnych typach działań, których można używać w procesie rekrutacji.
+title: Działania w procesach w Microsoft Dynamics 365 for Talent - Attract
+description: Ten temat zawiera informacje o różnych typach działań, których można używać w procesie rekrutacji w aplikacji Microsoft Dynamics 365 for Talent - Attract.
 author: hasrivas
 manager: AnnBe
-ms.date: 04/10/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c975b95e4195c795ec4c816b1f3a50461715feea
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518874"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739729"
 ---
-# <a name="activities-in-the-hiring-processes"></a>Działania w procesach rekrutacji
+# <a name="activities-in-hiring-processes"></a>Działania w procesach rekrutacji
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,6 +37,9 @@ Działania można dodawać jako część procesu rekrutacji w programie Microsof
 ## <a name="prospect-activity"></a>Działanie Prospekt
 
 Działanie Prospekt kontroluje, czy do funkcji można dodawać prospektów. Domyślnie można dodać prospektów do funkcji. Aby wyłączyć działanie Prospekt, ustaw w opcji **Włącz prospektów** wartość **Wyłączone**. Gdy działanie Prospekt jest włączone, menedżerowie zatrudniający mogą dodawać i przeglądać prospekty, a karta **Prospekt** jest wyświetlana w ustawieniach funkcji.
+
+> [!NOTE]
+> Aby zezwolić na dodawanie kandydatów do zadania z serwisu LinkedIn, należy określić opcję **Włącz prospekty** jako **Włączona**.
 
 ## <a name="application-activity"></a>Działanie Zgłoszenie
 

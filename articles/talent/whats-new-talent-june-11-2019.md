@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 42b9541b152d2a6daa1dbf95ecf30a2f51eb36f3
-ms.sourcegitcommit: 31a918d357a7182f3870713a9c4455bd5c44cd58
+ms.openlocfilehash: a1413ea43e852c78ede227b69c0f49c07944a872
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "1634487"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741631"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-11-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (11 czerwiec 2019)
 
@@ -76,9 +76,9 @@ Jednostka Grupy zadań została dodana.
 
 ### <a name="preview-features-will-be-enabled-only-in-sandbox-environments"></a>Funkcje wersji Preview będą włączone tylko w środowiskach piaskownicy
 
-Aby uzyskać więcej informacji o publikowaniu zmian, zapoznaj się z tematem [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Aby uzyskać więcej informacji o publikowaniu zmian, zapoznaj się z tematem [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
-Podczas zastrzegania nowej instancji talentów można wskazać, czy typem wystąpienia jest Produkcja, czy Piaskownica - środowisko testowe. Typ instancji Piaskownica umożliwia wczesne testowanie nowych funkcji. Wszystkie istniejące wystąpienia aplikacji Talent zostaną zaktualizowane do typu wystąpienia **Produkcja**. Jeśli chcesz, aby jedno z istniejących wystąpień zostało zaktualizowane do typu wystąpienia **Piaskownica**, skontaktuj się z [pomocą techniczną](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support), aby zainicjować żądanie zmiany.
+Podczas zastrzegania nowej instancji talentów można wskazać, czy typem wystąpienia jest Produkcja, czy Piaskownica - środowisko testowe. Typ instancji Piaskownica umożliwia wczesne testowanie nowych funkcji. Wszystkie istniejące wystąpienia aplikacji Talent zostaną zaktualizowane do typu wystąpienia **Produkcja**. Jeśli chcesz, aby jedno z istniejących wystąpień zostało zaktualizowane do typu wystąpienia **Piaskownica**, skontaktuj się z [pomocą techniczną](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support), aby zainicjować żądanie zmiany.
 
 ### <a name="restrict-the-leave-types-in-time-off-requests"></a>Ograniczanie typów urlopu we wnioskach o czas wolny
 

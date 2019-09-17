@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 97d44dc034cb8097fc0ecf9ac4e485425f097102
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 96119ca869cbbb15ed8d8d5d0fe3b0f94b5f36cc
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518797"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742849"
 ---
 # <a name="cant-create-an-environment-in-the-powerapps-admin-center"></a>Nie można utworzyć środowiska w centrum administracyjnym usługi PowerApps
 
@@ -45,4 +45,4 @@ Upewnij się, że administrator dzierżawy ma przypisaną prawidłową licencję
 Należy zwrócić uwagę, że różne wersje SKU pakietu Microsoft Office także zapewniają to prawo, wraz z autonomicznymi jednostkami SKU PowerApps Plan 2 Istotne jest to, że jedna z tych jednostek SKU musi występować.
 
 1. Przejdź do [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
-2. Utwórz środowiska, postępując zgodnie z instrukcjami w [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+2. Utwórz środowiska, postępując zgodnie z instrukcjami w [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).

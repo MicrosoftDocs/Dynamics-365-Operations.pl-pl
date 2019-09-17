@@ -18,26 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: ebc82ada31d2803800358cd9aecfe389ada8f0dc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2cfa180f992a4f7a9b2e21e0fb3e0845c7546c94
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518868"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742730"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>Śledzenie źródeł profilów i zgłoszeń kandydatów 
+# <a name="track-candidate-sources"></a>Śledzenie źródeł kandydatów
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE] 
-> Funkcje wymienione w tym temacie są dostępne w ramach wydania wersji zapoznawczej. Zawartość i funkcje mogą ulec zmianie. Aby użyć tej funkcji, poproś administratora o włączenie jej za pomocą **ustawień administratora** w Attract. W przyszłej wersji będą dostępne raporty ze śledzenia źródła. Aby uzyskać więcej informacji, zobacz [Dostęp do funkcji w wersji zapoznawczej w aplikacji Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature).
+> Funkcje wymienione w tym temacie są dostępne w ramach wydania wersji zapoznawczej. Zawartość i funkcje mogą ulec zmianie. Aby użyć tej funkcji, poproś administratora o włączenie jej za pomocą **ustawień administratora** w Attract. W przyszłej wersji będą dostępne raporty ze śledzenia źródła. Aby uzyskać więcej informacji, zobacz [Dostęp do funkcji w wersji zapoznawczej w aplikacji Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 Gdy kandydaci zgłaszają się do pracy na stanowisku, Attract automatycznie śledzi źródła ich aplikacji, zapewniając cenne informacje, które pomagają w procesie rekrutacji. Osoby prowadzące rekrutację i menedżerowie zatrudniający mogą także wybrać źródła aplikacji, dodając ręcznie kandydata do stanowiska lub puli umiejętności i kandydatów.
 
 Można wyświetlić źródło aplikacji w szczegółach działań aplikacji na karcie **działania**, a także w historii aplikacji w obszarze **profilu** w pulach umiejętności i kandydatów. Można znaleźć źródło profilu kandydata w szczegółach kandydata na karcie **profil** zarówno w aplikacjach, jak i pulach umiejętności i kandydatów.
 
 > [!NOTE] 
-> Szablony procesów są dostępne po zainstalowaniu [dodatku kompleksowej obsługi rekrutacji](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> Szablony procesów są dostępne po zainstalowaniu [dodatku kompleksowej obsługi rekrutacji](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 
 ## <a name="pre-configured-sources"></a>Wstępnie skonfigurowane źródła
 
@@ -93,7 +93,7 @@ Domyślna lista źródeł zawiera wspólne źródła aplikacji. Niektóre typy �
 
 ## <a name="customize-the-source-list"></a>Dostosowywanie listy źródłowej 
 
-Można rozszerzyć listy źródłowe, aby uwzględnić dodatkowe źródła aplikacji. Aby dostosować tę listę, postępuj zgodnie z instrukcjami w [Rozszerzanie zestawów opcji w Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Edytuj jednostkę **źródła talentu**, aby uwzględnić dodatkowe źródła. 
+Można rozszerzyć listy źródłowe, aby uwzględnić dodatkowe źródła aplikacji. Aby dostosować tę listę, postępuj zgodnie z instrukcjami w [Rozszerzanie zestawów opcji w Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Edytuj jednostkę **źródła talentu**, aby uwzględnić dodatkowe źródła. 
 
 Aby uniknąć negatywnych skutków w interfejsie użytkownika, nie edytuj i nie usuwaj wartości wyliczanych atrybutu **kategoria talentu** (nie nazw) dla następujących pozycji:
 

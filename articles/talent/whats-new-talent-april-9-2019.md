@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 25ef0d49c2600833aefa84d404e00c0c57cfbf52
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4959f28e0768d43f90a664022c714a126c88e38d
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518813"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856431"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-9-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (9 kwietnia 2019)
 
@@ -37,10 +37,10 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics
 W Attract i Onboard problemy zarejestrowane przez użytkowników końcowych za pośrednictwem zgłaszania problemu teraz automatycznie tworzą problemy pomocy technicznej w projekcie LCS odbiorcy. Administratorzy mogą następnie sklasyfikować problemy i przesłać je do firmy Microsoft, w razie potrzeby. Jest to zgodne ze sposobem obsługi problemów użytkownika końcowego w Core HR.
 
 ### <a name="relevance-search"></a>Wyszukiwanie wg stopnia zgodności
-W pulach umiejętności i kandydatów można teraz przeszukiwać całą bazę kandydatów pod kątem konkretnych kwalifikacji, nazwisk lub wykształcenia. Nie musisz już określać, którą część profilu kandydata chcesz przeszukać. Attract przeszukuje cały profil i podświetla wszystkie znalezione trafienia. Ponadto Attract przeszukuje wszystkie dostępne dokumenty na temat kandydata i inteligentnie ocenia wyniki wyszukiwania. Ponadto można filtrować wyniki według źródła lub czy są one srebrnymi medalistami. Aby uzyskać więcej informacji, zobacz [wyszukiwanie i wyświetlanie profili kandydatów](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
+W pulach umiejętności i kandydatów można teraz przeszukiwać całą bazę kandydatów pod kątem konkretnych kwalifikacji, nazwisk lub wykształcenia. Nie musisz już określać, którą część profilu kandydata chcesz przeszukać. Attract przeszukuje cały profil i podświetla wszystkie znalezione trafienia. Ponadto Attract przeszukuje wszystkie dostępne dokumenty na temat kandydata i inteligentnie ocenia wyniki wyszukiwania. Ponadto można filtrować wyniki według źródła lub czy są one srebrnymi medalistami. Aby uzyskać więcej informacji, zobacz [wyszukiwanie i wyświetlanie profili kandydatów](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
 
 ### <a name="prospect-recommendations"></a>Rekomendacja prospektów
-Attract pomoże uruchomić poszukiwanie kandydata na stanowisko, gdy tylko aktywujesz tę funkcję, podając inteligentne rekomendacje z bazy danych kandydatów Twojej organizacji. Zalecenia uwzględniają umiejętności i wykształcenie określone podczas wyszukiwania odpowiednich prospektów. Zalecenia te pojawiają się na karcie **prospektów** w obszarze stanowiska, jeśli ta funkcja zostanie włączona podczas procesu zatrudniania na stanowisko. Aby uzyskać więcej informacji, zobacz [Rekomendacje dotyczące prospektów](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
+Attract pomoże uruchomić poszukiwanie kandydata na stanowisko, gdy tylko aktywujesz tę funkcję, podając inteligentne rekomendacje z bazy danych kandydatów Twojej organizacji. Zalecenia uwzględniają umiejętności i wykształcenie określone podczas wyszukiwania odpowiednich prospektów. Zalecenia te pojawiają się na karcie **prospektów** w obszarze stanowiska, jeśli ta funkcja zostanie włączona podczas procesu zatrudniania na stanowisko. Aby uzyskać więcej informacji, zobacz [Rekomendacje dotyczące prospektów](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
 
 ### <a name="interviewer-availability-statuses"></a>Stan dostępności osoby przeprowadzającej rozmowę kwalifikacyjną
 Osoby planujące rozmowy kwalifikacyjne będą mogły wkrótce wyświetlać stany **Poza biurem, pracuje w innym miejscu** osób przeprowadzających rozmowy kwalifikacyjne, co jest pomocne w planowaniu terminów rozmów z kandydatami.

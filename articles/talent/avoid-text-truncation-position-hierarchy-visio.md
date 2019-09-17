@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 87d1c1994b14fac45fa305a9223ed45ee363a70c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 07a972bc1c6dd4076932248edb314992cb7297e5
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518804"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741828"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Zapobieganie obcinaniu tekstu w hierarchii stanowisk i eksportowanie do programu Visio
 
@@ -40,7 +40,7 @@ Jest to celowe.
 
 **Rozdzielczość**
 
-Niestety użytkownicy nie mogą łatwo zmieniać rozmiaru tekstu. Można jednak wyeksportować hierarchię stanowisk poza Talent i następnie zaimportować ją do programu Microsoft Visio. Mimo że następujący artykuł został napisany dla systemu Microsoft Dynamics AX 2012, proces można zastosować do opcji Talent: [eksportowanie hierarchii stanowisk do programu Microsoft Visio](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
+Niestety użytkownicy nie mogą łatwo zmieniać rozmiaru tekstu. Można jednak wyeksportować hierarchię stanowisk poza Talent i następnie zaimportować ją do programu Microsoft Visio. Mimo że następujący artykuł został napisany dla systemu Microsoft Dynamics AX 2012, proces można zastosować do opcji Talent: [eksportowanie hierarchii stanowisk do programu Microsoft Visio](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
 
 Wykonaj następujące kroki, aby wyeksportować do programu Visio.
 
@@ -56,7 +56,7 @@ Wykonaj następujące kroki, aby wyeksportować do programu Visio.
 
     ![Okno dialogowe Eksportuj do programu Excel](media/export-excel.png)
 
-4. W programie Visio zaznacz **Visio — Utwórz nowy**i wybierz kategorię szablonu **Służbowy**.
+4. W programie Visio zaznacz **Visio — Utwórz nowy** i wybierz kategorię szablonu **Służbowy**.
 
     ![Nowy diagram](media/new.png)
 
