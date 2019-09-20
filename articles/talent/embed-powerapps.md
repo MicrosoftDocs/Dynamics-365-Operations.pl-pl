@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e3b20e1d0a873c32b8f6f5e28f786febf62db355
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 7c0dcdd7e2f407267cf99906b4d0b317858710af
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518886"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742826"
 ---
 # <a name="embed-powerapps-apps-in-core-hr"></a>Osadzanie aplikacji PowerApps w Core HR
 
@@ -40,7 +40,7 @@ Projekt interfejsu użytkownika został zmieniony, a Microsoft PowerApps zostani
 
 Zmienił się sposób osadzenia usługi PowerApps. Aplikacje PowerApps teraz są dodawane za pomocą modelu personalizacji. Aplikacje PowerApps można dodać do prawie wszystkich stron w Microsoft Dynamics 365 for Talent.
 
-Aby uzyskać szczegółowe informacje o osadzaniu aplikacji usługi PowerApps w Talents, zobacz [Osadzanie aplikacji PowerApp](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+Aby uzyskać szczegółowe informacje o osadzaniu aplikacji usługi PowerApps w Talents, zobacz [Osadzanie aplikacji PowerApp](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 
 Odbiorcy PowerApps, którzy osadzili aplikacje przed zmianą powinni mieć uaktualniony system do nowego modelu.
 

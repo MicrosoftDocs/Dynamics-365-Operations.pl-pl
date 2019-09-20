@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
+ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577802"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1781449"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Rozszerzanie rozwiązania Talent przy użyciu usług PowerApps i Microsoft Flow — przykładowe scenariusze
 
@@ -101,24 +101,15 @@ Ten szablon może zostać rozszerzony tak, aby można go było używać w dowoln
 
 Aby pobrać szablon **przepływ — integracja SharePoint**, przejdź do [przepływ — integracja SharePoint](https://go.microsoft.com/fwlink/?linkid=2082109) w centrum pobierania Microsoft.
 
-## <a name="admin-console-to-manage-talent-pools"></a>Konsola administracyjna do zarządzania pulami talentów
+## <a name="referral-app"></a>Aplikacja Poleceń
+Za pomocą aplikacji Poleceń można dodawać kandydatów do udostępnionej puli talentów. Osoba polecająca może wprowadzić wartość **Imię**, **Nazwisko**, **Adres e-mail** i **Linkedln URL** podczas przesyłania kandydata. Metadane źródła kandydata są następnie wypełniane informacjami osoby polecającej.
 
-Po włączeniu integracji z usługą LinkedIn Attract automatycznie tworzy pulę talentów w serwisie LinkedIn. Kiedy osoba rekrutująca wymienia InMail z osobą rekrutowaną na LinkedIn, Attract tworzy profil osoby rekrutowanej i ta osoba staje się członkiem puli talentów serwisu LinkedIn. Ta aplikacja PowerApps jest przydatna do reorganizacji kandydatów w pulach talentów na podstawie kwalifikacji.
+Tę aplikację można osadzić w module Samoobsługa pracownika (ESS) w celu przesłania polecenia lub można używać jej jako hiperłącza w portalu korporacyjnym i uruchamiać jako autonomiczną aplikację.
 
-Uruchom tę aplikację PowerApps jako konsolę administracyjną, aby wykonać następujące zadania:
-
-- Sporządzenie listy kandydatów w puli talentów
-- Dodawanie kandydatów do puli talentów i usuwanie
-- Przenoszenie kandydatów z jednej puli talentów do drugiej
-- Przed przeniesieniem należy określić, czy kandydaci są już częścią puli talentów
-- Sprawdź umiejętności kandydatów przed przeniesieniem ich do innych pul talentów
-
-Ta aplikacja PowerApps używa relacji typu wiele-do-wielu, więc można jej użyć jako szablonu dla innych scenariuszy, w których jest konieczne wyodrębnienie rekordów z relacjami typu „wiele do wielu”.
-
-Aby pobrać szablon **konsola administracyjna do zarządzania pulami talentów**, przejdź do [konsola administracyjna do zarządzania pulami talentów](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) w centrum pobierania Microsoft.
+Aby pobrać **Aplikację Poleceń**, przejdź do [Dynamics 365 for Talent do rozwiązania rozszerzalności: Aplikacja Poleceń](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) w Microsoft — Centrum pobierania. Możesz zaimportować tę aplikację i dostosować ją w celu dodania dodatkowych funkcji.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
 
-[Migracja aplikacji między dzierżawcami i środowiskami](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration)
+[Migracja aplikacji między dzierżawcami i środowiskami](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)

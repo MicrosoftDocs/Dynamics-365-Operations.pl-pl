@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 59234ef44ad22383ae5daf71d4b663c6183e6c05
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: c26dfed9909b0dbd05fc18c206e5adc947feaef5
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702825"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742925"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurowanie integracji listy płac między rozwiązaniami Talent i Dayforce
 
@@ -52,8 +52,8 @@ Po włączeniu integracji następuje utworzenie pakietu i plików eksportu danyc
 
 Aby uzyskać więcej informacji o kontach magazynu w usłudze Azure i ciągach połączeń z usługą Azure Storage, zobacz następujące tematy poświęcone usłudze Azure:
 
-- [Konta magazynu w usłudze Azure — informacje](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Konfigurowanie ciągów połączeń z usługą Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+- [Konta magazynu w usłudze Azure — informacje](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Konfigurowanie ciągów połączeń z usługą Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Dane techniczne, gdy integracja listy płac jest włączona
 
@@ -123,10 +123,10 @@ System Dayforce tworzy następujące potrącenia w oparciu o wpływ na listę p�
 
 Aby uzyskać więcej informacji o sposobie definiowania programu świadczeń i zarządzania nim, zobacz następujące tematy:
 
-- [Dostarczanie programu świadczeń dla pracowników](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Tworzenie nowego świadczenia](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Definiowanie zasad i reguł uprawnień do świadczenia](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Rejestrowanie i usuwanie świadczeń dla pracowników](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Dostarczanie programu świadczeń dla pracowników](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Tworzenie nowego świadczenia](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Definiowanie zasad i reguł uprawnień do świadczenia](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Rejestrowanie i usuwanie świadczeń dla pracowników](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Wynagrodzenie 
 
@@ -136,20 +136,20 @@ Program Dayforce wykorzystuje informacje o wynagrodzeniach do obliczania godzino
 
 Aby uzyskać więcej informacji o planach wynagrodzeń, zobacz następujące tematy:
 
-- [Tworzenie planów stałych wynagrodzeń](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Tworzenie planów wynagrodzeń o zmiennej wysokości](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Opracowywanie struktury i planu pensji/wynagrodzeń](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Przetwarzanie wynagrodzenia](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/process-compensation)
-- [Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Zarejestrowanie pracownika w systemie stałych wynagrodzeń](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Zarejestrowanie pracownika w systemie wynagrodzeń o zmiennej wysokości](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Tworzenie planów stałych wynagrodzeń](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Tworzenie planów wynagrodzeń o zmiennej wysokości](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Opracowywanie struktury i planu pensji/wynagrodzeń](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Przetwarzanie wynagrodzenia](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+- [Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Zarejestrowanie pracownika w systemie stałych wynagrodzeń](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Zarejestrowanie pracownika w systemie wynagrodzeń o zmiennej wysokości](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Funkcje 
 
 Funkcja to zbiór zadań i obowiązków, które są wymagane od osoby wykonującej funkcję. Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-- [Konfigurowanie składników funkcji](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-job)
-- [Definiowanie nowych zadań](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Konfigurowanie składników funkcji](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
+- [Definiowanie nowych zadań](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Pozycje
 
@@ -173,8 +173,8 @@ Jeśli z tą samą funkcją jest skojarzonych wiele stanowisk w tym samym dziale
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-- [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Konfigurowanie stanowisk](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Konfigurowanie stanowisk](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Działy
 
@@ -182,8 +182,8 @@ Dział to jednostka operacyjna należąca do kategorii lub obszaru funkcjonalneg
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-- [Tworzenie działu i kojarzenie go z hierarchią działów](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Definiowanie nowych działów](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Tworzenie działu i kojarzenie go z hierarchią działów](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Definiowanie nowych działów](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Cykle płac i okresy płac
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ea8b7485b142245a359648a2a85d2a3e2a6d6629
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6c881bf25e7145228ccf7ef73a7ef3637c115a49
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518849"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741782"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Wymagania systemowe i zasady aktualizacji rozwiązania Talent
 
@@ -64,10 +64,10 @@ Można pobrać plik PDF zawierający listy krajów, regionów i języków obsłu
 > [!NOTE]
 > Gdy interfejs użytkownika jest zlokalizowany w innych językach, wszystkie dane użytkownika są przechowywane w języku, w którym zostały wprowadzone. Możesz tworzyć wiadomości e-mail i szablony w innych językach, ale dane, takie jak informacje o harmonogramie, są w tej chwili dostępne tylko w języku angielskim.
 
-Jeśli jesteś programistą zainteresowanym tworzeniem dostosowań specyficznych dla kraju lub regionu lub stworzeniem rozwiązania dla kraju lub regionu, który nie jest obecnie obsługiwany przez firmę Microsoft, zobacz [Globalizacja](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
+Jeśli jesteś programistą zainteresowanym tworzeniem dostosowań specyficznych dla kraju lub regionu lub stworzeniem rozwiązania dla kraju lub regionu, który nie jest obecnie obsługiwany przez firmę Microsoft, zobacz [Globalizacja](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
 ## <a name="update-policy"></a>Zasady aktualizacji
 
 Program Microsoft Dynamics 365 for Talent jest udostępniany jako rozwiązanie chmurowe. Aktualizacje usługi Dynamics 365 for Talent są dodawane w sposób ciągły i stosowane automatycznie przez firmę Microsoft.
 
-Aktualizacje są publikowane regularnie i dla wszystkich środowisk. Program Dynamics 365 for Talent jest wspierany zgodnie z [zasadami cyklu życia pomocy technicznej Microsoft](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Cykl życia pomocy technicznej Microsoft"), które określają spójny i przewidywalny harmonogram dostępności wsparcia technicznego dla produktów.
+Aktualizacje są publikowane regularnie i dla wszystkich środowisk. Program Dynamics 365 for Talent jest wspierany zgodnie z [zasadami cyklu życia pomocy technicznej Microsoft](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Cykl życia pomocy technicznej Microsoft"), które określają spójny i przewidywalny harmonogram dostępności wsparcia technicznego dla produktów.

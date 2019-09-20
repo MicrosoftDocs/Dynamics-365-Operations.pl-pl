@@ -1,6 +1,6 @@
 ---
-title: Używanie raportów analitycznych na potrzeby analizowania procesu zatrudniania
-description: W tym temacie opisano raporty analityczne w Attract
+title: Używanie raportów analitycznych w programie Microsoft Dynamics 365 for Talent - Attract
+description: W tym temacie opisano raporty analityczne dotyczące szczegółowego procesu zatrudniania w programie Microsoft Dynamics 365 for Talent - Attract
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: 33ed6072a9ad99144fb96ad19389a57461324f71
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516567"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742896"
 ---
-# <a name="use-analytic-reports-for-hiring-process-insights"></a>Używanie raportów analitycznych na potrzeby analizowania procesu zatrudniania
+# <a name="use-analytic-reports"></a>Korzystanie z raportów analitycznych
 
 Raporty analityczne w Attract oferują gotowe rozwiązanie (OOTB) do analizy danych w procesie zatrudnienia. Dostępne są następujące funkcje:
 
@@ -81,8 +81,8 @@ Raporty Analiza funkcji pokazują dane wybranej funkcji. Raporty centrum analiz 
 
 ## <a name="cross-filter"></a>Filtrowanie krzyżowe
 
-Jedną z doskonałych funkcji tego Power BI jest sposób, w jaki są wzajemnie połączone wszystkie elementy wizualne na stronie raportu. Jeśli wybierzesz punkt danych w jednym z elementów wizualnych, wszystkie pozostałe elementy wizualne na stronie zawierają tę zmianę danych, zależnie od wybranej opcji. Aby dowiedzieć się więcej i zobaczyć przykład, zajrzyj do [Jak elementy wizualne filtrują się krzyżowo nawzajem w raporcie Power BI ](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-interactions).
+Jedną z doskonałych funkcji tego Power BI jest sposób, w jaki są wzajemnie połączone wszystkie elementy wizualne na stronie raportu. Jeśli wybierzesz punkt danych w jednym z elementów wizualnych, wszystkie pozostałe elementy wizualne na stronie zawierają tę zmianę danych, zależnie od wybranej opcji. Aby dowiedzieć się więcej i zobaczyć przykład, zajrzyj do [Jak elementy wizualne filtrują się krzyżowo nawzajem w raporcie Power BI ](https://docs.microsoft.com/power-bi/consumer/end-user-interactions).
 
 ## <a name="export-to-excel"></a>Eksportuj do programu Excel
 
-Aby wyświetlić dane raportu w programie Excel, można kliknąć menu Opcje (trzy kropki) w elemencie wizualnym i wybrać polecenie **Eksportuj dane źródłowe**. Eksportowane dane są eksportowane jako przefiltrowane, zgodnie z uprawnieniami użytkownika w Attract. Aby uzyskać więcej informacji, zajrzyj do [Eksport danych z wizualizacji](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data).
+Aby wyświetlić dane raportu w programie Excel, można kliknąć menu Opcje (trzy kropki) w elemencie wizualnym i wybrać polecenie **Eksportuj dane źródłowe**. Eksportowane dane są eksportowane jako przefiltrowane, zgodnie z uprawnieniami użytkownika w Attract. Aby uzyskać więcej informacji, zajrzyj do [Eksport danych z wizualizacji](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).

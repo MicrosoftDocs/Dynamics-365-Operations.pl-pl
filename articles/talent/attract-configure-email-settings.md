@@ -19,14 +19,15 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 360937b807ea149edb2f16ad6799d74791d599b5
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: a8cf59064dd2f66ee50a0b0566aa712ba1f72dea
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729797"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739502"
 ---
-# <a name="configure-email-settings-in-microsoft-dynamics-365-for-talent---attract"></a>Skonfiguruj ustawienia wiadomości e-mail w Microsoft Dynamics 365 for Talent - Attract
+# <a name="configure-email-settings"></a>Konfigurowanie ustawień poczty e-mail
+
 [!include[banner](../includes/banner.md)]
 
 Twoja marka buduje zaufanie i pomaga budować relacje z kandydatami, zanim nawet zaczną starać się o stanowiska. Pozytywne postrzeganie marki przyciąga największe talenty i zwiększa lojalność obecnych pracowników. Microsoft Dynamics 365 for Talent: Attract pozwala ci skonfigurować wiadomości e-mail w taki sposób, który będzie najlepiej wyraźał markę Twojej firmy. W związku z tym możesz zapewnić spójne doświadczenie kandydatom w trakcie procesu aplikacji.

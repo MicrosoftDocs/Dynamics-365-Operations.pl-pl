@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichsew
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 52790fbe500d9f55bc9cc86fba5d54f30b11e559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505871"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795227"
 ---
 # <a name="extensibility-in-attract"></a>Możliwości rozszerzania w aplikacji Attract
 
@@ -33,7 +33,7 @@ Aplikacja Microsoft Dynamics 365 for Talent bazuje na platformie Common Data Ser
 
 ## <a name="extending-option-sets-in-attract"></a>Rozszerzanie zestawów opcji w Attract
 
-**Zestaw opcji** (Lista wyboru) jest typem pola, które mogą być uwzględniane w jednostkach. Definiuje zestaw opcji. Kiedy zestaw opcji jest wyświetlany w formularzu, używa formantu listy rozwijanej.  W Attract jest wiele pól będących zestawami opcji.  Wprowadzamy możliwości rozszerzania zestawów opcji, począwszy od pola przyczyny odrzucenia, pola Typ zatrudnienia i pola typu stażu pracy.   Ponadto można dodać zlokalizowane etykiety wyświetlania dla dodawanych opcji. Aby uzyskać więcej informacji, zobacz [etykiety zestawu opcji Dostosuj](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
+**Zestaw opcji** (Lista wyboru) jest typem pola, które mogą być uwzględniane w jednostkach. Definiuje zestaw opcji. Kiedy zestaw opcji jest wyświetlany w formularzu, używa formantu listy rozwijanej.  W Attract jest wiele pól będących zestawami opcji.  Wprowadzamy możliwości rozszerzania zestawów opcji, począwszy od pola przyczyny odrzucenia, pola Typ zatrudnienia i pola typu stażu pracy.   Ponadto można dodać zlokalizowane etykiety wyświetlania dla dodawanych opcji. Aby uzyskać więcej informacji, zobacz [etykiety zestawu opcji Dostosuj](https://docs.microsoft.com/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > Dodawanie oferty pracy do funkcji LinkedIn wymaga stosowania pól **Typ zatrudnienia** i **typu stażu pracy** na stronie **Szczegóły stanowiska**. Domyślne wartości tych pól nie są obsługiwane przez LinkedIn i są wyświetlane, gdy oferta jest publikowana. Dlatego, jeśli publikujesz ofertę pracy na LinkedIn i zmienisz istniejące zestawy wartości dla tych pól, oferta zostanie opublikowana, ale LinkedIn nie wyświetli wartości niestandardowych **Typ zatrudnienia** i **typu stażu pracy**.  
@@ -62,15 +62,15 @@ Ponieważ wszystkie dane aplikacji Attract są przechowywane na platformie Commo
 
 Usługa PowerApps umożliwia łatwe tworzenie aplikacji, które łączą się z firmowymi danymi w aplikacji Attract oraz używają wyrażeń przypominających wyrażenia z programu Microsoft Excel do dodawania logiki. Aplikacje tworzone za pomocą usługi PowerApps mogą działać w Internecie oraz na urządzeniach z systemami Apple iOS i Google Android.
 
-Na przykład można ułatwić osobom rekrutującym działania na targach kariery organizowanych na wyższych uczelniach, tworząc uproszczoną aplikację, która skanuje życiorysy i wstępnie kojarzy kandydatów ze stanowiskami w aplikacji Attract. Alternatywnie można utworzyć aplikację, która pomaga organizacji spełniać wymogi dotyczące zgodności z przepisami. Aby uzyskać więcej informacji o usłudze PowerApps i jej używaniu do tworzenia aplikacji, zobacz [Integrowanie danych na platformie Common Data Service](https://docs.microsoft.com/en-us/powerapps).
+Na przykład można ułatwić osobom rekrutującym działania na targach kariery organizowanych na wyższych uczelniach, tworząc uproszczoną aplikację, która skanuje życiorysy i wstępnie kojarzy kandydatów ze stanowiskami w aplikacji Attract. Alternatywnie można utworzyć aplikację, która pomaga organizacji spełniać wymogi dotyczące zgodności z przepisami. Aby uzyskać więcej informacji o usłudze PowerApps i jej używaniu do tworzenia aplikacji, zobacz [Integrowanie danych na platformie Common Data Service](https://docs.microsoft.com/powerapps).
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Usługa Microsoft Flow służy do tworzenia zautomatyzowanych przepływów pracy działających na danych aplikacji Attract. Można się łatwo łączyć z setkami popularnych aplikacji i usług bez konieczności samodzielnego pisania kodu źródłowego. Utworzenie przepływów, które na platformie Common Data Service wchodzą w interakcje z jednostkami Funkcja, Kandydat i Zgłoszenie aplikacji Attract, pozwala zautomatyzować różne czynności. Na przykład gdy kandydat zaakceptuje ofertę, może zostać wysłane powiadomienie do zespołu zajmującego się wdrażaniem do pracy albo opublikowana wiadomości w serwisie Twitter. Aby uzyskać więcej informacji o przepływach, zobacz [dokumentację systemu Microsoft Flow](https://docs.microsoft.com/en-us/flow/).
+Usługa Microsoft Flow służy do tworzenia zautomatyzowanych przepływów pracy działających na danych aplikacji Attract. Można się łatwo łączyć z setkami popularnych aplikacji i usług bez konieczności samodzielnego pisania kodu źródłowego. Utworzenie przepływów, które na platformie Common Data Service wchodzą w interakcje z jednostkami Funkcja, Kandydat i Zgłoszenie aplikacji Attract, pozwala zautomatyzować różne czynności. Na przykład gdy kandydat zaakceptuje ofertę, może zostać wysłane powiadomienie do zespołu zajmującego się wdrażaniem do pracy albo opublikowana wiadomości w serwisie Twitter. Aby uzyskać więcej informacji o przepływach, zobacz [dokumentację systemu Microsoft Flow](https://docs.microsoft.com/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
-Usługa Power BI umożliwia tworzenie i wyświetlanie niestandardowych raportów i pulpitów nawigacyjnych, które pozwalają na głębszy wgląd w dane w aplikacji Attract. Aby uzyskać więcej informacji o usłudze Power BI oraz o sposobie tworzenia interaktywnych raportów i pulpitów nawigacyjnych, zobacz [Dokumentacja usługi Power BI](https://docs.microsoft.com/en-us/power-bi/).
+Usługa Power BI umożliwia tworzenie i wyświetlanie niestandardowych raportów i pulpitów nawigacyjnych, które pozwalają na głębszy wgląd w dane w aplikacji Attract. Aby uzyskać więcej informacji o usłudze Power BI oraz o sposobie tworzenia interaktywnych raportów i pulpitów nawigacyjnych, zobacz [Dokumentacja usługi Power BI](https://docs.microsoft.com/power-bi/).
 
 ### <a name="custom-activities"></a>Działania niestandardowe 
 

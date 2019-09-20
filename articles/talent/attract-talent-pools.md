@@ -1,6 +1,6 @@
 ---
-title: Pozyskiwanie kandydatów za pomocą pul umiejętności
-description: W tym temacie opisano sposób tworzenia i konfigurowania pul umiejętności w aplikacji Attract.
+title: Pozyskiwanie kandydatów za pomocą puli umiejętności i kandydatów w Microsoft Dynamics 365 for Talent - Attract
+description: W tym temacie opisano sposób tworzenia i konfigurowania pul umiejętności w aplikacji Microsoft Dynamics 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/28/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
-ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
+ms.openlocfilehash: 98b93f69c4f4c8ca6c9a0fc2530578afed4b967c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "1711301"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741874"
 ---
-# <a name="source-candidates-by-using-talent-pools"></a>Pozyskiwanie kandydatów za pomocą pul umiejętności
+# <a name="source-candidates-with-talent-pools"></a>Pozyskiwanie kandydatów za pomocą puli umiejętności i kandydatów
 
 [!include[banner](../includes/banner.md)]
 
@@ -79,7 +79,7 @@ Właściciel i współautorzy puli umiejętności mogą dodawać kandydatów do 
 ## <a name="search-and-view-candidate-profiles"></a>Wyszukiwanie i wyświetlanie profili kandydatów
 
 > [!NOTE] 
-> Ta funkcja jest obecnie w wersjach zapoznawczych. Jeśli chcesz ją wypróbować, musisz najpierw [ją włączyć w ustawieniach administratora Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+> Ta funkcja jest obecnie w wersjach zapoznawczych. Jeśli chcesz ją wypróbować, musisz najpierw [ją włączyć w ustawieniach administratora Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature). 
 
 Pule umiejętności i kandydatów pozwalają na wyświetlanie profilu kandydata, informacji LinkedIn, związanych z tym dokumentów i historia zgłoszeń. Można przeszukać całą bazę danych wszystkich kandydatów dodanych do dowolnej puli, w tym kandydatów, dla których procedury są otwarte lub zamknięte.
 
@@ -116,7 +116,7 @@ Wszyscy użytkownicy mają wspólny widok profili kandydatów. Karta **Profil** 
 
     Aby wyświetlić dokument, zaznacz jego nazwę na liście dokumentów. Można wyświetlić dokumenty programu Microsoft Word w aplikacji za pomocą Microsoft Office 365. Można także pobrać dokumenty do lokalnego komputera za pomocą opcji **Pobierz** widocznej obok każdego dokumentu.
 
-- Na karcie **LinkedIn** są wyświetlane dane kandydata z serwisu LinkedIn. Aby użyć tej karty, należy podłączyć konto LinkedIn w ustawieniach użytkownika oraz ustanowić połączenie z aplikacji LinkedIn Recruiter w lokalnym środowisku. Aby uzyskać więcej informacji, zobacz [Korzystanie z aplikacji LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+- Na karcie **LinkedIn** są wyświetlane dane kandydata z serwisu LinkedIn. Aby użyć tej karty, należy podłączyć konto LinkedIn w ustawieniach użytkownika oraz ustanowić połączenie z aplikacji LinkedIn Recruiter w lokalnym środowisku. Aby uzyskać więcej informacji, zobacz [Korzystanie z aplikacji LinkedIn Recruiter](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Tylko kandydaci mogą aktualizować swoje umiejętności, historię wykształcenia i doświadczenie zawodowe.

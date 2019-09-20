@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 32eb177da53ffa4cf8ecdc73a93e88f30778f69c
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 7c474b0ba40db238db33cfa45ddde55cd0724a9b
+ms.sourcegitcommit: f5556189a80ad9f23f1af3333837eae034ddb247
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729796"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "1791983"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-02-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (2 lipiec 2019)
 
@@ -37,13 +37,18 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsof
 
 Teraz można skonfigurować ustawienia poczty e-mail, aby wiadomości e-mail do kandydatów, osób przeglądających i menedżerów zatrudniania były wysyłane z konta usługi poczty e-mail organizacji. Aby uzyskać więcej informacji przejrzyj [Połączenie konta usługi poczty e-mail](./attract-configure-email-settings.md#connect-an-email-service-account)
 
-#### <a name="offer-email-templates"></a>Oferuj szablony wiadomości e-mail 
+### <a name="offer-email-templates"></a>Oferuj szablony wiadomości e-mail 
 
 Teraz można skonfigurować szablony wiadomości e-mail organizacji dla wszystkich etapów w trakcie przygotowywania, zatwierdzania i akceptacji. Przed wysłaniem wiadomości e-mail użytkownicy mogą skorzystać z szablonu domyślnego albo go dostosować. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie ustawienia szablonu wiadomości e-mail](./attract-configure-email-settings.md#configure-email-template-settings).
 
 ### <a name="candidate-consent-on-application"></a>Zgoda kandydata w momencie wniosku
 
 Teraz można włączyć łącze warunki i postanowienia dla organizacji. Jeśli to ustawienie jest włączone, kandydaci muszą wyrazić zgodę na warunki przed przesłaniem ich zgłoszeń o pracę. 
+
+### <a name="coming-soon-in-attract"></a>Wkrótce w aplikacji Attract
+#### <a name="job-approvals-appear-on-the-home-page"></a>Zatwierdzenia zadań pojawiają się na stronie głównej
+
+Zatwierdzenia są wyświetlane w sekcji **Zatwierdzenia** na pulpicie nawigacyjnym. Osoby zatwierdzające mogą przeglądać swoje zatwierdzenia w obszarze **Przypisane do Ciebie**, w którym jest wyświetlany identyfikator zadania, tytuł, inne osoby zatwierdzające i data przypisania zadania. Użytkownicy, którzy przesyłają zadanie do zatwierdzenia, mogą przeglądać swoje zadania w obszarze **Żądane przez Ciebie**, w którym są wyświetlane osoby zatwierdzające, które muszą jeszcze zatwierdzić przesłane zadanie.
 
 ## <a name="changes-in-onboard"></a>Zmiany w Onboard
 
