@@ -1,6 +1,6 @@
 ---
-title: Sprawdzanie spójności transakcji w rozwiązaniu Retail
-description: W tym temacie opisano funkcje sprawdzania spójności transakcji sprzedaży detalicznej w rozwiązaniu Microsoft Dynamics 365 for Retail.
+title: Sprawdzanie spójności transakcji sprzedaży detalicznej
+description: W tym temacie opisano funkcje sprawdzania spójności transakcji sprzedaży detalicznej w rozwiązaniu Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,22 +18,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790428"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018427"
 ---
-# <a name="retail-transaction-consistency-checker"></a>Sprawdzanie spójności transakcji w rozwiązaniu Retail
+# <a name="retail-transaction-consistency-checker"></a>Sprawdzanie spójności transakcji sprzedaży detalicznej
 
 
 [!include [banner](includes/banner.md)]
 [!include [preview banner](includes/preview-banner.md)]
 
-W tym temacie opisano funkcje sprawdzania spójności transakcji sprzedaży detalicznej wprowadzone w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations (wersja 8.1.3). Moduł sprawdzania spójności umożliwia identyfikowanie i izolowanie niespójnych transakcji przed pobraniem ich przez proces księgowania zestawienia.
+W tym temacie opisano funkcje sprawdzania spójności transakcji sprzedaży detalicznej. Moduł sprawdzania spójności umożliwia identyfikowanie i izolowanie niespójnych transakcji przed pobraniem ich przez proces księgowania zestawienia.
 
-Gdy zestawienie jest księgowane w rozwiązaniu Microsoft Dynamics 365 for Retail, księgowanie może zakończyć się niepowodzeniem z powodu niespójności danych w tabelach transakcji sprzedaży detalicznej. Przyczyną tego problemu z danymi mogą być nieprzewidziane problemy w aplikacji punktu sprzedaży (POS) lub nieprawidłowy import transakcji z systemów POS innych firm. Przykłady wyświetlania tych niespójności: 
+Po zaksięgowaniu zestawienia w rozwiązaniu Retail funkcja księgowania może zakończyć się niepowodzeniem z powodu niespójności danych w tabelach transakcji sprzedaży detalicznej. Przyczyną tego problemu z danymi mogą być nieprzewidziane problemy w aplikacji punktu sprzedaży (POS) lub nieprawidłowy import transakcji z systemów POS innych firm. Przykłady wyświetlania tych niespójności: 
 
 - Suma transakcji w tabeli nagłówka jest niezgodna z łączną wartością transakcji w wierszach.
 - Liczba wierszy w tabeli nagłówka jest niezgodna z liczbą wierszy w tabeli transakcji.

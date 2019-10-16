@@ -1,9 +1,9 @@
 ---
-title: Zarządzanie łańcuchem dostaw — strona główna
-description: Ta strona zawiera listę tematów pomocy oraz innych zasobów dotyczących funkcji zarządzania łańcuchem dostaw w Microsoft Dynamics 365 for Finance and Operations.
-author: ShylaThompson
+title: Zasoby pomocy dotyczące funkcji zarządzania łańcuchem dostaw
+description: Ta strona zawiera listę tematów pomocy oraz innych zasobów dotyczących funkcji zarządzania łańcuchem dostaw.
+author: josaw1
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 10/01/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557599"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278331"
 ---
-# <a name="supply-chain-management-home-page"></a>Zarządzanie łańcuchem dostaw — strona główna
+# <a name="help-resources-for-supply-chain-management"></a>Zasoby pomocy dotyczące funkcji zarządzania łańcuchem dostaw
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera listę tematów pomocy oraz innych zasobów dotyczących funkcji zarządzania łańcuchem dostaw w Microsoft Dynamics 365 for Finance and Operations. 
+Ten temat zawiera listę tematów pomocy oraz innych zasobów dotyczących funkcji Dynamics 365 Supply Chain Management. 
 
 ## <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
 Przejdź na stronę <a href="https://roadmap.dynamics.com/">Plan rozwoju usługi Dynamics 365</a>, aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane. 
@@ -38,6 +38,7 @@ Przejdź na stronę <a href="https://roadmap.dynamics.com/">Plan rozwoju usługi
 
 Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 
+- [Zarządzanie składnikami majątku](asset-management/index.md)
 - [Rachunek kosztów](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Zarządzanie kosztami](cost-management/cost-management-home-page.md)  
 - [Zarządzanie zapasami](inventory/inventory-home-page.md)
@@ -46,9 +47,13 @@ Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 - [Zarządzanie informacjami o produktach](pim/product-information.md)
 - [Kontrola produkcji](production-control/production-process-overview.md)
 - [Sprzedaż i marketing](sales-marketing/overview-sales-marketing.md)
-- [Zarządzanie serwisem](service-management/service-management-home-page.md)
+- [Zarządzanie usługą](service-management/service-management-home-page.md)
 - [Zarządzanie transportem](transportation/transportation-management-overview.md)
 - [Zarządzanie magazynem](warehousing/warehouse-configuration.md)
+
+## <a name="dynamics-365-finance"></a>Rozwiązanie Dynamics 365 Finance
+
+Aby dowiedzieć się o Dynamics 365 Finance, przejdź na stronę [Zasoby pomocy Dynamics 365 Finance](../finance/index.md).
 
 ## <a name="videos"></a>Filmy
 
@@ -113,6 +118,6 @@ Wiele tematów dotyczących zarządzania wytwarzaniem i łańcuchem dostaw możn
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Funkcje mobilności w module Magazyn możliwe dzięki rozwiązaniu Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## <a name="elearning-courses"></a>Kursy eLearning
-Aby uzyskać więcej informacji o szkoleniach z zakresu Microsoft Dynamics 365 for Finance and Operations, zob. <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Portal szkoleniowy systemu Microsoft Dynamics</a>. (wymaga konta CustomerSource) 
+Aby uzyskać informacje na temat szkoleń dotyczących rozwiązania Dynamics 365, zobacz <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Portal Szkoleniowy systemu Microsoft Dynamics</a>. (wymagane jest konto w witrynie CustomerSource) 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie scenariuszy płatności za faktury
-description: W tym temacie opisano sposób konfigurowania rozwiązania Dynamics 365 for Retail pod kątem obsługi różnych scenariuszy związanych z płatnościami za faktury.
+description: W tym temacie opisano sposób konfigurowania rozwiązania Dynamics 365 Retail pod kątem obsługi różnych scenariuszy związanych z płatnościami za faktury.
 author: josaw1
 manager: AnnBe
 ms.date: 11/14/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b7132dc9b3c78fa04fcfc38ea72b5678ad08deb2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4fb9101843396e489e4d7b63879e9df35e52fe64
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564977"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018020"
 ---
 # <a name="set-up-pay-invoice-scenarios"></a>Konfigurowanie scenariuszy płatności za faktury
 
 [!include [banner](includes/banner.md)]
 
-Funkcja Zapłać fakturę w rozwiązaniu Dynamics 365 for Retail została rozszerzona, aby obsługiwać:
+Funkcja Zapłać fakturę w rozwiązaniu Dynamics 365 Retail została rozszerzona, aby obsługiwać:
 
 - zapłatę za wiele faktur zamówienia sprzedaży w ramach pojedynczej transakcji w punkcie sprzedaży,
 - płatność za różne typy faktur dla odbiorców, takie jak faktury niezależne, projektu i korygujące.

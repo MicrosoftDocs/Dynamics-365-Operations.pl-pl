@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Retail — Zapraszamy!
-description: Strona główna rozwiązania Dynamics 365 for Retail
+title: Zasoby pomocy dla rozwiązania Dynamics 365 Retail
+description: Strona główna rozwiązania Dynamics 365 Retail
 author: josaw1
 manager: AnnBe
 ms.date: 08/14/2019
@@ -18,23 +18,26 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22dc340ff5ea381dd2a335c8c81332d11d1257a0
-ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
+ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "1874934"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278113"
 ---
-# <a name="welcome-to-dynamics-365-for-retail"></a>Dynamics 365 for Retail — Zapraszamy!
+# <a name="help-resources-for-dynamics-365-retail"></a>Zasoby pomocy dla rozwiązania Dynamics 365 Retail
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail to kompleksowe rozwiązanie dla handlu detalicznego oferujące ujednolicone możliwości handlowe we wszystkich kanałach. Oferuje sprzedaż, mobilność, inteligencję i produktywność, aby pomóc sprzedawcom i pracownikom osiągnąć więcej w sposób skupiający się na przechowywaniu danych w chmurze i mobilności. Rozwiązanie Retail oferuje rozbudowaną obsługę różnych procesów biznesowych, takich jak promowanie produktów, zarządzanie zapasami i zarządzanie kanałami. Oferuje także rozszerzone funkcje i możliwości dla odbiorców we wszystkich miejscach bezpośredniej interakcji.
-
-> [!NOTE]
-> Rozwiązanie Dynamics 365 for Retail jest ściśle powiązane z produktami Dynamics 365 for Finance and Operations i Dynamics 365 for Talent. Te same funkcje mogą być dostępne we wszystkich trzech produktach. W związku z tym w tematach związanych głównie z modułem Sprzedaż detaliczna nazwą produktu będzie Microsoft Dynamics 365 for Retail; w tematach związanych głównie z produktem podstawowym (Finance and Operations) nazwą produktu będzie Microsoft Dynamics 365 for Finance and Operations; w tematach związanych głównie z modułem Zasoby ludzkie nazwą produktu będzie Dynamics 365 for Talent.
+Microsoft Dynamics 365 Retail to kompleksowe rozwiązanie dla handlu detalicznego oferujące ujednolicone możliwości handlowe we wszystkich kanałach. Oferuje sprzedaż, mobilność, inteligencję i produktywność, aby pomóc sprzedawcom i pracownikom osiągnąć więcej w sposób skupiający się na przechowywaniu danych w chmurze i mobilności. Rozwiązanie Retail oferuje rozbudowaną obsługę różnych procesów biznesowych, takich jak promowanie produktów, zarządzanie zapasami i zarządzanie kanałami. Oferuje także rozszerzone funkcje i możliwości dla odbiorców we wszystkich miejscach bezpośredniej interakcji.
 
 W lewym okienku wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
+
+## <a name="dynamics-365-commerce-preview"></a>Dynamics 365 Commerce (wersja zapoznawcza)
+
+Dynamics 365 Commerce—stworzony na sprawdzonych możliwościach rozwiązania Dynamics 365 Retail zapewnia kompleksowe rozwiązanie wielokanałowe, które łączy zaplecze biurowe, sklepowe, biura obsługi i cyfrowe. Commerce jest teraz dostępna do podglądu odbiorców. Obecni odbiorcy Dynamics 365 Retail będą mogli dokonać aktualizacji do wersji Commerce, gdy stanie się ona ogólnie dostępna.
+
+Aby dowiedzieć się więcej o Dynamics 365 Commerce, przejdź na stronę [Zasoby pomocy Dynamics 365 Commerce](../commerce/index.md).
 
 ## <a name="channel-management"></a>Zarządzanie kanałami
 
@@ -78,8 +81,8 @@ Musisz skonfigurować kilka składników, aby zdefiniować relacje między sklep
 
 Jeśli poproszono Cię o dostosowanie środowiska lub odpowiadasz za wdrażanie i obsługę systemu, pamiętaj, aby oprócz ogólnej zawartości, przejrzeć także zawartość dla programistów i administratorów systemu dotyczącą rozwiązania Retail.
 
-- [Dynamics 365 for Retail dla profesjonalistów IT i programistów](dev-itpro/dev-retail-home-page.md)
-- [Programowanie na potrzeby rozwiązania Dynamics 365 for Finance and Operations i administrowanie nim](../dev-itpro/dev-tools/developer-home-page.md)
+- [Dynamics 365 Retail dla profesjonalistów IT i programistów](dev-itpro/dev-retail-home-page.md)
+- [Programowanie na potrzeby rozwiązania Dynamics 365 Finance i administrowanie nim](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -93,4 +96,4 @@ Opinie, wiadomości i inne informacje dotyczące rozwiązania Retail trwałe mo�
 
 Wiele wpisów dotyczących rozwiązania Retail jest dostępnych w [blogu zespołu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Mimo że niektóre z tych wpisów zostały napisane dla poprzedniej wersji rozwiązania Retail, stosowane są w nich te same pojęcia. Także procedury są podobne do procedur w bieżącej wersji.
 
-[Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
+[Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) zapewnia Microsoft Dynamics, jeden zasób, w którym mogą dowiedzieć się, co nowego, poza tym zyskuje na popularności w operacjach MBS.
