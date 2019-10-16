@@ -1,2 +1,2 @@
 > [!NOTE]
-> <span data-ttu-id="ff253-101">Ten temat dotyczy zarówno rozwiązania Dynamics 365 for Finance and Operations, jak i rozwiązania Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="ff253-101">This topic applies to both Dynamics 365 for Finance and Operations and to Dynamics 365 for Retail.</span></span> 
+> <span data-ttu-id="8fed4-101">Ten temat dotyczy funkcji Finanse, Zarządzanie łańcuchem dostaw i Handel detaliczny.</span><span class="sxs-lookup"><span data-stu-id="8fed4-101">This topic applies to Finance, Supply Chain Management, and Retail.</span></span> 
