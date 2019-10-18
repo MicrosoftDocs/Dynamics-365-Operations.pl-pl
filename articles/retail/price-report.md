@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 72f4d248f3ac49bbfd8e5a7a12352d92b89bb0eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4fb02bdeca2d71d84ebdddfd16d471a532823e42
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564954"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025202"
 ---
 # <a name="retail-price-reports"></a>Raporty cen detalicznych
 
 [!include [banner](includes/banner.md)]
 
 
-W celu zapewnienia konkurencyjnych cen klientom, sprzedawcy detaliczni często zmieniają ceny produktów. Kierownicy sklepów mają możliwość łatwego dostępu do ostatnich i nadchodzących zmian cen, co pozwala im odpowiednio planować zasoby wymagane do aktualizacji etykiet z cenami na sklepowych półkach. W wersji 10.0 programu Dynamics 365 for Retail kierownik sklepu może otworzyć raport **Cena**, przechodząc do menu **Wszystkie sklepy detaliczne \> Sklep \> Raport cen** i wyświetlając zaktualizowane ceny produktów skojarzone ze sklepem. 
+W celu zapewnienia konkurencyjnych cen klientom, sprzedawcy detaliczni często zmieniają ceny produktów. Kierownicy sklepów mają możliwość łatwego dostępu do ostatnich i nadchodzących zmian cen, co pozwala im odpowiednio planować zasoby wymagane do aktualizacji etykiet z cenami na sklepowych półkach. W wersji 10.0 programu Retail kierownik sklepu może otworzyć raport **Cena**, przechodząc do menu **Wszystkie sklepy detaliczne \> Sklep \> Raport cen** i wyświetlając zaktualizowane ceny produktów skojarzone ze sklepem. 
 
 Aby włączyć raport cen, parametr **Włącz raport cen w sklepie detalicznym** musi być włączony. Ten parametr jest umieszczony na karcie **Parametry sieci sprzedaży \> Rabaty \> Różne**. Otwarcie karty **Raport cen** wyświetla okno dialogowe z różnymi konfiguracjami. Poniżej przedstawiono listę dostępnych konfiguracji.
 

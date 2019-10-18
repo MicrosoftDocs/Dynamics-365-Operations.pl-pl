@@ -1,6 +1,6 @@
 ---
 title: Wyświetlanie stanu Twoich zadań i dołączania pracowników
-description: W tym temacie wyjaśniono, jak używać aplikacji Dynamics 365 for Talent - Onboard firmy Microsoft do śledzenia, gdzie nowi pracownicy są w procesie dołączania.
+description: W tym temacie wyjaśniono, jak używać Dynamics 365 Talent - Onboard firmy Microsoft do śledzenia, gdzie nowi pracownicy są w procesie dołączania.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 0e17c572b4d3b5cee3687b25fb340ad9f98247ed
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: fe6da4599940a0b7812dc9d3f66157715c45f62d
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731599"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009838"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Wyświetlanie stanu Twoich zadań i dołączania pracowników
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard pozwala zobaczyć postęp, jaki nowi pracownicy robią w swoich działaniach dołączania. Można również wyświetlić wszystkie zadania, które zostały przypisane do Ciebie z przewodników dołączania.
+Microsoft Dynamics 365 Talent: Onboard pozwala zobaczyć postęp, jaki nowi pracownicy robią w swoich działaniach dołączania. Można również wyświetlić wszystkie zadania, które zostały przypisane do Ciebie z przewodników dołączania.
 
 ## <a name="view-the-status-of-onboarding-employees"></a>Wyświetlanie stanu dołączających pracowników
 

@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-10-10
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: e5351086c56d13ef98937aec066be00cdf88fd37
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 088f55e5605c99f69852b4d6811b5c5504f267a2
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553648"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019469"
 ---
 # <a name="ship-orders-from-another-store-by-using-the-charge-send-feature"></a>Wysyłka zamówień z innego sklepu za pomocą funkcji Wysyłanie opłaty
 
 [!include [banner](includes/banner.md)]
 
-Funkcja Wysyłanie opłaty w rozwiązaniu Dynamics 365 for Retail umożliwia złożenie zamówień odbiorców w jednym sklepie i wysłanie ich z innego sklepu.
+Funkcja Wysyłanie opłaty w rozwiązaniu Retail umożliwia złożenie zamówień odbiorców w jednym sklepie i wysłanie ich z innego sklepu.
 
 Zamówienia odbiorców w kliencie punktu sprzedaży obsługują różne opcje realizacji. Przykłady opcji realizacji:
 

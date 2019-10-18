@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie i używanie wstrzymań zamówień w biurze obsługi
-description: W tym temacie opisano sposób pracy ze wstrzymaniami zamówień za pomocą Microsoft Dynamics 365 for Retail.
+description: W tym temacie opisano sposób pracy ze wstrzymaniami zamówień za pomocą Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/14/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ba8fade84358c960dcfd1e8d9ffef1ffede34871
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5f20cd5266f2fec02d11c6ac5f0268765b3ad1ec
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564885"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018373"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurowanie i używanie wstrzymań zamówień w biurze obsługi
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano funkcje wstrzymania zamówienia dostępne w Microsoft Dynamics 365 for Retail dla zamówień w biurze obsługi telefonicznej.
+W tym temacie opisano funkcje wstrzymania zamówienia dostępne w Dynamics 365 Retail dla zamówień w biurze obsługi telefonicznej.
 
 ## <a name="configuring-call-center-order-holds"></a>Konfigurowanie wstrzymań zamówień w biurze obsługi
 

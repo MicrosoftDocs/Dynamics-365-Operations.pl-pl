@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85afddb34f29e13e17f2b93bb2633183a78e31f7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 462d35ebf1015ace032c523a4efe92bc7594ba3c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559815"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026985"
 ---
 # <a name="mobile-bar-code-support"></a>Mobilna obsługa kodów kreskowych
 
@@ -31,7 +31,7 @@ ms.locfileid: "1559815"
 Ponieważ system Android to projekt typu open source, każdy producent sprzętu do skanerów kodów kreskowych w magazynach może opracować urządzenie działające pod kontrolą systemu Android. Urządzenie jest zgodne z systemem Android tylko wtedy, gdy umożliwia uruchamianie aplikacji dla środowiska uruchomieniowego systemu Android.
 Dostawca sprzętu może jednak modyfikować system i tworzyć nakładki dla wersji systemu Android działającej na jego sprzęcie. Firma Microsoft nie ponosi odpowiedzialności za zapewnienie zgodności mobilnej aplikacji do skanowania kodów kreskowych dla systemu Android z urządzeniem producenta do skanowania kodów kreskowych i działającą na nim wersją systemu Android. 
 
-Aplikacja Magazynowanie dla rozwiązania Microsoft Dynamics 365 for Finance and Operations została przetestowana z wybranymi urządzeniami z systemem Android pod kątem skanowania kodów kreskowych. Te testy obejmują tylko wybrane urządzenia dostępne w sprzedaży.
+Aplikacja Magazynowanie dla rozwiązania Dynamics 365 Supply Chain Management została przetestowana z wybranymi urządzeniami z systemem Android pod kątem skanowania kodów kreskowych. Te testy obejmują tylko wybrane urządzenia dostępne w sprzedaży.
 
 Zalecamy, aby odbiorcy przetestowali aplikację mobilną do skanowania Magazyn na wybranych urządzeniach przed ich zakupem.
 

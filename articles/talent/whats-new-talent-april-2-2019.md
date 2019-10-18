@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (2 kwietnia 2019)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent.
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (2 kwietnia 2019)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/02/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f224114b132ae54dddb7766268c1fc5ec49e109d
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: 9cc45a3ed468541fc0a5c8e80e745854148165e4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795251"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026084"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-2-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (2 kwietnia 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (2 kwietnia 2019)
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 for Talent.
+W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Zmiany w Attract
 
@@ -46,7 +46,7 @@ Można dostosować zawartość wiadomości e-mail dotyczącej zatwierdzenia, uż
 Usprawnienia na karcie **Dokumenty** w profilach puli talentów i aplikacji pokazują teraz zarówno typ, jak i nazwę dokumentu.
 
 ## <a name="changes-in-onboard"></a>Zmiany w Onboard
-Ta wersja zawiera poprawki błędów dla programu Dynamics 365 Talent: Onboard.
+Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent: Onboard.
 
 ## <a name="coming-soon-attract-and-onboard"></a>Wkrótce (Attract i Onboard)
 
@@ -56,8 +56,8 @@ W Attract i Onboard problemy zarejestrowane przez użytkowników końcowych za p
 ## <a name="changes-in-core-hr"></a>Zmiany w Core HR
 Zmiany opisane w tej części dotyczą kompilacji 8.1.2216.
 
-### <a name="platform-update-25"></a>Aktualizacja platformy Update 25
-Aby uzyskać więcej informacji dotyczących aktualizacji platformy 25, zobacz [Podgląd funkcji w aktualizacji platformy 25 Dynamics 365 for Finance and Operations (kwiecień 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+### <a name="platform-update-25-for-finance-and-operations"></a>Aktualizacja Platform update 25 dla Finance and Operations
+Aby uzyskać więcej informacji dotyczących 25. aktualizacji platformy dla rozwiązania Finance and Operations, zobacz [Podgląd funkcji w 25. aktualizacji platformy Dynamics 365 for Finance and Operations (kwiecień 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Zaawansowane zabezpieczenia wynagrodzeń (stałe i zmienne)
 W wielu organizacjach menedżerowie ds. wynagrodzenia i świadczeń mogą mieć dostęp tylko do konkretnych rekordów wynagrodzeń. Może to obejmować rekordy kierowników lub pracowników regionalnych. W przypadku tej zmiany można zarządzać różnymi planami wynagrodzeń dla różnych grup pracowników w organizacji. Role zabezpieczeń można przypisać do planów stałych i zmiennych. Te role zabezpieczeń określają dostęp do planów i powiązanych danych pracownika, takich jak wynagrodzenia i dodatki, więc tylko te role mogą przetwarzać wynagrodzenia dla grup pracowników.
@@ -79,4 +79,4 @@ Organizacje mogą wymagać ustawienia kodów przyczyn dla określonych typów ur
 Ta zmiana powoduje, że zduplikowane pozycje są wykrywane po wypełnieniu pól nazwisk, a stan pokazuje liczbę zduplikowanych pozycji. Można wybrać podane łącze, aby otworzyć nową stronę w celu dokonania oceny, czy ma być używane wykryte dopasowanie. Aby uniknąć zakłóceń we wprowadzaniu danych, formularz zduplikowanych pozycji nie jest automatycznie otwierany.
 
 ###  <a name="email-support-for-alerts"></a>Pomoc techniczna e-mail dla alertów
-Aktualizacja platformy 25 pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia do kontaktów w wyniku wyzwolenia przez zdarzenie. 
+Aktualizacja Platform update 25 dla rozwiązania Finance and Operations pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia e-mail do kontaktów w wyniku wyzwolenia przez zdarzenie. 

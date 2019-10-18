@@ -1,7 +1,7 @@
 ---
 title: Zmiana porządku sortowania dla podmiotów merchandisingowych
-description: W tym temacie objaśniono koncepcje związane z kontrolowaniem kolejności wyświetlania dla różnych jednostek związanych z merchandisingiem w Microsoft Dynamics 365 for Retail.
-author: ashishharchwani
+description: W tym temacie objaśniono koncepcje związane z kontrolowaniem kolejności wyświetlania dla różnych jednostek związanych z merchandisingiem w Dynamics 365 Retail.
+author: josaw1
 manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
@@ -18,16 +18,16 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2be3c1198ac6fff851be1bead2f0995202f1f0e7
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c159ff869d6c504fdebbef1fa68115a410c81d85
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866168"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019423"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Zmiana porządku sortowania dla podmiotów merchandisingowych
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Detaliści uważają znajdowanie produktów za podstawowe narzędzie do wykrywania produktów na potrzeby interakcji z klientami w całym kanale sprzedaży detalicznej. Klienci mogą łatwo odkrywać produkty, korzystając z różnych funkcji. Na przykład mogą przeglądać kategorie, wyszukiwać i filtrować.
@@ -38,7 +38,7 @@ W tym temacie objaśniono koncepcje związane z kontrolowaniem kolejności wyśw
 
 Obsługa sortowania różnych jednostek dotyczących merchandisingu została ulepszona. Ta obsługa jest teraz lepiej wyrównana z istniejącymi scenariuszami klientów, które wcześniej wymagały rozszerzeń od partnerów implementacji.
 
-W wersjach Microsoft Dynamics 365 for Retail starszych niż wersja 10.0.5 kolejność sortowania kategorii w hierarchii nawigacji była alfabetyczna. Nowa funkcja niestandardowej kolejności sortowania umożliwia menedżerom ds. merchadisingu konfigurowanie kolejności sortowania różnych jednostek związanych z merchandisingiem dla wszystkich klientów końcowych. Do tych klientów należą: Centrala (HQ) i biura obsługi.
+W wersjach Retail starszych niż wersja 10.0.5 kolejność sortowania kategorii w hierarchii nawigacji była alfabetyczna. Nowa funkcja niestandardowej kolejności sortowania umożliwia menedżerom ds. merchadisingu konfigurowanie kolejności sortowania różnych jednostek związanych z merchandisingiem dla wszystkich klientów końcowych. Do tych klientów należą: Centrala (HQ) i biura obsługi.
 
 ## <a name="configure-the-display-order-for-categories-in-the-retail-product-hierarchy"></a>Skonfiguruj kolejność wyświetlania dla kategorii w hierarchii produktów sieci sprzedaży
 

@@ -1,6 +1,6 @@
 ---
-title: Edytowanie przewodników wdrażania do pracy i szablonów w Dynamics 365 for Talent - Onboard
-description: W tym temacie opisano sposób dodawania działań i innych informacji do przewodników wdrażania do pracy i szablonów w Dynamics 365 for Talent - Onboard, rozwiązaniu Microsoft.
+title: Edytowanie przewodników wdrażania do pracy i szablonów w Dynamics 365 Talent - Onboard
+description: W tym temacie opisano sposób dodawania działań i innych informacji do przewodników wdrażania do pracy i szablonów w Dynamics 365 Talent - Onboard rozwiązania Microsoft.
 author: andreabichsel
 manager: ''
 ms.date: 06/19/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68afc5d789d1f4af67cd2ec73eb0e073efad0761
-ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
+ms.openlocfilehash: 7803c7cd2c58b8544d2c8dd711c295d6882f9fca
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1864400"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010805"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-for-talent-onboard"></a>Edytowanie przewodników wdrażania do pracy i szablonów w Dynamics 365 for Talent: Onboard
+# <a name="edit-onboarding-guides-and-templates"></a>Edytowanie przewodników i szablonów wdrażania do pracy
 
 [!include [banner](includes/banner.md)]
 
-Po utworzeniu przewodnika lub szablonu w systemie Microsoft Dynamics 365 for Talent: Onboard należy dodać do niego wprowadzenie, działania, kontakty i zasoby. Onboard umożliwia dołączanie bogatej zawartości do przewdoników wdrażania do pracy, w tym:
+Po utworzeniu przewodnika lub szablonu w systemie Microsoft Dynamics 365 Talent: Onboard należy dodać do niego wprowadzenie, działania, kontakty i zasoby. Onboard umożliwia dołączanie bogatej zawartości do przewdoników wdrażania do pracy, w tym:
 
 - Filmiki YouTube
 - Prezentacje aplikacji Microsoft Sway

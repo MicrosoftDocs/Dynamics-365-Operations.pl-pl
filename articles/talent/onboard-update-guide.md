@@ -1,6 +1,6 @@
 ---
-title: Aktualizuj przewodniki wdrażania do pracy q Dynamics 365 for Talent - Onboard
-description: W tym temacie wyjaśniono, jak aktualizować przewodniki wdrażania do pracy w Microsoft Dynamics 365 for Talent - Onboard oraz jak wprowadzać zmiany w istniejących przewodnikach.
+title: Aktualizuj przewodniki wdrażania do pracy w Dynamics 365 Talent - Onboard
+description: W tym temacie wyjaśniono, jak aktualizować przewodniki wdrażania do pracy w Microsoft Dynamics 365 Talent - Onboard oraz jak wprowadzać zmiany w istniejących przewodnikach.
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d2be450685724510db2f0fd2af8545f8f40278e7
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731604"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010736"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-for-talent-onboard"></a>Aktualizuj przewodniki wdrażania do pracy w Dynamics 365 for Talent: Onboard
+# <a name="update-onboarding-guides"></a>Aktualizuj przewodniki wdrażania do pracy
 
 [!include [banner](includes/banner.md)]
 
-Jeśli musisz wprowadzić zmiany do przewodników dołączania w Microsoft Dynamics 365 for Talent: Onboard, możesz je aktualizować i wprowadzać zmiany, nawet jeśli już zostały wysłane. Dostępne są dwie opcje aktualizowania przewodnika wdrażania do pracy:
+Jeśli musisz wprowadzić zmiany do przewodników dołączania w Microsoft Dynamics 365 Talent: Onboard, możesz je aktualizować i wprowadzać zmiany, nawet jeśli już zostały wysłane. Dostępne są dwie opcje aktualizowania przewodnika wdrażania do pracy:
 
 - Edytuj przewodnik wdrażania do pracy bezpośrednio i zapisz zmiany.
 - Edytuj szablon wdrażania do pracy, a następnie wprowadź zmiany do wszystkich przewodników wdrażania do pracy, które zostały utworzone z niego.
