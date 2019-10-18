@@ -3,7 +3,7 @@ title: Obsługa zamówień planowanych
 description: Ten temat zawiera informacje o metodach zarządzania zamówienia planowanymi. Opisano w nim sposób aktualizowania stanów zamówień planowanych i ich potwierdzania oraz odfiltrowywania zamówień planowanych, które mają taki sam stan jak wybrane zamówienie planowane.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 10/02/2018
+ms.date: 09/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,37 +19,50 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf578d98abc4825c5607ec031da6ab6737c3183a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5ddf2c7b4c67bec6c29387c78d1fdb021d85d702
+ms.sourcegitcommit: 620e15555d176eec3905b48d5001af1c50107ce6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560379"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "1993447"
 ---
-# <a name="maintain-planned-orders"></a><span data-ttu-id="f6d58-104">Obsługa zamówień planowanych</span><span class="sxs-lookup"><span data-stu-id="f6d58-104">Maintain planned orders</span></span>
+# <a name="maintain-planned-orders"></a><span data-ttu-id="7e95f-104">Obsługa zamówień planowanych</span><span class="sxs-lookup"><span data-stu-id="7e95f-104">Maintain planned orders</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f6d58-105">Ten temat zawiera informacje o metodach zarządzania zamówienia planowanymi.</span><span class="sxs-lookup"><span data-stu-id="f6d58-105">This topic provides information about how to manage planned orders.</span></span> <span data-ttu-id="f6d58-106">Opisano w nim sposób aktualizowania stanów zamówień planowanych i ich potwierdzania oraz odfiltrowywania zamówień planowanych, które mają taki sam stan jak wybrane zamówienie planowane.</span><span class="sxs-lookup"><span data-stu-id="f6d58-106">It describes how you can update the status of planned orders, firm them, and filter for planned orders that have the same status as a selected planned order.</span></span>
+<span data-ttu-id="7e95f-105">Ten temat zawiera informacje o metodach zarządzania zamówienia planowanymi.</span><span class="sxs-lookup"><span data-stu-id="7e95f-105">This topic provides information about how to manage planned orders.</span></span> <span data-ttu-id="7e95f-106">Opisano w nim sposób aktualizowania stanów zamówień planowanych i ich potwierdzania oraz odfiltrowywania zamówień planowanych, które mają taki sam stan jak wybrane zamówienie planowane.</span><span class="sxs-lookup"><span data-stu-id="7e95f-106">It describes how you can update the status of planned orders, firm them, and filter for planned orders that have the same status as a selected planned order.</span></span>
 
-<span data-ttu-id="f6d58-107">Można zarządzać planowanymi zamówieniami z obszaru roboczego **Planowanie główne**, listy **Zamówienie planowane** lub list **Planowane zamówienia zakupu**, **Planowane zlecenia produkcyjne** i **Planowane przeniesienie**.</span><span class="sxs-lookup"><span data-stu-id="f6d58-107">You can manage planned orders from the **Master planning** workspace, the **Planned order** list, or the **Planned production orders**, **Planned purchase orders**, and **Planned transfer** lists.</span></span> <span data-ttu-id="f6d58-108">Pole **Stan** pomaga w śledzeniu postępu zamówień.</span><span class="sxs-lookup"><span data-stu-id="f6d58-108">You can use the **Status** field to help track your progress.</span></span> <span data-ttu-id="f6d58-109">Używane są następujące wartości:</span><span class="sxs-lookup"><span data-stu-id="f6d58-109">The following values are used:</span></span>
+<span data-ttu-id="7e95f-107">Można zarządzać planowanymi zamówieniami z obszaru roboczego **Planowanie główne**, listy **Zamówienie planowane** lub list **Planowane zamówienia zakupu**, **Planowane zlecenia produkcyjne** i **Planowane przeniesienie**.</span><span class="sxs-lookup"><span data-stu-id="7e95f-107">You can manage planned orders from the **Master planning** workspace, the **Planned order** list, or the **Planned production orders**, **Planned purchase orders**, and **Planned transfer** lists.</span></span> 
 
--   <span data-ttu-id="f6d58-110">Zamówienia planowane generowane podczas planowania głównego mają stan **Nieprzetworzone**.</span><span class="sxs-lookup"><span data-stu-id="f6d58-110">When master planning generates planned orders, the planned orders have a status of **Unprocessed**.</span></span>
--   <span data-ttu-id="f6d58-111">Jeżeli nie chcesz ustalać zamówienia planowanego, możesz nadać mu stan **Zakończone**.</span><span class="sxs-lookup"><span data-stu-id="f6d58-111">If you decide not to firm a planned order, you can give it a status of **Completed**.</span></span>
--   <span data-ttu-id="f6d58-112">Aby ustalić zamówienie planowane, nadaj mu stan **Zatwierdzone**.</span><span class="sxs-lookup"><span data-stu-id="f6d58-112">When you decide to firm a planned order, you can give it a status of **Approved**.</span></span> <span data-ttu-id="f6d58-113">Ten stan oznacza, że użytkownik zatwierdza ustalanie zamówienia planowanego, ale nie jest ono jeszcze ustalone.</span><span class="sxs-lookup"><span data-stu-id="f6d58-113">This status indicates that you approve firming of the planned order, but it isn't firmed yet.</span></span>
+## <a name="planned-order-status"></a><span data-ttu-id="7e95f-108">Stan zamówienia planowanego</span><span class="sxs-lookup"><span data-stu-id="7e95f-108">Planned order status</span></span>
+<span data-ttu-id="7e95f-109">Pole **Stan** pomaga w śledzeniu postępu zamówień.</span><span class="sxs-lookup"><span data-stu-id="7e95f-109">You can use the **Status** field to help track your progress.</span></span> <span data-ttu-id="7e95f-110">Używane są następujące wartości:</span><span class="sxs-lookup"><span data-stu-id="7e95f-110">The following values are used:</span></span>
 
-<span data-ttu-id="f6d58-114">**Uwaga:** zatwierdzone zamówienie planowane jest przesyłane w aktualnym stanie do kolejnego obliczenia planu głównego.</span><span class="sxs-lookup"><span data-stu-id="f6d58-114">**Note:** An approved planned order is transferred, in its current state, to the next master planning calculation.</span></span> <span data-ttu-id="f6d58-115">Aby ustalić zamówienia planowane, należy kolejno kliknąć opcję **Akceptuj**.</span><span class="sxs-lookup"><span data-stu-id="f6d58-115">You can firm planned orders by clicking **Firm**.</span></span> <span data-ttu-id="f6d58-116">Można ustalić następujące zamówienia planowane:</span><span class="sxs-lookup"><span data-stu-id="f6d58-116">You can firm the following planned orders:</span></span>
+-   <span data-ttu-id="7e95f-111">Zamówienia planowane generowane podczas planowania głównego mają stan **Nieprzetworzone**.</span><span class="sxs-lookup"><span data-stu-id="7e95f-111">When master planning generates planned orders, the planned orders have a status of **Unprocessed**.</span></span>
+-   <span data-ttu-id="7e95f-112">Jeżeli nie chcesz ustalać zamówienia planowanego, możesz nadać mu stan **Zakończone**.</span><span class="sxs-lookup"><span data-stu-id="7e95f-112">If you decide not to firm a planned order, you can give it a status of **Completed**.</span></span>
+-   <span data-ttu-id="7e95f-113">Aby ustalić zamówienie planowane, można zmienić stan na **zatwierdzone**.</span><span class="sxs-lookup"><span data-stu-id="7e95f-113">If you want to firm a planned order, you can change the status to **Approved**.</span></span> <span data-ttu-id="7e95f-114">Zamówienia planowane ze **stanem zatwierdzonym** są przestrzegane w planowaniu głównym, więc nie można ich modyfikować ani usuwać.</span><span class="sxs-lookup"><span data-stu-id="7e95f-114">Planned orders with **Approved** status are respected by master planning, so they are not modified or deleted.</span></span> 
 
--   <span data-ttu-id="f6d58-117">Wybrane zamówienie planowane.</span><span class="sxs-lookup"><span data-stu-id="f6d58-117">The planned order that is selected.</span></span>
--   <span data-ttu-id="f6d58-118">Wiele zamówień planowanych.</span><span class="sxs-lookup"><span data-stu-id="f6d58-118">Multiple planned orders.</span></span>
--   <span data-ttu-id="f6d58-119">Zamówienia planowane generowane przez rozłożenie ze strony **Rozkładanie**.</span><span class="sxs-lookup"><span data-stu-id="f6d58-119">Planned orders that are generated by an explosion from the **Explosion** page.</span></span> <span data-ttu-id="f6d58-120">Kliknij opcję **Zamówienia planowane**, wybierz zamówienie planowane, a następnie kliknij opcję **Akceptuj**.</span><span class="sxs-lookup"><span data-stu-id="f6d58-120">Click **Planned orders**, select the planned order, and then click **Firm**.</span></span>
+## <a name="firming-planned-orders"></a><span data-ttu-id="7e95f-115">Akceptacja planowanych zamówień</span><span class="sxs-lookup"><span data-stu-id="7e95f-115">Firming planned orders</span></span> 
+<span data-ttu-id="7e95f-116">Podczas ustalania zamówień planowanych tworzone są rzeczywiste zamówienia.</span><span class="sxs-lookup"><span data-stu-id="7e95f-116">By firming planned orders, real orders are created.</span></span> <span data-ttu-id="7e95f-117">Są one również znane jako zamówienia *zwolnione* lub *otwarte*.</span><span class="sxs-lookup"><span data-stu-id="7e95f-117">These are also know as *released* or *open orders*.</span></span> <span data-ttu-id="7e95f-118">Po ustaleniu zamówienie planowane zostanie przesunięte do sekcji zamówień w odpowiednim module.</span><span class="sxs-lookup"><span data-stu-id="7e95f-118">When a planned order is firmed, it's moved to the orders section of the relevant module.</span></span>
 
-<span data-ttu-id="f6d58-121">Po ustaleniu zamówienie planowane zostanie przesunięte do sekcji zamówień w odpowiednim module.</span><span class="sxs-lookup"><span data-stu-id="f6d58-121">When a planned order is firmed, it's moved to the orders section of the relevant module.</span></span> 
+<span data-ttu-id="7e95f-119">Na stronie **zamówienia planowane** można wybrać dwie opcje ustalania:</span><span class="sxs-lookup"><span data-stu-id="7e95f-119">You can select two firming options from the **Planned orders** page:</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="f6d58-122">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="f6d58-122">Additional resources</span></span>
+-   <span data-ttu-id="7e95f-120">**Akceptowane** — umożliwia ustalenie jednego lub wielu wybranych zamówień planowanych.</span><span class="sxs-lookup"><span data-stu-id="7e95f-120">**Firm** – This will firm one or multiple selected planned orders.</span></span>
+-   <span data-ttu-id="7e95f-121">**Zaakceptuj wszystko** — spowoduje to ustalenie wszystkich zamówień planowanych w filtrze.</span><span class="sxs-lookup"><span data-stu-id="7e95f-121">**Firm all** – This will firm all planned orders in the filter.</span></span> <span data-ttu-id="7e95f-122">Używanie **zaakceptuj wszystko** nie musisz wybierać planowanego zamówienia, wszystkie planowane zamówienia w ramach filtru zostaną ustalone.</span><span class="sxs-lookup"><span data-stu-id="7e95f-122">Using **Firm all** you don’t have to select the planned order, all planned orders within the filter will be firmed.</span></span> <span data-ttu-id="7e95f-123">Ta opcja może być przydatna w przypadku ustalania dużej liczby zamówień planowanych.</span><span class="sxs-lookup"><span data-stu-id="7e95f-123">This option can be useful if you are firming a high number of planned orders.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="7e95f-124">Istnieje możliwość śledzenia planowanego zamówienia, które zostało ustalone z **Historia akceptacji** pod **Planowane formularze zamówień > Zobacz > Historia akceptacji**.</span><span class="sxs-lookup"><span data-stu-id="7e95f-124">You can track a planned order that was firmed from **Firming history** under **Planned orders form > View > Firming history**.</span></span>
+
+## <a name="parallelize-firming"></a><span data-ttu-id="7e95f-125">Zrównoleglenie akceptacji</span><span class="sxs-lookup"><span data-stu-id="7e95f-125">Parallelize firming</span></span>
+<span data-ttu-id="7e95f-126">Jeśli planujesz ustalać wiele zamówień w tym samym czasie, parallelizing przebieg może poprawić czas działania lub wydajność.</span><span class="sxs-lookup"><span data-stu-id="7e95f-126">If you are planning to firm many orders at the same time, parallelizing the run can improve the run time or performance.</span></span> <span data-ttu-id="7e95f-127">Ta opcja jest dostępna podczas ustalania wielu zamówień planowanych z **Zaakceptuj** lub **Zaakceptuj wszystko**.</span><span class="sxs-lookup"><span data-stu-id="7e95f-127">This option is available when firming multiple planned orders with either **Firm** or **Firm all**.</span></span> <span data-ttu-id="7e95f-128">Dostępne są następujące parametry:</span><span class="sxs-lookup"><span data-stu-id="7e95f-128">The following parameters are available:</span></span>
+
+-   <span data-ttu-id="7e95f-129">**Równoległa akceptacja** — Jeśli **tak**, proces ustalania będzie równoległy do liczby wątków zdefiniowanych w **liczbie wątków.**</span><span class="sxs-lookup"><span data-stu-id="7e95f-129">**Parallelize firming** – If **Yes**, the firming process will be parallelized with the number of threads defined in **Number of threads**.</span></span>
+-   <span data-ttu-id="7e95f-130">**Liczba wątków** — określa liczbę wątków używanych do parallelize procesu ustalania.</span><span class="sxs-lookup"><span data-stu-id="7e95f-130">**Number of threads** – Controls the number of threads used to parallelize the firming process.</span></span> <span data-ttu-id="7e95f-131">Parametr jest wyświetlany tylko wtedy, gdy ustawienie **Równoległa akceptacja** ma wartość **tak**.</span><span class="sxs-lookup"><span data-stu-id="7e95f-131">The parameter is only shown when **Parallelize firming** is set to **Yes**.</span></span>
+
+
+<a name="additional-resources"></a><span data-ttu-id="7e95f-132">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="7e95f-132">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="f6d58-123">Plany główne</span><span class="sxs-lookup"><span data-stu-id="f6d58-123">Master plans</span></span>](master-plans.md)
+[<span data-ttu-id="7e95f-133">Plany główne</span><span class="sxs-lookup"><span data-stu-id="7e95f-133">Master plans</span></span>](master-plans.md)
 
 
 
