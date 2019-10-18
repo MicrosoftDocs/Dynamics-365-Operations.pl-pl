@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522204"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249977"
 ---
 # <a name="routes-and-operations"></a>Marszruty i operacje
 
@@ -35,7 +35,7 @@ Ten temat zawiera informacje o marszrutach i operacjach. Marszruta definiuje pro
 <a name="overview"></a>Przegląd
 --------
 
-Marszruta opisuje kolejność operacji niezbędnych w celu wytworzenia produktu lub wariantu produktu. Dla każdej operacji marszruta definiuje również wymagane zasoby operacyjne, czas potrzebny na przezbrojenie i wykonanie operacji oraz sposób obliczania kosztów. Można użyć tej samej marszruty do wytwarzania wielu produktów lub zdefiniować unikatową marszrutę dla każdego produktu lub wariantu produktu. Można nawet mieć wiele marszrut dla tego samego produktu. W takim przypadku używana marszruta zmienia się i zależy od czynników takich jak ilość, która musi zostać wyprodukowana. Definicja marszruty w programie Microsoft Dynamics 365 for Finance and Operations składa się z czterech oddzielnych elementów, które wspólnie opisują proces produkcji:
+Marszruta opisuje kolejność operacji niezbędnych w celu wytworzenia produktu lub wariantu produktu. Dla każdej operacji marszruta definiuje również wymagane zasoby operacyjne, czas potrzebny na przezbrojenie i wykonanie operacji oraz sposób obliczania kosztów. Można użyć tej samej marszruty do wytwarzania wielu produktów lub zdefiniować unikatową marszrutę dla każdego produktu lub wariantu produktu. Można nawet mieć wiele marszrut dla tego samego produktu. W takim przypadku używana marszruta zmienia się i zależy od czynników takich jak ilość, która musi zostać wyprodukowana. Definicja marszruty w programie Finance and Operations składa się z czterech oddzielnych elementów, które wspólnie opisują proces produkcji:
 
 -   **Marszruta** — Marszruta definiuje strukturę procesu produkcji. Innymi słowy definiuje kolejność operacji.
 -   **Operacja** — Operacja identyfikuje nazwany krok w marszrucie, taki jak **Montaż**. Ta sama operacja może wystąpić w wielu marszrutach i mieć różne numery operacji.
@@ -43,7 +43,7 @@ Marszruta opisuje kolejność operacji niezbędnych w celu wytworzenia produktu 
 -   **Wersja marszruty** — Wersja marszruty określa marszrutę używaną do wytworzenia produktu lub wariantu produktu. Wersje marszrut umożliwiają wykorzystywanie marszrut do różnych produktów lub ich późniejszą zmianę. Umożliwiają również używanie różnych marszrut do wytwarzania tego samego produktu. W takim przypadku używana marszruta zależy od czynników takich jak lokalizacja lub ilość, która musi zostać wyprodukowana.
 
 ## <a name="routes"></a>Marszruty
-Marszruta opisuje kolejność operacji niezbędnych do wytworzenia produktu lub wariantu produktu. Każdej operacji jest przypisywany numer operacji i operacja następująca. Kolejność operacji tworzy sieć marszrut, które mogą być reprezentowane przez ukierunkowany wykres mający jeden lub więcej punktów początkowych i jeden punkt końcowy. W programie Finance and Operations marszruty są rozróżniane na podstawie typu struktury. Istnieją dwa typy marszrut: proste i sieciowe. W oknie Parametry kontroli produkcji można określić, czy mogą być używane tylko marszruty proste czy też można używać bardziej złożonych marszrut sieciowych.
+Marszruta opisuje kolejność operacji niezbędnych do wytworzenia produktu lub wariantu produktu. Każdej operacji jest przypisywany numer operacji i operacja następująca. Kolejność operacji tworzy sieć marszrut, które mogą być reprezentowane przez ukierunkowany wykres mający jeden lub więcej punktów początkowych i jeden punkt końcowy. W programie Supply Chain Management trasy są rozróżniane na podstawie typu struktury. Istnieją dwa typy marszrut: proste i sieciowe. W oknie Parametry kontroli produkcji można określić, czy mogą być używane tylko marszruty proste czy też można używać bardziej złożonych marszrut sieciowych.
 
 ### <a name="simple-routes"></a>Marszruty proste
 
@@ -51,7 +51,7 @@ Marszruta prosta jest sekwencyjna i istnieje tylko jeden punkt początkowy marsz
 
 [![Marszruta prosta](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Jeśli w oknie Parametry kontroli produkcji zostanie włączona obsługa tylko prostych marszrut, program Finance and Operations będzie automatycznie generował numery operacji (10, 20, 30 i tak dalej) podczas definiowania marszruty.
+Jeśli w oknie Parametry kontroli produkcji zostanie włączona obsługa tylko prostych marszrut, program Supply Chain Management będzie automatycznie generował numery operacji (10, 20, 30 i tak dalej) podczas definiowania tras.
 
 ### <a name="route-networks"></a>Marszruty sieciowe
 
@@ -84,8 +84,8 @@ Każdą marszrutę można z osobna zatwierdzać lub odmawiać zatwierdzenia. Nal
 
 Jeśli trzeba prowadzić dziennik przechowujący informacje o tym, kto zatwierdza każdą marszrutę, można wymagać podpisów elektronicznych dla zatwierdzania marszrut. Wtedy użytkownicy będą musieli potwierdzić swoją tożsamość za pomocą [podpisu elektronicznego](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
 
-## <a name="operations"></a>Operations
-Operacja jest etapem procesu produkcji. W programie Finance and Operations każda operacja ma identyfikator i prosty opis. Następujące tabele przedstawiają typowe przykłady operacji w warsztacie.
+## <a name="operations"></a>Działania operacyjne
+Operacja jest etapem procesu produkcji. Każda operacja ma identyfikator i prosty opis. Następujące tabele przedstawiają typowe przykłady operacji w warsztacie.
 
 | Operacja  | opis        |
 |------------|--------------------|
@@ -126,7 +126,7 @@ Relacje operacji dają dużą elastyczność podczas definiowania marszrut. Pona
 
 ### <a name="modifying-product-specific-routes"></a>Modyfikowanie marszrut specyficznych dla produktów
 
-Po otwarciu strony **Marszruta** ze strony **Szczegóły zwolnionego produktu** są wyświetlane wersje marszruty skojarzone z wybranym zwolnionym produktem. W tym kontekście dla każdej operacji program Finance and Operations pokazuje właściwości operacyjne z relacji operacji najlepiej pasującej do wersji marszruty. Można zauważyć, że lista operacji zawiera właściwości **Kod pozycji** i **Kod marszruty** z relacji operacji. W związku z tym można określić, która relacja operacji jest wyświetlana.  
+Po otwarciu strony **Marszruta** ze strony **Szczegóły zwolnionego produktu** są wyświetlane wersje marszruty skojarzone z wybranym zwolnionym produktem. W tym kontekście dla każdej operacji program Supply Chain Management pokazuje właściwości operacyjne z relacji operacji najlepiej pasującej do wersji trasy. Można zauważyć, że lista operacji zawiera właściwości **Kod pozycji** i **Kod marszruty** z relacji operacji. W związku z tym można określić, która relacja operacji jest wyświetlana.  
 
 Na stronie **Marszruta** można zmodyfikować właściwości operacyjnych operacji, takie jak czas wykonywania lub kategorie kosztów. Wprowadzone zmiany są przechowywane w relacji operacji specyficznej dla marszruty i zwolnionego produktu, do których odwołuje się bieżąca wersja marszruty. Jeśli wyświetlana relacja operacji nie jest specyficzna dla marszruty i zwolnionego produktu, przed zapisaniem zmian system tworzy kopię relacji operacji. Ta kopia *jest* specyficzna dla marszruty i zwolnionego produktu. W związku z tym wprowadzone zmiany nie mają wpływu na pozostałe marszruty ani zwolnione produkty. Aby sprawdzić, która relacja operacji jest modyfikowana na stronie **Marszruta**, spójrz w pola **Kod pozycji** i **Kod marszruty**.  
 
@@ -149,9 +149,9 @@ Jeśli firma używa standardowych operacji, a parametry operacyjne są takie sam
 
 ### <a name="applying-operation-relations"></a>Stosowanie relacji operacji
 
-W niektórych przypadkach program Finance and Operations musi znaleźć właściwości operacyjne operacji. Na przykład podczas tworzenia zamówienia zakupu właściwości operacyjne każdej operacji muszą zostać skopiowane z relacji operacji do marszruty produkcji. W takich sytuacjach program Finance and Operations szuka odnośnych relacji operacji w porządku od najbardziej specyficznej kombinacji do najmniej specyficznej kombinacji.  
+W niektórych przypadkach program Supply Chain Management musi znaleźć właściwości operacyjne operacji. Na przykład podczas tworzenia zamówienia zakupu właściwości operacyjne każdej operacji muszą zostać skopiowane z relacji operacji do marszruty produkcji. W takich sytuacjach program Supply Chain Management szuka odnośnych relacji operacji w porządku od najbardziej specyficznej kombinacji do najmniej specyficznej kombinacji.  
 
-Kiedy program Finance and Operations szuka najbardziej odpowiedniej relacji operacji dla zwolnionego produktu, relacja operacji pasująca do identyfikatora towaru zwolnionego produktu jest preferowana wobec relacji operacji, która pasuje do identyfikator grupy towarów. Z kolei relacja operacji pasująca do identyfikatora grupy towarów jest preferowana wobec domyślnej relacji operacji. Wyszukiwanie odbywa się w następującej kolejności:
+Kiedy program Supply Chain Management szuka najbardziej odpowiedniej relacji operacji dla zwolnionego produktu, relacja operacji pasująca do identyfikatora towaru zwolnionego produktu jest preferowana wobec relacji operacji, która pasuje do identyfikator grupy towarów. Z kolei relacja operacji pasująca do identyfikatora grupy towarów jest preferowana wobec domyślnej relacji operacji. Wyszukiwanie odbywa się w następującej kolejności:
 
 1.  **Kod pozycji**=**Tabela** i **Relacja produktu**=&lt;identyfikator towaru&gt;
 2.  **Kod pozycji**=**Grupa** i **Relacja produktu**=&lt;identyfikator grupy towarów&gt;
@@ -198,7 +198,7 @@ W zależności od wymagań biznesowych może być możliwe zmniejszenie nakładu
 
 ### <a name="making-routes-independent-of-resources"></a>Uniezależnianie marszrut od zasobów
 
-W wielu systemach w marszrucie należy określić zasób operacyjny lub grupę zasobów, które mają wykonać operację. Jednak w programie Finance and Operations można zdefiniować zestaw wymagań, które musi spełnić zasób operacyjny, aby mieć zastosowanie do operacji. W związku z tym konkretny zasób operacyjny lub grupa zasobów, które mają być używane, mogą zostać określone dopiero w trakcie faktycznego planowania operacji. Ta funkcja jest szczególnie przydatna, gdy masz wielu pracowników lub maszyn mogących wykonać tę samą operację.  
+W wielu systemach w marszrucie należy określić zasób operacyjny lub grupę zasobów, które mają wykonać operację. Jednak w programie Supply Chain Management można zdefiniować zestaw wymagań, które musi spełnić zasób operacyjny, aby mieć zastosowanie do operacji. W związku z tym konkretny zasób operacyjny lub grupa zasobów, które mają być używane, mogą zostać określone dopiero w trakcie faktycznego planowania operacji. Ta funkcja jest szczególnie przydatna, gdy masz wielu pracowników lub maszyn mogących wykonać tę samą operację.  
 
 Na przykład określasz, że operacja wymaga zasobu operacyjnego typu **Maszyna** o możliwości **Tłoczenie** wynoszącej 20 ton. Aparat planowania następnie powiąże te wymagania z określonym zasobem operacyjnym lub grupą zasobów w trakcie planowania operacji. Ponieważ można po prostu określić te wymagania zamiast przypisywać operacje do określonej maszyny, masz znacznie większą elastyczność. Dodatkowo jest łatwiejsze zarządzanie w trakcie przenoszenia zasobów lub dodawania nowych zasobów.  
 

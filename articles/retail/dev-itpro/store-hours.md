@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 1b55b91246b22951f4e1d148f59444423e1d8a3d
-ms.sourcegitcommit: e54607a2c80bec4db05045825914f50947f6e31e
+ms.openlocfilehash: 811d499a3eb8133e5ffd29bb4ae6a0c57708accd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1917519"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023449"
 ---
 # <a name="create-and-update-store-hours"></a>Tworzenie i aktualizacja godzin w sklepie
 
@@ -36,7 +36,7 @@ Wiele godzin sklepu można skonfigurować w różnych kanałach. Te kanały obej
 
 Jeśli odbiorca ma zamówienie pobrania dla innego sklepu, kasjer może wybrać daty, kiedy pobranie będzie dostępne w tym sklepie. Wyszukiwanie w sklepie będzie zawierać odwołanie do dat i godzin przechowywania. Kasjer może wybrać datę i lokalizację, a także wydrukować przyjęcie do pobrania zawierające godziny sklepowe.
 
-Ta funkcja jest dostępna w Microsoft Dynamics 365 for Retail wersjach 8.1.2 i nowszych.
+Ta funkcja jest dostępna w Microsoft Dynamics 365 Retail wersjach 8.1.2 i nowszych.
 
 ## <a name="configure-store-hours"></a>Konfiguruj godziny pracy sklepu
 

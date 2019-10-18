@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie cenami w sprzedaży detalicznej
-description: W tym temacie opisano pojęcia związane z tworzeniem i zarządzaniem cenami sprzedaży w Microsoft Dynamics 365 for Retail.
+description: W tym temacie opisano pojęcia związane z tworzeniem i zarządzaniem cenami sprzedaży w Dynamics 365 Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -17,18 +17,18 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 813547f522f5c69920eadf9df61e7f01b13ecd36
-ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
+ms.openlocfilehash: 081fadf0c120eba50af9e6c396fb3e492051bb3c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624796"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025225"
 ---
 # <a name="retail-sales-price-management"></a>Zarządzanie cenami sprzedaży w aplikacji Retail
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje o procesie tworzenia i zarządzania ceny sprzedaży w Microsoft Dynamics 365 for Retail. Koncentruje się na pojęciach występujących w tym procesie oraz na wpływie różnych opcji konfiguracji na ceny sprzedaży.
+Ten temat zawiera informacje o procesie tworzenia i zarządzania ceny sprzedaży w Dynamics 365 Retail. Koncentruje się na pojęciach występujących w tym procesie oraz na wpływie różnych opcji konfiguracji na ceny sprzedaży.
 
 ## <a name="terminology"></a>Terminologia
 

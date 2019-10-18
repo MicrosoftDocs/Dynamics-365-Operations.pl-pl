@@ -3,7 +3,7 @@ title: Ustawienia zapotrzebowania
 description: Ten temat zawiera informacje o ustawieniach zapotrzebowania, których planowanie główne używa do obliczania zapotrzebowania na towar.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99e094a7131b6d3a299fc72abd0141529908ddd2
-ms.sourcegitcommit: 9e50bee6a67f0fe2fa6f86e02c7e8de16d0e2482
+ms.openlocfilehash: 3a63184852751bb65fb7e80d721f8c48fd847609
+ms.sourcegitcommit: edfd805356894710488ce07cb1c89313f448b222
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538901"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "1998978"
 ---
 # <a name="coverage-settings"></a>Ustawienia zapotrzebowania
 
@@ -49,6 +49,19 @@ Ustawienia zapotrzebowania można określić na kilka sposobów:
 - Określ ustawienia zapotrzebowania dla grupy wymiarów.
 
     Przejdź do **Zarządzanie informacjami o produktach&gt; Produkty &gt; Zwolnione produkty**. Na stronie **Szczegóły zwolnionego produktu** na skróconej karcie **Ogólne** w grupie **Administracja** kliknij łącze w polu **Grupa wymiarów magazynowania**. Na stronie **Grupy wymiarów magazynowania** zaznacz pole **Plan zapotrzebowania wg wymiaru**, aby utworzyć ustawienia zapotrzebowania dla wymiaru w grupie wymiarów magazynowania. Wszystkie wymiary produktów, takie jak konfiguracja, kolor, rozmiar, styl, muszą mieć zaznaczone pole **Plan zapotrzebowania wg wymiaru**.
+
+
+## <a name="coverage-codes"></a>Kody zapotrzebowania
+
+Planowanie główne można skonfigurować w taki sposób, aby korzystało z różnych metod uzupełniania zapasów. Metody uzupełniania lub metody ustalania wielkości zapasów są technikami stosowanymi w systemie do określania rozmiaru partii zakupionych lub wyprodukowanych towarów. 
+
+Do każdej metody uzupełnień jest przypisany jeden z następujących kodów zapotrzebowania:
+
+- **Ręczna** — metoda ustalania rozmiaru partii, w której system nie sugeruje nabywania, przenoszenia lub zleceń produkcyjnych dla danego towaru. Terminarz pozycji będzie odpowiedzialny za tworzenie wymaganych zamówień uzupełniania towaru.
+- **Dla zapotrzebowania** — metoda ustalania rozmiaru partii, w której system tworzy planowany zakup, przeniesienie lub zlecenie produkcyjne według zapotrzebowania na dany towar. Jest to zwykle używane w przypadku kosztownych towarów ze sporadycznym popytem.  
+- **Na okres** — metoda określania rozmiaru partii, która łączy wszystkie zapotrzebowania na okres w jednym zamówieniu towaru. Zamówienie zostanie zaplanowane na pierwszy dzień okresu, a jego ilość będzie spełniać zapotrzebowania netto w ustalonym okresie. Okres rozpoczyna się od pierwszego zapotrzebowania na towar i obejmuje zdefiniowany okres w czasie. Następny okres rozpocznie się od kolejnych wymagań dotyczących towaru.
+- **Minimum/maksimum** — metoda określania rozmiaru partii, która zawiera uzupełnienie zapasów do określonego poziomu, gdy przewidywana ilość zapasów jest mniejsza niż wartość progowa. Ilość uzupełniania zapasów będzie różnicą między maksymalnym poziomem i przewidywanym poziomem zapasów.
+
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

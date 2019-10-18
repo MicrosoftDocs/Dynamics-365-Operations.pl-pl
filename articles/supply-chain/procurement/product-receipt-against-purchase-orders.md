@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c1aaae7a276d098587b5b9c73e433694e3a6f9bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554352"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248927"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Przyjęcie produktów na podstawie zamówień zakupu
 
@@ -52,7 +52,7 @@ Można tworzyć wiersze zamówienia zakupu z włączoną opcją **Nowy środek t
 
 Można wybrać wiele zamówień i przetwarzać przyjęcia dla nich wszystkich razem. Takie podejście nie jest stosowane bardzo często, ale można go używać, jeśli dostawca skonsolidował wysyłki do Twojej firmy w jeden ładunek. Podczas przyjmowania kupionych produktów można użyć funkcji wykonywania zbiorczych aktualizacji. Aktualizacje zbiorcze pozwalają zaksięgować jeden dokument dostawy od dostawcy dla więcej niż jednego zamówienia zakupu.  
 
-Zamówienia zakupu mogą być tworzone na podstawie zamówienia sprzedaży, jeśli zaznaczono opcję **Dostawa bezpośrednia**. W przypadku używania dostawy bezpośredniej produkty nigdy nie przybywają do magazynu, ale są wysyłane bezpośrednio od dostawcy do odbiorcy. W takim przypadku przyjęcie jest zazwyczaj rejestrowane bezpośrednio w zamówieniu zakupu. Przyjęcie może się odbywać automatycznie, np. poprzez integrację z dostawcą za pośrednictwem systemu elektronicznej wymiany danych (EDI). Alternatywnie jeśli zamówienie zakupu jest międzyfirmowe, w momencie dostawy program Microsoft Dynamics 365 for Finance and Operations automatyzuje przyjęcie względem międzyfirmowego zamówienia sprzedaży. Gdy jest używana dostawa bezpośrednia, produkty są nadal ujmowane jako zapasy, mimo iż fizycznie nie przybywają do magazynu. W związku z tym po zarejestrowaniu przyjęcia produktów w zamówieniu zakupu zamówienie sprzedaży jest automatycznie aktualizowane o dokument dostawy, dzięki czemu łączna zmiana zapasów wynosi 0 (zero). W scenariuszach dostaw bezpośrednich nie powinno się wymagać wstępnej rejestracji. Jeśli używasz magazynów, w których włączono funkcjonalność zarządzania magazynem, można obejść wymóg rejestracji numerów identyfikacyjnych poprzez określenie wirtualnego magazynu. Taki magazyn określa się w polu **Magazyn dostawy bezpośredniej** w danych produktu. 
+Zamówienia zakupu mogą być tworzone na podstawie zamówienia sprzedaży, jeśli zaznaczono opcję **Dostawa bezpośrednia**. W przypadku używania dostawy bezpośredniej produkty nigdy nie przybywają do magazynu, ale są wysyłane bezpośrednio od dostawcy do odbiorcy. W takim przypadku przyjęcie jest zazwyczaj rejestrowane bezpośrednio w zamówieniu zakupu. Przyjęcie może się odbywać automatycznie, np. poprzez integrację z dostawcą za pośrednictwem systemu elektronicznej wymiany danych (EDI). Alternatywnie, jeśli zamówienie zakupu jest międzyfirmowe, w momencie dostawy Supply Chain Management automatyzuje przyjęcie względem międzyfirmowego zamówienia sprzedaży, kiedy wysyłka ma miejsce. Gdy jest używana dostawa bezpośrednia, produkty są nadal ujmowane jako zapasy, mimo iż fizycznie nie przybywają do magazynu. W związku z tym po zarejestrowaniu przyjęcia produktów w zamówieniu zakupu zamówienie sprzedaży jest automatycznie aktualizowane o dokument dostawy, dzięki czemu łączna zmiana zapasów wynosi 0 (zero). W scenariuszach dostaw bezpośrednich nie powinno się wymagać wstępnej rejestracji. Jeśli używasz magazynów, w których włączono funkcjonalność zarządzania magazynem, można obejść wymóg rejestracji numerów identyfikacyjnych poprzez określenie wirtualnego magazynu. Taki magazyn określa się w polu **Magazyn dostawy bezpośredniej** w danych produktu. 
 
 Po przetworzeniu przyjęcia produktów w zamówieniu zakupu stan zamówienia zakupu jest ustawiany na **Otrzymane**, aby wskazać, że można przetwarzać fakturę dla zamówienia. Można przejrzeć szczegółowe informacje o produktach, które już otrzymano, używając do tego strony **Arkusze dokumentów przyjęcia produktów**.  
 

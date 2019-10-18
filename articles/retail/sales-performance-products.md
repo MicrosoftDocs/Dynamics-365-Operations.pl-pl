@@ -1,6 +1,6 @@
 ---
 title: Ocenianie wydajności sprzedaży według produktów
-description: W programie Microsoft Dynamics 365 for Retail można badać rentowności 10 najlepszych produktów.
+description: W programie Dynamics 365 Retail można badać rentowności 10 najlepszych produktów.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 059474a780f849d6e1920703c1f717a9adaa2617
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7796aa830c99bd0fd5784ff95e509767a3b55b44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546393"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024967"
 ---
 # <a name="assess-sales-performance-by-product"></a>Ocenianie wydajności sprzedaży według produktów
 
 [!include [banner](includes/banner.md)]
 
-W programie Microsoft Dynamics 365 for Retail można badać rentowności 10 najlepszych produktów.
+W programie Dynamics 365 Retail można badać rentowności 10 najlepszych produktów.
 
-W programie Dynamics 365 for Retail użytkownicy mogą także analizować rentowność najlepszych produktów (10-100) na różnych poziomach hierarchii organizacyjnej na podstawie następujących kryteriów:
+W usłudze Retail użytkownicy mogą także analizować rentowność najlepszych produktów (10-100) na różnych poziomach hierarchii organizacyjnej na podstawie następujących kryteriów:
 
 - Kwota sprzedaży
 - Ilość

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b42f86fc243312d18654b1a048f9dffb29afd187
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afd4509bc9bdff345e48a590a12cc84ae25aebb8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550077"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018443"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Generowanie i uruchamianie gotowych raportów
 
@@ -43,7 +43,7 @@ Dane wykorzystane do stworzenia tego nagrania pochodzą z firmy demonstracyjnej 
 5. Wprowadź datę w polu Do dnia.
 6. W polu Kanał kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 7. W drzewie zaznacz element „Contoso Retail\Contoso Retail USA\Central\Houston”.
-    * Pokazuje to domyślną hierarchię organizacji sieci sprzedaży na potrzeby raportowania sieci sprzedaży.   Wybierz kolejno opcje Administrowanie organizacją >Organizacje > Cele hierarchii organizacji, wybierz opcję Raportowanie sieci sprzedaży i w obszarze Przypisane hierarchie sprawdź nazwę hierarchii, dla której jest zaznaczona kolumna Domyślnie.      W danych demonstracyjnych (używanych w tym nagraniu zadania) zauważysz, że Sklepy sieci sprzedaży według regionów to domyślna hierarchia organizacyjna dla raportowania sieci sprzedaży.     
+    * Pokazuje to domyślną hierarchię organizacji sieci sprzedaży na potrzeby raportowania sieci sprzedaży.   Wybierz kolejno opcje Administrowanie organizacją > Organizacje > Cele hierarchii organizacji, wybierz opcję Raportowanie sieci sprzedaży i w obszarze Przypisane hierarchie sprawdź nazwę hierarchii, dla której jest zaznaczona kolumna Domyślnie. W danych demonstracyjnych (używanych w tym nagraniu zadania) zauważysz, że Sklepy sieci sprzedaży według regionów to domyślna hierarchia organizacyjna dla raportowania sieci sprzedaży.     
 8. Kliknij przycisk OK.
 9. W polu Widok wybierz opcję.
 10. W polu Przez wybierz opcję.
@@ -55,7 +55,7 @@ Dane wykorzystane do stworzenia tego nagrania pochodzą z firmy demonstracyjnej 
 3. Wprowadź datę w polu Do dnia.
 4. W polu Kanał kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 5. W drzewie zaznacz element „Contoso Retail\Contoso Retail USA\West\Seattle”.
-    * Pokazuje to domyślną hierarchię organizacji sieci sprzedaży na potrzeby raportowania sieci sprzedaży.   Wybierz kolejno opcje Administrowanie organizacją >Organizacje > Cele hierarchii organizacji, wybierz opcję Raportowanie sieci sprzedaży i w obszarze Przypisane hierarchie sprawdź nazwę hierarchii, dla której jest zaznaczona kolumna Domyślnie.      W danych demonstracyjnych (używanych w tym nagraniu zadania) zauważysz, że Sklepy sieci sprzedaży według regionów to domyślna hierarchia organizacyjna dla raportowania sieci sprzedaży.     
+    * Pokazuje to domyślną hierarchię organizacji sieci sprzedaży na potrzeby raportowania sieci sprzedaży.   Wybierz kolejno opcje Administrowanie organizacją > Organizacje > Cele hierarchii organizacji, wybierz opcję Raportowanie sieci sprzedaży i w obszarze Przypisane hierarchie sprawdź nazwę hierarchii, dla której jest zaznaczona kolumna Domyślnie. W danych demonstracyjnych (używanych w tym nagraniu zadania) zauważysz, że Sklepy sieci sprzedaży według regionów to domyślna hierarchia organizacyjna dla raportowania sieci sprzedaży.     
 6. Kliknij przycisk OK.
 7. Kliknij przycisk OK.
 

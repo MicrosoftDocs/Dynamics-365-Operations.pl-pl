@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b71fde2d1b56b237dec2a08d3bd27e8ba6c35fef
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 42631e8a5ac03eda65bf0f6ede03fa40a5ed2c4e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595553"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250767"
 ---
 # <a name="demand-forecasting-overview"></a>Podstawowe informacje o prognozowaniu popytu
 
@@ -32,7 +32,7 @@ ms.locfileid: "1595553"
 
 Prognozowanie popytu jest używane do przewidywania niezależnego popytu z zamówień sprzedaży i zależnego popytu w dowolnym punkcie oddzielenia dla zamówień od odbiorców. Rozszerzone reguły redukcji prognozy popytu są doskonałym rozwiązaniem do masowego dostosowywania.
 
-Aby wygenerować prognozę bazową, podsumowanie transakcji historycznych jest przekazywane do usługi uczenia maszynowego Microsoft Azure hostowanej w Azure. Ponieważ ta usługa nie jest współużytkowana przez użytkowników, można ją łatwo dostosować do wymagań danej branży. Program Finance and Operations umożliwia wizualizację prognozy, korygowanie prognozy i wyświetlanie najważniejszych wskaźników trafności prognozy.
+Aby wygenerować prognozę bazową, podsumowanie transakcji historycznych jest przekazywane do usługi uczenia maszynowego Microsoft Azure hostowanej w Azure. Ponieważ ta usługa nie jest współużytkowana przez użytkowników, można ją łatwo dostosować do wymagań danej branży. Program Supply Chain Management umożliwia wizualizację prognozy, korygowanie prognozy i wyświetlanie najważniejszych wskaźników trafności prognozy.
 
 ## <a name="key-features-of-demand-forecasting"></a>Najważniejsze funkcje prognozowania popytu
 Poniżej przedstawiono główne funkcje prognozowania popytu:
@@ -49,8 +49,8 @@ Trzy najważniejsze motywy w prognozowaniu popytu:
 
 -   **Modułowość** — prognozowania popytu jest modułowe i łatwe do skonfigurowania. Funkcję tę można włączać i wyłączać poprzez zmianę klucza konfiguracji w oknie **Handel** &gt; **Prognoza zapasów** &gt; **Prognozowanie popytu**.
 -   **Ponowne użycie stosu Microsoft** — Firma Microsoft uruchomiła platformę do uczenia maszynowego w lutym 2015 r. Uczenie maszynowe, obecnie część pakietu analitycznego Microsoft Cortana, umożliwia szybkie i łatwe tworzenie eksperymentów analiz predykcyjnych, takich jak eksperymenty szacowania popytu, przy użyciu języków programowania algorytmów R lub Python oraz prostego w obsłudze interfejsu typu przeciągnij i upuść.
-    -   Można pobrać eksperymenty prognozowania popytu programu Finance and Operations, zmienić je odpowiednio do wymagań biznesowych, publikować jako usługi sieci web na Azure i używać ich do generowania prognoz popytu. Eksperymenty są dostępne do pobrania w ramach subskrypcji programu Finance and Operations do planowania produkcji przez użytkowników na poziomie organizacji.
-    -   Można pobrać dowolne z obecnie dostępnych eksperymentów przewidywania popytu z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Eksperymenty prognozowania popytu programu Finance and Operations są automatycznie integrowane z programem, natomiast klienci i partnerzy muszą ręcznie integrować eksperymenty pobierane z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Z tego względu eksperymenty z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/) nie są tak samo proste w użytkowaniu, jak eksperymenty w programie Finance and Operations. Konieczne jest zmodyfikowanie kodu eksperymentów, aby mogły korzystać z interfejsu API programu Finance and Operations.
+    -   Można pobrać eksperymenty prognozowania popytu, zmienić je odpowiednio do wymagań biznesowych, publikować jako usługi sieci web na Azure i używać ich do generowania prognoz popytu. Eksperymenty są dostępne do pobrania w ramach subskrypcji programu Finance and Operations do planowania produkcji przez użytkowników na poziomie organizacji.
+    -   Można pobrać dowolne z obecnie dostępnych eksperymentów przewidywania popytu z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Eksperymenty prognozowania popytu są automatycznie integrowane z Finance and Operations, natomiast klienci i partnerzy muszą ręcznie integrować eksperymenty pobierane z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Z tego względu eksperymenty z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/) nie są tak samo proste w użytkowaniu, jak eksperymenty w programie Finance and Operations. Konieczne jest zmodyfikowanie kodu eksperymentów, aby mogły korzystać z interfejsu API programu Finance and Operations.
     -   Można utworzyć własne eksperymenty w programie Microsoft Azure Machine Learning Studio, opublikować je jako usługi na Azure i używać do generowania prognoz popytu.
     -   Jeśli nie jest wymagana wysoka wydajność lub nie potrzeba przetwarzać bardzo dużych ilości danych, można korzystać z bezpłatnej wersji oprogramowania do uczenia maszynowego. Zalecamy rozpoczęcie pracy od wersji bezpłatnej, zwłaszcza w fazie testowania i implementacji. Jeśli konieczna jest większa wydajność i dodatkowa pamięć, można korzystać z wersji standardowej oprogramowania do uczenia maszynowego. Ta wersja wymaga subskrypcji usługi Azure i wiąże się z dodatkowymi kosztami. Aby uzyskać szczegółowe informacje o cenach oprogramowania do uczenia maszynowego, zobacz [Ceny studio uczenia maszynowego](https://aka.ms/machine-learning-price-info).
 -   **Zmniejszenie prognozy w dowolnym punkcie oddzielania** — Prognoza popytu w programie Finance and Operations dla tej funkcji, która pozwala prognozować zarówno zależny, jak i niezależny popyt w dowolnym punkcie oddzielania.
@@ -60,16 +60,16 @@ Poniższy wykres przedstawia podstawowy przepływ dla prognozowania popytu.
 
 [![diagram wprowadzenia do prognozowania popytu](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
-Generowanie prognozy popytu zaczyna się w programie Finance and Operations. Historyczne dane transakcji z bazy danych transakcji w programie Finance and Operations są zbierane i wpisywane do tabeli przejściowej. Zawartość tej tabeli przejściowej jest później przekazywana do usługi uczenia maszynowego. Do tabeli można podłączać różne źródła danych po ich odpowiednim dostosowaniu. Źródła danych mogą obejmować pliki programu Microsoft Excel, pliki z wartościami rozdzielanymi przecinkami (CSV) oraz danych z Microsoft Dynamics AX 2009 i Microsoft Dynamics AX 2012. W związku z tym można generować prognozy popytu uwzględniające dane historyczne rozproszone w wielu systemach. Jednak dane podstawowe, takie jak nazwy towarów oraz jednostki miary, muszą być takie same w różnych źródłach danych.
+Generowanie prognozy popytu rozpoczyna się w Supply Chain Management. Historyczne dane transakcji z bazy danych transakcji w programie Supply Chain Management są zbierane i wpisywane do tabeli przejściowej. Zawartość tej tabeli przejściowej jest później przekazywana do usługi uczenia maszynowego. Do tabeli można podłączać różne źródła danych po ich odpowiednim dostosowaniu. Źródła danych mogą obejmować pliki programu Microsoft Excel, pliki z wartościami rozdzielanymi przecinkami (CSV) oraz danych z Microsoft Dynamics AX 2009 i Microsoft Dynamics AX 2012. W związku z tym można generować prognozy popytu uwzględniające dane historyczne rozproszone w wielu systemach. Jednak dane podstawowe, takie jak nazwy towarów oraz jednostki miary, muszą być takie same w różnych źródłach danych.
 
-W przypadku korzystania z eksperymentów uczenia maszynowego do prognozowania popytu w programie Finance and Operations szukają one najlepszego dopasowania spośród pięciu metod prognozowania i obliczają prognozę bazową. Parametrami dla tych metod prognozowania zarządza się w programie Finance and Operations. 
+W przypadku korzystania z eksperymentów uczenia maszynowego do prognozowania popytu, szukają one najlepszego dopasowania spośród pięciu metod prognozowania i obliczają prognozę bazową. Parametrami dla tych metod prognozowania zarządza się w programie Supply Chain Management. 
 
 Prognozy, dane historyczne i wszelkie zmiany, które zostały wprowadzone w prognozach popytu w poprzednich iteracjach, są następnie dostępne w programie Finance and Operations. 
 
-Za pomocą programu Finance and Operations można wizualizować i modyfikować prognozy bazowe. Ręczne korekty wymagają autoryzacji przed zastosowaniem prognoz do planowania.
+Za pomocą programu Supply Chain Management można wizualizować i modyfikować prognozy bazowe. Ręczne korekty wymagają autoryzacji przed zastosowaniem prognoz do planowania.
 
 ## <a name="limitations"></a>Ograniczenia
-Prognozowanie popytu w programie Finance and Operations to narzędzie, które pomaga odbiorcom w przemyśle wytwórczym tworzyć procesy prognozowania. Oferuje podstawowe funkcje rozwiązania do prognozowania i jest zaprojektowane w taki sposób, że może być łatwo rozszerzone. Prognozowanie popytu nie musi być najlepszym narzędziem dla odbiorców w takich branżach, jak handel detaliczny, handel hurtowy, magazynowanie, transport lub inne usługi profesjonalne.
+Prognozowanie popytu to narzędzie, które pomaga odbiorcom w przemyśle produkcyjnym tworzyć procesy prognozowania. Oferuje podstawowe funkcje rozwiązania do prognozowania i jest zaprojektowane w taki sposób, że może być łatwo rozszerzone. Prognozowanie popytu nie musi być najlepszym narzędziem dla odbiorców w takich branżach, jak handel detaliczny, handel hurtowy, magazynowanie, transport lub inne usługi profesjonalne.
 
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------

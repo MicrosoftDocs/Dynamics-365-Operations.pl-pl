@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742640"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025060"
 ---
 # <a name="retail-peripherals"></a>Sklepowe urządzenia peryferyjne
 
@@ -116,9 +116,9 @@ Obsługa urządzeń płatniczych jest implementowana za pośrednictwem aplikacji
 
 ### <a name="opos"></a>OPOS
 
-Aby zagwarantować możliwość współpracy jak największej gamy urządzeń z programem Microsoft Dynamics 365 for Retail, podstawową platformą obsługi urządzeń peryferyjnych sieci sprzedaży w programie Microsoft Dynamics 365 for Retail jest mechanizm OLE for POS stanowiący branżowy standard. Standard OLE for POS sprzedaży został opracowany przez amerykańską Krajową Federację Sprzedawców Detalicznych (NRF), który ustanawia branżowe protokoły komunikacyjne dla urządzeń peryferyjnych sieci sprzedaży. OPOS jest powszechnie przyjętą implementacją standardu OLE for POS. Został opracowany w połowie lat 1990-ych od tego czasu był kilkukrotnie aktualizowany. Standard OPOS określa architekturę sterownika urządzenia, która umożliwia łatwą integrację urządzeń punktu sprzedaży z systemami punktu sprzedaży opartymi na systemie Windows. Formanty OPOS zarządzają komunikacją między zgodnymi urządzeniami a oprogramowaniem punktu sprzedaży. Formant OPOS składa się z dwóch części:
+Aby zagwarantować możliwość współpracy jak największej gamy urządzeń z Retail, podstawową platformą obsługi urządzeń peryferyjnych sieci sprzedaży jest mechanizm OLE for POS stanowiący branżowy standard. Standard OLE for POS sprzedaży został opracowany przez amerykańską Krajową Federację Sprzedawców Detalicznych (NRF), który ustanawia branżowe protokoły komunikacyjne dla urządzeń peryferyjnych sieci sprzedaży. OPOS jest powszechnie przyjętą implementacją standardu OLE for POS. Został opracowany w połowie lat 1990-ych od tego czasu był kilkukrotnie aktualizowany. Standard OPOS określa architekturę sterownika urządzenia, która umożliwia łatwą integrację urządzeń punktu sprzedaży z systemami punktu sprzedaży opartymi na systemie Windows. Formanty OPOS zarządzają komunikacją między zgodnymi urządzeniami a oprogramowaniem punktu sprzedaży. Formant OPOS składa się z dwóch części:
 
-- **Obiekt formantu** — Obiekt formantu klasy urządzeń (na przykład wyświetlaczu wierszowym) udostępnia interfejs dla programu komputerowego. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) dostarcza zestaw standardowych obiektów formatów OPOS, które są znane jako wspólne obiekty formantów (CCO). Obiekty CCO są używane do testowania składnika punktu sprzedaży w programie Microsoft Dynamics 365 for Retail. W związku z tym testowanie pomaga zagwarantować, że jeśli program Microsoft Dynamics 365 for Retail obsługuje klasę urządzeń za pośrednictwem mechanizmu OPOS, będzie obsługiwanych wiele typów urządzeń, o ile tylko producent dostarczy obiekt usługi zaprojektowany dla tego mechanizmu. Nie trzeba osobno testować każdego typu urządzenia.
+- **Obiekt formantu** — Obiekt formantu klasy urządzeń (na przykład wyświetlaczu wierszowym) udostępnia interfejs dla programu komputerowego. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) dostarcza zestaw standardowych obiektów formatów OPOS, które są znane jako wspólne obiekty formantów (CCO). Obiekty CCO są używane do testowania składnika punktu sprzedaży w Retail. W związku z tym testowanie pomaga zagwarantować, że jeśli program Retail obsługuje klasę urządzeń za pośrednictwem mechanizmu OPOS, będzie obsługiwanych wiele typów urządzeń, o ile tylko producent dostarczy obiekt usługi zaprojektowany dla tego mechanizmu. Nie trzeba osobno testować każdego typu urządzenia.
 - **Obiekt usługi** — Obiekt usługi zapewnia komunikację między obiektem formantu (CCO) a urządzeniem. Zazwyczaj obiekt usługi dla urządzenia jest dostarczany przez producenta urządzenia. Jednak w niektórych przypadkach może być konieczne pobranie obiektu usługi z witryny internetowej producenta. Na przykład może być dostępny nowszy obiekt usługi. Aby odszukać adres witryny producenta w sieci Web, zajrzyj do dokumentacji sprzętu.
 
 [![Obiekt formantu i obiekt usługi](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -126,7 +126,7 @@ Aby zagwarantować możliwość współpracy jak największej gamy urządzeń z 
 Obsługa implementacji OPOS standardu OLE for POS pomaga zagwarantować, że jeśli producenci urządzeń i wydawcy oprogramowania punktów sprzedaży poprawnie zaimplementowali standard, systemy punktów sprzedaży i obsługiwane urządzenia mogą współpracować, nawet jeśli nie zostały wcześniej przetestowane razem.
 
 > [!NOTE]
-> Obsługa standardu OPOS nie gwarantuje współpracy ze wszystkimi urządzeniami, które mają sterowniki OPOS. Program Microsoft Dynamics 365 for Retail musi najpierw obsługiwać ten lub klasę urządzenia za pośrednictwem mechanizmu OPOS. Ponadto obiekty usług nie zawsze są aktualizowane dla najnowszych wersji obiektów CCO. Należy także pamiętać, że zasadniczo jakość obiektów usługi jest różna.
+> Obsługa standardu OPOS nie gwarantuje współpracy ze wszystkimi urządzeniami, które mają sterowniki OPOS. Program Retail musi najpierw obsługiwać ten lub klasę urządzenia za pośrednictwem mechanizmu OPOS. Ponadto obiekty usług nie zawsze są aktualizowane dla najnowszych wersji obiektów CCO. Należy także pamiętać, że zasadniczo jakość obiektów usługi jest różna.
 
 ### <a name="windows"></a>Windows
 
@@ -136,7 +136,7 @@ Drukowanie paragonów w punkcie sprzedaży jest zoptymalizowane dla standardu OP
 - Urządzenia podłączone za pośrednictwem drukarki („łańcuchowo”) mogą nie działać poprawnie w przypadku używania sterowników systemu Windows. Na przykład szuflada kasowa może się nie otwierać lub drukarka pokwitowań może działać w nieoczekiwany sposób.
 - Standard OPOS obsługuje także szerszy zestaw zmiennych specyficznych dla drukarek paragonów w handlu detalicznym, takich jak obcinanie papieru czy drukowanie pokwitowań.
 
-Jeśli formanty OPOS są dostępne dla używanej drukarki systemu Windows, drukarka powinna poprawnie współpracować z programem Microsoft Dynamics 365 for Retail.
+Jeśli formanty OPOS są dostępne dla używanej drukarki systemu Windows, drukarka powinna poprawnie współpracować z programem Retail.
 
 ### <a name="universal-windows-platform"></a>Platforma uniwersalna systemu Windows
 
@@ -192,7 +192,7 @@ Adresy IP sieciowych urządzeń peryferyjnych można określić w dwóch miejsca
 
 #### <a name="modern-pos-for-android"></a>Modern POS for Android
 
-W Dynamics 365 for Retail wersji 8.1.3, aplikacja Modern POS dla Android zawiera wbudowaną stację sprzętową IPC. Ta Stacja sprzętowa obsługuje komunikację z drukarkami sieciowymi i łącznikami płatności. Aby uzyskać więcej informacji, odwiedź [artykuł „aplikacja Android hybrydowa dla dokumentów”](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+W Retail w wersji 8.1.3, aplikacja Modern POS dla Android zgłaszania zawiera wbudowaną stację sprzętową IPC. Ta Stacja sprzętowa obsługuje komunikację z drukarkami sieciowymi i łącznikami płatności. Aby uzyskać więcej informacji, odwiedź [artykuł „aplikacja Android hybrydowa dla dokumentów”](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS i Modern POS dla systemu iOS
 
@@ -526,7 +526,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 Aby uzyskać więcej informacji dotyczących sposobu tworzenia profili sprzętu, zobacz [Definiowania klientów w kanałach, w tym kas i stacji sprzętowych, oraz zarządzanie nimi](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> W programie Microsoft Dynamics 365 for Retail w wersji 1611 profil stacji sprzętowej nie jest już używany. Atrybuty uprzednio skonfigurowane w profilu stacji sprzętowej są teraz częścią samej stacji sprzętowej.
+> W programie Retail w wersji 1611 profil stacji sprzętowej nie jest już używany. Atrybuty uprzednio skonfigurowane w profilu stacji sprzętowej są teraz częścią samej stacji sprzętowej.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS for Windows ze stacją sprzętową z funkcją IPC (wbudowaną)
 

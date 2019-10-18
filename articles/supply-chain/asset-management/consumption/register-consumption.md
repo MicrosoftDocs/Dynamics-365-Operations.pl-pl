@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7f785b0935b952d6de68fd120a3639077ad124bd
-ms.sourcegitcommit: c0b581e4c647b6c47bc14d1d7bfe267832afecba
+ms.openlocfilehash: 174c816c7a6442b07e4722c03045293b94c59153
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1913103"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024667"
 ---
 # <a name="register-consumption"></a>Rejestracja zużycia
 
@@ -93,5 +93,5 @@ Podczas rejestracji zużycia wymiary finansowe powiązane z różnymi typami rej
 *Rejestracje towarów:* najpierw są dodawane wymiary finansowe z nagłówka arkusza, jeśli takie istnieją. Następnie, są dodawane wymiary finansowe z powiązanego projektu zlecenia pracy. Następnie zostaną dodane wymiary finansowe z oddziału. Na koniec dodawane są wymiary finansowe od towaru.
 
 >[!NOTE]
->Dla wszystkich trzech typów rejestracji kombinacja wymiarów finansowych jest sprawdzana, a niewłaściwe kombinacje są puste. Jest to konfiguracja standardowa w programie Dynamics 365 for Finance and Operations.
+>Dla wszystkich trzech typów rejestracji kombinacja wymiarów finansowych jest sprawdzana, a niewłaściwe kombinacje są puste. Jest to standardowa konfiguracja w Finance and Operations.
 

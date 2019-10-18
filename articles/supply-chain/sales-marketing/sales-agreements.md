@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14801f3aa486da3af252695a3e2ccd58c0e9059
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 37378b85b90f91c74da717f0a25c1847ac0b1598
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865976"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251300"
 ---
 # <a name="sales-agreements-overview"></a>Omówienie umów sprzedaży
 
@@ -99,14 +99,14 @@ Po utworzeniu (zwolnieniu) zamówienia sprzedaży z umowy sprzedaży niektóre p
 | Ilość                                                          | Jeśli określisz ilość, która przewyższa ilość określoną w wierszu umowy sprzedaży, i jeśli pole **Wymuszono maks.** jest zaznaczone, wyświetlany jest monit o zapisanie zmienionej ilości. Kliknij opcję **Tak**, aby usunąć łącze do wiersza umowy sprzedaży i ponownie obliczyć cenę. Kliknij opcję **Nie**, aby usunąć łącze do wiersza umowy sprzedaży bez przeliczania ceny.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Zwracanie towaru zamówionego z umowy sprzedaży
-W przypadku zwrotu przez odbiorcę produktu, który został zamówiony na podstawie umowy sprzedaży, program Microsoft Dynamics 365 for Finance and Operations może odnaleźć powiązane zobowiązanie w umowie sprzedaży i automatycznie je zaktualizować, uwzględniając zmianę kwoty lub ilości. Tworząc zamówienie zwrotu oparte na oryginalnym zamówieniu sprzedaży, które jest połączone z umową sprzedaży, można ustalić stosunek między zobowiązaniem z umowy sprzedaży, wierszem zamówienia sprzedaży i fakturą zamówienia zwrotu.  
+W przypadku zwrotu przez odbiorcę produktu, który został zamówiony na podstawie umowy sprzedaży, Supply Chain Management może odnaleźć powiązane zobowiązanie w umowie sprzedaży i automatycznie je zaktualizować, uwzględniając zmianę kwoty lub ilości. Tworząc zamówienie zwrotu oparte na oryginalnym zamówieniu sprzedaży, które jest połączone z umową sprzedaży, można ustalić stosunek między zobowiązaniem z umowy sprzedaży, wierszem zamówienia sprzedaży i fakturą zamówienia zwrotu.  
 
 Jeśli nie chcesz, aby ilość zwróconych towarów była odejmowana ze zobowiązania z umowy sprzedaży, możesz użyć formantu **Usuwanie łącza** na stronie **Zwróć zamówienie**, aby usunąć łącze między zamówieniem zwrotu i zobowiązaniem z umowy sprzedaży. Jeśli później trzeba ponownie utworzyć łącze, kliknij przycisk **Utwórz łącze**.  
 
 **Uwaga:** zamówienie zwrotu można łączyć tylko z jedną umową sprzedaży. Jeśli odbiorca zwraca więcej niż jeden produkt, który zamówił z więcej niż jednej umowy sprzedaży, należy utworzyć nowe zamówienie zwrotu dla każdego produktu i łącze do odpowiedniej umowy sprzedaży.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automatyczne wyszukiwanie umów sprzedaży
-W pewnych sytuacjach, kiedy zamówienia sprzedaży są tworzone bezpośrednio, np. gdy tworzona jest faktura korygująca lub międzyfirmowe zamówienia sprzedaży, można określi, czy program Microsoft Dynamics 365 for Finance and Operations ma automatycznie wyszukiwać odnośne umowy sprzedaży.
+W pewnych sytuacjach, kiedy zamówienia sprzedaży są tworzone bezpośrednio, np. gdy tworzona jest faktura korygująca lub międzyfirmowe zamówienia sprzedaży, można określić, czy system ma automatycznie wyszukiwać odnośne umowy sprzedaży.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Wymiary finansowe umów sprzedaży
 Wymiary finansowe można skopiować do nagłówków dokumentu lub pojedynczych wierszy umowy sprzedaży. W każdej chwili można zmienić wymiary w nagłówku umowy lub wiersza umowy. W takim przypadku wymiary są automatycznie kopiowane do nagłówka zwolnienia lub wiersza zwolnienia na zleceniach zwolnienia.

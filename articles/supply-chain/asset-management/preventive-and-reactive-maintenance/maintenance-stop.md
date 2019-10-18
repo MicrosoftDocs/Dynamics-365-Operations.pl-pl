@@ -3,7 +3,7 @@ title: Przerwa konserwacyjna
 description: W tym temacie wyjaśniono przerwy konserwacyjne w module Zarządzanie składnikami majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,17 +16,16 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a831d56116c57b640993162473e74e5ce181f09c
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: c035f54e833b9bc25b4502901cf307213789b439
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875831"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922190"
 ---
 # <a name="maintenance-downtime"></a>Przerwa konserwacyjna
-
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,12 +43,12 @@ Po wybraniu składników majątku w rejestracji czasu przestoju, wszystkie otwar
 
 ## <a name="maintenance-downtime-activities"></a>Działania w ramach przerwy konserwacyjnej
 
-Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Działania w ramach przerwy konserwacyjnej** > **Wszystkie działania w ramach przerwy konserwacyjnej**, aby otworzyć listę wszystkich działań związanych z przestojami serwisowych i zobaczyć niektóre informacje dotyczące działań. Kliknij łącze w kolumnie **Działania w ramach przerwy konserwacyjnej**, aby otworzyć widok szczegółów.
+Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Działania w ramach przerwy konserwacyjnej** > **Wszystkie działania w ramach przerwy konserwacyjnej**, aby otworzyć listę wszystkich działań związanych z przestojami serwisowych i zobaczyć niektóre informacje dotyczące działań. Kliknij łącze w kolumnie **Działania w ramach przerwy konserwacyjnej**, aby otworzyć widok szczegółów. Na poniższej ilustracji pokazano przykład strony listy **Działania w ramach przerwy konserwacyjnej**.
 
 ![Rysunek 1](media/19-preventive-maintenance.png)
 
 
-## <a name="create-a-maintenance-downtime-registration"></a>Tworzenie rejestracji przestojów konserwacyjnych
+## <a name="create-a-maintenance-downtime-activity"></a>Tworzenie działania w ramach przerwy konserwacyjnej
 
 1. Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Działania w ramach przerwy konserwacyjnej** > **Wszystkie działania w ramach przerwy konserwacyjnej** lub **Aktywne działania w ramach przerwy konserwacyjnej**.
 
@@ -61,20 +60,22 @@ Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Działania w r
 
 5. W skróconej karcie **Składniki majątku działań w ramach przerwy konserwacyjnej** > kliknij przycisk **Dodaj wiersz**, aby dodać wszystkie składniki majatku, pojedynczo, do działania dotyczącego przestoju w czasie konserwacji.
 
-6. Kliknij **Zapisz** po dodaniu wszystkich składników.
+6. Kliknij **Zapisz** po dodaniu wszystkich składników. Poniższa ilustracja przedstawia przykład działania w ramach przerwy konserwacyjnej i związanych z nim zadań konserwacyjnych.
 
 7. Zadania obsługi zleceń i otwarte wiersze harmonogramu konserwacji związane z wybranymi środkami są wyświetlane na **Wynikowe zadania konserwacyjne zleceń pracy** i kartach skróconych **Wiersze harmonogramu konserwacji**. Na skróconej karcie **Ogólne** > grupa **Zlecenia pracy** > pole **Godziny prognozy konserwacji** i skrócona karta **Ogólne** > grupa **Harmonogram konserwacji** > pole **Godziny prognozy konserwacji**, wyświetlana łączna liczba godzin prognozowanych zadań obsługi zleceń i wierszy harmonogramu konserwacji.
+
+Na poniższej ilustracji pokazano przykład widoku szczegółów **Działania w ramach przerwy konserwacyjnej**.
 
 ![Rysunek 2](media/20-preventive-maintenance.png)
 
 >[!NOTE]
 >Wiersze zadań obsługi zleceń i harmonogram konserwacji związane z wybranymi składnikami są aktualizowane automatycznie, jeśli po utworzeniu działania dotyczącego przestojów konserwacyjnych zostaną utworzone nowe zlecenia pracy lub wiersze harmonogramu konserwacji. Jeśli na przykład planujesz plany obsługi lub zaokrąglanie obsługi w odniesieniu do powiązanych środków trwałych dwa dni po utworzeniu działania dotyczącego przestojów, nowe wiersze harmonogramu konserwacji są automatycznie dodawane do działania dotyczącego przestojów konserwacyjnych.
 
-8. We **Wszystkie działania w ramach przerwy konserwacyjnej** > **Działania w ramach przerwy konserwacyjnej** > wybierz działanie na liście i kliknij pozycję **Obciążenie wydajności**, aby otworzyć okienko dialogowe **Obliczanie obciążenia zdolności produkcyjnych**. To okno dialogowe umożliwia uzyskanie przeglądu obciążenia zdolności produkcyjnych, na przykład dat, składników majątku, typów składników majątku i zadań konserwacyjnych. Należy pamiętać, że daty wyświetlane w oknie dialogowym są datami rozpoczęcia i zakończenia wybranymi w **Działania w ramach przerwy konserwacyjnej**. To obliczenie uwzględnia składniki majątku związane z działaniem przestoju w eksploatacji.
+8. We **Wszystkie działania w ramach przerwy konserwacyjnej** > **Działania w ramach przerwy konserwacyjnej** > wybierz działanie w ramach przerwy konserwacyjnej na liście i kliknij pozycję **Obciążenie wydajności**, aby otworzyć okienko dialogowe **Obliczanie obciążenia wydajności**. To okno dialogowe umożliwia uzyskanie przeglądu obciążenia zdolności produkcyjnych, na przykład dat, składników majątku, typów składników majątku i zadań konserwacyjnych. Należy pamiętać, że daty wyświetlane w oknie dialogowym są datami rozpoczęcia i zakończenia wybranymi w **Działania w ramach przerwy konserwacyjnej**. To obliczenie uwzględnia składniki majątku związane z działaniem przestoju w eksploatacji.
 
 9. W oknie **Obliczanie obciążenia zdolności produkcyjnych** zdolności produkcyjnych, w razie potrzeby zmień godziny rozpoczęcia i zakończenia, a następnie wybierz opcję, jeśli mają być uwzględniane zlecenia produkcyjne i harmonogramy konserwacji w obliczeniach. Pola **Poziom** można użyć, aby wskazać, jak szczegółowe mają być wiersze obliczeń obciążenia wydajności dotyczące lokalizacji czynności konserwacyjnych. Jeśli na przykład w polu wstawiono liczbę „1” i istnieje wielopoziomowa struktura lokalizacji czynności konserwacyjnych, wszystkie wszystkie składniki majątku dla lokalizacji czynności konserwacyjnych, które zostały wybrane w ramach przerwy konserwacyjnej, będą wyświetlane na najwyższym poziomie, dlatego godziny w wierszu mogą być dodawane z lokalizacji czynności konserwacyjnych znajdujących się na niższym poziomie. W przypadku wstawienia liczby „0” w polu **Poziom** zostanie wyświetlony szczegółowy wynik zawierający wszystkie wiersze obciążenia wydajności na każdym poziomie lokalizacji czynności konserwacyjnych, z którymi są powiązane.
 
-10. Kliknij przycisk **OK**, aby rozpocząć obliczanie. Łączna liczba godzin jest wyświetlana w przeglądzie **Obciążenie wydajności**. Na karcie **Obciążenie wydajności** > **Grupuj według...** grupie okienka akcji, kliknij odpowiednie przyciski, aby uzyskać bardziej szczegółowy przegląd alokacji prognozowanych godzin.
+10. Kliknij przycisk **OK**, aby rozpocząć obliczanie. Łączna liczba godzin jest wyświetlana w przeglądzie **Obciążenie wydajności**. Na karcie **Obciążenie wydajności** > **Grupuj według...** grupie okienka akcji, kliknij odpowiednie przyciski, aby uzyskać bardziej szczegółowy przegląd alokacji prognozowanych godzin. Na poniższej ilustracji przedstawiono wyniki obliczenia **Obciążenia wydajności**.
 
 ![Rysunek 3](media/21-preventive-maintenance.png)
 
@@ -91,7 +92,7 @@ Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Działania w r
 
 15. W oknie **Obliczanie prognozy dla pozycji** zdolności produkcyjnych, w razie potrzeby zmień godziny rozpoczęcia i zakończenia, a następnie wybierz opcję, jeśli mają być uwzględniane zlecenia produkcyjne i harmonogramy konserwacji w obliczeniach. Pola **Poziom** można użyć, aby wskazać, jak szczegółowe mają być wiersze obliczeń obciążenia wydajności dotyczące lokalizacji czynności konserwacyjnych. Jeśli na przykład w polu wstawiono liczbę „1” i istnieje wielopoziomowa struktura lokalizacji czynności konserwacyjnych, wszystkie wszystkie składniki majątku dla lokalizacji czynności konserwacyjnych, które zostały wybrane w ramach przerwy konserwacyjnej, będą wyświetlane na najwyższym poziomie, dlatego godziny w wierszu mogą być dodawane z lokalizacji czynności konserwacyjnych znajdujących się na niższym poziomie. W przypadku wstawienia liczby „0” w polu **Poziom** zostanie wyświetlony szczegółowy wynik zawierający wszystkie wiersze obciążenia wydajności na każdym poziomie lokalizacji czynności konserwacyjnych, z którymi są powiązane.
 
-16. Kliknij przycisk **OK**, aby rozpocząć obliczanie. Łączna liczba prognoz dla pozycji jest wyświetlana w przeglądzie  **Prognoza dla pozycji**. Na karcie **Prognoza dla pozycji** > **Grupuj według...** grupie okienka akcji, kliknij odpowiednie przyciski, aby uzyskać bardziej szczegółowy przegląd alokacji prognozowanych pozycji.
+16. Kliknij przycisk **OK**, aby rozpocząć obliczanie. Łączna liczba prognoz dla pozycji jest wyświetlana w przeglądzie  **Prognoza dla pozycji**. Na karcie **Prognoza dla pozycji** > w **Grupuj według...** grupie okienka akcji, kliknij odpowiednie przyciski, aby uzyskać bardziej szczegółowy przegląd alokacji prognozowanych pozycji. Ilustracja poniżej przedstawia wyniki obliczeń **Prognozy dla pozycji**.
 
 ![Rysunek 4](media/22-preventive-maintenance.png)
 

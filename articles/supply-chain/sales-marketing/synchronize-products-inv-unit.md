@@ -1,6 +1,6 @@
 ---
-title: Synchronizowanie produktów z jednostką zapasów między aplikacjami Finance and Operations i Field Service
-description: Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania produktów z jednostką zapasów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
+title: Synchronizowanie produktów z jednostką magazynową z rozwiązania Supply Chain Management do rozwiązania Field Service
+description: Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania produktów z jednostką zapasów między programem Dynamics 365 Supply Chain Management a programem Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2019
@@ -19,38 +19,38 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 78e8d8fa609b015cf2fceaf498279fe091325dbb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8b65e9640106c5d351270074e39c121e70917228
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835701"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251231"
 ---
-# <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Synchronizowanie produktów z jednostką magazynową z rozwiązania Finance and Operations do rozwiązania Field Service
+# <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a>Synchronizowanie produktów z jednostką magazynową z rozwiązania Supply Chain Management do rozwiązania Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania produktów z jednostką zapasów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
+Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania produktów z jednostką zapasów między programem Dynamics 365 Supply Chain Management a programem Dynamics 365 Field Service.
 
-[![Synchronizacja procesów biznesowych między aplikacjami Finance and Operations i Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
+[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-Szablon **Produkty Field Service z jednostką magazynową (Finance and Operations do Field Service)** jest oparty na szablonie **Produkt Field Service (Finance and Operations do Field Service)**. Aby uzyskać więcej informacji, zobacz [Produkty Field Service (z rozwiązania Finance and Operations do rozwiązania Field Service)](field-service-product.md).
+Szablon **Produkty Field Service z jednostką magazynową (Supply Chain Management do Field Service)** jest oparty na szablonie **Produkt Field Service (Supply Chain Management do Field Service)**. Aby uzyskać więcej informacji, zobacz [Produkty Field Service (z rozwiązania Supply Chain Management do rozwiązania Field Service)](field-service-product.md).
 
 W tym temacie opisano tylko różnice między dwoma szablonami: 
-- **Produkty Field Service z jednostką magazynową (Finance and Operations do Sales)**
-- **Produkty programu Field Service (z Fin and Ops do Field Service)** 
+- **Synchronizowanie produktów Field Service z jednostką magazynową (z rozwiązania Supply Chain Management do rozwiązania Sales)**
+- **Produkty Field Service (z rozwiązania Supply Chain Management do rozwiązania Field Service)** 
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 
 **Nazwa szablonu w integracji danych:**
 
-- Produkty Field Service z jednostką magazynową (Finance and Operations do Sales)
+- Synchronizowanie produktów Field Service z jednostką magazynową (z rozwiązania Supply Chain Management do rozwiązania Sales)
 
 **Nazwa zadania w projekcie integracji danych:**
 
 - Produkty
 
-Szablon **Produkty Field Service z jednostką magazynową (Finance and Operations do Field Service)** zawiera jedno mapowanie, którego nie ma w szablonie **Produkt Field Service (Finance and Operations do Field Service)**. To mapowanie gwarantuje, że jednostka magazynowa potrzebna do synchronizacji poziom zapasów jest uwzględniona.
+Szablon **Produkty Field Service z jednostką magazynową (Supply Chain Management do Field Service)** jest oparty na szablonie zawierającym jedno mapowanie, które nie jest w **Produkt Field Service (Supply Chain Management do Field Service)**. To mapowanie gwarantuje, że jednostka magazynowa potrzebna do synchronizacji poziom zapasów jest uwzględniona.
 
 ```
 INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryunit.name [Inventory Unit(Name)] 
@@ -60,6 +60,6 @@ INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryuni
 
 Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja danych.
 
-### <a name="field-service-products-with-inventory-unit-fin-and-ops-to-field-service-products"></a>Produkty Field Service z jednostką magazynową (Finance and Operations do Field Service): Produkty
+### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a>Produkty Field Service z jednostką magazynową (Supply Chain Management do Field Service): Produkty
 
 [![Mapowanie szablonu w integracji danych](./media/FSProduct1.png)](./media/FSProduct1.png)

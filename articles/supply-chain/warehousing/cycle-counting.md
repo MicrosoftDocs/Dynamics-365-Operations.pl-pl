@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560673"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251530"
 ---
 # <a name="cycle-counting"></a>Inwentaryzacja ciągła
 
@@ -34,7 +34,7 @@ W tym artykule opisano sposób używania inwentaryzacji ciągłej w aplikacji ma
 Inwentaryzacja cykliczna jest procesem magazynowym, który służy do inspekcji pozycji magazynowych. Proces inwentaryzacji ciągłej można opisać w trzech krokach:
 
 1.  **Tworzenie inwentaryzacji ciągłej** — Praca inwentaryzacji ciągłej może być tworzona automatycznie na podstawie parametrów progu dla towarów lub za pomocą planu inwentaryzacji ciągłej. Alternatywnie można ręcznie utworzyć pracę inwentaryzacji ciągłej za pomocą parametrów towaru lub magazynu na stronie **Praca inwentaryzacji ciągłej wg pozycji** lub stronie **Praca inwentaryzacji ciągłej wg lokalizacji**.
-2.  **Przetwarzaj inwentaryzację ciągłą** — Po utworzeniu pracy inwentaryzacji ciągłej można wykonać tę pracę, zliczając towary w lokalizacji w magazynie, a następnie za pomocą urządzenia przenośnego wprowadzając wynik w Microsoft Dynamics 365 for Finance and Operations. Ewentualnie można zliczyć towary w jednej lokalizacji bez tworzenia inwentaryzacji ciągłej. Ten proces jest określany jako *inwentaryzacja ciągła punktowa*.
+2.  **Przetwarzaj inwentaryzację ciągłą** — Po utworzeniu pracy inwentaryzacji ciągłej można wykonać tę pracę, zliczając towary w lokalizacji w magazynie, a następnie za pomocą urządzenia przenośnego wprowadzając wynik w Dynamics 365 Supply Chain Management. Ewentualnie można zliczyć towary w jednej lokalizacji bez tworzenia inwentaryzacji ciągłej. Ten proces jest określany jako *inwentaryzacja ciągła punktowa*.
 3.  **Uzgadnianie różnic w policzonej wartości** — Po wykonaniu inwentaryzacji cyklicznej wszystkie towary, dla których istnieją różnice w zliczonej wartości, będą miały stan pracy **Oczekiwanie na przegląd** na stronie **Cała praca**. Różnice te można uzgodnić na stronie **Praca inwentaryzacji ciągłej oczekuje na przegląd**.
 
 Poniższa ilustracja pokazuje proces inwentaryzacji ciągłej. ![Przebieg procesu w przypadku inwentaryzacji ciągłej](./media/performcyclecountinginawarehouselocation.jpg)
@@ -113,10 +113,10 @@ Plany inwentaryzacji ciągłej umożliwiają natychmiastowe lub okresowe tworzen
 Aby ręcznie utworzyć pracę inwentaryzacji ciągłej, można użyć strony **Praca inwentaryzacji ciągłej wg pozycji** lub **Praca inwentaryzacji ciągłej wg lokalizacji**. Można określić maksymalną liczbę prac inwentaryzacji ciągłej, jaka ma zostać utworzona. Na przykład jeśli kierownik magazynu określa wartość równą **5**, praca inwentaryzacji ciągłej jest tworzona dla pięciu lokalizacji, nawet jeśli towar znajduje się w 10 lokalizacjach. Można również wybrać identyfikator puli pracy, któremu zostaną przypisane identyfikatory tworzonych prac inwentaryzacji ciągłej. Gdy identyfikator puli pracy jest przetwarzany dla inwentaryzacji ciągłej, identyfikatory inwentaryzacji ciągłej przypisane do puli pracy są przetwarzane jako grupa.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Wykonywanie inwentaryzacji ciągłej za pomocą urządzenia przenośnego
-Istnieje kilka metod przetwarzania pracy inwentaryzacji ciągłej za pomocą programu Finance and Operations na urządzeniu przenośnym:
+Istnieje kilka metod przetwarzania pracy inwentaryzacji ciągłej za pomocą usługi Supply Chain Management na urządzeniu przenośnym:
 
 -   **Sterowane przez użytkownika** ─ Pracownik może określić identyfikator pracy inwentaryzacji ciągłej mającej stan **Otwarte**.
--   **Sterowane przez system** — Program Finance and Operations przypisuje identyfikator pracy inwentaryzacji ciągłej do pracownika.
+-   **Sterowane przez system** — Usługa Supply Chain Management przypisuje identyfikator pracy inwentaryzacji ciągłej do pracownika.
 -   **Grupowanie inwentaryzacji ciągłej** — Pracownik może grupować identyfikatory prac inwentaryzacji ciągłej, które są specyficzne dla danej lokalizacji, strefy lub puli pracy.
 -   **Inwentaryzacja ciągła punktowa** — Pracownik może w dowolnym momencie zliczać towary w lokalizacji w magazynie bez tworzenia pracy inwentaryzacji ciągłej. W celu wykonania inwentaryzacji ciągłej punktowej w lokalizacji pracownik wprowadza identyfikator lokalizacji.
 

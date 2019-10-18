@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 60f0a2e5fa2dc2bc37a04b159a4834a52117893d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 65b59e1cc215d582fdaf02ff4746fe2158ace76e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559611"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025363"
 ---
 # <a name="payment-methods"></a>Metody płatności
 
@@ -32,7 +32,7 @@ ms.locfileid: "1559611"
 
 Każdy typ płatności akceptowany przez sprzedawcę detalicznego musi zostać skonfigurowany na etapie konfiguracji systemu. W tym artykule opisano typy płatności, które można utworzyć, oraz proces ich konfigurowania.
 
-Sprzadawcy detaliczni mogą akceptować różne typy płatności w zamian za produkty i usługi, które sprzedają. Jakkolwiek środki pieniężne to najczęściej używana forma płatności, sprzedawcy detaliczni mogą również pobierać płatności w formie czeków, kart, załączników itd. Każdy typ płatności akceptowany przez sprzedawcę detalicznego musi zostać skonfigurowany w Dynamics 365 for Retail na etapie konfiguracji systemu. Poniższa lista zawiera opis każdego typu płatności, który można skonfigurować w Dynamics 365 for Retail:
+Sprzadawcy detaliczni mogą akceptować różne typy płatności w zamian za produkty i usługi, które sprzedają. Jakkolwiek środki pieniężne to najczęściej używana forma płatności, sprzedawcy detaliczni mogą również pobierać płatności w formie czeków, kart, załączników itd. Każdy typ płatności akceptowany przez sprzedawcę detalicznego musi zostać skonfigurowany w Dynamics 365 Retail na etapie konfiguracji systemu. Poniższa lista zawiera opisuje każdy typ płatności, który można skonfigurować w:
 
 - **Gotówka** — pieniądze w postaci fizycznej waluty, takie jak banknoty i monety. Ta waluta może być walutą firmy lub walutą lokalną sklepu.
 - **Czek** — dokument zbywalny zlecający płatność określonej kwoty w określonej walucie przez jej pobranie z określonego banku. Czek jest zazwyczaj ważny przez czas nieokreślony lub przez sześć miesięcy od daty wydania, chyba że podano inny okres ważności. Okres ten zależy od banku, który wystawia czek. Istnieją rozmaite typy czeków, np. czeki na zlecenie, czeki kasowe, czeki na okaziciela i czeki na rachunek odbiorcy. Czeki można skonfigurować jako metodę płatności dla każdego sklepu. Czeki zostaną przyjęte w walucie zdefiniowanej na poziomie firmy lub sklepu. Przed rozpoczęciem akceptowania czeku jako płatność w sklepie, należy skonfigurować czeki jako formę płatności.

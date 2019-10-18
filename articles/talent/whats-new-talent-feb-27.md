@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (27 lutego 2019 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent.
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (27 lutego 2019 r.)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/27/2019
@@ -18,26 +18,26 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f175c6e60cf87c7dcbde0eaf35357130fa035712
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518826"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024006"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (27 lutego 2019 r.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (27 lutego 2019 r.)
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent.
+W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Zmiany w Attract
 
-Ta wersja zawiera poprawki błędów dla programu Dynamics 365 Talent: Attract.
+Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent: Attract.
 
 ## <a name="changes-in-onboard"></a>Zmiany w Onboard
 
-Ta wersja zawiera poprawki błędów dla programu Dynamics 365 Talent: Onboard.
+Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Zmiany w Core HR
 
@@ -77,9 +77,9 @@ W tej wersji są też dostępne inne poprawki niewielkich błędów.
 
 W wielu organizacjach menedżerowie ds. wynagrodzenia i świadczeń mogą mieć dostęp tylko do konkretnych rekordów wynagrodzeń. Te rekordy mogą dotyczyć kierowników lub pracowników regionalnych. Ta zmiana pozwala działowi kadr (HR) zarządzać różnymi planami wynagrodzeń dla różnych grup pracowników w organizacji. Role zabezpieczeń, które można przypisać do stałych i zmiennych planów będą określały dostęp do tych planów i danych pracownika (np. informacji o wynagrodzeniu i premiach). Tylko role z danym dostępem mogą przetwarzać wynagrodzenia dla tych pracowników.
 
-### <a name="platform-update-24"></a>Aktualizacja platformy Update 24
+### <a name="platform-update-24-for-finance-and-operations"></a>Aktualizacja Platform update 24 dla Finance and Operations
 
-Aby uzyskać więcej informacji o Microsoft Dynamics 365 for Finance and Operations platform update 24 (z marca 2019), zobacz [funkcje podglądu w Finance and Operations platform update 24 (marzec 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Aby uzyskać więcej informacji o 24. aktualizacji platformy Microsoft Dynamics 365 Finance and Operations (marzec 2019), zobacz [Funkcje w wersji zapoznawczej w aktualizacji Platform update 24 rozwiązania Finance and Operations (marzec 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Włącz stałe wynagrodzenie dla przyszłych przypisań stanowisk
 
@@ -87,10 +87,10 @@ Jest to typowe, że nowo zatrudniani pracownicy mają daty rozpoczęcia pracy w 
 
 ## <a name="known-issues"></a>Znane problemy
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Zmiany w szablonie integracji Core HR (Talent Common Data Service to Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance"></a>Zmiany w szablonie integracji Core HR (Talent Common Data Service do Finance)
 Szablon Core HR został zaktualizowany do „szablonu zaawansowanej kwerendy”. Dlatego domyślnie zaawansowana kwerenda będzie dostępna dla projektów, które zostały utworzone za pomocą tego szablonu. Ponadto wszelkie funkcje mapowania domyślnego będą widoczne tylko w edytorze zaawansowanej kwerendy. (Funkcje domyślnego mapowania są wyświetlane jako „FN” w mapowaniach.)
 
-Aby uzyskać więcej informacji na temat błędów mapowania, zobacz [Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (14 grudnia 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
+Aby uzyskać więcej informacji na temat błędów mapowania, zobacz [Nowości i zmiany w rozwiązaniu Dynamics 365 Talent: Core HR (14 grudnia 2018 r.)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
 Aby użyć nowego szablonu, utwórz nowy projekt, a następnie wybierz nowy szablon integracji w rozwiązaniu Talent.
 

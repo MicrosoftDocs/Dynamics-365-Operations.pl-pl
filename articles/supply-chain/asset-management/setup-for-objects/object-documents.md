@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1c90788da7ad536fb9978db18160ccf6c158033
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: c5b791fd3e060c4f4ecdb1ca599a6041d421db74
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783505"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024543"
 ---
 # <a name="asset-documents"></a>Dokumenty składnika majątku
 
@@ -33,7 +33,7 @@ ms.locfileid: "1783505"
 
 W tym temacie objaśniono dokumenty w module Zarządzanie składnikami majątku.
 
-W module Zarządzanie składnikami majątku można skonfigurować dokumenty w taki sposób, aby były one automatycznie powiązane na przykład z typami zadań, producentami składników majątku, typami składników majątku lub składnikami majątku. Ta funkcja jest przydatna, kiedy zwalniane są zaktualizowane wersje dokumentów. W takim przypadku wystarczy umieścić zaktualizowany dokument w standardowej lokalizacji, której używasz dla dokumentów Microsoft Dynamics 365 for Finance and Operations, i dołączyć dokument do utworzonego rekordu dokumentu składnika majątku. Do zaktualizowanego dokument można następnie uzyskać dostęp z menu **Wszystkie składniki majątku**, **Aktywne składniki majątku**, **Moje aktywne składniki majątku**, **Wszystkie zlecenia pracy** oraz **Aktywne zadania zleceń pracy**. Proces dołączania dokumentów do rekordu dokumentu zasobów używa standardowego systemu obsługi dokumentów w programie Finance and Operations.
+W module Zarządzanie składnikami majątku można skonfigurować dokumenty w taki sposób, aby były one automatycznie powiązane na przykład z typami zadań, producentami składników majątku, typami składników majątku lub składnikami majątku. Ta funkcja jest przydatna, kiedy zwalniane są zaktualizowane wersje dokumentów. W takim przypadku wystarczy umieścić zaktualizowany dokument w standardowej lokalizacji, której używasz dla dokumentów Finance and Operations, i dołączyć dokument do utworzonego rekordu dokumentu składnika majątku. Do zaktualizowanego dokument można następnie uzyskać dostęp z menu **Wszystkie składniki majątku**, **Aktywne składniki majątku**, **Moje aktywne składniki majątku**, **Wszystkie zlecenia pracy** oraz **Aktywne zadania zleceń pracy**. Proces dołączania dokumentów do rekordu dokumentu zasobów używa standardowego systemu obsługi dokumentów.
 
 **Przykład 1:** dokument, który jest powiązany z typem zadania może opisywać procedurę dla tego typu zadania.
 
@@ -48,5 +48,5 @@ W module Zarządzanie składnikami majątku można skonfigurować dokumenty w ta
     > [!NOTE]
     > Gdy system wyszukuje dokumenty, które powinny być powiązane ze składnikami majątku lub zleceniem pracy, moduł Zarządzanie składnikami majątku przechodzi przez wszystkie rekordy dokumentu składnika majątku w celu sprawdzenia możliwego dopasowania. W pierwszej kolejności sprawdza zawsze kombinację najbardziej szczegółową. Innymi słowy, moduł Zarządzanie składnikami majątku najpierw sprawdza dopasowanie dla pola **Kryterium doboru**. Jeśli nie znaleziono dopasowania, sprawdza dopasowanie dla pola **Wariant typu zadania**. Jeśli nie znaleziono dopasowania, sprawdza dopasowanie dla pola **Typ zadania** itd. Jak widać w układzie strony **Dokumenty składnika majątku** to zachowanie oznacza, że aby znaleźć najbardziej konkretną kombinację, moduł Zarządzanie składnikami majątku sprawdza każdy rekord od prawej do lewej pod kątem dopasowania. Kilka dokumentów może być związanych ze składnikiem majątku lub zleceniem pracy. Zależnie od potrzeb można edytować poziom usługi na żądaniu konserwacji lub zleceniu pracy.
 
-4. Wybierz **Załączniki**. W programie Finance and Operations zostanie wyświetlona strona **Obsługa dokumentów**.
+4. Wybierz **Załączniki**. Zostanie wyświetlona standardowa strona **Obsługa dokumentów**.
 5. Skonfiguruj dokumenty lub notatki, które powinny być dołączone do rekordu dokumentu składnika majątku. Po dołączeniu dokumentów w polu **Załączniki** pokazuje się liczba dokumentów powiązanych z rekordem.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f15c6c5ccdcddebe7aa428cff48ca6e3b120d7f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: bd963caed7f49db5dd7550dd30c3f831318d2b7a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783517"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250905"
 ---
 # <a name="create-an-asset"></a>Tworzenie składnika majątku
 
@@ -63,12 +63,12 @@ Pola **Poziom usługi** i **Krytyczność** odnoszą się do zleceń pracy utwor
 
 ## <a name="asset"></a>Środek trwały
 
-Można wybrać **Zasób** dla składnia majątku. Wybór zasobu określa, który kalendarz jest używany do planowania zlecenia pracy. Wybór zasobu jest często używany w przypadku środków trwałych. W Dynamics 365 for Finance and Operations zasoby i grupy zasobów są skonfigurowane w menu **Administrowanie organizacją** > **Zasoby** > **Grupy zasobów** lub **Zasoby**.
+Można wybrać **Zasób** dla składnia majątku. Wybór zasobu określa, który kalendarz jest używany do planowania zlecenia pracy. Wybór zasobu jest często używany w przypadku środków trwałych. Zasoby i grupy zasobów są skonfigurowane w menu **Administrowanie organizacją** > **Zasoby** > **Grupy zasobów** lub **Zasoby**.
 
 W polu **Liczba środków trwałych** można wybrać środek trwały dla składnika majątku. Jest to istotne, jeśli składnik majątku jest powiązany z projektem inwestycyjnym.
 
 - Jeśli składnik majątku jest powiązany ze środkiem trwałym, można utworzyć typ zlecenia pracy, który będzie używany dla zleceń pracy związanych z projektem inwestycyjnym. 
-- Informacje na temat środków trwałych dla składnika majątku są powiązane z modułem **Środki trwałe** w Dynamics 365 for Finance and Operations. Oznacza to, że w menu **Środki trwałe** > **Środki trwałe** > **Środki trwałe** można uzyskać przegląd projektów zarządzania aktywami, które mogą być związane z środka trwałego, wybierając zasób na liście i wyświetlanie zawartości w okienku **Informacje pokrewne** > sekcja **Powiązane projekty**.
+- Informacje na temat środków trwałych dla składnika majątku są powiązane z modułem **Środki trwałe** w Dynamics 365 Supply Chain Management. Oznacza to, że w menu **Środki trwałe** > **Środki trwałe** > **Środki trwałe** można uzyskać przegląd projektów zarządzania aktywami, które mogą być związane z środka trwałego, wybierając zasób na liście i wyświetlanie zawartości w okienku **Informacje pokrewne** > sekcja **Powiązane projekty**.
 
 
 ## <a name="details"></a>Szczegóły

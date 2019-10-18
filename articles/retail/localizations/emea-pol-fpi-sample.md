@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-2-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: aa65438412bb0e16b06a58ffc8136f08388429fa
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: cfd93f27ab5b498f6a97e1508e0a6f2d4aff01a3
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595469"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025420"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Przykładowa integracja drukarki fiskalnej dla Polski
 
@@ -30,7 +30,7 @@ ms.locfileid: "1595469"
 
 ## <a name="introduction"></a>Wprowadzenie
 
-Funkcja programu Microsoft Dynamics 365 for Retail dla Polski obejmuje przykładową integrację punktu sprzedaży (POS) z drukarką fiskalną. Przykładowa integracja rozszerza [funkcję integracji fiskalnej](fiscal-integration-for-retail-channel.md) i obsługuje protokół POSNET THERMAL HD 2.02 dla drukarek fiskalnych z [Posnet Polska S.A.](https://www.posnet.com.pl) Przykład umożliwia komunikację z drukarką fiskalną połączoną przez port COM przy użyciu natywnego oprogramowania sterownika. Implementację i testy przeprowadzono przy użyciu emulatora oprogramowania dostarczonego przez Posnet dla drukarki fiskalnej Posnet Thermal HD FV EJ. Przykładowa integracja ma formę kodu źródłowego i jest częścią zestawu SDK modułu Retail.
+Funkcja programu Dynamics 365 Retail dla Polski obejmuje przykładową integrację punktu sprzedaży (POS) z drukarką fiskalną. Przykładowa integracja rozszerza [funkcję integracji fiskalnej](fiscal-integration-for-retail-channel.md) i obsługuje protokół POSNET THERMAL HD 2.02 dla drukarek fiskalnych z [Posnet Polska S.A.](https://www.posnet.com.pl) Przykład umożliwia komunikację z drukarką fiskalną połączoną przez port COM przy użyciu natywnego oprogramowania sterownika. Implementację i testy przeprowadzono przy użyciu emulatora oprogramowania dostarczonego przez Posnet dla drukarki fiskalnej Posnet Thermal HD FV EJ. Przykładowa integracja ma formę kodu źródłowego i jest częścią zestawu SDK modułu Retail.
 
 Microsoft nie udostępnia żadnego sprzętu, oprogramowania ani dokumentacji firmy Posnet. Aby dowiedzieć się, jak uzyskać drukarkę fiskalną i jak ją obsługiwać, skontaktuj się z [Posnet Polska S.A.](https://www.posnet.com.pl)
 

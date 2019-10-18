@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie metod dostawy i opłat w biurze obsługi
-description: W tym temacie opisano sposób konfigurowania metod dostawy i opłat za zlecenia z biura obsługi w Microsoft Dynamics 365 for Retail.
+description: W tym temacie opisano sposób konfigurowania metod dostawy i opłat za zlecenia z biura obsługi w Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b67a1d91e41e1a4c21e0e877c06812dededbe731
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553606"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019493"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurowanie metod dostawy i opłat w biurze obsługi
 
 [!INCLUDE [banner](includes/banner.md)]
 
-Gdy zamówienie sprzedaży jest umieszczone w Microsoft Dynamics 365 for Retail a osoba, która wprowadziła zamówienie sprzedaży jest połączona z kanałem biura obsługi, logika i reguły są używane do sprawdzania poprawności metody dostawy (metoda dostawy) i obliczenia opłaty dla zamówienia.
+Gdy zamówienie sprzedaży jest umieszczone w Dynamics 365 Retail a osoba, która wprowadziła zamówienie sprzedaży jest połączona z kanałem biura obsługi, logika i reguły są używane do sprawdzania poprawności metody dostawy (metoda dostawy) i obliczenia opłaty dla zamówienia.
 
 Podczas tworzenia zamówienia sprzedaży można wybrać metodę dostawy w nagłówku i wierszach zamówienia sprzedaży. Domyślnie metoda dostawy wybrana w nagłówku jest używana do wszystkich wierszy zamówienia sprzedaży. Można jednak zmienić domyślną metodę dostawy w poszczególnych wierszach sprzedaży zgodnie z potrzebą. Można także zdefiniować metodę dostawy w rekordzie odbiorcy. Następnie, kiedy zamówienia są tworzone dla klienta, ta metoda dostawy jest używana domyślnie w nagłówku zamówienia sprzedaży.
 

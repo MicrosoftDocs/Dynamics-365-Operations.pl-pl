@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b50aa1df7a169e71d3e2e477bd1515d70cedccab
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865383"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249501"
 ---
 # <a name="product-configuration-overview"></a>Omówienie konfiguracji produktu
 
@@ -60,6 +60,9 @@ Model konfiguracji produktu składa się z jednego lub większej liczby składni
 
 Każdy składnik ma jeden lub kilka atrybutów, które identyfikują jego właściwości. Atrybuty to elementy, które będą wybierane przez użytkowników w procesie konfiguracji. Atrybuty kontrolują zarówno i relacje między składnikami, jak i wewnątrz składników poprzez włączenie do ograniczeń lub obliczenia. Za pomocą warunków zastosowanych w wierszach BOM, atrybuty mogą określać, z jakich części fizycznych będzie się składał skonfigurowany produkt. Ponadto atrybut może kontrolować właściwość wiersza BOM poprzez mechanizm mapowania. Z podobnych funkcji można skorzystać w przypadku operacji marszruty w ustawieniach włączenia i właściwości.
 
+>[!NOTE]
+> Podczas tworzenia typów atrybutów należy unikać tworzenia wielu wartości dla domeny typu atrybutu. Może to spowodować spowolnienie konfiguratora produktów. 
+
 ### <a name="expression-constraints"></a>Ograniczenia wyrażenia
 
 Korzystanie z modelu konfiguracji produktu opartej na ograniczeniu zakłada, że istnieją pewne ograniczenia, gdy użytkownik wybiera wartości różnych atrybutów. Takie ograniczenia mogą być implementowane jako ograniczenia wyrażenia za pomocą języka OML (Optimization Modeling Language). Można też zaimplementować ograniczenie w formie ograniczenia tabeli.
@@ -70,7 +73,7 @@ Ograniczenia tabel mogą być definiowane przez użytkownika lub przez system.
 
 Ograniczenie definiowane przez użytkownika tworzy użytkownik. Użytkownik wybiera kombinację typów atrybutów reprezentujących kolumn tabeli, a następnie wprowadza wartości z domen typu wybranego atrybutu w celu utworzenia wierszy ograniczenia tabeli.  
 
-Ograniczenia tabeli definiowane przez system definiuje się, wybierając tabelę programu Microsoft Dynamics 365 for Finance and Operations, która będzie używana jako odwołanie, a następnie wybierając pola z tej tabeli do utworzenia kolumn ograniczenia. Wiersze ograniczenia tabeli to wiersze tabeli programu Finance and Operations, która jest obecna w czasie konfigurowania.  
+Ograniczenia tabeli definiowane przez system definiuje się, wybierając tabelę programu, która będzie używana jako odwołanie, a następnie wybierając pola z tej tabeli do utworzenia kolumn ograniczenia. Wiersze ograniczenia tabeli to wiersze tabeli programu Finance and Operations, która jest obecna w czasie konfigurowania.  
 
 Ograniczenie tabeli jest uwzględnione w modelu konfiguracji produktu poprzez odwołanie do definicji ograniczenia tabeli i mapowanie odpowiednich atrybutów w modelu do kolumn ograniczenia tabeli.
 

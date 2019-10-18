@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74e7c36fb912f35252d6e40d17477ac2962cbc23
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d9a5292e88fe022482ab9c6c5a8f016745946988
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558812"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026976"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji
 
@@ -31,7 +31,7 @@ ms.locfileid: "1558812"
 
 W tym temacie opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
 
-Instrukcje otrzymywane przez pracowników magazynu na urządzeniu przenośnym są określane w szablonach pracy konfigurowanych w Microsoft Dynamics 365 for Finance and Operations w celu zdefiniowania różnych procesów i zadań magazynowych. Szablony pracy określają, jak wykonywana jest praca dla każdego procesu magazynowego. Połączenie dyrektywy lokalizacji z szablonem pracy pomaga zagwarantować, że praca ma miejsce w określonych obszarach fizycznych magazynów.
+Instrukcje otrzymywane przez pracowników magazynu na urządzeniu przenośnym są określane w szablonach pracy konfigurowanych w Dynamics 365 Supply Chain Management w celu zdefiniowania różnych procesów i zadań magazynowych. Szablony pracy określają, jak wykonywana jest praca dla każdego procesu magazynowego. Połączenie dyrektywy lokalizacji z szablonem pracy pomaga zagwarantować, że praca ma miejsce w określonych obszarach fizycznych magazynów.
 
 ## <a name="work-templates"></a>Szablony pracy
 Strona **Szablony pracy** pozwala zdefiniować operacje pracy, które muszą być wykonane w magazynie. Zwykle operacje pracy w magazynie składają się z dwóch działań: pracownik magazynu odbiera dostępny towar w lokalizacji, a następnie odkłada odebrany towar w innej lokalizacji. 

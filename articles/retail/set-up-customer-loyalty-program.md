@@ -1,6 +1,6 @@
 ---
 title: Omówienie programu lojalnościowego
-description: W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Microsoft Dynamics 365 for Retail oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych.
+description: W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Dynamics 365 Retail oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych.
 author: scott-tucker
 manager: AnnBe
 ms.date: 03/08/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c2a2347abddf03ed884dcfe68f645fde84c092a
-ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
+ms.openlocfilehash: 9fbb5d6db16e2e145c4970b5dd6417d9e99f78b2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1863779"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250974"
 ---
 # <a name="loyalty-overview"></a>Omówienie programu lojalnościowego
 
 [!include [banner](includes/banner.md)]
 
-Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za interakcje z marką sprzedawcy detalicznego. W programie Microsoft Dynamics 365 for Retail można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej. W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Microsoft Dynamics 365 for Retail oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych.
+Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za interakcje z marką sprzedawcy detalicznego. W programie Dynamics 365 Retail można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej. W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Retail oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych.
 
 Program lojalnościowy można skonfigurować w taki sposób, żeby zawierał następujące opcje.
 
@@ -42,7 +42,7 @@ Program lojalnościowy można skonfigurować w taki sposób, żeby zawierał nas
 
 ## <a name="setting-up-loyalty-programs"></a>Konfigurowanie programów lojalnościowych
 
-Należy skonfigurować kilka składników, aby włączyć funkcję lojalnościową w module Dynamics 365 for Retail. Na poniższym diagramie przedstawiono składniki lojalnościowe i ich relacje względem siebie.
+Należy skonfigurować kilka składników, aby włączyć funkcję lojalnościową w Retail. Na poniższym diagramie przedstawiono składniki lojalnościowe i ich relacje względem siebie.
 
 ![Przebieg procesu konfigurowania systemu lojalności](./media/loyaltyprocess.gif "Składniki lojalnościowe i ich relacje względem siebie")
 
@@ -69,9 +69,9 @@ W poniższej tabeli opisano procesy, które należy wykonać, aby wysłać konfi
 
 | Nazwa procesu                         | Opis | Nazwa strony |
 |--------------------------------------|-------------|-----------|
-| 1050 (informacje o lojalności)           | Uruchom ten proces w celu wysyłania danych lojalnościowych z programu Dynamics 365 for Retail do sklepów sieci sprzedaży. Dobrze jest zaplanować częste wykonywanie tego procesu, tak aby dane lojalnościowe były przesyłane do wszystkich sklepów. | Harmonogram dystrybucji |
+| 1050 (informacje o lojalności)           | Uruchom ten proces w celu wysyłania danych lojalnościowych z Retail do sklepów sieci sprzedaży. Dobrze jest zaplanować częste wykonywanie tego procesu, tak aby dane lojalnościowe były przesyłane do wszystkich sklepów. | Harmonogram dystrybucji |
 | Przetwarzanie programów lojalnościowych              | Uruchom ten proces, aby skojarzyć schematy lojalnościowe z kanałami sprzedaży detalicznej, do których jest przypisany schemat lojalnościowy. Ten proces może zostać zaplanowany do uruchamiania jako zadanie wsadowe. Należy uruchamiać ten proces przy każdej zmianie danych konfiguracji lojalności, takich jak harmonogramy, programy lojalnościowe lub punkty lojalnościowe. | Przetwarzanie programów lojalnościowych |
-| Przetwarzaj transakcje programu lojalnościowego w trybie offline | Uruchom ten proces, aby zaktualizować karty lojalnościowe tak, aby uwzględniały transakcje przetworzone w trybie offline. Ten proces ma zastosowanie tylko wtedy, gdy jest zaznaczone pole wyboru **Uzyskaj w trybie offline** na stronie **Wspólne parametry sieci sprzedaży**, dzięki czemu możliwie jest odbieranie nagród offline. | Przetwarzaj transakcje programu lojalnościowego w trybie offline |
+| Księguj uzyskane punkty lojalnościowe w partiach | Uruchom ten proces, aby zaktualizować karty lojalnościowe tak, aby uwzględniały transakcje przetworzone w trybie offline. Ten proces ma zastosowanie tylko wtedy, gdy jest zaznaczone pole wyboru **Księguj uzyskane punkty w partiach** na stronie **Wspólne parametry sieci sprzedaży**, dzięki czemu możliwie jest odbieranie nagród offline. | Księguj uzyskane punkty lojalnościowe w partiach |
 | Aktualizuj warstwy kart lojalnościowych            | Uruchom ten proces, aby ocenić aktywność zdobywania punktów odbiorcy pod kątem reguł warstwy dla programu lojalnościowego oraz zaktualizować stan warstwy odbiorcy. Ten proces jest wymagany tylko, gdy zmienisz reguły warstwy w programach lojalnościowych i chcesz wstecznie zastosować zaktualizowane reguły do kart lojalnościowych, które zostały już wystawione. Ten proces może być uruchamiany jako zadanie wsadowe lub dla poszczególnych kart. | Aktualizuj warstwy kart lojalnościowych |
 
 ## <a name="loyalty-enhancements"></a>Ulepszenia funkcjonalności programów lojalnościowych
@@ -89,7 +89,7 @@ Aplikacja Retail w wydaniu z października 2018 roku zawiera nowe funkcje progra
 
     ![Wykluczone przynależności](./media/Excluded-affiliations.png "Wykluczanie przynależności z naliczania punktów lojalnościowych")
     
-- Sprzedawcy detaliczni mogą generować numery kart lojalnościowych w kanałach. Przed aktualizacją z października 2018 r. sprzedawcy detaliczni mogli używać fizycznych kart lojalnościowych lub generować karty lojalnościowe przy użyciu wybranych unikatowy danych odbiorców, takich jak numer telefonu. Aby umożliwić automatyczne generowanie kart lojalnościowych w sklepach detalicznych, należy włączyć funkcję **Generuj numer karty lojalnościowej** w profilu funkcjonalności skojarzonym ze sklepem. W kanałach internetowych sprzedawcy detaliczni mogą używać interfejsu API IssueLoyaltyCard w celu wystawiania kart lojalnościowych odbiorcom. Sprzedawcy detaliczni mogą w tym interfejsie API podać numer karty lojalnościowej, który zostanie użyty do wygenerowania karty lojalnościowej, lub też system użyje numeracji kart lojalnościowych ustawionej w aplikacji Dynamics 365 for Retail. Jednak jeśli numeracja nie jest zdefiniowana, a sprzedawca detaliczny nie poda numeru karty lojalnościowej podczas wywoływania interfejsu API, zostanie wyświetlony błąd.
+- Sprzedawcy detaliczni mogą generować numery kart lojalnościowych w kanałach. Przed aktualizacją z października 2018 r. sprzedawcy detaliczni mogli używać fizycznych kart lojalnościowych lub generować karty lojalnościowe przy użyciu wybranych unikatowy danych odbiorców, takich jak numer telefonu. Aby umożliwić automatyczne generowanie kart lojalnościowych w sklepach detalicznych, należy włączyć funkcję **Generuj numer karty lojalnościowej** w profilu funkcjonalności skojarzonym ze sklepem. W kanałach internetowych sprzedawcy detaliczni mogą używać interfejsu API IssueLoyaltyCard w celu wystawiania kart lojalnościowych odbiorcom. Sprzedawcy detaliczni mogą w tym interfejsie API podać numer karty lojalnościowej, który zostanie użyty do wygenerowania karty lojalnościowej, lub też system użyje numeracji kart lojalnościowych ustawionej w aplikacji Retail. Jednak jeśli numeracja nie jest zdefiniowana, a sprzedawca detaliczny nie poda numeru karty lojalnościowej podczas wywoływania interfejsu API, zostanie wyświetlony błąd.
 
     ![Generowanie karty lojalnościowej](./media/Generate-loyalty-card.png "Automatyczne generowanie numeru karty lojalnościowej")
 
@@ -137,7 +137,7 @@ Aplikacja Retail w wydaniu z października 2018 roku zawiera nowe funkcje progra
     - Zarejestrowanie wykonania działania, za które należą się punkty.
     - Przyznanie odpowiedniej liczby punktów.
 
-    Pierwszy etap jest zewnętrzny względem programu Microsoft Dynamics 365 for Retail, na przykład wysłanie tweeta o marce lub opublikowanie linku do marki na portalu Facebook. Po zarejestrowaniu wystąpienia działania sprzedawca może wywołać powyższy interfejs API Retail Server i przyznać punkty lojalnościowe w czasie rzeczywistym. W takich scenariuszach nie ma potrzeby kroku oceny, ponieważ aktywność już wystąpiła i powinny zostać przyznane odpowiednie punkty. Są jednak scenariusze, w których sprzedawca chce ocenić rekordy przed przyznaniem punktów. Na przykład sprzedawca ustawił warsztat w sklepie, do którego klienci rejestrują się w witrynie e-commerce lub na dowolnym innym wydarzeniu rejestrującym zgłoszenia. Jednak punkty lojalnościowe należą się tylko tym, którzy przyjdą na warsztat osobiście. W wersji 10.0 dla takich scenariuszach możemy wprowadzić jednostkę danych o nazwie **Punkty lojalnościowe w sklepie inne niż wiersze typu działania**. Ta jednostka danych umożliwia sprzedawcom używanie narzędzia importu/eksportu danych (DIXF) lub interfejsu API OData do rejestrowania działań, w których należy przyznać odbiorcom punkty lojalnościowe. Jednostka danych zapisuje działania w arkuszu o nazwie **Wierszy lojalnościowe dla innych działań**, którego można używać do celów oceny i modyfikacji. Po sprawdzeniu danych użytkownik IT może albo ręcznie zaksięgować wiersze działania lub uruchomić zadanie o nazwie **Przetwarzaj inne typy działania dla wierszy lojalności**, które zaksięguje wszystkie niezaksięgowane wiersze działania i przyzna punkty odbiorcom na podstawie reguł otrzymywania punktów. W powyższym scenariuszu wniosek o rejestrację zdarzenia wywoła interfejs API OData do wysyłania informacji do programu Dynamics 365 for Retail. Jednak użytkownik IT można zaksięgować wiersze czynności tylko tych klientów, którzy przyszli na warsztat, i usunąć wiersze działania innych klientów. 
+    Pierwszy etap jest zewnętrzny względem Retail, na przykład wysłanie tweeta o marce lub opublikowanie linku do marki na portalu Facebook. Po zarejestrowaniu wystąpienia działania sprzedawca może wywołać powyższy interfejs API Retail Server i przyznać punkty lojalnościowe w czasie rzeczywistym. W takich scenariuszach nie ma potrzeby kroku oceny, ponieważ aktywność już wystąpiła i powinny zostać przyznane odpowiednie punkty. Są jednak scenariusze, w których sprzedawca chce ocenić rekordy przed przyznaniem punktów. Na przykład sprzedawca ustawił warsztat w sklepie, do którego klienci rejestrują się w witrynie e-commerce lub na dowolnym innym wydarzeniu rejestrującym zgłoszenia. Jednak punkty lojalnościowe należą się tylko tym, którzy przyjdą na warsztat osobiście. W wersji 10.0 dla takich scenariuszach możemy wprowadzić jednostkę danych o nazwie **Punkty lojalnościowe w sklepie inne niż wiersze typu działania**. Ta jednostka danych umożliwia sprzedawcom używanie narzędzia importu/eksportu danych (DIXF) lub interfejsu API OData do rejestrowania działań, w których należy przyznać odbiorcom punkty lojalnościowe. Jednostka danych zapisuje działania w arkuszu o nazwie **Wierszy lojalnościowe dla innych działań**, którego można używać do celów oceny i modyfikacji. Po sprawdzeniu danych użytkownik IT może albo ręcznie zaksięgować wiersze działania lub uruchomić zadanie o nazwie **Przetwarzaj inne typy działania dla wierszy lojalności**, które zaksięguje wszystkie niezaksięgowane wiersze działania i przyzna punkty odbiorcom na podstawie reguł otrzymywania punktów. W powyższym scenariuszu wniosek o rejestrację zdarzenia wywoła interfejs API OData do wysyłania informacji do programu Dynamics 365 Retail. Jednak użytkownik IT można zaksięgować wiersze czynności tylko tych klientów, którzy przyszli na warsztat, i usunąć wiersze działania innych klientów. 
 
     > [!NOTE]
     > Obecnie system zmusza użytkowników do ustawienia sekwencji numerów dla „innych typów działań”, ale nie będzie to krok wymagany w przyszłych wersjach. Aby ustawić sekwencję numerów, przejdź do opcji **Wspólne parametry sieci sprzedaży** \> **Sekwencje numerów** i wybierz sekwencję numerów dla pozycji **Identyfikator innego typu działania w programie lojalnościowym**.

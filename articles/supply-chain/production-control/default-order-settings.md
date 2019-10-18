@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b7c36553c9ad5bf4b061285d617be85ce77d0fcd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e6d4e9a3ac5635e292b20eba60fe4f010562fdba
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552654"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250102"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Domyślne ustawienia zamówienia dla wymiarów i wariantów produktu
 
@@ -32,7 +32,7 @@ ms.locfileid: "1552654"
 
 [!include [retail name](../includes/retail-name.md)]
 
-Domyślne ustawienia zamówień w Microsoft Dynamics 365 for Finance and Operations definiują: oddział i magazyn, skąd towary będą pobierane lub gdzie będą przechowywane; ilości minimalne, maksymalne, wielokrotne i standardowe, które będą używane do handlu lub zarządzania zapasami; czasy realizacji; flagę blokady; metodę tworzenia zobowiązań zamówień. Domyślne ustawienia zamówień są stosowane przy tworzeniu zamówień zakupu, zamówień sprzedaży, zamówień przeniesienia i arkuszy magazynowych oraz w planowaniu głównym do generowania zamówień planowanych. Domyślne ustawienia zamówień mogą być specyficzne dla towaru, oddziału, wariantu produktu lub wymiaru produktu.
+Domyślne ustawienia zamówień w Dynamics 365 Supply Chain Management definiują: oddział i magazyn, skąd towary będą pobierane lub gdzie będą przechowywane; ilości minimalne, maksymalne, wielokrotne i standardowe, które będą używane do handlu lub zarządzania zapasami; czasy realizacji; flagę blokady; metodę tworzenia zobowiązań zamówień. Domyślne ustawienia zamówień są stosowane przy tworzeniu zamówień zakupu, zamówień sprzedaży, zamówień przeniesienia i arkuszy magazynowych oraz w planowaniu głównym do generowania zamówień planowanych. Domyślne ustawienia zamówień mogą być specyficzne dla towaru, oddziału, wariantu produktu lub wymiaru produktu.
 
 Na stronie **Ustawienia domyślne zamówień** można wprowadzić domyślne parametry zamówień. Aby otworzyć tę stronę, wybierz kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Produkty** &gt; **Zwolnione produkty** &gt; **Wybór zwalnianego produktu** &gt; w okienku akcji **Plan** lub **Zarządzanie zapasami** &gt; **Ustawienia zamówienia** &gt; **Ustawienia domyślne zamówień**.
 
@@ -74,7 +74,7 @@ Domyślne ustawienia zamówień zapasów są również stosowane podczas tworzen
 -   Planowane zlecenia produkcyjne
 
 ## <a name="full-definition-of-a-released-product"></a>Pełna definicja zwolnionego produktu
-Podczas tworzenia transakcji należy określić pełną definicję zwolnionego produktu w wierszu, zanim program Finance and Operations spróbuje zidentyfikować domyślne ustawienia zamówień. Pełna definicja zwolnionego produktu oznacza, że numer towaru i wszystkie aktywne wymiary produktu, takie jak konfiguracja, rozmiar, styl i kolor, są określone w transakcji. Na przykład jeśli ręcznie tworzysz wiersz zamówienia zakupu dla zwolnionego produktu wariantu, należy określić wszystkie wymagane wymiary produktu, zanim oddział, magazyn, ilości i czas realizacji zostaną wyświetlone domyślnie w wierszu zamówienia. 
+Podczas tworzenia transakcji należy określić pełną definicję zwolnionego produktu w wierszu, aby usługa Supply Chain Management podjęła próbę identyfikacji domyślnych ustawień zamówień. Pełna definicja zwolnionego produktu oznacza, że numer towaru i wszystkie aktywne wymiary produktu, takie jak konfiguracja, rozmiar, styl i kolor, są określone w transakcji. Na przykład jeśli ręcznie tworzysz wiersz zamówienia zakupu dla zwolnionego produktu wariantu, należy określić wszystkie wymagane wymiary produktu, zanim oddział, magazyn, ilości i czas realizacji zostaną wyświetlone domyślnie w wierszu zamówienia. 
 
 Nie wszystkie domyślne ustawienia zamówień są stosowane podczas tworzenia wierszy zamówień lub arkuszy. Ilości i czasy realizacji będą wyświetlane domyślnie tylko wtedy, gdy jest to konieczne. Na przykład podczas inwentaryzacji wiersza arkusza będą domyślnie wyświetlane tylko oddział i magazyn dla utworzonego wiersza. Podczas tworzenia wiersza lub księgowania arkusza nie są domyślnie wprowadzane ilości ani sprawdzane wielokrotności i wartości minimalne. 
 
@@ -97,7 +97,7 @@ Dla odrębnych zwolnionych produktów można zdefiniować ogólne ustawienia zam
 
 Aby utworzyć ustawienia zamówień właściwe dla oddziału, kliknij przycisk **Nowy**. W oknie **Widok szczegółów** wpisz oddział w polu **Ustawienia dotyczące** &gt; **Oddział**. W oknie **Widok siatki** wpisz oddział w kolumnie **Oddział**. Nowa reguła automatycznie otrzyma nową wartość rangi wyższą niż 0. Można utworzyć dowolną potrzebną liczbę reguł właściwych dla oddziału, a wszystkim regułom właściwym dla oddziału można przypisać taką samą rangę, wskazując w ten sposób, że są one równie ważne. 
 
-Jeśli znajdujesz się w oknie **Widok szczegółów**, nie można uzyskać podglądu reguł utworzonych dla towaru. Aby wyświetlić informacje przeglądowe, kliknij przycisk **Pokaż/ukryj listę**. Podczas tworzenia wiersza zamówienia dowolnego typu, gdy nie jest określony oddział, program Finance and Operations wyszukuje reguły bez zdefiniowanego oddziału. Może to pomóc określić domyślny oddział w wierszu zamówienia. Znaleziony oddział jest następnie używany do wyszukiwania reguły właściwej dla oddziału, w której mógł zostać ustawiony domyślny magazyn. Ten magazyn jest stosowany do wiersza zamówienia.
+Jeśli znajdujesz się w oknie **Widok szczegółów**, nie można uzyskać podglądu reguł utworzonych dla towaru. Aby wyświetlić informacje przeglądowe, kliknij przycisk **Pokaż/ukryj listę**. Podczas tworzenia wiersza zamówienia dowolnego typu, gdy nie jest określony oddział, usługa Supply Chain Management wyszukuje reguły bez zdefiniowanego oddziału. Może to pomóc określić domyślny oddział w wierszu zamówienia. Znaleziony oddział jest następnie używany do wyszukiwania reguły właściwej dla oddziału, w której mógł zostać ustawiony domyślny magazyn. Ten magazyn jest stosowany do wiersza zamówienia.
 
 ### <a name="specific-order-settings-for-product-dimension"></a>Ustawienia zamówień właściwe dla wymiaru produktu
 
@@ -134,7 +134,7 @@ Można utworzyć następujące reguły domyślnych ustawień zamówień.
 
 Dwie reguły blokowania starych wersji mają tę samą rangę, co oznacza, że są równie ważne. Obie mają wyższą rangę niż reguła dla konfiguracji C1, co oznacza, że mają pierwszeństwo nad regułą konfiguracji C1. 
 
-W tym przykładzie pokazano potrzebę używania rangi. Jeśli zamówienie zakupu jest tworzone dla konfiguracji C1 i wersji R2, w przypadku braku rangi dwie reguły zdefiniowane dla wersji R2 i konfiguracji C1 byłyby niejednoznaczne. Aby rozwiązać niejednoznaczność, program Finance and Operations przeszuka reguły w kolejności malejącej według rangi i zastosuje pierwszą pasującą regułę. W obecnym przykładzie podczas tworzenia wiersza zamówienia zakupu dla konfiguracji C1 i wersji R2 użytkownik otrzyma komunikat ostrzegawczy, że towar jest wstrzymamy i że jest to spowodowane wartością wersji. Jeśli reguła konfiguracji miałaby rangę wyższą niż 1 dla wersji, tworzenie wiersza zamówienia zakupu dla konfiguracji C1 i wersji R2 powiodłoby się, a użytkownikowi nie byłby wyświetlany żaden komunikat „Towar wstrzymany”. 
+W tym przykładzie pokazano potrzebę używania rangi. Jeśli zamówienie zakupu jest tworzone dla konfiguracji C1 i wersji R2, w przypadku braku rangi dwie reguły zdefiniowane dla wersji R2 i konfiguracji C1 byłyby niejednoznaczne. Aby rozwiązać niejednoznaczność, usługa Supply Chain Management przeszuka reguły w kolejności malejącej według rangi i zastosuje pierwszą pasującą regułę. W obecnym przykładzie podczas tworzenia wiersza zamówienia zakupu dla konfiguracji C1 i wersji R2 użytkownik otrzyma komunikat ostrzegawczy, że towar jest wstrzymamy i że jest to spowodowane wartością wersji. Jeśli reguła konfiguracji miałaby rangę wyższą niż 1 dla wersji, tworzenie wiersza zamówienia zakupu dla konfiguracji C1 i wersji R2 powiodłoby się, a użytkownikowi nie byłby wyświetlany żaden komunikat „Towar wstrzymany”. 
 
 Rozważmy następujące reguły domyślnych ustawień zamówień.
 

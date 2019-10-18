@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd94ae4c5ea855139fd1c41060de7db455ffab06
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dd51fa667fd48b7bab64c3566b616631c6f9bcd1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557656"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249639"
 ---
 # <a name="cost-management-home-page"></a>Zarządzanie kosztami — strona główna
 
@@ -69,5 +69,5 @@ W artykule [Obliczenia BOM za pomocą arkusza wyceny](https://mbs.microsoft.com/
 Opinie, wiadomości i inne informacje na temat modułu Zarządzanie kosztami można znaleźć w [blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) oraz [blogu zespołu ds. badań i rozwoju modułu Zarządzanie łańcuchem dostaw systemu Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm). Mimo że część z tych wpisów została napisana dla poprzedniej wersji modułu Zarządzanie kosztami, to w obecnej wersji są również używane te same pojęcia i podobne procedury.
 
 #### <a name="task-guides"></a>Przewodniki zadań
-Dodatkowa pomoc jest dostępna w formie przewodników po zadaniach wewnątrz rozwiązania Finance and Operations. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk Pomoc na dowolnej stronie.
+Dodatkowa pomoc jest dostępna jako przewodniki po zadaniach. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk Pomoc na dowolnej stronie.
 

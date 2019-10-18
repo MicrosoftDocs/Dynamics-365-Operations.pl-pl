@@ -1,6 +1,6 @@
 ---
 title: Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
-description: Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania klientów w rozwiązaniu Microsoft Dynamics 365 for Retail.
+description: Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania klientów w rozwiązaniu Dynamics 365 Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: 60db9e9936f7728d76f5c7a0d0c31b33477c7c61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625649"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023695"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
 
@@ -99,7 +99,10 @@ Tradycyjne wyszukiwanie odbiorcy może być czasochłonne, ponieważ obejmuje wi
 
 ![Skróty wyszukiwania odbiorców](./media/SearchShortcutsPOS.png "Skróty wyszukiwania odbiorców")
 
-Aby ustawić kryteria wyszukiwania jako skróty, administrator musi otworzyć stronę **Parametry sieci sprzedaży** w aplikacji Microsoft Dynamics 365 for Finance and Operations, a następnie na karcie **Kryteria wyszukiwania w aplikacji POS** zaznaczyć wszystkie kryteria, które powinny być wyświetlane w postaci skrótów.
+
+
+Aby ustawić kryteria wyszukiwania jako skróty, administrator musi otworzyć stronę **Parametry sieci sprzedaży** w aplikacji Microsoft Dynamics 365 Retail, a następnie na karcie **Kryteria wyszukiwania w aplikacji POS** zaznaczyć wszystkie kryteria, które powinny być wyświetlane w postaci skrótów.
+
 
 ![Konfigurowanie skrótów wyszukiwania](./media/ConfigureShortcutsAX.png "Konfigurowanie skrótów wyszukiwania")
 
@@ -111,6 +114,6 @@ Pole **Kolejność wyświetlania** określa kolejność, w jakiej skróty są wy
 > [!NOTE]
 > Niestandardowa właściwość dodana do elementu stałotekstowego nie wpływa na standardowy algorytm wyszukiwania odbiorców. Innymi słowy algorytm wyszukiwania odbiorców nie wyszukuje w niestandardowej właściwości. Użytkownicy mogą stosować niestandardową właściwość do wyszukiwania tylko wtedy, gdy jest ona dodana jako skrót albo gdy domyślny algorytm wyszukiwania zostanie zastąpiony.
 
-W nadchodzącej wersji Microsoft Dynamics 365 for Retail, sprzedawcy detaliczni będą mogli skonfigurować domyślny tryb wyszukiwania klientów w punkcie sprzedaży, aby **Przeszukiwać wszystkie sklepy**. Ta konfiguracja może być przydatna w scenariuszach, w których klienci, którzy zostali wytworzeniu poza systemem, muszą być natychmiast wyszukiwani (na przykład, jeszcze przed uruchomieniem zadania dystrybucji). Nowa opcja **Domyślny tryb wyszukiwania odbiorców** będzie dostępna w profilu funkcji punktu sprzedaży. Ustaw na **Włączony** aby skonfigurować domyślny tryb wyszukiwania na **Szukaj we wszystkich sklepach**. Każda próba wyszukania odbiorcy spowoduje przetworzenie połączenia w czasie rzeczywistym z centralą.
+W nadchodzącej wersji Retail, sprzedawcy detaliczni będą mogli skonfigurować domyślny tryb wyszukiwania klientów w punkcie sprzedaży, aby **Przeszukiwać wszystkie sklepy**. Ta konfiguracja może być przydatna w scenariuszach, w których klienci, którzy zostali wytworzeniu poza systemem, muszą być natychmiast wyszukiwani (na przykład, jeszcze przed uruchomieniem zadania dystrybucji). Nowa opcja **Domyślny tryb wyszukiwania odbiorców** będzie dostępna w profilu funkcji punktu sprzedaży. Ustaw na **Włączony** aby skonfigurować domyślny tryb wyszukiwania na **Szukaj we wszystkich sklepach**. Każda próba wyszukania odbiorcy spowoduje przetworzenie połączenia w czasie rzeczywistym z centralą.
 
 Aby zapobiec nieoczekiwanem problemom z wydajnością, ta konfiguracja jest ukryta za flagą lotu o nazwie **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Dlatego w celu wyświetlenia ustawienia interfejs użytkownika (UI) **Tryb domyślnego wyszukiwania klientów**, należy utworzyć bilet pomocy technicznej dla systemu testowania akceptacji użytkowników (UAT) i środowisk produkcyjnych. Po otrzymaniu biletu zespół inżynierów będzie pracował ze sprzedawcą, aby upewnić się, że sprzedawca przeprowadza testy w środowiskach nieprodukcyjnych, aby ocenić wydajność i wdrożyć wymagane optymalizacje.

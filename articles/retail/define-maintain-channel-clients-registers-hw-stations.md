@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 544f109a4f46bd7511ee564902f627beddd29f15
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a21394daeb797995418c3b139191dd700c129e12
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568052"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019400"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
 
@@ -49,11 +49,11 @@ Kasa w punkcie sprzedaży (POS) to jednostka używana do definiowania właściwo
 
 Nawigacja: Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Urządzenia**.
 
-Urządzenie to jednostka, która reprezentuje fizyczne wystąpienie urządzenia zmapowanego do kasy POS. Po utworzeniu urządzenie jest mapowane do kasy POS. Jednostka urządzenia śledzi informacje o tym, kiedy kasa punktu sprzedaży jest aktywowana, jaki typ klienta jest używany i jaki pakiet aplikacji został wdrożony na konkretnym urządzeniu. Urządzenia mogą być dwóch typów: **Retail Modern POS** (MPOS) lub **Retail Cloud POS** (Cloud POS).
+Urządzenie to jednostka, która reprezentuje fizyczne wystąpienie urządzenia zmapowanego do kasy POS. Po utworzeniu urządzenie jest mapowane do kasy POS. Jednostka urządzenia śledzi informacje o tym, kiedy kasa punktu sprzedaży jest aktywowana, jaki typ klienta jest używany i jaki pakiet aplikacji został wdrożony na konkretnym urządzeniu. Urządzenia mogą być dwóch typów: **Retail modern POS** (MPOS) lub **Retail Cloud POS** (Cloud POS).
 
 #### <a name="mpos"></a>MPOS
 
-MPOS to aplikacja kliencka punktu sprzedaży instalowana na komputerze z systemem operacyjnym Windows 8.1 lub nowszym. Jeśli do urządzenia jest mapowana aplikacja typu **Retail Modern POS**, pakiet do pobrania można określić dla konkretnego urządzenia. Pakiet do pobrania można dostosować, aby zawierał różne wersje pakietu instalacyjnego. Możliwość wdrażania różnych pakietów zapewnia elastyczność w przypadkach, gdy różne kasy POS mogą wymagać różnych integracji. Aplikację MPOS wdraża się razem z wbudowanym oprogramowaniem stacji sprzętowej.
+MPOS to aplikacja kliencka punktu sprzedaży instalowana na komputerze z systemem operacyjnym Windows 8.1 lub nowszym. Jeśli do urządzenia jest mapowana aplikacja typu **Retail modern POS**, pakiet do pobrania można określić dla konkretnego urządzenia. Pakiet do pobrania można dostosować, aby zawierał różne wersje pakietu instalacyjnego. Możliwość wdrażania różnych pakietów zapewnia elastyczność w przypadkach, gdy różne kasy POS mogą wymagać różnych integracji. Aplikację MPOS wdraża się razem z wbudowanym oprogramowaniem stacji sprzętowej.
 
 #### <a name="cloud-pos"></a>Cloud POS
 

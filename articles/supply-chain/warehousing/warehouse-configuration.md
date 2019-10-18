@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 471ab164d7bd2e85f5192c082a905f3c30de3d2b
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 05f8a71dde998abccc75bc962636f9eb04d7e8c2
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866096"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026723"
 ---
 # <a name="warehouse-configuration-overview"></a>Omówienie konfiguracji magazynu
 
@@ -34,7 +34,7 @@ W tym artykule wyjaśniono sposób konfigurowania magazynu. Artykuł zawiera inf
 **Uwaga:** Ten artykuł dotyczy funkcji zaawansowanego zarządzania magazynem w module **Zarządzanie magazynem**. Nie ma zastosowania do funkcji w module **Zarządzanie zapasami**.
 
 ## <a name="warehouse-layout"></a>Układ magazynu
-System zarządzania magazynem w programie Microsoft Dynamics 365 for Finance and Operations zapewnia elastyczne metody definiowania układu magazynu do zaspokojenia zmieniających się potrzeb, dzięki czemu można uzyskać optymalną wydajność magazynu.
+System zarządzania magazynem w Finance and Operations zapewnia elastyczne metody definiowania układu magazynu do zaspokojenia zmieniających się potrzeb, dzięki czemu można uzyskać optymalną wydajność magazynu.
 
 -   Istnieje możliwość ustalenia obszarów magazynowych o wysokim priorytecie i niskim priorytecie dla optymalnego umieszczenia towarów.
 -   Magazyn można podzielić na strefy, aby spełniał różne wymagania przechowywania, takie jak wymagania w zakresie temperatury lub różnych współczynników obrotu dla towarów.

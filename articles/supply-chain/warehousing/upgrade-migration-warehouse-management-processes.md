@@ -1,5 +1,5 @@
 ---
-title: Uaktualnianie funkcji zarządzania magazynem z systemu Microsoft Dynamics AX 2012 do rozwiązania Finance and Operations
+title: Uaktualnienie zarządzania magazynem z Microsoft Dynamics AX 2012 do Supply Chain Management
 description: Ten temat zawiera omówienie opcji migracji dotyczących zarządzania produktami i magazynami.
 author: perlynne
 manager: AnnBe
@@ -18,29 +18,29 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c3dcb75653743d0d135eda197c6330f3ee9c5383
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554053"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251438"
 ---
-# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Uaktualnianie funkcji zarządzania magazynem z systemu Microsoft Dynamics AX 2012 do rozwiązania Finance and Operations
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Uaktualnienie zarządzania magazynem z Microsoft Dynamics AX 2012 do Supply Chain Management 
 
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówiono proces uaktualniania z systemu Microsoft Dynamics AX 2012 R3, w którym działał moduł WMSII, do rozwiązania Microsoft Dynamics 365 for Finance and Operations.
+W tym temacie omówiono proces uaktualniania z Microsoft Dynamics AX 2012 R3, w którym działał moduł WMSII, do rozwiązania Supply Chain Management.
 
-Program Finance and Operations nie obsługuje już starszego modułu **WMSII** z systemu Microsoft Dynamics AX 2012. Zamiast niego można używać modułu **Zarządzanie magazynem**. W module WMSII wymiary zapasów Lokalizacja i Identyfikator palety można było wybrać dla magazynu finansowego, jednak wymiar zapasów Identyfikator palety nie może być używany w magazynie finansowym w programie Finance and Operations.
+Program Supply Chain Management nie obsługuje już starszego modułu **WMSII** z Microsoft Dynamics AX 2012. Zamiast niego można używać modułu **Zarządzanie magazynem**. W module WMSII wymiary zapasów Lokalizacja i Identyfikator palety można było wybrać dla magazynu finansowego, jednak wymiar zapasów Identyfikator palety nie może być używany w magazynie finansowym w Supply Chain Management.
 
 Podczas uaktualniania wszystkie produkty skojarzone z grupą wymiarów magazynowania używającą wymiaru zapasów Identyfikator palety są identyfikowane, oznaczane jako zablokowane i wyłączone z uaktualniania.
 
-## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Uaktualnianie do programu Finance and Operations, gdy jest używane oprogramowanie AX 2012 R3 WMSII
+## <a name="upgrading-to-supply-chain-management-when-ax-2012-r3-wmsii-is-used"></a>Uaktualnianie do Supply Chain Management przy użyciu AX 2012 R3 WMSII
 Po uaktualnieniu można użyć różnych opcji dostępnych w formularzu **Zmiana grupy wymiarów magazynowania dla towarów** i odblokować produkty, które zostały zablokowane podczas uaktualniania, a następnie wykonać transakcje na tych produktach.
 
-### <a name="enabling-items-in-finance-and-operations"></a>Włączanie towarów w rozwiązaniu Finance and Operations
-Ta zmiana jest wymagana, ponieważ w rozwiązaniu Finance and Operations elementem procesu zarządzania magazynem jest śledzenie towarów. W tych procesach wszystkie magazyny i ich lokalizacje muszą być skojarzone z profilem lokalizacji. Jeśli chcesz używać procesów zarządzania magazynem, należy dokonać następujących konfiguracji:
+### <a name="enabling-items-in-supply-chain-management"></a>Włączanie pozycji w Supply Chain Management 
+Ta zmiana jest wymagana, ponieważ w rozwiązaniu Supply Chain Management elementem procesu zarządzania magazynem jest śledzenie towarów. W tych procesach wszystkie magazyny i ich lokalizacje muszą być skojarzone z profilem lokalizacji. Jeśli chcesz używać procesów zarządzania magazynem, należy dokonać następujących konfiguracji:
 -   W istniejących magazynach musi zostać włączone używanie procesów zarządzania magazynem. 
 -   Istniejące zwolnione produkty muszą zostać skojarzone z grupą wymiarów magazynowania, która używa procesów zarządzania magazynem. 
 

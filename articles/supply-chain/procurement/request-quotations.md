@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2276f5296a77d620e0084c0247b1e25071fe029
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: bb5255236fc48132d4d68dc6f515f32e7ec71dae
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865287"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248849"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Omówienie zapytań ofertowych (ZO)
 
@@ -48,16 +48,13 @@ Sprawy ZO można tworzyć z zamówień planowanych lub zapotrzebowań na zakup a
 
 Po przygotowaniu sprawy ZO i dodaniu dostawców wybierz opcję **Wyślij** (**Wysyłanie i publikowanie** w przypadku podmiotów z sektora publicznego) w sprawie ZO. Dla każdego dostawcy, do którego wysłano ZO generowany jest arkusz ZO. Można skonfigurować opcje drukowania dla akcji wysyłania, aby wydrukować raport dla każdego dostawcy w celu archiwizowania, lub wysłać raporty na adresy e-mail dostawców. Ponadto arkusz ZO dla każdego dostawcy może służyć do generowania raportu, który można wysłać lub później ponownie wysłać do dostawcy. Można również skonfigurować akcję wysłania, aby wygenerować arkusz odpowiedzi, który mogą wypełniać dostawcy.
 
-W tym temacie opisano proces obsługi ZO, gdy nie jest używana współpraca z dostawcą. Jeśli system jest skonfigurowany do współpracy z dostawcami, dostawcy mogą wprowadzić oferty bezpośrednio w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations. Aby uzyskać więcej informacji, zobacz [Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) i [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-external-vendors.md).
+W tym temacie opisano proces obsługi ZO, gdy nie jest używana współpraca z dostawcą. Jeśli system jest skonfigurowany do współpracy z dostawcami, dostawcy mogą wprowadzić oferty bezpośrednio w rozwiązaniu Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) i [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-external-vendors.md).
 
 Jeżeli po wysłaniu wymagana jest zmiana ZO, po zakończeniu można ponownie wysłać ZO do dostawców, korzystając z dwóch akcji zmian: Utwórz i Finalizuj.+
 
 Po otrzymaniu ofert w wiadomości e-mail można je obsługiwać na stronie **Zapytania ofertowe**.
 
 Jeśli w przypadku danego dostawcy wymagana jest druga iteracja odpowiedzi, wybierz opcję **Zwrot** na stronie **Zapytanie ofertowe**. Akcja zwrotu tworzy nowy arkusz i raport, który będzie można wydrukować, archiwizować i wysyłać zgodnie z ustawieniami drukowania.
-
-> [!NOTE]
-> Nazwa strony **Zapytanie ofertowe** uległa zmianie. W starszych wersjach programu Dynamics 365 for Finance and Operations strona nosiła tytuł **Odpowiedź na zapytanie ofertowe**.
 
 Po dodaniu do sprawy ZO kryteriów punktowania ZO będzie miało panel punktowania, w którym można wprowadzać oceny. Całkowity wynik będzie widoczny w ZO oraz po porównaniu odpowiedzi na stronie **Porównaj odpowiedzi**. Na stronie **Porównaj odpowiedzi** można także porównać inne dane odpowiedzi, takie jak cena wiersza, data dostawy i cena łączna.
 

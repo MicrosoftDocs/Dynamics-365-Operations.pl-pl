@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e86c2f8d1d5920198db74dc3b64f2393c5e13ff7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 46aa4378a5b106d5717e0c841f2f7c9d6629489e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555045"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251323"
 ---
 # <a name="register-serial-numbers-in-the-sales-process"></a>Rejestrowanie numerów seryjnych w procesie sprzedaży
 
@@ -34,9 +34,9 @@ ms.locfileid: "1555045"
 
 Ten temat wyjaśnia sposób rejestrowania numerów seryjnych na dokumentach dostawy i fakturach w procesie sprzedaży. Ta funkcja jest przydatna, gdy firma chce zapisywać numery seryjne na potrzeby serwisu i gwarancji, ale nie chce nimi zarządzać w zapasach na etapach od przyjęcia do wydania.
 
-Wiele firm po prostu chce gromadzić numery seryjne na potrzeby serwisu i gwarancji, i nie musi przechowywać numerów seryjnych w magazynie od przyjęcia do wydania. W tych scenariuszach program Microsoft Dynamics 365 for Finance and Operations umożliwia rejestrowanie numerów seryjnych na dokumentach dostawy i fakturach, gdy produkty są sprzedawane. Jeśli produkty są potem zwracane, można śledzić każdy produkt do faktury w celu ustalenia, czy produkt został sprzedany przez organizację oraz określenia, czy zobowiązania wynikające z usługi lub gwarancji są prawidłowe.
+Wiele firm po prostu chce gromadzić numery seryjne na potrzeby serwisu i gwarancji, i nie musi przechowywać numerów seryjnych w magazynie od przyjęcia do wydania. W tych scenariuszach można rejestrować numery seryjne na dokumentach dostawy i fakturach, gdy produkty są sprzedawane. Jeśli produkty są potem zwracane, można śledzić każdy produkt do faktury w celu ustalenia, czy produkt został sprzedany przez organizację oraz określenia, czy zobowiązania wynikające z usługi lub gwarancji są prawidłowe.
 
-Numery seryjne dla procesu sprzedaży trzeba włączyć, wybierając opcję **Aktywny w procesie sprzedaży** na stronie **Grupy wymiarów śledzenia**. W programie Microsoft Dynamics 365 for Finance and Operations mogą występować następujące zdarzenia:
+Numery seryjne dla procesu sprzedaży trzeba włączyć, wybierając opcję **Aktywny w procesie sprzedaży** na stronie **Grupy wymiarów śledzenia**. W rozwiązaniu Supply Chain Management występują następujące zdarzenia:
 -   Na skróconej karcie **Numery seryjne** opcja **Kontrola numeru seryjnego** jest zaznaczona. Jeśli ta opcja jest zaznaczona, należy zarejestrować jeden numer seryjny dla każdego towaru na dokumencie dostawy lub fakturze.
 -   Wszystkie wybrane opcje w grupie wymiaru śledzenia dla numerów seryjnych zostały wyczyszczone, z wyjątkiem opcji **Dozwolony pusty rozchód**. Można zaznaczyć opcję **Dozwolony pusty rozchód**, aby zastąpić kontrolę numeru seryjnego i zezwalać na pakowanie i fakturowanie produktów bez rejestrowania numerów seryjnych.
 

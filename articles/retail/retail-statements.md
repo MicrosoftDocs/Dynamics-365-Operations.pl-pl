@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 9e88a8b22b73aca5c2cee6984ecad3c62e597102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 63cad6b2f7240bb14fe7a9237498c0140df77774
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568006"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025036"
 ---
 # <a name="retail-statements"></a>Zestawienia handlu detalicznego
 
 [!include [banner](includes/banner.md)]
 
-W programie Microsoft Dynamics 365 for Retail proces księgowania zestawień jest używany do wykazywania transakcji następujących w aplikacjach Cloud POS lub Modern POS (MPOS). Proces księgowania zestawień używa harmonogramu dystrybucji, aby pobierać zbiór transakcji z punktu sprzedaży do aplikacji klienckiej w centrali (HQ). Parametry definiowane na stronach **Parametry sieci sprzedaży** i **Sklepy** są używane do wybierania transakcji pobieranych do poszczególnych zestawień.
+W programie Dynamics 365 Retail proces księgowania zestawień jest używany do wykazywania transakcji następujących w aplikacjach Cloud POS lub Modern POS (MPOS). Proces księgowania zestawień używa harmonogramu dystrybucji, aby pobierać zbiór transakcji z punktu sprzedaży do aplikacji klienckiej w centrali (HQ). Parametry definiowane na stronach **Parametry sieci sprzedaży** i **Sklepy** są używane do wybierania transakcji pobieranych do poszczególnych zestawień.
 
 Poniższa ilustracja przedstawia proces księgowania zestawień: W tym procesie transakcje rejestrowane w punkcie sprzedaży są przesyłane do klienta za pomocą modułu Transfer danych w sieci sprzedaży. Gdy klient otrzyma transakcje, użytkownik może tworzyć, obliczać i księgować zestawienia transakcji dla sklepu.
 
@@ -85,6 +85,6 @@ Jeśli dla tego samego sklepu pole wyboru **Księguj z dniem roboczym** jest wyc
 Podczas księgowania zestawienia, dla sprzedaży detalicznej w sprawozdaniu tworzone są zamówienia sprzedaży i faktury.
 
 - Sprzedaże dla transakcji kasowych i transakcji przeniesienia są agregowane do jednego zamówienia sprzedaży i zafakturowane dla domyślnego odbiorcy, który jest przypisany do sklepu.
-- Sprzedaż detaliczna, dla której dodano odbiorcę w transakcji w programie Microsoft Dynamics 365 for Retail POS, generuje oddzielne zamówienia sprzedaży i faktury, po jednej dla każdego unikatowego odbiorcy.
+- Sprzedaż detaliczna, dla której dodano odbiorcę w transakcji w usłudze Retail POS, generuje oddzielne zamówienia sprzedaży i faktury, po jednej dla każdego unikatowego odbiorcy.
 
 Arkusze płatności są automatycznie tworzone dla płatności w zestawieniu, a zapasy są aktualizowane dla sklepu z punktem sprzedaży.

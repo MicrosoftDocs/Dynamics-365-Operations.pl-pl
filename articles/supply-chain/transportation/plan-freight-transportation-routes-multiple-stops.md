@@ -1,6 +1,6 @@
 ---
 title: Planowanie tras przewozu frachtu z przystankami
-description: W tym artykule opisano różne elementy używane do planowania tras transportu w Dynamics 365 for Finance and Operations.
+description: W tym artykule opisano różne elementy używane do planowania tras transportu w Dynamics 365 Supply Chain Management.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36cb454477c0d296246c061d2573954a81c9efd7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 033dde410519b061b0ff3fb42e8f7790af9449ec
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553983"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017557"
 ---
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planowanie tras przewozu frachtu z przystankami
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano różne elementy używane do planowania tras transportu w Microsoft Dynamics 365 for Finance and Operations.
+W tym artykule opisano różne elementy używane do planowania tras transportu w Dynamics 365 Supply Chain Management.
 
 Dla złożonych tras transportowych, które mają przystanki po drodze, można używać planów tras i przewodników po trasach. Jeśli ta sama trasa będzie stosowana w sposób regularny, można skonfigurować trasę z harmonogramem.
 

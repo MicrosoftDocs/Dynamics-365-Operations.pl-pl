@@ -1,6 +1,6 @@
 ---
-title: Która wersja aplikacji Microsoft Dynamics 365 for Talent - Attract
-description: Ten temat zawiera informacje na temat możliwości w różnych wersjach programu Microsoft Dynamics 365 for Talent - Attract.
+title: Która wersja aplikacji Microsoft Dynamics 365 Talent - Attract?
+description: Ten temat zawiera informacje na temat możliwości w różnych wersjach programu Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/04/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 59ab9f418c4d9039ca08a71de0dba0f96216aabb
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 59f3e78efa8801c81dccff2f45751b47fb30481f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739724"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009953"
 ---
-# <a name="which-version-of-attract"></a>Która wersja programu Attract?
+# <a name="which-version-of-attract"></a>Która wersja aplikacji Attract?
 
 [!include[banner](../includes/banner.md)]
 
-Wersja programu Microsoft Dynamics 365 for Talent: Attract odpowiednia dla Ciebie zależy od rozmiaru i wymagań Twojej organizacji. Podstawowa wersja Attract zawiera podzbiór funkcji przeznaczonych dla mniejszych zespołów lub organizacji, w których podstawowym użytkownikiem jest menedżer zatrudniający. Użytkownik może rozpocząć korzystanie z podstawowej wersji Attract z jedną lub kilkoma licencjami.
+Wersja programu Microsoft Dynamics 365 Talent: Attract odpowiednia dla Ciebie zależy od rozmiaru i wymagań Twojej organizacji. Podstawowa wersja Attract zawiera podzbiór funkcji przeznaczonych dla mniejszych zespołów lub organizacji, w których podstawowym użytkownikiem jest menedżer zatrudniający. Użytkownik może rozpocząć korzystanie z podstawowej wersji Attract z jedną lub kilkoma licencjami.
 
 Attract z kompleksowym dodatkiem kompleksowej obsługi rekrutacji jest przeznaczona dla średnich i dużych zespołów lub organizacji, w których głównym użytkownikiem jest osoba rekrutująca lub specjalista ds. talentów. Dodatek kompleksowej obsługi rekrutacji wymaga kupienia licencji w ramach [Microsoft Dynamics 365 partnera](https://dynamics.microsoft.com/partners/find-a-partner/).
 

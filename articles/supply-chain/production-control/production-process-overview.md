@@ -3,7 +3,7 @@ title: Omówienie procesu produkcji
 description: Ten temat zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarż produkcji i zadań Kanban — od utworzenia zamówienia aż do zamknięcia okresu finansowego.
 author: cvocph
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd529afa5d8117e01784ed267709e1ac8c43290d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5b586a02d79fbbee698f32ab2ace3f86e7262fa7
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546670"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250031"
 ---
 # <a name="production-process-overview"></a>Omówienie procesu produkcji
 
@@ -36,12 +36,12 @@ Produkcja towarów, nazywana też cyklem produkcyjnym, następuje zgodnie z okre
 
 Moduł **Kontrola produkcji** jest połączony z innymi modułami, takimi jak **Zarządzanie informacjami o produktach**, **Zarządzanie zapasami**, **Księga główna**, **Zarządzanie magazynem**, **Księgowość projektu** i **Administrowanie organizacją**. Taka integracja sprzyja przepływowi informacji, który jest wymagany do ukończenia produkcji towaru.  
 
-Na proces produkcji mają z reguły wpływ metody rachunku kosztów i inwentaryzacji zapasów, wybrane dla określonego procesu produkcyjnego. Program Finance and Operations obsługuje zarówno metody kosztu rzeczywistego (\[FIFO\]; \[LIFO\]; średnia ruchoma i okresowa średnia ważona), jak i kosztu standardowego. Lean manufacturing wdraża się na podstawie reguły wyceny wstecznej.  
+Na proces produkcji mają z reguły wpływ metody rachunku kosztów i inwentaryzacji zapasów, wybrane dla określonego procesu produkcyjnego. Supply Chain Management obsługuje zarówno metody kosztu rzeczywistego (\[FIFO\]; pierwsze na wejściu, pierwsze na wyjściu \[LIFO\]; średnia ruchoma i okresowa średnia ważona), jak i kosztu standardowego. Lean manufacturing wdraża się na podstawie reguły wyceny wstecznej.  
 
 Wybór metod pomiaru kosztów określa również wymagania dotyczące raportów na temat zużycia zasobów i materiałów w procesie produkcji. Zazwyczaj metody kosztu rzeczywistego wymagają dokładnej sprawozdawczości na poziomie zadania, a metody kosztów okresowych pozwalają na mniej szczegółowe raportowanie zużycia materiałów i zasobów.
 
 ## <a name="mixed-mode-manufacturing"></a>Tryb mieszany produkcji
-Różne produkty i topologie produkcji wymagają stosowania różnych typów zamówienia. W programie Finance and Operations można połączyć różne typy zamówień w tryb mieszany. Innymi słowy wszystkich w całym cyklu produkcji gotowego towaru mogą wystąpić wszystkie typy zamówień.
+Różne produkty i topologie produkcji wymagają stosowania różnych typów zamówienia. Supply Chain Management może połączyć różne typy zamówienia w tryb mieszany. Innymi słowy wszystkich w całym cyklu produkcji gotowego towaru mogą wystąpić wszystkie typy zamówień.
 
 -   **Zlecenie produkcyjne** — jest to typ klasycznego zlecenia produkcji do wyprodukowania określonego produktu lub wariantu produktu w określonej ilości w danym dniu. Zlecenia produkcyjne są oparte na specyfikacji listy składowej BOM i marszruty.
 -   **Zamówienie partii** — ten typ zamówienia jest używany w produkcji procesowej i dyskretnej, gdzie konwersja produkcji opiera się na formule lub produkty towarzyszące i uboczne mogą być produktami końcowymi zamiast lub oprócz produktu głównego. Zamówienia partii wykorzystują BOM i marszruty typu **formuły**.
@@ -60,7 +60,7 @@ Aby wybrać zasady produkcji najlepiej dostosowane do określonego produktu i ry
 Dla wszystkich typów trybu mieszanego produkcji mogą wystąpić następujące kroki w cyklu produkcyjnym. Jednak nie wszystkie z nich są przedstawiane jako stan zlecenia jawny.
 
 1.  **Utworzone** — można tworzyć zlecenia produkcyjne, zamówienia partii lub kanban ręcznie, ale można też skonfigurować ich tworzenie przez system na podstawie różnych sygnałów popytu. Planowanie główne tworzy zlecenia produkcyjne, zamówienia partii, lub karty Kanban przy ustalaniu zamówień planowanych. Innymi sygnałami popytu są zamówienia sprzedaży lub sygnały ustalonej dostawy ze zleceń produkcyjnych lub kart kanban. W przypadku kart kanban o stałej ilości sygnały popytu są generowane, gdy kanban zostaną zarejestrowane jako puste.
-2.  **Szacowane**— Umożliwia obliczanie oszacowań zużycia materiałów i zasobów. Oszacowanie generuje transakcje magazynowe dla surowców, które znajdują się w stanie **Zamówione**. Przyjęcia dla głównych produktów, produktów towarzyszących i ubocznych są generowane po oszacowaniu zleceń produkcyjnych lub szarż produkcyjnych. Jeśli lista składowa BOM zawiera wiersze typu **Ustalona dostawa**, zamówienia zakupu materiałów lub usług operacyjnych podwykonawcy są generowane i ustalane w zleceniu produkcyjnym lub szarży produkcyjnej. Towary lub zamówienia są rezerwowane zgodnie ze strategią rezerwacji zlecenia produkcyjnego, a cena towarów gotowych jest obliczana na podstawie ustawień parametrów.
+2.  **Szacowane**— Umożliwia obliczanie oszacowań zużycia materiałów i zasobów. Oszacowanie generuje transakcje magazynowe dla surowców, które znajdują się w stanie **Zamówione**. Przyjęcia dla głównych produktów, produktów towarzyszących i ubocznych są generowane po oszacowaniu zleceń produkcyjnych lub zamówień partii. Jeśli lista składowa BOM zawiera wiersze typu **Ustalona dostawa**, zamówienia zakupu materiałów lub usług operacyjnych podwykonawcy są generowane i ustalane w zleceniu produkcyjnym lub szarży produkcyjnej. Towary lub zamówienia są rezerwowane zgodnie ze strategią rezerwacji zlecenia produkcyjnego, a cena towarów gotowych jest obliczana na podstawie ustawień parametrów.
 3.  **Zaplanowane** — można zaplanować produkcję na podstawie operacji, pojedynczych zadań lub jednych i drugich.
     -   **Planowanie operacji** — ta metoda planowania zapewnia ogólny, długoterminowy plan. Za pomocą tej metody można przypisywać do zleceń produkcyjnych daty początkowe i końcowe. Jeśli zlecenia produkcyjne są dołączone do operacji marszruty, można je przypisać do grup centrów kosztów.
     -   **Planowanie zadań** — ta metoda planowania zapewnia plan szczegółowy. Każda operacja jest rozbita na pojedyncze zadania z określonymi datami i godzinami oraz przypisanymi zasobami operacyjnymi. W przypadku uwzględniania ograniczonych zadania są przypisywane do zasobów operacyjnych według ich dostępności. Harmonogram można przeglądać i zmieniać na wykresie Gantta.

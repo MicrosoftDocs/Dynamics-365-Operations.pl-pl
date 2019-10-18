@@ -1,6 +1,6 @@
 ---
-title: Synchronizowanie nagłówków i wierszy ofert sprzedaży bezpośrednio w rozwiązaniu Sales do elementów w rozwiązaniu Finance and Operations
-description: Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania nagłówków i wierszy ofert sprzedaży bezpośrednio między programem Microsoft Dynamics 365 for Sales a programem Microsoft Dynamics 365 for Finance and Operations.
+title: Synchronizowanie nagłówków ofert i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales
+description: Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania nagłówków i wierszy ofert sprzedaży bezpośrednio między Dynamics 365 Supply Chain Management a Dynamics 365 Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -19,33 +19,33 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 0894f4728d3f1df21db130cd9e87d9881726e7fa
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: ddc81aa7ff462304cb6e22c919221217f7a1e019
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743378"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251254"
 ---
-# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-finance-and-operations"></a>Synchronizowanie nagłówków i wierszy ofert sprzedaży bezpośrednio z rozwiązania Sales do rozwiązania Finance and Operations
+# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Synchronizowanie nagłówków ofert i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales
 
 [!include [banner](../includes/banner.md)]
 
-Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania nagłówków i wierszy ofert sprzedaży bezpośrednio między programem Microsoft Dynamics 365 for Sales a programem Microsoft Dynamics 365 for Finance and Operations.
+Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania nagłówków i wierszy ofert sprzedaży bezpośrednio między Dynamics 365 Supply Chain Management a Dynamics 365 Sales.
 
 > [!NOTE]
 > Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integrowanie danych na platformie Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Przepływ danych w rozwiązaniu Prospekt na gotówkę
 
-Rozwiązanie Prospekt na gotówkę korzysta z funkcji Integracja danych do synchronizacji danych między wystąpieniami programu Finance and Operations a programem Sales. Szablony Prospekt na gotówkę, które są dostępne w narzędziu Integracja danych, umożliwiają przepływ danych o kontach, kontaktach, produktach, ofertach sprzedaży, zamówieniach sprzedaży i fakturach sprzedaży między programami Finance and Operations a Sales. Poniższa ilustracja przedstawia sposób synchronizacji danych między programami Finance and Operations a Sales.
+Rozwiązanie Prospekt na gotówkę korzysta z funkcji Integracji danych do synchronizacji danych między wystąpieniami Supply Chain Management a Sales. Szablony Prospekt na gotówkę, które są dostępne w funkcji integracji danych umożliwiają przepływ danych o kontach, kontaktach, produktach, ofertach sprzedaży, zamówieniach sprzedaży i fakturach sprzedaży między usługą Supply Chain Management a Sales. Poniższa ilustracja przedstawia sposób synchronizacji danych między usługą Supply Chain Management a Sales.
 
 [![Przepływ danych w rozwiązaniu Prospekt na gotówkę](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="template-and-tasks"></a>Szablon i zadania
 
-Następujący szablon i podstawowe zadania są używane do synchronizowania nagłówków i wierszy ofert sprzedaży bezpośrednio z programu Sales do programu Finance and Operations:
+Następujący szablon i podstawowe zadania są używane do synchronizowania nagłówków i wierszy ofert sprzedaży bezpośrednio z programu Sales do programu Supply Chain Management:
 
-- **Nazwa szablonu w integracji danych:** Oferty sprzedaży (Sales do Fin and Ops) — bezpośrednie
+- **Nazwa szablonu w integracji danych:** Oferty sprzedaży (Sales do Supply Chain Management) — bezpośrednie
 - **Nazwy zadań w projekcie integracji danych:**
 
     - QuoteHeader
@@ -53,9 +53,9 @@ Następujący szablon i podstawowe zadania są używane do synchronizowania nag�
 
 Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchronizować nagłówki i wiersze ofert sprzedaży:
 
-- Produkty (z Fin and Ops do Sales) — bezpośrednie
-- Konta (Sales do Fin and Ops) — bezpośrednie (jeśli są używane)
-- Kontakty z odbiorcami (z Sales do Fin and Ops) — bezpośrednie (jeśli używane)
+- Produkty (Supply Chain Management do Sales) — bezpośrednie
+- Konta (Sales do Supply Chain Management) — bezpośrednie (jeśli używane)
+- Kontakty do Odbiorcy (Sales do Supply Chain Management) — bezpośrednie (jeśli używane)
 
 ## <a name="entity-set"></a>Zestaw jednostek
 
@@ -66,7 +66,7 @@ Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchro
 
 ## <a name="entity-flow"></a>Przepływ jednostek
 
-Oferty sprzedaży są tworzone w programie Sales i synchronizowane z programem Finance and Operations.
+Oferty sprzedaży są tworzone w Sales i synchronizowane z programem Supply Chain Management.
 
 Oferty sprzedaży z programu Sales są synchronizowane tylko wtedy, gdy są spełnione następujące warunki:
 
@@ -75,13 +75,13 @@ Oferty sprzedaży z programu Sales są synchronizowane tylko wtedy, gdy są spe�
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Rozwiązanie Prospekt na gotówkę dla aplikacji Sales
 
-Pole **Zawiera tylko zewnętrznie obsługiwane produkty** zostało dodane do jednostki **Oferta** w celu umożliwienia ciągłego śledzenia, czy oferta sprzedaży zawiera wyłącznie zewnętrznie obsługiwane produkty. Jeśli oferta sprzedaży ma tylko zewnętrznie obsługiwane produkty, są one obsługiwane w programie Finance and Operations. To zachowanie pomaga zagwarantować, że nie będziesz próbować zsynchronizować wierszy oferty sprzedaży zawierających produkty nieznane programowi Finance and Operations.
+Pole **Zawiera tylko zewnętrznie obsługiwane produkty** zostało dodane do jednostki **Oferta** w celu umożliwienia ciągłego śledzenia, czy oferta sprzedaży zawiera wyłącznie zewnętrznie obsługiwane produkty. Jeśli oferta sprzedaży ma tylko zewnętrznie obsługiwane produkty, są one obsługiwane w programie Supply Chain Management. To zachowanie pomaga zagwarantować, że nie będziesz próbować zsynchronizować wierszy oferty sprzedaży zawierających produkty nieznane programowi Supply Chain Management.
 
 Wszystkie produkty z oferty w ofercie sprzedaży są aktualizowane przy użyciu informacji **Zawiera tylko zewnętrznie obsługiwane produkty** z nagłówka oferty sprzedaży. Ta informacja znajduje się w polu **Oferta zawiera tylko zewnętrznie obsługiwane produkty** w jednostce **Szczegóły oferty**.
 
-Rabat można dodać do produktu z oferty i zostanie on zsynchronizowany z programem Finance and Operations. Pola **Rabat**, **Opłaty** i **Podatek** w nagłówku są kontrolowane przez konfigurację w programie Finance and Operations. Obecnie ta konfiguracja nie obsługuje mapowanie integracji. W obecnym kształcie systemu pola **Cena**, **Rabat**, **Opłata** i **Podatek** są obsługiwane w programie Finance and Operations.
+Rabat można dodać do produktu z oferty i zostanie on zsynchronizowany z programem Supply Chain Management. Pola **Rabat**, **Opłaty** i **Podatek** w nagłówku są kontrolowane przez konfigurację w programie Supply Chain Management. Obecnie ta konfiguracja nie obsługuje mapowanie integracji. W obecnym kształcie systemu pola **Cena**, **Rabat**, **Opłata** i **Podatek** są obsługiwane w programie Supply Chain Management.
 
-W programie Sales wymienione pola są tylko do odczytu, ponieważ ich wartości nie są synchronizowane z programem Finance and Operations:
+W programie Sales wymienione pola są tylko do odczytu, ponieważ ich wartości nie są synchronizowane z programem Supply Chain Management:
 
 - Pola tylko do odczytu w nagłówku oferty sprzedaży: **% rabatu**, **Rabat** i **Kwota frachtu**
 - Pola tylko do odczytu w produktach w ofercie: **Podatek**
@@ -111,20 +111,20 @@ Przed zsynchronizowaniem ofert sprzedaży należy zaktualizować poniższe ustaw
 
 #### <a name="quoteline"></a>QuoteLine
 
-- Upewnij się, że w rozwiązaniu Finance and Operations istnieje wymagana mapa wartości dla pola **SalesUnitSymbol**.
+- Upewnij się, że w rozwiązaniu Supply Chain Management istnieje wymagana mapa wartości dla pola **SalesUnitSymbol**.
 - Upewnij się, że w rozwiązaniu Sales skonfigurowano wymagane jednostki.
 
     Wartość szablonu zawierająca mapę wartości jest zdefiniowana dla parametru **oumid.name** na **SalesUnitSymbol**.
 
-- Opcjonalnie: Można dodać następujące mapowanie w celu zagwarantowania, że wiersze oferty sprzedaży są importowane do programu Finance and Operations w razie braku domyślnych informacji o odbiorcy lub produkcie:
+- Opcjonalnie: Można dodać następujące mapowanie w celu zagwarantowania, że wiersze oferty sprzedaży są importowane do programu Supply Chain Management w razie braku domyślnych informacji o odbiorcy lub produkcie:
 
-    - **SiteId** — Oddział jest konieczny do generowania ofert i wierszy zamówień sprzedaży w programie Finance and Operations. Nie istnieje domyślna wartość szablonu dla pola **SiteId**.
-    - **WarehouseId** — Magazyn jest konieczny do przetwarzania ofert i wierszy zamówień sprzedaży w programie Finance and Operations. Nie istnieje domyślna wartość szablonu dla pola **WarehouseId**.
+    - **SiteId** — Witryna jest konieczna do generowania ofert i wierszy zamówień sprzedaży w usłudze Supply Chain Management. Nie istnieje domyślna wartość szablonu dla pola **SiteId**.
+    - **WarehouseId** — Magazyn jest konieczny do przetwarzania ofert i wierszy zamówień sprzedaży w usłudze Supply Chain Management. Nie istnieje domyślna wartość szablonu dla pola **WarehouseId**.
 
 ## <a name="template-mapping-in-data-integrator"></a>Mapowanie szablonu w integratorze danych
 
 > [!NOTE]
-> - Pola **Rabat**, **Opłaty** i **Podatek** są kontrolowane przez skomplikowaną konfigurację w programie Finance and Operations. Obecnie ta konfiguracja nie obsługuje mapowanie integracji. W obecnym kształcie systemu pola **Cena**, **Rabat**, **Opłata** i **Podatek** są obsługiwane przez program Finance and Operations.
+> - Pola **Rabat**, **Opłaty** i **Podatek** w nagłówku są kontrolowane przez skomplkowaną konfigurację w programie Supply Chain Management. Obecnie ta konfiguracja nie obsługuje mapowanie integracji. W obecnym kształcie systemu pola **Cena**, **Rabat**, **Opłata** i **Podatek** są obsługiwane przez program Supply Chain Management.
 > - Pola **Warunki płatności**, **Warunki frachtu**, **Warunki dostawy**, **Metoda wysyłki** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te pola, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana jednostka.
 
 Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integratorze danych.

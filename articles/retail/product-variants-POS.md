@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 609f5f13f3af4a7621fe7ee152800dac4d68a9fc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572056"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025156"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Wyszukiwanie zapasów w punkcie sprzedaży (POS)
 
@@ -52,7 +52,7 @@ Dla każdej lokalizacji są także wyświetlane ilości **Zarezerwowane** i **Za
 Lista lokalizacji obejmuje dwa typy jednostek:
 
 - **Sklepy sieci sprzedaży** — lista sklepów skonfigurowanych przy użyciu grupy lokalizatora sklepów dla bieżącego sklepu w aplikacji Retail Headquarters.
-- **Centra dystrybucji** — w aplikacji Microsoft Dynamics 365 for Retail można skonfigurować różne rodzaje centrów dystrybucyjnych (np. magazyny). Jednak na liście są wyświetlane informacje o dostępności zapasów tylko dla centrów dystrybucyjnych o domyślnym typie **Standardowy**.
+- **Centra dystrybucji** — w usłudze Retail można skonfigurować różne rodzaje centrów dystrybucyjnych (np. magazyny). Jednak na liście są wyświetlane informacje o dostępności zapasów tylko dla centrów dystrybucyjnych o domyślnym typie **Standardowy**.
 
     > [!NOTE]
     > Informacje o dostępności zapasów nie są widoczne dla magazynów o typach **Tranzyt**, **Kwarantanna** i **Towary w marszrucie** używanych w aplikacji POS.

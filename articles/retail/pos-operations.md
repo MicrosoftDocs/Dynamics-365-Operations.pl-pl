@@ -1,6 +1,6 @@
 ---
 title: Operacje online i offline w punkcie sprzedaży (POS)
-description: Ten temat zawiera szczegółowe informacje dotyczące operacji punktu sprzedaży (POS) w Microsoft Dynamics 365 for Retail. Określa, gdzie w aplikacji można wywołać operacje oraz czy są dostępne w trybie offline..
+description: Ten temat zawiera szczegółowe informacje dotyczące operacji punktu sprzedaży (POS) w Dynamics 365 Retail. Określa, gdzie w aplikacji można wywołać operacje oraz czy są dostępne w trybie offline..
 author: jblucher
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,22 +18,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: fcb933438ec30ebe6d3b499b53e64c58ecec3626
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625672"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025317"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
 [!include [banner](includes/banner.md)]
 
-Większość akcji wykonywanych przez użytkowników punktu sprzedaży (POS) jest uznawanych za operacje. Operacje są skonfigurowane i zarządzania za pomocą środowiska zaplecza Microsoft Dynamics 365 for Retail. Do siatki przycisków punktu sprzedaży można dodać wiele operacji. Użytkownicy mogą następnie wybrać przyciski w celu wywołania operacji i wykonania przypisanych do nich funkcji. Inne operacje są częścią głównej aplikacji POS i są wywoływane za pomocą przycisków ekranowych lub jako część innych przepływów pracy lub procesów.
+Większość akcji wykonywanych przez użytkowników punktu sprzedaży (POS) jest uznawanych za operacje. Operacje są skonfigurowane i zarządzania za pomocą środowiska zaplecza Dynamics 365 Retail. Do siatki przycisków punktu sprzedaży można dodać wiele operacji. Użytkownicy mogą następnie wybrać przyciski w celu wywołania operacji i wykonania przypisanych do nich funkcji. Inne operacje są częścią głównej aplikacji POS i są wywoływane za pomocą przycisków ekranowych lub jako część innych przepływów pracy lub procesów.
 
-W poniższej tabeli przedstawiono szczegóły dotyczące operacji, które są dostępne w Retail Modern POS i Cloud POS w Dynamics 365 for Retail. Tabela umożliwia także określenie, gdzie w aplikacji można wywołać operacje oraz czy są dostępne, gdy punkt sprzedaży działa w trybie offline..
+W poniższej tabeli przedstawiono szczegóły dotyczące operacji, które są dostępne w Retail Modern POS i Cloud POS. Tabela umożliwia także określenie, gdzie w aplikacji można wywołać operacje oraz czy są dostępne, gdy punkt sprzedaży działa w trybie offline..
 
-Niektóre operacje nie są obecnie dostępne w Retail Modern POS lub Cloud POS dla Dynamics 365 for Retail. Niektóre z tych operacji zależą od ustawień regionalnych,, które wymagają dodatkowych rozszerzeń i konfiguracji. Inne to funkcje systemu Microsoft Dynamics AX 2012, które nie są aktualnie obsługiwane.
+Niektóre operacje nie są obecnie dostępne w Retail Modern POS lub Cloud POS. Niektóre z tych operacji zależą od ustawień regionalnych,, które wymagają dodatkowych rozszerzeń i konfiguracji. Inne to funkcje systemu Microsoft Dynamics AX 2012, które nie są aktualnie obsługiwane.
 
 Poniższe kolumny określają, gdzie można wywołać informacje:
 
@@ -42,7 +42,7 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 - **Ekran powitalny** — operację można wywołać z siatki przycisków punktu sprzedaży skonfigurowanych na ekranie powitalnym punktu sprzedaży.
 
 > [!NOTE]
-> Operacje wymienione poniżej mają zastosowanie do najnowszej wersji programu Dynamics 365 for Retail. Niektóre operacje mogły ulec zmianie lub są niedostępne w poprzednich wersjach.
+> Operacje wymienione poniżej mają zastosowanie do najnowszej wersji usługi Retail. Niektóre operacje mogły ulec zmianie lub są niedostępne w poprzednich wersjach.
 
 | Identyfikator | Operacja | opis | Siatka przycisków | Ekran transakcyjny | Ekran powitalny | Dostępne w trybie offline | Specyficzne dla ustawień regionalnych |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|

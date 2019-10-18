@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie integracji Attract z serwisem LinkedIn — często zadawane pytania
-description: Ten temat zawiera odpowiedzi na pytania, które mogą być związane z integracją między serwisemLinkedIn i Microsoft Dynamics 365 for Talent - Attract.
+description: Ten temat zawiera odpowiedzi na pytania, które mogą być związane z integracją między serwisem LinkedIn i aplikacją Microsoft Dynamics 365  Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 07/08/2019
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c49181fe7e9359fb9d7d43f479273080f90542f4
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: d66ebc01597f8038a38b46a9f1b70feaa5dc505e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756206"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008646"
 ---
 # <a name="linkedin-integration-faq"></a>Integracja z serwisem LinkedIn — często zadawane pytania
 
 [!include [banner](includes/banner.md)]
 
-LinkedIn to największa ogólnoświatowa sieć profesjonalistów. Microsoft Dynamics dla Talent: Attract zostaje zintegorwany z serwisem LinkedIn, aby uzyskać dostęp do najlepszych talentów całego świata. Attract umożliwia publikację ofert pracy bezpośrednio w serwisie LinkedIn i umożliwia także uzyskiwanie informacji o kandydacie z serwisu LinkedIn do Attract.
+LinkedIn to największa ogólnoświatowa sieć profesjonalistów. Microsoft Dynamics Talent: Attract zostaje zintegorwany z serwisem LinkedIn, aby uzyskać dostęp do najlepszych talentów całego świata. Attract umożliwia publikację ofert pracy bezpośrednio w serwisie LinkedIn i umożliwia także uzyskiwanie informacji o kandydacie z serwisu LinkedIn do Attract.
 
 ## <a name="for-recruiters-and-hiring-managers"></a>Dla rekrutacji i kierowników rekruterów
 

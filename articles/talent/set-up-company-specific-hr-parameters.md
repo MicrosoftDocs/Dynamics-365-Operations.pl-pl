@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 00facce5913fb82f67c5844d74d29032735db707
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d95429dde38a7a528b1c1d9036194a3bf8e6f986
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506110"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009452"
 ---
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Konfigurowanie parametrów modułu Zasoby ludzkie (HR) specyficznych dla firmy
 
@@ -34,7 +34,7 @@ Niektóre parametry modułu Zasoby ludzkie (HR) są wspólne dla wielu firm, pod
 Do ustawiania parametrów Zasobów ludzkich służą dwie strony. W przypadku parametrów współużytkowanych przez firmy, użyj strony **Udostępniane parametry zasobów ludzkich**. W przypadku parametrów specyficznych dla firmy (ustawienie dotyczy tylko jednej firmy), użyj strony **Parametry zasobów ludzkich**. Na stronie **parametrów zasobów ludzkich** ustawienia są podzielone na sześciu kartach:
 
 -   Ogólne
--   Rekrutacja — tej funkcjonalności nie ma w aplikacji Dynamics 365 for Talent
+-   Rekrutacja — tej funkcjonalności nie ma w aplikacji Dynamics 365 Talent
 -   Kompensata
 -   Sekwencje identyfikatorów
 -   Rozporządzenie dotyczące zwolnień chorobowych i rodzinnych (FMLA)
@@ -49,7 +49,7 @@ Ustawienia wprowadzone na karcie **Wynagrodzenie** określają, czy użytkownicy
 ### <a name="previously-released-functionality"></a>Wcześniej wydane grupy funkcjonalności
 Ustawienia wprowadzone na karcie **Sekwencja numerów** określają sekwencje używane do automatycznego przypisywania identyfikatorów do elementów w module Zasoby ludzkie, takich jak zgłoszenia, rejestracje nieobecności, wyniki procesu wynagrodzenia, numery spraw i terminarze kursów. Aby obsługiwać odwołania numeracji i kody, użyj strony listy **Sekwencje identyfikatorów** (kliknij kolejno opcje **Administrowanie organizacją** &gt; **Sekwencje identyfikatorów** &gt; **Sekwencje identyfikatorów**).
 
-### <a name="if-youre-using-dynamics-365-for-talent"></a>Jeśli używasz programu Dynamics 365 for Talent
+### <a name="if-youre-using-dynamics-365-talent"></a>Jeśli używasz programu Dynamics 365 Talent
 Ustawienia wprowadzone na karcie **Sekwencja numerów** określają sekwencje używane do automatycznego przypisywania identyfikatorów do elementów w module Zasoby ludzkie, takich jak zgłoszenia, rejestracje nieobecności, wyniki procesu wynagrodzenia, numery spraw i terminarze kursów. Aby obsługiwać odwołania numeracji i kody, użyj strony listy **Sekwencje identyfikatorów** (kliknij kolejno opcje **Administrowanie systemem** &gt; **karta Linki** &gt; **Sekwencje identyfikatorów** &gt; **Sekwencje identyfikatorów**). 
 
 Ustawienia wprowadzone na karcie **FMLA** określają, ile godzin pracownik musi pracować, aby otrzymać świadczenia FMLA, wymagany staż pracy i datę zatrudnienia konieczną do określenia stażu pracy. Ustawienia te definiują również liczbę godzin FMLA, do których pracownik jest upoważniony oraz kalendarz nieobecności FMLA używany do obliczenia, ile godzin FMLA pracownik wykorzystał. Karta **FMLA** jest dostępna tylko dla firm w Stanach Zjednoczonych. 

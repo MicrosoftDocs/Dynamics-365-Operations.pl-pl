@@ -1,6 +1,6 @@
 ---
-title: Synchronizowanie produktów w rozwiązaniu Finance and Operations z produktami w rozwiązaniu Field Service
-description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania produktów z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
+title: Synchronizowanie produktów bezpośrednio z rozwiązania Supply Chain Management do produktów w rozwiązaniu Field Service
+description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania produktów z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
@@ -19,34 +19,34 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 06d7ff272ecb79abded3c3d3ade1f6bc0ef1f095
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: f5f6d41f3e65a3cf5b8c7c96f54b1c8c6cdfaefb
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742362"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249780"
 ---
-# <a name="synchronize-products-in-finance-and-operations-to-products-in-field-service"></a>Synchronizowanie produktów w rozwiązaniu Finance and Operations z produktami w rozwiązaniu Field Service
+# <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>Synchronizowanie produktów bezpośrednio z rozwiązania Supply Chain Management do produktów w rozwiązaniu Field Service
 
 [!include[banner](../includes/banner.md)]
 
-W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania produktów z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
+W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania produktów z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 
-Używany szablon **Produkty programu Field Service (z Fin and Ops do Field Service)** jest oparty na szablonie **Produkty (z Fin and Ops do Sales) — bezpośrednie** rozwiązania Prospekt na gotówkę. Aby uzyskać więcej informacji, zobacz [Produkty (z Fin and Ops do Sales) — bezpośrednie](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+Używany szablon **Produkty programu Field Service (z Supply Chain Management do Field Service)** jest oparty na szablonie **Produkty (z Supply Chain Management do Sales) — bezpośrednie** rozwiązania Prospekt na gotówkę. Aby uzyskać więcej informacji, zobacz [Produkty (z rozwiązania Supply Chain Management do rozwiązania Sales) – bezpośrednio](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
 
-Ten temat wyłącznie opisuje różnice między szablonami **Produkty programu Field Service (z Fin and Ops do Field Service)** i **Produkty (z Fin and Ops do Sales) — bezpośrednie**.
+Ten temat wyłącznie opisuje różnice między szablonami **Produkty programu Field Service (z Supply Chain Management do Field Service)** i **Produkty (z Supply Chain Management do Sales) — bezpośrednie**.
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 
-**Nazwa szablonu w integracji danych:**
+**Nazwa szablonu w integracji danych**
 
-- Produkty programu Field Service (z Fin and Ops do Field Service)
+- Produkty Field Service (z rozwiązania Supply Chain Management do rozwiązania Field Service)
 
-**Nazwa zadania w projekcie integracji danych:**
+**Nazwa zadania w projekcie integracji danych**
 
 - Produkty — produkty
 
-Szablon **Produkty programu Field Service (z Fin and Ops do Field Service)** zawiera jedno mapowanie, które nie występuje w szablonie **Produkty (z Fin and Ops do Sales) — bezpośrednie**. To mapowanie zapewnia, że wymagane pole **Typ produktu usługowego** specyficzne dla aplikacji Field Service jest ustawione poprawnie.
+Używany szablon **Produkty programu Field Service (z Supply Chain Management do Field Service)** posiada mapowanie, które nie jest zawarte w szablonie **Produkty (z Supply Chain Management do Sales) — bezpośrednie**. To mapowanie zapewnia, że wymagane pole **Typ produktu usługowego** specyficzne dla aplikacji Field Service jest ustawione poprawnie.
 
 ```
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
@@ -60,7 +60,7 @@ nonInventory  :  690970001
 service       :  690970002 
 ```
 
-W programie Finance and Operations wartość pola **Typ produktu w rozwiązaniu Field Service** w jednostce danych **Zwolnione produkty możliwe do sprzedaży** jest obliczana w następujący sposób:
+W programie Supply Chain Management wartość pola **Typ produktu w rozwiązaniu Field Service** w jednostce danych **Zwolnione produkty możliwe do sprzedaży** jest obliczana w następujący sposób:
 
 - **Zapasy:** Typ produktu = Grupa modeli produktów i towarów, Produkt magazynowany = Prawda
 - **Niemagazynowe:** Typ produktu = Grupa modeli produktów i towarów, Produkt magazynowany = Fałsz
@@ -70,6 +70,6 @@ W programie Finance and Operations wartość pola **Typ produktu w rozwiązaniu 
 
 Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja danych.
 
-### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a>Produkty programu Field Service (z Fin and Ops do Field Service): Produkty — produkty
+### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Produkty Field Service (z rozwiązania Supply Chain Management do rozwiązania Field Service): Produkty - Produkty
 
 [![Mapowanie szablonu w integracji danych](./media/FSProduct.png)](./media/FSProduct.png)

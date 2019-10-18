@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c256569135a00ea98a5c059b9dd12a07a000ee6a
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 8f4658696a2e6c2959b87aa852c25c108b9ba302
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606948"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024851"
 ---
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Konfigurowanie obrazów w aplikacji Retail Modern POS (MPOS) i zarządzanie nimi
 
@@ -34,19 +34,19 @@ W tym artykule objaśniono etapy konfigurowania obrazów i zarządzania nimi dla
 
 ## <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>Konfigurowanie podstawowego adresu URL obiektu multimedialnego i definiowanie szablonów multimediów w celu konfiguracji formatu adresów URL obrazu
 
-Obrazy wyświetlane w aplikacji Retail Modern POS (MPOS) muszą być obsługiwane zewnętrznie, poza programem Microsoft Dynamics 365 for Retail. Zazwyczaj znajdują się one w systemie zarządzania zawartością, sieci dostarczania zawartości (CDN) lub na serwerze multimediów. Następnie MPOS przechwytuje i wyświetla obrazy dla odpowiednich jednostek, takich jak produkty i katalogi, po przejściu do docelowego adresu URL. Aby pobierać te zewnętrznie obsługiwane obrazy, MPOS wymaga poprawnego formatu adresu URL dla obrazów. Wymagany format adresu URL dla obrazów można skonfigurować przez skonfigurowanie wartości **Podstawowy adres URL obiektu multimedialnego** w profilu kanału i za pomocą funkcji **Definiuj szablon multimediów** dla każdej jednostki. Można także zastąpić standardowy format adresu URL dla podzbioru jednostek za pomocą funkcji **Edytuj w programie Excel**.
+Obrazy wyświetlane w aplikacji Retail Modern POS (MPOS) muszą być obsługiwane zewnętrznie, poza Retail. Zazwyczaj znajdują się one w systemie zarządzania zawartością, sieci dostarczania zawartości (CDN) lub na serwerze multimediów. Następnie MPOS przechwytuje i wyświetla obrazy dla odpowiednich jednostek, takich jak produkty i katalogi, po przejściu do docelowego adresu URL. Aby pobierać te zewnętrznie obsługiwane obrazy, MPOS wymaga poprawnego formatu adresu URL dla obrazów. Wymagany format adresu URL dla obrazów można skonfigurować przez skonfigurowanie wartości **Podstawowy adres URL obiektu multimedialnego** w profilu kanału i za pomocą funkcji **Definiuj szablon multimediów** dla każdej jednostki. Można także zastąpić standardowy format adresu URL dla podzbioru jednostek za pomocą funkcji **Edytuj w programie Excel**.
 
 > [!IMPORTANT]
-> W bieżącej wersji programu Dynamics 365 for Retail  nie można już konfigurować formatu adresu URL za pomocą kodu XML atrybutu **Obraz** dla aplikacji MPOS w grupie atrybutów **Domyślne** dla jednostek. Jeśli znasz system Microsoft Dynamics AX 2012 R3 i korzystasz obecnie z bieżącej wersji programu Dynamics 365 for Retail, pamiętaj, aby do ustawiania obrazów zawsze korzystać z funkcji **Definiuj szablon multimediów**. Nie używaj i nie zmieniaj atrybutu **obrazu** w **domyślnej** grupie atrybutów dla żadnych jednostek, włącznie z produktami. Zmiany wprowadzone bezpośrednio w **domyślnej** grupie atrybutów dla obrazów nie zostaną odzwierciedlone. Ta opcja będzie wyłączona w kolejnej wersji.
+> W bieżącej wersji Retail nie można już konfigurować formatu adresu URL za pomocą kodu XML atrybutu **Obraz** dla aplikacji MPOS w grupie atrybutów **Domyślne** dla jednostek. Jeśli znasz system Microsoft Dynamics AX 2012 R3 i korzystasz obecnie z bieżącej wersji programu Dynamics 365 Retail, pamiętaj, aby do ustawiania obrazów zawsze korzystać z funkcji **Definiuj szablon multimediów**. Nie używaj i nie zmieniaj atrybutu **obrazu** w **domyślnej** grupie atrybutów dla żadnych jednostek, włącznie z produktami. Zmiany wprowadzone bezpośrednio w **domyślnej** grupie atrybutów dla obrazów nie zostaną odzwierciedlone. Ta opcja będzie wyłączona w kolejnej wersji.
 
 W poniższych procedurach obrazy są konfigurowane dla jednostki katalogu jako przykład. Procedury te mogą pomogą zapewnić ustawienie prawidłowej docelowej ścieżki obrazu dla wszystkich obrazów z katalogu używających tej samej ścieżki. Na przykład, jeśli serwer multimediów lub CDN został ustawiony zewnętrznie, a chcesz, aby obrazy były wyświetlane w MPOS dla określonego sklepu, użyj funkcji **Definiuj szablon multimediów** w celu ustawienia ścieżki wyszukiwania i pobierania obrazów przez MPOS.
 
 > [!NOTE]
-> W tym przykładzie serwer multimediów został wdrożony na serwerze sieci sprzedaży. Można go jednak umieścić w dowolnej lokalizacji poza programem Dynamics 365 for Retail.
+> W tym przykładzie serwer multimediów został wdrożony na serwerze sieci sprzedaży. Można go jednak umieścić w dowolnej lokalizacji poza programem Dynamics 365 Retail.
 
 ### <a name="set-up-the-media-base-url-for-a-channel"></a>Ustawianie podstawowych adresów URL obiektów multimedialnych dla kanału
 
-1. Otwórz portal Dynamics 365 for Retail HQ.
+1. Otwórz portal Retail HQ.
 2. Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Profile kanału**.
 
     [![Nawigacja](./media/channel-profile1.png)](./media/channel-profile1.png)
@@ -62,7 +62,7 @@ W poniższych procedurach obrazy są konfigurowane dla jednostki katalogu jako p
 3. Na skróconej karcie **Ścieżka do multimediów** wprowadź pozostałe ścieżki lokalizacji obrazu. Ścieżka do multimediów obsługuje **LanguageID** jako zmienną. Na przykład w przypadku danych demonstracyjnych, można utworzyć folder **Katalogi** dla wszystkich obrazów w katalogu znajdujących się pod podstawowym adresem URL obiektów multimedialnych na serwerze multimediów (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`). Następnie można skonfigurować folder dla każdego języka, na przykład en US lub fr-FR i skopiować odpowiednie obrazy w każdym folderze. Jeśli nie masz różnych obrazów dla różnych języków, możesz pominąć zmienną **LanguageID** ze struktury folderu i przejść bezpośrednio do folderu katalogów zawierającego obrazy katalogu.
 
     > [!NOTE]
-    > Aktualna wersja programu Dynamics 365 for Retail obsługuje token **{LanguageId}** dla jednostek Katalog, Produkt i Kategoria. (Token **{LanguageID}** nie jest obsługiwany dla jednostek Odbiorca i Pracownik, zgodna z istniejącym standardem począwszy systemu Microsoft Dynamics AX 6.x.)
+    > Aktualna wersja programu Retail obsługuje token **{LanguageId}** dla jednostek Katalog, Produkt i Kategoria. (Token **{LanguageID}** nie jest obsługiwany dla jednostek Odbiorca i Pracownik, zgodna z istniejącym standardem począwszy systemu Microsoft Dynamics AX 6.x.)
 
 4. W przypadku obrazów format nazwy pliku jest na stałe zakodowany w nazwie katalogu i nie można go zmienić. W związku z tym należy zmienić nazwy obrazów, tak aby miały nazwy odpowiedniego katalogu, w celu zagwarantowania, że MPOS obsługuje je poprawnie.
 5. W polu **Rozszerzenie pliku** wybierz oczekiwane rozszerzenie nazwy pliku, w zależności od typu obrazów, które masz. Na przykład w przypadku danych demonstracyjnych, obrazy katalogu mają rozszerzenie .jpg. (Pliki obrazów są również zmieniane, tak aby miały nazwy katalogu).
@@ -118,7 +118,7 @@ Jak wiesz z poprzedniej sekcji, szablon multimediów dla danej jednostki obsług
     [![Skrócona karta generowania adresów URL obrazu dla programu Excel po naciśnięciu przycisku Generuj](./media/excel2.png)](./media/excel2.png)
 
     > [!NOTE]
-    > Adresy URL, które są generowane dla programu Excel, używają ścieżki i konwencji szablonu multimediów, który jest zdefiniowany. Konwencje te obejmują konwencje nazewnictwa plików. Oczekuje się, że masz już zestaw obrazów fizycznych poza programem Dynamics 365 for Retail, a obrazy mogą być pobierane z adresów URL, które pochodzą ze zdefiniowanego wcześniej szablonu multimediów. Możesz zastąpić te adresy URL przy użyciu funkcji edycji programu Excel.
+    > Adresy URL, które są generowane dla programu Excel, używają ścieżki i konwencji szablonu multimediów, który jest zdefiniowany. Konwencje te obejmują konwencje nazewnictwa plików. Oczekuje się, że masz już zestaw obrazów fizycznych poza Retail, a obrazy mogą być pobierane z adresów URL, które pochodzą ze zdefiniowanego wcześniej szablonu multimediów. Możesz zastąpić te adresy URL przy użyciu funkcji edycji programu Excel.
 
 5. Kliknij **Edytuj w programie Excel**.
 6. Po otworzeniu arkusza programu Microsoft Excel kliknij przycisk **Włącz edytowanie**, gdy zobaczysz monit.

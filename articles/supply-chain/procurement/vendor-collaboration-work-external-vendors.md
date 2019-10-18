@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546722"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250218"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami
 
 [!include [banner](../includes/banner.md)]
 
-Moduł **Współpraca z dostawcami** jest przeznaczony dla dostawców, którzy nie ma mają systemów elektronicznej wymiany danych (EDI) zintegrowanych z programem Microsoft Dynamics 365 for Finance and Operations. Umożliwia dostawcom pracę z zamówieniami zakupu (PO), fakturami, zapasami konsygnacyjnymi i zapytaniami ofertowymi (RFQ), a także uzyskanie dostępu do części danych głównych dostawcy. W tym temacie wyjaśniono możliwości współpracy z zewnętrznymi dostawcami, którzy używają interfejsu współpracy z dostawcami do wykonywania operacji na zamówieniach zakupu, zapytaniach ofertowych i zapasach konsygnacyjnych. Wyjaśniono także sposoby konfigurowania określonych dostawców do używania portalu współpracy z dostawcami oraz sposoby definiowania informacji wyświetlanych wszystkim dostawcom podczas odpowiadania na zamówienie zakupu.
+Moduł **Współpraca z dostawcami** jest przeznaczony dla dostawców, którzy nie ma mają systemów elektronicznej wymiany danych (EDI) zintegrowanych z Microsoft Dynamics 365 Supply Chain Management. Umożliwia dostawcom pracę z zamówieniami zakupu (PO), fakturami, zapasami konsygnacyjnymi i zapytaniami ofertowymi (RFQ), a także uzyskanie dostępu do części danych głównych dostawcy. W tym temacie wyjaśniono możliwości współpracy z zewnętrznymi dostawcami, którzy używają interfejsu współpracy z dostawcami do wykonywania operacji na zamówieniach zakupu, zapytaniach ofertowych i zapasach konsygnacyjnych. Wyjaśniono także sposoby konfigurowania określonych dostawców do używania portalu współpracy z dostawcami oraz sposoby definiowania informacji wyświetlanych wszystkim dostawcom podczas odpowiadania na zamówienie zakupu.
 
 Aby uzyskać więcej informacji o tym, co zewnętrzni dostawcy mogą robić w interfejsie współpracy z dostawcami, zobacz [Współpraca dostawców z odbiorcami](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Informacje na temat współpracy z dostawcą w tym temacie dotyczą tylko aktualnej wersji rozwiązania Finance and Operations. W systemie Microsoft Dynamics AX 7.0 (luty 2016 r.) i aplikacji Microsoft Dynamics AX w wersji 7.0.1 (maj 2016 r.) do współpracy z dostawcami służy moduł **Portal dostawców**. Informacje o module **Portal dostawców** zawiera temat [Współpraca z dostawcami za pomocą portalu dostawców](collaborate-vendors-vendor-portal.md).
+> Informacje na temat współpracy z dostawcą w tym temacie dotyczą tylko aktualnej wersji rozwiązania Supply Chain Management. W systemie Microsoft Dynamics AX 7.0 (luty 2016 r.) i aplikacji Microsoft Dynamics AX w wersji 7.0.1 (maj 2016 r.) do współpracy z dostawcami służy moduł **Portal dostawców**. Informacje o module **Portal dostawców** zawiera temat [Współpraca z dostawcami za pomocą portalu dostawców](collaborate-vendors-vendor-portal.md).
 
 Aby uzyskać więcej informacji o tym, jak dostawcy mogą wykorzystywać portal współpracy z dostawcami w procesach fakturowania, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Aby uzyskać więcej informacji o inicjowaniu obsługi nowych użytkowników portalu współpracy z dostawcami, zobacz [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md).
 
@@ -51,7 +51,7 @@ Jeśli zachodzi konieczność dodania komunikatów w więcej niż jednym języku
 
 ## <a name="setting-the-vendor-collaboration-options-for-a-specific-vendor"></a>Ustawianie opcji współpracy z dostawcami dla określonego dostawcy
 
-Administrator konfiguruje ustawienia ogólne współpracy z dostawcą w rozwiązaniu Finance and Operations, takie jak role zabezpieczeń dostępne dla wszystkich dostawców, z którymi współpracujesz. Istnieją jednak ustawienia, które są różne dla różnych kont dostawców. Należy skonfigurować te ustawienia.
+Administrator konfiguruje ustawienia ogólne współpracy z dostawcą, takie jak role zabezpieczeń dostępne dla wszystkich dostawców, z którymi współpracujesz. Istnieją jednak ustawienia, które są różne dla różnych kont dostawców. Należy skonfigurować te ustawienia.
 
 - Włączyć współpracę z dostawcami.
 - Określ, czy dostawca ma widzieć informacje o cenie.
@@ -71,7 +71,7 @@ Aby udostępnić informację o cenie zamówienia zakupu przez interfejs portalu 
 
 ### <a name="sending-a-po-to-a-vendor"></a>Wysyłanie zamówienia zakupu do dostawcy
 
-Zamówienia zakupu są przygotowywane w programie Finance and Operations. Gdy zamówienie zakupu ma stan **Zatwierdzone**, można je wysłać do dostawcy, wybierając opcję **Wyślij w celu potwierdzenia** dostępną na stronie **Zamówienie zakupu**. Stan zamówienia zakupu zmieni się na **W trakcie analizy zewnętrznej**. Po wysłaniu zamówienia zakupu dostawca widzi je na stronie **Zamówienia zakupu do przeglądu** w interfejsie współpracy z dostawcami. Dostawca może zaakceptować zamówienie zakupu, odrzucić lub zasugerować jego modyfikację. Dostawca może również dodać komentarze w celu przekazania informacji, np. o zmianach w zamówieniu zakupu. Jeśli chcesz zwrócić uwagę dostawcy na nowe zamówienie zakupu, możesz je wysłać w wiadomości e-mail z systemu zarządzania drukowaniem.
+Punkt sprzedaży jest przygotowany w Supply Chain Management Gdy zamówienie zakupu ma stan **Zatwierdzone**, można je wysłać do dostawcy, wybierając opcję **Wyślij w celu potwierdzenia** dostępną na stronie **Zamówienie zakupu**. Stan zamówienia zakupu zmieni się na **W trakcie analizy zewnętrznej**. Po wysłaniu zamówienia zakupu dostawca widzi je na stronie **Zamówienia zakupu do przeglądu** w interfejsie współpracy z dostawcami. Dostawca może zaakceptować zamówienie zakupu, odrzucić lub zasugerować jego modyfikację. Dostawca może również dodać komentarze w celu przekazania informacji, np. o zmianach w zamówieniu zakupu. Jeśli chcesz zwrócić uwagę dostawcy na nowe zamówienie zakupu, możesz je wysłać w wiadomości e-mail z systemu zarządzania drukowaniem.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>Potwierdzanie i akceptacja zamówienia zakupu przez dostawcę
 
@@ -92,13 +92,13 @@ W poniższej tabeli przedstawiono typową wymianę informacji, w zależności od
 </thead>
 <tbody>
 <tr class="even">
-<td>Dostawca <strong>akceptuje</strong> zamówienie, a rozwiązanie Finance and Operations jest skonfigurowane w celu automatycznego potwierdzania zamówienia zakupu zaakceptowanego przez dostawcę.</td>
+<td>Dostawca <strong>akceptuje</strong> zamówienie, a rozwiązanie Supply Chain Management jest skonfigurowane w celu automatycznego potwierdzania zamówienia zakupu zaakceptowanego przez dostawcę.</td>
 <td>Stan zamówienia jest zaktualizowany do <strong>Potwierdzone</strong>. Jeśli z jakiegoś powodu nie można zaktualizować zamówienia, odpowiedź dostawcy i tak zostanie zarejestrowana jako <strong>Zaakceptowane</strong>, ale zamówienie zakupu będzie nadal miało stan <strong>W trakcie analizy zewnętrznej</strong>. 
 
 Zamówienie zakupu wysłane do dostawcy i mające stan <strong>W trakcie analizy zewnętrznej</strong> jest aktualizowane o potwierdzone daty dostawy w wierszach. Ta aktualizacja inicjuje nową wersję, która automatycznie zostanie ustawiona na stan <strong>Potwierdzone</strong>. Po potwierdzeniu zamówienia zakupu pojawi się ono w interfejsie współpracy z dostawcami.</td>
 </tr>
 <tr class="odd">
-<td>Dostawca <strong>akceptuje</strong> zamówienie, ale rozwiązanie Finance and Operations nie jest skonfigurowane w celu automatycznego potwierdzania zamówienia zakupu zaakceptowanego przez dostawcę.</td>
+<td>Dostawca <strong>akceptuje</strong> zamówienie, a rozwiązanie Supply Chain Management nie&#39;jest skonfigurowane w celu automatycznego potwierdzania zamówienia zakupu zaakceptowanego przez dostawcę.</td>
 <td>Odpowiedź dostawcy zostanie zarejestrowana jako <strong>Zaakceptowane</strong>, ale zamówienie zakupu będzie nadal miało stan <strong>W trakcie analizy zewnętrznej</strong>.
 
 Zamówienie zakupu wysłane do dostawcy i mające stan <strong>W trakcie analizy zewnętrznej</strong> jest aktualizowane o potwierdzone daty dostawy w wierszach. Ta aktualizacja inicjuje nową wersję, która automatycznie zostanie ustawiona na stan <strong>W trakcie analizy zewnętrznej</strong>. Następnie można ręcznie potwierdzić zamówienie zakupu.</td>
@@ -180,14 +180,14 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 
 | Akcja | Stan i wersja |
 |--------|--------------------|
-| Pierwotna wersja zamówienia zakupu jest tworzona w programie Finance and Operations. | Ma ona stan **Zatwierdzone**. |
+| Pierwotna wersja zamówienia zakupu jest tworzona w programie Supply Chain Management. | Ma ona stan **Zatwierdzone**. |
 | Zamówienie zakupu jest wysyłane do dostawcy. | Wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**. |
 | Dostawca wysyła odpowiedź **Zaakceptowano ze zmianami**. | Stan to nadal **W trakcie analizy zewnętrznej**. |
 | Wprowadzasz kilka zmian, o które prosił dostawca. | Stan zostaje zmieniony na **Zatwierdzone**. |
 | Wysyłasz nową wersję zamówienia zakupu do dostawcy. | Nowa wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**. |
 | Dostawca akceptuje nową wersję zamówienia zakupu. | Stanem jest nadal **W trakcie analizy zewnętrznej**, chyba że dostawca jest skonfigurowany do automatycznego ustawiania zamówień zakupu ma stan **Potwierdzone** w momencie akceptacji. |
 
-Dostawcy nie muszą potwierdzać zamówień zakupu w interfejsie współpracy z dostawcami. Zamiast tego mogą również wysłać wiadomość e-mail lub zawiadomić o przyjęciu zamówienia zakupu przez inne kanały komunikacji. Wtedy można ręcznie potwierdzić zamówienie w rozwiązaniu Finance and Operations. W takim przypadku zobaczysz ostrzeżenie informujące, że trwa potwierdzanie zamówienia, nawet jeśli nie ma odpowiedzi od dostawcy. Zamówienie zakupu pojawi się wtedy w historii potwierdzeń jako otwarte zamówienie potwierdzone, które nie ma żadnych odpowiedzi. W tym momencie dostawca nie będzie już mógł potwierdzić ani odrzucić zamówienia zakupu.
+Dostawcy nie muszą potwierdzać zamówień zakupu w interfejsie współpracy z dostawcami. Zamiast tego mogą również wysłać wiadomość e-mail lub zawiadomić o przyjęciu zamówienia zakupu przez inne kanały komunikacji. Następnie można ręcznie potwierdzić zamówienie. W takim przypadku zobaczysz ostrzeżenie informujące, że trwa potwierdzanie zamówienia, nawet jeśli nie ma odpowiedzi od dostawcy. Zamówienie zakupu pojawi się wtedy w historii potwierdzeń jako otwarte zamówienie potwierdzone, które nie ma żadnych odpowiedzi. W tym momencie dostawca nie będzie już mógł potwierdzić ani odrzucić zamówienia zakupu.
 
 > [!NOTE]
 > Wersją zamówienia zakupu dostępną dla innych procesów w rozwiązaniu Finance and Operations jest zawsze najnowsza wersja, nawet jeśli jeszcze nie została zarejestrowana w interfejsie współpracy z dostawcami.
@@ -200,7 +200,7 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 
 | Akcja | Stan i wersja |
 |--------|--------------------|
-| Pierwotna wersja zamówienia zakupu jest tworzona w programie Finance and Operations. | Stan to **Wersja robocza**. |
+| Pierwotna wersja zamówienia zakupu jest tworzona w programie Supply Chain Management. | Stan to **Wersja robocza**. |
 | Zamówienie zakupu jest wysyłane do procesu zatwierdzania (Proces zatwierdzania jest procesem wewnętrznym, w którym dostawca nie uczestniczy). | Stan zmienia się z **Wersja robocza** na **W trakcie przeglądu** i dalej na **Zatwierdzenie**, jeśli zamówienie zakupu nie zostanie odrzucone w procesie zatwierdzania. Zatwierdzone zamówienie zakupu jest rejestrowane jako wersja. | 
 | Zamówienie zakupu jest wysyłane do dostawcy. | Wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**. |
 | Wprowadzasz kilka zmian, o które prosił dostawca, ręcznie lub za pomocą akcji **Przetwórz aktualizację zamówienia zakupu**w odpowiedzi na aktualizację zamówienia zakupu. | Stan zostaje zmieniony z powrotem na **Wersja robocza**. |
@@ -237,13 +237,13 @@ W tej sekcji opisano interakcje między klientami a dostawcami podczas przetwarz
 
 ## <a name="public-sector-extensions"></a>Rozszerzenia sektora publicznego
 
-W przypadku sektora publicznego funkcje rozszerzone umożliwiają wysłanie sprawy ZO do dostawców i ich publikowanie. Po opublikowaniu ZO każdy, kto prosi o informacje może wyświetlić prace zgodne z większością przepisów dotyczących sektora publicznego. Wszystkie dostępne prace są widoczne na stronie listy **Otwarte opublikowane zapytania ofertowe**, a anulowane, oczekujące lub przyznane ZO można wyświetlić na stronie listy **Zamknięte opublikowane zapytania ofertowe**. Dokumenty te można także wyświetlić w witrynie poza rozwiązaniem Finance and Operations dzięki integracji z następującymi jednostkami danych:
+W przypadku sektora publicznego funkcje rozszerzone umożliwiają wysłanie sprawy ZO do dostawców i ich publikowanie. Po opublikowaniu ZO każdy, kto prosi o informacje może wyświetlić prace zgodne z większością przepisów dotyczących sektora publicznego. Wszystkie dostępne prace są widoczne na stronie listy **Otwarte opublikowane zapytania ofertowe**, a anulowane, oczekujące lub przyznane ZO można wyświetlić na stronie listy **Zamknięte opublikowane zapytania ofertowe**. Dokumenty te można także wyświetlić w witrynie poza rozwiązaniem Supply Chain Management dzięki integracji z następującymi jednostkami danych:
 
 - Opublikowane zapytania ofertowe
 - Wiersz opublikowanych zapytań ofertowych
 - Załączniki nagłówka opublikowanych zapytań ofertowych
 
-Te jednostki umożliwiają osobom , które nie są ustanowionym użytkownikami rozwiązania Finance and Operations, ale mają anonimowy dostęp do witryny zewnętrznej, wyświetlenie dostępnych i zamkniętych prac. Ponadto rozszerzone funkcje akcji **Wysyłanie i publikowanie** umożliwiają użytkownikowi konfigurującemu proces ZO zdefiniowanie szablonu wiadomości e-mail. Następnie, gdy specjalista ds. zaopatrzenia tworzy sprawę ZO, musi wybrać szablon wiadomości e-mail w celu wysłania wymaganych informacji do dostawców w sprawie ZO. 
+Te jednostki umożliwiają osobom, które nie są ustanowionym użytkownikami rozwiązania Supply Chain Management, ale mają anonimowy dostęp do witryny zewnętrznej, wyświetlenie dostępnych i zamkniętych prac. Ponadto rozszerzone funkcje akcji **Wysyłanie i publikowanie** umożliwiają użytkownikowi konfigurującemu proces ZO zdefiniowanie szablonu wiadomości e-mail. Następnie, gdy specjalista ds. zaopatrzenia tworzy sprawę ZO, musi wybrać szablon wiadomości e-mail w celu wysłania wymaganych informacji do dostawców w sprawie ZO. 
 
 Użytkownik, który konfiguruje parametry procesu ZO może utworzyć wiele szablonów wiadomości e-mail. Te szablony wiadomości e-mail mogą zawierać zarówno tekst, jak i następujące tokeny wymiany. Tokeny zostaną zastąpione wartościami kontekstowych podczas tworzenia wiadomości e-mail.
 

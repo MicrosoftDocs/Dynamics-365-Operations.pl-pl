@@ -1,6 +1,6 @@
 ---
 title: Analiza wydajności sklepu
-description: W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o efektywności działania sklepów na podstawie danych programu Microsoft Dynamics 365 for Retail.
+description: W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o efektywności działania sklepów na podstawie danych programu Dynamics 365 Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c975c021b6db49d1e25fd036f4955c7223e438ea
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b2ea6ad2e3d9589face06cd5f950973209c17d41
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569270"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017789"
 ---
 # <a name="analyze-store-performance"></a>Analizowanie wydajności sklepu
 
 [!include [banner](includes/banner.md)]
 
-W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o efektywności działania sklepów na podstawie danych programu Microsoft Dynamics 365 for Retail.
+W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o efektywności działania sklepów na podstawie danych programu Dynamics 365 Retail.
 
-W ramach programu Dynamics 365 for Retail użytkownicy mogą badać wydajność sklepu w czasie rzeczywistym na różnych poziomach hierarchii organizacyjnej przez wybrany okres. W tym celu należy otworzyć gotowy raport **Podsumowanie kanału** w dowolnym z następujących miejsc:
+W ramach Retail użytkownicy mogą badać wydajność sklepu w czasie rzeczywistym na różnych poziomach hierarchii organizacyjnej przez wybrany okres. W tym celu należy otworzyć gotowy raport **Podsumowanie kanału** w dowolnym z następujących miejsc:
 
 - Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport podsumowania kanału**
 - Obszar roboczy **Finanse sklepu sieciowego** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Finanse sklepu sieciowego** &gt; **Raporty** &gt; **Raport podsumowania kanału**

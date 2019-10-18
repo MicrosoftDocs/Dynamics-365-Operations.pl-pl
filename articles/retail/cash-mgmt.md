@@ -1,6 +1,6 @@
 ---
 title: Ulepszenia w zakresie zarządzania gotówką
-description: W tym temacie opisano ulepszenia w zakresie zarządzania gotówką w punkcie sprzedaży w programie Dynamics 365 for Retail.
+description: W tym temacie opisano ulepszenia w zakresie zarządzania gotówką w punkcie sprzedaży w programie Dynamics 365 Retail.
 author: anpurush
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 845cba3b536b0f800b7c7c4eecee46a068ca8cff
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 49d70a8d983bf3475e01f8fcb80d569b13568485
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1630060"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019538"
 ---
 # <a name="cash-management-improvements"></a>Ulepszenia w zakresie zarządzania gotówką
 
@@ -32,9 +32,11 @@ ms.locfileid: "1630060"
 
 Zarządzanie gotówką jest kluczową funkcją dla sprzedawców detalicznych w sklepach fizycznych. Sklepy detaliczne chcą mieć systemy, które zapewnią im pełną identyfikowalność i możliwość rozliczania gotówki i jej przepływów między różnymi kasami i kasjerami w sklepie. Muszą oni być w stanie uzgodnić wszelkie różnice i określić odpowiedzialność.
 
-Program Microsoft Dynamics 365 for Retail ma funkcje zarządzania gotówką w swojej aplikacji punktu sprzedaży. Jednak w wersjach aplikacji Retail starszych niż 10.0.3 funkcje zarządzania gotówką nie są na tyle rozbudowane, aby zapewnić pełną identyfikowalność przepływów gotówki w sklepach. Chociaż sprzedawcy detaliczni mogą uzgodnić gotówkę w sklepie, to nie są w stanie precyzyjnie określić odpowiedzialności w razie rozbieżności ze stanem faktycznym.
 
-W programie Microsoft Dynamics 365 for Retail w wersji 10.0.3 i nowszych sprzedawcy detaliczni zyskują identyfikowalność przepływów gotówki. W ramach tej identyfikowalności sprzedawcy detaliczni będą mogli definiować sejfy, tworzyć dwustronne transakcje kasowe oraz uzgadniać transakcje zarządzania gotówką.
+Microsoft Dynamics 365 Retail ma funkcje zarządzania gotówką w swojej aplikacji punktu sprzedaży. Jednak w wersjach aplikacji Retail starszych niż 10.0.3 funkcje zarządzania gotówką nie są na tyle rozbudowane, aby zapewnić pełną identyfikowalność przepływów gotówki w sklepach. Chociaż sprzedawcy detaliczni mogą uzgodnić gotówkę w sklepie, to nie są w stanie precyzyjnie określić odpowiedzialności w razie rozbieżności ze stanem faktycznym.
+
+
+W usłudze Retail w wersji 10.0.3 i nowszych sprzedawcy detaliczni zyskują identyfikowalność przepływów gotówki. W ramach tej identyfikowalności sprzedawcy detaliczni będą mogli definiować sejfy, tworzyć dwustronne transakcje kasowe oraz uzgadniać transakcje zarządzania gotówką.
 
 ## <a name="set-up-traceability-and-define-safes"></a>Konfigurowanie identyfikowalności i definiowanie sejfów
 

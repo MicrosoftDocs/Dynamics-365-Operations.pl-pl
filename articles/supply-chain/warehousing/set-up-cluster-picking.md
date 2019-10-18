@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7adec850cfb473b0bfc9536dcb1ef1cfd74129a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 84b6d3c3caa09b9601701ca4ac1992b151c0b8d4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559007"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249757"
 ---
 [!include[banner](../includes/banner.md)]
 
@@ -34,7 +34,7 @@ W tym temacie opisano sposób umożliwienia pracownikom korzystania z urządzeń
 
 Po zwolnieniu zleceń pracy do magazynu, pracownik może użyć urządzenia przenośnego do przypisywania zamówień do grupy. Grupa organizuje pracę pobrania dla pracownika. Po przypisaniu zlecenia pracy do grupy, pracownik należy użyć pobierania dla grupy do wykonania pracy pobrania dla zamówienia. Pracownik nie może stosować innych metod pobierania. Jeśli zlecenie pracy jest przypisane do grupy przez pomyłkę, pracownik musi podzielić grupę i następnie utworzyć ją ponownie.
 
-W razie potrzeby, pracownik może przekazać grupę innemu pracownikowi. Powoduje to zmianę stanu grupy na Zdany. Jeżeli pracownik używa urządzenia przenośnego do wskazania, że praca pobierania i odkładania została zakończona, wysyłka lub ładunek muszą zostać potwierdzone na kliencie programu Dynamics 365 for Finance and Operations.
+W razie potrzeby, pracownik może przekazać grupę innemu pracownikowi. Powoduje to zmianę stanu grupy na Zdany. Jeżeli pracownik używa urządzenia przenośnego do wskazania, że praca pobierania i odkładania została zakończona, wysyłka lub załadunek muszą zostać potwierdzone na kliencie.
 
 ## <a name="set-up-cluster-picking"></a>Konfigurowanie pobierania dla grupy
 

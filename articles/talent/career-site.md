@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie witryny kariery w Microsoft Dynamics 365 for Talent - Attract
-description: Ten temat zawiera omówienie funkcji witryny kariery zawodowej dostępnej dla kandysatów w Microsoft Dynamics 365 for Talent - Attract.
+title: Konfigurowanie witryny kariery w Microsoft Dynamics 365 Talent - Attract
+description: Ten temat zawiera omówienie funkcji witryny kariery zawodowej w Microsoft Dynamics 365 Talent - Attract dostępne dla kandydatów.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ec5fe31c6547b008b29e656729c35863d90bffc1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739778"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026286"
 ---
 # <a name="set-up-your-career-site"></a>Konfigurowanie witryny kariery
 
 [!include[banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie funkcji witryny kariery zawodowej w Microsoft Dynamics 365 for Talent: Attract dostępne dla kandydatów. Wyjaśniono również, jak skonfigurować tę funkcjonalność.
+Ten temat zawiera omówienie funkcji witryny kariery zawodowej dostępnej dla kandysatów w Microsoft Dynamics 365 Talent: Attract. Wyjaśniono również, jak skonfigurować tę funkcjonalność.
 
 Aplikacja Attract udostępnia jedną witrynę rozwoju kariery dla każdego środowiska w dzierżawie. Na przykład jeśli organizacja ma środowiska projektowe i testowe, dla każdego z nich jest generowana osobna witryna rozwoju kariery. Każda witryna rozwoju kariery jest całkowicie odizolowana i ma własny mechanizm uwierzytelniania. Funkcje i profile kandydatów nie są udostępniane między witrynami rozwoju kariery.
 
@@ -62,7 +62,7 @@ Poniższa lista zawiera często używane adresy URL witryny rozwoju kariery i me
 
 -   **Adres URL strony głównej witryny kariery zawodowej** — Aby wyświetlić adres URL strony głównej witryny kariery zawodowej, zaloguj się w Attract jako administrator, wybierz opcję **Centrum administracyjne** w menu **ustawienia**, a następnie wybierz opcję **Zarządzanie witryną kariery zawodowej**.
 
--   **Indywidualny adres URL zgłoszenia na ofertę pracy**Gdy [publikujesz ofertę](Creating-jobs-Attract.md#postings) dla kandydatów zewnętrznych po raz pierwszy, możesz skopiować łącze **Zgłoś się** z aplikacji Attract. Adres URL tego łącza będzie miał następujący format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+-   **Indywidualny adres URL zgłoszenia na ofertę pracy** - Gdy [publikujesz ofertę dla kandydatów zewnętrznych](Creating-jobs-Attract.md#postings) po raz pierwszy, możesz skopiować łącze **Zgłoś się** z aplikacji Attract. Adres URL tego łącza będzie miał następujący format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 
 -   **Indywidualny adres URL oferty pracy** adres URL oferty pracy jest podciągiem adresu URL zgłoszenia. Zawiera wszystkie elementy aż do numeru stanowiska włącznie. Z tego względu w podanym wyżej adresie URL Zgłoś się adresem URL oferty pracy jest [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e).
 

@@ -17,18 +17,19 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 57f4b58a11606a1193a1124a426c837ddfab9533
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577987"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023712"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Pokazywanie powiadomień o zamówieniach w aplikacji POS
 
 [!include [banner](includes/banner.md)]
 
-We współczesnym środowisku sprzedaży detalicznej do pracowników sklepu są przypisane różne zadania, takie jak pomoc klientom, wprowadzanie transakcji, przeprowadzanie inwentaryzacji i odbieranie zamówień w sklepie. Klient punktu sprzedaży (POS) do jedna zintegrowana aplikacja, w której pracownicy mogą wykonywać te i wiele innych zadań. Ponieważ w ciągu dnia trzeba wykonywać różne zadania, pracownicy mogą potrzebować powiadomień, jeżeli coś wymaga ich uwagi. Struktura powiadomień w aplikacji POS rozwiązuje ten problem, umożliwiając pracownikom skonfigurowanie powiadomień opartych na rolach. W Microsoft Dynamics 365 for Retail z aktualizacją aplikacji 5 te powiadomienia mogą być skonfigurowane tylko w dla operacji POS.
+We współczesnym środowisku sprzedaży detalicznej do pracowników sklepu są przypisane różne zadania, takie jak pomoc klientom, wprowadzanie transakcji, przeprowadzanie inwentaryzacji i odbieranie zamówień w sklepie. Klient punktu sprzedaży (POS) do jedna zintegrowana aplikacja, w której pracownicy mogą wykonywać te i wiele innych zadań. Ponieważ w ciągu dnia trzeba wykonywać różne zadania, pracownicy mogą potrzebować powiadomień, jeżeli coś wymaga ich uwagi. Struktura powiadomień w aplikacji POS rozwiązuje ten problem, umożliwiając pracownikom skonfigurowanie powiadomień opartych na rolach. W Dynamics 365 for Retail z aktualizacją aplikacji 5 te powiadomienia mogą być skonfigurowane tylko w dla operacji POS.
+
 
 Obecnie system może być pokazywać powiadomienia tylko dla operacji realizacji zamówień. Jednak ponieważ struktura została zaprojektowana jako rozszerzalna, programiści docelowo będą mogli napisać programy obsługi powiadomień dla każdej operacji oraz powodować wyświetlanie tych powiadomień w aplikacji POS.
 
@@ -68,7 +69,8 @@ Poniższa ilustracja przedstawia ustawienia przekazywania zawartości na żywo w
 
 ![Ustawienia zawartości na żywo w konstruktorze siatki przycisków](./media/ButtonGridDesigner.png "Ustawienia zawartości na żywo w konstruktorze siatki przycisków")
 
-Aby wyświetlić na przycisku licznik powiadomień, należy upewnić się, że jest aktualizowany właściwy układ ekranu. Aby określić układ ekranu używany przez punkt sprzedaży, wybierz ikonę **Ustawienia** w prawym górnym rogu i zanotuj jej **Identyfikator układu ekranu** i **Rozdzielczość układu**. Za pomocą przeglądarki krawędzi przejdź do strony **Układ ekranu** w Dynamics 365 for Finance and Operations, znajdź **Identyfikator układu ekranu** i **Rozdzielczość układu** określone powyżej i zaznacz pole wyboru **Włącz zawartość na żywo**. Przejdź do **Sprzedaż detaliczna \> IT sprzedaży detalicznej \> Harmonogram dystrybucji** i uruchom zadanie 1090 (rejestry), aby zsynchronizować zmiany w układzie.
+Aby wyświetlić na przycisku licznik powiadomień, należy upewnić się, że jest aktualizowany właściwy układ ekranu. Aby określić układ ekranu używany przez punkt sprzedaży, wybierz ikonę **Ustawienia** w prawym górnym rogu i zanotuj jej **Identyfikator układu ekranu** i **Rozdzielczość układu**. Za pomocą przeglądarki Edge przejdź do strony **Układ ekranu**, znajdź **Identyfikator układu ekranu** i **Rozdzielczość układu** określone powyżej i zaznacz pole wyboru **Włącz zawartość na żywo**. Przejdź do **Sprzedaż detaliczna \> IT sprzedaży detalicznej \> Harmonogram dystrybucji** i uruchom zadanie 1090 (rejestry), aby zsynchronizować zmiany w układzie.
+
 
 ![Znajdowanie układu ekranu używanego w punkcie sprzedaży](./media/Choose_screen_layout.png "Znajdź układ ekranu ")
 

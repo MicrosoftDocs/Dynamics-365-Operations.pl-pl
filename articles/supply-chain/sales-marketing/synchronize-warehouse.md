@@ -1,6 +1,6 @@
 ---
-title: Synchronizowanie magazynów między aplikacjami Finance and Operations i Field Service
-description: Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania magazynów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
+title: Synchronizowanie magazynów z rozwiązania Supply Chain Management do rozwiązania Field Service
+description: Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania magazynów między programem Dynamics 365 Supply Chain Management a programem Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2019
@@ -19,41 +19,41 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: ae99624076eecda2969961d0361d1adf42c6c5f3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 94fb6720152cbf6aec58d2b8d9d02fc5343c05e2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835677"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251185"
 ---
-# <a name="synchronize-warehouses-from-finance-and-operations-to-field-service"></a>Synchronizowanie magazynów z rozwiązania Finance and Operations do rozwiązania Field Service
+# <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Synchronizowanie magazynów z rozwiązania Supply Chain Management do rozwiązania Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania magazynów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
+Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania magazynów między programem Dynamics 365 Supply Chain Management a programem Dynamics 365 Field Service.
 
-[![Synchronizacja procesów biznesowych między aplikacjami Finance and Operations i Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
+[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
-Poniższy szablon i podstawowe zadania są używane do synchronizowania magazynów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Field Service.
+Poniższy szablon i podstawowe zadania są używane do synchronizowania magazynów między rozwiązaniami Supply Chain Management i Field Service.
 
 **Mapowanie szablonu w integracji danych**
-- Magazyny (z Fin and Ops do Field Service)
+- Magazyny (rozwiązanie Supply Chain Management do rozwiązania Field Service)
 
 **Zadani w projekcie integracji danych**
 - Magazyn
 
 ## <a name="entity-set"></a>Zestaw jednostek
-| Field Service    | Finance and Operations                 |
+| Field Service    | Zarządzanie łańcuchem dostaw                 |
 |------------------|----------------------------------------|
 | msdyn_warehouses | Magazyny                             |
 
 ## <a name="entity-flow"></a>Przepływ jednostek
-Magazyny tworzone i obsługiwane w Finance and Operations mogą być synchronizowane z Field Service za pomocą projektu integracji danych realizowanego w usłudze Common Data Service (CDS). Żądane magazyny synchronizowane z Field Service mogą kontrolowane za pomocą zaawansowanych zapytań i filtrów w projekcie. Magazyny synchronizowane z Finance and Operations są tworzone w Field Service z polem **Obsługiwane zewnętrznie** ustawionym na **Tak**, a rekord jest tylko do odczytu.
+Magazyny tworzone i obsługiwane w Supply Chain Management mogą być synchronizowane z Field Service za pomocą projektu integracji danych realizowanego w usłudze Common Data Service (CDS). Żądane magazyny synchronizowane z Field Service mogą kontrolowane za pomocą zaawansowanych zapytań i filtrów w projekcie. Magazyny synchronizowane z Supply Chain Management są tworzone w Field Service z polem **Obsługiwane zewnętrznie** ustawionym na **Tak**, a rekord jest tylko do odczytu.
 
 ## <a name="field-service-crm-solution"></a>Rozwiązanie CRM Field Service
-Aby umożliwić integrację między programami Field Service i Finance and Operations, jest wymagana dodatkowa funkcjonalność z rozwiązania CRM Field Service. W rozwiązaniu pole **Obsługiwane zewnętrznie** zostało dodane do jednostki **Magazyn (msdyn_warehouses)**. To pomaga w identyfikacji, czy magazyn jest obsługiwany z Finance and Operations czy tylko istnieje w Field Service. Ustawienia tego pól obejmują:
-- **Tak** — magazyn pochodził z rozwiązania Finance and Operations i nie będzie można edytować w rozwiązaniu Sales.
+Aby umożliwić integrację między programami Field Service i Finance and Operations, jest wymagana dodatkowa funkcjonalność z rozwiązania CRM Field Service. W rozwiązaniu pole **Obsługiwane zewnętrznie** zostało dodane do jednostki **Magazyn (msdyn_warehouses)**. To pomaga w identyfikacji, czy magazyn jest obsługiwany z Supply Chain Management czy tylko istnieje w Field Service. Ustawienia tego pól obejmują:
+- **Tak** — Magazyn pochodził z rozwiązania Supply Chain Management i nie będzie można edytować w rozwiązaniu Sales.
 - **Nie** — magazyn został wprowadzony bezpośrednio w Field Service jest obsługiwany w tym miejscu.
 
 Pole **Obsługiwane zewnętrznie** pomaga kontrolować synchronizację poziomów zapasów, korekty, przeniesienia i wykorzystanie w zleceniach. Tylko magazyny z polem **Obsługiwane zewnętrznie** ustawionym na **Tak** mogą być używane do synchronizowania bezpośrednio z tym samym magazynem w innym systemie. 
@@ -63,7 +63,7 @@ Pole **Obsługiwane zewnętrznie** pomaga kontrolować synchronizację poziomów
 
 ## <a name="prerequisites-and-mapping-setup"></a>Wymagania wstępne i ustawienia mapowania
 ### <a name="data-integration-project"></a>Projekt integracji danych
-Przed synchronizacją magazynów należy upewnić się, że funkcja zaawansowanych zapytań i filtrów w projekcie obejmuje tylko magazyny, które chcesz przenieść z Finance and Operations do Field Service. Należy zwrócić uwagę, że konieczny będzie magazyn w Field Service, aby zastosować go do zleceń, korekt i przeniesień.  
+Przed synchronizacją magazynów należy upewnić się, że funkcja zaawansowanych zapytań i filtrów w projekcie obejmuje tylko magazyny, które chcesz przenieść z Supply Chain Management do Field Service. Należy zwrócić uwagę, że konieczny będzie magazyn w Field Service, aby zastosować go do zleceń, korekt i przeniesień.  
 
 Aby mieć pewność, że istnieje wartość **Klucz integracji** dla jednostki **msdyn_warehouses**:
 1. Przejdź do narzędzia Integracja danych.
@@ -76,6 +76,6 @@ Aby mieć pewność, że istnieje wartość **Klucz integracji** dla jednostki *
 
 Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja danych.
 
-### <a name="warehouses-fin-and-ops-to-field-service-warehouse"></a>Magazyny (z Fin and Ops do Field Service): magazyny
+### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Magazyny (rozwiązanie Supply Chain Management do rozwiązania Field Service): Magazyn
 
 [![Mapowanie szablonu w integracji danych](./media/Warehouse1.png)](./media/Warehouse1.png)

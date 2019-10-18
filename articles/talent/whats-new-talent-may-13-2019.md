@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (13 maja 2019 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent.
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (13 maja 2019 r.)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/13/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-13
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ffeeb3e2f5279a84c4c060b04fe46836b778f6c5
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 42feeb044d0a4cd25faf2d74863aa4e948c200fd
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856455"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008830"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-13-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (13 maja 2019 r.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-may-13-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (13 maja 2019 r.)
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 for Talent.
+W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Talent.
 
 ## <a name="coming-soon-in-attract"></a>Wkrótce w aplikacji Attract
 
@@ -39,7 +39,7 @@ Zatwierdzenia są wyświetlane w sekcji **Zatwierdzenia** na pulpicie nawigacyjn
 
 ## <a name="changes-in-onboard"></a>Zmiany w Onboard
 
-Ta wersja zawiera poprawki błędów dla programu Dynamics 365 Talent: Onboard.
+Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Zmiany w Core HR
 

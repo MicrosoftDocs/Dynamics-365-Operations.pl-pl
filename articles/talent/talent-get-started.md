@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 0993119de785d5e3826075778c018bdfa50071e2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ff9cfdff410001f08f920e3c05df6bc4ab1b77fd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518867"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024259"
 ---
 # <a name="get-started-with-talent"></a>Rozpoczęcie korzystania z aplikacji Talent
 
 [!include [banner](includes/banner.md)]
 
-W rozwiązaniu Microsoft Dynamics 365 for Talent można bardzo łatwo zmodyfikować interfejs użytkownika i ustawić opcje, które powodują, że oprogramowanie lepiej spełnia potrzeby użytkownika. Ten temat zawiera łącza do tematów z informacjami na temat dostosowywania interfejsu użytkownika do osobistych preferencji. Ten temat zawiera także łącza do informacji ułatwiających skuteczne i dokładne wyszukiwanie informacji w systemie. 
+W rozwiązaniu Microsoft Dynamics 365 Talent można bardzo łatwo zmodyfikować interfejs użytkownika i ustawić opcje, które powodują, że oprogramowanie lepiej spełnia potrzeby użytkownika. Ten temat zawiera łącza do tematów z informacjami na temat dostosowywania interfejsu użytkownika do osobistych preferencji. Ten temat zawiera także łącza do informacji ułatwiających skuteczne i dokładne wyszukiwanie informacji w systemie. 
 
 > [!NOTE] 
-> Następujące produkty są ściśle związane ze sobą: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; oraz Dynamics 365 for Talent. Te same funkcje mogą być dostępne we wszystkich 3 produktach. W związku z tym w tematach związanych głównie z modułem Retail nazwą produktu będzie Dynamics 365 for Retail, w tematach dotyczących przede wszystkim modułu Talent nazwą produktu będzie Dynamics 365 for Talent, a w tematach związanych z produktem podstawowym nazwą produktu będzie Dynamics 365 for Finance and Operations. Tematów, które zostały napisane dla jednego produktu, można używać w odniesieniu do tych samych funkcji w powiązanym produkcie.
+> Następujące produkty są ściśle związane ze sobą: Dynamics 365 Finance; Dynamics 365 Retail; oraz Dynamics 365 Talent. Te same funkcje mogą być dostępne we wszystkich trzech produktach. W związku z tym w tematach związanych głównie z modułem Retail nazwą produktu będzie Dynamics 365 Retail, w tematach dotyczących przede wszystkim modułu Talent nazwą produktu będzie Dynamics 365 Talent, a w tematach związanych z produktem podstawowym nazwą produktu będzie Dynamics 365 Finance. Tematów, które zostały napisane dla jednego produktu, można używać w odniesieniu do tych samych funkcji w powiązanym produkcie.
 
 ## <a name="personalizing-talent"></a>Personalizowanie rozwiązania Talent 
-Poniższe tematy zawierają informacje o sposobie ustawiania wielu funkcji w rozwiązaniu Dynamics 365 for Talent, które ułatwiają realizację zadań w wyznaczonym czasie. 
+Poniższe tematy zawierają informacje o sposobie ustawiania wielu funkcji w rozwiązaniu Talent, które ułatwiają realizację zadań w wyznaczonym czasie. 
 
 -   [Personalizacja interfejsu użytkownika](../fin-and-ops/get-started/personalize-user-experience.md) — ten temat zawiera opis różnych sposobów personalizacji rozwiązania Talent i dostosowywania części produktu do preferencji użytkownika.
 
@@ -51,7 +51,7 @@ Poniższe tematy zawierają opis sposobu korzystania z odnośników oraz wyszuki
 
 -   [Filtrowanie zaawansowane i składnia zapytań](../fin-and-ops/get-started/advanced-filtering-query-options.md) — w tym temacie opisano opcje filtrowania i kwerend dostępne dla operatora „dopasowania” w oknie dialogowym Zaawansowany filtr/sortowanie.
 
--   [Nawigacja z wyszukiwaniem](../fin-and-ops/get-started/navigation-search.md) — w tym temacie wyjaśniono, jak za pomocą funkcji wyszukiwania przechodzić do stron. Aplikacja Talent zawiera szereg obszarów i stron ułatwiających wykonywanie różnych zadań. Skorzystanie z funkcji nawigacji z wyszukiwaniem umożliwia szybkie znalezienie strony z informacjami o odpowiednich zadaniach. 
+-   [Nawigacja z wyszukiwaniem](../fin-and-ops/get-started/navigation-search.md) — w tym temacie wyjaśniono, jak za pomocą funkcji wyszukiwania przechodzić do stron. Talent zawiera szereg obszarów i stron ułatwiających wykonywanie różnych zadań. Skorzystanie z funkcji nawigacji z wyszukiwaniem umożliwia szybkie znalezienie strony z informacjami o odpowiednich zadaniach. 
 
 -   [Wyszukiwanie akcji](../fin-and-ops/get-started/action-search.md) — w tym temacie opisano funkcję wyszukiwania akcji. Funkcja pomaga znajdować i wykonywać czynności na stronie. Strony w produkcie głównie wyświetlają polecenia w okienkach akcji, zarówno w samodzielnym okienku akcji, które wyświetla się u góry strony, jak i na paskach narzędzi, które pojawiają się w różnych częściach strony.
 
@@ -61,7 +61,7 @@ Poniższe tematy zawierają opis sposobu korzystania z odnośników oraz wyszuki
 Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80), aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane.
 
 ### <a name="blogs"></a>Blogi
-Opinie, wiadomości i inne informacje dotyczące modułu Rozrachunki z dostawcami możesz znaleźć w blogu usługi [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
+Opinie, wiadomości i inne informacje dotyczące modułu Rozrachunki z dostawcami możesz znaleźć w blogu usługi [Dynamics 365 Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
 
 ### <a name="videos"></a>Filmy wideo
 Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).

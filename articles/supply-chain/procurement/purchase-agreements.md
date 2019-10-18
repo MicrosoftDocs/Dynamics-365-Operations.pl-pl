@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7024104dfc76a33735199ad0871fe7ce29f8e011
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570395"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248941"
 ---
 # <a name="purchase-agreements"></a>Umowy zakupu
 
@@ -78,7 +78,7 @@ Gdy potwierdzono umowę zakupu, bieżąca wersja umowy zakupu jest przechowywana
 Podczas tworzenia zamówienia zakupu można zastosować do niego umowę zakupu. Informacje z postanowień umowy, takie jak warunki płatności, warunki dostawy i adres dostawy, są następnie kopiowane do nagłówka zamówienia zakupu. Jeśli zamówienie zakupu zawiera jeden lub więcej wierszy dla produktów lub kategorii, które są objęte umową, dla tych wierszy są używane ceny i rabaty z umowy zakupu. Kwota lub ilość w wierszu zamówienia przyczynia się do realizacji zobowiązania wynikającego z umowy zakupu. To samo zamówienie zakupu może zawierać zarówno wiersze, które nie są powiązane z umową zakupu, jak i wiersze, które mają zobowiązania dla umowy zakupu.  
 
 Umowę zakupu można wybrać tylko przy tworzeniu zamówienia zakupu. Po utworzeniu zamówienia zakupu nie można wybrać umowy zakupu.  
-W niektórych sytuacjach, gdy zamówienia zakupu są tworzone bezpośrednio, można kontrolować, czy program Finance and Operations powinien automatycznie wyszukiwać umowy zakupu. Na przykład można to zrobić podczas automatycznego akceptowania planowanych zamówień zakupu lub tworzenia zamówień zakupu, które są oparte na zamówieniach sprzedaży.
+W niektórych sytuacjach, gdy zamówienia zakupu są tworzone bezpośrednio, można kontrolować, czy usługa Supply Chain Management powinna automatycznie wyszukiwać umowy zakupu. Na przykład można to zrobić podczas automatycznego akceptowania planowanych zamówień zakupu lub tworzenia zamówień zakupu, które są oparte na zamówieniach sprzedaży.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Umowy zakupu i handel międzyfirmowy
 Można utworzyć międzyfirmowe relacje handlowe między kontami dostawcy i kontami odbiorcy, które znajdują się w różnych firmach. Podczas tworzenia zamówienia sprzedaży lub zamówienia zakupu dla jednej ze stron, tworzy się łańcuch zamówień międzyfirmowych. W łańcuchu zamówień zamówienie sprzedaży i zamówienie zakupu są tworzone w odpowiednich firmach.  

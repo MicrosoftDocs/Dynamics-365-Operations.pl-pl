@@ -1,6 +1,6 @@
 ---
-title: Synchronizowanie zleceń pracy w aplikacji Field Service ze zleceniami pracy w aplikacji Finance and Operations
-description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania zleceń pracy w aplikacji Field Service ze zleceniami pracy w aplikacji Finance and Operations.
+title: Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Supply Chain Management
+description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania zleceń pracy w aplikacji Field Service ze zleceniami pracy w Supply Chain Management.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
@@ -19,30 +19,29 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 49cb5942532e4feab64aa271ebfecf5cb60b1c61
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2aa37ada18120e3b2a6e6b309c7d7b7ca9d9158f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562725"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249835"
 ---
-# <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-finance-and-operations"></a>Synchronizowanie zleceń pracy w aplikacji Field Service ze zleceniami pracy w aplikacji Finance and Operations
+# <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
-W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania zleceń w Microsoft Dynamics 365 for Field Service z zamówieniami sprzedaży w Microsoft Dynamics 365 for Finance and Operations.
+W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania zleceń w Dynamics 365 Field Service z zamówieniami sprzedaży w Dynamics 365 Supply Chain Management.
 
-[![Synchronizacja procesów biznesowych między aplikacjami Finance and Operations i Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
 
-W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania zleceń pracy w aplikacji Field Service ze zleceniami pracy w aplikacji Finance and Operations.
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 
-Następujące szablony i podstawowe zadania są używane do wykonywania synchronizacji zleceń pracy w aplikacji Field Service ze zleceniami pracy w aplikacji Finance and Operations.
+Następujące szablony i podstawowe zadania są używane do wykonywania synchronizacji zleceń pracy w aplikacji Field Service ze zleceniami pracy w aplikacji Supply Chain Management.
 
 ### <a name="names-of-the-templates-in-data-integration"></a>Nazwy szablonów w integracji danych
 
-Do wykonywania synchronizacji służy szablon **Zlecenia pracy na zamówienia sprzedaży (z Field Service do Fin and Ops)** .
+Do wykonywania synchronizacji służy szablon **Zlecenia pracy na zamówienia sprzedaży (z Field Service do Supply Chain Management)** .
 
 ### <a name="names-of-the-tasks-in-the-data-integration-project"></a>Nazwy zadań w projekcie integracji danych
 
@@ -54,12 +53,12 @@ Do wykonywania synchronizacji służy szablon **Zlecenia pracy na zamówienia sp
 
 Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchronizować nagłówki i wiersze zamówień sprzedaży:
 
-- Produkty programu Field Service (z Fin and Ops do Field Service)
-- Produkty (z Sales do Fin and Ops) — bezpośrednie
+- Produkty Field Service (z rozwiązania Supply Chain Management do rozwiązania Field Service)
+- Konta (Sales to Supply Chain Management) — bezpośrednie
 
 ## <a name="entity-set"></a>Zestaw jednostek
 
-| **Field Service** | **Finance and Operations** |
+| **Field Service** | **Zarządzanie łańcuchem dostaw** |
 |-------------------------|-------------------------|
 | msdyn_workorders        | Nagłówki zamówień sprzedaży CDS |
 | msdyn_workorderservices | Wiersze zamówienia sprzedaży CDS   |
@@ -67,13 +66,13 @@ Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchro
 
 ## <a name="entity-flow"></a>Przepływ jednostek
 
-Zlecenia pracy są tworzone w aplikacji Field Service. Jeśli zlecenia pracy zawierają tylko zewnętrznie obsługiwane produkty, a wartość w polu **Stan zlecenia pracy** różni się od wartości w polach **Otwarte — niezaplanowane** i **Zamknięte — anulowane**, zlecenia pracy mogą być synchronizowane z aplikacją Finance and Operations za pośrednictwem projektu integracji danych z usługą CDS. Aktualizacje w zleceniach pracy będą synchronizowane jako zamówienia sprzedaży w programie Finance and Operations. Do tych aktualizacji należą informacje o typie źródła i stanie.
+Zlecenia pracy są tworzone w aplikacji Field Service. Jeśli zlecenia pracy zawierają tylko zewnętrznie obsługiwane produkty, a wartość w polu **Stan zlecenia pracy** różni się od wartości w polach **Otwarte — niezaplanowane** i **Zamknięte — anulowane**, zlecenia pracy mogą być synchronizowane z aplikacją Supply Chain Management za pośrednictwem projektu integracji danych z usługą Common Data Service. Aktualizacje w zleceniach pracy będą synchronizowane jako zamówienia sprzedaży w programie Supply Chain Management. Do tych aktualizacji należą informacje o typie źródła i stanie.
 
 ## <a name="estimated-versus-used"></a>Szacowane a używane
 
-W aplikacji Field Service produkty i usługi w zleceniach pracy mają dla ilości i kwot zarówno wartości **Oszacowany**, jak i **Użyte**. Jednak w aplikacji Finance and Operations zamówienia sprzedaży nie bazują na takiej koncepcji wartości **Oszacowany** i **Użyte**. Aby umożliwić alokację produktów, która korzysta z ilości oczekiwanej z zamówienia sprzedaży w aplikacji Finanse Finance and Operations, ale zachować ilość użytą, która ma być zużywana i fakturowana, dwa zestawy zadań synchronizują produkty i usługi w zleceniu pracy. Jeden zestaw zadań dotyczy wartości **Oszacowany**, a drugi zestaw zadań jest dla wartości **Użyte**.
+W aplikacji Field Service produkty i usługi w zleceniach pracy mają dla ilości i kwot zarówno wartości **Oszacowany**, jak i **Użyte**. Jednak w aplikacji Supply Chain Management zamówienia sprzedaży nie bazują na takiej koncepcji wartości **Oszacowany** i **Użyte**. Aby umożliwić alokację produktów, która korzysta z ilości oczekiwanej z zamówienia sprzedaży w aplikacji Supply Chain Management, ale zachować ilość użytą, która ma być zużywana i fakturowana, dwa zestawy zadań synchronizują produkty i usługi w zleceniu pracy. Jeden zestaw zadań dotyczy wartości **Oszacowany**, a drugi zestaw zadań jest dla wartości **Użyte**.
 
-To zachowanie umożliwia scenariusze, gdzie wartości szacowane są stosowane do alokacji lub rezerwacji w programie Finance and Operations, a wartości użyte są stosowane do zużycia i fakturowania.
+To zachowanie umożliwia scenariusze, gdzie wartości szacowane są stosowane do alokacji lub rezerwacji w programie Supply Chain Management, a wartości użyte są stosowane do zużycia i fakturowania.
 
 ### <a name="estimated"></a>Oszacowany
 
@@ -87,9 +86,9 @@ Wartości **Użyte** są stosowane do zużycia i fakturowania. W takich przypadk
 
 Poniższa tabela zawiera przegląd różnych kombinacji dla wierszy produktów.
 
-| Stan systemu <br>(Field Service) | Stan wiersza <br>(Field Service) | Alokowane <br>(Field Service) |Zsynchronizowana wartość <br>(Finance and Operations) |
+| Stan systemu <br>(Field Service) | Stan wiersza <br>(Field Service) | Alokowane <br>(Field Service) |Zsynchronizowana wartość <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
-| Otwarte — zaplanowane   | Oszacowany   | Tak       | Oszacowany                       |
+| Otwarte — zaplanowane   | Oszacowanie   | Tak       | Oszacowanie                       |
 | Otwarte — zaplanowane   | Oszacowany   | Nr        | Użyte                            |
 | Otwarte — zaplanowane   | Użyte        | Tak       | Użyte                            |
 | Otwarte — zaplanowane   | Użyte        | Nr        | Użyte                            |
@@ -108,9 +107,9 @@ Poniższa tabela zawiera przegląd różnych kombinacji dla wierszy produktów.
 
 Poniższa tabela zawiera przegląd różnych kombinacji dla wierszy usług.
 
-| Stan systemu <br>(Field Service) | Stan wiersza <br>(Field Service) | Zsynchronizowana wartość <br>(Finance and Operations) |
+| Stan systemu <br>(Field Service) | Stan wiersza <br>(Field Service) | Zsynchronizowana wartość <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|
-| Otwarte — zaplanowane   | Oszacowany   | Oszacowany |
+| Otwarte — zaplanowane   | Oszacowanie   | Oszacowanie |
 | Otwarte — zaplanowane   | Użyte        | Użyte      |
 | Otwarte — w toku | Oszacowany   | Oszacowany |
 | Otwarte — w toku | Użyte        | Użyte      |
@@ -130,7 +129,7 @@ Synchronizacja wartości **Oszacowany** z wartościami **Użyte** jest zarządza
     - **Wiersz produktu:** Szacowana ilość = 5 szt., Użyta ilość = 0 szt., Stan wiersza = Oszacowany, Alokowane = Nie
     - **Wiersz usługi:** Szacowana ilość = 2 h, Użyta ilość = 0 h, Stan wiersza = Oszacowany
 
-    W tym przykładzie z programem Finance and Operations jest synchronizowane ustawienie **Użyta ilość** o wartości **0** (zero) dotyczące produktu oraz ustawienie **Szacowana ilość** o wartości **2 h** dotyczące usługi.
+    W tym przykładzie z programem Supply Chain Management jest synchronizowane ustawienie **Użyta ilość** o wartości **0** (zero) dotyczące produktu oraz ustawienie **Szacowana ilość** o wartości **2h** dotyczące usługi.
 
 2. Produkty są przydzielane w aplikacji Field Service.
 
@@ -139,7 +138,7 @@ Synchronizacja wartości **Oszacowany** z wartościami **Użyte** jest zarządza
     - **Wiersz produktu:** Szacowana ilość = 5 szt., Użyta ilość = 0 szt., Stan wiersza = Oszacowany, Alokowane = Tak
     - **Wiersz usługi:** Szacowana ilość = 2 h, Użyta ilość = 0 h, Stan wiersza = Oszacowany
 
-    W tym przykładzie z programem Finance and Operations jest synchronizowane ustawienie **Szacowana ilość** o wartości **5 szt.** dotyczące produktu oraz ustawienie **Szacowana ilość** o wartości **2 h** dotyczące usługi.
+    W tym przykładzie z programem Supply Chain Management jest synchronizowane ustawienie **Szacowana ilość** o wartości **5ea** dotyczące produktu oraz ustawienie **Szacowana ilość** o wartości **2h** dotyczące usługi.
 
 3. Serwisant zaczyna pracować nad zleceniem pracy i rejestruje zużycie materiału w ilości 6.
 
@@ -148,7 +147,7 @@ Synchronizacja wartości **Oszacowany** z wartościami **Użyte** jest zarządza
     - **Wiersz produktu:** Szacowana ilość = 5 szt., Użyta ilość = 6 szt., Stan wiersza = Użyte, Alokowane = Tak
     - **Wiersz usługi:** Szacowana ilość = 2 h, Użyta ilość = 0 h, Stan wiersza = Oszacowany
 
-    W tym przykładzie z programem Finance and Operations jest synchronizowane ustawienie **Użyta ilość** o wartości **6** dotyczące produktu oraz ustawienie **Szacowana ilość** o wartości **2 h** dotyczące usługi.
+    W tym przykładzie z programem Supply Chain Management jest synchronizowane ustawienie **Użyta ilość** o wartości **6** dotyczące produktu oraz ustawienie **Szacowana ilość** o wartości **2h** dotyczące usługi.
 
 4. Serwisant finalizuje zlecenie pracy i rejestruje użyty czas 1,5 godziny.
 
@@ -157,21 +156,21 @@ Synchronizacja wartości **Oszacowany** z wartościami **Użyte** jest zarządza
     - **Wiersz produktu:** Szacowana ilość = 5 szt., Użyta ilość = 6 szt., Stan wiersza = Użyte, Alokowane = Tak
     - **Wiersz usługi:** Szacowana ilość = 2 h, Użyta ilość = 1,5 h, Stan wiersza = Użyte
 
-    W tym przykładzie z programem Finance and Operations jest synchronizowane ustawienie **Użyta ilość** o wartości **6** dotyczące produktu oraz ustawienie **Użyta ilość** o wartości **1,5 h** dotyczące usługi.
+    W tym przykładzie z programem Supply Chain Management jest synchronizowane ustawienie **Użyta ilość** o wartości **6** dotyczące produktu oraz ustawienie **Użyta ilość** o wartości **1,5 h** dotyczące usługi.
 
 ## <a name="sales-order-origin-and-status"></a>Źródło i stan zamówienia sprzedaży
 
 ### <a name="sales-origin"></a>Pochodzenie sprzedaży
 
-Aby w programie Finance and Operations śledzić zamówienia sprzedaży pochodzące ze zleceń pracy, można utworzyć pochodzenie sprzedaży, w którym opcja gdzie **Przypisanie typu pochodzenia** ma wartość **Tak**, a w polu **Typ pochodzenia sprzedaży** ustawiono wartość **Integracja zlecenia**.
+Aby w programie Supply Chain Management śledzić zamówienia sprzedaży pochodzące ze zleceń pracy, można utworzyć pochodzenie sprzedaży, w którym opcja gdzie **Przypisanie typu pochodzenia** ma wartość **Tak**, a w polu **Typ pochodzenia sprzedaży** ustawiono wartość **Integracja zlecenia**.
 
-Domyślnie mapowanie wybiera pochodzenie sprzedaży o typie pochodzenia **Integracja zlecenia** dla wszystkich zamówień sprzedaży tworzonych na podstawie zleceń pracy. To zachowanie może być przydatne, gdy pracujesz z zamówieniami sprzedaży w programie Finance and Operations. Należy się upewnić, że zamówienia sprzedaży pochodzące ze zleceń pracy nie są synchronizowane z powrotem z programem Field Service jako zlecenia pracy.
+Domyślnie mapowanie wybiera pochodzenie sprzedaży o typie pochodzenia **Integracja zlecenia** dla wszystkich zamówień sprzedaży tworzonych na podstawie zleceń pracy. To zachowanie może być przydatne, gdy pracujesz z zamówieniami sprzedaży w programie Supply Chain Management. Należy się upewnić, że zamówienia sprzedaży pochodzące ze zleceń pracy nie są synchronizowane z powrotem z programem Field Service jako zlecenia pracy.
 
-Aby uzyskać szczegółowe informacje o prawidłowym konfigurowaniu pochodzenia sprzedaży w aplikacji Finance and Operations, zobacz rozdział „Warunki wstępne i ustawienia mapowania” w tym temacie.
+Aby uzyskać szczegółowe informacje o prawidłowym konfigurowaniu pochodzenia sprzedaży w aplikacji Supply Chain Management, zobacz rozdział „Warunki wstępne i ustawienia mapowania” w tym temacie.
 
 ### <a name="status"></a>Stan
 
-Jeśli zamówienie sprzedaży pochodzi ze zlecenia pracy, na karcie **Ustawienia** w nagłówku zamówienia sprzedaży znajduje się pole **Zewnętrzny stan zlecenia**. To pole pokazuje systemowy stan ze zlecenia pracy w programie Field Service, aby ułatwić śledzenie stanu zlecenia pracy zsynchronizowanego z zamówieniem sprzedaży w programie Finance and Operations. To pole może również pomagać użytkownikowi programu Finance and Operations określić, kiedy zamówienie sprzedaży powinno zostać wysłane lub zafakturowane.
+Jeśli zamówienie sprzedaży pochodzi ze zlecenia pracy, na karcie **Ustawienia** w nagłówku zamówienia sprzedaży znajduje się pole **Zewnętrzny stan zlecenia**. To pole pokazuje systemowy stan ze zlecenia pracy w programie Field Service, aby ułatwić śledzenie stanu zlecenia pracy zsynchronizowanego z zamówieniem sprzedaży w programie Supply Chain Management. To pole może również pomagać użytkownikowi określić, kiedy zamówienie sprzedaży powinno zostać wysłane lub zafakturowane.
 
 Pole **Zewnętrzny stan zlecenia** pole może przyjmować następujące wartości:
 
@@ -182,16 +181,16 @@ Pole **Zewnętrzny stan zlecenia** pole może przyjmować następujące wartośc
 
 ## <a name="field-service-crm-solution"></a>Rozwiązanie CRM Field Service
 
-Aby umożliwić integrację między programami Field Service i Finance and Operations, jest wymagana dodatkowa funkcjonalność z rozwiązania CRM Field Service. To rozwiązanie obejmuje następujące zmiany.
+Aby umożliwić integrację między programami Field Service i Supply Chain Management, jest wymagana dodatkowa funkcjonalność z rozwiązania CRM Field Service. To rozwiązanie obejmuje następujące zmiany.
 
 ### <a name="work-order-entity"></a>Jednostka Zlecenie pracy
 
-Do jednostki **Zlecenie pracy** dodano pole **Zawiera tylko zewnętrznie obsługiwane produkty** i ono jest wyświetlane na stronie. Jest ono używane do regularnego sprawdzania, czy zlecenie pracy zawiera wyłącznie produkty obsługiwane zewnętrznie. Zlecenie pracy zawiera tylko zewnętrznie obsługiwane produkty, jeżeli wszystkie odnośne produkty są obsługiwane w programie Finance and Operations. To ple pomaga zagwarantować, że użytkownicy nie będą synchronizowali zleceń pracy z produktami nieznanymi rozwiązaniu Finance and Operations.
+Do jednostki **Zlecenie pracy** dodano pole **Zawiera tylko zewnętrznie obsługiwane produkty** i ono jest wyświetlane na stronie. Jest ono używane do regularnego sprawdzania, czy zlecenie pracy zawiera wyłącznie produkty obsługiwane zewnętrznie. Zlecenie pracy zawiera tylko zewnętrznie obsługiwane produkty, jeżeli wszystkie odnośne produkty są obsługiwane w programie Supply Chain Management. To ple pomaga zagwarantować, że użytkownicy nie będą synchronizowali zleceń pracy z produktami nieznanymi.
 
 ### <a name="work-order-product-entity"></a>Jednostka Produkt zlecenia pracy
 
-- Do jednostki **Produkt zlecenia pracy** dodano pole **Zamówienie zawiera tylko zewnętrznie obsługiwane produkty** i ono jest wyświetlane na stronie. Jest ono używane do regularnego sprawdzania, czy produkt zlecenia pracy jest zarządzany w programie Finance and Operations. To ple pomaga zagwarantować, że użytkownicy nie będą synchronizowali produktów zleceń pracy nieznanych rozwiązaniu Finance and Operations.
-- Do jednostki **Produkt zlecenia pracy** dodano pole **Stan systemowy w nagłówku** i ono jest wyświetlane na stronie. Jest ono używane do regularnego sprawdzania systemowego stanu zlecenia pracy i pomaga zagwarantować poprawne filtrowanie, gdy produkty zlecenia pracy są synchronizowane z programem Finance and Operations. Gdy filtry zostaną ustawione w zadaniach integracji, informacja z pola **Stan systemowy w nagłówku** jest także używana do określenia, czy mają być synchronizowane wartości szacowane, czy używane.
+- Do jednostki **Produkt zlecenia pracy** dodano pole **Zamówienie zawiera tylko zewnętrznie obsługiwane produkty** i ono jest wyświetlane na stronie. Jest ono używane do regularnego sprawdzania, czy produkt zlecenia pracy jest zarządzany w programie Supply Chain Management. To ple pomaga zagwarantować, że użytkownicy nie będą synchronizowali produktów zleceń pracy nieznanych rozwiązaniu Supply Chain Management.
+- Do jednostki **Produkt zlecenia pracy** dodano pole **Stan systemowy w nagłówku** i ono jest wyświetlane na stronie. Jest ono używane do regularnego sprawdzania systemowego stanu zlecenia pracy i pomaga zagwarantować poprawne filtrowanie, gdy produkty zlecenia pracy są synchronizowane z programem Supply Chain Management. Gdy filtry zostaną ustawione w zadaniach integracji, informacja z pola **Stan systemowy w nagłówku** jest także używana do określenia, czy mają być synchronizowane wartości szacowane, czy używane.
 - Pole **Zafakturowana kwota jednostkowa** zawiera kwotę, która została zafakturowana za faktycznie użytą jednostkę. Wartość jest obliczana przez podzielenie wartości z pola **Łączna kwota** przez wartość w polu **Ilość rzeczywista**. Pole jest używane do integracji z systemami, które nie obsługują różnych wartości ilości użytej i ilości zafakturowanej. To pole nie jest wyświetlane w interfejsie użytkownika (UI). 
 - Wartość w polu **Zafakturowana kwota rabatu** jest obliczana jako wartość **Kwota rabatu** powiększona o zaokrąglenie z obliczania wartości **Zafakturowana kwota jednostkowa**. To pole jest używane do integracji i nie jest wyświetlane w interfejsie użytkownika.
 - Pole **Ilość dziesiętna** przechowuje wartość z pola **Ilość** w postaci liczby dziesiętnej. To pole jest używane do integracji i nie jest wyświetlane w interfejsie użytkownika. 
@@ -199,8 +198,8 @@ Do jednostki **Zlecenie pracy** dodano pole **Zawiera tylko zewnętrznie obsług
 
 ### <a name="work-order-service-entity"></a>Jednostka Usługa zlecenia pracy
 
-- Do jednostki **Usługa zlecenia pracy** dodano pole **Zamówienie zawiera tylko zewnętrznie obsługiwane produkty** i ono jest wyświetlane na stronie. Jest ono używane do regularnego sprawdzania, czy usługa zlecenia pracy jest zarządzana w programie Finance and Operations. To ple pomaga zagwarantować, że użytkownicy nie będą synchronizowali usług zleceń pracy nieznanych rozwiązaniu Finance and Operations.
-- Do jednostki **Usługa zlecenia pracy** dodano pole **Stan systemowy w nagłówku** i ono jest wyświetlane na stronie. Jest ono używane do regularnego sprawdzania systemowego stanu zlecenia pracy i pomaga zagwarantować poprawne filtrowanie, gdy usługi zlecenia pracy są synchronizowane z programem Finance and Operations. Gdy filtry zostaną ustawione w zadaniach integracji, informacja z pola **Stan systemowy w nagłówku** jest także używana do określenia, czy mają być synchronizowane wartości szacowane, czy używane.
+- Do jednostki **Usługa zlecenia pracy** dodano pole **Zamówienie zawiera tylko zewnętrznie obsługiwane produkty** i ono jest wyświetlane na stronie. Jest ono używane do regularnego sprawdzania, czy usługa zlecenia pracy jest zarządzany w programie Supply Chain Management. To ple pomaga zagwarantować, że użytkownicy nie będą synchronizowali usług zleceń pracy nieznanych rozwiązaniu Supply Chain Management.
+- Do jednostki **Usługa zlecenia pracy** dodano pole **Stan systemowy w nagłówku** i ono jest wyświetlane na stronie. Jest ono używane do regularnego sprawdzania systemowego stanu zlecenia pracy i pomaga zagwarantować poprawne filtrowanie, gdy usługi zlecenia pracy są synchronizowane z programem Supply Chain Management. Gdy filtry zostaną ustawione w zadaniach integracji, informacja z pola **Stan systemowy w nagłówku** jest także używana do określenia, czy mają być synchronizowane wartości szacowane, czy używane.
 - Pole **Czas trwania w godzinach** przechowuje wartość z pola **Czas trwania** po jej przekonwertowaniu z minut na godziny. To pole jest używane do integracji i nie jest wyświetlane w interfejsie użytkownika.
 - Pole **Szacowany czas trwania w godzinach** przechowuje wartość z pola **Szacowany czas trwania** po jej przekonwertowaniu z minut na godziny. To pole jest używane do integracji i nie jest wyświetlane w interfejsie użytkownika.
 - Pole **Zafakturowana kwota jednostkowa** przechowuje kwotę, która została zafakturowana za faktycznie użytą jednostkę. Wartość jest obliczana przez podzielenie wartości z pola **Łączna kwota** przez wartość w polu **Ilość rzeczywista**. To pole jest używane do integracji z systemami, które nie obsługują różnych wartości ilości użytej i ilości zafakturowanej. Pole nie jest wyświetlane w interfejsie użytkownika.
@@ -214,12 +213,12 @@ Przed zsynchronizowaniem zleceń pracy należy zaktualizować poniższe ustawien
 
 ### <a name="setup-in-field-service"></a>Konfiguracja w programie Field Service
 
-- Upewnij się, że numeracja używana do zleceń pracy w programie Field Service nie nakłada się na numerację używaną do zamówień sprzedaży w programie Finance and Operations. W przeciwnym razie istniejące zamówienia sprzedaży mogą być niepoprawnie aktualizowane w aplikacji Field Service lub Finance and Operations.
-- W polu **Tworzenie faktury do zlecenia pracy** musi być ustawiona wartość **Nigdy**, ponieważ fakturowanie będzie wykonywane w programie Finance and Operations. Wybierz kolejno opcje **Field Service** \> **Ustawienia** \> **Administracja** \> **Ustawienia programu Field Service** i upewnij się, że w polu **Tworzenie faktury do zlecenia pracy** jest ustawiona wartość **Nigdy**.
+- Upewnij się, że numeracja używana do zleceń pracy w programie Field Service nie nakłada się na numerację używaną do zamówień sprzedaży w programie Supply Chain Management. W przeciwnym razie istniejące zamówienia sprzedaży mogą być niepoprawnie aktualizowane w aplikacji Field Service lub Supply Chain Management.
+- W polu **Tworzenie faktury do zlecenia pracy** musi być ustawiona wartość **Nigdy**, ponieważ fakturowanie będzie wykonywane w programie Supply Chain Management. Wybierz kolejno opcje **Field Service** \> **Ustawienia** \> **Administracja** \> **Ustawienia programu Field Service** i upewnij się, że w polu **Tworzenie faktury do zlecenia pracy** jest ustawiona wartość **Nigdy**.
 
-### <a name="setup-in-finance-and-operations"></a>Konfiguracja w programie Finance and Operations
+### <a name="setup-in-supply-chain-management"></a>Ustawienia Supply Chain Management
 
-Aby działała integracja zleceń pracy, trzeba skonfigurować pochodzenie sprzedaży. Pochodzenie sprzedaży służy w programie Finance and Operations do odróżniania zamówień sprzedaży, które zostały utworzone na podstawie zleceń pracy w programie Field Service. Jeśli zamówienie sprzedaży ma pochodzenie sprzedaży typu **Integracja zlecenia**, w nagłówku zamówienia sprzedaży znajduje się pole **Zewnętrzny stan zlecenia**. Ponadto pochodzenie sprzedaży pomaga zagwarantować, że zamówienia sprzedaży utworzone ze zleceń pracy w programie Field Service będą odfiltrowywane podczas synchronizacji zamówień sprzedaży między aplikacjami Finance and Operations i Field Service.
+Aby działała integracja zleceń pracy, trzeba skonfigurować pochodzenie sprzedaży. Pochodzenie sprzedaży służy w programie Supply Chain Management do odróżniania zamówień sprzedaży, które zostały utworzone na podstawie zleceń pracy w programie Field Service. Jeśli zamówienie sprzedaży ma pochodzenie sprzedaży typu **Integracja zlecenia**, w nagłówku zamówienia sprzedaży znajduje się pole **Zewnętrzny stan zlecenia**. Ponadto pochodzenie sprzedaży pomaga zagwarantować, że zamówienia sprzedaży utworzone ze zleceń pracy w programie Field Service będą odfiltrowywane podczas synchronizacji zamówień sprzedaży między aplikacjami Supply Chain Management i Field Service.
 
 1. Wybierz kolejno opcje **Sprzedaż i marketing** \> **Ustawienia** \> **Zamówienia sprzedaży** \> **Pochodzenie sprzedaży**.
 2. Wybierz opcję **Nowy**, aby utworzyć nowe pochodzenie sprzedaży.
@@ -243,31 +242,31 @@ Upewnij się, istnieje wartość **Klucz integracji** dla jednostki **msdyn_work
 
 Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja danych.
 
-### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderheader"></a>Zlecenia pracy na zamówienia sprzedaży (Field Service na Fin and Ops): WorkOrderHeader
+### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderheader"></a>Zlecenia pracy do zleceń w Sales (Field Service do Supply Chain Management): WorkOrderHeader
 
 Filtr: (msdyn_systemstatus ne 690970005) i (msdyn_systemstatus ne 690970000) i (msdynce_hasexternallymaintainedproductsonly eq true)
 
 [![Mapowanie szablonu w integracji danych](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
-### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineestimate"></a>Zlecenia pracy na zamówienia sprzedaży (Field Service na Fin and Ops): WorkOrderServiceLineEstimate
+### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Zlecenia pracy do zleceń w Sales (Field Service do Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i (msdyn_linestatus eq 690970000) i (msdynce_headersystemstatus ne 690970004)
 
 [![Mapowanie szablonu w integracji danych](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
-### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineused"></a>Zlecenia pracy na zamówienia sprzedaży (Field Service na Fin and Ops): WorkOrderServiceLineUsed
+### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Zlecenia pracy do zleceń w Sales (Field Service do Supply Chain Management): WorkOrderServiceLineUsed
 
 Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i ((msdyn_linestatus eq 690970001) lub (msdynce_headersystemstatus eq 690970004))
 
 [![Mapowanie szablonu w integracji danych](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
-### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineestimate"></a>Zlecenia pracy na zamówienia sprzedaży (Field Service na Fin and Ops): WorkOrderProductLineEstimate
+### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Zlecenia pracy do zleceń w Sales (Field Service do Supply Chain Management): WorkOrderProductLineEstimate
 
 Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i (msdyn_linestatus eq 690970000) i (msdynce_headersystemstatus ne 690970004) i (msdyn_allocated eq true)
 
 [![Mapowanie szablonu w integracji danych](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
-### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineused"></a>Zlecenia pracy na zamówienia sprzedaży (Field Service na Fin and Ops): WorkOrderProductLineUsed
+### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Zlecenia pracy do zleceń w Sales (Field Service do Supply Chain Management): WorkOrderProductLineUsed
 
 Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i ((msdyn_linestatus eq 690970001) lub (msdynce_headersystemstatus eq 690970004) lub (msdyn_allocated ne true))
 

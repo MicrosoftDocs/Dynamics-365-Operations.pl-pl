@@ -1,9 +1,9 @@
 ---
 title: Dodawanie kontrolki rekomendacji do ekranu transakcji na urządzeniach z aplikacją POS
 description: W tym temacie opisano sposób dodawania formantu rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w programie Microsoft Dynamics 365 for Retail.
-author: ashishmsft
+author: bebeale
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 10/01/19
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,23 +19,22 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f17da3db6fbc19548544a0c6c090a0b6db093673
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: d646c8ba559ba3e8d2175911e76c57d25eff02ca
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606856"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278136"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Dodawanie kontrolki rekomendacji do ekranu transakcji na urządzeniach z aplikacją POS
 
 [!include [banner](includes/banner.md)]
 
-> [!NOTE]
-> Usuwamy obecną wersję usługi rekomendowania produktów, ponieważ w nowej wersji wprowadzamy lepszy algorytm i nowsze funkcje zorientowane na handel detaliczny. Aby uzyskać więcej informacji, zobacz [Usunięte i przestarzałe funkcje](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).
 
-W tym temacie opisano sposób dodawania formantu rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w programie Microsoft Dynamics 365 for Retail.
+W tym temacie opisano sposób dodawania kontrolki rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w Microsoft Dynamics 365 Retail. Aby uzyskać więcej informacji na temat zaleceń dotyczących produktów, zapoznaj się z [zaleceniami dotyczącymi produktów w dokumentacji punktu sprzedaży.](product.md)
 
-Rekomendacje produktów mogą być wyświetlane na urządzeniu punktu sprzedaży podczas używania programu Microsoft Dynamics 365 for Retail. *Rekomendacje* to towary, którymi odbiorca może być zainteresowany w związku z wcześniej dokonywanymi zakupami, towary na liście życzeń odbiorcy oraz towary, które inni podobni odbiorcy kupowali w sklepach internetowych i tradycyjnych. Aby wyświetlać rekomendacje produktów, należy za pomocą projektanta układu ekranu dodać formant do ekranu transakcji.
+
+Rekomendacje produktów mogą być wyświetlane na urządzeniu punktu sprzedaży podczas używania Microsoft Dynamics 365 Retail. Aby wyświetlać rekomendacje produktów, należy za pomocą projektanta układu ekranu dodać formant do ekranu transakcji. 
 
 ## <a name="open-layout-designer"></a>Otwieranie projektanta układu
 
@@ -43,8 +42,9 @@ Rekomendacje produktów mogą być wyświetlane na urządzeniu punktu sprzedaży
 2. Za pomocą szybkiego filtru znajdź ekran, do którego chcesz dodać formant. Na przykład wyfiltruj według pola **Identyfikator układu ekranu**, używając wartości **F2CP16:9M**.
 3. Na liście znajdź i zaznacz odpowiedni rekord. Na przykład zaznacz pozycję **Nazwa: F2CP16:9M Identyfikator układu ekranu: F2CP16:9M**.
 4. Kliknij opcję **Projektant układu**.
-5. Postępuj zgodnie z instrukcjami, aby uruchomić projektanta układu. Gdy zostanie wyświetlony monit o poświadczenia, wpisz te same poświadczenia, które były używane przy uruchamianiu konstruktora układu ze strony **Układy ekranu**.
+5. Postępuj zgodnie z instrukcjami, aby uruchomić projektanta układu. Gdy zostanie wyświetlony monit o poświadczeniach, wpisz te same poświadczenia, które były używane przy uruchamianiu projektanta układu ze strony **Układy ekranu**.
 6. Po zalogowaniu się zobaczysz stronę podobną do przedstawionej poniżej. Układ może się różnić w zależności od dostosowań wprowadzonych dla sklepu.
+
 
     [![Projektant układu](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
@@ -57,7 +57,9 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 
 ### <a name="make-recommendations-always-visible"></a>Rekomendacje zawsze widoczne
 
+
 1. Zmniejsz wysokość obszaru szczegółów wierszy transakcji, tak aby była taka sama, jak wysokość panelu odbiorcy po lewej stronie.
+
 
     [![Zmniejszona wysokość obszaru szczegółów wierszy transakcji](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
@@ -65,32 +67,37 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 
     [![Formant rekomendacji dodany do układu](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
+
 3. Kliknij przycisk **X**, aby zapisać zmiany i zamknąć projektanta układu.
 4. W programie Dynamics 365 for Retail wybierz kolejno opcje **Handel detaliczny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogramy dystrybucji**.
-5. Na liście zaznacz pozycję  **1090 Kasy**.
+5. Na liście zaznacz pozycję **1090 Kasy**.
 6. Kliknij przycisk **Uruchom teraz**.
+
 
 ### <a name="add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Dodawanie karty Zalecenia do siatki przycisków po prawej stronie ekranu
 
 1. Kliknij prawym przyciskiem myszy puste miejsce pod ostatnią kartą w siatce przycisków umieszczoną z prawej strony ekranu.
-2. Kliknij przycisk **Dostosuj**.
+
+2. Kliknij **Dostosuj**.
 
     [![Dostosowywanie — okno dialogowe Formant karty](./media/pic-5.png)](./media/pic-5.png)
 
 3. Kliknij opcję **Nowa karta**.
-4. Znajdź nową kartę, który została właśnie dodana. Może być konieczne przewinięcie ekranu w dół.
+4. Znajdź nową kartę, który została właśnie dodana. Może być konieczne przewinięcie w dół.
 5. Na liście rozwijanej **Zawartość** wybierz opcję **Rekomendowane produkty**.
 
     [![Wybieranie Rekomendowanych produktów w polu Zawartość](./media/pic-6.png)](./media/pic-6.png)
 
 6. W polu **Etykieta** wpisz nazwę karty rekomendacji. Na przykład wpisz „Zalecane produkty”.
 7. W polu **Obraz** zaznacz ilustrację, która ma być wyświetlana na karcie.
-8. Kliknij **OK**. Nowa karta zostanie wyświetlone w siatce przycisków.
+8. Kliknij przycisk **OK**. Nowa karta zostanie wyświetlone w siatce przycisków.
 9. Kliknij przycisk **X**, aby zapisać zmiany i zamknąć projektanta układu.
 10. W programie Dynamics 365 for Retail wybierz kolejno opcje **Handel detaliczny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogramy dystrybucji**.
-11. Na liście zaznacz pozycję  **1090 Kasy**.
+11. Na liście zaznacz pozycję **1090 Kasy**.
 12. Kliknij przycisk **Uruchom teraz**.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie spersonalizowanych rekomendacji produktów](personalized-product-recommendations.md)
+[rekomendacje produktów w punkcie sprzedaży](product.md)
+
+[przegląd rekomendacji produktów](../commerce/product-recommendations.md)

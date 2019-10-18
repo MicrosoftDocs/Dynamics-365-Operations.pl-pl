@@ -1,6 +1,6 @@
 ---
 title: Definiowanie i obsługa kanałów sprzedaży detalicznej
-description: Ten artykuł zawiera omówienie procesu konfigurowania sklepów tradycyjnych (fizycznych), określanych jako „sklepy detaliczne” (sklepy sieci sprzedaży) w Microsoft Dynamics 365 for Retail. Znajdują się tu informacje o zadaniach, które należy wykonać przed i po skonfigurowaniu sklepu detalicznego.
+description: Ten artykuł zawiera omówienie procesu konfigurowania sklepów tradycyjnych (fizycznych), określanych jako „sklepy detaliczne” (sklepy sieci sprzedaży) w Dynamics 365 Retail. Znajdują się tu informacje o zadaniach, które należy wykonać przed i po skonfigurowaniu sklepu detalicznego.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/14/2017
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 53ba6cdb2378ce9011c6e7e3ce4e67c789adb1e6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f55099ad283e665965aad0684b3c9d87223d5ed7
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560356"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019377"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definiowanie i obsługa kanałów sprzedaży detalicznej
 
 [!include [banner](includes/banner.md)]
 
-Ten artykuł zawiera omówienie procesu konfigurowania sklepów tradycyjnych (fizycznych), określanych jako „sklepy detaliczne” (sklepy sieci sprzedaży) w Microsoft Dynamics 365 for Retail. Znajdują się tu informacje o zadaniach, które należy wykonać przed i po skonfigurowaniu sklepu detalicznego.
+Ten artykuł zawiera omówienie procesu konfigurowania sklepów tradycyjnych (fizycznych), określanych jako „sklepy detaliczne” (sklepy sieci sprzedaży) w Dynamics 365 Retail. Znajdują się tu informacje o zadaniach, które należy wykonać przed i po skonfigurowaniu sklepu detalicznego.
 
-Dynamics 365 for Retail obsługuje wiele kanałów sieci sprzedaży, takich jak sklepy internetowe, sklepy tradycyjne i biura obsługi. Sklep tradycyjny jest nazywany sklepem detalicznym. Każdy sklep detaliczny ma własne metody płatności, grupy cenowe, kasy punktów sprzedaży, konta przychodów i wydatków oraz personel. Wszystkie te elementy sklepu detalicznego należy skonfigurować przed jego utworzeniem. Po utworzeniu sklepu detalicznego, można przypisać produkty, które mają trafić do sklepu. Rejestry, pracowników i odbiorców również można przypisać do sklepu. Na koniec należy dodać nowy sklep do hierarchii organizacyjnej.
+Retail obsługuje wiele kanałów sieci sprzedaży, takich jak sklepy internetowe, biura obsługi i sklepy tradycyjne. Sklep tradycyjny jest nazywany sklepem detalicznym. Każdy sklep detaliczny ma własne metody płatności, grupy cenowe, kasy punktów sprzedaży, konta przychodów i wydatków oraz personel. Wszystkie te elementy sklepu detalicznego należy skonfigurować przed jego utworzeniem. Po utworzeniu sklepu detalicznego, można przypisać produkty, które mają trafić do sklepu. Rejestry, pracowników i odbiorców również można przypisać do sklepu. Na koniec należy dodać nowy sklep do hierarchii organizacyjnej.
 
 ## <a name="setting-up-retail-stores"></a>Konfigurowanie sklepów detalicznych
 
-Przed skonfigurowaniem sklepu detalicznego w Dynamics 365 for Retail należy wykonać niektóre zadania wymagań wstępnych. Następnie można utworzyć sklep detaliczny i dodać szczegóły.
+Przed skonfigurowaniem sklepu detalicznego w Retail należy wykonać niektóre zadania wymagań wstępnych. Następnie można utworzyć sklep detaliczny i dodać szczegóły.
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
@@ -55,7 +55,7 @@ Przed skonfigurowaniem sklepu detalicznego należy wykonać następujące zadani
 11. Konfigurowanie członków personelu.
 
     > [!NOTE]
-    > Należy również przypisać odpowiednie uprawnienia dla pracowników, tak aby mogli logować się i wykonywać zadania za pomocą systemu Dynamics 365 for Retail for Retail POS.
+    > Należy również przypisać odpowiednie uprawnienia dla pracowników, tak aby mogli logować się i wykonywać zadania za pomocą systemu Retail POS.
 
 12. Konfigurowanie profilów Retail POS, które mają zostać przypisane do danego sklepu. Konfigurowanie profilów obejmuje wiele zadań, takich jak konfigurowanie rejestrów, konfigurowanie profilów trybu offline i konfigurowanie profilów i formatów paragonu.
 

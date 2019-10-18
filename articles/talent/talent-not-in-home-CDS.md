@@ -1,6 +1,6 @@
 ---
 title: Rozwiązanie Talent nie jest wyświetlane na liście aplikacji usługi Microsoft Dynamics 365 (Common Data Service 1.0)
-description: W tym temacie wyjaśniono, co należy zrobić, jeśli klient nie widzi aplikacji Microsoft Dynamics 365 for Talent wśród aplikacji Microsoft Dynamics 365.
+description: W tym temacie wyjaśniono, co należy zrobić, jeśli klient nie widzi aplikacji Microsoft Dynamics 365 Talent wśród aplikacji Microsoft Dynamics 365.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ad5add2b572ccb6bff175806b965f63b53986152
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 956af80a8ab2f454d9f523d3c74dda754ef0f793
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518883"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009383"
 ---
 # <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a>Rozwiązanie Talent nie jest wyświetlane na liście aplikacji usługi Microsoft Dynamics 365 (Common Data Service 1.0)
 
@@ -30,13 +30,13 @@ ms.locfileid: "1518883"
 
 **Wystawienie**
 
-Klient nie widzi aplikacji Microsoft Dynamics 365 for Talent wśród aplikacji Microsoft Dynamics 365.
+Klient nie widzi aplikacji Microsoft Dynamics 365 Talent wśród aplikacji Microsoft Dynamics 365.
 
 **Rozdzielczość**
 
 Użytkownik musi być dodany do roli Twórca środowisk dla środowiska w Microsoft PowerApps.
 
-1. Administrator mający licencję usługi PowerApps planu 2 musi otworzyć [portal administratorów usługi PowerApps](https://preview.admin.powerapps.com/).
+1. Administrator mający licencję usługi PowerApps planu 2. musi otworzyć [portal administratorów usługi PowerApps](https://preview.admin.powerapps.com/).
 2. Wybierz **środowiska**, a następnie wybierz poprawne środowisko dla Talent.
 3. Na karcie **zabezpieczeń** na karcie **ról środowiska** wybierz opcję **Twórca środowiska**.
 

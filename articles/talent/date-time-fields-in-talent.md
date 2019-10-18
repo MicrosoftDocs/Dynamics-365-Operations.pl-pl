@@ -1,6 +1,6 @@
 ---
-title: Pracuj z ustawieniami daty i godziny w Microsoft Dynamics 365 for Talent
-description: Opis oczekiwań podczas używania pól daty i godziny w rozwiązaniu Microsoft Dynamics 365 for Talent. Umożliwia uzyskanie jasności Dynamics 365 for Talent, co ma być oczekiwane podczas interakcji z danymi daty i godziny w formularzu, zewnętrznym źródle lub w Common Data Service.
+title: Pracuj z ustawieniami daty i godziny w Microsoft Dynamics 365 Talent
+description: Opis oczekiwań podczas używania pól daty i godziny w rozwiązaniu Microsoft Dynamics 365 Talent. Umożliwia uzyskanie jasności na temat tego, co ma być oczekiwane podczas interakcji z danymi daty i godziny w formularzu w Talent, zewnętrznym źródle lub w Common Data Service.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/24/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b4c652992272ed1a5aecbb4c78f0d11f077149d1
-ms.sourcegitcommit: 46bded82aa072adfedcf443629c2adc69f512c09
+ms.openlocfilehash: 1a1d1a47bfe6bd58b1e1a0d4d46c2133f3bf48ad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1791226"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2007974"
 ---
 # <a name="date-and-time-fields-in-talent"></a>Pola Data i Godzina w aplikacji Talent
 
 [!include [banner](includes/banner.md)]
 
-**Pola daty i godziny** stanowią podstawową koncepcję w Dynamics 365 for Talent. Ważne jest, aby zrozumieć sposób pracy z danymi **Daty i godziny** w formularzu Dynamics 365, Common Data Service i źródłach zewnętrznych.
+**Pola daty i godziny** stanowią podstawową koncepcję w Dynamics 365 Talent. Ważne jest, aby zrozumieć sposób pracy z danymi **Daty i godziny** w formularzu Dynamics 365, Common Data Service i źródłach zewnętrznych.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>Opis różnicy między typami danych pól daty oraz daty i godziny
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie zarządzania ofertami
-description: W tym temacie opisano sposób konfigurowania zarządzania ofertami w aplikacji Talent.
+description: W tym temacie opisano sposób konfigurowania zarządzania ofertami w Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/04/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa0e5d30c06db16e105631e492af022acfcfd66
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518829"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010851"
 ---
 # <a name="set-up-offer-management"></a>Konfigurowanie zarządzania ofertami 
 
 [!include [banner](includes/banner.md)]
 
-Gdy kandydat jest przenoszony do etapu oferty w aplikacji Dynamics 365 for Talent: Attract, trzeba mieć możliwość szybkiego tworzenia ofert dla kandydata, ich niezbędnego zatwierdzania i wysyłania do kandydata. Ponieważ większość ofert jest standardowych, można je tworzyć na podstawie szablonów wielokrotnego użytku. W aplikacji Attract wszystkie oferty są łączone w pakiet oferty, który jest kolekcją jednego lub większej dokumentów oferty. 
+Gdy kandydat jest przenoszony do etapu oferty w Dynamics 365 Talent: Attract, trzeba mieć możliwość szybkiego tworzenia ofert dla kandydata, ich niezbędnego zatwierdzania i wysyłania do kandydata. Ponieważ większość ofert jest standardowych, można je tworzyć na podstawie szablonów wielokrotnego użytku. W aplikacji Attract wszystkie oferty są łączone w pakiet oferty, który jest kolekcją jednego lub większej dokumentów oferty. 
 
 Ten temat zawiera listę wszystkich czynności, jakie powinien wykonać administrator aplikacji Attract w celu skonfigurowania różnych szablonów pakietów ofert w ramach funkcji zarządzania ofertami w aplikacji Attract. Użytkownicy nieposiadający ról administratorów nie mają dostępu do tych funkcji.
 

@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f08829bccbaea6fb70563e553f9042300b4d5ea9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: fbaa467c22656aa8d1e39d26a8233250e2bb66f8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838005"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026608"
 ---
 # <a name="sales-tax-assignment-and-overrides"></a>Przypisanie podatku i ręcznych zmian podatków
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura przedstawia sposób przypisywania grup podatków do kanałów sprzedaży detalicznej. Ponadto prowadzi przez proces tworzenia nowej ręcznej zmiany podatku i przypisywania jej do istniejącej grupy ręcznej zmiany podatku. Ta procedura
-
-wykorzystuje dane firmy demonstracyjnej USRT.
+Ta procedura przedstawia sposób przypisywania grup podatków do kanałów sprzedaży detalicznej. Ponadto prowadzi przez proces tworzenia nowej ręcznej zmiany podatku i przypisywania jej do istniejącej grupy ręcznej zmiany podatku. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
 
 1. Wybierz kolejno opcje Handel detaliczny i inny > Kanały > Sklepy sieci sprzedaży > Wszystkie sklepy sieci sprzedaży.
 2. Na liście kliknij łącze identyfikatora kanału sprzedaży detalicznej „Houston”.

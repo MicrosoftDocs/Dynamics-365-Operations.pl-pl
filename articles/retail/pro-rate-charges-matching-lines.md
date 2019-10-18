@@ -19,29 +19,29 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 07eea8fd7af4da611b4bd0c9340923f8894fab2c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d9f36da025528272b1a95456acf597dd5d923819
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1526022"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025179"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Określona proporcjonalnie do opłat dodatkowych z nagłówka do wierszy sprzedaży uzgadniania
 
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano funkcje grupowania automatycznych opłat na poziomie nagłówka i określenia ich proporcji do wierszy sprzedaży sieci sprzedaży. Ta funkcja jest dostępna dla transakcji, które zostały utworzone w punkcie sprzedaży (POS) w Microsoft Dynamics 365 for Retail wersji 10.0.1 i sprzedaży, które zostały utworzone w biurze obsługi w Microsoft Dynamics 365 for Retail wersji 10.0.2.
+W tym temacie opisano funkcje grupowania automatycznych opłat na poziomie nagłówka i określenia ich proporcji do wierszy sprzedaży sieci sprzedaży. Ta funkcja jest dostępna dla transakcji, które zostały utworzone w punkcie sprzedaży (POS) w Retail wersji 10.0.1 i sprzedaży, które zostały utworzone w biurze obsługi w Retail wersji 10.0.2.
 
 Ta funkcja jest dostępna tylko wtedy, gdy [zaawansowane automatyczne opłaty](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) włączono za pomocą opcji na stronie **Parametry sieci sprzedaży**. Ponadto rozszerzona metoda obliczania automatycznych opłat może być stosowana tylko w przypadku zamówień sprzedaży utworzonych przez kanały sprzedaży (punkt sprzedaży, biuro obsługi, platforma Dynamics e-Commerce).
 
 Ta nowa funkcja daje organizacjom większą elastyczność w taki sposób, że automatyczne opłaty poziomu nagłówka są obliczane i dodawane do transakcji sprzedaży w punkcie sprzedaży.
 
-W wersjach Microsoft Dynamics 365 for Retail, które są starsze niż wersja 10.0.1, opłaty automatyczne na poziomie nagłówka, które mają określoną relację metody dostawy, są obliczane tylko, kiedy jest zgodność z metodą dostawy zdefiniowaną na nagłówku zamówienia sprzedaży.
+W wersjach Retail, które są starsze niż wersja 10.0.1, opłaty automatyczne na poziomie nagłówka, które mają określoną relację metody dostawy, są obliczane tylko, kiedy jest zgodność z metodą dostawy zdefiniowaną na nagłówku zamówienia sprzedaży.
 
 Na przykład automatyczne opłaty na poziomie nagłówka są zdefiniowane dla metody dostawy **99** i metody dostawy **11**. Zamówienie sprzedaży jest tworzone i metoda dostawy **99** jest zdefiniowana w nagłówku zamówienia. Jednak niektóre wiersze sprzedaży ustawiono tak, że są one wysłane przy użyciu metody dostawy **11**. W takim przypadku tylko opłaty poziomu nagłówka odnoszące się do metody dostawy **99** są brane pod uwagę oraz stosowane do zamówienia sprzedaży.
 
-W Dynamics 365 for Retail opłaty na poziomie nagłówka mają dodatkową funkcję, która pozwala zdefiniować [konfigurację opłat warstwowych](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) na podstawie wartości zamówienia. Na przykład jeśli wartość zamówienia wynosi między $50.00 i $200.00, organizacja może chcieć naliczyć opłatę transportową $5.00. Jeśli jednak wartość zamówienia wynosi między $200.01 i $500.00, koszt transportu może wynosić $4.00.
+W Retail opłaty na poziomie nagłówka mają dodatkową funkcję, która pozwala zdefiniować [konfigurację opłat warstwowych](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) na podstawie wartości zamówienia. Na przykład jeśli wartość zamówienia wynosi między $50.00 i $200.00, organizacja może chcieć naliczyć opłatę transportową $5.00. Jeśli jednak wartość zamówienia wynosi między $200.01 i $500.00, koszt transportu może wynosić $4.00.
 
 Niektóre organizacje chcą mieć korzyści z warstwowego naliczania opłat w przypadku opłat na poziomie nagłówka. Jednak w scenariuszach obejmujących mieszane metody dostawy, również chcą mieć pewność, że opłaty są obliczane na podstawie dopasowania do metody dostawy określonej w każdym wierszu sprzedaży.
 

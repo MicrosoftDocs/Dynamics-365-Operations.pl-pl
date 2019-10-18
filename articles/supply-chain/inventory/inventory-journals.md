@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7acf4e5397ee7276b0f881f4859267371266de0
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553445"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249547"
 ---
 # <a name="inventory-journals"></a>Arkusze magazynowe
 
@@ -33,7 +33,7 @@ ms.locfileid: "1553445"
 
 W tym temacie opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych.
 
-Arkusze magazynowe w programie Microsoft Dynamics 365 for Finance and Operations są używane do księgowania transakcji magazynu fizycznego różnych typów, takich jak księgowanie rozchodów i przychodów, przesunięć magazynowych, tworzenie list składowych BOM i uzgadnianie zapasów fizycznych. Wszystkie arkusze magazynowe są używane w sposób podobny, ale są one podzielone na różne typy.
+Arkusze magazynowe w Supply Chain Management są używane do księgowania transakcji magazynu fizycznego różnych typów, takich jak księgowanie rozchodów i przychodów, przesunięć magazynowych, tworzenie list składowych BOM i uzgadnianie zapasów fizycznych. Wszystkie arkusze magazynowe są używane w sposób podobny, ale są one podzielone na różne typy.
 
 ## <a name="types-of-inventory-journals"></a>Typy arkuszy magazynowych
 Dostępne są następujące typy arkuszy magazynowych:
@@ -68,7 +68,7 @@ Podczas zgłaszania BOM jako gotowych można utworzyć arkusz BOM. Przy użyciu 
 
 ### <a name="item-arrival"></a>Przyjęcie pozycji
 
-Arkusz przyjęcia towaru służy do rejestrowania przyjęć towarów (na przykład z zamówienia zakupu). Arkusz przyjęcia towaru można utworzyć w ramach zarządzania przyjęciem na stronie **Przegląd przyjęć** lub można ręcznie utworzyć wpis dziennika na stronie **przyjęcia towaru**. Jeśli w arkuszu przyjęcia towaru włączysz opcję sprawdzania lokalizacji pobrania, program Finance and Operations szuka lokalizacji dla przyjmowanych towarów i jeśli znajdzie miejsce, generuje docelowe lokalizacje dla nadchodzących towarów.
+Arkusz przyjęcia towaru służy do rejestrowania przyjęć towarów (na przykład z zamówienia zakupu). Arkusz przyjęcia towaru można utworzyć w ramach zarządzania przyjęciem na stronie **Przegląd przyjęć** lub można ręcznie utworzyć wpis dziennika na stronie **przyjęcia towaru**. Jeśli w arkuszu przyjęcia towaru włączysz opcję sprawdzania lokalizacji pobrania, Supply Chain Management szuka lokalizacji dla przyjmowanych towarów i jeśli znajdzie miejsce, generuje docelowe lokalizacje dla nadchodzących towarów.
 
 ### <a name="production-input"></a>Przyjęcie z produkcji
 
@@ -103,7 +103,7 @@ Jednostki danych obsługują następujące typy scenariuszy integracji:
 Aby uzyskać więcej informacji, zobacz [Jednostki danych](../../dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
-> Nie wszystkie arkusze magazynowe obsługują usługę OData, dlatego nie można używać aplikacji łącznika danych programu Excel do publikowania, aktualizowania i importowania danych z powrotem do programu Dynamics 365 for Finance and Operations. 
+> Nie wszystkie arkusze magazynowe obsługują usługę OData, dlatego nie można używać aplikacji łącznika danych programu Excel do publikowania, aktualizowania i importowania danych z powrotem do Supply Chain Management. 
 
 Kolejna różnica między jednostkami danych arkusza dotyczy możliwości używania jednostek złożonych, które zawierają zarówno dane nagłówka, jak i dane wiersza. Obecnie jednostek złożonych można używać dla następujących arkuszy:
 -   Arkusz korekt zapasów

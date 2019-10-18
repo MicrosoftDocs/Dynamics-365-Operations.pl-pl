@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (6 grudnia 2018 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent Core HR.
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent - Core HR (6 grudnia 2018 r.)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/07/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f3d53440c5d19dd52fbab17305c3e99a73e570be
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 73e0875c3e072bc29050a096888459c6e4bb1b7b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742593"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025963"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (6 grudnia 2018 r.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-december-6-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent: Core HR (6 grudnia 2018 r.)
 
 [!include [banner](includes/banner.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "1742593"
 W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Core HR.
 
 
-## <a name="platform-update-22"></a>Aktualizacja platformy Update 22
+## <a name="platform-update-22-for-finance-and-operations"></a>Aktualizacja Platform update 22 dla Finance and Operations
 
 ### <a name="export-up-to-1-million-rows-to-excel"></a>Eksportowanie do 1 miliona wierszy do programu Excel
 
@@ -42,7 +42,7 @@ Funkcję eksportowania do programu Excel można skonfigurować tak aby użytkown
 
 ### <a name="restyled-personalization-toolbar"></a>Zmiana stylu paska narzędzie personalizacji
 
-Pasek narzędzi personalizacji został zmieniony w aktualizacji 22 Platformy, pomagając w dostosowaniu środowiska Talent do potrzeb użytkowników. Wprowadzono następujące zmiany: 
+Pasek narzędzi personalizacji został zmieniony w aktualizacji Platform update 22 dla Finance and Operations, pomagając w dostosowaniu środowiska Talent do potrzeb użytkowników. Wprowadzono następujące zmiany: 
 
 -  Nazwa każdego narzędzia personalizacji jest teraz wyświetlana wraz z ikoną, która pomaga użytkownikom szybko rozpoznawać narzędzie, którego chcą użyć.
 -  Wyświetlany jest również opis sposobu używania bieżącego narzędzia, który pomaga w zrozumieniu sposobu wprowadzania personalizacji.  
@@ -50,19 +50,19 @@ Pasek narzędzi personalizacji został zmieniony w aktualizacji 22 Platformy, po
 
 ### <a name="optimized-is-one-of-filtering-experience"></a>Optymalizacja funkcji filtrowania „jest jednym z”
 
-Operator filtrowania „jest jednym z” jest dostępny dla większości pól podczas korzystania z Okienka filtru i list rozwijanych nagłówka. Ten operator pozwala użytkownikowi filtrować pola na podstawie wielu wartości. Nowe i ulepszone funkcjonowanie operatora „jest jednym z” jest dostępne w aktualizacji platformy 22. Aby dowiedzieć się więcej, zobacz [Optymalizowanie funkcji filtrowania „jest jednym z”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+Operator filtrowania „jest jednym z” jest dostępny dla większości pól podczas korzystania z Okienka filtru i list rozwijanych nagłówka. Ten operator pozwala użytkownikowi filtrować pola na podstawie wielu wartości. Nowe i ulepszone funkcjonowanie operatora „jest jednym z” jest dostępne w aktualizacji Platform update 22 dla Finance and Operations. Aby dowiedzieć się więcej, zobacz [Optymalizowanie funkcji filtrowania „jest jednym z”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Wklejanie list z programu Excell do pól filtra z operatorem "jest jednym z"
 
 W przypadku niektórych zadań użytkownicy mogą mieć listę wartości w programie, którą chcą użyć do filtrowania danych w Talent. Na przykład użytkownik w dziale HR może mieć określony na podstawie raportu zbiór pracowników, wymagający dalszego badania w systemie, i dla takiego użytkownika idealnym rozwiązaniem byłaby możliwość skopiowania listy bezpośrednio z programu Excel do pola filtra w Talent.
 
-Począwszy od aktualizacji platformy 22, operator „jest jedną z” w opcjach filtrowania kolumnie Okienko filtru i siatki rozpoznaje teraz wartości skopiowane z programu Excel, dzięki czemu można jke wkleić bezpośrednio do pola filtru. Obejmuje to zbiór wartości skopiowanych z różnych wierszy i kolumn w programie Excel. Aby dowiedzieć się więcej o tej funkcji, zobacz [Wklejanie list z programu Excel do pól filtru z operatorem „jest jedną z”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Począwszy od aktualizacji Platform update 22 dla Finance and Operations, operator „jest jednym z” w okienku filtru i filtrowaniu kolumn siatki rozpoznaje teraz wartości skopiowane z programu Excel, dzięki czemu można je wkleić bezpośrednio do pola filtru. Obejmuje to zbiór wartości skopiowanych z różnych wierszy i kolumn w programie Excel. Aby dowiedzieć się więcej o tej funkcji, zobacz [Wklejanie list z programu Excel do pól filtru z operatorem „jest jedną z”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## <a name="in-preview"></a>Wersja próbna
 
 ### <a name="configure-uk-payroll-integration-between-talent-and-dayforce"></a>Konfigurowanie integracji listy płac w Wielkiej Brytanii między rozwiązaniami Talent i Dayforce
 
-Integracja między rozwiązaniami Microsoft Dynamics 365 for Talent i Ceridian Dayforce jest dostępna w wersji próbnej dla Wielkiej Brytanii. Aby uzyskać więcej informacji, zobacz poniższy temat [Konfigurowanie integracji list płac między rozwiązaniami Talent i Dayforce](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
+Integracja między rozwiązaniami Talent i Ceridian Dayforce jest dostępna w wersji próbnej w Wielkiej Brytanii. Aby uzyskać więcej informacji, zobacz poniższy temat [Konfigurowanie integracji list płac między rozwiązaniami Talent i Dayforce](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
 
 ## <a name="coming-soon"></a>Wkrótce
 
@@ -90,9 +90,9 @@ Wprowadzono zmiany mające na celu poprawienie załączników. Podczas dodawania
 
 ## <a name="known-issues"></a>Znane problemy
 
-### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>Błędy mapowania w integracji z Finance and Operations
+### <a name="mapping-errors-in-the-integration-with-finance"></a>Błędy mapowania w integracji z Finance
 
-Zidentyfikowano następujące problemy w bieżącym szablonie odnośnie do integracji rozwiązania Talent z rozwiązaniem Finance and Operations. Nowy szablon zostanie wkrótce opublikowany i będzie stosowany do wszystkich nowych projektów integracji, które zostały utworzone. Dla istniejących projektów integracji mapowania zadań mogą być zaktualizowane. Zaktualizowane mapowania można znaleźć w poniższej tabeli. 
+Zidentyfikowano następujące problemy w bieżącym szablonie dotyczącego integracji rozwiązania Talent z rozwiązaniem Finance. Nowy szablon zostanie wkrótce opublikowany i będzie stosowany do wszystkich nowych projektów integracji, które zostały utworzone. Dla istniejących projektów integracji mapowania zadań mogą być zaktualizowane. Zaktualizowane mapowania można znaleźć w poniższej tabeli. 
 
 >[!NOTE]
 > Zadanie Stanowiska do Przypisania pracy nadrzędnej do stanowisk nie integruje danych. Występuje problem, który jest aktualnie badany. Obecnie nie ma rozwiązania problemu mapowania. 

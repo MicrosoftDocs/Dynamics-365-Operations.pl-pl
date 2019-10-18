@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie sklepów internetowych
-description: Ten artykuł zawiera informacje o internetowych sklepach detalicznych oraz o ich konfigurowaniu w programie Microsoft Dynamics 365 for Retail.
+description: Ten artykuł zawiera informacje o internetowych sklepach detalicznych oraz o ich konfigurowaniu w programie Dynamics 365 Retail.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2b736b5e5ce5b5b384181a73c72bbb89b072a284
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 02402269a6976ff856e703cc8e94fbf0758ea771
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543613"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017973"
 ---
 # <a name="set-up-online-stores"></a>Konfigurowanie sklepów internetowych
 
 [!include [banner](includes/banner.md)]
 
-Ten artykuł zawiera informacje o internetowych sklepach detalicznych oraz o ich konfigurowaniu w programie Microsoft Dynamics 365 for Retail.
+Ten artykuł zawiera informacje o internetowych sklepach detalicznych oraz o ich konfigurowaniu w programie Dynamics 365 Retail.
 
-Moduł Dynamics 365 for Retail obsługuje wiele kanałów sprzedaży detalicznej. Te kanały sprzedaży detalicznej obejmują sklepy internetowe, internetowe serwisy sprzedażowe i sklepy sieci sprzedaży (nazywane także sklepami tradycyjnymi). Sklepy internetowe zapewniają sprzedawcy detalicznemu obecność w trybie online. Dzięki temu klienci sklepu mogą robić zakupy u sprzedawcy zarówno w internecie, jak i sklepie tradycyjnym. Klienci, którzy zakupią produkty ze sklepu internetowego mogą otrzymać produkty pocztą lub odebrać je z magazynu lokalnego. Tworzenie sklepu internetowego na kliencie programu Dynamics 365 for Retail. Taki sklep internetowy jest następnie publikowany w zewnętrznym sklepie online zintegrowanym z programem Dynamics 365 for Retail. Zewnętrzny sklep internetowy służy jako witryna (interfejs użytkownika) dla sklepu internetowego i pozwala wybrać system obsługi klienta (CMS) i opcje interfejsu użytkownika. Dla programu Dynamics 365 for Retail dostępnych jest kilka integracji tego typu. Właściwości zdefiniowane przez Ciebie dla sklepu internetowego sterują działaniem sklepu internetowego. Na przykład można zdefiniować hierarchię kategorii nawigacji w programie Dynamics 365 for Retail i przypisać ją do sklepu internetowego. Po opublikowaniu sklepu internetowego w zewnętrznym sklepie online, hierarchia kategorii nawigacji zostanie wyświetlona w wersji online sklepu. Kupujący używają hierarchii kategorii nawigacji do przeglądania sklepu internetowego i wyszukiwania produktów. Aby utworzyć sklep internetowy, należy skonfigurować składniki umożliwiające transakcje, które mają być przetwarzane dla sklepu. Należy na przykład dodać asortymenty, zastosować atrybuty i ustawić metody płatności i wysyłki. Można również zdefiniować ceny, promocje, rabaty, umowy handlowe i warunki dostawy, które są właściwe dla sklepu internetowego. Po opublikowaniu sklepu internetowego w zewnętrznym sklepie internetowym można tworzyć katalogi produktów sieci sprzedaży dla sklepu online. Produkty z katalogu stają się listami produktów w sklepie internetowym. Gdy kupujący nabywa produkty ze sklepu internetowego, dostępne zapasy są aktualizowane i synchronizowane w kliencie. Ponadto zamówienia sprzedaży są generowane dla zakupów i wysyłane do klienta w celu realizacji zamówienia i przetwarzania.
+Retail obsługuje wiele kanałów sprzedaży detalicznej. Te kanały sprzedaży detalicznej obejmują sklepy internetowe, internetowe serwisy sprzedażowe i sklepy sieci sprzedaży (nazywane także sklepami tradycyjnymi). Sklepy internetowe zapewniają sprzedawcy detalicznemu obecność w trybie online. Dzięki temu klienci sklepu mogą robić zakupy u sprzedawcy zarówno w internecie, jak i sklepie tradycyjnym. Klienci, którzy zakupią produkty ze sklepu internetowego mogą otrzymać produkty pocztą lub odebrać je z magazynu lokalnego. Tworzenie sklepu internetowego na kliencie usługi Retail. Taki sklep internetowy jest następnie publikowany w zewnętrznym sklepie online zintegrowanym z usługą Retail. Zewnętrzny sklep internetowy służy jako witryna (interfejs użytkownika) dla sklepu internetowego i pozwala wybrać system obsługi klienta (CMS) i opcje interfejsu użytkownika. Dostępnych jest kilka integracji tego typu. Właściwości zdefiniowane przez Ciebie dla sklepu internetowego sterują działaniem sklepu internetowego. Na przykład można zdefiniować hierarchię kategorii nawigacji w usłudze Retail i przypisać ją do sklepu internetowego. Po opublikowaniu sklepu internetowego w zewnętrznym sklepie online, hierarchia kategorii nawigacji zostanie wyświetlona w wersji online sklepu. Kupujący używają hierarchii kategorii nawigacji do przeglądania sklepu internetowego i wyszukiwania produktów. Aby utworzyć sklep internetowy, należy skonfigurować składniki umożliwiające transakcje, które mają być przetwarzane dla sklepu. Należy na przykład dodać asortymenty, zastosować atrybuty i ustawić metody płatności i wysyłki. Można również zdefiniować ceny, promocje, rabaty, umowy handlowe i warunki dostawy, które są właściwe dla sklepu internetowego. Po opublikowaniu sklepu internetowego w zewnętrznym sklepie internetowym można tworzyć katalogi produktów sieci sprzedaży dla sklepu online. Produkty z katalogu stają się listami produktów w sklepie internetowym. Gdy kupujący nabywa produkty ze sklepu internetowego, dostępne zapasy są aktualizowane i synchronizowane w kliencie. Ponadto zamówienia sprzedaży są generowane dla zakupów i wysyłane do klienta w celu realizacji zamówienia i przetwarzania.
 
 ## <a name="set-up-an-online-store"></a>Konfigurowanie sklepu internetowego
 

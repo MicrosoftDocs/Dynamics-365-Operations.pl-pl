@@ -1,6 +1,6 @@
 ---
 title: Inicjowanie obsługi rozwiązania Talent
-description: Ten temat przeprowadzi użytkownika przez proces inicjacji nowego środowiska dla oprogramowania Microsoft Dynamics 365 for Talent.
+description: Ten temat przeprowadzi użytkownika przez proces inicjacji nowego środowiska dla oprogramowania Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/15/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 781487997ceb95f4e3f528f47e8ed2aa5b25fd0e
-ms.sourcegitcommit: eb501d8712212a6ed33bec1e3e2c02f994e0a724
+ms.openlocfilehash: 2bb5dd5e29559807e40b66ad7f9c061bf510ed67
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "1869943"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026148"
 ---
 # <a name="provision-talent"></a>Inicjowanie obsługi rozwiązania Talent
 
 [!include [banner](includes/banner.md)]
 
-Ten temat przeprowadzi użytkownika przez proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 for Talent. Temat te opiera się na założeniu, że użytkownik dokonał zakupu aplikacji Talent u dostawcy rozwiązań chmurowych (CSP) lub w ramach umowy na architekturę przedsiębiorstwa (EA). Jeśli masz już licencję na oprogramowanie Microsoft Dynamics 365 uwzględniającą plan aplikacji Talent, a nie jesteś w stanie wykonać kroków opisanych w tym temacie, skontaktuj się z pomocą techniczną.
+Ten temat przeprowadzi użytkownika przez proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Talent. Temat te opiera się na założeniu, że użytkownik dokonał zakupu aplikacji Talent u dostawcy rozwiązań chmurowych (CSP) lub w ramach umowy na architekturę przedsiębiorstwa (EA). Jeśli masz już licencję na oprogramowanie Microsoft Dynamics 365 uwzględniającą plan aplikacji Talent, a nie jesteś w stanie wykonać kroków opisanych w tym temacie, skontaktuj się z pomocą techniczną.
 
 Aby rozpocząć, administrator globalny powinien się zarejestrować w usłudze [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) i utworzyć nowy projekt Talent. O ile problemy z licencją nie umożliwią zainicjowania aplikacji Talent, wsparcie działu pomocy technicznej ani przedstawicieli Dynamics Service Engineering (DSE) nie jest wymagane.
 
@@ -37,8 +37,8 @@ Aby zarządzać swoimi środowiskami Talent za pomocą usługi LCS, należy najp
 
 1. Zaloguj się w usłudze [LCS](https://lcs.dynamics.com/Logon/Index) za pomocą konta używanego do subskrypcji rozwiązania Talent.
 2. Kliknij znak plus (**+**), aby utworzyć projekt.
-3. Wybierz opcję **Microsoft Dynamics 365 for Talent** jako nazwę produktu oraz wersję produktu.
-4. Wybierz metodologię **Dynamics 365 for Talent**.
+3. Wybierz opcję **Microsoft Dynamics 365 Talent** jako nazwę produktu oraz wersję produktu.
+4. Wybierz metodologię **Dynamics 365 Talent**.
 5. Wybierz opcję **Utwórz**.
 
 Aby uzyskać informacje dotyczące rozpoczęcia pracy z aplikacją talent, zapoznaj się z metodologią **Talent** utworzoną w nowym projekcie. Po utworzeniu projektu, wykonaj poniższą procedurę, aby zainicjować środowisko Talent.
@@ -51,10 +51,10 @@ Po utworzeniu projektu LCS można zainicjować aplikację Talent w środowisku.
     > [!NOTE]
     > Typ wystąpienia talentów jest niezależny od typu wystąpienia środowiska PowerApps, które zostało ustawione w centrum administracyjnym PowerApps.
 3. Zaznacz opcję **Dołącz dane demonstracyjne**, jeżeli chcesz, aby Twoje środowisko zawierało ten sam zestaw danych demonstracyjnych, jak używany w środowisku testowym aplikacji Talent. Jest to korzystne w środowiskach długoterminowych demonstracji lub szkoleń, natomiast nigdy nie należy używać tej opcji w środowisku produkcyjnym.  Należy wybrać tę opcję po wdrożeniu wstępnym. Nie można później zaktualizować istniejącego wdrożenia.
-4. Aplikacja Talent jest zawsze inicjowana w środowisku Microsoft PowerApps, aby umożliwić integrację z PoweApps i możliwość rozszerzenia. Przed kontynuowaniem przeczytaj w tym temacie sekcję „Wybieranie środowiska usługi PowerApps”. Jeśli nie masz jeszcze środowiska PowerApps, wybierz opcję Zarządzaj środowiskami w oknie usługi LCS lub przejdź do Centrum administracyjnego usługi PowerApps. Następnie wykonaj procedurę [tworzenia środowiska usługi PowerApps](https://docs.microsoft.com/powerapps/administrator/create-environment).
+4. Aplikacja Talent jest zawsze inicjowana w Microsoft PowerApps, aby umożliwić integrację z PowerApps i możliwość rozszerzenia. Przed kontynuowaniem przeczytaj w tym temacie sekcję „Wybieranie środowiska usługi PowerApps”. Jeśli nie masz jeszcze środowiska PowerApps, wybierz opcję Zarządzaj środowiskami w oknie usługi LCS lub przejdź do Centrum administracyjnego usługi PowerApps. Następnie wykonaj procedurę [tworzenia środowiska usługi PowerApps](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
     > [!NOTE]
-    > Aby wyświetlić istniejące środowiska lub utworzyć nowe, należy przypisać delegowanego administratora odpowiedzialnego za inicjację aplikacji Talent do licencji P2 środowiska PowerApps. Jeśli organizacja nie posiada licencji P2 środowiska PowerApps, można ją uzyskać u CSP lub ze [strony cennika środowiska PowerApps](https://powerapps.microsoft.com/pricing/).
+    > Aby wyświetlić istniejące środowiska lub utworzyć nowe, należy przypisać delegowanego administratora odpowiedzialnego za inicjację aplikacji Talent do licencji P2 środowiska PowerApps. Jeśli organizacja nie posiada licencji P2 środowiska PowerApps, można ją uzyskać u CSP lub ze strony [cennika PowerApps](https://powerapps.microsoft.com/pricing/).
 
 5. Wybierz środowisko, w którym ma zostać zainicjowana aplikacja Talent.
 6. Wybierz opcję **Tak**, aby zaakceptować warunki i rozpocząć wdrażanie.
@@ -68,7 +68,7 @@ Po utworzeniu projektu LCS można zainicjować aplikację Talent w środowisku.
 
     > Ponieważ w ramach subskrypcji usługi Talent są dozwolone tylko dwa środowiska LCS, można również rozważyć wykorzystanie bezpłatnego 60-dniowego [środowiska próbnego aplikacji Talent](https://dynamics.microsoft.com/talent/overview/). Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Core HR. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Nie są one przeznaczone do używania jako środowiska produkcyjne. Należy zauważyć, że po wygaśnięciu wersji próbnej środowiska po upływie 60 dni wszystkie zawarte w niej dane są usuwane nie można ich odzyskać. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
 
-## <a name="select-a-powerapps-environment"></a>Wybieranie środowiska usługi PowerApps
+## <a name="select-a-powerapps-environment"></a>Wybierz środowisko PowerApps
 
 Integracja środowisk Talent i PowerApps pozwala integrować i poszerzać stosowanie danych aplikacji Talent za pomocą narzędzi usługi PowerApps. Wiedza o przeznaczeniu środowisk usługi PowerApps nie tylko pomoże Ci tworzyć aplikacje rozszerzające funkcjonalność modułu Talent, ale może również pomóc wybrać odpowiednie środowisko podczas inicjowania obsługi modułu Talent. Aby uzyskać więcej informacji na temat środowisk PowerApps, w tym o ich zakresie, uzyskiwaniu dostępu oraz zasadach tworzenia i wybierania środowiska, zobacz [Zapowiedź środowisk PowerApps](https://powerapps.microsoft.com/blog/powerapps-environments/). 
 
@@ -76,7 +76,7 @@ Przy ustalaniu, w którym środowisku usługi PowerApps wdrożyć moduł Talent,
 
 1. W usłudze LCS wybierz opcję **Zarządzaj środowiskami** lub przejdź bezpośrednio do centrum administracyjnego usługi PowerApps, gdzie możesz obejrzeć istniejące i tworzyć nowe środowiska.
 2. Jedno środowisko aplikacji Talent jest mapowane na jedno środowisko usługi PowerApps.
-3. Środowisko usługi PowerApps „zawiera” aplikację Talent wraz z towarzyszącymi aplikacjami środowisk PowerApps, Flow i Common Data Service. Usunięcie środowiska usługi PowerApps spowoduje wykasowanie znajdujących się w nim aplikacji. Podczas inicjowania obsługi administracyjnej środowiska aplikacji Talent można wybrać opcję „Wersja próbna” lub „Wersja produkcyjna”. Wybierz typ środowiska odpowiednio do tego, jak będzie używane. 
+3. Środowisko usługi PowerApps „zawiera” aplikację Talent wraz z towarzyszącymi aplikacjami środowisk PowerApps, Flow i Common Data Service. Usunięcie środowiska usługi PowerApps spowoduje wykasowanie znajdujących się w nim aplikacji. Podczas inicjowania obsługi administracyjnej środowiska aplikacji Talent można wybrać środowisko **Wersja próbna** lub **Wersja produkcyjna**. Wybierz typ środowiska odpowiednio do tego, jak będzie używane. 
 4. Należy wziąć pod uwagę strategie integracja i testowanie danych, na przykład piaskownicę (wirtualne środowisko testowe), testy akceptacji użytkownika czy produkcję. Zalecamy rozważenie różnych skutków dla danego wdrożenia, ponieważ później nie jest łatwo zmienić mapowanie środowiska aplikacji Talent na inne środowisko usługi PowerApps.
 5. Następujące środowiska usługi PowerApps nie mogą być używane dla aplikacji Talent i będą odfiltrowane z listy wyboru w usłudze LCS:
  
@@ -89,4 +89,4 @@ Przy ustalaniu, w którym środowisku usługi PowerApps wdrożyć moduł Talent,
 6. Po określeniu odpowiedniego środowiska, które będzie używane, można kontynuować proces inicjowania obsługi. 
  
 ## <a name="grant-access-to-the-environment"></a>Przyznawanie dostępu do środowiska
-Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył. Dodatkowym użytkownikom aplikacji trzeba jednoznacznie przyznać dostęp. W celu udzielenia dostępu trzeba dodać użytkowników i przypisać im odpowiednie role w środowisku Core HR. Globalny administrator, który wdrożył aplikację Talent, musi również uruchomić aplikacje Attract i Onboard, aby dokończyć inicjalizację i umożliwić dostęp innym użytkownikom dzierżawy.  Dopóki tak się nie stanie, inni użytkownicy nie będą mieli dostępu do aplikacji Attract i Onboard i będą im wyświetlane błędy naruszenia dostępu. Aby uzyskać więcej informacji, zobacz [tworzenie nowych użytkowników](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) i [przypisywanie użytkowników do ról zabezpieczeń](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył. Dodatkowym użytkownikom aplikacji trzeba jednoznacznie przyznać dostęp. W celu udzielenia dostępu trzeba dodać użytkowników i przypisać im odpowiednie role w środowisku Core HR. Globalny administrator, który wdrożył aplikację Talent, musi również uruchomić Attract i Onboard, aby dokończyć inicjalizację i umożliwić dostęp innym użytkownikom dzierżawy.  Dopóki tak się nie stanie, inni użytkownicy nie będą mieli dostępu do Attract i Onboard i będą im wyświetlane błędy naruszenia dostępu. Aby uzyskać więcej informacji, zobacz [tworzenie nowych użytkowników](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) i [przypisywanie użytkowników do ról zabezpieczeń](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

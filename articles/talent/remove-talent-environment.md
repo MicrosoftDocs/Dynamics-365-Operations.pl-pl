@@ -1,6 +1,6 @@
 ---
 title: Usuwanie środowisk rozwiązania Talent
-description: Ten temat przeprowadzi użytkownika przez proces usuwania środowiska testowego lub produkcyjnego dla oprogramowania Microsoft Dynamics 365 for Talent.
+description: Ten temat przeprowadzi użytkownika przez proces usuwania środowiska testowego lub produkcyjnego dla oprogramowania Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/20/2017
@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 904c8eb1254a65e1627c33f14488a1a8e12f7c2b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d608ee3ad90d23279557e5e9be4d398ffac3a266
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518841"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010622"
 ---
 # <a name="remove-talent-environments"></a>Usuwanie środowisk rozwiązania Talent
 
 [!include [banner](includes/banner.md)]
 
-Ten temat przeprowadzi użytkownika przez proces usuwania środowiska testowego lub produkcyjnego dla oprogramowania Microsoft Dynamics 365 for Talent.
+Ten temat przeprowadzi użytkownika przez proces usuwania środowiska testowego lub produkcyjnego dla oprogramowania Microsoft Dynamics 365 Talent.
 
 ## <a name="removing-a-test-drive-environment"></a>Usuwanie środowiska testowego
 
 Środowiska testowe aplikacji Talent mają ustawioną zasadę wygasania po 60 dniach. Jednak właściciele środowisk testowych mają możliwość wcześniejszego zakończenia okresu próbnego, wykonując następujące kroki. 
 
-1. Przejdź do [centrum administracyjnego usługi PowerApps](https://admin.businessplatform.microsoft.com/).
+1. Przejdź do [Centrum administracyjnego usługi PowerApps](https://admin.businessplatform.microsoft.com/).
 2. Wybierz opcję **Środowiska**.
 3. Wybierz środowisko testowe, które ma nazwę o wzorcu podobnym do następującego: TestDrive -alias@domain
 4. Wybierz opcję **Usuń** i potwierdź decyzję. 
@@ -45,14 +45,14 @@ Istniejące środowisko testowe zostanie usunięte. Po usunięciu środowiska mo
 
 Temat te opiera się na założeniu, że użytkownik dokonał zakupu aplikacji Talent u dostawcy rozwiązań chmurowych (CSP) lub w ramach umowy na architekturę przedsiębiorstwa (EA). 
 
-Ponieważ środowisko aplikacji Talent jest „zawarte” w jednym środowisku usługi PowerApps, dostępne są dwie opcje do rozważenia. Pierwsza opcja polega na usunięciu całego środowiska usługi PowerApps, a druga na usunięciu tylko modułu Talent. Pierwsza opcja jest preferowana, jeżeli środowisko usługi PowerApps utworzono specjalnie do obsługi aplikacji Talent i dopiero rozpoczęto wdrażanie lub nie ma żadnych wiążących integracji. Drugą opcję należy zastosować, jeśli istnieje ustabilizowane środowisko usługi PowerApps wypełnione sformatowanymi danymi wykorzystywanymi w aplikacjach PowerApp i przepływach.
+Ponieważ środowisko aplikacji Talent jest „zawarte” w jednym środowisku usługi PowerApps, dostępne są dwie opcje do rozważenia. Pierwsza opcja polega na usunięciu całego środowiska usługi PowerApps, a druga na usunięciu tylko modułu Talent. Pierwsza opcja jest preferowana, jeżeli środowisko usługi PowerApps utworzono specjalnie do obsługi aplikacji Talent i dopiero rozpoczęto wdrażanie lub nie ma żadnych wiążących integracji. Drugą opcję należy zastosować, jeśli istnieje ustabilizowane środowisko usługi PowerApps wypełnione sformatowanymi danymi wykorzystywanymi w usługach PowerApps i przepływach.
 
 > [!Important]
-> Przed usunięciem środowiska usługi PowerApps upewnij się, że nie jest ono używane do integrowania sformatowanych danych poza zakresem modułu Talent. Należy również zwrócić uwagę, że nie można usuwać domyślnych środowisk usługi PowerApps. 
+> Przed usunięciem środowiska usługi PowerApps upewnij się, że nie jest ono używane do integrowania sformatowanych danych poza zakresem Talent. Należy również zwrócić uwagę, że nie można usuwać domyślnych środowisk usługi PowerApps. 
 
 Aby usunąć całe środowisko usługi PowerApps, w tym aplikację Talent oraz powiązane aplikacje i przepływy:
 
-1. Przejdź do [centrum administracyjnego usługi PowerApps](https://admin.businessplatform.microsoft.com/).
+1. Przejdź do [Centrum administracyjnego usługi PowerApps](https://admin.businessplatform.microsoft.com/).
 2. Wybierz opcję **Środowiska**.
 3. Zaznacz środowisko, które chcesz usunąć.
 4. Wybierz opcję **Usuń** i potwierdź decyzję. 

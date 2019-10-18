@@ -1,6 +1,6 @@
 ---
 title: Inicjowanie danych początkowych w nowych środowiskach rozwiązania Retail
-description: W tym artykule opisano dane, które są tworzone w ramach procesu inicjowania w programie Microsoft Dynamics 365 for Retail.
+description: W tym artykule opisano dane, które są tworzone w ramach procesu inicjowania w programie Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 49b21d81437ebd7cc55076444ee71ae1143bfac0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556905"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025523"
 ---
 # <a name="initialize-seed-data-in-new-retail-environments"></a>Inicjowanie danych początkowych w nowych środowiskach rozwiązania Retail
 
 [!include [banner](includes/banner.md)]
 
-W tym artykule opisano dane, które są tworzone w ramach procesu inicjowania w programie Microsoft Dynamics 365 for Retail.
+W tym artykule opisano dane, które są tworzone w ramach procesu inicjowania w programie Dynamics 365 Retail.
 
 Po wdrożeniu rozwiązania Sieć sprzedaży za pomocą Microsoft Dynamics Lifecycle Services (LCS) trzeba zainicjować konfigurację sieci sprzedaży, aby utworzyć dane konfiguracji podstawowej.
 
@@ -39,7 +39,7 @@ Po wdrożeniu rozwiązania Sieć sprzedaży za pomocą Microsoft Dynamics Lifecy
 
 Aby zainicjować konfigurację sieci sprzedaży, wykonaj następujące kroki.
 
-1. Uruchom klienta systemu Dynamics 365 for Retail.
+1. Uruchom klienta rozwiązania Retail.
 2. Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia centrali** &gt; **Parametry** &gt; **Parametry sieci sprzedaży**.
 3. Kliknij **Inicjuj**.
 
@@ -57,7 +57,7 @@ Inicjowanie tworzy następujące dane ogólne konfiguracji domyślnej:
 - Szablony weryfikacji jednostek
 - Zadania wsadowego do usuwania historii sesji Commerce Data Exchange
 
-Oprócz tego logowanie związane z branżą kart płatności (PCI) jest włączone dla bazy danych Dynamics 365 for Retail.
+Oprócz tego logowanie związane z branżą kart płatności (PCI) jest włączone dla bazy danych Retail.
 
 > [!NOTE]
 > Istnieje możliwość oddzielnego skonfigurowania modułu Transfer danych. Ta opcja pozwala zresetować konfigurację transfer danych w sieci sprzedaży do ustawień domyślnych.

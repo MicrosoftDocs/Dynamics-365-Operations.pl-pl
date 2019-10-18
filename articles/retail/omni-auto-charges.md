@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 47829a6fcae37e03510929dc46b942455016df0b
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 829fa771003de7759b237d4499aa038040b46a3f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577876"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018045"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Wielokanałowe zaawansowane opłaty automatyczne
 
@@ -34,7 +34,7 @@ Ten temat zawiera informacje o konfiguracji i wdrażaniu funkcji zaawansowanych 
 
 Po włączeniu funkcji zaawansowanych automatycznych opłat zamówienia utworzone w dowolnym obsługiwanym kanale Retail (punkt sprzedaży (POS), biuro obsługi i w trybie online), można korzystać z [automatycznych opłat](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) zdefiniowanych w aplikacji ERP dla opłat dotyczących zarówno poziomu nagłówka, jak i wiersza.
 
-W programie Dynamics 365 for Retail w wersjach wcześniejszych niż 10.0 konfiguracje [opłat automatycznych](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) są dostępne tylko dla zamówień utworzonych w kanałach e-commerce i biura obsługi. W wersji 10.0 i nowszej zamówienia utworzone w POS mogą korzystać z konfiguracji opłat automatycznych. W ten sposób dodatkowe opłaty różne mogą być systematycznie dodawane do transakcji sprzedaży.
+W programie Retail w wersjach wcześniejszych niż 10.0 konfiguracje [opłat automatycznych](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) są dostępne tylko dla zamówień utworzonych w kanałach e-commerce i biura obsługi. W wersji 10.0 i nowszej zamówienia utworzone w POS mogą korzystać z konfiguracji opłat automatycznych. W ten sposób dodatkowe opłaty różne mogą być systematycznie dodawane do transakcji sprzedaży.
 
 W wersjach wcześniejszych niż 10.0 użytkownik POS otrzymuje monit o ręczne wprowadzenie opłaty transportowej podczas tworzenia transakcji POS „wyślij wszystko” lub „wyślij wybrane”. Podczas gdy funkcje aplikacji związane z opłatami różnymi są używane w odniesieniu do tego, jak opłaty są zapisywane na zamówieniu, żadne systemowe obliczenia nie są dostarczane — obliczenia polegają na danych podanych przez użytkownika do określenia wartości opłat. Opłaty mogą być dodawane tylko jako jeden kod opłat „transportowych” i nie mogą być łatwo edytowalne ani zmieniane w POS po utworzeniu.
 

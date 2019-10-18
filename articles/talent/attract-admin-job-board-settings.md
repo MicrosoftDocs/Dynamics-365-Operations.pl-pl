@@ -1,6 +1,6 @@
 ---
-title: Włącz integrację z aplikacją Broadbean w Dynamics 365 for Talent - Attract
-description: W tym temacie opisano sposób konfigurowania rozwiązania Microsoft Dynamics 365 for Talent - Attract w celu ogłaszania zadań w zewnętrznych tablicach zadań, takich jak Broadbean.
+title: Włącz integrację z aplikacją Broadbean w Microsoft Dynamics 365 Talent - Attract
+description: W tym temacie opisano sposób konfigurowania rozwiązania Microsoft Dynamics 365 Talent - Attract w celu ogłaszania zadań w zewnętrznych tablicach zadań, takich jak Broadbean.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 2334c2bd0edccf3000f8d91651afafd4619ad0b8
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 808f91fb4b68ba9b5cee54d86423d23232df23a4
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739686"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008600"
 ---
 # <a name="enable-broadbean-integration"></a>Włączanie integracji z aplikacją Broadbean
 
 [!include[banner](../includes/banner.md)]
 
-Chcesz dotrzeć z informacją o wakacie do jak największej liczby kandydatów posiadających odpowiednie kwalifikacje. Serwisy rekrutacyjne, takie jak Broadbean mogą pomóc w osiągnięciu tych celów. Microsoft Dynamics 365 for Talent: Attract umożliwia teraz publikowanie ofert pracy na Broadbean, a Microsoft stale udostępnia nowe możliwości w tym zakresie.
+Chcesz dotrzeć z informacją o wakacie do jak największej liczby kandydatów posiadających odpowiednie kwalifikacje. Serwisy rekrutacyjne, takie jak Broadbean mogą pomóc w osiągnięciu tych celów. Microsoft Dynamics 365 Talent: Attract umożliwia teraz publikowanie ofert pracy na Broadbean, a Microsoft stale udostępnia nowe możliwości w tym zakresie.
 
 > [!NOTE]
 > - Aby opublikować oferty pracy na zewnętrznych stronach, musisz mieć [dodatek kompleksowej obsługi rekrutacji](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).

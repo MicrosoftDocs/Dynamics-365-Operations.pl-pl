@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie pracą podwykonawczą w produkcji
-description: W tym temacie opisano sposób zarządzania operacjami realizowanymi przez podwykonawców w Microsoft Dynamics 365 for Finance and Operations. Innymi słowy przedstawiono, jak operacje produkcyjne przydzielone do zasobu są zarządzane przez dostawcę.
+description: W tym temacie opisano sposób zarządzania operacjami realizowanymi przez podwykonawców w Dynamics 365 Supply Chain Management. Innymi słowy przedstawiono, jak operacje produkcyjne przydzielone do zasobu są zarządzane przez dostawcę.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ea2feccf9f74c0f035b8a46dc87eb41bdf85900a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569760"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023548"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Zarządzanie pracą podwykonawczą w produkcji
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób zarządzania operacjami realizowanymi przez podwykonawców w Microsoft Dynamics 365 for Finance and Operations. Innymi słowy przedstawiono, jak operacje produkcyjne przydzielone do zasobu są zarządzane przez dostawcę.
+W tym temacie opisano sposób zarządzania operacjami realizowanymi przez podwykonawców w Dynamics 365 Supply Chain Management. Innymi słowy przedstawiono, jak operacje produkcyjne przydzielone do zasobu są zarządzane przez dostawcę.
 
 W [procesach produkcji](production-process-overview.md) praca może być wykonywana przez zasoby, które należą lub są administrowane przez dostawców. Zazwyczaj zasoby dostawców są używane do zrównoważenia (zaspokojenia) okresowego nadmiernego popytu, który przewyższa dostępne zdolności produkcyjne własnych zasobów firmy. Dostawca może również być w stanie oferować określone [możliwości zasobów](resource-capabilities.md) lub zasoby w niższej cenie.  
 
@@ -40,7 +40,7 @@ Gdy są używane operacje lub działania podwykonawcze, wpływają na wszystkie 
 
 Dla zasobów wewnętrznych stawka kosztu stałego zazwyczaj jest przydzielana na okres. Z drugiej strony koszt zasobów podwykonawczych opiera się na cenie zakupu odnośnej usługi. Usługa jest definiowana jako osobny produkt i używana do realizacji procesów zaopatrzenia i zakupów w danej operacji podwykonawczej.  
 
-Obecnie w usłudze Microsoft Dynamics 365 for Finance and Operations nie ma osobnej encji półproduktów. W zleceniu produkcyjnym, które wymaga więcej niż jednej operacji w celu przekształcenia surowców na wyrób gotowy, wyrób gotowy jest księgowany z powrotem w zapasach dopiero w ostatniej operacji. Półprodukty powstające we wcześniejszych operacjach księguje się do pracy w toku (PWT), ale nie są one księgowane ani śledzone w zapasach. Choć marszruty i listy składowe (BOM) można podzielić na wiele mniejszych jednostek, takie podejście zwiększa liczbę produktów, list BOM i marszrut, którymi trzeba zarządzać.  
+Obecnie w usłudze Supply Chain Management nie ma osobnej encji półproduktów. W zleceniu produkcyjnym, które wymaga więcej niż jednej operacji w celu przekształcenia surowców na wyrób gotowy, wyrób gotowy jest księgowany z powrotem w zapasach dopiero w ostatniej operacji. Półprodukty powstające we wcześniejszych operacjach księguje się do pracy w toku (PWT), ale nie są one księgowane ani śledzone w zapasach. Choć marszruty i listy składowe (BOM) można podzielić na wiele mniejszych jednostek, takie podejście zwiększa liczbę produktów, list BOM i marszrut, którymi trzeba zarządzać.  
 
 Istnieją dwie metody modelowania prac podwykonawczych (podwykonawstwa) w operacjach produkcyjnych. Metody te różnią się pod względem sposobu modelowania procesu podwykonawstwa, przedstawiania półproduktów w procesie i zarządzania kontrolą kosztów.
 

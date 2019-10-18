@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 75a38b99fe0aee7d4dd386191be236e54097e867
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b7f5d61ade071e75d53d5036a47fea438d8afbe6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561278"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249432"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobilny obszar roboczy Zatwierdzenie zamówienia zakupu
 
@@ -35,13 +35,13 @@ Ten temat zawiera informacje o komórkowym obszarze roboczym **Zatwierdzenie zam
 ## <a name="overview"></a>Przegląd 
 Zamówienia zakupu wymagające zatwierdzenia przechodzą przez przepływ pracy zatwierdzania. Przepływ pracy może obejmować różne kroki, które wymagają wykonania różnych operacji przez jedną lub więcej osób. Na przykład osoba może być zobowiązana wykonać zadanie lub zatwierdzić zamówienie zakupu. 
 
-Mobilny obszar roboczy **Zatwierdzenie zamówienia zakupu** pozwala łatwo wyświetlać zamówienia zakupu i na nie reagować z urządzenia komórkowego. Ten obszar roboczy umożliwia także podejmowanie tych samych akcji przepływu pracy, jak na kliencie internetowym programu Microsoft Dynamics 365 for Finance and Operations.
+Mobilny obszar roboczy **Zatwierdzenie zamówienia zakupu** pozwala łatwo wyświetlać zamówienia zakupu i na nie reagować z urządzenia komórkowego. Ten obszar roboczy umożliwia także podejmowanie tych samych akcji przepływu pracy, jak na kliencie internetowym.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
-Wymagania wstępne różnią się w zależności od wersji programu Finance and Operations wdrożonej w organizacji.
+Wymagania wstępne różnią się w zależności od wersji programu Supply Chain Management wdrożonej w organizacji.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Warunki wstępne w przypadku korzystania z Microsoft Dynamics 365 for Finance and Operations 
-Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Finance and Operations, administrator systemu musi opublikować mobilny obszar roboczy **Zatwierdzenie zamówienia zakupu**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Warunki wstępne, jeśli jest używane Supply Chain Management 
+Jeśli w organizacji wdrożono rozwiązanie Finance and Operations, administrator systemu musi opublikować mobilny obszar roboczy **Zatwierdzenie zamówienia zakupu**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
 Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą, administrator systemu musi wykonać następujące zadania wstępne. 
@@ -75,7 +75,7 @@ Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operati
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Pobieranie i instalowanie aplikacji mobilnej
-Pobierz i zainstaluj aplikację komórkową Microsoft Dynamics 365 for Unified Operations Mobile:
+Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 
 - [Telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 - [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f740ab481b8663ecc29169eee1ead5ff23bb3f5
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866144"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251482"
 ---
 # <a name="replenishment-overview"></a>Omówienie uzupełniania zapasów
 
@@ -55,7 +55,7 @@ Uzupełnienie zapasów popytu jest obsługiwane w przypadku zamówień sprzedaż
 ## <a name="minmax-replenishment"></a>Uzupełnianie według minimalnej/maksymalnej ilości
 W uzupełnianiu według minimalnej/maksymalnej ilości zapasy są uzupełniane w taki sposób, aby znajdowały się między ustawioną minimalną i maksymalną wartością graniczną. Zazwyczaj ten proces występuje raz każdego dnia, aby pomóc zagwarantować, że wszystkie lokalizacje pobrania są wypełnione do maksymalnego poziomu przed rozpoczęciem pobierania. 
 
-Minimalne i maksymalne kwoty są ustawiane w szablonie uzupełniania zapasów. Wiele innych ustawień w szablonie przypomina ustawienia w szablonach używanych do uzupełniania popytu grupy czynności. Ten szablon powinien zawierać jeden wiersz dla każdego towaru i lokalizacji. Po uruchomieniu uzupełniania zapasów przy użyciu zadania wsadowego rozwiązanie Microsoft Dynamics 365 for Finance and Operations ocenia, czy uzupełnianie zapasów jest wymagane, używając kolejności ułożenia wierszy. 
+Minimalne i maksymalne kwoty są ustawiane w szablonie uzupełniania zapasów. Wiele innych ustawień w szablonie przypomina ustawienia w szablonach używanych do uzupełniania popytu grupy czynności. Ten szablon powinien zawierać jeden wiersz dla każdego towaru i lokalizacji. Po uruchomieniu uzupełniania zapasów przy użyciu zadania wsadowego rozwiązanie system ocenia, czy uzupełnianie zapasów jest wymagane, używając kolejności ułożenia wierszy. 
 
 Należy zwrócić uwagę, strategia uzupełniania według ilości minimalnej/maksymalnej nie może uzupełniać pustej lokalizacji, chyba że lokalizacja jest ustawiona jako stała lokalizacja dla towaru. Jeśli lokalizacja przeznaczona do uzupełniania nie jest stałą lokalizacją, system nie może ustalić, który towar powinien zostać uzupełniony. W związku z tym przed rozpoczęciem uzupełniania musi istnieć co najmniej pewna ilość dostępna.
 

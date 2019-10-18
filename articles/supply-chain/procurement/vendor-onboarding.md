@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549005"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250167"
 ---
 # <a name="onboard-vendors"></a>Wdrażanie dostawców
 [!include [banner](../includes/banner.md)]
 
 ---
 
-Nowych dostawców można wdrożyć i zarejestrować jako dostawców w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations na podstawie informacji zebranych od przedstawiciela dostawcy.
+Nowych dostawców można wdrożyć i zarejestrować jako dostawców w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management na podstawie informacji zebranych od przedstawiciela dostawcy.
 
 Ten proces składa się z następujących kroków, w których różne role wykonują określone akcje w systemie.
 
 1. **Zarządzanie danymi OData** — Import jednostek — pierwszy wniosek dotyczy rejestracji potencjalnego dostawcy. Zwykle ten wniosek pochodzi ze źródła takiego jak witryny internetowej obsługiwanej przez klienta, która umożliwia anonimowy dostęp. Dostawcy mogą rejestrować się, podając podstawowe informacje, takie jak nazwa dostawcy, uzasadnienie, numer organizacji, a także imię i nazwisko oraz adres e-mail osoby kontaktowej. Wnioski są importowane za pomocą interfejsu Zarządzanie danymi.
-2. **Strona listy wniosku o rejestrację potencjalnego dostawcy** — na podstawie informacji podanych we wniosku o rejestrację potencjalnego dostawcy pracownik działu zaopatrzenia określa, czy należy wdrożyć dostawcę. Pracownik działu zaopatrzenia wyświetla przychodzące wnioski na stronie listy **Wnioski o rejestrację potencjalnego dostawcy** w rozwiązaniu Finance and Operations.
+2. **Strona listy wniosku o rejestrację potencjalnego dostawcy** — na podstawie informacji podanych we wniosku o rejestrację potencjalnego dostawcy pracownik działu zaopatrzenia określa, czy należy wdrożyć dostawcę. Pracownik działu zaopatrzenia wyświetla przychodzące wnioski na stronie listy **Wnioski o rejestrację potencjalnego dostawcy**.
 3. **Przepływ pracy przypisywania użytkowników** — gdy pracownik działu zaopatrzenia sprawdzi informacje w otrzymanym wniosku i zdecyduje o kontynuacji procesu wdrażania, przepływ pracy dla wniosku użytkownika przypisuje nowego użytkownika, a następnie wysyła wiadomość e-mail z zaproszeniem w celu zaakceptowania osoby kontaktowej jako uwierzytelnionego użytkownika usługi Microsoft Dynamics 365.
-4. **Kreator rejestracji dostawcy** — osoba kontaktowa dostawcy loguje się do rozwiązania Finance and Operations, używając nowego konta użytkownika. Użytkownik wykonuje czynności w kreatorze rejestracji dostawcy w celu podania informacji takich jak adresy, informacje o firmie, kategorie zaopatrzenia i odpowiedzi w kwestionariuszu.
+4. **Kreator rejestracji dostawcy** — osoba kontaktowa dostawcy loguje się używając nowego konta użytkownika. Użytkownik wykonuje czynności w kreatorze rejestracji dostawcy w celu podania informacji takich jak adresy, informacje o firmie, kategorie zaopatrzenia i odpowiedzi w kwestionariuszu.
 5. **Przepływ pracy zatwierdzania** — tworzony jest wniosek o nowego dostawcę zawierający informacje o rejestracji. Ten wniosek o nowego dostawcę jest przesyłany do przepływu pracy i rozsyłany w celu sprawdzenia i zatwierdzenia.
 6. **Tworzenie danych głównych dostawcy i modyfikacja roli użytkownika** — po zatwierdzeniu wniosku o nowego dostawcę tworzony jest rekord dostawcy. Konto użytkownika osoby kontaktowej dostawcy uzyskuje uprawnienia do współpracy z dostawca lub jest dezaktywowane.
 
@@ -45,14 +45,14 @@ W poniższej tabeli przedstawiono kroki i role, które są zawarte w tym procesi
 |--------------------------|---|---|---|---|---|---|
 | System                   | Wniosek o nowego dostawcę jest importowany. | | | | | Po zaakceptowaniu wniosku o nowego dostawcę tworzony jest rekord dostawcy. |
 | Pracownik działu zaopatrzenia | | Uruchamia proces wdrażania. | | | Przegląda i akceptuje lub odrzuca wniosek o nowego dostawcę. | |
-| Administrator            | | | Tworzy użytkownika w rozwiązaniu Finance and Operations oraz systemie Microsoft Azure. | | | |
+| Administrator            | | | Utwórz użytkownika w Supply Chain Management i Microsoft Azure. | | | |
 | Osoba kontaktowa ze strony dostawcy    | | | Wysyła wiadomość e-mail do osoby kontaktowej. | Rejestruje informacje o dostawcy. | | |
 
-Aby zapoznać się szybką demonstracją procesu przygotowywania dostawcy, obejrzyj ten krótki film na YouTube: [Przygotowywanie nowego dostawcy w programie Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+Aby zapoznać się szybką demonstracją procesu przygotowywania dostawcy, obejrzyj ten krótki film na YouTube: [Przygotowywanie nowego dostawcy w Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importowanie wniosku o rejestrację potencjalnego dostawcy
 
-Wniosek o rejestrację potencjalnego dostawcy to jednostka w rozwiązaniu Finance and Operations. System można skonfigurować w celu importowania danych za pośrednictwem tej jednostki. 
+Wniosek o rejestrację potencjalnego dostawcy to jednostka w rozwiązaniu Supply Chain Management. System można skonfigurować w celu importowania danych za pośrednictwem tej jednostki. 
 
 W poniższej tabeli przedstawiono informacje, który zawiera ta jednostka i które mogą zostać zaimportowane.
 
@@ -65,18 +65,18 @@ W poniższej tabeli przedstawiono informacje, który zawiera ta jednostka i któ
 | Imię osoby kontaktowej.  | Imię osoby, która zostanie zaproszona do zarejestrowania informacji o dostawcy. |
 | Drugie imię osoby kontaktowej | Drugie imię osoby, która zostanie zaproszona do zarejestrowania informacji o dostawcy. |
 | Nazwisko osoby kontaktowej   | Nazwisko osoby, która zostanie zaproszona do zarejestrowania informacji o dostawcy. |
-| Adres e-mail do osoby kontaktowej       | Adres e-mail, który będzie używany do tworzenia nowego użytkownika w rozwiązaniu Finance and Operations i zostanie zarejestrowany na koncie Azure Active Directory (Azure AD) dzierżawcy. |
+| Adres e-mail do osoby kontaktowej       | Adres e-mail, który będzie używany do tworzenia nowego użytkownika w rozwiązaniu Supply Chain Management i zostanie zarejestrowany na koncie Azure Active Directory (Azure AD) dzierżawcy. |
 | Data przesłania               | Data utworzenia wniosku w systemie zewnętrznym. |
-| Firma                 | Firma, w której dostawca składa wniosek o przyjęcie. Ta wartość musi być kodem firmy, która została zarejestrowana w rozwiązaniu Finance and Operations. Jeśli w procesie importu nie zostanie odebrana żadna wartość, stosowana jest wartość z parametrów modułu Zaopatrzenie i sourcing. |
+| Firma                 | Firma, w której dostawca składa wniosek o przyjęcie. Ta wartość musi być kodem firmy, która została zarejestrowana w rozwiązaniu Supply Chain Management. Jeśli w procesie importu nie zostanie odebrana żadna wartość, stosowana jest wartość z parametrów modułu Zaopatrzenie i sourcing. |
 | Typ dostawcy                  | Dostawcą może być organizacja lub osoba. Typ dostawcy określa ostateczny sposób jego tworzenia. |
 
 Po zaimportowaniu wniosku o rejestrację potencjalnego dostawcy jest on wyświetlany na stronie listy **Wniosek o rejestrację potencjalnego dostawcy**. Na tej stronie listy specjalista ds. zaopatrzenia może zaprosić użytkownika. Wniosek o przypisanie użytkownika jest wysyłany do przepływu pracy.
 
 ## <a name="submitting-a-prospective-vendor-user-request"></a>Przesyłanie wniosku potencjalnego użytkownika-dostawcy
 
-Celem wniosku potencjalnego użytkownika-dostawcy jest określenie osoby, która przesłała początkowy wniosek, aby mogła zalogować się do rozwiązania Finance and Operations, używając adresu e-mail podanego we wniosku o rejestrację potencjalnego dostawcy.
+Celem wniosku potencjalnego użytkownika-dostawcy jest określenie osoby, która przesłała początkowy wniosek, aby mogła zalogować się do rozwiązania Supply Chain Management, używając adresu e-mail podanego we wniosku o rejestrację potencjalnego dostawcy.
 
-Wniosek użytkownika potencjalnego użytkownika-dostawcy jest przetwarzany przez przepływ pracy wniosku użytkownika. Ten przepływ pracy komunikuje się za pomocą współpracy B2B usługi Azure AD. Tworzy w rozwiązaniu Finance and Operations użytkownika, który ma odpowiednie ustawienia zabezpieczeń.
+Wniosek użytkownika potencjalnego użytkownika-dostawcy jest przetwarzany przez przepływ pracy wniosku użytkownika. Ten przepływ pracy komunikuje się za pomocą współpracy B2B usługi Azure AD. Tworzy w rozwiązaniu Supply Chain Management użytkownika, który ma odpowiednie ustawienia zabezpieczeń.
 
 Nowi skonfigurowani użytkownicy mają następujące role zabezpieczeń:
 
@@ -89,7 +89,7 @@ Aby uzyskać ogólne informacje o konfiguracji wiadomości e-mail i przepływu p
 
 ## <a name="vendor-registration"></a>Rejestracja dostawcy
 
-Potencjalny użytkownik-dostawca, który zaloguje się w rozwiązaniu Finance and Operations zobaczy pierwszą stronę Kreatora rejestracji dostawcy, na której może wprowadzić informacje o dostawcy.
+Potencjalny użytkownik-dostawca, który zaloguje się w rozwiązaniu Supply Chain Management zobaczy pierwszą stronę Kreatora rejestracji dostawcy, na której może wprowadzić informacje o dostawcy.
 
 Kreator uwzględnia konfigurację wniosku o nowego dostawcę. Kraj lub region, w którym dostawca prowadzi działalność określa, jakie informacje są wymagane w kreatorze i jakie informacje są obowiązkowe.
 
@@ -119,7 +119,7 @@ Wnioski o nowego dostawcę są dostępne na stronie na stronie **Żądania użyt
 
 Wniosek o nowego dostawcę zawiera informacje wprowadzone przez potencjalnego użytkownika-dostawcę w kreatorze rejestracji dostawcy.
 
-Wniosek umożliwia sprawdzenie informacji o dostawcy i określenie czy dostawca ma zostać zarejestrowany w rozwiązaniu Finance and Operations.
+Wniosek umożliwia sprawdzenie informacji o dostawcy i określenie czy dostawca ma zostać zarejestrowany.
 
 Wniosek o nowego dostawcę należy przesłać do przepływu pracy, a następnie rozesłać do odpowiednich osób sprawdzających i zatwierdzających. Aby uzyskać podstawowe informacje o konfigurowania przepływu pracy zobacz [Przepływy pracy dla zaopatrzenia i sourcingu](procurement-sourcing-workflows.md).
 
@@ -141,7 +141,7 @@ Po zatwierdzeniu wniosku o nowego dostawcę następuje utworzenie konta dostawcy
 
 Przed zatwierdzeniem wniosku o nowego dostawcę na stronie **Nowy dostawca** na skróconej karcie **Ogólne**wybierz opcję **Grupa dostawców**, aby wybrać grupę dostawców.
 
-Jeżeli potencjalny użytkownik-dostawca ma mieć dostęp do rozwiązania Finance and Operations jako użytkownik współpracujący z dostawcą, który go reprezentuje, ustaw uprawnienie dostępu współpracy z dostawcą na **Tak**. Aby dezaktywować konto użytkownika, które potencjalnego dostawca użył do rejestrowania, ustaw uprawnienie na **Nie**.
+Jeżeli potencjalny użytkownik-dostawca ma mieć dostęp do rozwiązania Supply Chain Management jako użytkownik współpracujący z dostawcą, który go reprezentuje, ustaw uprawnienie dostępu współpracy z dostawcą na **Tak**. Aby dezaktywować konto użytkownika, które potencjalnego dostawca użył do rejestrowania, ustaw uprawnienie na **Nie**.
 
 Jeżeli uprawnienie dostępu współpracy z dostawcą jest ustawione na **Tak**, po zatwierdzeniu wniosku o nowego dostawcę przesyłany jest wniosek o modyfikację ról użytkownika tak, aby miał on role zdefiniowane dla typu **Dostawca** w obszarze **Role zewnętrzne**. Jeśli to uprawnienie jest ustawione na **Nie**, po zatwierdzeniu wniosku o nowego dostawcę wysyłany jest wniosek o dezaktywację użytkownika. W takim przypadku należy skonfigurować przepływ pracy dezaktywowania wniosku użytkownika.
 

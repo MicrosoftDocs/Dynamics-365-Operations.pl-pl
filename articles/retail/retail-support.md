@@ -1,6 +1,6 @@
 ---
-title: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 for Retail
-description: W tym artykule wyjaśniono, jak uzyskać pomoc dotyczącą aplikacji Microsoft Dynamics 365 for Retail.
+title: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 Retail
+description: W tym artykule wyjaśniono, jak uzyskać pomoc dotyczącą Microsoft Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 225b39bb03fa3bbd0b3c3a24e4eb09a114d01904
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577851"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025013"
 ---
-# <a name="get-support-for-dynamics-365-for-retail"></a>Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 for Retail
+# <a name="get-support-for-dynamics-365-retail"></a>Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 Retail
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule wyjaśniono, jak uzyskać pomoc dotyczącą aplikacji Dynamics 365 for Retail.
+W tym artykule wyjaśniono, jak uzyskać pomoc dotyczącą aplikacji Dynamics 365 Retail.
 
 ## <a name="contact-support"></a>Skontaktuj się z pomocą techniczną
 
@@ -48,7 +48,7 @@ Aby uzyskać pomoc techniczną dotyczącą aplikacji Retail, skorzystaj z zasob�
 <tbody>
 <tr>
 <td>Kierowanie pytań do społeczności.</td>
-<td>Przejdź do strony społeczności użytkowników rozwiązania <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a>, gdzie znajdziesz odpowiedzi na pytania udzielane przez członków społeczności użytkowników systemu Dynamics.</td>
+<td>Przejdź do strony społeczności użytkowników rozwiązania <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a>, gdzie znajdziesz odpowiedzi na pytania udzielane przez członków społeczności użytkowników systemu Dynamics.</td>
 </tr>
 <tr>
 <td>Używanie narzędzia Wyszukiwanie problem.</td>
@@ -74,7 +74,7 @@ Aby uzyskać pomoc techniczną dotyczącą aplikacji Retail, skorzystaj z zasob�
 W razie pytań technicznych związanych z logowaniem i uzyskiwaniem dostępu do witryny CustomerSource, szkoleniami internetowymi, wyszukiwaniem, bazą wiedzy, pobieraniem plików lub błędami na stronach i błędami systemowymi przejdź do <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">strony pomocy technicznej dla witryn sieci web</a>.</td>
 </tr>
 <tr>
-<td>Uzyskiwanie pomocy w sprawie pytań dotyczących licencji na oprogramowanie Retail lub Finance and Operations.</td>
+<td>Uzyskiwanie pomocy na temat licencjonowania.</td>
 <td>Skontaktuj się z partnerem, odsprzedawcą hurtowym (LAR) lub przedstawicielem handlowym firmy Microsoft.</td>
 </tr>
 <tr>
