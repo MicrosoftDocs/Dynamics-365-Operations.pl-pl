@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie produktów detalicznych
-description: W tym artykule opisano, jak konfigurować produkty sieci sprzedaży w programie Microsoft Dynamics 365 for Retail.
+description: W tym artykule opisano, jak konfigurować produkty sieci sprzedaży w programie Dynamics 365 Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,22 +19,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 991546424a95463315eaa73c2776d0defe66def5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 74fa3a87ac2993adca3edf003bbc39371ce8e289
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546273"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024782"
 ---
 # <a name="set-up-retail-products"></a>Konfigurowanie produktów detalicznych
 
 [!include [banner](includes/banner.md)]
 
-W tym artykule opisano, jak konfigurować produkty sieci sprzedaży w programie Microsoft Dynamics 365 for Retail.
+W tym artykule opisano, jak konfigurować produkty sieci sprzedaży w programie Dynamics 365 Retail.
 
-Aby móc odsprzedawać produkty w kanałach sprzedaży detalicznej, musisz utworzyć i skonfigurować te produkty w rozwiązaniu Dynamics 365 for Retail. Handel detaliczny używa funkcji produktów w programie Dynamics 365 for Retail do tworzenia produktów na poziomie organizacji w produkcie głównym. Można utworzyć produkty, zdefiniować ich właściwości i atrybuty oraz przypisać produkty do hierarchii kategorii sieci sprzedaży. Aby udostępnić produkty w kanałach sprzedaży detalicznej i dodać je do aktywnego asortymentu, trzeba je zwolnić dla firm, w których są dostępne. Aby skonfigurować produkty sprzedawane w kanałach sprzedaży detalicznej, należy wykonać następujące zadania.
+Aby móc odsprzedawać produkty w kanałach sprzedaży detalicznej, musisz utworzyć i skonfigurować te produkty w rozwiązaniu Dynamics 365 Retail. Retail tworzy produkty w całej organizacji, znajdujące się w danych głównych produktu. Możesz utworzyć produkty, zdefiniować ich właściwości i atrybuty oraz przypisać produkty do hierarchii kategorii sprzedaży detalicznej. Aby udostępnić produkty w kanałach sprzedaży detalicznej i dodać je do aktywnego asortymentu, trzeba je zwolnić dla firm, w których są dostępne. Aby skonfigurować produkty sprzedawane w kanałach sprzedaży detalicznej, należy wykonać następujące zadania.
 
-1. Skonfiguruj hierarchię produktów w sieci sprzedaży. Za pomocą funkcji hierarchii kategorii w programie Dynamics 365 for Retail można zdefiniować hierarchie kategorii sieci sprzedaży do grupowania i klasyfikować produktów dystrybuowanych do kanałów sprzedaży detalicznej. Atrybuty definiowane przez użytkownika i system można określać na poziomie kategorii. Następnie wszystkie produkty, które są przypisane do kategorii, dziedziczą te atrybuty. Można zdefiniować wiele hierarchii kategorii, a każdy produkt może być przypisany do wielu hierarchii. Jednak w jednej hierarchii każdy produkt może być przypisany tylko do jednej kategorii.
+1. Skonfiguruj hierarchię produktów w sieci sprzedaży. Za pomocą funkcji hierarchii kategorii w programie Retail można zdefiniować hierarchie kategorii sieci sprzedaży do grupowania i klasyfikować produktów dystrybuowanych do kanałów sprzedaży detalicznej. Atrybuty definiowane przez użytkownika i system można określać na poziomie kategorii. Następnie wszystkie produkty, które są przypisane do kategorii, dziedziczą te atrybuty. Można zdefiniować wiele hierarchii kategorii, a każdy produkt może być przypisany do wielu hierarchii. Jednak w jednej hierarchii każdy produkt może być przypisany tylko do jednej kategorii.
 2. Dodaj produkty i warianty produktów do produktu głównego. Produkty, które są dodawane do produktu głównego reprezentują globalną listę produktów. Można dodawać produkty pojedynczo ręcznie lub zaimportować dane produktów od dostawców.
 3. Wydanie produktów firmom. Tylko zatwierdzone produkty, które zostały zwolnione dla firmy mogą być dostępne dla kanałów sprzedaży detalicznej. Jeśli definiujesz produkt po raz pierwszy, definiowanie odbywa się na poziomie organizacji. Następnie można wybrać jedną lub więcej firm, do których produkty zostaną zwolnione. Produkt staje się dostępny dla wielu kanałów sprzedaży detalicznej w całej organizacji. Można użyć tej funkcji do tworzenia produktu jeden raz, dodawania i aktualizowania atrybutów i właściwości w jednym miejscu, a następnie dystrybuowania produktu wewnątrz organizacji do kanałów sprzedaży.
 4. Dodawanie produktów do asortymentu. Asortyment reprezentuje kolekcję produktów, które oferujesz w kanałach sprzedaży detalicznej. Można zdefiniować jeden lub kilka asortymentów, a każdy produkt można włączyć do jednego lub większej liczby asortymentów. Aby przypisać produkty do kanałów sprzedaży, należy przypisać asortymenty do kanałów sprzedaży. Podczas tworzenia asortymentu można dodać produkty, które jeszcze nie zostały zwolnione do firmy. Trzeba jednak zwolnić produkty do firmy przed udostępnieniem ich w kanałach sprzedaży detalicznej.

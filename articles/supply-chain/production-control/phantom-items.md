@@ -1,6 +1,6 @@
 ---
 title: Towary fantomowe
-description: W tym temacie szczegółowo opisano, jak typ wiersza Fantom może być wykorzystywany w wierszach listy składowej (BOM) i formule w Microsoft Dynamics 365 for Finance and Operations.
+description: W tym temacie szczegółowo opisano, jak typ wiersza Fantom może być wykorzystywany w wierszach listy składowej (BOM) i formule w Dynamics 365 Supply Chain Management.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f01a0321740365c23cbc117be42c0a5137960af7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7c39b0ac2eb8a2293c828fee23ed6a78cb5fe2c9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843896"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250024"
 ---
 # <a name="phantom-items"></a>Towary fantomowe
 
@@ -51,7 +51,7 @@ W tej strukturze widać, że nie występują części F i G, a materiały, z kt�
 
 W przeciwieństwie do inżynieryjnej listy składowej, w której istniały dwa arkusze operacji, produkcyjna lista składowa ma tylko jeden arkusz operacji. Operacja pakowania, która była połączona z częścią G, również została przeniesiona na wyższy poziom i teraz wchodzi w skład arkusza operacji dla produktu H. Zmontowanie jednostki elektrycznej jest pierwszą operacją. Taka kolejność ma duży sens, ponieważ ta jednostka jest używana w następnej operacji, czyli zmontowaniu maszyny. Ostatnią operacją jest operacja pakowania, która zużywa dwa materiały opakowaniowe (C i D).
 
-W Microsoft Dynamics 365 for Finance and Operations przejście od inżynieryjnej listy składowej do produkcyjnej listy składowej jest realizowane za pomocą typu wiersza BOM Fantom. Jak sugeruje określenie „fantom”, części F i G znikają w trakcie przekształcania typu BOM. W tym przykładzie wiersz typu Fantom jest stosowany do wierszy BOM dla części F i G w inżynieryjnej liście składowej. Podczas tworzenia zlecenia produkcyjnego lub szarży produkcyjnej inżynieryjna lista składowa jest kopiowana do tego zlecenia/szarży. Następnie podczas szacowania zlecenia następuje przejście od inżynieryjnej listy składowej do produkcyjnej listy składowej, jak pokazano na poprzedniej ilustracji. Z arkusza operacji na drugiej ilustracji materiały opakowaniowe C i D są wprowadzane dla operacji. 
+W przejście od inżynieryjnej listy BOM do produkcyjnej listy BOM jest realizowane za pomocą typu wiersza BOM Fantom. Jak sugeruje określenie „fantom”, części F i G znikają w trakcie przekształcania typu BOM. W tym przykładzie wiersz typu Fantom jest stosowany do wierszy BOM dla części F i G w inżynieryjnej liście składowej. Podczas tworzenia zlecenia produkcyjnego lub szarży produkcyjnej inżynieryjna lista składowa jest kopiowana do tego zlecenia/szarży. Następnie podczas szacowania zlecenia następuje przejście od inżynieryjnej listy składowej do produkcyjnej listy składowej, jak pokazano na poprzedniej ilustracji. Z arkusza operacji na drugiej ilustracji materiały opakowaniowe C i D są wprowadzane dla operacji. 
 
 ## <a name="multilevel-phantom-bom-structures"></a>Wielopoziomowy fantomowe struktury BOM
 Typ wiersza Fantom może być wykorzystywany w wielopoziomowych strukturach BOM, jak pokazano na poniższej ilustracji. Na tej ilustracji (a) to BOM dla produktu G, a (b) to arkusz marszruty dla części E i F oraz produktu G. 

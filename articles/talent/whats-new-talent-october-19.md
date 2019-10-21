@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (16 października 2018 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent Core HR.
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent - Core HR (16 października 2018 r.)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 10/22/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-10-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 51cfe8a92d1ac611e946934fe8ebbc99053788f1
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 13e89faa3f8470125010ccdb40a6f01c0a9c4fe7
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518859"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008784"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-october-19-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (19 października 2018 r.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-october-19-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent: Core HR (19 października 2018 r.)
 
 [!include[banner](includes/banner.md)]
 
@@ -49,7 +49,7 @@ Dostęp do tej funkcjonalności jest kontrolowany przez następujący obowiązek
 Następujące aktualizacje zostały wprowadzone w tej wersji:
 - Zmieniono czynności zatrudniania pracownika, tak aby nie „zawieszał się” w stanie **Przepływ pracy zakończony**.
 - Teraz można utworzyć rekord zatrudnienia bez daty rozpoczęcia zatrudnienia.
-- W aplikacji Dynamics 365 for Talent data rejestracji na szkolenie wyświetlane w oknie Samoobsługa pracownika etatowego teraz jest korygowana o strefę czasową.
+- W aplikacji Dynamics 365 Talent data rejestracji na szkolenie wyświetlana w oknie Samoobsługa pracownika etatowego teraz jest korygowana o strefę czasową.
 - Pliki programu Excel można importować wielokrotnie za pomocą jednostki **Pracownik etatowy** bez powodowania błędów.
 
 ## <a name="known-issue"></a>Znany problem

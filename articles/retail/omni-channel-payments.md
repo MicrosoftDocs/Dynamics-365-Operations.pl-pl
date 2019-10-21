@@ -1,6 +1,6 @@
 ---
 title: Omówienie płatności wielokanałowych
-description: W tym temacie są omówione płatności wielokanałowe w programie Microsoft Dynamics 365 for Retail.
+description: W tym temacie są omówione płatności wielokanałowe w programie Dynamics 365 Retail.
 author: rubendel
 manager: AnnBe
 ms.date: 05/12/2019
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 78a4538d5b4854a4c87417acc156bcfb7c0da01d
-ms.sourcegitcommit: 45eeca48c6cb4f3f94d61392f4f99a52dc443a97
+ms.openlocfilehash: b16b0cedaa2b908d2707eb7076f82f3513d00b62
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "1606199"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017581"
 ---
 # <a name="omni-channel-payments-overview"></a>Omówienie płatności wielokanałowych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie są omówione płatności wielokanałowe w programie Microsoft Dynamics 365 for Retail. Zawiera pełną listę obsługiwanych scenariuszy, informacje o funkcjonalności, konfiguracji i rozwiązywaniu problemów oraz opisy typowych problemów.
+W tym temacie są omówione płatności wielokanałowe w programie Dynamics 365 Retail. Zawiera pełną listę obsługiwanych scenariuszy, informacje o funkcjonalności, konfiguracji i rozwiązywaniu problemów oraz opisy typowych problemów.
 
 ## <a name="key-terms"></a>Kluczowe terminy
 

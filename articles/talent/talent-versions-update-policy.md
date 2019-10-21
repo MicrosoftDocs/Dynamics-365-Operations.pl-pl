@@ -1,6 +1,6 @@
 ---
 title: Wymagania systemowe i zasady aktualizacji rozwiązania Talent
-description: W tym temacie podano wymagania dotyczące programu Dynamics 365 for Talent. Opisano w nim także zasady aktualizacji.
+description: W tym temacie podano wymagania dotyczące programu Dynamics 365 Talent. Opisano w nim także zasady aktualizacji.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/02/2019
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6c881bf25e7145228ccf7ef73a7ef3637c115a49
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741782"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024167"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Wymagania systemowe i zasady aktualizacji rozwiązania Talent
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano wymagania dotyczące rozwiązania Microsoft Dynamics 365 for Talent, w tym Attract, Onboard i Core HR. Zawiera także opis krajów i regionów, w których jest dostępne rozwiązanie Talent oraz informacje na temat języków i lokalizacji danych aplikacji Talent. Ponadto temat ten zawiera zasady aktualizacji dla aplikacji Talent.
+W tym temacie opisano wymagania dotyczące rozwiązania Microsoft Dynamics 365 Talent, w tym Attract, Onboard i Core HR. Zawiera także opis krajów i regionów, w których jest dostępne rozwiązanie Talent oraz informacje na temat języków i lokalizacji danych aplikacji Talent. Ponadto temat ten zawiera zasady aktualizacji dla aplikacji Talent.
 
 ## <a name="supported-web-browsers"></a>Obsługiwane przeglądarki
 
-Aplikacja internetowa Microsoft Dynamics 365 for Talent może działać w każdej z poniższych przeglądarek w kombinacji z określonym systemem operacyjnym: 
+Microsoft Dynamics 365 Talent może działać w każdej z poniższych przeglądarek w kombinacji z określonym systemem operacyjnym: 
 
 *   Microsoft Edge (najnowsza publicznie dostępna wersja) w systemie Windows 10
 *   Internet Explorer 11 w systemach Windows 10, Windows 8.1 lub Windows 7
@@ -46,11 +46,11 @@ Aby znaleźć najnowszą wersję dla każdej przeglądarki, przejdź do witryny 
 > * Edytor przepływu pracy jest uruchamiany jako aplikacja ClickOnce. Aplikacje ClickOnce są obsługiwane tylko w przeglądarkach Microsoft Edge i Internet Explorer (w obsługiwanych wersjach systemu Microsoft Windows). Aplikacja ClickOnce edytora przepływu pracy wymaga zgodnego 64-bitowego systemu operacyjnego.
 > * Aby wyświetlać podgląd plików PDF, zalecamy używanie nowoczesnych przeglądarek, takich jak Microsoft Edge (nowszej publicznie dostępnej wersji) w systemie Windows 10 lub Google Chrome (nowszej publicznie dostępnej wersji) w systemach Windows 10, Windows 8.1, Windows 8 i Windows 7 lub na tablecie Google Nexus 10.
 >   Wymagania sieciowe
-> * Program Dynamics 365 for Talent jest zaprojektowany dla sieci o opóźnieniu nieprzekraczającym 250-300 milisekund (ms). Jest to opóźnienie na drodze od klienta przeglądarkowego do centrum danych Microsoft Azure zawierającego usługę Dynamics 365 for Talent. Zaleca się przetestowanie opóźnienia w sieci na stronie [www.azurespeed.com](https://www.azurespeed.com "Test opóźnienia w łączności z usługą Azure").
-> * Wymagania dotyczące przepustowości dla usługi Dynamics 365 for Talent zależą od konkretnego scenariusza. Większość typowych scenariuszy wymaga przepustowości powyżej 50 kilobajtów na sekundę (KB/s).
+> * Program Dynamics 365 Talent jest zaprojektowany dla sieci o opóźnieniu nieprzekraczającym 250-300 milisekund (ms). Jest to opóźnienie na drodze od klienta przeglądarkowego do centrum danych Microsoft Azure zawierającego usługę Talent. Zaleca się przetestowanie opóźnienia w sieci na stronie [www.azurespeed.com](https://www.azurespeed.com "Test opóźnienia w łączności z usługą Azure").
+> * Wymagania dotyczące przepustowości dla usługi Talent zależą od konkretnego scenariusza. Większość typowych scenariuszy wymaga przepustowości powyżej 50 kilobajtów na sekundę (KB/s).
 > 
 > [!WARNING]
-> Nie obliczaj wymagań dotyczących przepustowości z lokalizacji klienta poprzez pomnożenie liczby użytkowników przez minimalną wymaganą przepustowość. Równoczesne użytkowanie danej lokalizacji przez wiele osób jest bardzo trudne do obliczenia. Dla odbiorców, którzy się boją, że ciężko będzie im spełnić wymagania dotyczące przepustowości, użyj wersji próbnej programu Dynamics 365 for Talent.
+> Nie obliczaj wymagań dotyczących przepustowości z lokalizacji klienta poprzez pomnożenie liczby użytkowników przez minimalną wymaganą przepustowość. Równoczesne użytkowanie danej lokalizacji przez wiele osób jest bardzo trudne do obliczenia. Dla odbiorców, którzy się boją, że ciężko będzie im spełnić wymagania dotyczące przepustowości, użyj wersji próbnej Talent.
 
 ## <a name="supported-microsoft-office-applications"></a>Obsługiwane aplikacje pakietu Microsoft Office
 
@@ -68,6 +68,6 @@ Jeśli jesteś programistą zainteresowanym tworzeniem dostosowań specyficznych
 
 ## <a name="update-policy"></a>Zasady aktualizacji
 
-Program Microsoft Dynamics 365 for Talent jest udostępniany jako rozwiązanie chmurowe. Aktualizacje usługi Dynamics 365 for Talent są dodawane w sposób ciągły i stosowane automatycznie przez firmę Microsoft.
+Talent jest udostępniany jako rozwiązanie chmurowe. Aktualizacje Talent są dodawane w sposób ciągły i stosowane automatycznie przez firmę Microsoft.
 
-Aktualizacje są publikowane regularnie i dla wszystkich środowisk. Program Dynamics 365 for Talent jest wspierany zgodnie z [zasadami cyklu życia pomocy technicznej Microsoft](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Cykl życia pomocy technicznej Microsoft"), które określają spójny i przewidywalny harmonogram dostępności wsparcia technicznego dla produktów.
+Aktualizacje są publikowane regularnie i dla wszystkich środowisk. Talent jest wspierany zgodnie z [zasadami cyklu życia pomocy technicznej Microsoft](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Cykl życia pomocy technicznej Microsoft"), które określają spójny i przewidywalny harmonogram dostępności wsparcia technicznego dla produktów.

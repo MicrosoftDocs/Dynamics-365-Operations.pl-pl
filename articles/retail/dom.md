@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie zamówieniami rozdzielonymi (DOM)
-description: W tym temacie opisano funkcję zarządzania zamówieniami rozdzielonymi (DOM) w rozwiązaniu Microsoft Dynamics 365 for Retail.
+description: W tym temacie opisano funkcję zarządzania zamówieniami rozdzielonymi (DOM) w rozwiązaniu Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 11/15/2018
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4f682e0c98ff70d526648bc50f8a5d6cb884ac93
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fee0d9257af86a734a60b469db3a006435f1d3d2
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565818"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023426"
 ---
 # <a name="distributed-order-management-dom"></a>Zarządzanie zamówieniami rozdzielonymi (DOM)
 

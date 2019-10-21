@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8138b6144cc6ba09834f2bfb61cc7334767307d6
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 45d3d962958d0487c9e65910a2dce24097a83773
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916560"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017765"
 ---
 # <a name="base-price-and-trade-agreements"></a>Podstawa ceny i umowy handlowe
 
@@ -56,7 +56,7 @@ Ta procedura poprowadzi przez proces tworzenia umów handlowych na cenę sprzeda
 24. Kliknij opcję **Utwórz umowy handlowe**.
 25. Kliknij przycisk **Nowy**.
 26. W polu **Nazwa** kliknij rozwijany przycisk, aby otworzyć wyszukiwanie.
-27. Z listy wybierz pozycję „Handel detaliczny”. W danych demonstracyjnych arkusz o nazwie „Handel detaliczny” ma domyślną relację „Cena (sprzedaż)”. Oznacza to, że wszystkie nowo tworzone wiersze domyślnie są dla umów handlowych na cenę sprzedaży.  
+27. Z listy wybierz pozycję **Handel detaliczny**. W danych demonstracyjnych arkusz o nazwie **Handel detaliczny** ma domyślną relację **Cena (sprzedaż)**. Oznacza to, że wszystkie nowo tworzone wiersze domyślnie są dla umów handlowych na cenę sprzedaży.  
 28. W **okienku akcji** kliknij pozycję **Wiersze**.
 29. W polu **Kod konta** wybierz opcję „Grupa”.
 30. W polu **Wybór konta** kliknij rozwijany przycisk, aby otworzyć wyszukiwanie.

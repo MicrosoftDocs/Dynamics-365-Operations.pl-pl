@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a74a1275f08e3dba60a1002a102e143eb37fcd9a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 70fef8035fce7792b44a3d96d1fba342eae88541
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548561"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024759"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Rejestrator zadań i Pomoc dla aplikacji Retail Modern POS (MPOS) i Cloud POS
 
@@ -34,11 +34,11 @@ W tym temacie opisano, jak korzystać z Rejestratora zadań w programach Retail 
 
 ## <a name="overview"></a>Przegląd
 
-Rejestrator zadań w programie Retail Modern POS lub Cloud POS jest to nowe rozwiązanie, utworzone z myślą o krótkim czasie reakcji. Zawiera elastyczny interfejs programowania aplikacji (API) umożliwiający rozszerzenie i bezproblemową integrację z użytkownikami zapisów procesu biznesowego. Ponadto integracja Rejestratora zadań z narzędziem do modelowania procesów biznesowych (BPM) w usługach Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) została wyeksponowana. W związku z tym użytkownicy mogą nadal tworzyć diagramy procesów biznesowych na podstawie zapisów w celu analizy i projektowania swoich zgłoszeń.
+Rejestrator zadań w programie Retail Modern POS lub Cloud POS jest to nowe rozwiązanie, utworzone z myślą o krótkim czasie reakcji. Zawiera elastyczny interfejs programowania aplikacji (API) umożliwiający rozszerzenie i bezproblemową integrację z użytkownikami zapisów procesu biznesowego. Ponadto integracja Rejestratora zadań z narzędziem do modelowania procesów biznesowych (BPM) w usługach Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) została wyeksponowana. W związku z tym użytkownicy mogą nadal tworzyć diagramy procesów biznesowych na podstawie zapisów w celu analizy i projektowania swoich zgłoszeń.
 
 ## <a name="architecture"></a>Architektura
 
-Rejestrator zadań może rejestrować działania użytkownika na komputerze klienckim z precyzyjną dokładnością. Każdy element sterujący jest wyposażony w narzędzie do powiadamiania Rejestratora zadań o wykonaniu czynności przez użytkownika. Element sterujący powiadamia Rejestrator zadań o wystąpieniu zdarzenia i przekazuje wszelkie stosowne informacje o odpowiedniej akcji użytkownika w czasie rzeczywistym. Z tych informacji Rejestrator zadań uzyskuje dane o typie akcji użytkownika (na przykład kliknięciu przycisku, wprowadzeniu wartości lub nawigowaniu) oraz wszelkie dane związane z daną akcją użytkownika (na przykład wartość i typ danych wejściowych, kontekst formularza lub rekordu). Rejestrator zachowuje informacje z wystarczającą ilością szczegółów w celu zagwarantowania, że odtwarzanie nagrania może przeprowadzić zarejestrowane akcje dokładnie tak samo, jak były wykonywane przez użytkownika. (Funkcja odtwarzania nie została jeszcze zaimplementowana w programie Retail Modern POS lub Cloud POS.)
+Rejestrator zadań może rejestrować działania użytkownika na komputerze klienckim z precyzyjną dokładnością. Każdy element sterujący jest wyposażony w narzędzie do powiadamiania Rejestratora zadań o wykonaniu czynności przez użytkownika. Element sterujący powiadamia Rejestrator zadań o wystąpieniu zdarzenia i przekazuje wszelkie stosowne informacje o odpowiedniej akcji użytkownika w czasie rzeczywistym. Z tych informacji Rejestrator zadań uzyskuje dane o typie akcji użytkownika (na przykład kliknięciu przycisku, wprowadzeniu wartości lub nawigowaniu) oraz wszelkie dane związane z daną akcją użytkownika (na przykład wartość i typ danych wejściowych, kontekst formularza lub rekordu). Rejestrator zachowuje informacje z wystarczającą ilością szczegółów w celu zagwarantowania, że odtwarzanie nagrania może przeprowadzić zarejestrowane akcje dokładnie tak samo, jak były wykonywane przez użytkownika. (Funkcja odtwarzania nie została jeszcze zaimplementowana w programie Retail modern POS lub Cloud POS.)
 
 ## <a name="basic-configuration"></a>Konfiguracja podstawowa
 
@@ -138,7 +138,7 @@ Tekst wprowadzony w polu **Notatki** pojawi się *pod* tekstem kroku w przewodni
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Pomoc w programie Retail Modern POS i Cloud POS
 
-Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy programu Retail Modern POS i Cloud POS, by mogły być wyświetlane jako tekst, należy zapisać nagrania zadań w bibliotece BPM, a następnie zaktualizować parametry systemu Pomocy, aby wskazywał bibliotekę BPM. Aby uzyskać więcej informacji, zobacz [Łączenie z systemem Pomocy](../fin-and-ops/get-started/help-connect.md). Pomoc programu Retail Modern POS i Cloud POS wyszukuje usługi LCS w czasie rzeczywistym. Przeszukuje wszystkie biblioteki BPM wybrane w parametrach programu Microsoft Dynamics 365 for Retail — Pomoc i przedstawia odpowiednie wyniki. Aby uzyskać dostęp do menu **Pomoc**, kliknij przycisk **Pomoc** (znak zapytania) znajdujący się u góry ekranu, a następnie w polu wyszukiwania wpisz nazwę procesu i kliknij przycisk wyszukiwania.
+Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy programu Retail Modern POS i Cloud POS, by mogły być wyświetlane jako tekst, należy zapisać nagrania zadań w bibliotece BPM, a następnie zaktualizować parametry systemu Pomocy, aby wskazywał bibliotekę BPM. Aby uzyskać więcej informacji, zobacz [Łączenie z systemem Pomocy](../fin-and-ops/get-started/help-connect.md). Pomoc programu Retail Modern POS i Cloud POS wyszukuje usługi LCS w czasie rzeczywistym. Przeszukuje wszystkie biblioteki BPM wybrane w parametrach systemu Retail — Pomoc i przedstawia odpowiednie wyniki. Aby uzyskać dostęp do menu **Pomoc**, kliknij przycisk **Pomoc** (znak zapytania) znajdujący się u góry ekranu, a następnie w polu wyszukiwania wpisz nazwę procesu i kliknij przycisk wyszukiwania.
 
 [![Przycisk Pomoc](./media/help.jpg)](./media/help.jpg)
 

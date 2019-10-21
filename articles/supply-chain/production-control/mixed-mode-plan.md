@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e6a896b2a073e189b956ef189f63908f08606ed
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9186d69e86798a5bd6541432518e407eff5700cc
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543429"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250056"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Planowanie w trybie mieszanym — łączenie sourcingu dyskretnego, procesowego i produkcji oszczędnej
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o mieszanym trybie planowania. W planowaniu w trybie mieszanym można modelować łańcuch dostaw na podstawie przepływu materiałów. Microsoft Dynamics 365 for Finance and Operations zapewnia, że przepływ materiałów następuje zgodnie z modelami, bez względu na wybrane zasady dostawy (karty Kanban, zlecenia produkcyjne, zamówienia zakupu, szarże produkcyjne lub zamówienia przeniesienia). 
+Ten temat zawiera informacje o mieszanym trybie planowania. W planowaniu w trybie mieszanym można modelować łańcuch dostaw na podstawie przepływu materiałów. Dynamics 365 Supply Chain Management zapewnia, że przepływ materiałów następuje zgodnie z modelami, bez względu na wybrane zasady dostawy (karty Kanban, zlecenia produkcyjne, zamówienia zakupu, szarże produkcyjne lub zamówienia przeniesienia). 
 
 Można wybrać ogólną strategię dostarczania produktów, niezależnie od struktury produktów.  
 
@@ -39,7 +39,7 @@ Na przykład możesz mieć formant Kanban w montażu, w którym materiały są p
 Szczegółowość zasad zaopatrzenia, które są używane w planowaniu głównym, zależy od wymiarów magazynowych włączonych jako wymiary zapotrzebowania. Aby włączyć planowanie główne do kontrolowania uzupełniania zapasów i dostaw w różnego rodzaju lokalizacjach (np. oddzielając przestrzeń produkcyjną dla różnych jednostek produkcyjnych lub oddzielając różne typy magazynów materiałów i gotowych wyrobów), najlepiej jest włączyć jako wymiary zapotrzebowania opcje Oddział i Magazyn. Magazyn może też być pomijany jako wymiar zapotrzebowania. W takim przypadku podczas korzystania z zarządzania magazynem wszystkie przeniesienia wewnątrz magazynu są kontrolowane przez pracę magazynu, a wszystkie przeniesienia między magazynami mogą być kontrolowane przez karty Kanban wypłat.
 
 ## <a name="supply-policies"></a>Zasady dostaw
-Mieszany tryb planowania w programie Finance and Operations kontroluje sposób dostarczania produktów i, na podstawie podaży, określa, jak są wydawane zapotrzebowania pochodne (zużycie towarów z listą składową \[BOM\]). Na podstawie typu zamówienia system automatycznie pozyskuje materiałów według wymagań.  
+Mieszany tryb planowania kontroluje sposób dostarczania produktów i, na podstawie podaży, określa, jak są wydawane zapotrzebowania pochodne (zużycie towarów z listą składową \[BOM\]). Na podstawie typu zamówienia system automatycznie pozyskuje materiałów według wymagań.  
 
 Zasady dostawy można zdefiniować na poziomie produktu lub dowolnym poziomie szczegółowości, który zaspokaja konkretne wymagania. Poziom szczegółowości zasad dostaw określa się na stronie **Domyślne ustawienia zamówień**.  
 
@@ -47,9 +47,9 @@ Zasady dostaw mogą być kontrolowane przez produkt, wymiary towarów (konfigura
 
 Domyślny typ zamówienia określa, co jest generowane w planowaniu głównym.  
 
-Niezależnie od tego, jak jest modelowany łańcuch dostaw, program Finance and Operations obsługuje kombinację zasad dostaw używanych w organizacji. Można mieść zlecenia produkcyjne pozyskiwane z kart Kanban. Można też mieć zamówienie partii, które wymaga produktu dostarczanego przez przeniesienia lub karty Kanban.  
+Niezależnie od tego, jak jest modelowany łańcuch dostaw, Supply Chain Management obsługuje kombinację zasad dostaw używanych w organizacji. Można mieść zlecenia produkcyjne pozyskiwane z kart Kanban. Można też mieć zamówienie partii, które wymaga produktu dostarczanego przez przeniesienia lub karty Kanban.  
 
-Program Finance and Operations sprawdza, czy przepływ materiałów postępuje zgodnie z modelem.  
+Supply Chain Management sprawdza, czy przepływ materiałów postępuje zgodnie z modelem.  
 
 Magazyn pobrania materiału jest przydzielany dynamicznie w czasie wykonywania po zdefiniowaniu zasad dostaw.  
 
@@ -62,7 +62,7 @@ Zużycie zasobów jest ważną funkcją. Zużycie zasobów umożliwia dynamiczny
 
 Zużycie zasobów wymaga, aby magazyn, z którego materiały są pobierane, był przypisywany na podstawie sposobu dostarczania produktu. Innymi słowy w czasie wykonywania system znajduje zasoby, które powinny być używane do produkcji. W oparciu o te zasoby system znajduje magazyn pobrania.  
 
-Dla pracy, która jest niezależna od zasad dostaw, nie trzeba zmieniać informacji na liście BOM w przypadku zmiany dostawy. W przypadku zmian „ad hoc” program Finance and Operations zapewnia, że materiały są pozyskiwane z odpowiedniego magazynu.
+Dla pracy, która jest niezależna od zasad dostaw, nie trzeba zmieniać informacji na liście BOM w przypadku zmiany dostawy. W przypadku zmian „ad hoc” Supply Chain Management zapewnia, że materiały są pozyskiwane z odpowiedniego magazynu.
 
 ## <a name="process-manufacturing--the-production-type"></a>Produkcja procesowa — typ produkcji
 Aby zapewnić pełną elastyczność w trybie mieszanym, zalecamy używanie produkcyjnych list BOM dla wszystkich produktów. Można następnie używać tych zleceń produkcyjnych, kart Kanban, zleceń przeniesienia lub zamówień zakupu do dostarczenia produktu. Dla produkcji procesowej należy użyć typu produkcji **Formuła**, **Produkt towarzyszący**, **produkt uboczny** lub **Element planowania**. Karty Kanban i zamówienia produkcyjne nie mogą być używane do tych typów produkcji.

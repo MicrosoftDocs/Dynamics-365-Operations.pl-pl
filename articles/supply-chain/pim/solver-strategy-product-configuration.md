@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4a548d3536bbc0056ee22c07c464af062029da81
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560308"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250583"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Strategia zmiennej na potrzeby konfiguracji produktów
 
@@ -45,7 +45,7 @@ Koncepcja strategii doboru solverów obejmuje obecnie następujące strategie:
 
 Model konfiguracji produktu może być sformułowany jako [problem spełnienia ograniczeń (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf). Oprogramowanie Microsoft Solver Foundation (MSF) zawiera dwa rodzaje strategii doboru solverów przeznaczone do rozwiązywania problemów CSP, które można stosować do modeli konfiguracji produktów. Te strategie doboru solverów opierają się na [algorytmach heurystycznych](https://techterms.com/definition/heuristic), które służą do określania kolejności, w jakiej zmienne problemów CSP są brane pod uwagę podczas rozwiązywania problemów. Algorytmy heurystyczne mogą znacząco wpływać na wydajność podczas rozwiązywania problemu lub klasy problemów.
 
-W programie Finance and Operations strategia doboru solverów dla modeli konfiguracji produktu określa, który solver jest używany w algorytmach heurystycznych. W strategiach **Domyślnie**, **Najpierw domeny minimalne** i **Od góry do dołu** są używane dwa solvery ze środowiska MSF, podczas gdy strategia **Z3** wykorzystuje solver Z3. 
+Strategia doboru solverów dla modeli konfiguracji produktu określa, który solver jest używany w algorytmach heurystycznych. W strategiach **Domyślnie**, **Najpierw domeny minimalne** i **Od góry do dołu** są używane dwa solvery ze środowiska MSF, podczas gdy strategia **Z3** wykorzystuje solver Z3. 
 
 Analizy faktycznych wdrożeń u klientów pokazały, że zmiana strategii doboru solverów dla modelu konfiguracji produktu może skrócić czas reakcji z minut do milisekund. Z tego względu warto poświęcić czas na wypróbowanie różnych strategii zmiennej i znalezienie optymalnej strategii dla używanego modelu konfiguracji produktów.
 

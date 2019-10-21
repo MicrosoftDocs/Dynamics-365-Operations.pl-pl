@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (26 marca 2019 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent.
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (26 marca 2019 r.)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/26/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24070d1efa3299c378d7a4a328531817a598d272
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741574"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023891"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-26-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (26 marca 2019 r.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (26 marca 2019 r.)
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 for Talent.
+W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Zmiany w Attract
 
@@ -46,14 +46,14 @@ Teraz można osadzać obrazy bezpośrednio w działaniach. Oprócz możliwości 
 
 [![Mapowanie](./media/embedimages.png)](./media/embedimages.png)
 
-Ta wersja zawiera poprawki błędów dla programu Dynamics 365 Talent: Onboard.
+Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Zmiany w Core HR
 **Kompilacja 8.1.2210**
 
 ### <a name="custom-field-support-available-for-select-entities-in-common-data-service"></a>Dostępna jest niestandardowa pomoc dotycząca pól dla wybranych pozycji w Common Data Service 
 
-Poniższe jednostki Common Data Service obsługują teraz pola odbiorcy utworzone w Dynamics 365 for Talent:
+Poniższe jednostki Common Data Service obsługują teraz pola odbiorcy utworzone w Talent:
 
 - Pracownik
 - Pochodzenie etniczne
@@ -72,7 +72,7 @@ W związku z tą zmianą strona historii zatrudnienia wyświetla teraz rekordy z
 W tej wersji plany stałych wynagrodzeń są wyświetlane, gdy uprawnienia użytkownika według firmy są ograniczane ze względów bezpieczeństwa. Wszystkie ustawienia zabezpieczeń będą obowiązywać, a plany stałych wynagrodzeń będą wyświetlane dla tych firm, dla których użytkownik ma prawo dostępu. 
 
 ### <a name="cant-delete-job-records-using-open-in-excel-option-in-talent"></a>Nie można usuwać rekordów ofert pracy za pomocą opcji Otwórz w programie Excel w aplikacji Talent
-W tej wersji można teraz usuwać rekordy ofert pracy, używając opcji **Otwórz w programie Excel** w Dynamics 365 for Talent.
+W tej wersji można teraz usuwać rekordy ofert pracy, używając opcji **Otwórz w programie Excel** w aplikacji Talent.
 
 ### <a name="upgrade-to-common-data-service"></a>Uaktualnianie do rozwiązania Common Data Service
 Zbliżają się terminy uaktualniania do Common Data Service dla aplikacji. Zaloguj się do Centrum administracyjnego usługi PowerApps, aby określić, czy baza danych wymaga uaktualnienia. Aby uzyskać więcej informacji dotyczących terminów i niezbędne kroki w celu uaktualnienia, zobacz [uaktualnienia do Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
@@ -93,7 +93,7 @@ Organizacje mogą wymagać ustawienia kodów przyczyn dla określonych typów ur
 W wielu organizacjach menedżerowie ds. wynagrodzenia i świadczeń mogą mieć dostęp tylko do konkretnych rekordów wynagrodzeń. Te rekordy mogą dotyczyć kierowników lub pracowników regionalnych. W przypadku tej zmiany można zarządzać różnymi planami wynagrodzeń dla różnych grup pracowników w organizacji. Stałe i zmienne plany mogą mieć przypisane role zabezpieczeń, które będą określały dostęp do planów i danych pracowników związanych z planami, takich jak rekordy płac i premii. Tylko role z przyznanym dostępem mogą przetwarzać wynagrodzenia tych pracowników.
 
 ###  <a name="email-support-for-alerts"></a>Pomoc techniczna e-mail dla alertów
-Aktualizacja platformy 25 pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia do kontaktów w wyniku wyzwolenia przez zdarzenie. 
+25. aktualizacja platformy dla rozwiązania Finance and Operations pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia e-mail do kontaktów w wyniku wyzwolenia przez zdarzenie. 
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>Sprawdzanie zduplikowanych pracowników: zmiany w interfejsie użytkownika
 Ta zmiana powoduje, że zduplikowane pozycje są wykrywane po wypełnieniu pól nazwisk, a stan pokazuje liczbę zduplikowanych pozycji. Można wybrać podane łącze, aby otworzyć nową stronę w celu dokonania oceny, czy ma być używane wykryte dopasowanie. Aby uniknąć zakłóceń we wprowadzaniu danych, formularz zduplikowanych pozycji nie jest automatycznie otwierany.

@@ -1,6 +1,6 @@
 ---
 title: Wybór między Retail Modern POS (MPOS) i Cloud POS
-description: W tym temacie objaśniono kluczowe różnice między Retail Modern POS a Cloud POS. Opisano w nim również różne czynniki, jakie sprzedawcy detaliczni wdrażający oprogramowanie Microsoft Dynamics 365 for Retail powinny wziąć pod uwagę przy doborze rozwiązania najlepiej odpowiadającego ich wymaganiom.
+description: W tym temacie objaśniono kluczowe różnice między Retail Modern POS a Cloud POS. Opisano w nim również różne czynniki, jakie sprzedawcy detaliczni wdrażający Dynamics 365 Retail powinni brać pod uwagę przy doborze rozwiązania najlepiej odpowiadającego ich wymaganiom.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0b137a21a610a8bffc10b03067b429995e8e0662
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 69cf6d2b7a9bb09a848f2a0c870f5e7e59c61e91
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557021"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025916"
 ---
 # <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Wybór między Retail Modern POS (MPOS) i Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-W temacie tym przedstawiono również dodatkowe tło, wskazówki oraz wytyczne dla osób odpowiedzialnych za wdrożenie w zakresie czynników, jakie powinni wziąć pod uwagę podczas wdrażania oprogramowania Microsoft Dynamics 365 for Retail. Zapoznanie się z tymi wytycznymi oraz przestrzeganie ich w procesie wdrożenia pozwoli uniknąć osobom odpowiedzialnym za wdrożenie problemów, które mogą wpłynąć na zadowolenie klienta lub wydajność.
+W temacie tym przedstawiono również dodatkowe tło, wskazówki oraz wytyczne dla osób odpowiedzialnych za wdrożenie w zakresie czynników, jakie powinni wziąć pod uwagę podczas wdrażania oprogramowania Dynamics 365 Retail. Zapoznanie się z tymi wytycznymi oraz przestrzeganie ich w procesie wdrożenia pozwoli uniknąć osobom odpowiedzialnym za wdrożenie problemów, które mogą wpłynąć na zadowolenie klienta lub wydajność.
 
 ## <a name="insights"></a>Informacje na temat technologii
 

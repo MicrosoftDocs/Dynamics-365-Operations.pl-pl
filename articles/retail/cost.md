@@ -1,6 +1,6 @@
 ---
 title: Konfiguracja kosztów dla funkcji zarządzania zamówieniami rozdzielonymi (DOM)
-description: W tym temacie opisano konfigurację kosztów dla funkcji zarządzania zamówieniami rozdzielonymi (DOM) w rozwiązaniu Microsoft Dynamics 365 for Retail.
+description: W tym temacie opisano konfigurację kosztów dla funkcji zarządzania zamówieniami rozdzielonymi (DOM) w rozwiązaniu Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 12/05/2018
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80e7a033467c3d94d55f06daa05f99bd27e19a29
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: b5e3e1997f3d3b61b7b3c7486f5531e386293537
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606786"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019446"
 ---
 # <a name="cost-configuration-for-distributed-order-management-dom"></a>Konfiguracja kosztów dla funkcji zarządzania zamówieniami rozdzielonymi (DOM)
 
@@ -31,7 +31,7 @@ ms.locfileid: "1606786"
 
 Organizacje używają wielu składników kosztów w celu ustalenia optymalnej lokalizacji, z której ma zostać zrealizowane zamówienie. Niektóre z tych składników kosztów to koszty wysyłki, koszty obsługi i koszty pakowania. Kombinacja tych kosztów jest obliczana w celu ustalenia lokalizacji realizacji.
 
-Gdy w wyniku pierwszej iteracji zarządzania zamówieniami rozdzielonymi (DOM) w rozwiązaniu Microsoft Dynamics 365 for Retail byłą wykonywana optymalizacja przypisań zamówień do lokalizacji realizacji, była brana pod uwagę tylko odległość. Mimo że odległość może być skorelowana z kosztami, nie jest tym samym, co koszt. Na przykład wysyłka w ciągu jednej nocy kosztuje więcej niż wysyłka w ciągu trzech lub siedmiu dni na tę samą odległość.
+Gdy w wyniku pierwszej iteracji zarządzania zamówieniami rozdzielonymi (DOM) w rozwiązaniu Dynamics 365 Retail byłą wykonywana optymalizacja przypisań zamówień do lokalizacji realizacji, była brana pod uwagę tylko odległość. Mimo że odległość może być skorelowana z kosztami, nie jest tym samym, co koszt. Na przykład wysyłka w ciągu jednej nocy kosztuje więcej niż wysyłka w ciągu trzech lub siedmiu dni na tę samą odległość.
 
 Funkcja konfiguracji kosztów umożliwia sprzedawcom detalicznym definiowanie i konfigurowanie dodatkowych składników kosztów, które będą obliczane i uwzględniane w celu ustalenia optymalnej lokalizacji, z której mają być realizowane wiersze zamówienia.
 

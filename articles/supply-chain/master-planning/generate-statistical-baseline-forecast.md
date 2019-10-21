@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bc5a38519efb6f4d242daca9aab5226c16e4ea0
-ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
+ms.openlocfilehash: 5ce8c1e7a3a4533516d8f2e2b0af46633e4c7667
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1729882"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250744"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Generowanie bazowej prognozy statystycznej
 
@@ -47,7 +47,7 @@ Gdy strategia prognoza jest ustawiona na **Kopiuj na popycie historycznym**, kon
 
 Aby uniknąć nieporozumień w planach produkcji, pewną liczbę przedziałów prognozy można zablokować. Tę liczbę ustala się w polu **Horyzont czasowy zamrożenia**. Na stronie **Skorygowana prognoza popytu** komórki dla zamrożonych przedziałów są wyłączone, by pokazać, że tych wartości nie należy zmieniać. 
 
-Data rozpoczęcia dla bazowa prognozy popytu nie musi być datą bieżącą ani datę w przyszłości. Aby ustawić inną datę rozpoczęcia, użyj pola **Data początkowa prognozy bazowej — Od daty**. Na przykład w czerwcu, użytkownicy mogą wygenerować prognozę w następnym roku. Ponieważ brakuje przedziałów prognozy między końcem prognozy historycznej a początkiem prognozy bazowej, przewidywania mogą być nieprecyzyjne. Jeśli używasz usługi prognozowania popytu w Microsoft Dynamics 365 for Finance and Operations, masz do dyspozycji sposoby wypełniania brakujących miejsc. Metodę wybiera się, ustawiając parametr MISSING\_VALUE\_SUBSTITUTION na stronie **Parametry prognozowania popytu**. 
+Data rozpoczęcia dla bazowa prognozy popytu nie musi być datą bieżącą ani datę w przyszłości. Aby ustawić inną datę rozpoczęcia, użyj pola **Data początkowa prognozy bazowej — Od daty**. Na przykład w czerwcu, użytkownicy mogą wygenerować prognozę w następnym roku. Ponieważ brakuje przedziałów prognozy między końcem prognozy historycznej a początkiem prognozy bazowej, przewidywania mogą być nieprecyzyjne. Jeśli używasz usługi prognozowania popytu, masz do dyspozycji sposoby wypełniania brakujących miejsc. Metodę wybiera się, ustawiając parametr MISSING\_VALUE\_SUBSTITUTION na stronie **Parametry prognozowania popytu**. 
 
 > [!NOTE]
 > Brak podstawiania wartości dotyczy tylko przerw w danych między datą początkową i końcową dla danych historycznych. Nie będzie on wypełniać danych przed lub po ostatnim fizycznym punkcie danych, jest traktowany jak ekstrapolacja między rzeczywistymi istniejącymi punktami danych. 
@@ -56,7 +56,7 @@ Pole **Data początkowa prognozy bazowej** - **Od dnia** musi być ustawione na 
 
 Pole **Data początkowa prognozy bazowej** - **Od dnia** może być ustawione na datę w przeszłości. Innymi słowy można wygenerować prognozę popytu w przeszłości. Jest to przydatne, ponieważ pozwala zmieniać parametry usługi prognozy, aby statystyczna prognoza generowana w przeszłości pasowała do historycznego popytu. Użytkownicy mogą dalej używać tych ustawień parametrów do generowania bazowej prognozy statystycznej dla przyszłości. 
 
-Ręczne korekty wprowadzane w poprzednich iteracjach prognozowania popytu mogą być automatycznie stosowane do nowej podstawowej prognozy, ale musi być zaznaczone pole wyboru **Przenieś ręczne korekty prognozy popytu**. Jeśli pole wyboru nie jest zaznaczone, ręczne korekty nie są dodawane do prognozy bazowej, ale nie są też usuwane. Ręczne korekty prognozy można usunąć tylko w momencie importu prognozy, usuwając zaznaczenie pola wyboru **Zapisz korekty ręczne bazowej prognozy popytu**. Ręczne korekty są zapisywane w chwili autoryzacji. Z tego względu jeśli użytkownik dokonuje ręcznej korekty prognozy, ale nie autoryzuje prognozy wstecz w programie Finance and Operations, zmiany są tracone. Aby uzyskać więcej informacji o ręcznych korektach i sposobie ich działania, zobacz [Autoryzowanie skorygowanej prognozy](authorize-adjusted-forecast.md). 
+Ręczne korekty wprowadzane w poprzednich iteracjach prognozowania popytu mogą być automatycznie stosowane do nowej podstawowej prognozy, ale musi być zaznaczone pole wyboru **Przenieś ręczne korekty prognozy popytu**. Jeśli pole wyboru nie jest zaznaczone, ręczne korekty nie są dodawane do prognozy bazowej, ale nie są też usuwane. Ręczne korekty prognozy można usunąć tylko w momencie importu prognozy, usuwając zaznaczenie pola wyboru **Zapisz korekty ręczne bazowej prognozy popytu**. Ręczne korekty są zapisywane w chwili autoryzacji. Z tego względu jeśli użytkownik dokonuje ręcznej korekty prognozy, ale nie autoryzuje prognozy wstecz w programie Supply Chain Management, zmiany są tracone. Aby uzyskać więcej informacji o ręcznych korektach i sposobie ich działania, zobacz [Autoryzowanie skorygowanej prognozy](authorize-adjusted-forecast.md). 
 
 Generowanie prognozy popytu może obejmować nazwę i komentarze, by ułatwić użytkownikom identyfikowanie prognoz, które zostały wygenerowany. Te wartości są widoczne w historii generowania prognozy na stronie **Historia generowania bazowej prognozy statystycznej**. 
 

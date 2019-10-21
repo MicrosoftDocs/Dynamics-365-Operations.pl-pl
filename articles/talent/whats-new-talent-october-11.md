@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (15 października 2018 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent Core HR.
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent - Core HR (15 października 2018 r.)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 10/15/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-10-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a50819d579c0ea42aac3f9a18fbcbf0d2cb9ca26
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 642df0dd413f4ab5a181a18c79f13aa334f9c158
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518861"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010160"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-october-15-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (15 października 2018 r.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-october-15-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent: Core HR (15 października 2018 r.)
 
 [!include [banner](includes/banner.md)]
 

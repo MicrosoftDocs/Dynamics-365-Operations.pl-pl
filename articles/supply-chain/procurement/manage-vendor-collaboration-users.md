@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d0644372944b4c9d472ff738258665544fccbad4
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: cb55d7d00e5676fc5a1326d77889b4adb86c3ca6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742477"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248964"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Zarządzanie użytkownikami portalu współpracy z dostawcami
 
@@ -31,7 +31,7 @@ ms.locfileid: "1742477"
 
 W tym temacie opisano sposoby wnioskowania o zainicjowanie obsługi nowych użytkowników i dodawania nowych osób kontaktowych w portalu współpracy z dostawcami. 
 
-Interfejs współpracy z dostawcami w Microsoft Dynamics 365 for Finance and Operations udostępnia dostawcom zewnętrznym informacje o zamówieniach zakupu, fakturach i zapasach konsygnacyjnych. Można tworzyć nowe osoby kontaktowe w portalu współpracy z dostawcami i wnioskować o zainicjowanie obsługi nowych użytkowników, jeżeli pracujesz jako zewnętrzny dostawca z rolą zabezpieczeń **Administrator dostawcy (zewnętrzny)** lub podobnymi uprawnieniami. Te zadania można również wykonać podczas pracy jako pracownik działu zaopatrzenia. W tym temacie ta rola odnosi się do pracownika działu zaopatrzenia, który pracuje w firmie będącej właścicielem wystąpienia programu Finance and Operations. Aby uzyskać więcej informacji na temat używania portalu współpracy z dostawcami przez zewnętrznego dostawcę, zobacz [Współpraca dostawców z odbiorcami](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Interfejs współpracy z dostawcami w Dynamics 365 Supply Chain Management udostępnia dostawcom zewnętrznym informacje o zamówieniach zakupu, fakturach i zapasach konsygnacyjnych. Można tworzyć nowe osoby kontaktowe w portalu współpracy z dostawcami i wnioskować o zainicjowanie obsługi nowych użytkowników, jeżeli pracujesz jako zewnętrzny dostawca z rolą zabezpieczeń **Administrator dostawcy (zewnętrzny)** lub podobnymi uprawnieniami. Te zadania można również wykonać podczas pracy jako pracownik działu zaopatrzenia. W tym temacie ta rola odnosi się do pracownika działu zaopatrzenia, który pracuje w firmie będącej właścicielem wystąpienia Supply Chain Management. Aby uzyskać więcej informacji na temat używania portalu współpracy z dostawcami przez zewnętrznego dostawcę, zobacz [Współpraca dostawców z odbiorcami](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Aby uzyskać więcej informacji na temat używania portalu współpracy z dostawcami przez pracownika działu zaopatrzenia, zobacz [Współpraca z zewnętrznymi dostawcami](vendor-collaboration-work-external-vendors.md).
 
@@ -60,12 +60,12 @@ Przesłany wniosek jest dodawany do listy **Żądania użytkowników portalu wsp
 Zanim będzie można wnioskować o zainicjowanie obsługi nowego użytkownika, ta osoba musi być skonfigurowana jako osoba kontaktowa dla jednego lub więcej dostawców. Aby utworzyć wniosek o nowego użytkownika portalu współpracy z dostawcami:
 
 1. Na stronie **Wszystkie osoby kontaktowe** kliknij opcję **Inicjuj obsługę użytkownika-dostawcy**.
-2. Wprowadź adres e-mail użytkownika. Ten adres będzie wykorzystywany przez użytkownika do logowania się do programu Finance and Operations. Jeśli adres e-mail należy do domeny zarejestrowanej jako dzierżawca w usłudze Microsoft Azure, musi być adresem istniejącego konta w usłudze Azure Active Directory (AAD), aby proces inicjowania obsługi został pomyślnie wykonany. Jeśli adres e-mail nie należy do domeny zarejestrowanej w usłudze Microsoft Azure, konto usługi AAD zostanie utworzone jako część procesu inicjowania obsługi i nowy użytkownik otrzyma wiadomość e-mail z zaproszeniem. Konsumenckie adresy e-mail, w domenach takich jak @hotmail.com, @gmail.com lub @comcast.net, nie mogą być używane do rejestrowania użytkowników w programie Finance and Operations.
+2. Wprowadź adres e-mail użytkownika. Ten adres będzie używany przez użytkownika do logowania się w Supply Chain Management. Jeśli adres e-mail należy do domeny zarejestrowanej jako dzierżawca w usłudze Microsoft Azure, musi być adresem istniejącego konta w usłudze Azure Active Directory (AAD), aby proces inicjowania obsługi został pomyślnie wykonany. Jeśli adres e-mail nie należy do domeny zarejestrowanej w usłudze Microsoft Azure, konto usługi AAD zostanie utworzone jako część procesu inicjowania obsługi i nowy użytkownik otrzyma wiadomość e-mail z zaproszeniem. Konsumenckie adresy e-mail, w domenach takich jak @hotmail.com, @gmail.com lub @comcast.net, nie mogą być używane do rejestrowania użytkowników.
 3. W opcji **Dostęp do portalu współpracy z dostawcami jest dozwolony** ustaw wartość **Tak** dla wszystkich firm, do których użytkownik musi mieć dostęp.
 4. W sekcji **Przypisz role użytkownika** zaznacz pole wyboru **Przypisz** dla ról zabezpieczeń, które powinien mieć nowy użytkownik.
 5. Kliknij przycisk **Prześlij**.
 
-Po przesłaniu wniosku o użytkownika dostawcy pole **Dostęp do portalu współpracy z dostawcami jest dozwolony** otrzymuje wartość **Tak** dla wybranego konta dostawcy i rozpoczyna się przepływ pracy wnioskowania o użytkownika. W ramach przepływu pracy nowy użytkownik jest tworzony w programie Finance and Operations i są mu przypisywane role zabezpieczeń. Ponadto jest aktywowana usługa Azure B2B, która inicjuje interakcję z portalem Azure i kojarzy nowe lub istniejące konto w usłudze AAD z kontem użytkownika w programie Finance and Operations. Aby uzyskać więcej informacji, zobacz [Na czym polega współpraca w usłudze Azure AD B2B?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+Po przesłaniu wniosku o użytkownika dostawcy pole **Dostęp do portalu współpracy z dostawcami jest dozwolony** otrzymuje wartość **Tak** dla wybranego konta dostawcy i rozpoczyna się przepływ pracy wnioskowania o użytkownika. W ramach przepływu pracy nowy użytkownik jest tworzony i są mu przypisywane role zabezpieczeń. Ponadto jest aktywowana usługa Azure B2B, która inicjuje interakcję z portalem Azure i kojarzy nowe lub istniejące konto w usłudze AAD z kontem użytkownika w rozwiązaniu Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Na czym polega współpraca w usłudze Azure AD B2B?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Dezaktywowanie użytkownika
 

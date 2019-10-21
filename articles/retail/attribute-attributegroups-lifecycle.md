@@ -19,18 +19,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c642e4f1b29ac21b6736e770c84f343e9265961d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606902"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023643"
 ---
 # <a name="attributes-and-attribute-groups"></a>Atrybuty i grupy atrybutów
 
 [!include [banner](includes/banner.md)]
 
-*Atrybuty* umożliwiają dokładniejsze opisanie produktu i jego właściwości za pomocą pól zdefiniowanych przez użytkownika (takich jak **Rozmiar pamięci**, **Pojemność dysku twardego**, **Zgodność z normą Energy Star** i tak dalej). W Microsoft Dynamics 365 for Finance and Operations atrybuty można skojarzyć z różnymi jednostkami sprzedaży detalicznej, takimi jak kategorie produktu i kanały handlu detalicznego oraz ustawić ich wartości domyślne. Wtedy produkty dziedziczą atrybuty i wartości domyślne, gdy zostaną powiązane z kategoriami produktów lub kanałami sprzedaży detalicznej. Wartości domyślne można zastąpić na poziomie poszczególnych produktów, na poziomie kanału sprzedaży detalicznej lub w katalogu sieci sprzedaży.
+*Atrybuty* umożliwiają dokładniejsze opisanie produktu i jego właściwości za pomocą pól zdefiniowanych przez użytkownika (takich jak **Rozmiar pamięci**, **Pojemność dysku twardego**, **Zgodność z normą Energy Star** i tak dalej). Atrybuty można skojarzyć z różnymi jednostkami usługi Retail, takimi jak kategorie produktu i kanały handlu detalicznego oraz ustawić ich wartości domyślne. Wtedy produkty dziedziczą atrybuty i wartości domyślne, gdy zostaną powiązane z kategoriami produktów lub kanałami sprzedaży detalicznej. Wartości domyślne można zastąpić na poziomie poszczególnych produktów, na poziomie kanału sprzedaży detalicznej lub w katalogu sieci sprzedaży.
+
 
 Na przykład typowy produkt w postaci telewizora może mieć następujące atrybuty.
 
@@ -53,7 +54,7 @@ Na przykład typowy produkt w postaci telewizora może mieć następujące atryb
 
 ## <a name="attributes-and-attribute-types"></a>Atrybuty i typy atrybutów
 
-Atrybuty są oparte na *typach atrybutów*. Typ atrybutu określa typ danych, które można wprowadzić dla określonego atrybutu. Obecnie program Finance and Operations obsługuje następujące typy atrybutów:
+Atrybuty są oparte na *typach atrybutów*. Typ atrybutu określa typ danych, które można wprowadzić dla określonego atrybutu. Następujące typy atrybutów są obsługiwane:
 
 - **Waluta** — ten typ obsługuje wartości waluty. Może być ograniczony (czyli obsługuje zakres wartości) lub może pozostać otwarty.
 - **Data i godzina** — ten typ obsługuje wartości daty i godziny. Może być ograniczony lub pozostać otwarty.
@@ -63,9 +64,9 @@ Atrybuty są oparte na *typach atrybutów*. Typ atrybutu określa typ danych, kt
 - **Logiczna** — ten typ obsługuje wartości binarne (**prawda** lub **fałsz**).
 - **Odwołanie** — ten typ odwołuje się do innych atrybutów.
 
-### <a name="set-up-attribute-types-in-finance-and-operations"></a>Konfigurowanie typów atrybutów w programie Finance and Operations
+### <a name="set-up-attribute-types"></a>Ustawianie typów atrybutów
 
-1. Zaloguj się na kliencie narzędzi zaplecza programu Finance and Operations jako kierownik ds. merchandisingu.
+1. Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.
 2. Wybierz kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Ustawienia** &gt; **Kategorie i atrybuty** &gt; **Typy atrybutów**.
 3. Utwórz dwa typy atrybutów o typie **Tekst**, w opcji **Stała lista** zaznacz wartość **Tak**, a następnie dodaj listę wartości:
 
@@ -74,7 +75,7 @@ Atrybuty są oparte na *typach atrybutów*. Typ atrybutu określa typ danych, kt
 
 ![Typy atrybutów](media/AttributeType.png)
 
-### <a name="set-up-an-attribute-in-finance-and-operations"></a>Konfigurowanie atrybutu w programie Finance and Operations
+### <a name="set-up-an-attribute"></a>Ustawianie atrybutu
 
 1. Zaloguj się na kliencie narzędzi zaplecza jako kierownik ds. merchandisingu.
 2. Wybierz kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Ustawienia** &gt; **Kategorie i atrybuty** &gt; **Atrybuty**.
@@ -101,13 +102,13 @@ Poniżej przedstawiono pozostałe opcje metadanych atrybutów dostępne na stron
 - Ignorowanie wielkości liter i formatu
 - Pełne dopasowanie
 
-Te opcje były pierwotnie przeznaczone do poprawy funkcji wyszukiwania w sklepach internetowych. Co prawda program Finance and Operations nie zawiera w standardzie funkcjonalności sklepu internetowego, ale obejmuje zestaw SDK do publikowania dla handlu elektronicznego. Odbiorcy mogą używać tego zestawu SDK do wprowadzania produktów do dowolnych indeksów wyszukiwania. Mimo iż dane produktów są importowane, odbiorcy nadal powinni być w stanie odróżniać dane, które można przeszukiwać, na których można wykonywać zapytania itd. W ten sposób mogą zbudować optymalny indeks obejmujący tylko atrybuty, które *w ich opinii* powinny być indeksowane.
+Te opcje były pierwotnie przeznaczone do poprawy funkcji wyszukiwania w sklepach internetowych. Co prawda usługa Retail nie zawiera w standardzie funkcjonalności sklepu internetowego, ale obejmuje zestaw SDK do opracowywania oprogramowania do handlu elektronicznego. Odbiorcy mogą używać tego zestawu SDK do wprowadzania produktów do dowolnych indeksów wyszukiwania. Mimo iż dane produktów są importowane, odbiorcy nadal powinni być w stanie odróżniać dane, które można przeszukiwać, na których można wykonywać zapytania itd. W ten sposób mogą zbudować optymalny indeks obejmujący tylko atrybuty, które *w ich opinii* powinny być indeksowane.
 
 Aby uzyskać więcej informacje o przeznaczeniu tych pozostałych opcji, zobacz [Omówienie schematu wyszukiwania w programie SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Ustawienia filtrów atrybutów
 
-Ustawienia filtrów atrybutów pozwalają określić sposób wyświetlania filtrów atrybutów w aplikacji Retail POS. Aby uzyskać dostęp do ustawień filtrów atrybutów, w programie Finance and Operations na stronie **Atrybuty** zaznacz atrybut, a następnie w okienku akcji wybierz opcję **Ustawienia filtra**.
+Ustawienia filtrów atrybutów pozwalają określić sposób wyświetlania filtrów atrybutów w aplikacji Retail POS. Aby uzyskać dostęp do ustawień filtrów atrybutów, na stronie **Atrybuty** zaznacz atrybut, a następnie w okienku akcji wybierz opcję **Ustawienia filtra**.
 
 Strona **Preferencje wyświetlania filtra** zawiera następujące pola:
 
@@ -233,7 +234,7 @@ Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów 
     - Atrybuty produktu kanału
 
     > [!NOTE]
-    > Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.
+    > Jeśli utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sprzedaży detalicznej.
 
 ![Grupy atrybutów produktów z katalogu](media/CatalogProdAttrValues.png)
 
@@ -255,4 +256,4 @@ Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów 
     - Atrybuty produktu kanału
 
     > [!NOTE]
-    > Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.
+    > Jeśli utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sprzedaży detalicznej.

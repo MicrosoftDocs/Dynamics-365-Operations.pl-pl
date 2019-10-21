@@ -17,18 +17,19 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f96c79558c3248406a1b5988f9c9dc9783db4406
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 099c1d97db97659d55070b1058f3e0b5b44df107
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564370"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024736"
 ---
 # <a name="manage-assortments-november-2016"></a>Zarządzanie asortymentem (listopad 2016)
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ta procedura przedstawia sposób tworzenia i publikowania nowego asortymentu produktu. Wykorzystuje dane firmy demonstracyjnej USRT. Procedura wymaga aplikacji Dynamics AX 7.0.1 lub nowszej oraz platformy Dynamics AX w wersji 7.1.  
+Ta procedura przedstawia sposób tworzenia i publikowania nowego asortymentu produktu. Wykorzystuje dane firmy demonstracyjnej USRT. 
+
 
 1. Kliknij opcję Zarządzanie kategoriami i produktami.
 

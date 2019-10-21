@@ -1,6 +1,6 @@
 ---
 title: Zapobieganie obcinaniu tekstu w hierarchii stanowisk i eksportowanie do programu Visio
-description: W tym temacie wyjaśniono, jak można rozwiązać problem polegający na tym, że nazwy stanowisk i imiona i nazwiska osób są obcinane, gdy odbiorcy wyświetlają hierarchię stanowisk w Microsoft Dynamics 365 for Talent. Obcinanie tekstu może utrudniać wykonywanie zrzutów ekranu lub wydrukowanie hierarchii.
+description: W tym temacie wyjaśniono, jak można rozwiązać problem polegający na tym, że nazwy stanowisk i imiona i nazwiska osób są obcinane, gdy odbiorcy wyświetlają hierarchię stanowisk w Microsoft Dynamics 365 Talent. Obcinanie tekstu może utrudniać wykonywanie zrzutów ekranu lub wydrukowanie hierarchii.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 07a972bc1c6dd4076932248edb314992cb7297e5
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: e151818f29ac37ff449daaf1dc02e44b8fb317c3
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741828"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008507"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Zapobieganie obcinaniu tekstu w hierarchii stanowisk i eksportowanie do programu Visio
 
@@ -30,7 +30,7 @@ ms.locfileid: "1741828"
 
 **Wystawienie**
 
-Gdy odbiorcy wyświetlają hierarchię stanowisk w Microsoft Dynamics 365 for Talent, nazwy stanowisk i imiona oraz nazwiska osób są obcinane. Z tego względu może być trudne wykonanie zrzutu ekranu lub drukowanie i dystrybucja hierarchii.
+Gdy odbiorcy wyświetlają hierarchię stanowisk w Microsoft Dynamics 365 Talent, nazwy stanowisk i imiona oraz nazwiska osób są obcinane. Z tego względu może być trudne wykonanie zrzutu ekranu lub drukowanie i dystrybucja hierarchii.
 
 ![Hierarchia stanowisk](media/position-h.png)
 
@@ -50,7 +50,7 @@ Wykonaj następujące kroki, aby wyeksportować do programu Visio.
 
 2. W okienku akcji naciśnij przycisk **Otwórz w programie Microsoft Office**, a następnie, w obszarze **Eksportuj do programu Excel**, wybierz opcję **Stanowiska**. Alternatywnie naciśnij klawisze Ctrl + T.
 
-    ![Eksportowanie strony listy Stanowiska do programu Microsoft Excel](media/org-admin.png)
+    ![Eksportowanie strony listy Stanowiska do programu Excel](media/org-admin.png)
 
 3. Zapisz plik programu Excel, który został wyeksportowany.
 

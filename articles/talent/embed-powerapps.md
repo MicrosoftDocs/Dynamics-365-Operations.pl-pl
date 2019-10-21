@@ -1,5 +1,5 @@
 ---
-title: Osadzanie aplikacji PowerApps w Core HR
+title: Osadzona aplikacja PowerApps w Dynamics 365 - Core HR
 description: W tym temacie opisano, jak rozwiązać problem, gdzie element menu usługi PowerApps znika w module Administracja systemu.
 author: andreabichsel
 manager: AnnBe
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7c0dcdd7e2f407267cf99906b4d0b317858710af
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 4fbc24c5ceb73389b84b125eb942ac31757928aa
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742826"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008437"
 ---
-# <a name="embed-powerapps-apps-in-core-hr"></a>Osadzanie aplikacji PowerApps w Core HR
+# <a name="embed-powerapps-apps-in-core-hr"></a>Osadzone aplikacje PowerApps w Core HR
 
 [!include [banner](includes/banner.md)]
 
-**Wydaj**
+**Wystawienie**
 
-Element menu **PowerApps** zniknął z modułu **administrowanie systemem**.
+Element menu **PowerApps** zniknął z modułu **Administrowanie systemem**.
 
 **Przyczyna**
 
@@ -38,9 +38,9 @@ Projekt interfejsu użytkownika został zmieniony, a Microsoft PowerApps zostani
 
 **Rozdzielczość**
 
-Zmienił się sposób osadzenia usługi PowerApps. Aplikacje PowerApps teraz są dodawane za pomocą modelu personalizacji. Aplikacje PowerApps można dodać do prawie wszystkich stron w Microsoft Dynamics 365 for Talent.
+Zmienił się sposób osadzenia usługi PowerApps. Aplikacje PowerApps teraz są dodawane za pomocą modelu personalizacji. Aplikacje PowerApps można dodać do prawie wszystkich stron w Microsoft Dynamics 365 Talent.
 
-Aby uzyskać szczegółowe informacje o osadzaniu aplikacji usługi PowerApps w Talents, zobacz [Osadzanie aplikacji PowerApp](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+Aby uzyskać szczegółowe informacje o osadzaniu aplikacji PowerApps w Talents, zobacz [Osadzone PowerApps aplikacje](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 
 Odbiorcy PowerApps, którzy osadzili aplikacje przed zmianą powinni mieć uaktualniony system do nowego modelu.
 

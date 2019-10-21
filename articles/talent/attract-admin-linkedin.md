@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie integracji z serwisem LinkedIn dla Microsoft Dynamics 365 for Talent - Attract
-description: W tym temacie opisano sposób konfigurowania integracji LinkedIn w systemie Microsoft Dynamics 365 for Talent - Attract, dzięki czemu można łatwo publikować ogłoszenia o pracę w serwisie LinkedIn, aby umożliwić im synchronizowanie informacji o rekrutacji z profilem serwisu LinkedIn
+title: Konfigurowanie integracji z serwisem LinkedIn dla Microsoft Dynamics 365 Talent - Attract
+description: W tym temacie opisano sposób konfigurowania integracji LinkedIn w aplikacji Microsoft Dynamics 365 Talent - Attract, dzięki czemu można łatwo publikować ogłoszenia o pracę w serwisie LinkedIn, aby umożliwić im synchronizowanie informacji o rekrutacji z profilem serwisu LinkedIn.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8e42ec7d0bb74089b4e915b5a30277401e694cf9
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 6b86cafdf364f2de051f3d8ceab7413c2c13c3a5
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756229"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009977"
 ---
 # <a name="set-up-linkedin-integration"></a>Konfigurowanie integracji z serwisem LinkedIn
 
 [!include[banner](../includes/banner.md)]
 
-Pomóż swoim rekruterom i menedżerom od zatrudniania znaleźć najlepsze talenty dzięki skonfigurowaniu integracji serwisu LinkedIn z programem Microsoft Dynamics 365 for Talent: Attract. Attract umożliwia publikowanie ogłoszeń o pracę bezpośrednio w serwisie LinkedIn, największej profesjonalnej sieci online.
+Pomóż swoim rekruterom i menedżerom zatrudniającym znaleźć najlepsze talenty dzięki skonfigurowaniu integracji serwisu LinkedIn z aplikacją Microsoft Dynamics 365 Talent: Attract. Attract umożliwia publikowanie ogłoszeń o pracę bezpośrednio w serwisie LinkedIn, największej profesjonalnej sieci online.
 
 Zadania, które są księgowane w serwisie LinkedIn przez Attract, są ograniczonymi ofertami i są dostarczane firmie bez dodatkowych kosztów. Te listy są dostępne tylko dla partnerów programowych serwisu LinkedIn takich jak Attract. Nie są one widoczne w panelu **Kariery** na stronie firmy w LinkedIn, ponieważ w tym miejscu pojawiają się tylko listy opłacane. Są jednak wyświetlane, gdy potencjalni kandydaci widzą wszystkie dostępne prace. Listy z ograniczeniami są także wyświetlane w wyszukiwaniach prac LinkedIn.
 

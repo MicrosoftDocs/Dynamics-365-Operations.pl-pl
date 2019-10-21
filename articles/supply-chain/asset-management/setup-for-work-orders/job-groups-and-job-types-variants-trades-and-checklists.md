@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9efbd9651f6a2fa57e761238c6acfe6111e986e6
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 6cb53322b9bdaaa06c6040d8244b7e2ea05336ca
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874769"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249616"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorie typów zadań obsługi i typy zadań serwisowych, warianty typu zadań obsługi, handel zadaniami konserwacyjnymi oraz listy kontrolne konserwacji
 
@@ -225,7 +225,7 @@ Szablony listy prac konserwacyjnych mogą być używane jako wspólny zbiór zad
 26. Aby skonfigurować załączniki w wybranym wierszu typu zadania obsługi, wybierz opcję **Dołącz dokumenty**. Załączniki skonfigurowane dla zadania obsługi typu domyślny wiersz są automatycznie uwzględniane w wierszach zlecenia produkcyjnego, w którym jest używany ten wiersz domyślny typu zadania serwisowego.
 27. Wybierz **Nowy** i następnie wybierz typ dokumentu.
 28. Załaduj dokument lub plik.
-29. Skonfiguruj pola na karcie **Załączniki**. W ustawieniach załącznika do systemu używana jest funkcja standardowego ustawienia dokumentu w programie Microsoft Dynamics 365 for Finance and Operations.
+29. Skonfiguruj pola na karcie **Załączniki**. W ustawieniach załącznika do systemu używana jest funkcja standardowego ustawienia dokumentu.
 30. Wybierz **Zapisz**, aby zapisać załącznik.
 
     > [!NOTE]
@@ -261,7 +261,7 @@ Po utworzeniu wymaganych kombinacji domyślnych dla zadania konserwacji można s
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Automatyczna aktualizacja prognoz typu zadania obsługi
 
-W module Zarządzanie składnikami majątku można automatycznie aktualizować zmiany prognoz zleceń, dotyczące kosztów godzinowych, kosztówtowarów i wydatków, które zostały zaktualizowane w innych modułach w Finance and Operations. W ten sposób można zagwarantować, że w prognozach typu zadanie konserwacji zawsze będą używane najnowsze koszty własne.
+W module Zarządzanie składnikami majątku można automatycznie aktualizować zmiany prognoz zleceń, dotyczące kosztów godzinowych, kosztówtowarów i wydatków, które zostały zaktualizowane w innych modułach. W ten sposób można zagwarantować, że w prognozach typu zadanie konserwacji zawsze będą używane najnowsze koszty własne.
 
 1. Wybierz **Zarządzanie składnikami majątku** \> **Okresowe** \> **Prognoza** \> **Aktualizuj prognozę typu zadania konserwacji**.
 2. W oknie **Aktualizuj prognozę typów zadań konserwacji**, dla **Rekordy do uwzględnienia** na skróconej karcie, można dodawać wybrane opcje dla konkretnych typów zadań obsługi, które są wymagane. Wybierz **Filtruj**, a następnie **wybierz**, aby wybrać opcje.

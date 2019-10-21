@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07fbc5fea1fd44769a29bcc40297ffd02812a1e5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555163"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248987"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Współpraca z dostawcami za pomocą portalu dostawców
 
@@ -31,7 +31,7 @@ ms.locfileid: "1555163"
 
 W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą używać portalu dostawców do współpracy z dostawcami zewnętrznymi w trakcie procesu potwierdzenia zamówień zakupu. Informacje te dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku.
 
-Informacje zawarte w tym temacie dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku. Funkcjonalność portalu dostawców została zastąpiona rozszerzoną funkcjonalnością portalu współpracy z dostawcami w programie Dynamics 365 for Operations w wersji 1611. Aby uzyskać więcej informacji o funkcjonalności nowego portalu współpracy z dostawcami, zobacz [Używanie portalu współpracy z dostawcami do obsługi współpracy z dostawcami zewnętrznymi](vendor-collaboration-work-external-vendors.md).  
+Informacje zawarte w tym temacie dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku. Aby uzyskać więcej informacji o funkcjonalności nowego portalu współpracy z dostawcami, zobacz [Używanie portalu współpracy z dostawcami do obsługi współpracy z dostawcami zewnętrznymi](vendor-collaboration-work-external-vendors.md).  
 
 Portal dostawców jest przeznaczony dla dostawców, którzy nie posiadają interfejsów elektronicznej wymiany danych (EDI) z systemem Microsoft Dynamics AX na potrzeby wymiany informacji o zamówieniach zakupu (PO). Portal umożliwia pracownikom działu zakupów wysyłanie zamówień zakupu do dostawcy, a następnie odbieranie odpowiedzi o potwierdzeniu lub odrzuceniu bezpośrednio w systemie Dynamics AX.  
 

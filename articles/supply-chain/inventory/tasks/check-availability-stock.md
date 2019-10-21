@@ -3,7 +3,7 @@ title: Sprawdzanie dostępności zapasów w magazynie
 description: Ta procedura pokazuje, jak sprawdzić ilość dostępnych i fizycznie dostępnych zapasów towaru o określonym numerze.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5b78b2e4ec3179450d635857353846c9bcb23eed
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: e0c00b2a79ab588ff47c249f73570544d884b79e
+ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795179"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "1995260"
 ---
 # <a name="check-the-availability-of-stock"></a>Sprawdzanie dostępności zapasów w magazynie
 
@@ -31,40 +31,32 @@ Ta procedura pokazuje, jak sprawdzić ilość dostępnych i fizycznie dostępnyc
 
 
 ## <a name="check-on-hand-inventory-for-an-item"></a>Sprawdzanie ilości dostępnych zapasów towaru
-1. Wybierz kolejno opcje Zarządzanie zapasami > Zapytania i raporty > Dostępne zapasy.
-2. Zaznacz wiersz Numer towaru.
-    * Aby wykonać zapytanie o dostępne zapasy według kodów towarów, zaznacz wiersz, gdzie ustawienie Tabela ma wartość Dostępne zapasy, a ustawienie Pole wartość Numer towaru.  
-3. W polu Kryteria wybierz towar, o który chcesz wykonać zapytanie.
-    * Jeśli używasz danych firmy demonstracyjnej USMF, można wybrać wartość „M9201”.  
-4. Kliknij przycisk OK.
-5. Kliknij opcję Wymiary.
-    * Karta Wymiary pozwala wybrać ilość szczegółów, jaka będzie wyświetlana o dostępnych zapasach. Aby uzyskać dane dotyczące rezerwacji, należy wyświetlić wszystkie wymiary magazynowe dla towarów używających zaawansowanych procesów magazynowych (WHS).  
-6. Kliknij przycisk OK.
-7. W okienku akcji kliknij pozycję Informacje pokrewne.
-    * Jeśli tego nie widać, może być konieczne kliknięcie przycisku wielokropka (...), aby wyświetlić dodatkowe opcje okienka akcji.  
-8. Kliknij przycisk Przegląd dostaw.
-    * Karta Przegląd dostaw zawiera informacje o dostawie określonego towaru, takie jak ilość dostępnych zapasów, czas realizacji i informacje o dostawcy.  
-9. Rozwiń sekcję Dostępne.
-10. Rozwiń sekcję Dostawcy.
+1. Wybierz kolejno opcje **Okienko nawigacji > Moduły > Zarządzanie zapasami > Zapytania i raporty > Dostępne zapasy**.
+2. Zaznacz wiersz **Numer towaru**. Aby wykonać zapytanie o dostępne zapasy według kodów towarów, zaznacz wiersz, gdzie ustawienie Tabela ma wartość **Dostępne zapasy**, a ustawienie Pole ma wartość numer **Towaru**.
+3. W polu **Kryteria** wybierz towar, o który chcesz wykonać zapytanie. Jeśli używasz danych firmy demonstracyjnej USMF, można wybrać wartość „M9201”.  
+4. Kliknij przycisk **OK**.
+5. W **Okienku akcji** kliknij pozycję **Wymiary**. Karta **Wymiary** pozwala wybrać ilość szczegółów, jaka będzie wyświetlana o dostępnych zapasach. Aby uzyskać dane dotyczące rezerwacji, należy wyświetlić wszystkie wymiary magazynowe dla towarów używających zaawansowanych procesów magazynowych (WHS).
+6. Kliknij przycisk **OK**.
+7. W **Okienku akcji** kliknij pozycję **Informacje pokrewne**. Jeśli nie widać tej opcji, może być konieczne kliknięcie przycisku wielokropka (...), aby wyświetlić dodatkowe opcje okienka akcji.
+8. Kliknij przycisk **Przegląd dostaw**. Karta **Przegląd dostaw** zawiera informacje o dostawie określonego towaru, takie jak ilość dostępnych zapasów, czas realizacji i informacje o dostawcy.  
+9. Rozwiń sekcję **Dostępne**.
+10. Rozwiń sekcję **Dostawcy**.
 11. Zamknij stronę.
 12. Zamknij stronę.
 
 ## <a name="check-physical-on-hand-inventory"></a>Sprawdzanie ilości fizycznie dostępnych zapasów
-1. Wybierz kolejno opcje Zarządzanie magazynem > Zapytania i raporty > Fizycznie dostępne zapasy.
-2. W polu Numer towaru wpisz wartość.
-    * Można użyć pól Oddział i Magazyn, aby wyfiltrować listę towarów.  
+1. Wybierz kolejno opcje **Okienko nawigacji > Moduły > Zarządzanie magazynem > Zapytania i raporty > Fizycznie dostępne zapasy**.
+2. W polu **Numer towaru** wpisz wartość. Można użyć pól Oddział i Magazyn, aby wyfiltrować listę towarów. 
 3. Odśwież stronę.
-4. Kliknij opcję Wyświetl wymiary.
-    * Karta Wyświetlanie wymiarów pozwala wybrać ilość szczegółów, jaka będzie wyświetlana o dostępnych zapasach.  
-5. Kliknij przycisk OK.
+4. W **Okienku akcji** kliknij pozycję **Wyświetl wymiary**. Karta Wyświetlanie wymiarów pozwala wybrać ilość szczegółów, jaka będzie wyświetlana o dostępnych zapasach.
+5. Kliknij przycisk **OK**.
 6. Zamknij stronę.
 
 ## <a name="check-on-hand-inventory-by-location"></a>Sprawdzanie ilości dostępnych zapasów według lokalizacji
-1. Wybierz kolejno opcje Zarządzanie magazynem > Zapytania i raporty > Dostępne zapasy według lokalizacji.
-2. W polu Magazyn wpisz wartość.
-    * Jeśli używasz danych firmy demonstracyjnej USMF, można wybrać wartość „51”.  
+1. Wybierz kolejno opcje **Okienko nawigacji > Moduły > Zarządzanie magazynem > Zapytania i raporty > Dostępne zapasy według lokalizacji**.
+2. W polu **Magazyn** wpisz wartość. Jeśli używasz danych firmy demonstracyjnej USMF, można wybrać wartość „51”.  
 3. Odśwież stronę.
-4. Kliknij opcję Wyświetl wymiary.
-5. Kliknij przycisk OK.
+4. Kliknij opcję **Wyświetl wymiary**.
+5. Kliknij przycisk **OK**.
 6. Zamknij stronę.
 

@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 551a8408aa730bc1916f1c57b7cfd773966ce8bf
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c5da94e02b2381bbd058221567172cd428931c45
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606810"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024690"
 ---
 # <a name="store-inventory-management"></a>Zarządzanie zapasami w sklepie
 
 [!include [banner](includes/banner.md)]
 
-Podczas pracy z zapasami w programie Dynamics 365 for Retail i używania aplikacji POS należy zwrócić uwagę, że POS zapewnia ograniczoną obsługę wymiarów magazynowych i zapasów określonych typów towarów.
+Podczas pracy z zapasami w programie Dynamics 365 Retail i używania aplikacji POS należy zwrócić uwagę, że POS zapewnia ograniczoną obsługę wymiarów magazynowych i zapasów określonych typów towarów.
 
 Rozwiązanie POS nie obsługuje następujących konfiguracje towarów:
 
@@ -56,7 +56,7 @@ Rozwiązanie POS zapewnia ograniczoną obsługę następujących wymiarów. Ogra
 
 ## <a name="purchase-orders"></a>Zamówienia zakupu
 
-Zamówienia zakupu są tworzone w centrali. Jeśli magazyn sprzedaży detalicznej znajduje się w nagłówku zamówienia zakupu, zamówienia można otrzymać w sklepie przy użyciu aplikacji Modern POS (MPOS) lub Cloud POS dostępnej w programie Microsoft Dynamics 365 for Retail, korzystając z operacji **pobrania/przyjęcia**. Po wprowadzeniu ilości odebranych w sklepie w polu **Dostarczone teraz** w punkcie sprzedaży dla dokumentu zamówienia zakupu, można je zapisać lokalnie lub zatwierdzić. Zapisanie tych danych lokalnie nie ma wpływu na zapasy w magazynie. Zapisywanie powinno być wykonywane tylko wtedy, gdy użytkownik nie jest gotowy do zaksięgowania przyjęcia w centrali i musi mieć możliwość tymczasowego przechowywania poprzednio wprowadzonych danych towaru **dostarczonego teraz**. Spowoduje to zapisanie lokalne danych towaru dostarczonego teraz w bazie danych kanału użytkownika. Po przetworzeniu dokumentu przy użyciu opcji **zatwierdzania** dane towaru **dostarczonego teraz** są wysyłane do centrali i zostanie zaksięgowany paragon zamówienia zakupu. 
+Zamówienia zakupu są tworzone w centrali. Jeśli magazyn sprzedaży detalicznej znajduje się w nagłówku zamówienia zakupu, zamówienia można otrzymać w sklepie przy użyciu aplikacji Modern POS (MPOS) lub Cloud POS dostępnej w programie , korzystając z operacji **pobrania/przyjęcia**. Po wprowadzeniu ilości odebranych w sklepie w polu **Dostarczone teraz** w punkcie sprzedaży dla dokumentu zamówienia zakupu, można je zapisać lokalnie lub zatwierdzić. Zapisanie tych danych lokalnie nie ma wpływu na zapasy w magazynie. Zapisywanie powinno być wykonywane tylko wtedy, gdy użytkownik nie jest gotowy do zaksięgowania przyjęcia w centrali i musi mieć możliwość tymczasowego przechowywania poprzednio wprowadzonych danych towaru **dostarczonego teraz**. Spowoduje to zapisanie lokalne danych towaru dostarczonego teraz w bazie danych kanału użytkownika. Po przetworzeniu dokumentu przy użyciu opcji **zatwierdzania** dane towaru **dostarczonego teraz** są wysyłane do centrali i zostanie zaksięgowany paragon zamówienia zakupu. 
 
 ## <a name="transfer-orders"></a>Zamówienia przeniesienia
 

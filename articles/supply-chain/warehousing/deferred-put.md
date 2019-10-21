@@ -1,6 +1,6 @@
 ---
 title: Odroczone przetwarzanie pracy magazynowej
-description: W tym temacie opisano funkcje, która udostępnia odroczone przetwarzanie operacji odłożenia pracy magazynowej w programie Microsoft Dynamics 365 for Finance and Operations.
+description: W tym temacie opisano funkcje, która udostępnia odroczone przetwarzanie operacji odłożenia pracy magazynowej w usłudze Dynamics 365 Supply Chain Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/17/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4905084f9bc28e55c307921280733c6acb80db86
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863593"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026943"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Odroczone przetwarzanie pracy magazynowej
 
@@ -29,7 +29,8 @@ ms.locfileid: "1863593"
 
 [!include [banner](../includes/pivate-preview-banner.md)]
 
-W tym temacie opisano funkcje, która udostępnia odroczone przetwarzanie operacji odłożenia pracy magazynowej w programie Microsoft Dynamics 365 for Finance and Operations.
+W tym temacie opisano funkcje, która udostępnia odroczone przetwarzanie operacji odłożenia pracy magazynowej w programie Dynamics 365 Supply Chain Management.
+
 
 Funkcja odroczonego przetwarzania umożliwia pracownikom magazynu kontynuowanie innych prac podczas przetwarzania operacji odłożenia w tle. Odroczonego przetwarzania jest przydatne, gdy wiele wierszy pracy musi być przetwarzanych i pracownik może pozwolić, aby praca była przetwarzana asynchronicznie. Jest to również przydatne, kiedy na serwer zdarzają się nieplanowane wydłużenia czasu przetwarzania, a zwiększony czas przetwarzania może wpłynąć na produktywność użytkownika.
 

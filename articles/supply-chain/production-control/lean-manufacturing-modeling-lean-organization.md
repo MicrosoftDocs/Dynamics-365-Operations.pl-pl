@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40664936382f5edcb3c1680aa4af245bdef539a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560147"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250232"
 ---
 # <a name="modeling-a-lean-organization"></a>Modelowanie organizacji oszczędnej
 
@@ -39,7 +39,7 @@ W scenariuszach produkcyjnych opartych na zleceniach produkcyjnych materiały s�
 
 Aby zminimalizować czasy realizacji dostaw i ryzyko wystąpienia nadwyżek zapasów między gniazdami produkcyjnymi, co następuje przy produkcji wsadowej, scenariusz produkcji oszczędnej wprowadza funkcje uzupełniania zapasów Kanban i supermarketów w obszarach produkcji i uzupełniania zapasów w magazynie. Zazwyczaj te funkcje zakłócają produkcję w częściowo niezależnych cyklach Kanban. Uzupełnianie zapasów Kanban dla półproduktów nie jest już inicjowane przez zamówienie na gotowy produkt. 
 
-Aby ponownie umożliwić kontekst produkcji i kosztów w różnych scenariuszach Kanban proponowanych w usłudze Microsoft Dynamics 365 for Finance and Operations, wprowadzono przepływy produkcji oparte na działaniach jako podstawę dla produkcji oszczędnej. Wszystkie reguły Kanban odnoszą się do tej wstępnie zdefiniowanej struktury. Model oparty na działaniach umożliwia konfigurowanie różnorodnych scenariuszy. Jednak nie zwiększa on poziomu komplikacji dla pracowników na produkcji, ponieważ wszystkie scenariusze używają tego samego interfejsu użytkownika opartego na działania.
+Aby ponownie umożliwić kontekst produkcji i kosztów w różnych proponowanych scenariuszach Kanban, wprowadzono przepływy produkcji oparte na działaniach jako podstawę dla produkcji oszczędnej. Wszystkie reguły Kanban odnoszą się do tej wstępnie zdefiniowanej struktury. Model oparty na działaniach umożliwia konfigurowanie różnorodnych scenariuszy. Jednak nie zwiększa on poziomu komplikacji dla pracowników na produkcji, ponieważ wszystkie scenariusze używają tego samego interfejsu użytkownika opartego na działania.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Półprodukty (bez poziomów BOM)
 Moduł Lean Manufacturing integruje w jednej strukturze karty Kanban dla produktów i półproduktów umieszczanych w zapasach, oferując w ten sposób ujednolicone środowisko obsługi we wszystkich przypadkach. Dzięki tej architekturze nie trzeba wprowadzać dodatkowych poziomów BOM w celu umożliwienia używania kart Kanban do półproduktów. Ta architektura pozwala także zminimalizować transakcje magazynowe.
@@ -50,7 +50,7 @@ Wynikające z produkcji oszczędnej ograniczenie rozmiarów partii do idealnego 
 ## <a name="value-streams-and-value-stream-mapping"></a>Strumienie wartości i mapowanie strumienia wartości
 Architektura modułu Lean Manufacturing została opracowana w oparciu o 5 zasad produkcji oszczędnej sformułowanych przez Womacka i Jonesa: wartość dla klienta, strumień wartości, ciągły przepływ, system ssący i dążenie do doskonałości. Jedną z aprobowanych metod wdrażania rozwiązań produkcji oszczędnej w realnym świecie produkcji jest mapowanie strumienia wartości (VSM). Ta metoda została wprowadzona przez Rothera i Shooka w publikacji „Naucz się Widzieć” wydanej przez Lean Manufacturing Institute. 
 
-W programie Finance and Operations strumień przyszłej wartości można modelować jako wersję przepływu produkcji. Wszystkie procesy strumienia wartości są modelowane jako działania procesu. Przesunięcia lub przeniesienia mogą być modelowane jako działania przeniesienia, jeśli stan przeniesienia musi być zarejestrowany lub jeśli jest wymagana integracja z pobieraniem z zapasów lub wysyłkami skonsolidowanymi. 
+Strumień przyszłej wartości można modelować jako wersję przepływu produkcji. Wszystkie procesy strumienia wartości są modelowane jako działania procesu. Przesunięcia lub przeniesienia mogą być modelowane jako działania przeniesienia, jeśli stan przeniesienia musi być zarejestrowany lub jeśli jest wymagana integracja z pobieraniem z zapasów lub wysyłkami skonsolidowanymi. 
 
 Sam strumień wartości jest modelowany jako jednostka operacyjna. Z tego względu strumień wartości może służyć jako wymiar finansowy.
 

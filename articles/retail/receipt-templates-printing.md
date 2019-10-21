@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie i projektowanie formatów paragonów
-description: W tym artykule opisano modyfikowanie układów formularzy w celu sterowania sposobem drukowania paragonów, faktur i innych dokumentów. Moduł Microsoft Dynamics 365 for Retail zawiera projektanta układów, który pozwala łatwo tworzyć i modyfikować różne układy formularzy.
+description: W tym artykule opisano modyfikowanie układów formularzy w celu sterowania sposobem drukowania paragonów, faktur i innych dokumentów. Moduł Dynamics 365 Retail zawiera projektanta układów, który pozwala łatwo tworzyć i modyfikować różne układy formularzy.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: eb85752b53d0d48f07bfed9423637cb6c646ab61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553075"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025132"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Konfigurowanie i projektowanie formatów paragonów
 
 [!include [banner](includes/banner.md)]
 
-W tym artykule opisano modyfikowanie układów formularzy w celu sterowania sposobem drukowania paragonów, faktur i innych dokumentów. Moduł Microsoft Dynamics 365 for Retail zawiera projektanta układów, który pozwala łatwo tworzyć i modyfikować różne układy formularzy.
+W tym artykule opisano modyfikowanie układów formularzy w celu sterowania sposobem drukowania paragonów, faktur i innych dokumentów. Dynamics 365 Retail zawiera projektanta układów, który pozwala łatwo tworzyć i modyfikować różne układy formularzy.
 
 > [!IMPORTANT]
 > Musisz ustawić układy formularza i profile paragonów, aby drukować potwierdzenia i inne dokumenty z aplikacji Retail Modern POS i Cloud POS. Można umieścić wiele układów formularzy w profilu paragonu. Następnie można przypisać profil paragonu do drukarki, modyfikując profil sprzętu.
@@ -55,7 +55,7 @@ Użyj konstruktor układu formularza, aby w sposób graficzny stworzyć układ f
 2. Na stronie **formatu paragonu** wybierz układ formularza, a następnie kliknij przycisk **Projektant**.
 3. Kliknij **Uruchom**, aby rozpocząć instalację hosta projektanta sieci sprzedaży.
 4. Na pasku powiadomień, który pojawia się u dołu okna programu Internet Explorer, kliknij przycisk **Otwórz**, aby rozpocząć instalację projektanta obsługiwanego jednym kliknięciem. (Pasek powiadomień może pojawiać się w innych miejscach w innych przeglądarkach). Wskaźnik postępu pokazuje postęp procesu instalacji.
-5. Po zakończeniu instalacji wprowadź nazwę użytkownika programu Dynamics 365 for Retail i hasło, a następnie kliknij **Zaloguj**, aby uruchomić projektanta.
+5. Po zakończeniu instalacji wprowadź nazwę użytkownika programu Retail i hasło, a następnie kliknij **Zaloguj**, aby uruchomić projektanta.
 6. Po zweryfikowaniu poświadczeń użytkownika i uruchomieniu projektanta można rozpocząć projektowanie formatu paragonów lub zmodyfikować istniejący format.
 7. Aby utworzyć elementy formularza, zaznacz sekcje **Nagłówek**, **Wiersze** lub **Stopka**, a następnie przeciągnij element z sekcji do obszaru roboczego. Większość elementów zawiera zmienne, które są automatycznie wypełnione danymi z bazy danych. Inne elementy, na przykład **Tekst**, umożliwiają drukowanie na paragonie niestandardowego tekstu.
 

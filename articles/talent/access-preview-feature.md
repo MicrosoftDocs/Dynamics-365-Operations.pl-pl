@@ -1,6 +1,6 @@
 ---
-title: Dostęp do funkcji w wersji zapoznawczej w aplikacji Microsoft Dynamics 365 for Talent
-description: W tym temacie opisano, jak administrator może włączyć funkcje w wersji zapoznawczej w aplikacji Microsoft Dynamics 365 for Talent, oraz podano listę funkcji dostępnych obecnie w wersji zapoznawczej.
+title: Dostęp do funkcji w wersji zapoznawczej w aplikacji Microsoft Dynamics 365 Talent
+description: W tym temacie opisano, jak administrator może włączyć funkcje w wersji zapoznawczej w aplikacji Microsoft Dynamics 365 Talent, oraz podano listę funkcji dostępnych obecnie w wersji zapoznawczej.
 author: tracykeya
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 6a5aa8d6ea72ec3d3910edea291c4340ab607326
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: e607c2ba4b544d60c97d98bd49b07d912d83ebc6
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739594"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008709"
 ---
 # <a name="manage-preview-features"></a>Zarządzaj funkcjami w wersji zapoznawczej
 
 [!include[banner](../includes/banner.md)]
 
-W ramach ciągłego wdrażania nowych funkcji zarządzania kapitałem ludzkim (HCM) w aplikacji Microsoft Dynamics 365 for Talent chcemy stworzyć klientom możliwość jak najszybszego zetknięcia się z nimi. Administratorzy mogą przeglądać i używać funkcji zapoznawczych w swoich środowiskach. Te funkcje są prawie gotowe do ogólnego udostępnienia i przeszły wszechstronne testy. Jednak zanim je upublicznimy powszechnie, chcemy jeszcze poznać finalne opinie klientów i przeprowadzić ostatnią weryfikację.
+W ramach ciągłego wdrażania nowych funkcji zarządzania kapitałem ludzkim (HCM) w aplikacji Microsoft Dynamics 365 Talent chcemy stworzyć klientom możliwość jak najszybszego zetknięcia się z nimi. Administratorzy mogą przeglądać i używać funkcji zapoznawczych w swoich środowiskach. Te funkcje są prawie gotowe do ogólnego udostępnienia i przeszły wszechstronne testy. Jednak zanim je upublicznimy powszechnie, chcemy jeszcze poznać finalne opinie klientów i przeprowadzić ostatnią weryfikację.
 
-W tym temacie opisano, jak włączyć funkcje w wersji zapoznawczej, oraz podano listę funkcji dostępnych obecnie w wersji zapoznawczej. Lista będzie aktualizowana wraz z przekazywaniem kolejnych funkcji ogółowi użytkowników i udostępnianiem wersji zapoznawczych. Dodawanie nowych funkcji zapoznawczych nie będzie w żaden sposób anonsowane. Użytkownicy po prostu zaczną je widzieć. Aby uzyskać więcej informacji o nowych funkcjach w aplikacji Talent, zobacz [Nowości i zmiany w aplikacji Dynamics 365 for Talent](./whats-new.md) oraz [Informacje o wersji Dynamics 365 i Power Platform](https://docs.microsoft.com/business-applications-release-notes).
+W tym temacie opisano, jak włączyć funkcje w wersji zapoznawczej, oraz podano listę funkcji dostępnych obecnie w wersji zapoznawczej. Lista będzie aktualizowana wraz z przekazywaniem kolejnych funkcji ogółowi użytkowników i udostępnianiem wersji zapoznawczych. Dodawanie nowych funkcji zapoznawczych nie będzie w żaden sposób anonsowane. Użytkownicy po prostu zaczną je widzieć. Aby uzyskać więcej informacji o nowych funkcjach w aplikacji Talent, zobacz [Nowości i zmiany w aplikacji Dynamics 365 Talent](./whats-new.md) oraz [Informacje o wersji Dynamics 365 i Power Platform](https://docs.microsoft.com/business-applications-release-notes).
 
 ## <a name="enable-or-disable-preview-features"></a>Włączanie i wyłączanie funkcji zapoznawczych
 
@@ -40,9 +40,9 @@ Aby uzyskać dostęp do funkcji w wersji zapoznawczej, należy je najpierw włą
 > [!IMPORTANT]
 > Włączenie ustawienia **Funkcje w wersji zapoznawczej** skutkuje włączeniem funkcji w wersji zapoznawczej wszystkim użytkownikom w organizacji pracującym w tym środowisku. Wyłączenie ustawienia powoduje wyłączenie funkcji w wersji zapoznawczej i zablokowanie użytkownikom dostępu do nich. Funkcje zapoznawcze są obsługiwane w ograniczonym zakresie w aplikacji Talent. Mogą korzystać ze słabszych narzędzi ochrony prywatności i bezpieczeństwa oraz nie są objęte umową dotyczącą poziomu usług (SLA) zawieraną dla aplikacji Talent. Nie należy używać funkcji zapoznawczych do przetwarzania danych osobowych (tzn. wszelkich informacji, które mogą jednoznacznie identyfikować użytkownika) ani innych danych, które podlegają prawnym lub ustawowym wymogom dotyczącym zgodności.
 
-### <a name="attract"></a>Przyciągaj
+### <a name="attract"></a>Attract
 
-1. Zaloguj się do programu Microsoft Dynamics 365 for Talent: Attract.
+1. Zaloguj się do programu Microsoft Dynamics 365 Talent: Attract.
 2. W menu **Ustawienia** (symbol koła zębatego) w prawym górnym rogu wybierz opcję **Centrum administracyjne**.
 3. Na karcie **Zarządzanie funkcjami** zaznacz opcję **Funkcje w wersji zapoznawczej**, tak aby zmieniła kolor na niebieski i treść na **Włączone**.
 
@@ -69,11 +69,11 @@ Aby uzyskać dostęp do funkcji w wersji zapoznawczej, należy je najpierw włą
 
 ### <a name="onboard"></a>Rekrutuj
 
-Obecnie nie są dostępne żadne funkcje w wersji zapoznawczej aplikacji Microsoft Dynamics 365 for Talent: Onboard.
+Obecnie nie są dostępne żadne funkcje w wersji zapoznawczej aplikacji Microsoft Dynamics 365 Talent: Onboard.
 
 ## <a name="features-that-are-currently-in-preview"></a>Funkcje istniejące obecnie w wersjach zapoznawczych
 
-### <a name="attract"></a>Przyciągaj
+### <a name="attract"></a>Attract
 
 - [Rekomendacja kandydata](./intelligent-recommendations.md#candidate-recommendations) — jeśli na którąkolwiek funkcję jest więcej niż 10 kandydatów mających życiorysy lub kompletne profile, to kandydaci najlepiej spełniający wymagania określone dla funkcji są wyświetlani w sekcji **Kandydaci do wzięcia pod uwagę** na stronie tej funkcji.
 - [Rekomendacja funkcji](./intelligent-recommendations.md#job-recommendations) — jeśli w witrynie rozwoju kariery jest opublikowanych więcej niż dziesięć ofert pracy, aplikacja Attact przedstawia rekomendacje funkcji prospektom.

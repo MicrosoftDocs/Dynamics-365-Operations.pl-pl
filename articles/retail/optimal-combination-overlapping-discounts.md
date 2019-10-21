@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 00d7457b13e6633c9285a1fc43b8f6dd60dae9ae
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 555098a7d11cb0b4c0f90357ff260598e80108f5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836539"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017927"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Określenia optymalnej kombinacji rabatów nakładających się
 
@@ -32,7 +32,7 @@ ms.locfileid: "1836539"
 
 Gdy rabaty się nakładają, należy określić taką kombinację nakładających się rabatów, która wygeneruje najniższą sumę transakcji lub najwyższy rabat końcowy. Gdy kwota rabatu różni się zależności od cen kupowanych produktów, taki jak w popularnym rabacie detalicznym „Kup 1, drugi dostaniesz X procent taniej” (BOGO), ten proces staje się zagadnieniem optymalizacji kombinatorycznej.
 
-Ten artykuł dotyczy Microsoft Dynamics AX 2012 R3 z bazy wiedzy KB 3105973 (wersja z 2 listopada 2015 r.) lub nowszej, oraz Microsoft Dynamics 365 for Retail. Aby umożliwić bezzwłoczne stosowanie kombinacji nakładających się rabatów, wprowadziliśmy metodę stosowania nakładających się rabatów. Nazywamy tę nową metodę **rankingiem wartości krańcowej**. Ranking wartości krańcowej jest stosowany w przypadku, gdy czas potrzebny do ocenienia możliwych kombinacji nakładających się rabatów przekracza próg skonfigurowany na stronie **Parametry sieci sprzedaży**. W metodzie rankingu wartości krańcowej wartość jest obliczana dla każdego nakładającego się rabatu poprzez użycie wartość rabatu ze wspólnych produktów. Nakładające się rabaty są następnie stosowane w porządku od najwyższej wartości względnej do najniższej wartości względnej. Szczegółowe informacje na temat nowej metody zawiera sekcja „Wartość krańcowa” w dalszej części tego artykułu. Ranking wartości krańcowej nie jest używany, gdy kwoty rabatów na produkt są całkowicie niezależne od innych produktów w transakcji. Na przykład ta metoda nie jest używana dla dwóch rabatów prostych ani dla rabatu prostego i rabatu ilościowego na jeden produkt.
+Ten artykuł dotyczy Microsoft Dynamics AX 2012 R3 z bazy wiedzy KB 3105973 (wersja z 2 listopada 2015 r.) lub nowszej, oraz Dynamics 365 Retail. Aby umożliwić bezzwłoczne stosowanie kombinacji nakładających się rabatów, wprowadziliśmy metodę stosowania nakładających się rabatów. Nazywamy tę nową metodę **rankingiem wartości krańcowej**. Ranking wartości krańcowej jest stosowany w przypadku, gdy czas potrzebny do ocenienia możliwych kombinacji nakładających się rabatów przekracza próg skonfigurowany na stronie **Parametry sieci sprzedaży**. W metodzie rankingu wartości krańcowej wartość jest obliczana dla każdego nakładającego się rabatu poprzez użycie wartość rabatu ze wspólnych produktów. Nakładające się rabaty są następnie stosowane w porządku od najwyższej wartości względnej do najniższej wartości względnej. Szczegółowe informacje na temat nowej metody zawiera sekcja „Wartość krańcowa” w dalszej części tego artykułu. Ranking wartości krańcowej nie jest używany, gdy kwoty rabatów na produkt są całkowicie niezależne od innych produktów w transakcji. Na przykład ta metoda nie jest używana dla dwóch rabatów prostych ani dla rabatu prostego i rabatu ilościowego na jeden produkt.
 
 ## <a name="discount-examples"></a>Przykłady rabatów
 

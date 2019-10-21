@@ -3,7 +3,7 @@ title: Serie czynności konserwacyjnych
 description: W tym temacie wyjaśniono serie czynności konserwacyjnych w module Zarządzanie składnikami majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a0ac4820d2efa37387382c2890e3ddc7dbc0878b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875837"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922029"
 ---
 # <a name="maintenance-rounds"></a>Serie czynności konserwacyjnych
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 Serie czynności konserwacyjnych można konfigurować w **Zarządzanie składnikami majątku** odniesieniu do różnych składników majątku, na których trzeba wykonywać podobne zadania w regularnych odstępach czasu. Na przykład zadania smarowania lub inspekcje bezpieczeństwa, które trzeba wykonać na kilku maszynach w tych samych interwałach. Pierwszym krokiem jest utworzenie rundy serwisowego, w tym środków trwałych wymagających tej samej formy zadania konserwacji. Następnie należy zaplanować zaokrąglenia obsługi. Po ukończeniu harmonogramu zaokrąglania eksploatacji można wyświetlić wszystkie rekordy zadań odnoszące się do tej rundy we **Wszystkich wierszach harmonogramu konserwacji** i **Otwieranie wierszy harmonogramu konserwacji**.
 
@@ -83,12 +81,14 @@ Serie czynności konserwacyjnych można konfigurować w **Zarządzanie składnik
 >[!NOTE]
 >Pola **Składniki majątku** i **Wiersze** znajdujące się w grupie **Szczegóły** na skróconej karcie **Nagłówek** zawierają łączną liczbę środków trwałych i wierszy związanych z wybraną serią czynności konserwacyjnych.
 
+Poniższa ilustracja przedstawia i przykład cyklu eksploatacji zawierającego trzy składniki majatku.
+
 ![Rysunek 1](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>Planowanie serii czynności konserwacyjnych
 
-Po skonfigurowaniu serii czynności konserwacyjnych należy uruchomić zadanie planowania w celu zaplanowania wszystkich zadań związanych z serią czynności konserwacyjnych.
+Po skonfigurowaniu serii czynności konserwacyjnych należy uruchomić zadanie harmonogramu w celu zaplanowania wszystkich zadań związanych z serią czynności konserwacyjnych.
 
 1. Kliknij **Zarządzanie składnikami majątku** > **Okresowe** > **Konserwacja zapobiegawcza** > **Planowanie serii czynności konserwacyjnych** lub **Zarządzanie składnikami majątku** > **Wspólne** > **Harmonogram konserwacji** > **Wszystkie harmonogramy konserwacji** lub **Otwieranie wierszy harmonogramu konserwacji** lub **Otwieranie puli harmonogramów konserwacji** > na liście wybierz harmonogram konserwacji > przycisk **Serie czynności konserwacyjnych**.
 
@@ -106,6 +106,8 @@ Po skonfigurowaniu serii czynności konserwacyjnych należy uruchomić zadanie p
 6. Kliknij przycisk **OK**.
 
 7. Teraz widzisz serie czynności konserwacyjnych w **Zarządzanie składnikami majątku** > **Wspólne** > **harmonogram konserwacji** > **Wszystkie harmonogramy konserwacji** lub **Otwieranie wierszy harmonogramu konserwacji**. Jeśli zaplanowane seria czynności konserwacyjnych jest połączone z pulą zleceń roboczych, wiersze harmonogramu konserwacji można również wyświetlać w **Otwieranie puli harmonogramów konserwacji**. Wiersze harmonogramu konserwacji utworzone z serii mają typ odwołania „serie czynności konserwacyjnych”.
+
+W dwóch poniższych ilustracjach przedstawiono zadanie planowania w oknie dialogowym **Planowanie serii czynności konserwacyjnych** oraz wiersze harmonogramu konserwacji utworzone we **Wszystkich harmonogramach konserwacji** na podstawie tego zadania harmonogramu.
 
 ![Rysunek 2](media/14-preventive-maintenance.png)
 

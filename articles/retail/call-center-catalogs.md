@@ -1,6 +1,6 @@
 ---
 title: Katalogi biura obsługi
-description: W tym artykule opisano funkcje katalogów specyficzne dla biur obsługi dostępne w Microsoft Dynamics 365 for Retail.
+description: W tym artykule opisano funkcje katalogów specyficzne dla biur obsługi dostępne w Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2ad50be1394daf5bffa6391d2f56340aad14120b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562749"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023666"
 ---
 # <a name="call-center-catalogs"></a>Katalogi biura obsługi
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano funkcje powiązane z możliwościami katalogów specyficzne dla biur obsługi dostępne w Microsoft Dynamics 365 for Retail.
+W tym temacie opisano funkcje powiązane z możliwościami katalogów specyficzne dla biur obsługi dostępne w Dynamics 365 Retail.
 
-Funkcje katalogu w programie Dynamics 365 for Retail mogą służyć do wielu celów. Początkowo funkcje katalogu utworzono do obsługi integracji z systemami handlu elektronicznego innych producentów. W konfiguracji katalogu firmy mogły tworzyć grupy produktów i atrybutów przeznaczonych do opublikowania na zewnątrz, tak aby mogły być wykorzystywane przez systemy handlu elektronicznego innych producentów.
+Funkcje katalogu w usłudze Retail mogą służyć do wielu celów. Początkowo funkcje katalogu utworzono do obsługi integracji z systemami handlu elektronicznego innych producentów. W konfiguracji katalogu firmy mogły tworzyć grupy produktów i atrybutów przeznaczonych do opublikowania na zewnątrz, tak aby mogły być wykorzystywane przez systemy handlu elektronicznego innych producentów.
 
-Jeśli do Dynamics 365 for Retail dodano wsparcie biura obsługi, projekt katalogu został rozszerzony w celu dodania dodatkowych możliwości obsługi i zarządzania funkcjami związane z tradycyjnymi katalogami marketingu bezpośredniego. Firma sprzedająca bezpośrednio konsumentom często tworzy drukowane katalogi, które następnie są wysyłane pocztą do klientów z jednego lub więcej segmentów. Te katalogi zazwyczaj będą zawierać specjalne promocje lub oferty, które zostaną zrealizowane, jeśli w czasie tworzenia zamówienia klient przedstawi kod identyfikacyjny katalogu.
+Jeśli do aplikacji Retail dodano wsparcie biura obsługi, projekt katalogu został rozszerzony w celu dodania dodatkowych możliwości obsługi i zarządzania funkcjami związane z tradycyjnymi katalogami marketingu bezpośredniego. Firma sprzedająca bezpośrednio konsumentom często tworzy drukowane katalogi, które następnie są wysyłane pocztą do klientów z jednego lub więcej segmentów. Te katalogi zazwyczaj będą zawierać specjalne promocje lub oferty, które zostaną zrealizowane, jeśli w czasie tworzenia zamówienia klient przedstawi kod identyfikacyjny katalogu.
 
-Firmy prowadzące działalność marketingową kierowane bezpośrednio do konsumentów bardzo koncentrują się na śledzeniu reakcji na te katalogi, aby mieć pewność, że koszty produkcji i wysyłki tych katalogów pocztą są uzasadnione. Aby śledzić odpowiedzi, na tylnej części katalogu drukowany jest zazwyczaj kod, o którego podanie jest proszony odbiorca katalogu, który dzwoni, aby złożyć zamówienie przez telefon (lub który należy wprowadzić w czasie składania zamówienia przez internet). W branży istnieje wiele różnych terminów na kod śledzenia katalogu (w tym kod klucza, kod promocyjny, kod katalogu, kod źródłowy), w wypadku Dynamics 365 for Retail określamy go mianem **Identyfikatora kodu źródłowego**.
+Firmy prowadzące działalność marketingową kierowane bezpośrednio do konsumentów bardzo koncentrują się na śledzeniu reakcji na te katalogi, aby mieć pewność, że koszty produkcji i wysyłki tych katalogów pocztą są uzasadnione. Aby śledzić odpowiedzi, na tylnej części katalogu drukowany jest zazwyczaj kod, o którego podanie jest proszony odbiorca katalogu, który dzwoni, aby złożyć zamówienie przez telefon (lub który należy wprowadzić w czasie składania zamówienia przez internet). W branży istnieje wiele różnych terminów na kod śledzenia katalogu (w tym kod klucza, kod promocyjny, kod katalogu, kod źródłowy), w wypadku aplikacji Retail określamy go mianem **Identyfikatora kodu źródłowego**.
 
 ## <a name="basic-catalog-setup"></a>Podstawowa konfiguracja katalogu
 
@@ -92,7 +92,7 @@ Podczas konfigurowania produktów w katalogu, użyj akcji **Układ strony produk
 
 ## <a name="catalog-requests"></a>Zapotrzebowania na katalog
 
-Ponieważ katalogi są konfigurowane i publikowane w programie Dynamics 365 for Retail, można używać funkcji **Wyślij katalog**. Ta funkcja jest dostępna na stronach **Wyszukiwanie odbiorcy** i **Obsługa klienta**. Po wybraniu rekordu odbiorcy za pomocą funkcji **Wyszukiwanie odbiorcy** lub podczas wyświetlania wybranych kont odbiorców z okna **Obsługa klienta** użytkownicy mogą wybrać opcję **Wyślij katalog**, co spowoduje otwarcie okna dialogowego pozwalającego użytkownikowi wybierać z listy wszystkich opublikowanych i aktywnych katalogów. Użytkownik może wybrać katalog i ilości oraz konkretny identyfikator kodu źródłowego do wysłania. Po kliknięciu przycisku **Wyślij** zapisywane jest żądanie, którym można zarządzać poprzez drukowanie raportu **Żądania w katalogu**. Ten raport można znaleźć, przechodząc do raportu **Sprzedaż detaliczna** \> **Raporty biura obsługi** \> **Raport zapotrzebowań na katalog**. Wyświetla listę wszystkich wniosków o katalog, w tym nazwy i dane adresowe odbiorców, którzy o niego poprosili. Ten raport może być używany wewnętrznie lub dane mogą być przenoszone do strony trzeciej wpierającej proces zewnętrzny w celu fizycznego wysłania katalogu do odbiorcy.
+Ponieważ katalogi są konfigurowane i publikowane w usłudze Retail, można używać funkcji **Wyślij katalog**. Ta funkcja jest dostępna na stronach **Wyszukiwanie odbiorcy** i **Obsługa klienta**. Po wybraniu rekordu odbiorcy za pomocą funkcji **Wyszukiwanie odbiorcy** lub podczas wyświetlania wybranych kont odbiorców z okna **Obsługa klienta** użytkownicy mogą wybrać opcję **Wyślij katalog**, co spowoduje otwarcie okna dialogowego pozwalającego użytkownikowi wybierać z listy wszystkich opublikowanych i aktywnych katalogów. Użytkownik może wybrać katalog i ilości oraz konkretny identyfikator kodu źródłowego do wysłania. Po kliknięciu przycisku **Wyślij** zapisywane jest żądanie, którym można zarządzać poprzez drukowanie raportu **Żądania w katalogu**. Ten raport można znaleźć, przechodząc do raportu **Sprzedaż detaliczna** \> **Raporty biura obsługi** \> **Raport zapotrzebowań na katalog**. Wyświetla listę wszystkich wniosków o katalog, w tym nazwy i dane adresowe odbiorców, którzy o niego poprosili. Ten raport może być używany wewnętrznie lub dane mogą być przenoszone do strony trzeciej wpierającej proces zewnętrzny w celu fizycznego wysłania katalogu do odbiorcy.
 
 ## <a name="additional-features"></a>Dodatkowe funkcje
 

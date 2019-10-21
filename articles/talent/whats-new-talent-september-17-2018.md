@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (17 września 2018 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent Core HR.
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent - Core HR (17 września 2018 r.)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/17/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 213324f9074f88d9fdc8efdfa46bc3ed7817d1e8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 558c2cdb4addce54af937ff862535d65f1ebd602
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518862"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026051"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (17 września 2018 r.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-september-17-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent: Core HR (17 września 2018 r.)
 
 [!include [banner](includes/banner.md)]
 
@@ -37,13 +37,13 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Core HR.
 
 Dodano nowy typ naliczania do planów urlopów. Harmonogram naliczania może teraz być oparty na liczbie przepracowanych miesięcy lub liczbie przepracowanych godzin. Aby uzyskać więcej informacji, zobacz [Naliczanie czasu wolnego na podstawie liczby przepracowanych godzin](leave-accrue-hours-worked.md).
 
-## <a name="platform-update-18"></a>Aktualizacja platformy Update 18
+## <a name="platform-update-18-for-finance-and-operations"></a>Aktualizacja Platform update 18 dla Finance and Operations
 
-Aplikacja Talent zawiera teraz elementy z aktualizacji platformy 18. 
+Aplikacja Talent zawiera teraz elementy z aktualizacji Platform update 18 dla Finance and Operations. 
 
 -   Pola obowiązkowe i inne można teraz ukrywać za pośrednictwem personalizacji. Pozwala to użytkownikowi utworzyć uproszczone środowisko, w którym nie są wyświetlane wymagane pola o wartościach ustawianych domyślnie przez logikę biznesową. Wymagane pola ukryte również są tymczasowo pokazywane, gdy są puste w trakcie próby zapisu.
 
--   W aktualizacji platformy 18 klient internetowy aplikacji Talent prezentuje obiekty graficzne w sposób zgodny z kanonem wizualizacji Microsoft Fluent.
+-   W aktualizacji Platform update 18 dla Finance and Operations klient internetowy aplikacji Talent prezentuje obiekty graficzne w sposób zgodny z Microsoft Fluent Design.
 
     -   Gdy pola są w trybie odczytu, można po prostu zaznaczyć opcję edycji w polu, aby przełączyć formularz na edytowanie.
 

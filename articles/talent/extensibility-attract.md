@@ -1,6 +1,6 @@
 ---
 title: Możliwości rozszerzania w aplikacji Attract
-description: W tym temacie opisano, jak można rozszerzyć funkcjonalność aplikacji Microsoft Dynamics 365 for Talent - Attract przy użyciu platformy Microsoft Power Platform.
+description: W tym temacie opisano, jak można rozszerzyć funkcjonalność aplikacji Microsoft Dynamics 365 Talent - Attract przy użyciu platformy Microsoft Power Platform.
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/18/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: 5db954d8847c252bee1c8e50acae546852ae9b94
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795227"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026240"
 ---
 # <a name="extensibility-in-attract"></a>Możliwości rozszerzania w aplikacji Attract
 
 [!include[banner](../includes/banner.md)]
 
-Aplikacja Microsoft Dynamics 365 for Talent bazuje na platformie Common Data Service dla aplikacji i można rozszerzać jej funkcjonalność na różne sposoby przy użyciu platformy Microsoft Power Platform oraz funkcji dostępnych w usłudze Common Data Service for Apps. W związku z tym system można konfigurować i personalizować za pomocą usług Microsoft PowerApps i Microsoft Flow. Można także uzyskiwać dodatkowe dane analityczne o osobach za pomocą usługi Microsoft Power BI. Ponadto nowe działania niestandardowe, takie jak PowerApps i Treści internetowe (iframe), umożliwiają znacznie większą niż dotąd elastyczność procesu rekrutacji. Za pomocą tych działań można dostosować proces rekrutacji do własnych potrzeb biznesowych i procesów oraz zapewnić zespołowi rekrutacyjnemu i kandydatom maksymalnie płynną, indywidualną obsługę.
+Aplikacja Microsoft Dynamics 365 Talent bazuje na Common Data Service dla aplikacji i można rozszerzać jej funkcjonalność na różne sposoby przy użyciu platformy Microsoft Power Platform oraz funkcji dostępnych w usłudze Common Data Service for Apps. W związku z tym system można konfigurować i personalizować za pomocą usług Microsoft PowerApps i Microsoft Flow. Można także uzyskiwać dodatkowe dane analityczne o osobach za pomocą usługi Microsoft Power BI. Ponadto nowe działania niestandardowe, takie jak PowerApps i Treści internetowe (iframe), umożliwiają znacznie większą niż dotąd elastyczność procesu rekrutacji. Za pomocą tych działań można dostosować proces rekrutacji do własnych potrzeb biznesowych i procesów oraz zapewnić zespołowi rekrutacyjnemu i kandydatom maksymalnie płynną, indywidualną obsługę.
 
 ## <a name="extending-option-sets-in-attract"></a>Rozszerzanie zestawów opcji w Attract
 
@@ -40,7 +40,7 @@ Aplikacja Microsoft Dynamics 365 for Talent bazuje na platformie Common Data Ser
 
 Poniżej wymieniono kroki, aby zaktualizować pole **przyczyny odrzucenia** wartościami, które są specyficzne dla firmy.  
 
-1. Aby rozszerzyć zestaw opcji **przyczyny odrzucenia**, przejdź do [witryny administratora PowerApps.](https://admin.powerapps.com).
+1. Aby rozszerzyć zestaw opcji **Przyczyny odrzucenia**, przejdź do [witryny administratora PowerApps](https://admin.powerapps.com).
 2. Może zostać wyświetlony monit do zalogowania się do swojego konta. Podaj poświadczenia identyfikatora użytkownika i hasła, które można użyć w celu zalogowania się do Dynamics365 i/lub Office 365, a następnie kliknij **Dalej**.
 3. Na karcie **środowiska** wybierz środowisko, którym chcesz zarządzać i dwukrotnie kliknij, aby wyświetlić kartę **szczegóły**.
 4. Na karcie **szczegóły** wybierz opcję **Centrum administracyjne usługi Dynamics 365**.
@@ -54,9 +54,9 @@ Poniżej wymieniono kroki, aby zaktualizować pole **przyczyny odrzucenia** wart
 12. Wybierz opcję **Zapisz**.
 13. Wybierz **Opublikuj** u góry strony.
 
-## <a name="take-advantage-of-the-microsoft-power-platform"></a>Wykorzystywanie platformy Microsoft Power Platform 
+## <a name="take-advantage-of-the-microsoft-power-platform"></a>Skorzystaj z funkcji Microsoft Power Platform 
 
-Ponieważ wszystkie dane aplikacji Attract są przechowywane na platformie Common Data Service, można za pomocą narzędzi platformy Microsoft Power Platform uwzględnić unikatowe potrzeby firmy w aplikacji Attract.
+Ponieważ wszystkie dane aplikacji Attract są przechowywane na Common Data Service, można za pomocą narzędzi Microsoft Power Platform uwzględnić unikatowe potrzeby firmy w aplikacji Attract.
 
 ### <a name="powerapps"></a>PowerApps
 
@@ -78,7 +78,7 @@ Niestandardowe działania, takie jak PowerApps i Treści internetowe (iframe), m
 
 #### <a name="powerapps-activity"></a>Działanie PowerApps 
 
-Działanie PowerApps umożliwia twórcy funkcji lub szablonu procesu rekrutacji na funkcję osadzenie aplikacji usługi PowerApps w przepływie rekrutacji. Po utworzeniu i opublikowaniu aplikacji można wprowadzić jej identyfikator w konfiguracjach działań. Za pomocą aplikacji usługi PowerApps można czytać i zapisywać dane do platformy Common Data Service. Można nawet powiązać aplikację z przepływem. Na przykład masz aplikację, przy użyciu której osoby rekrutujące wypełniają formularze w trakcie prowadzenia rozmów kwalifikacyjnych przez telefon. W tym przypadku można powiązać aplikację z przepływem, który ocenia, czy kandydata można przekazać do dalszego etapu w procesie rekrutacji na funkcję. Tego rodzaju działanie będzie widoczne tylko dla członków zespołu rekrutacyjnego. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania działania PowerApps, zobacz [Działania w aplikacji Attract](./activities-attract.md).
+Działanie PowerApps umożliwia twórcy funkcji lub szablonu procesu rekrutacji na funkcję osadzenie aplikacji usługi PowerApps w przepływie rekrutacji. Po utworzeniu i opublikowaniu aplikacji można wprowadzić jej identyfikator w konfiguracjach działań. Za pomocą aplikacji usługi PowerApps można czytać i zapisywać dane do platformy Common Data Service. Można nawet powiązać aplikację z przepływem. Na przykład masz aplikację, przy użyciu której osoby rekrutujące wypełniają formularze w trakcie prowadzenia rozmów kwalifikacyjnych przez telefon. W tym przypadku można powiązać aplikację z przepływem, który ocenia, czy kandydata można przekazać do dalszego etapu w procesie rekrutacji na funkcję. Tego rodzaju działanie będzie widoczne tylko dla członków zespołu rekrutacyjnego. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania działania PowerApps, zobacz [ Działania w aplikacji Attract](./activities-attract.md).
 
 > [!NOTE]
 > Działanie PowerApps jest dostępne tylko po zainstalowaniu dodatku kompleksowej obsługi rekrutacji.

@@ -3,7 +3,7 @@ title: Koszt harmonogramu konserwacji
 description: W tym temacie wyjaśniono harmonogram konserwacji w module Zarządzanie składnikami majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71b958839a914d90a86a0dcd16a09285ca6dcfa4
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: b2f53a4a64b06efc9269c607bfe1fc3a41c90cdd
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875830"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922075"
 ---
 # <a name="maintenance-schedule-cost"></a>Koszt harmonogramu konserwacji
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 W module Zarządzanie składnikami majątku można obliczać koszty budżetowe w wierszach harmonogramu konserwacji. Jest to przydatne w przypadku uzyskiwania przeglądu oczekiwanych kosztów, na przykład kosztów związanych z planowanymi zadaniami obsługi przeciwdziałania w przyszłym roku. Obliczenia są oparte na istniejących wierszach harmonogramu konserwacji typu „plany konserwacji” i „liczba serii” oraz „żądania konserwacji”.
 
@@ -48,10 +46,11 @@ W module Zarządzanie składnikami majątku można obliczać koszty budżetowe w
 
 5. Kliknij przycisk **OK**, aby rozpocząć obliczanie kosztu.
 
-6. Na karcie **Koszt harmonogramu konserwacji** w grupach okienka akcji **Grupuj wg...** kliknij odpowiednie przyciski, aby wyświetlić wymagany poziom szczegółowości obliczania kosztu. Wybrane przyciski okienka akcji są wyróżnione na niebiesko. Aby uaktywnić lub dezaktywować przycisk, należy go kliknąć.
+6. Na karcie **Koszt harmonogramu konserwacji** w grupach okienka akcji **Grupuj wg...** kliknij odpowiednie przyciski, aby wyświetlić wymagany poziom szczegółowości obliczania kosztu. Wybrane przyciski grupy okienek akcji są wyróżnione. Aby uaktywnić lub dezaktywować przycisk, należy go kliknąć.
 
 7. Kliknij przycisk **Oblicz koszt**, jeśli chcesz dokonać nowego obliczenia kosztu.
 
+Na poniższej ilustracji przedstawiono wyniki obliczenia kosztów harmonogramu konserwacji.
 
 ![Rysunek 1](media/17-preventive-maintenance.png)
 

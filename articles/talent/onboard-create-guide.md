@@ -1,6 +1,6 @@
 ---
-title: Tworzenie i wysyłanie przewodnika wdrażania do pracy poprzez Dynamics 365 for Talent - Onboard
-description: W tym temacie wyjaśniono użycie Microsoft Dynamics 365 for Talent - Onboard do utworzenia szablonu dla przewodnika wdrażania do pracy dla nowych pracowników. To zadanie jest podstawowym pierwszym krokiem w zarządzaniu kapitałem ludzkim (HCM) zatrudniania do wycofania strategii.
+title: Tworzenie i wysyłanie przewodnika wdrażania do pracy poprzez Dynamics 365 Talent - Onboard
+description: W tym temacie wyjaśniono użycie Microsoft Dynamics 365 Talent - Onboard do utworzenia szablonu dla przewodnika wdrażania do pracy dla nowych pracowników. To zadanie jest podstawowym pierwszym krokiem w zarządzaniu kapitałem ludzkim (HCM) zatrudniania do wycofania strategii.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: de5d584e3b7edba2751aa0c83b0465df2c3e4f7d
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: e4dbfcc3b3fd611eea36109a516a7b9361a9f654
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731607"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009861"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-for-talent-onboard"></a>Tworzenie i wysyłanie przewodnika wdrażania do pracy poprzez Dynamics 365 for Talent: Onboard
+# <a name="create-and-send-an-onboarding-guide"></a>Tworzenie i wysyłanie przewodnika wdrażania do pracy
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard umożliwia tworzenie przewodników wdrażania do pracy z szablonów, które zostały utworzone samodzielnie, z szablonów, które są dostępne w galerii lub od podstaw.
+Microsoft Dynamics 365 Talent: Onboard umożliwia tworzenie przewodników wdrażania do pracy z szablonów, które zostały utworzone samodzielnie, z szablonów, które są dostępne w galerii lub od podstaw.
 
 Po utworzeniu przewodnika wdrażania do pracy można wysłać go do nowego pracownika. Alternatywnie można wysłać go do wielu nowych pracowników, których określisz w pliku Microsoft Excel, który można pobrać z aplikacji Onboard.
 

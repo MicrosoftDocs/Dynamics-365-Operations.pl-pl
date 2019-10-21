@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
-ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
+ms.openlocfilehash: 64871eb5f7175701cfe1c9fefcc04b9da488748b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "1773270"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008462"
 ---
 # <a name="create-a-job"></a>Tworzenie funkcji
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano elementy funkcji w Microsoft Dynamics 365 for Talent: Attract. Ponadto wyjaśniono, jak utworzyć funkcję.
+W tym temacie opisano elementy funkcji w Microsoft Dynamics 365 Talent: Attract. Ponadto wyjaśniono, jak utworzyć funkcję.
 
 ## <a name="job-creation"></a>Tworzenie funkcji
 
@@ -74,7 +74,7 @@ Aby uzyskać więcej informacji o działaniach, które można dodawać do proces
 
 ## <a name="postings"></a>Księgowania
 
-Po uaktywnieniu funkcji można ją opublikować. Tylko osoby rekrutujące i menedżerowie zatrudniający mogą publikować funkcje. Funkcję można opublikować w witrynie Talent Careers (witrynie rozwoju kariery wewnątrz Microsoft Dynamics 365 for Talent) lub serwisie LinkedIn. Zespół aplikacji Attract stale pracuje nad dodawaniem agregatorów ogłoszeń o pracę. Ta lista będzie regularnie poszerzana. Jeśli oferta jest opublikowana jako tylko wewnętrzna, kandydaci muszą dodać konto, aby wyświetlić ofertę i zgłosić się. Jeśli oferta jest opublikowana jako publiczna, kandydaci mogą wyświetlać ofertę i zgłaszać się za pomocą wszystkich opcji uwierzytelniania. 
+Po uaktywnieniu funkcji można ją opublikować. Tylko osoby rekrutujące i menedżerowie zatrudniający mogą publikować funkcje. Funkcję można opublikować w witrynie Talent Careers (witrynie rozwoju kariery wewnątrz Dynamics 365 Talent) lub serwisie LinkedIn. Zespół aplikacji Attract stale pracuje nad dodawaniem agregatorów ogłoszeń o pracę. Ta lista będzie regularnie poszerzana. Jeśli oferta jest opublikowana jako tylko wewnętrzna, kandydaci muszą dodać konto, aby wyświetlić ofertę i zgłosić się. Jeśli oferta jest opublikowana jako publiczna, kandydaci mogą wyświetlać ofertę i zgłaszać się za pomocą wszystkich opcji uwierzytelniania. 
 
 Aby uzyskać więcej informacji o ofertach pracy, zobacz [Funkcjonalność witryny rozwoju kariery w aplikacji Attract](career-site.md).
 

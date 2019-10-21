@@ -1,2 +1,2 @@
 > [!NOTE]
-> Ten temat dotyczy zarówno rozwiązania Dynamics 365 for Finance and Operations, jak i rozwiązania Dynamics 365 for Retail. 
+> Ten temat dotyczy funkcji Finanse, Zarządzanie łańcuchem dostaw i Handel detaliczny. 

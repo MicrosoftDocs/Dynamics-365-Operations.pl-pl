@@ -1,6 +1,6 @@
 ---
-title: Tworzenie szablonu wdrażania do pracy w Dynamics 365 for Talent - Onboard
-description: W tym temacie wyjaśniono użycie Dynamics 365 for Talent - Onboard do utworzenia szablonu dla przewodnika wdrażania do pracy dla nowych pracowników. To zadanie jest podstawowym pierwszym krokiem w zarządzaniu kapitałem ludzkim (HCM) zatrudniania do wycofania strategii.
+title: Tworzenie szablonu wdrażania do pracy w Dynamics 365 Talent - Onboard
+description: W tym temacie wyjaśniono użycie Dynamics 365 Talent - Onboard do utworzenia szablonu dla przewodnika wdrażania do pracy dla nowych pracowników. To zadanie jest podstawowym pierwszym krokiem w zarządzaniu kapitałem ludzkim (HCM) zatrudniania do wycofania strategii.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c53c24b2913e3ca30cfc6491556b49d5d9230128
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 63f13380f3d2c31c4cc9009142f320ad8a41e8ee
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731605"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009884"
 ---
-# <a name="create-an-onboarding-template-by-using-dynamics-365-for-talent-onboard"></a>Tworzenie szablonu wdrażania do pracy w Dynamics 365 for Talent: Onboard
+# <a name="create-an-onboarding-template"></a>Tworzenie szablonu wdrażania do pracy
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard udostępnia różne szablony, które mogą pomóc Ci utworzyć przewodnik wdrażania do pracy tak szybko, jak to możliwe. Można użyć jednego lub więcej z tych szablonów, lub można tworzyć własne szablony. Onboard zawiera przykładowy tekst, który można użyć podczas tworzenia własnych szablonów. W związku z tym proces jest łatwy, nawet jeśli zaczniesz od zera.
+Microsoft Dynamics 365 Talent: Onboard udostępnia różne szablony, które mogą pomóc Ci utworzyć przewodnik wdrażania do pracy tak szybko, jak to możliwe. Można użyć jednego lub więcej z tych szablonów, lub można tworzyć własne szablony. Onboard zawiera przykładowy tekst, który można użyć podczas tworzenia własnych szablonów. W związku z tym proces jest łatwy, nawet jeśli zaczniesz od zera.
 
 ## <a name="create-an-onboarding-template-from-an-existing-template"></a>Tworzenie szablonu wdrażania do pracy z istniejącego szablonu
 

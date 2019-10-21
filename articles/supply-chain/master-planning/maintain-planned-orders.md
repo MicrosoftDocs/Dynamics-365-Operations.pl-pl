@@ -3,7 +3,7 @@ title: Obsługa zamówień planowanych
 description: Ten temat zawiera informacje o metodach zarządzania zamówienia planowanymi. Opisano w nim sposób aktualizowania stanów zamówień planowanych i ich potwierdzania oraz odfiltrowywania zamówień planowanych, które mają taki sam stan jak wybrane zamówienie planowane.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 10/02/2018
+ms.date: 09/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf578d98abc4825c5607ec031da6ab6737c3183a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5ddf2c7b4c67bec6c29387c78d1fdb021d85d702
+ms.sourcegitcommit: 620e15555d176eec3905b48d5001af1c50107ce6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560379"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "1993447"
 ---
 # <a name="maintain-planned-orders"></a>Obsługa zamówień planowanych
 
@@ -32,19 +32,32 @@ ms.locfileid: "1560379"
 
 Ten temat zawiera informacje o metodach zarządzania zamówienia planowanymi. Opisano w nim sposób aktualizowania stanów zamówień planowanych i ich potwierdzania oraz odfiltrowywania zamówień planowanych, które mają taki sam stan jak wybrane zamówienie planowane.
 
-Można zarządzać planowanymi zamówieniami z obszaru roboczego **Planowanie główne**, listy **Zamówienie planowane** lub list **Planowane zamówienia zakupu**, **Planowane zlecenia produkcyjne** i **Planowane przeniesienie**. Pole **Stan** pomaga w śledzeniu postępu zamówień. Używane są następujące wartości:
+Można zarządzać planowanymi zamówieniami z obszaru roboczego **Planowanie główne**, listy **Zamówienie planowane** lub list **Planowane zamówienia zakupu**, **Planowane zlecenia produkcyjne** i **Planowane przeniesienie**. 
+
+## <a name="planned-order-status"></a>Stan zamówienia planowanego
+Pole **Stan** pomaga w śledzeniu postępu zamówień. Używane są następujące wartości:
 
 -   Zamówienia planowane generowane podczas planowania głównego mają stan **Nieprzetworzone**.
 -   Jeżeli nie chcesz ustalać zamówienia planowanego, możesz nadać mu stan **Zakończone**.
--   Aby ustalić zamówienie planowane, nadaj mu stan **Zatwierdzone**. Ten stan oznacza, że użytkownik zatwierdza ustalanie zamówienia planowanego, ale nie jest ono jeszcze ustalone.
+-   Aby ustalić zamówienie planowane, można zmienić stan na **zatwierdzone**. Zamówienia planowane ze **stanem zatwierdzonym** są przestrzegane w planowaniu głównym, więc nie można ich modyfikować ani usuwać. 
 
-**Uwaga:** zatwierdzone zamówienie planowane jest przesyłane w aktualnym stanie do kolejnego obliczenia planu głównego. Aby ustalić zamówienia planowane, należy kolejno kliknąć opcję **Akceptuj**. Można ustalić następujące zamówienia planowane:
+## <a name="firming-planned-orders"></a>Akceptacja planowanych zamówień 
+Podczas ustalania zamówień planowanych tworzone są rzeczywiste zamówienia. Są one również znane jako zamówienia *zwolnione* lub *otwarte*. Po ustaleniu zamówienie planowane zostanie przesunięte do sekcji zamówień w odpowiednim module.
 
--   Wybrane zamówienie planowane.
--   Wiele zamówień planowanych.
--   Zamówienia planowane generowane przez rozłożenie ze strony **Rozkładanie**. Kliknij opcję **Zamówienia planowane**, wybierz zamówienie planowane, a następnie kliknij opcję **Akceptuj**.
+Na stronie **zamówienia planowane** można wybrać dwie opcje ustalania:
 
-Po ustaleniu zamówienie planowane zostanie przesunięte do sekcji zamówień w odpowiednim module. 
+-   **Akceptowane** — umożliwia ustalenie jednego lub wielu wybranych zamówień planowanych.
+-   **Zaakceptuj wszystko** — spowoduje to ustalenie wszystkich zamówień planowanych w filtrze. Używanie **zaakceptuj wszystko** nie musisz wybierać planowanego zamówienia, wszystkie planowane zamówienia w ramach filtru zostaną ustalone. Ta opcja może być przydatna w przypadku ustalania dużej liczby zamówień planowanych.
+
+> [!NOTE]
+> Istnieje możliwość śledzenia planowanego zamówienia, które zostało ustalone z **Historia akceptacji** pod **Planowane formularze zamówień > Zobacz > Historia akceptacji**.
+
+## <a name="parallelize-firming"></a>Zrównoleglenie akceptacji
+Jeśli planujesz ustalać wiele zamówień w tym samym czasie, parallelizing przebieg może poprawić czas działania lub wydajność. Ta opcja jest dostępna podczas ustalania wielu zamówień planowanych z **Zaakceptuj** lub **Zaakceptuj wszystko**. Dostępne są następujące parametry:
+
+-   **Równoległa akceptacja** — Jeśli **tak**, proces ustalania będzie równoległy do liczby wątków zdefiniowanych w **liczbie wątków.**
+-   **Liczba wątków** — określa liczbę wątków używanych do parallelize procesu ustalania. Parametr jest wyświetlany tylko wtedy, gdy ustawienie **Równoległa akceptacja** ma wartość **tak**.
+
 
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------

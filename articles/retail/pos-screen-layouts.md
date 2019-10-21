@@ -1,6 +1,6 @@
 ---
 title: Układy ekranu w aplikacji POS
-description: Ten temat zawiera informacje dotyczące układów ekranu w środowiskach POS aplikacji Microsoft Dynamics 365 for Retail.
+description: Ten temat zawiera informacje dotyczące układów ekranu w środowiskach POS aplikacji Dynamics 365 Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 05/20/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1607051"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025286"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Układy ekranu w aplikacji POS
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje dotyczące układów ekranu w środowiskach POS aplikacji Microsoft Dynamics 365 for Retail.
+Ten temat zawiera informacje dotyczące układów ekranu w środowiskach POS aplikacji Dynamics 365 Retail.
 
 Interfejs użytkownika (UI) programu Retail POS można konfigurować przy użyciu kombinacji profili graficznych i układów ekranu, które się przypisuje do sklepów, kas i/lub użytkowników.
 
@@ -50,7 +50,7 @@ Profile graficzne są przypisywane do kas. Określają elementy wizualnych, któ
 - **Opis** — Można wprowadzić znaczącą nazwę, która pomoże identyfikować profil odpowiedni w danej sytuacji.
 - **Motyw** — Można wybierać między motywami aplikacji Jasny i Ciemny. Motyw ma wpływ na kolory czcionki i tła w całej aplikacji.
 - **Kolor wiodący** — Kolor wiodący jest używany w całej aplikacji POS do odróżniania lub wyróżniania pewnych elementów wizualnych, takich jak kafelki, przyciski poleceń i hiperłącza. Zazwyczaj te elementy wykonują różne akcje.
-- **Kolor nagłówka** — Można skonfigurować kolor nagłówka strony spełniający wymagania identyfikacji wizualnej sprzedawcy detalicznego. Ta funkcja nie jest dostępna tylko w Microsoft Dynamics 365 for Retail wersja 1611.
+- **Kolor nagłówka** — Można skonfigurować kolor nagłówka strony spełniający wymagania identyfikacji wizualnej sprzedawcy detalicznego. Ta funkcja nie jest dostępna tylko w usłudze Retail w wersji 1611.
 - **Pokaż datę/godzinę** — jeśli ta opcja jest włączona, bieżąca data i godzina będzie wyświetlana w nagłówku punktu sprzedaży.
 - **Tło logowania** — Można określić obraz tła dla ekranu logowania. Rozmiary plików obrazów tła powinny być jak najmniejsze, ponieważ przechowywanie i ładowanie dużych plików może mieć negatywny wpływ na szybkość działania i zachowanie aplikacji.
 - **Tło aplikacji** — Można określić obraz tła, który będzie używany zamiast jednolitego koloru motywu w całej aplikacji. Podobnie jak w przypadku teł logowania, rozmiar pliku powinien być jak najmniejszy.

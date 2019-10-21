@@ -1,6 +1,6 @@
 ---
-title: Synchronizowanie nagłówków i wierszy faktur sprzedaży bezpośrednio w rozwiązaniu Finance and Operations z elementami w rozwiązaniu Sales
-description: Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania nagłówków i wierszy faktur sprzedaży bezpośrednio między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Sales
+title: Synchronizowanie nagłówków faktur i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales
+description: Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania nagłówków i wierszy faktur sprzedaży bezpośrednio między Dynamics 365 Supply Chain Management a Dynamics 365 Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
@@ -19,22 +19,22 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 70fc842463254b02d812447f93970a9da676057d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 94442eb11aac3faf8a412944617686853a12128d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552937"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251668"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synchronizowanie nagłówków i wierszy faktur sprzedaży w rozwiązaniu Finance and Operations bezpośrednio z elementami w rozwiązaniu Sales
 
 [!include [banner](../includes/banner.md)]
 
-Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania nagłówków i wierszy faktur sprzedaży bezpośrednio między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Sales
+Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania nagłówków i wierszy faktur sprzedaży bezpośrednio między Dynamics 365 Supply Chain Management a Dynamics 365 Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Przepływ danych w rozwiązaniu Prospekt na gotówkę
 
-Rozwiązanie Prospekt na gotówkę korzysta z funkcji Integracja danych do synchronizacji danych między wystąpieniami programu Finance and Operations a programem Sales. Szablony Prospekt na gotówkę, które są dostępne w funkcji integracji danych umożliwiają przepływ danych o kontach, kontaktach, produktach, ofertach sprzedaży, zamówieniach sprzedaży i fakturach sprzedaży między programami Finance and Operations a Sales. Poniższa ilustracja przedstawia sposób synchronizacji danych między programami Finance and Operations a Sales.
+Rozwiązanie Prospekt na gotówkę korzysta z funkcji Integracji danych do synchronizacji danych między wystąpieniami Supply Chain Management a Sales. Szablony Prospekt na gotówkę, które są dostępne w funkcji integracji danych umożliwiają przepływ danych o kontach, kontaktach, produktach, ofertach sprzedaży, zamówieniach sprzedaży i fakturach sprzedaży między programami Finance and Operations a Sales. Poniższa ilustracja przedstawia sposób synchronizacji danych między usługą Supply Chain Management a Sales.
 
 [![Przepływ danych w rozwiązaniu Prospekt na gotówkę](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -52,30 +52,30 @@ Następujący szablon i podstawowe zadania są używane do synchronizowania nag�
 
 Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchronizować nagłówki i wiersze faktur sprzedaży:
 
-- Produkty (z Fin and Ops do Sales) — bezpośrednie
-- Konta (Sales do Fin and Ops) — bezpośrednie (jeśli są używane)
-- Kontakty (Sales do Fin and Ops) — bezpośrednie (jeśli są używane)
-- Nagłówek i wiersze zamówienia sprzedaży (Fin and Ops do Sales) — bezpośrednie
+- Produkty (Supply Chain Management do Sales) — bezpośrednie
+- Konta (Sales do Supply Chain Management) — bezpośrednie (jeśli używane)
+- Kontakty (Sales do Supply Chain Management) — bezpośrednie (jeśli używane)
+- Nagłówek zamówienia sprzedaży i wiersze (Supply Chain Management do Sales) - bezpośrednio
 
 ## <a name="entity-set"></a>Zestaw jednostek
 
-| Finance and Operations                               | Sprzedaż          |
+| Zarządzanie łańcuchem dostaw                              | Sprzedaż          |
 |------------------------------------------------------|----------------|
 | Nagłówki faktur sprzedaży odbiorcy obsługiwanego zewnętrznie | Faktury       |
 | Wiersze faktur sprzedaży odbiorcy obsługiwanego zewnętrznie   | InvoiceDetails |
 
 ## <a name="entity-flow"></a>Przepływ jednostek
 
-Faktury sprzedaży są tworzone w programie Finance and Operations i synchronizowane z programem Sales.
+Faktury sprzedaży są tworzone w Supply Chain Management i synchronizowane z programem Sales.
 
 > [!NOTE]
-> Aktualnie podatek dotyczący opłat w nagłówku faktury sprzedaży nie jest uwzględniony w synchronizacji między rozwiązaniem Finance and Operations a programem Sales. Program Sales nie obsługuje informacji podatkowych na poziomie nagłówka. Jednakże podatek dotyczący opłat na poziomie wiersza jest uwzględniony w synchronizacji.
+> Aktualnie podatek dotyczący opłat w nagłówku faktury sprzedaży nie jest uwzględniony w synchronizacji między rozwiązaniem Supply Chain Managements a programem Sales. Program Sales nie obsługuje informacji podatkowych na poziomie nagłówka. Jednakże podatek dotyczący opłat na poziomie wiersza jest uwzględniony w synchronizacji.
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Rozwiązanie Prospekt na gotówkę dla aplikacji Sales
 
 - Pole **Numer faktury** zostało dodane do jednostki **Faktura** i jest wyświetlane na stronie.
-- Przycisk **Utwórz fakturę** na stronie **Zamówienie sprzedaży** jest ukryty, ponieważ faktury zostaną utworzone w rozwiązaniu Finance and Operations i zsynchronizowane z programem Sales. Strony **Faktura** nie można edytować, ponieważ faktury zostaną zsynchronizowane z rozwiązania Finance and Operations.
-- Wartość **Stan zamówienia sprzedaży** automatycznie zmienia się na **Zafakturowano** po zsynchronizowaniu powiązanej faktury z rozwiązania Finance and Operations do programu Sales. Ponadto właściciel zamówienia sprzedaży, u którego utworzono fakturę jest przypisywany jako właściciel faktury. Dlatego właściciel zamówienia sprzedaży może wyświetlić fakturę.
+- Przycisk **Utwórz fakturę** na stronie **Zamówienie sprzedaży** jest ukryty, ponieważ faktury zostaną utworzone w rozwiązaniu Supply Chain Management i zsynchronizowane z programem Sales. Strony **Faktura** nie można edytować, ponieważ faktury zostaną zsynchronizowane z rozwiązania Supply Chain Management.
+- Wartość **Stan zamówienia sprzedaży** automatycznie zmienia się na **Zafakturowano** po zsynchronizowaniu powiązanej faktury z rozwiązania Supply Chain Management do programu Sales. Ponadto właściciel zamówienia sprzedaży, u którego utworzono fakturę jest przypisywany jako właściciel faktury. Dlatego właściciel zamówienia sprzedaży może wyświetlić fakturę.
 
 ## <a name="preconditions-and-mapping-setup"></a>Warunki wstępne i ustawienia mapowania
 
@@ -103,7 +103,7 @@ Przejdź do okna **Ustawienia** > **Administracja** > **Ustawienia systemu** > *
 #### <a name="salesinvoiceline-task"></a>Zadanie SalesInvoiceLine
 
 - Sprawdź, czy istnieje wymagane mapowanie dla opcji **Jednostka miary**.
-- Upewnij się, że w rozwiązaniu Finance and Operations istnieje wymagana mapa wartości dla pola **SalesUnitSymbol**.
+- Upewnij się, że w rozwiązaniu Supply Chain Management istnieje wymagana mapa wartości dla pola **SalesUnitSymbol**.
 
     Wartość szablonu zawierająca mapę wartości jest zdefiniowana dla parametru **SalesUnitSymbol** na **Ilość\_Jednostka miary**.
 
@@ -115,7 +115,7 @@ Przejdź do okna **Ustawienia** > **Administracja** > **Ustawienia systemu** > *
 Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integratorze danych. 
 
 > [!NOTE]
-> Mapowanie pokazuje, które informacje z pól zostaną zsynchronizowane z rozwiązania Sales do rozwiązania Finance and Operations.
+> Mapowanie pokazuje, które informacje z pól zostaną zsynchronizowane z rozwiązania Sales do rozwiązania Supply Chain Management.
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
@@ -129,18 +129,12 @@ Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integrato
 
 ## <a name="related-topics"></a>Powiązane tematy
 
-[Prospekt na gotówkę](prospect-to-cash.md)
+[Od prospekta do gotówki](prospect-to-cash.md)
 
-[Synchronizowanie kont bezpośrednio w rozwiązaniu Sales do odbiorców w rozwiązaniu Finance and Operations](accounts-template-mapping-direct.md)
+[Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do odbiorców w Supply Chain Management](accounts-template-mapping-direct.md)
 
-[Synchronizowanie produktów w rozwiązaniu Finance and Operations bezpośrednio z produktami w rozwiązaniu Sales](products-template-mapping-direct.md)
+[Synchronizowanie produktów bezpośrednio z rozwiązania Supply Chain Management do produktów w rozwiązaniu Sales](products-template-mapping-direct.md)
 
-[Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Finance and Operations](contacts-template-mapping-direct.md)
+[Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Supply Chain Management](contacts-template-mapping-direct.md)
 
-[Synchronizowanie nagłówków i wierszy zamówień sprzedaży bezpośrednio w rozwiązaniu Finance and Operations z elementami w rozwiązaniu Sales](sales-order-template-mapping-direct-two-ways.md)
-
-
-
-
-
-
+[Synchronizowanie nagłówków i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales](sales-order-template-mapping-direct-two-ways.md)

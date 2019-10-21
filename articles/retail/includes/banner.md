@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Ten temat dotyczy rozwiązań Dynamics 365 for Retail i Dynamics 365 for Finance and Operations.
+> Ten temat odnosi się do Dynamics 365 Retail i Dynamics 365 Commerce (wersja zapoznawcza).

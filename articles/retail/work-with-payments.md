@@ -1,6 +1,6 @@
 ---
 title: Metody płatności w biurach obsługi
-description: W tym temacie opisano różne metody płatności, których można używać w biurze obsługi w programie Microsoft Dynamics 365 for Retail.
+description: W tym temacie opisano różne metody płatności, których można używać w biurze obsługi w programie Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 03/28/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 825ad4ba3e72e5b34c2ff29f36f88a518810ce49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 551a3cc9c0def1c67ab930dbff7cd1c0d296bd21
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571526"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018235"
 ---
 # <a name="payment-methods-in-call-centers"></a>Metody płatności w biurach obsługi
 
 [!include [banner](includes/banner.md)]
 
-W programie Microsoft Dynamics 365 for Retail konfiguracja kanału biura obsługi zawiera ustawienie o nazwie **Włącz kończenie zamówienia**. To ustawienie pomaga zagwarantować, że wszystkie zamówienia tworzone przez użytkowników kanału są zwalniane do przetwarzania zamówień tylko wtedy, gdy mają opłacone z góry lub wstępnie autoryzowane płatności mieszczące się w zatwierdzonych granicach tolerancji. Jeśli ustawienie **Włącz kończenie zamówienia** jest włączone, użytkownicy biura obsługi mogą wprowadzać płatności dla zamówień sprzedaży od odbiorców za pomocą funkcji przetwarzania płatności dostępnych w biurze obsługi. Jeśli ustawienie jest wyłączone, użytkownicy biura obsługi nie mogą korzystać z funkcji przetwarzania płatności zawartych w biurze obsługi, ale nadal mogą stosować przedpłaty do zamówień sprzedaży, używając do tego standardowych funkcji modułu Rozrachunki z odbiorcami.
+W programie Dynamics 365 Retail konfiguracja kanału biura obsługi zawiera ustawienie o nazwie **Włącz kończenie zamówienia**. To ustawienie pomaga zagwarantować, że wszystkie zamówienia tworzone przez użytkowników kanału są zwalniane do przetwarzania zamówień tylko wtedy, gdy mają opłacone z góry lub wstępnie autoryzowane płatności mieszczące się w zatwierdzonych granicach tolerancji. Jeśli ustawienie **Włącz kończenie zamówienia** jest włączone, użytkownicy biura obsługi mogą wprowadzać płatności dla zamówień sprzedaży od odbiorców za pomocą funkcji przetwarzania płatności dostępnych w biurze obsługi. Jeśli ustawienie jest wyłączone, użytkownicy biura obsługi nie mogą korzystać z funkcji przetwarzania płatności zawartych w biurze obsługi, ale nadal mogą stosować przedpłaty do zamówień sprzedaży, używając do tego standardowych funkcji modułu Rozrachunki z odbiorcami.
 
 W ramach konfiguracji kanału firma może zdefiniować metody płatności, które są dozwolone w kanale biura obsługi. Kanał biura obsługi używa tych samych metod płatności, jak zdefiniowane dla kanałów sklepu sieci sprzedaży.
 

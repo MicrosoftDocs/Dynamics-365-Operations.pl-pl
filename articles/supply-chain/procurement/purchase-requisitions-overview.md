@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e571f5c83affa56c230e1f597e219eb60973225
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572032"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248891"
 ---
 # <a name="purchase-requisition-overview"></a>Omówienie zapotrzebowania na zakup
 
@@ -38,7 +38,7 @@ Po zatwierdzeniu zapotrzebowania na zakup, może ono służyć do generowania za
 ## <a name="creating-purchase-requisitions"></a>Tworzenie zapotrzebowań zakupu
 Zapotrzebowanie na zakup można utworzyć na stronie **Moje zapotrzebowania na zakup**, a następnie wybierać potrzebne towary i usługi. Można wybrać towary z katalogu zaopatrzenia, który został utworzony w firmie, lub można wygenerować żądanie towarów, których nie ma w katalogu, wybierając kategorię zaopatrzenia i wprowadzając szczegóły produktu.  
 
-Zanim prześlesz zapotrzebowania na zakupu do przeglądu, przepływy pracy muszą zostać skonfigurowany w programie Microsoft Dynamics 365 for Finance and Operations. Przepływ pracy jest używany do przenoszenia zapotrzebowania na zakup przez proces przeglądu, z początkowego stanu **Wersja robocza** do stanu finalnego **Zatwierdzono**.
+Zanim prześlesz zapotrzebowania na zakupu do przeglądu, przepływy pracy muszą zostać skonfigurowany. Przepływ pracy jest używany do przenoszenia zapotrzebowania na zakup przez proces przeglądu, z początkowego stanu **Wersja robocza** do stanu finalnego **Zatwierdzono**.
 
 ### <a name="purchase-requisition-statuses"></a>Stany zapotrzebowania zakupu
 
@@ -141,7 +141,7 @@ W zasadach zaopatrzenia można kontrolować cele zapotrzebowania, które są dos
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Zapotrzebowania, których celem jest zużycie
 
-Zapotrzebowanie, którego celem jest zużycie, reprezentuje popyt na towary lub usługi, które będą używane wewnętrznie przez organizację. Popyt, który jest tworzony przez ten rodzaj zapotrzebowania, zawsze jest zaspokajany przez zamówienie zakupu. Jeśli program Microsoft Dynamics 365 for Finance and Operations jest skonfigurowany do automatycznego generowania zamówień zakupu, zamówienia zakupu są tworzone po zatwierdzeniu zapotrzebowania na zakup.
+Zapotrzebowanie, którego celem jest zużycie, reprezentuje popyt na towary lub usługi, które będą używane wewnętrznie przez organizację. Popyt, który jest tworzony przez ten rodzaj zapotrzebowania, zawsze jest zaspokajany przez zamówienie zakupu. Jeśli system Supply Chain Management jest skonfigurowany do automatycznego generowania zamówień zakupu, zamówienia zakupu są tworzone po zatwierdzeniu zapotrzebowania na zakup.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Zapotrzebowania, których celem jest uzupełnienie
 

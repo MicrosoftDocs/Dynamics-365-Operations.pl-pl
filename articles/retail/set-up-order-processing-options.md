@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie kanałów biura obsługi
-description: Ten temat zawiera informacje dotyczące sposobu przetwarzania zamówień dla biur obsługi przy użyciu modułu Microsoft Dynamics 365 for Retail.
+description: Ten temat zawiera informacje dotyczące sposobu przetwarzania zamówień dla biur obsługi przy użyciu modułu Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 36491e4d2e63819ce637afb69744089d820c69b0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549366"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024828"
 ---
 # <a name="set-up-call-center-channels"></a>Konfigurowanie kanałów biura obsługi
 
 [!include [banner](includes/banner.md)]
 
-Firma można zdefiniować wiele kanałów biura obsługi w programie Microsoft Dynamics 365 for Retail. Kanały biura obsługi konfiguruje się w oknie **Handel detaliczny** \> **Kanały** \> **Biura obsługi** \> **Wszystkie biura obsługi** i są one specyficzne dla firmy.
+Firma można zdefiniować wiele kanałów biura obsługi w programie Dynamics 365 Retail. Kanały biura obsługi konfiguruje się w oknie **Handel detaliczny** \> **Kanały** \> **Biura obsługi** \> **Wszystkie biura obsługi** i są one specyficzne dla firmy.
 
 Podczas tworzenia nowego kanału biura obsługi jest mu systemowo przypisywany numer jednostki operacyjnej. Ponieważ biura obsługi są tworzone jako jednostki operacyjne, użytkownicy mogą połączyć kanał biura obsługi z różnymi funkcjami aplikacji Retail, takimi jak asortymenty, katalogi i określone metody dostawy.
 
@@ -76,6 +76,8 @@ Po zdefiniowaniu kanału biura obsługi należy połączyć użytkowników kana�
 
 Domyślnie we wszystkich zamówieniach tworzonych przez użytkowników biura obsługi jest włączona flaga **Sprzedaż detaliczna** w nagłówku zamówienia sprzedaży. Wtedy zamówienia mogą korzystać z systemowych funkcji cen i promocji specyficznych dla handlu detalicznego.
 
-Użytkownicy, którzy nie są połączeni z kanałem biura obsługi, używają standardowych funkcji wprowadzania zamówień zawartych w programie Microsoft Dynamics 365 for Finance and Operations. Zamówienia wprowadzane przez tych użytkowników za pośrednictwem formularza wprowadzania zamówień sprzedaży nie będą systemowo identyfikowane jako zamówienia aplikacji Retail. Ponadto te zamówienia wprowadzane przez tych użytkowników nie podlegają żadnym regułom przetwarzania finalizacji zamówień, logice ustalania cen detalicznych ani innym weryfikacjom zamówień, które można definiować w konfiguracji kanału biura obsługi lub parametrach systemu biura obsługi.
+
+Użytkownicy, którzy nie są połączeni z kanałem biura obsługi, używają standardowych funkcji wprowadzania zamówień zawartych w Microsoft Dynamics 365 Finance. Zamówienia wprowadzane przez tych użytkowników za pośrednictwem formularza wprowadzania zamówień sprzedaży nie będą systemowo identyfikowane jako zamówienia aplikacji Retail. Ponadto te zamówienia wprowadzane przez tych użytkowników nie podlegają żadnym regułom przetwarzania finalizacji zamówień, logice ustalania cen detalicznych ani innym weryfikacjom zamówień, które można definiować w konfiguracji kanału biura obsługi lub parametrach systemu biura obsługi.
+
 
 Gdy skończysz konfigurować kanał biura obsługi i definiować użytkowników kanału, to w celu zagwarantowania pożądanego zachowania systemu upewnij się, że wszystkie wymagane parametry biura obsługi są zdefiniowane w oknie **Handel detaliczny** \> **Ustawienia kanału** \> **Ustawienia biura obsługi** \> **Parametry biura obsługi**. Ponadto upewnij się, że są zdefiniowane powiązane numeracje.

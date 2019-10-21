@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ec1edb861619bae2ae3c211720b55e170b83ec9
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: ec51c1a500b5c9ff2c363cfb69cc1d404e939df9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916629"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250652"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Ręczne modyfikowanie prognozy popytu
 
@@ -41,5 +41,5 @@ W tej procedurze pokazano sposób modyfikowania prognozy dla towaru. Dane wykorz
 
 ## <a name="modify-the-forecast-in-excel"></a>Modyfikowanie prognozy w programie Excel
 1. Kliknij przycisk **Otwórz** w Microsoft Office.
-2. Kliknij opcję **Edytuj prognozę popytu** w programie Excel. W programie Excel można dodawać, usuwać i edytować wiersze prognozy popytu. Jeśli nie widzisz danych w programie Excel, musisz się zalogować do programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z włączoną opcją „Nie wylogowuj mnie” i zaufać aplikacji połączenia danych.  
+2. Kliknij opcję **Edytuj prognozę popytu** w programie Excel. W programie Excel można dodawać, usuwać i edytować wiersze prognozy popytu. Jeśli nie widzisz danych w programie Excel, musisz mieć włączoną opcję „Nie wylogowuj mnie” i zaufać aplikacji połączenia danych.  
 

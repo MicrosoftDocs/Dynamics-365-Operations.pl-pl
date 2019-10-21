@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00ec888600dedbc740be0efc64cddf37c5c6f558
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83d969fcc59af87da3921225974ebc2ae41d9fa1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572841"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250997"
 ---
 # <a name="merge-inventory-batches"></a>Scalanie partii zapasów
 
@@ -89,7 +89,7 @@ Nie, można scalić tylko partie w tym samym oddziale i o tych samych wymiarach 
 Nie, można scalić tylko pełne ilości partii. Funkcja scalania partii jest przewidziana jako funkcja zapasów, a nie funkcja produkcji.
 
 ## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Co zrobić, jeśli partie mają różne wartości atrybutów partii?
-Po wybraniu partii źródłowych do połączenia w partię scaloną program Finance and Operations sprawdza, czy wszystkie partie mają określone cechy lub wartości atrybutów. Gdy wartości danego atrybutu są takie same, system sugeruje wartość dla scalonej partii. Tę wartość można zmienić. Wartości atrybutów, które nie są takie same, są pozostawiane puste w scalonej partii i można je wprowadzić ręcznie. Jeśli typem atrybutu partii dla wartości atrybutu jest liczba całkowita lub ułamek, a wartości nie są takie same dla wszystkich partii źródłowych, taka wartość zostanie obliczona przy użyciu średniej ważonej. Obliczona wartość jest zaokrąglana w górę lub w dół, do najbliższej wartości przyrostu. Jeśli wartość jest pusta w partii źródłowej, wtedy partia i jej ilość nie są uwzględniane w obliczeniach. **Przykład** Poniższy przykład pokazuje sposób obliczania średniej ważonej dla scalonej partii. Dwie partie źródłowe mają wartość pustą dla typu atrybutu partii, która jest liczbą całkowitą. Następujący atrybut jest przypisany do partii źródłowych.
+Po wybraniu partii źródłowych do połączenia w partię scaloną usługa Supply Chain Management sprawdza, czy wszystkie partie mają określone cechy lub wartości atrybutów. Gdy wartości danego atrybutu są takie same, system sugeruje wartość dla scalonej partii. Tę wartość można zmienić. Wartości atrybutów, które nie są takie same, są pozostawiane puste w scalonej partii i można je wprowadzić ręcznie. Jeśli typem atrybutu partii dla wartości atrybutu jest liczba całkowita lub ułamek, a wartości nie są takie same dla wszystkich partii źródłowych, taka wartość zostanie obliczona przy użyciu średniej ważonej. Obliczona wartość jest zaokrąglana w górę lub w dół, do najbliższej wartości przyrostu. Jeśli wartość jest pusta w partii źródłowej, wtedy partia i jej ilość nie są uwzględniane w obliczeniach. **Przykład** Poniższy przykład pokazuje sposób obliczania średniej ważonej dla scalonej partii. Dwie partie źródłowe mają wartość pustą dla typu atrybutu partii, która jest liczbą całkowitą. Następujący atrybut jest przypisany do partii źródłowych.
 
 | Atrybut | Minimum | Przyrost | Maksimum |
 |-----------|---------|-----------|---------|

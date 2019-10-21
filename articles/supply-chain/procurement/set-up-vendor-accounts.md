@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7653b01a8d5b80d3026a04d9979906d9ddae5d27
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547682"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249406"
 ---
 # <a name="set-up-vendor-accounts"></a>Konfigurowanie kont odbiorców
 
@@ -60,13 +60,13 @@ Można przechowywać dane osób kontaktowych dostawców. Te kontakty mogą być 
 
 Aby dodać osoby kontaktowe dla dostawcy, na stronie **Wszyscy dostawcy** na karcie **Dostawca** w grupie **Konfiguracja** kliknij kolejno opcje **Kontakty** &gt; **Dodaj kontakty**.  
 
-Kontakty dostawców można tworzyć od podstaw. Alternatywnie można skopiować szczegóły z innej osoby, która jest już zarejestrowana w programie Microsoft Dynamics 365 for Finance and Operations, i zmodyfikować informacje w żądany sposób.  
+Kontakty dostawców można tworzyć od podstaw. Alternatywnie można skopiować szczegóły z innej osoby, która jest już zarejestrowana w Supply Chain Management, i edytować informacje w żądany sposób.  
 
 **Uwaga:** Dodanie kontaktu dla dostawcy nie jest tym samym, co dodanie informacji kontaktowych dla tego dostawcy. Chociaż można dodać ogólne informacje kontaktowe dostawcy, można również wyznaczyć kilka określonych osób będących kontaktami w tej firmie i wszystkie te osoby mają własne informacje kontaktowe.  
 
 Nie można usunąć rekordu osoby kontaktowej, jeżeli istnieje odwołanie do niej w dokumencie. Zamiast tego można zdezaktywować kontakt.  
 
-Osoby kontaktowe dostawcy można dodać do kontaktów osobistych w usłudze Microsoft Office 365. Jednakże najpierw należy skonfigurować synchronizację między programem Finance and Operations a usługą Office 365 w ustawieniach synchronizacji programu Microsoft Exchange Server oraz w kreatorze instalacji programu Microsoft Outlook.
+Osoby kontaktowe dostawcy można dodać do kontaktów osobistych w usłudze Microsoft Office 365. Jednakże najpierw należy skonfigurować synchronizację między Supply Chain Management a usługą Office 365 w ustawieniach synchronizacji programu Microsoft Exchange Server oraz w kreatorze instalacji programu Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Dostawcy w różnych firmach
 Jeśli dostawca jest zarejestrowany tylko dla jednej firmy w organizacji, a inne firmy muszą zarejestrować tego samego dostawcę, można użyć strony **Dodawanie dostawcy do innej firmy**, aby skonfigurować dostawcę do współpracy z inną firmą. Należy wybrać grupę dostawców, walutę i stan wstrzymania dla dostawcy w wybranej firmie.  

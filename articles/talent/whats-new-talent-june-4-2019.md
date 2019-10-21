@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (4 czerwiec 2019)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent.
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (4 czerwiec 2019)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/04/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e19e5d3f1cb2305e5a4153de3e4d0e8f4c7d31ac
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 32b168eca210b1371db129c05f7035237eb35c38
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856336"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008991"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-4-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (4 czerwiec 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-4-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (4 czerwiec 2019)
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent.
+W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Zmiany w Attract
 
-Ta wersja zawiera poprawki błędów dla programu Dynamics 365 for Talent: Attract.
+Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent: Attract.
 
 ## <a name="coming-soon-in-attract"></a>Wkrótce w aplikacji Attract
 
@@ -43,7 +43,7 @@ Zatwierdzenia są wyświetlane w sekcji **Zatwierdzenia** na pulpicie nawigacyjn
 
 ## <a name="changes-in-onboard"></a>Zmiany w Onboard
 
-Ta wersja zawiera poprawki błędów dla programu Dynamics 365 for Talent: Onboard.
+Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Zmiany w Core HR
 
@@ -67,7 +67,7 @@ Organizacje mogą wymagać ustawienia kodów przyczyn dla określonych typów ur
 
 ### <a name="deleting-a-record-from-talent-doesnt-remove-the-record-from-common-data-service"></a>Usunięcie rekordu z talentów nie powoduje usunięcia rekordu z formularza Common Data Service
 
-Wszystkie rekordy usunięte z talentów podstawowych HR są również usuwane z systemu Common Data Service.
+Wszystkie rekordy usunięte z Talent: Core HR teraz są również usuwane z systemu Common Data Service.
 
 ### <a name="variable-compensation-plan-valid-fromto-dates-arent-being-honored"></a>Okres ważności daty od/do w systemie wynagrodzeń o zmiennej wysokości nie jest uznawany
 

@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b3eeda217e00b33962561bcb2ee6185275f52fe2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3b66369e57e006c9e2fe0a43e4b781c619a65c4a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556951"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025870"
 ---
 # <a name="store-order-fulfillment"></a>Realizacja zamówienia w sklepie
 
@@ -96,7 +96,7 @@ Po zaakceptowaniu zamówienia można zaznaczyć wiersze i oznaczyć je jako **Po
 
 Listy pobrania można wydrukować w punkcie sprzedaży, aby ułatwić pracownikom wykonywanie procesu pobierania. Pracownik może mieć przy sobie wydrukowaną listę pobrania i ręcznie oznaczać produkty jako pobrane na liście podczas wykonywania pobierania.
 
-Format listy pobrania jest skonfigurowany w rozwiązaniu Dynamics 365 for Retail i dodawany do profilu paragonów. Aby uzyskać więcej informacji o konfigurowaniu profili paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Format listy pobrania jest skonfigurowany w rozwiązaniu Retail i dodawany do profilu paragonów. Aby uzyskać więcej informacji o konfigurowaniu profili paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 Jeżeli wiersze są zaznaczone, a dla tych wierszy drukowana jest lista pobrania, ich stan jest automatycznie aktualizowany na **Pobranie**.
 
@@ -105,7 +105,7 @@ Jeżeli wiersze są zaznaczone, a dla tych wierszy drukowana jest lista pobrania
 - **Stan wynikowy:** Pobrane lub częściowo pobrane
 - **Stan wynikowy zaplecza:** Pobrane lub częściowo pobrane
 
-Po wykonaniu procesu fizycznego pobrania wiersze można oznaczyć jako **Pobrane**. Zaznaczenie wiersza i oznaczenie jako **Pobrane** powoduje wykonanie w czasie rzeczywistym wywołania aktualizacji wiersza zamówienia w rozwiązaniu Dynamics 365 for Retail. Po oznaczeniu wiersza jako **Pobrane** w punkcie sprzedaży stan w zapleczu jest także aktualizowany na**Pobrane**, a w transakcjach uwzględniany jest fakt zmniejszenia o określoną ilość.
+Po wykonaniu procesu fizycznego pobrania wiersze można oznaczyć jako **Pobrane**. Zaznaczenie wiersza i oznaczenie jako **Pobrane** powoduje wykonanie w czasie rzeczywistym wywołania aktualizacji wiersza zamówienia. Po oznaczeniu wiersza jako **Pobrane** w punkcie sprzedaży stan w zapleczu jest także aktualizowany na**Pobrane**, a w transakcjach uwzględniany jest fakt zmniejszenia o określoną ilość.
 
 W trakcie przetwarzania zamówień można przetworzyć częściowe ilości dla określonego wiersza. Po zaznaczeniu wiersza i wykonaniu akcji **Oznacz jako pobrane**, gdy ilość jest większa niż jeden, wyświetlany jest monit o podanie ilości. Pozostała ilość do pobrania jest uzupełniana automatycznie. W przypadku określenia ilości mniejszej niż pozostała stan wiersza zmienia się na **Częściowo pobrane**. Po zaktualizowaniu wiersza zamówienia w zapleczu będzie ono także odzwierciedlać stan częściowego pobrania, a ilość wprowadzona przez użytkownika zostanie użyta do aktualizacji zapasów.
 
@@ -122,7 +122,7 @@ Wiersze zamówienia można spakować w dowolnym momencie po zaakceptowaniu wiers
 - **Stan wynikowy:** Spakowane lub częściowo spakowane
 - **Stan wynikowy zaplecza:** Dostarczone lub częściowo dostarczone
 
-Ta akcja spowoduje oznaczenie wierszy jako spakowanych lub częściowo spakowanych i wydrukowanie dokumentu dostawy. Dokument dostawy można wydrukować, aby zweryfikować produkty spakowane razem. Format dokumentu dostawy jest skonfigurowany w rozwiązaniu Dynamics 365 for Retail i dodawany do profilu paragonów. Aby uzyskać więcej informacji o konfigurowaniu profili paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Ta akcja spowoduje oznaczenie wierszy jako spakowanych lub częściowo spakowanych i wydrukowanie dokumentu dostawy. Dokument dostawy można wydrukować, aby zweryfikować produkty spakowane razem. Format dokumentu dostawy jest skonfigurowany w rozwiązaniu Retail i dodawany do profilu paragonów. Aby uzyskać więcej informacji o konfigurowaniu profili paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Akcja: Oznacz jako spakowane**
 

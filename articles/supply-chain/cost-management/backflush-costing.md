@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 484bac74ccb498f0b006458f5e6d8fb0e9461a8f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: be4dbadaeac747953af44236156453edc596fcd5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556078"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018119"
 ---
 # <a name="backflush-costing"></a>Wycena wsteczna
 
@@ -61,11 +61,11 @@ W przypadku produktów dostarczanych z przepływu produkcji obliczanie BOM musi 
 
 ### <a name="calculation-that-is-based-on-the-production-flow"></a>Obliczanie oparte na przepływie produkcji
 
-Lean manufacturing dla Microsoft Dynamics 365 for Finance and Operations nie zależy od marszrut. Obliczanie kosztów dla produktów dostarczanych z przepływu produkcji może być oparte na samym przepływie produkcji. Zanim będzie możliwe obliczanie, należy utworzyć regułę Kanban dostarczającą produkt z przepływu produkcji. Jeśli produkt może być dostarczany z wielu przepływów produkcji w tym samym oddziale w dniu obliczania, można wybrać przepływ produkcji dla obliczania BOM. Na stronie **Domyślny przepływ produkcji** można skonfigurować domyślny przepływ produkcji dla każdego towaru. Jeśli istnieje wiele reguł Kanban dla tego samego produktu w przepływie produkcji aktywnym w dniu obliczania, aparat obliczania wybiera pierwszą regułę Kanban aktywną dla obliczenia.
+Lean manufacturing dla Dynamics 365 Supply Chain Management nie zależy od marszrut. Obliczanie kosztów dla produktów dostarczanych z przepływu produkcji może być oparte na samym przepływie produkcji. Zanim będzie możliwe obliczanie, należy utworzyć regułę Kanban dostarczającą produkt z przepływu produkcji. Jeśli produkt może być dostarczany z wielu przepływów produkcji w tym samym oddziale w dniu obliczania, można wybrać przepływ produkcji dla obliczania BOM. Na stronie **Domyślny przepływ produkcji** można skonfigurować domyślny przepływ produkcji dla każdego towaru. Jeśli istnieje wiele reguł Kanban dla tego samego produktu w przepływie produkcji aktywnym w dniu obliczania, aparat obliczania wybiera pierwszą regułę Kanban aktywną dla obliczenia.
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Obliczanie oparte na marszrucie
 
-Obliczanie oparte na marszrucie jest tak samo poprawne, jak obliczanie oparte na przepływie produkcji. Jednak w obliczaniu opartym na marszrucie nie jest używana funkcja wyceny w produkcji oszczędnej. Marszruta powinna wykorzystywać zapotrzebowania na zasoby dla grup zasobów. W celu uniknięcia systematycznych odchyleń należy również używać tych samych komórek roboczych lub przynajmniej tych samych kategorii kosztów. Tu również należy unikać stosowania kategorii kosztów dla konfiguracji i ilości. Nie umożliwiają one obliczania kosztu w bardziej szczegółowym podziale, niż wycena wsteczna kosztów w produkcji oszczędnej. Aby ustalić, której opcji (przepływu produkcji lub marszruty) należy użyć do obliczania kosztu, trzeba wziąć pod uwagę wyniki podziału kosztów. Lepszą opcją jest wersja bliższa rzeczywistości i ogólnie generująca mniej odchyleń. W środowisku produkcji oszczędnej, gdzie produkt jest dostarczany przez jeden przepływ produkcji i jedną regułę Kanban, prawdopodobnie dokładniejsze będzie obliczenie oparte na przepływie produkcji. Dla produktu, który może być dostarczany z produkcji oszczędnej i zleceń produkcyjnych w tym samym oddziale albo który może mieć wiele przepływów produkcji lub wiele reguł Kanban w tym samym przepływie, obliczenie może być dokładniejsze, jeśli bazuje na wersji marszruty utworzonej specjalnie dla obliczania kosztów, a nie dla produkcji. Obliczanie przepływu produkcji musi być używane do obliczania produktów obejmujących podwykonawstwo. W programie Microsoft Dynamics 365 for Finance and Operations modele kosztów podwykonawstwa za pośrednictwem zleceń produkcyjnych i podwykonawstwa w produkcji oszczędnej korzystają z dwóch różnych podejść. W produkcji oszczędnej wprowadzono nowy typ grupy kosztów **Outsourcing bezpośredni** przeznaczony do liczenia usług podwykonawczych.
+Obliczanie oparte na marszrucie jest tak samo poprawne, jak obliczanie oparte na przepływie produkcji. Jednak w obliczaniu opartym na marszrucie nie jest używana funkcja wyceny w produkcji oszczędnej. Marszruta powinna wykorzystywać zapotrzebowania na zasoby dla grup zasobów. W celu uniknięcia systematycznych odchyleń należy również używać tych samych komórek roboczych lub przynajmniej tych samych kategorii kosztów. Tu również należy unikać stosowania kategorii kosztów dla konfiguracji i ilości. Nie umożliwiają one obliczania kosztu w bardziej szczegółowym podziale, niż wycena wsteczna kosztów w produkcji oszczędnej. Aby ustalić, której opcji (przepływu produkcji lub marszruty) należy użyć do obliczania kosztu, trzeba wziąć pod uwagę wyniki podziału kosztów. Lepszą opcją jest wersja bliższa rzeczywistości i ogólnie generująca mniej odchyleń. W środowisku produkcji oszczędnej, gdzie produkt jest dostarczany przez jeden przepływ produkcji i jedną regułę Kanban, prawdopodobnie dokładniejsze będzie obliczenie oparte na przepływie produkcji. Dla produktu, który może być dostarczany z produkcji oszczędnej i zleceń produkcyjnych w tym samym oddziale albo który może mieć wiele przepływów produkcji lub wiele reguł Kanban w tym samym przepływie, obliczenie może być dokładniejsze, jeśli bazuje na wersji marszruty utworzonej specjalnie dla obliczania kosztów, a nie dla produkcji. Obliczanie przepływu produkcji musi być używane do obliczania produktów obejmujących podwykonawstwo. Modele kosztów podwykonawstwa za pośrednictwem zleceń produkcyjnych i podwykonawstwa w lean manufacturing korzystają z dwóch różnych podejść. W produkcji oszczędnej wprowadzono nowy typ grupy kosztów **Outsourcing bezpośredni** przeznaczony do liczenia usług podwykonawczych.
 
 ## <a name="material-consumption"></a>Zużycie materiału
 Gdy materiał jest zużywany z zapasów do PWT, koszt materiału jest dodawany do PWT według jego rzeczywistego kosztu standardowego dla grupy kosztów. Ta operacja odbywa się zgodnie z następującymi warunkami:
@@ -82,7 +82,7 @@ Produkty są przyjmowane z przepływu produkcji zgodnie z następującymi warunk
 Produkty przyjmowane z przepływu produkcji są odejmowane od PWT.
 
 ## <a name="products-in-wip"></a>Produkty w PWT
-Model PWT produkcji oszczędnej w programie Microsoft Dynamics 365 for Finance and Operations pozwala używać stanów jednostek załadunkowych w systemie Kanban do zarządzania materiałami, półproduktami i wyrobami gotowymi będącymi częścią PWT.
+Model PWT lean manufacturing pozwala używać stanów jednostek załadunkowych w systemie Kanban do zarządzania materiałami, półproduktami i wyrobami gotowymi będącymi częścią PWT.
 
 -   **Przypisano** — Karta Kanban może zawierać zużywany materiał, który jest wykazywany w PWT.
 -   **Przyjęto** — Jeśli karta Kanban odnosi się do ostatniego działania, które ma atrybut **Aktualizuj zapasy po przyjęciu** ustawiony na **Nie**, reprezentuje pełną jednostkę załadunkową produktu lub półproduktu, który nie jest rejestrowany w zapasach.

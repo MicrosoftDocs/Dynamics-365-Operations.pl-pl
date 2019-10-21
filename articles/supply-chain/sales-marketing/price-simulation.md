@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fe8c4bc8f2efb06de4cb6fd727df93ba1a5d14bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554651"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251356"
 ---
 # <a name="price-simulation"></a>Symulacja ceny
 
@@ -51,7 +51,7 @@ Aby zagwarantować, że rabaty i ceny są obliczane prawidłowo, należy zachowa
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typy rabatów w umowach handlowych
 
-W umowach handlowych w Microsoft Dynamics 365 for Finance and Operations są możliwe cztery typy rabatów. Rabaty te można konfigurować dla różnych towarów, odbiorców lub grup cenowych i można je ograniczać terminem. Aby uniknąć błędów w obliczeniach, podczas wykonywania symulacji ceny należy wziąć pod uwagę umowy handlowe. Oto cztery typy rabatów w umowach handlowych:
+W umowach handlowych w Supply Chain Management są możliwe cztery typy rabatów. Rabaty te można konfigurować dla różnych towarów, odbiorców lub grup cenowych i można je ograniczać terminem. Aby uniknąć błędów w obliczeniach, podczas wykonywania symulacji ceny należy wziąć pod uwagę umowy handlowe. Oto cztery typy rabatów w umowach handlowych:
 
 -   **Cena sprzedaży** – można określić osobne ceny sprzedaży towarów. Podczas tworzenia wierszy zapytania ofertowego, program wyszukuje poprawnych cen sprzedaży dla towaru i przenosi je do wierszy zamówienia sprzedaży. Z tego względu umowa handlowa zawierająca ten rodzaj rabatu nie wpływa na symulację ceny. Cena sprzedaży, która jest używana w wierszu oferty, odzwierciedla zapisy umowy handlowej.
 -   **Rabat wiersza** — specjalne rabaty określone dla towarów, w zależności od zamówionej ilości. Kwoty wierszy są zwykle pomniejszane o rabat wiersza przed uruchomieniem symulacji ceny. Z tego względu umowa handlowa zawierająca ten rodzaj rabatu wpływa na symulację ceny.

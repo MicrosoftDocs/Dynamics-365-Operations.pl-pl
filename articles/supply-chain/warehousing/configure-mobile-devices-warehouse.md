@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b6555086d6c86c17b501af9d4d8155e9c08a447
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 14b0661c4c1fa8f2bc197a8a3983b71d73199b2a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536556"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251553"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy magazynowej
 
@@ -163,7 +163,7 @@ Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika 
 </tr>
 <tr>
 <td>Przeniesienie według szablonu</td>
-<td>Przenosi towary z jednej lokalizacji do innej w sposób półautomatyczny. Pracownik wybiera lokalizację źródłową towarów i program Finance and Operations używa dyrektywy lokalizacji do określenia lokalizacji docelowej.</td>
+<td>Przenosi towary z jednej lokalizacji do innej w sposób półautomatyczny. Pracownik wybiera lokalizację źródłową towarów i system używa dyrektywy lokalizacji do określenia lokalizacji docelowej.</td>
 </tr>
 <tr>
 <td>Przeniesienie magazynu</td>
@@ -212,7 +212,7 @@ Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić p
 </tr>
 <tr class="even">
 <td>Sterowane przez system</td>
-<td>Microsoft Dynamics 365 for Finance and Operations określa rodzaj pracy, która jest przypisana do pracownika, i kolejność, w jakiej pracownik wykonuje pracę. Po wybraniu tej opcji można kliknąć opcję <strong>Praca sterowana przez system</strong> w okienku akcji, aby otworzyć stronę <strong>Kolejność sortowania określona przez system</strong>, na której można ustawić kryteria sortowania dla pracy. Kryteria sortowania określają porządek wykonywania pracy przez pracownika. Można dodać dowolną liczbę kryteriów zależnie od potrzeb.</td>
+<td>Supply Chain Management określa rodzaj pracy, która jest przypisana do pracownika, i kolejność, w jakiej pracownik wykonuje pracę. Po wybraniu tej opcji można kliknąć opcję <strong>Praca sterowana przez system</strong> w okienku akcji, aby otworzyć stronę <strong>Kolejność sortowania określona przez system</strong>, na której można ustawić kryteria sortowania dla pracy. Kryteria sortowania określają porządek wykonywania pracy przez pracownika. Można dodać dowolną liczbę kryteriów zależnie od potrzeb.</td>
 </tr>
 <tr class="odd">
 <td>Sterowane przez użytkownika</td>
@@ -224,7 +224,7 @@ Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić p
 </tr>
 <tr class="odd">
 <td>Grupowanie systemowe</td>
-<td>Microsoft Dynamics 365 for Finance and Operations grupuje pracę dla pracownika na podstawie określonego pola. Na przykład praca pobierania jest grupowana gdy pracownik skanuje identyfikator wysyłki, identyfikator ładunku lub dowolną wartość, którą można połączyć z poszczególnymi jednostkami pracy. Jeśli wybierzesz tę opcję, wymagane są następujące pola:
+<td>Supply Chain Management grupuje pracę dla pracownika na podstawie określonego pola. Na przykład praca pobierania jest grupowana gdy pracownik skanuje identyfikator wysyłki, identyfikator ładunku lub dowolną wartość, którą można połączyć z poszczególnymi jednostkami pracy. Jeśli wybierzesz tę opcję, wymagane są następujące pola:
 <ul>
 <li><strong>Pole grup systemowych</strong> — wybierz pole, które pracownik musi przeskanować w celu pogrupowania pracy.</li>
 <li><strong>Etykieta grup systemowych</strong> — wpisz tekst informujący pracownika o tym, co należy zeskanować w celu pogrupowania pracy.</li>
@@ -245,7 +245,7 @@ Ta opcja przydaje się na przykład wtedy, gdy wiele palet jest przygotowanych d
 </tr>
 <tr class="even">
 <td>Grupowanie inwentaryzacji ciągłej</td>
-<td>Pracownik wybiera strefę, pulę pracy lub lokalizację, a Microsoft Dynamics 365 for Finance and Operations przypisuje pracę na podstawie wyboru. Jeśli wybierzesz tę opcję, możesz też kliknąć <strong>Inwentaryzacja ciągła</strong> w okienku akcji, aby określić dodatkowe informacje do wyświetlenia i możesz też określić, ile razy pracownik musi potworzyć zliczanie, jeśli wystąpi rozbieżność.</td>
+<td>Pracownik wybiera strefę, pulę pracy lub lokalizację, a Supply Chain Management przypisuje pracę na podstawie wyboru. Jeśli wybierzesz tę opcję, możesz też kliknąć <strong>Inwentaryzacja ciągła</strong> w okienku akcji, aby określić dodatkowe informacje do wyświetlenia i możesz też określić, ile razy pracownik musi potworzyć zliczanie, jeśli wystąpi rozbieżność.</td>
 </tr>
  <tr class="odd">
 <td>Ładowanie transportu</td>
@@ -333,7 +333,7 @@ W poniższej tabeli opisano te opcje.
 </tr>
 <tr class="odd">
 <td>Grupuj odłożone</td>
-<td>Zaznaczenie tej opcji powoduje pogrupowanie pracy odłożenia. Ta opcja jest dostępna, gdy praca została pogrupowana według pracownika lub przez Microsoft Dynamics 365 for Finance and Operations. Gdy pracownik zakończy wszystkie prace pobrania w grupie zostanie dla niej utworzona praca odłożenia.</td>
+<td>Zaznaczenie tej opcji powoduje pogrupowanie pracy odłożenia. Ta opcja jest dostępna, gdy praca została pogrupowana według pracownika lub przez Supply Chain Management. Gdy pracownik zakończy wszystkie prace pobrania w grupie zostanie dla niej utworzona praca odłożenia.</td>
 </tr>
 <tr class="even">
 <td>Typy korekt zapasów </td>
@@ -366,11 +366,11 @@ W poniższej tabeli opisano te opcje.
 </tr>
 <tr class="even">
 <td>Pole grup systemowych</td>
-<td>Wybierz pole określające, jak Microsoft Dynamics 365 for Finance and Operations pogrupuje pracę pobrania dla pracowników. Na przykład, jeśli wybierzesz pole <strong>ShipmentId</strong>, pracownik będzie skanować identyfikator wysyłki w celu pogrupowania pracy pobrania. Wszystkie prace dla wysyłki są następnie przypisywane do pracownika. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Trzeba też wprowadzić tekst w polu <strong>Etykieta grup systemowych</strong>, informujący pracownika o tym, co należy zeskanować.</td>
+<td>Wybierz pole określające, jak Supply Chain Management pogrupuje pracę pobrania dla pracownika. Na przykład, jeśli wybierzesz pole <strong>ShipmentId</strong>, pracownik będzie skanować identyfikator wysyłki w celu pogrupowania pracy pobrania. Wszystkie prace dla wysyłki są następnie przypisywane do pracownika. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Trzeba też wprowadzić tekst w polu <strong>Etykieta grup systemowych</strong>, informujący pracownika o tym, co należy zeskanować.</td>
 </tr>
 <tr class="odd">
 <td>Etykieta grup systemowych</td>
-<td>Wpisz tekst informujący pracownika o tym, co należy zeskanować, gdy praca odbierania jest pogrupowana przez Microsoft Dynamics 365 for Finance and Operations. Na przykład, jeśli używasz pola <strong>ShipmentId</strong> do grupowania pracy pobrania według wysyłki, możesz wprowadzić <strong>Shipment ID</strong> w polu. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Musisz także wybrać pole, według którego będzie przeprowadzane grupowanie w polu <strong>Pole grupowania systemu</strong>.</td>
+<td>Wpisz tekst informujący pracownika o tym, co należy zeskanować, gdy praca odbierania jest pogrupowana przez Supply Chain Management. Na przykład, jeśli używasz pola <strong>ShipmentId</strong> do grupowania pracy pobrania według wysyłki, możesz wprowadzić <strong>Shipment ID</strong> w polu. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Musisz także wybrać pole, według którego będzie przeprowadzane grupowanie w polu <strong>Pole grupowania systemu</strong>.</td>
 </tr>
 <tr class="even">
 <td>Użyj danych domyślnych</td>
@@ -386,13 +386,13 @@ W poniższej tabeli opisano te opcje.
 </tr>
 <tr class="odd">
 <td>Kod szablonu pracy</td>
-<td>Wybierz szablon pracy, który utworzy pracę dla procesu. Na przykład jeśli otrzymujesz towar dla zamówienia zakupu, praca odłożenia zostanie wygenerowana na podstawie szablonu pracy. Jeśli nie wybierzesz szablonu pracy, Microsoft Dynamics 365 for Finance and Operations przypisze szablon na podstawie kryteriów kwerendy. Aby uzyskać więcej informacji dotyczących szablonów pracy, zobacz <a href="control-warehouse-location-directives.md">Kontrolowanie pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji</a>.</td>
+<td>Wybierz szablon pracy, który utworzy pracę dla procesu. Na przykład jeśli otrzymujesz towar dla zamówienia zakupu, praca odłożenia zostanie wygenerowana na podstawie szablonu pracy. Jeśli nie wybierzesz szablonu pracy, Supply Chain Management przypisze szablon na podstawie kryteriów kwerendy. Aby uzyskać więcej informacji dotyczących szablonów pracy, zobacz <a href="control-warehouse-location-directives.md">Kontrolowanie pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Wymagaj od pracowników potwierdzenia produktów, lokalizacji lub ilości podczas pobierania pozycji
-Można skonfigurować potwierdzenia pracy, które wymagają od pracownika użycia urządzenia mobilnego w celu zarejestrowania lokalizacji lub ilości podczas wykonywania pracy w magazynie. Potwierdzenia pracy pomagają zapewnić, że pracownik jest w prawidłowym miejscu lub obsługuje poprawne ilości towarów. Można także włączyć Microsoft Dynamics 365 for Finance and Operations do automatycznego potwierdzenia rejestracji pracownika. Po włączeniu automatycznego potwierdzenia nie można jednocześnie wymagać potwierdzeń dla lokalizacji lub ilości. Potwierdzenia pracy zawierają także produkty i warianty produktu. Ponadto można zarejestrować potwierdzenia przez skanowanie kodu kreskowego. Aby potwierdzić produkty i warianty produktów, trzeba wprowadzić identyfikator produktu/wariantu produktu. Może to być identyfikator produktu, identyfikator wyszukiwania produktu, identyfikator zewnętrzny, GTIN lub kod kreskowy. Po wprowadzeniu identyfikatora lub zeskanowaniu kodu kreskowego wymiary wariantu produktu są wyświetlane w urządzeniu przenośnym. 
+Można skonfigurować potwierdzenia pracy, które wymagają od pracownika użycia urządzenia mobilnego w celu zarejestrowania lokalizacji lub ilości podczas wykonywania pracy w magazynie. Potwierdzenia pracy pomagają zapewnić, że pracownik jest w prawidłowym miejscu lub obsługuje poprawne ilości towarów. Można także włączyć Supply Chain Management do automatycznego potwierdzenia rejestracji pracownika. Po włączeniu automatycznego potwierdzenia nie można jednocześnie wymagać potwierdzeń dla lokalizacji lub ilości. Potwierdzenia pracy zawierają także produkty i warianty produktu. Ponadto można zarejestrować potwierdzenia przez skanowanie kodu kreskowego. Aby potwierdzić produkty i warianty produktów, trzeba wprowadzić identyfikator produktu/wariantu produktu. Może to być identyfikator produktu, identyfikator wyszukiwania produktu, identyfikator zewnętrzny, GTIN lub kod kreskowy. Po wprowadzeniu identyfikatora lub zeskanowaniu kodu kreskowego wymiary wariantu produktu są wyświetlane w urządzeniu przenośnym. 
 
 W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać potwierdzenia pracy.
 

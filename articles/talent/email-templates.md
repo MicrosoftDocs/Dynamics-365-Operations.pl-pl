@@ -1,6 +1,6 @@
 ---
 title: Szablony wiadomości e-mail
-description: Ten temat zawiera informacje o szablonach wiadomości e-mail, które można tworzyć i ich używać w aplikacji Microsoft Dynamics 365 for Talent - Attract.
+description: Ten temat zawiera informacje o szablonach wiadomości e-mail, które można tworzyć i ich używać w aplikacji Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/19/2018
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 1c7c017cce26b6b250d899bba891d6823b40c282
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 7174fd96e5ddc9ba5a91eb423d08afd1daa45f48
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729733"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008043"
 ---
 # <a name="email-templates"></a>Szablony wiadomości e-mail
 [!include[banner](../includes/banner.md)]
 
-Korzystając z biblioteki szablonów wiadomości e-mail, administratorzy mogą tworzyć jednolity motyw i branding dla wszystkich wiadomości e-mail wysyłanych przez Microsoft Dynamics 365 for Talent: Attract i Offer. Administratorzy mogą również przechowywać zbiór szablonów zawartości wiadomości e-mail z przeznaczeniem dla innych użytkowników. Zespół rekrutacyjny może używać tych szablonów w swoich procesach, aby sprawniej wysyłać wiadomości e-mail. Niektóre wiadomości e-mail są skonfigurowane tak, aby były wysyłane automatycznie, a administrator może użyć biblioteki szablonów wiadomości e-mail i dostosować treść tych wiadomości e-mail.
+Korzystając z biblioteki szablonów wiadomości e-mail, administratorzy mogą tworzyć jednolity motyw i branding dla wszystkich wiadomości e-mail wysyłanych przez Microsoft Dynamics 365 Talent: Attract i Offer. Administratorzy mogą również przechowywać zbiór szablonów zawartości wiadomości e-mail z przeznaczeniem dla innych użytkowników. Zespół rekrutacyjny może używać tych szablonów w swoich procesach, aby sprawniej wysyłać wiadomości e-mail. Niektóre wiadomości e-mail są skonfigurowane tak, aby były wysyłane automatycznie, a administrator może użyć biblioteki szablonów wiadomości e-mail i dostosować treść tych wiadomości e-mail.
 
 > [!NOTE]
 > Aby korzystać z szablonów wiadomości E-mail, organizacja musi mieć dodatek kompleksowej obsługi rekrutacji.

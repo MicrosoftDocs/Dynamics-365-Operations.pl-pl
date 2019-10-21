@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 98784c11c7393bb4c3e022d5bff4cca2daa1636e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572087"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025460"
 ---
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Instalowanie projektanta układów aplikacji Retail Point of Sale (POS)
 
@@ -36,11 +36,11 @@ O wyglądzie interfejsu graficznego projektowania programu MPOS lub Cloud POS de
 
 ## <a name="install-the-one-click-designer"></a>Instalowanie projektanta obsługiwanego jednym kliknięciem
 
-1. W programie Microsoft Dynamics 365 for Retail w menu w lewym górnym rogu wybierz kolejno opcje **Handel detaliczny** **i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Punkt sprzedaży** &gt; **Układy ekranu**.
+1. W rozwiązaniu Retail w menu w lewym górnym rogu wybierz kolejno opcje **Handel detaliczny** **i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Punkt sprzedaży** &gt; **Układy ekranu**.
 2. Zaznacz dowolny układu, który ma typ aplikacji **Modern POS for Windows** lub **Cloud POS**, a następnie kliknij przycisk **Projektant układu**.
 3. Na pasku powiadomień, który pojawia się u dołu okna programu Internet Explorer, kliknij przycisk **Otwórz** i zainstaluj projektanta obsługiwanego jednym kliknięciem. (Pasek powiadomień może pojawiać się w innych miejscach w innych przeglądarkach).
 4. W wyświetlonym oknie komunikatu **Uruchomienie aplikacji - ostrzeżenie zabezpieczeń** kliknij przycisk **Uruchom** i zainstaluj hosta projektanta programu Retail. Wskaźnik postępu pokazuje postęp procesu instalacji.
-5. Po zakończeniu instalacji na stronie **logowania** wprowadź nazwę użytkownika programu Microsoft Dynamics 365 for Retail i hasło, a następnie kliknij **Zaloguj**, aby uruchomić projektanta.
+5. Po zakończeniu instalacji na stronie **logowania** wprowadź nazwę użytkownika usługi Retail i hasło, a następnie kliknij **Zaloguj**, aby uruchomić projektanta.
 6. Po zweryfikowaniu Twoich poświadczeń i uruchomieniu projektanta możesz zaprojektować własny układ albo zmodyfikować istniejący.
 
     [![Układ w projektancie obsługiwanym jednym kliknięciem](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
@@ -52,11 +52,11 @@ O wyglądzie interfejsu graficznego projektowania programu MPOS lub Cloud POS de
     **Rozwiązania:**
 
     - W programie Internet Explorer upewnij się, że blokada wyskakujących okienek jest wyłączona dla tej witryny. Kliknij kolejno opcje **Ustawienia** &gt; **Opcje** &gt; **Prywatność** &gt; **Blokuj wyskakujące okienka** i w razie potrzeby zmień ustawienie.
-    - W programie Internet Explorer dodaj adres URL usługi Dynamics 365 for Retail do swoich stron zaufanych. Kliknij kolejno opcje **Ustawienia** &gt; **Opcje** &gt; **Zabezpieczenia** &gt; **Zaufane witryny** &gt; **Witryny** &gt; **Dodaj**.
+    - W Internet Explorer, dodaj adres URL usługi Retail do swoich stron zaufanych. Kliknij kolejno opcje **Ustawienia** &gt; **Opcje** &gt; **Zabezpieczenia** &gt; **Zaufane witryny** &gt; **Witryny** &gt; **Dodaj**.
 
 - Program się nie uruchamia i wyświetlana jest instrukcja o skontaktowanie się z dostawcą.
 
-    **Rozwiązanie:** W programie Internet Explorer dodaj adres URL usługi Dynamics 365 for Retail do swoich stron zaufanych. Kliknij kolejno opcje **Ustawienia** &gt; **Opcje** &gt; **Zabezpieczenia** &gt; **Zaufane witryny** &gt; **Witryny** &gt; **Dodaj**.
+    **Rozwiązanie:** W Internet Explorer dodaj adres URL usługi Retail do swoich stron zaufanych. Kliknij kolejno opcje **Ustawienia** &gt; **Opcje** &gt; **Zabezpieczenia** &gt; **Zaufane witryny** &gt; **Witryny** &gt; **Dodaj**.
 
 **Znany problem:** Projektant nie działa poprawnie w przeglądarkach Google Chrome i Mozilla Firefox. Pracujemy nad rozwiązaniem tego problemu.
 

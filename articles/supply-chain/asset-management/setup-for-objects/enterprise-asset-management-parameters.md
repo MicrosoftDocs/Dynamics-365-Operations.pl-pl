@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e6a2d428e433256339fff07f3805449a2604213
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 3336a3357578b25522e1ac457a48349f88b7318d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783509"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024575"
 ---
 # <a name="asset-management-parameters"></a>Parametry zarządzania składnikami majątku
 
@@ -33,7 +33,7 @@ ms.locfileid: "1783509"
 
 W module Zarządzanie składnikami majątku należy skonfigurować ogólne parametry odnoszące się do składników majątku, zleceń pracy i planowania zlecenia pracy. W tym temacie wyjaśniono sposób ich konfigurowania. Wybierz **Zarządzanie składnikami majątku** > **Ustawienia** > **Parametry zarządzania składnikami majątku**, aby otworzyć formularz.
 
-Za pomocą przycisku **Kreator danych** można automatycznie tworzyć dane konfiguracji do celów testowych lub demonstracyjnych w firmie w Dynamics 365 for Finance and Operations. Informacje na temat korzystania z kreatora można znaleźć w oficjalnym dokumencie „Konfigurowanie danych testowych w module Zarządzanie składnikami majątku”.
+Za pomocą przycisku **Kreator danych** można automatycznie tworzyć dane konfiguracji do celów testowych lub demonstracyjnych w firmie w Dynamics 365 Supply Chain Management. Informacje na temat korzystania z kreatora można znaleźć w oficjalnym dokumencie „Konfigurowanie danych testowych w module Zarządzanie składnikami majątku”.
 
 Łącze **Składniki majątku**
 
@@ -57,7 +57,7 @@ Za pomocą przycisku **Kreator danych** można automatycznie tworzyć dane konfi
 - Wybierz „Tak” na przełączniku **Błędy kopiowania**, jeśli chcesz automatycznie kopiować błędy zarejestrowane w zleceniach pracy do powiązanych żądań konserwacji.  
 - W polu **Poziom** można zdefiniować poziom lokalizacji czynności konserwacyjnych, który jest automatycznie wstawiany w zleceniu pracy, jeśli wszystkie powiązane zadania zlecenia pracy odnoszą się do tej samej lokalizacji czynności konserwacyjnych. Jeśli zadania zlecenia pracy nie odnoszą się do tej samej lokalizacji czynności konserwacyjnych na zdefiniowanym poziomie, pole **Lokalizacja czynności konserwacyjnych** jest pusta na zleceniu pracy. Przykład: Jeśli wstawisz cyfrę „1” w tym polu, to jest to najwyższy poziom w strukturze lokalizacji czynności konserwacyjnych. Jeśli w tym polu zostanie wstawiona cyfra „0”, nie zdefiniowano określonego poziomu lokalizacji czynności konserwacyjnych, tylko że wszystkie zadania zlecenia pracy w zleceniu pracy muszą być powiązane z tą samą lokalizacją czynności konserwacyjnych dla tej lokalizacji czynności konserwacyjnych, która ma zostać dodana do zlecenia pracy.  
 - Arkusze używane podczas księgowania zużycia na zleceniu pracy można wybrać na skróconej karcie **Ogólne** w polach **Godzina**, **Zapas** i **Wydatek**.  
-- W polu **Źródło języka produktu** wybierz język, który ma być używany dla nazw produktów w raportach modułu Zarządzanie składnikami majątku. Można wybrać język skonfigurowany dla konta firmowego lub język skonfigurowany dla aktualnie zalogowanego użytkownika Dynamics 365 for Finance and Operations.  
+- W polu **Źródło języka produktu** wybierz język, który ma być używany dla nazw produktów w raportach modułu Zarządzanie składnikami majątku. Można wybrać język skonfigurowany dla konta firmowego lub język skonfigurowany dla aktualnie zalogowanego użytkownika.  
 - Wybierz wartość „Tak” na przełączniku **Aktualizacje w czasie rzeczywistym**, jeśli chcesz automatycznie aktualizować zmiany domyślnych wartości typu zadania, planów konserwacji i seriach czynności konserwacyjnych.
 > - W przypadku wybrania opcji „Nie” zmiany wartości domyślnych typu zadania, planów konserwacji i serii czynności konserwacyjnych nie będą aktualizowane automatycznie w module Zarządzanie składnikami majątku  
 > - Wybierz opcję „Nie” na przełączniku, jeśli masz zsynchronizowaną dużą ilość danych, na przykład wiele składników majątku lub lokalizacji czynności konserwacyjnych skonfigurowanych na planach konserwacji lub seriach czynności konserwacyjnych, lub dużą liczbę planów konserwacyjnych lub serii czynności konserwacyjnych.  
@@ -75,7 +75,7 @@ Za pomocą przycisku **Kreator danych** można automatycznie tworzyć dane konfi
 - **Plan główny** odnosi się do zasobów w module **Administrowanie organizacją**. Jeśli w tym polu zostanie wybrany plan główny, można wyświetlić rezerwacje zdolności produkcyjnych związane ze zleceniami pracy w **Rezerwacji zdolności produkcyjnych** (**Administrowanie organizacją** > **Zasoby** > **Zasoby** > wybierz zasób > karta **Zasób** > przycisk **Rezerwacja zdolności produkcyjnych**). Jeśli zostawisz to pole puste, będzie można wyświetlić obciążenie zdolności produkcyjnych powiązane ze zleceniami pracy w **Obciążeniu zdolności produkcyjnych** (**Administrowanie organizacją** \> **Zasoby** \> **Zasoby** wybierz zasób \> karta \> **Zasób** \> przycisk **Rezerwacja zdolności produkcyjnych**).  
 
 >[!NOTE]
->Wybór dotyczy używania lub nie planu głównego w module **Zarządzanie składnikami majątku**, a pokrewnym formularzem używanym do przeglądu rezerwacji zdolności produkcyjnych lub obciążenia zdolności produkcyjnych jest standardowa konfiguracja Dynamics 365 for Finance and Operations. Zależnie od ustawień w polu **Plan główny** można uzyskać dostęp do informacji o zdolnościach produkcyjnych w obszarach **Rezerwacjach zdolności produkcyjnych** lub **Obciążenie wydajności** w module **Administrowanie organizacją**. Nie można utworzyć konfiguracji, w której rezerwacje zdolności produkcyjnych są wyświetlane w obu widokach.  
+>Wybór dotyczy używania lub nie planu głównego w module **Zarządzanie składnikami majątku**, a pokrewnym formularzem używanym do przeglądu rezerwacji zdolności produkcyjnych lub obciążenia zdolności produkcyjnych jest standardowa konfiguracja. Zależnie od ustawień w polu **Plan główny** można uzyskać dostęp do informacji o zdolnościach produkcyjnych w obszarach **Rezerwacjach zdolności produkcyjnych** lub **Obciążenie wydajności** w module **Administrowanie organizacją**. Nie można utworzyć konfiguracji, w której rezerwacje zdolności produkcyjnych są wyświetlane w obu widokach.  
 
 Pola opisane poniżej na liście punktowanej odnoszą się do obliczonych wyników oceny, które są używane do obliczania priorytetu zlecenia pracy podczas planowania zleceń pracy.
 

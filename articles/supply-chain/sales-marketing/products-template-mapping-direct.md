@@ -1,6 +1,6 @@
 ---
-title: Synchronizowanie produktów bezpośrednio w rozwiązaniu Finance and Operations do produktów w rozwiązaniu Sales
-description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania produktów z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Sales.
+title: Synchronizowanie produktów bezpośrednio z rozwiązania Supply Chain Management do produktów w rozwiązaniu Sales
+description: W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania produktów z Dynamics 365 Supply Chain Management do Dynamics 365 Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/10/2019
@@ -19,25 +19,25 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b4a6fab3a4831bc3d18313b351e453c615788843
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 38f0db7db0cc4f65d46cd241f75a7274f19f62cf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742431"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251392"
 ---
-# <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Synchronizowanie produktów w rozwiązaniu Finance and Operations bezpośrednio z produktami w rozwiązaniu Sales
+# <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Synchronizowanie produktów bezpośrednio z rozwiązania Supply Chain Management do produktów w rozwiązaniu Sales
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integrowanie danych na platformie Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania procuktów bezpośrednio z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Sales.
+W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania produktów bezpośrednio z Dynamics 365 Supply Chain Management do Dynamics 365 Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Przepływ danych w rozwiązaniu Prospekt na gotówkę
 
-Rozwiązanie Prospekt na gotówkę korzysta z funkcji Integracja danych do synchronizacji danych między wystąpieniami programu Finance and Operations a programem Sales. Szablony Prospekt na gotówkę, które są dostępne w funkcji integracji danych umożliwiają przepływ danych o kontach, kontaktach, produktach, ofertach sprzedaży, zamówieniach sprzedaży i fakturach sprzedaży między programami Finance and Operations a Sales. Poniższa ilustracja przedstawia sposób synchronizacji danych między programami Finance and Operations a Sales.
+Rozwiązanie Prospekt na gotówkę korzysta z funkcji Integracji danych do synchronizacji danych między wystąpieniami Supply Chain Management a Sales. Szablony Prospekt na gotówkę, które są dostępne w funkcji integracji danych umożliwiają przepływ danych o kontach, kontaktach, produktach, ofertach sprzedaży, zamówieniach sprzedaży i fakturach sprzedaży między usługą Supply Chain Management a Sales. Poniższa ilustracja przedstawia sposób synchronizacji danych między usługą Supply Chain Management a Sales.
 
 [![Przepływ danych w rozwiązaniu Prospekt na gotówkę](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -45,22 +45,22 @@ Rozwiązanie Prospekt na gotówkę korzysta z funkcji Integracja danych do synch
 
 Aby wyświetlić dostępne szablony, otwórz [Centrum administracyjne usługi PowerApps](https://admin.powerapps.com/dataintegration). Wybierz opcję **Projekty**, a następnie w prawym górnym rogu wybierz opcję **Nowy projekt**, aby wybrać szablony publiczne.
 
-Następujący szablon i podstawowe zadania są używane do synchronizowania produktów z rozwiązania Finance and Operations do rozwiązania Sales.
+Następujący szablon i podstawowe zadanie są używane do synchronizowania kont klientów z usługi Supply Chain Management do Sales:
 
-- **Nazwa szablonu w integracji danych:** Produkty (Fin and Ops do Sales) — bezpośrednie
+- **Nazwa szablonu w integracji danych:** Produkty (Supply Chain Management do Sales) — bezpośrednie
 - **Nazwa zadania w projekcie integracji danych:** Produkty
 
 Przed zsynchronizowaniem produktu nie jest wymagane wykonanie zadań synchronizacji.
 
 ## <a name="entity-set"></a>Zestaw jednostek
 
-| Finance and Operations     | Sprzedaż    |
+| Zarządzanie łańcuchem dostaw    | Sprzedaż    |
 |----------------------------|----------|
 | Zwolnione produkty możliwe do sprzedaży | Produkty |
 
 ## <a name="entity-flow"></a>Przepływ jednostek
 
-Produkty są zarządzane w programie Finance and Operations i synchronizowane z programem Sales. Jednostka danych **Zwolnione produkty możliwe do sprzedaży** w rozwiązaniu Finance and Operations eksportuje tylko produkty, które są *możliwe do sprzedaży*. Produkty możliwe do sprzedaży to takie, które zawierają informacje wymagane w celu użycia w zamówieniu sprzedaży. Te same reguły mają zastosowanie podczas weryfikowania produktu przy użyciu funkcji **Sprawdzanie poprawności** na stronie **Zwolniony produkt**.
+Produlty są zarządzane w usłudze Supply Chain Management i synchronizowane z usługą Sales. Jednostka danych **Zwolnione produkty możliwe do sprzedaży** w rozwiązaniu Supply Chain Management eksportuje tylko produkty, które są *możliwe do sprzedaży*. Produkty możliwe do sprzedaży to takie, które zawierają informacje wymagane w celu użycia w zamówieniu sprzedaży. Te same reguły mają zastosowanie podczas weryfikowania produktu przy użyciu funkcji **Sprawdzanie poprawności** na stronie **Zwolniony produkt**.
 
 Numer produktu jest używany jako klucz. Dlatego po zsynchronizowaniu wariantów produktu z rozwiązaniem Sales każdy wariant produktu ma indywidualny identyfikator produktu.
 
@@ -68,13 +68,13 @@ Numer produktu jest używany jako klucz. Dlatego po zsynchronizowaniu wariantów
 
 W rozwiązaniu Sales dodano nowe pole **Obsługiwane zewnętrznie** w produktach, co wskazuje, że dany produkt jest obsługiwany zewnętrznie. Domyślnie wartość jest ustawiana na **Tak** podczas importowania do rozwiązania Sales. Dostępne są następujące wartości:
 
-- **Tak** — produkt pochodził z rozwiązania Finance and Operations i nie będzie można edytować w rozwiązaniu Sales.
+- **Tak** — Produkt pochodził z rozwiązania Supply Chain Management i nie będzie można edytować w rozwiązaniu Sales.
 - **Nie**— produkt wprowadzono bezpośrednio w rozwiązaniu Sales.
 - **(Puste)** — produkt istniał w rozwiązaniu Sales przed włączeniem rozwiązania Prospekt na gotówkę.
 
-Pole **Obsługiwane zewnętrznie** pomaga zagwarantować, że z rozwiązaniem Finance and Operations zostaną zsynchronizowane tylko oferty i zamówienia sprzedaży zawierające produkty obsługiwane zewnętrznie.
+Pole **Obsługiwane zewnętrznie** pomaga zagwarantować, że z rozwiązaniem Supply Chain Management zostaną zsynchronizowane tylko oferty i zamówienia sprzedaży zawierające produkty obsługiwane zewnętrznie.
 
-Zewnętrznie obsługiwane produkty są automatycznie dodawane do pierwszego prawidłowego cennika o tej samej walucie. Cenniki są ułożone alfabetycznie według nazwy. Cena sprzedaży produktu z rozwiązania Finance and Operations jest używana jako cena w cenniku. Dlatego w rozwiązaniu Sales musi istnieć cennik dla każdej waluty sprzedaży produktów w rozwiązaniu Finance and Operations. Jako waluta w zwalnianych produktach możliwych do sprzedaży jest ustawiana waluta rozliczeniowa firmy, z której produkty zostały wyeksportowane.
+Zewnętrznie obsługiwane produkty są automatycznie dodawane do pierwszego prawidłowego cennika o tej samej walucie. Cenniki są ułożone alfabetycznie według nazwy. Cena sprzedaży produktu z rozwiązania Supply Chain Management jest używana jako cena w cenniku. Dlatego w rozwiązaniu Sales musi istnieć cennik dla każdej waluty sprzedaży produktów w rozwiązaniu Supply Chain Management. Jako waluta w zwalnianych produktach możliwych do sprzedaży jest ustawiana waluta rozliczeniowa firmy, z której produkty zostały wyeksportowane.
 
 > [!NOTE]
 > - Synchronizacja produktów nie powiedzie się, jeżeli nie będzie istniał cennik zawierający pasująca walutę.
@@ -82,18 +82,18 @@ Zewnętrznie obsługiwane produkty są automatycznie dodawane do pierwszego praw
 
 ## <a name="preconditions-and-mapping-setup"></a>Warunki wstępne i ustawienia mapowania
 
-- Przed uruchomieniem pierwszej synchronizacji należy wypełnić tabelę odrębnych produktów dla istniejących produktów w rozwiązaniu Finance and Operations. Istniejące produkty będą synchronizowane dopiero po zakończeniu tego zadania.
+- Przed uruchomieniem pierwszej synchronizacji należy wypełnić tabelę odrębnych produktów dla istniejących produktów w rozwiązaniu Supply Chain Management. Istniejące produkty będą synchronizowane dopiero po zakończeniu tego zadania.
 
-    1. W programie Finance and Operations za pomocą funkcji wyszukiwania poszukaj opcji **Wypełnij tabelę odrębnych produktów**.
+    1. W programie Supply Chain Management za pomocą funkcji wyszukiwania poszukaj opcji **Wypełnij tabelę odrębnych produktów**.
     2. Wybierz opcję **Wypełnij tabelę odrębnych produktów**, aby uruchomić zadanie. To zadanie należy uruchomić tylko raz.
 
-- Upewnij się, że wymagana mapa wartości dla jednostki miary (JM) sprzedaży między rozwiązaniem Finance and Operations a rozwiązaniem Sales istnieje w mapowaniu wartości **SalesUnitSymbol** na **DefaultUnit (Nazwa)**.
+- Upewnij się, że wymagana mapa wartości dla jednostki miary (JM) sprzedaży między rozwiązaniem Supply Chain Management a rozwiązaniem Sales istnieje w mapowaniu wartości **SalesUnitSymbol** na **DefaultUnit (Nazwa)**.
 - Zaktualizuj mapę wartości dla **grupy jednostek** (**defaultuomscheduleid.name**) tak, aby pasowała do **grupy jednostek** w rozwiązaniu Sales.
 
     Domyślna wartość szablonu to **Jednostka domyślna**.
 
-- Upewnij się, że jednostki miar sprzedaży wszystkich produktów z rozwiązania Finance and Operations istnieją w rozwiązaniu Sales.
-- Upewnij się, że cenniki istnieją w rozwiązaniu Sales dla każdej waluty sprzedaży produktów w rozwiązaniu Finance and Operations.
+- Upewnij się, że jednostki miar sprzedaży wszystkich produktów z rozwiązania Supply Chain Management istnieją w rozwiązaniu Sales.
+- Upewnij się, że cenniki istnieją w rozwiązaniu Sales dla każdej waluty sprzedaży produktów w rozwiązaniu Supply Chain Management.
 - Po utworzeniu produktów w rozwiązaniu Sales mogą mieć stan **Robocza** lub **Aktywne**. Zachowanie można kontrolować w oknie **Ustawienia** > **Administracja** > **Ustawienia systemu** > **Sprzedaż** w rozwiązaniu Sales.
 
     Produkty mają stan **Robocza** po utworzeniu i należy je uaktywnić przed dodaniem do ofert lub zamówień sprzedaży.
@@ -103,22 +103,22 @@ Zewnętrznie obsługiwane produkty są automatycznie dodawane do pierwszego praw
 Poniższa ilustracja przedstawia przykład mapowania szablonu w integracji danych. 
 
 > [!NOTE]
-> Mapowanie pokazuje, które informacje z pól zostaną zsynchronizowane z rozwiązania Sales do rozwiązania Finance and Operations.
+> Mapowanie pokazuje, które informacje z pól zostaną zsynchronizowane z rozwiązania Sales do rozwiązania Supply Chain Management.
 
 ![Mapowanie szablonu w integratorze danych](./media/products-direct-template-mapping-data-integrator-1.png)
 
 
 ## <a name="related-topics"></a>Powiązane tematy
 
-[Prospekt na gotówkę](prospect-to-cash.md)
+[Od prospekta do gotówki](prospect-to-cash.md)
 
-[Synchronizowanie kont bezpośrednio w rozwiązaniu Sales do odbiorców w rozwiązaniu Finance and Operations](accounts-template-mapping-direct.md)
+[Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do odbiorców w Supply Chain Management](accounts-template-mapping-direct.md)
 
-[Synchronizowanie kontaktów bezpośrednio w rozwiązaniu Sales do kontaktów lub odbiorców w rozwiązaniu Finance and Operations](contacts-template-mapping-direct.md)
+[Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Supply Chain Management](contacts-template-mapping-direct.md)
 
-[Synchronizowanie nagłówków i wierszy zamówień sprzedaży w rozwiązaniu Finance and Operations bezpośrednio z elementami w rozwiązaniu Sales](sales-order-template-mapping-direct-two-ways.md)
+[Synchronizowanie nagłówków i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales](sales-order-template-mapping-direct-two-ways.md)
 
-[Synchronizowanie nagłówków i wierszy faktur sprzedaży bezpośrednio w rozwiązaniu Finance and Operations z elementami w rozwiązaniu Sales](sales-invoice-template-mapping-direct.md)
+[Synchronizowanie nagłówków faktur i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales](sales-invoice-template-mapping-direct.md)
 
 
 

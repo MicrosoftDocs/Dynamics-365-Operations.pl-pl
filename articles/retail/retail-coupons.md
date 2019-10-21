@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 449a1f574cd32860cbdc2e43f21be1d3d692768f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553560"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025109"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurowanie kuponów dla sprzedaży detalicznej
 
@@ -37,10 +37,10 @@ Każdy kupon jest powiązany z jednym rabatem detalicznym. Grupy cenowe skojarzo
 
 Zasadniczo kupony są dodatkową weryfikacją nad rabatami detalicznymi. Kupon zawiera wymagane kody kuponu i kody kreskowe oraz zakresy dat dla tych kodów. Kupon określa również opcjonalne limity wykorzystania oraz wymagane właściwości odbiorcy. Rabat określa zbiór produktów, dla których kupon jest ważny. Grupy cenowe rabatu określają zbiór odbiorców, kanały lub katalogi, dla których kupon jest ważny.
 
-Aby utworzyć kuponu, należy utworzyć oddzielnie rabat i kupon. Następnie trzeba połączyć te elementy, zaznaczając rabat na stronie kuponu w programie Microsoft Dynamics 365 for Retail.
+Aby utworzyć kuponu, należy utworzyć oddzielnie rabat i kupon. Następnie trzeba połączyć te elementy, zaznaczając rabat na stronie kuponu w Retail.
 
 > [!NOTE]
-> Po połączeniu kuponu z rabatem kilka pól na stronie rabatu w programie Microsoft Dynamics 365 for Retail staje się tylko do odczytu, ponieważ są one zarządzane przez ustawienia kuponu. Są to m.in. pola stanu i standardowych zakresów dat.
+> Po połączeniu kuponu z rabatem kilka pól na stronie rabatu w Retail staje się tylko do odczytu, ponieważ są one zarządzane przez ustawienia kuponu. Są to m.in. pola stanu i standardowych zakresów dat.
 
 ### <a name="limited-use-coupons"></a>Kupony o ograniczonym użyciu
 
@@ -75,7 +75,7 @@ Zanim będzie można utworzyć kupon, należy skonfigurować kod kreskowy kuponu
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Wpływ częściowych aktualizacji na kupony
 
-Funkcjonalność kuponów obejmuje wiele odrębnych funkcji w programie Dynamics 365 for Retail. Program Microsoft Dynamics 365 for Retail Headquarters (HQ) i kanał mogą być częściowo aktualizowane w różnych składnikach. Dlatego trzeba dokładnie rozumieć, jak częściowe aktualizuje wpływają na całą funkcjonalność kuponów.
+Funkcjonalność kuponów obejmuje wiele odrębnych funkcji. Program Dynamics 365 Retail Headquarters (HQ) i kanał mogą być częściowo aktualizowane w różnych składnikach. Dlatego trzeba dokładnie rozumieć, jak częściowe aktualizuje wpływają na całą funkcjonalność kuponów.
 
 - **Program HQ jest częściowo zaktualizowany, ale aplikacje Retail Server i POS nie są zaktualizowane.** W aktualizacji programu HQ są aktualizowane strony kuponu i rabatu oraz aparat ustalania cen detalicznych. Jeśli tylko jeden z tych dwóch składników zostanie zaktualizowany, niektóre strony w module Retail będą zawierały niezgodne dane obliczania cen. W związku z tym podczas obliczania rabatów mogą się pojawić nieoczekiwane obliczenia rabatów lub błędy.
 - **Program HQ jest zaktualizowany, ale aplikacje Retail Server i POS nie są zaktualizowane (N-1).** Ponieważ nie wszystkie sklepy detaliczne mogą zostać zaktualizowane w tym samym czasie, zaleca się, aby przed zaktualizowaniem sklepów detalicznych zaktualizować aplikację HQ. W scenariuszu N-1 nowe funkcje dotyczące kuponów nie będą dostępne w sklepach, które nie zostały jeszcze zaktualizowane. Na przykład funkcjonalność kuponów wprowadza wiersze wykluczenia. Użycie opcji wykluczenia do wierszy rabatu spowoduje, że nie będą one stosowane w sklepie detalicznym, który korzysta ze starszej wersji.

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e600e1d2bb4bc1a49d55fb58b3e74fa7e13fc2af
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556447"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017904"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Zarządzanie zmianami i szufladami kasowymi
 
@@ -32,7 +32,7 @@ ms.locfileid: "1556447"
 
 W tym temacie wyjaśniono sposób konfigurowania i używania zmian w punkcie sprzedaży detalicznej (POS).
 
-W programie Microsoft Dynamics 365 for Retail termin *zmiana* opisuje zbiór danych transakcyjnych i działań w puncie sprzedaży między dwoma punktami w czasie. Dla każdej zmiany oczekiwana kwota pieniędzy jest porównywana z kwotą podliczoną i zadeklarowaną.
+W programie Dynamics 365 Retail termin *zmiana* opisuje zbiór danych transakcyjnych i działań w puncie sprzedaży między dwoma punktami w czasie. Dla każdej zmiany oczekiwana kwota pieniędzy jest porównywana z kwotą podliczoną i zadeklarowaną.
 
 Zazwyczaj zmiany są otwierane na początku dnia roboczego. W tym momencie użytkownik deklaruje kwotę początkową znajdującą się w szufladzie kasowej. Następnie w ciągu dnia są wykonywane transakcje sprzedaży. Na koniec dnia stan szuflady jest podliczany, a kwoty zamknięcia są deklarowane. Zmiana jest zamykana i następuje wygenerowanie końcowego raportu sprzedaży. Końcowy raport sprzedaży wskazuje, czy wystąpił nadmiar lub niedobór.
 
@@ -69,7 +69,7 @@ Aby zmian wspólnych można było używać w sklepie, szuflada kasowa musi być 
 
 ## <a name="shift-and-drawer-operations"></a>Operacje na zmianach i szufladach kasowych
 
-Można wykonywać różne operacje w celu zmiany stanu zmiany albo zwiększenia lub zmniejszenia kwoty pieniędzy w szufladzie kasowej. W tej sekcji omówiono te operacje na zmianach dostępne w aplikacjach Microsoft Dynamics 365 for Retail Modern POS i Cloud POS.
+Można wykonywać różne operacje w celu zmiany stanu zmiany albo zwiększenia lub zmniejszenia kwoty pieniędzy w szufladzie kasowej. W tej sekcji omówiono te operacje na zmianach dostępne w Retail Modern POS i Cloud POS.
 
 ### <a name="open-shift"></a>Otwarta zmiana
 

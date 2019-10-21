@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie integracji listy płac między rozwiązaniami Talent i Dayforce
-description: W tym temacie wyjaśniono sposób konfigurowania integracji między programami Microsoft Dynamics 365 for Talent i Ceridian Dayforce, dzięki czemu można przetwarzać sekcję płatności.
+description: W tym temacie wyjaśniono sposób konfigurowania integracji między programami Microsoft Dynamics 365 Talent i Ceridian Dayforce, dzięki czemu można przetwarzać sekcję płatności.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/24/2019
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c26dfed9909b0dbd05fc18c206e5adc947feaef5
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: ec1d14cb14ab709dfc1bead4be0785904efcce4e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742925"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251046"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurowanie integracji listy płac między rozwiązaniami Talent i Dayforce
 
 [!include [banner](includes/banner.md)]
 
-Integracja między programami Microsoft Dynamics 365 for Talent i Ceridian Dayforce opiera się na kilku krokach konfiguracji, które opisano w tym temacie. Aby można było przetwarzać sesję płatności, należy skonfigurować integrację w rozwiązaniach Talent i Dayforce.
+Integracja między programami Microsoft Dynamics 365 Talent i Ceridian Dayforce opiera się na kilku krokach konfiguracji, które opisano w tym temacie. Aby można było przetwarzać sesję płatności, należy skonfigurować integrację w rozwiązaniach Talent i Dayforce.
 
 Jeśli korzystasz z usługi takiej jak Dayforce do realizowania sesji płatności, należy włączyć integrację w aplikacji Talent. Integracja wymaga określonych danych z programu Talent. W związku z tym należy sprawdzić, czy dane mapowane do systemu Dayforce są skonfigurowano w aplikacji Talent w sposób zapewniający obsługę integracji. Integracja wykorzystuje następujące ogólne kategorie danych:
 
@@ -39,7 +39,7 @@ W tym temacie opisano czynności, które należy wykonać, aby włączyć integr
 
 ## <a name="enable-the-integration"></a>Włączanie integracji
 
-W aplikacji Talent należy włączyć funkcję integracji i wprowadzić informacje konfiguracyjne w celu nawiązania połączenia z systemem Dayforce. Jeśli chcesz, aby generowane transakcje księgi głównej były importowane do programu Microsoft Dynamics 365 for Finance and Operations, należy także skonfigurować konto magazynu w usłudze Microsoft Azure oraz wprowadzić ciąg połączenia z usługą Azure Storage w aplikacji Finance and Operations.
+W aplikacji Talent należy włączyć funkcję integracji i wprowadzić informacje konfiguracyjne w celu nawiązania połączenia z systemem Dayforce. Jeśli chcesz, aby generowane transakcje księgi głównej były importowane do usługi Microsoft Dynamics 365 Finance, należy także skonfigurować konto magazynu w usłudze Microsoft Azure oraz wprowadzić ciąg połączenia z usługą Azure Storage w aplikacji Finance.
 
 Aby włączyć integrację w aplikacji Talent, wykonaj następujące kroki.
 

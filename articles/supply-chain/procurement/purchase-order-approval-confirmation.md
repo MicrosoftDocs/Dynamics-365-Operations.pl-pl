@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e274f52484d3fe1884152f155b6b7f0714f8842e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 58ff596314d348a465ba6ee23369f09e74d580eb
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572703"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248888"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Zatwierdzanie i potwierdzanie zamówień zakupu
 
@@ -39,7 +39,7 @@ Po utworzeniu zamówienia zakupu może być konieczne przejście procesu zatwier
 ## <a name="approval-of-purchase-orders"></a>Zatwierdzanie zamówień zakupu
 Zamówienia zakupu, które nie korzystają z mechanizmu zarządzania zmianami, mają stan **Zatwierdzone** natychmiast po utworzeniu, podczas gdy zamówienia zakupu używające funkcji zarządzania zmianami mają po utworzeniu stan **Wersja robocza**. Zamówienie zakupu, które zostało utworzone przez akceptację zamówienia planowanego z planowania głównego, jest zawsze ustawiane na stan **Zatwierdzone**, niezależnie od ustawień zarządzania zmianami. Zamówienie zakupu powoduje tworzenie transakcji magazynowych tylko wtedy, gdy osiągnie stan **Zatwierdzone**. W związku z tym te zapasy są wyświetlane jako dostępne do rezerwacji lub oznaczenia dopiero po zaakceptowaniu zamówienia.  
 
-Włączanie zarządzania zmianami dla zamówień zakupu odbywa się przez ustawienie opcji **Uaktywnienie zarządzania zmianami** na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po włączeniu zarządzania zmianami zamówienia zakupu po wypełnieniu muszą przejść przez przepływ pracy zatwierdzania. Program Microsoft Dynamics 365 for Finance and Operations zawiera edytora procesów przepływu pracy, gdzie można zdefiniować przepływ pracy reprezentujący proces zatwierdzania. Ten przepływ pracy może zawierać reguły automatycznego zatwierdzania, reguły określające przypisywanie osób do zatwierdzania konkretnych zamówień zakupu oraz reguły eskalacji przepływów pracy oczekujących bardzo długo na zatwierdzenie. Proces zarządzania zmianami można włączyć dla wszystkich dostawców lub dla wybranych dostawców. Ponadto można skonfigurować proces tak, aby można go było zastępować dla poszczególnych zamówień zakupu.  
+Włączanie zarządzania zmianami dla zamówień zakupu odbywa się przez ustawienie opcji **Uaktywnienie zarządzania zmianami** na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po włączeniu zarządzania zmianami zamówienia zakupu po wypełnieniu muszą przejść przez przepływ pracy zatwierdzania. Program Supply Chain Management zawiera edytora procesów przepływu pracy, gdzie można zdefiniować przepływ pracy reprezentujący proces zatwierdzania. Ten przepływ pracy może zawierać reguły automatycznego zatwierdzania, reguły określające przypisywanie osób do zatwierdzania konkretnych zamówień zakupu oraz reguły eskalacji przepływów pracy oczekujących bardzo długo na zatwierdzenie. Proces zarządzania zmianami można włączyć dla wszystkich dostawców lub dla wybranych dostawców. Ponadto można skonfigurować proces tak, aby można go było zastępować dla poszczególnych zamówień zakupu.  
 
 Po włączeniu zarządzania zmianami zamówienia zakupu przechodzą przez sześć stanów zatwierdzenia: od **Wersja robocza** do **Zakończone**. Po zatwierdzeniu zamówienia użytkownicy, którzy chcą je zmodyfikować, muszą użyć operacji **Zażądaj zmiany**.
 
@@ -55,7 +55,7 @@ Po włączeniu zarządzania zmianami zamówienia zakupu przechodzą przez sześ�
 ## <a name="confirming-purchase-orders"></a>Potwierdzanie zamówienia zakupu
 Zamówienia zakupu, które mają stan zatwierdzenia **Zatwierdzone**, mogą przejść przez dodatkowe czynności, zanim zostaną potwierdzone. Na przykład może być konieczne wysłanie zapytania dotyczącego zakupu do dostawcy w celu uzyskiwanie informacji o cenach, rabatach lub datach dostaw. W takim przypadku można ustawić zamówieniu zakupu stan **W trakcie analizy zewnętrznej**, używając do tego akcji **Zapytanie dotyczące zakupu**.  
 
-Dostawcy, którym skonfigurowano używanie portalu dostawców, mogą przeglądać zamówienia w portalu oraz je zatwierdzać lub odrzucać. Podczas tego procesu weryfikowania zamówienie zakupu ma stan **W trakcie analizy zewnętrznej**. Portal dostawców można skonfigurować tak, aby potwierdzenie od dostawcy automatycznie potwierdzało zamówienie w programie Finance and Operations. Alternatywnie można ręcznie potwierdzić zamówienie zakupu po otrzymaniu potwierdzenia od dostawcy. Jeśli dostawca odrzuci zamówienie zakupu, odrzucenie jest odbierane razem z przyczynę odrzucenia i sugestiami zmian. W takim przypadku zamówienie zakupu pozostaje w stanie **W trakcie analizy zewnętrznej**.  
+Dostawcy, którym skonfigurowano używanie portalu dostawców, mogą przeglądać zamówienia w portalu oraz je zatwierdzać lub odrzucać. Podczas tego procesu weryfikowania zamówienie zakupu ma stan **W trakcie analizy zewnętrznej**. Portal dostawców można skonfigurować tak, aby potwierdzenie od dostawcy automatycznie potwierdzało zamówienie w programie Supply Chain Management. Alternatywnie można ręcznie potwierdzić zamówienie zakupu po otrzymaniu potwierdzenia od dostawcy. Jeśli dostawca odrzuci zamówienie zakupu, odrzucenie jest odbierane razem z przyczynę odrzucenia i sugestiami zmian. W takim przypadku zamówienie zakupu pozostaje w stanie **W trakcie analizy zewnętrznej**.  
 
 Istnieje także możliwość wygenerowania potwierdzenia pro forma dla zamówienia, zanim zostanie przetworzone faktyczne potwierdzenie. Ta opcja tylko tworzy raport, który można udostępnić dostawcy. Nie tworzy żadnych informacji w arkuszu.  
 

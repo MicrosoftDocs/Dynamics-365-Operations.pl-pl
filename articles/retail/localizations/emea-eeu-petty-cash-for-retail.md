@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5b91d8589fa4226a2c28e6935b32109e702afc1a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5722099f8f146b9c5cc1fd427ccc57e040d2ff8a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571539"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025428"
 ---
 # <a name="petty-cash-management-for-retail-for-eastern-europe"></a>Zarządzanie gotówką podręczną w aplikacji Retail dla Europy Wschodniej
 
@@ -50,7 +50,7 @@ Na stronie **Zaksięgowane zestawienia** w okienku akcji można wykonać następ
 
 Przed użyciem zarządzania gotówką w programie Retail, należy wykonać poniższą procedurę konfiguracji:
 
-- Na stronie **Metody płatności** skonfiguruj metody płatności dla każdego typu płatności akceptowanego przez sprzedawcę detalicznego. Można używać różnych metod płatności do księgowania transakcji w aplikacji Retail POS. Aby uzyskać więcej informacji o metodach płatności w aplikacji Retail, zobacz [Metody płatności](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
+- Na stronie **Metody płatności** skonfiguruj metody płatności dla każdego typu płatności akceptowanego przez sprzedawcę detalicznego. Można używać różnych metod płatności do księgowania transakcji w aplikacji Retail POS. Aby uzyskać więcej informacji o metodach płatności, zobacz [Metody płatności](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
 - Skonfiguruj parametry sprzedaży detalicznej dla operacji gotówkowych.
 - Ustaw metodę płatności dla płatności gotówką w sklepie sieci sprzedaży.
 

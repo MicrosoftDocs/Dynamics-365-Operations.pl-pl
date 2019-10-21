@@ -1,6 +1,6 @@
 ---
 title: Tworzenie, zatwierdzanie i podpisywanie ofert
-description: W tym temacie szczegółowo wyjaśniono sposób tworzenie, zatwierdzania i podpisywania oferty dla kandydata w Dynamics 365 for Talent.
+description: W tym temacie szczegółowo wyjaśniono sposób tworzenie, zatwierdzania i podpisywania oferty dla kandydata w Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8c5f95f1d3be22a73cc42cb3667b793490f2a136
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: b9ccd22e218137637cc0bbde0d4ad19a28591731
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739640"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008112"
 ---
 # <a name="create-approve-and-sign-offers"></a>Tworzenie, zatwierdzanie i podpisywanie ofert
 
@@ -110,7 +110,7 @@ Istnieje kilka czynności, które można wykonać przed wysłaniem oferty do kan
 Jeśli wybrano Adobe Sign jako preferowaną metodę e-podpisu, twórcy ofert muszą na tym etapie połączyć swoją licencję Adobe Sign. 
 
 ### <a name="docusign"></a>DocuSign
-Jeśli wybrano DocuSign jako preferowaną metodę e-podpisu, twórcy ofert muszą na tym etapie połączyć swoją licencję DocuSign. Po zalogowaniu się domyślne konto i uprawnienia skojarzone z profilem użytkownika DocuSign są połączone z Talent Attract. 
+Jeśli wybrano DocuSign jako preferowaną metodę e-podpisu, twórcy ofert muszą na tym etapie połączyć swoją licencję DocuSign. Po zalogowaniu się domyślne konto i uprawnienia skojarzone z profilem użytkownika DocuSign są połączone z Talent: Attract. 
 
 -  Można wyświetlić i edytować szablon wiadomości e-mail zgodnie z potrzebami.
 

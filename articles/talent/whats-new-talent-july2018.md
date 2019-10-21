@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (lipiec 2018 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent Core HR.
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent - Core HR (lipiec 2018 r.)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent - Core HR.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/31/2018
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.openlocfilehash: c0867fcf6203c303a700723d8c190378f495dac0
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: ba06183f32e9a788432bae640d1997f2ffb127f1
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856264"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010229"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-july-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (lipiec 2018 r.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-july-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent: Core HR (lipiec 2018 r.)
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent Core HR.
+W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent: Core HR.
 
-## <a name="powerapps-personalization"></a>Personalizacja aplikacji PowerApp
+## <a name="powerapps-personalization"></a>Personalizacja PowerApps
 
-Microsoft Dynamics 365 for Talent obsługuje integrację z usługą Microsoft PowerApps. Usługa PowerApps umożliwia programistom i użytkownikom nietechnicznym tworzenie niestandardowych aplikacji biznesowych dla urządzeń przenośnych, tabletów i sieci web bez konieczności pisania kodu źródłowego. Aplikacje opracowane za pomocą usługi PowerApps przez użytkownika, organizację lub członków szerszego ekosystemu można następnie osadzać w kliencie rozwiązania Talent w celu rozszerzenia funkcjonalności produktu. Na przykład można utworzyć aplikację, która uzupełnia program Talent o informacje pobrane z innego systemu.
+Rozwiązanie Talent obsługuje integrację z usługą Microsoft PowerApps. Usługa PowerApps umożliwia programistom i użytkownikom nietechnicznym tworzenie niestandardowych aplikacji biznesowych dla urządzeń przenośnych, tabletów i sieci web bez konieczności pisania kodu źródłowego. Aplikacje opracowane za pomocą usługi PowerApps przez użytkownika, organizację lub członków szerszego ekosystemu można następnie osadzać w kliencie rozwiązania Talent w celu rozszerzenia funkcjonalności produktu. Na przykład można utworzyć aplikację, która uzupełnia program Talent o informacje pobrane z innego systemu.
 
 Aby uzyskać więcej informacji, zobacz [Osadzanie aplikacji usługi PowerApps](../fin-and-ops/get-started/embed-power-apps.md).
 

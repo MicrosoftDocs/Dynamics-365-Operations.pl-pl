@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (5 marca 2019 r.)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent.
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (5 marca 2019 r.)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/05/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: c7ee8f4cf14197d6bd4549741058fc5fe95ae55d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741897"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026677"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (5 marca 2019 r.)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (5 marca 2019 r.)
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Talent
+W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Talent.
 
 ## <a name="changes-in-attract"></a>Zmiany w Attract
 
@@ -78,5 +78,5 @@ Zbliżają się terminy uaktualniania do Common Data Service dla aplikacji. Zalo
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Zaawansowane zabezpieczenia wynagrodzeń (stałe i zmienne)
 W wielu organizacjach menedżerowie ds. wynagrodzeń i świadczeń mają dostęp tylko do określonych rekordów wynagrodzeń, takich jak rekordy dla kadry zarządzającej i pracowników regionalnych. W przypadku tej zmiany można zarządzać różnymi planami wynagrodzeń dla różnych grup pracowników w organizacji. Stałe i zmienne plany mogą mieć przypisane role zabezpieczeń, które będą określały dostęp do planów i danych pracowników związanych z planami, takich jak rekordy płac i premii. Tylko role z danym dostępem mogą przetwarzać wynagrodzenia dla tych pracowników.
 
-###  <a name="platform-update-24"></a>Aktualizacja platformy Update 24
-Aby uzyskać dodatkowe szczegółowe informacje dotyczące Platform update 24, zobacz [nowe lub zmienione funkcje w Platform update 24 Finance and Operations (2019 marca)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+###  <a name="platform-update-24-for-finance-and-operations"></a>Aktualizacja Platform update 24 dla Finance and Operations
+Aby uzyskać dodatkowe szczegółowe informacje dotyczące 24. aktualizacji platformy dla Finance and Operations, zobacz [Nowości i zmiany w 24. aktualizacji platformy Finance and Operations (marzec 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

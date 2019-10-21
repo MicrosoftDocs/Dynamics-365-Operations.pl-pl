@@ -1,6 +1,6 @@
 ---
 title: Sprzedaż i zwrot produktów nienależących do asortymentu sklepu
-description: W aplikacji Dynamics 365 for Retail można sprzedawać i zwracać produkty spoza asortymentu.
+description: W aplikacji Dynamics 365 Retail można sprzedawać i zwracać produkty spoza asortymentu.
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ae6bac983ddb4d4a217fe83c8f68c5a87ccd6a47
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567922"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024948"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Sprzedaż i zwrot produktów nienależących do asortymentu sklepu
 
@@ -37,7 +37,7 @@ Poniżej przedstawiono niektóre typowe scenariusze:
 + Sprzedawca nie ma określonych produktów w sklepie lub nie ma ich w sklepie odwiedzonym przez klienta, ale produkty są dostępne w innych sklepach. Pracownik sklepu może pomóc klientowi, wyszukując lub przeglądając produkty w sklepie, dodając je do koszyka, a następnie finalizując transakcję przez wybranie metody dostawy.
 + Sprzedawca detaliczny ma wiele sklepów w danym mieście lub regionie i nie chce zmuszać klientów, aby zwracali produkty do tego samego sklepu, w którym je kupili. Zamiast tego klienci mogą zwracać produkty do dowolnych sklepów.
 
-Te typowe scenariusze są dostępne dla sprzedawców detalicznych używających aplikacji Dynamics 365 for Retail. Aplikacja Retail oferuje następujące możliwości:
+Te typowe scenariusze są dostępne dla sprzedawców detalicznych używających usługi Retail. Aplikacja Retail oferuje następujące możliwości:
 
 + Wyszukiwanie lub przeglądanie produktów w innych sklepach.
 + Wyszukiwanie lub przeglądanie wszystkich zwolnionych produktów.

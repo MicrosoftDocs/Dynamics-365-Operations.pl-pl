@@ -1,6 +1,6 @@
 ---
-title: Współpraca dostawców z odbiorcami
-description: W tym temacie opisano używanie portalu współpracy z dostawcami w programie Microsoft Dynamics 365 for Finance and Operations do pracy z zamówieniami zakupu i monitorowania zapasów konsygnacyjnych.
+title: Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami
+description: W tym temacie opisano używanie portalu współpracy z dostawcami w do pracy z zamówieniami zakupu i monitorowania zapasów konsygnacyjnych.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bd3967da105b3cec4a722ee8e04fac13c798feec
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e968a57c09837a5cfa5a0476426a274021122959
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567591"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250146"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w programie Microsoft Dynamics 365 for Finance and Operations. Dostawcy mogą ukończyć szereg procesów biznesowych z następujących obszarów roboczych:
+W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w Microsoft Dynamics 365 Supply Chain Management. Dostawcy mogą ukończyć szereg procesów biznesowych z następujących obszarów roboczych:
 
 - **Potwierdzenie zamówienia zakupu** — monitorowanie i odpowiadanie na zamówienia zakupu.
 - **Składanie ofert przez dostawców** — wyświetlanie zapytań ofertowych (ZO) i odpowiadanie na nie przez wprowadzanie ofert.

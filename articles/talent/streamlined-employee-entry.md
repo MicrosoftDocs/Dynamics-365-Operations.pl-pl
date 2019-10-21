@@ -1,6 +1,6 @@
 ---
 title: Usprawnione wprowadzanie pracowników i nawigacja
-description: Wprowadzanie danych dla pracowników w Dynamics 365 for Talent zostało udoskonalone, aby umożliwić szybkie wprowadzanie dla wszystkich pracowników, przeszłych, aktywnych lub przyszłych. Uproszczony/skonsolidowany model nawigacji został zaktualizowany w celu szybkiego znajdowania informacji i wyświetlania i wprowadzania niezbędnych aktualizacji.
+description: Wprowadzanie danych dla pracowników w Dynamics 365 Talent zostało udoskonalone, aby umożliwić szybkie wprowadzanie dla wszystkich pracowników, przeszłych, aktywnych lub przyszłych. Uproszczony/skonsolidowany model nawigacji został zaktualizowany w celu szybkiego znajdowania informacji i wyświetlania i wprowadzania niezbędnych aktualizacji.
 author: andreabichsel
 manager: AnnBe
 ms.date: 08/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: be0253ffc4396f36050ef02c51a20d378e44473d
-ms.sourcegitcommit: 4176c333ce3f88c5c68e95bd47e5791d32365dd2
+ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1918217"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009429"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Usprawnione wprowadzanie pracowników i nawigacja
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 for Talent umożliwia wydajne wprowadzanie danych dotyczących pracowników i zatrudnienia. Można szybko zaktualizować informacje o historii pracy dla przeszłych, aktywnych i przyszłych pracowników i zleceniobiorców.
+Dynamics 365 Talent umożliwia wydajne wprowadzanie danych dotyczących pracowników i zatrudnienia. Można szybko zaktualizować informacje o historii pracy dla przeszłych, aktywnych i przyszłych pracowników i zleceniobiorców.
 
 Można również włączyć uproszczone funkcje nawigacyjne, aby szybko znajdować informacje związane z informacjami i wprowadzać niezbędne zmiany. Ta funkcja jest teraz dostępna w środowiskach piaskownicy. Aby włączyć tę funkcję, przejdź do **Administrowanie systemem > Łącza > Ustawienia > Parametry systemowe > Funkcje w wersji zapoznawczej**. Wybierz **Formularz i nawigację rozszerzonego pracownika**. Dzięki temu zmiany są włączone dla wszystkich użytkowników. Opcję tę można wyłączyć w dowolnym momencie.
 

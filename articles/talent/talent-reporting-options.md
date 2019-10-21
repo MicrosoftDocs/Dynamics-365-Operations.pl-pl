@@ -1,6 +1,6 @@
 ---
 title: Opcje raportowania w aplikacji Talent
-description: W tym temacie opisano, jak rozwiązać ten problem, w którym odbiorca chce dostosować raporty Microsoft Dynamics 365 for Talent lub tworzyć nowe raporty.
+description: W tym temacie opisano, jak rozwiązać ten problem, w którym odbiorca chce dostosować raporty Microsoft Dynamics 365 Talent lub tworzyć nowe raporty.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8e7348a515b08523c15aa8f74d5616a3daf645b7
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 50342c847200d015a66c6f22007070bb26c6caef
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741805"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009359"
 ---
 # <a name="reporting-options-in-talent"></a>Opcje raportowania w aplikacji Talent
 
@@ -34,7 +34,7 @@ Ten problem dotyczy wszystkich środowisk.
 
 **Objaw**
 
-Odbiorca chce dostosować raporty Microsoft Dynamics 365 for Talent lub tworzyć nowe raporty.
+Odbiorca chce dostosować raporty Microsoft Dynamics 365 Talent lub tworzyć nowe raporty.
 
 **Wystawienie**
 
@@ -42,7 +42,7 @@ Użytkownik nie może dostosować osadzonych raportów programu Microsoft Power 
 
 **Rozwiązanie**
 
-- Dane Core HR wysyłane do Common Data Service mogą być zgłaszane w za pośrednictwem łącznika usługi PowerApps Common Data Service do Power BI Desktop. Należy zauważyć, że usługa Common Data Service zawiera podzbiór danych Core HR. Aby uzyskać więcej informacji dotyczących Power BI i pulpitów nawigacyjnych, zobacz [tworzenie raportów Power BI i pulpitów nawigacyjnych za pomocą PowerApps Common Data Service](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi).
+- Dane Core HR wysyłane do Common Data Service mogą być zgłaszane w za pośrednictwem łącznika PowerApps Common Data Service do Power BI Desktop. Należy zauważyć, że usługa Common Data Service zawiera podzbiór danych Core HR. Aby uzyskać więcej informacji dotyczących Power BI i pulpitów nawigacyjnych, zobacz [Tworzenie raportów Power BI i pulpitów nawigacyjnych za pomocą PowerApps Common Data Service](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi).
 - Raportowanie elektroniczne (RE) jest dostępne dla niektórych raportach w Talent. Dostosowania według odbiorcy można wykonać za pomocą opcji konfiguracji ER.
 - Dane można eksportować do Microsoft Excel lub Microsoft Word przy użyciu różnych elementów danych, które Talent dostarcza dzięki integracji z Microsoft Office.
 

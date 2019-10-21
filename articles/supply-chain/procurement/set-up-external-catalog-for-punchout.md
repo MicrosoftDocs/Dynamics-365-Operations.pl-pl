@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595618"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249401"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut eProcurement
 
@@ -37,12 +37,12 @@ Aby można było skonfigurować taką komunikację, dostawca musi podać element
 
 ## <a name="setting-up-an-external-catalog"></a>Konfigurowanie zewnętrznego katalogu
 
-Zewnętrzny katalog powinien umożliwiać pracownikowi wprowadzającemu zapotrzebowanie na zakup przejście do zewnętrznej witryny w celu wybrania produktów. Produkty wybrane przez pracownika z zewnętrznego katalogu są zwracane do programu Dynamics 365 for Finance and Operations z aktualnymi informacjami cenowymi i z tego miejsca mogą zostać dodane do zapotrzebowania na zakup. Celem nie jest umożliwienie pracownikom składania zamówień bezpośrednio w zewnętrznej witrynie. Podczas konfigurowania zewnętrznego katalogu należy upewnić się, że celem witryny dostępnej przez zewnętrzny katalog jest tylko zebranie informacji ofertowych, a nie złożenie faktycznego zamówienia.
+Zewnętrzny katalog powinien umożliwiać pracownikowi wprowadzającemu zapotrzebowanie na zakup przejście do zewnętrznej witryny w celu wybrania produktów. Produkty wybrane przez pracownika z zewnętrznego katalogu są zwracane z aktualnymi informacjami cenowymi i z tego miejsca mogą zostać dodane do zapotrzebowania na zakup. Celem nie jest umożliwienie pracownikom składania zamówień bezpośrednio w zewnętrznej witrynie. Podczas konfigurowania zewnętrznego katalogu należy upewnić się, że celem witryny dostępnej przez zewnętrzny katalog jest tylko zebranie informacji ofertowych, a nie złożenie faktycznego zamówienia.
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Aby skonfigurować zewnętrzny katalog dostawcy, należy wykonać następujące zadania:
 
 1. Ustawianie hierarchii kategorii zaopatrzenia. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia](tasks/set-up-policies-procurement-category-hierarchies.md).
-2. Zarejestrowanie dostawcy w programie Finance and Operations. Aby można było utworzyć konfiguracje pozwalające na dostęp do zewnętrznego katalogu dostawcy, należy skonfigurować dostawcę i jego osobę kontaktową w programie Microsoft Dynamics 365. Ponadto dostawca zewnętrznego katalogu musi być dodany do wybranej kategorii zaopatrzenia. Aby uzyskać więcej informacji o rejestrowaniu dostawców w programie Microsoft Dynamics 365, zobacz [Zarządzanie użytkownikami modułu Współpraca z dostawcami](manage-vendor-collaboration-users.md). Aby uzyskać informacje o przypisywaniu dostawców do kategorii zaopatrzenia, zobacz [Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia](tasks/approve-vendors-specific-procurement-categories.md).
+2. Zarejestruj dostawcę w Supply Chain Management. Aby można było utworzyć konfiguracje pozwalające na dostęp do zewnętrznego katalogu dostawcy, należy skonfigurować dostawcę i jego osobę kontaktową w programie Microsoft Dynamics 365. Ponadto dostawca zewnętrznego katalogu musi być dodany do wybranej kategorii zaopatrzenia. Aby uzyskać więcej informacji o rejestrowaniu dostawców, zobacz [Zarządzanie użytkownikami modułu Współpraca z dostawcami](manage-vendor-collaboration-users.md). Aby uzyskać informacje o przypisywaniu dostawców do kategorii zaopatrzenia, zobacz [Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia](tasks/approve-vendors-specific-procurement-categories.md).
 3. Skonfigurowanie jednostek miary i waluty używanych przez dostawcę. Aby uzyskać informacje o tworzeniu jednostki miary, zobacz [Zarządzanie jednostkami miary](../pim/tasks/manage-unit-measure.md).
 4. Skonfigurowanie zewnętrznego katalogu dostawcy z uwzględnieniem wymagań obowiązujących w witrynie tego katalogu. Aby uzyskać szczegółowe informacje o tym zadaniu, zobacz temat [Konfigurowanie zewnętrznego katalogu dostawcy](#configure-the-external-vendor-catalog).
 5. Przetestowanie konfiguracji zewnętrznego katalogu dostawcy w celu sprawdzenia, czy ustawienia są prawidłowe i czy masz dostęp do katalog. Za pomocą akcji **Sprawdź poprawność ustawień** zweryfikuj zdefiniowany przez siebie komunikat konfiguracji żądania. Ten komunikat powinien powodować otwieranie witryny zewnętrznego katalogu dostawcy w oknie przeglądarki internetowej. Podczas sprawdzania poprawności nie można zamawiać towarów ani usług od dostawcy. Aby zamawiać towary i usługi, należy przejść do katalogu dostawcy z poziomu zapotrzebowania na zakup.
@@ -90,9 +90,9 @@ Dostawca może ustanowić wymóg, aby w żądaniu konfiguracji był mu przesyła
 Więcej informacji o protokole cXML można znaleźć w [witrynie internetowej cXML.org](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Komunikat ogłaszania zwrotnego
-Komunikat ogłaszania zwrotnego to komunikat otrzymywany od dostawcy, gdy użytkownik finalizuje transakcję w zewnętrznej witrynie i wraca do programu Finance and Operations. Komunikatów ogłaszania zwrotnego nie można konfigurować. Komunikat bazuje na definicji protokołu cXML. Poniżej przedstawiono informacje, które mogą wchodzić w skład komunikatu ogłaszania zwrotnego otrzymywanego w wierszu zapotrzebowania:
+Komunikat ogłaszania zwrotnego to komunikat otrzymywany od dostawcy, gdy użytkownik finalizuje transakcję w zewnętrznej witrynie i wraca do Supply Chain Management. Komunikatów ogłaszania zwrotnego nie można konfigurować. Komunikat bazuje na definicji protokołu cXML. Poniżej przedstawiono informacje, które mogą wchodzić w skład komunikatu ogłaszania zwrotnego otrzymywanego w wierszu zapotrzebowania.
 
-| Komunikat otrzymywany od dostawcy | Informacja kopiowana do wiersza zapotrzebowania w programie Finance and Operations|
+| Komunikat otrzymywany od dostawcy | Skopiowano do wiersza zapotrzebowania|
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |Ilość|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|Identyfikator zewnętrznego towaru|

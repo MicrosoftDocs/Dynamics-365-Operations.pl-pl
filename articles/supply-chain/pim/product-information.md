@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ac817fc4e8329563e524cea967c8337262fe2c3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f4e378bc0a72e05f940ae352ad0f1c0709d9d3a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563535"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249478"
 ---
 # <a name="product-information-overview"></a>Omówienie informacji o produktach
 
@@ -57,17 +57,17 @@ Produkt jest definiowany głównie przez numer produktu, nazwę i opis. Są jedn
 
 ## <a name="distribution-export-and-import-of-product-data"></a>Rozpowszechnianie, eksportowanie i importowanie danych produktów
 
-Definicję produktu można utworzyć w programie Microsoft Dynamics 365 for Finance and Operations. Można ją także importować z systemów zarządzanie cyklem życia produktów (PLM), zarządzania danymi produktów (PDM) lub zarządzania informacjami o produktach (PIM). Jeśli jest używane więcej niż jedno wystąpienie programu Finance and Operations, jedno wystąpienie zwykle służy jako wzorzec danych produktów dla wszystkich pozostałych wystąpień. To podejście jest wspierane przez duży zbiór jednostek danych, które umożliwiają eksportowanie i importowanie danych definicji produktów z jednego wystąpienia do drugiego.
+Definicję produktu można utworzyć w programie Supply Chain Management. Można ją także importować z systemów zarządzanie cyklem życia produktów (PLM), zarządzania danymi produktów (PDM) lub zarządzania informacjami o produktach (PIM). Jeśli jest używane więcej niż jedno wystąpienie Supply Chain Management, jedno wystąpienie zwykle służy jako wzorzec danych produktów dla wszystkich pozostałych wystąpień. To podejście jest wspierane przez duży zbiór jednostek danych, które umożliwiają eksportowanie i importowanie danych definicji produktów z jednego wystąpienia do drugiego.
 
-Aby umożliwić rozprowadzanie danych produktów do wielu wystąpień, program Finance and Operations umożliwia korzystanie z usługi danych wspólnych Common Data Service. Definicje produktów można wyeksportować z wystąpienia programu Finance and Operations do usługi Common Data Service. Definicje produktów mogą następnie służyć do dostarczania danych produktów innym aplikacjom biznesowym, takim jak Microsoft Dynamics 365 for Sales.
+Aby umożliwić rozprowadzanie danych produktów do wielu wystąpień, Supply Chain Management umożliwia korzystanie z usługi danych wspólnych Common Data Service. Definicje produktów można wyeksportować z wystąpienia programu Supply Chain Management do usługi Common Data Service. Definicje produktów mogą następnie służyć do dostarczania danych produktów innym aplikacjom biznesowym, takim jak Dynamics 365 Sales.
 
 Należy zauważyć, że w dynamicznych i sprawnych organizacjach informacje o produktach zmieniają się każdego dnia. W związku z tym utrzymanie precyzyjnych i prawdziwych danych produktów jest newralgicznym samodzielnym procesem biznesowym.
 
 ## <a name="product-masters-and-product-variants"></a>Produkty główne i warianty produktów
 
-W dynamicznym świecie, w którym produkty muszą być szybko dostosowywane do wymagań klientów, definicje produktów określają zbiory produktów, a nie odrębne produkty. W programie Microsoft Dynamics 365 for Finance and Operations te standardowe produkty są nazywane *produktami głównymi*. Produkty główne zawierają definicje i reguły określające, jak odrębne produkty są opisywane i zachowują się w procesach biznesowych. Na podstawie tych definicji można generować odrębne produkty. Te odrębne produkty są znane jako *warianty produktu*.
+W dynamicznym świecie, w którym produkty muszą być szybko dostosowywane do wymagań klientów, definicje produktów określają zbiory produktów, a nie odrębne produkty. W programie Supply Chain Management te standardowe produkty są nazywane *produktami głównymi*. Produkty główne zawierają definicje i reguły określające, jak odrębne produkty są opisywane i zachowują się w procesach biznesowych. Na podstawie tych definicji można generować odrębne produkty. Te odrębne produkty są znane jako *warianty produktu*.
 
-W programie Finance and Operations produkt główny jest skojarzony z grupą wymiarów produktu i technologią konfiguracji, aby określić reguły biznesowe. Wymiary produktu (Kolor, Rozmiar, Styl i Konfiguracja) to określony zbiór atrybutów, które mogą być używane w całej aplikacji do definiowania i śledzenia konkretnych zachowań pokrewnych produktów. Te wymiary pomagają również użytkownikom wyszukiwać i identyfikować produkty.
+Produkt główny jest skojarzony z grupą wymiarów produktu i technologią konfiguracji, aby określić reguły biznesowe. Wymiary produktu (Kolor, Rozmiar, Styl i Konfiguracja) to określony zbiór atrybutów, które mogą być używane w całej aplikacji do definiowania i śledzenia konkretnych zachowań pokrewnych produktów. Te wymiary pomagają również użytkownikom wyszukiwać i identyfikować produkty.
 
 ## <a name="configuration-technologies"></a>Technologie konfiguracji
 
@@ -77,7 +77,7 @@ Do wyboru są trzy technologie konfiguracji:
 - Konfiguracja oparta na wymiarach jest zazwyczaj używana w scenariuszach produkcji i pozwala używać wymiaru Konfiguracja w definicji list składowych (BOM). Po zaznaczeniu określonej konfiguracji system używa podzbioru wierszy BOM odpowiednich dla tej konfiguracji do planowania i produkcji. Ta koncepcja jest również nazywana *globalnym BOM*, ponieważ jeden wspólny BOM jest używany do wszystkich konfiguracji produktu.
 - Konfiguracja oparta na ograniczeniach używa modelu konfiguracji produktu do opisania wszystkich możliwych atrybutów i składników, które są wymagane w celu opisania wszystkich możliwych wariantów produktu w jednym modelu. Ograniczenia kombinacji atrybutów mogą być opisane za pomocą wyrażeń regularnych lub ograniczeń opartych na tabelach. Modele konfiguracji i konfiguratory mają większe znaczenie w zarządzaniu informacjami o produktach i są używane we wszystkich branżach.
 
-Planując implementację oprogramowania Finance and Operations, bardzo ważne jest wybranie technologii konfiguracji odpowiedniej dla procesu biznesowego. Po implementacji nie można przekonwertować produktu z jednego modelu na inny.
+Planując implementację oprogramowania Supply Chain Management, bardzo ważne jest wybranie technologii konfiguracji odpowiedniej dla procesu biznesowego. Po implementacji nie można przekonwertować produktu z jednego modelu na inny.
 
 ## <a name="product-variant-model-definition-workspace"></a>Obszar roboczy Definicja modelu wariantu produktu
 

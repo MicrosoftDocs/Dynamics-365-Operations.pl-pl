@@ -1,6 +1,6 @@
 ---
-title: Zamknij ogłoszenie o pracę w Microsoft Dynamics dla Talent 0 Attract
-description: W tym temacie opisano sposób zamykania oferty pracy w Microsoft Dynamics 365 for Talent - Attract.
+title: Zamknij ogłoszenie o pracę w Microsoft Dynamics Talent - Attract
+description: W tym temacie opisano sposób zamykania oferty pracy w Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/10/2019
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2010-07-10
 ms.dyn365.ops.version: Talent 2019 Wave 1 update
-ms.openlocfilehash: ec1b4d1fcd02bad329030b37a491b52a7c9c0a30
-ms.sourcegitcommit: 42589141431a5f357804b7e9ea9c781d594ef09d
+ms.openlocfilehash: 632db42b12d0a442b8e1f35dbc784d252ffde399
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "1773547"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008623"
 ---
 # <a name="close-a-job"></a>Zamykanie funkcji
 
 [!include [banner](includes/banner.md)]
 
-W rozwiązaniu Microsoft Dynamics 365 for Talent: Attract ofertę o pracę można zamknąć w ramach **Praca anulowana** lub **Stanowisko obsadzone**. Ogłoszenie o pracę można usunąć w dowolnym momencie.
+W rozwiązaniu Microsoft Dynamics 365 Talent: Attract ofertę o pracę można zamknąć w ramach **Praca anulowana** lub **Stanowisko obsadzone**. Ogłoszenie o pracę można usunąć w dowolnym momencie.
 
 Aby wskazać, że stanowisko zostało zapełnione, kandydat musi zaakceptować ofertę dotyczącą tej pracy.
 

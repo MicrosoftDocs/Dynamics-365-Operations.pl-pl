@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 35ec47a13d9119c755702e019d09c76e1281b4a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549320"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250236"
 ---
 # <a name="activity-based-subcontracting"></a>Podwykonawstwo działań
 
@@ -32,7 +32,7 @@ ms.locfileid: "1549320"
 
 W tym temacie opisano szczegółowo, jak używać działań podwykonawczych w przepływie produkcji dla produkcji oszczędnej.
 
-W programie Microsoft Dynamics 365 for Finance and Operations istnieją dwa podejścia do podwykonawstwa: zlecenia produkcyjne i produkcja oszczędna (lean manufacturing). W ujęciu z perspektywy produkcji oszczędnej praca podwykonawcza jest modelowana jako usługa powiązana z działaniem w przepływie produkcji. Wprowadzono specjalny typ grupy kosztów o nazwie **Outsourcing bezpośredni**, a usługi podwykonawcze nie są już częścią listy składowej (BOM). Rachunek kosztów pracy podwykonawczej jest w pełni zintegrowany z rozwiązaniem wyceny dla produkcji oszczędnej.
+W Microsoft Dynamics 365 Supply Chain Management istnieją dwa podejścia do podwykonawstwa: zlecenia produkcyjne i lean manufacturing. W ujęciu z perspektywy produkcji oszczędnej praca podwykonawcza jest modelowana jako usługa powiązana z działaniem w przepływie produkcji. Wprowadzono specjalny typ grupy kosztów o nazwie **Outsourcing bezpośredni**, a usługi podwykonawcze nie są już częścią listy składowej (BOM). Rachunek kosztów pracy podwykonawczej jest w pełni zintegrowany z rozwiązaniem wyceny dla produkcji oszczędnej.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Przepływy produkcji z udziałem podwykonawców
 Podstawowa zasada przepływu produkcji nie zmienia się w przypadku wykonywania działań przez podwykonawców. Materiał nadal przepływa między lokalizacjami, działania procesu przekształcają materiał na produkty, a działania przeniesienia przemieszczają materiał lub produkty z jednej lokalizacji do drugiej. Lokalizacje i komórki robocze można modelować jako zarządzane przez dostawcę, przypisując konto dostawcy do magazynu lub do zasobu w grupie zasobów.  
@@ -102,7 +102,7 @@ Ludzie często uważają transport za nieproduktywny i sądzą, że nie dodaje w
 
 Podwykonawstwo działań w produkcji oszczędnej pozwala zintegrować przewoźników i dostawców usług transportowych, którzy przemieszczają materiały i produkty między lokalizacjami przepływu produkcji. Modelując działanie przeniesienia, można przypisać przewoźnika lub dostawcę. Działania/zadanie przeniesienia opiera się na usłudze i umowie sprzedaży. Można tworzyć zamówienia zakupu i podsumowania przyjęć na podstawie faktycznych zadań przeniesienia. Ta funkcjonalność jest taka sama, jak funkcjonalność działań procesu podwykonawczego.  
 
-W związku z tym program Finance and Operations obsługuje teraz obliczanie BOM, które obejmuje usługi transportowe, tworzenie powiązanych zamówień zakupu, zintegrowaną rejestrację przyjęć oraz integrację kosztów usług transportowych w wycenie przepływu produkcji.
+Supply Chain Management obsługuje teraz obliczania BOM, które obejmują usługi transportowe, tworzenie powiązanych zamówień zakupu, zintegrowaną rejestrację przyjęć oraz integrację kosztów usług transportowych w wycenie przepływu produkcji.
 
 
 

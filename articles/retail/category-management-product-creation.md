@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0bcc5989edd9913fce414c0c24068f111d8c1aeb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 27870fe6172479b891b885d9e84ca10b250e3399
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553645"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019516"
 ---
 # <a name="manage-retail-product-categories-and-products"></a>Zarządzanie kategoriami produktów i produktami sieci sprzedaży
 
 [!include [banner](./includes/banner.md)]
 
-W tym temacie opisano poszerzony sposób zarządzania kategoriami produktów sieci sprzedaży i produktami w programie Microsoft Dynamics 365 for Retail. Ulepszenia umożliwiają menedżerom ds. merchadisingu wyświetlanie struktury właściwości produktów, która jest wspólna dla hierarchii produktów sieci sprzedaży i informacji o zwolnionych produktach.
+W tym temacie opisano poszerzony sposób zarządzania kategoriami produktów sieci sprzedaży i produktami w usłudze Dynamics 365 Retail. Ulepszenia umożliwiają menedżerom ds. merchadisingu wyświetlanie struktury właściwości produktów, która jest wspólna dla hierarchii produktów i informacji o zwolnionych produktach.
 
-Aby dowiedzieć się więcej o zarządzaniu kategoriami produktów sieci sprzedaży, w obszarze roboczym **Zarządzanie kategoriami i produktami** wybierz kafelek **Hierarchia produktów sieci sprzedaży**.
+Aby dowiedzieć się więcej o zarządzaniu kategoriami produktów, w obszarze roboczym **Zarządzanie kategoriami i produktami** wybierz kafelek **Hierarchia produktów sieci sprzedaży**.
 
-Zwróć uwagę na ulepszoną strukturę na stronie **Hierarchia produktów sieci sprzedaży**. W poprzednich wersjach aplikacji Retail właściwości produktów były podzielone na *podstawowe właściwości produktów* i *właściwości produktów sieci sprzedaży* na podstawie zakresu ich zastosowania. Właściwości produktów sieci sprzedaży są *globalne* pod względem zakresu ich zastosowania. Inaczej mówiąc, dla danej właściwości produktu sieci sprzedaży ta sama wartość jest współdzielona we wszystkich firmach. Z kolei podstawowe właściwości produktów są *specyficzne dla firmy*. Inaczej mówiąc, dana podstawowa właściwość produktu może mieć różne wartości dla różnych firm, w zależności od wymagań biznesowych konkretnej firmy.
+Zwróć uwagę na ulepszoną strukturę na stronie **Hierarchia produktów sieci sprzedaży**. W poprzednich wersjach aplikacji Retail właściwości produktów były podzielone na *podstawowe właściwości produktów* i *właściwości produktów sieci sprzedaży* na podstawie zakresu ich zastosowania. Właściwości produktów sieci sprzedaży są *globalne* pod względem zakresu ich zastosowania. Inaczej mówiąc, dla właściwości danego produktu ta sama wartość jest współdzielona we wszystkich firmach. Z kolei podstawowe właściwości produktów są *specyficzne dla firmy*. Inaczej mówiąc, dana podstawowa właściwość produktu może mieć różne wartości dla różnych firm, w zależności od wymagań biznesowych konkretnej firmy.
 
-W ulepszonej strukturze kategorii produktów sieci sprzedaży właściwości produktów są logicznie rozdzielone na podstawie ich zastosowania w grupie, tak aby odzwierciedlić strukturę formularza szczegółów zwolnionych produktów.
+W ulepszonej strukturze kategorii produktów właściwości produktów są logicznie rozdzielone na podstawie ich zastosowania w grupie, tak aby odzwierciedlić strukturę formularza szczegółów zwolnionych produktów.
 
 ![Pola pogrupowane w oparciu o zakres stosowania właściwości](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
@@ -50,7 +50,7 @@ Aby zarządzać właściwościami określonej firmy, wybierz opcję **Wyświetl 
 
 ![Wyświetl/edytuj dla określonej firmy](media/ToggleToEditForAllLegalEntities.PNG)
 
-Ponadto w ulepszonej strukturze kategorii produktów sieci sprzedaży kierownik ds. merchadisingu może zdefiniować domyślne wartości dodatkowego zestawu właściwości produktów na poziomie indywidualnej kategorii. Wtedy podczas tworzenia produktów będą one dziedziczyły domyślne wartości w oparciu o ich powiązanie z konkretną kategorią w hierarchii produktów sieci sprzedaży. Te dziedziczone właściwości produktów można również modyfikować dla każdego produktu, aby spełnić indywidualne wymagania biznesowe.
+Ponadto w ulepszonej strukturze kategorii produktów sieci sprzedaży kierownik ds. merchadisingu może zdefiniować domyślne wartości dodatkowego zestawu właściwości produktów na poziomie indywidualnej kategorii. Wtedy podczas tworzenia produktów będą one dziedziczyły domyślne wartości w oparciu o ich powiązanie z konkretną kategorią w hierarchii produktów. Te dziedziczone właściwości produktów można również modyfikować dla każdego produktu, aby spełnić indywidualne wymagania biznesowe.
 
 ## <a name="selecting-properties-to-update-products-on-the-retail-product-hierarchy-page"></a>Wybieranie właściwości w celu aktualizowania produktów na stronie hierarchii produktów sieci sprzedaży
 

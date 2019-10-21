@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 85950a1413cfd8745bb78a52eb9f7c81b8976605
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 51f8102afc28b3836d5fee13aa1e950351af3c4f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518825"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008391"
 ---
 # <a name="formalize-business-processes"></a>Formalizowanie procesów biznesowych
 
@@ -43,7 +43,7 @@ Dla każdego procesu biznesowego można zdefiniować właściciela procesu. Wła
 Właściciel procesu nie może tworzyć nowych procesów biznesowych ani szablonów procesów biznesowych, a także nie może usuwać aktywnych procesów biznesowych i szablonów procesów biznesowych.
 
 ## <a name="tasks"></a>Zadania
-Proces biznesowy często składa się z wielu zadań. Niektóre zadania, takie jak przegląd oferty kursów wewnętrznych, można wykonywać wewnątrz programu Microsoft Dynamics 365 for Talent[?]. W takim przypadku należy zaznaczyć odpowiednią opcję w polu **Łącze do zadania**. Inne zadania mogą obejmować przegląd lub wypełnianie stron w witrynie internetowej. W takim przypadku należy zaznaczyć opcję **Adres URL** w polu **Łącze zadania**, co pozwoli wprowadzić adres internetowy. Można wprowadzać adresy URL witryn wewnętrznych i zewnętrznych. Można również tworzyć zadania dla działań wykonywanych ręcznie, takich jak przegląd dostępności wszystkich struktur. W takim przypadku łącze do zadania nie jest wymagane. Ta elastyczność pozwala śledzić wiele rodzajów zadań w kompleksowym procesie.
+Proces biznesowy często składa się z wielu zadań. Niektóre zadania, takie jak przegląd oferty kursów wewnętrznych, można wykonywać wewnątrz programu Microsoft Dynamics 365 Talent. W takim przypadku należy zaznaczyć odpowiednią opcję w polu **Łącze do zadania**. Inne zadania mogą obejmować przegląd lub wypełnianie stron w witrynie internetowej. W takim przypadku należy zaznaczyć opcję **Adres URL** w polu **Łącze zadania**, co pozwoli wprowadzić adres internetowy. Można wprowadzać adresy URL witryn wewnętrznych i zewnętrznych. Można również tworzyć zadania dla działań wykonywanych ręcznie, takich jak przegląd dostępności wszystkich struktur. W takim przypadku łącze do zadania nie jest wymagane. Ta elastyczność pozwala śledzić wiele rodzajów zadań w kompleksowym procesie.
 
 Zadania można przypisywać do konkretnych pracowników lub do stanowisk. Na przykład menedżer ds. wynagrodzeń i świadczeń zawsze będzie osobą, która dokonuje przeglądu składek ubezpieczeniowych. Dlatego podczas tworzenia tego zadania wybierz wartość **Stanowisko** w polu **Typ przypisania**, a następnie wartość **Menedżer ds. wynagrodzeń i świadczeń** na liście **Stanowisko**. Po uruchomieniu procesu biznesowego zadanie zostanie przypisane do pracownika, który zajmuje stanowisko **Menedżera ds. wynagrodzeń i świadczeń**. Aby przypisać zadanie do konkretnego pracownika, w polu **Typ przypisania** wybierz wartość **Pracownik**, a następnie wybierz odpowiednią osobę.
 

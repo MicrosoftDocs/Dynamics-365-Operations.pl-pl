@@ -1,6 +1,6 @@
 ---
 title: Układy ekranu danych demonstracyjnych w aplikacjach Retail Modern POS (MPOS) i Cloud POS
-description: Ten temat zawiera informacje o układach ekranu zawartych w zestawie danych demonstracyjnych dla doświadczeń punktu sprzedaży w rozwiązaniu Microsoft Dynamics 365 for Retail.
+description: Ten temat zawiera informacje o układach ekranu zawartych w zestawie danych demonstracyjnych dla doświadczeń punktu sprzedaży w rozwiązaniu Dynamics 365 Retail.
 author: zlinster
 manager: AnnBe
 ms.date: 10/05/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8c8d2fac82541b768f8e0a31049177bdc1262d44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570651"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019331"
 ---
 # <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>Układy ekranu danych demonstracyjnych w aplikacjach Retail Modern POS (MPOS) i Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera informacje o układach ekranu zawartych w zestawie danych demonstracyjnych dla doświadczeń punktu sprzedaży w rozwiązaniu Microsoft Dynamics 365 for Retail.
+Ten temat zawiera informacje o układach ekranu zawartych w zestawie danych demonstracyjnych dla doświadczeń punktu sprzedaży w rozwiązaniu Dynamics 365 Retail.
 
 ## <a name="overview"></a>Przegląd
 
@@ -40,7 +40,7 @@ Przykładowe układy ekranu zawarte w danych demonstracyjnych programu Retail ob
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Struktura identyfikatora układu ekranu
 
-Aby znaleźć układy ekranu w rozwiązaniu Retail, przejdź do **Retail** \> **Ustawienia kanału** \> **Ustawienia punktu sprzedaży** \> **Punkt sprzedaży** \> **Układy ekranu**.
+Aby znaleźć układy ekranu, przejdź do **Retail** \> **Ustawienia kanału** \> **Ustawienia punktu sprzedaży** \> **Punkt sprzedaży** \> **Układy ekranu**.
 
 ![Strona układów ekranu w rozwiązaniu Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -107,7 +107,7 @@ Poniższa tabela przedstawia rozmiary układu dostępne dla typowych rozdzielczo
 \* Te dodatkowe rozmiary układów są dostępne tylko w układach firmy Adventure Works i Fabrikam.
 
 > [!TIP]
-> Punkt sprzedaży automatycznie wybiera rozmiary układu na podstawie najbliższego rozmiaru dostępnego dla rozdzielczości ekranu okna bieżącej aplikacji. Aby znaleźć aktualnie używany identyfikator układu ekranu i rozdzielczość układu, w module Retail Modern POS (MPOS) lub Retail Cloud POS (CPOS) otwórz stronę **Ustawienia** i sprawdź informacje w sekcji **Informacje o sesji**. Możesz także zobaczyć rzeczywistą rozdzielczość okna dla bieżącej aplikacji lub ramki przeglądarki. Po uzyskaniu tych informacji można znaleźć źródło zawartości układu w rozwiązaniu Retail, przechodząc do okna **Ustawienia kanału** \> **Ustawienia punktu sprzedaży** \> **Punkt sprzedaży** \> **Układy ekranu**.
+> Punkt sprzedaży automatycznie wybiera rozmiary układu na podstawie najbliższego rozmiaru dostępnego dla rozdzielczości ekranu okna bieżącej aplikacji. Aby znaleźć aktualnie używany identyfikator układu ekranu i rozdzielczość układu, w module Retail Modern POS (MPOS) lub Retail Cloud POS (CPOS) otwórz stronę **Ustawienia** i sprawdź informacje w sekcji **Informacje o sesji**. Możesz także zobaczyć rzeczywistą rozdzielczość okna dla bieżącej aplikacji lub ramki przeglądarki. Po uzyskaniu tych informacji można znaleźć źródło zawartości układu przechodząc do okna **Ustawienia kanału** \> **Ustawienia punktu sprzedaży** \> **Punkt sprzedaży** \> **Układy ekranu**.
 
 ![Układy ekranu i rozdzielczości/rozmiary układu w rozwiązaniu Retail i punkcie sprzedaży](../retail/media/demo-screen-layouts-fig-3-1.png)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1f5658de1da8a0b6c36d99e4bb9cf401c09ad0b
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559165"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249803"
 ---
 # <a name="sales-returns"></a>Zwroty sprzedaży
 
@@ -31,7 +31,7 @@ ms.locfileid: "1559165"
 
 Ten temat zawiera informacje o procesie zamówień zwrotu. Opisuje koncepcję zwrotów od odbiorców oraz ich wpływ na wycenę i ilości dostępnych zapasów.
 
-Odbiorcy mogą zwracać towary z różnych powodów. Na przykład towar może być uszkodzony lub może nie spełniać oczekiwań odbiorcy. Proces zwrotu rozpoczyna się, gdy odbiorca wystawia wniosek o zwrot towaru. Po odebraniu wniosku od odbiorcy w programie Microsoft Dynamics 365 for Finance and Operations jest tworzone zamówienie zwrotu.
+Odbiorcy mogą zwracać towary z różnych powodów. Na przykład towar może być uszkodzony lub może nie spełniać oczekiwań odbiorcy. Proces zwrotu rozpoczyna się, gdy odbiorca wystawia wniosek o zwrot towaru. Po odebraniu wniosku od odbiorcy jest tworzone zamówienie zwrotu.
 
 ## <a name="return-order-process"></a>Proces zamówienia zwrotu
 Na poniższej ilustracji przedstawiono przegląd procesu zamówienia zwrotu.  
@@ -281,7 +281,7 @@ Ten scenariusz obejmuje dwie firmy w tej samej organizacji, jak pokazano na poni
 
 ![Prosty zwrot międzyfirmowy](./media/SalesReturn07.png)
 
-Łańcuch zamówień można utworzyć w momencie, gdy zamówienie zwrotu do dostawcy jest tworzone w firmie kupującej lub zamówienie zwrotu od odbiorcy jest tworzone w firmie sprzedającej. Program Finance and Operations tworzy odnośne zamówienie w drugiej firmie i sprawdza, czy informacje nagłówka i wierszy w zamówieniu zwrotu do dostawcy odzwierciedlają ustawienia w zamówieniu zwrotu od odbiorcy. Tworzone zamówienie zwrotu może uwzględniać lub pomijać odwołanie (**Znajdź zamówienie sprzedaży**) do istniejącej faktury dla odbiorcy. Dokumenty dostawy i faktury powiązane z oboma zamówieniami mogą być przetwarzane indywidualnie. Na przykład nie trzeba generować dokumentu dostawy dla zamówienia zwrotu do dostawcy przed wygenerowaniem dokument dostawy dla zamówienia zwrotu od odbiorcy.
+Łańcuch zamówień można utworzyć w momencie, gdy zamówienie zwrotu do dostawcy jest tworzone w firmie kupującej lub zamówienie zwrotu od odbiorcy jest tworzone w firmie sprzedającej. Jest tworzone odnośne zamówienie w drugiej firmie i sprawdza, czy informacje nagłówka i wierszy w zamówieniu zwrotu do dostawcy odzwierciedlają ustawienia w zamówieniu zwrotu od odbiorcy. Tworzone zamówienie zwrotu może uwzględniać lub pomijać odwołanie (**Znajdź zamówienie sprzedaży**) do istniejącej faktury dla odbiorcy. Dokumenty dostawy i faktury powiązane z oboma zamówieniami mogą być przetwarzane indywidualnie. Na przykład nie trzeba generować dokumentu dostawy dla zamówienia zwrotu do dostawcy przed wygenerowaniem dokument dostawy dla zamówienia zwrotu od odbiorcy.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Zwroty za pomocą wysyłki z dostawą bezpośrednią między trzema stronami
 

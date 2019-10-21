@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546232"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250608"
 ---
 # <a name="product-identifiers"></a>Identyfikatory produktów 
 
@@ -36,13 +36,13 @@ Pracując z produktami na wydziale produkcji lub w magazynie w Microsoft Dynamic
 
 ## <a name="unique-product-numberproduct-id"></a>Unikatowy numer produktu/identyfikator produktu
 
-W Microsoft Dynamics 365 for Finance and Operations podstawowym identyfikatorem produktu jest numer produktu (czyli unikatowy identyfikator produktu). Ten numer może być generowane automatycznie przez mechanizm numeracji albo ręcznie łączony z produktem. Dla wariantów produktów numery można definiować za pomocą szablonu nazewnictwa produktów.
+W Dynamics 365 Supply Chain Management podstawowym identyfikatorem produktu jest numer produktu (czyli unikatowy identyfikator produktu). Ten numer może być generowane automatycznie przez mechanizm numeracji albo ręcznie łączony z produktem. Dla wariantów produktów numery można definiować za pomocą szablonu nazewnictwa produktów.
 
-W wielu przypadkach numer produktu nie jest pierwotnie tworzony w programie Finance and Operations. Zamiast tego jest kojarzony z produktem w systemie zarządzania cyklem życia produktu (PLM) lub systemie zarządzania danymi produktów (PDM). W takim przypadku są używane jednostki danych do importowania produktów i wariantów produktów. Odtąd program Finance and Operations będzie używał tych numerów we wszystkich operacjach.
+W wielu przypadkach numer produktu nie jest pierwotnie tworzony w Dynamics 365 Supply Chain Management. Zamiast tego jest kojarzony z produktem w systemie zarządzania cyklem życia produktu (PLM) lub systemie zarządzania danymi produktów (PDM). W takim przypadku są używane jednostki danych do importowania produktów i wariantów produktów. Supply Chain Management korzysta z numerów we wszystkich operacjach.
 
-Podczas wdrażania programu Finance and Operations należy zwrócić szczególną uwagę na strategię numerowania produktów. Dobry system numerowania usprawnia logistykę i pomaga uniknąć błędów. Dobry identyfikator produktu zawiera maksymalnie 15 znaków. Najlepiej, aby miał nie więcej niż 10 znaków i zawierał maksymalnie 5 znaków klasyfikujących. Można również używać aliasów do szybkiego wyszukiwania. Alias jest dodatkową nazwę reprezentującą klasyfikacje produktu.
+Podczas wdrażania programu Supply Chain Management należy zwrócić szczególną uwagę na strategię numerowania produktów. Dobry system numerowania usprawnia logistykę i pomaga uniknąć błędów. Dobry identyfikator produktu zawiera maksymalnie 15 znaków. Najlepiej, aby miał nie więcej niż 10 znaków i zawierał maksymalnie 5 znaków klasyfikujących. Można również używać aliasów do szybkiego wyszukiwania. Alias jest dodatkową nazwę reprezentującą klasyfikacje produktu.
 
-Podczas korzystania z usługi Common Data Service (CDS) numer produktu w programie Finance and Operations jest również numerem produktu w usłudze CDS. Warianty produktów są synchronizowane z usługą CDS jako odrębne produkty.
+Jeśli jest używany Common Data Service, numer produktu w module Supply Chain Management jest także numerem produktu w formularzu Common Data Service. Warianty produktów są synchronizowane z usługą Common Data Service jako odrębne produkty.
 
 ## <a name="item-number-and-product-dimensions"></a>Numer towaru i wymiary produktu
 
@@ -56,19 +56,19 @@ Ponadto będzie można wyszukiwać i filtrować według numeru produktu, nazwy i
 
 ## <a name="product-name-and-description"></a>Nazwa i opis produktu
 
-Nazwa opis i produktu to identyfikatory produktu, które są czytelne dla człowieka i mogą być przechowywane w wielu językach. Domyślnie klient rozwiązania Finance and Operations pokazuje wszystkie informacje o produktach w domyślnym języku firmy, a nie w języku użytkownika. Jednakże przetłumaczone nazwy i opisy produktów są używane w całej komunikacji z klientami i dostawcami. Tłumaczenia są oparte na kodach języków ustawionych na kontach odbiorców i dostawców.
+Nazwa opis i produktu to identyfikatory produktu, które są czytelne dla człowieka i mogą być przechowywane w wielu językach. Domyślnie klient rozwiązania Supply Chain Management pokazuje wszystkie informacje o produktach w domyślnym języku firmy, a nie w języku użytkownika. Jednakże przetłumaczone nazwy i opisy produktów są używane w całej komunikacji z klientami i dostawcami. Tłumaczenia są oparte na kodach języków ustawionych na kontach odbiorców i dostawców.
 
 Dla wariantów produktów nazwy produktów można generować za pomocą szablonu nazewnictwa produktów. Ponieważ nie istnieje wymóg, aby nazwy produktów były niepowtarzalne, może istnieć wiele produktów o tej samej nazwie.
 
 ## <a name="product-and-item-search-names"></a>Nazwy wyszukiwania produktów i towarów
 
-Program Finance and Operations oferuje pomocniczy alias dla produktów, a także dla towarów (zwolnionych produktów). Ten alias nie musi być unikatowy i można go zmienić po utworzeniu produktu lub wariantu produktu. Zalecamy, aby używać aliasu do wyszukiwania produktów według kategorii. Aliasy umożliwiają szybkie wyszukiwanie, szczególnie w procesach sprzedaży i zakupu.
+Supply Chain Management oferuje pomocniczy alias dla produktów, a także dla towarów (zwolnionych produktów). Ten alias nie musi być unikatowy i można go zmienić po utworzeniu produktu lub wariantu produktu. Zalecamy, aby używać aliasu do wyszukiwania produktów według kategorii. Aliasy umożliwiają szybkie wyszukiwanie, szczególnie w procesach sprzedaży i zakupu.
 
 Alias może także zawierać identyfikator produktu odbiorcy lub dostawcy albo jakiś inny zewnętrzny identyfikator produktu, jeżeli ten zewnętrzny identyfikator jest podstawowym kryterium wyszukiwania produktu.
 
 ## <a name="external-product-identifiers-customer-and-vendor-identifiers"></a>Zewnętrzne identyfikatory produktów (identyfikatory odbiorców i dostawców)
 
-Dla zwolnionych produktów można przechowywać numery, nazwy i opisy towarów używane przez odbiorcę lub dostawcę. Odwołania są wyświetlane w zewnętrznych dokumentach, takich jak zamówienia sprzedaży, zamówień zakupu, dokumentów dostawy i faktury. W bieżącej wersji programu Finance and Operations odwołania zewnętrzne nie są pokazywane na stronach podstawowych operacji. Jedynym wyjątkiem jest numer towaru dostawcy. Ten numer jest wyświetlany w oknie dialogowym **Informacje o produktach**, jeśli dla zwolnionego produktu zdefiniowano domyślnego dostawcę.
+Dla zwolnionych produktów można przechowywać numery, nazwy i opisy towarów używane przez odbiorcę lub dostawcę. Odwołania są wyświetlane w zewnętrznych dokumentach, takich jak zamówienia sprzedaży, zamówień zakupu, dokumentów dostawy i faktury. W bieżącej wersji programu Supply Chain Management odwołania zewnętrzne nie są pokazywane na stronach podstawowych operacji. Jedynym wyjątkiem jest numer towaru dostawcy. Ten numer jest wyświetlany w oknie dialogowym **Informacje o produktach**, jeśli dla zwolnionego produktu zdefiniowano domyślnego dostawcę.
 
 Zewnętrzne identyfikatory produktów można przechowywać z podziałem na zwolnione produkty, warianty zwolnionych produktów, odbiorców lub grupy odbiorców albo dostawców lub grupy dostawców.
 
@@ -77,7 +77,7 @@ Na stronie **Zwolnione produkty** wykonaj jedną z następujących czynności.
 - W przypadku odbiorców na karcie **Sprzedaż** w grupie **Informacje pokrewne** wybierz opcję **Zewnętrzny opis pozycji**.
 - W przypadku dostawców na karcie **Zakup** w grupie **Informacje pokrewne** wybierz opcję **Zewnętrzny opis pozycji**.
 
-Na stronie **Zewnętrzne opisy pozycji** można skojarzyć numer towaru odbiorcy lub dostawcy ze zwolnionym produktem. To skojarzenie należy wykonać dla każdej firmy. Można zarejestrować informacje wymienione poniżej. Niestety, etykiety nieco wprowadzają w błąd w bieżącej wersji programu Finance and Operations. Jednakże etykiety te mogą się zmienić w przyszłej wersji.
+Na stronie **Zewnętrzne opisy pozycji** można skojarzyć numer towaru odbiorcy lub dostawcy ze zwolnionym produktem. To skojarzenie należy wykonać dla każdej firmy. Można zarejestrować informacje wymienione poniżej. Niestety, etykiety nieco wprowadzają w błąd w bieżącej wersji programu Supply Chain Management. Jednakże etykiety te mogą się zmienić w przyszłej wersji.
 
 | Pole | Odnośne informacje o odbiorcy | Odnośne informacje o dostawcy |
 |-------|------------------------------------|----------------------------------|
@@ -104,15 +104,15 @@ W celu obsługi kodów kreskowych na stronie **Zwolnione produkty** na karcie **
 
 W handlu elektronicznym jest bardzo ważne, aby wszystkie strony posługiwały się wspólnym językiem i odnosiły do produktów przy użyciu wspólnego zestawu identyfikatorów. Z tego względu niektóre branże opierają się na używaniu [GTIN](https://www.gs1.org/id-keys/gtin), który jest globalnym systemem numeracji towarów wykorzystującym kody kreskowe GS1.
 
-W programie Finance and Operations zalecamy przechowywanie numerów GTIN jako kodów kreskowych. Jednak można także przechowywać je na stronie **Pozycja — numer GTIN**. Aby otworzyć tę stronę, na stronie **Zwolnione produkty** na karcie **Zarządzanie zapasami** w grupie **Magazyn** wybierz opcję **Numery GTIN**. Należy zwrócić uwagę, że numer GTIN nie jest przechowywany jako numer globalny. Zamiast tego jest zarządzany przez firmę.
+Zaleca się, aby zachować numer GTIN jako kod kreskowy. Jednak można także przechowywać je na stronie **Pozycja — numer GTIN**. Aby otworzyć tę stronę, na stronie **Zwolnione produkty** na karcie **Zarządzanie zapasami** w grupie **Magazyn** wybierz opcję **Numery GTIN**. Należy zwrócić uwagę, że numer GTIN nie jest przechowywany jako numer globalny. Zamiast tego jest zarządzany przez firmę.
 
-W programie Finance and Operations definiuje się warianty opakowań w operacjach magazynowych poprzez definiowanie określonych jednostek miary. Na przykład towar może być przechowywany w sztukach, pakietach po 6 sztuk, w zasobnikach po 18 sztuk lub w pełnych paletach. Konkretna jednostka miary zostanie zdefiniowana dla każdego z tych wariantów opakowań. Ponieważ numer GTIN jest zwykle powiązany z jednostką opakowania produktu, na stronie **Pozycja — numer GTIN** można przechowywać wiele kodów GTIN dla każdego produktu i jednostki miary. Jednak w danej firmie nie można użyć tego samego kodu GTIN więcej niż jeden raz, tzn. ustawić go dla różnych towarów lub wariantów produktu.
+W programie Supply Chain Management definiuje się warianty opakowań w operacjach magazynowych poprzez definiowanie określonych jednostek miary. Na przykład towar może być przechowywany w sztukach, pakietach po 6 sztuk, w zasobnikach po 18 sztuk lub w pełnych paletach. Konkretna jednostka miary zostanie zdefiniowana dla każdego z tych wariantów opakowań. Ponieważ numer GTIN jest zwykle powiązany z jednostką opakowania produktu, na stronie **Pozycja — numer GTIN** można przechowywać wiele kodów GTIN dla każdego produktu i jednostki miary. Jednak w danej firmie nie można użyć tego samego kodu GTIN więcej niż jeden raz, tzn. ustawić go dla różnych towarów lub wariantów produktu.
 
 Aby zarządzać **numerami GTIN**, na stronie **Zwolnione produkty** na karcie **Zarządzanie zapasami** w grupie **Magazyn** wybierz opcję **GTIN**.
 
 ## <a name="external-codes"></a>Kody zewnętrzne
 
-Dla wielu jednostek w programie Finance and Operations można zdefiniować kody zewnętrzne. Na przykład można zdefiniować kody zewnętrzne w celu identyfikowania produktów i zwolnionych produktów. Te kody zewnętrzne mogą służyć do skojarzenia kodów statystycznych lub kodów podatków ze zwolnionymi produktami i zwolnionymi wariantami produktów. Kody zewnętrzne są definiowane z podziale na firmy i typy kodów. Muszą być mieć unikatowe wartości firmy, typu kodu i odwołania do tabeli.
+Kody zewnętrzne można definiować dla wielu jednostek. Na przykład można zdefiniować kody zewnętrzne w celu identyfikowania produktów i zwolnionych produktów. Te kody zewnętrzne mogą służyć do skojarzenia kodów statystycznych lub kodów podatków ze zwolnionymi produktami i zwolnionymi wariantami produktów. Kody zewnętrzne są definiowane z podziale na firmy i typy kodów. Muszą być mieć unikatowe wartości firmy, typu kodu i odwołania do tabeli.
 
 Niestety, nie istnieje standardowa funkcja umożliwiająca wyszukiwanie produktów według kodów zewnętrznych.
 
@@ -136,13 +136,13 @@ Niestety, nie istnieje standardowa funkcja umożliwiająca wyszukiwanie produkt�
 
 ### <a name="product-and-item-number-sequences"></a>Numeracje produktów i towarów
 
-W programie Finance and Operations można zdefiniować dwie różne numeracje:
+Można zdefiniować dwie różne sekwencje numerów:
 
 - Numeracja **Numer produktu** określająca globalny numer produktu
 - Numeracja **Numer towaru** określająca numeru towarów w konkretnych firmach
 
 > [!NOTE]
-> Numeru towaru należy używać jako osobnego identyfikatora tylko wtedy, gdy przenosisz różne firmy z różnych źródeł mających różne systemy numerowania. Należy zawsze próbować używać identyfikatora produktu, który jest unikatowy we wszystkich firmach. W związku z tym w numeracji **Numer towaru** należy w opcji **Ręcznie** ustawiać wartość **Tak**. W ten sposób numer towaru będzie naśladował numer produktu podczas tworzenia. Jeśli program Finance and Operations nie jest głównym systemem, w którym są tworzone nowe numery produktów, należy w opcji **Ręcznie** ustawić wartość **Tak** dla obu numeracji **Numer towaru** i **Numer produktu**.
+> Numeru towaru należy używać jako osobnego identyfikatora tylko wtedy, gdy przenosisz różne firmy z różnych źródeł mających różne systemy numerowania. Należy zawsze próbować używać identyfikatora produktu, który jest unikatowy we wszystkich firmach. W związku z tym w numeracji **Numer towaru** należy w opcji **Ręcznie** ustawiać wartość **Tak**. W ten sposób numer towaru będzie naśladował numer produktu podczas tworzenia. Jeśli program Supply Chain Management nie jest głównym systemem, w którym są tworzone nowe numery produktów, należy w opcji **Ręcznie** ustawić wartość **Tak** dla obu numeracji **Numer towaru** i **Numer produktu**.
 
 Jeśli do tworzenia produktów używasz jednostki **Zwolniony produkt wer. 2**, wiele ustawień może wpływać na sposób używania numeracji do tworzenia numeru produktu i numeru towaru:
 

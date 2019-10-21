@@ -1,6 +1,6 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (16 kwietnia 2019)
-description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 for Talent.
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (16 kwietnia 2019)
+description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/16/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: adf8f470b00a565c62a27f857d490c6c000b21d8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 0781a479ebf37334d8eba18ea6d69d7cfb9db9ea
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518815"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024144"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-16-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (16 kwietnia 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (16 kwietnia 2019)
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 for Talent.
+W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Zmiany w Attract
 
@@ -39,7 +39,7 @@ Teraz można śledzić zmiany wprowadzone w danych kandydatów, wakatach i podan
 
 ## <a name="changes-in-onboard"></a>Zmiany w Onboard
 
-Ta wersja zawiera poprawki błędów dla programu Dynamics 365 Talent: Onboard.
+Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Zmiany w Core HR
 
@@ -47,11 +47,11 @@ Zmiany opisane w tej części dotyczą kompilacji 8.1.2239. Liczby w nawiasach o
 
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Region wynagrodzeń, poziom wynagrodzeń, opcja świadczeń i jednostki typu kwalifikacji w Common Data Service zostały zaktualizowane w celu uwzględnienia obsługi pola odbiorcy
 
-W tym wydaniu te jednostki Common Data Service zostały zaktualizowane w celu dodania możliwości uwzględnienia niestandardowego pola dodanego za pośrednictwem aplikacji Talent (Core HR).
+W tym wydaniu te jednostki Common Data Service zostały zaktualizowane w celu dodania możliwości uwzględnienia niestandardowego pola dodanego za pośrednictwem aplikacji Talent: Core HR.
 
 ### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Obsługa nowej jednostki Common Data Service dla: reguły wypłat wynagrodzenia, planu wynagrodzeń o zmiennej wysokości, wynagrodzeń o zmiennej wysokości
 
-W tym wydaniu w Common Data Service zostały dodane reguły wypłat wynagrodzenia, plan wynagrodzeń o zmiennej wysokości oraz wynagrodzenie o zmiennej wysokości. Te jednostki obsługują również niestandardowe pola dodane za pośrednictwem aplikacji Talent (Core HR).
+W tym wydaniu w Common Data Service zostały dodane reguły wypłat wynagrodzenia, plan wynagrodzeń o zmiennej wysokości oraz wynagrodzenie o zmiennej wysokości. Te jednostki obsługują również niestandardowe pola dodane za pośrednictwem aplikacji Talent: Core HR.
 
 ### <a name="powerbi-refresh-issues-314342"></a>Problemy z odświeżaniem usługi PowerBI (314342)
 
@@ -95,6 +95,6 @@ Ta zmiana powoduje, że zduplikowane pozycje są wykrywane po wypełnieniu pól 
 
 ### <a name="email-support-for-alerts"></a>Pomoc techniczna e-mail dla alertów
 
-Aktualizacja platformy 25 pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia do kontaktów w wyniku wyzwolenia przez zdarzenie.
+Aktualizacja Platform update 25 dla rozwiązania Finance and Operations pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia e-mail do kontaktów w wyniku wyzwolenia przez zdarzenie.
 
 

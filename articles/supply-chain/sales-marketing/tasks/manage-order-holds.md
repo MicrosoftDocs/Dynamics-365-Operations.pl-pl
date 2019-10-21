@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 00ce4a31c0b0f466911658c79f6e32788273c127
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a7168d13ef0b24d06aa28fbbc22bbb4e6093df24
+ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834009"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "1994917"
 ---
 # <a name="manage-order-holds"></a>Zarządzanie wstrzymaniami zamówień
 
@@ -33,45 +33,40 @@ Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lu
 
 
 ## <a name="set-up-order-holds"></a>Konfigurowanie wstrzymań zamówień
-1. Wybierz kolejno opcje Sprzedaż i marketing > Ustawienia > Zamówienia sprzedaży > Kody wstrzymania zamówień.
-2. Kliknij przycisk Nowy.
-3. W polu Kod wstrzymania wpisz wartość.
-    * Na przykład wpisz Oddzwonić.  
-4. Wypełnij pole Opis.
-    * Na przykład Zamówienie wstrzymane w oczekiwaniu na oddzwonienie odbiorcy.  
-    * Opcjonalnie zaznacz pole wyboru Usuń rezerwacje, aby usunąć wszelkie fizyczne rezerwacje z zamówienia podczas dodawania tego kodu wstrzymania.  
-5. Kliknij przycisk Zapisz.
+1. Przejdź do **Okienko nawigacyji > Moduły > Sprzedaż i marketing >Ustawienia > Zamówienia sprzedaży > Kody wstrzymania zamówień**.
+2. Kliknij przycisk **Nowy**.
+3. W polu **Kod wstrzymania** wpisz wartość. Na przykład wpisz „Oddzwonić”.  
+4. W polu **Opis** wpisz wartość.
+    - Na przykład Zamówienie wstrzymane w oczekiwaniu na oddzwonienie odbiorcy.  
+    - Opcjonalnie zaznacz pole wyboru **Usuń rezerwacje**, aby usunąć wszelkie fizyczne rezerwacje z zamówienia podczas dodawania tego kodu wstrzymania.  
+5. Kliknij przycisk **Zapisz**.
 
 ## <a name="place-order-on-hold"></a>Wstrzymywanie zamówienia
-1. Wybierz kolejno opcje Sprzedaż i marketing > Zamówienia sprzedaży > Wszystkie zamówienia sprzedaży.
-2. Kliknij przycisk Nowy.
-3. W polu Konto odbiorcy wprowadź lub wybierz wartość.
-4. Kliknij przycisk OK.
-5. W polu Numer towaru wprowadź lub wybierz wartość.
-6. Wprowadź liczbę w polu Ilość.
-7. W okienku akcji kliknij opcję Zamówienie sprzedaży.
-8. Kliknij opcję Wstrzymania zamówień.
-9. Kliknij przycisk Nowy.
-10. W polu Kod wstrzymania wybierz kod, który został utworzony w poprzednim podzadaniu.
-11. Kliknij przycisk Zapisz.
+1. Przejdź do **Okienko nawigacyji > Moduły > Sprzedaż i marketing >Wszystkie zamówienia sprzedaży**.
+2. Kliknij przycisk **Nowy**.
+3. W polu **Konto odbiorcy** wprowadź lub wybierz wartość.
+4. Kliknij przycisk **OK**.
+5. W polu **Kod towaru** wpisz lub wprowadź wartość.
+6. W polu **Ilość** wpisz liczbę.
+7. W **okienku akcji** kliknij opcję **Zamówienie sprzedaży**.
+8. Kliknij opcję **Wstrzymania zamówień**.
+9. Kliknij przycisk **Nowy**.
+10. W polu **Kod wstrzymania** wybierz kod, który został utworzony w poprzednim podzadaniu.
+11. Kliknij przycisk **Zapisz**.
 12. Zamknij stronę.
-13. Wybierz kolejno opcje Sprzedaż i marketing > Zamówienia sprzedaży > Wszystkie zamówienia sprzedaży.
-14. Na liście oznacz wybrany wiersz.
-    * Zamówienia, które są obecnie wstrzymane, mają zaznaczone pola „Nie przetwarzaj” i „Wstrzymanie”.    
-15. W okienku akcji kliknij opcję Pobierz i zapakuj.
+13. Wybierz kolejno opcje **Sprzedaż i marketing > Zamówienia sprzedaży > Wszystkie zamówienia sprzedaży**.
+14. Na liście oznacz wybrany wiersz. Zamówienia, które są obecnie wstrzymane, mają zaznaczone pola „Nie przetwarzaj” i „Wstrzymanie”.
+15. W okienku akcji kliknij opcję **Pobierz i zapakuj**.
 
 ## <a name="manage-order-holds"></a>Zarządzanie wstrzymaniami zamówień
-1. Wybierz kolejno opcje Sprzedaż i marketing > Zamówienia sprzedaży > Otwarte zamówienia > Wstrzymania zamówień.
-    * Strona Wstrzymania zamówień pełni rolę pulpitu, gdzie można uzyskać przegląd wszystkich bieżących i przetworzonych wstrzymań oraz obsługiwać te wstrzymania i skojarzone z nimi zamówienia sprzedaży.      
+1. Wybierz kolejno opcje **Sprzedaż i marketing > Zamówienia sprzedaży > Otwarte zamówienia > Wstrzymania zamówień**. Strona **Wstrzymania zamówień** pełni rolę pulpitu, gdzie można uzyskać przegląd wszystkich bieżących i przetworzonych wstrzymań oraz obsługiwać te wstrzymania i skojarzone z nimi zamówienia sprzedaży.     
 2. Na liście oznacz wybrany wiersz.
-3. W okienku akcji kliknij pozycję Wyewidencjonowanie wstrzymanych.
-4. Kliknij opcję Wyewidencjonuj.
-5. Na liście usuń oznaczenie wybranego wiersza.
-    * Pole Wyewidencjonuj do teraz zawiera Twój identyfikator użytkownika.   
-6. Kliknij opcję Wyczyść wyewidencjonowanie.
-7. W okienku akcji kliknij pozycję Wyczyść wstrzymanie.
-    * Jeśli chcesz usunąć blokadę i pozwolić na przejście zamówienia do następnego etapu realizacji, musisz wyczyścić wstrzymanie. Jeżeli zamówienie nie wymaga żadnych zmian, można uruchomić akcję Usuń wstrzymania. Można jednak użyć operacji Usuń i modyfikuj, jeśli podczas usuwania blokady okaże się, że zamówienie musi zostać zaktualizowane.      
-    * Operacja Usuń i prześlij ma zastosowanie tylko w przypadku korzystania z funkcji Biuro obsługi.  
-8. Kliknij opcję Usuń wstrzymania.
-    * Wstrzymanie zostało zdjęte z zamówienia i usunięte z listy aktywnych wstrzymań. Aby wyświetlić wszystkie wstrzymania lub ich podzbiór zgodnie z określonym stanem, zmień wartość w polu Pokaż.     
+3. W **okienku akcji** kliknij pozycję **Wyewidencjonowanie wstrzymanych**.
+4. Kliknij opcję **Wyewidencjonuj**.
+5. Na liście usuń oznaczenie wybranego wiersza. Pole **Wyewidencjonuj do** teraz zawiera Twój identyfikator użytkownika.   
+6. Kliknij opcję **Wyczyść wyewidencjonowanie**.
+7. W **okienku akcji** kliknij pozycję **Wyczyść wstrzymanie**.
+    - Jeśli chcesz usunąć blokadę i pozwolić na przejście zamówienia do następnego etapu realizacji, musisz wyczyścić wstrzymanie. Jeżeli zamówienie nie wymaga żadnych zmian, można uruchomić akcję Usuń wstrzymania. Można jednak użyć operacji Usuń i modyfikuj, jeśli podczas usuwania blokady okaże się, że zamówienie musi zostać zaktualizowane.      
+    - Operacja **Usuń i prześlij** ma zastosowanie tylko w przypadku korzystania z funkcji Biuro obsługi.  
+8. Kliknij opcję **Usuń wstrzymania**. Wstrzymanie zostało zdjęte z zamówienia i usunięte z listy aktywnych wstrzymań. Aby wyświetlić wszystkie wstrzymania lub ich podzbiór zgodnie z określonym stanem, zmień wartość w polu Pokaż.     
 

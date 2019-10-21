@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b3247f693f5934b3fbf83b7b831c7ed221514cb
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 067d1085d9afa04cb76b78393a8a8b9834ce4d8c
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783510"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250951"
 ---
 # <a name="maintenance-attribute-types"></a>Typy atrybutów konserwacji
 
@@ -42,10 +42,10 @@ Atrybuty, które można skonfigurować różnią się w zależności od elementu
 
 ## <a name="create-attribute-types"></a>Tworzenie typu atrybutu
 
-Tworzenie własnych typów atrybutów. Ponadto można przenosić wymiary produkty z Microsoft Dynamics 365 for Finance and Operations do strony **Typy atrybutów**.
+Tworzenie własnych typów atrybutów. Ponadto można przenosić wymiary produkty do strony **Typy atrybutów**.
 
 1. Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Typy atrybutów**.
-2. Przy pierwszym ustawianiu typów atrybutów wybierz opcję **Utwórz wymiary produktu**, aby automatycznie przenieść standardowe wymiary produktu Finance and Operations.
+2. Przy pierwszym ustawianiu typów atrybutów wybierz opcję **Utwórz wymiary produktu**, aby automatycznie przenieść standardowe wymiary produktu.
 3. Wybierz pozycję **Nowy**, aby utworzyć nowy typ atrybutu.
 4. W polu **Typ atrybutu** wprowadź nazwę typu atrybutu.
 5. W polu **Opis wprowadź** opis.

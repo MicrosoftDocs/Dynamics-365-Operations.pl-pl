@@ -3,7 +3,7 @@ title: Planowanie planów konserwacji
 description: W tym temacie wyjaśniono tworzenie planów konserwacji w module Zarządzanie składnikami majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b6e5bde83474fe8971e482af518f7cee23a2220
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 698888533bf503838f455585f61cc7afc7239b05
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875836"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922052"
 ---
 # <a name="schedule-maintenance-plans"></a>Planowanie planów konserwacji
 
@@ -49,11 +49,11 @@ Planowanie planowania konserwacji powoduje generowanie wpisów kalendarza dla ś
 
 - Odnośnie planowania planów konserwacji w lokalizacjach czynności koserwacyjnych: w przypadku aktualizacji konfiguracji typów składników majątku, producentów i modeli planów konserwacji w **Wszystkie lokalizacje funkcjonalne** > **Plany konserwacji** karta skrócona, po zaplanowaniu planów konserwacji , istniejące wpisy harmonogramu konserwacji związane z tą lokalizacją czynności koserwacyjnych są automatycznie usuwane. Aby utworzyć nowe wpisy kalendarza, które odpowiadają zaktualizowaniu ustawień planu konserwacji w lokalizacji czynności konserwacyjnych, należy uruchomić nowy harmonogram planu konserwacji dla tej lokalizacji czynności konserwacyjnych. Aby uzyskać więcej informacji na temat konfiguracji typów składników, producentów i modeli w lokalizacjach funkcjonalnych, należy zapoznać się z tematem [Tworzenie lokalizacji czynności konserwacyjnych](../functional-locations/create-functional-locations.md).
 
->*Przykład:* użytkownik chce utworzyć plan konserwacji dla określonej lokalizacji czynności konserwacyjnych, co oznacza, że podczas planowania planowania konserwacji zostaną uwzględnione wszystkie składniki majątku skonfigurowane w danej lokalizacji czynności konserwacji w danym momencie. W takim przypadku należy utworzyć plan konserwacji i wybrać określoną lokalizację czynności konserwacyjnych, ale nie należy dodawać żadnych obiektów do planu konserwacji. W wyniku tego, podczas planowania tego planu konserwacji, wiersze harmonogramu konserwacji zostaną utworzone dla wszystkich składników majątku związanych z lokalizacją czynności konserwacyjnych o tej godzinie.
+>*Przykład:* użytkownik chce utworzyć plan konserwacji dla określonej lokalizacji czynności konserwacyjnych, co oznacza, że podczas planowania planowania konserwacji zostaną uwzględnione wszystkie składniki majątku skonfigurowane w danej lokalizacji czynności konserwacji w danym momencie. W takim przypadku należy utworzyć plan konserwacji i wybrać określoną lokalizację czynności konserwacyjnych, ale nie należy dodawać żadnych składników majatku do planu konserwacji. W wyniku tego, podczas planowania tego planu konserwacji, wiersze harmonogramu konserwacji zostaną utworzone dla wszystkich składników majątku związanych z lokalizacją czynności konserwacyjnych o tej godzinie.
 
 - W przypadku zmiany typów aktywów, producentów i modeli w **Typy składników majątku** zmiany te dotyczą tylko nowych składników majątku, w których jest używany zaktualizowany typ składników majątku. Przeczytaj więcej na temat ustawień typu składnika majątku w [Typy składników majątku](../setup-for-objects/object-types.md).  
 
-5. Kliknij **OK**, aby rozpocząć generowanie wpisów harmonogramu konserwacji dla składników majątku. Wygenerowane wpisy zostaną wyświetlone na stronie listy **Wszystkie harmonogramy konserwacji**.
+5. Kliknij **OK**, aby rozpocząć generowanie wpisów harmonogramu konserwacji dla składników majątku. Wygenerowane wpisy zostaną wyświetlone na stronie listy **Wszystkie harmonogramy konserwacji**. Na poniższej ilustracji pokazano przykład okienka dialogowego **Szczegóły żądania konserwacji**.
 
 ![Rysunek 1](media/09-preventive-maintenance.png)
 
@@ -75,3 +75,4 @@ Przedstawione tu przykłady pokazują, że wszystkie rejestracje liczników wyko
 ![Rysunek 3](media/11-preventive-maintenance.png)
 
 ![Rysunek 4](media/12-preventive-maintenance.png)
+
