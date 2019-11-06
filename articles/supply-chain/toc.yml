@@ -42,6 +42,8 @@
               items:
                 - name: Opcje wdrażania
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Porównanie funkcji w chmurze i lokalnych
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Wdrożenie w chmurze
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Wymagania systemowe dotyczące wdrożeń w chmurze
@@ -60,16 +62,20 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Nowości i zmiany
               items:
-                - name: Nowości i zmiany — strona główna
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-                - name: Funkcje podglądu w aplikacjach Finance and Operations w wersji 10.0.6 (listopad 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Aplikacje Finance and Operations w wersji 10.0.5 (październik 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations w wersji 10.0.4 (lipiec 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations Enterprise Edition 7.3
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funkcje w wersji zapoznawczej w rozwiązaniu Supply Chain Management w wersji 10.0.7 (grudzień 2019)
+                  href: get-started/whats-new-scm-10-0-7.md
+                - name: Supply Chain Management w wersji 10.0.6 (listopad 2019)
+                  href: get-started/whats-new-scm-10-0-6.md
+                - name: Nowości i zmiany w poprzednich wersjach
+                  items:
+                    - name: Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Aplikacje Finance and Operations w wersji 10.0.5 (październik 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Finance and Operations w wersji 10.0.4 (lipiec 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Finance and Operations Enterprise Edition 7.3
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Usunięte lub wycofane funkcje
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'Funkcje systemu AX 2012, które zostały odroczone'
@@ -1687,8 +1693,6 @@
                       href: production-control/register-material-consumption-hand-held-device.md
                     - name: Kontrola zużycia surowców za pomocą zasad usuwania
                       href: production-control/flushing-principles.md
-                    - name: Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
-                      href: production-control/cross-docking-opportunities.md
                     - name: Konfigurowanie lokalizacji wyjściowej produkcji dla wyrobów gotowych
                       href: production-control/production-output-location.md
                     - name: Zgłaszanie list składowych (BOM) jako gotowych
@@ -2285,6 +2289,12 @@
                   href: warehousing/manage-warehouse-workers.md
                 - name: Odroczone przetwarzanie pracy magazynowej
                   href: warehousing/deferred-put.md
+            - name: Przeładunek kompletacyjny
+              items:
+                - name: Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
+                  href: production-control/cross-docking-opportunities.md
+                - name: Automatyczne zwalnianie wysyłki dla przeładunku kompletacyjnego
+                  href: warehousing/auto-release-shipment-for-cross-docking.md
             - name: Częściowe zwalnianie i częściowa wysyłka
               items:
                 - name: Częściowa wysyłka ładunku w transporcie
@@ -2311,11 +2321,13 @@
                   href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
                 - name: Konfigurowanie zmiany alokacji pozycji na potrzeby pobierania w niedomiarze
                   href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                - name: Anulowanie obsługi wyjątków dotyczących pracy magazynowej
+                  href: warehousing/cancel-warehouse-work.md
             - name: Inwentaryzacja
               items:
                 - name: Kody przyczyn zliczania zapasów
                   href: warehousing/reason-codes-for-counting-journals.md
-                - name: Blokowanie zapasów
+                - name: Blokuj zapasy
                   href: inventory/inventory-blocking.md
                 - name: Inwentaryzacja ciągła
                   href: warehousing/cycle-counting.md

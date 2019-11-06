@@ -3,7 +3,7 @@ title: Zarządzanie zamówieniami rozdzielonymi (DOM)
 description: W tym temacie opisano funkcję zarządzania zamówieniami rozdzielonymi (DOM) w rozwiązaniu Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 11/15/2018
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fee0d9257af86a734a60b469db3a006435f1d3d2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0ebac1c3f9f79ee49ae11a121a4a0dd3bd456c8f
+ms.sourcegitcommit: bdbca89bd9b328c282ebfb681f75b8f1ed96e7a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023426"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578491"
 ---
 # <a name="distributed-order-management-dom"></a>Zarządzanie zamówieniami rozdzielonymi (DOM)
 
@@ -94,6 +94,7 @@ Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie D
         - **Zrealizować wiersze częściowe?** — jeśli dla tej opcji jest ustawiona wartość **Tak**, funkcja DOM może zrealizować część ilości określonej w wierszach zamówienia. Tę częściową realizację uzyskuje się przez podzielenie wiersza zamówienia.
         - **Zrealizować zamówienie tylko z jednej lokalizacji?** — jeśli dla tej opcji jest ustawiona wartość **Tak**, funkcja DOM zapewnia realizację wszystkich wierszy zamówienia z poziomu jednej lokalizacji.
 
+
         W poniższej tabeli wyjaśniono działanie po zdefiniowaniu kombinacji tych parametrów.
 
         |      | Zrealizować zamówienia częściowe? | Zrealizować wiersze częściowe? | Zrealizować zamówienie tylko z jednej lokalizacji? | Opis |
@@ -110,19 +111,22 @@ Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie D
 
         \* W przypadku ustawienia wartości **Nie** dla opcji **Zrealizować zamówienia częściowe?** wartość opcji **Zrealizować wiersze częściowe?** jest traktowana jako **Nie** niezależnie od jej rzeczywistego ustawienia.
 
-    - **Reguła lokalizacji realizacji offline** — ta reguła umożliwia organizacji określenie lokalizacji lub grupy lokalizacji jako działających w trybie offline lub niedostępnych dla funkcji DOM, dzięki czemu nie możesz przypisać do nich zamówień do realizacji.
+> [!NOTE]
+> W wersji 10.0.5 rozwiązania Retail parametr **Zrealizować zamówienie tylko z jednej lokalizacji?** został zmieniony na **Lokalizacje maksymalnej realizacji**. Zamiast konfigurowania, czy zamówienia mogą być realizowane tylko z jednej lokalizacji lub ze wszystkich możliwych lokalizacji, użytkownicy mogą teraz określać, czy realizacja może być dokonana z konkretnego zestawu lokalizacji (do 5), czy ze wszystkich możliwych lokalizacji. Oferuje to większą elastyczność pod kątem liczby lokalizacji, w których zamówienie może być realizowane.
+
+   - **Reguła lokalizacji realizacji offline** — ta reguła umożliwia organizacji określenie lokalizacji lub grupy lokalizacji jako działających w trybie offline lub niedostępnych dla funkcji DOM, dzięki czemu nie możesz przypisać do tych lokalizacji zamówień do realizacji.
     - **Reguła maksymalnej liczby odrzuceń** — ta reguła umożliwia organizacjom określenie progu liczby odrzuceń. Po osiągnięciu progu procesor DOM oznaczy zamówienie lub wiersz zamówienia jako wyjątek i wykluczy go z dalszego przetwarzania.
 
         Po przypisaniu wierszy zamówienia do lokalizacji może ona odrzucić przypisany wiersz zamówienia w związku z brakiem możliwości realizacji tego wiersza z określonych powodów. Odrzucone wiersze są oznaczane jako wyjątki i ponownie umieszczane w puli do przetwarzania podczas następnej sesji. Podczas następnej sesji funkcja DOM podejmie próbę przypisania odrzuconego wiersza do innej lokalizacji. Nowa lokalizacja może również odrzucić przypisany wiersz zamówienia. Ten cykl przypisania i odrzucenia może występować wiele razy. Jeśli liczba odrzuceń osiągnie określony próg, funkcja DOM oznaczy wiersz zamówienia jako stały wyjątek i nie będzie ponownie pobierać tego wiersza w celu jego przypisania. Funkcja DOM weźmie pod uwagę wiersz zamówienia w celu jego ponownego przypisania tylko w przypadku ręcznego zresetowania stanu wiersza zamówienia przez użytkownika.
 
-    - **Reguła maksymalnej odległości** — ta reguła umożliwia organizacjom definiowanie maksymalnej odległości, w jakiej może znajdować się lokalizacja lub grupa lokalizacji w celu realizacji zamówienia. Jeśli dla lokalizacji określone są nakładające się na siebie reguły maksymalnej odległości, funkcja DOM zastosuje najniższą maksymalną odległość zdefiniowaną dla tej lokalizacji.
+   - **Reguła maksymalnej odległości** — ta reguła umożliwia organizacjom definiowanie maksymalnej odległości, w jakiej może znajdować się lokalizacja lub grupa lokalizacji w celu realizacji zamówienia. Jeśli dla lokalizacji określone są nakładające się na siebie reguły maksymalnej odległości, funkcja DOM zastosuje najniższą maksymalną odległość zdefiniowaną dla tej lokalizacji.
     - **Reguła maksymalnej liczby zamówień** — ta reguła umożliwia organizacjom definiowanie maksymalnej liczby zamówień do przetworzenia w czasie dnia kalendarzowego w lokalizacji lub grupie lokalizacji. Jeśli maksymalna liczba zamówień zostanie przypisana do lokalizacji w jednym dniu, funkcja DOM nie przypisze więcej zamówień do tej lokalizacji przez pozostałą część tego dnia kalendarzowego.
 
-    Poniżej przedstawiono niektóre wspólne atrybuty, które mogą zostać zdefiniowane dla wszystkich wymienionych typów reguł:
+   Poniżej przedstawiono niektóre wspólne atrybuty, które mogą zostać zdefiniowane dla wszystkich wymienionych typów reguł:
 
-    - **Data rozpoczęcia** i **Data zakończenia** — dla każdej reguły możesz określić za pomocą tych pól zakres dat obowiązywania.
-    - **Wyłączone** — tylko te reguły, które mają wartość **Nie** w tym polu są brane pod uwagę w sesji DOM.
-    - **Ograniczenie bezwarunkowe** — reguła może być zdefiniowana jako ograniczenie bezwarunkowe lub nie. Wszystkie sesje DOM odbywają się w dwóch iteracjach. W pierwszej iteracji każda reguła jest traktowana jako ograniczenie bezwarunkowe niezależnie od ustawienia tego pola. Oznacza to, że stosowane są wszystkie reguły. Jedynym wyjątkiem jest reguła **Priorytet lokalizacji**. W drugiej iteracji reguły, które nie zostały zdefiniowane jako ograniczenia bezwarunkowe, są usuwane, a zamówienie lub wiersze zamówienia, które nie zostały przypisane do lokalizacji, gdy wszystkie reguły były stosowane, są przypisywane do lokalizacji.
+   - **Data rozpoczęcia** i **Data zakończenia** — dla każdej reguły możesz określić za pomocą tych pól zakres dat obowiązywania.
+   - **Wyłączone** — tylko te reguły, które mają wartość **Nie** w tym polu są brane pod uwagę w sesji DOM.
+   - **Ograniczenie bezwarunkowe** — reguła może być zdefiniowana jako ograniczenie bezwarunkowe lub nie. Wszystkie sesje DOM odbywają się w dwóch iteracjach. W pierwszej iteracji każda reguła jest traktowana jako ograniczenie bezwarunkowe niezależnie od ustawienia tego pola. Oznacza to, że stosowane są wszystkie reguły. Jedynym wyjątkiem jest reguła **Priorytet lokalizacji**. W drugiej iteracji reguły, które nie zostały zdefiniowane jako ograniczenia bezwarunkowe, są usuwane, a zamówienie lub wiersze zamówienia, które nie zostały przypisane do lokalizacji, gdy wszystkie reguły były stosowane, są przypisywane do lokalizacji.
 
 10. Profile realizacji są używane do grupowania kolekcji reguł, firm, źródeł zamówień sprzedaży i metod dostawy. Każda sesja DOM odnosi się do określonego profilu realizacji. W ten sposób organizacje mogą definiować i uruchamiać zestawy reguł dla zbioru firm w przypadku zamówień, które mają określone źródła zamówień sprzedaży i metody dostawy. W związku z tym, jeśli mają być uruchamiane różne zestawy reguł dla różnych źródeł zamówień sprzedaży lub metod dostawy, możesz odpowiednio zdefiniować profile realizacji. Aby skonfigurować profile realizacji, wykonaj następujące czynności:  
 

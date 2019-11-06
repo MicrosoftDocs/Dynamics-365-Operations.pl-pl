@@ -1,6 +1,6 @@
 > [!IMPORTANT]
-> **Ogłoszenie informacji o wersji usługi Dynamics 365**
+> **Zapowiedź planów wydań usługi Dynamics 365**
 >
-> Interesują Cię nadchodzące i ostatnio wydane funkcje dowolnej z naszych aplikacji biznesowych lub platformy? 
+> Interesują Cię nadchodzące i ostatnio wprowadzone możliwości którejkolwiek z naszych aplikacji lub platform biznesowych? 
 > 
-> Przejrzyj stronę [Business applications and platform release notes](https://go.microsoft.com/fwlink/?linkid=2010158). Zebraliśmy w jednym miejscu wszystkie szczegóły, których możesz używać na potrzeby planowania. W zależności od wersji informacji o wersji możesz uzyskać informacje dotyczące nowych usług i możliwości, a także nowych funkcji, które zostaną wydane w przyszłości.
+> Przejrzyj stronę [Plany wydań aplikacji i platform biznesowych](https://go.microsoft.com/fwlink/?linkid=2010158). Zebraliśmy w jednym miejscu wszystkie szczegóły, których możesz używać na potrzeby planowania. W zależności od wersji planów wydania możesz uzyskać informacje dotyczące nowych usług i możliwości, a także nowych funkcji, które zostaną wydane w przyszłości.

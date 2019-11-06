@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: f0a5e4c01b34b2adb8e7e0af967af2c2562b4d87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f7d2cfb8e58221004ae5662aae3850adc577dc88
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176056"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570317"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Rozpoznawanie przychodów z zamówień sprzedaży
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Funkcji Rozpoznawanie przychodów nie można jeszcze włączyć za pomocą modułu Zarządzanie funkcjami. Obecnie można ją włączyć tylko przy użyciu kluczy konfiguracji.
+> Funkcji Rozpoznawanie przychodów nie można włączyć za pomocą modułu Zarządzanie funkcjami. Obecnie można ją włączyć tylko przy użyciu kluczy konfiguracji.
 
 W tym temacie opisano podstawową funkcję rozpoznawania przychodów z zamówień sprzedaży i faktur. Rozpoznawanie przychodów jest dostępne w zamówieniu sprzedaży i na odpowiedniej fakturze utworzonej z zamówienia sprzedaży. Zamówienie sprzedaży można również utworzyć za pomocą projektu typu czas i materiały.
 

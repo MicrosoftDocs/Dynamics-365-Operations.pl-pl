@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 244321e1eb246c46260326a8892924d9d9da75d3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176055"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570363"
 ---
 # <a name="recognize-deferred-revenue"></a>Rozpoznawanie odroczonego przychodu
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Funkcji Rozpoznawanie przychodów nie można jeszcze włączyć za pomocą modułu Zarządzanie funkcjami. Obecnie można ją włączyć tylko przy użyciu kluczy konfiguracji.
+> Funkcji Rozpoznawanie przychodów nie można włączyć za pomocą modułu Zarządzanie funkcjami. Obecnie można ją włączyć tylko przy użyciu kluczy konfiguracji.
 
 W tym temacie opisano proces rozpoznawania przychodów w harmonogramie uznawania przychodów. Po zaksięgowaniu faktury dla zamówienia sprzedaży harmonogram rozpoznawania przychodów jest tworzony dla każdego wiersza zamówienia sprzedaży z harmonogramem przychodów. Harmonogram przychodów w wierszu służy do określenia, czy przychód w wierszu ma zostać odroczony.
 
