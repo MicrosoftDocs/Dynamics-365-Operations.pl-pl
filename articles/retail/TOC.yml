@@ -7,191 +7,193 @@
         - name: Wprowadzenie
           items:
             - name: Zanim kupisz
-              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/retail/toc.json
             - name: Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej
-              href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/retail/toc.json
             - name: Aktualizacje do jednej wersji usługi
               items:
                 - name: Omówienie aktualizacji do jednej wersji usługi
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/retail/toc.json
                 - name: Aktualizacje do jednej wersji usługi — często zadawane pytania
-                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/retail/toc.json
                 - name: 'Zasady dotyczące cyklu życia oprogramowania: wersje chmurowe'
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/retail/toc.json
                 - name: Zasady dotyczące cyklu życia oprogramowania — wersje lokalne
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/retail/toc.json
                 - name: Dostępność aktualizacji usługi
-                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/retail/toc.json
                 - name: Stosowanie aktualizacji do środowisk w chmurze
-                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/retail/toc.json
                 - name: Konfigurowanie aktualizacji usług
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/retail/toc.json
                 - name: Wstrzymywanie aktualizacji usługi
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/retail/toc.json
                 - name: Odbieranie powiadomień o aktualizacjach usług
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/retail/toc.json
                 - name: Automatyzacja zadań danych
-                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/retail/toc.json
                 - name: Dostarczanie rozwiązań niezależnych dostawców oprogramowania przy użyciu jednej wersji usługi
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/retail/toc.json
                 - name: Tworzenie i automatyzowanie testów akceptacji użytkownika
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/retail/toc.json
             - name: Wdrażanie środowiska demonstracyjnego
-              href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/retail/toc.json
             - name: Uwagi dotyczące wdrażania
               items:
                 - name: Opcje wdrażania
-                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/retail/toc.json
+                - name: Porównanie funkcji w chmurze i lokalnych
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/retail/toc.json
                 - name: Wdrożenie w chmurze
-                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/retail/toc.json
                 - name: Wymagania systemowe dotyczące wdrożeń w chmurze
-                  href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: get-started/system-requirements.md
                 - name: Wdrożenie lokalne
-                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/retail/toc.json
                 - name: Wymagania systemowe dotyczące wdrożeń lokalnych
-                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/retail/toc.json
+                - name: Kroki instalacji składników kanału detalicznego w środowisku lokalnym
+                  href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/retail/toc.json
                 - name: Zakup rozwiązania Finance + Operations (on-premises)
-                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/retail/toc.json
                 - name: Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/retail/toc.json
                 - name: Aplikacje Finance and Operations we Francji
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/retail/toc.json
             - name: Nowości i zmiany
               items:
-                - name: Nowości i zmiany w rozwiązaniu Retail — strona główna
-                  href: get-started/whats-new.md
-                - name: Funkcje w wersji zapoznawczej w rozwiązaniu Retail 10.0.6
+                - name: Funkcje w wersji zapoznawczej w rozwiązaniu Retail w wersji 10.0.7
+                  href: get-started/whats-new-10-0-7.md
+                - name: Rozwiązanie Retail w wersji 10.0.6
                   href: get-started/whats-new-10-0-6.md
-                - name: Retail 10.0.5
+                - name: Rozwiązanie Retail w wersji 10.0.5
                   href: get-started/whats-new-10-0-5.md
-                - name: Nowości i zmiany w rozwiązaniu Finance and Operations
+                - name: Nowości i zmiany w poprzednich wersjach
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-                    - name: Funkcje podglądu w aplikacjach Finance and Operations w wersji 10.0.6 (listopad 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/retail/toc.json
                     - name: Aplikacje Finance and Operations w wersji 10.0.5 (październik 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/retail/toc.json
                     - name: Finance and Operations w wersji 10.0.4 (lipiec 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/retail/toc.json
                     - name: Finance and Operations Enterprise Edition 7.3
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/retail/toc.json
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub przestarzałe funkcje w rozwiązaniu Finance and Operations
-                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/retail/toc.json
                 - name: 'Funkcje systemu AX 2012, które zostały odroczone'
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/retail/toc.json
                 - name: Funkcje niezaimplementowane we wdrożeniach lokalnych
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/retail/toc.json
                 - name: Zakończenie wsparcia podstawowego dla usługi Microsoft Dynamics AX 2009 i 2012
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/retail/toc.json
             - name: Zasoby dokumentacji
               items:
                 - name: System Pomocy
-                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/retail/toc.json
                 - name: Łączenie z systemem Pomocy
-                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/retail/toc.json
                 - name: Łączenie z niestandardową witryną pomocy
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/retail/toc.json
                 - name: Wyświetlanie i eksportowanie opisów pól
-                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/retail/toc.json
                 - name: Rejestrator zadań
-                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/retail/toc.json
                 - name: Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań
-                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/retail/toc.json
                 - name: Filmy
-                  href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/retail/toc.json
                 - name: Słownik
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/retail/toc.json
             - name: Katalog szkoleń
               items:
                 - name: Katalog szkoleń — strona główna
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/retail/toc.json
                 - name: Osoby podejmujące decyzje biznesowe
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/retail/toc.json
                 - name: Użytkownicy biznesowi
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/retail/toc.json
                 - name: Menedżerowie projektów implementacji
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/retail/toc.json
                 - name: Administratorzy
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/retail/toc.json
                 - name: Deweloperzy
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/retail/toc.json
                 - name: Partnerska sprzedaż i marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/retail/toc.json
                 - name: Konsultanci funkcjonalni
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/retail/toc.json
                 - name: Architekci rozwiązań
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/retail/toc.json
             - name: Poznawanie interfejsu użytkownika
               items:
                 - name: Elementy interfejsu użytkownika
-                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/retail/toc.json
                 - name: Funkcje ułatwień dostępu
-                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/retail/toc.json
                 - name: Zarządzanie funkcjami — omówienie
-                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/retail/toc.json
                 - name: Klient — często zadawane pytania
-                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/retail/toc.json
                 - name: Wyszukiwanie akcji
-                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/retail/toc.json
                 - name: Filtrowanie zaawansowane i składnia zapytań
-                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/retail/toc.json
                 - name: Konfigurowanie i filtrowanie obszarów roboczych
-                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/retail/toc.json
                 - name: Równoległe pokazywanie stron przy użyciu funkcji Otwórz w nowym oknie
-                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/retail/toc.json
                 - name: Skróty klawiaturowe
-                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/retail/toc.json
                 - name: Zmienianie transparentu lub logo firmy
-                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/retail/toc.json
                 - name: Nawigacja z wyszukiwaniem
-                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/retail/toc.json
                 - name: Personalizowanie środowiska użytkownika
-                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/retail/toc.json
                 - name: Zapisane widoki
-                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/retail/toc.json
                 - name: Tworzenie pól niestandardowych i praca z nimi
-                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/retail/toc.json
                 - name: Osadzanie aplikacji PowerApps
-                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/retail/toc.json
                 - name: Znajdowanie informacji za pomocą odnośników
-                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/retail/toc.json
                 - name: Zmienianie daty sesji
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/retail/toc.json
                 - name: Ustawianie preferowanej strefy czasowej
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/retail/toc.json
                 - name: Opis usługi Lifecycle Services
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/retail/toc.json
             - name: Zarządzanie cyklem życia implementacji
               items:
                 - name: Strona główna zarządzania cyklem życia implementacji
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/retail/toc.json
                 - name: Architektura dla aplikacji Finance and Operations
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/retail/toc.json
                 - name: Microsoft FastTrack for Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/retail/toc.json
                 - name: Przygotowanie do przeprowadzenia projektu implementacji
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/retail/toc.json
                 - name: Planowanie środowiska
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/retail/toc.json
                 - name: Przygotowywanie do rozpoczęcia eksploatacji
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/retail/toc.json
                 - name: Rozpoczynanie eksploatacji — często zadawane pytania
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/retail/toc.json
                 - name: Przesyłanie żądania obsługi
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/retail/toc.json
                 - name: 'Subskrypcje, projekty usługi LCS i dzierżawy usługi Azure AD — często zadawane pytania'
-                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/retail/toc.json
                 - name: Przenoszenie środowisk między centrami danych
-                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/retail/toc.json
                 - name: Przenoszenie licencji między typami umów
-                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/retail/toc.json
                 - name: Przenoszenie projektów implementacji w usłudze LCS do innych dzierżaw usługi Azure AD
-                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/retail/toc.json
                 - name: Wiele projektów usługi LCS i środowisk produkcyjnych w tej samej dzierżawie usługi Azure AD
-                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/retail/toc.json
                 - name: Wdrażanie projektów aplikacji Finance and Operations Retail
                   href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
                 - name: 'Konfigurowanie nowych środowisk, usługi Azure DevOps i gałęzi dla projektów aplikacji Retail'
@@ -203,265 +205,265 @@
         - name: Analizy
           items:
             - name: Analizy — strona główna
-              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/retail/toc.json
             - name: Dostęp do informacji i raportowanie
-              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/retail/toc.json
             - name: Zawartość Power BI
               items:
                 - name: Zawartość Power BI — strona główna
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/retail/toc.json
                 - name: Wartości rzeczywiste a budżet
-                  href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/retail/toc.json
                 - name: Świadczenia
-                  href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/retail/toc.json
                 - name: Omówienie operacji gotówkowych
                   href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md
                 - name: Dyrektor finansowy — omówienie
-                  href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/retail/toc.json
                 - name: Wynagrodzenie
-                  href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/retail/toc.json
                 - name: Wynagrodzenie i świadczenia
-                  href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/retail/toc.json
                 - name: Analiza rachunku kosztów
                   items:
                     - name: Analiza rachunku kosztów dostępny w usłudze Power BI
-                      href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie zabezpieczeń pakietu zawartości usługi Power BI Analiza rachunku kosztów
-                      href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/retail/toc.json
                 - name: Zarządzanie kosztami
-                  href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/retail/toc.json
                 - name: Zarządzanie kredytami i windykacją
                   href: ../finance/accounts-receivable/credit-collections-power-bi.md
                 - name: Kompetencje i rozwój pracownika etatowego
-                  href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/retail/toc.json
                 - name: Rozwój pracowników etatowych
-                  href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/retail/toc.json
                 - name: Zarządzanie wydatkami — zawartość usługi Power BI
-                  href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/retail/toc.json
                 - name: Wyniki finansowe
-                  href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/retail/toc.json
                 - name: Szczegółowe dane finansowe
-                  href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/retail/toc.json
                 - name: Zarządzanie środkami trwałymi
                   href: ../finance/fixed-assets/Fixed-asset-management-workspace.md
                 - name: Szkolenia
-                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/retail/toc.json
                 - name: Szkolenie organizacyjne
-                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/retail/toc.json
                 - name: Kierownik praktyk
-                  href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/retail/toc.json
                 - name: Wydajność produkcji
-                  href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/retail/toc.json
                 - name: Analiza wydatków związanych z zakupami
-                  href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/retail/toc.json
                 - name: Rekrutacja
-                  href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/retail/toc.json
                 - name: 'Wyniki kanału detalicznego '
-                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/retail/toc.json
                 - name: Wyniki w zakresie sprzedaży i rentowności
-                  href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/retail/toc.json
                 - name: Płatności dla dostawców
                   href: ../finance/accounts-payable/Vendor-payments-workspace.md
                 - name: Wydajność magazynu
-                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/retail/toc.json
                 - name: Metryki pracowników
-                  href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/retail/toc.json
             - name: Raportowanie i drukowanie dokumentów
               items:
                 - name: Omówienie usług raportowania dokumentów
-                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/retail/toc.json
                 - name: Konfigurowanie usług SSRS na potrzeby wdrożeń lokalnych
-                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/retail/toc.json
                 - name: Drukowanie
                   items:
                     - name: Omówienie drukowania dokumentu
-                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/retail/toc.json
                     - name: Instalowanie Agenta rozsyłania dokumentów w celu obsługi druku przez sieć
-                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/retail/toc.json
                     - name: Uaktualnianie Agenta rozsyłania dokumentów
                       href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
                     - name: Instalowanie urządzeń drukarek sieciowych w środowiskach lokalnych
-                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/retail/toc.json
                     - name: 'Generowanie, publikowanie i drukowanie dokumentów we wdrożeniach lokalnych'
-                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/retail/toc.json
                     - name: Uruchamianie Agenta rozsyłania dokumentów jako usługi systemu Windows
-                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/retail/toc.json
                 - name: Zapobieganie upływowi limitu czasu podczas długotrwałego generowania raportów
-                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/retail/toc.json
                 - name: Dostępne raporty usługi SQL Server Reporting Services
-                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/retail/toc.json
                 - name: Tworzenie rozwiązań raportowania
-                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/retail/toc.json
                 - name: Instalowanie szablonów projektów raportów
-                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/retail/toc.json
                 - name: Dostosowywanie raportów pakietu aplikacji przy użyciu rozszerzeń
-                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/retail/toc.json
                 - name: Rozszerzanie zestawów danych raportów pakietu aplikacji
-                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/retail/toc.json
                 - name: Rozszerzanie elementów menu raportów w celu przekierowywania użytkowników podczas nawigowania
-                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/retail/toc.json
                 - name: Tworzenie niestandardowych projektów dokumentów biznesowych
-                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/retail/toc.json
                 - name: Przeglądanie dokumentów PDF za pomocą osadzonej przeglądarki
-                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/retail/toc.json
             - name: Raportowanie elektroniczne
               items:
                 - name: Omówienie raportowania elektronicznego
-                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/retail/toc.json
                 - name: Konfiguracje
                   items:
                     - name: Tworzenie konfiguracji
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/retail/toc.json
                     - name: Przygotowanie składników rozwiązania do raportowania elektronicznego
                       items:
                         - name: Projektowanie modelu danych specyficznego dla domeny
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/retail/toc.json
                         - name: Przygotowywanie metadanych specyficznych dla aplikacji
                           items:
                             - name: (Raportowanie elektroniczne) Przygotowywanie metadanych aplikacji używanych w RCS
-                              href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/retail/toc.json
                             - name: (RCS) Dostęp do metadanych aplikacji przy użyciu konfiguracji modułu Raportowanie elektroniczne
-                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/unified-operations/retail/toc.json
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/retail/toc.json
                             - name: (RCS) Dostęp do metadanych aplikacji przy użyciu połączonych aplikacji
-                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/unified-operations/retail/toc.json
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/retail/toc.json
                         - name: Definiowanie mapowań modeli i wybieranie źródeł danych
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/retail/toc.json
                         - name: Mapowanie modelu danych na wybrane źródła danych
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/retail/toc.json
                         - name: Tworzenie konfiguracji formatu
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/retail/toc.json
                         - name: Mapowanie składników utworzonego formatu na elementy modelu danych
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/retail/toc.json
                     - name: Testowanie przygotowanego rozwiązania Raportowanie elektroniczne w aplikacji docelowej
                       items:
                         - name: (Raportowanie elektroniczne) Importowanie konfiguracji z RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/retail/toc.json
                         - name: Generowanie dokumentów elektronicznych dla płatności przy użyciu konfiguracji formatu
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/retail/toc.json
                     - name: Uaktualnianie formatu przez przyjęcie jego nowej wersji podstawowej
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/retail/toc.json
                 - name: Projektant formuł w module Raportowanie elektroniczne
-                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/retail/toc.json
                 - name: Zarządzanie mapowaniem modelu modułu Raportowanie elektroniczne w oddzielnych konfiguracjach modułu Raportowanie elektroniczne
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/retail/toc.json
                 - name: Wybieranie definicji modelu danych podczas tworzenia formatów
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/retail/toc.json
                 - name: Generowanie raportów poprzez dodawanie treści w postaci nieprzetworzonego kodu XML
-                  href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/retail/toc.json
                 - name: (Raportowanie elektroniczne) Międzyfirmowe źródła danych w module Raportowanie elektroniczne
-                  href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/retail/toc.json
                 - name: Projektowanie formatów modułu Raportowanie elektroniczne w celu generowania wychodzących dokumentów elektronicznych w różnych formatach
                   items:
                     - name: (Raportowanie elektroniczne) Projektowanie konfiguracji do generowania raportów w formacie OPENXML
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/retail/toc.json
                     - name: (Raportowanie elektroniczne) Projektowanie konfiguracji w celu generowania raportów w formacie programu Word
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/retail/toc.json
                     - name: Projektowanie konfiguracji w celu wypełniania szablonów w formacie PDF
-                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/retail/toc.json
                 - name: Osadzanie obrazów i kształtów
                   items:
                     - name: (Raportowanie elektroniczne) Osadzanie obrazów i kształtów w generowanych dokumentach
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/retail/toc.json
                     - name: Przykłady osadzania obrazów i kształtów
                       items:
                         - name: 'Projektowanie konfiguracji służących do generowania raportów w formatach pakietu Office, które zawierają osadzone obrazy'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/retail/toc.json
                         - name: 'Przeglądanie konfiguracji służących do generowania raportów w formatach pakietu Office, które zawierają osadzone obrazy'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/retail/toc.json
                         - name: 'Generowanie raportów w formatach pakietu Office, które zawierają osadzone obrazy'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/retail/toc.json
                 - name: Modyfikowanie formatów raportowania elektronicznego przez ponowne zastosowanie szablonów programu Excel
-                  href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/retail/toc.json
                 - name: Definiowanie zależności konfiguracji raportowania elektronicznego od innych składników
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/retail/toc.json
                 - name: Projektowanie rozwiązania Raportowanie elektroniczne w celu korzystania z wymiarów finansowych
                   items:
                     - name: Projektowanie modeli danych w celu używania wymiarów finansowych jako źródeł danych
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/retail/toc.json
                     - name: Mapowanie modeli w celu używania wymiarów finansowych jako źródeł danych
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/retail/toc.json
                     - name: Projektowanie raportów w celu używania wymiarów finansowych jako źródeł danych
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/retail/toc.json
                     - name: Generowanie raportów używających wymiarów finansowych jako źródeł danych
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/retail/toc.json
                 - name: Projektowanie formatów modułu Raportowanie elektroniczne w celu wykonywania zliczania i sumowania przy użyciu informacji z wygenerowanych danych wyjściowych
                   items:
                     - name: Tworzenie formatów w celu wykonywania zliczania i sumowania
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie formatu w celu wykonywania zliczania i sumowania
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/retail/toc.json
                     - name: Używanie obliczeń w celu generowania wyników zliczania i sumowania
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/retail/toc.json
                     - name: Uruchamianie formatów w celu wykonywania zliczania i sumowania
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/retail/toc.json
                 - name: Dynamiczne dodawanie kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów
                   items:
                     - name: Projektowanie formatów w celu dynamicznego dodawania kolumn do raportów w programie Excel jako poziomo rozszerzalnych zakresów
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/retail/toc.json
                     - name: Uruchamianie formatów w celu dynamicznego dodawania kolumn do raportów w programie Excel jako poziomo rozszerzalnych zakresów
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/retail/toc.json
                 - name: Używanie plików zarządzania dokumentami w danych wyjściowych formatu
                   items:
                     - name: Przygotowywanie modeli danych w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/retail/toc.json
                     - name: Rozszerzanie modeli danych w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/retail/toc.json
                     - name: Tworzenie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/retail/toc.json
                     - name: Uruchamianie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/retail/toc.json
                     - name: Modyfikowanie i uruchamianie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/retail/toc.json
                 - name: Aktualizowanie danych aplikacji przy użyciu modułu Raportowanie elektroniczne
                   items:
                     - name: Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji
-                      href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/retail/toc.json
                     - name: Importowanie konfiguracji w celu generowania dokumentów z danymi aplikacji
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/retail/toc.json
                     - name: Projektowanie konfiguracji w celu generowania dokumentów z danymi aplikacji
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/retail/toc.json
                     - name: Modyfikowanie modeli i mapowań w celu generowania dokumentów z danymi aplikacji
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/retail/toc.json
                     - name: Modyfikowanie formatów w celu generowania dokumentów z danymi aplikacji
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/retail/toc.json
                     - name: Generowanie dokumentów zawierających dane aplikacji
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/retail/toc.json
                 - name: Importowanie danych z plików przychodzących przy użyciu rozwiązań Raportowanie elektroniczne
                   items:
                     - name: Analizowanie dokumentów przychodzących w innych formatach
-                      href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie importowania danych z ręcznie wybranych plików
                       items:
                         - name: Tworzenie konfiguracji w celu importowania danych z zewnętrznego pliku XML
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie importowania danych w trybie wsadowym z danych zlokalizowanych w programie SharePoint
-                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/retail/toc.json
                     - name: Importowanie plików w formacie XML
                       items:
                         - name: Importowanie plików w formacie XML z opcjonalnymi atrybutami
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/retail/toc.json
                         - name: Konfigurowanie formatów modułu Raportowanie elektroniczne w celu importowania plików w formacie XML z opcjonalnymi atrybutami
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
                 - name: Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości zawartości
-                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/retail/toc.json
                 - name: Obsługa sparametryzowanych wywołań źródeł danych narzędzia Raportowanie elektroniczne typu pola obliczeniowego
-                  href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/retail/toc.json
                 - name: Cykl życia konfiguracji
                   items:
                     - name: Zarządzanie cyklem życia konfiguracji
-                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/retail/toc.json
                     - name: Przekazywanie konfiguracji do usługi Lifecycle Services
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/retail/toc.json
                     - name: Importowanie konfiguracji z usługi Lifecycle Services
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/retail/toc.json
                     - name: Pobieranie konfiguracji z usługi Lifecycle Services
-                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/retail/toc.json
                     - name: Importowanie konfiguracji
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/retail/toc.json
                     - name: Pobieranie konfiguracji modułu Raportowanie elektroniczne z repozytorium RCS
                       items:
                         - name: Pobieranie konfiguracji z repozytorium modułu Raportowanie elektroniczne typu RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/retail/toc.json
                         - name: Importowanie konfiguracji z RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
                 - name: Używanie rozwiązań modułu Raportowanie elektroniczne w rozwiązaniu Finance and Operations
@@ -469,43 +471,43 @@
                     - name: Konfigurowanie struktury
                       items:
                         - name: Konfigurowanie struktury modułu Raportowanie elektroniczne
-                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/retail/toc.json
                         - name: Tworzenie kopii zapasowych i odzyskiwanie szablonów narzędzia Raportowanie elektroniczne
-                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/retail/toc.json
                         - name: Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/retail/toc.json
                     - name: Miejsca docelowe
                       items:
                         - name: Omówienie miejsc docelowych
-                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/retail/toc.json
                         - name: Konfigurowanie miejsc docelowych
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/retail/toc.json
                     - name: Automatyczne sprawdzanie poprawności wygenerowanych raportów
                       items:
                         - name: Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi
-                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/retail/toc.json
                         - name: Ulepszenia w śledzeniu wyników wygenerowanych raportów i porównaniach z wartościami bazowymi
-                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/retail/toc.json
                         - name: Automatyzacja testowania za pomocą modułu Raportowanie elektroniczne
-                          href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/retail/toc.json
                     - name: Automatyzacja procesów biznesowych za pomocą konfiguracji modułu Raportowanie elektroniczne
                       items:
                         - name: Konfigurowanie w module Raportowanie elektroniczne ściągania danych do usługi Power BI
-                          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/retail/toc.json
                         - name: Generowanie formularzy faktur niezależnych (FTI) do wydruku
-                          href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/unified-operations/retail/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/retail/toc.json
                     - name: Śledzenie wykonywania formatów modułu Raportowanie elektroniczne w celu rozwiązywania problemów z wydajnością
-                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/retail/toc.json
                     - name: Omówienie zarządzania dokumentami biznesowymi
-                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/retail/toc.json
                 - name: Interfejs API struktury modułu Raportowanie elektroniczne
                   items:
                     - name: Rozszerzanie listy funkcji Raportowania elektronicznego
-                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/retail/toc.json
                     - name: Zmiany w interfejsie API struktury raportowania elektronicznego w aktualizacji Application update 7.3
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/retail/toc.json
                     - name: Określanie niestandardowej lokalizacji wygenerowanych dokumentów
-                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/retail/toc.json
             - name: Osadzone rozwiązania analityczne
               items:
                 - name: Osadzona usługa Power BI w obszarach roboczych
@@ -525,219 +527,219 @@
             - name: Narzędzia do tworzenia i rozszerzania rozwiązań
               items:
                 - name: 'Analizy, miary agregacji i modelowanie wskaźników KPI'
-                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/retail/toc.json
                 - name: Tworzenie raportów analitycznych przy użyciu Power BI Desktop
-                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/retail/toc.json
                 - name: Modelowanie i agregowanie danych
-                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/retail/toc.json
                 - name: Dodawanie wymiarów finansowych do miar agregacji
-                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/retail/toc.json
                 - name: Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
-                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/retail/toc.json
                 - name: Pomoc w zabezpieczeniu analitycznych obszarów roboczych i raportów za pomocą Power BI Embedded
-                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/retail/toc.json
             - name: Narzędzia do zarządzania dla administratorów
               items:
                 - name: Integracja usługi Power BI z magazynem jednostek
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/retail/toc.json
                 - name: Rozwiązywania problemów po konserwacji magazynu jednostek
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
                 - name: Konfigurowanie integracji usługi Power BI dla obszarów roboczych
-                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/retail/toc.json
                 - name: Używanie własnej bazy danych
-                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/retail/toc.json
         - name: Aplikacja mobilna
           items:
             - name: Aplikacja mobilna — strona główna
-              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/retail/toc.json
             - name: Mobilne obszary robocze
               items:
                 - name: Dostępne mobilne obszary robocze
-                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/retail/toc.json
                 - name: Zarządzanie składnikami majątku
                   href: ../supply-chain/asset-management/asset-management-mobile-workspace.md
                 - name: Firmowa książka adresowa
-                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/retail/toc.json
                 - name: Kontrola kosztów
-                  href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/retail/toc.json
                 - name: Zarządzanie wydatkami
-                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/retail/toc.json
                 - name: Dostępne zapasy
-                  href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/retail/toc.json
                 - name: Zatwierdzenia faktur
-                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/retail/toc.json
                 - name: Mój zespół
-                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/retail/toc.json
                 - name: Przegląd aplikacji mobilnych do obsługi Project
-                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/retail/toc.json
                 - name: Wpis czasu projektu
                   href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/retailtoc.json
                 - name: Project Timesheet
-                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/retail/toc.json
                 - name: Zatwierdzenie zamówienia zakupu
-                  href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/retail/toc.json
                 - name: Zamówienia sprzedaży
-                  href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/retail/toc.json
                 - name: Współpraca z dostawcami
-                  href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/retail/toc.json
             - name: Publikowanie mobilnych obszarów roboczych
-              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/retail/toc.json
         - name: Integracja z pakietem Office
           items:
             - name: Omówienie integracji danych z pakietem Office
-              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/retail/toc.json
             - name: Integracja z pakietem Office — samouczek
-              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/retail/toc.json
             - name: Otwieranie danych jednostki w programie Excel i aktualizowanie ich przy użyciu dodatku programu Excel
-              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/retail/toc.json
             - name: Tworzenie funkcji otwierania w programie Excel
-              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/retail/toc.json
             - name: Dodawanie szablonów do menu Otwórz wiersze w programie Excel
-              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/retail/toc.json
             - name: Dostosowanie funkcji Otwórz w menu Microsoft Office
-              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/retail/toc.json
             - name: Konfigurowanie i wysyłanie wiadomości e-mail
-              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/retail/toc.json
             - name: Tworzenie środowisk obsługi wiadomości e-mail
-              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/retail/toc.json
             - name: Rozwiązywanie problemów z integracją z pakietem Office
-              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/retail/toc.json
         - name: Administrowanie organizacją
           items:
             - name: Administrowanie organizacją — strona główna
-              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/retail/toc.json
             - name: Sekwencje identyfikatorów
               items:
                 - name: Omówienie sekwencji identyfikatorów
-                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/retail/toc.json
                 - name: Konfigurowanie indywidualnych sekwencji numerów
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/retail/toc.json
                 - name: Konfigurowanie sekwencji identyfikatorów za pomocą kreatora
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/retail/toc.json
             - name: Organizacje i hierarchie organizacyjne
               items:
                 - name: Omówienie organizacji i hierarchii organizacyjnych
-                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/retail/toc.json
                 - name: Planowanie hierarchii organizacyjnej
-                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/retail/toc.json
                 - name: Tworzenie hierarchii organizacyjnej
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/retail/toc.json
                 - name: Tworzenie firm
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/retail/toc.json
                 - name: Tworzenie jednostek operacyjnych
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/retail/toc.json
             - name: Globalna książka adresowa
               items:
                 - name: Omówienie globalnej książki adresowej
-                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/retail/toc.json
                 - name: Planowanie globalnej książki adresowej i innych książek adresowych
-                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/retail/toc.json
                 - name: Konfigurowanie globalnej książki adresowej
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/retail/toc.json
                 - name: Książki adresowe — często zadawane pytania
-                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/retail/toc.json
                 - name: Konfigurowanie książek adresowych
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/retail/toc.json
             - name: System przepływu pracy
               items:
                 - name: Omówienie systemu przepływów pracy
-                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/retail/toc.json
                 - name: Architektura systemu przepływu pracy
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/retail/toc.json
                 - name: Elementy przepływu pracy
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/retail/toc.json
                 - name: Akcje przepływu pracy
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/retail/toc.json
                 - name: Tworzenie przepływów pracy
                   items:
                     - name: Omówienie tworzenia przepływów pracy
-                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie właściwości przepływu pracy
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie zadań ręcznych
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie zadań wykonywanych automatycznie
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie procesów zatwierdzania
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie kroków zatwierdzania
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie decyzji ręcznych
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie decyzji warunkowych
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie działań równoległych
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie odgałęzień równoległych
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/retail/toc.json
                     - name: Konfigurowanie przepływów pracy dla pozycji w wierszach
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/retail/toc.json
                 - name: Konfigurowanie zadania wsadowego przetwarzania komunikatów przepływu pracy jako newralgicznego
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/retail/toc.json
                 - name: Delegowanie elementów roboczych w przepływie pracy
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/retail/toc.json
                 - name: Wyświetlanie historii przepływu pracy
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/retail/toc.json
                 - name: Konfigurowanie w systemie wysyłania wiadomości e-mail związanych z przepływem pracy do użytkowników
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/retail/toc.json
                 - name: Typy przepływu pracy
                   items:
                     - name: Tworzenie typu przepływu pracy
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/retail/toc.json
                     - name: Lista kontrolna typu przepływu pracy
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/retail/toc.json
                     - name: Tworzenie kategorii przepływu pracy
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/retail/toc.json
                     - name: Tworzenie kwerendy typu przepływu pracy
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/retail/toc.json
                     - name: Tworzenie nowego typu przepływu pracy
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/retail/toc.json
                     - name: Tworzenie klasy dokumentu przepływu pracy
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/retail/toc.json
                     - name: Tworzenie klasy SubmitToWorkflow
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/retail/toc.json
                     - name: Kojarzenie klasy dokumentu przepływu pracy z typem przepływu pracy
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/unified-operations/retail/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/retail/toc.json
                 - name: Raport o typach przepływu pracy
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/retail/toc.json
                 - name: Przepływ pracy — często zadawane pytania
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/retail/toc.json
             - name: Alerty
               items:
                 - name: Omówienie alertów
-                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/retail/toc.json
                 - name: Tworzenie reguł alertów
-                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/retail/toc.json
                 - name: Przetwarzanie wsadowe alertów
-                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/retail/toc.json
                 - name: Powiadomienia o alertach klienta wysyłane pocztą e-mail
-                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/retail/toc.json
             - name: Podpisy elektroniczne
               items:
                 - name: Omówienie podpisów elektronicznych
-                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/retail/toc.json
                 - name: Konfigurowanie podpisów elektronicznych
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/retail/toc.json
             - name: Zarządzanie sprawami
               items:
                 - name: Omówienie zarządzania sprawami
-                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/retail/toc.json
                 - name: 'Planowanie zabezpieczeń, procesów i kategorii spraw'
-                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/retail/toc.json
             - name: Szablony rekordów
               items:
                 - name: Omówienie szablonów rekordów
-                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/retail/toc.json
                 - name: Tworzenie szablonu rekordów
-                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/retail/toc.json
                 - name: Używanie szablonu rekordu do tworzenia nowego rekordu
-                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/retail/toc.json
             - name: Konfigurowanie zarządzania dokumentami
-              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/retail/toc.json
             - name: Konfigurowanie i wysyłanie wiadomości e-mail
-              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/retail/toc.json
             - name: Dane dotyczące daty/godziny i strefy czasowe
-              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/retail/toc.json
         - name: Konfigurowanie kanałów i zarządzanie nimi
           items:
             - name: Ustawienia kanału
@@ -783,7 +785,7 @@
         - name: Produkty i merchandising
           items:
             - name: Omówienie informacji o produktach
-              href: ../supply-chain/pim/product-information.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/pim/product-information.md?toc=/dynamics365/retail/toc.json
             - name: Hierarchie handlu detalicznego
               href: retail-hierarchies.md
             - name: Atrybuty i grupy atrybutów
@@ -793,9 +795,9 @@
             - name: Konfigurowanie produktów sprzedaży
               href: set-up-retail-products.md
             - name: Tworzenie produktu
-              href: ../supply-chain/pim/tasks/create-product.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/pim/tasks/create-product.md?toc=/dynamics365/retail/toc.json
             - name: Konfigurowanie połączonych produktów
-              href: ../supply-chain/pim/tasks/configure-linked-products.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/pim/tasks/configure-linked-products.md?toc=/dynamics365/retail/toc.json
             - name: Zwalnianie produktu/produktu głównego do firm
               href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
             - name: Zarządzanie kategoriami produktów i produktami sprzedaż detalicznej
@@ -803,7 +805,7 @@
             - name: Zmiana porządku sortowania dla podmiotów merchandisingowych
               href: custom-order-categories-nav-retail-prod-hierarchy.md
             - name: Wymiary produktu
-              href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/retail/toc.json
             - name: Konfigurowanie asortymentów
               href: set-up-assortments.md
             - name: Konfigurowanie kodów kreskowych
@@ -813,9 +815,9 @@
             - name: Sprzedaż i zwrot produktów nieuwzględnionych w asortymencie sklepu
               href: sell-return-outside-assortments.md
             - name: Domyślne ustawienia zamówienia dla wymiarów i wariantów produktu
-              href: ../supply-chain/production-control/default-order-settings.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/production-control/default-order-settings.md?toc=/dynamics365/retail/toc.json
             - name: Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień
-              href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/retail/toc.json
             - name: Raporty cen detalicznych
               href: price-report.md
             - name: Generowanie i uruchamianie gotowych raportów
@@ -834,6 +836,8 @@
               href: optimal-combination-overlapping-discounts.md
             - name: Definiowanie rabatów specyficznych dla kanału
               href: define-channel-specific-discounts.md
+            - name: Rabaty oparte na metodzie płatności
+              href: tender_based_discounts.md
             - name: Opcje blokowania rabatów na produkty detaliczne
               href: prevent-discounts.md
             - name: Przegląd rabatów wysyłkowych
@@ -851,7 +855,7 @@
             - name: Metody płatności
               href: payment-methods.md
             - name: 'Konfiguracja, autoryzacja i przechwytywanie karty kredytowej'
-              href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/retail/toc.json
             - name: Konfigurowanie nominałów gotówki dla punktu sprzedaży
               href: cash-denominations.md
             - name: Konfigurowanie przetwarzania karty kredytowej
@@ -877,61 +881,67 @@
         - name: Podatek
           items:
             - name: Omówienie podatku
-              href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/retail/toc.json
             - name: Wybieranie metody obliczania podatku w polu Źródło
-              href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/retail/toc.json
             - name: ' Przypisanie i zastąpienia podatku'
-              href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/retail/toc.json
             - name: Opcje Cała kwota i Obliczanie interwału dla kodów podatku
-              href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/retail/toc.json
         - name: Zamówienia zakupu
           items:
             - name: Omówienie zamówień zakupu
-              href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/retail/toc.json
             - name: Tworzenie zamówień zakupu
-              href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/retail/toc.json
             - name: Przyjęcie produktów na podstawie zamówień zakupu
-              href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/retail/toc.json
             - name: Zatwierdzanie i potwierdzanie zamówień zakupu
-              href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/retail/toc.json
             - name: Mobilny obszar roboczy zatwierdzenia zamówienia zakupu
-              href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/retail/toc.json
         - name: Zapasy
           items:
             - name: Zarządzanie zapasami w sklepie
               href: work-with-store-inventory.md
             - name: Rejestrowanie numerów seryjnych w procesie sprzedaży
-              href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/retail/toc.json
             - name: Arkusze magazynowe
-              href: ../supply-chain/inventory/inventory-journals.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/inventory/inventory-journals.md?toc=/dynamics365/retail/toc.json
             - name: Zliczanie znaczników zapasów
-              href: ../supply-chain/inventory/inventory-tag-counting.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/inventory/inventory-tag-counting.md?toc=/dynamics365/retail/toc.json
             - name: Kolejka FIFO z wartością fizyczną i oznaczeniami
-              href: ../supply-chain/cost-management/fifo-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/cost-management/fifo-physical-value-marking.md?toc=/dynamics365/retail/toc.json
             - name: Data LIFO z wartością fizyczną i oznaczeniami
-              href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md?toc=/dynamics365/retail/toc.json
             - name: Kolejka LIFO z wartością fizyczną i oznaczeniami
-              href: ../supply-chain/cost-management/lifo-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/cost-management/lifo-physical-value-marking.md?toc=/dynamics365/retail/toc.json
             - name: Średnia ważona z datą
-              href: ../supply-chain/cost-management/weighted-average-date.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/cost-management/weighted-average-date.md?toc=/dynamics365/retail/toc.json
             - name: Średnia ważona z wartością fizyczną i oznaczeniami
-              href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md?toc=/dynamics365/retail/toc.json
             - name: Zlecenia kwarantanny
-              href: ../supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/retail/toc.json
             - name: Dynamiczny średni koszt własny
-              href: ../supply-chain/cost-management/running-average-cost-price.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/cost-management/running-average-cost-price.md?toc=/dynamics365/retail/toc.json
             - name: Śledzenie dynamicznych średnich kosztów dla wymiaru magazynowego
-              href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md?toc=/dynamics365/retail/toc.json
         - name: Zestawienia
           items:
             - name: Zestawienia sieci sprzedaży
               href: retail-statements.md
             - name: Sprawdzanie spójności transakcji sprzedaży detalicznej
               href: valid-checker.md
+            - name: Wyłączanie reguł w sprawdzaniu spójności transakcji sprzedaży detalicznej
+              href: disable-consistency-check-rule.md
+            - name: Edycja i przeprowadzanie inspekcji transakcji sklepu sieci sprzedaży
+              href: edit-audit-retail-transactions.md
             - name: 'Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży'
               href: tasks/create-calculate-post-statement-retail-store.md
             - name: Ulepszenia funkcji księgowania zestawień
               href: statement-posting-EOD.md
+            - name: Tworzenie zamówień na podstawie cząstkowego kanału informacyjnego dla transakcji w sklepach sieci sprzedaży
+              href: trickle-feed.md
             - name: Ulepszona obsługa towarów śledzonych w partii
               href: batch.md
             - name: Konfigurowanie parametrów aplikacji Retail wpływających na zestawienia sieci sprzedaży
@@ -1000,6 +1010,8 @@
               href: dev-itpro/gift-card-cash-out.md
             - name: Wysyłanie zamówień z innego sklepu
               href: charge-send.md
+            - name: Ukrywanie metod dostawy bez przewoźnika w oknie dialogowym wysyłki z punktu sprzedaży
+              href: hide-non-carrier-modes.md
             - name: Rejestrator zadań i Pomoc dla aplikacji MPOS i Cloud POS
               href: task-recorder-retail-pos.md
             - name: Sprzętowe urządzenia peryferyjne
@@ -1057,9 +1069,9 @@
         - name: Zasoby ludzkie
           items:
             - name: 'Organizowanie pracowników za pomocą działów, funkcji i stanowisk'
-              href: ../talent/departments-jobs-positions.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../talent/departments-jobs-positions.md?toc=/dynamics365/retail/toc.json
             - name: Konfigurowanie składników funkcji
-              href: ../talent/create-job.md?toc=/dynamics365/unified-operations/retail/toc.json
+              href: ../talent/create-job.md?toc=/dynamics365/retail/toc.json
         - name: Monitorowanie i analizy
           items:
             - name: Monitorowanie wydajności sprzedaży i marży
@@ -1116,6 +1128,8 @@
               items:
                 - name: Przykładowa integracja drukarki fiskalnej dla Włoch
                   href: localizations/emea-ita-fpi-sample.md
+                - name: Zarządzanie informacjami dotyczącymi klienta dla Włoch
+                  href: localizations/emea-ita-customer-information.md
             - name: Meksyk
               items:
                 - name: Globalne faktury elektroniczne CFDI dla Meksyku
@@ -1140,12 +1154,6 @@
               href: tasks/category-pricing-rules-trade-agreements.md
             - name: Konfigurowanie profili funkcji dla przedstawicieli handlowych
               href: tasks/configure-functionality-profile-sales-representative.md
-            - name: Tworzenie urządzeń i kojarzenie ich z kasami
-              href: tasks/create-associate-device.md
-            - name: Tworzenie stacji sprzętowych
-              href: tasks/create-associate-hardware-station.md
-            - name: Tworzenie kas w punkcie sprzedaży
-              href: tasks/create-associate-registers.md
             - name: Tworzenie zamówień w biurach obsługi
               href: tasks/create-call-center-orders.md
             - name: Tworzenie wymiarów finansowych dla kas w punktach sprzedaży i konfigurowanie wartości wymiarów w kasach
@@ -1174,8 +1182,6 @@
               href: tasks/design-relationships-between-organizational-units.md
             - name: Zarządzanie asortymentem
               href: tasks/manage-assortments-2016-11.md
-            - name: Pobieranie stacji sprzętowych przy użyciu funkcji samoobsługi
-              href: tasks/perform-self-service-download-hardware-station.md
             - name: Księgowanie sprzedaży i płatności online
               href: tasks/posting-online-sales-payments.md
             - name: Przetwarzanie korekt punktów lojalnościowych
@@ -1207,7 +1213,7 @@
                 - name: Architektura publikowania sklepu internetowego w rozwiązaniu Retail
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Zawartość Retail Channel Performance Power BI
-                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/retail/toc.json
                 - name: Certyfikacja PA-DSS (Payment Application Data Security Standards)
                   href: dev-itpro/PA-DSS-Certification.md
                 - name: Funkcje sprzedaży detalicznej są dostępne we wdrożeniach lokalnych
@@ -1233,7 +1239,7 @@
                 - name: Zdarzenia składników rozwiązania Retail używane na potrzeby diagnostyki i rozwiązywania problemów
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Stosowanie wdrażalnego pakietu
-                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/retail/toc.json
             - name: Obsługa uaktualniania i wersji N-1
               items:
                 - name: Obsługa uaktualniania i wersji N-1 w aplikacji Retail
@@ -1249,7 +1255,7 @@
             - name: Konfiguracja środowiska
               items:
                 - name: Dodawanie linków do postanowień prawnych i zasad zachowania poufności informacji organizacji
-                  href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/unified-operations/retail/toc.json
+                  href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/retail/toc.json
                 - name: Zarządzanie Mapami Bing
                   href: dev-itpro/manage-bing-maps.md
             - name: Lokalizowanie zasobów rozszerzeń rozwiązania Retail i plików etykiet
@@ -1332,8 +1338,6 @@
                   href: dev-itpro/configure-online-store.md
                 - name: Konfigurowanie dostawców uwierzytelniania
                   href: dev-itpro/configure-authentication-providers.md
-                - name: Platforma handlu elektronicznego
-                  href: dev-itpro/ecommerce-platform.md
                 - name: Zestaw SDK platformy handlu elektronicznego
                   href: dev-itpro/ecommerce-platform-sdk.md
             - name: Rozszerzalność łączników płatności
@@ -1406,6 +1410,8 @@
                   href: dev-itpro/retail-sdk/loyalty-extension-sample.md
     - name: Rozwój i administracja aplikacjami Finance and Operations
       href: ../fin-ops-core/dev-itpro/index.md
+    - name: Dynamics 365 Commerce (wersja zapoznawcza)
+      href: ../commerce/index.md
     - name: Rozwiązanie Dynamics 365 Finance
       href: ../finance/index.md
     - name: Rozwiązanie Dynamics 365 Supply Chain Management
