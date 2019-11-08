@@ -18,18 +18,18 @@ ms.search.industry: Service industries
 ms.author: josaw1
 ms.dyn365.ops.version: 10
 ms.search.validFrom: 2019-01-15
-ms.openlocfilehash: 91ecccab58e4f1582a43eac62b42c7205b383bb1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 753c2a2905835a03b6befe817d32f993d35a5d73
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174496"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2552332"
 ---
-# <a name="microsoft-dynamics-365-project-timesheet-mobile-application"></a>Aplikacja mobilna Microsoft Dynamics 365 Project Timesheet
+# <a name="project-timesheet-mobile-application"></a>Aplikacja mobilna Project timesheet
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 
 Aplikacja mobilna Microsoft Dynamics 365 Project Timesheet umożliwia użytkownikom przesyłanie i zatwierdzanie kart czasu dla projektów na urządzeniach mobilnych (iPhone lub Android). Ta aplikacja udostępnia funkcję karty czasu pracy znajdującą się w obszarach zarządzania projektem i księgowania systemu Dynamics 365 Finance, poprawiając wydajność i efektywność, a także umożliwiając punktualne wprowadzanie i zatwierdzanie kart czasu pracy.
 

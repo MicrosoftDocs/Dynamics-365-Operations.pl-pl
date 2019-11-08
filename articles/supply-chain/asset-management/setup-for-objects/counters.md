@@ -3,70 +3,67 @@ title: Pomiary składnika majątku
 description: W tym temacie wyjaśniono, jak tworzyć typy pomiarów składników majątku w Zarządzaniu składnikami majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9c445832a649c4f6a6642036ecab325e8aa2079
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.search.validFrom: 2019-09-30
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: bc6b9e944a7ecf6b769a8e3c2f9b1fbafaa60734
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783525"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626115"
 ---
-# <a name="asset-measures"></a>Pomiary składnika majątku
+# <a name="counters"></a>Liczniki
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+W tym temacie wyjaśniono, jak tworzyć typy liczników w module Zarządzanie składnikami majątku. Typy liczników służą do rejestracji liczników składników majątku, np. liczby godzin produkcji lub ilości wyprodukowanej w ramach składnika majątku. Typy składników majątku są powiązane z typami liczników. Oznacza to, że licznik może być używany tylko w przypadku, gdy licznik jest ustawiony jako typ składnika majątku używany względem składnika majątku.
 
-W tym temacie wyjaśniono, jak tworzyć typy pomiarów składników majątku w Zarządzaniu składnikami majątku. Typy miar składników majątku służą do rejestracji miar składników majątku, np. liczby godzin produkcji lub ilości wyprodukowanej w ramach składnika majątku. Typy składników majątku są powiązane z typami miar składników majątku. Oznacza to, że miara składnika majątku może być używana tylko w przypadku, kiedy miara składnika majątku jest ustawiona jako typ składnika majątku używany względem składnika majątku.
+Zanim zarejestrujesz liczniki dla składników majątku, najpierw utwórz typy liczników, których chcesz używać w obszarze **Liczniki**. Następnie można utworzyć rejestracje liczników składników majątku w sekcji **Liczniki**. 
 
-Zanim zarejestrujesz miarę składników majątku, najpierw utwórz typy składników majątku, których chcesz używać w **Licznikach**. Następnie można utworzyć rejestracje pomiarów składników majątku w sekcji **Pomiary składnika majątku**. 
+Liczniki powinny być używane w planach konserwacji. Wiersz planu konserwacji powinien mieć typ „Licznik”, na przykład powinien odnosić się do godzin produkcji lub ilości wyprodukowanego towaru. 
 
-Pomiary składnika majątku powinny być używane w planach konserwacji. Wiersz planu konserwacji powinien mieć typ „Licznik”, na przykład powinien odnosić się do godzin produkcji lub ilości wyprodukowanego towaru. 
-
-Rejestrację miary składnika aktywów można zaktualizować ręcznie lub automatycznie na podstawie godzin produkcyjnych lub produkowanych ilości. Miara środka trwałego może być ustawiona tak , aby korzystała z jednej z trzech metod aktualizacji (wybranych w polu **Aktualizacja** w **licznikach**):
+Rejestrację licznika można zaktualizować ręcznie lub automatycznie na podstawie godzin produkcyjnych lub produkowanych ilości. Licznik można ustawić tak, aby korzystał z jednej z trzech metod aktualizacji (wybranych w polu **Aktualizacja** w obszarze **Liczniki**):
   
-- Ręcznie — należy ręcznie zarejestrować wartości pomiarów środków trwałych.  
+- Ręcznie — należy ręcznie zarejestrować wartości liczników.  
 - Godziny produkcji - licznik jest automatycznie aktualizowany na podstawie liczby godzin produkcyjnych.  
 - Ilość produkcji - licznik jest automatycznie aktualizowany na podstawie ilości wyprodukowanego towaru.  
 
 >[!NOTE]
->W przypadku użycia wyprodukowanej ilości *wszystkie* zarejestrowane pozycje są uwzględniane w rejestracji pomiarów, ilości dobrych, a także ilości błędów. W razie potrzeby zawsze możliwe jest ręczne rejestrowanie miar składników majątku.
+>W przypadku użycia wyprodukowanej ilości *wszystkie* zarejestrowane pozycje są uwzględniane w rejestracji liczników, ilości dobrych, a także ilości wadliwych towarów. W razie potrzeby zawsze można zarejestrować liczniki ręcznie.
 
 ## <a name="create-counter-types-for-asset-counter-registrations"></a>Tworzenie typów liczników dla rejestracji liczników składników majątku
 
 1. Wybierz **Zarządzaj składnikiem majątku** > **Konfiguracja** > **Typy składników majątku** > **Liczniki**.
-2. Wybierz pozycję **Nowy**, aby utworzyć typ miary składnika majątku.
+2. Wybierz pozycję **Nowy**, aby utworzyć nowy typ licznika.
 3. Wstaw Identyfikator w polu **Licznik** oraz nazwę licznika w polu **Nazwa**.
-4. Na skróconej karcie **Ogólne** wybierz jednostkę miary w polu **jednostka.**
-5. W polu **aktualizacja** wybierz metodę aktualizacji stosowaną dla miary składnika majątku.
-6. Zaznacz opcję „tak” na przycisku przełącznika **Dziedzicz wartości licznika**, jeśli zasoby podrzędne w strukturze zasobów powinny automatycznie dziedziczyć rejestracje miar składnika majątku dokonane w zasobie nadrzędnym.
-7. W polu **Zagregowana suma** wybierz metodę sumowania stosowaną dla miary składnika majątku przy użyciu tego typu miary składnika majątku. „Suma” to standardowy wybór używany do ciągłego dodawania zarejestrowanych wartości do wartości całkowitej. „Średnia” może być użyta, jeśli miara składnika majątku jest ustawiona pod kątem monitorowania progu, na przykład w odniesieniu do temperatury, drgań lub zużycia danego składnika majątku. 
-8. W polu **odchylenie nad** wstaw górny poziom w procentach, aby sprawdzić poprawność, jeśli ręczne rejestrowanie miar składników majątku znajduje się w oczekiwanym zakresie. Sprawdzanie poprawności jest oparte na liniowym wzroście istniejących rejestracji miar składnika majątku.
-9. W polu **odchylenie pod** wstaw dolny poziom w procentach, aby sprawdzić poprawność, jeśli ręczne rejestrowanie miar składników majątku znajduje się w oczekiwanym zakresie. Sprawdzanie poprawności jest oparte na liniowym spadku istniejących rejestracji miar składnika majątku.
-10. W polu **typ** wybierz typ wiadomości (informacje, ostrzeżenie, błąd), które mają być wyświetlane, jeśli odchylenia poza zdefiniowanym zakresem wystąpią podczas ręcznego rejestrowania miar składników majątku.
-11. Na skróconej karcie **Typy składników majątku** dodaj typy składników majątku, dla których ma być stosowana miara składnika majątku.
-12. Na skróconej karcie **Powiązane pomiary składnika majątku** dodaj miary składnika majątku, które mają być automatycznie aktualizowane po zaktualizowaniu tej miary składnika majątku.
+4. Na skróconej karcie **Ogólne** wybierz jednostkę licznika w polu **Jednostka**.
+5. W polu **Aktualizacja** wybierz metodę aktualizacji stosowaną dla licznika.
+6. Wybierz pozycję „Tak” na przycisku przełącznika **Dziedzicz wartości licznika**, jeśli podrzędne składniki majątku w strukturze składników majątku powinny automatycznie dziedziczyć rejestracje liczników dokonane w nadrzędnym składniku majątku.
+7. W polu **Zagregowana suma** wybierz metodę sumowania stosowaną dla licznika przy użyciu tego typu licznika. „Suma” to standardowy wybór używany do ciągłego dodawania zarejestrowanych wartości do wartości całkowitej. „Średnia” może być używana, jeśli licznik zostanie skonfigurowany do monitorowania progu, na przykład w odniesieniu do temperatury, drgań lub zużycia danego składnika majątku. 
+8. W polu **Odchylenie powyżej** wstaw górny poziom w procentach, aby sprawdzić poprawność, jeśli ręczne rejestracje znajdują się w oczekiwanym zakresie. Weryfikacja opiera się na liniowym wzroście istniejących rejestracji liczników.
+9. W polu **Odchylenie poniżej** wstaw dolny poziom w procentach, aby sprawdzić, czy ręczne rejestracje znajdują się w oczekiwanym zakresie. Weryfikacja opiera się na liniowym spadku istniejących rejestracji liczników.
+10. W polu **Typ** wybierz typ komunikatu (informacje, ostrzeżenie, błąd), który mają być wyświetlana, jeśli odchylenia poza zdefiniowanym zakresem wystąpią podczas ręcznego rejestrowania liczników.
+11. Na skróconej karcie **Typy składników majątku** dodaj typy składników majątku, dla których ma być stosowany licznik.
+12. Na skróconej karcie **Powiązane liczniki składnika majątku** dodaj licznik, który mają być automatycznie aktualizowany po zaktualizowaniu tego licznika.
 
 
 >[!NOTE]
->Powiązane pomiary składnika majątku są automatycznie aktualizowane tylko wtedy, gdy miara składnika majątku ma typ składnika majątku, z którym jest powiązana w ustawieniach miary składnika majątku. Na przykład: możesz skonfigurować miarę składnika majątku dla godzin produkcji i dodać typ składnika „silnik do samochodu ciężarowego”. Po zaktualizowaniu tego składnika majątku powiązany licznik „Olej” jest również aktualizowany o te same wartości składnika majątku. Konfiguracja w **licznikach** zawiera ustawienia „godziny”. Ponadto w pomiarze składnika majątku „Olej” na skróconej karcie **typy składnika majątku** należy dodać „Silnik do samochodu ciężarowego”, aby ustanowić relację pomiaru składnika majątku. Zobacz poniższe zrzuty ekranu, aby zapoznać się z przykładowymi ustawieniami dla Godzin i pomiarów składnika majątku „Olej”.
+>Powiązany licznik jest automatycznie aktualizowany tylko wtedy, gdy typ składnika majątku, z którym skojarzony licznik jest powiązany, istnieje w ustawieniach licznika. Na przykład: możesz skonfigurować licznik dla godzin produkcji i dodać typ składnika majątku „Silnik do samochodu ciężarowego”. Po zaktualizowaniu tego licznika powiązany licznik „Olej” jest również aktualizowany o te same wartości licznika. Konfiguracja w **licznikach** zawiera ustawienia „godziny”. Ponadto w liczniku „Olej” typ składnika majątku „Silnik do samochodu ciężarowego” należy dodać do skróconej karty **Typy składnika majątku**, aby zagwarantować relację licznika. Zobacz poniższe zrzuty ekranu, aby zapoznać się z przykładowymi ustawieniami liczników „Godziny” i „Olej”.
 
-Gdy typy składników majątku zostaną dodane do typu pomiaru składnika majątku w części **Liczniki**, te miary składnika majątku są automatycznie dodawane do typów składnika majątku na skróconej karcie **Liczniki** w [Typy składników majątku](../setup-for-objects/object-types.md).
+Gdy typy składników majątku zostaną dodane do typu licznika w obszarze **Liczniki**, ten licznik zostanie automatycznie dodany do typów składnika majątku na skróconej karcie **Liczniki**, zgodnie z opisem w temacie [Typy składników majątku](../setup-for-objects/object-types.md).
 
 ![Rysunek 1](media/071-setup-for-objects.png)
-
 

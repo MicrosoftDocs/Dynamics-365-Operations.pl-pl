@@ -3,7 +3,7 @@ title: Kreator konfiguracji planowania głównego
 description: W tym temacie opisano różne ważne strategie i parametry używane do konfigurowania planowania głównego.
 author: t-benebo
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 0310ac55d35421d8ad9080739fc5a393660ce520
-ms.sourcegitcommit: 261dc882710f29303b14f9be8a26d71d85d25345
+ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
+ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "1999541"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "2635133"
 ---
 # <a name="master-planning-setup-wizard"></a>Kreator konfiguracji planowania głównego
 
 [!include [banner](../includes/banner.md)]
 
 Ten temat zawiera przewodnik **Kreatora konfiguracji planowania głównego**. Wyjaśnia, jak są obliczane są sugestie parametrów, i zawiera przykłady pokazujące, jak różne firmy konfigurują planowanie główne na podstawie ich potrzeb biznesowych.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+
+Film [Kreator konfiguracji planowania głównego w usłudze Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) (widoczny powyżej) film wideo jest zawarty w [liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej w witrynie YouTube.
+
 
 ## <a name="specific-requirements-of-your-company"></a>Szczególne wymagania Twojej firmy
 

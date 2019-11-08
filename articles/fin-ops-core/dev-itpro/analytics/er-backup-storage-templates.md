@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8b4e783f79b02c77a27fc59c2f4be8a192f2f476
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248707"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553098"
 ---
 # <a name="backup-storage-of-er-templates"></a>Magazyn kopii zapasowej szablonów ER
 
@@ -33,7 +33,7 @@ Użytkownicy biznesowi używają [modułu Raportowanie elektroniczne (ER)](gener
 
 Każdy skonfigurowany format może zostać opublikowany jako część rozwiązania ER. Każde rozwiązanie ER można wyeksportować z jednego wystąpienia Finance and Operations i importować do innego wystąpienia.
 
-Struktura ER używa [Struktury zarządzania dokumentami](../../fin-and-ops/organization-administration/configure-document-management.md) w celu zachowania wymaganych szablonów bieżącego wystąpienia Finance and Operations. W zależności od ustawień struktury ER, można wybrać folder Microsoft Azure Magazyn obiektów BLOB lub folder Microsoft SharePoint jako fizyczną lokalizację magazynu podstawowego dla szablonów. (Aby uzyskać więcej informacji, należy zapoznać się ztematem [Konfigurowanie struktury ER](electronic-reporting-er-configure-parameters.md).) Tabela DocuValue zawiera pojedynczy rekord dla każdego szablonu. W każdym rekordzie pole **Informacje dotyczące dostępu** zawiera ścieżkę pliku szablonu, który znajduje się w skonfigurowanej lokalizacji magazynu.
+Struktura ER używa [Struktury zarządzania dokumentami](../../fin-ops/organization-administration/configure-document-management.md) w celu zachowania wymaganych szablonów bieżącego wystąpienia Finance and Operations. W zależności od ustawień struktury ER, można wybrać folder Microsoft Azure Magazyn obiektów BLOB lub folder Microsoft SharePoint jako fizyczną lokalizację magazynu podstawowego dla szablonów. (Aby uzyskać więcej informacji, należy zapoznać się ztematem [Konfigurowanie struktury ER](electronic-reporting-er-configure-parameters.md).) Tabela DocuValue zawiera pojedynczy rekord dla każdego szablonu. W każdym rekordzie pole **Informacje dotyczące dostępu** zawiera ścieżkę pliku szablonu, który znajduje się w skonfigurowanej lokalizacji magazynu.
 
 Podczas zarządzania wystąpieniami Finance and Operations można zdecydować, czy bieżące wystąpienie ma być migrowane do innej lokalizacji. Na przykład wystąpienie produkcji można migrować do nowego środowiska piaskownicy. Jeśli struktura ER jest skonfigurowana do przechowywania szablonów w magazynie obiektów BLOB, tabela DocuValue w nowym środowisku piaskownicy odwołuje się do wystąpienia magazynu obiektów BLOB w środowisku produkcyjnym. Jednak nie można uzyskać dostępu do tego wystąpienia ze środowiska piaskownicy, ponieważ proces migracji nie obsługuje migracji artefaktów w magazynie obiektów BLOB. Dlatego w przypadku próby uruchomienia formatu ER, który używa szablonu do generowania dokumentów biznesowych, wystąpi wyjątek i użytkownik jest powiadamiany o brakujący szablon. Użytkownik ma również możliwość użycia narzędzia do oczyszczania w celu usunięcia, a następnie ponownego zaimportowania konfiguracji formatu ER, która zawiera szablon. Ponieważ może być kilka konfiguracji formatu ER, ten proces może być czasochłonny.
 

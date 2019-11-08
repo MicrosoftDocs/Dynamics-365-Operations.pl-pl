@@ -17,14 +17,14 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f016c9a210dbb131c3cb6959cd051a2216fcc15f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 90be02b98f98e46fa68fb65aadbc4f302eae45f6
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183844"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551190"
 ---
-# <a name="petty-cash-for-eastern-europe"></a>Gotówka podręczna dla krajów Europy Wschodniej
+# <a name="petty-cash-for-eastern-europe-and-russia"></a>Zarządzanie gotówką podręczną dla Europy Wschodniej i Rosji
 
 [!include [banner](../includes/banner.md)]
 

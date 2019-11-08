@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3d978f8b991211e477dd8f766fe67432d9d493d0
-ms.sourcegitcommit: c0b581e4c647b6c47bc14d1d7bfe267832afecba
+ms.openlocfilehash: eecfb101af9a91f515aab221181c54d53e358a68
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1913104"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652432"
 ---
 # <a name="create-consumption-reports"></a>Tworzenie raportu zużycia
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Po utworzeniu i zaksięgowaniu rejestracji zużycia w zleceniach pracy w module Zarządzanie składnikami majątku dostępne są dwa raporty umożliwiające wyświetlenie szczegółów zużycia.
 
@@ -40,9 +40,14 @@ Po zaksięgowaniu zużycia w zleceniach pracy można wydrukować raport dotyczą
 
 1. Kliknij **Zarządzanie składnikami majątku** > **Raporty** > **Składniki majątku** > **Zużycie składnika majątku**.
 
-2. W oknie dialogowym **Zużycie składnika majątku** wybierz parametry i poziom szczegółów, które chcesz wyświetlić, wybierając w odpowiednich przyciskach opcję „tak”, a następnie wstawiając poziom lokalizacji funkcjonalnej w sekcji **Pokaż**.
-    - Pola **Poziom** można użyć, aby wskazać, jak szczegółowe mają być wiersze składnika majątku dotyczące lokalizacji czynności konserwacyjnych. Jeśli na przykład w polu wstawiono liczbę „1” i istnieje struktura lokalizacji czynności konserwacyjnych wielopoziomowa, wszystkie wiersze usterek składniku majątku w lokalizacji czynności konserwacyjnych będą wyświetlane na najwyższym poziomie, dlatego godziny w wierszu mogą być dodawane z lokalizacji czynności konserwacyjnych znajdujących się na niższym poziomie. W przypadku wstawienia liczby „0” w polu **Poziom** zostanie wyświetlony szczegółowy wynik zawierający wszystkie składniki majątku na każdym poziomie lokalizacji czynności konserwacyjnych, z którymi są powiązane. 
-    - Wybierz wartość „tak” na przycisku **Suma wszystkich podrzędnych składników majątku**, aby wyświetlić sumy dla poszczególnych podrzędnych składików majątku w raporcie.
+2. W oknie dialogowym **Zużycie składnika majątku** wybierz parametry i poziom szczegółów, które chcesz wyświetlić, wybierając w odpowiednich przyciskach opcję **Tak**, a następnie wstawiając poziom lokalizacji czynności konserwacyjnych w sekcji **Pokaż**.
+    - Pola **Poziom** można użyć, aby wskazać, jak szczegółowe mają być wiersze składnika majątku dotyczące lokalizacji czynności konserwacyjnych. 
+    
+        Jeśli na przykład w polu wprowadzono liczbę „1” i istnieje wielopoziomowa struktura lokalizacji czynności konserwacyjnych, wszystkie składniki majątku w lokalizacji czynności konserwacyjnych będą wyświetlane na najwyższym poziomie, dlatego wartości w wierszu mogą być dodawane z lokalizacji czynności konserwacyjnych znajdujących się na niższym poziomie. 
+        
+        W przypadku wprowadzenia liczby „0” w polu **Poziomy** zostanie wyświetlony szczegółowy wynik zawierający wszystkie składniki majątku na każdym poziomie lokalizacji czynności konserwacyjnych, z którym są one powiązane. 
+        
+    - Wybierz wartość **Tak** na przycisku **Suma wszystkich podrzędnych składników majątku**, aby wyświetlić sumy dla poszczególnych podrzędnych składników majątku w raporcie.
 
 3. Wybierz interwał dat w sekcji **Daty**.
 
@@ -59,7 +64,7 @@ Po zaksięgowaniu zużycia w zleceniach pracy można wydrukować raport dotyczą
 
 1. Kliknij kolejno **Zarządzanie składnikami majątku** > **Reporty** > **Zlecenia pracy** > **Zużycie zlecenia pracy**.
 
-2. W oknie dialogowym **Zużycie zlecenia pracy** wybierz parametry, które mają zostać uwzględnione w raporcie, klikając opcję tak w odpowiednich przyciskach w sekcji **Pokaż**.
+2. W oknie dialogowym **Zużycie zlecenia pracy** wybierz parametry, które mają zostać uwzględnione w raporcie, klikając opcję **Tak** w odpowiednich przyciskach w sekcji **Pokaż**.
 
 3. Wybierz interwał dat w sekcji **Daty**.
 

@@ -1,9 +1,9 @@
 ---
-title: Nowości i zmiany — strona główna
+title: Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna
 description: Ta strona wskazuje tematy, które mogą pomóc dowiedzieć się o nowych funkcjach w najnowszych wersjach aplikacji rozwiązania Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: c2dd8093102f92391cd782cda77afb17a3560010
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7559ef3aa3ce816d375f263ff4a4e0cf3d632249
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249304"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658720"
 ---
-# <a name="whats-new-or-changed-home-page"></a>Nowości i zmiany — strona główna
+# <a name="whats-new-or-changed-in-finance-and-operations-home-page"></a>Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna
 [!include [banner](../includes/banner.md)]
 
-Ta strona wskazuje tematy, które mogą pomóc dowiedzieć się o nowych funkcjach w najnowszych wersjach aplikacji rozwiązania Finance and Operations.
+Od października 2019 ta strona nie jest już utrzymywana. Informacje przedstawione w tym temacie opisują gdzie można znaleźć informacje o funkcjach dotyczących aplikacji Finance and Operations, które zostały wydane przed październikiem 2019.
 
 Aby dowiedzieć się, jak uaktualnić do najnowszej wersji, zobacz [Proces uaktualniania do najnowszej aktualizacji](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
@@ -41,7 +41,7 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 <table>
 <thead>
 <tr>
-<th>Wersja</th>
+<th>Zwolnienie</th>
 <th>Wersja</th>
 <th>Numer utworzenia</th>
 <th>Dostępność</th>
@@ -49,13 +49,6 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Microsoft Dynamics 365 for Finance and Operations</td>
-<td>10.0.6</td>
-<td>10.0.234</td>
-<td>Listopad 2019</td>
-<td><a href="whats-new-changed-10-0-6.md">Podgląd funkcji w Dynamics 365 for Finance and Operations w wersji 10.0.6 (listopad 2019)</a></td>
-</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.5</td>
@@ -183,13 +176,6 @@ W poniższej tabeli wymieniono główne wersje aplikacji. W przypadku comiesięc
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Microsoft Dynamics 365 for Finance and Operations</td>
-<td>Aktualizacja platformy Update 30</td>
-<td>7.0.5407</td>
-<td>Listopad 2019</td>
-<td><a href="whats-new-platform-update-30.md">Podgląd funkcji w 30. aktualizacji platformy Dynamics 365 for Finance and Operations (listopad 2019)</a></td>
-</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Aktualizacja platformy Update 29</td>

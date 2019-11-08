@@ -3,7 +3,7 @@ title: Omówienie zarządzanie jakością
 description: W tym temacie opisano, jak za pomocą funkcji zarządzania jakością w Dynamics 365 Supply Chain Management poprawiać jakość produktów w łańcuchu dostaw.
 author: perlynne
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9600e165da76948bb53a0188ec0b212a0fed84a
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ba38f9c43fed81768155a27dda88a4bfb4a7828e
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249593"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653563"
 ---
 # <a name="quality-management-overview"></a>Omówienie zarządzanie jakością
 
@@ -32,7 +32,7 @@ ms.locfileid: "2249593"
 
 W tym temacie opisano, jak za pomocą funkcji zarządzania jakością w Dynamics 365 Supply Chain Management poprawiać jakość produktów w łańcuchu dostaw.
 
-Zarządzanie jakością pomaga przy zarządzaniu czasem przetwarzania, kiedy masz do czynienia z produktami niespełniającymi norm, bez względu na pochodzenie tych produktów. Ze względu na to, że typy diagnostyki są powiązane z raportowaniem korekt, aplikacja Finance and Operations może zaplanować zadania naprawiania problemów i zapobiegania ich ponownemu występowaniu.
+Zarządzanie jakością pomaga przy zarządzaniu czasem przetwarzania, kiedy masz do czynienia z produktami niespełniającymi norm, bez względu na pochodzenie tych produktów. Ze względu na to, że typy diagnostyki są powiązane z raportowaniem korekt, rozwiązanie Supply Chain Management może zaplanować zadania naprawiania problemów i zapobiegania ich ponownemu występowaniu.
 
 Oprócz funkcji związanych z zarządzaniem brakiem zgodności zarządzanie jakością zawiera funkcje monitorowania błędów według typu problemu (łącznie z błędami wewnętrznymi) i identyfikowania rozwiązań krótko- i długoterminowych. Statystyki kluczowych wskaźników wydajności (KPI) pokazują historię wcześniejszych problemów z brakiem zgodności i rozwiązania, które zostały zastosowane do ich korekty. Korzystając z danych historycznych można sprawdzić skuteczność pomiarów jakości, które zostały wcześniej przeprowadzone, i określić odpowiednie rozwiązania na przyszłość.
 
@@ -290,6 +290,256 @@ Poniższa tabela zawiera więcej informacji na temat sposobu generowania zleceń
 <td></td>
 <td></td>
 <td>Zlecenie kontroli jakości musi być tworzone ręcznie dla ilości zapasów towaru. Fizyczne dostępne zapasy są wymagane.</td>
+</tr>
+</tbody>
+</table>
+
+## <a name="quality-order-auto-generation-examples"></a>Przykłady automatycznego generowania zlecenia kontroli jakości
+
+### <a name="purchasing"></a>Zakupy
+
+Jeśli w obszarze zakupów w polu **Typ zdarzenia** zostanie ustawiona wartość **Przyjęcie produktów**, a w polu **Wykonanie** wartość **Po** na stronie **Powiązania jakości**, otrzymasz następujące wyniki : 
+
+- Jeśli opcja **Dla zaktualizowanej ilości** została ustawiona na **Tak**, zlecenie kontroli jakości jest generowane dla każdego przyjęcia względem zamówienia zakupu na podstawie przyjętej ilości i ustawień w ramach kontroli wyrywkowej pozycji. Za każdym razem, gdy ilość jest przyjmowana względem zamówienia zakupu, nowe zlecenia kontroli jakości są generowane na podstawie nowo przyjętej ilości.
+- Jeśli opcja **Dla zaktualizowanej ilości** została ustawiona na **Nie**, zlecenie kontroli jakości jest generowane dla pierwszego przyjęcia względem zamówienia zakupu na podstawie przyjętej ilości. Ponadto co najmniej jedno zlecenie kontroli jakości jest tworzone na podstawie pozostałej ilości, w zależności od wymiarów śledzenia. Zlecenia kontroli jakości nie są generowane dla kolejnych przyjęć względem zamówienia zakupu.
+
+<table>
+<tbody>
+<tr>
+<th>Specyfikacja jakości</th>
+<th>Dla zaktualizowanej ilości</th>
+<th>Dla wymiaru śledzenia</th>
+<th>Wynik</th>
+</tr>
+<tr>
+<td>Wartość procentowa: 10%</td>
+<td>Tak</td>
+<td>
+<p>Numer partii: Nie</p>
+<p>Numer seryjny: Nie</p>
+</td>
+<td>
+<p>Ilość w zamówieniu: 100</p>
+<ol>
+<li>Zgłaszanie wyrobów gotowych dla 30
+<ul>
+<li>Zlecenie kontroli jakości nr 1 dla 3 (10% z 30)</li>
+</ul>
+</li>
+<li>Zgłaszanie wyrobów gotowych dla 70
+<ul>
+<li>Zlecenie kontroli jakości nr 2 dla 7 (10% pozostałej ilości zamówienia, w tym przypadku 70)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Stała ilość: 1</td>
+<td>Nie</td>
+<td>
+<p>Numer partii: Nie</p>
+<p>Numer seryjny: Nie</p>
+</td>
+<td>Ilość w zamówieniu: 100
+<ol>
+<li>Zgłaszanie wyrobów gotowych dla 30
+<ul>
+<li>Zlecenie kontroli jakości nr 1 jest tworzone dla 1 (dla pierwszej ilości zgłoszonej jako gotowa, która ma stałą wartość równą 1).</li>
+<li>Dalsze zlecenia kontroli jakości nie są tworzone względem pozostałej ilości.</li>
+</ul>
+</li>
+<li>Zgłaszanie wyrobów gotowych dla 10
+<ul>
+<li>Zlecenia kontroli jakości nie są tworzone.</li>
+</ul>
+</li>
+<li>Zgłaszanie wyrobów gotowych dla 60
+<ul>
+<li>Zlecenia kontroli jakości nie są tworzone.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Stała ilość: 1</td>
+<td>Tak</td>
+<td>
+<p>Numer partii: Tak</p>
+<p>Numer seryjny: Tak</p>
+</td>
+<td>
+<p>Ilość w zamówieniu: 10</p>
+<ol>
+<li>Zgłaszanie wyrobów gotowych dla 3
+<ul>
+<li>Zlecenie kontroli jakości nr 1 dla 1 — partia b1, numer seryjny s1</li>
+<li>Zlecenie kontroli jakości nr 2 dla 1 — partia b2, numer seryjny s2</li>
+<li>Zlecenie kontroli jakości nr 3 dla 1 — partia b3, numer seryjny s3</li>
+</ul>
+</li>
+<li>Zgłaszanie wyrobów gotowych dla 2
+<ul>
+<li>Zlecenie kontroli jakości nr 4 dla 1 — partia b4, numer seryjny s4</li>
+<li>Zlecenie kontroli jakości nr 5 dla 1 — partia b5, numer seryjny s5</li>
+</ul>
+</li>
+</ol>
+<p><strong>Uwaga:</strong> partii można użyć ponownie.</p>
+</td>
+</tr>
+<tr>
+<td>Stała ilość: 2</td>
+<td>Nie</td>
+<td>
+<p>Numer partii: Tak</p>
+<p>Numer seryjny: Tak</p>
+</td>
+<td>
+<p>Ilość w zamówieniu: 10</p>
+<ol>
+<li>Zgłaszanie wyrobów gotowych dla 4
+<ul>
+<li>Zlecenie kontroli jakości nr 1 dla 1 — partia b1, numer seryjny s1.</li>
+<li>Zlecenie kontroli jakości nr 2 dla 1 — partia b2, numer seryjny s2.</li>
+<li>Zlecenie kontroli jakości nr 3 dla 1 — partia b3, numer seryjny s3.</li>
+<li>Zlecenie kontroli jakości nr 4 dla 1 — partia b4, numer seryjny s4.</li>
+<li>Dalsze zlecenia kontroli jakości nie są tworzone względem pozostałej ilości.</li>
+</ul>
+</li>
+<li>Zgłaszanie wyrobów gotowych dla 6
+<ul>
+<li>Zlecenia kontroli jakości nie są tworzone.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
+### <a name="production"></a>Produkcyjne
+
+Jeśli w obszarze produkcji w polu **Typ zdarzenia** zostanie ustawiona wartość **Zgłoszenie wyrobów gotowych**, a w polu **Wykonanie** wartość **Po** na stronie **Powiązania jakości**, otrzymasz następujące wyniki :
+
+- Jeśli opcja **Dla zaktualizowanej ilości** została ustawiona na **Tak**, zlecenie kontroli jakości jest generowane dla każdej ilości wyrobów gotowych i ustawień w ramach kontroli wyrywkowej pozycji. Za każdym razem, gdy ilość jest zgłaszana jako gotowa względem zlecenia produkcyjnego, nowe zlecenia kontroli jakości są generowane na podstawie nowej ilości zgłoszonej jako gotowa. Ta logika generowania jest spójna z procesem zakupów.
+- Jeśli opcja **Dla zaktualizowanej ilości** została ustawiona na **Nie**, zlecenie kontroli jakości jest generowane po pierwszym zgłoszeniu ilości jako gotowej na podstawie gotowej ilości. Ponadto co najmniej jedno zlecenie kontroli jakości jest tworzone na podstawie pozostałej ilości, w zależności od wymiarów śledzenia kontroli wyrywkowej pozycji. Zlecenia kontroli jakości nie są generowane dla kolejnych gotowych ilości.
+
+<table>
+<tbody>
+<tr>
+<th>Specyfikacja jakości</th>
+<th>Dla zaktualizowanej ilości</th>
+<th>Dla wymiaru śledzenia</th>
+<th>Wynik</th>
+</tr>
+<tr>
+<td>Wartość procentowa: 10%</td>
+<td>Tak</td>
+<td>
+<p>Numer partii: Nie</p>
+<p>Numer seryjny: Nie</p>
+</td>
+<td>
+<p>Ilość w zamówieniu: 100</p>
+<ol>
+<li>Zgłaszanie wyrobów gotowych dla 30
+<ul>
+<li>Zlecenie kontroli jakości nr 1 dla 3 (10% z 30)</li>
+</ul>
+</li>
+<li>Zgłaszanie wyrobów gotowych dla 70
+<ul>
+<li>Zlecenie kontroli jakości nr 2 dla 7 (10% pozostałej ilości zamówienia, w tym przypadku 70)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Stała ilość: 1</td>
+<td>Nie</td>
+<td>
+<p>Numer partii: Nie</p>
+<p>Numer seryjny: Nie</p>
+</td>
+<td>Ilość w zamówieniu: 100
+<ol>
+<li>Zgłaszanie wyrobów gotowych dla 30
+<ul>
+<li>Zlecenie kontroli jakości nr 1 dla 1 (dla pierwszej ilości zgłoszonej jako gotowa, która ma stałą wartość równą 1)</li>
+<li>Zlecenie kontroli jakości nr 2 dla 1 (dla pozostałej ilości, która nadal ma stałą wartość równą 1)</li>
+</ul>
+</li>
+<li>Zgłaszanie wyrobów gotowych dla 10
+<ul>
+<li>Zlecenia kontroli jakości nie są tworzone.</li>
+</ul>
+</li>
+<li>Zgłaszanie wyrobów gotowych dla 60
+<ul>
+<li>Zlecenia kontroli jakości nie są tworzone.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Stała ilość: 1</td>
+<td>Tak</td>
+<td>
+<p>Numer partii: Tak</p>
+<p>Numer seryjny: Tak</p>
+</td>
+<td>
+<p>Ilość w zamówieniu: 10</p>
+<ol>
+<li>Zgłaszanie wyrobów gotowych dla 3: 1 dla b1, s1; 1 dla b2, s2; i 1 dla b3, s3
+<ul>
+<li>Zlecenie kontroli jakości nr 1 dla 1 — partia b1, numer seryjny s1</li>
+<li>Zlecenie kontroli jakości nr 2 dla 1 — partia b2, numer seryjny s2</li>
+<li>Zlecenie kontroli jakości nr 3 dla 1 — partia b3, numer seryjny s3</li>
+</ul>
+</li>
+<li>Zgłaszanie wyrobów gotowych dla 2: 1 dla b4, s4 i 1 dla b5, s5
+<ul>
+<li>Zlecenie kontroli jakości nr 4 dla 1 — partia b4, numer seryjny s4</li>
+<li>Zlecenie kontroli jakości nr 5 dla 1 — partia b5, numer seryjny s5</li>
+</ul>
+</li>
+</ol>
+<p><strong>Uwaga:</strong> partii można użyć ponownie.</p>
+</td>
+</tr>
+<tr>
+<td>Stała ilość: 2</td>
+<td>Nie</td>
+<td>
+<p>Numer partii: Tak</p>
+<p>Numer seryjny: Tak</p>
+</td>
+<td>
+<p>Ilość w zamówieniu: 10</p>
+<ol>
+<li>Zgłaszanie wyrobów gotowych dla 4: 1 dla b1, s1; 1 dla b2, s2; 1 dla b3, s3 i 1 dla b4, s4
+<ul>
+<li>Zlecenie kontroli jakości nr 1 dla 1 — partia b1, numer seryjny s1</li>
+<li>Zlecenie kontroli jakości nr 2 dla 1 — partia b2, numer seryjny s2</li>
+<li>Zlecenie kontroli jakości nr 3 dla 1 — partia b3, numer seryjny s3</li>
+<li>Zlecenie kontroli jakości nr 4 dla 1 — partia b4, numer seryjny s4</li>
+</ul>
+<ul>
+<li>Zlecenie kontroli jakości nr 5 dla 2 bez odwołania do partii i numeru seryjnego</li>
+</ul>
+</li>
+<li>Zgłaszanie wyrobów gotowych dla 6: 1 dla b5, s5; 1 dla b6, s6; 1 dla b7, s7; 1 dla b8, s8; 1 dla b9, s9; i 1 dla b10, s10
+<ul>
+<li>Zlecenia kontroli jakości nie są tworzone.</li>
+</ul>
+</li>
+</ol>
+</td>
 </tr>
 </tbody>
 </table>

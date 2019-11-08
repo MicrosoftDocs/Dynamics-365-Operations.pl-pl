@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0e6306698d351d33cae627e3741ad9a2eb6d893
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 30145a56de4f7e3dce039968791d2fc9b960077f
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783529"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571537"
 ---
 # <a name="move-replace-and-install-assets"></a>Przenoszenie, zamiana i instalowanie składników majątku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 W tym temacie opisano sposób przenoszenia, zastępowania i instalowania składników majątku w module Zarządzanie składnikami majątku. Można utworzyć poszczególne składniki majątku, które nie mają relacji z innymi składnikami majątku, lub utworzyć strukturę składników majątku zawierającą składnik majątku najwyższego poziomu (nadrzędny) i powiązane podrzędne składniki majątku. W module Zarządzaniu składnikami majątku istnieją trzy podejścia do przenoszenia i zmieniania lokalizacji składnika majątku:
 

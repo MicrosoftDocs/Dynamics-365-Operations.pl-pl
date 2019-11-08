@@ -18,16 +18,15 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 354076dbc14f34b83d1cd24f591874b9af856af1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: dd1df355d39065d6959915cc916987d3c58b15a6
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186309"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570201"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Obliczony podatek dla ogólnych wierszy arkuszy finansowych
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie objaśniono, w jaki sposób podatki są obliczane dla różnych typów kont (dostawca, odbiorca, Księga i projekt) w wierszach arkusza finansowego.
 

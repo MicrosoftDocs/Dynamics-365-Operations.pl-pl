@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a1c41cd4440eaf70f720bfd64884e6ef4662f87a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f65118b6a7393ced9d80c30fad7540a7b27da6c7
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181480"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569091"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Określanie lokalizacji niestandardowego magazynu wygenerowanych dokumentów
 
@@ -56,7 +56,7 @@ W bieżącej topologii [utwórz nowy format raportowania elektronicznego](tasks/
 
 Aby określić, jak dokumenty, które generuje format raportowania elektronicznego są kierowane, należy skonfigurować [miejsca docelowe raportowania elektronicznego](electronic-reporting-destinations.md). W każdym miejscu docelowym raportowania elektronicznego, które jest skonfigurowane do przechowywania wygenerowanych dokumentów jako plików należy określić typ dokumentu struktury zarządzania dokumentami. Różne typy dokumentów mogą służyć do kierowania dokumentów generowanych przez raportowanie elektroniczne.
 
-1. Dodaj nowy [typu dokumentu](../../fin-and-ops/organization-administration/configure-document-management.md) dla formatu raportowania elektronicznego utworzonego lub zaimportowanego wcześniej. Na ilustracji typem dokumentu jest **FileX**.
+1. Dodaj nowy [typu dokumentu](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) dla formatu raportowania elektronicznego utworzonego lub zaimportowanego wcześniej. Na ilustracji typem dokumentu jest **FileX**.
 2. W celu odróżnienia tego typu dokumentu od innych zamieść specjalne słowo kluczowe w jego nazwie. Na przykład na ilustracji poniżej, nazwa jest **(LOKALNY) folder**.
 3. W polu **klasy** wybierz **Dołącz plik**.
 4. W polu **grupa** wybierz **Plik**.

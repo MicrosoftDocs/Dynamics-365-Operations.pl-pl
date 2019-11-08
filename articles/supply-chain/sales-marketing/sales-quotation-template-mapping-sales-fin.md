@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: ddc81aa7ff462304cb6e22c919221217f7a1e019
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6b4f0006e4cacc2897d2b6c9c9dde88d0aafa4ad
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251254"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653186"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Synchronizowanie nagłówków ofert i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales
 
@@ -59,7 +59,7 @@ Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchro
 
 ## <a name="entity-set"></a>Zestaw jednostek
 
-| Sprzedaż        | Finance and Operations     |
+| Sprzedaż        | Zarządzanie łańcuchem dostaw     |
 |--------------|----------------------------|
 | Cytaty       | Nagłówek oferty sprzedaży CDS |
 | QuoteDetails | Wiersze oferty sprzedaży CDS  |

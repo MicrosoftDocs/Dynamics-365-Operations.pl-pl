@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660038060826ade9301e50143e49b53ba3fcd3ab
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f96fcc7ebb8928c6d6b17b30465ad1625d9b5be4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783521"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571077"
 ---
-# <a name="asset-criticalities"></a>Krytyczności składników majątku
+# <a name="asset-criticality-types"></a>Typy krytyczności składnika majątku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 W tym temacie objaśniono typy krytyczności składników majątku w module Zarządzanie składnikami majątku. Krytyczność składników majątku jest związana ze składnikami majątku i jest przenoszona do zleceń pracy. Nie można jej zmienić w zleceniu pracy. Krytyczność składników majątku jest używana do obliczania krytyczności zlecenia pracy podczas planowania zlecenia pracy. Innymi słowy, służy do obliczania stopnia, w jakim zadanie konserwacji składnika majątku wpływa na harmonogram produkcji i produktywność w firmie. Aby uzyskać więcej informacji na temat konfiguracji, która jest powiązana z obliczaniem oceny wyników dla planowania zlecenia pracy, zobacz temat [Parametry modułu Zarządzania składnikami majątku](../setup-for-objects/enterprise-asset-management-parameters.md).
 
@@ -43,7 +43,7 @@ Aby skonfigurować krytyczność, należy najpierw utworzyć typy krytyczności,
 4. W polu **Nazwa** wprowadź nazwę typu krytyczności.
 5. W polu **Współczynnik** wpisz współczynnik. Ten współczynnik jest używany podczas obliczania planowania zleceń pracy w celu określenia rekordu krytyczności, który ma zostać użyty. (Zawsze jest używany rekord o najwyższym współczynniku). To ustawienie ma zastosowanie, jeśli, jak to pokazano na poniższej ilustracji, zostaną utworzone wiersze krytyczności, które mają taką samą wartość krytyczności.
 
-    ![Rysunek 1](media/23-setup-for-objects.png)
+    ![Strona typów krytyczności](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Konfigurowanie krytyczności składników majątku
 

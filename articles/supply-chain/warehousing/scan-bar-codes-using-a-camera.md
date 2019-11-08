@@ -1,6 +1,6 @@
 ---
-title: Skanowanie kodów kreskowych za pomocą aparatu w rozwiązaniu Dynamics 365 Supply Chain Management — aplikacja Magazynowanie
-description: W tym temacie opisano, jak w rozwiązaniu Dynamics 365 Supply Chain Management - aplikacja Magazynowanie skonfigurować skanowanie kodów kreskowych przy użyciu aparatu w urządzeniu przenośnym.
+title: Skanowanie kodów kreskowych za pomocą aparatu w rozwiązaniu Dynamics 365 for Finance and Operations – aplikacja Magazynowanie
+description: W tym temacie opisano, jak w rozwiązaniu Dynamics 365 for Finance and Operations – aplikacja Magazynowanie skonfigurować skanowanie kodów kreskowych przy użyciu aparatu w urządzeniu przenośnym.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 8062a981f792bcfed2713d3cb6a42f414394f6a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 58cf27a250778d68bdffa1eefa5e939276e467fc
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251475"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578156"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Skanowanie kodów kreskowych za pomocą aparatu w rozwiązaniu Dynamics 365 Supply Chain Management — aplikacja Magazynowanie
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak w rozwiązaniu Dynamics 365 Supply Chain Management - aplikacja Magazynowanie skonfigurować skanowanie kodów kreskowych przy użyciu aparatu w urządzeniu przenośnym. 
+W tym temacie opisano, jak w rozwiązaniu Dynamics 365 for Finance and Operations – aplikacja Magazynowanie skonfigurować skanowanie kodów kreskowych przy użyciu aparatu w urządzeniu przenośnym. 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 Aby można było używać tej funkcji, trzeba mieć zainstalowaną wersję 1.2.0.0 aplikacji Magazynowanie, a urządzenie musi być wyposażone w aparat. Gdy otworzysz aplikację po zaktualizowaniu, pojawi się monit o pozwolenie aplikacji na używanie aparatu. Jeśli urządzenie nie ma aparatu, monit nie będzie wyświetlany i nie będzie można używać aparatu jako skanera. 
@@ -49,7 +49,7 @@ Strona Aparat będzie inicjowana z każdej strony, w której pole wejściowe ma 
 
 | Strona Zadanie i szczegóły | Strona Aparat | 
 | :---------------------: | :--------------------: |
-| ![camera-scanning-example-task-detail-page](./media/camera-scanning-example-task-detail-page50.png)          | ![camera-scanning-example-camera-page-smaller](./media/camera-scanning-example-camera-page50.png)          |
+| ![Strona Szczegóły przykładowego zadania skanowania kamery](./media/camera-scanning-example-task-detail-page50.png)          | ![Mniejsza strona przykładowej kamery skanowania kamery](./media/camera-scanning-example-camera-page50.png)          |
 
 Na stronie Aparat po kliknięciu przycisku Aparat będzie on wyszarzony podczas próby zidentyfikowania kodu kreskowego. Jeśli kod kreskowy nie zostanie zidentyfikowany w ciągu 5 sekund, upłynie limit czasu procesu, a przycisk aparatu znów stanie się dostępny. Wtedy będzie można ponownie spróbować zeskanować kod kreskowy.
 

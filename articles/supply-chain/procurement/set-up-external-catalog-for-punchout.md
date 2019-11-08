@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: e1bddb65fd5fd73e879d8a95decc9f3e4f7f37e4
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249401"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653448"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut eProcurement
 
 [!include [banner](../includes/banner.md)]
 
-Używając zewnętrznego katalogu, można mieć pewność, że informacje o produktach i cenach, które następnie będą przetwarzane w programie Dynamics 365 for Finance and Operations w wersji z lipca 2017 roku, są dokładne i aktualne. Zapotrzebowanie można następnie zatwierdzić i przekonwertować na zamówienie zakupu, które zostanie złożone u dostawcy.
+Używając zewnętrznego katalogu, można mieć pewność, że informacje o produktach i cenach, które następnie będą przetwarzane w Supply Chain Management są dokładne i aktualne. Zapotrzebowanie można następnie zatwierdzić i przekonwertować na zamówienie zakupu, które zostanie złożone u dostawcy.
 
 Po skonfigurowaniu zewnętrznego katalogu pracownik przygotowujący zapotrzebowanie będzie miał możliwość przejścia do zewnętrznej witryny (zewnętrznego katalogu), a następnie zwrócenia z niej koszyka zakupów do swojej macierzystej witryny. Ta komunikacja opiera się na protokole cXML i musi być skonfigurowana między systemami organizacji kupującej i sprzedającej.
 

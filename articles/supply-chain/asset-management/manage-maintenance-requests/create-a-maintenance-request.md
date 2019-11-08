@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 7fc9ec2f6a9a8a11d824e4b5c13d5aa173541454
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024644"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571928"
 ---
 # <a name="create-maintenance-requests"></a>Utwórz żądania konserwacji
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Żądania konserwacji mogą być używane, jeśli pracownicy zajmujący się konserwacją lub pracownicy produkcyjni odkrywają, że sprzęt wymaga naprawy, ale nie można wykonać zadania naprawy od razu.
 
@@ -55,7 +55,7 @@ Sekcja **Aktywne żądania konserwacji** w okienku **Powiązane informacje** po 
 11. W polu **notatki** wprowadź wszelkie dodatkowe notatki, które są wymagane.
 12. Kliknij przycisk **OK**.
 
-![Rysunek 1](media/03-manage-maintenance-requests.png)
+![Utwórz żądanie konserwacji](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Późniejsze przetwarzanie żądań konserwacji
 
@@ -70,7 +70,7 @@ W widoku szczegółów można aktualizować różne informacje. Oto kilka przyk�
 - Wybierz typ zadania konserwacji i, jeśli te informacje są istotne, wariant zadania konserwacji i profesję zadania.
 - W polach **szerokość** i **długość** geograficzna wprowadź współrzędne geograficzne. Wszystkie współrzędne, które są dodawane do żądania konserwacji są automatycznie przenoszone do powiązanego zlecenia pracy. 
 
-![Rysunek 2](media/04-manage-maintenance-requests.png)
+![Aktualizuj żądanie konserwacji](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Jeśli wybierzesz składnik majątku podczas tworzenia żądania konserwacji, można dodać jeden błąd do zasobu. Po utworzeniu żądania konserwacji można dodać więcej błędów, zgodnie z żądaniem. Aby dodać błędy, wybierz opcję **błąd składnika majątku** na stronie **wszystkie żądania konserwacji**.

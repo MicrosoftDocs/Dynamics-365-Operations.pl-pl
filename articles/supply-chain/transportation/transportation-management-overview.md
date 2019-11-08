@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie transportem — omówienie
-description: W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w rozwiązaniu Finance and Operations.
+description: W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w rozwiązaniu Supply Chain Management.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d976ec4d3c294f0ce8e9732b21b9a429f1e47315
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: fa59a8e6e4744c776ec0e1dc84b1f004dbd796f6
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2027068"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653586"
 ---
 # <a name="transportation-management-overview"></a>Omówienie zarządzania transportem
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w rozwiązaniu Finance and Operations.
+W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w rozwiązaniu Supply Chain Management.
 
 Moduł Zarządzanie transportem pozwala korzystać z transportu w firmie oraz identyfikować dostawców i rozwiązania wyboru trasy dla zamówień przychodzących i wychodzących. Można na przykład określić najszybszą trasę lub najtańszą stawkę za wysyłkę. W poniższej tabeli opisano główne scenariusze używania zarządzania transportem.
 
@@ -67,23 +67,23 @@ Moduł Zarządzanie transportem pozwala korzystać z transportu w firmie oraz id
 </tbody>
 </table>
 
-## <a name="planning-transportation-in-finance-and-operations"></a>Planowanie transportu w programie Finance and Operations
+## <a name="planning-transportation-in-supply-chain-management"></a>Planowanie transportu w Supply Chain Management
 W module Zarządzanie transportem planowania transportu może być oparte na zamówieniach lub na wysyłkach tworzonych w oparciu o te zamówienia. Wysyłki zawsze się pojawiają w pewnym momencie, ale nie są wymagane do planowania transportu. Zamówienia przeniesienia są częścią scenariusza transportu wychodzącego i mogą być planowane razem z zamówieniami sprzedaży. 
 
 ![Rysunek ładunku](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Transport przychodzący
-Gdy zamawiasz towary od dostawcy i muszą one zostać dostarczone do Twojego magazynu, można samodzielnie zorganizować transport. Program Finance and Operations umożliwia zaplanowanie transportu i przyjęcia przychodzącego ładunku. Poniższy rysunek przedstawia przepływ procesu biznesowego dla planowania transportu towarów przychodzących. 
+Gdy zamawiasz towary od dostawcy i muszą one zostać dostarczone do Twojego magazynu, można samodzielnie zorganizować transport. Rozwiązanie Supply Chain Management umożliwia zaplanowanie transportu i przyjęcia przychodzącego ładunku. Poniższy rysunek przedstawia przepływ procesu biznesowego dla planowania transportu towarów przychodzących. 
 
 ![Przebieg procesu biznesowego przychodzącego transportu ładunku](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Transport wychodzący
-Można planować i przetwarzać ładunki wychodzące w celu wysłania określonych towarów z magazynu firmy do odbiorcy. Program Finance and Operations umożliwia zaplanowanie transportu i wysyłania ładunków wychodzących. Poniższy rysunek przedstawia przepływ procesu biznesowego planowania i przetwarzania obciążenia wychodzącego dla ładunku. 
+Można planować i przetwarzać ładunki wychodzące w celu wysłania określonych towarów z magazynu firmy do odbiorcy. Rozwiązanie Supply Chain Management umożliwia zaplanowanie transportu i wysyłki wychodzącego ładunku. Poniższy rysunek przedstawia przepływ procesu biznesowego planowania i przetwarzania obciążenia wychodzącego dla ładunku. 
 
 ![Planowanie i przetwarzania ładunków wychodzących](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Kompilowanie ładunku
-Program Finance and Operations zawiera strategię kompilowania ładunku o nazwie Strategia kompilowania ładunku na podstawie objętości. Pozwala ona stosować maksymalne wartości wysokości i wagi określone w szablonie ładunku albo zastępować te ustawienia wprowadzaniem nowych wartości. Aby użyć tej strategii, zaznacz ją w polu **Strategia kompilowania ładunku** na skróconej karcie **Ustawienia** na karcie **Pulpit kompilowania ładunku**. Ponadto można dodawać własne strategie kompilowania ładunku przez utworzenie nowej klasy w drzewie obiektów aplikacji (AOT).
+Supply Chain Management zawiera strategię kompilowania ładunku o nazwie Strategia kompilowania ładunku na podstawie objętości. Pozwala ona stosować maksymalne wartości wysokości i wagi określone w szablonie ładunku albo zastępować te ustawienia wprowadzaniem nowych wartości. Aby użyć tej strategii, zaznacz ją w polu **Strategia kompilowania ładunku** na skróconej karcie **Ustawienia** na karcie **Pulpit kompilowania ładunku**. Ponadto można dodawać własne strategie kompilowania ładunku przez utworzenie nowej klasy w drzewie obiektów aplikacji (AOT).
 
 
 

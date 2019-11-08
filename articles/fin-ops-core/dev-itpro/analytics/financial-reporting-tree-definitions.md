@@ -3,7 +3,7 @@ title: Definicje drzewa raportowania w raportach finansowych
 description: Ten artykuł zawiera informacje o definicjach drzew raportowania. Definicja drzewa raportowania to składnik (blok konstrukcyjny) raportu, który pomaga określić strukturę i hierarchię organizacji.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8127c694d21064392b1932525a87044b9554973d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
+ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181825"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564174"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definicje drzewa raportowania w raportach finansowych
 
@@ -50,7 +50,7 @@ Definicja drzewa raportowania zawiera kolumny opisane w poniższej tabeli.
 
 | Kolumna drzewa raportowania | Opis |
 |-----------------------|-------------|
-| Firma               | Nazwa firmy dla jednostki raportowania. Wartość **@ANY**, zazwyczaj przypisywana tylko na poziomie podsumowania, umożliwia wykorzystywanie drzewa raportowania do wszystkich firm. Firma jest przypisywana również do wszystkich gałęzi podrzędnych. |
+| Firma               | Nazwa firmy dla jednostki raportowania. Wartość **\@ANY**, zazwyczaj przypisywana tylko na poziomie podsumowania, umożliwia wykorzystywanie drzewa raportowania do wszystkich firm. Firma jest przypisywana również do wszystkich gałęzi podrzędnych. |
 | Nazwa jednostki             | Kod identyfikujący tę jednostkę raportowania w graficznym drzewie raportowania. Pamiętaj, aby ustanowić unikatowy system kodowania, który będzie spójny i łatwy do zrozumienia dla użytkowników. |
 | Opis jednostki      | Tytuł jednostki raportowania jest wyświetlany w nagłówku lub stopce raportu po wprowadzeniu **UnitDesc** jako kodu na karcie **Nagłówki i stopki** w definicji raportu. Tytuł jest wyświetlany w opisie wiersza raportu po wprowadzeniu **UnitDesc** w komórce **Opis** w definicji wiersza. |
 | Wymiary            | Jednostka raportowania, która pobiera dane bezpośrednio z danych finansowych. Definiuje ona logiczne pozycjonowanie i długości dla konta i powiązanych segmentów. Każdy wiersz jednostki raportowania musi mieć wymiar w tej kolumnie. Wymiar można również umieścić w wierszu jednostki podsumowania (np. dla wydatków bezpośrednio związanych z tą jednostką). Jeśli wymiar zostanie wprowadzony w wierszu jednostki podsumowania, konta używane w jednostkach nadrzędnych nie powinny być używane w jednostkach podrzędnych. W przeciwnym razie może dojść do zduplikowania kwot. |

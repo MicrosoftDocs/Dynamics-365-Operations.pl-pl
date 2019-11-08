@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0f818c4c3b669cc94e37cba1e3571c57b5c0dd1b
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 634bbb4326d560848d36f579a1179187d8369087
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887372"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652041"
 ---
 # <a name="schedule-work-order-on-specific-date-and-time"></a>Planowanie zlecenia pracy według konkretnej daty i godziny
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Jeśli zlecenie pracy musi być zaplanowane w określonym dniu *i* o określonej godzinie, można zastąpić standardowy proces planowania w module Zarządzanie składnikami majatku i utworzyć określony harmonogram dla zlecenia pracy.
 
@@ -41,13 +41,13 @@ Jeśli zlecenie pracy musi być zaplanowane w określonym dniu *i* o określonej
 
 4. Na karcie skróconej **Nagłówek zlecenia pracy** wstaw daty rozpoczęcia i zakończenia oraz godziny w polach **Oczekiwane rozpoczęcie** i **Oczekiwane zakończenie**.
 
-![Rysunek 1](media/05-work-order-scheduling.png)
+    ![Rysunek 1](media/05-work-order-scheduling.png)
 
-5. Na karcie **Ogólne** kliknij opcję **Planowanie**, aby użyć standardowego procesu planowania, lub kliknij przycisk **Wysyłanie**, jeśli chcesz zaplanować zlecenie pracy dla określonego pracownika.
+5. Na karcie **Ogólne** kliknij opcję **Planowanie**, aby użyć standardowego procesu planowania, lub kliknij przycisk **Wysyłanie**, jeśli chcesz przypisać zlecenie pracy dla określonego pracownika.
 
 6. W celu zastąpienia istniejących rezerwacji zdolności produkcyjnych w celu zapewnienia, że zlecenie pracy jest planowane w oczekiwanym okresie, należy wybrać opcje tak, jak to pokazano na poniższym rysunku w oknie dialogowym **Planowanie zlecenia pracy** > sekcja **Ograniczone zdolności produkcyjne**. Oznacza to, że proces planowania ignoruje istniejące rezerwacje zdolności produkcyjnych, ponieważ zlecenie pracy musi rozpocząć się w oczekiwanej godzinie rozpoczęcia.
 
-![Rysunek 2](media/06-work-order-scheduling.png)
+    ![Rysunek 2](media/06-work-order-scheduling.png)
 
 7. Kliknij przycisk **OK**, aby rozpocząć planowanie.
 

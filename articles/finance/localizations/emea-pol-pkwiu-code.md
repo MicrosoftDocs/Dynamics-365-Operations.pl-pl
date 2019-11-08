@@ -16,14 +16,14 @@ ms.search.region: Poland
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 93eae39701cd4d909b68e23dc1f5f4d6a63bf437
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b07974be2e4b4a9b5483f5758891bd3a624b3009
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175170"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551135"
 ---
-# <a name="set-up-and-use-pkwiu-codes"></a>Konfigurowanie i używanie kodów PKWiU
+# <a name="set-up-and-use-pkwiu-codes-for-poland"></a>Konfigurowanie i używanie kodów PKWiU dla Polski
 
 [!include [banner](../includes/banner.md)]
 

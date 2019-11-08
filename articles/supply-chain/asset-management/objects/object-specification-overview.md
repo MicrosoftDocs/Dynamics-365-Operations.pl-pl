@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f20df04d9625fdf0edfd312c097293f9be6d0f0
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: b4564fb2670f75d64b0c5214fb430e5e3fa4405c
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783514"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571468"
 ---
 # <a name="asset-attribute-overview"></a>Omówienie atrybutu składnika majątku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Ten temat stanowi przegląd atrybutów składnika majątku w module Zarządzanie składnikami majątku. Atrybuty składnika majątku są właściwościami powiązanymi z typem zasobu lub składnikiem majątku. Jeśli masz skonfigurowane [typy atrybutów](../setup-for-functional-locations/specification-types.md) i użyto ich na zasobach, możesz uzyskać przegląd wartości atrybutów, które są skonfigurowane w składnikach majątku. Ten przegląd wyświetlany na dwóch stronach w module Zarządzanie składnikami majątku: **Omówienie atrybutu składnika majątku** oraz **Atrybut składnika majątku**.
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 553a4a5d25e126923576569b48414c46aab991ec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7621ca961288af81966e0ac883c6525f89960654
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179437"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553147"
 ---
 # <a name="cash-overview-power-bi-content"></a>Pakiet zawartości Przegląd środków pieniężnych dla usługi Power BI
 
@@ -40,15 +40,14 @@ Aby dane były wyświetlane w przeglądach Power BI **środków pieniężnych** 
 1. Otwórz **Administracja Systemu > Konfiguracja > Parametry Systemu** i ustaw **Walutę systemu** oraz **Kurs wymiany systemu**.
 2. Otwórz **Księga ogólna > Konfiguracja > Księga** i ustaw **Waluta księgowa** oraz **Typ kursu wymiany**.
 2. Zdefiniuj kursy wymiany między walutami Transakcji a Walutą księgową, Walutą księgową a Walutą systemu oraz Walutą księgową oraz Walutami banku. Żeby to zrobić, otwórz **Księga Ogólna > Waluty > Kursy wymiany walut**.
-3. Skonfiguruj i uruchom proces Prognozy Przepływów Pieniężnych. Więcej informacji na temat uruchamiania Prognozy przepływów pieniężnych znajdziesz: <a href="https://docs.microsoft.com/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
-">Prognozy przepływów pieniężnych</a>. 
+3. Skonfiguruj i uruchom proces Prognozy Przepływów Pieniężnych. Więcej informacji na temat uruchamiania Prognozy przepływów pieniężnych znajdziesz: [Prognozy przepływów pieniężnych](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
 4. Otwórz **Administracja Systemu > Konfiguracja > Sklep podmiotu** i odśwież łączny wskaźnik **CustCollectionsBIMeasurements**.
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 
 Raporty z zawartości **Przegląd środków pieniężnych** dla usługi Power BI są wyświetlane w obszarach roboczych **Przegląd środków pieniężnych** i **Zarządzanie rachunkami bankowymi**.
 
-Aby wyświetlić raporty prognozowania przepływów pieniężnych z danymi, najpierw należy uruchomić proces obliczania prognozy za pomocą funkcji **Oblicz prognozy przepływów pieniężnych** z obszaru Zarządzanie gotówką i bankami.  Należy to zrobić dla każdej firmy uwzględnionej w prognozie.  Następnie należy odświeżyć zagregowaną miarę LedgerCovLiquidityMeasurement na stronie **Magazyn jednostek**.  
+Aby wyświetlić raporty prognozowania przepływów pieniężnych z danymi, najpierw należy uruchomić proces obliczania prognozy za pomocą funkcji **Oblicz prognozy przepływów pieniężnych** z obszaru Zarządzanie gotówką i bankami. Należy to zrobić dla każdej firmy uwzględnionej w prognozie.  Następnie należy odświeżyć zagregowaną miarę LedgerCovLiquidityMeasurement na stronie **Magazyn jednostek**.  
 
 Dla celów demonstracyjnych można za pomocą strony **Generuj dane** dodać dane demonstracyjne prognozowania przepływów pieniężnych z modułu Dane demonstracyjne.  Ten skrypt spowoduje wstawienie danych do tabel prognozowania przepływów pieniężnych, tak aby szybko wypełnić pola informacji niezbędnych dla raportów.  Ten moduł jest dostępny tylko wtedy, gdy w środowisku masz wdrożony model pakietu danych demonstracyjnych. 
 

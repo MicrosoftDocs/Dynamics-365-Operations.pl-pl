@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4e378bc0a72e05f940ae352ad0f1c0709d9d3a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 21ee0b835cbe6cc3a238247be29f8a8d3de42a8d
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249478"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570755"
 ---
 # <a name="product-information-overview"></a>Omówienie informacji o produktach
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Ten temat zawiera informacje dotyczące zarządzania informacjami o produktach. Moduł Zarządzanie informacjami o produktach współpracuje ze wspólnymi definicjami produktów, kategoriami i identyfikatorami we wszystkich firmach, a także z konkretnymi konfiguracjami produktu, tak aby spełnić wszystkie wymagania procesów biznesowych. 
 

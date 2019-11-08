@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8d9c8afc139c96e32efb3161d35fde685b8abcc5
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 89e13179e17b7cf075d631bc65d82da5f24da624
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874677"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569853"
 ---
 # <a name="scheduled-execution"></a>Zaplanowane wykonanie
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Do skonfigurowania zaplanowanego wykonania można używać poziomów usługi zlecenia pracy. (Aby uzyskać więcej informacji na temat poziomów usługi zlecenia pracy, zapoznaj się z [Poziom i opis usługi](service-level-and-description.md).) Zaplanowane wykonanie zapewnia elastyczność w planowaniu pracy dla pracowników konserwacji, ponieważ istnieje możliwość skonfigurowania bardziej szczegółowych lub mniej szczegółowych wymagań dotyczących interwału, w którym zlecenie pracy powinno zostać zrealizowane. Na przykład konserwator, który wykonuje zadanie szybciej, niż oczekiwano w obiekcie produkcyjnym, może mieć możliwość przejścia do innego zaplanowanego zadania, które było planowane w bieżącym tygodniu, ale niekoniecznie w bieżącym dniu. Takie podejście umożliwia optymalizację planowania pracowników i ukończenia zadań.
 
@@ -42,4 +42,4 @@ Konfiguracja planowania wykonania, która jest związana z zleceniami pracy, mo�
 5. W polu **Zaplanowane wykonanie** wybierz interwał czasu.
 6. Wybierz opcję **Zapisz**.
 
-![Rysunek 1](media/20-setup-for-work-orders.png)
+![Zaplanowane wykonanie](media/20-setup-for-work-orders.png)

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c85fc24cdf0b3cd1a188ccf0f477ffbfa5fab960
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f0a8fcf26da02bd42f6ee45687c585091e3b945e
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783506"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570985"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Konserwatorzy i grupy konserwatorów
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 W tym temacie wyjaśniono, jak działają konserwatorzy i grupy pracowników w module Zarządzanie składnikami majątku. W module Zarządzanie składnikami majątku można łączyć konserwatorów z lokalizacjami czynności konserwacyjnych. (Aby uzyskać więcej informacji o lokalizacjach czynności konserwacyjnych, zobacz temat [Tworzenie lokalizacji czynności konserwacyjnych](../functional-locations/create-functional-locations.md)). Ta funkcja może być przydatna, jeśli na przykład planujesz zadanie konserwacji na komputerze znajdującym się w lokalizacji czynności konserwacyjnych 01, a chcesz przydzielić konserwatorów z tej samej lokalizacji do wykonania zadania.
 

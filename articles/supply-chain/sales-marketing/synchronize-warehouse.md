@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 94fb6720152cbf6aec58d2b8d9d02fc5343c05e2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: b55a0b9e54eabdcdbd3f858cf3725b8fe833f65d
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251185"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653401"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Synchronizowanie magazynów z rozwiązania Supply Chain Management do rozwiązania Field Service
 
@@ -52,14 +52,14 @@ Poniższy szablon i podstawowe zadania są używane do synchronizowania magazyn�
 Magazyny tworzone i obsługiwane w Supply Chain Management mogą być synchronizowane z Field Service za pomocą projektu integracji danych realizowanego w usłudze Common Data Service (CDS). Żądane magazyny synchronizowane z Field Service mogą kontrolowane za pomocą zaawansowanych zapytań i filtrów w projekcie. Magazyny synchronizowane z Supply Chain Management są tworzone w Field Service z polem **Obsługiwane zewnętrznie** ustawionym na **Tak**, a rekord jest tylko do odczytu.
 
 ## <a name="field-service-crm-solution"></a>Rozwiązanie CRM Field Service
-Aby umożliwić integrację między programami Field Service i Finance and Operations, jest wymagana dodatkowa funkcjonalność z rozwiązania CRM Field Service. W rozwiązaniu pole **Obsługiwane zewnętrznie** zostało dodane do jednostki **Magazyn (msdyn_warehouses)**. To pomaga w identyfikacji, czy magazyn jest obsługiwany z Supply Chain Management czy tylko istnieje w Field Service. Ustawienia tego pól obejmują:
+Aby umożliwić integrację między programami Field Service i Supply Chain Management, jest wymagana dodatkowa funkcjonalność z rozwiązania CRM Field Service. W rozwiązaniu pole **Obsługiwane zewnętrznie** zostało dodane do jednostki **Magazyn (msdyn_warehouses)**. To pomaga w identyfikacji, czy magazyn jest obsługiwany z Supply Chain Management czy tylko istnieje w Field Service. Ustawienia tego pól obejmują:
 - **Tak** — Magazyn pochodził z rozwiązania Supply Chain Management i nie będzie można edytować w rozwiązaniu Sales.
 - **Nie** — magazyn został wprowadzony bezpośrednio w Field Service jest obsługiwany w tym miejscu.
 
 Pole **Obsługiwane zewnętrznie** pomaga kontrolować synchronizację poziomów zapasów, korekty, przeniesienia i wykorzystanie w zleceniach. Tylko magazyny z polem **Obsługiwane zewnętrznie** ustawionym na **Tak** mogą być używane do synchronizowania bezpośrednio z tym samym magazynem w innym systemie. 
 
 > [!NOTE]
-> Istnieje możliwość utworzenia wielu magazynów w usługach Field Service (z polem **Obsługiwane zewnętrznie = Nie**), a następnie mapowania ich na jeden magazyn w Finance and Operations z funkcją zaawansowanych zapytań i filtrów. Jest to używane w sytuacjach, w których Field Service ma być wzorcem szczegółowego poziomu magazynu i tylko wysyłać aktualizacje do Finance and Operations. W takim przypadku Field Service nie będzie odbierał aktualizacji poziomów zapasów z Finance and Operations. Aby uzyskać dodatkowe informacje, zobacz [Synchronizowanie korekt zapasów z Field Service do Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) oraz [Synchronizowanie zleceń w Field Service ze zleceniami połączonym z projektami w Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+> Istnieje możliwość utworzenia wielu magazynów w usługach Field Service (z polem **Obsługiwane zewnętrznie** = Nie), a następnie mapowania ich na jeden magazyn z funkcją zaawansowanych zapytań i filtrów. Jest to używane w sytuacjach, w których Field Service ma być wzorcem szczegółowego poziomu magazynu i tylko wysyłać aktualizacje do Supply Chain Management. W takim przypadku Field Service nie będzie odbierał aktualizacji poziomów zapasów z Supply Chain Management. Aby uzyskać dodatkowe informacje, zobacz [Synchronizowanie korekt zapasów z Field Service do Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) oraz [Synchronizowanie zleceń w Field Service ze zleceniami połączonym z projektami w Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="prerequisites-and-mapping-setup"></a>Wymagania wstępne i ustawienia mapowania
 ### <a name="data-integration-project"></a>Projekt integracji danych

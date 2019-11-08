@@ -3,7 +3,7 @@ title: Pule zleceń pracy
 description: W tym temacie opisano pracę z pulami zleceń pracy w module Zarządzanie składnikami majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,95 +16,96 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 069fa02073808fd7bbaac9bc1603e49ce4d450eb
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 161244cb4451ddc7b13b579fd02e828a61adeea4
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875841"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626369"
 ---
 # <a name="work-order-pools"></a>Pule zleceń pracy
 
-
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
+Pul zleceń pracy można używać do grupowania zleceń, które mają coś wspólnego. Poniżej przedstawiono przykłady sposobów tworzenia pul zleceń pracy dla:
+
+- Załóg pracy, na przykład załoga konserwacji A lub załoga konserwacji B  
+
+- Kwalifikacji zawodowych, na przykład elektrycy lub hydraulicy  
+
+- Fizyczne lokalizacje  
+
+- Harmonogramy czasu, na przykład tygodnie lub inne okresy  
+
+W razie konieczności można umieścić jedno zlecenie w wielu pulach zleceń pracy.
 
 
-Pul zleceń pracy można używać do grupowania zleceń, które mają coś wspólnego. Można na przykład utworzyć pule zleceń pracy dla
+## <a name="create-a-work-order-pool"></a>Utwórz pulę zleceń pracy
 
-- załóg roboczych, na przykład załoga konserwacji A, załoga konserwacji B  
+Na stronach list **Wszystkie pule zleceń pracy** lub **Aktywne pule zleceń pracy** można uzyskać przegląd pul zleceń pracy i utworzyć nowe pule.
 
-- kwalifikacji zawodowych, na przykład elektrycy lub hydraulicy  
+1. Wybierz **Zarządzanie składnikami majątku** > **Wspólne** > **Pule zleceń pracy** > **Wszystkie pule zleceń pracy** lub **Aktywne pule zleceń pracy**.
 
-- fizyczne lokalizacje  
+2. Wybierz pozycję **Nowy**.
 
-- harmonogramy czasu, na przykład tygodnie lub inne okresy  
+3. W polu **Pula** wpisz identyfikator dla puli zlecenia pracy.
 
+4. W polu **Nazwa** wprowadź nazwę.
 
-W razie potrzeby jedno zlecenie pracy może zostać umieszczone w wielu pulach zleceń pracy.
+5. W opcji **Aktywne** wybierz wartość **Tak**, aby wskazać, że pula zleceń pracy jest aktywna.
 
+6. Jeśli chcesz, aby zlecenia pracy były automatycznie usuwane z puli zleceń pracy, ustaw opcję **Usuń relacje zlecenia pracy** jako **Tak**.
 
-## <a name="create-work-order-pool"></a>Utwórz pulę zleceń pracy
+7. W polu **Usuń stan cyklu życia** wybierz stan cyklu życia zamówienia pracy. Na przykład stan cyklu życia zlecenia produkcyjnego służącego do ukończenia zlecenia produkcyjnego może zostać skonfigurowany w taki sposób, aby automatycznie usuwać relacje do pul zleceń
 
-We **Wszystkie pule zleceń pracy** lub **Aktywne pule zleceń pracy** można uzyskać przegląd pul zleceń pracy i utworzyć nowe pule.
+    Można natychmiast rozpocząć dodawanie zleceń roboczych do puli zleceń roboczych.
 
-1. Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Pule zleceń pracy** > **Wszystkie pule zleceń pracy** lub **Aktywne pule zleceń pracy**.
+8. Na skróconej karcie **Zlecenia pracy**, należy wybrać przycisk **Dodaj wiersz**.
 
-2. Kliknij przycisk **Nowy**.
+9. W polu **Zlecenie pracy** wybierz zlecenie pracy. Pola pokrewne są automatycznie aktualizowane.
 
-3. Wstaw Identyfikator puli zleceń pracy w polu **Pula** oraz nazwę w polu **Nazwa**.
+10. Powtórz kroki od 8 do 9, aby dodać więcej zleceń pracy.
 
-4. Wybierz wartość tak na **aktywnym** przycisku przełącznika, aby wskazać, że Pula zleceń pracy jest aktywna.
+11. Jeśli dodane zlecenia pracy powinny zostać wykonane w określonym porządku, w polu **Porządek sortowania** można wprowadzić numery **1**, **2**, **3** itd., aby określić takie zlecenie.
 
-5. Jeśli chcesz, aby zlecenia pracy były automatycznie usuwane z puli zleceń pracy, wybierz wartość tak w przycisku **Usuń relację zlecenia produkcyjnego**.
+12. Aby wyświetlić listę wszystkich zleceń pracy uwzględnionych w puli zleceń pracy, w okienku akcji, na karcie **Pula zleceń pracy**, w grupie **Przeglądanie powiązanej puli zleceń pracy** wybierz pozycję **Zlecenia pracy**, aby otworzyć stronę listy **Wszystkie zlecenia pracy**.
 
-6. W polu **Usuń stan cyklu życia** wybierz stan cyklu życia zamówienia pracy. Na przykład stan cyklu życia zlecenia produkcyjnego służącego do ukończenia zlecenia produkcyjnego może zostać skonfigurowany w taki sposób, aby automatycznie usuwać relacje do pul zleceń
+13. Aby obliczyć i wyświetlić obciążenie wydajności dla harmonogramu konserwacji, niezaplanowane zlecenia pracy i zaplanowane zlecenia pracy, w okienku akcji na karcie **Pula zleceń pracy** w grupie **Przeglądanie powiązanej puli zleceń pracy** wybierz opcję **Obciążenie wydajności**, co spowoduje otwarcie okna dialogowego **Obliczanie obciążenia zdolności produkcyjnych**.
 
-7. Można natychmiast rozpocząć dodawanie zleceń roboczych do puli zleceń roboczych. Na skróconej karcie **Zlecenia pracy**, należy kliknąć przycisk **Dodaj wiersz**.
+14. Aby obliczyć i wyświetlić prognozę dla pozycji (części zamiennych i innych wymaganych pozycji), które są powiązane z harmonogramem konserwacji, niezaplanowanymi zleceniami pracy i zaplanowanymi zleceniami pracy, w okienku akcji na karcie **Pula zleceń pracy** w grupie **Przeglądanie powiązanej puli zleceń pracy** wybierz opcję **Prognoza dla pozycji**, co spowoduje otwarcie okna dialogowego **Obliczanie prognozy dla pozycji**.
 
-8. W polu **Zlecenie pracy** wybierz zlecenie pracy. Pola pokrewne są automatycznie aktualizowane.
+15. Aby wyświetlić listę zapotrzebowań na zakupy powiązanych ze wszystkimi zleceniami pracy uwzględnionmi w puli zleceń pracy, w okienku akcji na karcie **Pula zleceń pracy**, w grupie **Zaopatrzenie** wybierz pozycję **Zapotrzebowanie na zakup zlecenia pracy**, aby otworzyć stronę listy **Zapotrzebowanie na zakup zlecenia pracy**.
 
-9. Jeśli chcesz dodać więcej zleceń pracy, powtórz kroki 7-8
-
-10. W polu **porządek sortowania** można określić, czy zlecenia pracy powinny być wykonywane w określonym zamówieniu. Wstaw numery 1, 2, 3 i tak dalej, aby wskazać określoną sekwencję dla wybranych zleceń pracy.
-
-11. Kliknij przycisk **zlecenia pracy**, aby wyświetlić listę wszystkich zleceń pracy uwzględnionych w puli zleceń pracy.
-
-12. Kliknij przycisk **Obciążenie wydajności**, aby otworzyć **Obciążenie wydajności** w celu obliczenia i wyświetlenia obciążenia zdolności produkcyjnych w harmonogramie konserwacji, a nie zaplanowanych zleceń pracy i zaplanowanych zleceń pracy.
-
-13. Kliknij przycisk **Prognoza dla pozycji**, aby otworzyć **Prognoza dla pozycji** i wyświetlić prognozy dla towarów (części zamienne i inne wymagane towary) związane z harmonogramem obsługi, niezaplanowanymi zleceniami produkcyjnymi i zaplanowanymi zleceniami produkcyjnymi.
-
-14. Kliknij przycisk **Zapotrzebowanie na zakup zlecenia pracy**, aby otworzyć listę **Zapotrzebowanie na zakup zlecenia pracy** w celu wyświetlenia listy zapotrzebowań zakupu związanych z zleceniami roboczymi w puli zleceń pracy.
-
-15. Kliknij przycisk **Zapotrzebowanie na zakup zlecenia pracy**, aby otworzyć listę **Zapotrzebowanie na zakup zlecenia pracy** w celu wyświetlenia listy zamówień zakupu związanych z zleceniami roboczymi w puli zleceń pracy.
+16. Aby wyświetlić listę zamówień zakupu na zakupy powiązanych ze wszystkimi zleceniami pracy uwzględnionmi w puli zleceń pracy, w okienku akcji na karcie **Pula zleceń pracy**, w grupie **Zaopatrzenie** wybierz pozycję **Zakup zlecenia pracy**, aby otworzyć stronę listy **Zakup zlecenia pracy**.
 
 >[!NOTE]
->Jeśli pula zleceń roboczych nie jest już odpowiednia dla planowania pracy, należy w widoku listy **Pula zleceń pracy** skonfigurować pole wyboru **aktywne** dla tej puli na wartość nie
+>Jeśli pula zleceń roboczych nie jest już odpowiednia dla planowania pracy, należy ustawić opcję **Aktywne** jako **Nie** na widoku listy na stronie **Pula zleceń pracy**.
 
-Zaznacz pole **Usuń relacje zlecenia pracy**, jeśli chcesz usunąć wszystkie wiersze zlecenia, na przykład w celu utworzenia pustej puli, którą można później używać w innych zleceniach produkcyjnych. Pamiętaj, aby wyczyścić **Usuń relacje zlecenia pracy**, jeśli chcesz użyć puli zleceń roboczych do późniejszego utworzenia relacji zleceń
+Aby usunąć wszystkie wiersze zlecenia pracownika, należy określić opcję **Usuń relacje zleceń pracy** jako wartość **Tak**. Ta opcja jest przydatna na przykład wtedy, gdy trzeba utworzyć pustą pulę, której można później użyć w przypadku innych zleceń pracy. Pamiętaj, aby ustawić opcję **Usuń relacje zlecenia pracy** na wartość **Nie**, jeśli chcesz użyć puli zleceń pracy do późniejszego utworzenia nowych relacji zleceń pracy.
 
+Na poniższej ilustracji przedstawiono przykład strony listy **Pula zleceń pracy**.
 
 ![Rysunek 1](media/22-work-orders.png)
 
 
-## <a name="add-work-order-to-a-work-order-pool"></a>Dodaj zlecenie pracy do puli zleceń pracy
+## <a name="add-a-work-order-to-a-work-order-pool"></a>Dodaj zlecenie pracy do puli zleceń pracy
 
-Jak opisano w sekcji powyżej, podczas tworzenia puli można dodawać zlecenia produkcyjne do puli zleceń pracy. Można również dodać zlecenie pracy do puli zleceń pracy z jednej z list **Wszystkie zlecenia pracy**.
+Jak opisano w poprzednij sekcji, podczas tworzenia puli można dodawać zlecenia pracy do puli zleceń pracy. Można również dodawać zlecenia pracy do puli zleceń pracy na stronie listy **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
-1. Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
+1. Wybierz zlecenie pracy, a następnie w okienku akcji na karcie **Zlecenie pracy**, w grupie **Zarządzaj** wybierz pozycję **Pula zleceń pracy**.
 
 2. Wybierz zlecenie pracy z listy i kliknij przycisk **Pula zleceń pracy.**
 
-3. Wybierz opcję „Dodaj” w **Dodaj/Usuń**.
+3. W oknie dialogowym **Obsługa puli zleceń pracy**, w polu **Dodaj/Usuń** wybierz opcję **Dodaj**.
 
-4. Wybierz pulę zleceń pracy w polu **Pula**.
+4. W polu **Pula** wybierz pulę zleceń pracy.
 
 5. Kliknij przycisk **OK**.
 
-6. Po dodaniu zlecenia pracy do puli zleceń pracy, jeśli zlecenie ma zostać umieszczone w konkretnej kolejności w puli: Otwórz jedną z stron listy pul zleceń, wybierz pulę i kliknij przycisk **Edytuj**i dostosuj kolejność sortowania zleceń pracy w puli w formularzu **Pula zleceń roboczych** > karta skrócona **Zlecenia pracy** > pole **Porządek sortowania**.
+6. Aby umieścić zlecenie pracy dodane w określonym zleceniu w puli zleceń pracy, na stronie listy **Wszystkie pule zleceń pracy** lub **Aktywne pule zleceń pracy** wybierz pulę, a następnie wybierz opcję **Edytuj**. Następnie na stronie **Pula zleceń pracy** na skróconej karcie **Zlecenia pracy** za pomocą pola **Porządek sortowania** można dostosowć kolejność sortowania zleceń pracy uwzględnionych w puli.
 
-Jeśli chcesz usunąć wybrane zlecenie pracy z puli zleceń pracy, wybierz opcję „Usuń” w kroku 3.
+Jeśli chcesz usunąć wybrane zlecenie pracy z puli zleceń pracy, powtórz te kroki, ale wybierając opcję **Usuń** w kroku 3.
 

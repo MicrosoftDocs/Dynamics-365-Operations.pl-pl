@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a1e9ead5a10b3f4e8bb989dd35936945afaf3f29
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e86f087a1df0f133dbaa5491cf5ba9e57b0e12d9
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179417"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551733"
 ---
-# <a name="access-rights-of-a-cost-object-controller"></a>Prawa dostępu kontrolera obiektów kosztów
+# <a name="define-access-rights-for-cost-object-controllers"></a>Definiowanie uprawnień dostępu kontrolerów obiektów kosztów
 
 [!include [banner](../includes/banner.md)]
 

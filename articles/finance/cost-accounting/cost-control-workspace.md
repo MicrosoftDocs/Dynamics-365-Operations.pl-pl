@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 82eb312d534a43d48be2dabbf9f9ae3e32545bac
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 30229992151e6b7a34de7c10e266ecdd5ba2f7b7
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187988"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551756"
 ---
-# <a name="cost-control-overview"></a>Omówienie obszaru roboczego Kontrola kosztów 
+# <a name="cost-control-workspace"></a>Obszar roboczy kontroli kosztów 
 
 [!include [banner](../includes/banner.md)]
 

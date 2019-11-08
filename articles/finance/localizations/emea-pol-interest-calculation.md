@@ -15,14 +15,14 @@ ms.search.region: Poland
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0ed18388e9e82cad39f9d0e8443cdbe7bdb004b1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: baf6e3807193c208b634b1cb36007e5dde132393
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183842"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2552348"
 ---
-# <a name="tax-interest-and-free-hand-interest"></a>Odsetki podatkowe i rynkowe
+# <a name="tax-interest-and-free-hand-interest-for-poland"></a>Odsetki podatkowe i rynkowe w Polsce
 
 [!include[banner](../includes/banner.md)]
 

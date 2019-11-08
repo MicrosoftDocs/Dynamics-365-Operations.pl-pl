@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c22137ad29bf947bc7a9e4c9a4d1332e03b1298
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 1e3fc0e8cb5c9a6cc7729dfbddd5d918a1d6bdb5
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606971"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653378"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Ulepszenia funkcji księgowania zestawień
 
@@ -37,7 +37,7 @@ Domyślnie podczas instalowania programu Finance and Operations 7.3.2 jest w nim
 
 Po włączeniu nowego klucza konfiguracji **Zestawienia handlu detalicznego** jest dostępny nowy element menu o nazwie **Zestawienia handlu detalicznego**. Ten element menu umożliwia ręczne tworzenie, obliczanie i księgowanie zestawień. Każde zestawienie, które powoduje błąd podczas używania procesu księgowania wsadowego, będzie również dostępne w tym elemencie menu. (Gdy jest włączony klucz konfiguracji **Zestawienia handlu detalicznego (starsze)**, ten element menu nosi nazwę **Otwórz zestawienia**).
 
-Program Finance and Operations zawiera następujące mechanizmy sprawdzania poprawności, które dotyczą tych kluczy konfiguracji:
+Retail zawiera następujące mechanizmy sprawdzania poprawności, które dotyczą tych kluczy konfiguracji:
 
 - Oba klucze konfiguracji nie mogą być włączone w tym samym czasie.
 - Ten sam klucz konfiguracji musi być używany do wszystkich operacji wykonywanych na danym zestawieniu podczas jego całego cyklu (tworzenie, obliczanie, czyszczenie, księgowanie itd.). Na przykład nie można utworzyć i obliczyć zestawienia przy włączonym kluczu konfiguracji **Zestawienia handlu detalicznego (starsze)**, a następnie próbować zaksięgować to samo zestawienie przy włączonym kluczu konfiguracji **Zestawienia handlu detalicznego** .

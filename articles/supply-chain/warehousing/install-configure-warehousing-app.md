@@ -1,6 +1,6 @@
 ---
-title: Omówienie instalowania i konfiguracji aplikacji magazynu
-description: W tym temacie opisano sposób instalowania i konfigurowania programu Dynamics 365 Supply Chain Management — aplikacja Magazynowanie.
+title: Omówienie instalowania i konfiguracji aplikacji Magazynowanie
+description: W tym temacie opisano sposób instalowania i konfigurowania aplikacji Dynamics 365 for Finance and Operations — Magazynowanie.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 07/25/2019
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b8eb8dee88d8664391d2dcf485dff9dee4722cac
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
+ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251507"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2548975"
 ---
-# <a name="install-and-configure-the-warehousing-app-overview"></a>Omówienie instalowania i konfiguracji aplikacji magazynu
+# <a name="install-and-configure-the-warehousing-app-overview"></a>Omówienie instalowania i konfiguracji aplikacji Magazynowanie
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "2251507"
 > W tym temacie opisano sposób konfigurowania modułu zarządzania magazynem dla wdrożeń w chmurze. Jeśli szukasz opisu sposobu konfigurowania modułu zarządzania magazynem dla wdrożeń lokalnych, zapoznaj się z tematem [Magazynowanie we wdrożeniach lokalnych](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 
-W tym temacie opisano sposób instalowania i konfigurowania programu Dynamics 365 Supply Chain Management — aplikacja Magazynowanie.
+W tym temacie opisano sposób instalowania i konfigurowania aplikacji Dynamics 365 for Finance and Operations — Magazynowanie.
 
 Aplikacja do magazynowania jest dostępna w sklepie Google Play i sklepie Windows. Dla bieżącej wersji Dynamics 365 Supply Chain Management ta aplikacja jest udostępniana jako autonomiczny składnik, co oznacza konieczność samodzielnej instalacji na urządzeniach używanych do prac magazynowych. Aby korzystać z aplikacji w swoim środowisku Finance and Operations, należy pobrać aplikację do każdego urządzenia i skonfigurować ją do łączenia się ze środowiskiem Supply Chain Management. W tym temacie opisano sposób instalowania aplikacji na urządzeniach. Wyjaśniono również, jak skonfigurować aplikację, aby się łączyła ze środowiskiem Supply Chain Management.
 

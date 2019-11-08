@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6ecdece43b9d609e70e385dc5c3ec70b82f582ab
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249977"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653678"
 ---
 # <a name="routes-and-operations"></a>Marszruty i operacje
 
@@ -35,7 +35,7 @@ Ten temat zawiera informacje o marszrutach i operacjach. Marszruta definiuje pro
 <a name="overview"></a>Przegląd
 --------
 
-Marszruta opisuje kolejność operacji niezbędnych w celu wytworzenia produktu lub wariantu produktu. Dla każdej operacji marszruta definiuje również wymagane zasoby operacyjne, czas potrzebny na przezbrojenie i wykonanie operacji oraz sposób obliczania kosztów. Można użyć tej samej marszruty do wytwarzania wielu produktów lub zdefiniować unikatową marszrutę dla każdego produktu lub wariantu produktu. Można nawet mieć wiele marszrut dla tego samego produktu. W takim przypadku używana marszruta zmienia się i zależy od czynników takich jak ilość, która musi zostać wyprodukowana. Definicja marszruty w programie Finance and Operations składa się z czterech oddzielnych elementów, które wspólnie opisują proces produkcji:
+Marszruta opisuje kolejność operacji niezbędnych w celu wytworzenia produktu lub wariantu produktu. Dla każdej operacji marszruta definiuje również wymagane zasoby operacyjne, czas potrzebny na przezbrojenie i wykonanie operacji oraz sposób obliczania kosztów. Można użyć tej samej marszruty do wytwarzania wielu produktów lub zdefiniować unikatową marszrutę dla każdego produktu lub wariantu produktu. Można nawet mieć wiele marszrut dla tego samego produktu. W takim przypadku używana marszruta zmienia się i zależy od czynników takich jak ilość, która musi zostać wyprodukowana. Definicja marszruty w Supply Chain Management składa się z czterech oddzielnych elementów, które wspólnie opisują proces produkcji:
 
 -   **Marszruta** — Marszruta definiuje strukturę procesu produkcji. Innymi słowy definiuje kolejność operacji.
 -   **Operacja** — Operacja identyfikuje nazwany krok w marszrucie, taki jak **Montaż**. Ta sama operacja może wystąpić w wielu marszrutach i mieć różne numery operacji.

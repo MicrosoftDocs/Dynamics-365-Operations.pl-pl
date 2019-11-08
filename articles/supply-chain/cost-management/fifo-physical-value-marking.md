@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c24ce4dab179f439521c22e196b0b190821bc60f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 735f2d3d2f95185e886321c043cebcb6692fe8b1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561417"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570847"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO z wartością fizyczną i oznaczeniami
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Pierwszy na wejściu — pierwszy na wyjściu (First in, first out; FIFO) to model magazynu, w którym wcześniejsze nabycia są wydawane w pierwszej kolejności. Finansowo zaktualizowane elementy z magazynu są rozliczane z pierwszymi finansowo zaktualizowanymi przychodami do magazynu, na podstawie daty finansowej transakcji magazynowej. 
 
@@ -54,7 +52,9 @@ W tym przykładzie FIFO grupa modelu towaru nie jest oznaczona i nie zawiera war
 -   5b. Finansowe wydanie z magazynu ilości równej 1 o jednostkowym koszcie własnym równym 20,00 zł (średnia krocząca transakcji zaktualizowanych finansowo).
 -   6. Wykonywane jest zamknięcie magazynu. Zgodnie z metodą FIFO, pierwszy finansowo zaktualizowany rozchód będzie rozliczony z pierwszym finansowo zaktualizowanym przychodem. Dla transakcji wydania zostaje dokonana korekta równa 10,00 USD.
 
-Nowy średni bieżący koszt własny odzwierciedla średnią finansowo zaktualizowanych transakcji. Poniższe ilustracje pokazują efekty modelu magazynu FIFO na tę serię transakcji, gdy opcja **Włącz wartość fizyczną** nie jest używana. ![Model FIFO bez uwzględniania wartości fizycznej](./media/fifowithoutincludephysicalvalue.gif) 
+Nowy średni bieżący koszt własny odzwierciedla średnią finansowo zaktualizowanych transakcji. Poniższe ilustracje pokazują efekty modelu magazynu FIFO na tę serię transakcji, gdy opcja **Włącz wartość fizyczną** nie jest używana. 
+
+![Model FIFO bez uwzględniania wartości fizycznej](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 
@@ -84,7 +84,9 @@ Jeśli pole wyboru **Włącz wartość fizyczną** jest zaznaczone dla towaru na
 -   6a. Fizyczny rozchód magazynowy w ilości 1 i po koszcie własnym 21,25 USD.
 -   7. Wykonywane jest zamknięcie magazynu. Zgodnie z metodą FIFO, finansowa transakcja rozchodu będzie skorygowana lub rozliczona z pierwszym zaktualizowanym przychodem, finansowym lub fizycznym.
 
-Transakcja 5b będzie rozliczona z transakcją przychodu 1b. Wystąpi korekta kwoty 11,25 USD dla tej transakcji rozchodu. Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. Poniższa ilustracja pokazuje efekty modelu magazynu FIFO na tę serię transakcji, gdy używana jest opcja **Włącz wartość fizyczną**. ![Model FIFO z uwzględnianiem wartości fizycznej](./media/fifowithincludephysicalvalue.gif) 
+Transakcja 5b będzie rozliczona z transakcją przychodu 1b. Wystąpi korekta kwoty 11,25 USD dla tej transakcji rozchodu. Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. Poniższa ilustracja pokazuje efekty modelu magazynu FIFO na tę serię transakcji, gdy używana jest opcja **Włącz wartość fizyczną**. 
+
+![Model FIFO z uwzględnianiem wartości fizycznej](./media/fifowithincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 
@@ -114,7 +116,9 @@ Oznaczanie to proces, który pozwala połączyć (oznaczyć) transakcję wydania
 -   6a. Fizyczny rozchód magazynowy w ilości 1 i po koszcie własnym 21,25 USD.
 -   7. Wykonywane jest zamknięcie magazynu. Finansowo zaktualizowana transakcja FIFO została przypisana do istniejącego przychodu magazynowego, obie transakcje są zatem rozliczane względem siebie i nie ma miejsca żadna korekta.
 
-Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. Poniższa ilustracja pokazuje wpływ modelu magazynowego FIFO na tę serię transakcji, jeśli używane są oznaczenia między przychodem i rozchodem. ![Model FIFO z oznaczaniem](./media/fifowithmarking.gif) 
+Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. Poniższa ilustracja pokazuje wpływ modelu magazynowego FIFO na tę serię transakcji, jeśli używane są oznaczenia między przychodem i rozchodem. 
+
+![Model FIFO z oznaczaniem](./media/fifowithmarking.gif) 
 
 **Objaśnienie wykresu**
 

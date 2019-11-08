@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0e795e641314b4ef81f8972aadf597721995fcc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0714314b68651e4b96f83d1073c4e35f5b27b013
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186539"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551640"
 ---
-# <a name="general-ledger-overview"></a>Omówienie księgi głównej
+# <a name="general-ledger-and-financial-reporting-overview"></a>Księga główna i omówienieraportów finansowych
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,7 +59,7 @@ Przejdź do [Informacji o wersji Microsoft Dynamics 365](https://go.microsoft.co
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje możesz znaleźć na blogu [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) i [Microsoft Dynamics 365 Finance and Operations - blogu finansowym](https://community.dynamics.com/365/financeandoperations/b/financials).
+Opinie, wiadomości i inne informacje możesz znaleźć w [Microsoft Dynamics blogu usługi 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz blogu finansowym [Microsoft Dynamics 365 Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 143cd51a3ea34a6b05da049d87819b3dfee95725
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b40f9a5677fd5375d7a19a75400d4305a8850392
+ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181526"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564944"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurowanie importu danych z programu SharePoint
 
@@ -62,9 +62,9 @@ Odtwórz przewodniki po zadaniach **ER Importowanie danych z pliku programu Micr
 > Format na potrzeby importowania transakcji dostawcy jest zaznaczony jako domyślne mapowanie modelu. Dlatego po uruchomieniu mapowania modelu **Model płatności 1099”**, jeśli to mapowanie modelu jest typu **Do lokalizacji docelowej**, mapowanie modelu uruchamia ten format, aby importować dane z plików zewnętrznych. Następnie używa tych danych do aktualizowania tabel aplikacji.
 
 ## <a name="configure-access-to-sharepoint-for-file-storage"></a>Konfigurowanie dostępu do witryny programu SharePoint do przechowywania plików
-Aby zapisywać pliki raportów elektronicznych w lokalizacji programu SharePoint, należy skonfigurować dostęp do wystąpienia programu SharePoint Server używanego przez bieżącą firmę. W tym przykładzie firmą jest USMF. Aby uzyskać instrukcje, zobacz [Konfigurowanie magazynu SharePoint](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+Aby zapisywać pliki raportów elektronicznych w lokalizacji programu SharePoint, należy skonfigurować dostęp do wystąpienia programu SharePoint Server używanego przez bieżącą firmę. W tym przykładzie firmą jest USMF. Aby uzyskać instrukcje, zobacz [Konfigurowanie magazynu SharePoint](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-1. Wykonaj kroki opisane w temacie [Konfigurowanie magazynu SharePoint](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+1. Wykonaj kroki opisane w temacie [Konfigurowanie magazynu SharePoint](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 2. Otwórz skonfigurowaną witrynę programu SharePoint.
 3. Utwórz następujące foldery do magazynowania przychodzących plików raportów elektronicznych.
 
@@ -80,7 +80,7 @@ Aby zapisywać pliki raportów elektronicznych w lokalizacji programu SharePoint
     - Folder plików z błędami — ten folder jest przeznaczony na pliki zaimportowane z błędami.
 
 4. Wybierz kolejno opcje **Administrowanie organizacją > Zarządzanie dokumentami > Typy dokumentów**.
-5. Utwórz następujące typy dokumentów, które będą używane do uzyskiwania dostępu do folderów programu SharePoint, które zostały właśnie utworzone. Aby uzyskać instrukcje, zobacz [Konfigurowanie typów dokumentów](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
+5. Utwórz następujące typy dokumentów, które będą używane do uzyskiwania dostępu do folderów programu SharePoint, które zostały właśnie utworzone. Aby uzyskać instrukcje, zobacz [Konfigurowanie typów dokumentów](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
 
 |Typ dokumentu        | Grupa              | Lokalizacja      | Folder programu SharePoint      |
 |--------------------|--------------------|---------------|------------------------|

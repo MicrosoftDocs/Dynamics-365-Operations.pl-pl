@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d3a2de4aa1a49eaef43fca385033dd2bab4c9849
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 9af92ea64b98581b02c2ed1797332281dccc74b3
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2277973"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553028"
 ---
 # <a name="available-mobile-workspaces"></a>Dostępne mobilne obszary robocze
 
@@ -34,11 +34,11 @@ W tym temacie wymieniono listę mobilnych obszarów roboczych, których można u
 |[Firmowa książka adresowa](company-directory-mobile-workspace.md)| Umożliwia wyświetlanie danych i kontaktowanie się z innymi pracownikami w organizacji.| 2017 czerwca |    
 |[Mój zespół](manager-self-service-mobile-workspace.md)| Umożliwia wyświetlanie informacji o bezpośrednich podwładnych i pracownikach na dalszych szczeblach podwładności, a także wysyłanie pochwał osobom w łańcuchach relacji służbowych.|2017 czerwca |     
 |[Zatwierdzenie faktury](invoice-approval-mobile-workspace.md)| Wyświetla listę faktur, które zostały Ci przypisane przez proces przepływu pracy nagłówków faktur od dostawców.| 2017 czerwca   |
-| [Zarządzanie wydatkami](../../financials/expense-management/expense-management-mobile-workspace.md) | Pozwala rejestrować i przekazywać paragony, dzięki czemu można je później dołączać do raportów z wydatków. Ponadto w tym mobilnym obszarze roboczym można szybko tworzyć wiersze wydatków za pomocą dołączonych paragonów. | 2017 kwietnia |
-| [Zatwierdzenie zamówienia zakupu](../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Umożliwia wyświetlanie i reagowanie na zamówienia zakupu poprzez akcje takie jak zatwierdzenie lub odrzucenie. | 2017 kwietnia |
-| [Wpis czasu projektu](../../financials/project-management/project-time-entry-mobile-workspace.md) | Umożliwia wprowadzanie i zapisywanie czasu względem projektu za pomocą ich urządzeń przenośnych. | 2017 marca |
-| [Kontrola kosztów](../../financials/cost-accounting/cost-controlling-mobile-workspace.md)     | Menedżerowie centrów kosztów mają podgląd na działanie podległych im centrów.                                                                                               |  2017 stycznia        |
-| [Dostępne zapasy](../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Pozwala uzyskać wgląd w zapasy zarezerwowane i dostępne.                                                                                                    |   2017 stycznia       |
-| [Zamówienia sprzedaży](../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Pozwala być na bieżąco z zamówieniami sprzedaży.                                                                                                                          |  2017 stycznia                  |
-| [Portal współpracy z dostawcami](../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Dostawcy mogą być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych. |2017 stycznia    |
-| [Zarządzanie składnikami majątku](../../supply-chain/procurement/asset-management-mobile-workspace.md) | Ten obszar roboczy umożliwia użytkownikom wyświetlanie i tworzenie żądań konserwacji i zleceń pracy. Użytkownicy mogą również wyświetlać przypisane zadania dotyczące zleceń pracy w widoku kalendarza lub listy. Można również wyświetlać i wyszukiwać zasoby i lokalizacje czynności konserwacyjnych. |2019 października    |
+| [Zarządzanie wydatkami](../../../finance/expense-management/expense-management-mobile-workspace.md) | Pozwala rejestrować i przekazywać paragony, dzięki czemu można je później dołączać do raportów z wydatków. Ponadto w tym mobilnym obszarze roboczym można szybko tworzyć wiersze wydatków za pomocą dołączonych paragonów. | 2017 kwietnia |
+| [Zatwierdzenie zamówienia zakupu](../../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Umożliwia wyświetlanie i reagowanie na zamówienia zakupu poprzez akcje takie jak zatwierdzenie lub odrzucenie. | 2017 kwietnia |
+| [Wpis czasu projektu](../../../finance/project-management/project-time-entry-mobile-workspace.md) | Umożliwia wprowadzanie i zapisywanie czasu względem projektu za pomocą ich urządzeń przenośnych. | 2017 marca |
+| [Kontrola kosztów](../../../finance/cost-accounting/cost-controlling-mobile-workspace.md)     | Menedżerowie centrów kosztów mają podgląd na działanie podległych im centrów.                                                                                               |  2017 stycznia        |
+| [Dostępne zapasy](../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Pozwala uzyskać wgląd w zapasy zarezerwowane i dostępne.                                                                                                    |   2017 stycznia       |
+| [Zamówienia sprzedaży](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Pozwala być na bieżąco z zamówieniami sprzedaży.                                                                                                                          |  2017 stycznia                  |
+| [Portal współpracy z dostawcami](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Dostawcy mogą być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych. |2017 stycznia    |
+| [Zarządzanie składnikami majątku](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | Ten obszar roboczy umożliwia użytkownikom wyświetlanie i tworzenie żądań konserwacji i zleceń pracy. Użytkownicy mogą również wyświetlać przypisane zadania dotyczące zleceń pracy w widoku kalendarza lub listy. Można również wyświetlać i wyszukiwać zasoby i lokalizacje czynności konserwacyjnych. |2019 października    |

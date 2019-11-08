@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8f4658696a2e6c2959b87aa852c25c108b9ba302
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 1776220766984339c7c289f7b55252fb0c0bb2a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024851"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570663"
 ---
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Konfigurowanie obrazów w aplikacji Retail Modern POS (MPOS) i zarządzanie nimi
 
@@ -83,9 +83,7 @@ W poniższych procedurach obrazy są konfigurowane dla jednostki katalogu jako p
     [![Okno dialogowe obrazów](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
-> Możesz użyć tej samej procedury dla wszystkich pięciu obsługiwanych jednostek: Pracownik, Odbiorca, Katalog, Kategoria i Produkty. „Produkty katalogu” (produkty, które są ustawione na poziomie katalogu) i „Produkty kanału” (produkty, które są ustawione na poziomie kanału) używają szablonu multimediów ustawionego dla jednostki Produkty. W przypadku szablonu multimediów produktów można wybrać liczbę wyświetlanych obrazów dla każdego produktu. Można również ustawić domyślny obraz dla danego produktu. W ten sposób można zapobiec wyświetlaniu pustych obrazów w MPOS i kontrolować, które obrazy będą używane jako domyślne dla produktu. W poniższym przykładzie każdy produkt ma pięć obrazów, a pierwszy obraz jest ustawiony jako domyślny. Produkty z wariantami są traktowane w taki sam sposób jak produkty główne. Nazwa pliku dla pliku obrazu powinna opierać się na numerze produktu. Niektóre znaki są również usuwane, gdy generowana jest nazwa pliku. Dlatego warto sprawdzić nazwę pliku w sekcji **generowanie adresów URL obrazu dla programu Excel**.
->
-> [![Okno dialogowe definiowania szablonu nośnika](./media/prods.png)](./media/prods.png)
+> Możesz użyć tej samej procedury dla wszystkich pięciu obsługiwanych jednostek: Pracownik, Odbiorca, Katalog, Kategoria i Produkty. „Produkty katalogu” (produkty, które są ustawione na poziomie katalogu) i „Produkty kanału” (produkty, które są ustawione na poziomie kanału) używają szablonu multimediów ustawionego dla jednostki Produkty. W przypadku szablonu multimediów produktów można wybrać liczbę wyświetlanych obrazów dla każdego produktu. Można również ustawić domyślny obraz dla danego produktu. W ten sposób można zapobiec wyświetlaniu pustych obrazów w MPOS i kontrolować, które obrazy będą używane jako domyślne dla produktu. W poniższym przykładzie każdy produkt ma pięć obrazów, a pierwszy obraz jest ustawiony jako domyślny. Produkty z wariantami są traktowane w taki sam sposób jak produkty główne. Nazwa pliku dla pliku obrazu powinna opierać się na numerze produktu. Niektóre znaki są również usuwane, gdy generowana jest nazwa pliku. Dlatego warto sprawdzić nazwę pliku w sekcji **generowanie adresów URL obrazu dla programu Excel**. Zapoznaj się z sekcją [Zastępowanie za pomocą edycji w programie Excel](#overwrite-by-using-edit-in-excel) w dalszej części tego artykułu.
 
 ## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a>Zadania synchronizacji do wysyłania szablonu multimediów do kanału
 
@@ -110,8 +108,6 @@ Jak wiesz z poprzedniej sekcji, szablon multimediów dla danej jednostki obsług
 
     > [!IMPORTANT]
     > Po każdej zmianie szablonu multimediów należy kliknąć opcję **generowania** przed użyciem edycji programu Excel.
-
-    [![Skrócona karta generowania adresów URL obrazów dla programu Excel](./media/excel1.jpg)](./media/excel1.jpg)
 
     Teraz można wyświetlić podgląd adresów URL obrazów wygenerowanych na podstawie ostatnio zapisanej wersji szablonu multimediów.
 

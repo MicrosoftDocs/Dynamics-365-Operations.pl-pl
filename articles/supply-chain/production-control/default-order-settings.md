@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e6d4e9a3ac5635e292b20eba60fe4f010562fdba
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d13aabfb36e8af4a32de8bc8949e8b164075532a
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250102"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570709"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Domyślne ustawienia zamówienia dla wymiarów i wariantów produktu
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Domyślne ustawienia zamówień w Dynamics 365 Supply Chain Management definiują: oddział i magazyn, skąd towary będą pobierane lub gdzie będą przechowywane; ilości minimalne, maksymalne, wielokrotne i standardowe, które będą używane do handlu lub zarządzania zapasami; czasy realizacji; flagę blokady; metodę tworzenia zobowiązań zamówień. Domyślne ustawienia zamówień są stosowane przy tworzeniu zamówień zakupu, zamówień sprzedaży, zamówień przeniesienia i arkuszy magazynowych oraz w planowaniu głównym do generowania zamówień planowanych. Domyślne ustawienia zamówień mogą być specyficzne dla towaru, oddziału, wariantu produktu lub wymiaru produktu.
 

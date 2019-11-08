@@ -3,7 +3,7 @@ title: Raport zlecenia pracy
 description: W tym temacie opisano raporty zlecenia pracy w module Zarządzanie składnikami majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,41 +16,38 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d2843a57aad7cc8525a689d4643875970849e31
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 6eb5c5156898fc826376ae35745ff4a7451d00c6
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875833"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626392"
 ---
 # <a name="work-order-report"></a>Raport zlecenia pracy
 
-
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
+Istnieje możliwość wygenerowania raportu zlecenia pracy, który pokazuje szczegółowe informacje o jednym lub więcej zleniach pracy, które są wybrane.
 
-Istnieje możliwość wygenerowania raportu zlecenia pracy, który pokazuje szczegółowe informacje o zleceniu pracy. Istnieje możliwość wybrania jednego lub kilku zleceń pracy, które mają być wyświetlane w raporcie.
+1. Wybierz **Zarządzanie składnikami majątku** > **Raporty** > **Zlecenia pracy** > **Raport zlecenia pracy**.
 
-1. Kliknij kolejno **Zarządzanie składnikami majątku** > **Reporty** > **Zlecenia pracy** > **Raport zlecenia pracy**.
-
-2. Aby określić szczegóły, które mają zostać uwzględnione w raporcie, należy wybrać opcję „tak"/"nie” na przycisku przełączania i wypełnić pola w razie potrzeby  
-  a. Sekcja **ustawienia drukowania** umożliwia określenie, czy załączniki mają być uwzględniane w konfiguracji odpowiedniego typu zadania konserwacji na druku.
+2. Aby określić szczegóły, które są wymagane, należy wybrać opcję „tak"/"nie” na przycisku przełączania i wypełnić pola w razie potrzeby.  
+    - Sekcja **Ustawienia drukowania** umożliwia określenie, czy załączniki mają być uwzględniane w konfiguracji odpowiedniego typu zadania konserwacji na druku.
 
 3. Na skróconej karcie **Rekordy do uwzględnienia** można odfiltrować zawartość raportu według **Zlecenia pracy**.
 
-4. W razie potrzeby można skonfigurować generowanie raportu zlecenia pracy jako zadanie wsadowe, wypełniając pola na skróconej karcie **Uruchom w tle**.
+4. Na skróconej karcie **Uruchom w tle** można skonfigurować generowanie raportu zlecenia pracy jako zadanie wsadowe, zgodnie z żądaniem.
 
 5. Kliknij przycisk **OK**. Raport zostanie wygenerowany.
 
-Poniżej zamieszczono przykładowy sposób konfiguracji parametrów oraz powiązanego raportu zamówienia pracy.
+Na poniższej ilustracji przedstawiono przykład konfiguracji parametrów raportu.
 
 ![Rysunek 1](media/20-work-orders.png)
 
+Na poniższej ilustracji pokazano przykład raportu dotyczącego zlecenia pracy, który jest generowany na podstawie tej konfiguracji.
 
 ![Rysunek 2](media/21-work-orders.png)
-
 

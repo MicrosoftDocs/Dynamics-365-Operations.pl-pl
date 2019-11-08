@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 366dc2be6e35098dba4b26a34bb75a84913549f5
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8f2e95e74bbc8d78ed5d970f29b61150a45c6740
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008577"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551571"
 ---
-# <a name="source-candidates-with-linkedin-recruiter"></a>Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter
+# <a name="source-candidates-with-linkedin-recruiter-in-microsoft-dynamics-365-talent---attract"></a>Pozyskiwanie kandydatów za pomocą LinkedIn Recruiter w Microsoft Dynamics 365 Talent - Attract
 [!include[banner](../includes/banner.md)]
 
 LinkedIn to największa na świecie sieć profesjonalistów w trybie online, która daje dostęp do talentów na świecie. Microsoft Dynamics 365 Talent: Attract pozwala na pozyskiwanie kandydatów bezpośrednio z serwisu LinkedIn. Dzięki temu łatwiej niż kiedykolwiek można znaleźć talent, który wypełni otwarte stanowisko. Po skonfigurowaniu połączenia z usługą LinkedIn za pomocą Attract można przejrzeć potencjalnych kandydatów serwisu LinkedIn w odniesieniu do stanowisk i wyeksportować ich do Attract za pomocą jednego kliknięcia.

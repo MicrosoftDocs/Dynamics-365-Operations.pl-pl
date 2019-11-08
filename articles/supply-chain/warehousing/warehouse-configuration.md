@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05f8a71dde998abccc75bc962636f9eb04d7e8c2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026723"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653425"
 ---
 # <a name="warehouse-configuration-overview"></a>Omówienie konfiguracji magazynu
 
@@ -34,7 +34,7 @@ W tym artykule wyjaśniono sposób konfigurowania magazynu. Artykuł zawiera inf
 **Uwaga:** Ten artykuł dotyczy funkcji zaawansowanego zarządzania magazynem w module **Zarządzanie magazynem**. Nie ma zastosowania do funkcji w module **Zarządzanie zapasami**.
 
 ## <a name="warehouse-layout"></a>Układ magazynu
-System zarządzania magazynem w Finance and Operations zapewnia elastyczne metody definiowania układu magazynu do zaspokojenia zmieniających się potrzeb, dzięki czemu można uzyskać optymalną wydajność magazynu.
+System zarządzania magazynem w Supply Chain Management zapewnia elastyczne metody definiowania układu magazynu do zaspokojenia zmieniających się potrzeb, dzięki czemu można uzyskać optymalną wydajność magazynu.
 
 -   Istnieje możliwość ustalenia obszarów magazynowych o wysokim priorytecie i niskim priorytecie dla optymalnego umieszczenia towarów.
 -   Magazyn można podzielić na strefy, aby spełniał różne wymagania przechowywania, takie jak wymagania w zakresie temperatury lub różnych współczynników obrotu dla towarów.
@@ -42,7 +42,7 @@ System zarządzania magazynem w Finance and Operations zapewnia elastyczne metod
 -   Lokalizacje można grupować przy użyciu ustawień ograniczenia fizycznych możliwości.
 -   Można kontrolować sposób przechowywania i pobierania towarów na podstawie reguł zdefiniowanych w kwerendzie.
 
-Aby użyć zarządzania magazynem w programie Finance and Operations, należy utworzyć magazyn i uaktywnić bardziej zaawansowane lub wyspecjalizowane działania związane z obsługą magazynu. Na stronie **Magazyny** wybierz opcję **Użyj procesów zarządzania magazynami**.
+Aby użyć zarządzania magazynem w Supply Chain Management, należy utworzyć magazyn i uaktywnić bardziej zaawansowane lub wyspecjalizowane działania związane z obsługą magazynu. Na stronie **Magazyny** wybierz opcję **Użyj procesów zarządzania magazynami**.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Grupy stref, strefy, typy lokalizacji i lokalizacje
 
@@ -54,7 +54,7 @@ W ramach procesu włączania układu magazynu należy zdefiniować grupy strefy 
 -   **Typy lokalizacji** — logiczne lub fizyczne grupowanie lokalizacji magazynu. Na przykład, można utworzyć typ lokalizacji dla wszystkich lokalizacji tymczasowych. Wymagane ustawienia na stronie **Parametry zarządzania magazynem** ułatwiają proces definiowania typów lokalizacji pośredniej i typów lokalizacji końcowej.
 -   **Lokalizacje** — najniższy poziom informacji o lokalizacji. Lokalizacje są używane do śledzenia, które dostępne zapasy są przechowywane i pobierane w magazynie.
 
-Jednostki utworzone w celu zdefiniowania układu magazynu są używane w kwerendach ustawionych w szablonach pracy w celu uruchomienia zleceń w magazynie. Dlatego podczas definiowania stref, typów lokalizacji itd. należy wziąć pod uwagę jak różne obszary w magazynie są używane dla różnych procesów. Ponadto należy wziąć pod uwagę czynniki, takie jak fizyczne charakterystyki określonego obszaru. Na przykład mogą być obszary, w których można używać tylko określonego typu wózków widłowych. Lub jeśli firma ma zarówno produkcję, jak i wyroby gotowe w obrębie tego samego obiektu, może być pomocne utworzenie jednego magazynu w programie Finance and Operations, ale następnie oddzielenie tych dwóch funkcji poprzez utworzenie dwóch grup stref. Nadaj jednostkom opisowe nazwy, aby łatwo je identyfikować, gdy będzie trzeba ich użyć w zapytaniach szablonu.
+Jednostki utworzone w celu zdefiniowania układu magazynu są używane w kwerendach ustawionych w szablonach pracy w celu uruchomienia zleceń w magazynie. Dlatego podczas definiowania stref, typów lokalizacji itd. należy wziąć pod uwagę jak różne obszary w magazynie są używane dla różnych procesów. Ponadto należy wziąć pod uwagę czynniki, takie jak fizyczne charakterystyki określonego obszaru. Na przykład mogą być obszary, w których można używać tylko określonego typu wózków widłowych. Lub jeśli firma ma zarówno produkcję, jak i wyroby gotowe w obrębie tego samego obiektu, może być pomocne utworzenie jednego magazynu w Supply Chain Management, ale następnie oddzielenie tych dwóch funkcji poprzez utworzenie dwóch grup stref. Nadaj jednostkom opisowe nazwy, aby łatwo je identyfikować, gdy będzie trzeba ich użyć w zapytaniach szablonu.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Limity składowania w lokalizacji, profile lokalizacji i stałe lokalizacje pobrania
 

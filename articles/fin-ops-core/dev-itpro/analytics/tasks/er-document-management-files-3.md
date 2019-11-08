@@ -1,5 +1,5 @@
 ---
-title: Tworzenie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych raportowania elektronicznego
+title: ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 3 — tworzenie formatu)
 description: W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego, aby w danych wyjściowych raportowania elektronicznego używać plików zarządzania danymi.
 author: NickSelin
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05c0c4a38f34774e7018504c5e3fab834a2ec1b1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 618fabc96bdfeb0c2b577aa686702d9f1257ed70
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182538"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550724"
 ---
-# <a name="er-use-document-management-files-in-format-outputs-part-3-create-format"></a>ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 3: Tworzenie formatu)
+# <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a>ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 3 — tworzenie formatu)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -3,7 +3,7 @@ title: Fakturowanie projektu
 description: Ten artykuł zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d91f6b1ccc3254e2c04d24c5f9bf2014c64e50
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179478"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658627"
 ---
 # <a name="project-invoicing"></a>Fakturowanie projektu
 
@@ -55,6 +55,9 @@ Propozycje faktur mogą zostać utworzone dla następujących transakcji:
 -   Kwoty, które zostały cofnięte przez odbiorców na poprzednich fakturach projektu
 -   Faktury korygujące
 -   Kwoty, które zostały zapłacone przez odbiorcę przed rozpoczęciem projektu
+
+> [!NOTE]
+> Funkcja **Włącz sortowanie wg zasobów podczas tworzenia** propozycji faktur projektu umożliwia sortowanie transakcji projektów dostępnych do rozliczeń według zasobów podczas tworzenia nowej propozycji faktury projektu. Siatka wyświetlająca dostępne transakcje projektu będzie mieć oddzielne pole dla Identyfikatora zasobu i Zasobu, co pozwoli użytkownikowi na filtrowanie i sortowanie nazwy zasobu. Ta funkcja jest domyślnie wyłączona i można ją włączyć w **Obszary robocze > Zarządzanie funkcjami**. Aby uzyskać pomoc w włączaniu tej funkcji, skontaktuj się z administratorem systemu.
 
 Można utworzyć w propozycji faktury transakcje opłat. Można także modyfikować ceny sprzedaży dla godzin, wydatków, towarów i transakcji opłat. Podczas księgowania propozycji faktury, zaktualizowane ceny i transakcje są dodawane do raportów projektu i historii transakcji. 
 

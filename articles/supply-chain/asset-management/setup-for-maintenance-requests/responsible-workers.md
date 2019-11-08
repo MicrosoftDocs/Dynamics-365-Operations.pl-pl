@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 432a235668bbd969f497003a98b7f66390e5308f
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 63f436ffd01ac56bb4bc0021e226dad46d7c3377
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790528"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569922"
 ---
 # <a name="responsible-maintenance-workers"></a>Odpowiedzialni konserwatorzy
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Odpowiedzialni konserwatorzy mogą być powiązani z typami składników majątku, składnikami majątku, lokalizacjami czynności konserwacyjnych, kategoriami typów zadań konserwacji, typami zadań konserwacji, wariantami typów zadań konserwacji oraz profesjami. Mogą oni być używane na zleceniach pracy i żądaniach konserwacyjnych w celu wskazania preferencji odnośnie do konserwatorów, którzy powinni być odpowiedzialni za zlecenie pracy. (Jednak konserwatorzy nie są koniecznie tymi samymi pracownikami, którzy mają zamiar wykonać zlecenie pracy). Użycie tej funkcji jest opcjonalne. Można na przykład wybrać w ten sposób odpowiedzialnych konserwatorów lub grupy pracowników do konkretnych typów pracy lub obszarów pracy.
 
@@ -53,4 +53,4 @@ Aby można było skonfigurować odpowiedzialnych konserwatorów, należy skonfig
 
 Na poniższej ilustracji pokazano przykład strony **Odpowiedzialni konserwatorzy**.
 
-![Rysunek 1](media/08-setup-for-requests.png)
+![Strona Odpowiedzialni konserwatorzy](media/08-setup-for-requests.png)

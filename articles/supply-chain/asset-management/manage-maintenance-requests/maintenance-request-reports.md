@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5f1860907e3cc3c4830cc385771d5924c609ea6
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: 0734416eccf149330b390cce897d2c254f6c698b
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847535"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571629"
 ---
 # <a name="maintenance-request-reports"></a>Raporty żądania konserwacji
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 W module Zarządzanie składnikami majątku można wygenerować dwa raporty, które są związane z żądaniami konserwacji. Jeden raport pokazuje szczegóły, a drugi raport zawiera listę, która może służyć do planowania i prowadzenia kolejnych czynności.
 
@@ -44,7 +44,7 @@ Raport **Szczegóły żądania konserwacji** zawiera różne informacje związan
 
 Na poniższej ilustracji pokazano przykład raportu **Szczegóły żądania konserwacji**.
 
-![Rysunek 1](media/09-manage-maintenance-requests.png)
+![Raport szczegółów żądania konserwacji](media/09-manage-maintenance-requests.png)
 
 ## <a name="create-a-maintenance-request-list-report"></a>Tworzenie raportu Lista żądań konserwacji
 
@@ -57,4 +57,4 @@ Raport **Lista żądań konserwacji** zawiera listę wszystkich żądań konserw
 
 Na poniższej ilustracji przedstawiono przykładowy raport **Lista żądań konserwacji** dla wszystkich aktywnych żądań konserwacji.
 
-![Rysunek 2](media/10-manage-maintenance-requests.png)
+![Raport listy żądania konserwacji](media/10-manage-maintenance-requests.png)

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 56d4abee451e6e22b9b9cc2fd36a13648202e7df
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: b19a92924d73847d9d2c09cd0ed111a9cbfdccbf
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847443"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571652"
 ---
 # <a name="maintenance-requests"></a>Żądania konserwacji
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Żądania konserwacji to notatki lub deklaracje utworzone w celu powiadamiania menedżera lub planisty, że składnik majątku może wymagać zadania konserwacji lub naprawy, ale bez tworzenia zlecenia pracy. Jeśli zawartość żądania konserwacji zostanie zweryfikowana i jej ważność zostanie potwierdzona, można następnie utworzyć zlecenie pracy na podstawie żądania konserwacji.
 
@@ -45,7 +45,7 @@ ms.locfileid: "1847443"
 
 Aby wyświetlić żądania konserwacji, wybierz **Zarządzanie składnikami majątku** \> **Wspólne** \> **Żądania konserwacji** \> **Wszystkie żądania konserwacji**, **Aktywne żądania konserwacji** lub **Żądania konserwacji w moich lokalizacjach czynności konserwacyjnych**. Każda strona listy pokazuje wybrane informacje związane z żądaniem konserwacji.
 
-![Rysunek 1](media/01-manage-maintenance-requests.png)
+![Przeglądanie żądań konserwacji](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Strona listy **Moje żądania konserwacji obsługi lokalizacji czynności konserwacyjnych** służy do wyświetlania listy żądań konserwacji, które zawierają lokalizacje czynności konserwacyjnych, które są powiązane z pracownikiem lub składnikami majątku zainstalowanymi w lokalizacjach czynności konserwacyjnych, które są związane z pracownikiem. (Aby uzyskać informacje na temat konfiguracji lokalizacji czynności konserwacyjnych w odniesieniu do konserwatorów, zobacz temat [Konserwatorzy i grupy pracowników](../setup-for-objects/workers-and-worker-groups.md)).
@@ -54,7 +54,7 @@ Aby wyświetlić żądania konserwacji, wybierz **Zarządzanie składnikami maj�
 
 Aby otworzyć widok szczegółów rekordu, na stronie listy **Wszystkie żądania konserwacji** w widoku siatki wybierz łącze w kolumnie **Żądanie konserwacji**.
 
-![Rysunek 2](media/02-manage-maintenance-requests.png)
+![Zobacz szczegóły dotyczące żądania konserwacji](media/02-manage-maintenance-requests.png)
 
 Przyciski w okienku akcji są zorganizowane na kartach. Poniższa tabela zawiera krótkie opisy przycisków związanych z zarządzaniem składnikami majątku.
 

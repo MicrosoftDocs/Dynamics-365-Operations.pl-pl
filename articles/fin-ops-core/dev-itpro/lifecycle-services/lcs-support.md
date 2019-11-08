@@ -3,7 +3,7 @@ title: Uzyskiwanie pomocy technicznej dotyczącej aplikacji Finance and Operatio
 description: W tym artykule opisano, jak uzyskać pomoc dotyczącą aplikacji Finance and Operations lub usługi Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af4cbbd0f594b07e791d6ab7a5ac4dc58b97e1de
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: c36adc1f754c918a9fdf8410572f3199cdb63766
+ms.sourcegitcommit: e16b8c248fc2c2a60dc7b803320f942a35b443c5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537057"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2577503"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Uzyskiwanie pomocy technicznej dotyczącej aplikacji Finance and Operations lub usługi Lifecycle Services (LCS)
 
@@ -91,5 +91,5 @@ W razie pytań technicznych związanych z logowaniem i uzyskiwaniem dostępu do 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 - [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 Retail](../../../retail/retail-support.md)
 - [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 Talent](../../../talent/talent-support.md)
-- Aby uzyskać więcej informacji na temat ofert pomocy technicznej dla systemu Microsoft Dynamics, zobacz [Pomoc techniczna online do systemu Microsoft Dynamics](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
+- Aby uzyskać więcej informacji na temat ofert pomocy technicznej usługi Microsoft Dynamics, zobacz [Zarządzanie rozwiązaniami dotyczącymi pomocy technicznej aplikacji Finance and Operations](cloud-powered-support-lcs.md)
 

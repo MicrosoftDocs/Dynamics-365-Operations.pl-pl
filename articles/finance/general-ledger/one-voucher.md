@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 2b755dcfbcdf41ada0302fc04f527ce7c309f4bb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186401"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553194"
 ---
 # <a name="one-voucher"></a>Pojedynczy załącznik
 
@@ -51,7 +51,7 @@ Istniejąca funkcjonalność arkuszy finansowych (arkusza finansowego, arkusza �
 
 ## <a name="issues-with-one-voucher"></a>Problemy z pojedynczym załącznikiem
 
-Funkcja pojedynczego załącznika powoduje problemy podczas rozliczania, obliczania podatku, wycofywania transakcji, uzgadniania księgi podrzędnej z księgą główną, sprawozdawczości finansowej itd. (Aby uzyskać więcej informacji o problemach, które mogą wystąpić podczas rozliczania, zobacz na przykład [Jeden załącznik z wieloma rekordami odbiorców lub dostawców](https://docs.microsoft.com/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records)). Do prawidłowego działania i sprawozdawczości te procesy i raporty wymagają szczegółów transakcji. Mimo iż przy odpowiedniej konfiguracji w organizacji niektóre scenariusze nadal mogą działać prawidłowo, często występują problemy przy wprowadzaniu wielu transakcji do jednego załącznika.
+Funkcja pojedynczego załącznika powoduje problemy podczas rozliczania, obliczania podatku, wycofywania transakcji, uzgadniania księgi podrzędnej z księgą główną, sprawozdawczości finansowej itd. (Aby uzyskać więcej informacji o problemach, które mogą wystąpić podczas rozliczania, zobacz na przykład [Jeden załącznik z wieloma rekordami odbiorców lub dostawców](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records)). Do prawidłowego działania i sprawozdawczości te procesy i raporty wymagają szczegółów transakcji. Mimo iż przy odpowiedniej konfiguracji w organizacji niektóre scenariusze nadal mogą działać prawidłowo, często występują problemy przy wprowadzaniu wielu transakcji do jednego załącznika.
 
 Przypuśćmy na przykład, że księgujesz następujący załącznik wielowierszowy.
 

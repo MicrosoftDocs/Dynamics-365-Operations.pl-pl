@@ -17,18 +17,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b7f5d61ade071e75d53d5036a47fea438d8afbe6
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 33e5993f57a8c0248ac2e314f91cc40a2b355858
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249432"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653471"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobilny obszar roboczy Zatwierdzenie zamówienia zakupu
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Zatwierdzenie zamówienia zakupu**. W tym obszarze roboczym można wyświetlać zamówienia zakupu i reagować na niej poprzez różne akcje. Można na przykład zatwierdzić lub odrzucić zamówienie zakupu.
  
@@ -41,7 +39,7 @@ Mobilny obszar roboczy **Zatwierdzenie zamówienia zakupu** pozwala łatwo wyśw
 Wymagania wstępne różnią się w zależności od wersji programu Supply Chain Management wdrożonej w organizacji.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Warunki wstępne, jeśli jest używane Supply Chain Management 
-Jeśli w organizacji wdrożono rozwiązanie Finance and Operations, administrator systemu musi opublikować mobilny obszar roboczy **Zatwierdzenie zamówienia zakupu**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Jeśli w organizacji wdrożono rozwiązanie Supply Chain Management, administrator systemu musi opublikować mobilny obszar roboczy **Zatwierdzenie zamówienia zakupu**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
 Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą, administrator systemu musi wykonać następujące zadania wstępne. 

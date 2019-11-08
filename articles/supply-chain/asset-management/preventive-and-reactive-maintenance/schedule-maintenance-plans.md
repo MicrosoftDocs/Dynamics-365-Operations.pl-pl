@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 698888533bf503838f455585f61cc7afc7239b05
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: b9efd5bccdccf6ea19b105f3518bb2ef35ec857e
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922052"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571284"
 ---
 # <a name="schedule-maintenance-plans"></a>Planowanie planów konserwacji
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Planowanie planowania konserwacji powoduje generowanie wpisów kalendarza dla środków trwałych na podstawie planów eksploatacji ustawionych dla składników majątku. Wpisy kalendarza można planować na podstawie wybranych planów obsługi, typów składników majątku oraz składników majątku.
 

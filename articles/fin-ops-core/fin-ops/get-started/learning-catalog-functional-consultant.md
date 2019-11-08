@@ -1,5 +1,5 @@
 ---
-title: Konsultant ds. szkolenia funkcjonalnego — katalog
+title: Konsultant ds. zastosowania funkcjonalnego — katalog
 description: W tym temacie opisano funkcje przeznaczone do wspomagania użytkowników z różnymi niepełnosprawnościami w używaniu Dynamics 365 for Finance and Operations, Dynamics 365 for Retail i Dynamics 365 for Talent.
 author: margoc
 manager: AnnBe
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 712a8e4d63803f0d9a7a3a76978c2e14ecd997af
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5405b65eac595b078733211bbfd28acb4829e5df
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180606"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550987"
 ---
 # <a name="functional-application-consultant-learning-catalog"></a>Konsultant ds. zastosowania funkcjonalnego — katalog
 
