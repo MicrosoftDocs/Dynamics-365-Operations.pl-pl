@@ -3,7 +3,7 @@ title: Przerwa konserwacyjna
 description: W tym temacie opisano przerwy konserwacyjne w module Zarządzanie składnikami majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/23/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,40 +16,39 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc79dc1b5911679586fa560142ada5add1a881d2
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: ad9f1b2a0e63b4fb0d6daceb451c3a1dc1ec7de7
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918251"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626162"
 ---
 # <a name="maintenance-downtime"></a>Przerwa konserwacyjna
 
-
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-Można utworzyć rejestracje przestojów podczas obsługi dla środka trwałego wybranego w zleceniu pracy. Jest to przydatne w przypadku rejestrowania przestojów konserwacyjnych na co najmniej jednej maszynie w obszarze produkcji. Najpierw należy utworzyć kody przyczyn przestojów, które mają być używane, na przykład podział i planowany zatrzymywanie. W tym celu należy wykonać czynności związane z **kodami przyczyn przerw konserwacyjnych**. Następnie można utworzyć rejestracje **Przerw konserwacyjnych** i dodać odpowiednie kody przyczyn.
+Można utworzyć rejestracje przestojów podczas obsługi dla środka trwałego wybranego w zleceniu pracy. Ta możliwość jest przydatna w przypadku rejestrowania przerw konserwacyjnych na co najmniej jednej maszynie w obszarze produkcji. Najpierw należy utworzyć kody przyczyn przerw konserwacyjnych, które mają być używane, na przykład **Awaria** i **Planowane zatrzymywanie**. W tym celu należy wykonać czynności ze strony **Kody przyczyn przerw konserwacyjnych**. Następnie można utworzyć rejestracje przerw konserwacyjnych na stronie **Przerwa konserwacyjna** i dodać odpowiednie kody przyczyn przerw konserwacyjnych.
 
 ## <a name="create-maintenance-downtime-reason-codes"></a>Stwórz kody przyczyny przerwy konserwacyjnej
 
-1. Kliknij **Zarządzanie składnikami majątku** > **Ustawienia** > **Zlecenia pracy** > **Kody przyczyny przerwy konserwacyjnej**.
+1. Wybierz **Zarządzanie składnikami majątku** > **Ustawienia** > **Zlecenia pracy** > **Kody przyczyny przerwy konserwacyjnej**.
 
-2. Kliknij przycisk **Nowy**.
+2. Wybierz pozycję **Nowy**.
 
-3. Wstaw identyfikator w polu kod **Kod przyczyny przerwy konserwacyjnej**.
+3. W polu **Kod przyczyny przerwy konserwacyjnej** wprowadź identyfikator dla kodu przyczyny przerwy konserwacyjnej.
 
-4. Wstaw nazwę kodu przyczyny w polu **Nazwa**.
+4. W polu **Nazwa** wprowadź nazwę.
 
-5. Zaznacz pole **KPI uwzględniają**, jeśli kod przyczyny ma być uwzględniony w obliczeniach wskaźnika KPI składnika aktywów. Na ogół planowane zatrzymania produkcji nie powinny być uwzględniane w obliczeniach wskaźników KPI, ponieważ nie wpływają one na oczekiwaną wydajność.
+5. Zaznacz pole wyboru **KPI uwzględniają**, jeśli kod przyczyny ma być uwzględniony w obliczeniach kluczowych wskaźników wydajności (KPI) dla składnika majątku. Na ogół planowane zatrzymania produkcji nie powinny być uwzględniane w obliczeniach wskaźników KPI, ponieważ nie wpływają one na oczekiwaną wydajność.
 
-6. Kliknij przycisk **Zapisz**.
+6. Wybierz opcję **Zapisz**.
+
+Na poniższej ilustracji pokazano przykład strony **Kody przyczyny przerwy konserwacyjnej**.
 
 ![Rysunek 1](media/15-work-orders.png)
-
 
 Po utworzeniu kodów przyczyny przestojów, które mają być używane, można utworzyć rejestracje przestojów związanych z obsługą zleceń i składników majątku.
 
@@ -58,35 +57,34 @@ Po utworzeniu kodów przyczyny przestojów, które mają być używane, można u
 
 1. Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
-2. Wybierz zlecenie pracy z listy i kliknij przycisk **Przerwa konserwacyjna.**
+2. Wybierz zlecenie produkcyjne, a następnie na karcie **Zlecenie pracy**, w grupie **Składnik majątku** wybierz pozycję **Przerwa konserwacyjna**.
 
-3. Kliknij przycisk **Nowy**.
+3. Wybierz pozycję **Nowy**.
 
-4. Umożliwia wstawienie daty i interwału czasu dla rejestracji przerw konserwacyjnych w polach **Od** i **Do**.
+4. W polach **Od** i **Do** wstaw datę i interwał czasu dla rejestracji przerw konserwacyjnych.
 
-5. Po opuszczeniu pola **do** pole czas trwania w godzinach jest automatycznie wstawiany w polu **Czas trwania**.
+>[!NOTE]
+>Po opuszczeniu pola **do** pole czas trwania w godzinach jest automatycznie wstawiany w polu **Czas trwania**.
 
-6. Wstaw kod przyczyny w polu **Kod przyczyny przerwy konserwacyjnej**.
+5. Wybierz kod przyczyny w polu **Kod przyczyny przerwy konserwacyjnej**.
 
-7. Jeśli chcesz dodać więcej rejestracji, powtórz kroki 3-6
+6. Powtórz kroki od 3 do 5, aby dodać więcej rejestracji.
 
-8. Kliknij przycisk **Zapisz**.
+7. Wybierz opcję **Zapisz**.
 
+Na poniższej ilustracji pokazano przykład rejestracji przerwy konserwacyjnej.
 
 ![Rysunek 2](media/16-work-orders.png)
 
-
-Kalendarz używany do obliczania rejestracji przestojów związanych z obsługą zależy od wyboru dokonanego w konfiguracji środków trwałych i parametrów. Jeśli zasób jest wybrany dla składnika majątku **Wszystkie składniki majątku** > **Środek trwały** karta skrócona > **Zasób**, zostanie użyty kalendarz skonfigurowany dla skojarzonej grupy zasobów, co pokazano na poniższym rysunku.
+Kalendarz używany do obliczania rejestracji przerw konserwacyjnych związanych z obsługą zależy od wyboru dokonanego w konfiguracji składników majątku i parametrów. Jeśli zasób jest wybrany dla składnika majątku w polu **Zasób**, na karcie skróconej **Środek trwały** na stronie **Wszystkie składniki majątku** zostanie użyty kalendarz skonfigurowany dla skojarzonej grupy zasobów, co pokazano na poniższym rysunku.
 
 ![Rysunek 3](media/17-work-orders.png)
 
-
-Jeśli składnik majątku nie jest powiązany z zasobem, zostanie użyty standardowy kalendarz wybrany w polu **Parametry zarządzania składnikami majątku** jak pokazano poniżej.
+Jeśli składnik majątku nie jest powiązany z zasobem, zostanie użyty standardowy kalendarz wybrany na stronie **Parametry zarządzania składnikami majątku** jak pokazano na ilustracji poniżej.
 
 ![Rysunek 4](media/18-work-orders.png)
 
-
-Kliknij **Ustawień zarządzania składnikami majątku** > **Zapytania** > **Przerwa konserwacyjna** , aby wyświetlić przegląd wszystkich rejestracji przestojów związanych z konserwacją.
+Kliknij **Zarządzanie składnikami majątku** > **Zapytania** > **Przerwa konserwacyjna** , aby wyświetlić przegląd wszystkich rejestracji przerw konserwacyjnych.
 
 >[!NOTE]
 >Wszystkie kalendarze używane w module **Zarządzanie składnikami majątku** są konfigurowane w **Administrowanie organizacją** > **Ustawienia** > **Kalendarze** > **Kalendarze**.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 956c866a6b39e2a81f085910e00d2bfe8683829c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179479"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658651"
 ---
 # <a name="mobile-invoice-approvals"></a>Zatwierdzanie faktur na urządzeniach przenośnych
 
@@ -138,13 +138,19 @@ Jako ogólną wskazówkę należy pamiętać, aby podczas pracy w projektancie �
 
 Pierwszą stroną środowiska mobilnego, jaką należy zaprojektować, jest lista faktur przypisanych użytkownikowi w celu weryfikacji. Aby zaprojektować tę stronę dla urządzeń przenośnych, użyj strony **VendMobileInvoiceAssignedToMeListPage** strony. Przed wykonaniem tej procedury upewnij się, że co najmniej jedna faktura od dostawcy jest Ci przypisana do weryfikacji, a wiersz tej faktury ma dwie dystrybucje. Ta konfiguracja spełnia wymagania tego scenariusza.
 
-1.  W adresie URL zastąp nazwę elementu menu wyrażeniem **VendMobileInvoiceAssignedToMeListPage**, aby otwierać mobilną wersję strony listy **Oczekujące faktury od dostawcy — przypisane do mnie** w module **rozrachunków z dostawcami**. W zależności od liczby faktur, które zostały w systemie przypisane do Ciebie, na tej stronie będą wyświetlane te faktury. Aby znaleźć konkretną fakturę, możesz użyć filtru z lewej strony. Jednak w tym przykładzie nie potrzebujemy konkretnej faktury. Musisz mieć tylko przypisaną jakąś fakturę, co umożliwi Ci projektowanie strony mobilnej. Nowe strony, które są dostępne, zostały zaprojektowane specjalnie do tworzenia scenariuszy mobilnych dla faktur od dostawców. W związku z tym należy używać tych stron. Adres URL powinien przypominać poniższy adres URL, a po jego wprowadzeniu musi zostać wyświetlona strona przedstawiona na rysunku: https://&lt;TwójadresURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Strona Oczekujące faktury od dostawcy — przypisane do mnie](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  W adresie URL zastąp nazwę elementu menu wyrażeniem **VendMobileInvoiceAssignedToMeListPage**, aby otwierać mobilną wersję strony listy **Oczekujące faktury od dostawcy — przypisane do mnie** w module **rozrachunków z dostawcami**. W zależności od liczby faktur, które zostały w systemie przypisane do Ciebie, na tej stronie będą wyświetlane te faktury. Aby znaleźć konkretną fakturę, możesz użyć filtru z lewej strony. Jednak w tym przykładzie nie potrzebujemy konkretnej faktury. Musisz mieć tylko przypisaną jakąś fakturę, co umożliwi Ci projektowanie strony mobilnej. Nowe strony, które są dostępne, zostały zaprojektowane specjalnie do tworzenia scenariuszy mobilnych dla faktur od dostawców. W związku z tym należy używać tych stron. Adres URL powinien przypominać poniższy adres URL, a po jego wprowadzeniu musi zostać wyświetlona strona przedstawiona na rysunku: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
+
+    [![Strona Oczekujące faktury od dostawcy — przypisane do mnie](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    
 2.  Kliknij przycisk **Ustawienia** (koło zębate) w prawym górnym rogu strony, a następnie kliknij opcję **Aplikacja mobilna**.
 3.  Zaznacz swój obszar roboczy i kliknij przycisk **Edytuj**.
 4.  Kliknij przycisk **Dodaj stronę**, aby utworzyć pierwszą stronę dla urządzeń przenośnych.
 5.  Wprowadź nazwę, taką jak **Moje faktury od dostawców**, oraz opis, taki jak **Faktury od dostawców przypisane mi do weryfikacji**.
 6.  Kliknij przycisk **Gotowe**.
-7.  W projektancie środowiska komórkowego na karcie **Pola** kliknij przycisk **Wybierz pola**. Kolumny na stronie listy muszą przypominać te na ilustracji poniżej. [![Kolumny na stronie Oczekujące faktury od dostawcy — przypisane do mnie](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+7.  W projektancie środowiska komórkowego na karcie **Pola** kliknij przycisk **Wybierz pola**. Kolumny na stronie listy muszą przypominać te na ilustracji poniżej. 
+
+    [![Kolumny na stronie Oczekujące faktury od dostawcy — przypisane do mnie](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    
 8.  Ze strony listy dodaj wymagane kolumny, które muszą być wyświetlane użytkownikom na stronie dla urządzeń komórkowych. Kolejność dodawania będzie kolejnością, w jakiej pola będą wyświetlane użytkownikowi końcowemu. Jedynym sposobem zmiany kolejności pól będzie ponowne wybranie wszystkich pól. Zgodnie z wymaganiami tego scenariusza wymaganych jest osiem poniższych pól. Jednak niektórzy użytkownicy mogą uznawać, że osiem pól to zbyt wiele informacji na urządzeniu przenośnym. W związku z tym w widoku listy dla urządzeń przenośnych przedstawimy tylko najważniejsze pola. Pozostałe pola będą wyświetlane w widoku szczegółów, który zaprojektujemy później. Na razie dodamy pola wymienione poniżej. Kliknij znak plusa (**+**) w tych kolumnach, aby dodać je do strony komórkowej.
     - Nazwa dostawcy
     - Suma faktury
@@ -152,8 +158,10 @@ Pierwszą stroną środowiska mobilnego, jaką należy zaprojektować, jest list
     - Numer faktury
     - Data faktury
 
-    Po dodaniu pól strona środowiska komórkowego musi przypominać ilustrację poniżej. 
-    [![Strona po dodaniu pól](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+  Po dodaniu pól strona środowiska komórkowego musi przypominać ilustrację poniżej. 
+    
+   [![Strona po dodaniu pól](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+
 9.  Należy także dodać następujące kolumny teraz, aby umożliwić obsługę akcji przepływu pracy później.
     - Pokaż zadanie ukończenia
     - Pokaż zadanie delegowania
@@ -169,16 +177,26 @@ Pierwszą stroną środowiska mobilnego, jaką należy zaprojektować, jest list
 
 ### <a name="vendor-invoice-details"></a>Szczegóły faktur od dostawców
 
-Aby zaprojektować stronę szczegółów faktur dla urządzeń przenośnych, użyj strony **VendMobileInvoiceHeaderDetails**. Należy zauważyć, że w zależności od liczby faktur istniejących w systemie ta strona pokazuje najstarszą fakturę (tzn. tę, która została utworzona jako pierwsza). Aby znaleźć konkretną fakturę, możesz użyć filtru z lewej strony. Jednak w tym przykładzie nie potrzebujemy konkretnej faktury. Potrzebujemy po prostu jakichś danych faktury, aby móc zaprojektować stronę dla urządzeń przenośnych. [![Strona przepływu pracy](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+Aby zaprojektować stronę szczegółów faktur dla urządzeń przenośnych, użyj strony **VendMobileInvoiceHeaderDetails**. Należy zauważyć, że w zależności od liczby faktur istniejących w systemie ta strona pokazuje najstarszą fakturę (tzn. tę, która została utworzona jako pierwsza). Aby znaleźć konkretną fakturę, możesz użyć filtru z lewej strony. Jednak w tym przykładzie nie potrzebujemy konkretnej faktury. Potrzebujemy po prostu jakichś danych faktury, aby móc zaprojektować stronę dla urządzeń przenośnych. 
+
+[![Strona przepływu pracy](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. W adresie URL zastąp nazwę elementu menu wyrażeniem **VendMobileInvoiceHeaderDetails**, aby otworzyć formularz.
+
 2. Otwórz projektanta środowiska komórkowego za pomocą przycisku **Ustawienia** (koło zębate).
+
 3. Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym.
+
 4. Zaznacz utworzoną wcześniej stronę **Moje faktury od dostawców** i kliknij przycisk **Edytuj**.
+
 5. Na karcie **Pola** kliknij nagłówek kolumny **Siatka**.
+
 6. Kliknij kolejno opcje **Właściwości &gt; Dodaj stronę**. **Uwaga:** Po kliknięciu nagłówka **Siatka** i dodaniu strony automatycznie jest ustanawiana relacja ze stroną szczegółów.
+
 7. Wprowadź tytuł strony, taki jak **Szczegóły faktury**, oraz opis, taki jak **Wyświetlanie nagłówka i szczegółów wiersza faktury**.
+
 8. Kliknij przycisk **Wybierz pola**. Pamiętaj, że kolejność dodawania będzie kolejnością, w jakiej pola będą wyświetlane użytkownikowi końcowemu. Jedynym sposobem zmiany kolejności pól będzie ponowne wybranie wszystkich pól. 
+
 9. Zgodnie z wymaganiami tego scenariusza dodaj następujące pola z nagłówka:
    - Nazwa dostawcy
    - Suma faktury
@@ -197,9 +215,13 @@ Aby zaprojektować stronę szczegółów faktur dla urządzeń przenośnych, uż
     - Wartość 1099
 
 11. Po dodaniu wszystkich pól z dwóch poprzednich kroków kliknij przycisk **Gotowe**. Strona musi przypominać tę na ilustracji poniżej.
+    
     [![Strona po dodaniu pól](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+
 12. Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
+
 13. Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
+
 14. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
 ### <a name="workflow-actions"></a>Akcje przepływu pracy
@@ -295,12 +317,19 @@ Aby dodać akcje przepływu pracy użyj strony **VendMobileInvoiceHeaderDetails*
 ### <a name="vendor-invoice-attachments"></a>Załączniki faktur od dostawców
 
 1. Kliknij przycisk **Ustawienia** (koło zębate) w prawym górnym rogu strony, a następnie kliknij opcję **Aplikacja mobilna**.
+
 2. Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym.
+
 3. Zaznacz utworzoną wcześniej stronę <strong>Szczegóły faktury** i kliknij przycisk **Edytuj</strong>.
+
 4. Ustaw w opcji **Zarządzanie dokumentami** wartość **Tak**, jak pokazano poniżej. **Uwaga:** Jeśli nie ma żadnego wymogu wyświetlania załączników na urządzeniu przenośnym, można pozostawić tę opcję ustawioną na **Nie**, co jest ustawieniem domyślnym.
+   
    ![Zarządzanie dokumentami](./media/docmanagement-216x300.png)
+
 5. Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
+
 6. Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
+
 7. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
 ### <a name="vendor-invoice-line-distributions"></a>Dystrybucje wierszy faktury od dostawcy
@@ -311,12 +340,19 @@ Wymagania dotyczące tego scenariusza potwierdzają, że będzie tylko dystrybuc
 > Znajomość wymagań pomaga nam zdecydować, której konkretnej strony należy użyć i jak dokładnie zoptymalizować komórkowe środowisko obsługi dla użytkownika podczas projektowania scenariusza. W drugim scenariuszu użyjemy innej strony do pokazania dystrybucji, ponieważ wymagania w tym scenariuszu się różnią.
 
 1.  W adresie URL zastąp nazwę elementu menu tak jak poprzednio. Wyświetlona strona powinna przypominać tę na poniższej ilustracji.
+
 [![Strona wszystkich dystrybucji](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+
 2.  Otwórz projektanta środowiska komórkowego za pomocą przycisku **Ustawienia** (koło zębate).
+
 3.  Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym. **Uwaga:** Zobaczysz, że dwie nowe strony zostały utworzone automatycznie. System tworzy te strony, ponieważ w poprzedniej sekcji włączone funkcję zarządzania dokumentami. Można zignorować te nowe strony.
+
 4.  Kliknij przycisk **Dodaj stronę**.
+
 5.  Wprowadź tytuł strony, taki jak **Widok księgowania**, oraz opis, taki jak **Widok księgowania faktury**.
+
 6.  Kliknij przycisk **Gotowe**.
+
 7.  Na karcie **Pola** kliknij przycisk **Wybierz pola**, zaznacz poniższe pola na stronie dystrybucji, a następnie kliknij przycisk **Gotowe**:
     1.  Ilość
     2.  Waluta
@@ -324,8 +360,11 @@ Wymagania dotyczące tego scenariusza potwierdzają, że będzie tylko dystrybuc
 
     > [!NOTE] 
     > Nie wybraliśmy kolumny **Opis** z siatki dystrybucji, ponieważ wymagania tego scenariusza potwierdziły, że cena rozszerzona jest jedną kwotą, dla której będą istniały dystrybucje. W związku z tym użytkownik nie będzie potrzebował dodatkowego pola w celu określenia typu kwoty, dla której jest określana dystrybucja. Jednak w następnym scenariuszu **użyjemy** tych informacji, ponieważ wymagania tego scenariusza określają, że dystrybucje istnieją również dla innych typów kwot (na przykład dla podatku).
+
 8.  Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
+
 9.  Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
+
 10. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
 > [!NOTE] 
