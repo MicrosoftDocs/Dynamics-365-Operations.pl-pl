@@ -18,118 +18,118 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 48c90a8b776cc16804de8e20ada7d8ca347fa5b9
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 78c062f9982ca7b18fa00d60928089d09a5d552d
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874746"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570962"
 ---
-# <a name="fault-management"></a><span data-ttu-id="6440c-103">Zarządzanie usterkami</span><span class="sxs-lookup"><span data-stu-id="6440c-103">Fault management</span></span>
+# <a name="fault-management"></a><span data-ttu-id="fcd90-103">Zarządzanie usterkami</span><span class="sxs-lookup"><span data-stu-id="fcd90-103">Fault management</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-<span data-ttu-id="6440c-104">W module Zarządzanie składnikami majątku można skorzystać z projektanta usterek, aby skonfigurować objawy usterek, obszary usterek i typy usterek w typach składników majątku.</span><span class="sxs-lookup"><span data-stu-id="6440c-104">In Asset Management, you can use the fault designer to set up fault symptoms, fault areas, and fault types on asset types.</span></span> <span data-ttu-id="6440c-105">W ten sposób można zarządzać usterkami wykrytymi w składnikach majątku.</span><span class="sxs-lookup"><span data-stu-id="6440c-105">In this way, you can manage faults that are detected on assets.</span></span> <span data-ttu-id="6440c-106">Ponadto w zleceniu pracy można rejestrować przyczyny usterek i sugestie dotyczące rozwiązania usterek.</span><span class="sxs-lookup"><span data-stu-id="6440c-106">Additionally, fault causes and suggestions for fixing faults can be registered on a work order.</span></span>
+<span data-ttu-id="fcd90-104">W module Zarządzanie składnikami majątku można skorzystać z projektanta usterek, aby skonfigurować objawy usterek, obszary usterek i typy usterek w typach składników majątku.</span><span class="sxs-lookup"><span data-stu-id="fcd90-104">In Asset Management, you can use the fault designer to set up fault symptoms, fault areas, and fault types on asset types.</span></span> <span data-ttu-id="fcd90-105">W ten sposób można zarządzać usterkami wykrytymi w składnikach majątku.</span><span class="sxs-lookup"><span data-stu-id="fcd90-105">In this way, you can manage faults that are detected on assets.</span></span> <span data-ttu-id="fcd90-106">Ponadto w zleceniu pracy można rejestrować przyczyny usterek i sugestie dotyczące rozwiązania usterek.</span><span class="sxs-lookup"><span data-stu-id="fcd90-106">Additionally, fault causes and suggestions for fixing faults can be registered on a work order.</span></span>
 
-<span data-ttu-id="6440c-107">Proces rejestracji i zarządzania usterką składa się z tych kroków.</span><span class="sxs-lookup"><span data-stu-id="6440c-107">The process for fault registration and management consists of these steps.</span></span>
+<span data-ttu-id="fcd90-107">Proces rejestracji i zarządzania usterką składa się z tych kroków.</span><span class="sxs-lookup"><span data-stu-id="fcd90-107">The process for fault registration and management consists of these steps.</span></span>
 
-1. <span data-ttu-id="6440c-108">Utwórz listę objawów usterek, obszarów usterek i typów usterek, które mogą występować w typach składników majątku.</span><span class="sxs-lookup"><span data-stu-id="6440c-108">Create a list of fault symptoms, fault areas, and fault types that might occur on your asset types.</span></span>
-2. <span data-ttu-id="6440c-109">W projektancie usterek ustaw objawy, obszary usterek i typy usterek.</span><span class="sxs-lookup"><span data-stu-id="6440c-109">In the fault designer, set up symptoms, fault areas, and fault types.</span></span>
+1. <span data-ttu-id="fcd90-108">Utwórz listę objawów usterek, obszarów usterek i typów usterek, które mogą występować w typach składników majątku.</span><span class="sxs-lookup"><span data-stu-id="fcd90-108">Create a list of fault symptoms, fault areas, and fault types that might occur on your asset types.</span></span>
+2. <span data-ttu-id="fcd90-109">W projektancie usterek ustaw objawy, obszary usterek i typy usterek.</span><span class="sxs-lookup"><span data-stu-id="fcd90-109">In the fault designer, set up symptoms, fault areas, and fault types.</span></span>
 
-<span data-ttu-id="6440c-110">Poniżej przedstawiono kilka przykładów ułatwiających zrozumienie różnicy między symptomami usterek, obszarami usterek i typami usterek.</span><span class="sxs-lookup"><span data-stu-id="6440c-110">Here are some examples to help you understand the difference between fault symptoms, fault areas, and fault types.</span></span>
+<span data-ttu-id="fcd90-110">Poniżej przedstawiono kilka przykładów ułatwiających zrozumienie różnicy między symptomami usterek, obszarami usterek i typami usterek.</span><span class="sxs-lookup"><span data-stu-id="fcd90-110">Here are some examples to help you understand the difference between fault symptoms, fault areas, and fault types.</span></span>
 
-<span data-ttu-id="6440c-111">**Objawy usterki:**</span><span class="sxs-lookup"><span data-stu-id="6440c-111">**Fault symptoms:**</span></span>
+<span data-ttu-id="fcd90-111">**Objawy usterki:**</span><span class="sxs-lookup"><span data-stu-id="fcd90-111">**Fault symptoms:**</span></span>
 
-- <span data-ttu-id="6440c-112">Niezbilansowane napięcia</span><span class="sxs-lookup"><span data-stu-id="6440c-112">Unbalanced voltages</span></span>
-- <span data-ttu-id="6440c-113">Krótki obwód</span><span class="sxs-lookup"><span data-stu-id="6440c-113">Short circuit</span></span>
-- <span data-ttu-id="6440c-114">Hałas</span><span class="sxs-lookup"><span data-stu-id="6440c-114">Noise</span></span>
-- <span data-ttu-id="6440c-115">Wyciek</span><span class="sxs-lookup"><span data-stu-id="6440c-115">Leak</span></span>
-- <span data-ttu-id="6440c-116">Wibracje</span><span class="sxs-lookup"><span data-stu-id="6440c-116">Vibrations</span></span>
+- <span data-ttu-id="fcd90-112">Niezbilansowane napięcia</span><span class="sxs-lookup"><span data-stu-id="fcd90-112">Unbalanced voltages</span></span>
+- <span data-ttu-id="fcd90-113">Krótki obwód</span><span class="sxs-lookup"><span data-stu-id="fcd90-113">Short circuit</span></span>
+- <span data-ttu-id="fcd90-114">Hałas</span><span class="sxs-lookup"><span data-stu-id="fcd90-114">Noise</span></span>
+- <span data-ttu-id="fcd90-115">Wyciek</span><span class="sxs-lookup"><span data-stu-id="fcd90-115">Leak</span></span>
+- <span data-ttu-id="fcd90-116">Wibracje</span><span class="sxs-lookup"><span data-stu-id="fcd90-116">Vibrations</span></span>
 
-<span data-ttu-id="6440c-117">**Obszary usterki:**</span><span class="sxs-lookup"><span data-stu-id="6440c-117">**Fault areas:**</span></span>
+<span data-ttu-id="fcd90-117">**Obszary usterki:**</span><span class="sxs-lookup"><span data-stu-id="fcd90-117">**Fault areas:**</span></span>
 
-- <span data-ttu-id="6440c-118">Elektryczny</span><span class="sxs-lookup"><span data-stu-id="6440c-118">Electrical</span></span>
-- <span data-ttu-id="6440c-119">Maszynowy</span><span class="sxs-lookup"><span data-stu-id="6440c-119">Mechanical</span></span>
-- <span data-ttu-id="6440c-120">Hydrauliczny</span><span class="sxs-lookup"><span data-stu-id="6440c-120">Hydraulic</span></span>
-- <span data-ttu-id="6440c-121">Pneumatyczny</span><span class="sxs-lookup"><span data-stu-id="6440c-121">Pneumatic</span></span>
+- <span data-ttu-id="fcd90-118">Elektryczny</span><span class="sxs-lookup"><span data-stu-id="fcd90-118">Electrical</span></span>
+- <span data-ttu-id="fcd90-119">Maszynowy</span><span class="sxs-lookup"><span data-stu-id="fcd90-119">Mechanical</span></span>
+- <span data-ttu-id="fcd90-120">Hydrauliczny</span><span class="sxs-lookup"><span data-stu-id="fcd90-120">Hydraulic</span></span>
+- <span data-ttu-id="fcd90-121">Pneumatyczny</span><span class="sxs-lookup"><span data-stu-id="fcd90-121">Pneumatic</span></span>
 
-<span data-ttu-id="6440c-122">**Typy usterek:**</span><span class="sxs-lookup"><span data-stu-id="6440c-122">**Fault types:**</span></span>
+<span data-ttu-id="fcd90-122">**Typy usterek:**</span><span class="sxs-lookup"><span data-stu-id="fcd90-122">**Fault types:**</span></span>
 
-- <span data-ttu-id="6440c-123">Błędne uzwojenie głównego wyciągu</span><span class="sxs-lookup"><span data-stu-id="6440c-123">Faulty main stator winding</span></span>
-- <span data-ttu-id="6440c-124">Wadliwa dioda</span><span class="sxs-lookup"><span data-stu-id="6440c-124">Faulty diode</span></span>
-- <span data-ttu-id="6440c-125">Brudne uzwojenia</span><span class="sxs-lookup"><span data-stu-id="6440c-125">Dirty windings</span></span>
-- <span data-ttu-id="6440c-126">Wadliwy generator</span><span class="sxs-lookup"><span data-stu-id="6440c-126">Defective generator</span></span>
-- <span data-ttu-id="6440c-127">Uszkodzony czujnik</span><span class="sxs-lookup"><span data-stu-id="6440c-127">Defective sensor</span></span>
+- <span data-ttu-id="fcd90-123">Błędne uzwojenie głównego wyciągu</span><span class="sxs-lookup"><span data-stu-id="fcd90-123">Faulty main stator winding</span></span>
+- <span data-ttu-id="fcd90-124">Wadliwa dioda</span><span class="sxs-lookup"><span data-stu-id="fcd90-124">Faulty diode</span></span>
+- <span data-ttu-id="fcd90-125">Brudne uzwojenia</span><span class="sxs-lookup"><span data-stu-id="fcd90-125">Dirty windings</span></span>
+- <span data-ttu-id="fcd90-126">Wadliwy generator</span><span class="sxs-lookup"><span data-stu-id="fcd90-126">Defective generator</span></span>
+- <span data-ttu-id="fcd90-127">Uszkodzony czujnik</span><span class="sxs-lookup"><span data-stu-id="fcd90-127">Defective sensor</span></span>
 
-## <a name="create-fault-symptoms"></a><span data-ttu-id="6440c-128">Utwórz objawy usterki</span><span class="sxs-lookup"><span data-stu-id="6440c-128">Create fault symptoms</span></span>
+## <a name="create-fault-symptoms"></a><span data-ttu-id="fcd90-128">Utwórz objawy usterki</span><span class="sxs-lookup"><span data-stu-id="fcd90-128">Create fault symptoms</span></span>
 
-<span data-ttu-id="6440c-129">Aby utworzyć listę objawów, które mogą być używane w projektancie usterek, należy wykonać następujące czynności.</span><span class="sxs-lookup"><span data-stu-id="6440c-129">Follow these steps to create a list of symptoms that can be used in the fault designer.</span></span>
+<span data-ttu-id="fcd90-129">Aby utworzyć listę objawów, które mogą być używane w projektancie usterek, należy wykonać następujące czynności.</span><span class="sxs-lookup"><span data-stu-id="fcd90-129">Follow these steps to create a list of symptoms that can be used in the fault designer.</span></span>
 
-1. <span data-ttu-id="6440c-130">Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Usterka** \> **Objawy usterki**.</span><span class="sxs-lookup"><span data-stu-id="6440c-130">Select **Asset management** \> **Setup** \> **Fault** \> **Fault symptoms**.</span></span>
-2. <span data-ttu-id="6440c-131">Wybierz **Nowy**, aby utworzyć rekord.</span><span class="sxs-lookup"><span data-stu-id="6440c-131">Select **New** to create a record.</span></span>
-3. <span data-ttu-id="6440c-132">W polu **Objawy usterki** wprowadź nazwę objawu usterki.</span><span class="sxs-lookup"><span data-stu-id="6440c-132">In the **Fault symptom** field, enter a name for the fault symptom.</span></span>
-4. <span data-ttu-id="6440c-133">W polu **Opis wprowadź** opis.</span><span class="sxs-lookup"><span data-stu-id="6440c-133">In the **Description** field, enter a description.</span></span>
-5. <span data-ttu-id="6440c-134">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="6440c-134">Select **Save**.</span></span>
+1. <span data-ttu-id="fcd90-130">Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Usterka** \> **Objawy usterki**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-130">Select **Asset management** \> **Setup** \> **Fault** \> **Fault symptoms**.</span></span>
+2. <span data-ttu-id="fcd90-131">Wybierz **Nowy**, aby utworzyć rekord.</span><span class="sxs-lookup"><span data-stu-id="fcd90-131">Select **New** to create a record.</span></span>
+3. <span data-ttu-id="fcd90-132">W polu **Objawy usterki** wprowadź nazwę objawu usterki.</span><span class="sxs-lookup"><span data-stu-id="fcd90-132">In the **Fault symptom** field, enter a name for the fault symptom.</span></span>
+4. <span data-ttu-id="fcd90-133">W polu **Opis wprowadź** opis.</span><span class="sxs-lookup"><span data-stu-id="fcd90-133">In the **Description** field, enter a description.</span></span>
+5. <span data-ttu-id="fcd90-134">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-134">Select **Save**.</span></span>
 
-## <a name="create-fault-areas"></a><span data-ttu-id="6440c-135">Tworzenie obszarów usterek</span><span class="sxs-lookup"><span data-stu-id="6440c-135">Create fault areas</span></span>
+## <a name="create-fault-areas"></a><span data-ttu-id="fcd90-135">Tworzenie obszarów usterek</span><span class="sxs-lookup"><span data-stu-id="fcd90-135">Create fault areas</span></span>
 
-<span data-ttu-id="6440c-136">Aby utworzyć listę obszarów lub lokalizacji, które mogą być używane w projektancie usterek, należy wykonać następujące czynności.</span><span class="sxs-lookup"><span data-stu-id="6440c-136">Follow these steps to create a list of areas or locations that can be used in the fault designer.</span></span>
+<span data-ttu-id="fcd90-136">Aby utworzyć listę obszarów lub lokalizacji, które mogą być używane w projektancie usterek, należy wykonać następujące czynności.</span><span class="sxs-lookup"><span data-stu-id="fcd90-136">Follow these steps to create a list of areas or locations that can be used in the fault designer.</span></span>
 
-1. <span data-ttu-id="6440c-137">Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Usterka** \> **Obszary usterki**.</span><span class="sxs-lookup"><span data-stu-id="6440c-137">Select **Asset management** \> **Setup** \> **Fault** \> **Fault areas**.</span></span>
-2. <span data-ttu-id="6440c-138">Wybierz **Nowy**, aby utworzyć rekord.</span><span class="sxs-lookup"><span data-stu-id="6440c-138">Select **New** to create a record.</span></span>
-3. <span data-ttu-id="6440c-139">W polu **Obszar usterki** wprowadź nazwę obszaru usterki.</span><span class="sxs-lookup"><span data-stu-id="6440c-139">In the **Fault area** field, enter a name for the fault area.</span></span>
-4. <span data-ttu-id="6440c-140">W polu **Opis wprowadź** opis.</span><span class="sxs-lookup"><span data-stu-id="6440c-140">In the **Description** field, enter a description.</span></span>
-5. <span data-ttu-id="6440c-141">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="6440c-141">Select **Save**.</span></span>
+1. <span data-ttu-id="fcd90-137">Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Usterka** \> **Obszary usterki**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-137">Select **Asset management** \> **Setup** \> **Fault** \> **Fault areas**.</span></span>
+2. <span data-ttu-id="fcd90-138">Wybierz **Nowy**, aby utworzyć rekord.</span><span class="sxs-lookup"><span data-stu-id="fcd90-138">Select **New** to create a record.</span></span>
+3. <span data-ttu-id="fcd90-139">W polu **Obszar usterki** wprowadź nazwę obszaru usterki.</span><span class="sxs-lookup"><span data-stu-id="fcd90-139">In the **Fault area** field, enter a name for the fault area.</span></span>
+4. <span data-ttu-id="fcd90-140">W polu **Opis wprowadź** opis.</span><span class="sxs-lookup"><span data-stu-id="fcd90-140">In the **Description** field, enter a description.</span></span>
+5. <span data-ttu-id="fcd90-141">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-141">Select **Save**.</span></span>
 
-## <a name="create-fault-types"></a><span data-ttu-id="6440c-142">Utwórz typy usterek</span><span class="sxs-lookup"><span data-stu-id="6440c-142">Create fault types</span></span>
+## <a name="create-fault-types"></a><span data-ttu-id="fcd90-142">Utwórz typy usterek</span><span class="sxs-lookup"><span data-stu-id="fcd90-142">Create fault types</span></span>
 
-<span data-ttu-id="6440c-143">Aby utworzyć listę typów usterek, które mogą być używane w projektancie usterek, należy wykonać następujące czynności.</span><span class="sxs-lookup"><span data-stu-id="6440c-143">Follow these steps to create a list of fault types that can be used in the fault designer.</span></span>
+<span data-ttu-id="fcd90-143">Aby utworzyć listę typów usterek, które mogą być używane w projektancie usterek, należy wykonać następujące czynności.</span><span class="sxs-lookup"><span data-stu-id="fcd90-143">Follow these steps to create a list of fault types that can be used in the fault designer.</span></span>
 
-1. <span data-ttu-id="6440c-144">Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Usterka** \> **Typy usterek**.</span><span class="sxs-lookup"><span data-stu-id="6440c-144">Select **Asset management** \> **Setup** \> **Fault** \> **Fault types**.</span></span>
-2. <span data-ttu-id="6440c-145">Wybierz **Nowy**, aby utworzyć rekord.</span><span class="sxs-lookup"><span data-stu-id="6440c-145">Select **New** to create a record.</span></span>
-3. <span data-ttu-id="6440c-146">W polu **Typ usterki** wprowadź nazwę typu usterki.</span><span class="sxs-lookup"><span data-stu-id="6440c-146">In the **Fault type** field, enter a name for the fault type.</span></span>
-4. <span data-ttu-id="6440c-147">W polu **Opis wprowadź** opis.</span><span class="sxs-lookup"><span data-stu-id="6440c-147">In the **Description** field, enter a description.</span></span>
-5. <span data-ttu-id="6440c-148">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="6440c-148">Select **Save**.</span></span>
+1. <span data-ttu-id="fcd90-144">Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Usterka** \> **Typy usterek**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-144">Select **Asset management** \> **Setup** \> **Fault** \> **Fault types**.</span></span>
+2. <span data-ttu-id="fcd90-145">Wybierz **Nowy**, aby utworzyć rekord.</span><span class="sxs-lookup"><span data-stu-id="fcd90-145">Select **New** to create a record.</span></span>
+3. <span data-ttu-id="fcd90-146">W polu **Typ usterki** wprowadź nazwę typu usterki.</span><span class="sxs-lookup"><span data-stu-id="fcd90-146">In the **Fault type** field, enter a name for the fault type.</span></span>
+4. <span data-ttu-id="fcd90-147">W polu **Opis wprowadź** opis.</span><span class="sxs-lookup"><span data-stu-id="fcd90-147">In the **Description** field, enter a description.</span></span>
+5. <span data-ttu-id="fcd90-148">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-148">Select **Save**.</span></span>
 
-## <a name="set-up-the-fault-designer"></a><span data-ttu-id="6440c-149">Konfigurowanie projektanta usterek</span><span class="sxs-lookup"><span data-stu-id="6440c-149">Set up the fault designer</span></span>
+## <a name="set-up-the-fault-designer"></a><span data-ttu-id="fcd90-149">Konfigurowanie projektanta usterek</span><span class="sxs-lookup"><span data-stu-id="fcd90-149">Set up the fault designer</span></span>
 
-<span data-ttu-id="6440c-150">W projektancie usterek można skonfigurować dane usterek dla typów składników majątku.</span><span class="sxs-lookup"><span data-stu-id="6440c-150">In the fault designer, you set up fault data on asset types.</span></span>
+<span data-ttu-id="fcd90-150">W projektancie usterek można skonfigurować dane usterek dla typów składników majątku.</span><span class="sxs-lookup"><span data-stu-id="fcd90-150">In the fault designer, you set up fault data on asset types.</span></span>
 
-1. <span data-ttu-id="6440c-151">Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Usterka** \> **Projektant usterek**.</span><span class="sxs-lookup"><span data-stu-id="6440c-151">Select **Asset management** \> **Setup** \> **Fault** \> **Fault designer**.</span></span>
-2. <span data-ttu-id="6440c-152">W lewym okienku wybierz typ składnika majątku, dla którego chcesz skonfigurować rekord usterki.</span><span class="sxs-lookup"><span data-stu-id="6440c-152">In the left pane, select the type of asset to set up a fault record for.</span></span>
-3. <span data-ttu-id="6440c-153">Na skróconej karcie **Objawy usterki** wybierz opcję **Dodaj wiersz**, a następnie w polu **Objaw usterki** wybierz objaw usterki.</span><span class="sxs-lookup"><span data-stu-id="6440c-153">On the **Fault symptom** FastTab, select **Add line**, and then, in the **Fault symptom** field, select a fault symptom.</span></span>
-4. <span data-ttu-id="6440c-154">Na skróconej karcie **Obszar usterki** wybierz opcję **Dodaj wiersz**, a następnie w polu **Obszar usterki** wybierz obszar usterki.</span><span class="sxs-lookup"><span data-stu-id="6440c-154">On the **Fault area** FastTab, select **Add line**, and then, in the **Fault area** field select a fault area.</span></span>
-5. <span data-ttu-id="6440c-155">Na skróconej karcie **Typ usterki** wybierz opcję **Dodaj wiersz**, a następnie w polu **Typ usterki** wybierz typ usterki.</span><span class="sxs-lookup"><span data-stu-id="6440c-155">On the **Fault type** FastTab, select **Add line**, and then, in the **Fault type** field, select a fault type.</span></span>
-6. <span data-ttu-id="6440c-156">Aby szybko utworzyć kombinacje wszystkich objawów usterek, obszarów i typów dla wybranego typu składnika, wybierz opcję **Utwórz kombinacje usterek**.</span><span class="sxs-lookup"><span data-stu-id="6440c-156">To quickly create combinations of all existing fault symptoms, areas, and types for the selected asset type, select **Create fault combinations**.</span></span> <span data-ttu-id="6440c-157">Ta funkcja jest przydatna w przypadku dodawania wielu objawów usterek, obszarów i typów.</span><span class="sxs-lookup"><span data-stu-id="6440c-157">This function is useful if you've added many fault symptoms, areas, and types.</span></span> <span data-ttu-id="6440c-158">Można łatwiej usunąć wiersze dla dowolnej kombinacji, która nie jest odpowiednia dla typu składnika majątku niż w celu ręcznego utworzenia nowych wierszy.</span><span class="sxs-lookup"><span data-stu-id="6440c-158">It's easier to delete the lines for any combinations that aren't relevant to the asset type than to create new lines manually.</span></span>
+1. <span data-ttu-id="fcd90-151">Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Usterka** \> **Projektant usterek**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-151">Select **Asset management** \> **Setup** \> **Fault** \> **Fault designer**.</span></span>
+2. <span data-ttu-id="fcd90-152">W lewym okienku wybierz typ składnika majątku, dla którego chcesz skonfigurować rekord usterki.</span><span class="sxs-lookup"><span data-stu-id="fcd90-152">In the left pane, select the type of asset to set up a fault record for.</span></span>
+3. <span data-ttu-id="fcd90-153">Na skróconej karcie **Objawy usterki** wybierz opcję **Dodaj wiersz**, a następnie w polu **Objaw usterki** wybierz objaw usterki.</span><span class="sxs-lookup"><span data-stu-id="fcd90-153">On the **Fault symptom** FastTab, select **Add line**, and then, in the **Fault symptom** field, select a fault symptom.</span></span>
+4. <span data-ttu-id="fcd90-154">Na skróconej karcie **Obszar usterki** wybierz opcję **Dodaj wiersz**, a następnie w polu **Obszar usterki** wybierz obszar usterki.</span><span class="sxs-lookup"><span data-stu-id="fcd90-154">On the **Fault area** FastTab, select **Add line**, and then, in the **Fault area** field select a fault area.</span></span>
+5. <span data-ttu-id="fcd90-155">Na skróconej karcie **Typ usterki** wybierz opcję **Dodaj wiersz**, a następnie w polu **Typ usterki** wybierz typ usterki.</span><span class="sxs-lookup"><span data-stu-id="fcd90-155">On the **Fault type** FastTab, select **Add line**, and then, in the **Fault type** field, select a fault type.</span></span>
+6. <span data-ttu-id="fcd90-156">Aby szybko utworzyć kombinacje wszystkich objawów usterek, obszarów i typów dla wybranego typu składnika, wybierz opcję **Utwórz kombinacje usterek**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-156">To quickly create combinations of all existing fault symptoms, areas, and types for the selected asset type, select **Create fault combinations**.</span></span> <span data-ttu-id="fcd90-157">Ta funkcja jest przydatna w przypadku dodawania wielu objawów usterek, obszarów i typów.</span><span class="sxs-lookup"><span data-stu-id="fcd90-157">This function is useful if you've added many fault symptoms, areas, and types.</span></span> <span data-ttu-id="fcd90-158">Można łatwiej usunąć wiersze dla dowolnej kombinacji, która nie jest odpowiednia dla typu składnika majątku niż w celu ręcznego utworzenia nowych wierszy.</span><span class="sxs-lookup"><span data-stu-id="fcd90-158">It's easier to delete the lines for any combinations that aren't relevant to the asset type than to create new lines manually.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="6440c-159">Aby skopiować ustawienia objawów usterek, obszarów i typów z jednego typu składnika majątku do wybranego typu składnika, należy wybrać opcję **Kopiuj z typu składnika majątku**.</span><span class="sxs-lookup"><span data-stu-id="6440c-159">To copy the setup of fault symptoms, areas, and types from one asset type to the selected asset type, select **Copy from asset type**.</span></span>
+    > <span data-ttu-id="fcd90-159">Aby skopiować ustawienia objawów usterek, obszarów i typów z jednego typu składnika majątku do wybranego typu składnika, należy wybrać opcję **Kopiuj z typu składnika majątku**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-159">To copy the setup of fault symptoms, areas, and types from one asset type to the selected asset type, select **Copy from asset type**.</span></span>
 
-7. <span data-ttu-id="6440c-160">Wybierz **Zapisz**, żeby zapisać zmiany.</span><span class="sxs-lookup"><span data-stu-id="6440c-160">Select **Save** to save your changes.</span></span>
+7. <span data-ttu-id="fcd90-160">Wybierz **Zapisz**, żeby zapisać zmiany.</span><span class="sxs-lookup"><span data-stu-id="fcd90-160">Select **Save** to save your changes.</span></span>
 
-![Rysunek 1](media/21-setup-for-work-orders.png)
+![Strona Projektant usterek](media/21-setup-for-work-orders.png)
 
-## <a name="create-fault-causes"></a><span data-ttu-id="6440c-162">Utwórz przyczyny usterek</span><span class="sxs-lookup"><span data-stu-id="6440c-162">Create fault causes</span></span>
+## <a name="create-fault-causes"></a><span data-ttu-id="fcd90-162">Utwórz przyczyny usterek</span><span class="sxs-lookup"><span data-stu-id="fcd90-162">Create fault causes</span></span>
 
-<span data-ttu-id="6440c-163">Wykonaj poniższe kroki, aby utworzyć listę znanych przyczyn usterek, które można dodać do zlecenia pracy lub do zgłoszenia serwisowego.</span><span class="sxs-lookup"><span data-stu-id="6440c-163">Follow these steps to create a list of known fault causes that can be added to a work order or a maintenance request.</span></span>
+<span data-ttu-id="fcd90-163">Wykonaj poniższe kroki, aby utworzyć listę znanych przyczyn usterek, które można dodać do zlecenia pracy lub do zgłoszenia serwisowego.</span><span class="sxs-lookup"><span data-stu-id="fcd90-163">Follow these steps to create a list of known fault causes that can be added to a work order or a maintenance request.</span></span>
 
-1. <span data-ttu-id="6440c-164">Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Usterka** \> **Przyczyny usterek**.</span><span class="sxs-lookup"><span data-stu-id="6440c-164">Select **Asset management** \> **Setup** \> **Fault** \> **Fault causes**.</span></span>
-2. <span data-ttu-id="6440c-165">Wybierz **Nowy**, aby utworzyć rekord.</span><span class="sxs-lookup"><span data-stu-id="6440c-165">Select **New** to create a record.</span></span>
-3. <span data-ttu-id="6440c-166">W polu **Przyczyny usterek** wprowadź nazwę przyczyny usterki.</span><span class="sxs-lookup"><span data-stu-id="6440c-166">In the **Fault cause** field, enter a name for the fault cause.</span></span>
-4. <span data-ttu-id="6440c-167">W polu **Opis wprowadź** opis.</span><span class="sxs-lookup"><span data-stu-id="6440c-167">In the **Description** field, enter a description.</span></span>
-5. <span data-ttu-id="6440c-168">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="6440c-168">Select **Save**.</span></span>
+1. <span data-ttu-id="fcd90-164">Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Usterka** \> **Przyczyny usterek**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-164">Select **Asset management** \> **Setup** \> **Fault** \> **Fault causes**.</span></span>
+2. <span data-ttu-id="fcd90-165">Wybierz **Nowy**, aby utworzyć rekord.</span><span class="sxs-lookup"><span data-stu-id="fcd90-165">Select **New** to create a record.</span></span>
+3. <span data-ttu-id="fcd90-166">W polu **Przyczyny usterek** wprowadź nazwę przyczyny usterki.</span><span class="sxs-lookup"><span data-stu-id="fcd90-166">In the **Fault cause** field, enter a name for the fault cause.</span></span>
+4. <span data-ttu-id="fcd90-167">W polu **Opis wprowadź** opis.</span><span class="sxs-lookup"><span data-stu-id="fcd90-167">In the **Description** field, enter a description.</span></span>
+5. <span data-ttu-id="fcd90-168">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-168">Select **Save**.</span></span>
 
-## <a name="create-fault-remedies"></a><span data-ttu-id="6440c-169">Stwórz środki zaradcze dla usterki</span><span class="sxs-lookup"><span data-stu-id="6440c-169">Create fault remedies</span></span>
+## <a name="create-fault-remedies"></a><span data-ttu-id="fcd90-169">Stwórz środki zaradcze dla usterki</span><span class="sxs-lookup"><span data-stu-id="fcd90-169">Create fault remedies</span></span>
 
-<span data-ttu-id="6440c-170">Wykonaj poniższe kroki, aby utworzyć listę znanych środków zaradczych dla usterek, które można dodać do zlecenia pracy lub do zgłoszenia serwisowego.</span><span class="sxs-lookup"><span data-stu-id="6440c-170">Follow these steps to create a list of suggestions for remedy and repair that can be added to a work order or a maintenance request.</span></span>
+<span data-ttu-id="fcd90-170">Wykonaj poniższe kroki, aby utworzyć listę znanych środków zaradczych dla usterek, które można dodać do zlecenia pracy lub do zgłoszenia serwisowego.</span><span class="sxs-lookup"><span data-stu-id="fcd90-170">Follow these steps to create a list of suggestions for remedy and repair that can be added to a work order or a maintenance request.</span></span>
 
-1. <span data-ttu-id="6440c-171">Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Usterka** \> **Środki zaradcze dla usterek**.</span><span class="sxs-lookup"><span data-stu-id="6440c-171">Select **Asset management** \> **Setup** \> **Fault** \> **Fault remedies**.</span></span>
-2. <span data-ttu-id="6440c-172">Wybierz **Nowy**, aby utworzyć rekord.</span><span class="sxs-lookup"><span data-stu-id="6440c-172">Select **New** to create a record.</span></span>
-3. <span data-ttu-id="6440c-173">W polu **Środki zaradcze dla usterek** wprowadź nazwę środka zaradczego usterki.</span><span class="sxs-lookup"><span data-stu-id="6440c-173">In the **Fault remedy** field, enter a name for the fault remedy.</span></span>
-4. <span data-ttu-id="6440c-174">W polu **Opis wprowadź** opis.</span><span class="sxs-lookup"><span data-stu-id="6440c-174">In the **Description** field, enter a description.</span></span>
-5. <span data-ttu-id="6440c-175">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="6440c-175">Select **Save**.</span></span>
+1. <span data-ttu-id="fcd90-171">Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Usterka** \> **Środki zaradcze dla usterek**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-171">Select **Asset management** \> **Setup** \> **Fault** \> **Fault remedies**.</span></span>
+2. <span data-ttu-id="fcd90-172">Wybierz **Nowy**, aby utworzyć rekord.</span><span class="sxs-lookup"><span data-stu-id="fcd90-172">Select **New** to create a record.</span></span>
+3. <span data-ttu-id="fcd90-173">W polu **Środki zaradcze dla usterek** wprowadź nazwę środka zaradczego usterki.</span><span class="sxs-lookup"><span data-stu-id="fcd90-173">In the **Fault remedy** field, enter a name for the fault remedy.</span></span>
+4. <span data-ttu-id="fcd90-174">W polu **Opis wprowadź** opis.</span><span class="sxs-lookup"><span data-stu-id="fcd90-174">In the **Description** field, enter a description.</span></span>
+5. <span data-ttu-id="fcd90-175">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="fcd90-175">Select **Save**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="6440c-176">Istnieje możliwość zmiany nazw objawów usterek, obszarów, typów, przyczyn i środków zaradczych stosownie do potrzeb.</span><span class="sxs-lookup"><span data-stu-id="6440c-176">You can change the names of your fault symptoms, areas, types, causes, and remedies as you require.</span></span> <span data-ttu-id="6440c-177">Zmiany nazwy są automatycznie odzwierciedlane w powiązanych z nią rejestracjach błędów.</span><span class="sxs-lookup"><span data-stu-id="6440c-177">The name changes are automatically reflected in the related fault registrations.</span></span>
+> <span data-ttu-id="fcd90-176">Istnieje możliwość zmiany nazw objawów usterek, obszarów, typów, przyczyn i środków zaradczych stosownie do potrzeb.</span><span class="sxs-lookup"><span data-stu-id="fcd90-176">You can change the names of your fault symptoms, areas, types, causes, and remedies as you require.</span></span> <span data-ttu-id="fcd90-177">Zmiany nazwy są automatycznie odzwierciedlane w powiązanych z nią rejestracjach błędów.</span><span class="sxs-lookup"><span data-stu-id="fcd90-177">The name changes are automatically reflected in the related fault registrations.</span></span>

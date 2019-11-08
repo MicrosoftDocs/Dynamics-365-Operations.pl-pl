@@ -3,7 +3,7 @@ title: Pule zleceń pracy
 description: W tym temacie opisano pracę z pulami zleceń pracy w module Zarządzanie składnikami majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,95 +16,96 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 069fa02073808fd7bbaac9bc1603e49ce4d450eb
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 161244cb4451ddc7b13b579fd02e828a61adeea4
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875841"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626369"
 ---
-# <a name="work-order-pools"></a><span data-ttu-id="fb607-103">Pule zleceń pracy</span><span class="sxs-lookup"><span data-stu-id="fb607-103">Work order pools</span></span>
-
+# <a name="work-order-pools"></a><span data-ttu-id="62973-103">Pule zleceń pracy</span><span class="sxs-lookup"><span data-stu-id="62973-103">Work order pools</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
+<span data-ttu-id="62973-104">Pul zleceń pracy można używać do grupowania zleceń, które mają coś wspólnego.</span><span class="sxs-lookup"><span data-stu-id="62973-104">You can use work order pools to group work orders that have something in common.</span></span> <span data-ttu-id="62973-105">Poniżej przedstawiono przykłady sposobów tworzenia pul zleceń pracy dla:</span><span class="sxs-lookup"><span data-stu-id="62973-105">Here are some examples of things that you can create  work order pools for:</span></span>
+
+- <span data-ttu-id="62973-106">Załóg pracy, na przykład załoga konserwacji A lub załoga konserwacji B</span><span class="sxs-lookup"><span data-stu-id="62973-106">Work crews, for example, Maintenance Crew A or Maintenance Crew B</span></span>  
+
+- <span data-ttu-id="62973-107">Kwalifikacji zawodowych, na przykład elektrycy lub hydraulicy</span><span class="sxs-lookup"><span data-stu-id="62973-107">Professional skills, such as electricians or plumbers</span></span>  
+
+- <span data-ttu-id="62973-108">Fizyczne lokalizacje</span><span class="sxs-lookup"><span data-stu-id="62973-108">Physical locations</span></span>  
+
+- <span data-ttu-id="62973-109">Harmonogramy czasu, na przykład tygodnie lub inne okresy</span><span class="sxs-lookup"><span data-stu-id="62973-109">Time schedules, such as weeks or other periods</span></span>  
+
+<span data-ttu-id="62973-110">W razie konieczności można umieścić jedno zlecenie w wielu pulach zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="62973-110">As you require, you can put one work order in multiple work order pools.</span></span>
 
 
-<span data-ttu-id="fb607-104">Pul zleceń pracy można używać do grupowania zleceń, które mają coś wspólnego.</span><span class="sxs-lookup"><span data-stu-id="fb607-104">You can use work order pools to group work orders that have something in common.</span></span> <span data-ttu-id="fb607-105">Można na przykład utworzyć pule zleceń pracy dla</span><span class="sxs-lookup"><span data-stu-id="fb607-105">For example, you can create work order pools for</span></span>
+## <a name="create-a-work-order-pool"></a><span data-ttu-id="62973-111">Utwórz pulę zleceń pracy</span><span class="sxs-lookup"><span data-stu-id="62973-111">Create a work order pool</span></span>
 
-- <span data-ttu-id="fb607-106">załóg roboczych, na przykład załoga konserwacji A, załoga konserwacji B</span><span class="sxs-lookup"><span data-stu-id="fb607-106">work crews, for example, Maintenance Crew A, Maintenance Crew B</span></span>  
+<span data-ttu-id="62973-112">Na stronach list **Wszystkie pule zleceń pracy** lub **Aktywne pule zleceń pracy** można uzyskać przegląd pul zleceń pracy i utworzyć nowe pule.</span><span class="sxs-lookup"><span data-stu-id="62973-112">On the **All work order pools** or **Active work order pools** list page, you can get an overview of your work order pools and create new pools.</span></span>
 
-- <span data-ttu-id="fb607-107">kwalifikacji zawodowych, na przykład elektrycy lub hydraulicy</span><span class="sxs-lookup"><span data-stu-id="fb607-107">professional skills, for example, electricians or plumbers</span></span>  
+1. <span data-ttu-id="62973-113">Wybierz **Zarządzanie składnikami majątku** > **Wspólne** > **Pule zleceń pracy** > **Wszystkie pule zleceń pracy** lub **Aktywne pule zleceń pracy**.</span><span class="sxs-lookup"><span data-stu-id="62973-113">Select **Asset management** > **Common** > **Work order pools** > **All work order pools** or **Active work order pools**.</span></span>
 
-- <span data-ttu-id="fb607-108">fizyczne lokalizacje</span><span class="sxs-lookup"><span data-stu-id="fb607-108">physical locations</span></span>  
+2. <span data-ttu-id="62973-114">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="62973-114">Select **New**.</span></span>
 
-- <span data-ttu-id="fb607-109">harmonogramy czasu, na przykład tygodnie lub inne okresy</span><span class="sxs-lookup"><span data-stu-id="fb607-109">time schedules, for example, weeks or other periods</span></span>  
+3. <span data-ttu-id="62973-115">W polu **Pula** wpisz identyfikator dla puli zlecenia pracy.</span><span class="sxs-lookup"><span data-stu-id="62973-115">In the **Pool** field, enter an ID for the work order pool.</span></span>
 
+4. <span data-ttu-id="62973-116">W polu **Nazwa** wprowadź nazwę.</span><span class="sxs-lookup"><span data-stu-id="62973-116">the **Name** field, enter a name.</span></span>
 
-<span data-ttu-id="fb607-110">W razie potrzeby jedno zlecenie pracy może zostać umieszczone w wielu pulach zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="fb607-110">If required, one work order can be placed in many work order pools.</span></span>
+5. <span data-ttu-id="62973-117">W opcji **Aktywne** wybierz wartość **Tak**, aby wskazać, że pula zleceń pracy jest aktywna.</span><span class="sxs-lookup"><span data-stu-id="62973-117">Set the **Active** option to **Yes** to indicate that the work order pool is active.</span></span>
 
+6. <span data-ttu-id="62973-118">Jeśli chcesz, aby zlecenia pracy były automatycznie usuwane z puli zleceń pracy, ustaw opcję **Usuń relacje zlecenia pracy** jako **Tak**.</span><span class="sxs-lookup"><span data-stu-id="62973-118">Set the **Delete work order relations** option to **Yes** if work orders should automatically be removed from the work order pool.</span></span>
 
-## <a name="create-work-order-pool"></a><span data-ttu-id="fb607-111">Utwórz pulę zleceń pracy</span><span class="sxs-lookup"><span data-stu-id="fb607-111">Create work order pool</span></span>
+7. <span data-ttu-id="62973-119">W polu **Usuń stan cyklu życia** wybierz stan cyklu życia zamówienia pracy.</span><span class="sxs-lookup"><span data-stu-id="62973-119">In the **Delete lifecycle state** field, select the work order lifecycle state.</span></span> <span data-ttu-id="62973-120">Na przykład stan cyklu życia zlecenia produkcyjnego służącego do ukończenia zlecenia produkcyjnego może zostać skonfigurowany w taki sposób, aby automatycznie usuwać relacje do pul zleceń</span><span class="sxs-lookup"><span data-stu-id="62973-120">For example, the work order lifecycle state for completing a work order could be set to automatically delete relations to work order pools.</span></span>
 
-<span data-ttu-id="fb607-112">We **Wszystkie pule zleceń pracy** lub **Aktywne pule zleceń pracy** można uzyskać przegląd pul zleceń pracy i utworzyć nowe pule.</span><span class="sxs-lookup"><span data-stu-id="fb607-112">In **All work order pools** or **Active work order pools**, you can get an overview of your work order pools and create new pools.</span></span>
+    <span data-ttu-id="62973-121">Można natychmiast rozpocząć dodawanie zleceń roboczych do puli zleceń roboczych.</span><span class="sxs-lookup"><span data-stu-id="62973-121">You can start adding work orders to your work order pool right away.</span></span>
 
-1. <span data-ttu-id="fb607-113">Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Pule zleceń pracy** > **Wszystkie pule zleceń pracy** lub **Aktywne pule zleceń pracy**.</span><span class="sxs-lookup"><span data-stu-id="fb607-113">Click **Asset management** > **Common** > **Work order pools** > **All work order pools** or **Active work order pools**.</span></span>
+8. <span data-ttu-id="62973-122">Na skróconej karcie **Zlecenia pracy**, należy wybrać przycisk **Dodaj wiersz**.</span><span class="sxs-lookup"><span data-stu-id="62973-122">On the **Work orders** FastTab, select **Add line**.</span></span>
 
-2. <span data-ttu-id="fb607-114">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="fb607-114">Click **New**.</span></span>
+9. <span data-ttu-id="62973-123">W polu **Zlecenie pracy** wybierz zlecenie pracy.</span><span class="sxs-lookup"><span data-stu-id="62973-123">In the **Work order** field, select a work order.</span></span> <span data-ttu-id="62973-124">Pola pokrewne są automatycznie aktualizowane.</span><span class="sxs-lookup"><span data-stu-id="62973-124">The related fields are automatically updated.</span></span>
 
-3. <span data-ttu-id="fb607-115">Wstaw Identyfikator puli zleceń pracy w polu **Pula** oraz nazwę w polu **Nazwa**.</span><span class="sxs-lookup"><span data-stu-id="fb607-115">Insert a work order pool ID in the **Pool** field and a name in the **Name** field.</span></span>
+10. <span data-ttu-id="62973-125">Powtórz kroki od 8 do 9, aby dodać więcej zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="62973-125">Repeat steps 8 through 9 to add more work orders.</span></span>
 
-4. <span data-ttu-id="fb607-116">Wybierz wartość tak na **aktywnym** przycisku przełącznika, aby wskazać, że Pula zleceń pracy jest aktywna.</span><span class="sxs-lookup"><span data-stu-id="fb607-116">Select "Yes" on the **Active** toggle button to indicate that the work order pool is active.</span></span>
+11. <span data-ttu-id="62973-126">Jeśli dodane zlecenia pracy powinny zostać wykonane w określonym porządku, w polu **Porządek sortowania** można wprowadzić numery **1**, **2**, **3** itd., aby określić takie zlecenie.</span><span class="sxs-lookup"><span data-stu-id="62973-126">If the work orders that you added should be done in a specific order, in the **Sort order** field, you can enter the numbers **1**, **2**, **3**, and so on, to specify that order.</span></span>
 
-5. <span data-ttu-id="fb607-117">Jeśli chcesz, aby zlecenia pracy były automatycznie usuwane z puli zleceń pracy, wybierz wartość tak w przycisku **Usuń relację zlecenia produkcyjnego**.</span><span class="sxs-lookup"><span data-stu-id="fb607-117">Select "Yes" on the **Delete work order relations** toggle button if you want work orders to be automatically removed from the work order pool.</span></span>
+12. <span data-ttu-id="62973-127">Aby wyświetlić listę wszystkich zleceń pracy uwzględnionych w puli zleceń pracy, w okienku akcji, na karcie **Pula zleceń pracy**, w grupie **Przeglądanie powiązanej puli zleceń pracy** wybierz pozycję **Zlecenia pracy**, aby otworzyć stronę listy **Wszystkie zlecenia pracy**.</span><span class="sxs-lookup"><span data-stu-id="62973-127">To view a list of all the work orders that are included in the work order pool, on the Action Pane, on the **Work order pool** tab, in the **View work order pool related** group, select **Work orders** to open the **All work orders** list page.</span></span>
 
-6. <span data-ttu-id="fb607-118">W polu **Usuń stan cyklu życia** wybierz stan cyklu życia zamówienia pracy.</span><span class="sxs-lookup"><span data-stu-id="fb607-118">In the **Delete lifecycle state** field, select the work order lifecycle state.</span></span> <span data-ttu-id="fb607-119">Na przykład stan cyklu życia zlecenia produkcyjnego służącego do ukończenia zlecenia produkcyjnego może zostać skonfigurowany w taki sposób, aby automatycznie usuwać relacje do pul zleceń</span><span class="sxs-lookup"><span data-stu-id="fb607-119">For example, the work order lifecycle state for completing a work order could be set to automatically delete relations to work order pools.</span></span>
+13. <span data-ttu-id="62973-128">Aby obliczyć i wyświetlić obciążenie wydajności dla harmonogramu konserwacji, niezaplanowane zlecenia pracy i zaplanowane zlecenia pracy, w okienku akcji na karcie **Pula zleceń pracy** w grupie **Przeglądanie powiązanej puli zleceń pracy** wybierz opcję **Obciążenie wydajności**, co spowoduje otwarcie okna dialogowego **Obliczanie obciążenia zdolności produkcyjnych**.</span><span class="sxs-lookup"><span data-stu-id="62973-128">To calculate and view capacity load for the maintenance schedule, unscheduled work orders, and scheduled work orders, on the Action Pane, on the **Work order pool** tab, in the **View work order pool related** group, select **Capacity load** to open the **Calculate capacity load** dialog.</span></span>
 
-7. <span data-ttu-id="fb607-120">Można natychmiast rozpocząć dodawanie zleceń roboczych do puli zleceń roboczych.</span><span class="sxs-lookup"><span data-stu-id="fb607-120">You can start adding work orders to your work order pool right away.</span></span> <span data-ttu-id="fb607-121">Na skróconej karcie **Zlecenia pracy**, należy kliknąć przycisk **Dodaj wiersz**.</span><span class="sxs-lookup"><span data-stu-id="fb607-121">On the **Work orders** FastTab, click **Add line**.</span></span>
+14. <span data-ttu-id="62973-129">Aby obliczyć i wyświetlić prognozę dla pozycji (części zamiennych i innych wymaganych pozycji), które są powiązane z harmonogramem konserwacji, niezaplanowanymi zleceniami pracy i zaplanowanymi zleceniami pracy, w okienku akcji na karcie **Pula zleceń pracy** w grupie **Przeglądanie powiązanej puli zleceń pracy** wybierz opcję **Prognoza dla pozycji**, co spowoduje otwarcie okna dialogowego **Obliczanie prognozy dla pozycji**.</span><span class="sxs-lookup"><span data-stu-id="62973-129">To calculate and view forecasts for items (spare parts and other required items) that are related to maintenance schedule, unscheduled work orders, and scheduled work orders, on the Action Pane, on the **Work order pool** tab, in the **View work order pool related** group, select **Item forecast** to open the **Calculate item forecast** dialog.</span></span>
 
-8. <span data-ttu-id="fb607-122">W polu **Zlecenie pracy** wybierz zlecenie pracy.</span><span class="sxs-lookup"><span data-stu-id="fb607-122">Select a work order in the **Work order** field.</span></span> <span data-ttu-id="fb607-123">Pola pokrewne są automatycznie aktualizowane.</span><span class="sxs-lookup"><span data-stu-id="fb607-123">The related fields are automatically updated.</span></span>
+15. <span data-ttu-id="62973-130">Aby wyświetlić listę zapotrzebowań na zakupy powiązanych ze wszystkimi zleceniami pracy uwzględnionmi w puli zleceń pracy, w okienku akcji na karcie **Pula zleceń pracy**, w grupie **Zaopatrzenie** wybierz pozycję **Zapotrzebowanie na zakup zlecenia pracy**, aby otworzyć stronę listy **Zapotrzebowanie na zakup zlecenia pracy**.</span><span class="sxs-lookup"><span data-stu-id="62973-130">To view a list of purchase requisitions that are related to the work orders in the work order pool, on the Action Pane, on the **Work order pool** tab, in the **Procurement** group, select **Work order purchase requisition** to open the **Work order purchase requisition** list page.</span></span>
 
-9. <span data-ttu-id="fb607-124">Jeśli chcesz dodać więcej zleceń pracy, powtórz kroki 7-8</span><span class="sxs-lookup"><span data-stu-id="fb607-124">Repeat steps 7-8 if you want to add more work orders.</span></span>
-
-10. <span data-ttu-id="fb607-125">W polu **porządek sortowania** można określić, czy zlecenia pracy powinny być wykonywane w określonym zamówieniu.</span><span class="sxs-lookup"><span data-stu-id="fb607-125">In the **Sort order** field, you can indicate if the work orders should be carried out in a certain order.</span></span> <span data-ttu-id="fb607-126">Wstaw numery 1, 2, 3 i tak dalej, aby wskazać określoną sekwencję dla wybranych zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="fb607-126">Insert numbers 1, 2, 3, and so on to indicate a specific sequence for the selected work orders.</span></span>
-
-11. <span data-ttu-id="fb607-127">Kliknij przycisk **zlecenia pracy**, aby wyświetlić listę wszystkich zleceń pracy uwzględnionych w puli zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="fb607-127">Click the **Work orders** button to see a list of all the work orders included in the work order pool.</span></span>
-
-12. <span data-ttu-id="fb607-128">Kliknij przycisk **Obciążenie wydajności**, aby otworzyć **Obciążenie wydajności** w celu obliczenia i wyświetlenia obciążenia zdolności produkcyjnych w harmonogramie konserwacji, a nie zaplanowanych zleceń pracy i zaplanowanych zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="fb607-128">Click the **Capacity load** button to open **Capacity load** to calculate and view capacity load for maintenance schedule, not-scheduled work orders, and scheduled work orders.</span></span>
-
-13. <span data-ttu-id="fb607-129">Kliknij przycisk **Prognoza dla pozycji**, aby otworzyć **Prognoza dla pozycji** i wyświetlić prognozy dla towarów (części zamienne i inne wymagane towary) związane z harmonogramem obsługi, niezaplanowanymi zleceniami produkcyjnymi i zaplanowanymi zleceniami produkcyjnymi.</span><span class="sxs-lookup"><span data-stu-id="fb607-129">Click the **Item forecast** button to open **Item forecast** to calculate and view forecasts for items (spare parts and other required items) related to maintenance schedule, not-scheduled work orders, and scheduled work orders.</span></span>
-
-14. <span data-ttu-id="fb607-130">Kliknij przycisk **Zapotrzebowanie na zakup zlecenia pracy**, aby otworzyć listę **Zapotrzebowanie na zakup zlecenia pracy** w celu wyświetlenia listy zapotrzebowań zakupu związanych z zleceniami roboczymi w puli zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="fb607-130">Click the **Work order purchase requisition** button to open the **Work order purchase requisition** list to see a list of purchase requisitions related to the work orders in the work order pool.</span></span>
-
-15. <span data-ttu-id="fb607-131">Kliknij przycisk **Zapotrzebowanie na zakup zlecenia pracy**, aby otworzyć listę **Zapotrzebowanie na zakup zlecenia pracy** w celu wyświetlenia listy zamówień zakupu związanych z zleceniami roboczymi w puli zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="fb607-131">Click the **Work order purchase** button to open the **Work order purchase** list to see a list of purchase orders related to the work orders in the work order pool.</span></span>
+16. <span data-ttu-id="62973-131">Aby wyświetlić listę zamówień zakupu na zakupy powiązanych ze wszystkimi zleceniami pracy uwzględnionmi w puli zleceń pracy, w okienku akcji na karcie **Pula zleceń pracy**, w grupie **Zaopatrzenie** wybierz pozycję **Zakup zlecenia pracy**, aby otworzyć stronę listy **Zakup zlecenia pracy**.</span><span class="sxs-lookup"><span data-stu-id="62973-131">To view a list of purchase orders that are related to the work orders in the work order pool, on the Action Pane, on the **Work order pool** tab, in the **Procurement** group, select **Work order purchase** to open the **Work order purchase** list page.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="fb607-132">Jeśli pula zleceń roboczych nie jest już odpowiednia dla planowania pracy, należy w widoku listy **Pula zleceń pracy** skonfigurować pole wyboru **aktywne** dla tej puli na wartość nie</span><span class="sxs-lookup"><span data-stu-id="fb607-132">When a work order pool is no longer relevant for your work planning, set the **Active** check box for that pool to "No" in the **Work order pool** list view.</span></span>
+><span data-ttu-id="62973-132">Jeśli pula zleceń roboczych nie jest już odpowiednia dla planowania pracy, należy ustawić opcję **Aktywne** jako **Nie** na widoku listy na stronie **Pula zleceń pracy**.</span><span class="sxs-lookup"><span data-stu-id="62973-132">When a work order pool is no longer relevant to your work planning, set the **Active** option for that pool to **No** in the list view of the **Work order pool** page.</span></span>
 
-<span data-ttu-id="fb607-133">Zaznacz pole **Usuń relacje zlecenia pracy**, jeśli chcesz usunąć wszystkie wiersze zlecenia, na przykład w celu utworzenia pustej puli, którą można później używać w innych zleceniach produkcyjnych.</span><span class="sxs-lookup"><span data-stu-id="fb607-133">Select the **Delete work order relations** check box if you want to delete all work order lines, for example to create an empty pool that you can later use for other work orders.</span></span> <span data-ttu-id="fb607-134">Pamiętaj, aby wyczyścić **Usuń relacje zlecenia pracy**, jeśli chcesz użyć puli zleceń roboczych do późniejszego utworzenia relacji zleceń</span><span class="sxs-lookup"><span data-stu-id="fb607-134">Remember to clear the **Delete work order relations** check box if you want to use the work order pool to create new work order relations later.</span></span>
+<span data-ttu-id="62973-133">Aby usunąć wszystkie wiersze zlecenia pracownika, należy określić opcję **Usuń relacje zleceń pracy** jako wartość **Tak**.</span><span class="sxs-lookup"><span data-stu-id="62973-133">To delete all worker order lines, set the **Delete work order relations** option to **Yes**.</span></span> <span data-ttu-id="62973-134">Ta opcja jest przydatna na przykład wtedy, gdy trzeba utworzyć pustą pulę, której można później użyć w przypadku innych zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="62973-134">This option is useful if, for example, you want to create an empty pool that you can use later for other work orders.</span></span> <span data-ttu-id="62973-135">Pamiętaj, aby ustawić opcję **Usuń relacje zlecenia pracy** na wartość **Nie**, jeśli chcesz użyć puli zleceń pracy do późniejszego utworzenia nowych relacji zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="62973-135">When you're ready to use the work order pool to create new work order relations later, remember to set the **Delete work order relations** option to **No**.</span></span>
 
+<span data-ttu-id="62973-136">Na poniższej ilustracji przedstawiono przykład strony listy **Pula zleceń pracy**.</span><span class="sxs-lookup"><span data-stu-id="62973-136">The illustration below shows an example of the **Work order pool** list page.</span></span>
 
 ![Rysunek 1](media/22-work-orders.png)
 
 
-## <a name="add-work-order-to-a-work-order-pool"></a><span data-ttu-id="fb607-136">Dodaj zlecenie pracy do puli zleceń pracy</span><span class="sxs-lookup"><span data-stu-id="fb607-136">Add work order to a work order pool</span></span>
+## <a name="add-a-work-order-to-a-work-order-pool"></a><span data-ttu-id="62973-138">Dodaj zlecenie pracy do puli zleceń pracy</span><span class="sxs-lookup"><span data-stu-id="62973-138">Add a work order to a work order pool</span></span>
 
-<span data-ttu-id="fb607-137">Jak opisano w sekcji powyżej, podczas tworzenia puli można dodawać zlecenia produkcyjne do puli zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="fb607-137">As described in the section above, you can add work orders to a work order pool when you create the pool.</span></span> <span data-ttu-id="fb607-138">Można również dodać zlecenie pracy do puli zleceń pracy z jednej z list **Wszystkie zlecenia pracy**.</span><span class="sxs-lookup"><span data-stu-id="fb607-138">You can also add a work order to a work order pool from one of the **All work orders** list.</span></span>
+<span data-ttu-id="62973-139">Jak opisano w poprzednij sekcji, podczas tworzenia puli można dodawać zlecenia pracy do puli zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="62973-139">As described in the previous section, you can add work orders to a work order pool when you create that pool.</span></span> <span data-ttu-id="62973-140">Można również dodawać zlecenia pracy do puli zleceń pracy na stronie listy **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.</span><span class="sxs-lookup"><span data-stu-id="62973-140">You can also add work orders to a work order pool on the **All work orders** or **Active work orders** list page.</span></span>
 
-1. <span data-ttu-id="fb607-139">Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.</span><span class="sxs-lookup"><span data-stu-id="fb607-139">Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.</span></span>
+1. <span data-ttu-id="62973-141">Wybierz zlecenie pracy, a następnie w okienku akcji na karcie **Zlecenie pracy**, w grupie **Zarządzaj** wybierz pozycję **Pula zleceń pracy**.</span><span class="sxs-lookup"><span data-stu-id="62973-141">Select the work order, and then, on the Action Pane, on the **Work order** tab, in the **Maintain** group, select **Work order pool**.</span></span>
 
-2. <span data-ttu-id="fb607-140">Wybierz zlecenie pracy z listy i kliknij przycisk **Pula zleceń pracy.**</span><span class="sxs-lookup"><span data-stu-id="fb607-140">Select the work order in the list, and click **Work order pool**.</span></span>
+2. <span data-ttu-id="62973-142">Wybierz zlecenie pracy z listy i kliknij przycisk **Pula zleceń pracy.**</span><span class="sxs-lookup"><span data-stu-id="62973-142">Select the work order in the list, and click **Work order pool**.</span></span>
 
-3. <span data-ttu-id="fb607-141">Wybierz opcję „Dodaj” w **Dodaj/Usuń**.</span><span class="sxs-lookup"><span data-stu-id="fb607-141">Select "Add" in the **Add/remove** field.</span></span>
+3. <span data-ttu-id="62973-143">W oknie dialogowym **Obsługa puli zleceń pracy**, w polu **Dodaj/Usuń** wybierz opcję **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="62973-143">In the **Maintain work order pool** dialog, in the **Add/remove** field, select **Add**.</span></span>
 
-4. <span data-ttu-id="fb607-142">Wybierz pulę zleceń pracy w polu **Pula**.</span><span class="sxs-lookup"><span data-stu-id="fb607-142">Select the work order pool in the **Pool** field.</span></span>
+4. <span data-ttu-id="62973-144">W polu **Pula** wybierz pulę zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="62973-144">In the **Pool** field, select the work order pool.</span></span>
 
-5. <span data-ttu-id="fb607-143">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="fb607-143">Click **OK**.</span></span>
+5. <span data-ttu-id="62973-145">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="62973-145">Select **OK**.</span></span>
 
-6. <span data-ttu-id="fb607-144">Po dodaniu zlecenia pracy do puli zleceń pracy, jeśli zlecenie ma zostać umieszczone w konkretnej kolejności w puli: Otwórz jedną z stron listy pul zleceń, wybierz pulę i kliknij przycisk **Edytuj**i dostosuj kolejność sortowania zleceń pracy w puli w formularzu **Pula zleceń roboczych** > karta skrócona **Zlecenia pracy** > pole **Porządek sortowania**.</span><span class="sxs-lookup"><span data-stu-id="fb607-144">After you have added a work order to a work order pool, if you want to place the work order in a specific sequence in the pool: Open one of the work order pools list pages, select the pool and click **Edit**, and adjust the sort order of the work orders included in pool in the **Work order pool** form > **Work orders** FastTab > **Sort order** field.</span></span>
+6. <span data-ttu-id="62973-146">Aby umieścić zlecenie pracy dodane w określonym zleceniu w puli zleceń pracy, na stronie listy **Wszystkie pule zleceń pracy** lub **Aktywne pule zleceń pracy** wybierz pulę, a następnie wybierz opcję **Edytuj**.</span><span class="sxs-lookup"><span data-stu-id="62973-146">To put the work order that you added in a specific order in the work order pool, on the **All work order pools** or **Active work order pools** list page, select the pool, and then select **Edit**.</span></span> <span data-ttu-id="62973-147">Następnie na stronie **Pula zleceń pracy** na skróconej karcie **Zlecenia pracy** za pomocą pola **Porządek sortowania** można dostosowć kolejność sortowania zleceń pracy uwzględnionych w puli.</span><span class="sxs-lookup"><span data-stu-id="62973-147">Then, on the **Work order pool** page, on the **Work orders** FastTab, use the **Sort order** field to adjust the sort order of the work orders that are included in pool.</span></span>
 
-<span data-ttu-id="fb607-145">Jeśli chcesz usunąć wybrane zlecenie pracy z puli zleceń pracy, wybierz opcję „Usuń” w kroku 3.</span><span class="sxs-lookup"><span data-stu-id="fb607-145">If you want to remove the selected work order from a work order pool, select "Remove" in step 3.</span></span>
+<span data-ttu-id="62973-148">Jeśli chcesz usunąć wybrane zlecenie pracy z puli zleceń pracy, powtórz te kroki, ale wybierając opcję **Usuń** w kroku 3.</span><span class="sxs-lookup"><span data-stu-id="62973-148">To remove a work order from a work order pool, repeat these steps, but select **Remove** in step 3.</span></span>
 
