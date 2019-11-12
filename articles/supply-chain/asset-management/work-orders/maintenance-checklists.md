@@ -3,7 +3,7 @@ title: Listy kontrolne konserwacji
 description: W tym temacie opisano listy kontrolne konserwacji w module Zarządzanie składnikami majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,65 +16,67 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 325ff1fa0811d6aac5189cc69f21483fce6b3e8f
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 4ffdf2a997eab741521745ec8207f4f980740ecf
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875846"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626277"
 ---
 # <a name="maintenance-checklists"></a>Listy kontrolne konserwacji
 
-
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-Listy kontrolne konserwacji służą do ustawiania typów zadań konserwacji i używane podczas pracy z zleceniem pracy. Wypełnianie list kontrolnych konserwacji jest częścią ukończenia zlecenia produkcyjnego. Aby uzyskać więcej informacji zobacz sekcję [Kategorie typów zadań obsługi i typy zadań serwisowych, warianty typu zadań obsługi, handel zadaniami konserwacyjnymi oraz listy kontrolne konserwacji](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md), aby dowiedzieć się więcej o tym jak rozpocząć listy kontrolne konserwacji na typach zadań konserwacji w formularzu **Ustawienia domyślne typu zadania konserwacji**
 
-Podczas pracy z listami kontrolnymi na zleceniu pracy można wypełnić wstępnie zdefiniowane listy kontrolne konserwacji, które są związane z typami zadań konserwacji. Można również dodać dodatkowe listy kontrolne konserwacji.
+Lista kontrolna konserwowanego składnika majątku jest konfigurowana w obrębie typów zadań konserwacji. Listy kontrolne konserwowanego składnika majątku są wypełniane w ramach procesu ukończenia zlecenia produkcyjnego. Aby uzyskać więcej informacji o tym, jak skonfigurować listy kontrolne konserwowanego składnika majątku w obrębie typów zadań konserwacji na stronie **Ustawienia domyślne typu zadania konserwacji**, zobacz [Kategorie typów zadań obsługi i typy zadań serwisowych, warianty typu zadań obsługi, zawody zadań konserwacji oraz listy kontrolne konserwacji](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
-## <a name="fill-out-a-maintenance-checklist"></a>Wypełnij listę kontrolną konserwacji
+Podczas pracy z listami kontrolnymi konserwowanych składników majątku na zleceniu pracy można wypełnić wstępnie zdefiniowane listy kontrolne, które są związane z typami zadań konserwacji. Można również dodać więcej list kontrolnych konserwowanych składników majątku.
+
+
+## <a name="fill-in-a-maintenance-checklist"></a>Wypełnianie listy kontrolnej konserwowanego składnika majątku
 
 1. Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
-2. Wybierz zlecenie pracy z listy i kliknij przycisk **Lista kontrolna konserwowanego składnika majątku**.
+2. Wybierz zlecenie produkcyjne, a następnie w okienku akcji na karcie **Zlecenie pracy**, w grupie **Wiersze** wybierz pozycję **Lista kontrolna konserwowanego składnika majątku**.
 
-3. Na **Lista kontrolna konserwowanego składnika majątku zadania zlecenia pracy** są wyświetlane listy kontrolne obsługi wszystkich zadań związanych z zleceniem pracy. Jeśli zadania zlecenia produkcyjnego mają różne typy zadań obsługi, listy kontrolne konserwacji mogą się różnić w poszczególnych zadaniach zlecenia Wybierz zadanie zlecenia pracy, które ma być używane z pokrewną listą kontrolną obsługi technicznej. Szczegóły wybranego wiersza listy prac są wyświetlane w skróconej karcie **Szczegóły wiersza**.
+3. Strona **Lista kontrolna konserwowanego składnika majątku zadania zlecenia pracy** są wyświetlane listy kontrolne wszystkich zadań związanych z zleceniem pracy. Jeśli zadania zlecenia pracy mają różne typy zadań konserwacji, listy kontrolne konserwowanego składnika majątku mogą się różnić w poszczególnych zadaniach zlecenia pracy. Wybierz zadanie zlecenia pracy, które ma być używane z pokrewną listą kontrolną obsługi technicznej. Szczegóły wybranego wiersza listy kontrolnej konserwowanego składnika majątku są wyświetlane na skróconej karcie **Szczegóły wiersza**.
 
-4. Wypełnij wszystkie wiersze listy prac, pojedynczo, w kolejności, w jakiej są pokazywane. Wiersz listy kontrolnej obsługi typu „nagłówek” jest używany jako nagłówek do grupowania poniższych wierszy listy czynności konserwacyjnych. Nie jest wymagane wypełnianie nagłówka, ale podobnie jak we wszystkich typach wierszy listy kontrolnej obsługi, można dodać **notatkę** do nagłówka
+4. Wypełnij wszystkie wiersze listy kontrolnej konserwowanego składnika majątku, pojedynczo, w kolejności, w jakiej są wyświetlane. Wiersz listy kontrolnej konserwowanego składnika majątku można wypełnić, wypełniając pola na skróconej karcie **Szczegóły wiersza**. Informacje wymagane do wypełnienia wiersza mogą się różnić w zależności od jego typu. Na przykład w wierszu typu **Tekst** jest dodawana notatka opisującą wynik kontroli. W wierszu typu **Miara** jest wprowadzana wartość licznika odczytana na sprzęcie, a w razie potrzeby można również dodać notatkę. Wiersz listy kontrolnej konserwowanego składnika majątku typu **Nagłówek** jest używany jako nagłówek do grupowania wierszy listy kontrolnej konserwowanego składnika majątku wyświetlanych pod nagłówkiem. Nagłówka nie trzeba wypełniać. Podobnie jak w przypadku wszystkich innych typów wierszy listy kontrolnej konserwowanego składnika majątku do wiersza typu **Nagłówek** można dodać notatkę.
 
-5. Jeśli instrukcje są powiązane z wierszem listy kontrolnej obsługi, jest zaznaczone pole wyboru **instrukcje,**. Przeczytaj instrukcje dotyczące wybranego wiersza listy kontrolnej obsługi w skróconej karcie **Szczegóły wiersza** > sekcja **Instrukcje**.
+5. Jeśli instrukcje są powiązane z wierszem listy kontrolnej obsługi, jest zaznaczone pole wyboru **instrukcje,**. Przeczytaj instrukcje dotyczące wybranego wiersza listy kontrolnej konserwowanego składnika majątku w polu **Instrukcje** na skróconej karcie **Szczegóły wiersza**.
 
-6. Informacje wymagane do wykonania wiersza listy kontrolnej dotyczącego obsługi mogą się różnić w zależności od typu listy kontrolnej obsługi. Wiersz listy kontrolnej eksploatacji można wypełnić, wypełniając pola w skróconej karcie **Szczegóły wiersza**. Na przykład w wierszu typu „tekst” należy dodać **notatkę** opisującą wynik tego wiersza listy kontrolnej. W wierszu typu „miara” należy dodać **wartość licznika** przeczytaną na sprzęcie, a w razie potrzeby można również dodać **notatkę**.
+6. Po zakończeniu wiersza listy kontrolnej konserwowanego składnika majątku zaznacz pole wyboru **Sprawdzono** w tym wierszu, aby oznaczyć go jako zakończony. Aby odrzucić wiersz listy kontrolnej konserwowanego składnika majątku, ponieważ nie jest on odpowiedni dla zadania zlecenia pracy, zaznacz pole wyboru **N/D** w wierszu. Jeśli pole wyboru **Wymagany** zostało zaznaczone w wierszu listy kontrolnej konserwowanego składnika majątku, należy zaznaczyć pole wyboru **Sprawdzono** lub pole wyboru **N/D**.
 
-- Po zakończeniu wiersza listy kontroli eksploatacji zaznacz pole wyboru **zaznaczone** w wierszu, aby je oznaczyć jako zakończone. Aby odrzucić wiersz listy kontrolnej obsługi, ponieważ nie jest on odpowiedni dla zadania zlecenia, zaznacz pole wyboru **N/D** w wierszu. Jeśli wiersz listy kontrolnej obsługi jest oznaczony jako **obowiązkowy**, należy go oznaczyć jako „zaznaczone” lub „N/D”.  
-- Rejestracje listy kontrolnej obsługi można aktualizować tylko wtedy, gdy zlecenie produkcyjne jest w stanie cyklu życia: [Aktywne](../setup-for-work-orders/work-order-lifecycle-states.md).  
+>[!NOTE]
+>Rejestracje listy kontrolnej obsługi można aktualizować tylko wtedy, gdy zlecenie produkcyjne jest w stanie cyklu życia: [Aktywne](../setup-for-work-orders/work-order-lifecycle-states.md).  
 
 
 ## <a name="add-a-maintenance-checklist-line"></a>Dodaj wiersze listy kontrolnej konserwowanego składnika majątku
 
-Listy kontrolne konserwacji są tworzone na podstawie definicji zadania obsługi typu domyślnego i przenoszonego do zadania zlecenia. W razie potrzeby można dodać wiersze listy prac do zadania zlecenia. Ręcznie dodane wiersze listy kontrolnej obsługi pobierają odwołanie „ręczne”.
+Listy kontrolne konserwowanego składnika majątku są tworzone na podstawie definicji domyślnego typu zadania konserwacji i przenoszone do zadania zlecenia pracy. W razie potrzeby można dodać wiersze listy kontrolnej konserwowanego składnika majątku do zadania zlecenia pracy. Wiersze listy kontrolnej konserwowanego składnika majątku, które dodajesz ręcznie, otrzymują oznaczenie **Ręczne**.
 
-1. Na **Lista kontrolna konserwowanego składnika majątku zadania zlecenia pracy** wybierz zlecenie pracy, dla którego chcesz dodać listę kontrolną.
+1. Na stronie **Lista kontrolna konserwowanego składnika majątku zadania zlecenia pracy** wybierz zadanie zlecenia pracy, dla którego chcesz dodać taką listę kontrolną.
 
-2. W wierszach skróconej karty **Wiersze listy kontrolnej konserwowanego składnika majątku** wybierz wiersz listy kontrolnej konserwacji i naciśnij przycisk strzałki w dół na klawiaturze, jeśli chcesz wstawić nowy wiersz po wybranym wierszu listy prac konserwacyjnych. Ten numer jest generowany automatycznie na podstawie sekwencji numerów zdefiniowanej w polu **Numer wiersza** . Można również wybrać wiersz listy prac i kliknąć przycisk **Dodaj wiersz**, jeśli nowy wiersz ma zostać wstawiony powyżej wybranego wiersza listy czynności konserwacyjnych.
+2. Na skróconej karcie **Wiersze listy kontrolnej konserwowanego składnika majątku** wybierz wiersz listy. Następnie — aby wstawić nowy wiersz po wybranym wierszu — naciśnij klawisz ze **strzałką w dół**. Kolejny numer w sekwencji jest automatycznie wprowadzany w polu **Numer wiersza**. Aby wstawić nowy wiersz przed wybranym wierszem, wybierz pozycję **Dodaj wiersz**. 
 
-3. Wstaw nazwę lokalizacji listy kontrolną konserwowanego składnika majątku w polu **Nazwa**.
+3. W polu **Nazwa** wprowadź nazwę listy kontrolnej konserwowanego składnika majątku.
 
-4. W polu **Typ** wybierz typ wiersza listy kontrolnej konserwacji. Dla każdej listy kontrolną konserwowanego składnika majątku pola powiązane są wyświetlane w skróconej karcie **Szczegóły wiersza**.  
-  a. „Tekst” służy do dodawania wiersza listy kontrolnej obsługi z tekstem opisu elementu do wykonania. Ten typ listy kontrolnej obsługi może być używany, jeśli pracownik ma sprawdzać lub sprawdzać coś, bez oczekiwania określonego (mierzalnego) wyniku. Wstaw opis czynności, które należy wykonać , w sekcji **instrukcje** w skróconej karcie **szczegóły wiersza**. b. Nagłówek służy do grupowania wierszy listy czynności, które są widoczne poniżej nagłówka. Jest to przydatne w przypadku kilku wierszy listy kontrolnej obsługi, które można podzielić na określone obszary. Wpisz nazwę opisową w polu **Nazwa**.  
-  c. „Szablon” nie ma stosowania, jeśli wiersz listy kontrolnej obsługi został dodany ręcznie w zadaniu zlecenia produkcyjnego.  
-  dz. „Zmienna” służy do definiowania możliwego wyniku w zakresie w wierszu listy kontrolnej obsługi. Zarządzanie wariantami w listach kontrolnych konserwowanych składników majątku jest opisane w [Kategorie typów zadań obsługi i typy zadań serwisowych, warianty typu zadań obsługi, handel zadaniami konserwacyjnymi oraz listy kontrolne konserwacji](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md). Wstaw nazwę opisującą wariant w polu **Nazwa**. Zaznacz typ zmiennej w polu **Zmienna**. Wstaw opis czynności, które należy wykonać , w sekcji **instrukcje** w skróconej karcie **szczegóły wiersza**.  
-  e. „Miara” jest używana do rejestrowania konkretnej miary. Wstaw nazwę miary w polu **Nazwa**. W skróconej karcie **szczegóływiersza** wybierz opcję **licznik** i **jednostka**. Wstaw opis czynności, które należy wykonać, w sekcji **instrukcje**.  
+4. W polu **Typ** wybierz typ wiersza listy kontrolnej konserwacji. Skrócona karta **Szczegóły wiersza** zawiera powiązane pola dla każdego typu listy kontrolnej konserwowanego składnika majątku.
+    - **Tekst** — ten typ służy do dodawania wiersza listy kontrolnej konserwowanego składnika majątku z tekstem opisującym zadanie do wykonania. Można na przykład użyć tego typu, jeśli pracownik chce coś sprawdzić lub zbadać, ale nie oczekujesz określonego (mierzalnego) wyniku. Po wybraniu tego typu wprowadź tekst opisujący zadanie do wykonania na skróconej karcie **Szczegóły wiersza** w polu **Instrukcje**.
+    - **Nagłówek** — wiersz listy kontrolnej konserwowanego składnika majątku tego typu jest używany jako nagłówek do grupowania wierszy listy kontrolnej konserwowanego składnika majątku wyświetlanych pod nim. ten typ jest przydatny w przypadku kilku wierszy listy kontrolnej obsługi, które można podzielić na określone obszary. Po wybraniu tego typu w polu **Nazwa** wprowadź opisową nazwę.
+    - **Szablon** — ten typ nie ma zastosowania, jeśli ręcznie dodajesz wiersz listy kontrolnej konserwowanego składnika majątku w zadaniu zlecenia pracy.  
+    - **Zmienna** — ten typ służy do definiowania możliwego wyniku w zakresie w wierszu listy kontrolnej konserwowanego składnika majątku. Informacje na temat konfigurowania zmiennych na listach kontrolnych konserwowanych składników majątku można znaleźć w temacie [Kategorie typów zadań obsługi i typy zadań serwisowych, warianty typu zadań obsługi, zawody zadań konserwacyjnych oraz listy kontrolne konserwacji](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md). Po wybraniu tego typu w polu **Nazwa** wprowadź nazwę opisującą zmienną. Na skróconej karcie **Szczegóły wiersza** w polu **Zmienna** wybierz zmienną. W polu **Instrukcje** wprowadź tekst opisujący czynności do wykonania.
+    - **Miara** — ten typ służy do rejestrowania określonej miary w wierszu listy kontrolnej konserwowanego składnika majątku. Po wybraniu tego typu w polu **Nazwa** wprowadź nazwę miary. Na skróconej karcie **Szczegóły wiersza** w polach **Licznik** i **Jednostka** wybierz odpowiednie wartości. W polu **Instrukcje** wprowadź tekst opisujący czynności do wykonania.
 
-5. Po zakończeniu ręcznego dodawania wierszy listy prac należy wypełnić wiersze w sposób opisany w sekcji powyżej.
+5. Po zakończeniu ręcznego dodawania wierszy listy kontrolnej konserwowanego składnika majątku wypełnij wiersze w powyższej sekcji **Wypełnianie listy kontrolnej konserwowanego składnika majątku**.
 
 >[!NOTE]
->W obszarze **Lista kontrolna konserwowanego składnika majątku zadania zlecenia pracy** nie można usuwać wierszy listy prac z odwołaniem „typ zadania”. Wiersze listy kontrolnej obsługi można usunąć tylko z odwołaniem „ręczna”, które zostało utworzone ręcznie lub przez innych pracowników obsługi technicznej
+>Na stronie **Lista kontrolna konserwowanego składnika majątku zadania zlecenia pracy** nie można usuwać wierszy listy kontrolnej konserwowanego składnika majątku z oznaczeniem **Typ zadania**. Można usuwać tylko wiersze listy kontrolnej konserwowanego składnika majątku, które zostały utworzone ręcznie przez Ciebie lub innych konserwatorów i które mają oznaczenie **Ręczne**.
 
+Na poniższej ilustracji pokazano przykład listy kontrolnej konserwowanego składnika majątku.
 
 ![Rysunek 1](media/14-work-orders.png)
 

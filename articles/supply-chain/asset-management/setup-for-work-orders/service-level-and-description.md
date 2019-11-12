@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e645c25208f55b1032bc7f7c181c72db7a2f265
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 7dd577c930c6cc17da6baee30d3558656de01a09
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874654"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569830"
 ---
 # <a name="service-level-and-description"></a>Poziom i opis usługi
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Podczas tworzenia zlecenia pracy można określić dla niego poziomy usług i dodać do niego ogólny opis. Poziomy usługi zlecenia pracy można utworzyć na stronie **Poziomy usługi zlecenia pracy** i opisy na stronie **Opis zlecenia pracy**.
 
@@ -48,7 +48,7 @@ Podczas tworzenia zlecenia pracy można określić dla niego poziomy usług i do
 8. Aby określić godzinę zakończenia zlecenia pracy oprócz daty zakończenia, należy w polu **Ustaw godzinę zakończenia** wybrać opcję **tak**. Następnie wprowadź godzinę zakończenia w polu **Godzina zakończenia**. Ustawienie opcji na wartość **nie** spowoduje, że zostanie użyta bieżąca godzina dnia.
 9. Wybierz opcję **Zapisz**.
 
-![Rysunek 1](media/19-setup-for-work-orders.png)
+![Strona Poziom usługi zleceń pracy](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>Stwórz opis
 

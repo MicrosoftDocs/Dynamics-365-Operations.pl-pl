@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Ten temat odnosi się do Dynamics 365 Retail i Dynamics 365 Commerce (wersja zapoznawcza).
+> Ten temat odnosi się do [Dynamics 365 Retail](../index.md) i [Dynamics 365 Commerce (wersja zapoznawcza)](../../commerce/index.md).

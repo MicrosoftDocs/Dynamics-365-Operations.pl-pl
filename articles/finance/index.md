@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b48313e93573e3214de0ee02c4894b000dc18f67
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 34af4cc05b6966b5f118c1dd2adbda288a0f3da1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176050"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570132"
 ---
 # <a name="financial-management-home-page"></a>Zarządzanie finansami — strona główna
 
@@ -69,4 +69,8 @@ Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 
 ### <a name="countryregion-functionality"></a>Funkcje specyficzne dla kraju/regionu
 
 Przepisy krajowe/regionalne wpływają na ustawienia podatku i inne aspekty zarządzania finansami. Więcej informacji na temat funkcjonalności właściwych dla kraju/regionu zawiera sekcja [Funkcje związane z lokalizacją i wymagane przepisami prawa](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) zawartości Pomocy.
+
+### <a name="additional-content"></a>Dodatkowa zawartość
+
+Funkcja zarządzania łańcuchem dostaw obejmuje części procesu „procure-to-pay” zawierającego zapotrzebowanie, zamawianie, przyjmowanie, fakturowanie i płatności za towary i usługi, które kupuje organizacja. Więcej informacji na temat możliwości zarządzania zakupami, zapasami i produkcją zawiera [!strona główna aplikacji Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
 

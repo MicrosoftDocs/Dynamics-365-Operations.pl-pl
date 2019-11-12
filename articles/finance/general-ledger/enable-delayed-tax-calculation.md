@@ -1,6 +1,6 @@
 ---
-title: Włącz opóźnione obliczanie podatku w arkuszu
-description: W tym temacie objaśniono sposób używania funkcji **Włącz opóźnione obliczanie podatku dla arkusza** w celu zwiększenia wydajności obliczania podatku, gdy objętość wierszy arkusza jest duża.
+title: Włączanie opóźnionego obliczania podatku w arkuszach
+description: W tym temacie objaśniono sposób włączania funkcji opóźnionego obliczania podatku w celu zwiększenia wydajności obliczeń podatku, gdy liczba wierszy arkusza jest duża.
 author: ericwang
 manager: Ann Beebe
 ms.date: 09/18/2019
@@ -18,55 +18,50 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5a8ae30a007d3e2b8b7a9bc9eb7786f6e58246d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e336be5468106007e1f5adf26bf272c88b8b413b
+ms.sourcegitcommit: bc9b65b73bf6443581c2869a9ecfd0675f0be566
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179367"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2623528"
 ---
-# <a name="enable-delayed-tax-calculation-on-journal"></a>Włącz opóźnione obliczanie podatku w arkuszu
+# <a name="enable-delayed-tax-calculation-on-journals"></a>Włączanie opóźnionego obliczania podatku w arkuszach
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-W tym temacie objaśniono sposób używania funkcji **Włącz opóźnione obliczanie podatku dla arkusza** w celu zwiększenia wydajności obliczania podatku, gdy objętość wierszy arkusza jest duża.
+W tym temacie wyjaśniono, w jaki sposób można opóźnić obliczanie podatku w arkuszach. Dzięki tej funkcji można poprawić wydajność obliczeń podatku, gdy istnieje wiele wierszy arkusza.
 
-Bieżące zachowanie przy obliczaniu podatku w arkuszu jest wyzwalane w czasie rzeczywistym, gdy użytkownik zaktualizuje pola związane z podatkiem, np. grupę podatków/grupę podatków dla towaru. Każda aktualizacja na poziomie wiersza arkusza ponownie obliczy kwotę podatku we wszystkich wierszach arkusza. Ułatwia użytkownikowi wyświetlanie obliczonej kwoty podatku w czasie rzeczywistym, ale może również spowodować, że powodować problemy wydajności jeśli liczba wierszy w arkuszu jest duża.
+Domyślnie kwoty podatku w wierszach arkusza są obliczane po każdej aktualizacji pól związanych z podatkiem. Pola te obejmują pola dotyczące grup podatków i grup podatków dla pozycji. Każda aktualizacja wiersza arkusza powoduje ponowne obliczenie kwot podatku dla wszystkich wierszy arkusza. Chociaż to zachowanie pomaga użytkownikowi widzieć kwoty podatku obliczone w czasie rzeczywistym, może również wpływać na wydajność, jeśli liczba wierszy arkusza jest bardzo duża.
 
-Ta funkcja stanowi opcję opóźnienia obliczania podatku w celu rozwiązania problemów z wydajnością. Jeśli ta funkcja jest włączona, kwota podatku będzie obliczana tylko wtedy, gdy użytkownik kliknie przycisk „podatek” lub zaksięguje arkusz.
+Funkcja opóźnionego obliczania podatku pozwala opóźnić obliczanie podatku w arkuszach, co ułatwia rozwiązywanie problemów z wydajnością. Gdy ta funkcja jest włączona, kwoty podatku będą obliczane tylko wtedy, gdy użytkownik wybierze pozycję **Podatek** lub zaksięguje arkusz.
 
-Użytkownik może włączać/wyłączać parametr na trzech poziomach:
-- Według firmy
+Obliczanie podatku można opóźnić na trzech poziomach:
+
+- Firma
 - Nazwa arkusza
 - Nagłówek arkusza
 
-System przyjmie wartość parametru w nagłówku arkusza jako wersję ostateczną. Wartość parametru w nagłówku arkusza będzie domyślnie określana na podstawie nazwy arkusza. Podczas tworzenia nazwy arkusza wartość parametru w polu nazwa arkusza jest ustawiana domyślnie na podstawie wartości parametru księgi głównej
+System nadaje priorytet ustawieniu dla nagłówka arkusza. Domyślnie to ustawienie jest pobierane z nazwy arkusza. Domyślnie ustawienie dla nazwy arkusza jest pobierane z ustawienia na stronie **Parametry księgi głównej** podczas tworzenia nazwy arkusza. W poniższych sekcjach przedstawiono sposób włączania opóźnionego obliczania podatku dla firm, nazw arkuszy i nagłówków arkuszy.
 
-Wartości pól „rzeczywista kwota podatku” i „obliczona kwota podatku” w arkuszu zostaną ukryte, jeśli ten parametr jest włączony Celem jest nie wprowadzać użytkownika w błąd, ponieważ wartość tych dwóch pól będzie zawsze wynosiła 0 przed rozpoczęciem obliczenia podatku przez użytkownika.
+## <a name="turn-on-delayed-tax-calculation-at-the-legal-entity-level"></a>Włączanie opóźnionego obliczania podatku na poziomie firmy
 
-## <a name="enable-delayed-tax-calculation-by-legal-entity"></a>Włącz opóźnione obliczanie podatku według firm
+1. Przejdź do pozycji **Księga główna \> Ustawienia księgi \> Parametry księgi głównej**.
+2. Na karcie **Podatek**, na skróconej karcie **Ogólne** ustaw opcję **Obliczanie podatku opóźnionego** na **Tak**.
 
-1. Wybierz kolejno opcje **Księga główna > Ustawienia księgi > Parametry księgi głównej**
-2. Kliknij kartę **Podatek**.
-3. Na skróconej karcie **Ogólne** znajdź parametr **Obliczanie podatku opóźnionego**, włącz/wyłącz
+![Obraz parametrów księgi głównej](media/delayed-tax-calculation-gl.png)
 
-![](media/delayed-tax-calculation-gl.png)
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>Włączanie opóźnionego obliczania podatku na poziomie nazwy arkusza
 
+1. Przejdź do pozycji **Księga główna \> Konfiguracja arkusza \> Nazwy arkuszy**.
+2. Na skróconej karcie **Ogólne**, w sekcji **Podatek** ustaw opcję **Obliczanie podatku opóźnionego** na **Tak**.
 
+![Obraz nazw arkusza](media/delayed-tax-calculation-journal-name.png)
 
-## <a name="enable-delayed-tax-calculation-by-journal-name"></a>Włącz opóźnione obliczanie podatku w arkuszu po nazwie arkusza
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>Włączanie opóźnionego obliczania podatku na poziomie nagłówka arkusza
 
-1. Wybierz kolejno opcje **Księga główna > Konfiguracja arkusza > Nazwy arkuszy**
-2. Na skróconej karcie **Ogólne** znajdź parametr **Obliczanie podatku opóźnionego**, włącz/wyłącz
+1. Przejdź do pozycji **Księga główna \> Wpisy w arkuszu \> Arkusze finansowe**.
+2. Wybierz pozycję **Nowy**.
+3. Wybierz nazwę arkusza.
+4. Na karcie **Ustawienia** ustaw opcję **Obliczanie podatku opóźnionego** na **Tak**.
 
-![](media/delayed-tax-calculation-journal-name.png)
-
-## <a name="enable-delayed-tax-calculation-by-journal"></a>Włącz opóźnione obliczanie podatku po arkuszu
-
-1. Wybierz kolejno **Księga główna > Wpisy w arkuszu > Arkusze finansowe**.
-2. Kliknij przycisk **Nowy**
-3. Wybierz nazwę arkusza
-4. Kliknij przycisk **Ustawienia**
-5. Znajdź parametr **Obliczanie podatku opóźnionego**, włącz/wyłącz
-
-![](media/delayed-tax-calculation-journal-header.png)
+![Obraz strony arkusza finansowego](media/delayed-tax-calculation-journal-header.png)

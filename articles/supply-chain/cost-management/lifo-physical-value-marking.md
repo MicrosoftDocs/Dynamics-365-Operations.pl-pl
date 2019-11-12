@@ -19,18 +19,16 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0ea2c71458f92d048706a6e263d0da1830bdcde
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 792ff4d7b72ce092fe1ad92e53172cf40f0ecf26
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565703"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569278"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO z wartością fizyczną i oznaczeniami
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Ostatni na wejściu — pierwszy na wyjściu (Last in, first out; LIFO) to model magazynu, w którym ostatnie (najnowsze) przyjęcia na magazyn są wydawane jako pierwsze. Rozchody zapasów są rozliczane w kolejności odwrotnej do odbierania towarów w magazynie, na podstawie daty transakcji magazynowej. 
 
@@ -56,7 +54,9 @@ W tym przykładzie FIFO grupa modelu towaru nie jest oznaczona i nie zawiera war
 -   5b. Finansowe wydanie z magazynu ilości równej 1 o jednostkowym koszcie własnym równym 20,00 zł (średnia krocząca transakcji zaktualizowanych finansowo).
 -   6. Wykonywane jest zamknięcie magazynu. Na podstawie metody LIFO ostatnie zaktualizowane finansowo wydanie będzie rozliczane względem ostatniego zaktualizowanego finansowo przyjęcia. Dla transakcji wydania zostaje dokonana korekta równa 10,00 zł.
 
-Nowa średnia krocząca kosztu własnego odzwierciedla średnią dla finansowo zaktualizowanych transakcji wynoszącą 15,00 zł. Poniższa ilustracja pokazuje efekt użycia modelu zapasów LIFO do tej serii transakcji, gdy nie jest używana opcja **Włącz wartość fizyczną**. ![Model LIFO bez uwzględniania wartości fizycznej](./media/lifowithoutincludephysicalvalue.gif) 
+Nowa średnia krocząca kosztu własnego odzwierciedla średnią dla finansowo zaktualizowanych transakcji wynoszącą 15,00 zł. Poniższa ilustracja pokazuje efekt użycia modelu zapasów LIFO do tej serii transakcji, gdy nie jest używana opcja **Włącz wartość fizyczną**. 
+
+![Model LIFO bez uwzględniania wartości fizycznej](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 
@@ -90,7 +90,9 @@ Na ilustracji przedstawiono następujące transakcje:
 
 Transakcja 6a zostanie skorygowana względem transakcji przyjęcia 4b. System nie rozliczy tych transakcji, ponieważ przyjęcie jest zaktualizowane fizycznie, ale nie finansowo. W zamian dla fizycznej transakcji wydania zostanie tylko dokonana korekta równa 8,75 zł. Transakcja 5b zostanie skorygowana względem fizycznej transakcji przyjęcia 3a. System nie rozliczy tych transakcji, ponieważ nie są one obie zaktualizowane finansowo. Zamiast tego dla transakcji wydania zostanie tylko dokonana korekta równa -3,75 zł. Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 20,00 USD. 
 
-Poniższa ilustracja pokazuje efekty modelu magazynu LIFO na tę serię transakcji, gdy używana jest opcja **Włącz wartość fizyczną**. ![Model LIFO z uwzględnianiem wartości fizycznej](./media/lifowithincludephysicalvalue.gif) 
+Poniższa ilustracja pokazuje efekty modelu magazynu LIFO na tę serię transakcji, gdy używana jest opcja **Włącz wartość fizyczną**. 
+
+![Model LIFO z uwzględnianiem wartości fizycznej](./media/lifowithincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 
@@ -132,7 +134,9 @@ Na ilustracji przedstawiono następujące transakcje:
 
 Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. 
 
-Poniższa ilustracja pokazuje wpływ modelu magazynowego LIFO na tę serię transakcji, jeśli używane są oznaczenia między przychodem i rozchodem. ![Model LIFO z oznaczaniem](./media/lifowithmarking.gif) 
+Poniższa ilustracja pokazuje wpływ modelu magazynowego LIFO na tę serię transakcji, jeśli używane są oznaczenia między przychodem i rozchodem. 
+
+![Model LIFO z oznaczaniem](./media/lifowithmarking.gif) 
 
 **Objaśnienia do wykresu**
 
@@ -146,7 +150,4 @@ Poniższa ilustracja pokazuje wpływ modelu magazynowego LIFO na tę serię tran
 - Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
 - Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
 - Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
-
-
-
 

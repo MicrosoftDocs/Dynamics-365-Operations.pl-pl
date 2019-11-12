@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4fc32d337be1f71932555fcb062a8d05c9ca9bda
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 1aee14c869d84bef38a738bfe78fd09ee7f82d94
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918425"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652386"
 ---
 # <a name="asset-kpis"></a>Wskaźniki KPI składnika majątku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 W module Zarządzanie składnikami majątku można obliczać różne kluczowe wskaźniki wydajności (KPI) dla składników majątku i typów składników majątku. Wskaźniki KPI służą do uzyskiwania przeglądu wydajności składników majątku w odniesieniu do, na przykład, przestoju, czasu przestoju, czasu naprawy i średniego czasu między awariami (MTBF).
 
-1. Kliknij **Zarządzanie składnikami majątku** > **Zapytania** > **Składniki majątku** > **Wskaźniki KPI składnika majątku **.
+1. Kliknij **Zarządzanie składnikami majątku** > **Zapytania** > **Składniki majątku** > **Wskaźniki KPI składnika majątku**.
 
 2. W oknie dialogowym **Oblicz wskaźniki KPI składnika majątku** wybrać **Skala czasu**, która ma być używana w obliczeniach, oraz okres w polach **Od dnia** i **Do dnia**. 
 
@@ -85,8 +85,8 @@ W poniższej tabeli znajdziesz opisy pól na stronie **Wskaźniki KPI składnika
 
 Na poniższym rysunku przedstawiono zrzut ekranu obliczania KPI dla czterech składników majątku.
 
-![Rysunek 1](media/11-controlling-and-reporting.png)
+![Zrzut ekranu obliczenia wskaźnika KPI dla czterech składników majątku](media/11-controlling-and-reporting.png)
 
-- Można wybrać wiele składników majątku w **Wszystkie składniki majątku** i kliknąć przycisk **Wskaźniki KPI składnika majątku** KPI na karcie **Ogólne**. Następnie kliknij przycisk **OK** w oknie dialogowym **Oblicz wskaźniki KPI składnika majątku**, aby obliczyć wskaźniki KPI wybranych składników majątku.  
+- Można wybrać wiele składników majątku w obszarze **Wszystkie składniki majątku** i kliknąć przycisk **Wskaźniki KPI składnika majątku** na karcie **Ogólne**. Następnie kliknij przycisk **OK** w oknie dialogowym **Oblicz wskaźniki KPI składnika majątku**, aby obliczyć wskaźniki KPI wybranych składników majątku.  
 - Wyniki obliczeń wskaźnika KPI mogą obejmować [rejestracje przerw konserwacyjnych](../work-orders/maintenance-downtime.md), w zależności od konfiguracji i użycia kodów przyczyn przestojów związanych z konserwacją. 
 

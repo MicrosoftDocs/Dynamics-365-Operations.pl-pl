@@ -3,35 +3,35 @@ title: Typy składnika majątku
 description: W tym temacie wyjaśniono, jak tworzyć typy składników majątku w Zarządzaniu składnikami majątku. Opisano również elementy, które są związane z typami składników majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 288dac77f9d999012ec930ef2bca5c0921c2955f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.search.validFrom: 2019-09-30
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: a19b8c40dd7d48b2d78723c4411f1699819c4026
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783522"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626092"
 ---
 # <a name="asset-types"></a>Typy składników majątku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-W tym temacie wyjaśniono, jak utworzyć typy składników majątku. Opisano również elementy, które są związane z typami składników majątku. Typy składników majątku są używane jako kategorie ogólne dla składników majątku. Przykładami są maszyny CNC, aparatura pomiarowa i silniki samochodowe. Typy składników majątku są używane do zarządzania typami zadań (zadania konserwacyjne), stanami cyklu życia składników majątku, pomiarami składników majątku, atrybutami składników majątku, szablonem oceny warunków i modelami składników majątku, które można wybrać dla składnika majątku. Podczas tworzenia składnika majątku należy określić jego typ.
+
+W tym temacie wyjaśniono, jak utworzyć typy składników majątku. Opisano również elementy, które są związane z typami składników majątku. Typy składników majątku są używane jako kategorie ogólne dla składników majątku. Przykładami są maszyny CNC, aparatura pomiarowa i silniki samochodowe. Typy składników majątku są używane do zarządzania typami zadań konserwacyjnych (zadania konserwacyjne), stanami cyklu życia składników majątku, licznikami, atrybutami składników majątku, szablonem oceny warunków i modelami składników majątku, które można wybrać dla składnika majątku. Podczas tworzenia składnika majątku należy określić jego typ.
 
 Dla każdego typu składnika majątku można utworzyć odmiany ustawień typu. Na przykład jeśli masz typ składnika majątku o nazwie **Ciężarówki**, możesz utworzyć odmiany tego typu dla różnych producentów i modeli. Do każdego typu składnika majątku można dodać wymagane części zamienne i plany konserwacji.
 
@@ -39,35 +39,35 @@ Najpierw należy skonfigurować wymagane typy składników majątku. Następnie 
 
 ## <a name="create-an-asset-type"></a>Tworzenie typu składnika majątku
 
-1. Wybierz **Zarządzanie składnikami majątku** \> **Ustawienia** \> **Typy składników majątku** \> **Typy składników majątku**.
+1. Wybierz **Zarządzanie składnikami majątku** > **Ustawienia** > **Typy składników majątku** > **Typy składników majątku**.
 2. Wybierz **Nowy**, aby utworzyć typ składnika majątku.
 3. W polu **Typ składnika majątku** wprowadź identyfikator typu składnika majątku.
 4. W polu **Nazwa** wprowadź nazwę.
 5. W polu **Model cyklu życia składnika majątku** wybierz model cyklu życia składnika majątku. Aby uzyskać więcej informacji na temat stanów i modeli cyklu życia składnika majątku, zobacz temat [Stany cyklu życia składnika majątku](object-stages.md).
 6. Ustaw opcję **Suma** na **Tak**, jeśli podsumowane wartości kluczowego wskaźnika wydajności (KPI) powinny być obliczane dla składników majątku, które mają ten typ składnika majątku.
 7. Wybierz opcję **Zapisz**.
-8. Na skróconej karcie **typy zadań** wybierz typy zadań, które powinny być powiązane z typem zasobu:
+8. Na skróconej karcie **typy zadań konserwacji** wybierz typy zadań konserwacji, które powinny być powiązane z typem składnika majątku:
 
-    - Aby wybrać typ zadania, zaznacz go w polu **Pozostałe typy zadań** , a następnie wybierz przycisk strzałki w prawo w prawo ![Przycisk strzałki w prawo](media/29-setup-for-objects.png), aby przenieść go do sekcji **Wybrane typy zadań**.
-    - Aby wybrać wszystkie dostępne typy zadań, wybierz ![przycisk strzałki do przodu](media/30-setup-for-objects.png). Wszystkie typy zadań są przenoszone z pola **Pozostałe typy zadań** do pola **Wybrane typy zadań**.
-    - Aby anulować wybór typu zadania, wybierz je w polu **Wybrane typy zadań**, a następnie wybierz przycisk strzałki w lewo ![Przycisk strzałki w lewo](media/31-setup-for-objects.png), aby przenieść go do pola **Pozostałe typy zadań**.
+    - Aby wybrać typ zadania konserwacji, zaznacz go w polu **Pozostałe typy zadań konserwacji**, a następnie wybierz przycisk strzałki w prawo ![Przycisk strzałki w prawo](media/29-setup-for-objects.png), aby przenieść go do sekcji **Wybrane typy zadań konserwacji**.
+    - Aby wybrać wszystkie dostępne typy zadań konserwacji, wybierz ![przycisk strzałki do przodu](media/30-setup-for-objects.png). Wszystkie typy zadań konserwacji są przenoszone z pola **Pozostałe typy zadań konserwacji** do pola **Wybrane typy zadań konserwacji**.
+    - Aby anulować wybór typu zadania konserwacyjnego, wybierz je w polu **Wybrane typy zadań konserwacyjnych**, a następnie wybierz przycisk strzałki w lewo ![Przycisk strzałki w lewo](media/31-setup-for-objects.png), aby przenieść je do pola **Pozostałe typy zadań konserwacyjnych**.
 
-9. Można również wybrać pomiary składnika majątku, które powinny być powiązane z typem składnika majątku. Na karcie skróconej **Pomiary składnika majątku** dokonaj wyborów przy użyciu metod, które są opisane dla typów zadań w kroku 8. Aby uzyskać więcej informacji na temat konfiguracji pomiarów składnika majątku, zobacz temat [Pomiary składnika majątku](counters.md).
-10. Można również wybrać typy atrybutów, które powinny być powiązane z typem składnika majątku. Na karcie skróconej **Typy atrybutów** dokonaj wyborów przy użyciu metod, które są opisane dla typów zadań w kroku 8. Następnie, aby utworzyć preferowaną sekwencję typów atrybutów, wybierz typ atrybutu w polu **Wybrane typy atrybutów** i użyj strzałek w górę i w dół, aby je przenieść. Sekwencja typów atrybutów będzie wyświetlana w składnikach majątku, które używają tego typu składnika majątku. Aby uzyskać więcej informacji o atrybutach składników majątku, zobacz temat [Typy atrybutów konserwacji](../setup-for-functional-locations/specification-types.md).
+9. Można również wybrać liczniki składnika majątku, które powinny być powiązane z typem składnika majątku. Na karcie skróconej **Liczniki** dokonaj wyborów przy użyciu metod, które są opisane dla typów zadań konserwacyjnych w kroku 8. Aby uzyskać więcej informacji o konfiguracji liczników, zobacz temat [Liczniki](counters.md).
+10. Można również wybrać typy atrybutów, które powinny być powiązane z typem składnika majątku. Na karcie skróconej **Typy atrybutów** dokonaj wyborów przy użyciu metod, które są opisane dla typów zadań konserwacyjnych w kroku 8. Następnie, aby utworzyć preferowaną sekwencję typów atrybutów, wybierz typ atrybutu w polu **Wybrane typy atrybutów** i użyj strzałek w górę i w dół, aby je przenieść. Sekwencja typów atrybutów będzie wyświetlana w składnikach majątku, które używają tego typu składnika majątku. Aby uzyskać więcej informacji o atrybutach składników majątku, zobacz temat [Typy atrybutów konserwacji](../setup-for-functional-locations/specification-types.md).
 
     > [!NOTE]
     > Po dodaniu nowych typów atrybutów na karcie skróconej **Typy atrybutów** istniejące składniki majątku są automatycznie aktualizowane o te informacje.
 
-11. Można również wybrać szablony oceny warunku, które powinny być powiązane z typem składnika majątku. Na karcie skróconej **Oceny warunku** dokonaj wyborów przy użyciu metod, które są opisane dla typów zadań w kroku 8. Aby uzyskać więcej informacji na temat szablonów oceny warunków i rejestracji, zobacz temat [Oceny warunku](../setup-for-objects/condition-assessment.md).
+11. Można również wybrać szablony oceny warunku, które powinny być powiązane z typem składnika majątku. Na karcie skróconej **Oceny warunku** dokonaj wyborów przy użyciu metod, które są opisane dla typów zadań konserwacyjnych w kroku 8. Aby uzyskać więcej informacji na temat szablonów oceny warunków i rejestracji, zobacz temat [Oceny warunku](../setup-for-objects/condition-assessment.md).
 12. Na skróconej karcie **Model składnika majątku** wyświetlane są wszystkie kombinacje producentów i modeli składników majątku, które są skonfigurowane dla wybranego typu składnika majątku. Aby zobaczyć kombinacje podzielone według producenta, wybierz **Model składnika majątku**, aby otworzyć stronę **Model składnika majątku**.
 
     Na stronie **Model składnika majątku** można dodać relacje model-typ składnika majątku. Ponadto na stronie **Typy składnika majątku** można dodać relacje producent-model składnika majątku bezpośrednio do typu składnika majątku. Wreszcie na stronie **Model składnika majątku** (**Zarządzanie składnikami majątku** \> **Ustawienia** \> **Składniki majątku** \> **Model składnika majątku**) może utworzyć nowe relacje producent-model-typ składnika majątku. W związku z tym istnieją trzy sposoby konfigurowania i edytowania relacji producent-model-typ składnika majątku. Wszystkie dostępne kombinacje są wyświetlane z różnych perspektyw i można wybrać preferowany punkt wejścia podczas pracy z konfiguracją.
 
 > [!NOTE]
-> - Jeśli wybierzesz pomiary składnika majątku w jego typie, wybrane opcje są automatycznie aktualizowane na stronie **Pomiary składnika majątku** (**Zarządzanie składniami majątku** \> **Ustawienia** \> **Składniki majątku** \> **Typy składników majątku** \> **Pomiary składnika majątku**).
-> - Pola w sekcji **Szczegóły** na skróconej karcie **Ogólne** pokazują liczbę typów zadań, pomiarów środków trwałych, atrybutów itd., które są skonfigurowane dla wybranego typu składnika majątku.
+> - Jeśli wybrano liczniki typu środka trwałego, wybory zostaną automatycznie zaktualizowane na stronie **Liczniki** (**Zarządzanie składnikami majątku** > **Konfiguracja** > **Składniki majątku** > **Typy składników majątku** > **Liczniki**).
+> - Pola w sekcji **Szczegóły** na skróconej karcie **Ogólne** pokazują liczbę typów zadań konserwacji, liczników, atrybutów itd., które są skonfigurowane dla wybranego typu składnika majątku.
 
-Zazwyczaj zlecenia pracy, które są tworzone ręcznie, są związane z konserwacją korygującą, podczas gdy zlecenia pracy, które są tworzone automatycznie, są związane z konserwacją zapobiegawczą. Podczas ręcznego tworzenia zleceń pracy, można użyć tylko typy zadań, które są zaznaczone na stronie skróconej karcie **Typy zadań** na stronie **Typy zasobów**. Jednak automatycznie utworzone zlecenia pracy mogą używać wszystkich typów zadań tworzonych na stronie **Typy zadań** (**Zarządzanie składnikami majątku** \> **Ustawienia** \> **Zadania** \> **Typy zadań**).
+Zazwyczaj zlecenia pracy, które są tworzone ręcznie, są związane z konserwacją korygującą, podczas gdy zlecenia pracy, które są tworzone automatycznie, są związane z konserwacją zapobiegawczą. Podczas ręcznego tworzenia zleceń pracy, można użyć tylko typy zadań konserwacji, które są zaznaczone na stronie skróconej karcie **Typy zadań konserwacji** na stronie **Typy składników majątku**. Jednak automatycznie utworzone zlecenia pracy mogą używać wszystkich typów zadań konserwacji tworzonych na stronie **Typy zadań konserwacji** (**Zarządzanie składnikami majątku** \> **Ustawienia** \> **Zadania** \> **Typy zadań konserwacji**).
 
 ## <a name="create-asset-type-setup-lines"></a>Tworzenie wierszy konfiguracji typu składnika majątku
 

@@ -1,12 +1,14 @@
-- name: Programowanie na potrzeby rozwiązania Finance and Operations i administrowanie nim
+- name: Rozwój i administracja aplikacji Finance and Operations
   items:
-    - name: Programowanie na potrzeby rozwiązania Finance and Operations i administrowanie nim
+    - name: Rozwój i administracja aplikacji Finance and Operations
       items:
-        - name: Programowanie na potrzeby rozwiązania Finance and Operations i administrowanie nim
+        - name: Rozwój i administracja aplikacji Finance and Operations
           href: index.md
         - name: Nowości i zmiany
           items:
-            - name: Funkcje w wersji zapoznawczej w aktualizacji Platform update 30 (listopad 2019)
+            - name: Funkcje w wersji zapoznawczej w aktualizacji Platform update 31 (styczeń 2020)
+              href: get-started/whats-new-platform-update-31.md
+            - name: Aktualizacja Platform update 30 (listopad 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
             - name: Aktualizacja Platform update 29 (październik 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-29.md
@@ -62,6 +64,8 @@
                   href: business-events/how-to/FormsPro.md
                 - name: Zdarzenia biznesowe i Azure Event Hubs
                   href: business-events/how-to/event-hub.md
+                - name: Zdarzenia biznesowe w zamknięciu okresu obrachunkowego
+                  href: business-events/how-to/period-close.md
         - name: Ciągłe dostarczanie
           items:
             - name: Ciągłe dostarczanie — strona główna
@@ -80,7 +84,7 @@
               href: data-entities/integration-overview.md
             - name: Interfejsy API integracji danych
               items:
-                - name: Interfejs REST API pakietu zarządzania danymi
+                - name: Interfejs API REST pakietu zarządzania danymi
                   href: data-entities/data-management-api.md
                 - name: Punkty końcowe usług
                   items:
@@ -302,6 +306,26 @@
                   href: database/dbmovement-scenario-goldenconfig.md
                 - name: Testy destrukcyjne
                   href: database/dbmovement-scenario-destructivetests.md
+            - name: RESTful API
+              items:
+                - name: Omówienie
+                  href: database/api/dbmovement-api-overview.md
+                - name: Przechowywanie wersji i pomoc techniczna
+                  href: database/api/dbmovement-api-versioning-support.md
+                - name: Uwierzytelnianie
+                  href: database/api/dbmovement-api-authentication.md
+                - name: Dławienie
+                  href: database/api/dbmovement-api-throttling.md
+                - name: Odwołanie
+                  items:
+                    - name: Odwołanie do API wersji 1
+                      href: database/api/v1/dbmovement-api-v1-overview.md
+                    - name: Tworzenie listy kopii zapasowych bazy danych
+                      href: database/api/v1/reference-list-backups.md
+                    - name: Tworzenie odświeżania bazy danych
+                      href: database/api/v1/reference-create-refresh.md
+                    - name: Pobieranie stanu działania operacji
+                      href: database/api/v1/reference-get-status.md
         - name: Dane demonstracyjne
           items:
             - name: Omówienie danych demonstracyjnych
@@ -1213,7 +1237,7 @@
             - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations i usługi Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Omówienie pomocy technicznej systemu Dynamics 365
-              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/dev-itpro/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations obsługiwanego przez firmę 21Vianet w Chinach
               href: lifecycle-services/21vianet-support.md
             - name: Przesyłanie zgłoszeń do zespołu inżynierów usług Dynamics

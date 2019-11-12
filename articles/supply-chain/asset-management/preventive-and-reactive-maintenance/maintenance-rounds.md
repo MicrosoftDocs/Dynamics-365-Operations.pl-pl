@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 4c9a2fee7d43142f8bb17f4e819c9949a2a20c41
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922029"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570037"
 ---
 # <a name="maintenance-rounds"></a>Serie czynności konserwacyjnych
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Serie czynności konserwacyjnych można konfigurować w **Zarządzanie składnikami majątku** odniesieniu do różnych składników majątku, na których trzeba wykonywać podobne zadania w regularnych odstępach czasu. Na przykład zadania smarowania lub inspekcje bezpieczeństwa, które trzeba wykonać na kilku maszynach w tych samych interwałach. Pierwszym krokiem jest utworzenie rundy serwisowego, w tym środków trwałych wymagających tej samej formy zadania konserwacji. Następnie należy zaplanować zaokrąglenia obsługi. Po ukończeniu harmonogramu zaokrąglania eksploatacji można wyświetlić wszystkie rekordy zadań odnoszące się do tej rundy we **Wszystkich wierszach harmonogramu konserwacji** i **Otwieranie wierszy harmonogramu konserwacji**.
 

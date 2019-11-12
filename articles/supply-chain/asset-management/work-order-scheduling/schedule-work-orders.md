@@ -18,20 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b6fad4d57b8e08c839ac0ffac2324c02304335ef
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 953c4bb17329205c5d8d14b6570a6bac152e9320
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887235"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652156"
 ---
 # <a name="schedule-work-orders"></a>Zaplanuj zlecenia pracy
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-W tym temacie opisano planowanie zleceń pracy w module Zarządzanie składnikami majątku. Wymagana liczba godzin dla zlecenia pracy jest definiowana przez sumę prognozowanych godzin w zadaniach zlecenia pracy pomniejszoną o zaksięgowane godziny. Jeśli jest wymagane więcej czasu, Prognoza w zleceniu pracy musi zostać odpowiednio skorygowana. W **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy** można wyświetlać lub edytować prognozy w zleceniu, wybierając zlecenie pracy i klikając przycisk **Prognoza** na karcie **Zlecenie pracy**. Jeśli zostały utworzone i oszacowane zlecenia pracy, następny krok polega na przydzieleniu wymaganych pracowników i narzędzi konserwacyjnych do wykonania zleceń pracy.
+W tym temacie opisano planowanie zleceń pracy w module Zarządzanie składnikami majątku. 
+
+Wymagana liczba godzin dla zlecenia pracy jest definiowana przez sumę prognozowanych godzin pomniejszoną o zaksięgowane godziny. Jeśli jest wymagane więcej czasu, prognoza musi zostać odpowiednio skorygowana. W **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy** można wyświetlać lub edytować prognozy w zleceniu, wybierając zlecenie pracy i klikając przycisk **Prognoza** na karcie **Zlecenie pracy**. Jeśli zostały utworzone i oszacowane zlecenia pracy, następny krok do wykonania zleceń pracy polega na przydzieleniu wymaganych pracowników i narzędzi konserwacyjnych.
 
 Można planować tylko w przypadku zleceń pracy o stanie cyklu życia, który umożliwia planowanie. Zezwalaj na planowanie w **Zarządzanie składnikami majątku** > **Ustawienia** > **Zlecenia pracy** > **Stany cyklu życia** > **Ogólne** skrócona karta > **Zezwalaj na planowanie** przycisk przełączania.
 
@@ -43,8 +45,8 @@ Można planować tylko w przypadku zleceń pracy o stanie cyklu życia, który u
 
 4. W oknie dialogowym **Planowanie zlecenia pracy** można dodawać wybory dotyczące oczekiwanej daty rozpoczęcia i poziomu usług (jeśli jest to wymagane). Jeśli proces planowania powinien uwzględniać ograniczenia zdolności produkcyjnych dotyczące zasobów, które są już zaplanowane dla innych zadań, należy upewnić się, że przyciski przełączania **Składnik majątku**, **Narzędzie** i **Pracownik** są ustawione na wartość „Tak”.
 
->[!NOTE]
->W przypadku ustawienia przycisków **Składnik majątku**, **Narzędzie** i **Pracownik** na wartość „Nie", zostaną zignorowane istniejące rezerwacje. W dzienniku informacyjnym zostanie wyświetlona lista nakładających się harmonogramów zleceń pracy, a w razie potrzeby można kliknąć opcję, aby otworzyć zlecenie pracy i ponownie zaplanować.
+    [!NOTE]
+    W przypadku ustawienia przycisków **Składnik majątku**, **Narzędzie** i **Pracownik** na wartość „Nie", zostaną zignorowane istniejące rezerwacje. W dzienniku informacyjnym zostanie wyświetlona lista nakładających się harmonogramów zleceń pracy, a w razie potrzeby można kliknąć opcję, aby otworzyć zlecenie pracy i ponownie zaplanować.
 
 5. Aby wyświetlić szczegółowe informacje o procesie planowania, wybierz wartość „tak” w przycisku przełączania **Pełne**. Oznacza to, że w dzienniku informacyjnym zostaną wyświetlone szczegółowe informacje o obliczonych wynikach zlecenia pracy i pracowników konserwacji.
 
@@ -110,9 +112,11 @@ Wyniki oceny dotyczące obliczania, które pracownicy obsługi powinni pracować
 | Data rozpoczęcia pracownika               | Dla każdego dnia, w którym planowana data rozpoczęcia jest późniejsza niż oczekiwana data rozpoczęcia, wynik jest odejmowany.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 >[!NOTE]
->Jeśli wynik jest określony jako „0”, ten wynik nie jest obliczany. Jest to przydatne, jeśli na przykład pracownik nie chce dołączać odpowiedzialnego pracownika w planowaniu.
+>Jeśli wynik jest określony jako „0”, ten wynik nie jest obliczany. Jest to przydatne, jeśli na przykład nie chcesz dołączać odpowiedzialnego pracownika w planowaniu.
 
 ## <a name="competencies-used-in-work-order-scheduling"></a>Kompetencje używane w planowaniu zleceń pracy
 
-W przypadku zadań konserwacyjnych można skonfigurować wymagania dotyczące typów zadań konserwacji (**Zarządzanie składnikami majątku** > **Ustawienia** > **Zadania** > **Typy zadań konserwacji**) i typy zawodów konserwacji (**Zarządzanie składnikami majątku** > **Ustawienia** > **Zadania** > **Zawody zadań konserwacji**). Typy zadań konserwacji i zawody zadań konserwacji są wybierane w zadaniach zleceń pracy. Jeśli kwalifikacje lub certyfikaty zostały wybrane w ramach zadania obsługi typu lub w rodzaju pracy związanej z konserwacją, a w zamówieniu pracy jest używany typ zadania konserwacji lub zawód konserwatora, to pracownicy obsługi technicznej z dopasowanymi umiejętnościami i certyfikatami są planowani na pracę nad zlecenia pracy.
+W przypadku zadań konserwacyjnych można skonfigurować wymagania dotyczące typów zadań konserwacji (**Zarządzanie składnikami majątku** > **Ustawienia** > **Zadania** > **Typy zadań konserwacji**) i typy zawodów konserwacji (**Zarządzanie składnikami majątku** > **Ustawienia** > **Zadania** > **Zawody zadań konserwacji**). 
+
+Typy zadań konserwacji i zawody zadań konserwacji są wybierane w zadaniach zleceń pracy. Jeśli kwalifikacje lub certyfikaty zostały wybrane w ramach zadania obsługi typu lub w rodzaju pracy związanej z konserwacją, a w zamówieniu pracy jest używany typ zadania konserwacji lub zawód konserwatora, to pracownicy obsługi technicznej z dopasowanymi umiejętnościami i certyfikatami są planowani na pracę nad zlecenia pracy.
 

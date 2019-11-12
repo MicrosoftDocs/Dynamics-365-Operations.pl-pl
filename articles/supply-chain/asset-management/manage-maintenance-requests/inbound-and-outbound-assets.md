@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62998da7f541379296d5ac325ae29f24a42f9b7c
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: bb318c24424c291f08ba7527b2258c0da4cba9a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847558"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571675"
 ---
 # <a name="inbound-and-outbound-assets"></a>Przychodzące i wychodzące składniki majątku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Jeśli firma wykonuje zadania naprawy lub konserwacji na składnikach majątku, które są odbierane z innych lokalizacji lub od innych klientów, zarządzanie składnikami majątku można śledzić zarówno w odniesieniu do przychodzących składników majątku w drodze do firmy, jak i składników wychodzących, które są zwracane.
 
@@ -45,7 +45,7 @@ Konfiguracja modułu Zarządzanie składnikami majątku określa, czy można pra
 3. Wybierz **Aktualizuj stan żądania konserwacji**.
 4. Wybierz **Przychodzące** (lub inny stan cyklu życia utworzony dla przychodzących składników majątku), a następnie wybierz przycisk **OK**.
 
-![Rysunek 1](media/07-manage-maintenance-requests.png)
+![Rejestrowanie składników majątku jako przychodzących](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Rejestrowanie przychodzących składników majątku jako odebranych
 
@@ -54,7 +54,7 @@ Konfiguracja modułu Zarządzanie składnikami majątku określa, czy można pra
 3. Wybierz opcję **Odbierz składniki majątku**.
 4. W polu **Odebrane** wpisz datę i godzinę. Następnie wybierz opcję **OK**. Rekord zostanie usunięty ze strony listy **Przychodzące składniki majątku**.
 
-![Rysunek 2](media/08-manage-maintenance-requests.png)
+![Rejestrowanie przychodzących składników majątku jako odebranych](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Rejestrowanie zasobów jako wychodzących
 

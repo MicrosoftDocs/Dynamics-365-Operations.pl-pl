@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f079e6899a2e3949eff5945f867472c801d9e95c
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: d1e2f8d2ac0c48d4f92b15ec345ffa650b71df0b
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783524"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571031"
 ---
 # <a name="asset-service-levels"></a>Poziomy usług składnika majątku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 W tym temacie wyjaśniono poziomy usług składników majątku w module Zarządzanie składnikami majątku. Poziomy usługi składników majątku są związane ze składnikami majątku i są przenoszone do żądań konserwacji i zleceń pracy. Są one używane do obliczania priorytetu zleceń pracy podczas planowania zlecenia pracy. Poziomy usług składników majątku można zmienić, jeśli wymagane są zmiany.
 

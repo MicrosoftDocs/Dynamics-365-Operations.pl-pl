@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2cff84f8f6c42fd064258b8ca53e24acc8059977
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c17a0240c29dad58c958ab1ce844ee5d8384bd1f
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175578"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658936"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Konfigurowanie okresów rozliczania podatku
 
@@ -42,7 +42,7 @@ W zadaniu wykorzystano firmę demonstracyjną USMF.
 9. Wprowadź liczbę jednostek interwału okresu w okresie. Na przykład kwartał ma 3 miesiące.
 10. Zaznacz lub wyczyść pole wyboru **Użyj przetwarzania wsadowego w celu rozliczenia podatku**. Proces rozliczania dla okresu rozliczeniowego może być wykonywany w trybie wsadowym w tle. Jest to zalecane dla dużej liczby transakcji podatkowych w interwale okresu.  
     > [!NOTE]
-    > Obecnie nie jest to obsługiwane w Austrii, Belgii, Hiszpanii, Włoszech, Japonii i Holandii.
+    > Obecnie nie jest to obsługiwane w Hiszpanii, Japonii i Holandii.
 11. Zaznacz lub wyczyść pole wyboru **Zapobiegaj generowaniu transakcji podatków przeciwstawnych**. Domyślnie system generuje transakcje podatków przeciwstawnych w trakcie rozliczania, co może spowalniać działanie, jeżeli w okresie występuje duża liczba transakcji podatkowych. Zaznaczenie tego pola wyboru uniemożliwi generowanie transakcji podatków przeciwstawnych.
 12. Rozwiń kartę **Interwały okresu**.
 13. Wybierz opcję **Dodaj**.

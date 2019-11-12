@@ -19,18 +19,16 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3391679696c0e1dd84840821480ccbfb544829a6
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: f226329b774344a3de5c8f115ffb358611bf7d60
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863043"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570778"
 ---
 # <a name="product-dimensions"></a>Wymiary produktu
 
 [!include [banner](../includes/banner.md)]
-
-[!include [Retail name](../includes/retail-name.md)]
 
 Istnieją cztery wymiary produktu — Kolor, Konfiguracja, Rozmiar i Styl. Wymiary produktu łączy się w grupy wymiarów, a następnie przypisuje grupy wymiarów do produktów głównych. Kombinacje wymiarów produktu decydują o definicjach wariantów produktu.
 

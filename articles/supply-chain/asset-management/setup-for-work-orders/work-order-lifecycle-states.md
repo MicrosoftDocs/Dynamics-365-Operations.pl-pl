@@ -18,19 +18,19 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 69d06ff649f4453df22d55062b43bcc8d4ecd763
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: f531f51d7f42f88e4da2d046e61313e9ada2b259
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874723"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569807"
 ---
 # <a name="work-order-lifecycle-states"></a>Stany cyklu życia zlecenia pracy
 
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Stany cyklu życia zlecenia pracy określają Stany, przez które może przechodzić zlecenie pracy. Przykłady to **utworzone**, **zaplanowane**, **w toku** i **zakończone**. Stany cyklu życia zlecenia pracy można aktualizować ręcznie w zleceniu pracy albo automatycznie je aktualizować (na przykład podczas planowania zlecenia pracy).
 
@@ -38,7 +38,7 @@ Stany cyklu realizacji zlecenia pracy wymagane dla zleceń pracy muszą być do�
 
 Poniższa tabela opisuje opcje w sekcjach **Zlecenie pracy** i **Harmonogram** na karcie skróconej **Ogólne** na stronie **Stan cyklu życia zlecenia pracy** (**Zarządzanie składnikami majątku** \> **Konfiguracja** \> **Zlecenia pracy** \> **Stany cyklu życia**).
 
-![Rysunek 1](media/09-setup-for-work-orders.png)
+![Strona stanów cyklu życia zlecenia pracy](media/09-setup-for-work-orders.png)
 
 | Nazwa opcji                   | Opis |
 |-------------------------------|-------------|
@@ -96,7 +96,7 @@ Poniższa tabela opisuje opcje w sekcjach **Zlecenie pracy** i **Harmonogram** n
     - Jeśli dla opcji **Przerwa konserwacyjna** jest ustawiona wartość **tak** w przypadku stanu cyklu życia, na którym jest aktualizowane zlecenie pracy, proces sprawdzania przez czas konserwacji jest wykonywany na składniku majątku, który jest powiązany ze zleceniem pracy. Jeśli dokonano rejestracji przestojów związanych z obsługą, ale nie **zakończono** rejestracji, komunikat jest wyświetlany, gdy zlecenie pracy zostanie zaktualizowane do tego stanu cyklu życia.
     - Jeśli standardowe ustawienia projektu nie zawierają wszystkich etapów wymaganych dla konfiguracji Zarządzanie składnikami majątku, można skonfigurować zdefiniowane przez użytkownika etapy projektu na karcie **etap projektu** na stronie **Parametry modułu Zarządzanie projektami i ich księgowanie**. Na poniższej ilustracji przedstawiono kartę **etap projektu** na stronie **Parametry modułu Zarządzanie projektami i ich księgowanie**.
 
-    ![Rysunek 2](media/10-setup-for-work-orders.png)
+    ![Strona Ustaw etapy projektu dla różnych typów projektów](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Jeśli stan cyklu życia, w którym zlecenie pracy zostanie zaktualizowany, nie jest aktywny, Arkusze powiązane ze zleceniem produkcyjnym, które nie zostały jeszcze zaksięgowane, są usuwane automatycznie. To zachowanie pomaga zagwarantować automatyczne oczyszczanie nieużywanych danych. (Stan cyklu życia jest nieaktywny, jeśli **aktywna** opcja dla tej opcji jest ustawiona na wartość **nie** na skróconej karcie **ogólne** strony stan **cyklu życia zlecenia pracy**.)
@@ -114,7 +114,7 @@ Powodem użycia typów jest to, że w przypadku zdefiniowania typu na przykład 
 
 Na poniższej ilustracji przedstawiono relację między typami zleceń pracy, modelami cyklu życia i stanami cyklu życia.
 
-![Rysunek 3](media/11-setup-for-work-orders.png)
+![Strona typ zlecenia pracy porównywanego z modelami cyklu życia zlecenia pracy](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Modele cyklu życia zlecenia pracy
 
@@ -138,4 +138,4 @@ Po utworzeniu stanów cyklu życia zlecenia pracy, które są wymagane dla zlece
 8. W polu **niezaplanowany stan cyklu życia** wybierz stan cyklu życia, który zawsze powinien być wybierany dla zlecenia pracy, jeśli zostanie usunięte Planowanie zleceń pracy.
 9. Zapisz model cyklu życia zlecenia pracy.
 
-![Rysunek 4](media/15-setup-for-work-orders.png)
+![Strona Modele cyklu życia zlecenia pracy](media/15-setup-for-work-orders.png)

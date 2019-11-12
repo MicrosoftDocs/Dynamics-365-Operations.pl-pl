@@ -3,7 +3,7 @@ title: Zapisane widoki
 description: W tym temacie opisano sposób korzystania z funkcji zapisanych widoków.
 author: jasongre
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 4b1bd7b869b68f82ce8056ac9f87a0d3bdce4102
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2f76c4e50649d3eda951940a2186348c29474dc6
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190886"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658674"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
@@ -37,9 +37,11 @@ W przypadku tradycyjnej personalizacji użytkownicy mogą mieć tylko jeden zest
 
 -    Widoki utworzone dla określonych typów stron mogą również zawierać filtry dodane przez użytkownika lub kryteria sortowania, które umożliwiają użytkownikom szybkie odtworzenie często filtrowanych zestawów danych. Więcej szczegółów znajduje się w sekcji [Jakie strony obsługują widoki](saved-views.md#what-pages-support-views). 
 
--    Widoki można publikować w rolach zabezpieczeń, co oznacza, że każdy użytkownik mający taką rolę będzie mógł uzyskać dostęp do tego widoku i korzystać z niego, niezależnie od dostępności funkcji personalizacji dla użytkownika. Ta możliwość publikowania pozwala organizacjom na definiowanie standardowych widoków firmowych zoptymalizowanych pod kątem ich działalności. Więcej informacji zawiera sekcja [Zarządzanie personalizacjami na poziomie organizacyjnym za pomocą widoków](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
+-    Widoki mogą być publikowane dla użytkowników w określonych rolach zabezpieczeń i określonych firmach. Dlatego każdy użytkownik, który ma określoną rolę w określonej firmie, może uzyskać dostęp do tego widoku i korzystać z niego, nawet jeśli użytkownik ten może nie mieć możliwości jego spersonalizowania. Ta możliwość publikowania pozwala organizacjom na definiowanie firmowych, standardowych widoków zoptymalizowanych pod kątem ich działalności. Więcej informacji zawiera sekcja [Zarządzanie personalizacjami na poziomie organizacyjnym za pomocą widoków](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
 
 -    W przeciwieństwie do tradycyjnej personalizacji widoki nie są automatycznie zapisywane, gdy użytkownik wykonuje jawne personalizacje lub filtruje listę. Jawne zapisywanie jest wymagane w celu zapewnienia elastyczności w tworzeniu widoku przed dokonaniem zmian skojarzonych z tym widokiem lub po nim oraz zapobiegania przypadkowemu modyfikowaniu definicji przez filtry lub personalizacje, które nie są przeznaczone do długoterminowego użycia.  
+
+-    Widoki można dodawać do obszarów roboczych jako kafelki, listy lub łącza. Dlatego filtrowany zbiór danych może być układany w obszarze roboczym, a użytkownicy mogą kojarzyć zbiór personalizacji, które są odpowiednie dla tego zbioru danych z kafelkiem lub łączem.
 
 ## <a name="switching-between-views"></a>Przełączanie między widokami
 Po włączeniu widoków dla środowiska każda strona obsługująca widoki będzie zawierać zwinięty formant selektora widoków w górnej części formularza, w którym jest wyświetlana nazwa bieżącego widoku.  
@@ -52,9 +54,9 @@ Istnieją dwa warianty wielkości selektora widoków:
  
 Kliknięcie nazwy widoku powoduje otwarcie selektora widoku i wyświetlenie listy dostępnych widoków tej strony
 
--    **Widok klasyczny**: widok klasyczny jest gotowym widokiem strony bez zastosowania jawnych personalizacji.  
+-    **Widok standardowy**: **standardowy** widok strony (znany wcześniej jako widok **klasyczny**) jest widokiem niezależnym od systemu, w którym nie są stosowane żadne jawne personalizacje.
 -    **Widoki osobiste**: widoki bez kłódki przedstawiają widoki osobiste danego użytkownika. Są to widoki utworzone przez tego użytkownika lub otrzymane przez niego od administratora.  
--    **Zablokowane widoki**: niektóre widoki (takie jak widok klasyczny i wszystkie widoki opublikowane w roli) są opatrzone kłódką w selektorze widoku, co oznacza, że nie można ich edytować. Jednak niejawne personalizacje dotyczące użycia strony są zapisywane automatycznie, np. zmiana szerokości kolumny siatki lub rozwijanie lub zwijanie skróconej karty. Można jednak utworzyć widok osobisty oparty na zablokowanym widoku, używając akcji **Zapisz kopię**, jeśli użytkownik ma uprawnienia do personalizacji.
+-    **Zablokowane widoki**: niektóre widoki (na przykład widok **standardowy** i wszystkie widoki opublikowane w roli) mają obok nich symbol kłódki w selektorze widoków. Ten symbol wskazuje, że nie można edytować tych widoków. Jednak niejawne personalizacje, które odzwierciedlają użycie strony, są zapisywane automatycznie. Te niejawne personalizacje obejmują zmianę szerokości kolumny siatki, rozwijanie lub zwijanie skróconej karty. Jeśli użytkownik ma uprawnienia do personalizacji, może jednak utworzyć widok osobisty oparty na zablokowanym widoku używając akcji **Zapisz jako**.
 -    **Nowe widoki**: opublikowane widoki, które nie zostały jeszcze otwarte, są wyróżnione iskrą na lewo od nazwy widoku.  
 
 Aby przełączyć się do innego widoku, najpierw należy otworzyć selektor widoku, a następnie wybrać widok, który ma zostać załadowany. 
@@ -69,7 +71,7 @@ Jeśli chcesz zapisać te zmiany, wykonaj następujące kroki.
 2.  Aby zmodyfikować istniejący widok:
      1. Wybierz opcję **Zapisz**. Należy zauważyć, że ta akcja nie jest dostępna w przypadku widoków zablokowanych. 
 3.  Aby utworzyć nowy widok:
-     1.    Naciśnij przycisk **Zapisz kopię**. 
+     1.    Wybierz opcję **Zapisz jako**. 
      2.    Wprowadź nazwę widoku i (opcjonalnie) opis.
      3.    Wybierz opcję **Zapisz**.
 
@@ -81,7 +83,7 @@ Aby zmienić domyślny widok strony, wykonaj następujące czynności:
 2.  Wybierz nazwę widoku, aby otworzyć selektor widoku. 
 3.  Naciśnij przycisk **Więcej**, a następnie wybierz opcję **Przypnij jako domyślny**.  
 
-Podczas tworzenia nowego widoku (przy użyciu akcji **Zapisz kopię**) można też ustawić nowy widok jako domyślny, włączając opcję **Przypnij jako domyślny** przed zapisaniem widoku.  
+Podczas tworzenia nowego widoku (przy użyciu akcji **Zapisz jako**) można też ustawić nowy widok jako domyślny, włączając opcję **Przypnij jako domyślny** przed zapisaniem widoku.
 
 Należy zauważyć, że w niektórych przypadkach kwerenda skojarzona z domyślnym widokiem nie jest wykonywana w momencie przejścia do strony po raz pierwszy. Jeśli na przykład przechodzisz przez kafelek do strony, kwerenda kafelka zostanie wykonana niezależnie od kwerendy skojarzonej z domyślnym widokiem. Jeśli natomiast przejdziesz do strony, której widok klasyczny już ma zdefiniowaną kwerendę, pierwotna kwerenda będzie początkowo wykonywana zamiast kwerendy domyślnego widoku. W takim przypadku podczas ładowania widoku zostanie wyświetlony komunikat informacyjny. Przełączanie widoków po załadowaniu strony powinno umożliwić wykonanie kwerendy widoku w oczekiwany sposób.
 
@@ -97,24 +99,27 @@ Dostępny zestaw akcji dla listy dostępnych widoków tej strony jest następuj�
 Zmiany wprowadzone w tym oknie dialogowym zaczną obowiązywać po naciśnięciu przycisku **Zapisz**.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Zarządzanie personalizacjami na poziomie organizacyjnym za pomocą widoków
-Aby zrozumieć udoskonalenia zarządzania personalizacjami na poziomie organizacyjnym, najpierw zapoznaj się z działaniem zarządzania personalizacjami bez widoków.  
+W tej sekcji opisano sposób działania zarządzania personalizacją przed udostępnieniem widoków, co ułatwia zapoznanie się z zapisanymi widokami w celu usprawnienia zarządzania personalizacjami na poziomie organizacyjnym.
 
 Bez widoków administratorzy musieli zastosować zestaw personalizacji strony do użytkownika lub grupy użytkowników za pomocą strony Personalizacja. Jeśli ci użytkownicy mieli uprawnienia do personalizacji, personalizacje zostały zastosowane do tej strony. Nie było jednak możliwe zakazanie użytkownikom dalszego personalizowania strony, czyli organizacja nie mogła sprawić, aby jej użytkownicy mieli spójny interfejs użytkownika. Jeśli dowolny z tych użytkowników nie miał uprawnień do personalizacji, personalizacje wysłane mu przez administratora nie były ładowane. Ponadto, jeśli w organizacji zostali zatrudnieni nowi użytkownicy, administratorzy musieli im ręcznie załadować zestaw personalizacji. Nie było automatycznego mechanizmu określania pewnego zestawu personalizacji, który powinien być dostępny dla użytkownika w danej roli.
 
-Przy użyciu funkcji zapisanych widoków zarządzanie organizacyjne personalizacjami jest znacznie łatwiejsze, głównie ze względu na możliwość publikowania widoków w rolach zabezpieczeń. Gdy widok zostanie opublikowany, każdy użytkownik mający taką rolę będzie mógł uzyskać dostęp do tego widoku i korzystać z niego, niezależnie od dostępności funkcji personalizacji dla użytkownika. Chociaż każdy użytkownik ma kopię opublikowanego widoku, do której jest stosowane użycie strony (jawne personalizacje), żaden użytkownik nie może zapisać jawnych personalizacji lub aktualizacji kwerendy w opublikowanym widoku (co oznacza, że opublikowane widoki są zablokowane). Ponadto, jeśli nowi użytkownicy otrzymają rolę, w której widok został opublikowany, będą automatycznie widzieć widoki skojarzone z ich rolami bez żadnych działań administratora. Podobnie, jeśli użytkownik zmieni role w organizacji, widoki skojarzone z jego poprzednią rolą nie będą już dla niego dostępne bez konieczności wykonania żadnych działań przez administratora. Aktualizacje opublikowanego widoku mogą być łatwo dystrybuowane użytkownikom przez ponowne opublikowanie widoku do odpowiednich ról zabezpieczeń.
+Przy użyciu funkcji zapisanych widoków zarządzanie organizacyjne personalizacjami jest znacznie łatwiejsze, głównie ze względu na możliwość publikowania widoków w grupach użytkowników. Po opublikowaniu widoku każdy użytkownik, który ma jedną z zdefiniowanych ról zabezpieczeń i znajduje się w określonych firmach, będzie mógł uzyskać dostęp do tego widoku i korzystać z niego, nawet jeśli użytkownik ten może nie mieć możliwości jego spersonalizowania. Pomimo że każdy użytkownik ma kopię opublikowanego widoku, do której jest stosowane użycie strony (jawne personalizacje), żaden użytkownik nie może zapisać jawnych personalizacji lub aktualizacji kwerendy w opublikowanym widoku. (Innymi słowy, opublikowane widoki są zablokowane) Ponadto, jeśli nowi użytkownicy mają przypisane role w firmach, dla których widoki zostały opublikowane, będą automatycznie widzieli widoki skojarzone z ich rolami i firmami. Administrator nie wymaga żadnych dodatkowych akcji. Podobnie, jeśli użytkownicy zmienią role w organizacji lub mają dostęp do różnych firm, mogą nie mieć już dostępu do widoków, które zostały wcześniej opublikowane. Administrator nie musi wykonywać żadnych dodatkowych działań.
+
+Aktualizacje opublikowanego widoku mogą być łatwo dystrybuowane użytkownikom przez ponowne opublikowanie widoku do odpowiednich ról zabezpieczeń i firm.
 
 Możliwość publikowania umożliwia organizacjom definiowanie standardowych widoków firmowych zoptymalizowanych pod kątem ich działalności skierowanych do użytkowników mających określone role zabezpieczeń.  
 
 ## <a name="publishing-views"></a>Publikowanie widoków
-Podczas procesu publikowania można przypisać widoki do roli lub ról zabezpieczeń, co oznacza, że każdy użytkownik dysponujący tą rolą będzie mógł uzyskać dostęp do tego widoku i korzystać z niego, ale nie będzie mógł go edytować. Obecnie tylko administratorzy systemu mają prawa do akcji **Publikuj** w menu rozwijanym selektor widoku, ale nowa rola zabezpieczeń będzie dostępna w przyszłej aktualizacji, aby nadać prawa publikowania innym zaufanym użytkownikom.  
+Podczas procesu publikowania można przypisać widoki do co najmniej jednej roli zabezpieczeń dla co najmniej jednej firmy. Dlatego każdy użytkownik, który ma dostęp do firmy i który jest przypisany do jednej z tych ról, może uzyskiwać dostęp do widoków i korzystać z nich, ale nie może ich edytować. Administratorzy systemu mają uprawnienia do akcji **Publikuj** w menu rozwijanym selektora widoku. Jednak inni zaufani użytkownicy w organizacji mogą mieć również dostęp do możliwości wyświetlania publikacji za pośrednictwem nowych ról **Administratora zapisanych widoków**.
 
 Aby opublikować widok, należy wykonać następujące kroki: 
 1.  Utwórz i zapisz osobistą kopię widoku, który chcesz opublikować. 
 2.  Po załadowaniu tego widoku wybierz nazwę widoku, aby otworzyć menu rozwijane selektora widoków. 
 3.  Naciśnij przycisk **Więcej**, a następnie wybierz opcję **Publikuj**. Zostanie otwarte okno dialogowe Publikowanie.  
-4.  Podaj nazwę i (opcjonalnie) opis widoku. Jest to nazwa, którą użytkownicy otrzymujący ten widok będą widzieć w selektorach widoku. Nazwy publikowanych widoków nie mogą się powtarzać na stronie, nawet jeśli są stosowane do różnych list ról.  
-5.  Dodaj role zabezpieczeń odpowiadające użytkownikom, którzy otrzymają ten widok.  
-6.  Wybierz opcję **Publikuj**.
+4.  Wpisz nazwę i (opcjonalnie) opis widoku. Wpisaną nazwę użytkownicy otrzymujący ten widok będą widzieć w selektorach widoku. Nazwy opublikowanych widoków strony muszą być unikatowe. Nazwy publikowanych widoków nie mogą się powtarzać, nawet jeśli są stosowane do różnych list ról lub firm.
+5.  Dodaj role zabezpieczeń odpowiadające użytkownikom, do których skierowany jest ten widok.
+6. Dodaj firmy, dla których ten widok powinien być dostępny. 
+7.  Wybierz opcję **Publikuj**.
 
 W niektórych środowiskach może upłynąć trochę czasu (do godziny), zanim użytkownicy zobaczą opublikowany widok.
 
@@ -142,7 +147,7 @@ O ile karta **Moje widoki** z listą widoków osobistych jest widoczna dla wszys
 
 Dostępny zestaw akcji dla listy wszystkich opublikowanych widoków strony jest następujący. 
 
--    **Publikuj**: akcja **Publikuj** umożliwia ponowne opublikowanie widoku ze zmodyfikowanymi parametrami publikowania (nazwa, opis, role zabezpieczeń).  
+-    **Publikuj**: akcja **Publikuj** umożliwia ponowne opublikowanie widoku po zmianie parametrów publikowania (nazwa, opis, role zabezpieczeń).
 -    **Usuń**: akcja **Usuń** umożliwia trwałe usunięcie opublikowanego widoku. Ta akcja powoduje usunięcie widoku dla wszystkich użytkowników w systemie.  
  
 Zmiany wprowadzone w tym oknie dialogowym zaczną obowiązywać, gdy zostanie naciśnięty przycisk **Zapisz**.
@@ -161,7 +166,9 @@ Aby włączyć zapisane widoki, gdy funkcja jest w podglądzie, wykonaj następu
 
 4.  **Włącz funkcję**: Znajdź funkcję **Zapisane widoki** na liście funkcji i wybierz przycisk **Włącz teraz** w okienku szczegółów.
 
-Wszystkie kolejne sesje użytkownika będą uruchamiane z włączonymi zapisanymi widokami.  
+Wszystkie kolejne sesje użytkownika będą uruchamiane z włączonymi zapisanymi widokami.
+
+Zapisane widoki można stosować tylko w środowiskach warstwy 1 (Dev/Test) i warstwa 2 (Piaskownicy) w celu zapewnienia dodatkowych zmian w testowaniu i projekcie. Podgląd Xapisanych widoków będzie dostępny w środowiskach produkcyjnych w przyszłym wydaniu.
 
 Jeśli personalizacja jest wyłączona dla środowiska, widoki zostaną wyłączone nawet po wykonaniu powyższych kroków. Jest to spowodowane tym, że funkcja widoków jest nałożona na podsystem personalizacji.
 
@@ -172,7 +179,7 @@ Po włączeniu widoków wszelkie istniejące personalizacje użytkownika i formu
 Widoki są dostępne dla większości, ale nie wszystkich stron. Dokładnie rzecz biorąc, widoki są obecnie dostępne na wszystkich stronach pełnoekranowych, z wyjątkiem pulpitów nawigacyjnych i obszarów roboczych. Strony niepełnoekranowe, zawierające okna dialogowe, okna dialogowe rozwijane, wyszukiwania, rozszerzone podglądy, również obecnie nie obsługują widoków. Obsługa widoków na dodatkowych stronach, jak obszary robocze i okna dialogowe, być może zostanie dodana w przyszłej aktualizacji.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Kto ma prawo do publikowania widoków?
-Obecnie jedynymi użytkownikami, którzy mają uprawnienia do publikowania widoków, są administratorzy systemu.  W przyszłej aktualizacji planowana jest nowa rola zabezpieczeń, która pozwoli klientom z większą elastycznością decydować, kto może publikować.  
+Tylko administratorzy systemu i użytkownicy przypisani do roli **Administratora zapisanych widoków** mają prawa do publikowania widoków. 
 
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Dlaczego nie można zapisać filtrów w widoku? 
 Istnieje kilka przyczyn uniemożliwiających zapisanie filtru w widoku: 

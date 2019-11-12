@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 05881b6e6e501ff3ac5a622d99fd1aaa311727a1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f4f6de139d0399263fa19507d63e9521f489dcbd
+ms.sourcegitcommit: 38ce9f4ef499ad208f2fbbc51bc21b12c67dfa16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249524"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2574806"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilny obszar roboczy Dostępne zapasy
 
@@ -56,9 +56,9 @@ W szczególności mobilny obszar roboczy oferuje następujące funkcje:
     -   Według fizycznie dostępnych zapasów (ten widok przedstawia dostępną ilość, która nie ma żadnych rezerwacji)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
-Wymagania wstępne różnią się w zależności od wersji systemu Microsoft Dynamics 365 wdrożonej w organizacji.
+Wymagania wstępne różnią się w zależności od wersji programu Supply Chain Management wdrożonej w organizacji.
 
-### <a name="prerequisites-if-you-use-finance-and-operations"></a>Warunki wstępne w przypadku korzystania z Finance and Operations 
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Warunki wstępne, jeśli jest używane Supply Chain Management
 Jeśli w organizacji wdrożono oprogramowanie Supply Chain Management, administrator systemu musi opublikować mobilny obszar roboczy **Dostępne zapasy**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-platform-update-3-or-later"></a>Warunki wstępne, jeśli jest używana wersja z aktualizacją platformy 3. lub nowszą 

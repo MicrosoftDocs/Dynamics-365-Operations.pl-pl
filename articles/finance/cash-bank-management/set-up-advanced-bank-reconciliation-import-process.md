@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aba85b63abc11c9f32023e8499a02728dfc86bd1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4d9a2f6efad6b8ddf3a445fe7831244e161c35d5
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188264"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578202"
 ---
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Konfigurowanie procesu importu zaawansowanego uzgadniania konta bankowego
 
@@ -36,7 +36,7 @@ Konfiguracja importu wyciągów bankowych różni się i zależy od formatu elek
 ## <a name="set-time-zone-preference"></a>Preferowana strefa czasowa
 Podczas konfigurowania ustawień importu wyciągu bankowego ważne jest, aby uwzględnić strefę czasową danych dotyczących daty i godziny w plikach wyciągów bankowych, które zostaną zaimportowane. Domyślnie wszystkie wartości daty i godziny są już w formacie UTC (Coordinated Universal Time) i dlatego podczas importowania danych konwersja strefy czasowej nie zostanie zastosowana 
 
-Dostępna jest opcja określająca strefę czasową, która ma być użyta do importowania danych. Ta opcja jest availble w polu **preferencja dotycząca strefy czasowej** na każdej stronie **szczegółów formatu danych źródłowych** (**obszar roboczy zarządzanie danymi > skonfigurować źródła danych > Wybierz format danych > ustawień regionalnych** na skróconej karcie). Wprowadzona preferencja czasu zostanie zastosowana do wszystkich operacji importowania, w których jest używany ten format danych źródłowych. Można utworzyć tyle formatów źródła danych, ile jest potrzebnych do importowania danych z wielu stref czasowych. Preferencja dotycząca strefy czasowej powinna być lokalną strefą czasową dla danych daty i godziny w pliku importu. Preferencja dotycząca strefy czasowej powinna być lokalną strefą czasową dla danych daty i godziny w pliku importu. 
+Dostępna jest opcja określająca strefę czasową, która ma być użyta do importowania danych. Ta opcja jest availble w polu **preferencja dotycząca strefy czasowej** na każdej stronie **szczegółów formatu danych źródłowych** (**obszar roboczy zarządzanie danymi > skonfigurować źródła danych > Wybierz format danych > ustawień regionalnych** na skróconej karcie). Wprowadzona preferencja czasu zostanie zastosowana do wszystkich operacji importowania, w których jest używany ten format danych źródłowych. Można utworzyć tyle formatów źródła danych, ile jest potrzebnych do importowania danych z wielu stref czasowych.  
 
 Ta strefa czasowa może nie być taka sama jak strefa czasowa użytkownika lub firmy, dlatego należy objaśnić strefę czasową używaną przez dane daty i godziny. Zaleca się, aby podczas ustawiania preferencji dotyczących strefy czasowej wziąć pod uwagę następujące kwestie 
 

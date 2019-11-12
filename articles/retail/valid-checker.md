@@ -3,7 +3,7 @@ title: Sprawdzanie spójności transakcji sprzedaży detalicznej
 description: W tym temacie opisano funkcje sprawdzania spójności transakcji sprzedaży detalicznej w rozwiązaniu Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b956565ac15b3d7b638cedaadc20923ee87b9c61
+ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2018427"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622604"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Sprawdzanie spójności transakcji sprzedaży detalicznej
 
@@ -59,11 +59,14 @@ Proces wsadowy **Sprawdź poprawność transakcji w sklepie** sprawdza spójnoś
 - **Towar na kartę upominkową** — rozwiązanie Retail nie obsługuje zwrotów towarów przekazanych za pośrednictwem karty upominkowej. Można jednak wypłacić saldo karty upominkowej. Każdy towar na karcie upominkowej, który jest przetwarzany jako wiersz zwrotu, a nie wiersz wypłaty, powoduje niepowodzenie wykonywania procesu księgowania zestawienia. Proces weryfikacji towarów przekazanych za pośrednictwem karty upominkowej pomaga zagwarantować, że w tabelach transakcji detalicznych będą istnieć tylko wiersze wypłat kart upominkowych.
 - **Cena ujemna** — sprawdza, czy nie występują wiersze transakcji z ujemną ceną.
 - **Towar i wariant** — sprawdza, czy towary i warianty wymienione w wierszach transakcji istnieją w pliku głównym towarów i wariantów.
-- **Kwota podatku** — sprawdza, czy rekordy podatku pasują do kwot podatku w wierszach. 
+- **Kwota podatku** — sprawdza, czy rekordy podatku pasują do kwot podatku w wierszach.
+- **Numer seryjny** — sprawdza, czy wiersze transakcji dla pozycji kontrolowanych przez numer seryjny zawierają numer seryjny.
+- **Znak** — sprawdza, czy znak na ilości i kwocie netto jest taki sam we wszystkich wierszach transakcji.
+- **Data biznesowa** — sprawdza, czy okresy obrachunkowe są otwarte dla wszystkich dat biznesowych dla transakcji handlu detalicznego.
 
 ## <a name="set-up-the-consistency-checker"></a>Konfigurowanie modułu sprawdzania spójności
 
-Skonfiguruj cykliczne uruchamianie procesu wsadowego „Sprawdź poprawność transakcji w sklepie” (w obszarze **Handel detaliczny \> Składniki IT w handlu detalicznym \> Księgowanie w punkcie sprzedaży**). Zadanie wsadowe można zaplanować według hierarchii organizacyjnej sklepu w sposób podobny do tego, w jaki skonfigurowane są procesy „Oblicz zestawienie w trybie wsadowym” i „Księgowanie zestawienia w trybie wsadowym”. Zalecamy skonfigurowanie tego procesu w taki sposób, aby uruchamiał się wiele razy w ciągu dnia i każdorazowo po wykonaniu zadania ściągania.
+Skonfiguruj cykliczne uruchamianie procesu wsadowego „Sprawdź poprawność transakcji w sklepie” w obszarze **Handel detaliczny \> Składniki IT w handlu detalicznym \> Księgowanie w punkcie sprzedaży**. Zadanie wsadowe można zaplanować według hierarchii organizacyjnej sklepu w sposób podobny do tego, w jaki skonfigurowane są procesy „Oblicz zestawienie w trybie wsadowym” i „Księgowanie zestawienia w trybie wsadowym”. Zalecamy skonfigurowanie tego procesu w taki sposób, aby uruchamiał się wiele razy w ciągu dnia i każdorazowo po wykonaniu zadania ściągania.
 
 ## <a name="results-of-validation-process"></a>Wyniki procesu sprawdzania
 

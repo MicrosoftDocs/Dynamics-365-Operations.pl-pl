@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a260be0f8659106907b26bf69bee3b33b09d0c24
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181342"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578225"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Poprawa śledzenia wyników wygenerowanych raportów ER i porównanie ich z wartościami wyjściowymi
 
@@ -71,9 +71,6 @@ Linia bazowa została dodana do **Format do nauki podstawowych linii ER** format
 5. W polu **Wpisz Id** wpisz **1**.
 6. Ustaw opcję **Zrób pliki linii bazowych** jako **tak**.
 7. Kliknij przycisk **OK**.
-
-    ![Okienko parametrów elektronicznego raportowania](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "Zrzut ekranu okienka parametrów elektronicznego raportowania")
-
 8. Wybierz **Linie bazowe**.
 
     ![Strona parametrów elektronicznego raportowania formatu linii bazowych](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Zrzut ekranu strony parametrów elektronicznego raportowania formatu linii bazowych")
@@ -140,9 +137,6 @@ Skonfiguruj linię bazową, aby ignorować stare zmieniające się części wyj�
 
 1. Na stonie **Konfiguracje** na skróconej karcie **Zastąpienia** wybierz **Wybierz komponenty**.
 2. Na drzewie komponentów formatu rozwiń **Wyjście**, rozwiń **Wyjście\\Dokument**, a następnie zaznacz okienko dla **Wyjście\\Dokument\\ProcessingDateTime**.
-
-    ![Okienko wyboru komponentów](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "Zrzut ekranu okienka wyboru komponentów")
-
 3. Kliknij przycisk **OK**.
 
 ![Strona parametrów elektronicznego raportowania formatu linii bazowych](media/GER-BaselineSample-AddBaseline4.PNG "Zrzut ekranu strony parametrów elektronicznego raportowania formatu linii bazowych")
@@ -162,19 +156,14 @@ Ustawiając określone parametry ER, można pominąć powiadomienia ostrzegając
 1. na stronie **konfiguracje** na panelu akcji na karcie **Konfiguracje** wybierz **Parametry użytkownika**.
 2. Ustaw **Pomiń ostrzeżenia bazowe** na **Tak**, a następnie wybierz **OK**.
 
-![Okienko parametrów użytkownika](media/GER-BaselineSample-ERUserParameters1.png "Zrzut ekranu okienka parametrów użytkownika")
-
 ### <a name="review-the-generated-baseline-file"></a>Przeglądnij wygenerowany plik bazowy
 
 1. Otwórz **Administracja organizacji** \> **Elektroniczne raportowanie** \> **Konfiguracje**.
 2. Wybierz **Linie bazowe**.
 3. Wybierz **Załączniki**.
-
-    ![Strona załączników](media/GER-BaselineSample-AttachedBaselineFile.PNG "Zrzut ekranu strony załączników")
-
     > [!NOTE]
     > Wygenerowany plik zawiera tekst i datę przetwarzania (**"#"**) z powiązania skonfigurowanego w dodanej regule linii bazowej, a nie z powiązania formatu.
-
+    
 4. Zamknij stronę **Załączniki**.
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Uruchom zaprojektowany format ER i przejrzyj dziennik, aby przeanalizować wyniki

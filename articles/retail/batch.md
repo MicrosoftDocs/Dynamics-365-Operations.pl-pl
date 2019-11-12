@@ -3,7 +3,7 @@ title: Ulepszona obsługa towarów śledzonych w partii
 description: W tym temacie opisano ulepszenia dotyczące obsługi partii (w zakresie towarów śledzonych w partii) podczas procesu księgowania zestawienia handlu detalicznego.
 author: josaw1
 manager: AnnBe
-ms.date: 05/28/2019
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,14 +18,20 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 35823efa2844898d3eecbf91624b3e37d308b63c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 70d78f86f1df057d14d821a8c967e62eeeb4ff92
+ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025801"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622557"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Ulepszona obsługa towarów śledzonych w partii
+
+
+[!include [banner](includes/banner.md)]
+
+[!include [banner](includes/preview-banner.md)]
+
 
 W punkcie sprzedaży (POS) rozwiązania Retail nie można w momencie sprzedaży przechwytywać numerów partii dla towarów śledzonych w partii. Jednak w przypadku określonych konfiguracji, gdy sprzedaż jest księgowana w centrali w ramach procesu księgowania zamówień odbiorcy lub zestawień, system Microsoft Dynamics oczekuje, że istnieją prawidłowe numery partii dla towarów śledzonych w partii oraz że będą one używane w procesie fakturowania.
 
@@ -39,3 +45,6 @@ Aby zdefiniować domyślny identyfikator partii, który będzie używany podczas
 
 > [!NOTE]
 > Ta funkcjonalność jest dostępna tylko wtedy, gdy dla konkretnego magazynu sklepu i towarów jest włączona funkcja zaawansowanego magazynowania. W późniejszym wydaniu ta funkcjonalność będzie również obsługiwana w scenariuszach, w których nie jest używana funkcja zaawansowanego zarządzania magazynem.
+
+> [!NOTE]
+> W wersji 10.0.5 rozwiązania Retail została wprowadzona pomoc techniczna do ulepszonej obsługi towarów śledzonych w partii podczas księgowania zestawienia dla scenariuszy niezaawansowanego zarządzania magazynem.

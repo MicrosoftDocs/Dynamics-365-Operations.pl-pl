@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71905d5b362c80d48b78210b59cacfb1e7899757
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: da60d098aff96780ca1e40832db34e3c9cc835e7
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874700"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569692"
 ---
 # <a name="warranty-agreements"></a>Umowy gwarancyjne
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 W module Zarządzanie składnikami majątku można skonfigurować warunki gwarancji, które mogą być połączone z składnikiem majątku lub typem składnika. Warunki gwarancji są tworzone dla konkretnego okresu. Gwarancję można skonfigurować w taki sposób, aby zapewnić pełne pokrycie lub częściowe pokrycie, i można skonfigurować terminy związane z godzinami, wydatkami i towarami.
@@ -54,4 +54,4 @@ Umowa gwarancyjna może zawierać kilka wierszy umowy w celu pokrycia gwarancji 
     3. W polu **Interwał** wpisz numer. W tym polu jest określana liczba okresów obowiązywania gwarancji.
     4. W polu **procent** wprowadź wartość procentową pokrycia dla wiersza gwarancji. Wartość procentowa wskazuje stopień pokryty przez firmę.
 
-![Rysunek 1](media/01-warranty.png)
+![Strona Gwarancja](media/01-warranty.png)

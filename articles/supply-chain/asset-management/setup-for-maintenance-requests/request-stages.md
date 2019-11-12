@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f68e11a1cd14bc35282b957a4262cbecdd627b3b
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 151db9ca8a121759e39b690ec296b36a18dc1729
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790530"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571169"
 ---
-# <a name="maintenance-request-states"></a>Stany żądań konserwacji
+# <a name="maintenance-request-lifecycle-states"></a>Stany cyklu życia żądania konserwacji
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 Stany cyklu życia żądań konserwacji określają etapy, przez które może przejść żądanie. Przykładowe stany to **Utworzony**, **Aktywny** i **Włączony**. Jeśli żądanie konserwacji jest konwertowane na zlecenie pracy, stan cyklu życia żądania konserwacji musi zostać zaktualizowany do **Zakończony** lub **Zamknięty**, aby było możliwe wskazanie, że żądanie konserwacji nie jest już aktywne. Na stronie listy **Wszystkie żądania konserwacji** można wyświetlić wszystkie żądania konserwacji, niezależnie od ich stanu cyklu życia.
@@ -51,7 +51,7 @@ Stany cyklu życia żądań konserwacji określają etapy, przez które może pr
 
 Na poniższej ilustracji pokazano przykład strony **Cykle życia żądań konserwacji**.
 
-![Rysunek 1](media/02-setup-for-requests.png)
+![Strona Stany cyklu życia żądania konserwacji](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Stany cyklu życia, grupy stanów cyklu życia oraz typy żądania konserwacji są powiązane i używane w taki sam sposób jak stany cyklu życia, grupy stanów cyklu życia oraz typy zlecenia pracy. 
@@ -80,4 +80,4 @@ Po utworzeniu stanów cyklu życia, które są wymagane dla żądań konserwacji
 
 Na poniższej ilustracji pokazano przykład strony **Modele cyklu życia żądania konserwacji**.
 
-![Rysunek 2](media/06-setup-for-requests.png)
+![Strona Modele cyklu życia żądania konserwacji](media/06-setup-for-requests.png)

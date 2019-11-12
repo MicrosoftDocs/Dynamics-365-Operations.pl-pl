@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 174c816c7a6442b07e4722c03045293b94c59153
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024667"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653330"
 ---
 # <a name="register-consumption"></a>Rejestracja zużycia
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Po wykonaniu zadania konserwacji w zleceniu produkcyjnym następnym krokiem jest dokonanie rejestracji zużycia i zaksięgowanie arkuszy. Rejestracje można przeprowadzać na następujących typach zużycia: godziny, towary i wydatki. Różne typy zużycia są rejestrowane i księgowane na stronie **arkusze zleceń pracy**. Ustawienia arkusza w module **zarządzanie składnikami majątku** służą do tworzenia i księgowania oddzielnych arkuszy godzin, towarów i wydatków w module **Zarządzanie projektami i ich księgowanie** .
 
-Istnieje możliwość dodawania lub usuwania wierszy prognozy w zleceniu pracy. Konfiguracja stanu cyklu życia zlecenia pracy, powiązanego typu projektu oraz reguł etapów związanych z typem projektu określa, czy można dodawać lub edytować wiersze arkuszy. Dowiedz się więcej o stanach cyklu pomocy zamówień pracy i powiązanych etapach projektu w [Integracja z modułem Zarządzanie projektami i ich księgowanie](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+W niektórych przypadkach istnieje możliwość dodawania lub usuwania wierszy prognozy w zleceniu pracy. Konfiguracja stanu cyklu życia zlecenia pracy, powiązanego typu projektu oraz reguł etapów związanych z typem projektu określa, czy można dodawać lub edytować wiersze arkuszy. Dowiedz się więcej o stanach cyklu pomocy zamówień pracy i powiązanych etapach projektu w [Integracja z modułem Zarządzanie projektami i ich księgowanie](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Istnieje możliwość skonfigurowania automatycznego księgowania arkuszy w stanie cyklu życia zamówienia pracy. Więcej informacji [Stany cyklu życia zlecenia pracy](../setup-for-work-orders/work-order-lifecycle-states.md).
@@ -50,10 +50,10 @@ Istnieje możliwość dodawania lub usuwania wierszy prognozy w zleceniu pracy. 
 
 6. Kliknij przycisk **Księguj arkusze**, aby zaksięgować wiersze arkusza lub arkusz.
 
-7. Po zaksięgowaniu arkuszy zużycia można zaktualizować stan cyklu życia zlecenia produkcyjnego, na przykład „zakończone”, aby wskazać, że zlecenie produkcyjne zostało zakończone.
+7. Po zaksięgowaniu arkuszy zużycia można zaktualizować stan cyklu życia zlecenia pracy. Na przykład, aby wskazać, że zlecenie pracy zostało zrealizowane, można zaktualizować stan cyklu eksploatacji na „zakończone”.
 
-- W polu **pokazywanie** umieszczonym u góry strony **arkusze zleceń pracy** wybierz wiersze arkusza, które mają być wyświetlane: wszystkie, niezaksięgowane lub zaksięgowane. W zaksięgowanych arkuszach zaznaczone jest pole wyboru **zaksięgowane**.  
-- Jeśli w arkuszu zlecenia produkcyjnego są tworzone wiersze towarów, wymiary produktu i wymiary śledzenia związane z towarem są automatycznie przenoszone do wiersza arkusza.  
+    - W polu **Pokaż** umieszczonym u góry strony **Arkusze zleceń pracy** wybierz wiersze arkusza, które mają być wyświetlane: **wszystkie**, **niezaksięgowane** lub **zaksięgowane**. W zaksięgowanych arkuszach zaznaczone jest pole wyboru **zaksięgowane**.  
+    - Jeśli w arkuszu zlecenia produkcyjnego są tworzone wiersze towarów, wymiary produktu i wymiary śledzenia związane z towarem są automatycznie przenoszone do wiersza arkusza.  
 
 Poniższy zrzut ekranu przedstawia przykład rejestracji godzin i towarów w zleceniu produkcyjnym w **arkuszach zleceń roboczych.**
 
@@ -76,7 +76,7 @@ Jeśli zlecenie produkcyjne zawiera kilka zadań zlecenia, można zarejestrować
 
 6. Umożliwia wstawienie liczby godzin pracy do podziału w polu **Godziny**.
 
-![Rysunek 2](media/02-consumption.png)
+    ![Rysunek 2](media/02-consumption.png)
 
 7. Kliknij przycisk **OK**.
 
@@ -88,10 +88,10 @@ Jeśli zlecenie produkcyjne zawiera kilka zadań zlecenia, można zarejestrować
 
 Podczas rejestracji zużycia wymiary finansowe powiązane z różnymi typami rejestracji są dodawane do rejestracji w wybranej kolejności. 
 
-*Rejestracje godzin i wydatków:* najpierw są dodawane wymiary finansowe z nagłówka arkusza, jeśli takie istnieją. Następnie są dodawane wymiary finansowe z powiązanego projektu zlecenia pracy. Na koniec dodawane są wymiary finansowe od zasobu (pracownika).
+- *Rejestracje godzin i wydatków:* najpierw są dodawane wymiary finansowe z nagłówka arkusza, jeśli takie istnieją. Następnie są dodawane wymiary finansowe z powiązanego projektu zlecenia pracy. Na koniec dodawane są wymiary finansowe od zasobu (pracownika).
 
-*Rejestracje towarów:* najpierw są dodawane wymiary finansowe z nagłówka arkusza, jeśli takie istnieją. Następnie, są dodawane wymiary finansowe z powiązanego projektu zlecenia pracy. Następnie zostaną dodane wymiary finansowe z oddziału. Na koniec dodawane są wymiary finansowe od towaru.
+- *Rejestracje towarów:* najpierw są dodawane wymiary finansowe z nagłówka arkusza, jeśli takie istnieją. Następnie, są dodawane wymiary finansowe z powiązanego projektu zlecenia pracy. Następnie zostaną dodane wymiary finansowe z oddziału. Na koniec dodawane są wymiary finansowe od towaru.
 
 >[!NOTE]
->Dla wszystkich trzech typów rejestracji kombinacja wymiarów finansowych jest sprawdzana, a niewłaściwe kombinacje są puste. Jest to standardowa konfiguracja w Finance and Operations.
+>Dla wszystkich trzech typów rejestracji kombinacja wymiarów finansowych jest sprawdzana, a niewłaściwe kombinacje są puste. Jest to standardowa konfiguracja z innymi aplikacjami Finance and Operations.
 

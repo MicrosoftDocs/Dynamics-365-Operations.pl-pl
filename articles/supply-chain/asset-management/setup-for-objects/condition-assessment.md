@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5294325f67f0484b39194b5bd9784a2e612001a4
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 05d1a38ab8de406a1615c474ffe39d231335fb67
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783508"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570060"
 ---
 # <a name="condition-assessment"></a>Ocena warunku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 W tym temacie wyjaśniono, jak utworzyć szablon oceny warunku i jak zarejestrować składnik majątku w Zarządzaniu składnikami majątku. Ocena stanu jest wykonywana w regularnych odstępach czasu, a podstawowym celem jest tworzenie i utrzymywanie danych o stanie składników majątku. Z punktu widzenia konserwacji zapobiegawczej ważne jest monitorowanie kluczowych informacji, takich jak aktualny stan i pozostały okres eksploatacji. Ponadto, jeśli przeprowadzą Państwo ocenę stanu w regularnych odstępach czasu, będą Państwo mogli monitorować i porównywać warunki na maszynie w fabryce.
 

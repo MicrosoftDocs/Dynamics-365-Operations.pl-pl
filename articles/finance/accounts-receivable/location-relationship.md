@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 8c359c5c33bed5b5abe7fc0c8e362c3399e9051a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a4945f47c86d490f40a6b00cb823e6a6005e0ee4
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179455"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550516"
 ---
-# <a name="add-location-roles-and-party-relationship-types"></a>Dodawanie ról lokalizacji i typów relacji stron 
+# <a name="add-location-and-party-relationship-types"></a>Dodawanie lokalizacji i typów relacji stron 
 
 [!include [banner](../includes/banner.md)]
 

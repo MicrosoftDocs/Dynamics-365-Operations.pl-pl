@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdfc5eda1ebf78abe823908324ed9c35215e562e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249581"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653518"
 ---
 # <a name="demand-forecasting-setup"></a>Ustawianie prognozowania popytu
 
@@ -72,7 +72,7 @@ Aby wygenerować prognozę, Supply Chain Management używa sieciowej usługi ucz
 
 **Uwaga:** nazwa konta i klucz konta magazynu systemu są wymagane tylko w przypadku używania niestandardowego konta magazynu. Jeśli została wdrożona wersja lokalna programu, musisz mieć niestandardowe konto magazynu w systemie Azure, tak aby usługa uczenia maszynowego miała dostęp do danych historycznych. 
 
-Aby utworzyć prognozy popytu, można wdrożyć własną usługę za pomocą platformy Machine Learning Studio lub eksperymentów prognozowania popytu dostępnych Supply Chain Management. Instrukcje wdrażania eksperymentów prognozowania popytu jako usługi sieciowe dostępne w aplikacji Finance and Operations. Na stronie **Parametry prognozowania popytu** kliknij kartę **Uczenie maszynowe Azure**.
+Aby utworzyć prognozy popytu, można wdrożyć własną usługę za pomocą platformy Machine Learning Studio lub eksperymentów prognozowania popytu dostępnych Supply Chain Management. Instrukcje wdrażania eksperymentów prognozowania popytu jako usługi sieciowe są dostępne w programie Supply Chain Management. Na stronie **Parametry prognozowania popytu** kliknij kartę **Uczenie maszynowe Azure**.
 
 ## <a name="settings-for-the-demand-forecasting-machine-learning-service"></a>Ustawienia usługi uczenia maszynowego prognozy popytu.
 Aby wyświetlić parametry, które można skonfigurować na potrzeby usługi prognozowania popytu, wybierz kolejno opcje **Planowanie główne** &gt; **Ustawienia** &gt; **Prognozowanie popytu** &gt; **Parametry algorytmu prognozowania**. Strona **Parametry algorytmu prognozowania** zawiera wartości domyślne parametrów. Można zastąpić te parametry na stronie **Parametry prognozowania popytu**. Na karcie **Ogólne** można zastąpi parametry globalnie lub użyć karty **Klucze alokacji produktów**, aby zastąpić te parametry według klucza alokacji produktów. Parametry, które są zastępowane dla klucza alokacji produktów mają wpływ tylko prognozę towarów, które są skojarzone z tym kluczem alokacji towaru.

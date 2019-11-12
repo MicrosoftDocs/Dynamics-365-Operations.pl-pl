@@ -18,14 +18,14 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 349f720ee4cfb612ca4f4f50a9e081f3343f756d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
+ms.sourcegitcommit: 1eaa3451275fe4223d4d25b37aaa1cd2b183e803
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188701"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2667467"
 ---
-# <a name="budgeting-overview"></a>Omówienie budżetu 
+# <a name="budgeting-overview"></a>Omówienie budżetu
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,6 +69,12 @@ Należy utworzyć *kody budżetu* określające typ transakcji budżetu na potrz
 Kody budżetu pozwalają prowadzić dziennik inspekcji modyfikacji zatwierdzonego budżetu w toku cyklu budżetu. Jeśli przepływ pracy jest związany z kodem budżetu, zostanie włączony dla wszystkich wpisów do rejestru budżetu korzystających z danego kodu budżetu, a etapy przepływu pracy muszą być wykonane, zanim wpis do rejestru budżetu przejdzie do etapu **Zakończono**.  
 
 Można też dodatkowo skonfigurować *reguły przeniesienia budżetu*. Aby zastosować reguły przeniesienia budżetu, wybierz opcję **Użyj reguł dla przeniesień budżetu** na stronie **Parametry budżetu**. Gdy reguły przeniesienia budżetu są używane, jeśli użytkownik tworzy dokument za pomocą kodu budżetu typu **Przeniesienie**, salda budżetu nie będą aktualizowane w przypadku naruszenia reguł przeniesienia budżetu. Na przykład można zezwolić na korzystanie z dokumentów przeniesienia, w których budżet wydatków jest przenoszony między głównymi kontami w dziale sprzedaży i marketingu, ale można zablokować przenoszenie budżetu z lub do tego działu do momentu zatwierdzenia przepływu pracy dla tego typu wpisu do rejestru budżetu.
+
+Funkcja wprowadzona w programie Microsoft Dynamics 365 Finance w wersji 10.0.7 (styczeń 2020 r.) dodała możliwości i elastyczność do wpisów rejestru budżetu. Aby włączyć te ulepszenia, przejdź do obszaru roboczego **Zarządzanie funkcjami** i wybierz pozycję **Wpisy rejestru budżetu tylko dla ilości** i/lub **Wpisy rejestru budżetu dla domyślnego typu kwoty**.
+
+Funkcja **Wpisy rejestru budżetu tylko dla ilości** umożliwia zaksięgowanie wpisu rejestru budżetu zawierającego kwoty jako tylko ilości. Można na przykład zaksięgować wpis budżetu z ilością 32 i ceną równą zero, w wyniku czego kwota wyniesie zero. Ilości tej można następnie użyć w kontekście raportu finansowego w celu określenia ceny za ilość. Zauważ, że zapytania i raporty w ramach tej funkcji nie zostały zaktualizowane; funkcja umożliwia jedynie zaksięgowanie kwoty wynoszącej zero.
+
+Funkcja **Wpisy rejestru budżetu dla domyślnego typu kwoty** pozwala, aby domyślny typ kwoty we wpisie rejestru budżetu był inny niż wydatek. Wiersz wpisu rejestru budżetu będzie teraz domyślnie ustawiany na wydatek, jeśli typem konta głównego jest wydatek; będzie domyślnie ustawiany na przychód, jeśli typem konta głównego jest wydatek oraz będzie domyślnie ustawiany na wydatek dla wszystkich innych typów kont.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Korzystanie z obszarów roboczych i stron zapytania do śledzenia budżetu i wartości rzeczywistych
 Menedżer budżetu może sprawdzić bieżący stan budżetu w obszarze roboczym **Budżety i prognozy księgi**. Karty **Wydatki przekraczające budżet** i **Przychody poniżej budżetu** zawierają szybki widok kombinacji wymiaru finansowego, gdzie cele budżetu nie zostały osiągnięte lub zbliżają się do progu. Można dostosować wartość procentowa progu budżetu i zestawy wymiarów finansowych, które są używane na tych kartach, klikając **Konfiguruj mój obszar roboczy**. Można kliknąć opcję **Menedżerowie jednostki**, aby wyświetlić pracowników odpowiedzialnych za określone kombinacje wymiarów finansowych wybrane na tych kartach. Na przykład, jeśli zobaczysz, że budżet wydatków działu operacji przekracza próg, możesz łatwo znaleźć menedżera działu operacji i skontaktować się z nim w celu omówienia problemu. 

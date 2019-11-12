@@ -15,14 +15,14 @@ ms.search.region: Poland
 ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: 3058623bef4aa0526ba2b75f44696351dab29c29
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 29b851496cd53120972ec6a8d2f3da1539304455
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183840"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2552350"
 ---
-# <a name="activate-storno-accounting"></a>Aktywowanie stornowania
+# <a name="activate-storno-accounting-for-poland"></a>Aktywowanie stornowania dla Polski
 
 [!include [banner](../includes/banner.md)]
 

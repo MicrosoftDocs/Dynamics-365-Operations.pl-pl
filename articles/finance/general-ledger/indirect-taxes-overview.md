@@ -3,7 +3,7 @@ title: Omówienie podatku
 description: Ten temat zawiera omówienie systemu podatków. Objaśniono w nim elementy konfiguracji podatku od sprzedaży oraz ich współdziałanie.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2741eb51f93f2f0b627dd8676629077b6df0f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 08d128e3006d019fa19b52f320b262ae49105e5d
+ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186470"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2666837"
 ---
 # <a name="sales-tax-overview"></a>Omówienie podatku
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Ten temat zawiera omówienie systemu podatków. Objaśniono w nim elementy konfiguracji podatku od sprzedaży oraz ich współdziałanie.
 
@@ -94,5 +92,8 @@ Zazwyczaj trzeba rozliczyć i zapłacić podatek 2500 do urzędu skarbowego po z
 
 Jednakże jeśli używasz podatku warunkowego, rozliczasz się z urzędem skarbowym po otrzymaniu zapłaty od odbiorcy w dniu 30 lipca.
 
+### <a name="postdated-check"></a>Czek postdatowany
+
+Jeśli jako metoda płatności jest używany czek postdatowany, w momencie utworzenia płatności konto bankowe nie zostanie rozliczone. W niektórych krajach podatek VAT staje się zobowiązaniem „zrealizowanym”, gdy płatność jest rozliczana przez bank, co oznacza, że czek postdatowany został rozliczony. Tę funkcję można włączyć, wybierając opcję **Realizuj podatek warunkowy w momencie wystawiania czeków postdatowanych** w obszarze **Zarządzanie gotówką i bankami > Ustawienia > Parametry modułu Zarządzanie gotówką i bankami > Czeki postdatowane**.
 
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie potrąconych zaliczek na podatek](tasks/set-up-withholding-tax.md).

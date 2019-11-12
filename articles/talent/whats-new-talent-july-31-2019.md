@@ -1,9 +1,9 @@
 ---
-title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (31 lipiec 2019)
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (30 lipiec 2019)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 7/30/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 83f3339e6cea1448f5b257acf602fe5ca3449555
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 3676a0a1fa77285d0203e8e49725cb1c1b742d39
+ms.sourcegitcommit: 029c1882bef558b6a45843548e94ab8369ed9870
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010252"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2651718"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (30 lipiec 2019)
 
@@ -57,7 +57,7 @@ Zmiany w tym tygodniu są poprawiają błąd, w którym w przypadku otwartych ku
 
 ### <a name="fte-analysis-displaying-incorrect-fte-number"></a>Analiza pełnego wymiaru czasu wyświetlająca niepoprawny numer pełnego etatu
 
-**Analiza pełnego wymiaru czasu** została poprawiona na karcie **Analizy** w module **Zarządzanie personelem**.
+**Analiza pełnego wymiaru czasu** została poprawiona na karcie **Analizy** dla **Zarządzanie personelem**.
 
 ### <a name="final-comments-label-translation"></a>Tłumaczenie etykiety ostatecznych komentarzy
 

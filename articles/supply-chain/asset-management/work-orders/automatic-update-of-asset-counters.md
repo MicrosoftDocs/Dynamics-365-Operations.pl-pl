@@ -3,7 +3,7 @@ title: Automatyczna aktualizacja liczników składników majątku
 description: W tym temacie opisano automatyczną aktualizację liczników składników majątku w module Zarządzanie składnikami majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,52 +16,57 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 97e6912cd37d6f82d8bf022141f04645a3364ee1
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: d51b9a7684e460d555632c3896e9dd8a4e10d92c
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875847"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626185"
 ---
-# <a name="automatic-update-of-asset-counters"></a>Automatyczna aktualizacja liczników składników majątku
+# <a name="automatic-update-of-asset-counters"></a>Automatyczna aktualizacja liczników zasobów
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+Aby uzyskać informacje dotyczące ręcznej rejestracji liczników składników majątku, zobacz [Ręczna aktualizacja liczników składnika majątku](../work-orders/manual-update-of-asset-counters.md). Aby uzyskać informacje na temat sposobu konfigurowania liczników składnika majątku, zobacz [Liczniki](../setup-for-objects/counters.md).
 
-W poprzedniej sekcji opisano ręczną rejestrację liczników składników majątku. Konfiguracja liczników składnika majątku jest opisana w [Liczniki](../setup-for-objects/counters.md).
+Wartości licznika mogą być także automatycznie aktualizowane z poziomu rejestracji produkcji na podstawie godzin produkcji lub ilości produkcji (czyli wytwarzanej ilości). Ta aktualizacja jest przeprowadzana na stronie **Aktualizowanie liczników składnika majątku**. Można zaktualizować jeden lub kilka składników majątku, ustawiając jeden parametr **Od dnia**. Ten parametr służy do określania daty rozpoczęcia rejestracji produkcji (godzin produkcji lub ilości produkcji). Mówiąc inaczej, określa on datę, od której powinny być aktualizowane wartości liczników.
 
-Wartości licznika mogą być także automatycznie aktualizowane na podstawie rejestracji produkcji na podstawie godzin produkcji lub ilości produkcji. Odbywa się to w **Aktualizuj liczniki składnika majątku**. Można zaktualizować jeden lub kilka składników majątku, wstawiając jeden parametr **Od dnia**. Ten parametr określa datę początkową rejestracji produkcji (liczba godzin lub ilość wyprodukowana), czyli datę początkową, od której powinny być aktualizowane wartości liczników.
+Wszystkie składniki majątku, które są związane z zasobem *i* mają liczniki składników majątku skonfigurowane do aktualizacji na podstawie godzin produkcji lub ilości produkcji, zostaną uwzględnione w aktualizacji automatycznej. Zostaną utworzone nowe wartości liczników.
 
-Wszystkie środki trwałe, które są związane z zasobem *i* mają liczniki składnika majątku, które są skonfigurowane do aktualizacji na podstawie ilości wyprodukowanej lub godzin produkcji, zostaną uwzględnione w aktualizacji automatycznej i zostaną utworzone nowe wartości liczników.
+W przypadku liczników opartych na ilości produkcji licznik uwzględnia ilość dobrych i ilość wadliwych towarów, które są rejestrowane. Jeśli jednostka używana do rejestrowania ilości produkcji różni się od jednostki używanej w liczniku, ilość jest konwertowana tak, aby odpowiadała jednostce licznika.
 
-W przypadku liczników na podstawie ilości produkcji, ilość dobrych towarów, a także zarejestrowana ilość wadliwych towarów jest uwzględniana w liczniku. Jeśli jednostka użyta do zarejestrowania ilości produkcji różni się od jednostki użytej w liczniku, ilość jest konwertowana na odpowiadającą jednostce licznika.
+Jak wspomniano powyżej, liczniki automatyczne mogą być aktualizowane na podstawie rejestracji produkcji. Dlatego składnik majątku, dla którego mają być automatycznie aktualizowane liczniki, musi być powiązany z zasobem (maszyną). Jeśli w zasobie zostały zarejestrowane wyprodukowane ilości lub godziny produkcji, można zaktualizować powiązane liczniki składnika majątku.
 
-Jak wspomniano powyżej, liczniki automatyczne mogą być aktualizowane na podstawie rejestracji produkcji. Dlatego składnik majątku, dla którego mają być automatycznie aktualizowane liczniki, musi być powiązany z zasobem (maszyną). Poniższe opisy zawierają przegląd ustawień i przetwarzania zleceń produkcyjnych (w module **Kontrola produkcji**), które są używane jako podstawa automatycznej aktualizacji liczników składnika majątku w module **Zarządzanie składnikami majątku**.
+1. Wybierz pozycję **Zarządzanie składnikami majątku** > **Okresowe** > **Składniki majątku** > **Aktualizuj liczniki składnika majątku**.
 
-Jeśli w zasobie zostały zarejestrowane wyprodukowane ilości lub godziny produkcji, można zaktualizować powiązane liczniki składnika majątku.
-
-1. Kliknij **Zarządzanie składnikami majątku** > **Okresowe** > **Składniki majątku** > **Aktualizuj liczniki składnika majątku**.
-
-2. Wybierz datę początkową automatycznej aktualizacji w polu **Od dnia**.
+2. W polu **Od dnia** wybierz datę początkową automatycznej aktualizacji.
 
 >[!NOTE]
 >Datą w tym polu jest datą „pracy w toku” od **Transakcje marszruty** (**Kontrola produkcji** > **Zapytania i raporty** > **Produkcja** > **Transakcje marszruty** > **Data fizycznej transakcji** pole).
 
-3. Jeśli chcesz wybrać określone zasoby, typy składników majątku lub zasoby dla aktualizacji automatycznych, kliknij przycisk **Filtruj** na skróconej karcie **Rekordy do uwzględnienia** i dokonaj odpowiednich wyborów.
+3. Na skróconej karcie **Rekordy do uwzględnienia** można wybrać określone składniki majątku, typy składników majątku lub zasoby do automatycznej aktualizacji. Wybierz pozycję **Filtr** i wybierz odpowiednie opcje.
 
-4. W razie potrzeby możesz skonfigurować automatyczną aktualizację jako zadanie wsadowe na skróconej karcie **Uruchom w tle**.
+4. Na skróconej karcie **uruchom w tle** w razie potrzeby możesz skonfigurować automatyczną aktualizację jako zadanie wsadowe.
+
+Na poniższej ilustracji przedstawiono przykład okna dialogowego **Aktualizowanie liczników składnika majątku**.
 
 ![Rysunek 1](media/12-work-orders.png)
 
-5. Kliknij przycisk **OK**. Po wykonaniu aktualizacji licznika składnika majątku można zobaczyć rejestracje liczników powiązanych ze składnikiem majątku w **Liczniki składnika majątku** (**Zarządzanie składnikami majątku** > **Wspólne** > **Składniki majątku** > **Wszystkie składniki majątku** > wybierz składnik majatku > przycisk **Licznik**).
+5. Kliknij przycisk **OK**. 
 
-W **Sumy licznika składnika majątku** można uzyskać przegląd najnowszej rejestracji wszystkich typów licznika na wszystkich składnikach majątku. Kliknij **Zarządzanie składnikami majątku** > **Zapytania** > **Składniki majątku** > **Zagregowana wartość składnika majątku**. Widok jest bardzo podobny do **Liczniki składnika majątku**, ale nie można dodawać ani edytować rejestracji w **Zagregowana wartość składnika majątku**. Służy tylko do przeglądu.
+Po zakończeniu aktualizacji licznika składników majątku można przejrzeć rejestracje liczników powiązane z danym składnikiem majątku na stronie **Liczniki składników majątku**. Wybierz pozycję **Zarządzanie składnikami majątku** > **Wspólne** > **Składniki majątku** > **Wszystkie składniki majątku**, wybierz składnik majątku, a następnie w okienku akcji na karcie **Składnik majątku**, w grupie **Zapobiegawcze** wybierz pozycję **Liczniki**.
+
+Na stronie **Zagregowana wartość składnika majątku** można uzyskać przegląd najnowszej rejestracji przeprowadzonej dla wszystkich typów licznika we wszystkich składnikach majątku. Wybierz pozycję **Zarządzanie składnikami majątku** > **Zapytania** > **Składniki majątku** > **Zagregowana wartość składnika majątku**. Ta strona przypomina stronę **Liczniki składników majątku**, ale nie można dodawać ani edytować rejestracji. Służy ona tylko do przeglądu.
+
+Na poniższej ilustracji przedstawiono przykład strony **Zagregowana wartość składnika majątku**.
 
 ![Rysunek 2](media/13-work-orders.png)
 
+Należy uwzględnić następujące informacje:
 
-- Nadal istnieje możliwość tworzenia ręcznych rejestracji wartości licznika dla typów licznika, które są automatycznie aktualizowane. Aby uzyskać więcej informacji, zobacz sekcję „Ręczna aktualizacja liczników składnika majątku”
-- Istnieje możliwość skonfigurowania liczników powiązanych z innym licznikiem, co oznacza, że po zaktualizowaniu licznika powiązane liczniki są automatycznie aktualizowane w tym samym czasie. Należy zapoznać się z tematem [Liczniki](../setup-for-objects/counters.md), aby zobaczyć konfigurację powiązanych liczników.
+- W dalszym ciągu możesz tworzyć ręczne rejestracje wartości licznika dla typów licznika, które są automatycznie aktualizowane. Aby uzyskać więcej informacji, zobacz [Ręczna aktualizacja liczników składnika majątku](../work-orders/manual-update-of-asset-counters.md).
+
+- Możesz konfigurować liczniki powiązane z innym licznikiem. W tym przypadku jeśli licznik jest aktualizowany, powiązane liczniki są automatycznie aktualizowane w tym samym czasie. Aby uzyskać więcej informacji na temat sposobu konfigurowania powiązanych liczników, zobacz [Liczniki](../setup-for-objects/counters.md).
+

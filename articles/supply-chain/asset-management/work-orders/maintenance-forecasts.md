@@ -3,7 +3,7 @@ title: Prognozy konserwacji
 description: W tym temacie wyjaśniono prognozy konserwacji w module Zarządzanie składnikami majątku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,104 +16,111 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 383c910b40199f2da863144c6dc85a579d0091e9
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a1596b283c3eaffca25ff7f03c722a2bcce109fb
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024506"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626300"
 ---
 # <a name="maintenance-forecasts"></a>Prognozy konserwacji
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 
-Podczas tworzenia zlecenia pracy, zadania zlecenia pracy są tworzone z uwzględnieniem odpowiednich typów składników majątku i zadań konserwacyjnych. Po wybraniu typu zadania konserwacji zawierającego prognozy konserwacji, prognozy są automatycznie kopiowane do zlecenia pracy.
+Podczas tworzenia zlecenia pracy, są tworzone zadania zlecenia pracy, które mają powiązane typy składników majątku i zadań konserwacyjnych. Po wybraniu typu zadania konserwacji zawierającego prognozy konserwacji, prognozy są automatycznie kopiowane do zlecenia pracy.
 
-Istnieje możliwość dodawania lub usuwania wierszy prognozy w zleceniu pracy. Konfiguracja stanu cyklu życia zlecenia pracy, powiązanego typu projektu oraz reguł etapów związanych z typem projektu określa, czy można dodawać lub edytować wiersze prognozy. 
+Można dodawać wiersze prognozy do zlecenia pracy lub usuwać je ze zlecenia pracy. Konfiguracja stanu cyklu życia zlecenia pracy, powiązanego typu projektu oraz reguł etapów związanych z typem projektu określa, czy można dodawać lub edytować wiersze prognozy. Aby uzyskać więcej informacji na temat stanów cyklu życia zlecenia pracy i etapów projektu należy zapoznać się z [Prognozy, zlecenia pracy i projekty](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
-1. Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
+1. Wybierz pozycję **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
-2. Wybierz zlecenie pracy z listy i kliknij przycisk **prognoza.** W **prognozieobsługi zlecenia pracy** zostaną wyświetlone wiersze prognozy z typu zadania konserwacji wybrane w zadaniu zlecenia pracy.
+2. Wybierz zlecenie pracy na liście, a następnie w okienku akcji > na karcie **Zlecenie pracy**, w grupie **Projekt** wybierz pozycję **Prognozy**. Na stronie **Prognoza konserwacji zlecenia pracy** zostaną wyświetlone wiersze prognozy z typu zadania konserwacji wybrane w zadaniu zlecenia pracy.
 
 
-## <a name="add-hours-forecast-to-a-work-order"></a>Dodaj prognozę godzin dla zlecenia pracy
+## <a name="add-an-hours-forecast-to-a-work-order"></a>Dodaj prognozę godzin dla zlecenia pracy
 
-1. Wybierz zadanie zlecenia pracy, w którym chcesz dodać wiersz prognozy.
+1. Na stronie **Prognoza konserwacji zlecenia pracy** wybierz zadanie zlecenia pracy, do którego chcesz dodać prognozę.
 
-2. Na skróconej karcie **Godziny** kliknij przycisk **Dodaj**, aby utworzyć nowy wiersz.
+2. Na skróconej karcie **Godziny** wybierz **Dodaj**, aby utworzyć nowy wiersz.
 
-3. Wybierz kategorię w polu **Kategoria**.
+3. W polu **Kategoria** wybierz kategorię.
 
-4. Wstaw liczbę prognozowanych godzin w polu **godziny**.
+4. W polu **Godziny** wstaw liczbę prognozowanych godzin.
 
 5. W polu **Właściwości wiersza** wybierz typ opłaty, który ma być używany w wierszu.
 
 
-## <a name="add-items-forecast-to-a-work-order"></a>Dodaj pozycje prognozy dla zlecenia pracy
+## <a name="add-an-items-forecast-to-a-work-order"></a>Dodaj pozycje prognozy dla zlecenia pracy
 
-Istnieją trzy sposoby dodawania pozycji do prognozy zleceń pracy konserwacji: wiersze można tworzyć dla towarów (części zamienne), które nie są uwzględnione na liście części zamiennych lub BOM składników majątku, można wybierać części zamienne z listy zatwierdzone części zamienne, a także wybierać towary ze składników majatku BOM.
+Istnieją trzy sposoby dodawania pozycji do prognozy konserwacji zlecenia pracy. Wiersze można tworzyć dla pozycji (części zamienne), które nie są uwzględnione na liście części zamiennych lub list składowych składników majątku (BOM), można wybierać części zamienne z listy zatwierdzone części zamienne, a także wybierać pozycje ze składników majatku BOM.
 
-1. Wybierz zadanie zlecenia pracy, w którym chcesz dodać wiersz prognozy.
+- Na stronie **Prognoza konserwacji zlecenia pracy** wybierz zadanie zlecenia pracy, do którego chcesz dodać prognozę.
 
-2. Otwórz skróconą kartę **Towary**.
+- Na skróconej karcie **Pozycje** dodaj pozycje do prognozy konserwacji, stosując odpowiednią metodę.
 
-3. Kliknij **Dodaj**, aby utworzyć nowy wiersz dla części zamiennej, która nie znajduje się na liście części zamiennych lub na liście BOM składników majątku.
+Aby utworzyć nowy wiersz dla części zamiennej, która nie znajduje się na liście części zamiennych lub na liście BOM składników majątku, postępuj zgodnie z następującymi krokami:
 
-4. Wybierz pozycję w polu **Kod pozycji**.
+1. Wybierz opcję **Dodaj**.
+2. W polu **Numer pozycji** wybierz pozycję.
+3. W polu **Ilość sprzedaży** wprowadź ilość.
+4. W polu **Jednostka** wybierz jednostkę miary dla ilości.
+5. W polach **Koszt własny** i **Waluta** wprowadź odpowiednie wartości.
+6. W polu **Właściwość wiersza** wybierz właściwość wiersza.
+7. Aby zmienić listę wymiarów wyświetlanych w wierszach pozycji, kliknij **Zapasy** > **Wyświetl wymiary**, wybierz wymiary i na przycisku przełącznika **Zapisz ustawienia** wybierz opcję **Tak**.
 
-5. Wstaw ilość w polu **ilość sprzedaży**, a następnie wybierz jednostkę ilości w polu **jednostka**.
+Aby dodać część zamienną z listy zatwierdzonych części zamiennych, wykonaj następujące kroki:
 
-6. Wstaw koszt własny i walutę w odpowiednich polach i wybierz **Właściwość wiersza**.
+1. Wybierz **Dodaj części zamienne**.
+2. Wybierz część zamienną i w razie konieczności zmodyfikuj odpowiednie informacje.
+3. Kliknij przycisk **OK**.
 
-7. Aby zmienić listę wymiarów wyświetlanych w wierszach towaru, kliknij **Zapasy** > **Wyświetl wymiary**, wybierz wymiary i wybierz wartość tak na przycisku przełącznika **Zapisz ustawienia**.
+Aby dodać towar z BOM środka trwałego, należy wykonać następujące kroki:
 
-8. Jeśli chcesz dodać zatwierdzoną część zamienną do prognozy konserwacji, kliknij opcję **Dodaj części zamienne**, wybierz część zamienną, w razie potrzeby edytuj informacje i kliknij przycisk **OK**.
+1. Wybierz **Dodaj pozycje BOM**.
+2. Wybierz pozycje i w razie konieczności zmodyfikuj odpowiednie informacje.
+3. Kliknij przycisk **OK**.
 
-9. Jeśli chcesz dodać towary BOM aktywów do prognozy, kliknij przycisk **Dodaj towary BOM**, wybierz towar, w razie potrzeby edytuj informacje związane, a następnie kliknij przycisk **OK**.
-
-10. Kliknij **Używająca pozycja** jeśli chcesz uzyskać informacje o tym, gdzie w module Zarządzaniu składnikami majątku jest używany element w wybranym wierszu, w odniesieniu do składników majątku, zadań konserwacji, części zamiennych i zleceń pracy. 
+Aby uzyskać informacje o tym, gdzie jest używana pozycja w wybranym wierszu w odniesieniu do składników majątku, domyślnych typów zadań konserwacji, części zamiennych i zleceń pracy w module Zarządzanie składnikami majątku, wybierz opcję **Używająca pozycja**. Aby uzyskać więcej informacji na temat tego przeglądu, zobacz [Używająca pozycja](../controlling-and-reporting/item-where-used.md).
 
 
+## <a name="add-an-expense-forecast-to-a-work-order"></a>Dodaj prognozę wydatków dla zlecenia pracy
 
-## <a name="add-expense-forecast-to-a-work-order"></a>Dodaj prognozę wydatków dla zlecenia pracy
+1. Na stronie **Prognoza konserwacji zlecenia pracy** wybierz zadanie zlecenia pracy, do którego chcesz dodać prognozę.
 
-1. W tym temacie opisano sposób dodawania prognozy wydatków do zlecenia pracy. Z lewej strony formularza wybierz zadanie zlecenia pracy, do którego chcesz dodać prognozę.
+2. Na skróconej karcie **Wydatki** wybierz **Dodaj**, aby utworzyć nowy wiersz.
 
-2. Otwórz skróconą kartę **Wydatki**.
+3. W polu **Kategoria** wybierz kategorię.
 
-3. Kliknij przycisk **Dodaj**, aby utworzyć nowy wiersz.
+4. W polu **Ilość** wprowadź ilość.
 
-4. Wybierz kategorię w polu **Kategoria**.
+5. W polach **Koszt własny**, **Waluta sprzedaży** i **Cena sprzedaży** wpisz odpowiednie wartości.
 
-5. W polu **Ilość** wprowadź ilość.
-
-6. Umożliwia wstawienie kosztu własnego, waluty sprzedaży i ceny sprzedaży w odpowiednich polach.
-
-7. W polu **Właściwości wiersza** wybierz typ opłaty, który ma być używany w wierszu.
+6. W polu **Właściwości wiersza** wybierz typ opłaty, który ma być używany w wierszu.
 
 >[!NOTE]
->W skróconej karcie **sumy prognozy konserwacji** można wyświetlić przegląd liczby wierszy utworzonych na poszczególnych kartach dla wybranego zadania zlecenia oraz zlecenia pracy. Ponadto w przypadku zlecenia pracy można wyświetlić sumę prognozowanych godzin pracy dla zadania zlecenia.
+>W skróconej karcie **Sumy prognozy konserwacji** można wyświetlić przegląd liczby wierszy utworzonych na poszczególnych kartach dla wybranego zadania zlecenia oraz zlecenia pracy. Ponadto pokazuje sumę prognozowanych godzin dla zadania zlecenia pracy i zlecenia pracy.
+
+Na poniższej ilustracji pokazano przykład strony listy **Prognoza konserwacji zlecenia pracy**.
 
 ![Rysunek 1](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatyczna aktualizacja prognoz zleceń pracy
 
-W module Zarządzanie składnikami majątku można automatycznie aktualizować zmiany prognoz zleceń, dotyczące kosztów godzinowych, kosztów towarów i wydatków, które zostały zaktualizowane w innych modułach. W tym celu należy upewnić się, że ostatnie koszty własne są zawsze używane w prognozach zleceń pracy. Możliwe jest również tworzenie podobnych aktualizacji dla [Prognoza typu zadania konserwacji](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+W module Zarządzanie składnikami majątku można automatycznie aktualizować zmiany prognoz zleceń, aby odzwierciedlały zmainy w kosztach godzinowych, kosztach towarów i wydatków, które zostały zaktualizowane w innych modułach w Microsoft Dynamics 365 for Finance and Operations. Pomaga to upewnić się, że ostatnie koszty własne są zawsze używane w prognozach zleceń pracy. Możliwe jest również tworzenie podobnych aktualizacji dla [prognoz typu zadania konserwacji](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
-1. Kliknij **Zarządzanie składnikami majątku** > **Okresowe** > **Prognoza** > **Aktualizacja prognozy zlecenia pracy**.
+1. Wybierz **Zarządzanie składnikami majątku** > **Okresowe** > **Prognoza** > **Aktualizacja prognozy zlecenia pracy**.
 
-2. W oknie dialogowym **Aktualizacja prognozy zlecenia pracy** w razie potrzeby można dodawać wybory dotyczące określonych zleceń pracy lub zadań zlecenia pracy. Kliknij **Filtruj**, aby wybrać te opcje.
+2. W oknie dialogowym **Aktualizacja prognozy zlecenia pracy** na skróconej karcie **Rekordy do uwzględnienia** w razie potrzeby można dodawać wybory dotyczące określonych zleceń pracy lub zadań zlecenia pracy. Wybierz pozycję **Filtruj** i wybierz odpowiednie opcje.
 
-3. W razie potrzeby możesz skonfigurować automatyczną aktualizację jako zadanie wsadowe na skróconej karcie **Uruchom w tle**.
+3. Na skróconej karcie **uruchom w tle** w razie potrzeby możesz skonfigurować automatyczną aktualizację jako zadanie wsadowe.
 
-4. Kliknij przycisk **OK**, aby rozpocząć aktualizację prognozy.
+4. Wybierz przycisk **OK**, aby rozpocząć aktualizację prognozy.
 
+
+Na poniższej ilustracji pokazano przykład okna dialogowego **Aktualizacja prognozy zlecenia pracy**.
 
 ![Rysunek 2](media/07-work-orders.png)
-

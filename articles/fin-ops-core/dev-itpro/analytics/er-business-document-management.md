@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c84b08ec45dfa7aa9c7b913087a2518bfeedf87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 05dee1efc4e817795824e3fa1c41093d48a97d78
+ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181572"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2652624"
 ---
 # <a name="business-document-management-overview"></a>Omówienie zarządzania dokumentami biznesowymi
 
@@ -120,7 +120,7 @@ Aby włączyć funkcję zarządzania dokumentem biznesowym dla wszystkich firm, 
 
 ![Obszar roboczy zarządzanie funkcjami](./media/BDM-Overview-FMEnabling.png)
 
-Aby uzyskać więcej informacji o aktywowaniu nowych funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+Aby uzyskać więcej informacji o aktywowaniu nowych funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## <a name="configure-parameters"></a>Konfigurowanie parametrów
 
@@ -137,7 +137,7 @@ Dla tego typu dokumentu muszą być wybrane następujące wartości atrybutów:
 | Grupa               | Plik                  |
 | Lokalizacja            | SharePoint            |
 
-Aby uzyskać informacje dotyczące konfigurowania wymaganych parametrów zarządzania dokumentami i typów dokumentów, należy zapoznać się z [Konfigurowanie zarządzania dokumentami](../../fin-and-ops/organization-administration/configure-document-management.md).
+Aby uzyskać informacje dotyczące konfigurowania wymaganych parametrów zarządzania dokumentami i typów dokumentów, należy zapoznać się z [Konfigurowanie zarządzania dokumentami](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
 
 ![Ustaw tyo dokumentu Zarządzania dokumentami](./media/BDM-Overview-DMSetting.png)
 

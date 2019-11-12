@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 57120b51c069e49697f8ec4357265974a0d3afb4
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 3e813bd4f2d47b928b6184bb063d9afa45695727
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874585"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569738"
 ---
 # <a name="work-order-types"></a>Typy zleceń pracy
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Typy zleceń pracy służą do klasyfikowania zleceń. Na przykład mogą istnieć typy zleceń pracy, które są związane z konserwacją prewencyjną lub naprawczą.
 
@@ -51,4 +51,4 @@ Aby uzyskać więcej informacji na temat stanów cyklu życia zlecenia pracy i e
 
 8. Wybierz opcję **Zapisz**.
 
-![Rysunek 1](media/16-setup-for-work-orders.png)
+![Typy zleceń pracy](media/16-setup-for-work-orders.png)

@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5b791fd3e060c4f4ecdb1ca599a6041d421db74
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 5b830d835d99122a8c0572481f4c229c37d97d0c
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024543"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653258"
 ---
 # <a name="asset-documents"></a>Dokumenty składnika majątku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 W tym temacie objaśniono dokumenty w module Zarządzanie składnikami majątku.
 
-W module Zarządzanie składnikami majątku można skonfigurować dokumenty w taki sposób, aby były one automatycznie powiązane na przykład z typami zadań, producentami składników majątku, typami składników majątku lub składnikami majątku. Ta funkcja jest przydatna, kiedy zwalniane są zaktualizowane wersje dokumentów. W takim przypadku wystarczy umieścić zaktualizowany dokument w standardowej lokalizacji, której używasz dla dokumentów Finance and Operations, i dołączyć dokument do utworzonego rekordu dokumentu składnika majątku. Do zaktualizowanego dokument można następnie uzyskać dostęp z menu **Wszystkie składniki majątku**, **Aktywne składniki majątku**, **Moje aktywne składniki majątku**, **Wszystkie zlecenia pracy** oraz **Aktywne zadania zleceń pracy**. Proces dołączania dokumentów do rekordu dokumentu zasobów używa standardowego systemu obsługi dokumentów.
+W module Zarządzanie składnikami majątku można skonfigurować dokumenty w taki sposób, aby były one automatycznie powiązane na przykład z typami zadań, producentami składników majątku, typami składników majątku lub składnikami majątku. Ta funkcja jest przydatna, kiedy zwalniane są zaktualizowane wersje dokumentów. W takim przypadku wystarczy umieścić zaktualizowany dokument w standardowej lokalizacji, której używasz dla dokumentów Supply Chain Management, i dołączyć dokument do utworzonego rekordu dokumentu składnika majątku. Do zaktualizowanego dokument można następnie uzyskać dostęp z menu **Wszystkie składniki majątku**, **Aktywne składniki majątku**, **Moje aktywne składniki majątku**, **Wszystkie zlecenia pracy** oraz **Aktywne zadania zleceń pracy**. Proces dołączania dokumentów do rekordu dokumentu zasobów używa standardowego systemu obsługi dokumentów.
 
 **Przykład 1:** dokument, który jest powiązany z typem zadania może opisywać procedurę dla tego typu zadania.
 

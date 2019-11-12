@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4fbc24c5ceb73389b84b125eb942ac31757928aa
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: b510c10ebfcf4939eb2e1297972d27aa1812ae5a
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008437"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551010"
 ---
-# <a name="embed-powerapps-apps-in-core-hr"></a>Osadzone aplikacje PowerApps w Core HR
+# <a name="embed-powerapps-apps-in-dynamics-365---core-hr"></a>Osadzona aplikacja PowerApps w Dynamics 365 - Core HR
 
 [!include [banner](includes/banner.md)]
 
