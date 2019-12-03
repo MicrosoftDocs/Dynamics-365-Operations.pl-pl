@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
+            - name: Wgląd w płatności od odbiorców (podgląd)
+              href: accounts-receivable/payment-insights-overview.md
             - name: Aktualizacje do jednej wersji usługi
               items:
                 - name: Omówienie aktualizacji do jednej wersji usługi
@@ -2239,6 +2241,8 @@
                       href: localizations/rus-currency-sale-purchase.md
                     - name: Gotówka podręczna
                       href: localizations/emea-petty-cash.md
+                    - name: Gotówka — lokalne formularze podstawowe i ujednolicone raporty
+                      href: localizations/rus-local-primary-forms-and-unified-reports.md
                 - name: VAT
                   items:
                     - name: Lokalne księgowanie należnego podatku VAT
@@ -2255,6 +2259,8 @@
                       href: localizations/rus-sales-books-purchase-books.md
                     - name: Zarządzanie przedpłatami
                       href: localizations/rus-prepayments-management.md
+                    - name: Przywrócenie przychodzącego podatku VAT
+                      href: localizations/rus-incoming-VAT-restoring.md
                 - name: Środki trwałe
                   items:
                     - name: Zarządzanie środkami trwałymi
@@ -2313,6 +2319,14 @@
                       href: localizations/rus-cash-flow.md
                     - name: Alokacja opłat dodatkowych proporcjonalnie do wagi i objętości
                       href: localizations/rus-miscellaneous-charges.md
+                    - name: Opłaty dodatkowe stron trzecich
+                      href: localizations/rus-third-party-misc-charges.md
+                - name: Zapasy
+                  items:
+                    - name: Towar od dostawcy w drodze
+                      href: localizations/rus-goods-transit-vendor.md
+                    - name: Numery deklaracji celnych
+                      href: localizations/rus-custom-declaration-number.md
                 - name: Raportowanie
                   items:
                     - name: Raportowanie finansowe
@@ -2335,6 +2349,8 @@
                       href: localizations/rus-officials.md
                     - name: Oddziały firmy
                       href: localizations/rus-company-divisions.md
+                    - name: Formaty adresów rosyjskich i import z FIAS
+                      href: localizations/rus-russian-address-format-and-import-from-FIAS.md
                 - name: Odroczenia
                   items:
                     - name: Konfigurowanie odroczeń
@@ -2869,6 +2885,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Importowanie konfiguracji z RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Samouczki
+                  items:
+                    - name: 'Aby pobrać dane z wielu tabel aplikacji, należy użyć źródeł danych SPRZĘŻENIA w mapowaniach modelu Raportowania elektronicznego (ER)'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                    - name: Konfigurowanie mapowań modelu ER w zależności od kraju
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
                 - name: Używanie rozwiązań modułu Raportowanie elektroniczne w rozwiązaniu Finance and Operations
                   items:
                     - name: Konfigurowanie struktury
@@ -2903,9 +2925,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Omówienie zarządzania dokumentami biznesowymi
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+                    - name: Dodawanie nowych pól do szablonu dokumentu biznesowego w programie Microsoft Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
                 - name: Interfejs API struktury modułu Raportowanie elektroniczne
                   items:
-                    - name: Rozszerzanie listy funkcji Raportowania elektronicznego
+                    - name: Rozszerzanie listy funkcji Raportowanie elektroniczne
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
                     - name: Zmiany w interfejsie API struktury raportowania elektronicznego w aktualizacji Application update 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json

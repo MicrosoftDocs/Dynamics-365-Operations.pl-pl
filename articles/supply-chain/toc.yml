@@ -571,6 +571,8 @@
                   href: cost-management/inventory-close.md
                 - name: Korygowanie wartości kosztów dostępnych zapasów
                   href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: Raport wiekowania zapasów
+                  href: cost-management/inventory-aging-report-storage.md
             - name: Księgowanie produkcji
               items:
                 - name: Obliczenia BOM
@@ -868,7 +870,13 @@
                         - name: Pobieranie konfiguracji z repozytorium modułu Raportowanie elektroniczne typu RCS
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Importowanie konfiguracji z RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Samouczki
+                      items:
+                        - name: 'Aby pobrać dane z wielu tabel aplikacji, należy użyć źródeł danych SPRZĘŻENIA w mapowaniach modelu Raportowania elektronicznego (ER)'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurowanie mapowań modelu ER w zależności od kraju
+                          href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Używanie rozwiązań modułu Raportowanie elektroniczne w rozwiązaniu Finance and Operations
                   items:
                     - name: Konfigurowanie struktury
@@ -903,9 +911,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Omówienie zarządzania dokumentami biznesowymi
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Dodawanie nowych pól do szablonu dokumentu biznesowego w programie Microsoft Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Interfejs API struktury modułu Raportowanie elektroniczne
                   items:
-                    - name: Rozszerzanie listy funkcji Raportowania elektronicznego
+                    - name: Rozszerzanie listy funkcji Raportowanie elektroniczne
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Zmiany w interfejsie API struktury raportowania elektronicznego w aktualizacji Application update 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
@@ -1051,6 +1061,22 @@
           items:
             - name: Planowanie główne — strona główna
               href: master-planning/master-planning-home-page.md
+            - name: Optymalizacja planowania
+              items:
+                - name: Omówienie optymalizacji planowania
+                  href: master-planning/planning-optimization/planning-optimization-overview.md
+                - name: Rozpoczęcie optymalizacji planowania
+                  href: master-planning/planning-optimization/get-started.md
+                - name: Analiza dopasowań optymalizacji planowania
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Stosowanie filtrów do planu
+                  href: master-planning/planning-optimization/plan-filters.md
+                - name: Wyświetlanie historii planu i dzienników planowania
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Automatyczne akceptowanie z optymalizacją planowania
+                  href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Anulowanie zadania planowania
+                  href: master-planning/planning-optimization/cancel-planning-job.md
             - name: Plany główne
               items:
                 - name: Omówienie planów głównych
