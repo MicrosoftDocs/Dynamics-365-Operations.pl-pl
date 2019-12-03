@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0c6a9e4dd3f3182c98a9f5491b07f8687c21e5c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 531fd219cc2db79e01a277c72eba66fb8a9b8bbd
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184078"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772658"
 ---
 # <a name="budgeting-home-page"></a>Budżetowanie — strona główna
 
@@ -42,12 +42,12 @@ Procesy długoterminowego planowania strategicznego oraz planowania budżetu roc
 
 Organizacje bardzo dojrzałe mogą wykształcić kulturę organizacyjną, w której pracownicy etatowi znają cele organizacyjne i realizują je za pomocą zasad, takich jak „Należy rozważyć spotkania online zamiast podróży”. Aplikacja zawiera strukturę kontroli budżetu umożliwiającą kierownictwu firmy wybranie modelu twardej kontroli (który uniemożliwia księgowanie powyżej wysokości budżetu) lub miękkiej kontroli (w którym użytkownicy są ostrzegani o ryzyku przekroczenia budżetu, ale mogą sami podejmować decyzje dotyczące dalszego postępowania). Można również stosować prognozy kroczące. Prognoza krocząca polega na regularnym porównywaniu budżetu z wartościami rzeczywistymi i jest używana do definiowania skuteczności wykonywania budżetu przez firmę. Prognoza krocząca służy także do identyfikowania trendów. W rozwiązaniu Finance and Operations prognozy kroczące są obsługiwane za pomocą dokumentu planu budżetu jako działania planowania początkowego. Prognozy kroczące mogą być wykonywane równolegle z planowaniem dla nachodzącego cyklu budżetu.
 
--   [Budżetowanie podstawowe: omówienie i konfiguracja](basic-budgeting-overview-configuration.md)
--   [Kontrola budżetu: omówienie i konfiguracja](budget-control-overview-configuration.md)
--   [Planowanie budżetu: omówienie i konfiguracja](budget-planning-overview-configuration.md)
+-   [Omówienie budżetowania](basic-budgeting-overview-configuration.md)
+-   [Omówienie kontroli budżetu](budget-control-overview-configuration.md)
+-   [Omówienie planowania budżetu](budget-planning-overview-configuration.md)
 -   [Prognozy dotyczące stanowisk](position-forecasting.md)
 -   [Dokumenty uzasadnienia planowania budżetu](budget-planning-justification-docs.md)
--   [Szablony programu Microsoft Excel do planowania budżetu](budget-planning-excel-templates.md)
+-   [Szablony planowania budżetu dla programu Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Narzędzia budżetowania
 [![Narzędzia budżetowania](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 

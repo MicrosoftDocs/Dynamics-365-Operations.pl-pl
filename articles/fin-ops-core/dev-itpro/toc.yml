@@ -2,6 +2,8 @@
   items:
     - name: Rozwój i administracja aplikacji Finance and Operations
       items:
+        - name: Dokumentacja aplikacji Finance and Operations
+          href: ../fin-ops/index.md
         - name: Rozwój i administracja aplikacji Finance and Operations
           href: index.md
         - name: Nowości i zmiany
@@ -128,16 +130,28 @@
                           href: data-entities/dual-write-overview.md
                         - name: Hierarchia organizacyjna w usłudze Common Data Service
                           href: data-entities/dual-write-organization.md
-                        - name: Pojęcie firmy w usługach Common Data Service
-                          href: data-entities/dual-write-company.md
+                        - name: Integracja firmy
+                          items:
+                            - name: Pojęcie firmy w usługach Common Data Service
+                              href: data-entities/dual-write-company.md
+                            - name: Inicjowanie z danymi firmy
+                              href: data-entities/dual-write-bootstrap.md
                         - name: Zintegrowane dane główne odbiorcy
                           href: data-entities/dual-write-customer.md
+                        - name: Zintegrowana księga
+                          href: data-entities/dual-write-ledger.md
                         - name: Ujednolicone działanie produktu
                           href: data-entities/dual-write-product.md
-                        - name: Zintegrowane dane główne dostawcy
-                          href: data-entities/dual-write-vendor.md
+                        - name: Integracja dostawcy
+                          items:
+                            - name: Zintegrowane dane główne dostawcy
+                              href: data-entities/dual-write-vendor.md
+                            - name: Przełączanie się między projektami dostawcy
+                              href: data-entities/dual-write-vendor-switch.md
                         - name: Zintegrowane oddziały i magazyny
                           href: data-entities/dual-write-sites-and-warehouses.md
+                        - name: Zintegrowane dane główne podatków
+                          href: data-entities/dual-write-tax.md
                         - name: Wstępna synchronizacja
                           href: data-entities/dual-write-initial.md
                         - name: Rozwiązywanie problemów związanych z integracją danych
@@ -418,6 +432,8 @@
                   href: user-interface/client-disconnected.md
                 - name: Rozwiązywanie problemów z wdrożeniami lokalnymi
                   href: deployment/troubleshoot-on-prem.md
+                - name: Skrypty służące do rozwiązywania problemów w środowiskach lokalnych
+                  href: deployment/onprem-tsg-implementations.md
                 - name: Wymiana certyfikatów
                   href: deployment/certificate-rotation-on-prem.md
             - name: Wdrażanie kodu niestandardowego

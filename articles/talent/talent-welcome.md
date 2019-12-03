@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: edc2f59752a32b9cd20902d0b7a1edfe3ba4d15b
-ms.sourcegitcommit: ff160a9f9879f3ec015ffef11fbc8b7c1b84a59d
+ms.openlocfilehash: 841ef8f2b7c319e0a6b3a9ce9a9e4959e70aa8cd
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552957"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812771"
 ---
 # <a name="welcome-to-dynamics-365-talent"></a>Dynamics 365 Talent — Zapraszamy!
 
@@ -53,10 +53,10 @@ Poznaj bliżej Dynamics 365 Talent, oglądając film [Jak rozpocząć korzystani
 Podczas pracy z użyciem rozwiązania Talent możesz określić strukturę swojej organizacji, używając elementów, takich jak działy, funkcje i stanowiska. Są to jedne z podstawowych elementów, które można skonfigurować. Poszczególni pracownicy etatowi są przypisywani do stanowisk, które są skojarzone z funkcjami.
 
 -   [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](departments-jobs-positions.md)
--   [Konfigurowanie specyficznych dla firmy parametrów modułu Zasoby ludzkie](set-up-company-specific-hr-parameters.md)
--   [Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach](set-up-hr-parameters-across-legal-entities.md) 
--   [Czynności personalne — często zadawane pytania](personnel-actions-faq.md)
--   [Omówienie urlopów i nieobecności](leave-absence-overview.md)
+-   [Konfigurowanie parametrów modułu Zasoby ludzkie (HR) specyficznych dla firmy](set-up-company-specific-hr-parameters.md)
+-   [Konfigurowanie parametrów modułu Zasoby ludzkie (HR) w wielu firmach](set-up-hr-parameters-across-legal-entities.md) 
+-   [Akcje dotyczące pracowników — często zadawane pytania](personnel-actions-faq.md)
+-   [Zarządzanie urlopami i nieobecnościami](leave-absence-overview.md)
 -   [Jak korzystać z rozwiązania Dynamics 365 Talent: urlopy i nieobecności (film)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [Jak zarządzać pracownikami w Dynamics 365 Talent (film)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
@@ -64,8 +64,8 @@ Podczas pracy z użyciem rozwiązania Talent możesz określić strukturę swoje
 
 Rozwiązanie Talent zawiera aplikację Attract, która pomaga wyszukiwać i zatrudniać osoby o odpowiednich kwalifikacjach dla Twojej organizacji. W procesie zatrudniania pomaga aplikacja Onboard, dzięki której łatwiej wprowadzisz nowych pracowników do organizacji. Pozwala wyznaczyć precyzyjne cele, przekazywać niezbędne informacje, zapewnia łączność z innymi pracownikami i jest znakomitym punktem wejścia do nowej pracy.  
 
-- [Omówienie aplikacji Attract](attract-overview.md)
-- [Omówienie aplikacji Onboard](create-onboarding-experience.md)
+- [Microsoft Dynamics 365 Talent — Funkcje i możliwości aplikacji Attract](attract-overview.md)
+- [Rozpoczęcie korzystania z rozwiązania Onboard](create-onboarding-experience.md)
 
 ## <a name="retain-and-motivate-employees"></a>Utrzymanie i motywowanie pracowników etatowych
 
@@ -83,14 +83,14 @@ Aby ułatwić pracownikom realizację ich planów zawodowych i spełnienie kryty
 
 -   [Zarządzanie wydajnością](performance-management-overview.md)
 -   [Dopasowywanie umiejętności pracowników do potrzeb biznesowych](skills.md)
--   [Administrowanie szkoleniami w ramach kursów](courses.md)
+-   [Konfigurowanie kursów szkoleniowych](courses.md)
 -   [Jak zarządzać rozwojem pracowników w Dynamics 365 Talent (film)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Tworzenie i obsługa świadczeń
 
 Poza wynagradzaniem pracowników za pomocą płac, wynagrodzeń i premii możesz opracować programy świadczeń, takie jak ubezpieczenia zdrowotne lub plany emerytalne. Możesz również zarządzać świadczeniami, takimi jak programy pożyczkowe, w których firma wypożycza różne przedmioty, np. komputery lub telefony, swoim pracownikom etatowym.
 
--   [Zarządzanie programem świadczeń](manage-benefit-program.md)
+-   [Definiowanie programu świadczeń i zarządzanie nim](manage-benefit-program.md)
 -   [Zasady uprawnień do świadczeń](benefit-eligibility-policies.md)
 -   [Zarządzanie przedmiotami wypożyczanymi pracownikom](loan-items.md)
 -   [Jak zarządzać świadczeniami pracowników w Dynamics 365 Talent (film)](https://www.youtube.com/watch?v=nUWkeJTad1o)
@@ -107,6 +107,6 @@ Rozwiązanie Talent może pomóc utrzymać bezpieczne środowisko pracy, w któr
 Możesz projektować kwestionariusze i administrować nimi, aby zbierać informacje służące do wielu różnych celów. Funkcja Kwestionariusz umożliwia projektowanie i tworzenie kwestionariuszy. Gdy kwestionariusz jest gotowy, możesz go rozesłać do szerokiego grona odbiorców lub tylko do określonej grupy respondentów w celu wypełnienia. Gdy respondenci podadzą odpowiedzi, możesz przejrzeć i przeanalizować wyniki.
 
 -   [Kwestionariusze](questionnaires.md)
--   [Projektowanie kwestionariusza](design-questionnaires.md)
--   [Rozsyłanie i wypełnianie kwestionariusza](distribute-questionnaires.md)
--   [Wyświetlanie i ocenianie wyników kwestionariusza](evaluate-questionnaire-results.md)
+-   [Projektowanie kwestionariuszy](design-questionnaires.md)
+-   [Rozprowadzanie i planowanie kwestionariuszy](distribute-questionnaires.md)
+-   [Wyświetlanie i ocenianie wyników kwestionariuszy](evaluate-questionnaire-results.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92fec444834be8ca4943932730b94beb8a1902e7
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536854"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771571"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Strona główna narzędzi analizy biznesowej (BI) i sprawozdawczości
 
@@ -48,18 +48,18 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 - [Integracja usługi Power BI Embedded](power-bi-embedded-integration.md)
 - [Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded](add-analytics-tab-workspaces.md)
 - [Pomoc w zabezpieczeniu analitycznych obszarów roboczych i raportów za pomocą Power BI Embedded](secure-analytical-workspaces.md)
-- [Zawartość Power BI dla rozwiązania Finance and Operations](power-bi-home-page.md)
+- [Zawartość Power BI — strona główna](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Dokumenty biznesowe i drukowanie
-Rozwiązań raportowania są często używane do zapisywania i przekazywania informacji o transakcjach biznesowych. Dlatego rozwiązanie do raportowania musi umożliwiać tworzenie fizycznych kopii danych biznesowych przy użyciu istniejących urządzeń, takich jak drukarki sieciowe. Są to na przykład faktury sprzedaży, zestawienia odbiorcy i czeki.
+Rozwiązania raportowania są często używane do zapisywania i przekazywania informacji o transakcjach biznesowych. Dlatego rozwiązanie do raportowania musi umożliwiać tworzenie fizycznych kopii danych biznesowych przy użyciu istniejących urządzeń, takich jak drukarki sieciowe. Są to na przykład faktury sprzedaży, zestawienia odbiorcy i czeki.
 
 [![Przykład dokumentów biznesowych](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-- [Omówienie usług Document Reporting Services](document-reporting-services.md)
-- [Drukowanie w aplikacjach rozwiązania Finance and Operations](print-documents.md)
-- [Instalowanie agenta rozsyłania dokumentów w celu obsługi drukarek sieciowych](install-document-routing-agent.md)
+- [Usługi raportowania dokumentów](document-reporting-services.md)
+- [Omówienie drukowania dokumentu](print-documents.md)
+- [Instalowanie Agenta rozsyłania dokumentów w celu obsługi druku przez sieć](install-document-routing-agent.md)
 
 ## <a name="electronic-reporting"></a>Raportowanie elektroniczne
 Raportowanie elektroniczne to narzędzie umożliwiające konfigurowanie formatów dokumentów zgodnie z wymogami prawnymi obowiązującymi w różnych krajach lub regionach. Raportowanie elektroniczne może być stosowane m.in. do inspekcji finansowych, sprawodawczości podatkowej i fakturowania elektronicznego.
@@ -68,9 +68,9 @@ Raportowanie elektroniczne to narzędzie umożliwiające konfigurowanie formató
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-- [Omówienie raportowania elektronicznego](general-electronic-reporting.md)
-- [Zarządzanie cyklem życia konfiguracji Raportowania elektronicznego](general-electronic-reporting-manage-configuration-lifecycle.md)
-- [Tworzenie konfiguracji Raportowania elektronicznego](electronic-reporting-configuration.md)
+- [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
+- [Zarządzanie cyklem życia konfiguracji raportowania elektronicznego (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Tworzenie konfiguracji raportowania elektronicznego (ER)](electronic-reporting-configuration.md)
 
 ## <a name="financial-reporting"></a>Raportowanie finansowe
 Dostępne są standardowe raporty finansowe wykorzystujące domyślne kategorie konta głównego. Za pomocą projektanta raportów można tworzyć i modyfikować tradycyjne sprawozdania finansowe, np. rachunki wyników i bilansów. Można następnie udostępniać wyniki innym członkom organizacji. Przykłady sprawozdawczości finansowej obejmują bilanse, przepływy gotówki i sumaryczny bilans próbny rok do roku.
@@ -79,14 +79,14 @@ Dostępne są standardowe raporty finansowe wykorzystujące domyślne kategorie 
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-- [Raportowanie finansowe w rozwiązaniu Finance and Operations](financial-reporting-intro.md)
-- [Generowanie raportu finansowego](generate-financial-report.md)
+- [Raportowanie finansowe](financial-reporting-intro.md)
+- [Generowanie raportów finansowych](generate-financial-report.md)
 - [Składniki raportu finansowego](financial-report-components.md)
 
 ## <a name="technical-reference-reports"></a>Raporty dotyczące odwołań technicznych
 Następujące raporty zawierają informacje na temat obiektów:
 
-- [Raport jednostek danych](../data-entities/data-entities-report.md)
+- [Znajdowanie informacji dotyczących standardowych jednostek danych](../data-entities/data-entities-report.md)
 - [Raport kodów licencji i kluczy konfiguracji](../sysadmin/license-codes-configuration-keys-report.md)
-- [Raport usług SQL Server Reporting Services](SSRS-report.md)
+- [Dostępne raporty usługi SQL Server Reporting Services (SSRS)](SSRS-report.md)
 - [Raport typów przepływów pracy](../../fin-ops/organization-administration/workflow-types-report.md)

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ebac1c3f9f79ee49ae11a121a4a0dd3bd456c8f
-ms.sourcegitcommit: bdbca89bd9b328c282ebfb681f75b8f1ed96e7a8
+ms.openlocfilehash: 10d894bb65031741a5ec8365f7f8db76b58ab334
+ms.sourcegitcommit: 92322167f57b66d2accc134aaf862e6b9931ec94
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578491"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2693119"
 ---
 # <a name="distributed-order-management-dom"></a>Zarządzanie zamówieniami rozdzielonymi (DOM)
 
@@ -179,11 +179,11 @@ W czasie przetwarzania funkcja DOM uwzględni zamówienie i wiersze zamówienia 
 
 Po zastosowaniu reguł, ograniczeń zapasów i optymalizacji funkcja DOM wybiera lokalizację położoną najbliżej adresu dostawy klienta.
 
-![Kryteria zamówienia sprzedaży](./media/ordercriteria.png "Kryteria zamówienia sprzedaży")
+![Kryteria zamówień sprzedaży](./media/ordercriteria.png "Kryteria zamówień sprzedaży")
 
 ## <a name="results-of-dom-runs"></a>Wyniki sesji DOM
 
-Jeśli została ustawiona wartość profilu realizacji **Automatyczne zastosowanie**, wyniki sesji zostaną automatycznie zastosowane do wierszy zamówienia sprzedaży, a plan realizacji możesz wyświetlać osobno. Jednak jeśli nie została ustawiona wartość profilu realizacji **Automatyczne zastosowanie**, wyniki sesji możesz wyświetlić tylko w widoku planu realizacji. 
+Jeśli została ustawiona wartość profilu realizacji **Automatyczne zastosowanie**, wyniki sesji zostaną automatycznie zastosowane do wierszy zamówienia sprzedaży, a plan realizacji może zostać wyświetlony osobno. Jednak jeśli nie została ustawiona wartość profilu realizacji **Automatyczne zastosowanie**, wyniki sesji możesz wyświetlić tylko w widoku planu realizacji. 
 
 Aby wyświetlić wszystkie wygenerowane plany realizacji, wykonaj opisane poniżej czynności.
 

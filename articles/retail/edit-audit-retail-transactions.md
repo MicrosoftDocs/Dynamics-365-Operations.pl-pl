@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b0201d31cd83b4360f96a7d8e2113caf9d913715
-ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
+ms.openlocfilehash: f53573b8afb2003f6796930f5877185e533a4715
+ms.sourcegitcommit: 92322167f57b66d2accc134aaf862e6b9931ec94
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622534"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2693073"
 ---
 # <a name="edit-and-audit-retail-store-transactions"></a>Edycja i przeprowadzanie inspekcji transakcji sklepu sieci sprzedaży
 
@@ -95,6 +95,6 @@ W wersji 10.0.6 lub wyższej rozwiązania Retail opcja edycja zbiorczej transakc
        - **Transakcje wpływające na kwotę w kasecie kasowej**: ten arkusz zawiera wszystkie szczegóły transakcji wpływających na kwotę w kasecie kasowej.
        - **Deklaracja środków płatniczych**: ten arkusz zawiera wszystkie szczegóły transakcji deklaracji środków płatniczych.
        - **Transakcje przychodów/wydatków**: ten arkusz zawiera wszystkie szczegóły wiersza transakcji przychodów/wydatków.
-       - **Transakcje płatności**: ten arkusz zawiera wszystkie informacje dotyczące płatności dla operacji **Zapłać fakturę**, a także jako transakcja przychodów/wydatków.
+       - **Transakcje płatności**: ten arkusz zawiera wszystkie informacje dotyczące płatności dla operacji **Zapłać fakturę**, a także transakcję przychodów/wydatków.
 
 3.  Weryfikacje nie są przeprowadzane, jeśli publikowane są transakcje edytowane zbiorczo. Należy upewnić się, że wszystkie zmiany są dokładne i że zachowana jest wierność danych we wszystkich arkuszach. Na przykład jeśli chcesz zmienić datę transakcji, by zarządzać scenariuszami, gdzie okres obrachunkowy lub magazynowy dla otwartych transakcji sprzedaży detalicznej jest zamknięty, musisz zmienić datę we wszystkich arkuszach programu Excel, które zawierają kolumnę **Data biznesowa**. Aby zweryfikować transakcje po ich edycji, możesz użyć opcji **Ponownie sprawdź poprawność transakcji** na stronie **Zestawienia sieci sprzedaży**.
