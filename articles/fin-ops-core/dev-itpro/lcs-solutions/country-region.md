@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 058adaef91a7b30e25bea603625116e97009cf55
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 795e9f5b843ba8e50dc091949c9732b8b033355e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537031"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812095"
 ---
 # <a name="globalization-resources"></a>Zasoby globalizacji
 
@@ -45,10 +45,10 @@ Ten temat zawiera listę zasobów, które mogą pomóc w wykonywaniu następują
 
 ### <a name="developing-localized-solutions"></a>Tworzenie zlokalizowanych rozwiązań
 Wymienione poniżej zasoby zawierają wskazówki i informacje, które mogą być pomocne dla deweloperów i niezależnych dostawców oprogramowania tworzących specyficzne dla kraju/regionu dostosowania lub tworzących rozwiązania dla kraju, którego firma Microsoft nie obsługuje.
--   [Osobne modele lokalizacji](separate-localization-models.md)
+-   [Rozdzielność modeli lokalizacji](separate-localization-models.md)
 -   [Stosowanie kontekstu kraju/regionu](apply-country-context.md)
--   [Certyfikacje wymagane przepisami](regulatory-certifications.md)
--   [Klasyfikowanie funkcji lokalizacji](classify-localization-features.md)
+-   [Informacje o certyfikacjach wymaganych przepisami prawa w tytułach funkcji](regulatory-certifications.md)
+-   [Klasyfikacja funkcji lokalizacji](classify-localization-features.md)
 -   [Kody krajów — ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
 ### <a name="regulatory-updates-and-communication"></a>Aktualizacje wymagane przepisami prawa i komunikacja
@@ -57,36 +57,36 @@ Wymienione poniżej zasoby zawierają informacje o planowanych i nowych funkcjac
 #### <a name="regulatory-updates"></a>Aktualizacje wymagane przepisami prawa
 -   [Aktualizacje wymagane przepisami prawa](../../../finance/localizations/regulatory-updates.md)
 -   [Portal lokalizacji](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (aktualizacja co tydzień)
--   [Wyszukiwanie problemów w usłudze LCS](../lifecycle-services/issue-search-lcs.md) (aktualizacja codziennie)
+-   [Wyszukiwanie problemów w usługach Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (aktualizacja codziennie)
 
 #### <a name="communication-and-alerts"></a>Komunikacja i alerty
 -   [Obserwacje otoczenia prawnego i informacje dotyczące zmian przepisów](regulatory-watch-communication.md)
--   [Informowanie firmy Microsoft o alertach dotyczących przepisów krajowych/regionalnych oraz śledzenie stanu funkcji wymaganych przepisami prawa](submit-localization-alerts.md)
+-   [Przesyłanie alertów dotyczących funkcji wymaganych lokalnymi przepisami specyficznych dla kraju/regionu](submit-localization-alerts.md)
 
-#### <a name="dynamics-365-release-notes"></a>Dynamics 365 — informacje o wersji
-W dokumencie [Dynamics 365 — informacje o wersji](https://docs.microsoft.com/business-applications-release-notes/) znajdują się opisy nowych i ulepszonych możliwości, które mają zostać wprowadzone w aplikacjach biznesowych oraz platformach aplikacji usługi Dynamics 365. 
+#### <a name="dynamics-365-release-plans"></a>Plany wydań Dynamics 365
+W dokumencie [Plany wydań Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) znajdują się opisy nowych i ulepszonych możliwości, które mają zostać wprowadzone w aplikacjach biznesowych oraz platformach aplikacji usługi Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Co nowego w aplikacjach Finance and Operations
-[Zawartość strony Co nowego](../../fin-ops/get-started/whats-new-changed.md) obejmuje listę funkcji wchodzących w skład poszczególnych wydań aplikacji Finance and Operations.
+[Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](../../fin-ops/get-started/whats-new-changed.md) zawiera listę funkcji wchodzących w skład poszczególnych wydań aplikacji Finance and Operations.
 
 ### <a name="electronic-reporting"></a>Raportowanie elektroniczne
-Narzędzie Raportowanie elektroniczne umożliwia konfigurowanie formatów dokumentów elektronicznych zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Raportowanie elektroniczne umożliwia zarządzanie tymi formatami podczas ich całego cyklu życia. Aby uzyskać więcej informacji, zobacz jedne z następujących tematów:
--   [Omówienie Raportowania elektroniczne](../analytics/general-electronic-reporting.md)
--   [Zarządzanie cyklem życia konfiguracji Raportowania elektronicznego](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
--   [Tworzenie konfiguracji Raportowania elektronicznego](../analytics/electronic-reporting-configuration.md)
--   [Rozszerzanie listy funkcji Raportowania elektronicznego](../analytics/general-electronic-reporting-formulas-list-extension.md)
--   [Aplikacje docelowe Raportowania elektronicznego](../analytics/electronic-reporting-destinations.md)
+Narzędzie Raportowanie elektroniczne umożliwia konfigurowanie formatów dokumentów elektronicznych zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Raportowanie elektroniczne umożliwia zarządzanie tymi formatami podczas ich całego cyklu życia. Aby uzyskać więcej informacji, zobacz następujące tematy:
+-   [Omówienie raportowania elektronicznego (ER)](../analytics/general-electronic-reporting.md)
+-   [Zarządzanie cyklem życia konfiguracji raportowania elektronicznego (ER)](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
+-   [Tworzenie konfiguracji raportowania elektronicznego (ER)](../analytics/electronic-reporting-configuration.md)
+-   [Poszerzanie listy funkcji raportowania elektronicznego (ER)](../analytics/general-electronic-reporting-formulas-list-extension.md)
+-   [Miejsca docelowe raportowania elektronicznego (ER)](../analytics/electronic-reporting-destinations.md)
 -   [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
--   [Importowanie konfiguracji raportowania elektronicznego](../analytics/electronic-reporting-import-ger-configurations.md)
--   [Konfigurowanie w module Raportowanie elektroniczne ściągania danych do usługi Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji za pomocą narzędzia Raportowanie elektroniczne](../analytics/generate-electronic-documents-update-application-data.md)
+-   [Importowanie konfiguracji raportowania elektronicznego (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
+-   [Konfigurowanie raportowania elektronicznego (ER) do ściągania danych do usługi Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji przy użyciu raportowania elektronicznego (ER)](../analytics/generate-electronic-documents-update-application-data.md)
 
-### <a name="task-guides"></a>Przewodniki zadań
-Przewodniki zadań są dostępne w okienku Pomocy produktu i oferują nadzorowane przewodniki po kluczowych procesach biznesowych. Możesz otworzyć przewodnik zadania, aby zapoznać się z krokami procesu biznesowego, ale możesz też go odtworzyć, aby przejść przez proces biznesowy i wprowadzić dane.
+### <a name="task-guides"></a>Przewodniki zadania
+Przewodniki zadania są dostępne w okienku pomocy produktu i oferują nadzorowane przewodniki po kluczowych procesach biznesowych. Możesz otworzyć przewodnik zadania, aby zapoznać się z krokami procesu biznesowego, ale możesz też go odtworzyć, aby przejść przez proces biznesowy i wprowadzić dane.
 
-Aby znaleźć przewodniki zadania, przejdź do strony w aplikacji i kliknij Pomoc. Przewodniki zadania, w których jest używana dana strona, są wyświetlane w okienku Pomocy. W okienku Pomocy możesz także wyszukiwać przewodniki zadań według tytułu.
+Aby znaleźć przewodniki zadania, przejdź do strony w aplikacji i kliknij Pomoc. Przewodniki zadania, w których jest używana dana strona, są wyświetlane w okienku Pomocy. W okienku pomocy możesz także wyszukiwać przewodniki zadania według tytułu.
 
-Aby dowiedzieć się więcej, zobacz [Przewodniki zadań](../../fin-ops/get-started/help-overview.md#task-guides).
+Aby uzyskać więcej informacji, zobacz [System Pomocy](../../fin-ops/get-started/help-overview.md#task-guides).
 
 
 ### <a name="countryregion-specific-help-content"></a>Zawartość pomocy specyficzna dla kraju/regionu

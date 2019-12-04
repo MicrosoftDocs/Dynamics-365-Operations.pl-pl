@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51a27f5ecdb4d4903ac0b76c5682ea7f9ab0d8c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1d074b9450a4dfc72f60f97ccaf03610ce54315d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176054"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772589"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Zarządzanie gotówką i bankami — strona główna
 
@@ -49,36 +49,36 @@ Te instrumenty obejmują dokumenty wpłaty, czeki, weksle oraz skrypty dłużne.
 ### <a name="bank-reconciliation"></a>Uzgadnianie konta bankowego
 
 -   [Omówienie zaawansowanego uzgadniania konta bankowego](advanced-bank-reconciliation-overview.md)
--   [Konfigurowanie zaawansowanego uzgadniania konta bankowego](configure-advanced-bank-reconciliation.md)
--   [Konfigurowanie importu zaawansowanego uzgadniania konta bankowego](set-up-advanced-bank-reconciliation-import-process.md)
+-   [Proces zaawansowanego uzgadniania konta bankowego](configure-advanced-bank-reconciliation.md)
+-   [Konfigurowanie procesu importu zaawansowanego uzgadniania konta bankowego](set-up-advanced-bank-reconciliation-import-process.md)
 -   [Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego](reconcile-bank-statements-advanced-bank-reconciliation.md)
 -   [Konfigurowanie reguł uzgadniania kont bankowych](set-up-bank-reconciliation-matching-rules.md)
 
 
 ## <a name="accounts-payable-payments-and-settlements"></a>Płatności i rozliczenia w ramach rozrachunków z dostawcami
 -   [Scentralizowane płatności na potrzeby rozrachunków z dostawcami](../accounts-payable/centralized-payments-accounts-payable.md)
--   [Tworzenie faktur od dostawców za pomocą propozycji płatności](../accounts-payable/create-vendor-payments-payment-proposal.md)
+-   [Tworzenie płatności dostawcy za pomocą propozycji płatności](../accounts-payable/create-vendor-payments-payment-proposal.md)
 -   [Cofanie płatności dla dostawcy](../accounts-payable/reverse-vendor-payment.md)
 -   [Częściowe płatności dla dostawcy](../accounts-payable/vendor-payments-partial-amount.md)
--   [Omówienie przedpłat i faktur zaliczkowych](../accounts-payable/prepayments-invoices-vs-prepayments.md)
--   [Scenariusz: rozliczanie częściowej płatności dla dostawcy oraz płatności ostatecznej w całości przed datą rabatu](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
--   [Scenariusz: rozliczanie częściowej płatności dla dostawcy przed datą rabatu z ostateczną datą płatności po dacie rabatu](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
--   [Scenariusz: rozliczanie częściowej płatności dla dostawcy, do której zastosowano rabaty na fakturach korygujących dostawcy](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
--   [Scenariusz: rozliczanie częściowej płatności dla dostawcy, która ma wiele okresów rabatu](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
--   [Scenariusz: podjęcie rabatu większego niż obliczony dla płatności dla dostawcy](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
--   [Scenariusz: podjęcie rabatu gotówkowego poza okresem rabatu gotówkowego](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
+-   [Faktury zaliczkowe a zaliczki](../accounts-payable/prepayments-invoices-vs-prepayments.md)
+-   [Rozliczanie częściowej płatności dla dostawcy oraz płatności ostatecznej w całości przed datą rabatu](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
+-   [Rozliczanie częściowej płatności dla dostawcy przed datą rabatu z ostateczną płatnością po dacie rabatu](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+-   [Rozliczanie częściowej płatności dla dostawcy, do której zastosowano rabaty na fakturach korygujących dostawcy](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+-   [Rozliczanie częściowej płatności dla dostawcy, która ma wiele okresów rabatu](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
+-   [Podjęcie rabatu większego niż obliczony dla płatności dla dostawcy](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
+-   [Podjęcie rabatu gotówkowego poza okresem rabatu gotówkowego](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 
 ## <a name="accounts-receivable-payments-and-settlements"></a>Płatności i rozliczenia w ramach rozrachunków z odbiorcami
 -   [Scentralizowane płatności na potrzeby rozrachunków z odbiorcami](../accounts-receivable/centralized-payments-accounts-receivable.md)
--   [Częściowe płatności odbiorcy](../accounts-receivable/customer-payments-partial-amount.md)
+-   [Częściowe płatności od odbiorców](../accounts-receivable/customer-payments-partial-amount.md)
 -   [Zwroty do odbiorców](../accounts-receivable/reimburse-customers.md)
--   [Scenariusz: automatyczne rozliczanie i priorytety](../accounts-receivable/automatic-settlement-prioritization.md)
--   [Scenariusz: obsługa rabatu gotówkowego w przypadku nadpłat](../cash-bank-management/cash-discount-handling-overpayments.md)
--   [Scenariusz: rozliczanie częściowej płatności odbiorcy oraz płatności ostatecznej w całości przed datą rabatu](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
--   [Scenariusz: rozliczanie częściowej płatności odbiorcy przed datą rabatu z ostateczną datą płatności po dacie rabatu](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
--   [Scenariusz: rozliczanie częściowej płatności odbiorcy, do której zastosowano rabaty na fakturach korygujących odbiorcy](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
--   [Scenariusz: rozliczanie częściowej płatności odbiorcy, która ma wiele okresów rabatu](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
--   [Scenariusz: używanie jednej płatności odbiorcy do rozliczenia wielu faktur obejmujących wiele okresów rabatu](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+-   [Automatyczne rozliczanie i priorytety](../accounts-receivable/automatic-settlement-prioritization.md)
+-   [Obsługa rabatów gotówkowych w przypadku nadpłat](../cash-bank-management/cash-discount-handling-overpayments.md)
+-   [Rozliczanie częściowej płatności odbiorcy oraz płatności ostatecznej w całości przed datą rabatu](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+-   [Rozliczanie częściowej płatności odbiorcy przed datą rabatu z ostateczną płatnością po dacie rabatu](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+-   [Rozliczanie częściowej płatności odbiorcy, do której zastosowano rabaty na fakturach korygujących odbiorcy](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
+-   [Rozliczanie częściowej płatności odbiorcy, która ma wiele okresów rabatu](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
+-   [Używanie płatności odbiorcy do rozliczenia wielu faktur obejmujących wiele okresów rabatu](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 
 
 
@@ -86,15 +86,15 @@ Te instrumenty obejmują dokumenty wpłaty, czeki, weksle oraz skrypty dłużne.
 
 #### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
 
-Przejdź do [Informacji o wersji Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158), aby zobaczyć, jakie nowe funkcje zostały zaplanowane. 
+Przejdź do [planów wydań Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158), aby zobaczyć, jakie nowe funkcje zostały zaplanowane. 
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje możesz znaleźć w [Microsoft Dynamics blogu usługi 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz blogu finansowym [Microsoft Dynamics 365 Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/financials).
+Opinie, wiadomości i inne informacje możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz blogu rozwiązania Financials usługi [Microsoft Dynamics 365 Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 
-#### <a name="task-guides"></a>Przewodniki zadań
+#### <a name="task-guides"></a>Przewodniki zadania
 Dostępna jest dodatkowa pomoc w formie przewodników zadania w aplikacji Finance. Aby uzyskać dostęp do przewodników zadania, kliknij przycisk Pomoc na dowolnej stronie.
 
 #### <a name="videos"></a>Filmy

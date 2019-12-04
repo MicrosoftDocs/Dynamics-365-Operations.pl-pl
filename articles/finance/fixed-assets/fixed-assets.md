@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd1488fc6b2c29a4cfa4be18b9a88a07d693d7fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bfa6dcbd8d75c1a6c40896311ed367a835eccc7f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176052"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770765"
 ---
 # <a name="fixed-assets-home-page"></a>Środki trwałe — strona główna
 
@@ -41,11 +41,11 @@ Po skonfigurowaniu i wprowadzeniu informacji o nabyciu środków trwałych może
 
 #### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
 
-Przejdź do [Informacji o wersji Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158), aby zobaczyć, jakie nowe funkcje zostały zaplanowane. 
+Przejdź do [planów wydań Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158), aby zobaczyć, jakie nowe funkcje zostały zaplanowane. 
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje możesz znaleźć w [Microsoft Dynamics blogu usługi 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz blogu finansowym [Microsoft Dynamics 365 Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/financials).
+Opinie, wiadomości i inne informacje możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz blogu rozwiązania Financials usługi [Microsoft Dynamics 365 Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 

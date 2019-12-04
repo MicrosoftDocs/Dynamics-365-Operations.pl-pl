@@ -502,7 +502,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/retail/toc.json
                 - name: Interfejs API struktury modułu Raportowanie elektroniczne
                   items:
-                    - name: Rozszerzanie listy funkcji Raportowania elektronicznego
+                    - name: Rozszerzanie listy funkcji Raportowanie elektroniczne
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/retail/toc.json
                     - name: Zmiany w interfejsie API struktury raportowania elektronicznego w aktualizacji Application update 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/retail/toc.json
@@ -850,6 +850,8 @@
           items:
             - name: Omówienie programu lojalnościowego
               href: set-up-customer-loyalty-program.md
+            - name: Omówienie obsługi relacji z klientami
+              href: clienteling-overview.md
         - name: Płatności
           items:
             - name: Metody płatności
@@ -1268,8 +1270,6 @@
                   href: Open-URL-in-POS.md
                 - name: Instalowanie projektanta układów punktu sprzedaży
                   href: install-pos-layout-designer.md
-                - name: Retail Modern POS w trybie offline
-                  href: dev-itpro/retail-modern-pos-offline.md
                 - name: Rozszerzenie widoku wyświetlania POS Dual
                   href: dev-itpro/pos-dual-display-extension.md
                 - name: Możliwości rozszerzenia wyzwalacza aplikacji Retail Modern POS i Cloud POS
@@ -1332,6 +1332,8 @@
                   href: dev-itpro/trigger-example-blocking-transaction.md
                 - name: Wdrażanie reguły zwrotów za pomocą wyzwalaczy
                   href: dev-itpro/trigger-example-return-policy.md
+                - name: Rejestrowanie zdarzeń rozszerzania w Application Insights
+                  href: dev-itpro/commerce-application-insights.md
             - name: Rozszerzalność środowiska handlu elektronicznego
               items:
                 - name: Konfigurowanie sklepów internetowych
@@ -1354,7 +1356,7 @@
                   href: dev-itpro/create-windows-installer-payment-connector.md
                 - name: Zastosowanie danych płatności
                   href: payment-connector-data-fields.md
-                - name: Włącz ochronę przed podwójnymi płatnościami dla łącznika płatności
+                - name: Włączanie ochrony przed podwójnymi płatnościami dla łącznika płatności
                   href: dev-itpro/duplicate-payment-protection.md
             - name: Retail SDK
               items:

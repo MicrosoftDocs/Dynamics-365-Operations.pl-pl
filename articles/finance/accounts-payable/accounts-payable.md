@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce6ce9c3c08a165ca19eb8d83643fd87b970f1ca
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: e9fbc0e3f3960f25930f9587d489009bc34181c7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658743"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772244"
 ---
 # <a name="accounts-payable-home-page"></a>Rozrachunki z dostawcami — strona główna
 
@@ -41,7 +41,7 @@ Faktury od dostawców można wprowadzać ręcznie, ale można też przyjmować j
 
 Możesz konfigurować grupy dostawców, dostawców, profile księgowania, różne opcje płatności i parametry odnoszące się do dostawców, opłat, dostaw i miejsc docelowych, skryptów dłużnych i inne rodzaje informacji dotyczących modułu Rozrachunki z dostawcami. 
 
-[Konfigurowanie modułu Rozrachunki z dostawcami](accounts-payable-overview.md)
+[Omówienie konfiguracji modułu Rozrachunki z dostawcami](accounts-payable-overview.md)
 
 [Zasady podziału księgowań i zapisy w arkuszu księgi podrzędnej dla faktur od dostawcy](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
@@ -49,9 +49,9 @@ Możesz konfigurować grupy dostawców, dostawców, profile księgowania, różn
 
 ## <a name="configure-vendor-invoices"></a>Konfigurowanie faktur dostawcy
 
-Moduł rozrachunków z dostawcami służy do śledzenia faktur i wydatków wychodzących odnośnie do dostawców.
+Moduł Rozrachunki z dostawcami służy do śledzenia faktur i wydatków wychodzących odnośnie do dostawców.
 
-[Uzgadnianie faktur rozrachunków z dostawcami](accounts-payable-invoice-matching.md)
+[Omówienie uzgadniania faktur rozrachunków z dostawcami](accounts-payable-invoice-matching.md)
 
 [Profile księgowania dostawców](vendor-posting-profiles.md)
 
@@ -61,7 +61,7 @@ Moduł rozrachunków z dostawcami służy do śledzenia faktur i wydatków wycho
 
 [Uzgadnianie faktur i międzyfirmowe zamówienia zakupu](invoice-matching-intercompany-purchase-orders.md)
 
-[Usuwanie rozbieżności podczas uzgadniania sum faktur](resolve-invoice-totals-invoice-matching-discrepancies.md)
+[Omówienie usuwania rozbieżności podczas dopasowywania sum faktur](resolve-invoice-totals-invoice-matching-discrepancies.md)
 
 [Domyślne konta przeciwstawne dla arkuszy faktur od dostawców i arkuszy zatwierdzania faktur](default-offset-accounts-vendor-invoice-journals.md)
 
@@ -93,13 +93,13 @@ Możesz przypisać typ płatności zdefiniowany w systemie, np. czek, płatnoś�
 
 [Podjęcie rabatu gotówkowego poza okresem rabatu gotówkowego](take-cash-discount-outside-cash-discount-timeframe.md)
 
-[Raportowanie elektroniczne czeków od dostawców](electronic-reporting-sample-vendor-checks.md)
+[Raportowanie elektroniczne przykładowych czeków od dostawców](electronic-reporting-sample-vendor-checks.md)
 
 [Cofanie płatności dla dostawcy](reverse-vendor-payment.md)
 
-[Omówienie przedpłat i faktur zaliczkowych](prepayments-invoices-vs-prepayments.md)
+[Faktury zaliczkowe a zaliczki](prepayments-invoices-vs-prepayments.md)
 
-[Scentralizowane płatności na potrzeby modułu Rozrachunki z dostawcami](centralized-payments-accounts-payable.md)
+[Scentralizowane płatności na potrzeby rozrachunków z dostawcami](centralized-payments-accounts-payable.md)
 
 ## <a name="settlements"></a>Rozliczenia
 
@@ -107,13 +107,13 @@ Poniższe tematy zawierają informacje dotyczące rozliczeń. Rozliczenie to pro
 
 [Konfigurowanie rozliczenia](../cash-bank-management/configure-settlement.md)
 
-[Rozliczanie częściowej płatności dla dostawcy przed datą rabatu](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+[Rozliczanie częściowej płatności dla dostawcy przed datą rabatu z ostateczną płatnością po dacie rabatu](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
 [Rozliczanie częściowej płatności dla dostawcy, do której zastosowano rabaty na fakturach korygujących dostawcy](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 
 [Rozliczanie częściowej płatności dla dostawcy, która ma wiele okresów rabatu](settle-partial-vendor-payment-multiple-discount-periods.md)
 
-[Rozliczanie częściowej lub ostatecznej płatności dla dostawcy przed rabatem](settle-partial-vendor-payment-or-final-payment-before-discount.md)
+[Rozliczanie częściowej płatności dla dostawcy oraz płatności ostatecznej w całości przed datą rabatu](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 
 [Jeden załącznik z wieloma rekordami odbiorców lub dostawców](single-voucher-multiple-customer-vendor-records.md)
 
@@ -123,11 +123,11 @@ Poniższe tematy zawierają informacje dotyczące rozliczeń. Rozliczenie to pro
 
 #### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
 
-Przejdź do [Informacji o wersji Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158), aby zobaczyć, jakie nowe funkcje są planowane. 
+Przejdź do [Planów wydań Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158), aby zobaczyć, jakie nowe funkcje są planowane. 
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje dotyczące Rozrachunków z dostawcami i innych rozwiązań możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz [blogu finansowym Microsoft Dynamics 365 Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
+Opinie, wiadomości i inne informacje dotyczące Rozrachunków z dostawcami i innych rozwiązań możesz znaleźć w blogu usługi [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz blogu rozwiązania Financials usługi [Microsoft Dynamics 365 Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 

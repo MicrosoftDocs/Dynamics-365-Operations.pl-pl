@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5493c46183e7b599e82153f5b3ac36c81faa4955
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f850b28c4d6ed6ce13438f4de87ef0c04065c7f9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174703"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770240"
 ---
 # <a name="public-sector-home-page"></a>Sektor publiczny — strona główna
 
@@ -43,12 +43,12 @@ Funkcje modułu Sektor publiczny pomagają organizacjom obsługującym instytucj
   Aby uzyskać więcej informacji, zobacz następujące tematy:
 
 - [Planowanie funkcjonalności dla sektora publicznego](plan-public-sector-functionality.md)
-- [Rozrachunki z dostawcami w sektorze publicznym](accounts-payable-public-sector.md)
-- [Rozrachunki z odbiorcami w sektorze publicznym](accounts-receivable-public-sector.md)
-- [Budżetowanie w sektorze publicznym](budgeting-public-sector.md)
+- [Omówienie rozrachunków z dostawcami w sektorze publicznym](accounts-payable-public-sector.md)
+- [Omówienie rozrachunków z odbiorcami w sektorze publicznym](accounts-receivable-public-sector.md)
+- [Omówienie budżetowania w sektorze publicznym](budgeting-public-sector.md)
 - [Środki trwałe w sektorze publicznym](fixed-asset-public-sector.md)
-- [Funkcje wymagane przepisami prawa we Francji](../localizations/emea-fra-public-sector-accounting.md)
-- [Księga główna w sektorze publicznym](general-ledger-public-sector.md)
+- [Księgowanie w sektorze publicznym we Francji](../localizations/emea-fra-public-sector-accounting.md)
+- [Omówienie księgi głównej w sektorze publicznym](general-ledger-public-sector.md)
 - [Zaopatrzenie i sourcing w sektorze publicznym](procurement-sourcing-public-sector.md)
 - [Role zabezpieczeń w sektorze publicznym](security-roles-public-sector.md)
 
