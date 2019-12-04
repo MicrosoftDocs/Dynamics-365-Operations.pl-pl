@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 0f4c68acfe021e736c259e91a40ce7d43d401246
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552009"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812886"
 ---
 # <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Edytowanie przewodników wdrażania do pracy i szablonów w Dynamics 365 Talent - Onboard
 
@@ -124,7 +124,7 @@ Aby wprowadzić zmiany:
 
     - Aby dodać filmik YouTube, przeciągnij element **YouTube** do obszaru edycji, wprowadź nazwę i opis działania, a następnie wprowadź adres URL wideo YouTube.
     - Aby dodać prezentację lub biuletyn w aplikacji Sway, przeciągnij element **Sway** do obszaru edycji, wprowadź nazwę i opis działania, a następnie wprowadź osadzony adres URL prezentacji lub biuletynu dla aplikacji Sway.
-    - Aby dodać aplikację PowerApps, przeciągnij element **PowerApps** do obszaru edycji, wprowadź nazwę i opis działania, a następnie wybierz aplikację PowerApps lub wprowadź identyfikator aplikacji PowerApps.
+    - Aby dodać aplikację Microsoft Power Apps, przeciągnij element **Power Apps** do obszaru edycji, wprowadź nazwę i opis działania, a następnie wybierz aplikację Power Apps lub wprowadź identyfikator aplikacji Power Apps.
     - Aby dodać filmik Microsoft Stream, przeciągnij element **Microsoft Stream** do obszaru edycji, wprowadź nazwę i opis działania, a następnie wprowadź adres URL wideo Microsoft Stream.
     - Aby dodać formularz programu Microsoft Forms, przeciągnij element programu **Microsoft Forms** do obszaru edycji, wprowadź nazwę i opis działania, wprowadź adres URL formularza Microsoft Forms i określ rozmiar obszaru ekranu.
     - Aby dodać iframe zawierające treści internetowe, przeciągnij element programu **Treści internetowe (iframe)** do obszaru edycji, wprowadź nazwę i opis działania, wprowadź adres URL i treść oraz określ rozmiar obszaru ekranu.
@@ -186,6 +186,6 @@ Aby edytować kontakt, wybierz przycisk **Edytuj** (symbol ołówka) z prawej st
 ### <a name="see-also"></a>Informacje dodatkowe
 
 - [Wypróbuj lub kup aplikację Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Co nowego](./whats-new.md)
-- [Informacje o wersji](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Uzyskiwanie pomocy technicznej](./talent-support.md)
+- [Nowości i zmiany w Dynamics 365 Talent](./whats-new.md)
+- [Plany wydań](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Microsoft Dynamics 365 Talent](./talent-support.md)

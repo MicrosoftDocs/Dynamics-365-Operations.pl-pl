@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 20d48795b23628bbba2896bf48940936a25e0435
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550091"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771336"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Obsługuj sparametryzowane wywołania źródeł danych ER typu pola obliczeniowego
 
@@ -55,7 +55,7 @@ W centrum [pobierania firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=8
 | Przykładowa konfiguracja formatu ER        | Format do nauczenia sparametryzowanych calls.version.1.xml.  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Zaloguj się do swojego wystąpienia RCS.
-W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Aby wykonać te kroki, najpierw trzeba wykonać kroki wymienione w procedurze [ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Aby wykonać te kroki, najpierw trzeba wykonać kroki wymienione w procedurze [ER Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 1. Na domyślnym pulpicie nawigacyjnym wybierz opcję **Raportowanie elektroniczne**.
 2. Wybierz **Raportowanie konfiguracji**.
@@ -75,21 +75,21 @@ W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litw
 3. Wybierz opcję **Konstruktor**.
 4. Wybierz opcję **Konstruktor**.  
    
-W tym mapowaniu modelu ER jest przeznaczona do wykonywania następujących czynności:
+    W tym mapowaniu modelu ER jest przeznaczona do wykonywania następujących czynności:
 
-- Pobierz listę kodów podatków (Źródło danych **podatku**) znajdujących się w tabeli **Tabela Podatkowa**.
-- Pobierz listę kodów transakcji podatkowych (Źródło danych **tansakcji**) znajdujących się w tabeli **Tabela Podatkowa**:
+    - Pobierz listę kodów podatków (Źródło danych **podatku**) znajdujących się w tabeli **Tabela Podatkowa**.
+    - Pobierz listę kodów transakcji podatkowych (Źródło danych **tansakcji**) znajdujących się w tabeli **Tabela Podatkowa**:
     
-    - Umożliwia grupowanie listy pobranych transakcji (**Gr** Źródło danych) według kodów podatków.
-    - Oblicz dla zgrupowanych transakcji po wartości zagregowanych według kodu podatku:
+        - Umożliwia grupowanie listy pobranych transakcji (**Gr** Źródło danych) według kodów podatków.
+        - Oblicz dla zgrupowanych transakcji po wartości zagregowanych według kodu podatku:
 
-        - Suma wartości podstawowych podatku.
-        - Suma wartości podatku.
-        - Minimalna wartość zastosowanej stawki podatkowej.
+            - Suma wartości podstawowych podatku.
+            - Suma wartości podatku.
+            - Minimalna wartość zastosowanej stawki podatkowej.
 
-Mapowanie modelu w tej konfiguracji implementuje podstawowy model danych dla dowolnego formatu ER utworzonego dla tego modelu i wykonywany w Finance and Operations. W wyniku tego zawartość źródeł danych **podatków** i **Gr** jest udostępniana dla formatów ER, takich jak abstrakcyjne źródła danych.
+    Mapowanie modelu w tej konfiguracji implementuje podstawowy model danych dla dowolnego formatu ER utworzonego dla tego modelu i wykonywany w Finance and Operations. W wyniku tego zawartość źródeł danych **podatków** i **Gr** jest udostępniana dla formatów ER, takich jak abstrakcyjne źródła danych.
 
-  ![Strona projektanta mapowania modelu pokazująca źródła danych podatkowych i Gr.](media/er-calculated-field-type-01.png)
+    ![Strona projektanta mapowania modelu pokazująca źródła danych podatkowych i Gr.](media/er-calculated-field-type-01.png)
 
 5.  Zamknij stronę **Projektant mapowania modelu**.
 6.  Zamknij stronę **Mapowanie modelu**.
@@ -100,25 +100,25 @@ Mapowanie modelu w tej konfiguracji implementuje podstawowy model danych dla dow
 2. Wybierz opcję **Format do nauczenia sparametryzowanych wywołań**.
 3. Wybierz opcję **Konstruktor**. Format ER jest przeznaczona do wykonywania następujących czynności:
 
-  - Generowanie oświadczenia podatkowego w formacie XML.
-  - Zaprezentuj następujące poziomy opodatkowania w sprawozdaniu podatkowym: regularnym, obniżonym i brak.
-  - Umożliwia prezentowanie wielu szczegółów na poziomie opodatkowania, mających różną liczbę szczegółów na każdym poziomie.
+    - Generowanie oświadczenia podatkowego w formacie XML.
+    - Zaprezentuj następujące poziomy opodatkowania w sprawozdaniu podatkowym: regularnym, obniżonym i brak.
+    - Umożliwia prezentowanie wielu szczegółów na poziomie opodatkowania, mających różną liczbę szczegółów na każdym poziomie.
 
-  ![Strona projektanta formatu](media/er-calculated-field-type-02.png)
+    ![Strona projektanta formatu](media/er-calculated-field-type-02.png)
 
 4. Wybierz **Mapowanie**.
 5. Rozwiń **Model**, **Dane,** i **podsumowanie**. 
 
-   Obliczone pole **Model.Data.Summary.Level** zawiera wyrażenie zwracające kod poziomu opodatkowania (**zwykły**, **ograniczony**, **brak** lub **inny**) jako wartość tekstowa dla dowolnego kodu podatku, który może zostać pobrany z **Model.Data.Summary** źródła danych w czasie wykonywania.
+    Obliczone pole **Model.Data.Summary.Level** zawiera wyrażenie zwracające kod poziomu opodatkowania (**zwykły**, **ograniczony**, **brak** lub **inny**) jako wartość tekstowa dla dowolnego kodu podatku, który może zostać pobrany z **Model.Data.Summary** źródła danych w czasie wykonywania.
 
-  ![Strona projektant formatów pokazująca szczegóły modelu modelu danych, aby poznać wywołania parametryczne](media/er-calculated-field-type-03.png)
+    ![Strona projektant formatów pokazująca szczegóły modelu modelu danych, aby poznać wywołania parametryczne](media/er-calculated-field-type-03.png)
 
 6. Rozwiń **Model**.**Dane2**.
 7. Rozwiń **Model**.**Dane2.Summary2**.
    
-   **Model**.**Data2.Summary2** źródło danych jest skonfigurowane do grupowania **Model.Data.Summary** transakcji źródła danych sumarycznych według poziomu opodatkowania (zwrócone przez pole obliczeniowe **Model.Data.Summary.Level**) i oblicza agregacje.
+    **Model**.**Data2.Summary2** źródło danych jest skonfigurowane do grupowania **Model.Data.Summary** transakcji źródła danych sumarycznych według poziomu opodatkowania (zwrócone przez pole obliczeniowe **Model.Data.Summary.Level**) i oblicza agregacje.
 
-  ![Strona Projektant formatów pokazująca szczegóły źródła danych Model.Data2.Summary2](media/er-calculated-field-type-04.png)
+    ![Strona Projektant formatów pokazująca szczegóły źródła danych Model.Data2.Summary2](media/er-calculated-field-type-04.png)
 
 8. Umożliwia przejrzenie obliczonych pól **Model**.**Data2.Level1**, **Model**.**Data2.Level2**, and **Model**.**Data2.Level3.** Te pola obliczeniowe służą do filtrowania **Model**.**Dane2.Summary2** rekordów listy i zwracają tylko rekordy reprezentujące określony poziom opodatkowania.
 9. Zamknij stronę **Projektowanie formuły**.
@@ -309,7 +309,7 @@ Jeśli sparametryzowane pole obliczeniowe zwraca rekord, należy obsługiwać po
 Można uruchomić wstępne i ulepszone formaty ER, aby upewnić się, że skonfigurowane pola obliczeniowe o sparametryzowanym działaniu będą działać prawidłowo.
 
 ### <a name="import-er-configurations"></a>Importowanie konfiguracji ER
-Przejrzane konfiguracje można importować ze RCS za pomocą repozytorium ER typu **RCS.** Jeśli wykonano już kroki opisane w temacie, [należy zaimportować konfiguracje raportowania elektronicznego z usług Regulatory Configuration Services](rcs-download-configurations.md), a następnie skorzystać z skonfigurowanego repozytorium ER, aby zaimportować konfiguracje opisane wcześniej w tym temacie do środowiska. W innym razie należy wykonać następujące czynności:
+Przejrzane konfiguracje można importować ze RCS za pomocą repozytorium ER typu **RCS.** Jeśli wykonano już kroki opisane w temacie, należy [zaimportować konfiguracje raportowania elektronicznego z usług Regulatory Configuration Services (RCS)](rcs-download-configurations.md), a następnie skorzystać z skonfigurowanego repozytorium ER, aby zaimportować konfiguracje opisane wcześniej w tym temacie do środowiska. W innym razie należy wykonać następujące czynności:
 
 1. Wybierz firmę **DEMF** i na domyślnym pulpicie nawigacyjnym, wybierz opcję **Raportowanie elektroniczne**.
 2. Wybierz **Raportowanie konfiguracji**.
@@ -339,4 +339,4 @@ Przejrzane konfiguracje można importować ze RCS za pomocą repozytorium ER typ
 8. Umożliwia porównanie zawartości wygenerowanych wyjść.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-[Projektant formuł w module Raportowanie elektroniczne](general-electronic-reporting-formula-designer.md)
+[Projektant formuł w module Raportowanie elektroniczne (ER)](general-electronic-reporting-formula-designer.md)

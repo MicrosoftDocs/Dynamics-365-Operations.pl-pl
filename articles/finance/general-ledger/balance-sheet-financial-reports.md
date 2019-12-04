@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9dcac902118c643b9a9d783c12f02fa5c90827b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e96552447182f3692a19d4cfd962afbcb28e5508
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179372"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771876"
 ---
 # <a name="balance-sheet-financial-reports"></a>Raporty finansowe bilansu
 
@@ -74,7 +74,7 @@ Definicje kolumn zawierają różnego rodzaju kolumny oferujący różne poziomu
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Raporty finansowe](financial-reporting-getting-started.md)
+[Omówienie raportowania finansowego](financial-reporting-getting-started.md)
 
 [Wyświetlanie raportów finansowych](view-financial-reports.md)
 

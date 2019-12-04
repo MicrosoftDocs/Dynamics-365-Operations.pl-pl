@@ -1,5 +1,5 @@
 ---
-title: Włącz integrację z aplikacją Broadbean w Microsoft Dynamics 365 Talent - Attract
+title: Włącz integrację z aplikacją Broadbean w Attract
 description: W tym temacie opisano sposób konfigurowania rozwiązania Microsoft Dynamics 365 Talent - Attract w celu ogłaszania zadań w zewnętrznych tablicach zadań, takich jak Broadbean.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0ca655655f79ddf88b6f6c7377a1b596477c35a7
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 10b612711e81b2b368ed23fdd95ab6a66451f0ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552147"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833215"
 ---
-# <a name="enable-broadbean-integration-in-microsoft-dynamics-365-talent---attract"></a>Włącz integrację z aplikacją Broadbean w Microsoft Dynamics 365 Talent - Attract
+# <a name="enable-broadbean-integration-in-attract"></a>Włącz integrację z aplikacją Broadbean w Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Chcesz dotrzeć z informacją o wakacie do jak największej liczby kandydatów posiadających odpowiednie kwalifikacje. Serwisy rekrutacyjne, takie jak Broadbean mogą pomóc w osiągnięciu tych celów. Microsoft Dynamics 365 Talent: Attract umożliwia teraz publikowanie ofert pracy na Broadbean, a Microsoft stale udostępnia nowe możliwości w tym zakresie.
 

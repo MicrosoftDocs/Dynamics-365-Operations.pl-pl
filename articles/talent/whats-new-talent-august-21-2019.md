@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a3e2178dbc60582d6167898c4c3446feac49dd04
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024075"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814497"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (20 sierpnia 2019 r.)
 
@@ -35,7 +35,7 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics
 
 ### <a name="simplified-apply-experience-for-candidates"></a>Uproszczone zastosowanie funkcji dla kandydatów 
 
-Uproszczone stosowanie funkcji kandydatów jest obecnie dostępne w podglądzie publicznym. Po włączeniu kandydat może złożyć wniosek o pracę za pomocą życiorysu, przy użyciu opcji **Zgłoś się za pomocą LinkedIn** (jeśli jest włączona) lub przy użyciu istniejącego formularza aplikacji. Dzięki tym zmianom kandydaci mogą szybko przesłać swoje zgłoszenia pracy z minimalną liczbą pól wymaganych do wprowadzania ręcznego. Aby uzyskać informacje o włączaniu tej funkcji, zobacz [Włączanie i wyłączanie funkcji zapoznawczych](./access-preview-feature.md#enable-or-disable-preview-features).
+Uproszczone stosowanie funkcji kandydatów jest obecnie dostępne w podglądzie publicznym. Po włączeniu kandydat może złożyć wniosek o pracę za pomocą życiorysu, przy użyciu opcji **Zgłoś się za pomocą LinkedIn** (jeśli jest włączona) lub przy użyciu istniejącego formularza aplikacji. Dzięki tym zmianom kandydaci mogą szybko przesłać swoje zgłoszenia pracy z minimalną liczbą pól wymaganych do wprowadzania ręcznego. Aby uzyskać więcej informacji dotyczących włączania tej funkcji, zobacz [Dostęp do funkcji podglądu w Microsoft Dynamics 365 Talent](./access-preview-feature.md#enable-or-disable-preview-features).
 
 ### <a name="view-rejection-comments-as-part-of-application-activity"></a>Wyświetlanie komentarzy odrzucenia w ramach działania aplikacji
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ce94f3bbb988640bc53ca2170c7ed54c6c01c18
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5a33ced073394f0f3aa1b0b2e177e4608ca5bcf6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179443"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772037"
 ---
 # <a name="budget-planning-overview"></a>Przegląd planowania budżetu
 
@@ -155,7 +155,8 @@ W przykładowym schemacie można utworzyć kolumny dla scenariuszy Sprzedaż w p
 
 Można również określić, czy poszczególne elementy układu (kolumna) są dostępne do edycji i czy są one dostępne w jakimkolwiek szablonie arkusza utworzonego w tym układzie. W przykładowym schemacie w układzie używanym dla etapu Szacowanie kolumny Prognoza są dostępne do edycji, a kolumny Sprzedaż w poprzednim roku i Umowy są tylko do odczytu.
 
-[!Note] Domyślnie będzie ograniczona do 36 kolumn, chyba że rozszerzysz planowanie budżetu o kroki w [rozszerzanie układu planowania budżetu](./extending-budget-planning-layout.md).
+> [!NOTE] 
+> Domyślnie będzie ograniczona do 36 kolumn, chyba że rozszerzysz planowanie budżetu o kroki w [rozszerzanie układu planowania budżetu](./extending-budget-planning-layout.md).
 
 ### <a name="templates"></a>Szablony
 

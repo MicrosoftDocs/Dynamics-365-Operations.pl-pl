@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
 ms.search.validFrom: 2019-05-29
-ms.openlocfilehash: 4343c875da05641c57b7784bf52f1c814dd26d20
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c0c578ca44919671b67daeea51a9ec7687f755c9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174992"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773652"
 ---
 # <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a>Implementowanie pól niestandardowych aplikacji mobilnej Microsoft Dynamics 365 Project Timesheet w systemach iOS i Android
 
@@ -321,13 +321,9 @@ Poniżej znajduje się zrzut ekranu do przeglądania karty czasu pracy w aplikac
 
 ![Polecenie Wyświetl więcej szczegółów](media/show-more.png)
 
-
-
 Poniżej znajduje się zrzut ekranu z sekcją „Więcej” karty czasu pracy w aplikacji mobilnej. Do sekcji nagłówka karty czasu pracy dodano pole niestandardowe o nazwie „Stopień wykorzystania tej karty czasu pracy (obliczone pole niestandardowe)” W polu niestandardowym ustawiono wartość tylko do odczytu „0,667”.
 
 ![Sekcja Więcej](media/more-section.jpg)
-
-
 
 ### <a name="extend-the-tstimesheettable-table-so-that-it-has-a-custom-field"></a>Rozszerzanie tabeli TSTimesheetTable o pole niestandardowe
 

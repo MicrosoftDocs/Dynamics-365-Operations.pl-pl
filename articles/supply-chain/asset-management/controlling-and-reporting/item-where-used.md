@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511108e689c10e27a42253d95b02e5394f9eb713
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: 476b01a4bae34a271203f34481ff18042783d4df
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652363"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811270"
 ---
 # <a name="item-where-used"></a>Używająca pozycja
 
@@ -33,15 +33,15 @@ ms.locfileid: "2652363"
 
 Można dokonać obliczeń dla konkretnego towaru, aby uzyskać przegląd informacji o miejscu użycia towaru w module Zarządzanie składnikami majątku. Wyniki zawierają kontekst, w którym towar został użyty w czasie jego istnienia. Stronę **Używająca pozycja** można otworzyć z głównego menu modułu Zarządzanie składnikami majątku, a także uzyskać do niej dostęp z następujących stron:
 
-- [BOM składnika majątku](../objects/object-BOM.md)
+- [Obiekty BOM składnika majątku](../objects/object-BOM.md)
 
-- [Części zamienne w domyślnym typie składnika majątku](../setup-for-objects/object-types.md)
+- [Części zamienne w domyślnym typie składnika majątku](../setup-for-objects/object-types.md#spare-parts-on-the-asset-type-setup)
 
-- [Prognoza pozycji dla prognozy domyślnego typu zadań konserwacji](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
+- [Kategorie typów zadań obsługi i typy zadań serwisowych, warianty typu zadań obsługi, handel zadaniami konserwacyjnymi oraz listy kontrolne konserwacji](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
 
-- [Prognoza konserwacji zlecenia pracy](../work-orders/maintenance-forecasts.md)
+- [Prognoza konserwacji](../work-orders/maintenance-forecasts.md)
 
-- [Zapotrzebowanie na zakup zlecenia pracy](../work-orders/procurement.md)
+- [Zaopatrzenie](../work-orders/procurement.md)
 
 - [Zakup zlecenia pracy](../work-orders/procurement.md)
 

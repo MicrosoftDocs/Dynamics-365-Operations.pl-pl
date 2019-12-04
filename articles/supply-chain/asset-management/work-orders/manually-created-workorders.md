@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8a8494bdefcf11dc331be18bfe02e0df1e39d602
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 2652458a5fea9e46b8b68d3b197d2ccb1385731d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626254"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811758"
 ---
 # <a name="manually-created-work-orders"></a>Ręcznie utworzone zlecenia pracy
 
@@ -70,7 +70,7 @@ Należy uwzględnić następujące informacje:
 
 - W widoku szczegółowym na stronie listy **Wszystkie zlecenia pracy** do zlecenia pracy można dodać kilka składników majątku, dodając wiersze na skróconej karcie **Zadania konserwacji zlecenia pracy**. Dla składnika moża wybrać tylko typy zadań konserwacji, które są określone w typie składnika majatku, który jest używany dla składnika majatku.  
 
-- Jeśli zmienisz poziom usługi składnika majątku lub krytyczność składnika majątku po użyciu składnika majątku w zleceniu pracy, poziom usług lub krytyczność w zleceniu pracy nie zostanie odpowiednio zaktualizowany. Aby uzyskać więcej informacji o poziomach usług i ich krytyczności, zapoznaj się z tematem [Poziomy usług składnika majątku](../setup-for-objects/object-priorities.md) i [Krytyczności składników majątku](../setup-for-objects/object-criticalities.md).
+- Jeśli zmienisz poziom usługi składnika majątku lub krytyczność składnika majątku po użyciu składnika majątku w zleceniu pracy, poziom usług lub krytyczność w zleceniu pracy nie zostanie odpowiednio zaktualizowany. Aby uzyskać więcej informacji o poziomach usług i ich krytyczności, zapoznaj się z tematem [Poziomy usług składnika majątku](../setup-for-objects/object-priorities.md) i [Typy krytyczności składnika majątku](../setup-for-objects/object-criticalities.md).
 
 - Krytyczność na zleceniu pracy jest przeliczana za każdym razem, gdy wiersz zadania zlecenia pracy jest dodawany lub usuwany ze zlecenia pracy.
 

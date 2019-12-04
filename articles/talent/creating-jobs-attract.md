@@ -1,5 +1,5 @@
 ---
-title: Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract
+title: Tworzenie oferty pracy w Attract
 description: W tym temacie opisano elementy funkcji w aplikacji Attract. Ponadto wyjaśniono, jak utworzyć funkcję.
 author: hasrivas
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: db725c230de5e3dfe971098249b280d9da47ae20
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9dcdbcea995285c879f91c0bff435103865cc10f
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551079"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832938"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract
+# <a name="create-a-job-in-attract"></a>Tworzenie oferty pracy w Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -49,7 +49,7 @@ Jeśli w Centrum administracyjnym włączono funkcję zarządzanie stanowiska, j
 > [!NOTE]
 > Funkcja zarządzania stanowiskami jest dostępna po zainstalowaniu dodatku kompleksowej obsługi rekrutacji.
 
-W zależności od ustawień w działaniu Oferta w procesie rekrutacji ten sam numer stanowiska może zostać użyty dwa razy w ofercie. Aby uzyskać więcej informacji, zobacz [Proces zatrudniania](./activities-attract.md).
+W zależności od ustawień w działaniu Oferta w procesie rekrutacji ten sam numer stanowiska może zostać użyty dwa razy w ofercie. Aby uzyskać więcej informacji, zajrzyj do [działań w procesach zatrudniania](./activities-attract.md).
 
 Aplikacja Attract zawiera domyślny zestaw **umiejętności**. Te umiejętności są wyświetlane jako sugestie podczas wpisywania tekstu. Możesz dodać więcej umiejętności, wprowadzając treść nowej umiejętności w polu, a następnie naciskając klawisz Enter.
 
@@ -67,7 +67,7 @@ Zespół rekrutacyjny można zaktualizować po uaktywnieniu funkcji.
 
 Domyślne informacje o procesie rekrutacji zależą od szablonu procesu wybranego podczas tworzenia funkcji. Jeśli w tamtym momencie nie wybrano konkretnego szablonu, będzie używany domyślny szablon. Podczas definiowania procesu rekrutacji można dodawać i usuwać różne etapy z wyjątkiem etapów Prospekt, Zgłoszenie i Oferta. Chociaż etapu Prospekt nie da się usunąć, można go wyłączyć. Na każdym etapie można dodać lub usunąć jedno lub więcej wstępnie zdefiniowanych działań.
 
-Aby uzyskać więcej informacji o działaniach, które można dodawać do procesu rekrutacji, zobacz [Działania w ramach procesu zatrudniania w aplikacji Attract](./activities-attract.md).
+Aby uzyskać więcej informacji o działaniach, które można dodawać do procesu rekrutacji, zobacz [Działania w procesach rekrutacji](./activities-attract.md).
 
 > [!NOTE]
 > Procesu rekrutacji nie można zaktualizować po uaktywnieniu funkcji.
@@ -76,7 +76,7 @@ Aby uzyskać więcej informacji o działaniach, które można dodawać do proces
 
 Po uaktywnieniu funkcji można ją opublikować. Tylko osoby rekrutujące i menedżerowie zatrudniający mogą publikować funkcje. Funkcję można opublikować w witrynie Talent Careers (witrynie rozwoju kariery wewnątrz Dynamics 365 Talent) lub serwisie LinkedIn. Zespół aplikacji Attract stale pracuje nad dodawaniem agregatorów ogłoszeń o pracę. Ta lista będzie regularnie poszerzana. Jeśli oferta jest opublikowana jako tylko wewnętrzna, kandydaci muszą dodać konto, aby wyświetlić ofertę i zgłosić się. Jeśli oferta jest opublikowana jako publiczna, kandydaci mogą wyświetlać ofertę i zgłaszać się za pomocą wszystkich opcji uwierzytelniania. 
 
-Aby uzyskać więcej informacji o ofertach pracy, zobacz [Funkcjonalność witryny rozwoju kariery w aplikacji Attract](career-site.md).
+Więcej informacji o publikacji ofert pracy zawiera sekcja [Konfigurowanie serwisu kariery w Microsoft Dynamics 365 Talent - Attract](career-site.md)
 
 > [!NOTE]
 > Funkcjonalność ofert pracy jest dostępna tylko po zainstalowaniu dodatku kompleksowej obsługi rekrutacji dla aplikacji Attract.
@@ -90,7 +90,7 @@ Po uaktywnieniu funkcji można ją opublikować oraz dodawać do niej prospektó
 
 ## <a name="prospects-and-applicants"></a>Prospekci i kandydaci
 
-Opcję dodawania prospektów do funkcji ustawia się w [działaniu Prospekt](./activities-attract.md#prospect-activity) w procesie rekrutacji. Tę opcję należy ustawić przed uaktywnieniem funkcji. Po uaktywnieniu funkcji można do niej dodawać prospektów i kandydatów.
+Opcję dodawania prospektów do funkcji ustawia się w [Działania w procesach rekrutacji](./activities-attract.md#prospect-activity). Tę opcję należy ustawić przed uaktywnieniem funkcji. Po uaktywnieniu funkcji można do niej dodawać prospektów i kandydatów.
 
 ## <a name="approvals"></a>Zatwierdzenia
 

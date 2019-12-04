@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9200b0e4bc3862abdb3ecacb6539f7ba0d619b2f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0a930b4921a29d5ce561ce0e958733f0c3261b81
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189621"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772198"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Naliczanie kosztów projektu w przyjęciach zakupów
 
@@ -40,21 +40,20 @@ Firma Contoso Consulting rozpoczęła nowy projekt wdrożenia chmury. Utworzono 
 Dla celów sprawozdawczości naliczony koszt musi być zarejestrowany na poziomach finansowym i projektu. Fiinansową aktualizację przyjęcia produktu można śledzić w kategoriach towaru i zaopatrzenia. 
 
 W przypadku towarów na stronie **Parametry modułu rozrachunków z dostawcami** zaznacz opcję **Księguj przyjęcia produktów w księdze**.
-[![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
+[![Strona parametrów rozrachunków z dostawcami](./media/accruals1-1024x409.png)](./media/accruals1.png) 
 
 Dla kategorii zaopatrzenia na stronie **Reguła kategorii** zaznacz zasady **Zakupy**, a następnie dla każdej kategorii zaopatrzenia zaznacz opcję **Naliczanie wydatku na zakup w momencie przyjęcia**.
-[![accruals2](./media/accruals2-1024x569.png)](./media/accruals2.png) 
+[![Strona Reguła kategorii](./media/accruals2-1024x569.png)](./media/accruals2.png) 
 
 Konta **Koszty zakupu niezafakturowane** i **Naliczenie zakupu** w oknie **Ustawienia księgowania** będą używane podczas księgowana załączników związanych z przyjęciem produktu.
-[![accruals3](./media/accruals3-1024x429.png)](./media/accruals3.png) 
 
 W tym samym scenariuszu zobaczmy, jak księgowanie przyjęcia produktu wpłynie na księgę główną i informacji o projekcie. 
 
 **Krok 1:** Utwórz i potwierdź nowe zamówienie zakupu dla projektu, aby zarejestrować zakup komputera za 1500 USD i usług instalacyjnych za 150 USD.
-[![accruals4](./media/accruals4-1024x497.png)](./media/accruals4.png) 
+[![Tworzenie nowego zamówienia zakupu](./media/accruals4-1024x497.png)](./media/accruals4.png) 
 
 Po potwierdzeniu zamówienia zakupu zostaną dla projektu utworzone transakcje na ustalony koszt. 
-[![accruals5](./media/accruals5-1024x219.png)](./media/accruals5.png) 
+[![Utworzone transakcje](./media/accruals5-1024x219.png)](./media/accruals5.png) 
 
 > [!NOTE]
 > Transakcje na ustalony koszt będą miały w polu **Źródło transakcji** ustawioną wartość **Zamówienie zakupu**. Utworzenie i potwierdzenie zamówienia zakupu nie tworzy transakcji dla projektu. 
@@ -62,23 +61,23 @@ Po potwierdzeniu zamówienia zakupu zostaną dla projektu utworzone transakcje n
 **Krok 2:** Towary i usługi zostają dostarczone i następuje zarejestrowanie przyjęcia produktu. 
 
 Zaksięgowanie przyjęcia produktu spowoduje wygenerowanie załącznika i jego zaksięgowanie w księdze. Załącznik zostanie zapisany po stronie debetowej na koncie niezafakturowanych kosztów zakupu, a po stronie uznaniowej na koncie naliczeń zakupu. 
-[![accruals6](./media/accruals6-1024x214.png)](./media/accruals6.png)
+[![Transakcje z załącznikami](./media/accruals6-1024x214.png)](./media/accruals6.png)
 
 > [!NOTE]
 > W celu zaksięgowania przyjęcia produktu będzie używana konfiguracja księgowania kategorii zaopatrzenia i produktów, a nie konfiguracja księgowania kategorii projektu. W celu właściwego wykazania finansowego wpływu naliczeń zakupu należy odpowiednio dopasować tę konfigurację. 
 
 Na stronie **Kategoria zaopatrzenia** można zamapować kategorie zaopatrzenia na kategorie projektu.
-[![accruals7](./media/accruals7-1024x390.png)](./media/accruals7.png)
+[![Strona kategorii zaopatrzenia](./media/accruals7-1024x390.png)](./media/accruals7.png)
 
 **Krok 3:** Utwórz wersję roboczą faktury od dostawcy. 
 
 Zaksięgowanie przyjęcia produktu nie wpływa na informacje o projekcie. Aby obejść to zachowanie, można wygenerować wersję roboczą faktury od dostawcy natychmiast po zaksięgowaniu przyjęcia zakupu. Przejdź do strony **Zamówienie zakupu** &gt; karta **Faktura** &gt; **Generuj** &gt; **fakturę**. Zostanie utworzony dokument oczekującej faktury, który aktualizuje dane projektu. 
 
 Utworzenie wersji roboczej faktury od dostawcy spowoduje generowanie oczekujących transakcji projektu. 
-[![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 
+[![Oczekujące transakcje projektu](./media/accruals8-1024x225.png)](./media/accruals8.png) 
 
 Na stronie **Ustalony koszt** rekordy utworzone w kroku 1 zostaną zamknięte, a program utworzy nowe rekordy odzwierciedlające potwierdzenie kosztów pochodzące z oczekującej faktury od dostawcy. Pole **Źródło transakcji** dotyczące ustalonego kosztu zostanie ustawione na wartość **Faktura od dostawcy**.
-[![accruals9](./media/accruals9-1024x200.png)](./media/accruals9.png)
+[![Strona kosztów ustalonych](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
 Faktura od dostawcy pozostanie w stanie oczekiwania do momentu nadejścia rzeczywistej faktury od dostawcy.
 

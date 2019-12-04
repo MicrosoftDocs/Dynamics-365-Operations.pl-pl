@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
+ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553194"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "2810706"
 ---
 # <a name="one-voucher"></a>Pojedynczy załącznik
 
@@ -83,6 +83,9 @@ Na podstawie rozmów z klientami sporządziliśmy listę scenariuszy, w których
 
 Poniższe scenariusze można realizować tylko przy użyciu funkcjonalności pojedynczego załącznika. Jeśli organizacja stosuje którykolwiek z tych scenariuszy, należy włączyć możliwość wprowadzania wielu transakcji w jednym załączniku, zmieniając wartość ustawienia **Zezwalaj na wiele transakcji w jednym załączniku** na stronie **Parametry księgi głównej**. Opisane luki funkcjonalne zostaną uzupełnione za pomocą innych funkcji zawartych w późniejszych wydaniach.
 
+> [!Note]
+> [Dla każdego z poniższych scenariuszy pole **Zezwalaj na wiele transakcji w ramach jednego załącznika** musi mieć ustawioną wartość tak w skróconej karcie **Ogólne** na stronie **Parametry księgi głównej**.]
+
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Księgowanie płatności dla dostawców lub od odbiorców w postaci zbiorczej na koncie bankowym
 
 **Scenariusz** Organizacja przekazuje bankowi listę dostawców i należnych im kwot, a bank na podstawie tej listy płaci dostawcom w imieniu organizacji. Bank księguje sumę płatności jako pojedynczą wypłatę z rachunku bankowego.
@@ -120,6 +123,9 @@ Następujące transakcje środków trwałych również tworzą wiele transakcji 
 - Rozbicie środka trwałego.
 - Włączenie parametru umożliwiającego obliczenie amortyzacji przy likwidacji, a następnie zlikwidowanie składnika aktywów.
 - Data rozpoczęcia eksploatacji składnika aktywów jest wcześniejsza niż data nabycia. Z tego względu została zaksięgowana korekta amortyzacji.
+
+> [!Note]
+> Podczas wprowadzania transakcji należy się upewnić, że wszystkie transakcje mają zastosowanie do tego samego środka trwałego. Załącznik nie zostanie zaksięgowany, jeśli zawiera więcej niż jeden środek trwały, nawet jeśli pole **Nowy załącznik** ma wartość Jeden załączniki na stronie **Nazwy arkuszy** w Księdze głównej. Jeśli w załączniku zostanie uwzględnionych więcej niż jeden środek trwały, wyświetli się wiadomość **Zostanie wyświetlona tylko jedna transakcja środków trwałych dla każdego załącznika** i zaksięgowanie załącznika nie będzie możliwe.  
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a> Weksle i skrypty dłużne
 Weksle i skrypty dłużne wymagają używania pojedynczego załącznika, ponieważ transakcja powoduje przeniesienie salda odbiorcy lub dostawcy z jednego konta księgowego w module Rozrachunki z odbiorcami/Rozrachunki z dostawcami do innego konta na podstawie stanu płatności.

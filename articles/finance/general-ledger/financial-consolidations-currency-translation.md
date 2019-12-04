@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7b6b3cced92920ef5a253ca15793f26f244475fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186608"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771852"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Omówienie konsolidacji finansowych i przeliczania walut
 
@@ -75,7 +75,7 @@ W powyższej strukturze organizacyjnej musi istnieć firma w celu skonsolidowani
 
 Podczas tworzenia firmy można określić, czy będzie ona używana w procesach konsolidacji i eliminacji, czy tylko w jednym z nich. Na poniższej ilustracji firma jest używana w obu procesach. Należy zauważyć, że nie można księgować arkuszy dziennych w konsolidowanej firmie, ale można je zaksięgować w firmie z wpisami eliminacji. W związku z tym warto utworzyć oddzielną firmę z wpisami eliminacji.
 
-![Firma używana do konsolidacji i eliminacji](./media/sep-elimination-company.png "Firma używana do konsolidacji i eliminacji")
+![Firma, która jest używana zarówno do konsolidacji, jak i eliminacji](./media/sep-elimination-company.png "Firma, która jest używana zarówno do konsolidacji, jak i eliminacji")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Konta główne i grupy kont konsolidacyjnych
 Jednym z wyborów, jakich należy dokonać, jest sposób konsolidowania planu kont. W trakcie procesu konsolidacji możliwe są trzy opcje konsolidowania kont głównych.
@@ -84,14 +84,14 @@ Pierwszą opcją jest używanie kont głównych z firm źródłowych. W takim pr
 
 Druga opcja to określenie domyślnego konta konsolidacyjnego na stronie **Konta główne**. Następnie konto zostanie zamapowane na konto konsolidacyjne. Ta opcja może być przydatna, jeśli masz różne plany kont lub musisz zamapować na plan zdefiniowany przez centralę.
 
-![Domyślne konto konsolidacyjne określone na stronie Konta główne](./media/main-accounts.png "Domyślne konto konsolidacyjne określone na stronie Konta główne")
+![Domyślne konto konsolidacji określone na stronie konta główne](./media/main-accounts.png "Domyślne konto konsolidacji określone na stronie konta główne")
 
 Trzecią opcją jest użycie grup kont konsolidacyjnych. Można zdefiniować dowolną potrzebną liczbę grup kont konsolidacyjnych. Następnie na stronie **Dodatkowe konta konsolidacji** można po prostu zamapować konto główne z planu kont do konta wymaganego dla tej grupy.
 
-![Mapowanie na stronie Dodatkowe konta konsolidacji](./media/additional-consolidation-accounts.png "Mapowanie na stronie Dodatkowe konta konsolidacji")
+![Mapowanie na stronie dodatkowe konta konsolidacji](./media/additional-consolidation-accounts.png "Mapowanie na stronie dodatkowe konta konsolidacji")
 
 ## <a name="consolidating-online"></a>Konsolidowanie online
-Aby się dowiedzieć, jak wprowadzać szczegółowe informacje o konsolidacji w trybie online, zobacz [Konsolidacja online](./consolidate-online.md).
+Aby się dowiedzieć, jak wprowadzać szczegółowe informacje o konsolidacji w trybie online, zobacz [Konsolidacja finansowa online](./consolidate-online.md).
 
 ## <a name="managing-consolidation-transactions"></a>Zarządzanie transakcjami konsolidacji
 Aby wyświetlić wyniki konsolidacji, możesz skorzystać z różnych opcji:
@@ -100,7 +100,7 @@ Aby wyświetlić wyniki konsolidacji, możesz skorzystać z różnych opcji:
 - Przejrzenie strony listy **Bilans próbny** w konsolidowanej firmie.
 - Na stronie **Konsolidacje** na liście transakcji konsolidacji wyświetlenie utworzonych sald z podziałem na daty dla każdej firmy źródłowej i każdego okresu.
 
-    ![Transakcje konsolidacji na stronie Konsolidacje](./media/managing-consolidation-transactions.png "Transakcje konsolidacji na stronie Konsolidacje")
+    ![Konsolidowanie transakcji na stronie konsolidacji](./media/managing-consolidation-transactions.png "Konsolidowanie transakcji na stronie konsolidacji")
 
 Aby ponownie uruchomić konsolidację, wystarczy wykonać przetwarzanie konsolidacji. Alternatywnie można najpierw wybrać opcję **Usuń transakcje** na stronie **Konsolidacje**.
 
@@ -128,7 +128,7 @@ Wybierz konta źródłowe. Można użyć gwiazdki (\*) jako symbolu wieloznaczne
 
 Po wybraniu kont źródłowych należy w polu **Specyfikacja konta** określić używane konto z firmy docelowej. Wybierz opcję **Źródło**, aby używać tego samego konta głównego, jak zdefiniowane w polu konta źródłowego. Jeśli wybierzesz opcję **Zdefiniowany przez użytkownika**, należy określić konto docelowe.
 
-![Strona z wierszem reguły eliminacji księgi](./media/ledger-elimination-rule-line.png "Strona z wierszem reguły eliminacji księgi")
+![Strona wiersza reguły eliminacji księgi](./media/ledger-elimination-rule-line.png "Strona wiersza reguły eliminacji księgi")
 
 Pole **Specyfikacja wymiaru** działa podobnie, jak pole **Specyfikacja konta**. Wybierz opcję **Źródło**, jeśli chcesz używać tych samych wymiarów w firmach docelowej i źródłowej. Jeśli wybierzesz opcję **Zdefiniowany przez użytkownika**, będzie trzeba określić wymiary w firmie docelowej, klikając opcję **Docelowe wymiary**. Następnie wybierz wymiary źródłowe i wymiary finansowe oraz wartości, które będą używane jako źródło eliminacji.
 

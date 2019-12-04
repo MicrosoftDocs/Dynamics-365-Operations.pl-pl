@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c3d83334bcccc62a2cbe761272b13cc80e10c11
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: b4bb523c2817a220623d8a1b6cc1ac04d7b96283
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658817"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812656"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań
 
@@ -84,7 +84,7 @@ Tak wygląda adnotacja uwag w „dymku” w przewodniku po zadaniu.
 
 [![Wygląd notatek adnotacji w przewodniku po zadaniach](./media/screen4.png)](./media/screen4.png)
 
--   **Informacje o kroku**: te adnotacje są tworzone za pomocą kliknięcia prawym przyciskiem myszy na formancie lub w dowolnym miejscu w formularzu &lt; **Rejestrator zadań** &lt; **Dodaj krok informacji. **Kroki informacji są wyświetlane jako ponumerowane kroki w punkcie, w którym zostały wstawione, nawet jeśli żadna akcja nie została zarejestrowana w interfejsie użytkownika. Można dodać krok informacji na poziomie formularza lub krok informacji skojarzony z formantem. Jeśli krok informacji jest skojarzony z formularzem, „dymek” przewodnika po zadaniu będzie wyświetlany gdzieś w formularzu, bez wskaźnika, podczas odtwarzania podręcznika po zadaniu. Kiedy krok informacji jest skojarzony z formantem, „dymek” podręcznika po zadaniu będzie wskazywał formant podczas podręcznika po zadaniu. W okienku Pomocy adnotacja informacji o kroku będzie wyświetlana jako ponumerowany krok z dowolnym wprowadzonym tekstem. Instrukcje etapowe pozwalają przygotować użytkownika do kolejnych kroków, opisują kroki, które muszą być wykonane poza aplikacją lub odwołują się do innych nagrań (jednak nie można utworzyć hiperłącza w adnotacji).
+-   **Krok informacji**: Te adnotacje są tworzone za pomocą kliknięcia prawym przyciskiem myszy na formancie lub w dowolnym miejscu w formularzu &lt; **Rejestrator zadań** &lt; **Dodaj krok informacji.** Kroki informacji są wyświetlane jako ponumerowane kroki w punkcie, w którym zostały wstawione, nawet jeśli żadna akcja nie została zarejestrowana w interfejsie użytkownika. Można dodać krok informacji na poziomie formularza lub krok informacji skojarzony z formantem. Jeśli krok informacji jest skojarzony z formularzem, „dymek” przewodnika po zadaniu będzie wyświetlany gdzieś w formularzu, bez wskaźnika, podczas odtwarzania podręcznika po zadaniu. Kiedy krok informacji jest skojarzony z formantem, „dymek” podręcznika po zadaniu będzie wskazywał formant podczas podręcznika po zadaniu. W okienku Pomocy adnotacja informacji o kroku będzie wyświetlana jako ponumerowany krok z dowolnym wprowadzonym tekstem. Instrukcje etapowe pozwalają przygotować użytkownika do kolejnych kroków, opisują kroki, które muszą być wykonane poza aplikacją lub odwołują się do innych nagrań (jednak nie można utworzyć hiperłącza w adnotacji).
 
 **Określenia, jak długie ma być nagranie**
 
@@ -97,7 +97,7 @@ Tak wygląda adnotacja uwag w „dymku” w przewodniku po zadaniu.
 **Określ gdzie w interfejsie użytkownika zacząć nagrywanie** Strona, na której jesteś na początku nagrania, ma wpływ na to, dla której strony wyświetlany jest przewodnik po zadaniu. Na przykład jeśli nagranie zadania ma się znaleźć na liście w okienku Pomocy, gdy użytkownik kliknie przycisk Pomocy na stronie parametrów księgi głównej, musisz zacząć nagranie na stronie parametrów księgi głównej. **Zapisz nagrania jako pliki .axtr** Po zakończeniu tworzenia lub edytowania nagrania zadania, masz kilka opcji pobrania lub zapisania nagrania. Możesz pobrać plik jako pakiet nagrania zadania (.axtr), nieprzetworzony plik nagrania (.xml), dokument programu Word lub zapisać plik w bibliotece LCS. Dobrze jest zapisać nagranie zadania jako plik pakietu nagrania zadania (.axtr). To ułatwia obsługę plików, jeśli później trzeba zmienić procedury lub adnotacje. Jeśli chcesz pobrać ten plik jako dokument programu Word, zapisz go również jako plik pakietu nagrania zadania.
 
 ## <a name="create-your-task-recording"></a>Tworzenie nagrania zadania
-Szczegółowe omówienie znajduje się w temacie [Jak utworzyć nagrania zadań](task-recorder.md).
+Szczegółowe omówienie kroków znajduje się w temacie [Zasoby rejestratora zadań](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiowanie i dostosowywanie nagrań uzyskanych od firmy Microsoft
 Można pobrać i edytować nagrania firmy Microsoft i używać ich do tworzenia własnej dokumentacji Pomocy lub materiałów szkoleniowych. Aby pobrać nagranie zadania od Microsoft, wykonaj następujące czynności:
@@ -120,9 +120,9 @@ Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy, by mog
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Omówienie Pomocy](../../fin-ops/get-started/help-overview.md)
+[System Pomocy](../../fin-ops/get-started/help-overview.md)
 
-[Nawiązywanie połączenia z Pomocą](../../fin-ops/get-started/help-connect.md)
+[Łączenie z systemem Pomocy](../../fin-ops/get-started/help-connect.md)
 
 [Rejestrator zadań](task-recorder.md)
 

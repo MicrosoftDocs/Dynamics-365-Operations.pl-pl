@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4ef97d30ca2d8a9c27ce656c82d2a415682ce075
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551228"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773436"
 ---
 # <a name="import-iso20022-files"></a>Importowanie plików ISO20022
 
@@ -49,7 +49,7 @@ Należy wykonać poniższe wymagania wstępne, aby importować komunikaty powiad
 
     - W polu **Płatności odbiorcy, długość konta** wprowadź długość kodu odbiorcy, który będzie używany w odniesieniach do dokumentu płatności ISR lub do automatycznej identyfikacji odbiorcy.
     - Upewnij się, że numer odbiorcy i numer faktury (numeracje) zawierają tylko cyfry. Nie może w nich być żadnych innych znaków. Numer faktury nie może zawierać zer na początku.
-    - Wprowadź numery ESR i BESR oraz kod banku dla rachunku bankowego firmy. Aby uzyskać więcej informacji, zobacz [Starsza funkcja ESR](emea-che-esr-customer-payments-import.md), ponieważ są wymagane podobne ustawienia.
+    - Wprowadź numery ESR i BESR oraz kod banku dla rachunku bankowego firmy. Aby uzyskać więcej informacji, zobacz [Importowanie płatności odbiorcy w formacie ESR](emea-che-esr-customer-payments-import.md), ponieważ są wymagane podobne ustawienia.
     
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>Importowanie pliku zawiadomienia kredytowego camt.054 do arkusza płatności odbiorców
 1. Na stronie **Wiersze arkusza płatności odbiorców** kliknij kolejno opcje **Funkcje** > **Import płatności**.
@@ -127,5 +127,5 @@ Aby uzyskać więcej informacji na temat raportowania elektronicznego, zobacz [O
 - [Konfigurowanie kont bankowych firmy dla poleceń zapłaty ISO20022](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
 - [Konfigurowanie odbiorców i kont bankowych odbiorców dla poleceń zapłaty ISO20022](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
 - [Konfigurowanie metody płatności przelewu ISO20022](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
-- [Konfigurowanie metody płatności polecenia zapłaty ISO20022](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [Konfigurowanie metody płatności poleceniem zapłaty ISO20022](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Konfigurowanie dostawców i kont bankowych dostawców dla poleceń przelewu ISO20022](./tasks/set-up-vendor-iso20022-credit-transfers.md)

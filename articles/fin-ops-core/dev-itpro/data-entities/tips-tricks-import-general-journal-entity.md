@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 167afa70bfa35b966081709f1587d61d401d318f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 23a4cff85bb5c9d119f9ec47e8421aa1964a3d4f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184354"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769617"
 ---
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Najlepsze rozwiązania w zakresie importowania załączników za pomocą jednostki Arkusz finansowy
 
@@ -57,7 +57,7 @@ Poniższe sekcje opisują skutki użycia tych ustawień, a także sposób genero
 
 ### <a name="voucher-number"></a>Numer załącznika
 
-- W przypadku używania ustawienia **Przetwarzanie oparte na zestawie** zawartego w jednostce Arkusz finansowy należy w importowanym pliku podać numer załącznika. Każdej transakcji w arkuszu finansowym jest przypisywany numer załącznika pochodzący z importowanego pliku, nawet jeżeli załącznik nie jest zbilansowany. Jeśli chcesz używać przetwarzania opartego na zestawie, ale również chcesz używać numeracji zdefiniowanej dla numerów załączników, przygotowano poprawkę w wydaniu z lutego 2016 r. Poprawka ma numer 3170316 i można ją pobrać z usługi Lifecycle Services (LCS). Aby uzyskać więcej informacji, zobacz [Pobieranie poprawek z portalu Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
+- W przypadku używania ustawienia **Przetwarzanie oparte na zestawie** zawartego w jednostce Arkusz finansowy należy w importowanym pliku podać numer załącznika. Każdej transakcji w arkuszu finansowym jest przypisywany numer załącznika pochodzący z importowanego pliku, nawet jeżeli załącznik nie jest zbilansowany. Jeśli chcesz używać przetwarzania opartego na zestawie, ale również chcesz używać numeracji zdefiniowanej dla numerów załączników, przygotowano poprawkę w wydaniu z lutego 2016 r. Poprawka ma numer 3170316 i można ją pobrać z usługi Lifecycle Services (LCS). Aby uzyskać więcej informacji, zobacz [Pobieranie aktualizacji z portalu Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 
     - Aby włączyć tę funkcję, dla arkusza używanego do importowania w ustawieniu **Alokacja numerów podczas księgowania** zaznacz wartość **Tak**.
     - Numer załącznika i tak musi być zdefiniowany w importowanym pliku. Jednak ten numer ma charakter tymczasowy i jest zastępowany przez numer załącznika podczas księgowania arkusza. Upewnij się, że wiersze arkusza są poprawnie pogrupowane według tymczasowego numeru załącznika. Na przykład podczas księgowania zostały znalezione trzy wiersze, które mają tymczasowy numer załącznika 1. Tymczasowy numer załącznika we wszystkich trzech wierszach jest zastępowany przez następny numer wynikający z numeracji. Jeśli te trzy wiersze nie są wpisem zbilansowanym, załącznik nie jest księgowany. Następnie jeśli zostaną znalezione wiersze, które mają tymczasowy numer załącznika 2, ten numer jest zastępowany przez kolejny numer załącznika wynikający z numeracji, i tak dalej.

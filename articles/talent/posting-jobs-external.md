@@ -1,6 +1,6 @@
 ---
-title: Publikowanie funkcji w zewnętrznych witrynach rozwoju kariery z poziomu aplikacji Attract
-description: W tym temacie wyjaśniono, jak korzystać z Dynamics 365 Talent - Attract do publikowania ofert pracy w zewnętrznych serwisach rekrutacyjnych
+title: Publikowanie ofert pracy w serwisie Broadbean z poziomu aplikacji Attract
+description: W tym temacie wyjaśniono, jak korzystać z Dynamics 365 Talent - Attract do publikowania ofert pracy w Broadbean
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 2c822a1f799144bb9240fc0cbdeb6c5441e278af
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 41fa057606887069a9ea0f1f2178eeaff59f33ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551410"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832673"
 ---
-# <a name="post-jobs-to-external-career-sites-from-attract"></a>Publikowanie funkcji w zewnętrznych witrynach rozwoju kariery z poziomu aplikacji Attract
+# <a name="post-jobs-to-broadbean-from-attract"></a>Publikowanie ofert pracy w serwisie Broadbean z poziomu aplikacji Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attract pomaga uzyskać talent, którego potrzebujesz, umożliwiając publikację ofert pracy bezpośrednio z Attract do Broadbean. Po [utworzeniu pracy](./creating-jobs-attract.md) wystarczy jedno kliknięcie, aby udostępnić ofertę o pracę wszystkim potencjalnym kandydatom w Broadbean.
 
 Publikacja ofert w Broadbean wymaga odpowiedniej licencji Broadbean. Broadbean zawiera różne produkty i plany. Aby uzyskać więcej informacji na temat licencjonowania Broadbean i cen [skontaktuj się z Broadbean](https://www.broadbean.com/contact-us/).
 
-Jeśli jesteś administratorem, który potrzebuje więcej informacji na temat konfigurowania integracji Broadbean z Attract, przejdź do [Wprowadzanie ustawień zewnętrznych tablic ofert pracy](./attract-admin-job-board-settings.md).
+Jeśli jesteś administratorem, który potrzebuje więcej informacji na temat konfigurowania integracji Broadbean z Attract, przejdź do [Włącz integrację z aplikacją Broadbean w Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md).
 
 ## <a name="post-jobs-to-broadbean"></a>Publikowanie ofert pracy w serwisie Broadbean
 
@@ -74,7 +74,7 @@ Ofertę pracy opublikowaną na Broadbean można zaktualizować na dwa sposoby.
 2. W sekcji **Ogłoszenia** wybierz przycisk **Aktualizuj ogłoszenie** odpowiadający systemowi Broadbean.
 3. Edytuj ofertę w oknie Broadbean.
 
-– lub –
+    – lub –
 
 1. W Attract otwórz ofertę pracy, którą chcesz wyświetlić na Broadbean.
 2. W sekcji **Ogłoszenia** wybierz przycisk wielokropka (**...**) odpowiadający Broadbean, a następnie wybierz opcję **Wyświetl**.
@@ -99,6 +99,6 @@ Jeśli masz problemy z opublikowaniem oferty pracy na Broadbean, wypróbuj poni�
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Tworzenie pracy](./creating-jobs-attract.md)
+[Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract](./creating-jobs-attract.md)
 
-[Wprowadź ustawienia zewnętrznych tablic zadań](./attract-admin-job-board-settings.md)
+[Włącz integrację z aplikacją Broadbean w Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md)

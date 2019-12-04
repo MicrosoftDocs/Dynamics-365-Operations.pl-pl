@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 265e4dd4be63f70a29e46b6acf7db514feb599a4
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: 0d0fc75f233ee2eab42317f835834ff24b6ada2f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652179"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813438"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Zatwierdzanie i potwierdzanie zamówień zakupu
 
@@ -90,7 +90,7 @@ Jeśli zamówienie zakupu jest w module zarządzanie zmianami, każda zmiana, ta
 
 [Omówienie zamówień zakupu](purchase-order-overview.md)
 
-[Tworzenie zamówienia zakupu](purchase-order-creation.md)
+[Tworzenie zamówień zakupu](purchase-order-creation.md)
 
 [Przyjęcie produktów na podstawie zamówień zakupu](product-receipt-against-purchase-orders.md)
 

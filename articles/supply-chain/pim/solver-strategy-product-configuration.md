@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a548d3536bbc0056ee22c07c464af062029da81
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 241e1ae9bfd347695d7a2dbb7b3e71a7d49c2b93
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250583"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814543"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Strategia zmiennej na potrzeby konfiguracji produktów
 
@@ -68,7 +68,7 @@ W poniższej tabeli przedstawiono zalecenia dotyczące strategii doboru solveró
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Tworzenie modelu konfiguracji produktu](build-product-configuration-model.md)
+[Omówienie konfiguracji produktu](build-product-configuration-model.md)
 
 [Algorytmy heurystyczne](https://techterms.com/definition/heuristic)
 

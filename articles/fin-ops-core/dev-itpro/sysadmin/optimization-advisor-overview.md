@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4e47aea3a9d1ce62a85aac9a4acce398b5847f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4bcc6937da0e9f66014d9c00668e0c6790433ba8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191415"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811977"
 ---
 # <a name="optimization-advisor-overview"></a>Omówienie Doradcy optymalizacji
 
@@ -38,7 +38,7 @@ Niepoprawna konfiguracja i instalacja modułu mogą negatywnie wpływać na dost
 
 Obszar roboczy **Doradca optymalizacji** jest narzędziem, które pozwala użytkownikom zaawansowanym, analitykom biznesowym, konsultantom funkcjonalnym i personelowi wsparcia IT wykrywać problemy w konfiguracji modułu i danych biznesowych. Doradca optymalizacji sugeruje najlepsze praktyki dotyczące konfiguracji modułu oraz identyfikuje dane biznesowe, które są nieaktualne lub zawierają błędy.
 
-Doradca optymalizacji co pewien czas uruchamia zbiór zasad najlepszego rozwiązania. Dostępny jest zestaw reguł domyślnych, jednak użytkownicy mogą również tworzyć reguły dotyczące ich konkretnych personalizacji, rozwiązań od niezależnych dostawców oprogramowania (ISV) i danych biznesowych. Aby uzyskać więcej informacji dotyczących sposobu tworzenia reguł, zobacz [Tworzenie nowych reguł](./create-rules-optimization-advisor.md).
+Doradca optymalizacji co pewien czas uruchamia zbiór zasad najlepszego rozwiązania. Dostępny jest zestaw reguł domyślnych, jednak użytkownicy mogą również tworzyć reguły dotyczące ich konkretnych personalizacji, rozwiązań od niezależnych dostawców oprogramowania (ISV) i danych biznesowych. Aby uzyskać więcej informacji dotyczących sposobu tworzenia reguł, zobacz [Tworzenie reguł dla Doradcy optymalizacji](./create-rules-optimization-advisor.md).
 
 Po wykryciu naruszenia reguły jest generowana możliwość optymalizacji i pojawia się ona w obszarze roboczym **Doradca optymalizacji**. Użytkownik może podjąć odpowiednie czynności naprawcze bezpośrednio z obszaru roboczego **Doradca optymalizacji**.
 
@@ -92,6 +92,6 @@ Aby zdezaktywować weryfikację przestrzegania określonych reguł, wybierz moż
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Tworzenie nowych reguł](./create-rules-optimization-advisor.md)
+[Tworzenie reguł dla Doradcy optymalizacji](./create-rules-optimization-advisor.md)
 
 [Doradca optymalizacji w Dynamics 365 for Finance and Operations (film)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

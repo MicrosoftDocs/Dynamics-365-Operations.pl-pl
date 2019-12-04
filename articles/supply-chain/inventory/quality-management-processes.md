@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22372bd2d42b526d10e39174e7fb5ec5281d1b73
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 544721af404775a6d8b65628848caa84ceaebe30
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572795"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813842"
 ---
 # <a name="quality-management-processes"></a>Procesy zarządzania jakością
 
@@ -90,14 +90,14 @@ Warto określić niepowtarzalny typ dokumentu dla korekty na stronie **Typ dokum
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Włączanie zarządzania jakością](enable-quality-management.md)
+[Omówienie zarządzanie jakością](enable-quality-management.md)
 
-[Włączanie zarządzania niezgodnościami](enable-nonconformance-management.md)
+[Zarządzanie brakiem zgodności](enable-nonconformance-management.md)
 
 [Blokowanie zapasów](inventory-blocking.md)
 
 [Zlecenia kwarantanny](quarantine-orders.md)
 
-[Konfigurowanie zleceń kontroli jakości (przewodnik po zadaniu)](tasks/set-up-quality-orders.md)
+[Konfigurowanie zleceń kontroli jakości](tasks/set-up-quality-orders.md)
 
-[Sprawdzenie jakości towarów (przewodnik po zadaniu)](tasks/inspect-quality-goods.md)
+[Sprawdzenie jakości towarów](tasks/inspect-quality-goods.md)

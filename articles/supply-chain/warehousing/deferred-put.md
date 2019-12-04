@@ -3,7 +3,7 @@ title: Odroczone przetwarzanie pracy magazynowej
 description: W tym temacie opisano funkcje, która udostępnia odroczone przetwarzanie operacji odłożenia pracy magazynowej w usłudze Dynamics 365 Supply Chain Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b67b3899a506c02b581d04f51691cb4408ee012e
+ms.sourcegitcommit: 0af4caa9f5ea6f6c1d1f4b30090e02e7f755df36
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026943"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815795"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Odroczone przetwarzanie pracy magazynowej
 
@@ -30,7 +30,6 @@ ms.locfileid: "2026943"
 [!include [banner](../includes/pivate-preview-banner.md)]
 
 W tym temacie opisano funkcje, która udostępnia odroczone przetwarzanie operacji odłożenia pracy magazynowej w programie Dynamics 365 Supply Chain Management.
-
 
 Funkcja odroczonego przetwarzania umożliwia pracownikom magazynu kontynuowanie innych prac podczas przetwarzania operacji odłożenia w tle. Odroczonego przetwarzania jest przydatne, gdy wiele wierszy pracy musi być przetwarzanych i pracownik może pozwolić, aby praca była przetwarzana asynchronicznie. Jest to również przydatne, kiedy na serwer zdarzają się nieplanowane wydłużenia czasu przetwarzania, a zwiększony czas przetwarzania może wpłynąć na produktywność użytkownika.
 
@@ -50,6 +49,8 @@ Zasady konfiguruje się na stronie **Zasady przetwarzania pracy**. W poniższej 
 | Metoda przetwarzania pracy          | Metoda wolumetryczna używana do przetwarzania wiersza pracy. Jeśli metoda jest ustawiona na **Natychmiastowe**, zachowanie przypomina zachowanie, gdy żadne zasady przetwarzania pracy nie są używane do przetworzenia wiersza. Jeśli metoda jest ustawiona na **Odroczone**, używane jest odroczone przetwarzania, które używa struktury partii. |
 | Próg odroczonego przetwarzania   | Wartość **0** (zero) wskazuje, że nie istnieje żaden próg. W takim przypadku używane jest odroczone przetwarzanie, o ile jest to możliwe. Jeśli wynik obliczenia konkretnego progu jest poniżej progu, używana jest metoda Natychmiastowe. W przeciwnym razie używana jest metoda Odroczona, o ile jest to możliwe. W przypadku pracy związanej ze sprzedażą i przenoszeniem próg jest obliczany jako liczba skojarzonych źródłowych wierszy obciążenia, które są przetwarzane w odniesieniu do pracy. W odniesieniu do pracy uzupełniania, próg jest obliczany jako liczba wierszy pracy, które są uzupełniane przez pracę. Ustawiając próg, na przykład **5** dla sprzedaży, mniejszych prac, które mają mniej niż pięć wierszy początkowego obciążenia źródła, nie będzie używane przetwarzanie odroczonego, ale w przypadku większych prac będzie ono używane. Próg ma zastosowane tylko wtedy, gdy metoda przetwarzania pracy jest ustawiona na **Odroczone**. |
 | Grupa przetwarzania wsadowego odroczonego przetwarzania |Grupa przetwarzania wsadowego używana do przetwarzania. |
+
+W przypadku odroczonego przetwarzania odłożenia obsługiwane są następujące typy zleceń pracy: zamówienie sprzedaży, wydanie zamówienia przeniesienia i uzupełnienie zapasów.
 
 ## <a name="assigning-the-work-creation-policy"></a>Przypisywanie zasad tworzenia pracy
 
@@ -99,7 +100,7 @@ Istnieje kilka scenariuszy, w których odroczenie przetwarzanie odłożenia nie 
 - Używane jest ręczne kończenie pracy.
 - Praca jest kończona z użyciem automatycznego uzupełniania.
 - Używane są szablony inspekcji.
-- Praca używa kontenerów.
+
 
 ## <a name="monitoring-the-deferred-processing-tasks-from-the-outbound-work-monitoring-workspace"></a>Monitorowanie zadań odroczonego przetwarzania z obszaru roboczego Monitorowanie pracy wychodzącej
 

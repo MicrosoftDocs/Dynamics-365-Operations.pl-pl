@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b220dfc90d4b850c774ff638c5b766f650dcef9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d4c912e8364a2503b98e511cbf22884528e467f0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190955"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811633"
 ---
 # <a name="new-task-guides-february-2016"></a>Nowe przewodniki po zadaniach (luty 2016 r.)
 
@@ -32,7 +32,7 @@ Ten temat przedstawia listę przewodników po zadaniach, które znajdują się b
 
 ## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z lutego 2016 r.) dla Microsoft Dynamics AX
 
-Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach, które przewidziano jako pomoc dla systemu Dynamics AX w wersji 7.0.0. Jeśli potrzebujesz zlokalizowanych wersji tych przewodników po zadaniach, są one dostępne w ujednoliconej bibliotece APQC (z maja 2016 r.) dla systemu Microsoft Dynamics AX. Aby uzyskać więcej informacji na temat sposobu łączenia systemu pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).
+Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach, które przewidziano jako pomoc dla systemu Dynamics AX w wersji 7.0.0. Jeśli potrzebujesz zlokalizowanych wersji tych przewodników po zadaniach, są one dostępne w ujednoliconej bibliotece APQC (z maja 2016 r.) dla systemu Microsoft Dynamics AX. Aby uzyskać więcej informacji na temat sposobu łączenia systemu pomocy z biblioteką przewodników po zadaniach, zobacz [System Pomocy](help-overview.md).
 
 ### <a name="accounts-payable"></a>Rozrachunki z dostawcami
 
@@ -637,7 +637,7 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Zarządzaj cenami i promocjami                      | Globalna         |
 | Samoobsługa menedżera                               | Globalna         |
 | Przegląd projektu                                  | Globalna         |
-| Instalowanie i konfigurowanie kanałów                      | Globalna         |
+| Instalowanie i konfigurowanie kanałów                      | Globalne         |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

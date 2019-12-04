@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Talent - Funkcje i możliwości aplikacji Attract
+title: Funkcje i możliwości aplikacji Attract
 description: W tym temacie opisano funkcje aplikacji Microsoft Dynamics 365 Talent - Attract służące do zarządzania procesem zatrudniania nowych pracowników.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c8860602bd293c158aa33ea22b5f73de15a6b6f
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4186dddc471de676cc6d26050f16711f581da7ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552078"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833076"
 ---
-# <a name="microsoft-dynamics-365-talent---attract-features-and-capabilities"></a>Microsoft Dynamics 365 Talent - Funkcje i możliwości aplikacji Attract
+# <a name="attract-features-and-capabilities"></a>Funkcje i możliwości aplikacji Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -48,4 +48,4 @@ Aplikacja Attract udostępnia wstępnie zdefiniowany proces rekrutacji zawieraj�
 Gdy tylko kandydat zostanie dodany do funkcji, otrzymuje wiadomość e-mail z łączem do pobrania aplikacji internetowej. Aplikacja przekazuje szczegółowe informacje o funkcji i służy do komunikowania się z zespołem rekrutacyjnym. Kandydaci mogą także za pomocą aplikacji przesłać informacje o swojej dostępności do rozmów kwalifikacyjnych.
 
 ## <a name="analytic-reports"></a>Raporty analityczne
-Zespoły zatrudniające mogą wyświetlać kluczowe wskaźniki procesu zatrudniania dla jednego zadania lub agregowane w ramach wszystkich zadań za pomocą [raportów analitycznych w Attract](analytic-reports.md). Ta funkcja jest obecnie dostępna [w wersji zapoznawczej ](access-preview-feature.md) dla klientów [z Dodatkiem kompleksowej obsługi rekrutacji](attract-comprehensive-hiring.md).
+Zespoły zatrudniające mogą wyświetlać kluczowe wskaźniki procesu zatrudniania dla jednego zadania lub agregowane w ramach wszystkich zadań za pomocą [raportów analitycznych w Attract](analytic-reports.md). Ta funkcja jest obecnie dostępna w wersji [zapoznawczej](access-preview-feature.md) dla klientów [Która wersja aplikacji Microsoft Dynamics 365 Talent - Attract](attract-comprehensive-hiring.md).

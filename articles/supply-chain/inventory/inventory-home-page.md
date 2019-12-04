@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 944d43279a6753b73b9dfe89429b2c9d6c80b5df
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6c286587add6cb38f5fe2728e29fe8b3ac528165
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250790"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814337"
 ---
 # <a name="inventory-management-overview"></a>Omówienie zarządzania zapasami
 
@@ -51,7 +51,7 @@ Poniższa mapa szkoleń przedstawia najważniejsze koncepcje i zadania tworzące
 Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadmap.dynamics.com/), aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane.
 
 ### <a name="inventory-accounting"></a>Księgowanie zapasów 
-Aby dowiedzieć się więcej, zobacz temat [Księgowanie zapasów w module Zarządzanie kosztami](../cost-management/inventory-close.md).
+Aby dowiedzieć się więcej, zobacz [Zamknięcie zapasów](../cost-management/inventory-close.md).
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>Blogi dotyczące produkcji i zarządzania łańcuchem dostaw
 Opinie, wiadomości i inne informacje o module Zarządzaniu zapasami i innych rozwiązaniach można znaleźć w [blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) oraz [blogu zespołu ds. badań i rozwoju modułu Zarządzanie łańcuchem dostaw systemu Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm).

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3251368e92eb2e24eb9e64bb615027d038ff660
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 11f6c96cc07c63d2c0c6a94385916b3396a77ed5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251092"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814980"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie
 
@@ -32,7 +32,8 @@ ms.locfileid: "2251092"
 
 W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w usłudze Dynamics 365 Supply Chain Management. 
 
-**Uwaga:** Ten temat dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Magazynowanie to aplikacja umożliwiająca wykonywanie zadań magazynowych. Można zdefiniować i skonfigurować nazwy pól używanych w aplikacji, a także skonfigurować priorytety, do których te nazwy pól powinny być przypisane. W tym temacie wyjaśniono sposób definiowania i konfigurowania nazw i priorytetów tych pól aplikacji magazynowej oraz ich używanie w aplikacji Magazynowanie. Aby uzyskać szczegółowe informacje dotyczące konfigurowania połączenia z aplikacją Magazynowanie, skorzystaj z samouczka [Instalowanie i konfigurowanie aplikacji Magazynowanie](install-configure-warehousing-app.md).
+> [!NOTE]
+> Ten temat dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Magazynowanie to aplikacja umożliwiająca wykonywanie zadań magazynowych. Można zdefiniować i skonfigurować nazwy pól używanych w aplikacji, a także skonfigurować priorytety, do których te nazwy pól powinny być przypisane. W tym temacie wyjaśniono sposób definiowania i konfigurowania nazw i priorytetów tych pól aplikacji magazynowej oraz ich używanie w aplikacji Magazynowanie. Aby uzyskać szczegółowe informacje dotyczące konfigurowania połączenia z aplikacją Magazynowanie, skorzystaj z samouczka [Omówienie instalowania i konfiguracji aplikacji Magazynowanie](install-configure-warehousing-app.md).
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurowanie nazw pól w aplikacji magazynowej
 
@@ -142,4 +143,4 @@ Pozostałe metadane, na przykład Lokalizacja, nie będą wyświetlane na stroni
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Instalowanie i konfigurowanie Microsoft Dynamics 365 for Finance and Operations — magazynowanie](install-configure-warehousing-app.md)
+[Omówienie instalowania i konfiguracji aplikacji Magazynowanie](install-configure-warehousing-app.md)

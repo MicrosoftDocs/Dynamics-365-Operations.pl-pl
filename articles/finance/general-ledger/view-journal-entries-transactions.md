@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07774e607abc90951c27100e749645d8a476b6a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 79329b60f0aa7ce196b55a1483b07f8b9ea7e3cf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175573"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771712"
 ---
 # <a name="view-journal-entries-and-transactions"></a>Wyświetlanie wpisów w arkuszu i transakcji
 
@@ -54,10 +54,10 @@ Oprócz raportów finansowych można używać następujących raportów księgow
 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-- [Salda głównego konta księgowego](general-ledger-account-balances.md) 
+- [Salda kont księgi głównej](general-ledger-account-balances.md) 
 - [Eksplorator źródeł księgowania](../accounts-payable/accounting-source-explorer.md)
-- [Raporty finansowe](financial-reporting-getting-started.md)
-- [Wyświetlanie wpisów w arkuszu](tasks/view-journal-entries-or-transactions.md)
+- [Omówienie raportowania finansowego](financial-reporting-getting-started.md)
+- [Wyświetlanie wpisów w arkuszu lub transakcji](tasks/view-journal-entries-or-transactions.md)
 
 
 

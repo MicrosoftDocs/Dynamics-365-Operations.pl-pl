@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee68190b117b974ff4131f5d2237d138cac1fda3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7d91ccc6a3ebaff220c8a876944b90d910399660
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552283"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814036"
 ---
 # <a name="create-service-orders-automatically"></a>Automatyczne tworzenie zleceń serwisowych    
 

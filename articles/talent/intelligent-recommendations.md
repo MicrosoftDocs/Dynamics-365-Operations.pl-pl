@@ -1,6 +1,6 @@
 ---
-title: Inteligentne rekomendacje
-description: W tym temacie wyjaśniono, jak można wykorzystać aparat uczenia maszynowego do formułowania zaleceń dotyczących funkcji i kandydatów na funkcje.
+title: Inteligentne rekomendacje w aplikacji Attract
+description: W tym artykule wyjaśniono, jak można wykorzystać aparat uczenia maszynowego do formułowania zaleceń dotyczących stanowisk pracy i kandydatów na stanowiska w Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/16/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: fa06821c98e42dcd8590a764db9beb4a5c33fca2
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741759"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832798"
 ---
-# <a name="intelligent-recommendations"></a>Inteligentne rekomendacje
+# <a name="intelligent-recommendations-in-attract"></a>Inteligentne rekomendacje w aplikacji Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Aparat uczenia maszynowego może pomagać osobom rekrutującym i menedżerom zatrudniającym w szybkim identyfikowaniu najlepszych kandydatów na określone stanowiska. Może także pomagać prospektom znajdować stanowiska, które najlepiej pasują do ich profilu i zainteresowań. Wraz z używaniem tych funkcji i przekazywaniem informacji zwrotnych jakość rekomendacji będzie się poprawiać.
 
 > [!NOTE] 
 > - Funkcje inteligentnych rekomendacji są dostępne tylko po zainstalowaniu [dodatku kompleksowej obsługi rekrutacji](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Funkcje wymienione w tym temacie są dostępne w ramach wydania wersji zapoznawczej. Zawartość i funkcje mogą ulec zmianie. Aby użyć tej funkcji, poproś administratora o włączenie jej za pomocą opcji **Centrum administracyjne** w Attract. Ustaw parametry **Rekomendacja kandydata**, **Rekomendacja funkcji** i **Rekomendacja prospektów** jako **Wł**. Aby uzyskać więcej informacji, zobacz [Dostęp do funkcji w wersji zapoznawczej w aplikacji Talent](./access-preview-feature.md). 
+> - Funkcje wymienione w tym temacie są dostępne w ramach wydania wersji zapoznawczej. Zawartość i funkcje mogą ulec zmianie. Aby użyć tej funkcji, poproś administratora o włączenie jej za pomocą opcji **Centrum administracyjne** w Attract. Ustaw parametry **Rekomendacja kandydata**, **Rekomendacja funkcji** i **Rekomendacja prospektów** jako **Wł**. Aby uzyskać więcej informacji, zobacz [Dostęp do funkcji w wersji zapoznawczej w Microsoft Dynamics 365 Talent](./access-preview-feature.md). 
 
 
 ## <a name="candidate-recommendations"></a>Rekomendacje kandydatów

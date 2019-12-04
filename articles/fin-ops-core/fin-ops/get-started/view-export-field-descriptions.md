@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 974f99632738cfc6eec5ff85965f4e9f9608a8b5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3e110c7fe6881825fe2b075c1795bc4f7e938da4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179527"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811514"
 ---
 # <a name="view-and-export-field-descriptions"></a>Wyświetlanie i eksportowanie opisów pól
 
@@ -35,7 +35,7 @@ Niektóre bardziej skomplikowane pola mają opisy pól. Opisy te są wyświetlan
 
 Nie wszystkie strony mają opisy pól. Chcemy podać opisy jedynie dla bardziej złożonych pól, a nie tych, których funkcja jest oczywista. Dlatego niektóre strony nie mają żadnych opisów pól, niektóre mają kilka opisów, za to te bardziej złożone strony, np. wiele stron parametrów, zawierają wiele opisów.
 
-Jeśli masz dostęp do środowiska programistycznego, istnieje możliwość dodawania nowych opisów pól i modyfikowania istniejących opisów. Na przykład do opisu pola można dodać informacje specyficzne dla firmy. Aby uzyskać więcej informacji, zobacz [Dostosowywanie pomocy pól](../../dev-itpro/user-interface/customize-field-help.md).
+Jeśli masz dostęp do środowiska programistycznego, istnieje możliwość dodawania nowych opisów pól i modyfikowania istniejących opisów. Na przykład do opisu pola można dodać informacje specyficzne dla firmy. Aby uzyskać więcej informacji, zobacz [Dostosowywanie opisu pól](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Wyświetlanie opisów pól w interfejsie użytkownika
 
@@ -107,4 +107,4 @@ Aby uzyskać informacje o różnych sposobach znajdowania stron, zobacz sekcję 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Dostosowywanie pomocy pól](../../dev-itpro/user-interface/customize-field-help.md)
+[Dostosowywanie opisów pól](../../dev-itpro/user-interface/customize-field-help.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8b9fa6b8d5109f873c784d384d49f685f94da228
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 747922294eaf971795177beeb73839d453f6475a
+ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622775"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "2830193"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Integracja między programami Dynamics 365 Talent a Dynamics 365 Finance — FAQ
 
@@ -48,7 +48,7 @@ Szablony są punktem początkowym. Można utworzyć własny szablon, ale szablon
 
 Wymiary finansowe nie są obecnie w Common Data Service i w związku z tym nie są częścią szablonu domyślnego. Ta jednostka jest planowana, ale aktualnie nie wiadomo, kiedy zostanie udostępniona.
 
-Dla danych, które znajdują się w Finance, ale nie istnieje w Talent, należy połączyć dwa systemy ze sobą za pomocą opcji **Skonfiguruj łącza** w programie Talent. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania powiązań między programami Talent i Finance, zobacz [Nowości i zmiany w rozwiązaniu w Dynamics 365 Talent: Core HR Core HR (31 października 2018)](whats-new-talent-october-31.md).
+Dla danych, które znajdują się w Finance, ale nie istnieje w Talent, należy połączyć dwa systemy ze sobą za pomocą opcji **Skonfiguruj łącza** w programie Talent. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania powiązań między programami Talent i Finance, zobacz [Nowości i zmiany w rozwiązaniu w Dynamics 365 Talent - Core HR (31 października 2018))](whats-new-talent-october-31.md).
 
 ![Mapowanie wymiarów finansowych](media/MapFinancialDimensions.png)
 
@@ -69,7 +69,7 @@ Za pomocą opcji „Zaawansowane zapytanie” można filtrować i przekształca�
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Czy mogę określić, które pola należy wysłać do programu Finance w odniesieniu do określonej jednostki?
 
 Pola można dodawać i usuwać z zadania integracji. Nie wszystkie pola danych, które istnieją w jednostce Common Data Service, będą wypełnione dla Core HR.
-Dodatkowe dane mogą być wprowadzane prze PowerApps.
+Dodatkowe dane mogą być wprowadzane prze Power Apps.
 
 ![Dodawanie lub usuwanie pól zadania integracji](media/SpecifyFieldsIncludedInIntegration.png)
 
@@ -119,19 +119,19 @@ Prześledź czas z historii wykonywania Integratora danych i poszukaj projektu z
 
 1. Zapisz indeks zadania z Integratora danych (w tym przykładzie jest to 9)
 
-![Zapisz indeks zadania z integratora danych](media/CaptureTaskIndex.png)
+    ![Zapisz indeks zadania z integratora danych](media/CaptureTaskIndex.png)
 
 2. Śledź czasu wykonania projektu.
 
-![Śledź czasu wykonania projektu.](media/CaptureTimeOfExecution.png)
+    ![Śledź czasu wykonania projektu.](media/CaptureTimeOfExecution.png)
 
 3. W Finance Zidentyfikuj indeks-1. W tym przykładzie projekt z sufiksem „8” i godzina wykonania projektu z indeksem „0” pasuje do czasu wykonania w kroku 2.
 
-![Zidentyfikuj indeks](media/IdentifyIndex.png)
+    ![Zidentyfikuj indeks](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-talent-and-finance-i-dont-see-my-talent-data-in-finance-what-do-i-do"></a>Po integracji Talent i Finance nie widzę danych Talent w Finance . Co należy zrobić?
 
-Integracja do Finance jest procesem dwuetapowym. Najpierw sprawdź, czy dane Talent są zaktualizowane i dostępne w Common Data Service. Ta synchronizacja odbywa się niemal w czasie rzeczywistym i można ją sprawdzić za pomocą PowerApps, sprawdzając dane w jednostce danych.
+Integracja do Finance jest procesem dwuetapowym. Najpierw sprawdź, czy dane Talent są zaktualizowane i dostępne w Common Data Service. Ta synchronizacja odbywa się niemal w czasie rzeczywistym i można ją sprawdzić za pomocą Power Apps, sprawdzając dane w jednostce danych.
 
 ![Dane w Common Data Service](media/DataInCDS.png)
 
@@ -168,7 +168,7 @@ Odśwież jednostki danych w Finance, przechodząc do **Zarządzanie danymi \> P
 
   - [Zarządzanie błędami integratora danych i rozwiązywanie problemów](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Odpowiadanie na żądania DSR dla dzienników generowanych przez system w PowerApps, Microsoft Flow i Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Odpowiadanie na żądania DSR dla dzienników generowanych przez system w Power Apps, Microsoft Power Automate i Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Zarządzanie danymi:
 

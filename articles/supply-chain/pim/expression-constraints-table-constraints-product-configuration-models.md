@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88d52031f4c916f5ec3e970f38864977e69a9d9a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 91eb5f166633f5be0ad68c039d3e538e4060ea0b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546272"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815072"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Ograniczenia wyrażenia i ograniczenia tabeli w modelach konfiguracji produktu.
 
@@ -248,9 +248,9 @@ Nie można używać zarezerwowanych słów kluczowych jako nazwy zamiennej dla a
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Tworzenie ograniczenia wyrażenia (przewodnik zadania)](tasks/add-expression-constraint-product-configuration-model.md)
+[Tworzenie ograniczenia wyrażenia](tasks/add-expression-constraint-product-configuration-model.md)
 
-[Dodawanie obliczenia do modelu konfiguracji produktu (przewodnik zadania)](tasks/add-calculation-product-configuration-model.md)
+[Dodawanie obliczenia do modelu konfiguracji produktu](tasks/add-calculation-product-configuration-model.md)
 
 
 

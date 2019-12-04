@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2becf8213cfa46e2c0cf0c553f0b5e503dfc3704
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570247"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771829"
 ---
 # <a name="general-journal-processing"></a>Przetwarzanie arkuszy finansowych
 
@@ -85,7 +85,7 @@ Konfiguracja konta głównego oferuje wiele opcji przetwarzania arkusza finansow
 Struktury księgowania i struktury zaawansowanych reguł są bardzo ważne do zagwarantowania, że dane, które są wymagane do raportowania finansowego i śledzenia wydajności, są rejestrowane przy przetwarzaniu arkusza finansowego i wszelkich dokumentów. Struktury księgowania i struktury reguły zaawansowanych pozwalają dostosować sposób wprowadzania danych. Można zezwolić na wprowadzanie danych tylko dla wymiarów finansowych, które są odpowiednie w poszczególnych sytuacjach, a można też wymuszać wymaganie, by rejestrowane były tylko dane wymagane i rzetelne.
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
-- [Planowanie: Obsługa planu kont](plan-chart-of-accounts.md). 
+- [Planowanie planu kont](plan-chart-of-accounts.md) 
 - [Tworzenie reguł zaawansowanych dla arkuszy](tasks/create-advanced-rules-journals.md)
 - [Tworzenie wpisu w arkuszu za pomocą szablonu](tasks/create-journal-entry-template.md)
 - [Tworzenie i sprawdzanie arkuszy](tasks/create-validate-journals.md)

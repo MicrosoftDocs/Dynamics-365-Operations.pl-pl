@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba38f9c43fed81768155a27dda88a4bfb4a7828e
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: c2d51c659d9d06f075458359d81de978e7a6d14b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653563"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814405"
 ---
 # <a name="quality-management-overview"></a>Omówienie zarządzanie jakością
 
@@ -610,4 +610,4 @@ Należy określić skojarzenie jakości dla każdego odchylenia w procesie bizne
 
 [Procesy zarządzania jakością](quality-management-processes.md)
 
-[Włączanie zarządzania niezgodnościami](enable-nonconformance-management.md)
+[Zarządzanie brakiem zgodności](enable-nonconformance-management.md)

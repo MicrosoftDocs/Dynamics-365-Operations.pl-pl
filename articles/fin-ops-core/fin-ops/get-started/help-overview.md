@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef630ca56888eb61ab0519a29c89c3ccb2f24a87
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537839"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811679"
 ---
 # <a name="help-system"></a>System Pomocy
 
@@ -82,7 +82,7 @@ Więcej informacji zawiera [podręcznik dla współautorów](https://docs.micros
 
 Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w zadaniach i procesach biznesowych. Przewodnik można otworzyć (i odtworzyć) z okienka pomocy. Po kliknięciu przewodnika po zadaniu okienko pomocy pokaże dokładne instrukcje wykonania zadania. Dostępne są przetłumaczone przewodniki po zadaniach.
 
-Firma Microsoft dostarczyła biblioteki przewodników po zadaniach dla Dynamics 365 for Finance and Operations wydanych do grudnia 2017 roku włącznie. Sekcja [Uzyskiwanie dostępu do przewodników po zadaniach z okienka pomocy](help-overview.md#accessing-task-guides-from-the-help-pane) opisuje sposób znajdowania odpowiednich przewodników po zadaniach dla używanego produktu.
+Firma Microsoft dostarczyła biblioteki przewodników po zadaniach dla Dynamics 365 for Finance and Operations wydanych do grudnia 2017 roku włącznie. Sekcja [System pomocy](help-overview.md#accessing-task-guides-from-the-help-pane) opisuje sposób znajdowania odpowiednich przewodników po zadaniach dla używanego produktu.
 
 ![Przewodnik po zadaniu w widoku do czytania](./media/task-guide-ops.png)
 
@@ -93,7 +93,7 @@ Aby rozpocząć korzystanie z interaktywnego przewodnika, kliknij opcję **Uruch
 > [!IMPORTANT]
 > Dane wprowadzone podczas odtwarzania przewodnika po zadaniu są naprawdę zapisywane. Jeśli pracujesz w środowisku produkcyjnym, dane zostaną wprowadzone w firmie, która jest aktualnie używana.
 
-Program Rejestrator zadań umożliwia tworzenie własnych niestandardowych zadań. Aby uzyskać więcej informacji, zobacz [Jak utworzyć dokumenty lub szkolenia za pomocą nagrań zadań](../../dev-itpro/user-interface/task-recorder-training-docs.md).
+Program Rejestrator zadań umożliwia tworzenie własnych niestandardowych zadań. Aby uzyskać więcej informacji, zobacz [Jak utworzyć dokumenty lub szkolenia za pomocą Rejestratora zadań](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## <a name="in-product-help"></a>Pomoc w produkcie
 
@@ -144,13 +144,12 @@ Przetłumaczone przewodniki po zadaniach są wydawane w bibliotekach z tytułem 
 
 Można utworzyć pomoc dla użytkowników przez tworzenie niestandardowych przewodników po zadaniach lub łączenie własnej witryny z okienkiem pomocy. Aby uzyskać szczegółowe informacje, zobacz:
 
-- [Jak utworzyć nagrania zadań do użycia w dokumentacji lub na szkoleniach](../../dev-itpro/user-interface/task-recorder.md).
+- [Zasoby rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md).
 - [Utwórz Pomoc niestandardową (oficjalny dokument)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Rejestrator zadań](../../dev-itpro/user-interface/task-recorder.md)
-- [Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań](../../dev-itpro/user-interface/task-recorder.md)
+- [Zasoby rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md)
 
 W poniższej tabeli wymieniono nasze witryny internetowe. Witryny z gwiazdką (\*) obok nazwy wymagają logowania przy użyciu konta, które jest skojarzone z planem usługi.
 

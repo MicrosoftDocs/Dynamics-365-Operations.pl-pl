@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d1229c89f43f9ded955dadf2f4d87825c9ab4e71
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182584"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769862"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML (listopad 2016)
 
@@ -36,7 +36,7 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Przekazywanie konfiguracji modelu danych płatności
 1. W okienku nawigacji przejdź do **Moduły > Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne**.
-2. Na liście wybierz dostawcę konfiguracji przykładowej firmy Litware, Inc. Jeśli ten dostawca konfiguracji nie jest widoczny, należy najpierw wykonać procedurę opisaną w [Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego](er-configuration-provider-mark-it-active-2016-11.md).
+2. Na liście wybierz dostawcę konfiguracji przykładowej firmy Litware, Inc. Jeśli ten dostawca konfiguracji nie jest widoczny, należy najpierw wykonać procedurę opisaną w [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](er-configuration-provider-mark-it-active-2016-11.md).
 3. Wybierz **Aktywuj**.
 4. Wybierz **Repozytoria**. Wybierz repozytorium typu zasobów operacyjnych, jeśli jest dostępne. Jeśli jej dostępne, pomiń poniższe kroki tworzenia nowego repozytorium.  
 5. Wybierz przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.

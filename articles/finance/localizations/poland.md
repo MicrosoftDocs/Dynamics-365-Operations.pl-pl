@@ -16,12 +16,12 @@ ms.search.region: Poland
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2073d281c63849f184b8163aa4196049fd0b8943
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 258baca60be63cedf2979aa6a91c9868744ab090
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175164"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770398"
 ---
 # <a name="poland-overview"></a>Polska — omówienie
 
@@ -33,10 +33,10 @@ Ten temat zawiera łącza do zasobów dokumentacji dla Polski.
 - [Noty korygujące](emea-pol-correction-notes.md)
 - [Numerowanie zduplikowanych faktur sprzedaży](emea-pol-sales-invoice-duplicates-numbering.md)
 - [Amortyzacja środka trwałego](emea-pol-fixed-assets-depreciation.md)
-- [Rozszerzenie funkcjonalności likwidacji środków trwałych](emea-pol-fixed-asset-disposal-functionality-extension.md)
-- [Przeszacowanie w walucie obcej](emea-foreign-currency-revaluation.md)
+- [Likwidacja środka trwałego](emea-pol-fixed-asset-disposal-functionality-extension.md)
+- [Przeszacowanie w walucie obcej dla kont bankowych](emea-foreign-currency-revaluation.md)
 - [Opakowanie zwrotne](emea-pol-returnable-packages.md)
 - [Raporty podatków](emea-pol-sales-tax-reports.md)
-- [Standardowy plik audytu](emea-pol-standard-audit-file-saf.md)
+- [Standardowy plik audytu (SAF)](emea-pol-standard-audit-file-saf.md)
 - [Odsetki podatkowe i rynkowe](emea-pol-interest-calculation.md)
 - [Zestawienie obrotów i sald](emea-pol-turnover-balances-statement.md)

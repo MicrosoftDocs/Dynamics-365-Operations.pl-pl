@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 96cd2fc988df11c616faf06cf0905acd6b3d6dcc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248987"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813530"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Współpraca z dostawcami za pomocą portalu dostawców
 
@@ -31,7 +31,7 @@ ms.locfileid: "2248987"
 
 W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą używać portalu dostawców do współpracy z dostawcami zewnętrznymi w trakcie procesu potwierdzenia zamówień zakupu. Informacje te dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku.
 
-Informacje zawarte w tym temacie dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku. Aby uzyskać więcej informacji o funkcjonalności nowego portalu współpracy z dostawcami, zobacz [Używanie portalu współpracy z dostawcami do obsługi współpracy z dostawcami zewnętrznymi](vendor-collaboration-work-external-vendors.md).  
+Informacje zawarte w tym temacie dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku. Aby uzyskać więcej informacji o funkcjonalności nowego portalu współpracy z dostawcami, zobacz [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-external-vendors.md).  
 
 Portal dostawców jest przeznaczony dla dostawców, którzy nie posiadają interfejsów elektronicznej wymiany danych (EDI) z systemem Microsoft Dynamics AX na potrzeby wymiany informacji o zamówieniach zakupu (PO). Portal umożliwia pracownikom działu zakupów wysyłanie zamówień zakupu do dostawcy, a następnie odbieranie odpowiedzi o potwierdzeniu lub odrzuceniu bezpośrednio w systemie Dynamics AX.  
 
@@ -98,7 +98,7 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Konfiguracja zabezpieczeń dla użytkowników portalu współpracy z dostawcami](configure-security-vendor-portal-users.md)
+[Zabezpieczenia użytkowników portalu dostawców](configure-security-vendor-portal-users.md)
 
 [Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
 

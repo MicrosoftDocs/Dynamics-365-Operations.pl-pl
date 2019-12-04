@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: af2066c095c675aa0003ac2cf66bebba48a1e8a5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9146921c47e89c5895a1a727de874b0ffbc93c37
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190863"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812512"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Tworzenie pól niestandardowych i praca z nimi
 
@@ -103,7 +103,7 @@ Ponadto w przypadku pól list wyboru można zmienić kolejność zestawu prawid�
 
 ### <a name="exposing-custom-fields-on-data-entities"></a>Udostępnianie niestandardowych pól w jednostkach danych
 
-Może być również ważne, aby pola niestandardowe były wyświetlane w jednostkach danych. Jednostki danych są wykorzystywane w funkcji [Otwórz w aplikacji pakietu Office](../../dev-itpro/office-integration/office-integration.md), jak również w scenariuszach importu/eksportu danych.
+Może być również ważne, aby pola niestandardowe były wyświetlane w jednostkach danych. Jednostki danych są wykorzystywane w funkcji [Omówienie integracji danych z pakietem Office](../../dev-itpro/office-integration/office-integration.md), jak również w scenariuszach importu/eksportu danych.
 
 Wykonaj poniższe czynności, aby włączyć wyświetlanie pola niestandardowego w jednostce danych:
 

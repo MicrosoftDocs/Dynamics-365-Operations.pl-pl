@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248941"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813369"
 ---
 # <a name="purchase-agreements"></a>Umowy zakupu
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ten artykuł zawiera informacje o umowach zakupu. Umowa zakupu jest to kontraktem, który zobowiązuje organizację do zakupu określonej ilości lub za określoną kwotę przy użyciu wielu zamówień zakupu na przestrzeni czasu. W zamian za to zobowiązanie kupujący otrzymuje specjalne ceny i rabaty. 
 
@@ -80,6 +81,9 @@ Podczas tworzenia zamówienia zakupu można zastosować do niego umowę zakupu. 
 Umowę zakupu można wybrać tylko przy tworzeniu zamówienia zakupu. Po utworzeniu zamówienia zakupu nie można wybrać umowy zakupu.  
 W niektórych sytuacjach, gdy zamówienia zakupu są tworzone bezpośrednio, można kontrolować, czy usługa Supply Chain Management powinna automatycznie wyszukiwać umowy zakupu. Na przykład można to zrobić podczas automatycznego akceptowania planowanych zamówień zakupu lub tworzenia zamówień zakupu, które są oparte na zamówieniach sprzedaży.
 
+## <a name="matching-policy-on-purchase-agreements"></a>Zasady uzgodnienia dotyczące umów zakupu
+W nagłówku umowy zakupu można zdefiniować zasady dopasowywania wierszy. Ta zasada uzgadniania wierszy będzie uwzględniać zasady uzgadniania wierszy rozrachunków z dostawcami, gdy pole **Zezwalaj na zastępowanie zastąpień zasad** na stronie **parametrów rozrachunków z dostawcami** (w na skróconej karcie **Uzgadnianie cen i ilości**) jest ustawione na wartość **wyższą niż zasady firmy**. Dokumenty odwołujące się do umowy zakupu będą używały zasad uzgodnienia wierszy zdefiniowanych w nagłówku umowy zakupu, chyba że dla odpowiednich zasad zakupu towarów, towarów, dostawców lub kategorii nie zdefiniowano inaczej.
+
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Umowy zakupu i handel międzyfirmowy
 Można utworzyć międzyfirmowe relacje handlowe między kontami dostawcy i kontami odbiorcy, które znajdują się w różnych firmach. Podczas tworzenia zamówienia sprzedaży lub zamówienia zakupu dla jednej ze stron, tworzy się łańcuch zamówień międzyfirmowych. W łańcuchu zamówień zamówienie sprzedaży i zamówienie zakupu są tworzone w odpowiednich firmach.  
 
@@ -93,9 +97,9 @@ Wymiary finansowe można skopiować do nagłówków dokumentu lub pojedynczych w
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Tworzenie umowy zakupu (przewodnik po zadaniu)](tasks/create-purchase-agreement.md)
+[Tworzenie umowy zakupu](tasks/create-purchase-agreement.md)
 
-[Tworzenie zlecenia wydania zakupu na podstawie umowy zakupu (przewodnik po zadaniu)](tasks/create-purchase-release-order-purchase-agreement.md)
+[Tworzenie zlecenia wydania zakupu na podstawie umowy zakupu](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

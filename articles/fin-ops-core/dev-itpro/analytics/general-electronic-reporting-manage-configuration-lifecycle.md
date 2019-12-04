@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6206b3a1ac298af98e4b69b6800b9a493658c4ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ecaeb80f3cda2ee24533ed263df63cc10c5ffc65
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181296"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771103"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Zarządzanie cyklem życia konfiguracji modułu Raportowanie elektroniczne (ER)
 
@@ -33,7 +33,7 @@ W tym temacie opisano sposób zarządzania cyklem życia konfiguracji aparatu ra
 
 ## <a name="overview"></a>Przegląd
 
-Raportowanie elektroniczne (ER) jest aparatem, który obsługuje dokumenty elektroniczne wymagane ustawowo i specyficzne dla danego kraju. Zasadniczo moduł ER umożliwia wykonywanie następujących zadań dla pojedynczego dokumentu elektronicznego. Aby uzyskać więcej szczegółowych informacji, zobacz [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md).
+Raportowanie elektroniczne (ER) jest aparatem, który obsługuje dokumenty elektroniczne wymagane ustawowo i specyficzne dla danego kraju. Zasadniczo moduł ER umożliwia wykonywanie następujących zadań dla pojedynczego dokumentu elektronicznego. Aby uzyskać więcej szczegółowych informacji, zobacz [Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md).
 
 - Projektowanie szablonu dokumentu elektronicznego:
 
@@ -87,4 +87,4 @@ Konfiguracje ER zaprojektowane w środowisku programistycznym można przesłać 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie raportowania elektronicznego](general-electronic-reporting.md)
+[Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md)

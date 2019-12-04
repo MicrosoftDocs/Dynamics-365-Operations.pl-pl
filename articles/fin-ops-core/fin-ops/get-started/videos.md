@@ -3,7 +3,7 @@ title: Pliki wideo
 description: Ta strona zawiera listę filmów instruktażowych i technicznych przygotowanych przez Microsoft, które dotyczą aplikacji Finance and Operations i są dostępne na YouTube i w innych witrynach.
 author: josaw1
 manager: AnnBe
-ms.date: 10/20/2019
+ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: fb14ffa500fcf84030eca075545716a79d7b2b27
-ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
+ms.openlocfilehash: 00ea8de8ba0567e8cc086a754062b3fec9672937
+ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "2635110"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "2781857"
 ---
 # <a name="videos"></a>Pliki wideo 
 
@@ -82,7 +82,7 @@ Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.c
 
 ### <a name="customize-the-app"></a>Dostosuj aplikację
 - [Dodawanie pól niestandardowych](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
-- [Osadź PowerApps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
+- [Osadź Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
 ### <a name="expenses"></a>Koszty
 - [Obsługa wydatków](https://youtu.be/Ocy-MsTvEE0)
@@ -101,6 +101,9 @@ Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.c
 ### <a name="organization-administration"></a>Administrowanie organizacją
 
 - [Zarządzanie dokumentami](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
+
+### <a name="revenue-recognition"></a>Rozpoznawanie przychodu
+- [Jak korzystać z rozpoznawania przychodów](https://youtu.be/v3amIsiqvoo)
 
 ### <a name="tax-engine"></a>Aparat podatków
 

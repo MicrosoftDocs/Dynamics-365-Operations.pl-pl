@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1a96b7cfa57ec72b25f21d94fadb2fbf9bc6ea3b
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: fb5abb983811ce736e3494bc85e8d9b23a2e373c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251369"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814082"
 ---
 # <a name="prospect-to-cash"></a>Od prospekta do gotówki
 
@@ -36,12 +36,12 @@ Aby uzyskać więcej informacji o integracji w procesie Prospekt na gotówkę, o
 
 W bieżącej wersji rozwiązania Prospekt na gotówkę udostępniono następujące typy synchronizacji bezpośredniej:
 
-- [Obsługa kont klientów w programie Sales i synchronizowanie ich bezpośrednio między programem Sales a Supply Chain Management](accounts-template-mapping-direct.md)
-- [Obsługa produktów w Supply Chain Management i synchronizowanie ich bezpośrednio do Sales](products-template-mapping-direct.md)
-- [Obsługa kontaktów w rozwiązaniu Sales i synchronizowanie ich bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Supply Chain Management](contacts-template-mapping-direct.md)
-- [Synchronizowanie nagłówków ofert i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z Sales](sales-quotation-template-mapping-sales-fin.md)
-- [Synchronizowanie zamówień sprzedaży w rozwiązaniu Sales bezpośrednio z Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
-- [Synchronizowanie faktur w rozwiązaniu Supply Chain Management bezpośrednio do Sales](sales-invoice-template-mapping-direct.md)
+- [Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do odbiorców w Supply Chain Management](accounts-template-mapping-direct.md)
+- [Synchronizowanie produktów bezpośrednio z rozwiązania Supply Chain Management do produktów w rozwiązaniu Sales](products-template-mapping-direct.md)
+- [Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Supply Chain Management](contacts-template-mapping-direct.md)
+- [Synchronizowanie nagłówków ofert i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales](sales-quotation-template-mapping-sales-fin.md)
+- [Synchronizowanie zamówień sprzedaży w rozwiązaniu Sales bezpośrednio z elementami w rozwiązaniu Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
+- [Synchronizowanie nagłówków faktur i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-supply-chain-management"></a>Wymagania systemowe dotyczące Supply Chain Management
 Integracja w procesie Prospekt na gotówkę jest obsługiwana w następujących wersjach:

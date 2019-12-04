@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c5d07cb9fbb32a2d9b8be11179dbba00ee73d28b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b5fbe5ffa74953588a2357948319f5cf21f7ad36
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184584"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769768"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wydajność magazynu
 
@@ -78,7 +78,7 @@ Pakiet zawartości **Wydajność magazynu** dla usługi Power BI. Raport zawiera
 | Wydajność wysyłki        | Wysłane wg oddziałów/magazynów              | Procent towarów wysłanych wcześniej, punktualnie lub z opóźnieniem z podziałem na oddziały lub magazyny. |
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Opis modelu danych i obliczeń
-Następujące dane są używane do wypełniania stron raportów w pakiecie zawartości **Wydajność magazynu** dla usługi Power BI. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).
+Następujące dane są używane do wypełniania stron raportów w pakiecie zawartości **Wydajność magazynu** dla usługi Power BI. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Integracja usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).
 
 Następujące najważniejsze zagregowane miary są używane jako podstawa w pakiecie zawartości:
 

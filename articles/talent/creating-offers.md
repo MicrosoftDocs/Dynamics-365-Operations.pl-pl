@@ -1,6 +1,6 @@
 ---
-title: Tworzenie, zatwierdzanie i podpisywanie ofert
-description: W tym temacie szczegółowo wyjaśniono sposób tworzenie, zatwierdzania i podpisywania oferty dla kandydata w Dynamics 365 Talent.
+title: Tworzenie, zatwierdzanie i podpisywanie ofert pracy w aplikacji Attract
+description: W tym temacie szczegółowo wyjaśniono sposób tworzenie, zatwierdzania i podpisywania oferty dla kandydata w Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: acc484ea57ce13d8a7c48a0ca7a2aa8723558dc9
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: dee545b6ca5d2791dea6609b4e1b25eba128f8b7
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551056"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832914"
 ---
-# <a name="create-approve-and-sign-offers"></a>Tworzenie, zatwierdzanie i podpisywanie ofert
+# <a name="create-approve-and-sign-offers-in-attract"></a>Tworzenie, zatwierdzanie i podpisywanie ofert pracy w aplikacji Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W wielu przypadkach przygotowanie pakietu oferty dla kandydata musi się odbyć bardzo szybko.
 Korzystanie z szablonów skonfigurowanych przez administratora aplikacji Attract zmniejszy nakład czasu i pracy, jaki twórcy ofert muszą poświęcić na przygotowywanie i wysyłanie ofert kandydatowi.

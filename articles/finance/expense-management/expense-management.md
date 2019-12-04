@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03d62e3475b4336e86e203bbd347d110704eba07
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7066a021390e3403c4312a7cfe8488a989b9aaa3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179406"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771945"
 ---
 # <a name="expense-management-overview"></a>Omówienie zarządzania wydatkami
 
@@ -37,7 +37,7 @@ Aby uzyskać więcej informacji, zobacz [konfiguracja zarządzania wydatkami](pl
 
 ### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
 
-Przejdź do [Informacji o wersji Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158), aby zobaczyć, jakie nowe funkcje są planowane.
+Przejdź do [Informacji o planach wydań wersji Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158), aby zobaczyć, jakie nowe funkcje są planowane.
 
 #### <a name="expense-report-entry"></a>Wprowadzanie raportu z wydatków
 
@@ -51,7 +51,7 @@ Opinie, wiadomości i inne informacje możesz znaleźć na blogu [Microsoft Dyna
 
 [Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 
-### <a name="task-guides"></a>Przewodniki zadań
+### <a name="task-guides"></a>Przewodniki zadania
 
 Dodatkowa pomoc jest dostępna jako przewodniki po zadaniach. Aby uzyskać dostęp do przewodników po zadaniach, wybierz opcję **Pomoc** na dowolnej stronie.
 

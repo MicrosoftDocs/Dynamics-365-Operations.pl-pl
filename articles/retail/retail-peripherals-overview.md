@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba01f0d16341eb9b0ec0918798e458626b5ef90e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025060"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811200"
 ---
 # <a name="retail-peripherals"></a>Sklepowe urządzenia peryferyjne
 
@@ -35,11 +35,17 @@ W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyj
 
 ### <a name="pos-registers"></a>Rejestry punktu sprzedaży
 
-Nawigacja: Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Rejestry**. Kasa w punkcie sprzedaży (POS) to jednostka używana do definiowania właściwości konkretnego wystąpienia punktu sprzedaży. Cechy te obejmują profil sprzętu lub konfigurację urządzeń peryferyjnych sieci sprzedaży, które będą używane w kasie, sklep, do którego kasa jest mapowana, oraz wizualne środowisko użytkownika logującego się w tej kasie.
+Nawigacja: Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Rejestry**. 
+
+Kasa w punkcie sprzedaży (POS) to jednostka używana do definiowania właściwości konkretnego wystąpienia punktu sprzedaży. Cechy te obejmują profil sprzętu lub konfigurację urządzeń peryferyjnych sieci sprzedaży, które będą używane w kasie, sklep, do którego kasa jest mapowana, oraz wizualne środowisko użytkownika logującego się w tej kasie.
 
 ### <a name="devices"></a>Urządzenia
 
-Nawigacja: Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Urządzenia**. Urządzenie to jednostka, która reprezentuje fizyczne wystąpienie urządzenia zmapowanego do kasy POS. Po utworzeniu urządzenie jest mapowane do kasy POS. Jednostka urządzenia śledzi informacje o tym, kiedy kasa punktu sprzedaży jest aktywowana, jaki typ klienta jest używany i jaki pakiet aplikacji został wdrożony na konkretnym urządzeniu. Urządzenia mogą być mapowane do następujących typów aplikacji: Retail Modern POS, Retail Cloud POS, Retail Modern POS dla systemu Windows Phone, Retail Modern POS dla systemu Android i Retail Modern POS dla systemu iOS.
+Nawigacja: Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Urządzenia**. 
+
+Urządzenie to jednostka, która reprezentuje fizyczne wystąpienie urządzenia zmapowanego do kasy POS. Po utworzeniu urządzenie jest mapowane do kasy POS. Jednostka urządzenia śledzi informacje o tym, kiedy kasa punktu sprzedaży jest aktywowana, jaki typ klienta jest używany i jaki pakiet aplikacji został wdrożony na konkretnym urządzeniu. 
+
+Urządzenia mogą być mapowane do następujących typów aplikacji: Retail Modern POS, Retail Cloud POS, Retail Modern POS dla systemu Windows Phone, Retail Modern POS dla systemu Android i Retail Modern POS dla systemu iOS.
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -63,11 +69,15 @@ Urządzenia peryferyjne punktu sprzedaży to urządzenia, które wspierają funk
 
 ### <a name="hardware-station"></a>Hardware Station
 
-Nawigacja: Kliknij kolejno opcje **Handel detaliczny** &gt; **Kanały** &gt; **Sklepy sieci sprzedaży** &gt; **Wszystkie sklepy sieci sprzedaży**. Zaznacz sklep i kliknij skróconą kartę **Stacje sprzętowe**. Ustawienie **Stacja sprzętowa** to ustawienie na poziomie kanału służące do definiowania wystąpień, w których zostanie wdrożona logika urządzeń peryferyjnych sieci sprzedaży. To ustawienie na poziomie kanału jest używane do określenia charakterystyki stacji sprzętowej. Służy również do wyświetlenia listy stacji sprzętowych, które są dostępne dla wystąpienia programu Modern POS w danym sklepie. Stacja sprzętowa jest wbudowana w programie Modern POS dla systemu Windows. Stacje sprzętowe mogą również być instalowane niezależnie jako autonomiczne wystąpienia program Microsoft Internet Information Services (IIS). W takim przypadku są dostępne przez sieć.
+Nawigacja: Kliknij kolejno opcje **Handel detaliczny** &gt; **Kanały** &gt; **Sklepy sieci sprzedaży** &gt; **Wszystkie sklepy sieci sprzedaży**. 
+
+Zaznacz sklep i kliknij skróconą kartę **Stacje sprzętowe**. Ustawienie **Stacja sprzętowa** to ustawienie na poziomie kanału służące do definiowania wystąpień, w których zostanie wdrożona logika urządzeń peryferyjnych sieci sprzedaży. To ustawienie na poziomie kanału jest używane do określenia charakterystyki stacji sprzętowej. Służy również do wyświetlenia listy stacji sprzętowych, które są dostępne dla wystąpienia programu Modern POS w danym sklepie. Stacja sprzętowa jest wbudowana w programie Modern POS dla systemu Windows. Stacje sprzętowe mogą również być instalowane niezależnie jako autonomiczne wystąpienia program Microsoft Internet Information Services (IIS). W takim przypadku są dostępne przez sieć.
 
 ### <a name="hardware-profile"></a>Profil sprzętu
 
-Nawigacja: Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile sprzętu**. Profil sprzętu to lista urządzeń skonfigurowanych dla kasy w punkcie sprzedaży lub stacji sprzętowej. Profil sprzętu można mapować bezpośrednio do kasy w punkcie sprzedaży lub do stacji sprzętowej.
+Nawigacja: Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile sprzętu**. 
+
+Profil sprzętu to lista urządzeń skonfigurowanych dla kasy w punkcie sprzedaży lub stacji sprzętowej. Profil sprzętu można mapować bezpośrednio do kasy w punkcie sprzedaży lub do stacji sprzętowej.
 
 ## <a name="devices-classes"></a>Klasy urządzeń
 Urządzenia peryferyjne sieci sprzedaży są zwykle podzielone na klasy. W tej sekcji opisano i ogólnie omówiono urządzenia obsługiwane przez program Modern POS.
@@ -206,7 +216,7 @@ Aby uzyskać więcej informacji, zobacz [Konfiguracja i instalacja programu Reta
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Instalacja i konfiguracja programu Modern POS for Windows
 
-Aby uzyskać więcej informacji, zobacz [Konfiguracja i instalacja programu Retail Modern POS](retail-modern-pos-device-activation.md).
+Aby uzyskać więcej informacji, zobacz [Konfiguracja, instalacja i aktywacja Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>Instalacja i konfiguracja urządzenia OPOS
 
@@ -523,7 +533,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfiguracja dla obsługiwanych scenariuszy
 
-Aby uzyskać więcej informacji dotyczących sposobu tworzenia profili sprzętu, zobacz [Definiowania klientów w kanałach, w tym kas i stacji sprzętowych, oraz zarządzanie nimi](define-maintain-channel-clients-registers-hw-stations.md).
+Aby uzyskać więcej informacji na temat tworzenia profilów sprzętowych, odwiedź sekcję [Łączenie urządzeń peryferyjnych z punkt sprzedaży (POS)](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
 > W programie Retail w wersji 1611 profil stacji sprzętowej nie jest już używany. Atrybuty uprzednio skonfigurowane w profilu stacji sprzętowej są teraz częścią samej stacji sprzętowej.
@@ -567,7 +577,7 @@ Tej konfiguracji można używać na wszystkich urządzeniach klienckich programu
 5. Wybierz harmonogram dystrybucji **1090**, aby zsynchronizować nowy profil sprzętu ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 6. Wybierz harmonogram dystrybucji **1040**, aby zsynchronizować nową stację sprzętową ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 7. Zainstaluj stację sprzętową. Aby uzyskać więcej informacji dotyczących sposobu instalowania stacji sprzętowej, zobacz [Konfiguracja i instalacja programu Retail hardware station](retail-hardware-station-configuration-installation.md).
-8. Zainstaluj i aktywuj aplikację Modern POS. Aby uzyskać więcej informacji dotyczących sposobu instalowania aplikacji Modern POS, zobacz [Konfiguracja i instalacja programu Retail Modern POS](retail-modern-pos-device-activation.md).
+8. Zainstaluj i aktywuj aplikację Modern POS. Aby uzyskać więcej informacji dotyczących sposobu instalowania aplikacji Modern POS, zobacz [Konfigurowanie, instalowanie i aktywacja Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9. Zaloguj się w aplikacji Modern POS i wybierz opcję **Wykonaj operacje bez użycia szuflady**.
 10. Uruchom operację **Zarządzaj stacjami sprzętowymi**.
 11. Kliknij przycisk **Zarządzaj**.
@@ -596,7 +606,7 @@ Tej konfiguracji można używać na wszystkich urządzeniach klienckich programu
 6. Wybierz harmonogram dystrybucji **1090**, aby zsynchronizować nowy profil sprzętu ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 7. Wybierz harmonogram dystrybucji **1040**, aby zsynchronizować nową stację sprzętową ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 8. Zainstaluj stację sprzętową na każdym komputerze hosta skonfigurowanym w krokach 2 i 3. Aby uzyskać więcej informacji dotyczących sposobu instalowania stacji sprzętowej, zobacz [Konfiguracja i instalacja programu Retail hardware station](retail-hardware-station-configuration-installation.md).
-9. Zainstaluj i aktywuj aplikację Modern POS. Aby uzyskać więcej informacji dotyczących sposobu instalowania aplikacji Modern POS, zobacz [Konfiguracja i instalacja programu Retail Modern POS](retail-modern-pos-device-activation.md).
+9. Zainstaluj i aktywuj aplikację Modern POS. Aby uzyskać więcej informacji dotyczących sposobu instalowania aplikacji Modern POS, zobacz [Konfigurowanie, instalowanie i aktywacja Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Zaloguj się w aplikacji Modern POS i wybierz opcję **Wykonaj operacje bez użycia szuflady**.
 11. Uruchom operację **Zarządzaj stacjami sprzętowymi**.
 12. Kliknij przycisk **Zarządzaj**.
@@ -655,7 +665,7 @@ Zgodnie z obowiązującymi standardami zabezpieczeń w środowisku produkcyjnym 
 
 ## <a name="peripheral-simulator"></a>Symulator urządzeń peryferyjnych
 
-Aby uzyskać więcej informacji, zobacz [Symulator urządzeń peryferyjnych sieci sprzedaży](dev-itpro/retail-peripheral-simulator.md).
+Aby uzyskać więcej informacji, zobacz [Symulator urządzeń peryferyjnych dla Retail](dev-itpro/retail-peripheral-simulator.md).
 
 ## <a name="microsoft-tested-peripheral-devices"></a>Urządzenia peryferyjne przetestowane przez Microsoft
 
@@ -896,4 +906,4 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Symulator sklepowych urządzeń peryferyjnych](dev-itpro/retail-peripheral-simulator.md)
+[Symulator urządzeń peryferyjnych dla modułu Handel detaliczny](dev-itpro/retail-peripheral-simulator.md)

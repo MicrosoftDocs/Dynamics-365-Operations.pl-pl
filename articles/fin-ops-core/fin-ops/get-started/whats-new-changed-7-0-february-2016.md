@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e39328c73fe3dd101e32ec04d895483335184ae7
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 54f07e7037f818862db4a44f9ad3e3fe8545f6f9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627658"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811489"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nowości i zmiany w systemie Dynamics AX 7.0 (luty 2016)
 
@@ -322,7 +322,7 @@ Ta funkcja działa niezależnie od metod wyceny, które są przypisane do produk
 <tr>
 <td>Dostęp do pomocy dla procedur (przewodniki po zadaniach) i omówień różnych elementów systemu za pomocą przycisku <strong>Pomoc</strong>.</td>
 <td>System AX 2012 wskazuje tematy HTML, które są przechowywane na lokalnym serwerze sieciowym. Klienci i partnerzy można utworzyć swoją własną bibliotekę tematów pomocy.</td>
-<td>System pomocy w bieżącej wersji systemu Dynamics AX służy do wyświetlania przewodników po zadaniach zapisanych w Microsoft Dynamics Lifecycle Services (LCS) BPM. System pomocy wyświetla też tematy z witryny dokumentów firmy Microsoft. Aby uzyskać więcej informacji, zobacz <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Pomoc systemu Dynamics AX — wprowadzenie</a> i <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Nowe przewodniki po zadaniach (luty 2016 r.)</a>.</td>
+<td>System pomocy w bieżącej wersji systemu Dynamics AX służy do wyświetlania przewodników po zadaniach zapisanych w Microsoft Dynamics Lifecycle Services (LCS) BPM. System pomocy wyświetla też tematy z witryny dokumentów firmy Microsoft. Aby uzyskać więcej informacji, zapoznaj się z <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">System Pomocy</a> i <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">nowe przewodniki po zadaniach (luty 2016)</a>.</td>
 <td>Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w zadaniach i procesach biznesowych. Przewodniki po zadaniach udostępnione przez Microsoft można pobrać i dostosować. Temat przedstawia szybsze i bardziej elastyczne sposoby tworzenia, dostarczania i aktualizowania dokumentacji produktu. To pomaga zagwarantować, że użytkownik ma dostęp do najnowszych informacji technicznych.</td>
 </tr>
 </tbody>
@@ -1031,6 +1031,6 @@ Nie dodano żadnych nowych funkcji.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Nowości i zmiany](whats-new-changed.md)
+[Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md)
 
 [Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)

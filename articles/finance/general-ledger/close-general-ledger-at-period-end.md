@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7eca533ed1621ec3507d8510f75842c0f0165275
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5cabdce5e23704fbf12e631a138235174ebc5772
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186746"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770788"
 ---
 # <a name="close-the-general-ledger-at-period-end"></a>Zamknięcie księgi głównej na koniec okresu
 
@@ -48,9 +48,9 @@ W obszarze roboczym Zamknięcie okresu obrachunkowego można porządkować i śl
 
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
-- [Obszar roboczy zamknięcia okresu obrachunkowego](financial-period-close-workspace.md) 
+- [Obszar roboczy Zamknięcie okresu obrachunkowego](financial-period-close-workspace.md) 
 - [Zamknięcie na koniec roku](Year-end-close.md)  
-- [Masowe zamykanie okresów obrachunkowych](tasks/mass-financial-period-close.md)
+- [Zbiorowe zamykanie okresów obrachunkowych](tasks/mass-financial-period-close.md)
 
 
 

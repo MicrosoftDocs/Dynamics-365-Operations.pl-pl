@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 159320dcbdf257862378b347172ef71832e293dc
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 496603731eb343a64be1e8d9482ac8d42e6aa79a
+ms.sourcegitcommit: 7ef9e61f0388b5241894d40ff39f84a112232a5f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626069"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2694413"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-8-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (8 października 2019 r.)
 
@@ -57,15 +57,15 @@ Funkcje dotyczące wprowadzania i nawigacji pracowników są teraz dostępne we 
 
 Aby uzyskać więcej informacji, zajrzyj do [Usprawnione wprowadzanie pracowników i nawigacja](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/streamlined-employee-data-entry) w Dynamics 365: plan 2. fali publikacji 2019.
 
-### <a name="issue-attract-and-onboard-create-inactive-workers-in-core-hr-380517"></a>Błąd: Attract i Onboard tworzą nowych nieaktywnych pracowników w Core HR (380517)
+### <a name="attract-and-onboard-create-inactive-workers-in-core-hr-380517"></a>Attract i Onboard tworzą nowych nieaktywnych pracowników w Core HR (380517)
 
 Wydanie z tego tygodnia umożliwia skorygowanie problemu polegającego na tym, że Attract i Onboard tworzą pracowników nieaktywnych w Core HR.
 
-### <a name="issue-the-workflow-fails-when-the-manager-is-signed-in-to-another-company-while-terminating-an-employee-346852"></a>Błąd: przepływ pracy kończy się niepowodzeniem, gdy menedżer jest zalogowany do innej firmy podczas zwalniania pracownika (346852)
+### <a name="the-workflow-fails-when-the-manager-is-signed-in-to-another-company-while-terminating-an-employee-346852"></a>Przepływ pracy kończy się niepowodzeniem, gdy menedżer jest zalogowany do innej firmy podczas zwalniania pracownika (346852)
 
 Przepływ pracy przestanie działać w zależności od firmy, do której jest zalogowany menedżer.
 
-### <a name="issue-missing-information-on-hcmonboardingworkerchecklisttaskentity-349591"></a>Błąd: brak informacji na HcmOnboardingWorkerChecklistTaskEntity (349591)
+### <a name="missing-information-on-hcmonboardingworkerchecklisttaskentity-349591"></a>Brak informacji na HcmOnboardingWorkerChecklistTaskEntity (349591)
 
 Ta wersja zawiera dodatkowe informacje o **HcmOnboardingWorkerChecklistTaskEntity**. Oto kilka przykładów:
 
@@ -73,35 +73,35 @@ Ta wersja zawiera dodatkowe informacje o **HcmOnboardingWorkerChecklistTaskEntit
 - **Nazwa pracownika**, gdy typem przypisanym jest **pracownik**
 - **Nazwa menedżera**, gdy typem przypisanym jest **menedżer**
 
-### <a name="issue-entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>Błąd: jednostki nie są wymienione w kolejności alfabetycznej w administracji Common Data Service (377414)
+### <a name="entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>Jednostki nie są wymienione w kolejności alfabetycznej w administracji Common Data Service (377414)
 
 Jednostki są wymienione w kolejności alfabetycznej w na stronie **Administracja CDS**.
 
-### <a name="issue-changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>Błąd: zmiana typu zatrudnienia z datą przyszłą nie zezwala na przypisanie stanowiska (339958)
+### <a name="changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>Zmiana typu zatrudnienia z datą przyszłą nie zezwala na przypisanie stanowiska (339958)
 
 Ta zmiana umożliwia przypisywanie stanowisk w przypadku zmiany typów pracowników (na przykład od pracownika etatowego do zleceniobiorcy).
 
-### <a name="issue-updating-the-common-data-service-leave-bank-transaction-entity-creates-a-new-record-in-talent-352938"></a>Błąd: Aktualizacja jednostki Common Data Service transakcja banku urlopów tworzy nowy rekord w Talent (352938)
+### <a name="updating-the-common-data-service-leave-bank-transaction-entity-creates-a-new-record-in-talent-352938"></a>Aktualizacja jednostki Common Data Service transakcja banku urlopów tworzy nowy rekord w Talent (352938)
 
 Transakcja dotycząca urlopu jest teraz aktualizowana w przypadku aktualizacji banku transakcji urlopów w Common Data Service.
 
-### <a name="issue-the-title-of-attachments-for-feedback-items-shows-the-feedback-description-343765"></a>Błąd: tytuł załączników dla elementów informacji zwrotnych zawiera opis opinii (343765)
+### <a name="the-title-of-attachments-for-feedback-items-shows-the-feedback-description-343765"></a>Tytuł załączników dla elementów informacji zwrotnych zawiera opis opinii (343765)
 
 Opis opinii nie będzie już wyświetlany w tytule załącznika.
 
-### <a name="issue-compensation-workflow-comments-field-shows-incorrect-content-339297"></a>Błąd: w polu Komentarze przepływu pracy wynagrodzenia wyświetlana jest niepoprawna zawartość (339297)
+### <a name="compensation-workflow-comments-field-shows-incorrect-content-339297"></a>W polu Komentarze przepływu pracy wynagrodzenia wyświetlana jest niepoprawna zawartość (339297)
 
 Ta zmiana powoduje wyświetlenie zawartości pola **%HcmActionState.HcmWorkerActionComment.Comments%**.
 
-### <a name="issue-workcalendarentity-and-workcalendardayentity-arent-exposed-through-odata-376329"></a>Błąd: WorkCalendarEntity i WorkCalendarDayEntity nie są udostępniane za pośrednictwem protokołu OData (376329)
+### <a name="workcalendarentity-and-workcalendardayentity-arent-exposed-through-odata-376329"></a>WorkCalendarEntity i WorkCalendarDayEntity nie są udostępniane za pośrednictwem protokołu OData (376329)
 
 W tym wydaniu **WorkCalendarEntity** i **WorkCalendarDayEntity** są teraz dostępne za pośrednictwem protokołu OData (Open Data Protocol).
 
-### <a name="issue-hcmworkerentity-is-slow-when-odata-is-used-375221"></a>Błąd: HCMWorkerEntity jest wolniejsza, gdy jest używany protokół OData (375221)
+### <a name="hcmworkerentity-is-slow-when-odata-is-used-375221"></a>HCMWorkerEntity jest wolniejsza, gdy jest używany protokół OData (375221)
 
 Zmiany zwiększają wydajność **HCMWorkerEntity**, gdy jest używany projektant skoroszytów Microsoft Excel.
 
-### <a name="issue-manager-performance-journal-entry-shows-an-error-after-deleting-a-performance-journal-and-creating-a-new-one-336061"></a>Błąd: wpis w arkuszu wydajności menedżera powoduje wyświetlenie błędu po usunięciu arkusza wydajności i utworzeniu nowego (336061)
+### <a name="manager-performance-journal-entry-shows-an-error-after-deleting-a-performance-journal-and-creating-a-new-one-336061"></a>Wpis w arkuszu wydajności menedżera powoduje wyświetlenie błędu po usunięciu arkusza wydajności i utworzeniu nowego (336061)
 
 Ta wersja koryguje problem występujący po usunięciu jednego arkusza wydajności i natychmiastowym utworzeniu nowego. Ta korekta zmienia zachowanie w ramach funkcji samoobsługi menedżera.
 

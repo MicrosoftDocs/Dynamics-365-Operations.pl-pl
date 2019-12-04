@@ -3,7 +3,7 @@ title: Przypisywanie użytkowników do ról zabezpieczeń
 description: Aby mieć dostęp do aplikacji Finance and Operations, użytkownicy muszą być przypisani do ról zabezpieczeń.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 11/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4daecc1acd589cd1656402244e5325382a407e7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e4f4ef4535de9e371829c2d86d4fdc1400510c7b
+ms.sourcegitcommit: 6aa74f66f1abd3a7977050a5339b0b17e62ff053
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180974"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "2808003"
 ---
 # <a name="assign-users-to-security-roles"></a>Przypisywanie użytkowników do ról zabezpieczeń
 
@@ -37,6 +37,9 @@ Aby można było skorzystać z innych funkcji niż typowe, użytkownicy muszą b
 5. Na liście **Nazwa zasady członkowstwa** kliknij link w wybranym wierszu.
 6. Kliknij **Edytuj kwerendę**. Edytuj kwerendę stosownie do potrzeb.  
 7. Kliknij przycisk **OK**.
+8. Kliknij **Uruchom automatyczne przypisanie roli**.
+9. Przejdź do **Okienko nawigacji > Moduły > Administrowanie systemem > Użytkownicy > Użytkownicy** (najlepiej w osobnej karcie przeglądarki)
+10. Przejrzyj role przypisane różnym użytkownikom, aby potwierdzić, że kwerenda przypisania roli była poprawna. W razie potrzeby skoryguj i uruchom ponownie.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Wykluczanie użytkowników z automatycznego przypisywania ról
 1. Zamknij stronę.

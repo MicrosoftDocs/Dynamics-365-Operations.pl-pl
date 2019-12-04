@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c78fc1f2f1bb08d01828a8b71ad5d3c16ad31b86
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 98c84e987c40adf136d0240117f7b0f119bf2f59
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278394"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811124"
 ---
 # <a name="product-recommendations-on-pos"></a>Rekomendacje produktów w punkcie sprzedaży
 
@@ -40,13 +40,13 @@ Rekomendacje produktów działają w opisanych niżej scenariuszach w punkcie sp
 
 1. Na stronie **Szczegóły produktu**:
 
-    - • Jeśli pracownik sklepu otworzy stronę **Szczegóły produktu** podczas oglądania wcześniejszych transakcji w różnych kanałach, usługa rekomendacji proponuje dodatkowe towary, które inni odbiorcy często kupowali razem z analizowanym produktem.
+    - Jeśli pracownik sklepu otworzy stronę **Szczegóły produktu** podczas oglądania wcześniejszych transakcji w różnych kanałach, usługa rekomendacji proponuje dodatkowe towary, które inni odbiorcy często kupowali razem z analizowanym produktem.
 
     [![Rekomendacje na stronie Szczegóły produktu](./media/proddetails.png)](./media/proddetails.png)
 
 2. Na stronie **Transakcja**:
 
-    - • Zalecane jest, aby aparat rekomendacji sugerował pozycje na podstawie całej listy towarów w koszyku, które są często kupowane razem
+    - Zalecane jest, aby aparat rekomendacji sugerował pozycje na podstawie całej listy towarów w koszyku, które są często kupowane razem.
 
     > [!NOTE]
     > Aby rekomendacje były wyświetlane na stronie **Transakcja**, sprzedawca detaliczny musi zaktualizować układ ekranu w programie Dynamics 365 for Retail. Formant **Zalecenia** należy upuścić na stronę **Transakcja**.
@@ -69,10 +69,12 @@ Aby skonfigurować rekomendacje produktu, wykonaj następujące czynności:
 
 - Wybierz kolejno opcje **Parametry sieci sprzedaży** \> **Listy rekomendacji** \> **Wyłącz rekomendacje produktów** i uruchom **Żądanie konfiguracji globalnej \[9999\]**. 
 - Jeśli za pomocą **Projektanta układu ekranu** dodano **kontrolkę rekomendacji** do ekranu transakcji, usuń również ją.
-- Jeśli masz dodatkowe pytania, zapoznaj się z [Rekomendacje - Często zadawane pytania](../commerce/faq-recommendations.md).
+- Jeśli masz dodatkowe pytania, zapoznaj się z [Rekomendacje produktów - Często zadawane pytania](../commerce/faq-recommendations.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Dodawanie formantu rekomendacji na stronę transakcji urządzenia POS](add-recommendations-control-pos-screen.md)
-[Przegląd rekomendacji produktu](../commerce/product-recommendations.md)
-[Włączanie rekomendacji dotyczących produktów](../commerce/enable-product-recommendations.md) 
+[Dodawanie kontrolki rekomendacji do ekranu transakcji na urządzeniach z aplikacją POS](add-recommendations-control-pos-screen.md)
+
+[Omówienie rekomendacji produktów](../commerce/product-recommendations.md)
+
+[Włączanie rekomendacji produktów](../commerce/enable-product-recommendations.md) 

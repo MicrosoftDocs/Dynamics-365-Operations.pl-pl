@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bdfd8ca5e4feb236bc1b4e88a4dd3817a07e8a3f
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2a5da707069966ea0dac282b2a0b2074ec5a41ff
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571008"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812244"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorie typów zadań obsługi i typy zadań serwisowych, warianty typu zadań obsługi, handel zadaniami konserwacyjnymi oraz listy kontrolne konserwacji
 
@@ -33,7 +33,7 @@ ms.locfileid: "2571008"
 
 Typ składnika majatku jest dołączany do każdego składnika majatku. Typy składników majatku definiują typy zadań konserwacji (i tym samym zadania konserwacji), które mogą być wykonywane na składnikach majatku. Tworząc zlecenie pracy należy wybrać typ zadań konserwacji. Można wybrać tylko typy zadań konserwacji, które są związane z konfiguracją typu składnika majatku, który jest używany dla składnika majatku.
 
-Aby zapoznać się z graficznym omówieniem składników majatku i typów zadań konserwacji oraz ich połączenia ze zleceniami pracy, zobacz [Składniki majątku i zlecenia pracy](../overview/functional-locations-and-objects.md).
+Aby zapoznać się z graficznym omówieniem składników majątku i typów zadań konserwacji oraz ich połączenia ze zleceniami pracy, zobacz [Lokalizacje czynności konserwacyjnych i składniki majątku](../overview/functional-locations-and-objects.md).
 
 Warianty typów zadań konserwacji mogą być ustawione w typach zadań konserwacji. Warianty typu zadania konserwacji definiują warianty typu zadania, takie jak rozmiary (małe, średnie lub duże), okresy (cotygodniowe, co dwa tygodnie, miesiąc lub trzy miesiące) oraz konfiguracje (niska norma, elastyczna lub wysoka wydajność).
 

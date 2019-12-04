@@ -1,5 +1,5 @@
 ---
-title: Pozyskiwanie kandydatów za pomocą puli umiejętności i kandydatów w Microsoft Dynamics 365 Talent - Attract
+title: Pozyskiwanie kandydatów za pomocą puli umiejętności i kandydatów w aplikacji Attract
 description: W tym temacie opisano sposób tworzenia i konfigurowania pul umiejętności w aplikacji Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 454ba987eef924d520af17e8b9ae694fe9b82ec2
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ea10ccd5e4b1f1ffbb8f736e886240e223a4eeb3
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551125"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833030"
 ---
-# <a name="source-candidates-with-talent-pools-in-microsoft-dynamics-365-talent---attract"></a>Pozyskiwanie kandydatów za pomocą puli umiejętności i kandydatów w Microsoft Dynamics 365 Talent - Attract
+# <a name="source-candidates-with-talent-pools-in-attract"></a>Pozyskiwanie kandydatów za pomocą puli umiejętności i kandydatów w aplikacji Attract
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 Osoby rekrutujące i menedżerowie zatrudniający mogą zarządzać swoimi kandydatami za pomocą funkcji pul umiejętności w aplikacji Attract. Pule umiejętności pomagają monitorować oraz utrzymywać kontakt ze wszystkimi kandydatami ubiegającymi się o pracę w firmie.
 
@@ -116,7 +115,7 @@ Wszyscy użytkownicy mają wspólny widok profili kandydatów. Karta **Profil** 
 
     Aby wyświetlić dokument, zaznacz jego nazwę na liście dokumentów. Można wyświetlić dokumenty programu Microsoft Word w aplikacji za pomocą Microsoft Office 365. Można także pobrać dokumenty do lokalnego komputera za pomocą opcji **Pobierz** widocznej obok każdego dokumentu.
 
-- Na karcie **LinkedIn** są wyświetlane dane kandydata z serwisu LinkedIn. Aby użyć tej karty, należy podłączyć konto LinkedIn w ustawieniach użytkownika oraz ustanowić połączenie z aplikacji LinkedIn Recruiter w lokalnym środowisku. Aby uzyskać więcej informacji, zobacz [Korzystanie z aplikacji LinkedIn Recruiter](./attract-linkedin-recruiter.md).
+- Na karcie **LinkedIn** są wyświetlane dane kandydata z serwisu LinkedIn. Aby użyć tej karty, należy podłączyć konto LinkedIn w ustawieniach użytkownika oraz ustanowić połączenie z aplikacji LinkedIn Recruiter w lokalnym środowisku. Aby uzyskać więcej informacji, zajrzyj do [Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter w Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Tylko kandydaci mogą aktualizować swoje umiejętności, historię wykształcenia i doświadczenie zawodowe.

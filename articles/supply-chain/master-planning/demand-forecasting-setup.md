@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653518"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813806"
 ---
 # <a name="demand-forecasting-setup"></a>Ustawianie prognozowania popytu
 
@@ -70,7 +70,8 @@ Aby wygenerować prognozę, Supply Chain Management używa sieciowej usługi ucz
 -   Nazwa konta magazynu systemu Azure
 -   Klucz konta magazynu systemu Azure
 
-**Uwaga:** nazwa konta i klucz konta magazynu systemu są wymagane tylko w przypadku używania niestandardowego konta magazynu. Jeśli została wdrożona wersja lokalna programu, musisz mieć niestandardowe konto magazynu w systemie Azure, tak aby usługa uczenia maszynowego miała dostęp do danych historycznych. 
+> [!NOTE]
+> Nazwa konta i klucz konta magazynu Azure systemu są wymagane tylko w przypadku używania niestandardowego konta magazynu. Jeśli została wdrożona wersja lokalna programu, musisz mieć niestandardowe konto magazynu w systemie Azure, tak aby usługa uczenia maszynowego miała dostęp do danych historycznych. 
 
 Aby utworzyć prognozy popytu, można wdrożyć własną usługę za pomocą platformy Machine Learning Studio lub eksperymentów prognozowania popytu dostępnych Supply Chain Management. Instrukcje wdrażania eksperymentów prognozowania popytu jako usługi sieciowe są dostępne w programie Supply Chain Management. Na stronie **Parametry prognozowania popytu** kliknij kartę **Uczenie maszynowe Azure**.
 
@@ -93,7 +94,7 @@ Na karcie **Klucze alokacji** można określić **Parametry algorytmu prognozy**
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Wprowadzenie do prognozowania popytu](introduction-demand-forecasting.md)
+[Omówienie prognozowania popytu](introduction-demand-forecasting.md)
 
 [Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md)
 

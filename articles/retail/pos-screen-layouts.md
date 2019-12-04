@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c4636f5a023786e3871eb5d907e2e9546181827a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025286"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811787"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Układy ekranu w aplikacji POS
 
@@ -171,7 +171,7 @@ Projektant siatki przycisków pozwala konfigurować siatki przycisków, których
 
     - **Akcja** — Na liście operacji aplikacji POS mających zastosowanie wybierz operację, która jest wywoływana po kliknięciu przycisku w aplikacji POS.
 
-        Aby uzyskać listę obsługiwanych operacji aplikacji POS, zobacz [Operacje w punkcie sprzedaży — online i offline](pos-operations.md).
+        Aby uzyskać listę obsługiwanych operacji aplikacji POS, zobacz [Operacje online i offline w punkcie sprzedaży (POS)](pos-operations.md).
 
     - **Parametry akcji** — Niektóre operacje w aplikacji POS używają dodatkowych parametrów podczas wywoływania. Na przykład dla operacji Dodaj produkty użytkownicy mogą określić produkt, który ma zostać dodany.
     - **Tekst przycisku** — Wprowadź tekst, który ma być wyświetlany na przycisku w aplikacji POS.
@@ -193,4 +193,4 @@ Projektant siatki przycisków pozwala konfigurować siatki przycisków, których
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Instalowanie projektanta układów aplikacji Retail POS](install-pos-layout-designer.md)
+[Instalowanie projektanta układów aplikacji Retail Point of Sale (POS)](install-pos-layout-designer.md)

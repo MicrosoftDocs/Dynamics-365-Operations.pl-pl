@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a649fdbc355b3382bc6c80be03f8b37a06d5226
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5c31116ba234bd1fce445ac382fe8f8aea263a66
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179389"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769484"
 ---
 # <a name="derived-books"></a>Księgi pochodne
 
@@ -44,7 +44,7 @@ Podczas księgowania transakcji jest generowana i księgowana transakcja nabycia
 > [!NOTE]                                                                                                                               
 > Księgi skonfigurowane tak, aby transakcje były księgowane w interwałach innych niż interwały księgi podstawowej, należy dołączyć do środka trwałego jako oddzielne księgi, a nie jako księgi pochodne.  
 
-Aby uzyskać więcej informacji, zobacz [Księgowanie za pomocą ksiąg pochodnych](post-derived-value-models.md).
+Aby uzyskać więcej informacji, zobacz [Księgowanie z użyciem ksiąg pochodnych](post-derived-value-models.md).
 
 
 

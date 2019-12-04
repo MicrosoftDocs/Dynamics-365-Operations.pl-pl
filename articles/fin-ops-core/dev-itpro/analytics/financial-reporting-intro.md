@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e9fe8f78121428770e6516159f5eceb6976c4c9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cdfa9ed24d0456d9beaec03ebac89098131d0675
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181802"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771149"
 ---
 # <a name="financial-reporting"></a>Raportowanie finansowe
 
@@ -47,14 +47,14 @@ Następujące składniki aparatu sprawozdawczości finansowej zapewniają łatwe
 | Składnik        | Funkcje | Informacje dodatkowe |
 |------------------|-----------|------------------------|
 | Projektant raportów  | Tworzenie bloków konstrukcyjnych raportów, które można łączyć w celu definiowania i generowania raportów. Kreator raportów prowadzi mniej doświadczonych użytkowników przez proces projektowania. Użytkownicy zaawansowani mogą tworzyć nowe bloki konstrukcyjne raportów lub modyfikować istniejące bloki zgodnie z własnymi wymaganiami. | |
-| Harmonogramy raportu | Planowanie regularnego generowania jednego raportu lub grupy raportów. | [Generowanie raportu finansowego](generate-financial-report.md) |
+| Harmonogramy raportu | Planowanie regularnego generowania jednego raportu lub grupy raportów. | [Generowanie raportów finansowych](generate-financial-report.md) |
 
-## <a name="features"></a>Funkcje
+## <a name="features"></a>Cechy i funkcje
 <table>
 <thead>
 <tr>
 <th>Funkcja</th>
-<th>opis</th>
+<th>Opis</th>
 </tr>
 </thead>
 <tbody>
@@ -96,4 +96,4 @@ Następujące składniki aparatu sprawozdawczości finansowej zapewniają łatwe
 </table>
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-[Generowanie raportu finansowego](generate-financial-report.md)
+[Generowanie raportów finansowych](generate-financial-report.md)

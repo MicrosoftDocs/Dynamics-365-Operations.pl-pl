@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a7db93e1877034051b6add4c11ddfe7cd7d17e0b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 575b27de845d931c990b1d19254b5218fa6e4199
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187919"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770857"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>Tworzenie wymiarów i importowanie członków wymiaru
 
@@ -44,11 +44,10 @@ Poniższy schemat przedstawia wymiary, które są używane w module Rachunek kos
 Po zaimportowaniu danych do modułu Rachunek kosztów można ich użyć do tworzenia różnych perspektyw zapewniających informacje menedżerom na wszystkich poziomach organizacji. Poniższe tematy zawierają informacje dotyczące tworzenia wymiarów i importowania elementów wymiarów. 
 
 -  [Wymiary składników kosztów](cost-elements.md)
--  [Tworzenie składników kosztów (przewodnik zadania)](./tasks/create-cost-elements.md)
+-  [Tworzenie składników kosztu](./tasks/create-cost-elements.md)
 -  [Wymiary obiektów kosztów](cost-objects.md)
--  [Tworzenie składników kosztów (przewodnik zadania)](./tasks/create-cost-objects.md)
 -  [Mapowanie elementów członkowskich wymiaru elementu kosztów na wspólny zestaw elementów członkowskich wymiaru](map-cost-elements-dimension-members.md)
--  [Mapowanie wymiaru składnika kosztu (przewodnik zadania)](./tasks/map-cost-element-dimension.md)
+-  [Mapowanie wymiaru składnika kosztu](./tasks/map-cost-element-dimension.md)
 -  [Elementy członkowskie wymiaru statystycznego i szablony dostawców miar statystycznych](statistical-measure-provider-template.md)
 
 

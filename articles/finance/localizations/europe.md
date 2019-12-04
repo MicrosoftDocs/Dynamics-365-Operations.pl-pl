@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dac72d7b5ca6a2817207c0bded1befee46406cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ed1fdc4a44ff55586f6879d9fb7df44b4f88c568
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175571"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772852"
 ---
 # <a name="europe-overview"></a>Europa — omówienie
 
@@ -28,15 +28,15 @@ ms.locfileid: "2175571"
 
 Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w konfiguracji dla firm z adresem podstawowym w Europie. 
 
-- [Posiadacze zaliczek](emea-advance-holders.md)
- - [Transakcje posiadaczy zaliczek](emea-advance-holders-transactions.md)
- - [Zaliczki na rzecz pracownika etatowego (Europa Wschodnia)](tasks/advance-payment-employee.md)
-- [Zaawansowane fakturowanie](emea-advance-invoice.md)
-- [Uzgadnianie konta bankowego](emea-bank-reconciliation.md)
+- [Omówienie posiadaczy zaliczek](emea-advance-holders.md)
+ - [Transakcje posiadacza zaliczki](emea-advance-holders-transactions.md)
+ - [Zaliczka dla pracownika](tasks/advance-payment-employee.md)
+- [Faktury zaliczkowe dla Europy Wschodniej](emea-advance-invoice.md)
+- [Wyciąg bankowy i uzgodnienie płatności](emea-bank-reconciliation.md)
 - [Faktury korygujące](emea-corrective-invoice.md)
-- [Tworzenie i księgowanie arkuszy okresowych](emea-create-post-periodic-journals.md)
+- [Okresy podziału w arkuszach okresowych](emea-create-post-periodic-journals.md)
 - [Tworzenie płatności dla odbiorcy, który ma pozwolenie na polecenie zapłaty](tasks/create-payments-customers-who-have-direct-debit-mandates.md)
-- [Edytowanie identyfikatorów faktur na zamówieniach sprzedaży](emea-edit-invoice-id-sales-orders.md)
+- [Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Wschodniej](emea-edit-invoice-id-sales-orders.md)
 - [Świadectwa wywozowe UE](emea-entry-certificates.md)
 - [Raportowanie listy sprzedaży do UE](emea-eu-sales-list.md)
 - [Korekty kursów wymiany](emea-exchange-rate-adjustments.md)
@@ -52,29 +52,29 @@ Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w konfig
   - [Konfigurowanie kont bankowych firmy dla poleceń przelewu ISO20022](tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
   - [Konfigurowanie kont bankowych firmy dla poleceń zapłaty ISO20022](tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
   - [Konfigurowanie metody płatności przelewu ISO20022](tasks/set-up-method-payment-iso20022-credit-transfer.md)
-  - [Konfigurowanie metody płatności polecenia zapłaty ISO20022](tasks/setup-method-payment-iso20022-direct-debit.md)
+  - [Konfigurowanie metody płatności poleceniem zapłaty ISO20022](tasks/setup-method-payment-iso20022-direct-debit.md)
   - [Konfigurowanie odbiorców i kont bankowych odbiorców dla poleceń zapłaty ISO20022](tasks/set-up-bank-accounts-iso20022-direct-debits.md)
   - [Konfigurowanie dostawców i kont bankowych dostawców dla poleceń przelewu ISO20022](tasks/set-up-vendor-iso20022-credit-transfers.md)
   - [Tworzenie i eksportowanie płatności dla dostawcy przy użyciu formatu płatności ISO20022](tasks/create-export-vendor-payments-iso20022-payment-format.md)
-- [Intrastat](emea-intrastat.md)
+- [Omówienie systemu Intrastat](emea-intrastat.md)
   - [Przesyłanie transakcji do systemu Intrastat](tasks/transfer-transactions-intrastat.md)
   - [Określanie adresu załadunku dla transakcji wewnątrzwspólnotowej](tasks/eur-00002-specify-lading-address-intra-community.md)
   - [Generowanie unijnej deklaracji Intrastat](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Raporty arkuszy magazynowych](emea-set-up-report-inventory-journal-names.md)
-- [Terminy wystawiania faktur](emea-invoice-issue-deadline.md)
+- [Termin wystawienia faktury](emea-invoice-issue-deadline.md)
 - [Przetwarzanie faktur](emea-invoice-processing.md)
 - [Wystawianie świadectw wywozowych UE](tasks/eur-00012-issue-eu-entry-certificate.md)
-- [Standardy OIOUBL](emea-oioubl-standards-electronic-invoicing.md)
+- [Wspomagane normy dla elektronicznego fakturowania](emea-oioubl-standards-electronic-invoicing.md)
 - [Odwołanie do oryginalnej faktury (Europa Wschodnia)](tasks/ee-00004-original-invoice-reference.md)
 - [Wyszukiwanie osób za pomocą identyfikatora VAT](tasks/eur-00015-party-search-vat-id.md)
-- [Narzędzie do generowania odwołań do płatności (Europa Wschodnia)](tasks/ee-00015-payment-reference-generation-tool.md)
+- [Narzędzie do generowania odwołań do płatności](tasks/ee-00015-payment-reference-generation-tool.md)
 - [Raport dokumentów płatności](emea-eur-payment-slip-report-giro.md)
-- [Gotówka podręczna](emea-petty-cash.md)
+- [Zarządzanie gotówką podręczną dla Europy Wschodniej i Rosji](emea-petty-cash.md)
 - [Księgowanie wstępnego nabycia środka trwałego](emea-pre-acquisition-acquisition-fixed-asset.md)
 - [Kody pocztowe](emea-import-create-postal-codes-manually.md)
 - [Odbiór świadectw wywozowych UE](tasks/eur-00012-receive-eu-entry-certificate.md)
 - [Identyfikatory rejestracji](emea-registration-ids.md)
-- [Opłaty zwrotne](emea-reverse-charge.md)
+- [Odwrotne obciążenie VAT](emea-reverse-charge.md)
 - [Omówienie polecenia przelewu SEPA](../accounts-payable/sepa-credit-transfer.md)
 - [Omówienie polecenia zapłaty SEPA](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Konfiguracja kompensacji odbiorców oraz dostawców](emea-compensation-customer-vendor-transactions.md)
@@ -85,15 +85,15 @@ Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w konfig
 - [Dyrektywy podatkowe](emea-tax-directives.md)
 - [Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach](emea-amount-printing-forms.md)
 - Podatek od wartości dodanej (VAT)
-  - [nazwa: Konfigurowanie identyfikatora VAT](tasks/eur-00015-vat-id.md)
+  - [Konfigurowanie identyfikatora VAT](tasks/eur-00015-vat-id.md)
   - [Rejestrowanie identyfikatora VAT dostawcy](tasks/eur-00015-registration-vendor-vat-id.md)
-  - [Kursy wymiany dla podatku VAT](emea-vat-exchange-rate.md)
+  - [Podstawowe informacje o kursie wymiany dla podatku VAT](emea-vat-exchange-rate.md)
   - [Raport uzgodnienia podatku VAT](tasks/eur-00018-vat-reconciliation-report.md)
   - [Transakcje rejestru VAT dla Europy Wschodniej](emea-vat-register-transactions.md)
   - [Raportowanie podatku VAT](emea-vat-reporting.md)
   - [Tworzenie i przesyłanie raportu VAT](tasks/create-submit-vat-report.md)
-  - [Wyświetlanie transakcji w rozliczeniu](emea-transactions-settlement-form.md)
-  - [Data powstania obowiązku podatkowego (data rejestracji VAT)](emea-tax-point-date.md)
+  - [Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej](emea-transactions-settlement-form.md)
+  - [Data punktu podatkowego (data rejestru VAT)](emea-tax-point-date.md)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

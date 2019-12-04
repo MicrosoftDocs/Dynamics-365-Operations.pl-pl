@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 461c89a220ec75f3f693da6f52291ebb498e7a05
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cce822f76323b6ce514d3793ce19f0160957e7a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558226"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813394"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Zaopatrzenie i sourcing — strona główna
 
@@ -39,14 +39,14 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 -   [Tworzenie uprawnień do zamawiania produktów w imieniu innej osoby](tasks/set-up-permissions-ordering-products.md)
 
 ## <a name="requests-for-quotation"></a>Zapytanie ofertowe
--   [Zapytania ofertowe](request-quotations.md)
+-   [Omówienie zapytań ofertowych (ZO)](request-quotations.md)
 -   [Tworzenie zapytania ofertowego](tasks/create-request-quotation.md)
 -   [Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień](tasks/enter-compare-rfq-bids-award-contracts.md)
 -   [Tworzenie metody punktowania dla ZO](tasks/create-scoring-method-rfqs.md)
 -   [Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO](tasks/create-solicitation-types-scoring-criteria-rfqs.md)
 
-## <a name="vendor-management-and-collaboration"></a>Zarządzanie i współpraca z dostawcami
--   [Ustawianie kont dostawców](set-up-vendor-accounts.md)
+## <a name="vendor-management-and-collaboration"></a>Zarządzanie dostawcami i współpraca z nimi
+-   [Konfigurowanie kont dostawców](set-up-vendor-accounts.md)
 -   [Tworzenie konta dostawcy](tasks/create-vendor-account.md)
 -   [Tworzenie konta bankowego dostawcy](tasks/create-vendor-bank-account.md)
 -   [Szukanie dostawców](tasks/search-vendors.md)
@@ -58,12 +58,12 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 -   [Skrypt demonstracji przychodzących zapasów konsygnacyjnych w Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(oficjalny dokument)
 -   [Monitorowanie zapasów konsygnacyjnych poprzez współpracę z dostawcami](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Współpraca z dostawcami za pomocą portalu dostawców](collaborate-vendors-vendor-portal.md) (tylko wersje systemu Dynamics AX z lutego i maja 2016 roku)
--   [Konfiguracja zabezpieczeń użytkowników portalu dostawców](configure-security-vendor-portal-users.md) (tylko wersje programu Finance and Operations z lutego i maja 2016 roku)
--   [Mobilny obszar roboczy Współpraca z dostawcami dla aplikacji Microsoft Dynamics 365 for Finance and Operations](vendor-collaboration-mobile-workspace.md)
+-   [Zabezpieczenia użytkowników portalu dostawców](configure-security-vendor-portal-users.md) (tylko wersje Finance and Operations z lutego i maja 2016 roku)
+-   [Mobilny obszar roboczy Współpraca z dostawcami](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Zarządzanie zaopatrzeniem w produkty
--   [Katalogi zaopatrzenia](procurement-catalogs.md)
--   [Tworzenie katalogu zaopatrzenia](tasks/create-procurement-catalog.md)
+-   [Omówienie katalogów zaopatrzenia](procurement-catalogs.md)
+-   [Tworzenie zamówień zakupu](tasks/create-procurement-catalog.md)
 -   [Importowanie katalogów dostawców](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (wpis na blogu)
 -   [Ustawianie hierarchii kategorii zaopatrzenia](tasks/set-up-procurement-category-hierarchy.md)
 -   [Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia](tasks/set-up-policies-procurement-category-hierarchies.md)
@@ -72,9 +72,9 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 ## <a name="procurement"></a>Zaopatrzenie
 -   [Omówienie zamówień zakupu](purchase-order-overview.md)
 -   [Tworzenie zamówienia zakupu](purchase-order-creation.md)
--   [Zatwierdzanie i potwierdzanie zamówienia zakupu](purchase-order-approval-confirmation.md)
+-   [Zatwierdzanie i potwierdzanie zamówień zakupu](purchase-order-approval-confirmation.md)
 -   [Tworzenie zamówienia zakupu](tasks/create-purchase-order.md)
--   [Tworzenie powtarzalnego zamówienia zakupu](tasks/create-repeat-purchase-order.md)
+-   [Tworzenie zamówienia powtórnego zakupu](tasks/create-repeat-purchase-order.md)
 -   [Tworzenie zamówienia zakupu na podstawie zamówienia sprzedaży](../sales-marketing/tasks/create-purchase-order-sales-order.md)
 -   [Tworzenie zamówienia zakupu dla dostawcy jednorazowego](tasks/create-purchase-order-one-time-supplier.md)
 -   [Tworzenie zamówienia zakupu z harmonogramem dostaw](tasks/create-purchase-order-delivery-schedule.md)
@@ -99,11 +99,8 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 -   [Rejestrowanie przyjęcia towarów w zamówieniu zakupu](tasks/record-receipt-goods-purchase-order.md)
 -   [Przepływ pracy zapotrzebowania na zakup](purchase-requisitions-workflow.md)
 -   [Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (oficjalny dokument)
--   [Zasady zakupów](purchase-policies.md)
+-   [Omówienie zasad zakupów](purchase-policies.md)
 -   [Tworzenie zasad zakupów](tasks/create-purchasing-policies.md)
-
-
-
 
 
 

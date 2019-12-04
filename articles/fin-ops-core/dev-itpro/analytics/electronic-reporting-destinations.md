@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5b52e1765d3afbe1730e96f58b601aebccd12787
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7154a6e8aff62b1ebf79edfecb1e1b99048f7c44
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181273"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771476"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Lokalizacje docelowe raportowania elektronicznego (ER)
 
@@ -122,7 +122,7 @@ Jeśli ustawisz w opcji **Włączone** wartość **Tak**, będzie tworzony podgl
 
 ### <a name="power-bi-destination"></a>Miejsce docelowe usługi Power BI
 
-W opcji **Włączone** ustaw wartość **Tak**, aby wykorzystywać konfigurację raportowania elektronicznego (ER) do organizowania przesyłania danych z wystąpienia do usług Microsoft Power BI. Przesłane pliki są przechowywane w wystąpieniu serwera programu Microsoft SharePoint, który musi skonfigurowany do tego celu. Aby uzyskać więcej informacji, zobacz [Używanie konfiguracji raportowania elektronicznego w celu dostarczania do usługi Power BI danych z rozwiązania Finance](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+W opcji **Włączone** ustaw wartość **Tak**, aby wykorzystywać konfigurację raportowania elektronicznego (ER) do organizowania przesyłania danych z wystąpienia do usług Microsoft Power BI. Przesłane pliki są przechowywane w wystąpieniu serwera programu Microsoft SharePoint, który musi skonfigurowany do tego celu. Aby uzyskać więcej informacji, zobacz [Konfigurowanie raportowania elektronicznego (ER) do pobierania danych z Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 > [!TIP]
 > Aby zastąpić domyślne zachowanie (czyli wyświetlanie okno dialogowego konfiguracji), można utworzyć odwołanie do miejsca docelowego oraz plikowe miejsce docelowe dla głównego składnika wyjściowego, a następnie wyłączyć wszystkie miejsca docelowe.
@@ -163,4 +163,4 @@ Warunkiem wstępnym jest to, aby format był dostępny w konfiguracjach raportow
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie raportowania elektronicznego](general-electronic-reporting.md)
+[Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md)

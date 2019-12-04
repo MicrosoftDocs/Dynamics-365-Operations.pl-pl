@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 074132af2111debee4bea894b559744b4470454d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78b3b20ed56cbb6404f5526e90fdcefcaec9bf3f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179414"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771968"
 ---
 # <a name="cost-accounting-home-page"></a>Rachunek kosztów — strona główna
 
@@ -39,17 +39,17 @@ Poniższa mapa szkoleń przedstawia najważniejsze koncepcje i zadania tworzące
 
 |      |   |
 |------|---|
-|  [Konfigurowanie jednostek podstawowych (eLearning)](https://mbspartner.microsoft.com/Home) (wymaga konta CustomerSource)  |[Utwórz wymiary](cost-elements.md)  |
-|  [Tworzenie hierarchii wymiarów](dimension-hierarchy.md)  |[Tworzenie konfiguracji podstawowej](./tasks/define-cost-control-units.md)| 
-| [Definiowanie alokacji podstawowej](allocation-bases.md)|[Definiuj zasady](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
-| [Źródło danych i dostawca danych](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Źródło danych i dostawca danych](./tasks/process-trace-source-data.md)     | 
-|[Obliczanie narzutu](overhead-calculation.md)  | [Analizy i raportowanie](cost-control-workspace.md)   |
+|  [Konfigurowanie jednostek podstawowych (eLearning)](https://mbspartner.microsoft.com/Home) (wymaga konta CustomerSource)  |[Wymiary składników kosztów](cost-elements.md)  |
+|  [Hierarchia wymiarów](dimension-hierarchy.md)  |[Definiowanie jednostek kontroli kosztów](./tasks/define-cost-control-units.md)| 
+| [Podstawy alokacji](allocation-bases.md)|[Tworzenie i przypisywanie zasady alokacji kosztów do jednostki kontroli kosztów](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [Zarządzanie źródłem danych księgi rachunku kosztów](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Przetwarzanie i śledzenie danych źródłowych](./tasks/process-trace-source-data.md)     | 
+|[Obliczenie narzutu](overhead-calculation.md)  | [Obszar roboczy Kontrola kosztów](cost-control-workspace.md)   |
 
 ## <a name="get-started-videosbr"></a>Filmy Rozpoczęcie pracy<br/>
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
 | [Rozpoczęcie korzystania z modułu Rachunek kosztów](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [Mobilny obszar roboczy Kontrola](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [Używanie programu Excel do analizy rachunku kosztów](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
-|  |  |                             |
+
 
 

@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11ed2101304c4e09744bbd10e94e9cd2a8db4da5
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578248"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771080"
 ---
 # <a name="electronic-reporting-er-overview"></a>Omówienie raportowania elektronicznego (RE)
 
@@ -71,7 +71,7 @@ Mapowanie modelu obsługujące wychodzące dokumenty elektroniczne ma następuj�
 
 - Może wykorzystywać różne typy danych jako źródła danych dla modelu danych. Na przykład może używać tabel, jednostek danych, metod lub tekstów stałych.
 - Obsługuje parametry wejściowe użytkownika, które można zdefiniować jako źródła danych modelu danych, gdy część danych musi być określona w czasie wykonywania.
-- Obsługuje przekształcanie danych w wymagane grupy. Umożliwia także filtrowanie, sortowanie i sumowanie danych, a także dołączanie logicznych pól obliczanych, które są projektowane za pomocą formuł przypominających formuły programu Microsoft Excel. Aby uzyskać więcej informacji, zobacz [Projektant formuł w raportowaniu elektronicznym](general-electronic-reporting-formula-designer.md).
+- Obsługuje przekształcanie danych w wymagane grupy. Umożliwia także filtrowanie, sortowanie i sumowanie danych, a także dołączanie logicznych pól obliczanych, które są projektowane za pomocą formuł przypominających formuły programu Microsoft Excel. Aby uzyskać więcej informacji, zobacz [Projektant formuł w raportowaniu elektronicznym (ER)](general-electronic-reporting-formula-designer.md)).
 
 
 Mapowanie modelu obsługujące przychodzące dokumenty elektroniczne ma następujące możliwości:
@@ -362,5 +362,5 @@ Narzędzie ER pozwala automatyczne powielać zmiany z najnowszej wersji składni
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Wymagania dotyczące tłumaczenia — Tworzenie konfiguracji raportowania elektronicznego](electronic-reporting-configuration.md)
-- [Zarządzanie cyklem życia konfiguracji raportowania elektronicznego](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Tworzenie konfiguracji Raportowania elektronicznego (ER)](electronic-reporting-configuration.md)
+- [Zarządzanie cyklem życia konfiguracji modułu Raportowanie elektroniczne (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)

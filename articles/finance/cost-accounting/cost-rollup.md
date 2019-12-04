@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1ecba97014d77c32855b5614c1feae8cbfab4cd5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 083b6cb604115c3f2a72a5ba23199e1517fc1ea1
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179413"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771908"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zasady akumulacji kosztów i obliczanie narzutu 
 
@@ -299,5 +299,5 @@ Wyraźne rozgraniczenie między **alokacją kosztów** a **zasadami akumulacji k
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 -  [Wymiary obiektów kosztów](cost-objects.md)
 -  [Wymiary składników kosztów](cost-elements.md)
--  [Hierarchie wymiarów](dimension-hierarchy.md)
--  [Obliczanie narzutu](overhead-calculation.md)
+-  [Hierarchia wymiarów](dimension-hierarchy.md)
+-  [Obliczenie narzutu](overhead-calculation.md)

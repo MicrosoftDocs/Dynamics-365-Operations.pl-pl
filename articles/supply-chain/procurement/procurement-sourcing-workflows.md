@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d25ca64fb6a3fa7d7898ec68568703f3de7b1595
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 93ceab555bf278ced13d8360956f6db65ba275f8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572726"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813461"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Przepływy pracy dla zaopatrzenia i sourcingu
 
@@ -72,7 +72,7 @@ Można przypisać krok zatwierdzania do następujących grup uczestników.
 
 - [Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-- [Przepływ pracy zapotrzebowania na zakup](purchase-requisitions-workflow.md)
+- [Przepływ pracy zapotrzebowań na zakup](purchase-requisitions-workflow.md)
 
 - [Wdrażanie dostawców](vendor-onboarding.md)
 

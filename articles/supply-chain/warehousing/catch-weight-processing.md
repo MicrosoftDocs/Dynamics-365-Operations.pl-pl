@@ -3,7 +3,7 @@ title: Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzan
 description: W tym temacie opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
 author: perlynne
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 5800f95de0ec773f40c506662a031887810b8c92
+ms.sourcegitcommit: db222a1719d4756d9ccb73fc71e7eaf4521c23a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887142"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2696646"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem
 
@@ -181,7 +181,7 @@ Obecnie funkcja znaczników ilości efektywnej jest obsługiwana tylko w ramach 
 - Podczas przetwarzania stanu zapasów zmienionego za pomocą aplikacji magazynu.
 - Jeśli przesunięcie magazynowe odbywa się przy użyciu aplikacji magazynu.
 - Podczas przetwarzania korekty na wejściu i wyjściu za pomocą aplikacji magazynu.
-- Podczas przetwarzania przyjęcia dla zamówień sprzedaży i przesunięcia. (Należy zauważyć, że znaczniki ilości efektywnej nie mogą być rejestrowane do pobierania składników produkcji).
+- Podczas kompletacji przetwarzane są prace dla sprzedaży, transferu i linii produkcyjnych.
 - Jeśli przyjęte ilości są ograniczone wobec wierszy ładunku niezależnie od tego, czy kontenery są używane.
 - Gdy produkty są pakowane w kontenerach w punkcie pakowania.
 - Gdy kontenery są ponownie otwierane.

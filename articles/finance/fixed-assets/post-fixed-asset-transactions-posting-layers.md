@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab5adfdec259207898d25778e4e3bbbaebb452f1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bc8c4f4f41ed39447ae441dd8e01cfcf80c939b5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179387"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770719"
 ---
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Księgowanie transakcji środków trwałych w warstwach księgowania
 
@@ -42,7 +42,7 @@ Na stronie Profile księgowania środków trwałych można wskazać konta księg
 > [!NOTE] 
 > Używając ksiąg pochodnych, można księgować transakcje jednocześnie w różnych warstwach księgowania. Transakcje księgi podstawowej tworzy się w arkuszu, którego warstwa księgowania odpowiada warstwie księgowania w księdze. Podczas księgowania transakcje księgi pochodnej są księgowane w odpowiednich warstwach księgowania.
 
-Aby uzyskać więcej informacji, zobacz [Księgi pochodne](derived-books.md) i [Księgowanie za pomocą ksiąg pochodnych](post-derived-value-models.md).
+Aby uzyskać więcej informacji, zobacz [Księgi pochodne](derived-books.md) i [Księgowanie z użyciem ksiąg pochodnych](post-derived-value-models.md).
 
 
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1643e7fb3128faf6ad638d4cdad313b3667463b1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6cdfbbd7d4f41503e97620b8738679ad572b2a4a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181687"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771244"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi
 
@@ -44,10 +44,10 @@ Aby dowiedzieć się więcej o tej funkcji, należy odtworzyć przewodniki zada�
 
 W tej procedurze opisano sposób konfigurowania struktury ER w celu zbierania informacji na temat wykonania formatów w module ER, a następnie oceny wyników tych operacji. W ramach tej oceny wygenerowane dokumenty są porównywane z ich plikami bazowymi. W tym przykładzie utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrator systemu lub Deweloper raportowania elektronicznego. Kroki te można wykonać przy użyciu dowolnego zestawu danych.
 
-Aby wykonać kroki w tym przykładzie, należy najpierw wykonać kroki w [„Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+Aby wykonać kroki w tym przykładzie, należy najpierw wykonać kroki w [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
-2. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** sprawdź, czy dostawca konfiguracji dla przykładowej firmy Litware, Inc. jest wymieniony na liście i czy jest oznaczony jako **aktywny**. Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj kroki w [Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** sprawdź, czy dostawca konfiguracji dla przykładowej firmy Litware, Inc. jest wymieniony na liście i czy jest oznaczony jako **aktywny**. Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj kroki w [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ### <a name="configure-document-management-parameters"></a>Konfigurowanie parametrów zarządzania dokumentami
 
@@ -55,7 +55,7 @@ Aby wykonać kroki w tym przykładzie, należy najpierw wykonać kroki w [„Two
 2. W polu **klasy** wybierz **Dołącz plik**.
 3. W polu **grupa** wybierz **Plik**.
 
-![Strona typów dokumentów](media/GER-BaselineSample-SetupDocumentType.PNG "Zrzut ekranu strony typu dokumentów")
+![Strona Typy dokumentów](media/GER-BaselineSample-SetupDocumentType.PNG "Zrzut ekranu strony typy dokumentów")
 
 > [!NOTE]
 > Nowy typ dokumentu o tej samej nazwie musi być skonfigurowany dla każdego zbioru danych, w którym ma być używana funkcja odniesienia do systemu ER.
@@ -68,7 +68,7 @@ Aby wykonać kroki w tym przykładzie, należy najpierw wykonać kroki w [„Two
 
 2. Na karcie **załączniki**, w polu wiersz **bazowy**, wprowadź lub wybierz typ dokumentu, który właśnie utworzono.
 
-    ![Karta załączniki w obszarze zrzut ekranu strony parametry](media/GER-BaselineSample-ERParameters.PNG "raportowania elektronicznego na stronie parametry raportowania elektronicznego")
+    ![Karta załączniki na stronie parametry raportowania elektronicznego](media/GER-BaselineSample-ERParameters.PNG "Zrzut ekranu parametrów raportowania elektronicznego")
 
 3. Wybierz **Zapisz**, a następnie zamknij stronę **Parametry raportowania elektronicznego**.
 
@@ -79,7 +79,7 @@ Aby wykonać kroki w tym przykładzie, należy najpierw wykonać kroki w [„Two
 3. W oknie dialogowym rozwijanym w polu **nazwa** wprowadź **model, aby uzyskać informacje o modelach bazowych modelu ER**.
 4. Wybierz opcję **Utwórz konfigurację**, aby potwierdzić utworzenie nowego wpisu modelu danych ER.
 
-![Okno dialogowe listy rozwijanej Tworzenie konfiguracji](media/GER-BaselineSample-ModelAdd.PNG "zrzut ekranu okna dialogowego Utwórz konfigurację")
+![Utwórz okno dialogowe tworzenia konfiguracji](media/GER-BaselineSample-ModelAdd.PNG "Zrzut ekranu rozwijanego okna dialogowego Tworzenie konfiguracji")
 
 ### <a name="design-a-data-model"></a>Projektowanie modelu danych
 
@@ -93,7 +93,7 @@ Aby wykonać kroki w tym przykładzie, należy najpierw wykonać kroki w [„Two
 8. Wybierz opcję **Zmień stan**.
 9. Zaznacz element **Zakończ** i kliknij przycisk **OK**.
 
-![Strona konfiguracji](media/GER-BaselineSample-ModelComplete.PNG "Zrzut ekranu strony konfiguracji")
+![Strona Konfiguracje](media/GER-BaselineSample-ModelComplete.PNG "Zrzut ekranu strony konfiguracji")
 
 ### <a name="add-a-new-er-format-configuration"></a>Dodawanie nowej konfiguracji formatu ER
 
@@ -102,7 +102,7 @@ Aby wykonać kroki w tym przykładzie, należy najpierw wykonać kroki w [„Two
 3. W polu **nazwa** wprowadź **format, aby uzyskać informacje o planach bazowych modelu ER**.
 4. Wybierz opcję **Utwórz konfigurację**, aby potwierdzić utworzenie nowego wpisu formatu ER.
 
-![Okno dialogowe listy rozwijanej Utwórz konfigurację](media/GER-BaselineSample-FormatAdd.PNG "zrzut ekranu okna dialogowego Utwórz konfigurację")
+![Utwórz okno dialogowe tworzenia konfiguracji](media/GER-BaselineSample-FormatAdd.PNG "Zrzut ekranu rozwijanego okna dialogowego Tworzenie konfiguracji")
 
 ### <a name="design-a-format"></a>Projektowanie formatu
 
@@ -131,7 +131,7 @@ W tym przykładzie utworzysz prosty format ER, który będzie generował dokumen
     2. Wprowadź **nazwę** w polu, wpisz **ID**.
     3. Kliknij przycisk **OK**.
 
-    ![Strona projektant formatu](media/GER-BaselineSample-FormatLayoutDesign.PNG "Zrzut strony strony Projektant formatów")
+    ![Strona projektanta formatu](media/GER-BaselineSample-FormatLayoutDesign.PNG "Zrzut ekranu strony projektanta formatu")
 
 8. Na karcie **mapowanie** wybierz opcję **Usuń**.
 9. Wybierz **Dodaj element główny**.
@@ -144,7 +144,7 @@ W tym przykładzie utworzysz prosty format ER, który będzie generował dokumen
 11. W drzewie wybierz **Wyjście\\Dokument\\ID**.
 12. Zaznacz element **Powiąż** i kliknij przycisk **Zapisz**.
 
-![Strona projektant formatu](media/GER-BaselineSample-FormatMappingDesign.PNG "Zrzut strony strony Projektant formatów")
+![Strona projektanta formatu](media/GER-BaselineSample-FormatMappingDesign.PNG "Zrzut ekranu strony projektanta formatu")
 
 Zgodnie z zaprojektowaną strukturą, skonfigurowany format będzie generował plik XML. Ten kod XML zawiera **element główny** z atrybutem **ID**, który jest ustawiany na wartość wprowadzaną przez użytkownika w oknie dialogowym programu ER.
 
@@ -154,11 +154,11 @@ Zgodnie z zaprojektowaną strukturą, skonfigurowany format będzie generował p
 2. W polu **Wpisz ID** wpisz **1**.
 3. Kliknij przycisk **OK**.
 
-    ![Okno dialogowe Parametry raportu elektronicznego](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "zrzut ekranu okna dialogowego Parametry raportu elektronicznego")
+    ![Okno dialogowe Parametry raportu elektronicznego](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "Zrzut ekranu okna dialogowego parametrów raportu elektronicznego")
 
 4. Umożliwia zapisanie lokalnej kopii pliku **out.Admin.xml**, dzięki czemu można go później wykorzystać jako plan bazowy dla tego formatu ER.
 
-    ![Powiadomienie dotyczące wygenerowanego pliku na stronie](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "konfiguracja zrzutu ekranu powiadomienia o wygenerowanym pliku na stronie konfiguracje")
+    ![Powiadomienie dotyczące wygenerowanego pliku na stronie konfiguracje](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "Zrzut ekranu powiadomienia dotyczącego wygenerowanego pliku na stronie konfiguracje")
 
 ### <a name="configure-er-parameters-to-use-the-baseline-feature"></a>Skonfiguruj Parametry modułu ER, aby rozpocząć korzystanie z funkcji plików bazowych
 
@@ -166,20 +166,20 @@ Zgodnie z zaprojektowaną strukturą, skonfigurowany format będzie generował p
 2. Ustaw opcję **Uruchom w trybie debugowania** jako **tak**.
 3. Kliknij przycisk **OK**.
 
-![Okno dialogowe Parametry użytkownika](media/GER-BaselineSample-ERUserParameters.PNG "zrzut ekranu okna dialogowego Parametry użytkownika")
+![Okno dialogowe parametry użytkownika](media/GER-BaselineSample-ERUserParameters.PNG "Zrzut ekranu okna dialogowego parametrów użytkownika")
 
 ### <a name="add-a-new-baseline-for-designed-er-format"></a>Dodawanie nowego pliku odniesienia dla zaprojektowanego formatu ER
 
 1. Otwórz **Administracja organizacji** \> **Elektroniczne raportowanie** \> **Konfiguracje**.
 2. W okienku akcji kliknij pozycję **Pliki bazowe**.
 
-    ![Przycisk Pliki bazowe na stronie Konfiguracje](media/GER-BaselineSample-OpenBaselinePage.PNG "zrzut ekranu przycisku plików bazowych na stronie Konfiguracje")
+    ![Przycisk Plany bazowe na stronie konfiguracje](media/GER-BaselineSample-OpenBaselinePage.PNG "Zrzut ekranu przycisku Plany bazowe na stronie konfiguracji")
 
 3. W okienku akcji wybierz opcję **Nowy**.
 4. Wybierz **format, aby uzyskać informacje o plikach bazowych ER**, który został zaprojektowany wcześniej.
 5. Wybierz opcję **Zapisz**.
 
-![Strona elektronicznego raportowania formatu plików bazowych](media/GER-BaselineSample-AddBaseline.PNG "Zrzut ekranu strony elektronicznego raportowania formatu plików bazowych")
+![Strona podstawy formatu raportowania elektronicznego](media/GER-BaselineSample-AddBaseline.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
 
 Pliki bazowe zostaną dodane do **formatu w celu poznania się z formatem plików bazowych ER**.
 
@@ -189,7 +189,7 @@ Pliki bazowe zostaną dodane do **formatu w celu poznania się z formatem plikó
 2. W okienku akcji wybierz **Nowy** \> **Plik**. W parametrach modułu ER **Plik** dokumentu powinien być poprzednio wybrany jako typ dokumentu używany do przechowywania plików bazowych.
 3. Wybierz opcję **Przeglądaj**, a następnie wybierz plik **out.admin.xml**, który został wygenerowany w przypadku wcześniejszego uruchomienia skonfigurowanego formatu ER
 
-    ![Strona załączników](media/GER-BaselineSample-UploadBaselineFile.PNG "Zrzut ekranu strony załączników")
+    ![Strona Załączniki:](media/GER-BaselineSample-UploadBaselineFile.PNG "Zrzut ekranu strony załączniki")
 
 4. Zamknij stronę **Załączniki**.
 5. W skróconej karcie **Plików bazowych** wybierz opcję **nowy**.
@@ -204,7 +204,7 @@ Pliki bazowe zostaną dodane do **formatu w celu poznania się z formatem plikó
 10. W polu **plan bazowy** wprowadź lub wybierz załącznik **out.Admin**.
 11. Wybierz opcję **Zapisz**.
 
-![Strona elektronicznego raportowania formatu plików bazowych](media/GER-BaselineSample-SetupBaselineLine.PNG "Zrzut ekranu strony elektronicznego raportowania formatu plików bazowych")
+![Strona podstawy formatu raportowania elektronicznego](media/GER-BaselineSample-SetupBaselineLine.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Uruchom zaprojektowany format ER i przejrzyj dziennik, aby przeanalizować wyniki
 
@@ -215,7 +215,7 @@ Pliki bazowe zostaną dodane do **formatu w celu poznania się z formatem plikó
 5. Kliknij przycisk **OK**.
 6. Otwórz **Administracja organizacji** \> **Elektroniczne raportowanie** \> **Dzienniki debugowania konfiguracji**.
 
-    ![Strona elektrownicznego raportowania dzienników przebiegu](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Zrzut ekranu strony elektrownicznego raportowania dzienników przebiegu")
+    ![Strona dzienników przebiegu raportowania elektronicznego](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Zrzut ekranu strony dzienników przebiegu raportowania elektronicznego")
 
     > [!NOTE]
     > Dziennik wykonania zawiera informacje o wynikach porównania wygenerowanego pliku ze skonfigurowaną linią bazową. W tym przykładzie dziennik wskazuje, że wygenerowany plik i plan bazowy są takie same.
@@ -231,7 +231,7 @@ Pliki bazowe zostaną dodane do **formatu w celu poznania się z formatem plikó
 5. Kliknij przycisk **OK**.
 6. Otwórz **Administracja organizacji** \> **Elektroniczne raportowanie** \> **Dzienniki debugowania konfiguracji**.
 
-    ![Strona elektrownicznego raportowania dzienników przebiegu](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Zrzut ekranu strony elektrownicznego raportowania dzienników przebiegu")
+    ![Strona dzienników przebiegu raportowania elektronicznego](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Zrzut ekranu strony dzienników przebiegu raportowania elektronicznego")
 
     > [!NOTE]
     > Dziennik wykonania zawiera informacje o wynikach porównania wygenerowanego pliku ze skonfigurowaną linią bazową. W tym przykładzie dziennik wskazuje, że wygenerowany plik i plan bazowy są różne.
@@ -243,4 +243,4 @@ Pliki bazowe zostaną dodane do **formatu w celu poznania się z formatem plikó
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Konfigurowanie struktury ER](electronic-reporting-er-configure-parameters.md)
+- [Konfigurowanie struktury modułu Raportowanie elektroniczne (ER)](electronic-reporting-er-configure-parameters.md)
