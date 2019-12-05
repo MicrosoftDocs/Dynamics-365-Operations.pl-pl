@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e5e795ca6f7831ecd3fa28be9782f0b287eea6e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eef77a5d81d12ec92eea86b1dd9902d9e3d80b33
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190012"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812370"
 ---
 # <a name="workflow-system-overview"></a>Omówienie systemu przepływów pracy
 
@@ -57,18 +57,18 @@ Używanie systemu przepływu pracy w organizacji ma kilka zalet:
 
 ## <a name="workflow-content"></a>Zawartość przepływu pracy
 
-+ [Architektura przepływu pracy](workflow-system-architecture.md)
++ [Architektura systemu przepływu pracy](workflow-system-architecture.md)
 + [Elementy przepływu pracy](workflow-elements.md)
-+ [Akcje przepływu pracy](workflow-actions.md)
-+ [Tworzenie przepływu pracy](create-workflow.md)
++ [Akcje w procesach zatwierdzania w przepływie pracy](workflow-actions.md)
++ [Omówienie tworzenia przepływów pracy](create-workflow.md)
 + [Konfigurowanie właściwości przepływu pracy](configure-workflow-properties.md)
-+ [Konfigurowanie zadania ręcznego w przepływie pracy](configure-manual-task-workflow.md)
-+ [Konfigurowanie zadania wykonywanego automatycznie w przepływie pracy](configure-automated-task-workflow.md)
-+ [Konfigurowanie procesu zatwierdzania w przepływie pracy](configure-approval-process-workflow.md)
-+ [Konfigurowanie etapu zatwierdzania w przepływie pracy](configure-approval-step-workflow.md)
-+ [Konfigurowanie ręcznej decyzji w przepływie pracy](configure-manual-decision-workflow.md)
-+ [Konfigurowanie decyzji warunkowej w przepływie pracy](configure-conditional-decision-workflow.md)
-+ [Konfigurowanie działania równoległego w przepływie pracy](configure-parallel-activity-workflow.md)
-+ [Konfigurowanie odgałęzienia równoległego w przepływie pracy](configure-parallel-branch-workflow.md)
-+ [Konfigurowanie przepływu pracy dla pozycji w wierszu](configure-line-item-workflow.md)
-+ [Przepływ pracy — FAQ](workflow-FAQ.md)
++ [Konfigurowanie zadań ręcznych w przepływie pracy](configure-manual-task-workflow.md)
++ [Konfigurowanie zadań wykonywanych automatycznie w przepływie pracy](configure-automated-task-workflow.md)
++ [Konfigurowanie procesów zatwierdzania w przepływie pracy](configure-approval-process-workflow.md)
++ [Konfigurowanie kroków zatwierdzania w przepływie pracy](configure-approval-step-workflow.md)
++ [Konfigurowanie decyzji ręcznych w przepływie pracy](configure-manual-decision-workflow.md)
++ [Konfigurowanie decyzji warunkowych w przepływie pracy](configure-conditional-decision-workflow.md)
++ [Konfigurowanie działań równoległych w przepływie pracy](configure-parallel-activity-workflow.md)
++ [Konfigurowanie odgałęzień równoległych w przepływie pracy](configure-parallel-branch-workflow.md)
++ [Konfigurowanie przepływów pracy dla pozycji w wierszach](configure-line-item-workflow.md)
++ [Przepływ pracy — często zadawane pytania](workflow-FAQ.md)

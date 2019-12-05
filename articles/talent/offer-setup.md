@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie zarządzania ofertami
+title: Konfigurowanie zarządzania ofertami w aplikacji Attract
 description: W tym temacie opisano sposób konfigurowania zarządzania ofertami w Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010851"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832729"
 ---
-# <a name="set-up-offer-management"></a>Konfigurowanie zarządzania ofertami 
+# <a name="set-up-offer-management-in-attract"></a>Konfigurowanie zarządzania ofertami w aplikacji Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -206,4 +206,4 @@ Istnieje kilka etapów procesu tworzenia oferty, które mogą być konfigurowane
     - ESign — jest to opcja domyślna, dostępna od razu po pierwszym uruchomieniu, zapewniająca użytkownikowi opcję podpisania oferty przez wpisanie imienia i nazwiska oraz inicjałów.
 
 
-Aby uzyskać więcej informacji o procesie tworzenia oferty, zobacz [Tworzenie, zatwierdzanie i podpisywanie ofert](./creating-offers.md).
+Aby uzyskać więcej informacji o procesie tworzenia oferty, zobacz [Twórz, zatwierdzaj i podpisuj oferty](./creating-offers.md).

@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2bfe007995c894d6cc86d07ef2b52da65e32e950
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: aa8444b081650e3d375e6f28f47866c8d4853721
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182745"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772470"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Uzyskaj dostęp do metadanych aplikacji za pomocą konfiguracji ER
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulatory configuration service (RCS) w roli Administratora Systemu lub Dewelopera elektronicznego raportowania może zaprojektować nowe mapowanie modelu Elektronicznego raportowania (ER) przy użyciu metadanych aplikacji. Dostęp do metadanych aplikacji będzie możliwy za pomocą konfiguracji metadanych ER, która zawiera przykładowy zestaw metadanych umożliwiających dostęp do transakcji handlu zagranicznego. Aby wykonać te kroki, w RCS musisz najpierw wykonać kroki podane w niniejszym temacie, [Utwórz dostawców konfiguracji i oznacz ich jako aktywnych](er-configuration-provider-mark-it-active-2016-11.md). Następnie wykonaj kroki opisane w temacie [(Raportowanie elektroniczne) Przygotowywanie metadanych aplikacji używanych w RCS](prepare-application-metadata-rcs.md).
+W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulatory configuration service (RCS) w roli Administratora Systemu lub Dewelopera elektronicznego raportowania może zaprojektować nowe mapowanie modelu Elektronicznego raportowania (ER) przy użyciu metadanych aplikacji. Dostęp do metadanych aplikacji będzie możliwy za pomocą konfiguracji metadanych ER, która zawiera przykładowy zestaw metadanych umożliwiających dostęp do transakcji handlu zagranicznego. Aby wykonać te kroki, w RCS musisz najpierw wykonać kroki podane w niniejszym temacie, [Utwórz dostawców konfiguracji i oznacz ich jako aktywnych](er-configuration-provider-mark-it-active-2016-11.md). Następnie wykonaj kroki opisane w temacie [Przygotowywanie metadanych aplikacji używanych w RCS](prepare-application-metadata-rcs.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 1. Otwórz **Wszystkie miejsca prac** > **Electroniczne Raportowanie**. 
@@ -35,7 +35,7 @@ W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulat
 
 ## <a name="import-metadata-configuration"></a>Import metadanych konfiguracji 
 1. Kliknij **Konfiguracja metadanych**. 
-2. Zaimportuj konfigurację metadanych ER, która zawiera metadane, które zostały skonfigurowane do generowania dokumentów elektronicznych dla handlu zagranicznego. Ta konfiguracja metadanych ER została wyeksportowana jako plik XML, podczas gdy kroki opisane w [(ER) Przygotuj metadane aplikacji do użycia w RCS](prepare-application-metadata-rcs.md) zostały wypełnione. 
+2. Zaimportuj konfigurację metadanych ER, która zawiera metadane, które zostały skonfigurowane do generowania dokumentów elektronicznych dla handlu zagranicznego. Ta konfiguracja metadanych ER została wyeksportowana jako plik XML, podczas gdy kroki opisane w [Przygotuj metadane aplikacji do użycia w RCS](prepare-application-metadata-rcs.md) zostały wypełnione. 
 3. Kliknij **Zmień** 
 4. Kliknij **Załaduj z pliku XML**. 
 5. Kliknij **Przeglądaj** i wybierz plik Handel zagraniczny metadane.xml. 

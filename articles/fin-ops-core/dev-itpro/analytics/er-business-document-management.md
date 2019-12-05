@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: ''
+ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 05dee1efc4e817795824e3fa1c41093d48a97d78
-ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
+ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2652624"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824527"
 ---
 # <a name="business-document-management-overview"></a>Omówienie zarządzania dokumentami biznesowymi
 
-Użytkownicy biznesowi używają [modułu Raportowanie elektroniczne (ER)](general-electronic-reporting.md), który umożliwia konfigurowanie formatów dokumentów wychodzących zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Użytkownicy mogą również zdefiniować przepływ danych w celu określenia, które dane aplikacji są umieszczane w wygenerowanych dokumentach. Struktura ER generuje dokumenty wychodzące w formatach Microsoft Office (skoroszyty programu Excel lub dokumenty programu Word) przy użyciu wstępnie zdefiniowanych szablonów. Szablony są wypełniane zgodnie z wymaganymi danymi, zgodnie z konfiguracją przepływu danych, podczas gdy wymagane dokumenty są generowane. Każdy skonfigurowany format może zostać opublikowany jako część rozwiązania ER w celu wygenerowania określonych dokumentów wychodzących. Ta funkcja jest reprezentowana przez konfigurację formatu ER, która może zawierać szablony, które mogą być używane do generowania różnych dokumentów wychodzących. Użytkownicy biznesowi mogą stosować tę strukturę do zarządzania wymaganymi dokumentami biznesowymi.
+Użytkownicy biznesowi używają [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md), który umożliwia konfigurowanie formatów dokumentów wychodzących zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Użytkownicy mogą również zdefiniować przepływ danych w celu określenia, które dane aplikacji są umieszczane w wygenerowanych dokumentach. Struktura ER generuje dokumenty wychodzące w formatach Microsoft Office (skoroszyty programu Excel lub dokumenty programu Word) przy użyciu wstępnie zdefiniowanych szablonów. Szablony są wypełniane zgodnie z wymaganymi danymi, zgodnie z konfiguracją przepływu danych, podczas gdy wymagane dokumenty są generowane. Każdy skonfigurowany format może zostać opublikowany jako część rozwiązania ER w celu wygenerowania określonych dokumentów wychodzących. Ta funkcja jest reprezentowana przez konfigurację formatu ER, która może zawierać szablony, które mogą być używane do generowania różnych dokumentów wychodzących. Użytkownicy biznesowi mogą stosować tę strukturę do zarządzania wymaganymi dokumentami biznesowymi.
 
 **Zarządzanie dokumentami biznesowymi** jest oparte na górnej części struktury ER i umożliwia użytkownikom biznesowym edytowanie szablonów dokumentów biznesowych przy użyciu usługi Microsoft Office 365 lub odpowiedniej aplikacji klasycznych pakietu Microsoft Office. Edycja dokumentów może obejmować zmianę projektów dokumentów biznesowych i dodanie symboli zastępczych dla dodatkowych danych bez zmian kodu źródłowego i nowych wdrożeń. Do aktualizacji szablonów dokumentów biznesowych nie jest wymagana znajomość struktury ER.
 
@@ -58,21 +59,17 @@ Następujące raporty z szablonami opartymi na programie Excel są dostępne prz
 
 Dostępnych będzie więcej raportów. Powiadomienia specjalne o dodatkowych raportach będą wysyłane oddzielnie. 
 
-Kompletną listę raportów planowanych na dzień wydania w październiku 2019 można znaleźć w [Konfigurowalne raporty dotyczące dokumentów biznesowych w programach Word i Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
-
-# <a name="example-enable-configure-and-use-business-document-management"></a>Przykład: włączanie, konfigurowanie i korzystanie z zarządzania dokumentami biznesowymi
-
-Wykonaj przykład z tego tematu, aby dowiedzieć się więcej na temat tej funkcji.
+Kompletną listę raportów planowanych na dzień wydania w październiku 2019 można znaleźć w [Konfigurowalne raporty dotyczące dokumentów biznesowych w programach Word i Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Wykonaj przykład z tego tematu, aby dowiedzieć się więcej na temat tej funkcji.
 
 ## <a name="configure-er-parameters"></a>Konfigurowanie parametrów modułu ER
 
-Ponieważ zarządzanie dokumentami biznesowymi jest tworzone na strukturze ER, należy skonfigurować parametry ER, aby rozpocząć pracę z zarządzaniem dokumentami biznesowymi. W tym celu należy skonfigurować parametry ER, postępując zgodnie z opisem w [Konfigurowanie struktury ER](electronic-reporting-er-configure-parameters.md). Należy również dodać nowego dostawcę konfiguracji, postępując zgodnie z opisem w [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+Ponieważ zarządzanie dokumentami biznesowymi jest tworzone na strukturze ER, należy skonfigurować parametry ER, aby rozpocząć pracę z zarządzaniem dokumentami biznesowymi. W tym celu należy skonfigurować parametry ER, postępując zgodnie z opisem w [Konfigurowanie struktury raportowania elektronicznego (ER)](electronic-reporting-er-configure-parameters.md). Należy również dodać nowego dostawcę konfiguracji, postępując zgodnie z opisem w [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ![Obszar roboczy ER](./media/BDM-Overview-ERSetting.png)
 
 ## <a name="import-er-solutions"></a>Importowanie rozwiązań ER
 
-Należy zaimportować konfiguracje ER zawierające szablony dokumentów biznesowych do bieżącego wystąpienia. Aby wykonać tę procedurę, należy pobrać i lokalnie zapisać poniższe pliki.
+Przykładowe konfiguracje ER są używane w przykładzie tej procedury. Do bieżącego wystąpienia Dynamics 365 Finance należy zaimportować konfiguracje ER, które zawierają szablony dokumentów biznesowych, które można edytować za pomocą funkcji zarządzania dokumentami biznesowymi. Aby wykonać tę procedurę, należy pobrać i następnie lokalnie zapisać poniższe pliki.
 
 **Przykładowe rozwiązanie fakturowania dla odbiorcy ER**
 
@@ -105,7 +102,13 @@ Aby zaimportować każdy plik, należy wykonać poniższą procedurę Dokonaj im
 
 ![Strona konfiguracji raportowania elektronicznego](./media/BDM-Overview-ERSolutions.png)
 
+
+Alternatywnie można zaimportować oficjalnie opublikowane konfiguracje formatów w formacie ER z Microsoft Dynamics Lifecycle Service (usługi LCS). Na przykład aby wykonać tę procedurę, można zaimportować najnowszą wersję konfiguracji formatu modułu **Darmowy tekst faktury (Excel)**. Odpowiednie konfiguracje mapowań modelu danych i modelu ER zostaną zaimportowane automatycznie.
+
+![Strona zawartości biblioteki składników współużytkowanych usługi LCS](./media/BDM-Overview-SharedAssetLibrary.png)
+
 Aby uzyskać więcej informacji o importowaniu konfiguracji ER, zapoznaj się z [Zarządzanie cyklem życia konfiguracji Raportowania elektronicznego](general-electronic-reporting-manage-configuration-lifecycle.md).
+
 
 ## <a name="enable-business-document-management"></a>Włącz zarządzanie dokumentem biznesowym
 
@@ -118,9 +121,12 @@ Aby włączyć funkcję zarządzania dokumentem biznesowym dla wszystkich firm, 
 3. Wybierz opcję **Włącz teraz**, aby włączyć wybraną funkcję.
 4. Odśwież stronę, aby uzyskać dostęp do nowej funkcji.
 
+>[!NOTE]
+> Ponadto konieczne jest włączenie **funkcji interfejsu użytkownika podobnej do Office dla funkcji zarządzania dokumentami biznesowymi** w celu korzystania z nowego interfejsu zarządzania dokumentami biznesowymi.
+
 ![Obszar roboczy zarządzanie funkcjami](./media/BDM-Overview-FMEnabling.png)
 
-Aby uzyskać więcej informacji o aktywowaniu nowych funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Aby uzyskać więcej informacji o aktywowaniu nowych funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="configure-parameters"></a>Konfigurowanie parametrów
 
@@ -137,7 +143,7 @@ Dla tego typu dokumentu muszą być wybrane następujące wartości atrybutów:
 | Grupa               | Plik                  |
 | Lokalizacja            | SharePoint            |
 
-Aby uzyskać informacje dotyczące konfigurowania wymaganych parametrów zarządzania dokumentami i typów dokumentów, należy zapoznać się z [Konfigurowanie zarządzania dokumentami](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+Aby uzyskać informacje dotyczące konfigurowania wymaganych parametrów zarządzania dokumentami i typów dokumentów, należy zapoznać się z [Konfigurowanie zarządzania dokumentami](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Ustaw tyo dokumentu Zarządzania dokumentami](./media/BDM-Overview-DMSetting.png)
 
@@ -179,21 +185,21 @@ Aby włączyć funkcję dostępu do zarządzania dokumentem biznesowym dla wszys
 1. Zaloguj się jako użytkownik z dostępem do strony **Konfigurator uprawnień dostępu**.
 2. Przejdź do **Administrowanie organizacją** \> **Raportowanie elektroniczne** \> **Zarządzanie dokumentem biznesowym** \> **Zarządzaj uprawnieniami dostępu**.
 
-Zwróć uwagę na powiadomienie informujące, że użycie uprawnień dostępu dla zarządzania dokumentem biznesowym nie jest obecnie włączone.
+    Zwróć uwagę na powiadomienie informujące, że użycie uprawnień dostępu dla zarządzania dokumentem biznesowym nie jest obecnie włączone.
 
-![Strona konfigurator uprawnień dostępu do zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesAccess1.png)
+    ![Strona konfigurator uprawnień dostępu do zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesAccess1.png)
 
-W przypadku tego ustawienia każdy użytkownik przypisany do dowolnej roli zabezpieczeń skonfigurowanej do obsługi **szablonów dokumentów biznesowych** (AOT nazwa **ERBDManageTemplates**) ma możliwość otwarcia zarządzania dokumentami biznesowymi w obszarze roboczym i może edytować dowolny dostępny szablon.
+    W przypadku tego ustawienia każdy użytkownik przypisany do dowolnej roli zabezpieczeń skonfigurowanej do obsługi **szablonów dokumentów biznesowych** (AOT nazwa **ERBDManageTemplates**) ma możliwość otwarcia zarządzania dokumentami biznesowymi w obszarze roboczym i może edytować dowolny dostępny szablon.
 
-Na poniższym rysunku pokazano, co jest dostępne w obszarze roboczym zarządzanie dokumentami biznesowymi dla użytkowników przypisanych do roli **Pracownik ds. rozrachunków z odbiorcami**. Korzystając z bieżącego ustawienia uprawnień dostępu, użytkownik może edytować szablony dokumentów biznesowych z różnych obszarów funkcjonalnych, w tym fakturowania, raportowania i płatności wykonawczych.
+    Na poniższym rysunku pokazano, co jest dostępne w obszarze roboczym zarządzanie dokumentami biznesowymi dla użytkowników przypisanych do roli **Pracownik ds. rozrachunków z odbiorcami**. Korzystając z bieżącego ustawienia uprawnień dostępu, użytkownik może edytować szablony dokumentów biznesowych z różnych obszarów funkcjonalnych, w tym fakturowania, raportowania i płatności wykonawczych.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. Na stronie **konfigurator uprawnień dostępu** wybierz **Ustawienia uprawnień dostępu**.
 4. W oknie **ustawienia uprawnień dostępu do edytowania szablonów** włącz opcję **Zastosuj skonfigurowane uprawnienia dostępu**.
 5. Wybierz **OK**, aby potwierdzić włączenie uprawnień dostępu zarządzanie dokumentami biznesowymi.
 
-![Konfiguracja uprawnień dostępu do zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Konfiguracja uprawnień dostępu do zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Wybierz przycisk **Dodaj**, aby wprowadzić nową rolę biznesową, dla której mają być skonfigurowane uprawnienia dostępu do szablonów zarządzania dokumentami biznesowymi.
 7. W oknie dialogowym **Role zabezpieczeń** wybierz rolę **pracownika rozrachunków z odbiorcami**, a następnie wybierz przycisk **OK**, aby potwierdzić wybór roli.
@@ -201,11 +207,11 @@ Na poniższym rysunku pokazano, co jest dostępne w obszarze roboczym zarządzan
 9. W polu **typ znacznika** wybierz opcję **obszar funkcjonalny**, a następnie w polu **identyfikator** wybierz opcję **fakturowanie**.
 10. Wybierz opcję **Zapisz**, aby zapisać skonfigurowane uprawnienia dostępu dla wybranej roli.
 
-  Bieżące ustawienie oznacza każdego użytkownika przypisanego do roli **Pracownik ds. rozrachunków z odbiorcami** i wykonującego obowiązki, **Zarządzaj szablonami dokumentów biznesowych** (AOT o nazwie **ERBDManageTemplates**), format ER szablonów konfiguracji, które mają wartość **fakturowania** dla znacznika **obszaru funkcjonalnego**, będą dostępne do edycji w obszarze roboczym zarządzanie dokumentami biznesowymi.
+    Bieżące ustawienie oznacza każdego użytkownika przypisanego do roli **Pracownik ds. rozrachunków z odbiorcami** i wykonującego obowiązki, **Zarządzaj szablonami dokumentów biznesowych** (AOT o nazwie **ERBDManageTemplates**), format ER szablonów konfiguracji, które mają wartość **fakturowania** dla znacznika **obszaru funkcjonalnego**, będą dostępne do edycji w obszarze roboczym zarządzanie dokumentami biznesowymi.
 
 11. Przełącz **pokrewne okienko informacyjne** od prawej strony bieżącej strony. W okienku **informacji pokrewnych** są wyświetlane informacje o sposobie stosowania skonfigurowanych uprawnień dostępu, w tym o tym, jakie szablony konfiguracji ról będą dostępne dla użytkowników przypisanych do roli **Pracownik ds. rozrachunków z odbiorcami**.
 
-![Konfiguracja uprawnień dostępu do zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Konfiguracja uprawnień dostępu do zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. Na karcie **Uprawnienia dostępu wg znaczników konfiguracji** konfiguracji wybierz opcję **Dodaj**.
 13. W oknie dialogowym **wybierz konfigurację** zaznacz opcję Konfiguracja formatu ER **Raport Intrastat**.
@@ -252,21 +258,31 @@ Opcja **Edytuj szablon** jest dostępna dla wybranego szablonu. Ta opcja jest za
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Inicjuj Edytowanie szablonów należących do innych dostawców.
 
-1. W obszarze roboczym zarządzanie dokumentami biznesowymi wybierz szablon **Raport FTI odbiorcy (GER)**.
-2. Kliknij kartę **Szczegóły**.
+1. W obszarze roboczym zarządzanie dokumentami biznesowymi wybierz **nowy dokument**.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate3.png)
+![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM_overview_new_template1.png)
 
-Opcja **Nowy dokument** jest dostępna dla wybranego szablonu. Ta opcja jest zawsze dostępna dla szablonu w konfiguracji formatu ER, który jest własnością innego dostawcy (**Litware, Inc.** w tym przykładzie). Po wybraniu **Nowy dokument** do edycji będzie dostępny nowy szablon. Edytowany szablon zostanie następnie zapisany w nowej konfiguracji formatu, która jest generowana automatycznie.
+2. Wybierz dokument, który ma być używany jako szablon.
+
+![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM_overview_new_template2.png)
+
+3. Kliknij **Utwórz dokument**
+4. W polu **tytuł**, w razie potrzeby, Zmień tytuł szablonu edytowalnego. Tekst będzie używany do napełniania nazwy tworzonej automatycznie konfiguracji formatu ER. Należy zauważyć, że wersja robocza tej konfiguracji (**Raport o fakturach niezależnych dla odbiorców (GER)**) będzie zawierać edytowany szablon, zostanie automatycznie oznaczona do uruchomienia tego formatu ER dla bieżącego użytkownika. W tym samym czasie, niezmodyfikowany oryginalny szablon z podstawowej konfiguracji formatu źródłowego będzie używany do uruchamiania tego formatu ER dla innego użytkownika.
+5. W polu **nazwa** Zmień nazwę pierwszej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
+6. W polu **Komentarz** zmień uwagę dla automatycznie wygenerowanej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
+7. Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji
+
+![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM_overview_new_template3.png)
+
+Opcja **Nowy dokument** jest zawsze dostępna dla szablonu w konfiguracji formatu ER, który jest własnością innego dostawcy (Microsoft w tym przykładzie). Kliknięcie przycisku **nowy dokument** powoduje wyświetlenie wszystkich szablonów należących do bieżącego i innych dostawców. Po wybraniu szablonu, który zostanie otwarty do edycji. Edytowany szablon zostanie następnie zapisany w nowej konfiguracji formatu, która jest generowana automatycznie.
 
 ### <a name="start-editing-a-template"></a>Rozpocznij edycję szablonu
 
-1. Z wybranego szablonu wybierz opcję **nowy dokument**.
-2. W polu **tytuł**, w razie potrzeby, Zmień tytuł szablonu edytowalnego. Tekst będzie używany do napełniania nazwy tworzonej automatycznie konfiguracji formatu ER. Należy zauważyć, że wersja robocza tej konfiguracji (**Raport o fakturach niezależnych dla odbiorców (GER)**) będzie zawierać edytowany szablon, zostanie automatycznie oznaczona do uruchomienia tego formatu ER dla bieżącego użytkownika. W tym samym czasie, niezmodyfikowany oryginalny szablon z podstawowej konfiguracji formatu źródłowego będzie używany do uruchamiania tego formatu ER dla innego użytkownika.
-3. W polu **nazwa** Zmień nazwę pierwszej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
-4. W polu **Komentarz** zmień uwagę dla automatycznie wygenerowanej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
+1. Z wybranego szablonu wybierz opcję **Edytuj dokument**.
+2. W polu **nazwa** Zmień nazwę pierwszej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
+3. W polu **Komentarz** zmień uwagę dla automatycznie wygenerowanej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate4.png)
+    ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM_overview_new_template4.png)
 
 5. Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji.
 
@@ -285,15 +301,15 @@ Zmodyfikuj szablon, korzystając z funkcji systemu Office 365. Na przykład w pr
 1. Wybierz opcję **Otwórz w aplikacji klasycznej**, aby zmodyfikować szablon za pomocą funkcji aplikacji pulpitu pakietu Office (w tym przykładzie programu Excel). Szablon edytowalny jest kopiowany z magazynu trwałego do tymczasowego magazynu skonfigurowanego w parametrach zarządzania dokumentami biznesowymi SharePoint jako folder.
 2. Potwierdź, że chcesz otworzyć szablon z tymczasowego przechowywania plików w aplikacji klasycznej programu Office Excel.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout3.png)
+    ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout3.png)
 
 3. Modyfikowanie szablonu. Na przykład zmień czcionkę pól podpowiedzi w nagłówku szablonu, zmieniając kolor z **Czarny** na **Niebieski**.
 
-![Strona edytora szablonów zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout4.png)
+    ![Strona edytora szablonów zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout4.png)
 
 4. Wybierz **Zapisz** w aplikacji klasycznej programu Excel, aby zapisać zmiany w szablonie w magazynie tymczasowym.
 
-![Strona edytora szablonów zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout5.png)
+    ![Strona edytora szablonów zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout5.png)
 
 5. Zamknij aplikację pulpitu programu Excel.
 6. Wybierz opcję **Synchronizuj przechowywaną kopię**, aby zsynchronizować tymczasowy magazyn szablonu z trwałym magazynem szablonów.
@@ -307,7 +323,7 @@ Zmodyfikuj szablon, korzystając z funkcji systemu Office 365. Na przykład w pr
 2. Wybierz opcję **Pokaż format**, aby wyświetlić bieżącą strukturę formatu z podstawowej konfiguracji formatu w formacie encji, która musi być wyrównana do szablonu edytowalnego. 
 3. Aby zamknąć okienko, wybierz opcję **Ukryj format**.
 
-![Strona edytora szablonów BDM BDM](./media/BDM-Overview-EditingTemplate6.png)
+    ![Strona edytora szablonów BDM BDM](./media/BDM-Overview-EditingTemplate6.png)
 
 4. Zamknij stronę **Edytor szablonów BDM**.
 
@@ -323,7 +339,7 @@ Zaktualizowany szablon jest wyświetlany na karcie **szablon**. Zauważ, że sta
 4. Wybierz **Moduł - Rozrachunki z odbiorcami** \> **Dokumenty** \> **Faktura niezależna** \> **Dokument oryginalny**, aby określić zakres faktur do przetwarzania.
 5. W polu **format raportu** wybierz format **Raport o fakturach niezależnych dla odbiorców (GER)** formatu ER dla określonego poziomu dokumentu.
 
-![Strona ustawień zarządzania drukowaniem](./media/BDM-Overview-TestRun1.png)
+    ![Strona ustawień zarządzania drukowaniem](./media/BDM-Overview-TestRun1.png)
 
 6. Naciśnij klawisz **Escape**, aby zamknąć bieżącą stronę
 7. Wybierz opcję **Drukuj**, a następnie kliknij opcję **wybrane**.
@@ -340,9 +356,9 @@ Zmodyfikowany szablon jest używany do generowania raportu faktury niezależnej 
 3. W razie potrzeby w polu **nazwa** zmień nazwę drugiej poprawki i oprzyj ją na aktualnie aktywnej pierwszej korekcie.
 4. Jeśli istnieje potrzeba, w polu **Komentarz** zmień uwagę dla automatycznie wygenerowanej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-AddRevision.png)
+    ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-AddRevision.png)
 
-Utworzono nową wersję szablonu, która została zapisana w magazynie trwałego szablonu. Teraz możesz kontynuować edytowanie szablonu drugiej poprawki, która jest obecnie wybrana jako aktywna.
+    Utworzono nową wersję szablonu, która została zapisana w magazynie trwałego szablonu. Teraz możesz kontynuować edytowanie szablonu drugiej poprawki, która jest obecnie wybrana jako aktywna.
 
 5. Wybierz pierwszą poprawkę, a następnie wybierz **Ustaw jako aktywną**. Można wybrać inną poprawkę jako aktywną, jeśli użytkownik chce powrócić do tej wersji szablonu.
 6. Wybierz drugą poprawkę i wybierz przycisk **Usuń**.
@@ -370,7 +386,7 @@ Podczas edytowania szablonu z formatu ER, który jest własnością bieżącego 
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-#### <a name="i-selected-new-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Wybrałem **nowy dokument**, ale zamiast otwierania strony **edytora szablonów BDM** w Finance and Operations, został wysłany do strony Office 365 sieci Web.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Wybrałem **Edytuj dokument**, ale zamiast otwierania strony **edytora szablonów BDM** w Finance and Operations, został wysłany do strony Office 365 sieci Web.
 Jest to znany błąd dotyczący Office 365 przekierowania. Dzieje się tak po pierwszym zalogowaniu Office 365. W celu obejścia tego problemu należy wybrać **Wstecz** w przeglądarce, aby przejść z powrotem.
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Wiem, jak edytować szablon, używając Office 365 w pierwszej sesji aplikacji i jak używać szablonu w drugiej sesji aplikacji podczas dopasowywania szablonu, aby zobaczyć, jak zmiany wpływają na wygenerowany dokument biznesowy. Czy można to zrobić za pomocą aplikacji pulpitu Office?
@@ -386,12 +402,12 @@ Najprawdopodobniej zalogowano się do bieżącego wystąpienia aplikacji w domen
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie raportowania elektronicznego](general-electronic-reporting.md)
+[Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md)
 
-[Projektowanie konfiguracji do generowania raportów w formacie OPENXML](tasks/er-design-reports-openxml-2016-11.md)
+[ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML (listopad 2016)](tasks/er-design-reports-openxml-2016-11.md)
 
 [Projektowanie konfiguracji raportowania elektronicznego w celu generowania raportów w formacie programu Word](tasks/er-design-configuration-word-2016-11.md)
 
 [Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne](electronic-reporting-embed-images-shapes.md)
 
-[Konfigurowanie w module Raportowanie elektroniczne ściągania danych do usługi Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+[Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 38f0db7db0cc4f65d46cd241f75a7274f19f62cf
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 1a96fda4e7f7b6407c51ee4056088d05027462cf
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251392"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813254"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Synchronizowanie produktów bezpośrednio z rozwiązania Supply Chain Management do produktów w rozwiązaniu Sales
 
@@ -43,7 +43,7 @@ Rozwiązanie Prospekt na gotówkę korzysta z funkcji Integracji danych do synch
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 
-Aby wyświetlić dostępne szablony, otwórz [Centrum administracyjne usługi PowerApps](https://admin.powerapps.com/dataintegration). Wybierz opcję **Projekty**, a następnie w prawym górnym rogu wybierz opcję **Nowy projekt**, aby wybrać szablony publiczne.
+Aby wyświetlić dostępne szablony, otwórz [Centrum administracyjne usługi Power Apps](https://admin.powerapps.com/dataintegration). Wybierz opcję **Projekty**, a następnie w prawym górnym rogu wybierz opcję **Nowy projekt**, aby wybrać szablony publiczne.
 
 Następujący szablon i podstawowe zadanie są używane do synchronizowania kont klientów z usługi Supply Chain Management do Sales:
 
@@ -116,7 +116,7 @@ Poniższa ilustracja przedstawia przykład mapowania szablonu w integracji danyc
 
 [Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Supply Chain Management](contacts-template-mapping-direct.md)
 
-[Synchronizowanie nagłówków i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales](sales-order-template-mapping-direct-two-ways.md)
+[Synchronizowanie zamówień sprzedaży w rozwiązaniu Sales bezpośrednio z elementami w rozwiązaniu Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
 
 [Synchronizowanie nagłówków faktur i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales](sales-invoice-template-mapping-direct.md)
 

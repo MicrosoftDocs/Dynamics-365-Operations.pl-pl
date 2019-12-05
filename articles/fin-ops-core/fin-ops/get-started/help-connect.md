@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 491024c9c3d6c7d20ef212e167ceab6abac8dac7
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537862"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812587"
 ---
 # <a name="connect-the-help-system"></a>Łączenie z systemem Pomocy
 
@@ -54,7 +54,7 @@ Na stronie **Parametry systemu** wykonaj następujące kroki:
 > [!IMPORTANT]
 > Podczas pierwszego otwierania karty **Pomoc** należy utworzyć połączenie z usługą Lifecycle Services. Kliknij łącze na środku formularza, poczekaj na nawiązanie połączenia, zamknij okno dialogowe i kliknij przycisk **OK**, co spowoduje przejście do formularza **Parametry systemu**.
 >
-> [![Podłączanie do LCS](./media/connect-to-lcs-crop-1024x365.png "Podłączanie do LCS")](./media/connect-to-lcs-crop.png)
+> [![Nawiązywanie połączenia z usługą LCS](./media/connect-to-lcs-crop-1024x365.png "Nawiązywanie połączenia z usługą LCS")](./media/connect-to-lcs-crop.png)
 
 1. Wybierz projekt Lifecycle Services, z którym chcesz się połączyć.
 2. Wybierz biblioteki BPM (w ramach wybranego projektu), z których będą pobierane nagrania zadań.
@@ -80,7 +80,7 @@ Można przewodników po zadaniach do tworzenia pomocy niestandardowej lub połą
 
 W Finance, Supply Chain Management i aplikacji Retail można utworzyć pomoc niestandardową poprzez utworzenie nagrań zadań odpowiadających konkretnemu wdrożeniu i zapisanie ich w bibliotece procesów biznesowych LCS. Nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Talent.
 
-W przypadku partnerów: jeśli zostanie podniesiony poziom biblioteki do firmowej i zostanie ona uwzględniona w rozwiązaniu, będzie dostępna dla klientów. Można również utworzyć kopię ujednoliconej globalnej biblioteki APQC, a następnie otworzyć tę kopię, otwierać z niej nagrania zadań, modyfikować je i zapisywać nagrania z wprowadzonymi zmianami. Aby uzyskać więcej informacji, zobacz [Jak utworzyć nagrania zadań do użycia w dokumentacji lub na szkoleniach](../../dev-itpro/user-interface/task-recorder.md).
+W przypadku partnerów: jeśli zostanie podniesiony poziom biblioteki do firmowej i zostanie ona uwzględniona w rozwiązaniu, będzie dostępna dla klientów. Można również utworzyć kopię ujednoliconej globalnej biblioteki APQC, a następnie otworzyć tę kopię, otwierać z niej nagrania zadań, modyfikować je i zapisywać nagrania z wprowadzonymi zmianami. Więcej informacji można znaleźć w see [Zasoby Rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md).
 
 ### <a name="connect-a-custom-site"></a>Łączenie z niestandardową witryną
 
@@ -91,8 +91,8 @@ Firma Microsoft oferuje wytyczne i przykładowy kod opisujące tworzenie oraz ł
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie Pomocy](help-overview.md)
+[System Pomocy](help-overview.md)
 
-[Omówienie rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md)
+[Zasoby rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md)
 
-[Jak utworzyć nagrania zadań do użycia w dokumentacji lub na szkoleniach](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań](../../dev-itpro/user-interface/task-recorder-training-docs.md)

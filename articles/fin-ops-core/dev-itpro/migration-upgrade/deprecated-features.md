@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1c5dea039ae6482bfd9e036642c23463f5bc3a
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 52ed93ae425a821ebce4ed63f154e155cb161e94
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658697"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812000"
 ---
 # <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Usuwanie lub przestarzałe funkcje w Finance and Operations
 
@@ -348,7 +348,7 @@ Począwszy od 15 lutego 2018 roku sprzedawcy detaliczni nie będą już mogli wy
 | **Stan**                         |Usunięto 15 lutego 2018 r. Dotyczy to klientów używających programu Dynamics 365 for Operations w wersji 1611 i nowszych.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Poszerzanie listy funkcji raportowania elektronicznego (ER)
-Możliwość wprowadzenia niestandardowych funkcji w celu użycia w Konstruktorze wyrażeń ER (aby uzyskać więcej informacji, zobacz [Rozszerzenie wykazu funkcje raportowania elektronicznego](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) nie jest już obsługiwana. Z powodu zmian w interfejsie API ER interfejs API do wywoływania wbudowanych funkcji z konstruktora wyrażeń jest wewnętrzny i nie można go już rozszerzyć.
+Możliwość wprowadzenia niestandardowych funkcji w celu użycia w Konstruktorze wyrażeń ER (aby uzyskać więcej informacji, zobacz [Rozszerzenie wykazu funkcje raportowania elektronicznego (ER)](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) nie jest już obsługiwana. Z powodu zmian w interfejsie API ER interfejs API do wywoływania wbudowanych funkcji z konstruktora wyrażeń jest wewnętrzny i nie można go już rozszerzyć.
 
 |   |  |
 |------------|--------------------|
@@ -474,7 +474,7 @@ Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym 
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Pokrywające się funkcje.       |
-| **Zamieniona przez inną funkcję?**   | Tak. Ta funkcja została zastąpiona przez moduł Finance and Operations — Magazynowanie. Aby uzyskać więcej informacji na temat konfiguracji i wymagań wstępnych, zobacz [Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Zamieniona przez inną funkcję?**   | Tak. Ta funkcja została zastąpiona przez moduł Finance and Operations — Magazynowanie. Aby uzyskać więcej informacji na temat konfiguracji i wymagań wstępnych, zobacz [Omówienie instalowania i konfiguracji aplikacji Magazynowanie](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Powiązane obszary produktów**         | Zarządzanie magazynem, Zarządzanie transportem     |
 | **Opcja wdrażania**              | Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym składnikiem przeznaczonym do lokalnego samodzielnego instalowania.               |
 | **Stan**                         | Wycofane: docelowy okres usuwania funkcji to czwarty kwartał 2019 roku.   |
@@ -1244,7 +1244,7 @@ Konstruktor produktów był używany do dynamicznego konfigurowania elementów z
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Konstruktor produktów pokazywał kod X ++ użytkownikom końcowym, a w aktualnej wersji systemu Dynamics AX nie powinno do tego dochodzić. Funkcja została usunięta, by uniknąć duplikowania się działań na zachodzących na siebie, dużych podstawach kodu.  |
-| **Zamieniona przez inną funkcję?**   | Tak. Konfigurację opartą na ograniczeniach wprowadzono w systemie Dynamics AX 2012, w którym ogłoszono już wycofanie funkcji Konstruktor produktów w przyszłych wersjach. Technologia konfiguracji opartej na ograniczeniach jest wybierana w produktach głównych w celu włączenia konfiguracji. Aby dowiedzieć się więcej, zobacz [Tworzenie modelu konfiguracji produktu](../../../supply-chain/pim/build-product-configuration-model.md). |
+| **Zamieniona przez inną funkcję?**   | Tak. Konfigurację opartą na ograniczeniach wprowadzono w systemie Dynamics AX 2012, w którym ogłoszono już wycofanie funkcji Konstruktor produktów w przyszłych wersjach. Technologia konfiguracji opartej na ograniczeniach jest wybierana w produktach głównych w celu włączenia konfiguracji. Aby dowiedzieć się więcej, zobacz [Omówienie konfiguracji produktu](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Powiązane obszary produktów**         | Zarządzanie informacjami o produktach, Sprzedaż i marketing  |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.      |
 

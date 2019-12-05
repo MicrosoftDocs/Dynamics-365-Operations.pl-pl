@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 9cc45a3ed468541fc0a5c8e80e745854148165e4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 86d81d60fcbc77375f3b8c525e8c084e3a3d8a99
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026084"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773700"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (2 kwietnia 2019)
 
@@ -63,7 +63,7 @@ Aby uzyskać więcej informacji dotyczących 25. aktualizacji platformy dla rozw
 W wielu organizacjach menedżerowie ds. wynagrodzenia i świadczeń mogą mieć dostęp tylko do konkretnych rekordów wynagrodzeń. Może to obejmować rekordy kierowników lub pracowników regionalnych. W przypadku tej zmiany można zarządzać różnymi planami wynagrodzeń dla różnych grup pracowników w organizacji. Role zabezpieczeń można przypisać do planów stałych i zmiennych. Te role zabezpieczeń określają dostęp do planów i powiązanych danych pracownika, takich jak wynagrodzenia i dodatki, więc tylko te role mogą przetwarzać wynagrodzenia dla grup pracowników.
 
 ### <a name="upgrade-to-common-data-service"></a>Uaktualnianie do rozwiązania Common Data Service
-Zbliżają się terminy uaktualniania do Common Data Service dla aplikacji. Zaloguj się do Centrum administracyjnego usługi PowerApps, aby określić, czy baza danych wymaga uaktualnienia. Aby uzyskać więcej informacji dotyczących terminów i niezbędne kroki w celu uaktualnienia, zobacz [uaktualnienia do Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Zbliżają się terminy uaktualniania do Common Data Service dla aplikacji. Zaloguj się do Centrum administracyjnego usługi Microsoft Power Apps, aby określić, czy baza danych wymaga uaktualnienia. Aby uzyskać więcej informacji dotyczących terminów i niezbędne kroki w celu uaktualnienia, zobacz [uaktualnienia do Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Wersja próbna
 

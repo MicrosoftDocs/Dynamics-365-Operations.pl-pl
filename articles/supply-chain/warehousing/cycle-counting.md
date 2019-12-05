@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d7ec95b230c5ea17f208bc1288c10fce15631a5d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251530"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813070"
 ---
 # <a name="cycle-counting"></a>Inwentaryzacja ciągła
 
@@ -136,7 +136,7 @@ Różnice w inwentaryzacji ciągłej występują w następujących scenariuszach
 Na stronie **Inwentaryzacja cykliczna oczekuje na przegląd** można uzgodnić różnice zliczonej wartości, a następnie zaakceptować zliczoną wartość. Na stronie **Dostępne zapasy według lokalizacji** można zweryfikować zmodyfikowane obliczenie ilości towaru. Zliczona wartość jest odrzucana, jeśli różnicy nie można zatwierdzić.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-[Konfigurowanie urządzeń przenośnych do pracy w magazynie](configure-mobile-devices-warehouse.md)
+[Konfigurowanie urządzeń przenośnych do pracy magazynowej](configure-mobile-devices-warehouse.md)
 
 
 

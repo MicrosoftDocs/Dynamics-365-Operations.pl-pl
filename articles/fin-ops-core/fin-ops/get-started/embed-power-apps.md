@@ -1,6 +1,6 @@
 ---
-title: Osadzone aplikacje PowerApps
-description: W tym temacie opisano sposób osadzania aplikacji PowerApps na kliencie w celu rozszerzenia funkcjonalności produktu.
+title: Osadzone Power Apps
+description: W tym temacie opisano sposób osadzania aplikacji Power Apps na kliencie w celu rozszerzenia funkcjonalności produktu.
 author: jasongre
 manager: AnnBe
 ms.date: 09/20/2019
@@ -16,104 +16,104 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 37faf2a7a880c384f6f01d06ef5c9f28055d5006
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 755a30f89725ca0a7e1c14252984c617d6ba280e
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191185"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824500"
 ---
-# <a name="embed-powerapps-apps"></a>Osadzone aplikacje PowerApps
+# <a name="embed-microsoft-power-apps"></a>Osadzone Microsoft Power Apps
 
 [!include [banner](../includes/banner.md)]
 
-W aktualizacji platformy 14 jest obsługiwana integracja z Microsoft PowerApps — usługa dla deweloperów i użytkowników nietechnicznych, która umożliwia tworzenie niestandardowych aplikacji biznesowych dla urządzeń przenośnych, tabletów i sieci web bez pisania kodu. Aplikacje PowerApps opracowane przez użytkownika, organizację lub członków szerszego ekosystemu można następnie osadzać w aplikacjach Finance and Operations w celu rozszerzenia funkcjonalności produktu. Na przykład można utworzyć aplikację PowerApp w celu uzupełniania aplikacji Finance and Operations o informacje pobrane z innego systemu.
+W aktualizacji platformy 14 jest obsługiwana integracja z Microsoft Power Apps — usługa dla deweloperów i użytkowników nietechnicznych, która umożliwia tworzenie niestandardowych aplikacji biznesowych dla urządzeń przenośnych, tabletów i sieci web bez pisania kodu. Aplikacje Power Apps opracowane przez użytkownika, organizację lub członków szerszego ekosystemu można następnie osadzać w aplikacjach Finance and Operations w celu rozszerzenia funkcjonalności produktu. Na przykład można utworzyć PowerApp w celu uzupełniania aplikacji Finance and Operations o informacje pobrane z innego systemu.
 
-Aby uzyskać więcej informacji o osadzaniu PowerApps , obejrzyj krótki film [Jak osadzać PowerApps](https://www.youtube.com/watch?v=x3qyA1bH-NY).
+Aby uzyskać więcej informacji o osadzaniu Power Apps , obejrzyj krótki film [Jak osadzać Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
-## <a name="adding-an-embedded-powerapp-to-a-page"></a>Dodawanie osadzonej aplikacji PowerApp do strony
+## <a name="adding-an-embedded-power-app-to-a-page"></a>Dodawanie osadzonej PowerApp do strony
 
 ### <a name="overview"></a>Przegląd
 
-Przed osadzeniem aplikacji PowerApp w kliencie najpierw należy odnaleźć lub utworzyć aplikację PowerApp z żądanymi elementami wizualnymi i/lub funkcjami. Tutaj nie opiszemy szczegółowego procesu kompilowania aplikacji PowerApp . Temat [Wprowadzenie do PowerApps](https://docs.microsoft.com/powerapps/getting-started) jest dobrym punktem wyjściowym dla nowych użytkowników PowerApps.
+Przed osadzeniem PowerApp w kliencie najpierw należy odnaleźć lub utworzyć PowerApp z żądanymi elementami wizualnymi i/lub funkcjami. Tutaj nie opiszemy szczegółowego procesu kompilowania PowerApp. Temat [Wprowadzenie do Power Apps](https://docs.microsoft.com/powerapps/getting-started) jest dobrym punktem wyjściowym dla nowych użytkowników Power Apps.
 
-Gdy masz wszystko gotowe do rozpoczęcia osadzania konkretnej aplikacji PowerApp, możesz wybrać jeden z dwóch sposobów dostępu do aplikacji PowerApp na stronie — zależnie od tego, który scenariusz lepiej Ci pasuje. Pierwszy sposób to użycie przycisku PowerApps, który został dodany do standardowego okienka akcji. Aplikacje PowerApps dodane za pomocą tego mechanizmu będą wyświetlane jako elementy menu wewnątrz przycisku menu PowerApps. Wybranie elementu menu spowoduje otwarcie okienka bocznego zawierającego odpowiednią osadzoną aplikację PowerApp. Alternatywnie można wybrać wyświetlanie aplikacji PowerApp bezpośrednio na stronie w postaci nowej karty, karty skróconej, bloku lub nowej sekcji w obszarze roboczym.
+Gdy masz wszystko gotowe do rozpoczęcia osadzania konkretnej PowerApp, możesz wybrać jeden z dwóch sposobów dostępu do PowerApp na stronie — zależnie od tego, który scenariusz lepiej Ci pasuje. Pierwszy sposób to użycie przycisku Power Apps, który został dodany do standardowego okienka akcji. Aplikacje Power Apps dodane za pomocą tego mechanizmu będą wyświetlane jako elementy menu wewnątrz przycisku menu Power Apps. Wybranie elementu menu spowoduje otwarcie okienka bocznego zawierającego odpowiednią osadzoną PowerApp. Alternatywnie można wybrać wyświetlanie PowerApp bezpośrednio na stronie w postaci nowej karty, karty skróconej, bloku lub nowej sekcji w obszarze roboczym.
 
-Podczas konfigurowania osadzonej aplikacji PowerApp można wybrać jedno pole, którego zawartość ma być wysyłana jako dane wejściowe do aplikacji PowerApp. Dzięki temu aplikacja PowerApp może reagować na podstawie danych obecnie wyświetlanych.
+Podczas konfigurowania osadzonej PowerApp można wybrać jedno pole, którego zawartość ma być wysyłana jako dane wejściowe do PowerApp. Dzięki temu PowerApp może reagować na podstawie danych obecnie wyświetlanych.
 
 ### <a name="details"></a>Szczegóły
 
-Poniższe instrukcje przedstawiają sposoby osadzania aplikacji PowerApp w kliencie internetowym.
+Poniższe instrukcje przedstawiają sposoby osadzania PowerApp w kliencie internetowym.
 
-1. Przejdź do strony, w której chcesz osadzić aplikację PowerApp. Jest to ta sama strona, która zawiera wszelkie dane, jakie muszą zostać przekazane do aplikacji PowerApp jako dane wejściowe.
-2. Otwórz okienko **Wstaw aplikację PowerApp**:
+1. Przejdź do strony, w której chcesz osadzić PowerApp. Jest to ta sama strona, która zawiera wszelkie dane, jakie muszą zostać przekazane do PowerApp jako dane wejściowe.
+2. Otwórz okienko **Wstaw PowerApp**:
 
-    - Kliknij przycisk **Opcje**, a następnie wybierz opcję **Personalizuj ten formularz**. W menu **Wstaw** wybierz polecenie **PowerApp**. Na koniec wybierz region, w którym chcesz dodać aplikację PowerApp. Jeśli chcesz osadzić aplikację PowerApp w przycisku menu PowerApps, wybierz okienko akcji. Jeśli chcesz osadzić aplikację PowerApp bezpośrednio na stronie, wybierz odpowiednią kartę, kartę skróconą, blok lub sekcję (jeśli pracujesz w obszarze roboczym).
-    - Jeśli dostęp do aplikacji PowerApp będzie uzyskiwany przy użyciu przycisku menu PowerApps, można również kliknąć przycisk menu **PowerApps** w standardowym okienku akcji, a następnie wybrać opcję **Wstaw aplikację PowerApp**.
+    - Kliknij przycisk **Opcje**, a następnie wybierz opcję **Personalizuj ten formularz**. W menu **Wstaw** wybierz polecenie **Power App**. Na koniec wybierz region, w którym chcesz dodać PowerApp. Jeśli chcesz osadzić PowerApp w przycisku menu Power Apps, wybierz okienko akcji. Jeśli chcesz osadzić PowerApp bezpośrednio na stronie, wybierz odpowiednią kartę, kartę skróconą, blok lub sekcję (jeśli pracujesz w obszarze roboczym).
+    - Jeśli dostęp do PowerApp będzie uzyskiwany przy użyciu przycisku menu Power Apps, można również kliknąć przycisk menu **Power Apps** w standardowym okienku akcji, a następnie wybrać opcję **Wstaw PowerApp**.
 
-3. Konfigurowanie osadzonej aplikacji PowerApp:
+3. Konfigurowanie osadzonej PowerApp:
 
-    - Pole **Nazwa** wskazuje tekst, jaki będzie wyświetlany na przycisku lub karcie zawierającej osadzoną aplikację PowerApp. Często w tym polu warto powtórzyć nazwę aplikacji PowerApp.
-    - **Identyfikator aplikacji** to identyfikator GUID aplikacji PowerApp, która ma być osadzona. Aby pobrać tę wartość, odszukaj aplikację PowerApp na stronie [web.powerapps.com](https://web.powerapps.com), a następnie odszukaj pole **Identyfikator aplikacji** w obszarze **Szczegóły**.
-    - W obszarze **Dane wejściowe dla aplikacji PowerApp** można opcjonalnie wybrać pole zawierające dane, które mają być przekazywane do aplikacji PowerApp jako dane wejściowe. Zobacz w dalszej części tego tematu sekcję zatytułowaną [Kompilowanie aplikacji PowerApp wykorzystującej dane z aplikacji Finance and Operations](#building-a-powerapp-that-leverages-data-sent-from-finance-and-operations-apps), gdzie dowiesz się dokładnie, jak aplikacja PowerApp może uzyskiwać dostęp do danych wysyłanych z aplikacji Finance and Operations.
-    - Wybierz wartość **Rozmiar aplikacji** pasującą do typu osadzanej aplikacji PowerApp. Wybierz opcję **Ograniczona** dla PowerApps przeznaczonych na urządzenia przenośne, a opcję **Rozbudowana** dla PowerApps przeznaczonych na tablety. To zagwarantuje przeznaczenie wystarczającej ilości miejsca na wbudowaną aplikację PowerApp.
-    - Na skróconej karcie **Firmy** można wybrać firmy, dla których aplikacja PowerApp będzie dostępna. Domyślnie aplikacja PowerApp jest wyświetlana we wszystkich firmach.
+    - Pole **Nazwa** wskazuje tekst, jaki będzie wyświetlany na przycisku lub karcie zawierającej osadzoną PowerApp. Często w tym polu warto powtórzyć nazwę PowerApp.
+    - **Identyfikator aplikacji** to identyfikator GUID PowerApp, która ma być osadzona. Aby pobrać tę wartość, odszukaj PowerApp na stronie [web.powerapps.com](https://web.powerapps.com), a następnie odszukaj pole **Identyfikator aplikacji** w obszarze **Szczegóły**.
+    - W obszarze **Dane wejściowe dla PowerApp** można opcjonalnie wybrać pole zawierające dane, które mają być przekazywane do PowerApp jako dane wejściowe. Zobacz w dalszej części tego tematu sekcję zatytułowaną [Kompilowanie PowerApp wykorzystującej dane z aplikacji Finance and Operations](#building-a-powerapp-that-leverages-data-sent-from-finance-and-operations-apps), gdzie dowiesz się dokładnie, jak PowerApp może uzyskiwać dostęp do danych wysyłanych z aplikacji Finance and Operations.
+    - Wybierz wartość **Rozmiar aplikacji** pasującą do typu osadzanej PowerApp. Wybierz opcję **Ograniczona** dla Power Apps przeznaczonych na urządzenia przenośne, a opcję **Rozbudowana** dla Power Apps przeznaczonych na tablety. To zagwarantuje przeznaczenie wystarczającej ilości miejsca na wbudowaną PowerApp.
+    - Na skróconej karcie **Firmy** można wybrać firmy, dla których PowerApp będzie dostępna. Domyślnie PowerApp jest wyświetlana we wszystkich firmach.
 
-4. Po potwierdzeniu, że konfiguracja jest poprawna, kliknij przycisk **Wstaw**, co spowoduje osadzenie aplikacji PowerApp na stronie. Zobaczysz monit o odświeżenie przeglądarki, aby zobaczyć osadzoną aplikację PowerApp.
+4. Po potwierdzeniu, że konfiguracja jest poprawna, kliknij przycisk **Wstaw**, co spowoduje osadzenie PowerApp na stronie. Zobaczysz monit o odświeżenie przeglądarki, aby zobaczyć osadzoną PowerApp.
 
-## <a name="sharing-an-embedded-powerapp"></a>Udostępnianie osadzonej aplikacji PowerApp
+## <a name="sharing-an-embedded-power-app"></a>Udostępnianie osadzonej PowerApp
 
-Po osadzeniu aplikacji PowerApp na stronie i sprawdzeniu, że działa poprawnie z każdym kontekstem danych przekazanym ze strony, można udostępnić osadzoną aplikację PowerApp innym użytkownikom w systemie. Można to zrobić na dwa różne sposoby przy użyciu funkcji personalizacji produktu:
+Po osadzeniu PowerApp na stronie i sprawdzeniu, że działa poprawnie z każdym kontekstem danych przekazanym ze strony, można udostępnić osadzoną PowerApp innym użytkownikom w systemie. Można to zrobić na dwa różne sposoby przy użyciu funkcji personalizacji produktu:
 
 - Zalecanym scenariuszem jest skorzystanie z pośrednictwa administratora systemu, który może rozesłać personalizację do wszystkich użytkowników lub tylko do grupy użytkowników.
 - Alternatywnie można wyeksportować personalizacje strony, wysłać je do jednego lub więcej użytkowników, a następnie polecić użytkownikom, aby zaimportowali zmiany. Opcja Zarządzaj umieszczona na pasku narzędzi personalizacji umożliwia eksportowanie i importowanie personalizacji.
 
 Temat [Personalizowanie środowiska użytkownika](personalize-user-experience.md) zawiera więcej informacji o funkcjach personalizacji w produkcie oraz o sposobach ich używania.
 
-## <a name="building-a-powerapp-that-leverages-data-sent-from-finance-and-operations-apps"></a>Kompilowanie aplikacji PowerApp wykorzystującej dane z aplikacji Finance and Operations
+## <a name="building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps"></a>Kompilowanie PowerApp wykorzystującej dane z aplikacji Finance and Operations
 
-Ważną częścią procesu tworzenia aplikacji PowerApp, która zostanie osadzona w aplikacjach Finance and Operations, jest wykorzystywanie danych wejściowych z aplikacji Finance and Operations. Wewnątrz aplikacji PowerApp dostęp do tych danych wejściowych można uzyskać za pomocą zmiennej Param("EntityId").
+Ważną częścią procesu tworzenia PowerApp, która zostanie osadzona w aplikacjach Finance and Operations, jest wykorzystywanie danych wejściowych z aplikacji Finance and Operations. Wewnątrz PowerApp dostęp do tych danych wejściowych można uzyskać za pomocą zmiennej Param("EntityId").
 
-Na przykład w funkcji OnStart wewnątrz aplikacji PowerApp można ustawić dane wejściowe z aplikacji Finance and Operations w następujący sposób:
+Na przykład w funkcji OnStart wewnątrz PowerApp można ustawić dane wejściowe z aplikacji Finance and Operations w następujący sposób:
 
 ```
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
-## <a name="viewing-an-embedded-powerapp"></a>Wyświetlanie osadzonej aplikacji PowerApp
+## <a name="viewing-an-embedded-power-app"></a>Wyświetlanie osadzonej PowerApp
 
-Aby wyświetlić osadzoną aplikację PowerApp na stronie aplikacji Finance and Operations, po prostu przejdź do strony z osadzoną aplikacją PowerApp. Przypominamy, że dostęp do PowerApps można uzyskać za pomocą przycisku PowerApps w standardowym okienku akcji lub też aplikacje PowerApp mogą być wyświetlane bezpośrednio na stronie jako nowa karta, karta skrócona, blok lub nowa sekcja w obszarze roboczym. Gdy użytkownik po raz pierwszy próbuje załadować aplikację PowerApp na stronie, zobaczy monit o zalogowanie się do PowerApps w celu potwierdzenia, że ma odpowiednie uprawnienia potrzebne do korzystania z aplikacji PowerApp.
+Aby wyświetlić osadzoną PowerApp na stronie aplikacji Finance and Operations, po prostu przejdź do strony z osadzoną PowerApp. Przypominamy, że dostęp do Power Apps można uzyskać za pomocą przycisku Power Apps w standardowym okienku akcji lub też aplikacje PowerApp mogą być wyświetlane bezpośrednio na stronie jako nowa karta, karta skrócona, blok lub nowa sekcja w obszarze roboczym. Gdy użytkownik po raz pierwszy próbuje załadować PowerApp na stronie, zobaczy monit o zalogowanie się do Power Apps w celu potwierdzenia, że ma odpowiednie uprawnienia potrzebne do korzystania z PowerApp.
 
-## <a name="editing-an-embedded-powerapp"></a>Edytowanie osadzonej aplikacji PowerApp
+## <a name="editing-an-embedded-power-app"></a>Edytowanie osadzonej PowerApp
 
-Po osadzeniu aplikacji PowerApp na stronie może być konieczne wprowadzenie pewnych zmian w konfiguracji tej aplikacji. Na przykład prawdopodobnie zechcesz zmodyfikować etykietę skojarzoną z osadzoną aplikacją PowerApp lub też utworzono nową wersję aplikacji PowerApp i trzeba zaktualizować identyfikatora aplikacji, tak aby wskazywał najnowszą wersję.
+Po osadzeniu PowerApp na stronie może być konieczne wprowadzenie pewnych zmian w konfiguracji tej PowerApp. Na przykład prawdopodobnie zechcesz zmodyfikować etykietę skojarzoną z osadzoną PowerApp lub też utworzono nową wersję PowerApp i trzeba zaktualizować identyfikatora PowerApp, tak aby wskazywał najnowszą wersję.
 
-Wykonaj następujące czynności, aby edytować konfigurację osadzonej aplikacji PowerApp:
+Wykonaj następujące czynności, aby edytować konfigurację osadzonej PowerApp:
 
-1. Przejdź do okienka **Edytuj aplikację PowerApp**.
+1. Przejdź do okienka **Edytuj PowerApp**.
 
-    - Jeśli dostęp do osadzonej aplikacji PowerApp uzyskuje się za pośrednictwem przycisk menu PowerApps, kliknij prawym przyciskiem myszy przycisk menu PowerApps i wybierz polecenie **Personalizuj**. Z menu rozwijanego **Wybierz aplikację PowerApp** wybierz aplikację PowerApp, którą chcesz skonfigurować.
-    - Jeśli osadzona aplikacja PowerApp pojawia się bezpośrednio na stronie, kliknij przycisk **Opcje**, a następnie wybierz opcję **Personalizuj ten formularz**. Za pomocą narzędzia **Wybierz** kliknij osadzoną aplikację PowerApp.
+    - Jeśli dostęp do osadzonej PowerApp uzyskuje się za pośrednictwem przycisk menu Power Apps, kliknij prawym przyciskiem myszy przycisk menu Power Apps i wybierz polecenie **Personalizuj**. Z menu rozwijanego **Wybierz PowerApp** wybierz PowerApp, którą chcesz skonfigurować.
+    - Jeśli osadzona PowerApp pojawia się bezpośrednio na stronie, kliknij przycisk **Opcje**, a następnie wybierz opcję **Personalizuj ten formularz**. Za pomocą narzędzia **Wybierz** kliknij osadzoną PowerApp.
 
-2. Wprowadź wymagane modyfikacje w konfiguracji PowerApps, a następnie kliknij przycisk **Zapisz**.
+2. Wprowadź wymagane modyfikacje w konfiguracji Power Apps, a następnie kliknij przycisk **Zapisz**.
 
-## <a name="removing-an-embedded-powerapp"></a>Usuwanie osadzonej aplikacji PowerApp
+## <a name="removing-an-embedded-power-app"></a>Usuwanie osadzonej PowerApp
 
-Po osadzeniu aplikacji PowerApp na stronie istnieją dwa sposoby jej usunięcia w razie potrzeby:
+Po osadzeniu PowerApp na stronie istnieją dwa sposoby jej usunięcia w razie potrzeby:
 
-- Przejdź do okienka **Edytuj aplikację PowerApp** przy użyciu instrukcji zawartych w sekcji [Edytowanie osadzonej aplikacji PowerApp](#editing-an-embedded-powerapp) wcześniej w tym temacie. Upewnij się, że w okienku są wyświetlane informacje dotyczące osadzonej aplikacji PowerApp, którą chcesz usunąć, a następnie kliknij przycisk **Usuń**.
-- Ponieważ osadzona aplikacja PowerApp jest zapisywana jako dane personalizacji, wyczyszczenie personalizacji strony spowoduje również usunięcie wszelkich osadzonych PowerApps znajdujących się na tej stronie. Należy zauważyć, że wyczyszczenie personalizacji strony jest trwałe i nie można go cofnąć. Aby usunąć personalizacje ze strony, kliknij przycisk **Opcje**, a następnie wybierz opcję **Personalizuj ten formularz**. W menu **Zarządzaj** naciśnij przycisk **Wyczyść**. Po odświeżeniu przeglądarki wszystkie poprzednie personalizacje tej strony zostaną usunięte. W temacie [Personalizowanie środowiska użytkownika](personalize-user-experience.md) znajdziesz więcej informacji o optymalizowaniu stron za pomocą personalizacji.
+- Przejdź do okienka **Edytuj PowerApp** przy użyciu instrukcji zawartych w sekcji [Edytowanie osadzonej PowerApp](#editing-an-embedded-powerapp) wcześniej w tym temacie. Upewnij się, że w okienku są wyświetlane informacje dotyczące osadzonej PowerApp, którą chcesz usunąć, a następnie kliknij przycisk **Usuń**.
+- Ponieważ osadzona PowerApp jest zapisywana jako dane personalizacji, wyczyszczenie personalizacji strony spowoduje również usunięcie wszelkich osadzonych Power Apps znajdujących się na tej stronie. Należy zauważyć, że wyczyszczenie personalizacji strony jest trwałe i nie można go cofnąć. Aby usunąć personalizacje ze strony, kliknij przycisk **Opcje**, a następnie wybierz opcję **Personalizuj ten formularz**. W menu **Zarządzaj** naciśnij przycisk **Wyczyść**. Po odświeżeniu przeglądarki wszystkie poprzednie personalizacje tej strony zostaną usunięte. W temacie [Personalizuj środowiska użytkownika](personalize-user-experience.md) znajdziesz więcej informacji o optymalizowaniu stron za pomocą personalizacji.
 
 ## <a name="appendix"></a>Dodatek
 
-### <a name="developer-control-over-where-a-powerapp-can-be-embedded"></a>Kontrola dewelopera nad miejscem osadzenia aplikacji PowerApp
+### <a name="developer-control-over-where-a-power-app-can-be-embedded"></a>Kontrola dewelopera nad miejscem osadzenia PowerApp
 
-Domyślnie użytkownicy mogą osadzać PowerApps na każdej stronie, używając do tego przycisku menu PowerApps lub bezpośrednio na stronie w postaci karty, karty skróconej, bloku lub nowej sekcji w obszarze roboczym. Jednak w razie potrzeby deweloperzy mogą również skonfigurować tę funkcję tak, aby zezwalać na osadzanie PowerApps tylko na niektórych stronach. Służą do tego następujące metody:
+Domyślnie użytkownicy mogą osadzać Power Apps na każdej stronie, używając do tego przycisku menu Power Apps lub bezpośrednio na stronie w postaci karty, karty skróconej, bloku lub nowej sekcji w obszarze roboczym. Jednak w razie potrzeby deweloperzy mogą również skonfigurować tę funkcję tak, aby zezwalać na osadzanie Power Apps tylko na niektórych stronach. Służą do tego następujące metody:
 
-- **isPowerAppPersonalizationEnabled** — jeśli ta metoda zwraca wartość false dla określonej strony, to przycisk menu PowerApps nie będzie wyświetlany, a użytkownicy nie będą mogli osadzać PowerApps nigdzie na tej stronie, w tym w postaci karty.
-- **isPowerAppTabPersonalizationEnabled** — jeśli ta metoda zwraca wartość false dla określonej strony, to użytkownicy nie będą mogli osadzać PowerApps bezpośrednio na stronie w postaci karty, skróconej karty ani sekcji panoramy. Użytkownicy nadal będą mogli osadzać PowerApps za pomocą przycisku menu PowerApps, o ile tylko osadzanie jest dozwolone na stronie.
+- **isPowerAppPersonalizationEnabled** — jeśli ta metoda zwraca wartość false dla określonej strony, to przycisk menu Power Apps nie będzie wyświetlany, a użytkownicy nie będą mogli osadzać Power Apps nigdzie na tej stronie, w tym w postaci karty.
+- **isPowerAppTabPersonalizationEnabled** — jeśli ta metoda zwraca wartość false dla określonej strony, to użytkownicy nie będą mogli osadzać Power Apps bezpośrednio na stronie w postaci karty, skróconej karty ani sekcji panoramy. Użytkownicy nadal będą mogli osadzać Power Apps za pomocą przycisku menu Power Apps, o ile tylko osadzanie jest dozwolone na stronie.
 
-Poniższy przykład przedstawia nową klasę z dwoma metodami potrzebnymi do określenia, gdzie można osadzać PowerApps.
+Poniższy przykład przedstawia nową klasę z dwoma metodami potrzebnymi do określenia, gdzie można osadzać Power Apps.
 
 ```
 [ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]

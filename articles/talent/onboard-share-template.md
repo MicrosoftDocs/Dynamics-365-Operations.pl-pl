@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 010d68b79300d15292dbcd4754eed8aac115cdce
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551456"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812840"
 ---
 # <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Udostępnianie zawartości innym współautorom w Dynamics 365 Talent - Onboard
 
@@ -53,7 +53,7 @@ Microsoft Dynamics 365 Talent: Onboard pozwala udostępniać przewodniki wdraża
 
 3. W obszarze **Odbioraca**, jeśli odbiorcy powinni mieć możliwość zmiany szablonu, ustaw opcję **Czy te osoby mogą wprowadzać zmiany?** na **Włączona**. Jeśli odbiorcy powinni zostać powiadomieni pocztą elektroniczną, że udostępniłeś im szablon , ustaw opcję **Wyślij powiadomienie e-mail do adresatów** na **Włączona**.
 
-    [!Ustawianie dostępu i preferencji e-mail dla szablonu](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
+    [![Ustawianie dostępu i preferencji e-mail dla szablonu](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
 
 4. Wprowadź nazwę lub adres e-mail i wybierz odbiorcę z listy rozwijanej.
 5. Na karcie **Zarządzaj dostępem** można przejrzeć lub zmienić, co odbiorcy mogą zrobić z szablonem. Aby zmienić dostęp odbiorcy, na liście rozwijanej obok nazwy adresata wybierz opcję **Można wyświetlić**, **Można edytować** lub **Usuń**, stosownie do potrzeb.
@@ -68,6 +68,6 @@ Microsoft Dynamics 365 Talent: Onboard pozwala udostępniać przewodniki wdraża
 ### <a name="see-also"></a>Informacje dodatkowe
 
 - [Wypróbuj lub kup aplikację Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Co nowego](./whats-new.md)
-- [Informacje o wersji](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Uzyskiwanie pomocy technicznej](./talent-support.md)
+- [Nowości i zmiany w Dynamics 365 Talent](./whats-new.md)
+- [Plany wydań](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Microsoft Dynamics 365 Talent](./talent-support.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 92ef83bc1783b00a4d7d9739ca1c17e863c7ff44
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8be4e225507a18a92d642ff0f3a6ca3d0ff68564
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185274"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772542"
 ---
 # <a name="parse-incoming-documents-in-json-format"></a>Analizowanie dokumentów przychodzących w formacie JSON
 
@@ -46,7 +46,7 @@ Przed ukończeniem modułu ER Utwórz konfigurację formatu w celu zaimportowani
 - Tablice JSON mogą być tylko elementami zagnieżdżonymi elementów właściwości obiektu.
 - Tablice JSON mogą zawierać tylko obiekty JSON. Nie mogą zawierać bezpośrednich wartości ciągów/liczb i tablic zagnieżdżonych. Elementy w tych tablicach zostaną przeanalizowane w kolejności, w jakiej zostały określone w formacie. Zostaną uwzględnione ustawienia wielokrotności dla każdego obiektu JSON.
 
-Ponadto, nalezy wypełnić [ER Utwórz wymagane konfiguracje do zaimportowania danych z zewnętrznego pliku do raportowania elektronicznego](tasks/er-required-configurations-import-data.md) przewodnik po zadaniach, jeśli jeszcze tego nie wykonano. Aby ukończyć przewodnik zadań należy pobrać następujący plik.
+Ponadto, należy wypełnić [ER Utwórz wymagane konfiguracje do zaimportowania danych z zewnętrznego pliku](tasks/er-required-configurations-import-data.md) przewodnik po zadaniach, jeśli jeszcze tego nie wykonano. Aby ukończyć przewodnik zadań należy pobrać następujący plik.
 
 | Nazwa                  | Nazwa pliku |
 |------------------------|-----------|

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 6c045f82f3288dba193721dd80c90e68750af9a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 954e0669c3d24bcc20fe667c22b7dcc367aba1e7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179419"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770811"
 ---
 # <a name="overhead-calculation"></a>Obliczenie narzutu
 
@@ -1411,7 +1411,7 @@ W rachunkowości finansowej koszt 10 000,00 za energię elektryczną jest księg
 </table>
 
 > [!NOTE]
-> W tym temacie opisano, jak podstawowy składnik kosztów — 10001 Energia elektryczna — przepływa przez obiekty kosztów. W efekcie ten koszt ogólny jest rozdzielany (alokowany) do najniższego poziomu w organizacji. Innymi słowy koszt jest zapisywany w ciężar (obciąża) obiekty kosztów na najniższym poziomie. Jeśli potrzebujesz obrazowego przepływu kosztów między obiektami kosztów, można to uzyskać za pomocą zasad akumulacji kosztów. Aby uzyskać więcej informacji, zobacz [Akumulacja kosztów](cost-rollup.md).
+> W tym temacie opisano, jak podstawowy składnik kosztów — 10001 Energia elektryczna — przepływa przez obiekty kosztów. W efekcie ten koszt ogólny jest rozdzielany (alokowany) do najniższego poziomu w organizacji. Innymi słowy koszt jest zapisywany w ciężar (obciąża) obiekty kosztów na najniższym poziomie. Jeśli potrzebujesz obrazowego przepływu kosztów między obiektami kosztów, można to uzyskać za pomocą zasad akumulacji kosztów. Aby uzyskać więcej informacji, [Zasady akumulacji kosztów i obliczanie narzutu](cost-rollup.md).
 
 
 

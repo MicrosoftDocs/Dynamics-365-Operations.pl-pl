@@ -1,5 +1,5 @@
 ---
-title: Dostęp do funkcji w wersji zapoznawczej w aplikacji Microsoft Dynamics 365 Talent
+title: Zarządzanie funkcjami
 description: W tym temacie opisano, jak administrator może włączyć funkcje w wersji zapoznawczej w aplikacji Microsoft Dynamics 365 Talent, oraz podano listę funkcji dostępnych obecnie w wersji zapoznawczej.
 author: tracykeya
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 0f9a83aeea3942d3c56d32956f79490c91565e9e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9f1fb4b929660bbe9018fb98169b3cfddcaec547
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551615"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833307"
 ---
-# <a name="access-preview-features-in-microsoft-dynamics-365-talent"></a>Dostęp do funkcji w wersji zapoznawczej w aplikacji Microsoft Dynamics 365 Talent
+# <a name="manage-features"></a>Zarządzanie funkcjami
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W ramach ciągłego wdrażania nowych funkcji zarządzania kapitałem ludzkim (HCM) w aplikacji Microsoft Dynamics 365 Talent chcemy stworzyć klientom możliwość jak najszybszego zetknięcia się z nimi. Administratorzy mogą przeglądać i używać funkcji zapoznawczych w swoich środowiskach. Te funkcje są prawie gotowe do ogólnego udostępnienia i przeszły wszechstronne testy. Jednak zanim je upublicznimy powszechnie, chcemy jeszcze poznać finalne opinie klientów i przeprowadzić ostatnią weryfikację.
 
@@ -117,6 +117,6 @@ W przesyłanych opiniach i recenzjach produktu nie podawaj żadnych danych osobo
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Wypróbuj lub kup aplikacje Talent](https://dynamics.microsoft.com/talent/overview/)
-- [Co nowego](./whats-new.md)
-- [Informacje o wersji](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Talent](./talent-support.md)
+- [Nowości i zmiany w Dynamics 365 Talent](./whats-new.md)
+- [Plany wydań](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Microsoft Dynamics 365 Talent](./talent-support.md)

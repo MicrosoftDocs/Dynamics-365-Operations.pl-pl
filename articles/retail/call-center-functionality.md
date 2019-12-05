@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 902db94164b35077a876c8041c038af36561a634
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 2e44770af4a30f539e56d38b21c897cacd2707e7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025778"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812346"
 ---
 # <a name="call-center-sales-functionality"></a>Funkcje sprzedaży przez biuro obsługi
 
@@ -44,17 +44,17 @@ Ta strona zawiera łącza do odnośnej dokumentacji związanej z instalacją, ko
 
 ## <a name="configure-the-call-center"></a>Konfigurowanie biura obsługi
 
-[Konfigurowanie opcji przetwarzania zamówień](set-up-order-processing-options.md)
+[Konfigurowanie kanałów biura obsługi](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Konfigurowanie przetwarzania zamówień
 
-[Konfigurowanie alertów o oszustwie](set-up-fraud-alerts.md)
+[Konfigurowanie i praca z alertami o oszustwach w biurze obsługi](set-up-fraud-alerts.md)
 
-[Ręczne wstrzymania zamówień](work-with-order-holds.md)
+[Konfigurowanie i używanie wstrzymań zamówień w biurze obsługi](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Konfigurowanie przetwarzania płatności
 
-[Metody płatności w biurze obsługi](work-with-payments.md)
+[Metody płatności w biurach obsługi](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Konfigurowanie metod dostawy
 
@@ -64,8 +64,8 @@ Ta strona zawiera łącza do odnośnej dokumentacji związanej z instalacją, ko
 
 [Katalogi biura obsługi](call-center-catalogs.md)
 
-[Konfigurowanie analizy RFM](set-up-rfm-analysis.md)
+[Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Konfigurowanie programów sprzedaży ciągłej
 
-[Konfigurowanie programu sprzedaży ciągłej dla biura obsługi](set-up-continuity-program.md)
+[Konfigurowanie programów sprzedaży ciągłej dla biur obsługi](set-up-continuity-program.md)

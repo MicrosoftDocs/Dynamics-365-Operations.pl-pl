@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 94243f83121a1306d8f9ae9be23d24e5c9b63a2d
-ms.sourcegitcommit: 07e109dec176a93eff0df8a37ba5d875f212e9f1
+ms.openlocfilehash: 66419d9093cff68aa6109b22ab57bcb46ac6c718
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "2662672"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772903"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (23 października 2019 r.)
 
@@ -47,7 +47,7 @@ Aby uzyskać więcej informacji, należy zapoznać się z [Nowości i zmiany w a
 
 ### <a name="remove-benefits-open-enrollment-preview-feature"></a>Usuń funkcję podglądu rejestracji otwartych świadczeń
 
-W powiązaniu z naszymi zaświadczeniami w zakresie strategicznych inwestycji w Core HR obsługi dysku w firmie doskonałości, firma Microsoft usuwa funkcję otwartej rejestracji z prapremiery publicznej 18 października 2019. Zamiast tego nowa funkcjonalność zostanie opublikowana w przyszłości. Korzystanie z funkcji korzystania z otwartej rejestracji świadczeń, która aktualnie znajduje się w podglądzie publicznym, nie będzie obsługiwane.
+W powiązaniu z naszymi oświadczeniami w wpisie na blogu pt. [Strategiczne inwestycje w Core HR zwiększają doskonałość operacyjną](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/10/02/strategic-investments-in-core-hr-drive-operational-excellence), firma Microsoft usuwa funkcję otwartej rejestracji świadczeń z podglądu publicznego 18 października 2019. Zamiast tego nowa funkcjonalność zostanie opublikowana w przyszłości. Korzystanie z funkcji korzystania z otwartej rejestracji świadczeń, która aktualnie znajduje się w podglądzie publicznym, nie będzie obsługiwane.
 
 ### <a name="error-while-selecting-the-countryregion-on-the-worker-form-a-second-time-350294"></a>Błąd podczas wybierania kraju/regionu dla formularza pracownika po raz drugi (350294)
 
@@ -69,7 +69,7 @@ W przypadku aktualizacji z tego tygodnia dodanie nowej wartości listy do istnie
 
 W tej wersji rozwiązania, w programie Excel zostaną otwarte warunki zatrudnienia tylko dla wybranych pracowników. Wszystkie zabezpieczenia firmy są również honorowane.
 
-### <a name="the-association-between-the-work-calendar-holiday-entity-and-the-work-calendar-entity-is-missing-in-common-data-service---324178"></a>Brak skojarzenia między Jednostką roboczą kalendarza pracy a Jednostką kalendarza pracy w Common Data Service - (324178)
+### <a name="the-association-between-the-work-calendar-holiday-entity-and-the-work-calendar-entity-is-missing-in-common-data-service-324178"></a>Brak skojarzenia między Jednostką roboczą kalendarza pracy a Jednostką kalendarza pracy w Common Data Service (324178)
 
 Ta relacja została dodana razem z tą wersją. Ta zmiana spowoduje włączenie dni roboczych pracownika do wyświetlania w aplikacji PowerApps. 
 

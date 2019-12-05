@@ -19,12 +19,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0383f78ea5cfa42183e0bfe8a96d7d3866766e7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 484471c6bbda1d7396dfcfa34c33f50d247dad98
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547730"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812679"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Ograniczenia dotyczące wersji wyceny opartej na kosztach standardowych.
 
@@ -45,9 +45,9 @@ Dane o kosztach standardowych towaru mogą być kopiowane do rekordów innej wer
 <a name="related-topics"></a>Powiązane tematy
 --------
 
-[Wersje ceny](costing-versions.md)
+[Omówienie wersji wyceny](costing-versions.md)
 
-[Aktualizacja kosztów standardowych w środowisku nieprodukcyjnym](update-standard-costs-non-manufacturing-environment.md)
+[Aktualizowanie kosztów standardowych w środowisku nieobejmującym wytwarzania](update-standard-costs-non-manufacturing-environment.md)
 
 [Przygotowanie do zarządzania kosztami standardowymi wyprodukowanych towarów](update-standard-costs-manufacturing-environment.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8e5fd05f3114eb99b7e8b4390827d5ccd52832a
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c527735ea65dad84c5d3d405eac2ead35d3c792d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572220"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815372"
 ---
 # <a name="purchase-order-overview"></a>Omówienie zamówień zakupu
 
@@ -41,9 +41,9 @@ Obszary robocze **Przygotowanie zamówienia zakupu** i **Przyjęcie i obsługa z
 
 Poniższe artykuły zawierają omówienie różnych etapów, przez które przechodzi zamówienia zakupu:
 
--   [Tworzenie zamówienia zakupu](purchase-order-creation.md)
--   [Zatwierdzanie i potwierdzanie zamówienia zakupu](purchase-order-approval-confirmation.md)
--   [Przyjęcie produktów względem zamówień zakupu](product-receipt-against-purchase-orders.md)
+-   [Tworzenie zamówień zakupu](purchase-order-creation.md)
+-   [Zatwierdzanie i potwierdzanie zamówień zakupu](purchase-order-approval-confirmation.md)
+-   [Przyjęcie produktów na podstawie zamówień zakupu](product-receipt-against-purchase-orders.md)
 -   [Omówienie faktur od dostawców](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Typy zamówień zakupu
@@ -82,11 +82,11 @@ Pole **Stan zatwierdzenia** jest używane, gdy zamówienie zakupu przechodzi prz
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Tworzenie zamówienia zakupu](purchase-order-creation.md)
+[Tworzenie zamówień zakupu](purchase-order-creation.md)
 
-[Zatwierdzanie i potwierdzanie zamówienia zakupu](purchase-order-approval-confirmation.md)
+[Zatwierdzanie i potwierdzanie zamówień zakupu](purchase-order-approval-confirmation.md)
 
-[Przyjęcie produktów względem zamówień zakupu](product-receipt-against-purchase-orders.md)
+[Przyjęcie produktów na podstawie zamówień zakupu](product-receipt-against-purchase-orders.md)
 
 [Omówienie faktur od dostawców](../../financials/accounts-payable/vendor-invoices-overview.md)
 

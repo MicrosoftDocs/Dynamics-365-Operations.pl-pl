@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f05e3efd1716a27a659ae40145f37bb0b3d977f
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: d0b715e0c17263519a9bb1b3780170812271d93d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865418"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813760"
 ---
 # <a name="master-planning-and-multisite-functionality-overview"></a>Omówienie planowania głównego i funkcjonalności wielooddziałowości
 
@@ -40,15 +40,15 @@ Jeśli magazyn nie zostanie ustawiony jako wymagany, może nie zostać rozpoznan
 
 Poniższe tematy zawierają opisy działania aparatu planowania podczas określania magazynu, który ma być użyty, w przypadku różnych ustawień.
 
-[Planowanie główny — zapotrzebowania oddziału i magazynu, magazyn wymagany](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+[Planowanie główne dla zapotrzebowania oddziału i magazynu, magazyn wymagany](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Planowanie główny — zapotrzebowania oddziału i magazynu, magazyn wymagany](master-plan-site-coverage-warehouse-mandatory.md)
+[Planowanie główne dla zapotrzebowania oddziału, magazyn wymagany](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Planowanie główny — zapotrzebowania oddziału i magazynu, magazyn niewymagany](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+[Planowanie główne dla zapotrzebowania oddziału i magazynu, magazyn niewymagany](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
-[Planowanie główny — zapotrzebowania oddziału i magazynu, magazyn niewymagany](master-plan-site-coverage-warehouse-not-mandatory.md)
+[Planowanie główne dla zapotrzebowania oddziału, magazyn niewymagany](master-plan-site-coverage-warehouse-not-mandatory.md)
 
-[Planowanie główne — jak określa się wersję BOM](master-plan-bom-version-determined.md)
+[Ustalanie wersji BOM](master-plan-bom-version-determined.md)
 
 
 

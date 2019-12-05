@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie zabezpieczeniami i rolami w aplikacji Attract
+title: Ustawienie uprawnień użytkowników w aplikacji Attract
 description: Ten temat zawiera informacje na temat zabezpieczeń na podstawie ról w aplikacji Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7db2ac241db121f07eb3524c7c5c9a8f64e78537
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: efac512cfa07bb2183f06b8be45f74bef9af0767
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551433"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832705"
 ---
-# <a name="security-and-role-management-in-attract"></a>Zarządzanie zabezpieczeniami i rolami w aplikacji Attract
+# <a name="set-user-permissions-in-attract"></a>Ustawienie uprawnień użytkowników w aplikacji Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Aplikacja Microsoft Dynamics 365 Talent: Attract używa zabezpieczeń opartych na rolach. Innymi słowy dostęp nie jest przyznawany poszczególnym użytkownikom, ale rolom zabezpieczeń, do których są przypisywani użytkowników. Użytkownik, którego przypisano do roli zabezpieczeń, ma dostęp do zbioru uprawnień skojarzonego z tą rolą.
 
@@ -52,7 +52,7 @@ Poniższe sekcje zawierają ogólne opisy poszczególnych ról. Tabele w dalszej
 
 ## <a name="administrator"></a>Administrator
 
-Użytkownicy przypisani do roli Administrator mogą uzyskiwać dostęp do wszystkich danych w aplikacji Attract oraz je zmieniać. Administratorzy mogą tworzyć, czytać, aktualizować i usuwać dane. Mają również dostęp do Centrum administracyjnego, gdzie mogą konfigurować Attract i wprowadzać dane użytkowników. Zalecamy, aby co najmniej jedną osobę przypisać do roli Administrator. Domyślnie administrator środowiska w usłudze Microsoft PowerApps jest ustawiony jako administrator w aplikacji Attract. Jeśli zasubkrybujesz wersję próbną aplikacji Attract, rola Administrator jest Ci przypisywana automatycznie. Obecnie w celu tworzenia zadań użytkownicy, którzy mają rolę Administrator, muszą mieć dodatkowo rolę Osoba rekrutująca lub Menedżer zatrudniający.
+Użytkownicy przypisani do roli Administrator mogą uzyskiwać dostęp do wszystkich danych w aplikacji Attract oraz je zmieniać. Administratorzy mogą tworzyć, czytać, aktualizować i usuwać dane. Mają również dostęp do Centrum administracyjnego, gdzie mogą konfigurować Attract i wprowadzać dane użytkowników. Zalecamy, aby co najmniej jedną osobę przypisać do roli Administrator. Domyślnie administrator środowiska w usłudze Microsoft Power Apps jest ustawiony jako administrator w aplikacji Attract. Jeśli zasubkrybujesz wersję próbną aplikacji Attract, rola Administrator jest Ci przypisywana automatycznie. Obecnie w celu tworzenia zadań użytkownicy, którzy mają rolę Administrator, muszą mieć dodatkowo rolę Osoba rekrutująca lub Menedżer zatrudniający.
 
 ## <a name="hiring-manager"></a>Menedżer zatrudniający
 

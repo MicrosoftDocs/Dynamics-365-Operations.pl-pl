@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 792ceea52a9caa1a99217c77bb3fe4aafb80a0eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 05d770234beb486eb3a8181b160967c802c15e8f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555020"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813162"
 ---
 # <a name="create-service-object-relations"></a>Tworzenie relacji przedmiotów serwisu 
 
@@ -63,11 +63,11 @@ Aby utworzyć relację przedmiotów serwisu dla zlecenia serwisowego, wykonaj na
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Przedmioty serwisu ](service-objects.md)
+[Omówienie przedmiotów serwisu](service-objects.md)
 
 [Relacje przedmiotów serwisu](service-object-relations.md)
 
-[Szablony BOM ](template-boms.md)
+[Szablony BOM](template-boms.md)
 
   
 

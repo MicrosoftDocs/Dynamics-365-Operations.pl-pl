@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 83c523a23973f4fd146d8308fbb5ecb486224ad9
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865335"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813553"
 ---
 # <a name="product-lifecycle-state-overview"></a>Omówienie stanów cyklu życia produktu
 
@@ -107,9 +107,9 @@ W celu wybrania i aktualizacji zwolnionych produktów i wariantów produktów na
 
 ## <a name="related-topics"></a>Powiązane tematy
 
--  [Tworzenie nowego stanu cyklu życia produktu (przewodnik zadania)](tasks/new-product-lifecycle-state.md)
--  [Tworzenie domyślnego stanu cyklu życia produktu (przewodnik zadania)](tasks/default-product-lifecycle-state.md)
--  [Przypisywanie stanu cyklu życia produktu do zwolnionego produktu głównego (przewodnik zadania)](tasks/product-lifecycle-state-released-product-master.md)
--  [Przypisywanie stanu cyklu życia produktu do zwolnionego produktu (przewodnik zadania)](tasks/product-lifecycle-state-released-product.md)
--  [Znajdowanie wariantów przestarzałych produktów i przypisywanie stanu cyklu życia produktu (przewodnik po zadaniu)](tasks/obsolete-product-variants.md)
--  [Tworzenie stanu cyklu życia produktu w celu wykluczania produktów z planowania głównego (przewodnik po zadaniu)](tasks/exclude-products-master-planning.md)
+-  [Tworzenie nowego stanu cyklu życia produktu](tasks/new-product-lifecycle-state.md)
+-  [Tworzenie domyślnego stanu cyklu życia produktu](tasks/default-product-lifecycle-state.md)
+-  [Przypisywanie stanu cyklu życia produktu do zwolnionego produktu głównego](tasks/product-lifecycle-state-released-product-master.md)
+-  [Przypisywanie stanu cyklu życia produktu do zwolnionego produktu](tasks/product-lifecycle-state-released-product.md)
+-  [Znajdowanie wariantów przestarzałych produktów i przypisywanie stanu cyklu życia produktu](tasks/obsolete-product-variants.md)
+-  [Tworzenie stanu cyklu życia produktu w celu wykluczania produktów z planowania głównego](tasks/exclude-products-master-planning.md)

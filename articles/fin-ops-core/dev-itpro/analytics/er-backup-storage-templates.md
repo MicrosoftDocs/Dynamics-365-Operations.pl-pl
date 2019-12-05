@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 5dad101ffe56c9266c0d81ede8be1f72b684a8fb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553098"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771428"
 ---
 # <a name="backup-storage-of-er-templates"></a>Magazyn kopii zapasowej szablonów ER
 
 [!include [banner](../includes/banner.md)]
 
-Użytkownicy biznesowi używają [modułu Raportowanie elektroniczne (ER)](general-electronic-reporting.md), który umożliwia użytkownikom biznesowym konfigurowanie formatów dokumentów wychodzących zgodnie z wymogami prawnymi obowiązującymi w różnych krajach i regionach. W skonfigurowanych formatach ER można używać wstępnie zdefiniowanych szablonów do generowania dokumentów wychodzących w różnych formatach, takich jak Microsoft Excel skoroszyty, Microsoft Word dokumenty i dokumenty PDF. W szablonach są wypełnione dane, których wymaga skonfigurowany przepływ danych dla generowanych dokumentów.
+Użytkownicy biznesowi używają [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md), który umożliwia użytkownikom biznesowym konfigurowanie formatów dokumentów wychodzących zgodnie z wymogami prawnymi obowiązującymi w różnych krajach i regionach. W skonfigurowanych formatach ER można używać wstępnie zdefiniowanych szablonów do generowania dokumentów wychodzących w różnych formatach, takich jak Microsoft Excel skoroszyty, Microsoft Word dokumenty i dokumenty PDF. W szablonach są wypełnione dane, których wymaga skonfigurowany przepływ danych dla generowanych dokumentów.
 
 Każdy skonfigurowany format może zostać opublikowany jako część rozwiązania ER. Każde rozwiązanie ER można wyeksportować z jednego wystąpienia Finance and Operations i importować do innego wystąpienia.
 
-Struktura ER używa [Struktury zarządzania dokumentami](../../fin-ops/organization-administration/configure-document-management.md) w celu zachowania wymaganych szablonów bieżącego wystąpienia Finance and Operations. W zależności od ustawień struktury ER, można wybrać folder Microsoft Azure Magazyn obiektów BLOB lub folder Microsoft SharePoint jako fizyczną lokalizację magazynu podstawowego dla szablonów. (Aby uzyskać więcej informacji, należy zapoznać się ztematem [Konfigurowanie struktury ER](electronic-reporting-er-configure-parameters.md).) Tabela DocuValue zawiera pojedynczy rekord dla każdego szablonu. W każdym rekordzie pole **Informacje dotyczące dostępu** zawiera ścieżkę pliku szablonu, który znajduje się w skonfigurowanej lokalizacji magazynu.
+Struktura ER używa [Konfigurowanie zarządzania dokumentami](../../fin-ops/organization-administration/configure-document-management.md) w celu zachowania wymaganych szablonów bieżącego wystąpienia Finance and Operations. W zależności od ustawień struktury ER, można wybrać folder Microsoft Azure Magazyn obiektów BLOB lub folder Microsoft SharePoint jako fizyczną lokalizację magazynu podstawowego dla szablonów. (Aby uzyskać więcej informacji, należy zapoznać się z tematem [Konfigurowanie struktury raportowania elektronicznego (ER)](electronic-reporting-er-configure-parameters.md).) Tabela DocuValue zawiera pojedynczy rekord dla każdego szablonu. W każdym rekordzie pole **Informacje dotyczące dostępu** zawiera ścieżkę pliku szablonu, który znajduje się w skonfigurowanej lokalizacji magazynu.
 
 Podczas zarządzania wystąpieniami Finance and Operations można zdecydować, czy bieżące wystąpienie ma być migrowane do innej lokalizacji. Na przykład wystąpienie produkcji można migrować do nowego środowiska piaskownicy. Jeśli struktura ER jest skonfigurowana do przechowywania szablonów w magazynie obiektów BLOB, tabela DocuValue w nowym środowisku piaskownicy odwołuje się do wystąpienia magazynu obiektów BLOB w środowisku produkcyjnym. Jednak nie można uzyskać dostępu do tego wystąpienia ze środowiska piaskownicy, ponieważ proces migracji nie obsługuje migracji artefaktów w magazynie obiektów BLOB. Dlatego w przypadku próby uruchomienia formatu ER, który używa szablonu do generowania dokumentów biznesowych, wystąpi wyjątek i użytkownik jest powiadamiany o brakujący szablon. Użytkownik ma również możliwość użycia narzędzia do oczyszczania w celu usunięcia, a następnie ponownego zaimportowania konfiguracji formatu ER, która zawiera szablon. Ponieważ może być kilka konfiguracji formatu ER, ten proces może być czasochłonny.
 
@@ -94,6 +94,6 @@ W module Finance and Operations w wersji 10.0.5 funkcja magazynowania kopii zapa
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie raportowania elektronicznego](general-electronic-reporting.md)
+[Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md)
 
-[Konfigurowanie struktury modułu Raportowanie elektroniczne](electronic-reporting-er-configure-parameters.md)
+[Konfigurowanie struktury modułu Raportowanie elektroniczne (ER)](electronic-reporting-er-configure-parameters.md)

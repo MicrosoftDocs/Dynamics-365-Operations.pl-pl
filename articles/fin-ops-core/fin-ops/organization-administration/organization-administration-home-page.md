@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36784311294f80f56f680cd6d14cc989b629ba12
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9b1b519d116a55c255cf90d9478ee1714de90264
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179495"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811340"
 ---
 # <a name="organization-administration-home-page"></a>Administrowanie organizacją — strona główna
 
@@ -36,8 +36,8 @@ Większość zawartości wymienionej tutaj dotyczy funkcji w module **Administra
 
 Sekwencje numerów są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które muszą mieć identyfikatory. Rekord transakcji lub danych głównych, który wymaga identyfikatora, odnosi się do *odwołania*. Aby można było tworzyć nowe rekordy dla odwołania, należy ustawić sekwencję numerów i skojarzyć je z odwołaniem.
 
-- [Omówienie sekwencji numerów](number-sequence-overview.md)
-- [Konfigurowanie sekwencji numeracji za pomocą kreatora](tasks/set-up-number-sequences-wizard.md) (przewodnik po zadaniu)
+- [Omówienie sekwencji identyfikatorów](number-sequence-overview.md)
+- [Konfigurowanie sekwencji numeracji za pomocą kreatora](tasks/set-up-number-sequences-wizard.md) (Przewodnik po zadaniu)
 - [Konfigurowanie indywidualnych sekwencji identyfikatorów](tasks/set-up-number-sequences-individual-basis.md) (przewodnik po zadaniu)
 
 ## <a name="organizations"></a>Organizacje
@@ -46,7 +46,7 @@ Organizacja to grupa osób, które pracują razem, aby przeprowadzić proces biz
 
 Przed skonfigurowaniem organizacji i hierarchii organizacyjnych upewnij się, że masz plan dotyczący modelowania firmy. Model organizacyjny ma znaczny wpływ na implementację i na procesy biznesowe.
 
-- [Organizacje i hierarchie organizacyjne](organizations-organizational-hierarchies.md)
+- [Omówienie organizacji i hierarchii organizacyjnych](organizations-organizational-hierarchies.md)
 - [Planowanie hierarchii organizacyjnej](plan-organizational-hierarchy.md)
 - [Tworzenie hierarchii organizacyjnej](tasks/create-organization-hierarchy.md) (przewodnik po zadaniu)
 - [Tworzenie firmy](tasks/create-legal-entity.md) (przewodnik po zadaniu)
@@ -58,8 +58,8 @@ Globalna książka adresowa to scentralizowane repozytorium danych głównych, k
 
 Po utworzeniu w globalnej książki adresowej można utworzyć dodatkowe książki adresowe, np. oddzielne książki adresowe dla każdej firmy w organizacji lub dla każdego wiersza biznesowego.
 
-- [Globalna książka adresowa](overview-global-address-book.md)
-- [Planowanie sposobu konfiguracji globalnej książki adresowej i dodatkowych książek adresowych](plan-configuration-global-address-book-additional-address-books.md)
+- [Omówienie globalnej książki adresowej](overview-global-address-book.md)
+- [Planowanie globalnej książki adresowej i innych książek adresowych](plan-configuration-global-address-book-additional-address-books.md)
 - [Konfigurowanie globalnej książki adresowej](tasks/configure-global-address-book.md)
 - [Książki adresowe — często zadawane pytania](qa-address-books.md)
 
@@ -67,10 +67,10 @@ Po utworzeniu w globalnej książki adresowej można utworzyć dodatkowe książ
 
 Przepływ pracy to system, którego można używać do tworzenia pojedynczych przepływów pracy, czyli procesów biznesowych. Utworzenie przepływu pracy definiuje sposób przepływu lub przenoszenia dokumentu przez system, pokazując, kto musi wykonać zadanie, podjąć decyzję lub zatwierdzić dokument.
 
-- [Omówienie przepływu pracy](overview-workflow-system.md)
+- [Omówienie systemu przepływów pracy](overview-workflow-system.md)
 - [Elementy przepływu pracy](workflow-elements.md)
-- [Akcje przepływu pracy](workflow-actions.md)
-- [Tworzenie przepływu pracy](create-workflow.md)
+- [Akcje w procesach zatwierdzania w przepływie pracy](workflow-actions.md)
+- [Omówienie tworzenia przepływów pracy](create-workflow.md)
 
 ## <a name="electronic-signatures"></a>Podpisy elektroniczne
 
@@ -86,13 +86,13 @@ Można używać podpisów elektronicznych w przypadku procesów biznesowych o po
 Planowanie, śledzenie i analizowanie spraw powoduje, że użytkownik może tworzyć wydajne rozwiązania, które mogą być używane dla podobnych spraw. Na przykład, gdy przedstawiciele obsługi klienta lub specjaliści ds. personalnych tworzą sprawy, znajdują informacje w artykułach merytorycznych, ułatwiające pracę ze sprawami i ich efektywnego rozwiązywania.
 
 - [Omówienie zarządzania sprawami](cases.md)
-- [Konfigurowanie zabezpieczeń, procesów i kategorii spraw](plan-case-management.md)
+- [Planowanie kategorii zabezpieczeń, procesów zarządzania sprawami i kategorii spraw](plan-case-management.md)
 
 ## <a name="record-templates"></a>Szablony rekordów
 
 Szablony rekordów pomagają w szybkim tworzeniu rekordów w systemie. Można utworzyć szablon rekordu, tak aby wartości pól, które są często używane, nie musiały być jawnie wprowadzane dla każdego nowego rekordu.
 
-- [Szablony rekordów](record-templates.md)
+- [Omówienie szablonów rekordów](record-templates.md)
 - [Tworzenie szablonu rekordu w celu ułatwienia wprowadzania danych](../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md) (przewodnik zadania)
 - [Używanie szablonu rekordu do tworzenia nowego rekordu](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (przewodnik zadania)
 

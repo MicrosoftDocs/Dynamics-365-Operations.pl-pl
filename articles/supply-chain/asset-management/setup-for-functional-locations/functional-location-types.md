@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74ccda77a97d1e104940bb10a605d3ebbf45af75
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 0468cb0b1717b7cf0ccb391da09a4e7d788124f3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571261"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812221"
 ---
 # <a name="functional-location-types"></a>Typy lokalizacji czynności konserwacyjnych
 
@@ -56,7 +56,7 @@ Tworzony jest typ lokalizacji czynności konserwacyjnych, który ma być używan
 3. Wstaw identyfikator typu lokalizacji czynności konserwacyjnych w polu **Typ lokalizacji czynności konserwacyjnych** oraz nazwę w polu **Nazwa**.
 4. Wybierz model cyklu życia w polu **Model cyklu życia lokalizacji czynności konserwacyjnych**. Więcej informacji na temat stanów i modeli cyklu życia lokalizacji czynności konserwacyjnych, zobacz temat [Stany cyklu życia lokalizacji czynności konserwacyjnych](../setup-for-functional-locations/functional-location-stages.md).
 5. Wybierz opcję „Tak” na przełączniku **Wiele zasobów**, jeśli powinna być dostępna możliwość zainstalowania kilku składników majątku w lokalizacji czynności konserwacyjnych przy użyciu tego typu lokalizacji czynności konserwacyjnych. W przypadku wybrania opcji „Nie” można zainstalować tylko *jeden* składnik majątku w lokalizacji czynności konserwacyjnych przy użyciu tego typu lokalizacji czynności konserwacyjnych.
-6. Wybierz „Tak” na przełączniku **Aktualizuj wymiar składnika majątku**, jeśli chcesz, aby składniki majątku zainstalowane w lokalizacji czynności konserwacyjnych tego typu automatycznie używały wymiarów finansowych związanych z lokalizacją czynności konserwacyjnych. Oznacza to, że jeśli zmienisz wymiary finansowe w formularzu [Lokalizacje czynności konserwacyjnych](../functional-locations/create-functional-locations.md), a lokalizacja czynności konserwacyjnych używa typu lokalizacji czynności konserwacyjnych z tym przełącznikiem ustawionym na „Tak”, wymiary finansowe są automatycznie aktualizowane na wszystkich składnikach majątku zainstalowanych w tej lokalizacji czynności konserwacyjnych.
+6. Wybierz „Tak” na przełączniku **Aktualizuj wymiar składnika majątku**, jeśli chcesz, aby składniki majątku zainstalowane w lokalizacji czynności konserwacyjnych tego typu automatycznie używały wymiarów finansowych związanych z lokalizacją czynności konserwacyjnych. Oznacza to, że jeśli zmienisz wymiary finansowe w formularzu [Tworzenie lokalizacji czynności konserwacyjnych](../functional-locations/create-functional-locations.md), a lokalizacja czynności konserwacyjnych używa typu lokalizacji czynności konserwacyjnych z tym przełącznikiem ustawionym na „Tak”, wymiary finansowe są automatycznie aktualizowane na wszystkich składnikach majątku zainstalowanych w tej lokalizacji czynności konserwacyjnych.
 7. Pole **Typ składnika majątku** jest używane, jeśli chcesz automatycznie utworzyć *jeden* składnik majątku dla lokalizacji czynności konserwacyjnych o tym samym identyfikatorze i nazwie co tworzona lokalizacja czynności konserwacyjnych. Może to być na przykład istotne w przypadku utworzenia statycznej lokalizacji czynności konserwacyjnych, takiej jak budynek lub proces. W takim przypadku wybierz typ składnika majątku, który ma być używany dla automatycznie utworzonego składnika majątku. Pamiętaj, że jeśli dokonujesz wyboru w tym polu, przełącznik **Wiele składników majątku** musi być ustawiony na „Nie”.
 8. Na skróconej karcie **Typy składników majątku** wybierz typy składników majątku, które powinny być powiązane z typem lokalizacji czynności konserwacyjnych. Wybierz **Dodaj wiersz** i wybierz typy składnika majątku. Jeśli w tym miejscu zostaną dodane typy składnika majątku, tylko składniki majątku z tymi typami mogą być instalowane w lokalizacji czynności konserwacyjnych przy użyciu tego typu lokalizacji czynności konserwacyjnych. Jeśli nie wybrano żadnych typów składnika majątku na skróconej karcie **Typy składników majątku**, można zainstalować wszystkie typy składnika majątku.
 9. Na skróconej karcie **Plany konserwacji** wybierz plany konserwacji, które powinny być automatycznie skonfigurowane w nowych lokalizacjach czynności konserwacyjnych przy użyciu tego typu lokalizacji czynności konserwacyjnych. Wybierz **Dodaj wiersz** i wybierz plany konserwacji. Jeśli dodasz w tym miejscu plany konserwacji, tylko te plany mogą być używane w lokalizacji czynności konserwacyjnych przy użyciu tego typu lokalizacji czynności konserwacyjnych.

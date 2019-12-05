@@ -3,7 +3,7 @@ title: Włącz wartość fizyczną
 description: Pole wyboru Włącz wartość fizyczną na skróconej karcie Model magazynu na stronie Grupy modeli pozycji służy do określania, czy przy obliczaniu średniej kroczącej kosztu własnego towaru są uwzględniane fizycznie zaktualizowane transakcje.
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96d5e2a658a027d66663868329cf4eedcb1d46f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 834438f8389e295bbb992f0b8397ff45559690c3
+ms.sourcegitcommit: 92322167f57b66d2accc134aaf862e6b9931ec94
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551982"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2693004"
 ---
 # <a name="include-physical-value"></a>Włącz wartość fizyczną
 
@@ -47,10 +47,16 @@ To pole wyboru działa nieco inaczej zależnie od wybranego modelu zapasów.
 
 **Przykład 1** Zaznaczono pole wyboru **Włącz wartość fizyczną** i przyjęto następujące zamówienia zakupu:
 
--   Zamówienie zakupu na ilość 2 z kosztem własnym 10,00 zł, które zostało zaktualizowane przez dokument dostawy
--   Zamówienie zakupu na ilość 3 z kosztem własnym 12,00 zł, które zostało zaktualizowane przez fakturę
+-   Zamówienie zakupu na ilość 2 z kosztem własnym 10,00 zł, które zostało zaktualizowane przez dokument dostawy.
+-   Zamówienie zakupu na ilość 3 z kosztem własnym 12,00 zł, które zostało zaktualizowane przez fakturę.
 
-W tym przypadku średnia krocząca kosztu własnego wyniesie 11,20 zł, ponieważ do jego obliczenia są używane transakcje zaktualizowane fizycznie i finansowo. **Przykład 2** Nie zaznaczono pola wyboru **Włącz wartość fizyczną**, a koszt własny w konfiguracji towaru wynosi 10,00 zł. Przyjęto zamówienie zakupu na ilość 20 z kosztem własnym 12,00 zł, które zostało zaktualizowane przez dokument dostawy. Podczas księgowania zamówienia sprzedaży zaksięgowana kwota kosztu wyniesie 10,00 zł, ponieważ średnia krocząca kosztu własnego nie będzie uwzględniała transakcji zaktualizowanych fizycznie. **Uwaga:** Jeśli dla tego towaru zostałoby zaznaczone pole wyboru **Włącz wartość fizyczną**, podczas księgowania zamówienia sprzedaży zaksięgowana kwota kosztu wynosiłaby 12,00 zł.
+W tym przypadku średnia krocząca kosztu własnego wyniesie 11,20 zł = (2x10+3x12)/(2+3), ponieważ do jego obliczenia są używane transakcje zaktualizowane fizycznie i finansowo. 
 
+**Przykład 2** Nie zaznaczono pola wyboru **Włącz wartość fizyczną**, a koszt własny w konfiguracji towaru wynosi 10,00 zł. 
 
+-   Przyjęto zamówienie zakupu na ilość 20 z kosztem własnym 12,00 zł, które zostało zaktualizowane przez dokument dostawy.
 
+Podczas księgowania zamówienia sprzedaży zaksięgowana kwota kosztu wyniesie 10,00 zł, ponieważ średnia krocząca kosztu własnego nie będzie uwzględniała transakcji zaktualizowanych fizycznie. 
+
+> [!NOTE]
+> Jeśli dla tego towaru zostałoby zaznaczone pole wyboru **Włącz wartość fizyczną**, podczas księgowania zamówienia sprzedaży zaksięgowana kwota kosztu wynosiłaby 12,00 zł.

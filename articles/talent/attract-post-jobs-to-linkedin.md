@@ -1,5 +1,5 @@
 ---
-title: Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Microsoft Dynamics 365 Talent - Attract
+title: Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Attract
 description: W tym temacie wyjaśniono, jak korzystać z Dynamics 365 Talent - Attract do publikowania ofert pracy w serwisie LinkedIn.
 author: andreabichsel
 manager: AnnBe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: e2b8065fe2521694efb30478a5a41676cff45127
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 782a2e5de6edf0e85c4d32a0910f5f3c01981a01
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551502"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833012"
 ---
-# <a name="post-jobs-to-linkedin-from-microsoft-dynamics-365-talent---attract"></a>Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Microsoft Dynamics 365 Talent - Attract
+# <a name="post-jobs-to-linkedin-from-attract"></a>Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 LinkedIn to największa sieć profesjonalistów w trybie online, która daje dostęp do talentów na świecie. Microsoft Dynamics 365 Talent: Attract pomaga uzyskać talent, którego potrzebujesz, umożliwiając publikację ofert pracy bezpośrednio z Attract do LinkedIn.
 
@@ -46,7 +46,7 @@ W poniższej tabeli przedstawiono akcje, które można wykonać w serwisie Linke
 
 Aby uzyskać więcej informacji o rolach użytkowników w Attract, zobacz [Zarządzanie zabezpieczeniami i rolami w aplikacji Attract](./security-attract.md).
 
-Jeśli jesteś administratorem i potrzebujesz więcej informacji na temat konfigurowania integracji serwisu LinkedIn z Attract, skorzystaj z opcji [Konfigurowanie integracji z serwisem LinkedIn](./attract-admin-linkedin.md).
+Jeśli jesteś administratorem i potrzebujesz więcej informacji na temat konfigurowania integracji serwisu LinkedIn z Attract, skorzystaj z opcji [Konfigurowanie integracji z serwisem LinkedIn dla Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md).
 
 Oferty pracy, które są publikowane na LinkedIn są wyświetlane od razu na oficjalnej stronie LinkedIn. Nie ma środowiska testowego dla publikowania ofert pracy na LinkedIn. Dlatego należy się upewnić, że nie są one przypadkowo publikowane żadne oferty testowe.
 
@@ -67,15 +67,15 @@ Gdy zainteresowani kandydaci wybiorą **Zobacz** obok listy, zobaczysz pełne sz
 
 Wszystkie ogłoszenia o pracę wykonywane za pośrednictwem Attract to listy z ograniczeniami. Aby uzyskać więcej informacji o ograniczonych listach w serwisie LinkedIn, zapoznaj się z [Miejsca na zadania z ograniczoną oferta a miejsca na zadania premium w kontekście zawijania zadań](https://www.linkedin.com/help/recruiter/answer/79049).
 
-Jeśli występują problemy z publikacją ofert pracy w serwisie LinkedIn, przejrzyj informacje [Rozwiązywanie problemów z publikowaniem ofert pracy w serwisie LinkedIn](./attract-troubleshoot-linkedin.md).
+Jeśli występują problemy z publikacją ofert pracy w serwisie LinkedIn, przejrzyj informacje [Rozwiązywanie problemów z integracją usługi LinkedIn i Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md).
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Często zadawane pytania dotyczące serwisu LinkedIn](./attract-linkedin-faq.md)
+[Konfigurowanie integracji Attract z serwisem LinkedIn — często zadawane pytania](./attract-linkedin-faq.md)
 
-[Konfigurowanie integracji z serwisem LinkedIn](./attract-admin-linkedin.md)
+[Konfigurowanie integracji z serwisem LinkedIn dla aplikacji Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md)
 
-[Tworzenie pracy](./creating-jobs-attract.md)
+[Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract](./creating-jobs-attract.md)
 
 [Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 

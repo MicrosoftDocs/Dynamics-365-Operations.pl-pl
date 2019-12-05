@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2922b00dffe8e99f8331d7aaa7e2f1b7dc4f9ea6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 405af4e3e122953bbfa74e7e91d2feef8f068708
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179434"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772635"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>Proces ustawienia zaawansowanego uzgodnienia konta bankowego
 
@@ -31,7 +31,7 @@ ms.locfileid: "2179434"
 
 Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych oraz ich automatyczne uzgadnianie z transakcjami bankowymi w Microsoft Dynamics 365 Finance. Ten artykuł wyjaśnia procesy konfigurowania na potrzeby uzgadniania.  
 
-Istnieje wiele elementów, które muszą zostać skonfigurowane przed używaniem funkcji zaawansowanego uzgadniania konta bankowego. Aby uzyskać więcej informacji na temat konfigurowania importu wyciągu bankowego, zobacz [Konfigurowanie procesu importowania wyciągu bankowego](set-up-advanced-bank-reconciliation-import-process.md).  Poniżej wyszczególniono wymagania dotyczące konfigurowania procesu uzgadniania.
+Istnieje wiele elementów, które muszą zostać skonfigurowane przed używaniem funkcji zaawansowanego uzgadniania konta bankowego. Aby uzyskać więcej informacji na temat konfigurowania importu wyciągu bankowego, zobacz [Konfigurowanie procesu importu zaawansowanego uzgadniania konta bankowego](set-up-advanced-bank-reconciliation-import-process.md).  Poniżej wyszczególniono wymagania dotyczące konfigurowania procesu uzgadniania.
 
 ## <a name="transaction-codes"></a>Kody transakcji
 W regułach uzgadniania wyciągów bankowych można używać kodów transakcji. Kody transakcji pomogą dopasowywać tylko te same typy transakcji między usługą Finance a wyciągiem bankowym. Aby wykonać tego rodzaju dopasowanie, należy najpierw zdefiniować typy transakcji używane do transakcji bankowych w usłudze Finance, a następnie zamapować te typy na kody transakcji na wyciągach używanych przez bank. Typy transakcji bankowych dla transakcji bankowych definiuje się na stronie **Typ transakcji bankowej**. Jest to również miejsce, gdzie definiujesz konto główne, które ma być używane do księgowań skojarzonych z tym typem transakcji. 

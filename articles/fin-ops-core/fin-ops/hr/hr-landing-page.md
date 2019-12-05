@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9db36b528de097aae613a5fbf5ee94f4cc79a0f
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: f701a61a718469023dfa57c160229108afeb421c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553170"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812443"
 ---
 # <a name="human-resources-overview"></a>Zasoby ludzkie — omówienie
 
@@ -46,15 +46,15 @@ Za pomocą modułu Zasoby ludzkie możesz wykonywać następujące zadania:
 Podczas pracy z użyciem modułu Zasoby ludzkie możesz określić strukturę swojej organizacji, używając elementów, takich jak działy, funkcje i stanowiska. Są to jedne z podstawowych elementów, które można skonfigurować w module Zasoby ludzkie. Poszczególni pracownicy etatowi są przypisywani do stanowisk, które są skojarzone z funkcjami.
 
 - [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](../../../talent/departments-jobs-positions.md)
-- [Konfigurowanie specyficznych dla firmy parametrów modułu Zasoby ludzkie](../../../talent/set-up-company-specific-hr-parameters.md)
+- [Konfigurowanie parametrów modułu Zasoby ludzkie (HR) specyficznych dla firmy](../../../talent/set-up-company-specific-hr-parameters.md)
 - [Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach](../../../talent/set-up-hr-parameters-across-legal-entities.md)
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Rekrutacja, zatrudnianie i motywowanie pracowników etatowych
 
 Projekty rekrutacji służą do zarządzania zawartością używaną w ogłoszeniach o wolnych stanowiskach i mogą pomóc w zarządzaniu zgłoszeniami na wolne stanowiska. Można ich używać do monitorowania odpowiedzi na oferty pracy dla określonego projektu rekrutacji lub określonych kandydatów oraz aktualizować stan wolnych stanowisk. Można również zatrudniać pojedynczych kandydatów albo zarządzać „projektami zatrudnienia grupowego” umożliwiającymi zatrudnianie wielu pracowników, na przykład w reakcji na sezonowe potrzeby biznesowe.
 
-- [Zarządzanie procesem rekrutacji](manage-recruiting-process.md)
-- [Projekty zatrudniania grupowego](mass-hire-projects.md) 
+- [Zarządzanie procesami rekrutacji](manage-recruiting-process.md)
+- [Projekty zatrudnienia grupowego](mass-hire-projects.md) 
 
 Po zatrudnieniu personelu można skonfigurować plany umożliwiające skuteczne i sprawiedliwe zarządzanie wynagrodzeniami, a także zarządzać przedmiotami, takimi jak komputery lub telefony, które organizacja wypożycza swoim pracownikom etatowym. Można utworzyć plany wynagrodzeń o stałej i zmiennej wysokości, a także zdefiniować reguły weryfikujące spełnianie kryteriów podlegania tym planom.
 
@@ -68,13 +68,13 @@ Aby ułatwić pracowników realizację ich celów zawodowych i spełnienie kryty
 
 - [Zarządzanie wydajnością](../../../talent/performance-management-overview.md)
 - [Dopasowywanie umiejętności pracowników do potrzeb biznesowych](../../../talent/skills.md)
-- [Administrowanie szkoleniami w ramach kursów](../../../talent/courses.md)
+- [Konfigurowanie kursów szkoleniowych](../../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Tworzenie i obsługa świadczeń
 
 Poza wynagradzaniem pracowników za pomocą płac, wynagrodzeń i premii możesz opracować programy świadczeń, takie jak ubezpieczenia zdrowotne lub plany emerytalne. Możesz również zarządzać świadczeniami, takimi jak programy pożyczkowe, w których firma wypożycza różne przedmioty, np. komputery lub telefony, swoim pracownikom etatowym.
 
-- [Zarządzanie programem świadczeń](../../../talent/manage-benefit-program.md)
+- [Definiowanie programu świadczeń i zarządzanie nim](../../../talent/manage-benefit-program.md)
 - [Zasady uprawnień do świadczeń](../../../talent/benefit-eligibility-policies.md)
 - [Zarządzanie przedmiotami wypożyczanymi pracownikom](../../../talent/loan-items.md)
 
@@ -82,15 +82,15 @@ Poza wynagradzaniem pracowników za pomocą płac, wynagrodzeń i premii możesz
 
 Rozwiązanie Microsoft Dynamics AX może pomóc utrzymać bezpieczne środowisko pracy, w którym są przestrzegane obowiązujące przepisy prawa, w tym ustawa o osobach niepełnosprawnych oraz przepisy dotyczące imigracji i naturalizacji. Na przykład możesz zarządzać fizycznymi wymaganiami dla konkretnych funkcji, a także śledzić wnioski o zakwaterowanie, co pomoże organizacji zoptymalizować umiejętności pracowników.
 
-- [Weryfikacja zatrudnienia za pomocą formularzy I-9](localizations/noam-usa-form-i-9-verification.md)
+- [Weryfikacja formularza I-9](localizations/noam-usa-form-i-9-verification.md)
 - [Zgodność z ustawą ADA (Americans with Disabilities Act)](localizations/noam-usa-comply-ada.md)
-- [Śledzenie czasu wolnego dla ustawy FMLA](localizations/noam-usa-track-time-for-fmla.md)
+- [Śledzenie czasu wolnego na potrzeby rozporządzenia FMLA (Family and Medical Leave Act)](localizations/noam-usa-track-time-for-fmla.md)
 
 ## <a name="gather-information-using-questionnaires"></a>Zbieranie informacji za pomocą kwestionariuszy
 
 Możesz projektować kwestionariusze i administrować nimi, aby zbierać informacje służące do wielu różnych celów. Funkcja Kwestionariusz umożliwia projektowanie i tworzenie kwestionariuszy. Gdy kwestionariusz jest gotowy, możesz go rozesłać do szerokiego grona odbiorców lub tylko do określonej grupy respondentów w celu wypełnienia. Gdy respondenci podadzą odpowiedzi, możesz przejrzeć i przeanalizować wyniki.
 
 - [Kwestionariusze](../../../talent/questionnaires.md)
-- [Projektowanie kwestionariusza](../../../talent/design-questionnaires.md)
-- [Rozsyłanie i wypełnianie kwestionariusza](../../../talent/distribute-questionnaires.md)
-- [Wyświetlanie i ocenianie wyników kwestionariusza](../../../talent/evaluate-questionnaire-results.md)
+- [Projektowanie kwestionariuszy](../../../talent/design-questionnaires.md)
+- [Dystrybuowanie i planowanie kwestionariuszy](../../../talent/distribute-questionnaires.md)
+- [Wyświetlanie i ocenianie wyników kwestionariuszy](../../../talent/evaluate-questionnaire-results.md)

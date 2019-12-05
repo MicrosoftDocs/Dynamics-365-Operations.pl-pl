@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00e1956950154051d4a916a013c2200029772e37
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fd57b702220374ef5ac48e1af7c42827a21e7517
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547108"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813600"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Obliczenia dla modeli produktu w konfiguracji — często zadawane pytania
 
@@ -37,7 +37,7 @@ Obliczenia mogą służyć do operacji arytmetycznych lub logicznych. Uzupełnia
 ## <a name="what-is-a-calculation"></a>Czym jest obliczenie?
 Obliczenie jest elementem używanym w modelu konfiguracji produktu. Obliczenia uzupełniają ograniczenia, umożliwiając obliczanie wartości przy użyciu liczb dziesiętnych podczas konfigurowania produktu. Ponadto obliczenia mają większy zestaw dostępnych operatorów niż ograniczenia.  
 
-Podobnie jak ograniczenie, obliczenie jest skojarzone z określonym składnikiem modelu konfiguracji produktu i nie może być ponownie używane lub współużytkowane z innym składnikiem. Istotna różnica pomiędzy obliczeniami i ograniczeniami polega na tym, że obliczenia są konieczne (jednokierunkowe), a ograniczenia deklaratywne (dwukierunkowe). Aby uzyskać więcej informacji o ograniczeniach, zobacz [Ograniczenie wyrażenia i powiązane tabele](expression-constraints-table-constraints-product-configuration-models.md).  
+Podobnie jak ograniczenie, obliczenie jest skojarzone z określonym składnikiem modelu konfiguracji produktu i nie może być ponownie używane lub współużytkowane z innym składnikiem. Istotna różnica pomiędzy obliczeniami i ograniczeniami polega na tym, że obliczenia są konieczne (jednokierunkowe), a ograniczenia deklaratywne (dwukierunkowe). Aby uzyskać więcej informacji dotyczących ograniczeń, zobacz temat [Ograniczenia wyrażenia i ograniczenia tabeli w modelach konfiguracji produktu.](expression-constraints-table-constraints-product-configuration-models.md).  
 
 Obliczenia składają się z atrybutu docelowego oraz wyrażenia obliczenia.
 
@@ -88,7 +88,7 @@ Nr Wartości, które można ustawić podczas konfigurowania produktu, to wartoś
 Jeśli usuniesz przy obliczaniu wartość wejściową, wartość atrybutu docelowego również zostanie usunięta.
 
 ## <a name="why-do-i-receive-an-error-message-that-says-that-my-model-is-in-contradiction"></a>Dlaczego pojawia się komunikat o błędzie z informacją, że mój model zawiera sprzeczność?
-Ten komunikat jest wyświetlany, gdy obliczenie zawiera błąd lub istnieje sprzeczność w jednym lub wielu ograniczeniach. Aby uzyskać więcej informacji dotyczących sprzeczności w ograniczeniach, zobacz temat [Ograniczenie wyrażenia i powiązane tabele](expression-constraints-table-constraints-product-configuration-models.md). Poniżej przedstawiono niektóre sytuacje, w których mogą wystąpić błędy w obliczeniach:
+Ten komunikat jest wyświetlany, gdy obliczenie zawiera błąd lub istnieje sprzeczność w jednym lub wielu ograniczeniach. Aby uzyskać więcej informacji dotyczących sprzeczności w ograniczeniach, zobacz temat [Ograniczenia wyrażenia i ograniczenia tabeli w modelach konfiguracji produktu.](expression-constraints-table-constraints-product-configuration-models.md). Poniżej przedstawiono niektóre sytuacje, w których mogą wystąpić błędy w obliczeniach:
 
 -   Wartość jest dzielona przez zero.
 -   Istnieje konflikt między tymi dwoma elementami:

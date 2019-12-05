@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 037d4971fe0a5a9d08f0ed20d2482b8feb9aa4f2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 44d404aaafd124a5d5a9d92cac8add51f1ee846a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179416"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771991"
 ---
 # <a name="cost-element-dimensions"></a>Wymiary składników kosztów
 
@@ -66,7 +66,7 @@ Istnieją dwa typy składników kosztów: podstawowe i podrzędne. W poniższej 
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Wymiary składników kosztów i elementy członkowskie wymiarów składników kosztów
 Składniki kosztów są określane jako *wymiary składników kosztów* . Wartości poszczególnych wymiarów są nazywane *elementami członkowskimi wymiarów składników kosztów*. Na przykład masz strukturę amerykańskiego planu kont (COA), która jest podstawą do sprawozdawczości ustawowej. Ten plan kont służy jako wymiar składników kosztów. Konta, czyli podstawowe składniki kosztów, są przedstawiane jako elementy członkowskie wymiaru składników kosztów w rachunku kosztów. Poniższy zrzut ekranu przedstawia przykład kont głównych jako wymiaru składników kosztów, gdzie faktyczne konta główne są elementami członkowskimi wymiaru składników kosztów. 
 
-[![cost-element-dimensions](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![Zrzut ekranu kont głównych jako wymiar elementu kosztu](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Importowanie elementów członkowskich wymiarów składników kosztów za pośrednictwem łączników danych
 Aby ułatwić sobie konfigurowanie elementów członkowskich wymiarów składników kosztów w module Rachunek kosztów, można używać łączników danych wbudowanych w systemie lub utworzonych samodzielnie do podstawowych składników kosztów z jednego lub więcej systemów źródłowych.

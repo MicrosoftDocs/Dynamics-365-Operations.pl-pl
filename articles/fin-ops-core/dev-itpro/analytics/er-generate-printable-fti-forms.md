@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 731b6a61bd78388f3db0a7007478e3a5e9629a49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181434"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771290"
 ---
 # <a name="generate-printable-fti-forms"></a>Generowanie drukowalnych formularzy FTI
 
@@ -41,7 +41,7 @@ Oprócz istniejącej wcześniej możliwości tworzenia drukowalnych formularzy f
 W ramach niestandardowego rozwiązania do generowania drukowalnych formularzy faktur niezależnych należy utworzyć zestaw konfiguracji raportowania elektronicznego.
 
 ### <a name="configure-the-er-data-model"></a>Konfigurowanie modelu danych raportowania elektronicznego
-Aplikacja musi zawierać konfigurację modelu danych raportowania elektronicznego z modelem danych, który opisuje dziedzinę biznesową fakturowania odbiorców. Model danych koniecznie musi się nazywać **CustomersInvoicing**. Aby uzyskać informacje o projektowaniu modeli danych raportowania elektronicznego, zobacz [Projektowanie modelu danych specyficznego dla domeny na potrzeby raportowania elektronicznego (ER)](tasks/er-design-domain-specific-data-model-2016-11.md).
+Aplikacja musi zawierać konfigurację modelu danych raportowania elektronicznego z modelem danych, który opisuje dziedzinę biznesową fakturowania odbiorców. Model danych koniecznie musi się nazywać **CustomersInvoicing**. Aby uzyskać informacje o projektowaniu modeli danych raportowania elektronicznego, zobacz [ER Projektowanie modelu danych specyficznego dla domeny (ER)](tasks/er-design-domain-specific-data-model-2016-11.md).
 
 ### <a name="configure-the-er-model-mapping"></a>Konfigurowanie mapowania modelu raportowania elektronicznego
 Aplikacja musi zawierać mapowanie modelu raportowania elektronicznego dla modelu danych CustomersInvoicing. Mapowanie modelu może się znajdować w konfiguracji modelu danych raportowania elektronicznego lub konfiguracji mapowania modelu raportowania elektronicznego. Jednak główny deskryptor mapowania modelu musi się nazywać **FreeTextInvoice**.
@@ -62,7 +62,7 @@ Mapowanie musi zawierać następujące źródła danych:
 
 Szczegółowe informacje o integracji aplikacji ze strukturą ER znajdują się w klasie **ERPrintMgmtReportFormatSubscriber** (model integracji pakietu aplikacji w raportowaniu elektronicznym) w kodzie źródłowym aplikacji.
 
-Aby uzyskać więcej informacji o projekcie mapowań modelu raportowania elektronicznego, zobacz [Definiowanie mapowania modelu i wybieranie źródeł danych na potrzeby raportowania elektronicznego (ER)](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
+Aby uzyskać więcej informacji o projekcie mapowań modelu raportowania elektronicznego, zobacz [Definiowanie mapowań modelu ER i wybieranie źródeł danych](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
 ### <a name="configure-the-er-format"></a>Konfigurowanie formatu raportowania elektronicznego
 W wystąpieniu aplikacji musi istnieć konfiguracja formatu raportowania elektronicznego, która będzie używana do generowania formularzy faktur niezależnych. 
@@ -70,7 +70,7 @@ W wystąpieniu aplikacji musi istnieć konfiguracja formatu raportowania elektro
 > [!NOTE]
 > Ta konfiguracja formatu musi być utworzona dla modelu danych CustomersInvoicing oraz musi używać mapowania modelu mającego deskryptor główny **FreeTextInvoice**.
 
-Aby uzyskać informacje o konfigurowaniu formatów raportowania elektronicznego, zobacz [Tworzenie konfiguracji formatu dla raportowania elektronicznego (ER)](tasks/er-format-configuration-2016-11.md). Aby uzyskać informacje o projektowaniu formatów raportowania elektronicznego w celu generowania raportów w formacie OpenXML, zobacz [Projektowanie konfiguracji do generowania raportów w formacie OpenXML na potrzeby raportowania elektronicznego (ER)](tasks/er-design-reports-openxml-2016-11.md).
+Aby uzyskać informacje o konfigurowaniu formatów raportowania elektronicznego, zobacz [ER Tworzenie konfiguracji formatu dla raportowania elektronicznego (listopad 2016)](tasks/er-format-configuration-2016-11.md). Aby uzyskać informacje o projektowaniu formatów raportowania elektronicznego w celu generowania raportów w formacie OpenXML, zobacz [ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML (listopad 2016)](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="configure-print-management"></a>Konfigurowanie zarządzania drukowaniem
 Aby generować formularze faktur niezależnych przy użyciu struktury raportowania elektronicznego, można przypisywać formaty ER w taki sam sposób, jak się przypisuje raporty w usłudze SSRS. Aby skojarzyć format raportowania elektronicznego ze wszystkimi fakturami niezależnymi w module Rozrachunki z odbiorcami, wybierz kolejno opcje **Rozrachunki z odbiorcami** \> **Ustawienia** \> **Formularze** \> **Ustawienia formularza** \> **Ogólne** \> **Zarządzanie drukowaniem** \> **Faktura niezależna** \> **Oryginał**. Aby skojarzyć format ER z określonym odbiorcą lub fakturą, wykonaj następujące kroki:
@@ -94,7 +94,7 @@ Aby wygenerować formularze faktur niezależnych, można wybrać faktury według
 
 ![Podgląd faktury](media/FTIbyGER-InvoiceExcelPreview.png)
 
-Jeżeli formaty raportowania elektronicznego są używane do drukowania formularzy faktur niezależnych w ten sposób, są używane domyślne plikowe miejsca docelowe modułu Raportowanie elektroniczne. Nie można zmienić tego miejsca docelowego. Aby uzyskać więcej informacji o konfigurowaniu miejsc docelowych raportowania elektronicznego dla formatów raportowania elektronicznego, zobacz [Miejsca docelowe raportowania elektronicznego](electronic-reporting-destinations.md).
+Jeżeli formaty raportowania elektronicznego są używane do drukowania formularzy faktur niezależnych w ten sposób, są używane domyślne plikowe miejsca docelowe modułu Raportowanie elektroniczne. Nie można zmienić tego miejsca docelowego. Aby uzyskać więcej informacji o konfigurowaniu miejsc docelowych raportowania elektronicznego dla formatów raportowania elektronicznego, zobacz [Miejsca docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md).
 
 Można również generować formularze faktur niezależnych podczas księgowania faktur niezależnych. W tym celu należy włączyć opcję **Drukuj fakturę**, a wyłączyć opcję **Używanie miejsc docelowych zarządzania drukowaniem**.
 
@@ -221,7 +221,7 @@ Dla wyrażenia **Emailing.TxtToUse.Body** w przykładowym formacie skonfigurowan
 - „%5” jest zastępowany stanowiskiem osoby kontaktowej w firmie.
 - „%6” jest zastępowany adresem e-mail osoby kontaktowej w firmie.
 
-![Wyślij pocztą e-mail](media/FTIbyGER-Email.PNG)
+![E-mail](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-[Omówienie raportowania elektronicznego](general-electronic-reporting.md)
+[Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md)

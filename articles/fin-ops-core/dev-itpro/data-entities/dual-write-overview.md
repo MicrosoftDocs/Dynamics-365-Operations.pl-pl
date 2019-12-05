@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d70bce4e47c05a7974c1b974fdca17682e5370aa
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550864"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772394"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>Integracja danych w czasie zbliżonym do rzeczywistego z Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 W obecnym świecie cyfrowym ekosystemy biznesowe wykorzystują aplikacje Microsoft Dynamics 365 w całości. Ponieważ dane pochodzące od osób, klientów, z operacji i urządzeń Internetu rzeczy (IoT) trafiają do jednego źródła, istnieje szansa na tworzenie cyfrowych pętli sprzężenia zwrotnego. Aby osiągnąć ten komfort, niezbędna jest integracja między aplikacjami Finance and Operations i aplikacjami Dynamics 365. Niektóre Customer Engagement są zbudowane na Common Data Service. Integracja między danymi aplikacji Finance and Operations z Common Data Service pozwala innym aplikacjom komunikować się w sposób spójny i płynny z rozwiązaniem Finance and Operations.
 
@@ -38,13 +36,16 @@ Aplikacje Finance and Operations i Common Data Service zapewniają synchronizacj
 
 ![Diagram poglądowy architektury](media/dual-write-overview.jpg)
 
-Dla klientów dostępne są następujące propozycje wartości:
+Dla klientów dostępne są następujące propozycje:
 
 + [Hierarchia organizacyjna w usłudze Common Data Service](dual-write-organization.md)
 + [Pojęcie firmy w usługach Common Data Service](dual-write-company.md)
 + [Zintegrowane dane główne odbiorcy](dual-write-customer.md)
++ [Zintegrowana księga](dual-write-ledger.md)
++ [Ujednolicone działanie produktu](dual-write-product.md)
 + [Zintegrowane dane główne dostawcy](dual-write-vendor.md)
-+ Ujednolicony produkt główny
++ [Zintegrowane oddziały i magazyny](dual-write-sites-and-warehouses.md)
++ [Zintegrowane dane główne podatków](dual-write-tax.md)
 
 ## <a name="system-requirements"></a>Wymagania systemowe
 

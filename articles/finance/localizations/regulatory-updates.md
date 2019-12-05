@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: adb88a5fb79b24a26aa2976464d3e838922322c6
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 480253d1401c567e27f636f8a2b19fa3937e89e5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653211"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770391"
 ---
 # <a name="regulatory-updates"></a>Aktualizacje wymagane przepisami prawa
 
@@ -82,11 +82,11 @@ Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych
 |      2019 kwietnia          |   10.0.1      | Węgry      |  Węgry: fakturowanie w trybie online w wersji 1.1 2019  |
 |      2019 kwietnia          |   10.0.1      | Japonia      |  2019 zmiana ery w kalendarzu japońskim  |
 |      2019 kwietnia          |   10.0.1      |    Rosja     |Format deklaracji podatku gruntowego zmienia się od 2018 r. |
-|      2019 kwietnia          |   10.0.1      |    Rosja     |[Format deklaracji podatku od nieruchomości zmienia się od 2019 r.](rus-assessed-tax-declaration.md)|
+|      2019 kwietnia          |   10.0.1      |    Rosja     |[Deklaracja szacowanego podatku](rus-assessed-tax-declaration.md)|
 |      2019 kwietnia          |   10.0.1      |    Rosja     |Format deklaracji podatku transportowego zmienia się od 2019 r.  |
-|      2019 kwietnia          |   10.0.1      |    Rosja     |[Format deklaracji VAT zmienia się od 2019 r.](rus-VAT-declaration.md) |
+|      2019 kwietnia          |   10.0.1      |    Rosja     |[Deklaracja VAT](rus-VAT-declaration.md) |
 |      2019 kwietnia          |   10.0.1      |    Rosja     |Format deklaracji VAT zmienia się od 2019 r. (formaty ksiąg zakupów i sprzedaży) |
-|      2019 kwietnia          |   10.0.1      |    Zjednoczone Królestwo     |[Zmiany w przesyłaniu deklaracji VAT (Zamiana podatku na format cyfrowy)](emea-gbr-mtd-vat-integration.md)    |    
+|      2019 kwietnia          |   10.0.1      |    Zjednoczone Królestwo     |[Przygotowywanie Finance and Operations do integracji z MTD dla podatku VAT](emea-gbr-mtd-vat-integration.md)    |    
 |      2019 marca          |   10.0.0      |    Austria   |   Zmiany w Kammerumlage 2019 (cło od zakupu)    |
 |      2019 marca          |   10.0.0      |    Brazylia    |     Udział w SPED EFD — układ 004 i 005  |
 |      2019 marca          |   10.0.0      |    Malezja     |Malezja zastępuje GST z podatkiem SST od sprzedaży i usług        |

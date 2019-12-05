@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08d128e3006d019fa19b52f320b262ae49105e5d
-ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
+ms.openlocfilehash: 16a67ef625fdde0755e96c959be1fb2989ca53b6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2666837"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770673"
 ---
 # <a name="sales-tax-overview"></a>Omówienie podatku
 
@@ -38,7 +38,7 @@ Struktura podatku obsługuje wiele różnych rodzajów podatków pośrednich, ta
 
 Na poniższym diagramie przedstawiono jednostki podatku i jak są powiązane.
 
-[![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Diagram przedstawiający omówienie jednostek konfiguracji podatku](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 Dla każdego podatku, z którego firma musi się rozliczać, należy zdefiniować kod. Kody podatku zawierają stawki podatku oraz zasady obliczania dla każdego podatku. 
 
@@ -55,7 +55,7 @@ W poniższej tabeli opisano jednostki i kolejność konfiguracji podatku.
 | Działanie konfiguracyjne                                                  | Wskaźnik wymagane/opcjonalne oraz opis                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tworzenie kont głównych.                                           | Wymagane. Przed rozpoczęciem konfigurowania funkcji podatku należy utworzyć konta główne używane w firmie do płacenia i rejestrowania podatków.                                                                                                                                                                             |
-| Skonfiguruj grupy księgowania w księdze dla podatku.                     | Wymagane. Grupy księgowania definiują konta główne do rejestrowania i płacenia podatków.   Aby uzyskać więcej informacji, zobacz [Konfigurowanie grup księgowania podatku](tasks/set-up-ledger-posting-groups-sales-tax.md)                                                                                 |
+| Skonfiguruj grupy księgowania w księdze dla podatku.                     | Wymagane. Grupy księgowania definiują konta główne do rejestrowania i płacenia podatków.   Aby uzyskać więcej informacji, zobacz [Konfigurowanie grup księgowania dla podatku](tasks/set-up-ledger-posting-groups-sales-tax.md)                                                                                 |
 | Skonfiguruj urzędy skarbowe.                                   | Wymagane. Urzędy skarbowe są jednostkami, w których podatek musi zostać zgłoszony i zapłacony.    Aby uzyskać więcej informacji, zobacz [Konfigurowanie urzędów skarbowych](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
 | Ustawianie okresów rozliczania podatku.                            | Wymagane. Okresy rozliczenia podatku informują kiedy i jak często podatek musi być zgłaszany i opłacany. Odnoszą się one do urzędu skarbowego.                                                                                                                                                       |
 | Konfigurowanie kodów raportowania podatku.                               | Opcjonalne. Kody raportowania podatku można przypisać do kodów podatku w celu raportowania kwoty dla wielu kodów podatku w jednym kodzie raportowania podatku. Aby uzyskać więcej informacji, zobacz [Ustawianie kodów raportowania podatku](tasks/set-up-sales-tax-reporting-codes.md).                                         |

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f61c142fff73fdeeca573cca3f54e654511af1e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 132817fefb9592764d1adaf9f714c27108ce88ae
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556419"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815118"
 ---
 # <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Planowanie główne dla zapotrzebowania oddziału, magazyn wymagany
 
@@ -51,15 +51,15 @@ Na poniższej ilustracji przedstawiono przebieg planowania głównego. Parametry
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Planowanie główne a funkcjonalność wielooddziałowości](master-plan-multisite-functionality.md)
+[Omówienie planowania głównego i funkcjonalności wielooddziałowości](master-plan-multisite-functionality.md)
 
-[Planowanie główny — zapotrzebowania oddziału i magazynu, magazyn wymagany](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+[Planowanie główne dla zapotrzebowania oddziału i magazynu, magazyn wymagany](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Planowanie główne — zapotrzebowania oddziału, magazyn wymagany](master-plan-site-coverage-warehouse-mandatory.md)
+[Planowanie główne dla zapotrzebowania oddziału, magazyn wymagany](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Planowanie główny — zapotrzebowania oddziału i magazynu, magazyn niewymagany](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+[Planowanie główne dla zapotrzebowania oddziału i magazynu, magazyn niewymagany](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
-[Planowanie główne — jak określa się wersję BOM](master-plan-bom-version-determined.md)
+[Ustalanie wersji BOM](master-plan-bom-version-determined.md)
 
 
 

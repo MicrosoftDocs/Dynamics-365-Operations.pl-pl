@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e0369be278519f39fc304b34ef3a270438f0bb1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 242e9fd5fd4b22f3081367cf33ff18ff5e4174a5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026263"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814750"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Rozprowadzanie i planowanie kwestionariuszy
 
@@ -54,7 +54,8 @@ Aby przypisać grupę kwestionariusza do kwestionariusza, na stronie **Kwestiona
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planowane sesje odpowiedzi w kwestionariuszu
 Zaplanowane sesje odpowiedzi to kwestionariusze, które zostały opracowane i wybrane dla respondentów. 
 
-> **Uwaga:** Przed skonfigurowaniem zaplanowanych sesji odpowiedzi należy zaprojektować kwestionariusz. 
+> [!NOTE]
+>   Przed skonfigurowaniem zaplanowanych sesji odpowiedzi należy zaprojektować kwestionariusz. 
 
 Na stronie **Planowana sesja odpowiedzi** można utworzyć planowaną sesję odpowiedzi dla pojedynczego pracownika. Lista na tej stronie zawiera wszystkie zaplanowane kwestionariusze. 
 
@@ -108,12 +109,14 @@ Jeśli używasz planowanej sesji odpowiedzi, należy powiadomić wybraną osobę
 
 Na stronie **Harmonogramy kwestionariuszy** można przygotować i wysłać wiadomość e-mail do wszystkich respondentów przypisanych do danego kwestionariusza. Wprowadź tekst wiadomości e-mail na karcie **Wiadomość e-mail samoobsługi pracownika**. Po rozpoczęciu harmonogramu kliknij opcję **Funkcje** &gt; **Wyślij wiadomość e-mail**, aby wygenerować i wysłać wiadomość e-mail do osób udzielających odpowiedzi. Respondenci mogą następnie zalogować się w witrynie i wypełnić kwestionariusz. 
 
-> **Uwaga:** Zanim będzie można skorzystać z funkcji poczty e-mail, administrator IT musi wprowadzić ustawienia poczty e-mail na stronie **Parametry poczty e-mail**.
+> [!NOTE]
+>   Zanim będzie można skorzystać z funkcji poczty e-mail, administrator IT musi wprowadzić ustawienia poczty e-mail na stronie **Parametry poczty e-mail**.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Kończenie planowanego arkusza
 Można zakończyć zaplanowany kwestionariusz po ukończeniu przez wszystkich respondentów przypisanych do nich sesji odpowiedzi. Po zakończeniu zaplanowanego kwestionariusza, nie można skopiować jego ustawień do nowego harmonogramu. 
 
-> **Uwaga:** Jeśli co najmniej jeden respondent nie wypełnił kwestionariusza, a mimo to planowanie ma zostać zakończone, najpierw usuń odpowiednich respondentów z listy na stronie **Planowana sesja odpowiedzi**. Po wykonaniu tej czynności będzie można zakończyć planowanie.
+> [!NOTE]
+>   Jeśli co najmniej jeden respondent nie wypełnił kwestionariusza, a mimo to planowanie ma zostać zakończone, najpierw usuń odpowiednich respondentów z listy na stronie **Planowana sesja odpowiedzi**. Po wykonaniu tej czynności będzie można zakończyć planowanie.
 
 ## <a name="completing-questionnaires"></a>Wypełnianie kwestionariusza
 Po zaprojektowaniu i rozesłaniu kwestionariusza, kwestionariusz może zostać wypełniony przez wybranych respondentów. Kwestionariusze można wypełniać w dwóch lokalizacjach:
@@ -128,8 +131,8 @@ Kwestionariusze można udostępnić wszystkich osobom w sieci, określonym użyt
 
 [Projektowanie kwestionariuszy](design-questionnaires.md)
 
-[Używanie kwestionariuszy](questionnaires.md)
+[Kwestionariusze](questionnaires.md)
 
-[Wyświetlanie i ocena wyników kwestionariuszy](evaluate-questionnaire-results.md)
+[Wyświetlanie i ocenianie wyników kwestionariuszy](evaluate-questionnaire-results.md)
 
 

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: a987e75834ddde486421a425a621e66f0b6e063f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577907"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811172"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Konfigurowanie integracji fiskalnej dla kanałów sprzedaży detalicznej
 
@@ -210,7 +210,7 @@ Opcje obsługi błędów dostępne w integracji fiskalnej ustawia się w procesi
 
 Aby włączyć raporty fiskalne X / końcowe raporty sprzedaży z POS, należy dodać nowe przyciski do układu POS.
 
-- Na stronie **Siatka przycisków** postępuj zgodnie instrukcjami w [Dodawanie przycisków niestandardowych operacji do układu POS w Centrali sieci sprzedaży](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters), aby zainstalować projektanta i zaktualizować układ POS.
+- Na stronie **Siatka przycisków** postępuj zgodnie instrukcjami w [Dodawanie operacji punktu sprzedaży do układów aplikacji POS przy użyciu projektanta siatki przycisków](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters), aby zainstalować projektanta i zaktualizować układ POS.
 
     1. Wybierz układ do zaktualizowania. 
     2. Dodaj nowy przycisk i ustaw właściwość przycisku **Drukuj częściowy raport obrachunkowy sprzedaży częściowej**.
@@ -221,7 +221,7 @@ Aby włączyć raporty fiskalne X / końcowe raporty sprzedaży z POS, należy d
 
 Aby włączyć ręczne wykonywanie odroczonej rejestracji fiskalnej, należy dodać nowy przycisk do układu punktu sprzedaży.
 
-- Na stronie **Siatka przycisków** postępuj zgodnie instrukcjami w [Dodawanie przycisków niestandardowych operacji do układu POS w Centrali sieci sprzedaży](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters), aby zainstalować projektanta i zaktualizować układ POS.
+- Na stronie **Siatka przycisków** postępuj zgodnie instrukcjami w [Dodawanie operacji punktu sprzedaży do układów aplikacji POS przy użyciu projektanta siatki przycisków](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters), aby zainstalować projektanta i zaktualizować układ POS.
 
     1. Wybierz układ do zaktualizowania.
     2. Dodaj nowy przycisk i ustaw właściwość przycisku **Zakończ proces rejestracji fiskalnej**.

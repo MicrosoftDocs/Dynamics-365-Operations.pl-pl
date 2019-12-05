@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6fdfa78ba0ace5481305d2ab505ed5fc7538e29e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 337b6b0b7ec25851f5dc156effad9ff07256a44d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545037"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814221"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Wizualne planowanie zadań na potrzeby lean manufacturing
 
@@ -93,5 +93,5 @@ Tablicę harmonogramu Kanban można otworzyć przy użyciu elementu menu na nast
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Lean manufacturing — planowanie zadań w systemie Kanban](lean-manufacturing-kanban-job-scheduling.md)
+[Planowanie zadań w systemie Kanban na potrzeby lean manufacturing](lean-manufacturing-kanban-job-scheduling.md)
 

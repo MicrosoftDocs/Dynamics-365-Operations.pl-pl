@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a21394daeb797995418c3b139191dd700c129e12
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 3f0180f63c32f3e88d7f5e245716ccc908cc026d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019400"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811247"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
 
@@ -33,7 +33,7 @@ ms.locfileid: "2019400"
 Ten temat omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS.
 
 > [!NOTE]
-> Aby uzyskać szczegółowe instrukcje instalacji, zobacz artykuły [Konfiguracja i instalacja składnika Retail](retail-hardware-station-configuration-installation.md) i [Samodzielne pobieranie/instalacja składnika Retail Modern POS oraz aktywacja urządzeń typu Modern POS i Cloud POS](retail-modern-pos-device-activation.md).
+> Aby uzyskać szczegółowe instrukcje dotyczące instalacji, należy zapoznać się z tematem [Konfigurowanie i instalowanie modułu Retail Hardware Station](retail-hardware-station-configuration-installation.md) i [Konfigurowanie, instalowanie i aktywacja Retail Modern POS](retail-modern-pos-device-activation.md).
 
 ## <a name="key-components"></a>Najważniejsze składniki
 
@@ -139,7 +139,7 @@ Profil funkcji jest ustawiany na poziomie sklepu. Służy do określania ogólno
 
 - Skrócona karta **Kody informacji**:
 
-    - Zarządzanie wszystkimi aspektami kodów informacji odbywa się na kasie w punkcie sprzedaży. Aby uzyskać szczegółowe informacje, zobacz [Kody informacji](info-codes-retail.md).
+    - Zarządzanie wszystkimi aspektami kodów informacji odbywa się na kasie w punkcie sprzedaży. Aby dowiedzieć się więcej, zobacz [Kody informacji i grupy kodów informacji](info-codes-retail.md).
 
 - Skrócona karta **Numeracja paragonów**:
 

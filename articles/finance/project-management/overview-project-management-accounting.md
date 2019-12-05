@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d461b85f89eff63c8747fb17b3ee34ebfeb2218
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 79e12f39589f9cf3f4b1515fa3ab10bb10ffb97f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185642"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770366"
 ---
 # <a name="project-management-and-accounting-overview"></a>Omówienie zarządzania projektami i ich księgowania
 
@@ -72,7 +72,7 @@ Aby uzyskać więcej informacji o umowie dotyczącej projektu, zobacz [Umowy dot
 
 Stopień szczegółowości w SPP zależy od poziomu dokładności, jaki jest wymagany w szacunkach i poziomu śledzenia, który jest wymagany dla tych oszacowań. Projektów o bardzo małej tolerancji na opóźnienia harmonogramu czy wahania kosztów zazwyczaj wymagają bardziej szczegółowych SPP i dokładnego monitorowania postępów pracy i kosztów względem SPP. 
 
-Aby uzyskać więcej informacji, zobacz [Struktury podziału pracy](work-breakdown-structures.md).
+Aby uzyskać więcej informacji, zobacz [Omówienie struktur podziału pracy](work-breakdown-structures.md).
 
 ### <a name="create-project-forecasts-and-budgets"></a>Tworzenie prognoz i budżetów projektów
 
@@ -134,7 +134,7 @@ W czasie wykonywania projektu członkowie zespołu i menedżerowie rejestrują p
 
 SPP to opis pracy, która zostanie wykonana w ramach projektu. Struktura podziału pracy jest hierarchią zadań. Reprezentuje ona nie tylko pracę dla każdego zadania, ale również zakres, koszt i czas trwania zadania. 
 
-Aby uzyskać więcej informacji, zobacz [Struktury podziału pracy](work-breakdown-structures.md).
+Aby uzyskać więcej informacji, zobacz [Omówienie struktur podziału pracy](work-breakdown-structures.md).
 
 ### <a name="manage-project-forecasts-and-budgets"></a>Zarządzanie prognozami i budżetami projektów
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2168b33c8495eab61ec0c8262b042cd16420031c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a643be553f3fcdfbe53f2024982a596e498830a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190104"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811311"
 ---
 # <a name="create-workflows-overview"></a>Omówienie tworzenia przepływów pracy
 
@@ -60,15 +60,15 @@ Wykonaj poniższe czynności, aby skonfigurować właściwości przepływu pracy
 
 Skonfiguruj każdy element przeciągnięty na kanwę. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania każdego elementu przepływu pracy, zobacz następujące tematy.
 
-- [Konfigurowanie zadania ręcznego](configure-manual-task-workflow.md)
-- [Konfigurowanie zadania wykonywanego automatycznie](configure-automated-task-workflow.md)
-- [Konfigurowanie procesu zatwierdzania](configure-approval-process-workflow.md)
-- [Konfigurowanie kroku zatwierdzania](configure-approval-step-workflow.md)
-- [Konfigurowanie decyzji ręcznej](configure-manual-decision-workflow.md)
-- [Konfigurowanie decyzji warunkowej](configure-conditional-decision-workflow.md)
-- [Konfigurowanie działania równoległego](configure-parallel-activity-workflow.md)
+- [Konfigurowanie zadań ręcznych w przepływie pracy](configure-manual-task-workflow.md)
+- [Konfigurowanie zadań wykonywanych automatycznie w przepływie pracy](configure-automated-task-workflow.md)
+- [Konfigurowanie procesów zatwierdzania w przepływie pracy](configure-approval-process-workflow.md)
+- [Konfigurowanie kroków zatwierdzania w przepływie pracy](configure-approval-step-workflow.md)
+- [Konfigurowanie decyzji ręcznych w przepływie pracy](configure-manual-decision-workflow.md)
+- [Konfigurowanie decyzji warunkowych w przepływie pracy](configure-conditional-decision-workflow.md)
+- [Konfigurowanie odgałęzień równoległych w przepływie pracy](configure-parallel-activity-workflow.md)
 - [Konfigurowanie odgałęzienia równoległego](configure-parallel-branch-workflow.md)
-- [Konfigurowanie przepływu pracy dla pozycji w wierszu](configure-line-item-workflow.md)
+- [Konfigurowanie przepływów pracy dla pozycji w wierszach](configure-line-item-workflow.md)
 
 ## <a name="resolve-any-errors-or-warnings"></a>Rozwiąż wszelkie błędy lub ostrzeżenia
 

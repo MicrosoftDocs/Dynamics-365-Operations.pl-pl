@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a476163ba6f66ab60ed8bfea6198d02f13ac5136
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5020b523ca5d76d36f7436a8f43e8629c029e3e8
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182722"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769885"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Uzyskaj dostęp do metadanych aplikacji za pomocą połączonych aplikacji
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulatory configuration service (RCS) w roli Administratora Systemu lub Dewelopera elektronicznego raportowania może zaprojektować nowe mapowanie modelu Elektronicznego raportowania (ER) przy użyciu metadanych w aplikacji Finance and Operations. Metadane aplikacji będą dostępne online za pomocą aplikacji połączonej z RCS. Przykładowe mapowanie modelu ER zostanie skonfigurowane do dostępu do transakcji handlu zagranicznego. Aby wykonać te kroki, w RCS musisz najpierw wykonać kroki podane w niniejszym temacie, [Utwórz dostawcę konfiguracji i oznacz go jako aktywnego](er-configuration-provider-mark-it-active-2016-11.md). Jeśli nie wykonałeś wszystkich podanych kroków [Dostęp do metadanych aplikacji przy użyciu konfiguracji ER](access-application-metadata-er-configuration.md), przejdź do strony [Przykłady elektronicznego raportowania](https://go.microsoft.com/fwlink/?linkid=862266), aby pobrać i zapisać następujące konfiguracje ER: Handel zagraniczny metadane.xml; Model handlu zagranicznego.xml; Mapowanie handlu zagranicznego.xml, a następnie wykonaj kroki procedury.
+W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulatory configuration service (RCS) w roli Administratora Systemu lub Dewelopera elektronicznego raportowania może zaprojektować nowe mapowanie modelu Elektronicznego raportowania (ER) przy użyciu metadanych w aplikacji Finance and Operations. Metadane aplikacji będą dostępne online za pomocą aplikacji połączonej z RCS. Przykładowe mapowanie modelu ER zostanie skonfigurowane do dostępu do transakcji handlu zagranicznego. Aby wykonać te kroki, w RCS należy najpierw wykonać kroki w procedurze [Tworzenie dostawców konfiguracji i oznacz je jako aktywne](er-configuration-provider-mark-it-active-2016-11.md). Jeśli nie wykonałeś wszystkich podanych kroków [Dostęp do metadanych aplikacji przy użyciu konfiguracji ER](access-application-metadata-er-configuration.md), przejdź do strony [Przykłady elektronicznego raportowania](https://go.microsoft.com/fwlink/?linkid=862266), aby pobrać i zapisać następujące konfiguracje ER: Handel zagraniczny metadane.xml; Model handlu zagranicznego.xml; Mapowanie handlu zagranicznego.xml, a następnie wykonaj kroki procedury.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 1. Otwórz **Wszystkie miejsca prac** > **Electroniczne Raportowanie**. 
-2. Upewnij się, że dostawca konfiguracji dla przykładowej firmy Litware, Inc. jest dostępny i oznaczony jako **Aktywny** Jeśli nie widzisz dostawcy konfiguracji, musisz wykonać kroki w procedurze, [Utwórz dostawcę konfiguracji i oznacz go jako aktywnego](er-configuration-provider-mark-it-active-2016-11.md). 
+2. Upewnij się, że dostawca konfiguracji dla przykładowej firmy Litware, Inc. jest dostępny i oznaczony jako **Aktywny** Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj procedurę [Utwórz dostawców konfiguracji i oznacz ich jako aktywnych](er-configuration-provider-mark-it-active-2016-11.md). 
 
 ## <a name="get-required-er-configurations"></a>Uzyskaj wymagane konfiguracje ER
 1. Kliknij opcję **Konfiguracje raportowania**. 
-2. Jeśli wykonałeś już kroki w procedurze [(RCS) Uzyskaj dostęp do metadanych aplikacji przy użyciu konfiguracji ER](access-application-metadata-er-configuration.md) i masz już wszystkie niezbędne konfiguracje ER (metadane handlu zagranicznego, model i konfiguracje mapowania) w bieżącej instancji RCS. Możesz pominąć wszystkie pozostałe kroki tego zadania podrzędnego. 
+2. Jeśli wykonałeś już kroki w procedurze [Uzyskaj dostęp do metadanych aplikacji przy użyciu konfiguracji ER](access-application-metadata-er-configuration.md) i masz już wszystkie niezbędne konfiguracje ER (metadane handlu zagranicznego, model i konfiguracje mapowania) w bieżącej instancji RCS. Możesz pominąć wszystkie pozostałe kroki tego zadania podrzędnego. 
 3. Kliknij **Zmień** 
 4. Kliknij **Załaduj z pliku XML**. 
 5. Kliknij **Przeglądaj** i wybierz plik **Handel zagraniczny metadane.xml**. 
@@ -72,8 +72,8 @@ W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulat
 4. W widoku drzewa wybierz **Model handlu zagranicznego\Handel zagraniczny mapowanie**. 
 5. Rozwiń sekcję **Wymagania**. 
 
-> [!NOTE]
-> Obecnie to mapowanie odnosi się do konfiguracji metadanych. Metadane aplikacji z tej konfiguracji będą proponowane podczas projektowania tego modelu mapowania. 
+    > [!NOTE]
+    > Obecnie to mapowanie odnosi się do konfiguracji metadanych. Metadane aplikacji z tej konfiguracji będą proponowane podczas projektowania tego modelu mapowania. 
 
 6. Kliknij przycisk **Konstruktor**. 
 7. Kliknij przycisk **Konstruktor**. 
@@ -81,8 +81,8 @@ W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulat
 9. Kliknij **Dodaj źródło**. 
 10. W polu **Tabela** wpisz wartość. 
 
-> [!NOTE]
-> Obecnie to mapowanie odnosi się do konfiguracji metadanych. Metadane aplikacji z tej konfiguracji będą proponowane podczas projektowania tego modelu mapowania. 
+    > [!NOTE]
+    > Obecnie to mapowanie odnosi się do konfiguracji metadanych. Metadane aplikacji z tej konfiguracji będą proponowane podczas projektowania tego modelu mapowania. 
 
 11. Kliknij **Anuluj**. 
 12. Zamknij stronę. 
@@ -92,8 +92,8 @@ W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulat
 1. Kliknij przycisk **Edytuj**. 
 2. Wybierz aplikację **MyConnectedApp**. 
 
-> [!NOTE]
-> Obecnie to mapowanie odnosi się do metadanych wybranej połączonej aplikacji. Gdy to samo mapowanie odnosi się do konfiguracji metadanych i połączonej aplikacji w tym samym czasie, zostaną użyte metadane połączonej aplikacji. 
+    > [!NOTE]
+    > Obecnie to mapowanie odnosi się do metadanych wybranej połączonej aplikacji. Gdy to samo mapowanie odnosi się do konfiguracji metadanych i połączonej aplikacji w tym samym czasie, zostaną użyte metadane połączonej aplikacji. 
 
 3. Kliknij przycisk **Konstruktor**. 
 4. Kliknij przycisk **Konstruktor**. 
@@ -101,14 +101,14 @@ W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulat
 6. Kliknij **Dodaj źródło**. 
 7. W polu **Tabela** wpisz wartość. 
 
-> [!NOTE]
-> Zaproponowano więcej niż dwie tabele aplikacji, ponieważ to mapowanie wykorzystuje wszystkie metadane połączonej aplikacji, która została do niej przypisana. 
+    > [!NOTE]
+    > Zaproponowano więcej niż dwie tabele aplikacji, ponieważ to mapowanie wykorzystuje wszystkie metadane połączonej aplikacji, która została do niej przypisana. 
 
 8. Kliknij **Anuluj**. 
 9. Kliknij **Potwierdź**. 
 
-> [!NOTE]
-> Udało nam się powiązać elementy modelu danych z elementami źródeł danych opisanymi przy użyciu szczegółów metadanych połączonej aplikacji, która została przypisana do tego mapowania. 
+    > [!NOTE]
+    > Udało nam się powiązać elementy modelu danych z elementami źródeł danych opisanymi przy użyciu szczegółów metadanych połączonej aplikacji, która została przypisana do tego mapowania. 
 
 10. Zamknij stronę. 
 11. Zamknij stronę. 

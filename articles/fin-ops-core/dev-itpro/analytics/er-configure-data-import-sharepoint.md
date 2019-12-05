@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b40f9a5677fd5375d7a19a75400d4305a8850392
-ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
+ms.openlocfilehash: c11123c0d53fcf4ba67e83fe64d2d6e692d5b6f1
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564944"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771359"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurowanie importu danych z programu SharePoint
 
@@ -43,7 +43,7 @@ Aby wykonać przykłady opisane w tym temacie, musisz mieć następujące uprawn
 - Konfiguracje formatu i modelu raportowania elektronicznego na potrzeby płatności wynikających z deklaracji 1099.
 
 ### <a name="create-required-er-configurations"></a>Tworzenie wymaganych konfiguracji ER
-Odtwórz przewodniki po zadaniach **ER Importowanie danych z pliku programu Microsoft Excel**, które wchodzą w skład procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**. Te wskazówki zadania przeprowadzą Cię przez proces projektowania i używania konfiguracji ER do aktywnego importowania transakcji dostawcy z plików programu Microsoft Excel. Aby uzyskać więcej informacji, zobacz [Analizowanie dokumentów przychodzących w programie Microsoft Excel](parse-incoming-documents-excel.md). Po wykonaniu kroków przewodnika po zadaniach będziesz mieć następując konfigurację.
+Odtwórz przewodniki po zadaniach **ER Importowanie danych z pliku programu Microsoft Excel**, które wchodzą w skład procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**. Te wskazówki zadania przeprowadzą Cię przez proces projektowania i używania konfiguracji ER do aktywnego importowania transakcji dostawcy z plików programu Microsoft Excel. Aby uzyskać więcej informacji, zobacz [Analizowanie dokumentów przychodzących w formacie Excel](parse-incoming-documents-excel.md). Po wykonaniu kroków przewodnika po zadaniach będziesz mieć następując konfigurację.
 
 #### <a name="er-configurations"></a>Konfiguracje ER
 

@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie integracji Attract z serwisem LinkedIn — często zadawane pytania
+title: Integracja z serwisem LinkedIn — często zadawane pytania
 description: Ten temat zawiera odpowiedzi na pytania, które mogą być związane z integracją między serwisem LinkedIn i aplikacją Microsoft Dynamics 365  Talent - Attract.
 author: hasrivas
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: b77ad598ba209dbbd73765c49947e84a3995153d
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 35428da709f480e1d3842b7e92deacba200326ee
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550374"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833099"
 ---
-# <a name="attract-integration-with-linkedin-faq"></a>Konfigurowanie integracji Attract z serwisem LinkedIn — często zadawane pytania
+# <a name="linkedin-integration-faq"></a>Integracja z serwisem LinkedIn — często zadawane pytania
 
 [!include [banner](includes/banner.md)]
 
@@ -41,8 +41,8 @@ Poniżej znajdują się odpowiedzi na często zadawane pytania dotyczące sposob
 Integracja Attract z usługą LinkedIn umożliwia wykonywanie następujących zadań:
 
 - [Publikację ofert pracy w serwisie LinkedIn](./attract-post-jobs-to-linkedin.md) (jako listy bezpłatne).
-- [Eksport informacji o kandydatach z serwisu LinkedIn do Attract](./attract-linkedin-recruiter.md#export-linkedin-candidates-to-attract-with-one-click).
-- [Zezwalanie kandydatom na aplikację na stanowiska pracy w serwisie LinkedIn](./attract-admin-linkedin.md#set-up-apply-with-linkedin-in-attract)
+- [Pozyskiwanie kandydatów za pomocą LinkedIn Recruiter w Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md#export-linkedin-candidates-to-attract-with-one-click).
+- [Konfigurowanie integracji z serwisem LinkedIn dla aplikacji Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md#set-up-apply-with-linkedin-in-attract).
 
 ### <a name="what-do-i-need-before-i-can-post-jobs-to-linkedin"></a>Co jest potrzebne, aby można było publikować oferty pracy w serwisie LinkedIn?
 
@@ -50,17 +50,17 @@ Administrator musi [skonfigurować integrację LinkedIn w Attract](./attract-adm
 
 ### <a name="how-do-i-post-jobs-to-linkedin-from-attract"></a>Jak można publikować ofert pracy w serwisie LinkedIn z poziomu aplikacji Attract?
 
-Po utworzeniu oferty pracy w Attract, wystarczy wybrać przycisk **Opublikuj teraz**, który odpowiada serwisowi LinkedIn. Aby uzyskać więcej informacji, przeczytaj [Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Attract](./attract-post-jobs-to-linkedin.md#post-jobs-to-linkedin).
+Po utworzeniu oferty pracy w Attract, wystarczy wybrać przycisk **Opublikuj teraz**, który odpowiada serwisowi LinkedIn. Aby uzyskać więcej informacji, przeczytaj [Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md#post-jobs-to-linkedin).
 
 ### <a name="can-i-get-candidate-information-from-linkedin-into-attract"></a>Czy mogę uzyskać informacje o kandydacie z LinkedIn w Attract?
 
-Tak. Jeśli zobaczysz dobrego kandydata w serwisie LinkedIn, możesz łatwo wyeksportować informacje na temat tego kandydata do Attract. Aby uzyskać więcej informacji, zobacz [Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter](attract-linkedin-recruiter.md).
+Tak. Jeśli zobaczysz dobrego kandydata w serwisie LinkedIn, możesz łatwo wyeksportować informacje na temat tego kandydata do Attract. Aby uzyskać więcej informacji, zajrzyj do [Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter w Microsoft Dynamics 365 Talent - Attract](attract-linkedin-recruiter.md).
 
 ### <a name="how-can-i-get-help-accessing-linkedin-from-attract"></a>W jaki sposób można uzyskać pomoc na temat używania serwisu LinkedIn za pomocą Attract?
 
-Jeśli występują problemy z logowaniem się lub publikacją ofert pracy w serwisie LinkedIn przy pomocy Attracy, przejrzyj informacje [Rozwiązywanie problemów z integracją z serwisem LinkedIn](./attract-troubleshoot-linkedin.md).
+Jeśli występują problemy z logowaniem lub publikacją ofert pracy w serwisie LinkedIn z Attract, przejrzyj informacje [Rozwiązywanie problemów z integracją usługi LinkedIn i Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md).
 
-Aby poznać inne problemy z Attract, zapoznaj się z tematem [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Talent](./talent-support.md). Aby uzyskać pomoc dotyczącą serwisu LinkedIn, zobacz [Pomoc techniczna serwisu LinkedIn](https://www.linkedin.com/help).
+Aby poznać inne problemy z Attract, zapoznaj się z tematem [Uzyskiwanie pomocy technicznej dotyczącej Microsoft Dynamics 365 Talent](./talent-support.md). Aby uzyskać pomoc dotyczącą serwisu LinkedIn, zobacz [Pomoc techniczna serwisu LinkedIn](https://www.linkedin.com/help).
 
 ## <a name="for-admins-and-developers"></a>Dla administratorów i deweloperów
 
@@ -68,11 +68,11 @@ Poniżej znajdują się odpowiedzi na często zadawane pytania dotyczące sposob
 
 ### <a name="how-do-i-configure-attract-so-that-recruiters-and-hiring-managers-can-post-jobs-to-linkedin"></a>Jak skonfigurować Attract, aby umożliwić rekruterom i menedżerom zatrudniania publikację ofert pracy w serwisie LinkedIn?
 
-Obie opcje konfiguruje się na karcie **Integracja z serwisem LinkedIn** w centrum administracyjnym. Aby uzyskać więcej informacji, zobacz [Konfigurowanie integracji z serwisem LinkedIn](./attract-admin-linkedin.md).
+Obie opcje konfiguruje się na karcie **Integracja z serwisem LinkedIn** w centrum administracyjnym. Aby uzyskać więcej informacji, odwiedź sekcję [Konfigurowanie integracji z serwisem LinkedIn dla Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md).
 
 ### <a name="can-i-export-candidate-information-from-linkedin"></a>Czy mogę eksportować informacje o kandydatach z serwisu LinkedIn do Attract?
 
-Tak, ale najpierw należy skonfigurować integrację z LinkedIn Recruiter. Aby uzyskać więcej informacji, zobacz [Konfigurowanie integracji z serwisem LinkedIn](./attract-admin-linkedin.md).
+Tak, ale najpierw należy skonfigurować integrację z LinkedIn Recruiter. Aby uzyskać więcej informacji, odwiedź sekcję [Konfigurowanie integracji z serwisem LinkedIn dla Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md).
 
 ### <a name="how-can-i-post-jobs-to-premium-job-slots-on-linkedin"></a>Jak można publikować oferty pracy w publikacjach ofert pracy premium w serwisie LinkedIn?
 
@@ -103,17 +103,17 @@ W poniższej tabeli opisano różne opcje publikacji ofert pracy w serwisie Link
 | **Jak często oferty są publikowane w serwisie LinkedIn?** | Raz dziennie | Raz dziennie | Wiele razy dziennie, zgodnie z definicją interfejsu API |
 | **Zalecane przez serwis LinkedIn?** | Nie | Tak | Nie |
 | **Czego potrzebuję?** | Zakup aplikacji Attract | Zadanie pakowania umowy z serwisem LinkedIn i zakupem dodatkowych gniazd zadań | Umowa API z usługą LinkedIn | 
-| **Gdzie można znaleźć więcej informacji?** | [Konfigurowanie integracji z serwisem LinkedIn](./attract-admin-linkedin.md) | [Zawijanie zadań przez LinkedIn Recruiter - Omówienie](https://www.linkedin.com/help/recruiter/answer/79037) | [Recruiter System Connect](https://docs.microsoft.com/linkedin/talent/recruiter-system-connect) |
+| **Gdzie można znaleźć więcej informacji?** | [Konfigurowanie integracji z serwisem LinkedIn dla aplikacji Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md) | [Zawijanie zadań przez LinkedIn Recruiter - Omówienie](https://www.linkedin.com/help/recruiter/answer/79037) | [Recruiter System Connect](https://docs.microsoft.com/linkedin/talent/recruiter-system-connect) |
 
 > [!NOTE]
 > Do publikacji ofert pracy w usłudze LinkedIn za pomocą Attract nie jest potrzebna licencja LinkedIn Recruiter System Connect.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Konfigurowanie integracji z serwisem LinkedIn](./attract-admin-linkedin.md)
+[Konfigurowanie integracji z serwisem LinkedIn dla aplikacji Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md)
 
-[Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Attract](./attract-post-jobs-to-linkedin.md)
+[Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
-[Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+[Pozyskiwanie kandydatów za pomocą LinkedIn Recruiter w Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md)
 
-[Rozwiązywanie problemów integracji z serwisem LinkedIn](./attract-troubleshoot-linkedin.md)
+[Rozwiązywanie problemów z integracją usługi LinkedIn i Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)

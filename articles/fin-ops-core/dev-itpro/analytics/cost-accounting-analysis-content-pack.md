@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 21ff82df71e352ca176aa1635a5ffb478bbcaf0e
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 0fc9877fdca2d2f85f4f9609616d8d21ab7b5174
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536831"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771594"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Pakiet zawartości Analiza rachunku kosztów dostępny w usłudze Power BI
 
@@ -40,7 +40,7 @@ Pakiet zawartości usługi **Analiza rachunku kosztów** pozwala księgowym anal
 
 Aby dowiedzieć się więcej o module Rachunek kosztów, zobacz [Rachunek kosztów — strona główna](../../../finance/cost-accounting/cost-accounting-home-page.md).
 
-Poprzez zdefiniowanie zabezpieczeń na poziomie dostępu w module Rachunek kosztów i połączenie ich z zabezpieczeniami na poziomie wierszy w usłudze Power BI można wszystkim właścicielom obiektów kosztów udzielić dostępu do pakietu zawartości **Analiza rachunku kosztów** usługi Power BI. Wszystkie dane w wizualizacjach będą następnie filtrowane według poziomu dostępu kontrolowanego w module Rachunek kosztów. Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie dostępu i zabezpieczeń na poziomie wierszy, zobacz [Konfigurowanie zabezpieczeń pakietu zawartości rachunku kosztów w usłudze Power BI](setup-security-cost-accounting-content-pack.md).
+Poprzez zdefiniowanie zabezpieczeń na poziomie dostępu w module Rachunek kosztów i połączenie ich z zabezpieczeniami na poziomie wierszy w usłudze Power BI można wszystkim właścicielom obiektów kosztów udzielić dostępu do pakietu zawartości **Analiza rachunku kosztów** usługi Power BI. Wszystkie dane w wizualizacjach będą następnie filtrowane według poziomu dostępu kontrolowanego w module Rachunek kosztów. Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie dostępu i zabezpieczeń na poziomie wierszy, zobacz [Konfigurowanie zabezpieczeń pakietu zawartości usług Power BI Analiza rachunku kosztów](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Pakiet zawartości **Analiza rachunku kosztów** usługi Power BI znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
@@ -74,7 +74,7 @@ Pakiet zawartości zawiera zestaw stron raportów. Każda strona zawiera zestaw 
 |                                  | Koszt rzeczywisty wg nazwy elementu członkowskiego wymiaru obiektu kosztów i nazwy elementu członkowskiego wymiaru składnika kosztu                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
-Następujące dane są używane do wypełniania stron raportów w pakiecie zawartości **Analiza rachunku kosztów** dla usługi Power BI. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).
+Następujące dane są używane do wypełniania stron raportów w pakiecie zawartości **Analiza rachunku kosztów** dla usługi Power BI. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Integracja usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).
 
 Następujące najważniejsze zagregowane miary są używane jako podstawa w pakiecie zawartości:
 

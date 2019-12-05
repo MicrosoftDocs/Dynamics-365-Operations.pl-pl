@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: b5c54d921e2955bc866ffd1ca516169790d33127
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c8655af567ef56c535ce0e43cb76c28c58dc1eb3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024245"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814612"
 ---
 # <a name="questionnaires"></a>Kwestionariusze
 
@@ -44,8 +44,8 @@ Poniższa tabela zawiera łącza do informacji o podstawowych zadaniach kwestion
 | Temat| opis|
 |------|------------|
 | [Projektowanie kwestionariusza](design-questionnaires.md)  | Z tego artykułu dowiesz się, jak zaprojektować kwestionariusz. Proces projektowania obejmuje konfigurowanie wymagań wstępnych, odpowiedzi i pytań, a następnie łączenie ich w kwestionariusz. |
-| [Dystrybucja i wypełnianie kwestionariusza](distribute-questionnaires.md)  | Ten artykuł zawiera informacje o sposobach dystrybuowania kwestionariusza do respondentów i ich wypełniania.                                                                       |
-| [Wyświetlanie i ocena wyników kwestionariusza](evaluate-questionnaire-results.md) | Ten artykuł zawiera informacje o sposobach przeglądania i oceniania wyników z wypełnionych kwestionariuszy.                                                                                        |
+| [Dystrybuowanie i planowanie kwestionariuszy](distribute-questionnaires.md)  | Ten artykuł zawiera informacje o sposobach dystrybuowania kwestionariusza do respondentów i ich wypełniania.                                                                       |
+| [Wyświetlanie i ocenianie wyników kwestionariusza](evaluate-questionnaire-results.md) | Ten artykuł zawiera informacje o sposobach przeglądania i oceniania wyników z wypełnionych kwestionariuszy.                                                                                        |
 
 
 
@@ -54,7 +54,7 @@ Poniższa tabela zawiera łącza do informacji o podstawowych zadaniach kwestion
 
 [Projektowanie kwestionariuszy](design-questionnaires.md)
 
-[Dystrybucja i wypełnianie kwestionariuszy](distribute-questionnaires.md)
+[Dystrybuowanie i planowanie kwestionariuszy](distribute-questionnaires.md)
 
-[Wyświetlanie i ocena wyników kwestionariuszy](evaluate-questionnaire-results.md)
+[Wyświetlanie i ocenianie wyników kwestionariuszy](evaluate-questionnaire-results.md)
 

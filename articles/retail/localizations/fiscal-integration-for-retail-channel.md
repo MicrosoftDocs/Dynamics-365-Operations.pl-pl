@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 03853e1f80bd32c1dfe5cfcbcd77e79168f26249
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025414"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812314"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Omówienie integracji fiskalnej dla kanałów modułu Retail
 
@@ -36,7 +36,7 @@ Ten temat zawiera omówienie funkcji integracji fiskalnej dostępnych w programi
 - Bezpieczne przesyłanie informacji związanych ze sprzedażą i zwrotami, które są wykonywane w programie Retail POS, do zewnętrznej usługi sieci web, która jest prowadzona przez urząd skarbowy.
 - Pomoc w zapewnieniu niezmienności danych transakcji sprzedaży za pomocą podpisów cyfrowych.
 
-Funkcji integracji fiskalnej w Retail jest podstawą zapewniającą wspólne rozwiązanie dla dalszego rozwoju i dostosowywania integracji między Retail POS a urządzeniami i usługami fiskalnymi. Funkcje obejmuje również przykładowe integracje fiskalne obsługujące podstawowe scenariusze sieci sprzedaży dla określonych krajów lub regionów i współpracujące z określonymi urządzeniami lub usługami fiskalnymi. Przykładowa integracja fiskalna składa się z kilku rozszerzeń składników modułu Retail i jest częścią zestawu SDK modułu Retail. Aby uzyskać więcej informacji o integracji próbek, zobacz [Omówienie integracji fiskalnej dla próbek w Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Aby uzyskać informacje dotyczące instalowania i używania zestawu SDK modułu Retail, zobacz [Omówienie zestawu SDK modułu Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Funkcji integracji fiskalnej w Retail jest podstawą zapewniającą wspólne rozwiązanie dla dalszego rozwoju i dostosowywania integracji między Retail POS a urządzeniami i usługami fiskalnymi. Funkcje obejmuje również przykładowe integracje fiskalne obsługujące podstawowe scenariusze sieci sprzedaży dla określonych krajów lub regionów i współpracujące z określonymi urządzeniami lub usługami fiskalnymi. Przykładowa integracja fiskalna składa się z kilku rozszerzeń składników modułu Retail i jest częścią zestawu SDK modułu Retail. Aby uzyskać więcej informacji o integracji próbek, zobacz [Omówienie integracji fiskalnej dla próbek w Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Aby uzyskać informacje dotyczące instalowania i używania zestawu SDK modułu Retail, zobacz [Omówienie zestawu SDK (software development kit) modułu Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Do obsługi innych scenariusze, które nie są obsługiwane przez przykładową integrację fiskalną, do integracji programu Retail POS z innymi urządzeniami lub usługami fiskalnymi lub do spełnienia wymagań innych krajów lub regionów, należy albo rozszerzyć istniejącą przykładową integrację fiskalną lub utworzyć nową przykładową integrację na podstawie istniejącego przykładu.
 
@@ -141,6 +141,6 @@ Następujące przykładowe integracje fiskalne są obecnie dostępne w zestawie 
 
 Następujące funkcje integracji fiskalnej są także dostępne w zestawie SDK modułu Retail, ale obecnie nie używają schematu integracji fiskalnej. Migracja tej funkcji do schematu integracji fiskalnej jest planowana w późniejszych aktualizacjach.
 
-- [Podpis cyfrowy dla Francji](emea-fra-cash-registers.md)
-- [Podpis cyfrowy dla Norwegii](emea-nor-cash-registers.md)
-- [Przykładowa integracja jednostki kontrolnej dla Szwecji](./retail-sdk-control-unit-sample.md)
+- [Funkcje kasy dla Francji](emea-fra-cash-registers.md)
+- [Funkcje kasy dla Norwegii](emea-nor-cash-registers.md)
+- [Próbki dla integracji programu Retail POS z jednostkami kontrolnymi dla Szwecji](./retail-sdk-control-unit-sample.md)

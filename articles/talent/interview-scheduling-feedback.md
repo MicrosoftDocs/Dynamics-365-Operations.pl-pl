@@ -1,5 +1,5 @@
 ---
-title: Planowanie rozmów kwalifikacyjnych i informacji zwrotnych
+title: Planowanie rozmów kwalifikacyjnych z kandydatem w aplikacji Attract
 description: W tym temacie omówiono działania planowania rozmów kwalifikacyjnych i wysyłania informacji zwrotnych w Attract.
 author: hasrivas
 manager: AnnBe
@@ -14,18 +14,18 @@ ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
 ms.author: shielas
-ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 33eba9796ca997fde4be9a46050207d313551bde
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518827"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832752"
 ---
-# <a name="interview-scheduling-and-feedback"></a>Planowanie rozmów kwalifikacyjnych i informacji zwrotnych
+# <a name="schedule-interviews-in-attract"></a>Planowanie rozmów kwalifikacyjnych z kandydatem w aplikacji Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-## <a name="scheduler-activity"></a>Działanie Harmonogram
+## <a name="scheduler-activity"></a>Działanie harmonogramu
 
 Działanie harmonogramu są opcjonalne i składa się z dwóch składników: Pytanie o dostępność kandydata oraz Harmonogram. Składnik Dostępność kandydata umożliwia wysyłanie wiadomości e-mail w celu sprawdzenia dostępności kandydata. Składnik Harmonogram umożliwia planowanie rozmów kwalifikacyjnych z udziałem kandydata i zespołu rekrutacyjnego.
 

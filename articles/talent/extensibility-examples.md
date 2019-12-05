@@ -1,6 +1,6 @@
 ---
-title: Rozszerzanie rozwiązania Talent przy użyciu usług PowerApps i Microsoft Flow — przykładowe scenariusze
-description: W tym temacie opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 Talent używanych przez Microsoft PowerApps i Microsoft Flow.
+title: Rozszerz Talent o Power Apps i Power Automate
+description: W tym temacie opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 Talent używanych przez Microsoft Power Apps i Microsoft Power Automate.
 author: negudava
 manager: Annbe
 ms.date: 05/01/2019
@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7bc3a18327f2d32770176eddcb7200681f0fb0da
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 3bb61297e294aa3f2d06f542bebe29d7afae9c3b
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008066"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832845"
 ---
-# <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Rozszerzanie rozwiązania Talent przy użyciu usług PowerApps i Microsoft Flow — przykładowe scenariusze
+# <a name="extend-talent-with-power-apps-and-power-automate"></a>Rozszerz Talent o Power Apps i Power Automate
 
-W tym temacie opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 Talent używanych przez Microsoft PowerApps i Microsoft Flow. Można zaimportować pakiet rozwiązań skojarzony z każdym przykładem do środowiska PowerApps. Następnie można używać pakietów jako pomocy lub punktów początkowych do implementacji scenariuszy odpowiednich dla Twojej organizacji.
+[!include [banner](includes/banner.md)]
+
+W tym temacie opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 Talent używanych przez Microsoft Power Apps i Microsoft Power Automate. Można zaimportować pakiet rozwiązań skojarzony z każdym przykładem do środowiska Power Apps. Następnie można używać pakietów jako pomocy lub punktów początkowych do implementacji scenariuszy odpowiednich dla Twojej organizacji.
 
 > [!IMPORTANT]
 > Jeśli chcesz korzystać z szablonów i aplikacji, które zostały opisane w tym temacie „tak jak są”, sprawdź je, aby upewnić się, że będą one obejmować wszystkie scenariusze, które są specyficzne dla danej implementacji.
@@ -36,11 +38,11 @@ W tym temacie opisano przykładowe scenariusze rozszerzeń programu Microsoft Dy
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 - Aby zaimportować pakiety, użytkownicy muszą mieć uprawnienie **Twórca środowisk**.
-- Aby eksportować lub importować aplikacje, musisz mieć licencję PowerApps plan 2 lub licencję próbną PowerApps Plan 2.
+- Aby eksportować lub importować aplikacje, musisz mieć licencję Power Apps plan 2 lub licencję próbną Power Apps Plan 2.
 
-## <a name="flow--form-connect"></a>Przepływ — połączenie formularza
+## <a name="power-automate--form-connect"></a>Power Automate — połączenie formularza
 
-Szablon **Przepływ — połączenie formularza** może być używany do odczytu danych z programu Microsoft Forms i zapisania ich w jednostce Common Data Service.
+**Power Automate — połączenie** formularza może być używany do odczytu danych z programu Microsoft Forms i zapisania ich w jednostce Common Data Service.
 
 Ten szablon może zostać rozszerzony, tak aby można było go używać w innych scenariuszach. Oto kilka przykładów:
 
@@ -51,19 +53,19 @@ Ten szablon może zostać rozszerzony, tak aby można było go używać w innych
 
 W Microsoft Dynamics 365: Attract, formularze mogą pojawiać się w portalu dla kandydatów i kandydaci mogą wypełniać szczegóły. Formularze mogą być również osadzone jako działania w szablonie stanowiska.
 
-Po przesłaniu formularza przez kandydata Microsoft Flow przechwytuje przesłanie formularza, odczytuje dane i zapisuje je w jednostce Common Data Service.
+Po przesłaniu formularza przez kandydata Microsoft Power Automate przechwytuje przesłanie formularza, odczytuje dane i zapisuje je w jednostce Common Data Service.
 
-Aby pobrać szablon **Przepływ — połączenie formularza** i strukturę jednostki niestandardowej, przejdź do sekcji [Przepływ — połączenie formularza](https://go.microsoft.com/fwlink/?linkid=2081988) w centrum pobierania Microsoft.
+Aby pobrać szablon **Power Automate— połączenie formularza** i strukturę jednostki niestandardowej, przejdź do sekcji [Power Automate — połączenie formularza](https://go.microsoft.com/fwlink/?linkid=2081988) w centrum pobierania Microsoft.
 
-## <a name="initiate-and-extract-parameters-passed-to-powerapps"></a>Inicjowanie i wyodrębnianie parametrów przekazanych do usługi Powerapps
+## <a name="initiate-and-extract-parameters-passed-to-power-apps"></a>Inicjowanie i wyodrębnianie parametrów przekazanych do usługi Power Apps
 
-Szablon **Inicjowanie i wyodrębnianie parametrów przekazanych do usługi Powerapps** może być używany jako punkt początkowy dla dowolnych scenariuszy PowerApps charakterystycznych dla Attract. Zawiera on wszystkie parametry domyślne, które są przekazywane przez Attract, takie jak **Podanie o pracę**, **identyfikator kandydata**, i **JobID**.
+Szablon **Inicjowanie i wyodrębnianie parametrów przekazanych do usługi Power Apps** może być używany jako punkt początkowy dla dowolnych scenariuszy Power Apps charakterystycznych dla Attract. Zawiera on wszystkie parametry domyślne, które są przekazywane przez Attract, takie jak **Podanie o pracę**, **identyfikator kandydata**, i **JobID**.
 
 Za pomocą tego szablonu można pobrać formularz oceny kandydata, dzięki czemu menedżer zatrudniający może wyświetlić ocenę wypełnioną przez kandydata.
 
-Aplikacje, które są tworzone przy użyciu PowerApps mogą być osadzone w szablonie stanowiska w Attract.
+Aplikacje, które są tworzone przy użyciu Power Apps mogą być osadzone w szablonie stanowiska w Attract.
 
-Aby pobrać szablon **Inicjowanie i wyodrębnianie parametrów przekazanych do usługi Powerapps** i strukturę jednostki niestandardowej, przejdź do [Inicjowanie i wyodrębnianie parametrów przekazanych do usługi Powerapps](https://go.microsoft.com/fwlink/?linkid=2081991) w centrum pobierania Microsoft.
+Aby pobrać szablon **Inicjowanie i wyodrębnianie parametrów przekazanych do usługi Power Apps** i strukturę jednostki niestandardowej, przejdź do [Inicjowanie i wyodrębnianie parametrów przekazanych do usługi Power Apps](https://go.microsoft.com/fwlink/?linkid=2081991) w centrum pobierania Microsoft.
 
 ## <a name="integration-with-office-365"></a>Integracja z programem Office 365
 
@@ -73,33 +75,33 @@ Ta aplikacja może zostać rozszerzona, tak aby można było jej używać w inny
 
 Aby pobrać aplikację **Integracja z Office 365** i strukturę jednostki niestandardowej, przejdź do [Integracja z Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) w centrum pobierania Microsoft.
 
-## <a name="flow--email-notification"></a>Przepływ — powiadomienie pocztą e-mail
+## <a name="power-automate--email-notification"></a>Power Automate – Powiadomienie pocztą
 
-Szablon **Przepływ — powiadomienie pocztą e-mail** może być używany w scenariuszach powiadamiania pocztą e-mail. Może służyć do wyzwalania wiadomości e-mail z powiadomieniem kandydatów, których zespół rekrutacyjny odrzuci na dowolnym etapie procesu rekrutacji.
+Szablon **Power Automate — powiadomienie pocztą e-mail** może być używany w scenariuszach powiadamiania pocztą e-mail. Może służyć do wyzwalania wiadomości e-mail z powiadomieniem kandydatów, których zespół rekrutacyjny odrzuci na dowolnym etapie procesu rekrutacji.
 
 Ten szablon można rozszerzyć w celu śledzenia zmian w fazie kandydata w całym procesie rekrutacji i do wysyłania powiadomień do zespołu rekrutacyjnego oraz kandydata.
 
 Generalnie, w przypadku jednostek zapisanych w Common Data Service, przepływy można ustawić tak, aby system wysyłał powiadomienia dotyczące zdarzeń w Core HR, Attract lub Onboard.
 
-Aby pobrać szablon **przepływ — powiadomienie pocztą e-mail**, przejdź do [przepływ — powiadomienie pocztą E-mail](https://go.microsoft.com/fwlink/?linkid=2082103) w centrum pobierania Microsoft.
+Aby pobrać **Power Automate — powiadomienie pocztą e-mail**, przejdź do [Power Automate — powiadomienie pocztą e-mail](https://go.microsoft.com/fwlink/?linkid=2082103) w centrum pobierania Microsoft.
 
-## <a name="flow--sql-connect-and-execute"></a>Przepływ — połączenie SQL i wykonywanie
+## <a name="power-automate--sql-connect-and-execute"></a>Power Automate — połączenie SQL i wykonywanie
 
-Szablon **Przepływ — połączenie SQL i wykonywanie** łączy się z Microsoft SQL Server i umożliwia uruchamianie kwerend przez SQL.
+**Power Automate — połączenie SQL i wykonywanie** łączy się z Microsoft SQL Server i umożliwia uruchamianie kwerend przez SQL.
 
 Chociaż ten szablon jest przeznaczony do odczytu i aktualizowania tabel SQL, może zostać rozszerzony, tak aby można było z niego korzystać także w innych scenariuszach. Na przykład, jego może służyć do wypełnienia tabeli tymczasowej Common Data Service rekordami z programu SQL Server i do okresowego synchronizowania tabeli tymczasowej przy użyciu wypychania przyrostowego z programu SQL Server.
 
-Aby pobrać szablon **Przepływ — połączenie SQL i wykonywanie**, przejdź do sekcji [Przepływ — połączenie SQL i wykonywanie](https://go.microsoft.com/fwlink/?linkid=2081789) w centrum pobierania Microsoft.
+Aby pobrać **Power Automate — połączenie SQL i wykonywanie**, przejdź do sekcji [Power Automate — połączenie SQL i wykonywanie](https://go.microsoft.com/fwlink/?linkid=2081789) w centrum pobierania Microsoft.
 
-## <a name="flow--sharepoint-integration"></a>Przepływ — integracja z SharePoint
+## <a name="power-automate--sharepoint-integration"></a>Power Automate – Integracja SharePoint
 
-Szablon **Przepływ — integracja z SharePoint** może służyć do odczytywania danych z listy programu SharePoint, porównywania listy z wartościami pól dla jednostek Common Data Service i wysyłania wyników porównań w wiadomości e-mail z powiadomieniem. 
+**Power Automate — integracja z SharePoint** może służyć do odczytywania danych z listy Microsoft SharePoint, porównywania listy z wartościami pól dla jednostek Common Data Service i wysyłania wyników porównań w wiadomości e-mail z powiadomieniem. 
 
 Organizacja może mieć zestaw umiejętności, które są pilnie wymagane. Te kwalifikacje można przechowywać w SharePoint jako listy SharePoint. Gdy kandydat złoży podanie o pracę na stanowisku, dla którego jest lista wymaganych kwalifikacji, jeśli jest dostateczny poziom dopasowania między kwalifikacjami kandydata a kwalifikacjami zapisanymi w SharePoint, zostanie wysłane powiadomienie e-mail. W ten sposób stanowiska, które wymagają pilnego obsadzenia, są obsadzane szybciej, ponieważ powiadomienia pomagają rekruterom znajdować i zatrudniać kandydatów wewnątrz organizacji.
 
 Ten szablon może zostać rozszerzony tak, aby można go było używać w dowolnych scenariuszach uwzględniających integrację SharePoint.
 
-Aby pobrać szablon **przepływ — integracja SharePoint**, przejdź do [przepływ — integracja SharePoint](https://go.microsoft.com/fwlink/?linkid=2082109) w centrum pobierania Microsoft.
+Aby pobrać **Power Automate – SharePoint integracja**, przejdź do [Power Automate – integracja SharePoint](https://go.microsoft.com/fwlink/?linkid=2082109) w centrum pobierania Microsoft.
 
 ## <a name="referral-app"></a>Aplikacja Poleceń
 Za pomocą aplikacji Poleceń można dodawać kandydatów do udostępnionej puli talentów. Osoba polecająca może wprowadzić wartość **Imię**, **Nazwisko**, **Adres e-mail** i **Linkedln URL** podczas przesyłania kandydata. Metadane źródła kandydata są następnie wypełniane informacjami osoby polecającej.

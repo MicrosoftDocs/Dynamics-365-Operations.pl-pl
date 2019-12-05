@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: c7675ca0ef2f2477d510c956e63d824a5e6b0980
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8747df5513cab16ee3b609f405740e660753e086
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179532"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812539"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)
 
@@ -32,13 +32,13 @@ Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach,
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX
 
-Ujednolicona biblioteka APQC (z sierpnia 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji 2 platformy Microsoft Dynamics AX (z sierpnia 2016 r.), aktualizacji aplikacji Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. Aby uzyskać więcej informacji o tych wersjach, zobacz [Co nowego, jakie zmiany](whats-new-changed.md). W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).
+Ujednolicona biblioteka APQC (z sierpnia 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji 2 platformy Microsoft Dynamics AX (z sierpnia 2016 r.), aktualizacji aplikacji Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. Aby uzyskać więcej informacji o tych wersjach, zapoznaj się z [Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md). W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [System Pomocy](help-overview.md).
 
 ### <a name="data-access"></a>Dostęp do danych
 
 | Wiersz BPM           | Kraj/region |
 |--------------------|----------------|
-| Tworzenie zadania wsadowego | Globalna         |
+| Tworzenie zadania wsadowego | Globalne         |
 
 ### <a name="inventory"></a>Zapasy
 
@@ -91,7 +91,7 @@ Ujednolicona biblioteka APQC (z sierpnia 2016 r. — wszystkie języki) zawiera 
 
 | Wiersz BPM                                                                    | Kraj/region |
 |-----------------------------------------------------------------------------|----------------|
-| Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu | Globalna         |
+| Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu | Globalne         |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

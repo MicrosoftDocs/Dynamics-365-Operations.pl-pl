@@ -1,6 +1,6 @@
 ---
-title: Tworzenie szablonu procesu w aplikacji Attract
-description: Ten temat zawiera informacje o sposobie tworzenia szablonu procesu w aplikacji Attract.
+title: Tworzenie szablonu procesu zatrudniania w aplikacji Attract
+description: Ten temat zawiera informacje o sposobie tworzenia szablonu procesu zatrudniania w aplikacji Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/15/2017
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 533b9abd3d57c5bf8f3d9da85020c86012436f2f
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 82046d43cf7366b760c140bdb8b017337b4f41da
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622725"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832565"
 ---
-# <a name="create-a-process-template-in-attract"></a>Tworzenie szablonu procesu w aplikacji Attract
+# <a name="create-a-hiring-process-template-in-attract"></a>Tworzenie szablonu procesu zatrudniania w aplikacji Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -48,7 +48,7 @@ Administratorzy, osoby rekrutujące i menedżerowie zatrudniający mogą tworzy�
 > [!NOTE]
 > Nazwy etapów są widoczne dla kandydatów na stronie **Stan zgłoszenia**. Weź to pod uwagę, wybierając nazwy dla etapów.
 
-Aby uzyskać więcej informacji o działaniach, zobacz [Działania w ramach procesu zatrudniania w aplikacji Attract](./activities-attract.md).
+Aby uzyskać więcej informacji o działaniach, zobacz [Działania w procesach rekrutacji](./activities-attract.md).
 
 Aby utworzyć szablon procesu rekrutacji, wykonaj poniższe czynności.
 

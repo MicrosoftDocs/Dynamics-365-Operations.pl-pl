@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie informacji o firmie w Microsoft Dynamics 365 Talent - Attract
+title: Konfigurowanie informacji o firmie w Attract
 description: W tym temacie opisano sposób konfigurowania informacji o firmie i kreowania marki w Microsoft Dynamics 365 Talent- Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,15 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7013065a9494cb407020de2ebcad4058dd57c6c4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: db3ec965f3a52810d5f310697b9ed830c3abe681
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551608"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833261"
 ---
-# <a name="configure-company-information-in-microsoft-dynamics-365-talent---attract"></a>Konfigurowanie informacji o firmie w Microsoft Dynamics 365 Talent - Attract
-[!include[banner](../includes/banner.md)]
+# <a name="configure-company-information-in-attract"></a>Konfigurowanie informacji o firmie w Attract
+
+[!include [banner](includes/banner.md)]
 
 Centrum administracyjne w aplikacji Microsoft Dynamics 365 Talent: Attract zawiera ustawienia konfiguracyjne, opcje integracji i opcje konfiguracji dla aplikacji Attract.
 
@@ -48,11 +49,11 @@ Nowo dodawane funkcje mogą być wprowadzane w publicznej wersji zapoznawczej. F
 
 ## <a name="template-management"></a>Zarządzanie szablonami
 
-Szablon procesu zawiera wszystkie działania, które należy wykonać w procesie rekrutacji na funkcję. Organizacja może pozwolić wszystkim członkom zespołu albo tylko administratorom na tworzenie szablonów procesu rekrutacji. Aby umożliwić członkom zespołu tworzenie własnych szablonów procesu rekrutacji, włącz funkcję Zarządzanie szablonami. Aby uzyskać więcej informacji o szablonach procesów, zobacz [Szablony procesów w aplikacji Attract](./process-templates-attract.md).
+Szablon procesu zawiera wszystkie działania, które należy wykonać w procesie rekrutacji na funkcję. Organizacja może pozwolić wszystkim członkom zespołu albo tylko administratorom na tworzenie szablonów procesu rekrutacji. Aby umożliwić członkom zespołu tworzenie własnych szablonów procesu rekrutacji, włącz funkcję Zarządzanie szablonami. Aby uzyskać więcej informacji o szablonach procesów, zobacz [Tworzenie szablonu procesu w aplikacji Attract](./process-templates-attract.md).
 
 ## <a name="email-template-settings"></a>Ustawienia szablonu wiadomości e-mail
 
-Organizacje mogą tworzyć szablony wiadomości e-mail dla różnych scenariuszy. Można wybrać obraz nagłówka, który ma być umieszczony w szablonach wiadomości e-mail. Wybrany nagłówek będzie wtedy widoczny we wszystkich szablonach wiadomości e-mail. W stopce szablonu można dodać łącze do firmowych zasad zachowania poufności informacji oraz warunków użytkowania funkcji komunikacyjnych. Aby uzyskać więcej informacji, zobacz [Szablony wiadomości e-mail w aplikacji Attract](./email-templates.md).
+Organizacje mogą tworzyć szablony wiadomości e-mail dla różnych scenariuszy. Można wybrać obraz nagłówka, który ma być umieszczony w szablonach wiadomości e-mail. Wybrany nagłówek będzie wtedy widoczny we wszystkich szablonach wiadomości e-mail. W stopce szablonu można dodać łącze do firmowych zasad zachowania poufności informacji oraz warunków użytkowania funkcji komunikacyjnych. Aby uzyskać więcej informacji o szablonach, zobacz temat [Szablony wiadomości e-mail](./email-templates.md).
 
 ## <a name="offer-process"></a>Proces oferty
 

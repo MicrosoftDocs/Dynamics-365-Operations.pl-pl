@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 0aeaa1ee4c35ca42a5382b3c7ff3519cba52996c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 302ac0f456dd8a24dc02948ee657e359f5a9c844
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250537"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770342"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>Synchronizowanie wartości rzeczywistych bezpośrednio z programu Project Service Automation do arkusza integracji projektu w celu zaksięgowania w programie Finance and Operations
 
@@ -50,7 +50,7 @@ Na poniższej ilustracji przedstawiono, w jaki sposób dane są synchronizowane 
 
 ### <a name="template-and-tasks"></a>Szablon i zadania
 
-Aby przejść do dostępnych szablonów, w centrum administracyjnym usługi Microsoft PowerApps wybierz opcję **Projekty** i w prawym górnym rogu wybierz opcję **Nowy projekt**, aby wybrać spośród szablonów publicznych.
+Aby przejść do dostępnych szablonów, w centrum administracyjnym usługi Microsoft Power Apps wybierz opcję **Projekty** i w prawym górnym rogu wybierz opcję **Nowy projekt**, aby wybrać spośród szablonów publicznych.
 
 Następujący szablon i podstawowe zadanie służą do synchronizowania wartości rzeczywistych projektu z rozwiązania Project Service Automation do rozwiązania Finance:
 

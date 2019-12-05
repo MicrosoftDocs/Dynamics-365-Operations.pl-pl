@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bd76fc771c370d8d769a97d3b33003f632717f2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174197"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771524"
 ---
 # <a name="cost-management-power-bi-content"></a>Pakiet zawartości zarządzania kosztami w usłudze Power BI
 
@@ -37,7 +37,7 @@ Pakiet zawartości **Zarządzanie kosztami** dostępny w usłudze Microsoft Powe
 > [!NOTE]
 > Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opisany w tym temacie dotyczy programu Dynamics 365 Finance and Operations 8.0.
 > 
-> Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opublikowany w witrynie AppSource został wycofany. Aby uzyskać więcej informacji o tym wycofaniu, zobacz [Pakiety zawartości usługi Power BI dostępne w witrynie AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)
+> Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opublikowany w witrynie AppSource został wycofany. Więcej informacji o tym zaniechaniu zawiera sekcja [Usuwanie lub przestarzałe funkcje w Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Ten pakiet zawartości usługi Power BI oferuje skategoryzowany format, który pomaga monitorować sytuację w zapasach oraz wizualizować przepływy kosztów przez zapasy. Można uzyskać różne informacje przydatne kierownictwu, takie jak wskaźnik obrotu, liczba dni dostępności zapasów na stanie, dokładność oraz „klasyfikacja ABC” na preferowanym zagregowanym poziomie (firmy, towaru, grupy towarów lub oddziału). Dostępne informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
 

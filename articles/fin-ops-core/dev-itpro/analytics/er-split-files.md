@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: cde95430022d94c42bdd985b5e4a8f9f5147d000
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 804878150f035adc051e89ec6be44457ad58e87e
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181365"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771198"
 ---
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości treści
 
@@ -45,6 +45,6 @@ Aby dowiedzieć się więcej o tej funkcji, należy odtworzyć przewodnik po zad
 - [Konfiguracja formatu ER — XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-[Aplikacje docelowe Raportowania elektronicznego](electronic-reporting-destinations.md)
+[Lokalizacje docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 
-[Projektant formuł w Raportowaniu elektronicznym](general-electronic-reporting-formula-designer.md)
+[Projektant formuł w module Raportowanie elektroniczne (ER)](general-electronic-reporting-formula-designer.md)

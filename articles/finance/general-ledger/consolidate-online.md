@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: eadf0af285213a972cac83d7b6fc6a47317b21bb
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551664"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770742"
 ---
 # <a name="online-financial-consolidations"></a>Konsolidacje finansowe online
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano funkcje konsolidacji finansowych online dostępne w księdze głównej. Przed przeczytaniem tego tematu należy koniecznie przeczytać temat [Konsolidacje finansowe i przeliczenia walut](financial-consolidations-currency-translation.md).
+W tym temacie opisano funkcje konsolidacji finansowych online dostępne w księdze głównej. Przed przeczytaniem tego tematu należy koniecznie przeczytać temat [Omówienie konsolidacji finansowych i przeliczania walut](financial-consolidations-currency-translation.md).
 
 Po ukończeniu konfigurowania wprowadź informacje o konsolidacji na stronie **Konsolidacja [Online]**. Po zakończeniu można kliknąć przycisk **OK** lub **Zadanie wsadowe**, aby wykonać przetwarzanie konsolidacji.
 
@@ -60,14 +60,14 @@ Poniżej znajduje się objaśnienie różnych pól umieszczonych na tej stronie:
 ## <a name="financial-dimensions"></a>Wymiary finansowe
 Na karcie **Wymiary finansowe** określ wymiary, które mają być uwzględniane w konsolidowanej firmie. Aby wybrać wymiar, należy ustawić w polu **Specyfikacja** wartość **Wymiar**, a następnie określić kolejność wymiarów w konsolidowanej firmie.
 
-![Karta Wymiary finansowe](./media/financial-dimensions-cons.png "Karta Wymiary finansowe")
+![Karta wymiary finansowe](./media/financial-dimensions-cons.png "Karta wymiary finansowe")
 
 Bez względu na zdefiniowaną kolejność zawsze pierwszym segmentem jest **Konto główne**.
 
 ## <a name="legal-entities"></a>Firmy
 Na karcie **Firmy** określ firmy, które mają być uwzględniane w konsolidowanej firmie. Można także zdefiniować procentowy udział własności w tych firmach. Jeśli określisz udział własnościowy niższy niż 100 procent, ta wartość zostanie skumulowana do konsolidowanej firmy. Dla wszelkich rozbieżności przeliczania pole **Typ konta rozbieżności konwersji** służy do wybierania konta głównego z konfiguracji na stronie **Konta dla transakcji automatycznych**.
 
-![Karta Firmy](./media/legal-entities-cons.png "Karta Firmy")
+![Karta firm](./media/legal-entities-cons.png "Karta firm")
 
 ![Strona Konta dla transakcji automatycznych](./media/accounts-for-automatic-cons.png "Strona Konta dla transakcji automatycznych")
 
@@ -89,10 +89,10 @@ Na karcie **Przeliczanie walut** zdefiniuj firmę, konto, typ kursu wymiany i ku
 - **Data transakcji** — data każdej transakcji będzie używana do wybrania kursu wymiany. Ta opcja jest najczęściej używana dla środków trwałych, a kurs często nazywa się „kursem historycznym”. Nie zobaczysz podglądu kursu, ponieważ będzie wiele kursów dla różnych transakcji w zakresie kont.
 - **Kurs zdefiniowany przez użytkownika** — po wybraniu tej opcji można wprowadzić dowolny kurs wymiany. Opcja może być przydatna dla średnich kursów wymiany lub jeśli konsolidujesz na podstawie stałego kursu wymiany.
 
-![Karta Przeliczanie walut](./media/currency-translation-cons-online.png "Karta Przeliczanie walut")
+![Karta Typ przeliczania waluty](./media/currency-translation-cons-online.png "Karta Typ przeliczania waluty")
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-Aby uzyskać więcej informacji o konsolidacjach i przeliczaniu walut, zobacz temat nadrzędny tego tematu — [Konsolidacje finansowe i przeliczenia walut](./financial-consolidations-currency-translation.md).
+Aby uzyskać więcej informacji o konsolidacjach i przeliczaniu walut, zobacz temat nadrzędny tego tematu — [Omówienie konsolidacji finansowych i przeliczania walut](./financial-consolidations-currency-translation.md).
 
 Aby uzyskać informacje o scenariuszach, w których mogą być tworzone skonsolidowane sprawozdania finansowe, zobacz [Generowanie skonsolidowanych sprawozdań finansowych](./generating-consolidated-financial-statements.md).

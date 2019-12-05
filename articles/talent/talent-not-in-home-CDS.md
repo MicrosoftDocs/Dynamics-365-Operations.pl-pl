@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 956af80a8ab2f454d9f523d3c74dda754ef0f793
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 7f0cc1c7ec1234b7eedaade0ffadb66965ed2121
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009383"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772995"
 ---
 # <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a>Rozwiązanie Talent nie jest wyświetlane na liście aplikacji usługi Microsoft Dynamics 365 (Common Data Service 1.0)
 
@@ -34,9 +34,9 @@ Klient nie widzi aplikacji Microsoft Dynamics 365 Talent wśród aplikacji Micro
 
 **Rozdzielczość**
 
-Użytkownik musi być dodany do roli Twórca środowisk dla środowiska w Microsoft PowerApps.
+Użytkownik musi być dodany do roli Twórca środowisk dla środowiska w Microsoft Power Apps.
 
-1. Administrator mający licencję usługi PowerApps planu 2. musi otworzyć [portal administratorów usługi PowerApps](https://preview.admin.powerapps.com/).
+1. Administrator mający licencję usługi Power Apps planu 2. musi otworzyć [portal administratorów usługi Power Apps](https://preview.admin.powerapps.com/).
 2. Wybierz **środowiska**, a następnie wybierz poprawne środowisko dla Talent.
 3. Na karcie **zabezpieczeń** na karcie **ról środowiska** wybierz opcję **Twórca środowiska**.
 

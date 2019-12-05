@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179361"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770696"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generowanie skonsolidowanych sprawozdań finansowych
 
@@ -45,15 +45,15 @@ Ilustracja poniżej przedstawia sposób wykorzystania definicji drzewa raportowa
 
 Jak pokazuje skonsolidowany raport na poniższej ilustracji, używając drzewa raportowania razem z definicją raportu, można wyświetlić każdą firmę osobno. Skonsolidowane kwoty są wyświetlane na poziomie podsumowania.
 
-![Poziom podsumowania skonsolidowanych kwot](./media/consolidate-amount-summary-level.png "Poziom podsumowania skonsolidowanych kwot")
+![Konsolidowanie poziomu podsumowania kwoty](./media/consolidate-amount-summary-level.png "Konsolidowanie poziomu podsumowania kwoty")
 
 Można również utworzyć wielopoziomowe drzewo raportowania, które zawiera dowolną potrzebną liczbę poziomów. Na poniższej ilustracji przedstawiono definicję wielopoziomowego drzewa raportowania akumulowanego według regionów świata.
 
-![Definicja wielopoziomowego drzewa raportowania akumulowanego według regionów](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Definicja wielopoziomowego drzewa raportowania akumulowanego według regionów")
+![Wielopoziomowa definicja drzewa raportowania z rolki zasilaczy jednoregionowych](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Wielopoziomowa definicja drzewa raportowania z rolki zasilaczy jednoregionowych")
 
 Na poniższej ilustracji przedstawiono definicję wielopoziomowego drzewa raportowania akumulowanego według funkcji.
 
-![Definicja wielopoziomowego drzewa raportowania akumulowanego według funkcji](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Definicja wielopoziomowego drzewa raportowania akumulowanego według funkcji")
+![Wielopoziomowa definicja drzewa raportowania z rolki zasilaczy według funkcji](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Wielopoziomowa definicja drzewa raportowania z rolki zasilaczy według funkcji")
 
 ### <a name="viewing-companies-side-by-side"></a>Wyświetlanie firm obok siebie
 Wielu klientów preferuje raporty, w których firmy są wyświetlane obok siebie, a kolumna pokazuje skonsolidowaną sumę. Ten format jest łatwy do osiągnięcia po utworzeniu drzewa raportowania. Poniżej przedstawiono ogólne czynności, jakie należy wykonać w celu wyświetlenia firm obok siebie w skonsolidowanych sprawozdaniach finansowych.
@@ -64,7 +64,7 @@ Wielu klientów preferuje raporty, w których firmy są wyświetlane obok siebie
 
 Poniższa ilustracja pokazuje definicję kolumny w formacie wyświetlania obok siebie.
 
-![Definicja kolumny w formacie wyświetlania obok siebie](./media/column-definition-side-by-side-format.png "Definicja kolumny w formacie wyświetlania obok siebie")
+![Definicja kolumny w formacie „obok siebie”](./media/column-definition-side-by-side-format.png "Definicja kolumny w formacie „obok siebie”")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Konsolidacje wykorzystujące struktury organizacyjne tworzone na podstawie firm
 Hierarchie organizacyjne, które zawierają wymiary lub firmy, dynamicznie tworzą definicje drzew raportowania w aplikacji Raportowanie finansowe. Prostym sposobem usprawnienia konsolidacji jest dodanie hierarchii organizacyjnej do raportu w module Raportowanie finansowe. Na podstawie daty raportu aplikacja Raportowanie finansowe wybierze hierarchię organizacyjną na dzień wejścia w życie lub wcześniej, jak pokazano na poniższej ilustracji.
@@ -76,7 +76,7 @@ Częstym składnikiem procesu konsolidacji są transakcje eliminacji. W tym przy
 
 Na poniższej ilustracji przedstawiono definicję kolumny dla skonsolidowanego rachunku zysków i strat. Dla każdej firmy za pomocą filtru wymiaru zdefiniowano trzy międzyfirmowe konta wynikowe. Kolumna D zawiera konta eliminacji tylko dla firmy USMF, a kolumna E zawiera eliminacje tylko dla firmy DEMF. Obie kolumny — D i E — są skonfigurowane tak, aby **nie** były drukowane w sprawozdaniu finansowym.
 
-![Definicja kolumny w skonsolidowanym rachunku zysków i strat](./media/column-definition-consolidated-income-statement.png "Definicja kolumny w skonsolidowanym rachunku zysków i strat")
+![Skonsolidowane sprawozdanie o dochodach definicji kolumny](./media/column-definition-consolidated-income-statement.png "Skonsolidowane sprawozdanie o dochodach definicji kolumny")
 
 Podczas generowania raportu kwoty eliminacji są obliczane w kolumnach F, G i H, a następnie sumowane w kolumnie I. Kolumna J pokazuje kwoty skonsolidowane. Te skonsolidowane kwoty wykluczają eliminacje dla firm USMF, USRT i DEMF.
 
@@ -85,7 +85,7 @@ Podczas generowania raportu kwoty eliminacji są obliczane w kolumnach F, G i H,
 
 Ilustracja poniżej przedstawia skonsolidowany raport.
 
-![Skonsolidowany raport rachunku zysków i strat](./media/consolidated-report-income-statement.png "Skonsolidowany raport rachunku zysków i strat")
+![Skonsolidowany raport finansowy zestawienia dochodów](./media/consolidated-report-income-statement.png "Skonsolidowany raport finansowy zestawienia dochodów")
 
 Bez względu na fakt, czy używasz kont, wymiarów, czy obu tych obiektów, moduł Raportowanie finansowe pozwala wyfiltrować wpisy eliminacji przy użyciu funkcji filtrowania wymiarów.
 
@@ -98,20 +98,20 @@ W definicji drzewa raportowania wprowadź procent własności w kolumnie **Zesta
 > [!NOTE]
 > Ten procent własności można zastosować do dowolnej jednostki raportowania, nie tylko do poziomu firmy. 
 
-![Używanie wartości procentowej w definicji drzewa raportowania](./media/Using-reporting-tree-definition-percentage.png "Używanie wartości procentowej w definicji drzewa raportowania")
+![Używanie procentowej definicji drzewa raportowania](./media/Using-reporting-tree-definition-percentage.png "Używanie procentowej definicji drzewa raportowania")
 
 Podczas generowania raportu raport o firmie Contoso Niemcy będzie pokazywał 100-procentowy udział w kwocie sprzedaży, a 80 procent kwoty zostanie przydzielone i akumulowane na skonsolidowanym poziomie sprzedaży.
 
 Jeśli firma jest właścicielem mniej niż 1% innej firmy, można zaznaczyć pole wyboru **Zezwalaj na zestawienie poniżej 1%** na karcie **Opcje dodatkowe** na stronie **Ustawienia raportu**, jak pokazano na poniższej ilustracji. W tym przypadku wartości w kolumnie **Zestawienie (%)** w drzewie raportowania będą traktowane jako mniejsze niż 1%. Na przykład jeśli wpiszesz **,8**, do poziomu skonsolidowanego zostanie zakumulowana wartość 0,8 procenta, a nie 80%. Alternatywnie ten sam efekt można uzyskać poprzez pozostawienie wyczyszczonego pola wyboru **Zezwalaj na zestawienie poniżej 1%**, a wpisanie wartości **,008** w kolumnie **Zestawienie (%)**.
 
-![Opcje konfigurowania raportowania](./media/reporting-setting-options.png "Opcje konfigurowania raportowania")
+![Opcje ustawień raportowania](./media/reporting-setting-options.png "Opcje ustawień raportowania")
 
 ### <a name="showing-ownership-as-a-separate-row-on-the-consolidated-report"></a>Wyświetlanie własności jako oddzielnego wiersza w raporcie skonsolidowanym
 Inną opcją przedstawiania udziału mniejszościowego jest wykazywanie 100 procent spółki zależnej w każdym wierszu w raporcie, ale odjęcie części przypadającej na udział niekontrolujący od dochodu netto.
 
 Jak pokazano na poniższej ilustracji, do obliczania udziału mniejszościowego w raportach finansowych można użyć instrukcji **IF THEN ELSE** i ograniczenia kolumny w definicji wiersza.
 
-![Wyświetlanie własności jako oddzielnego wiersza w skonsolidowanym raporcie](./media/Showing-ownership-separate-row-consolidated-report.png "Wyświetlanie własności jako oddzielnego wiersza w skonsolidowanym raporcie")
+![Wyświetlanie własności jako oddzielnego wiersza w raporcie skonsolidowanym](./media/Showing-ownership-separate-row-consolidated-report.png "Wyświetlanie własności jako oddzielnego wiersza w raporcie skonsolidowanym")
 
 ## <a name="multiple-charts-of-accounts-across-legal-entities"></a>Wiele planów kont w różnych firmach
 Często różne firmy mają różne plany kont, ale mimo to chcą generować skonsolidowane sprawozdania finansowe. W takiej sytuacji aplikacja Raportowanie finansowe może służyć do konsolidowania danych, co pozwoli wygenerować skonsolidowane sprawozdania finansowe. Poniżej przedstawiono ogólne czynności, jakie należy wykonać w celu konsolidowania, gdy w firmach istnieją różne plany kont.
@@ -125,11 +125,11 @@ W każdym wierszu w definicji wiersza można dodać wiele łączy do wymiarów f
 > [!TIP]
 > Aby uzyskać więcej informacji o komórce **Łącze do wymiarów finansowych**, zobacz Określanie komórki Łącze do wymiarów finansowych.
 
-![Pierwsze łącze od zbioru kont do wymiarów finansowych](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Pierwsze łącze od zbioru kont do wymiarów finansowych")
+![Określ konta najpierw Połącz z wymiarami finansowymi](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Określ konta najpierw Połącz z wymiarami finansowymi")
 
 W drzewie raportowania można określić, które łącze do wymiarów finansowych z definicji wiersza ma być używane dla każdej firmy. Wybierz definicję wiersza w kolumnie E, a następnie wybierz odpowiednie łącze wiersza w kolumnie F, jak pokazano na poniższej ilustracji.
 
-![Używane łącze do wymiarów finansowych z definicji wiersza](./media/link-financial-dimensions-row-definition-used.png "Używane łącze do wymiarów finansowych z definicji wiersza")
+![Użyta definicja wiersza wymiarów finansowych](./media/link-financial-dimensions-row-definition-used.png "Użyta definicja wiersza wymiarów finansowych")
 
 > [!TIP]
 > Podczas tworzenia łączy do wymiarów finansowych należy użyć opisu do identyfikowania firm, do których stosuje się każde łącze. W ten sposób można łatwiej wybrać właściwą firmę podczas tworzenia drzewa raportowania. W definicji kolumny pole **Jednostka raportowania** pozwala ograniczyć każdą kolumnę do jednostki drzewa raportowania, dzięki czemu można wyświetlać dane obok siebie. Jeśli nie wskażesz konkretnej firmy w kolumnie, zostaną wyświetlone skonsolidowane dane wszystkich firm.
@@ -149,11 +149,11 @@ Podczas projektowania definicji kolumny dla wielu firm mających różne okresy 
 
 Na poniższej ilustracji firma USMF jest określona w polu **Nazwa firmy** w definicji raportu. W związku z tym kalendarz obrachunkowy firmy USMF będzie stanowić podstawowy kalendarz obrachunkowy. W tym przykładzie podczas generowania raportu na dzień 30 czerwca 2018 r. firma USMF będzie używać okresu PODSTAWOWY, który jest zdefiniowany jako okres 12 w definicji raportu. Firma INMF będzie używać okresu PODSTAWOWY- 6, czyli okresu 6. Obie kolumny będą zawierały dane dla czerwca 2018 r.
 
-![Okres podstawowy raportu](./media/report-base-period.png "Okres podstawowy raportu")
+![Podstawowy okres raportu](./media/report-base-period.png "Podstawowy okres raportu")
 
 Poniższa ilustracja pokazuje opcje w definicji raportu pozwalające wybrać, czy do konsolidacji jest używany numer okresu, czy data zakończenia okresu.
 
-![Opcje w definicji raportu dotyczące wyboru numeru okresu](./media/options-report-definition-period-number.png "Opcje w definicji raportu dotyczące wyboru numeru okresu")
+![Numer okresu definicji raportu o opcjach](./media/options-report-definition-period-number.png "Numer okresu definicji raportu o opcjach")
 
 ## <a name="business-unit-consolidations"></a>Konsolidacje jednostek biznesowych
 W tym temacie dotąd skupialiśmy się na używaniu definicji drzewa raportowania i hierarchii organizacyjnych w aplikacji Raportowanie finansowe na potrzeby konsolidacji. Drzewa raportowania można także używać do tworzenia raportów konsolidacyjnych jednostek biznesowych, takich jak raporty o sprzedaży lub działalności na całym świecie. Raporty te są typowym wymaganiem. Aby je utworzyć, zaznacz firmę i wymiar dla każdej jednostki, dla której chcesz dokonać konsolidacji. Na przykład na poniższej ilustracji akumulacja dla jednostek biznesowych odbywa się przez powtarzanie każdej firmy w kolumnie **Firma** (kolumna A) oraz identyfikowanie grupy wartości wymiaru Dział dla każdej firmy w kolumnie **Wymiary** (kolumna D).
@@ -171,7 +171,7 @@ Na koncie głównym na skróconej karcie **Raportowanie finansowe** dla każdego
 - W polu **Typ kursu wymiany dla raportowania finansowego** wybierz typ kursu wymiany zawierający waluty i kursy wymiany, której chcesz zastosować do konta. Ta tabela walut i kursów wymiany zostanie zastosowana do rzeczywistych danych w aplikacji Raportowanie finansowe.
 - W polu **Typ przeliczania waluty** wybierz metodę obliczania kursu wymiany dla konta. Ta metoda będzie stosowana do danych rzeczywistych i budżetowych w module Raportowanie finansowe.
 
-![Konta główne w aplikacji Raportowanie finansowe](./media/Financial-reporting-main-accounts.png "Konta główne w aplikacji Raportowanie finansowe")
+![Konta główne raportowania finansowego](./media/Financial-reporting-main-accounts.png "Konta główne raportowania finansowego")
 
 W przypadku danych budżetu, kontroli budżetu i planowania budżetu typ kursu wymiany definiuje się na stronie **Księga**. Ta tabela będzie używana do ściągania kursów wymiany na podstawie typu przeliczania waluty przypisanego do konta.
 
@@ -202,15 +202,15 @@ Korekta przeliczenia waluty (CTA) to różnica między kwotami według kursów u
 
 - Użycie strony **Korygowanie zaokrągleń** w definicji wiersza, jak pokazano na poniższej ilustracji.
 
-    ![Korekty zaokrągleń w ramach korygowania przeliczenia walut](./media/Currency-translation-adjustment-rounding-adjustments.png "Korekty zaokrągleń w ramach korygowania przeliczenia walut")
+    ![Korekty zaokrągleń przeliczania walut](./media/Currency-translation-adjustment-rounding-adjustments.png "Korekty zaokrągleń przeliczania walut")
 
     Gdy określisz wiersz mający pokazywać korektę zaokrąglenia (CTA), wiersz sumy aktywów, wiersz sumy zobowiązań i kapitału własnego oraz zadowalającą wartość progową, aplikacja Raportowanie finansowe będzie obliczać różnicę i umieszczać ją w żądanym wierszu. Zostanie utworzony wiersz o nazwie **Korygowanie zaokrągleń** i będzie wyświetlany podczas przechodzenia do szczegółów, jak pokazano na poniższej ilustracji.
 
-    ![Wyświetlanie korekty zaokrąglenia w trakcie przechodzenia do szczegółów](./media/rounding-adjustment-drill-down.png "Wyświetlanie korekty zaokrąglenia w trakcie przechodzenia do szczegółów")
+    ![Korekta zaokrąglenia w dół](./media/rounding-adjustment-drill-down.png "Korekta zaokrąglenia w dół")
 
 - Umieszczenie wszystkich kont — od aktywów po wydatki — w granicach zakresu/ Jak pokazano na poniższej ilustracji, różnica będzie tą samą kwotą, co wartość korekty zaokrąglenia (CTA). W związku z tym można jej używać jako sumy kontrolnej w celu uzyskania pewności, że strona korekty zaokrąglenia nie uwzględnia żadnych pominiętych sald kont.
 
-    ![Kontrola formularza korekty zaokrąglenia](./media/rounding-adjustment-form-check.png "Kontrola formularza korekty zaokrąglenia")
+    ![Sprawdzanie formularza korekty zaokrąglenia](./media/rounding-adjustment-form-check.png "Sprawdzanie formularza korekty zaokrąglenia")
 
 ### <a name="balance-calculation-approach"></a>Metoda obliczania salda
 Aby uzyskać prawidłowo przeliczone kwoty podczas używania walut, aplikacja Raportowanie finansowe wykorzystuje następujące metody obliczania sald:
@@ -221,6 +221,6 @@ Aby uzyskać prawidłowo przeliczone kwoty podczas używania walut, aplikacja Ra
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-Aby uzyskać więcej informacji o konsolidacjach i przeliczaniu walut, zobacz temat nadrzędny tego tematu — [Konsolidacje finansowe i przeliczenia walut](./financial-consolidations-currency-translation.md).
+Aby uzyskać więcej informacji o konsolidacjach i przeliczaniu walut, zobacz temat nadrzędny tego tematu — [Omówienie konsolidacji finansowych i przeliczania walut](./financial-consolidations-currency-translation.md).
 
-Aby uzyskać więcej informacji na temat sposobu wprowadzania szczegółowych informacji o konsolidacji w trybie online, zobacz [Konsolidacja online](./consolidate-online.md).
+Aby uzyskać więcej informacji na temat sposobu wprowadzania szczegółowych informacji o konsolidacji w trybie online, zobacz [Konsolidacje finansowe online](./consolidate-online.md).

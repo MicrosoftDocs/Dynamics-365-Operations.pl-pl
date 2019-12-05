@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7be41e724cb715e4b7c9077bb30d26b2bd4899dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5401f310138d19f78412dff318959414c31a191
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181917"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770030"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI
 
@@ -194,6 +194,6 @@ Konfigurowanie integracji z modułem Power BI. Aby uzyskać więcej informacji, 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Aplikacje docelowe Raportowania elektronicznego](electronic-reporting-destinations.md)
+[Lokalizacje docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 
-[Omówienie raportowania elektronicznego](general-electronic-reporting.md)
+[Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md)

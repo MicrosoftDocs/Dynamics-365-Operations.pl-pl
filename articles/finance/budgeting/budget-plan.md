@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a59ff16555bfcb55d2f21c09675e7ae0637bca8f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c9558013236a728e0fb9691f4edd719fe58d5457
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188609"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772152"
 ---
 # <a name="budget-planning"></a>Planowanie budżetu
 
@@ -60,33 +60,31 @@ Julia używa następującego szablonu programu Excel do przygotowania budżetu:
 ## <a name="exercise-1-configuration"></a>Ćwiczenie 1: Konfiguracja
 
 ### <a name="task-1-create-organizational-hierarchy"></a>**Zadanie 1: Tworzenie hierarchii organizacyjnej**
-Cały proces budżetowania odbywa się w dziale finansów, dlatego Julia musi utworzyć bardzo prostą hierarchię organizacji, składającą się tylko z działu finansów. 1.1. Przejdź do okna Hierarchie organizacyjne (Administrowanie organizacją &gt; Organizacje &gt; Hierarchie organizacyjne) i kliknij przycisk Nowy.
+Cały proces budżetowania odbywa się w dziale finansów, dlatego Julia musi utworzyć bardzo prostą hierarchię organizacji, składającą się tylko z działu finansów. 
 
-![Hierarchia organizacyjna](./media/screenshot3.png) 
+1.1. Przejdź do okna Hierarchie organizacyjne (Administrowanie organizacją &gt; Organizacje &gt; Hierarchie organizacyjne) i kliknij przycisk Nowy.
 
-1.2. Wpisz nazwę dla hierarchii organizacyjnej, a następnie kliknij przycisk Przypisz cel.
+![Hierarchie organizacyjne](./media/screenshot3.png) 
 
-[![Nazwa](./media/screenshot4.png)](./media/screenshot4.png) 
+1.2. Wpisz nazwę dla hierarchii organizacyjnej w oknie Nazwa, a następnie kliknij przycisk Przypisz cel.
 
-1.3. Wybierz cel planowania budżetu, kliknij przycisk Dodaj, a następnie przypisz nowo utworzoną hierarchię organizacyjną: 
+1.3. Wybierz cel planowania budżetu, kliknij Dodaj, a następnie przypisz nowo utworzoną hierarchię organizacyjną. 
 
 [![Przypisywanie celu](./media/screenshot5.png)](./media/screenshot5.png)
 
 1.4. Powtórz powyższy krok w celu wprowadzenia przyczyny zabezpieczeń do hierarchii organizacyjnej. Po zakończeniu zamknij formularz.
 
-[![Organizacja zabezpieczeń](./media/screenshot6.png)](./media/screenshot6.png)
+1.5. W formularzu hierarchii organizacyjnej kliknij Wyświetl. Kliknij przycisk Edytuj w projektancie hierarchii i utwórz hierarchię, klikając Wstaw.
 
-1.5. W formularzu hierarchii organizacyjnej kliknij przycisk Wyświetl. Kliknij przycisk Edytuj w projektancie hierarchii i utwórz hierarchię, klikając przycisk Wstaw.
-
-[![Wstawianie](./media/screenshot7.png)](./media/screenshot7.png) 
+[![Wstaw (instrukcja Insert)](./media/screenshot7.png)](./media/screenshot7.png) 
 
 1.6. Wybierz dział finansowy dla hierarchii budżetowania. 
 
 [![Finanse](./media/screenshot8.png)](./media/screenshot8.png)
 
-1.7. Po zakończeniu kliknij przycisk Publikuj i zamknij. Wybierz 1/1/2015 jako datę rozpoczęcia publikowania hierarchii.
+1.7. Po zakończeniu kliknij Publikuj i zamknij. Wybierz 1/1/2015 jako datę rozpoczęcia publikowania hierarchii.
 
-[![Data obowiązywania](./media/screenshot9.png)](./media/screenshot9.png)
+[![Data wejścia w życie](./media/screenshot9.png)](./media/screenshot9.png)
 
 ### <a name="task-2-configure-user-security"></a>Zadanie 2: Konfigurowanie zabezpieczeń użytkownika
 Planowanie budżetu używa specjalnych zasad zabezpieczeń do konfigurowania dostępu do danych planów budżetu. Julia musi przyznać sobie dostęp do planów budżetu działu finansowego. 
@@ -104,7 +102,7 @@ Planowanie budżetu używa specjalnych zasad zabezpieczeń do konfigurowania dos
 
 2.4. Wskaż rolę użytkownika i kliknij przycisk Przypisz organizacje. 
 
-[![Przypisywanie organizacji](./media/screenshot13.png)](./media/screenshot13.png)
+[![Przypisz organizacje](./media/screenshot13.png)](./media/screenshot13.png)
 
 2.5. Wybierz opcję „Udziel dostępu do określonych organizacji”. Wskaż hierarchię organizacyjną utworzoną w pierwszym kroku. Wybierz węzeł Finanse i kliknij przycisk Udziel dostępu wraz z podrzędnymi. 
 
@@ -122,31 +120,23 @@ Planowanie budżetu używa specjalnych zasad zabezpieczeń do konfigurowania dos
 ### <a name="task-4-create-budget-plan-columns"></a>Zadanie 4: Tworzenie kolumn planu budżetu
 Kolumny planu budżetu zawierają wartości pieniężne lub ilości i można je umieścić w układzie dokumentu planu budżetu. W naszym przykładzie musimy utworzyć kolumnę dla Wartości rzeczywistych w poprzednim roku oraz 12 kolumn dla wszystkich miesięcy w budżetowanym roku. Można utworzyć kolumny albo po prostu klikając przycisk Dodaj i wypełniając wartości lub z pomocą jednostki danych. W tym ćwiczeniu użyjemy jednostki danych do wstawienia wartości. 
 
-4.1. W oknie Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu otwórz stronę Kolumny. Kliknij przycisk Office w prawym górnym rogu formularza i wskaż opcję Kolumny (niefiltrowane). 
+4.1. W oknie Budżetowanie&gt;Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu otwórz stronę Kolumny. Kliknij przycisk Office w prawym górnym rogu formularza i wskaż opcję Kolumny (niefiltrowane). 
 
 [![Kolumny niefiltrowane](./media/screenshot16.png)](./media/screenshot16.png) 
 
 4.2. System otworzy skoroszyt programu Excel, który zostanie wykorzystany do wprowadzenia wartości. Jeśli zostanie wyświetlony monit, kliknij kolejno opcje Włącz edytowanie i Zaufaj tej aplikacji. 
 
-[![Włączanie edytowania](./media/screenshot18.png)](./media/screenshot18.png) 
-
-[![Opcja Zaufaj tej aplikacji](./media/screenshot17.png)](./media/screenshot17.png)
-
-4.3. Będziemy potrzebować więcej kolumn do wprowadzenia wartości. Kliknij opcję Projekt w okienku po prawej stronie, aby dodać kolumny do siatki: 
+4.3. Będziemy potrzebować więcej kolumn do wprowadzenia wartości. Kliknij opcję Projekt w okienku po prawej stronie, aby dodać kolumny do siatki. 
 
 [![Projekt](./media/screenshot19.png)](./media/screenshot19.png) 
 
-4.4. Kliknij przycisk z małym ołówkiem obok opcji Kolumny planu, aby zobaczyć kolumny, które można dodać do siatki. 
+4.4. Kliknij przycisk z ołówkiem obok opcji Kolumny planu, aby zobaczyć kolumny, które można dodać do siatki. 
 
 [![Edytowanie](./media/screenshot20.png)](./media/screenshot20.png) 
 
 4.5. Kliknij dwukrotnie każde dostępne pole, aby dodać je do wybranych pól, a następnie kliknij opcję Aktualizuj. 
 
-![Aktualizowanie](./media/screenshot21.png)](./media/screenshot21.png) 
-
 4.6. W tabeli programu Excel dodaj wszystkie kolumny, które trzeba utworzyć. Użyj funkcji automatycznego wypełniania w programie Excel, aby szybko dodać wiersze. Upewnij się, że wiersze są dodawane jako część tabeli (kiedy przewiniesz w pionie, powinny być wyświetlane nagłówki kolumn w górnej części siatki). 
-
-[![Automatyczne wypełnianie](./media/screenshot22.png)](./media/screenshot22.png) 
 
 4.7. Wróć do aplikacji i odśwież stronę. Opublikowane wartości zostaną wyświetlone. 
 
@@ -155,7 +145,7 @@ Kolumny planu budżetu zawierają wartości pieniężne lub ilości i można je 
 ### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Zadanie 5: Utwórz szablony i układy dokumentów planu budżetu
 Układ określa, jak siatka wierszy dokumentu planu budżetu będzie wyglądać, gdy użytkownik otworzy dokument planu budżetu. Istnieje również możliwość przełączenia układu dokumentu planu budżetu, żeby zobaczyć te same dane pod różnymi kątami. Teraz, kiedy Julia ma już zdefiniowane kolumny, które zostaną wykorzystane w dokumencie planu budżetu, musi utworzyć układ dokumentu planu budżetu, który będzie wyglądał podobnie do tabeli programu Excel wykorzystywanej do utworzenia danych budżetu (zobacz sekcję Omówienie scenariusza w tym ćwiczeniu). 
 
-5.1. W oknie Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu otwórz stronę Układy. Utwórz nowy układ dla wpisu miesięcznego budżetu:
+5.1. W oknie Budżetowanie&gt;Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu otwórz stronę Układy. Utwórz nowy układ dla wpisu miesięcznego budżetu:
 
 -   Wybierz zestaw wymiarów konta głównego i jednostek biznesowych, które zostaną uwzględnione w układzie KG + JB.
 -   Umieść wszystkie kolumny planu budżetu utworzone w poprzednim kroku w sekcji Elementy. Włącz edycję wszystkich elementów poza Wartościami rzeczywistymi w poprzednim roku.
@@ -170,7 +160,8 @@ Na podstawie definicji układu planu budżetu możemy utworzyć szablon programu
 *Uwaga: Pamiętaj o wybraniu opcji „Zapisz jako” i wskazaniu miejsca, w którym chcesz zapisać szablon, aby potem go edytować. W przypadku wybrania w oknie dialogowym opcji „Otwórz” bez zapisywania zmiany wprowadzone w pliku nie zostaną zachowane po jego zamknięciu.* 
 [![Widok szablonu](./media/screenshot25.png)](./media/screenshot25.png) 
 
-5.3. &lt; Opcjonalny krok&gt; Zmodyfikuj szablon programu Excel, tak aby był bardziej przyjazny użytkownikowi — dodaj formuły sumy, pola nagłówków, formatowanie itd. Zapisz zmiany i załaduj plik do układu planu budżetu, klikając kolejno opcje Układ &gt; Przekaż. [![Przekazywanie](./media/screenshot26.png)](./media/screenshot26.png)
+5.3. &lt; Opcjonalny krok&gt; Zmodyfikuj szablon programu Excel, tak aby był bardziej przyjazny użytkownikowi — dodaj formuły sumy, pola nagłówków, formatowanie itd. Zapisz zmiany i załaduj plik do układu planu budżetu, klikając kolejno opcje Układ &gt; Przekaż. 
+
 
 ### <a name="task-6-create-a-budget-planning-process"></a>Zadanie 6: Utwórz proces planowania budżetu
 Julia musi utworzyć i aktywować nowy proces planowania budżetu, uwzględniając całą powyższą konfigurację, aby rozpocząć wprowadzanie planów budżetu. Proces planowania budżetu określa, jakie organizacje budżetowania, przepływ pracy, układy i szablony będą używane do tworzenia planów budżetu. 
@@ -191,14 +182,12 @@ Julia musi utworzyć i aktywować nowy proces planowania budżetu, uwzględniaj�
 
 6.2. Wybierz kolejno opcje Akcje &gt; Aktywuj, aby włączyć ten przepływ pracy planowania budżetu. 
 
-[![Aktywowanie](./media/screenshot28.png)](./media/screenshot28.png)
+[![Uaktywnianie](./media/screenshot28.png)](./media/screenshot28.png)
 
 ## <a name="exercise-2-process-simulation"></a>Ćwiczenie 2: Symulacja procesu
 
 ### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Zadanie 7: Generowanie danych początkowych dla planu budżetu z księgi głównej
-7.1. Przejdź do okna Budżetowanie &gt; Okresowo &gt; Generowanie planu budżetu z księgi głównej. Wprowadź parametry przetwarzania okresowego i kliknij przycisk Generuj. 
-
-[![Generowanie](./media/screenshot29.png)](./media/screenshot29.png) 
+7.1. Przejdź do okna Budżetowanie &gt; Okresowo &gt; Generowanie planu budżetu z księgi głównej. Wprowadź parametry przetwarzania okresowego i kliknij Generuj. 
 
 7.2. Przejdź do okna Budżetowanie &gt; Plany budżetu, aby znaleźć plan budżetu utworzony przez proces generowania. 
 
@@ -211,13 +200,13 @@ Julia musi utworzyć i aktywować nowy proces planowania budżetu, uwzględniaj�
 ### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Zadanie 8: Utwórz budżet bieżącego roku w oparciu o wartości rzeczywiste w poprzednim roku
 W planie budżetu można użyć metody alokacji, aby łatwo skopiować informacje o planie budżetu z jednego scenariusza do drugiego, podzielić je na okresy i alokować do wymiarów. Użyjemy alokacji do utworzenia budżetu na bieżący rok na podstawie wartości rzeczywistych z poprzedniego roku. 
 
-8.1. Pobierz wszystkie wiersze siatki dokumentu planu budżetu, a następnie kliknij przycisk alokowania budżetu. 
+8.1. Pobierz wszystkie wiersze siatki dokumentu planu budżetu, a następnie kliknij przycisk Alokowanie budżetu. 
 
 [![Wszystkie wiersze](./media/screenshot32.png)](./media/screenshot32.png) 
 
-8.2. Wybierz metodę alokacji, klucz okresu oraz scenariusze źródłowy i docelowy, a następnie kliknij przycisk Alokuj 
+8.2. Wybierz metodę alokacji, klucz okresu oraz scenariusze źródłowy i docelowy, a następnie kliknij przycisk Alokuj. 
 
-[![Alokowanie](./media/screenshot33.png)](./media/screenshot33.png)
+[![Alokuj](./media/screenshot33.png)](./media/screenshot33.png)
 
 Kwoty rzeczywiste poprzedniego roku zostaną skopiowane do budżetu bieżącego roku i przydzielone między okresy za pomocą klucza okresu Krzywa sprzedaży. 
 
@@ -226,11 +215,7 @@ Kwoty rzeczywiste poprzedniego roku zostaną skopiowane do budżetu bieżącego 
 ### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Zadanie 9: Korygowanie planu budżetu przy użyciu programu Excel i kończenie pracy nad dokumentem
 9.1. Kliknij przycisk Arkusz, aby otworzyć zawartość dokumentu w programie Excel.
 
-[![Program Excel](./media/screenshot35.png)](./media/screenshot35.png)
-
 9.2. Gdy skoroszyt programu Excel zostanie wyświetlony, skoryguj liczby w dokumencie planu budżetu i kliknij przycisk Publikuj.
-
-[![Opublikowanie](./media/screenshot36.png)](./media/screenshot36.png)
 
 9.3. Wróć do dokumentu planu budżetu. Kliknij kolejno opcje Przepływ pracy &gt; Prześlij, aby automatycznie zatwierdzić dokument.
 
@@ -242,7 +227,7 @@ Po zakończeniu przepływu pracy etap dokumentu planu budżetu zmieni się na Za
 
 ### <a name="auto-approve-workflow-configuration"></a>Konfiguracja przepływu pracy automatycznego zatwierdzania
 
-A. Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Przepływy pracy budżetowania Utwórz nowy przepływ pracy przy użyciu szablonu Przepływy pracy planowania budżetu
+A. Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Przepływy pracy budżetowania. Utwórz nowy przepływ pracy za pomocą szablonu przepływy pracy planowania budżetu:
 
 [![Tworzenie nowego przepływu pracy.](./media/screenshot39.png)](./media/screenshot39.png)
 
@@ -256,7 +241,7 @@ B. Wybierz kolejno opcje Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu 
 
 [![Etapy Początkowy i Przesłano](./media/screenshot41.png)](./media/screenshot41.png)
 
-C. Wybierz kolejno opcje Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu. Na karcie Etapy przepływu pracy skojarz przepływ pracy automatycznego zatwierdzania utworzony w kroku A z etapami Początkowy i Przesłano. 
+C. Wybierz kolejno opcje Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu. Na karcie Etapy przepływu pracy skojarz przepływ pracy automatycznego zatwierdzania utworzony w kroku A z etapami Początkowy i Przesłano.
 
 [![Budżetowanie i planowanie budżetu](./media/screenshot42.png)](./media/screenshot42.png)  
 

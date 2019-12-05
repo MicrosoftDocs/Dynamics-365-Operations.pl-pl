@@ -3,7 +3,7 @@ title: Obsługa zamówień planowanych
 description: Ten temat zawiera informacje o metodach zarządzania zamówienia planowanymi. Opisano w nim sposób aktualizowania stanów zamówień planowanych i ich potwierdzania oraz odfiltrowywania zamówień planowanych, które mają taki sam stan jak wybrane zamówienie planowane.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 11/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ddf2c7b4c67bec6c29387c78d1fdb021d85d702
-ms.sourcegitcommit: 620e15555d176eec3905b48d5001af1c50107ce6
+ms.openlocfilehash: 68bccb632255eac975dc150cf322d4c579ff2f24
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "1993447"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813783"
 ---
 # <a name="maintain-planned-orders"></a>Obsługa zamówień planowanych
 
@@ -39,7 +39,7 @@ Pole **Stan** pomaga w śledzeniu postępu zamówień. Używane są następując
 
 -   Zamówienia planowane generowane podczas planowania głównego mają stan **Nieprzetworzone**.
 -   Jeżeli nie chcesz ustalać zamówienia planowanego, możesz nadać mu stan **Zakończone**.
--   Aby ustalić zamówienie planowane, można zmienić stan na **zatwierdzone**. Zamówienia planowane ze **stanem zatwierdzonym** są przestrzegane w planowaniu głównym, więc nie można ich modyfikować ani usuwać. 
+-   Aby ustalić zamówienie planowane, można zmienić stan na **zatwierdzone**. Zamówienia planowane ze stanem **zatwierdzonym** są przestrzegane w planowaniu głównym, więc nie można ich modyfikować ani usuwać podczas późniejszego przebiegu planowania głównego. 
 
 ## <a name="firming-planned-orders"></a>Akceptacja planowanych zamówień 
 Podczas ustalania zamówień planowanych tworzone są rzeczywiste zamówienia. Są one również znane jako zamówienia *zwolnione* lub *otwarte*. Po ustaleniu zamówienie planowane zostanie przesunięte do sekcji zamówień w odpowiednim module.
@@ -62,7 +62,7 @@ Jeśli planujesz ustalać wiele zamówień w tym samym czasie, parallelizing prz
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Plany główne](master-plans.md)
+[Omówienie planów głównych](master-plans.md)
 
 
 

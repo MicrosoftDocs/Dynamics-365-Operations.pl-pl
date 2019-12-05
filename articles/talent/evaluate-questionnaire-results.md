@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 38b694b6dd4b1b9a198452e409bd64d7934b4685
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6be2f79d4f0c234028c0cc98b81cfa8ff4fcc992
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518872"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813990"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Wyświetlanie i ocenianie wyników kwestionariuszy
 
@@ -57,7 +57,8 @@ Na stronie **Odpowiedzi** można wyświetlić szczegóły dotyczące punktów uz
 -   **Raport odpowiedzi** — pokazuje odpowiedzi wybrane przez respondenta dla każdego pytania w kwestionariuszu.
 -   **Niepoprawne odpowiedzi** — pokazuje informacje dotyczące nieprawidłowych odpowiedzi wybranych przez respondenta.
 
-**Uwaga:** strona **Wyniki** jest dostępna tylko w przypadku korzystania z grup wyników w kwestionariuszu i jeśli wybrano opcję **Strona wyników** na stronie **Kwestionariusze**. Strona **Odpowiedzi** oraz raport **Nieprawidłowe odpowiedzi** są dostępne tylko w przypadku wybrania opcji **Raport odpowiedzi** na stronie **Kwestionariusze**.
+> [!NOTE]
+> Strona **Wyniki** jest dostępna tylko w przypadku korzystania z grup wyników w kwestionariuszu i jeśli wybrano opcję **Strona wyników** na stronie **Kwestionariusze**. Strona **Odpowiedzi** oraz raport **Nieprawidłowe odpowiedzi** są dostępne tylko w przypadku wybrania opcji **Raport odpowiedzi** na stronie **Kwestionariusze**.
 
 ## <a name="questionnaire-statistics"></a>Statystyki kwestionariusza
 Można użyć statystyk kwestionariusza do analizy wyników wypełnionego kwestionariusza na podstawie obliczeń zdefiniowanych przez użytkownika. Aby zdefiniować obliczenia, należy wykonać następujące zadania:
@@ -77,7 +78,7 @@ Ustawienia określone przez użytkownika są zapisywane i mogą być używane do
 
 [Projektowanie kwestionariuszy](design-questionnaires.md)
 
-[Używanie kwestionariuszy](questionnaires.md)
+[Kwestionariusze](questionnaires.md)
 
-[Dystrybucja i wypełnianie kwestionariuszy](distribute-questionnaires.md)
+[Dystrybuowanie i planowanie kwestionariuszy](distribute-questionnaires.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc998ddc2f654afba778c8c3af85dce37d3c3427
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: d452ccc94324a695f0d203486fc5fa8fe9db79f6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570178"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770558"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Opcje Cała kwota i Obliczanie interwału dla kodów podatku
 
@@ -80,11 +80,11 @@ Podatek jest sumą kwot podatku obliczonych dla poszczególnych interwałów kwo
 | 35,00                  | 35,00 \* 0,30                                                             | 10,50 zł     |
 | 50,00                  | 50,00 \* 0,30                                                             | 15,00     |
 | 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
-| 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |
+| 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45.50     |
 
 
 
-Aby uzyskać więcej informacji, zobacz [Ustalanie stawki podatku na podstawie pól Podstawa limitu i Metoda obliczania](marginal-base-field.md).
+Aby uzyskać więcej informacji, zobacz [Stawki podatku na podstawie pól Podstawa limitu i Metody obliczania](marginal-base-field.md).
 
 
 

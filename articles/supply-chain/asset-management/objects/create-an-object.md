@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a4759f55eceba923b47d906a764edcad34bf2f2
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 80236da5220aa9c70d5c488c09b457a470f0225a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571606"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811856"
 ---
 # <a name="create-an-asset"></a>Tworzenie składnika majątku
 
@@ -36,15 +36,15 @@ W tym temacie opisano sposób tworzenia składnika majątku w Zarządzaniu skła
 1. Kliknij **Zarządzanie składnikami majątku** > **Wspólne** > **składniki majątku** > **Wszystkie składniki majątku** lub **Aktywne składniki majątku**.
 2. Kliknij przycisk **Nowe**.
 3. W oknie dialogowym **Tworzenie składników majątku** wstaw dane dotyczące **Składnika majątku** (identyfikator składnika majątku) oraz nazwę składnika majątku. Wybierz datę i godzinę składnika majątku w polu **Data wprowadzenia**. Od tej daty można instalować składnik majątku w lokalizacji czynności konserwacyjnych, a także przenosić i zastępować składnik majątku w strukturze składników majątku.
-4. W polu **Typ składnika majątku** wybierz typ składnika majątku (pole obowiązkowe). W razie potrzeby wybierz pozycję **Producent składnika majątku** i **Model składnika majątku** dla danego zasobu. Jeśli tylko jeden produkt został skonfigurowany, ten produkt jest automatycznie wybierany w polu **Producent składnika majątku**. Opcje dostępne w polach **Producent składnika majątku** i **Model składnika majątku** zależą od konfiguracji w artykule [Producent i model składnika majątku](../setup-for-objects/product-and-model.md)
+4. W polu **Typ składnika majątku** wybierz typ składnika majątku (pole obowiązkowe). W razie potrzeby wybierz pozycję **Producent składnika majątku** i **Model składnika majątku** dla danego zasobu. Jeśli tylko jeden produkt został skonfigurowany, ten produkt jest automatycznie wybierany w polu **Producent składnika majątku**. Opcje dostępne w polach **Producent składnika majątku** i **Model składnika majątku** zależą od konfiguracji w artykule [Producenci i modele składnika majątku](../setup-for-objects/product-and-model.md)
 5. W grupie **Nadrzędny składnik majątku** pole **Składnik majątku** jest domyślnie puste. Jeśli jest to wymagane, można wybrać nadrzędny składnik majątku, a następnie wszystkie pola w grupie **Nadrzędny składnik majątku** zostaną automatycznie wypełnione.
 >[!NOTE]  
->Po wybraniu nadrzędnego składnika majątku dwie lub trzy karty są dostępne: karta **Moje składniki majątku** zawiera składniki majątku związane z lokalizacjami czynności konserwacyjnych, do których może zostać przydzielony konserwator zalogowany w systemie. Jeśli lokalizacje czynności konserwacyjnych nie są skonfigurowane dla konserwatora w formularzu [Konserwatorzy](../setup-for-objects/workers-and-worker-groups.md), karta **Moje składniki majątku** nie będą widoczne. Karta **Aktywne składniki majątku** zawiera listę wszystkich składników majątku ze stanem cyklu życia zasobu „Aktywny”. Na karcie **Widok składników majątku** jest wyświetlany widok drzewa lokalizacji czynności konserwacyjnych i składników majątku zainstalowanych w tych lokalizacjach.
+>Po wybraniu nadrzędnego składnika majątku dwie lub trzy karty są dostępne: karta **Moje składniki majątku** zawiera składniki majątku związane z lokalizacjami czynności konserwacyjnych, do których może zostać przydzielony konserwator zalogowany w systemie. Jeśli lokalizacje czynności konserwacyjnych nie są skonfigurowane dla konserwatora w formularzu [Konserwatorzy i grupy konserwatorów](../setup-for-objects/workers-and-worker-groups.md), karta **Moje składniki majątku** nie będzie widoczna. Karta **Aktywne składniki majątku** zawiera listę wszystkich składników majątku ze stanem cyklu życia zasobu „Aktywny”. Na karcie **Widok składników majątku** jest wyświetlany widok drzewa lokalizacji czynności konserwacyjnych i składników majątku zainstalowanych w tych lokalizacjach.
 
 6. Domyślna lokalizacja czynności konserwacyjnych, która została ustawiona, jest sugerowana dla składników majątku w grupie **Składniki majątku** > pole **Lokalizacja czynności konserwacyjnych**. W razie potrzeby wybierz inną lokalizację czynności konserwacyjnych.
 
 >[!NOTE]
->Po utworzeniu składnika majątku można go zainstalować w innej lokalizacji czynności konserwacyjnych, jeśli jest to wymagane. W lokalizacji czynności konserwacyjnych można instalować tylko składniki majątku najwyższego poziomu (składniki majątku bez bieżącego nadrzędnego składnika majątku). Oznacza to, że można zainstalować składniki majątku najwyższego poziomu, jak również wszystkie podrzędne składniki majątku w wybranej lokalizacji czynności konserwacyjnych. Dowiedz się więcej o instalowaniu składników majątku w lokalizacjach czynności konserwacyjnych w artykule [Lokalizacje czynności konserwacyjnych](../functional-locations/introduction-to-functional-locations.md).
+>Po utworzeniu składnika majątku można go zainstalować w innej lokalizacji czynności konserwacyjnych, jeśli jest to wymagane. W lokalizacji czynności konserwacyjnych można instalować tylko składniki majątku najwyższego poziomu (składniki majątku bez bieżącego nadrzędnego składnika majątku). Oznacza to, że można zainstalować składniki majątku najwyższego poziomu, jak również wszystkie podrzędne składniki majątku w wybranej lokalizacji czynności konserwacyjnych. Dowiedz się więcej o instalowaniu składników majątku w lokalizacjach czynności konserwacyjnych w artykule [Wprowadzenie do lokalizacji czynności konserwacyjnych](../functional-locations/introduction-to-functional-locations.md).
 
 7. Kliknij przycisk **OK**.
 8. Wybierz składnik majątku na liście **Wszystkie składniki majątku** i kliknij przycisk **Edytuj**, aby dodać dodatkowe informacje do składnika majątku.
@@ -53,7 +53,7 @@ W tym temacie opisano sposób tworzenia składnika majątku w Zarządzaniu skła
 
 Lokalizacja czynności konserwacyjnych, do której jest powiązany składnika majątku, jest wyświetlana w polu **Lokalizacja czynności konserwacyjnych**. Jeśli składnik majątku jest nadrzędny, liczba elementów podrzędnych wobec tego składnika majątku jest wyświetlana w polu **Podrzędny**. Jeśli składnik majątku jest podrzędny względem składnika istniejącego, identyfikator nadrzędnego składnika majątku jest wyświetlany w polu **Nadrzędny**.
 
-Można edytować informacje **Producent składnika majątku** oraz **Model składnika majątku** używane do zarządzania częściami zamiennymi, alternatywnymi częściami zamiennymi i domyślnymi typami pracy. Więcej informacji można uzyskać w artykule [Producent i model składnika majątku](../setup-for-objects/product-and-model.md). W razie potrzeby można również dodać informacje **Rok modelu**i **Numer seryjny**.
+Można edytować informacje **Producent składnika majątku** oraz **Model składnika majątku** używane do zarządzania częściami zamiennymi, alternatywnymi częściami zamiennymi i domyślnymi typami pracy. Więcej informacji można uzyskać w artykule [Producenci i modele składników majątku](../setup-for-objects/product-and-model.md). W razie potrzeby można również dodać informacje **Rok modelu**i **Numer seryjny**.
 
 **Bieżący stan cyklu życia** jest używany do definiowania, czy składnik majątku jest aktywny czy nieaktywny. Podczas tworzenia składnika majątku etap jest zawsze ustawiany na pierwszy etap w grupie etapów składników majątku. Gdy wszystko będzie gotowe do aktywowania składnika zasobu, kliknij przycisk **Aktualizuj stan składnika majątku** i wybierz stan cyklu życia zdefiniowany jako „aktywny środek majątku”, a następnie kliknij przycisk **OK**.
 
@@ -61,7 +61,7 @@ Można edytować informacje **Producent składnika majątku** oraz **Model skła
 
 Pola **Poziom usługi** i **Krytyczność** odnoszą się do zleceń pracy utworzonych dla składnika majątku. Pola pokazują wartości **Poziom usługi** i **Krytyczności** obliczone dla bieżącego ustawienia dla składnika majątku. Aby dowiedzieć się więcej o konfigurowaniu tych wartości, zobacz artykuły [Poziomy usług składnika majątku](../setup-for-objects/object-priorities.md) oraz [Krytyczności składników majątku](../setup-for-objects/object-criticalities.md).
 
-## <a name="asset"></a>Środek trwały
+## <a name="asset"></a>Składnik majątku
 
 Można wybrać **Zasób** dla składnia majątku. Wybór zasobu określa, który kalendarz jest używany do planowania zlecenia pracy. Wybór zasobu jest często używany w przypadku środków trwałych. Zasoby i grupy zasobów są skonfigurowane w menu **Administrowanie organizacją** > **Zasoby** > **Grupy zasobów** lub **Zasoby**.
 

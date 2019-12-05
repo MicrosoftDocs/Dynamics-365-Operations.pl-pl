@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 733ecc7cfb4fee325560f5a6fe11612bb8ba57ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653609"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815302"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami
 
@@ -218,7 +218,7 @@ Jeśli używasz zapasów konsygnacyjnych, dostawcy mogą w interfejsie współpr
 
 ## <a name="working-with-rfqs-when-you-use-vendor-collaboration"></a>Praca z zapytaniami ofertowymi podczas używania portalu współpracy z dostawcami
 
-W tej sekcji opisano interakcje między klientami a dostawcami podczas przetwarzania zapytań ofertowych. Wyjaśniono również, jak informacje są przekazywane do dostawców. Podstawowe omówienie obsługi przetwarzania zapytań ofertowych zawiera temat [Zapytania ofertowe](request-quotations.md).
+W tej sekcji opisano interakcje między klientami a dostawcami podczas przetwarzania zapytań ofertowych. Wyjaśniono również, jak informacje są przekazywane do dostawców. Podstawowe omówienie obsługi przetwarzania zapytań ofertowych zawiera temat [Omówienie zapytań ofertowych (ZO)](request-quotations.md).
 
 ### <a name="alternates-attachments-amendments-and-returns"></a>Alternatywy, załączniki, zmiany i zwroty
 

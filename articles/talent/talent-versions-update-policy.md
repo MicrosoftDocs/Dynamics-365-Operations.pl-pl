@@ -1,9 +1,9 @@
 ---
-title: Wymagania systemowe i zasady aktualizacji rozwiązania Talent
-description: W tym temacie podano wymagania dotyczące programu Dynamics 365 Talent. Opisano w nim także zasady aktualizacji.
+title: Wymagania systemowe Talent
+description: W tym temacie podano wymagania dotyczące programu Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
+ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024167"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2818486"
 ---
-# <a name="talent-system-requirements-and-update-policy"></a>Wymagania systemowe i zasady aktualizacji rozwiązania Talent
+# <a name="talent-system-requirements"></a>Wymagania systemowe Talent
 
 [!include [banner](includes/banner.md)]
 
@@ -54,7 +54,7 @@ Aby znaleźć najnowszą wersję dla każdej przeglądarki, przejdź do witryny 
 
 ## <a name="supported-microsoft-office-applications"></a>Obsługiwane aplikacje pakietu Microsoft Office
 
-* Aby można było uruchamiać dodatki programów Microsoft Excel i Word, musi być zainstalowany pakiet Microsoft Office 2016 dla systemu Windows lub Mac. Aby uzyskać więcej szczegółów na temat wymagań dotyczących wersji, zobacz [Rozwiązywanie problemów z integracją pakietu Office](../dev-itpro/office-integration/office-integration-troubleshooting.md "Rozwiązywanie problemów z integracją pakietu Office").
+* Aby można było uruchamiać dodatki programów Microsoft Excel i Word, musi być zainstalowany pakiet Microsoft Office 2016 dla systemu Windows lub Mac. Aby uzyskać więcej szczegółów na temat wymagań dotyczących wersji, zobacz [Rozwiązywanie problemów z integracją pakietu Office](../dev-itpro/office-integration/office-integration-troubleshooting.md "Rozwiązywanie problemów z integracją z pakietem Office").
 * Aby wyświetlać dokumenty generowane przez funkcję Eksportuj do programu Excel lub Eksportuj do programu Word, należy mieć zainstalowany pakiet Microsoft Office 2007 lub nowszy.
 
 ## <a name="regional-availability-languages-and-localization"></a>Regionalna dostępność, Języki i lokalizacja
@@ -66,8 +66,3 @@ Można pobrać plik PDF zawierający listy krajów, regionów i języków obsłu
 
 Jeśli jesteś programistą zainteresowanym tworzeniem dostosowań specyficznych dla kraju lub regionu lub stworzeniem rozwiązania dla kraju lub regionu, który nie jest obecnie obsługiwany przez firmę Microsoft, zobacz [Globalizacja](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
-## <a name="update-policy"></a>Zasady aktualizacji
-
-Talent jest udostępniany jako rozwiązanie chmurowe. Aktualizacje Talent są dodawane w sposób ciągły i stosowane automatycznie przez firmę Microsoft.
-
-Aktualizacje są publikowane regularnie i dla wszystkich środowisk. Talent jest wspierany zgodnie z [zasadami cyklu życia pomocy technicznej Microsoft](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Cykl życia pomocy technicznej Microsoft"), które określają spójny i przewidywalny harmonogram dostępności wsparcia technicznego dla produktów.

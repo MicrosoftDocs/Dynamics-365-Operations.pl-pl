@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 10998dbd77a7510a1f7f71215c9c64a13f6ca0f4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 750822708c5cae443aa92dfdde56b30590b0a06e
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176161"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772867"
 ---
 # <a name="split-periods-in-periodic-journals"></a>Okresy podziału w arkuszach okresowych
 
@@ -30,15 +30,15 @@ ms.locfileid: "2176161"
 
 Arkusze okresowe są czasami nazywane arkuszami cyklicznymi, ponieważ kwota, tekst i inne informacje są powtarzane zawsze podczas księgowania arkusza. Podczas tworzenia arkusza należy określić interwał czasowy dla cyklu, taki jak dni lub miesiące. Można także określić liczbę okresów, dla których arkusz będzie księgowany.
 
-Aby wielokrotnie pobierać i księgować wiersze transakcji, można użyć strony **Arkusze okresowe**. Dla firm w Czechach, Estonii, na Węgrzech, Łotwie, Litwie, w Polsce i Rosji strona **Arkusze okresowe** została rozszerzona o funkcjonalność podziału na okresy. Aby uzyskać więcej informacji, zobacz [Księgowanie arkusza okresowego](../general-ledger/tasks/post-periodic-journals.md)
+Aby wielokrotnie pobierać i księgować wiersze transakcji, można użyć strony **Arkusze okresowe**. Dla firm w Czechach, Estonii, na Węgrzech, Łotwie, Litwie, w Polsce i Rosji strona **Arkusze okresowe** została rozszerzona o funkcjonalność podziału na okresy. Aby uzyskać więcej informacji, zobacz [Księgowanie arkuszy okresowych](../general-ledger/tasks/post-periodic-journals.md)
 
 ### <a name="example-split-for-periods-in-periodic-journals"></a>Przykład: Podział na okresy w arkuszach okresowych
 
 Firma ubezpieczeniowa oferuje organizacji rabat na przedpłatę polisy ubezpieczeniowej na cały rok. Płatność jest zaksięgowana na koncie aktywów, takich jak przedpłaty na ubezpieczenia. Następnie miesięczny koszt ubezpieczenia jest amortyzowany w ciągu roku przez utworzenie arkusza okresowego, który zawiera kredyt na koncie przedpłat na ubezpieczenia i debet na koncie kosztów ubezpieczenia. W takim przypadku można użyć funkcji podziału na okresy. Kliknij przycisk **Podziel na okresy** znajdujący się w okienku akcji na stronie **Wiersze arkusza** **okresowego**, a następnie wypełnij następujące pola.
 
-|                       |                                                                                                                                                                                                             |
-|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Pole**             | **Opis**                                                                                                                                                                                             |
+
+| Pole            | Opis                                                                                                                                                                                             |
+|-----------------------|---------------------------------------------------------------|
 | **Data rozpoczęcia**        | Wybierz datę dla pierwszego wiersza arkusza okresowego.                                                                                                                                                        |
 | **Liczba okresów** | Wprowadź liczbę okresów, na które zostanie podzielony wiersz dziennika. Ta wartość określa liczbę nowych transakcji, które zostaną wygenerowane. Kwota transakcji jest równo dzielona między nowymi transakcjami. |
 | **Jednostka**              | Wybierz jednostkę miary okresu.                                                                                                                                                                  |

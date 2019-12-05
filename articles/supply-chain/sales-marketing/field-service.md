@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 2a5c3e49f09bf4f1f90449db10d439f563ecc2c0
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: cf1c4cbc18728b6094f862792d20a893b2a8d6ea
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249849"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815279"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Przegląd integracji Microsoft Dynamics 365 Field Service
 
@@ -41,9 +41,9 @@ Pierwsza faza integracji między programami Field Service i Supply Chain Managem
 
 Pierwsza faza integracji między programami Field Service i Supply Chain Management umożliwia synchronizowanie następujących elementów:
 
-- [Produkty w programie Supply Chain Management z produktami w programie Field Service zawierającymi informacje o typach produktów](field-service-product.md)
+- [Synchronizowanie produktów bezpośrednio z rozwiązania Supply Chain Management do produktów w rozwiązaniu Field Service](field-service-product.md)
 - [Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Supply Chain Management](field-service-work-order.md)
-- [Faktury w rozwiązaniu Field Service na faktury niezależne w rozwiązaniu Supply Chain Management](field-service-invoice.md)
+- [Synchronizowanie faktur dotyczących umowy w rozwiązaniu Field Service z fakturami niezależnymi w rozwiązaniu Supply Chain Management](field-service-invoice.md)
 
 Aby zobaczyć przykład jak synchronizować zlecenie produkcyjne między Field Service a Supply Chain Management, zobacz krótki film w serwisie YouTube [Jak zsynchronizować zlecenie pracy za pomocą mechanizmu integracji z rozwiązaniem Microsoft Dynamics 365](https://www.youtube.com/watch?v=46ylO7raZAo)
 

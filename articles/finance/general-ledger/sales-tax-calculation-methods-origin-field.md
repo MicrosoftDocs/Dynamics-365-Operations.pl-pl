@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37bb02dfc9cfcb3e2c1dcda446be3945563d6594
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: d326480cc03d80d1ce27f8762e300dca3b0d325e
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570587"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770650"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Wybieranie metody obliczeń podatków w polu podstawy
 
@@ -125,7 +125,7 @@ Dokument/arkusz jest ustawiony na Kwoty zawierają podatek = Nie Kwota wiersza t
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Ustalanie stawki podatku na podstawie pól Podstawa limitu i Metoda obliczania](marginal-base-field.md)
+[Stawki podatku na podstawie pól Podstawa limitu i Metoda obliczania](marginal-base-field.md)
 
 [Opcje Cała kwota i Obliczanie interwału dla kodów podatku](whole-amount-interval-options-sales-tax-codes.md)
 

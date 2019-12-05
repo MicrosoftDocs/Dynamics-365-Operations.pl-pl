@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9c177f7a7b713e7b8490b718650daafeca0e937
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d84e3ed050bacf7632d03cf0123f682c43fd7b58
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189391"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772750"
 ---
 # <a name="three-way-matching-policies"></a>Trzyelementowe zasady uzgadniania
 
@@ -141,7 +141,7 @@ Należy uwzględnić następujące elementy:
 Jeśli zatwierdzenie jest wymagane, aby można było zaksięgować faktury z rozbieżnościami uzgadniania, opcja Zatwierdzaj księgowanie w razie rozbieżności w uzgadnianiu na stronie Szczegóły uzgadniania faktur musi być wybrana, zanim faktura będzie mogła być zaksięgowana z błędami uzgadniania cen i błędami uzgadniania ilości. Jeśli zatwierdzanie nie jest wymagane, przetwarzanie faktury może być kontynuowane, jeśli nie ma żadnych innych błędów księgowania.
 
 
-Aby uzyskać więcej informacji, zobacz [Uzgadnianie faktur rozrachunków z dostawcami](accounts-payable-invoice-matching.md).
+Aby uzyskać więcej informacji, zobacz [Omówienie uzgadniania faktur rozrachunków z dostawcami](accounts-payable-invoice-matching.md).
 
 
 

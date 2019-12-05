@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d51b9a7684e460d555632c3896e9dd8a4e10d92c
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 005b04bd4c3476356f30ba8e97564f83307a64c7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626185"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811759"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatyczna aktualizacja liczników zasobów
 
@@ -43,16 +43,16 @@ Jak wspomniano powyżej, liczniki automatyczne mogą być aktualizowane na podst
 
 2. W polu **Od dnia** wybierz datę początkową automatycznej aktualizacji.
 
->[!NOTE]
->Datą w tym polu jest datą „pracy w toku” od **Transakcje marszruty** (**Kontrola produkcji** > **Zapytania i raporty** > **Produkcja** > **Transakcje marszruty** > **Data fizycznej transakcji** pole).
+    >[!NOTE]
+    >Datą w tym polu jest datą „pracy w toku” od **Transakcje marszruty** (**Kontrola produkcji** > **Zapytania i raporty** > **Produkcja** > **Transakcje marszruty** > **Data fizycznej transakcji** pole).
 
 3. Na skróconej karcie **Rekordy do uwzględnienia** można wybrać określone składniki majątku, typy składników majątku lub zasoby do automatycznej aktualizacji. Wybierz pozycję **Filtr** i wybierz odpowiednie opcje.
 
 4. Na skróconej karcie **uruchom w tle** w razie potrzeby możesz skonfigurować automatyczną aktualizację jako zadanie wsadowe.
 
-Na poniższej ilustracji przedstawiono przykład okna dialogowego **Aktualizowanie liczników składnika majątku**.
+    Na poniższej ilustracji przedstawiono przykład okna dialogowego **Aktualizowanie liczników składnika majątku**.
 
-![Rysunek 1](media/12-work-orders.png)
+    ![Rysunek 1](media/12-work-orders.png)
 
 5. Kliknij przycisk **OK**. 
 

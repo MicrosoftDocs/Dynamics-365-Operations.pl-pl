@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d646c8ba559ba3e8d2175911e76c57d25eff02ca
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: e6f0b75c8d81a5ac6ec90020375aec39120d4406
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278136"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811223"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Dodawanie kontrolki rekomendacji do ekranu transakcji na urządzeniach z aplikacją POS
 
 [!include [banner](includes/banner.md)]
 
 
-W tym temacie opisano sposób dodawania kontrolki rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w Microsoft Dynamics 365 Retail. Aby uzyskać więcej informacji na temat zaleceń dotyczących produktów, zapoznaj się z [zaleceniami dotyczącymi produktów w dokumentacji punktu sprzedaży.](product.md)
+W tym temacie opisano sposób dodawania kontrolki rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w Microsoft Dynamics 365 Retail. Aby uzyskać więcej informacji na temat zaleceń dotyczących produktów, zapoznaj się z [zaleceniami dotyczącymi produktów w dokumentacji punktu sprzedaży](product.md).
 
 
 Rekomendacje produktów mogą być wyświetlane na urządzeniu punktu sprzedaży podczas używania Microsoft Dynamics 365 Retail. Aby wyświetlać rekomendacje produktów, należy za pomocą projektanta układu ekranu dodać formant do ekranu transakcji. 
@@ -98,6 +98,6 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[rekomendacje produktów w punkcie sprzedaży](product.md)
+[Rekomendacje produktów w punkcie sprzedaży](product.md)
 
-[przegląd rekomendacji produktów](../commerce/product-recommendations.md)
+[Omówienie rekomendacji produktów](../commerce/product-recommendations.md)

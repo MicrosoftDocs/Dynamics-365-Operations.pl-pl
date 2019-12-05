@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9b7cd06d820522d8db83b5b1480b95db1400e9cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f8017ab23ce77a03469a6a6c82bc22986ec4478
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191254"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812633"
 ---
 # <a name="before-you-buy"></a>Zanim kupisz
 
@@ -41,8 +41,8 @@ Przy wybieraniu opcji wdrożenia lokalnego należy wziąć pod uwagę następuj�
 
 - Potrzeby w zakresie regulacji i zgodności z przepisami, które nie są zaspokajane przez certyfikacje usług chmurowych
 - Izolowany proces biznesowy okresowo łączący się z Internetem, wymagany w celu uzyskiwania dostępu do usługi Microsoft Dynamics Lifecycle Services (LCS) na potrzeby zarządzania cyklem życia aplikacji
-- [Funkcje obecnie niezaimplementowane we wdrożeniach lokalnych](features-not-implemented-on-prem.md)
-- [Minimalne wymagania w zakresie infrastruktury](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+- [Funkcje niezaimplementowane we wdrożeniach lokalnych](features-not-implemented-on-prem.md)
+- [Wymagania systemowe dotyczące wdrożeń lokalnych](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
 > Lokalne wdrożenia programu Microsoft Dynamics 365 for Finance and Operations nie są obsługiwane w żadnych infrastrukturach chmur publicznych, w tym Azure.
@@ -78,7 +78,7 @@ Dostawca rozwiązań chmurowych Microsoft może ściśle współpracować z klie
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Zakup u partnera w zakresie oprogramowania Dynamics (wdrożenia lokalne)
 
-Aby kupić program Finance and Operations do wdrożenia lokalnego, należy współpracować z partnerem. Aby dowiedzieć się więcej, zobacz [Zakup rozwiązania Dynamics 365 for Finance and Operations (lokalnego)](purchase-on-premises.md)
+Aby kupić program Finance and Operations do wdrożenia lokalnego, należy współpracować z partnerem. Aby uzyskać więcej informacji, [Skorzystaj z opcji Kup Finance + Operations (lokalne)](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Wybór opcji pomocy technicznej
 
@@ -91,7 +91,7 @@ Więcej informacji:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Krok 4: Więcej informacji o programie FastTrack i planowanie wdrożenia
 
-Microsoft FastTrack dla Dynamics 365 to usługa wsparcia wdrożeniowego, która pomaga płynnie i bezbłędnie wdrożyć rozwiązanie Microsoft FastTrack for Dynamics 365 i dzięki temu szybciej realizować korzyści biznesowe. Uczestnicząc w programie FastTrack, będziesz otrzymywać wskazówki dotyczące najlepszych praktyk oraz planowania optymalnych wdrożeń. Dowiesz się również, jak włączać nowych użytkowników i poszerzać możliwości, wszystko w swoim własnym tempie. Ponadto otrzymasz dostęp do inżynierów Microsoft, którzy pomogą jak najskuteczniej wdrożyć i wykorzystywać usługę Dynamics 365. Więcej informacji: [Omówienie zasobów Microsoft FastTrack dla usługi Dynamics 365](fasttrack-dynamics-365-overview.md)
+Microsoft FastTrack dla Dynamics 365 to usługa wsparcia wdrożeniowego, która pomaga płynnie i bezbłędnie wdrożyć rozwiązanie Microsoft FastTrack for Dynamics 365 i dzięki temu szybciej realizować korzyści biznesowe. Uczestnicząc w programie FastTrack, będziesz otrzymywać wskazówki dotyczące najlepszych praktyk oraz planowania optymalnych wdrożeń. Dowiesz się również, jak włączać nowych użytkowników i poszerzać możliwości, wszystko w swoim własnym tempie. Ponadto otrzymasz dostęp do inżynierów Microsoft, którzy pomogą jak najskuteczniej wdrożyć i wykorzystywać usługę Dynamics 365. Więcej informacji: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md)
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>W przypadku uaktualniania z systemu Dynamics AX 2012 lub migracji z systemu AX 2009
 

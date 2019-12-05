@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 616d3f5560d18c7fdd8a092c3fbca0fde44be069
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: b9708c37f10cd08e6b98167fe24d9ae0380c3dac
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570432"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772175"
 ---
 # <a name="vendor-invoices-overview"></a>Omówienie faktur od dostawców
 
@@ -101,7 +101,7 @@ Za pomocą strony **Historia przepływu pracy** można zmienić stan przepływu 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Konfigurowanie zasad faktur od dostawców](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
-- [Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą faktury od dostawcy](tasks/key-invoice-data-ap-system-vendor-invoice.md)
+- [Wpisywanie danych faktury w systemie AP za pomocą faktury od dostawcy](tasks/key-invoice-data-ap-system-vendor-invoice.md)
 - [Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą arkusza zatwierdzania](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą puli faktur](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Rejestrowanie faktury od dostawcy w arkuszu faktur](tasks/record-vendor-invoice-invoice-journal.md)

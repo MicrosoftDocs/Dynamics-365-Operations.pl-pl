@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9afa98156c58d10c19454430769a3d60343661dc
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 654685a382ca5f3f462ad8a9c506b51b52c3758c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550964"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811656"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Korzystanie z samouczka narzędzia Regression Suite Automation Tool
 
@@ -44,7 +44,7 @@ Aby uzyskać informacje o tej funkcji, zapoznaj się z tematem [modyfikowanie is
 
 ### <a name="derived-test-case"></a>Pochodny przypadek testowy
 
-1. Otwórz narzędzie Regression suite automation tool (RSAT) i wybierz oba przypadki testowe utworzone w [Konfiguracja i Instalowanie narzędzia Regression suite automation tool](./hol-set-up-regression-suite-automation-tool.md).
+1. Otwórz narzędzie Regression suite automation tool (RSAT) i wybierz oba przypadki testowe utworzone w [Konfigurowanie i instalowanie samouczka narzędzia Regression Suite Automation Tool](./hol-set-up-regression-suite-automation-tool.md).
 2. Wybierz **Nowy \> Utwórz pochodny przypadek testowy**
 
     ![Utwórz pochodne polecenie przypadku testowego w menu Nowy](./media/use_rsa_tool_01.png)

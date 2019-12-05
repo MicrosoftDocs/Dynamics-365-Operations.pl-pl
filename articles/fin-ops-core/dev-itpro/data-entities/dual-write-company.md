@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: aa4d54fd7b3ab407751ad6ca1032d742c23eed41
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 21c2143f4fa58d51f64e349c7963cb17e04bad97
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184538"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772444"
 ---
 ## <a name="company-concept-in-common-data-service"></a>Pojęcie firmy w usługach Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 W Finance and Operations koncepcja *firmy* jest zarówno konstrukcją prawną, jak i konstrukcją biznesową. Jest to również granicą bezpieczeństwa i widoczności danych. Użytkownicy zawsze pracują w kontekście pojedynczej firmy, a większość danych jest rozłożona według firmy.
 
@@ -60,12 +58,14 @@ Jak pokazano na powyższej ilustracji, to mapowanie 1:1 między jednostką bizne
 
 Ostatnim tematem do omówienia jest to, w jaki sposób podwójny zapis określa zespół właściciela, do którego ma przypisać rekordy. To zachowanie jest kontrolowane przez pole **Domyślny zespół właściciela** w rekordzie cdm\_Company. Kiedy w rekordzie cdm\_Company jest włączony podwójny zapis, wtyczka automatycznie tworzy skojarzoną jednostkę biznesową i zespół właściciela (jeśli jeszcze nie istnieje) i ustawia pole **Domyślny zespół właściciela**. Administrator może zmienić wartość tego pola na inną. Jednak administrator nie może wyczyścić pola, dopóki w jednostce jest włączony podwójny zapis.
 
+> [!div class="mx-imgBorder"]
 ![Domyślne pole zespołu będącego właścicielem](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Powielanie danych i inicjowanie firmy
 
 Integracja Common Data Service powoduje wywołuje parzystość firmy za pomocą identyfikatora firmy w celu powielenia danych. Na poniższej ilustracji pokazano, że wszystkie jednostki właściwe dla firmy są rozszerzane w taki sposób, że mają relacje wiele do jednego (N:1) z jednostką cdm\_Company.
 
+> [!div class="mx-imgBorder"]
 ![Relacja N:1 między jednostką specyficzną dla firmy a jednostką cdm_Company](media/dual-write-bootstrapping.png)
 
 + W przypadku rekordów po dodaniu i zapisaniu firmy jest ona tylko do odczytu. Dlatego użytkownicy powinni upewnić się, że została wybrana prawidłowa firma.

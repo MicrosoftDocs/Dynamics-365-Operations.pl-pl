@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c07f303b72f286c33979181fca1592b47efa1303
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 625e2c6a6b385c69d33ec4325a462310a37f1eed
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571238"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812198"
 ---
 # <a name="maintenance-attribute-types"></a>Typy atrybutów konserwacji
 
@@ -34,9 +34,9 @@ ms.locfileid: "2571238"
 W tym temacie wyjaśniono, jak tworzyć typy atrybutów w Zarządzaniu składnikami majątku. Atrybuty są używane do opisywania właściwości różnych elementów. Można konfigurować atrybuty następujących elementów:
 
 - [Typy lokalizacji czynności konserwacyjnych](../setup-for-functional-locations/functional-location-types.md)
-- [Lokalizacje czynności konserwacyjnych](../functional-locations/create-functional-locations.md)
+- [Tworzenie lokalizacji czynności konserwacyjnych](../functional-locations/create-functional-locations.md)
 - [Typy składników majątku](../setup-for-objects/object-types.md)
-- Środki trwałe
+- Składniki majątku
 
 Atrybuty, które można skonfigurować różnią się w zależności od elementu. Na przykład dla lokalizacji czynności konserwacyjnych można skonfigurować atrybuty dla konfiguracji i fizycznego rozmiaru lokalizacji. Dla typu składnika majątku lub składnika majątku można skonfigurować atrybuty dla objętości silnika, zużycia energii i maksymalnej pojemności w różnych warunkach.
 

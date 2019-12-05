@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c16082bb18ac5c170aab30f1a2033e0790cbacc1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026013"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812702"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (20 marca 2019 r.)
 
@@ -43,7 +43,7 @@ Ta funkcja pozwala automatom aparatu wyszukiwania identyfikowanie i indeksowanie
 Jeśli kandydat nie pamięta poświadczeń społecznościowych użytych na etapie odpowiadania na ofertę pracy, gdy kliknął otrzymane łącze, teraz system wyświetli mu wskazówki z nazwą dostawcy i użytkownika (zamazane). Pomoże to użytkownikowi podanie prawidłowych poświadczeń w celu uzyskania dostępu do zgłoszenia przesłanego w odpowiedzi na ofertę pracy.
 
 ### <a name="help-internal-candidates-explore-internal-jobs"></a>Pomoc dla wewnętrznych kandydatów w przeglądaniu wewnętrznych ofert pracy
-Został rozwiązany problem polegający na tym, że zewnętrzny kandydat mógł zobaczyć nazwisko osoby rekrutującej lub menedżera zatrudniającego na stanowisko. Teraz skład zespołu zatrudniającego jest widoczny tylko dla wewnętrznych kandydatów. Ponadto wewnętrzni kandydaci mogą łatwiej wyświetlać wewnętrzne oferty pracy i łatwiej na nie odpowiadać. Gdy kandydat klika łącze, aby wyświetlić tylko wewnętrzną ofertę pracy lub na nią odpowiedzieć, system wymusza uwierzytelnianie za pomocą poświadczeń Azure Active Directory. Wewnętrzni kandydaci mogą też kontaktować się z członkiem zespołu rekrutacyjnego, aby zgłosić się do pracy na dane stanowisko lub uzyskać dodatkowe informacje. Funkcja ta jest dostępna dla wszystkich ofert pracy tylko dla wewnętrznych kandydatów. Aby uzyskać więcej informacji, zobacz [Funkcjonalność witryny rozwoju kariery w aplikacji Attract](./career-site.md).
+Został rozwiązany problem polegający na tym, że zewnętrzny kandydat mógł zobaczyć nazwisko osoby rekrutującej lub menedżera zatrudniającego na stanowisko. Teraz skład zespołu zatrudniającego jest widoczny tylko dla wewnętrznych kandydatów. Ponadto wewnętrzni kandydaci mogą łatwiej wyświetlać wewnętrzne oferty pracy i łatwiej na nie odpowiadać. Gdy kandydat klika łącze, aby wyświetlić tylko wewnętrzną ofertę pracy lub na nią odpowiedzieć, system wymusza uwierzytelnianie za pomocą poświadczeń Azure Active Directory. Wewnętrzni kandydaci mogą też kontaktować się z członkiem zespołu rekrutacyjnego, aby zgłosić się do pracy na dane stanowisko lub uzyskać dodatkowe informacje. Funkcja ta jest dostępna dla wszystkich ofert pracy tylko dla wewnętrznych kandydatów. Więcej informacji zawiera sekcja [Konfigurowanie serwisu kariery w Microsoft Dynamics 365 Talent - Attract](./career-site.md)
 
 ### <a name="designate-silver-medalists-to-assign-high-value-applicants-for-future-positions"></a>Wyznaczanie srebrnych medalistów w celu przypisywania bardzo wartościowych kandydatów do przyszłych stanowisk.
 Osoby prowadzące rekrutację i menedżerowie często używają list kandydatów pasujących na dane stanowisko, ale stanowisko zostało już obsadzone. Tacy kandydaci, nazywani srebrnymi medalistami, są cenni, ponieważ można się do nich zgłosić w przyszłości, gdy konieczne będzie zatrudnienie kogoś na podobnym stanowisku, oszczędzając w ten sposób czas na poszukiwania. Attract pozwala teraz osobom rekrutującym i menedżerom zatrudniającym na wskazywanie srebrnych medalistów na liście kandydatów, jeśli kandydat przejdzie do etapu oferty. Oznaczenie srebrnym medalem będzie widoczne na liście kandydatów na stanowisko oraz w widoku puli umiejętności i kandydatów, jeśli ci kandydaci widnieją w jakichkolwiek pulach danej osoby prowadzącej rekrutację lub menedżera zatrudniającego. Ponadto oznaczenie będzie widoczne w historii stanowiska jako element profilu kwalifikacji kandydata. Można uzyskać podgląd tej funkcji, o ile administrator ją włączy przy użyciu [zarządzania funkcjami w centrum administracyjnym](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).

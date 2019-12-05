@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: b031fd95d2e7fc8405ad96139779091e00bb4d46
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 42065f3d6b7ae9e7ad99b26c7692e41f8c36934d
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551479"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832984"
 ---
 # <a name="troubleshoot-integration-with-linkedin-and-microsoft-dynamics-365-talent---attract"></a>Rozwiązywanie problemów z integracją usługi LinkedIn i aplikacji Microsoft Dynamics 365 Talent - Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Poniższe informacje ułatwiają rozwiązywanie problemów, które mogą wystąpić podczas próby publikacji ofert pracy w serwisie LinkedIn z aplikacji Microsoft Dynamics 365 Talent: Attract.
 
@@ -42,18 +42,18 @@ Jeśli występują problemy z logowaniem w serwisie LinkedIn przez program Attra
 
 Jeśli po 24 godzinach praca nie pojawiła się w serwisie LinkedIn, spróbuj wykonać następujące czynności:
 
-1. Upewnij się, że identyfikator firmy w serwisie LinkedIn jest mapowany na stronę firmy w serwisie LinkedIn i poprawnie wpisany w centrum administracyjnym Attract. Aby uzyskać więcej informacji na temat zmiany ustawień serwisu LinkedIn w centrum administracyjnym, zobacz [Konfigurowanie integracji z serwisem LinkedIn](attract-admin-linkedin.md). Aby uzyskać więcej informacji na temat identyfikatorów firmy LinkedIn, zobacz [Kojarzenie identyfikatora firmy w serwisie LinkedIn z tablicą ofert pracy serwisu LinkedIn — często zadawane pytania](https://www.linkedin.com/help/linkedin/answer/98972).
+1. Upewnij się, że identyfikator firmy w serwisie LinkedIn jest mapowany na stronę firmy w serwisie LinkedIn i poprawnie wpisany w centrum administracyjnym Attract. Aby uzyskać więcej informacji na temat zmiany ustawień serwisu LinkedIn w centrum administracyjnym, zobacz [Konfigurowanie integracji z serwisem LinkedIn dla Microsoft Dynamics 365 Talent - Attract](attract-admin-linkedin.md). Aby uzyskać więcej informacji na temat identyfikatorów firmy LinkedIn, zobacz [Kojarzenie identyfikatora firmy w serwisie LinkedIn z tablicą ofert pracy serwisu LinkedIn — często zadawane pytania](https://www.linkedin.com/help/linkedin/answer/98972).
 2. Sprawdź szczegóły dotyczące pracy w serwisie LinkedIn, aby upewnić się, że adres jest zakończony. Aby opublikować ofertę pracy pomyślnie, serwis LinkedIn potrzebuje co najmniej nazwy miasta i kraju lub regionu pracy.
 3. Upewnij się, że praca nie duplikuje innej pracy, która została opublikowana w serwisie LinkedIn. Serwis LinkedIn nie opublikuje ofert pracy, które są duplikatami Miejsc Pracy Premium serwisu LinkedIn lub ofertami limitowanymi z innego źródła. Sprawdź, czy inna osoba w firmie nie opublikowała jeszcze ręcznie pracy.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Często zadawane pytania dotyczące serwisu LinkedIn](./attract-linkedin-faq.md)
+[Konfigurowanie integracji Attract z serwisem LinkedIn — często zadawane pytania](./attract-linkedin-faq.md)
 
-[Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Attract](./attract-post-jobs-to-linkedin.md)
+[Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
-[Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+[Pozyskiwanie kandydatów za pomocą LinkedIn Recruiter w Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md)
 
-[Tworzenie pracy](./creating-jobs-attract.md)
+[Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract](./creating-jobs-attract.md)
 
-[Rozwiązywanie problemów integracji z serwisem LinkedIn](./attract-troubleshoot-linkedin.md)
+[Rozwiązywanie problemów z integracją usługi LinkedIn i Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 3d23375ec7ebe9b43c2d2e3e376e26c348131bd3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653330"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812267"
 ---
 # <a name="register-consumption"></a>Rejestracja zużycia
 
@@ -33,7 +33,7 @@ ms.locfileid: "2653330"
 
 Po wykonaniu zadania konserwacji w zleceniu produkcyjnym następnym krokiem jest dokonanie rejestracji zużycia i zaksięgowanie arkuszy. Rejestracje można przeprowadzać na następujących typach zużycia: godziny, towary i wydatki. Różne typy zużycia są rejestrowane i księgowane na stronie **arkusze zleceń pracy**. Ustawienia arkusza w module **zarządzanie składnikami majątku** służą do tworzenia i księgowania oddzielnych arkuszy godzin, towarów i wydatków w module **Zarządzanie projektami i ich księgowanie** .
 
-W niektórych przypadkach istnieje możliwość dodawania lub usuwania wierszy prognozy w zleceniu pracy. Konfiguracja stanu cyklu życia zlecenia pracy, powiązanego typu projektu oraz reguł etapów związanych z typem projektu określa, czy można dodawać lub edytować wiersze arkuszy. Dowiedz się więcej o stanach cyklu pomocy zamówień pracy i powiązanych etapach projektu w [Integracja z modułem Zarządzanie projektami i ich księgowanie](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+W niektórych przypadkach istnieje możliwość dodawania lub usuwania wierszy prognozy w zleceniu pracy. Konfiguracja stanu cyklu życia zlecenia pracy, powiązanego typu projektu oraz reguł etapów związanych z typem projektu określa, czy można dodawać lub edytować wiersze arkuszy. Aby uzyskać więcej informacji na temat stanów cyklu życia zlecenia pracy i etapów projektu należy zapoznać się z [Prognozy, zlecenia pracy i projekty](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Istnieje możliwość skonfigurowania automatycznego księgowania arkuszy w stanie cyklu życia zamówienia pracy. Więcej informacji [Stany cyklu życia zlecenia pracy](../setup-for-work-orders/work-order-lifecycle-states.md).

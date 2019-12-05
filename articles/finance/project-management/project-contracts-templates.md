@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 76c62f3a503ff2a8c93143390fc91ef81fbf7d0f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: b44fc116f1dcaa1275b2262487ef9114bce639c6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250468"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773861"
 ---
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Synchronizowanie umów na projekty i projektów bezpośrednio z programu Project Service Automation do programu Finance and Operations
 
@@ -42,11 +42,11 @@ Rozwiązanie integracji rozwiązania Project Service Automation dp Finance korzy
 
 Na poniższej ilustracji przedstawiono, w jaki sposób dane są synchronizowane pomiędzy rozwiązaniami Project Service Automation oraz Finance.
 
-[![Przepływ danych w integracji programu Project Service Automation z programem Finance](./media/ProjectsAndContractsFlow.JPG)](./media/ProjectsAndContractsFlow.JPG)
+[![Przepływ danych w integracji programu Project Service Automation z programem Finance](./media/ProjectsAndContractsFlow_upd.JPG)](./media/ProjectsAndContractsFlow.JPG)
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 
-Aby przejść do dostępnych szablonów, w centrum administracyjnym usługi Microsoft PowerApps wybierz opcję **Projekty** i w prawym górnym rogu wybierz opcję **Nowy projekt**, aby wybrać spośród szablonów publicznych.
+Aby przejść do dostępnych szablonów, w centrum administracyjnym usługi Microsoft Power Apps wybierz opcję **Projekty** i w prawym górnym rogu wybierz opcję **Nowy projekt**, aby wybrać spośród szablonów publicznych.
 
 Następujący szablon i zadania podrzędne służą do synchronizowania umów dotyczących projektu i projektów z rozwiązania Project Service Automation do rozwiązania Finance:
 

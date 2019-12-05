@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b23860a7eda0ec9d75cca04728b7fc11d01bf967
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023891"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812748"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (26 marca 2019 r.)
 
@@ -75,11 +75,11 @@ W tej wersji plany stałych wynagrodzeń są wyświetlane, gdy uprawnienia użyt
 W tej wersji można teraz usuwać rekordy ofert pracy, używając opcji **Otwórz w programie Excel** w aplikacji Talent.
 
 ### <a name="upgrade-to-common-data-service"></a>Uaktualnianie do rozwiązania Common Data Service
-Zbliżają się terminy uaktualniania do Common Data Service dla aplikacji. Zaloguj się do Centrum administracyjnego usługi PowerApps, aby określić, czy baza danych wymaga uaktualnienia. Aby uzyskać więcej informacji dotyczących terminów i niezbędne kroki w celu uaktualnienia, zobacz [uaktualnienia do Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Zbliżają się terminy uaktualniania do Common Data Service dla aplikacji. Zaloguj się do Centrum administracyjnego usługi Power Apps, aby określić, czy baza danych wymaga uaktualnienia. Aby uzyskać więcej informacji dotyczących terminów i niezbędne kroki w celu uaktualnienia, zobacz [uaktualnienia do Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Wersja próbna
 
-Aby uzyskać informacje dotyczące włączania funkcji podglądu, zobacz [dostępu do funkcji podglądu w Talent](./access-preview-feature.md).
+Aby uzyskać informacje dotyczące włączania funkcji podglądu, zobacz [Dostęp do funkcji podglądu w Microsoft Dynamics 365 Talent](./access-preview-feature.md).
 
 ### <a name="allow-reason-codes-to-be-specified-on-leave-types"></a>Zezwalaj na określanie kodów przyczyn dla typów urlopu
 Organizacje mogą potrzebować dodatkowych informacji związanych z wnioskami o urlop. Aby uzyskać te informacje, pracownicy muszą uwzględnić kod przyczyny we wnioskach o urlop. Ta wersja umożliwia określenie kodów przyczyn skojarzonych z danym typem urlopu i pozwala pracownikom wybrać kod przyczyny we wniosku o urlop.

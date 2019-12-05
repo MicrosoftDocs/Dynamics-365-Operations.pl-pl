@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9eef9d8c58d19b05901035f4c679ee7d9902819
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179383"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771927"
 ---
 # <a name="set-up-fixed-assets"></a>Konfigurowanie środków trwałych
 
@@ -51,7 +51,7 @@ Po skonfigurowaniu profili amortyzacji należy utworzyć księgi wymagane dla sk
 
 Każda księga ma przypisany główny profil amortyzacji. Księgi mają również alternatywne (przełączane) profile amortyzacji, jeśli pozwala na to typ profilu. Aby automatycznie uwzględniać księgę środków trwałych w sesjach księgowania amortyzacji, należy włączyć opcję **Oblicz amortyzację**. Jeśli ta opcja nie jest włączona dla składnika aktywów, propozycja amortyzacji pomija ten składnik.
 
-Można również skonfigurować księgi pochodne. Wskazane transakcje pochodne są księgowane w księgach pochodnych jako dokładne kopie transakcji podstawowych. W związku z tym transakcje pochodne są zazwyczaj konfigurowane dla transakcji nabycia i likwidacji, a nie dla transakcji amortyzacji. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ksiąg](tasks/set-up-value-models.md).
+Można również skonfigurować księgi pochodne. Wskazane transakcje pochodne są księgowane w księgach pochodnych jako dokładne kopie transakcji podstawowych. W związku z tym transakcje pochodne są zazwyczaj konfigurowane dla transakcji nabycia i likwidacji, a nie dla transakcji amortyzacji. Aby uzyskać więcej informacji, zobacz [Konfigurowanie modeli ewidencji](tasks/set-up-value-models.md).
 
 ## <a name="fixed-asset-posting-profiles"></a>Profile księgowania środków trwałych
 

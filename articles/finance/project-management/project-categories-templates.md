@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 482febc91a04766216f9887ab59d30cc9aed5096
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7b0b3721c3b0755218c834d2bf77ec976be3bdcc
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250514"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770319"
 ---
 # <a name="synchronize-project-expense-categories-between-finance-and-operations-and-project-service-automation"></a>Synchronizowanie kategorii wydatków w projekcie między programami Finance and Operations i Project Service Automation
 
@@ -64,7 +64,7 @@ Na poniższej ilustracji przedstawiono, w jaki sposób dane są synchronizowane 
 
 ### <a name="template-and-task"></a>Szablon i zadanie
 
-Aby uzyskać dostęp do szablonu, w centrum administracyjnym usługi Microsoft PowerApps wybierz opcję **Projekty** i w prawym górnym rogu wybierz opcję **Nowy projekt**, aby wybrać spośród szablonów publicznych.
+Aby uzyskać dostęp do szablonu, w centrum administracyjnym usługi Microsoft Power Apps wybierz opcję **Projekty** i w prawym górnym rogu wybierz opcję **Nowy projekt**, aby wybrać spośród szablonów publicznych.
 
 Następujący szablon i zadania podrzędne służą do synchronizowania szacunków wydatków z rozwiązania Finance do Project Service Automation:
 

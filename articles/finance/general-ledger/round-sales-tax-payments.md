@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: yijialuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 168c2fb9edfc994617ef6764a5b9f5949d599882
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4e66a62007025964b3d58ff0620ebecd6d9769f9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186332"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771759"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Reguły płatności podatkowych i zaokrąglania
 
@@ -126,7 +126,7 @@ round(1.0151, 0.00) = 1.0151 round(1.0149, 0.00) = 1.0149
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 - [Omówienie podatku](indirect-taxes-overview.md)
 - [Tworzenie płatności podatku](tasks/create-sales-tax-payment.md)
-- [Tworzenie transakcji sprzedaży w dokumentach](tasks/create-sales-tax-transactions-documents.md)
+- [Tworzenie transakcji podatku w dokumentach](tasks/create-sales-tax-transactions-documents.md)
 - [Wyświetlanie zaksięgowanych transakcji podatkowych](tasks/view-posted-sales-tax-transactions.md)
 - [Funkcja zaokrąglanie](https://msdn.microsoft.com/library/aa850656.aspx)
 

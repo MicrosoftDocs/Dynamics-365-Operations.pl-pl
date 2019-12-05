@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a12ab249129dce24cdca5e29d737fa9f68c0eac
-ms.sourcegitcommit: 6e0909e95f38b7487a4b7f68cc62b723f8b59bd4
+ms.openlocfilehash: 9efc63c385c31a6d8848d016c1a8689460908dcc
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572456"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769667"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Hierarchia organizacyjna w usłudze Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 Ponieważ Dynamics 365 Finance jest systemem finansowym, *organizacja* jest podstawową koncepcją, a konfiguracja systemu rozpoczyna się od konfiguracji hierarchii organizacyjnej. Finanse biznesowe mogą być następnie śledzone na poziomie organizacji, a także na dowolnym poziomie w hierarchii organizacyjnej.
 
@@ -46,85 +44,35 @@ Ekosystem biznesowy składający się z aplikacji Finance and Operations i usłu
 
 Mapy encji hierarchii organizacyjnej są dostępne dla jednokierunkowego synchronizowania danych z aplikacji Finance and Operations do usługi Common Data Service.
 
+## <a name="templates"></a>Szablony
+
+Informacje o produkcie zawierają wszystkie informacje związane z produktem i jego definicję, takie jak wymiary produktu lub wymiary śledzenia i przechowywania. W poniższej tabeli przedstawiono kolekcję mapowań jednostek, która umożliwia synchronizowanie produktów i informacji pokrewnych.
+
+Finance and Operations | Inne aplikacje w usłudze Dynamics 365 | Opis
+-----------------------|--------------------------------|---
+Cele hierarchii organizacji | msdyn_internalorganizationhierarchypurposes | Ten szablon umożliwia jednokierunkową synchronizację jednostki cel hierarchii organizacyjnej.
+Typ hierarchii organizacyjnej | msdyn_internalorganizationhierarchytypes | Ten szablon umożliwia jednokierunkową synchronizację jednostki typu hierarchii organizacyjnej.
+Hierarchia organizacyjna - opublikowana | msdyn_internalorganizationhierarchies | Ten szablon umożliwia jednokierunkową synchronizację jednostki opublikowanej hierarchii organizacyjnej.
+Jednostka operacyjna | msdyn_internalorganizations | 
+Firmy | msdyn_internalorganizations | 
+Firmy | cdm_companies | Umożliwia synchronizację dwukierunkową informacji firmy (firmy).
+
+
 [!include [banner](../includes/dual-write-symbols.md)]
 
-## <a name="internal-organization-hierarchy-purpose"></a>Wewnętrzne cele hierarchii organizacyjnej
+[!include [Organization hierarchy purposes](dual-write/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
 
-Ten szablon zapewnia jednokierunkową synchronizację encji Cele hierarchii organizacji z Finance and Operations do innych aplikacji Dynamics 365.
+[!include [Organization hierarchy type](dual-write/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
 
-<!-- ![architecture image](media/dual-write-purpose.png) -->
-
-Pole źródłowe | Typ mapy | Pole docelowe
----|---|---
-HIERARCHYTYPE | \> | msdyn\_hierarchypurposetypename
-HIERARCHYTYPE | \> | msdyn\_hierarchytype.msdyn\_name
-HIERARCHYPURPOSE | \>\> | msdyn\_hierarchypurpose
-IMMUTABLE | \>\> | msdyn\_immutable
-SETASDEFAULT | \>\> | msdyn\_setasdefault
-
-## <a name="internal-organization-hierarchy-type"></a>Typ wewnętrznej hierarchii organizacyjnej
-
-Ten szablon zapewnia jednokierunkową synchronizację encji Typ hierarchii organizacji z Finance and Operations do innych aplikacji Dynamics 365.
-
-<!-- ![architecture image](media/dual-write-type.png) -->
-
-Pole źródłowe | Typ mapy | Pole docelowe
----|---|---
-NAZWA | \> | msdyn\_name
-
-## <a name="internal-organization-hierarchy"></a>Wewnętrzna hierarchia organizacyjna
-
-Ten szablon zapewnia jednokierunkową synchronizację encji Opublikowana hierarchia organizacji z Finance and Operations do innych aplikacji Dynamics 365.
-
-<!-- ![architecture image](media/dual-write-organization.png) -->
-
-Pole źródłowe | Typ mapy | Pole docelowe
----|---|---
-VALIDTO | \> | msdyn\_validto
-VALIDFROM | \> | msdyn\_validfrom
-HIERARCHYTYPE | \> | msdyn\_hierarchytypename
-PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentpartyid
-CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childpartyid
-HIERARCHYTYPE | \> | msdyn\_hierarchytypeid.msdyn\_name
-CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childid.msdyn\_partynumber
-PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentid.msdyn\_partynumber
+[!include [Organization hierarchy - published](dual-write/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
 
 ## <a name="internal-organization"></a>Wewnętrzna organizacja
 
 Informacje o organizacji wewnętrznej Common Data Service pochodzą z dwóch encji, **jednostki operacyjnej** i **firm**.
 
-<!-- ![architecture image](media/dual-write-operating-unit.png) -->
+[!include [Operating unit](dual-write/OperatingUnit-msdyn-internalorganizations.md)]
 
-<!-- ![architecture image](media/dual-write-legal-entities.png) -->
+[!include [Legal entities](dual-write/LegalEntities-msdyn-internalorganizations.md)]
 
-### <a name="operating-unit"></a>Jednostka operacyjna
+[!include [Legal entities](dual-write/LegalEntities-Companies.md)]
 
-Pole źródłowe | Typ mapy | Pole docelowe
----|---|---
-LANGUAGEID | \> | msdyn\_languageid
-NAMEALIAS | \> | msdyn\_namealias
-NAZWA | \> | msdyn\_name
-PARTYNUMBER | \> | msdyn\_partynumber
-OPERATINGUNITTYPE | \>\> | msdyn\_type
-
-### <a name="legal-entity"></a>Firma
-
-Pole źródłowe | Typ mapy | Pole docelowe
----|---|---
-NAMEALIAS | \> | msdyn\_namealias
-LANGUAGEID | \> | msdyn\_languageid
-NAZWA | \> | msdyn\_name
-PARTYNUMBER | \> | msdyn\_partynumber
-brak | \>\> | msdyn\_type
-LEGALENTITYID | \> | msdyn\_companycode
-
-## <a name="company"></a>Firma
-
-Zapewnia dwukierunkową synchronizację informacji podmiotu prawnego (firmy) między Finance and Operations a innymi aplikacjami Dynamics 365.
-
-<!-- ![architecture image](media/dual-write-company.png) -->
-
-Pole źródłowe | Typ mapy | Pole docelowe
----|---|---
-NAZWA | = | cdm\_name
-LEGALENTITYID | = | cdm\_companycode

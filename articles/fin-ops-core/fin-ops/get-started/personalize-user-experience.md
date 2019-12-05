@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 124609041163bbcaf1b86a6964fa3f56fcd8f755
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: d3cf2b82470887ee617704b72e47a53d299911e3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658767"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811538"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -112,10 +112,7 @@ Następujące narzędzia są dostępne na pasku narzędzi **Personalizacja**:
 
 - Użyj narzędzia **Wybierz**, aby wybrać i zmienić właściwości elementu. Aby skorzystać z tego narzędzia, należy zaznaczyć przycisk **Wybierz** na pasku narzędzi, a następnie wybrać żądany element. Pojawi się okno właściwości elementu, w którym można zmienić dowolne właściwości tego elementu. Można powtórzyć ten proces dla innych elementów, które można personalizować na stronie. Należy pamiętać, że niektóre właściwości personalizacji mogą być niedostępne w niektórych scenariuszach. Na przykład nie można zamknąć pola, które jest wymagane.
 - Użyj narzędzia **Ukryj**, aby ukryć element na tej stronie. Aby skorzystać z tego narzędzia, należy zaznaczyć przycisk **Ukryj** na pasku narzędzi, a następnie wybrać element do ukrycia. Używając narzędzia **Ukryj** w zacieniowanym kontenerze zostaną pokazane wszystkie elementy, które są obecnie ukryte. Można wówczas wyświetlić element, zaznaczając go. Aby zobaczyć, jak strona będzie wyglądała po ukryciu elementów, przełącz się na inne narzędzie do personalizacji.
-
-    Można ukrywać wymagane pola i sekcje zawierające pola wymagane. W ten sposó pozwala to utworzyć uproszczone środowisko, w którym nie są wyświetlane wymagane pola o wartościach ustawianych domyślnie przez logikę biznesową. Ukryte pola wymagane staną się tymczasowo widoczne, jeśli są puste, gdy użytkownik spróbuje zapisać stronę.
-
-- Wybierz narzędzie **Dodaj pole**, aby dodać pole do strony. Korzystając z tego narzędzia, można dodawać tylko pola, które są częścią definicji strony. Aby uzyskać informacje o tworzeniu nowych pól, które nie są częścią bieżącej definicji strony, zobacz [Pola niestandardowe](user-defined-fields.md). Po wybraniu przycisku **Dodaj pole** na pasku narzędzi należy najpierw zaznaczyć grupę lub obszar, gdzie chcesz dodać pole. W oknie dialogowym zostanie wyświetlona lista pól powiązanych z wybraną grupą lub obszarem. W oknie dialogowym zaznacz jedno lub więcej pól, które mają zostać dodane, a następnie kliknij opcję **Wstaw**. Aby usunąć pole, które zostało wcześniej dodane, należy powtórzyć proces, ale należy usunąć zaznaczenie tego pola w oknie dialogowym.
+- Wybierz narzędzie **Dodaj pole**, aby dodać pole do strony. Korzystając z tego narzędzia, można dodawać tylko pola, które są częścią definicji strony. Aby uzyskać informacje o tworzeniu nowych pól, które nie są częścią bieżącej definicji strony, zobacz [Tworzenie pól niestandardowych i praca z nimi](user-defined-fields.md). Po wybraniu przycisku **Dodaj pole** na pasku narzędzi należy najpierw zaznaczyć grupę lub obszar, gdzie chcesz dodać pole. W oknie dialogowym zostanie wyświetlona lista pól powiązanych z wybraną grupą lub obszarem. W oknie dialogowym zaznacz jedno lub więcej pól, które mają zostać dodane, a następnie kliknij opcję **Wstaw**. Aby usunąć pole, które zostało wcześniej dodane, należy powtórzyć proces, ale należy usunąć zaznaczenie tego pola w oknie dialogowym.
 - Użyj narzędzia **Przenieś**, aby przenieść element w inne miejsce w bieżącej grupie elementów. Nie można przenieść elementu poza jego grupę nadrzędną. Aby skorzystać z tego narzędzia, należy zaznaczyć przycisk **Przenieś** na pasku narzędzi, a następnie wybrać element do przeniesienia. Po wybraniu elementu aplikacja określa lokalizację, dokąd można przenieść element. Te lokalizacje są nazywane *strefami upuszczania*. Podczas przeciągania elementu w granicach bieżącej grupy każda sfera upuszczania jest wyświetlana za pomocą kolorowej, pogrubionej linii obok obszaru, w którym można upuścić element.
 - Użyj narzędzia **Pomiń**, aby usunąć element z sekwencji tabulacji na stronie. Po wybraniu przycisku **Pomiń** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które zostały pominięte. Można interaktywnie usunąć lub dodać pola do sekwencji kart.
 - Użyj narzędzia **Pokaż w nagłówku**, aby wyświetlić pole w sekcji podsumowania skróconej karty. Po wybraniu przycisku **Pokaż w nagłówku** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie pola, które wybrano jako pola podsumowania. Można dodać w interaktywny sposób pola do podsumowania skróconej karty lub je wybrać, by je z niego usunąć.

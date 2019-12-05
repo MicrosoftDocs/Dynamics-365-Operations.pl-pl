@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 0588ad24cb28a32557361e1a2e5391502a8b46d7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250698"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814268"
 ---
 # <a name="master-planning-home-page"></a>Planowanie główne — strona główna
 
@@ -39,9 +39,9 @@ Planowanie główne wykorzystuje te informacje do obliczania wymagań i generowa
 
 Dostępne są trzy główne procesy planowania:
 
--  **Planowanie główne** — plan główny oblicza zapotrzebowania netto. Jest on oparty na rzeczywistych bieżących zamówieniach i umożliwia firmom kontrolowanie uzupełniania zapasów w perspektywie krótkoterminowej, z dnia na dzień. Jest on określany również mianem *planu zapotrzebowania netto*. Aby uzyskać więcej informacji, zobacz [Planowanie główne](master-plans.md). 
+-  **Planowanie główne** — plan główny oblicza zapotrzebowania netto. Jest on oparty na rzeczywistych bieżących zamówieniach i umożliwia firmom kontrolowanie uzupełniania zapasów w perspektywie krótkoterminowej, z dnia na dzień. Jest on określany również mianem *planu zapotrzebowania netto*. Aby uzyskać więcej informacji, zobacz [Omówienie planów głównych](master-plans.md). 
 
--  **Planowanie prognozy** — harmonogram prognozy oblicza zapotrzebowania brutto. Jest on oparty na przyszłych prognozach i umożliwia firmom długoterminowe planowanie materiałów i zdolności produkcyjnych. Aby uzyskać więcej informacji, zobacz [Planowanie prognozy](introduction-demand-forecasting.md). 
+-  **Planowanie prognozy** — harmonogram prognozy oblicza zapotrzebowania brutto. Jest on oparty na przyszłych prognozach i umożliwia firmom długoterminowe planowanie materiałów i zdolności produkcyjnych. Aby uzyskać więcej informacji, zobacz [Omówienie prognozowania popytu](introduction-demand-forecasting.md). 
 
 -  **Międzyfirmowe planowanie główne** — międzyfirmowy plan główny oblicza zapotrzebowania netto w różnych podmiotach prawnych. Łączy on popyt i dostawy między firmami nie tylko w perspektywie krótkoterminowego, ustalonego popytu i dostaw, ale także w perspektywie długoterminowej, zaplanowanej (jeszcze bez ustaleń). Aby uzyskać więcej informacji, zobacz [Międzyfirmowe planowanie główne](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (szkolenie elektroniczne) (wymagane konto CustomerSource). 
 
@@ -57,13 +57,13 @@ Poniższa mapa szkoleniowa przedstawia najważniejsze koncepcje i zadania tworz�
 
 ## <a name="quick-links"></a>Szybkie łącza
 
-- [Plany główne](master-plans.md)  
+- [Omówienie planów głównych](master-plans.md)  
 - [Generowanie planu z ograniczeniami](./tasks/constrained-plan.md)
 - [Tworzenie planu materiałów dla produktów towarzyszących](./tasks/create-material-plan-co-products.md)
-- [Planowanie główne a funkcjonalność wielooddziałowości](master-plan-multisite-functionality.md)
+- [Omówienie planowania głównego i funkcjonalności wielooddziałowości](master-plan-multisite-functionality.md)
 - [Tworzenie planu międzyfirmowego](./tasks/create-intercompany-plan.md)
-- [Podstawowe informacje o prognozowaniu popytu](introduction-demand-forecasting.md)
-- [Klucze redukcji](reduction-keys.md)
+- [Omówienie prognozowania popytu](introduction-demand-forecasting.md)
+- [Klucze redukcji prognozy](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
