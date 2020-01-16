@@ -8,7 +8,9 @@
           href: index.md
         - name: Nowości i zmiany
           items:
-            - name: Funkcje w wersji zapoznawczej w aktualizacji Platform update 31 (styczeń 2020)
+            - name: Funkcje w wersji zapoznawczej w aktualizacji Platform update 32 (luty 2020)
+              href: get-started/whats-new-platform-update-32.md
+            - name: Aktualizacja Platform update 31 (styczeń 2020)
               href: get-started/whats-new-platform-update-31.md
             - name: Aktualizacja Platform update 30 (listopad 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
@@ -34,6 +36,10 @@
               href: ../fin-ops/get-started/whats-new-platform-update-20.md
             - name: Aktualizacja Platform update 15 (marzec 2018)
               href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Nowości i zmiany w poprzednich wersjach
+              items:
+                - name: Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna
+                  href: ../fin-ops/get-started/whats-new-changed.md
         - name: Zdarzenia biznesowe
           items:
             - name: Omówienie zdarzeń biznesowych
@@ -410,7 +416,7 @@
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: Integracja PowerBI.com z lokalnymi środowiskami
                   href: analytics/entity-store-on-prem.md
-                - name: Konfigurowanie zwrotnych serwerów proxy dla środowisk lokalnych
+                - name: Konfigurowanie serwerów proxy dla środowisk lokalnych
                   href: deployment/onprem-reverseproxy.md
                 - name: Stosowanie aktualizacji do wdrożenia lokalnego
                   href: deployment/apply-updates-on-premises.md
@@ -926,6 +932,8 @@
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Znane problemy
                   href: lifecycle-services/known-issues.md
+                - name: Usunięte lub przestarzałe funkcje usługi Lifecycle Services (LCS)
+                  href: lifecycle-services/removed-deprecated-features.md
             - name: Przewodnik użytkownika usługi Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
             - name: Narzędzie do szacowania zapotrzebowania na subskrypcje

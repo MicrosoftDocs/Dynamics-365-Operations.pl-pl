@@ -46,7 +46,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/retail/toc.json
                 - name: Wdrożenie w chmurze
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/retail/toc.json
-                - name: Wymagania systemowe dotyczące wdrożeń w chmurze
+                - name: Wymagania systemowe dla składników klienta Retail
                   href: get-started/system-requirements.md
                 - name: Wdrożenie lokalne
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/retail/toc.json
@@ -62,20 +62,14 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/retail/toc.json
             - name: Nowości i zmiany
               items:
-                - name: Funkcje w wersji zapoznawczej w rozwiązaniu Retail w wersji 10.0.7
+                - name: Rozwiązanie Retail w wersji 10.0.7
                   href: get-started/whats-new-10-0-7.md
                 - name: Rozwiązanie Retail w wersji 10.0.6
                   href: get-started/whats-new-10-0-6.md
-                - name: Rozwiązanie Retail w wersji 10.0.5
-                  href: get-started/whats-new-10-0-5.md
                 - name: Nowości i zmiany w poprzednich wersjach
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/retail/toc.json
-                    - name: Aplikacje Finance and Operations w wersji 10.0.5 (październik 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/retail/toc.json
-                    - name: Finance and Operations w wersji 10.0.4 (lipiec 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/retail/toc.json
                     - name: Finance and Operations Enterprise Edition 7.3
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/retail/toc.json
                 - name: Usunięte lub wycofane funkcje
@@ -788,11 +782,9 @@
               href: ../supply-chain/pim/product-information.md?toc=/dynamics365/retail/toc.json
             - name: Hierarchie handlu detalicznego
               href: retail-hierarchies.md
-            - name: Atrybuty i grupy atrybutów
+            - name: Zarządzanie atrybutami i grupami atrybutów
               href: attribute-attributegroups-lifecycle.md
-            - name: Tworzenie atrybutów i zarządzanie nimi
-              href: create-manage-attributes.md
-            - name: Konfigurowanie produktów sprzedaży
+            - name: Konfigurowanie produktów sprzedaży detalicznej
               href: set-up-retail-products.md
             - name: Tworzenie produktu
               href: ../supply-chain/pim/tasks/create-product.md?toc=/dynamics365/retail/toc.json
@@ -1146,7 +1138,9 @@
               items:
                 - name: Funkcje kasy
                   href: localizations/emea-swe-cash-registers.md
-                - name: Przykład do użycia w integracji aplikacji Retail POS z jednostkami kontrolnymi
+                - name: Przykładowa integracja jednostki kontrolnej dla Szwecji
+                  href: localizations/emea-swe-fi-sample.md
+                - name: Przykład do użycia w integracji aplikacji Retail POS z jednostkami kontrolnymi (starsze)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Zadania w aplikacji Retail
           items:
