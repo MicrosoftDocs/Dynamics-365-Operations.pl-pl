@@ -8,6 +8,12 @@
         - name: Nowości i zmiany w rozwiązaniu Talent
           href: whats-new.md
           items:
+            - name: 17 grudnia 2019 r.
+              href: whats-new-talent-december-17-2019.md
+            - name: 12 grudnia 2019 r.
+              href: whats-new-talent-december-12-2019.md
+            - name: 3 grudnia 2019 r.
+              href: whats-new-talent-december-3-2019.md
             - name: 19 listopada 2019 r.
               href: whats-new-talent-november-19-2019.md
             - name: 12 listopada 2019 r.
@@ -26,16 +32,16 @@
               href: whats-new-talent-september-17-2019.md
             - name: 10 września 2019 r.
               href: whats-new-talent-september-12-2019.md
-            - name: 27 sierpnia 2019 r.
-              href: whats-new-talent-august-28-2019.md
-            - name: 22 sierpnia 2019 r.
-              href: whats-new-talent-august-21-2019.md
-            - name: 13 sierpnia 2019 r.
-              href: whats-new-talent-august-15-2019.md
-            - name: 6 sierpnia 2019 r.
-              href: whats-new-talent-august-7-2019.md
             - name: Archiwum nowości z 2019 r.
               items:
+                - name: 27 sierpnia 2019 r.
+                  href: whats-new-talent-august-28-2019.md
+                - name: 22 sierpnia 2019 r.
+                  href: whats-new-talent-august-21-2019.md
+                - name: 13 sierpnia 2019 r.
+                  href: whats-new-talent-august-15-2019.md
+                - name: 6 sierpnia 2019 r.
+                  href: whats-new-talent-august-7-2019.md
                 - name: 30 lipca 2019 r.
                   href: whats-new-talent-july-31-2019.md
                 - name: 23 lipca 2019 r.
@@ -134,32 +140,28 @@
           href: hr-copy-instance.md
         - name: Usuwanie środowisk rozwiązania Talent
           href: remove-talent-environment.md
-        - name: Inicjowanie obsługi aplikacji Onboard
+        - name: Zarządzanie funkcjami
+          href: access-preview-feature.md
+        - name: Ustanowienie aplikacji Onboard
           href: modular-app-tech-faq.md
-        - name: Osadzanie aplikacji PowerApps
+        - name: Osadzanie aplikacji Power Apps
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Aplikacja Core HR i usługa Common Data Service
+        - name: Jednostki Core HR w usłudze Common Data Service
           href: CoreHREntities.md
         - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Talent
           href: talent-support.md
     - name: Rekrutacja w organizacji z użyciem aplikacji Attract
       items:
-        - name: Która wersja aplikacji Attract?
+        - name: Wybór wersji aplikacji Attract
           href: attract-comprehensive-hiring.md
         - name: Funkcje i możliwości aplikacji Attract
           href: attract-overview.md
-        - name: Często zadawane pytania
-          items:
-            - name: Integracja z serwisem LinkedIn — często zadawane pytania
-              href: attract-linkedin-faq.md
         - name: Konfigurowanie ustawień systemu
           items:
             - name: Konfigurowanie informacji o firmie
               href: admin-settings-attract.md
             - name: Ustawianie uprawnień użytkownika
               href: security-attract.md
-            - name: Zarządzanie funkcjami
-              href: access-preview-feature.md
             - name: Konfigurowanie witryny kariery
               href: career-site.md
             - name: Włączanie integracji z aplikacją Broadbean
@@ -168,19 +170,21 @@
               href: attract-configure-email-settings.md
             - name: Konfigurowanie integracji z serwisem LinkedIn
               href: attract-admin-linkedin.md
+            - name: Integracja z serwisem LinkedIn — często zadawane pytania
+              href: attract-linkedin-faq.md
         - name: Tworzenie procesu rekrutacji
           items:
-            - name: Tworzenie szablonu procesu
+            - name: Tworzenie szablonu procesu rekrutacji
               href: process-templates-attract.md
-            - name: Działania w procesach rekrutacji
+            - name: Dodaj działania do procesu rekrutacji
               href: activities-attract.md
-            - name: Szablony wiadomości e-mail
+            - name: Tworzenie szablonów wiadomości e-mail
               href: email-templates.md
             - name: Korzystanie z raportów analitycznych
               href: analytic-reports.md
         - name: Tworzenie i publikowanie ofert pracy
           items:
-            - name: Tworzenie funkcji
+            - name: Tworzenie oferty pracy
               href: creating-jobs-attract.md
             - name: Publikowanie ofert pracy w serwisie LinkedIn
               href: attract-post-jobs-to-linkedin.md
@@ -197,10 +201,10 @@
             - name: Śledzenie źródeł kandydatów
               href: source-tracking.md
             - name: Inteligentne rekomendacje
-              href: Intelligent-Recommendations.md
+              href: intelligent-recommendations.md
         - name: Konfigurowanie rozmów kwalifikacyjnych
           items:
-            - name: Planowanie rozmów kwalifikacyjnych i informacji zwrotnych
+            - name: Harmonogram rozmów kwalifikacyjnych
               href: interview-scheduling-feedback.md
         - name: Składanie oferty
           items:
@@ -433,7 +437,7 @@
       items:
         - name: Osadzona usługa Power BI w obszarach roboczych
           href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Rozszerzanie rozwiązania Talent przy użyciu usług PowerApps i Microsoft Flow — przykładowe scenariusze
+        - name: Rozszerz aplikację Talent o usługi Power Apps i Power Automate
           href: extensibility-examples.md
         - name: Aplikacja mobilna
           items:
@@ -443,8 +447,6 @@
                   href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Mobilny obszar roboczy Mój zespół
                   href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Publikowanie mobilnych obszarów roboczych
-              href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Śledzenie zmian w danych dotyczących rekrutacji
           href: process-auditing.md
         - name: Możliwości rozszerzania w aplikacji Attract

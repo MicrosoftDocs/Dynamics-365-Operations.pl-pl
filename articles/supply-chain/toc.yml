@@ -62,7 +62,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Nowości i zmiany
               items:
-                - name: Funkcje w wersji zapoznawczej w rozwiązaniu Supply Chain Management w wersji 10.0.7 (grudzień 2019)
+                - name: Supply Chain Management w wersji 10.0.7 (grudzień 2019)
                   href: get-started/whats-new-scm-10-0-7.md
                 - name: Supply Chain Management w wersji 10.0.6 (listopad 2019)
                   href: get-started/whats-new-scm-10-0-6.md
@@ -70,10 +70,6 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aplikacje Finance and Operations w wersji 10.0.5 (październik 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Finance and Operations w wersji 10.0.4 (lipiec 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Finance and Operations Enterprise Edition 7.3
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Usunięte lub wycofane funkcje
@@ -264,7 +260,7 @@
                 - name: Tworzenie składników majątku na podstawie zamówień zakupu
                   href: asset-management/objects/create-objects-based-on-purchase-orders.md
                 - name: BOM składnika majątku
-                  href: /asset-management/objects/object-bom.md
+                  href: asset-management/objects/object-bom.md
                 - name: Historia zdarzeń składnika majątku
                   href: asset-management/objects/object-timeline.md
                 - name: Widok składnika majątku
@@ -592,7 +588,7 @@
                 - name: Analiza kosztów zlecenia produkcyjnego
                   href: cost-management/production-order-cost-analysis.md
                 - name: Szacowanie kosztów zlecenia produkcyjnego
-                  href: /cost-management/production-order-cost-estimation.md
+                  href: cost-management/production-order-cost-estimation.md
                 - name: Wyświetlanie aktualnego stanu PWT na zleceniu produkcyjnym
                   href: cost-management/tasks/view-current-wip-status-production-order.md
                 - name: 'Porównywanie aktywnych, szacowanych i zrealizowanych kosztów związanych ze zleceniem produkcyjnym'
@@ -1099,6 +1095,8 @@
                   href: master-planning/safety-stock-replenishment.md
                 - name: Opóźnienia
                   href: master-planning/delays.md
+                - name: Anulowanie zadania planowania głównego
+                  href: master-planning/cancel-master-planning-job.md
                 - name: Korzystanie z funkcji śledzenia rozłożenia
                   href: master-planning/trace-explosion.md
                 - name: Komunikaty akcji
@@ -1515,6 +1513,8 @@
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Tworzenie zwolnionego produktu dla jednej firmy
                   href: pim/tasks/create-released-product-single-company.md
+                - name: Użycie jednostek danych
+                  href: pim/data-entities.md
                 - name: Stan cyklu życia produktu
                   items:
                     - name: Omówienie stanów cyklu życia produktu
@@ -2349,6 +2349,10 @@
                   href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                 - name: Anulowanie obsługi wyjątków dotyczących pracy magazynowej
                   href: warehousing/cancel-warehouse-work.md
+                - name: Pobieranie dla grupy sterowane przez system
+                  href: warehousing/system-directed-cluster-pick.md
+                - name: Grupowanie wierszy pobrania
+                  href: warehousing/pick-line-grouping.md
             - name: Inwentaryzacja
               items:
                 - name: Kody przyczyn zliczania zapasów
