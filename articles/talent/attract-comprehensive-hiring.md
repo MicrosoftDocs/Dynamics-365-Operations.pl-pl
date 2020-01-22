@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 701ce0d710c20deb793534581c276edf02426a4b
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 380f72f564d800d3f5b2e9f8fd3a5f8e8c9e81d5
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833168"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898555"
 ---
 # <a name="choose-a-version-of-attract"></a>Którą wersję aplikacji Attract wybrać?
 
-[[!include [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Wersja programu Microsoft Dynamics 365 Talent: Attract odpowiednia dla Ciebie zależy od rozmiaru i wymagań Twojej organizacji. Podstawowa wersja Attract zawiera podzbiór funkcji przeznaczonych dla mniejszych zespołów lub organizacji, w których podstawowym użytkownikiem jest menedżer zatrudniający. Użytkownik może rozpocząć korzystanie z podstawowej wersji Attract z jedną lub kilkoma licencjami.
 

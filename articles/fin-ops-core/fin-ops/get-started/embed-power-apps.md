@@ -3,7 +3,7 @@ title: Osadzone Power Apps
 description: W tym temacie opisano sposób osadzania aplikacji Power Apps na kliencie w celu rozszerzenia funkcjonalności produktu.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 755a30f89725ca0a7e1c14252984c617d6ba280e
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 8b5e64cb9ba916f9cbd628703394318b4044867b
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824500"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870248"
 ---
 # <a name="embed-microsoft-power-apps"></a>Osadzone Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Poniższe instrukcje przedstawiają sposoby osadzania PowerApp w kliencie intern
 
     - Pole **Nazwa** wskazuje tekst, jaki będzie wyświetlany na przycisku lub karcie zawierającej osadzoną PowerApp. Często w tym polu warto powtórzyć nazwę PowerApp.
     - **Identyfikator aplikacji** to identyfikator GUID PowerApp, która ma być osadzona. Aby pobrać tę wartość, odszukaj PowerApp na stronie [web.powerapps.com](https://web.powerapps.com), a następnie odszukaj pole **Identyfikator aplikacji** w obszarze **Szczegóły**.
-    - W obszarze **Dane wejściowe dla PowerApp** można opcjonalnie wybrać pole zawierające dane, które mają być przekazywane do PowerApp jako dane wejściowe. Zobacz w dalszej części tego tematu sekcję zatytułowaną [Kompilowanie PowerApp wykorzystującej dane z aplikacji Finance and Operations](#building-a-powerapp-that-leverages-data-sent-from-finance-and-operations-apps), gdzie dowiesz się dokładnie, jak PowerApp może uzyskiwać dostęp do danych wysyłanych z aplikacji Finance and Operations.
+    - W obszarze **Dane wejściowe dla PowerApp** można opcjonalnie wybrać pole zawierające dane, które mają być przekazywane do PowerApp jako dane wejściowe. Zobacz w dalszej części tego tematu sekcję zatytułowaną [Kompilowanie PowerApp wykorzystującej dane z aplikacji Finance and Operations](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps), gdzie dowiesz się dokładnie, jak PowerApp może uzyskiwać dostęp do danych wysyłanych z aplikacji Finance and Operations.
     - Wybierz wartość **Rozmiar aplikacji** pasującą do typu osadzanej PowerApp. Wybierz opcję **Ograniczona** dla Power Apps przeznaczonych na urządzenia przenośne, a opcję **Rozbudowana** dla Power Apps przeznaczonych na tablety. To zagwarantuje przeznaczenie wystarczającej ilości miejsca na wbudowaną PowerApp.
     - Na skróconej karcie **Firmy** można wybrać firmy, dla których PowerApp będzie dostępna. Domyślnie PowerApp jest wyświetlana we wszystkich firmach.
 
@@ -101,7 +101,7 @@ Wykonaj następujące czynności, aby edytować konfigurację osadzonej PowerApp
 
 Po osadzeniu PowerApp na stronie istnieją dwa sposoby jej usunięcia w razie potrzeby:
 
-- Przejdź do okienka **Edytuj PowerApp** przy użyciu instrukcji zawartych w sekcji [Edytowanie osadzonej PowerApp](#editing-an-embedded-powerapp) wcześniej w tym temacie. Upewnij się, że w okienku są wyświetlane informacje dotyczące osadzonej PowerApp, którą chcesz usunąć, a następnie kliknij przycisk **Usuń**.
+- Przejdź do okienka **Edytuj PowerApp** przy użyciu instrukcji zawartych w sekcji [Edytowanie osadzonej PowerApp](#editing-an-embedded-power-app) wcześniej w tym temacie. Upewnij się, że w okienku są wyświetlane informacje dotyczące osadzonej PowerApp, którą chcesz usunąć, a następnie kliknij przycisk **Usuń**.
 - Ponieważ osadzona PowerApp jest zapisywana jako dane personalizacji, wyczyszczenie personalizacji strony spowoduje również usunięcie wszelkich osadzonych Power Apps znajdujących się na tej stronie. Należy zauważyć, że wyczyszczenie personalizacji strony jest trwałe i nie można go cofnąć. Aby usunąć personalizacje ze strony, kliknij przycisk **Opcje**, a następnie wybierz opcję **Personalizuj ten formularz**. W menu **Zarządzaj** naciśnij przycisk **Wyczyść**. Po odświeżeniu przeglądarki wszystkie poprzednie personalizacje tej strony zostaną usunięte. W temacie [Personalizuj środowiska użytkownika](personalize-user-experience.md) znajdziesz więcej informacji o optymalizowaniu stron za pomocą personalizacji.
 
 ## <a name="appendix"></a>Dodatek

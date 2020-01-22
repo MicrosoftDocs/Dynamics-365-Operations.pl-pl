@@ -3,7 +3,7 @@ title: Zarządzanie cenami w sprzedaży detalicznej
 description: W tym temacie opisano pojęcia związane z tworzeniem i zarządzaniem cenami sprzedaży w Dynamics 365 Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 081fadf0c120eba50af9e6c396fb3e492051bb3c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: d8c6f8d7d368be8ffa192f8dee6b46a753b04cad
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025225"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934778"
 ---
 # <a name="retail-sales-price-management"></a>Zarządzanie cenami sprzedaży w aplikacji Retail
 
@@ -221,11 +221,11 @@ Jeden aparat kalkulacji cen jest używany do obliczania cen detalicznych we wszy
 
 Ceny detaliczne są przeznaczona do używania z jednostkami handlu detalicznego, a nie jednostkami niezwiązanymi z handlem detalicznym. W szczególności służą do ustawiania cen w sklepach, a nie w magazynach.
 
-aparat kalkulacji cen detalicznych nie obsługuje następujących funkcji cen:
+Aparat kalkulacji cen detalicznych **nie obsługuje** następujących funkcji cen:
 
-- Ustawianie ceny za pomocą wymiarów magazynowania Oddział i Magazyn
-- Ceny oparte na atrybutach
-- Przekazywanie rabatów dostawcy
+- Ustawianie cen według wymiarów magazynowania typu Oddział lub Oddział i magazyn nie jest obsługiwane. Jeśli określisz tylko wymiar oddziału w umowach handlowych, ceny detaliczne zignorują oddział i zastosują umowę handlową do wszystkich oddziałów. Jeśli określisz oddział i magazyn, to zachowanie jest niezdefiniowane/niesprawdzone, ponieważ oczekuje się, że sprzedawcy detaliczni używają grup cenowych sklepu do kontrolowania cen dla każdego sklepu/magazynu.
+- Kalkulacja cen oparta na atrybutach nie jest obsługiwana.
+- Przekazywanie rabatu dostawcy nie jest obsługiwane.
 
 Ponadto **tylko** aparat kalkulacji cen detalicznych obsługuje następujące funkcje cen:
 

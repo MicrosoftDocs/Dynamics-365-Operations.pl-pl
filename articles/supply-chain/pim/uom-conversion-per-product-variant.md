@@ -3,12 +3,12 @@ title: Przeliczanie jednostki miary dla wariantów produktów
 description: W tym temacie wyjaśniono, jak skonfigurować przeliczanie jednostek miary dla wariantów produktu.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: josaw
@@ -17,34 +17,26 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 196b68db02867f8d864be8bcc593aa01f554f7c3
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c8181f0bda9b781a6c2b0feb0aba1beb51bfea65
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249455"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935106"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Przeliczanie jednostki miary dla wariantów produktów
 
 [!include [banner](../includes/banner.md)]
 
-[!include [pivate-preview](../includes/pivate-preview-banner.md)]
-
 W tym temacie wyjaśniono, jak skonfigurować przeliczanie jednostek miary dla wariantów produktu. Zawiera przykładową konfigurację.
 
 Ta funkcja umożliwia firmom definiowanie różnych konwersji jednostek między wariantami tego samego produktu. W tym temacie używany jest poniższy przykład. Firma sprzedaje T-shirty w rozmiarach Small, Medium, Large, and Extra-Large. T-shirt jest definiowany jako produkt, a różne rozmiary są definiowane jako warianty produktu. T-shirty są pakowane w pudełka po pięć T-shirtów z wyjątkiem rozmiaru Extra-Large, których w pudełku mieści się tylko cztery. Firma chce śledzić różne warianty T-shirtów w jednostce **Sztuki**, ale sprzedaży T-shirty w jednostkach **Pudełka**. Konwersja między jednostką magazynową i jednostką sprzedaży to 1 pudełko = 5 sztuk, z wyjątkiem wariantu Extra-Large, w którym to przypadku konwersja to 1 pudełko = 4 sztuki.
-
-## <a name="setup"></a>Konfiguracja
-
-Można skonfigurować parametry do używania funkcji produktów włączonych dla **Wszystkie procesy** lub tylko dla produktów włączonych dla **Procesów w magazynie** za pomocą **Włącz konwersację jednostek miary** na stronie **Parametry informacji o produkcie**.
 
 ### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Konfigurowanie produktu pod katem konwersji jednostek dla wariantu produktu
 
 Warianty produktów można tworzyć dla produktów **Podtyp produktu**: **Produkt główny**. Aby uzyskać więcej informacji, zobacz temat [Tworzenie produktu głównego](tasks/create-product-master.md).
 
 Funkcja nie jest włączona dla produktów, które są ustawiane dla procesów ilości efektywnej. 
-
-Podczas tworzenia produktu głównego włącz konwersję jednostkę miary za pomocą opcji **Włącz konwersje jednostki miary** na stronie **Szczegóły produktu**.
 
 Po utworzeniu produktu głównego z wariantami zwalnianych produktów można skonfigurować konwersje jednostek według wariantów. Element menu służący do otwierania strony konwersji jednostki można znaleźć w kontekście produktu lub wariantu produktu na następujących stronach.
 

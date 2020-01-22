@@ -3,7 +3,7 @@ title: Konfigurowanie zarządzania ofertami w aplikacji Attract
 description: W tym temacie opisano sposób konfigurowania zarządzania ofertami w Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/04/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: bc91a83afd5ce1627376685bcf612d6998ddbc02
+ms.sourcegitcommit: 5022d63a81c3715c9a3dcf2a68217bb6b17c7805
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832729"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890562"
 ---
 # <a name="set-up-offer-management-in-attract"></a>Konfigurowanie zarządzania ofertami w aplikacji Attract
 
@@ -45,9 +45,11 @@ Dane oferty to najmniejsza jednostka wewnątrz szablonu pakietu oferty. Typowa o
 
     >[!NOTE]
     > Na stronie **Dane oferty** znajdują się sekcje **Szczegóły kandydata** i **Szczegóły funkcji**. Aplikacja Attract oferuje kilka gotowych symboli zastępczych danych oferty.
-    
+    > 
     > Na stronie znajdują się sekcje porządkujące różne symbole zastępcze danych oferty w logiczne grupy. Te sekcje mogą pomóc zarządzać danymi oferty i wprowadzać dane podczas tworzenia oferty.
-
+    > 
+    > Aby utworzyć listę wartości dla symbolu zastępczego, przekaż arkusz kalkulacyjny programu Excel, który ma jedną kolumnę z symbolem zastępczym jako tytuł kolumny i listą opcji do wyborów w wierszach pod spodem. Jeśli ten sam symbol zastępczy odwołuje się do innego zestawu reguł danych, upewnij się, że mają one wspólny zestaw wartości.
+    
 1.  Aby utworzyć nową sekcję danych oferty, kliknij opcję **Dodaj sekcję** i nadaj sekcji unikatową nazwę.
 
 1.  Aby dodać symbole zastępcze danych oferty do dowolnej sekcji, kliknij przycisk **Dodaj dane oferty** i nadaj unikatową nazwę symbolowi zastępczemu.

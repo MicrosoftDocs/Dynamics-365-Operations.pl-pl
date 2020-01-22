@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 03853e1f80bd32c1dfe5cfcbcd77e79168f26249
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7e32f408e5c68a3422906347981c6fc4a4579daf
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812314"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915254"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Omówienie integracji fiskalnej dla kanałów modułu Retail
 
@@ -138,9 +138,14 @@ Następujące przykładowe integracje fiskalne są obecnie dostępne w zestawie 
 - [Przykładowa integracja drukarki fiskalnej (Polska)](emea-pol-fpi-sample.md)
 - [Przykład integracji usługi rejestracji fiskalnej (Austria)](emea-aut-fi-sample.md)
 - [Przykład integracji usługi rejestracji fiskalnej (Czechy)](emea-cze-fi-sample.md)
+- [Przykładowa integracja jednostki kontrolnej dla Szwecji](./emea-swe-fi-sample.md)
 
 Następujące funkcje integracji fiskalnej są także dostępne w zestawie SDK modułu Retail, ale obecnie nie używają schematu integracji fiskalnej. Migracja tej funkcji do schematu integracji fiskalnej jest planowana w późniejszych aktualizacjach.
 
-- [Funkcje kasy dla Francji](emea-fra-cash-registers.md)
-- [Funkcje kasy dla Norwegii](emea-nor-cash-registers.md)
-- [Próbki dla integracji programu Retail POS z jednostkami kontrolnymi dla Szwecji](./retail-sdk-control-unit-sample.md)
+
+- [Podpis cyfrowy dla Francji](emea-fra-cash-registers.md)
+- [Podpis cyfrowy dla Norwegii](emea-nor-cash-registers.md)
+
+Następujące starsze funkcje integracji fiskalnej, które są dostępne w zestawie Retail SDK, nie używają platformy integracji fiskalnej i zostaną wycofane w późniejszych aktualizacjach:
+
+- [Przykładowa integracja jednostki kontrolnej dla Szwecji (starsza wersja)](./retail-sdk-control-unit-sample.md)

@@ -3,7 +3,7 @@ title: Porównanie funkcji w chmurze i lokalnych
 description: Ten temat przedstawia funkcje obsługiwane w chmurze i lokalnie.
 author: sericks007
 manager: AnnBe
-ms.date: 10/11/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 8fa5ff0de4e97d5dc178581f721f3a6ea72fc974
-ms.sourcegitcommit: 70c6257bd6833de3e8de34d9a7561088194e59cc
+ms.openlocfilehash: 7837fbaaffdbd61a1adce1698800017bf4f6a018
+ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2573937"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935394"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Porównanie funkcji w chmurze i lokalnych
 
@@ -48,7 +48,7 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 | Integracja danych i zarządzanie nimi      |                                                                                           | Tak       | Tak             |
 |                                      | Rozszerzenie oparte na konfiguracji                                                            | Tak       | Nr              |
 |                                      | Eksport danych do własnego magazynu danych                                                    | Tak       | Tak             |
-|                                      | Włączenie eksportu aktualizacji przyrostowych do jednostki danych                                 | Tak       | Nr              |
+|                                      | Włączenie eksportu aktualizacji przyrostowych do jednostki danych                                 | Tak       | Tak              |
 |                                      | Integracje danych                                                                         | Tak       | Tak             |
 | Zarządzanie dokumentami                  |                                                                                           | Tak       | Tak             |
 | Zarządzanie finansami                 |                                                                                           | Tak       | Tak             |
@@ -148,7 +148,7 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 
 ## <a name="dynamics-365-retail"></a>Rozwiązanie Dynamics 365 Retail 
 
-Aby wyświetlić listę funkcji handlu detalicznego dostępnych we wdrożeniach lokalnych, zobacz [Funkcje handlu detalicznego dostępne we wdrożeniach lokalnych](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/PeterRFriis-patch-1/articles/retail/retail-onprem.md).
+Aby wyświetlić listę funkcji handlu detalicznego dostępnych we wdrożeniach lokalnych, zobacz [Funkcje handlu detalicznego dostępne we wdrożeniach lokalnych](../../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
 

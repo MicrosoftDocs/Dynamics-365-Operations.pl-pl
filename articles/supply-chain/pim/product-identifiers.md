@@ -3,12 +3,12 @@ title: Identyfikatory produktów
 description: Ten temat zawiera informacje o różnych typach identyfikatorów produktów i wyjaśnia, jak można dodawać identyfikatory produktów w danych produktów.
 author: cvocph
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductEntityIdentifierCode
+ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250608"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934893"
 ---
 # <a name="product-identifiers"></a>Identyfikatory produktów 
 
@@ -43,6 +43,9 @@ W wielu przypadkach numer produktu nie jest pierwotnie tworzony w Dynamics 365 S
 Podczas wdrażania programu Supply Chain Management należy zwrócić szczególną uwagę na strategię numerowania produktów. Dobry system numerowania usprawnia logistykę i pomaga uniknąć błędów. Dobry identyfikator produktu zawiera maksymalnie 15 znaków. Najlepiej, aby miał nie więcej niż 10 znaków i zawierał maksymalnie 5 znaków klasyfikujących. Można również używać aliasów do szybkiego wyszukiwania. Alias jest dodatkową nazwę reprezentującą klasyfikacje produktu.
 
 Jeśli jest używany Common Data Service, numer produktu w module Supply Chain Management jest także numerem produktu w formularzu Common Data Service. Warianty produktów są synchronizowane z usługą Common Data Service jako odrębne produkty.
+
+> [!NOTE]
+> Numer produktu nie może zaczynać się od „%”.
 
 ## <a name="item-number-and-product-dimensions"></a>Numer towaru i wymiary produktu
 

@@ -1,9 +1,9 @@
 ---
 title: Zwiększanie wydajności planowania głównego
-description: W tym temacie objaśniono różne opcje, które mogą pomóc w poprawie wydajności planowania głównego i rozwiązywaniu problemów.
+description: W tym temacie objaśniono różne opcje, które mogą pomóc w poprawie wydajności planowania głównego lub rozwiązywaniu problemów.
 author: t-benebo
 manager: AnnBe
-ms.date: 05/31/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,39 +19,39 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: f0d075bbcc8a6671054f227a13c75ca7fb1e954f
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 7e8c1d7ee51eb6e335554a01fd050bd80f2a070d
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1631550"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915231"
 ---
 # <a name="improve-master-planning-performance"></a>Zwiększanie wydajności planowania głównego
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-W tym temacie objaśniono różne opcje, które mogą pomóc w poprawie wydajności planowania głównego i rozwiązywaniu problemów. Zawiera informacje o parametrach i ustawieniach oraz o zalecanych konfiguracjach i akcjach. Zawiera także podsumowanie wszystkich ważnych parametrów, które należy wziąć pod uwagę w przypadku długotrwałych zadań planowania głównego.
+W tym temacie objaśniono różne opcje, które mogą pomóc w poprawie wydajności planowania głównego lub rozwiązywaniu problemów. Zawiera informacje o parametrach i ustawieniach oraz zalecane konfiguracje i akcje. Zawiera on także podsumowanie wszystkich ważnych parametrów, które należy wziąć pod uwagę w przypadku długotrwałych zadań planowania głównego.
 
 Ten temat jest przeznaczony dla administratorów systemu lub użytkowników systemów informatycznych, którzy mają możliwość rozwiązania problemu. Jest on również przeznaczony do planowania produkcji lub dostaw, ponieważ zawiera informacje o parametrach związanych z wymaganiami dotyczącymi planowania biznesowego. 
 
-## <a name="parameters-that-are-related-to-master-planning-performance"></a>Parametry związane z wydajnością planowania głównego
+## <a name="parameters-related-to-master-planning-performance"></a>Parametry związane z wydajnością planowania głównego
 
 Różne parametry wpływają na czas pracy planowania głównego i powinny być brane pod uwagę.
 
 ### <a name="number-of-threads"></a>Liczba wątków
 
-Parametr **liczba wątków** umożliwia dostosowanie procesu planowania głównego w celu lepszego dostosowania go do określonego zbioru danych. Określa łączną liczbę wątków, które zostaną użyte w celu uruchomienia planowania głównego. Powoduje to paralelizację procesu planowania głównego, a ta paralelizacja pomaga w zmniejszeniu czasu działania systemu. 
+Parametr **Liczba wątków** umożliwia dostosowanie procesu planowania głównego w celu zwiększenia wydajności określonego zbioru danych. Ten parametr określa łączną liczbę wątków, które zostaną użyte w celu uruchomienia planowania głównego. Powoduje to paralelizację procesu planowania głównego, która pomaga w zmniejszeniu czasu działania systemu. 
 
 Można określić paramentr **Liczby wątków** w oknie dialogowym **Uruchom planowanie główne**. By otworzyć to okno dialogowe, przejdź do **Planowania głównego \> planowania głównego \> Uruchom \> Planowania głównego** lub wybierz opcję **Uruchom** w obszarze roboczym **Planowanie główne**. Aby określić najlepszą wartość tego parametru, należy przeprowadzić metodę prób i błędów. Można jednak obliczać wartość początkową przy użyciu następujących formuł:
 
-- **Jeśli używany jest przemysł produkcyjny:** liczba wątków = Liczba zamówień planowanych ÷ 1000
-- **W przeciwnym razie:** liczba wątków = liczba pozycji ÷ 1000
+- **Jeśli używany jest przemysł produkcyjny:** (Liczba wątków) = (Liczba zamówień planowanych ÷ 1000)
+- **W przeciwnym razie:** (Liczba wątków) = (Liczba pozycji ÷ 1000)
 
 Liczba pomocników używanych podczas planowania głównego musi być mniejsza lub równa maksymalnej liczbie wątków, które są dozwolone na serwerze przetwarzania wsadowego. Jeśli liczba pomocników przekracza liczbę wątków na serwerze przetwarzania wsadowego, dodatkowe wątki nie wykonują żadnej pracy.
 
 > [!NOTE]
-> Ustawienie **0** (zero) dla parametru **liczba wątków** wydłuża czas wykonywania planowania głównego. Dlatego zalecamy, aby zawsze określić wartość większą niż 0.
+> Ustawienie parametru **Liczba wątków** na **0** (zero) wydłuża czas wykonywania planowania głównego. Dlatego zalecamy, aby zawsze określić wartość większą niż 0.
 
 ### <a name="number-of-tasks-in-helper-task-bundle"></a>Liczba zadań w pakiecie zadań wątku
 
@@ -59,7 +59,7 @@ Zmiana **liczby zadań w ustawieniu pakiet** zadania (czyli rozmiaru pakietu) mo
 
 **Liczbę zadań w parametrze pakiet zadań** można określić w sekcji **Wydajność** na karcie **Ogólne** na stronie **Parametry planowania głównego** (**planowanie główne \> Ustawienia \> Parametry planowania głównego**). Najlepsza wartość tego parametru zależy od danych użytkownika. Dlatego zalecamy rozpoczęcie od wartości **1**, a następnie użycie metody prób i błędów w celu określenia najlepszej wartości konfiguracji.
 
-Zaleca się, aby na ogół zwiększyć liczbę zadań, gdy liczba towarów jest bardzo duża (w setkach tysięcy). W przeciwnym razie należy zmniejszyć liczbę zadań. W odniesieniu do następujących konkretnych branż należy wziąć pod uwagę następujące zagadnienia:
+Zaleca się, aby na ogół zwiększyć liczbę zadań, gdy liczba towarów jest bardzo duża (w setkach tysięcy). W przeciwnym razie należy zmniejszyć liczbę zadań. W odniesieniu do następujących konkretnych branż należy wziąć pod uwagę następujące rekomendacje:
 
 - W przemyśle detalicznym i dystrybucji, gdzie jest wiele niezależnych towarów, należy stosować wiele pomocników, ponieważ nie ma zależności między elementami. 
 - W przemyśle produkcyjnym, w którym istnieje wiele BOM i współużytkowanych podskładników, należy zmniejszyć liczbę pomocników, ponieważ zależności między towarami mogą powodować czas oczekiwania.
@@ -85,9 +85,9 @@ Trudno przewidzieć, która opcja będzie lepsza, ponieważ każdy przypadek zal
 
 **Liczba lub zamówienia w parametrze pakietu określającego pakiet** określa łączną liczbę zamówień, które będą przetwarzane w danym momencie przez poszczególne wątki/partie. Powoduje to paralelizację procesu autoakceptowania.
 
-**Liczbę zamówień w pakiecie określającym** można określić w sekcji **Wydajność** na karcie **Ogólne** na stronie **Parametry planowania głównego** (**planowanie główne \> Ustawienia \> Parametry planowania głównego**). Paralelizacja procesu autoustalania jest oparta na zamówieniach, które muszą zostać przetworzone razem. Dlatego jeśli ten parametr ma wartość **50**, na przykład każdy wątek lub zadanie wsadowe będzie pobierać 50 zamówień w tym samym czasie i przetwarzać je razem. W celu znalezienia najlepszej wartości zalecamy użycia metody prób i błędów. Można jednak obliczać wartość początkową przy użyciu następującej formuły:
+**Liczbę zamówień w pakiecie określającym** można określić w sekcji **Wydajność** na karcie **Ogólne** na stronie **Parametry planowania głównego** (**planowanie główne \> Ustawienia \> Parametry planowania głównego**). Paralelizacja procesu autoustalania jest oparta na zamówieniach, które muszą zostać przetworzone razem. Na przykład jeśli ten parametr ma wartość **50**, na przykład każdy wątek lub zadanie wsadowe będzie pobierać 50 zamówień w tym samym czasie i przetwarzać je razem. W celu znalezienia najlepszej wartości zalecamy użycia metody prób i błędów. Można jednak obliczać wartość początkową przy użyciu następującej formuły:
 
-Liczba zamówień na pakiet = liczba pozycji na żądanie ÷ liczba wątków
+(Liczba zamówień na pakiet) = (Liczba pozycji na żądanie ÷ liczba wątków)
 
 > [!NOTE]
 > Jeśli **Liczba zamówień w parametrze pakietu określającego** ustawiona jest na **0** (zero), to nie wystąpi żadna paralelizacja procesu autoakceptowania. Cały proces zostanie uruchomiony w jednym zadaniu wsadowym i będzie miał skumulowany czas pracy. Z tego powodu czas trwania planowania głównego zostanie zwiększony. Dlatego zalecamy ustawienie tego parametru na wartość większą niż **0** (zero).
@@ -98,7 +98,7 @@ Horyzonty czasowe określają, jak daleko w przyszłości obliczenia i inne zapo
 
 ### <a name="actions"></a>Akcje
 
-Wśród horyzontów czasowych można również znaleźć parametr **Komunikatu akcji**. Obliczanie komunikatów akcji powoduje dłuższy czas pracy planowania głównego. Jeśli komunikaty akcji nie są regularnie analizowane i stosowane (codziennie, co tydzień itd.), należy rozważyć wyłączenie obliczeń podczas przebiegu planowania głównego Aby wyłączyć obliczanie, na stronie **Plany główne** (**Planowanie główne \> Konfiguracja \> Plany \> Plany główne**) ustaw wartość w polu horyzont czasowy **komunikatu akcji** na **0** (zero) dla planu głównego, który jest uruchomiony. Upewnij się również, że ustawienie **Komunikatu akcji** jest wyłączone dla wszystkich grup zapotrzebowania.
+Wśród horyzontów czasowych można również znaleźć parametr **Komunikatu akcji**. Obliczanie komunikatów akcji powoduje dłuższy czas pracy planowania głównego. Jeśli komunikaty akcji nie są regularnie analizowane i stosowane (codziennie, co tydzień itd.), należy rozważyć wyłączenie obliczeń podczas przebiegu planowania głównego Aby wyłączyć obliczanie, na stronie **Plany główne** (**Planowanie główne \> Ustawienia \> Plany \> Plany główne**) ustaw wartość w polu horyzontu czasowego **komunikatu akcji** na **0** (zero). Upewnij się również, że ustawienie **Komunikatu akcji** jest wyłączone dla wszystkich grup zapotrzebowania.
 
 ### <a name="futures"></a>Prognozy
 
@@ -110,16 +110,16 @@ Planując planowanie główne, nie należy jednocześnie planować żadnego inne
 
 ## <a name="review-the-session-log"></a>Przegląd dziennika sesji
 
-System może zbierać więcej informacji o zadaniach, które są uruchamiane podczas planowania głównego. Aby system gromadził te informacje, włącz ustawienie **Śledzenie czasu przetwarzania** w oknie dialogowym **Uruchamianie planowania głównego**. Zebrane informacje mogą pomóc w znalezieniu wąskich gardeł w działaniu. Jeśli na przykład **liczba zadań w parametrze pakietu** ma wartość **1**, to można zidentyfikować towar o najdłuższym czasie wykonywania. Można także porównywać czasy rozpoczęcia dla różnych wątków, które mają stan **zapotrzebowania** i porównywać czas trwania każdego zadania.
+System może zbierać dodatkowe informacje o zadaniach, które są uruchamiane podczas planowania głównego. Aby system gromadził te informacje, włącz ustawienie **Śledzenie czasu przetwarzania** w oknie dialogowym **Uruchamianie planowania głównego**. Zebrane informacje mogą pomóc w znalezieniu wąskich gardeł w działaniu. Jeśli na przykład **liczba zadań w parametrze pakietu** ma wartość **1**, to można zidentyfikować towar o najdłuższym czasie wykonywania. Można także porównywać czasy rozpoczęcia dla różnych wątków, które mają stan **zapotrzebowania** i porównywać czas trwania każdego zadania.
 
 Aby przejrzeć przebieg planowania głównego systemu, należy postąpić zgodnie z jednym z tych kroków.
 
-- W obszarze roboczym **planowanie główne** w polu rozwijanym wybierz plan główny, a następnie na kafelku **Planowania głównego** wybierz pozycję **Historia**. Wybierz zadanie, wybierz **zapytania** w skróconej karcie, a następnie wybierz opcję **Czas trwania zadania procesowego**.
+- W obszarze roboczym **Planowanie główne** w polu rozwijanym wybierz plan główny, a następnie na kafelku **Planowanie główne** wybierz pozycję **Historia**. Wybierz zadanie, wybierz **zapytania** w skróconej karcie, a następnie wybierz opcję **Czas trwania zadania procesowego**.
 - Na stronie **plany główne** wybierz plan w lewym okienku, a następnie wybierz opcję **historia** na skróconej karcie. Wybierz zadanie, wybierz **zapytania** w skróconej karcie, a następnie wybierz opcję **Czas trwania zadania procesowego**.
 
 Podczas przeglądania dziennika sesji należy wziąć pod uwagę następujące kwestie:
 
-- **Aktualizacja** nie może trwać długo (zazwyczaj może trwać do 30 minut). Jednak jest jednowątkowa.
+- **Aktualizacja** nie może trwać długo (zazwyczaj może trwać do 30 minut), ale obejmuje pojedynczy wątek.
 - **Plan kopiowania** nie powinien trwać długo (zajmie to około jednej minuty).
 - **Automatyczne akceptowanie** zazwyczaj trwa około 30 minut. Może to jednak potrwać do wielu godzin, w zależności od liczby zamówień i złożoności towarów.
 - **Automatyczne akceptowanie** powinno trwać krócej niż **zapotrzebowanie**.
@@ -129,6 +129,28 @@ Podczas przeglądania dziennika sesji należy wziąć pod uwagę następujące k
 ## <a name="filtering-of-items"></a>Filtrowanie towarów
 
 Filtry stosowane w oknie dialogowym **Uruchomienie planowania głównego** wpływają na czas trwania procesu planowania głównego. Przejdź do **Planowania głównego \> planowania głównego \> Uruchom \> Planowania głównego** lub wybierz opcję **Uruchom** w obszarze roboczym **Planowanie główne.** Aby wykluczyć elementy z uruchomienia, zaleca się filtrowanie według stanu cyklu życia towaru (nie według numerów towarów). Podczas filtrowania według stanu cyklu życia proces aktualizacji zajmie mniej czasu niż podczas filtrowania według numerów towarów.
+
+## <a name="automatically-filter-by-items-with-direct-demand"></a>Automatycznie filtruj według towarów z bezpośrednim popytem
+
+Aby poprawić czas przebiegu planowania głównego, można wybrać opcję uwzględnienia tylko towarów z bezpośrednim zapotrzebowaniem. Ten filtr może być używany tylko w przypadku kompletnego przebiegu planowania głównego bez innych filtrów zastosowanych w polu **Rekordy do uwzględnienia**. Przebieg planowania głównego z filtrami zignoruje ustawienie **Automatycznie filtruj według elementów z bezpośrednim popytem**.
+
+Pole **Automatycznie filtruj według elementów z bezpośrednim popytem** znajduje się na stronie **Parametry planowania głównego** i może być używane z ustawieniami przetwarzania wstępnego i przetwarzania końcowego.
+
+### <a name="pre-processing"></a>Przetwarzanie wstępne
+Parametr **Przetwarzanie wstępne: automatycznie filtruj według towarów z bezpośrednim popytem** zapewnia, że faza wstępnego przetwarzania planowania głównego obejmuje tylko towary, które spełniają co najmniej jeden z następujących warunków:
+  - Towar ma oczekiwane przyjęcie lub wydanie, takie jak zamówienie zakupu, zamówienie sprzedaży, oferta, zlecenie przeniesienia lub zlecenie produkcyjne. 
+  - Towar ma pokrycie zapasu z zapasów bezpieczeństwa (minimalne dostępne zapasy).
+  - Istnieje prognozowany popyt na towar po dniu dzisiejszym.
+  - Istnieje prognozowana podaż towaru po dniu dzisiejszym.
+  - Towar zawiera wszystkie wiersze sprzedaży ciągłej z modułu biura obsługi jeszcze do utworzenia.
+
+> [!NOTE]
+> Towar, który ma fizycznie dostępne zapasy, nie będzie pokazywać transakcji zapotrzebowania, ponieważ nie ma popytu na towar.
+
+### <a name="post-processing"></a>Przetwarzanie końcowe
+Opcja **Przetwarzanie końcowe: automatycznie filtruj według towarów z bezpośrednim popytem** ma zastosowanie tylko wtedy, gdy w grupach zapotrzebowania ustawiono **wymaganie wersji BOM**. W przeciwnym razie nie trzeba włączać parametru. 
+
+Przed uruchomieniem kroku zapotrzebowania następuje etap wstępnego zapotrzebowania, podczas którego elementy z zapotrzebowaniem ustawionym na **wymaganie wersji BOM** będą ponownie przetwarzane. Odbywa się to w celu zapewnienia, że towary z wymaganej wersji BOM są planowane. Towary, które są uważane za towary z popytem podczas wstępnego przetwarzania, nie mają już popytu i dlatego powinny zostać wykluczone z przebiegu planowania.
 
 ## <a name="performance-checklist-summary"></a>Podsumowanie listy kontrolnej wydajności
 

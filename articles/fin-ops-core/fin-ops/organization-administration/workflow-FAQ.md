@@ -3,7 +3,7 @@ title: 'Przepływ pracy: często zadawane pytania'
 description: W tym temacie znajdują się odpowiedzi na często zadawane pytania dotyczące systemu przepływu pracy.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/19/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0188e8ed3cbbfd7dbccd7d13cf6129e146a919ac
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: cdddd26a662e9334f6d3c9806871df5b58ec03c7
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772704"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934916"
 ---
 # <a name="workflow-faq"></a>Przepływ pracy — często zadawane pytania
 
@@ -37,7 +37,7 @@ Każde powiadomienie dotyczy innego elementu pracy, ale podobieństwa mogą powo
 Obecnie istnieje ograniczenie funkcji eksportu przepływu pracy, które zapobiega przekraczaniu 48 znaków w nazwach przepływów pracy. Użycie nazwy, która jest dłuższa niż 48 znaków może spowodować wyświetlenie komunikatu o błędzie „Serwer nie może uwierzytelnić żądania” lub uniemożliwienie wyeksportowania pliku bez typu pliku. Poniższy wpis w blogu zawiera dodatkowe szczegóły [Rozwiązywanie problemów z eksportowaniem przepływów pracy](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting).
 
 ## <a name="can-the-submitter-of-a-workflow-also-approve-the-workflow"></a>Czy osoba przesyłająca przepływ pracy może również zatwierdzić przepływ pracy?
-Tak, osoba przesyłająca przepływ pracy może również zatwierdzić przepływ pracy, jeśli jest skonfigurowany w ten sposób. Aby temu zapobiec, należy skonfigurować **Parametry przepływu pracy >Ogólne > Osoba zatwierdzająca > Nie zezwalają na zatwierdzenie przez osobę przesyłającą** na wartości **Tak**.
+Tak, osoba przesyłająca przepływ pracy może również zatwierdzić przepływ pracy, jeśli jest skonfigurowany w ten sposób. Aby temu zapobiec, należy ustawić pozycję **Administracja systemem > Przepływ pracy > Parametry przepływu pracy >Ogólne > Osoba zatwierdzająca > Nie zezwalają na zatwierdzenie przez osobę przesyłającą** na wartość **Tak**.
 
 ## <a name="can-i-add-alerts-to-workflows-to-provide-notifications-to-users"></a>Czy mogę dodawać alerty do przepływów pracy w celu dostarczania powiadomień użytkownikom?
 Poniżej znajduje się kilka kluczowych obszarów, w których należy pamiętać przy dodawaniu alertów do przepływów pracy w celu dostarczenia powiadomień:
@@ -51,3 +51,6 @@ Poniżej znajduje się kilka kluczowych obszarów, w których należy pamiętać
     - [Przepływy pracy mają zdarzenia biznesowe](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), których odbiorca może wywoływać w celu wyzwolenia na wyszukiwane przez nich powiadomienia.   
 
 Podsumowując, jeśli użytkownik nie otrzyma odpowiedniego powiadomienia z centrum akcji, gdy ma przypisany element pracy przepływu pracy, będzie korzystać ze [zdarzeń biznesowych przepływu pracy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) w Microsoft Power Automate w celu wprowadzenia dodatkowych lub różnych powiadomień.
+
+## <a name="workflow-editor-has-trouble-starting-under-adfs"></a>Edytor przepływu pracy ma problemy z uruchomieniem usług ADFS 
+Podczas uruchamiania w usługach Active Directory Federation Services (AD FS) w uaktualnionym środowisku, edytor przepływu pracy może mieć problemy z uruchomieniem. Jeśli tak, upewnij się, że adres URL „https://dynamicsaxworkfloweditor/” jest dodawany do właściwości **Microsoft Dynamics 365 for Operations (Lokalne — Przepływ pracy — Aplikacja natywna)** w ustawieniach usługi ADFS.

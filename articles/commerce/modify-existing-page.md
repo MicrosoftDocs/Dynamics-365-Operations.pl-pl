@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ddbef381e9ded18ed1c9226057cac482d4c6e24d
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 50373d3681e269bf6164b2a425bbafebdd93d64f
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698379"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945704"
 ---
 # <a name="modify-an-existing-site-page"></a>Modyfikacja istniejącej strony witryny
 
@@ -85,3 +85,5 @@ Poniższy przykład ilustruje sposób modyfikowania strony głównej przez zmian
 [Wzbogacanie strony produktu](enrich-product-page.md)
 
 [Wzbogacanie strony docelowej kategorii](enrich-category-page.md)
+
+[Weryfikowanie dostępności zawartości strony](verify-accessibility.md)

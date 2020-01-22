@@ -15,16 +15,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3dbf5807a213e425b24d5a4809df694393faeb9b
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 03e2557e29194f17a9a586470ced5b352408b07c
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832775"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898649"
 ---
 # <a name="leave-and-absence-concepts"></a>Koncepcje urlopów i nieobecności
-
-[!include [banner](includes/banner.md)]
 
 Pojęcia i terminy, które zostały opisane w tym temacie, mogą pomóc określić, jak pracownikowi jest przyznawany czas wolny i jak obliczane są salda czasu wolnego pracownika. Aby uzyskać więcej informacji dotyczących zarządzania urlopami, zobacz [Zarządzanie urlopami i nieobecnościami](https://docs.microsoft.com/dynamics365/unified-operations/talent/leave-absence-overview).
 

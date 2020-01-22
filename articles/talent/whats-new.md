@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1640cb5ee0ec2fe3e8b987493cf2d2565cdb0f9d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 243fadd242c51440eae1ac7026c71a889a9fa81c
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183021"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897265"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent"></a>Nowości i zmiany w programie Dynamics 365 Talent 
-
-[!include [banner](includes/banner.md)]
 
 Ta strona zawiera szczegółowe informacje o tym, jak znajdować informacje o najnowszych wersjach aplikacji Microsoft Dynamics Talent HR Core.
 

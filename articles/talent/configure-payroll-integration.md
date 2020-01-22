@@ -15,16 +15,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ec1d14cb14ab709dfc1bead4be0785904efcce4e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 075b2bdfa08bb190f66b6d60074e1263feedcf70
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251046"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898546"
 ---
-# <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurowanie integracji listy płac między rozwiązaniami Talent i Dayforce
-
-[!include [banner](includes/banner.md)]
+# <a name="configure-payroll-integration-between-talent-and-dayforce"></a>Konfigurowanie integracji listy płac między rozwiązaniami Talent i Dayforce
 
 Integracja między programami Microsoft Dynamics 365 Talent i Ceridian Dayforce opiera się na kilku krokach konfiguracji, które opisano w tym temacie. Aby można było przetwarzać sesję płatności, należy skonfigurować integrację w rozwiązaniach Talent i Dayforce.
 

@@ -18,17 +18,14 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 255a84c59a7041c80eb0a466c038d6f9885c5f63
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 80cccdbfc993f79dbd905ceff06e7ecc069a3ecf
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518816"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898830"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Konfigurowanie składników funkcji
-
-[!include [banner](includes/banner.md)]
-
 
 W tym temacie opisano elementy koncepcyjne, które może zawierać zadanie, oraz przykłady wykorzystania tych elementów w organizacji. 
 

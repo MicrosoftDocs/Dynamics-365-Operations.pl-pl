@@ -3,7 +3,7 @@ title: Zarządzanie wydajnością
 description: Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 18e9606e62bc2739da99b75ab56161bd7cc7eafe
+ms.sourcegitcommit: 724b72412861d342c138a7935319da700b63c234
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590512"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2921157"
 ---
 # <a name="performance-management"></a>Zarządzanie wydajnością
-
-[!include [banner](includes/banner.md)]
 
 Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom.  
 
@@ -91,6 +89,8 @@ Aby wykonać bardziej szczegółowe przeglądy, można pobrać informacje o akty
 Można również użyć sekcji **Kompetencje**, aby przedyskutować, przejrzeć i ocenić kwalifikacje pracownika. Można dodać dowolną potrzebną liczbę kompetencji oraz wybrać, czy kompetencje mają być oceniane punktowo. 
 
 Można tworzyć nowe przeglądy oparte na utworzonych szablonach. Na przykład można mieć szablony dla rozmów bezpośrednich, planów rozwoju i przeglądów okresowych. Szablon można wybrać podczas tworzenia nowego przeglądu.
+
+Aby wydrukować recenzje, wybierz przycisk **Drukuj recenzję**. Jeśli nie widzisz przycisku na stronie **Recenzja**, upewnij się, że włączono funkcję w obszarze roboczym **Zarządzanie funkcjami**. Aby uzyskać więcej informacji o zarządzaniu funkcjami funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## <a name="components-you-can-include-in-performance-reviews"></a>Składniki, które można umieścić w przeglądach wydajności
 W przeglądach wydajności można umieszczać różne rodzaje informacji. Są to: szczegóły przeglądu, miary, działania, wyniki oceny, podpisy i załączniki.

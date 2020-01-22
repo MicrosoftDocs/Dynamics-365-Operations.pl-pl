@@ -3,7 +3,7 @@ title: Funkcje związane z ułatwianiem dostępu
 description: W tym temacie opisano funkcje przeznaczone do wspomagania użytkowników z różnymi niepełnosprawnościami.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/10/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7cc63320a3ba055a0c18ab59447f34a86bc0dc87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8ec4ee4654bdf306e179dcac5bf246df7f2b8cf7
+ms.sourcegitcommit: c3bc5dd007d9f063631232497bd4cda9214e2e5b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180859"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872449"
 ---
 # <a name="accessibility-features"></a>Funkcje ułatwień dostępu
 
@@ -40,7 +40,7 @@ W przypadku większości użytkowników codzienna praca z systemem wiąże się 
 
 Każda strona dostępna za pomocą menu okienka nawigacji z lewej strony jest również dostępna z poziomu pola **Wyszukaj**. Za pomocą skrótu Alt + G uaktywnij pole **Wyszukaj**, a następnie wpisz nazwę lub opis strony.
 
-![Hasło „konta bankowe” wprowadzone w polu wyszukiwania](media/6d08b0be32808221023e2aa92d69fd70.png "Hasło „konta bankowe” wprowadzone w polu wyszukiwania")
+![Hasło „Konta bankowe” wprowadzone w polu Wyszukaj](media/6d08b0be32808221023e2aa92d69fd70.png "Hasło „konta bankowe” wprowadzone w polu Wyszukaj")
 
 Aby uzyskać więcej informacji, zobacz [Nawigacja z wyszukiwaniem](navigation-search.md).
 
@@ -55,7 +55,7 @@ Z każdej akcji dostępnej na stronie można skorzystać za pomocą klawiatury, 
 
 Chcesz uruchomić akcję **Dziennik powiadomień pocztą E-mail**, która znajduje się w grupie **Powiadomienie pocztą E-mail** na karcie **Zamówienie sprzedaży** w okienku akcji.
 
-![Akcja Dziennik powiadomień pocztą E-mail w okienku akcji](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Akcja Dziennik powiadomień pocztą E-mail w okienku akcji")
+![Akcja dziennika powiadomień poczty e-mail w okienku akcji](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Akcja „Dziennik powiadomień poczty e-mail” w okienku akcji")
 
 Jedną z opcji jest użycie klawiatury. Naciśnij kombinację klawiszy Ctrl + F6, aby uaktywnić okienko akcji, a następnie naciskaj klawisz Tab, aby przechodzić kolejno między kartami i akcjami do momentu uaktywnienia akcji **Dziennik powiadomień pocztą E-mail**.
 
@@ -65,7 +65,7 @@ Jednak można również uruchomić akcję bardziej bezpośrednio. Z dowolnego mi
 
 W polu wyszukiwania wpisz wyrazy opisujące akcji. Akcja zostanie udostępniona i będzie ją można uruchomić bezpośrednio. Na przykład po wpisaniu **e-mail**, **powiadom** (część wyrazu) lub **dziennik** można „przeskoczyć” do funkcji Dziennik powiadomień pocztą E-mail.
 
-![Hasło „e-mail” wprowadzone w polu wyszukiwania](media/image4.png "Hasło „e-mail” wprowadzone w polu wyszukiwania")
+![Hasło „E-mail” wprowadzone w polu wyszukiwania](media/image4.png "Hasło „e-mail” wprowadzone w polu wyszukiwania")
 
 ![Hasło „powiadom” wprowadzone w polu wyszukiwania](media/image5.png "Hasło „powiadom” wprowadzone w polu wyszukiwania")
 
@@ -92,6 +92,8 @@ Aby uzyskać więcej informacji na temat wzorców formularzy zobacz [Style i wzo
 ## <a name="responsive-layout"></a>Elastyczny układ
 
 Ten produkt jest przeznaczony do pracy na różnych urządzeniach i przy różnych współczynnikach formularzy, od najmniejszych ekranów do dużych ekranów o najwyższej rozdzielczości. Nasz aparat odpowiadający za elastyczny układ umożliwia użytkownikom powiększanie do poziomu 200 procent (a w niektórych scenariuszach nawet ponad 200 procent).
+
+Na smartfonach i innych małych ekranach kontrolki i układ formularza będą dostosowywać się dynamicznie w celu zapewnienia, że podstawowe dane są preferowane. Te dynamicznie zachowania mogą również obejmować zmniejszenie liczby kolumn w grupach i kartach do pojedynczej kolumny, ukrywanie elementów powłoki i zwijanie okienka akcji.
 
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Wytyczne dotyczące podejścia z uwzględnieniem ułatwiania dostępu w swoich konfiguracjach niestandardowych dla programistów i klientów
 

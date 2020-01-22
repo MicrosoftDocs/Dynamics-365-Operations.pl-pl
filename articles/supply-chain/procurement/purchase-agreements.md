@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: abe921b8658322bcf77aeea8fa05843e539f97f8
+ms.sourcegitcommit: 523d22f31010339b4ff5b4fbe0a75aa909843ba6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813369"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902439"
 ---
 # <a name="purchase-agreements"></a>Umowy zakupu
 
@@ -36,7 +36,14 @@ Umowa zakupu może dotyczyć określonej ilości produktu, określonej kwoty pro
 
 Na stronie **Umowa zakupu** można tworzyć, stosować i kontynuować działania dotyczące umów zakupu, które istnieją między organizacją użytkownika i dostawcami. Na przykład po utworzeniu umowy zakupu można zamówić bezpośrednio z niej. Każda umowa zakupu ma okres ważności zdefiniowany przez osobę, która tworzy umowę zakupu. Data dostawy zakupu musi się mieścić w datach w okresie obowiązywania.  
 
-Po utworzeniu umowy zakupu należy ją aktywować, aby zaczęła obowiązywać. Aby aktywować umowę zakupu, należy ustawić opcję **Oznaczenie umowy jako obowiązującej** na **Tak**.
+Po utworzeniu umowy zakupu należy ją aktywować, aby zaczęła obowiązywać. Aby aktywować umowę zakupu, należy ustawić opcję **Oznaczenie umowy jako obowiązującej** na **Tak**. 
+
+Aby zapobiec używaniu i potwierdzaniu umowy zakupu, oznacz stan umowy jako **Zamknięta**. Można nadal aktualizować stan do **Obowiązuje** w dowolnym momencie po wprowadzeniu tej zmiany.
+
+## <a name="responsible-workers-on-purchase-agreements"></a>Odpowiedzialni pracownicy w umowach kupna
+
+W klasyfikacji umowy zakupu można zidentyfikować odpowiedzialnego pracownika podstawowego i odpowiedzialnego pracownika pomocniczego. Te wartości będą dziedziczone przez wynikową umowę zakupu. Nie musisz dodawać odpowiedzialnych pracowników do umowy zakupu. Można ich modyfikowane bezpośrednio na podstawie każdego przypadku w umowie zakupu. Nie można określić odpowiedzialnego pracownika pomocniczego bez odpowiedzialnego pracownika podstawowego, chociaż nie trzeba mieć odpowiedzialnego pracownika pomocniczego. Nie można określić tego samego pracownika jako odpowiedzialnego pracownika podstawowego i pomocniczego. 
+
 
 ## <a name="commitment-types"></a>Typy zobowiązania
 Każdy wiersz umowy zakupu jest zobowiązaniem do zakupu czegoś. Do wypełniania zobowiązania można używać wierszy z wielu zamówień zakupu. Istnieją cztery typy zobowiązań:

@@ -3,7 +3,7 @@ title: Dane demonstracyjne dotyczące produktu w kanale rozproszonego
 description: Niniejszy dokument ma na celu zapewnienie wskazówek dotyczących sposobu korzystania z zaleceń dotyczących produktu kanału rozproszonego w środowiskach z jedną ramką w warstwie 1 przy użyciu wstępnie wypełnionych, dostosowywanych danych demonstracyjnych.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 12/1/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 81af4c1bb7828c9b346a3ef514d8657e853dcefb
-ms.sourcegitcommit: c526cfd1f823df1ff33ded95e599a72f0a15cc5a
+ms.openlocfilehash: 31aa5dbd2fa814fd572024a4ae36b9d9b46a2fb0
+ms.sourcegitcommit: 398c0652acde12c953de007d06055456d6e0a516
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2226323"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2872333"
 ---
 # <a name="omni-channel-product-recommendations-demo-data"></a>Dane demonstracyjne dotyczące produktu w kanale rozproszonego
 
 Niniejszy dokument ma na celu zapewnienie wskazówek dotyczących sposobu korzystania z zaleceń dotyczących produktu kanału rozproszonego w środowiskach z jedną ramką w warstwie 1 przy użyciu wstępnie wypełnionych, dostosowywanych danych demonstracyjnych.
 
-Zalecenia dotyczące produktu w kanale rozproszonym stanowią zbiór zamówionej listy produktów z redakcją lub programowo. Listy te mogą być używane w kilku scenariuszach, w zależności od potrzeb biznesowych. Aby uzyskać więcej informacji na temat zaleceń dotyczących listy rekomendacji, zapoznaj się z [przeglądem rekomendacji produktu.](product-recommendaitons-overview.md)
+Zalecenia dotyczące produktu w kanale rozproszonym stanowią zbiór zamówionej listy produktów z redakcją lub programowo. Listy te mogą być używane w kilku scenariuszach, w zależności od potrzeb biznesowych. Aby uzyskać więcej informacji na temat zaleceń dotyczących listy rekomendacji, zapoznaj się z [przeglądem rekomendacji produktu.](../commerce/product-recommendations.md)
 
 Zalecenia dotyczące systemu środowiskowego warstwy 2 i większej są obliczane automatycznie na podstawie danych klientów.
 Korzystanie z pokazów dotyczących produktów dane demonstracyjne nie wyłączają żadnych zaleceń dotyczących produktów już zainicjowanych w środowisku oraz wszelkich kosztów związanych z jego użytkowaniem.
@@ -68,6 +68,6 @@ Rozszerzenie zawiera plik danych o nazwie RecoMockDataset. csv, który zezwala k
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Przegląd rekomendacji produktów](product-recommendations-overview.md)
+[Przegląd rekomendacji produktów](../commerce/product-recommendations.md)
 
-[Planowanie środowiska](environment-planning.md)
+[Planowanie środowiska](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)

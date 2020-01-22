@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: caa449feba22c5804799b5317a8e29c139cc440e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f67296797d9a671ae071a13b1bbda73cf3fc6e7f
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179364"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915184"
 ---
 # <a name="financial-reporting-overview"></a>Omówienie raportowania finansowego
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej i jak korzystać z funkcji raportowania finansowego. Zawiera też opis domyślnych raportów finansowych, które są zawarte w programie.
 
@@ -79,6 +81,18 @@ Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają
 | Wyświetlanie raportów finansowych                | Przeglądanie wyników finansowych          | Nie przypisano                                                                   |
 
 Po dodaniu użytkownika lub zmianie roli, użytkownik powinien mieć dostęp do raportów finansowych za kilka minut. **Uwaga:** Rola sysadmin jest dodawana do wszystkich ról w module sprawozdawczości finansowej.
+
+## <a name="report-deletions-and-expirations"></a>Usuwanie i wygasanie raportów
+Użytkownicy, którzy generują raport, mogą usuwać własne raporty. Użytkownicy, których obowiązkiem jest **utrzymywanie bezpieczeństwa raportowania finansowego** mogą usuwać raporty innych osób. 
+
+Począwszy od wydania 10.0.7, wprowadzono koncepcję dat wygaśnięcia. Nowa obowiązkowa funkcja zostanie włączona w obszarze roboczym zarządzania funkcjami. Ta funkcja zawiera następujące zmiany:
+* Nowo wygenerowane raporty będą automatycznie oznaczane jako posiadające datę wygaśnięcia 90 dni od daty wygenerowania
+* Wszystkie istniejące raporty sprzed zainstalowania tej funkcji będą miały okres ważności 90 dni. Data może być pusta przez krótki okres do czasu uruchomienia usługi raportowania finansowego, generowany jest raport, a usługa przeprowadza aktualizację do istniejących raportów z pustą datą wygaśnięcia. 
+* Użytkownicy odpowiedzialni za **utrzymywanie bezpieczeństwa raportowania finansowego** mają dostęp do tej funkcji. Każdy użytkownik z obowiązkiem **utrzymywania raportu finansowego** i przyznanym uprawnieniem **Utrzymanie wygaśnięcia raportu finansowego** będzie również mieć możliwość modyfikowania okresu wygaśnięcia. Obecnie dostępne są dwie opcje przechowywania — 
+  * Wygaśnięcie wynoszące 90 dni
+  * Opcja ustawiania raportu tak, aby nigdy nie wygasał
+
+Po wybraniu opcji wygaśnięcia, takiej jak 90 dni, użytkownik otrzymuje uprawnienia do 90 dni od dnia dzisiejszego, co jest zachowaniem innym niż 90 dni od oryginalnej daty wygenerowania raportu ustawionej podczas generowania. 
 
 ## <a name="default-reports"></a>Raporty domyślne
 Raporty finansowe to 22 domyślne raporty. Każdy raport korzysta z domyślnych kategorii kont głównych. Raporty te można wykorzystywać w takiej formie, w jakiej są lub jako bazy do utworzenia własnego raportu finansowego. Oprócz tradycyjnych sprawozdań finansowych, takich jak Zestawienie przychodów i Bilans, te domyślne raporty obejmują raporty, które pokazują różne typy raportów finansowych, które możesz utworzyć. 

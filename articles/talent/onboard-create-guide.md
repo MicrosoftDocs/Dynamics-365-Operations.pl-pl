@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a095fe97b05898403b501763204a462ee8dcc12a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814635"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898255"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-talent---onboard"></a>Tworzenie i wysyłanie przewodnika wdrażania do pracy poprzez Dynamics 365 Talent - Onboard
+# <a name="create-and-send-an-onboarding-guide"></a>Tworzenie i wysyłanie przewodnika wdrażania do pracy
 
 [!include [banner](includes/banner.md)]
 
@@ -42,7 +42,7 @@ Po utworzeniu przewodnika wdrażania do pracy można wysłać go do nowego praco
 
 5. W oknie **Utwórz Przewodnik**, w obszarze **Kogo wdrażasz do pracy**, wprowadź imię nowego pracownika lub adres e-mail. Jeśli nowy pracownik nie znajduje się jeszcze w systemie, wybierz pozycję **Dodaj** i wprowadź informacje o pracowniku.
 
-    ![[Wprowadzanie informacji o przewodniku wdrażania do pracy](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Wprowadzanie informacji na potrzeby przewodnika wdrażania do pracy](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 6. W obszarze **Kiedy zacznie się praca** wybierz datę początkową.
 7. Jeśli przewodnik wdrażania do pracy powinien być automatycznie wysyłany do nowego pracownika w określonym dniu, upewnij się , że jest włączona opcja **Zaplanuj datę automatycznego wysyłania**, a następnie wybierz datę automatycznego wysyłania. Aby natychmiast wysłać przewodnik, wyłącz opcję **Zaplanuj datę automatycznego wysyłania**.
@@ -92,7 +92,7 @@ Nie zawsze trzeba tworzyć przewodnik na podstawie szablonu. Jeśli wolisz, moż
 1. W menu po lewej wybierz opcję **Przewodniki**, a następnie wybierz przycisk **Dodaj** (znak plus \[**+**\]).
 2. W oknie **Utwórz Przewodnik**, w obszarze **Kogo wdrażasz do pracy**, wprowadź imię nowego pracownika lub adres e-mail. Jeśli nowy pracownik nie znajduje się jeszcze w systemie, wybierz pozycję **Dodaj** i wprowadź informacje o pracowniku.
 
-    ![[Wprowadzanie informacji o przewodniku wdrażania do pracy](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Wprowadzanie informacji na potrzeby przewodnika wdrażania do pracy](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 3. W obszarze **Kiedy zacznie się praca** wybierz datę początkową.
 4. Jeśli przewodnik wdrażania do pracy powinien być automatycznie wysyłany do nowego pracownika w określonym dniu, upewnij się , że jest włączona opcja **Zaplanuj datę automatycznego wysyłania**, a następnie wybierz datę automatycznego wysyłania. Aby natychmiast wysłać przewodnik, wyłącz opcję **Zaplanuj datę automatycznego wysyłania**.
@@ -105,7 +105,7 @@ Przewodnik wdrażania do pracy można zapisać jako szablon. W ten sposób możn
 1. W menu po lewej stronie wybierz **Przewodniki**.
 2. Wybierz przycisk **Więcej** (wielokropek \[**...**\]) dla przewodnika, na podstawie którego chcesz utworzyć szablon, a następnie wybierz opcję **Zapisz jako szablon**.
 
-    ![[Zapisywanie przewodnika wdrażania do pracy jako szablon](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
+    ![[Zapisywanie przewodnika wdrażania do pracy jako szablonu](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
 
 3. W oknie **Zapisz jako nowy szablon** wprowadź nazwę nowego szablonu, a następnie wybierz opcję **Zapisz**.
 

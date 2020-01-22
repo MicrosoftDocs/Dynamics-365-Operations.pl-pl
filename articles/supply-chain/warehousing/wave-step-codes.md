@@ -18,19 +18,17 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0f89c6098db9e2e3a9aa4ee3666e4b9ae608f054
-ms.sourcegitcommit: d8f1135cdbc2deca70bc4b2805a0519253c9a31f
+ms.openlocfilehash: 1a1a32495b63a5a67a49bf3b02710aba63c1e2f0
+ms.sourcegitcommit: bfd6142569196a060e3f37893c78f00c40a2a18c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "1992364"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2946197"
 ---
 # <a name="wave-step-codes"></a>Kody kroku grupy czynności
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
-
-## <a name="about-wave-step-codes"></a>Kody etapów grupy czynności — informacje
 
 Kody etapów grupy czynności są kodami, które użytkownicy mogą konfigurować i stosować w celu łączenia określonych wystąpień metod grupy czynności z odpowiednim szablonem. Szablony te obejmują szablony uzupełniania, konteneryzacji, drukowania etykiet, kompilowania i sortowania.
 
@@ -39,7 +37,7 @@ Jeśli nie są używane kody etapów grupy czynności, użytkownicy muszą wprow
 Kody etapów grupy czynności dla konkretnego typu kroku są konfigurowane na osobnej stronie. Dla każdej instancji metody etapów grupy czynności, która wymaga kodu kroku grupy czynności, należy wybrać kod etapu grupy rozwijanej. Wybór na liście rozwijanej zastępuje wprowadzanie tekstu swobodnego i pomaga zmniejszyć ryzyko i wpływ błędu człowieka. Kody ustawień służą do łączenia metody kroku grupy czynności w szablonie grupy czynności z docelowym szablonem metody.
 
 > [!NOTE]
-> Użycie funkcji kodów etapów grupy czynności jest opcjonalne, a dla każdej firmy. Dlatego jeśli określona firma używa tej funkcji, wszystkie istniejące kody kroków grupy w tej firmie zostaną uaktualnione do nowej struktury.
+> Użycie funkcji kodów kroków grupy czynności jest opcjonalne. Jest ona włączona dla całej organizacji dla wszystkich firm.
 
 ## <a name="setup-demo"></a>Pokaz instalacji 
 
@@ -49,20 +47,20 @@ W tym pokazie trzeba mieć zainstalowane dane demonstracyjne oraz musi być uży
 
 Aby włączyć funkcję kodów etapów grupy czynności, należy wykonać poniższe kroki
 
-1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Parametry zarządzania magazynem**.
-2. Na karcie **Ogólne** na skróconej karcie **Zatwierdzenie dostawcy** dla opcji **Przetwarzanie grupy czynności** wybierz ustawienie **Tak**.
+1. Przejdź do obszaru **Zarządzanie funkcjami**.
+2. Wybierz opcję włączenia funkcji o nazwie **Kod kroku grupy czynności w całej organizacji**.
 
-Wszystkie istniejące teksty niezależne krokami wyjścia są uaktualniane do nowej struktury. Po ukończeniu tego uaktualnienia dla firmy nie jest już dostępna opcja **Włącz kody etapów grupy czynności** na stronie **parametrów zarządzania magazynem**.
+Wszystkie istniejące teksty niezależne kroków grupy czynności we wszystkich firmach są uaktualniane do nowej struktury. Po ukończeniu tego uaktualniania dla wszystkich firm funkcja jest włączona. Jeśli nie można włączyć tej funkcji dla co najmniej jednej firmy, funkcja nie jest włączona dla żadnych firm.
 
-Sprawdzanie poprawności zostało przeprowadzone podczas uaktualniania systemu, a Jeśli uaktualnienie nie powiedzie się, zostanie wyświetlony komunikat o błędzie. Uaktualnienie może zakończyć się niepowodzeniem z powodu następujących konfliktów:
+Podczas włączania weryfikacje są wykonywane w trakcie uaktualniania danych. Jeśli uaktualnienie nie powiedzie się, zostanie wyświetlony komunikat o błędzie. Uaktualnienie może zakończyć się niepowodzeniem z powodu następujących konfliktów:
 
 - Istnieją zduplikowane teksty etapów grupy czynności
 - Dostosowania jest możliwe.
 - Tekst niezależny krok fazy wyjścia skojarzony z wystąpieniem metody kroku grupy czynności nie pasuje do oczekiwanego typu szablonu.
 
-Po rozwiązaniu wszelkich konfliktów, które zostaną zidentyfikowane podczas sprawdzania poprawności, można ponownie uruchomić proces uaktualniania.
+Po rozwiązaniu wszelkich konfliktów, które zostaną zidentyfikowane podczas weryfikacji, można ponownie spróbować włączyć funkcję.
 
-Po pomyślnym uaktualnieniu systemu będzie dostępna strona **Kody etapów grupy czynności** (**Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Kody etapów grupy czynności**). Ta strona zawiera listę kodów etapów grupy czynności, które zostały uaktualnione po włączeniu funkcji kodów etapów grupy czynności
+Po włączeniu funkcji będzie dostępna strona **Kody etapów grupy czynności** (**Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Kody etapów grupy czynności**). Ta strona zawiera listę kodów etapów grupy czynności, które zostały uaktualnione po włączeniu funkcji kodów kroków grupy czynności w całej organizacji.
 
 ### <a name="create-new-wave-step-codes"></a>Tworzenie nowych kodów etapów grupy czynności
 
@@ -94,3 +92,5 @@ Poniższa procedura pomaga zagwarantować, że utworzony szablon uzupełnienia z
 4. Przejdź do **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Szablony grup czynności** a następnie wybierz szablon grupy czynności, który ma być używany.
 5. W szablonie **metody** na skróconej karcie wybierz metodę **uzupełniania zapasów**.
 6. W **Kod czynności grupowych** wybierz kod kroku grupy czynności, który został utworzony dla typu szblonu uzupełnienia.
+
+Wykonaj następujące kroki dla każdej firmy.

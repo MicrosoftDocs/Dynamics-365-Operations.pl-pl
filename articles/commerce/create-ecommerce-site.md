@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fd87a51b73deae64867b0420c00db9fce7c79336
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697136"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945842"
 ---
 # <a name="create-an-e-commerce-site"></a>Tworzenie witryny handlu elektronicznego
 
@@ -59,20 +59,16 @@ Po utworzeniu witryny można sprawdzić, czy jest skojarzona ze swoim sklepem in
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie sklepu internetowego](online-store-overview.md)
+[Konfigurowanie nazwy domeny](configure-your-domain-name.md)
 
 [Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
 
 [Kojarzenie witryny online z kanałem](associate-site-online-store.md)
 
-[Konfigurowanie nazwy domeny](configure-your-domain-name.md)
-
-[Dodaj obsługę dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
-
-[Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
+[Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
 [Konfigurowanie stron niestandardowych do logowań użytkowników](custom-pages-user-logins.md)
 
-[Przegląd strony głównej tworzenia](authoring-home-overview.md)
+[Dodawanie obsługi dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
 
-[Dodawanie nowej strony witryny](add-new-page.md)
+[Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)

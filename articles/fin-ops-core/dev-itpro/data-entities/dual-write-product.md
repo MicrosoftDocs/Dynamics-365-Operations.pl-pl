@@ -3,7 +3,7 @@ title: Ujednolicone doświadczenie korzystania z produktu
 description: W tym temacie opisano integrację danych produktu między aplikacjami Finance and Operations i Common Data Service.
 author: t-benebo
 manager: AnnBe
-ms.date: 09/3/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: bcc2c3d2530153a225a94fa0fb3cc990abbf65b4
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7df9097feeb9566705f50f8a62809aa79dc10cd7
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769736"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914778"
 ---
 # <a name="unified-product-experience"></a>Ujednolicone doświadczenie korzystania z produktu
 
@@ -52,7 +52,7 @@ Informacje o produkcie zawierają wszystkie informacje związane z produktem i j
 
 Finance and Operations | Inne aplikacje w usłudze Dynamics 365 | Opis
 -----------------------|--------------------------------|---
-Zwolnione produkty (wersja 2) | msdyn\_sharedproductdetails | Jednostka **msdyn\_sharedproductdetails** zawiera pola z aplikacji Finance and Operations, które definiują produkt, i zawierają informacje finansowe i informacje dotyczące zarządzania produktem. Poniższa tabela przedstawia kolejność mapowań.
+Zwolnione produkty (wersja 2) | msdyn\_sharedproductdetails | Jednostka **msdyn\_sharedproductdetails** zawiera pola z aplikacji Finance and Operations, które definiują produkt, i zawierają informacje finansowe i informacje dotyczące zarządzania produktem. 
 Common Data Service odrębne produkty zwolnione w usłudze CDS | Produkt | Jednostka **Produktu** zawiera pola, które definiują produkt. Zawiera produkty indywidualne (produkty podtypu) i warianty produktu. Poniższa tabela przedstawia kolejność mapowań.
 Kod kreskowy zidentyfikowany numer produktu | msdyn\_productbarcodes | Kody kreskowe produktów służą do jednoznacznego identyfikowania produktów.
 Ustawienia domyślne zamówień | msdyn\_productdefaultordersettings
@@ -74,7 +74,7 @@ Konwersje jednostek | msdyn_ unitofmeasureconversions
 Konwersja jednostki miary określonego produktu | msdyn_productspecificunitofmeasureconversion
 Kategorie produktów | msdyn_productcategories | Każda kategoria produktu oraz informacje o jego strukturze i charakterystyce znajdują się w jednostce kategorii produktów. 
 Hierarchie kategorii produktów | msdyn_productcategoryhierarhies | Hierarchie produktów służą do kategoryzowania lub grupowania produktów. Hierarchie kategorii są dostępne Common Data Service przy użyciu jednostki hierarchia kategorii prodcut. 
-Role hierarchii kategorii produktów | msdyn_productcategoryhierarchies | Hierarchie produktów mogą być używane w różnych rolach w D365 Finance and Operations. Określ, która kategoria ma być używana w każdej roli jednostka roli Kategoria produktu jest używana z poniższymi mapowaniami. 
+Role hierarchii kategorii produktów | msdyn_productcategoryhierarchies | Hierarchie produktów mogą być używane w różnych rolach w D365 Finance and Operations. Określ, która kategoria ma być używana w każdej roli, w której jest używana jednostka roli Kategoria produktu. 
 Przypisania kategorii produktów | msdyn_productcategoryassignments | Aby przypisać produkt do kategorii, można użyć jednostki przypisań kategorii produktów.
 
 ## <a name="integration-of-products"></a>Integracja produktów
