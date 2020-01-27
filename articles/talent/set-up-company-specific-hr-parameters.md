@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 8f790cae031b1a1d97f5409974b5d024ed6ceec5
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 11f200f2d9e58940ea8ddd4f626203fa3802ca01
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814566"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898025"
 ---
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Konfigurowanie parametrów modułu Zasoby ludzkie (HR) specyficznych dla firmy
-
-[!include [banner](includes/banner.md)]
 
 Niektóre parametry modułu Zasoby ludzkie (HR) są wspólne dla wielu firm, podczas gdy inne parametry są specyficzne dla firm. W tym artykule wyjaśniono, jak skonfigurować parametry modułu Zasoby ludzkie specyficzne dla firmy.
 

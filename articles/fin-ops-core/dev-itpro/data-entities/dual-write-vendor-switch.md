@@ -1,6 +1,6 @@
 ---
-title: Przełączanie się między projektami dostawców
-description: ''
+title: Przełączanie się między projektami dostawcy
+description: W tym temacie opisano sposób przełączania integracji danych dostawcy między aplikacjami Finance and Operations i Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 09/20/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 4e97ff0b0e6195b5e3703e15a0bb0de7644ef8d1
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 204d788e72e79e7acf744d24cbeacb0f9b47da7d
+ms.sourcegitcommit: 3306e451f04df01c51d8d332306b135d8ae1e254
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772371"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902732"
 ---
-# <a name="switch-between-vendor-designs"></a>Przełączanie się między projektami dostawców
+# <a name="switch-between-vendor-designs"></a>Przełączanie się między projektami dostawcy
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,11 +34,11 @@ ms.locfileid: "2772371"
 
 Jeśli chcesz użyć innej aplikacji Dynamics 365 do tworzenia danych głównych dostawcy i chcesz wyodrębnić informacje o kliencie, możesz skorzystać z podstawowego schematu dostawcy.  
 
-![Podstawowy przepływ dostawcy](media/dual-write-switch-1.png)
+![Podstawowy przepływ dostawcy](media/dual-write-vendor-data-flow.png)
  
 Jeśli chcesz użyć innych aplikacji Dynamics 365 do tworzenia danych głównych dostawcy i chcesz dalej korzystać z encji **Konto** do przechowywania informacji o dostawcy, możesz skorzystać z nowego rozszerzonego schematu dostawcy. W tym projekcie rozszerzone informacje o dostawcach, takie jak stan wstrzymania dostawcy i profil dostawcy, są przechowywane w jednostce **dostawcy** w Common Data Service. 
 
-![Rozszerzony przepływ dostawcy](media/dual-write-switch-2.png)
+![Rozszerzony przepływ dostawcy](media/dual-write-vendor-detail.jpg)
  
 Aby użyć rozszerzonego projektu dostawcy, należy wykonać poniższe kroki: 
  
@@ -60,5 +60,5 @@ Aby użyć rozszerzonego projektu dostawcy, należy wykonać poniższe kroki:
     4. Przepływy pracy można konfigurować jako przepływy pracy w czasie rzeczywistym lub w tle, zgodnie z wymaganiami użytkownika. 
         > [!div class="mx-imgBorder"]
         > ![Konwertuj na przepływ pracy w tle](media/dual-write-switch-8.png)
-    5. Umożliwia aktywowanie przepływów pracy utworzonych w jednostkach **konta** i **dostawcy** w celu rozpoczęcia używania Customer Engagement jednostki **konta** zakontraktowania z odbiorcą do przechowywania informacji o dostawcy. 
+    5. Aktywuj przepływy pracy utworzone w jednostkach **konta** i **dostawcy** w celu rozpoczęcia używania jednostki **Konto** do przechowywania informacji o dostawcy. 
  

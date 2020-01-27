@@ -3,7 +3,7 @@ title: Ustaw strony niestandardowe dla danych logowania użytkowników
 description: W tym temacie opisano, jak budować niestandardowe strony w Microsoft Dynamics 365 Commerce, które obsługują niestandardowe logowanie dla użytkowników dzierżawców Azure Active Directory (Azure AD) dla klientów indywidualnych (B2C).
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 644d937ddd3c219ae869f22d977d2846dffc20e1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 20bfacbc2374003814e12e7737644d118d404cc0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697573"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945566"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Konfigurowanie stron niestandardowych do logowań użytkowników
 
@@ -136,11 +136,11 @@ Aktualizuj zasadę „Rejestracja i logowanie w” przy użyciu niestandardowych
 1. W obszarze zasady **Zaloguj się i zarejestruj**, którą skonfigurowano wcześniej, w okienku nawigacji wybierz opcję **układy stron**.
 1. Wybierz układ **Unifikuj rejestrację i logowanie na stronie**.
 1. Ustawienie opcji **używaj niestandardowej zawartości** strony na wartość **tak**.
-1. W polu **identyfikator URL strony niestandardowej** wprowadź pełny adres URL logowania. Dołącz sufiks **?preloadscripts=true**. Na przykład wprowadź **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. W polu **identyfikator URL strony niestandardowej** wprowadź pełny adres URL logowania. Dołącz sufiks **?preloadscripts=true**. Na przykład wpisz ``www.<my domain>.com/sign-in?preloadscripts=true``.
 1. W polu **wersja układu strony (wersja podglądu)** wybierz opcję **1.2.0**.
 1. Wybierz układ **Strona rejestracji lokalnego konta**.
 1. Ustawienie opcji **używaj niestandardowej zawartości** strony na wartość **tak**.
-1. W polu **identyfikator URL strony niestandardowej** wprowadź pełny adres URL logowania. Dołącz sufiks **?preloadscripts=true**. Na przykład wprowadź **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. W polu **Identyfikator URI strony niestandardowej** wprowadź pełny adres URL logowania. Dołącz sufiks **?preloadscripts=true**. Na przykład wpisz ``www.<my domain>.com/sign-up?preloadscripts=true``.
 1. W polu **wersja układu strony (wersja podglądu)** wybierz opcję **1.2.0**.
 1. W sekcji **atrybuty użytkownika** wykonaj następujące kroki:
 
@@ -156,7 +156,7 @@ Aktualizuj zasadę „Edycja profilu” przy użyciu niestandardowych informacji
 1. W obszarze zasady **Edycja profilu**, którą skonfigurowano wcześniej, w okienku nawigacji wybierz opcję **układy stron**.
 1. Wybierz układ **strony edytowania profilu**.
 1. Ustawienie opcji **używaj niestandardowej zawartości** strony na wartość **tak**.
-1. W polu **identyfikator URL strony niestandardowej** wprowadź pełny adres URL logowania. Dołącz sufiks **?preloadscripts=true**. Na przykład wprowadź **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. W polu **Identyfikator URI strony niestandardowej** wprowadź pełny adres URL edytowania profilu. Dołącz sufiks **?preloadscripts=true**. Na przykład wpisz ``www.<my domain>.com/profile-edit?preloadscripts=true``.
 1. W polu **wersja układu strony (wersja podglądu)** wybierz opcję **1.2.0**.
 1. W sekcji **atrybuty użytkownika** wykonaj następujące kroki:
 
@@ -170,12 +170,14 @@ Aktualizuj zasadę „Resetowanie hasła” przy użyciu niestandardowych inform
 1. W obszarze zasady **resetowanie hasła**, którą skonfigurowano wcześniej, w okienku nawigacji wybierz opcję **układy stron**.
 1. Wybierz układ **strona nowego hasła**.
 1. Ustawienie opcji **używaj niestandardowej zawartości** strony na wartość **tak**.
-1. W polu **identyfikator URL strony niestandardowej** wprowadź pełny adres URL logowania. Dołącz sufiks **?preloadscripts=true**. Na przykład wprowadź **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. W polu **Identyfikator URI strony niestandardowej** wprowadź pełny adres URL resetowania hasła. Dołącz sufiks **?preloadscripts=true**. Na przykład wpisz ``www.<my domain>.com/passwordreset?preloadscripts=true``.
 1. W polu **wersja układu strony (wersja podglądu)** wybierz opcję **1.2.0**.
 1. Wybierz układ **strony weryfikacji konta**.
 1. Ustawienie opcji **używaj niestandardowej zawartości** strony na wartość **tak**.
-1. W polu **identyfikator URL strony niestandardowej** wprowadź pełny adres URL logowania. Dołącz sufiks **?preloadscripts=true**. Na przykład wprowadź **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. W polu **Identyfikator URI strony niestandardowej** wprowadź pełny adres URL weryfikacji resetowania hasła. Dołącz sufiks **?preloadscripts=true**. Na przykład wpisz ``www.<my domain>.com/passwordreset-verification?preloadscripts=true``.
 1. W polu **wersja układu strony (wersja podglądu)** wybierz opcję **1.2.0**.
+
+
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Dostosowywanie domyślnych ciągów tekstowych dla etykiet i opisów
 
@@ -193,16 +195,16 @@ Po zaktualizowaniu pliku global.json i opublikowaniu zmian tekst nowego łącza 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie sklepu internetowego](online-store-overview.md)
-
-[Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
+[Konfigurowanie nazwy domeny](configure-your-domain-name.md)
 
 [Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
 
+[Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
+
 [Kojarzenie witryny online z kanałem](associate-site-online-store.md)
 
-[Konfigurowanie nazwy domeny](configure-your-domain-name.md)
+[Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
-[Dodaj obsługę dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
+[Dodawanie obsługi dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
 
 [Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)

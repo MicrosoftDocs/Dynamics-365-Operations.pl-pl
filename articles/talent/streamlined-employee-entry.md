@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 35cceb97442b05abc243cf7341e0ce7a0d09c613
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009429"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915208"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Usprawnione wprowadzanie pracowników i nawigacja
 
-[!include [banner](includes/banner.md)]
-
 Dynamics 365 Talent umożliwia wydajne wprowadzanie danych dotyczących pracowników i zatrudnienia. Można szybko zaktualizować informacje o historii pracy dla przeszłych, aktywnych i przyszłych pracowników i zleceniobiorców.
 
-Można również włączyć uproszczone funkcje nawigacyjne, aby szybko znajdować informacje związane z informacjami i wprowadzać niezbędne zmiany. Ta funkcja jest teraz dostępna w środowiskach piaskownicy. Aby włączyć tę funkcję, przejdź do **Administrowanie systemem > Łącza > Ustawienia > Parametry systemowe > Funkcje w wersji zapoznawczej**. Wybierz **Formularz i nawigację rozszerzonego pracownika**. Dzięki temu zmiany są włączone dla wszystkich użytkowników. Opcję tę można wyłączyć w dowolnym momencie.
+Można również włączyć uproszczone funkcje nawigacyjne, aby szybko znajdować informacje związane z informacjami i wprowadzać niezbędne zmiany. Ta funkcja jest teraz dostępna we wszystkich środowiskach. Aby włączyć tę funkcję, przejdź do pozycji **Administracja systemem > Zarządzanie funkcjami > Nowy > Usprawnione wprowadzanie pracowników > Włącz**. Dzięki temu zmiany są włączone dla wszystkich użytkowników. Opcję tę można wyłączyć w dowolnym momencie.
 
 ## <a name="view-options"></a>Opcje widoku
 

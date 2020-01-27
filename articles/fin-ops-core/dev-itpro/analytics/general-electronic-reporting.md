@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7cd3e2ac729bdb3ecc8e7bfacb060e433b185f09
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771080"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933939"
 ---
 # <a name="electronic-reporting-er-overview"></a>Omówienie raportowania elektronicznego (RE)
 
@@ -51,12 +51,12 @@ Aparat GER ma następujące cechy:
 
 ER obsługuje dwa typy składników: **Model danych** i **Format**.
 
-#### <a name="data-model-components"></a>Składniki typu Model danych
+#### <a name="data-model-and-model-mapping-components"></a>Składniki modelu danych i mapowania modelu
 
 Składnik typu Model danych jest abstrakcyjnym przedstawieniem struktury danych. Służy do opisu konkretnego obszaru domeny biznesowej w sposób na tyle szczegółowy, by spełnić wymagania raportowania w tej domenie. Składnik będący modelem danych zawiera następujące elementy:
 
-- Model danych jako zestaw jednostek biznesowych określonej domeny oraz hierarchiczna definicja relacji między tymi jednostkami.
-- Mapowanie modelu, które łączy wybrane źródła danych aplikacji z poszczególnymi elementami tego modelu danych, które określają w czasie wykonywania przepływ danych i reguły wprowadzania danych biznesowych do składnika będącego modelem danych.
+- <a name="DataModelComponent"></a>Model danych jako zestaw jednostek biznesowych określonej domeny oraz hierarchiczna definicja relacji między tymi jednostkami.
+- <a name="ModelMappingComponent"></a>Mapowanie modelu, które łączy wybrane źródła danych aplikacji z poszczególnymi elementami tego modelu danych, które określają w czasie wykonywania przepływ danych i reguły wprowadzania danych biznesowych do składnika będącego modelem danych.
 
 Jednostka biznesowa modelu danych jest przedstawiona jako kontener (rekord). Właściwości jednostki biznesowej są przedstawione jako składniki danych (pola). Każdy element danych ma niepowtarzalną nazwę, etykietę, opis i wartość. Wartość każdego elementu danych może być zaprojektowane tak, aby była rozpoznawana jako ciąg tekstowy, liczba całkowita, liczba rzeczywista, data, element stałotekstowy, wartość logiczna itd. Ponadto może to być inny rekord lub lista rekordów.
 
@@ -81,7 +81,7 @@ Mapowanie modelu obsługujące przychodzące dokumenty elektroniczne ma następu
 
 Składnik typu Model danych jest projektowany dla każdej domeny biznesowej i służy jako ujednolicone źródło danych dla raportowania, które izoluje raportowanie od fizycznej implementacji źródeł danych. Reprezentuje właściwe dla domeny koncepcje i funkcje biznesowe w formie, która upraszcza początkowe projektowanie formatów raportowania i ich dalszą obsługę.
 
-#### <a name="format-components-for-outgoing-electronic-documents"></a>Składniki typu Format dla wychodzących dokumentów elektronicznych
+#### <a name="FormatComponentOutbound"></a>Składniki typu Format dla wychodzących dokumentów elektronicznych
 
 Składnik typu Format określa schemat danych wyjściowych raportowania, które będą generowane w czasie wykonywania. Schemat składa się z następujących elementów:
 
@@ -107,7 +107,7 @@ Na poniższej ilustracji przedstawiono sposób przepływu danych w tych formatac
 
 Aby uruchomić jedną konfigurację formatu modułu ER i wygenerować wychodzący dokument elektroniczny, należy określić mapowanie dla konfiguracji formatu.
 
-#### <a name="format-components-for-incoming-electronic-documents"></a>Składniki typu Format dla przychodzących dokumentów elektronicznych
+#### <a name="FormatComponentInbound"></a>Składniki typu Format dla przychodzących dokumentów elektronicznych
 Składnik typu Format określa schemat dokumentu przychodzącego, który jest importowany w czasie wykonywania. Schemat składa się z następujących elementów:
 
 - Format definiujący strukturę i zawartość dokumentu przychodzącego dokumentu elektronicznego zawierającego dane importowane podczas wykonywania. Składnik typu Format służy do analizowania składni przychodzących dokumentów w różnych formatach, takich jak tekst i XML.
@@ -144,7 +144,7 @@ Dostęp do składników formatu aplikacji ER zależy od ustawienia kodu ISO kraj
 
 Różne wersje składnika formatu danych mogą mieć różne ustawienia kodów ISO kraju/regionu.
 
-#### <a name="configuration"></a>Konfiguracja
+#### <a name="Configuration"></a>Konfiguracja
 
 Konfiguracja narzędzia ER jest otoką konkretnego składnika ER. Składnik ten może być typu Model danych lub Format. Konfiguracja może zawierać różne wersje składnika ER. Każda konfiguracja jest oznaczona jako należąca do określonego dostawcy konfiguracji. Wersja **Wersja robocza** składnika konfiguracji może być edytowana, gdy właściciel konfiguracji został wybrany jako aktywny dostawca w ustawieniach ER w aplikacji.
 
@@ -154,13 +154,13 @@ Tworzona konfiguracja formatu zawiera składnik Format. Składnik Model danych o
 
 Konfiguracja ER jest udostępniana firmom w aplikacji.
 
-#### <a name="provider"></a>Dostawca
+#### <a name="Provider"></a>Dostawca
 
 Dostawca ER określa stronę (podmiotu) używaną do wskazania autora (właściciela) konfiguracji ER. Aplikacja ER pozwala zarządzać listą dostawców konfiguracji. Konfiguracje formatu publikowane dla dokumentów elektronicznych w ramach rozwiązania Finance and Operations są oznaczone jako należące do dostawcy konfiguracji **Microsoft**.
 
 Aby uzyskać informacje o rejestrowaniu nowego dostawcy ER, odtwórz przewodnik po zadaniu **ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego** (część procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**).
 
-#### <a name="repository"></a>Repozytorium
+#### <a name="Repository"></a>Repozytorium
 
 Konfiguracje ER są przechowywane w repozytorium ER. Obecnie obsługiwane są następujące typy repozytoriów ER: 
 

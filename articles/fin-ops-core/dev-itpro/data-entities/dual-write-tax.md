@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: ''
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: b6be53e9a2065373ca37c2791568a8161823803f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 86e74086a5a74c7af5f2572d1a653a1658d729c0
+ms.sourcegitcommit: d0322d1ed6c798301058e44dae76227a0e1f49ac
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772417"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853866"
 ---
-## <a name="integrated-tax"></a>Zintegrowany podatek
+# <a name="integrated-tax"></a>Zintegrowany podatek
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ Dane ustawień podatku określają ustawienia zarówno podatków pośrednich (VA
 
 Dane podatku zawierają kolekcję mapy encji działa razem podczas interakcji, jak pokazano w poniższej tabeli.
 
-Finance and Operations   | Aplikacja Customer Engagement
+Finance and Operations   | Inne aplikacje w usłudze Dynamics 365
 -------------------------|---------------------------------
 Kody podatków                  | msdyn\_taxcodes.md
 Grupy podatków               | msdyn\_taxgroups.md

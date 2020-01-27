@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: aa50b2ec688a97a1aeeb9621ad6fa3600cd06318
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 1d6b5f5f7b62c400679df5eb014dee05f02e11d0
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550189"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897495"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-november-27-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent - Core HR (27 listopada 2018 r.)
-
-[!include [banner](includes/banner.md)]
 
 **Kompilacja 8.1.2064**
 

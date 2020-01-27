@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b3eb53943546166eee845749a070ed2fca1a03b8
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 99a7e6130d45229011a185087d4872fe34b8224a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023960"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897633"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (9 lipiec 2019)
-
-[!include [banner](includes/banner.md)]
 
 W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Talent.
 
@@ -36,6 +34,7 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics
 Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent: Attract.
 
 ### <a name="coming-soon-in-attract"></a>Wkrótce w aplikacji Attract
+
 #### <a name="job-approvals-appear-on-the-home-page"></a>Zatwierdzenia zadań pojawiają się na stronie głównej
 
 Zatwierdzenia są wyświetlane w sekcji **Zatwierdzenia** na pulpicie nawigacyjnym. Osoby zatwierdzające mogą przeglądać swoje zatwierdzenia w obszarze **Przypisane do Ciebie**, w którym jest wyświetlany identyfikator zadania, tytuł, inne osoby zatwierdzające i data przypisania zadania. Użytkownicy, którzy przesyłają zadanie do zatwierdzenia, mogą przeglądać swoje zadania w obszarze **Żądane przez Ciebie**, w którym są wyświetlane osoby zatwierdzające, które muszą jeszcze zatwierdzić przesłane zadanie.
@@ -50,7 +49,7 @@ Zmiany opisane w tej części dotyczą kompilacji 8.1.2374.
 
 ### <a name="platform-update-28-for-finance-and-operations"></a>Aktualizacja Platform update 28 dla Finance and Operations
 
-Aby uzyskać więcej informacji dotyczących 28. aktualizacji platformy dla rozwiązania Finance and Operations, zobacz [Podgląd funkcji w 28. aktualizacji platformy Dynamics 365 Finance and Operations (lipiec 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+Aby uzyskać więcej informacji dotyczących 28. aktualizacji platformy dla rozwiązania Finance and Operations, zobacz [Podgląd funkcji w 28. aktualizacji platformy Dynamics 365 Finance and Operations (lipiec 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Obsługa firm w Common Data Service dla pól niestandardowych 
 

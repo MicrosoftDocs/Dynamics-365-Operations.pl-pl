@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 2a245891e2e3e8c0eae4f28d0932776c3ee976dc
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 0f4d2b8e5f78c5815c5ad7e5eae0d13ad7d15c12
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832822"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898696"
 ---
 # <a name="formalize-business-processes"></a>Formalizowanie procesów biznesowych
-
-[!include [banner](includes/banner.md)]
 
 Funkcja Proces biznesowy pozwala utworzyć szablon procesu biznesowego dla procesów biznesowych, które muszą być wykonywane w organizacji. Na przykład firma co rok przeprowadza audyt zasobów ludzkich (HR). W takim wypadku można utworzyć szablon, który śledzi wszystkie zadania wchodzące w skład procesu inspekcji. Ten szablon pomoże zagwarantować, że wszystkie zadania są wykonywane podczas każdej sesji audytu. Ponadto jeśli zadania muszą zostać wykonane w określonej kolejności, szablon może pomóc tego dopilnować.
 

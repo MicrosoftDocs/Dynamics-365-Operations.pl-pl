@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 291f7aefac61c26dfab81cfff28c1c6580d46de5
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812886"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897128"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Edytowanie przewodników wdrażania do pracy i szablonów w Dynamics 365 Talent - Onboard
+# <a name="edit-onboarding-guides-and-templates"></a>Edytowanie przewodników i szablonów wdrażania do pracy
 
 [!include [banner](includes/banner.md)]
 
@@ -114,11 +114,11 @@ Aby wprowadzić zmiany:
 1. Na karcie **Działania** przeciągnij elementy z prawej strony do obszaru edycji.
 2. Aby zorganizować przewodnik w sekcjach, przeciągnij element **Nowa sekcja** do obszaru edycji, a następnie wprowadź nazwę i opcjonalny opis sekcji.
 
-    ![[Dodawanie nowej sekcji do przewodnika wdrażania do pracy lub szabloniu](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
+    ![[Dodawanie nowej sekcji do przewodnika lub szablonu wdrażania do pracy](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
 
 3. Aby dodać działania dotyczące nowego zatrudnienia, przeciągnij element **Nowe działanie** do obszaru edycji, a następnie wprowadź nazwę i opis działania.
 
-    ![[Dodawanie nowego działania do przewodnika wdrażania do pracy lub szabloniu](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
+    ![[Dodawanie nowego działania do przewodnika lub szablonu wdrażania do pracy](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
 
 4. Dodaj zawartość sformatowaną do przewodnika wdrażania do pracy:
 
@@ -129,7 +129,7 @@ Aby wprowadzić zmiany:
     - Aby dodać formularz programu Microsoft Forms, przeciągnij element programu **Microsoft Forms** do obszaru edycji, wprowadź nazwę i opis działania, wprowadź adres URL formularza Microsoft Forms i określ rozmiar obszaru ekranu.
     - Aby dodać iframe zawierające treści internetowe, przeciągnij element programu **Treści internetowe (iframe)** do obszaru edycji, wprowadź nazwę i opis działania, wprowadź adres URL i treść oraz określ rozmiar obszaru ekranu.
 
-    ![[Dodawanie zawartości sformatowanej do przewodnika wdrażania do pracy lub szabloniu](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
+    ![[Dodawanie zawartości sformatowanej do przewodnika lub szablonu wdrażania do pracy](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
 
 2. Opcjonalnie: w obszarze po prawej stronie każdego działania należy przypisać działanie do określonej osoby lub roli, dodać termin płatności i osobę kontaktową, a następnie przypisać kolor kategorii. Podczas przypisywania działania do osoby lub roli tworzone jest zadanie dla każdej jednostki. To zadanie pojawia się w menu **Zadania** w Onboard.
 
@@ -148,7 +148,7 @@ Możesz dodać osoby kontaktowe, które mogą pomóc w nowym zatrudnieniu pomyś
 1. Na karcie **Kontakty** wybierz opcję **Nowy kontakt**.
 2. W oknie dialogowym **Dodawanie członka zespołu** wprowadź imię i nazwisko osoby kontaktowej lub adres e-mail, a następnie wprowadź krótki opis wyjaśniający, w jaki sposób osoba kontaktowa może pomóc nowym zatrudnieniu, a następnie wybierz opcję **Dodaj**. 
 
-    ![[Dodawanie kontaktów do przewodnika wdrażania do pracy lub szabloniu](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
+    ![[Dodawanie kontaktów do przewodnika lub szablonu wdrażania do pracy](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
 
     Alternatywnie można wybrać co najmniej jeden kontakt w ramach **Sugestie**.
 
@@ -169,7 +169,7 @@ Można dodawać przydatne pliki, mapy i łącza do sekcji **Zasoby** w przewodni
     - Aby dodać łącze, wybierz kartę **Łącze**, wprowadź nazwę i adres łącza, a następnie wybierz opcję **Dodaj**.
     - Aby dodać mapę, wybierz kartę **Mapa**, wprowadź nazwę i adres mapy, a następnie wybierz opcję **Dodaj**. Onboard będzie uwzględniał Mapę określonego adresu.
 
-    ![[Dodawanie zasobu do przewodnika wdrażania do pracy lub szabloniu](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
+    ![[Dodawanie zasobu do przewodnika lub szablonu wdrażania do pracy](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
 
 3. Wybierz **Zapisz**, żeby zapisać pracę.
 

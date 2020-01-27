@@ -3,7 +3,7 @@ title: Ustawianie prognozowania popytu
 description: W tym temacie opisano ustawienia zadania, które należy wykonać, by przygotować się do prognozowania popytu.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/16/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f56157be8cc61486801fc4c01bb191432dd9a541
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813806"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935498"
 ---
 # <a name="demand-forecasting-setup"></a>Ustawianie prognozowania popytu
 
@@ -63,7 +63,7 @@ W dowolnym momencie można dodawać wymiary prognozy do listy wymiarów używany
 
 Nie wszystkie towary zachowują się w taki sam sposób z perspektywy prognozowania popytu. Podobne towary mogą być pogrupowane w jeden klucz alokacji produktów i parametry, takie jak typy transakcji i ustawienia metod prognozy można ustawić według klucza alokacji produktów. Kliknij **Klucze alokacji produktów** w lewym okienku na stronie **Parametry prognozowania popytu**. 
 
-Aby wygenerować prognozę, Supply Chain Management używa sieciowej usługi uczenia maszynowego. Aby połączyć się z usługą, trzeba wprowadzić następujące informacje podczas logowania do usługi Microsoft Azure Machine Learning Studio:
+Aby wygenerować prognozę, Supply Chain Management używa sieciowej usługi uczenia maszynowego. Aby połączyć się z usługą, trzeba wprowadzić następujące informacje podczas logowania do usługi Microsoft Azure Machine Learning Studio (wersja klasyczna):
 
 -   Klucz sieciowy API
 -   Końcowy URL usługi sieciowej
@@ -71,7 +71,7 @@ Aby wygenerować prognozę, Supply Chain Management używa sieciowej usługi ucz
 -   Klucz konta magazynu systemu Azure
 
 > [!NOTE]
-> Nazwa konta i klucz konta magazynu Azure systemu są wymagane tylko w przypadku używania niestandardowego konta magazynu. Jeśli została wdrożona wersja lokalna programu, musisz mieć niestandardowe konto magazynu w systemie Azure, tak aby usługa uczenia maszynowego miała dostęp do danych historycznych. 
+> Nazwa konta i klucz konta magazynu Azure systemu są wymagane tylko w przypadku używania niestandardowego konta magazynu. Jeśli została wdrożona wersja lokalna programu, musisz mieć niestandardowe konto magazynu na platformie Azure, tak aby usługa Machine Learning miała dostęp do danych historycznych. 
 
 Aby utworzyć prognozy popytu, można wdrożyć własną usługę za pomocą platformy Machine Learning Studio lub eksperymentów prognozowania popytu dostępnych Supply Chain Management. Instrukcje wdrażania eksperymentów prognozowania popytu jako usługi sieciowe są dostępne w programie Supply Chain Management. Na stronie **Parametry prognozowania popytu** kliknij kartę **Uczenie maszynowe Azure**.
 

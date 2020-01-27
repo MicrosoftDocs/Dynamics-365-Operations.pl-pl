@@ -1,9 +1,9 @@
 ---
 title: Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych
 description: W tym temacie opisano wymagania dotyczące szacowania zapotrzebowania na sprzęt w środowisku lokalnym.
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8fa644f35a086af99cde74fd6a2062f9b59a6ff7
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812564"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870271"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych
 
@@ -137,7 +137,7 @@ W wydaniu o ogólnej dostępności można wdrożyć tylko jeden węzeł usługi 
 
 ## <a name="environment-orchestrator"></a>Environment Orchestrator
 
-Usługa Orchestrator zarządza wdrożeniem i pokrewną komunikacją z usługą LCS. Ta usługa jest wdrażana jako podstawowa usługa platformy Service Fabric i wymaga co najmniej trzech maszyn wirtualnych. Usługa znajduje się w tej samej lokalizacji, co usługi organizowania platformy Service Fabric. Szacując dla niej zapotrzebowanie na elementy infrastruktury, należy się kierować szczytowym obciążeniem klastra. Aby uzyskać więcej informacji, zobacz [Zagadnienia związane z planowaniem pojemności klastra usługi Service Fabric](/azure/service-fabric/service-fabric-cluster-capacity).
+Usługa Orchestrator zarządza wdrożeniem i pokrewną komunikacją z usługą LCS. Ta usługa jest wdrażana jako podstawowa usługa platformy Service Fabric i wymaga co najmniej trzech maszyn wirtualnych. Usługa znajduje się w tej samej lokalizacji, co usługi organizowania platformy Service Fabric. Szacując dla niej zapotrzebowanie na elementy infrastruktury, należy się kierować szczytowym obciążeniem klastra. Aby uzyskać więcej informacji, zobacz [Planowanie i przygotowywanie wdrożenia samodzielnego klastra usługi Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Wirtualizacja i nadsubskrypcja
 

@@ -3,7 +3,7 @@ title: Omówienie stanów cyklu życia produktu
 description: Stan cyklu życia produktu dokumentuje stan cyklu życia zwolnionego produktu lub wariantu produktu.
 author: cvocph
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b5b0ceb1926de6efda239fdbc69fb36a9d4b28e0
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813553"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934847"
 ---
 # <a name="product-lifecycle-state-overview"></a>Omówienie stanów cyklu życia produktu
 
@@ -74,11 +74,7 @@ Aby uzyskać szczegółowe informacje o sposobie używania stanu cyklu życia pr
 
 ## <a name="default-migration-import-and-export"></a>Domyślna migracja, import i eksport 
 
-Stany cyklu życia produktu nie są obsługiwane przez jednostki danych, a stanu cyklu życia nie można ustawić na zmienny za pomocą jednostek danych zwolnionego produktu.
-
--  W przypadki migracji z poprzednich wersji stan cyklu życia wszystkich produktów i wariantów produktów będzie pusty.  
--  W przypadku importowania zwolnionych produktów za pomocą jednostki danych domyślny stan cyklu życia zostanie zastosowany przy tworzeniu.  
--  Podczas importowania wariantów zwolnionego produktu za pomocą jednostki danych zostanie zaimportowany stan cyklu życia produktu zwolnionego produktu głównego.   
+Stany cyklu życia produktu są obsługiwane przez jednostki danych, a stan cyklu życia można ustawić na zmienny za pomocą jednostki danych zwolnionego produktu lub jednostki danych zwolnionego wariantu.
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Znajdowanie przestarzałych produktów i wariantów produktów 
 

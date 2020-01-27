@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824527"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933915"
 ---
 # <a name="business-document-management-overview"></a>Omówienie zarządzania dokumentami biznesowymi
 
-Użytkownicy biznesowi używają [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md), który umożliwia konfigurowanie formatów dokumentów wychodzących zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Użytkownicy mogą również zdefiniować przepływ danych w celu określenia, które dane aplikacji są umieszczane w wygenerowanych dokumentach. Struktura ER generuje dokumenty wychodzące w formatach Microsoft Office (skoroszyty programu Excel lub dokumenty programu Word) przy użyciu wstępnie zdefiniowanych szablonów. Szablony są wypełniane zgodnie z wymaganymi danymi, zgodnie z konfiguracją przepływu danych, podczas gdy wymagane dokumenty są generowane. Każdy skonfigurowany format może zostać opublikowany jako część rozwiązania ER w celu wygenerowania określonych dokumentów wychodzących. Ta funkcja jest reprezentowana przez konfigurację formatu ER, która może zawierać szablony, które mogą być używane do generowania różnych dokumentów wychodzących. Użytkownicy biznesowi mogą stosować tę strukturę do zarządzania wymaganymi dokumentami biznesowymi.
+Użytkownicy biznesowi używają platformy [Raportowanie elektroniczne (ER)](general-electronic-reporting.md), która umożliwia konfigurowanie formatów dokumentów wychodzących zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Użytkownicy mogą również zdefiniować przepływ danych w celu określenia, które dane aplikacji są umieszczane w wygenerowanych dokumentach. Struktura ER generuje dokumenty wychodzące w formatach Microsoft Office (skoroszyty programu Excel lub dokumenty programu Word) przy użyciu wstępnie zdefiniowanych szablonów. Szablony są wypełniane zgodnie z wymaganymi danymi, zgodnie z konfiguracją przepływu danych, podczas gdy wymagane dokumenty są generowane. Każdy skonfigurowany format może zostać opublikowany jako część rozwiązania ER w celu wygenerowania określonych dokumentów wychodzących. Ta funkcja jest reprezentowana przez konfigurację formatu ER, która może zawierać szablony, które mogą być używane do generowania różnych dokumentów wychodzących. Użytkownicy biznesowi mogą stosować tę strukturę do zarządzania wymaganymi dokumentami biznesowymi.
 
 **Zarządzanie dokumentami biznesowymi** jest oparte na górnej części struktury ER i umożliwia użytkownikom biznesowym edytowanie szablonów dokumentów biznesowych przy użyciu usługi Microsoft Office 365 lub odpowiedniej aplikacji klasycznych pakietu Microsoft Office. Edycja dokumentów może obejmować zmianę projektów dokumentów biznesowych i dodanie symboli zastępczych dla dodatkowych danych bez zmian kodu źródłowego i nowych wdrożeń. Do aktualizacji szablonów dokumentów biznesowych nie jest wymagana znajomość struktury ER.
 
@@ -59,7 +59,7 @@ Następujące raporty z szablonami opartymi na programie Excel są dostępne prz
 
 Dostępnych będzie więcej raportów. Powiadomienia specjalne o dodatkowych raportach będą wysyłane oddzielnie. 
 
-Kompletną listę raportów planowanych na dzień wydania w październiku 2019 można znaleźć w [Konfigurowalne raporty dotyczące dokumentów biznesowych w programach Word i Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Wykonaj przykład z tego tematu, aby dowiedzieć się więcej na temat tej funkcji.
+Kompletną listę raportów planowanych na dzień wydania w październiku 2019 można znaleźć w [Konfigurowalne raporty dotyczące dokumentów biznesowych w programach Word i Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Wykonaj przykład z tego tematu, aby dowiedzieć się więcej na temat tej funkcji.
 
 ## <a name="configure-er-parameters"></a>Konfigurowanie parametrów modułu ER
 

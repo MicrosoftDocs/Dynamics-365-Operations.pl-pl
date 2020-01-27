@@ -17,12 +17,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3e1281171a656a73a35d4990fd8a34b35c1c6db8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fdfc65d02d4468aee094a92e6760400c5e25af8f
+ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188287"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2888662"
 ---
 # <a name="reconcile-a-bank-account"></a>Uzgadnianie konta bankowego
 
@@ -64,7 +64,7 @@ Nie można uzgodnić wyciągu z konta bankowego z kontem bankowym, jeśli który
 
 8.  Aby wyświetlić transakcje bankowe, które nie zostały jeszcze uzgodnione, należy użyć raportu **Nieuzgodnione transakcje bankowe**. Aby wyświetlić wyciąg bankowy dla konta bankowego, należy użyć raportu **Wyciąg bankowy**.
 
-# <a name="cancel-bank-statement-reconciliation"></a>Anuluj uzgodnienie wyciągu bankowego 
+## <a name="cancel-bank-statement-reconciliation"></a>Anuluj uzgodnienie wyciągu bankowego 
 
 Funkcja Anuluj uzgodnienie wyciągu bankowego umożliwia anulowanie uzgodnienia wyciągu bankowego. Aby użyć tej funkcji, należy włączyć funkcję **Anuluj uzgadnianie wyciągu bankowego** w obszarze roboczym **Zarządzanie funkcjami**. Należy również włączyć parametr **Zezwalaj na edycję wyciągu bankowego**. W tym celu przejdź do **Zarządzanie gotówką i bankami > Ustawienia > Parametry modułu Zarządzanie gotówką i bankami > Uzgadnianie konta bankowego**.
  

@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8090fafc891d874c3f4fb646fe22a2b783ce37aa
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7057c5b24ee3ae03574ec106a0c7d268dfffb98e
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814842"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897196"
 ---
-# <a name="create-a-hiring-team-by-using-dynamics-365-talent---onboard"></a>Tworzenie zespołu rekrutacyjnego za pomocą Dynamics 365 Talent - Onboard
+# <a name="create-a-hiring-team"></a>Tworzenie zespołu rekrutacyjnego
 
 [!include [banner](includes/banner.md)]
 
@@ -35,7 +35,7 @@ W Microsoft Dynamics 365 Talent: Onboard można tworzyć zespoły rekrutacyjne. 
 2. W obszarze **Zespoły** wybierz kafelek **Dodaj** (znak plus \[**+**\]).
 3. W oknie dialogowym **Utwórz nowy zespół**, pod **Nazwa zespołu** wprowadź nazwę dla zespołu rekrutacyjnego.
 
-    ![[Tworzenie nowego zespołu w Onboard](./media/onboard-create-team.png)](./media/onboard-create-team.png)
+    ![[Tworzenie nowego zespołu w aplikacji Onboard](./media/onboard-create-team.png)](./media/onboard-create-team.png)
 
 4. W obszarze **Wybierz członków zespołu**, wprowadź nazwę lub adres e-mail każdego członka zespołu.
 
@@ -51,11 +51,11 @@ W Microsoft Dynamics 365 Talent: Onboard można tworzyć zespoły rekrutacyjne. 
 2. Wybierz zespół.
 3. Na karcie **Przewodniki** wybierz przycisk **Dodaj przewodniki**.
 
-    ![[Dodawanie poradników dołączania do zespołu](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
+    ![[Dodawanie przewodników wdrażania do pracy do zespołu](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
 
 4. Zaznacz pole wyboru dla każdego przewodnika wdrażania do pracy, który chcesz przypisać do zespołu, a następnie wybierz **Dodaj**.
 
-    ![[Wybieranie poradników wdrażania do pracy do dołączenia do zespołu](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
+    ![[Wybieranie przewodników wdrażania do pracy w celu dodania do zespołu](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
 
 ## <a name="assign-onboarding-templates-to-a-hiring-team"></a>Przypisywanie szablonów przewodników wdrażania do pracy do zespołu rekrutacyjnego
 
@@ -67,7 +67,7 @@ W Microsoft Dynamics 365 Talent: Onboard można tworzyć zespoły rekrutacyjne. 
 
 4. Zaznacz pole wyboru dla każdego szablonu, który chcesz przypisać do zespołu, a następnie wybierz **Dodaj**.
 
-    ![[Wybieranie szablonów do dołączenia do zespołu](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
+    ![[Wybieranie szablonów do dodania do zespołu](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
 
 ### <a name="see-also"></a>Informacje dodatkowe
 

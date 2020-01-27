@@ -3,7 +3,7 @@ title: Planowanie globalnej książki adresowej i innych książek adresowych
 description: W tym temacie opisano zagadnienia i decyzje, które należy uwzględnić w procesie planowania przed utworzeniem i skonfigurowaniem globalnej książki adresowej i wszelkich dodatkowych książek adresowych.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25a99284b2773e7c9d473357356c69a39f23c92d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 89c6e71e5f537f0f9309eca1025c8e74cdce6716
+ms.sourcegitcommit: 75bbcff474cfb8d2f282be2b9d2d7984d1505fa3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190035"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883418"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>Planowanie globalnej książki adresowej i innych książek adresowych
 
@@ -35,7 +35,7 @@ W tym temacie opisano zagadnienia i decyzje, które należy uwzględnić w proce
 
 Przed rozpoczęciem pracy z globalną książką adresową, należy określić wartości domyślne dla niej. Wartości te są następnie używane do wszelkich dodatkowych książek adresowych utworzone przez Ciebie.
 
-**Decyzje:**
+**Decyzje**
 
 - W jakiej kolejności powinny być wyświetlane nazwy rekordów stron typu **Osoba**? Na przykład: nazwisko, drugie imię, imię.
 - Czy rekordy stron mają być usuwane z książki adresowej po usunięciu rekordu roli? Wartości te są następnie używane do wszelkich dodatkowych książek adresowych utworzonych przez Ciebie.
@@ -58,11 +58,3 @@ Po utworzeniu w globalnej książki adresowej można utworzyć dodatkowe książ
 **Decyzja:**
 
 - Ile dodatkowych książek adresowych zostało utworzonych?
-
-### <a name="address-book-security"></a>Zabezpieczenia książki adresowej
-
-W dowolnym momencie można utworzyć książki adresowe i w dowolnym momencie można również ustawić parametry zabezpieczeń książki adresowej. Ustawianie uprawnień zabezpieczeń dla książki adresowej nie jest konieczne, ale w przeciwnym wypadku wszyscy pracownicy w firmie mogą wyświetlić wszystkie rekordy jednostek w tej książce adresowej. Można ustawić uprawnienia zabezpieczeń do rekordów stron za pomocą książki adresowej. Uprawnienia zabezpieczeń są oparte na zespołach. Takie rozwiązanie gwarantuje, że tylko pracownicy, którzy są przypisani do zespołu, mają dostęp do książki adresowej i mogą wyświetlić rekordy stron w tej książce adresowej. Musisz wybrać zespoły, które mają dostęp do każdej z książek adresowych. Dla każdej książki adresowej można ustawić uprawnienia zabezpieczeń, które przyznają lub blokują dostęp do określonych zespołów. Po udostępnieniu zespołowi uprawnień dostępu do książki adresowej jego członkowie mogą wyświetlać jej rekordy. Jeśli nie przyznasz zespołowi dostępu do książki adresowej, członkowie zespołu nie mogą wyświetlać książki adresowej ani jej zawartości.
-
-**Decyzja:**
-
-- Które zespoły mają dostęp do każdej nowej książki adresowej, którą chcesz utworzyć?

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9708c37f10cd08e6b98167fe24d9ae0380c3dac
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 411daa5bc08df530750fd5c09ca8b54bf537b548
+ms.sourcegitcommit: ba1c76497acc9afba85257976f0d4e96836871d1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772175"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2890334"
 ---
 # <a name="vendor-invoices-overview"></a>Omówienie faktur od dostawców
 
@@ -76,7 +76,7 @@ W momencie zaksięgowania faktury ilość **Pozostałe do zafakturowania** dla k
 
 Ta opcja zakłada, że przynajmniej jeden dokument przyjęcia produktów został zaksięgowany dla danego zamówienia zakupu. Faktura od dostawcy jest oparta na takich właśnie dokumentach przyjęcia produktów i odzwierciedla wielkości dostaw. Dane finansowe do faktury są oparte na informacjach wprowadzonych podczas księgowania faktury.
 
-Aby uzyskać więcej informacji, zobacz [Rejestrowanie faktury od dostawcy i porównywanie z przyjętą ilością](../accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md).
+Aby uzyskać więcej informacji, zobacz [Rejestrowanie faktury od dostawcy i porównywanie z przyjętą ilością](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md).
 
 ## <a name="working-with-multiple-invoices"></a>Korzystanie z wielu faktur
 

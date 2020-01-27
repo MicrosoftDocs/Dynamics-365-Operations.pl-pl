@@ -3,7 +3,7 @@ title: Strony i moduły zarządzania kontem
 description: Ten temat obejmuje strony i moduły zarządzania kontami w Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3986505a7e0e8d33d5b8ff2c06f493335731a8d9
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
+ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785395"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2885816"
 ---
 # <a name="account-management-pages-and-modules"></a>Strony i moduły zarządzania kontem
 
@@ -58,7 +58,7 @@ Strona szczegóły zamówienia zawiera szczegółowe informacje dotyczące poszc
 
 ### <a name="user-profile-page"></a>Strona profil użytkownika
 
-Na stronie profil użytkownika są wyświetlane szczegóły dotyczące konta użytkownika, takie jak nazwa użytkownika i adres e-mail. Korzysta z niego moduł profilu użytkownika. Chociaż adresu e-mail nie da się usunąć, można go edytować.
+Na stronie profilu użytkownika są wyświetlane szczegóły dotyczące konta użytkownika, takie jak nazwa użytkownika i adres e-mail. Korzysta z niego moduł profilu użytkownika. Chociaż adresu e-mail nie da się usunąć, można go edytować. Strona profilu użytkownika zawiera także preferencje użytkownika, które umożliwiają użytkownikowi włączenie lub rezygnację z niektórych funkcji, takich jak personalizacja list rekomendacji. 
 
 ### <a name="user-address-page"></a>Strona adres e-mail użytkownika
 

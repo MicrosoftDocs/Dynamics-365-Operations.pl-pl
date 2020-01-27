@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812840"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897150"
 ---
-# <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Udostępnianie zawartości innym współautorom w Dynamics 365 Talent - Onboard
+# <a name="share-content-with-other-contributors"></a>Udostępnianie zawartości innym współautorom
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ Microsoft Dynamics 365 Talent: Onboard pozwala udostępniać przewodniki wdraża
 
 3. W obszarze **Udostępnij**, jeśli odbiorcy powinni mieć możliwość zmiany przewodnika, ustaw te osoby, ustaw opcję **Czy te osoby mogą wprowadzać zmiany?** na **Włączona**. Jeśli odbiorcy powinni zostać powiadomieni pocztą elektroniczną, że udostępniłeś im przewodnik , ustaw opcję **Wyślij powiadomienie e-mail do adresatów** na **Włączona**.
 
-    ![[Ustawianie dostępu i preferencji e-mail dla przewodnika wdrażania do pracy](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
+    ![[Ustawianie preferencji dostępu i poczty e-mail na potrzeby przewodnika wdrażania do pracy](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
 
 4. Wprowadź nazwę lub adres e-mail i wybierz odbiorcę z listy rozwijanej.
 5. Na karcie **Zarządzaj dostępem** można przejrzeć lub zmienić, co odbiorcy mogą zrobić z przewodnikiem. Aby zmienić dostęp odbiorcy, na liście rozwijanej obok nazwy adresata wybierz opcję **Można wyświetlić**, **Można edytować** lub **Usuń**, stosownie do potrzeb.

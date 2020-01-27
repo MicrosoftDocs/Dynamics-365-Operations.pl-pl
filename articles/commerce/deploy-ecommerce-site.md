@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2632632b9b21dd3a88e9a4df0e65cfd28e579d2
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697458"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945520"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Wdrażanie nowej dzierżawy e-commerce
 
@@ -88,16 +88,16 @@ Aby uzyskać dostęp do środowiska projektowego, przejdź do karty **e-Commerce
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie sklepu internetowego](online-store-overview.md)
+[Konfigurowanie nazwy domeny](configure-your-domain-name.md)
 
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
 [Kojarzenie witryny online z kanałem](associate-site-online-store.md)
 
-[Konfigurowanie nazwy domeny](configure-your-domain-name.md)
-
-[Dodaj obsługę dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
-
-[Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
+[Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
 [Konfigurowanie stron niestandardowych do logowań użytkowników](custom-pages-user-logins.md)
+
+[Dodawanie obsługi dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
+
+[Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
