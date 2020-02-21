@@ -1,0 +1,7 @@
+## <a name="configurations-to-msdyn_productconfigurations"></a><span data-ttu-id="4cf7b-101">Konfiguracje do msdyn_productconfigurations</span><span class="sxs-lookup"><span data-stu-id="4cf7b-101">Configurations to msdyn_productconfigurations</span></span>
+
+<span data-ttu-id="4cf7b-102">Ten szablon synchronizuje dane między aplikacjami Finance and Operations i usługami Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="4cf7b-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="4cf7b-103">Pole aplikacji Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="4cf7b-103">Finance and Operations field</span></span> | <span data-ttu-id="4cf7b-104">Typ mapy</span><span class="sxs-lookup"><span data-stu-id="4cf7b-104">Map type</span></span> | <span data-ttu-id="4cf7b-105">Inne pole rozwiązania Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="4cf7b-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="4cf7b-106">Wartość domyślna</span><span class="sxs-lookup"><span data-stu-id="4cf7b-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="4cf7b-107">CONFIGURATIONID</span><span class="sxs-lookup"><span data-stu-id="4cf7b-107">CONFIGURATIONID</span></span> | >> | <span data-ttu-id="4cf7b-108">msdyn_productconfiguration</span><span class="sxs-lookup"><span data-stu-id="4cf7b-108">msdyn_productconfiguration</span></span> | 

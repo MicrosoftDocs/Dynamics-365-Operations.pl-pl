@@ -1,0 +1,7 @@
+## <a name="sales-tax-codes-to-msdyn_taxcodes"></a><span data-ttu-id="d5279-101">Kody podatków do msdyn_taxcodes</span><span class="sxs-lookup"><span data-stu-id="d5279-101">Sales tax codes to msdyn_taxcodes</span></span>
+
+<span data-ttu-id="d5279-102">Ten szablon synchronizuje dane między aplikacjami Finance and Operations i usługami Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="d5279-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="d5279-103">Pole aplikacji Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="d5279-103">Finance and Operations field</span></span> | <span data-ttu-id="d5279-104">Typ mapy</span><span class="sxs-lookup"><span data-stu-id="d5279-104">Map type</span></span> | <span data-ttu-id="d5279-105">Inne pole rozwiązania Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="d5279-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="d5279-106">Wartość domyślna</span><span class="sxs-lookup"><span data-stu-id="d5279-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="d5279-107">TAXCODE</span><span class="sxs-lookup"><span data-stu-id="d5279-107">TAXCODE</span></span> | >> | <span data-ttu-id="d5279-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="d5279-108">msdyn_name</span></span> | 

@@ -1,0 +1,8 @@
+## <a name="exchange-rate-type-to-msdyn_exchangeratetypes"></a><span data-ttu-id="8432b-101">Typ kursu wymiany do msdyn_exchangeratetypes</span><span class="sxs-lookup"><span data-stu-id="8432b-101">Exchange rate type to msdyn_exchangeratetypes</span></span>
+
+<span data-ttu-id="8432b-102">Ten szablon synchronizuje dane między aplikacjami Finance and Operations i usługami Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="8432b-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="8432b-103">Pole aplikacji Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="8432b-103">Finance and Operations field</span></span> | <span data-ttu-id="8432b-104">Typ mapy</span><span class="sxs-lookup"><span data-stu-id="8432b-104">Map type</span></span> | <span data-ttu-id="8432b-105">Inne pole rozwiązania Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="8432b-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="8432b-106">Wartość domyślna</span><span class="sxs-lookup"><span data-stu-id="8432b-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="8432b-107">NAZWA</span><span class="sxs-lookup"><span data-stu-id="8432b-107">NAME</span></span> | = | <span data-ttu-id="8432b-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="8432b-108">msdyn_name</span></span> | 
+<span data-ttu-id="8432b-109">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="8432b-109">DESCRIPTION</span></span> | = | <span data-ttu-id="8432b-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="8432b-110">msdyn_description</span></span> | 

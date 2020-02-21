@@ -1,0 +1,7 @@
+## <a name="sizes-to-msdyn_productsizes"></a><span data-ttu-id="015af-101">Rozmiary do msdyn_productsizes</span><span class="sxs-lookup"><span data-stu-id="015af-101">Sizes to msdyn_productsizes</span></span>
+
+<span data-ttu-id="015af-102">Ten szablon synchronizuje dane między aplikacjami Finance and Operations i usługami Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="015af-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="015af-103">Pole aplikacji Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="015af-103">Finance and Operations field</span></span> | <span data-ttu-id="015af-104">Typ mapy</span><span class="sxs-lookup"><span data-stu-id="015af-104">Map type</span></span> | <span data-ttu-id="015af-105">Inne pole rozwiązania Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="015af-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="015af-106">Wartość domyślna</span><span class="sxs-lookup"><span data-stu-id="015af-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="015af-107">SIZEID</span><span class="sxs-lookup"><span data-stu-id="015af-107">SIZEID</span></span> | >> | <span data-ttu-id="015af-108">msdyn_productsize</span><span class="sxs-lookup"><span data-stu-id="015af-108">msdyn_productsize</span></span> | 

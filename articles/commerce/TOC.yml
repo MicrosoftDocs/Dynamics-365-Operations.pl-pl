@@ -1,8 +1,8 @@
-- name: Dynamics 365 Commerce (wersja zapoznawcza)
+- name: Dynamics 365 Commerce
   items:
-    - name: Dynamics 365 Commerce (wersja zapoznawcza)
+    - name: Dynamics 365 Commerce
       items:
-        - name: Dynamics 365 Commerce (wersja zapoznawcza)
+        - name: Dynamics 365 Commerce
           href: index.md
         - name: Wprowadzenie
           items:
@@ -34,17 +34,17 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
                 - name: Tworzenie i automatyzowanie testów akceptacji użytkownika
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json
-            - name: Konfigurowanie środowiska wersji zapoznawczej usługi Commerce
+            - name: Konfigurowanie środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
               items:
-                - name: Omówienie środowiska wersji zapoznawczej usługi Commerce
+                - name: Omówienie środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
                   href: cpe-overview.md
-                - name: Ustanów środowisko wersji zapoznawczej usługi Commerce
+                - name: Aprowizowanie środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
                   href: provisioning-guide.md
-                - name: Konfiguruj środowisko wersji zapoznawczej usługi Commerce
+                - name: Konfigurowanie środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
                   href: cpe-post-provisioning.md
-                - name: Konfiguruj funkcje opcjonalne środowiska wersji zapoznawczej usługi Commerce
+                - name: Konfigurowanie opcjonalnych funkcji środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
                   href: cpe-optional-features.md
-                - name: Często zadawane pytania środowiska wersji zapoznawczej usługi Commerce
+                - name: Często zadawane pytania dotyczące środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
                   href: cpe-faq.md
             - name: Uwagi dotyczące wdrażania
               items:
@@ -55,14 +55,14 @@
                 - name: Wdrożenie w chmurze
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Wymagania systemowe dotyczące wdrożeń w chmurze
-                  href: ../retail/get-started/system-requirements.md?toc=/dynamics365/commerce/toc.json
+                  href: get-started/system-requirements.md
                 - name: Wdrożenie lokalne
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/commerce/toc.json
                 - name: Wymagania systemowe dotyczące wdrożeń lokalnych
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
                 - name: Kroki instalacji składników kanału detalicznego w środowisku lokalnym
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
-                - name: Zakup rozwiązania Finance + Operations (on-premises)
+                - name: Kup rozwiązanie Finance + Operations (lokalne)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
@@ -71,26 +71,28 @@
             - name: Obsługa uaktualniania i wersji N-1
               items:
                 - name: Obsługa uaktualniania i wersji N-1 w aplikacji Retail
-                  href: ../retail/dev-itpro/overview-upgrade-n-minus1.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Instalacja, konfiguracja i migracja jednorazowa we wdrożeniu etapowym (N-1)'
-                  href: ../retail/dev-itpro/n-1-installation-configuration.md?toc=/dynamics365/commerce/toc.json
-                - name: Uaktualnienie rozszerzenia kanałów rozwiązania Retail do najnowszej wersji zestawu Retail SDK
-                  href: ../retail/dev-itpro/retailSDK-update.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/n-1-installation-configuration.md
+                - name: Uaktualnienie rozszerzenia kanałów rozwiązania Retail do najnowszej wersji zestawu SDK do Retail
+                  href: dev-itpro/retailSDK-update.md
             - name: Nowości i zmiany
               items:
-                - name: Rozwiązanie Retail w wersji 10.0.7
-                  href: ../retail/get-started/whats-new-10-0-7.md?toc=/dynamics365/commerce/toc.json
-                - name: Rozwiązanie Retail w wersji 10.0.6
-                  href: ../retail/get-started/whats-new-10-0-6.md?toc=/dynamics365/commerce/toc.json
-                - name: Nowości i zmiany w poprzednich wersjach
+                - name: Nowości i zmiany w aplikacjach Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
+                - name: Nowości i zmiany w rozwiązaniu Commerce
                   items:
-                    - name: Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-                    - name: Finance and Operations Enterprise Edition 7.3
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/commerce/toc.json
+                    - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
+                      href: get-started/whats-new-home-page.md
+                    - name: Commerce w wersji 10.0.9 (kwiecień 2020 r.)
+                      href: get-started/whats-new-10-0-9.md
+                    - name: Commerce w wersji 10.0.8 (luty 2020 r.)
+                      href: get-started/whats-new-10-0-8.md
+                    - name: Retail w wersji 10.0.7 (styczeń 2020 r.)
+                      href: get-started/whats-new-10-0-7.md
                 - name: Usunięte lub wycofane funkcje
                   items:
-                    - name: Usunięte lub przestarzałe funkcje w rozwiązaniu Finance and Operations
+                    - name: Usunięte lub wycofane funkcje w aplikacji Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Funkcje systemu AX 2012, które zostały odroczone'
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
@@ -180,51 +182,51 @@
           items:
             - name: Architektura
               items:
-                - name: Składniki rozwiązania Retail
-                  href: ../retail/retail-components.md?toc=/dynamics365/commerce/toc.json
-                - name: Architektura usługi Retail Server
-                  href: ../retail/dev-itpro/retail-server-architecture.md?toc=/dynamics365/commerce/toc.json
+                - name: Składniki rozwiązania Commerce
+                  href: retail-components.md
+                - name: Architektura Commerce Scale Unit
+                  href: dev-itpro/retail-server-architecture.md
                 - name: Wybieranie topologii w sklepie
-                  href: ../retail/dev-itpro/retail-in-store-topology.md?toc=/dynamics365/commerce/toc.json
-                - name: Komunikacja w kanale Commerce Data Exchange i sprzedaży detalicznej
-                  href: ../retail/dev-itpro/define-retail-channel-communications-cdx.md?toc=/dynamics365/commerce/toc.json
-                - name: Architektura aplikacji Retail Modern POS
-                  href: ../retail/dev-itpro/retail-modern-pos-architecture.md?toc=/dynamics365/commerce/toc.json
-                - name: Architektura publikowania sklepu internetowego w rozwiązaniu Retail
-                  href: ../retail/dev-itpro/retail-online-store-publishing-architecture.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-in-store-topology.md
+                - name: Komunikacja w kanale Commerce Data Exchange i handlu
+                  href: dev-itpro/define-retail-channel-communications-cdx.md
+                - name: Architektura aplikacji Modern POS
+                  href: dev-itpro/retail-modern-pos-architecture.md
+                - name: Architektura publikowania sklepu internetowego
+                  href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Zawartość Retail Channel Performance Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Certyfikacja PA-DSS (Payment Application Data Security Standards)
-                  href: ../retail/dev-itpro/PA-DSS-Certification.md?toc=/dynamics365/commerce/toc.json
-                - name: Funkcje sprzedaży detalicznej są dostępne we wdrożeniach lokalnych
-                  href: ../retail/retail-onprem.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/PA-DSS-Certification.md
+                - name: Funkcje rozwiązania Commerce są dostępne we wdrożeniach lokalnych
+                  href: retail-onprem.md
             - name: Wdrażanie i poprawki
               items:
-                - name: Retail Store Scale Unit
-                  href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie i instalowanie Retail Store Scale Unit
-                  href: ../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie i instalowanie Retail Modern POS
-                  href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
-                - name: Zarządzanie kontami i urządzeniami rozwiązania Retail z centrali
-                  href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
-                - name: Aktywacja urządzenia z aplikacją Retail POS
-                  href: ../retail/dev-itpro/retail-device-activation.md?toc=/dynamics365/commerce/toc.json
+                - name: Commerce Scale Unit
+                  href: dev-itpro/retail-store-system-begin.md
+                - name: Konfigurowanie i instalowanie aplikacji Commerce Scale Unit
+                  href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+                - name: Konfigurowanie i instalowanie aplikacji Modern POS
+                  href: retail-modern-pos-device-activation.md
+                - name: Zarządzanie kontami i urządzeniami z centrali
+                  href: set-up-activation-accounts-validate-devices-hq.md
+                - name: Aktywacja urządzenia punktu sprzedaży
+                  href: dev-itpro/retail-device-activation.md
                 - name: Zabezpieczanie aplikacji Cloud POS w środowiskach udostępnionych
-                  href: ../retail/dev-itpro/secure-retail-cloud-pos.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Konfigurowanie i instalowanie modułu Retail Hardware Station
-                  href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
-                - name: Masowe wdrażanie składników samoobsługi rozwiązania Retail
-                  href: ../retail/dev-itpro/retail-mass-deployment.md?toc=/dynamics365/commerce/toc.json
+                  href: retail-hardware-station-configuration-installation.md
+                - name: Masowe wdrażanie składników samoobsługi
+                  href: dev-itpro/retail-mass-deployment.md
                 - name: Zdarzenia składników rozwiązania Retail używane na potrzeby diagnostyki i rozwiązywania problemów
-                  href: ../retail/dev-itpro/retail-component-events-diagnostics-troubleshooting.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Stosowanie wdrażalnego pakietu
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
             - name: Zarządzanie cyklem życia implementacji
               items:
                 - name: Strona główna zarządzania cyklem życia implementacji
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Architektura dla aplikacji Finance and Operations
+                - name: Architektura aplikacji Finance and Operations
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Microsoft FastTrack for Finance and Operations
                   href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/commerce/toc.json
@@ -248,586 +250,726 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: Wiele projektów usługi LCS i środowisk produkcyjnych w tej samej dzierżawie usługi Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Wdrażanie projektów aplikacji Finance and Operations Retail
-                  href: ../retail/dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Konfigurowanie nowych środowisk, usługi Azure DevOps i gałęzi dla projektów aplikacji Retail'
-                  href: ../retail/dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md?toc=/dynamics365/commerce/toc.json
-                - name: Aktualizowanie kodu i środowisk dla projektów aplikacji Retail
-                  href: ../retail/dev-itpro/updating-environments.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementowanie projektów Finance and Operations Commerce
+                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+                - name: 'Konfigurowanie nowych środowisk, usługi Azure DevOps i gałęzi dla projektów aplikacji Commerce'
+                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+                - name: Aktualizowanie kodu i środowisk dla projektów aplikacji Commerce
+                  href: dev-itpro/updating-environments.md
                 - name: Testowanie i problemy z wydajnością
-                  href: ../retail/dev-itpro/retail-implementation-testing-performance.md?toc=/dynamics365/commerce/toc.json
-        - name: Administrowanie systemem
+                  href: dev-itpro/retail-implementation-testing-performance.md
+        - name: Konfigurowanie kanałów
           items:
-            - name: Konfiguracja środowiska
+            - name: Omówienie kanałów
+              href: channels-overview.md
+            - name: Wymagania wstępne dotyczące kanału
               items:
-                - name: Dodawanie linków do postanowień prawnych i zasad zachowania poufności informacji organizacji
-                  href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/commerce/toc.json
-                - name: Zarządzanie Mapami Bing
-                  href: ../retail/dev-itpro/manage-bing-maps.md?toc=/dynamics365/commerce/toc.json
-        - name: Konfigurowanie kanałów i zarządzanie nimi
-          items:
-            - name: Podstawowa konfiguracja między kanałami
+                - name: Wymagania wstępne dotyczące konfiguracji kanału
+                  href: channels-prerequisites.md
+                - name: Ogólne wymagania wstępne
+                  items:
+                    - name: Organizacje i hierarchie organizacyjne
+                      items:
+                        - name: Omówienie organizacji i hierarchii organizacyjnych
+                          href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json
+                        - name: Planowanie hierarchii organizacyjnej
+                          href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json
+                        - name: Tworzenie firm
+                          href: channels-legal-entities.md
+                        - name: Konfigurowanie hierarchii organizacyjnych
+                          href: channels-org-hierarchies.md
+                        - name: Tworzenie jednostki operacyjnej
+                          href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json
+                        - name: Definiowanie relacji między jednostkami organizacyjnymi
+                          href: tasks/design-relationships-between-organizational-units.md
+                    - name: Konfiguracja magazynu
+                      href: channels-setup-warehouse.md
+                    - name: Ustawienia podatku
+                      items:
+                        - name: Omówienie podatku
+                          href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json
+                        - name: Metody naliczania podatku
+                          href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json
+                        - name: Przypisanie i zastąpienia podatku
+                          href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
+                        - name: Opcje Cała kwota i Obliczanie interwału dla kodów podatku
+                          href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurowanie profilu powiadomienia
+                      href: email-notification-profiles.md
+                    - name: Sekwencje identyfikatorów
+                      items:
+                        - name: Omówienie sekwencji identyfikatorów
+                          href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/retail/toc.json
+                        - name: Konfigurowanie indywidualnych sekwencji identyfikatorów
+                          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/retail/toc.json
+                        - name: Konfigurowanie sekwencji identyfikatorów za pomocą kreatora
+                          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/retail/toc.json
+                    - name: Konfigurowanie domyślnego klienta i książki adresowej
+                      href: default-customer.md
+                - name: Wymagania wstępne dotyczące kanału aplikacji Retail
+                  items:
+                    - name: Kody informacji i grupy kodów informacji
+                      href: info-codes-retail.md
+                    - name: Tworzenie profilu funkcji handlu detalicznego
+                      href: retail-functionality-profile.md
+                    - name: Tworzenie nowej książki adresowej
+                      href: new-address-book.md
+                    - name: Omówienie układu ekranu
+                      href: pos-screen-layouts.md
+                - name: Wymagania wstępne dotyczące kanału online
+                  items:
+                    - name: Tworzenie profilu funkcji online
+                      href: online-functionality-profile.md
+            - name: Konfigurowanie kanału handlu detalicznego
               items:
-                - name: Inicjowanie danych początkowych w nowych środowiskach rozwiązania Retail
-                  href: ../retail/enable-configure-retail-functionality.md?toc=/dynamics365/commerce/toc.json
-                - name: Kody informacji i grupy kodów informacji
-                  href: ../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json
-            - name: Zarządzanie kanałami sklepu
-              items:
-                - name: Konfigurowanie kanałów w handlu detalicznym
-                  href: ../retail/define-maintain-retail-channels.md?toc=/dynamics365/commerce/toc.json
-                - name: Tworzenie i zmiana godzin pracy sklepu
-                  href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie i instalowanie modułu Retail Hardware Station
-                  href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurowanie kanału handlu detalicznego
+                  href: channel-setup-retail.md
+                - name: Konfigurowanie pracowników sieci sprzedaży
+                  href: tasks/worker.md
                 - name: Modern Point of Sale (MPOS) i Cloud POS
                   items:
                     - name: Wybór między aplikacjami MPOS i Cloud POS
-                      href: ../retail/MPOS-or-CPOS.md?toc=/dynamics365/commerce/toc.json
+                      href: MPOS-or-CPOS.md
                     - name: Operacje online i offline w punkcie sprzedaży
-                      href: ../retail/pos-operations.md?toc=/dynamics365/commerce/toc.json
-                    - name: Aktywacja urządzenia dostosowanej aplikacji Retail MPOS
-                      href: ../retail/dev-itpro/retail-POS-activation-changes.md?toc=/dynamics365/commerce/toc.json
+                      href: pos-operations.md
+                    - name: Aktywacja urządzenia dostosowanej aplikacji Modern POS
+                      href: dev-itpro/retail-POS-activation-changes.md
                     - name: Układy ekranu danych demonstracyjnych w aplikacjach MPOS i Cloud POS
-                      href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
+                      href: demo-data.md
                     - name: Wyszukiwanie produktów i odbiorców w punkcie sprzedaży
-                      href: ../retail/POS-search-improvements.md?toc=/dynamics365/commerce/toc.json
+                      href: POS-search-improvements.md
                     - name: Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Ulepszenia w zakresie zarządzania gotówką
-                      href: ../retail/cash-mgmt.md?toc=/dynamics365/commerce/toc.json
+                      href: cash-mgmt.md
                     - name: Wyszukiwanie zapasów w punkcie sprzedaży
-                      href: ../retail/product-variants-POS.md?toc=/dynamics365/commerce/toc.json
+                      href: product-variants-POS.md
                     - name: Wstrzymywanie i wznawianie transakcji w punkcie sprzedaży
-                      href: ../retail/pos-suspend-recall-transactions.md?toc=/dynamics365/commerce/toc.json
+                      href: pos-suspend-recall-transactions.md
                     - name: Funkcje punktu sprzedaży w trybie offline
-                      href: ../retail/pos-offline-functionality.md?toc=/dynamics365/commerce/toc.json
+                      href: pos-offline-functionality.md
                     - name: Zarządzanie zmianami i szufladami kasowymi
-                      href: ../retail/shift-drawer-management.md?toc=/dynamics365/commerce/toc.json
+                      href: shift-drawer-management.md
                     - name: Saldo spieniężenia karty upominkowej
-                      href: ../retail/dev-itpro/gift-card-cash-out.md?toc=/dynamics365/commerce/toc.json
+                      href: dev-itpro/gift-card-cash-out.md
                     - name: Wysyłanie zamówień z innego sklepu
-                      href: ../retail/charge-send.md?toc=/dynamics365/commerce/toc.json
+                      href: charge-send.md
                     - name: Ukrywanie metod dostawy bez przewoźnika w oknie dialogowym wysyłki z punktu sprzedaży
-                      href: ../retail/hide-non-carrier-modes.md?toc=/dynamics365/commerce/toc.json
+                      href: hide-non-carrier-modes.md
                     - name: Rejestrator zadań i Pomoc dla aplikacji MPOS i Cloud POS
-                      href: ../retail/task-recorder-retail-pos.md?toc=/dynamics365/commerce/toc.json
+                      href: task-recorder-retail-pos.md
                     - name: Sprzętowe urządzenia peryferyjne
                       items:
-                        - name: Urządzenia peryferyjne handlu detalicznego
-                          href: ../retail/retail-peripherals-overview.md?toc=/dynamics365/commerce/toc.json
-                        - name: Symulator urządzeń peryferyjnych handlu detalicznego
-                          href: ../retail/dev-itpro/retail-peripheral-simulator.md?toc=/dynamics365/commerce/toc.json
-                        - name: Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
-                          href: ../retail/define-maintain-channel-clients-registers-hw-stations.md?toc=/dynamics365/commerce/toc.json
+                        - name: Urządzenia peryferyjne
+                          href: retail-peripherals-overview.md
+                        - name: Symulator urządzeń peryferyjnych
+                          href: dev-itpro/retail-peripheral-simulator.md
+                        - name: Podłączanie urządzeń peryferyjnych do punktu sprzedaży
+                          href: define-maintain-channel-clients-registers-hw-stations.md
                     - name: Układy ekranu
                       items:
                         - name: Układy ekranu danych demonstracyjnych w aplikacji MPOS/CPOS
-                          href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
+                          href: demo-data.md
                         - name: Układy ekranu w aplikacji POS
-                          href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
-                        - name: Instalowanie projektanta układów aplikacji Retail POS
-                          href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
+                          href: pos-screen-layouts.md
+                        - name: Instalowanie projektanta układów punktu sprzedaży
+                          href: install-pos-layout-designer.md
                         - name: Wybieranie ustawień powiadomień
-                          href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
+                          href: Notifications-POS.md
                         - name: Ustawienia języka użytkownika i aplikacji POS
-                          href: ../retail/pos-application-user-language-settings.md?toc=/dynamics365/commerce/toc.json
+                          href: pos-application-user-language-settings.md
                         - name: Konfigurowanie obrazów w aplikacji MPOS i zarządzanie nimi
-                          href: ../retail/set-up-manage-images-retail-mpos.md?toc=/dynamics365/commerce/toc.json
+                          href: set-up-manage-images-retail-mpos.md
                         - name: Obrazy klienta w punkcie sprzedaży
-                          href: ../retail/pos-image.md?toc=/dynamics365/commerce/toc.json
+                          href: pos-image.md
                     - name: Zamówienia odbiorcy
                       items:
                         - name: Zamówienia odbiorców w aplikacji MPOS
-                          href: ../retail/customer-orders-overview.md?toc=/dynamics365/commerce/toc.json
+                          href: customer-orders-overview.md
                         - name: Hybrydowe zamówienia odbiorców
-                          href: ../retail/hybrid-customer-orders.md?toc=/dynamics365/commerce/toc.json
+                          href: hybrid-customer-orders.md
                     - name: Ekspedienci
                       items:
                         - name: Śledzenie prowizji w punkcie sprzedaży przy użyciu grup sprzedaży
-                          href: ../retail/pos-sales-groups-track-commissions.md?toc=/dynamics365/commerce/toc.json
+                          href: pos-sales-groups-track-commissions.md
                     - name: Aktywacja urządzenia
                       items:
                         - name: 'Konfigurowanie, instalowanie i aktywacja aplikacji MPOS'
-                          href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
+                          href: retail-modern-pos-device-activation.md
                         - name: Konfigurowanie funkcjonalności logowania rozszerzonego w aplikacjach MPOS i Cloud POS
-                          href: ../retail/extended-logon.md?toc=/dynamics365/commerce/toc.json
-                        - name: Zarządzanie kontami aktywacji aplikacji Retail i weryfikowanie urządzeń
-                          href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
-                    - name: Paragony
-                      items:
-                        - name: Konfigurowanie i projektowanie formatów paragonów
-                          href: ../retail/receipt-templates-printing.md?toc=/dynamics365/commerce/toc.json
-                        - name: Wysyłanie paragonów pocztą e-mail z aplikacji MPOS
-                          href: ../retail/email-receipts.md?toc=/dynamics365/commerce/toc.json
-            - name: Zarządzanie kanałami online
+                          href: extended-logon.md
+                        - name: Zarządzanie kontami aktywacji i weryfikowanie urządzeń
+                          href: set-up-activation-accounts-validate-devices-hq.md
+                    - name: Tworzenie wymiarów finansowych dla kas w punktach sprzedaży i konfigurowanie wartości wymiarów w kasach
+                      href: tasks/create-financial-dimensions-pos.md
+                    - name: Tworzenie grupy uprawnień dla punktu sprzedaży
+                      href: tasks/create-pos-permission-groups.md
+                    - name: Tworzenie profili graficznych dla punktu sprzedaży
+                      href: tasks/create-pos-visual-profile-2016-02.md
+                - name: Konfigurowanie i instalowanie modułu Retail Hardware Station
+                  href: retail-hardware-station-configuration-installation.md
+                - name: Paragony
+                  items:
+                    - name: Konfigurowanie i projektowanie formatów paragonów
+                      href: receipt-templates-printing.md
+                    - name: Wysyłanie paragonów pocztą e-mail z aplikacji Modern POS (MPOS)
+                      href: email-receipts.md
+                    - name: Resetowanie numerów paragonów
+                      href: reset_receipt_number_sequence.md
+                - name: Tworzenie profilów funkcji dla przedstawicieli handlowych
+                  href: tasks/configure-functionality-profile-sales-representative.md
+                - name: Tworzenie wymiarów finansowych dla kanałów sprzedaży detalicznej i konfigurowanie wartości w sklepach
+                  href: tasks/create-financial-dimensions-retail-channels.md
+            - name: Konfigurowanie kanału online
               items:
-                - name: Omówienie sklepu internetowego
-                  href: online-store-overview.md
-                - name: Tworzenie witryny handlu elektronicznego
-                  items:
-                    - name: Konfigurowanie nazwy domeny
-                      href: configure-your-domain-name.md
-                    - name: Wdrażanie nowej dzierżawy e-commerce
-                      href: deploy-ecommerce-site.md
-                    - name: Konfigurowanie kanału sklepu internetowego
-                      href: ../retail/online-stores.md?toc=/dynamics365/commerce/toc.json
-                    - name: Tworzenie witryny handlu elektronicznego
-                      href: create-ecommerce-site.md
-                    - name: Kojarzenie witryny handlu elektronicznego z kanałem online
-                      href: associate-site-online-store.md
-                    - name: Zarządzanie plikami robots.txt
-                      href: manage-robots-txt-files.md
-                    - name: Konfiguracja stron niestandardowych do logowań użytkowników
-                      href: custom-pages-user-logins.md
-                    - name: Dodawanie obsługi dla sieci dostarczania zawartości (CDN)
-                      href: add-cdn-support.md
-                    - name: Włączanie wykrywania sklepu na podstawie lokalizacji
-                      href: enable-store-detection.md
-                - name: Omówienie przykładowej witryny
-                  items:
-                    - name: Omówienie strony głównej
-                      href: quick-tour-home-page.md
-                    - name: Omówienie domyślnej strony docelowej kategorii i strony wyników wyszukiwania
-                      href: category-search-page-overview.md
-                    - name: Omówienie stron szczegółów produktów
-                      href: quick-tour-pdp.md
-                    - name: Omówienie stron koszyka i realizacji zamówienia
-                      href: quick-tour-cart-checkout.md
-                    - name: Omówienie stron zarządzania kontem
-                      href: quick-tour-account-management.md
-                - name: Zarządzanie ustawieniami witryny
-                  items:
-                    - name: Omówienie strony tworzenia
-                      href: authoring-home-overview.md
-                    - name: Zarządzanie użytkownikami i rolami
-                      href: manage-ecommerce-users-roles.md
-                    - name: Zagadnienia optymalizacji wyszukiwarki dla witryny
-                      href: search-engine-optimization-considerations.md
-                    - name: Zarządzanie zasadami zabezpieczeń zawartości (CSP)
-                      href: manage-csp.md
-                - name: Zarządzanie zawartością witryny
-                  items:
-                    - name: Sposoby dodawania zawartości
-                      href: add-manage-content.md
-                    - name: Słownik terminów dotyczących modelu strony
-                      href: page-elements-overview.md
-                    - name: Dokumentowanie stanów i cyklów życia
-                      href: document-states-overview.md
-                    - name: Praca z grupami publikowania
-                      href: publish-groups.md
-                    - name: Wymarkowanie witryny i dodawanie szczegółów sklepu
-                      items:
-                        - name: Dodawanie logo
-                          href: add-logo.md
-                        - name: Wybór motywu witryny
-                          href: select-site-theme.md
-                        - name: Praca z plikami zastępowania CSS
-                          href: css-override-files.md
-                        - name: Dodawanie ikony favicon
-                          href: add-favicon.md
-                        - name: Dodawanie wiadomości powitalnej
-                          href: add-welcome-message.md
-                        - name: Dodawanie powiadomienia o prawach autorskich
-                          href: add-copyright-notice.md
-                        - name: Dodawanie języków
-                          href: add-languages-to-site.md
-                        - name: Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii
-                          href: add-telemetry.md
-                    - name: Moduły
-                      items:
-                        - name: Praca z modułami
-                          href: work-with-modules.md
-                    - name: Fragmenty
-                      items:
-                        - name: Praca z fragmentami
-                          href: work-with-fragments.md
-                    - name: Szablony
-                      items:
-                        - name: Omówienie szablonów i układów
-                          href: templates-layouts-overview.md
-                        - name: Praca z szablonami
-                          href: work-with-templates.md
-                        - name: Praca z układami predefiniowanymi
-                          href: work-with-layouts.md
-                    - name: Strony
-                      items:
-                        - name: Modyfikacja istniejącej strony witryny
-                          href: modify-existing-page.md
-                        - name: Dodawanie nowej strony witryny
-                          href: add-new-page.md
-                        - name: Wybieranie układów stron
-                          href: select-page-layouts.md
-                        - name: Zarządzanie metadanymi funkcji optymalizacji aparatu wyszukiwania
-                          href: manage-seo-metadata.md
-                        - name: 'Zapisywanie, pogląd i publikowanie strony'
-                          href: save-preview-publish-page.md
-                        - name: Wzbogacanie strony produktu
-                          href: enrich-product-page.md
-                        - name: Wzbogacanie strony docelowej kategorii
-                          href: enrich-category-page.md
-                        - name: Weryfikowanie dostępności zawartości strony
-                          href: verify-accessibility.md
-                    - name: Nawigacja w witrynie
-                      items:
-                        - name: Dostosowywanie nawigacji w witrynie
-                          href: customize-site-navigation.md
-                        - name: Tworzenie adresu URL strony
-                          href: create-page-URL.md
-                - name: Zapewnienie zgodności witryny
-                  items:
-                    - name: Omówienie zgodności
-                      href: compliance-overview.md
-                    - name: Funkcje i możliwości dostępności
-                      href: accessibility.md
-                    - name: Zgodność z plikami cookie
-                      href: cookie-compliance.md
-                    - name: Dodawanie strony zasad ochrony prywatności
-                      href: add-privacy-page.md
-                - name: Zestaw początkowy
-                  items:
-                    - name: Omówienie zestawu początkowego
-                      href: starter-kit-overview.md
-                    - name: Moduły kontenera
-                      items:
-                        - name: Moduł kontenera
-                          href: add-container-module.md
-                    - name: Moduły marketingu
-                      items:
-                        - name: Moduł alertów
-                          href: add-alert.md
-                        - name: Moduł karuzeli
-                          href: add-carousel.md
-                        - name: Moduł umieszczania zawartości
-                          href: add-content-placement-modules.md
-                        - name: Moduł zaawansowanego bloku zawartości
-                          href: add-content-rich-block.md
-                        - name: Moduł funkcji
-                          href: add-feature-module.md
-                        - name: Moduł bohatera
-                          href: add-hero-module.md
-                        - name: Moduł odtwarzacza wideo
-                          href: add-video-player.md
-                    - name: Moduły nagłówka i stopki
-                      items:
-                        - name: Moduł nagłówka
-                          href: author-header-module.md
-                        - name: Moduł stopki
-                          href: author-footer-module.md
-                    - name: Moduły strony szczegółów produktu
-                      items:
-                        - name: Moduł pola zakupu
-                          href: add-buy-box.md
-                    - name: Moduły zakupu
-                      items:
-                        - name: Moduł koszyka
-                          href: add-cart-module.md
-                        - name: Moduł realizacji transakcji
-                          href: add-checkout-module.md
-                        - name: Moduł potwierdzenia zamówienia
-                          href: order-confirmation-module.md
-                    - name: Moduły zarządzania kontem
-                      items:
-                        - name: Strony i moduły zarządzania kontem
-                          href: account-management.md
-                    - name: Moduły kolekcji produktów
-                      items:
-                        - name: Moduły kolekcji produktów
-                          href: product-collection-module-overview.md
-                - name: Wyszukiwanie
-                  items:
-                    - name: Domyślna strona docelowa kategorii i strona wyników wyszukiwania
-                      href: category-search-page-overview.md
-                    - name: Omówienie wyszukiwania w chmurze
-                      href: cloud-powered-search-overview.md
-                - name: Raportowanie
-                  items:
-                    - name: Generowanie raportów kanału online
-                      href: generate-reports.md
-                - name: Obsługa błędów
-                  items:
-                    - name: Tworzenie niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx/5xx
-                      href: build-pages-400-500-errors.md
-            - name: Zarządzanie kanałami biura obsługi
+                - name: Konfigurowanie kanału online
+                  href: channel-setup-online.md
+            - name: Konfigurowanie kanału biura obsługi
               items:
                 - name: Funkcje sprzedaży przez biuro obsługi
-                  href: ../retail/call-center-functionality.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie kanałów biura obsługi
-                  href: ../retail/set-up-order-processing-options.md?toc=/dynamics365/commerce/toc.json
+                  href: call-center-functionality.md
+                - name: Konfigurowanie kanału biura obsługi
+                  href: channel-setup-callcenter.md
                 - name: Katalogi biura obsługi
-                  href: ../retail/call-center-catalogs.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie metod dostawy i opłat
-                  href: ../retail/configure-call-center-delivery.md?toc=/dynamics365/commerce/toc.json
+                  href: call-center-catalogs.md
+                - name: Konfigurowanie opcji przetwarzania zamówień w biurze obsługi
+                  href: set-up-order-processing-options.md
+                - name: Konfigurowanie metod dostawy i opłat w biurze obsługi
+                  href: configure-call-center-delivery.md
                 - name: Konfigurowanie i używanie alertów o oszustwie
-                  href: ../retail/set-up-fraud-alerts.md?toc=/dynamics365/commerce/toc.json
+                  href: set-up-fraud-alerts.md
                 - name: Konfigurowanie programów sprzedaży ciągłej dla biur obsługi
-                  href: ../retail/set-up-continuity-program.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie i używanie wstrzymań zamówień w biurze obsługi
-                  href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
-        - name: Konfiguracja wielokanałowa
+                  href: set-up-continuity-program.md
+            - name: Dodatkowa konfiguracja kanału
+              items:
+                - name: Dodawanie kanału do hierarchii organizacyjnej
+                  href: channel-add-to-org-hierarchy.md
+                - name: Zaawansowane opłaty automatyczne
+                  items:
+                    - name: Konfigurowanie i używanie zaawansowanych opłat automatycznych
+                      href: omni-auto-charges.md
+                    - name: Proporcjonalne dzielenie opłat z nagłówka między pasujące wiersze sprzedaży
+                      href: pro-rate-charges-matching-lines.md
+                - name: Zarządzanie sklepem sieciowym
+                  items:
+                    - name: Tworzenie i zmiana godzin pracy sklepu
+                      href: dev-itpro/store-hours.md
+                    - name: Commerce Scale Unit
+                      href: dev-itpro/retail-store-system-begin.md
+                - name: Zarządzanie biurem obsługi
+                  items:
+                    - name: Konfigurowanie i używanie wstrzymań zamówień w biurze obsługi
+                      href: work-with-order-holds.md
+                    - name: Definiowanie harmonogramów sprzedaży ciągłej
+                      href: tasks/define-continuity-schedules.md
+                - name: Płatności
+                  items:
+                    - name: Metody płatności
+                      href: payment-methods.md
+                    - name: Metody płatności w biurach obsługi
+                      href: work-with-payments.md
+                    - name: 'Konfiguracja, autoryzacja i przechwytywanie karty kredytowej'
+                      href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurowanie nominałów gotówki dla punktu sprzedaży
+                      href: cash-denominations.md
+                    - name: Konfigurowanie przetwarzania karty kredytowej
+                      href: tasks/configure-credit-card-processing.md
+                    - name: Łącznik płatności Adyen
+                      href: dev-itpro/adyen-connector.md
+                    - name: Zapisywanie instrumentów płatniczych online za pomocą łącznika Adyen
+                      href: dev-itpro/adyen-connector-listpi.md
+                    - name: Konfigurowanie scenariuszy płatności za faktury
+                      href: payinvoice.md
+                    - name: Zapobieganie zduplikowanym płatnościom
+                      href: duplicate-payment-protection.md
+                    - name: Omówienie płatności wielokanałowych
+                      href: omni-channel-payments.md
+                    - name: Płatności — często zadawane pytania
+                      href: dev-itpro/payments-retail.md
+        - name: Merchandising produktów i usług
           items:
-            - name: Produkty i merchandising
+            - name: 'Kategorie, produkty i asortymenty'
               items:
                 - name: Omówienie informacji o produktach
                   href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
-                - name: Hierarchie handlu detalicznego
-                  href: ../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json
-                - name: Zarządzanie atrybutami i grupami atrybutów
-                  href: ../retail/attribute-attributegroups-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie produktów sprzedaży detalicznej
-                  href: ../retail/set-up-retail-products.md?toc=/dynamics365/commerce/toc.json
-                - name: Zarządzanie kategoriami produktów i produktami sprzedaż detalicznej
-                  href: ../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurowanie produktów handlu detalicznego
+                  href: set-up-retail-products.md
+                - name: Hierarchia produktów handlu detalicznego
+                  items:
+                    - name: Hierarchie handlu detalicznego
+                      href: retail-hierarchies.md
+                    - name: Tworzenie nowej hierarchii produktów
+                      href: create-product-hierarchy.md
+                    - name: Zarządzanie kategoriami produktów i produktami
+                      href: category-management-product-creation.md
+                    - name: Zmiana porządku sortowania dla podmiotów merchandisingowych
+                      href: custom-order-categories-nav-retail-prod-hierarchy.md
                 - name: Wymiary produktu
-                  href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json
-                - name: Zarządzanie asortymentem
-                  href: ../retail/assortments.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie asortymentów
-                  href: ../retail/set-up-assortments.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie kodów kreskowych
-                  href: ../retail/set-up-bar-codes.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie masek kodów kreskowych
-                  href: ../retail/set-up-bar-code-masks.md?toc=/dynamics365/commerce/toc.json
-                - name: Zmiana porządku sortowania dla podmiotów merchandisingowych
-                  href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/commerce/toc.json
+                  items:
+                    - name: Wymiary produktu
+                      href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/retail/toc.json
+                    - name: Tworzenie grupy wariantów
+                      href: create-variant-group.md
+                - name: Tworzenie nowego produktu
+                  items:
+                    - name: Omówienie tworzenia nowego produktu
+                      href: create-new-product.md
+                    - name: Zarządzanie kategoriami produktów i produktami
+                      href: category-management-product-creation.md
+                - name: Atrybuty produktu
+                  items:
+                    - name: Atrybuty i grupy atrybutów
+                      href: attribute-attributegroups-lifecycle.md
+                    - name: Definiowanie atrybutów kanału
+                      href: tasks/define-channel-attributes.md
+                - name: Hierarchie kanałów
+                  items:
+                    - name: Tworzenie hierarchii nawigacji kanału
+                      href: create-channel-hierarchy.md
+                    - name: Konfigurowanie kanału w celu korzystania z hierarchii nawigacji kanału
+                      href: configure-channel-hierarchy.md
+                - name: Asortymenty
+                  items:
+                    - name: Zarządzanie asortymentem
+                      href: assortments.md
+                    - name: Konfigurowanie asortymentów
+                      href: set-up-assortments.md
+                    - name: Zarządzanie asortymentami
+                      href: tasks/manage-assortments-2016-11.md
+                - name: Kody kreskowe
+                  items:
+                    - name: Konfigurowanie kodów kreskowych
+                      href: set-up-bar-codes.md
+                    - name: Konfigurowanie masek kodów kreskowych
+                      href: set-up-bar-code-masks.md
             - name: Ceny i rabaty
               items:
-                - name: Rabaty detaliczne
-                  href: ../retail/retail-discounts-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Zarządzanie cenami sprzedaży detalicznej
-                  href: ../retail/price-management.md?toc=/dynamics365/commerce/toc.json
+                - name: Rabaty
+                  href: retail-discounts-overview.md
+                - name: Zarządzanie cenami sprzedaży
+                  href: price-management.md
                 - name: Korekty ceny i rabaty
-                  href: ../retail/price-adjustments-discounts.md?toc=/dynamics365/commerce/toc.json
+                  href: price-adjustments-discounts.md
                 - name: Stosowanie wielu rabatów do produktu
-                  href: ../retail/Apply-multiple-retail-discounts.md?toc=/dynamics365/commerce/toc.json
+                  href: apply-multiple-retail-discounts.md
                 - name: Ustalanie optymalnej kombinacji nakładających się rabatów
-                  href: ../retail/optimal-combination-overlapping-discounts.md?toc=/dynamics365/commerce/toc.json
+                  href: optimal-combination-overlapping-discounts.md
                 - name: Definiowanie rabatów specyficznych dla kanału
-                  href: ../retail/define-channel-specific-discounts.md?toc=/dynamics365/commerce/toc.json
+                  href: define-channel-specific-discounts.md
                 - name: Opcje blokowania rabatów na produkty detaliczne
-                  href: ../retail/prevent-discounts.md?toc=/dynamics365/commerce/toc.json
+                  href: prevent-discounts.md
                 - name: Rabaty oparte na metodzie płatności
-                  href: ../retail/tender_based_discounts.md?toc=/dynamics365/commerce/toc.json
+                  href: tender_based_discounts.md
                 - name: Przegląd rabatów wysyłkowych
-                  href: ../retail/retail-shipping-discount.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie kuponów dla sprzedaży detalicznej
-                  href: ../retail/retail-coupons.md?toc=/dynamics365/commerce/toc.json
-                - name: Raporty cen detalicznych
-                  href: ../retail/price-report.md?toc=/dynamics365/commerce/toc.json
-            - name: Program lojalnościowy
+                  href: retail-shipping-discount.md
+                - name: Ustawianie kuponów
+                  href: retail-coupons.md
+                - name: Raporty cen
+                  href: price-report.md
+                - name: Tworzenie umów handlowych specyficznych dla kanału
+                  href: tasks/base-price-trade-agreements.md
+                - name: Tworzenie umów handlowych przy użyciu reguł kategorii cen
+                  href: tasks/category-pricing-rules-trade-agreements.md
+            - name: Rekomendacje
               items:
-                - name: Omówienie programu lojalnościowego
-                  href: ../retail/set-up-customer-loyalty-program.md?toc=/dynamics365/commerce/toc.json
-                - name: Omówienie obsługi relacji z klientami
-                  href: ../retail/clienteling-overview.md?toc=/dynamics365/commerce/toc.json
-            - name: Płatności
+                - name: Omówienie rekomendacji produktów
+                  href: product-recommendations.md
+                - name: Włączanie repozytorium ADLS w środowisku usługi Dynamics 365 Commerce
+                  href: enable-ADLS-environment.md
+                - name: Dodawanie list rekomendacji produktów do stron handlu elektronicznego
+                  href: add-reco-list-to-page.md
+                - name: Włączanie rekomendacji produktów
+                  href: enable-product-recommendations.md
+                - name: Rekomendacje spersonalizowane
+                  items:
+                    - name: Włączanie rekomendacji spersonalizowanych
+                      href: personalized-recommendations.md
+                    - name: Rezygnowanie z rekomendacji spersonalizowanych
+                      href: personalization-gdpr.md
+                - name: Tworzenie list rekomendacji produktów pod opieką
+                  href: create-editorial-recommendation-lists.md
+                - name: Zarządzanie wynikami rekomendacji produktów na podstawie plików AI-ML
+                  href: modify-product-recommendation-results.md
+                - name: Pobieranie rekomendacji produktów przy użyciu danych demonstracyjnych
+                  href: product-recommendations-demo-data.md
+                - name: Rekomendacje produktów — często zadawane pytania
+                  href: faq-recommendations.md
+                - name: Funkcje punktu sprzedaży
+                  items:
+                    - name: Rekomendacje produktów w punkcie sprzedaży
+                      href: product.md
+                    - name: Dodawanie kontrolki rekomendacji do ekranu transakcji na urządzeniach w punkcie sprzedaży
+                      href: add-recommendations-control-pos-screen.md
+            - name: Oceny i recenzje
               items:
-                - name: Metody płatności
-                  href: ../retail/payment-methods.md?toc=/dynamics365/commerce/toc.json
-                - name: Metody płatności w biurach obsługi
-                  href: ../retail/work-with-payments.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Konfiguracja, autoryzacja i przechwytywanie karty kredytowej'
-                  href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie nominałów gotówki dla punktu sprzedaży
-                  href: ../retail/cash-denominations.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie przetwarzania karty kredytowej
-                  href: ../retail/tasks/configure-credit-card-processing.md?toc=/dynamics365/commerce/toc.json
-                - name: Łącznik płatności usługi Dynamics 365 dla Adyen
-                  href: ../retail/dev-itpro/adyen-connector.md?toc=/dynamics365/commerce/toc.json
-                - name: Zapisywanie instrumentów płatniczych online za pomocą łącznika Adyen
-                  href: ../retail/dev-itpro/adyen-connector-listPI.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie scenariuszy płatności za faktury
-                  href: ../retail/payinvoice.md?toc=/dynamics365/commerce/toc.json
-                - name: Zapobieganie zduplikowanym płatnościom
-                  href: ../retail/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
-                - name: Omówienie płatności wielokanałowych
-                  href: ../retail/omni-channel-payments.md?toc=/dynamics365/commerce/toc.json
-                - name: Płatności — często zadawane pytania
-                  href: ../retail/dev-itpro/payments-retail.md?toc=/dynamics365/commerce/toc.json
-            - name: Zaawansowane opłaty automatyczne
+                - name: Omówienie ocen i recenzji
+                  href: ratings-reviews-overview.md
+                - name: Zgoda na korzystanie z ocen i recenzji
+                  href: opt-in-ratings-reviews.md
+                - name: Zarządzanie ocenami i recenzjami
+                  href: manage-reviews.md
+                - name: Konfigurowanie ocen i recenzji
+                  href: configure-ratings-reviews.md
+                - name: Synchronizacja ocen produktów
+                  href: sync-product-ratings.md
+            - name: Zarządzanie zapasami
               items:
-                - name: Konfigurowanie i używanie zaawansowanych opłat automatycznych
-                  href: ../retail/omni-auto-charges.md?toc=/dynamics365/commerce/toc.json
-                - name: Proporcjonalne dzielenie opłat z nagłówka między pasujące wiersze sprzedaży
-                  href: ../retail/pro-rate-charges-matching-lines.md?toc=/dynamics365/commerce/toc.json
-            - name: Podatek
+                - name: Zapasy
+                  items:
+                    - name: Zarządzanie zapasami w sklepie
+                      href: work-with-store-inventory.md
+                    - name: Korzystanie z pozycji serializowanych
+                      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Dystrybucja produktów z centrum dystrybucji do sklepu za pomocą dystrybucji od kupującego
+                      href: tasks/push-products-distribution-center-store-buyers-push.md
+                    - name: Konfigurowanie reguł i parametrów dla przeładunku komplementacyjnego i dystrybucji od kupującego
+                      href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+                - name: Zamówienia zakupu
+                  items:
+                    - name: Omówienie zamówień zakupu
+                      href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
+                    - name: Tworzenie zamówień zakupu
+                      href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
+                    - name: Przyjęcie produktów na podstawie zamówień zakupu
+                      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
+                    - name: Zatwierdzanie i potwierdzanie zamówień zakupu
+                      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
+                    - name: Mobilny obszar roboczy zatwierdzenia zamówienia zakupu
+                      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                    - name: Tworzenie pakietów produktów dla zamówień zakupu
+                      href: tasks/create-product-packages-purchase-orders.md
+        - name: Zarządzanie zamówieniami
+          items:
+            - name: Zamówienia sprzedaży
               items:
-                - name: Omówienie podatku
-                  href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Wybieranie metody obliczania podatku w polu Źródło
-                  href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json
-                - name: ' Przypisanie i zastąpienia podatku'
-                  href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
-                - name: Opcje Cała kwota i Obliczanie interwału dla kodów podatku
-                  href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
-            - name: Zamówienia zakupu
-              items:
-                - name: Omówienie zamówień zakupu
-                  href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Tworzenie zamówień zakupu
-                  href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
-                - name: Przyjęcie produktów na podstawie zamówień zakupu
-                  href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
-                - name: Zatwierdzanie i potwierdzanie zamówień zakupu
-                  href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
-                - name: Mobilny obszar roboczy zatwierdzenia zamówienia zakupu
-                  href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
-            - name: Zapasy
-              items:
-                - name: Zarządzanie zapasami w sklepie
-                  href: ../retail/work-with-store-inventory.md?toc=/dynamics365/commerce/toc.json
-                - name: Korzystanie z pozycji serializowanych
-                  href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
-            - name: Zestawienia
-              items:
-                - name: Zestawienia sieci sprzedaży
-                  href: ../retail/retail-statements.md?toc=/dynamics365/commerce/toc.json
-                - name: Sprawdzanie spójności transakcji sprzedaży detalicznej
-                  href: ../retail/valid-checker.md?toc=/dynamics365/commerce/toc.json
-                - name: Wyłączanie reguł w sprawdzaniu spójności transakcji sprzedaży detalicznej
-                  href: ../retail/disable-consistency-check-rule.md?toc=/dynamics365/commerce/toc.json
-                - name: Edycja i przeprowadzanie inspekcji transakcji sklepu sieci sprzedaży
-                  href: ../retail/edit-audit-retail-transactions.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży'
-                  href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
-                - name: Ulepszenia funkcji księgowania zestawień
-                  href: ../retail/statement-posting-EOD.md?toc=/dynamics365/commerce/toc.json
-                - name: Tworzenie zamówień na podstawie cząstkowego kanału informacyjnego dla transakcji w sklepach sieci sprzedaży
-                  href: ../retail/trickle-feed.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży'
-                  href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
-                - name: Ulepszenia funkcji księgowania zestawień
-                  href: ../retail/statement-posting-EOD.md?toc=/dynamics365/commerce/toc.json
-                - name: Ulepszona obsługa towarów śledzonych w partii
-                  href: ../retail/batch.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie parametrów aplikacji Retail wpływających na zestawienia sieci sprzedaży
-                  href: ../retail/tasks/parameter-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie ustawień metody płatności wpływających na zestawienia sieci sprzedaży
-                  href: ../retail/tasks/payment-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie i realizowanie zadań obliczania zestawień
-                  href: ../retail/tasks/run-job-calculate-statements.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie i realizowanie zadań księgowania zestawień
-                  href: ../retail/tasks/run-job-post-statements.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie ustawień sklepu wpływających na zestawienia sieci sprzedaży
-                  href: ../retail/tasks/store-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-            - name: Zarządzanie zamówieniami rozdzielonymi (DOM)
+                - name: Tworzenie zamówienia w biurze obsługi
+                  href: tasks/create-call-center-orders.md
+            - name: Zarządzanie zamówieniami rozdzielonymi
               items:
                 - name: Zarządzanie zamówieniami rozdzielonymi — omówienie
-                  href: ../retail/dom.md?toc=/dynamics365/commerce/toc.json
+                  href: dom.md
                 - name: Konfiguracja kosztów
-                  href: ../retail/cost.md?toc=/dynamics365/commerce/toc.json
+                  href: cost.md
             - name: Realizacja i przetwarzanie zamówienia
               items:
                 - name: Realizacja zamówienia w sklepie
-                  href: ../retail/Order-fulfillment-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: order-fulfillment-overview.md
                 - name: Konfigurowanie realizacji zamówienia dla sklepów
-                  href: ../retail/Order-fulfillment-POS-setup.md?toc=/dynamics365/commerce/toc.json
-                - name: Pokazywanie powiadomień o zamówieniach w aplikacji POS
-                  href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
+                  href: order-fulfillment-pos-setup.md
+                - name: Pokazywanie powiadomień o zamówieniach w punkcie sprzedaży
+                  href: notifications-pos.md
+                - name: Programy sprzedaży ciągłej i przetwarzanie zamówień sprzedaży
+                  href: tasks/use-continuity-program.md
             - name: Zwroty
               items:
                 - name: Połączone zwroty
-                  href: ../retail/dev-itpro/linked-refunds.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/linked-refunds.md
                 - name: Sprzedaż i zwrot produktów nieuwzględnionych w asortymencie sklepu
-                  href: ../retail/sell-return-outside-assortments.md?toc=/dynamics365/commerce/toc.json
+                  href: sell-return-outside-assortments.md
                 - name: Konfigurowanie i przetwarzanie wymiany w przypadku zamówienia zwrotu
-                  href: ../retail/orderexchanges.md?toc=/dynamics365/commerce/toc.json
+                  href: orderexchanges.md
                 - name: Ograniczanie metod płatności dla zwrotów bez paragonu
-                  href: ../retail/payment-methods-restrictions.md?toc=/dynamics365/commerce/toc.json
-                - name: Zwracanie towarów z wielu zamówień i faktur
-                  href: ../retail/multireturn.md?toc=/dynamics365/commerce/toc.json
-        - name: Oceny i recenzje
+                  href: payment-methods-restrictions.md
+                - name: Zwracanie pozycji w ramach wielu zamówień i faktur odbiorców
+                  href: multireturn.md
+                - name: Tworzenie i aktualizowanie zasad zwrotów i refundacji dla kanału
+                  href: refund_policy_returns.md
+        - name: Zarządzanie odbiorcami
           items:
-            - name: Omówienie ocen i recenzji
-              href: ratings-reviews-overview.md
-            - name: Zgoda na korzystanie z ocen i recenzji
-              href: opt-in-ratings-reviews.md
-            - name: Zarządzanie ocenami i recenzjami
-              href: manage-reviews.md
-            - name: Konfigurowanie ocen i recenzji
-              href: configure-ratings-reviews.md
-            - name: Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Retail
-              href: sync-product-ratings.md
-        - name: Rekomendacje produktów
-          items:
-            - name: Omówienie rekomendacji produktów
-              href: product-recommendations.md
-            - name: Dodawanie list rekomendacji produktów do stron handlu elektronicznego
-              href: add-reco-list-to-page.md
-            - name: Włączanie rekomendacji produktów
-              href: enable-product-recommendations.md
-            - name: Tworzenie list zaleceń dotyczących produktów pod opieką
-              href: create-editorial-recommendation-lists.md
-            - name: Zarządzanie wynikami rekomendacji produktów na podstawie plików AI-ML
-              href: modify-product-recommendation-results.md
-            - name: Pobieranie rekomendacji produktów przy użyciu danych demonstracyjnych
-              href: product-recommendations-demo-data.md
-            - name: Rekomendacje produktów — często zadawane pytania
-              href: faq-recommendations.md
-            - name: Funkcje punktu sprzedaży
+            - name: Obsługa relacji z klientami
               items:
-                - name: Rekomendacje produktów w punkcie sprzedaży
-                  href: ../retail/product.md?toc=/dynamics365/commerce/toc.json
-                - name: Dodawanie kontrolki rekomendacji do urządzeń z aplikacją POS
-                  href: ../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json
+                - name: Omówienie obsługi relacji z klientami
+                  href: clienteling-overview.md
+            - name: Lojalność
+              items:
+                - name: Omówienie programu lojalnościowego
+                  href: set-up-customer-loyalty-program.md
+                - name: Definiowanie programów lojalnościowych
+                  href: tasks/define-loyalty-programs.md
+                - name: Definiowanie punktów lojalnościowych
+                  href: tasks/define-loyalty-reward-points.md
+                - name: Definiowanie schematów lojalnościowych
+                  href: tasks/define-loyalty-schemes.md
+                - name: Przetwarzanie korekt punktów lojalnościowych
+                  href: tasks/process-loyalty-reward-point-adjustments.md
+        - name: Zarządzanie finansami
+          items:
+            - name: Omówienie zestawień
+              href: retail-statements.md
+            - name: Sprawdzanie spójności transakcji
+              href: valid-checker.md
+            - name: Wyłączanie reguł w sprawdzaniu spójności transakcji sprzedaży detalicznej
+              href: disable-consistency-check-rule.md
+            - name: Edycja i przeprowadzanie inspekcji transakcji sklepu sieci sprzedaży
+              href: edit-audit-retail-transactions.md
+            - name: 'Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży'
+              href: tasks/create-calculate-post-statement-retail-store.md
+            - name: Ulepszenia funkcji księgowania zestawień
+              href: statement-posting-eod.md
+            - name: Tworzenie zamówień na podstawie cząstkowego kanału informacyjnego dla transakcji w sklepach sieci sprzedaży
+              href: trickle-feed.md
+            - name: 'Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży'
+              href: tasks/create-calculate-post-statement-retail-store.md
+            - name: Ulepszenia funkcji księgowania zestawień
+              href: statement-posting-eod.md
+            - name: Ulepszona obsługa pozycji śledzonych w partii
+              href: batch.md
+            - name: Konfigurowanie parametrów aplikacji Commerce wpływających na zestawienia
+              href: tasks/parameter-configurations-retail-statements.md
+            - name: Konfigurowanie ustawień metody płatności wpływających na zestawienia sieci sprzedaży
+              href: tasks/payment-configurations-retail-statements.md
+            - name: Konfigurowanie i realizowanie zadań obliczania zestawień
+              href: tasks/run-job-calculate-statements.md
+            - name: Konfigurowanie i realizowanie zadań księgowania zestawień
+              href: tasks/run-job-post-statements.md
+            - name: Konfigurowanie ustawień sklepu wpływających na zestawienia sieci sprzedaży
+              href: tasks/store-configurations-retail-statements.md
+            - name: Księgowanie sprzedaży i płatności online
+              href: tasks/posting-online-sales-payments.md
+        - name: Zarządzanie witryną handlu elektronicznego
+          items:
+            - name: Omówienie sklepu internetowego
+              href: online-store-overview.md
+            - name: Tworzenie witryny handlu elektronicznego
+              items:
+                - name: Konfigurowanie nazwy domeny
+                  href: configure-your-domain-name.md
+                - name: Wdrażanie nowej dzierżawy e-commerce
+                  href: deploy-ecommerce-site.md
+                - name: Konfigurowanie kanału sklepu internetowego
+                  href: online-stores.md
+                - name: Tworzenie witryny handlu elektronicznego
+                  href: create-ecommerce-site.md
+                - name: Kojarzenie witryny handlu elektronicznego z kanałem online
+                  href: associate-site-online-store.md
+                - name: Zarządzanie plikami robots.txt
+                  href: manage-robots-txt-files.md
+                - name: Konfiguracja stron niestandardowych do logowań użytkowników
+                  href: custom-pages-user-logins.md
+                - name: Dodawanie obsługi dla sieci dostarczania zawartości (CDN)
+                  href: add-cdn-support.md
+                - name: Włączanie wykrywania sklepu na podstawie lokalizacji
+                  href: enable-store-detection.md
+            - name: Omówienie przykładowej witryny
+              items:
+                - name: Omówienie strony głównej
+                  href: quick-tour-home-page.md
+                - name: Omówienie domyślnej strony docelowej kategorii i strony wyników wyszukiwania
+                  href: category-search-page-overview.md
+                - name: Omówienie stron szczegółów produktów
+                  href: quick-tour-pdp.md
+                - name: Omówienie stron koszyka i realizacji zamówienia
+                  href: quick-tour-cart-checkout.md
+                - name: Omówienie stron zarządzania kontem
+                  href: quick-tour-account-management.md
+            - name: Zarządzanie ustawieniami witryny
+              items:
+                - name: Omówienie strony tworzenia
+                  href: authoring-home-overview.md
+                - name: Zarządzanie użytkownikami i rolami
+                  href: manage-ecommerce-users-roles.md
+                - name: Zagadnienia optymalizacji wyszukiwarki dla witryny
+                  href: search-engine-optimization-considerations.md
+                - name: Zarządzanie zasadami zabezpieczeń zawartości (CSP)
+                  href: manage-csp.md
+            - name: Zarządzanie zawartością witryny
+              items:
+                - name: Sposoby dodawania zawartości
+                  href: add-manage-content.md
+                - name: Słownik terminów dotyczących modelu strony
+                  href: page-elements-overview.md
+                - name: Dokumentowanie stanów i cyklów życia
+                  href: document-states-overview.md
+                - name: Praca z grupami publikowania
+                  href: publish-groups.md
+                - name: Wymarkowanie witryny i dodawanie szczegółów sklepu
+                  items:
+                    - name: Dodawanie logo
+                      href: add-logo.md
+                    - name: Wybór motywu witryny
+                      href: select-site-theme.md
+                    - name: Praca z plikami zastępowania CSS
+                      href: css-override-files.md
+                    - name: Dodawanie ikony favicon
+                      href: add-favicon.md
+                    - name: Dodawanie wiadomości powitalnej
+                      href: add-welcome-message.md
+                    - name: Dodawanie powiadomienia o prawach autorskich
+                      href: add-copyright-notice.md
+                    - name: Dodawanie języków
+                      href: add-languages-to-site.md
+                    - name: Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii
+                      href: add-telemetry.md
+                - name: Moduły
+                  items:
+                    - name: Praca z modułami
+                      href: work-with-modules.md
+                - name: Fragmenty
+                  items:
+                    - name: Praca z fragmentami
+                      href: work-with-fragments.md
+                - name: Szablony
+                  items:
+                    - name: Omówienie szablonów i układów
+                      href: templates-layouts-overview.md
+                    - name: Praca z szablonami
+                      href: work-with-templates.md
+                    - name: Praca z układami predefiniowanymi
+                      href: work-with-layouts.md
+                - name: Strony
+                  items:
+                    - name: Modyfikacja istniejącej strony witryny
+                      href: modify-existing-page.md
+                    - name: Dodawanie nowej strony witryny
+                      href: add-new-page.md
+                    - name: Wybieranie układów stron
+                      href: select-page-layouts.md
+                    - name: Zarządzanie metadanymi funkcji optymalizacji aparatu wyszukiwania
+                      href: manage-seo-metadata.md
+                    - name: 'Zapisywanie, pogląd i publikowanie strony'
+                      href: save-preview-publish-page.md
+                    - name: Wzbogacanie strony produktu
+                      href: enrich-product-page.md
+                    - name: Wzbogacanie strony docelowej kategorii
+                      href: enrich-category-page.md
+                    - name: Weryfikowanie dostępności zawartości strony
+                      href: verify-accessibility.md
+                - name: Nawigacja w witrynie
+                  items:
+                    - name: Dostosowywanie nawigacji w witrynie
+                      href: customize-site-navigation.md
+                    - name: Tworzenie adresu URL strony
+                      href: create-page-URL.md
+            - name: Zapewnienie zgodności witryny
+              items:
+                - name: Omówienie zgodności
+                  href: compliance-overview.md
+                - name: Funkcje i możliwości dostępności
+                  href: accessibility.md
+                - name: Zgodność z plikami cookie
+                  href: cookie-compliance.md
+                - name: Dodawanie strony zasad ochrony prywatności
+                  href: add-privacy-page.md
+            - name: Zestaw początkowy
+              items:
+                - name: Omówienie zestawu początkowego
+                  href: starter-kit-overview.md
+                - name: Moduły kontenera
+                  items:
+                    - name: Moduł kontenera
+                      href: add-container-module.md
+                - name: Moduły marketingu
+                  items:
+                    - name: Moduł transparentu promocyjnego
+                      href: add-alert.md
+                    - name: Moduł karuzeli
+                      href: add-carousel.md
+                    - name: Moduł bloku tekstu
+                      href: add-content-rich-block.md
+                    - name: Moduł bloku zawartości
+                      href: add-hero-module.md
+                    - name: Moduł odtwarzacza wideo
+                      href: add-video-player.md
+                - name: Moduły nagłówka i stopki
+                  items:
+                    - name: Moduł nagłówka
+                      href: author-header-module.md
+                    - name: Moduł stopki
+                      href: author-footer-module.md
+                - name: Moduły strony szczegółów produktu
+                  items:
+                    - name: Moduł pola zakupu
+                      href: add-buy-box.md
+                - name: Moduły zakupu
+                  items:
+                    - name: Moduł koszyka
+                      href: add-cart-module.md
+                    - name: Moduł realizacji transakcji
+                      href: add-checkout-module.md
+                    - name: Moduł potwierdzenia zamówienia
+                      href: order-confirmation-module.md
+                - name: Moduły zarządzania kontem
+                  items:
+                    - name: Strony i moduły zarządzania kontem
+                      href: account-management.md
+                - name: Moduły kolekcji produktów
+                  items:
+                    - name: Moduły kolekcji produktów
+                      href: product-collection-module-overview.md
+            - name: Wyszukiwanie
+              items:
+                - name: Domyślna strona docelowa kategorii i strona wyników wyszukiwania
+                  href: category-search-page-overview.md
+                - name: Omówienie wyszukiwania w chmurze
+                  href: cloud-powered-search-overview.md
+            - name: Raportowanie
+              items:
+                - name: Generowanie raportów kanału online
+                  href: generate-reports.md
+            - name: Obsługa błędów
+              items:
+                - name: Tworzenie niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx/5xx
+                  href: build-pages-400-500-errors.md
+        - name: Ochrona przed oszustwami
+          items:
+            - name: Integracja aplikacji Dynamics 365 Fraud Protection z aplikacją Dynamics 365 Commerce
+              href: dev-itpro/DFP.md
         - name: Monitorowanie i analizy
           items:
-            - name: Integracja usługi Commerce w rozwiązaniu Dynamics 365 Fraud Protection
-              href: ../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
             - name: Monitorowanie wydajności sprzedaży i marży
-              href: ../retail/monitor-sales-margin-performance.md?toc=/dynamics365/commerce/toc.json
+              href: monitor-sales-margin-performance.md
             - name: Analizowanie trendów i wzorców sprzedaży
-              href: ../retail/analyze-sales-trends-patterns.md?toc=/dynamics365/commerce/toc.json
+              href: analyze-sales-trends-patterns.md
             - name: Ocenianie wydajności sprzedaży według produktów
-              href: ../retail/sales-performance-products.md?toc=/dynamics365/commerce/toc.json
+              href: sales-performance-products.md
             - name: Ocenianie rentowności odbiorców i produktów
-              href: ../retail/assess-customer-product-profitability.md?toc=/dynamics365/commerce/toc.json
+              href: assess-customer-product-profitability.md
             - name: Analizowanie wydajności sklepu
-              href: ../retail/store-performance-information.md?toc=/dynamics365/commerce/toc.json
+              href: store-performance-information.md
             - name: 'Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)'
-              href: ../retail/set-up-rfm-analysis.md?toc=/dynamics365/commerce/toc.json
+              href: set-up-rfm-analysis.md
         - name: Funkcje związane z lokalizacją i wymagane przepisami prawa
           items:
-            - name: Omówienie integracji fiskalnej dla kanału sprzedaży detalicznej
-              href: ../retail/localizations/fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
-            - name: Konfigurowanie integracji fiskalnej dla kanału sprzedaży detalicznej
-              href: ../retail/localizations/setting-up-fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
+            - name: Omówienie integracji fiskalnej dla kanału aplikacji Commerce
+              href: localizations/fiscal-integration-for-retail-channel.md
+            - name: Konfigurowanie integracji fiskalnej dla kanału aplikacji Commerce
+              href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: Austria
               items:
                 - name: Przykład integracji usługi rejestracji fiskalnej (Austria)
-                  href: ../retail/localizations/emea-aut-fi-sample.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-aut-fi-sample.md
             - name: Europa Wschodnia
               items:
-                - name: Faktury zaliczkowe w rozwiązaniu Retail dla Europy Wschodniej
-                  href: ../retail/localizations/emea-eeu-advance-invoices-for-retail.md?toc=/dynamics365/commerce/toc.json
-                - name: Zarządzanie gotówką podręczną w aplikacji Retail dla Europy Wschodniej
-                  href: ../retail/localizations/emea-eeu-petty-cash-for-retail.md?toc=/dynamics365/commerce/toc.json
-                - name: Faktury dla odbiorcy i zwrotne zamówienia sprzedaży w aplikacji Retail w krajach środkowoeuropejskich
-                  href: ../retail/localizations/emea-eeu-retail-invoices.md?toc=/dynamics365/commerce/toc.json
+                - name: Faktury zaliczkowe w aplikacji Commerce (Europa Wschodnia)
+                  href: localizations/emea-eeu-advance-invoices-for-retail.md
+                - name: Zarządzanie gotówką podręczną w aplikacji Commerce (Europa Wschodnia)
+                  href: localizations/emea-eeu-petty-cash-for-retail.md
+                - name: Faktury dla odbiorcy i zwrotne zamówienia sprzedaży w krajach Europy Wschodniej
+                  href: localizations/emea-eeu-retail-invoices.md
                 - name: 'Wytyczne dotyczące wdrażania kas w Czechach, na Węgrzech i w Polsce'
-                  href: ../retail/localizations/emea-eeu-deployment.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-eeu-deployment.md
                 - name: Przykładowa integracja drukarki fiskalnej (Polska)
-                  href: ../retail/localizations/emea-pol-fpi-sample.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-pol-fpi-sample.md
                 - name: Przykład integracji usługi rejestracji fiskalnej (Czechy)
-                  href: ../retail/localizations/emea-cze-fi-sample.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-cze-fi-sample.md
             - name: Francja
               items:
                 - name: Funkcje kasy
-                  href: ../retail/localizations/emea-fra-cash-registers.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-fra-cash-registers.md
                 - name: Wytyczne dotyczące wdrażania kas
-                  href: ../retail/localizations/emea-fra-deployment.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-fra-deployment.md
             - name: Indie
               items:
                 - name: Integracja podatku od towarów i usług (GST) w kasach
-                  href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/apac-ind-cash-registers.md
                 - name: Wytyczne dotyczące wdrażania kas
-                  href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/apac-ind-loc-deployment-guidelines.md
                 - name: Pomoc techniczna dotycząca uaktualniania i wersji N-1 dla Indii
-                  href: ../retail/localizations/apac-ind-n-1-for-india.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/apac-ind-n-1-for-india.md
             - name: Włochy
               items:
                 - name: Przykładowa integracja drukarki fiskalnej dla Włoch
-                  href: ../retail/localizations/emea-ita-fpi-sample.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-ita-fpi-sample.md
             - name: Meksyk
               items:
                 - name: Globalne faktury elektroniczne CFDI dla Meksyku
@@ -835,63 +977,15 @@
             - name: Norwegia
               items:
                 - name: Funkcje kasy
-                  href: ../retail/localizations/emea-nor-cash-registers.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-nor-cash-registers.md
                 - name: Wytyczne dotyczące wdrażania kas
-                  href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Szwecja
               items:
                 - name: Funkcje kasy
-                  href: ../retail/localizations/emea-swe-cash-registers.md?toc=/dynamics365/commerce/toc.json
-                - name: Przykład do użycia w integracji aplikacji Retail POS z jednostkami kontrolnymi
-                  href: ../retail/localizations/retail-sdk-control-unit-sample.md?toc=/dynamics365/commerce/toc.json
-        - name: Zadania w aplikacji Retail
-          items:
-            - name: Tworzenie umów handlowych specyficznych dla kanału
-              href: ../retail/tasks/base-price-trade-agreements.md?toc=/dynamics365/commerce/toc.json
-            - name: Tworzenie umów handlowych przy użyciu reguł kategorii cen
-              href: ../retail/tasks/category-pricing-rules-trade-agreements.md?toc=/dynamics365/commerce/toc.json
-            - name: Konfigurowanie profili funkcji dla przedstawicieli handlowych
-              href: ../retail/tasks/configure-functionality-profile-sales-representative.md?toc=/dynamics365/commerce/toc.json
-            - name: Tworzenie zamówień w biurach obsługi
-              href: ../retail/tasks/create-call-center-orders.md?toc=/dynamics365/commerce/toc.json
-            - name: Tworzenie wymiarów finansowych dla kas w punktach sprzedaży i konfigurowanie wartości wymiarów w kasach
-              href: ../retail/tasks/create-financial-dimensions-pos.md?toc=/dynamics365/commerce/toc.json
-            - name: Tworzenie wymiarów finansowych dla kanałów sprzedaży detalicznej i konfigurowanie wartości wymiarów w sklepach
-              href: ../retail/tasks/create-financial-dimensions-retail-channels.md?toc=/dynamics365/commerce/toc.json
-            - name: Tworzenie grup uprawnień dla punktu sprzedaży
-              href: ../retail/tasks/create-pos-permission-groups.md?toc=/dynamics365/commerce/toc.json
-            - name: Tworzenie profili graficznych dla punktu sprzedaży
-              href: ../retail/tasks/create-pos-visual-profile-2016-02.md?toc=/dynamics365/commerce/toc.json
-            - name: Tworzenie pakietów produktów dla zamówień zakupu
-              href: ../retail/tasks/create-product-packages-purchase-orders.md?toc=/dynamics365/commerce/toc.json
-            - name: Tworzenie kanałów biura obsługi i definiowanie atrybutów kanału
-              href: ../retail/tasks/define-call-center-channel-channel-attributes.md?toc=/dynamics365/commerce/toc.json
-            - name: Definiowanie atrybutów kanału
-              href: ../retail/tasks/define-channel-attributes.md?toc=/dynamics365/commerce/toc.json
-            - name: Definiowanie harmonogramów sprzedaży ciągłej
-              href: ../retail/tasks/define-continuity-schedules.md?toc=/dynamics365/commerce/toc.json
-            - name: Definiowanie programów lojalnościowych
-              href: ../retail/tasks/define-loyalty-programs.md?toc=/dynamics365/commerce/toc.json
-            - name: Definiowanie punktów lojalnościowych
-              href: ../retail/tasks/define-loyalty-reward-points.md?toc=/dynamics365/commerce/toc.json
-            - name: Definiowanie schematów lojalnościowych
-              href: ../retail/tasks/define-loyalty-schemes.md?toc=/dynamics365/commerce/toc.json
-            - name: Projektowanie relacji między jednostkami organizacyjnymi
-              href: ../retail/tasks/design-relationships-between-organizational-units.md?toc=/dynamics365/commerce/toc.json
-            - name: Zarządzanie asortymentem
-              href: ../retail/tasks/manage-assortments-2016-11.md?toc=/dynamics365/commerce/toc.json
-            - name: Księgowanie sprzedaży i płatności online
-              href: ../retail/tasks/posting-online-sales-payments.md?toc=/dynamics365/commerce/toc.json
-            - name: Przetwarzanie korekt punktów lojalnościowych
-              href: ../retail/tasks/process-loyalty-reward-point-adjustments.md?toc=/dynamics365/commerce/toc.json
-            - name: Dystrybucja produktów z centrów dystrybucji do sklepów za pomocą funkcji dystrybucji od kupującego
-              href: ../retail/tasks/push-products-distribution-center-store-buyers-push.md?toc=/dynamics365/commerce/toc.json
-            - name: Konfigurowanie reguł i parametrów dla przeładunku komplementacyjnego i dystrybucji od kupującego
-              href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md?toc=/dynamics365/commerce/toc.json
-            - name: Programy sprzedaży ciągłej i przetwarzanie zamówień sprzedaży
-              href: ../retail/tasks/use-continuity-program.md?toc=/dynamics365/commerce/toc.json
-            - name: Konfigurowanie pracowników sieci sprzedaży
-              href: ../retail/tasks/worker.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-swe-cash-registers.md
+                - name: Przykład do użycia w integracji punktu sprzedaży z jednostkami kontrolnymi
+                  href: localizations/retail-sdk-control-unit-sample.md
         - name: Analizy
           items:
             - name: Analizy — strona główna
@@ -948,7 +1042,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: Rekrutacja
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Wyniki kanału detalicznego '
+                - name: Wyniki kanału detalicznego
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Wyniki w zakresie sprzedaży i rentowności
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/commerce/toc.json
@@ -1412,7 +1506,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfiguracja parametrów formatu ER dla firmy
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
-                - name: Używanie rozwiązań modułu Raportowanie elektroniczne w rozwiązaniu Finance and Operations
+                - name: Używanie rozwiązań modułu Raportowanie elektroniczne w aplikacji Finance and Operations
                   items:
                     - name: Konfigurowanie struktury
                       items:
@@ -1498,7 +1592,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Używanie własnej bazy danych
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
-        - name: Aplikacja mobilna
+        - name: Aplikacja mobilna Finance and Operations (Dynamics 365)
           items:
             - name: Aplikacja mobilna — strona główna
               href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/commerce/toc.json
@@ -1690,10 +1784,10 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: Dane dotyczące daty/godziny i strefy czasowe
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
-        - name: Programowanie
+        - name: Możliwości rozszerzania
           items:
             - name: Projektowanie i rozszerzanie handlu
-              href: ../retail/dev-itpro/dev-retail-home-page.md?toc=/dynamics365/commerce/toc.json
+              href: dev-itpro/dev-retail-home-page.md
             - name: Rozszerzanie kanału online
               items:
                 - name: Omówienie rozszerzania kanału online
@@ -1712,12 +1806,14 @@
                       href: e-commerce-extensibility/architectural-overview.md
                     - name: Składniki online
                       href: e-commerce-extensibility/ecommerce-components.md
-                    - name: Referencje poleceń infrastruktury CLI
+                    - name: Dokumentacja dotycząca poleceń interfejsu wiersza polecenia
                       href: e-commerce-extensibility/cli-command-reference.md
                 - name: Anatomia modułu
                   items:
                     - name: Plik definicji modułu
                       href: e-commerce-extensibility/module-definition-file.md
+                    - name: Plik składnika React modułu
+                      href: e-commerce-extensibility/module-react-file.md
                     - name: Plik widoku modułu
                       href: e-commerce-extensibility/module-view-file.md
                     - name: Plik danych modułu
@@ -1778,6 +1874,8 @@
                       href: e-commerce-extensibility/core-data-actions.md
                     - name: Wywoływanie interfejsów API w usłudze Retail Server
                       href: e-commerce-extensibility/call-retail-server-apis.md
+                    - name: Wywoływanie interfejsów API rozszerzenia Retail Server
+                      href: e-commerce-extensibility/call-retail-extension-api.md
                 - name: Zaawansowane tematy dotyczące akcji danych
                   items:
                     - name: Akcje danych łańcuchowych
@@ -1813,162 +1911,158 @@
             - name: Retail SDK
               items:
                 - name: Architektura zestawu Retail SDK
-                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Nadchodzące zmiany w zestawie Retail SDK
-                  href: ../retail/dev-itpro/UpcomingSDKChanges.md?toc=/dynamics365/commerce/toc.json
-                - name: Scalanie systemów kompilacji dla rozwiązań Retail i Finance and Operations
-                  href: ../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md?toc=/dynamics365/commerce/toc.json
-                - name: Przykłady możliwości rozszerzania zestawu Retail SDK
-                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md?toc=/dynamics365/commerce/toc.json
-                - name: Tworzenie wdrażalnych pakietów rozwiązania Retail
-                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-packaging.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-sdk/retail-sdk-overview.md
+                - name: Nadchodzące zmiany w zestawie SDK dla Retail
+                  href: dev-itpro/UpcomingSDKChanges.md
+                - name: Scalanie systemów kompilacji dla aplikacji Commerce i Finance and Operations
+                  href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+                - name: Przykłady możliwości rozszerzania zestawu SDK dla Retail
+                  href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+                - name: Tworzenie pakietów możliwych do wdrożenia
+                  href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Programowanie w środowiskach programistycznych hostowanych w chmurze bez dostępu administracyjnego
-                  href: ../retail/dev-itpro/cloud-dev-box.md?toc=/dynamics365/commerce/toc.json
-            - name: Rozszerzalność aplikacji punktu sprzedaży
+                  href: dev-itpro/cloud-dev-box.md
+            - name: Rozszerzalność punktu sprzedaży
               items:
-                - name: Układy ekranu aplikacji Retail POS
-                  href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
-                - name: Otwieranie adresu URL w aplikacji punktu sprzedaży
-                  href: ../retail/Open-URL-in-POS.md?toc=/dynamics365/commerce/toc.json
+                - name: Układy ekranu punktu sprzedaży
+                  href: pos-screen-layouts.md
+                - name: Otwieranie adresu URL w punkcie sprzedaży
+                  href: Open-URL-in-POS.md
                 - name: Instalowanie projektanta układów punktu sprzedaży
-                  href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
-                - name: Rozszerzenie widoku wyświetlania POS Dual
-                  href: ../retail/dev-itpro/pos-dual-display-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: Możliwości rozszerzenia wyzwalacza aplikacji Retail Modern POS i Cloud POS
-                  href: ../retail/dev-itpro/modern-pos-trigger-extensibility.md?toc=/dynamics365/commerce/toc.json
-                - name: Dodawanie kontrolek niestandardowych do widoków aplikacji POS
-                  href: ../retail/dev-itpro/pos-custom-control.md?toc=/dynamics365/commerce/toc.json
-                - name: Dodawanie operacji punktu sprzedaży do układów aplikacji POS przy użyciu projektanta siatki przycisków
-                  href: ../retail/dev-itpro/add-POS-operations.md
-                - name: Interfejsy API aplikacji Retail POS
-                  href: ../retail/dev-itpro/POS-APIs.md?toc=/dynamics365/commerce/toc.json
-                - name: Rozszerzenie płatności aplikacji POS
-                  href: ../retail/dev-itpro/pos-payment-extension.md?toc=/dynamics365/commerce/toc.json
+                  href: install-pos-layout-designer.md
+                - name: Rozszerzanie widoku na dwóch wyświetlaczach w punkcie sprzedaży
+                  href: dev-itpro/pos-dual-display-extension.md
+                - name: Możliwości rozszerzania wyzwalacza aplikacji Modern POS i Cloud POS
+                  href: dev-itpro/modern-pos-trigger-extensibility.md
+                - name: Dodawanie kontrolek niestandardowych do widoków punktów sprzedaży
+                  href: dev-itpro/pos-custom-control.md
+                - name: Dodawanie operacji punktu sprzedaży do układów punktu sprzedaży przy użyciu projektanta siatki przycisków
+                  href: dev-itpro/add-POS-operations.md
+                - name: Interfejsy API punktu sprzedaży
+                  href: dev-itpro/POS-APIs.md
+                - name: Rozszerzenie płatności punktu sprzedaży
+                  href: dev-itpro/pos-payment-extension.md
                 - name: Obsługa zewnętrznych kart upominkowych
-                  href: ../retail/dev-itpro/gift-card.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/gift-card.md
                 - name: Tworzenie i stosowanie znakowania marką do aplikacji Retail Experience
-                  href: ../retail/dev-itpro/create-retail-experience-app.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/create-retail-experience-app.md
                 - name: Konfigurowanie aplikacji POS Hybrid w systemach Android i iOS
-                  href: ../retail/dev-itpro/hybridApp.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/hybridApp.md
                 - name: Zastępowanie programu obsługi żądań punktu sprzedaży
-                  href: ../retail/dev-itpro/pos-handler.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/pos-handler.md
                 - name: Widok informacji pakietu rozszerzenia punktu sprzedaży
-                  href: ../retail/dev-itpro/view-pos-extension-package-details.md?toc=/dynamics365/commerce/toc.json
-                - name: Rejestrator testowy i narzędzie Regression Suite Automation Tool dla programu Retail Cloud POS
-                  href: ../retail/dev-itpro/pos-rsat.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/view-pos-extension-package-details.md
+                - name: Rejestrator testowy i narzędzie Regression Suite Automation Tool dla aplikacji Cloud POS
+                  href: dev-itpro/pos-rsat.md
                 - name: Dodawanie pól niestandardowych do panelu sum w punkcie sprzedaży
-                  href: ../retail/dev-itpro/custom-field-pos-totals.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/custom-field-pos-totals.md
                 - name: Wyświetlanie niestandardowych powiadomień w punkcie sprzedaży
-                  href: ../retail/dev-itpro/extend-pos-notification.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/extend-pos-notification.md
                 - name: Rejestrowanie aplikacji MPOS z certyfikatem podpisywania kodu
-                  href: ../retail/dev-itpro/pos-app-signing-certificate.md?toc=/dynamics365/commerce/toc.json
-                - name: Rozszerzanie widoków aplikacji POS w celu dodania niestandardowych kolumn i przycisków paska aplikacji
-                  href: ../retail/dev-itpro/pos-view-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: Dodawanie kontrolek niestandardowych do stron transakcji aplikacji Retail Modern POS
-                  href: ../retail/dev-itpro/pos-custom-transaction.md?toc=/dynamics365/commerce/toc.json
-                - name: Dodawanie kolumn niestandardowych do siatki transakcji aplikacji POS
-                  href: ../retail/dev-itpro/pos-custom-transaction-column.md?toc=/dynamics365/commerce/toc.json
-                - name: Wywoływanie interfejsów API lub operacji aplikacji POS z rozszerzeń aplikacji POS
-                  href: ../retail/dev-itpro/pos-api-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: Wyzwalacze i drukowanie w aplikacji Retail Modern POS
-                  href: ../retail/dev-itpro/pos-trigger-printing.md?toc=/dynamics365/commerce/toc.json
-                - name: Dodawanie kontrolek niestandardowych do widoków aplikacji POS nieopartych na projektancie
-                  href: ../retail/dev-itpro/pos-control-non-screen.md?toc=/dynamics365/commerce/toc.json
-                - name: Uruchamianie przykładów aplikacji Retail POS
-                  href: ../retail/dev-itpro/pos-run-samples.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/pos-app-signing-certificate.md
+                - name: Rozszerzanie widoków punktu sprzedaży w celu dodania niestandardowych kolumn i przycisków paska aplikacji
+                  href: dev-itpro/pos-view-extension.md
+                - name: Dodawanie kontrolek niestandardowych do stron transakcji aplikacji Modern POS
+                  href: dev-itpro/pos-custom-transaction.md
+                - name: Dodawanie kolumn niestandardowych do siatki transakcji punktu sprzedaży
+                  href: dev-itpro/pos-custom-transaction-column.md
+                - name: Wywoływanie interfejsów API lub operacji punktu sprzedaży z rozszerzeń punktu sprzedaży
+                  href: dev-itpro/pos-api-extension.md
+                - name: Wyzwalacze aplikacji Modern POS i drukowanie
+                  href: dev-itpro/pos-trigger-printing.md
+                - name: Dodawanie kontrolek niestandardowych do widoków punktu sprzedaży innych niż ekranowe i opartych na projektancie
+                  href: dev-itpro/pos-control-non-screen.md
+                - name: Uruchamianie przykładów punktu sprzedaży
+                  href: dev-itpro/pos-run-samples.md
                 - name: Wskazówki dotyczące implementacji zarządzania urządzeniami
-                  href: ../retail/implementation-considerations-devices.md?toc=/dynamics365/commerce/toc.json
+                  href: implementation-considerations-devices.md
             - name: Możliwości rozszerzania aplikacji Hardware Station
               items:
                 - name: Rozszerzalność aplikacji Hardware Station
-                  href: ../retail/dev-itpro/hardware-station-extensibility.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/hardware-station-extensibility.md
                 - name: Integrowanie punktu sprzedaży z nowym urządzeniem sprzętowym
-                  href: ../retail/dev-itpro/hardware-device-extension.md?toc=/dynamics365/commerce/toc.json
-            - name: Rozszerzalność usługi Retail Server
+                  href: dev-itpro/hardware-device-extension.md
+            - name: Możliwości rozszerzania usługi Retail Server
               items:
                 - name: Rozszerzanie kontrolera Retail Server OData
-                  href: ../retail/dev-itpro/extend-retail-server-odata-controller.md?toc=/dynamics365/commerce/toc.json
-                - name: Tworzenie kontrolera interfejsu API sieci Web dla usługi Retail Server
-                  href: ../retail/dev-itpro/odata-controllers-api.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/extend-retail-server-odata-controller.md
                 - name: Interfejsy API odbiorcy i konsumenta w usłudze Retail Server
-                  href: ../retail/dev-itpro/retail-server-customer-consumer-api.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-server-customer-consumer-api.md
                 - name: Rozszerzanie domyślnego kontrolera metadanych usługi Retail Server
-                  href: ../retail/dev-itpro/extend-metadata.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/extend-metadata.md
                 - name: Wywoływanie usługi środowiska CRT w trybie offline
-                  href: ../retail/dev-itpro/call-crt-service-offline.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/call-crt-service-offline.md
                 - name: Tworzenie nowego rozszerzenia usługi Retail Server
-                  href: ../retail/dev-itpro/retail-server-extension.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-server-extension.md
                 - name: 'Serwery proxy Typescript i C# aplikacji Retail'
-                  href: ../retail/dev-itpro/typescript-proxy-retail-pos.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/typescript-proxy-retail-pos.md
             - name: Możliwości rozszerzania środowiska Commerce Runtime (CRT)
               items:
                 - name: Architektura i konfiguracja środowiska CRT
-                  href: ../retail/dev-itpro/commerce-runtime-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/commerce-runtime-overview.md
                 - name: Usługi środowiska CRT
-                  href: ../retail/dev-itpro/crt-services.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/crt-services.md
                 - name: Rozszerzalność środowiska CRT i usługi Retail Server
-                  href: ../retail/dev-itpro/commerce-runtime-extensibility.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/commerce-runtime-extensibility.md
                 - name: Dodawanie danych preferencji odbiorcy do baz danych kanałów
-                  href: ../retail/dev-itpro/add-customer-preference-channel.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/add-customer-preference-channel.md
                 - name: Zarządzanie kluczami tajnymi dla kanałów usługi Retail
-                  href: ../retail/dev-itpro/manage-secrets.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/manage-secrets.md
                 - name: Dodawanie właściwości do zamówień sprzedaży
-                  href: ../retail/dev-itpro/add-properties-sales-order.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/add-properties-sales-order.md
                 - name: Możliwości rozszerzania i wyzwalacze środowiska CRT
-                  href: ../retail/dev-itpro/commerce-runtime-extensibility-trigger.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Blokowanie transakcji za pomocą wyzwalaczy
-                  href: ../retail/dev-itpro/trigger-example-blocking-transaction.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/trigger-example-blocking-transaction.md
                 - name: Wdrażanie reguły zwrotów za pomocą wyzwalaczy
-                  href: ../retail/dev-itpro/trigger-example-return-policy.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/trigger-example-return-policy.md
                 - name: Rozszerzenie lojalnościowe
-                  href: ../retail/dev-itpro/retail-sdk/loyalty-extension-sample.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-sdk/loyalty-extension-sample.md
                 - name: Punkty rozszerzenia dla dokumentów dostawy
-                  href: ../retail/dev-itpro/extensions-shipping-carrier-integration.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Rozszerzenia bazy danych kanału
-                  href: ../retail/dev-itpro/channel-db-extensions.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/channel-db-extensions.md
                 - name: Umożliwianie niestandardowej synchronizacji z usługą CDX za pomocą rozszerzenia
-                  href: ../retail/dev-itpro/cdx-extensibility.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/cdx-extensibility.md
                 - name: Definiowanie i ustawianie atrybutów zamówienia
-                  href: ../retail/dev-itpro/order-attributes.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/order-attributes.md
                 - name: Atrybuty odbiorcy
-                  href: ../retail/dev-itpro/customer-attributes.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/customer-attributes.md
                 - name: Przykłady zestawu SDK środowiska uruchomieniowego Commerce (CRT)
-                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-sdk/retail-sdk-samples.md
                 - name: Rejestrowanie zdarzeń rozszerzania w Application Insights
-                  href: ../retail/dev-itpro/commerce-application-insights.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/commerce-application-insights.md
             - name: Rozszerzalność łączników płatności
               items:
                 - name: Tworzenie integracji płatności dla terminala płatniczego
-                  href: ../retail/dev-itpro/end-to-end-payment-extension.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/end-to-end-payment-extension.md
                 - name: Implementowanie łącznika płatności i urządzenia płatniczego (oficjalny dokument)
                   href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
                 - name: Wdrażanie łączników płatności
-                  href: ../retail/dev-itpro/deploy-payment-connector.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/deploy-payment-connector.md
                 - name: Tworzenie niestandardowych przetłumaczonych komunikatów o błędach dla rozszerzeń terminala płatniczego
-                  href: ../retail/dev-itpro/payment-custom-error-messages.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/payment-custom-error-messages.md
                 - name: Tworzenie instalatorów Windows dla łączników płatności
-                  href: ../retail/dev-itpro/create-windows-installer-payment-connector.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/create-windows-installer-payment-connector.md
                 - name: Zastosowanie danych płatności
-                  href: ../retail/payment-connector-data-fields.md?toc=/dynamics365/commerce/toc.json
+                  href: payment-connector-data-fields.md
                 - name: Włączanie ochrony przed podwójnymi płatnościami dla łącznika płatności
-                  href: ../retail/dev-itpro/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/duplicate-payment-protection.md
             - name: Możliwość rozszerzenia środowiska handlu elektronicznego przez jednostki zewnętrzne
               items:
                 - name: Konfigurowanie sklepów internetowych
-                  href: ../retail/dev-itpro/configure-online-store.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/configure-online-store.md
                 - name: Konfigurowanie dostawców uwierzytelniania
-                  href: ../retail/dev-itpro/configure-authentication-providers.md?toc=/dynamics365/commerce/toc.json
-                - name: Platforma handlu elektronicznego
-                  href: ../retail/dev-itpro/ecommerce-platform.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/configure-authentication-providers.md
                 - name: Zestaw SDK platformy handlu elektronicznego
-                  href: ../retail/dev-itpro/ecommerce-platform-sdk.md?toc=/dynamics365/commerce/toc.json
-            - name: Lokalizowanie zasobów rozszerzeń rozwiązania Retail i plików etykiet
-              href: ../retail/dev-itpro/extension-resource-localization.md?toc=/dynamics365/commerce/toc.json
-    - name: Rozwój i administracja aplikacjami Finance and Operations
+                  href: dev-itpro/ecommerce-platform-sdk.md
+            - name: Lokalizowanie zasobów rozszerzeń rozwiązania Commerce i plików etykiet
+              href: dev-itpro/extension-resource-localization.md
+    - name: Programowanie aplikacji Finance and Operations i administrowanie nimi
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Rozwiązanie Dynamics 365 Retail
-      href: ../retail/index.md
-    - name: Rozwiązanie Dynamics 365 Finance
+    - name: Dynamics 365 Retail
+      href: index.md
+    - name: Dynamics 365 Finance
       href: ../finance/index.md
-    - name: Rozwiązanie Dynamics 365 Supply Chain Management
+    - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
