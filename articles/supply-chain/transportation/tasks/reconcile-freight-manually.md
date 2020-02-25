@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb9c850aa045b72137b8a1d3c8cdae51cf2fd7b6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec17fc31df1daed943f9bc3f4cbe25a683c8ac7e
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843248"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026321"
 ---
 # <a name="reconcile-freight-manually"></a>Ręczne uzgadnianie frachtu
 
@@ -37,7 +37,7 @@ Ta procedura pokazuje, jak uzgadniać fracht ręcznie. Zazwyczaj jest to realizo
 3. Na liście zaznacz ładunek o identyfikatorze 00006.
 
 ## <a name="create-a-carrier-invoice"></a>Tworzenie faktury przewoźnika
-    * Jeśli uzgadniasz fracht ręcznie i nie otrzymujesz faktur przewoźnika automatycznie, można utworzyć fakturę na podstawie dokumentu opłaty frachtowej.  
+Jeśli uzgadniasz fracht ręcznie i nie otrzymujesz faktur przewoźnika automatycznie, można utworzyć fakturę na podstawie dokumentu opłaty frachtowej.  
 1. Kliknij opcję Informacje pokrewne.
 2. Kliknij opcję Szczegóły opłaty frachtowej.
 3. Kliknij opcję Generowanie faktury za opłatę frachtową.
@@ -45,7 +45,7 @@ Ta procedura pokazuje, jak uzgadniać fracht ręcznie. Zazwyczaj jest to realizo
 5. Kliknij przycisk OK.
 
 ## <a name="reconcile-the-invoice"></a>Uzgadnianie faktury
-    * Podczas uzgadniania faktury przewoźnika z dokumentem opłaty frachtowej operacja odbywa się wiersz po wierszu.  
+Podczas uzgadniania faktury przewoźnika z dokumentem opłaty frachtowej operacja odbywa się wiersz po wierszu.  
 1. Kliknij opcję Dopasuj opłaty frachtowe i faktury.
 2. Rozwiń sekcję Szczegóły faktury.
 3. Rozwiń sekcję Szczegóły niedopasowanej opłaty frachtowej.

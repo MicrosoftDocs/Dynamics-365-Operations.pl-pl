@@ -19,27 +19,26 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d075635b7b986cc854550d15f7e941a9ea9cf72
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 46fbd2d8c1235a6cb22c9341bcc21ee3754c8ede
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770420"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024940"
 ---
 # <a name="create-curated-product-recommendation-lists"></a>Tworzenie list zaleceń dotyczących produktów pod opieką
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 W tym temacie wyjaśniono, w jaki sposób merchandizers mogą tworzyć i zarządzać ręcznymi listami produktów dla odbiorców Microsoft Dynamics 365 Commerce.
 
-Wyselekcjonowane listy to zbiory indywidualnych treści tworzone i dostosowywane przez ludzi.  
+Wyselekcjonowane listy to zbiory indywidualnych, treści tworzone i dostosowywane przez ludzi.  
 
 ## <a name="create-a-new-list"></a>Utwórz nową listę
 
 Aby utworzyć wyselekcjonowaną listę rekomendacji produktów, wykonaj następujące kroki.
 
-1. Przejdź do **Retail** &gt; **Rekomendacje produktów** &gt; **Listy rekomendacji**.
+1. Przejdź do **Retail i Commerce &gt; Rekomendacje produktów &gt; Listy rekomendacji**.
 1. Wybierz pozycję **Nowy**.
 1. Wprowadź wartość w polu **Identyfikator listy**.
 1. Wprowadź wartość w polu **Nazwa listy**.
@@ -60,3 +59,5 @@ Aby utworzyć wyselekcjonowaną listę rekomendacji produktów, wykonaj następu
 [Włączanie rekomendacji produktów](enable-product-recommendations.md)
 
 [Dodawanie list rekomendacji produktów do stron](add-reco-list-to-page.md)
+
+[Omówienie modułu kolekcji produktów](product-collection-module-overview.md)

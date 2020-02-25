@@ -3,7 +3,7 @@ title: Scentralizowane płatności dla rozrachunków z odbiorcami
 description: Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą jednej firmy, która obsługuje wszystkie płatności. Dlatego tych samych transakcji nie trzeba wpisywać w wielu firmach. Ten artykuł zawiera przykłady pokazujące sposób księgowania scentralizowanych płatności w różnych scenariuszach.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 02/13/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59942fadb0fb702c59c95f75359f1a3036e4668f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78c72bb9632d3501638d528822a3c30b05686796
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179461"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000100"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>Scentralizowane płatności dla rozrachunków z odbiorcami
 
@@ -88,8 +88,8 @@ Firma Fabrikam odbiera płatność 580,00 od odbiorcy 4000 firmy Fabrikam, North
 
 | Konto                             | Kwota debetu | Kwota kredytu |
 |-------------------------------------|--------------|---------------|
-| Rozrachunki z odbiorcami (Fabrikam East) | 600,00       |               |
-| Sprzedaż (Fabrikam East)               |              | 600,00        |
+| Rozrachunki z odbiorcami (Fabrikam East) | 580.00       |               |
+| Sprzedaż (Fabrikam East)               |              | 580.00        |
 
 ### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Płatność zostaje odebrana i zaksięgowana w firmie Fabrikam dla odbiorcy 4000 firmy Fabrikam
 

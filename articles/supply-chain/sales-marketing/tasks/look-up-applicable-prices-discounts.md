@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db9caaa7f425133eda7a5f225b39ca52e11e0716
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835596"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025835"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Wyszukiwanie odpowiednich cen i rabatów
 
@@ -49,7 +49,7 @@ W tej procedurze pokazano sposób wyszukiwania ceny i/lub rabatu na produkt, kt�
 10. Zamknij stronę.
 
 ## <a name="find-the-applicable-discount"></a>Wyszukiwanie odpowiedniego rabatu
-    * Upewnij się, że pole Konto odbiorcy zawiera numer odbiorcy US-001.    
+Upewnij się, że pole Konto odbiorcy zawiera numer odbiorcy US-001.    
 1. W polu Numer pozycji wpisz „T0012”.
     * Upewnij się, że pole Ilość zawiera wartość 1.  
     * Poniższe szczegóły cen wyświetlane dla produktu T0012 pochodzą z jednej lub kilku umów handlowych: cena jednostkowa wynosi 1000 CAD, a procent rabatu wynosi 5.  

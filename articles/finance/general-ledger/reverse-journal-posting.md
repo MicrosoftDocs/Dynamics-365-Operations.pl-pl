@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d18b71c1fc7f3f0c39172bd9edf19b4e60a2bf8
-ms.sourcegitcommit: cfaad79bcb1460ee0e7ad5a2c596f9199e14c53a
+ms.openlocfilehash: 08aec836ce4b7b6a59c445f138365f101a78c68e
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2944435"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030929"
 ---
 # <a name="reverse-journal-posting"></a>Odwróć księgowanie arkusza
 
@@ -68,5 +68,5 @@ Jeśli jest więcej niż 100 wierszy, proces wycofania zostanie uruchomiony przy
 
 Jeśli liczba wierszy załącznika wynosi 100 wierszy lub mniej, proces wycofywania zostanie uruchomiony natychmiast. Wyniki zostaną wyświetlone w oknie dialogowym, w którym jest wyświetlany dowolny załącznik, którego nie można wycofać, wraz z powodem. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.
 
-Transakcje można wycofać tylko wtedy, gdy spełniają one reguły biznesowe w celu ich wycofania. Płatności dostawcy nie można wycofać przy użyciu funkcji opisanych w tym temacie. Płatności dostawcy należy wycofać, wykonując kroki opisane w [Cofanie płatności dla dostawcy](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-payable/reverse-vendor-payment).
+Transakcje można wycofać tylko wtedy, gdy spełniają one reguły biznesowe w celu ich wycofania. Płatności dostawcy nie można wycofać przy użyciu funkcji opisanych w tym temacie. Płatności dostawcy należy wycofać, wykonując kroki opisane w [Cofanie płatności dla dostawcy](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment).
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9a033853be17d6013daa5550ca9c061198bb0330
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 548f16034ebdf7e0f29e8e89d85aac880f6323a1
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184745"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026247"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER Mapowanie składników utworzonego formatu na elementy modelu danych (listopad 2016)
 
@@ -98,7 +98,7 @@ W poniższej procedurze pokazano, jak użytkownik posiadający rolę Administrat
 2. Zamknij stronę.
 
 ## <a name="change-status-of-the-current-version-of-format-configuration"></a>Zmień stan bieżącej wersji konfiguracji formatu.
-    * W następnych krokach zmienisz stan konfiguracji formatu z Wersja robocza na Zakończony, aby udostępnić go dla operacji generowania dokumentu płatniczego.  
+W następnych krokach zmienisz stan konfiguracji formatu z Wersja robocza na Zakończony, aby udostępnić go dla operacji generowania dokumentu płatniczego.  
 1. Kliknij przycisk Zmień stan.
 2. Kliknij przycisk Wykonaj.
 3. Wypełnij pole Opis.
@@ -108,7 +108,7 @@ W poniższej procedurze pokazano, jak użytkownik posiadający rolę Administrat
     * Należy zauważyć, że konfiguracja została zapisana jako ukończona wersja 1.1. To jest wersja 1 formatu, który jest oparty na wersji 1 modelu danych.  
 
 ## <a name="define-effective-date-for-completed-version-of-format"></a>Określ datę wejścia w życie ukończonej wersji formatu.
-    * Każdą wersję formatu można skonfigurować jako dostępną do użycia począwszy od określonej daty. Kiedy więcej niż jedna wersja formatu jest aktywna w określonym dniu, do użycia zostanie wybrany najnowszy forma (na podstawie numeru wersji). Do wyboru odpowiedniej wersji jest używana wartość daty sesji.  
+Każdą wersję formatu można skonfigurować jako dostępną do użycia począwszy od określonej daty. Kiedy więcej niż jedna wersja formatu jest aktywna w określonym dniu, do użycia zostanie wybrany najnowszy forma (na podstawie numeru wersji). Do wyboru odpowiedniej wersji jest używana wartość daty sesji.  
 
 ## <a name="restrict-access-to-created-format-from-companies"></a>Ograniczanie dostępu do utworzonego formatu z firm
 1. Rozwiń sekcję Kody ISO krajów/regionów.

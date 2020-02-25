@@ -1,5 +1,5 @@
 ---
-title: Osadzona aplikacja Power Apps w Dynamics 365 - Core HR
+title: Osadzenie aplikacji Power Apps w Dynamics 365 Human Resources
 description: W tym temacie opisano, jak rozwiązać problem, gdzie element menu usługi Microsoft Power Apps znika w module Administracja systemu.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b1dd1756be349d85af8e6d7159623a2a95e75526
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 8275a8a7c68fa13d6b9880c4c411deaa2dcbb998
+ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898719"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017880"
 ---
-# <a name="embed-power-apps-apps-in-dynamics-365---core-hr"></a>Osadzona aplikacja Power Apps w Dynamics 365 - Core HR
+# <a name="embed-power-apps-apps-in-dynamics-365-human-resources"></a>Osadzenie aplikacji Power Apps w Dynamics 365 Human Resources
 
 **Wystawienie**
 
@@ -38,31 +38,31 @@ Projekt interfejsu użytkownika został zmieniony, a Microsoft Power Apps zostan
 
 Zmienił się sposób osadzenia usługi Power Apps. Power Apps teraz są dodawane za pomocą modelu personalizacji. Power Apps można dodać do prawie wszystkich stron w Microsoft Dynamics 365 Talent.
 
-Aby uzyskać szczegółowe informacje o osadzaniu aplikacji Power Apps w Talents, zobacz [Osadzone Microsoft Power Apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+Aby uzyskać szczegółowe informacje o osadzaniu aplikacji Power Apps w Talents, zobacz [Osadzone Power Apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 
 Odbiorcy Power Apps, którzy osadzili aplikacje przed zmianą powinni mieć uaktualniony system do nowego modelu.
 
-Przycisk **Power Apps** znajduje się w prawym górnym rogu prawie każdej strony w Talent. Ten przycisk służy do wstawiania Power Apps.
+Przycisk **Power Apps** znajduje się w prawym górnym rogu prawie każdej strony w Talent. Ten przycisk służy do wstawiania aplikacji.
 
 Oto przykład.
 
 1. Przejdź do **zarządzania personelem \>łącza \>pracownicy \>pracownicy**.
-2. Wybierz przycisk **Power Apps**, a następnie wybierz opcję **Wstaw PowerApp**.
+2. Wybierz przycisk **Power Apps**, a następnie wybierz opcję **Dodaj aplikację z Power Apps**.
 
     ![Przycisk Power Apps](media/png.png)
 
-3. Wypełnij pola w oknie dialogowym **Wstaw PowerApp**.
+3. Wypełnij pola w oknie dialogowym **Dodaj aplikację z Power Apps**.
 
-    ![Okno dialogowe Wstaw PowerApp](media/insert-powerapp.png)
+    ![Dodawanie aplikacji z  okna dialogowego Power Apps](media/insert-powerapp.png)
 
 Można też wykonać następujące kroki.
 
-1. W okienku akcji strony na karcie **Opcje** w grupie **Personalizacja** wybierz **Personalizuj ten formularz**.
+1. W okienku akcji strony na karcie **Opcje** w grupie **Personalizacja** wybierz **Personalizuj tę stronę**.
 
     ![Personalizowanie grupy na karcie Opcje](media/options.png)
 
     Pojawi się pasek narzędzi personalizacji.
 
-2. Na pasku narzędzi, wybierz **Wstaw \>PowerApp**.
+2. Na pasku narzędzi wybierz opcję **Dodaj aplikację z Power Apps**.
 
     ![Wstawianie aplikacji Power Apps za pomocą paska narzędzi personalizacji](media/powerapp-bar.png)

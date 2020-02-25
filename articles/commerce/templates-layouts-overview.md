@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4ddae5b77c36151a279a463033079099722d166e
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d805c39b77d653eaa9935751ae89012c98b930d2
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914848"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002689"
 ---
 # <a name="templates-and-layouts-overview"></a>Omówienie szablonów i układów
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Szablony są podstawą modelu strony Microsoft Dynamics 365 Commerce. Jeśli celem jest maksymalizacja wydajności i spójności przepływów pracy tworzenia witryn, ważne jest, aby dowiedzieć się, jak korzystać z zalet szablonów serwisu www. Wczesne decyzje dotyczące struktury szablonów są istotne i mogą znacząco wpływać na koszty i dynamikę codziennych, sezonowych i ważnych aktualizacji marki. Dobrza struktura szablonów ma również inne zalety. Na przykład ułatwiają one ulepszanie wyników optymalizacji aparatu wyszukiwania (SEO) w całej witrynie oraz minimalizację liczby usterek.

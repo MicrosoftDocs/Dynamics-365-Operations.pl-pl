@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df158e80bd1c11832376678a631a9e0e162534ad
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: b09efeb6b5d8bd2ea452dbf7a9ddaeec2ab75c92
+ms.sourcegitcommit: 0455a024185f79ecb82df61e6d994bd71dee5c10
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915724"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "2974299"
 ---
 # <a name="FORMAT">FORMAT, funkcja ER</a>
 
@@ -96,7 +96,7 @@ Jeśli ten sam raport będzie przetwarzany dla odbiorcy **Litware Retail** w dni
 >[!NOTE]
 > W formułach raportowania elektronicznego dla etykiet jest stosowana następująca składnia:
 >
-> - **Etykiety zasobów aplikacji Microsoft Dynamics 365 Finance:** **@X**, gdzie **X** oznacza identyfikator etykiety w drzewie obiektów aplikacji (AOT)
+> - **Etykiety aplikacji Microsoft Dynamics 365 Finance:** **\@X**, gdzie **X** oznacza identyfikator etykiety w drzewie obiektów aplikacji (AOT)
 > - **Etykiety, które znajdują się w konfiguracjach ER:** **@"GER_LABEL:X"**, gdzie **X** oznacza identyfikator etykiety w konfiguracji raportowania elektronicznego
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0028d1f64aced1bbff91b18456c81adbb95bce30
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 14539ed6c00915b7d59a5a3c4870ab6d1a96ad95
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914825"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002527"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Projektant formuł w module Raportowanie elektroniczne (ER)
 
@@ -51,7 +51,7 @@ Stronę **Projektant formuł** można otworzyć podczas wykonywania następując
 - Definiowanie warunków weryfikacji kontroli procesu.
 - Definiowanie treści komunikatów weryfikacji kontroli procesu.
 
-## <a name="Binding">Wiązanie danych</a>
+## <a name="Binding"></a>Wiązanie danych
 
 Projektant formuł raportowania elektronicznego może służyć do definiowania wyrażenia przekształcającego dane otrzymywane ze źródeł danych, dzięki czemu dane mogą być wprowadzane do użytkownika danych na następujące sposoby w czasie wykonywania:
 
@@ -69,7 +69,7 @@ Poniższa ilustracja pokazuje sposób użycia wyrażenia tego typu. W tym przyk�
 
 W czasie wykonywania zaprojektowana formuła `ROUND (Intrastat.AmountMST, 2)` zaokrągla wartość pola **AmountMST** dla każdego rekordu w tabeli Intrastat do dwóch miejsc dziesiętnych. Następnie wprowadza zaokrągloną wartość w składniku **Transaction.InvoicedAmount** modelu danych **Raportowanie podatku**.
 
-## <a name="Transformation">Formatowanie danych</a>
+## <a name="Transformation"></a>Formatowanie danych
 
 Projektant formuł ER może służyć do definiowania wyrażenia formatującego dane otrzymywane ze źródeł danych, dzięki czemu dane mogą być wysyłane w ramach generowania dokumentu elektronicznego. Być może istnieje formatowanie, które musi być stosowane jako typowa reguła powtarzana dla formatu. W takim przypadku można wprowadzić to formatowanie jeden raz do konfiguracji formatu jako nazwane przekształcenie zawierające wyrażenie formatujące. Później to nazwane przekształcenie można połączyć z wieloma składnikami formatu, których dane wyjściowe muszą być sformatowane zgodnie z utworzonym wyrażeniem formatującym.
 
@@ -87,7 +87,7 @@ Jeśli jest używane formatowanie, które musi być stosowane indywidualnie, mo�
 
 [![Stosowanie formatowania do jednego składnika](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-## <a name="Validation">Kontrola przepływu procesu</a>
+## <a name="Validation"></a>Kontrola przepływu procesu
 
 Projektant formuł ER może służyć do definiowania wyrażeń, które kontrolują przebieg procesu generowania dokumentów elektronicznych. Można wykonać następujące zadania:
 
@@ -112,7 +112,7 @@ Projektant formuł ER pozwala również ustawić nazwę pliku generowanego dokum
 
 [![Kontrola przepływu procesu](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-## <a name="Enabled">Kontrola zawartości dokumentu</a>
+## <a name="Enabled"></a>Kontrola zawartości dokumentu
 
 Projektanta formuł ER można używać do konfigurowania wyrażeń kontrolujących, jakie dane będą umieszczane w wygenerowanych elektronicznych dokumentach w czasie wykonywania. Wyrażenia mogą na przykład włączać lub wyłączać tworzenie określonych elementów formatu w zależności od przetwarzania danych. Te wyrażenia można wprowadzić dla pojedynczego elementu formatu w polu **Włączone** na karcie **Mapowanie** na stronie **projektanta operacji**. Wyrażenia można wprowadzać jako warunek logiczny, który zwraca *wartość logiczną*:
 
@@ -139,7 +139,7 @@ Poniższa ilustracja pokazuje wyrażenia tego typu. (Wersja 11.12.11 formatu kon
 > 
 > Na podstawie tej konfiguracji wygenerowana wiadomość dla każdej płatności dłużnika, element XML **Ustrd**, będzie zawierać tekst uwag do płatności lub, jeśli taki tekst jest pusty, rozdzielaną przecinkami listę numerów faktur używanych do rozliczenia płatności.
 
-## <a name="TestFormula">Weryfikacja skonfigurowanych formuł</a>
+## <a name="TestFormula"></a>Weryfikacja skonfigurowanych formuł
 
 Na stronie **Projektant formuł** wybierz pozycję **Testuj**, aby sprawdzić, jak działa skonfigurowana formuła.
 

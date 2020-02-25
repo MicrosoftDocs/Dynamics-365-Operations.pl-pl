@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4bb523c2817a220623d8a1b6cc1ac04d7b96283
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 268b95aad57c2e4863a3f58cd54828dbb0e09465
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812656"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006202"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań
 
@@ -32,7 +32,7 @@ ms.locfileid: "2812656"
 W tym temacie wyjaśniono, czym jest Rejestrator zadań i przewodniki po zadaniach, jak tworzyć nagrania zadań oraz jak dostosowywać przewodniki po zadaniach firmy Microsoft i umieszczać je w Pomocy.
 
 > [!IMPORTANT]
-> Można zarejestrować własne przewodniki zadania dla programu Dynamics 365 Talent, ale nie będzie można zapisać ich w bibliotece Narzędzia do modelowania procesów biznesowych (BPM) ani otworzyć ich w okienku Pomoc. Można zapisać je lokalnie lub w lokalizacji sieciowej, a następnie odtworzyć za pomocą Rejestratora zadań. 
+> Można zarejestrować własne przewodniki zadania dla programu Dynamics 365 Human Resources, ale nie będzie można zapisać ich w bibliotece Narzędzia do modelowania procesów biznesowych (BPM) ani otworzyć ich w okienku Pomoc. Można zapisać je lokalnie lub w lokalizacji sieciowej, a następnie odtworzyć za pomocą Rejestratora zadań. 
 
 <a name="learn-about-task-recorder"></a>Więcej informacji o Rejestratorze zadań
 -------------------------

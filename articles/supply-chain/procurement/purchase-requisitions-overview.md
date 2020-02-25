@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bfec4660d9e6b0898cf81e1f1fdd2e4c1fdcaef
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0a51d443e40dbf948a06657293dcca77dc177896
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815349"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003660"
 ---
 # <a name="purchase-requisition-overview"></a>Omówienie zapotrzebowania na zakup
 
@@ -81,7 +81,7 @@ Całościowy stan zapotrzebowania na zakup jest uzależniony od stanu jego wiers
 <li><strong>Trwa przegląd</strong> — wiersze zapotrzebowania na zakup zostały przesłane do przeglądu. Po zakończeniu procesu przepływu pracy dla wiersza zapotrzebowania na zakup, stan wiersza nadal ma wartość <strong>Trwa przegląd</strong>, aż zakończy się przegląd wszystkich pozostałych wierszy zapotrzebowania na zakup.</li>
 <li><strong>Odrzucone</strong> — Wiersz zapotrzebowania na zakup został odrzucony. Odrzucone wiersze zapotrzebowania na zakup można zmodyfikować i ponownie przesłać do przeglądu.</li>
 </ul>
-Ponowne przesłanie odrzuconego wiersza zamówienia na zakup spowoduje ponowne rozpoczęcie procedury przeglądu dla wszystkich przeglądanych wierszy zamówienia na zakup. <strong>Uwaga:</strong> można wycofać zapotrzebowanie na zakup, które już zostało przesłane. Wycofanie zapotrzebowania na zakup spowoduje również wycofanie jego wszystkich pozostałych wierszy. Wycofane wiersze zapotrzebowania na zakup można usunąć.</td>
+Ponowne przesłanie odrzuconego wiersza zamówienia na zakup spowoduje ponowne rozpoczęcie procedury przeglądu dla wszystkich przeglądanych wierszy zamówienia na zakup. </br><strong>Uwaga:</strong> można wycofać zapotrzebowanie na zakup, które już zostało przesłane. Wycofanie zapotrzebowania na zakup spowoduje również wycofanie jego wszystkich pozostałych wierszy. Wycofane wiersze zapotrzebowania na zakup można usunąć.</td>
 </tr>
 <tr class="odd">
 <td>Odrzucono</td>
@@ -109,7 +109,7 @@ Ponowne przesłanie odrzuconego wiersza zamówienia na zakup spowoduje ponowne r
 <tr class="odd">
 <td>Anulowano</td>
 <td>Anulowano</td>
-<td>Wycofano zapotrzebowanie i na zakup i wszystkie jego wiersze. <strong>Uwaga:</strong> jeśli nie jest już wymagany towaru w wierszu zapotrzebowania na zakup, należy anulować wiersz zapotrzebowania na zakup, jeśli został już zatwierdzony. Można wycofać tylko te wiersze zamówienia na zakup, które zostały zatwierdzone. Jeśli wszystkie wiersze zapotrzebowania na zakup są w przeglądzie, zapotrzebowanie na zakup będzie mieć stan <strong>Trwa przegląd</strong>. W takim przypadku można wycofać zapotrzebowanie na zakup i usunąć odpowiedni wiersz zapotrzebowania na zakup.</td>
+<td>Wycofano zapotrzebowanie i na zakup i wszystkie jego wiersze.</br> <strong>Uwaga:</strong> jeśli nie jest już wymagany towaru w wierszu zapotrzebowania na zakup, należy anulować wiersz zapotrzebowania na zakup, jeśli został już zatwierdzony. Można wycofać tylko te wiersze zamówienia na zakup, które zostały zatwierdzone. Jeśli wszystkie wiersze zapotrzebowania na zakup są w przeglądzie, zapotrzebowanie na zakup będzie mieć stan <strong>Trwa przegląd</strong>. W takim przypadku można wycofać zapotrzebowanie na zakup i usunąć odpowiedni wiersz zapotrzebowania na zakup.</td>
 </tr>
 <tr class="even">
 <td>Zamknięto</td>
@@ -156,7 +156,8 @@ W niektórych przypadkach należy uruchomić procesu ZO, aby określić dostawc�
 
 Można wstrzymać zapotrzebowanie na zakup przez zaznaczenie pola wyboru **Wstrzymane** na stronie **Szczegóły zapotrzebowania na zakup**. Można kontynuować przetwarzanie zapotrzebowania na zakup tylko wtedy, gdy zostanie usunięte zaznaczenie tego pola wyboru.  
 
-**Uwaga:** w eProcurement ZO dla zapotrzebowania na zakup mogą umożliwiać dostawcom dodawanie alternatywnych wierszy. W takim przypadku zapotrzebowanie na zakup będzie zawierało zatwierdzone zmiany.
+> [!NOTE]
+> W eProcurement ZO dla zapotrzebowania na zakup mogą umożliwiać dostawcom dodawanie alternatywnych wierszy. W takim przypadku zapotrzebowanie na zakup będzie zawierało zatwierdzone zmiany.
 
 ## <a name="demand-consolidation"></a>Konsolidacja popytu
 Konsolidowanie wierszy zapotrzebowania na zakup z wielu zapotrzebowań na zakup pozwala wzmocnić pozycję negocjacyjną podczas rozmów z dostawiamy, by uzyskać lepsze ceny, niższe koszty wysyłki i obsługi oraz zmniejszenie kosztów ogólnych.  
@@ -172,7 +173,8 @@ Możliwości konsolidacji jest zbiorem wierszy zapotrzebowania zakupu, które s�
 
 Po dodaniu wierszy zapotrzebowania do możliwości konsolidacji i wprowadzeniu odpowiednich zmian, można utworzyć zamówienie zakupu dla skonsolidowanych wierszy zapotrzebowania na zakup.  
 
-**Uwaga:** Zmiany wprowadzone w wierszu zapotrzebowania na zakup na stronie **Konsolidacja zapotrzebowania na zakup** są odzwierciedlone w utworzonym zamówieniu zakupu. W zapotrzebowaniu na zakup wiersze pozostają bez zmian, aby jego historia została zachowana.  
+> [!NOTE]
+> Zmiany wprowadzone w wierszu zapotrzebowania na zakup na stronie **Konsolidacja zapotrzebowania na zakup** są odzwierciedlone w utworzonym zamówieniu zakupu. W zapotrzebowaniu na zakup wiersze pozostają bez zmian, aby jego historia została zachowana.  
 
 Aby utworzyć zamówienie zakupu dla wierszy zapotrzebowania na zakup, które nie kwalifikują się do konsolidacji popytu lub które nie zostały wybrane do możliwości konsolidacji, należy je przetworzyć ręcznie.
 

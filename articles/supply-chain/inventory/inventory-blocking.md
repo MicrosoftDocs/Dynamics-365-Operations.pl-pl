@@ -3,7 +3,7 @@ title: Blokowanie zapasów
 description: Ten artykuł zawiera omówienie mechanizmu blokowania zapasów, który jest częścią procesu kontroli jakości w Supply Chain Management. Używając blokowania, można zapobiec przetwarzaniu i zużywaniu zapasów.
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41fbe6e2034c0e58fc03d1dfbbd87844f3a4466
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e1a870936619d07db01d5a8fe83b3fab73693187
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814382"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971494"
 ---
 # <a name="inventory-blocking"></a>Blokowanie zapasów
 
@@ -43,6 +43,9 @@ Ilość towaru można zablokować przez utworzenie transakcji na stronie **Bloko
 
 ## <a name="blocking-items-by-creating-a-quality-order"></a>Blokując towary poprzez tworzenie zlecenia kontroli jakości
 Można określić elementy, które muszą być skontrolowane, przez utworzenie zlecenia kontroli jakości na stronie **zleceń kontroli jakości**. Po utworzeniu zlecenia kontroli jakości, określona ilość towaru jest zablokowana. Plan pobierania próbek skojarzony ze zleceniem kontroli jakości kontroluje ilość towaru, który ma być sprawdzany, nie ilość, która jest zablokowana. Niezależnie od ilości, która zostanie wysłana do inspekcji, jak określono w planie pobierania próbek, ilość towaru wprowadzona w zleceniu kontroli jakości jest ilością, która zostaje zablokowana.
+
+> [!NOTE]
+> W planowaniu głównym nie są obsługiwane zarówno funkcje daty ważności partii, jak i blokowania stanu magazynowego. Może to spowodować podwójne wykluczenie dostępnych zapasów, co może nastąpić podczas planowania głównego. Zaleca się, aby zamiast stanu zapasów zablokowanie przeterminowanych partii było uzależnione od kodów dyspozycji partii.
 
 ## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>Blokując towary za pomocą procesu, który generuje zlecenia kontroli jakości.
 Jeśli w procesie kontroli jakości określono konieczność kontroli pozycji, ilość towaru zostanie automatycznie zablokowana. Tak więc podczas automatycznego generowania zlecenia kontroli jakości plan próbkowania towaru skojarzony z zamówieniem kontroli jakości określa ilość towarów, która jest zablokowana i ilość towarów, które mają zostać sprawdzone. W przypadku zaznaczenia opcji **Pełne blokowanie** na stronie **Kontrola wyrywkowa towarów**, całkowita ilość, na przykład, w wierszu zamówienia zakupu jest zablokowana podczas inspekcji, niezależnie od ilości kontroli wyrywkowej towarów.

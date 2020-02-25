@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934893"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004026"
 ---
 # <a name="product-identifiers"></a>Identyfikatory produktów 
 
@@ -88,7 +88,7 @@ Na stronie **Zewnętrzne opisy pozycji** można skojarzyć numer towaru odbiorcy
 | opis | Nazwa, którą odbiorca łączy z towarem | Nazwa, którą dostawca łączy z towarem |
 | Zewnętrzny tekst pozycji | Opis nadany towarowi przez odbiorcę | Opis nadany towarowi przez dostawcę |
 
-Jeżeli wielu odbiorców lub dostawców używa tych samych numerów towarów (jak na przykład w przypadku skojarzenia zakupu lub grupy sieci sprzedaży), można utworzyć grupy odbiorców lub dostawców, aby uprościć zarządzanie zewnętrznymi informacjami o produktach.
+Jeżeli wielu odbiorców lub dostawców używa tych samych numerów towarów (jak na przykład w przypadku skojarzenia zakupu lub grupy handlu), można utworzyć grupy odbiorców lub dostawców, aby uprościć zarządzanie zewnętrznymi informacjami o produktach.
 
 - Dla grup odbiorców przejdź do okna **Sprzedaż** &gt; **Ustawienia** &gt; **Pozycje** &gt; **Zewnętrzny opis pozycji**, aby utworzyć i obsługiwać grupy i pokrewne numery towarów. Aby skojarzyć odbiorców z grupą, przejdź do okna **Rozrachunki z odbiorcami** &gt; **Odbiorcy** &gt; **Wszyscy odbiorcy**, a następnie na skróconej karcie **Ustawienia domyślne zamówienia sprzedaży** określ wartość w polu **Pozycja — Grupa odbiorców**.
 - Dla grup dostawców przejdź do okna **Zaopatrzenie i sourcing** &gt; **Ustawienia** &gt; **Grupa zewnętrznych opisów pozycji**, aby utworzyć i obsługiwać grupy i pokrewne numery towarów. Aby skojarzyć dostawców z grupą, przejdź do okna **Rozrachunki z dostawcami** &gt; **Dostawcy** &gt; **Wszyscy dostawcy**, a następnie na skróconej karcie **Ustawienia domyślne zamówienia zakupu** określ wartość w polu **Pozycja — Grupa dostawców**.

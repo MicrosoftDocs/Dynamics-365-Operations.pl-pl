@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 96937d48e0d1003adbc5f7fedc89b2686ace01cd
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 311042caf6a391a06c7e2d8c4c2c2f6e1f855437
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899042"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006294"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (30 lipiec 2019)
 
@@ -41,7 +41,7 @@ Zmiany opisane w tej części dotyczą kompilacji 8.1.2409.
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>Obsługa regionu Kanada i Południowo-Wschodnia Azja
 
-Mamy przyjemność poinformować o tym, że rozwiązania Talent od 1 sierpnia 2019 r. będą dostępne w regionach Kanada i Azja Południowo-Wschodnia. Dzięki tej zmianie można tworzyć środowiska w regionach Kanada i Azja, a wszystkie dane Talent będą obsługiwane wyłącznie w tych lokalizacjach. Środowisko w tych nowych regionach można utworzyć, wybierając lokalizację w oknie dialogowym Nowe środowisko i używając tego środowiska do inicjowania obsługi Talent w LCS, zgodnie z opisem [Inicjowanie obsługi rozwiązania Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Mamy przyjemność poinformować o tym, że rozwiązania Talent od 1 sierpnia 2019 r. będą dostępne w regionach Kanada i Azja Południowo-Wschodnia. Dzięki tej zmianie można tworzyć środowiska w regionach Kanada i Azja, a wszystkie dane Talent będą obsługiwane wyłącznie w tych lokalizacjach. Środowisko w tych nowych regionach można utworzyć, wybierając lokalizację w oknie dialogowym Nowe środowisko i używając tego środowiska do inicjowania obsługi Talent w LCS, zgodnie z opisem [Inicjowanie obsługi rozwiązania Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 Migracja danych istniejących projektów z innych regionów do Kanady i Azji nie jest obsługiwana. Tylko nowe projekty mogą zostać zainicjowane do tych nowych obsługiwanych regionów.
 

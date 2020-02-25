@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7506953c797f5a55a93f1169bf48af8b06eb440e
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 68e3f428215bdc4f9a4ce0dd69cfd4482c72fbf3
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896803"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006271"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (23 października 2019 r.)
 
@@ -39,9 +39,9 @@ Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent
 
 Zmiany opisane w tej części dotyczą kompilacji 8.1.2569. Liczby w nawiasach w niektórych nagłówkach odnoszą się do numerów pomocy w usługach Microsoft Dynamics Lifecycle Services (LCS).
 
-### <a name="platform-update-30-for-finance-and-operations-apps"></a>Aktualizacja Platform update 30 dla aplikacji Finance and Operations
+### <a name="platform-update-30-for-finance-and-operations-apps"></a>Aktualizacja 30 platformy dla aplikacji Finance and Operations
 
-Aby uzyskać więcej informacji, należy zapoznać się z [Nowości i zmiany w aktualizacji Platform update 30 dla aplikacji Finance and Operations (Listopad 2019)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-update-30).
+Aby uzyskać więcej informacji, należy zapoznać się z [Nowości i zmiany w aktualizacji 30 platformy dla aplikacji Finance and Operations (Listopad 2019)](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-update-30).
 
 ### <a name="remove-benefits-open-enrollment-preview-feature"></a>Usuń funkcję podglądu rejestracji otwartych świadczeń
 
@@ -89,4 +89,4 @@ Zapoznaj się z [Drukowanie przeglądów wydajności](https://docs.microsoft.com
 
 Funkcje są dodawane i aktualizowane w każdym wydaniu. Środowisko zarządzania funkcjami udostępnia obszar roboczy, w którym można wyświetlić listę funkcji, które zostały dostarczone w każdej wersji. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich.
 
-Aby dowiedzieć się więcej o zmianach pochodzących z zarządzania funkcjam, zobacz [Omówienie zarządzania funkcjami](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Aby dowiedzieć się więcej o zmianach pochodzących z zarządzania funkcjam, zobacz [Omówienie zarządzania funkcjami](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).

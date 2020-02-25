@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 31307035014f2fae6146f33bc23e3e06103f82eb
-ms.sourcegitcommit: c237123ad94d9418994ac095fbd8634c05a927b1
+ms.openlocfilehash: 069fa1cb6acad4b8d6618cebb754cbc0892ca9cf
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2943270"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025955"
 ---
 # <a name="product-collection-modules"></a>Moduły kolekcji produktów
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ten temat stanowi przegląd modułów kolekcji produktów w rozwiązaniu Microsoft Dynamics 365 Commerce.
@@ -39,7 +39,7 @@ Moduły kolekcji produktów reprezentują fizyczne produkty i usługi w witrynie
 
 Źródła dla kolekcji produktów mogą być listami czterech następujących typów:
 
-- Listy redakcyjne produktów, które zostały ręcznie zdefiniowane w Dynamics 365 Retail jako produkty pokrewne produktu lub na listach produktów
+- Listy redakcyjne produktów, które zostały ręcznie zdefiniowane w Dynamics 365 Commerce jako produkty pokrewne produktu lub na listach produktów
 - Listy algorytmowe, takie jak listy nowości, najlepiej sprzedających sięproduktów lub trendów produktów
 - Listy rekomendacji oparte na uczeniu maszynowym
 - Listy personalizacji, które obsługują spersonalizowane wyniki dla klienta. Aby zobaczyć spersonalizowane wyniki, klienci muszą być zalogowani w witrynie e-Commerce. Użytkownicy goście nie widzą spersonalizowanych wyników. Klienci mogą zrezygnować z personalizacji na [stronie zarządzania kontem](account-management.md).
@@ -57,9 +57,10 @@ W poniższej tabeli opisano różne typy modułów kolekcji produktów w Dynamic
 
 | Moduł kolekcji produktów  | Typ | Opis |
 |----------------------------|------|-------------|
-| Kategoria                   | Kategoria | Ten moduł pokazuje listę produktów w kategorii zgodnie z definicją w hierarchii kategorii nawigacji, którą sprzedawca detaliczny utworzył dla kanału sprzedaży detalicznej. |
-| Powiązane produkty           | Redakcyjne | Ten moduł pokazuje listę produktów skonfigurowanych przez menedżera merchandisingu jako powiązane produkty w aplikacji Retail dla typu relacji wybranego przez autora. |
-| Lista wyselekcjonowanych produktów      | Redakcyjne | Ten moduł pokazuje niestandardowe listy utworzone przez sprzedawców i redaktorów w aplikacji Retail. |
+| Kategoria                   | Kategoria | Ten moduł pokazuje listę produktów w kategorii zgodnie z definicją w hierarchii kategorii nawigacji, którą sprzedawca detaliczny utworzył dla kanału handlu. |
+| Powiązane produkty           | Redakcyjne | Ten moduł pokazuje listę produktów skonfigurowanych przez menedżera merchandisingu jako powiązane produkty w aplikacji Commerce dla typu relacji wybranego przez autora. |
+| Wyniki wyszukiwania             | Zapytanie wyszukiwania | Ten typ modułu kolekcji produktów pokazuje listę produktów, które najlepiej pasują do zapytania wyszukiwania wprowadzonego przez klienta. |
+| Lista wyselekcjonowanych produktów      | Redakcyjne | Ten moduł pokazuje niestandardowe listy utworzone przez sprzedawców i redaktorów w aplikacji Commerce. |
 | Nowy element                        | Algorytmy | Ten moduł pokazuje listę najnowszych produktów w asortymentach do kanałów i katalogów. Ta lista może zawierać spersonalizowane wyniki dla zalogowanego użytkownika, jeśli autor witryny wybierze tę opcję. |
 | Bestsellery               | Algorytmy | Ten moduł pokazuje listę produktów sklasyfikowanych według najwyższej liczby sprzedaży. Ta lista może zawierać spersonalizowane wyniki dla zalogowanego użytkownika, jeśli autor witryny wybierze tę opcję. |
 | Popularne                   | Algorytmy | Ten moduł pokazuje listę produktów najwyższej wydajności w danym okresie. Ta lista może zawierać spersonalizowane wyniki dla zalogowanego użytkownika, jeśli autor witryny wybierze tę opcję. |
@@ -76,7 +77,6 @@ Aby dodać moduł kolekcji produktów do strony kategorii, wykonaj następujące
 1. W oknie dialogowym **Dodaj moduł** wybierz **Kontener** i wybierz przycisk **OK**.
 1. W module kontener wybierz przycisk wielokropka, a następnie wybierz pozycję **Dodaj moduł**.
 1. W oknie dialogowym **Dodaj moduł** wybierz **Kolekcja produktu** i wybierz przycisk **OK**.  
-![Przykładowy przepływ Kreatora modułu kolekcji produktów](./media/productCollectionModule.png)
 1. Skonfiguruj ustawienia wybierając odpowiednie źródło danych oraz dane wejściowe dla kolekcji produktów.
 1. W okienku właściwości modułu kolekcja produktów wybierz opcję **Dodaj listę produktów**.
 1. W oknie dialogowym **Wybór konfiguracji listy produktów** wybierz typ listy, wprowadź liczbę towarów i wybierz inne opcje dostępne dla typu listy. Aby uzyskać więcej informacji o typach list, zobacz poniższą tabelę. 
@@ -88,8 +88,8 @@ W poniższej tabeli przedstawiono typy list, które są dostępne do wybrania w 
 | Typ                       | Opis | Użycie | Kontekst strony | Określony kontekst | Personalizacja |
 |----------------------------|-------------|-------|--------------|------------------|-----------------|
 | Produkty według kategorii       | Lista produktów należących do danej kategorii. Ta kategoria jest określana na podstawie kontekstu strony lub kontekstu podanego przez autora. | Ten typ listy może być używany na dowolnej stronie (na przykład na stronie głównej, stronie kategorii, stronie marketingowej lub stronie szczegółów produktu \[PDP\]) w celu promowania określonej kategorii produktów. | Kategoria z kontekstu strony, jeśli jest dostępna (na przykład strona kategorii) | Autor może udostępnić określoną kategorię jako kontekst dla listy. | Nie dotyczy |
-| Powiązane produkty           | Lista produktów, które menedżer ds. merchandisingu skonfigurował jako produkty powiązane dla typu relacji w aplikacji Retail. | Ten typ listy jest używany głównie na stronach PDP, ale może być używany na dowolnej stronie w przypadku określenia produktu nadrzędnego. | Produkt ze strony, typ relacji (obowiązkowy) | Produkt można wybrać w selektorze, a typ relacji jest używany. | Nie dotyczy |
-| Pod opieką                    | Lista niestandardowa utworzona przez sprzedawców i redaktorów w Retail. | Wzbogacanie strony kategorii, strony głównej, strony realizacji transakcji i koszyka oraz strony produktów | Nie dotyczy | Nie dotyczy | Nie dotyczy |
+| Powiązane produkty           | Lista produktów, które menedżer ds. merchandisingu skonfigurował jako produkty powiązane dla typu relacji w aplikacji Commerce. | Ten typ listy jest używany głównie na stronach PDP, ale może być używany na dowolnej stronie w przypadku określenia produktu nadrzędnego. | Produkt ze strony, typ relacji (obowiązkowy) | Produkt można wybrać w selektorze, a typ relacji jest używany. | Nie dotyczy |
+| Pod opieką                    | Lista niestandardowa utworzona przez sprzedawców i redaktorów w Commerce. | Wzbogacanie strony kategorii, strony głównej, strony realizacji transakcji i koszyka oraz strony produktów | Nie dotyczy | Nie dotyczy | Nie dotyczy |
 | Algorytmy                | <ul><li>**Nowości** — lista najnowszych produktów w asortymentach do kanałów i katalogów.</li><li>**Bestsellery** — Lista produktów sklasyfikowanych według najwyższej liczby sprzedaży.</li><li>**Trendy** — Lista produktów najwyższej wydajności w danym okresie.</li></ul> | Stronw główna, wzbogacanie strony kategorii, strony realizacji transakcji i koszyka | Kategoria z kontekstu strony (na przykład strona kategorii) | Kategoria, która jest określana przez autora witryny | Obsługiwana |
 | Często kupowane razem | Lista, która używa uczenia maszynowego do analizowania wzorców zakupów klientów i rekomendowanych często kupowanych razem z danym produktem towarów. | Ten typ listy ma zastosowanie tylko do strony koszyka. | Koszyk | Nie dotyczy | Obsługiwana |
 | Klienci także lubią           | Lista, która używa nauki maszynowej do analizowania wzorów zakupów klientów i powiązanych z produktem towarów. | Ten typ listy jest używany na stronach PDP w celu wyświetlenia produktów kupionych przez innych klientów. | Kontekst produktu ze strony | Produkt dostarczony przez autora witryny | Obsługiwana |
@@ -102,8 +102,6 @@ W poniższej tabeli przedstawiono typy list, które są dostępne do wybrania w 
 [Moduł karuzeli](add-carousel.md)
 
 [Moduł zaawansowanego bloku zawartości](add-content-rich-block.md)
-
-[Moduł umieszczania zawartości](add-content-placement-modules.md)
 
 [Moduł kontenera](add-container-module.md)
 

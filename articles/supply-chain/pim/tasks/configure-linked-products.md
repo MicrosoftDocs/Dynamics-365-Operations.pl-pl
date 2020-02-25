@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f3ef8314c3b6122627de0a730e912c7ebcd99be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ec7a2c5a2b2b7ef22fd3dcf7f7d3859e8e07ea5e
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568657"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003957"
 ---
 # <a name="configure-linked-products"></a>Konfigurowanie połączonych produktów
 
@@ -30,7 +30,7 @@ Ta procedura prowadzi przez kolejne etapy konfigurowania połączonych produktó
 
 1. Przejdź do Zarządzanie informacjami o produktach > Produkty > Zwolnione produkty.
 2. Na liście znajdź i zaznacz odpowiedni rekord.
-3. W okienku akcji kliknij pozycję Handel detaliczny.
+3. W okienku akcji kliknij opcję Retail i Commerce.
 4. Kliknij opcję Połączone produkty.
 5. Kliknij przycisk Edytuj.
 6. W polu Numer połączonego produktu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.

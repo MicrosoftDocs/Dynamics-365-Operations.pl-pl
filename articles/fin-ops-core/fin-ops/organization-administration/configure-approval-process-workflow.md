@@ -3,7 +3,7 @@ title: Konfigurowanie procesów zatwierdzania w przepływie pracy
 description: Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości procesu zatwierdzania.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4032d5e56b9dd014ec0472abfc1b2ad4a15ff1d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1f58e227542b1e5ca1235748d14e71bddac826ee
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811388"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983771"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>Konfigurowanie procesów zatwierdzania w przepływie pracy
 
@@ -138,11 +138,12 @@ Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku zatwierd
 
 ## <a name="specify-a-final-approver"></a> Określanie ostatecznej osoby zatwierdzającej
 
-Można wyznaczyć osobę ostatecznie zatwierdzającą dla scenariuszy, gdzie osobą zatwierdzającą jest użytkownik, który przesłał dokument do zatwierdzenia. Aby określić ostateczną osobę zatwierdzającą, wykonaj następujące kroki.
+Można wyznaczyć ostateczną osobę zatwierdzającą w scenariuszach, w których osobą zatwierdzającą jest osobą, która przesłała dokument do zatwierdzenia, i jest używana opcja „nie zezwalaj na zatwierdzenie przez osobę przesyłającą”. Aby określić ostateczną osobę zatwierdzającą, wykonaj następujące kroki.
 
-1. W lewym okienku kliknij przycisk **Ustawienia zaawansowane**.
-2. Zaznacz pole wyboru **Użyj ostatecznej osoby zatwierdzającej**.
-3. Wybierz z listy użytkownika, który ma być osobą ostatecznie zatwierdzającą.
+1. W edytorze przepływu pracy kliknij element zatwierdzania prawym przyciskiem myszy i wybierz **Właściwości**, a zostanie otwarty formularz **Właściwości**.
+2. W lewym okienku kliknij przycisk **Ustawienia zaawansowane**.
+3. Zaznacz pole wyboru **Użyj ostatecznej osoby zatwierdzającej**.
+4. Wybierz z listy użytkownika, który ma być ostateczną osobą zatwierdzającą.
 
 ## <a name="set-a-time-limit"></a>Ustawianie limitu czasu
 

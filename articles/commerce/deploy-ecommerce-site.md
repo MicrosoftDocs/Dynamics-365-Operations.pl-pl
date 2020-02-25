@@ -3,7 +3,7 @@ title: Wdrażanie nowej dzierżawy e-commerce
 description: W tym temacie opisano sposób wdrażania nowej dzierżawy e-Commerce za pomocą Microsoft Dynamics Lifecycle Services (usługi LCS).
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945520"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001790"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Wdrażanie nowej dzierżawy e-commerce
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób wdrażania nowej witryny e-Commerce za pomocą Microsoft Dynamics Lifecycle Services (usługi LCS).
 
 ## <a name="overview"></a>Omówienie
-    
+
 Microsoft Dynamics Lifecycle Services (usługi LCS) to oparty na chmurze obszar roboczy, za pomocą którego partnerzy i klienci mogą zarządzać swoimi projektami i środowiskami, wyświetlać najnowsze informacje o produktach i funkcjach Microsoft Dynamics oraz tworzyć, śledzić i przeglądać zdarzenia pomocy technicznej. Funkcje zarządzania e-Commerce są zintegrowane z usługi LCS.
 
 Aby dowiedzieć się więcej o usługi LCS, zobacz [Przewodnik użytkownika usługi Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
@@ -80,11 +80,16 @@ Po zebraniu wymaganych informacji należy wykonać poniższe kroki w celu zainic
 1. Na następnej stronie wpisz wymagane informacje, a następnie prześlij formularz. Powrócisz na kartę **e-Commerce**, w której powinny być widoczne informacje o uruchomieniu inicjalizacji.
 1. Aby wyświetlić stan inicjalizacji, należy **odświeżyć** lub wrócić na kartę **e-Commerce** później.
     
-Gdy e-Commerce jest inicjowany z usługi LCS, system Inicjuje obsługę kilku składników wymaganych w e-Commerce i kojarzy je ze środowiskiem. Po zakończeniu obsługi administracyjnej karta **e-Commerce** na stronie **zarządzania detalicznego** jest aktualizowana w celu uwzględnienia tej zmiany. Na stronie są wyświetlane najnowsze wdrożenia dostosowań oraz stan wszystkich innych trwających wdrożeń. Zawiera także łącza do witryny e-Commerce oraz narzędzia do zarządzania oddziałem e-Commerce (narzędzie autorskie).
+Gdy e-Commerce jest inicjowany z usługi LCS, system Inicjuje obsługę kilku składników wymaganych w e-Commerce i kojarzy je ze środowiskiem. Po zakończeniu obsługi administracyjnej karta **e-Commerce** na stronie **Zarządzanie Retail** jest aktualizowana w celu uwzględnienia tej zmiany. Na stronie są wyświetlane najnowsze wdrożenia dostosowań oraz stan wszystkich innych trwających wdrożeń. Zawiera także łącza do witryny e-Commerce oraz narzędzia do zarządzania witryną e-Commerce, gdzie tworzone są witryny.
 
-## <a name="access-the-authoring-environment"></a>Dostęp do środowiska autorskiego
+## <a name="access-site-builder"></a>Dostęp do konstruktora witryn
 
-Aby uzyskać dostęp do środowiska projektowego, przejdź do karty **e-Commerce** na stronie **Zarządzanie detalicznymi**. W tym miejscu znajdują się łącza do witryny e-Commerce oraz narzędzia do zarządzania oddziałem.
+Aby uzyskać dostęp do konstruktora witryn, przejdź na kartę **e-Commerce** na stronie **Zarządzanie Retail** w usłudze LCS i wybierz **narzędzia zarządzania witryny e-Commerce**. Strona docelowa konstruktora witryn umożliwia wyświetlenie widoku na poziomie dzierżawy. Z poziomu tej strony można:
+
+- Modyfikować ustawienia na poziomie dzierżawy.
+- Przechodzić do dowolnych utworzonych witryn i mających uprawnienia do wyświetlania. 
+- Uzyskać dostęp do funkcji ocen, takich jak moderowania i reportowania.
+- Stworzyć nową witrynę. Aby uzyskać więcej informacji dotyczących sposobu tworzenia nowej witryny, zobacz [Tworzenie nowej witryny e-Commerce](create-ecommerce-site.md). 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

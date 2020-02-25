@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie środowiska wersji zapoznawczej usługi Commerce
+title: Konfiguruj środowisko wersji zapoznawczej usługi Dynamics 365 Commerce
 description: W tym temacie opisano sposób konfigurowania środowiska wersji zapoznawczej aplikacji Microsoft Dynamics 365 Commerce po jego aprowizacji.
 author: psimolin
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f19d03f3f2f5a9f6f7ba08b682277e4e3b764d10
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906146"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024713"
 ---
-# <a name="configure-a-commerce-preview-environment"></a>Konfigurowanie środowiska wersji zapoznawczej usługi Commerce
+# <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfiguruj środowisko wersji zapoznawczej usługi Dynamics 365 Commerce
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób konfigurowania środowiska wersji zapoznawczej aplikacji Microsoft Dynamics 365 Commerce po jego aprowizacji.
@@ -142,13 +142,13 @@ Aby skonfigurować opcjonalne funkcje środowiska wersji zapoznawczej usługi Co
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie środowiska wersji zapoznawczej usługi Commerce](cpe-overview.md)
+[Dynamics 365 Commerce omówienie środowiska wersji zapoznawczej](cpe-overview.md)
 
-[Aprowizowanie środowiska wersji zapoznawczej usługi Commerce](provisioning-guide.md)
+[Inicjuj środowisko wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfigurowanie funkcji opcjonalnych środowiska wersji zapoznawczej usługi Commerce](cpe-optional-features.md)
+[Konfiguruj funkcje opcjonalne środowiska wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-optional-features.md)
 
-[Często zadawane pytania dotyczące środowiska wersji zapoznawczej usługi Commerce](cpe-faq.md)
+[Środowisko wersji zapoznawczej Dynamics 365 Commerce— często zadawane pytania](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -157,5 +157,3 @@ Aby skonfigurować opcjonalne funkcje środowiska wersji zapoznawczej usługi Co
 [Portal Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Witryna Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Zasoby pomocy dla rozwiązania Dynamics 365 Retail](../retail/index.md)

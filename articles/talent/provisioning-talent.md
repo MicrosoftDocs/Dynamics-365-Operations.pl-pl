@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: b705304788f47e4a5d2a9f1b2bf42a065428ea0f
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: d06c0d14fb99e5544a5da05078f5b3a559f9e806
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898140"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025516"
 ---
 # <a name="provision-talent"></a>Inicjowanie obsługi rozwiązania Talent
 
@@ -46,6 +46,10 @@ Po utworzeniu projektu LCS można zainicjować aplikację Talent w środowisku.
 
 1. W projekcie LCS wybierz kafel **Zarządzanie aplikacją Talent**.
 2. Wskaż, czy jest to wystąpienie produkcyjne czy piaskownicy aplikacji Talent. Funkcje w wersji zapoznawczej mogą być dostępne w wystąpieniach piaskownicy, aby umożliwić wczesne przesłanie opinii i testowanie. 
+
+    > [!NOTE]
+    > Po ustawieniu typu wystąpienia aplikacji Talent nie można go zmienić. Przed kontynuowaniem sprawdź, czy został wybrany poprawny typ wystąpienia.
+
     > [!NOTE]
     > Typ wystąpienia talentów jest niezależny od typu wystąpienia środowiska Microsoft Power Apps, które zostało ustawione w centrum administracyjnym Power Apps.
 3. Zaznacz opcję **Dołącz dane demonstracyjne**, jeżeli chcesz, aby Twoje środowisko zawierało ten sam zestaw danych demonstracyjnych, jak używany w środowisku testowym aplikacji Talent. Jest to korzystne w środowiskach długoterminowych demonstracji lub szkoleń, natomiast nigdy nie należy używać tej opcji w środowisku produkcyjnym.  Należy wybrać tę opcję po wdrożeniu wstępnym. Nie można później zaktualizować istniejącego wdrożenia.
@@ -64,7 +68,7 @@ Po utworzeniu projektu LCS można zainicjować aplikację Talent w środowisku.
     > [!NOTE]
     > Jeszcze przez spełnienie wymagań końcowych można wdrożyć wystąpienie testowe rozwiązania Talent w projekcie. Korzystając z tego wystąpienia, można testować swoje rozwiązanie do momentu sfinalizowania zakupu. W przypadku korzystania z nowego środowiska do testowania należy powtórzyć tę procedurę, aby utworzyć środowisko produkcyjne.
 
-    > Ponieważ w ramach subskrypcji usługi Talent są dozwolone tylko dwa środowiska LCS, można również rozważyć wykorzystanie bezpłatnego 60-dniowego [środowiska próbnego aplikacji Talent](https://dynamics.microsoft.com/talent/overview/). Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Core HR. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Nie są one przeznaczone do używania jako środowiska produkcyjne. Należy zauważyć, że po wygaśnięciu wersji próbnej środowiska po upływie 60 dni wszystkie zawarte w niej dane są usuwane nie można ich odzyskać. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
+    > Ponieważ w ramach subskrypcji usługi Talent są dozwolone tylko dwa środowiska LCS, można również rozważyć wykorzystanie bezpłatnego 60-dniowego [środowiska próbnego aplikacji Talent](https://dynamics.microsoft.com/talent/overview/). Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Human Resources. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Nie są one przeznaczone do używania jako środowiska produkcyjne. Należy zauważyć, że po wygaśnięciu wersji próbnej środowiska po upływie 60 dni wszystkie zawarte w niej dane są usuwane nie można ich odzyskać. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
 
 ## <a name="select-a-power-apps-environment"></a>Wybierz środowisko Power Apps
 
@@ -87,4 +91,4 @@ Przy ustalaniu, w którym środowisku usługi Power Apps wdrożyć moduł Talent
 6. Po określeniu odpowiedniego środowiska, które będzie używane, można kontynuować proces inicjowania obsługi. 
  
 ## <a name="grant-access-to-the-environment"></a>Przyznawanie dostępu do środowiska
-Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył. Dodatkowym użytkownikom aplikacji trzeba jednoznacznie przyznać dostęp. W celu udzielenia dostępu trzeba dodać użytkowników i przypisać im odpowiednie role w środowisku Core HR. Globalny administrator, który wdrożył aplikację Talent, musi również uruchomić Attract i Onboard, aby dokończyć inicjalizację i umożliwić dostęp innym użytkownikom dzierżawy.  Dopóki tak się nie stanie, inni użytkownicy nie będą mieli dostępu do Attract i Onboard i będą im wyświetlane błędy naruszenia dostępu. Aby uzyskać więcej informacji, zobacz [tworzenie nowych użytkowników](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) i [przypisywanie użytkowników do ról zabezpieczeń](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył. Dodatkowym użytkownikom aplikacji trzeba jednoznacznie przyznać dostęp. W celu udzielenia dostępu trzeba dodać użytkowników i przypisać im odpowiednie role w środowisku Human Resources. Globalny administrator, który wdrożył aplikację Talent, musi również uruchomić Attract i Onboard, aby dokończyć inicjalizację i umożliwić dostęp innym użytkownikom dzierżawy.  Dopóki tak się nie stanie, inni użytkownicy nie będą mieli dostępu do Attract i Onboard i będą im wyświetlane błędy naruszenia dostępu. Aby uzyskać więcej informacji, zobacz [tworzenie nowych użytkowników](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) i [przypisywanie użytkowników do ról zabezpieczeń](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

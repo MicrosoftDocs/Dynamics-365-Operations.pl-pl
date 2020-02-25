@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c28c9e8c2573bcd82434f88daa8f9cadc946209
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: fc9064f0386fe7c0f4093fc30587be4baa259eb0
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812393"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003686"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Omówienie organizacji i hierarchii organizacyjnych
 
@@ -47,7 +47,7 @@ Firma jest typem podmiotu prawnego. Obecnie firmy to jedyny rodzaj podmiotu praw
 
 Jednostka operacyjna to organizacja używana do dzielenia formantu zasobów ekonomicznych i procesów operacyjnych w firmie. Osoby w jednostce operacyjnej mają obowiązek maksymalizować wykorzystanie ograniczonych zasobów i konta dla zapewnienia ich wydajności.
 
-Typy jednostek operacyjnych obejmują centra kosztów, jednostki biznesowe, strumienie wartości, działy i kanały sieci sprzedaży. Poniższa tabela zawiera więcej informacji o każdym typie jednostki operacyjnej.
+Typy jednostek operacyjnych obejmują centra kosztów, jednostki biznesowe, strumienie wartości, działy i kanały komercyjne. Poniższa tabela zawiera więcej informacji o każdym typie jednostki operacyjnej.
 
 | Typ jednostki operacyjnej | Opis | Cel |
 |---------------------|-------------|---------|
@@ -55,7 +55,7 @@ Typy jednostek operacyjnych obejmują centra kosztów, jednostki biznesowe, stru
 | Jednostka biznesowa       | Częściowo autonomiczna jednostka operacyjna utworzona w celu spełnienia strategicznych celów biznesowych. | Używana do sprawozdawczości finansowej opartej na branżach lub liniach produktów, które organizacja obsługuje niezależnie od podmiotów prawnych. |
 | Strumień wartości        | Jednostka operacyjna, która kontroluje jeden lub więcej przepływów produkcji. | Powszechnie używana w module produkcji oszczędnej do kontrolowania działań i przepływów, które są wymagane w celu dostaw produktu lub usługi do konsumentów. |
 | Dział          | Jednostka operacyjna, która reprezentuje kategorię lub funkcjonalną część organizacji, która wykonuje określone zadanie, takie jak sprzedaż lub księgowanie. | Używana w raportach dla obszarów funkcjonalnych. Dział może mieć obowiązek raportowania zysków i strat i może się składać z grupy centrów kosztów. |
-| Kanał sprzedaży      | Jednostka operacyjna, która reprezentuje sklep tradycyjny, sklep internetowy lub internetowy serwis sprzedażowy. | Służy do kontroli operacyjnej przynajmniej jednego sklepu w ramach podmiotu prawnego lub wielu podmiotów prawnych oraz do zarządzania takim sklepem. |
+| Kanał Commerce      | Jednostka operacyjna, która reprezentuje sklep tradycyjny, sklep internetowy lub internetowy serwis sprzedażowy. | Służy do kontroli operacyjnej przynajmniej jednego sklepu w ramach podmiotu prawnego lub wielu podmiotów prawnych oraz do zarządzania takim sklepem. |
 
 ### <a name="teams"></a>Zespoły
 

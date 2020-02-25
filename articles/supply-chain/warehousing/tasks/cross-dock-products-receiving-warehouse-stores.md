@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8e25007cc4a204aeaf73a2e819c129fa8fa29d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f38c2ad9561cc1a1c775c27aec54681124cffeec
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563396"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004095"
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>Przeładunek kompletacyjny z magazynu przyjmującego do sklepów
 
@@ -31,7 +31,7 @@ Ta procedura prowadzi przez kolejne kroki tworzenia i przetwarzania przeładunku
 
 1. Przejdź do okna Wszystkie zamówienia zakupu.
 2. Na liście zaznacz zamówienie zakupu i kliknij łącze, aby je otworzyć.
-3. W okienku akcji kliknij pozycję Handel detaliczny.
+3. W okienku akcji kliknij opcję Retail i Commerce.
 4. Kliknij opcję Przeładunek kompletacyjny.
 5. Kliknij przycisk Edytuj.
     * Kategoria może służyć do filtrowania towarów w sekcji Wiersze.  

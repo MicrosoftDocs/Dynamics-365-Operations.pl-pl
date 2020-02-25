@@ -3,7 +3,7 @@ title: Omówienie zestawu początkowego
 description: W tym temacie omówiono zestaw początkowy Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 73af7fc8845fe08bc4aa014abe4d8c6dcf7ccb7d
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 1960e1354744fe1034783177ba331f5877d0bee7
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785267"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025909"
 ---
 # <a name="starter-kit-overview"></a>Omówienie zestawu początkowego
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie omówiono zestaw początkowy Microsoft Dynamics 365 Commerce.
@@ -43,7 +43,7 @@ Motywy mogą być stosowane do modułów w początkowym zestawie, aby zmieniać 
 W początkowym zestawie są dostępne następujące typy modułów:
 
 - **Moduł kontenerów** — moduł kontenerowy jest prostym modułem działającym jako host dla innych modułów. Steruje on układem modułów znajdujących się wewnątrz tego modułu.
-- **Moduły marketingowe** — moduły marketingowe: Hero, funkcja, Umieszczanie zawartości, przebudowana zawartość, odtwarzacz wideo i moduły karuzeli. Wszystkie te moduły mogą być używane do poprezentacji zawartości. Można je umieścić na dowolnej stronie i są sterowane danymi z systemu zarządzania treścią (CMS).
+- **Moduły marketingowe** — moduły marketingowe: blok zawartości, blok tekstowy, odtwarzacz wideo i moduły karuzeli. Wszystkie te moduły mogą być używane do poprezentacji zawartości. Można je umieścić na dowolnej stronie i są sterowane danymi z systemu zarządzania treścią (CMS).
 - **Moduły nagłówka i stopki** — moduły nagłówka i stopki są wyświetlane w nagłówku i stopce wszystkich stron witryny. Moduły te można skonfigurować zgodnie z wymaganiami właściwości.
 - **Moduły wyszukiwania** — produkty można wykrywać za pomocą modułu wyszukiwania w nagłówku. Wyniki wyszukiwania zostaną wyświetlone na stronie wyników wyszukiwania. Produkty można również wykryty na stronach kategorii, które są dedykowanymi stronami dla każdej kategorii obsługiwanej w hierarchii nawigacji kanału. Ponadto moduły elementów uściślających mogą służyć do dalszego filtrowania wyników wyszukiwania i stron kategorii.
 - **Moduły strony Szczegóły produktu** — strony z informacjami o produktach używają kilku modułów do wyświetlania informacji o produktach. Odbiorca modułu pola zakupu dla odbiorców umożliwia wyświetlenie produktów i dodanie ich do koszyka. Inne moduły, takie jak moduł specyfikacji technicznej, zawierają szczegóły dotyczące produktu. Moduł oceny i recenzje może służyć do wyświetlania i udostępniania recenzji.

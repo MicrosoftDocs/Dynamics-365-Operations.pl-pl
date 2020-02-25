@@ -3,7 +3,7 @@ title: Zgoda na korzystanie z ocen i recenzji
 description: W tym temacie wyjaśniono, jak korzystać z klasyfikacji i recenzji w witrynie Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10e3c33af232fa46df09a103b2e73eae09a909eb
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: eda7fbaeea8d3c1a07f7b43cafe44886d149a211
+ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697987"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027272"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Zgoda na korzystanie z ocen i recenzji
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 W tym temacie wyjaśniono, jak korzystać z klasyfikacji i recenzji w witrynie Microsoft Dynamics 365 Commerce.
@@ -36,7 +35,7 @@ W tym temacie wyjaśniono, jak korzystać z klasyfikacji i recenzji w witrynie M
 
 Rozwiązanie oceny i recenzje to rozwiązanie wielokanałowe, które można udostępnić w Dynamics 365 Commerce za pomocą Microsoft Dynamics Lifecycle Services (usługi LCS). LCS jest portalem administracyjnym używanym przez detalistów do zarządzania swoimi środowiskami w celu likwidacji.
 
-Jeśli chcesz używać rozwiązania ocen i recenzji w witrynie Commerce, musisz najpierw wybrać tę opcję.
+Jeśli chcesz używać rozwiązania klasyfikacji i recenzji w witrynie Commerce, musisz korzystać z klasyfikacji i przeglądów podczas wdrażania witryny handlu elektronicznego w systemie Dynamics 365 Commerce.
 
 ## <a name="opt-in-to-use-ratings-and-reviews"></a>Zgoda na korzystanie z ocen i recenzji
 
@@ -51,6 +50,9 @@ Aby korzystać z ocen i recenzji w witrynie, wykonaj następujące kroki.
 
 1. Zakończ proces inicjowania w e-Commerce.
 
+> [!NOTE] 
+> Jeśli użytkownik jest istniejącym odbiorcą Dynamics 365 Commerce, który już wdrożył witrynę handlu elektronicznego bez wyboru w zakresie klasyfikacji i przeglądów, a teraz chce użyć w pakiecie Dynamics 365 Commerce klasyfikacji i recenzji, należy przesłać żądanie usługi. Aby uzyskać informacje dotyczące sposobu przesyłania zlecenia serwisowego, przejrzyj [proces przesyłania wniosków serwisowych](../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json). 
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie ocen i recenzji](ratings-reviews-overview.md)
@@ -60,3 +62,5 @@ Aby korzystać z ocen i recenzji w witrynie, wykonaj następujące kroki.
 [Konfigurowanie ocen i recenzji](configure-ratings-reviews.md)
 
 [Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Retail](sync-product-ratings.md)
+
+

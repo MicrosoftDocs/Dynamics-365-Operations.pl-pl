@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 642cb5c145dec68631eb9ab27d926ba8ab75c59b
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: c2235510c7ef386d66fe3b137f8e791d14706379
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914917"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001836"
 ---
 # <a name="customize-site-navigation"></a>Dostosowywanie nawigacji w witrynie
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób tworzenia dostosowanej hierarchii nawigacji w trybie online do organizowania produktów w celu ich przejrzenia w witrynie Microsoft Dynamics 365 Commerce.
@@ -35,11 +35,11 @@ W tym temacie opisano sposób tworzenia dostosowanej hierarchii nawigacji w tryb
 
 Sklepy online zazwyczaj umożliwiają klientom odkrywanie produktów i przeglądanie ich w różnych kategoriach produktów. Ta możliwość jest zazwyczaj udostępniana przez karty u góry strony lub przez pasek nawigacyjny po lewej stronie. W Dynamics 365 Commerce można tworzyć strukturę hierarchii nawigacji między kategoriami i produkty uwzględnione w różnych kategoriach oraz zarządzać tymi strukturami.
 
-## <a name="create-a-retail-channel-navigation-hierarchy"></a>Tworzenie hierarchii nawigacji kanału sprzedaży
+## <a name="create-a-channel-navigation-hierarchy"></a>Tworzenie hierarchii nawigacji kanału
 
-Aby utworzyć hierarchię nawigacji kanału sprzedaży detalicznej, wykonaj następujące kroki.
+Aby utworzyć hierarchię nawigacji kanału, wykonaj następujące kroki.
 
-1. Wybierz kolejno opcje **Handel detaliczny i inny \> Produkty i kategorie \> Zarządzanie kategoriami i produktami**.
+1. Wybierz kolejno opcje **Retail i Commerce \> Produkty i kategorie \> Zarządzanie kategoriami i produktami**.
 1. Wybierz **Hierarchie kategorii**, a następnie wybierz opcję **Nowy**.
 1. Nazwij hierarchię.
 
@@ -57,28 +57,28 @@ Kategorie definiowane przez użytkownika są domyślnie wyświetlane w kolejnoś
 
 ## <a name="assign-a-category-hierarchy-type"></a>Przypisywanie typu hierarchii kategorii
 
-1. Wybierz kolejno opcje **Handel detaliczny i inny \> Produkty i kategorie \> Zarządzanie kategoriami i produktami**.
+1. Wybierz kolejno opcje **Retail i Commerce \> Produkty i kategorie \> Zarządzanie kategoriami i produktami**.
 1. Wybierz **Hierarchie kategorii**.
 1. Następnie w okienku akcji na karcie **Hierarchie kategorii** w grupie **Konfiguracja** wybierz opcję **Powiązanie typu hierarchii**.
 1. Wybierz pozycję **Nowy**.
-1. W polu **Typ hierarchii kategorii** wybierz opcję **Hierarchia nawigacji kanału sprzedaży**.
+1. W polu **Typ hierarchii kategorii** wybierz opcję **Hierarchia nawigacji kanału**.
 1. W polu **hierarchia kategorii** wybierz utworzoną wcześniej hierarchię nawigacji kanałów.
 
 ## <a name="publish-new-or-updated-navigation-hierarchies"></a>Opublikuj nowe lub zaktualizowane hierarchie nawigacji
 
 Aby uczynić hierarchię nawigacji dostępną w Twoim sklepem online, wykonaj następujące kroki.
 
-1. Wybierz kolejno opcje **Handel detaliczny \> Ustawienia kanału \> Kategorie kanału sprzedaży i atrybuty produktów**.
+1. Wybierz kolejno opcje **Retail i Commerce \> Ustawienia kanału \> Kategorie kanału sprzedaży i atrybuty produktów**.
 1. W drzewie po lewej stronie wybierz sklep internetowy.
 1. Wybierz **Publikowanie aktualizacji kanału**.
-1. Wybierz kolejno opcje **Handel detaliczny \> Dane IT sieci sprzedaży \> Harmonogram dystrybucji**.
+1. Wybierz kolejno opcje **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji**.
 1. Na liście znajdź i zaznacz **Zadanie 1040**.
 1. Wybierz opcję **Uruchom teraz**.
 1. Powtórz kroki 5 i 6 dla zadań 1070 i 1150.
 
 ## <a name="show-categories-on-your-site"></a>Wyświetlanie kategorii w witrynie
 
-Aby wyświetlić hierarchię kategorii w witrynie sklep online, należy dodać moduł menu nawigacji w odpowiedniej lokalizacji w szablonie lub fragmencie. W module menu nawigacji zostanie wyświetlona hierarchia nawigacji, pod warunkiem, że hierarchia nawigacji w sieci sprzedaży zostanie opublikowana w kanale, z którym jest związana ta witryna.
+Aby wyświetlić hierarchię kategorii w witrynie sklep online, należy dodać moduł menu nawigacji w odpowiedniej lokalizacji w szablonie lub fragmencie. W module menu nawigacji zostanie wyświetlona hierarchia nawigacji, pod warunkiem, że hierarchia nawigacji zostanie opublikowana w kanale, z którym jest związana ta witryna.
 
 > [!NOTE]
 > Moduł menu nawigacji, który jest dołączony do zestawu Store Starter Kit, umożliwia użytkownikom poruszanie się wyłącznie do kategorii, które nie mają podkategorii. Jeśli odbiorcy powinni mieć możliwość nawigowania do kategorii, które mają podkategorie, należy dostosować Moduł menu nawigacji.

@@ -1,9 +1,9 @@
 ---
-title: Rozszerz Talent o Power Apps i Power Automate
-description: W tym temacie opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 Talent używanych przez Microsoft Power Apps i Microsoft Power Automate.
+title: Rozszerz aplikację Talent o usługi Power Apps i Power Automate
+description: W tym artykule opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 Talent - Attract używanych przez Microsoft Power Apps i Microsoft Power Automate.
 author: negudava
 manager: Annbe
-ms.date: 05/01/2019
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -16,21 +16,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: negudava
-ms.search.validFrom: 2019-03-04
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 6c8a583a93c2ceb70d8c3b0e0047e2bf2047b56d
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 1051fa4db16bb94cc9d60a91fc3637d7e5305cc2
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898324"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029918"
 ---
-# <a name="extend-talent-with-power-apps-and-power-automate"></a>Rozszerz Talent o Power Apps i Power Automate
+# <a name="extend-talent-with-power-apps-and-power-automate"></a>Rozszerz aplikację Talent o usługi Power Apps i Power Automate
 
-W tym temacie opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 Talent używanych przez Microsoft Power Apps i Microsoft Power Automate. Można zaimportować pakiet rozwiązań skojarzony z każdym przykładem do środowiska Power Apps. Następnie można używać pakietów jako pomocy lub punktów początkowych do implementacji scenariuszy odpowiednich dla Twojej organizacji.
+W tym artykule opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 Talent: Attract - Attract używanych przez Microsoft Power Apps i Microsoft Power Automate. Można zaimportować pakiet rozwiązań skojarzony z każdym przykładem do środowiska Power Apps. Następnie można używać pakietów jako pomocy lub punktów początkowych do implementacji scenariuszy odpowiednich dla Twojej organizacji.
 
 > [!IMPORTANT]
-> Jeśli chcesz korzystać z szablonów i aplikacji, które zostały opisane w tym temacie „tak jak są”, sprawdź je, aby upewnić się, że będą one obejmować wszystkie scenariusze, które są specyficzne dla danej implementacji.
+> Jeśli chcesz korzystać z szablonów i aplikacji, które zostały opisane w tym artykule „tak jak są”, sprawdź je, aby upewnić się, że będą one obejmować wszystkie scenariusze, które są specyficzne dla danej implementacji.
 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
@@ -49,47 +49,11 @@ Ten szablon może zostać rozszerzony, tak aby można było go używać w innych
 - Kompilowanie biblioteki pytań na rozmowy kwalifikacyjne dla administratorów zasobów ludzkich (HR).
 - Przechwytywania oceny kandydata po rozmowie kwalifikacyjnej
 
-W Microsoft Dynamics 365: Attract, formularze mogą pojawiać się w portalu dla kandydatów i kandydaci mogą wypełniać szczegóły. Formularze mogą być również osadzone jako działania w szablonie stanowiska.
+W Microsoft Dynamics 365: Attract, można używać formularzy w portalu dla kandydatów, gdzie kandydaci mogą wypełniać szczegóły. Formularze mogą być również osadzone jako działania w szablonie stanowiska.
 
 Po przesłaniu formularza przez kandydata Microsoft Power Automate przechwytuje przesłanie formularza, odczytuje dane i zapisuje je w jednostce Common Data Service.
 
 Aby pobrać szablon **Power Automate— połączenie formularza** i strukturę jednostki niestandardowej, przejdź do sekcji [Power Automate — połączenie formularza](https://go.microsoft.com/fwlink/?linkid=2081988) w centrum pobierania Microsoft.
-
-## <a name="initiate-and-extract-parameters-passed-to-power-apps"></a>Inicjowanie i wyodrębnianie parametrów przekazanych do usługi Power Apps
-
-Szablon **Inicjowanie i wyodrębnianie parametrów przekazanych do usługi Power Apps** może być używany jako punkt początkowy dla dowolnych scenariuszy Power Apps charakterystycznych dla Attract. Zawiera on wszystkie parametry domyślne, które są przekazywane przez Attract, takie jak **Podanie o pracę**, **identyfikator kandydata**, i **JobID**.
-
-Za pomocą tego szablonu można pobrać formularz oceny kandydata, dzięki czemu menedżer zatrudniający może wyświetlić ocenę wypełnioną przez kandydata.
-
-Aplikacje, które są tworzone przy użyciu Power Apps mogą być osadzone w szablonie stanowiska w Attract.
-
-Aby pobrać szablon **Inicjowanie i wyodrębnianie parametrów przekazanych do usługi Power Apps** i strukturę jednostki niestandardowej, przejdź do [Inicjowanie i wyodrębnianie parametrów przekazanych do usługi Power Apps](https://go.microsoft.com/fwlink/?linkid=2081991) w centrum pobierania Microsoft.
-
-## <a name="integration-with-office-365"></a>Integracja z programem Office 365
-
-Aplikacja **Integracja z Office 365** może być używana do pobierania danych zespołu dla zarejestrowanych użytkowników z Microsoft Office 365. Odwołuje się ono do pracowników w Talent do wyodrębnienia szczegółów zarejestrowania i wyrejestrowania oraz nagrań wyjątku. Szczegóły zarejestrowania i wyrejestrowania znajdują się w niestandardowych jednostkach Common Data Service. Zakłada się, że te szczegóły są wypełniane na podstawie informacji w systemach zewnętrznych poprzez integrację.
-
-Ta aplikacja może zostać rozszerzona, tak aby można było jej używać w innych scenariuszach. Na przykład może służyć do wyświetlania informacji dotyczących urlopu zespołu, zdarzeń kalendarza i zdarzeń specyficznych dla zespołu.
-
-Aby pobrać aplikację **Integracja z Office 365** i strukturę jednostki niestandardowej, przejdź do [Integracja z Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) w centrum pobierania Microsoft.
-
-## <a name="power-automate--email-notification"></a>Power Automate – Powiadomienie pocztą
-
-Szablon **Power Automate — powiadomienie pocztą e-mail** może być używany w scenariuszach powiadamiania pocztą e-mail. Może służyć do wyzwalania wiadomości e-mail z powiadomieniem kandydatów, których zespół rekrutacyjny odrzuci na dowolnym etapie procesu rekrutacji.
-
-Ten szablon można rozszerzyć w celu śledzenia zmian w fazie kandydata w całym procesie rekrutacji i do wysyłania powiadomień do zespołu rekrutacyjnego oraz kandydata.
-
-Generalnie, w przypadku jednostek zapisanych w Common Data Service, przepływy można ustawić tak, aby system wysyłał powiadomienia dotyczące zdarzeń w Core HR, Attract lub Onboard.
-
-Aby pobrać **Power Automate — powiadomienie pocztą e-mail**, przejdź do [Power Automate — powiadomienie pocztą e-mail](https://go.microsoft.com/fwlink/?linkid=2082103) w centrum pobierania Microsoft.
-
-## <a name="power-automate--sql-connect-and-execute"></a>Power Automate — połączenie SQL i wykonywanie
-
-**Power Automate — połączenie SQL i wykonywanie** łączy się z Microsoft SQL Server i umożliwia uruchamianie kwerend przez SQL.
-
-Chociaż ten szablon jest przeznaczony do odczytu i aktualizowania tabel SQL, może zostać rozszerzony, tak aby można było z niego korzystać także w innych scenariuszach. Na przykład, jego może służyć do wypełnienia tabeli tymczasowej Common Data Service rekordami z programu SQL Server i do okresowego synchronizowania tabeli tymczasowej przy użyciu wypychania przyrostowego z programu SQL Server.
-
-Aby pobrać **Power Automate — połączenie SQL i wykonywanie**, przejdź do sekcji [Power Automate — połączenie SQL i wykonywanie](https://go.microsoft.com/fwlink/?linkid=2081789) w centrum pobierania Microsoft.
 
 ## <a name="power-automate--sharepoint-integration"></a>Power Automate – Integracja SharePoint
 
@@ -102,14 +66,14 @@ Ten szablon może zostać rozszerzony tak, aby można go było używać w dowoln
 Aby pobrać **Power Automate – SharePoint integracja**, przejdź do [Power Automate – integracja SharePoint](https://go.microsoft.com/fwlink/?linkid=2082109) w centrum pobierania Microsoft.
 
 ## <a name="referral-app"></a>Aplikacja Poleceń
+
 Za pomocą aplikacji Poleceń można dodawać kandydatów do udostępnionej puli talentów. Osoba polecająca może wprowadzić wartość **Imię**, **Nazwisko**, **Adres e-mail** i **Linkedln URL** podczas przesyłania kandydata. Metadane źródła kandydata są następnie wypełniane informacjami osoby polecającej.
 
 Tę aplikację można osadzić w module Samoobsługa pracownika (ESS) w celu przesłania polecenia lub można używać jej jako hiperłącza w portalu korporacyjnym i uruchamiać jako autonomiczną aplikację.
 
-Aby pobrać **Aplikację Poleceń**, przejdź do [Dynamics 365 Talent do rozwiązania rozszerzalności: Aplikacja Poleceń](https://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) w Microsoft — Centrum pobierania. Możesz zaimportować tę aplikację i dostosować ją w celu dodania dodatkowych funkcji.
+Aby pobrać **Aplikację Poleceń**, przejdź do [Dynamics 365 Talent do rozwiązania rozszerzalności: Aplikacja Poleceń](https://www.microsoft.com/download/details.aspx?id=58497) w Microsoft — Centrum pobierania. Możesz zaimportować tę aplikację i dostosować ją w celu dodania dodatkowych funkcji.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
-
+[Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
 [Migracja aplikacji między dzierżawcami i środowiskami](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)

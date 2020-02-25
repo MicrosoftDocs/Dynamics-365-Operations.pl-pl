@@ -3,7 +3,7 @@ title: Omówienie zarządzania dokumentami biznesowymi
 description: Ten temat zawiera informacje dotyczące sposobu korzystania z funkcji zarządzania dokumentami biznesowymi w ramach modułu raportowania elektronicznego.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/09/2019
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
+ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933915"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2957374"
 ---
 # <a name="business-document-management-overview"></a>Omówienie zarządzania dokumentami biznesowymi
 
@@ -122,7 +122,7 @@ Aby włączyć funkcję zarządzania dokumentem biznesowym dla wszystkich firm, 
 4. Odśwież stronę, aby uzyskać dostęp do nowej funkcji.
 
 >[!NOTE]
-> Ponadto konieczne jest włączenie **funkcji interfejsu użytkownika podobnej do Office dla funkcji zarządzania dokumentami biznesowymi** w celu korzystania z nowego interfejsu zarządzania dokumentami biznesowymi.
+> Aby uzyskać więcej informacji o korzystaniu z interfejsu użytkownika dla nowego dokumentu w zarządzaniu dokumentami biznesowymi, należy zapoznać się z tematem [Nowy interfejs użytkownika dokumentu w module Zarządzanie dokumentami biznesowymi](er-business-document-management-new-template-ui.md).
 
 ![Obszar roboczy zarządzanie funkcjami](./media/BDM-Overview-FMEnabling.png)
 
@@ -147,7 +147,7 @@ Aby uzyskać informacje dotyczące konfigurowania wymaganych parametrów zarząd
 
 ![Ustaw tyo dokumentu Zarządzania dokumentami](./media/BDM-Overview-DMSetting.png)
 
-### <a name="set-up-parameters"></a>Konfigurowanie parametrów
+### <a name="SetupBdmParameters">Konfigurowanie parametrów</a>
 
 Do konfigurowania parametrów podstawowych zarządzania dokumentami biznesowymi służy strona parametry **Parametry dokumentu biznesowego**. Tylko określeni użytkownicy mają dostęp do strony. W tym:
 
@@ -166,6 +166,9 @@ Aby skonfigurować podstawowe parametry dla wszystkich firm, należy wykonać po
 ![Konfiguracja parametrów zarządzania dokumentami biznesowymi](./media/BDM-Overview-BDMSetting.png)
 
 Wybrany typ dokumentu jest specyficzny dla firmy i będzie używany, gdy użytkownik pracuje z Zarządzaniem dokumentami biznesowymi w firmie, dla której jest konfigurowany wybrany typ dokumentu. Gdy użytkownik pracuje z Zarządzaniem dokumentami biznesowymi w innej firmie, ten sam wybrany typ dokumentu brdzie używany jeśli inny typ nie został skonfigurowany dla tej firmy. Jeśli typ dokumentu został skonfigurowany, będzie używany zamiast wybranego w polu **SharePoint typu dokumentu**.
+
+> [!NOTE]
+> Parametr **Typ dokumentu SharePoint** definiuje folder SharePoint jako magazyn tymczasowy dla szablonów, które można edytować za pomocą Microsoft Excel lub programu Word. Ten parametr należy skonfigurować, jeśli te aplikacje pakietu Office mają być używane do edytowania szablonów. Aby uzyskać więcej informacji, zajrzyj do [edytowania szablonu w aplikacji pakietu Office](#EditInOfficeDesktopApp). Ten parametr można pozostawić pusty, jeśli planujesz zmodyfikować szablon, korzystając tylko z funkcji w systemie Office 365. Aby uzyskać więcej informacji, zobacz temat [Edytowanie szablonów użytkownika w Office 365](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Skonfiguruj uprawnienia dostępu do pól
 
@@ -258,23 +261,18 @@ Opcja **Edytuj szablon** jest dostępna dla wybranego szablonu. Ta opcja jest za
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Inicjuj Edytowanie szablonów należących do innych dostawców.
 
-1. W obszarze roboczym zarządzanie dokumentami biznesowymi wybierz **nowy dokument**.
+1. W obszarze roboczym zarządzanie dokumentami biznesowymi wybierz dokument, który ma być używany jako szablon.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM_overview_new_template1.png)
+![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate3.png)
 
-2. Wybierz dokument, który ma być używany jako szablon.
+3. Wybierz opcję **Nowy dokument**, a w polu tytuł **Tytuł**, w razie potrzeby, zmień tytuł szablonu edytowalnego. Tekst będzie używany do napełniania nazwy tworzonej automatycznie konfiguracji formatu ER. Należy zauważyć, że wersja robocza tej konfiguracji (**Raport o fakturach niezależnych dla odbiorców (GER)**) będzie zawierać edytowany szablon, zostanie automatycznie oznaczona do uruchomienia tego formatu ER dla bieżącego użytkownika. W tym samym czasie, niezmodyfikowany oryginalny szablon z podstawowej konfiguracji formatu źródłowego będzie używany do uruchamiania tego formatu ER dla innego użytkownika.
+4. W polu **nazwa** Zmień nazwę pierwszej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
+5. W polu **Komentarz** zmień komentarz dla automatycznie wygenerowanej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
+6. Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM_overview_new_template2.png)
+![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate4.png)
 
-3. Kliknij **Utwórz dokument**
-4. W polu **tytuł**, w razie potrzeby, Zmień tytuł szablonu edytowalnego. Tekst będzie używany do napełniania nazwy tworzonej automatycznie konfiguracji formatu ER. Należy zauważyć, że wersja robocza tej konfiguracji (**Raport o fakturach niezależnych dla odbiorców (GER)**) będzie zawierać edytowany szablon, zostanie automatycznie oznaczona do uruchomienia tego formatu ER dla bieżącego użytkownika. W tym samym czasie, niezmodyfikowany oryginalny szablon z podstawowej konfiguracji formatu źródłowego będzie używany do uruchamiania tego formatu ER dla innego użytkownika.
-5. W polu **nazwa** Zmień nazwę pierwszej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
-6. W polu **Komentarz** zmień uwagę dla automatycznie wygenerowanej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
-7. Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji
-
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM_overview_new_template3.png)
-
-Opcja **Nowy dokument** jest zawsze dostępna dla szablonu w konfiguracji formatu ER, który jest własnością innego dostawcy (Microsoft w tym przykładzie). Kliknięcie przycisku **nowy dokument** powoduje wyświetlenie wszystkich szablonów należących do bieżącego i innych dostawców. Po wybraniu szablonu, który zostanie otwarty do edycji. Edytowany szablon zostanie następnie zapisany w nowej konfiguracji formatu, która jest generowana automatycznie.
+Opcja **Nowy dokument** jest zawsze dostępna dla szablonu w konfiguracji formatu ER, który jest własnością tego i innego dostawcy (Microsoft w tym przykładzie), a który nie ma żadnych poprawek. Edytowany szablon zostanie następnie zapisany w nowej konfiguracji formatu, która jest generowana automatycznie.
 
 ### <a name="start-editing-a-template"></a>Rozpocznij edycję szablonu
 
@@ -282,7 +280,7 @@ Opcja **Nowy dokument** jest zawsze dostępna dla szablonu w konfiguracji format
 2. W polu **nazwa** Zmień nazwę pierwszej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
 3. W polu **Komentarz** zmień uwagę dla automatycznie wygenerowanej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
 
-    ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM_overview_new_template4.png)
+    ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate5.png)
 
 5. Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji.
 
@@ -290,13 +288,16 @@ Otworzy się strona **Edytor szablonów BDM**. Wybrany szablon będzie dostępny
 
 ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="edit-a-template-in-office-365"></a>Edytuj szablon w formularzu Office 365
+### <a name="EditInOffice365">Edytuj szablon w Office 365</a>
 
-Zmodyfikuj szablon, korzystając z funkcji systemu Office 365. Na przykład w przypadku witryny Office Online w nagłówku szablonu należy zmienić czcionkę z pola **zwykły** na **pogrubiony**. Te zmiany są automatycznie przechowywane dla szablonu edytowalnego, który jest przechowywany w magazynie podstawowego szablonu (domyślnie magazyn obiektów BLOB systemu Azure) skonfigurowanym dla struktury ER.
+Szablony można modyfikować za pomocą Office 365. Na przykład w przypadku witryny Office Online w nagłówku szablonu należy zmienić czcionkę z pola **zwykły** na **pogrubiony**. Te zmiany są automatycznie przechowywane jako szablon edytowalny, który jest przechowywany w magazynie podstawowego szablonu (domyślnie magazyn obiektów BLOB systemu Azure). Jest to skonfigurowane dla struktury ER systemu.
 
 ![Strona edytora szablonów zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="edit-a-template-in-the-office-desktop-application"></a>Edytowanie szablonu w aplikacji pulpitu pakietu Office
+### <a name="EditInOfficeDesktopApp">Edytowanie szablonu w aplikacji pulpitu pakietu Office</a>
+
+> [!NOTE]
+> Ta funkcja jest dostępna tylko w przypadku, gdy parametr **Typ dokumentu SharePoint** jest poprawnie skonfigurowany. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie narzędzia integracji](#SetupBdmParameters).
 
 1. Wybierz opcję **Otwórz w aplikacji klasycznej**, aby zmodyfikować szablon za pomocą funkcji aplikacji pulpitu pakietu Office (w tym przykładzie programu Excel). Szablon edytowalny jest kopiowany z magazynu trwałego do tymczasowego magazynu skonfigurowanego w parametrach zarządzania dokumentami biznesowymi SharePoint jako folder.
 2. Potwierdź, że chcesz otworzyć szablon z tymczasowego przechowywania plików w aplikacji klasycznej programu Office Excel.
@@ -386,7 +387,7 @@ Podczas edytowania szablonu z formatu ER, który jest własnością bieżącego 
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Wybrałem **Edytuj dokument**, ale zamiast otwierania strony **edytora szablonów BDM** w Finance and Operations, został wysłany do strony Office 365 sieci Web.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Wybrałem **Edytuj dokument**, ale zamiast otwierania strony **edytora szablonów BDM** w Finance and Operations, otrzymuję przekierowanie do strony Office 365.
 Jest to znany błąd dotyczący Office 365 przekierowania. Dzieje się tak po pierwszym zalogowaniu Office 365. W celu obejścia tego problemu należy wybrać **Wstecz** w przeglądarce, aby przejść z powrotem.
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Wiem, jak edytować szablon, używając Office 365 w pierwszej sesji aplikacji i jak używać szablonu w drugiej sesji aplikacji podczas dopasowywania szablonu, aby zobaczyć, jak zmiany wpływają na wygenerowany dokument biznesowy. Czy można to zrobić za pomocą aplikacji pulpitu Office?
@@ -411,3 +412,4 @@ Najprawdopodobniej zalogowano się do bieżącego wystąpienia aplikacji w domen
 [Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+

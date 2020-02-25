@@ -3,7 +3,7 @@ title: Dodawanie logo
 description: W tym temacie opisano, jak dodać logo do witryny w Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 23bac9aae6beb59912bbc9e1f2c6958c007550b0
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 5fc0673dcdcc8b761089be2c2d201c8488128865
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914631"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025724"
 ---
 # <a name="add-a-logo"></a>Dodawanie logo
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak dodać logo do witryny w Microsoft Dynamics 365 Commerce.
@@ -43,7 +43,7 @@ Możesz dodać logo bezpośrednio do szablonu, układu lub strony. W ten sposób
 
 Aby można było dodać logo do wszystkich stron witryny, należy wykonać następujące zadania.
 
-1. Przekaż logo do menedżera cyfrowych elementów zawartości, do którego możesz uzyskać dostęp ze strony **Elementy zawartości**.
+1. Przekaż swoją logo do biblioteki multimediów.
 1. Utwórz fragment nagłówka. Aby uzyskać więcej informacji na temat tworzenia i używania fragmentów, zobacz [Praca z fragmentami](work-with-fragments.md).
 1. Dołącz fragment nagłówka w szablonie, którego strony witryny używają do ustawiania opcji układu i modułu. Aby uzyskać więcej informacji na temat szablonów, zobacz [Praca z szablonami](work-with-templates.md).
 
@@ -51,13 +51,11 @@ Aby można było dodać logo do wszystkich stron witryny, należy wykonać nast�
 
 Aby dodać logo do fragmentu nagłówka witryny, wykonaj następujące kroki.
 
-1. W okienku nawigacji po lewej stronie wybierz pozycję **Fragmenty**, a następnie wybierz utworzony fragment nagłówka.
-2. Wybierz **Wyewidencjonuj**.
-3. Rozwiń gniazdo **Nagłówek** i gniazdo **Logo**.
-4. Wybierz przycisk wielokropka (**...**) dla gniazda **Logo**, a następnie wybierz opcję **Dodaj moduł**.
-5. Wybierz moduł logo.
-6. W okienku właściwości po prawej stronie skonfiguruj moduł logo, aby zostało ono wyświetlone.
-7. Zapisz fragment nagłówka, zaewidencjonuj go i opublikuj.
+1. W okienku nawigacji po lewej stronie zaznacz **Fragmenty strony**.
+1. Wybierz utworzony fragment nagłówka, a następnie wybierz opcję **Edytuj**.
+1. Rozwiń moduł nagłówka.
+1. W okienku właściwości modułu nagłówka wprowadź obraz i łącze do logo. 
+1. Zapisz fragment nagłówka, zakończ jego edycję, a następnie go opublikuj.
 
 Po opublikowaniu zaktualizowanego fragmentu nagłówka wszystkie strony witryny, które używają szablonu zawierającego fragment nagłówka, będą zawierać Twoje logo.
 

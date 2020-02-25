@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb369e6d1356ba13a2310d523b671ac57b9642bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e249c7d450510a3a9a33158e9e1c33f832a1f91c
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770054"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024986"
 ---
 # <a name="product-recommendations-overview"></a>Omówienie rekomendacji produktów
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Commerce może posłużyć do pokazywania zaleceń dotyczących produktów w witrynie e-Commerce i urządzeniach punktu sprzedaży (POS). Rekomendacje produktów to przedmioty, które mogą być interesujące dla odbiorcy. Rekomendacje są oparte na trendach zakupu innych odbiorców w sklepach internetowych oraz w sklepach tradycyjnych.
@@ -45,6 +44,7 @@ Rekomendacje produktów są dostępne w opisanych niżej scenariuszach:
 - **Na dowolnej stronie sklepu lub stronie magazynowej w e-Commerce:** Jeśli klient lub sprzedawca odwiedza stronę sklepu, aparat rekomendacji może sugerować produkty na listach **Nowości**, **Bestsellery** i **Trendy**.
 - **Na stronie Szczegóły produktu:** Jeśli klienci lub sprzedawcy odwiedzają stronę **Szczegóły produktu**, aparat rekomendacji sugeruje dodatkowe towary, które również prawdopodobnie zostaną nabyte. Pozycje te pojawiają się również na liście osoby **Klientom podoba się również**.
 - **Na stronie transakcja lub stronie realizacja transakcji:** aparat rekomendacji sugeruje pozycje na podstawie całej listy towarów w koszyku. Te pozycje są wyświetlane na liście **Często kupowane razem**.
+- **Spersonalizowane rekomendacje:** Sprzedacy mogą dostarczać zalogowanym odbiorcom listę **Wybrane dla Ciebie** w dodatku do nowych funkcji, które pozwalają na spersonalizowanie istniejących scenariuszy list na podstawie tego odbiorcy. Aby dowiedzieć się więcej, zobacz dokumentację funkcji: [Włącz spersonalizowane rekomendacje.](personalized-recommendations.md)
 
 ## <a name="recommendation-service"></a>Usługa rekomendacji
 
@@ -56,6 +56,10 @@ Zalecenia dotyczące produktu wykorzystują technologie uczenia maszynowego Reko
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Włączanie rekomendacji produktów](enable-product-recommendations.md)
+
+[Włącz spersonalizowane rekomendacje](personalized-recommendations.md)
+
+[Omówienie modułu kolekcji produktów](product-collection-module-overview.md)
 
 [Tworzenie list zaleceń dotyczących produktów pod opieką](create-editorial-recommendation-lists.md)
 

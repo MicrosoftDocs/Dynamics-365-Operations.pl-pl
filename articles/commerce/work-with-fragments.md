@@ -3,7 +3,7 @@ title: Praca z fragmentami
 description: W tym temacie opisano, dlaczego, kiedy i jak stosować fragmenty w Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 32482538b2913e6585257bcf7a1cbe780d3cdd30
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: f29046ded47ed9c49a2cc841aa7c1f6492b49aec
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914707"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026047"
 ---
 # <a name="work-with-fragments"></a>Praca z fragmentami 
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, dlaczego, kiedy i jak stosować fragmenty w Microsoft Dynamics 365 Commerce.
@@ -57,25 +57,34 @@ Na poniższej ilustracji pokazano, jak fragmenty mogą być używane do scentral
 
 Można utworzyć nowy fragment lub zapisać istniejącą konfigurację modułu jako fragment.
 
+### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Zapisz istniejącą konfigurację modułu jako fragment
+
+Aby przekonwertować poprzednio skonfigurowany moduł na fragment do ponownego użycia, wykonaj następujące kroki.
+
+1. Otwórz stronę lub szablon zawierający moduł, który chcesz przekonwertować na fragment.
+1. W okienku konspektu z lewej strony wybierz przycisk wielokropka (**...**) obok nazwy modułu. 
+1. Wybierz **Udostępnij jako fragment**. 
+1. Zostanie wyświetlone okno dialogowe. Wprowadź nazwę i metadane dla fragmentu.
+1. Wybierz przycisk **OK**, aby zapisać konfigurację modułu jako fragment, który można dodać do innych stron.
+
+Poniższy obraz przedstawia sposób zapisywania konfiguracji modułu jako fragmentu.
+
+![Zrzut ekranu, jak zapisać konfigurację modułu jako fragment](./media/save-as-fragment.png)
+
 ### <a name="create-a-new-fragment"></a>Utwórz nowy fragment.
 
 Aby utworzyć nowy fragment, należy wykonać poniższe kroki.
 
 1. W okienku nawigacji po lewej stronie zaznacz **Fragmenty**.
 1. Wybierz **Nowy fragment strony**. Zostanie wyświetlone okno dialogowe, w którym są wyświetlane wszystkie dostępne typy modułów. Jak wspomniano wcześniej, fragmenty można tworzyć z poziomu dowolnego typu modułu.
-1. Wybierz typ modułu dla swojego fragmentu, a następnie kliknij przycisk **OK**.
+1. Wybierz typ modułu dla danego fragmentu.
 
-    > [!TIP]
-    > Wybór typu ogólnego modułu kontenera zapewnia największą elastyczność, jeśli trzeba później zaktualizować i skonfigurować fragment.
+Poniższy rysunek przedstawia miejsce utworzenia nowego fragmentu.
 
-### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Zapisz istniejącą konfigurację modułu jako fragment
+![Zrzut ekranu, gdzie należy utworzyć nowy fragment](./media/fragment-nav-menu.png)
 
-Aby przekonwertować poprzednio skonfigurowany moduł na fragment do ponownego użycia, wykonaj następujące kroki.
-
-1. Otwórz stronę lub szablon zawierający moduł, który chcesz przekonwertować na fragment.
-1. W okienku konspektu z lewej strony wybierz przycisk wielokropka (**...**) obok nazwy modułu, a następnie wybierz opcję **Zapisz jako fragment**. Zostanie wyświetlone okno dialogowe.
-1. Wprowadź nazwę i metadane dla fragmentu.
-1. Wybierz przycisk **OK**, aby zapisać konfigurację modułu jako fragment, który można dodać do innych stron.
+> [!TIP]
+> Wybór typu ogólnego modułu kontenera zapewnia największą elastyczność, jeśli należy później zaktualizować i skonfigurować fragment.
 
 ## <a name="add-remove-or-edit-fragments-on-a-page"></a>Dodawanie, usuwanie i edytowanie fragmentów na stronie
 
@@ -88,11 +97,15 @@ Aby dodać fragment do strony, wykonaj następujące kroki.
 1. W okienku konspektu z lewej strony wybierz kontener lub gniazdo, do którego można dodać moduły podrzędne.
 1. Wybierz przycisk wielokropka obok nazwy kontenera lub gniazda, a następnie wybierz opcję **Dodaj fragment**. Zostanie wyświetlone okno dialogowe.
 
+    ![Zrzut ekranu, jak dodać istniejący fragment do gniazda lub kontenera](./media/add-fragment.png)
+ 
     > [!NOTE]
     > Jeśli kontener lub gniazdo nie obsługuje nowych modułów podrzędnych, opcja **Dodaj fragment** jest niedostępna
-
+    
 1. W oknie dialogowym wyszukaj i wybierz fragment do dodania. Jeśli na liście nie ma dostępnych fragmentów, może być konieczne utworzenie fragmentu z typu modułu, który jest obsługiwany przez wybrany kontener lub gniazdo.
-1. Wybierz przycisk **OK**, aby dodać wybrany fragment do wybranego kontenera lub gniazda na stronie.
+1. Wybierz wybrany fragment do dodania go do kontenera lub gniazda na stronie.
+
+    ![Zrzut ekranu okna modalnego selektora fragmentów](./media/fragment-picker.png)
 
 > [!NOTE]
 > Moduły dozwolone w kontenerze lub gnieździe są definiowane przez szablon strony lub definicje modułów.

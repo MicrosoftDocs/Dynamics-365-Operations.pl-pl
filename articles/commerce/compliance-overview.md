@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b409b6cd5eb8c1b96ffb9cc1df47ff88019989f9
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: f8c2cdbf055a2854c4140d3ccc264da260c7cdf5
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2946062"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002273"
 ---
 # <a name="compliance-overview"></a>Omówienie zgodności
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie omówiono wskazówki dotyczące zgodności oferowane przez aplikację Microsoft Dynamics 365 Commerce, aby pomóc Ci zapewnić zgodność witryn firmy. Zgodność jest ważnym czynnikiem dla wszystkich firm, ponieważ pomaga ich bazom użytkowników łączyć się z zawartością witryny danej firmy. Dzięki zachowaniu zgodności również pomóc chronić swoją firmę przed kosztownymi działaniami prawnymi lub ogromnymi grzywnami.

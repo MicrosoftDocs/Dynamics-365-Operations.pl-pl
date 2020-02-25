@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: adfb8ffce3f91c0e8e8b996c284414f5ddc1baf1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562537"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004072"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Śledzenie towarów i surowców w zapasach, produkcji i sprzedaży
 
@@ -44,7 +44,7 @@ Funkcja śledzenia zapasów jest dostępna na stronie **Śledzenie towaru**. W p
 -   Sprawdzanie, gdzie towar lub surowiec został zużyty w produkcji innego towaru.
 
 ## <a name="what-can-i-trace-and-are-there-any-limitations"></a>Co mogę śledzić i czy są ograniczenia?
-Możesz śledzić historyczne transakcje magazynowe dla towarów i surowców na podstawie numeru towaru i wymiarów śledzenia, takich jak numer seryjny, numer partii lub numer partii dostawcy. Towar lub surowiec można śledzić tylko wtedy, gdy ma przypisany wymiar śledzenia. Ponieważ śledzenie jest oparte na transakcjach magazynowych, istnieją pewne ograniczenia podczas śledzenia towarów. Na przykład istnieją ograniczenia dotyczące transakcji obejmujących projekty, środki trwałe i sprzedaż detaliczną. Ponadto produkty towarzyszące będą wyświetlane w szczegółach śledzenia, ale produkty uboczne nie są uwzględniane. Śledzenie uwzględnia wszystkie transakcje magazynowe między dwoma lokalizacjami. Dlatego ilość wyświetlany informacji może być bardzo duża. Śledzenie jest wyświetlane dla jednej firmy na raz. W kontekście międzyfirmowym nie ma funkcji międzyfirmowych. Należy uruchomić nowe śledzenie dla każdej firmy, w której towar jest przyjmowany lub wydawany.
+Możesz śledzić historyczne transakcje magazynowe dla towarów i surowców na podstawie numeru towaru i wymiarów śledzenia, takich jak numer seryjny, numer partii lub numer partii dostawcy. Towar lub surowiec można śledzić tylko wtedy, gdy ma przypisany wymiar śledzenia. Ponieważ śledzenie jest oparte na transakcjach magazynowych, istnieją pewne ograniczenia podczas śledzenia towarów. Na przykład istnieją ograniczenia dotyczące transakcji obejmujących projekty, środki trwałe i handel. Ponadto produkty towarzyszące będą wyświetlane w szczegółach śledzenia, ale produkty uboczne nie są uwzględniane. Śledzenie uwzględnia wszystkie transakcje magazynowe między dwoma lokalizacjami. Dlatego ilość wyświetlany informacji może być bardzo duża. Śledzenie jest wyświetlane dla jednej firmy na raz. W kontekście międzyfirmowym nie ma funkcji międzyfirmowych. Należy uruchomić nowe śledzenie dla każdej firmy, w której towar jest przyjmowany lub wydawany.
 
 ## <a name="what-criteria-can-i-specify-for-an-item-trace"></a>Jakie kryteria można określić dla śledzenia towaru?
 Kryteria wymagane dla śledzenia towaru to numer towaru, wymiar śledzenia (taki jak numer partii lub numer seryjny) oraz kierunek. W poniższej tabeli opisano kryteria, których można używać do śledzenia towaru.

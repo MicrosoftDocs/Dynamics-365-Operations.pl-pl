@@ -1,9 +1,9 @@
 ---
-title: Moduł alertów
-description: W tym temacie opisano moduły alertów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+title: Moduł baneru promocyjnego
+description: W tym temacie opisano moduł baneru promocyjnego i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,55 +18,66 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 82138dd7f0934f732215f67a3726638eb87075d4
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: da5e220e4578d1064eb7b627b441d3f585b3c095
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785359"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025627"
 ---
-# <a name="alert-module"></a>Moduł alertów
+# <a name="promo-banner-module"></a>Moduł baneru promocyjnego
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano moduły alertów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+W tym temacie opisano moduł baneru promocyjnego i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Omówienie
 
-Moduł alertów służy do wyświetlania wbudowanych komunikatów informacyjnych na stronie. Moduły alertów obsługują wiadomość SMS i łącze. Można ich używać do wyświetlania promocji na poziomie całej witryny wyświetlanych na wszystkich stronach witryny e-Commerce. 
+Moduły baneru promocyjnego służą do wyświetlania wbudowanych komunikatów informacyjnych na stronie. Można ich używać do wyświetlania promocji na poziomie całej witryny wyświetlanych na wszystkich stronach witryny e-Commerce. 
 
-Moduły alertów są sterowane danymi z systemu zarządzania zawartością (CMS) i mogą być umieszczane na dowolnej stronie.
+Moduły baneru promocyjnego obsługują wiadomość SMS i łącze. Jeśli do modułu baneru promocyjnego jest dodawanych wiele wiadomości, staje się on wiodącym banerem karuzeli, który pozwoli klientom przechodzić między wszystkimi wiadomościami. 
 
-## <a name="examples-of-alert-modules-in-e-commerce"></a>Przykłady modułów alertów w e-Commerce
+Moduły baneru promocyjnego są sterowane danymi z systemu zarządzania zawartością (CMS) i mogą być umieszczane na dowolnej stronie.
 
-Moduły alertów mogą być używane w nagłówku witryny w celu pokazania promocji lub komunikatów na poziomie całej witryny. Oto kilka przykładów:
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Przykłady użycia banerów promocyjnych w e-Commerce
+
+W nagłówku witryny można używać banerów promocyjnych do wyświetlania promocji lub komunikatów w całej witrynie, tak jak w poniższych przykładach.
 
 „Roczna wyprzedaż kończy się za 10 dni”
 
 „Zaoszczędź na zakupach do szkoły. Kup teraz.”
 
-## <a name="alert-module-properties"></a>Właściwości modułu alertów
+## <a name="promo-banner-module-properties"></a>Właściwości modułu baneru promocyjnego
 
-| Nazwa właściwości  | Wartość                              | Opis |
-|----------------|------------------------------------|-------------|
-| Tekst           | Tekst                               | Komunikat tekstowy wyświetlany w module alertu. |
-| Wyrównanie tekstu | **Prawo**, **Lewo** lub **Środek** | Wartość określająca sposób wyrównania tekstu w module alertów. |
-| Pomiń alert  | **Prawda** lub **Fałsz**              | Jeśli wartość jest ustawiona na **Prawda**, odbiorca może anulować alert. |
-| Link           | Adres URL                                | Adres URL opcjonalnego linku. |
+| Nazwa właściwości             | Value                              | Opis |
+|---------------------------|------------------------------------|-------------|
+| Wiadomości transparentu           | Tekst i łącza                     | Szeroki wybór tekstu i łączy. |
+| Autoodtwarzanie                  | **Prawda** lub **Fałsz**              | Wartość wskazująca, czy komunikaty są automatycznie przetwarzane, jeśli skonfigurowano wiele wiadomości. |
+| Interwał przejścia slajdu | Liczba milisekund (ms)      | Interwał używany do cyklicznego przechodzenia między wiadomościami. |
+| Zezwól na odrzucanie             | **Prawda** lub **Fałsz**              | Jeśli wartość jest ustawiona na **Prawda**, odbiorcy mogą anulować alert. |
+| Pokazuj flipper karuzeli     | **Prawda** lub **Fałsz**              | Wartość wskazująca, czy mają być pokazywane flippery karuzeli, dzięki czemu odbiorcy mogą ręcznie przechodzić między różnymi elementami baneru. |
+| Wyrównanie tekstu            | **Prawo**, **Lewo** lub **Środek** | Wyrównanie tekstu w module baner promocyjny. |
+| Link                      | Adres URL                              | Adres URL opcjonalnego linku. |
 
-## <a name="add-an-alert-module-to-a-page"></a>Dodawanie modułu alertów do strony 
+## <a name="add-a-promo-banner-module-to-a-page"></a>Dodawanie modułu baneru promocyjnego do nowej strony 
 
-Aby dodać moduł alertów do strony i ustawić wymagane właściwości, wykonaj następujące kroki.
+Aby dodać moduł baneru promocyjnego do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Utwórz szablon strony o nazwie nazwa **szablon alertu**.
-1. W **Głównym** gnieździe na stronie domyślnej dodaj moduł alertów.
+1. Utwórz szablon strony o nazwie nazwa **Szablon baneru promocyjnego**.
+1. W obszarze **Konspekt strony** dodaj moduł **Domyślna strona** do gniazda **Treść**. 
 1. Zaewidencjonuj szablon i opublikuj go. 
-1. Za pomocą utworzonego właśnie szblonu alertu utwórz stronę o nazwie **strona alertu**. 
-1. W **Głównym** gnieździe na nowej stronie dodaj moduł alertów.
-1. W ustawieniach modułu alertów wprowadź tekst alertu. Inne właściwości można edytować, jeśli moduł alertów ma być dostosowany dalej.
+1. Za pomocą utworzonego właśnie szblonu alertu utwórz stronę o nazwie **Strona baneru promocyjnego**. 
+1. W **Głównym** gnieździe na nowej stronie dodaj moduł kontenera. 
+1. W okienku po prawej stronie określ wartość **Szerokości** jako **Wypełnij kontener**.
+1. W obszarze **Konspekt strony** dodaj moduł baneru promocyjnego do modułu kontenerów.
+1. W ustawieniach modułu banery promocyjnego dodaj co najmniej jedną wiadomość baneru. Każda wiadomość może zawierać tekst razem z łączem. Inne właściwości można edytować, jeśli moduł ma być dostosowany dalej.
 1. Zapisz i zobacz podgląd strony. W górnej części strony powinien pojawić się alert z dodanym tekstem.
-1. Zaewidencjonuj stronę i opublikuj ją. 
+1. Zakończ edytowanie strony i opublikuj go. 
+
+> [!NOTE]
+> Baner jest zazwyczaj używany w gnieździe nagłówka strony lub w gnieździe podnagłówków.
+
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -74,12 +85,8 @@ Aby dodać moduł alertów do strony i ustawić wymagane właściwości, wykonaj
 
 [Moduł karuzeli](add-carousel.md)
 
-[Moduł zaawansowanego bloku zawartości](add-content-rich-block.md)
+[Moduł bloku zaawansowanej zawartości](add-content-rich-block.md)
 
-[Moduł umieszczania zawartości](add-content-placement-modules.md)
-
-[Moduł funkcji](add-feature-module.md)
-
-[Moduł bohatera](add-hero-module.md)
+[Moduł bloku zawartości](add-hero-module.md)
 
 [Moduł odtwarzacza wideo](add-video-player.md)

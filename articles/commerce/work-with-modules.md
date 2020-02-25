@@ -3,7 +3,7 @@ title: Praca z modułami
 description: W tym temacie opisano, jak i kiedy używać modułów w Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,18 +17,18 @@ ms.search.industry: ''
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3c4161e7a40cdbbb40292a6ce9acab58347460bd
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 769d6754fa944830b989d657e0dad9cc42212932
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914801"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025886"
 ---
 # <a name="work-with-modules"></a>Praca z modułami
 
 W tym temacie opisano, jak i kiedy używać modułów w Microsoft Dynamics 365 Commerce.
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Omówienie
@@ -99,12 +99,10 @@ Poniższe procedury opisują sposób konfigurowania modułów zawartości i kont
 
 Aby skonfigurować moduł zawartości na stronie, wykonaj następujące kroki.
 
-1. W okienku konspektu z lewej strony wybierz typ modułu zawartości (na **funkcji**, **bohater** lub **baner**).
-1. W okienku właściwości po prawej stronie rozwiń formanty zagnieżdżone, zaznaczając nagłówki i ustawiając wymagane wartości kontrolne.
-1. Jeśli w okienku właściwości znajduje się sekcja **Konfiguracja danych**, zaznacz ją, aby ją rozwinąć. W innym przypadku, przejdź do kroku 5.
-1. Jeśli istnieje przycisk **Dodaj źródło danych**, zaznacz go, a następnie wybierz elementy zawartości, które mają zostać dodane.
-1. Umożliwia wprowadzenie ustawień dla dowolnych wymaganych lub potrzebnych kontrolek modułu.
-1. Wybierz opcję **Zapisz**.
+1. W okienku konspektu z lewej strony rozwiń drzewo i wybierz jakikolwiek moduł zawartości (np. **funkcji**, **bohater** lub **baner**).
+1. W okienku właściwości po prawej stronie Znajdź elementy sterujące treścią i ustawieniami modułu.
+1. Wprowadź właściwości dla żądanych formantów modułu.
+1. Na pasku poleceń wybierz pozycję **Zapisz**. Spowoduje to również odświeżenie kanwy podglądu.
 
 ### <a name="configure-a-container-module"></a>Konfigurowanie modułu kontenera
 
@@ -112,7 +110,7 @@ Aby skonfigurować moduł kontenera na stronie, wykonaj następujące kroki.
 
 1. Wybierz moduł kontenera na stronie (np. karuzela lub moduł kontener płynny).
 1. W okienku właściwości po prawej stronie rozwiń formanty zagnieżdżone, zaznaczając nagłówki i ustawiając wymagane wartości kontrolne.
-1. W okienku konspektu po lewej wybierz przycisk wielokropka obok nazwy kontenera lub dowolnych szczelin w kontenerze, a następnie wybierz **Dodaj moduł**. Następnie Dodaj moduły podrzędne do wybranego kontenera. Aby uzyskać więcej informacji, zajrzyj do procedury [dodawania modułu](#add-a-module) opisanej wcześniej w tym temacie.
+1. W okienku konspektu po lewej wybierz przycisk wielokropka obok nazwy kontenera lub dowolnych szczelin w kontenerze, a następnie wybierz **Dodaj moduł**. Następnie Dodaj moduły podrzędne do wybranego kontenera. Aby uzyskać więcej informacji, zobacz sekcję [Praca z modułami](#add-a-module) we wcześniejszej części tego tematu.
 1. Jeśli w kontenerze nadrzędnym istnieje wiele modułów podrzędnych jako elementy równorzędne, można zmienić kolejność wyświetlania w kontenerze nadrzędnym. Wybierz przycisk wielokropek dla modułu, a następnie użyj przycisków strzałki w górę i strzałki w dół.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
@@ -126,8 +124,6 @@ Aby skonfigurować moduł kontenera na stronie, wykonaj następujące kroki.
 [Praca z fragmentami](work-with-fragments.md)
 
 [Dodawanie modułu kontenera do strony](add-container-module.md)
-
-[Dodawanie modułów umieszczania zawartości do strony](add-content-placement-modules.md)
 
 [Praca z grupami publikowania](publish-groups.md)
 

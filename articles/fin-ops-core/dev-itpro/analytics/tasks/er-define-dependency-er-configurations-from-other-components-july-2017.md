@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d949be57d9e9fe744860f5c4045bef2923b7f284
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 97aedf17bb6fa67fd08497ec6e15a7c92866fa4d
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249188"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026117"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiowanie zależności konfiguracji ER od innych składników
 
@@ -28,7 +28,7 @@ ms.locfileid: "2249188"
 
 W celu wykonania tych kroków należy najpierw wykonać kroki w przewodniku po zadaniu ER Zarządzanie konfiguracjami mapowania modelu oraz mieć dostęp do usługi Microsoft Dynamics Lifecycle Services (LCS).
 
-Ta procedura przedstawia sposób projektowania konfiguracji raportowania elektronicznego (ER) i określania jej zależności od innych składników oprogramowania, tak aby mieć pewność, że konfiguracja jest prawidłowo pobierana dla określonej wersji Finance and Operations. W tym przykładzie utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. 
+Ta procedura przedstawia sposób projektowania konfiguracji raportowania elektronicznego (ER) i określania jej zależności od innych składników oprogramowania, tak aby mieć pewność, że konfiguracja jest prawidłowo pobierana dla określonej wersją program Finance and Operations. W tym przykładzie utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. 
 
 Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrator systemu lub Deweloper raportowania elektronicznego. Te kroki można wykonać w dowolnej firmie, ponieważ konfiguracje ER są współużytkowane przez wszystkie firmy. 
 
@@ -47,8 +47,8 @@ Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrat
 5. Kliknij przycisk Nowy.
 6. Wybierz wstępnie wymagany składnik Produktu.
 7. Zaznacz pozycję Microsoft Dynamics 365 for Operations (1611).
-8. W polu Wersja wpisz wartość „(7.1.1541.3036,8)”.
-    * (7.1.1541.3036,8)  
+8. W polu Wersja wpisz wartość „[7.1.1541.3036,8)”.
+    * [7.1.1541.3036,8)  
     * Wprowadzane zależności będą oceniane podczas pobierania tej konfiguracji z repozytorium modułu Raportowanie elektroniczne. Ta wersja konfiguracji będzie pobierana z repozytorium ER, gdy wersja 1 konfiguracji „Przykładowy model danych” już znajduje się na miejscu albo zostanie pobrana z wyprzedzeniem. Jeśli jest pobierana z wyprzedzeniem, musi zostać wykonana w usłudze Finance and Operations w wersji 7.1.1541.3036 lub nowszej, ale wersji głównej nie nowszej niż 8.   
 9. Kliknij przycisk Zapisz.
 10. Zamknij stronę.
@@ -60,7 +60,7 @@ Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrat
 16. Kliknij przycisk Nowy.
 17. Wybierz wstępnie wymagany składnik Produktu.
 18. Wybierz Microsoft Dynamics AX 7.0 RTW.
-19. W polu Wersja wpisz wartość „(7.0.1265.3015,7.1)”.
+19. W polu Wersja wpisz wartość „[7.0.1265.3015,7.1)”.
     * [7.0.1265.3015,7.1)  
     * Zależności będą oceniane podczas pobierania konfiguracji z repozytorium modułu Raportowanie elektroniczne. Ta wersja konfiguracji będzie pobierana z repozytorium ER, gdy wersja 1 konfiguracji „Przykładowy model danych” już znajduje się na miejscu albo zostanie pobrana z wyprzedzeniem. Jeśli jest pobierana z wyprzedzeniem, musi zostać wykonana w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition o wersji 7.0.1265.3015 lub nowszej, ale wersji pomocniczej nie nowszej niż 1.   
 20. Kliknij przycisk Zapisz.
@@ -109,7 +109,7 @@ Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrat
     * Wersja 1.1 tej konfiguracji mapowania modelu została przekazana do usługi LCS przy użyciu projektu LCS dla repozytorium modułu ER, które zostało uprzednio skonfigurowane.   
 
 ## <a name="evaluate-er-configuration-dependencies"></a>Ocena zależności konfiguracji raportowania elektronicznego
-    * Usuniemy utworzone konfiguracje z systemu i pobierzemy je ponownie z repozytorium usługi LCS.  
+Usuniemy utworzone konfiguracje z systemu i pobierzemy je ponownie z repozytorium usługi LCS.  
 1. W drzewie zaznacz element „Przykładowy model danych\Przykładowe mapowanie”.
 2. Kliknij przycisk Usuń.
 3. Kliknij przycisk Tak.
@@ -139,5 +139,5 @@ Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrat
 25. Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.
 26. W drzewie rozwiń węzeł „Przykładowy model danych”.
     * Należy zauważyć, że konfiguracja mapowania modelu „Przykładowe mapowanie” została pobrana wraz z wybraną konfiguracją modelu danych. Oba pliki są pobierane razem, ponieważ model „Przykładowe mapowanie” został zdefiniowany jako implementujący wybrany model danych i ma zastosowanie do aplikacji. Konfiguracja „Przykładowe mapowanie (alternatywne)” nie została pobrana, ponieważ nie jest spełniony warunek dla wymaganej wersji aplikacji.   
-    * Gdy się zalogujesz do rozwiązania Finance and Operations, zarejestrujesz tego samego dostawcę, przejdziesz do tego samego projektu usługi LCS i pobierzesz tę samą konfigurację modelu danych, zostanie pobrana konfiguracja „Przykładowe mapowanie (alternatywne)”, natomiast konfiguracja „Przykładowe mapowanie” zostanie pominięta.  
+    * Gdy się zalogujesz do programu Finance and Operations, zarejestrujesz tego samego dostawcę, przejdziesz do tego samego projektu usługi LCS i pobierzesz tę samą konfigurację modelu danych, zostanie pobrana konfiguracja „Przykładowe mapowanie (alternatywne)”, natomiast konfiguracja „Przykładowe mapowanie” zostanie pominięta.  
 
