@@ -3,7 +3,7 @@ title: Rozpocznij pracę z optymalizacją planowania
 description: W tym temacie wyjaśniono, jak zacząć używanie funkcji optymalizacji planowania.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/29/2019
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 37c2acb2397b2a0ad69272c0645bd200a8d7910d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 3e0371c6addc0412dc2fc105891b012941e92a06
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2774027"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971471"
 ---
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
@@ -47,15 +47,17 @@ Aby skorzystać z optymalizacji planowania, zainstaluj dodatek optymalizacji pla
 
 1. Zaloguj się do usługi LCS i otwórz żądane środowisko.
 1. Przejdź do **Pełne szczegóły**.
-1. Wybierz opcję **Zarządzaj** lub przewiń w dół do skróconej karty **dodatków środowiska**.
+1. Przewiń w dół do pozycji skróconej karty **Zarządzaj dodatkami środowiskowymi**.
 1. Wybierz opcję **Zainstaluj nowy dodatek**.
 1. Wybierz **Planowanie optymalizacji**.
 1. Postępuj zgodnie z instrukcją instalacji i zaakceptuj warunki.
 1. Wybierz **Zainstaluj**.
+1. W skróconej karcie **Dodatki środowiska** widać, czy jest instalowana Optymalizacja planowania.
+1. Po kilku minutach **Instalowanie** zmieni się na **Zainstalowane** (konieczne może być odświeżenie strony). Po zainstalowaniu można już aktywować optymalizację planowania w systemie Dynamics 365 Supply Chain Management.
 
 ### <a name="planning-optimization-integration"></a>Integracja optymalizacji planowania
 
-Aby określić, czy dodatek optymalizacji planowania ma być używany w planowaniu głównym, należy przejść do **Planowanie główne** \> **Ustawienia** \> **Integracja optymalizacji planowania** \> **Parametry integracji**.
+Aby określić, czy dodatek optymalizacji planowania ma być używany w planowaniu głównym, należy przejść do **Planowanie główne** \> **Ustawienia** \> **Integracja optymalizacji planowania**.
 
 #### <a name="connection-status"></a>Stan połączenia
 
