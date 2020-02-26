@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 8739bb1afdbea40c7f1c77064ee6b052516903d1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 1b59fdbdd9ed46f42afd3e7310d2cd3f076edd95
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898209"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006386"
 ---
 # <a name="get-the-onboard-app"></a>Pobieranie aplikacji Onboard
 
@@ -32,7 +32,7 @@ Możesz zobaczyć demo i wypróbować aplikację Microsoft Dynamics 365 Talent: 
 > [!NOTE]
 > Bezpłatna wersja próbna wymaga biznesowego konta e-mail.
 
-Możesz zakupić subskrypcję Onboard jako samodzielna aplikacja lub część Dynamics 365 Talent. Talent to kompleksowy system zarządzania kapitałem ludzkim (HCM), który obejmuje Dynamics 365 Talent: Attract, Onboard i Core HR. Aby uzyskać więcej informacji na temat zakupu Onboard, zobacz [Strona produktu Onboard](https://dynamics.microsoft.com/talent/onboard/).
+Możesz zakupić subskrypcję Onboard jako samodzielna aplikacja lub część Dynamics 365 Talent. Aby uzyskać więcej informacji na temat zakupu Onboard, zobacz [Strona produktu Onboard](https://dynamics.microsoft.com/talent/onboard/).
 
 Podczas okresu testowego lub zakupu zostanie skonfigurowany adres e-mail i hasło Microsoft 365. Pamiętaj, aby zanotować te wartości.
 

@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
-ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
+ms.openlocfilehash: 509827d5736887f56e7754a0760af7dea76277f7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2818486"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006062"
 ---
 # <a name="talent-system-requirements"></a>Wymagania systemowe Talent
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano wymagania dotyczące rozwiązania Microsoft Dynamics 365 Talent, w tym Attract, Onboard i Core HR. Zawiera także opis krajów i regionów, w których jest dostępne rozwiązanie Talent oraz informacje na temat języków i lokalizacji danych aplikacji Talent. Ponadto temat ten zawiera zasady aktualizacji dla aplikacji Talent.
+W tym temacie opisano wymagania dotyczące rozwiązania Microsoft Dynamics 365 Talent, w tym Attract i Onboard. Zawiera także opis krajów i regionów, w których jest dostępne rozwiązanie Talent oraz informacje na temat języków i lokalizacji danych aplikacji Talent. Ponadto temat ten zawiera zasady aktualizacji dla aplikacji Talent.
 
 ## <a name="supported-web-browsers"></a>Obsługiwane przeglądarki
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2c7ee610c6e3c446a4bcc9d6d46ca72dd71cb23c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 45a2335d7a661ddc1d8907c56ae8193387f44e26
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771405"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030873"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Określanie lokalizacji niestandardowego magazynu wygenerowanych dokumentów
 
@@ -56,7 +56,7 @@ W bieżącej topologii [utwórz nowy format raportowania elektronicznego](tasks/
 
 Aby określić, jak dokumenty, które generuje format raportowania elektronicznego są kierowane, należy skonfigurować [Lokalizacje docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md). W każdym miejscu docelowym raportowania elektronicznego, które jest skonfigurowane do przechowywania wygenerowanych dokumentów jako plików należy określić typ dokumentu struktury zarządzania dokumentami. Różne typy dokumentów mogą służyć do kierowania dokumentów generowanych przez raportowanie elektroniczne.
 
-1. Dodaj nowy [typu dokumentu](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) dla formatu raportowania elektronicznego utworzonego lub zaimportowanego wcześniej. Na ilustracji typem dokumentu jest **FileX**.
+1. Dodaj nowy [typu dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) dla formatu raportowania elektronicznego utworzonego lub zaimportowanego wcześniej. Na ilustracji typem dokumentu jest **FileX**.
 2. W celu odróżnienia tego typu dokumentu od innych zamieść specjalne słowo kluczowe w jego nazwie. Na przykład na ilustracji poniżej, nazwa jest **(LOKALNY) folder**.
 3. W polu **klasy** wybierz **Dołącz plik**.
 4. W polu **grupa** wybierz **Plik**.
@@ -70,7 +70,7 @@ Aby określić, jak dokumenty, które generuje format raportowania elektroniczne
 
 Przejrzyj kod metody **insertFile()** w klasie **ERDocuManagement**. Należy zauważyć, że zdarzenie **AttachingFile()** jest wywoływane, gdy wygenerowany plik jest dołączony do rekordu.
 
-```
+```xpp
 /// <summary>
 /// Inserts file as attachment in Document Management.
 /// </summary>
@@ -131,7 +131,7 @@ Zdarzenie **AttachingFile()** jest wywoływane po przetworzeniu następujących 
     1. Wygenerowane pliki przechowuje w folderze lokalnego systemu plików serwera, na którym działa usługa Serwer obiektów aplikacji (AOS).
     2. Zapisuje te wygenerowane pliki tylko kiedy jest używany nowy typ dokumentu (na przykład typ **FileX**, którego nazwa zawiera słowo „(LOCAL)”), jeśli plik jest załączany do rekordu w dzienniku wykonania zadania raportowania elektronicznego.
 
-    ```
+    ```xpp
     class ERDocuSubscriptionSample
     {
         void new()

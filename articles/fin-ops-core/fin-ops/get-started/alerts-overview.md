@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: a42e836c0b72798de3375c169e45b121debd55ec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 12fadd8387054db3e19d4136555724c23548e05c
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191277"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031026"
 ---
 # <a name="alerts-overview"></a>Omówienie alertów
 
@@ -82,13 +82,13 @@ Funkcja powiadomień pocztą e-mail z alertów nie jest jeszcze obsługiwana. Zo
 
 ### <a name="how-to-use-alerts-to-monitor-filtered-data"></a>Sposób używania alertów do monitorowania filtrowanych danych
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3DWZ3]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-Film wideo [Sposób używania alertów do monitorowania filtrowanych danych](https://youtu.be/ZYKMcv6kl9s) (pokazany powyżej) znajduje się [na liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
+Film wideo [Sposób używania alertów do monitorowania filtrowanych danych](https://youtu.be/ZYKMcv6kl9s) (pokazany powyżej) znajduje się na [Liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
 
 ### <a name="alert-rule-options"></a>Opcje reguł alertów
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3E4PV]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
 
 Film wideo [Opcje reguł alertów](https://youtu.be/cpzimwOjicM) (widoczny powyżej) jest zawarty na [liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
 

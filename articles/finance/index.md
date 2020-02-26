@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie finansami — strona główna
+title: Finance — strona główna
 description: Ten temat zawiera listę tematów pomocy oraz innych zasobów dotyczących funkcji zarządzania finansami w Microsoft Dynamics 365 Finance.
 author: roschlom
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b5ed05e9c53b17632e94e913f7f3663676c3e91
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 797c549623a727e92a3dbe5e3457e1ddc09a5b0a
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770581"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000332"
 ---
-# <a name="financial-management-home-page"></a>Zarządzanie finansami — strona główna
+# <a name="finance-home-page"></a>Finance — strona główna
 
 [!include [banner](includes/banner.md)]
 
@@ -60,7 +60,7 @@ Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 - [Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
 
 ### <a name="task-guides"></a>Przewodniki zadania
-Dodatkowa pomoc jest dostępna w formie przewodników po zadaniach wewnątrz rozwiązania Finance and Operations. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk Pomoc na dowolnej stronie.
+Dostępna jest dodatkowa pomoc w formie przewodników zadania w aplikacji Finance and Operations. Aby uzyskać dostęp do przewodników zadania, kliknij przycisk Pomoc na dowolnej stronie.
 
 ### <a name="videos"></a>Filmy
 

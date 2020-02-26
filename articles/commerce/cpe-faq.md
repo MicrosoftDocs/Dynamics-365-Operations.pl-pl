@@ -1,5 +1,5 @@
 ---
-title: Często zadawane pytania dotyczące środowiska wersji zapoznawczej usługi Commerce
+title: Dynamics 365 Commerce środowisko wersji zapoznawczej — często zadawane pytania
 description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące środowiska aplikacji Microsoft Dynamics 365 Commerce w wersji zapoznawczej.
 author: v-chgri
 manager: annbe
@@ -17,16 +17,15 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 53e593931850d6b8b22bb756d5828f742416aa4d
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 061a160380e500ea52afbc35f0a95fe84d971bcf
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906100"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024759"
 ---
-# <a name="commerce-preview-environment-faq"></a>Często zadawane pytania dotyczące środowiska wersji zapoznawczej usługi Commerce
+# <a name="dynamics-365-commerce-preview-environment-faq"></a>Dynamics 365 Commerce środowisko wersji zapoznawczej — często zadawane pytania
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące środowiska aplikacji Microsoft Dynamics 365 Commerce w wersji zapoznawczej.
@@ -83,10 +82,10 @@ Jeśli podczas próby uzyskania dostępu do grupy w serwisie Yammer wystąpią p
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie środowiska wersji zapoznawczej usługi Commerce](cpe-overview.md)
+[Dynamics 365 Commerce omówienie środowiska wersji zapoznawczej](cpe-overview.md)
 
-[Aprowizowanie środowiska wersji zapoznawczej usługi Commerce](provisioning-guide.md)
+[Inicjuj środowisko wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfigurowanie środowiska wersji zapoznawczej usługi Commerce](cpe-post-provisioning.md)
+[Konfiguruj środowisko wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Konfigurowanie funkcji opcjonalnych środowiska wersji zapoznawczej usługi Commerce](cpe-optional-features.md)
+[Konfiguruj funkcje opcjonalne środowiska wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-optional-features.md)

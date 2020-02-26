@@ -1,4 +1,4 @@
-- name: Programowanie na potrzeby rozwiązania Finance and Operations i administrowanie nim
+- name: Projektowanie rozwiązań dla usługi Finance and Operations i administrowanie nimi
   href: ../../dev-itpro/index.md?toc=/dynamics365/unified-operations/financials/toc.json
 - name: Nowości i zmiany
   items:
@@ -76,7 +76,7 @@
       href: ../../dev-itpro/data-entities/integration-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Interfejsy API integracji danych
       items:
-        - name: Interfejs REST API pakietu zarządzania danymi
+        - name: Interfejs API REST pakietu zarządzania danymi
           href: ../../dev-itpro/data-entities/data-management-api.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Punkty końcowe usług
           items:
@@ -92,7 +92,7 @@
           href: ../../dev-itpro/data-entities/recurring-integrations.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Testowanie usług za pomocą narzędzi innych firm
           href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: Łącznik rozwiązania Finance and Operations
+    - name: Łącznik Finance and Operations
       href: ../../dev-itpro/data-entities/fin-ops-connector.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Programowanie na potrzeby integracji
       items:
@@ -120,7 +120,7 @@
                   href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Hierarchia organizacyjna w usłudze Common Data Service
                   href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/financials/toc.json
-                - name: Pojęcie firmy w usługach Common Data Service
+                - name: Pojęcie firmy w usługach Common Data Services
                   href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Zintegrowane dane główne odbiorcy
                   href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -140,17 +140,17 @@
                   items:
                     - name: Od prospekta do gotówki
                       href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do odbiorców w rozwiązaniu Finance and Operations
+                    - name: Synchronizowanie kont bezpośrednio z rozwiązania Sales do odbiorców w rozwiązaniu Finance and Operations
                       href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Synchronizowanie produktów w rozwiązaniu Finance and Operations bezpośrednio z produktami w rozwiązaniu Sales
+                    - name: Synchronizowanie produktów bezpośrednio z rozwiązania Finance and Operations do produktów bezpośrednio w rozwiązaniu Sales
                       href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Finance and Operations
+                    - name: Synchronizowanie osób kontaktowych bezpośrednio z rozwiązania Sales do osób kontaktowych lub odbiorców w rozwiązaniu Finance and Operations
                       href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
                     - name: Synchronizowanie nagłówków i wierszy ofert sprzedaży bezpośrednio z rozwiązania Sales do rozwiązania Finance and Operations
                       href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Synchronizacja zamówień sprzedaży bezpośrednio między rozwiązaniem Sales a rozwiązaniem Finance and Operations
+                    - name: Synchronizacja zamówień sprzedaży bezpośrednio między rozwiązaniami Sales i Finance and Operations
                       href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Synchronizowanie nagłówków i wierszy faktur sprzedaży w rozwiązaniu Finance and Operations bezpośrednio z elementami w rozwiązaniu Sales
+                    - name: Synchronizowanie nagłówków i wierszy faktur bezpośrednio z rozwiązania Finance and Operations do rozwiązania Sales
                       href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Konfigurowanie integracji z rozwiązaniem Field Service
                   items:
@@ -172,7 +172,7 @@
                       href: ../../supply-chain/sales-marketing/synchronize-project-list.md?toc=/dynamics365/unified-operations/financials/toc.json
                     - name: Synchronizowanie magazynów z rozwiązania Finance and Operations do rozwiązania Field Service
                       href: ../../supply-chain/sales-marketing/synchronize-warehouse.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Synchronizowanie zleceń z projektem z rozwiązania Field Service do Finance and Operations
+                    - name: Synchronizowanie zleceń pracy z projektem z rozwiązania Field Service do rozwiązania Finance and Operations
                       href: ../../supply-chain/sales-marketing/synchronize-work-orders.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Konfigurowanie integracji z rozwiązaniem Project Service Automation
                   items:
@@ -332,7 +332,7 @@
           href: ../../dev-itpro/deployment/arm-onboarding.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Azure ExpressRoute i Finance and Operations
           href: ../../dev-itpro/deployment/expressroute.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Architektura rozwiązania Finance and Operations
+        - name: Architektura aplikacji Finance and Operations
           href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Stosowanie aktualizacji do środowisk w chmurze
           href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -472,7 +472,7 @@
           href: ../../dev-itpro/dev-tools/metadata-search-visual-studio.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Modele i pakiety
           href: ../../dev-itpro/dev-tools/models.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Typ projektu rozwiązania Finance and Operations
+        - name: Typ projektu aplikacji Finance and Operations
           href: ../../dev-itpro/dev-tools/projects.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Narzędzia dodatków do Visual Studio
           href: ../../dev-itpro/dev-tools/developer-tools-add-ins.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -862,7 +862,7 @@
           href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Zarządzanie dostępem do danych poufnych
           href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Odpowiadanie na wnioski o dane osobowe za pomocą rozwiązania Talent
+        - name: Odpowiadanie na wnioski o dane osobowe za pomocą rozwiązania Human Resources
           href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Odpowiadanie na żądania danych osobowych w systemie AX 2012
           href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -1202,13 +1202,13 @@
           href: ../../dev-itpro/lcs-solutions/regulatory-watch-communication.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Rozdzielność modeli lokalizacji
           href: ../../dev-itpro/lcs-solutions/separate-localization-models.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Przesyłanie alertów dotyczący wymogów prawnych
+        - name: Przesyłanie alertów dotyczących wymogów prawnych
           href: ../../dev-itpro/lcs-solutions/submit-localization-alerts.md?toc=/dynamics365/unified-operations/financials/toc.json
 - name: Pomoc techniczna
   items:
-    - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations i usługi Lifecycle Services
+    - name: Uzyskiwanie pomocy technicznej dotyczącej aplikacji Finance and Operations i usług Lifecycle Services
       href: ../../dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: Omówienie pomocy technicznej systemu Dynamics 365
+    - name: Omówienie pomocy technicznej usługi Dynamics 365
       href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/retail/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
     - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations obsługiwanego przez firmę 21Vianet w Chinach
       href: ../../dev-itpro/lifecycle-services/21vianet-support.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -1216,13 +1216,13 @@
       href: ../../dev-itpro/lifecycle-services/premier-support.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Przesyłanie zgłoszeń do zespołu inżynierów usług Dynamics
       href: ../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: Konfigurowanie pomocy technicznej dotyczącej rozwiązania Finance and Operations
+    - name: Konfigurowanie pomocy technicznej dla rozwiązania Finance and Operations
       href: ../../dev-itpro/lifecycle-services/support-experience.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Okno planowanej konserwacji — często zadawane pytania
       href: ../../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Operacje i obsługa w chmurze
       href: ../../dev-itpro/lifecycle-services/cloud-operations-servicing.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: Zarządzanie środowiskiem pomocy technicznej rozwiązania Finance and Operations
+    - name: Zarządzanie środowiskami pomocy technicznej dotyczącej aplikacji Finance and Operations
       href: ../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
 - name: Administrowanie systemem
   items:
@@ -1298,7 +1298,7 @@
       href: ../../dev-itpro/migration-upgrade/upgrade-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Uaktualnienie z systemu AX 2012
       items:
-        - name: Uaktualnianie z systemu AX 2012 do rozwiązania Finance and Operations
+        - name: Uaktualnienie z systemu AX 2012 do rozwiązania Finance and Operations
           href: ../../dev-itpro/migration-upgrade/upgrade-overview-2012.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Uaktualnianie systemu AX 2012 — planowanie przy użyciu narzędzia Analizator możliwości uaktualnienia
           href: ../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -1338,7 +1338,7 @@
               href: ../../dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store.md?toc=/dynamics365/unified-operations/financials/toc.json
             - name: Uaktualnianie funkcjonalności planowania budżetu
               href: ../../dev-itpro/migration-upgrade/upgrade-budget-planning.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: Migracja danych z systemu AX 2009.
+    - name: Migracja danych z systemu AX 2009
       items:
         - name: Migracja danych z systemu AX 2009 do rozwiązania Finance and Operations
           href: ../../dev-itpro/migration-upgrade/data-migration-tool.md?toc=/dynamics365/unified-operations/financials/toc.json

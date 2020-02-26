@@ -1,12 +1,12 @@
 ---
 title: Zarządzanie funkcjami
 description: W tym temacie opisano, jak administrator może włączyć funkcje w wersji zapoznawczej w aplikacji Microsoft Dynamics 365 Talent, oraz podano listę funkcji dostępnych obecnie w wersji zapoznawczej.
-author: tracykeya
+author: andreabichsel
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,21 +15,21 @@ ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: trkeya
-ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 9f1fb4b929660bbe9018fb98169b3cfddcaec547
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.author: anbichse
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: AX 7.1.0, Talent
+ms.openlocfilehash: d818e9e04ce88e5ab285ef8176334809447fb477
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833307"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006437"
 ---
 # <a name="manage-features"></a>Zarządzanie funkcjami
 
 [!include [banner](includes/banner.md)]
 
-W ramach ciągłego wdrażania nowych funkcji zarządzania kapitałem ludzkim (HCM) w aplikacji Microsoft Dynamics 365 Talent chcemy stworzyć klientom możliwość jak najszybszego zetknięcia się z nimi. Administratorzy mogą przeglądać i używać funkcji zapoznawczych w swoich środowiskach. Te funkcje są prawie gotowe do ogólnego udostępnienia i przeszły wszechstronne testy. Jednak zanim je upublicznimy powszechnie, chcemy jeszcze poznać finalne opinie klientów i przeprowadzić ostatnią weryfikację.
+W ramach ciągłego wdrażania nowych funkcji zarządzania kapitałem ludzkim (HCM) w aplikacji Microsoft Dynamics 365 Human Resources chcemy stworzyć klientom możliwość jak najszybszego zetknięcia się z nimi. Administratorzy mogą przeglądać i używać funkcji zapoznawczych w swoich środowiskach. Te funkcje są prawie gotowe do ogólnego udostępnienia i przeszły wszechstronne testy. Jednak zanim je upublicznimy powszechnie, chcemy jeszcze poznać finalne opinie klientów i przeprowadzić ostatnią weryfikację.
 
 W tym temacie opisano, jak włączyć funkcje w wersji zapoznawczej, oraz podano listę funkcji dostępnych obecnie w wersji zapoznawczej. Lista będzie aktualizowana wraz z przekazywaniem kolejnych funkcji ogółowi użytkowników i udostępnianiem wersji zapoznawczych. Dodawanie nowych funkcji zapoznawczych nie będzie w żaden sposób anonsowane. Użytkownicy po prostu zaczną je widzieć. Aby uzyskać więcej informacji o nowych funkcjach w aplikacji Talent, zobacz [Nowości i zmiany w aplikacji Dynamics 365 Talent](./whats-new.md) oraz [Informacje o wersji Dynamics 365 i Power Platform](https://docs.microsoft.com/business-applications-release-notes).
 
@@ -54,50 +54,6 @@ Aby uzyskać dostęp do funkcji w wersji zapoznawczej, należy je najpierw włą
 > [!NOTE]
 > Niektóre funkcje w wersji zapoznawczej mogą wymagać dodatkowej konfiguracji. Obok funkcji w wersji zapoznawczej znajdują się łącza umożliwiające dokończenie ich konfigurowania.
 
-### <a name="core-hr"></a>Core HR
-
-1. Zaloguj się w aplikacji Talent.
-2. Wybierz opcję **Administrowanie systemem**, a następnie wybierz kartę **Łącza**.
-3. Na stronie **Administrowanie systemem**, w obszarze **Konfiguracja**wybierz opcję **Parametry systemowe**.
-4. Na stronie **Parametry systemowe** wybierz kartę **Funkcje w wersji zapoznawczej**.
-5. Ustaw opcję **Włącz tryb zapoznawczy dla wszystkich użytkowników** na **Tak**, aby funkcje w wersji zapoznawczej były dostępne.
-
-    ![Włączanie funkcji w wersji zapoznawczej w aplikacji Core HR](./media/corehr-enable-preview-features.png)
-
-> [!NOTE]
-> Aby wyłączyć funkcje w wersji zapoznawczej, wykonaj te same kroki, ale ustaw opcję **Włącz tryb zapoznawczy dla wszystkich użytkowników** na **Nie**. Po wyłączeniu funkcji zapoznawczych staną się one niedostępne dla użytkowników, a w procesach związanych z funkcjami mogą się pojawiać błędy.
-
-### <a name="onboard"></a>Rekrutuj
-
-Obecnie nie są dostępne żadne funkcje w wersji zapoznawczej aplikacji Microsoft Dynamics 365 Talent: Onboard.
-
-## <a name="features-that-are-currently-in-preview"></a>Funkcje istniejące obecnie w wersjach zapoznawczych
-
-### <a name="attract"></a>Attract
-
-- [Rekomendacja kandydata](./intelligent-recommendations.md#candidate-recommendations) — jeśli na którąkolwiek funkcję jest więcej niż 10 kandydatów mających życiorysy lub kompletne profile, to kandydaci najlepiej spełniający wymagania określone dla funkcji są wyświetlani w sekcji **Kandydaci do wzięcia pod uwagę** na stronie tej funkcji.
-- [Rekomendacja funkcji](./intelligent-recommendations.md#job-recommendations) — jeśli w witrynie rozwoju kariery jest opublikowanych więcej niż dziesięć ofert pracy, aplikacja Attact przedstawia rekomendacje funkcji prospektom.
-- [Integracja z aplikacją Broadbean](./posting-jobs-external.md#post-jobs-to-broadbean) — oferty pracy z aplikacji Attract można opublikować w aplikacji Broadbean, zewnętrznej witrynie ofert pracy. Po włączeniu tej funkcji w wersji zapoznawczej należy dokończyć konfigurowanie, wprowadzając nazwę użytkownika Broadbean, identyfikator klienta i token szyfrowania.
-- [Analizy](./analytic-reports.md) — w centrum analiz zespoły rekrutacyjne mogą wyświetlać kluczowe wskaźniki pojedynczego zadania oraz zagregowane wskaźniki wszystkich zadań.
-- [EEO](./activities-attract.md) — nowe typy działań pozwalają użyć wstępnie zdefiniowanego formularza do zbierania od kandydata danych dotyczących amerykańskiej ustawy o równym traktowaniu w zatrudnieniu (EEO) oraz danych wymaganych przez amerykańskie biuro ds. programów przestrzegania przepisów w kontraktach dla instytucji rządowych (OFCCP). Wstępnie zdefiniowanego formularza nie można edytować.
-- [Rekomendacja prospektów](./intelligent-recommendations.md#prospect-recommendations) — aplikacja Attract przegląda dawnych i bieżących kandydatów, aby utworzyć listę prospektów dobrze pasujących do danego zadania.
-- [Wyszukiwanie wg stopnia zgodności](./attract-talent-pools.md#search-and-view-candidate-profiles) — możliwość przeszukiwania całej bazy danych kandydatów pod kątem konkretnych kwalifikacji, nazwisk lub wykształcenia. Attract przeszukuje cały profil i podświetla wszystkie trafienia, które znajdzie. Ponadto Attract przeszukuje wszystkie dostępne dokumenty na temat kandydata i inteligentnie ocenia wyniki wyszukiwania.
-- [Odbiorcy działania](./whats-new-talent-march-20.md#setting-the-audience-on-activities) — możliwość ustawienia jako odbiorców działań (takich jak przeprowadzanie rozmowy kwalifikacyjnej, planowanie lub opiniowanie) opcji **Wszyscy kandydaci**, **Wewnętrzni kandydaci** lub **Zewnętrzni kandydaci**. Działania, na przykład filmy na YouTube, zawartość sieciowa i formularze Microsoft, mogą być wtedy dostarczane wszystkim kandydatom, tylko wewnętrznym kandydatom, tylko zewnętrznym kandydatom lub zespołowi rekrutacyjnemu.
-- [Zgłoś się za pomocą LinkedIn](./career-site.md#enable-applying-for-jobs-with-linkedin-profiles) — możliwość skonfigurowania w witrynie kariery Attract opcji zgłaszania się kandydatów przy użyciu LinkedIn. Ta funkcja usprawnia proces zgłaszania dla kandydatów, umożliwiając im korzystanie z profilu LinkedIn w celu automatycznego wypełniania swoich zgłoszeń w witrynie kariery.
-- [Śledzenie źródła](./source-tracking.md) — Attract automatycznie śledzi źródła zgłoszeń kandydatów, zapewniając cenne informacje, które pomagają w procesie rekrutacji. Możliwe jest także wybranie źródła aplikacji podczas dodawania kandydata do stanowiska lub puli umiejętności i kandydatów.
-- [Srebrny medalista](./whats-new-talent-march-20.md#designate-silver-medalists-to-assign-high-value-applicants-for-future-positions)— jeśli są kandydaci, którzy świetnie pasowaliby do organizacji, ale nie zostali objęciu ofertą na bieżące stanowisko, można ich zaliczyć do srebrnych medalistów. Ta funkcja ułatwia skrócenie czasu rekrutacji, gdy następnym razem będzie dostępne podobne stanowisko.
-
-### <a name="core-hr"></a>Core HR
-
-- [Sprawdź poprawność danych hierarchii stanowisk](./whats-new-talent-may-13-2019.md#new-page-to-validate-position-hierarchy-data) — istnieje możliwość sprawdzenia hierarchii kadry kierowniczej dla wszystkich odwołań cyklicznych, które zostały przypadkowo zaimportowane.
-- [Określ kody przyczyn dla typów urlopów](./whats-new-talent-may-13-2019.md#specify-reason-codes-on-leave-types) — można określić kody przyczyny skojarzone z typami urlopów.
-- [Wymagaj kodu przyczyny we wnioskach o czas wolny](./whats-new-talent-may-13-2019.md#require-reason-codes-for-specific-leave-types-on-time-off-requests) — oprócz określenia kodów przyczyny można określić typy urlopów wymagające podania kodów przyczyny we wnioskach o czas wolny.
-- [Podaj listę transakcji urlopów i nieobecności dla zasobów ludzkich](./whats-new-talent-may-13-2019.md#provide-a-leave-and-absence-transaction-list-for-hr) — istnieje możliwość wyświetlenia listy transakcji urlopu i nieobecności, która jest przydatna podczas analizowania sald czasu wolnego.
-
-### <a name="onboard"></a>Rekrutuj
-
-Obecnie nie są dostępne żadne funkcje w wersji zapoznawczej aplikacji Onboard.
-
 ## <a name="feedback"></a>Opinii
 
 Chcemy się dowiedzieć, co sądzisz, na podstawie swojego doświadczenia, o tych funkcjach w wersji zapoznawczej. Zachęcamy do regularnego zamieszczania opinii w podanych witrynach podczas korzystania z tych i innych funkcji:
@@ -106,7 +62,6 @@ Chcemy się dowiedzieć, co sądzisz, na podstawie swojego doświadczenia, o tyc
 - Opowiedz nam o funkcjach, które Twoim zdaniem powinny się znaleźć w produkcie, a także o wszelkich zmianach, które Twoim zdaniem należy wprowadzić w istniejących funkcjach. Pomysły na ulepszenie produktu można zgłaszać w następujących witrynach:
 
     - [Pomysły dotyczące aplikacji Attract](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
-    - [Pomysły dotyczące aplikacji Core HR](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
     - [Pomysły dotyczące aplikacji Onboard](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard)
 
 W przesyłanych opiniach i recenzjach produktu nie podawaj żadnych danych osobowych (tzn. informacji, które mogłyby umożliwić identyfikację Ciebie). Zebrane informacje mogą być dalej analizowane, ale ze względu na obowiązujące przepisy o ochronie danych osobowych nie będą wykorzystywane do udzielania odpowiedzi na pytania. Dane osobowe, które na mocy tych programów są zbierane osobno, podlegają [zasadom zachowania poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement).

@@ -3,7 +3,7 @@ title: Tworzenie nowych użytkowników
 description: Użytkownikami są wewnętrzni pracownicy organizacji lub zewnętrznych odbiorcy i dostawcy, którzy potrzebują dostępu do systemu w celu wykonywania swoich zadań.
 author: maertenm
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 02/06/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3c347a34a389c32d005cc8086c4a1349ecb8a698
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 6d884dfe30be5684a90925d4d2d9ab7eebca5b44
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570528"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029816"
 ---
 # <a name="create-new-users"></a>Tworzenie nowych użytkowników
 
@@ -30,9 +30,12 @@ ms.locfileid: "2570528"
 Użytkownikami są wewnętrzni pracownicy organizacji lub zewnętrznych odbiorcy i dostawcy, którzy potrzebują dostępu do systemu do swoich zadań.
 
 ## <a name="associate-a-user-with-a-license-new-license-types-only"></a>Skojarz użytkownika z licencją (tylko nowe typy licencji)
-W przypadku klientów, którzy znajdują się w jednym z nowych typów licencji dodanych w październiku 2019, użytkownicy muszą być powiązani z licencją. Użytkownicy, którzy są powiązani z licencją, są automatycznie dodawani jako użytkownicy systemu, którzy nie mają ról przy pierwszym logowaniu. W przypadku użytkowników, którzy nie są powiązani z licencją, pojawia się komunikat ostrzegawczy.
+W przypadku klientów, którzy znajdują się w jednym z nowych typów licencji dodanych w październiku 2019, użytkownicy muszą być powiązani z licencją. Użytkownicy, którzy są powiązani z licencją, są automatycznie dodawani jako użytkownicy systemu, którzy nie mają ról przy pierwszym logowaniu.
 
 Administratorzy systemów mogą [przypisywać licencje do użytkowników](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) w [centrum administracyjnym Microsoft 365](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+
+## <a name="associate-an-external-user-with-a-license-new-license-types-only"></a>Skojarz zewnętrznego użytkownika z licencją (tylko nowe typy licencji)
+Użytkownicy zewnętrzni dla dzierżawy, na którą wdrożono środowisko, muszą być reprezentowani w katalogu dzierżawy hosta (Azure Active Directory (Azure AD)), tak aby mogli oni przypisywać licencje. Użytkownicy zewnętrzni powinni zostać dodani do dzierżawy Azure AD jako użytkownik gość, a następnie przypisani do odpowiednich licencji. Aby uzyskać więcej informacji, odwiedź sekcję [Dodawanie użytkowników współpracy w module B2B Azure Active Directory w portalu Azure Portal](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="add-a-new-user"></a>Dodawanie nowego użytkownika
 1. Wybierz kolejno opcje **Administrowanie systemem \> Użytkownicy \> Użytkownicy**.
@@ -42,7 +45,7 @@ Administratorzy systemów mogą [przypisywać licencje do użytkowników](https:
 5. W polu **Domena** wprowadź domenę użytkownika.  
 6. W polu **Alias** wprowadź alias użytkownika.  
 7. W polu **Firma** wybierz pożądaną firmę. 
-8. Na skróconej karcie **Role użytkownika** wybierz opcję **Przypisz role**, aby [przypisać użytkowników do ról zabezpieczeń](assign-users-security-roles.md)
+8. Na skróconej karcie **Role użytkownika** wybierz opcję **Przypisz role**, aby przypisać użytkowników do ról zabezpieczeń. Więcej informacji można znaleźć w [Przypisywanie użytkowników do ról zabezpieczeń](assign-users-security-roles.md).
 9. Kliknij przycisk **OK**.
 10. Wybierz opcję **Zapisz**.
 

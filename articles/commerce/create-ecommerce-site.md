@@ -1,9 +1,9 @@
 ---
 title: Tworzenie witryny handlu elektronicznego
-description: W tym temacie opisano zadania związane z tworzeniem nowej witryny e-Commerce w Dynamics 365 Commerce.
+description: W tym temacie opisano kroki i informacje wymagane do utworzenia nowej witryny e-Commerce w konstruktorze witryn Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,29 +19,31 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 3d3d8a290f06d9734be21f2d59152acac6857506
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945842"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002020"
 ---
 # <a name="create-an-e-commerce-site"></a>Tworzenie witryny handlu elektronicznego
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano zadania związane z tworzeniem nowej witryny e-Commerce w Dynamics 365 Commerce.
+W tym temacie opisano kroki i informacje wymagane do utworzenia nowej witryny e-Commerce w konstruktorze witryn Dynamics 365 Commerce.
 
-## <a name="overview"></a>Omówienie
+Przed rozpoczęciem opracowywania witryny e-Commerce, najpierw należy utworzyć nową witrynę w kreatorze witryn. 
 
-Aby rozpocząć opracowywanie witryny e-Commerce, najpierw należy utworzyć nową witrynę w środowisku tworzenia witryn. Aby można było utworzyć nową witrynę, w Dynamics 365 Retail musi być utworzony co najmniej jeden sklep internetowy. 
+
+Aby rozpocząć opracowywanie witryny e-Commerce, najpierw należy utworzyć nową witrynę w środowisku tworzenia witryn. Aby można było utworzyć nową witrynę, w Commerce musi być utworzony co najmniej jeden sklep internetowy. 
+
 
 ## <a name="set-up-your-site"></a>Konfigurowanie witryny
 
 Aby skonfigurować witrynę, wykonaj następujące czynności.
 
-1. W usłudze Microsoft Lifecycle Services (usługi LCS) wybierz łącze do środowiska tworzenia witryn. 
+1. Otwórz środowisko budowania witryn. Łącze do kreatora witryn w usłudze Microsoft Lifecycle Services (LCS) można znaleźć na stronie Funkcje środowiska w Commerce.
 1. Następnie na stronie głównej dla środowiska tworzenia witryn wybierz opcję **Nowa witryna**.
 1. W oknie dialogowym **Nowa witryna** wprowadź następujące informacje.
 

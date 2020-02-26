@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie funkcji opcjonalnych środowiska wersji zapoznawczej usługi Commerce
+title: Konfiguruj funkcje opcjonalne środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
 description: W tym temacie opisano sposób konfigurowania funkcji opcjonalnych środowiska wersji zapoznawczej aplikacji Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2c4872cdebc414eaa865af025237bd9e1d14bfd2
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906123"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024736"
 ---
-# <a name="configure-optional-features-for-a-commerce-preview-environment"></a>Konfigurowanie funkcji opcjonalnych środowiska wersji zapoznawczej usługi Commerce
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfiguruj funkcje opcjonalne środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób konfigurowania funkcji opcjonalnych środowiska wersji zapoznawczej aplikacji Microsoft Dynamics 365 Commerce.
@@ -173,13 +173,13 @@ Dla każdego produktu w zamówieniu następujące tokeny są wypełniane wartoś
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie środowiska wersji zapoznawczej usługi Commerce](cpe-overview.md)
+[Dynamics 365 Commerce omówienie środowiska wersji zapoznawczej](cpe-overview.md)
 
-[Aprowizowanie środowiska wersji zapoznawczej usługi Commerce](provisioning-guide.md)
+[Inicjuj środowisko wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfigurowanie środowiska wersji zapoznawczej usługi Commerce](cpe-post-provisioning.md)
+[Konfiguruj środowisko wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Często zadawane pytania dotyczące środowiska wersji zapoznawczej usługi Commerce](cpe-faq.md)
+[Środowisko wersji zapoznawczej Dynamics 365 Commerce— często zadawane pytania](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -188,5 +188,3 @@ Dla każdego produktu w zamówieniu następujące tokeny są wypełniane wartoś
 [Portal Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Witryna Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Zasoby pomocy dla rozwiązania Dynamics 365 Retail](../retail/index.md)

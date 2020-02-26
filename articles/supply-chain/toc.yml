@@ -52,7 +52,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Wymagania systemowe dotyczące wdrożeń lokalnych
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Zakup rozwiązania Finance + Operations (on-premises)
+                - name: Kup rozwiązanie Finance + Operations (lokalne)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie modułu Magazynowanie dla wdrożeń lokalnych
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
@@ -62,16 +62,16 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Nowości i zmiany
               items:
-                - name: Supply Chain Management w wersji 10.0.7 (grudzień 2019)
-                  href: get-started/whats-new-scm-10-0-7.md
-                - name: Supply Chain Management w wersji 10.0.6 (listopad 2019)
-                  href: get-started/whats-new-scm-10-0-6.md
-                - name: Nowości i zmiany w poprzednich wersjach
+                - name: Nowości i zmiany w aplikacjach Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nowości lub zmiany w aplikacji Supply Chain Management
                   items:
-                    - name: Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Finance and Operations Enterprise Edition 7.3
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Nowości lub zmiany w aplikacji Supply Chain Management — strona główna
+                      href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management w wersji 10.0.8 (luty 2020)
+                      href: get-started/whats-new-scm-10-0-8.md
+                    - name: Supply Chain Management w wersji 10.0.7 (styczeń 2020)
+                      href: get-started/whats-new-scm-10-0-7.md
                 - name: Usunięte lub wycofane funkcje
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'Funkcje systemu AX 2012, które zostały odroczone'
@@ -162,7 +162,7 @@
               items:
                 - name: Strona główna zarządzania cyklem życia implementacji
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Architektura dla aplikacji Finance and Operations
+                - name: Architektura aplikacji Finance and Operations
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Microsoft FastTrack for Finance and Operations
                   href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
@@ -873,7 +873,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Konfigurowanie mapowań modelu ER w zależności od kraju
                           href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Używanie rozwiązań modułu Raportowanie elektroniczne w rozwiązaniu Finance and Operations
+                - name: Używanie rozwiązań modułu Raportowanie elektroniczne w aplikacji Finance and Operations
                   items:
                     - name: Konfigurowanie struktury
                       items:
@@ -1383,6 +1383,8 @@
                   href: procurement/tasks/create-scoring-method-rfqs.md
                 - name: Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO
                   href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
+                - name: Odpowiadanie na pytania dostawców dotyczące zapytań ofertowych
+                  href: procurement/rfq-question.md
                 - name: Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień
                   href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
             - name: Zamówienia zakupu
@@ -2301,6 +2303,10 @@
                   href: warehousing/mobile-barcode-support.md
                 - name: Konfigurowanie magazynu dla zamówień przeniesienia
                   href: warehousing/transfer-orders-warehouse.md
+            - name: Rezerwacje w module zarządzania magazynem
+              items:
+                - name: Elastyczne zasady rezerwacji wymiarów na poziomie magazynu
+                  href: warehousing/flexible-warehouse-level-dimension-reservation.md
             - name: Zasady pracy magazynowej
               items:
                 - name: Omówienie zasad pracy magazynowej
@@ -2411,11 +2417,11 @@
                   href: warehousing/process-guide-framework.md
             - name: Uaktualnianie i migracja
               items:
-                - name: Uaktualnianie procesów zarządzania magazynem z systemu Microsoft Dynamics AX 2012 do rozwiązania Finance and Operations
+                - name: Uaktualnianie procesów zarządzania magazynem z Microsoft Dynamics AX 2012 do Finance and Operations
                   href: warehousing/upgrade-migration-warehouse-management-processes.md
             - name: Przyjęcia w celu rejestracji i odłożenia
               items:
-                - name: Rejestrowanie elementów dla zaawansowanego magazynowania za pomocą arkusza przyjęć towarów
+                - name: Rejestrowanie pozycji dla zaawansowanego magazynowania za pomocą arkusza przyjęć towarów
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Rejestrowanie elementów dla podstawowego magazynowania za pomocą arkusza przyjęć towarów
                   href: warehousing/tasks/register-items-basic-warehousing.md
@@ -2430,9 +2436,11 @@
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
             - name: Tworzenie nowego aparatu zarządzania transportem
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
-    - name: Rozwój i administracja aplikacjami Finance and Operations
+    - name: Programowanie aplikacji Finance and Operations i administrowanie nimi
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Rozwiązanie Dynamics 365 Finance
+    - name: Dynamics 365 Finance
       href: ../finance/index.md
-    - name: Rozwiązanie Dynamics 365 Retail
-      href: ../retail/index.md
+    - name: Dynamics 365 Commerce
+      href: ../commerce/index.md
+    - name: Dynamics 365 Retail
+      href: ../commerce/index.md

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-09-10
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 14e3482f366319851bed84b6cdd6135f0bcd1e80
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 0aadecd5b37759492f7895ccfda1a777793a08b3
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897343"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006248"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-september-10-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent (10 września 2019 r.)
 
@@ -55,7 +55,7 @@ Aby uzyskać więcej informacji o publikowaniu zmian, zapoznaj się z tematem [P
 
 ### <a name="platform-update-29"></a>Aktualizacja platformy Update 29
 
-Aby uzyskać więcej informacji dotyczących 29. aktualizacji platformy, zobacz [Podgląd funkcji w aktualizacji platformy 29 Dynamics 365 for Finance and Operations (Październik 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Aby uzyskać więcej informacji dotyczących 29. aktualizacji platformy, zobacz [Podgląd funkcji w aktualizacji platformy 29 Dynamics 365 for Finance and Operations (Październik 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
 
 ### <a name="new-job-base-entity-available-in-data-management-framework-347202"></a>Nowa jednostka podstawowa zadania dostępna w narzędziu do zarządzania danymi (347202)
 

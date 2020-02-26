@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 80d71d2390e7b6e39798d0f061b584ad229a2459
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 20d3da65028b455ab1602e3a8b443ea7e585b1f0
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897311"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030903"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-september-17-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent - Core HR (17 września 2018 r.)
 
@@ -35,13 +35,13 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Core HR.
 
 Dodano nowy typ naliczania do planów urlopów. Harmonogram naliczania może teraz być oparty na liczbie przepracowanych miesięcy lub liczbie przepracowanych godzin. Aby uzyskać więcej informacji, zobacz [Naliczanie czasu wolnego na podstawie liczby przepracowanych godzin](leave-accrue-hours-worked.md).
 
-## <a name="platform-update-18-for-finance-and-operations"></a>Aktualizacja Platform update 18 dla Finance and Operations
+## <a name="platform-update-18-for-finance-and-operations"></a>Aktualizacja 18 platformy dla Finance and Operations
 
-Aplikacja Talent zawiera teraz elementy z aktualizacji Platform update 18 dla Finance and Operations. 
+Aplikacja Talent zawiera teraz elementy z aktualizacji platformy 18 dla Finance and Operations. 
 
 -   Pola obowiązkowe i inne można teraz ukrywać za pośrednictwem personalizacji. Pozwala to użytkownikowi utworzyć uproszczone środowisko, w którym nie są wyświetlane wymagane pola o wartościach ustawianych domyślnie przez logikę biznesową. Wymagane pola ukryte również są tymczasowo pokazywane, gdy są puste w trakcie próby zapisu.
 
--   W aktualizacji Platform update 18 dla Finance and Operations klient internetowy aplikacji Talent prezentuje obiekty graficzne w sposób zgodny z Microsoft Fluent Design.
+-   W aktualizacji platformy 18 dla Finance and Operations klient internetowy aplikacji Talent prezentuje obiekty graficzne w sposób zgodny z kanonem wizualizacji Microsoft Fluent.
 
     -   Gdy pola są w trybie odczytu, można po prostu zaznaczyć opcję edycji w polu, aby przełączyć formularz na edytowanie.
 
@@ -49,7 +49,7 @@ Aplikacja Talent zawiera teraz elementy z aktualizacji Platform update 18 dla Fi
 
     -   Nagłówki w obszarach roboczych i na stronach są pogrubione.
 
--   Poprawiono zachowanie funkcji wyszukiwania bez zastępowania. Aby uzyskać więcej informacji, zobacz [Ulepszone zachowanie wyszukiwań bez zastępowania](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0).
+-   Poprawiono zachowanie funkcji wyszukiwania bez zastępowania. Aby uzyskać więcej informacji, zobacz [Ulepszone zachowanie wyszukiwań bez zastępowania](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/non-replacing-lookups).
 
 ## <a name="bug-fixes"></a>Poprawki błędów
 

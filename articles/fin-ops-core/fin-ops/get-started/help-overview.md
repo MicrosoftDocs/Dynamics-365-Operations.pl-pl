@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4594da0feeb3b74eb066fb5761e36398804b4fc2
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811679"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005710"
 ---
 # <a name="help-system"></a>System Pomocy
 
@@ -32,9 +32,9 @@ ms.locfileid: "2811679"
 Ten temat zawiera omówienie składników systemu pomocy. System Pomocy jest wspólny dla następujących produktów:
 
 - Dynamics 365 Finance 
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Talent
+- Dynamics 365 Human Resources
 
 Do pomocy można przejść z okienka pomocy w każdym używanym produkcie. 
 
@@ -42,7 +42,7 @@ Do pomocy można przejść z okienka pomocy w każdym używanym produkcie.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Pomoc w witrynie docs.microsoft.com
 
-Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](https://docs.microsoft.com/dynamics365/)) to podstawowe źródło dokumentacji produktu aplikacji wypisanych poniżej. Witryna oferuje następujące funkcje:
+Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) to podstawowe źródło dokumentacji produktu aplikacji wypisanych poniżej. Witryna oferuje następujące funkcje:
 
 - **Dostęp do najaktualniejszych treści** — Witryna pozwala szybciej i elastyczniej tworzyć, dostarczać i aktualizować dokumentację produktu. To pomaga zagwarantować, że masz dostęp do najnowszych informacji technicznych.
 - **Artykuły pisane przez ekspertów** — Witryna zawiera bardziej rozbudowany zestaw dokumentacji produktu, który może być rozszerzany przez członków społeczności wewnątrz i na zewnątrz firmy Microsoft.
@@ -73,7 +73,7 @@ Użytkownik może tworzyć i edytować dokumentacje. Aby rozpocząć, kliknij pr
 
 Wideo [Jak należy przyczyniać się do dokumentacji Microsoft Dynamics](https://youtu.be/m5djioozRbg) (pokazany powyżej), jest zawarty w kanale YouTube Microsoft Dynamics 365 w systemie.
 
-Więcej informacji zawiera [podręcznik dla współautorów](https://docs.microsoft.com/en-us/contribute).
+Więcej informacji zawiera [podręcznik dla współautorów](https://docs.microsoft.com/contribute).
 
 > [!NOTE]
 > Obecnie akceptujemy współtworzenie tylko treści w języku angielskim.
@@ -106,12 +106,12 @@ Aby uzyskać dostęp do zawartości pomocy w programie Finance and Operations, k
 Z okienka pomocy można uzyskać dostęp artykułów wiki mających zastosowanie do klienta. Gdy po raz pierwszy otworzysz okienko pomocy i klikniesz kartę **Pomoc**, zobaczysz artykuły mające zastosowanie do strony aktualnie wyświetlonej. Jeśli nie zostaną znalezione żadne artykuły, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie. Po kliknięciu artykułu w okienku pomocy w przeglądarce zostanie otwarta nowa karta z artykułem.
 
 > [!IMPORTANT]
-> Ta sekcja nie ma zastosowania do Dynamics 365 Talent. System Pomocy programu Talent jest automatycznie łączony z przewodnikami po zadaniach dla tego produktu. Ponadto nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Talent.
+> Ta sekcja nie ma zastosowania do Dynamics 365 Human Resources. System Pomocy programu Human Resources jest automatycznie łączony z przewodnikami po zadaniach dla tego produktu. Co więcej, nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Human Resources.
 
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Uzyskiwanie dostępu do przewodników po zadaniach z okienka Pomocy
 
-Zanim będzie można uzyskać dostęp do przewodników po zadaniach z okienka pomocy, administrator systemu musi przejść do strony **Parametry systemu** w programie Finance, Supply Chain Management i Retail i skonfigurować niektóre ustawienia.
+Zanim będzie można uzyskać dostęp do przewodników po zadaniach z okienka pomocy, administrator systemu musi przejść do strony **Parametry systemu** w programie Finance, Supply Chain Management i Commerce i skonfigurować niektóre ustawienia.
 
 > [!NOTE]
 > - Aby skonfigurować pomoc, musisz się zalogować przy użyciu konta w tej samej dzierżawie, w której jest wdrożona aplikacja.

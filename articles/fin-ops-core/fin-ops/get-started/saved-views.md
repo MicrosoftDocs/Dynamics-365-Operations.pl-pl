@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 2f76c4e50649d3eda951940a2186348c29474dc6
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 62d7dc1bd877cd1267f87ed24f8fb8be8f6c74a3
+ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658674"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017711"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
@@ -37,7 +37,7 @@ W przypadku tradycyjnej personalizacji użytkownicy mogą mieć tylko jeden zest
 
 -    Widoki utworzone dla określonych typów stron mogą również zawierać filtry dodane przez użytkownika lub kryteria sortowania, które umożliwiają użytkownikom szybkie odtworzenie często filtrowanych zestawów danych. Więcej szczegółów znajduje się w sekcji [Jakie strony obsługują widoki](saved-views.md#what-pages-support-views). 
 
--    Widoki mogą być publikowane dla użytkowników w określonych rolach zabezpieczeń i określonych firmach. Dlatego każdy użytkownik, który ma określoną rolę w określonej firmie, może uzyskać dostęp do tego widoku i korzystać z niego, nawet jeśli użytkownik ten może nie mieć możliwości jego spersonalizowania. Ta możliwość publikowania pozwala organizacjom na definiowanie firmowych, standardowych widoków zoptymalizowanych pod kątem ich działalności. Więcej informacji zawiera sekcja [Zarządzanie personalizacjami na poziomie organizacyjnym za pomocą widoków](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
+-    Widoki mogą być publikowane dla użytkowników w określonych rolach zabezpieczeń i określonych firmach. Dlatego każdy użytkownik, który ma określoną rolę i dostęp w określonej firmie, może uzyskać dostęp do tego widoku i korzystać z niego, nawet jeśli użytkownik ten może nie mieć możliwości jego spersonalizowania. Ta możliwość publikowania pozwala organizacjom na definiowanie firmowych, standardowych widoków zoptymalizowanych pod kątem ich działalności. Więcej informacji zawiera sekcja [Zarządzanie personalizacjami na poziomie organizacyjnym za pomocą widoków](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
 
 -    W przeciwieństwie do tradycyjnej personalizacji widoki nie są automatycznie zapisywane, gdy użytkownik wykonuje jawne personalizacje lub filtruje listę. Jawne zapisywanie jest wymagane w celu zapewnienia elastyczności w tworzeniu widoku przed dokonaniem zmian skojarzonych z tym widokiem lub po nim oraz zapobiegania przypadkowemu modyfikowaniu definicji przez filtry lub personalizacje, które nie są przeznaczone do długoterminowego użycia.  
 
@@ -71,7 +71,7 @@ Jeśli chcesz zapisać te zmiany, wykonaj następujące kroki.
 2.  Aby zmodyfikować istniejący widok:
      1. Wybierz opcję **Zapisz**. Należy zauważyć, że ta akcja nie jest dostępna w przypadku widoków zablokowanych. 
 3.  Aby utworzyć nowy widok:
-     1.    Wybierz opcję **Zapisz jako**. 
+     1.    Wybierz opcję **Zapisz jako...**. 
      2.    Wprowadź nazwę widoku i (opcjonalnie) opis.
      3.    Wybierz opcję **Zapisz**.
 
@@ -83,7 +83,7 @@ Aby zmienić domyślny widok strony, wykonaj następujące czynności:
 2.  Wybierz nazwę widoku, aby otworzyć selektor widoku. 
 3.  Naciśnij przycisk **Więcej**, a następnie wybierz opcję **Przypnij jako domyślny**.  
 
-Podczas tworzenia nowego widoku (przy użyciu akcji **Zapisz jako**) można też ustawić nowy widok jako domyślny, włączając opcję **Przypnij jako domyślny** przed zapisaniem widoku.
+Podczas tworzenia nowego widoku (przy użyciu akcji **Zapisz jako...**) można też ustawić nowy widok jako domyślny, włączając opcję **Przypnij jako domyślny** przed zapisaniem widoku.
 
 Należy zauważyć, że w niektórych przypadkach kwerenda skojarzona z domyślnym widokiem nie jest wykonywana w momencie przejścia do strony po raz pierwszy. Jeśli na przykład przechodzisz przez kafelek do strony, kwerenda kafelka zostanie wykonana niezależnie od kwerendy skojarzonej z domyślnym widokiem. Jeśli natomiast przejdziesz do strony, której widok klasyczny już ma zdefiniowaną kwerendę, pierwotna kwerenda będzie początkowo wykonywana zamiast kwerendy domyślnego widoku. W takim przypadku podczas ładowania widoku zostanie wyświetlony komunikat informacyjny. Przełączanie widoków po załadowaniu strony powinno umożliwić wykonanie kwerendy widoku w oczekiwany sposób.
 
@@ -99,11 +99,11 @@ Dostępny zestaw akcji dla listy dostępnych widoków tej strony jest następuj�
 Zmiany wprowadzone w tym oknie dialogowym zaczną obowiązywać po naciśnięciu przycisku **Zapisz**.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Zarządzanie personalizacjami na poziomie organizacyjnym za pomocą widoków
-W tej sekcji opisano sposób działania zarządzania personalizacją przed udostępnieniem widoków, co ułatwia zapoznanie się z zapisanymi widokami w celu usprawnienia zarządzania personalizacjami na poziomie organizacyjnym.
+W tej sekcji opisano sposób pewne różnice w zarządzaniu personalizacją z i bez funkcji zapisanych widoków, co ułatwia zapoznanie się z zapisanymi widokami w celu usprawnienia zarządzania personalizacjami na poziomie organizacyjnym.
 
 Bez widoków administratorzy musieli zastosować zestaw personalizacji strony do użytkownika lub grupy użytkowników za pomocą strony Personalizacja. Jeśli ci użytkownicy mieli uprawnienia do personalizacji, personalizacje zostały zastosowane do tej strony. Nie było jednak możliwe zakazanie użytkownikom dalszego personalizowania strony, czyli organizacja nie mogła sprawić, aby jej użytkownicy mieli spójny interfejs użytkownika. Jeśli dowolny z tych użytkowników nie miał uprawnień do personalizacji, personalizacje wysłane mu przez administratora nie były ładowane. Ponadto, jeśli w organizacji zostali zatrudnieni nowi użytkownicy, administratorzy musieli im ręcznie załadować zestaw personalizacji. Nie było automatycznego mechanizmu określania pewnego zestawu personalizacji, który powinien być dostępny dla użytkownika w danej roli.
 
-Przy użyciu funkcji zapisanych widoków zarządzanie organizacyjne personalizacjami jest znacznie łatwiejsze, głównie ze względu na możliwość publikowania widoków w grupach użytkowników. Po opublikowaniu widoku każdy użytkownik, który ma jedną z zdefiniowanych ról zabezpieczeń i znajduje się w określonych firmach, będzie mógł uzyskać dostęp do tego widoku i korzystać z niego, nawet jeśli użytkownik ten może nie mieć możliwości jego spersonalizowania. Pomimo że każdy użytkownik ma kopię opublikowanego widoku, do której jest stosowane użycie strony (jawne personalizacje), żaden użytkownik nie może zapisać jawnych personalizacji lub aktualizacji kwerendy w opublikowanym widoku. (Innymi słowy, opublikowane widoki są zablokowane) Ponadto, jeśli nowi użytkownicy mają przypisane role w firmach, dla których widoki zostały opublikowane, będą automatycznie widzieli widoki skojarzone z ich rolami i firmami. Administrator nie wymaga żadnych dodatkowych akcji. Podobnie, jeśli użytkownicy zmienią role w organizacji lub mają dostęp do różnych firm, mogą nie mieć już dostępu do widoków, które zostały wcześniej opublikowane. Administrator nie musi wykonywać żadnych dodatkowych działań.
+Przy użyciu funkcji zapisanych widoków zarządzanie organizacyjne personalizacjami jest znacznie łatwiejsze, głównie ze względu na możliwość publikowania widoków w grupach użytkowników. Po opublikowaniu widoku każdy użytkownik, który ma jedną z zdefiniowanych ról zabezpieczeń ma dostęp do określonych firm, będzie mógł wyświetlać ten widok i korzystać z niego, nawet jeśli użytkownik ten może nie mieć możliwości jego spersonalizowania. Pomimo że każdy użytkownik ma kopię opublikowanego widoku, do której jest stosowane użycie strony (jawne personalizacje), żaden użytkownik nie może zapisać jawnych personalizacji lub aktualizacji kwerendy w opublikowanym widoku. Innymi słowy, opublikowane widoki są zablokowane. Ponadto, jeśli nowi użytkownicy mają przypisane role w firmach, dla których widoki zostały opublikowane, będą automatycznie widzieli widoki skojarzone z ich rolami i firmami. Administrator nie musi wykonywać żadnych dodatkowych działań. Administrator nie wymaga żadnych dodatkowych akcji. Podobnie, jeśli użytkownicy zmienią role w organizacji lub mają dostęp do różnych firm, mogą nie mieć już dostępu do widoków, które zostały wcześniej opublikowane. Administrator nie musi wykonywać żadnych dodatkowych działań.
 
 Aktualizacje opublikowanego widoku mogą być łatwo dystrybuowane użytkownikom przez ponowne opublikowanie widoku do odpowiednich ról zabezpieczeń i firm.
 
@@ -119,7 +119,8 @@ Aby opublikować widok, należy wykonać następujące kroki:
 4.  Wpisz nazwę i (opcjonalnie) opis widoku. Wpisaną nazwę użytkownicy otrzymujący ten widok będą widzieć w selektorach widoku. Nazwy opublikowanych widoków strony muszą być unikatowe. Nazwy publikowanych widoków nie mogą się powtarzać, nawet jeśli są stosowane do różnych list ról lub firm.
 5.  Dodaj role zabezpieczeń odpowiadające użytkownikom, do których skierowany jest ten widok.
 6. Dodaj firmy, dla których ten widok powinien być dostępny. 
-7.  Wybierz opcję **Publikuj**.
+7. [10.0.9/Aktualizacja platformy 33 lub nowsza] określa, czy widok powinien być publikowany jako widok domyślny dla wybranych użytkowników. Ustawienie widoku jako domyślnego oznacza, że ten widok będzie widoczny dla użytkowników podczas następnego otwierania strony docelowej. Spowoduje to modyfikację widoku domyślnego dla tych użytkowników; Jednak użytkownicy nadal będą mogli zmieniać swój widok domyślny po zakończeniu publikowania.    
+8.  Wybierz opcję **Publikuj**.
 
 W niektórych środowiskach może upłynąć trochę czasu (do godziny), zanim użytkownicy zobaczą opublikowany widok.
 
@@ -132,7 +133,8 @@ Jeśli zmiany, które mają zostać wprowadzone do opublikowanego widoku, obejmu
 3.  Wybierz opcję **Tak**, jeśli chcesz zaktualizować istniejący widok (lub **Nie**, jeśli chcesz go opublikować pod inną nazwą).
 4.  Zaktualizuj nazwę, opis i/lub role zabezpieczeń tego widoku. 
 5.  Wybierz opcję **Publikuj**. 
-6.  Jeśli zaktualizowano nazwę opublikowanego widoku, należy również usunąć opublikowany widok ze starą nazwą (więcej informacji znajduje się w sekcji **Zarządzanie opublikowanymi widokami**). 
+6.  [10.0.8/Aktualizacja platformy 32 lub wcześniejsza] Jeśli zaktualizowano nazwę opublikowanego widoku, należy również usunąć opublikowany widok ze starą nazwą (więcej informacji znajduje się w sekcji **Zarządzanie opublikowanymi widokami**). 
+7. [10.0.9/Aktualizacja platformy 33 lub nowsza] Jeśli pierwotnie wybrano ten opublikowany widok jako widok domyślny, będzie on ponownie widokiem domyślnym dla tych użytkowników po ponownym opublikowaniu.  
 
 Jeśli zmiany w publikowanym widoku obejmują modyfikację personalizacji lub filtrów skojarzonych z widokiem, należy wykonać następujące czynności: 
 1.  Przełącz się na opublikowany widok, który chcesz zmodyfikować. 
@@ -148,13 +150,15 @@ O ile karta **Moje widoki** z listą widoków osobistych jest widoczna dla wszys
 Dostępny zestaw akcji dla listy wszystkich opublikowanych widoków strony jest następujący. 
 
 -    **Publikuj**: akcja **Publikuj** umożliwia ponowne opublikowanie widoku po zmianie parametrów publikowania (nazwa, opis, role zabezpieczeń).
--    **Usuń**: akcja **Usuń** umożliwia trwałe usunięcie opublikowanego widoku. Ta akcja powoduje usunięcie widoku dla wszystkich użytkowników w systemie.  
- 
-Zmiany wprowadzone w tym oknie dialogowym zaczną obowiązywać, gdy zostanie naciśnięty przycisk **Zapisz**.
+-    **Usuń**: akcja **Usuń** umożliwia trwałe usunięcie opublikowanego widoku. Ta akcja powoduje usunięcie widoku dla wszystkich użytkowników w systemie. Usunięcie opublikowanych widoków zacznie obowiązywać po wybraniu przycisku **Zapisz**.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Jak włączyć zapisane widoki w środowisku? 
-Aby włączyć zapisane widoki, gdy funkcja jest w podglądzie, wykonaj następujące czynności: 
+Uwaga: funkcja **zapisanych widoków** wymaga włączenia systemu personalizacji w Finance and Operations. Jeśli personalizacja jest wyłączona dla całego środowiska, widoki zostaną wyłączone nawet po wykonaniu poniższych kroków. 
+
+**10.0.9/Aktualizacja platformy 33 i późniejsza** Funkcja **zapisanych widoków** jest dostępna bezpośrednio w module Zarządzanie funkcjami w dowolnym środowisku. Podobnie jak inne funkcje prapremiery publicznej, włączenie tej funkcji w produkcji podlega [uzupełniającemu warunkowi stosowania Umowy](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8/Aktualizacja platformy 32 i wcześniejsza** Funkcja **zapisanych widoków** można włączyć w środowiskach warstwy 1 (Dev/Test) i warstwa 2 (piaskownicy) w celu zapewnienia dodatkowych zmian w testowaniu i projekcie, wykonując poniższe kroki.
 
 1.  **Włącz funkcję testową**: wykonaj następującą instrukcję SQL: 
 
@@ -168,15 +172,12 @@ Aby włączyć zapisane widoki, gdy funkcja jest w podglądzie, wykonaj następu
 
 Wszystkie kolejne sesje użytkownika będą uruchamiane z włączonymi zapisanymi widokami.
 
-Zapisane widoki można stosować tylko w środowiskach warstwy 1 (Dev/Test) i warstwa 2 (Piaskownicy) w celu zapewnienia dodatkowych zmian w testowaniu i projekcie. Podgląd Xapisanych widoków będzie dostępny w środowiskach produkcyjnych w przyszłym wydaniu.
-
-Jeśli personalizacja jest wyłączona dla środowiska, widoki zostaną wyłączone nawet po wykonaniu powyższych kroków. Jest to spowodowane tym, że funkcja widoków jest nałożona na podsystem personalizacji.
 
 ### <a name="what-happens-to-existing-personalizations-when-views-are-enabled"></a>Co się dzieje z istniejącymi personalizacjami, gdy są włączone widoki? 
 Po włączeniu widoków wszelkie istniejące personalizacje użytkownika i formularza są zapisywane w nowym widoku o nazwie **Mój widok**, który jest automatycznie ustawiany jako widok domyślny. Ma to na celu zapewnienie spójnego środowiska użytkownika przed włączeniem widoków i po nim, z wyjątkiem formantu selektora widoków wyświetlanego w formularzach.  
 
 ### <a name="what-pages-support-views"></a>Jakie strony obsługują widoki? 
-Widoki są dostępne dla większości, ale nie wszystkich stron. Dokładnie rzecz biorąc, widoki są obecnie dostępne na wszystkich stronach pełnoekranowych, z wyjątkiem pulpitów nawigacyjnych i obszarów roboczych. Strony niepełnoekranowe, zawierające okna dialogowe, okna dialogowe rozwijane, wyszukiwania, rozszerzone podglądy, również obecnie nie obsługują widoków. Obsługa widoków na dodatkowych stronach, jak obszary robocze i okna dialogowe, być może zostanie dodana w przyszłej aktualizacji.   
+Widoki są dostępne dla większości, ale nie wszystkich stron. Dokładnie rzecz biorąc, widoki są obecnie dostępne na wszystkich stronach pełnoekranowych, z wyjątkiem pulpitów nawigacyjnych i obszarów roboczych. Strony niepełnoekranowe, zawierające okna dialogowe, okna dialogowe rozwijane, wyszukiwania, rozszerzone podglądy, obecnie nie obsługują widoków. Obsługa widoków na dodatkowych stronach, jak obszary robocze i okna dialogowe, być może zostanie dodana w przyszłej aktualizacji.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Kto ma prawo do publikowania widoków?
 Tylko administratorzy systemu i użytkownicy przypisani do roli **Administratora zapisanych widoków** mają prawa do publikowania widoków. 
@@ -184,12 +185,14 @@ Tylko administratorzy systemu i użytkownicy przypisani do roli **Administratora
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Dlaczego nie można zapisać filtrów w widoku? 
 Istnieje kilka przyczyn uniemożliwiających zapisanie filtru w widoku: 
 
-- Strona może nie obsługiwać zapisywania filtrów w ramach definicji widoku. Tylko strony z dużymi selektorami widoku umożliwiają zapisywanie personalizacji i modyfikacji kwerend w postaci widoku. Więcej informacji znajduje się w sekcji „Przełączanie widoków”. 
-
-- Jeśli widok jest widokiem domyślnym, a ścieżka nawigacji do strony zawiera kwerendę, kwerenda widoku początkowo może nie zostać zastosowana. Oto dwa podstawowe scenariusze takiej sytuacji: 
-     - Jeśli przejdziesz do strony z kafelka, kwerenda kafelka zostanie wykonana niezależnie od kwerendy skojarzonej z domyślnym widokiem. 
-     - Jeśli przejdziesz do strony i ten punkt wejścia zawiera kwerendę, pierwotna kwerenda będzie początkowo wykonywana zamiast kwerendy domyślnego widoku. 
-     
-  O wystąpieniu takiej sytuacji powinien ostrzegać komunikat informacyjny wyświetlany podczas ładowania widoku. Można to również potwierdzić, przełączając się do tego widoku po załadowaniu strony, ponieważ wtedy kwerenda widoku powinna zostać bezwzględnie wykonana.  
+- Strona może nie obsługiwać zapisywania filtrów w ramach definicji widoku. Tylko strony z dużymi selektorami widoku umożliwiają zapisywanie personalizacji i modyfikacji kwerend w postaci widoku. Więcej informacji znajduje się w sekcji **Przełączanie widoków**. 
 
 - Ta strona może nie obsługiwać poprawnie widoków, ponieważ może całkowicie zignorować kwerendę widoku lub może działać na tymczasowej tabeli, której dane nie są trwałe. 
+
+### <a name="what-data-will-i-see-when-i-visit-a-page"></a>Jakie dane są widoczne podczas odwiedzania strony? 
+W przypadku stron z niewielkimi selektorami widoku (w widoku można zapisywać tylko personalizacje), podczas odwiedzania strony będą widoczne te same dane. 
+
+W przypadku stron z dużymi selektorami widoku (personalizacje i kwerendy mogą być zapisywane w widoku) zostaną wyświetlone głównie dane połączone z kwerendą skojarzoną z widokiem domyślnym. Są od tego dwa wyjątki: — Jeśli przejdziesz do strony z kafelka, kwerenda kafelka zostanie wykonana niezależnie od kwerendy skojarzonej z domyślnym widokiem. Jeśli utworzono ten kafelek po włączeniu widoków, zaznaczenie kafelka spowoduje otwarcie strony z widokiem skojarzonym z tym kafelkiem.   
+     - Jeśli przejdziesz do strony i ten punkt wejścia zawiera kwerendę, pierwotna kwerenda będzie początkowo wykonywana zamiast kwerendy domyślnego widoku. W takim przypadku podczas ładowania widoku zostanie wyświetlony komunikat informacyjny. Można to również potwierdzić, przełączając się do tego widoku po załadowaniu strony, ponieważ wtedy kwerenda widoku powinna zostać bezwzględnie wykonana.  
+
+

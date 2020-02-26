@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Ta funkcja jest dostępna jako publiczna wersja zapoznawcza w dowolnym środowisku piaskownicy lub wersji próbnej. Nie jest ona dostępna w środowiskach produkcyjnych. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji na temat funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](../hr-admin-manage-features.md).

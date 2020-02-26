@@ -1,5 +1,5 @@
 ---
-title: Przypisanie szablonu faktury niezależnej do odbiorcy
+title: Przypisywanie szablonu faktury niezależnej do odbiorcy
 description: To zadanie przedstawia sposób przypisywania szablonu faktury niezależnej do odbiorcy.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9535a4678ea0c68227a54cf3c5d1b06b116a288
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9c64a00a839522ea14fc5fcdaca08ab17748f894
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179451"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000031"
 ---
-# <a name="assign-free-text-invoice-template-to-a-customer"></a>Przypisanie szablonu faktury niezależnej do odbiorcy
+# <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Przypisywanie szablonu faktury niezależnej do odbiorcy
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

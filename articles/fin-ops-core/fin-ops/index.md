@@ -1,6 +1,6 @@
 ---
 title: Dokumentacja aplikacji Finance and Operations
-description: Dokumentacja dla aplikacji Finance and Operations.
+description: Dokumentacja aplikacji Finance and Operations.
 author: robinarh
 manager: AnnBe
 ms.date: 07/25/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89139c149146b64125370c3840f8d3011b92e067
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4249f2ec09e6742c843122c189cc7db7f72d1146
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770926"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005547"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Dokumentacja aplikacji Finance and Operations
 
@@ -30,7 +30,7 @@ ms.locfileid: "2770926"
 
 Dowiedz się, jak wykorzystać aplikacje Finance and Operations w firmie. W tym temacie znajdziesz ciekawe materiały dla użytkowników, deweloperów i specjalistów IT. 
 
-Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Retail oraz Talent. 
+Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Commerce i Dynamics 365 Human Resources. 
 
 <table>
 <colgroup>
@@ -44,7 +44,7 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Re
 <h3><a href="get-started/before-you-buy.md">Zanim kupisz</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Wybieranie opcji wdrożenia</a></p>
- <p><a href="get-started/purchase-on-premises.md">Zakup rozwiązania Finance and Operations (on-premises)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Zakup aplikacji Finance and Operations (lokalnie)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Cykl życia implementacji</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
@@ -84,9 +84,9 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Re
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Funkcje wymagane lokalnymi przepisami prawa</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Zasoby ludzkie</a></h3>
-<p><a href="../../talent/manage-benefit-program.md">Świadczenia</a></p>
-<p><a href="../../talent/performance-management-overview.md">Rozwój i szkolenia pracownika etatowego</a></p>
-<p><a href="../../talent/questionnaires.md">Kwestionariusz</a></p>
+<p><a href="../../human-resources/hr-benefits-manage-program.md">Świadczenia</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Rozwój i szkolenia pracownika etatowego</a></p>
+<p><a href="../../human-resources/hr-learning-questionnaires.md">Kwestionariusze</a></p>
 <p><a href="hr/manage-recruiting-process.md">Rekrutacja</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Lista płac (USA)</a></p>
 
@@ -129,16 +129,17 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Re
 </td>
 <td>
 <h3>Powiązane produkty</h3>
-<h4>Rozwiązanie <a href="../../retail/index.md">Dynamics 365 Retail</a></h4>
+<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
 <p><a href="../../retail/call-center-functionality.md">Biuro obsługi</p>
 <p><a href="../../retail/define-maintain-retail-channels.md">Konfigurowanie kanałów i zarządzanie nimi</p>
 <p><a href="../../retail/retail-peripherals-overview.md">Oprogramowanie MPOS i Cloud POS</p>
-<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Rozwiązanie Retail — programowanie i administracja</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Rozwiązanie Commerce — programowanie i administracja</p>
 
-<h4><a href="../../talent/index.yml">Dynamics 365 Talent</a></h4>
-<p><a href="../../talent/manage-benefit-program.md">Świadczenia</a></p>
-<p><a href="../../talent/performance-management-overview.md">Rozwój i szkolenia pracownika etatowego</a></p>
-<p><a href="../../talent/questionnaires.md">Kwestionariusz</a></p>
+<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<p><a href="../../human-resources/hr-admin-overview.md">Podręcznik administratora</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Podręcznik dewelopera</a></p>
+<p><a href="../../human-resources/hr-hrpro-overview.md">Przewodnik użytkownika</a></p>
+
 
 </td>
 </tr>

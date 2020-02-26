@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 76fd305ce0f0f073648339d1de969981693f1da5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0e2b98bde04b221730413bcd7ddd028074b19d47
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186815"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030952"
 ---
 # <a name="financial-dimensions-and-posting"></a>Wymiary finansowe i księgowanie 
 
@@ -126,4 +126,4 @@ Niektóre z poniższych zasobów odnoszą się do starszej wersji naszego oprogr
 
 [Ustawienia domyślne wymiarów w zasadach podziałów księgowań](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
-[Ustawienia domyślne wymiarów w strukturze wymiarów](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2014/09/)
+[Ustawienia domyślne wymiarów w strukturze wymiarów](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)

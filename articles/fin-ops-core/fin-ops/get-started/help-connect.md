@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4427388d75c1aef40a978ce35c831d5b714f2562
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812587"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006179"
 ---
 # <a name="connect-the-help-system"></a>Łączenie z systemem Pomocy
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano składniki systemu pomocy dla Finance and Operations, takie jak Dynamics 365 Finance, Supply Chain Management, Retail i Talent. Omówiono sposoby podłączania tych składników oraz podstawowe zasady tworzenia pomocy niestandardowej.
+W tym temacie opisano składniki systemu pomocy dla aplikacji Finance and Operations, takie jak Dynamics 365 Finance, Supply Chain Management, Commerce, oraz Human Resources. Omówiono sposoby podłączania tych składników oraz podstawowe zasady tworzenia pomocy niestandardowej.
 
 ## <a name="help-architecture"></a>Architektura modułu Pomoc
 
@@ -43,7 +43,7 @@ Poniższa ilustracja pokazuje części Pomocy systemu. Wewnętrzny system Pomocy
 ## <a name="connecting-the-help-system"></a>Łączenie z systemem Pomocy
 
 > [!NOTE]
-> Karta **Przewodniki po zadaniach** jest obecnie niedostępna w programach Microsoft Dynamics 365 Talent lub Retail. Obecnie pracujemy nad włączeniem tej funkcjonalności w przyszłym wydaniu. Przewodniki po zadaniach w sekcji Rozpoczęcie pracy w module Talent pozostają dostępne i oferują podstawowe funkcje. Pomoc dotycząca procedur jest również dostępna w witrynie docs.microsoft.com w odniesieniu do Retail i Talent.
+> Karta **Przewodniki po zadaniach** jest obecnie niedostępna w programach Dynamics 365 Human Resources lub Commerce. Obecnie pracujemy nad włączeniem tej funkcjonalności w przyszłym wydaniu. Przewodniki po zadaniach w sekcji Rozpoczęcie pracy w module Human Resources pozostają dostępne i oferują podstawowe funkcje. Pomoc dotycząca procedur jest również dostępna w witrynie docs.microsoft.com w odniesieniu do Human Resources oraz Commerce.
 
 Za pomocą strony **Parametry systemowe** administratorzy łączą elementy systemu Pomocy i je implementują.
 
@@ -60,11 +60,11 @@ Na stronie **Parametry systemu** wykonaj następujące kroki:
 2. Wybierz biblioteki BPM (w ramach wybranego projektu), z których będą pobierane nagrania zadań.
 3. Ustaw kolejność wyświetlania bibliotek BPM. Określa kolejność wyświetlania nagrań z bibliotek w okienku **pomocy**.
 
-Po wykonaniu tych kroków można utworzyć okienko **Pomoc** i kliknąć kartę **Przewodniki zadań**. Zobaczysz przewodniki zadań mające zastosowanie do strony aktualnie wyświetlonej w aplikacjach Finance and Operations. Jeśli nie zostaną znalezione żadne przewodniki po zadaniach, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie.
+Po wykonaniu tych kroków można utworzyć okienko **Pomoc** i kliknąć kartę **Przewodniki zadań**. Zobaczysz przewodniki zadań mające zastosowanie do strony aktualnie wyświetlonej w programie Finance and Operations. Jeśli nie zostaną znalezione żadne przewodniki po zadaniach, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie.
 
 ### <a name="showing-translated-task-guides"></a>Wyświetlanie przetłumaczonych przewodników po zadaniach
 
-Przetłumaczone przewodniki po zadaniach po raz pierwszy umieszczono w ujednoliconej bibliotece APQC w wydaniu z maja 2016 r. oraz w bibliotece ułatwiającej rozpoczęcie pracy. Aby wyświetlić przetłumaczone przewodniki po zadaniach w pomocy w aplikacjach Finance and Operations, upewnij się, że masz połączenie z biblioteką z maja. Język wyświetlania przetłumaczonego przewodnika po zadaniu jest kontrolowany przez każdego użytkownika w ustawieniach języka w oknie **Opcje** &gt; **Preferencje**.
+Przetłumaczone przewodniki po zadaniach po raz pierwszy umieszczono w ujednoliconej bibliotece APQC w wydaniu z maja 2016 r. oraz w bibliotece ułatwiającej rozpoczęcie pracy. Aby wyświetlić przetłumaczone przewodniki po zadaniach w pomocy w aplikacji Finance and Operations, upewnij się, że masz połączenie z biblioteką z maja. Język wyświetlania przetłumaczonego przewodnika po zadaniu jest kontrolowany przez każdego użytkownika w ustawieniach języka w oknie **Opcje** &gt; **Preferencje**.
 
 > [!NOTE]
 > Mimo że przetłumaczono wiele przewodników po zadaniach, obecnie klient nie pokazuje nazw przetłumaczonych przewodników. Ponadto w majowej bibliotece są dostępne tłumaczenia tylko przewodników po zadaniach opublikowanych w lutym 2016 r. Opublikujemy zaktualizowaną bibliotekę z dodatkowymi tłumaczeniami.
@@ -78,7 +78,7 @@ Można przewodników po zadaniach do tworzenia pomocy niestandardowej lub połą
 
 ### <a name="create-custom-help-with-task-guides"></a>Tworzenie Pomocy niestandardowej przy użyciu przewodników po zadaniach
 
-W Finance, Supply Chain Management i aplikacji Retail można utworzyć pomoc niestandardową poprzez utworzenie nagrań zadań odpowiadających konkretnemu wdrożeniu i zapisanie ich w bibliotece procesów biznesowych LCS. Nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Talent.
+W Finance, Supply Chain Management i aplikacji Commercezadanie można utworzyć pomoc niestandardową poprzez utworzenie nagrań zadań odpowiadających konkretnemu wdrożeniu i zapisanie ich w bibliotece procesów biznesowych LCS. Nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Human Resources.
 
 W przypadku partnerów: jeśli zostanie podniesiony poziom biblioteki do firmowej i zostanie ona uwzględniona w rozwiązaniu, będzie dostępna dla klientów. Można również utworzyć kopię ujednoliconej globalnej biblioteki APQC, a następnie otworzyć tę kopię, otwierać z niej nagrania zadań, modyfikować je i zapisywać nagrania z wprowadzonymi zmianami. Więcej informacji można znaleźć w see [Zasoby Rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md).
 
@@ -86,7 +86,7 @@ W przypadku partnerów: jeśli zostanie podniesiony poziom biblioteki do firmowe
 
 Firma Microsoft oferuje wytyczne i przykładowy kod opisujące tworzenie oraz łączenie witryny Pomocy niestandardowej do okienka Pomocy. Aby uzyskać więcej informacji, zobacz:
 
-- [Tworzenie pomocy niestandardowej dla aplikacji Finance and Operations (oficjalny dokument)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Utwórz Pomoc niestandardową dla aplikacji Finance and Operations (oficjalny dokument)](https://go.microsoft.com/fwlink/?linkid=2041185)
 - [Repozytorium GitHub Pomocy niestandardowej](https://github.com/microsoft/dynamics356f-o-custom-help)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

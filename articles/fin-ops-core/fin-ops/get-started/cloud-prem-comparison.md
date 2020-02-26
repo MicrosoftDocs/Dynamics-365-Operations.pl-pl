@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 7837fbaaffdbd61a1adce1698800017bf4f6a018
-ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
+ms.openlocfilehash: aa60f3bc35f2bc10902da060ccacd7767bc9af8f
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935394"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005733"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Porównanie funkcji w chmurze i lokalnych
 
@@ -32,8 +32,8 @@ W tym temacie przedstawiono porównanie funkcji dostępnych w chmurze i w środo
 
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
-- [Dynamics 365 Retail](cloud-prem-comparison.md#dynamics-365-retail)
-- [Dynamics 365 Talent](cloud-prem-comparison.md#dynamics-365-talent)
+- [Dynamics 365 Commerce](cloud-prem-comparison.md#dynamics-365-commerce)
+- [Dynamics 365 Human Resources](cloud-prem-comparison.md#dynamics-365-human-resources)
 
 Uwzględniliśmy również informacje dotyczące [funkcji programowania i administrowania](cloud-prem-comparison.md#development-and-administration-features).
 
@@ -45,8 +45,7 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 |---------------------|-----------------------------|-----------|-----------------|
 | Zgodność i certyfikacje        |                                                                                           | Tak       | Tak             |
 |                                      | Certyfikacja SOC 1 Typ 1                                                                | Tak       | Nie              |
-| Integracja danych i zarządzanie nimi      |                                                                                           | Tak       | Tak             |
-|                                      | Rozszerzenie oparte na konfiguracji                                                            | Tak       | Nr              |
+| Integracja danych i zarządzanie nimi      |                                                                                           | Tak       | Tak             
 |                                      | Eksport danych do własnego magazynu danych                                                    | Tak       | Tak             |
 |                                      | Włączenie eksportu aktualizacji przyrostowych do jednostki danych                                 | Tak       | Tak              |
 |                                      | Integracje danych                                                                         | Tak       | Tak             |
@@ -146,15 +145,15 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 | Pomoc techniczna                              |                                                                                           | Tak       | Tak             |
 |                                      | Dostęp do pomocy technicznej w menu Pomoc i obsługa techniczna                                             | Tak       | Nie              |
 
-## <a name="dynamics-365-retail"></a>Rozwiązanie Dynamics 365 Retail 
+## <a name="dynamics-365-commerce"></a>Dynamics 365 Commerce 
 
-Aby wyświetlić listę funkcji handlu detalicznego dostępnych we wdrożeniach lokalnych, zobacz [Funkcje handlu detalicznego dostępne we wdrożeniach lokalnych](../../../retail/retail-onprem.md).
+Aby wyświetlić listę funkcji dostępnych we wdrożeniach lokalnych, zobacz [Funkcje handlu detalicznego dostępne we wdrożeniach lokalnych](../../../retail/retail-onprem.md).
 
-## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
+## <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources 
 
 | **Obszar**         | **Funkcja**         | **W chmurze** | **Lokalne** |
 |------------------|---------------------|-----------|-----------------|
-| Wszystkie obszary rozwiązania Talent | Wszystkie funkcje rozwiązania Talent | Tak       | Nie              |
+| Wszystkie obszary Zasobów ludzkich | Wszystkie funkcje Zasobów ludzkich | Tak       | Nie              |
 
 ## <a name="development-and-administration-features"></a>Funkcje programowania i administrowania
 

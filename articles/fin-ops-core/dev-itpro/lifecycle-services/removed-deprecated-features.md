@@ -1,9 +1,9 @@
 ---
 title: Usunięte lub przestarzałe funkcje usługi Lifecycle Services (LCS)
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z usługi Microsoft Dynamics Lifecycle Services (LCS).
-author: sericks007
+author: AngelMarshall
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -12,15 +12,15 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: sericks
+ms.author: tsmarsha
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c792d06e9b0aa42919de924bdcc9118358779b72
-ms.sourcegitcommit: 75bbcff474cfb8d2f282be2b9d2d7984d1505fa3
+ms.openlocfilehash: 96ecd040ef8661765c0a3861d8e07fee3c241161
+ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885462"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027987"
 ---
 # <a name="removed-or-deprecated-features-in-lifecycle-services-lcs"></a>Usunięte lub przestarzałe funkcje usługi Lifecycle Services (LCS)
 
@@ -53,7 +53,7 @@ Ta lista jest udostępniana, aby umożliwić Ci uwzględnianie usuniętych i prz
 </tr>
 <tr>
 <td><strong>Stan</strong></td>
-<td>Przestarzałe: składnik diagramów schematów blokowych w narzędziu BPM powinien zostać usunięty na początku lutego 2020 r. Następujące funkcje zostaną usunięte:
+<td>Przestarzałe: składnik diagramów schematów blokowych w narzędziu BPM powinien zostać usunięty w 2020 r. Następujące funkcje zostaną usunięte:
 <ul>
 <li>Istniejące schematy blokowe będą niedostępne do oglądania ani edytowania. Właściwości kształtu, które są skojarzone z działaniami schematu blokowego, również nie będą dostępne, ponieważ cała karta <strong>Schemat blokowy</strong> zostanie usunięta. Te schematy blokowe obejmują zarówno domyślne schematy blokowe, które są generowane automatycznie, jak i dostosowane schematy blokowe, które są modyfikowane na podstawie domyślnych schematów blokowych.</li>
 <li>Funkcja analizy dopasowania/lub w starszej wersji będzie niedostępna. Dlatego żadna lista luk nie zostanie automatycznie utworzona lub udostępniona do eksportu.

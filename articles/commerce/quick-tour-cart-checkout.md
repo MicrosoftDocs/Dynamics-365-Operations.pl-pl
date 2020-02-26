@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 347db3af36521e11dc70d5188dcc54b07efa1fbe
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 07905b9a843eb42d3031dcc80b4e185c122a9e50
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697849"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002942"
 ---
 # <a name="overview-of-cart-and-checkout-pages"></a>Omówienie stron koszyka i realizacji zamówienia
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ten temat stanowi omówienie stron koszyka i realizacji transakcji w Microsoft Dynamics 365 Commerce.
@@ -65,11 +65,11 @@ Główną treścią strony realizacja jest to, gdzie są zbierane wszystkie info
 
 ### <a name="shipping-address"></a>Adres wysyłkowy
 
-Adres wysyłkowy jest wymagany, jeśli towary muszą zostać wysłane. Dla każdego ustawienia regionalnego można skonfigurować format adresów wysyłkowych Dynamics 365 Retail. Jeśli na przykład towary zostaną wysłane do Stanów Zjednoczonych, adres wysyłkowy musi zawierać adres ulicy, stan i kod pocztowy. Niektóre podstawowe czynności sprawdzające dotyczą pól adresu wysyłkowego, takich jak sprawdzanie poprawności znaków alfanumerycznych, długość maksymalna oraz liczby. Chociaż ważność samego adresu nie jest weryfikowana, weryfikację można wykonać za pomocą dostosowanych usług innych firm.
+Adres wysyłkowy jest wymagany, jeśli towary muszą zostać wysłane. Dla każdego ustawienia regionalnego można skonfigurować format adresów wysyłkowych Dynamics 365 Commerce. Jeśli na przykład towary zostaną wysłane do Stanów Zjednoczonych, adres wysyłkowy musi zawierać adres ulicy, stan i kod pocztowy. Niektóre podstawowe czynności sprawdzające dotyczą pól adresu wysyłkowego, takich jak sprawdzanie poprawności znaków alfanumerycznych, długość maksymalna oraz liczby. Chociaż ważność samego adresu nie jest weryfikowana, weryfikację można wykonać za pomocą dostosowanych usług innych firm.
 
 Adres wysyłkowy jest stosowany do wszystkich towarów w koszyku, dla których wybrano opcję „wyślij”. W przypadku użycia przepływu realizacji dostępnego w trybie online zestawu początkującego poszczególne towary w koszyku nie mogą być wysyłane pod różne adresy. Jeśli ta możliwość jest wymagana, można ją zaimplementować poprzez dostosowanie modułów realizacji transakcji.
 
-Po podanym adresie wysyłkowym zostaną wyświetlone metody wysyłki dostępne w sklepie internetowym Dynamics 365 Commerce. Metody wysyłki i adresy, które obsługuje, mogą być konfigurowane w module Retail.
+Po podanym adresie wysyłkowym zostaną wyświetlone metody wysyłki dostępne w sklepie internetowym Dynamics 365 Commerce. Metody wysyłki i adresy, które obsługuje, mogą być konfigurowane w module Commerce.
 
 ### <a name="payment"></a>Płatność
 

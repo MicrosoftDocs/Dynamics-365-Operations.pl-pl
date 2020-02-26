@@ -3,7 +3,7 @@ title: Strony i moduły zarządzania kontem
 description: Ten temat obejmuje strony i moduły zarządzania kontami w Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/02/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
-ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
+ms.openlocfilehash: 8787a7b01ecf15752569d2a3a8d7804fe492e63d
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2885816"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025723"
 ---
 # <a name="account-management-pages-and-modules"></a>Strony i moduły zarządzania kontem
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Ten temat obejmuje strony i moduły zarządzania kontami w Microsoft Dynamics 365 Commerce.
@@ -40,13 +40,12 @@ Zarządzanie kontami odnosi się do grupy stron służącej do zarządzania info
 
 Na stronie docelowej zarządzania kontami są używane następujące moduły:
 
-- **Rozmieszczenie zawartości** — ten moduł to moduł kontenera przechowujący wszystkie moduły na stronie docelowej zarządzania kontami.
-- **Element powitalny konta** — ten moduł służy do dostarczania wiadomości powitalnej na stronie zarządzania kontami. Zawiera on właściwości nagłówka i rozmiaru kafelka. Właściwość **Rozmiar kafelka** definiuje szerokość modułu w module umieszczania zawartości. Wartości mieszczą się w zakresie od **1** do **12**, gdzie **12** oznacza pełną szerokość kontenera umieszczania zawartości.
-- **Element rozmieszczenia zamówienia konta** — ten moduł służy do podsumowania liczby zamówień ustawionych przez konto użytkownika. Zawiera on właściwości nagłówka, rozmiaru kafelka i łącze „wyświetl szczegóły”. Łącze „wyświetl szczegóły” powinno być skonfigurowane do przekierowywania do strony historia zamówień.
-- **Element rozmieszczenia profilu konta** — ten moduł służy do podawania podsumowania profilu użytkownika. Zawiera on właściwości nagłówka, rozmiaru kafelka i łącze „wyświetl szczegóły”. Łącze „wyświetl szczegóły” powinno być skonfigurowane do przekierowywania do strony profil użytkownika.
-- **Pozycja listy życzeń konta** — ten moduł służy do podania podsumowania towarów z listy życzeń odbiorcy. Na przykład może to być stan, „na liście życzeń znajduje się 10 pozycji”. Zawiera on właściwości nagłówka, rozmiaru kafelka i łącze „wyświetl szczegóły”. Łącze „wyświetl szczegóły” powinno być skonfigurowane do przekierowywania do strony lista życzeń.
-- **Element adresu konta** — ten moduł służy do podawania podsumowania adresu użytkownika. Na przykład może to być stan, „Dwa adresy dodane do konta”. Zawiera on właściwości nagłówka, rozmiaru kafelka i łącze „wyświetl szczegóły”. Łącze „wyświetl szczegóły” powinno być skonfigurowane do przekierowywania do strony adres użytkownika.
-- **Pozycja lojalnościowa** — ten moduł służy do wyświetlania informacji o programie lojalnościowym i łączenia ich z tymi informacjami. Zawiera on właściwości nagłówka, rozmiaru kafelka i łącze „wyświetl szczegóły” i łącze „zostań członkiem”. Łącze „wyświetl szczegóły” powinno być skonfigurowane do przekierowywania do strony program lojalnościowy użytkownika. Łącze „stanie się członkiem” powinno być skonfigurowane tak, aby przekierowywać na stronę, na której użytkownicy mogą dołączać się do programu lojalnościowego.
+- **Kontener** — wszystkie moduły strony ładunkowej modułu Zarządzanie kontami powinny być umieszczone w kontenerze. 
+- **Kafelek powitalny konta** — ten moduł służy do dostarczania wiadomości powitalnej na stronie zarządzania kontami. Zawiera on właściwości nagłówka.
+- **Ogólny kafelek konta** — ten moduł może służyć do udostępniania nagłówków i łączy do stron zarządzania kontami, np. stron historia zamówień lub „Mój profil”. Moduł kafelków ogólnych może być używany do konfigurowania kafelków na dowolnej stronie. W firmie Fabrikam ten moduł jest używany w łączach stron „Historia zamówień” i „Mój profil” na stronie spocznik zarządzania kontami.
+- **Kafelek listy życzeń konta** — ten moduł służy do podania podsumowania towarów z listy życzeń odbiorcy. Na przykład może to być stan, „na liście życzeń znajduje się 10 pozycji”. Zawiera on właściwości nagłówka i łącze „Wyświetl szczegóły”. Łącze „Wyświetl szczegóły” powinno być skonfigurowane do przekierowywania do strony lista życzeń. 
+- **Kafelek adresu konta** — ten moduł służy do podawania podsumowania adresu użytkownika. Na przykład może to być stan, „Dwa adresy dodane do konta”. Zawiera on właściwości nagłówka i łącze „Wyświetl szczegóły”. Łącze „Wyświetl szczegóły” powinno być skonfigurowane do przekierowywania do strony adres użytkownika.
+- **Kafelek lojalnościowy konta** — ten moduł służy do wyświetlania informacji o programie lojalnościowym i łączenia ich z tymi informacjami. Ten kafelek ma dwa stany: jeden stan przedstawia łącza, aby przyłączyć się do karty lojalnościowej, jeśli użytkownik nie jest już członkiem progamu. W innym stanie są wyświetlane łącza umożliwiające wyświetlenie strony szczegóły dotyczące lojalności, gdy użytkownik jest już członkiem. Właściwości obejmują nagłówek, łącze „Zarejestruj się” i łącze „Wyświetl lojalność”. Łącze „Wyświetl szczegóły” powinno być skonfigurowane do przekierowywania do strony program lojalnościowy użytkownika. Łącze „Zarejestruj się” powinno być skonfigurowane tak, aby przekierowywać na stronę, na której użytkownicy mogą dołączać się do programu lojalnościowego. 
 
 ### <a name="order-history-page"></a>Strona historii zamówień
 
@@ -58,7 +57,7 @@ Strona szczegóły zamówienia zawiera szczegółowe informacje dotyczące poszc
 
 ### <a name="user-profile-page"></a>Strona profil użytkownika
 
-Na stronie profilu użytkownika są wyświetlane szczegóły dotyczące konta użytkownika, takie jak nazwa użytkownika i adres e-mail. Korzysta z niego moduł profilu użytkownika. Chociaż adresu e-mail nie da się usunąć, można go edytować. Strona profilu użytkownika zawiera także preferencje użytkownika, które umożliwiają użytkownikowi włączenie lub rezygnację z niektórych funkcji, takich jak personalizacja list rekomendacji. 
+Na stronie profilu użytkownika są wyświetlane szczegóły dotyczące konta użytkownika, takie jak nazwa użytkownika i adres e-mail. Używa on szczegółów profilu użytkownika i modułu edytuj profil użytkownika. Chociaż adresu e-mail nie da się usunąć, można go edytować. Strona profilu użytkownika zawiera także preferencje użytkownika, które umożliwiają użytkownikowi włączenie lub rezygnację z niektórych funkcji, takich jak personalizacja list rekomendacji. 
 
 ### <a name="user-address-page"></a>Strona adres e-mail użytkownika
 
@@ -70,7 +69,9 @@ Na stronie listy życzeń są wyświetlane towary dodane do listy życzeń odbio
 
 ### <a name="loyalty-page"></a>Strona lojalnościowa
 
-Na stronie lojalnościowej odbiorcy można przyłączyć się do programu lojalnościowego lub, jeśli są już członkami programów lojalnościowych, wyświetlać szczegóły dotyczące programu. Mogą również wyświetlać punkty zdobyte i zrealizowane w ostatnich transakcjach.
+Na stronie lojalnościowej odbiorcy można zobaczyć szczegóły programu lojalnościowego lub, jeśli są już członkami programów lojalnościowych. Mogą również wyświetlać punkty zdobyte i zrealizowane w ostatnich transakcjach. Na stronie jest używany moduł szczegóły lojalnościowe w celu pokazania szczegółów dotyczących lojalności. 
+
+Aby dołączyć do programu lojalnościowego, strona marketingowa może zostać utworzona za pomocą konta lojalnościowego i modułów zasad lojalności. Jeśli użytkownik nie jest członkiem programu lojalnościowego, moduły te pozwolą użytkownikowi zarejestrować się.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

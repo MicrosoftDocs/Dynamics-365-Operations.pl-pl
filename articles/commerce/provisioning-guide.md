@@ -1,9 +1,9 @@
 ---
-title: Aprowizowanie środowiska wersji zapoznawczej aplikacji Commerce
+title: Inicjuj środowisko wersji zapoznawczej Dynamics 365 Commerce
 description: W tym temacie opisano sposób aprowizowania środowiska wersji zapoznawczej aplikacji Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 01/06/2020
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,28 +18,28 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b77d2cbbc100aeae5dcd53ddbe69ff2e4435da13
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: cbd4c118de2e91c8849461b20a01403049a07e66
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934755"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024643"
 ---
-# <a name="provision-a-commerce-preview-environment"></a>Aprowizowanie środowiska wersji zapoznawczej aplikacji Commerce
+# <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Inicjuj środowisko wersji zapoznawczej Dynamics 365 Commerce
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób aprowizowania środowiska wersji zapoznawczej aplikacji Microsoft Dynamics 365 Commerce.
+W tym temacie opisano sposób aprowizowania środowiska wersji zapoznawczej aplikacji Dynamics 365 Commerce.
 
-Przed rozpoczęciem zaleca się, aby co najmniej przejrzeć cały ten temat w celu uzyskania ogólnego pojęcia, co obejmuje proces i jakie informacje zawiera temat.
+Przed rozpoczęciem zalecane jest wykonanie szybkiego przeglądu tego tematu w celu uzyskania informacji na temat wymaganego procesu.
 
 > [!NOTE]
-> Jeśli nie przyznano Ci jeszcze dostępu do wersji zapoznawczej rozwiązania Dynamics 365 Commerce, możesz poprosić o dostęp do wersji zapoznawczej z [witryny internetowej Commerce](https://aka.ms/Dynamics365CommerceWebsite).
+> Jeśli nie przyznano Ci jeszcze dostępu do wersji zapoznawczej rozwiązania Dynamics 365 Commerce, możesz poprosić o dostęp do wersji zapoznawczej z witryny internetowej [Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite).
 
 ## <a name="overview"></a>Omówienie
 
-Aby pomyślnie aprowizować środowisko wersji zapoznawczej rozwiązania Commerce, musisz utworzyć projekt, który ma określoną nazwę i typ produktu. Środowisko i jednostka Retail Cloud Scale Unit (RCSU) mają także określone parametry, których należy użyć w celu późniejszego aprowizowania na platformie e-Commerce. Instrukcje w tym temacie opisują wszystkie wymagane kroki, które należy wykonać, i parametry, których należy użyć.
+Aby pomyślnie aprowizować środowisko wersji zapoznawczej rozwiązania Commerce, musisz utworzyć projekt, który ma określoną nazwę i typ produktu. Środowisko i jednostka skali handlu (CSU) mają także określone parametry, których należy użyć w celu późniejszego aprowizowania na platformie e-Commerce. Instrukcje w tym temacie opisują wszystkie wymagane kroki do zakończenia aprowizowania i parametry, których należy użyć.
 
 Po pomyślnym aprowizowaniu środowiska wersji zapoznawczej rozwiązania Commerce istnieje kilka kroków aprowizacji, które należy wykonać, aby przygotować to środowisko. Niektóre kroki są opcjonalne, w zależności od aspektów systemu, które mają być oceniane. Opcjonalne kroki można wykonać później.
 
@@ -52,69 +52,21 @@ Jeśli masz pytania dotyczące kroków aprowizowania lub występują problemy, p
 Zanim będzie można aprowizować środowisko wersji zapoznawczej usługi Commerce, muszą zostać spełnione następujące wymagania wstępne:
 
 - Masz dostęp do portalu Lifecycle Services (LCS) rozwiązania Microsoft Dynamics.
+- Użytkownik jest istniejącym partnerem Microsoft Dynamics 365 lub odbiorcą i może tworzyć projekt Dynamics 365 Commerce.
 - Użytkownik został zaakceptowany w programie wersji zapoznawczej usługi Dynamics 365 Commerce.
-- Użytkownik ma uprawnienia wymagane do tworzenia projektu dla opcji **Potencjalne przedsprzedaże** lub **Wykonaj migrację, twórz rozwiązania i poznaj rozwiązanie**.
+- Użytkownik ma uprawnienia wymagane do tworzenia projektu dla opcji **Wykonaj migrację, twórz rozwiązania i poznaj rozwiązanie**.
 - Użytkownik jest członkiem roli **Menedżer środowiska** lub **Właściciel projektu** w projekcie, w którym środowisko będzie aprowizowane.
 - Użytkownik na uprawnienia administratora do subskrypcji platformy Microsoft Azure lub skontaktuj się z administratorem subskrypcji, który może wykonać dwa kroki wymagające uprawnień administratora w Twoim imieniu.
 - Twój identyfikator dzierżawy Azure Active Directory (Azure AD) jest dostępny.
 - Utworzono grupę zabezpieczeń usługi Azure AD, która ma być używana jako Grupa administratorów systemu w e-Commerce i jest dostępny jej identyfikator.
 - Utworzono grupę zabezpieczeń usługi Azure AD, która ma być używana jako grupa moderatorów ocen i recenzji, i jest dostępny jej identyfikator. (Ta grupa zabezpieczeń może być taka sama jak grupa administratorów systemu e-Commerce).
 
-### <a name="find-your-azure-ad-tenant-id"></a>Wyszukiwanie identyfikatora dzierżawy usługi Azure AD
-
-Identyfikator dzierżawy usługi Azure AD to unikatowy identyfikator globalny (GUID) podobny do następującego przykładu: **72f988bf-86f1-41af-91ab-2d7cd011db47**.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-the-azure-portal"></a>Wyszukiwanie identyfikatora dzierżawy usługi Azure AD przy użyciu witryny Azure Portal
-
-1. Zaloguj się do witryny [Azure Portal](https://portal.azure.com/).
-1. Upewnij się, że wybrano poprawny katalog.
-1. W menu po lewej stronie wybierz pozycję **Azure Active Directory**.
-1. W obszarze **Zarządzanie** wybierz pozycję **Właściwości**. Identyfikator dzierżawy usługi Azure AD jest wyświetlany w obszarze **Identyfikator katalogu**.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-openid-connect-metadata"></a>Wyszukiwanie identyfikatora dzierżawy Azure AD przy użyciu metadanych protokołu OpenID Connect
-
-Utwórz adres URL protokołu OpenID, zastępując ciąg **\{TWOJA\_DOMENA\}** swoją domeną, na przykład `microsoft.com`. Na przykład adres `https://login.microsoftonline.com/{YOUR_DOMAIN}/.well-known/openid-configuration` stanie się adresem `https://login.microsoftonline.com/microsoft.com/.well-known/openid-configuration`.
-
-1. Przejdź do adresu URL protokołu OpenID zawierającego domenę.
-
-    Identyfikator dzierżawy usługi Azure AD można znaleźć w wielu wartościach właściwości.
-
-1. Znajdź **punkt końcowy\_autoryzacji** i wyodrębnij identyfikator GUID, który pojawi się po domenie `login.microsoftonline.com/`.
-
-### <a name="find-your-azure-ad-security-group-id"></a>Wyszukiwanie identyfikatora grupy zabezpieczeń Azure AD
-
-Identyfikator grupy zabezpieczeń usługi Azure AD to identyfikator GUID podobny do następującego przykładu: **436ea7f5-ee6c-40c1-9f08-825c5811066a**.
-
-W tej procedurze założono, że jesteś członkiem grupy, której identyfikator próbujesz znaleźć.
-
-1. Otwórz [Eksploratora programu Graph](https://developer.microsoft.com/graph/graph-explorer#).
-1. Wybierz pozycję **Zaloguj się za pomocą konta Microsoft** i zaloguj się przy użyciu swoich poświadczeń.
-1. Po lewej stronie wybierz pozycję **pokaż więcej przykładów**.
-1. W okienku po prawej stronie włącz pozycję **Grupy**.
-1. Zamknij prawe okienko.
-1. Wybierz opcję **wszystkie grupy, do których należę**.
-1. W polu **Podgląd odpowiedzi** znajdź grupę. Identyfikator grupy zabezpieczeń jest wyświetlany w obszarze właściwości **id**.
-
 ## <a name="provision-your-commerce-preview-environment"></a>Aprowizowanie środowiska wersji zapoznawczej usługi Commerce
 
 Te procedury wyjaśniają, jak aprowizować środowisko wersji zapoznawczej Commerce. Po ich pomyślnym ukończeniu środowisko wersji zapoznawczej usługi Commerce będzie gotowe do konfiguracji. Wszystkie działania opisane w tym miejscu są wykonywane w portalu usługi LCS.
 
 > [!IMPORTANT]
-> Dostęp do wersji zapoznawczej jest powiązany z kontem i organizacją usługi LCS określoną w aplikacji w wersji zapoznawczej. Do aprowizowania konta środowiska wersji zapoznawczej usługi Commerce. Jeśli musisz użyć innego konta lub dzierżawy usługi LCS dla środowiska wersji zapoznawczej usługi Commerce, prześlij te szczegóły do firmy Microsoft. Aby uzyskać informacje kontaktowe, zobacz sekcję [Obsługa środowiska wersji zapoznawczej usługi Commerce](#commerce-preview-environment-support) w dalszej części tego tematu.
-
-### <a name="grant-access-to-e-commerce-applications"></a>Udzielanie dostępu do aplikacji e-Commerce
-
-> [!IMPORTANT]
-> Osoba, która się loguje, musi być administratorem dzierżawy usługi Azure AD, który ma identyfikator dzierżawy usługi Azure AD. Jeśli ten krok nie zostanie pomyślnie zakończony, pozostałe kroki aprowizowania zakończą się niepowodzeniem.
-
-Aby autoryzować aplikacje e-Commerce w celu uzyskania dostępu do subskrypcji platformy Azure, wykonaj następujące kroki.
-
-1. Utwórz adres URL w następującym formacie:
-
-    `https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd18-4422-a723-f8274075331a&response_type=code&redirect_uri=https://sb.manage.commerce.dynamics.com/_commerce/Consent&response_mode=query&prompt=admin_consent&state=12345`
-
-1. Skopiuj i wklej adres URL do przeglądarki lub edytora tekstów i zastąp identyfikator **\{AAD\_TENANT\_ID\}** identyfikatorem dzierżawy usługi Azure AD. Następnie otwórz adres URL.
-1. W oknie dialogowym logowania do usługi Azure AD zaloguj się i potwierdź, że chcesz udzielić praw dostępu do usługi **Dynamics 365 Commerce (wersja zapoznawcza)** swojej subskrypcji. Nastąpi przekierowanie do strony, która wskazuje, czy operacja zakończyła się pomyślnie.
+> Dostęp do wersji zapoznawczej jest powiązany z kontem i organizacją usługi LCS określoną w aplikacji Commerce w wersji zapoznawczej. Do aprowizowania konta środowiska wersji zapoznawczej usługi Commerce. Jeśli potrzebujesz użyć innego konta lub dzierżawy usługi LCS dla środowiska wersji zapoznawczej usługi Commerce, prześlij te szczegóły do firmy Microsoft. Aby uzyskać informacje kontaktowe, zobacz sekcję [Obsługa środowiska wersji zapoznawczej usługi Commerce](#commerce-preview-environment-support) w dalszej części tego tematu.
 
 ### <a name="confirm-that-preview-features-are-available-and-turned-on-in-lcs"></a>Potwierdź, że funkcje w wersji zapoznawczej są dostępne i włączone w usługach LCS
 
@@ -210,12 +162,12 @@ Na poniższej ilustracji przedstawiono akcje, które należy podjąć na stronie
 Aby wdrożyć środowisko, wykonaj następujące kroki.
 
 > [!NOTE]
-> Być może nie trzeba będzie wykonywać kroków 6, 7 i/lub 8, ponieważ strony z jedną opcją są pomijane. W widoku **Parametry środowiska** potwierdź, że tekst **Dynamics 365 Commerce (wersja zapoznawcza) — demo (10.0.6 z aktualizacją platformy 30)** pojawia się bezpośrednio na polem **Nazwa środowiska**. Zobacz ilustrację wyświetlaną po kroku 8.
+> Być może nie trzeba będzie wykonywać kroków 6, 7 i/lub 8, ponieważ strony z jedną opcją są pomijane. W widoku **Parametry środowiska** potwierdź, że tekst **Dynamics 365 Commerce — demo (10.0.* x* z aktualizacją platformy *xx*)** pojawia się bezpośrednio nad polem **Nazwa środowiska**. Aby uzyskać szczegółowe informacje, zobacz ilustrację wyświetlaną po kroku 8.
 
 1. W menu górnym wybierz opcję **Środowiska hostowane w chmurze**.
 1. Wybierz pozycję **Dodaj**, aby dodać środowisko.
-1. W polu **Wersja aplikacji** wybierz pozycję **10.0.6**.
-1. W polu **Wersja platformy** wybierz pozycję **Aktualizacja platformy 30**.
+1. W polu **wersja aplikacji** wybierz najbardziej aktualną wersję. Jeśli masz określoną potrzebę wybrania wersji aplikacji innej niż wersja najbardziej aktualna, nie wybieraj wersji przed **10.0.8**.
+1. W polu **wersja platformy** użyj wersji platformy, która jest automatycznie wybierana dla wybranej wersji aplikacji. 
 
     ![Wybieranie wersji aplikacji i platformy](./media/project1.png)
 
@@ -224,7 +176,7 @@ Aby wdrożyć środowisko, wykonaj następujące kroki.
 
     ![Wybieranie topologii środowiska 1](./media/project2.png)
 
-1. Wybierz pozycję **Dynamics 365 Commerce (wersja zapoznawcza) — pokaz** jako topologię środowiska. Jeśli wcześniej skonfigurowano jeden łącznik platformy Azure, zostanie on użyty dla tego środowiska. Jeśli skonfigurowano wiele łączników platformy Azure, można wybrać łącznik do użycia: **Wschodnie stany USA**, **Wschodnie stany USA 2**, **Zachodnie stany USA** lub **Zachodnie stany USA 2**. (Aby uzyskać najlepszą kompleksową wydajność, zalecamy wybranie pozycji **Zachodnie stany USA 2**).
+1. Wybierz **Dynamics 365 Commerce — Demo** jako topologię środowiska. Jeśli wcześniej skonfigurowano jeden łącznik platformy Azure, zostanie on użyty dla tego środowiska. Jeśli skonfigurowano wiele łączników platformy Azure, można wybrać łącznik do użycia: **Wschodnie stany USA**, **Wschodnie stany USA 2**, **Zachodnie stany USA** lub **Zachodnie stany USA 2**. (Aby uzyskać najlepszą kompleksową wydajność, zalecamy wybranie pozycji **Zachodnie stany USA 2**).
 
     ![Wybieranie topologii środowiska 2](./media/project3.png)
 
@@ -241,39 +193,38 @@ Aby wdrożyć środowisko, wykonaj następujące kroki.
 
 1. Przed kontynuowaniem upewnij się, że stan środowiska to **Wdrożone**.
 
-### <a name="initialize-rcsu"></a>Zainicjuj RCSU
+### <a name="initialize-the-commerce-scale-unit-csu"></a>Inicjowanie jednostki skali handlu (CSU)
 
-Aby zainicjować jednostkę RCSU, należy wykonać następujące kroki.
+Aby zainicjować jednostkę CSU, należy wykonać następujące kroki.
 
 1. W widoku **Środowiska hostowane w chmurze** wybierz środowisko na liście.
 1. W widoku środowiska po prawej stronie wybierz pozycję **Pełne szczegóły**. Zostanie wyświetlony widok szczegółów środowiska.
 1. W obszarze **Funkcje środowiska** wybierz pozycję **Zarządzaj**.
-1. Na karcie **Handel detaliczny** wybierz pozycję **Inicjuj**. Pojawi się widok parametrów inicjacji jednostki RCSU.
+1. Na karcie **Handel** wybierz pozycję **Inicjuj**. Pojawi się widok parametrów inicjacji jednostki CSU.
 1. W polu **Region** wybierz pozycję **Wschodnie stany USA**, **Wschodnie stany USA 2**, **Zachodnie stany USA** lub **Zachodnie stany USA 2**.
-1. W polu **Wersja** wybierz pozycję **Określ wersję** na liście, a następnie wpisz ciąg **9.16.19262.5** w wyświetlonym polu. Pamiętaj, aby w tym miejscu dokładnie określić wskazaną wersję. W przeciwnym razie trzeba będzie później zaktualizować jednostkę RCSU do poprawnej wersji.
+1. W polu **Wersja** wybierz pozycję **Określ wersję** na liście, a następnie wpisz ciąg **9.18.20014.4** w wyświetlonym polu. Pamiętaj, aby w tym miejscu dokładnie określić wskazaną wersję. W przeciwnym razie trzeba będzie później zaktualizować jednostkę RCSU do poprawnej wersji.
 1. Włącz opcję **Zastosuj rozszerzenie**.
 1. Na liście rozszerzeń wybierz pozycję **Podstawowe rozszerzenie pokazu wersji zapoznawczej usługi Commerce**.
 1. Wybierz pozycję **Inicjuj**.
-1. Sprawdź, czy szczegóły są poprawne, na stronie potwierdzenia wdrożenia, a następnie wybierz pozycję **Tak**. Nastąpi powrót do widoku **Retail Management** z wybraną kartą **Retail**. RCSU zostało dodane do kolejki w celu zainicjowania obsługi administracyjnej.
-1. Przed kontynuowaniem upewnij się, że stan jednostki RCSU to **Powodzenie**. Inicjowanie trwa około dwóch do pięciu godzin.
+1. Sprawdź, czy szczegóły są poprawne, na stronie potwierdzenia wdrożenia, a następnie wybierz pozycję **Tak**. Widok **Zarządzanie handlem** jest wyświetlany ponownie, jeśli jest wybrana karta **Handel**. CSU zostało dodane do kolejki w celu zainicjowania obsługi administracyjnej.
+1. Przed kontynuowaniem upewnij się, że stan jednostki CSU to **Powodzenie**. Inicjowanie trwa około dwóch do pięciu godzin.
 
 ### <a name="initialize-e-commerce"></a>Inicjalizowanie e-Commerce
 
 Aby zainicjować usługę e-Commerce, należy wykonać następujące kroki.
 
-1. Na karcie **e-Commerce (wersja zapoznawcza)** przejrzyj zgodę na korzystanie z wersji zapoznawczej, a następnie wybierz pozycję **Instalator**.
+1. Na karcie **e-Commerce** przejrzyj zgodę na korzystanie z wersji zapoznawczej, a następnie wybierz pozycję **Instalator**.
 1. W polu **Nazwa dzierżawy usługi e-Commerce** wprowadź nazwę. Należy jednak mieć świadomość, że nazwa ta będzie widoczne w niektórych adresach URL wskazujących na to wystąpienie usługi e-Commerce.
-1. W polu **Nazwa jednostki Retail Cloud Scale Unit** wybierz z listy jednostkę RCSU. (Lista powinna mieć tylko jedną opcję).
+1. W polu **Nazwa jednostki skali handlu** wybierz z listy jednostkę CSU. (Lista powinna mieć tylko jedną opcję).
 
     Pole **Region geograficzny usługi e-Commerce** jest ustawiane automatycznie, a jego wartości nie można zmienić.
 
 1. Wybierz przycisk **Dalej**, aby kontynuować.
 1. W polu **Obsługiwane nazwy hostów** wprowadź dowolną prawidłową domenę, na przykład `www.fabrikam.com`.
-1.  W polu **Grupa zabezpieczeń usługi AAD dla administratora systemu** wprowadź kilka pierwszych liter nazwy grupy zabezpieczeń, której chcesz użyć. Wybierz ikonę lupy, aby wyświetlić wyniki wyszukiwania. Wybierz grupę zabezpieczeń z listy.
-2.  W polu **Grupa zabezpieczeń usługi AAD dla moderatora ocen i recenzji** wprowadź kilka pierwszych liter nazwy grupy zabezpieczeń, której chcesz użyć. Wybierz ikonę lupy, aby wyświetlić wyniki wyszukiwania. Wybierz grupę zabezpieczeń z listy.
+1.  W polu **Grupa zabezpieczeń usługi AAD dla administratora systemu** wprowadź kilka pierwszych liter nazwy grupy zabezpieczeń, której chcesz użyć. Wybierz ikonę lupy, aby wyświetlić wyniki wyszukiwania. Wybierz prawidłową grupę zabezpieczeń z listy.
+2.  W polu **Grupa zabezpieczeń usługi AAD dla moderatora ocen i recenzji** wprowadź kilka pierwszych liter nazwy grupy zabezpieczeń, której chcesz użyć. Wybierz ikonę lupy, aby wyświetlić wyniki wyszukiwania. Wybierz prawidłową grupę zabezpieczeń z listy.
 1. Pozostaw pozycję **Włącz obsługę ocen i recenzji**.
-1. Jeśli krok wyrażania zgody w usłudze Microsoft Azure Active Directory (Azure AD) został już ukończony zgodnie z opisem w sekcji „Udzielanie dostępu do aplikacji e-Commerce”, zaznacz pole wyboru, aby potwierdzić swoją zgodę. Jeśli jeszcze nie ukończono tego kroku, należy to zrobić przed rozpoczęciem inicjowania. Wybierz link w tekście obok pola wyboru, aby otworzyć okno dialogowe zgody i ukończyć ten krok.
-1. Wybierz pozycję **Inicjuj**. Nastąpi powrót do widoku **Retail Management** z wybraną kartą **e-Commerce (wersja zapoznawcza)**. Inicjowanie usługi e-Commerce zostało rozpoczęte.
+1. Wybierz pozycję **Inicjuj**. Widok **Zarządzanie handlem** jest wyświetlany ponownie, jeśli jest wybrana karta **e-Commerce**. Inicjowanie usługi e-Commerce zostało rozpoczęte.
 1. Przed kontynuowaniem poczekaj, aż stan inicjowania usługi e-Commerce zmieni się na **Inicjowanie powiodło się**.
 1. W prawym dolnym rogu sekcji **Linki** zanotuj adresy URL następujących linków:
 
@@ -292,13 +243,13 @@ Aby kontynuować proces aprowizowania i konfigurowania środowiska wersji zapozn
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie środowiska wersji zapoznawczej usługi Commerce](cpe-overview.md)
+[Dynamics 365 Commerce omówienie środowiska wersji zapoznawczej](cpe-overview.md)
 
-[Konfigurowanie środowiska wersji zapoznawczej usługi Commerce](cpe-post-provisioning.md)
+[Konfiguruj środowisko wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Konfigurowanie funkcji opcjonalnych środowiska wersji zapoznawczej usługi Commerce](cpe-optional-features.md)
+[Konfiguruj funkcje opcjonalne środowiska wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-optional-features.md)
 
-[Często zadawane pytania dotyczące środowiska wersji zapoznawczej usługi Commerce](cpe-faq.md)
+[Środowisko wersji zapoznawczej Dynamics 365 Commerce— często zadawane pytania](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -308,4 +259,3 @@ Aby kontynuować proces aprowizowania i konfigurowania środowiska wersji zapozn
 
 [Witryna Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Zasoby pomocy dla rozwiązania Dynamics 365 Retail](../retail/index.md)

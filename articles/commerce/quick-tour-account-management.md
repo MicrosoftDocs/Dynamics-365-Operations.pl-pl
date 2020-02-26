@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: bfd6c9cdbc382ff8e10e7aff11aac552a5aeaf36
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 722da2755734a85e915dd90e7868a5e1c7753f5a
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771664"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002965"
 ---
 # <a name="overview-of-account-management-pages"></a>Omówienie stron zarządzania kontem
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie omówiono strony zarządzania kontami w firmie Microsoft Dynamics 365 Commerce.

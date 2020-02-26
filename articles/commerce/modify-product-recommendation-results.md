@@ -19,16 +19,16 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 669b056c38614c8ac9be2d7b244a0ab0c73bc9f8
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 5da77f71fb2569adc011bb9ee9c8c795d85545f8
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770077"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3025009"
 ---
 # <a name="manage-ai-ml-based-product-recommendation-results"></a>Zarządzanie wynikami rekomendacji produktów na podstawie plików AI-ML
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie wyjaśniono sposób dostosowywania wyników propozycji produktów na podstawie sztucznej inteligencji dotyczącej wywiadu (AI-ML) w firmie. 
@@ -39,44 +39,53 @@ Po włączeniu zaleceń dotyczących produktu ustawienia domyślne zaczną obowi
 
 Przed zmianą parametrów Dowiedz się, jak będą one wpływać na wyniki poniżej.
 
-### <a name="trending-product-list"></a>Lista produktów w trendach
+### <a name="trending-product-list"></a>Lista „popularnych” produktów
 
-Lista produktów **Trendy** ma dwa parametry, które można zmienić: ![Przykład domyślnych parametrów listy trendów](./media/exampletrendingparameters.png)
+Lista „popularnych” produktów zawiera dwa parametry, który można zmienić:
+
+![Przykładowy domyślny parametr listy „popularnych” produktów](./media/exampletrendingparameters.png)
+
 1. **Uwzględnij nowe produkty z ostatnich X dni** — produkty dodane w ciągu określonej liczby dni przed bieżącą datą można użyć do wybrania kandydatów produktów. Wartość domyślna na obrazie sugeruje, że produkty starsze niż 180 dni mogą być używane na liście produktów trendu.
 1. **Obejmuje sprzedaż z ostatnich X dni** - Transakcje sprzedaży, które miały miejsce w ciągu określonej liczby dni przed bieżącą datą, można wykorzystać do zamówienia produktów. Wartość domyślna powyżej sugeruje, że wszystkie zakupy produktu w ciągu ostatnich 30 dni zostałyby użyte w celu ustalenia położenia produktu na liście produktów trendu. 
 
-### <a name="best-selling-product-list"></a>Lista bestsellerów
+### <a name="best-selling-product-list"></a>Lista „bestsellerów”
 
-W zależności od prowadzonej działalności bestsellery mogą mieć różne wyniki niż trendy, nawet jeśli używają one danych transakcji do zamawiania produktów. Ponieważ lista bestsellerów nie ma odcięcia na podstawie daty asortymentu, bestsellery nadal mogą być wyróżnione jako bardzo popularne, starsze produkty, które mogły zostać usunięte z listy trendów. 
+W zależności od prowadzonej działalności „bestsellery” mogą mieć różne wyniki niż trendy, nawet jeśli używają one danych transakcji do zamawiania produktów. Ponieważ lista bestsellerów nie ma odcięcia na podstawie daty asortymentu, bestsellery nadal mogą być wyróżnione jako bardzo popularne, starsze produkty, które mogły zostać usunięte z listy trendów. 
 
-Lista **bestsellery** zawiera jeden parametr, który można zmienić:
+Lista „bestsellery” zawiera jeden parametr, który można zmienić:
 
 ![Przykładowy domyślny parametr listy bestsellerów](./media/examplebestsellingparameters.PNG)
+
 1. **Obejmuje sprzedaż z ostatnich X dni** - Transakcje sprzedaży, które miały miejsce w ciągu określonej liczby dni przed bieżącą datą, można wykorzystać do zamówienia produktów. Wartość domyślna powyżej sugeruje, że wszystkie zakupy produktu w ciągu ostatnich 30 dni zostałyby użyte w celu ustalenia położenia produktu na liście produktów bestsellerów. 
 
 ## <a name="manually-add-or-remove-products-from-recommendation-lists"></a>Ręczne dodawanie lub usuwanie produktów z list rekomendacji
 
-### <a name="for-new-trending-or-best-selling"></a>W przypadku nowości, trendów lub bestsellerów
+### <a name="for-new-trending-or-best-selling-lists"></a>W przypadku list „nowości”, „trendów” lub „bestsellerów”
 
-1.  Przejdź do **Retail** > **Rekomendacje produktów** > **Właściwości rekomendacji**.
+1.  Przejdź do **Handel detaliczny i komercyjny** > **Rekomendacje produktów** > **Właściwości rekomendacji**.
 1.  Na liście udostępnionych parametrów sieci sprzedaży wybierz **listy rekomendacji**.
 1.  Wybierz listę dodaj lub usuń produkty.
 1.  Aby dodać produkty do tabeli, wybierz **Dodaj wiersz**. 
-1.  W kolumnie produkt wyszukaj produkt według jego **nazwy** lub **numeru produktu.**
-![Przykład wyszukiwania produktu na nowej liście produktów](./media/examplenewlistconfiguration1.png)
+1.  W kolumnie produkt Wyszukaj produkt według jego **nazwy** lub **numeru produktu**.
+
+    ![Przykład wyszukiwania produktu na liście nowych produktów](./media/examplenewlistconfiguration1.png)
+
 1.  W kolumnie Typ wiersza wybierz jedną z dwóch opcji:
     -   **Uwzględnij** — wymusza wymuszenie produktu z przodu listy
-    -   **Wyklucz** — usuwa produkt z listy w ![przykładzie zawierającym lub wykluczającym produkt z nowej listy produktów](./media/examplenewlistconfiguration2.png)
+    -   **Wyklucz** — usuwa produkt z listy
+    
+    ![Przykład uwzględniania lub wykluczania produktu z listy nowych produktów](./media/examplenewlistconfiguration2.png)
+
 1.  Zmiana **kolejności wyświetlania** zmieni kolejność, gdy produkty oznaczone jako **uwzględnione** zostaną wyświetlone na liście.
     - Jeśli dwa produkty mają taką samą wartość **kolejności wyświetlania**, ostateczna kolejność tych dwóch wyników może się różnić od biura zaplecza.
 1.  Aby usunąć produkty z tabeli: zaznacz wiersz do usunięcia i wybierz opcję **Usuń**.
 
 
-### <a name="for-people-also-like-or-frequently-bought-together-lists"></a>Dla osób podobnych lub często kupowanych list
+### <a name="for-people-also-like-or-frequently-bought-together-lists"></a>Dla list „Inni często lubią” lub „często kupowane razem”
 
-W kontekście list **Często kupowane razemr** lub **Klientom podoba się również**, uczenie maszynowe służy do analizy wzorców zakupów konsumenckich w celu rekomendowania powiązanych produktów, które są wspólnie kupowane dla unikalnego produktu początkowego. 
+W kontekście list „Często kupowane razem” lub „Klientom podoba się również”, uczenie maszynowe służy do analizy wzorców zakupów konsumenckich w celu rekomendowania powiązanych produktów, które są wspólnie kupowane dla unikalnego produktu początkowego. 
  
-**Produkt początkowy** to produkt, dla którego mają być generowane wyniki. W kontekście ręcznego dostosowywania list rekomendacji są dodawane lub usuwane wyniki dla tego produktu. 
+*Produkt początkowy* to produkt, dla którego mają być generowane wyniki. W kontekście ręcznego dostosowywania list rekomendacji są dodawane lub usuwane wyniki dla tego produktu. 
 
 Aby ręcznie dodać lub usunąć wyniki dla produktu początkowego, należy wykonać następujące czynności:
 1.  Wybierz **Produkt początkowy**. 
@@ -95,4 +104,8 @@ Aby ręcznie dodać lub usunąć wyniki dla produktu początkowego, należy wyko
 
 [Włączanie rekomendacji produktów](enable-product-recommendations.md)
 
+[Włącz spersonalizowane rekomendacje](personalized-recommendations.md)
+
 [Dodawanie list rekomendacji produktów do stron](add-reco-list-to-page.md)
+
+[Omówienie modułu kolekcji produktów](product-collection-module-overview.md)

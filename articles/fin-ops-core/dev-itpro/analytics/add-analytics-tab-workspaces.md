@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 1a357c4623f4f9dc441fe328ec0d5481c14ae4af
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771640"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025861"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Ta funkcja jest obsługiwana w Finance and Operations (w wersji 7.2 i nowszych).
+> Ta funkcja jest obsługiwana w Finance and Operations (wersja 7.2 i nowsze).
 
 ## <a name="introduction"></a>Wprowadzenie
 W tym temacie przedstawiono sposób osadzenia raportu programu Microsoft Power BI na karcie **Analizy** w obszarze roboczym. W przedstawionym tutaj przykładzie rozszerzymy obszar roboczy **Zarządzanie rezerwacjami** w aplikacji Zarządzanie flotą w celu osadzenia analitycznego obszaru roboczego na karcie **Analizy**.
@@ -111,7 +111,7 @@ Wykonaj następujące kroki, aby dodać logikę biznesową, która inicjuje form
 2. Naciśnij klawisz F7, aby uzyskać dostęp do kodu źródłowego kryjącego się za definicją kodu.
 3. Dodaj następujący kod źródłowy języka X++.
 
-    ```
+    ```xpp
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
@@ -156,7 +156,7 @@ Zadanie dodawania logiki biznesowej inicjującej formant podglądu osadzonego ra
 Ten rozdział zawiera informacje o klasie pomocy służącej do osadzania raportu programu Power BI (zasobu .pbix) w formancie grupy formularzy.
 
 #### <a name="syntax"></a>Składnia
-```
+```xpp
 public static void initializeReportControl(
     str                 _resourceName,
     FormGroupControl    _formGroupControl,

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-09-17
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 938d2eea7b9e85b19e9c1e3e0930f625224b880d
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 229ae14b9e2dedcd0ade094a772f16c0524d32a7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898626"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006085"
 ---
 # <a name="accrue-time-off-based-on-hours-worked"></a>Naliczanie czasu wolnego na podstawie liczby przepracowanych godzin
 
 ## <a name="overview"></a>Przegląd
 
-Organizacje rozliczające pracowników godzinowo mogą przyznawać czas wolny na podstawie liczby przepracowanych godzin, a nie stażu pracy w firmie. Informacje o liczbie przepracowanych godzin są zazwyczaj przechowywane w systemie rejestracji czasu pracy. W aplikacji Talent Core HR przepracowane zwykłe godziny pracy i nadgodziny można zaimportować i wykorzystywać jako podstawę do przyznawania pracownikom nagród.
+Organizacje rozliczające pracowników godzinowo mogą przyznawać czas wolny na podstawie liczby przepracowanych godzin, a nie stażu pracy w firmie. Informacje o liczbie przepracowanych godzin są zazwyczaj przechowywane w systemie rejestracji czasu pracy. 
 
 ## <a name="leave-plans"></a>Plany urlopów
 

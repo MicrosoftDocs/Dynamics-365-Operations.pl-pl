@@ -3,7 +3,7 @@ title: Moduł realizacji transakcji
 description: W tym temacie opisano sposób dodawania modułu realizacji transakcji do strony i ustawiania wymaganych właściwości.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,31 +17,29 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4b810441fd25d41ee0893b119b4f7d91e7435d21
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 3805c0faabc8afc3decffb924b7f25332ff1ab16
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697090"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025398"
 ---
 # <a name="checkout-module"></a>Moduł realizacji transakcji
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób dodawania modułu realizacji transakcji do strony i ustawiania wymaganych właściwości.
 
 ## <a name="overview"></a>Omówienie
 
-Moduł realizacji transakcji to specjalny kontener, w którym są przechowywane wszystkie moduły wymagane do utworzenia zamówienia. Moduł realizacji transakcji może zawierać moduły obsługujące adres wysyłkowy, metody wysyłki, informacje bilingowe, podsumowanie zamówień oraz inne informacje związane z zamówieniem klienta. Przedstawia przepływ krok po kroku, którego odbiorca używa do wprowadzenia wszystkich odpowiednich informacji w celu dokonania zakupu.
+Moduł realizacji transakcji to specjalny kontener, w którym są przechowywane wszystkie moduły wymagane do utworzenia zamówienia. Przedstawia przepływ krok po kroku, którego odbiorca używa do wprowadzenia wszystkich odpowiednich informacji w celu dokonania zakupu. System przechwytuje adres wysyłkowy, metodę wysyłki i informacje bilingowe. Ponadto zawiera podsumowanie zamówień i inne informacje związane z zamówieniem odbiorcy.
 
 Moduł realizacji transakcji renderuje dane na podstawie identyfikatora koszyka. Ten identyfikator koszyka jest zapisany jako plik cookie przeglądarki. Identyfikator koszyka jest wymagany do renderowania informacji w module realizacji transakcji, takich jak towary w zamówieniu, łączna kwota i rabaty.
 
 ## <a name="checkout-module-properties"></a>Właściwości modułu realizacji transakcji
 
-Moduł realizacji transakcji obsługuje zbiór znajdujących się w nim modułów. Właściwość szerokości umożliwia określenie, czy pozycje w module realizacji zamówienia powinny być dostosowane do szerokości czy wypełniać ekran.
-
-Moduł realizacji transakcji ma wiele gniazd, takich jak gniazdo **Informacje dotyczące realizacji zamówienia**, gniazdo **Podsumowania zamówienia** i gniazdo **Złóż zamówienie**. Każde gniazdo obsługuje zbiór modułów, które będą wyświetlane w określonym układzie na stronie. Na przykład gniazdo z **Informacje dotyczące realizacji zamówienia** zawiera wszystkie moduły wymagane do wyzwolenia na proces realizacji transakcji, takie jak moduły adresu wysyłkowego i metody płatności. W gnieździe **Podsumowanie zamówienia** wyświetlane jest podsumowanie zamówienia i jest obsługiwane działanie związane z wprowadzaniem zamówienia. Gniazdo **Złóż zamówienie** umożliwia także obsługę akcji związanej z wprowadzaniem zamówienia. Moduły składania zamówień można definiować w dwóch gniazdach w celu zoptymalizowania procesu składania zamówień z różnych platform.
+W module realizacji transakcji jest wyświetlane podsumowanie zamówień oraz funkcje służące do składania zamówienia. Aby zebrać wszystkie informacje dotyczące odbiorcy wymagane do umieszczenia zamówienia, należy dodać do modułu realizacji transakcji dodatkowe moduły. Dzięki temu detaliści mają możliwość dodawania modułów niestandardowych do przepływu realizacji transakcji lub do wykluczania modułów na podstawie ich wymagań.
 
 ### <a name="modules-that-can-be-used-in-the-checkout-module"></a>Moduły, których można używać w module realizacji
 
@@ -50,15 +48,12 @@ Moduł realizacji transakcji ma wiele gniazd, takich jak gniazdo **Informacje do
 - **Kontener sekcji wyewidencjonowywania** — ten moduł jest kontenerem, w ramach którego można umieścić wiele modułów w celu utworzenia sekcji w ramach przepływu realizacji transakcji. Na przykład można umieścić w tym kontenerze wszystkie moduły powiązane z płatnością, aby były wyświetlane w jednej sekcji. Ten moduł ma wpływ tylko na układ przepływu.
 - **Karta upominkowa** — ten moduł umożliwia odbiorcy zapłatę za zamówienie za pomocą karty upominkowej. Obsługuje tylko karty upominkowe Microsoft Dynamics 365 Commerce. Do zamówienia można zastosować jedną lub więcej kart upominkowych. Jeśli saldo karty upominkowej nie pokrywa kwoty w koszyku, można połączyć kartę upominkową z inną metodą płatności. Karty upominkowe mogą zostać zrealizowane tylko wtedy, gdy odbiorca jest zalogowany do systemu.
 - **Punkty lojalnościowe** — ten moduł umożliwia zapłatę odbiorcy za zamówienie za pomocą punktów lojalnościowych. System udostępnia podsumowanie dostępnych punktów i wygasających punktów i pozwala klientowi wybrać liczbę punktów do zrealizowania. Jeśli odbiorca nie jest zalogowany lub nie jest członkiem karty lojalnościowej lub jeśli łączna kwota w koszyku wynosi 0 (zero), ten moduł jest automatycznie ukrywany.
-- **Karta kredytowa** — ten moduł umożliwia odbiorcy zapłatę za zamówienie za pomocą karty kredytowej. Jeśli całkowita kwota w koszyku jest objęta punktami lojalnościowymi lub kartą podarunkową lub jeśli wynosi 0 (zero), moduł ten jest automatycznie ukryty. Integracja z kartą kredytową jest zapewniona przez łącznik płatności Adyen. Aby uzyskać więcej informacji na temat korzystania z tego łącznika, zapoznajsię z tematem [Łącznik płatności Adyen](https://).
+- **Płatności** — ten moduł umożliwia odbiorcy zapłatę za zamówienie za pomocą karty kredytowej. Jeśli całkowita kwota w koszyku jest objęta punktami lojalnościowymi lub kartą podarunkową lub jeśli wynosi 0 (zero), moduł ten jest automatycznie ukryty. Integracja z kartą kredytową jest zapewniona przez łącznik płatności Adyen dla tego modułu. Aby uzyskać więcej informacji na temat korzystania z tego łącznika, zapoznajsię z tematem [Łącznik płatności Adyen Dynamics 365](dev-itpro/adyen-connector.md).
 - **Adres fakturowania** — ten moduł umożliwia klientowi udostępnianie informacji bilingowych. Te informacje są przetwarzane razem z informacjami o karcie kredytowej przez Adyen. Ten moduł zawiera opcję, która pozwala klientom na korzystanie z adresu rozliczeniowego w adresie wysyłkowym.
 - **Informacje kontaktowe** — ten moduł umożliwia odbiorcy dodanie lub zmianę informacji kontaktowych (adres e-mail) dla zamówienia.
-- **Złóż zamówienie** — ten moduł pozwala odbiorcy złożyć zamówienie.
-- **Blok zawartości sformatowanej** — ten moduł zawiera wszelkie wiadomości związane z systemem zarządzania zawartością (CMS). Na przykład może zawierać komunikat informujący „w przypadku problemów z zamówieniem, kontakt 1-800-FABRIKAM”. 
-- **Podsumowanie zamówienia** — ten moduł pokazuje podział kosztów zamówienia.
-- **Pozycje w wierszu zamówienia** – Ten moduł wyświetla podsumowanie pozycji, które zostaną uwzględnione w zamówieniu.
+- **Blok zaawansowanej zawartości** — ten moduł zawiera wszelkie wiadomości związane z systemem zarządzania zawartością (CMS). Na przykład może zawierać komunikat informujący „w przypadku problemów z zamówieniem, kontakt 1-800-Fabrikam”. 
 
-## <a name="retail-server-interaction"></a>Interakcja z serwerem Retail
+## <a name="commerce-scale-unit-interaction"></a>Interakcja Commerce Scale Unit
 
 Większość informacji dotyczących realizacji transakcji, takich jak adres wysyłkowy i metoda wysyłki, jest przechowywana w koszyku i przetwarzana w ramach zamówienia. Jedyny wyjątek to informacje o karcie kredytowej. Te informacje są przetwarzane bezpośrednio przy użyciu łącznika płatności Adyen. Płatność jest autoryzowana, ale nie jest naliczana.
 
@@ -69,13 +64,10 @@ Aby dodać moduł realizacji transakcji do nowej strony i ustawić wymagane wła
 1. Przejdź do **Fragment \> Nowy Fragment** i nazwij nowy fragment **Wyewidencjonowanie fragmentu**.
 1. Dodaj moduł realizacji transakcji do fragmentu.
 1. Dodaj nagłówek do modułu realizacji transakcji.
-1. W gnieździe **Informacje dotyczące realizacji zamówienia** dodaj adres wysyłkowy, opcje dostarczania, kontener sekcji wyewidencjonowywania i moduły informacji kontaktowych. W gnieździe **Informacje dotyczące realizacji zamówienia** powinny być teraz cztery sekcje.
-1. W module kontener sekcji realizacja transakcji dodaj kartę upominkową, punkty lojalnościowe i moduły kart kredytowych. W ten sposób użytkownik będzie mieć pewność, że wszystkie metody płatności zostaną wyświetlone w sekcji.
-1. W gnieździe **Podsumowanie zamówienia** dodaj podsumowanie zamówień, złóż zamówienie i moduły zaawansowanego bloku zawartości.
-1. W module blok zawartości zaawansowanej dodaj następujący tekst: **W przypadku pytań dotyczących zamówienia skontaktuj się z 1-800-FABRIKAM.**
-1. W gnieździe **Złóż zamówienie**, dodaj moduł złóż zamówienie.
-1. Wybierz opcję **Zapisz**. Niektóre moduły mogą nie być renderowane w podglądzie, ponieważ nie mają kontekstu koszyka.
-1. Zaewidencjonuj fragment i opublikuj go.
+1. Dodaj adres wysyłkowy, opcje dostarczania, kontener sekcji wyewidencjonowywania i moduły informacji kontaktowych. 
+1. W module kontener sekcji realizacja transakcji dodaj kartę upominkową, punkty lojalnościowe i moduły płatności. W ten sposób użytkownik będzie mieć pewność, że wszystkie metody płatności zostaną wyświetlone w sekcji.
+1. Zapisz i zobacz podgląd fragmentu. Niektóre moduły, które nie mają kontekstu koszyka, mogą nie być renderowane w podglądzie.
+1. Zakończ edytowanie fragmentu i opublikuj go.
 1. Utwórz szablon, w którym jest używany nowy fragment realizacji transakcji.
 1. Utwórz stronę kasy, która korzysta z nowego szablonu.
 

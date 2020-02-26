@@ -3,7 +3,7 @@ title: Personalizowanie środowiska użytkownika
 description: W tym temacie wyjaśniono, jak można spersonalizować aplikację.
 author: jasongre
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac8f154fdf892553f69d135727589bf13efd6076
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935472"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029369"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -59,7 +59,8 @@ Podczas używania aplikacji wiele wyborów użytkownika jest zapamiętywanych, a
 
 Personalizacje pośrednie to takie, które wykonuje się po prostu poprzez interakcję z określonymi funkcjami sterowania, które przechowują swój obecnie widoczny stan.
 
-- **Kolumny w siatce** — Można dopasować szerokość kolumny w siatce, zaznaczając pasek zmiany rozmiaru znajdujący się po lewej lub po prawej stronie nagłówka kolumny, a następnie przesuwając go w lewo lub prawo, aż kolumna osiągnie żądaną odległość. Aplikacja przechowuje szerokość ustawioną dla kolumny. Następnie zmienia rozmiar kolumny na tę szerokość po następnym otwarciu strony zawierającej tę siatkę.
+- **Szerokości kolumn w siatce** — Można dopasować szerokość kolumny w siatce, zaznaczając pasek zmiany rozmiaru znajdujący się po lewej lub po prawej stronie nagłówka kolumny, a następnie przesuwając go w lewo lub prawo, aż kolumna osiągnie żądaną odległość. Aplikacja przechowuje szerokość ustawioną dla kolumny. Następnie zmienia rozmiar kolumny na tę szerokość po następnym otwarciu strony zawierającej tę siatkę.
+- **Sumy kolumn w siatce** — (dostępne tylko z nowym formantem siatki włączonym) można określić, czy suma ma być wyświetlana u dołu dowolnej kolumny numerycznej w siatce, a także czy stopka siatki jest widoczna. Aplikacja przechowuje te dane w taki sposób, aby te preferencje były pamiętane przy następnym otwarciu strony. Aby uzyskać więcej informacji, zapoznaj się z tematem [Możliwości siatki](grid-capabilities.md). 
 - **Skrócone karty** — Niektóre strony mają rozwijane sekcje nazywane *skróconymi kartami*. Aplikacja przechowuje informacje o skróconych kartach, który zostały rozwinięte i zwinięte. Po następnym otwarciu strony te same skrócone karty będą rozwinięte lub zwinięte, zależnie od ostatniej interakcji ze stroną. W niektórych przypadkach można przyspieszyć działanie systemu poprzez zwinięcie skróconej karty, bo aplikacja nie musi pobierać informacji zawartych w tej skróconej karcie, dopóki nie zostanie ona rozwinięta. Jak wyjaśniono dalej w tym temacie, można również zmienić kolejność skróconych kart na stronie.
 - **Pola faktów** — na niektórych stronach znajduje się okienko **Informacje pokrewne**, w którym są wyświetlane informacje tylko do odczytu, które są związane z bieżącym tematem strony. Każda sekcja w okienku pola **Informacje pokrewne** jest znana jako *Pole informacji*. Można rozwinąć lub zwinąć całe okienko **Informacje pokrewne**, a także rozwinąć lub zwinąć poszczególne pola informacji. Aplikacja przechowuje te preferencje. Następnie po każdym otwarciu strony zostanie przywrócony stan rozwinięty lub zwinięty okienka **Informacje pokrewne** i poszczególnych pól informacji, zgodnie z ostatnią interakcją ze stroną. W niektórych przypadkach można przyspieszyć działanie systemu poprzez zwinięcie pola informacji, bo aplikacja nie musi pobierać informacji zawartych w tym polu informacji, dopóki nie zostanie ona rozwinięta.
 - **Okienek akcji** — *Okienko akcji* pojawia się u góry większości stron. Okienko akcji zawiera przyciski dla wielu czynności, które można wykonywać na bieżącej stronie. Przyciski te często są pogrupowane na kartach. Można „przypiąć” otwarte całe okienko akcji lub ustawić jego domyślne zwinięcie. Po następnym otwarciu strony okienko akcji będzie otwarte lub zwinięte, zależnie od ostatniej interakcji ze stroną. Jeśli przypięto okienko akcji otwarte, zostanie wyświetlona ostatnio użyta karta.
@@ -95,7 +96,7 @@ Okno właściwości może zawierać inne możliwości personalizacji w zależno�
 
 eJeśli chcesz wprowadzić wiele zmian na stronie lub wprowadzić zmiany, które nie są dostępne za pośrednictwem innego mechanizmu (np. zmiany kolejności elementów), można użyć pasek narzędzi **Personalizacja**. Aby otworzyć pasek narzędzi **Personalizacja**, wykonaj następujące kroki:
 
-- Wybierz opcję **Personalizuj ten formularz** w oknie właściwości elementu.
+- Wybierz opcję **Personalizuj tę stronę** w oknie właściwości elementu.
 - Wybierz **Personalizuj ten formularz** w grupie **Personalizacja** na karcie **Opcje** okienka akcji jakiejkolwiek strony.
 - Wybierz przycisk **ustawienia** (symbol koła zębatego) na pasku nawigacyjnym, a następnie wybierz opcję **Personalizuj**.
 
@@ -116,7 +117,8 @@ Następujące narzędzia są dostępne na pasku narzędzi **Personalizacja**:
 - Użyj narzędzia **Pomiń**, aby usunąć element z sekwencji tabulacji na stronie. Po wybraniu przycisku **Pomiń** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które zostały pominięte. Można interaktywnie usunąć lub dodać pola do sekwencji kart.
 - Użyj narzędzia **Pokaż w nagłówku**, aby wyświetlić pole w sekcji podsumowania skróconej karty. Po wybraniu przycisku **Pokaż w nagłówku** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie pola, które wybrano jako pola podsumowania. Można dodać w interaktywny sposób pola do podsumowania skróconej karty lub je wybrać, by je z niego usunąć.
 - Użyj narzędzia **Zablokuj**, aby oznaczyć element jako edytowalny lub nieedytowalny. Po wybraniu przycisku **Zablokuj** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które są nieedytowalne. Następnie można znowu umożliwić ich edycję. Należy zwrócić uwagę, że niektóre pola są wymagane i nie można ich oznaczyć jako nieedytowalne. Obok tych pól widać symbol kłódki.
-- Użyj przycisku **Dodaj aplikację PowerApp**, aby na stronie osadzić aplikację utworzoną przy użyciu usługi Microsoft PowerApps. Aby uzyskać szczegółowe informacje o osadzaniu aplikacji usługi PowerApps w stronie, zobacz [Osadzanie aplikacji PowerApps](embed-power-apps.md).
+- Użyj przycisku **Dodaj aplikację z Power Apps**, aby na stronie osadzić aplikację utworzoną przy użyciu usługi Microsoft Power Apps. Aby uzyskać szczegółowe informacje o osadzaniu aplikacji z usługi Power Apps w stronie, zobacz [Osadzanie aplikacji z Power Apps](embed-power-apps.md). Ta opcja jest dostępna tylko wtedy, gdy jest wyłączona funkcja [Zapisanych widoków](saved-views.md).  
+- Użyj przycisku **Dodaj aplikację**, by osadzić na stronie aplikację utworzoną za pomocą Microsoft Power Apps lub programu innej firmy. Ta opcja jest dostępna tylko wtedy, gdy jest włączona funkcja [Zapisanych widoków](saved-views.md). 
 - Użyj narzędzia **Wyczyść**, aby zresetować stronę do domyślnego stanu poinstalacyjnego. Zostaną usunięte wszystkie personalizacje na bieżącej stronie. Nie ma akcji Cofnij. Dlatego użyj tego narzędzia tylko wtedy, jeśli masz pewność, że chcesz zresetować stronę.
 - Użyj narzędzia **Import**, aby wczytać personalizację z pliku utworzonego wcześniej przez siebie lub inną osobę. Podczas importowania personalizacji strony można określić, czy mają być dodawane do strony, czy zastępować wszystkie istniejące dla niej personalizacje. Nie ma akcji Cofnij. Dlatego po zaimportowaniu personalizacji należy ręcznie usunąć lub cofnąć wszelkie niepotrzebne zmiany.
 - Użyj narzędzia **Eksport**, aby zapisać swoje personalizacje strony do pliku. Personalizacje można następnie udostępniać innym użytkownikom. Użytkownicy muszą zaimportować plik zawierający Twoje dane personalizacji strony.
@@ -152,7 +154,7 @@ Pulpit nawigacyjny jest często pierwszą stroną, którą widzisz po uruchomien
 Aby spersonalizować pulpit nawigacyjny, kliknij prawym przyciskiem myszy dowolny kafelek, a następnie wybierz **Personalizacja**, aby otworzyć okno właściwości kafelka.
 
 - Jeśli chcesz ukryć wybrany kafelek lub zmienić jego nazwę, można dokonać tej zmiany bezpośrednio w oknie właściwości.
-- Aby zapisać kafelki obszaru roboczego, wybierz opcję **Personalizuj ten formularz** w oknie właściwości, aby wyświetlić pasek narzędzi **Personalizacji**. Następnie można uporządkować dowolnie kafelki za pomocą narzędzia **Przenieś**.
+- Aby zapisać kafelki obszaru roboczego, wybierz opcję **Personalizuj tę stronę** w oknie właściwości, aby wyświetlić pasek narzędzi **Personalizacji**. Następnie można uporządkować dowolnie kafelki za pomocą narzędzia **Przenieś**.
 - Aby dodać nowy kafelek obszaru roboczego, w oknie właściwości zaznacz **Dodaj obszar roboczy**. W dolnej części pulpitu nawigacyjnego jest tworzony nowy kafelek obszaru roboczego. Ten kafelek obszaru roboczego można zmieniać dowolnie. Można również dodać listy, kafelki oraz linki do obszaru roboczego w sposób opisany w sekcji tego tematu pt. [Dodawanie list, kafelków lub linków do obszarów roboczych](#adding-a-tile-list-or-link-to-a-workspace).
 
 ## <a name="administration-of-personalizations"></a>Administrowanie personalizacjami

@@ -17,30 +17,30 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 111bcaba971b6223f670176135574633d2f1c5ec
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914635"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001422"
 ---
 # <a name="add-languages-to-your-site"></a>Dodawanie języków do witryny
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób dodawania obsługi dodatkowych języków do witryny Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Omówienie
 
-Serwis www można zlokalizować w dowolnym języku, który jest obsługiwany przez Dynamics 365 Commerce. (W dalszej części tego tematu zostanie wyświetlona lista obsługiwanych języków.) Aby dodać język do witryny sieci Web, należy go najpierw dodać do sklepu internetowego powiązanego z witryną.
+Serwis www można zlokalizować w dowolnym języku, który jest obsługiwany przez Commerce. (W dalszej części tego tematu zostanie wyświetlona lista obsługiwanych języków.) Aby dodać język do witryny sieci Web, należy go najpierw dodać do sklepu internetowego powiązanego z witryną.
 
 ## <a name="add-a-language-to-an-online-store"></a>Dodawanie języka do sklepu internetowego
 
 Aby dodać jęzzyk do sklepu internetowego, wykonaj następujące czynności.
 
-1. Umożliwia otwarcie środowiska Dynamics 365 Retail dla witryny.
-1. Przejdź do **Sprzedaż detaliczna \> Kanały \> Sklepy internetowe**, aby uzyskać dostęp do listy sklepów internetowych skonfigurowanych dla danego środowiska. Można również wprowadzić **sklepy internetowe** jako wyszukiwany termin.
+1. Umożliwia otwarcie środowiska Dynamics 365 Commerce dla witryny.
+1. Przejdź do **Retail i Commerce \> Kanały \> Sklepy internetowe**, aby uzyskać dostęp do listy sklepów internetowych skonfigurowanych dla danego środowiska. Można również wprowadzić **sklepy internetowe** jako wyszukiwany termin.
 1. Wybierz sklep internetowy, dla którego chcesz dodać język.
 1. Na skróconej karcie **Języki** wybierz pozycję **Dodaj**.
 1. W polu **Język** wybierz język, który ma zostać dodany.

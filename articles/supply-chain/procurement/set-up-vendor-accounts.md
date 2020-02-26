@@ -3,7 +3,7 @@ title: Konfigurowanie kont odbiorców
 description: W tym temacie opisano typy informacji, które należy wprowadzić podczas tworzenia nowego konta dostawcy.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 63843381207fbe6cb72ac1b5533eda754b1ba55b
+ms.sourcegitcommit: 5457cbec3399d8ed9f87c3a9dc586173b5616c11
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249406"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012452"
 ---
 # <a name="set-up-vendor-accounts"></a>Konfigurowanie kont odbiorców
 
@@ -88,7 +88,7 @@ Można wstrzymywać dostawcę dla różnych typów transakcji. Dostępne są nas
 -   **Faktura** — Nie można księgować żadnych faktur dla dostawcy.
 -   **Wszystko** — Dostawca jest wstrzymany dla wszystkich typów transakcji. Obejmuje to transakcje zapotrzebowań na zakup, faktur i płatności.
 -   **Płatność** — Nie można wygenerować żadnych płatności dla dostawcy.
--   **Zapotrzebowanie** — Można tworzyć tylko zapotrzebowania na zakup. Nie będą tworzone żadne inne transakcje.
+-   **Zapotrzebowanie** — zapotrzebowania na zakup nie można utworzyć dla dostawcy, a wiersze zapotrzebowania zostały już utworzone, zanim dostawca został określony jako wstrzymany, nie można przetworzyć na zamówienie zakupu. Wiersze zapotrzebowania dla dostawcy zostaną anulowane, jeśli w zasadach ustawiono Automatyczne tworzenie zamówień zakupu.
 -   **Nigdy** — Na dostawcę nigdy nie są nakładane wstrzymania działań.
 
 Gdy wstrzymujesz dostawcę, można także określić przyczynę wstrzymania oraz datę końcową stanu wstrzymania. Jeśli nie wprowadzisz daty końcowej, stan wstrzymania dostawcy trwa przez czas nieokreślony.

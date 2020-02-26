@@ -3,7 +3,7 @@ title: Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacj
 description: W tym temacie opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
 author: perlynne
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9a5292e88fe022482ab9c6c5a8f016745946988
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4645cf36201aa1b87c22ba4dbfb1b8d8117f425a
+ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026976"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3028035"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji
 
@@ -152,7 +152,7 @@ Zaznaczenie tej opcji umożliwia wykorzystanie strategii wsadowych dla towarów,
 ### <a name="strategy"></a>Strategia
 
 -   **Konsolidacja** — ta strategia jest używana do konsolidacji towarów w określonej lokalizacji, gdy podobne towary są już dostępne. Ta funkcja działa tylko w przypadku dyrektyw lokalizacji typu Odłożenie. Popularna konfiguracja odłożenia polega na konsolidowaniu w pierwszym wierszu działania, a następnie w drugim wierszu próbowaniu wykonania odłożenia bez konsolidacji. Konsolidowanie towarów usprawnia późniejsze pobieranie.
--   **Dopasuj ilość opakowań** — ta strategia służy do sprawdzania, czy lokalizacja pobrania ma określoną ilość w paczce. Ta funkcja działa tylko w przypadku dyrektyw lokalizacji typu Pobranie. 
+-   **Dopasuj ilość opakowań** — ta strategia spowoduje znalezienie lokalizacji zawierającej numer identyfikacyjny, dla którego wymagana jest dokładna ilość. Nie można jej używać z lokalizacjami, które nie podlegają kontroli numeru identyfikacyjnego. Ta strategia działa tylko w przypadku dyrektywy lokalizacji dla pracy typu Pobranie.
 -   **Rezerwacja partii FEFO** — ta strategia jest używana, gdy zapasy są znajdowane przy użyciu daty ważności partii i przydzielane na potrzeby rezerwacji partii. Tej strategii można używać tylko dla towarów obsługujących operacje wsadowe. Ta funkcja działa tylko w przypadku dyrektywy lokalizacji dla pracy typu Pobranie. 
 -   **Zaokrąglij w górę do pełnego nr id.** — ta strategia ta umożliwia zaokrąglanie ilości zapasów w górę w celu dopasowania ilości pod numerem identyfikacyjnym przypisanej do towarów, które mają zostać pobrane. Tę strategię można stosować tylko do typu uzupełniania zapasów w dyrektywie lokalizacji typu Pobranie. 
 -   **Pusta lokalizacja bez przychodzącej pracy** — ta strategia jest używana do znajdowania pustych lokalizacji. Lokalizacja jest uważana za pustą, jeśli nie ma w niej fizycznych zapasów i nie ma żadnych oczekiwanych prac przychodzących. Ta strategia jest używana tylko do dyrektywy lokalizacji typu Odłożenie. 

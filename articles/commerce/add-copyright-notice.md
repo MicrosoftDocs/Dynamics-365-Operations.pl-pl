@@ -3,7 +3,7 @@ title: Dodawanie powiadomienia o prawach autorskich
 description: W tym temacie opisano, jak dodać informację o prawach autorskich do swojej witryny e-Commerce.
 author: psimolin
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 58c2949057ef777f706d12cee2dd3341d1a3b7e6
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914585"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025489"
 ---
 # <a name="add-a-copyright-notice"></a>Dodawanie powiadomienia o prawach autorskich
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak dodać informację o prawach autorskich do swojej witryny e-Commerce.
@@ -48,8 +48,8 @@ Aby dodać powiadomienie o prawach autorskich na końcu każdej strony korzystaj
 1. W okienku nawigacji wybierz przycisk wielokropka (**...**) obok **Stopki**, a następnie wybierz pozycję **Dodaj moduł**.
 1. W oknie dialogowym wybierz **Kategoria stopki** i wybierz przycisk **OK**.
 1. W okienku nawigacji wybierz przycisk wielokropka (...) obok **Kategoria stopki**, a następnie wybierz pozycję **Dodaj moduł**.
-1. W oknie dialogowym wybierz **Element bloku zawartości sformatowanej** i wybierz przycisk **OK**.
-1. W okienku nawigacji wybierz opcję **Element bloku zawartości sformatowanej**.
+1. W oknie dialogowym wybierz **Blok zaawansowanej zawartości** i wybierz przycisk **OK**.
+1. W okienku nawigacji wybierz opcję **Blok aawansowanej zawarości**.
 1. W okienku właściwości po prawej stronie w polu **Akapit** dodaj wiadomość dotyczącą praw autorskich. Na przykład wprowadź **(C) Fabrikam 2019**.
 1. Wybierz opcję **Zapisz**, wybierz opcję **Zaewidencjonuj**, a następnie wybierz opcję **Publikuj**.
 1. Przejdź do **Szablony**, wybierz szablon, a następnie wybierz opcję **Wyewidencjonuj**.

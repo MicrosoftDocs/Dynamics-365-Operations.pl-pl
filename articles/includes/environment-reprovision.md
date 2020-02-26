@@ -1,7 +1,7 @@
-Podczas kopiowania bazy danych między środowiskami musisz uruchomić narzędzie do ponownego inicjowania obsługi środowiska, zanim skopiowana baza danych osiągnie pełną funkcjonalność, aby zagwarantować aktualność wszystkich składników rozwiązania Retail.
+Podczas kopiowania bazy danych między środowiskami musisz uruchomić narzędzie do ponownego inicjowania obsługi środowiska, zanim skopiowana baza danych osiągnie pełną funkcjonalność, aby zagwarantować aktualność wszystkich składników rozwiązania Commerce.
 
 > [!IMPORTANT]
-> Zalecamy wykonanie tej procedury niezależnie od tego, czy używasz składników rozwiązania Retail, czy nie, ponieważ funkcjonalność rozwiązania Retail wchodzi w skład wszystkich środowisk. 
+> Zalecamy wykonanie tej procedury niezależnie od tego, czy używasz składników rozwiązania Commerce, czy nie, ponieważ funkcjonalność rozwiązania Commerce wchodzi w skład wszystkich środowisk. 
 
 Przed kontynuowaniem upewnij się, że są spełnione następujące wymagania wstępne:
 1. Jeśli wykonujesz uaktualnienie do wydania z lipca 2017 (znanego też pod numerem 7.2) 7.2.11792.56024, zastosuj wymienione poniżej poprawki kodu aplikacji w języku X++ w środowisku docelowym, zanim rozpoczniesz uaktualnianie danych w tym środowisku. Zapobiegnie to wystąpieniu różnych błędów podczas uaktualniania danych:

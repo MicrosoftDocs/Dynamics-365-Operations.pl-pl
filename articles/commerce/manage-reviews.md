@@ -3,7 +3,7 @@ title: Zarządzanie ocenami i recenzjami
 description: W tym temacie opisano sposób zarządzania ocenami i recenzjami za pomocą narzędzia oceny i recenzji Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9becdce5ae36ac637043b9d0febfbbff2392aa9
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: a7fa2ae3124a0a68b3890987c5dce2730e5c2183
+ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698033"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027249"
 ---
 # <a name="manage-ratings-and-reviews"></a>Zarządzanie ocenami i recenzjami
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób zarządzania ocenami i recenzjami za pomocą narzędzia oceny i recenzji Microsoft Dynamics 365 Commerce.
@@ -39,6 +38,16 @@ Dynamics 365 Commerce uzywa Microsoft Azure Cognitive Service do automatyczniej 
 - Moderowanie recenzji, odpowiadając na nie lub usuwaniu.
 - Usuwanie opini klienta na jego życzenie.
 - Masowe Importowanie danych ocen i recenzji dotyczących wszystkich produktów w szablonie rozwiązania Microsoft Power BI, dzięki czemu można analizować trendy dotyczące ocen i recenzji.
+
+## <a name="access-ratings-and-reviews-moderation-features"></a>Dostęp do funkcji moderowania recenzji i ocen
+
+Aby uzyskać dostęp do klasyfikacji i przeglądu funkcji moderowania w narzędziu Zarządzanie serwisem e-Commerce, należy wykonać następujące kroki.
+
+1. Zaloguj się do [Microsoft LifeCycle Services (LCS)](https://lcs.dynamics.com).
+1. Otwórz projekt zawierający środowisko, w którym chcesz zainicjować e-Commerce.
+1. W sekcji **środowiska** wybierz środowisko.
+1. W obszarze **Funkcje środowiska** wybierz pozycję **Zarządzaj sprzedażą detaliczną**.
+1. Na karcie **e-commerce** w obszarze **łącza** wybierz pozycję **narzędzie do zarządzania witryną handlu elektronicznego**.
 
 ## <a name="read-a-review"></a>Przeczytaj recenzję 
 

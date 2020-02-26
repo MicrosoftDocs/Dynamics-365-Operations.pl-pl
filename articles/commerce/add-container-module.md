@@ -3,7 +3,7 @@ title: Moduł kontenera
 description: W tym temacie opisano moduły kontenerów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,27 +17,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 22a09b61fbe3bd1cca96011d3fb81a12ef1bc844
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697067"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025535"
 ---
 # <a name="container-module"></a>Moduł kontenera
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły kontenerów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Omówienie
 
-Moduł kontenerowy to moduł, który obsługuje inne moduły w nim zawarte. Jest to najbardziej podstawowy kontener używany w Dynamics 365 Commerce. Podstawowym celem modułu kontenera jest zdefiniowanie, za pomocą ustawionych dla niego właściwości, układu modułów, które są w środku. Na przykład moduły te mogą pojawiać się obok siebie w układzie dwukolumnowym, trzykolumnowym, czterokolumnowym lub sześciokolumnowym. Mogą być także ograniczone do szerokości kontenera lub mogą wypełniać ekran. Nagłówek można również dodać do każdego modułu kontenerów.
+Moduł kontenerowy to moduł, który obsługuje inne moduły w nim zawarte. Podstawowym celem modułu kontenera jest zdefiniowanie, za pomocą ustawionych dla niego właściwości, układu modułów, które zawiera. Na przykład moduły te mogą pojawiać się obok siebie w układzie dwukolumnowym, trzykolumnowym, czterokolumnowym lub sześciokolumnowym. Mogą być także ograniczone do szerokości kontenera lub mogą wypełniać ekran. Nagłówek można również dodać do każdego modułu kontenerów.
 
-Istnieją trzy standardowe typy modułów kontenerowych: kontener, kontener z dwoma gniazdami i kontener z trzema gniazdami. Moduły dowolnego typu mogą być umieszczane wewnątrz tych kontenerów. Istnieją również specjalne typy modułów kontenerów, takie jak karuzela, blok wzbogacania treści, umieszczanie treści, koszyk, kasa, pole zakupu, nagłówek i stopka. Te kontenery mają określone cele, a wewnątrz nich można umieszczać tylko określone obsługiwane typy modułów.
+Trzy standardowe typy modułów kontenerowych są obsługiwane: kontener, kontener z dwoma gniazdami i kontener z trzema gniazdami. Moduły dowolnego typu mogą być umieszczane wewnątrz tych kontenerów. 
 
-Zaleca się umieszczanie modułów wewnątrz kontenera, tak aby można je było ograniczyć do szerokości kontenera.
+> [!NOTE] 
+> Zawsze zaleca się umieszczanie modułów wewnątrz modułu kontenera, tak aby można je było ograniczyć do szerokości kontenera.
 
 ## <a name="examples-of-container-modules-in-e-commerce"></a>Przykłady modułów kontenerów w e-Commerce
 
@@ -98,20 +99,19 @@ Za pomocą dodatkowych właściwości można zoptymalizować układ dla różnyc
 
 Aby dodać moduł kontenera do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Utwórz szablon strony o nazwie nazwa **szablon kontenera**.
-1. W **Głównym** gnieździe na stronie domyślnej dodaj moduł kontenera.
-1. W module kontenera dodaj moduł funkcji.
-1. Zaewidencjonuj szablon i opublikuj go.
+1. Utwórz szablon strony o nazwie nazwa **szablon kontenera**. 
+1. W miejscu **Treść** dodaj moduł **Strona domyślna**.
+1. Zakończ edytowanie szablonu i opublikuj go.
 1. Za pomocą utworzonego właśnie szablonu kontenera utwórz stronę o nazwie **strona kontenera**.
 1. W **Głównym** gnieździe na nowej stronie dodaj moduł kontenera.
-1. W okienku właściwości modułu kontenerów, dla właściwości **Liczba kolumn** określ wartość **1**, a właściwość **szerokość** na **Dopasuj do kontenera**.
-1. W module kontenera dodaj moduł funkcji.
-1. W okienku właściwości modułu należy skonfigurować nagłówek.
+1. W okienku właściwości modułu kontenerów, dla właściwości **Liczba kolumn** określ wartość **1**, a właściwość **szerokość** na **Wypełnij kontener**.
+1. W module kontenera dodaj moduł bloku zawartości.
+1. W okienku właściwości modułu bloku zawartości skonfiguruj nagłówek, obraz i układ.
 1. Zapisz i zobacz podgląd strony. Powinien być widoczny jeden moduł funkcji, który mieści się w szerokości modułu kontenera.
 1. W okienku właściwości modułu kontenerów zmień wartość właściwości **Liczba kolumn** na **3**.
-1. Dodaj jeszcze dwa moduły funkcji do modułu kontenera.
-1. Zapisz i zobacz podgląd strony. Teraz powinny być widoczne trzy moduły funkcji widoczne obok siebie.
-1. Po uzyskaniu żądanego układu należy zaewidencjonować stronę i opublikować ją.
+1. Dodaj jeszcze dwa moduły bloku zawartości do modułu kontenera.
+1. Zapisz i zobacz podgląd strony. Teraz powinny być widoczne trzy moduły bloku zawartości widoczne obok siebie.
+1. Po uzyskaniu żądanego układu należy zakończyć edycję strony i opublikować ją.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -119,9 +119,7 @@ Aby dodać moduł kontenera do nowej strony i ustawić wymagane właściwości, 
 
 [Moduł karuzeli](add-carousel.md)
 
-[Moduł zaawansowanego bloku zawartości](add-content-rich-block.md)
-
-[Moduł umieszczania zawartości](add-content-placement-modules.md)
+[Moduł bloku zaawansowanej zawartości](add-content-rich-block.md)
 
 [Moduł pola zakupu](add-buy-box.md)
 

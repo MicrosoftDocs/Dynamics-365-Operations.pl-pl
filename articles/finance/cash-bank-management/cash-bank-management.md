@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d074b9450a4dfc72f60f97ccaf03610ce54315d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: c27811fc900cb497f62780a5185b20d4efbbbdba
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772589"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026298"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Zarządzanie gotówką i bankami — strona główna
 
@@ -99,4 +99,4 @@ Dostępna jest dodatkowa pomoc w formie przewodników zadania w aplikacji Financ
 
 #### <a name="videos"></a>Filmy
 
-Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365] (https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).

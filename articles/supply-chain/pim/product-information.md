@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21ee0b835cbe6cc3a238247be29f8a8d3de42a8d
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: bdbff802ca85f7cc568efb8a1aacaf6f8fb2874a
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570755"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004003"
 ---
 # <a name="product-information-overview"></a>Omówienie informacji o produktach
 
@@ -32,7 +32,7 @@ ms.locfileid: "2570755"
 
 Ten temat zawiera informacje dotyczące zarządzania informacjami o produktach. Moduł Zarządzanie informacjami o produktach współpracuje ze wspólnymi definicjami produktów, kategoriami i identyfikatorami we wszystkich firmach, a także z konkretnymi konfiguracjami produktu, tak aby spełnić wszystkie wymagania procesów biznesowych. 
 
-Informacje o produktach stanowią podstawę wszystkich aplikacji zarządzania łańcuchami dostaw i sprzedaży detalicznej we wszystkich branżach. Odnoszą się do procesów i technologii koncentrujących się na centralnym zarządzaniu informacjami o produktach (na przykład w całych łańcuchach dostaw). Bardzo istotne jest, aby używać wspólnych definicji produktów, dokumentacji, atrybutów i identyfikatorów. W różnych modułach rozwiązania biznesowego informacje i konfiguracje specyficzne dla produktów są konieczne do zarządzania procesami biznesowymi związanymi z konkretnymi produktami, rodzinami produktów lub kategoriami produktów.
+Informacje o produktach stanowią podstawę wszystkich aplikacji zarządzania łańcuchami dostaw i handlu we wszystkich branżach. Odnoszą się do procesów i technologii koncentrujących się na centralnym zarządzaniu informacjami o produktach (na przykład w całych łańcuchach dostaw). Bardzo istotne jest, aby używać wspólnych definicji produktów, dokumentacji, atrybutów i identyfikatorów. W różnych modułach rozwiązania biznesowego informacje i konfiguracje specyficzne dla produktów są konieczne do zarządzania procesami biznesowymi związanymi z konkretnymi produktami, rodzinami produktów lub kategoriami produktów.
 
 ## <a name="product-definition"></a>Definicja produktu
 
