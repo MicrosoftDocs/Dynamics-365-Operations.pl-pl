@@ -362,7 +362,7 @@
               href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Wdrażanie środowisk lokalnych (aktualizacje Platform update 8 i 11)
               href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: Kroki instalacji składników kanału detalicznego w środowisku lokalnym
+            - name: Kroki instalacji składników kanału Retail w środowisku lokalnym
               href: ../../dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych
           href: ../../dev-itpro/deployment/develop-deploy-custom-models-on-premises.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -456,8 +456,6 @@
           items:
             - name: Tworzenie modeli i omówienia elementów modelu danych
               href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: Wytyczne dotyczące nazewnictwa rozszerzeń
-              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Wyłączanie dostosowania modelu i wycofywanie funkcji
               href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Raport Analizy dostosowań
@@ -1386,7 +1384,7 @@
           href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Planowanie i przygotowywanie kompilowania kodu z użyciem najnowszej aktualizacji
           href: ../../dev-itpro/migration-upgrade/compile-considerations.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-    - name: Uaktualnianie do najnowszej aktualizacji (on-premises)
+    - name: Uaktualnianie do najnowszej aktualizacji (lokalnie)
       items:
         - name: Stosowanie aktualizacji do wdrożeń lokalnych
           href: ../../dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
