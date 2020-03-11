@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84a62639b49db17fef1abcda75bc5ad7f08d1005
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 1784ab3587a090c8e5535509a1ba52fc85111daa
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917058"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041591"
 ---
 # <a name="ROUNDUP">ROUNDUP, funkcja ER</a>
 
@@ -33,7 +33,7 @@ Funkcja `ROUNDUP` zwraca podaną liczbę jako wartość *rzeczywistą* po zaokr�
 
 ## <a name="syntax"></a>Składnia
 
-```
+```vb
 ROUNDDOWN (number, decimals)
 ```
 

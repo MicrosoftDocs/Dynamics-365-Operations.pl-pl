@@ -1,9 +1,9 @@
 ---
-title: Integracja danych w czasie zbliżonym do rzeczywistego z Common Data Service
-description: Ten temat zawiera omówienie integracji między Finance and Operations i Common Data Service.
+title: Przegląd o podwójnym zapisie
+description: Ten temat stanowi omówienie podwójnego zapisu. Podwójny zapis to infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami opartymi na modelach Microsoft Dynamics 365 i aplikacjami Finance and Operations.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,59 +18,91 @@ ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1c09b0c0bb695e7695acb7a8821ffb99ae1f6f06
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 12c6a39700a260c138fab67ed370f94b3aa04213
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019962"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075999"
 ---
-# <a name="near-real-time-data-integration-with-common-data-service"></a>Integracja danych w czasie zbliżonym do rzeczywistego z Common Data Service
+# <a name="dual-write-overview"></a>Przegląd o podwójnym zapisie
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
-W obecnym świecie cyfrowym ekosystemy biznesowe wykorzystują aplikacje Microsoft Dynamics 365 w całości. Ponieważ dane pochodzące od osób, klientów, z operacji i urządzeń Internetu rzeczy (IoT) trafiają do jednego źródła, istnieje szansa na tworzenie cyfrowych pętli sprzężenia zwrotnego. Aby osiągnąć ten komfort, niezbędna jest integracja między aplikacjami Finance and Operations i aplikacjami Dynamics 365. Niektóre Customer Engagement są zbudowane na Common Data Service. Integracja między aplikacjami Finance and Operations z innymi aplikacjami Common Data Service pozwala innym aplikacją komunikować się płynnie i jasno z Finance and Operations.
+## <a name="what-is-dual-write"></a>Co to jest podwójny zapis?
 
-Aplikacje Finance and Operations i Common Data Service zapewniają synchronizacje niemal w czasie rzeczywistym między aplikacjami Finance and Operations i innymi aplikacjami Dynamics 365 za pomocą schematu podwójnego zapisu. Zasięg jest szeroki i obejmuje 28 obszarów aplikacji. Celem jest zapewnienie środowiska użytkownika „One Dynamics 365” dzięki bezproblemowym przepływom danych, które łączą procesy biznesowe między aplikacjami.
+Podwójny zapis to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami opartymi na modelach Microsoft Dynamics 365 i aplikacjami Finance and Operations. Gdy dane dotyczące odbiorców, produktów, osób i operacji przepływają poza granice aplikacji, wszystkie działy w organizacji zyskują możliwości.
 
-![Diagram poglądowy architektury](media/dual-write-overview.jpg)
+Podwójny zapis to ściśle sprzężona i dwukierunkowa integracja między aplikacjami Finance and Operations i Common Data Service. Każda zmiana danych w aplikacjach Finance and Operations powoduje zapis do Common Data Service, a zmiana danych w Common Data Service powoduje zapis w aplikacjach Finance and Operations. Ten zautomatyzowany przepływ danych umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach.
 
-Dla klientów dostępne są następujące propozycje:
+![Relacja danych między aplikacjami](media/dual-write-overview.jpg)
 
-+ [Hierarchia organizacyjna w usłudze Common Data Service](organization-mapping.md)
-+ [Pojęcie firmy w usługach Common Data Service](company-data.md)
-+ [Zintegrowane dane główne odbiorcy](customer-mapping.md)
-+ [Zintegrowana księga](ledger-mapping.md)
-+ [Ujednolicone działanie produktu](product-mapping.md)
-+ [Zintegrowane dane główne dostawcy](vendor-mapping.md)
-+ [Zintegrowane oddziały i magazyny](sites-warehouses-mapping.md)
-+ [Zintegrowane dane główne podatków](tax-mapping.md)
+Podwójny zapis ma dwie aspekty: *aspekt infrastruktury* i aspekt *aplikacji*.
 
-## <a name="system-requirements"></a>Wymagania systemowe
+### <a name="infrastructure"></a>Infrastruktura
 
-Synchroniczne, dwukierunkowe przepływy danych niemal w czasie rzeczywistym wymagają następujących wersji:
+Infrastruktura podwójnego zapisu jest rozszerzalna i niezawodna i obejmuje następujące najważniejsze cechy:
 
-+ Microsoft Dynamics 365 for Finance and Operations w wersji 10.0.4 (lipiec 2019) z aktualizacją platformy 28 lub nowszą
-+ Microsoft Dynamics 365 for Customer Engagement, wersja platformy 9.1 (4.2) lub nowsza
++ Synchroniczne i dwukierunkowe przepływy danych między aplikacjami
++ Synchronizacja, wraz z trybami odtwarzania, wstrzymywania i doganiania, aby wspierać system w trybach online i offline/asynchronicznych.
++ Możliwość synchronizowania danych początkowych między aplikacjami
++ Skonsolidowany widok działań i dzienników błędów dla administratorów danych
++ Możliwość konfigurowania niestandardowych alertów i progów oraz subskrybowanie powiadomień
++ Intuicyjny interfejs użytkownika służący do filtrowania i przekształcania
++ Możliwość ustawiania i wyświetlania zależności i relacji jednostek
++ Rozszerzalność dla jednostek i map standardowych i niestandardowych
++ Niezawodne zarządzanie cyklem życia zasobu
++ Korzystanie z gotowej konfiguracji wstępnej dla nowych odbiorców
 
-## <a name="setup-instructions"></a>Instrukcje konfiguracji
+### <a name="application"></a>Zgłoszenia
 
-Aby skonfigurować integrację między aplikacjami Finance and Operations i Common Data Service, wykonaj następujące czynności:
-    
-1. Aby skonfigurować system podwójnego zapisu, zobacz [szczegółowy poradnik](https://aka.ms/dualwrite-docs) na temat wprowadzenia podwójnego zapisu w wersji próbnej.
-2. Pobierz i zainstaluj rozwiązanie z grupy [integracji aplikacji Fin Ops i CDS/CE za pośrednictwem Dual-Write](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) w serwisie Yammer. Pakiet zawiera pięć rozwiązań:
+Podwójny zapis tworzy mapowanie między pojęciami w aplikacjach Finance and Operations i koncepcjami w aplikacjach opartych na modelach w Dynamics 365. Ta integracja obsługuje następujące scenariusze:
 
-    + Dynamics365Company
-    + CurrencyExchangeRates
-    + Dynamics365FinanceAndOperationsCommon
-    + Dynamics365FinanceCommon
-    + Dynamics365SupplyChainCommon
++ Zintegrowane dane główne odbiorcy
++ Dostęp do kart lojalnościowych odbiorcy i punktów lojalnościowych
++ Ujednolicone doświadczenie w zakresie opanowania produktu
++ Świadomość hierarchii organizacyjnej
++ Zintegrowane dane główne dostawcy
++ Dostęp do danych finansowych i danych referencyjnych podatku
++ Doświadczenie aparatu cen na żądanie
++ Zintegrowane doświadczenia Od prospekta do środków pieniężnych
++ Zdolność do obsługi zarówno zasobów wewnętrznych, jak i aktywów dla odbiorców za pomocą agentów pól
++ Zintegrowane korzystanie z funkcji od zapotrzebowania do płatności
++ Zintegrowane działania i uwagi dotyczące danych i dokumentów odbiorców
++ Możliwość wyszukiwania dostępnych zapasów i szczegółów
++ Edytuj doświadczenie Od projektu do środków pieniężnych
++ Możliwość obsługi wielu adresów i ról za pośrednictwem koncepcji strony
++ Zarządzanie pojedynczym źródłem danych dla użytkowników
++ Zintegrowane kanały do sprzedaży detalicznej i marketingu
++ Widoczność dla promocji i rabatów
++ Funkcje Od żądania do usługi
++ Usprawnione operacje usług
 
-3. Postępuj zgodnie z kolejnością [wykonywania synchronizacji początkowych danych referencyjnych](initial-sync.md).
-4. Jeśli wystąpią problemy z synchronizacją podwójnego zapisu, zobacz [Przewodnik rozwiązywania problemów z integracją danych](dual-write-troubleshooting.md).
+## <a name="top-reasons-to-use-dual-write"></a>Najważniejsze powody użycia funkcji podwójnego zapisu
 
-> [!IMPORTANT]
-> Nie można uruchomić równolegle podwójnego zapisu i [Prospekt do gotówki](../../../../supply-chain/sales-marketing/prospect-to-cash.md). Jeśli korzystasz z rozwiązania Prospekt na gotówkę, musisz ją odinstalować. Należy również wyłączyć szablony podwójnego zapisu odbiorcy i dostawcy, które są częścią rozwiązania Prospektem na gotówkę.
+Podwójny zapis dostarcza integrację danych między aplikacjami Microsoft Dynamics 365. To niezawodne środowisko łączy szkieletowo i umożliwia różnym aplikacjom biznesowym współdziałanie ze sobą. Oto najważniejsze powody, dla których należy zastosować metodę podwójnego odpisu:
+
++ Podwójny zapis umożliwia ścisłą integrację między aplikacjami Finance and Operations a aplikacjami opartymi na modelach w Dynamics 365. Taka integracja stanowi Microsoft Dynamics 365 miejsce, gdzie można znaleźć wszystkie rozwiązania biznesowe. Klienci, którzy korzystają z Dynamics 365 Finance i Dynamics 365 Supply Chain Management, ale używają rozwiązań innych firm niż Microsoft do zarządzania relacjami z klientami (CRM), przenoszą się do Dynamics 365, aby skorzystać ze wsparcia podwójnego zapisu.
++ Dane pochodzące od odbiorców, produktów, operacji, projektów i Internetu rzeczy (IoT) automatycznie przepływają do Common Data Service w ramach podwójnego zapisu. To połączenie jest bardzo przydatne w przypadku firm, które interesują się tymi samymi rozszerzeniami Microsoft Power Platform.
++ Infrastruktura podwójnego zapisywania jest zgodna z zasadą braku kodowania/małej ilości kodowania. Wymagane są minimalne nakłady pracy inżynieryjnej, aby rozszerzyć standardowe mapy od tabeli do tabeli i uwzględnić mapy niestandardowe.
++ Podwójne zapisywanie obsługuje tryb online i tryb offline. Firma Microsoft jest jedyną firmą, która oferuje obsługę trybów online i offline.
+
+## <a name="what-does-dual-write-mean-for-users-and-architects-of-crm-products"></a>Co podwójny zapis oznacza dla użytkowników i architektów produktów CRM?
+
+Podwójny odpis automatyzuje przepływ danych między aplikacjami Finance and Operations i Common Data Service. W przyszłych wersjach, koncepty w aplikacjach opartych na modelach w Dynamics 365 (np. odbiorca, kontakt, oferta i zamówienie) będą skalowane do odbiorców rynków średnich i wyższych średnich.
+
+W pierwszym wydaniu większość automatyzacji jest obsługiwana przez rozwiązania podwójnego zapisu. W przyszłych wersjach te rozwiązania staną się częścią Common Data Service. Przez poznanie nadchodzących zmian w długim okresie w Common Data Service, można zaoszczędzić wiele nakładów pracy. Oto niektóre z kluczowych zmian:
+
++ Common Data Service ma nowe koncepcje, np. firmę i stronę. Te koncepcje mają wpływ na wszystkie aplikacje, które są zbudowane na Common Data Service, takie jak Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service i Dynamics 365 Field Service.
++ Działania i uwagi są zunifikowane i rozwinięte, co pozwala na obsługę zarówno C1 (użytkowników systemu), jak i C2 (odbiorców systemu).
++ Oto niektóre z nadchodzących zmian w Common Data Service:
+
+    - Typ danych dziesiętnych zastąpi typ danych pieniężnych.
+    - Obowiązywanie dat będzie obsługiwać przeszłe, obecne i przyszłe dane w tym samym miejscu.
+    - Obsługa waluty i kursów wymiany będzie bardziej pomocna, a interfejs (API) programowania aplikacji **Kursu wymiany** zostanie poprawiony.
+    - Konwersje jednostek będą obsługiwane.
+
+Aby uzyskać więcej informacji o nadchodzących zmianach, zapoznaj się z tematem [Dane w Common Data Service – faza 1 i 2](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap).

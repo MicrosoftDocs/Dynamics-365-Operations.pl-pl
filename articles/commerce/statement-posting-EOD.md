@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1e3fc0e8cb5c9a6cc7729dfbddd5d918a1d6bdb5
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 68abef8f28c04a4f6f88e638c8abf944d06a32c4
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023697"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057262"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Ulepszenia funkcji księgowania zestawień
 
@@ -33,46 +33,46 @@ W tym temacie opisano pierwszy zestaw ulepszeń, które zostały wprowadzone w f
 
 Domyślnie podczas instalowania programu Finance and Operations 7.3.2 jest w nim konfigurowane używanie starszej funkcji księgowania zestawień. Aby włączyć ulepszoną funkcję księgowania zestawień, należy wyłączyć dla niej klucz konfiguracji.
 
-- Wybierz kolejno opcje **Administrowanie systemem** \> **Ustawienia** \> **Konfiguracja licencji**, a następnie w węźle **Handel detaliczny** wyczyść pole wyboru **Zestawienia handlu detalicznego (starsze)**, po czym zaznacz pole wyboru **Zestawienia handlu detalicznego**.
+- Wybierz kolejno opcje **Administrowanie systemem** \> **Ustawienia** \> **Konfiguracja licencji**, a następnie w węźle **Retail i Commerce** wyczyść pole wyboru **Zestawienia (starsze)**, po czym zaznacz pole wyboru **Zestawienia**.
 
-Po włączeniu nowego klucza konfiguracji **Zestawienia handlu detalicznego** jest dostępny nowy element menu o nazwie **Zestawienia handlu detalicznego**. Ten element menu umożliwia ręczne tworzenie, obliczanie i księgowanie zestawień. Każde zestawienie, które powoduje błąd podczas używania procesu księgowania wsadowego, będzie również dostępne w tym elemencie menu. (Gdy jest włączony klucz konfiguracji **Zestawienia handlu detalicznego (starsze)**, ten element menu nosi nazwę **Otwórz zestawienia**).
+Po włączeniu nowego klucza konfiguracji **Zestawienia** jest dostępny nowy element menu o nazwie **Zestawienia**. Ten element menu umożliwia ręczne tworzenie, obliczanie i księgowanie zestawień. Każde zestawienie, które powoduje błąd podczas używania procesu księgowania wsadowego, będzie również dostępne w tym elemencie menu. (Gdy jest włączony klucz konfiguracji **Zestawienia (starsze)**, ten element menu nosi nazwę **Otwórz zestawienia**.)
 
-Retail zawiera następujące mechanizmy sprawdzania poprawności, które dotyczą tych kluczy konfiguracji:
+Commerce zawiera następujące mechanizmy sprawdzania poprawności, które dotyczą tych kluczy konfiguracji:
 
 - Oba klucze konfiguracji nie mogą być włączone w tym samym czasie.
-- Ten sam klucz konfiguracji musi być używany do wszystkich operacji wykonywanych na danym zestawieniu podczas jego całego cyklu (tworzenie, obliczanie, czyszczenie, księgowanie itd.). Na przykład nie można utworzyć i obliczyć zestawienia przy włączonym kluczu konfiguracji **Zestawienia handlu detalicznego (starsze)**, a następnie próbować zaksięgować to samo zestawienie przy włączonym kluczu konfiguracji **Zestawienia handlu detalicznego** .
+- Ten sam klucz konfiguracji musi być używany do wszystkich operacji wykonywanych na danym zestawieniu podczas jego całego cyklu (tworzenie, obliczanie, czyszczenie, księgowanie itd.). Na przykład nie można utworzyć i obliczyć zestawienia przy włączonym kluczu konfiguracji **Zestawienia (starsze)**, a następnie próbować zaksięgować to samo zestawienie przy włączonym kluczu konfiguracji **Zestawienia** .
 
 > [!NOTE]
-> Zalecamy, aby używać klucza konfiguracji **Zestawienia handlu detalicznego** zapewniającego dostęp do ulepszonej funkcji księgowania zestawień, chyba że istnieją istotne powody do używania klucza konfiguracji **Zestawienia handlu detalicznego (starsze)**. Microsoft będzie nadal inwestować w ulepszoną funkcję księgowania zestawień, dlatego ważne jest, aby użytkownicy jak najwcześniej zaczęli się z nią oswajać. Starsza funkcja księgowania zestawień będzie wycofywana, począwszy od wersji 8.0.
+> Zalecamy, aby używać klucza konfiguracji **Zestawienia** zapewniającego dostęp do ulepszonej funkcji księgowania zestawień, chyba że istnieją istotne powody do używania klucza konfiguracji **Zestawienia (starsze)**. Microsoft będzie nadal inwestować w ulepszoną funkcję księgowania zestawień, dlatego ważne jest, aby użytkownicy jak najwcześniej zaczęli się z nią oswajać. Starsza funkcja księgowania zestawień będzie wycofywana, począwszy od wersji 8.0.
 
 ## <a name="setup"></a>Konfiguracja
 
-W ramach ulepszania funkcji księgowania zestawień wprowadzono trzy nowe parametry na skróconej karcie **Zestawienie** dostępnej na karcie **Księgowanie** na stronie **Parametry sieci sprzedaży**:
+W ramach ulepszania funkcji księgowania zestawień wprowadzono trzy nowe parametry na skróconej karcie **Zestawienie** dostępnej na karcie **Księgowanie** na stronie **Parametry rozwiązania Commerce**:
 
 - **Wyłącz czyszczenie wierszy zestawienia** — Ta opcja ma zastosowanie tylko do starszej funkcji księgowania zestawień. Zalecamy ustawienie w niej wartości **Nie**, aby uniemożliwić użytkownikom czyszczenie zestawień będących w stanie częściowego zaksięgowania. Wyczyszczenie zestawień w stanie częściowego zaksięgowania powoduje uszkodzenie danych. Należy ustawić w tej opcji wartość **Tak** tylko w wyjątkowych okolicznościach.
 - **Rezerwuj zapasy podczas obliczania** — zalecamy, aby do rezerwowania zapasów używać zadania wsadowego **Księgowanie zapasu**, a w tej opcji ustawić wartość **Nie**. Gdy w tej opcji zostanie ustawiona wartość **Nie**, ulepszona funkcja księgowania zestawień nie próbuje utworzyć wpisów rezerwacji zapasów podczas obliczania (jeśli wpisy nie zostały jeszcze utworzone za pomocą zadania wsadowego **Księgowanie zapasu**). Zamiast tego funkcja tworzy wpisy rezerwacji zapasów tylko podczas księgowania. Ta implementacja została wprowadzona specjalnie w związku z faktem, że okno czasowe między procesem obliczania a procesem księgowania jest zazwyczaj bardzo krótkie. Jednak jeśli chcesz rezerwować zapasy podczas obliczania, ustaw w tej opcji wartość **Tak**.
 
     Starsza funkcja księgowania zestawień zawsze rezerwuje zapasy w trakcie procesu obliczania zestawienia (jeżeli rezerwacja nie została jeszcze dokonana za pomocą zadania wsadowego **Księgowanie zapasu**), niezależnie od ustawienia tej opcji.
 
-- **Wymagane wyłączenie zliczania** — Jeśli ta opcja jest ustawiona na **Tak**, proces księgowania zestawienia jest kontynuowany, nawet gdy różnica między kwotą obliczoną a kwotą transakcji wykracza poza próg zdefiniowany na skróconej karcie **Zestawienie** w oknie Sklepy sieci sprzedaży.
+- **Wymagane wyłączenie zliczania** — Jeśli ta opcja jest ustawiona na **Tak**, proces księgowania zestawienia jest kontynuowany, nawet gdy różnica między kwotą obliczoną a kwotą transakcji wykracza poza próg zdefiniowany na skróconej karcie **Zestawienie** dla sklepów.
 
-Ponadto w skróconej karcie **przetwarzania wsadowego** na karcie **Księgowanie** na stronie **parametry sieci sprzedaży** wprowadzono następujące parametry: 
+Ponadto w skróconej karcie **przetwarzania wsadowego** na karcie **Księgowanie** na stronie **Parametry rozwiązania Commerce** wprowadzono następujące parametry: 
 
 - **Maksymalna liczba równoległych operacji księgowania zestawień** — to pole określa liczbę zadań wsadowych, które będą używane do księgowania wielu zestawień. 
 - **Maksymalny wątek na potrzeby przetwarzania zamówień na zestawienie** — to pole reprezentuje maksymalną liczbę wątków używanych przez zadanie wsadowe księgowania zestawienia do tworzenia i fakturowania zamówień sprzedaży dla jednego zestawienia. Łączna liczba wątków, które będą używane przez proces księgowania zestawienia, zostanie obliczona na podstawie wartości w tym parametrze pomnożonej przez wartość w polu parametru **Maksymalna liczba równoległych operacji księgowania zestawień**. Ustawienie zbyt dużej wartości tego parametru może mieć negatywny wpływ na wydajność procesu księgowania zestawienia.
-- **Maksymalna liczba wierszy transakcji uwzględnionych w agregacji** — to pole określa liczbę wierszy transakcji, które zostaną uwzględnione w jednej zagregowanej transakcji przed utworzeniem nowej. Zagregowane transakcje są tworzone na podstawie różnych kryteriów agregacji, takich jak odbiorca, Data firmy lub wymiary finansowe. Należy pamiętać, że wiersze z pojedynczej transakcji detalicznej nie będą dzielone między różne zagregowane transakcje. Oznacza to, że istnieje możliwość, że liczba wierszy w zagregowanej transakcji jest nieco wyższa lub niższa w zależności od czynników, takich jak liczba odrębnych produktów.
-- **Maksymalna liczba wątków sprawdzania poprawność transakcji w sklepie** — to pole określa liczbę wątków, które będą używane do sprawdzania poprawności transakcji detalicznych. Sprawdzanie transakcji detalicznych jest wymaganym krokiem, który musi nastąpić, zanim transakcje będą mogły zostać uwzględnione w zestawieniach. Ponadto konieczne jest zdefiniowanie ustawienia **Produkt karty upominkowej** na skróconej karcie **Karta upominkowa** dostępnej na karcie **Księgowanie** na stronie **Parametry sieci sprzedaży**. Ta zasada obowiązuje, nawet jeśli organizacja nie używa żadnych kart upominkowych.
+- **Maksymalna liczba wierszy transakcji uwzględnionych w agregacji** — to pole określa liczbę wierszy transakcji, które zostaną uwzględnione w jednej zagregowanej transakcji przed utworzeniem nowej. Zagregowane transakcje są tworzone na podstawie różnych kryteriów agregacji, takich jak odbiorca, Data firmy lub wymiary finansowe. Należy pamiętać, że wiersze z pojedynczej transakcji nie będą dzielone między różne zagregowane transakcje. Oznacza to, że istnieje możliwość, że liczba wierszy w zagregowanej transakcji jest nieco wyższa lub niższa w zależności od czynników, takich jak liczba odrębnych produktów.
+- **Maksymalna liczba wątków sprawdzania poprawność transakcji w sklepie** — to pole określa liczbę wątków, które będą używane do sprawdzania poprawności transakcji. Sprawdzanie transakcji jest wymaganym krokiem, który musi nastąpić, zanim transakcje będą mogły zostać uwzględnione w zestawieniach. Ponadto konieczne jest zdefiniowanie ustawienia **Produkt karty upominkowej** na skróconej karcie **Karta upominkowa** dostępnej na karcie **Księgowanie** na stronie **Parametry rozwiązania Commerce**. Ta zasada obowiązuje, nawet jeśli organizacja nie używa żadnych kart upominkowych.
 
 > [!NOTE]
-> Wszystkie ustawienia i parametry związane z księgowaniem zestawień, które są zdefiniowane w oknie Sklepy sieci sprzedaży i na stronie **Parametry sieci sprzedaży**, mają zastosowanie do ulepszonej funkcji księgowania zestawień.
+> Wszystkie ustawienia i parametry związane z księgowaniem zestawień, które są zdefiniowane w oknie Sklepy sieci sprzedaży i na stronie **Parametry rozwiązania Commerce**, mają zastosowanie do ulepszonej funkcji księgowania zestawień.
 
 ## <a name="processing"></a>Przetwarzanie
 
-Zestawienia mogą być obliczane i księgowane wsadowo za pomocą elementów menu **Oblicz zestawienia w partii** i **Zaksięguj zestawienia w partii**. Alternatywnie zestawienia można ręcznie obliczać i księgować przy użyciu elementu menu **Zestawienia handlu detalicznego** dostępnego w ulepszonej funkcji księgowania zestawień.
+Zestawienia mogą być obliczane i księgowane wsadowo za pomocą elementów menu **Oblicz zestawienia w partii** i **Zaksięguj zestawienia w partii**. Alternatywnie zestawienia można ręcznie obliczać i księgować przy użyciu elementu menu **Zestawienia** dostępnego w ulepszonej funkcji księgowania zestawień.
 
 Proces oraz etapy obliczania i księgowania zestawień wsadowo są takie same, jak w starszej funkcji księgowania zestawień. Jednak wprowadzono znaczne udoskonalenia w bazowym przetwarzaniu zestawień w systemach zaplecza. Te ulepszenia zwiększają odporność procesu na ewentualne problemy oraz oferują lepszy wgląd w stany i informacje o błędach. Dzięki temu użytkownicy mogą usuwać główne przyczyny błędów, a następnie kontynuować proces księgowania, nie powodując uszkodzenia danych i unikając konieczności stosowania poprawek danych.
 
-W poniższych sekcjach opisano niektóre najważniejsze ulepszenia funkcji księgowania zestawień, które są wyświetlane interfejsie użytkownika dla zestawień sprzedaży detalicznej i zaksięgowanych zestawień.
+W poniższych sekcjach opisano niektóre najważniejsze ulepszenia funkcji księgowania zestawień, które są wyświetlane interfejsie użytkownika dla zestawień i zaksięgowanych zestawień.
 
 ### <a name="status-details"></a>Szczegóły stanu
 
@@ -131,7 +131,7 @@ Karta **Szczegóły zamówienia sprzedaży** w oknie zagregowanej transakcji pok
 - **Stan** — Ostatni stan zagregowanej transakcji.
 - **Identyfikator faktury** — Identyfikator faktury sprzedaży wstawiany po zafakturowaniu zamówienia sprzedaży powiązanego ze zagregowaną transakcją. Jeśli to pole jest puste, faktura za zamówienie sprzedaży nie została jeszcze zaksięgowana.
 
-Karta **Szczegóły transakcji** w oknie zagregowanej transakcji pokazuje wszystkie transakcje sieci sprzedaży pobrane do zagregowanej transakcji. Zagregowane wiersze w zagregowanej transakcji pokazują wszystkie zagregowane rekordy z transakcji sieci sprzedaży. W zagregowanych wierszach są również wyświetlane szczegóły takie jak towar, wariant, ilość, cena, kwota netto, jednostka i magazyn. Zasadniczo każdy zagregowany wiersz odpowiada jednemu wierszowi zamówienia sprzedaży.
+Karta **Szczegóły transakcji** w oknie zagregowanej transakcji pokazuje wszystkie transakcje pobrane do zagregowanej transakcji. Zagregowane wiersze w zagregowanej transakcji pokazują wszystkie zagregowane rekordy z transakcji. W zagregowanych wierszach są również wyświetlane szczegóły takie jak towar, wariant, ilość, cena, kwota netto, jednostka i magazyn. Zasadniczo każdy zagregowany wiersz odpowiada jednemu wierszowi zamówienia sprzedaży.
 
 Na stronie **Zagregowane transakcje** można pobrać kod źródłowy XML konkretnej zagregowanej transakcji, naciskając przycisk **Eksportuj kod XML zamówienia sprzedaży**. Kodu XML można używać do debugowania problemów dotyczących tworzenia i księgowania zamówienia sprzedaży. Wystarczy pobrać kod XML, przekazać go do środowiska testowego, a następnie debugować problem w środowisku testowym. Funkcja pobierania kodu XML zagregowanych transakcji nie jest dostępna dla zestawień, które zostały już zaksięgowane.
 
@@ -139,7 +139,7 @@ Widok zagregowanych transakcji oferuje następujące zalety:
 
 - Użytkownik ma wgląd w zagregowane transakcje, których wykonanie nie powiodło się podczas tworzenia zamówienia sprzedaży, oraz w zamówienia sprzedaży, których przetwarzanie nie powiodło się podczas fakturowania.
 - Użytkownik ma wgląd w sposób agregowania transakcji.
-- Użytkownik ma kompletny dziennik inspekcji — od powstania transakcji sieci sprzedaży, przez zamówienia sprzedaży, aż po faktury sprzedaży. Ten dziennik inspekcji nie był dostępny w starszej funkcji księgowania zestawień.
+- Użytkownik ma kompletny dziennik inspekcji — od powstania transakcji, przez zamówienia sprzedaży, aż po faktury sprzedaży. Ten dziennik inspekcji nie był dostępny w starszej funkcji księgowania zestawień.
 - Zagregowany plik XML ułatwia identyfikowanie problemów podczas tworzenia i fakturowania zamówienia sprzedaży.
 
 ### <a name="journal-vouchers"></a>Załączniki arkusza
@@ -159,11 +159,11 @@ Obecnie w programie te dane są wyświetlane tylko dla zaksięgowanych zestawie�
 W funkcji księgowania zestawień wprowadzono również różne ulepszenia w systemach zaplecza widoczne dla użytkowników. Oto kilka przykładów:
 
 - Agregacja nie bierze pod uwagę jednostek personelu, terminala ani zmiany. Ze względu na mniejszą liczbę parametrów agregacji system ma mniej wierszy zamówień sprzedaży do przetwarzania.
-- Występowanie zakleszczeń w tabelach transakcji sieci sprzedaży zostało ograniczone poprzez wprowadzenie dodatkowych tabel rozszerzeń oraz poprzez wykonywanie operacji wstawiania zamiast operacji aktualizacji w tabelach transakcji sieci sprzedaży.
+- Występowanie zakleszczeń w tabelach transakcji zostało ograniczone poprzez wprowadzenie dodatkowych tabel rozszerzeń oraz poprzez wykonywanie operacji wstawiania zamiast operacji aktualizacji w tabelach transakcji.
 - Liczba uruchamianych zadań przetwarzania wsadowego została sparametryzowana i ograniczona. W związku z tym tę liczbę można precyzyjnie dostosować do specyfiki środowiska klienta. W starszej funkcji księgowania zestawień była tworzona nieograniczona liczba zadań wsadowych w tym samym czasie. Efektem były ogromne obciążenia przetwarzaniem i powstawanie wąskich gardeł na serwerze przetwarzania wsadowego.
 - Zestawienia są skutecznie umieszczane w kolejce do przetwarzania poprzez nadawanie priorytetu zestawieniom o największej liczbie transakcji.
 - Procesy wsadowe, takie jak **Oblicz zestawienia w partii** i **Zaksięguj zestawienia w partii**, w wykonywane tylko w trybie wsadowym. W starszej funkcji księgowania zestawień użytkownicy mogli wybrać opcję uruchamiania tych procesów wsadowych w trybie interakcyjnym, czyli jednowątkowym, w przeciwieństwie do procesów wsadowych, które są wielowątkowe.
-- W starszej funkcji księgowania zestawień każde niepowodzenie podzadania wsadowego powodowało stan błędu całego zadania wsadowego. W ulepszonej funkcji błędy podzadań wsadowych nie powodują ustawienia stanu błędu dla całego zadania wsadowego, jeśli inne podzadania wsadowe zostały wykonane pomyślnie. Stan księgowania sesji przetwarzania wsadowego należy ocenić za pomocą strony **Zestawienia handlu detalicznego**, gdzie widać wszystkie zestawienia, które nie zostały zaksięgowane z powodu błędów.
+- W starszej funkcji księgowania zestawień każde niepowodzenie podzadania wsadowego powodowało stan błędu całego zadania wsadowego. W ulepszonej funkcji błędy podzadań wsadowych nie powodują ustawienia stanu błędu dla całego zadania wsadowego, jeśli inne podzadania wsadowe zostały wykonane pomyślnie. Stan księgowania sesji przetwarzania wsadowego należy ocenić za pomocą strony **Zestawienia**, gdzie widać wszystkie zestawienia, które nie zostały zaksięgowane z powodu błędów.
 - W starszej funkcji księgowania zestawień pierwsze wystąpienie niepowodzenia przetwarzania zestawienia powoduje niepowodzenie dla całej partii. Pozostałe zestawienia nie są przetwarzane. W ulepszonej funkcji proces przetwarzania wsadowego kontynuuje przetwarzanie wszystkich zestawień, nawet jeśli przetwarzanie niektórych zestawień kończy się niepowodzeniem. Jedną z zalet takiego rozwiązania jest to, że użytkownicy widzą dokładną liczbę zestawień zawierających błędy. W rezultacie użytkownicy nie są już skazani na pętlę ustawicznego poprawiania błędów i ponownego uruchamiania procesu księgowania zestawień do czasu, aż wszystkie zestawienia zostaną pomyślnie zaksięgowane.
 
 ## <a name="general-guidance-about-the-statement-posting-process"></a>Ogólne wytyczne dotyczące procesu księgowania zestawień
@@ -172,5 +172,5 @@ W funkcji księgowania zestawień wprowadzono również różne ulepszenia w sys
 - Zalecamy, aby w grupie modeli towarów włączyć funkcję ujemnych zapasów fizycznych, dzięki czemu księgowanie będzie przebiegało płynnie. W niektórych scenariuszach zestawienia z wartościami ujemnymi mogą być księgowane tylko pod warunkiem istnienia ujemnych zapasów fizycznych. Na przykład teoretycznie jeśli w zapasach istnieje tylko jedna jednostka towaru, a dla towaru wykonano transakcję sprzedaży i transakcję zwrotu, system powinien zaksięgować transakcję, nawet jeżeli nie włączono funkcji ujemnego poziomu zapasów. Jednak ponieważ proces księgowania zestawienia pobiera transakcję sprzedaży i transakcję zwrotu w jednym zamówieniu odbiorcy, nie ma gwarancji, że wiersz sprzedaży zostanie zaksięgowany najpierw, a po nim wiersz zwrotu. W związku z tym może wystąpić błąd. Jeśli w tym scenariuszu jest włączona funkcja ujemnych zapasów, nie będzie negatywnego wpływu na księgowanie transakcji i system poprawnie odzwierciedli zapasy.
 - Zalecamy, aby podczas obliczania i księgowania zestawień używać agregacji. W związku z tym zalecamy następujące ustawienia niektórych parametrów agregacji:
 
-    - Kliknij kolejno opcje **Handel detaliczny** \> **Ustawienia centrali** \> **Parametry** \> **Parametry sieci sprzedaży**. Następnie na karcie **Księgowanie** na skróconej karcie **Aktualizacja zapasów** w polu **Poziom szczegółowości** zaznacz wartość **Podsumowanie**.
-    - Kliknij kolejno opcje **Handel detaliczny** \> **Ustawienia centrali** \> **Parametry** \> **Parametry sieci sprzedaży**. Następnie na karcie **Księgowanie** na skróconej karcie **Agregacja** w opcji **Transakcje na załączniku** ustaw wartość **Tak**.
+    - Wybierz kolejno opcje **Retail i Commerce** \> **Ustawienia central** \> **Parametry** \> **Parametry rozwiązania Commerce**. Następnie na karcie **Księgowanie** na skróconej karcie **Aktualizacja zapasów** w polu **Poziom szczegółowości** zaznacz wartość **Podsumowanie**.
+    - Wybierz kolejno opcje **Retail i Commerce** \> **Ustawienia central** \> **Parametry** \> **Parametry rozwiązania Commerce**. Następnie na karcie **Księgowanie** na skróconej karcie **Agregacja** w opcji **Transakcje na załączniku** ustaw wartość **Tak**.

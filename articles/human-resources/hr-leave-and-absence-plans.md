@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 08fb278a3de0c06715dcd9c252ee6c21b2172cff
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
+ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010243"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087307"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Tworzenie planu urlopów i nieobecności
 
@@ -61,8 +61,8 @@ Można również tworzyć urlopy zależne od stanowiska, na przykład urlopy tyl
 
       | Podstawa okresu naliczania | Opis |
       | --- | --- |
-      | Data początkowa planu | Data rozpoczęcia okresu naliczania to dzień, w którym plan staje się dostępny. |
-      | Data specyficzna dla pracownika | Data rozpoczęcia okresu naliczania zależy od zdarzenia dotyczącego pracownika etatowego:</br><ul><li>Niestandardowe (należy określić podstawę daty naliczania osobno dla każdej rejestracji)</li><li>Rocznica</li><li>Pierwotna data zatrudnienia</li><li>Data stażu pracy</li><li>Skorygowana data rozpoczęcia pracownika</li><li>Data rozpoczęcia pracownika</li></ul> |
+      | **Data początkowa planu** | Data rozpoczęcia okresu naliczania to dzień, w którym plan staje się dostępny. |
+      | **Data specyficzna dla pracownika** | Data rozpoczęcia okresu naliczania zależy od zdarzenia dotyczącego pracownika etatowego:</br><ul><li>Niestandardowe (należy określić podstawę daty naliczania osobno dla każdej rejestracji)</li><li>Rocznica</li><li>Pierwotna data zatrudnienia</li><li>Data stażu pracy</li><li>Skorygowana data rozpoczęcia pracownika</li><li>Data rozpoczęcia pracownika</li></ul> |
 
    3. Wybierz opcję z pola rozwijanego **Data przyznania naliczenia**:
 

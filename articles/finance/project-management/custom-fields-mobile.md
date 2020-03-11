@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
 ms.search.validFrom: 2019-05-29
-ms.openlocfilehash: c0c578ca44919671b67daeea51a9ec7687f755c9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 48854c15e429d51dcf30ea804eb636dee7965443
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773652"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080779"
 ---
 # <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a>Implementowanie pól niestandardowych aplikacji mobilnej Microsoft Dynamics 365 Project Timesheet w systemach iOS i Android
 
@@ -183,7 +183,7 @@ Poniższy przykład przedstawia pole ciągu we wpisach czasu. W tym polu dostęp
 
 Należy zwrócić uwagę na użycie metody **TSTimesheetCustomField::newFromMetatdata()** w celu uproszczenia inicjowania właściwości pól niestandardowych: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength** i **numberOfDecimals**. Parametry te można również ustawić ręcznie.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -212,7 +212,7 @@ final class TSTimesheetSettings_Extension
 
 Metoda **buildCustomFieldListForEntry** służy do wprowadzania wartości w zapisanych wierszach karty czasu pracy w aplikacji mobilnej. Przyjmuje ona rekord TSTimesheetTrans jako parametr. Pola z tego rekordu mogą być używane do wstawiania wartości pola niestandardowego w aplikacji.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetEntry))]
 final class TsTimesheetEntry_Extension
@@ -250,7 +250,7 @@ Aby zapisać pole niestandardowe z powrotem w bazie danych w typowym użyciu, na
 > [!NOTE]
 > W poniższym przykładzie wartość **firstOption** lub **secondOption**, zależnie od wyboru użytkownika, jest zapisywana w bazie danych jako wartość ciągu nieprzetworzonego. Jeśli pole bazy danych jest polem typu **Wyliczenie**, wartości te można zamapować ręcznie na wartość wyliczenia, a następnie zapisać je w polu wyliczenia w tabeli bazy danych.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetEntryService))]
 final class TSTimesheetEntryService_Extension
@@ -339,7 +339,7 @@ Ten kod steruje ustawieniami wyświetlania pola w aplikacji. Na przykład okreś
 
 W poniższym przykładzie przedstawiono obliczoną wartość w sekcji nagłówka w aplikacji.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -369,7 +369,7 @@ final class TSTimesheetSettings_Extension
 Metoda **buildCustomFieldListForHeader** służy do wypełniania szczegółów nagłówka karty czasu pracy w aplikacji mobilnej. Przyjmuje ona rekord TSTimesheetTable jako parametr. Pola z tego rekordu mogą być używane do wstawiania wartości pola niestandardowego w aplikacji. W poniższym przykładzie nie są odczytywane żadne wartości z bazy danych. Zamiast tego przy użyciu logiki X++ generowana jest obliczona wartość, która jest następnie wyświetlana w aplikacji.
 
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetDetails))]
 final class TSTimesheetDetails_Extension

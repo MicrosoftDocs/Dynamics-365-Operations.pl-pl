@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: feb28b9c801786f63282c4189d3eeb6d53ed07e1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 320f21916a5f451ebf4f21e0075017a121ba6d6a
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003149"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057621"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Konfigurowanie powiadomień pocztą e-mail
 
@@ -41,7 +41,7 @@ Aby uzyskać więcej informacji o sposobie konfigurowania poczty e-mail, zobacz 
 
 Aby utworzyć profil powiadomień e-mail, wykonaj następujące kroki.
 
-1. W okienku nawigacji kliknij kolejno opcje **Moduły \> Handel detaliczny i inny \> Ustawienia Headquarters \> Parametry sieci sprzedaży**.
+1. W okienku nawigacji kliknij kolejno opcje **Moduły \> Handel detaliczny i inny \> Ustawienia Headquarters \> Profil powiadomienia pocztą e-mail w Commerce**.
 1. W okienku akcji kliknij **Nowy**.
 1. W polu **Profil powiadomień e-mai** wprowadź nazwę identyfikującą profil.
 1. W polu **Opis** wprowadź odpowiedni opis.
@@ -71,16 +71,16 @@ Na poniższym obrazie przedstawiono przykładowe ustawienia szablonów wiadomoś
 
 Aby utworzyć wydarzenie e-mail, należy wykonać poniższe kroki.
 
-1. W okienku nawigacji kliknij kolejno opcje **Moduły \> Handel detaliczny i inny \> Ustawienia Headquarters \> Parametry sieci sprzedaży**.
+1. W okienku nawigacji kliknij kolejno opcje **Moduły \> Handel detaliczny i inny \> Ustawienia Headquarters \> Profil powiadomienia pocztą e-mail w Commerce**.
 1. Na liście znajdź i zaznacz odpowiedni rekord. 
 1. Wybierz szablon wiadomości e-mail z listy rozwijanej **Identyfikator e-mail**.
 1. Wybierz odpowiedni typ **Powiadomienia e-mail** z listy rozwijanej.
 1. Zaznacz pole wyboru **Aktywne**.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 
-Na poniższym obrazie przedstawiono przykładowe ustawienia wydarzeń dot. sprzedaży e-mail.
+Na poniższym obrazie przedstawiono przykładowe ustawienia powiadomień e-mail wydarzeń.
 
-![Ustawienia powiadomienia o zdarzeniach w sieci sprzedaży](media/email-notification-profile.png)
+![Ustawienia powiadomień wydarzeń](media/email-notification-profile.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

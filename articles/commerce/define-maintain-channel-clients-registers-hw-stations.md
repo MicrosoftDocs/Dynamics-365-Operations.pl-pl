@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 51d344d7b7a792d0cdf3eeb7f5c6e1a9b2b8bf19
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023634"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057944"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
 
@@ -43,7 +43,7 @@ Kilka składników jest używanych do definiowania relacji między sklepem, kasa
 
 Nawigacja: Kliknij kolejno opcje **Retail i Commerce** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Rejestry**.
 
-Kasa w punkcie sprzedaży (POS) to jednostka używana do definiowania właściwości konkretnego wystąpienia punktu sprzedaży. Cechy te obejmują profil sprzętu lub konfigurację urządzeń peryferyjnych sieci sprzedaży, które będą używane w kasie, sklep, do którego kasa jest mapowana, oraz wizualne środowisko użytkownika logującego się w tej kasie.
+Kasa w punkcie sprzedaży (POS) to jednostka używana do definiowania właściwości konkretnego wystąpienia punktu sprzedaży. Cechy te obejmują profil sprzętu lub konfigurację urządzeń peryferyjnych, które będą używane w kasie, sklep, do którego kasa jest mapowana, oraz wizualne środowisko użytkownika logującego się w tej kasie.
 
 ### <a name="devices"></a>Urządzenia
 
@@ -67,7 +67,7 @@ Profil sprzętu identyfikuje sprzęt, który jest podłączony do kasy POS lub s
 
 ### <a name="hardware-station"></a>Hardware Station
 
-Nawigacja: Kliknij kolejno opcje **Retail i Commerce** &gt; **Kanały** &gt; **Sklepy sieci sprzedażys** &gt; **Wszystkie sklepy sieci sprzedaży**. Zaznacz sklep i kliknij skróconą kartę **Stacje sprzętowe**.
+Nawigacja: Kliknij kolejno opcje **Retail i Commerce** &gt; **Kanały** &gt; **Sklepy** &gt; **Wszystkie sklepy**. Zaznacz sklep i kliknij skróconą kartę **Stacje sprzętowe**.
 
 Stacja sprzętowa to wystąpienie logiki biznesowej sterującej działaniem urządzeń peryferyjnych w punkcie sprzedaży. Stacja sprzętowa jest instalowana automatycznie razem z aplikacją MPOS. Alternatywnie stację sprzętową można zainstalować jako autonomiczny składnik, a następnie otwierać z aplikacji MPOS lub Cloud POS za pośrednictwem usługi internetowej. Stacja sprzętowa musi być zdefiniowana na poziomie kanału.
 
@@ -87,7 +87,7 @@ Aby podłączyć punkt MPOS do urządzeń peryferyjnych punktu sprzedaży w trad
 
 Po przypisaniu profilu sprzętu zsynchronizuj zmiany z bazą danych kanału, używając do tego harmonogramu dystrybucji **Rejestry**. Harmonogramy dystrybucji są wyszczególnione w oknie **Retail and Commerce** &gt; **Składniki IT w Retail i Commerce** &gt; **Harmonogram dystrybucji**. 
 
-Następny skonfiguruj „lokalną” stację sprzętową w kanale. Kliknij kolejno opcje **Retail i Commerce** &gt; **Kanały** &gt; **Sklepy sieci sprzedaży** &gt; **Wszystkie sklepy sieci sprzedaży** i wybierz sklep. 
+Następny skonfiguruj „lokalną” stację sprzętową w kanale. Kliknij kolejno opcje **Retail i Commerce** &gt; **Kanały** &gt; **Sklepy** &gt; **Wszystkie sklepy** i wybierz sklep. 
 
 Następnie na skróconej karcie **Stacje sprzętowe** kliknij przycisk **Dodaj**, aby dodać stację sprzętową. Wprowadź opis, jako nazwę hosta wpisz **localhost**, a następnie zsynchronizuj zmiany z kanałem przy użyciu harmonogramu dystrybucji **Konfiguracja kanału**. Harmonogramy dystrybucji są wyszczególnione w oknie **Retail and Commerce** &gt; **Składniki IT w Retail i Commerce** &gt; **Harmonogram dystrybucji**. 
 
@@ -104,7 +104,7 @@ Na koniec w aplikacji MPOS za pomocą operacji **Wybierz stację sprzętową** z
 
 W tym scenariuszu autonomiczna stacja sprzętowa jest współużytkowana przez klientów MPOS i Cloud POS. Ten scenariusz wymaga utworzenia profilu stacji sprzętowej, aby określić pakiet do pobrania, port oraz profil sprzętu, który będzie używany przez stację. Profil stacji sprzętowej można znaleźć w oknie **Retail and Commerce** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile stacji sprzętowych**. 
 
-Po utworzeniu profilu stacji sprzętowej przejdź do konkretnego kanału sprzedaży (**Retail i Commerce** &gt; **Kanały** &gt; **Sklepy** &gt; **Wszystkie sklepy sieci sprzedaży**) i dodaj nową stację sprzętową. Zmapuj tę nową stację sprzętową do utworzonego wcześniej profilu stacji sprzętowej. 
+Po utworzeniu profilu stacji sprzętowej przejdź do konkretnego kanału sprzedaży (**Retail i Commerce** &gt; **Kanały** &gt; **Sklepy** &gt; **Wszystkie sklepy**) i dodaj nową stację sprzętową. Zmapuj tę nową stację sprzętową do utworzonego wcześniej profilu stacji sprzętowej. 
 
 Następnie podaj opis, który pomoże kasjerowi zidentyfikować stację sprzętową. W polu **Nazwa hosta** wprowadź adres URL komputera hosta w następującym formacie: `https://<MachineName:Port>/HardwareStation` (wyrażenie **&lt;NazwaKomputera:Port&gt;** zastąp faktyczną nazwą komputera stacji sprzętowej oraz numerem portu określonym w profilu stacji sprzętowej). W przypadku autonomicznej stacji sprzętowej należy również określić identyfikator terminala systemu elektronicznego przelewu środków pieniężnych (EFT). Ta wartość identyfikuje terminal EFT, który jest podłączony do stacji sprzętowej, gdy aplikacja łącznika płatności komunikuje się z dostawcą płatności. 
 

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1fffc7141c041873f39f716aaf1a775984ef499c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 508fda28d8f815f030e7b163709393f70904a5fd
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023622"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057701"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Wybór między aplikacjami Modern POS (MPOS) i Cloud POS
 
@@ -60,7 +60,7 @@ Choć punkty MPOS i CPOS są w dużej mierze podobne, istnieją jednak między n
 Punkt MPOS przeznaczony do urządzeń z systemem Windows, iOS lub Android jest aplikacją spakowaną, zainstalowaną i obsługiwaną na danym urządzeniu.
 
 - **Windows** — aplikacja MPOS dla systemu Windows zawiera cały kod instalacji oraz osadzone środowisko uruchomieniowe Commerce runtime (CRT). 
-- **iOS/Android** — w przypadku tych platform aplikacja pełni funkcję hosta dla kodu aplikacji CPOS. Innymi słowy, kod aplikacji pochodzi z serwera CPOS w Microsoft Azure lub Commerce Scale Unit. Aby uzyskać więcej informacji, zobacz [omówienie Retail Store Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** — w przypadku tych platform aplikacja pełni funkcję hosta dla kodu aplikacji CPOS. Innymi słowy, kod aplikacji pochodzi z serwera CPOS w Microsoft Azure lub Commerce Scale Unit. Aby uzyskać więcej informacji, zobacz [Omówienie Commerce Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
 
 #### <a name="cpos"></a>Punkt sprzedaży w chmurze (CPOS)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6af7113031fd77a0a7e06ec23a149a3fa7ad0012
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 759869577ef30cd3f81eb74103a93cc5d1a3d608
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026070"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042857"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Generowanie dokumentów zawierających dane aplikacji
 
@@ -40,10 +40,14 @@ Ta procedura została utworzona dla użytkowników z przypisaną rola administra
 ## <a name="set-up-foreign-trade-parameters"></a>Konfigurowanie parametrów handlu zagranicznego
 1. Wybierz kolejno opcje Podatek > Ustawienia > Handel zagraniczny > Parametry handlu zagranicznego.
 2. Kliknij kartę Sekwencje numerów.
-    * Archiwizując szczegóły procesu raportowania Intrastat, musimy identyfikować rekordy każdego tworzonego archiwum. Do tego celu należy skonfigurować specjalną numerację.  
+
+    Archiwizując szczegóły procesu raportowania Intrastat, musimy identyfikować rekordy każdego tworzonego archiwum. Do tego celu należy skonfigurować specjalną numerację.  
+
 3. Wybierz odwołanie „Identyfikator archiwum Intrastat”.
 4. W polu Kod sekwencji numerów wpisz wartość.
-    * W polu „Kod sekwencji numerów” wprowadź lub wybierz wartość „Fore_2”.  
+
+    W polu „Kod sekwencji numerów” wprowadź lub wybierz wartość „Fore_2”.  
+
 5. Rozstrzygnij zmiany w kodzie numeracji.
 6. Kliknij przycisk Zapisz.
 7. Zamknij stronę.
@@ -54,18 +58,23 @@ Ta procedura została utworzona dla użytkowników z przypisaną rola administra
 3. W drzewie zaznacz element „Intrastat (model)\Intrastat (format)”.
 4. Kliknij przycisk Uruchom.
 5. W polu Wprowadź nazwę pliku wpisz „intrastat2.xml”.
-    * intrastat2.xml  
 6. Kliknij przycisk OK.
 
 ## <a name="review-er-format-executions-results"></a>Przejrzenie wyników wykonania formatu ER
 Przejrzyj wygenerowany plik XML.  
 1. Zamknij stronę.
 2. Wybierz kolejno opcje Podatek > Deklaracje > Handel zagraniczny > Intrastat.
-    * Otwórz ten formularz zawierający transakcje Intrastat, które uwzględniono w wygenerowanym dokumencie elektronicznym.  
+
+    Otwórz ten formularz zawierający transakcje Intrastat, które uwzględniono w wygenerowanym dokumencie elektronicznym.  
+
 3. Kliknij opcję Archiwum Intrastat.
-    * Ponieważ wykonany format raportowania elektronicznego zawiera teraz ustawienia aktualizacji danych aplikacji, szczegóły gotowego raportu Intrastat zostały zarchiwizowane. W tym formularzu widać rekord nagłówka utworzonego archiwum.  
+
+    Ponieważ wykonany format raportowania elektronicznego zawiera teraz ustawienia aktualizacji danych aplikacji, szczegóły gotowego raportu Intrastat zostały zarchiwizowane. W tym formularzu widać rekord nagłówka utworzonego archiwum.  
+
 4. Kliknij przycisk Szczegóły.
-    * W tym formularzu widać szczegóły utworzonego archiwum.  
+
+    W tym formularzu widać szczegóły utworzonego archiwum.  
+
 5. Zamknij stronę.
 6. Zamknij stronę.
 7. Zamknij stronę.

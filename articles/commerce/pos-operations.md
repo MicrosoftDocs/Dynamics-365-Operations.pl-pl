@@ -3,7 +3,7 @@ title: Operacje online i offline w punkcie sprzedaży (POS)
 description: Ten temat zawiera szczegółowe informacje dotyczące operacji punktu sprzedaży (POS) w Dynamics 365 Commerce. Określa, gdzie w aplikacji można wywołać operacje oraz czy są dostępne w trybie offline..
 author: jblucher
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bf67c53ffd5bd530f484b60da604fd9338c964fd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023730"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081346"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
@@ -51,8 +51,10 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 135 | Dodaj przynależność z listy | Dodawaj przynależność do transakcji przez wybranie jej na liście. | Tak | Tak | Tak | Tak | Nr |
 | 137 | Dodaj przynależność do odbiorcy | Dodawanie przynależności do odbiorcy na stronie **Szczegóły odbiorcy**. | Nr | Nr | Nr | Tak | Nr |
 | 138 | Usuń przynależność z odbiorcy | Usuwanie przynależności na stronie **Szczegóły odbiorcy**. | Nr | Nr | Nr | Tak | Nr |
-| 643 | Dodaj kod kuponu | Dodaj kupon, wprowadzając jego kod w punkcie sprzedaży. | Tak | Tak | Nr | Tak | Nr |
-| 117 | Dodaj kartę lojalnościową | Wyświetl monit dla użytkownika o wprowadzenie numeru karty lojalnościowej, która zostanie dodana do bieżącej transakcji. | Tak | Tak | Nr | Tak | Nr |
+| 643 | Dodaj kod kuponu | Dodaj kupon, wprowadzając jego kod w punkcie sprzedaży. | Tak | Tak | Nie | Tak | Nie |
+| 141 | Dodaj opłaty z nagłówka | Dodaj opłatę dodatkową do nagłówka zamówienia. | Tak | Tak | Nie | Nie| Nie |
+| 141 | Dodaj opłaty z wierszy | Umożliwia dodanie opłaty dodatkowej do wybranego wiersza sprzedaży. | Tak | Tak | Nie | Nie| Nie |
+| 117 | Dodawanie karty lojalnościowej | Wyświetl monit dla użytkownika o wprowadzenie numeru karty lojalnościowej, która zostanie dodana do bieżącej transakcji. | Tak | Tak | Nr | Tak | Nr |
 | 136 | Dodaj numer seryjny | Ta operacja umożliwia użytkownikowi określenie numeru seryjnego dla aktualnie wybranego produktu. | Tak | Tak | Nr | Tak | Nr |
 | 1214 | Dodaj adres wysyłkowy | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nr |
 | 519 | Dodaj do karty upominkowej | Dodaj pieniądze do określonej karty upominkowej. | Tak | Tak | Nr | Nr | Nr |
@@ -63,7 +65,8 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 1053 | Zmiana z ukryciem raportu podczas zamknięcia kasy | Ustaw aktualną zmianę na zmianę z ukryciem raportu i wyloguj użytkownika. Zmiana z ukryciem raportu jest niedostępna dla dodatkowych transakcji ale jest dostępna dla operacji z użyciem szuflady, takich jak pobranie środków płatniczych i deklaracja środków płatniczych. | Tak | Tak | Tak | Nr | Nr |
 | 310 | Obliczanie sumy | Gdy obliczanie rabatów jest opóźnione, ta operacja inicjuje obliczanie bieżącej transakcji. | Tak | Tak | Nr | Tak | Nr |
 | 642 | Wynieś wszystkie produkty | Ustaw metodę dostawy wszystkich wierszy na **Wyniesienie**. | Tak | Tak | Nr | Tak\* | Nr |
-| 641 | Wynieś wybrane produkty | Ustaw metodę dostawy wybranych wierszy na **Wyniesienie**. | Tak | Tak | Nr | Tak\* | Nr |
+| 641 | Wynieś wybrane produkty | Ustaw metodę dostawy wybranych wierszy na **Wyniesienie**. | Tak | Tak | Nie | Tak\* | Nie |
+| 647 | Zmień tryb dostawy | Zmień metodę dostawy dla wstępnie skonfigurowanych wierszy wysyłki sprzedaży. | Tak | Tak | Nie | Nie| Nie |
 | 1215 | Zmień hasło | Ta operacja umożliwia użytkownikowi punktu sprzedaży zmianę hasła. | Tak | Tak | Tak | Nr | Nr |
 | 123 | Zmień jednostkę miary | Zmień jednostkę miary wybranej pozycji w wierszu. | Tak | Tak | Nr | Tak | Nr |
 | 639 | Wyczyść domyślnego przedstawiciela handlowego w transakcji | Usuń grupę prowizji sprzedaży (przedstawiciel handlowy) z transakcji. | Tak | Tak | Nr | Tak | Nr |
@@ -99,7 +102,8 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 1201 | Pozycja zmiennoprzecinkowa | Ta operacja umożliwia użytkownikowi dodanie pieniędzy do bieżącej szuflady lub zmiany. | Tak | Tak | Tak | Tak | Nr |
 | 1218 | Wymuś odblokowanie urządzenia peryferyjnego | System wykorzystuję tę operację wewnętrznie do odblokowania urządzeń peryferyjnych punktu sprzedaży. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nr |
 | 520 | Saldo na karcie upominkowej | Pokaż saldo karty upominkowej. | Tak | Tak | Nr | Nr | Nr |
-| 708 | Dezaktywuj urządzenie | Dezaktywuj bieżące urządzenie, aby nie możny było użyć go jako kasy punktu sprzedaży. | Nr | Nr | Nr | Nr | Nr |
+| 708 | Dezaktywuj urządzenie | Dezaktywuj bieżące urządzenie, aby nie możny było użyć go jako kasy punktu sprzedaży. | Nie | Nie | Nie | Nie | Nie |
+| 804 | Operacja przychodząca | Umożliwia dostęp do funkcji zarządzania przychodzącymi zapasami w magazynie sklepu. | Tak | Nie | Tak | Nie| Nie |
 | 517 | Konta wpływu/wpłat | Zarejestruj pieniądze, które są wprowadzane do szuflady kasowej z przyczyn innych niż sprzedaż. | Tak | Tak | Tak | Tak | Nr |
 | 801 | Wyszukiwanie w magazynie | Sprawdź ilości dostępne, zamówione i dostępność zapasów (ATP) dla bieżącego sklepu i innych dostępnych lokalizacji. | Tak | Tak | Tak | Nr | Nr |
 | 122 | Komentarz do faktury | Ta operacja umożliwia użytkownikowi wprowadzenie komentarza na temat bieżącej transakcji. | Tak | Tak | Nr | Tak | Nr |
@@ -110,11 +114,13 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 301 | Procent rabatu wiersza | Wprowadź procentu rabatu dla wiersza towaru w transakcji. Ta operacja jest używana tylko do towarów, na które można udzielać rabatów, i tylko w określonych limitach rabatu. | Tak | Tak | Nr | Tak | Nr |
 | 703 | Blokowanie rejestru | Zablokuj bieżącą kasę, aby nie można było jej użyć, ale nie wylogowuj bieżącego użytkownika. | Nr | Nr | Nr | Tak | Nr |
 | 701 | Wyloguj się | Wyloguj bieżącego użytkownika z kasy. | Tak | Tak | Tak | Tak | Nr |
-| 521 | Saldo punktów na karcie lojalnościowej | Pokaż saldo punktów dla określonej karty lojalnościowej. | Tak | Tak | Nr | Nr | Nr |
+| 521 | Saldo punktów na karcie lojalnościowej | Pokaż saldo punktów dla określonej karty lojalnościowej. | Tak | Tak | Nie | Nie | Nie |
+| 142 | Zarządzanie opłatami | Umożliwia wyświetlanie opłat dodatkowych stosowanych do transakcji i zarządzanie nimi. | Tak | Tak | Nie | Nie| Nie |
 | 918 | Zarządzaj zmianami | Wyświetlanie listy zmian aktywnych, zawieszonych i z ukryciem raportu. | Tak | Tak | Tak | Nr | Nr |
 | 914 | Zminimalizuj okno punktu sprzedaży | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nr |
 | 1000 | Otwieranie szuflady | Wykonaj operację „brak sprzedaży” i otwórz aktualnie wybraną szufladę kasy. | Tak | Tak | Tak | Tak | Nr |
-| 928 | Realizacja zamówienia | Ta operacja umożliwia użytkownikom pobranie, spakowanie, wysłanie lub odwołanie zamówień pobranych przez sklep. | Tak | Tak | Tak | Nr | Nr |
+| 928 | Realizacja zamówienia | Ta operacja umożliwia użytkownikom pobranie, spakowanie, wysłanie lub odwołanie zamówień pobranych przez sklep. | Tak | Tak | Tak | Nie | Nie |
+| 805 | Operacja wychodząca | Umożliwia dostęp do funkcji zarządzania wysyłkami wychodzących zamówień przeniesienia. | Tak | Nie | Tak | Nie| Nie |
 | 129 | Zastąpienie podatku dla produktu w wierszu | Zmień podatek w wierszu wybranego towaru na inny określony podatek. | Tak | Tak | Nr | Tak | Nr |
 | 1.3.0 | Zastąpienie z listy podatku dla produktu w wierszu | Zmień podatek w wierszu wybranego towaru na podatek wybrany z listy przez użytkownika. | Tak | Tak | Nr | Tak | Nr |
 | 127 | Zastąp podatek dla transakcji | Zmień podatek w transakcji na inny określony podatek. | Tak | Tak | Nr | Tak | Nr |
@@ -146,7 +152,8 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 100 | Sprzedaż produktu | Dodaj określony produkt do transakcji. | Tak | Tak | Tak | Tak | Nr |
 | 108 | Wyszukiwanie produktu | Ta operacja umożliwia użytkownikowi wyszukanie produktu przez przejście strony wyszukiwania produktów w punkcie sprzedaży. | Tak | Tak | Tak | Tak | Nr |
 | 633 | Data ważności oferty | Ta operacja umożliwia użytkownikowi wyświetlenie lub zmodyfikowanie daty ważności oferty sprzedaży. | Tak | Tak | Nr | Tak\* | Nr |
-| 627 | Oblicz ponownie | Oblicz ponownie wszystkie wiersze zamówienia odbiorcy i podatki, na podstawie bieżącej konfiguracji. | Tak | Tak | Nr | Tak\* | Nr |
+| 627 | Oblicz ponownie | Oblicz ponownie wszystkie wiersze zamówienia odbiorcy i podatki, na podstawie bieżącej konfiguracji. | Tak | Tak | Nie | Tak\* | Nie |
+| 143 | Oblicz ponownie opłaty | Umożliwia ponowne obliczenie opłat automatycznych zastosowanych do zamówienia. | Tak | Tak | Nie | Nie| Nie |
 | 515 | Odwołaj zamówienie | Ta operacja umożliwia użytkownikowi wyszukanie i wycofanie zamówień odbiorców i ofert sprzedaży. | Tak | Tak | Tak | Nr | Nr |
 | 504 | Wznów transakcję | Ta operacja umożliwia użytkownikowi wycofanie wcześniej zawieszone transakcji z bieżącego sklepu. | Tak | Tak | Nr | Tak‡ | Nr |
 | 305 | Zrealizuj punkty lojalnościowe | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Tak |

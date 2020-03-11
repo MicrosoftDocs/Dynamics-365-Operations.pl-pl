@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9f043d66fbd417633de71b5fa12b13b3f04e3452
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023638"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057817"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurowanie metod dostawy i opłat w biurze obsługi
 
@@ -66,7 +66,7 @@ Można skonfigurować opłaty, tak aby były stosowane do określonej metody dos
 
 W sekcji **Wiersze** można zdefiniować jedną lub więcej opłat z podziałem na waluty, zgodnie z potrzebami. Opłaty muszą być połączone z kodem opłaty, który określa reguły księgowania finansowego opłat. Pole **Kategoria** jest używane do definiowania sposobu obliczania opłat. Na przykład jeśli odbiorcy powinni być obciążani stałą stawką 9,95 USD, aby zamówienie zostało wysłane określoną metodą dostawy, użyj kategorii **Stałe**. Jeśli firma postanowi obciążyć odbiorców procentem sumy zamówienia w celu pokrycia opłat za dostawę, należy użyć kategorii **Procent**. Rzeczywiste obciążenie klientów jest zdefiniowane w polu **Wartość opłat**.
 
-Firmy prowadzące handel detaliczny często konfigurują opłaty warstwowe. W takim przypadku kwota płacona przez odbiorcę za dostawę zależy od wartości zamówienia. Aby skonfigurować opłaty warstwowe, wprowadź wartości w polach **Od kwoty** i **Do kwoty** oprócz definiowania samej opłaty w polu **Wartość opłat**. Na przykład dla zamówień mających wartość mniejszą niż 50 USD sprzedawca detaliczny nalicza opłatę 5,95 USD za wysyłkę drogą lądową. Dla zamówień, które mają wartość równą lub wyższą niż 50 USD, ale niższą niż 50 USD, sprzedawca detaliczny nalicza opłatę 7,95 USD. Na koniec dla zamówień, które mają wartość równą lub wyższą niż 100 USD, sprzedawca detaliczny oferuje bezpłatną wysyłkę. Na poniższej ilustracji przedstawiono konfigurację tych opłat.
+Firmy często konfigurują opłaty warstwowe. W takim przypadku kwota płacona przez odbiorcę za dostawę zależy od wartości zamówienia. Aby skonfigurować opłaty warstwowe, wprowadź wartości w polach **Od kwoty** i **Do kwoty** oprócz definiowania samej opłaty w polu **Wartość opłat**. Na przykład dla zamówień mających wartość mniejszą niż 50 USD sprzedawca detaliczny nalicza opłatę 5,95 USD za wysyłkę drogą lądową. Dla zamówień, które mają wartość równą lub wyższą niż 50 USD, ale niższą niż 50 USD, sprzedawca detaliczny nalicza opłatę 7,95 USD. Na koniec dla zamówień, które mają wartość równą lub wyższą niż 100 USD, sprzedawca detaliczny oferuje bezpłatną wysyłkę. Na poniższej ilustracji przedstawiono konfigurację tych opłat.
 
 ![Przykład stałych opłat warstwowych](media/fixedtieredcharges.png)
 

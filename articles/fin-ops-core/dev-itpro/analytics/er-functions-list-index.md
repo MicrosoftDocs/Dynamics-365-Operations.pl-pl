@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7fe2cbb5421da3c6dd1d044316b276836c5e5c1
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 45e95751e3adfe6aa208daaba774a349216e1f1f
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917311"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042074"
 ---
 # <a name="INDEX">INDEX, funkcja ER</a>
 
@@ -33,7 +33,7 @@ Funkcja `INDEX` zwraca wartość typu *Kontener (rekord)*, która jest wybierana
 
 ## <a name="syntax"></a>Składnia
 
-```
+```vb
 INDEX (list, index)
 ```
 

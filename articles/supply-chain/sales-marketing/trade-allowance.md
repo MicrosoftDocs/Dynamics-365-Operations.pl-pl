@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 623c25490964ccdf6abc37acaffee7ac0844cf39
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 35aad9bf89ba8c1ed6451304d8fc4fc6ffa575b5
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251162"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057786"
 ---
 # <a name="trade-allowance-management"></a>Zarządzanie odpisami handlowymi
 
 [!include [banner](../includes/banner.md)]
 
-Narzędzie Zarządzanie odpisami handlowymi pozwala firmom zarządzać programami promocji sprzedaży oferującymi nagrody pieniężne w postaci „wynagrodzenia za wyniki” odbiorcom, którzy osiągną wyznaczone cele ilościowe i behawioralne. Możliwości tej funkcji są przeznaczone dla firm, które realizują kompleksowe procesy promowania w celu osiągania zysku, obejmujące m.in. etapy budżetowania i przydzielania funduszy promocji, skonfigurowania umowy rabatowej, generowania i przetwarzania roszczeń, przetwarzania płatności oraz analizy efektywności promocji.
+Narzędzie Zarządzanie odpisami handlowymi pozwala firmom zarządzać programami promocji oferującymi nagrody pieniężne w postaci „wynagrodzenia za wyniki” odbiorcom, którzy osiągną wyznaczone cele ilościowe i behawioralne. Możliwości tej funkcji są przeznaczone dla firm, które realizują kompleksowe procesy promowania w celu osiągania zysku, obejmujące m.in. etapy budżetowania i przydzielania funduszy promocji, skonfigurowania umowy rabatowej, generowania i przetwarzania roszczeń, przetwarzania płatności oraz analizy efektywności promocji.
 
 
 Ten artykuł zawiera ogólne omówienie funkcji Zarządzanie odpisami handlowymi oraz przybliża typowe zadania wykonywane w ramach zarządzania programem promocji sprzedaży. Oczekuje się, że z tej funkcjonalności będzie korzystać kilka rodzajów użytkowników, którzy mają różne obowiązki w zakresie operacji i podejmowania decyzji:
@@ -105,7 +105,7 @@ Karta **Wydarzenia merchandisingowe** pokazuje typy wydarzeń objętych umową. 
 
 Po wybraniu wydarzenia merchandisingowego i kliknięciu karty **Kwoty** zostaną wyświetlone szczegóły wydarzenia.
 
-![Wierze umowy rabatu handlowego](./media/trade-allowance-management-agreements-lines.png "Wierze umowy rabatu handlowego")
+![Wiersze umowy rabatu handlowego](./media/trade-allowance-management-agreements-lines.png "Wiersze umowy rabatu handlowego")
 
 W obszarze **Wiersze odpisu handlowego** można określić zakres ilości lub kwoty, jaki odbiorca musi osiągnąć, aby zgodnie z definicjami otrzymać nagrody.
 

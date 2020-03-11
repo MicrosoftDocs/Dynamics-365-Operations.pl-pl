@@ -3,7 +3,7 @@ title: Anuluj planowanie pracy
 description: W tym temacie wyjaśniono, jak usunąć aktywne planowanie pracy, gdy używana jest funkcja optymalizacji planowania.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/26/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,21 +19,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a2d90f04985fdd66ca83582ee676100fffb26981
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 18c5c7b8030fc6adbc548dab750e4f454aebc867
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2774032"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076356"
 ---
+# <a name="cancel-a-planning-job"></a>Anulowanie zadania planowania
+
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-# <a name="cancel-a-planning-job"></a>Anuluj planowanie pracy
+W Microsoft Dynamics 365 Supply Chain Management, można usunąć aktywne planowanie pracy, gdy używana jest funkcja optymalizacji planowania. Po wybraniu opcji **Anuluj** w oknie dialogowym, gdy zadanie optymalizacji planowania zostanie wyzwolone bezpośrednio z interfejsu użytkownika (a nie w tle), zadanie optymalizacji planowania nie zostanie anulowane. Nawet w przypadku otrzymania ostrzeżenia, na przykład „Operacja anulowana”, trzeba wykonać następujące kroki, aby anulować zadanie planowania z optymalizacją planowania.
 
-W Microsoft Dynamics 365 Supply Chain Management, można usunąć aktywne planowanie pracy, gdy używana jest funkcja optymalizacji planowania.
 
-Aby anulować aktywne zadanie planowania, należy wykonać następujące kroki.
+Aby anulować aktywne zadanie planowania, należy wykonać następujące kroki. 
 
 > [!NOTE]
 > Tylko aktywna praca może być usunięta.
@@ -49,11 +50,11 @@ Stan zadania będzie **anulowany** do momentu potwierdzenia przez usługę optym
 > [!NOTE]
 > Aby wyświetlić zmiany stanu, należy odświeżyć stronę, wybierając przycisk **Odśwież**.
 
-## <a name="related-resources"></a>Powiązane zasoby
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie planowania optymalizacji](planning-optimization-overview.md)
+[Omówienie optymalizacji planowania](planning-optimization-overview.md)
 
-[Rozpocznij pracę z optymalizacją planowania](get-started.md)
+[Rozpoczęcie optymalizacji planowania](get-started.md)
 
 [Analiza dopasowywania optymalizacją planowania](planning-optimization-fit-analysis.md)
 

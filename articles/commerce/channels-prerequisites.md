@@ -3,7 +3,7 @@ title: Wymagania wstępne konfiguracji kanałów
 description: W tym temacie przedstawiono omówienie wymagań wstępnych dotyczących konfiguracji kanałów w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b861d90f1333c8f6e61a83602ed74e30b65f3dc1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 8a0927f6ee9b2d5bed1327bb223ceca85ecc16a0
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002296"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081322"
 ---
 # <a name="channel-setup-prerequisites"></a>Wymagania wstępne konfiguracji kanałów
 
@@ -40,16 +40,16 @@ Aby można było utworzyć kanał Dynamics 365 Commerce, należy wykonać kilka 
 
 ## <a name="initialization"></a>Inicjalizacja
 
-- [Inicjowanie danych początkowych](../retail/enable-configure-retail-functionality.md)
+- [Inicjowanie danych początkowych](enable-configure-retail-functionality.md)
 
 ## <a name="global-prerequisities-required-for-all-channel-types"></a>Globalne wymagania wstępne dla wszystkich typów kanałów
 
 - [Definiowanie i konfigurowanie struktury firmy](channels-legal-entities.md) 
 - [Konfigurowanie hierarchii organizacyjnej](channels-org-hierarchies.md)
 - [Ustawianie magazynu](channels-setup-warehouse.md)
-- [Konfiguracja podatku warunkowego](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Konfiguracja podatku warunkowego](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
 - [Konfigurowanie powiadomień pocztą e-mail](email-notification-profiles.md)
-- [Konfigurowanie sekwencji numerów](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Konfigurowanie sekwencji numerów](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
 - [Konfigurowanie domyślnego odbiorcy i książki adresowej](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)
@@ -57,21 +57,19 @@ Aby można było utworzyć kanał Dynamics 365 Commerce, należy wykonać kilka 
 
 ## <a name="retail-channel-prerequisites"></a>Wymagania wstępne kanału Retail
 
-- [Kody informacji i grupy kodów informacji](https://docs.microsoft.com/en-us/dynamics365/retail/info-codes-retail?toc=/dynamics365/commerce/toc.json)
+- [Kody informacji i grupy kodów informacji](info-codes-retail.md)
 - [Konfigurowanie profilu funkcji sieci sprzedaży](retail-functionality-profile.md)
 - [Konfigurowanie książki adresowej pracowników](new-address-book.md)
-- [Konfigurowanie układu ekranu](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json)
-- [Konfigurowanie stacji sprzętowej](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/commerce/toc.json)
+- [Konfigurowanie układu ekranu](pos-screen-layouts.md)
+- [Konfigurowanie stacji sprzętowej](retail-hardware-station-configuration-installation.md)
 
 ## <a name="call-center-channel-prerequisites"></a>Wymagania wstępne kanału biura obsługi
 
 - Parametry biura obsługi
-- Metody zwrotu biura obsługi
-- Typy wynajmu
-- Usługi płatności
-- Kody wstrzymania zamówień
+- [Zamówienie biura obsługi i metody płatności zwrotnych](work-with-payments.md)
+- [Metody dostawy i opłat w biurze obsługi](configure-call-center-delivery.md)
 
-## <a name="online-channel-prerequisites"></a>Wymagania wstępne kanału online
+## <a name="online-channel-prerequisites"></a>Wymagania wstępne dotyczące kanału online
 
 - [Tworzenie profilu funkcji online](online-functionality-profile.md)
 

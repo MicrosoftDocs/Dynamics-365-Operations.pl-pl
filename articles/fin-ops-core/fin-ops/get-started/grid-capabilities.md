@@ -3,7 +3,7 @@ title: Możliwości siatki
 description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Funkcja nowej siatki musi być włączona, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
 manager: AnnBe
-ms.date: 01/20/2020
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,18 +14,19 @@ ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b49d7823f48bcc9cdbb56b87d5fa72d46ddfa15c
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 7136edba828bf97b6e0c8d2a698b884640d680e5
+ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019951"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3036272"
 ---
-# <a name="grid-capabilites"></a>Możliwości siatki
+# <a name="grid-capabilities"></a>Możliwości siatki
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Nowy formant siatki zapewnia wiele przydatnych i zaawansowanych funkcji, które mogą być używane w celu zwiększenia wydajności użytkowników, tworzenia bardziej interesujących widoków danych oraz uzyskiwania informacji o szczegółowych danych. Ten artykuł będzie obejmował następujące możliwości: 
 
@@ -38,10 +39,11 @@ Nowy formant siatki zapewnia wiele przydatnych i zaawansowanych funkcji, które 
 W aplikacjach grupy Finance and Operations użytkownicy mają możliwość wyświetlania sum na dole kolumn liczbowych w siatkach. Sumy te są wyświetlane w sekcji stopki u dołu siatki. 
 
 ### <a name="showing-the-grid-footer"></a>Pokazywanie stopki siatki
-Każda siatka tabelaryczna w aplikacjach Finance and Operations zawiera obszar stopki w dolnej części siatki, w którym mogą być widoczne cenne informacje związane z wyświetlanymi danymi. Te informacje to m.in: 
--  Liczba zaznaczonych wierszy w tabeli (gdy zaznaczony jest więcej niż jeden rekord)
--  Sumy końcowe u dołu skonfigurowanych kolumn liczbowych
--  Liczby kolumn w zestawie danych 
+W dolnej części każdej siatki tabelarycznej w aplikacjach Finance and Operations znajduje się obszar stopki. Stopka może zawierać cenne informacje związane z danymi wyświetlanymi w siatce. Oto kilka przykładów takich informacji:
+
+- Liczba zaznaczonych wierszy w tabeli (gdy zaznaczony jest więcej niż jeden rekord)
+- Sumy końcowe u dołu skonfigurowanych kolumn liczbowych
+- Liczby kolumn w zestawie danych 
 
 Ta stopka jest domyślnie ukryta, ale można ją łatwo włączyć. Aby wyświetlić stopkę siatki, kliknij prawym przyciskiem myszy nagłówek kolumny w siatce i wybierz opcję **Pokazuj stopkę**. Po włączeniu stopki dla określonej siatki ustawienie to zostanie zapamiętane, dopóki użytkownik nie zdecyduje się na ukrycie stopki, co można wykonać, klikając prawym przyciskiem myszy nagłówek kolumny i wybierając polecenie **Ukryj stopkę**.  Uwaga: umieszczenie akcji **Pokazuj stopkę/Ukryj stopkę** zostanie zmienione w przyszłej aktualizacji. 
 
@@ -49,9 +51,16 @@ Ta stopka jest domyślnie ukryta, ale można ją łatwo włączyć. Aby wyświet
 Obecnie żadne kolumny nie zostaną skonfigurowane tak, aby domyślnie były wyświetlane sumy. Zamiast tego jest to uważane za jednorazowe działanie konfiguracji, podobne do korygowania szerokości kolumn w siatkach. Po określeniu, że dla kolumny mają być wyświetlone sumy, to ustawienie zostanie zapamiętane przy następnej wizycie na tej stronie.  
 
 Istnieją dwa sposoby skonfigurowania kolumny do wyświetlania sumy: 
-1.  Kliknij prawym przyciskiem myszy kolumnę, dla której chcesz zobaczyć sumę i wybierz opcję **Suma dla tej kolumny**. Ta akcja spowoduje wykonanie trzech czynności. Po pierwsze, stopka będzie widoczna. Po drugie, system zapisze Twoje preferencje dotyczące wyświetlania sum w tej kolumnie. Po trzecie, ta akcja spowoduje zainicjowanie obliczania sum dla tej kolumny i wszystkich pozostałych wcześniej skonfigurowanych wartości sum. Czas potrzebny do wyświetlenia sumy jest bezpośrednio związany z rozmiarem sumowanego zestawu danych.  
 
-2.  Po wyświetleniu stopki można również kliknąć przycisk **Wyświetl sumę** w obszarze stopki u dołu kolumny, dla której jest wyświetlana suma. Jeśli nie ma skonfigurowanych kolumn, przycisk **Pokazuj sumę** będzie widoczny dla wszystkich kolumn liczbowych. Po skonfigurowaniu co najmniej jednej kolumny dla sum, przyciski **Pokazuj podsumowanie** będą dostępne tylko przy najechaniu na nie lub skoncentrowaniu się na nich. Ta akcja po prostu zapisuje preferencję do wyświetlania sumy w tej kolumnie dla przyszłych odwiedzin na tej stronie, a ten stan jest wskazywany przez kreskę wyświetlaną w tej kolumnie w stopce (lub w polu suma zostanie wyświetlona natychmiast, jeśli zestaw danych jest wystarczająco mały).
+- Kliknij prawym przyciskiem myszy kolumnę, dla której chcesz zobaczyć sumę, a następnie wybierz **Suma dla tej kolumny**. Ta akcja powoduje wystąpienie trzech zdarzeń:
+
+    1. Stopka staje się widoczna. 
+    2. Twoje preferencje dotyczące wyświetlania sumy dla tej kolumny zostaną zapisane. 
+    3. Obliczanie sum jest inicjowane dla tej kolumny i wszystkich innych kolumn, dla których skonfigurowano uprzednio wyświetlanie sum. Czas wymagany do wyświetlenia sumy zależy od rozmiaru zestawu danych do sumowania.
+
+- Po wyświetleniu stopki wybierz opcję **Pokaż sumę** w obszarze stopki u dołu kolumny, dla której ma zostać wyświetlona suma. Jeśli nie ma skonfigurowanych kolumn, przycisk **Pokazuj sumę** będzie dostępny dla wszystkich kolumn liczbowych. 
+
+    Po skonfigurowaniu co najmniej jednej kolumny dla sum, przyciski **Pokaż sumę** będą dostępne tylko przy najechaniu na nie kursorem lub skoncentrowaniu się na nich. Akcja wybranie opcji **Pokaż sumę** powoduje zapisanie preferencji w tej kolumnie, dzięki czemu preferencja będzie stosowana podczas przyszłych odwiedzin na stronie. W stopce ten stan jest wskazywany przez kreskę wyświetlaną w kolumnie. (Jeśli zestaw danych jest wystarczająco mały, suma jest natychmiast pokazywana.)
 
 Jeśli popełnisz błąd i nie chcesz już wyświetlać sumy w określonej kolumnie, kliknij prawym przyciskiem myszy kolumnę i wybierz polecenie **Ukryj sumę** lub wybierz przycisk **Ukryj sumę** w stopce w tej kolumnie. Ta preferencja zostanie również zapisana dla przyszłych odwiedzin na stronie. 
 
@@ -65,20 +74,20 @@ Sumy zostaną automatycznie zaktualizowane podczas aktualizowania, usuwania lub 
 ## <a name="grouping-data"></a>Grupowanie danych
 Użytkownicy biznesowi często muszą przeprowadzać analizę danych ad hoc. Chociaż można to zrobić przez wyeksportowanie danych do Microsoft Excel i za pomocą tabel przestawnych, możliwość **Grupowania** w siatkach tabelarycznych umożliwia użytkownikom organizowanie ich danych w interesujące sposoby w aplikacjach Finance and Operations. Ponieważ ta funkcja rozszerza funkcję **Sum**, **Grupowanie** umożliwia również uzyskanie istotnych informacji na temat danych przez zapewnienie sum częściowych na poziomie grupy.
 
-Aby skorzystać z tej funkcji, kliknij prawym przyciskiem myszy kolumnę, według której chcesz grupować, a następnie wybierz polecenie **Grupuj według tej kolumny**. Ta akcja spowoduje posortowanie danych według wybranej kolumny, dodanie nowej grupy według kolumny do początku do siatki, a następnie wstawienie „wierszy nagłówka” na początku każdej grupy. Te wiersze nagłówka zawierają następujące informacje o każdej grupie: 
+Aby skorzystać z tej funkcji, kliknij prawym przyciskiem myszy kolumnę, według której chcesz grupować, a następnie wybierz polecenie **Grupuj według tej kolumny**. Ta akcja spowoduje posortowanie danych według wybranej kolumny, dodanie nowej Grupy według kolumny do początku do siatki, a następnie wstawienie „wierszy nagłówka” na początku każdej grupy. Te wiersze nagłówka zawierają następujące informacje o każdej grupie: 
 -  Wartość danych dla grupy 
--  Etykieta kolumny. Będzie to szczególnie przydatne, gdy jest obsługiwanych wiele poziomów grupowania.  
+-  Etykieta kolumny (Te informacje są szczególnie przydatne po obsłużeniu wielu poziomów grupowania.)
 -  Liczba wierszy danych w tej grupie
 -  Sumy cząstkowe dla dowolnej kolumny skonfigurowanej do wyświetlania sum
 
 Przy włączonym [Zapisanym widoku](saved-views.md), grupowanie może zostać zapisane przez personalizację jako część widoku, aby uzyskać szybki dostęp przy następnym odwiedzaniu strony.  
 
-Jeśli zostanie wybrana opcja **Grupuj według tej kolumny** w innej kolumnie, to pierwotne grupowanie zostanie zastąpione, ponieważ tylko poziom grupowania będzie obsługiwany w aktualizacji 10.0.9 / Platform update 33.
+Jeśli zostanie wybrana opcja **Grupuj według tej kolumny** w innej kolumnie, oryginalne grupowanie zostało zastąpione, ponieważ tylko jeden poziom grupowania jest obsługiwany w wersji 10.0.9 z aktualizacją platformy 33.
 
 Aby cofnąć grupowanie w siatce, kliknij prawym przyciskiem myszy kolumnę grupowanie i wybierz polecenie **Rozgrupuj**.  
 
 
 ## <a name="evaluating-math-expressions"></a>Ocenianie wyrażeń matematycznych
-Jako środek zwiększający produktywność, użytkownik może wprowadzać formuły matematyczne w komórkach liczbowych w siatce zamiast wykonywać obliczenia w aplikacji poza systemem. Można na przykład wprowadzić wartość **=15\*4**, a następnie wykroczenie tabulacji w polu. System oceni wyrażenie i zapisze wartość „60” dla pola.
+Jako środek zwiększający produktywność, użytkownicy mogą wprowadzać formuły matematyczne w komórkach liczbowych w siatce. Nie muszą one przeliczać w aplikacji poza systemem. Jeśli na przykład wprowadzisz wartość **=15\*4**, a następnie naciśnij klawisz **Tab**, aby przenieść się z pola, system oszacuje wyrażenie i zapisze wartość **60** dla tego pola.
 
-Aby system rozpoznawał wartość jako wyrażenie, należy uruchomić wartość ze znakiem równości (**=**). Więcej informacji na temat obsługiwanych operatorów i składni zawiera sekcja [obsługiwane symbole matematyczne](http://redhivesoftware.github.io/math-expression-evaluator/#supported-maths-symbols).  
+Aby system rozpoznawał wartość jako wyrażenie, należy uruchomić wartość ze znakiem równości (**=**). Więcej informacji na temat obsługiwanych operatorów i składni zawiera sekcja [obsługiwane symbole matematyczne](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).  

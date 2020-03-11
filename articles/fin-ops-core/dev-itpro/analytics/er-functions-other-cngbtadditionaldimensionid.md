@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df693d745d1fe74b4500dd3fda0cc0c4be21142d
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 2395a1932e543e35ced28a2a6e56ab44835de19a
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917035"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041545"
 ---
 # <a name="CN_GBT_ADDITIONALDIMENSIONID">CN_GBT_ADDITIONALDIMENSIONID, funkcja ER</a>
 
@@ -33,7 +33,7 @@ Funkcja `CN_GBT_ADDITIONALDIMENSIONID` zwraca wartość typu *Ciąg*, która rep
 
 ## <a name="syntax"></a>Składnia
 
-```
+```vb
 CN_GBT_ADDITIONALDIMENSIONID (text, number)
 ```
 

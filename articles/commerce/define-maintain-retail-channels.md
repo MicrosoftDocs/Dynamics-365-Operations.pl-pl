@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 63639d69af90c6aa37bbf7af7868bca71942063f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0fbca2c9178cd372653287afdf72deaf75442604
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023633"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057921"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definiowanie i obsługa kanałów sprzedaży detalicznej
 
@@ -47,9 +47,9 @@ Przed skonfigurowaniem sklepu należy wykonać następujące zadania:
 3. Konfigurowanie sekwencji identyfikatorów dla sklepów, zestawień dotyczących sklepu i załączników do zestawień.
 4. Konfigurowanie parametrów Commerce.
 5. Konfigurowanie metod płatności, które akceptuje sklep.
-6. Do przetwarzania transakcji karty kredytowej w kasach punktów sprzedaży (POS) detalicznej można też skonfigurować usługi płatności.
+6. Do przetwarzania transakcji karty kredytowej w kasach punktów sprzedaży (POS)można też skonfigurować usługi płatności.
 7. Konfigurowanie grup podatków.
-8. Konfigurowanie produktów sieci sprzedaży. W ramach tego zadania należy także skonfigurować hierarchie produktów, asortymentów produktów i wariantów produktu.
+8. Konfigurowanie produktów. W ramach tego zadania należy także skonfigurować hierarchie produktów, asortymentów produktów i wariantów produktu.
 9. Konfigurowanie grup cenowych produktów.
 10. Ustawianie cen produktu. W ramach tego zadania można również ustawić korekty cen, rabaty i okresy rabatu.
 11. Konfigurowanie członków personelu.
@@ -87,5 +87,5 @@ Po wprowadzeniu szczegółów sklepu zakończ te zadania, aby wysłać nowe dane
 Commerce używa hierarchii organizacji do tworzenia struktury w kanałach. Hierarchie organizacji reprezentują relacje między organizacjami, które składają się na działalność. Podczas konfigurowania sklepów, można je dodawać do hierarchii organizacyjnej. Sklepy współdzielą wówczas dane używane do asortymentów, uzupełnienia i raportów.
 
 > [!NOTE]
-> Aby korzystać z funkcji sprzedaży w aplikacji Retail, klucz konfiguracji dla opcji **Wielokrotna wysyłka** musi być włączony. Ten klucz konfiguracji można znaleźć w kluczach **konfiguracji handlu** w obszarze **Administracja systemem**\> **Instalator** \> **Konfiguracja licencji**. Jest to wymagane z powodu funkcji aplikacji Retail, która wykonuje różne operacje weryfikacji na podstawie adresu dostawy skonfigurowanego na poziomie wiersza zamówienia sprzedaży.
+> Aby korzystać z funkcji sprzedaży w aplikacji Commerce, klucz konfiguracji dla opcji **Wielokrotna wysyłka** musi być włączony. Ten klucz konfiguracji można znaleźć w kluczach **konfiguracji handlu** w obszarze **Administracja systemem**\> **Instalator** \> **Konfiguracja licencji**. Jest to wymagane z powodu różnych operacji weryfikacji na podstawie adresu dostawy skonfigurowanego na poziomie wiersza zamówienia sprzedaży.
 

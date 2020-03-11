@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91e4658043278b9b8d73766cc0deac5d50d51a59
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 0d51b59c437bd216c6d229546136bb604239fa92
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916161"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042005"
 ---
 # <a name="LISTOFFIELDS">LISTOFFIELDS, funkcja ER</a>
 
@@ -33,13 +33,13 @@ Funkcja `LISTOFFIELDS` zwraca wartość typu *Lista rekordów*, która jest twor
 
 ## <a name="syntax-1"></a>Składnia 1
 
-```
+```vb
 LISTOFFIELDS (path)
 ```
 
 ## <a name="syntax-2"></a>Składnia 2
 
-```
+```vb
 LISTOFFIELDS (path, language)
 ```
 
@@ -121,7 +121,7 @@ Typ źródła danych *Pole obliczeniowe* jest używane do konfigurowania źróde
 
 W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykietę wyliczenia w języku niemieckim (Szwajcaria), jeśli takie tłumaczenie jest dostępne. Jeśli tłumaczenie na język niemiecki (Szwajcaria) nie jest dostępne, etykieta pozostaje w języku niemieckim.
 
-```
+```vb
 IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 ```
 
