@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42a345fc48b0d87b353308060903a6b5156c0e62
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 808e328bfcc35c96091da9a69850429b82a71070
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915885"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070582"
 ---
-# <span data-ttu-id="d8cfc-103"><a name="CH_BANK_MOD_10">CH_BANK_MOD_10, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="d8cfc-103"><a name="CH_BANK_MOD_10">CH_BANK_MOD_10 ER function</a></span></span>
+# <span data-ttu-id="bea89-103"><a name="CH_BANK_MOD_10">CH_BANK_MOD_10, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="bea89-103"><a name="CH_BANK_MOD_10">CH_BANK_MOD_10 ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d8cfc-104">Funkcja `CH_BANK_MOD_10` zwraca wartość *Ciąg*, która reprezentuje odwołanie do wierzyciela jako wyrażenie MOD10, na podstawie cyfr określonego numeru faktury.</span><span class="sxs-lookup"><span data-stu-id="d8cfc-104">The `CH_BANK_MOD_10` function returns a *String* value that represents a creditor reference as an MOD10 expression, based on the digits of the specified invoice number.</span></span>
+<span data-ttu-id="bea89-104">Funkcja `CH_BANK_MOD_10` zwraca wartość *Ciąg*, która reprezentuje odwołanie do wierzyciela jako wyrażenie MOD10, na podstawie cyfr określonego numeru faktury.</span><span class="sxs-lookup"><span data-stu-id="bea89-104">The `CH_BANK_MOD_10` function returns a *String* value that represents a creditor reference as an MOD10 expression, based on the digits of the specified invoice number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d8cfc-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="d8cfc-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bea89-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="bea89-105">Syntax</span></span>
 
-```
+```vb
 CH_BANK_MOD_10 (invoice number digits)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="d8cfc-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="d8cfc-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="bea89-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="bea89-106">Arguments</span></span>
 
-<span data-ttu-id="d8cfc-107">`invoice number digits`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="d8cfc-107">`invoice number digits`: *String*</span></span>
+<span data-ttu-id="bea89-107">`invoice number digits`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="bea89-107">`invoice number digits`: *String*</span></span>
 
-<span data-ttu-id="d8cfc-108">Wartość tekstowa reprezentująca cyfry numeru faktury.</span><span class="sxs-lookup"><span data-stu-id="d8cfc-108">A text value that represents the digits of an invoice number.</span></span>
+<span data-ttu-id="bea89-108">Wartość tekstowa reprezentująca cyfry numeru faktury.</span><span class="sxs-lookup"><span data-stu-id="bea89-108">A text value that represents the digits of an invoice number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="d8cfc-109">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="d8cfc-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="bea89-109">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="bea89-109">Return values</span></span>
 
-<span data-ttu-id="d8cfc-110">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="d8cfc-110">*String*</span></span>
+<span data-ttu-id="bea89-110">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="bea89-110">*String*</span></span>
 
-<span data-ttu-id="d8cfc-111">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="d8cfc-111">The resulting text value.</span></span>
+<span data-ttu-id="bea89-111">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="bea89-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d8cfc-112">Przykład</span><span class="sxs-lookup"><span data-stu-id="d8cfc-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bea89-112">Przykład</span><span class="sxs-lookup"><span data-stu-id="bea89-112">Example</span></span>
 
-<span data-ttu-id="d8cfc-113">Funkcja `CH_BANK_MOD_10 ("VEND-200002")` zwraca wartość **3**.</span><span class="sxs-lookup"><span data-stu-id="d8cfc-113">`CH_BANK_MOD_10 ("VEND-200002")` returns **3**.</span></span>
+<span data-ttu-id="bea89-113">Funkcja `CH_BANK_MOD_10 ("VEND-200002")` zwraca wartość **3**.</span><span class="sxs-lookup"><span data-stu-id="bea89-113">`CH_BANK_MOD_10 ("VEND-200002")` returns **3**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="d8cfc-114">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="d8cfc-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="bea89-114">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="bea89-114">Additional resources</span></span>
 
-[<span data-ttu-id="d8cfc-115">Inne funkcje (specyficzne dla domeny biznesowej)</span><span class="sxs-lookup"><span data-stu-id="d8cfc-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="bea89-115">Inne funkcje (specyficzne dla domeny biznesowej)</span><span class="sxs-lookup"><span data-stu-id="bea89-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)

@@ -18,49 +18,49 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d3ff87a59632d58a7c34ef96f856b38f005651
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 04c7b32e2a9578f8864570a552817ec3ce28fa43
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915770"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041190"
 ---
-# <span data-ttu-id="92747-103"><a name="CONCATENATE">CONCATENATE, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="92747-103"><a name="CONCATENATE">CONCATENATE ER function</a></span></span>
+# <span data-ttu-id="7560b-103"><a name="CONCATENATE">CONCATENATE, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="7560b-103"><a name="CONCATENATE">CONCATENATE ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="92747-104">Funkcja `CONCATENATE` zwraca wszystkie ciągi tekstowe określone jako wartość typu *Ciąg* po ich połączeniu w jeden ciąg.</span><span class="sxs-lookup"><span data-stu-id="92747-104">The `CONCATENATE` function returns all the specified text strings as a *String* value after they have been joined into one string.</span></span>
+<span data-ttu-id="7560b-104">Funkcja `CONCATENATE` zwraca wszystkie ciągi tekstowe określone jako wartość typu *Ciąg* po ich połączeniu w jeden ciąg.</span><span class="sxs-lookup"><span data-stu-id="7560b-104">The `CONCATENATE` function returns all the specified text strings as a *String* value after they have been joined into one string.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="92747-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="92747-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7560b-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="7560b-105">Syntax</span></span>
 
-```
+```vb
 CONCATENATE (text 1[, text 2, …, text N])
 ```
 
-## <a name="arguments"></a><span data-ttu-id="92747-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="92747-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="7560b-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="7560b-106">Arguments</span></span>
 
-<span data-ttu-id="92747-107">`text 1`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="92747-107">`text 1`: *String*</span></span>
+<span data-ttu-id="7560b-107">`text 1`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="7560b-107">`text 1`: *String*</span></span>
 
-<span data-ttu-id="92747-108">Odwołanie do źródła danych o typie danych *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="92747-108">A reference to a data source of the *String* data type.</span></span> <span data-ttu-id="92747-109">Ten argument jest wymagany.</span><span class="sxs-lookup"><span data-stu-id="92747-109">This argument is required.</span></span>
+<span data-ttu-id="7560b-108">Odwołanie do źródła danych o typie danych *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="7560b-108">A reference to a data source of the *String* data type.</span></span> <span data-ttu-id="7560b-109">Ten argument jest wymagany.</span><span class="sxs-lookup"><span data-stu-id="7560b-109">This argument is required.</span></span>
 
-<span data-ttu-id="92747-110">`text N`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="92747-110">`text N`: *String*</span></span>
+<span data-ttu-id="7560b-110">`text N`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="7560b-110">`text N`: *String*</span></span>
 
-<span data-ttu-id="92747-111">Odwołanie do źródła danych o typie danych *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="92747-111">A reference to a data source of the *String* data type.</span></span> <span data-ttu-id="92747-112">Te dodatkowe argumenty są opcjonalne.</span><span class="sxs-lookup"><span data-stu-id="92747-112">These additional arguments are optional.</span></span>
+<span data-ttu-id="7560b-111">Odwołanie do źródła danych o typie danych *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="7560b-111">A reference to a data source of the *String* data type.</span></span> <span data-ttu-id="7560b-112">Te dodatkowe argumenty są opcjonalne.</span><span class="sxs-lookup"><span data-stu-id="7560b-112">These additional arguments are optional.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="92747-113">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="92747-113">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="7560b-113">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="7560b-113">Return values</span></span>
 
-<span data-ttu-id="92747-114">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="92747-114">*String*</span></span>
+<span data-ttu-id="7560b-114">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="7560b-114">*String*</span></span>
 
-<span data-ttu-id="92747-115">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="92747-115">The resulting text value.</span></span>
+<span data-ttu-id="7560b-115">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="7560b-115">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="92747-116">Przykład</span><span class="sxs-lookup"><span data-stu-id="92747-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7560b-116">Przykład</span><span class="sxs-lookup"><span data-stu-id="7560b-116">Example</span></span>
 
-<span data-ttu-id="92747-117">Funkcja `CONCATENATE ("abc", "def")` zwraca wartość **"abcdef"**.</span><span class="sxs-lookup"><span data-stu-id="92747-117">`CONCATENATE ("abc", "def")` returns **"abcdef"**.</span></span>
+<span data-ttu-id="7560b-117">Funkcja `CONCATENATE ("abc", "def")` zwraca wartość **"abcdef"**.</span><span class="sxs-lookup"><span data-stu-id="7560b-117">`CONCATENATE ("abc", "def")` returns **"abcdef"**.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="92747-118">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="92747-118">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="7560b-118">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="7560b-118">Usage notes</span></span>
 
-<span data-ttu-id="92747-119">Wyrażenie `"abc" & "def"` również zwraca wartość **abcdef**.</span><span class="sxs-lookup"><span data-stu-id="92747-119">The expression `"abc" & "def"` also returns **"abcdef"**.</span></span>
+<span data-ttu-id="7560b-119">Wyrażenie `"abc" & "def"` również zwraca wartość **abcdef**.</span><span class="sxs-lookup"><span data-stu-id="7560b-119">The expression `"abc" & "def"` also returns **"abcdef"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="92747-120">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="92747-120">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="7560b-120">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="7560b-120">Additional resources</span></span>
 
-[<span data-ttu-id="92747-121">Funkcje tekstowe</span><span class="sxs-lookup"><span data-stu-id="92747-121">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="7560b-121">Funkcje tekstowe</span><span class="sxs-lookup"><span data-stu-id="7560b-121">Text functions</span></span>](er-functions-category-text.md)

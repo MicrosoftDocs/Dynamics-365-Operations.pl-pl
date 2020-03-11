@@ -18,65 +18,65 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 700a48d2c5a77398267e6daaaea3ecb6c95e7f6e
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: ef617ebfcaeb75e0284ea3cb4e889a204120b3d3
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916368"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042373"
 ---
-# <span data-ttu-id="558cb-103"><a name="DATEVALUE">DATEVALUE, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="558cb-103"><a name="DATEVALUE">DATEVALUE ER function</a></span></span>
+# <span data-ttu-id="0c49a-103"><a name="DATEVALUE">DATEVALUE, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="0c49a-103"><a name="DATEVALUE">DATEVALUE ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="558cb-104">Funkcja `DATEVALUE` zwraca wartość *daty*, która jest konwertowana z wartości danego tekstu w określonym formacie i opcjonalnie określonej [kultury](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) na wartość daty.</span><span class="sxs-lookup"><span data-stu-id="558cb-104">The `DATEVALUE` function returns a *Date* value that is converted from a given text value in the specified format and in an optionally specified [culture](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) to a date value.</span></span> <span data-ttu-id="558cb-105">Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).</span><span class="sxs-lookup"><span data-stu-id="558cb-105">For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).</span></span>
+<span data-ttu-id="0c49a-104">Funkcja `DATEVALUE` zwraca wartość *daty*, która jest konwertowana z wartości danego tekstu w określonym formacie i opcjonalnie określonej [kultury](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) na wartość daty.</span><span class="sxs-lookup"><span data-stu-id="0c49a-104">The `DATEVALUE` function returns a *Date* value that is converted from a given text value in the specified format and in an optionally specified [culture](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) to a date value.</span></span> <span data-ttu-id="0c49a-105">Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).</span><span class="sxs-lookup"><span data-stu-id="0c49a-105">For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).</span></span>
 
-## <a name="syntax-1"></a><span data-ttu-id="558cb-106">Składnia 1</span><span class="sxs-lookup"><span data-stu-id="558cb-106">Syntax 1</span></span>
+## <a name="syntax-1"></a><span data-ttu-id="0c49a-106">Składnia 1</span><span class="sxs-lookup"><span data-stu-id="0c49a-106">Syntax 1</span></span>
 
-```
+```vb
 DATEVALUE (text, format)
 ```
 
-## <a name="syntax-2"></a><span data-ttu-id="558cb-107">Składnia 2</span><span class="sxs-lookup"><span data-stu-id="558cb-107">Syntax 2</span></span>
+## <a name="syntax-2"></a><span data-ttu-id="0c49a-107">Składnia 2</span><span class="sxs-lookup"><span data-stu-id="0c49a-107">Syntax 2</span></span>
 
-```
+```vb
 DATEVALUE (text, format, culture)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="558cb-108">Argumenty</span><span class="sxs-lookup"><span data-stu-id="558cb-108">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="0c49a-108">Argumenty</span><span class="sxs-lookup"><span data-stu-id="0c49a-108">Arguments</span></span>
 
-<span data-ttu-id="558cb-109">`text`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="558cb-109">`text`: *String*</span></span>
+<span data-ttu-id="0c49a-109">`text`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="0c49a-109">`text`: *String*</span></span>
 
-<span data-ttu-id="558cb-110">Tekst reprezentujący wartość do sformatowania.</span><span class="sxs-lookup"><span data-stu-id="558cb-110">Text that represents the value to format.</span></span>
+<span data-ttu-id="0c49a-110">Tekst reprezentujący wartość do sformatowania.</span><span class="sxs-lookup"><span data-stu-id="0c49a-110">Text that represents the value to format.</span></span>
 
-<span data-ttu-id="558cb-111">`format`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="558cb-111">`format`: *String*</span></span>
+<span data-ttu-id="0c49a-111">`format`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="0c49a-111">`format`: *String*</span></span>
 
-<span data-ttu-id="558cb-112">Format danego tekstu.</span><span class="sxs-lookup"><span data-stu-id="558cb-112">The format of the given text.</span></span>
+<span data-ttu-id="0c49a-112">Format danego tekstu.</span><span class="sxs-lookup"><span data-stu-id="0c49a-112">The format of the given text.</span></span>
 
-<span data-ttu-id="558cb-113">`culture`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="558cb-113">`culture`: *String*</span></span>
+<span data-ttu-id="0c49a-113">`culture`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="0c49a-113">`culture`: *String*</span></span>
 
-<span data-ttu-id="558cb-114">Kultura używana do formatowania danego tekstu.</span><span class="sxs-lookup"><span data-stu-id="558cb-114">The culture that is used for formatting of the given text.</span></span>
+<span data-ttu-id="0c49a-114">Kultura używana do formatowania danego tekstu.</span><span class="sxs-lookup"><span data-stu-id="0c49a-114">The culture that is used for formatting of the given text.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="558cb-115">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="558cb-115">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="0c49a-115">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="0c49a-115">Return values</span></span>
 
-<span data-ttu-id="558cb-116">*Data*</span><span class="sxs-lookup"><span data-stu-id="558cb-116">*Date*</span></span>
+<span data-ttu-id="0c49a-116">*Data*</span><span class="sxs-lookup"><span data-stu-id="0c49a-116">*Date*</span></span>
 
-<span data-ttu-id="558cb-117">Wyjściowa wartość daty.</span><span class="sxs-lookup"><span data-stu-id="558cb-117">The resulting date value.</span></span>
+<span data-ttu-id="0c49a-117">Wyjściowa wartość daty.</span><span class="sxs-lookup"><span data-stu-id="0c49a-117">The resulting date value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="558cb-118">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="558cb-118">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="0c49a-118">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="0c49a-118">Usage notes</span></span>
 
-<span data-ttu-id="558cb-119">Gdy kultura nie jest zdefiniowana jako argument wywołanej funkcji, wartość `culture` jest definiowana przez kontekst wywołujący.</span><span class="sxs-lookup"><span data-stu-id="558cb-119">When the culture isn't defined as an argument of the called function, the value of `culture` is defined by the calling context.</span></span> <span data-ttu-id="558cb-120">Jeśli na przykład funkcja `DATEVALUE` jest wywoływana przy użyciu składni 1 w formacie raportowania elektronicznego (ER) dla elementu **PLIK**, który jest skonfigurowany do używania kultury niemieckiej, konwersja zostanie wykonana przy użyciu kultury niemieckiej.</span><span class="sxs-lookup"><span data-stu-id="558cb-120">For example, if the `DATEVALUE` function is called by using syntax 1 in an Electronic reporting (ER) format for a **FILE** element that is configured to use the German culture, the conversion will be done by using the German culture.</span></span> <span data-ttu-id="558cb-121">Domyślna wartość `culture` to **EN-US**.</span><span class="sxs-lookup"><span data-stu-id="558cb-121">The default `culture` value is **EN-US**.</span></span>
+<span data-ttu-id="0c49a-119">Gdy kultura nie jest zdefiniowana jako argument wywołanej funkcji, wartość `culture` jest definiowana przez kontekst wywołujący.</span><span class="sxs-lookup"><span data-stu-id="0c49a-119">When the culture isn't defined as an argument of the called function, the value of `culture` is defined by the calling context.</span></span> <span data-ttu-id="0c49a-120">Jeśli na przykład funkcja `DATEVALUE` jest wywoływana przy użyciu składni 1 w formacie raportowania elektronicznego (ER) dla elementu **PLIK**, który jest skonfigurowany do używania kultury niemieckiej, konwersja zostanie wykonana przy użyciu kultury niemieckiej.</span><span class="sxs-lookup"><span data-stu-id="0c49a-120">For example, if the `DATEVALUE` function is called by using syntax 1 in an Electronic reporting (ER) format for a **FILE** element that is configured to use the German culture, the conversion will be done by using the German culture.</span></span> <span data-ttu-id="0c49a-121">Domyślna wartość `culture` to **EN-US**.</span><span class="sxs-lookup"><span data-stu-id="0c49a-121">The default `culture` value is **EN-US**.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="558cb-122">Przykład 1</span><span class="sxs-lookup"><span data-stu-id="558cb-122">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="0c49a-122">Przykład 1</span><span class="sxs-lookup"><span data-stu-id="0c49a-122">Example 1</span></span>
 
-<span data-ttu-id="558cb-123">Funkcja `DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")` zwraca datę **21 grudnia 2016 roku** zgodnie z określonym formatem niestandardowym i domyślną kulturą **EN-US** aplikacji.</span><span class="sxs-lookup"><span data-stu-id="558cb-123">`DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")` returns the date value **December 21, 2016**, based on the specified custom format and the default application's **EN-US** culture.</span></span>
+<span data-ttu-id="0c49a-123">Funkcja `DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")` zwraca datę **21 grudnia 2016 roku** zgodnie z określonym formatem niestandardowym i domyślną kulturą **EN-US** aplikacji.</span><span class="sxs-lookup"><span data-stu-id="0c49a-123">`DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")` returns the date value **December 21, 2016**, based on the specified custom format and the default application's **EN-US** culture.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="558cb-124">Przykład 2</span><span class="sxs-lookup"><span data-stu-id="558cb-124">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="0c49a-124">Przykład 2</span><span class="sxs-lookup"><span data-stu-id="0c49a-124">Example 2</span></span>
 
-<span data-ttu-id="558cb-125">Funkcja `DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")` zwraca wartość daty **21 stycznia 2016** na podstawie określonego formatu niestandardowego i kultury.</span><span class="sxs-lookup"><span data-stu-id="558cb-125">`DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")` returns the date value **January 21, 2016**, based on the specified custom format and culture.</span></span>
+<span data-ttu-id="0c49a-125">Funkcja `DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")` zwraca wartość daty **21 stycznia 2016** na podstawie określonego formatu niestandardowego i kultury.</span><span class="sxs-lookup"><span data-stu-id="0c49a-125">`DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")` returns the date value **January 21, 2016**, based on the specified custom format and culture.</span></span>
 
-<span data-ttu-id="558cb-126">Natomiast funkcja `DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")` zgłasza wyjątek w celu poinformowania użytkownika, że podany ciąg nie został rozpoznany jako prawidłowa data.</span><span class="sxs-lookup"><span data-stu-id="558cb-126">However, `DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")` throws an exception to inform the user that the specified string isn't recognized as a valid date for the specified culture.</span></span>
+<span data-ttu-id="0c49a-126">Natomiast funkcja `DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")` zgłasza wyjątek w celu poinformowania użytkownika, że podany ciąg nie został rozpoznany jako prawidłowa data.</span><span class="sxs-lookup"><span data-stu-id="0c49a-126">However, `DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")` throws an exception to inform the user that the specified string isn't recognized as a valid date for the specified culture.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="558cb-127">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="558cb-127">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="0c49a-127">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="0c49a-127">Additional resources</span></span>
 
-[<span data-ttu-id="558cb-128">Funkcje daty i godziny</span><span class="sxs-lookup"><span data-stu-id="558cb-128">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="0c49a-128">Funkcje daty i godziny</span><span class="sxs-lookup"><span data-stu-id="0c49a-128">Date and time functions</span></span>](er-functions-category-datetime.md)

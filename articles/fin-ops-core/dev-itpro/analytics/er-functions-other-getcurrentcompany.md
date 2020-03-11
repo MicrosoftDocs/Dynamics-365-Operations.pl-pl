@@ -18,35 +18,35 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0b4c93a4705cd0e382b9b6c7af1d199beeceabe
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d91caff1a1b89e060a16833e53f3647208ed3826
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916000"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041430"
 ---
-# <span data-ttu-id="8a2f4-103"><a name="GETCURRENTCOMPANY">GETCURRENTCOMPANY, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="8a2f4-103"><a name="GETCURRENTCOMPANY">GETCURRENTCOMPANY ER function</a></span></span>
+# <span data-ttu-id="1cc30-103"><a name="GETCURRENTCOMPANY">GETCURRENTCOMPANY, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="1cc30-103"><a name="GETCURRENTCOMPANY">GETCURRENTCOMPANY ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="8a2f4-104">Funkcja `GETCURRENTCOMPANY` zwraca wartość *Ciąg* reprezentującą kod firmy (jednostki prawnej), do której użytkownik jest aktualnie zalogowany.</span><span class="sxs-lookup"><span data-stu-id="8a2f4-104">The `GETCURRENTCOMPANY` function returns a *String* value that represents the code for the legal entity (company) that a user is currently signed in to.</span></span>
+<span data-ttu-id="1cc30-104">Funkcja `GETCURRENTCOMPANY` zwraca wartość *Ciąg* reprezentującą kod firmy (jednostki prawnej), do której użytkownik jest aktualnie zalogowany.</span><span class="sxs-lookup"><span data-stu-id="1cc30-104">The `GETCURRENTCOMPANY` function returns a *String* value that represents the code for the legal entity (company) that a user is currently signed in to.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8a2f4-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="8a2f4-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1cc30-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="1cc30-105">Syntax</span></span>
 
-```
+```vb
 GETCURRENTCOMPANY ()
 ```
 
-## <a name="return-values"></a><span data-ttu-id="8a2f4-106">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="8a2f4-106">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="1cc30-106">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="1cc30-106">Return values</span></span>
 
-<span data-ttu-id="8a2f4-107">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="8a2f4-107">*String*</span></span>
+<span data-ttu-id="1cc30-107">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="1cc30-107">*String*</span></span>
 
-<span data-ttu-id="8a2f4-108">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="8a2f4-108">The resulting text value.</span></span>
+<span data-ttu-id="1cc30-108">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="1cc30-108">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8a2f4-109">Przykład</span><span class="sxs-lookup"><span data-stu-id="8a2f4-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1cc30-109">Przykład</span><span class="sxs-lookup"><span data-stu-id="1cc30-109">Example</span></span>
 
-<span data-ttu-id="8a2f4-110">Funkcja `GETCURRENTCOMPANY ()` zwraca wartość **USMF** dla użytkownika zalogowanego do firmy **Contoso Entertainment System USA**.</span><span class="sxs-lookup"><span data-stu-id="8a2f4-110">`GETCURRENTCOMPANY ()` returns **USMF** for a user who is signed in to the **Contoso Entertainment System USA** company.</span></span>
+<span data-ttu-id="1cc30-110">Funkcja `GETCURRENTCOMPANY ()` zwraca wartość **USMF** dla użytkownika zalogowanego do firmy **Contoso Entertainment System USA**.</span><span class="sxs-lookup"><span data-stu-id="1cc30-110">`GETCURRENTCOMPANY ()` returns **USMF** for a user who is signed in to the **Contoso Entertainment System USA** company.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="8a2f4-111">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="8a2f4-111">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="1cc30-111">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="1cc30-111">Additional resources</span></span>
 
-[<span data-ttu-id="8a2f4-112">Inne funkcje (specyficzne dla domeny biznesowej)</span><span class="sxs-lookup"><span data-stu-id="8a2f4-112">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="1cc30-112">Inne funkcje (specyficzne dla domeny biznesowej)</span><span class="sxs-lookup"><span data-stu-id="1cc30-112">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)

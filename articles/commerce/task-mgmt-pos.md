@@ -1,0 +1,66 @@
+---
+title: Zarządzanie zadaniami w punkcie sprzedaży
+description: W tym temacie opisano zarządzanie zadaniami w aplikacji punktu sprzedaży (POS) w Microsoft Dynamics 365 Commerce.
+author: gvrmohanreddy
+manager: annbe
+ms.date: 02/10/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application User
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.search.region: Global
+ms.search.industry: ''
+ms.author: gmohanv
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: cc685fcd584fe2ab5cd9282e8fbefbd284d5b2a2
+ms.sourcegitcommit: 80cbb7d22267aa6a0ae0568d0063fb95556958a5
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3036793"
+---
+# <a name="task-management-in-pos"></a><span data-ttu-id="220d7-103">Zarządzanie zadaniami w punkcie sprzedaży</span><span class="sxs-lookup"><span data-stu-id="220d7-103">Task management in POS</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="220d7-104">W tym temacie opisano zarządzanie zadaniami w aplikacji punktu sprzedaży (POS) w Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="220d7-104">This topic describes task management in the Microsoft Dynamics 365 Commerce point of sale (POS) application.</span></span>
+
+## <a name="overview"></a><span data-ttu-id="220d7-105">Omówienie</span><span class="sxs-lookup"><span data-stu-id="220d7-105">Overview</span></span>
+
+<span data-ttu-id="220d7-106">Aplikacja punktu sprzedaży Dynamics 365 Commerce zawiera funkcje zarządzania zadaniami, które umożliwiają menedżerom i pracownikom sklepów zarządzanie zadaniami i aktualizowanie stanu zadań.</span><span class="sxs-lookup"><span data-stu-id="220d7-106">The Dynamics 365 Commerce POS application has task management features that let store managers and workers manage tasks and update task status.</span></span> <span data-ttu-id="220d7-107">Pracownicy sklepów mogą uzyskać dostęp do zadań, zaznaczając kafelek **Zadania** na stronie głównej punktu sprzedaży lub wybierając powiadomienia o zadaniach.</span><span class="sxs-lookup"><span data-stu-id="220d7-107">Store workers can access tasks either by selecting the **Tasks** tile on the POS home page or by selecting task notifications.</span></span> <span data-ttu-id="220d7-108">Domyślnie pracownicy sklepów są przeniesieni na kartę **Moje zadania**, gdzie mogą przeglądać przypisane do nich zadania.</span><span class="sxs-lookup"><span data-stu-id="220d7-108">By default, store workers are taken to the **My tasks** tab, where they can view the tasks that are assigned to them.</span></span> <span data-ttu-id="220d7-109">Mogą jednak łatwo przełączać się do kart **Zaległe zadania**, **Zadania otwarte** i **Listy zadań**.</span><span class="sxs-lookup"><span data-stu-id="220d7-109">However, they can easily switch to the **Overdue tasks**, **Open tasks**, and **Task lists** tabs.</span></span>
+
+## <a name="task-operations-for-store-managers"></a><span data-ttu-id="220d7-110">Operacje zadania dla menedżerów sklepów</span><span class="sxs-lookup"><span data-stu-id="220d7-110">Task operations for store managers</span></span>
+
+<span data-ttu-id="220d7-111">Menedżerowie sklepów mogą wykonywać następujące operacje dotyczące zadań w aplikacji punktu sprzedaży za pomocą przycisków na pasku poleceń:</span><span class="sxs-lookup"><span data-stu-id="220d7-111">Store managers can perform the following task operations in the POS application by using the buttons on the command bar:</span></span>
+
+- <span data-ttu-id="220d7-112">**Przypisanie** — przydzielenie wybranych zadań do pracownika sklepu.</span><span class="sxs-lookup"><span data-stu-id="220d7-112">**Assign** – Assign selected tasks to a store worker.</span></span>
+- <span data-ttu-id="220d7-113">**Stan zadania** — umożliwia zmianę stanu zaznaczonych zadań.</span><span class="sxs-lookup"><span data-stu-id="220d7-113">**Task status** – Change the status of selected tasks.</span></span>
+- <span data-ttu-id="220d7-114">**Filtr** — domyślnie są wyświetlane tylko aktywne zadania.</span><span class="sxs-lookup"><span data-stu-id="220d7-114">**Filter** – By default, only active tasks are shown.</span></span> <span data-ttu-id="220d7-115">Jednak dzięki zastosowaniu filtrów menedżerowie mogą wyświetlać wszystkie zadania, nawet zadania, które zostały wykonane lub anulowane.</span><span class="sxs-lookup"><span data-stu-id="220d7-115">However, by applying filters, managers can view all tasks, even tasks that have been completed or canceled.</span></span>
+- <span data-ttu-id="220d7-116">**Nowe zadanie** — umożliwia utworzenie zadania na istniejącej liście zadań lub utworzenie zadania jednokierunkowego.</span><span class="sxs-lookup"><span data-stu-id="220d7-116">**New task** – Create a task under an existing task list, or create an single-purpose task.</span></span>
+
+<span data-ttu-id="220d7-117">Pracownicy sklepów mogą wykonywać następujące operacje dotyczące zadań w aplikacji punktu sprzedaży za pomocą przycisków na pasku poleceń:</span><span class="sxs-lookup"><span data-stu-id="220d7-117">Store workers can perform the following task operations in the POS application by using the buttons on the command bar:</span></span>
+
+- <span data-ttu-id="220d7-118">**Stan zadania** — umożliwia zmianę stanu zaznaczonych zadań.</span><span class="sxs-lookup"><span data-stu-id="220d7-118">**Task status** – Change the status of selected tasks.</span></span>
+- <span data-ttu-id="220d7-119">**Filtr** — domyślnie są wyświetlane tylko aktywne zadania.</span><span class="sxs-lookup"><span data-stu-id="220d7-119">**Filter** – By default, only active tasks are shown.</span></span> <span data-ttu-id="220d7-120">Jednak dzięki zastosowaniu filtrów pracownicy mogą wyświetlać wszystkie zadania, nawet zadania, które zostały wykonane lub anulowane.</span><span class="sxs-lookup"><span data-stu-id="220d7-120">However, by applying filters, workers can view all tasks, even tasks that have been completed or canceled.</span></span>
+
+<span data-ttu-id="220d7-121">Na poniższej ilustracji przedstawiono kartę **Moje zadania** w aplikacji Commerce punktu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="220d7-121">The following illustration shows the **My tasks** tab in the Commerce POS application.</span></span>
+
+![Karta Moje zadania w aplikacji punktu sprzedaży Commerce](media/POS-task-management.png)
+
+<span data-ttu-id="220d7-123">Na ilustracji przedstawiono kartę **Listy zadań**.</span><span class="sxs-lookup"><span data-stu-id="220d7-123">The following illustration shows the **Task lists** tab.</span></span>
+
+![Karta Listy zadań w aplikacji punktu sprzedaży Commerce](media/POS-task-lists-management.png)
+
+## <a name="additional-resources"></a><span data-ttu-id="220d7-125">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="220d7-125">Additional resources</span></span>
+
+[<span data-ttu-id="220d7-126">Omówienie zarządzania zadaniami</span><span class="sxs-lookup"><span data-stu-id="220d7-126">Task management overview</span></span>](task-mgmt-overview.md)
+
+[<span data-ttu-id="220d7-127">Konfigurowanie zarządzania zadaniami</span><span class="sxs-lookup"><span data-stu-id="220d7-127">Configure task management</span></span>](task-mgmt-configure.md)
+
+[<span data-ttu-id="220d7-128">Tworzenie list zadań i dodawanie zadań</span><span class="sxs-lookup"><span data-stu-id="220d7-128">Create task lists and add tasks</span></span>](task-mgmt-create-lists.md)
+
+[<span data-ttu-id="220d7-129">Przypisywanie list zadań do sklepów lub pracowników etatowych</span><span class="sxs-lookup"><span data-stu-id="220d7-129">Assign task lists to stores or employees</span></span>](task-mgmt-assign-lists.md)

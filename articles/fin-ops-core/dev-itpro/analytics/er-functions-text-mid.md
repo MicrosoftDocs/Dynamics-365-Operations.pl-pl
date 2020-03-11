@@ -18,55 +18,55 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e178b01740954b46e2afbd2a2be6200a652a18c0
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 6fbaf5952222d90a855956fb93713e0f9ef81305
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915609"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041039"
 ---
-# <span data-ttu-id="a6663-103"><a name="MID">MID, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="a6663-103"><a name="MID">MID ER function</a></span></span>
+# <span data-ttu-id="10a14-103"><a name="MID">MID, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="10a14-103"><a name="MID">MID ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a6663-104">Funkcja `MID` zwraca wartość *Ciąg*, która reprezentuje określoną liczbę znaków określonego ciągu od określonego położenia.</span><span class="sxs-lookup"><span data-stu-id="a6663-104">The `MID` function returns a *String* value that presents the specified number of characters from the specified string, starting at the specified position.</span></span>
+<span data-ttu-id="10a14-104">Funkcja `MID` zwraca wartość *Ciąg*, która reprezentuje określoną liczbę znaków określonego ciągu od określonego położenia.</span><span class="sxs-lookup"><span data-stu-id="10a14-104">The `MID` function returns a *String* value that presents the specified number of characters from the specified string, starting at the specified position.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a6663-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="a6663-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="10a14-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="10a14-105">Syntax</span></span>
 
-```
+```vb
 MID (text, starting position, number of characters)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="a6663-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="a6663-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="10a14-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="10a14-106">Arguments</span></span>
 
-<span data-ttu-id="a6663-107">`text`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="a6663-107">`text`: *String*</span></span>
+<span data-ttu-id="10a14-107">`text`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="10a14-107">`text`: *String*</span></span>
 
-<span data-ttu-id="a6663-108">Wartość typu *Ciąg*, która określa tekst do zwracania znaków.</span><span class="sxs-lookup"><span data-stu-id="a6663-108">A *String* value that specifies the text to return characters from.</span></span>
+<span data-ttu-id="10a14-108">Wartość typu *Ciąg*, która określa tekst do zwracania znaków.</span><span class="sxs-lookup"><span data-stu-id="10a14-108">A *String* value that specifies the text to return characters from.</span></span>
 
-<span data-ttu-id="a6663-109">`starting position`: *Liczba całkowita*</span><span class="sxs-lookup"><span data-stu-id="a6663-109">`starting position`: *Integer*</span></span>
+<span data-ttu-id="10a14-109">`starting position`: *Liczba całkowita*</span><span class="sxs-lookup"><span data-stu-id="10a14-109">`starting position`: *Integer*</span></span>
 
-<span data-ttu-id="a6663-110">Wartość typu *Liczba całkowita*, która określa położenie pierwszego znaku, który musi zostać zwrócony z określonego tekstu.</span><span class="sxs-lookup"><span data-stu-id="a6663-110">An *Integer* value that specifies the position of the first character that must be returned from the specified text.</span></span>
+<span data-ttu-id="10a14-110">Wartość typu *Liczba całkowita*, która określa położenie pierwszego znaku, który musi zostać zwrócony z określonego tekstu.</span><span class="sxs-lookup"><span data-stu-id="10a14-110">An *Integer* value that specifies the position of the first character that must be returned from the specified text.</span></span>
 
-<span data-ttu-id="a6663-111">`number of characters`: *Liczba całkowita*</span><span class="sxs-lookup"><span data-stu-id="a6663-111">`number of characters`: *Integer*</span></span>
+<span data-ttu-id="10a14-111">`number of characters`: *Liczba całkowita*</span><span class="sxs-lookup"><span data-stu-id="10a14-111">`number of characters`: *Integer*</span></span>
 
-<span data-ttu-id="a6663-112">Wartość typu *Liczba całkowita*, która określa liczbę znaków, które muszą zostać zwrócone, rozpoczynając od określonej pozycji początkowej.</span><span class="sxs-lookup"><span data-stu-id="a6663-112">An *Integer* value that specifies the number of characters that must be returned, starting at the specified starting position.</span></span>
+<span data-ttu-id="10a14-112">Wartość typu *Liczba całkowita*, która określa liczbę znaków, które muszą zostać zwrócone, rozpoczynając od określonej pozycji początkowej.</span><span class="sxs-lookup"><span data-stu-id="10a14-112">An *Integer* value that specifies the number of characters that must be returned, starting at the specified starting position.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="a6663-113">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="a6663-113">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="10a14-113">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="10a14-113">Return values</span></span>
 
-<span data-ttu-id="a6663-114">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="a6663-114">*String*</span></span>
+<span data-ttu-id="10a14-114">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="10a14-114">*String*</span></span>
 
-<span data-ttu-id="a6663-115">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="a6663-115">The resulting text value.</span></span>
+<span data-ttu-id="10a14-115">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="10a14-115">The resulting text value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="a6663-116">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="a6663-116">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="10a14-116">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="10a14-116">Usage notes</span></span>
 
-<span data-ttu-id="a6663-117">Jeśli wartość argumentu `starting position` jest mniejsza niż 0 (zero), zwracane znaki są liczone od pierwszej pozycji w określonym ciągu.</span><span class="sxs-lookup"><span data-stu-id="a6663-117">If the value of the `starting position` argument is less than 0 (zero), the characters that are returned are counted from the first position in the specified string.</span></span>
+<span data-ttu-id="10a14-117">Jeśli wartość argumentu `starting position` jest mniejsza niż 0 (zero), zwracane znaki są liczone od pierwszej pozycji w określonym ciągu.</span><span class="sxs-lookup"><span data-stu-id="10a14-117">If the value of the `starting position` argument is less than 0 (zero), the characters that are returned are counted from the first position in the specified string.</span></span>
 
-<span data-ttu-id="a6663-118">Jeśli wartość argumentu `starting position` przekracza długość określonego ciągu, zwracany jest pusty ciąg.</span><span class="sxs-lookup"><span data-stu-id="a6663-118">If the value of the `starting position` argument exceeds length of the specified string, an empty string is returned.</span></span>
+<span data-ttu-id="10a14-118">Jeśli wartość argumentu `starting position` przekracza długość określonego ciągu, zwracany jest pusty ciąg.</span><span class="sxs-lookup"><span data-stu-id="10a14-118">If the value of the `starting position` argument exceeds length of the specified string, an empty string is returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a6663-119">Przykład</span><span class="sxs-lookup"><span data-stu-id="a6663-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="10a14-119">Przykład</span><span class="sxs-lookup"><span data-stu-id="10a14-119">Example</span></span>
 
-<span data-ttu-id="a6663-120">Funkcja `MID ("Sample", 2, 3)` zwraca wartość **„amp”**.</span><span class="sxs-lookup"><span data-stu-id="a6663-120">`MID ("Sample", 2, 3)` returns **"amp"**.</span></span>
+<span data-ttu-id="10a14-120">Funkcja `MID ("Sample", 2, 3)` zwraca wartość **„amp”**.</span><span class="sxs-lookup"><span data-stu-id="10a14-120">`MID ("Sample", 2, 3)` returns **"amp"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="a6663-121">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="a6663-121">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="10a14-121">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="10a14-121">Additional resources</span></span>
 
-[<span data-ttu-id="a6663-122">Funkcje tekstowe</span><span class="sxs-lookup"><span data-stu-id="a6663-122">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="10a14-122">Funkcje tekstowe</span><span class="sxs-lookup"><span data-stu-id="10a14-122">Text functions</span></span>](er-functions-category-text.md)
