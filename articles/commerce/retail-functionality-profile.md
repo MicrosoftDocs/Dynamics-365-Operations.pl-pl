@@ -1,6 +1,6 @@
 ---
-title: Tworzenie profilu funkcji sieci sprzedaży
-description: W tym temacie opisano sposób tworzenia profilu funkcji sieci sprzedaży w rozwiązaniu Microsoft Dynamics 365 Commerce.
+title: Tworzenie profilu funkcji handlu detalicznego
+description: W tym temacie opisano sposób tworzenia profilu funkcji w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/27/2020
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9fb0fd63b11e55f2b153fc9c135f148a6e343057
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6bee51eb25b04eb65e588dd4cf54a0cef587aa15
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002850"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057355"
 ---
-# <a name="create-a-retail-functionality-profile"></a>Tworzenie profilu funkcji sieci sprzedaży
+# <a name="create-a-retail-functionality-profile"></a>Tworzenie profilu funkcji handlu detalicznego
 
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób tworzenia profilu funkcji sieci sprzedaży w rozwiązaniu Microsoft Dynamics 365 Commerce.
+W tym temacie opisano sposób tworzenia profilu funkcji w rozwiązaniu Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Omówienie
 
-Profil funkcji sieci sprzedaży umożliwia używanie różnych ustawień dla kanałów online. Każdy kanał sieci sprzedaży musi określać profil funkcji sieci sprzedaży.
+Profil funkcji handlu umożliwia używanie różnych ustawień dla kanałów online. Każdy kanał musi określać profil funkcji.
 
-## <a name="create-a-retail-functionality-profile"></a>Tworzenie profilu funkcji sieci sprzedaży
+## <a name="create-a-functionality-profile"></a>Tworzenie profilu funkcji
 
-Aby utworzyć profil funkcji sieci sprzedaży, wykonaj poniższe kroki.
+Aby utworzyć profil funkcji, wykonaj poniższe kroki.
 
 1. W okienku nawigacji przejdź do ustawień **Moduły \> Ustawienia kanału \> Profile punktu sprzedaży \> Profile funkcji**.
 1. W okienku akcji wybierz opcję **Nowy**.
@@ -51,9 +51,9 @@ Aby utworzyć profil funkcji sieci sprzedaży, wykonaj poniższe kroki.
 1. W sekcji **Kody informacji** zmodyfikuj inne ustawienia, jeśli jest to konieczne.
 1. W sekcji **Numeracja paragonów** zmodyfikuj inne ustawienia, jeśli jest to konieczne. 
   
-Poniższy obraz przedstawia przykładowy profil funkcji sieci sprzedaży.
+Poniższy obraz przedstawia przykładowy profil funkcji.
   
-![Przekład profilu funkcji sieci sprzedaży](media/retail-functionality-profile.png)
+![Przekład profilu funkcji](media/retail-functionality-profile.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

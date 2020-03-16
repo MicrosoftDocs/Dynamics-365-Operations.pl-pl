@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 9585d5a399ebf45b0ad7640f3c4e48d8afc46cd8
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017735"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042949"
 ---
 # <a name="embed-microsoft-power-apps"></a>Osadzone Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Poniższe instrukcje przedstawiają sposoby osadzania aplikacji Power Apps w kli
 
     - Pole **Nazwa** wskazuje tekst, jaki będzie wyświetlany na przycisku lub karcie zawierającej osadzoną aplikację. Często w tym polu warto powtórzyć nazwę aplikacji.
     - **Identyfikator aplikacji** to identyfikator GUID aplikacji, która ma być osadzona. Aby pobrać tę wartość, odszukaj aplikację na stronie [web.powerapps.com](https://web.powerapps.com), a następnie odszukaj pole **Identyfikator aplikacji** w obszarze **Szczegóły**.
-    - W obszarze **Dane wejściowe dla aplikacji** można opcjonalnie wybrać pole zawierające dane, które mają być przekazywane do aplikacji jako dane wejściowe. Zobacz w dalszej części tego tematu sekcję zatytułowaną [Kompilowanie aplikacji wykorzystującej dane z aplikacji Finance and Operations](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps), gdzie dowiesz się dokładnie, jak aplikacja może uzyskiwać dostęp do danych wysyłanych z aplikacji Finance and Operations.
+    - W obszarze **Dane wejściowe dla aplikacji** można opcjonalnie wybrać pole zawierające dane, które mają być przekazywane do aplikacji jako dane wejściowe. Zobacz w dalszej części tego tematu sekcję zatytułowaną [Kompilowanie aplikacji wykorzystującej dane wysłane z aplikacji Finance and Operations](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps), gdzie dowiesz się dokładnie, jak aplikacja może uzyskiwać dostęp do danych wysyłanych z aplikacji Finance and Operations.
     - Wybierz wartość **Rozmiar aplikacji** pasującą do typu osadzanej aplikacji. Wybierz opcję **Ograniczona** dla aplikacji przeznaczonych do urządzeń przenośnych, a opcję **Rozbudowana** dla aplikacji przeznaczonych do tabletów. To zagwarantuje przeznaczenie wystarczającej ilości miejsca na wbudowaną aplikację.
     - Na skróconej karcie **Firmy** można wybrać firmy, dla których aplikacja będzie dostępna. Domyślnie aplikacja jest wyświetlana we wszystkich firmach. Ta opcja jest dostępna tylko wtedy, gdy jest wyłączona funkcja [Zapisanych widoków](saved-views.md). 
 
@@ -76,7 +76,7 @@ Ważną częścią tworzenia aplikacji Power Apps, która będzie osadzana w apl
 
 Na przykład w funkcji OnStart wewnątrz aplikacji można ustawić dane wejściowe z aplikacji Finance and Operations w następujący sposób:
 
-```
+```powerapps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
@@ -101,7 +101,7 @@ Wykonaj następujące czynności, aby edytować konfigurację osadzonej aplikacj
 
 Po osadzeniu aplikacji na stronie istnieją dwa sposoby jej usunięcia w razie potrzeby:
 
-- Przejdź do okienka **Edytuj aplikację** przy użyciu instrukcji zawartych w sekcji [Edytowanie osadzonej aplikacji](#editing-an-embedded-power-app) wcześniej w tym temacie. Upewnij się, że w okienku są wyświetlane informacje dotyczące osadzonej aplikacji, którą chcesz usunąć, a następnie kliknij przycisk **Usuń**.
+- Przejdź do okienka **Edytuj aplikację** przy użyciu instrukcji zawartych w sekcji [Edytowanie osadzonej aplikacji](#editing-an-embedded-app) wcześniej w tym temacie. Upewnij się, że w okienku są wyświetlane informacje dotyczące osadzonej aplikacji, którą chcesz usunąć, a następnie kliknij przycisk **Usuń**.
 - Ponieważ osadzona aplikacja jest zapisywana jako dane personalizacji, wyczyszczenie personalizacji strony spowoduje również usunięcie wszelkich osadzonych aplikacji znajdujących się na tej stronie. Należy zauważyć, że wyczyszczenie personalizacji strony jest trwałe i nie można go cofnąć. Aby usunąć personalizacje ze strony, kliknij przycisk **Opcje**, a następnie wybierz opcję **Personalizuj tę stronę** a następnie przycisk **Wyczyść**. Po odświeżeniu przeglądarki wszystkie poprzednie personalizacje tej strony zostaną usunięte. W temacie [Personalizuj środowiska użytkownika](personalize-user-experience.md) znajdziesz więcej informacji o optymalizowaniu stron za pomocą personalizacji.
 
 ## <a name="appendix"></a>Dodatek
@@ -115,7 +115,7 @@ Domyślnie użytkownicy mogą osadzać aplikacje na każdej stronie, używając 
 
 Poniższy przykład przedstawia nową klasę z dwoma metodami potrzebnymi do określenia, gdzie można osadzać aplikacje.
 
-```
+```powerapps
 [ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
 
 public final class ClassTest_Extension

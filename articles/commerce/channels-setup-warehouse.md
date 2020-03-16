@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: fe785e3bfd503193a588958ae5df0d1c0fdb9e52
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002319"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057863"
 ---
 # <a name="warehouse-set-up"></a>Ustawianie magazynu
 
@@ -59,7 +59,7 @@ Aby skonfigurować magazyn, należy wykonać następujące czynności.
 
 1. W okienku nawigacji kliknij kolejno opcje **Moduły \> Retail i commerce \> Ustawienia kanału \> Magazyny**.
 1. W okienku akcji wybierz opcję **Nowy**.
-1. Wprowadź lub wybierz wartość w polu **Magazyny**.  Jeśli jest to mapowanie 1:1 do sklepu detalicznego, należy rozważyć użycie nazwy sklepu lub nazwy regionalnego centrum dystrybucji.
+1. Wprowadź lub wybierz wartość w polu **Magazyny**.  Jeśli jest to mapowanie 1:1 do sklepu, należy rozważyć użycie nazwy sklepu lub nazwy regionalnego centrum dystrybucji.
 1. Wprowadź wartość w polu **Nazwa**.
 1. Z listy rozwijanej **oddziału** Wybierz utworzoną wcześniej witrynę magazynową.
 1. W polu **Typ** zaznacz opcję **Domyślny**.

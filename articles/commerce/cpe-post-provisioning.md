@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d72caee25c03e8167b94dd387c7861f98bd0f4cb
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024713"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057724"
 ---
 # <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfiguruj środowisko wersji zapoznawczej usługi Dynamics 365 Commerce
 
@@ -35,7 +35,7 @@ W tym temacie opisano sposób konfigurowania środowiska wersji zapoznawczej apl
 
 Procedury opisane w tym temacie należy wykonać dopiero po zakończeniu aprowizacji środowiska wersji zapoznawczej usługi Commerce. Aby uzyskać informacje dotyczące sposobu aprowizowania środowiska wersji zapoznawczej usługi Commerce, zobacz [Aprowizowanie środowiska wersji zapoznawczej usługi Commerce](provisioning-guide.md).
 
-Po zakończeniu kompleksowej aprowizacji środowiska wersji zapoznawczej usługi Commerce wykonać dodatkowe czynności konfiguracyjne po aprowizacji, aby można było rozpocząć ocenę środowiska. Aby wykonać te kroki, należy użyć usług Microsoft Dynamics Lifecycle Services (LCS), Dynamics 365 Commerce i Dynamics 365 Retail.
+Po zakończeniu kompleksowej aprowizacji środowiska wersji zapoznawczej usługi Commerce wykonać dodatkowe czynności konfiguracyjne po aprowizacji, aby można było rozpocząć ocenę środowiska. Aby wykonać te kroki, należy użyć usług Microsoft Dynamics Lifecycle Services (LCS) i Dynamics 365 Commerce.
 
 ## <a name="before-you-start"></a>Przed rozpoczęciem
 
@@ -53,7 +53,7 @@ Po zakończeniu kompleksowej aprowizacji środowiska wersji zapoznawczej usługi
 
 Aby skojarzyć pracownika z tożsamością w usłudze LCS, wykonaj następujące kroki.
 
-1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Retail \> Pracownicy etatowi \> Pracownicy**.
+1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Retail i Commerce \> Pracownicy etatowi \> Pracownicy**.
 1. Na liście znajdź i wybierz następujący rekord: **000713 - Andrew Collette**.
 1. W okienku akcji wybierz pozycję **Retail**.
 1. Wybierz pozycję **Skojarz istniejącą tożsamość**.
@@ -91,12 +91,12 @@ Aby rozpocząć konfigurowanie witryny w wersji zapoznawczej w usłudze Commerce
 1. Pozostaw niezmienioną wartość pola **Ścieżka**.
 1. Kliknij przycisk **OK**. Zostanie wyświetlona lista stron w witrynie.
 
-## <a name="enable-jobs-in-retail"></a>Włączanie zadań w aplikacji Retail
+## <a name="enable-jobs"></a>Włącz zadania
 
-Aby włączyć zadania w aplikacji Retail, wykonaj następujące kroki.
+Aby włączyć zadania w aplikacji Commerce, wykonaj następujące kroki.
 
 1. Zaloguj się do środowiska (HQ).
-1. Korzystając z menu po lewej stronie, przejdź do pozycji **Retail \> Zapytania i raporty \> Zadania wsadowe**.
+1. Korzystając z menu po lewej stronie, przejdź do pozycji **Retail i Commerce \> Zapytania i raporty \> Zadania wsadowe**.
 
     Pozostałe kroki tej procedury muszą zostać zakończone dla każdego z następujących zadań:
 
@@ -112,11 +112,11 @@ Aby włączyć zadania w aplikacji Retail, wykonaj następujące kroki.
     1. W okienku akcji na karcie **Zadanie wsadowe** wybierz pozycję **Zmień status**.
     1. Wybierz pozycję **Oczekiwanie** i kliknij przycisk **OK**.
 
-### <a name="run-full-data-synchronization-in-retail"></a>Uruchamianie pełnej synchronizacji danych w aplikacji Retail
+### <a name="run-full-data-synchronization"></a>Uruchamianie pełnej synchronizacji danych
 
-Aby uruchomić pełną synchronizację danych w aplikacji Retail, wykonaj następujące kroki.
+Aby uruchomić pełną synchronizację danych w aplikacji Commerce, wykonaj następujące kroki.
 
-1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Retail \> Ustawienia centrali \> Transfer danych w sieci sprzedaży \> Baza danych kanału**.
+1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Retail i Commerce \> Ustawienia centrali \> Transfer danych w sieci sprzedaży \> Baza danych kanału**.
 1. Na liście po lewej stronie jest wybrany kanał **domyślny**. Wybierz inny dostępny kanał. Ten kanał nosi nazwę **scXXXXXXXXX**.
 1. W okienku akcji wybierz **Pełna synchronizacja danych**.
 1. Wpisz **9999** jako harmonogram dystrybucji.

@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f3f2616fd98b37576625d9586a1cda29ce1b89f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023724"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057494"
 ---
 # <a name="retail-sales-price-management"></a>Zarządzanie cenami sprzedaży w aplikacji Retail
 
@@ -43,23 +43,23 @@ W tym temacie są wykorzystywane następujące pojęcia:
 
 ## <a name="price-groups"></a>Grupy cenowe
 
-Grupy cenowe są sercem mechanizmu zarządzania cenami i rabatami w aplikacji Commerce. Grupy cenowe są używane do przypisywania cen i rabatów do jednostek handlu detalicznego (tzn. kanałów, katalogów, przynależności i programów lojalnościowych). Grupy cenowe są wykorzystywane dla wszystkich cen i rabatów, dlatego bardzo ważne jest zaplanowanie, jak będą używane, zanim zaczniesz to robić.
+Grupy cenowe są sercem mechanizmu zarządzania cenami i rabatami w aplikacji Commerce. Grupy cenowe są używane do przypisywania cen i rabatów do jednostek handlu (tzn. kanałów, katalogów, przynależności i programów lojalnościowych). Grupy cenowe są wykorzystywane dla wszystkich cen i rabatów, dlatego bardzo ważne jest zaplanowanie, jak będą używane, zanim zaczniesz to robić.
 
-Grupa cenowa jako obiekt składa z nazwy, opisu i (opcjonalnie) priorytetu cen. Najważniejszą rzeczą, jaką należy pamiętać o grupach cenowych, jest to, że służą do zarządzania relacjami wiele-do-wielu między rabatami i cenami a jednostkami handlu detalicznego.
+Grupa cenowa jako obiekt składa z nazwy, opisu i (opcjonalnie) priorytetu cen. Najważniejszą rzeczą, jaką należy pamiętać o grupach cenowych, jest to, że służą do zarządzania relacjami wiele-do-wielu między rabatami i cenami a jednostkami handlu.
 
-Na ilustracji poniżej przedstawiono sposób używania grup cenowych. Na ilustracji zwróć uwagę, że „Grupa cenowa” jest dosłownie w centrum zarządzania cenami i rabatami. Jednostki handlu detalicznego, których można używać do zarządzania zróżnicowanymi cenami i rabatami, znajdują się po lewej stronie, a rekordy faktycznych cen i rabatów znajdują się po prawej stronie.
+Na ilustracji poniżej przedstawiono sposób używania grup cenowych. Na ilustracji zwróć uwagę, że „Grupa cenowa” jest dosłownie w centrum zarządzania cenami i rabatami. Jednostki handlu, których można używać do zarządzania zróżnicowanymi cenami i rabatami, znajdują się po lewej stronie, a rekordy faktycznych cen i rabatów znajdują się po prawej stronie.
 
 ![Grupy cenowe](./media/PriceGroups.png "Grupy cenowe")
 
-Podczas tworzenia grup cenowych nie należy używać jednej grupy cenowej dla różnych typów jednostek handlu detalicznego. W przeciwnym razie może być trudno określić, dlaczego konkretna cena lub rabat są stosowane do transakcji.
+Podczas tworzenia grup cenowych nie należy używać jednej grupy cenowej dla różnych typów jednostek handlu. W przeciwnym razie może być trudno określić, dlaczego konkretna cena lub rabat są stosowane do transakcji.
 
 Jak pokazuje czerwona kreskowana linia na ilustracji, aplikacja Commerce obsługuje podstawową funkcjonalność systemu Microsoft Dynamics 365 — grupy cenowe, które są ustawiane bezpośrednio dla odbiorców. Jednak w tym przypadku można korzystać tylko z umów handlowych na cenę sprzedaży. Jeśli chcesz stosować ceny specyficzne dla odbiorców, zalecamy, aby nie ustawiać grup cenowych bezpośrednio dla odbiorców. Zamiast tego należy używać przynależności.
 
-W dalszych rozdziałach zawarto więcej informacji na temat jednostek handlu detalicznego, których można używać do ustawiania odrębnych cen podczas korzystania z grup cenowych. Konfigurowanie cen i rabatów dla wszystkich tych jednostek jest procesem dwuetapowym. Etapy te można wykonać w dowolnej kolejności. Jednak zgodnie z porządkiem logicznym najpierw należy ustawić grupy cenowe dla jednostek, ponieważ ten krok będzie najprawdopodobniej tylko jednorazową konfiguracją wykonywaną podczas wdrażania. Następnie, wraz z tworzeniem cen i rabatów, można ustawiać grupy cenowe indywidualnie dla tych cen i rabatów.
+W dalszych rozdziałach zawarto więcej informacji na temat jednostek handlu, których można używać do ustawiania odrębnych cen podczas korzystania z grup cenowych. Konfigurowanie cen i rabatów dla wszystkich tych jednostek jest procesem dwuetapowym. Etapy te można wykonać w dowolnej kolejności. Jednak zgodnie z porządkiem logicznym najpierw należy ustawić grupy cenowe dla jednostek, ponieważ ten krok będzie najprawdopodobniej tylko jednorazową konfiguracją wykonywaną podczas wdrażania. Następnie, wraz z tworzeniem cen i rabatów, można ustawiać grupy cenowe indywidualnie dla tych cen i rabatów.
 
 ### <a name="channels"></a>Kanały
 
-W branży handlu detalicznego bardzo popularne jest stosowanie różnych cen w różnych kanałach. Dwa podstawowe czynniki wpływające na wysokość cen w poszczególnych kanałach to koszty i lokalne warunki rynkowe.
+W branży handlowej bardzo popularne jest stosowanie różnych cen w różnych kanałach. Dwa podstawowe czynniki wpływające na wysokość cen w poszczególnych kanałach to koszty i lokalne warunki rynkowe.
 
 - **Koszty** — im dalej jest kanał od źródła produktu, tym więcej kosztuje utworzenie zapasów produktu. Na przykład świeże artykuły rolne mają ograniczony okres przydatności i szczególne wymagania dotyczące produkcji (na przykład okres wegetacji). W czasie zimy świeża sałata prawdopodobne będzie kosztowała więcej w krajach północnych niż południowych. W przypadku ustawiania cen dla kanałów na dużym obszarze geograficznym prawdopodobnie zechcesz ustawić różne ceny w różnych kanałach.
 - **Lokalne warunki rynkowe** — sklep, który ma bezpośredniego konkurenta po drugiej stronie ulicy, będzie znacznie bardziej wrażliwy na ceny niż sklep, który nie ma konkurencji w sąsiedztwie.
@@ -84,7 +84,7 @@ Niektórzy sprzedawcy detaliczni używają fizycznych lub wirtualnych katalogów
 
 ### <a name="best-practices-for-price-groups"></a>Najlepsze praktyki dotyczące grup cenowych
 
-Nie używaj tej samej grupy cenowej dla różnych typów jednostek handlu detalicznego. Zamiast tego należy używać jednego zestawu grup cenowych dla kanałów, innego zestawu grup cenowych dla przynależności lub programów lojalnościowych itd. Można użyć prefiksu lub sufiksu w nazwie grupy cenowej, aby wizualnie grupować różne typy używanych grup cenowych.
+Nie używaj tej samej grupy cenowej dla różnych typów jednostek. Zamiast tego należy używać jednego zestawu grup cenowych dla kanałów, innego zestawu grup cenowych dla przynależności lub programów lojalnościowych itd. Można użyć prefiksu lub sufiksu w nazwie grupy cenowej, aby wizualnie grupować różne typy używanych grup cenowych.
 
 Unika ustawiania grup cenowych bezpośrednio dla odbiorców. Zamiast tego używaj przynależności. W ten sposób do odbiorców można przypisać wszystkie typy cen i rabatów, a nie tylko umowy handlowe na cenę sprzedaży.
 
@@ -98,7 +98,7 @@ Aby użyć priorytetu cen dla cen, należy przypisać priorytet cen do grupy cen
 
 Funkcja priorytetu cen została wprowadzona do obsługi scenariusza, gdzie sprzedawca detaliczny chce stosować wyższe ceny w określonej grupie sklepów. Na przykład sprzedawca detaliczny zdefiniował regionalne ceny dla wschodniego wybrzeża Stanów Zjednoczonych, ale chce wyższych cen dla niektórych produktów w sklepach w Nowym Jorku, ponieważ sprzedawanie produktów w tym mieście jest droższe i/lub lokalny rynek wytrzyma wyższą cenę.
 
-Jak opisano w rozdziale „Najlepsza cena” w tym temacie, aparat kalkulacji cen detalicznych zazwyczaj wybiera niższą z dwóch cen. Z tego względu sprzedawca detaliczny zwykle ma blokadę na użycie wyższej z dwóch cen w sklepie, który należy jednocześnie do grup cenowych Wschodnie wybrzeże i Nowy Jork. Aby rozwiązać ten problem przed wprowadzeniem funkcji priorytetu cen, sprzedawca detaliczny musiał dwa razy definiować ceny wszystkich produktów — nie mógł ich przypisać do grup cenowych. Alternatywnie sprzedawca detaliczny musiał tworzyć dodatkowe grupy cenowe w celu odizolowania produktów, które miały ceny wyższe niż standardowe, niższe ceny.
+Jak opisano w rozdziale „Najlepsza cena” w tym temacie, aparat kalkulacji cen zazwyczaj wybiera niższą z dwóch cen. Z tego względu sprzedawca detaliczny zwykle ma blokadę na użycie wyższej z dwóch cen w sklepie, który należy jednocześnie do grup cenowych Wschodnie wybrzeże i Nowy Jork. Aby rozwiązać ten problem przed wprowadzeniem funkcji priorytetu cen, sprzedawca detaliczny musiał dwa razy definiować ceny wszystkich produktów — nie mógł ich przypisać do grup cenowych. Alternatywnie sprzedawca detaliczny musiał tworzyć dodatkowe grupy cenowe w celu odizolowania produktów, które miały ceny wyższe niż standardowe, niższe ceny.
 
 Natomiast funkcja priorytetu cen pozwala sprzedawcy detalicznemu utworzyć priorytet cen dla cen sklepowych wyższych niż określone w priorytecie cen dla cen regionalnych. Alternatywnie sprzedawca detaliczny może utworzyć priorytet cen tylko dla cen sklepowych, a ceny regionalne pozostawić z domyślnym priorytetem cen, który ma wartość 0 (zero). Obie konfiguracje pomagają zagwarantować, że ceny sklepowe zawsze będą używane przed cenami regionalnymi.
 
@@ -142,7 +142,7 @@ Najłatwiejszym miejscem ustawiania ceny produktu jest sam produkt. Wartość us
 
 Jeśli produkt ma jedną cenę dla wszystkich klientów, cena podstawowa jest najbardziej efektywnym sposobem zarządzania ceną tego produktu. Nawet jeśli korzystasz z umów handlowych do wyznaczania ceny, warto również ustawić cenę podstawową w produkcie. Wtedy jeśli nie użyjesz umowy handlowej o zakresie **Wszystko**, masz awaryjną cenę, która zostanie użyta, gdy nie ma zastosowania żadna umowa handlowa.
 
-Jeśli waluta w kanale sprzedaży detalicznej różni się od waluty firmy, cena podstawowa w tym kanale będzie wyznacza poprzez konwersję waluty na cenie ustawionej w produkcie.
+Jeśli waluta w kanale różni się od waluty firmy, cena podstawowa w tym kanale będzie wyznacza poprzez konwersję waluty na cenie ustawionej w produkcie.
 
 Mimo iż jednostka cenowa nie jest popularnym scenariuszem, aparat kalkulacji cen go obsługuje. Jeśli jednostka cenowa zostanie ustawiona na wartość inną niż **0** (zero), cena za jednostkę jest równa cenie podzielonej przez jednostkę cenową. Na przykład jeśli cena produktu wynosi 10,00 USD, a jednostka cenowa jest równa 50, cena za ilość 1 wynosi 0,20 USD (= 10,00 USD / 50).
 
@@ -150,9 +150,9 @@ Mimo iż jednostka cenowa nie jest popularnym scenariuszem, aparat kalkulacji ce
 
 Za pomocą arkusza umów handlowych można tworzyć umowy handlowe na cenę sprzedaży dla każdego produktu. W Microsoft Dynamics 365 istnieją trzy zakresy odbiorców dla umów handlowych na cenę sprzedaży: **Tabela**, **Grupa** i **Wszystko**. Zakres odbiorców decyduje o odbiorcach, do których ma zastosowanie konkretna umowa handlowa na cenę sprzedaży.
 
-Umowa handlowa na cenę sprzedaży o zakresie **Tabela** jest przeznaczona dla pojedynczego odbiorcy ustawionego bezpośrednio w umowie handlowej. Ten scenariusz nie jest typowym scenariuszem sprzedaży detalicznej firma-konsument (B2C). Jednak jeśli wystąpi, aparat kalkulacji cen używa do wyznaczania ceny umów handlowych o zakresie **Tabela**.
+Umowa handlowa na cenę sprzedaży o zakresie **Tabela** jest przeznaczona dla pojedynczego odbiorcy ustawionego bezpośrednio w umowie handlowej. Ten scenariusz nie jest typowym scenariuszem od firmy do konsumenta (B2C). Jednak jeśli wystąpi, aparat kalkulacji cen używa do wyznaczania ceny umów handlowych o zakresie **Tabela**.
 
-Umowa handlowa na cenę sprzedaży o zakresie **Grupa** to typ najczęściej używany z funkcjami sprzedaży detalicznej. Poza aplikacją Commerce umowy typu **Grupa** są stosowane do prostych grup odbiorców. Jednak w aplikacji Commerce koncepcja grupy odbiorców została rozszerzona i teraz jest bardziej ogólną grupą cenową. Grupę cenową można połączyć z kanałem, przynależnością, programem lojalnościowym lub katalogiem. Aby uzyskać szczegółowe informacje o grupach cenowych, zobacz rozdział „Grupy cenowe” wcześniej w tym temacie.
+Umowa handlowa na cenę sprzedaży o zakresie **Grupa** to typ najczęściej używany z funkcjami. Poza aplikacją Commerce umowy typu **Grupa** są stosowane do prostych grup odbiorców. Jednak w aplikacji Commerce koncepcja grupy odbiorców została rozszerzona i teraz jest bardziej ogólną grupą cenową. Grupę cenową można połączyć z kanałem, przynależnością, programem lojalnościowym lub katalogiem. Aby uzyskać szczegółowe informacje o grupach cenowych, zobacz rozdział „Grupy cenowe” wcześniej w tym temacie.
 
 > [!NOTE]
 > Cena z umowy handlowej jest zawsze używana przed ceną podstawową.
@@ -211,7 +211,7 @@ Microsoft SQL Server Express jest często używane dla baz danych kanałów ze w
 
 ## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Cen zawierające podatek a ceny bez podatku
 
-Podczas ustawiania cen sprzedaży w Dynamics 365 nie określasz, czy wprowadzana wartość ceny obejmuje podatek, czy nie. Wartość mówi ogólnie o cenie. Jednak ustawienie **Cena zawiera podatek** dostępne w kanałach sprzedaży detalicznej pozwala skonfigurować kanały, tak aby uwzględniały lub nie uwzględniały podatku w cenach. To ustawienie konfiguruje się w kanale i może przybierać różne wartości nawet w jednej firmie.
+Podczas ustawiania cen sprzedaży w Dynamics 365 nie określasz, czy wprowadzana wartość ceny obejmuje podatek, czy nie. Wartość mówi ogólnie o cenie. Jednak ustawienie **Cena zawiera podatek** dostępne w kanałach pozwala skonfigurować kanały, tak aby uwzględniały lub nie uwzględniały podatku w cenach. To ustawienie konfiguruje się w kanale i może przybierać różne wartości nawet w jednej firmie.
 
 Jeśli pracujesz z cenami zawierającymi, jak i niezawierającymi podatku, jest bardzo ważne, aby poprawnie ustawić ceny, ponieważ łączna kwota płacona przez odbiorcę zmieni się, jeżeli w kanale zmienisz wartość ustawienia **Cena zawiera podatek**.
 
@@ -219,15 +219,15 @@ Jeśli pracujesz z cenami zawierającymi, jak i niezawierającymi podatku, jest 
 
 Jeden aparat kalkulacji cen jest używany do obliczania cen we wszystkich kanałach: biura obsługi, sklepów sieci sprzedaży (tradycyjnych) i sklepów internetowych. Pomaga to realizować ujednolicone scenariusze handlu.
 
-Ceny detaliczne są przeznaczona do używania z jednostkami handlu detalicznego, a nie jednostkami niezwiązanymi z handlem detalicznym. W szczególności służą do ustawiania cen w sklepach, a nie w magazynach.
+Ceny są przeznaczone do używania z jednostkami handlu detalicznego, a nie jednostkami niezwiązanymi z handlem detalicznym. W szczególności służą do ustawiania cen w sklepach, a nie w magazynach.
 
-Aparat kalkulacji cen detalicznych **nie obsługuje** następujących funkcji cen:
+Aparat kalkulacji cen **nie obsługuje** następujących funkcji cen:
 
-- Ustawianie cen według wymiarów magazynowania typu Oddział lub Oddział i magazyn nie jest obsługiwane. Jeśli określisz tylko wymiar oddziału w umowach handlowych, ceny detaliczne zignorują oddział i zastosują umowę handlową do wszystkich oddziałów. Jeśli określisz oddział i magazyn, to zachowanie jest niezdefiniowane/niesprawdzone, ponieważ oczekuje się, że sprzedawcy detaliczni używają grup cenowych sklepu do kontrolowania cen dla każdego sklepu/magazynu.
+- Ustawianie cen według wymiarów magazynowania typu Oddział lub Oddział i magazyn nie jest obsługiwane. Jeśli określisz tylko wymiar oddziału w umowach handlowych, aparat kalkulacji cen zignoruje Oddział i zastosują umowę handlową do wszystkich oddziałów. Jeśli określisz oddział i magazyn, to zachowanie jest niezdefiniowane/niesprawdzone, ponieważ oczekuje się, że sprzedawcy detaliczni używają grup cenowych sklepu do kontrolowania cen dla każdego sklepu/magazynu.
 - Kalkulacja cen oparta na atrybutach nie jest obsługiwana.
 - Przekazywanie rabatu dostawcy nie jest obsługiwane.
 
-Ponadto **tylko** aparat kalkulacji cen detalicznych obsługuje następujące funkcje cen:
+Ponadto **tylko** aparat kalkulacji cen obsługuje następujące funkcje cen:
 
 - Cena bazuje na wymiarach produktów, w kolejności od ceny najbardziej specyficznej dla wariantu, przez najmniej specyficzną dla wariantu, aż do ceny produktu głównego. Cena ustawiana za pomocą dwóch wymiarów produktu (na przykład Kolor i Rozmiar) jest wykorzystywana przed ceną ustawianą za pomocą tylko jednego wymiaru produktu (np. Rozmiar).
 - Jedna grupa cenowa może służyć do kontrolowania cen i rabatów.

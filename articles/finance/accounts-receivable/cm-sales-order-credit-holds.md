@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f819139e74d81d24810c63bae1de19358983b9
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015360"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057677"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Obsługa wstrzymania kredytu zamówień sprzedaży
 [!include [banner](../includes/banner.md)]
@@ -264,7 +264,7 @@ Zamówień sprzedaży, które zostały wstrzymane w procesie wymuszenia, nie mo�
 #### <a name="releasing-orders-that-were-added-to-the-credit-management-hold-list-with-a-forced-credit-hold"></a>Zwalnianie zamówień dodanych do listy wstrzymania zarządzania kredytami z wymuszonym wstrzymaniem kredytowym
 Zamówienia sprzedaży o wymuszonej przyczynie wstrzymania nie mogą zostać zwolnione automatycznie. Jeśli zamówienie sprzedaży zostało wstrzymane i użyto procesu, który automatycznie zwalnia zamówienia sprzedaży, to zamówienie sprzedaży będzie wyświetlane jako **Gotowe do wydania** i pozostanie na liście blokad. Aby zwolnić zamówienie, należy skorzystać z menu **Zwolnij**.
  
-## <a name="free-text-invoices-retail-orders-and-project-invoice-support-in-credit-management"></a>Obsługa faktur niezależnych, zamówień detalicznych i obsługi faktur projektu w zarządzaniu kredytami 
-Zarządzanie kredytami może być używane obecnie tylko dla zamówień sprzedaży. Faktury niezależne, punkty detaliczne zamówień sprzedaży i biura obsługi zamówień będą używały tymczasowych limitów kredytowych oraz ubezpieczeń/gwarancji dodawanych do korekty limitu kredytu. Nie będą one używały reguł blokowania i nie zostaną umieszczone na liście blokad, jeśli wystąpił problem z limitem kredytu.
+## <a name="free-text-invoices-orders-and-project-invoice-support-in-credit-management"></a>Obsługa faktur niezależnych, zamówień i obsługi faktur projektu w zarządzaniu kredytami 
+Zarządzanie kredytami może być używane obecnie tylko dla zamówień sprzedaży. Faktury niezależne, punkty zamówień sprzedaży i biura obsługi zamówień będą używały tymczasowych limitów kredytowych oraz ubezpieczeń/gwarancji dodawanych do korekty limitu kredytu. Nie będą one używały reguł blokowania i nie zostaną umieszczone na liście blokad, jeśli wystąpił problem z limitem kredytu.
 
 Brak obsługi faktur projektu w zarządzaniu kredytami.

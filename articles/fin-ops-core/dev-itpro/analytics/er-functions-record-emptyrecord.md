@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cf23f11fa92adfb7a050efd9c68e80e1bee621f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: a02cdd085a236065bb3622b36f7d3284144d96e5
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916897"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041292"
 ---
 # <a name="EMPTYRECORD">EMPTYRECORD, funkcja ER</a>
 
@@ -33,7 +33,7 @@ Funkcja `EMPTYRECORD` zwraca pustą wartość *Kontener (rekord)*, która ma tę
 
 ## <a name="syntax"></a>Składnia
 
-```
+```vb
 EMPTYRECORD (list)
 ```
 

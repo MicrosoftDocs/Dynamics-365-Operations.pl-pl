@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
-ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
+ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "2810706"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3058024"
 ---
 # <a name="one-voucher"></a>Pojedynczy załącznik
 
@@ -156,7 +156,7 @@ Organizacje często chcą księgować w księdze głównej sumarycznie, aby zmin
 
 ### <a name="settle-multiple-unposted-payments-to-the-same-invoice"></a>Rozliczanie wielu niezaksięgowanych płatności względem jednej faktury
 
-Ten scenariusz zwykle występuje w organizacjach zajmujących się sprzedażą detaliczną, gdzie odbiorcy stosują wiele metod płatności za zakupy. W tym scenariuszu organizacja musi mieć możliwość rejestrowania wielu niezaksięgowanych płatności i rozliczania ich względem faktury dla odbiorcy.
+Ten scenariusz zwykle występuje w organizacjach, gdzie odbiorcy stosują wiele metod płatności za zakupy. W tym scenariuszu organizacja musi mieć możliwość rejestrowania wielu niezaksięgowanych płatności i rozliczania ich względem faktury dla odbiorcy.
 
 Nowa funkcja, którą dodano w programie Microsoft Dynamics 365 for Operations w wersji 1611 (z listopada 2016), umożliwia rozliczanie wielu niezaksięgowanych płatności względem jednej faktury. Nie trzeba już wprowadzać wielu płatności od odbiorców w jednym załączniku.
 

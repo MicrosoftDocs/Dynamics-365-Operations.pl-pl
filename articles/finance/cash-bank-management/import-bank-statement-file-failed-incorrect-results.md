@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 612ded1f68cc8e1b26b8046501bae1707175e23a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a5e7e6897f19dc0303ffbd3111f93669a91daa1b
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188333"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059383"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Rozwiązywanie problemów z importowaniem pliku wyciągu bankowego
 
@@ -40,7 +40,7 @@ Po próbie zaimportowania pliku wyciągu bankowego przejdź do historii zadania 
 Porównaj definicję układu pliku bankowego z definicją importu w programie Finance i zapisz wszelkie różnice w polach i elementach. Porównaj plik wyciągu bankowego z powiązanym przykładowym plikiem programu Finance. W plikach ISO20022 wszelkie różnice powinny być dobrze widoczne.
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>Różnice stref czasowych dla zaimportowanych wyciągów bankowych
-Wartości daty i godziny w pliku importu mogą się różnić od wartości daty i godziny wyświetlanej w module Finance and Operations. Aby uniknąć tej rozbieżności, należy wprowadzić preferencję dotyczącą strefy czasowej na stronie **Konfigurowanie źródeł danych**. Aby uzyskać więcej informacji o wprowadzaniu preferencji dotyczących strefy czasowej, zapoznaj się z tematem [Konfigurowanie zaawansowanego procesu importu uzgodnień bankowych](set-up-advanced-bank-reconciliation-import-process.md).
+Wartości daty i godziny w pliku importu mogą się różnić od wartości daty i godziny wyświetlanej w Finance and Operations. Aby uniknąć tej rozbieżności, należy wprowadzić preferencję dotyczącą strefy czasowej na stronie **Konfigurowanie źródeł danych**. Aby uzyskać więcej informacji o wprowadzaniu preferencji dotyczących strefy czasowej, zapoznaj się z tematem [Konfigurowanie zaawansowanego procesu importu uzgodnień bankowych](set-up-advanced-bank-reconciliation-import-process.md).
 
 ## <a name="transformations"></a>Przekształcenia
 Zazwyczaj zmiany należy dokonać w jednym z trzech przekształceń. Każde przekształcenie jest zapisywane dla określonego standardu.
@@ -58,9 +58,11 @@ Pliki BAI2 i MT940 są plikami tekstowymi i wymagają skorygowania, aby umożliw
 
 1.  Utwórz plik XML i skopiuj do niego następujący tekst:
 
-        <Batch><![CDATA[PASTESTATEMENTFILEHERE
+    ```xml
+    <Batch><![CDATA[PASTESTATEMENTFILEHERE
         ]]></Batch>
-
+    ```
+    
 2.  Skopiuj zawartość pliku wyciągu bankowego i wkleić ją do pliku XML, tak aby zastąpiła fragment **TUWKLEJPLIKINSTRUKCJI**.
 
 ### <a name="debug-the-xslt"></a>Debugowanie przekształcenia XSLT

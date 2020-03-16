@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 02d7e2238e58098428397121de848a1947a991ad
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: b4234ac428cc80836852d4edfb0f37098b4a1e8e
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015357"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071667"
 ---
 # <a name="credit-management-parameters-setup"></a>Ustawienia parametrów modułu Zarządzanie kredytami
 
@@ -38,8 +38,8 @@ Istnieją cztery FastTabs, w których można zmienić parametry kontrolujące za
 - Ustawienie **Zezwalaj na edycję zamówień sprzedaży po zwolnieniu wstrzymania** do wartości **tak** spowoduje ponowne sprawdzenie reguł księgowania, jeśli wartość zamówienia sprzedaży (cena rozszerzona) została zmieniona, ponieważ zamówienie sprzedaży zostało zwolnione z listy zablokowanych. ,
 - W polu **Przyczyny anulowania zamówień** wybierz przyczynę zwolnienia, która będzie używana domyślnie w przypadku anulowania zamówienia sprzedaży, które było w dniu wstrzymania zarządzania kredytem.
 - Ustawienie opcji **Sprawdź limit kredytu dla grupy odbiorców kredytu** na wartość **Tak** powoduje sprawdzenie limitu kredytu grupy odbiorców kredytu, gdy odbiorca zamówienia sprzedaży należy do grupy odbiorców kredytu. Limit kredytu dla grupy zostanie sprawdzony, a następnie, jeśli jest wystarczający, zostanie sprawdzony limit kredytu dla odbiorcy.
-- Ustawienie opcji **Sprawdź limit kredytu, jeśli warunki płatności zostaną zwiększone** do wartości **Tak**, aby sprawdzić, czy warunki płatności w zamówieniu sprzedaży różnią się od warunków płatności w zamówieniu sprzedaży. Jeśli nowe warunki płatności mają wyższą rangę niż pierwotne warunki płatności, zamówienie jest umieszczane w wstrzymaniu zarządzania kredytami.
-- Ustawienie opcji **Sprawdź limit kredytu, jeśli rabat rozliczeniowy zostanie zwiększony** do wartości **Tak** w celu sprawdzenia rankingu rabatów rozliczeniowych w celu ustalenia, czy rabat gotówkowy w zamówieniu sprzedaży różni się od rabatu gotówkowego w zamówieniu sprzedaży. Jeśli nowy rabat gotówkowy ma wyższą rangę niż pierwotny rabat gotówkowy, zamówienie zostaje wstrzymane w zarządzaniu kredytem.
+- Ustawienie opcji **Sprawdź limit kredytu, jeśli warunki płatności zostaną zwiększone** do wartości **Tak**, aby sprawdzić, czy warunki płatności w zamówieniu sprzedaży różnią się od domyślnych warunków płatności dla odbiorcy. Jeśli nowe warunki płatności mają wyższą rangę niż pierwotne warunki płatności, zamówienie jest umieszczane w wstrzymaniu zarządzania kredytami.
+- Ustawienie opcji **Sprawdź limit kredytu, jeśli rabat rozliczeniowy zostanie zwiększony** do wartości **Tak** w celu sprawdzenia rankingu rabatów rozliczeniowych w celu ustalenia, czy rabat gotówkowy w zamówieniu sprzedaży różni się od domyślnego rabatu gotówkowego dla odbiorcy. Jeśli nowy rabat gotówkowy ma wyższą rangę niż pierwotny rabat gotówkowy, zamówienie zostaje wstrzymane w zarządzaniu kredytem.
 - W polu **przyczyna zwolnienia zmodyfikowanych zamówień** wybierz przyczynę wydania, która będzie używana domyślnie, gdy zmodyfikowane zamówienia są automatycznie zwalniane z wstrzymania zarządzania kredytami.
 - Ustaw **Ignoruj regułę blokowania wygasłego limitu kredytowego, gdy data wygaśnięcia jest pusta** opcję na **tak**, aby kontrolować zasadę **Wygasł limit kredytu**. Ustawienie opcji na **nie** powoduje zablokowanie zamówienia, gdy data ważności jest pusta.
 - W module Zarządzanie magazynem ładunki mogą być tworzone w momencie wprowadzania zamówienia sprzedaży. Ustawienie opcji **Usuń zablokowane wiersze** ładunku na wartość **nie** powoduje pozostawienia wierszy zamówienia sprzedaży w ładunku, gdy zamówienie sprzedaży ma wstrzymany kredyt. Nie można przetworzyć ładunku, dopóki zamówienie sprzedaży jest wstrzymane. Ustaw opcję na **Tak**, aby usunąć wiersze zamówienia sprzedaży z obciążenia, gdy zamówienie sprzedaży jest wstrzymane. Następnie można przetworzyć ładunek.

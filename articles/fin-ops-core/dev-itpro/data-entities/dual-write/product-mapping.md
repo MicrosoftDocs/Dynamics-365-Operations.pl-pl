@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a52e8f65e7e2a8d90ddf5efa47c07d6995ef645d
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
+ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019957"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3081158"
 ---
 # <a name="unified-product-experience"></a>Ujednolicone działanie produktu
 
@@ -75,7 +75,7 @@ Jednostka | uoms
 Konwersje jednostek | msdyn_ unitofmeasureconversions
 Konwersja jednostki miary określonego produktu | msdyn_productspecificunitofmeasureconversion
 Kategorie produktów | msdyn_productcategories | Każda kategoria produktu oraz informacje o jego strukturze i charakterystyce znajdują się w jednostce kategorii produktów. 
-Hierarchie kategorii produktów | msdyn_productcategoryhierarhies | Hierarchie produktów służą do kategoryzowania lub grupowania produktów. Hierarchie kategorii są dostępne Common Data Service przy użyciu jednostki hierarchia kategorii prodcut. 
+Hierarchie kategorii produktów | msdyn_productcategoryhierarhies | Hierarchie produktów służą do kategoryzowania lub grupowania produktów. Hierarchie kategorii są dostępne w Common Data Service przy użyciu jednostki Hierarchia kategorii produktów. 
 Role hierarchii kategorii produktów | msdyn_productcategoryhierarchies | Hierarchie produktów mogą być używane w różnych rolach w D365 Finance and Operations. Określ, która kategoria ma być używana w każdej roli, w której jest używana jednostka roli Kategoria produktu. 
 Przypisania kategorii produktów | msdyn_productcategoryassignments | Aby przypisać produkt do kategorii, można użyć jednostki przypisań kategorii produktów.
 
@@ -91,7 +91,7 @@ Ponieważ produkt jest reprezentowany jako jednostka SKU, pojęcia dotyczące r�
 
 ![Model danych produktów](media/dual-write-product.png)
 
-W przypadku włączenia funkcji podwójnego zapisywania aplikacje Finance and Operations zostaną zsynchronizowane w innych aplikacjach systemu Dynamics 365 w stanie **Wersje robocze**. Są one dodawane do pierwszej listy cen z tą samą walutą. Innymi słowy, są dodawane do pierwszej listy cen w aplikacji Dynamics 365, która odpowiada walucie firmy, w której produkt jest wydawany w aplikacji Finance and Operations. 
+W przypadku włączenia funkcji podwójnego zapisywania aplikacje z Finance and Operations zostaną zsynchronizowane w innych aplikacjach Dynamics 365 w stanie **Wersje robocze**. Są one dodawane do pierwszej listy cen z tą samą walutą. Innymi słowy, są dodawane do pierwszej listy cen w aplikacji Dynamics 365, która odpowiada walucie firmy, w której produkt jest wydawany w aplikacji Finance and Operations. 
 
 Produkty domyślne z Finance and Operations operacyjnych są synchronizowane z innymi aplikacjami systemu Dynamics 365 w stanie **wersja robocza**. Aby zsynchronizować produkt z **Aktywnym** stanem, można go bezpośrednio używać w ofertach zamówień sprzedaży, na przykład należy wybrać następujące ustawienie: w obszarze **System > Administracja > Administracja systemu > Ustawienia systemu > karta Sprzedaż** wybierz opcję **Utwórz produkty w stanie aktywnym = tak**. 
 
@@ -109,7 +109,7 @@ Zauważ, że synchronizacja produktów jest spowodowana przez Finance and Operat
 
 Wymiary produktu to cechy, które określają wariant produktu. Cztery wymiary produktu (kolor, rozmiar, styl i konfiguracja) są również mapowane w Common Data Service w celu zdefiniowania wariantów produktu. Na poniższej ilustracji przedstawiono model danych dla wymiaru produktu Kolor. Ten sam model jest stosowany do rozmiarów, stylów i konfiguracji. 
 
-![Model danych produktów](media/dual-write-product-2.PNG)
+![Model danych produktów](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +145,7 @@ Domyślne ustawienia zamówień definiują: oddział i magazyn, skąd towary bę
 
 Jednostki miary i odpowiednie konwersje są dostępne w Common Data Service w następującym modelu danych widocznym na diagramie.
 
-![Model danych produktów](media/dual-write-product-3.PNG)
+![Model danych produktów](media/dual-write-product-three.png)
 
 Pojęcie jednostka miary jest zintegrowane między aplikacjami Finance and Operations, a innymi aplikacjami Dynamics 365. Dla każdej klasy jednostek w aplikacji Finance and Operations jest tworzona grupa jednostek w aplikacji Dynamics 365, która zawiera jednostki należące do klasy jednostek. Domyślna jednostka podstawowa jest również tworzona dla każdej grupy jednostek. 
 
@@ -163,7 +163,7 @@ Gdy włączony jest zapis podwójny, produkty z aplikacji Finance and Operations
 
 ### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Jednostki współmierne i klasy jednostek/grupy danych z Finance and Operations oraz innych aplikacji Dynamics 365
 
-Najpierw należy pamiętać, że klucz integracji dla jednostki jest msdyn_symbol. Dlatego ta wartość musi być unikatowa w Common Data Service lub innych aplikacjach systemu Dynamics 365. Ponieważ w innych aplikacjach systemu Dynamics 365 jest to para „Identyfikator grupy jednostek” i „nazwa”, która określa unikatowość jednostki, należy wziąć pod uwagę różne scenariusze dotyczące dopasowywania danych jednostkowych między aplikacjami Finance and Operations i Common Data Service.
+Najpierw należy pamiętać, że klucz integracji dla jednostki to msdyn_symbol. Dlatego ta wartość musi być unikatowa w Common Data Service lub innych aplikacjach systemu Dynamics 365. Ponieważ w innych aplikacjach systemu Dynamics 365 jest to para „Identyfikator grupy jednostek” i „nazwa”, która określa unikatowość jednostki, należy wziąć pod uwagę różne scenariusze dotyczące dopasowywania danych jednostkowych między aplikacjami Finance and Operations i Common Data Service.
 
 Dla jednostek uwzględniających/pokrywających się w aplikacjach Finance and Operations oraz inne aplikacje w ramach Dynamics 365:
 
@@ -176,7 +176,7 @@ W ramach dwóch podwójnych odpisów grup jednostek z aplikacji Finance and Oper
 
 Dla jednostek w innych aplikacjach Dynamics 365, które nie istnieją w aplikacjach Finance and Operations:
 
-Pole msdyn_symbol musi być wypełnione dla wszystkich jednostek. Jednostki mogą być zawsze tworzone w aplikacjach Finance and Operations w odpowiedniej klasie jednostek (jeśli istnieją). Jeśli klasa jednostek nie istnieje, najpierw należy utworzyć klasę jednostek (należy pamiętać, że nie można utworzyć klasy jednostek w aplikacjach Finance and Operations oprócz przez rozszerzenie, jeśli rozbudowano wyliczenie) pasujących do innych grup jednostek Dynamics 365. Następnie można utworzyć jednostkę. Zauważ, że symbolem jednostki w aplikacjach Finance and Operations musi być msdyn_symbol poprzednio określony w innych aplikacjach Dynamics 365 dla jednostki.
+Pole msdyn_symbol musi być wypełnione dla wszystkich jednostek. Jednostki mogą być zawsze tworzone w aplikacjach Finance and Operations w odpowiedniej klasie jednostek (jeśli istnieją). Jeśli klasa jednostek nie istnieje, najpierw należy utworzyć klasę jednostek (należy pamiętać, że nie można utworzyć klasy jednostek w aplikacjach Finance and Operations oprócz przez rozszerzenie, jeśli rozbudowuje się wyliczenie) pasujących do innych grup jednostek aplikacji Dynamics 365. Następnie można utworzyć jednostkę. Zauważ, że symbolem jednostki w aplikacjach Finance and Operations musi być msdyn_symbol poprzednio określony w innych aplikacjach Dynamics 365 dla jednostki.
 
 ## <a name="product-policies-dimension-tracking-and-storage-groups"></a>Zasady dotyczące produktu: Grupa wymiarów, śledzenie i magazynowanie
 
@@ -201,17 +201,17 @@ Zasady dotyczące produktów to zestawy zasad używanych do definiowania produkt
 
 ## <a name="integration-key-for-products"></a>Klucz integracji produktów 
 
-Do unikatowego identyfikowania produktów Dynamics 365 for Finance and Operations i produktów Common Data Service są używane klucze integracji. W przypadku produktów klucz **(productnumber)** jest unikatowym kluczem identyfikującym produkt w Common Data Service. Składa się on z: **(company, msdyn_productnumber)**. **Firma** wskazuje firmę w Finance and Operations, a **msdyn_productnumber** wskazuje numer produktu dla określonego produktu w Finance and Operations. 
+Do unikatowego identyfikowania produktów Dynamics 365 for Finance and Operations i produktów Common Data Service są używane klucze integracji. W przypadku produktów klucz **(productnumber)** jest unikatowym kluczem identyfikującym produkt w Common Data Service. Składa się on z połączenia: **(company, msdyn_productnumber)**. **Firma** wskazuje firmę w Finance and Operations, a **msdyn_productnumber** wskazuje numer produktu dla określonego produktu w Finance and Operations. 
 
 W przypadku innych użytkowników aplikacji Dynamics 365, produkt jest identyfikowany w interfejsie użytkownika za pomocą **msdyn_productnumber** (należy zauważyć, że etykieta pola jest **numerem produktu**). W formularzu produktu są wyświetlane zarówno dane firmy, jak i msydn_productnumber. Niemniej jednak pole (productnumber) unikatowy klucz produktu nie jest wyświetlane. 
 
-Należy zauważyć, że jeśli aplikacje są zbudowane na górze Common Data Service, należy zwrócić szczególną uwagę na użycie (productnumber), czyli unikatowego identyfikatora produktu, klucza integracji, a nie msdyn_productnumber, z powodu nieunikatowego faktu, że ostatni nie jest unikatowy. 
+W przypadku konstruowania aplikacji w Common Data Service należy zwrócić uwagę na używanie **productnumber** (unikatowego identyfikatora produktu) jako klucza integracji. Nie używaj **msdyn_productnumber**, ponieważ nie jest ono unikatowe. 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>Wstępna synchronizacja produktów i migracja danych z Common Data Service do Finance and Operations
 
 ### <a name="initial-synchronization-of-products"></a>Wstępna synchronizacja produktów 
 
-Gdy włączony jest zapis podwójny, produkty z Dynamics 365 Finance and Operations są synchronizowane z Common Data Service i innymi aplikacjami Dynamics 365. Należy zauważyć, że produkty utworzone w Common Data Service i inne aplikacje Dynamics 365 przed podwójnym zapisaniem nie będą aktualizowane ani dopasowywane do danych produktu z Finance and Operations.
+Gdy włączony jest zapis podwójny, produkty z aplikacji Finance and Operations są synchronizowane z Common Data Service i innymi aplikacjami opartymi na modelach w Dynamics 365. Produkty utworzone w Common Data Service i innych aplikacjach Dynamics 365 przed wydaniem podwójnego zapisywania nie będą aktualizowane ani dopasowywane do danych produktu z Finance and Operations.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Dopasowywanie danych z Finance and Operations oraz innych aplikacji Dynamics 365
 

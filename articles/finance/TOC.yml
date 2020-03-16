@@ -54,7 +54,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/finance/toc.json
                 - name: Wymagania systemowe dotyczące wdrożeń lokalnych
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
-                - name: Kup rozwiązanie Finance + Operations (lokalne)
+                - name: Kup rozwiązanie Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurowanie modułu Magazynowanie dla wdrożeń lokalnych
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
@@ -150,6 +150,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/finance/toc.json
                 - name: Zapisane widoki
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/finance/toc.json
+                - name: Możliwości siatki
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
                 - name: Tworzenie pól niestandardowych i praca z nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
                 - name: Osadzanie aplikacji PowerApps
@@ -940,6 +942,8 @@
                   href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
                 - name: Ustawianie kodów raportowania podatku
                   href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Obsługa podwójnej waluty dla podatku
+                  href: general-ledger/dual-currency-for-tax.md
                 - name: Specyfikacja podatku według raportu transakcji księgi
                   href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
                 - name: Konfigurowanie okresów rozliczania podatku
@@ -1102,6 +1106,8 @@
                   href: public-sector/interest-distribution.md
             - name: Zaopatrzenie i sourcing w sektorze publicznym
               href: public-sector/procurement-sourcing-public-sector.md
+            - name: Obliczanie daty dostawy dla wiersza na podstawie czasu realizacji
+              href: public-sector/po-delivery-date.md
             - name: Role zabezpieczeń w sektorze publicznym
               href: public-sector/security-roles-public-sector.md
             - name: Fundusze w sektorze publicznym
@@ -1294,10 +1300,12 @@
                   href: localizations/latam-bra-sped-reinf.md
                 - name: Rozwiązanie obrachunkowe SPED 13/2019 RJ
                   href: localizations/latam-bra-resolution-13-2019-RJ.md
-                - name: Funkcja SPED Fiscal 2020 — informacje uzupełniające ICMS-ST dla układu fiskalnego SPED 014
+                - name: Funkcja fiskalna SPED 2020 — informacje uzupełniające ICMS-ST dla układu fiskalnego SPED 014
                   href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
                 - name: Funkcja SPED Fiscal — układ 014
                   href: localizations/latam-bra-sped-fiscal-layout-014.md
+                - name: Ustawianie udziałów w SPED EFD
+                  href: localizations/latam-bra-sped-contributions.md
                 - name: Parametry dla firm
                   href: localizations/latam-bra-legal-entity-parameters.md
                 - name: Konfigurowanie parametrów firmy
@@ -2575,9 +2583,9 @@
                   href: localizations/noam-usa-year-end-1099-reporting.md
                 - name: Formularz 1099 dla sektora publicznego
                   href: localizations/noam-usa-form-1099-public-sector.md
-        - name: Zasoby ludzkie
+        - name: Human resources
           items:
-            - name: Zasoby ludzkie — omówienie
+            - name: Human Resources — omówienie
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
             - name: Ustawianie rozwiązania Human Resources
               items:
@@ -2793,7 +2801,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: Rekrutacja
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: 'Wyniki kanału detalicznego '
+                - name: Wyniki kanału Retail
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/finance/toc.json
                 - name: Wyniki w zakresie sprzedaży i rentowności
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
@@ -2807,9 +2815,11 @@
               items:
                 - name: Omówienie usług raportowania dokumentów
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/finance/toc.json
+                - name: Obsługiwane czcionki
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurowanie usług SSRS na potrzeby wdrożeń lokalnych
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Drukowanie
+                - name: Trwa drukowanie
                   items:
                     - name: Omówienie drukowania dokumentu
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/finance/toc.json
@@ -3686,6 +3696,4 @@
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
     - name: Dynamics 365 Commerce
-      href: ../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../commerce/index.md

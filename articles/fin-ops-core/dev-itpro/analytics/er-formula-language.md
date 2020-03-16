@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b1c6a3f3fd5b55012d89a6c9f0bf2ed5dddd13c
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916667"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042718"
 ---
 # <a name="electronic-reporting-formula-language"></a>Język formuł raportowania elektronicznego
 
@@ -154,7 +154,7 @@ Model raportowania elektronicznego umożliwia rozszerzanie listy funkcji używan
 
 Można utworzyć wyrażenia złożone, które używają funkcji z różnych kategorii, pod warunkiem, że typy danych są zgodne. Gdy używasz funkcji razem, dopasuj typ danych wyjściowych z jednej funkcji do typu danych wejściowych, który jest wymagany przez inną funkcję. Aby na przykład uniknąć ewentualnego błędu „list-is-empty” w powiązaniu pola z elementem formatu ER, połącz funkcje z kategorii [Lista](er-functions-category-list.md) z funkcją z kategorii [Logiczne](er-functions-category-logical.md), jak pokazano w poniższym przykładzie. W tym miejscu formuła używa funkcji [IF](er-functions-logical-if.md) do sprawdzenia, czy lista **IntrastatTotals** jest pusta, zanim zwróci wartość wymaganej agregacji z tej listy. Jeśli lista **IntrastatTotals** jest pusta, formuła zwraca wartość **0** (zero).
 
-```
+```vb
 IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 
@@ -162,7 +162,7 @@ IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded'
 
 Często można uzyskać ten sam wynik przekształcenia danych na wiele sposobów, za pomocą funkcji z różnych kategorii lub różnych funkcji z tej samej kategorii. Na przykład poprzednie wyrażenie można również skonfigurować za pomocą funkcji [COUNT](er-functions-list-count.md) z kategorii [Lista](er-functions-category-list.md).
 
-```
+```vb
 IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 

@@ -45,7 +45,11 @@
                 - name: Aktualizacja Platform update 15 (marzec 2018)
                   href: ../fin-ops/get-started/whats-new-platform-update-15.md
             - name: Usunięte lub wycofane funkcje
-              href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+              items:
+                - name: Usunięte lub wycofane funkcje Platform
+                  href: get-started/removed-deprecated-features-platform-updates.md
+                - name: Usunięte lub wycofane funkcje w poprzednich wersjach
+                  href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: 'Funkcje systemu AX 2012, które zostały odroczone'
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Funkcje niezaimplementowane we wdrożeniach lokalnych
@@ -144,7 +148,9 @@
                       href: data-entities/data-integration-cds.md
                     - name: 'Synchroniczna, dwukierunkowa integracja'
                       items:
-                        - name: Integracja danych w czasie zbliżonym do rzeczywistego
+                        - name: Strona główna o podwójnym zapisie
+                          href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Przegląd o podwójnym zapisie
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Hierarchia organizacyjna w usłudze Common Data Service
                           href: data-entities/dual-write/organization-mapping.md
@@ -422,7 +428,7 @@
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Wdrażanie środowisk lokalnych (aktualizacje Platform update 8 i 11)
                       href: deployment/setup-deploy-on-premises-pu8-pu11.md
-                    - name: Kroki instalacji składników kanału detalicznego w środowisku lokalnym
+                    - name: Kroki instalacji składników kanału Retail w środowisku lokalnym
                       href: deployment/deploy-retail-onprem.md
                 - name: Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych
                   href: deployment/develop-deploy-custom-models-on-premises.md
@@ -940,7 +946,7 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: Usługa LCS dla partnerów
                   href: lifecycle-services/getting-started-lcs.md
-                - name: Co nowego
+                - name: Nowości i zmiany w rozwiązaniu Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Znane problemy
                   href: lifecycle-services/known-issues.md
@@ -1448,7 +1454,7 @@
                   href: dev-tools/update-development-tools.md
                 - name: Planowanie i przygotowywanie kompilowania kodu z użyciem najnowszej aktualizacji
                   href: migration-upgrade/compile-considerations.md
-            - name: Uaktualnianie do najnowszej aktualizacji (on-premises)
+            - name: Uaktualnianie do najnowszej aktualizacji (lokalnie)
               items:
                 - name: Stosowanie aktualizacji do wdrożeń lokalnych
                   href: deployment/apply-updates-on-premises.md
@@ -1685,6 +1691,4 @@
     - name: Rozwiązanie Dynamics 365 Finance
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
-      href: ../../commerce/index.md
-    - name: Rozwiązanie Dynamics 365 Retail
       href: ../../commerce/index.md

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a46ff0a1d6e29cc567a86fae60ff803a102d1a2e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3b04f78f2a8210837e16c8246609ad2fddd804f0
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181227"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071597"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Zaawansowane opcje formatowania w raportowaniu finansowym
 
@@ -216,7 +216,7 @@ W tym przykładzie formuła obliczania **@100+@330** oznacza, że kwota z wiersz
 Jeśli wiersz w definicji wiersza ma format kodu **CAL**, i wprowadzisz matematyczne obliczenie w komórce **Powiązane formuły/wiersze/jednostki**, należy również wprowadzić literę skojarzonej kolumny i wiersza w raporcie. Na przykład wpisz **A.120**, aby wskazać wiersz 120 w kolumnie A. Można również użyć znaku @, aby wskazać wszystkie kolumny. Na przykład wpisz **@120**, aby wskazać wszystkie kolumny dla wiersza 120. Wyniki wszelkich matematycznych obliczeń, które nie zawierają litery kolumny lub znaku @, są uznawane za liczby rzeczywiste.
 
 > [!NOTE]
-> Jeśli odwołanie do wiersza ma postać kodu wiersza etykiety, musisz użyć kropki (.) jako separatora między literą kolumny a etykietą (na przykład **A.MARŻABRUTTO\_A.SPRZEDAŻ**). Jeśli używasz znaku @, separator nie jest wymagany(na przykład **@MARŻA\_BRUTTO/@SPRZEDAŻ**).
+> Jeśli odwołanie do wiersza ma postać kodu wiersza etykiety, musisz użyć kropki (.) jako separatora między literą kolumny a etykietą (na przykład **A.MARŻABRUTTO\_A.SPRZEDAŻ**). Jeśli używasz znaku @, separator nie jest wymagany (na przykład **\@MARŻA\_BRUTTO/@SPRZEDAŻ**).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Przykład formuły obliczania dla wybranych kolumn
 

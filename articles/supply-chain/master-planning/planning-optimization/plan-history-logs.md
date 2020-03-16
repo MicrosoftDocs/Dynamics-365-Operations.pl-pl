@@ -19,17 +19,17 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 95fbb52dc2396e40cd6b726a05548b2d74b6ef59
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 3e69a9534343ce0bbf14ed87fc5ab5300ead1690
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2774029"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076208"
 ---
+# <a name="view-plan-history-and-planning-logs"></a>Wyświetlanie dzienników historii i planowania planów
+
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
-
-# <a name="view-plan-history-and-planning-logs"></a>Wyświetlanie dzienników historii i planowania planów
 
 W tym temacie opisano sposób wyświetlania historii zadań planowania wyzwalanych przez funkcję optymalizacji planowania w Microsoft Dynamics 365 Supply Chain Management.
 

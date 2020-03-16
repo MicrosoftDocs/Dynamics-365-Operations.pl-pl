@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 68a92610a880c574b4a3a48951c432bc2764c24b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 408767539628a14f8ea039155c72f5e9aa6803af
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771548"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070767"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Definicje kolumn w raportach finansowych
 
@@ -120,11 +120,11 @@ W poniższej tabeli opisano kody ograniczeń dotyczących kolumn.
 | ADJ                     | Ograniczenie kwot w kolumnie do kwot korekty okresu, jeśli te kwoty są dostępne. |
 | XAD                     | Ograniczenie kwot w kolumnie, tak aby kwoty korekty okresu były wykluczone. |
 | PT                      | Ograniczenie kwot w kolumnie, tak aby tylko zaksięgowane transakcje były uwzględniane, jeśli transakcje te są dostępne. |
-| UPT                     | Ograniczenie kwot w kolumnie, tak aby tylko niezaksięgowane transakcje były uwzględniane, jeśli transakcje te są dostępne.<p><strong>Uwaga:</strong> nie wszyscy dostawcy danych obsługują niezaksięgowane transakcje. Aby uzyskać więcej informacji, zobacz <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>przewodnik integracji danych</a> dla systemu Microsoft Dynamics ERP.</p> |
+| UPT                     | Ograniczenie kwot w kolumnie, tak aby tylko niezaksięgowane transakcje były uwzględniane, jeśli transakcje te są dostępne.<p><strong>Uwaga:</strong> nie wszyscy dostawcy danych obsługują niezaksięgowane transakcje. </p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Ograniczanie kolumny do jednostki raportowania
 
-1. W Projektancie raportów otwórz definicję kolumn, którą chcesz zmodyfikować.
+1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Jednostka raportowania** dla kolumny, którą chcesz ograniczyć.
 3. W oknie dialogowym **Raportowania wyboru jednostki** na liście **Drzewo raportowania** wybierz drzewo.
 4. Rozwiń lub zwiń listy jednostek, wybierz jednostkę raportowania, a następnie kliknij **OK**.

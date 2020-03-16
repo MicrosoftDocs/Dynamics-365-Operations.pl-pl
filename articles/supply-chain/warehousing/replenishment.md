@@ -3,7 +3,7 @@ title: Omówienie uzupełniania zapasów
 description: W tym temacie opisano strategie uzupełniania zapasów, które są dostępne dla magazynów używających funkcji dostępnych w module Zarządzanie magazynem.
 author: Mirzaab
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7aa17df3c3632c89f35a69022084bbd9f4171f36
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251482"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076369"
 ---
 # <a name="replenishment-overview"></a>Omówienie uzupełniania zapasów
 
@@ -49,6 +49,8 @@ Dyrektywy lokalizacji są używane do określenia, w której lokalizacji mają b
 Oprócz utworzenia szablonu grupy czynności należy też w nim określić pewne ustawienia uzupełniania zapasów. Szablon grupy czynności powinien zawierać krok grupy czynności uzupełniania, który będzie wykonywany tylko wtedy, gdy nie powiedzie się alokacja towaru. W tym kroku grupy czynności uzupełniania używa się kodu kroku grupy czynności w celu ustalenia, który szablon uzupełnienia zapasów powinien być używany. Oprócz utworzenia kroku grupy czynności uzupełniania zapasów należy się upewnić, że w szablonie grupy czynności w sekcji **Metody** jest zaznaczona wartość **Uzupełnianie zapasów**. 
 
 Strona **Szablon uzupełniania** zawiera pole wyboru **Zezwalaj na używanie niezarezerwowanych ilości z powodu popytu grupy czynności**. Zaznacz to pole wyboru, jeśli uzupełnianie zapasów dla popytu powinno odejmować niezarezerwowane ilości z pracy wygenerowanej przy użyciu wybranego szablonu uzupełniania zapasów. Aby szablony uzupełniania zapasów popytu mogły korzystać z tej logiki, to pole wyboru musi być zaznaczone dla każdego istniejącego szablonu uzupełniania zapasów. Po uruchomieniu funkcji uzupełnienia zapasów dla popytu w magazynie odejmie ona popyt od istniejącej pracy uzupełniania zapasów, która ma niezarezerwowane ilości, jeśli praca pochodzi z szablonów uzupełniania zapasów, dla których zaznaczono pole wyboru **Zezwalaj na używanie niezarezerwowanych ilości z powodu popytu grupy czynności**.
+
+**Jednostka uzupełnienia zapasów** jest jednostką minimalną do uzupełnienia. To musi być liczba całkowita będąca wielokrotnością jednostki. System będzie zaokrąglany do największej możliwej jednostki podczas tworzenia pracy.
 
 Uzupełnienie zapasów popytu jest obsługiwane w przypadku zamówień sprzedaży, zamówień przeniesienia, zleceń produkcyjnych i kart Kanban. 
 

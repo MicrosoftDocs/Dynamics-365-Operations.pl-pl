@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca7c0f449aff75527e5052ba01e6fc0e29bb0fd7
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 188f79e10610f8cb5281cfee351ab0eef48dccd2
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917702"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042580"
 ---
 # <a name="COUNTIF">COUNTIF, funkcja ER</a>
 
@@ -33,7 +33,7 @@ Funkcja `COUNTIF` zwraca wartość *Liczba całkowita* reprezentującą liczbę 
 
 ## <a name="syntax"></a>Składnia
 
-```
+```vb
 COUNTIF (condition range, condition value)
 ```
 

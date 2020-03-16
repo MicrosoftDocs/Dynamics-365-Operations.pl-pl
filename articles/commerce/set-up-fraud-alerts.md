@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b4ee6b128e473d0999885f1cb1b4dbb015026c4e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023694"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057216"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Konfigurowanie i praca z alertami o oszustwach w biurze obsługi
 
@@ -54,6 +54,7 @@ Na koniec użyj pola **Typ komentarza do oszustwa**, aby określić typ dokument
 System odwołuje się do dwóch typów kryteriów wykrywania oszustw, aby określić, czy należy wstrzymać zamówienie w celu sprawdzenia, czy nie stanowi oszustwa:
 
 - **Dane statyczne oszustw** używają określonej wartości, takiej jak numer telefonu umieszczony na liście zablokowanych numerów lub adres e-mail oflagowany, ponieważ wiadomo, że był używany w poprzednich oszukańczych transakcjach. Aby skonfigurować dane statyczne oszustw, przejdź do **Sprzedaż detaliczna i inna** \> **Konfiguracja kanału** \> **Ustawienia biura obsługi** \> **Oszustwa** \> **Dane statyczne oszustw**. Na stronie **Fałszywe dane statyczne** można dodać kryteria uznawania za oszustwo ręcznie lub za poprzez import danych. Wyniki zostaną dołączone do fałszywych informacji. Jeżeli funkcja wykrywania oszustw jest włączona, każde wprowadzone zamówienie sprzedaży zostanie porównane z danymi statycznymi. Jeśli dane zostaną znalezione w adresie rozliczeniowym klienta lub adresie dostawy połączonym z nagłówkiem zamówienia albo w adresach dostawy połączonych z którymkolwiek wierszem tego zamówienia sprzedaży, wyniki punktowe wszystkich unikatowych pasujących elementów zostaną zsumowane i porównane z wartością **Minimalna punktacja** w celu określenia, czy zamówienie należy wstrzymać.
+
 - **Reguły oszustw** składają się ze zmiennych zdefiniowanych przez użytkownika oraz warunków zdefiniowanych dla tych zmiennych. Aby utworzyć reguły, przejdź do **Sprzedaż detaliczna i inna** \> **Konfiguracja kanału** \> **Ustawienia centrum obsługi telefonicznej** \> **Oszustwa** \> **Reguły**. Mechanizm reguł wykrywania oszustw umożliwia firmie skonfigurowanie bardziej złożonego zestawu reguł, który może zawierać instrukcje **I** albo **LUB** pozwalające oceniać wiele warunków. Na przykład użytkownik chce, aby wszystkie zamówienia od odbiorców, którzy należą do określonej grupy odbiorców i zamówili określony produkt, zostały wstrzymane w celu sprawdzenia pod kątem oszustw. W takim przypadku warunki sprawdzania poprawności odbiorcy i produktów są definiowane na stronie **Reguły** oraz jest używany warunek I. Zamówienie jest następnie wstrzymywane tylko wtedy, gdy oba warunki są spełnione, a wartości wyniku przypisana do tej reguły oraz wartości wyników wszystkich innych reguł spełnianych przez zamówienie powodują, że łączna punktacja oszustwa dla zamówienia przekracza wartość **Minimalna punktacja** określoną na stronie **Parametry biura obsługi**.
 
 > [!NOTE]

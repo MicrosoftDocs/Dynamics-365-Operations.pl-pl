@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99d50313f8097d43b820ffc1c36eef0097e7ec55
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 10a98e98d913b0b4fe36690f7effd5d8d9a3faf4
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917196"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041798"
 ---
 # <a name="STRINGJOIN">STRINGJOIN, funkcja ER</a>
 
@@ -33,7 +33,7 @@ Funkcja `STRINGJOIN` zwraca wartość typu *Ciąg* zawierającą połączone war
 
 ## <a name="syntax"></a>Składnia
 
-```
+```vb
 STRINGJOIN (list, field, delimiter)
 ```
 

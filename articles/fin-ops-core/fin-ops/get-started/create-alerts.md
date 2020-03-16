@@ -3,7 +3,7 @@ title: Tworzenie reguł alertów
 description: Ten temat zawiera informacje o alertach oraz wyjaśnia, jak utworzyć regułę alertu, dzięki czemu będziesz otrzymywać powiadomienia o zdarzeniach, takich jak nadejście określonego dnia lub wystąpienie konkretnej zmiany.
 author: tjvass
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: c37ddc52ef576a15dd35cc155e99821c74631a46
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180721"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075931"
 ---
 # <a name="create-alert-rules"></a>Tworzenie reguł alertów
 
@@ -32,6 +32,10 @@ ms.locfileid: "2180721"
 Przed utworzeniem reguły alertu musisz zdecydować, kiedy i w jakich sytuacjach chcesz otrzymywać alerty. Gdy już wiesz, o którym zdarzeniu chcesz otrzymywać powiadomienia, odszukaj stronę, na której pojawiają się dane wywołujące zdarzenie. Zdarzeniem może być nadejście określonego dnia lub wystąpienie konkretnej zmiany. W związku z tym należy odnaleźć stronę, gdzie jest podana data, znajduje się modyfikowane pole lub widać nowo tworzony rekord. Mając te informacje, można utworzyć regułę alertu.
 
 Podczas tworzenia reguły alertu określasz kryteria, które muszą został spełnione, aby został wywołany alert. Kryteria mogą obejmować występowanie zdarzenia oraz spełnienie określonych warunków. Jeżeli dojdzie do zdarzenia, system rozpocznie kontrole zgodnie z określonymi warunkami.
+
+## <a name="ensure-the-alert-batch-jobs-are-running"></a>Upewnij się, że zadania wsadowe alertów są uruchomione
+
+Zadania wsadowe dla alertów dotyczących zmian danych i terminów muszą być uruchomione, aby można było przetworzyć warunki alertów i wysyłać powiadomienia. Aby uruchomić zadania wsadowe, należy przejść do obszaru **administrowanie systemem** > **zadania okresowe** > **Alerty** i dodać nowe zadanie wsadowe dla **alertów na podstawie zmian** i/lub **alertów dotyczących terminów**. Jeśli potrzebne jest bardzo długie i często wykonywane zadanie wsadowe, należy wybrać opcję **cykl** i ustawić **brak daty zakończenia** ze **wzorcem cyklu** w **minutach** i **liczbą** **1**.
 
 ## <a name="events"></a>Zdarzenia
 
@@ -70,16 +74,21 @@ Na skróconej karcie **Prześlij mi alert za pomocą** w oknie dialogowym **Utw�
 
 ## <a name="user-id"></a>Identyfikator użytkownika
 
-Na skróconej karcie **Prześlij mi alert za pomocą** w oknie dialogowym **Utwórz regułę alertu** można określić, który użytkownik powinien otrzymywać komunikaty alarmowe. Domyślnie jest zaznaczony Twój identyfikator użytkownika. Dostęp do tej opcji mają tylko administratorzy organizacji.
+Na skróconej karcie **Prześlij mi alert za pomocą** w oknie dialogowym **Utwórz regułę alertu** można określić, który użytkownik powinien otrzymywać komunikaty alarmowe. Domyślnie jest zaznaczony Twój identyfikator użytkownika. Możliwość zmiany użytkownika otrzymującego alert jest ograniczona tylko do administratorów organizacji.
+
+## <a name="alerts-as-business-events"></a>Alerty jako zdarzenia biznesowe
+
+Alerty mogą być wysyłane zewnętrznie za pomocą struktury zdarzeń biznesowych. Podczas tworzenia alertu ustaw **Dla całej organizacji** na **Nie** i ustaw **Wyślij zewnętrznie** na **Tak**. Po wyzwoleniu zdarzenia biznesowego przez alert, można wywołać przepływ wbudowany w Power Automate, korzystając z polecenia **w przypadku wystąpienia zdarzenia biznesowego** na łączniku Finance and Operations lub jawnie wysłać zdarzenie do punktu końcowego zdarzeń biznesowych za pośrednictwem katalogu **zdarzeń biznesowych**.
 
 ## <a name="create-an-alert-rule"></a>Tworzenie reguły alertu
 
+0. Upewnij się, że zadania wsadowe alertów są uruchomione (patrz wyżej).
 1. Otwórz stronę zawierającą dane do monitorowania.
 2. W okienku akcji na karcie **Opcje** w grupie **Udostępnij** wybierz opcję **Utwórz regułę alertu**.
 3. W oknie dialogowym **Utwórz regułę alertu** w polu **Pole** zaznacz pole do monitorowania.
 4. W polu **Zdarzenie** wybierz typ zdarzenia.
-5. Na skróconej karcie **Prześlij mi alert dla** wybierz opcję.
+5. Na skróconej karcie **Prześlij mi alert dla** wybierz żądaną opcję. Aby wysłać alert jako zdarzenie biznesowe, należy się upewnić, że **dla całej organizacji** jest ustawiona wartość **nie**.
 6. Jeśli reguła alertu powinna się dezaktywować w określonym dniu, na skróconej karcie **Przesyłaj mi alerty do** zaznacz datę końcową.
-7. Na skróconej karcie **Prześlij mi alert za pomocą** w polu **Temat** zaakceptuj domyślny nagłówek tematu wiadomości e-mail lub wprowadź nowy temat. Tekst używany jako nagłówek tematu dla e-maila ten będzie wyświetlany po wyzwoleniu alertu.
+7. Na skróconej karcie **Prześlij mi alert za pomocą** w polu **Temat** zaakceptuj domyślny nagłówek tematu wiadomości e-mail lub wprowadź nowy temat. Tekst używany jako nagłówek tematu dla e-maila ten będzie wyświetlany po wyzwoleniu alertu. Aby wysłać Alert jako zdarzenie biznesowe , należy przypisać opcję **Wyślij zewnętrznie** na **tak**.
 8. W polu **Wiadomość** wprowadź opcjonalną wiadomość. Wprowadzony tekst jest komunikatem, jaki otrzymuje użytkownik po wyzwoleniu alertu.
 9. Kliknij przycisk **OK**, aby zapisać ustawienia i utworzyć regułę alertu.

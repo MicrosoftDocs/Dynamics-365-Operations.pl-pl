@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c26d0c4c8c6290bd2dbb10a288bbd59941a8d98e
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: c08aca949ffc7e62009bf3f6c664d96b368f43e7
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915563"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040904"
 ---
 # <a name="TEXT">TEXT, funkcja ER</a>
 
@@ -33,7 +33,7 @@ Funkcja `TEXT` zwraca określoną liczbę jako wartość typu *Ciąg* po przeksz
 
 ## <a name="syntax"></a>Składnia
 
-```
+```vb
 TEXT (number)
 ```
 

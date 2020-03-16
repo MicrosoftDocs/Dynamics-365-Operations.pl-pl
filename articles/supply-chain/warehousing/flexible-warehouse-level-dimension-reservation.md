@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c0baf96315dd9fe6bc1984d337fd1c50ae47016a
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: cd6ec1013de757214db99ada02170bb6e2af96c0
+ms.sourcegitcommit: f52ddcad105aac4ad2caef709751ff80caf363c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3031050"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3036936"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Zasada rezerwacji wymiarów na poziomie magazynu elastycznego
 
@@ -46,7 +46,7 @@ W tych scenariuszach wyzwanie polega na tym, że tylko jedna hierarchia rezerwac
 
 ### <a name="business-scenario"></a>Scenariusz biznesowy
 
-W tym scenariuszu firma korzysta z strategii zapasów, w której gotowe towary są śledzone według numerów partii. Ta firma również korzysta z obciążenia pracą WHS. Ponieważ w ramach tego obciążenia istnieje dobrze wyposażona logika planowania i uruchamiania operacji pobierania i wysyłania magazynowych dla towarów z włączonym przetwarzaniem wsadowym, większość gotowych towarów jest skojarzona z hierarchią rezerwacji "zapasów poniżej\[lokalizacji\]". Zaletą tego typu konfiguracji operacyjnej jest to, że decyzje (które są skutecznymi decyzjami dotyczącymi rezerwacji), które partie do pobrania i miejsca, gdzie mają zostać umieszczone w magazynie, są odkładane do momentu rozpoczęcia operacji pobrania z magazynu. Nie zostają one wykonane, gdy zamówienie odbiorcy zostanie złożone.
+W tym scenariuszu firma korzysta z strategii zapasów, w której gotowe towary są śledzone według numerów partii. Ta firma również korzysta z obciążenia pracą WMS. Ponieważ w ramach tego obciążenia istnieje dobrze wyposażona logika planowania i uruchamiania operacji pobierania i wysyłania magazynowych dla towarów z włączonym przetwarzaniem wsadowym, większość gotowych towarów jest skojarzona z hierarchią rezerwacji "zapasów poniżej\[lokalizacji\]". Zaletą tego typu konfiguracji operacyjnej jest to, że decyzje (które są skutecznymi decyzjami dotyczącymi rezerwacji), które partie do pobrania i miejsca, gdzie mają zostać umieszczone w magazynie, są odkładane do momentu rozpoczęcia operacji pobrania z magazynu. Nie zostają one wykonane, gdy zamówienie odbiorcy zostanie złożone.
 
 Mimo że hierarchia rezerwacji "Lokalizacji towaru\[poniżej\]" obsługuje również cele biznesowe firmy, wiele odbiorców z firmy prowadzącej działalność w firmie wymaga tej samej partii, którą zostały wcześniej zakupione podczas zamawiania produktów. Z tego względu firma poszukuje elastyczności w sposobie obsługi reguł rezerwacji partii, dzięki czemu w zależności od zapotrzebowania klienta dla tego samego towaru mają miejsce następujące zachowania:
 

@@ -52,7 +52,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Wymagania systemowe dotyczące wdrożeń lokalnych
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Kup rozwiązanie Finance + Operations (lokalne)
+                - name: Kup rozwiązanie Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie modułu Magazynowanie dla wdrożeń lokalnych
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
@@ -68,6 +68,8 @@
                   items:
                     - name: Nowości lub zmiany w aplikacji Supply Chain Management — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management w wersji 10.0.9 (kwiecień 2020)
+                      href: get-started/whats-new-scm-10-0-9.md
                     - name: Supply Chain Management w wersji 10.0.8 (luty 2020)
                       href: get-started/whats-new-scm-10-0-8.md
                     - name: Supply Chain Management w wersji 10.0.7 (styczeń 2020)
@@ -146,6 +148,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Zapisane widoki
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Możliwości siatki
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tworzenie pól niestandardowych i praca z nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Osadzanie aplikacji PowerApps
@@ -527,6 +531,8 @@
                   href: cost-management/costing-sheets.md
                 - name: Symulowanie zmian kosztów przy użyciu wersji wyceny dla kosztów planowanych
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+                - name: Raport magazynowy porównania cen pozycji
+                  href: cost-management/compare-item-price.md
             - name: Księgowanie zapasów
               items:
                 - name: Obiekty kosztów
@@ -659,7 +665,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Rekrutacja
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Wyniki kanału detalicznego '
+                - name: Wyniki kanału Retail
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Wyniki w zakresie sprzedaży i rentowności
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/supply-chain/toc.json
@@ -673,9 +679,11 @@
               items:
                 - name: Omówienie usług raportowania dokumentów
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Obsługiwane czcionki
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie usług SSRS na potrzeby wdrożeń lokalnych
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Drukowanie
+                - name: Trwa drukowanie
                   items:
                     - name: Omówienie drukowania dokumentu
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/supply-chain/toc.json
@@ -1061,6 +1069,8 @@
               items:
                 - name: Omówienie optymalizacji planowania
                   href: master-planning/planning-optimization/planning-optimization-overview.md
+                - name: Wartość ujemna dostępnych zapasów jest traktowana jako zerowa
+                  href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Rozpoczęcie optymalizacji planowania
                   href: master-planning/planning-optimization/get-started.md
                 - name: Analiza dopasowań optymalizacji planowania
@@ -2441,6 +2451,4 @@
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
-      href: ../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../commerce/index.md

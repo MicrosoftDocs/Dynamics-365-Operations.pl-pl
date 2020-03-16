@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-11-11
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e5346e8d7ddb37c6641289c74055e8ea421b3b16
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 31cecbd2094bc475acbf0baf890804b4faf99bfa
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004715"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057571"
 ---
 # <a name="customer-information-management-for-poland"></a>Zarządzanie informacjami dotyczącymi klienta dla Polski
 
@@ -46,7 +46,7 @@ Aby skorzystać z ten funkcji należy skonfigurować system w następujący spos
 - Dodać operację **Dodaj informacje o kliencie** do układów ekranu.
 - Aktywować zapytanie dotyczące informacji o odbiorcy.
 - Konfigurować format paragonu.
-- Konfigurować składniki kanału sprzedaży.
+- Konfiguracja składników kanału.
 
 ### <a name="set-up-a-registration-type-for-the-vat-number"></a>Ustawić typ rejestracji dla numeru VAT
 
@@ -88,9 +88,9 @@ Na stronie **Niestandardowe pola** dodaj następujący rekord dla pola niestanda
 
 W projektancie formatów paragonów dodaj pole niestandardowe do odpowiedniej sekcji paragonu dla każdego wymaganego formatu paragonu. Aby uzyskać więcej informacji o sposobie pracy z formatami paragonów, zobacz [Szablony paragonów i drukowanie](../receipt-templates-printing.md).
 
-### <a name="configure-retail-channel-components"></a>Konfigurowanie składników kanału sprzedaży
+### <a name="configure-channel-components"></a>Konfiguracja składników kanału.
 
-Aby udostępnić funkcje właściwe dla Polski, należy skonfigurować rozszerzenia dla składników kanału sprzedaży detalicznej. Aby uzyskać więcej informacji, zobacz sekcję [Wskazówki dot. wdrożenia](#deployment-guidelines) w dalszej części tego tematu.
+Aby udostępnić funkcje właściwe dla Polski, należy skonfigurować rozszerzenia dla składników kanału. Aby uzyskać więcej informacji, zobacz sekcję [Wskazówki dot. wdrożenia](#deployment-guidelines) w dalszej części tego tematu.
 
 ## <a name="example-scenarios"></a>Przykładowe scenariusze
 
@@ -137,7 +137,7 @@ Poniższe przykładowe scenariusze przedstawiają sposób pracy z informacjami o
 
 ## <a name="deployment-guidelines"></a>Wskazówki dotyczące wdrażania
 
-Ta sekcja zawiera wskazówki dotyczące wdrażania umożliwiające zarządzanie informacjami o klientach w lokalizacji Dynamics 365 Retail dla Polski.
+Ta sekcja zawiera wskazówki dotyczące wdrażania umożliwiające zarządzanie informacjami o klientach w lokalizacji Dynamics 365 Commerce dla Polski.
 
 > [!NOTE]
 > Niektóre kroki opisane w tych procedurach różnią się w zależności od używanej wersji produktu. Aby uzyskać więcej informacji, zobacz [Nowości i zmiany w rozwiązaniu Dynamics 365 for Retail](../get-started/whats-new.md).
@@ -171,7 +171,7 @@ Aby zaktualizować środowisko programistyczne, należy wykonać następujące k
 
 1. Znajdź plik konfiguracji rozszerzenia dla środowiska uruchomieniowego Commerce Runtime (CRT):
 
-    - **Retail Server:** znajdź plik **CommerceRuntime.Ext.config** w folderze **bin\\ext** w lokalizacji Microsoft Internet Information Services (IIS) witryny Retail Server.
+    - **Commerce Scale Unit:** znajdź plik **CommerceRuntime.Ext.config** w folderze **bin\\ext** w lokalizacji strony Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
     - **Lokalne wystąpienie CRT na Modern POS:** znajdź plik **CommerceRuntime.MPOSOffline.Ext.config** w lokalizacji brokera lokalnego klienta CRT.
 
 1. Zarejestruj zmianę rozszerzenia CRT w pliku konfiguracji rozszerzenia.
@@ -225,7 +225,7 @@ Aby udostępnić rozszerzenie TaxRegistrationId.PL, należy wykonać następują
 
 ### <a name="update-a-production-environment"></a>Zaktualizuj środowisko produkcyjne
 
-Wykonaj następujące kroki, aby utworzyć możliwe do wdrożenia pakiety, które zawierają składniki sieci sprzedaży i aby stosować te pakiety w środowisku produkcyjnym.
+Wykonaj następujące kroki, aby utworzyć możliwe do wdrożenia pakiety, które zawierają składniki Commerce i aby stosować te pakiety w środowisku produkcyjnym.
 
 1. W plikach konfiguracji **CommerceRuntime.Ext.config** i **CommerceRuntime.MPOSOffline.Ext.config**, w folderze **RetailSdk\\Assets** dodaj następujący wiersz w sekcji **Kompozycja**.
 

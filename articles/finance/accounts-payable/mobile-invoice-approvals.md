@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 88ba96b1d9d2f722528a4a920eabe4ab64304a7a
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658651"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059435"
 ---
 # <a name="mobile-invoice-approvals"></a>Zatwierdzanie faktur na urządzeniach przenośnych
 
@@ -54,8 +54,8 @@ Każda organizacja inaczej przygotowuje i definiuje proces biznesowy faktur od d
     -   Ile zasad podziału księgowań (cena rozszerzona, podatek, opłaty, podziały itd.) istnieje dla wiersza faktury? Tu również zastosuj regułę 80-20.
     -   Czy faktury mają również zasady podziału księgowań w nagłówku faktury? Jeśli tak, czy te zasady podziału księgowań powinny być dostępne w urządzeniu?
 
-> [!NOTE]
-> W tym temacie nie wyjaśniono, jak edytować zasady podziału księgowań, ponieważ ta funkcja aktualnie nie jest obsługiwana w scenariuszach mobilnych.
+    > [!NOTE]
+    > W tym temacie nie wyjaśniono, jak edytować zasady podziału księgowań, ponieważ ta funkcja aktualnie nie jest obsługiwana w scenariuszach mobilnych.
 
 -   Czy użytkownicy będą chcieli widzieć załączniki do faktur na urządzeniu?
 
@@ -158,9 +158,9 @@ Pierwszą stroną środowiska mobilnego, jaką należy zaprojektować, jest list
     - Numer faktury
     - Data faktury
 
-  Po dodaniu pól strona środowiska komórkowego musi przypominać ilustrację poniżej. 
+    Po dodaniu pól strona środowiska komórkowego musi przypominać ilustrację poniżej. 
     
-   [![Strona po dodaniu pól](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Strona po dodaniu pól](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  Należy także dodać następujące kolumny teraz, aby umożliwić obsługę akcji przepływu pracy później.
     - Pokaż zadanie ukończenia
@@ -247,9 +247,10 @@ Aby dodać akcje przepływu pracy użyj strony **VendMobileInvoiceHeaderDetails*
     - Ukrywa dodatkowe kolumny dotyczące przepływu pracy, które wcześniej dodano na stronie listy elementów dla urządzeń przenośnych. Dodaliśmy te kolumny, tak aby aplikacja posiadała te informacje w kontekście i mogła wykonać następny krok.
     - Na podstawie aktywnego kroku przepływu pracy zastosuje logikę powodującą pokazanie tylko tych akcji.
 
-> [!NOTE]
-> Nazwy stron i innych formantów w kodzie źródłowym muszą być takie same, jak nazwy w obszarze roboczym.
+    > [!NOTE]
+    > Nazwy stron i innych formantów w kodzie źródłowym muszą być takie same, jak nazwy w obszarze roboczym.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -308,6 +309,7 @@ Aby dodać akcje przepływu pracy użyj strony **VendMobileInvoiceHeaderDetails*
                  },
            };
         }
+    ```
 
 2.  Przekaż plik kodu źródłowego do obszaru roboczego, wybierając kartę **Logika**.
 3.  Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
@@ -341,7 +343,7 @@ Wymagania dotyczące tego scenariusza potwierdzają, że będzie tylko dystrybuc
 
 1.  W adresie URL zastąp nazwę elementu menu tak jak poprzednio. Wyświetlona strona powinna przypominać tę na poniższej ilustracji.
 
-[![Strona wszystkich dystrybucji](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Strona wszystkich dystrybucji](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Otwórz projektanta środowiska komórkowego za pomocą przycisku **Ustawienia** (koło zębate).
 
@@ -367,16 +369,18 @@ Wymagania dotyczące tego scenariusza potwierdzają, że będzie tylko dystrybuc
 
 10. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
-> [!NOTE] 
-> Strona środowiska komórkowego **Widok księgowania** nie jest obecnie połączona z żadną stroną mobilną, które do tej pory zaprojektowaliśmy. Ponieważ użytkownik powinien być w stanie przejść do strony **Widok księgowania** ze strony **Szczegóły faktury** na urządzeniu przenośnym, musimy zapewnić nawigację ze strony **Szczegóły faktury** do strony **Widok księgowania**. Ustanowimy tę nawigację przy użyciu dodatkowej logiki za pomocą kodu źródłowego JavaScript.
+#### <a name="adding-navigation-to-view-accounting-page"></a>Dodawanie nawigacji do strony „Wyświetlanie księgowania”
+
+Strona środowiska komórkowego **Widok księgowania** nie jest obecnie połączona z żadną stroną mobilną, które do tej pory zaprojektowaliśmy. Ponieważ użytkownik powinien być w stanie przejść do strony **Widok księgowania** ze strony **Szczegóły faktury** na urządzeniu przenośnym, musimy zapewnić nawigację ze strony **Szczegóły faktury** do strony **Widok księgowania**. Ustanowimy tę nawigację przy użyciu dodatkowej logiki za pomocą kodu źródłowego JavaScript.
 
 1.  Otwórz utworzony wcześniej plik .js i dodaj wiersze wyróżnione w poniższym kodzie źródłowym. Ten kod wykonuje dwa zadania:
     1.  Pomaga zagwarantować, że użytkownicy nie mogą przechodzić bezpośrednio z obszaru roboczego do strony **Widok księgowania**.
     2.  Ustanawia formant nawigacji ze strony **Szczegóły faktury** do strony **Widok księgowania**.
 
-> [!NOTE] 
-> Nazwy stron i innych formantów w kodzie źródłowym muszą być takie same, jak nazwy w obszarze roboczym.
+    > [!NOTE] 
+    > Nazwy stron i innych formantów w kodzie źródłowym muszą być takie same, jak nazwy w obszarze roboczym.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -439,7 +443,8 @@ Wymagania dotyczące tego scenariusza potwierdzają, że będzie tylko dystrybuc
                  },
            };
         }
-
+    ```
+    
 2.  Przekaż plik kodu źródłowego do obszaru roboczego, wybierając kartę **Logika** w celu zastąpienia poprzedniego kodu.
 3.  Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
 4.  Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.

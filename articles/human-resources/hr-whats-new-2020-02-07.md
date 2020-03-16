@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78043273fb98a12a8d33f7bb94ba8ad2e9fb49fb
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: c6ca9877eb172794c67ac55b8dc54ed28af9576d
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029964"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076277"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (7 lutego 2020 r.)
 
@@ -47,7 +47,7 @@ Następujące funkcje w wersji zapoznawczej są dostępne od 3 lutego 2020 r.:
 
 - **Funkcje w wersji zapoznawczej dotyczące urlopów i nieobecności** — aby uzyskać więcej informacji, zobacz [Funkcje w wersji zapoznawczej dotyczące urlopów i nieobecności](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
-- **Funkcja w wersji zapoznawczej Zarządzanie świadczeniami** — aby uzyskać więcej informacji, w tym o znanych problemach, zobacz [Omówienie obszaru roboczego Zarządzanie świadczeniami](hr-benefits-management-overview.md).
+- **Funkcja w wersji zapoznawczej Zarządzanie świadczeniami** — aby uzyskać więcej informacji, w tym o znanych problemach, zobacz [Omówienie zarządzania świadczeniami](hr-benefits-management-overview.md).
 
 ## <a name="coming-soon"></a>Wkrótce
 
@@ -68,5 +68,11 @@ Nowe rozwiązanie Common Data Service będzie dostępne wkrótce z następujący
 | Nowe jednostki ustawień wynagrodzeń o zmiennej wysokości | **Typ planu wynagrodzeń o zmiennej wysokości**</br>**Plan wynagrodzeń o zmiennej wysokości**</br>**Reguły wypłat**</br>**Poziom planu wynagrodzeń o zmiennej wysokości** |
 | Nowa jednostka **Zatrudnienie kalendarza pracownika** | Dodano **jednostkę kalendarza pracy** |
 | Nowa jednostka **Szczegół stanowiska listy płac** | Dodano **Szczegół stanowiska listy płac** |
-| Nowa jednostka **Tytuł** | Dodano **Tytuł**. Nowa jednostka **Tytuł** zostanie uwzględniona w procesie synchronizacji między modułem Human Resources a usługą Common Data Service, ale początkowo nie będą się do niej odwoływać jednostki **Stanowisko funkcji** ani **Funkcja**. |
+| Nowa jednostka **Tytuł** | Dodano **Tytuł**. Nowa jednostka **Tytułu** będzie uwzględniana w procesie synchronizacji między Human Resources a Common Data Service. Nie będzie początkowo przywoływany z **Stanowiska pracy** lub jednostek **Zadań**. |
 
+## <a name="see-also"></a>Informacje dodatkowe
+
+[Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)</br>
+[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
+[Zarządzanie funkcjami](hr-admin-manage-features.md)

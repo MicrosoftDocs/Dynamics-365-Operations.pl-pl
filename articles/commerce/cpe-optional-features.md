@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024736"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057747"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfiguruj funkcje opcjonalne środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
 
@@ -63,8 +63,8 @@ Jeśli chcesz ocenić funkcje zarządzania cyfrowymi składnikami majątku przez
 
 ### <a name="update-the-media-base-url"></a>Aktualizowanie podstawowego adresu URL obiektu multimedialnego
 
-1. Zaloguj się w Dynamics 365 Retail.
-1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Retail \> Ustawienia kanału \> Profile kanału**.
+1. Zaloguj się w Dynamics 365 Commerce.
+1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Retail i Commerce \> Ustawienia kanału \> Profile kanału**.
 1. Wybierz opcję **Edycja**.
 1. W obszarze **Właściwości profilu** zastąp wartość właściwości **Podstawowy adres URL serwera multimediów** utworzonym wcześniej podstawowym adresem URL obiektu multimedialnego.
 1. Wybierz drugi kanał z listy po lewej stronie w obszarze kanału **domyślnego**.
@@ -77,7 +77,7 @@ Jeśli chcesz ocenić funkcje zarządzania cyfrowymi składnikami majątku przez
 > [!NOTE]
 > Wprowadzony tutaj serwer SMTP lub usługa poczty e-mail musi być dostępna z poziomu subskrypcji platformy Azure używanej dla środowiska.
 
-1. Zaloguj się w aplikacji Retail.
+1. Zaloguj się do aplikacji Commerce.
 1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Administrowanie systemem \> Ustawienia \> Poczta e-mail \> Parametry poczty e-mail**.
 1. Na karcie **Ustawienia SMTP** w polu **Serwer poczty wychodzącej** wprowadź nazwę FQDN lub adres IP serwera SMTP lub usługi poczty e-mail.
 1. W polu **Numer portu SMTP** wprowadź numer portu. (Jeśli nie korzystasz z protokołu Secure Sockets Layer \[SSL\] domyślnym numerem portu jest **25**).
@@ -92,7 +92,7 @@ Jeśli chcesz ocenić funkcje zarządzania cyfrowymi składnikami majątku przez
 
 Dla każdego zdarzenia transakcyjnego, w ramach którego chcesz wysyłać wiadomości e-mail, musisz zaktualizować szablon wiadomości e-mail za pomocą prawidłowego adresu e-mail nadawcy.
 
-1. Zaloguj się w aplikacji Retail.
+1. Zaloguj się do aplikacji Commerce.
 1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Administrowanie organizacją \> Ustawienia \> Szablony wiadomości e-mail organizacji**.
 1. Wybierz **Pokaż listę**.
 1. Dla każdego szablonu na liście należy wykonać następujące kroki:
@@ -115,7 +115,7 @@ Możesz dostosować szablony wiadomości e-mail, tak aby były używane różne 
     - Wybierz szablon zamówienia
 
 1. Szablony dostosowuje się za pomocą edytora tekstów lub HTML. Zobacz listę [obsługiwanych tokenów](#supported-tokens-in-the-email-template) w dalszej części tego tematu.
-1. Zaloguj się w aplikacji Retail.
+1. Zaloguj się do aplikacji Commerce.
 1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Administrowanie organizacją \> Ustawienia \> Szablony wiadomości e-mail organizacji**.
 1. Aby wyświetlić wszystkie szablony, należy rozwinąć listę po lewej stronie.
 1. Dla każdego szablonu, który chcesz dostosować, wykonaj następujące kroki:

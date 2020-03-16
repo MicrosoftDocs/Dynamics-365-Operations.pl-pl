@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9e1087821b357c578993cdd5742399c5ec0ecc95
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ba1d10a897f349703737068d772423f7d0292944
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001813"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057969"
 ---
 # <a name="create-a-default-customer"></a>Tworzenie domyślnego odbiorcy
 
@@ -33,7 +33,7 @@ W tym temacie opisano sposób tworzenia domyślnego odbiorcy używanego podczas 
 
 ## <a name="overview"></a>Omówienie
 
-Podczas tworzenia kanału sprzedaży detalicznej lub online konieczne jest podanie odbiorcy domyślnego. Domyślny odbiorca można łatwo utworzyć po uprzednim utworzeniu grupy odbiorców i książki adresowej klienta.
+Podczas tworzenia kanału lub online konieczne jest podanie odbiorcy domyślnego. Domyślny odbiorca można łatwo utworzyć po uprzednim utworzeniu grupy odbiorców i książki adresowej klienta.
 
 ## <a name="create-a-customer-group"></a>Tworzenie grupy odbiorców
 
