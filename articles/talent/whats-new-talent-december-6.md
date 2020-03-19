@@ -50,7 +50,7 @@ Pasek narzędzi personalizacji został zmieniony w aktualizacji Platform update 
 
 Operator filtrowania „jest jednym z” jest dostępny dla większości pól podczas korzystania z Okienka filtru i list rozwijanych nagłówka. Ten operator pozwala użytkownikowi filtrować pola na podstawie wielu wartości. Nowe i ulepszone funkcjonowanie operatora „jest jednym z” jest dostępne w aktualizacji Platform update 22 dla Finance and Operations. Aby dowiedzieć się więcej, zobacz [Optymalizowanie funkcji filtrowania „jest jednym z”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
-### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Wklejanie list z programu Excell do pól filtra z operatorem "jest jednym z"
+### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Wklejanie list z programu Excel do pól filtra z operatorem "jest jednym z"
 
 W przypadku niektórych zadań użytkownicy mogą mieć listę wartości w programie, którą chcą użyć do filtrowania danych w Talent. Na przykład użytkownik w dziale HR może mieć określony na podstawie raportu zbiór pracowników, wymagający dalszego badania w systemie, i dla takiego użytkownika idealnym rozwiązaniem byłaby możliwość skopiowania listy bezpośrednio z programu Excel do pola filtra w Talent.
 
