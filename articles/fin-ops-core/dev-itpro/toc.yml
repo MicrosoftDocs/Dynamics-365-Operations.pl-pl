@@ -14,6 +14,8 @@
               items:
                 - name: Nowości i zmiany w aktualizacjach Platform update — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Aktualizacja Platform update 34 (maj 2020)
+                  href: get-started/whats-new-platform-update-34.md
                 - name: Aktualizacja Platform update 33 (kwiecień 2020)
                   href: get-started/whats-new-platform-update-33.md
                 - name: Aktualizacja Platform update 32 (luty 2020)
@@ -146,45 +148,71 @@
                   items:
                     - name: Omówienie integracji danych przy użyciu Common Data Service
                       href: data-entities/data-integration-cds.md
-                    - name: 'Synchroniczna, dwukierunkowa integracja'
+                    - name: Integracja o podwójnym zapisie
                       items:
                         - name: Strona główna o podwójnym zapisie
                           href: data-entities/dual-write/dual-write-home-page.md
                         - name: Przegląd o podwójnym zapisie
                           href: data-entities/dual-write/dual-write-overview.md
-                        - name: Hierarchia organizacyjna w usłudze Common Data Service
-                          href: data-entities/dual-write/organization-mapping.md
-                        - name: Integracja firmy
+                        - name: Konfiguracja o podwójnym zapisie
                           items:
-                            - name: Pojęcie firmy w usługach Common Data Services
-                              href: data-entities/dual-write/company-data.md
-                            - name: Inicjowanie z danymi firmy
-                              href: data-entities/dual-write/bootstrap-company-data.md
-                        - name: Zintegrowane dane główne odbiorcy
-                          href: data-entities/dual-write/customer-mapping.md
-                        - name: Zintegrowana księga
-                          href: data-entities/dual-write/ledger-mapping.md
-                        - name: Ujednolicone działanie produktu
-                          href: data-entities/dual-write/product-mapping.md
-                        - name: Integracja dostawcy
+                            - name: Wymagania systemowe dotyczące podwójnego zapisu
+                              href: data-entities/dual-write/dual-write-system-req.md
+                            - name: Obsługiwane scenariusze dla konfiguracji podwójnego zapisu
+                              href: data-entities/dual-write/connection-setup.md
+                            - name: Konfigurowanie podwójnego zapisu z usług Lifecycle Services
+                              href: data-entities/dual-write/lcs-setup.md
+                        - name: Mapowanie koncepcji między aplikacjami
                           items:
-                            - name: Zintegrowane dane główne dostawcy
-                              href: data-entities/dual-write/vendor-mapping.md
-                            - name: Przełączanie się między projektami dostawcy
-                              href: data-entities/dual-write/vendor-switch.md
-                        - name: Zintegrowane oddziały i magazyny
-                          href: data-entities/dual-write/sites-warehouses-mapping.md
-                        - name: Zintegrowane dane główne podatków
-                          href: data-entities/dual-write/tax-mapping.md
-                        - name: Wstępna synchronizacja
-                          href: data-entities/dual-write/initial-sync.md
-                        - name: Rozwiązywanie problemów związanych z integracją danych
-                          href: data-entities/dual-write/dual-write-troubleshooting.md
-                    - name: 'Asynchroniczna, jednokierunkowa integracja'
+                            - name: Hierarchia organizacyjna w usłudze Common Data Service
+                              href: data-entities/dual-write/organization-mapping.md
+                            - name: Integracja firmy
+                              items:
+                                - name: Pojęcie firmy w usługach Common Data Services
+                                  href: data-entities/dual-write/company-data.md
+                                - name: Inicjowanie z danymi firmy
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Zintegrowane dane główne odbiorcy
+                              href: data-entities/dual-write/customer-mapping.md
+                            - name: Integracja produktów
+                              items:
+                                - name: Ujednolicone działanie produktu
+                                  href: data-entities/dual-write/product-mapping.md
+                                - name: Zintegrowane oddziały i magazyny
+                                  href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: Dane finansowe i podatkowe
+                              items:
+                                - name: Dostęp do danych finansowych i danych referencyjnych podatku
+                                  href: data-entities/dual-write/finance-tax-reference.md
+                                - name: Zintegrowana księga
+                                  href: data-entities/dual-write/ledger-mapping.md
+                                - name: Zintegrowane dane główne podatków
+                                  href: data-entities/dual-write/tax-mapping.md
+                            - name: Integracja dostawcy
+                              items:
+                                - name: Zintegrowane dane główne dostawcy
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: Przełączanie się między projektami dostawcy
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Prospekt do gotówki w podwójnym odpisie
+                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Wewnętrzne składniki majątku do obsługi
+                              href: data-entities/dual-write/in-house-assets.md
+                            - name: 'Zintegrowany pracownik, praca i stanowisko'
+                              href: data-entities/dual-write/integrated-hr.md
+                        - name: Obsługa podwójnego zapisu
+                          items:
+                            - name: Obsługa rozwiązań Field Service i rozwiązań Project Service Automation
+                              href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: Wstępna synchronizacja
+                              href: data-entities/dual-write/initial-sync.md
+                            - name: Rozwiązywanie problemów związanych z integracją danych
+                              href: data-entities/dual-write/dual-write-troubleshooting.md
+                    - name: Integracja z integratorem danych Power Platform
                       items:
-                        - name: Konfigurowanie scenariusza Od prospekta do gotówki
+                        - name: Konfigurowanie scenariusza od prospektu do gotówki
                           items:
-                            - name: Od prospekta do gotówki
+                            - name: Od prospektu do gotówki
                               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
                             - name: Synchronizowanie kont bezpośrednio z rozwiązania Sales do odbiorców w rozwiązaniu Finance and Operations
                               href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
@@ -326,12 +354,14 @@
               items:
                 - name: Odśwież bazę danych
                   href: database/database-refresh.md
-                - name: Eksportuj bazę danych
+                - name: Eksportowanie bazy danych
                   href: database/export-database.md
-                - name: Importuj bazę danych
+                - name: Importowanie bazy danych
                   href: database/import-database.md
                 - name: Przywracanie bazy danych do punktu w czasie
                   href: database/database-point-in-time-restore.md
+                - name: Przywracanie do punktu w czasie produkcyjnej bazy danych do środowiska piaskownicy
+                  href: database/database-pitr-prod-sandbox.md
             - name: Samouczki
               items:
                 - name: Odświeżanie w celach szkoleniowych
@@ -430,6 +460,8 @@
                       href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: Kroki instalacji składników kanału Retail w środowisku lokalnym
                       href: deployment/deploy-retail-onprem.md
+                    - name: Użyj tego samego wystąpienia komponentu AD FS dla wielu środowisk
+                      href: deployment/onprem-reuseadfs.md
                 - name: Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: Integracja PowerBI.com z lokalnymi środowiskami
@@ -970,24 +1002,34 @@
               href: lifecycle-services/configure-execute-code-upgrade.md
             - name: Tworzenie i aktualizowanie metodologii
               href: lifecycle-services/create-methodology.md
-            - name: Narzędzie do modelowania procesów biznesowych
-              href: lifecycle-services/bpm-overview.md
-            - name: Biblioteki procesów biznesowych w Narzędziu do modelowania procesów biznesowych
-              href: lifecycle-services/business-process-libraries-business-process-modeler.md
-            - name: 'Tworzenie, edytowanie i przeglądanie bibliotek Narzędzia do modelowania procesów biznesowych'
-              href: lifecycle-services/creating-editing-browsing.md
-            - name: Wykonywanie zadań w Narzędziu do modelowania procesów biznesowych
-              href: lifecycle-services/complete-tasks-bpm.md
-            - name: Praca z diagramami działań w bibliotekach narzędzia BPM
-              href: lifecycle-services/using-activity-diagrams.md
-            - name: Synchronizowanie bibliotek narzędzia BPM z usługą Azure DevOps
-              href: lifecycle-services/synchronize-bpm-vsts.md
-            - name: Tworzenie bibliotek testów akceptacyjnych użytkownika przy użyciu przewodników zadań i narzędzia BPM
-              href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-            - name: Schematy blokowe w Narzędziu do modelowania procesów biznesowych
-              href: lifecycle-services/flowcharts-business-process-modeler.md
-            - name: Przekazywanie niestandardowych procesów biznesowych do Narzędzia do modelowania procesów biznesowych
-              href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: Narzędzie do modelowania procesów biznesowych (BPM)
+              items:
+                - name: Narzędzie do modelowania procesów biznesowych (BPM) — omówienie
+                  href: lifecycle-services/bpm-overview.md
+                - name: Biblioteki procesów biznesowych w Narzędziu do modelowania procesów biznesowych
+                  href: lifecycle-services/business-process-libraries-business-process-modeler.md
+                - name: 'Tworzenie, edytowanie i przeglądanie bibliotek Narzędzia do modelowania procesów biznesowych'
+                  href: lifecycle-services/creating-editing-browsing.md
+                - name: Wykonywanie zadań w Narzędziu do modelowania procesów biznesowych
+                  href: lifecycle-services/complete-tasks-bpm.md
+                - name: Praca z diagramami działań w bibliotekach narzędzia BPM
+                  href: lifecycle-services/using-activity-diagrams.md
+                - name: Synchronizowanie bibliotek narzędzia BPM z usługą Azure DevOps
+                  href: lifecycle-services/synchronize-bpm-vsts.md
+                - name: Tworzenie bibliotek testów akceptacyjnych użytkownika przy użyciu przewodników zadań i narzędzia BPM
+                  href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+                - name: Schematy blokowe w Narzędziu do modelowania procesów biznesowych
+                  href: lifecycle-services/flowcharts-business-process-modeler.md
+                - name: Przekazywanie niestandardowych procesów biznesowych do Narzędzia do modelowania procesów biznesowych
+                  href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: Zgłoszenia usługi
+              items:
+                - name: Operacje i obsługa w chmurze
+                  href: lifecycle-services/cloud-operations-servicing.md
+                - name: Przesyłanie zgłoszeń usługi do zespołu inżynierów usługi Dynamics
+                  href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+                - name: Okno planowanej konserwacji — często zadawane pytania
+                  href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Monitorowanie i diagnostyka
               href: lifecycle-services/monitoring-diagnostics.md
             - name: Ponowne uruchamianie usług środowiska
@@ -1282,15 +1324,9 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations obsługiwanego przez firmę 21Vianet w Chinach
               href: lifecycle-services/21vianet-support.md
-            - name: Przesyłanie zgłoszeń do zespołu inżynierów usług Dynamics
-              href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
             - name: Konfigurowanie pomocy technicznej dla rozwiązania Finance and Operations
               href: lifecycle-services/support-experience.md
-            - name: Okno planowanej konserwacji — często zadawane pytania
-              href: lifecycle-services/planned-maintenance-window-faq.md
-            - name: Operacje i obsługa w chmurze
-              href: lifecycle-services/cloud-operations-servicing.md
-            - name: Zarządzanie środowiskami pomocy technicznej dotyczącej aplikacji Finance and Operations
+            - name: Zarządzanie środowiskami pomocy technicznej dotyczącej rozwiązania Finance and Operations
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Administrowanie systemem
           items:

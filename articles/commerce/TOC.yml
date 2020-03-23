@@ -22,9 +22,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
                 - name: Stosowanie aktualizacji do środowisk w chmurze
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                - name: Stosowanie aktualizacji do wdrożeń lokalnych
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurowanie aktualizacji usług
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
-                - name: Wstrzymywanie aktualizacji usługi
+                - name: Wstrzymanie aktualizacji usługi
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Odbieranie powiadomień o aktualizacjach usług
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/commerce/toc.json
@@ -84,12 +86,12 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce w wersji 10.0.10 (maj 2020 r.)
+                      href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce w wersji 10.0.9 (kwiecień 2020 r.)
                       href: get-started/whats-new-10-0-9.md
                     - name: Commerce w wersji 10.0.8 (luty 2020 r.)
                       href: get-started/whats-new-10-0-8.md
-                    - name: Retail w wersji 10.0.7 (styczeń 2020 r.)
-                      href: get-started/whats-new-10-0-7.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Finance and Operations
@@ -336,6 +338,8 @@
                       href: pos-operations.md
                     - name: Aktywacja urządzenia dostosowanej aplikacji Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
+                    - name: Włącz uwierzytelnianie Azure Active Directory w celu logowania w punkcie sprzedaży
+                      href: aad-pos-logon.md
                     - name: Układy ekranu danych demonstracyjnych w aplikacjach MPOS i Cloud POS
                       href: demo-data.md
                     - name: Wyszukiwanie produktów i odbiorców w punkcie sprzedaży
@@ -368,6 +372,8 @@
                           href: dev-itpro/retail-peripheral-simulator.md
                         - name: Podłączanie urządzeń peryferyjnych do punktu sprzedaży
                           href: define-maintain-channel-clients-registers-hw-stations.md
+                        - name: Kontrola kondycji urządzeń peryferyjnych i usług punktu sprzedaży
+                          href: pos-healthcheck.md
                     - name: Układy ekranu
                       items:
                         - name: Układy ekranu danych demonstracyjnych w aplikacji MPOS/CPOS
@@ -518,7 +524,7 @@
                       href: create-variant-group.md
                 - name: Tworzenie nowego produktu
                   items:
-                    - name: Omówienie tworzenia nowego produktu
+                    - name: Tworzenie nowego produktu w programie Commerce
                       href: create-new-product.md
                     - name: Zarządzanie kategoriami produktów i produktami
                       href: category-management-product-creation.md
@@ -570,6 +576,8 @@
                   href: retail-shipping-discount.md
                 - name: Ustawianie kuponów
                   href: retail-coupons.md
+                - name: Wyświetlanie rabatów w punkcie sprzedaży
+                  href: discounts-pos.md
                 - name: Raporty cen
                   href: price-report.md
                 - name: Tworzenie umów handlowych specyficznych dla kanału
@@ -582,8 +590,6 @@
                   href: product-recommendations.md
                 - name: Włączanie repozytorium ADLS w środowisku usługi Dynamics 365 Commerce
                   href: enable-ADLS-environment.md
-                - name: Dodawanie list rekomendacji produktów do stron handlu elektronicznego
-                  href: add-reco-list-to-page.md
                 - name: Włączanie rekomendacji produktów
                   href: enable-product-recommendations.md
                 - name: Rekomendacje spersonalizowane
@@ -592,20 +598,22 @@
                       href: personalized-recommendations.md
                     - name: Rezygnowanie z rekomendacji spersonalizowanych
                       href: personalization-gdpr.md
-                - name: Tworzenie list rekomendacji produktów pod opieką
-                  href: create-editorial-recommendation-lists.md
-                - name: Zarządzanie wynikami rekomendacji produktów na podstawie plików AI-ML
+                - name: Dodawanie list rekomendacji do witryny handlu elektronicznego
+                  href: add-reco-list-to-page.md
+                - name: Funkcje punktu sprzedaży
+                  items:
+                    - name: Dodawanie rekomendacji produktu w punkcie sprzedaży
+                      href: product.md
+                    - name: Dodawanie rekomendacji do ekranu transakcji
+                      href: add-recommendations-control-pos-screen.md
+                - name: Dostosowanie wyników rekomendacji produktów na podstawie plików AI-ML
                   href: modify-product-recommendation-results.md
-                - name: Pobieranie rekomendacji produktów przy użyciu danych demonstracyjnych
+                - name: Ręczne tworzenie rekomendacji produktów pod opieką
+                  href: create-editorial-recommendation-lists.md
+                - name: Tworzenie rekomendacji produktów przy użyciu danych demonstracyjnych
                   href: product-recommendations-demo-data.md
                 - name: Rekomendacje produktów — często zadawane pytania
                   href: faq-recommendations.md
-                - name: Funkcje punktu sprzedaży
-                  items:
-                    - name: Rekomendacje produktów w punkcie sprzedaży
-                      href: product.md
-                    - name: Dodawanie kontrolki rekomendacji do ekranu transakcji na urządzeniach w punkcie sprzedaży
-                      href: add-recommendations-control-pos-screen.md
             - name: Oceny i recenzje
               items:
                 - name: Omówienie ocen i recenzji
@@ -656,9 +664,11 @@
               items:
                 - name: Tworzenie zamówienia w biurze obsługi
                   href: tasks/create-call-center-orders.md
+                - name: Zmienianie metody dostawy w punkcie sprzedaży
+                  href: POS-change-delivery-mode.md
             - name: Zarządzanie zamówieniami rozdzielonymi
               items:
-                - name: Zarządzanie zamówieniami rozdzielonymi — omówienie
+                - name: DOM — omówienie
                   href: dom.md
                 - name: Konfiguracja kosztów
                   href: cost.md
@@ -768,8 +778,14 @@
                   href: associate-site-online-store.md
                 - name: Zarządzanie plikami robots.txt
                   href: manage-robots-txt-files.md
+                - name: Zbiorowe przekazanie przekierowań adresów URL
+                  href: upload-bulk-redirects.md
+                - name: Konfigurowanie dzierżawy B2C w module Commerce
+                  href: set-up-B2C-tenant.md
                 - name: Konfiguracja stron niestandardowych do logowań użytkowników
                   href: custom-pages-user-logins.md
+                - name: Konfigurowanie wielu dzierżawców B2C w środowisku Commerce
+                  href: configure-multi-B2C-tenants.md
                 - name: Dodawanie obsługi dla sieci dostarczania zawartości (CDN)
                   href: add-cdn-support.md
                 - name: Włączanie wykrywania sklepu na podstawie lokalizacji
@@ -864,6 +880,20 @@
                       href: customize-site-navigation.md
                     - name: Tworzenie adresu URL strony
                       href: create-page-URL.md
+            - name: Zarządzanie cyfrowymi składnikami majątku
+              items:
+                - name: Omówienie zarządzania cyfrowymi składnikami majątku
+                  href: dam-overview.md
+                - name: Przekazanie obrazów
+                  href: dam-upload-images.md
+                - name: Przekazanie wideo
+                  href: dam-upload-video.md
+                - name: Przekazanie plików innych niż obrazy i wideo
+                  href: dam-upload-files.md
+                - name: Przycinanie obrazów
+                  href: dam-crop-images.md
+                - name: Dostosowywanie punktów ogniskowych obrazu
+                  href: dam-custom-focal-point.md
             - name: Zapewnienie zgodności witryny
               items:
                 - name: Omówienie zgodności
@@ -1828,6 +1858,8 @@
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Konfigurowanie pliku środowiska projektowego (.env)
                       href: e-commerce-extensibility/configure-env-file.md
+                    - name: Konfigurowanie udostępniania kodu Azure DevOps i tworzenie procesu kompilacji
+                      href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Omówienie platformy
                   items:
                     - name: Omówienie architektury
@@ -1912,6 +1944,10 @@
                       href: e-commerce-extensibility/create-observable-data-action.md
                     - name: Udostępnij stan w modułach
                       href: e-commerce-extensibility/share-state-across-modules.md
+                    - name: Zastąpienia akcji danych
+                      href: e-commerce-extensibility/data-action-overrides.md
+                    - name: Punkty zaczepienia akcji danych
+                      href: e-commerce-extensibility/data-action-hooks.md
                 - name: Opracowywanie motywów
                   items:
                     - name: Omówienie funkcji motywowania
@@ -2062,6 +2098,8 @@
                   href: dev-itpro/commerce-application-insights.md
                 - name: Tworzenie asynchronicznych interfejsów API Commerce (CRT) w logice biznesowej
                   href: dev-itpro/async-commerce-extension.md
+                - name: Wstępnie rozszerzone kolumny w bazie danych kanału
+                  href: dev-itpro/extended-columns.md
             - name: Rozszerzalność łączników płatności
               items:
                 - name: Tworzenie integracji płatności dla terminala płatniczego
