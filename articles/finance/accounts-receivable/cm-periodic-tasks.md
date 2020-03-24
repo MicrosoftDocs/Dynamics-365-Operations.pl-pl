@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: df3b0b239fe542eab80fa92057248328d3f5188f
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 4ca9bb7f77283ec30d4648d6763f4156494050ac
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015358"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124169"
 ---
-# <a name="periodic-credit-management-tasks"></a>Zadania okresowe zarządzania kredytami
+# <a name="periodic-credit-management-tasks"></a>Okresowe zadania zarządzania kredytami
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano zadania okresowe, które są niezbędne w procesie zarządzania limitami kredytowymi dla odbiorców.
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: adac308a17ac51ed6da28d04d8c69b01f579aab7
+ms.sourcegitcommit: 7789ef6b0d337bee6aa05110c40e002f02eec71b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004026"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095624"
 ---
 # <a name="product-identifiers"></a>Identyfikatory produktów 
 
@@ -43,9 +43,6 @@ W wielu przypadkach numer produktu nie jest pierwotnie tworzony w Dynamics 365 S
 Podczas wdrażania programu Supply Chain Management należy zwrócić szczególną uwagę na strategię numerowania produktów. Dobry system numerowania usprawnia logistykę i pomaga uniknąć błędów. Dobry identyfikator produktu zawiera maksymalnie 15 znaków. Najlepiej, aby miał nie więcej niż 10 znaków i zawierał maksymalnie 5 znaków klasyfikujących. Można również używać aliasów do szybkiego wyszukiwania. Alias jest dodatkową nazwę reprezentującą klasyfikacje produktu.
 
 Jeśli jest używany Common Data Service, numer produktu w module Supply Chain Management jest także numerem produktu w formularzu Common Data Service. Warianty produktów są synchronizowane z usługą Common Data Service jako odrębne produkty.
-
-> [!NOTE]
-> Numer produktu nie może zaczynać się od „%”.
 
 ## <a name="item-number-and-product-dimensions"></a>Numer towaru i wymiary produktu
 
@@ -135,7 +132,7 @@ Niestety, nie istnieje standardowa funkcja umożliwiająca wyszukiwanie produkt�
 | Kody zewnętrzne dla zwolnionych wariantów produktów | Kod zewnętrzny | Kod zewnętrzny, klasy kodów zewnętrznych, numer towaru, wymiary produktu | Kody zewnętrzne są powiązane z firmami. Podczas importu trzeba utworzyć odwołanie do zdefiniowanej klasy kodów. Do importowania klas kodów służy jednostka **Klasy kodów zewnętrznych dla zwolnionych produktów**. Ta jednostka odwołuje się do wariantów produktu według numeru towaru i wymiarów produktu. |
 | Kody zewnętrzne zwolnionych wariantów produktu według numeru identyfikacyjnego produktu | Kod zewnętrzny | Kod zewnętrzny, klasy kodów zewnętrznych, numer produktu | Kody zewnętrzne są powiązane z firmami. Podczas importu trzeba utworzyć odwołanie do zdefiniowanej klasy kodów. Do importowania klas kodów służy jednostka **Klasy kodów zewnętrznych dla zwolnionych produktów**. Ta jednostka odwołuje się do wariantów produktu według numeru produktu ustawionego w wariancie. (Od następnego głównego wydania) |
 | Numer GTIN | Nie dotyczy | Nie dotyczy | Aktualnie nie istnieje konkretna jednostka służąca do importowania i eksportowania kodów GTIN. Zalecamy, aby do tych celów używać jednostki **Kod kreskowy towaru**. |
-| Jednostka Identyfikator usługi danych wspólnych jednostki Produkt | Nie dotyczy | Numer towaru, alias towaru, alias produktu, numer towaru u dostawcy, numer towaru u odbiorcy, kody zewnętrzne, kody GTIN, kody kreskowe | Ta jednostka konsoliduje wszystkie identyfikatory w jeden model danych, tak aby można było używać jednego interfejsu do łatwego eksportowania wszystkich identyfikatorów i powiązanych z nimi typów. Użyj jednostki **Kod identyfikujący jednostkę Produkt**, aby wyeksportować kody i opisy identyfikatorów. Użyj jednostki **Identyfikator zakresu jednostki Produkt**, aby do identyfikatora wyeksportować dodatkowe informacje o zakresie, takie jak strona, firma, ilość lub jednostka. |
+| Jednostka identyfikatora Common Data Service jednostki produktu | Nie dotyczy | Numer towaru, alias towaru, alias produktu, numer towaru u dostawcy, numer towaru u odbiorcy, kody zewnętrzne, kody GTIN, kody kreskowe | Ta jednostka konsoliduje wszystkie identyfikatory w jeden model danych, tak aby można było używać jednego interfejsu do łatwego eksportowania wszystkich identyfikatorów i powiązanych z nimi typów. Użyj jednostki **Kod identyfikujący jednostkę Produkt**, aby wyeksportować kody i opisy identyfikatorów. Użyj jednostki **Identyfikator zakresu jednostki Produkt**, aby do identyfikatora wyeksportować dodatkowe informacje o zakresie, takie jak strona, firma, ilość lub jednostka. |
 
 ### <a name="product-and-item-number-sequences"></a>Numeracje produktów i towarów
 
@@ -165,15 +162,15 @@ Poniższa tabela zawiera przegląd wyników importu i ręcznego tworzenia przy o
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Identyfikator jednostki Produkt (eksport wszystkich identyfikatorów produktów)
 
-Model Identyfikator jednostki Produkt został utworzony, aby w wersji 1.0 usługi CDS umożliwić obsługę wszystkich identyfikatorów używanych do odwoływania się do produktu. Aby uprościć to zadanie, wszystkie identyfikatory są agregowane do jednej globalnej tabeli identyfikatorów, dzięki czemu mogą zostać wyeksportowane jako jeden model. Należy zauważyć, że ta wersja usługi CDS nie używa modelu identyfikatorów produktów. Z tego względu jednostka **Jednostka Identyfikator usługi danych wspólnych jednostki Produkt** i ten proces mają ograniczone praktyczne zastosowanie i prawdopodobnie ulegną zmianie w przyszłości.
+Model Identyfikator jednostki Produkt został utworzony, aby w wersji 1.0 usługi CDS umożliwić obsługę wszystkich identyfikatorów używanych do odwoływania się do produktu. Aby uprościć to zadanie, wszystkie identyfikatory są agregowane do jednej globalnej tabeli identyfikatorów, dzięki czemu mogą zostać wyeksportowane jako jeden model. Należy zauważyć, że ta wersja usługi CDS nie używa modelu identyfikatorów produktów. Z tego względu jednostka **Jednostka identyfikatora Common Data Service jednostki produktu** i ten proces mają ograniczone praktyczne zastosowanie i prawdopodobnie ulegną zmianie w przyszłości.
 
-Tabela identyfikatorów produktów jest globalną tabelą wypełnianą na podstawie wszystkich tabel odwołań głównej firmy za pomocą cyklicznego zadania wsadowego. Należy wybrać firmę i hierarchię kategorii produktów jako definicję globalnego zakresu produktów głównych. Generowanie globalnej tabeli identyfikatorów produktów jest ograniczone do produktów zwalnianych do wybranej firmy oraz produktów będących elementami członkowskimi hierarchii produktów wybranej dla roli **Usługa danych wspólnych** w hierarchii kategorii produktów.
+Tabela identyfikatorów produktów jest globalną tabelą wypełnianą na podstawie wszystkich tabel odwołań głównej firmy za pomocą cyklicznego zadania wsadowego. Należy wybrać firmę i hierarchię kategorii produktów jako definicję globalnego zakresu produktów głównych. Generowanie globalnej tabeli identyfikatorów produktów jest ograniczone do produktów zwalnianych do wybranej firmy oraz produktów będących elementami członkowskimi hierarchii produktów wybranej dla roli **Common Data Service** w hierarchii kategorii produktów.
 
 W tym procesie zakłada się, że dane produktów głównych są przechowywane głównie w jednej centralnej firmie. (Jednak ta firma może być firmą wirtualną używaną wyłącznie do przechowywania globalnych danych głównych).
 
 Wykonaj następujące kroki, aby skonfigurować środowisko.
 
-1. Wybierz hierarchię kategorii dla usługi CDS. Jeśli na stronie **Skojarzenia ról hierarchii kategorii** żadna hierarchia nie jest skojarzona z rolą **Usługa danych wspólnych**, należy utworzyć nowe skojarzenie. Wybierz rolę **Usługa danych wspólnych**, a następnie skojarz hierarchię kategorii reprezentującą portfolio produktów, które powinno być synchronizowane z usługą CDS.
+1. Wybierz hierarchię kategorii dla usługi CDS. Jeśli na stronie **Skojarzenia ról hierarchii kategorii** żadna hierarchia nie jest skojarzona z rolą **Common Data Service**, należy utworzyć nowe skojarzenie. Wybierz rolę **Common Data Service**, a następnie skojarz hierarchię kategorii reprezentującą portfolio produktów, które powinno być synchronizowane z usługą CDS.
 2. Wybierz firmę dla globalnych danych głównych produktów. Na stronie **Parametry modułu Zarządzanie informacjami o produktach** na karcie **Atrybuty produktu** zaznacz główną firmę, w której są głównie przechowywane identyfikatory produktów i towarów.
 3. Zdefiniuj typy kodów i kody identyfikatorów, które powinny zostać wyeksportowane. Wybierz kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Ustawienia** &gt; **Kody identyfikujące produkty**. Aby wygenerować typy kodów identyfikatorów, wybierz opcję **Generuj kody**. Wpis kodu typu zostanie wygenerowany dla każdego typu identyfikatora znalezionego w wybranej firmie.
 
@@ -183,7 +180,7 @@ Wykonaj następujące kroki, aby skonfigurować środowisko.
 
 4. Po zakończeniu definiowania typów kodów identyfikatorów produktów można utworzyć identyfikatory w tabeli globalnej poprzez wykonanie zadania **Tworzenie identyfikatorów jednostki Produkt** dostępnego na stronie **Kody identyfikujące jednostki Produkt**. Zadanie należy uruchomić w trybie wsadowym. To zadanie powinno być skonfigurowane jako okresowe zadanie wsadowe, tak aby tabela była wypełniana wraz z pojawianiem się nowych wpisów.
 
-Teraz można używać jednostek danych **Jednostka Identyfikator usługi danych wspólnych jednostki Produkt**, **Kody identyfikujące jednostki Produkt** i **Zakres identyfikatora jednostki Produkt** do eksportowania identyfikatory do dowolnych systemów docelowych.
+Teraz można używać jednostek danych **Jednostka identyfikatora Common Data Service jednostki produktu**, **Kody identyfikujące jednostki Produkt** i **Zakres identyfikatora jednostki Produkt** do eksportowania identyfikatory do dowolnych systemów docelowych.
 
 ## <a name="related-topic"></a>Powiązany temat
 

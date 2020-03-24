@@ -3,7 +3,7 @@ title: Wdrażanie nowej dzierżawy e-commerce
 description: W tym temacie opisano sposób wdrażania nowej dzierżawy e-Commerce za pomocą Microsoft Dynamics Lifecycle Services (usługi LCS).
 author: psimolin
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d5cf2804c44e81ad135a3248d38c228148b530cc
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001790"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096685"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Wdrażanie nowej dzierżawy e-commerce
 
@@ -97,11 +97,19 @@ Aby uzyskać dostęp do konstruktora witryn, przejdź na kartę **e-Commerce** n
 
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
+[Konfigurowanie kanału sklepu internetowego](online-stores.md)
+
 [Kojarzenie witryny online z kanałem](associate-site-online-store.md)
 
 [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
+[Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+
+[Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
+
 [Konfigurowanie stron niestandardowych do logowań użytkowników](custom-pages-user-logins.md)
+
+[Konfigurowanie wielu dzierżawców B2C w środowisku Commerce](configure-multi-B2C-tenants.md)
 
 [Dodawanie obsługi dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
 

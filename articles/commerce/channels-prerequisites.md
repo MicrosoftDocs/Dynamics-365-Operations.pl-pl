@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8a0927f6ee9b2d5bed1327bb223ceca85ecc16a0
-ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
+ms.openlocfilehash: 0da0457240cf12686fff2fa929c7fb510c11f242
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081322"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113789"
 ---
 # <a name="channel-setup-prerequisites"></a>Wymagania wstępne konfiguracji kanałów
 
@@ -47,9 +47,9 @@ Aby można było utworzyć kanał Dynamics 365 Commerce, należy wykonać kilka 
 - [Definiowanie i konfigurowanie struktury firmy](channels-legal-entities.md) 
 - [Konfigurowanie hierarchii organizacyjnej](channels-org-hierarchies.md)
 - [Ustawianie magazynu](channels-setup-warehouse.md)
-- [Konfiguracja podatku warunkowego](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Konfiguracja podatku warunkowego](../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json)
 - [Konfigurowanie powiadomień pocztą e-mail](email-notification-profiles.md)
-- [Konfigurowanie sekwencji numerów](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Konfigurowanie sekwencji numerów](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/commerce/toc.json)
 - [Konfigurowanie domyślnego odbiorcy i książki adresowej](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)

@@ -1,9 +1,9 @@
 ---
-title: Usuwanie lub przestarzałe funkcje w Finance and Operations
-description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia.
+title: Usunięte lub wycofane funkcje w poprzednich wersjach
+description: W tym temacie opisano funkcje, które zostały usunięte lub które zostały zaplanowane do usunięcia z systemu Dynamics 365 for Finance and Operations i poprzednich wydań tego produktu.
 author: sericks007
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,28 +17,28 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52ed93ae425a821ebce4ed63f154e155cb161e94
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812000"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124573"
 ---
-# <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Usuwanie lub przestarzałe funkcje w Finance and Operations
+# <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano funkcje, które zostały usunięte z Finance and Operations lub są przestarzałe.
+> [!IMPORTANT]
+> Ten temat nie jest już aktualizowany. Aby wyświetlić bieżącą listę funkcji, które zostały usunięte lub wycofane z aplikacji Finance and Operations, wyszukaj zawartość **„usunięte lub przestarzałe funkcje”** odnoszącą się do używanej aplikacji.
+
+W tym temacie opisano funkcje, które zostały usunięte lub wycofane z systemu Dynamics 365 for Finance and Operations i poprzednich wydań tego produktu.
 
 - *Usunięta* funkcja nie jest już dostępna w produkcie.
 - *Przestarzała* funkcja nie jest aktywnie tworzona i może zostać usunięta w przyszłej aktualizacji.
 
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
-> [!NOTE]
-> Począwszy od usługi Finance and Operations w wersji z lipca 2017 z aktualizacją Platform update 8 dla każdej usuniętej lub przestarzałej funkcji podano typy wdrożeń. Wszystkie poprzednie wersje podane w tym temacie obsługiwały tylko wdrożenie w chmurze.
-
-Szczegółowe informacje o obiektów w rozwiązaniu Finance and Operations można znaleźć w [raportach z wykazami parametrów technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach programu Finance and Operations.
+Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 z aktualizacją 31 platformy
 
@@ -51,7 +51,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu Finance and Operations możn
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | Przestarzałe: Do 1 grudnia 2020 r. planujemy zakończyć obsługę chińskich typy załączników bez opcji wyboru grup kont. Więcej szczegółów dotyczących nowego projektu funkcji można znaleźć w temacie dotyczącym nowości w wersji 10.0.7 |
 
-## <a name="finance-and-operations-1006-with-platform-update-30"></a>Aktualizacja Platform update 30 rozwiązania Finance and Operations 10.0.6
+## <a name="finance-and-operations-1006-with-platform-update-30"></a>Finance and Operations 10.0.6 z aktualizacją platformy 30
 
 
 ### <a name="dimensionhashgethashstr-_message"></a>DimensionHash.getHash(str _message)
@@ -106,7 +106,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu Finance and Operations możn
 | **Stan**                         | Przestarzałe: Do 1 października 2020, nie planujemy już obsługiwać **Krajowy raport podatkowy - Odwołanie do funkcji IT-00003**. |
 
 
-## <a name="finance-and-operations-1005-with-platform-update-29"></a>Aktualizacja Platform update 29 rozwiązania Finance and Operations 10.0.5
+## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 z aktualizacją platformy 29
 
 ### <a name="us-payroll-tax-updates"></a>Aktualizacje amerykańskiego podatku od wynagrodzeń
 
@@ -128,7 +128,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu Finance and Operations możn
 | **Opcja wdrażania**              | Wszystkich  |
 | **Stan**                         | Wycofane: docelowy okres usuwania funkcji to grudzień 2020 roku. |
 
-## <a name="finance-and-operations-1004-with-platform-update-28"></a>Aktualizacja Platform update 28 rozwiązania Finance and Operations 10.0.4
+## <a name="finance-and-operations-1004-with-platform-update-28"></a>Finance and Operations 10.0.4 z aktualizacją platformy 28
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Francja: eksportowanie danych księgowych FEC w XML
 
@@ -152,7 +152,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu Finance and Operations możn
 | **Stan**                         | Wycofane: od kwietnia 2020 r. pasek nawigacyjny starego typu przestanie być dostępny. Do tego momentu odbiorcy mogą powrócić do paska nawigacyjnego starego typu za pośrednictwem strony **Opcje wydajności klienta**. |
 
 
-## <a name="finance-and-operations-1002-with-platform-update-26"></a>Aktualizacja Platform update 26 rozwiązania Finance and Operations 10.0.2
+## <a name="finance-and-operations-1002-with-platform-update-26"></a>Finance and Operations 10.0.2 z aktualizacją platformy 26
 
 
 ### <a name="legacy-default-action-behavior"></a>Starsze domyślne zachowanie akcji
@@ -196,7 +196,7 @@ Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycz�
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | Wycofane: docelowy okres usuwania funkcji to kwiecień 2020 roku. |
 
-## <a name="finance-and-operations-1001-with-platform-update-25"></a>Aktualizacja Platform update 25 rozwiązania Finance and Operations 10.0.1
+## <a name="finance-and-operations-1001-with-platform-update-25"></a>Finance and Operations 10.0.1 z aktualizacją platformy 25
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Wycofane interfejsy API i potencjalnie istotne zmiany
 
@@ -221,7 +221,7 @@ Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycz�
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | Przestarzałe - ostrzeżenie stanie się błędem kompilacji w nadchodzącej aktualizacji platformy 26. |
 
-## <a name="finance-and-operations-1000-with-platform-update-24"></a>Aktualizacja Platform update 24 rozwiązania Finance and Operations 10.0.0
+## <a name="finance-and-operations-1000-with-platform-update-24"></a>Finance and Operations 10.0.0 z aktualizacją platformy 24
 
 ### <a name="renaming-released-products"></a>Zmienianie nazw zwolnionych produktów 
 |   |  |
@@ -230,10 +230,10 @@ Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycz�
 | **Zamieniona przez inną funkcję?**   | Nr |
 | **Powiązane obszary produktów**         | Zarządzanie informacjami o produktach |
 | **Opcja wdrażania**              | Wszystkich  |
-| **Stan**                         | Usunięto z aktualizacją Platform update 24 rozwiązania Finance and Operations 10.0.0 W wyjątkowych przypadkach, na przykład w celu cofnięcia poprzedniej zmiany nazwy klucza podstawowego zwolnionego produktu, można wysłać prośbę do Microsoftu o tymczasowe usunięce tego ograniczenia operacji zmiany nazwy klucza podstawowego dla zwolnionych produktów. |
+| **Stan**                         | Usunięte od wersji Finance and Operations 10.0.0 z aktualizacją Platform update 24. (Jeśli trzeba naprawić uszkodzenie danych spowodowane przez poprzednią nazwę klucza podstawowego zwolnionego produktu, należy skontaktować się z pomocą techniczną firmy Microsoft, aby zażądać tymczasowego usunięcia tego ograniczenia). |
 
 
-## <a name="finance-and-operations-813-with-platform-update-23"></a>Aktualizacja Platform update 23 rozwiązania Finance and Operations 8.1.3
+## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 z aktualizacją platformy 23
 
 ### <a name="sql-server-reporting-services-reportviewer-control"></a>Formant SQL Server Reporting Services ReportViewer
 Klienci mogą używać akcji **eksportowania** wbudowanych w formant SQL Server Reporting Services (SSRS) ReportViewer w celu pobierania dokumentów wytwarzanych przez aplikacje Finance and Operations. Ta prezentacja raportu oparta na języku HTML oferuje podgląd dokumentu niedzielonego na strony.
@@ -272,7 +272,7 @@ Wbudowanie kluczowych wskaźników wydajności (KPI) może być modelowane w Vis
 #### <a name="complete-list"></a>Pełna lista
 Aby wyświetlić listę wszystkich interfejsów API, które zostaną wycofane, zobacz [Wycofanie metod i elementów metadanych](deprecation-deletion-apis.md).
 
-## <a name="finance-and-operations-81-with-platform-update-20"></a>Aktualizacja Platform update 20 rozwiązania Finance and Operations 8.1
+## <a name="finance-and-operations-81-with-platform-update-20"></a>Finance and Operations 8.1 z aktualizacją platformy 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Reguły przetwarzania wsadowego zapisów na koncie w arkuszu księgi podrzędnej
 Tryb przesyłania synchronicznego jest usuwany z parametrów księgi głównej.  Zastępują go tryby przesyłania asynchronicznego i zaplanowanych zadań wsadowych, które już istnieją jako opcje przesyłania. Aby uzyskać dodatkowe informacje, zobacz [blog Parametry księgi głównej — reguły przetwarzania wsadowego](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules).
@@ -294,7 +294,7 @@ Funkcja do konfigurowania formatów plików .txt i .xml dla deklaracji.
 | **Zamieniona przez inną funkcję?**   | Tak. |
 | **Powiązane obszary produktów**         | Księga główna |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Usunięto z aktualizacją Platform update 20 rozwiązania Finance and Operations 8.1 |
+| **Stan**                         | Usunięte od wersji Finance and Operations 8.1 z aktualizacją Platform update 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Generator raportów finansowych dla Rosji
 Narzędzie do konfigurowania zbierania danych na potrzeby raportów księgowych i podatkowych i eksportowanie danych do szablonów raportów XLS i DOC. Części funkcjonalne: usunięto funkcje eksportowania danych do szablonów raportów w formatach XLS i DOC, zapytań i stałych wymagań. 
@@ -305,7 +305,7 @@ Narzędzie do konfigurowania zbierania danych na potrzeby raportów księgowych 
 | **Zamieniona przez inną funkcję?**   | Tak. Interfejs użytkownika konfigurowania raportów finansowych powinien być używany do konfigurowania reguł zbierania danych do kont KG i rejestrów podatkowych. W module Raportowanie elektroniczne należy skonfigurować funkcje eksportowania danych do różnych typów plików, stałych wymagań i reguł zbierania danych za pomocą mechanizmu przypominającego zapytania. |
 | **Powiązane obszary produktów**         | Księga główna. |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Usunięto z aktualizacją Platform update 20 rozwiązania Finance and Operations 8.1 |
+| **Stan**                         | Usunięte od wersji Finance and Operations 8.1 z aktualizacją Platform update 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integracja z zewnętrznymi dostawcami na potrzeby wysyłania raportów elektronicznych poprzez kanały komunikacyjne dla Rosji
 Funkcja eksportowania wygenerowanych plików elektronicznych deklaracji do folderu w celu dalszego przesłania do oficjalnych dostawców raportowania elektronicznego, a także zaimportowanie stanu z powrotem.
@@ -316,7 +316,7 @@ Funkcja eksportowania wygenerowanych plików elektronicznych deklaracji do folde
 | **Zamieniona przez inną funkcję?**   | Tak.  |
 | **Powiązane obszary produktów**         | Księga główna, Podatek |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Usunięto z aktualizacją Platform update 20 rozwiązania Finance and Operations 8.1 |
+| **Stan**                         | Usunięte od wersji Finance and Operations 8.1 z aktualizacją Platform update 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Kreator tworzenia rejestru podatku dochodowego.
@@ -324,17 +324,17 @@ Funkcja do tworzenia szablonów dla nowych rejestrów podatku dochodowego. Ta fu
 
 |   |  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Funkcja jest niezgodna z modelem rozszerzenia dla rozwiązania Finance and Operations. |
-| **Zamieniona przez inną funkcję?**   | Nie |
+| **Przyczyna wycofania/usunięcia** | Funkcja jest niezgodna z modelem rozszerzenia Finance and Operations. |
+| **Zamieniona przez inną funkcję?**   | Nr |
 | **Powiązane obszary produktów**         | Podatek |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Usunięto z aktualizacją Platform update 20 rozwiązania Finance and Operations 8.1 |
+| **Stan**                         | Usunięte od wersji Finance and Operations 8.1 z aktualizacją Platform update 20. |
 
 
-## <a name="finance-and-operations-80-with-platform-update-15"></a>Aktualizacja Platform update 15 rozwiązania Finance and Operations 8.0
+## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 z aktualizacją platformy 15
 Żadne funkcje nie zostały usunięte ani wycofane w tej wersji. Aktualizacja platformy 15 jest zbiorcza i zawiera nowe oraz zmienione funkcje z aktualizacji platformy 13, 14 i 15.
 
-## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Rozwiązanie Finance and Operations Enterprise edition 7.3 z aktualizacją Platform update 12
+## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 z aktualizacją Platform update 12
 
 ### <a name="personalized-product-recommendations"></a>Spersonalizowane rekomendacje produktów 
 Począwszy od 15 lutego 2018 roku sprzedawcy detaliczni nie będą już mogli wyświetlać spersonalizowanych rekomendacji produktów na urządzeniach w punktach sprzedaży (POS). Aby uzyskać więcej informacji, zobacz [Omówienie rekomendacji produktów](../../../commerce/product-recommendations.md).  
@@ -355,8 +355,8 @@ Możliwość wprowadzenia niestandardowych funkcji w celu użycia w Konstruktorz
 | **Przyczyna wycofania/usunięcia** | Inicjatywa dotycząca uszczelnienia kodu  |
 | **Zamieniona przez inną funkcję?**   | Brak. W każdym przypadku, w którym potrzebna jest nowa wbudowana funkcja, należy przesłać nowy wniosek o rozszerzenie do zespołu platformy ER.<br><br>Jako tymczasowe rozwiązanie na czas tworzenia wymaganej funkcji przez zespół ER wymaganą logikę można zaprogramować jako metodę niestandardowej klasy aplikacji. Ta metoda jest dostępna w wyrażeniu ER jako właściwość dodanego źródła danych ER typu **Aplikacja\Klasa** dotyczącego tej niestandardowej klasy aplikacji.  |
 | **Powiązane obszary produktów**         | Struktura raportowania elektronicznego                                                      |
-| **Opcja wdrażania**              | Wszystkich                                                                                      |
-| **Stan**                         | Usunięto w wersji Finance and Operations Enterprise Edition 7.3.    |
+| **Opcja wdrażania**              | Wszyscy                                                                                      |
+| **Stan**                         | Usunięto w rozwiązaniu Finance and Operations Enterprise Edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Raporty Zapasy według grupy towarów i Wiekowanie zapasów z podziałem na wymiary magazynowe
 
@@ -453,7 +453,7 @@ Począwszy od 15 lutego 2018 roku sprzedawcy detaliczni nie będą już mogli wy
 | **Stan**                         |Usunięto 15 lutego 2018 r. Dotyczy to klientów używających programu Dynamics 365 for Retail w wersji 7.2 i nowszych. |
 
 
-## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Rozwiązanie Finance and Operations Enterprise edition lipiec 2017 z aktualizacją Platform update 8
+## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise edition z lipca 2017 r. z aktualizacją Platform update 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Konwersja waluty rozliczeniowych i raportowania
 
@@ -469,12 +469,12 @@ Mechanizm konwersji dla waluty rozliczeniowych i raportowania został wprowadzon
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portal urządzeń przenośnych używanych w magazynie
 
-Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym składnikiem przeznaczonym do lokalnego samodzielnego instalowania. Ten składnik nie jest już obsługiwany w rozwiązaniu Finance and Operations. Funkcjonalność portalu WMDP została zastąpiona macierzystą aplikacją o ulepszonej funkcjonalności.
+Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym składnikiem przeznaczonym do lokalnego samodzielnego instalowania. Ten składnik nie jest już obsługiwany w programie Finance and Operations. Funkcjonalność portalu WMDP została zastąpiona macierzystą aplikacją o ulepszonej funkcjonalności.
 
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Pokrywające się funkcje.       |
-| **Zamieniona przez inną funkcję?**   | Tak. Ta funkcja została zastąpiona przez moduł Finance and Operations — Magazynowanie. Aby uzyskać więcej informacji na temat konfiguracji i wymagań wstępnych, zobacz [Omówienie instalowania i konfiguracji aplikacji Magazynowanie](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Zamieniona przez inną funkcję?**   | Tak. Ta funkcja została zastąpiona inną funkcją: Finance and Operations — magazynowanie. Aby uzyskać więcej informacji na temat konfiguracji i wymagań wstępnych, zobacz [Omówienie instalowania i konfiguracji aplikacji Magazynowanie](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Powiązane obszary produktów**         | Zarządzanie magazynem, Zarządzanie transportem     |
 | **Opcja wdrażania**              | Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym składnikiem przeznaczonym do lokalnego samodzielnego instalowania.               |
 | **Stan**                         | Wycofane: docelowy okres usuwania funkcji to czwarty kwartał 2019 roku.   |
@@ -825,7 +825,7 @@ Przepływ pracy zarządzania tworzeniem celów dla pracowników jest jednym z ki
 
 |   |  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Zarządzanie wydajnością zostało całkowicie przeprojektowane w rozwiązaniu Finance and Operations.     |
+| **Przyczyna wycofania/usunięcia** | Zarządzanie wydajnością zostało całkowicie przeprojektowane w programie Finance and Operations.     |
 | **Zamieniona przez inną funkcję?**   | Przeprojektowana funkcjonalność zarządzania wydajnością zapewnia większą kontrolę nad treścią celów, miarami służącymi do śledzenia postępów oraz dołączaniem towarzyszącej dokumentacji. Cele można zapisywać jako szablony i ponownie wykorzystywać. Ta funkcja może pomóc szybciej konfigurować dodatkowe cele dla pracowników. |
 | **Powiązane obszary produktów**         | Zarządzanie kapitałem ludzkim                 |
 | **Stan**                         | Usunięto w rozwiązaniu Dynamics 365 for Operations w wersji 1611. |
@@ -966,7 +966,7 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta funkcja została zastąpiona inną funkcją. |
-| **Zamieniona przez inną funkcję?**   | Common data service                                      |
+| **Zamieniona przez inną funkcję?**   | Common Data Service                                      |
 | **Powiązane obszary produktów**         | Connector dla Dynamics                         |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.                           |
 
@@ -1024,7 +1024,7 @@ System Dynamics AX 2012 pozwalał na przechowywania załączników w bazach dany
 
 |   |  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Przechowywanie w udziałach plików nie jest już obsługiwane, ponieważ środowiska hostowane w chmurze nie mogą się komunikować z lokalnymi udziałami plików. Przechowywanie w bazie danych zostało zastąpione magazynem obiektów blob w usłudze Azure. Magazyn obiektów blob Azure odpowiada przechowywaniu w bazie danych, ponieważ dokumenty są dostępne wyłącznie za pośrednictwem formularzy klienta rozwiązania Finance and Operations. Zapewnia to dodatkową korzyść w postaci magazynu, który nie wpływa negatywnie na wydajność bazy danych. Magazyn obiektów blob jest domyślnym mechanizmem przechowywania modułu Zarządzanie dokumentami i działa natychmiast. |
+| **Przyczyna wycofania/usunięcia** | Przechowywanie w udziałach plików nie jest już obsługiwane, ponieważ środowiska hostowane w chmurze nie mogą się komunikować z lokalnymi udziałami plików. Przechowywanie w bazie danych zostało zastąpione magazynem obiektów blob w usłudze Azure. Magazyn obiektów blob Azure odpowiada przechowywaniu w bazie danych, ponieważ dokumenty są dostępne wyłącznie za pośrednictwem formularzy klienta programu Finance and Operations. Zapewnia to dodatkową korzyść w postaci magazynu, który nie wpływa negatywnie na wydajność bazy danych. Magazyn obiektów blob jest domyślnym mechanizmem przechowywania modułu Zarządzanie dokumentami i działa natychmiast. |
 | **Zamieniona przez inną funkcję?**   | Przechowywanie w bazie danych zostało zastąpione magazynem obiektów blob w usłudze Azure.   |
 | **Powiązane obszary produktów**         | Wszystkie moduły  |
 | **Stan**                         | Usunięto w systemie Dynamics AX 7.0.   |
@@ -1346,7 +1346,7 @@ Aplikacja na tablety z systemem Windows 8 zawierała funkcje wprowadzania i zatw
 
 |   |  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Program Finance and Operations jest zgodny z tabletami. Aplikacja na tablety przestała być potrzebna.    |
+| **Przyczyna wycofania/usunięcia** | Rozwiązanie Finance and Operations jest zgodne z tabletami. Aplikacja na tablety przestała być potrzebna.    |
 | **Zamieniona przez inną funkcję?**   | Nr          |
 | **Powiązane obszary produktów**         | Zarządzanie wydatkami   |
 | **Stan**                         | Usunięte: ta funkcja jest dostępna tylko w systemie Dynamics AX 2012 R3. |

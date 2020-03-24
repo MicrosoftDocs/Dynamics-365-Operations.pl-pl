@@ -1,9 +1,9 @@
 ---
-title: Dodawanie kontrolki rekomendacji do ekranu transakcji na urządzeniach z aplikacją POS
+title: Dodawanie rekomendacji do ekranu transakcji
 description: W tym temacie opisano sposób dodawania kontrolki rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d6f48197a36f633e3cd63cbad4518f53946fc7f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9117f398ee1d9edbd3aee9bed366eea225964184
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023630"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127682"
 ---
-# <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Dodawanie kontrolki rekomendacji do ekranu transakcji na urządzeniach z aplikacją POS
+# <a name="add-recommendations-to-the-transaction-screen"></a>Dodawanie rekomendacji do ekranu transakcji
 
 [!include [banner](includes/banner.md)]
 
@@ -98,6 +98,24 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Rekomendacje produktów w punkcie sprzedaży](product.md)
+[Omówienie rekomendacji produktów](product-recommendations.md)
 
-[Omówienie rekomendacji produktów](../commerce/product-recommendations.md)
+[Włączanie ADLS w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
+
+[Włącz rekomendacje produktów](enable-product-recommendations.md)
+
+[Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md)
+
+[Rezygnowanie z rekomendacji spersonalizowanych](personalization-gdpr.md)
+
+[Dodawanie list rekomendacji produktów do witryny handlu elektronicznego](add-reco-list-to-page.md)
+
+[Dodawanie rekomendacji produktu w punkcie sprzedaży](product.md)
+
+[Dostosowywanie wyników rekomendacji AI-ML](modify-product-recommendation-results.md)
+
+[Ręczne tworzenie zaleceń pod opieką](create-editorial-recommendation-lists.md)
+
+[Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
+
+[Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)

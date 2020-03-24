@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie usługi SQL Server Reporting Services dla wdrożeń lokalnych
 description: Ten temat zawiera informacje dotyczące konfigurowania usługi SQL Server Reporting Services (SSRS) dla wdrożenia lokalnego.
-author: sarvanisathish
+author: PeterRFriis
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: bb6e8a55c9bee4e60c3a627409d2fbe3b8915196
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e3acd96e686260da3ed67b8ac823be45b8ea870f
+ms.sourcegitcommit: 708b3966b1c2bd4999f528d4a03a89d9bb530616
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174243"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100505"
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>Konfigurowanie usługi SQL Server Reporting Services dla wdrożeń lokalnych
 

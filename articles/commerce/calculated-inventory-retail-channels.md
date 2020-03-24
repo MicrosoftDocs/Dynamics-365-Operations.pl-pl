@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 8bef8edb46a1942d3efc325e2c437a138ad44839
-ms.sourcegitcommit: e1a55b4dc43abedf523c33ba9a8abe7b073f2ec6
+ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3083025"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113927"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Oblicz dostępność zapasów dla kanałów sprzedaży detalicznej
 
@@ -41,7 +41,7 @@ W tym temacie objaśniono procesy synchronizacji danych, które mogą być częs
 Poniższe interfejsy API umożliwiają pokazanie dostępności zapasów produktu, gdy odbiorcy dokonują zakupów w witrynie handlu elektronicznego.
 
 - **GetEstimatedAvailability** — ten interfejs API służy do pobierania dostępności zapasów towaru w magazynie kanału handlu elektronicznego lub w ramach wszystkich magazynów połączonych z konfiguracją grupy realizacji dla kanału handlu elektronicznego. Ten interfejs API może być również używany dla magazynów w określonym obszarze wyszukiwania lub promieniu, na podstawie danych o długościach geograficznej i szerokości geograficznej.
-- **ProductWarehouseInventoryAvailabilities** — ten interfejs API służy do żądania zapasów towaru z określonego magazynu. Na przykład można go wykorzystać do wyświetlania dostępności zapasów w scenariuszach, które dotyczą pobrania zamówienia.
+- **GetEstimatedProductWarehouseAvailability** — ten interfejs API służy do żądania zapasów towaru z określonego magazynu. Na przykład można go wykorzystać do wyświetlania dostępności zapasów w scenariuszach, które dotyczą pobrania zamówienia.
 
 > [!NOTE]
 > Te interfejsy API zastępują interfejsy API **GetProductAvailabilities** i **GetAvailableInventoryNearby** w Dynamics 365 Retail w wersji 10.0.7 i wcześniejszej.

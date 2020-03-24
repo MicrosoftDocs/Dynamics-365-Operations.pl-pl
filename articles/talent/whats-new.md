@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 243fadd242c51440eae1ac7026c71a889a9fa81c
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: de05d685aecb117f51239884d67969591b0d78f0
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897265"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117273"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent"></a>Nowości i zmiany w programie Dynamics 365 Talent 
 
@@ -33,4 +33,3 @@ Co tydzień pojawia się nowe wydanie aplikacji Talent. Wersje te są wymienione
 
 Spis treści będzie aktualizowany co tydzień, więc zaglądaj tu regularnie i sprawdzaj, jakie nowe funkcje i zmiany wprowadziliśmy w najnowszych wersjach aplikacji Talent.
 
-[!include [release notes](../fin-ops-core/fin-ops/includes/release-notes.md)]

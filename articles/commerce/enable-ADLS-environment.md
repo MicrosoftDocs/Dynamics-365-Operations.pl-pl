@@ -3,7 +3,7 @@ title: Włączanie ADLS w środowisku Dynamics 365 Commerce
 description: W tym temacie opisano sposób włączania i testowania Azure Data Lake Storage (ADLS) dla środowiska Dynamics 365 Commerce, który jest wstępnym warunkiem włączenia zaleceń dotyczących produktów.
 author: bebeale
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 068eb522bd44e02dd31d3337a051691a956637fc
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 553e1512ba72559923403eef741ce08222172a09
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025272"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127774"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>Włączanie ADLS w środowisku Dynamics 365 Commerce
 
@@ -93,10 +93,24 @@ Jeśli nie zostało to jeszcze zrobione, wykonaj kroki [w celu włączenia zalec
 
 [Omówienie rekomendacji produktów](product-recommendations.md)
 
-[Włączanie rekomendacji produktów](enable-product-recommendations.md)
+[Włącz rekomendacje produktów](enable-product-recommendations.md)
 
-[Dodawanie list rekomendacji produktów do stron](add-reco-list-to-page.md)
+[Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md)
 
-[Dodawanie kontrolki rekomendacji do ekranu transakcji na urządzeniach z aplikacją POS](../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json)
+[Rezygnowanie z rekomendacji spersonalizowanych](personalization-gdpr.md)
+
+[Dodawanie list rekomendacji produktów do witryny handlu elektronicznego](add-reco-list-to-page.md)
+
+[Dodawanie rekomendacji produktu w punkcie sprzedaży](product.md)
+
+[Dodawanie rekomendacji do ekranu transakcji](add-recommendations-control-pos-screen.md)
+
+[Dostosowywanie wyników rekomendacji AI-ML](modify-product-recommendation-results.md)
+
+[Ręczne tworzenie zaleceń pod opieką](create-editorial-recommendation-lists.md)
+
+[Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
+
+[Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
 
 

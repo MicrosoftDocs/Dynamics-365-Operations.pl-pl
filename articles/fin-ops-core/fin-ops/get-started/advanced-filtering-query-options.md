@@ -1,9 +1,9 @@
 ---
-title: Składnia zaawansowanego filtrowania i zapytań
-description: W tym artykule opisano opcje filtrowania i zapytań dostępne podczas używania okna dialogowego Zaawansowane filtrowanie/sortowanie lub operatora jest zgodne z w okienku Filtr lub filtrach nagłówków kolumn siatki.
+title: Filtrowanie zaawansowane i składnia zapytań
+description: W tym temacie opisano opcje filtrowania i zapytań dostępne podczas używania okna dialogowego Zaawansowane filtrowanie/sortowanie lub operatora jest zgodne z w okienku Filtr lub filtrach nagłówków kolumn siatki.
 author: jasongre
 manager: AnnBe
-ms.date: 01/02/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
-ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
+ms.openlocfilehash: 7a525422a091efe8ea88f42e91dc52488430cfe5
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "2931295"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112198"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Filtrowanie zaawansowane i składnia zapytań
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano opcje filtrowania i zapytań dostępne podczas używania okna dialogowego Zaawansowane filtrowanie/sortowanie lub operatora **jest zgodne z** w okienku Filtr lub filtrach nagłówków kolumn siatki.
+W tym temacie opisano opcje filtrowania i zapytań dostępne podczas używania okna dialogowego Zaawansowane filtrowanie/sortowanie lub operatora **jest zgodne** z w okienku Filtr lub filtrach nagłówków kolumn siatki.
 
 ## <a name="advanced-query-syntax"></a>Składnia zaawansowanych zapytań
 
@@ -122,10 +122,11 @@ W tym artykule opisano opcje filtrowania i zapytań dostępne podczas używania 
 <td>Dwa kolejne podwójne cudzysłowy (<strong>""</strong>) spowodują wyszukanie wierszy bez wartości dla bieżącej kolumny.</td>
 </tr>
 <tr>
-<td>(<span class="code">Instrukcji SQL</span>) (Instrukcja SQL w nawiasach okrągłych)</td>
+<td>(<span class="code">Finance and Operations kwerenda</span>) (Finance and Operations kwerenda między nawiasami)</td>
 <td>Zgodne ze wskazaną kwerendą.</td>
-<td>Wpisz kwerendę jako instrukcję SQL w nawiasach okrągłych.</td>
-<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
+<td>Umożliwia wpisanie kwerendy w postaci instrukcji SQL między nawiasami za pomocą języka kwerendy rozwiązania Finance and Operations.</td>
+  <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
+       przykładem składni warunku filtru dla pola z głównego źródła danych, a także pola z innego źródła danych (na stronie wszyscy odbiorcy)</td>
 </tr>
 <tr>
 <td>W</td>

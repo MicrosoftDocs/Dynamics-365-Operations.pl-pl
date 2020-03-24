@@ -1,9 +1,9 @@
 ---
-title: Tworzenie list zaleceń dotyczących produktów pod opieką
+title: Ręczne tworzenie zaleceń pod opieką
 description: W tym temacie wyjaśniono, w jaki sposób merchandizers mogą tworzyć i zarządzać ręcznymi listami produktów dla odbiorców Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 46fbd2d8c1235a6cb22c9341bcc21ee3754c8ede
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: b39ef61e7dabdd8a53d5666926a95cb7b9e6b9a5
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024940"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127728"
 ---
-# <a name="create-curated-product-recommendation-lists"></a>Tworzenie list zaleceń dotyczących produktów pod opieką
+# <a name="manually-create-curated-recommendations"></a>Ręczne tworzenie zaleceń pod opieką
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie wyjaśniono, w jaki sposób merchandizers mogą tworzyć i zarządzać ręcznymi listami produktów dla odbiorców Microsoft Dynamics 365 Commerce.
+W tym temacie wyjaśniono, w jaki sposób merchandizers mogą tworzyć i zarządzać ręcznymi listami rekomendacji produktów dla odbiorców Microsoft Dynamics 365 Commerce.
 
 Wyselekcjonowane listy to zbiory indywidualnych, treści tworzone i dostosowywane przez ludzi.  
 
@@ -56,8 +56,22 @@ Aby utworzyć wyselekcjonowaną listę rekomendacji produktów, wykonaj następu
 
 [Omówienie rekomendacji produktów](product-recommendations.md)
 
-[Włączanie rekomendacji produktów](enable-product-recommendations.md)
+[Włączanie ADLS w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
 
-[Dodawanie list rekomendacji produktów do stron](add-reco-list-to-page.md)
+[Włącz rekomendacje produktów](enable-product-recommendations.md)
 
-[Omówienie modułu kolekcji produktów](product-collection-module-overview.md)
+[Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md)
+
+[Rezygnowanie z rekomendacji spersonalizowanych](personalization-gdpr.md)
+
+[Dodawanie list rekomendacji produktów do witryny handlu elektronicznego](add-reco-list-to-page.md)
+
+[Dodawanie rekomendacji produktu w punkcie sprzedaży](product.md)
+
+[Dodawanie rekomendacji do ekranu transakcji](add-recommendations-control-pos-screen.md)
+
+[Dostosowywanie wyników rekomendacji AI-ML](modify-product-recommendation-results.md)
+
+[Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
+
+[Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)

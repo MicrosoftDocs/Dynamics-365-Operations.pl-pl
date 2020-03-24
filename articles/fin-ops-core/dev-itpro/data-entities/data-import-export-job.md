@@ -3,7 +3,7 @@ title: Omówienie zadań importowania i eksportowania danych
 description: Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b852a73268251241cd66a07d7e4f4720706c0d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184561"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124619"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
@@ -191,8 +191,11 @@ Podczas planowania procesu oczyszczania, należy określić następujące parame
 
 -   **Liczba dni do zachowania historii** — to ustawienie służy do kontrolowania ilości historii wykonywania, która ma zostać zachowana. Jest to określone liczbą dni. Gdy zadanie oczyszczania jest zaplanowane jako cykliczne zadanie wsadowe, to ustawienie będzie działać jak stale przesuwające się okno, tym samym zawsze pozostawiając historię dla określonej liczby dni w stanie nienaruszonym i usuwając resztę. Wartość domyślna to 7 dni.
 
--   **Liczba godzin do wykonania zadania** — w zależności od ilości historii do oczyszczenia całkowity czas wykonania zadania oczyszczania może wynosić od kilku minut do kilku godzin. Ponieważ oczyszczanie wymienionych tabel musi mieć miejsce, kiedy w danymi systemie nie ma żadnych innych działań zarządzania, ważne jest, aby upewnić się, że zadanie oczyszczania zaczyna się i kończy poza godzinami pracy.
+-   **Liczba godzin do wykonania zadania** — w zależności od ilości historii do oczyszczenia całkowity czas wykonania zadania oczyszczania może wynosić od kilku minut do kilku godzin. Ten parametr musi być określony jako liczba godzin wykonywania zadania. Gdy zadanie oczyszczania zostanie wykonane przez określoną liczbę godzin, zadanie zostanie zamknięte i wznowi oczyszczanie przy następnym uruchomieniu na podstawie harmonogramu cyklu.
 
     Maksymalny czas wykonywania można określić przez ustawienie maksymalnego limitu liczby godzin działania zadania przy użyciu tego ustawienia. Logika oczyszczania analizuje po jednym identyfikatorze wykonywania zadania w sekwencji chronologicznej, w której jako pierwszy oczyszczane są najstarsza powiązana historia uruchamiania. Zbieranie nowych identyfikatorów wykonywania podczas oczyszczania zatrzyma się, gdy pozostały czas wykonywania jest w zakresie ostatnich 10% określonego czasu trwania. W niektórych przypadkach zadanie oczyszczania będzie mogło trwać dłużej niż maksymalny czas trwania. Będzie to w dużej mierze zależeć od liczby rekordów, które mają zostać usunięte dla bieżącego identyfikatora wykonania, który został uruchomiony przed osiągnięciem progu 10%. Oczyszczanie, który zostało uruchomione, musi zostać dokończone, aby zapewnić integralność danych, co oznacza, że oczyszczanie będzie kontynuowane pomimo przekroczenia określonego limitu czasu. Po zakończeniu, nowe identyfikatory wykonywania nie pobierane i zadanie oczyszczania jest kończone. Pozostała historia wykonania, która nie została wyczyszczona ze względu na brak wystarczającej ilości czasu wykonania, zostanie pobrana przy następnym zaplanowanym zadaniu oczyszczania. Wartość domyślna i minimalna dla tego ustawienia jest ustawiona na 2 godziny.
 
 -   **Partia cykliczna** — zadanie oczyszczania można uruchomić jako jednorazowe, ręczne wykonanie lub może być również zaplanowane dla cyklicznego wykonywania w partii. Partia może być zaplanowana przy użyciu ustawienia **Uruchom w tle**, co jest standardową konfiguracją partii.
+
+> [!NOTE]
+> Jeśli rekordy w tabelach pośrednich nie zostaną wyczyszczone w całości, upewnij się, że zadanie oczyszczania zaplanowano do uruchomienia w cyklu. Jak to wyjaśniono powyżej, w każdym oczyszczeniu wykonania zadanie jest oczyszczane tylko wtedy, gdy w podanych godzinach maksymalnych będzie istnieć tylko wiele identyfikatorów wykonania. Aby kontynuować oczyszczanie pozostałych rekordów przemieszczania, należy zaplanować okresowe wykonywanie zadania.

@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie typów zmiany sytuacji życiowej
-description: ''
+title: Konfigurowanie typów zdarzeń zmiany sytuacji życiowej
+description: Program Microsoft Dynamics 365 Human Resources używa typów zmiany sytuacji życiowej do zdefiniowania zdarzeń, które uzasadniają aktualizowanie rejestracji pracowników na świadczenia.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 93c4285a1918cb625a01b4523195cacdee1170b4
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 8b1d911fcd86b91b96edb1bdf42316c9097ea8bc
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010262"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092644"
 ---
-# <a name="configure-life-event-types"></a>Konfigurowanie typów zmiany sytuacji życiowej
+# <a name="configure-life-event-types"></a>Konfigurowanie typów zdarzeń zmiany sytuacji życiowej
 
 [!include [banner](includes/preview-feature.md)]
 

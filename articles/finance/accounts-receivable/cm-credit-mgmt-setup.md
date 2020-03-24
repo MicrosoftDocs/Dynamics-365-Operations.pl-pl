@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b4234ac428cc80836852d4edfb0f37098b4a1e8e
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: ba0b047fe984f6bc164cbe137320d6bf6c13dafc
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071667"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124192"
 ---
 # <a name="credit-management-parameters-setup"></a>Ustawienia parametrów modułu Zarządzanie kredytami
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano opcje, których można wykorzystać w celu skonfigurowania zarządzania kredytami w celu spełnienia wymagań firmy. Aby rozpocząć korzystanie z funkcji zarządzania kredytami, należy skonfigurować parametry na stronie **Parametry modułu Zarządzanie kredytami** (**Zarządzanie kredytami \> Konfiguracja \> Parametry modułu Zarządzanie kredytami**).
 

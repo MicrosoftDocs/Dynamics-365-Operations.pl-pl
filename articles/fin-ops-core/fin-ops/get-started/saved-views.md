@@ -3,7 +3,7 @@ title: Zapisane widoki
 description: W tym temacie opisano sposób korzystania z funkcji zapisanych widoków.
 author: jasongre
 manager: AnnBe
-ms.date: 10/16/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 62d7dc1bd877cd1267f87ed24f8fb8be8f6c74a3
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: c6a5880c6ae9470dbf7986f39798ec888d0c22ea
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017711"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100315"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
@@ -71,7 +71,7 @@ Jeśli chcesz zapisać te zmiany, wykonaj następujące kroki.
 2.  Aby zmodyfikować istniejący widok:
      1. Wybierz opcję **Zapisz**. Należy zauważyć, że ta akcja nie jest dostępna w przypadku widoków zablokowanych. 
 3.  Aby utworzyć nowy widok:
-     1.    Wybierz opcję **Zapisz jako...**. 
+     1.    Wybierz opcję **Zapisz jako**. 
      2.    Wprowadź nazwę widoku i (opcjonalnie) opis.
      3.    Wybierz opcję **Zapisz**.
 
@@ -83,9 +83,9 @@ Aby zmienić domyślny widok strony, wykonaj następujące czynności:
 2.  Wybierz nazwę widoku, aby otworzyć selektor widoku. 
 3.  Naciśnij przycisk **Więcej**, a następnie wybierz opcję **Przypnij jako domyślny**.  
 
-Podczas tworzenia nowego widoku (przy użyciu akcji **Zapisz jako...**) można też ustawić nowy widok jako domyślny, włączając opcję **Przypnij jako domyślny** przed zapisaniem widoku.
+Podczas tworzenia nowego widoku (przy użyciu akcji **Zapisz jako**) można też ustawić nowy widok jako domyślny, włączając opcję **Przypnij jako domyślny** przed zapisaniem widoku.
 
-Należy zauważyć, że w niektórych przypadkach kwerenda skojarzona z domyślnym widokiem nie jest wykonywana w momencie przejścia do strony po raz pierwszy. Jeśli na przykład przechodzisz przez kafelek do strony, kwerenda kafelka zostanie wykonana niezależnie od kwerendy skojarzonej z domyślnym widokiem. Jeśli natomiast przejdziesz do strony, której widok klasyczny już ma zdefiniowaną kwerendę, pierwotna kwerenda będzie początkowo wykonywana zamiast kwerendy domyślnego widoku. W takim przypadku podczas ładowania widoku zostanie wyświetlony komunikat informacyjny. Przełączanie widoków po załadowaniu strony powinno umożliwić wykonanie kwerendy widoku w oczekiwany sposób.
+Należy zauważyć, że w niektórych przypadkach kwerenda skojarzona z domyślnym widokiem nie jest wykonywana w momencie przejścia do strony po raz pierwszy. Jeśli na przykład przechodzisz przez kafelek do strony, kwerenda kafelka zostanie wykonana niezależnie od kwerendy skojarzonej z domyślnym widokiem. Jeśli natomiast przejdziesz do strony, której widok standardowy już ma zdefiniowaną kwerendę, pierwotna kwerenda będzie wykonywana zamiast kwerendy domyślnego widoku. W takim przypadku podczas ładowania widoku zostanie wyświetlony komunikat informacyjny. Przełączanie widoków po załadowaniu strony powinno umożliwić wykonanie kwerendy widoku w oczekiwany sposób. Począwszy od wersji 10.0.10 aktualizacji Platform update 34, komunikat informacyjny będzie mieć osadzoną akcję umożliwiającą załadowanie kwerendy domyślnego widoku bezpośrednio.
 
 ## <a name="managing-personal-views"></a>Zarządzanie widokami osobistymi 
 Okno dialogowe **Zarządzaj moimi widokami** zawiera podstawowe funkcje obsługi widoków osobistych i kolejności widoków w selektorze widoków. Jeśli chcesz otworzyć tę stronę, kliknij nazwę widoku, aby otworzyć menu rozwijane selektora widoków, wybierz opcję **Więcej**, a następnie wybierz opcję **Zarządzaj moimi widokami**.  
@@ -119,7 +119,7 @@ Aby opublikować widok, należy wykonać następujące kroki:
 4.  Wpisz nazwę i (opcjonalnie) opis widoku. Wpisaną nazwę użytkownicy otrzymujący ten widok będą widzieć w selektorach widoku. Nazwy opublikowanych widoków strony muszą być unikatowe. Nazwy publikowanych widoków nie mogą się powtarzać, nawet jeśli są stosowane do różnych list ról lub firm.
 5.  Dodaj role zabezpieczeń odpowiadające użytkownikom, do których skierowany jest ten widok.
 6. Dodaj firmy, dla których ten widok powinien być dostępny. 
-7. [10.0.9/Aktualizacja platformy 33 lub nowsza] określa, czy widok powinien być publikowany jako widok domyślny dla wybranych użytkowników. Ustawienie widoku jako domyślnego oznacza, że ten widok będzie widoczny dla użytkowników podczas następnego otwierania strony docelowej. Spowoduje to modyfikację widoku domyślnego dla tych użytkowników; Jednak użytkownicy nadal będą mogli zmieniać swój widok domyślny po zakończeniu publikowania.    
+7. [10.0.9/Aktualizacja Platform update 33 lub nowsza] określa, czy widok powinien być publikowany jako widok domyślny dla wybranych użytkowników. Ustawienie widoku jako domyślnego oznacza, że ten widok będzie widoczny dla użytkowników podczas następnego otwierania strony docelowej. Spowoduje to modyfikację widoku domyślnego dla tych użytkowników; Jednak użytkownicy nadal będą mogli zmieniać swój widok domyślny po zakończeniu publikowania.    
 8.  Wybierz opcję **Publikuj**.
 
 W niektórych środowiskach może upłynąć trochę czasu (do godziny), zanim użytkownicy zobaczą opublikowany widok.
@@ -133,8 +133,8 @@ Jeśli zmiany, które mają zostać wprowadzone do opublikowanego widoku, obejmu
 3.  Wybierz opcję **Tak**, jeśli chcesz zaktualizować istniejący widok (lub **Nie**, jeśli chcesz go opublikować pod inną nazwą).
 4.  Zaktualizuj nazwę, opis i/lub role zabezpieczeń tego widoku. 
 5.  Wybierz opcję **Publikuj**. 
-6.  [10.0.8/Aktualizacja platformy 32 lub wcześniejsza] Jeśli zaktualizowano nazwę opublikowanego widoku, należy również usunąć opublikowany widok ze starą nazwą (więcej informacji znajduje się w sekcji **Zarządzanie opublikowanymi widokami**). 
-7. [10.0.9/Aktualizacja platformy 33 lub nowsza] Jeśli pierwotnie wybrano ten opublikowany widok jako widok domyślny, będzie on ponownie widokiem domyślnym dla tych użytkowników po ponownym opublikowaniu.  
+6.  [10.0.8/Aktualizacja Platform update 32 lub wcześniejsza] Jeśli zaktualizowano nazwę opublikowanego widoku, należy również usunąć opublikowany widok ze starą nazwą (więcej informacji znajduje się w sekcji **Zarządzanie opublikowanymi widokami**). 
+7. [10.0.9/Aktualizacja Platform update 33 lub nowsza] Jeśli pierwotnie wybrano ten opublikowany widok jako widok domyślny, będzie on ponownie widokiem domyślnym dla tych użytkowników po ponownym opublikowaniu.  
 
 Jeśli zmiany w publikowanym widoku obejmują modyfikację personalizacji lub filtrów skojarzonych z widokiem, należy wykonać następujące czynności: 
 1.  Przełącz się na opublikowany widok, który chcesz zmodyfikować. 

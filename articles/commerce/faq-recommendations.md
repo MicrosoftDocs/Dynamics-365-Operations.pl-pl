@@ -3,7 +3,7 @@ title: Rekomendacje produktów — często zadawane pytania
 description: Ten temat zawiera informacje o procesach i narzędziach, których można wykorzystywać do rozwiązywania problemów związanych z zaleceniami dotyczącymi produktów lub ich wynikami.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7951f92ef68a7a782f2874d7b73d7e45eba0afba
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3add4e2e0d5cc16b561b808aacf5cef94fea5ae5
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003034"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127797"
 ---
 # <a name="product-recommendations-faq"></a>Rekomendacje produktów — często zadawane pytania
 
@@ -75,12 +75,28 @@ Aby uzyskać informacje dotyczące sposobu dodawania stron rekomendacji produkt�
 
 ## <a name="how-do-i-enable-recommendations-on-pos"></a>Jak włączyć rekomendacje w punkcie sprzedaży?
 
-Po włączeniu zaleceń dotyczących produktu należy dodać Panel rekomendacji do ekranu kontrolki punktu sprzedaży. Więcej informacji na temat sposobu dodawania panelu rekomendacji do układu urządzenia punktu sprzedaży można znaleźć w [dokumentacji tej funkcji](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen).
+Po włączeniu zaleceń dotyczących produktu należy dodać Panel rekomendacji do ekranu kontrolki punktu sprzedaży. Aby uzyskać więcej informacji, patrz [Dodawanie kontrolki rekomendacji do ekranu transakcji na urządzeniach w punkcie sprzedaży](add-recommendations-control-pos-screen.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie rekomendacji produktów](product-recommendations.md)
 
-[Włączanie rekomendacji produktów](enable-product-recommendations.md)
+[Włączanie ADLS w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
 
-[Zarządzanie wynikami rekomendacji produktów na podstawie plików AI-ML](modify-product-recommendation-results.md)
+[Włącz rekomendacje produktów](enable-product-recommendations.md)
+
+[Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md)
+
+[Rezygnowanie z rekomendacji spersonalizowanych](personalization-gdpr.md)
+
+[Dodawanie list rekomendacji produktów do witryny handlu elektronicznego](add-reco-list-to-page.md)
+
+[Dodawanie rekomendacji produktu w punkcie sprzedaży](product.md)
+
+[Dodawanie rekomendacji do ekranu transakcji](add-recommendations-control-pos-screen.md)
+
+[Dostosowywanie wyników rekomendacji AI-ML](modify-product-recommendation-results.md)
+
+[Ręczne tworzenie zaleceń pod opieką](create-editorial-recommendation-lists.md)
+
+[Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)

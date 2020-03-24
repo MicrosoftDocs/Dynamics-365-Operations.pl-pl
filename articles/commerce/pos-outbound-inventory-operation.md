@@ -3,7 +3,7 @@ title: Wychodząca operacja magazynowa w punkcie sprzedaży
 description: W tym temacie opisano możliwości wychodzących operacji magazynowych w punkcie sprzedaży (POS).
 author: hhaines
 manager: annbe
-ms.date: 02/11/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,17 +19,17 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c3e50d20162340c599fb6719ae6f45654dba990a
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: 26d8d67ac6d2fde0753104483fd2127f9acbaa05
+ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071888"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3123929"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Wychodząca operacja magazynowa w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 W systemie Microsoft Dynamics 365 Commerce w wersji 10.0.10 lub późniejszych operacje przychodzące i wychodzące w punkcie sprzedaży (POS) zastępują operację pobrania i przyjęcia.
 
