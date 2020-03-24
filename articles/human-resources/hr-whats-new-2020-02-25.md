@@ -1,0 +1,99 @@
+---
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (25 lutego 2020 r.)
+description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources.
+author: Darinkramer
+manager: AnnBe
+ms.date: 02/25/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-talent
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Human Resources
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: dkrame
+ms.search.validFrom: 2020-02-25
+ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: 720b4e03549a059c8945bec9d27de9cdcaada488
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092759"
+---
+# <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-25-2020"></a><span data-ttu-id="dc2c3-103">Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (25 lutego 2020 r.)</span><span class="sxs-lookup"><span data-stu-id="dc2c3-103">What's new or changed in Dynamics 365 Human Resources (February 25, 2020)</span></span>
+
+<span data-ttu-id="dc2c3-104">W tym artykule opisano nowe oraz zmienione funkcje dostępne w Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-104">This article describes features that are either new or changed in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="dc2c3-105">Zmiany dotyczą kompilacji o numerze 8.1.2927.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-105">Changes apply to build number 8.1.2927.</span></span> <span data-ttu-id="dc2c3-106">Liczby w nawiasach w niektórych nagłówkach odnoszą się do numerów pomocy w LCS w charakterze informacyjnym.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-106">The numbers in parentheses in some headings refer to LCS support numbers for reference.</span></span>
+
+## <a name="enable-case-management-navigation-and-data-management-framework-dmf-entity-414754"></a><span data-ttu-id="dc2c3-107">Włącz jednostkę nawigacji zarządzania sprawami i narzędzia do zarządzania danymi (DMF) (414754)</span><span class="sxs-lookup"><span data-stu-id="dc2c3-107">Enable Case Management navigation and data management framework (DMF) entity (414754)</span></span>
+
+<span data-ttu-id="dc2c3-108">Ta funkcja podglądu umożliwia dodatkową nawigację w przypadkach zarządzania sprawami.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-108">This preview feature enables additional navigation to case management cases.</span></span> <span data-ttu-id="dc2c3-109">Tę funkcję podglądu można włączyć w obszarze roboczym **Zarządzanie funkcjami**.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-109">You can enable this preview feature in the **Feature Management** workspace.</span></span> <span data-ttu-id="dc2c3-110">Te elementy menu są wyświetlane w obszarze roboczym **Zgodność** programu Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-110">These menu items appear in the **Compliance** workspace of Dynamics 365 Human Resources.</span></span> <span data-ttu-id="dc2c3-111">W przypadku tej zmiany usługa Human Resources może uzyskiwać dostęp do:</span><span class="sxs-lookup"><span data-stu-id="dc2c3-111">With this change, Human Resources can access:</span></span>
+
+- <span data-ttu-id="dc2c3-112">Wszystkie sprawy</span><span class="sxs-lookup"><span data-stu-id="dc2c3-112">All cases</span></span>
+- <span data-ttu-id="dc2c3-113">Moje sprawy</span><span class="sxs-lookup"><span data-stu-id="dc2c3-113">My cases</span></span>
+- <span data-ttu-id="dc2c3-114">Moje otwarte sprawy</span><span class="sxs-lookup"><span data-stu-id="dc2c3-114">My open cases</span></span>
+- <span data-ttu-id="dc2c3-115">Moje zaległe sprawy</span><span class="sxs-lookup"><span data-stu-id="dc2c3-115">My overdue cases</span></span>
+- <span data-ttu-id="dc2c3-116">Sprawy przypisane do mnie za pośrednictwem przepływu pracy</span><span class="sxs-lookup"><span data-stu-id="dc2c3-116">Cases assigned to me through workflow</span></span>
+
+<span data-ttu-id="dc2c3-117">Wraz z tymi nowymi widokami dostępna jest również jednostka DMF **Szczegóły sprawy**.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-117">Along with these new views into cases, the **Case detail** DMF entity is also available.</span></span>
+
+## <a name="enable-relationship-definitions-in-global-address-bbook-414762"></a><span data-ttu-id="dc2c3-118">Włącz definicje relacji w globalnej książce adresowej (414762)</span><span class="sxs-lookup"><span data-stu-id="dc2c3-118">Enable Relationship definitions in global address bBook (414762)</span></span>
+
+<span data-ttu-id="dc2c3-119">Relacje są teraz włączone w globalnej książce adresowej.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-119">Relationships are now enabled in the global address book.</span></span> <span data-ttu-id="dc2c3-120">Przed wydaniem z tego tygodnia pole informacji **relacji** wyświetlało wszystkie relacje zdefiniowane w systemie.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-120">Prior to this week's release, the **Relationship** fact box displayed any system-defined relationships.</span></span> <span data-ttu-id="dc2c3-121">Teraz można zdefiniować te relacje na stronie globalnej książki adresowej.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-121">Now you can define those relationships within the global address book page.</span></span>
+
+## <a name="a-position-can-be-removed-when-active-compensation-records-exist-for-the-position-414568"></a><span data-ttu-id="dc2c3-122">W przypadku istnienia aktywnych rekordów wynagrodzeń dla danego stanowiska można usunąć stanowisko (414568)</span><span class="sxs-lookup"><span data-stu-id="dc2c3-122">A position can be removed when active compensation records exist for the position (414568)</span></span>
+
+<span data-ttu-id="dc2c3-123">Przy tej zmianie zostanie wyświetlone ostrzeżenie podczas próby usunięcia stanowiska, jeśli pracownik ma aktywny rekord wynagrodzenia dla tego samego stanowiska.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-123">With this change, a warning appears when you attempt to delete a position and a worker has an active compensation record for that same position.</span></span> <span data-ttu-id="dc2c3-124">W takim przypadku należy zaktualizować rekord stałego wynagrodzenia pracownika przed usunięciem stanowiska.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-124">When this happens, you must update the employee fixed compensation record before removing the position.</span></span>
+
+## <a name="performance-review-workflow-occasionally-adds-sign-offs-from-people-who-are-not-part-of-the-process-414171"></a><span data-ttu-id="dc2c3-125">Przepływ pracy recenzji wydajności okazjonalnie dodaje podpisy, które nie są częścią procesu (414171)</span><span class="sxs-lookup"><span data-stu-id="dc2c3-125">Performance review workflow occasionally adds sign-offs from people who are not part of the process (414171)</span></span>
+
+<span data-ttu-id="dc2c3-126">Ta zmiana powoduje usunięcie problemy, gdy do przeglądu wydajności zostaną dodane dodatkowi podpisani uczestnicy.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-126">This change corrects an issue where additional sign-off participants are added to the performance review.</span></span>
+
+## <a name="worker-position-assignment-not-created-in-common-data-service-when-selected-on-the-new-worker-dialog-413479"></a><span data-ttu-id="dc2c3-127">Przypisanie stanowiska roboczego nie zostało utworzone w Common Data Service w przypadku wybrania opcji w oknie dialogowym Nowy pracownik (413479)</span><span class="sxs-lookup"><span data-stu-id="dc2c3-127">Worker position assignment not created in Common Data Service when selected on the New Worker dialog (413479)</span></span>
+
+<span data-ttu-id="dc2c3-128">Ta zmiana powoduje usunięcie błędu podczas zatrudniania nowego pracownika i przypisywania nowego zatrudnienia do stanowiska za pośrednictwem okna dialogowego **Nowy pracownik**.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-128">This change corrects an issue when hiring a new worker and assigning the new hire to a position through the **New worker** dialog.</span></span> <span data-ttu-id="dc2c3-129">Przypisana pozycja jest teraz odzwierciedlona w programie Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-129">Now the position assignment is reflected in Common Data Service.</span></span>
+
+## <a name="coming-soon"></a><span data-ttu-id="dc2c3-130">Wkrótce</span><span class="sxs-lookup"><span data-stu-id="dc2c3-130">Coming soon</span></span>
+
+### <a name="updated-common-data-service-solution"></a><span data-ttu-id="dc2c3-131">Zaktualizowano rozwiązanie Common Data Service</span><span class="sxs-lookup"><span data-stu-id="dc2c3-131">Updated Common Data Service solution</span></span>
+
+<span data-ttu-id="dc2c3-132">Nowe rozwiązanie Common Data Service będzie dostępne wkrótce z następującymi zmianami:</span><span class="sxs-lookup"><span data-stu-id="dc2c3-132">A new Common Data Service solution will be available soon with the following changes:</span></span>
+
+| <span data-ttu-id="dc2c3-133">Opis</span><span class="sxs-lookup"><span data-stu-id="dc2c3-133">Description</span></span> | <span data-ttu-id="dc2c3-134">Zmiana</span><span class="sxs-lookup"><span data-stu-id="dc2c3-134">Change</span></span> |
+| ----------------------------------------- | --- |
+| <span data-ttu-id="dc2c3-135">Zmiany encji **Zatrudnienie/Stanowisko**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-135">**Job/Position** entity changes</span></span> | <span data-ttu-id="dc2c3-136">Dodano **Region wynagrodzenia**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-136">**Compensation region** added</span></span></br><span data-ttu-id="dc2c3-137">Dodano **wymiary finansowe**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-137">**Financial dimensions** added</span></span> |
+| <span data-ttu-id="dc2c3-138">Zmiany jednostki **Pracownik**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-138">**Worker** entity changes</span></span> | <span data-ttu-id="dc2c3-139">Dodano **Kolejność w nazwisku**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-139">**Name sequence** added</span></span></br><span data-ttu-id="dc2c3-140">Dodano **Pracuje z domu**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-140">**Works from home** added</span></span></br><span data-ttu-id="dc2c3-141">Dodano **Język**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-141">**Language** added</span></span></br><span data-ttu-id="dc2c3-142">Dodano **Data stażu pracy**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-142">**Seniority date** added</span></span></br><span data-ttu-id="dc2c3-143">Dodano **Rocznica**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-143">**Anniversary date** added</span></span></br><span data-ttu-id="dc2c3-144">Dodano **Pierwotna data zatrudnienia**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-144">**Original hire date** added</span></span> |
+| <span data-ttu-id="dc2c3-145">Zmiany jednostki **Zatrudnienie**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-145">**Employment** entity changes</span></span> | <span data-ttu-id="dc2c3-146">Dodano **wymiary finansowe**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-146">**Financial dimensions** added</span></span></br><span data-ttu-id="dc2c3-147">Dodano **Powód rozwiązania umowy**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-147">**Termination reason** added</span></span></br><span data-ttu-id="dc2c3-148">**Data zakończenia** zmieniona z **daty przejścia**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-148">**Termination date** renamed from **Transition date**</span></span></br><span data-ttu-id="dc2c3-149">Dodano **Okres próbny**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-149">**Probation date** added</span></span> |
+| <span data-ttu-id="dc2c3-150">Zmiany jednostki **Adres Pracownika**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-150">**Worker address** entity changes</span></span> | <span data-ttu-id="dc2c3-151">Dodano **Ulica**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-151">**Street address** added</span></span></br><span data-ttu-id="dc2c3-152">**Wiersz adresu 1**, **wiersz adresu 2**i **wiersz adresu 3** oznaczone do zaniechania</span><span class="sxs-lookup"><span data-stu-id="dc2c3-152">**Address line 1**, **Address line 2**, and **Address line 3** marked for deprecation</span></span> |
+| <span data-ttu-id="dc2c3-153">Nowe jednostki ustawień wynagrodzeń o zmiennej wysokości</span><span class="sxs-lookup"><span data-stu-id="dc2c3-153">New variable compensation setup entities</span></span> | <span data-ttu-id="dc2c3-154">**Typ planu wynagrodzeń o zmiennej wysokości**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-154">**Compensation variable plan type**</span></span></br><span data-ttu-id="dc2c3-155">**Plan wynagrodzeń o zmiennej wysokości**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-155">**Compensation variable plan**</span></span></br><span data-ttu-id="dc2c3-156">**Reguły wypłat**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-156">**Vesting rules**</span></span></br><span data-ttu-id="dc2c3-157">**Poziom planu wynagrodzeń o zmiennej wysokości**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-157">**Compensation variable plan level**</span></span> |
+| <span data-ttu-id="dc2c3-158">Nowa jednostka **Zatrudnienie kalendarza pracownika**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-158">New **Worker calendar employment** entity</span></span> | <span data-ttu-id="dc2c3-159">Dodano **jednostkę kalendarza pracy**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-159">**Work calendar entity** added</span></span> |
+| <span data-ttu-id="dc2c3-160">Nowa jednostka **Szczegół stanowiska listy płac**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-160">New **Payroll position detail** entity</span></span> | <span data-ttu-id="dc2c3-161">Dodano **Szczegół stanowiska listy płac**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-161">**Payroll position detail** added</span></span> |
+| <span data-ttu-id="dc2c3-162">Nowa jednostka **Tytuł**</span><span class="sxs-lookup"><span data-stu-id="dc2c3-162">New **Title** entity</span></span> | <span data-ttu-id="dc2c3-163">Dodano **Tytuł**.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-163">**Title** added.</span></span> <span data-ttu-id="dc2c3-164">Nowa jednostka **Tytułu** będzie uwzględniana w procesie synchronizacji między Human Resources a Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-164">The new **Title** entity will be included in the sync process between Human Resources and Common Data Service.</span></span> <span data-ttu-id="dc2c3-165">Nie będzie początkowo przywoływany z **Stanowiska pracy** lub jednostek **Zadań**.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-165">It won't be initially referenced from **Job Position** or **Job** entities.</span></span> |
+
+<span data-ttu-id="dc2c3-166">W czasie następnych kilku tygodni zmiany tych jednostek będą dostępne we wszystkich środowiskach.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-166">Over the next few weeks, these entity changes will be available in all environments.</span></span> <span data-ttu-id="dc2c3-167">Aby ręcznie zainstalować najnowsze rozwiązanie Common Data Service dla modułu Human Resources:</span><span class="sxs-lookup"><span data-stu-id="dc2c3-167">To manually install the latest Common Data Service solution for Human Resources:</span></span>
+
+1.  <span data-ttu-id="dc2c3-168">Przejdź do [Centrum administracyjnego usługi Power Platform](https://admin.powerplatform.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="dc2c3-168">Go to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).</span></span>
+
+2.  <span data-ttu-id="dc2c3-169">Wybierz opcję **Środowiska**.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-169">Select **Environments**.</span></span>
+
+3.  <span data-ttu-id="dc2c3-170">Znajdź środowisko, które chcesz uaktualnić.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-170">Find the environment you want to upgrade.</span></span> <span data-ttu-id="dc2c3-171">Powinno ono odpowiadać **nazwie środowiska** w sekcji **informacji programu Common Data Service** w formularzu **O** w usłudze Human Resources.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-171">This should correspond to **Environment name** in the **Common Data Service information** section in the **About** form in Human Resources.</span></span>
+
+4.  <span data-ttu-id="dc2c3-172">Wybierz środowisko, aby wyświetlić szczegóły środowiska.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-172">Select the environment to view the environment details.</span></span>
+
+5.  <span data-ttu-id="dc2c3-173">Wybierz przycisk **Zarządzaj rozwiązaniami** na pasku akcji u góry.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-173">In the action bar at the top, select **Manage Solutions**.</span></span> <span data-ttu-id="dc2c3-174">Zostanie otwarte nowe okno przeglądarki i przejście do **centrum administracyjnego systemu Dynamics 365** w kontekście środowiska użytkownika.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-174">A new browser window will open and navigate to **Dynamics 365 Administration Center** in the context of your environment.</span></span>
+
+6.  <span data-ttu-id="dc2c3-175">Z listy **Rozwiązanie** wybierz pozycję **Zakotwiczenie Dynamics 365 Human Resources**.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-175">In the **Solution** list, select **Dynamics 365 Human Resources Anchor**.</span></span>
+
+7.  <span data-ttu-id="dc2c3-176">Wybierz opcję **Uaktualnij**, aby zastosować najnowsze rozwiązanie.</span><span class="sxs-lookup"><span data-stu-id="dc2c3-176">Select **Upgrade** to apply the latest solution.</span></span>
+
+## <a name="in-preview"></a><span data-ttu-id="dc2c3-177">Wersja próbna</span><span class="sxs-lookup"><span data-stu-id="dc2c3-177">In preview</span></span>
+
+<span data-ttu-id="dc2c3-178">Następujące funkcje w wersji zapoznawczej zostały udostępnione 3 lutego 2020 r.:</span><span class="sxs-lookup"><span data-stu-id="dc2c3-178">The following preview features became available on February 3, 2020:</span></span>
+
+- <span data-ttu-id="dc2c3-179">**Funkcje w wersji zapoznawczej dotyczące urlopów i nieobecności** — aby uzyskać więcej informacji, zobacz [Funkcje w wersji zapoznawczej dotyczące urlopów i nieobecności](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).</span><span class="sxs-lookup"><span data-stu-id="dc2c3-179">**Leave and absence preview features** - For more information, see [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).</span></span>
+
+- <span data-ttu-id="dc2c3-180">**Funkcja w wersji zapoznawczej Zarządzanie świadczeniami** — aby uzyskać więcej informacji, w tym o znanych problemach, zobacz [Omówienie obszaru roboczego Zarządzanie świadczeniami](hr-benefits-management-overview.md).</span><span class="sxs-lookup"><span data-stu-id="dc2c3-180">**Benefits management preview feature** - For more information, including known issues, see [Benefits management overview](hr-benefits-management-overview.md).</span></span>
