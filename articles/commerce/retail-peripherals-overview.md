@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 14c6f7aaab4c6e4f099f47210f4d89fdfcd33d79
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 278cfe89181efbbb934e108708db8fc29c25ab62
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030850"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124412"
 ---
 # <a name="peripherals"></a>Urządzenia peryferyjne
 
 [!include[banner](includes/banner.md)]
 
-W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi sklepu. Opisano różne sposoby podłączania urządzeń peryferyjnych do punktu sprzedaży (POS) oraz składniki, które są odpowiedzialne za zarządzanie połączeniem z punktem sprzedaży.
+W tym temacie wyjaśniono pojęcia, które są związane z urządzeniami peryferyjnymi sklepu. Opisano różne sposoby podłączania urządzeń peryferyjnych do punktu sprzedaży (POS) oraz składniki, które są odpowiedzialne za zarządzanie połączeniem z punktem sprzedaży.
 
 ## <a name="concepts"></a>Koncepcje
 
@@ -65,7 +65,7 @@ Urządzenia peryferyjne punktu sprzedaży to urządzenia, które wspierają funk
 
 ### <a name="hardware-station"></a>Hardware Station
 
-Nawigacja: Kliknij kolejno opcje **Retail i Commerce** &gt; **Kanały** &gt; **Sklepy sieci sprzedażys** &gt; **Wszystkie sklepy sieci sprzedaży**. Zaznacz sklep i kliknij skróconą kartę **Stacje sprzętowe**. Ustawienie **Stacja sprzętowa** to ustawienie na poziomie kanału służące do definiowania wystąpień, w których zostanie wdrożona logika urządzeń peryferyjnych sieci sprzedaży. To ustawienie na poziomie kanału jest używane do określenia charakterystyki stacji sprzętowej. Służy również do wyświetlenia listy stacji sprzętowych, które są dostępne dla wystąpienia programu Modern POS w danym sklepie. Stacja sprzętowa jest wbudowana w programach Modern POS dla systemu Windows i Android. Stacje sprzętowe mogą również być instalowane niezależnie jako autonomiczne wystąpienia program Microsoft Internet Information Services (IIS). W takim przypadku są dostępne przez sieć.
+Nawigacja: Kliknij kolejno opcje **Retail i Commerce** &gt; **Kanały** &gt; **Sklepy** &gt; **Wszystkie sklepy**. Zaznacz sklep i kliknij skróconą kartę **Stacje sprzętowe**. Ustawienie **Stacja sprzętowa** to ustawienie na poziomie kanału służące do definiowania wystąpień, w których zostanie wdrożona logika urządzeń peryferyjnych. To ustawienie na poziomie kanału jest używane do określenia charakterystyki stacji sprzętowej. Służy również do wyświetlenia listy stacji sprzętowych, które są dostępne dla wystąpienia programu Modern POS w danym sklepie. Stacja sprzętowa jest wbudowana w programach Modern POS dla systemu Windows i Android. Stacje sprzętowe mogą również być instalowane niezależnie jako autonomiczne wystąpienia program Microsoft Internet Information Services (IIS). W takim przypadku są dostępne przez sieć.
 
 ### <a name="hardware-profile"></a>Profil sprzętu
 
@@ -117,27 +117,30 @@ Obsługa urządzeń płatniczych jest implementowana za pośrednictwem aplikacji
 ## <a name="supported-interfaces"></a>Obsługiwane interfejsy
 ### <a name="opos"></a>OPOS
 
-Aby zagwarantować możliwość współpracy jak największej gamy urządzeń z Commerce, podstawową platformą obsługi urządzeń peryferyjnych sieci sprzedaży jest mechanizm OLE for POS stanowiący branżowy standard. Standard OLE for POS sprzedaży został opracowany przez amerykańską Krajową Federację Sprzedawców Detalicznych (NRF), który ustanawia branżowe protokoły komunikacyjne dla urządzeń peryferyjnych sieci sprzedaży. OPOS jest powszechnie przyjętą implementacją standardu OLE for POS. Został opracowany w połowie lat 1990-ych od tego czasu był kilkukrotnie aktualizowany. Standard OPOS określa architekturę sterownika urządzenia, która umożliwia łatwą integrację urządzeń punktu sprzedaży z systemami punktu sprzedaży opartymi na systemie Windows. Formanty OPOS zarządzają komunikacją między zgodnymi urządzeniami a oprogramowaniem punktu sprzedaży. Formant OPOS składa się z dwóch części:
+Aby zagwarantować możliwość współpracy jak największej gamy urządzeń z Commerce, podstawową platformą obsługi urządzeń peryferyjnych jest mechanizm OLE for POS stanowiący branżowy standard. Standard OLE for POS sprzedaży został opracowany przez amerykańską Krajową Federację Sprzedawców Detalicznych (NRF), który ustanawia branżowe protokoły komunikacyjne dla urządzeń peryferyjnych. OPOS jest powszechnie przyjętą implementacją standardu OLE for POS. Został opracowany w połowie lat 1990-ych od tego czasu był kilkukrotnie aktualizowany. Standard OPOS określa architekturę sterownika urządzenia, która umożliwia łatwą integrację urządzeń punktu sprzedaży z systemami punktu sprzedaży opartymi na systemie Windows. Formanty OPOS zarządzają komunikacją między zgodnymi urządzeniami a oprogramowaniem punktu sprzedaży. Formant OPOS składa się z dwóch części:
 
 -   **Obiekt formantu** — Obiekt formantu klasy urządzeń (na przykład wyświetlaczu wierszowym) udostępnia interfejs dla programu komputerowego. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) dostarcza zestaw standardowych obiektów formatów OPOS, które są znane jako wspólne obiekty formantów (CCO). Obiekty CCO są używane do testowania składnika punktu sprzedaży w Commerce. W związku z tym testowanie pomaga zagwarantować, że jeśli program Commerce obsługuje klasę urządzeń za pośrednictwem mechanizmu OPOS, będzie obsługiwanych wiele typów urządzeń, o ile tylko producent dostarczy obiekt usługi zaprojektowany dla tego mechanizmu. Nie trzeba osobno testować każdego typu urządzenia.
 -   **Obiekt usługi** — Obiekt usługi zapewnia komunikację między obiektem formantu (CCO) a urządzeniem. Zazwyczaj obiekt usługi dla urządzenia jest dostarczany przez producenta urządzenia. Jednak w niektórych przypadkach może być konieczne pobranie obiektu usługi z witryny internetowej producenta. Na przykład może być dostępny nowszy obiekt usługi. Aby odszukać adres witryny producenta w sieci Web, zajrzyj do dokumentacji sprzętu.
 
-[![Obiekt formantu i obiekt usługi](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Obsługa implementacji OPOS standardu OLE for POS pomaga zagwarantować, że jeśli producenci urządzeń i wydawcy oprogramowania punktów sprzedaży poprawnie zaimplementowali standard, systemy punktów sprzedaży i obsługiwane urządzenia mogą współpracować, nawet jeśli nie zostały wcześniej przetestowane razem. **Uwaga:** Obsługa standardu OPOS nie gwarantuje współpracy ze wszystkimi urządzeniami, które mają sterowniki OPOS. Program Microsoft Dynamics 365 for Retail musi najpierw obsługiwać ten lub klasę urządzenia za pośrednictwem mechanizmu OPOS. Ponadto obiekty usług nie zawsze są aktualizowane dla najnowszych wersji obiektów CCO. Należy także pamiętać, że zasadniczo jakość obiektów usługi jest różna.
+[![Obiekt formantu i obiekt usługi](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Obsługa implementacji OPOS standardu OLE for POS pomaga zagwarantować, że jeśli producenci urządzeń i wydawcy oprogramowania punktów sprzedaży poprawnie zaimplementowali standard, systemy punktów sprzedaży i obsługiwane urządzenia mogą współpracować, nawet jeśli nie zostały wcześniej przetestowane razem. 
+
+> [!NOTE]
+> Obsługa standardu OPOS nie gwarantuje współpracy ze wszystkimi urządzeniami, które mają sterowniki OPOS. Commerce musi najpierw obsługiwać ten lub klasę urządzenia za pośrednictwem mechanizmu OPOS. Ponadto obiekty usług nie zawsze są aktualizowane dla najnowszych wersji obiektów CCO. Należy także pamiętać, że zasadniczo jakość obiektów usługi jest różna.
 
 ### <a name="windows"></a>Windows
 
-Drukowanie paragonów w punkcie sprzedaży jest zoptymalizowane dla standardu OPOS. Drukowanie przez mechanizm OPOS często jest znacznie szybsze niż drukowanie za pośrednictwem systemu Windows. Dlatego dobrze jest używać standardu OPOS szczególnie w sklepach detalicznych, gdzie są drukowane paragony 40-kolumnowe, a transakcje muszą być szybko realizowane. Dla większości urządzeń używa się formantów OPOS. Jednak niektóre drukarki paragonów OPOS obsługują również sterowniki systemu Windows. Używanie sterownika systemu Windows zapewnia dostęp do najnowszych czcionek i pozwala ustawić jedną drukarkę sieciową dla wielu kas. Istnieją jednak wady używania sterowników systemu Windows. Oto kilka z nich:
+Drukowanie paragonów w punkcie sprzedaży jest zoptymalizowane dla standardu OPOS. Drukowanie przez mechanizm OPOS często jest znacznie szybsze niż drukowanie za pośrednictwem systemu Windows. Dlatego dobrze jest używać standardu OPOS szczególnie w środowiskach, gdzie są drukowane paragony 40-kolumnowe, a transakcje muszą być szybko realizowane. Dla większości urządzeń używa się formantów OPOS. Jednak niektóre drukarki paragonów OPOS obsługują również sterowniki systemu Windows. Używanie sterownika systemu Windows zapewnia dostęp do najnowszych czcionek i pozwala ustawić jedną drukarkę sieciową dla wielu kas. Istnieją jednak wady używania sterowników systemu Windows. Oto kilka z nich:
 
 -   Gdy są używane sterowniki dla systemu Windows, obrazy przed wydrukowaniem są renderowane. W związku z tym drukowanie najczęściej jest wolniejsze niż w drukarkach wykorzystujących formanty OPOS.
 -   Urządzenia podłączone za pośrednictwem drukarki („łańcuchowo”) mogą nie działać poprawnie w przypadku używania sterowników systemu Windows. Na przykład szuflada kasowa może się nie otwierać lub drukarka pokwitowań może działać w nieoczekiwany sposób.
--   Standard OPOS obsługuje także szerszy zestaw zmiennych specyficznych dla drukarek paragonów w handlu detalicznym, takich jak obcinanie papieru czy drukowanie pokwitowań.
+-   Standard OPOS obsługuje także szerszy zestaw zmiennych specyficznych dla drukarek paragonów, takich jak obcinanie papieru czy drukowanie pokwitowań.
 -   Drukarki systemu Windows nie są obsługiwane przez stację sprzętową usług IIS. 
 
 Jeśli formanty OPOS są dostępne dla używanej drukarki systemu Windows, drukarka powinna poprawnie współpracować z programem Commerce.
 
 ### <a name="universal-windows-platform"></a>Platforma uniwersalna systemu Windows
 
-W kontekście urządzeń peryferyjnych sieci sprzedaży platforma UWP odnosi się do obsługi urządzeń typu Plug and Play w systemie Windows. Po podłączeniu urządzenia typu Plug and Play do wersji systemu operacyjnego Windows obsługującej tego typu urządzenie nie trzeba instalować dodatkowego sterownika, aby urządzenie działało zgodnie z przeznaczeniem. Na przykład jeśli system Windows wykryje głośnik Bluetooth, system operacyjny wie, że urządzenie ma typ klasy **Głośnik**. W związku z tym traktuje to urządzenie jako głośnik. Nie jest wymagana żadna dodatkowa konfiguracja. W przypadku sprzętu dla punktu sprzedaży można podłączać wiele urządzeń USB, a system Windows rozpozna je jako urządzenia interfejsu HID. Jednakże może nie być w stanie rozpoznać funkcjonalności urządzenia, ponieważ urządzenie nie podaje swojej klasy/typu. W systemie Windows 10 dodano klasy urządzeń skanerów kodów kreskowych i czytników MSR. W związku z tym jeśli urządzenie deklaruje się wobec systemu 10 Windows jako należące do jednej z tych klas, system Windows będzie nasłuchiwał zdarzeń z tego urządzenia we właściwych momentach. Aplikacja Modern POS obsługuje czytniki MSR i skanery zgodne ze standardem UWP. W związku z tym gdy jest gotowa przyjąć dane wejściowe od jednego z takich urządzeń, a urządzenie należące do jednej z podanych klas jest podłączone, urządzenia można użyć. Na przykład jeśli skaner kodów kreskowych UWP jest podłączony do komputera z systemem Windows 10, a dla programu Modern POS skonfigurowanie logowanie przy użyciu kodów kreskowych, skaner kodów kreskowych stanie się aktywny na ekranie logowania. Nie jest wymagana żadna dodatkowa konfiguracja. Stopniowo do systemu Windows są dodawane kolejne klasy urządzeń punktów sprzedaży zgodne ze standardem UWP. Są wśród nich klasy szuflad kasowych i drukarek paragonów. Obsługa tych nowych klas urządzeń wkrótce zostanie dodana w programie Modern POS.
+W kontekście urządzeń peryferyjnych platforma UWP odnosi się do obsługi urządzeń typu Plug and Play w systemie Windows. Po podłączeniu urządzenia typu Plug and Play do wersji systemu operacyjnego Windows obsługującej tego typu urządzenie nie trzeba instalować dodatkowego sterownika, aby urządzenie działało zgodnie z przeznaczeniem. Na przykład jeśli system Windows wykryje głośnik Bluetooth, system operacyjny wie, że urządzenie ma typ klasy **Głośnik**. W związku z tym traktuje to urządzenie jako głośnik. Nie jest wymagana żadna dodatkowa konfiguracja. W przypadku sprzętu dla punktu sprzedaży można podłączać wiele urządzeń USB, a system Windows rozpozna je jako urządzenia interfejsu HID. Jednakże może nie być w stanie rozpoznać funkcjonalności urządzenia, ponieważ urządzenie nie podaje swojej klasy/typu. W systemie Windows 10 dodano klasy urządzeń skanerów kodów kreskowych i czytników MSR. W związku z tym jeśli urządzenie deklaruje się wobec systemu 10 Windows jako należące do jednej z tych klas, system Windows będzie nasłuchiwał zdarzeń z tego urządzenia we właściwych momentach. Aplikacja Modern POS obsługuje czytniki MSR i skanery zgodne ze standardem UWP. W związku z tym gdy jest gotowa przyjąć dane wejściowe od jednego z takich urządzeń, a urządzenie należące do jednej z podanych klas jest podłączone, urządzenia można użyć. Na przykład jeśli skaner kodów kreskowych UWP jest podłączony do komputera z systemem Windows 10, a dla programu Modern POS skonfigurowanie logowanie przy użyciu kodów kreskowych, skaner kodów kreskowych stanie się aktywny na ekranie logowania. Nie jest wymagana żadna dodatkowa konfiguracja. Stopniowo do systemu Windows są dodawane kolejne klasy urządzeń punktów sprzedaży zgodne ze standardem UWP. Są wśród nich klasy szuflad kasowych i drukarek paragonów. Obsługa tych nowych klas urządzeń wkrótce zostanie dodana w programie Modern POS.
 
 ### <a name="keyboard-wedge"></a>Czytnik podłączany do klawiatury
 
@@ -155,13 +158,13 @@ Szuflady kasowe adresowalne w sieci, drukarki paragonów i terminale płatnicze 
 
 ### <a name="dedicated"></a>Dedykowane
 
-Klienci Modern POS systemów Windows i Android zawierają **dedykowane** lub wbudowane stacje sprzętu. Klienci ci mogą komunikować się bezpośrednio z urządzeniami peryferyjnymi za pomocą logiki biznesowej wbudowanej w aplikacje. Aplikacja Android obsługuje tylko urządzenia sieciowe. Aby uzyskać więcej informacji na temat obsługi urządzeń peryferyjnych Android, odwiedź artykuł (Konfigurowanie aplikacji POS Hybrid w systemie Android i iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp].
+Klienci Modern POS systemów Windows i Android zawierają **dedykowane** lub wbudowane stacje sprzętu. Klienci ci mogą komunikować się bezpośrednio z urządzeniami peryferyjnymi za pomocą logiki biznesowej wbudowanej w aplikacje. Aplikacja Android obsługuje tylko urządzenia sieciowe. Aby uzyskać więcej informacji na temat obsługi urządzeń peryferyjnych dla systemu Android, odwiedź artykuł [Konfigurowanie aplikacji POS Hybrid w systemie Android i iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
 
 Aby użyć dedykowanej stacji sprzętowej, przypisz profil sprzętu do kasy, która będzie używać aplikacji Modern POS dla aplikacji Windows lub Android. Następnie utwórz stację sprzętową typu **Dedykowana** dla sklepu, w którym kasa będzie używana. Uruchom Modern POS w trybie bez szuflady i użyj operacji **zarządzania stacjami sprzętowymi**, aby włączyć funkcje stacji sprzętowej, dlatego dedykowana Stacja sprzętowa będzie aktywna domyślnie. Następnie wyloguj się z Modern POS, a następnie zaloguj się ponownie i Otwórz zmianę, a urządzenia peryferyjne skonfigurowane w profilu sprzętu mogą być teraz używane. 
 
 ### <a name="shared"></a>Wspólna 
 
-Czasami nazywane jest również stacją sprzętową „IIS”; „IIS”, która oznacza, że aplikacja punktu sprzedaży łączy się z stacją sprzętową za pośrednictwem internetowych usług informacyjnych Microsoft. Aplikacja punktu sprzedaży łączy się ze stacją sprzętową IIS za pośrednictwem usług internetowych uruchomionych na komputerze, do którego są podłączone urządzenia. Jeśli jest wykorzystywana dzielona stacja sprzętowa, urządzenia peryferyjne sieci sprzedaży podłączone do stacji sprzętowej mogą być używane przez dowolną kasę w punkcie sprzedaży znajdującą się w tej samej sieci, co stacja sprzętowa z usługami IIS. Ponieważ tylko aplikacja Modern POS for Windows i Android zawiera wbudowaną obsługę urządzeń peryferyjnych sieci sprzedaży, wszystkie pozostałe aplikacje Modern POS muszą używać stacji sprzętowej z usługami IIS do komunikowania się z urządzeniami peryferyjnymi punktu sprzedaży skonfigurowanymi w profilu sprzętu. W związku z tym każde wystąpienie stacji sprzętowej IIS wymaga komputera, na którym są uruchomione usługa sieci web i aplikacja komunikujące się z urządzeniami. 
+Czasami nazywane jest również stacją sprzętową „IIS”; „IIS”, która oznacza, że aplikacja punktu sprzedaży łączy się z stacją sprzętową za pośrednictwem internetowych usług informacyjnych Microsoft. Aplikacja punktu sprzedaży łączy się ze stacją sprzętową IIS za pośrednictwem usług internetowych uruchomionych na komputerze, do którego są podłączone urządzenia. Jeśli jest wykorzystywana dzielona stacja sprzętowa, urządzenia peryferyjne podłączone do stacji sprzętowej mogą być używane przez dowolną kasę w punkcie sprzedaży znajdującą się w tej samej sieci, co stacja sprzętowa z usługami IIS. Ponieważ tylko aplikacja Modern POS for Windows i Android zawiera wbudowaną obsługę urządzeń peryferyjnych, wszystkie pozostałe aplikacje Modern POS muszą używać stacji sprzętowej z usługami IIS do komunikowania się z urządzeniami peryferyjnymi punktu sprzedaży skonfigurowanymi w profilu sprzętu. W związku z tym każde wystąpienie stacji sprzętowej IIS wymaga komputera, na którym są uruchomione usługa sieci web i aplikacja komunikujące się z urządzeniami. 
 
 Współużytkowana Stacja sprzętowa może być używana do zezwalania wielu klientom punktu sprzedaży na udostępnianie urządzeń peryferyjnych lub może być używana do zarządzania ustalonym zbiorem lub urządzeniami peryferyjnymi dla jednego punktu sprzedaży. 
 
@@ -179,7 +182,7 @@ Sieciowe oznaczenie urządzeń w profilu sprzętu umożliwia podłączanie szufl
 
 #### <a name="modern-pos-for-windows"></a>Modern POS for Windows
 
-Adresy IP sieciowych urządzeń peryferyjnych można określić w dwóch miejscach. Jeśli klient programu Modern POS Windows używa jednego zestawu peryferyjnych urządzeń sieciowych, w celu ustawienia adresów IP tych urządzeń należy użyć opcji **Konfiguracja protokołu IP** w okienku akcji w samej kasie. W przypadku urządzeń sieciowych, które będą współużytkowane przez kilka kas w punkcie sprzedaży, profil sprzętu zawierający przypisane urządzenia sieciowe można zmapować bezpośrednio na wspólną stację sprzętową. Aby przypisać adresy IP, wybierz stację sprzętową na stronie **Sklepy**, a następnie w opcji **Konfiguracja protokołu IP** w sekcji **Stacje sprzętowe** wskaż urządzenia sieciowe przypisane do tej stacji sprzętowej. W przypadku stacji sprzętowych zawierających tylko urządzenia sieciowe nie trzeba instalować samej stacji sprzętowej. W takim przypadku stacja sprzętowa jest wymagana tylko w celu koncepcyjnego zgrupowania urządzeń adresowalnych w sieci zgodnie z ich umiejscowieniem w sklepie sieci sprzedaży.
+Adresy IP sieciowych urządzeń peryferyjnych można określić w dwóch miejscach. Jeśli klient programu Modern POS Windows używa jednego zestawu peryferyjnych urządzeń sieciowych, w celu ustawienia adresów IP tych urządzeń należy użyć opcji **Konfiguracja protokołu IP** w okienku akcji w samej kasie. W przypadku urządzeń sieciowych, które będą współużytkowane przez kilka kas w punkcie sprzedaży, profil sprzętu zawierający przypisane urządzenia sieciowe można zmapować bezpośrednio na wspólną stację sprzętową. Aby przypisać adresy IP, wybierz stację sprzętową na stronie **Sklepy**, a następnie w opcji **Konfiguracja protokołu IP** w sekcji **Stacje sprzętowe** wskaż urządzenia sieciowe przypisane do tej stacji sprzętowej. W przypadku stacji sprzętowych zawierających tylko urządzenia sieciowe nie trzeba instalować samej stacji sprzętowej. W takim przypadku stacja sprzętowa jest wymagana tylko w celu koncepcyjnego zgrupowania urządzeń adresowalnych w sieci zgodnie z ich umiejscowieniem w sklepie.
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS i Modern POS dla systemu iOS
 
@@ -192,11 +195,11 @@ Aby uzyskać więcej informacji, zobacz [Konfiguracja i instalacja stacji sprzę
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Instalacja i konfiguracja programu Modern POS for Windows
 
-Aby uzyskać więcej informacji, zobacz [Konfiguracja, instalacja i aktywacja Retail Modern POS](retail-modern-pos-device-activation.md).
+Aby uzyskać więcej informacji, zobacz [Konfiguracja, instalacja i aktywacja Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Instalacja i konfiguracja programu Modern POS dla systemu Android i iOS
 
-W celu uzyskania dalszych informacji, zobacz (Konfigurowanie aplikacji POS Hybrid w systemach Android i iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp].
+W celu uzyskania dalszych informacji, zobacz [Konfigurowanie aplikacji POS Hybrid w systemach Android i iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="opos-device-setup-and-configuration"></a>Instalacja i konfiguracja urządzenia OPOS
 
@@ -283,14 +286,14 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <td>Szuflada</td>
 <td><ul>
 <li>OPOS</li>
-<li>Sieć <strong>Uwaga:</strong> Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę.</li>
+<li>Sieć </br><strong>Uwaga:</strong> jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Szuflada 2</td>
 <td><ul>
 <li>OPOS</li>
-<li>Sieć <strong>Uwaga:</strong> Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę.</li>
+<li>Sieć </br><strong>Uwaga:</strong> jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -333,7 +336,8 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Wszystkie urządzenia klienckie programu Modern POS mające ustaloną „wspólną” stację sprzętową z usługami IIS
 
-**Uwaga:** Gdy stacja sprzętowa z usługami IIS jest „dedykowana”, istnieje relacja jeden-do-jednego między aplikacją kliencką punktu sprzedaży a stacją sprzętową.
+> [!NOTE]
+> Gdy stacja sprzętowa z usługami IIS jest „dedykowana”, istnieje relacja jeden-do-jednego między aplikacją kliencką punktu sprzedaży a stacją sprzętową.
 
 <table>
 <colgroup>
@@ -373,7 +377,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <td>Szuflada</td>
 <td><ul>
 <li>OPOS</li>
-<li>Sieć <strong>Uwaga:</strong> Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę na każdy profil sprzętu.</li>
+<li>Sieć </br><strong>Uwaga:</strong> jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę na każdy profil sprzętu.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -415,7 +419,8 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 
 ### <a name="all-modern-pos-clients-shared-an-iis-hardware-station"></a>Wszystkie urządzenia klienckie programu Modern POS dzielą stację sprzętową z usługami IIS
 
-**Uwaga:** Kiedy stacja sprzętowa z usługami IIS jest „udostępniona”, wiele urządzeń może używać tej stacji w tym samym czasie. W tym scenariuszu należy użyć tylko urządzeń wymienionych w tabeli poniżej. Jeśli spróbujesz współużytkować urządzenia, które nie są tutaj wymienione, takiej jak skanery kodów kreskowych i czytniki kart magnetycznych, wystąpią błędy w chwili, gdy wiele urządzeń będzie próbowało zarezerwować to samo urządzenie peryferyjne. W przyszłości taka konfiguracja będzie technicznie niemożliwa do wykonania.
+> [!NOTE]
+> Kiedy stacja sprzętowa z usługami IIS jest „udostępniona”, wiele urządzeń może używać tej stacji w tym samym czasie. W tym scenariuszu należy użyć tylko urządzeń wymienionych w tabeli poniżej. Jeśli spróbujesz współużytkować urządzenia, które nie są tutaj wymienione, takiej jak skanery kodów kreskowych i czytniki kart magnetycznych, wystąpią błędy w chwili, gdy wiele urządzeń będzie próbowało zarezerwować to samo urządzenie peryferyjne. W przyszłości taka konfiguracja będzie technicznie niemożliwa do wykonania.
 
 <table>
 <colgroup>
@@ -447,7 +452,7 @@ Sieciowe urządzenia peryferyjne mogą być obsługiwane bezpośrednio przez sta
 <td>Szuflada</td>
 <td><ul>
 <li>OPOS</li>
-<li>Sieć <strong>Uwaga:</strong> Jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę na każdy profil sprzętu.</li>
+<li>Sieć </br><strong>Uwaga:</strong> jeśli w ustawieniach szuflady zostanie włączona opcja <strong>Używaj zmiany udostępnionej</strong>, można skonfigurować tylko jedną szufladę na każdy profil sprzętu.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -476,8 +481,12 @@ Ta konfiguracja jest najbardziej typową konfigurację dla kas w tradycyjnych, s
 
 1.  Utwórz profil sprzętu, w którym będą skonfigurowane wszystkie wymagane urządzenia peryferyjne.
 2.  Zamapuj profil sprzętu na kasę w punkcie sprzedaży.
-3.  Utwórz stację sprzętową typu **Dedykowana** dla sklepu sieci sprzedaży, w którym będzie używana kasa punktu sprzedaży. Opcjonalnie możesz wprowadzić opis. **Uwaga:** Nie trzeba konfigurować żadnych innych właściwości w stacji sprzętowej. Wszystkie pozostałe wymagane informacje, takie jak profil sprzętu, zostaną pobrane bezpośrednio z kasy.
-4.  Kliknij kolejno opcje harmonogram **Handel detaliczny i inny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji**.
+3.  Utwórz stację sprzętową typu **Dedykowana** dla sklepu, w którym kasa POS będzie używana. Opcjonalnie możesz wprowadzić opis. 
+
+    > [!NOTE]
+    > Nie trzeba konfigurować żadnych innych właściwości w stacji sprzętowej. Wszystkie pozostałe wymagane informacje, takie jak profil sprzętu, zostaną pobrane bezpośrednio z kasy.
+
+4.  Kliknij kolejno opcje **Retail i Commerce** &gt; **Dane IT sprzedaży** &gt; **Harmonogram dystrybucji**.
 5.  Wybierz harmonogram dystrybucji **1090**, aby zsynchronizować nowy profil sprzętu ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 6.  Wybierz harmonogram dystrybucji **1040**, aby zsynchronizować nową stację sprzętową ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 7.  Zainstaluj i aktywuj aplikację Modern POS for Windows.
@@ -485,29 +494,30 @@ Ta konfiguracja jest najbardziej typową konfigurację dla kas w tradycyjnych, s
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS dla systemu Android ze stacją sprzętową z funkcją IPC (wbudowaną)
 
-**Nowość w 10.0.8** —drukarki sieciowe Epson i kasy połączone z tymi drukarkami za pomocą portu DK są teraz obsługiwane przez program Modern POS dla aplikacji Android. Aby uzyskać szczegółowe informacje, odwiedź artykuł (Konfigurowanie POS hybrid dla systemu Android i iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp].
+**Nowość w 10.0.8** —drukarki sieciowe Epson i kasy połączone z tymi drukarkami za pomocą portu DK są teraz obsługiwane przez program Modern POS dla aplikacji Android. Aby uzyskać szczegółowe informacje, odwiedź artykuł [Konfigurowanie POS Hybrid dla systemu Android i iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Wszystkie urządzenia klienckie programu Modern POS mające ustaloną „wspólną” stację sprzętową z usługami IIS
 
 Tej konfiguracji można używać na wszystkich urządzeniach klienckich programu Modern POS mających stację sprzętową, która jest używana wyłącznie przez jedną kasę w punkcie sprzedaży. Aby skonfigurować te ustawienia, wykonaj poniższe czynności.
 
 1.  Utwórz profil sprzętu, w którym będą skonfigurowane wszystkie wymagane urządzenia peryferyjne.
-2.  Utwórz stację sprzętową typu **Dedykowana** dla sklepu sieci sprzedaży, w którym będzie używana kasa punktu sprzedaży.
+2.  Utwórz stację sprzętową typu **Dedykowana** dla sklepu, w którym kasa POS będzie używana.
 3.  Na dedykowanej stacji sprzętowej ustaw następujące właściwości:
     -   **Nazwa hosta** — Nazwa komputera hosta, na którym będzie uruchamiana stacja sprzętowa. 
     
-    **Uwaga:** Aplikacja Cloud POS może rozpoznawać właściwość **localhost** w celu ustalania lokalnego komputera, na którym jest uruchomiona. Jednak certyfikat wymagany do sparowania aplikacji Cloud POS ze stacją sprzętową również musi mieć nazwę komputera „Localhost”. Aby uniknąć problemów, zalecamy wyszczególnienie wszystkich potrzebnych wystąpień dedykowanych stacji sprzętowych dla sklepu. Dla każdej stacji sprzętowej nazwą hosta powinna być nazwa konkretnego komputera, na którym zostanie zainstalowana stacja sprzętowa.
+        > [!NOTE]
+        > Aplikacja Cloud POS może rozpoznawać właściwość **localhost** w celu ustalania lokalnego komputera, na którym jest uruchomiona. Jednak certyfikat wymagany do sparowania aplikacji Cloud POS ze stacją sprzętową również musi mieć nazwę komputera „Localhost”. Aby uniknąć problemów, zalecamy wyszczególnienie wszystkich potrzebnych wystąpień dedykowanych stacji sprzętowych dla sklepu. Dla każdej stacji sprzętowej nazwą hosta powinna być nazwa konkretnego komputera, na którym zostanie zainstalowana stacja sprzętowa.
     
     -   **Port** — Port wykorzystywany przez stację sprzętową do komunikacji z urządzeniem klienckim programu Modern POS.
     -   **Profil sprzętu** — Jeśli profil sprzętu nie został określony w samej stacji sprzętowej, będzie używany profil sprzętu przypisany do kasy.
     -   **Numer EFT w punkcie sprzedaży** — Identyfikator terminala EFT, który ma być używany podczas wysyłania autoryzacji płacenia metodą EFT. Ten identyfikator jest dostarczany przez agenta rozliczeniowego kart kredytowych.
     -   **Nazwa pakietu** — Pakiet stacji sprzętowej, który ma być używany podczas instalowania stacji sprzętowej.
 
-4.  Kliknij kolejno opcje harmonogram **Handel detaliczny i inny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji**.
+4.  Kliknij kolejno opcje **Retail i Commerce** &gt; **Dane IT sprzedaży** &gt; **Harmonogram dystrybucji**.
 5.  Wybierz harmonogram dystrybucji **1090**, aby zsynchronizować nowy profil sprzętu ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 6.  Wybierz harmonogram dystrybucji **1040**, aby zsynchronizować nową stację sprzętową ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 7.  Zainstaluj stację sprzętową. Aby uzyskać więcej informacji dotyczących sposobu instalowania stacji sprzętowej, zobacz [Konfiguracja i instalacja programu Retail hardware station](retail-hardware-station-configuration-installation.md).
-8.  Zainstaluj i aktywuj aplikację Modern POS. Aby uzyskać więcej informacji dotyczących sposobu instalowania aplikacji Modern POS, zobacz [Konfigurowanie, instalowanie i aktywacja Retail Modern POS(MPOS)](retail-modern-pos-device-activation.md).
+8.  Zainstaluj i aktywuj aplikację Modern POS. Aby uzyskać więcej informacji dotyczących sposobu instalowania aplikacji Modern POS, zobacz [Konfigurowanie, instalowanie i aktywacja Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9.  Zaloguj się w aplikacji Modern POS i wybierz opcję **Wykonaj operacje bez użycia szuflady**.
 10. Uruchom operację **Zarządzaj stacjami sprzętowymi**.
 11. Kliknij przycisk **Zarządzaj**.
@@ -521,7 +531,7 @@ Tej konfiguracji można używać na wszystkich urządzeniach klienckich programu
 Tej konfiguracji można używać na wszystkich urządzeniach klienckich programu Modern POS współużytkujących stacje sprzętowe z innymi urządzeniami. Aby skonfigurować te ustawienia, wykonaj poniższe czynności.
 
 1.  Utwórz profil sprzętu, w którym będą skonfigurowane wymagane urządzenia peryferyjne.
-2.  Utwórz stację sprzętową typu **Udostępniona** dla sklepu sieci sprzedaży, w którym będzie używana kasa punktu sprzedaży.
+2.  Utwórz stację sprzętową typu **Udostępnione** dla sklepu, w którym kasa POS będzie używana.
 3.  Na współużytkowanej stacji sprzętowej ustaw następujące właściwości:
     -   **Nazwa hosta** — Nazwa komputera hosta, na którym będzie uruchamiana stacja sprzętowa.
     -   **Opis** — Tekst, który pomoże identyfikować stację sprzętową, np. jak **Zwroty** lub **Przód sklepu**.
@@ -531,11 +541,11 @@ Tej konfiguracji można używać na wszystkich urządzeniach klienckich programu
     -   **Nazwa pakietu** — Pakiet stacji sprzętowej, który ma być używany podczas instalowania stacji sprzętowej.
 
 4.  Powtórz kroki 2 i 3 dla każdej dodatkowej stacji sprzętowej, która jest potrzebna w sklepie.
-5.  Kliknij kolejno opcje harmonogram **Handel detaliczny i inny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji**.
+5.  Kliknij kolejno opcje **Retail i Commerce** &gt; **Dane IT sprzedaży** &gt; **Harmonogram dystrybucji**.
 6.  Wybierz harmonogram dystrybucji **1090**, aby zsynchronizować nowy profil sprzętu ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 7.  Wybierz harmonogram dystrybucji **1040**, aby zsynchronizować nową stację sprzętową ze sklepem. Kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 8.  Zainstaluj stację sprzętową na każdym komputerze hosta skonfigurowanym w krokach 2 i 3. Aby uzyskać więcej informacji dotyczących sposobu instalowania stacji sprzętowej, zobacz [Konfiguracja i instalacja programu Retail hardware station](retail-hardware-station-configuration-installation.md).
-9.  Zainstaluj i aktywuj aplikację Modern POS. Aby uzyskać więcej informacji dotyczących sposobu instalowania aplikacji Modern POS, zobacz [Konfigurowanie, instalowanie i aktywacja Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
+9.  Zainstaluj i aktywuj aplikację Modern POS. Aby uzyskać więcej informacji dotyczących sposobu instalowania aplikacji Modern POS, zobacz [Konfigurowanie, instalowanie i aktywacja Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Zaloguj się w aplikacji Modern POS i wybierz opcję **Wykonaj operacje bez użycia szuflady**.
 11. Uruchom operację **Zarządzaj stacjami sprzętowymi**.
 
@@ -546,7 +556,8 @@ Tej konfiguracji można używać na wszystkich urządzeniach klienckich programu
 16. Po sparowaniu wszystkich wymaganych stacji sprzętowych kliknij przycisk **Zamknij**.
 17. Na stronie wyboru stacji sprzętowej kliknij ostatnio zaznaczoną stację sprzętową, aby ją uaktywnić. 
 
-**Uwaga:** Jeśli urządzenia często używają różnych stacji sprzętowych, zaleca się skonfigurowanie w programie Modern POS monitowania kasjerów o wybór stacji przy rozpoczynaniu procesu płacenia. Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Rejestry**. Zaznacz kasę, a następnie w opcji **Wybierz przy płatności** ustaw wartość **Tak**. Użyj harmonogramu dystrybucji **1090**, aby zsynchronizować zmiany z bazą danych kanału.
+> [!NOTE]
+> Jeśli urządzenia często używają różnych stacji sprzętowych, zaleca się skonfigurowanie w programie Modern POS monitowania kasjerów o wybór stacji przy rozpoczynaniu procesu płacenia. Kliknij kolejno opcje **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Rejestry**. Zaznacz kasę, a następnie w opcji **Wybierz przy płatności** ustaw wartość **Tak**. Użyj harmonogramu dystrybucji **1090**, aby zsynchronizować zmiany z bazą danych kanału.
 
 ## <a name="extensibility"></a>Możliwości rozszerzania
 Aby uzyskać informacje na temat scenariuszy rozszerzania stacji sprzętowej, zobacz [Możliwości rozszerzania stacji sprzętowych](dev-itpro/hardware-station-extensibility.md).
@@ -554,12 +565,14 @@ Aby uzyskać informacje na temat scenariuszy rozszerzania stacji sprzętowej, zo
 ## <a name="security"></a>Zabezpieczenia
 Zgodnie z obowiązującymi standardami zabezpieczeń w środowisku produkcyjnym należy stosować ustawienia wymienione poniżej. 
 
-**Uwaga:** Instalator stacji sprzętowej automatycznie wprowadzi te modyfikacje rejestru w ramach procesu instalacji.
-
+### <a name="hardware-station-installer"></a>Instalator stacji sprzętowej
+Instalator stacji sprzętowej automatycznie wprowadzi te modyfikacje rejestru w ramach procesu instalacji.
+ 
 -   Należy wyłączyć protokół Secure Sockets Layer (SSL).
 -   Należy włączyć i używać tylko protokołu Transport Layer Security (TLS) w wersji 1.2 (lub aktualnie najnowszej wersji). 
 
-**Uwaga:** Domyślnie protokół SSL i wszystkie wersje protokołu TLS, z wyjątkiem TLS 1.2, są wyłączone. Aby edytować lub włączyć te wartości, wykonaj następujące kroki:
+### <a name="ssl-and-tls"></a>SSL i TLS
+Domyślnie protokół SSL i wszystkie wersje protokołu TLS, z wyjątkiem TLS 1.2, są wyłączone. Aby edytować lub włączyć te wartości, wykonaj następujące kroki:
     1.  Naciśnij klawisz z logo systemu Windows i klawisz R, aby otworzyć okno **Uruchamianie**.
     2.  W polu **Otwórz** wpisz **Regedit**, a następnie kliknij przycisk **OK**.
     3.  Jeśli zostanie wyświetlone okno komunikatu **Kontrola konta użytkownika**, kliknij przycisk **Tak**.
@@ -580,10 +593,11 @@ Zgodnie z obowiązującymi standardami zabezpieczeń w środowisku produkcyjnym 
 -   Funkcja współużytkowania zasobów między źródłami musi być wyłączona i określać dozwolone źródła, które są akceptowane.
 -   Do uzyskiwania certyfikatów, które będą używane na komputerach ze stacją sprzętową, powinny być wykorzystywane tylko zaufane urzędy certyfikacji.
 
-**Uwaga:** Bardzo ważne jest, aby się wcześniej zapoznać z wytycznymi dotyczącymi zabezpieczeń usług IIS oraz wymaganiami organizacji Payment Card Industry (PCI).
+> [!NOTE]
+> Bardzo ważne jest, aby się wcześniej zapoznać z wytycznymi dotyczącymi zabezpieczeń usług IIS oraz wymaganiami organizacji Payment Card Industry (PCI).
 
 ## <a name="peripheral-simulator"></a>Symulator urządzeń peryferyjnych
-Aby uzyskać więcej informacji, zobacz [Symulator urządzeń peryferyjnych dla Retail](dev-itpro/retail-peripheral-simulator.md).
+Aby uzyskać więcej informacji, zobacz [Symulator urządzeń peryferyjnych dla Commerce](dev-itpro/retail-peripheral-simulator.md).
 
 ## <a name="microsoft-tested-peripheral-devices"></a>Urządzenia peryferyjne przetestowane przez Microsoft
 ### <a name="ipc-built-in-hardware-station"></a>Stacja sprzętowa z funkcją IPC (wbudowana)
@@ -736,7 +750,10 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu dedyko
 
 ### <a name="shared-iis-hardware-station"></a>Wspólna stacja sprzętowa z usługami IIS
 
-Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspólnej stacji sprzętowej z usługami IIS oraz programów Modern POS for Windows i Cloud POS. **Uwaga:** Obsługiwane są tylko drukarki, terminale płatnicze i szuflady kasowe.
+Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspólnej stacji sprzętowej z usługami IIS oraz programów Modern POS for Windows i Cloud POS. 
+
+> [!NOTE]
+> Obsługiwane są tylko drukarki, terminale płatnicze i szuflady kasowe.
 
 #### <a name="printer"></a>Drukarka
 
@@ -793,7 +810,7 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
 **Rozwiązanie:** Poniżej przedstawiono niektóre typowe przyczyny tego problemu:
 
 -   Upewnij się, że narzędzia konfiguracji sterowników innych urządzeń są zamknięte. Jeśli te narzędzia są otwarte, mogą uniemożliwiać aplikacji Modern POS lub stacji sprzętowej rezerwowanie urządzenia.
--   Jeśli urządzenie peryferyjne sieci sprzedaży jest współużytkowane przez wiele urządzeń w punkcie sprzedaży, upewnij się, że należy do jednej z poniższych kategorii:
+-   Jeśli urządzenie peryferyjne jest współużytkowane przez wiele urządzeń w punkcie sprzedaży, upewnij się, że należy do jednej z poniższych kategorii:
     -   Szuflada kasowa
     -   Drukarka paragonów
     -   Terminal płatniczy 
@@ -817,6 +834,6 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Symulator urządzeń peryferyjnych dla modułu Handel detaliczny](dev-itpro/retail-peripheral-simulator.md)
+[Symulator urządzeń peryferyjnych dla Commerce](dev-itpro/retail-peripheral-simulator.md)
 
 

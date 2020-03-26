@@ -3,7 +3,7 @@ title: Alokacja danych na potrzeby planowania budżetu
 description: W tym temacie opisano różne metody alokacji dostępne w Microsoft Dynamics 365 Finance oraz sposoby ich wykorzystywania.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,23 +18,26 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ceddeda5760d961568d58e7e4805955ea972c586
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772083"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106889"
 ---
 # <a name="budget-planning-data-allocation"></a>Alokacja danych na potrzeby planowania budżetu
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano różne metody alokacji dostępne w Microsoft Dynamics 365 Finance oraz sposoby ich wykorzystywania.  
+W tym temacie opisano różne metody alokacji dostępne w Microsoft Dynamics 365 Finance oraz sposoby ich wykorzystywania.  
 
 Dane planu budżetu można dystrybuować na wiele sposobów, by dokładnie odzwierciedlić przewidywane kwoty.
 
 ## <a name="allocation-methods"></a>Metody alokacji
 Za pomocą trzech metod alokacji (Alokuj między okresami, Alokuj do wymiarów i Użyj reguł alokacji księgi) można utworzyć wiersze planu budżetu oparte na wierszach w tym samym planie budżetu. Za pomocą trzech innych metod (Agreguj, Dystrybuuj i Kopiuj z planu budżetu) można utworzyć wiersze planu budżetu w innych planach budżetu. We wszystkich sześciu metodach alokacji można określić scenariusza docelowy. Scenariusz docelowy może być albo taki sam jak scenariusz źródłowy lub inny od scenariusza źródłowego. Ponadto można określić, czy nowe wiersze są dołączane do planu budżetu czy zastępują bieżące wiersze planu budżetu.
+
+> [!NOTE] 
+> W celu agregacji, który jest inny niż scenariusz używany do dystrybucji lub innych modyfikacji wykonanych wcześniej w planie nadrzędnym, należy używać unikatowego scenariusza.  
 
 [![Alokacja między okresami metodą alokacji](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Alokuj między okresami** — Kategoria alokacji okresu jest używana do alokacji wierszy planu budżetu ze źródłowego scenariusza planu budżetu między okresy w scenariuszu docelowym. Kwota źródłowa jest przypisywana do wielu wierszy w scenariuszu docelowym na podstawie wartości procentowej i danych zdefiniowanych w kategorii alokacji okresu.         

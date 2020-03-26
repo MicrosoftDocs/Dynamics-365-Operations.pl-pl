@@ -16,14 +16,16 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5e2989906c5aa3ead9e46b8ed5333e880e5cf1c6
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 10795c90cb90961c17a4326b71ed43dc72039f2b
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769954"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117432"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Importowanie plików w formacie XML z opcjonalnymi atrybutami
+
+[!include [banner](../includes/banner.md)]
 
 Można zaprojektować formaty raportów elektronicznych ER w taki sposób, aby analizowały przychodzące dokumenty elektroniczne w formacie XML. Niektóre atrybuty elementów XML można określać w zaprojektowanym formacie ER jako opcjonalne. Pozwoli to na prawidłową obsługę przychodzących plików z takimi atrybutami XML lub bez nich. Następnie można użyć zawartości tych plików do aktualizacji danych aplikacji.
 
@@ -52,17 +54,17 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli administratora systemu
 7. Kliknij przycisk **Dodaj**.
 8. Kliknij przycisk **Nowy** aby otworzyć rozwijane okno dialogowe.
 9. W polu **Nazwa** wpisz „Lista”.
-10. W polu **Kod przedmiotu** wybierz **Lista tabel**.
-11. Kliknij przycisk **Dodaj**.
-12. Kliknij przycisk **Nowy** aby otworzyć rozwijane okno dialogowe.
-13. W polu **Nazwa** wpisz „Kod”.
-14. W polu **Typ przedmiotu** wybierz **Ciąg**.
-15. Kliknij przycisk **Dodaj**.
-16. Kliknij przycisk **Zapisz**.
-17. Zamknij stronę.
-18. Kliknij przycisk **Zmień stan**.
-19. Kliknij przycisk **Wykonaj.**
-20. Kliknij przycisk **OK**.
+10.    W polu **Kod przedmiotu** wybierz **Lista tabel**.
+11.    Kliknij przycisk **Dodaj**.
+12.    Kliknij przycisk **Nowy** aby otworzyć rozwijane okno dialogowe.
+13.    W polu **Nazwa** wpisz „Kod”.
+14.    W polu **Typ przedmiotu** wybierz **Ciąg**.
+15.    Kliknij przycisk **Dodaj**.
+16.    Kliknij przycisk **Zapisz**.
+17.    Zamknij stronę.
+18.    Kliknij przycisk **Zmień stan**.
+19.    Kliknij przycisk **Wykonaj.**
+20.    Kliknij przycisk **OK**.
 
 ## <a name="create-a-format-for-data-import"></a>Tworzenie formatu importu danych
 1. Kliknij przycisk **Utwórz konfigurację**, aby otworzyć rozwijane okno dialogowe.
@@ -81,32 +83,32 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli administratora systemu
 7. W drzewie zaznacz element **XML\Element**.
 8. W polu **Nazwa** wpisz „dokument”.
 9. W polu **Wielość** wybierz opcję **Jeden wiele**.
-10. Kliknij przycisk **OK**.
-11. W drzewie wybierz **element główny\dokument**.
-12. Kliknij przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.
-13. W drzewie zaznacz element **XML\Atrybut**.
-14. W polu **Nazwa** wpisz „id”.
-15. Kliknij przycisk **OK**.
-16. Kliknij przycisk **Zapisz**.
+10.    Kliknij przycisk **OK**.
+11.    W drzewie wybierz **element główny\dokument**.
+12.    Kliknij przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.
+13.    W drzewie zaznacz element **XML\Atrybut**.
+14.    W polu **Nazwa** wpisz „id”.
+15.    Kliknij przycisk **OK**.
+16.    Kliknij przycisk **Zapisz**.
 
 ## <a name="design-a-format-mapping-to-save-parsed-information-to-data-model"></a>Umożliwia zaprojektowanie mapowania formatu w celu zapisania przeanalizowanej informacji w modelu danych
-1.  Kliknij opcję **Mapuj format na model**.
-2.  Kliknij przycisk **Nowy**.
-3.  W polu **Definicja** wprowadź lub wybierz wartość.
-4.  W polu **Nazwa** wpisz „mapowanie”.
-5.  Kliknij przycisk **Zapisz**.
-6.  Kliknij przycisk **Konstruktor**.
-7.  W drzewie rozwiń węzeł **format**.
-8.  W drzewie rozwiń **format\root: XML Element(root)**.
-9.  W drzewie wybierz **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-10. Kliknij **Powiąż**.
-11. W drzewie rozwiń **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-12. W drzewie wybierz **format\root: XML Element(root)\document: XML Element 1..* (dokument)\identyfikator**.
-13. W drzewie rozwiń węzeł **List = format.root.document**.
-14. W drzewie wybierz **List = format.root.document\Code**.
-15. Kliknij opcję **Powiąż**.
-16. Kliknij przycisk **Zapisz**.
-17. Zamknij stronę.
+1.    Kliknij opcję **Mapuj format na model**.
+2.    Kliknij przycisk **Nowy**.
+3.    W polu **Definicja** wprowadź lub wybierz wartość.
+4.    W polu **Nazwa** wpisz „mapowanie”.
+5.    Kliknij przycisk **Zapisz**.
+6.    Kliknij przycisk **Konstruktor**.
+7.    W drzewie rozwiń węzeł **format**.
+8.    W drzewie rozwiń **format\root: XML Element(root)**.
+9.    W drzewie wybierz **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+10.    Kliknij **Powiąż**.
+11.    W drzewie rozwiń **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+12.    W drzewie wybierz **format\root: XML Element(root)\document: XML Element 1..* (dokument)\identyfikator**.
+13.    W drzewie rozwiń węzeł **List = format.root.document**.
+14.    W drzewie wybierz **List = format.root.document\Code**.
+15.    Kliknij opcję **Powiąż**.
+16.    Kliknij przycisk **Zapisz**.
+17.    Zamknij stronę.
 
 ## <a name="run-format-mapping"></a>Uruchom mapowanie formatu
 1. Kliknij przycisk **Uruchom.**

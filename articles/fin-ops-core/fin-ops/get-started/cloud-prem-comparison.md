@@ -3,7 +3,7 @@ title: Porównanie funkcji w chmurze i lokalnych
 description: Ten temat przedstawia funkcje obsługiwane w chmurze i lokalnie.
 author: sericks007
 manager: AnnBe
-ms.date: 02/24/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: a918d9fa1ad7ed5adcbb1d056bb8cc3306507aec
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: 50ab5827f864b53137acb77e75055e995ea6f439
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081977"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100289"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Porównanie funkcji w chmurze i lokalnych
 
@@ -97,7 +97,7 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 | Integracja danych i zarządzanie nimi      |                                                                                           | Tak       | Tak             |
 |                                      | Rozszerzenie oparte na konfiguracji                                                            | Tak       | Nr              |
 |                                      | Eksport danych do własnego magazynu danych                                                    | Tak       | Tak             |
-|                                      | Włączenie eksportu aktualizacji przyrostowych do jednostki danych                                 | Tak       | Nie              |
+|                                      | Włączenie eksportu aktualizacji przyrostowych do jednostki danych                                 | Tak       | Tak              |
 |                                      | Integracje danych                                                                         | Tak       | Tak             |
 | Zarządzanie dokumentami                  |                                                                                           | Tak       | Tak             |
 | Pomoc                                 |                                                                                           | Tak       | Nie              |

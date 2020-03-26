@@ -1,9 +1,9 @@
 ---
-title: Zarządzanie wynikami rekomendacji produktów na podstawie plików AI-ML
+title: Dostosowanie wyników rekomendacji produktów na podstawie plików AI-ML
 description: W tym temacie wyjaśniono sposób dostosowywania wyników propozycji produktów na podstawie sztucznej inteligencji dotyczącej wywiadu (AI-ML) w firmie.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5da77f71fb2569adc011bb9ee9c8c795d85545f8
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 4631ef03e1d73b70d80e774d1efa4909e619bbc0
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025009"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127935"
 ---
-# <a name="manage-ai-ml-based-product-recommendation-results"></a>Zarządzanie wynikami rekomendacji produktów na podstawie plików AI-ML
+# <a name="adjust-ai-ml-based-product-recommendation-results"></a>Dostosowanie wyników rekomendacji produktów na podstawie plików AI-ML
 
 
 [!include [banner](includes/banner.md)]
@@ -102,10 +102,22 @@ Aby ręcznie dodać lub usunąć wyniki dla produktu początkowego, należy wyko
 
 [Omówienie rekomendacji produktów](product-recommendations.md)
 
-[Włączanie rekomendacji produktów](enable-product-recommendations.md)
+[Włączanie ADLS w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
 
-[Włącz spersonalizowane rekomendacje](personalized-recommendations.md)
+[Włącz rekomendacje produktów](enable-product-recommendations.md)
 
-[Dodawanie list rekomendacji produktów do stron](add-reco-list-to-page.md)
+[Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md)
 
-[Omówienie modułu kolekcji produktów](product-collection-module-overview.md)
+[Rezygnowanie z rekomendacji spersonalizowanych](personalization-gdpr.md)
+
+[Dodawanie list rekomendacji produktów do witryny handlu elektronicznego](add-reco-list-to-page.md)
+
+[Dodawanie rekomendacji produktu w punkcie sprzedaży](product.md)
+
+[Dodawanie rekomendacji do ekranu transakcji](add-recommendations-control-pos-screen.md)
+
+[Ręczne tworzenie zaleceń pod opieką](create-editorial-recommendation-lists.md)
+
+[Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
+
+[Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)

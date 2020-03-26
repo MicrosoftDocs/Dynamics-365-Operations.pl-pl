@@ -18,17 +18,17 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 28b034c9b2a2c7ae63b055338dea3aab4a3b86f2
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0c561c39dfcbfa739c5a22394c05191e7f9bc107
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023641"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127705"
 ---
 # <a name="cash-management-improvements"></a>Ulepszenia w zakresie zarządzania gotówką
 
 [!include [banner](includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 Zarządzanie gotówką jest kluczową funkcją dla sprzedawców detalicznych w sklepach fizycznych. Sklepy detaliczne chcą mieć systemy, które zapewnią im pełną identyfikowalność i możliwość rozliczania gotówki i jej przepływów między różnymi kasami i kasjerami w sklepie. Muszą oni być w stanie uzgodnić wszelkie różnice i określić odpowiedzialność.
 

@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Funkcje wymienione w tym temacie są dostępne dla wybranych użytkowników w ramach wydania wersji zapoznawczej. Zawartość oraz funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Aktualizacje do jednej wersji usługi — często zadawane pytania](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+> Funkcje wymienione w tym temacie są dostępne w ramach wydania wersji zapoznawczej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Aktualizacje do jednej wersji usługi — często zadawane pytania](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version).

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 326d9375670cb4f4990a4f7070bf923a28b2c025
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179445"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106866"
 ---
 # <a name="process-collection-letters"></a>Przetwarzanie ponagleń
 
@@ -70,7 +70,11 @@ W tym temacie pokazano sposób tworzenia, drukowania i księgowania ponagleń. W
     1. W polu **Wydrukowane** wybierz opcję.
 
 ## <a name="control-collection-letters-at-the-customer-level"></a>Kontrolowanie arkuszy ponagleń na poziomie odbiorcy
-Można też skonfigurować ponaglenia na poziomie odbiorcy, aby kod ponaglenia dla każdej transakcji był śledzony, ale przetwarzanie ponaglenia opierało się na jednym poziomie ponaglenia zapisanego dla danego odbiorcy. Pojedyncze ponaglenie będzie zawierało wszystkie transakcje, które są zaległe dla odbiorcy. Ponieważ liczba dni prolongaty jest teraz śledzona na poziomie odbiorcy, następne ponaglenie nie zostanie wysłane aż do upłynięcia dni prolongaty dla następnego ponaglenia w sekwencji, nawet jeśli transakcje staną się zaległe od momentu wysłania ostatniego ponaglenia. Ta opcja zmniejsza liczbę ponagleń wysyłanych do odbiorcy. 
+Jeśli ponaglenia są skonfigurowane na poziomie transakcji, dla odbiorcy może być generowanych wiele listów na podstawie przedawnienia transakcji. Jeśli transakcje są wyświetlane w różnych sekwencjach listów, dla każdej grupy transakcji zaległych dla odbiorcy zostaną wygenerowane oddzielne ponaglenia. W związku z tym pojedynczy odbiorca może na przykład uzyskać jedno ponaglenie dla transakcji, które są zaległe 60 dni i inne ponaglenie dla transakcji, które są zaległe 90 dni. 
+
+Każde ponaglenie jest również skojarzone z kodem ponaglenia. Kod ponaglenia jest skojarzony z poszczególnymi transakcjami i jest używany do ustalania, kiedy dla każdej transakcji ma być generowane następne ponaglenie. Jeśli na przykład transakcja jest opóźniona ponad 30 dni, kod ponaglenia określa, że następne ponaglenie zostanie wysłane, gdy transakcja będzie opóźniona przez 60 dni, jeśli nie zostanie do tego czasu zaksięgowana. 
+
+Ponaglenia można również skonfigurować na poziomie odbiorcy. W takim przypadku kod ponaglenia dla każdej transakcji jest śledzony, ale przetwarzanie ponaglenia będzie opierało się na jednym poziomie ponaglenia zapisanego dla danego odbiorcy. Pojedyncze ponaglenie będzie zawierało wszystkie transakcje, które są zaległe dla odbiorcy. Ponieważ liczba dni prolongaty jest teraz śledzona na poziomie odbiorcy, następne ponaglenie nie zostanie wysłane aż do upłynięcia dni prolongaty dla następnego ponaglenia w sekwencji, nawet jeśli transakcje staną się zaległe od momentu wysłania ostatniego ponaglenia. Ta opcja pomaga zmniejszać liczbę ponagleń, które muszą być wysłane do każdego odbiorcy.
 
 ### <a name="set-up-the-customer-to-control-collection-letters-at-the-customer-level"></a>Konfigurowanie odbiorcy do kontrolowania arkuszy ponagleń na poziomie odbiorcy
 1.  Przejdź do **Okienko nawigacji > Moduły > Kredyty i windykacja > Ustawienia > Parametry modułu rozrachunków z odbiorcami** i wybierz kartę **Windykacje**. 

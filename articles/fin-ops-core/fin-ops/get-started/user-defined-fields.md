@@ -1,9 +1,9 @@
 ---
 title: Tworzenie pól niestandardowych i praca z nimi
-description: W tym temacie opisano, jak usługa pozwala niektórym użytkownikom tworzyć niestandardowe pola w celu dostosowania aplikacji do unikatowych potrzeb firmy.
+description: W tym temacie opisano, jak tworzyć niestandardowe pola za pomocą interfejsu użytkownika w celu dostosowania aplikacji do unikatowych potrzeb firmy.
 author: jasongre
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 9146921c47e89c5895a1a727de874b0ffbc93c37
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f689bb3ec844459d1dd6e199804a30f3e0cb38bc
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812512"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112343"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Tworzenie pól niestandardowych i praca z nimi
 
 [!include [banner](../includes/banner.md)]
 
-Zawiera już w standardzie rozbudowany zestaw pól do zarządzania różnorodnymi procesami biznesowymi, ale czasami firma musi śledzić dodatkowe informacje w systemie. W reakcji na tę potrzebę można tworzyć niestandardowe pola w celu dostosowania aplikacji do specyfiki firmy, o ile tylko masz uprawnienia wobec tej funkcji.
+Zawiera już w standardzie rozbudowany zestaw pól do zarządzania różnorodnymi procesami biznesowymi, ale czasami firma musi śledzić dodatkowe informacje w systemie. Podczas gdy programiści mogą dodawać te pola jako rozszerzenia w narzędziach programistycznych, funkcja pól niestandardowych umożliwia dodawanie pól bezpośrednio z interfejsu użytkownika, co pozwala na dostosowanie aplikacji do potrzeb firmy przy użyciu przeglądarki sieci Web.
 
-Opcja dodawania pól niestandardowych jest dostępna w aktualizacji platformy 13 i nowszych wersjach.
+Opcja dodawania pól niestandardowych jest dostępna w aktualizacji platformy 13 i nowszych wersjach. Tylko użytkownicy z uprawnieniami specjalnymi mają dostęp do tej funkcji.
 
 W tym nagraniu wideo przedstawiono, jak łatwe jest do dodawanie niestandardowego pola do strony: [Dodawanie pól niestandardowych](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -159,3 +159,7 @@ Ze względów wydajnościowych i technicznych obecnie pola niestandardowe można
 - Tabela nie może być rozszerzeniem innej tabeli.
 - Tabela nie może być oznaczona jako systemowa.
 - Tabela nie może być tymczasowa.
+
+### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Czy mogę odwoływać się do niestandardowych pól z poziomu narzędzi deweloperskich?  
+
+Pola niestandardowe mogą być zarządzane tylko za pośrednictwem interfejsu użytkownika i nie może odwoływać się do niego kod. 

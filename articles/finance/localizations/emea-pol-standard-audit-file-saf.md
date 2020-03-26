@@ -18,12 +18,12 @@ ms.search.region: Poland
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8e4f0d58baf5edc899a59be33c506e4e53d54cd7
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a813c045998dea88334910f1191ee81ebcbcd70a
+ms.sourcegitcommit: 0681a00d60c9f8cc8f7b9888b8c5ddf07279fc04
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772834"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3131748"
 ---
 # <a name="standard-audit-file-saf-for-poland"></a>Standardowy plik audytu (SAF) dla Polski
 
@@ -313,7 +313,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="3"><strong>IntraEUGoods</strong></td>
+<td rowspan="4"><strong>IntraEUGoods</strong></td>
 <td>10801</td>
 <td>Sprzedaż wolna od podatku</td>
 <td>K_21</td>
@@ -324,6 +324,12 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>Import opodatkowany</td>
 <td>K_23</td>
 <td>+</td>
+</tr>
+<tr>
+<td>10811</td>
+<td>Sprzedaż opodatkowana (opłata zwrotna)</td>
+<td>K_23</td>
+<td>-</td>
 </tr>
 <tr>
 <td>10812</td>

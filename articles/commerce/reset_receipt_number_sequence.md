@@ -3,7 +3,7 @@ title: Resetuj numery paragonów
 description: W tym temacie opisano sposób resetowania numerów paragonów używanych dla różnych akcji w pożądanym dniu (na przykład rok obrachunkowy lub rok kalendarzowy).
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,17 +19,17 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: e81ff86a8b8a4dca6b14a21d6e982b03a928d29e
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: fc719348f94ff4a1fb7b4ac96f6f617872c9af92
+ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020085"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3123953"
 ---
 # <a name="reset-receipt-numbers"></a>Resetuj numery paragonów 
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Detaliści generują numery paragonów dla różnych akcji w sklepie, takich jak transakcje pieniężne i przeniesienia, transakcje zwrotu, zamówienia odbiorcy, oferty i płatności. Chociaż detaliści definiują własne formaty paragonów, w niektórych krajach lub regionach obowiązują przepisy nakładające ograniczenia dotyczące tych formatów paragonów. Na przykład te rozporządzenia mogą ograniczać liczbę znaków na paragonie, wymagać kolejnych numerów paragonów, ograniczać niektóre znaki specjalne lub wymagać resetowania numerów paragonów na początku roku. Microsoft Dynamics 365 Commerce oferuje bardzo elastyczny proces zarządzania numerami paragonów, aby ułatwić detalistom spełnienie wymagań prawnych. W tym temacie opisano sposób korzystania z funkcji resetowania numerów paragonów.
 

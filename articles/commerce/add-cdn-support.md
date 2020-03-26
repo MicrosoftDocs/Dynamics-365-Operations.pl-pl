@@ -3,7 +3,7 @@ title: Dodaj obsługę dla sieci dostarczania zawartości (CDN)
 description: W tym temacie opisano, jak dodać sieć dostarczania treści (CDN) do środowiska Microsoft Dynamics 365 Commerce.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: bf5a0da2803f985e6c0c04dd9916977397173d11
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 23ac9d8844c2a8ae20bd316c40078319601a3a4d
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001629"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096732"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Dodaj obsługę dla sieci dostarczania zawartości (CDN)
 
@@ -144,12 +144,20 @@ Sieć CDN powinna być teraz poprawnie skonfigurowana, aby można było jej uży
 
 [Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
 
+[Konfigurowanie kanału sklepu internetowego](online-stores.md)
+
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
 [Kojarzenie witryny online z kanałem](associate-site-online-store.md)
 
 [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
+[Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+
+[Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
+
 [Konfigurowanie stron niestandardowych do logowań użytkowników](custom-pages-user-logins.md)
+
+[Konfigurowanie wielu dzierżawców B2C w środowisku Commerce](configure-multi-B2C-tenants.md)
 
 [Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)

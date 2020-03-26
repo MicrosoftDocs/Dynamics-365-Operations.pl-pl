@@ -1,6 +1,6 @@
 ---
-title: Obsługa wstrzymania kredytu zamówień sprzedaży
-description: ''
+title: Wstrzymania kredytu dla zamówień sprzedaży
+description: W tym temacie opisano ustawienia reguł używanych do umieszczania wstrzymania kredytu zamówienia sprzedaży.
 author: mikefalkner
 manager: AnnBe
 ms.date: 01/25/2019
@@ -9,25 +9,23 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschloma
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 8a0e006be8a72f35d6c6009ca9d67d083b8fac89
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057677"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124261"
 ---
-# <a name="credit-holds-for-sales-orders"></a>Obsługa wstrzymania kredytu zamówień sprzedaży
+# <a name="credit-holds-for-sales-orders"></a>Wstrzymania kredytu dla zamówień sprzedaży
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-
-W tym temacie opisano ustawienia reguł używanych do umieszczania wstrzymania kredytu zamówienia sprzedaży. Reguły blokowania zarządzania kredytami mogą dotyczyć pojedynczego odbiorcy lub grupy odbiorców.  Reguły blokowania definiują odpowiedzi na następujące okoliczności:
+W tym temacie opisano ustawienia reguł używanych do umieszczania wstrzymania kredytu zamówienia sprzedaży. Reguły blokowania zarządzania kredytami mogą dotyczyć pojedynczego odbiorcy lub grupy odbiorców. Reguły blokowania definiują odpowiedzi na następujące okoliczności:
 
 1. Liczba zaległych dni
 2. Stan kont
@@ -87,9 +85,9 @@ Otwórz kartę **Wygasł limit kredytu**, jeśli reguła blokowania dotyczy odbi
    - Wybierz **Wszyscy** jeśli zasada dotyczy wszystkich odbiorców. 
 3. Wybierz **Grupę ryzyka**, aby dodatkowo ograniczyć listę odbiorców, którzy będą umieszczani w wstrzymaniu zarządzania kredytami. 
 4. Służy do wybierania typu reguły, dla której wprowadzane są ustawienia. 
-  - Wybierz **Blokowanie**, aby spowodować utworzenie reguły blokującej zamówienie. 
-  - Wybierz **Wykluczenie**, aby stworzyć reguły, która będzie wykluczać inną regułę z zablokowania zamówienia. 
-6. Należy wprowadzić **Dni po wygaśnięciu limitu kredytu** dla wybranej reguły blokowania, zanim zamówienie zostanie umieszczone w wstrzymaniu zarządzania kredytem. Liczba zaległych dni reprezentuje dodatkowe dni prolongaty, które są dodawane do liczby dni po upłynięciu limitu kredytu.
+   - Wybierz **Blokowanie**, aby spowodować utworzenie reguły blokującej zamówienie. 
+   - Wybierz **Wykluczenie**, aby stworzyć reguły, która będzie wykluczać inną regułę z zablokowania zamówienia. 
+5. Należy wprowadzić **Dni po wygaśnięciu limitu kredytu** dla wybranej reguły blokowania, zanim zamówienie zostanie umieszczone w wstrzymaniu zarządzania kredytem. Liczba zaległych dni reprezentuje dodatkowe dni prolongaty, które są dodawane do liczby dni po upłynięciu limitu kredytu.
 
 ### <a name="overdue-amount"></a>Zaległa kwota
 
@@ -104,11 +102,10 @@ Otwórz kartę **Zaległa kwota**, jeśli reguła blokowania dotyczy odbiorców 
    - Wybierz **Wszyscy** jeśli zasada dotyczy wszystkich odbiorców. 
 3. Wybierz **Grupę ryzyka**, aby dodatkowo ograniczyć listę odbiorców, którzy będą umieszczani w wstrzymaniu zarządzania kredytami. 
 4. Służy do wybierania typu reguły, dla której wprowadzane są ustawienia. 
-  - Wybierz **Blokowanie**, aby spowodować utworzenie reguły blokującej zamówienie. 
-  - Wybierz **Wykluczenie**, aby stworzyć reguły, która będzie wykluczać inną regułę z zablokowania zamówienia. 
+   - Wybierz **Blokowanie**, aby spowodować utworzenie reguły blokującej zamówienie. 
+   - Wybierz **Wykluczenie**, aby stworzyć reguły, która będzie wykluczać inną regułę z zablokowania zamówienia. 
 5. Należy wprowadzić **Zaległa kwota** dla wybranej reguły blokowania, zanim zamówienie zostanie umieszczone w wstrzymaniu zarządzania kredytem do przeglądu. 
-6. Umożliwia wybranie **Typu wartości** określającego typ wartości, który zostanie użyty do sprawdzenia, jaka część limitu kredytu została użyta. Reguły blokowania wymagają wartości procentowej, ale wykluczenie może mieć stałą kwotę lub procent.
-Próg. Próg odnosi się do limitu kredytu.
+6. Umożliwia wybranie **Typu wartości** określającego typ wartości, który zostanie użyty do sprawdzenia, jaka część limitu kredytu została użyta. Reguły blokowania wymagają wartości procentowej, ale wykluczenie może mieć stałą kwotę lub procent. Próg odnosi się do limitu kredytu.
 7. Umożliwia wprowadzenie **wartości progowej limitu kredytu** dla wybranej reguły przed przejściem odbiorcy do wstrzymania zarządzania kredytem. Może to być kwota lub wartość procentowa na podstawie typu wartości, który można wybrać w polu Typ wartości.
 8. Reguła sprawdza, czy **zaległa kwota** została przekroczona i czy przekroczono **próg limitu kredytu**. 
 
@@ -125,9 +122,9 @@ Wybierz **Zamówienie sprzedaży**, jeśli reguła blokowania ma zastosowanie do
    - Wybierz **Wszyscy** jeśli zasada dotyczy wszystkich odbiorców. 
 3. Wybierz **Grupę ryzyka**, aby dodatkowo ograniczyć listę odbiorców, którzy będą umieszczani w wstrzymaniu zarządzania kredytami. 
 4. Służy do wybierania typu reguły, dla której wprowadzane są ustawienia.  
-  - Wybierz **Blokowanie**, aby spowodować utworzenie reguły blokującej zamówienie. 
-  - Wybierz **Wykluczenie**, aby stworzyć reguły, która będzie wykluczać inną regułę z zablokowania zamówienia. 
-6. Należy wprowadzić **Kwota zamówienia sprzedaży** dla wybranej reguły blokowania, zanim zamówienie zostanie umieszczone w wstrzymaniu zarządzania kredytem. 
+   - Wybierz **Blokowanie**, aby spowodować utworzenie reguły blokującej zamówienie. 
+   - Wybierz **Wykluczenie**, aby stworzyć reguły, która będzie wykluczać inną regułę z zablokowania zamówienia. 
+5. Należy wprowadzić **Kwota zamówienia sprzedaży** dla wybranej reguły blokowania, zanim zamówienie zostanie umieszczone w wstrzymaniu zarządzania kredytem. 
 
 Reguła zamówienia sprzedaży zawiera dodatkowe ustawienie, które zastępuje wszystkie inne reguły. Aby utworzyć wykluczenie zwalniające zamówienie sprzedaży bez wpływu na inne reguły, zaznacz pole wyboru **Zwolnij zamówienie sprzedaży** w wierszu wykluczenia.
 
@@ -216,8 +213,8 @@ Po ponownym wyszukiwaniu przyczyn wstrzymania i ograniczeniu ich przyczyny możn
 2) Umożliwia wybranie **Przyczyny zwolnienia** zamówienia, które zostało wybrane do zwolnienia.  
 3) Wpisz **Data przeglądu** dla każdego zamówienia, które zostało wybrane do zwolnienia.  
 4) Wybierz menu **Zwolnij** w okienku akcji, aby zwolnić zamówienie. To menu będzie dostępne tylko po wybraniu transakcji. Użytkownik ma dwie opcje:
- - Wybierz opcję **przy księgowaniu**, aby usunąć wstrzymanie i zaksięgowanie dokumentu przy użyciu tego samego procesu księgowania, który był używany, gdy został on wstrzymany. Na przykład, jeśli potwierdzenie zamówienia sprzedaży zostało wstrzymane, potwierdzenie zamówienia sprzedaży zostanie zakończone po zwolnieniu. Zostanie wyświetlony formularz księgowania zamówienia sprzedaży, który pozwoli użytkownikowi na zaksięgowanie potwierdzenia.
- - Wybierz opcję **bez księgowania**, aby usunąć wstrzymanie bez wykonywania dalszego przetwarzania. Zamówienie sprzedaży można teraz ręcznie zaksięgować.
+   - Wybierz opcję **przy księgowaniu**, aby usunąć wstrzymanie i zaksięgowanie dokumentu przy użyciu tego samego procesu księgowania, który był używany, gdy został on wstrzymany. Na przykład, jeśli potwierdzenie zamówienia sprzedaży zostało wstrzymane, potwierdzenie zamówienia sprzedaży zostanie zakończone po zwolnieniu. Zostanie wyświetlony formularz księgowania zamówienia sprzedaży, który pozwoli użytkownikowi na zaksięgowanie potwierdzenia.
+   - Wybierz opcję **bez księgowania**, aby usunąć wstrzymanie bez wykonywania dalszego przetwarzania. Zamówienie sprzedaży można teraz ręcznie zaksięgować.
 
 ### <a name="rejecting-orders-in-the-hold-list"></a>Odrzucanie zamówień na liście blokad
 Aby odrzucić zamówienie sprzedaży, można skorzystać z menu **Odrzuć** w okienku akcji

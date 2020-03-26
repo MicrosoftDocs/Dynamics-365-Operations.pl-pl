@@ -3,7 +3,7 @@ title: Parametry integracji aplikacji Project Service Automation
 description: W tym temacie wyjaśniono, jak skonfigurować sposób wprowadzania domyślnych danych podczas integrowania Microsoft Dynamics 365 for Project Service Automation z Microsoft Dynamics 365 Finance.
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,20 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: f7cef5384812e0dcb7d5e084ddd7668a7687a259
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cd09dad15112fd71bfd386e0072a77a4121c96e0
+ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174993"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096258"
 ---
 # <a name="project-service-automation-integration-parameters"></a>Parametry integracji z rozwiązaniem Project Service Automation
 
 [!include[banner](../includes/banner.md)]
 
 Na stronie **Parametry integracji aplikacji Project Service Automation** można skonfigurować sposób wprowadzania domyślnych danych podczas integrowania programu Dynamics 365 Project Service Automation z programem Dynamics 365 Finance. W celu pomyślnej synchronizacji projektów z rozwiązania Project Service Automation do rozwiązania Finance należy skonfigurować następujące pola:
+
+Aby otworzyć stronę **parametry integracji Project Service Automation**, przejdź do parametrów integracji **Zarządzanie projektami i ich księgowanie** \> **Ustawienia** \> **Dynamics 365 for Project Service Automation**. 
 
 > [!NOTE]
 > - Mechanizmy integracji zadań projektu, kategorii transakcji wydatkowych, szacunków godzin, szacunków wydatków i blokowania funkcji są dostępne w wersji 8.0.

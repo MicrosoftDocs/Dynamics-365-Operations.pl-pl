@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
-ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
+ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2957374"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117344"
 ---
 # <a name="business-document-management-overview"></a>Omówienie zarządzania dokumentami biznesowymi
+
+[!include [banner](../includes/banner.md)]
 
 Użytkownicy biznesowi używają platformy [Raportowanie elektroniczne (ER)](general-electronic-reporting.md), która umożliwia konfigurowanie formatów dokumentów wychodzących zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Użytkownicy mogą również zdefiniować przepływ danych w celu określenia, które dane aplikacji są umieszczane w wygenerowanych dokumentach. Struktura ER generuje dokumenty wychodzące w formatach Microsoft Office (skoroszyty programu Excel lub dokumenty programu Word) przy użyciu wstępnie zdefiniowanych szablonów. Szablony są wypełniane zgodnie z wymaganymi danymi, zgodnie z konfiguracją przepływu danych, podczas gdy wymagane dokumenty są generowane. Każdy skonfigurowany format może zostać opublikowany jako część rozwiązania ER w celu wygenerowania określonych dokumentów wychodzących. Ta funkcja jest reprezentowana przez konfigurację formatu ER, która może zawierać szablony, które mogą być używane do generowania różnych dokumentów wychodzących. Użytkownicy biznesowi mogą stosować tę strukturę do zarządzania wymaganymi dokumentami biznesowymi.
 
@@ -147,7 +149,7 @@ Aby uzyskać informacje dotyczące konfigurowania wymaganych parametrów zarząd
 
 ![Ustaw tyo dokumentu Zarządzania dokumentami](./media/BDM-Overview-DMSetting.png)
 
-### <a name="SetupBdmParameters">Konfigurowanie parametrów</a>
+### <a name=""></a><a name="SetupBdmParameters">Konfigurowanie parametrów</a>
 
 Do konfigurowania parametrów podstawowych zarządzania dokumentami biznesowymi służy strona parametry **Parametry dokumentu biznesowego**. Tylko określeni użytkownicy mają dostęp do strony. W tym:
 
@@ -158,7 +160,7 @@ Aby skonfigurować podstawowe parametry dla wszystkich firm, należy wykonać po
 
 1. Zaloguj się jako użytkownik z dostępem do strony **Parametry dokumentu biznesowego**.
 2. Przejdź do **Administrowanie organizacją** \> **Raportowanie elektroniczne** \> **Zarządzanie dokumentem biznesowym** \> **Parametry dokumentu biznesowego**.
-3.  Na stronie **Parametry dokumentu biznesowego** na karcie **Załączniki** w polu **SharePoint typu dokumentu** określ typ dokumentu, który ma być używany do tymczasowego przechowywania szablonów w formatach pakietu Office, podczas gdy są edytowane przy użyciu aplikacji klasycznych pakietu Office. 
+3.    Na stronie **Parametry dokumentu biznesowego** na karcie **Załączniki** w polu **SharePoint typu dokumentu** określ typ dokumentu, który ma być używany do tymczasowego przechowywania szablonów w formatach pakietu Office, podczas gdy są edytowane przy użyciu aplikacji klasycznych pakietu Office. 
 
 > [!NOTE]
 > Dla tego parametru są dostępne tylko typy dokumentów skonfigurowane przy użyciu lokalizacji SharePoint.
@@ -288,13 +290,13 @@ Otworzy się strona **Edytor szablonów BDM**. Wybrany szablon będzie dostępny
 
 ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="EditInOffice365">Edytuj szablon w Office 365</a>
+### <a name=""></a><a name="EditInOffice365">Edytuj szablon w Office 365</a>
 
 Szablony można modyfikować za pomocą Office 365. Na przykład w przypadku witryny Office Online w nagłówku szablonu należy zmienić czcionkę z pola **zwykły** na **pogrubiony**. Te zmiany są automatycznie przechowywane jako szablon edytowalny, który jest przechowywany w magazynie podstawowego szablonu (domyślnie magazyn obiektów BLOB systemu Azure). Jest to skonfigurowane dla struktury ER systemu.
 
 ![Strona edytora szablonów zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="EditInOfficeDesktopApp">Edytowanie szablonu w aplikacji pulpitu pakietu Office</a>
+### <a name=""></a><a name="EditInOfficeDesktopApp">Edytowanie szablonu w aplikacji pulpitu pakietu Office</a>
 
 > [!NOTE]
 > Ta funkcja jest dostępna tylko w przypadku, gdy parametr **Typ dokumentu SharePoint** jest poprawnie skonfigurowany. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie narzędzia integracji](#SetupBdmParameters).
@@ -398,7 +400,7 @@ Tak, można. W pierwszej sesji aplikacji wybierz opcję **Otwórz w aplikacji kl
 3. Na stronie **Edytor szablonów BDM** w pierwszej sesji aplikacji wybierz opcję **Synchronizuj kopię przechowywaną**.
 4. Wykonaj ten szablon formatu ER aplikacji w drugiej sesji aplikacji.
 
-#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Jest wyświetlany komunikat o błędzie „Wartość nie może być zerowa". Nazwa parametru: externalId’ po wybraniu **Otwórz w aplikacji klasycznej** Jak mogę to obejść? 
+#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Jest wyświetlany komunikat o błędzie „Wartość nie może być zerowa". Nazwa parametru: „externalId” po wybraniu **Otwórz w aplikacji klasycznej**. Jak mogę to obejść? 
 Najprawdopodobniej zalogowano się do bieżącego wystąpienia aplikacji w domenie Azure AD, które różnią się od domeny Azure AD, która została użyta do wdrożenia tego wystąpienia. Ponieważ usługa SharePoint, która jest używana do przechowywania szablonów do udostępniania ich do edycji za pomocą aplikacji klasycznych pakietu Office, należy do tej samej domeny, nie ma żadnych uprawnień dostępu do usługi SharePoint. Aby rozwiązać ten problem, zaloguj się do bieżącego wystąpienia, używając poświadczeń użytkownika z poprawną domeną Azure AD.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

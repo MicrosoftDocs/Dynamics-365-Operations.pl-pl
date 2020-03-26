@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie stawek
-description: ''
+description: W programie Microsoft Dynamics 365 Human Resources stawki decydują o tym, jaki udział w finansowaniu świadczeń mają pracodawcy i pracownicy.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a2626e9fc5f15bbdad0f6accf64bc4b211939ed0
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: f846dcd0a15424ac681dd7e6a229d9da445a54e1
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010260"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092414"
 ---
 # <a name="configure-rates"></a>Konfigurowanie stawek
 

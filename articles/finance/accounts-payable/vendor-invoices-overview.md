@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 411daa5bc08df530750fd5c09ca8b54bf537b548
-ms.sourcegitcommit: ba1c76497acc9afba85257976f0d4e96836871d1
+ms.openlocfilehash: 0cfa7d55f5d4d219c0bc43eb6313c0c6bd014ab6
+ms.sourcegitcommit: ac7c457bda3d8545ee8c0de45e4fcc24d677ffdc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2890334"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3133903"
 ---
 # <a name="vendor-invoices-overview"></a>Omówienie faktur od dostawców
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ten temat zawiera ogólne informacje o fakturach od dostawców. Faktur od dostawców są wnioskami o płatność za produkty i usługi, które zostały odebrane. Faktury od dostawców mogą dotyczyć usług świadczonych w sposób ciągły albo bazować na zamówieniach zakupu za określone towary i usługi.
 
@@ -44,7 +45,7 @@ Istnieje kilka sposobów wprowadzania danych faktury od dostawcy:
 - Wraz z pulą faktur od dostawcy rejestr faktur od dostawcy umożliwia szybkie wprowadzanie faktur do naliczania wydatku. Później można otworzyć powiązane zamówienia zakupu w celu zaksięgowania faktury na koncie wydatków.
 - Na stronach **Otwarte faktury od dostawcy** i **Oczekujące faktury od dostawcy** można utworzyć faktury od dostawcy z potwierdzonych zamówień zakupu.
 
-Poniżej znajdziesz więcej informacji o używaniu stron **Otwarte faktury od dostawcy** lub **Oczekujące faktury od dostawcy** do tworzenia faktury od dostawcy z zamówienia zakupu.
+Poniżej oferuje więcej informacji o używaniu stron **Otwarte faktury od dostawcy** lub **Oczekujące faktury od dostawcy** do tworzenia faktury od dostawcy z zamówienia zakupu.
 
 ## <a name="understanding-invoice-line-quantities"></a>Zrozumienie ilości w wierszach faktury
 
@@ -66,6 +67,16 @@ Do faktury od dostawcy można dodać wiersz, którego nie było w zamówieniu za
 
 Organizacja może używać przepływu pracy do zarządzania procesem przeglądu faktur od dostawców. Przegląd za pomocą przepływu pracy może być wymagany dla nagłówka faktury i/lub wiersza faktury. Formanty przepływu pracy są stosowane do nagłówka lub wiersza, w zależności od tego, gdzie był ustawiony fokus przed wybraniem formantu. Zamiast przycisku **Księguj** widoczny będzie przycisk **Prześlij**, który służy do wysyłania przez proces przeglądu faktury od dostawcy.
 
+### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Uniemożliwianie przesyłania faktury do przepływu pracy 
+
+Poniżej przedstawiono kilka sposobów uniemożliwiających przesłanie faktury do przepływu pracy.
+
+- **Suma faktury i zarejestrowana suma nie są równe**. Osoba, która przesłała fakturę, otrzyma alert informujący, że sumy nie są równe, aby mogły skorygować salda przed ponownym przesłaniem faktury do przepływu pracy. Ta funkcja jest dostępna, jeśli jest włączony parametr **Zabroń przesyłania do przepływu pracy w przypadku, jeśli suma faktury i zarejestrowana suma faktury nie są równe** na stronie **Zarządzanie funkcją**. 
+
+- **Faktura zawiera niealokowane opłaty**. Osoba, która przesłała fakturę, otrzyma alert informujący, że na fakturze znajdują się niezaalokowane opłaty, aby mogły skorygować fakturę przed ponownym przesłaniem jej do przepływu pracy. Ta funkcja jest dostępna, jeśli jest włączony parametr **Zabroń przesyłania do przepływu pracy w przypadku, jeśli na fakturze dla dostawcy znajdują się niezaalokowane opłaty** na stronie **Zarządzanie funkcją**.
+
+- **Faktura zawiera ten sam numer faktury co inna Zaksięgowana faktura**. Osoba, która przesłała fakturę, otrzyma alert informujący, że na fakturze znajdują się zduplikowane cyfry, aby mogły skorygować fakturę przed ponownym przesłaniem jej do przepływu pracy. Ten alert będzie wyświetlany, gdy parametr Rozrachunki z dostawcami oznaczony **Sprawdź użyty numer faktury** jest ustawiony na **Odrzuć duplikaty**. Ta funkcja jest dostępna, jeśli włączony jest parametr **Zabroń przesyłania do przepływu pracy w przypadku, jeśli numer faktury istnieje już na zaksięgowanej fakturze, a system nie jest ustawiony na zduplikowane numery faktur** na stronie **Zarządzanie funkcją**.  
+
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Uzgadnianie faktur od dostawców z dokumentami przyjęcia produktów
 
 Można wprowadzić i zapisać informacje o fakturach od dostawcy oraz uzgodnić wiersze faktur z wierszami dokumentów przyjęcia produktów. Można także uzgadniać ilości częściowe dla wiersza.
@@ -77,6 +88,16 @@ W momencie zaksięgowania faktury ilość **Pozostałe do zafakturowania** dla k
 Ta opcja zakłada, że przynajmniej jeden dokument przyjęcia produktów został zaksięgowany dla danego zamówienia zakupu. Faktura od dostawcy jest oparta na takich właśnie dokumentach przyjęcia produktów i odzwierciedla wielkości dostaw. Dane finansowe do faktury są oparte na informacjach wprowadzonych podczas księgowania faktury.
 
 Aby uzyskać więcej informacji, zobacz [Rejestrowanie faktury od dostawcy i porównywanie z przyjętą ilością](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md).
+
+## <a name="configure-an-automated-task-for-vendor-invoice-workflow-to-post-the-vendor-invoice-using-a-batch-job"></a>Skonfiguruj zadanie automatyczne dla przepływu pracy faktury od dostawcy w celu zaksięgowania faktury od dostawcy przy użyciu zadania wsadowego
+
+Do przepływu pracy faktury od dostawcy można dodać automatyczne zadanie księgowania, dzięki czemu faktury są przetwarzane w partii. Księgowanie faktur w partii pozwala na kontynuowanie procesu przepływu pracy bez konieczności oczekiwania na zakończenie księgowania, co zwiększa ogólną wydajność wszystkich zadań przesłanych do przepływu pracy.
+
+Aby zaksięgować fakturę od dostawcy w partii, na stronie **Zarządzanie funkcjami** włącz parametr **Księgowanie wsadowe faktur od dostawcy**. Przepływy pracy faktur od dostawcy są konfigurowane na podstawie **Rozrachunki z dostawcami > Ustawienia > Przepływy pracy dla rozrachunków z dostawcami**.
+
+Można zobaczyć zadanie **Księguj fakturę od dostawcy przy użyciu zadania wsadowego** w edytorze przepływu pracy bez względu na to, czy parametr funkcji **Księgowanie wsadowe faktur od dostawcy** jest włączony. Jeśli parametr funkcji nie jest włączony, faktura zawierająca **zaksięgowaną fakturę od dostawcy przy użyciu zadania wsadowego** nie będzie przetwarzana w przepływie pracy do momentu włączenia tego parametru. Zadanie **Faktura od dostawcy przy użyciu zadania wsadowego** nie może być używane w tym samym przepływie pracy , co zadanie automatycznego **księgowania faktur od dostawcy**. Ponadto zadanie **Księgowanie faktury dostawcy przy użyciu zadania wsadowego** powinno być ostatnim elementem w konfiguracji przepływu pracy.
+
+Można określić liczbę faktur do uwzględnienia w partii oraz liczbę godzin oczekiwania przed ponownym planowaniem partii, przechodząc do **Rozrachunków z dostawcami > Ustawienia > Parametry rozrachunków z dostawcami > Faktura > Przepływ pracy faktury**. 
 
 ## <a name="working-with-multiple-invoices"></a>Korzystanie z wielu faktur
 

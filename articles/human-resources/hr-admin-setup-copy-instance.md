@@ -1,6 +1,6 @@
 ---
 title: Kopiowanie wystąpienia
-description: ''
+description: Można skorzystać z usługi cyklu pomocy technicznej Microsoft Dynamics Lifecycle Services (usługi LCS), aby skopiować bazę danych firmy Microsoft Dynamics 365 Human Resources do środowiska piaskownicy (sandbox).
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0bbe325edb65cad0c1912e0a6ade559e5675dc58
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: bb363369994d99f358be0c23cdaf1dbc80b644e5
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010156"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092299"
 ---
 # <a name="copy-an-instance"></a>Kopiowanie wystąpienia
 
@@ -68,7 +68,7 @@ Aby wykonać to zadanie, najpierw należy skopiować instancję, a następnie za
 
 4. W okienku zadań **Kopiuj instancję** wybierz instancję, która ma zostać zastąpiona, a następnie wybierz **Kopiuj**. Poczekaj na zaktualizowanie wartości pola **Stan kopiowania** na **Zakończone**.
 
-   ![[Wybierz instancję do zastąpienia](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Wybierz wystąpienie do zastąpienia](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Wybierz **Power Platform**, zaloguj się do Centrum administracyjnego Microsoft Power Platform.
 

@@ -1,6 +1,6 @@
 ---
 title: Omówienie
-description: ''
+description: Ten przewodnik dewelopera zawiera informacje o interfejsie API i polach niestandardowych. Zawiera również informacje dotyczące integrowania z innymi aplikacjami.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 995de90aa7c83b5aad35d935fe021706cf48ec4c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: e67882c47ad37805c6f6ce8051fb58363c4bcdcf
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010198"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091998"
 ---
 # <a name="overview"></a>Omówienie
 
@@ -42,8 +42,8 @@ Ten przewodnik dewelopera zawiera informacje o interfejsie API i polach niestand
   - [Konfiguruj integrację z programem Common Data Service](hr-admin-integration-common-data-service.md)
   - [Konfigurowanie integracji z rozwiązaniem Finance](hr-admin-integration-finance.md)
   - [Konfigurowanie integracji z rozwiązaniem Dayforce](hr-admin-integration-dayforce.md)
-  - [Utwórz cykliczną aplikację eksportu danych](hr-admin-integration-recurring-data-export.md)
-  - Integrowanie z programem Office
+  - [Tworzenie aplikacji do cyklicznego eksportowania danych](hr-admin-integration-recurring-data-export.md)
+  - Integracja z pakietem Office
     - [Integracja z pakietem Office — samouczek](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Aktualizowanie danych jednostki w programie Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Tworzenie funkcji otwierania w programie Excel](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)

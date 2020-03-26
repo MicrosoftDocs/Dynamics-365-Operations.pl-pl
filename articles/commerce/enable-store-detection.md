@@ -3,7 +3,7 @@ title: Włączanie wykrywania sklepu na podstawie lokalizacji
 description: W tym temacie opisano sposób włączania wykrywania magazynu opartego na lokalizacji dla witryny Dynamics 365 Commerce.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 304d8d2f05916295b9c6320561d6a25ff40df955
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 66ffe56f9d969c9d62ed4ff49f0848fab7e58a56
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003103"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096876"
 ---
 # <a name="enable-location-based-store-detection"></a>Włączanie wykrywania sklepu na podstawie lokalizacji
 
@@ -54,12 +54,20 @@ Aby włączyć wykrywanie sklepu opartego na lokalizacji w module Commerce, wyko
 
 [Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
 
+[Konfigurowanie kanału sklepu internetowego](online-stores.md)
+
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
 [Kojarzenie witryny online z kanałem](associate-site-online-store.md)
 
 [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
+[Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+
+[Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
+
 [Konfigurowanie stron niestandardowych do logowań użytkowników](custom-pages-user-logins.md)
+
+[Konfigurowanie wielu dzierżawców B2C w środowisku Commerce](configure-multi-B2C-tenants.md)
 
 [Dodawanie obsługi dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
