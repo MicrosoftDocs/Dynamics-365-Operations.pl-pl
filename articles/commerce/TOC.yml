@@ -454,6 +454,8 @@
                   items:
                     - name: Konfigurowanie i używanie zaawansowanych opłat automatycznych
                       href: omni-auto-charges.md
+                    - name: Włączanie i konfigurowanie opłat automatycznych według kanałów
+                      href: auto-charges-by-channel.md
                     - name: Proporcjonalne dzielenie opłat z nagłówka między pasujące wiersze sprzedaży
                       href: pro-rate-charges-matching-lines.md
                 - name: Obsługa programów sprzedaży ciągłej
@@ -525,7 +527,7 @@
                 - name: Tworzenie nowego produktu
                   items:
                     - name: Tworzenie nowego produktu w programie Commerce
-                      href: create-new-product.md
+                      href: create-new-product-commerce.md
                     - name: Zarządzanie kategoriami produktów i produktami
                       href: category-management-product-creation.md
                 - name: Atrybuty produktu
@@ -598,8 +600,6 @@
                       href: personalized-recommendations.md
                     - name: Rezygnowanie z rekomendacji spersonalizowanych
                       href: personalization-gdpr.md
-                - name: Dodawanie list rekomendacji do witryny handlu elektronicznego
-                  href: add-reco-list-to-page.md
                 - name: Funkcje punktu sprzedaży
                   items:
                     - name: Dodawanie rekomendacji produktu w punkcie sprzedaży
@@ -944,6 +944,8 @@
                       href: add-checkout-module.md
                     - name: Moduł potwierdzenia zamówienia
                       href: order-confirmation-module.md
+                    - name: Moduł wyboru sklepu
+                      href: store-selector.md
                 - name: Moduły zarządzania kontem
                   items:
                     - name: Strony i moduły zarządzania kontem
@@ -2115,7 +2117,7 @@
                 - name: Zastosowanie danych płatności
                   href: payment-connector-data-fields.md
                 - name: Włączanie ochrony przed podwójnymi płatnościami dla łącznika płatności
-                  href: dev-itpro/duplicate-payment-protection.md
+                  href: dev-itpro/duplicate-payments-protection.md
                 - name: Tworzenie pakowania płatności dla Eksploratora aplikacji we wdrożeniach programu Service Fabric
                   href: dev-itpro/payment-connector-package.md
             - name: Możliwość rozszerzenia środowiska handlu elektronicznego przez jednostki zewnętrzne

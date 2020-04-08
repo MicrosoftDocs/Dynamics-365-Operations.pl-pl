@@ -70,6 +70,8 @@
                   items:
                     - name: Nowości lub zmiany w aplikacji Supply Chain Management — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management w wersji 10.0.10 (maj 2020)
+                      href: get-started/whats-new-scm-10-0-10.md
                     - name: Supply Chain Management w wersji 10.0.9 (kwiecień 2020)
                       href: get-started/whats-new-scm-10-0-9.md
                     - name: Supply Chain Management w wersji 10.0.8 (luty 2020)
