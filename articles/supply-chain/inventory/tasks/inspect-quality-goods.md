@@ -17,37 +17,37 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10acb9aadfeb11ede1d66dd525ace7b70db3bd1c
-ms.sourcegitcommit: fbaccf72df82e6b6927f0c9f0d35af0ca3ecbc2d
+ms.openlocfilehash: 75fbfbb7b993b528e96d247dafa2bdfe20837987
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1855693"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145624"
 ---
-# <a name="inspect-the-quality-of-goods"></a><span data-ttu-id="c9498-103">Sprawdzanie jakości towarów</span><span class="sxs-lookup"><span data-stu-id="c9498-103">Inspect the quality of goods</span></span>
+# <a name="inspect-the-quality-of-goods"></a><span data-ttu-id="1836c-103">Sprawdzanie jakości towarów</span><span class="sxs-lookup"><span data-stu-id="1836c-103">Inspect the quality of goods</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="c9498-104">W tym temacie wyjaśniono sposób przetwarzania zlecenia kontroli jakości.</span><span class="sxs-lookup"><span data-stu-id="c9498-104">This topic explains how to process a quality order.</span></span> <span data-ttu-id="c9498-105">Zadania z przewodnika można wykonać przy użyciu danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="c9498-105">You can run this guide in demo data company USMF.</span></span> <span data-ttu-id="c9498-106">Przed rozpoczęciem tej przykładowej procedury należy potwierdzić zamówienia zakupu „000016” i zaksięgować dokument przyjęcia produktów.</span><span class="sxs-lookup"><span data-stu-id="c9498-106">Before you start this example procedure, you need to confirm purchase order “000016” and post a product receipt.</span></span> <span data-ttu-id="c9498-107">Spowoduje to automatyczne utworzenie zlecenia kontroli jakości.</span><span class="sxs-lookup"><span data-stu-id="c9498-107">This will automatically create a quality order.</span></span> <span data-ttu-id="c9498-108">Kontrole jakości są zazwyczaj wykonywane przez pracownika ds. kontroli jakości.</span><span class="sxs-lookup"><span data-stu-id="c9498-108">Quality inspections are typically carried out by a quality clerk.</span></span>
+<span data-ttu-id="1836c-104">W tym temacie wyjaśniono sposób przetwarzania zlecenia kontroli jakości.</span><span class="sxs-lookup"><span data-stu-id="1836c-104">This topic explains how to process a quality order.</span></span> <span data-ttu-id="1836c-105">Zadania z przewodnika można wykonać przy użyciu danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="1836c-105">You can run this guide in demo data company USMF.</span></span> <span data-ttu-id="1836c-106">Przed rozpoczęciem tej przykładowej procedury należy potwierdzić zamówienia zakupu „000016” i zaksięgować dokument przyjęcia produktu.</span><span class="sxs-lookup"><span data-stu-id="1836c-106">Before you start this example procedure, you need to confirm purchase order "000016" and post a product receipt.</span></span> <span data-ttu-id="1836c-107">Spowoduje to automatyczne utworzenie zlecenia kontroli jakości.</span><span class="sxs-lookup"><span data-stu-id="1836c-107">This will automatically create a quality order.</span></span> <span data-ttu-id="1836c-108">Kontrole jakości są zazwyczaj wykonywane przez pracownika ds. kontroli jakości.</span><span class="sxs-lookup"><span data-stu-id="1836c-108">Quality inspections are typically carried out by a quality clerk.</span></span>
 
 
-## <a name="select-a-quality-order"></a><span data-ttu-id="c9498-109">Wybieranie zlecenia kontroli jakości</span><span class="sxs-lookup"><span data-stu-id="c9498-109">Select a quality order</span></span>
-1. <span data-ttu-id="c9498-110">W okienku nawigacji otwórz **Moduły > Zarządzanie zapasami > Zadania okresowe > Zarządzanie jakością > Zlecenia kontroli jakości**.</span><span class="sxs-lookup"><span data-stu-id="c9498-110">In the navigation pane, go to **Modules > Inventory management > Periodic tasks > Quality management > Quality orders**.</span></span>
-2. <span data-ttu-id="c9498-111">Przed rozpoczęciem tej procedury wybierz utworzone zlecenie kontroli jakości.</span><span class="sxs-lookup"><span data-stu-id="c9498-111">Select the quality order that was created before you started this procedure.</span></span>  
+## <a name="select-a-quality-order"></a><span data-ttu-id="1836c-109">Wybieranie zlecenia kontroli jakości</span><span class="sxs-lookup"><span data-stu-id="1836c-109">Select a quality order</span></span>
+1. <span data-ttu-id="1836c-110">W okienku nawigacji otwórz **Moduły > Zarządzanie zapasami > Zadania okresowe > Zarządzanie jakością > Zlecenia kontroli jakości**.</span><span class="sxs-lookup"><span data-stu-id="1836c-110">In the navigation pane, go to **Modules > Inventory management > Periodic tasks > Quality management > Quality orders**.</span></span>
+2. <span data-ttu-id="1836c-111">Przed rozpoczęciem tej procedury wybierz utworzone zlecenie kontroli jakości.</span><span class="sxs-lookup"><span data-stu-id="1836c-111">Select the quality order that was created before you started this procedure.</span></span>  
 
-## <a name="record-test-results"></a><span data-ttu-id="c9498-112">Rejestrowanie wyników testów</span><span class="sxs-lookup"><span data-stu-id="c9498-112">Record test results</span></span>
-1. <span data-ttu-id="c9498-113">Wybierz opcję **Wyniki**.</span><span class="sxs-lookup"><span data-stu-id="c9498-113">Select **Results**.</span></span>
-2. <span data-ttu-id="c9498-114">Wybierz opcję **Edycja**.</span><span class="sxs-lookup"><span data-stu-id="c9498-114">Select **Edit**.</span></span>
-3. <span data-ttu-id="c9498-115">W polu **Liczba wyników** wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="c9498-115">In the **Result quantity** field, enter a number.</span></span>
-4. <span data-ttu-id="c9498-116">W polu **Wynik** wybierz odpowiedni rekord z menu rozwijanego.</span><span class="sxs-lookup"><span data-stu-id="c9498-116">In the **Outcome** field, select the desired record in the drop-down menu.</span></span>  
-- <span data-ttu-id="c9498-117">W tym przykładzie wynik bazuje na wstępnie zdefiniowanym wyniku.</span><span class="sxs-lookup"><span data-stu-id="c9498-117">In this example the result is based on a pre-defined outcome.</span></span> <span data-ttu-id="c9498-118">Zwyczajowo rejestruje się bardziej szczegółowy wynik inspekcji, na przykład rozmiaru lub innego wymiaru.</span><span class="sxs-lookup"><span data-stu-id="c9498-118">Normally you would record a more specific test result, for example a size or other dimension.</span></span>  
-5. <span data-ttu-id="c9498-119">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="c9498-119">Select **Save**.</span></span>
-6. <span data-ttu-id="c9498-120">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="c9498-120">Close the page.</span></span>
+## <a name="record-test-results"></a><span data-ttu-id="1836c-112">Rejestrowanie wyników testów</span><span class="sxs-lookup"><span data-stu-id="1836c-112">Record test results</span></span>
+1. <span data-ttu-id="1836c-113">Wybierz opcję **Wyniki**.</span><span class="sxs-lookup"><span data-stu-id="1836c-113">Select **Results**.</span></span>
+2. <span data-ttu-id="1836c-114">Wybierz opcję **Edycja**.</span><span class="sxs-lookup"><span data-stu-id="1836c-114">Select **Edit**.</span></span>
+3. <span data-ttu-id="1836c-115">W polu **Liczba wyników** wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="1836c-115">In the **Result quantity** field, enter a number.</span></span>
+4. <span data-ttu-id="1836c-116">W polu **Wynik** wybierz odpowiedni rekord z menu rozwijanego.</span><span class="sxs-lookup"><span data-stu-id="1836c-116">In the **Outcome** field, select the desired record in the drop-down menu.</span></span>  
+- <span data-ttu-id="1836c-117">W tym przykładzie wynik bazuje na wstępnie zdefiniowanym wyniku.</span><span class="sxs-lookup"><span data-stu-id="1836c-117">In this example the result is based on a pre-defined outcome.</span></span> <span data-ttu-id="1836c-118">Zwyczajowo rejestruje się bardziej szczegółowy wynik inspekcji, na przykład rozmiaru lub innego wymiaru.</span><span class="sxs-lookup"><span data-stu-id="1836c-118">Normally you would record a more specific test result, for example a size or other dimension.</span></span>  
+5. <span data-ttu-id="1836c-119">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="1836c-119">Select **Save**.</span></span>
+6. <span data-ttu-id="1836c-120">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1836c-120">Close the page.</span></span>
 
-## <a name="validate-the-quality-order"></a><span data-ttu-id="c9498-121">Sprawdź poprawność zlecenia kontroli jakości</span><span class="sxs-lookup"><span data-stu-id="c9498-121">Validate the quality order</span></span>
-1. <span data-ttu-id="c9498-122">Wybierz **Potwierdź**.</span><span class="sxs-lookup"><span data-stu-id="c9498-122">Select **Validate**.</span></span>
-2. <span data-ttu-id="c9498-123">W polu **Poprawność sprawdzona przez** wybierz użytkownika wykonującego inspekcję z menu rozwijanego.</span><span class="sxs-lookup"><span data-stu-id="c9498-123">In the **Validated by** field, select the user performing the inspection from the drop-down menu.</span></span>  
-3. <span data-ttu-id="c9498-124">Kliknij opcję **Wybierz**.</span><span class="sxs-lookup"><span data-stu-id="c9498-124">Click **Select**.</span></span>
-4. <span data-ttu-id="c9498-125">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="c9498-125">Select **OK**.</span></span>
-5. <span data-ttu-id="c9498-126">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="c9498-126">Close the page.</span></span>
+## <a name="validate-the-quality-order"></a><span data-ttu-id="1836c-121">Sprawdź poprawność zlecenia kontroli jakości</span><span class="sxs-lookup"><span data-stu-id="1836c-121">Validate the quality order</span></span>
+1. <span data-ttu-id="1836c-122">Wybierz **Potwierdź**.</span><span class="sxs-lookup"><span data-stu-id="1836c-122">Select **Validate**.</span></span>
+2. <span data-ttu-id="1836c-123">W polu **Poprawność sprawdzona przez** wybierz użytkownika wykonującego inspekcję z menu rozwijanego.</span><span class="sxs-lookup"><span data-stu-id="1836c-123">In the **Validated by** field, select the user performing the inspection from the drop-down menu.</span></span>  
+3. <span data-ttu-id="1836c-124">Kliknij opcję **Wybierz**.</span><span class="sxs-lookup"><span data-stu-id="1836c-124">Click **Select**.</span></span>
+4. <span data-ttu-id="1836c-125">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="1836c-125">Select **OK**.</span></span>
+5. <span data-ttu-id="1836c-126">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1836c-126">Close the page.</span></span>
 

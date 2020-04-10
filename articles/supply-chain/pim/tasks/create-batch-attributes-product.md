@@ -16,42 +16,42 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d874b6b6e53164c00d9b4656d27b1060f4e3ba06
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: b61c91de926509f657074797030cbc3a1d1ed446
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934942"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147901"
 ---
-# <a name="create-batch-attributes-for-a-product"></a><span data-ttu-id="e2079-103">Tworzenie atrybutów partii dla produktu</span><span class="sxs-lookup"><span data-stu-id="e2079-103">Create batch attributes for a product</span></span>
+# <a name="create-batch-attributes-for-a-product"></a><span data-ttu-id="6bef6-103">Tworzenie atrybutów partii dla produktu</span><span class="sxs-lookup"><span data-stu-id="6bef6-103">Create batch attributes for a product</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="e2079-104">W tej procedurze pokazano sposób tworzenia atrybutu partii, przypisywania domyślnych zakresów wartości oraz umieszczania atrybutu w grupie.</span><span class="sxs-lookup"><span data-stu-id="e2079-104">This procedure shows how to create a batch attribute, assign default value ranges, and include the attribute in a group.</span></span> <span data-ttu-id="e2079-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USP2.</span><span class="sxs-lookup"><span data-stu-id="e2079-105">The demo data company used to create this procedure is the USP2 Company.</span></span>
+<span data-ttu-id="6bef6-104">W tej procedurze pokazano sposób tworzenia atrybutu partii, przypisywania domyślnych zakresów wartości oraz umieszczania atrybutu w grupie.</span><span class="sxs-lookup"><span data-stu-id="6bef6-104">This procedure shows how to create a batch attribute, assign default value ranges, and include the attribute in a group.</span></span> <span data-ttu-id="6bef6-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USP2.</span><span class="sxs-lookup"><span data-stu-id="6bef6-105">The demo data company used to create this procedure is the USP2 Company.</span></span>
 
-1. <span data-ttu-id="e2079-106">Kliknij kolejno opcje Zarządzanie zapasami > Ustawienia > Partia > Atrybuty partii.</span><span class="sxs-lookup"><span data-stu-id="e2079-106">Go to Inventory management > Setup > Batch > Batch attributes.</span></span>
-2. <span data-ttu-id="e2079-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="e2079-107">Click New.</span></span>
-3. <span data-ttu-id="e2079-108">W polu Atrybut wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="e2079-108">In the Attribute field, type a value.</span></span>
-4. <span data-ttu-id="e2079-109">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="e2079-109">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="e2079-110">W polu Typ atrybutu zaznacz opcję „Ułamek”.</span><span class="sxs-lookup"><span data-stu-id="e2079-110">In the Attribute type field, select 'Fraction'.</span></span>
-    * <span data-ttu-id="e2079-111">Ta procedura wykorzystuje typ Ułamek, aby włączyć obsługę wartości dziesiętnych.</span><span class="sxs-lookup"><span data-stu-id="e2079-111">This procedure uses the Fraction type to enable decimal values.</span></span> <span data-ttu-id="e2079-112">Można wybrać inne typy atrybutów.</span><span class="sxs-lookup"><span data-stu-id="e2079-112">You can select other attribute types.</span></span> <span data-ttu-id="e2079-113">Jeśli zostanie wybrany typ Wyliczenie, należy wprowadzić wartości na liście wyliczeń, zanim będzie można wprowadzić wartość w polu Obiekt docelowy.</span><span class="sxs-lookup"><span data-stu-id="e2079-113">If you select the Enumeration type, you must enter values in the enumeration list before you can enter a value in the Target field.</span></span>  
-6. <span data-ttu-id="e2079-114">W polu Minimum wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="e2079-114">In the Minimum field, enter a number.</span></span>
-7. <span data-ttu-id="e2079-115">W polu Maksimum wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="e2079-115">In the Maximum field, enter a number.</span></span>
-8. <span data-ttu-id="e2079-116">W polu Przyrost wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="e2079-116">In the Increment field, enter a number.</span></span>
-9. <span data-ttu-id="e2079-117">W polu Obiekt docelowy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="e2079-117">In the Target field, type a value.</span></span>
-10. <span data-ttu-id="e2079-118">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="e2079-118">Click Save.</span></span>
-11. <span data-ttu-id="e2079-119">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="e2079-119">Close the page.</span></span>
-12. <span data-ttu-id="e2079-120">Kliknij kolejno opcje Zarządzanie zapasami > Ustawienia > Partia > Grupy atrybutów partii.</span><span class="sxs-lookup"><span data-stu-id="e2079-120">Go to Inventory management > Setup > Batch > Batch attribute groups.</span></span>
-13. <span data-ttu-id="e2079-121">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="e2079-121">Click New.</span></span>
-14. <span data-ttu-id="e2079-122">W polu Grupa atrybutów wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="e2079-122">In the Attribute group field, type a value.</span></span>
-15. <span data-ttu-id="e2079-123">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="e2079-123">In the Description field, type a value.</span></span>
-16. <span data-ttu-id="e2079-124">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="e2079-124">Click Save.</span></span>
-17. <span data-ttu-id="e2079-125">Kliknij Atrybuty grupy.</span><span class="sxs-lookup"><span data-stu-id="e2079-125">Click Group attributes.</span></span>
-18. <span data-ttu-id="e2079-126">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="e2079-126">Click New.</span></span>
-19. <span data-ttu-id="e2079-127">W polu Atrybut kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="e2079-127">In the Attribute field, click the drop-down button to open the lookup.</span></span>
-20. <span data-ttu-id="e2079-128">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="e2079-128">In the list, find and select the desired record.</span></span>
-21. <span data-ttu-id="e2079-129">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="e2079-129">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="e2079-130">Atrybut można umieścić w dowolnej z tych grup.</span><span class="sxs-lookup"><span data-stu-id="e2079-130">An attribute can be included in any of the groups.</span></span>  
-22. <span data-ttu-id="e2079-131">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="e2079-131">Click Save.</span></span>
-23. <span data-ttu-id="e2079-132">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="e2079-132">Close the page.</span></span>
+1. <span data-ttu-id="6bef6-106">Kliknij kolejno opcje Zarządzanie zapasami > Ustawienia > Partia > Atrybuty partii.</span><span class="sxs-lookup"><span data-stu-id="6bef6-106">Go to Inventory management > Setup > Batch > Batch attributes.</span></span>
+2. <span data-ttu-id="6bef6-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="6bef6-107">Click New.</span></span>
+3. <span data-ttu-id="6bef6-108">W polu Atrybut wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6bef6-108">In the Attribute field, type a value.</span></span>
+4. <span data-ttu-id="6bef6-109">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="6bef6-109">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="6bef6-110">W polu Typ atrybutu zaznacz opcję „Ułamek”.</span><span class="sxs-lookup"><span data-stu-id="6bef6-110">In the Attribute type field, select 'Fraction'.</span></span>
+    * <span data-ttu-id="6bef6-111">Ta procedura wykorzystuje typ Ułamek, aby włączyć obsługę wartości dziesiętnych.</span><span class="sxs-lookup"><span data-stu-id="6bef6-111">This procedure uses the Fraction type to enable decimal values.</span></span> <span data-ttu-id="6bef6-112">Można wybrać inne typy atrybutów.</span><span class="sxs-lookup"><span data-stu-id="6bef6-112">You can select other attribute types.</span></span> <span data-ttu-id="6bef6-113">Jeśli zostanie wybrany typ Wyliczenie, należy wprowadzić wartości na liście wyliczeń, zanim będzie można wprowadzić wartość w polu Obiekt docelowy.</span><span class="sxs-lookup"><span data-stu-id="6bef6-113">If you select the Enumeration type, you must enter values in the enumeration list before you can enter a value in the Target field.</span></span>  
+6. <span data-ttu-id="6bef6-114">W polu Minimum wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="6bef6-114">In the Minimum field, enter a number.</span></span>
+7. <span data-ttu-id="6bef6-115">W polu Maksimum wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="6bef6-115">In the Maximum field, enter a number.</span></span>
+8. <span data-ttu-id="6bef6-116">W polu Przyrost wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="6bef6-116">In the Increment field, enter a number.</span></span>
+9. <span data-ttu-id="6bef6-117">W polu Obiekt docelowy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6bef6-117">In the Target field, type a value.</span></span>
+10. <span data-ttu-id="6bef6-118">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6bef6-118">Click Save.</span></span>
+11. <span data-ttu-id="6bef6-119">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="6bef6-119">Close the page.</span></span>
+12. <span data-ttu-id="6bef6-120">Kliknij kolejno opcje Zarządzanie zapasami > Ustawienia > Partia > Grupy atrybutów partii.</span><span class="sxs-lookup"><span data-stu-id="6bef6-120">Go to Inventory management > Setup > Batch > Batch attribute groups.</span></span>
+13. <span data-ttu-id="6bef6-121">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="6bef6-121">Click New.</span></span>
+14. <span data-ttu-id="6bef6-122">W polu Grupa atrybutów wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6bef6-122">In the Attribute group field, type a value.</span></span>
+15. <span data-ttu-id="6bef6-123">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="6bef6-123">In the Description field, type a value.</span></span>
+16. <span data-ttu-id="6bef6-124">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6bef6-124">Click Save.</span></span>
+17. <span data-ttu-id="6bef6-125">Kliknij Atrybuty grupy.</span><span class="sxs-lookup"><span data-stu-id="6bef6-125">Click Group attributes.</span></span>
+18. <span data-ttu-id="6bef6-126">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="6bef6-126">Click New.</span></span>
+19. <span data-ttu-id="6bef6-127">W polu Atrybut kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="6bef6-127">In the Attribute field, click the drop-down button to open the lookup.</span></span>
+20. <span data-ttu-id="6bef6-128">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="6bef6-128">In the list, find and select the desired record.</span></span>
+21. <span data-ttu-id="6bef6-129">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="6bef6-129">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="6bef6-130">Atrybut można umieścić w dowolnej z tych grup.</span><span class="sxs-lookup"><span data-stu-id="6bef6-130">An attribute can be included in any of the groups.</span></span>  
+22. <span data-ttu-id="6bef6-131">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6bef6-131">Click Save.</span></span>
+23. <span data-ttu-id="6bef6-132">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="6bef6-132">Close the page.</span></span>
 

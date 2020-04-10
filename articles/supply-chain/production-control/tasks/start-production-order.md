@@ -16,57 +16,57 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f83091a9f3e96a9176860bd16fa5969507488a25
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5e770c905079461c1f4f0117f61f6c10b86ddaf6
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547475"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146613"
 ---
-# <a name="start-a-production-order"></a><span data-ttu-id="5ba0b-103">Rozpoczynanie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="5ba0b-103">Start a production order</span></span>
+# <a name="start-a-production-order"></a><span data-ttu-id="8cb38-103">Rozpoczynanie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="8cb38-103">Start a production order</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="5ba0b-104">Ta procedura pokazuje sposób rozpoczynania zlecenia produkcyjnego na wydziale produkcji.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-104">This procedure shows how to start a production order on the shop floor.</span></span> <span data-ttu-id="5ba0b-105">W tym procesie jest zgłaszane zużycie materiału i czasu.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-105">Time and material consumption are reported in this process.</span></span> <span data-ttu-id="5ba0b-106">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="5ba0b-107">Jest to piąta z siedmiu procedur, które wyjaśniają cykl życia zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-107">This is the fifth procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="8cb38-104">Ta procedura pokazuje sposób rozpoczynania zlecenia produkcyjnego na wydziale produkcji.</span><span class="sxs-lookup"><span data-stu-id="8cb38-104">This procedure shows how to start a production order on the shop floor.</span></span> <span data-ttu-id="8cb38-105">W tym procesie jest zgłaszane zużycie materiału i czasu.</span><span class="sxs-lookup"><span data-stu-id="8cb38-105">Time and material consumption are reported in this process.</span></span> <span data-ttu-id="8cb38-106">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="8cb38-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="8cb38-107">Jest to piąta z siedmiu procedur, które wyjaśniają cykl życia zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="8cb38-107">This is the fifth procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="start-a-production-order"></a><span data-ttu-id="5ba0b-108">Rozpoczynanie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="5ba0b-108">Start a production order</span></span>
-1. <span data-ttu-id="5ba0b-109">Wybierz kolejno opcje Kontrola produkcji > Zlecenia produkcyjne > Wszystkie zlecenia produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-109">Go to Production control > Production orders > All production orders.</span></span>
-    * <span data-ttu-id="5ba0b-110">Zaznacz zlecenie produkcyjne, które ma stan Zwolniono.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-110">Select a production order that has the Released status.</span></span>  
-2. <span data-ttu-id="5ba0b-111">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-111">On the Action Pane, click Production order.</span></span>
-3. <span data-ttu-id="5ba0b-112">Kliknij przycisk Rozpocznij.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-112">Click Start.</span></span>
-    * <span data-ttu-id="5ba0b-113">Na tej stronie można potwierdzić rozpoczęcie zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-113">On this page, you can confirm the start of the production order.</span></span>  
-4. <span data-ttu-id="5ba0b-114">Kliknij kartę Ogólne.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-114">Click the General tab.</span></span>
-5. <span data-ttu-id="5ba0b-115">W polu Od nr operacji</span><span class="sxs-lookup"><span data-stu-id="5ba0b-115">In the From Oper.</span></span> <span data-ttu-id="5ba0b-116">Nr</span><span class="sxs-lookup"><span data-stu-id="5ba0b-116">No.</span></span> <span data-ttu-id="5ba0b-117">wpisz „10”.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-117">field, enter '10'.</span></span>
-6. <span data-ttu-id="5ba0b-118">W polu Automatyczne zużycie marszruty zaznacz opcję „Zawsze”.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-118">In the Automatic route consumption field, select 'Always'.</span></span>
-7. <span data-ttu-id="5ba0b-119">Zaznacz pole wyboru Księguj kartę marszruty teraz.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-119">Click the Post route card now checkbox.</span></span>
-8. <span data-ttu-id="5ba0b-120">W polu Automatyczne zużycie BOM zaznacz opcję „Zawsze”.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-120">In the Automatic BOM consumption field, select 'Always'.</span></span>
-9. <span data-ttu-id="5ba0b-121">Zaznacz pole wyboru Księgowanie listy pobrania.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-121">Click the Post picking list now checkbox.</span></span>
-10. <span data-ttu-id="5ba0b-122">Zaznacz pole wyboru Drukowanie listy pobrania.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-122">Click the Print picking list checkbox.</span></span>
-11. <span data-ttu-id="5ba0b-123">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-123">Click OK.</span></span>
-    * <span data-ttu-id="5ba0b-124">Jest to wydrukowana lista pobrania, która pokazuje materiały użyte w zleceniu produkcyjnym.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-124">This is the printed picking list that shows the materials used for the production order.</span></span>  
-12. <span data-ttu-id="5ba0b-125">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-125">Close the page.</span></span>
+## <a name="start-a-production-order"></a><span data-ttu-id="8cb38-108">Rozpoczynanie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="8cb38-108">Start a production order</span></span>
+1. <span data-ttu-id="8cb38-109">Wybierz kolejno opcje Kontrola produkcji > Zlecenia produkcyjne > Wszystkie zlecenia produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="8cb38-109">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="8cb38-110">Zaznacz zlecenie produkcyjne, które ma stan Zwolniono.</span><span class="sxs-lookup"><span data-stu-id="8cb38-110">Select a production order that has the Released status.</span></span>  
+2. <span data-ttu-id="8cb38-111">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="8cb38-111">On the Action Pane, click Production order.</span></span>
+3. <span data-ttu-id="8cb38-112">Kliknij przycisk Rozpocznij.</span><span class="sxs-lookup"><span data-stu-id="8cb38-112">Click Start.</span></span>
+    * <span data-ttu-id="8cb38-113">Na tej stronie można potwierdzić rozpoczęcie zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="8cb38-113">On this page, you can confirm the start of the production order.</span></span>  
+4. <span data-ttu-id="8cb38-114">Kliknij kartę Ogólne.</span><span class="sxs-lookup"><span data-stu-id="8cb38-114">Click the General tab.</span></span>
+5. <span data-ttu-id="8cb38-115">W polu Od nr operacji</span><span class="sxs-lookup"><span data-stu-id="8cb38-115">In the From Oper.</span></span> <span data-ttu-id="8cb38-116">Nr</span><span class="sxs-lookup"><span data-stu-id="8cb38-116">No.</span></span> <span data-ttu-id="8cb38-117">wpisz „10”.</span><span class="sxs-lookup"><span data-stu-id="8cb38-117">field, enter '10'.</span></span>
+6. <span data-ttu-id="8cb38-118">W polu Automatyczne zużycie marszruty zaznacz opcję „Zawsze”.</span><span class="sxs-lookup"><span data-stu-id="8cb38-118">In the Automatic route consumption field, select 'Always'.</span></span>
+7. <span data-ttu-id="8cb38-119">Zaznacz pole wyboru Księguj kartę marszruty teraz.</span><span class="sxs-lookup"><span data-stu-id="8cb38-119">Click the Post route card now checkbox.</span></span>
+8. <span data-ttu-id="8cb38-120">W polu Automatyczne zużycie BOM zaznacz opcję „Zawsze”.</span><span class="sxs-lookup"><span data-stu-id="8cb38-120">In the Automatic BOM consumption field, select 'Always'.</span></span>
+9. <span data-ttu-id="8cb38-121">Zaznacz pole wyboru Księgowanie listy pobrania.</span><span class="sxs-lookup"><span data-stu-id="8cb38-121">Click the Post picking list now checkbox.</span></span>
+10. <span data-ttu-id="8cb38-122">Zaznacz pole wyboru Drukowanie listy pobrania.</span><span class="sxs-lookup"><span data-stu-id="8cb38-122">Click the Print picking list checkbox.</span></span>
+11. <span data-ttu-id="8cb38-123">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="8cb38-123">Click OK.</span></span>
+    * <span data-ttu-id="8cb38-124">Jest to wydrukowana lista pobrania, która pokazuje materiały użyte w zleceniu produkcyjnym.</span><span class="sxs-lookup"><span data-stu-id="8cb38-124">This is the printed picking list that shows the materials used for the production order.</span></span>  
+12. <span data-ttu-id="8cb38-125">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="8cb38-125">Close the page.</span></span>
 
-## <a name="validate-the-picking-list"></a><span data-ttu-id="5ba0b-126">Sprawdzanie poprawności listy pobrania</span><span class="sxs-lookup"><span data-stu-id="5ba0b-126">Validate the picking list</span></span>
-1. <span data-ttu-id="5ba0b-127">W okienku akcji kliknij pozycję Widok.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-127">On the Action Pane, click View.</span></span>
-2. <span data-ttu-id="5ba0b-128">Kliknij opcję Lista pobrania.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-128">Click Picking list.</span></span>
-3. <span data-ttu-id="5ba0b-129">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-129">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="5ba0b-130">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-130">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="5ba0b-131">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-131">Click Edit.</span></span>
-6. <span data-ttu-id="5ba0b-132">W polu Zużycie wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-132">In the Consumption field, enter a number.</span></span>
-7. <span data-ttu-id="5ba0b-133">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-133">Click Post.</span></span>
-8. <span data-ttu-id="5ba0b-134">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-134">Click OK.</span></span>
-    * <span data-ttu-id="5ba0b-135">W arkuszu listy pobrania są księgowane materiały zużyte przez zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-135">In the picking list journal, the materials consumed by the production order are posted.</span></span> <span data-ttu-id="5ba0b-136">Przed zaksięgowaniem arkusza można dokonać korekt, jeśli występuje różnica między oszacowaną ilością a rzeczywiście zużytą ilością.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-136">Before posting the journal, you can make adjustments if there is a difference between the estimated quantity and the actual consumed quantity.</span></span>  
-9. <span data-ttu-id="5ba0b-137">Kliknij kartę GridPanel.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-137">Click the GridPanel tab.</span></span>
-10. <span data-ttu-id="5ba0b-138">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-138">Close the page.</span></span>
+## <a name="validate-the-picking-list"></a><span data-ttu-id="8cb38-126">Sprawdzanie poprawności listy pobrania</span><span class="sxs-lookup"><span data-stu-id="8cb38-126">Validate the picking list</span></span>
+1. <span data-ttu-id="8cb38-127">W okienku akcji kliknij pozycję Widok.</span><span class="sxs-lookup"><span data-stu-id="8cb38-127">On the Action Pane, click View.</span></span>
+2. <span data-ttu-id="8cb38-128">Kliknij opcję Lista pobrania.</span><span class="sxs-lookup"><span data-stu-id="8cb38-128">Click Picking list.</span></span>
+3. <span data-ttu-id="8cb38-129">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="8cb38-129">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="8cb38-130">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="8cb38-130">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="8cb38-131">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="8cb38-131">Click Edit.</span></span>
+6. <span data-ttu-id="8cb38-132">W polu Zużycie wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="8cb38-132">In the Consumption field, enter a number.</span></span>
+7. <span data-ttu-id="8cb38-133">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="8cb38-133">Click Post.</span></span>
+8. <span data-ttu-id="8cb38-134">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="8cb38-134">Click OK.</span></span>
+    * <span data-ttu-id="8cb38-135">W arkuszu listy pobrania są księgowane materiały zużyte przez zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="8cb38-135">In the picking list journal, the materials consumed by the production order are posted.</span></span> <span data-ttu-id="8cb38-136">Przed zaksięgowaniem arkusza można dokonać korekt, jeśli występuje różnica między oszacowaną ilością a rzeczywiście zużytą ilością.</span><span class="sxs-lookup"><span data-stu-id="8cb38-136">Before posting the journal, you can make adjustments if there is a difference between the estimated quantity and the actual consumed quantity.</span></span>  
+9. <span data-ttu-id="8cb38-137">Kliknij kartę GridPanel.</span><span class="sxs-lookup"><span data-stu-id="8cb38-137">Click the GridPanel tab.</span></span>
+10. <span data-ttu-id="8cb38-138">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="8cb38-138">Close the page.</span></span>
 
-## <a name="verify-the-route-card-journal"></a><span data-ttu-id="5ba0b-139">Weryfikacja arkusza karty marszruty</span><span class="sxs-lookup"><span data-stu-id="5ba0b-139">Verify the route card journal</span></span>
-1. <span data-ttu-id="5ba0b-140">W okienku akcji kliknij pozycję Widok.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-140">On the Action Pane, click View.</span></span>
-2. <span data-ttu-id="5ba0b-141">Kliknij opcję Karta marszruty.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-141">Click Route card.</span></span>
-3. <span data-ttu-id="5ba0b-142">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-142">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="5ba0b-143">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-143">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="5ba0b-144">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-144">Click Edit.</span></span>
-6. <span data-ttu-id="5ba0b-145">W polu Godziny wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-145">In the Hours field, enter a number.</span></span>
-7. <span data-ttu-id="5ba0b-146">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-146">Click Post.</span></span>
-8. <span data-ttu-id="5ba0b-147">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-147">Click OK.</span></span>
-    * <span data-ttu-id="5ba0b-148">W arkuszu karty marszruty jest rejestrowany czas spędzony na poszczególnych operacjach.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-148">In the Route card journal, the time spent on the individual operations is recorded.</span></span> <span data-ttu-id="5ba0b-149">Mogą być również podawane ilości towarów prawidłowych i błędnych.</span><span class="sxs-lookup"><span data-stu-id="5ba0b-149">Good and error quantity can also be reported.</span></span>  
+## <a name="verify-the-route-card-journal"></a><span data-ttu-id="8cb38-139">Weryfikacja arkusza karty marszruty</span><span class="sxs-lookup"><span data-stu-id="8cb38-139">Verify the route card journal</span></span>
+1. <span data-ttu-id="8cb38-140">W okienku akcji kliknij pozycję Widok.</span><span class="sxs-lookup"><span data-stu-id="8cb38-140">On the Action Pane, click View.</span></span>
+2. <span data-ttu-id="8cb38-141">Kliknij opcję Karta marszruty.</span><span class="sxs-lookup"><span data-stu-id="8cb38-141">Click Route card.</span></span>
+3. <span data-ttu-id="8cb38-142">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="8cb38-142">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="8cb38-143">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="8cb38-143">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="8cb38-144">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="8cb38-144">Click Edit.</span></span>
+6. <span data-ttu-id="8cb38-145">W polu Godziny wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="8cb38-145">In the Hours field, enter a number.</span></span>
+7. <span data-ttu-id="8cb38-146">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="8cb38-146">Click Post.</span></span>
+8. <span data-ttu-id="8cb38-147">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="8cb38-147">Click OK.</span></span>
+    * <span data-ttu-id="8cb38-148">W arkuszu karty marszruty jest rejestrowany czas spędzony na poszczególnych operacjach.</span><span class="sxs-lookup"><span data-stu-id="8cb38-148">In the Route card journal, the time spent on the individual operations is recorded.</span></span> <span data-ttu-id="8cb38-149">Mogą być również podawane ilości towarów prawidłowych i błędnych.</span><span class="sxs-lookup"><span data-stu-id="8cb38-149">Good and error quantity can also be reported.</span></span>  

@@ -16,41 +16,41 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72940f719baca5e8042c2f2caa8abbacb7d8264e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ed8c60b188b7c7090546e8367455e0f58ce9359b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844496"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147694"
 ---
-# <a name="create-sales-price-selection-criteria"></a><span data-ttu-id="9ddcb-103">Tworzenie kryteriów wyboru ceny sprzedaży</span><span class="sxs-lookup"><span data-stu-id="9ddcb-103">Create sales price selection criteria</span></span>
+# <a name="create-sales-price-selection-criteria"></a><span data-ttu-id="4122d-103">Tworzenie kryteriów wyboru ceny sprzedaży</span><span class="sxs-lookup"><span data-stu-id="4122d-103">Create sales price selection criteria</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="9ddcb-104">Ta procedura pokazuje, jak utworzyć kryterium wyboru ceny sprzedaży dla modeli ceny sprzedaży opartych na atrybutach.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-104">This procedure shows how to create a sales price selection criterion for attribute-based sales price models.</span></span> <span data-ttu-id="9ddcb-105">Procedura wymaga dostępności co najmniej jednego modelu ceny sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-105">This procedure requires that at least one sales price model be available.</span></span> <span data-ttu-id="9ddcb-106">W tym przykładzie jest używany model ceny będący modelem cen sprzedaży rozwiązania Głośnik w firmie demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-106">This example uses the price model for the Speaker solution sales price model in the USMF demo data company.</span></span> <span data-ttu-id="9ddcb-107">Zazwyczaj procedurę wykonuje menedżer produktu.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-107">Typically, a product manager uses this procedure.</span></span>
+<span data-ttu-id="4122d-104">Ta procedura pokazuje, jak utworzyć kryterium wyboru ceny sprzedaży dla modeli ceny sprzedaży opartych na atrybutach.</span><span class="sxs-lookup"><span data-stu-id="4122d-104">This procedure shows how to create a sales price selection criterion for attribute-based sales price models.</span></span> <span data-ttu-id="4122d-105">Procedura wymaga dostępności co najmniej jednego modelu ceny sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="4122d-105">This procedure requires that at least one sales price model be available.</span></span> <span data-ttu-id="4122d-106">W tym przykładzie jest używany model ceny będący modelem cen sprzedaży rozwiązania Głośnik w firmie demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="4122d-106">This example uses the price model for the Speaker solution sales price model in the USMF demo data company.</span></span> <span data-ttu-id="4122d-107">Zazwyczaj procedurę wykonuje menedżer produktu.</span><span class="sxs-lookup"><span data-stu-id="4122d-107">Typically, a product manager uses this procedure.</span></span>
 
 
-## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a><span data-ttu-id="9ddcb-108">Dodawanie nowego kryterium dla istniejącego modelu ceny sprzedaży</span><span class="sxs-lookup"><span data-stu-id="9ddcb-108">Add a new criterion for an existing sales price model</span></span>
-1. <span data-ttu-id="9ddcb-109">Kliknij opcję Definicja modelu wariantu produktu.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-109">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="9ddcb-110">Kliknij opcję Modele konfiguracji produktu.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-110">Click Product configuration models.</span></span>
-3. <span data-ttu-id="9ddcb-111">Na liście zaznacz wiersz modelu produktu rozwiązania Głośnika, ale nie klikaj łącza z nazwą modelu.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-111">In the list, select the row for the Speaker solution product model, but don’t click the link for the model name.</span></span>
-4. <span data-ttu-id="9ddcb-112">W okienku akcji kliknij pozycję Model.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-112">On the Action Pane, click Model.</span></span>
-5. <span data-ttu-id="9ddcb-113">Kliknij opcję Kryteria modelu ceny.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-113">Click Price model criteria.</span></span>
-6. <span data-ttu-id="9ddcb-114">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-114">Click New.</span></span>
-7. <span data-ttu-id="9ddcb-115">W polu Nazwa wpisz „Grupa odbiorców 10”.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-115">In the Name field, type ‘Customer group 10’.</span></span>
-    * <span data-ttu-id="9ddcb-116">Nazwa kryterium modelu ceny służy do identyfikowania bazowych kryteriów wyboru.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-116">The name of the price model criterion is used to help identify the underlying selection criteria.</span></span>  
-8. <span data-ttu-id="9ddcb-117">Wprowadź lub wybierz wartość w polu Model ceny.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-117">In the Price model field, enter or select a value.</span></span>
-9. <span data-ttu-id="9ddcb-118">W polu Typ zamówienia zaznacz opcję Zamówienie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-118">In the Order type field, select Sales order.</span></span>
-    * <span data-ttu-id="9ddcb-119">Typ zamówienia określa pola bazy danych, które będą dostępne dla kwerendy wyboru.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-119">The order type determines the database fields that will be available for the selection query.</span></span>  
-10. <span data-ttu-id="9ddcb-120">W polu Obowiązuje od wpisz datę.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-120">In the Valid from field, enter a date.</span></span>
-11. <span data-ttu-id="9ddcb-121">W polu Data ważności wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-121">In the Expire by field, enter a date.</span></span>
-12. <span data-ttu-id="9ddcb-122">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-122">Click Save.</span></span>
+## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a><span data-ttu-id="4122d-108">Dodawanie nowego kryterium dla istniejącego modelu ceny sprzedaży</span><span class="sxs-lookup"><span data-stu-id="4122d-108">Add a new criterion for an existing sales price model</span></span>
+1. <span data-ttu-id="4122d-109">Kliknij opcję Definicja modelu wariantu produktu.</span><span class="sxs-lookup"><span data-stu-id="4122d-109">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="4122d-110">Kliknij opcję Modele konfiguracji produktu.</span><span class="sxs-lookup"><span data-stu-id="4122d-110">Click Product configuration models.</span></span>
+3. <span data-ttu-id="4122d-111">Na liście zaznacz wiersz modelu produktu rozwiązania Głośnika, ale nie klikaj łącza z nazwą modelu.</span><span class="sxs-lookup"><span data-stu-id="4122d-111">In the list, select the row for the Speaker solution product model, but don't click the link for the model name.</span></span>
+4. <span data-ttu-id="4122d-112">W okienku akcji kliknij pozycję Model.</span><span class="sxs-lookup"><span data-stu-id="4122d-112">On the Action Pane, click Model.</span></span>
+5. <span data-ttu-id="4122d-113">Kliknij opcję Kryteria modelu ceny.</span><span class="sxs-lookup"><span data-stu-id="4122d-113">Click Price model criteria.</span></span>
+6. <span data-ttu-id="4122d-114">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="4122d-114">Click New.</span></span>
+7. <span data-ttu-id="4122d-115">W polu Nazwa wpisz „Grupa odbiorców 10”.</span><span class="sxs-lookup"><span data-stu-id="4122d-115">In the Name field, type 'Customer group 10'.</span></span>
+    * <span data-ttu-id="4122d-116">Nazwa kryterium modelu ceny służy do identyfikowania bazowych kryteriów wyboru.</span><span class="sxs-lookup"><span data-stu-id="4122d-116">The name of the price model criterion is used to help identify the underlying selection criteria.</span></span>  
+8. <span data-ttu-id="4122d-117">Wprowadź lub wybierz wartość w polu Model ceny.</span><span class="sxs-lookup"><span data-stu-id="4122d-117">In the Price model field, enter or select a value.</span></span>
+9. <span data-ttu-id="4122d-118">W polu Typ zamówienia zaznacz opcję Zamówienie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="4122d-118">In the Order type field, select Sales order.</span></span>
+    * <span data-ttu-id="4122d-119">Typ zamówienia określa pola bazy danych, które będą dostępne dla kwerendy wyboru.</span><span class="sxs-lookup"><span data-stu-id="4122d-119">The order type determines the database fields that will be available for the selection query.</span></span>  
+10. <span data-ttu-id="4122d-120">W polu Obowiązuje od wpisz datę.</span><span class="sxs-lookup"><span data-stu-id="4122d-120">In the Valid from field, enter a date.</span></span>
+11. <span data-ttu-id="4122d-121">W polu Data ważności wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="4122d-121">In the Expire by field, enter a date.</span></span>
+12. <span data-ttu-id="4122d-122">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="4122d-122">Click Save.</span></span>
 
-## <a name="create-the-query-for-the-selection-criteria"></a><span data-ttu-id="9ddcb-123">Tworzenie zapytania dla kryteriów wyboru</span><span class="sxs-lookup"><span data-stu-id="9ddcb-123">Create the query for the selection criteria</span></span>
-1. <span data-ttu-id="9ddcb-124">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-124">Click Edit.</span></span>
-2. <span data-ttu-id="9ddcb-125">W polu Tabela wybierz opcję Odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-125">In the Table field, select Customers.</span></span> 
-3. <span data-ttu-id="9ddcb-126">W polu Pole wybierz opcję Grupa odbiorców.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-126">In the Field field, select Customer group.</span></span>
-    * <span data-ttu-id="9ddcb-127">W tym przykładzie jako kryteriów wyboru użyjemy określonej grupy odbiorców.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-127">In this example, we will use a specific customer group for the selection criteria.</span></span>  
-4. <span data-ttu-id="9ddcb-128">W polu Kryteria wybierz opcję Grupa odbiorców 10.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-128">In the Criteria field, select Customer group 10.</span></span> 
-5. <span data-ttu-id="9ddcb-129">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="9ddcb-129">Click OK.</span></span>
+## <a name="create-the-query-for-the-selection-criteria"></a><span data-ttu-id="4122d-123">Tworzenie zapytania dla kryteriów wyboru</span><span class="sxs-lookup"><span data-stu-id="4122d-123">Create the query for the selection criteria</span></span>
+1. <span data-ttu-id="4122d-124">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="4122d-124">Click Edit.</span></span>
+2. <span data-ttu-id="4122d-125">W polu Tabela wybierz opcję Odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="4122d-125">In the Table field, select Customers.</span></span> 
+3. <span data-ttu-id="4122d-126">W polu Pole wybierz opcję Grupa odbiorców.</span><span class="sxs-lookup"><span data-stu-id="4122d-126">In the Field field, select Customer group.</span></span>
+    * <span data-ttu-id="4122d-127">W tym przykładzie jako kryteriów wyboru użyjemy określonej grupy odbiorców.</span><span class="sxs-lookup"><span data-stu-id="4122d-127">In this example, we will use a specific customer group for the selection criteria.</span></span>  
+4. <span data-ttu-id="4122d-128">W polu Kryteria wybierz opcję Grupa odbiorców 10.</span><span class="sxs-lookup"><span data-stu-id="4122d-128">In the Criteria field, select Customer group 10.</span></span> 
+5. <span data-ttu-id="4122d-129">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="4122d-129">Click OK.</span></span>
 

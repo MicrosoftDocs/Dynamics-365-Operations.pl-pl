@@ -16,33 +16,33 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f5cb4afdc0285a6ccf28dbd362df3799c0ecc74
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cb84d3b1908d6be889a49f7386de876cb52141ab
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555846"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149051"
 ---
-# <a name="end-a-production-order"></a><span data-ttu-id="3a9eb-103">Kończenie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="3a9eb-103">End a production order</span></span>
+# <a name="end-a-production-order"></a><span data-ttu-id="20e64-103">Kończenie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="20e64-103">End a production order</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="3a9eb-104">W tej procedurze pokazano sposób kończenia zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-104">This procedure shows how to end a production order.</span></span> <span data-ttu-id="3a9eb-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="3a9eb-106">Jest to ostatnia z siedmiu procedur, które wyjaśniają cykl życia zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-106">This is the final procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="20e64-104">W tej procedurze pokazano sposób kończenia zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="20e64-104">This procedure shows how to end a production order.</span></span> <span data-ttu-id="20e64-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="20e64-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="20e64-106">Jest to ostatnia z siedmiu procedur, które wyjaśniają cykl życia zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="20e64-106">This is the final procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="end-a-production-order"></a><span data-ttu-id="3a9eb-107">Kończenie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="3a9eb-107">End a production order</span></span>
-1. <span data-ttu-id="3a9eb-108">Wybierz kolejno opcje Kontrola produkcji > Zlecenia produkcyjne > Wszystkie zlecenia produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-108">Go to Production control > Production orders > All production orders.</span></span>
-    * <span data-ttu-id="3a9eb-109">Zaznacz zlecenie produkcyjne o stanie Zgłoszone jako gotowe.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-109">Select a production order that has the status Reported as finished.</span></span>  
-2. <span data-ttu-id="3a9eb-110">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-110">On the Action Pane, click Production order.</span></span>
-3. <span data-ttu-id="3a9eb-111">Kliknij opcję Koniec.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-111">Click End.</span></span>
-    * <span data-ttu-id="3a9eb-112">Na tej stronie możesz potwierdzić, że chcesz zakończyć zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-112">On this page, you can confirm that you want to end the production order.</span></span>  
-4. <span data-ttu-id="3a9eb-113">Kliknij kartę Ogólne.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-113">Click the General tab.</span></span>
-5. <span data-ttu-id="3a9eb-114">W polu Data wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-114">In the Date field, enter a date.</span></span>
-6. <span data-ttu-id="3a9eb-115">W polu Metoda odpadków wybierz opcję „Alokacja”.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-115">In the Scrap method field, select 'Allocation'.</span></span>
-    * <span data-ttu-id="3a9eb-116">Po wybraniu metody alokacji koszty z materiałów uznanych za odpadki są dodawane do wyrobów gotowych.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-116">When you select the Allocation method, costs from the scrapped materials are added to the finished goods.</span></span>  
-7. <span data-ttu-id="3a9eb-117">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-117">Click OK.</span></span>
+## <a name="end-a-production-order"></a><span data-ttu-id="20e64-107">Kończenie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="20e64-107">End a production order</span></span>
+1. <span data-ttu-id="20e64-108">Wybierz kolejno opcje Kontrola produkcji > Zlecenia produkcyjne > Wszystkie zlecenia produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="20e64-108">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="20e64-109">Zaznacz zlecenie produkcyjne o stanie Zgłoszone jako gotowe.</span><span class="sxs-lookup"><span data-stu-id="20e64-109">Select a production order that has the status Reported as finished.</span></span>  
+2. <span data-ttu-id="20e64-110">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="20e64-110">On the Action Pane, click Production order.</span></span>
+3. <span data-ttu-id="20e64-111">Kliknij opcję Koniec.</span><span class="sxs-lookup"><span data-stu-id="20e64-111">Click End.</span></span>
+    * <span data-ttu-id="20e64-112">Na tej stronie możesz potwierdzić, że chcesz zakończyć zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="20e64-112">On this page, you can confirm that you want to end the production order.</span></span>  
+4. <span data-ttu-id="20e64-113">Kliknij kartę Ogólne.</span><span class="sxs-lookup"><span data-stu-id="20e64-113">Click the General tab.</span></span>
+5. <span data-ttu-id="20e64-114">W polu Data wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="20e64-114">In the Date field, enter a date.</span></span>
+6. <span data-ttu-id="20e64-115">W polu Metoda odpadków wybierz opcję „Alokacja”.</span><span class="sxs-lookup"><span data-stu-id="20e64-115">In the Scrap method field, select 'Allocation'.</span></span>
+    * <span data-ttu-id="20e64-116">Po wybraniu metody alokacji koszty z materiałów uznanych za odpadki są dodawane do wyrobów gotowych.</span><span class="sxs-lookup"><span data-stu-id="20e64-116">When you select the Allocation method, costs from the scrapped materials are added to the finished goods.</span></span>  
+7. <span data-ttu-id="20e64-117">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="20e64-117">Click OK.</span></span>
 
-## <a name="validate-calculation-results"></a><span data-ttu-id="3a9eb-118">Sprawdzanie poprawności wyników obliczeń</span><span class="sxs-lookup"><span data-stu-id="3a9eb-118">Validate calculation results</span></span>
-1. <span data-ttu-id="3a9eb-119">W okienku akcji kliknij pozycję Zarządzanie kosztami.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-119">On the Action Pane, click Manage costs.</span></span>
-2. <span data-ttu-id="3a9eb-120">Kliknij przycisk Wyświetl porównanie kosztów.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-120">Click View cost comparison.</span></span>
-    * <span data-ttu-id="3a9eb-121">Po zakończeniu zlecenia produkcyjnego można porównywać szacowany koszt własny ze zrealizowanym kosztem własnym w celu uzyskania obrazu odchyleń względem kosztów produkcji.</span><span class="sxs-lookup"><span data-stu-id="3a9eb-121">After you have ended the production order, you can compare the estimated cost price against the realized cost price to get an overview of the production variances.</span></span>  
+## <a name="validate-calculation-results"></a><span data-ttu-id="20e64-118">Sprawdzanie poprawności wyników obliczeń</span><span class="sxs-lookup"><span data-stu-id="20e64-118">Validate calculation results</span></span>
+1. <span data-ttu-id="20e64-119">W okienku akcji kliknij pozycję Zarządzanie kosztami.</span><span class="sxs-lookup"><span data-stu-id="20e64-119">On the Action Pane, click Manage costs.</span></span>
+2. <span data-ttu-id="20e64-120">Kliknij przycisk Wyświetl porównanie kosztów.</span><span class="sxs-lookup"><span data-stu-id="20e64-120">Click View cost comparison.</span></span>
+    * <span data-ttu-id="20e64-121">Po zakończeniu zlecenia produkcyjnego można porównywać szacowany koszt własny ze zrealizowanym kosztem własnym w celu uzyskania obrazu odchyleń względem kosztów produkcji.</span><span class="sxs-lookup"><span data-stu-id="20e64-121">After you have ended the production order, you can compare the estimated cost price against the realized cost price to get an overview of the production variances.</span></span>  
