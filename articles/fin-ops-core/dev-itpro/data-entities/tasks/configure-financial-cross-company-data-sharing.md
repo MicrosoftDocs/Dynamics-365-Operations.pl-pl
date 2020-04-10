@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dc368351641f3e2432dfdbbaf8eed8694595bd4e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 98eeae9f50238aae172e4a217d40be39ee46a0b8
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184377"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142968"
 ---
 # <a name="configure-financial-cross-company-data-sharing"></a>Konfigurowanie udostępniania danych finansowych między firmami
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tej procedurze pokazano sposób konfigurowania, włączania, sprawdzania poprawności i rozwiązywania konfliktów podczas udostępniania danych między firmami. Procedura wykorzystuje firmę USMF i szablon udostępniania danych finansowych.
 

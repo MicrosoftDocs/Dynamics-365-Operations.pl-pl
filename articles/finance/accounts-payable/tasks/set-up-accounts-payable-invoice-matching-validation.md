@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b048c49de7357ec1b5cbf36dd4f22a5d3efd443b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a101edd9e25fba1aa2325cb2193c6ea56282c9d1
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189414"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143795"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurowanie sprawdzania poprawności uzgadniania faktur rozrachunków z dostawcami
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Zanim rozpoczniesz, upewnij się, że wybrano klucz konfiguracji Uzgadnianie faktur. Jeśli firma śledzi wydatki, na przykład koszty frachtu, przy użyciu opłat, upewnij się, że wybrany został klucz konfiguracji Opłaty.  Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów. Różnice między tymi dokumentami są nazywane rozbieżnościami (w uzgadnianiu/wykrytymi podczas uzgadniania). Rozbieżności w uzgadnianiu są porównywane z ustawionymi wartościami tolerancji. Jeśli rozbieżność przekracza wartość procentową lub kwotową, są wyświetlane ikony uzgadniania odchyleń na stronach **Faktura od dostawcy** i **Szczegóły uzgadniania faktur**.
 

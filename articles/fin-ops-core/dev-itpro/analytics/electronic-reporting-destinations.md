@@ -3,7 +3,7 @@ title: Miejsca docelowe raportowania elektronicznego (ER)
 description: Ten temat zawiera informacje dotyczące zarządzania miejscami docelowymi sprawozdawczości elektronicznej (ER), typów obsługiwanych lokalizacji docelowych oraz względów bezpieczeństwa.
 author: nselin
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2e4c6951afbff367dc93072d20395c3a37fffbcb
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030780"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150822"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Lokalizacje docelowe raportowania elektronicznego (ER)
 
@@ -114,7 +114,7 @@ Po zakończeniu tego ustawienia opcja **Uruchom wersję roboczą** będzie dost�
 
 [![Opcja Uruchom wersję roboczą](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
-## <a name="DestinationFailure"></a>Obsługa niepowodzeń związanych z miejscem docelowym
+## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Obsługa niepowodzeń związanych z miejscem docelowym
 
 Zazwyczaj format ER jest uruchamiany w zakresie określonego procesu biznesowego. Jednak dostarczenie dokumentu wychodzącego, który jest generowany w trakcie wykonywania formatu ER, musi być niekiedy traktowane jako część tego procesu biznesowego. W takim przypadku, jeśli dostawa wygenerowanego dokumentu wychodzącego do skonfigurowanego miejsca docelowego nie powiedzie się, wykonanie procesu biznesowego musi być anulowane. Aby skonfigurować odpowiednie miejsce docelowe ER, wybierz opcję **Zatrzymaj przetwarzanie przy błędzie**.
 
@@ -124,7 +124,7 @@ Można na przykład skonfigurować przetwarzanie płatności dostawcy, tak aby b
 
 Jeśli wyczyścisz pole **Zatrzymaj przetwarzanie przy błędzie** dla składnika **CoveringLetter** w miejscu docelowym pliku, płatność będzie uznana za rozpatrzoną pomyślnie, nawet jeśli list przewodni nie zostanie dostarczony pocztą e-mail. Stan płatności zostanie zmieniony z **Brak** na **Wysłane**, nawet jeśli nie można wysłać listu przewodniego, ponieważ na przykład brakuje adresu e-mail odbiorcy lub nadawcy lub jest on niepoprawny.
 
-## <a name="OutputConversionToPDF"></a>Konwersja danych wyjściowych do formatu PDF
+## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Konwersja danych wyjściowych do formatu PDF
 
 Opcja konwersji pliku PDF umożliwia konwertowanie danych wyjściowych z formatu Microsoft Office (Excel/Word) na format PDF.
 
@@ -157,6 +157,19 @@ Opcję konwersji na format PDF można włączyć tylko dla składników plików 
 Aby włączyć konwersję pliku PDF dla pliku docelowego, zaznacz pole wyboru **Konwertuj na PDF**.
 
 [![Włączanie konwersji pliku PDF dla miejsca docelowego pliku](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+
+### <a name=""></a><a name="SelectPdfPageOrientation">Wybierz orientację strony do konwersji na format PDF</a>
+
+W przypadku generowania konfiguracji ER w formacie programu Excel i konwersji na format PDF można określić orientację strony pliku PDF. Po zaznaczeniu pola wyboru **Konwertuj na PDF** w celu włączenia konwersji do formatu PDF dla pliku docelowego, który generuje plik wyjściowy w formacie programu Excel, pole **Orientacja strony** staje się dostępne w **Ustawieniach konwersji PDF** na skróconej karcie. W polu **Orientacja strony** możesz wybrać preferowaną orientację strony.
+
+[![Wybierz orientację strony do konwersji na format PDF](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+
+> [!NOTE]
+> Aby można było wybrać orientację strony PDF, należy zainstalować rozwiązanie Microsoft Dynamics 365 Finance w wersji 10.0.10 (maj 2020) lub nowszej.
+>
+> Wybrana orientacja strony jest stosowana do wszystkich konfiguracji ER, które są generowane w formacie programu Excel, a następnie konwertowane na format PDF.
+>
+> Jeśli przekonwertowany plik PDF został utworzony na podstawie konfiguracji ER w formacie programu Word, orientacja strony pliku PDF jest pobierana z dokumentu programu Word.
 
 ## <a name="security-considerations"></a>Zagadnienia dotyczące zabezpieczeń
 

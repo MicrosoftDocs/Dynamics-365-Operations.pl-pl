@@ -16,16 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f83091a9f3e96a9176860bd16fa5969507488a25
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5e770c905079461c1f4f0117f61f6c10b86ddaf6
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547475"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146613"
 ---
 # <a name="start-a-production-order"></a>Rozpoczynanie zlecenia produkcyjnego
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ta procedura pokazuje sposób rozpoczynania zlecenia produkcyjnego na wydziale produkcji. W tym procesie jest zgłaszane zużycie materiału i czasu. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Jest to piąta z siedmiu procedur, które wyjaśniają cykl życia zlecenia produkcyjnego.
 

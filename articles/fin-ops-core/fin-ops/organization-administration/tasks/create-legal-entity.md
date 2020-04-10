@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f63591d2bdb88de8c9bc7a544ac4f3adbab90a7c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cab889d89b239c746c98108a22746774203e4169
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179491"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140612"
 ---
 # <a name="create-a-legal-entity"></a>Tworzenie firmy
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Firma to organizacja, która jest identyfikowana przez rejestrację urzędową. Firmy mogą zawierać umowy i wymaga się od nich przygotowywania zestawień na temat ich wydajności. Poniżej znajduje się procedura wyjaśniająca tworzenie firmy. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

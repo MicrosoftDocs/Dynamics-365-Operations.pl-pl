@@ -16,22 +16,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 55bc7479ca9ba3ca86e23b5bee106ef169c40077
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 94d5c3f6677ec10ea1b9ac3c488c3b8d7dc6856f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836402"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147487"
 ---
 # <a name="create-a-procurement-catalog"></a>Tworzenie katalogu zaopatrzenia
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak utworzyć katalog zaopatrzenia. To zadanie jest zazwyczaj wykonywane przez pracownika działu zaopatrzenia. Dowiedz się także, jak pracownicy mogą używać katalogu podczas tworzenia zapotrzebowania. Aby można było utworzyć katalogu, w systemie musi istnieć hierarchia kategorii zaopatrzenia. Hierarchia, wraz ze wszystkimi znajdującymi się w niej produktami, jest dziedziczona przez nowy katalog. Można użyć tego przewodnika z danymi firmy demonstracyjne USMF, gdzie hierarchia kategorii zaopatrzenia jest już dostępna, oraz wobec przykładów opisanych w krokach procedury.
 
 
 ## <a name="ensure-that-a-procurement-category-hierarchy-exists"></a>Sprawdzanie, czy istnieje hierarchia kategorii zaopatrzenia
-1. Wybierz kolejno **okienko nawigacji > Moduły > Zaopatrzenie i sourcing > Kategorie zaopatrzenia**. W danych firmy demonstracyjnej USMF jest dostępna hierarchia kategorii zaopatrzenia, a produkty zostały dodane do kategorii **Urządzenia biurowe/Komputery**. Jeśli wykonujesz tę procedurę jako przewodnik po zadaniu, musisz odblokować przewodnik, aby móc przeglądać kategorię. Jeśli hierarchia nie była dostępna, należało ją utworzyć kliknięciem przycisku **Nowy**. Można to zrobić tylko raz.  
+1. Wybierz kolejno **okienko nawigacji > Moduły > Zaopatrzenie i sourcing > Kategorie zaopatrzenia**. W danych firmy demonstracyjnej USMF jest dostępna hierarchia kategorii zaopatrzenia, a produkty zostały dodane do kategorii **Urządzenia biurowe/Komputery**. Jeśli wykonujesz tę procedurę jako przewodnik po zadaniu, musisz odblokować przewodnik, aby móc przeglądać kategorię. Jeśli hierarchia nie była dostępna, należało ją utworzyć klikając przycisk **Nowa**. Można to zrobić tylko raz.  
 2. Zamknij stronę.
 
 ## <a name="create-a-catalog"></a>Tworzenie katalogu

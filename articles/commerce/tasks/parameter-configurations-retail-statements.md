@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d8cae6d2fa7c469f50fa92141a6cb5a0af1df4b0
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7892a216d836ebcc297a5b7eb87bc996dd9b91bf
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023664"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140850"
 ---
 # <a name="configure-parameters-that-affect-retail-statements"></a>Konfigurowanie parametrów wpływających na zestawienia sieci sprzedaży
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat pokazuje konfiguracje parametrów Commerce, które mają wpływ na sposób tworzenia i księgowana zestawień. Ta procedura wykorzystuje firmę demonstracyjną USRT.
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d575e609ac5289f9acb219322c9df93972e5dfc
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: d9036b5cbad10af725aaaf5d1d9498687c3a1d58
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995220"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146429"
 ---
 # <a name="set-up-sales-commission-rules"></a>Konfigurowanie reguł dla prowizji od sprzedaży
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tej procedurze pokazano, jak skonfigurować oraz włączyć obliczanie i śledzenie prowizji od sprzedaży. W procedurze pokazano, jak utworzyć grupy odbiorców i prowizji za towary, a następnie jak połączyć wybranego odbiorcę i produkt z odpowiednimi grupami. Te grupy są następnie używane w konfiguracji obliczania prowizji do tworzenia kombinacji odbiorcy, towaru i przedstawicieli handlowych, które muszą pasować do zamówienia sprzedaży, aby uprawniać sprzedawców do prowizji. Tworzenie grup odbiorców i prowizji za towary jest opcjonalne, ponieważ można obliczenia prowizji można również wykonywać dla poszczególnych odbiorców i/lub towarów. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
 

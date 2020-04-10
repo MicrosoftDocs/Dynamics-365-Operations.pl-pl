@@ -3,7 +3,7 @@ title: Aktualizacje wymagane przepisami prawa
 description: Ten temat zawiera listę planowanych i udostępnionych aktualizacji wymaganych przepisami prawa dla Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/09/2020
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2aea83f99c7e5b017ae0cf9d755882739e22ccb7
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: f35ab4b3ad49edfd0b68f906f44b8a2b04787f1a
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3112762"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161812"
 ---
 # <a name="regulatory-updates"></a>Aktualizacje wymagane przepisami prawa
 
@@ -42,34 +42,38 @@ Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych
 
 |Kraj|Planowana data wydania|Wersja wydania|Aktualizacje wymagane przepisami prawa|
 |--------------------|---------------|-------|-------|
-|      Brazylia         |   Marzec 2020 — styczeń 2020      | 10.0.9, 10.0.8      |   DRCST SC — rozporządzenie SEF nr 416    |
-|      Brazylia         |   Marzec 2020 — styczeń 2020     | 10.0.9, 10.0.8      |   Udział w SPED — układ dla stycznia 2020    |
+|      Brazylia         |   Kwiecień 2020 - styczeń 2020      | 10.0.10, 10.0.9 HF, 10.0.8 HF      |   DRCST SC — rozporządzenie SEF nr 416    |
+|      Brazylia         |   2020 kwietnia      | 10.0.10      |   SPED Contribuições (PIS/COFINS) — bloki M115 i M515    |
+|      Brazylia         |   2020 kwietnia      | 10.0.10      |   Udziały SPED — Rejestrowanie aktualizacji C100 i D100, gdy nie jest możliwe odzyskanie kredytu    |
+|      Brazylia         |   Kwiecień 2020 - styczeń 2020     | 10.0.10, 10.0.9 HF, 10.0.8 HF      |   Udział w SPED — układ dla stycznia 2020    |
 |      Brazylia         |   2020 marca       | 10.0.9      |   SPED Fiscal — zmiany w rekordzie D100 w polu COD_MUN_ORI    |
 |      Brazylia         |   Marzec 2020 — styczeń 2020       | 10.0.9, 10.0.8      |   DRCST SC — rozporządzenie SEF nr 254/19    |
 |      Brazylia         |   2020 stycznia       | 10.0.8      |   Informacje uzupełniające dotyczące ICMS-ST    |
-|      Brazylia        |   Marzec 2020 — styczeń 2020       | 10.0.9, 10.0.8HF      |   Układ fiskalny SPED 014 |
-|      Brazylia          |   Marzec 2020 — styczeń 2020       | 10.0.9, 10.0.8HF      |   DRCST SC — rozporządzenie SEF nr 343DR   |
-|      Francja          |   2020 marca       | 10.0.9      |   Lokalizacja Francuska: ISO 20022 format płatności międzynarodowych i przelewów skarbowych   |
-|      Węgry          |   2020 marca       | 10.0.9, 10.0.8      |   System fakturowania online dla wersji 2.0 w systemie Finance and Operations    |
-|      Indie          |   2020 marca       | 10.0.9      |   Nowa GSTR (ANX-1 & ANX-2) powrót do narzędzia offline   |
-|      Włochy          |   2020 stycznia       | 10.0.8      |   Zmiany w zarządzaniu podatkiem VAT według D.L. 119 z dnia 23 października 2018: roczne sprawozdanie podatkowe |
-|      Włochy         |   2020 marca     | 10.0.9, 10.0.8HF      |   Retail - Zarządzanie informacjami o odbiorcach w POS |
+|      Brazylia         |   Marzec 2020 — styczeń 2020       | 10.0.9, 10.0.8HF      |   Układ fiskalny SPED 014 |
+|      Brazylia         |   Marzec 2020 — styczeń 2020       | 10.0.9, 10.0.8HF      |   DRCST SC — rozporządzenie SEF nr 343DR   |
+|      Francja         |   2020 kwietnia       | 10.0.10      |   Opłata prawna za deklarację do urzędu skarbowego dla osób prowadzących działalność na własny rachunek (DAS2)    |
+|      Francja         |   2020 marca       | 10.0.9      |   Lokalizacja Francuska: ISO 20022 format płatności międzynarodowych i przelewów skarbowych    |
+|      Indie         |   2020 marca      | 10.0.9      |   Nowa GSTR (ANX-1 & ANX-2) powrót do narzędzia offline    |
+|      Włochy         |   2020 stycznia      | 10.0.8      |   Zmiany w zarządzaniu podatkiem VAT według D.L. 119 z dnia 23 października 2018: roczne sprawozdanie podatkowe    |
+|      Włochy         |   2020 marca      | 10.0.9, 10.0.8HF      |   Retail - Zarządzanie informacjami o odbiorcach w POS |
 |      Włochy         |   2020 marca      | 10.0.9, 10.0.8HF      |   Retail — drukowanie informacji o odbiorcach w paragonie fiskalnym |
 |      Japonia          |   2020 marca     | 10.0.9, 10.0.8HF     |   Japońskie towarzystwo bankowe zastępuje formaty płatności o stałej długości z schemacie (JBA) ISO20022 |
 |      Japonia          |   2020 stycznia      | 10.0.8       |   Wprowadzono zmianę stawki podatku od zużycia i obniżoną stawkę podatkową (raport podatku konsumpcyjnego) |
 |      Meksyk          |   2020 stycznia     | 10.0.8        |   Retail — globalne faktury elektroniczne CFDI: różne rozstrzygnięcia 2019 — c_Codigo, kod pocztowy i strefa czasowa |
 |      Meksyk           |   2020 stycznia       | 10.0.8     |   Walidacja kodu w katalogu produktów i usług |
+|      Holandia          |   2020 kwietnia   | 10.0.10     |   Nowa wersja taksonomii holenderskiej — NT14 |
 |      Norwegia          |   2020 marca   | 10.0.9, 10.0.8HF     |   Aktualizacja SAF-T XSD do wersji 1.1 dla Dynamics 365 for Finance and Operations |
 |      Polska          |   2020 marca    | 10.0.9     |   Rejestr zakupu VAT i SAF VAT: niestandardowa Agencja z dokumentów SAD musi być zastąpiona przez nazwę podmiotu trzeciego i numer identyfikacji podatkowej |
 |      Polska          |   Marzec 2020 — styczeń 2020   | 10.0.9, 10.0.8HF     |   Retail - Zarządzanie informacjami o odbiorcach w POS |
 |      Polska          |   Marzec 2020 — styczeń 2020     | 10.0.9, 10.0.8HF     |   Retail — drukowanie informacji o odbiorcach w paragonie fiskalnym |
 |      Polska          |   Marzec 2020 — styczeń 2020     | 10.0.9, 10.0.8     |   JPK faktur (JPK_FA) wersja 3 od 2 grudnia 2019 r. |
-|      Polska          |   Marzec 2020 — styczeń 2020     | 10.0.9, 10.0.8     |   JPK_VDEK zastępuje JPK_VAT (SAF VAT) |
+|      Polska          |   Kwiecień 2020 - styczeń 2020     | 10.0.10, 10.0.9, 10.0.8     |   JPK_VDEK zastępuje JPK_VAT (SAF VAT) |
 |      Rosja          |   2020 marca     | 10.0.9     |   Format deklaracji podatku od nieruchomości do raportowania w roku 2019 |
 |      Rosja          |   2020 marca     | 10.0.9     |   Aktualizacje formatu deklaracji podatku dochodowego |
 |      Singapur           |   2020 stycznia     | 10.0.8      |   Raporty zwrotów podatku GST |
 |      Szwajcaria           |   2020 marca     | 10.0.9      |   Szwajcarski dokument płatności ISR otrzymuje nowy format (kod QR) |
-|      Zjednoczone Królestwo          |   2020 stycznia       | 10.0.8      |   Zamiana podatku na format cyfrowy (MTD) — zgoda administratora systemu na przesyłanie informacji poza D365 za pomocą integracji z urzędem HMRC |
+|      Wielka Brytania           |   2020 kwietnia     | 10.0.10      |   Dodatkowy pakiet zapobiegania oszustwom MTD |
+|      Wielka Brytania         |   2020 stycznia      | 10.0.8      |   Zamiana podatku na format cyfrowy (MTD) — zgoda administratora systemu na przesyłanie informacji poza D365 za pomocą integracji z urzędem HMRC    |
 
 
 

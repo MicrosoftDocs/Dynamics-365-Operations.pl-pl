@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 65b1d1a232558efbe05e83d51706a78b12439e47
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 524ae7b3062893ed07170227ea9b8908cd5858e1
+ms.sourcegitcommit: 1fb34abfe3382bc00237a2c00184fe201c12229f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124146"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "3151304"
 ---
 # <a name="credit-management-setup"></a>Konfiguracja zarządzania kredytem 
 
@@ -40,13 +40,17 @@ Przejdź do **Kredyt i windykacje \> Konfiguracja \> Przepływów pracy zarządz
 
 Zamówienie sprzedaży można wstrzymać, jeśli warunki płatności w zamówieniu nie są zgodne z domyślnymi warunkami płatności dla odbiorcy. Jednak czasami warunki płatności różnią się, ale są wystarczająco podobne, że zamówienie nie powinno być wstrzymane. Warunki płatności można klasyfikować w taki sposób, aby niektóre z nich miały taką samą rangę, natomiast inne mają wyższą lub niższą rangę.
 
-Jeśli są aktywne rankingi warunków płatności, zamówienia sprzedaży zostaną wstrzymane, jeśli warunki płatności w zamówieniu mają wyższą rangę niż domyślne warunki płatności dla odbiorcy.
+Jeśli są aktywne rankingi warunków płatności i jeśli warunki płatności w zamówieniu mają wyższą rangę niż domyślne warunki płatności dla odbiorcy, zamówienie sprzedaży zostanie wstrzymane.
+
+Można ustawić klasyfikację warunków płatności przechodząc do **Kredyt i windykacje \> Ustawienia \> Ustawienia zarządzania kredytami  \>Klasyfikuj warunki płatności**  
 
 ### <a name="ranking-settlement-discounts"></a>Ranking rabatów rozliczenia
 
 Zamówienie sprzedaży można wstrzymać, jeśli rabaty w gotówce w zamówieniu nie są zgodne z domyślnym rabatem w gotówce dla odbiorcy. Jednak czasami rabaty w gotówce różnią się, ale są wystarczająco podobne, że zamówienie nie powinno być wstrzymane. Rabaty w gotówce można klasyfikować w taki sposób, aby niektóre z nich miały taką samą rangę, natomiast inne mają wyższą lub niższą rangę.
 
-Jeśli są aktywne rankingi rabatów w gotówce, zamówienia sprzedaży zostaną wstrzymane, jeśli rabat w gotówce w zamówieniu ma wyższą rangę niż domyślny rabat w gotówce dla odbiorcy.
+Jeśli są aktywne rankingi rabatów w gotówce i jeśli rabat w gotówce w zamówieniu ma wyższą rangę niż domyślny rabat w gotówce dla odbiorcy, zamówienie sprzedazy zostanie wstrzymane.
+
+Można ustawić klasyfikację warunków płatności przechodząc do **Kredyt i windykacje \> Ustawienia \> Ustawienia zarządzania kredytami  \>Klasyfikuj rabaty rozliczeń**  
 
 ## <a name="reasons"></a>Przyczyny
 
@@ -56,7 +60,7 @@ W zarządzaniu kredytami używane są różne typy przyczyn:
 - Przyczyny zwolnienia są przypisywane do zamówienia, gdy jest ono zwalniane z wstrzymania.
 - Przyczyny stanu wskazuje, dlaczego stan konta został przypisany do odbiorcy.
 
-Przyczyny można określić na stronie **Przyczyny zarządzania kredytami** (**Zarzadzanie kredytem \> Konfiguracja \> Zarządzanie kredytem \> Przyczyny zarządzania kredytami**).
+Przyczyny można określić na stronie **Przyczyny zarządzania kredytami** (**Kredyt i windykacje \> Konfiguracja \> Ustawienia zarządzania kredytem \> Przyczyny zarządzania kredytami**).
 
 1. W polu **Typ przyczyny** wybierz typ przyczyny: **wstrzymanie**, **zwolnienie** lub **stan**.
 2. W polu **Przyczyna** wprowadź nazwę dla przyczyny.
@@ -66,7 +70,7 @@ Przyczyny można określić na stronie **Przyczyny zarządzania kredytami** (**Z
 
 Grupy zarządzania kredytami służą do identyfikowania odbiorców lub grup odbiorców o takich samych właściwościach zarządzania kredytami. Na przykład grupy zarządzania kredytami mogą być używane do określenia blokowania i wykluczania reguł zarządzania kredytami dla odbiorców.
 
-Grupy zarządzania kredytem można tworzyć na stronie **Grupy zarządzania kredytami** (**Zarzadzanie kredytem \> Konfiguracja > Konfiguracja grup \> Grupy zarządzania kredytem**).
+Grupy zarządzania kredytem można tworzyć na stronie **Grupy zarządzania kredytami** (**Kredyt i windykacje \> Konfiguracja > Ustawienia zarządzania kredytem \> Grupy zarządzania kredytem**).
 
 1. Wybierz **Nowy**, aby utworzyć wiersz.
 2. Umożliwia wprowadzenie identyfikatora grupy. Identyfikator może zawierać maksymalnie 10 znaki.
@@ -78,7 +82,7 @@ Grupa zarządzania kredytami jest przypisywana do odbiorcy w formularzu **Kredyt
 
 Istnieje możliwość tworzenia stanu konta w celu zidentyfikowania pozycji kredytowej konta odbiorcy. Można zdefiniować stan i jego wpływ na procesy fakturowania i dostawy. Stanów kont można również używać do ustalania reguł blokowania dla odbiorcy.
 
-Stan konta można utworzyć na stronie **Stany konta** (**Konfiguracja zarządzania \> Konfiguracja > Konfiguracja grup \> Stany konta**).
+Stan konta można utworzyć na stronie **Stany konta** (**Kredyt i windykacje \> Konfiguracja > Ustawienia zarządzania kredytem \> Stany konta**).
 
 1. Dodaj stan konta i wprowadź opis odpowiadający pozycji kredytowej odbiorcy. Na przykład można skorzystać zopcji **Normalny** , aby wskazać, że odbiorca jest w dobrym stanie, a otwarte zamówienia podlegają standardowemu przetwarzaniu zarządzania kredytami.
 2. W polach **Fakturowanie** i **Dostawa w wstrzymaniu** wybierz typ wstrzymania dla odbiorców posiadających ten stan konta. W przypadku stosowania reguł limitu kredytu można przechować wszystkie procesy przetwarzania, zatrzymać tylko przetwarzanie faktur lub wstrzymać przetwarzanie.
@@ -87,7 +91,7 @@ Stan konta można utworzyć na stronie **Stany konta** (**Konfiguracja zarządza
 
 Istnieje możliwość skonfigurowania grup punktacji w celu zdefiniowania czynników ryzyka oraz kryteriów, które są używane do ich mierzenia. Gdy informacje o odbiorcy są stosowane do grupy punktowanej, obliczany jest wynik dla każdego współczynnika ryzyka i używany do odłożenia odbiorcy z grupy ryzyka. Grupa ryzyka może służyć do identyfikowania zdolności kredytowych i obliczania automatycznych limitów kredytu.
 
-Można utworzyć grupy oceniania na stronie **Grupy punktacji** (**Zarządzanie kredytem \> Konfiguracja \> Konfiguracja ryzyka \> Grupy punktacji**).
+Można utworzyć grupy oceniania na stronie **Grupy punktacji** (**Kredyt i windykacje \> Konfiguracja \> Ustawienia zarządzania kredytem \> Ryzyko \> Grupy punktacji**).
 
 1. Utwórz grupę punktacji i nadaj jej nazwę.
 2. Wprowadź opis, aby dokładniej opisać grupę punktacji.
@@ -108,11 +112,11 @@ Można utworzyć grupy oceniania na stronie **Grupy punktacji** (**Zarządzanie 
     1. W polu **Wartość** wprowadź zdefiniowaną przez użytkownika wartość, która powinna zostać dostarczona z informacji o odbiorcy.
     2. W polu **Punktacja** wprowadź wartość, która powinna zostać przypisana, gdy określona wartość jest w zakresie „od"/„do".
 
-## <a name="risk-assessments"></a>Oceny ryzyka
+## <a name="risk-classification"></a>Klasyfikacja ryzyka
 
 Można zdefiniować oceny ryzyka, które można przypisać do odbiorców, na podstawie ich wyniku ryzyka. Wynik ryzyka jest obliczany przez porównanie informacji o klientach z każdą grupą punktowaną. Wyniki są sumowane, a wynik łączny jest porównywany z wartościami w ustawieniach grupy ryzyka w celu zidentyfikowania grupy ryzyka, do której należy dany odbiorca. Wyniki grupy ryzyka służą do definiowania reguł blokowania i wykluczania zarządzania kredytami dla odbiorcy.
 
-Istnieje możliwość skonfigurowania grup ryzyka na stronie **Oceny ryzyka** (**Zarządzanie kredytami \> Konfiguracja \> Konfiguracja ryzyka \> Oceny ryzyka**).
+Istnieje możliwość skonfigurowania grup ryzyka na stronie **Oceny ryzyka** (**Kredyt i windykacje \> Konfiguracja \> Ustawienia zarządzania kredytem \> Ryzyko \> Klasyfikacja ryzyka**).
 
 1. Umożliwia wprowadzenie identyfikatora grupy ryzyka.
 2. Wprowadź opis, aby dokładniej opisać grupę ryzyka.
@@ -121,7 +125,7 @@ Istnieje możliwość skonfigurowania grup ryzyka na stronie **Oceny ryzyka** (*
 
 ## <a name="guaranteeinsurance-types"></a>Typy gwarancji/ubezpieczenia
 
-Typy gwarancji/ubezpieczenia można skonfigurować na stronie **Typy gwarancji/ubezpieczenia** (**Zarządzanie kredytem \> Konfiguracja \> Konfiguracja gwarancji/ubezpieczenia \> Typy gwarancji/ubezpieczenia**).
+Typy gwarancji/ubezpieczenia można skonfigurować na stronie **Typy gwarancji/ubezpieczenia** (**Kredyt i windykacje \> Konfiguracja \> Ustawienia zarządzania kredytem \> Gwarancje i ubezpieczenia \> Typy gwarancji i ubezpieczenień**).
 
 1. Umożliwia wprowadzenie gwarancji lub typu ubezpieczenia, który identyfikuje nazwisko gwaranta lub brokera.
 2. Umożliwia wprowadzenie opisu gwaranta/brokera ubezpieczeń.
@@ -130,14 +134,14 @@ Typy gwarancji/ubezpieczenia można skonfigurować na stronie **Typy gwarancji/u
 
 Typów pokrycia można używać do dalszego klasyfikowania polis ubezpieczeniowych. Nie można ich używać z gwarancjami.
 
-Typy zapotrzebowania można dodawać na stronie **Typy pokrycia** (**Zarządzanie kredytem \> Konfiguracja \> Konfiguracja gwarancji/ubezpieczenia \> Typy pokrycia**).
+Typy zapotrzebowania można dodawać na stronie **Typy pokrycia** (**Kredyt i windykacje \> Konfiguracja \> Ustawienia zarządzania kredytem \> Gwarancje i ubezpieczenia \> Typy pokrycia**).
 
 1. Umożliwia wprowadzenie typu zapotrzebowania w celu zidentyfikowania typu zapotrzebowania, który ma zostać dodany jako ubezpieczenie lub gwarancja.
 2. Wprowadź krótki opis typu pokrycia.
 
 ## <a name="automatic-credit-limits"></a>Automatyczne limity kredytu
 
-Istnieje możliwość tworzenia kryteriów automatycznych limitów kredytu na stronie **Automatyczne ograniczenia limitu** (**Zarządzanie kredytami \> Konfiguracja \> Konfiguracja ryzyk \> Automatyczne ograniczenia limitu**).
+Istnieje możliwość tworzenia kryteriów automatycznych limitów kredytu na stronie **Automatyczne ograniczenia limitu** (**Kredyt i windykacje \> Konfiguracja \> Ustawienia zarządzania kredytem \> Ryzyko \> Automatyczne ograniczenia limitu**).
 
 1. Umożliwia wybranie grupy ryzyka, do której ma być przypisany automatyczny limit kredytu.
 2. Umożliwia wybór waluty dla automatycznego limitu kredytu. Istnieje możliwość utworzenia wielu automatycznych limitów kredytu w różnych walutach dla tej samej grupy ryzyka.

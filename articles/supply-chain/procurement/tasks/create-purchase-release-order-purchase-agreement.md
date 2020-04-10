@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da161c9066c822f8c09e5eda90994e8b03af4681
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: da25486207319879a9acc8376f3f2c78f9b8d939
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916872"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149695"
 ---
 # <a name="create-a-purchase-release-order-from-a-purchase-agreement"></a>Tworzenie zlecenia wydania zakupu na podstawie umów zakupu
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tej procedurze pokazano sposób korzystania z umowy zakupu podczas tworzenia zamówienia zakupu. Umowa zakupu musi być stosowana podczas tworzenia zamówienia zakupu, ponieważ istnieją ogólne warunki, które powinny być skopiowane do nagłówka zamówienia zakupu. To zadanie zazwyczaj wykonuje pracownik działu zakupów. Warunkiem wstępnym wykonania zadań z tego przewodnika jest istnienie ważnej umowy zakupu ze zobowiązaniem co do ilości produktu dla dostawcy i towarów. Tej samej procedury można użyć w przypadku umowy zakupu z innymi typami zobowiązań. Zadania z przewodnika można wykonać przy użyciu danych firmy demonstracyjnej USMF. Jeśli używasz firmy USMF, można najpierw wykonać zadania z przewodnika „Tworzenie umowy zakupu” i skonfigurować warunki wstępne konieczne dla tego przewodnika.
 

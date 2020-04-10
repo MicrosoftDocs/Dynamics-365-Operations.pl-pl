@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie ksiąg amortyzacji (maj 2016)
-description: W tym przewodniku po zadaniach zostanie utworzona nowa księga amortyzacji i skojarzona z grupą środków trwałych.
+title: Konfigurowanie ksiąg amortyzacji
+description: Ta procedura prowadzi proces tworzenia nowej księgi amortyzacji i kojarzy ją z grupą środków trwałych.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6840e211847494598a81cd3228dbd3796447e18c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 03f915fa91e0eeff2f26ab9a60bbd5118317e853
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186907"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154611"
 ---
-# <a name="set-up-depreciation-books-may-2016"></a>Konfigurowanie ksiąg amortyzacji (maj 2016)
+# <a name="set-up-depreciation-books"></a>Konfigurowanie ksiąg amortyzacji 
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-W tym przewodniku po zadaniach zostanie utworzona nowa księga amortyzacji i skojarzona z grupą środków trwałych.  Przewodnik korzysta z roli Księgowy i danych firmy demonstracyjnej USMF.
-
+Ta procedura prowadzi proces tworzenia nowej księgi amortyzacji i kojarzy ją z grupą środków trwałych. 
 
 ## <a name="create-a-depreciation-book"></a>Tworzenie księgi amortyzacji
 1. Wybierz kolejno opcje Środki trwałe > Ustawienia > Księgi amortyzacji.

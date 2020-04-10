@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 468a2637f4a5b2b7ff3514c92c52fb26b9231bc4
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e06fdda7d2d73c3fe4a4b9ee5bd44e6ef857b8d5
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042926"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142266"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiowanie zależności konfiguracji ER od innych składników
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W celu wykonania tych kroków należy najpierw wykonać kroki w przewodniku po zadaniu ER Zarządzanie konfiguracjami mapowania modelu oraz mieć dostęp do usługi Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -43,7 +43,7 @@ Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrat
     * Należy zauważyć, że grupa wymagań wstępnych Implementacje została dodana automatycznie na tym etapie. Grupa zawiera wstępnie wymagany składnik, który odwołuje się do konfiguracji modelu danych i ma włączoną flagę Implementacja. Flaga wskazuje, że konfiguracja mapowania „Przykładowe mapowanie” jest uważana za implementację modelu danych „Przykładowy model danych”. Ten składnik zmusi moduł ER do pobierania konfiguracji mapowania Przykładowe mapowanie z repozytorium ER podczas każdego pobierania konfiguracji modelu „Przykładowy model danych”.   
 4. Kliknij przycisk Edytuj.
     * Można określić pojedynczą zależność bieżącej wersji konfiguracji od składnika oprogramowania, używając definicji typu składnika oraz alternatywnie wersji składnika lub zakresu wersji składnika.  
-    * Żądane zależności mogą być grupowane razem. Jeśli zostanie wybrany typ grupowania „Wszystkie”, warunek zależność tej grupy jest uważany za spełniony, jeżeli jest spełniony każdy warunek zależność z tej grupy i grupy podrzędnej. Jeśli zostanie wybrany typ grupowania „Jeden”, warunek zależność tej grupy jest uważany za spełniony, jeżeli jest spełniony co najmniej jeden warunek zależność z tej grupy.   
+    * Żądane zależności mogą być grupowane razem. Jeśli zostanie wybrany typ grupowania „Wszystkie”, warunek zależność tej grupy jest uważany za spełniony, jeżeli jest spełniony każdy warunek zależność z tej grupy i grupy podrzędnej. Jeśli zostanie wybrany typ grupowania „Jeden z”, warunek zależność tej grupy jest uważany za spełniony, jeżeli jest spełniony co najmniej jeden warunek zależność z tej grupy.   
 5. Kliknij przycisk Nowy.
 6. Wybierz wstępnie wymagany składnik Produktu.
 7. Zaznacz pozycję Microsoft Dynamics 365 for Operations (1611).
@@ -62,7 +62,7 @@ Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrat
 18. Wybierz Microsoft Dynamics AX 7.0 RTW.
 19. W polu Wersja wpisz wartość „(7.0.1265.3015,7.1)”.
     * [7.0.1265.3015,7.1)  
-    * Zależności będą oceniane podczas pobierania konfiguracji z repozytorium modułu Raportowanie elektroniczne. Ta wersja konfiguracji będzie pobierana z repozytorium ER, gdy wersja 1 konfiguracji „Przykładowy model danych” już znajduje się na miejscu albo zostanie pobrana z wyprzedzeniem. Jeśli jest pobierana z wyprzedzeniem, musi zostać wykonana w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition o wersji 7.0.1265.3015 lub nowszej, ale wersji pomocniczej nie nowszej niż 1.   
+    * Zależności będą oceniane podczas pobierania konfiguracji z repozytorium modułu Raportowanie elektroniczne. Ta wersja konfiguracji będzie pobierana z repozytorium ER, gdy wersja 1 konfiguracji „Przykładowy model danych” już znajduje się na miejscu albo zostanie pobrana z wyprzedzeniem. Jeśli jest pobierana z wyprzedzeniem, musi zostać wykonana w Microsoft Dynamics 365 for Finance and Operations Enterprise Edition w wersji 7.0.1265.3015 lub nowszej, ale wersji pomocniczej nie nowszej niż 1.   
 20. Kliknij przycisk Zapisz.
 21. Zamknij stronę.
 22. Kliknij przycisk Zmień stan.

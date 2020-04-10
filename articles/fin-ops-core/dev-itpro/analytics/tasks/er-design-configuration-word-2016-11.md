@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 327f03435ab55551953fd998dd89c831c76c4c26
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 208b1be20a8833afbf4929a7ceda706aeb5bda3b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182607"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142093"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Projektowanie konfiguracji raportowania elektronicznego w celu generowania raportów w formacie programu Word
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W poniższych krokach wyjaśniono, jak użytkownik posiadający rolę Administrator systemu lub Deweloper raportowania elektronicznego może tak skonfigurować formaty raportowania elektronicznego (ER), aby raporty były generowane jako pliki programu Microsoft Word. Kroki można wykonać na danych firmy GBSI.
 

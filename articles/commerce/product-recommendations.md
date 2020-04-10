@@ -3,7 +3,7 @@ title: Omówienie rekomendacji produktów
 description: Ten temat zawiera ogólne informacje o rekomendacjach produktu. Rekomendacje produktów umożliwiają łatwe i szybkie znajdowanie produktów, które są potrzebne, a nawet produktów, których klient nie zamierzał pierwotnie kupić.
 author: Moonma
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: abeeb3c35c21f6d7a6ec24a84522033f9a5367f3
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: e61136ed296d673e14600762c6f6199093530546
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127866"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154233"
 ---
 # <a name="product-recommendations-overview"></a>Omówienie rekomendacji produktów
 
@@ -74,8 +74,6 @@ W poniższej tabeli opisano różne typy automatycznych rekomendacji dotyczącyc
 [Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md)
 
 [Rezygnowanie z rekomendacji spersonalizowanych](personalization-gdpr.md)
-
-[Dodawanie list rekomendacji produktów do witryny handlu elektronicznego](add-reco-list-to-page.md)
 
 [Dodawanie rekomendacji produktu w punkcie sprzedaży](product.md)
 

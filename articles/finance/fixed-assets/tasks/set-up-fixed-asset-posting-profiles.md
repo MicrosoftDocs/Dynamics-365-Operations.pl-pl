@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 494af854d408f0b0c02d753ff3d24eb3d6216fd9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 07961d8613b6b5e0e1c5dc6a91b554305dcb17f5
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179377"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138168"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Konfigurowanie profili księgowania środków trwałych
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tym przewodniku po zadaniach zostaną skonfigurowane profile księgowania środków trwałych.  Przewodnik korzysta z roli Księgowy i danych firmy demonstracyjnej USMF.  Przykłady zamieszczone w przewodniku po zadaniach dotyczą podstawowego profilu księgowania, podczas gdy faktycznie profile księgowania należy utworzyć dla określonych planów kont oraz wymagań dotyczących sprawozdawczości finansowej.
 
@@ -34,7 +34,7 @@ W tym przewodniku po zadaniach zostaną skonfigurowane profile księgowania śro
 3. W polu **Profil księgowania** wpisz wartość.
 4. W polu **Opis** wpisz wartość. Należy utworzyć profil księgowania dla każdego typu transakcji środków trwałych, którego będziesz używać podczas pracy ze środkami trwałymi. W tym przewodniku po zadaniach proces rozpoczyna się od typu transakcji Nabycie.  
 5. Na pasku narzędzi kliknij opcję **Dodaj**.
-6. Wprowadź lub wybierz wartość w polu **Księga**. Pole **Grupowania** pozwala zdefiniować profil księgowania do poziomu Tabela (jedno konto utworzone dla każdego środka trwałego) lub Grupa (jedno konto utworzone dla każdej grupy środków trwałych). W tym przewodniku po zadaniach pozostawię ustawioną wartość „Wszystko”, aby profil był stosowany do wszystkich środków trwałych wpisanych do określonej księgi.  
+6. Wprowadź lub wybierz wartość w polu **Księga**. Pole **Grupowania** pozwala zdefiniować profil księgowania do poziomu Tabela (jedno konto utworzone dla każdego środka trwałego) lub Grupa (jedno konto utworzone dla każdej grupy środków trwałych). W tym przewodniku po zadaniach pozostawię ustawioną wartość „Wszystkie”, aby profil był stosowany do wszystkich środków trwałych wpisanych do określonej księgi.  
 7. W polu **Konto główne** podaj żądane wartości. Dla transakcji nabycia można wprowadzić konto przeciwstawne lub pozostawić to pole puste, aby było wypełniane dla konkretnych transakcji.    
 8. W menu rozwijanym na skróconej karcie **Konta księgowe** wybierz opcję „korekta nabycia”. Dla transakcji korekty wartości początkowej zostaną wykorzystane te same konta, jak dla transakcji nabycia.  
 9. Kliknij przycisk **Dodaj**.
@@ -63,7 +63,7 @@ W tym przewodniku po zadaniach zostaną skonfigurowane profile księgowania śro
 32. Wprowadź lub wybierz wartość w polu **Księga**.
 33. W polu **Księguj wartość** zaznacz opcję „Wartość nabycia”.
     * Wartość nabycia uwzględni wartości nabycia i korekty wartości początkowej we wszystkich latach. Można także zdefiniować konta dla tych typów transakcji osobno.  
-    * W procesie likwidacji można ustawić używanie różnych kont w zależności od tego, czy likwidacja skutkuje zyskiem czy stratą. W polu Typu wartości sprzedaży ustawię „Wszystko”, aby używać tych samych kont dla wszystkich typów likwidacji.  
+    * W procesie likwidacji można ustawić używanie różnych kont w zależności od tego, czy likwidacja skutkuje zyskiem czy stratą. W polu Typu wartości sprzedaży ustawię „Wszystkie”, aby używać tych samych kont dla wszystkich typów likwidacji.  
 34. W polu **Konto główne** podaj żądane wartości.
 35. W polu **Konto przeciwstawne** podaj żądane wartości.
 36. Kliknij przycisk **Dodaj**.

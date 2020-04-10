@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: fb34ecc0ff5966ae09fdb00e80134a11eceb30a2
-ms.sourcegitcommit: c6be9706bca05089d4a4dc898d991410edb5c609
+ms.openlocfilehash: d62cf8be089eb8bccaf323041bf446b7f120b93f
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3097512"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164542"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.8 (luty 2020 r.)
 
@@ -32,13 +32,14 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsof
 
 - **Wersja zapoznawcza:** grudzień 2019
 - **Dostępność ogólna (Samoaktualizacja):** styczeń 2020
-- **Aktualizacja automatyczna:** luty 2020 r. 
+- **Aktualizacja automatyczna:** luty 2020 r.
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
 To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z dodatkowymi informacjami w witrynie [plany wydań](https://docs.microsoft.com/dynamics365/release-plans/). Dodatkowe łącza wskazują dodatkową dokumentację lub pliki wideo, które są obecnie dostępne dla tej funkcji. Niektóre z tych funkcji można również uwzględnić w poprzedniej wersji przyrostowej, ale nie zostały ogłoszone we wcześniejszej sekcji tematu *co nowego*, więc dodajemy je tutaj. Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
 - [Dodatkowa strefa lokalizacji](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+- [Zarządzanie składnikami majątku](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management) - Aby uzyskać więcej informacji, zajrzyj do [Zarządzanie składnikami majątku — omówienie](../asset-management/index.md).
 - [Anuluj pracę](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work) — Aby uzyskać więcej informacji, patrz [anulowanie pracy magazynu w celu obsługi wyjątków](../warehousing/cancel-warehouse-work.md).
 - [Zmień pulę pracy w pracy](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
 - [Stanowisko w grupie pełne](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)

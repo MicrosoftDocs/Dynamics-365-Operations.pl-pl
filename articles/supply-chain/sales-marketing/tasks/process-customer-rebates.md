@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3a6678b09ce4011b7f80d40979209cc2f588df8
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: 73bc22949d0b19fa04bf27e6fd7df7b27832795b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1994941"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148591"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generowanie i przetwarzanie rabatów dla odbiorców
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapach od wygenerowania wniosku do przekazania ich jako naliczenia do modułu Rozrachunki z odbiorcami. Prowadzi przez kolejne fazy konkretnego przykładu w celu wyjaśnienia wpływu różnych warunków w wierszach rabatu na końcowe kwoty, które zostaną uznane dla odbiorcy. Przed rozpoczęciem zadań z przewodnika należy użyć danych firmy demonstracyjnej USMF i wykonać następujące zadania: (1) Przejdź do strony Parametry modułu rozrachunków z odbiorcami, rozwiń kartę Ceny, rozwiń kartę Szczegóły ceny i upewnij się, że opcja Włączanie szczegółów ceny ma ustawioną wartość Tak. (2) Przejdź do strony Umowy rabatowe i zaznacz umowę rabatową z odbiorcą USMF-000001. Jeśli pole Stan zatwierdzania w ramach przepływu pracy nie ma ustawionej wartości Zatwierdzone, w okienku akcji kliknij opcję Weryfikacja, aby zatwierdzić umowę.
 
@@ -49,7 +49,7 @@ Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapac
 5. W polu **Kod towaru** wpisz lub wprowadź wartość.
 6. W polu **Ilość** wpisz wartość 40.
 7. W sekcji **Linie zamówienia sprzedaży** wybierz opcję **Linia zamówienia sprzedaży**.
-8. Kliknij opcję **Szczegóły ceny**. Jeśli ta opcja nie jest widoczna, to dlatego, że przed uruchomieniem przewodnika nie ustawiono wartości Tak w opcji **Włączanie szczegółów ceny**.     
+8. Kliknij opcję **Szczegóły ceny**. Jeśli ta opcja nie jest widoczna, to dlatego, że przed uruchomieniem przewodnika nie ustawiono wartości „Tak” w opcji **Włączanie szczegółów ceny**.     
 9. Rozwiń sekcję **Rabaty**. Na karcie **Rabaty** znajduje się lista wszystkich umów rabatowych, które mają zastosowanie do bieżącego wiersza zamówienia, oraz jest wyświetlana szacowana kwota rabatu. Zwróć uwagę, że wyświetlane kwoty są tylko orientacyjnymi wskazaniami, na ile mogą opiewać przyszłe wnioski rabatowe. Rzeczywiste kwoty rabatów mogą być inne w zależności od następujących czynników: łączna wielkość zakupów dokonanych przez odbiorcę w ramach okresowej umowy rabatowej; czy odbiorca zwrócił wszystkie ilości czy tylko część; czy odnośne zamówienie sprzedaży zostało zafakturowane.
 10. Zamknij stronę.
 11. Kliknij przycisk **Dodaj wiersz.**

@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 249fde6f7bba5d6e0bc6cfde62fd792dee3f1301
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: 12a0e07d1c60a359b3ba6c0d20176927ffe89431
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112499"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172815"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Od prospekta do kasy w podwójnym zapisie
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
 
 Ważnym celem większości firm jest konwersja prospektów na odbiorców, a następnie utrzymywanie w ten sposób stałej relacji biznesowej z tymi odbiorcami. W przypadku aplikacji Microsoft Dynamics 365 proces prospektów do kasy jest realizowany za pośrednictwem ofert lub przepływów pracy przetwarzania zamówień, a finanse są uzgadniane i rozpoznawane. Integracja funkcji prospekty-gotówka z podwójnym zapisem powoduje utworzenie przepływu pracy, który składa ofertę i zamówienie, które pochodzi z systemu Dynamics 365 Sales lub Dynamics 365 Supply Chain Management i udostępnia ofertę i zamówienie dostępne w obu aplikacjach.
 

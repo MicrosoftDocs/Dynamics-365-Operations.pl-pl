@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 116085a71e872c13bbf2820f4408e3c7d1261d17
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: ba585a9bb1a296bbf7181530e151d737bfa22fc2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924431"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149603"
 ---
 # <a name="create-a-vendor-account"></a>Utworzenie konta dostawcy
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tej procedurze pokazano, jak utworzyć konto dostawcy oraz dodać informacje adresowe i kontaktowe. Procedura nie pokazuje sposobu wypełnienia wszystkich pól do celów zakupowych i finansowych. Aby uzyskać więcej informacji o tych polach, przeczytaj ich opisy. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Konta dostawców są zwykle tworzone przez pracownika działu zaopatrzenia lub personel działu rozrachunków z odbiorcami.
 

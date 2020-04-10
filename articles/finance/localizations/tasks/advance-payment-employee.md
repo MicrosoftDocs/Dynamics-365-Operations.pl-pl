@@ -16,16 +16,16 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2cfc03cb9dc35a27f99b740da181fe54aa2e684d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1fe975f802a8d8080a306d9ac1cedb377f280690
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175163"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3137983"
 ---
 # <a name="eeu-00047-advance-payment-to-employee"></a>EEU 00047 Zaliczka dla pracownika
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ta procedura pokazuje, jak skonfigurować i zarejestrować transakcje dla posiadacza zaliczki. Procedurę utworzono przy użyciu danych firmy demonstracyjnej DEMF, której podstawowy adres mieści się na Litwie. To zadanie działa tylko dla firm, których adres podstawowy znajduje się w Polsce, na Litwie, na Łotwie, w Estonii, w Czechach lub na Węgrzech. Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wersji 1611.
 

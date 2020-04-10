@@ -3,7 +3,7 @@ title: Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii
 description: W tym temacie opisano sposób dodawania kodu skryptów po stronie klienta do stron witryny w celu obsługi zbierania danych telemetrycznych po stronie klienta.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 674d00faf1b30f87a0b0062129e1b9fbff955dd4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001284"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154093"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii
-
 
 [!include [banner](includes/banner.md)]
 
@@ -38,25 +37,72 @@ Narzędzie Web Analytics jest podstawowym narzędziem, które umożliwia zrozumi
 > [!NOTE]
 > Instrukcje przedstawione w tym temacie dotyczą również innych niestandardowych funkcji po stronie klienta, które Microsoft Dynamics 365 Commerce nie oferuje w sposób macierzysty.
 
-## <a name="create-a-reusable-fragment-for-your-script-code"></a>Tworzenie fragmentu wielokrotnego użytku dla kodu skryptu
+## <a name="create-a-reusable-page-fragment-for-your-script-code"></a>Tworzenie fragmentu strony wielokrotnego użytku dla kodu skryptu
 
-Po utworzeniu fragmentu kodu skryptu można go użyć do ponownego użycia na wszystkich stronach w witrynie.
+Fragment strony umożliwia ponowne użycie wewnętrznego lub zewnętrznego kodu skryptu na wszystkich stronach w witrynie, niezależnie od szablonu, którego używają.
 
-1. Umożliwia przejście do **Fragmenty \> Nowy fragment strony**.
-2. Wybierz opcję **Skrypt zewnętrzny**, wprowadź nazwę fragmentu, a następnie kliknij przycisk **OK**.
-3. W hierarchii fragmentu wybierz element podrzędny modułu **iniektora skryptu** dla właśnie utworzonego fragmentu.
-4. W okienku właściwości po prawej stronie, dodaj skrypt klienta i określ inne opcje konfiguracji, tak jak są wymagane.
+### <a name="create-a-reusable-page-fragment-for-your-inline-script-code"></a>Tworzenie fragmentu strony wielokrotnego użytku dla wbudowanego kodu skryptu
 
-## <a name="add-the-fragment-to-templates"></a>Dodawanie fragmentu do szablonów
+Aby utworzyć fragment strony do ponownego użycia dla kodu skryptu wbudowanego w konstruktorze witryn, wykonaj następujące kroki.
+
+1. Przejdź do **Fragmentów strony**, a następnie wybierz opcję **Nowy**.
+1. W oknie dialogowym **Nowy fragment strony** wybierz opcję **Skrypt wbudowany**.
+1. W obszarze **Nazwa fragmentu strony** wprowadź nazwę fragmentu, a następnie kliknij przycisk **OK**.
+1. Pod utworzonym fragmentem strony wybierz **Domyślny moduł skryptu wbudowanego**.
+1. W okienku właściwości po prawej stronie, w obszarze **Skrypt wbudowany**, wprowadź skrypt po stronie klienta. Następnie skonfiguruj inne opcje stosownie do potrzeb.
+1. Wybierz **Zapisz** i następnie wybierz **Zakończ edycję**.
+1. Wybierz opcję **Publikuj**.
+
+### <a name="create-a-reusable-page-fragment-for-your-external-script-code"></a>Tworzenie fragmentu strony wielokrotnego użytku dla zewnętrznego kodu skryptu
+
+Aby utworzyć fragment strony do ponownego użycia dla kodu skryptu zewnętrznego w konstruktorze witryn, wykonaj następujące kroki.
+
+1. Przejdź do **Fragmentów strony**, a następnie wybierz opcję **Nowy**.
+1. W oknie dialogowym **Nowy fragment strony** wybierz opcję **Skrypt zewnętrzny**.
+1. W obszarze **Nazwa fragmentu strony** wprowadź nazwę fragmentu, a następnie kliknij przycisk **OK**.
+1. Pod utworzonym fragmentem strony wybierz **Domyślny moduł skryptu zewnętrznego**.
+1. W okienku właściwości po prawej stronie w obszarze **Źródło skryptu** dodaj zewnętrzny lub względny adres URL dla zewnętrznego źródła skryptów. Następnie skonfiguruj inne opcje stosownie do potrzeb.
+1. Wybierz **Zapisz** i następnie wybierz **Zakończ edycję**.
+1. Wybierz opcję **Publikuj**.
+
+## <a name="add-a-page-fragment-that-includes-script-code-to-a-template"></a>Dodawanie fragmentu strony zawierającego kod skryptu do szablonu
+
+Aby dodać fragment strony zawierający kod skryptu do szablonu w kreatorze witryn, wykonaj następujące kroki.
 
 1. Przejdź do **Szablony** i otwórz szablon stron, do których chcesz dodać kod skryptu.
-2. W lewym okienku rozwiń hierarchię szablonów, aby wyświetlić gniazdo **nagłówka HTML**.
-3. Wybierz przycisk wielokropka (**...**) dla gniazda **nagłówka HTML**, a następnie wybierz opcję **Dodaj fragment**.
-4. Umożliwia wybór fragmentu utworzonego dla kodu skryptu.
-5. Zapisz szablon i zaewidencjonuj go.
+1. W lewym okienku rozwiń hierarchię szablonów, aby wyświetlić gniazdo **nagłówka HTML**.
+1. W gnieździe **nagłówka HTML** wybierz przycisk wielokropka (**...**), a następnie wybierz **Dodaj fragment strony**.
+1. Umożliwia wybór fragmentu utworzonego dla kodu skryptu.
+1. Wybierz **Zapisz** i następnie wybierz **Zakończ edycję**.
+1. Wybierz opcję **Publikuj**.
 
-> [!NOTE]
-> Po zakończeniu należy opublikować fragment i szablon główny. 
+## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a>Dodawanie skryptu zewnętrznego lub skryptu wbudowanego bezpośrednio do szablonu
+
+Jeśli chcesz wstawić wewnętrzny lub zewnętrzny skrypt bezpośrednio do zbioru stron, które są kontrolowane przez jeden szablon, nie musisz najpierw utworzyć fragmentu strony.
+
+### <a name="add-an-inline-script-directly-to-a-template"></a>Dodawanie skryptu wbudowanego bezpośrednio do szablonu
+
+Aby dodać wbudowany skrypt bezpośrednio do szablonu w konstruktorze stron, należy wykonać następujące kroki.
+
+1. Przejdź do **Szablony** i otwórz szablon stron, do których chcesz dodać kod skryptu.
+1. W lewym okienku rozwiń hierarchię szablonów, aby wyświetlić gniazdo **nagłówka HTML**.
+1. W gnieździe **nagłówka HTML** wybierz przycisk wielokropka (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz opcję **Skrypt wbudowany**.
+1. W okienku właściwości po prawej stronie, w obszarze **Skrypt wbudowany**, wprowadź skrypt po stronie klienta. Następnie skonfiguruj inne opcje stosownie do potrzeb.
+1. Wybierz **Zapisz** i następnie wybierz **Zakończ edycję**.
+1. Wybierz opcję **Publikuj**.
+
+### <a name="add-an-external-script-directly-to-a-template"></a>Dodawanie skryptu zewnętrznego bezpośrednio do szablonu
+
+Aby dodać zewnętrzny skrypt bezpośrednio do szablonu w konstruktorze stron, należy wykonać następujące kroki.
+
+1. Przejdź do **Szablony** i otwórz szablon stron, do których chcesz dodać kod skryptu.
+1. W lewym okienku rozwiń hierarchię szablonów, aby wyświetlić gniazdo **nagłówka HTML**.
+1. W gnieździe **nagłówka HTML** wybierz przycisk wielokropka (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz opcję **Skrypt zewnętrzny**.
+1. W okienku właściwości po prawej stronie w obszarze **Źródło skryptu** dodaj zewnętrzny lub względny adres URL dla zewnętrznego źródła skryptów. Następnie skonfiguruj inne opcje stosownie do potrzeb.
+1. Wybierz **Zapisz** i następnie wybierz **Zakończ edycję**.
+1. Wybierz opcję **Publikuj**.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -73,4 +119,3 @@ Po utworzeniu fragmentu kodu skryptu można go użyć do ponownego użycia na ws
 [Dodawanie powiadomienia o prawach autorskich](add-copyright-notice.md)
 
 [Dodawanie języków do witryny](add-languages-to-site.md)
-

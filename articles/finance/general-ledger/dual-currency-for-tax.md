@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1ba4d09240888f0c533fb07614e75ffecea0742c
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 863403dc3b2444f00f0cac27a494fc49d3d70de7
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124100"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161599"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Obsługa podwójnej waluty dla podatku
 [!include [banner](../includes/banner.md)]
@@ -34,7 +34,7 @@ Funkcja podwójnej waluty w Dynamics 365 Finance została wprowadzona w wersji 8
 
 W poprzednich wersjach transakcje zostały przekształcone w walutę raportowania w następującej kolejności: 
 
-Suma transakcji została obliczona w walucie transakcji > kwota transakcji została przekonwertowana na walutę rozliczeniową > kwota w walucie rozliczeniowej została przekonwertowana na walutę raportowania
+- Suma transakcji została obliczona w walucie transakcji > kwota transakcji została przekonwertowana na walutę rozliczeniową > kwota w walucie rozliczeniowej została przekonwertowana na walutę raportowania
 
 Po włączeniu funkcji podwójnej waluty transakcje zostały przekonwertowane na walutę raportowania w następującej kolejności:
 
@@ -48,8 +48,6 @@ W związku z obsługą dwóch walut w zarządzaniu funkcjami są dostępne dwie 
 - Automatyczne saldo rozliczeń podatkowych w walucie raportowania (wydanie w wersji 10.0.11)
 
 Obsługa podwójnej waluty dla podatków gwarantuje, że podatki są obliczane dokładnie w walucie podatkowej, a saldo rozliczenia podatku jest dokładnie obliczane w walucie rozliczeniowej i walucie raportowania. 
-
-Nowe funkcje są obecnie włączone dla klientów prywatnej prapremiery. Aby włączyć funkcje, należy wnieść żądanie obsługi za pośrednictwem odpowiednich kanałów do Microsoft.
 
 ## <a name="sales-tax-conversion"></a>Konwersja podatku
 

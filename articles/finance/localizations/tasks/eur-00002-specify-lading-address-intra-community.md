@@ -16,16 +16,16 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6eea2a905a59842b6f39c5b1e1c78ae6801b28e0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e555d6791f596850ba1ed718aa5593ee3f88bed9
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174713"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144520"
 ---
 # <a name="eur-00002-specifying-a-lading-address-for-an-intra-community-transaction"></a>EUR-00002 Określanie adresu załadunku dla transakcji wewnątrzwspólnotowej
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ta procedura pokazuje, jak określić adres załadunku dla transakcji handlu wewnątrzwspólnotowego. Na przykład niemiecka firma zamawia towary od dostawcy z adresem służbowym w Niemczech. Ten dostawca ma magazyn we Włoszech i wysyła towary stamtąd. Tę dostawę należy zgłosić w systemie Intrastat. To samo zachowanie obowiązuje w przypadku zwrotów od odbiorców.
 Ta procedura dotyczy wszystkich krajów/regionów Europy. Zadanie utworzono przy użyciu danych firmy demonstracyjnej DEMF, której podstawowy adres mieści się w Niemczech. Zanim będzie można wykonać tę procedurę, trzeba skonfigurować funkcję raportowania Intrastat. Procedura jest przeznaczona dla księgowych. Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wersji 1611.

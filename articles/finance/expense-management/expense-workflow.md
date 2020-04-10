@@ -1,5 +1,5 @@
 ---
-title: Przepływ pracy dotyczący wydatków
+title: Przepływ pracy dotyczący zarządzania wydatkami
 description: W tym temacie wyjaśniono, jak korzystać z systemu przepływu pracy w rozwiązaniu Microsoft Dynamics 365 Finance w celu skonfigurowania procesu kontroli dla raportu wydatków w funkcji Zarządzanie wydatkami.
 author: ShylaThompson
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c52915860709e38013ec06204c52bb06de417eb1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5207be92cb58d8ab2658096b3e0f3fc81d73d91e
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187597"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3153981"
 ---
-# <a name="expense-workflow"></a>Przepływ pracy dotyczący wydatków
+# <a name="expense-management-workflow"></a>Przepływ pracy dotyczący zarządzania wydatkami
 
 [!include [banner](../includes/banner.md)]
 

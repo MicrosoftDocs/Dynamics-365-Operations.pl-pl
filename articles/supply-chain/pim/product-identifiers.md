@@ -3,7 +3,7 @@ title: Identyfikatory produktów
 description: Ten temat zawiera informacje o różnych typach identyfikatorów produktów i wyjaśnia, jak można dodawać identyfikatory produktów w danych produktów.
 author: cvocph
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: adac308a17ac51ed6da28d04d8c69b01f579aab7
-ms.sourcegitcommit: 7789ef6b0d337bee6aa05110c40e002f02eec71b
+ms.openlocfilehash: 0aa8baf5802ccdd9a502e2a7d291a76fc4afe932
+ms.sourcegitcommit: d91d96c98b31ae59bc82ec91efbb7da86ffb25fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095624"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172032"
 ---
-# <a name="product-identifiers"></a>Identyfikatory produktów 
+# <a name="product-identifiers"></a>Identyfikatory produktów
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ Pracując z produktami na wydziale produkcji lub w magazynie w Microsoft Dynamic
 
 ## <a name="unique-product-numberproduct-id"></a>Unikatowy numer produktu/identyfikator produktu
 
-W Dynamics 365 Supply Chain Management podstawowym identyfikatorem produktu jest numer produktu (czyli unikatowy identyfikator produktu). Ten numer może być generowane automatycznie przez mechanizm numeracji albo ręcznie łączony z produktem. Dla wariantów produktów numery można definiować za pomocą szablonu nazewnictwa produktów.
+W Dynamics 365 Supply Chain Management podstawowym identyfikatorem produktu jest numer produktu (czyli unikatowy identyfikator produktu). Ten numer może być generowane automatycznie przez mechanizm numeracji lub ręcznie łączony z produktem. Dla wariantów produktów numery można definiować za pomocą szablonu nazewnictwa produktów.
 
 W wielu przypadkach numer produktu nie jest pierwotnie tworzony w Dynamics 365 Supply Chain Management. Zamiast tego jest kojarzony z produktem w systemie zarządzania cyklem życia produktu (PLM) lub systemie zarządzania danymi produktów (PDM). W takim przypadku są używane jednostki danych do importowania produktów i wariantów produktów. Supply Chain Management korzysta z numerów we wszystkich operacjach.
 
@@ -53,6 +53,9 @@ Ponadto wariant produktu nie może być niepowtarzalnie identyfikowany przez num
 Nadal na wielu stronach numer towaru i wymiary produktu są podstawowymi identyfikatorami. Jednak w wyszukiwaniach można używać numerów produktów. W oknie **Sprzedaż i marketing** &gt; **Ustawienia** &gt; **Wyszukiwanie** &gt; **Parametry wyszukiwania** można zmienić ustawienia wyszukiwania, tak aby główna strategia wyszukiwania opierała się na używaniu numerów produktów zamiast numerów towarów. Jeśli w opcji **Włącz odnośniki na potrzeby wyszukiwania produktów** zaznaczysz wartość **Tak**, w wynikach wyszukiwania będą wyświetlane nie tylko produkty główne, ale również warianty produktów. Aby uzyskać więcej informacji, zobacz [Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień](search-products-product-variants.md).
 
 Ponadto będzie można wyszukiwać i filtrować według numeru produktu, nazwy i opisu produktu oraz identyfikatorów wymiarów produktu ustawionych w wariancie produktu. Po wybraniu wariantu zostanie zaznaczony powiązany numer towaru i wszystkie identyfikatory wymiarów produktu. W związku z tym można łatwiej znaleźć i wybrać odpowiedni wariant. To ustawienie jest stanowczo zalecane, jeśli jako podstawowych identyfikatorów produktów używasz wariantów produktów i unikatowych numerów produktów. Jedynym wyjątkiem może być branża modowa, gdzie procesy biznesowe często wymagają wybrania produktu głównego przed wybraniem wariantu. Należy dokładnie ocenić efekty działania tej opcji przed przystąpieniem do wdrażania system numerowania.
+
+> [!NOTE]
+> Nie można zmienić kodu towaru dla produktu, jeśli istnieje co najmniej jedna transakcja dla tego produktu.
 
 ## <a name="product-name-and-description"></a>Nazwa i opis produktu
 
@@ -123,7 +126,7 @@ Niestety, nie istnieje standardowa funkcja umożliwiająca wyszukiwanie produkt�
 | Produkty wer. 2 | Numer produktu, alias produktu, nazwa produktu, opis produktu | Numer produktu, alias produktu, nazwa produktu, opis produktu | W zależności od ustawień jednostki oraz ustawień mechanizmu numerowania produktów numer produktu może być tworzony automatycznie podczas importu. |
 | Warianty produktu | Numer produktu, alias produktu, nazwa produktu, opis produktu | Numer produktu, alias produktu, nazwa produktu, opis produktu | W zależności od szablonu nazewnictwa produktów numer produktu może być tworzony automatycznie w czasie importu. Jednak można zaimportować dowolny unikatowy numer produktu, a ten numer produktu nie musi być zgodny ze strukturą szablonów nazewnictwa produktów. |
 | Tłumaczenia produktu | Nazwa produktu, opis produktu | Nazwa produktu, opis produktu | Ta jednostka zastępuje dowolny język. Należy zauważyć, że w przypadku zastąpienia nazwy lub opisu podstawowego języka osoby prawnej zmieniają się nazwa i opis samego produktu. |
-| Zwolnione produkty (wersja 2) | Numer towaru, numer produktu, alias towaru| Numer towaru, numer produktu, alias towaru, alias produktu, nazwa produktu | Ta jednostka może sprawiać problemy, jeśli podczas tworzenia nowych zwolnionych produktów są używane numeracje. Obie numeracje — **Numer towaru** i **Numer produktu** — wywierają wpływ. Jednak numeracja **Numer towaru** dotyczy konkretnej firmy, natomiast numeracja **Numer produktu** jest globalna. Z tego względu nie zalecamy korzystania z numeracji **Numer towaru** podczas wdrażania nowych zwolnionych produktów. Oczywiście gdy jednostka jest używana do zwalniania istniejącego produktu, numer produktu musi być nadany w jednostce. Aby uzyskać więcej informacji, zobacz rozdział „Numeracje produktów i towarów” w tym temacie. |
+| Tworzenie zwolnionego produktu (wersja 2) | Numer towaru, numer produktu, alias towaru| Numer towaru, numer produktu, alias towaru, alias produktu, nazwa produktu | Ta jednostka może sprawiać problemy, jeśli podczas tworzenia nowych zwolnionych produktów są używane numeracje. Obie numeracje — **Numer towaru** i **Numer produktu** — wywierają wpływ. Jednak numeracja **Numer towaru** dotyczy konkretnej firmy, natomiast numeracja **Numer produktu** jest globalna. Z tego względu nie zalecamy korzystania z numeracji **Numer towaru** podczas wdrażania nowych zwolnionych produktów. Oczywiście gdy jednostka jest używana do zwalniania istniejącego produktu, numer produktu musi być nadany w jednostce. Aby uzyskać więcej informacji, zobacz rozdział „Numeracje produktów i towarów” w tym temacie. |
 | Zwolnione warianty produktu | Numer towaru, wymiary produktu, numer produktu | Numer produktu, alias produktu, nazwa produktu, opis produktu, wymiary produktu | Podobnie jak jednostka **Warianty produktu**, ta jednostka może być stosowana do tworzenia nowych produktów, które są zgodne z szablonem nazewnictwa produktów lub używają własnych numerów produktu dla wariantów. |
 | Zewnętrzny opisy towaru dla odbiorców | Numer towaru u odbiorcy, nazwa towaru u odbiorcy, opis odbiorcy, konto odbiorcy | Numer towaru u odbiorcy, nazwa towaru u odbiorcy, opis odbiorcy, konto odbiorcy | Grupę odbiorców (na przykład zrzeszenie kupców) można zagregować w jedną grupę za pomocą jednostki **Grupy odbiorców — zewnętrzny opis pozycji**. |
 | Zewnętrzny opis pozycji dla dostawców | Numer towaru u dostawcy, nazwa towaru u dostawcy, opis dostawcy, konto dostawcy | Numer towaru u dostawcy, nazwa towaru u dostawcy, opis dostawcy, konto dostawcy | Grupę dostawców (na przykład zrzeszenie sprzedawców lub branżową organizację) można zagregować w jedną grupę za pomocą jednostki **Grupy dostawców — zewnętrzny opis pozycji**. |
@@ -144,7 +147,7 @@ Można zdefiniować dwie różne sekwencje numerów:
 > [!NOTE]
 > Numeru towaru należy używać jako osobnego identyfikatora tylko wtedy, gdy przenosisz różne firmy z różnych źródeł mających różne systemy numerowania. Należy zawsze próbować używać identyfikatora produktu, który jest unikatowy we wszystkich firmach. W związku z tym w numeracji **Numer towaru** należy w opcji **Ręcznie** ustawiać wartość **Tak**. W ten sposób numer towaru będzie naśladował numer produktu podczas tworzenia. Jeśli program Supply Chain Management nie jest głównym systemem, w którym są tworzone nowe numery produktów, należy w opcji **Ręcznie** ustawić wartość **Tak** dla obu numeracji **Numer towaru** i **Numer produktu**.
 
-Jeśli do tworzenia produktów używasz jednostki **Zwolniony produkt wer. 2**, wiele ustawień może wpływać na sposób używania numeracji do tworzenia numeru produktu i numeru towaru:
+Jeśli do tworzenia produktów używasz jednostki **Zwolnione tworzenie produktu wer. 2**, wiele ustawień może wpływać na sposób używania numeracji do tworzenia numeru produktu i numeru towaru:
 
 - Ustawienia numeracji **Numer produktu**
 - Ustawienia numeracji **Numer towaru**
@@ -155,9 +158,9 @@ Poniższa tabela zawiera przegląd wyników importu i ręcznego tworzenia przy o
 
 | Numeracja Numer produktu | Numeracja Numer towaru | Mapowanie numeru towaru | Mapowanie numeru produktu | Wynik importu jednostki | Wynik ręcznego tworzenia | Wniosek |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
-| Ręcznie = Nie | Ręcznie = Nie | Brak mapowania | Brak mapowania | Numery produktów używają numeracji **Numer produktu**. Numery towarów używają numeracji **Numer towaru**. | Numery produktów używają numeracji **Numer produktu**. Numery towarów używają numeracji **Numer towaru**. | Tych ustawień można używać, jeśli są potrzebne inne numery dla produktów i towarów. Jednak nie zalecamy stosowania różnych numerów dla towarów i produktów. |
-| Ręcznie = Nie | Ręczne = Tak | Wygeneruj automatycznie | Brak mapowania | Numery produktów i numery towarów używają numeracji **Numer towaru**. | Numery produktów i numery towarów używają numeracji **Numer produktu**. | Te ustawienia nie są zalecane. Funkcje importu i ręcznego tworzenia działają różnie. |
-| Ręcznie = Nie | Ręczne = Tak | Brak mapowania | Brak mapowania | Numery produktów i numery towarów używają numeracji **Numer produktu**. | Numery produktów i numery towarów używają numeracji **Numer produktu**. | Te ustawienia są zalecane, jeżeli produkty powinny mieć spójne automatyczne numerowanie niezależnie od tego, czy jest używany import, czy ręczne tworzenie. |
+| Ręcznie = Nie | Ręcznie = Nie | Brak mapowania | Brak mapowania | Numery produktów używają numeracji **Numer produktu**. Numery towarów używają numeracji **Numer towaru**. | Numery produktów używają numeracji **Numer produktu**. Numery towarów używają numeracji **Numer towaru**. | W przypadku tej konfiguracji numery produktów są zgodne z sekwencją numerów produktów, a numery towarów są zgodne z sekwencją numerów towarów. Jednak ta konfiguracja nie będzie działać, jeśli istnieje więcej niż jedna pozycja (wiersz) do zaimportowania. |
+| Ręcznie = Nie | Ręczne = Tak | Wygeneruj automatycznie | Brak mapowania | Numery produktów i numery towarów używają numeracji **Numer towaru**. | Numery produktów i numery towarów używają numeracji **Numer produktu**. | Numery produktów i numery towarów używają sekwencji numerów produktu. Jest to zalecane podejście do importowania produktów masowych za pomocą jednostki danych o Zwolnionych tworzeniach produktów w wersji 2. |
+| Ręcznie = Nie | Ręczne = Tak | Brak mapowania | Brak mapowania | Numery produktów i numery towarów używają numeracji **Numer produktu**. | Numery produktów i numery towarów używają numeracji **Numer produktu**. | Numery produktów i numery towarów używają sekwencji numerów produktu. Jednak ta konfiguracja nie będzie działać, jeśli istnieje więcej niż jedna pozycja (wiersz) do zaimportowania. |
 | Ręczne = Tak | Nie dotyczy | Nie dotyczy | Wygeneruj automatycznie | Pojawia się komunikat o błędzie „Nie można wykryć numeracji”. | Według numeracji **Numer towaru** | To ustawienie nie jest obsługiwane dla importu. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Identyfikator jednostki Produkt (eksport wszystkich identyfikatorów produktów)

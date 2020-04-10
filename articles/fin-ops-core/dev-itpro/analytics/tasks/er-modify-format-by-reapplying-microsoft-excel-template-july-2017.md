@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73f2c10d7462c4b52a2b36dd5f221593707d2f4f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5408fd883e91bbff465434ab23974f22bb0f07da
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184676"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143013"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Modyfikowanie formatów przez ponowne zastosowanie szablonów programu Excel
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W celu wykonania kroków w tej procedurze należy najpierw wykonać procedurę „ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML”.
 
@@ -49,7 +49,7 @@ W tej procedurze wyjaśniono sposób modyfikowania konfiguracji formatu raportow
     * Otwórz wersję roboczą wybranego formatu ER w celu edytowania.  
 2. W okienku akcji kliknij pozycję Importuj.
 3. Kliknij opcję Aktualizacja z programu Excel.
-    * Kliknij przycisk „Aktualizuj szablon”, a następnie zaznacz plik SampleVendPaymWsReport2.xlsx.  
+    * Kliknij „Aktualizuj szablon”, a następnie zaznacz plik SampleVendPaymWsReport2.xlsx.  
     * Kliknij przycisk Aktualizuj szablon i przejdź do pobranego wcześniej pliku SampleVendPaymWsReport2.xlsx.  
 4. Kliknij przycisk OK.
     * Szablon SampleVendPaymWsReport2.xlsx zostanie zastosowany. Struktura formatu ER zostanie zsynchronizowana z zawartością szablonu, którego elementy zostaną dodane do formatu ER. Wszelkie istniejące elementy w formacie ER, które nie są umieszczone w szablonie, zostaną usunięte z definicji formatu.  

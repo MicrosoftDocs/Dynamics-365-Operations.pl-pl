@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67a15a5c52bd1032c8bee8652f1f13d1f1a4cb64
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: aaef3ed01573c10bc15c6768f13c1bf0151d212d
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838590"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149281"
 ---
 # <a name="create-a-production-order"></a>Tworzenie zlecenia produkcyjnego
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tej procedurze pokazano sposób tworzenia zlecenia produkcyjnego. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Jest to pierwsza z siedmiu procedur, które wyjaśniają cykl życia zlecenia produkcyjnego.
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e5b94578e077834ce73c921dca18ad6e38c37659
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b6475671002379d84519df05a0198a17ac000677
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179447"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143749"
 ---
 # <a name="establish-customer-payment-fees"></a>Definiowanie opłat od płatności odbiorcy
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Utwórz opłaty od płatności dla płatności odbiorców.
 
@@ -43,7 +43,7 @@ W zadaniu wykorzystano firmę demonstracyjną USMF.
 10. W polu **Grupowanie** wybierz opcję Tabela, Grupa lub Wszystko, aby określić, na których kontach bankowych będzie naliczana ta opłata. Jeśli zaznaczysz opcję Wszystko, ta opłata może być obliczana dla wszystkich kont bankowych.  Jeśli wybierzesz opcję Tabela, opłata może być naliczana tylko dla wskazanego konta bankowego. Jeżeli zostanie wybrana opcja Grupa, opłata będzie naliczana tylko dla kont bankowych w wybranej grupie bankowej.  
 11. W polu **Relacja bankowa** wybierz grupę bankową lub konto bankowe. Jeśli została wybrana opcja Tabela, wyszukiwanie spowoduje wyświetlenie kont bankowych. Jeśli została wybrana opcja Grupa, wyszukiwanie spowoduje wyświetlenie grup bankowej.  
 12. Na liście kliknij łącze w wybranym wierszu.
-13. W polu **Metoda płatności** wybierz metodę płatności, dla której ta opłata będzie oceniana. Na przykład można naliczać opłatę odbiorcom, jeśli dokonują płatności czekami a nie drogą elektroniczną.  
+13. W polu **Metoda płatności** wybierz metodę płatności, dla której ta opłata będzie obliczona. Na przykład można naliczać opłatę odbiorcom, jeśli dokonują płatności czekami a nie drogą elektroniczną.  
 14. Na liście znajdź i zaznacz odpowiedni rekord.
 15. W razie potrzeby w polu **Waluta płatności** wprowadź walutę płatności. Waluta płatności służy jako dodatkowe kryterium określania, czy opłata będzie naliczana.  Na przykład bank może obciążać dodatkową opłatą płatności otrzymywane w dolarach amerykańskich, ponieważ normalnie obsługuje transakcje tylko w euro.  
 16. Określ, czy opłata będzie procentem, kwotą czy interwałem.

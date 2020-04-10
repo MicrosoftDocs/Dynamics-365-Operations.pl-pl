@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ea5b17873dea4508230f39ffb41a50e2f427584f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769862"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142139"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML (listopad 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć nową konfigurację raportowania elektronicznego (ER) zawierającą szablon generowania dokumentów elektronicznych w formacie OPENXML. Ta konfiguracja będzie używana do przetwarzania płatności dla dostawcy.
 
@@ -55,7 +55,7 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie
 3. Wybierz przycisk **Utwórz konfigurację**, aby otworzyć rozwijane okno dialogowe.
 4. W polu **Nowe** wprowadź wartość `Format based on data model PaymentModel`. Tworzenie formatu opartego na modelu danych PaymentModel
 5. W polu **Nazwa** wpisz `Sample worksheet report`. Przykładowy raport arkusza  
-6. Wprowadź **Opis** wpisz `Sample worksheet report for vendors’ payments`. Przykładowy raport arkusza o płatnościach dla dostawców.  
+6. Wprowadź **Opis** wpisz `Sample worksheet report for vendors' payments`. Przykładowy raport arkusza o płatnościach dostawców.  
 7. W polu **Definicja modelu danych** wprowadź lub wybierz wartość. Zaznacz definicję **CustomerCreditTransferInitiation**.  
 8. Wybierz **Utwórz konfigurację**.
 

@@ -16,16 +16,16 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b178f1c6a71b34b70db4dbcd1765117215a4d2a1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 91f30d4d1b66e5b4b90f7df67d8f76a95a100338
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023668"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141322"
 ---
 # <a name="define-loyalty-programs"></a>Definiowanie programów lojalnościowych
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tej procedurze pokazano sposób konfigurowania programu lojalnościowego z dwoma warstwami lojalnościowymi. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
 

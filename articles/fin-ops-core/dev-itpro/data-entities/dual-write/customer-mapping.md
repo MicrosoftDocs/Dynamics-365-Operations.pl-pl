@@ -19,20 +19,19 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 269346d38eeb3812c352d16f9d50fbcd09307c12
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 977b74b10b4549d09a8816264f9ff603fa86e91c
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124596"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172838"
 ---
 # <a name="integrated-customer-master"></a>Zintegrowane dane główne odbiorcy
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-Jest to typowe dla rekordów klientów, które mają być danymi głównymi w więcej niż jednej aplikacji. Na przykład sprzedaż może przekazywać rekordy klientów komercyjnych za pośrednictwem aplikacji Sales, a handel elektroniczny lub sprzedaż detaliczna mogą przekazywać rekordy klienta za pośrednictwem aplikacji Finance and Operations. Niezależnie od tego, skąd pochodzi rekord klienta, jest on integrowany w tle w graniach wszystkich aplikacji i niezależnie od różnic w infrastrukturze. Zintegrowane tworzenie danych głównych klienta pomaga obsługiwać scenariusze wielowątkowego tworzenia danych głównych i zapewnia kompleksowy widok klienta w pakiecie aplikacji Dynamics 365.
+Dane klientów mogą być przekazywane w więcej niż jednej aplikacji Dynamics 365. Na przykład rekord odbiorcy może pochodzić z operacji sprzedaży w Dynamics 365 Sales (aplikacji opartej na modelu w usłudze Dynamics 365) lub rekord ten może pochodzić z działania handlu detalicznego w Dynamics 365 Commerce ( aplikacji Finance and Operations). Niezależnie od tego, gdzie znajdują się dane dotyczące klientów, są one integrowane w tle. Zintegrowany dane główne odbiorcy zapewniają elastyczność danych dotyczących klientów w dowolnej aplikacji Dynamics 365 i udostępniają obszerny widok klienta w ramach pakietu aplikacji Dynamics 365.
 
 ## <a name="customer-data-flow"></a>Przepływ danych klienta
 
@@ -59,7 +58,6 @@ Grupy odbiorców             | msdyn_customergroups            | Ten szablon pow
 Metoda płatności odbiorcy     | msdyn_customerpaymentmethods    | Ten szablon powoduje zsynchronizowanie informacji o metodzie płatności klienta.
 Odbiorcy (wersja 3)                | Konta                        | Ten szablon synchronizuje dane główne odbiorcy dla klientów komercyjnych i organizacji.
 Odbiorcy (wersja 3)                | kontakty                        | Ten szablon umożliwia synchronizację danych głównych odbiorcy dla odbiorców i użytkowników końcowych.
-Karta lojalnościowa                | msdyn_loyaltycards              | Ten szablon powoduje zsynchronizowanie informacji o karcie klienta.
 Afiksy nazwy                | msdyn_nameaffixes               | Ten szablon synchronizuje dane referencyjne afiksów nazw dla odbiorców i dostawców.
 Wiersze dni zapłaty w usłudze CDS wer. 2    | msdyn_paymentdaylines           | Ten szablon synchronizuje dane referencyjne wierszy dni płatności dla odbiorców i dostawców.
 Dni zapłaty w usłudze CDS            | msdyn_paymentdays               | Ten szablon synchronizuje dane referencyjne dni płatności dla odbiorców i dostawców.
@@ -78,8 +76,6 @@ Warunki płatności            | msdyn_paymentterms              | Ten szablon s
 [!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
 
 [!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
 
 [!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
 
