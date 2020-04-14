@@ -3,7 +3,7 @@ title: Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań
 description: W tym temacie wyjaśniono, czym jest Rejestrator zadań i przewodniki po zadaniach, jak tworzyć nagrania zadań oraz jak dostosowywać przewodniki po zadaniach firmy Microsoft i umieszczać je w Pomocy.
 author: josaw1
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 268b95aad57c2e4863a3f58cd54828dbb0e09465
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 927f6475e60b5b93aac0e0c2840cb0b4fc7f0ac8
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006202"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164565"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań
 
@@ -40,8 +40,6 @@ W tym temacie wyjaśniono, czym jest Rejestrator zadań i przewodniki po zadania
 Rejestrator zadań to narzędzie systemu umożliwiające nagrywanie czynności wykonywanych w interfejsie użytkownika (UI) produktu. Przy użyciu Rejestratora zadań wszystkie zdarzenia wykonywane w interfejsie użytkownika, które są wykonywane na serwerze — takie jak dodawanie wartości, zmiana ustawień i usuwanie danych — są przechwytywane. Zapisywane kroki są zbiorczo zwane *nagraniami zadań*. Nagrania zadań mogą być używane na wiele sposobów:
 
 -   **Nagrania zadań mogą być odtwarzane jako przewodniki po zadaniach.** Przewodniki po zadaniach są integralną częścią systemu Pomocy. Przewodnik po zadaniu to interaktywna prezentacja kroków w procesie biznesowym. Użytkownik otrzymuje polecenia wykonania kolejnych kroków w wyskakujących okienkach (lub „dymkach”), które są animowane w interfejsie użytkownika i wskazywać elementy, których użytkownik powinien użyć. „Dymek” zawiera informacje o sposobach obsługi elementu, na przykład „Kliknij tutaj” lub „W tym polu należy wprowadzić wartość”. Przewodnik po zadaniu działa w odniesieniu do bieżącego zestawu danych użytkownika, które są wprowadzane i zapisywane w środowisku użytkownika.
--   **Nagrania zadań mogą być wyświetlane jako kroki procedury w okienku Pomocy.** Okienko Pomocy może być używane do wyszukiwania i wyświetlania nagrań zadań. Okienko Pomocy można wyświetlić, klikając ikonę **?** na górnym pasku nawigacyjnym, albo można użyć skrótu  **Ctrl+Shift+?**. Można czytać kroki nagrania zadania w okienku Pomocy lub można wybrać opcję odtwarzania nagrań jako przewodnika po zadaniu, który przeprowadzi Cię przez interfejs użytkownika.
--   **Nagrania zadań można zapisać w BPM.** Nagrania zadań można zapisać w wierszu hierarchii w bibliotece narzędzia BPM w Lifecycle Services (LCS). Listę czynności i schemat blokowy procesu biznesowego będą generowane z nagrania. Nagrania zadań, które zostały zapisane w bibliotece BPM, mogą być wyświetlane jako Pomoc.
 -   **Nagrania zadań mogą być zapisywane jako dokumenty programu Word.** To pozwala łatwo tworzyć przewodniki szkoleniowe nadające się drukowania.
 
 Można tworzyć własne nagrania zadań, odtwarzać nagrania zadań udostępnione przez firmę Microsoft lub modyfikować te nagrania zgodnie z własną konfiguracją. Aby uzyskać więcej informacji na temat Rejestratora zadań, zobacz [Rejestrator zadań](task-recorder.md).
@@ -114,8 +112,7 @@ Można pobrać i edytować nagrania firmy Microsoft i używać ich do tworzenia 
 10. Po odtworzeniu nagrania do końca, kliknij **Stop** na pasku rejestratora zadań w górnej części ekranu.
 11. Wybierz, jak chcesz zapisać nagranie zadania.
 
-## <a name="include-your-task-recordings-in-the-help-pane"></a>Umieszczanie nagrań zadań w okienku Pomocy
-Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy, by mogły być odtwarzane jako przewodniki po zadaniach lub wyświetlane jako tekst, należy zapisać nagrania zadań w bibliotece BPM, a następnie zaktualizować parametry systemu Pomocy, aby wskazywał bibliotekę BPM. Aby uzyskać więcej informacji, zobacz [Łączenie z systemem Pomocy](../../fin-ops/get-started/help-connect.md).
+
 
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------

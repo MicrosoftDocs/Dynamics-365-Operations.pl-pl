@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ac75d390b8bbb94c6e039b374b51462d348e355
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 001bdd61f9266798dadae2ac7c96a4f4c19dbb94
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057184"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141460"
 ---
 # <a name="create-and-associate-registers"></a>Tworzenie i kojarzenie kas
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ta procedura przedstawia sposób tworzenia kasy w punkcie sprzedaży (POS). Procedura wykorzystuje dane firmy demonstracyjnej USRT.
 
@@ -41,6 +41,6 @@ Ta procedura przedstawia sposób tworzenia kasy w punkcie sprzedaży (POS). Proc
 7. W polu Profil graficzny wprowadź lub wybierz wartość.
     * Profile graficzne są używane do określania obrazów używanych w tle okna i na stronie logowania do aplikacji punktu sprzedaży, jak również motywu przewodniego aplikacji punktu sprzedaży.  
 8. W polu Numer kasy EFT w punkcie sprzedaży wpisz wartość.
-    * Numer kasy EFT w punkcie sprzedaży jest używany do informowania agenta rozliczeniowego, który terminal płatniczy wysyła żądania autoryzacji. Ta wartość jest często nazywana „identyfikatorem terminala” lub „TID”. Identyfikator TID znajduje się zwykle na nalepce na urządzeniu płatniczym.  
+    * Numer kasy EFT w punkcie sprzedaży jest używany do informowania agenta rozliczeniowego, który terminal płatniczy wysyła żądania autoryzacji. Ta wartość jest często nazywana „Identyfikatorem terminala” lub „TID”. Identyfikator TID znajduje się zwykle na nalepce na urządzeniu płatniczym.  
 9. Kliknij przycisk Zapisz.
 

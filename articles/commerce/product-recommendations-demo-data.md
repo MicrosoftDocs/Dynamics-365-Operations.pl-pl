@@ -3,7 +3,7 @@ title: Tworzenie rekomendacji z danymi demonstracyjnymi
 description: Niniejszy dokument przedstawia wskazówki dotyczące sposobu korzystania z zaleceń dotyczących produktu kanału rozproszonego w środowiskach z jedną ramką w warstwie 1 przy użyciu wstępnie wypełnionych, dostosowywanych danych demonstracyjnych.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/20
+ms.date: 03/19/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2e790d78b4d5216822ffda3a3895feb674876bd8
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: 59cb5e5c9b59ff2127149e3e47b6c30c9c938a27
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127843"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154256"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Tworzenie rekomendacji z danymi demonstracyjnymi
 
@@ -77,8 +77,6 @@ Rozszerzenie zawiera plik danych o nazwie RecoMockDataset.csv, który zezwala u�
 [Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md)
 
 [Rezygnowanie z rekomendacji spersonalizowanych](personalization-gdpr.md)
-
-[Dodawanie list rekomendacji produktów do witryny handlu elektronicznego](add-reco-list-to-page.md)
 
 [Dodawanie rekomendacji produktu w punkcie sprzedaży](product.md)
 

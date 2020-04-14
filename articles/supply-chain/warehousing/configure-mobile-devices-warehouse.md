@@ -3,7 +3,7 @@ title: Konfigurowanie urządzeń przenośnych do pracy magazynowej
 description: W tym temacie opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df3968c01006d773300593b966a69b5283a889a2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4c4b131c14101722593f685cbe1133b1aa1319b0
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813051"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161835"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy magazynowej
 
@@ -95,11 +95,11 @@ Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika 
 </tr>
 <tr>
 <td>Przyjęcie numeru identyfikacyjnego</td>
-<td>Odbierz ładunek przychodzący za pomocą numeru identyfikacyjnego.</td>
+<td>Odbierz przychodzące wcześniejsze powiadomienie o wysyłce (WPW) za pomocą numeru identyfikacyjnego.</td>
 </tr>
 <tr>
 <td>Odbieranie numeru identyfikacyjnego i odłożenie</td>
-<td>Odbierz i odłóż ładunek przychodzący za pomocą numeru identyfikacyjnego.</td>
+<td>Odbierz i odłóż przychodzące wcześniejsze powiadomienie o wysyłce (WPW) za pomocą numeru identyfikacyjnego.</td>
 </tr>
 <tr>
 <td>Odbierana pozycja ładunku</td>
@@ -119,7 +119,7 @@ Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika 
 <td>Zarejestruj przyjęcie ilości towaru, rejestrując numer autoryzacji zwrotu, a następnie odłóż towary. Ten sam pracownik wykonuje oba działania.</td>
 </tr>
 <tr>
-<td rowspan="4">Zamówienie przeniesienia</td>
+<td rowspan="6">Zamówienie przeniesienia</td>
 <td>Przyjmowanie pozycji z zamówienia przeniesienia</td>
 <td>Zarejestruj przyjęcie ilości towaru, a następnie utwórz pracę odłożenia dla innego pracownika.
 
@@ -140,7 +140,15 @@ Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika 
 <td>Zarejestruj przyjęcie ilości towaru i odłóż towary. Ten sam pracownik wykonuje oba działania.</td>
 </tr>
 <tr>
-<td rowspan="4">Produkcja</td>
+<td>Przyjęcie numeru identyfikacyjnego</td>
+<td>Odbierz przychodzące wcześniejsze powiadomienie o wysyłce (WPW) za pomocą numeru identyfikacyjnego.</td>
+</tr>
+<tr>
+<td>Odbieranie numeru identyfikacyjnego i odłożenie</td>
+<td>Odbierz i odłóż przychodzące wcześniejsze powiadomienie o wysyłce (WPW) za pomocą numeru identyfikacyjnego.</td>
+</tr>
+<tr>
+<td rowspan="4">Produkcyjne</td>
 <td>Zgłoszenie wyrobów gotowych</td>
 <td>Zarejestruj ilość gotowego towaru, którzy został przygotowany do produkcji, i utwórz pracę odłożenia dla innego pracownika. Ilość może być częściową lub całą ilością planowaną dla produkcji.</td>
 </tr>

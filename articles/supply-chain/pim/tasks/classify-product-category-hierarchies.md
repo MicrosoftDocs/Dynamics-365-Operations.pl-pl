@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02a57e4afa5bf2170c6410d199f5125f2c8225ea
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 3e96277125710ea59758b2423f6e5831a379f8d6
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934801"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147971"
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Klasyfikowanie produktu przy użyciu hierarchii kategorii
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tym temacie opisano sposób klasyfikowania produktu przy użyciu hierarchii kategorii. Hierarchie kategorii służą do klasyfikowania produktów na potrzeby eksportu, zaopatrzenia, sprzedaży lub innych celów. To zadanie jest zwykle wykonywane przez menedżera produktu. W przykładzie użyto numeru produktu M0009 z danych firmy demonstracyjnej USMF.
 

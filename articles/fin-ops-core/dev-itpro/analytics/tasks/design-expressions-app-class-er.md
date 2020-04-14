@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f61228d328521d0c6fe8e0ae704001a65d03151f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 207309e8be6c097cec187f3475a489330e1f6b6c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249234"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142692"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Projektowanie wyrażeń ER do wywoływania metod klas aplikacji
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ten przewodnik zawiera informacje, jak ponownie użyć istniejącej logiki aplikacji w konfiguracjach elektronicznego raportowania (RE) poprzez wywołanie wymaganych metod klas aplikacji w wyrażeniach ER. Wartości argumentów wywołania klas można definiować dynamicznie w czasie wykonywania: na przykład na podstawie informacji w dokumencie analizy w celu zapewnienia jego poprawności. W tym przewodniku po zadaniu utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Ta procedura została utworzona dla użytkowników z przypisaną rola administratora systemu lub dewelopera raportowania elektronicznego. 
 
@@ -69,7 +69,7 @@ Aby wykonać te kroki, należy najpierw wykonać kroki zawarte w procedurze „E
 4. W polu Nazwa wpisz „Element główny”.
     * Główny  
 5. W polu Znaki specjalne wybierz opcję „Nowy wiersz — Windows (CR LF)”.
-    * W polu Znaki specjalne wybrano opcję „Nowy wiersz – Windows (CR LF)”. Na podstawie tego ustawienia każdy wiersz analizy pliku jest traktowany jako oddzielny rekord.  
+    * W polu „Znaki specjalne” wybrano opcję „Nowy wiersz – Windows (CR LF)”. Na podstawie tego ustawienia każdy wiersz analizy pliku jest traktowany jako oddzielny rekord.  
 6. Kliknij przycisk OK.
 7. Kliknij przycisk Dodaj, aby otworzyć rozwijane okno dialogowe.
 8. W drzewie zaznacz element „Tekst\Sekwencja”.

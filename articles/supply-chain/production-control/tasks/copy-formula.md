@@ -16,16 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd87ded3bcc20b94fae723424d9cc6b94049a1a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9c5d8dbc5204464b2265029b6a11fcac7b79b464
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558783"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147165"
 ---
 # <a name="copy-a-formula"></a>Kopiowanie formuły
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ta procedura skupia się na tworzenie formuły zawierającej te same składniki co istniejąca formuła, ale z drobnymi różnicami. Aby utworzyć wiersze formuły, możesz użyć funkcji kopiowania w celu skopiowania istniejącej formuły zawierającej najwięcej składników, których potrzebujesz. Następnie można wprowadzić niezbędne zmiany w poszczególnych wierszach nowej wersji. Używając funkcji kopiowania, nie trzeba utworzyć wielu formuł, które są prawie jednakowe. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USP2.
 

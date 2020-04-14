@@ -16,69 +16,69 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f34302a32b2e06f281dc93d6df160b88ffac7123
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: fc28e9a2170929c6cd8daafd7eae54713cec36ff
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769792"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143207"
 ---
 # <a name="rcs-import-files-in-xml-format-with-optional-attributes"></a>(RCS) Importowanie plików w formacie XML z opcjonalnymi atrybutami
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W poniższych krokach wyjaśniono, jak użytkownik w roli administratora systemu lub programisty raportowania elektronicznego może zaprojektować konfigurację formatu ER do importowania plików w formacie XML zawierającym atrybuty opcjonalne. Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. Przed rozpoczęciem należy pobrać i zapisać lokalnie plik IncomingDocumentToLearnHowToHandleOptionalAttributes. XML z [centrum pobierania Microsoft](https://go.microsoft.com/fwlink/?linkid=874684).
 
-1.  Otwórz **Wszystkie miejsca prac** > **Electroniczne Raportowanie**.
-2.  Upewnij się, że dostawca konfiguracji dla przykładowej firmy Litware, Inc. jest dostępny i oznaczony jako **Aktywny** Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj procedurę [Utwórz dostawców konfiguracji i oznacz ich jako aktywnych](er-configuration-provider-mark-it-active-2016-11.md).
-3.  Kliknij opcję **Konfiguracje raportowania**.
+1.    Otwórz **Wszystkie miejsca prac** > **Electroniczne Raportowanie**.
+2.    Upewnij się, że dostawca konfiguracji dla przykładowej firmy Litware, Inc. jest dostępny i oznaczony jako **Aktywny** Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj procedurę [Utwórz dostawców konfiguracji i oznacz ich jako aktywnych](er-configuration-provider-mark-it-active-2016-11.md).
+3.    Kliknij opcję **Konfiguracje raportowania**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Tworzenie nowej konfiguracji modelu danych
-1.  Kliknij przycisk **Utwórz konfigurację**, aby otworzyć rozwijane okno dialogowe.
-2.  W polu **Nazwa** wpisz „Model do importu pliku XML”.
-3.  Kliknij przycisk **Utwórz konfigurację**.
-4.  Kliknij przycisk **Konstruktor**.
-5.  Kliknij przycisk **Nowy** aby otworzyć rozwijane okno dialogowe.
-6.  W polu **Nazwa** wpisz „Element główny”.
-7.  Kliknij przycisk **Dodaj**.
-8.  Kliknij przycisk **Nowy** aby otworzyć rozwijane okno dialogowe.
-9.  W polu **Nazwa** wpisz „Lista”.
-10. W polu **Kod przedmiotu** wybierz **Lista tabel**.
-11. Kliknij przycisk **Dodaj**.
-12. Kliknij przycisk **Nowy** aby otworzyć rozwijane okno dialogowe.
-13. W polu **Nazwa** wpisz „Kod”.
-14. W polu **Typ przedmiotu** wybierz **Ciąg**.
-15. Kliknij przycisk **Dodaj**.
-16. Kliknij przycisk **Zapisz**.
-17. Zamknij stronę.
-18. Kliknij przycisk **Zmień stan**.
-19. Kliknij przycisk **Wykonaj.**
-20. Kliknij przycisk **OK**.
+1.    Kliknij przycisk **Utwórz konfigurację**, aby otworzyć rozwijane okno dialogowe.
+2.    W polu **Nazwa** wpisz „Model do importu pliku XML”.
+3.    Kliknij przycisk **Utwórz konfigurację**.
+4.    Kliknij przycisk **Konstruktor**.
+5.    Kliknij przycisk **Nowy** aby otworzyć rozwijane okno dialogowe.
+6.    W polu **Nazwa** wpisz „Element główny”.
+7.    Kliknij przycisk **Dodaj**.
+8.    Kliknij przycisk **Nowy** aby otworzyć rozwijane okno dialogowe.
+9.    W polu **Nazwa** wpisz „Lista”.
+10.    W polu **Kod przedmiotu** wybierz **Lista tabel**.
+11.    Kliknij przycisk **Dodaj**.
+12.    Kliknij przycisk **Nowy** aby otworzyć rozwijane okno dialogowe.
+13.    W polu **Nazwa** wpisz „Kod”.
+14.    W polu **Typ przedmiotu** wybierz **Ciąg**.
+15.    Kliknij przycisk **Dodaj**.
+16.    Kliknij przycisk **Zapisz**.
+17.    Zamknij stronę.
+18.    Kliknij przycisk **Zmień stan**.
+19.    Kliknij przycisk **Wykonaj.**
+20.    Kliknij przycisk **OK**.
 
 ## <a name="create-a-format-for-data-import"></a>Tworzenie formatu importu danych
-1.  Kliknij przycisk **Utwórz konfigurację**, aby otworzyć rozwijane okno dialogowe.
-2.  W polu **Nowy** wpisz „Format oparty na modelu danych Model do importowania pliku xml”.
-3.  W polu **nazwa** wpisz „format do importu pliku XML”.
-4.  Wybierz opcję **Tak** w polu **Obsługuje import danych**.
-5.  Kliknij przycisk **Utwórz konfigurację**.
+1.    Kliknij przycisk **Utwórz konfigurację**, aby otworzyć rozwijane okno dialogowe.
+2.    W polu **Nowy** wpisz „Format oparty na modelu danych Model do importowania pliku xml”.
+3.    W polu **nazwa** wpisz „format do importu pliku XML”.
+4.    Wybierz opcję **Tak** w polu **Obsługuje import danych**.
+5.    Kliknij przycisk **Utwórz konfigurację**.
 
 ## <a name="design-a-format-to-parse-incoming-file-in-xml-format"></a>Umożliwia zaprojektowanie formatu w celu przeanalizowania pliku przychodzącego w formacie XML
-1.  Kliknij przycisk **Konstruktor**.
-2.  Kliknij przycisk **Dodaj element główny**, aby otworzyć rozwijane okno dialogowe.
-3.  W drzewie zaznacz element **XML\Element**.
-4.  W polu **Nazwa** wpisz „Element główny”.
-5.  Kliknij przycisk **OK**.
-6.  Kliknij przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.
-7.  W drzewie zaznacz element **XML\Element**.
-8.  W polu **Nazwa** wpisz „dokument”.
-9.  W polu **Wielość** wybierz opcję **Jeden wiele**.
-10. Kliknij przycisk **OK**.
-11. W drzewie wybierz **element główny\dokument**.
-12. Kliknij przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.
-13. W drzewie zaznacz element **XML\Atrybut**.
-14. W polu **Nazwa** wpisz „Identyfikator”.
-15. Kliknij przycisk **OK**.
-16. Kliknij przycisk **Zapisz**.
+1.    Kliknij przycisk **Konstruktor**.
+2.    Kliknij przycisk **Dodaj element główny**, aby otworzyć rozwijane okno dialogowe.
+3.    W drzewie zaznacz element **XML\Element**.
+4.    W polu **Nazwa** wpisz „Element główny”.
+5.    Kliknij przycisk **OK**.
+6.    Kliknij przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.
+7.    W drzewie zaznacz element **XML\Element**.
+8.    W polu **Nazwa** wpisz „dokument”.
+9.    W polu **Wielość** wybierz opcję **Jeden wiele**.
+10.    Kliknij przycisk **OK**.
+11.    W drzewie wybierz **element główny\dokument**.
+12.    Kliknij przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.
+13.    W drzewie zaznacz element **XML\Atrybut**.
+14.    W polu **Nazwa** wpisz „Identyfikator”.
+15.    Kliknij przycisk **OK**.
+16.    Kliknij przycisk **Zapisz**.
 
 ## <a name="design-a-format-mapping-to-save-parsed-information-to-data-model"></a>Umożliwia zaprojektowanie mapowania formatu w celu zapisania przeanalizowanej informacji w modelu danych
 1. Kliknij opcję **Mapuj format na model**.
@@ -90,15 +90,15 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli administratora systemu
 7. Kliknij przycisk **Konstruktor**.
 8. W drzewie rozwiń węzeł **format**.
 9. W drzewie rozwiń **format\root: XML Element(root)**.
-10. W drzewie wybierz **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-11. Kliknij **Powiąż**.
-12. W drzewie rozwiń **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-13. W drzewie wybierz **format\root: XML Element(root)\document: XML Element 1..* (dokument)\identyfikator**.
-14. W drzewie rozwiń węzeł **List = format.root.document**.
-15. W drzewie wybierz **List = format.root.document\Code**.
-16. Kliknij opcję **Powiąż**.
-17. Kliknij przycisk **Zapisz**.
-18. Zamknij stronę.
+10.    W drzewie wybierz **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+11.    Kliknij **Powiąż**.
+12.    W drzewie rozwiń **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+13.    W drzewie wybierz **format\root: XML Element(root)\document: XML Element 1..* (dokument)\identyfikator**.
+14.    W drzewie rozwiń węzeł **List = format.root.document**.
+15.    W drzewie wybierz **List = format.root.document\Code**.
+16.    Kliknij opcję **Powiąż**.
+17.    Kliknij przycisk **Zapisz**.
+18.    Zamknij stronę.
  
 ## <a name="run-format-mapping"></a>Uruchom Mapowanie formatu
 1. Kliknij przycisk **Uruchom.**
@@ -123,4 +123,4 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli administratora systemu
 5. Przejrzyj wygenerowany plik. 
 
 > [!NOTE]
-> Ten sam plik został zaimportowany jako projekt formatu; traktuj atrybut „Identyfikator” dla elementu „Dokument” jako opcjonalny.
+> Ten sam plik został zaimportowany jako projekt formatu; traktuj atrybut „identyfikator” dla elementu „dokument” jako opcjonalny.

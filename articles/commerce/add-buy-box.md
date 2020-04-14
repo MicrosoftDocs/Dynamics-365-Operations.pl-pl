@@ -3,7 +3,7 @@ title: Moduł pola zakupu
 description: W tym temacie opisano moduły pola zakupu i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 13d044a150651dd18c3a09c4db6a783fe8f42287
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025466"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154070"
 ---
 # <a name="buy-box-module"></a>Moduł pola zakupu
 
@@ -58,7 +58,7 @@ Motywów można używać do usuwania lub zmieniania kolejności właściwości p
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduły, których można używać w module pola zakupu
 
 - **Galeria multimediów** — ten moduł służy do prezentowania obrazów produktu na stronie szczegółów produktu. Może on obsługiwać jeden lub wiele obrazów. System obsługuje również miniatury obrazów. Miniatury obrazów mogą być ułożone poziomo (jako wiersz pod obrazem) lub w pionie (jako kolumna obok obrazu). Moduł Galeria multimediów można dodać do gniazda **Multimedia** w module pole zakupu. Obecnie obsługuje tylko obrazy. 
-- **Wybór sklepu** — ten moduł pokazuje listę magazynów pobliskich, w których dany towar jest dostępny do odebrania. Umożliwia użytkownikom wprowadzenie lokalizacji, w której znajdują się bliskie sklepy. Moduł wyboru sklepu jest zintegrowany z aplikacją do geokodowania Bing Maps Geocoding (API) służy do konwersji lokalizacji na szerokość i długość geograficzną. Klucz interfejsu API map usługi Bing jest wymagany i należy go dodać do strony udostępnione parametry sieci sprzedaży w Dynamics 365 Retail. Ten moduł obsługuje dwie właściwości, **Promień wyszukiwania** i **Łącze Warunki świadczenia usługi**. Właściwość **Promień wyszukiwania** definiuje promień wyszukiwania dla sklepów w milach. Jeśli nie określono żadnej wartości, używany jest domyślny promień wyszukiwania, 50 mil. Jeśli używana jest mapa usług Bing lub usługa zewnętrzna, **Łącze Warunki świadczenia usługi** może być używana do udostępniania łącza do warunków świadczenia usługi. Dla usługi Bing Maps jest wymagane łącze Warunki świadczenia usługi. 
+- **Wybór sklepu** — ten moduł pokazuje listę magazynów pobliskich, w których dany towar jest dostępny do odebrania. Umożliwia użytkownikom wprowadzenie lokalizacji, w której znajdują się bliskie sklepy. Aby uzyskać więcej informacji na temat tego modułu, należy zapoznać się z tematem [moduł Selector sklepów](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Ustawienia modułu pola zakupu
 
@@ -92,6 +92,8 @@ Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie zestawu początkowego](starter-kit-overview.md)
+
+[Moduł wyboru sklepu](store-selector.md)
 
 [Moduł kontenera](add-container-module.md)
 

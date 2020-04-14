@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b70ad94014587ba8e55735192dbe0ab2e4adf4ee
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ff8a2858bfa96eb1d4b0afa1e48ebd1b578a4431
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185826"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143131"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Tworzenie i eksportowanie płatności dla dostawcy przy użyciu formatu płatności ISO20022
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tym temacie pokazano sposób tworzenia wierszy w arkuszu płatności dostawcy oraz generowania pliku płatności dla dostawcy na przykładzie polecenia przelewu ISO2022.
 
@@ -33,20 +33,20 @@ Jest to piąta z pięciu procedur, które razem ilustrują proces płatności do
 
 ## <a name="example"></a>Przykład
 
-1.  Wybierz kolejno opcje **Rozrachunki z dostawcami > Płatności > Arkusz płatności**.
-2.  Kliknij przycisk **Nowy**.
-3.  W polu **Nazwa** wprowadź lub wybierz wartość.
-4.  Kliknij kolejno pozycje **Wiersze > Propozycja płatności -> Utwórz propozycję płatności**.
-5.  Rozwiń sekcję **Rekordy do uwzględnienia**.
-6.  Kliknij przycisk **Filtr**.
-7.  Na liście zaznacz wiersz dla **tabeli Dostawcy** i **pola Konto dostawcy**.
-8.  W polu **Kryteria** wprowadź lub wybierz wartość. Można stosować dowolne kryteria w celu wybrania transakcji z dostawcą, które mają zostać opłacone. W tym przykładzie zostanie użyte kryterium DE-001 jako konto dostawcy.
-12. Kliknij przycisk **OK**.
-13. Kliknij przycisk **OK**.
-14. Kliknij opcję **Utwórz płatności**.
+1.    Wybierz kolejno opcje **Rozrachunki z dostawcami > Płatności > Arkusz płatności**.
+2.    Kliknij przycisk **Nowy**.
+3.    W polu **Nazwa** wprowadź lub wybierz wartość.
+4.    Kliknij kolejno pozycje **Wiersze > Propozycja płatności -> Utwórz propozycję płatności**.
+5.    Rozwiń sekcję **Rekordy do uwzględnienia**.
+6.    Kliknij przycisk **Filtr**.
+7.    Na liście zaznacz wiersz dla **tabeli Dostawcy** i **pola Konto dostawcy**.
+8.    W polu **Kryteria** wprowadź lub wybierz wartość. Można stosować dowolne kryteria w celu wybrania transakcji z dostawcą, które mają zostać opłacone. W tym przykładzie zostanie użyte kryterium DE-001 jako konto dostawcy.
+12.    Kliknij przycisk **OK**.
+13.    Kliknij przycisk **OK**.
+14.    Kliknij opcję **Utwórz płatności**.
 15. Generowanie pliku płatności ISO20022.
-    1.  Kliknij opcję **Generuj płatności**.
-    2.  W polu **Metoda płatności** wprowadź lub wybierz wartość.
-    3.  W polu **Nazwa pliku** wpisz wartość. Na przykład z powodu płatności EUR wygenerowany plik będzie zgodny z SEPA. Polecenie przelewu ISO20022 i inne formaty płatności dostawców mogą też służyć do generowania płatności w innych walutach.
-    4.  W polu **Konto bankowe** wprowadź lub wybierz wartość.
+    1.    Kliknij opcję **Generuj płatności**.
+    2.    W polu **Metoda płatności** wprowadź lub wybierz wartość.
+    3.    W polu **Nazwa pliku** wpisz wartość. Na przykład z powodu płatności EUR wygenerowany plik będzie zgodny z SEPA. Polecenie przelewu ISO20022 i inne formaty płatności dostawców mogą też służyć do generowania płatności w innych walutach.
+    4.    W polu **Konto bankowe** wprowadź lub wybierz wartość.
 

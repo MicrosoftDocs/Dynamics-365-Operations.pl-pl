@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 143782413359d87f3d4c46940f9a699fbf0e8f90
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 6d292d028ebc87892760524dbd7709e8f181fc5d
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769816"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141817"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Projektowanie konfiguracji służących do generowania raportów w formatach pakietu Office z osadzonymi obrazami
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. W tej procedurze wyjaśniono sposób projektowania konfiguracji raportowania elektronicznego (ER) do generowania dokumentów programów Microsoft Excel i Word zawierających osadzone obrazy. W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Kroki można wykonać przy użyciu zestawu danych firmy USMF. Ta procedura została utworzona dla użytkowników z przypisaną rola administratora systemu lub dewelopera raportowania elektronicznego. Zanim rozpoczniesz, pobierz i zapisz pliki wymienione w temacie pomocy [Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne](../electronic-reporting-embed-images-shapes.md). Pliki to: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png i Cheque template Word.docx.
 
@@ -42,7 +42,7 @@ Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę
  6. Załadowany model zostanie użyty jako źródło danych informacji do generowania dokumentów, które zawierają obrazy w programie Excel i Word.  
 
 ## <a name="add-a-new-er-format-configuration"></a>Dodawanie nowej konfiguracji formatu ER  
- 1. Zamiast tworzyć nowy format można załadować plik konfiguracji formatu ER (Cheques printing format.xml), który został wcześniej zapisany. Ten plik zawiera przykładowy układ formatu do drukowania czeków przy użyciu wstępnie zadrukowanego formularza i mapowanie tego formatu do modelu danych „Model for cheques”.   
+ 1. Zamiast tworzyć nowy format można załadować plik konfiguracji formatu ER (Cheques printing format.xml), który został wcześniej zapisany. Ten plik zawiera przykładowy układ formatu do drukowania czeków przy użyciu wstępnie zadrukowanego formularza i mapowanie tego formatu do modelu danych „Model czeków”.   
  2. Kliknij opcję Import/eksport.  
  3. Kliknij opcję Załaduj z pliku XML.  
  4. Kliknij przycisk Przeglądaj i wybierz plik Cheques printing format.xml.   
@@ -55,7 +55,7 @@ Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę
  1. W okienku akcji kliknij pozycję Konfiguracje.  
  2. Kliknij opcję Parametry użytkownika.  
  3. W polu Ustawienia uruchamiania wybierz opcję Tak.  
-  Włącz flagę „Uruchom projekt”, aby uruchomić wersję roboczą wybranego formatu zamiast wersji ukończonej.  
+  Włącz flagę „Uruchom wersję roboczą”, aby uruchomić wersję roboczą wybranego formatu zamiast wersji ukończonej.  
  4. Kliknij przycisk OK.  
 
 ## <a name="configure-cash--bank-management-parameters"></a>Konfigurowanie parametrów modułu Zarządzanie gotówką i bankami  

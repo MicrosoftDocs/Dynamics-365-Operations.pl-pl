@@ -1,6 +1,6 @@
 ---
 title: Projektowanie konfiguracji ER do importowania danych z zewnętrznych plików CSV
-description: Za pomocą tej procedury można zaprojektować konfigurację raportowania elektronicznego (RE) w celu importowania danych do aplikacji Finance and Operations z zewnętrznego pliku w formacie CSV.
+description: Za pomocą tej procedury można zaprojektować konfigurację raportowania elektronicznego (RE) w celu importowania danych do Finance and Operations z zewnętrznego pliku w formacie CSV.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cf27590d80bbaf7749a0b6e69adc63ddcf4f9380
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c8511b83a5d327f6a1d5c9ace091eae9e546307b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185159"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142267"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>Projektowanie konfiguracji ER do importowania danych z zewnętrznych plików CSV
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Za pomocą tej procedury można zaprojektować konfigurację raportowania elektronicznego (RE) w celu importowania danych z zewnętrznego pliku w formacie CSV. W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Aby wykonać te kroki, najpierw trzeba wykonać kroki wymienione w procedurze „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. 
 
@@ -75,7 +75,7 @@ Należy również pobrać i zapisać lokalnie następujące pliki: (https://go.m
     * Element Główny\Wiersz\Typy\Nagłówek typu SEQUENCE zawiera zagnieżdżony element STRING, którego wartość została zdefiniowana jako stała wartość ciągu. Ta sekwencja analizuje składnię wiersz nagłówka podczas analizowania składni pliku.   
 8. W drzewie wybierz opcję „Przychodzący: Plik\Główny: Sekwencja\Wiersz: Sequence 1..* \Typy: Przypadek\Rekord: Sequence 1..1 (,)”.
     * Element Główny\Wiersz\Typy\Rekord typu SEQUENCE skonfigurowano do analizy składni wierszy transakcji. Należy zauważyć, że jako znak „Ogranicznik niestandardowy” wybrano przecinek. Oznacza to, że przecinek posłuży jako separator pól dla tego typu wiersza w pliku analizy składni.   
-    * Należy zauważyć, że dodano kilka zagnieżdżonych elementów różnych typów danych dla elementu Główny\Wiersz\Typy\Rekord, aby podczas analizy składni wiersze transakcji były traktowane jak odrębne pola. Należy zauważyć, że opcja "Wniosek oferty" został skonfigurowany jako "Brak". Oznacza to, że w pliku analizy składni wszystkie pola tego typu będą traktowane tak, jakby nie zawierały znaków w nawiasie.   
+    * Należy zauważyć, że dodano kilka zagnieżdżonych elementów różnych typów danych dla elementu Główny\Wiersz\Typy\Rekord, aby podczas analizy składni wiersze transakcji były traktowane jak odrębne pola. Należy zauważyć, że opcja „Wniosek oferty” został skonfigurowany jako „Brak”. Oznacza to, że w pliku analizy składni wszystkie pola tego typu będą traktowane tak, jakby nie zawierały znaków w nawiasie.   
 9. W drzewie wybierz opcję „Przychodzący: Plik\Główny: Sekwencja\Wiersz: Sequence 1..* \Typy: Przypadek\Rekord: Sequence 1..1 (,)\TransactionDate: DateTime”.
     * Na przykład element Główny\Wiersz\Typy\Rekord\TransactionDate typu DATETIME skonfigurowano tak, aby z pliku analizy składni uzyskiwać wartość daty i godziny transakcji w formacie „m/d/rrrr”.   
 10. W drzewie wybierz opcję „Przychodzący: Plik\Główny: Sekwencja\Wiersz: Sequence 1..* \Typy: Przypadek\Rekord: Sequence 1..1 (,)\CountryCode: Ciąg 0..1 ”.

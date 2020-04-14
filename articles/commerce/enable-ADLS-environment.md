@@ -3,7 +3,7 @@ title: Włączanie ADLS w środowisku Dynamics 365 Commerce
 description: W tym temacie opisano sposób włączania i testowania Azure Data Lake Storage (ADLS) dla środowiska Dynamics 365 Commerce, który jest wstępnym warunkiem włączenia zaleceń dotyczących produktów.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 553e1512ba72559923403eef741ce08222172a09
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: 3c037f5603af5af84917084eefa1edd508891c0d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127774"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154443"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>Włączanie ADLS w środowisku Dynamics 365 Commerce
 
@@ -98,8 +98,6 @@ Jeśli nie zostało to jeszcze zrobione, wykonaj kroki [w celu włączenia zalec
 [Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md)
 
 [Rezygnowanie z rekomendacji spersonalizowanych](personalization-gdpr.md)
-
-[Dodawanie list rekomendacji produktów do witryny handlu elektronicznego](add-reco-list-to-page.md)
 
 [Dodawanie rekomendacji produktu w punkcie sprzedaży](product.md)
 

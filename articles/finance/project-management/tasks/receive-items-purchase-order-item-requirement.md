@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7afdae65c5ae7e3196c6b9f142dd87aec39b5ea3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1f288a47f952a30d98a4a5b96409dc53f880d41d
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174427"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3139070"
 ---
 # <a name="receive-items-on-purchase-order-from-item-requirement"></a>Przyjmowanie towarów wymienionych na zamówieniu zakupu na podstawie zapotrzebowania na towary
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tym temacie pokazano sposób przyjmowania towarów względem zamówienia zakupu z zapotrzebowania na towary.
 

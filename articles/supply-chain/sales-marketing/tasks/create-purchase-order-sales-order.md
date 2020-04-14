@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b346731ec80d08afabe648e1b47b30b53b29e744
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: 30ffb34e2aee984d29bedb47d6bfc9cb6173470a
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924415"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148683"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Tworzenie zamówienia zakupu na podstawie zamówienia sprzedaży
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ta procedura pokazuje, jak utworzyć zamówienie zakupu oparte na zamówieniu sprzedaży. Ilości produktów w zamówieniu zakupu są następnie przeznaczane do zaspokojenia zapotrzebowania w źródłowym zamówieniu sprzedaży. Ten sposób realizacji zapotrzebowania sprzedaży stanowi alternatywę dla bardziej kompleksowej i zoptymalizowanej metody Planowanie wymagań dystrybucji. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
 

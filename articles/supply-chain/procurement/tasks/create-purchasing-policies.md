@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e29df3b42479a215b66354f8dfceea002a146e74
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: c8416f9a869b9144a63a6fb08c667cc32dec9854
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856479"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149718"
 ---
 # <a name="create-purchasing-policies"></a>Tworzenie zasad zakupów
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tym temacie pokazano sposób tworzenia zasad zakupów dopasowanych do procesów biznesowych w obszarze zakupów. Zanim będzie można utworzyć zasady dotyczące zakupów, należy skonfigurować parametry zasad zakupów, . Można tworzyć, modyfikować i wycofywać zasady zakupów, ale nie można usunąć zasady zakupów. Tę procedurę zazwyczaj wykonuje kierownik ds. zakupów. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
 
@@ -44,14 +44,14 @@ W tym temacie pokazano sposób tworzenia zasad zakupów dopasowanych do procesó
 1. Wybierz pozycję **Nowy**.
 2. W polu **Nazwa** wpisz wartość.
 3. W polu **Opis** wpisz wartość.
-- Pojedyncza zasada zakupów może stosować się tylko dla jednej hierarchii organizacyjnej. Na przykład możesz mieć jedną hierarchię o nazwie „Położenie geograficzne” i jedną o nazwie „dział” i dla każdej ustawić inną zasadę zakupów.  
+- Pojedyncza zasada zakupów może stosować się tylko dla jednej hierarchii organizacyjnej. Na przykład możesz mieć jedną hierarchię o nazwie „Geograficzne” i jedną o nazwie „Dział” i dla każdej ustawić inną zasadę zakupów.  
 - Wybierz organizację, do której ma być stosowana zasada.  
 4. Wybierz strzałkę, aby dodać wybraną organizację.
 - Można powtórzyć ten proces, aby dodać więcej organizacji.  
 
 ## <a name="add-a-policy-rule"></a>Dodawanie reguły
 1. Na liście **Typ reguły** zaznacz element **Reguła celu zapotrzebowania**.
-- Utworzysz regułę, która ustawia domyślny cel zapotrzebowania na typ Zużycie, ale za to pozwala wybrać typ uzupełniania zapasów.  
+- Utworzysz regułę, która ustawia domyślny cel zapotrzebowania na typ Zużycie, ale za to pozwala wybrać typ Uzupełniania zapasów.  
 2. Wybierz pozycję **Utwórz regułę**.
 3. W polu **Zezwalaj na zastępowanie ręczne** wybierz opcję **Tak**.
 4. Kliknij przycisk **Zamknij**.

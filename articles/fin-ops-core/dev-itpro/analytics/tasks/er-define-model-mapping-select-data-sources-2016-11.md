@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46dc13416aa094f33879c017c1a1815fc791409d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6287fa95b7ce7341e99d1b1a6b972db68a30398
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185113"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142180"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Definiowanie mapowań modeli raportowanie elektronicznego i wybieranie dla nich źródeł danych
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może wybrać źródła danych modelu danych raportowania elektronicznego (ER). Źródła danych będą kojarzone z poszczególnymi składnikami wybranego modelu danych podczas projektowania oraz wypełnią model danych danymi biznesowymi w czasie wykonywania. W tym przykładzie wybierzesz źródła danych dla istniejącego modelu danych, który został utworzony dla przykładowej firmy Litware, Inc. Aby wykonać te kroki, należy najpierw wykonać procedurę „Tworzenie nowego modelu danych”.
 
@@ -78,7 +78,7 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu 
 17. W drzewie zaznacz element „Transakcje\Załącznik”.
 18. Kliknij opcję Dodaj źródło danych.
 19. W polu Formuła wpisz „CONCATENATE(Transakcje.Załącznik, "-", ”.
-    * Na końcu formuły wpisz [ , “-“, ].  
+    * Na końcu formuły wpisz [ , "-", ].  
 20. W drzewie zaznacz element „Ciąg\TEKST”.
 21. Kliknij opcję Dodaj funkcję.
 22. W drzewie zaznacz element „Transakcje\Identyfikator rekordu(RecId)”.

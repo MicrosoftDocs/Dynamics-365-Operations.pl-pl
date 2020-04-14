@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 230794eacd5e9911496dd3826f08126cc21494cb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8d8c259ad081d02395c6ae3c3b7cf66b89933fdf
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844184"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149511"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Niniejszej procedury należy użyć w celu skonfigurowania reguły dla zamówionych produktów z kategorii. Reguły są definiowane dla określonej zasady zakupów. Reguła dostępu do kategorii określa kategorie zaopatrzenia, do których mają dostęp pracownicy podczas tworzenia zapotrzebowania. Gdy pracownik tworzy zapotrzebowanie, stosowana zasada zakupów i reguła dostępu do kategorii zależą od firmy i jednostki operacyjnej, do której należy pracownik. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF. To zadanie zazwyczaj wykonuje kierownik ds. zakupów.
 
@@ -36,7 +36,7 @@ Niniejszej procedury należy użyć w celu skonfigurowania reguły dla zamówion
 
 ## <a name="create-a-category-access-rule"></a>Tworzenie reguły dostępu do kategorii
 1. Rozwiń kartę skróconą **Reguły zasad**.
-2. Na liście **Typ reguły** zaznacz element **Reguła dostępu do kategorii**. Jeśli przycisk **Utwórz regułę** jest wygaszony, oznacza to, że już istnieje aktywna reguła dostępu do kategorii. Sprawdź wartości w polach **Data obowiązywania** i **Data ważności**, aby określić, która data powoduje problem, zaznacz ją, a następnie kliknij przycisk **Wycofanie reguły**. Jeśli przycisk **Utwórz regułę** jest dostępny, nie trzeba podejmować żadnych działań.  
+2. Na liście **Typ reguły** zaznacz element **Reguła dostępu do kategorii**. Jeśli przycisk **Utwórz regułę** jest wygaszony, oznacza to, że już istnieje aktywna reguła dostępu do Kategorii. Sprawdź wartości w polach **Data obowiązywania** i **Data ważności**, aby określić, która data powoduje problem, zaznacz ją, a następnie kliknij przycisk **Wycofanie reguły**. Jeśli przycisk **Utwórz regułę** jest dostępny, nie trzeba podejmować żadnych działań.  
 3. Kliknij przycisk **Utwórz regułę**.
 4. W polu **Data obowiązywania** wprowadź datę i godzinę. Czas nie może się pokrywać z inną regułą, która jest już aktywna.  
 5. Wybierz kategorię, której będzie dotyczyć reguła. Zapamiętaj lub zapisz, która to kategoria — będzie to później potrzebne. Po wybraniu kategorii jej wszystkie kategorie nadrzędne są również dodawane do listy Wybrane kategorie. Aby zastosować regułę do wszystkich podkategorii wybranej kategorii, zaznacz pole wyboru **Uwzględnij podkategorie**.
@@ -50,5 +50,5 @@ Niniejszej procedury należy użyć w celu skonfigurowania reguły dla zamówion
 4. Kliknij przycisk **Dodaj**.
 5. W polu **Kategoria** zaznacz tę samą kategorię, jak użyta w **regule dostępu kategorii**.
 6. W polu **Wybór dostawcy** wybierz opcję. Zaznacz regułę mającą kontrolować, jakiego rodzaju dostawców można wybierać dla kategorii podczas tworzenia zapotrzebowań.  
-7. Kliknij przycisk **Zamknij**. Zdefiniowane przez Ciebie reguły dotyczą zapotrzebowań typu Zużycie. Jeśli trzeba zdefiniować zasady dla zapotrzebowań typu Uzupełnienie zapasów, należy utworzyć regułę dla typu reguły o nazwie „Reguła dostępu do kategorii uzupełniania zapasów”.  
+7. Kliknij przycisk **Zamknij**. Zdefiniowane przez Ciebie reguły dotyczą zapotrzebowań typu Zużycie. Jeśli trzeba zdefiniować zasady dla zapotrzebowań typu Uzupełnienie zapasów, należy utworzyć regułę dla typu reguły o nazwie „Reguła dostępu do kategorii uzupełniania”.  
 

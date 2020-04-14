@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b616998738d6b6986f157d136fc56e061900ef41
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 501936734b6ec970062d0d2cbcc8a3cdc11b934f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550539"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142370"
 ---
 # <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1---design-format"></a>ER Używanie poziomo rozszerzalnych zakresów w celu dynamicznego dodawania kolumn w raportach programu Excel (Część 1 — Projektowanie formatu)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może skonfigurować format raportowania elektronicznego (ER) do generowania raportów jako plików arkuszy OPENXML(Excel), w których wymagane kolumny mogą być tworzone dynamicznie jako poziomo rozszerzalne zakresy. Kroki można wykonać na danych dowolnej firmy.
 
@@ -57,7 +57,7 @@ Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wers
 
 ## <a name="design-the-report-format"></a>Projektowanie formatu raportu
 1. Kliknij przycisk Konstruktor.
-2. Włącz przełączany przycisk „Pokaż szczegóły”.
+2. Włącz przełącznik „Pokaż szczegóły”.
 3. W okienku akcji kliknij pozycję Importuj.
 4. Kliknij opcję Importuj z programu Excel.
 5. Kliknij opcję Załączniki.

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 788564bfd7c3df146266976d8eef6621ff37ca2a
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 48ce4942f8407242013df45f533390784694d4e6
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550632"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142554"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER Używanie wymiarów finansowych jako źródła danych (Część 2 — Mapowanie modelu)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować model raportowania elektronicznego (ER), aby używał on wymiarów finansowych jako źródła danych w raportach ER. Kroki można wykonać na danych dowolnej firmy.
 
@@ -137,7 +137,7 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 66. Kliknij przycisk Zapisz.
 67. Zamknij stronę.
 
-## <a name="complete-this-draft-models-version"></a>Finalizowanie tej wersji modelu roboczego
+## <a name="complete-this-draft-models-version"></a>Finalizowanie tej wersji roboczej modelu
 1. Zamknij stronę.
 2. Zamknij stronę.
 3. Kliknij przycisk Zmień stan.

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 278cfe89181efbbb934e108708db8fc29c25ab62
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124412"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154187"
 ---
 # <a name="peripherals"></a>Urządzenia peryferyjne
 
@@ -158,7 +158,7 @@ Szuflady kasowe adresowalne w sieci, drukarki paragonów i terminale płatnicze 
 
 ### <a name="dedicated"></a>Dedykowane
 
-Klienci Modern POS systemów Windows i Android zawierają **dedykowane** lub wbudowane stacje sprzętu. Klienci ci mogą komunikować się bezpośrednio z urządzeniami peryferyjnymi za pomocą logiki biznesowej wbudowanej w aplikacje. Aplikacja Android obsługuje tylko urządzenia sieciowe. Aby uzyskać więcej informacji na temat obsługi urządzeń peryferyjnych dla systemu Android, odwiedź artykuł [Konfigurowanie aplikacji POS Hybrid w systemie Android i iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+Klienci Modern POS systemów Windows i Android zawierają **dedykowane** lub wbudowane stacje sprzętu. Klienci ci mogą komunikować się bezpośrednio z urządzeniami peryferyjnymi za pomocą logiki biznesowej wbudowanej w aplikacje. Aplikacja Android obsługuje tylko urządzenia sieciowe. Aby uzyskać więcej informacji na temat obsługi urządzeń peryferyjnych dla systemu Android, odwiedź artykuł [Konfigurowanie aplikacji POS Hybrid w systemie Android i iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 Aby użyć dedykowanej stacji sprzętowej, przypisz profil sprzętu do kasy, która będzie używać aplikacji Modern POS dla aplikacji Windows lub Android. Następnie utwórz stację sprzętową typu **Dedykowana** dla sklepu, w którym kasa będzie używana. Uruchom Modern POS w trybie bez szuflady i użyj operacji **zarządzania stacjami sprzętowymi**, aby włączyć funkcje stacji sprzętowej, dlatego dedykowana Stacja sprzętowa będzie aktywna domyślnie. Następnie wyloguj się z Modern POS, a następnie zaloguj się ponownie i Otwórz zmianę, a urządzenia peryferyjne skonfigurowane w profilu sprzętu mogą być teraz używane. 
 
@@ -199,7 +199,7 @@ Aby uzyskać więcej informacji, zobacz [Konfiguracja, instalacja i aktywacja Mo
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Instalacja i konfiguracja programu Modern POS dla systemu Android i iOS
 
-W celu uzyskania dalszych informacji, zobacz [Konfigurowanie aplikacji POS Hybrid w systemach Android i iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+W celu uzyskania dalszych informacji, zobacz [Konfigurowanie aplikacji POS Hybrid w systemach Android i iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="opos-device-setup-and-configuration"></a>Instalacja i konfiguracja urządzenia OPOS
 
@@ -494,7 +494,7 @@ Ta konfiguracja jest najbardziej typową konfigurację dla kas w tradycyjnych, s
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS dla systemu Android ze stacją sprzętową z funkcją IPC (wbudowaną)
 
-**Nowość w 10.0.8** —drukarki sieciowe Epson i kasy połączone z tymi drukarkami za pomocą portu DK są teraz obsługiwane przez program Modern POS dla aplikacji Android. Aby uzyskać szczegółowe informacje, odwiedź artykuł [Konfigurowanie POS Hybrid dla systemu Android i iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+**Nowość w 10.0.8** —drukarki sieciowe Epson i kasy połączone z tymi drukarkami za pomocą portu DK są teraz obsługiwane przez program Modern POS dla aplikacji Android. Aby uzyskać szczegółowe informacje, odwiedź artykuł [Konfigurowanie POS Hybrid dla systemu Android i iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Wszystkie urządzenia klienckie programu Modern POS mające ustaloną „wspólną” stację sprzętową z usługami IIS
 

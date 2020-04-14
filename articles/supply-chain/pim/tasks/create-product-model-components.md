@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1dcf18d1ac35250a80a14a90624deaea1b70a898
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 38fe3f876a35c70818cded56e0c59b4ebf49bc96
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844736"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147786"
 ---
 # <a name="create-product-model-components"></a>Tworzenie składników modelu produktu
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Modele konfiguracji produktów opartych na ograniczeniach wykorzystują składniki jako elementy konstrukcyjne do zbudowania struktury modelu produktu. Składniki muszą być utworzone, zanim będzie można zbudować model produktu. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

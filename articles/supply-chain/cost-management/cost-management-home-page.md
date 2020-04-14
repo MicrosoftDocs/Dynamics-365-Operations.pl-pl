@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd51fa667fd48b7bab64c3566b616631c6f9bcd1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: df8552aab5f1566dccf0b905c2d5db372671ec09
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249639"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144118"
 ---
 # <a name="cost-management-home-page"></a>Zarządzanie kosztami — strona główna
 
@@ -32,12 +32,13 @@ ms.locfileid: "2249639"
 
 Moduł [Zarządzanie kosztami (film)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) pozwala wykonywać operacje wyceny i księgowania surowców, półproduktów, wyrobów gotowych oraz zasobów produkcji w toku. Określa proces definiowania, zarządzania i raportowania dla operacji [księgowania zapasów](cost-object.md) i [księgowania produkcji](bom-calculations.md).
 
-Zasady kosztów można zdefiniować w następujących obszarach: 
--  [Wstępnie ustalony koszt](costing-versions.md)
--  [Księgowanie zapasów](cost-object.md)
--  [Księgowanie produkcji](bom-calculations.md)
--  [Księgowanie kosztów pośrednich](costing-sheets.md)
--  [Integracja księgi](production-order-cost-analysis.md)
+Zasady kosztów można zdefiniować w następujących obszarach:
+
+- [Wstępnie ustalony koszt](costing-versions.md)
+- [Księgowanie zapasów](cost-object.md)
+- [Księgowanie produkcji](bom-calculations.md)
+- [Księgowanie kosztów pośrednich](costing-sheets.md)
+- [Integracja księgi](production-order-cost-analysis.md)
 
 Na przykład można określić, które metody wyceny zapasów, np. [FIFO](fifo-physical-value-marking.md), [średnia ważona](weighted-average-physical-value-marking.md), [koszt standardowy](prerequisites-standard-costs.md) czy [średnia ruchoma](moving-average.md), mają być stosowane do produktów w [grupie modeli pozycji](../inventory/reserve-inventory-quantities.md) w module Księgowanie zapasów.
 
@@ -51,23 +52,16 @@ Moduł Księgowanie produkcji umożliwia obsługę [kalkulacji doliczeniowej zle
 
 #### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
 
-Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadmap.dynamics.com/), aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane. 
+Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadmap.dynamics.com/), aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane.
 
 #### <a name="white-paper"></a>Oficjalny dokument
-W artykule [Obliczenia BOM za pomocą arkusza wyceny](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) opisano, jak skonfigurować arkusz wyceny obejmujący materiały i wytwarzanie oraz jak ta konfiguracja wpływa na wyniki obliczania BOM. Aby lepiej wyjaśnić zagadnienia, zawiera konkretne scenariusze i dane, które ilustrują efekt działania różnych ustawień i konfiguracji. Nie oczekujemy ścisłego prześledzenia tych scenariuszy, ponieważ dokument zawiera za mało szczegółów, aby można było je skonfigurować. Niemniej jednak jeśli masz podstawową wiedzę, możesz spróbować odtworzyć wymienione niżej przewodniki po zadaniach w kolejności, w jakiej są podane. Wiedzę uzyskaną po przeczytaniu tego dokumentu można wykorzystać do analizy obliczeń BOM. 
 
--  [Tworzenie wyrobu gotowego](tasks/create-finished-product-2016-02.md)
--  [Tworzenie półproduktu](tasks/create-semi-finished-product-2016-02.md)
--  [Tworzenie surowców](tasks/create-raw-materials-2016-02.md)
--  [Tworzenie list składowych](tasks/create-boms-2016-02.md)
--  [Tworzenie tras](tasks/create-routes-2016-02.md)
--  [Obliczanie BOM przy użyciu struktury jednopoziomowej](tasks/calculate-bom-single-level-structure-2016-02.md)
--  [Obliczanie BOM przy użyciu struktury wielopoziomowej](tasks/calculate-bom-multilevel-structure-2016-02.md)
-
+W artykule [Obliczenia BOM za pomocą arkusza wyceny](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) opisano, jak skonfigurować arkusz wyceny obejmujący materiały i wytwarzanie oraz jak ta konfiguracja wpływa na wyniki obliczania BOM. Aby lepiej wyjaśnić zagadnienia, zawiera konkretne scenariusze i dane, które ilustrują efekt działania różnych ustawień i konfiguracji.
 
 #### <a name="blogs"></a>Blogi
+
 Opinie, wiadomości i inne informacje na temat modułu Zarządzanie kosztami można znaleźć w [blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) oraz [blogu zespołu ds. badań i rozwoju modułu Zarządzanie łańcuchem dostaw systemu Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm). Mimo że część z tych wpisów została napisana dla poprzedniej wersji modułu Zarządzanie kosztami, to w obecnej wersji są również używane te same pojęcia i podobne procedury.
 
 #### <a name="task-guides"></a>Przewodniki zadań
-Dodatkowa pomoc jest dostępna jako przewodniki po zadaniach. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk Pomoc na dowolnej stronie.
 
+Dodatkowa pomoc jest dostępna jako przewodniki po zadaniach. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk Pomoc na dowolnej stronie.

@@ -3,7 +3,7 @@ title: Ustawienia parametrów modułu Zarządzanie kredytami
 description: W tym temacie opisano opcje, których można wykorzystać w celu skonfigurowania zarządzania kredytami w celu spełnienia wymagań firmy.
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ba0b047fe984f6bc164cbe137320d6bf6c13dafc
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124192"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154535"
 ---
 # <a name="credit-management-parameters-setup"></a>Ustawienia parametrów modułu Zarządzanie kredytami
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano opcje, których można wykorzystać w celu skonfigurowania zarządzania kredytami w celu spełnienia wymagań firmy. Aby rozpocząć korzystanie z funkcji zarządzania kredytami, należy skonfigurować parametry na stronie **Parametry modułu Zarządzanie kredytami** (**Zarządzanie kredytami \> Konfiguracja \> Parametry modułu Zarządzanie kredytami**).
+W tym temacie opisano opcje, których można wykorzystać w celu skonfigurowania zarządzania kredytami w celu spełnienia wymagań firmy. Aby rozpocząć korzystanie z funkcji zarządzania kredytami, należy skonfigurować parametry na stronie **Parametry modułu Kredyt i windykacje** (**Kredyt i windykacje \> Konfiguracja \> Parametry modułu Kredyt i windykacje**).
 
 ## <a name="credit-parameters"></a>Parametry kredytu
 
-Istnieją cztery FastTabs, w których można zmienić parametry kontrolujące zarządzanie kredytami: **Wstrzymania kredytu**, **Punkt kontrolnyzarządzania kredytami**, **Statystyki zarządzania kredytami** oraz **Limity kredytu**. W poniższych sekcjach opisano ustawienia dostępne na poszczególnych skróconych kartach.
+Istnieją cztery karty skrócone w sekcji **Kredyt**, w których można zmienić parametry kontrolujące zarządzanie kredytami: **Wstrzymania kredytu**, **Punkt kontrolnyzarządzania kredytami**, **Statystyki zarządzania kredytami** oraz **Limity kredytu**. W poniższych sekcjach opisano ustawienia dostępne na poszczególnych skróconych kartach.
 
 ### <a name="credit-holds"></a>Wstrzymania kredytu
 

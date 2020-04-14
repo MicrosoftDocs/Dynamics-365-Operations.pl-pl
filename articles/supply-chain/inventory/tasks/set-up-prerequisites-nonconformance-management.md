@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 78d38b00d8039612aa236b3aa9593693983407dc
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: dfd0bc7edb3236d016e64bd08b1858fd7b12417f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914729"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145739"
 ---
 # <a name="set-up-prerequisites-for-nonconformance-management"></a>Konfigurowanie warunków wstępnych zarządzania brakiem zgodności
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ten temat umożliwia aktywowanie procesów zarządzania brakiem zgodności. Brak zgodności opisuje procedurę lub towar, który ma problem z jakością, gdzie opisowe informacje zawierają źródło i typ problemu. Procedura wykorzystuje dane firmy demonstracyjnej USMF. Ta procedura jest zwykle wykonywana przez kierownika ds. jakości.
 

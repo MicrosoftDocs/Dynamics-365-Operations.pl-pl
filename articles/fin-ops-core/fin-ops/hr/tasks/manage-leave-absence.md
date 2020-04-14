@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ce57495be4ae601d6ac06bb4780a2e1192dfcc5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 002700ae7f6474b48fbe09cb3aaa72e9516b8224
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190288"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143565"
 ---
 # <a name="manage-leave-of-absence"></a>Zarządzanie nieobecnościami
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ta procedura prowadzi przez proces tworzenia rekordów urlopów pracowników. Można śledzić czas spędzany na urlopach z powodów medycznych, naukowych, na opiekę rodzicielską itd. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

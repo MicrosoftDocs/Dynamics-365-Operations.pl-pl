@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6879a45dd1fcc1ba718747aaaf0d7936c2eac49f
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: c8e0288da16829c04a9b97c0a52caa8bd27cddf8
+ms.sourcegitcommit: fde8045ea49d0cf26d5e7ac5a0da5c0d3d69d5bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087353"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166505"
 ---
 # <a name="common-data-service-entities"></a>Jednostki usługi Common Data Service
 
@@ -87,12 +87,17 @@ W usłudze Common Data Service są dostępne są następujące jednostki aplikac
 | Stanowisko pracy | cdm_jobposition |
 | Typ stanowiska | cdm_positiontype |
 | Przypisanie pracownika do stanowiska | cdm_positionworkerassignmentmap |
+| Wymiar stanowiska pracy | cdm_jobpositiondimension|
 | Typ funkcji | cdm_jobtype |
 | Język | cdm_language |
+| Nazwa | cdm_title |
+
+> [!NOTE]
+> Wymiary finansowe dla **Typu stanowiska**, **Przypisania pracowników do stanowisk** i **Zatrudnienia** zapewniają integrację jednokierunkową do Common Data Service. Aktualizacje wymiarów finansowych obecnie nie są synchronizowane z usługi Common Data Service do Human Resources. 
 
 ## <a name="leave-and-absence-entities"></a>Jednostki dotyczące urlopów i nieobecności
 
-| Nazwisko | Jednostka |
+| Imię i nazwisko | Jednostka |
 | --- | --- |
 | Transakcja banku urlopów | cdm_leavebanktransaction |
 | Rejestracja urlopów | cdm_leaveenrollment |

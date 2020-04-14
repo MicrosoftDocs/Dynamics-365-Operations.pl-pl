@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f982f3c3b2703a71e6c8a1a0d1be15fb260a6ef1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 4f2fd2b7bf9f09a61d07e1bc35ad48fe2c5d7383
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092253"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138366"
 ---
 # <a name="provision-human-resources"></a>Aprowizowanie rozwiązania Human Resources
 
@@ -53,10 +53,10 @@ Po utworzeniu projektu LCS można zainicjować moduł Human Resources w środowi
 
 1. W projekcie LCS wybierz kafelek **Zarządzanie aplikacją Human Resources**.
 
-2. Wskaż, czy jest to wystąpienie produkcyjne czy piaskownicy rozwiązania Human Resources. Funkcje w wersji zapoznawczej mogą być dostępne w wystąpieniach piaskownicy, aby umożliwić wczesne przesłanie opinii i testowanie.
+2. Wskaż, czy jest to wystąpienie produkcyjne czy piaskownicy Human Resources. Funkcje w wersji zapoznawczej mogą być dostępne w wystąpieniach piaskownicy, aby umożliwić wczesne przesłanie opinii i testowanie.
    
     > [!NOTE]
-    > Po ustawieniu typu wystąpienia aplikacji Talent nie można go zmienić. Przed kontynuowaniem sprawdź, czy został wybrany poprawny typ wystąpienia.</br></br>
+    > Po ustawieniu typu wystąpienia aplikacji Human Resources nie można go zmienić. Przed kontynuowaniem sprawdź, czy został wybrany poprawny typ wystąpienia.</br></br>
     > Typ wystąpienia modułu Human Resources jest niezależny od typu wystąpienia środowiska Microsoft Power Apps, które zostało ustawione w centrum administracyjnym Power Apps.
     
 3. Zaznacz opcję **Dołącz dane demonstracyjne**, jeżeli chcesz, aby Twoje środowisko zawierało ten sam zestaw danych demonstracyjnych, jak używany w środowisku testowym modułu Human Resources. Jest to korzystne w środowiskach długoterminowych demonstracji lub szkoleń, natomiast nigdy nie należy używać tej opcji w środowisku produkcyjnym.  Należy wybrać tę opcję po wdrożeniu wstępnym. Nie można później zaktualizować istniejącego wdrożenia.
@@ -74,7 +74,7 @@ Po utworzeniu projektu LCS można zainicjować moduł Human Resources w środowi
     > [!NOTE]
     > Jeszcze przez spełnienie wymagań końcowych można wdrożyć wystąpienie testowe rozwiązania Human Resources w projekcie. Korzystając z tego wystąpienia, można testować swoje rozwiązanie do momentu sfinalizowania zakupu. W przypadku korzystania z nowego środowiska do testowania należy powtórzyć tę procedurę, aby utworzyć środowisko produkcyjne.
 
-    > Ponieważ w ramach subskrypcji usługi Human Resources są dozwolone tylko dwa środowiska LCS, można również rozważyć wykorzystanie bezpłatnego 60-dniowego [środowiska próbnego rozwiązania Human Resources](https://dynamics.microsoft.com/talent/overview/). Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Human Resources. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Nie są one przeznaczone do używania jako środowiska produkcyjne. Należy zauważyć, że po wygaśnięciu wersji próbnej środowiska po upływie 60 dni wszystkie zawarte w niej dane są usuwane nie można ich odzyskać. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
+    > Można rozważyć wykorzystanie bezpłatnych 60 dni [Human Resources w środowisku próbnym](https://dynamics.microsoft.com/talent/overview/). Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Human Resources. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Nie są one przeznaczone do używania jako środowiska produkcyjne. Należy zauważyć, że po wygaśnięciu wersji próbnej środowiska po upływie 60 dni wszystkie zawarte w niej dane są usuwane nie można ich odzyskać. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
 
 ## <a name="select-a-power-apps-environment"></a>Wybierz środowisko Power Apps
 
@@ -97,7 +97,10 @@ Przy ustalaniu, w którym środowisku usługi Power Apps wdrożyć moduł Human 
     - **Środowiska próbne** — te środowiska są tworzone z datą ważności; po tym czasie przestają działać, co powoduje automatycznie usunięcie środowiska i powiązanych z nim wystąpień rozwiązania Human Resources.
    
     - **Nieobsługiwane regiony** — obecnie moduł Human Resources jest obsługiwany tylko w następujących regionach: Stany Zjednoczone, Europa, Wielka Brytania, Australia Kanada i Azja.
-  
+
+    > [!NOTE]
+    > Środowisko zasobów ludzkich jest udostępniane w tym samym regionie, w którym zainicjowano obsługę środowiska Power Apps. Migrowanie środowiska Human Resources do innego regionu nie jest obsługiwane.
+
 6. Po określeniu odpowiedniego środowiska, które będzie używane, można kontynuować proces inicjowania obsługi. 
  
 ## <a name="grant-access-to-the-environment"></a>Przyznawanie dostępu do środowiska

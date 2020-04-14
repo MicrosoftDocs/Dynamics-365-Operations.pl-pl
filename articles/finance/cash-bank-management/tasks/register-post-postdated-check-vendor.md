@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fe29e106055177dbd12c39ee3fc9de609059f73b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 63a822350ce2bd4d673d7f9841822c84fb883601
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179421"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144194"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a>Rejestrowanie i księgowanie czeku postdatowanego dla dostawcy
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Za pomocą załącznika arkusza można zarejestrować szczegóły czeku postdatowanego przed wysłaniem go dostawcy. Można także zaksięgować postdatowany czek i wygenerować transakcje finansowe. Przed zarejestrowaniem i zaksięgowaniem postdatowanego czeku od dostawcy należy wykonać następujące zadanie: 
 

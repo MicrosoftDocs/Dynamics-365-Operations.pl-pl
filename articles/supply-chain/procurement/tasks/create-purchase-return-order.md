@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d586f4cc92e7533cabb8810ce5a42a37e6ba9ff1
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: 743cb2677696727ac2730fec2c11954d150f4cfa
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995197"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147372"
 ---
 # <a name="create-a-purchase-return-order"></a>Tworzenie zamówienia zwrotu zakupu
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tej procedurze pokazano, jak utworzyć zamówienie zwrotu zakupu przy użyciu akcji Faktura korygująca w celu skopiowania wierszy z dokumentu faktury od dostawcy do nowego zamówienia zakupu. Ponadto pokazano sposób potwierdzania zamówienia i przetwarzania wysyłki towarów z powrotem do dostawcy. Przykład zawarty w tej procedurze można wykonać na danych firmy demonstracyjnej USMF. To zadanie zazwyczaj wykonuje pracownik działu zakupów.
 
@@ -55,7 +55,7 @@ W tej procedurze pokazano, jak utworzyć zamówienie zwrotu zakupu przy użyciu 
 18. Zwiń sekcję **Wybrane wiersze lub nagłówek do skopiowania**.
 19. Kliknij przycisk **OK**. Wybrany wiersz został skopiowany do zamówienia zwrotu zakupu. Pole **Ilość** pokazuje wartość -10.   
 20. W sekcji **Wiersz zamówienia zakupu** kliknij pozycję **Zapasy**.
-21. Kliknij opcję **Zaznaczanie**. Utworzony wiersz zamówienia został oznaczony względem transakcji magazynowej z faktury dostawcy. Gwarantuje to, że do dostawcy są zwracane te same zapasy, które przyjęto od niego wcześniej. Istnieje kilka sytuacji, gdy oznaczanie nie następuje, na przykład jeśli zapasy zostały już oznaczone jako zużyte albo jeśli produkt nie wymaga oznaczania.  
+21. Kliknij opcję **Zaznaczanie**. Utworzony wiersz zamówienia został oznaczony względem transakcji magazynowej z faktury dostawcy. Gwarantuje to, że do dostawcy są zwracane te same zapasy, które przyjęto od niego wcześniej. Istnieje kilka sytuacji, gdy oznaczanie nie następuje, na przykład jeśli zapasy zostały już oznaczone jako Zużyte albo jeśli produkt nie używa oznaczania.  
 
 22. Kliknij przycisk **OK**.
 

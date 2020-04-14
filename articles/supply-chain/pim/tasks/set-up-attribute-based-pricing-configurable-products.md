@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 534e9c9332c107afebd814cf2090ecbdf0ec6459
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: d23030b79670e31cc237b9ca53b0b3881678786f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914706"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149833"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Konfigurowanie opartej na atrybutach wyceny konfigurowalnych produktów
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tym temacie pokazano sposób konfigurowania wyceny opartej na atrybutach. Warunkiem wstępnym jest istnienie modelu konfiguracji produktu, który ma jeden lub więcej składników i atrybutów. W przykładzie użyto modelu produktu Głośnik o wysokiej jakości zawartego w danych firmy demonstracyjnej USMF. Zazwyczaj procedurę wykonuje menedżer produktu.
 
@@ -33,7 +33,7 @@ W tym temacie pokazano sposób konfigurowania wyceny opartej na atrybutach. Waru
 ## <a name="create-a-new-price-model"></a>Tworzenie nowego modelu ceny
 1. Wybierz **Definicja modelu wariantu produktu** na stronie głównej.
 2. Wybierz **Modele konfiguracji produktu** w sekcji **łącza**.
-3. Na liście zaznacz wiersz **Głośnik o wysokiej jakości**, ale nie klikaj łącza z nazwą.
+3. Na liście zaznacz wiersz **Głośnik o wysokiej jakości**, ale nie wybieraj łącza z nazwą.
 4. W okienku akcji kliknij pozycję **Model**.
 5. Wybierz **Modele ceny**.
 6. Wybierz pozycję **Nowy**.

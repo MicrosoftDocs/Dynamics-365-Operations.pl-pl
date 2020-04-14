@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0830707885e8ed52581aa789df0279d78e3a9c10
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 67e09e3187ac49e12727116f55066b64a386e2de
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184837"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142393"
 ---
 # <a name="er-import-a-configuration-from-lifecycle-services"></a>ER Importowanie konfiguracji z usługi Lifecycle Services
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może zaimportować nową wersję konfiguracji raportowania elektronicznego (ER) z usługi Microsoft Lifecycle Services (LCS).
 
@@ -41,10 +41,10 @@ W tym przykładzie wybierzesz żądaną wersję konfiguracji raportowania elektr
     * Zaznacz wersję tej konfiguracji mającą stan „Udostępniono”. Ten stan wskazuje, że konfiguracja została opublikowana w usłudze LCS.  
 3. Kliknij przycisk Zmień stan.
 4. Kliknij opcję Nie kontynuuj.
-    * Zmień stan wybranej wersji z „Udostępniono” na „Zaprzestano”, aby ją udostępnić do usunięcia.  
+    * Zmień stan wybranej wersji z „Udostępniono” na „Wycofano”, aby ją udostępnić do usunięcia.  
 5. Kliknij przycisk OK.
 6. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Zaznacz wersję tej konfiguracji mającą stan „Zaprzestano”.  
+    * Zaznacz wersję tej konfiguracji mającą stan „Wycofano”.  
 7. Kliknij przycisk Usuń.
 8. Kliknij przycisk Tak.
     * Należy zauważyć, że jest dostępna tylko wersja robocza 2 wybranej konfiguracji przykładowego modelu danych.  
@@ -52,7 +52,7 @@ W tym przykładzie wybierzesz żądaną wersję konfiguracji raportowania elektr
 
 ## <a name="import-a-shared-version-of-data-model-configuration-from-lcs"></a>Importowanie udostępnionej wersji konfiguracji modelu danych z usługi LCS
 1. Na liście oznacz wybrany wiersz.
-    * Otwórz listę repozytoriów dostawcy konfiguracji, czyli firmy firmy Litware, Inc.  
+    * Otwórz listę repozytoriów dostawcy konfiguracji dla firmy „Litware, Inc.” firmy Litware, Inc.  
 2. Kliknij Repozytoria.
 3. Kliknij przycisk Otwórz.
     * Zaznacz repozytorium usługi LCS i je otwórz.  

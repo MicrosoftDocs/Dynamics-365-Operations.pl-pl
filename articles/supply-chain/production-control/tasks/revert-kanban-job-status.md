@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44c9ce805826779ba682561779653d61905fcd8d
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 3f9026aff0f54dd2a61cb0f35705b002a125610f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838518"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148867"
 ---
 # <a name="revert-kanban-job-status"></a>Przywróć stan zadania Kanban
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ta procedura skupia się na cofnięciu błędnego stanu zadania w systemie Kanban. Jest to przydatne w przypadku, gdy operator maszyny zaktualizuje niewłaściwe zadanie lub ustawi przez pomyłkę niewłaściwy stan. W tej procedurze zadanie w systemie Kanban jest rejestrowane jako przygotowane przez pomyłkę, a stan zostanie przywrócony. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Procedura jest przeznaczona dla kierownika produkcji lub operatora maszyny w firmie stosującej zasady produkcji oszczędnej.
 

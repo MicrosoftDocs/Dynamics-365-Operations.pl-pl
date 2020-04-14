@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 21baf3692cbcb87f6ed37459848376a1fa87a438
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 39930134782b40de05a92a6ad51c4f628f304a78
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179382"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142899"
 ---
 # <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a>Zmiana konwencji amortyzacji dla wielu środków trwałych
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 To zadanie aktualizuje konwencję amortyzacji dla wybranej grupy środków trwałych. W tym przewodniku po zadaniach jest wykorzystywana firma demonstracyjna USMF.
 

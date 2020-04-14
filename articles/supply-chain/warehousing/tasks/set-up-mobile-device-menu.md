@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c1c922d16b46e26031e5f80886e4e4e8f08bcdaf
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 71353e961c54f4d56b6ecdb1075c8c74edfe220f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916881"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145946"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tym temacie pokazano sposób konfigurowania elementu menu urządzenia przenośnego. W tym przykładzie element menu służy do wykonywania pracy typu Zamówienie zakupu. Klasa pracy powiązana z elementem menu decyduje o tym, która praca jest prawidłowa. Zadania z przewodnika można wykonać przy użyciu danych firmy demonstracyjnej USMF. Ta procedura jest zwykle wykonywana przez kierownika magazynu.
 
@@ -41,7 +41,7 @@ W tym temacie pokazano sposób konfigurowania elementu menu urządzenia przenoś
     - Ten element menu urządzenia przenośnego jest używany do wykonywania istniejącej pracy. W związku z tym należy ustawić wartość **Tak**.  
     - Pole **Wyświetl stan zapasów** określa, czy stan dostępnych zapasów będzie wyświetlany pracownikowi magazynu na urządzeniu przenośnym.  
 7. W polu **Sterowane przez** wybierz opcję **Grupowanie systemowe**. Po wybraniu wartości w polu **Sterowane przez** zostaną wyświetlone dodatkowe pola w sekcji **Ogólne** na tej stronie. Wyświetlane pola zależą od wybranej wartości. Po wybraniu opcji **Grupowanie systemowe** są dodawane dwa nowe pola. Omówiono je poniżej.  
-8. W polu **Grupowanie systemowe** zaznacz **WorkPoolId**. Gdy pracownik magazynu otwiera ten element menu, zobaczy monit o zeskanowanie identyfikatora puli pracy. Wszystkie zlecenia o tym identyfikatorze puli pracy oraz otwarte wiersze zlecenia, które mają jedną z klas pracy dodanych do tego elementu menu, zostaną wysłane do użytkownika.  
+8. W polu **Grupowanie systemowe** zaznacz **WorkPoolId**. Gdy pracownik magazynu otwiera ten element menu, zobaczy monit o zeskanowanie Identyfikatora puli pracy. Wszystkie zlecenia o tym identyfikatorze puli pracy oraz otwarte wiersze zlecenia, które mają jedną z klas pracy dodanych do tego elementu menu, zostaną wysłane do użytkownika.  
 9. W polu **Etykieta grup systemowych** wpisz wartość. Jest to tekst wyświetlany użytkownikowi na urządzeniu przenośnym. Na przykład można wpisać **Pula pracy**.  
 10. W polu **Zastąp numer identyfikacyjny podczas odłożenia** zaznacz opcję **Tak**. Ta opcja umożliwia pracownikom magazynu zastępowanie docelowego numeru identyfikacyjnego, gdy towary są odkładane do lokalizacji kontrolowanej przez numer identyfikacyjny.  
 11. W polu **Grupuj odłożone** wybierz opcję **Tak**.
