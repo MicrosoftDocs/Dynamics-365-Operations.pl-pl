@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ba5e66b8c4b9ee991b2889eecf4dcec174b31ef2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8c45741dfef8be659dfe3ac632748cb5e19e977c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185780"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141561"
 ---
 # <a name="create-and-submit-vat-report"></a>Tworzenie i przesyłanie raportu VAT
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ta procedura prowadzi przez proces tworzenia i przesyłania raportu VAT urzędowi niemieckiemu. Procedurę utworzono przy użyciu danych firmy demonstracyjnej DEMF. Ta funkcja jest dostępna w firmach, których adresem podstawowym są Niemcy.
 

@@ -17,16 +17,16 @@ ms.search.industry: Service industries
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7699f426c102b4ae2610db0851ddd127e514b652
-ms.sourcegitcommit: 6545bef4584d72dd7789f2d3935cf00ac8f489b0
+ms.openlocfilehash: 06d251992c7facca471ac893e5a0fee333e0cbed
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1871036"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148660"
 ---
 # <a name="enter-sales-agreements"></a>Wprowadzanie umów sprzedaży
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tym temacie pokazano sposób tworzenia umowy sprzedaży, która zobowiązuje jednego odbiorcę do zakupu produktu na ustaloną kwotę w określonym czasie w zamian za specjalne rabaty. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
 
