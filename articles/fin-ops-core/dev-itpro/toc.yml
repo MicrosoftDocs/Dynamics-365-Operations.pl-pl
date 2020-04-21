@@ -14,7 +14,9 @@
               items:
                 - name: Nowości i zmiany w aktualizacjach Platform update — strona główna
                   href: get-started/whats-new-home-page.md
-                - name: Aktualizacja Platform update 34 (maj 2020)
+                - name: Aktualizacja Platform update dla wersji 10.0.11 (lipiec 2020)
+                  href: get-started/whats-new-platform-update-35.md
+                - name: Aktualizacja Platform update dla wersji 10.0.10 (maj 2020)
                   href: get-started/whats-new-platform-update-34.md
                 - name: Aktualizacja Platform update 33 (kwiecień 2020)
                   href: get-started/whats-new-platform-update-33.md
@@ -324,8 +326,6 @@
                       href: data-entities/configuration-data-packages.md
                     - name: Pakiety danych konfiguracji (tylko wydanie z lipca 2017)
                       href: data-entities/configuration-data-packages.md
-                    - name: Udostępnianie magazynu jednostek w usłudze Data Lake
-                      href: data-entities/entity-store-data-lake.md
                 - name: Szablony danych konfiguracji
                   href: data-entities/configuration-data-templates.md
                 - name: Śledzenie zmian w jednostce
@@ -384,6 +384,14 @@
               href: user-interface/data-validation-workspace.md
             - name: Opisy błędów zarządzania danymi
               href: data-entities/dm-error-descriptions.md
+        - name: Usługa Azure Data Lake
+          items:
+            - name: Przegląd usługi Azure Data Lake
+              href: data-entities/azure-data-lake-overview.md
+            - name: Aplikacje Finance and Operations w usłudze Azure Data Lake
+              href: data-entities/finance-data-azure-data-lake.md
+            - name: Udostępnianie magazynu jednostek w usłudze Data Lake
+              href: data-entities/entity-store-data-lake.md
         - name: Operacje przenoszenia bazy danych
           items:
             - name: Omówienie
@@ -482,38 +490,46 @@
               items:
                 - name: Wdrożenie lokalne — strona główna
                   href: deployment/on-premises-deployment-landing-page.md
-                - name: Omówienie wdrażania lokalnego
-                  href: deployment/on-premises-overview.md
-                - name: Planowanie i przygotowywanie się na lokalne wdrożenia
-                  href: deployment/plan-onprem-deployment.md
-                - name: Wymagania dotyczące zapotrzebowania na sprzęt
-                  href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                - name: Konfigurowanie projektów lokalnych
-                  href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                - name: Przygotowywanie do wdrożeń lokalnych
+                  items:
+                    - name: Omówienie wdrażania lokalnego
+                      href: deployment/on-premises-overview.md
+                    - name: Planowanie i przygotowywanie do wdrożeń lokalnych
+                      href: deployment/plan-onprem-deployment.md
+                    - name: Wymagania dotyczące zapotrzebowania na sprzęt
+                      href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                 - name: Konfigurowanie i wdrażanie środowisk lokalnych
                   items:
-                    - name: Konfigurowanie i wdrażanie środowisk lokalnych — strona główna
-                      href: deployment/setup-deploy-on-premises-environments.md
-                    - name: Wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 12 i nowszych
+                    - name: Konfigurowanie projektów lokalnych w usłudze LCS
+                      href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                    - name: Konfigurowanie i wdrażanie środowisk lokalnych
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: Wdrażanie środowisk lokalnych (aktualizacje Platform update 8 i 11)
-                      href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: Kroki instalacji składników kanału Retail w środowisku lokalnym
                       href: deployment/deploy-retail-onprem.md
+                    - name: Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych
+                      href: deployment/develop-deploy-custom-models-on-premises.md
+                - name: Konserwacja środowiska
+                  items:
+                    - name: Stosowanie aktualizacji do wdrożenia lokalnego
+                      href: deployment/apply-updates-on-premises.md
+                    - name: Wymiana certyfikatów
+                      href: deployment/certificate-rotation-on-prem.md
+                    - name: Łączność internetowa klienta
+                      href: user-interface/client-disconnected.md
+                    - name: Konfigurowanie serwerów proxy dla środowisk lokalnych
+                      href: deployment/onprem-reverseproxy.md
+                    - name: Diagnostyka wdrożenia lokalnego
+                      href: deployment/on-premises-diagnostics.md
+                    - name: Integracja PowerBI.com z lokalnymi środowiskami
+                      href: analytics/entity-store-on-prem.md
+                    - name: Ponowne konfigurowanie środowisk
+                      href: lifecycle-services/reconfigure-environment.md
+                    - name: Ponowne wdrażanie wdrożenia lokalnego
+                      href: deployment/redeploy-on-prem.md
+                    - name: Usuwanie i ponowne instalowanie węzła AOS
+                      href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Użyj tego samego wystąpienia komponentu AD FS dla wielu środowisk
                       href: deployment/onprem-reuseadfs.md
-                - name: Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych
-                  href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: Integracja PowerBI.com z lokalnymi środowiskami
-                  href: analytics/entity-store-on-prem.md
-                - name: Konfigurowanie serwerów proxy dla środowisk lokalnych
-                  href: deployment/onprem-reverseproxy.md
-                - name: Stosowanie aktualizacji do wdrożenia lokalnego
-                  href: deployment/apply-updates-on-premises.md
-                - name: Wdrożenie lokalne diagnostyka
-                  href: deployment/on-premises-diagnostics.md
-                - name: Wdróż ponownie wdrożenia lokalne
-                  href: deployment/redeploy-on-prem.md
                 - name: Agent lokalny
                   items:
                     - name: Zgodność z usługami AD FS Office 365
@@ -522,16 +538,12 @@
                       href: lifecycle-services/pre-post-scripts.md
                     - name: Aktualizowanie agenta lokalnego
                       href: lifecycle-services/update-local-agent.md
-                - name: Ponowne konfigurowanie środowisk
-                  href: lifecycle-services/reconfigure-environment.md
-                - name: Łączność internetowa klienta
-                  href: user-interface/client-disconnected.md
-                - name: Rozwiązywanie problemów z wdrożeniami lokalnymi
-                  href: deployment/troubleshoot-on-prem.md
-                - name: Skrypty służące do rozwiązywania problemów w środowiskach lokalnych
-                  href: deployment/onprem-tsg-implementations.md
-                - name: Wymiana certyfikatów
-                  href: deployment/certificate-rotation-on-prem.md
+                - name: Rozwiązywanie problemów
+                  items:
+                    - name: Rozwiązywanie problemów z wdrożeniami lokalnymi
+                      href: deployment/troubleshoot-on-prem.md
+                    - name: Skrypty służące do rozwiązywania problemów w środowiskach lokalnych
+                      href: deployment/onprem-tsg-implementations.md
             - name: Wdrażanie kodu niestandardowego
               items:
                 - name: Tworzenie wdrażalnych pakietów modeli
@@ -928,6 +940,8 @@
                       href: extensibility/extensibility-attributes.md
                     - name: Istotne zmiany
                       href: extensibility/breaking-changes.md
+                    - name: Narzędzie do sprawdzania zgodności
+                      href: extensibility/compatibility-checker-tool.md
             - name: Wydajność
               items:
                 - name: Śledzenie danych za pomocą programu Trace Parser
@@ -1442,6 +1456,8 @@
               href: sysadmin/configure-manage-database-log.md
             - name: Tworzenie pamięci podręcznej metadanych OData podczas uruchamiania serwera AOS
               href: sysadmin/odata-warmup.md
+            - name: Konfigurowanie klienta magazynu kluczy usługi Azure
+              href: ../../finance/localizations/setting-up-azure-key-vault-client.md
         - name: 'Uaktualnienia, aktualizacje i poprawki'
           items:
             - name: 'Zasoby uaktualnień, aktualizacji i poprawek'
@@ -1542,7 +1558,7 @@
                   href: deployment/apply-updates-on-premises.md
                 - name: Ponowne wdrażanie wdrożenia lokalnego
                   href: deployment/redeploy-on-prem.md
-                - name: Uaktualnienie w miejscu wdrożeń lokalnych z wersji 7.x do 8.1
+                - name: Obowiązujący proces uaktualniania dla środowisk lokalnych
                   href: migration-upgrade/on-prem-upgrade.md
             - name: Poprawki
               items:
