@@ -1,5 +1,5 @@
 ---
-title: Strona główna narzędzi analizy biznesowej (BI) i sprawozdawczości
+title: Raportowanie i analizy wykonywane przy użyciu usługi Power BI — strona główna
 description: Ten temat odsyła do zasobów zawierających informacje na temat dostępnych narzędzi do wykonywania analiz biznesowych i raportowania.
 author: sericks007
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 424da665f91820f3fe42c98b352a646dd3db72c5
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771571"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258587"
 ---
-# <a name="business-intelligence-bi-and-reporting-home-page"></a>Strona główna narzędzi analizy biznesowej (BI) i sprawozdawczości
+# <a name="reporting-and-analytics-with-power-bi-home-page"></a>Raportowanie i analizy wykonywane przy użyciu usługi Power BI — strona główna
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,7 +33,7 @@ Ten temat odsyła do zasobów zawierających informacje na temat dostępnych nar
 ## <a name="get-started"></a>Wprowadzenie
 - [Dostęp do informacji i raportowanie](information-access-reporting.md)
 - [Informacje dotyczące technologii: opcje raportowania](https://www.youtube.com/watch?v=NzZONjKs5xA) (film)
-- [Finance and Operations: Power BI Blog o Analityce i Raportowaniu](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
+- [Finance and Operations: Blog poświęcony usługom analiz i raportowania w rozwiązaniu Power BI](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
 
 ## <a name="analytical-workspaces"></a>Analityczne obszary robocze
 Obszary robocze mogą wykorzystywać bogate infografiki i wizualizacje obsługiwane przez Microsoft Power BI. Te infografiki i wizualizacje obejmują wiele formantów dostarczanych przez firmy zewnętrzne. Dlatego materiały w obszarach roboczych są bardzo wzrokowe i interaktywne.
