@@ -2,7 +2,7 @@
 title: Konfigurowanie informacji o zasobach projektu
 description: W tej procedurze pokazano sposób konfigurowania zasobu projektu.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,45 +10,45 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ResResourcesListPage, ResAddResourceForm, ProjCostPriceHour, ProjSalesPriceHour
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b0391cd71b43138982ae6e9616027f1695d7d0da
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 8ff9bc238c18a633785538e6215701567b511cb7
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3149488"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207492"
 ---
-# <a name="set-up-project-resource-information"></a><span data-ttu-id="c118e-103">Konfigurowanie informacji o zasobach projektu</span><span class="sxs-lookup"><span data-stu-id="c118e-103">Set up project resource information</span></span>
+# <a name="set-up-project-resource-information"></a><span data-ttu-id="ccdb7-103">Konfigurowanie informacji o zasobach projektu</span><span class="sxs-lookup"><span data-stu-id="ccdb7-103">Set up project resource information</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="c118e-104">W tej procedurze pokazano sposób konfigurowania zasobu projektu.</span><span class="sxs-lookup"><span data-stu-id="c118e-104">This procedure shows how to set up a project resource.</span></span> <span data-ttu-id="c118e-105">W tym zadaniu jest wykorzystywany zestaw danych firmy USMF.</span><span class="sxs-lookup"><span data-stu-id="c118e-105">This task uses the USMF data set.</span></span>
+<span data-ttu-id="ccdb7-104">W tej procedurze pokazano sposób konfigurowania zasobu projektu.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-104">This procedure shows how to set up a project resource.</span></span> <span data-ttu-id="ccdb7-105">W tym zadaniu jest wykorzystywany zestaw danych firmy USMF.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-105">This task uses the USMF data set.</span></span>
 
-1. <span data-ttu-id="c118e-106">Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie > Zasoby projektu > Lista zasobów.</span><span class="sxs-lookup"><span data-stu-id="c118e-106">Go to Project management and accounting > Project resources > Resources list.</span></span>
-2. <span data-ttu-id="c118e-107">Kliknij opcję Nowy zasób.</span><span class="sxs-lookup"><span data-stu-id="c118e-107">Click New resource.</span></span>
-3. <span data-ttu-id="c118e-108">W polu Pracownik wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c118e-108">In the Worker field, enter or select a value.</span></span>
-4. <span data-ttu-id="c118e-109">W polu Kalendarz wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c118e-109">In the Calendar field, enter or select a value.</span></span>
-5. <span data-ttu-id="c118e-110">W polu Kod okresu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c118e-110">In the Period code field, enter or select a value.</span></span>
-6. <span data-ttu-id="c118e-111">Kliknij przycisk Utwórz.</span><span class="sxs-lookup"><span data-stu-id="c118e-111">Click Create.</span></span>
-7. <span data-ttu-id="c118e-112">Kliknij opcję Koszty własne.</span><span class="sxs-lookup"><span data-stu-id="c118e-112">Click Cost prices.</span></span>
-8. <span data-ttu-id="c118e-113">Kliknij opcję Koszt własny — Godzina.</span><span class="sxs-lookup"><span data-stu-id="c118e-113">Click Cost price - hour.</span></span>
-9. <span data-ttu-id="c118e-114">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c118e-114">Click New.</span></span>
-10. <span data-ttu-id="c118e-115">W polu Data obowiązywania wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="c118e-115">In the Effective date field, enter a date.</span></span>
-11. <span data-ttu-id="c118e-116">W polu Koszt własny wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="c118e-116">In the Cost price field, enter a number.</span></span>
-12. <span data-ttu-id="c118e-117">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c118e-117">Click Save.</span></span>
-13. <span data-ttu-id="c118e-118">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="c118e-118">Close the page.</span></span>
-14. <span data-ttu-id="c118e-119">Kliknij opcję Ceny sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="c118e-119">Click Sales prices.</span></span>
-15. <span data-ttu-id="c118e-120">Kliknij opcję Cena sprzedaży — Godzina.</span><span class="sxs-lookup"><span data-stu-id="c118e-120">Click Sales price - hour.</span></span>
-16. <span data-ttu-id="c118e-121">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c118e-121">Click New.</span></span>
-17. <span data-ttu-id="c118e-122">W polu Data obowiązywania wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="c118e-122">In the Effective date field, enter a date.</span></span>
-18. <span data-ttu-id="c118e-123">W polu Ceny wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="c118e-123">In the Pricing field, enter a number.</span></span>
-19. <span data-ttu-id="c118e-124">W polu Ważny dla wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="c118e-124">In the Valid for field, select an option.</span></span>
-20. <span data-ttu-id="c118e-125">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c118e-125">Click Save.</span></span>
-21. <span data-ttu-id="c118e-126">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="c118e-126">Close the page.</span></span>
+1. <span data-ttu-id="ccdb7-106">Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie > Zasoby projektu > Lista zasobów.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-106">Go to Project management and accounting > Project resources > Resources list.</span></span>
+2. <span data-ttu-id="ccdb7-107">Kliknij opcję Nowy zasób.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-107">Click New resource.</span></span>
+3. <span data-ttu-id="ccdb7-108">W polu Pracownik wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-108">In the Worker field, enter or select a value.</span></span>
+4. <span data-ttu-id="ccdb7-109">W polu Kalendarz wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-109">In the Calendar field, enter or select a value.</span></span>
+5. <span data-ttu-id="ccdb7-110">W polu Kod okresu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-110">In the Period code field, enter or select a value.</span></span>
+6. <span data-ttu-id="ccdb7-111">Kliknij przycisk Utwórz.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-111">Click Create.</span></span>
+7. <span data-ttu-id="ccdb7-112">Kliknij opcję Koszty własne.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-112">Click Cost prices.</span></span>
+8. <span data-ttu-id="ccdb7-113">Kliknij opcję Koszt własny — Godzina.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-113">Click Cost price - hour.</span></span>
+9. <span data-ttu-id="ccdb7-114">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-114">Click New.</span></span>
+10. <span data-ttu-id="ccdb7-115">W polu Data obowiązywania wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-115">In the Effective date field, enter a date.</span></span>
+11. <span data-ttu-id="ccdb7-116">W polu Koszt własny wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-116">In the Cost price field, enter a number.</span></span>
+12. <span data-ttu-id="ccdb7-117">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-117">Click Save.</span></span>
+13. <span data-ttu-id="ccdb7-118">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-118">Close the page.</span></span>
+14. <span data-ttu-id="ccdb7-119">Kliknij opcję Ceny sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-119">Click Sales prices.</span></span>
+15. <span data-ttu-id="ccdb7-120">Kliknij opcję Cena sprzedaży — Godzina.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-120">Click Sales price - hour.</span></span>
+16. <span data-ttu-id="ccdb7-121">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-121">Click New.</span></span>
+17. <span data-ttu-id="ccdb7-122">W polu Data obowiązywania wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-122">In the Effective date field, enter a date.</span></span>
+18. <span data-ttu-id="ccdb7-123">W polu Ceny wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-123">In the Pricing field, enter a number.</span></span>
+19. <span data-ttu-id="ccdb7-124">W polu Ważny dla wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-124">In the Valid for field, select an option.</span></span>
+20. <span data-ttu-id="ccdb7-125">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-125">Click Save.</span></span>
+21. <span data-ttu-id="ccdb7-126">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="ccdb7-126">Close the page.</span></span>
 

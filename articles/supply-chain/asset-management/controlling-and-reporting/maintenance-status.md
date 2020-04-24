@@ -2,7 +2,7 @@
 title: Stan konserwacji
 description: W tym temacie wyjaśniono, jak obliczyć stan konserwacji w Zarządzaniu składnikami majątku.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,53 +18,53 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8f336086838632dd3f464de2870e9a9197746daa
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: fbe2b3fd9ce63c34aedb790583dea572d3d9b079
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652133"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3205485"
 ---
-# <a name="maintenance-status"></a><span data-ttu-id="3483f-103">Stan konserwacji</span><span class="sxs-lookup"><span data-stu-id="3483f-103">Maintenance status</span></span>
+# <a name="maintenance-status"></a><span data-ttu-id="10409-103">Stan konserwacji</span><span class="sxs-lookup"><span data-stu-id="10409-103">Maintenance status</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="3483f-104">W module Zarządzanie składnikami majątku można wykonać obliczenia dla określonego okresu w celu przejrzenia informacji o nowych, aktywnych i zakończonych żądaniach obsługi, zleceniach i czynnościach związanych z konserwacją.</span><span class="sxs-lookup"><span data-stu-id="3483f-104">In Asset Management, you can make an overview calculation for a specific period for new, active, and completed maintenance requests, work orders, and maintenance downtime activities.</span></span> <span data-ttu-id="3483f-105">Można również wyświetlić liczbę zakończonych ocen stanu dla tego samego okresu.</span><span class="sxs-lookup"><span data-stu-id="3483f-105">You can also see the number of completed condition assessments for the same period.</span></span> <span data-ttu-id="3483f-106">To obliczenie umożliwia uzyskanie przeglądu obciążenia pracą dla przychodzących i zakończonych żądań obsługi oraz zleceń produkcyjnych.</span><span class="sxs-lookup"><span data-stu-id="3483f-106">Use this calculation to get an overview of workload for incoming and completed maintenance requests and work orders.</span></span>
+<span data-ttu-id="10409-104">W module Zarządzanie składnikami majątku można wykonać obliczenia dla określonego okresu w celu przejrzenia informacji o nowych, aktywnych i zakończonych żądaniach obsługi, zleceniach i czynnościach związanych z konserwacją.</span><span class="sxs-lookup"><span data-stu-id="10409-104">In Asset Management, you can make an overview calculation for a specific period for new, active, and completed maintenance requests, work orders, and maintenance downtime activities.</span></span> <span data-ttu-id="10409-105">Można również wyświetlić liczbę zakończonych ocen stanu dla tego samego okresu.</span><span class="sxs-lookup"><span data-stu-id="10409-105">You can also see the number of completed condition assessments for the same period.</span></span> <span data-ttu-id="10409-106">To obliczenie umożliwia uzyskanie przeglądu obciążenia pracą dla przychodzących i zakończonych żądań obsługi oraz zleceń produkcyjnych.</span><span class="sxs-lookup"><span data-stu-id="10409-106">Use this calculation to get an overview of workload for incoming and completed maintenance requests and work orders.</span></span>
 
-## <a name="make-a-maintenance-status-calculation"></a><span data-ttu-id="3483f-107">Dokonaj obliczenia stan konserwacji</span><span class="sxs-lookup"><span data-stu-id="3483f-107">Make a maintenance status calculation</span></span>
+## <a name="make-a-maintenance-status-calculation"></a><span data-ttu-id="10409-107">Dokonaj obliczenia stan konserwacji</span><span class="sxs-lookup"><span data-stu-id="10409-107">Make a maintenance status calculation</span></span>
 
-1. <span data-ttu-id="3483f-108">Kliknij **Zarządzanie składnikami majątku** > **Zapytania** > **Stan konserwacji**.</span><span class="sxs-lookup"><span data-stu-id="3483f-108">Click **Asset management** > **Inquiries** > **Maintenance status**.</span></span>
+1. <span data-ttu-id="10409-108">Kliknij **Zarządzanie składnikami majątku** > **Zapytania** > **Stan konserwacji**.</span><span class="sxs-lookup"><span data-stu-id="10409-108">Click **Asset management** > **Inquiries** > **Maintenance status**.</span></span>
 
-2. <span data-ttu-id="3483f-109">W oknie dialogowym **Oblicz stan** wybierz zakres czasu, dla którego chcesz dokonać obliczeń w polach **Od dnia** i **Do dnia**.</span><span class="sxs-lookup"><span data-stu-id="3483f-109">In the **Calculate status** dialog, select the time range that you want to make the calculation in the **From date** and **To date** fields.</span></span>
+2. <span data-ttu-id="10409-109">W oknie dialogowym **Oblicz stan** wybierz zakres czasu, dla którego chcesz dokonać obliczeń w polach **Od dnia** i **Do dnia**.</span><span class="sxs-lookup"><span data-stu-id="10409-109">In the **Calculate status** dialog, select the time range that you want to make the calculation in the **From date** and **To date** fields.</span></span>
 
-3. <span data-ttu-id="3483f-110">Pola **Poziom** można użyć, aby wskazać, jak szczegółowe mają być wierszekonserwacji dotyczące lokalizacji czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="3483f-110">You can use the **Level** field to indicate how detailed you want the maintenance lines to be regarding functional locations.</span></span> 
+3. <span data-ttu-id="10409-110">Pola **Poziom** można użyć, aby wskazać, jak szczegółowe mają być wierszekonserwacji dotyczące lokalizacji czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="10409-110">You can use the **Level** field to indicate how detailed you want the maintenance lines to be regarding functional locations.</span></span> 
 
-  <span data-ttu-id="3483f-111">Jeśli na przykład w polu wstawiono liczbę „1” i istnieje wielopoziomowa struktura lokalizacji czynności konserwacyjnych, wszystkie wiersze konserwacji dla lokalizacji czynności konserwacyjnych będą wyświetlane na najwyższym poziomie, dlatego godziny w wierszu mogą być dodawane z lokalizacji czynności konserwacyjnych znajdujących się na niższym poziomie.</span><span class="sxs-lookup"><span data-stu-id="3483f-111">For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all maintenance lines for a functional location will be shown on the top level, and therefore the status on a line may be added up from functional locations located at a lower level.</span></span> 
+  <span data-ttu-id="10409-111">Jeśli na przykład w polu wstawiono liczbę „1” i istnieje wielopoziomowa struktura lokalizacji czynności konserwacyjnych, wszystkie wiersze konserwacji dla lokalizacji czynności konserwacyjnych będą wyświetlane na najwyższym poziomie, dlatego godziny w wierszu mogą być dodawane z lokalizacji czynności konserwacyjnych znajdujących się na niższym poziomie.</span><span class="sxs-lookup"><span data-stu-id="10409-111">For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all maintenance lines for a functional location will be shown on the top level, and therefore the status on a line may be added up from functional locations located at a lower level.</span></span> 
   
-  <span data-ttu-id="3483f-112">W przypadku wstawienia liczby „0” w polu **Poziom** zostanie wyświetlony szczegółowy wynik zawierający wszystkie wiersze konserwacji na każdym poziomie lokalizacji czynności konserwacyjnych, z którymi są powiązane.</span><span class="sxs-lookup"><span data-stu-id="3483f-112">If you insert the number "0" in the **Level** field, you see a detailed result showing all maintenance lines on all the functional location levels to which they are related.</span></span>
+  <span data-ttu-id="10409-112">W przypadku wstawienia liczby „0” w polu **Poziom** zostanie wyświetlony szczegółowy wynik zawierający wszystkie wiersze konserwacji na każdym poziomie lokalizacji czynności konserwacyjnych, z którymi są powiązane.</span><span class="sxs-lookup"><span data-stu-id="10409-112">If you insert the number "0" in the **Level** field, you see a detailed result showing all maintenance lines on all the functional location levels to which they are related.</span></span>
 
-4. <span data-ttu-id="3483f-113">Kliknij przycisk **OK**, aby rozpocząć obliczanie.</span><span class="sxs-lookup"><span data-stu-id="3483f-113">Click **OK** to start the calculation.</span></span>
+4. <span data-ttu-id="10409-113">Kliknij przycisk **OK**, aby rozpocząć obliczanie.</span><span class="sxs-lookup"><span data-stu-id="10409-113">Click **OK** to start the calculation.</span></span>
 
-5. <span data-ttu-id="3483f-114">Kliknij przyciski **Grupuj wg...**, aby wyświetlić wymagany poziom szczegółowości obliczania.</span><span class="sxs-lookup"><span data-stu-id="3483f-114">Click the **Group by** buttons to show the required detail level of the calculation.</span></span> <span data-ttu-id="3483f-115">Wybrane przyciski grupy **Grupuj wg...** są wyróżnione.</span><span class="sxs-lookup"><span data-stu-id="3483f-115">The selected **Group by** buttons are highlighted.</span></span> <span data-ttu-id="3483f-116">Aby uaktywnić lub dezaktywować przycisk, należy go kliknąć.</span><span class="sxs-lookup"><span data-stu-id="3483f-116">Click on a button to activate or deactivate it.</span></span>
+5. <span data-ttu-id="10409-114">Kliknij przyciski **Grupuj wg...**, aby wyświetlić wymagany poziom szczegółowości obliczania.</span><span class="sxs-lookup"><span data-stu-id="10409-114">Click the **Group by** buttons to show the required detail level of the calculation.</span></span> <span data-ttu-id="10409-115">Wybrane przyciski grupy **Grupuj wg...** są wyróżnione.</span><span class="sxs-lookup"><span data-stu-id="10409-115">The selected **Group by** buttons are highlighted.</span></span> <span data-ttu-id="10409-116">Aby uaktywnić lub dezaktywować przycisk, należy go kliknąć.</span><span class="sxs-lookup"><span data-stu-id="10409-116">Click on a button to activate or deactivate it.</span></span>
 
-6. <span data-ttu-id="3483f-117">Pamiętaj o kliknięciu przycisku **Aktualizuj**, aby zaktualizować obliczenia za każdym razem, gdy dokonywane są zmiany, aktywując lub dezaktywując przyciski **Grupuj wg...** lub przez wykonianie obliczenia dla nowego okresu.</span><span class="sxs-lookup"><span data-stu-id="3483f-117">Remember to click the **Update** button to update the calculation each time you make changes by activating or deactivating **Group by** buttons, or by making a calculation for a new period.</span></span>
+6. <span data-ttu-id="10409-117">Pamiętaj o kliknięciu przycisku **Aktualizuj**, aby zaktualizować obliczenia za każdym razem, gdy dokonywane są zmiany, aktywując lub dezaktywując przyciski **Grupuj wg...** lub przez wykonianie obliczenia dla nowego okresu.</span><span class="sxs-lookup"><span data-stu-id="10409-117">Remember to click the **Update** button to update the calculation each time you make changes by activating or deactivating **Group by** buttons, or by making a calculation for a new period.</span></span>
 
-7. <span data-ttu-id="3483f-118">Kliknij przycisk **stan**, jeśli chcesz utworzyć nowe Obliczanie stanu eksploatacji.</span><span class="sxs-lookup"><span data-stu-id="3483f-118">Click **Status** if you want to create a new maintenance status calculation.</span></span>
+7. <span data-ttu-id="10409-118">Kliknij przycisk **stan**, jeśli chcesz utworzyć nowe Obliczanie stanu eksploatacji.</span><span class="sxs-lookup"><span data-stu-id="10409-118">Click **Status** if you want to create a new maintenance status calculation.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="3483f-119">Wyniki wyświetlane w **stanie konserwacji** obejmują tylko żądania obsługi i zlecenia, które mają rzeczywistą datę i godzinę rozpoczęcia.</span><span class="sxs-lookup"><span data-stu-id="3483f-119">The results shown in **Maintenance status** only include maintenance requests and work orders that have an actual start date and time.</span></span> <span data-ttu-id="3483f-120">Data i godzina zakończenia mogą być puste</span><span class="sxs-lookup"><span data-stu-id="3483f-120">End date and time may be blank.</span></span>
+><span data-ttu-id="10409-119">Wyniki wyświetlane w **stanie konserwacji** obejmują tylko żądania obsługi i zlecenia, które mają rzeczywistą datę i godzinę rozpoczęcia.</span><span class="sxs-lookup"><span data-stu-id="10409-119">The results shown in **Maintenance status** only include maintenance requests and work orders that have an actual start date and time.</span></span> <span data-ttu-id="10409-120">Data i godzina zakończenia mogą być puste</span><span class="sxs-lookup"><span data-stu-id="10409-120">End date and time may be blank.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="3483f-121">Przykład 1</span><span class="sxs-lookup"><span data-stu-id="3483f-121">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="10409-121">Przykład 1</span><span class="sxs-lookup"><span data-stu-id="10409-121">Example 1</span></span>
 
-<span data-ttu-id="3483f-122">Na poniższym zrzucie ekranu aktywowano przyciski **rok** i **miesiąc**.</span><span class="sxs-lookup"><span data-stu-id="3483f-122">In the screenshot below, the **Year** and **Month** buttons have been activated.</span></span> <span data-ttu-id="3483f-123">Po wybraniu opcji **Grupuj wg...** można uzyskać ogólny przegląd informacji na temat miesięcznego obciążenia pracą i produktywności związanych z żądaniami obsługi i zleceniami produkcyjnymi.</span><span class="sxs-lookup"><span data-stu-id="3483f-123">With these **Group by** options selected, you get a general overview on a monthly basis of workload and throughput related to maintenance requests and work orders.</span></span> 
+<span data-ttu-id="10409-122">Na poniższym zrzucie ekranu aktywowano przyciski **rok** i **miesiąc**.</span><span class="sxs-lookup"><span data-stu-id="10409-122">In the screenshot below, the **Year** and **Month** buttons have been activated.</span></span> <span data-ttu-id="10409-123">Po wybraniu opcji **Grupuj wg...** można uzyskać ogólny przegląd informacji na temat miesięcznego obciążenia pracą i produktywności związanych z żądaniami obsługi i zleceniami produkcyjnymi.</span><span class="sxs-lookup"><span data-stu-id="10409-123">With these **Group by** options selected, you get a general overview on a monthly basis of workload and throughput related to maintenance requests and work orders.</span></span> 
 
 ![Przykład miesięcznego obciążenia pracą](media/13-controlling-and-reporting.png)
 
-## <a name="example-2"></a><span data-ttu-id="3483f-125">Przykład 2</span><span class="sxs-lookup"><span data-stu-id="3483f-125">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="10409-125">Przykład 2</span><span class="sxs-lookup"><span data-stu-id="10409-125">Example 2</span></span>
 
-<span data-ttu-id="3483f-126">Na poniższym zrzucie ekranu zostały dodane informacje o lokalizacjach czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="3483f-126">In the screenshot below, information about functional locations has been added.</span></span> <span data-ttu-id="3483f-127">Teraz możliwe jest porównanie obciążenia i przepływności między lokalizacjami czynności konserwacyjnych, które mogą reprezentować lokalizacje geograficzne, fabryki lub obszary robocze.</span><span class="sxs-lookup"><span data-stu-id="3483f-127">Now it is possible to compare workload and throughput across functional locations, which may represent geographical locations, factories, or work areas.</span></span> 
+<span data-ttu-id="10409-126">Na poniższym zrzucie ekranu zostały dodane informacje o lokalizacjach czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="10409-126">In the screenshot below, information about functional locations has been added.</span></span> <span data-ttu-id="10409-127">Teraz możliwe jest porównanie obciążenia i przepływności między lokalizacjami czynności konserwacyjnych, które mogą reprezentować lokalizacje geograficzne, fabryki lub obszary robocze.</span><span class="sxs-lookup"><span data-stu-id="10409-127">Now it is possible to compare workload and throughput across functional locations, which may represent geographical locations, factories, or work areas.</span></span> 
 
 ![Przykład miesięcznego obciążenia pracą z lokalizacjami czynności konserwacyjnych](media/14-controlling-and-reporting.png)
 
