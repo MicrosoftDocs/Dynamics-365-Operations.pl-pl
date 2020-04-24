@@ -3,7 +3,7 @@ title: Przetwórz uprawnienia do świadczeń z powodu zmiany sytuacji życiowej
 description: W tym artykule przedstawiono sposób uruchamiania tego procesu w celu uzyskania uprawnienia do użytkowania zdarzeń zmiany sytuacji życiowej.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 899c49fd2946fbadf4264e9178a57fb28598c0de
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: de4c5b951f9d4b07f457ce392c310fb96ba34947
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010162"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229977"
 ---
 # <a name="process-life-event-eligibility"></a>Przetwórz uprawnienia do świadczeń z powodu zmiany sytuacji życiowej
-
-[!include [banner](includes/preview-feature.md)]
 
 W tym artykule przedstawiono sposób uruchamiania tego procesu w celu uzyskania uprawnienia do użytkowania zdarzeń zmiany sytuacji życiowej.
 
@@ -37,7 +35,7 @@ W tym artykule przedstawiono sposób uruchamiania tego procesu w celu uzyskania 
 
    | Pole | Opis |
    | --- | --- |
-   | Okres rejestracji | Okres rejestracji służący do przetworzenia uprawnień do zdarzeń zmiany sytuacji życiowej. |
+   | **Okres rejestracji** | Okres rejestracji służący do przetworzenia uprawnień do zdarzeń zmiany sytuacji życiowej. |
 
 3. Jeśli chcesz uruchomić ten proces w tle, wybierz opcję **Uruchom w tle** i wykonaj następujące czynności:
 

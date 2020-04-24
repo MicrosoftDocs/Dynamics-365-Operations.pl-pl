@@ -3,7 +3,7 @@ title: Tworzenie planu świadczeń
 description: Konfigurowanie planów świadczeń w module Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 97c3acf1294b7a8c2496f23a32918152f50a9e5e
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 6e3822a1071023898e459a82c14ff648d8cdebed
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010218"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230115"
 ---
 # <a name="create-a-benefits-plan"></a>Tworzenie planu świadczeń
-
-[!include [banner](includes/preview-feature.md)]
 
 W tym artykule przedstawiono sposób konfigurowania planów świadczeń w programie Dynamics 365 Human Resources.
 
@@ -39,16 +37,16 @@ W tym artykule przedstawiono sposób konfigurowania planów świadczeń w progra
 
    | Pole | Opis |
    | --- | --- |
-   | Plan | Unikatowy identyfikator planu. |
-   | Opis | Opis planu. |
-   | Typ planu | Podczas tworzenia nowego planu należy określić jego typ. Typ planu to nadrzędna grupa konkretnych typów świadczeń. Każdy typ planu określa, czy pracownik może się zarejestrować w wielu planach tego typu, czy kontakty są beneficjentami czy osobami na utrzymaniu, oraz opcje objęcia świadczeniami. Można tworzyć nowe, niestandardowe typy planów w celu zaspokojenia szczególnych potrzeb firmy w zakresie oferowanych świadczeń. Główne typy planów świadczeń: <ul><li>401K</li><li>ADD</li><li>Stomatologiczne</li><li>Sprawność fizyczna</li><li>FSA</li><li>Narodziny</li><li>LTD</li><li>Medyczne</li><li>PTO</li><li>STD</li><li>Wzrok</li></ul> |
-   | Kod typu planu | Kod typu planu. |
-   | Program | Określa program, do którego można opcjonalnie przypisać plan. |
-   | Pakiet | Określa pakiet, do którego można opcjonalnie przypisać plan. |
-   | Główna | Określa, czy plan jest planem głównym w pakiecie, do którego jest przypisany. |
-   | Stan | Wskazuje obecny stan planu świadczeń. Domyślną wartość to Aktywny. Zmiana stanu na Nieaktywny spowoduje, że plan nie będzie dostępny do wyboru podczas rejestracji. |
-   | Data i godzina wejścia w życie | Data i godzina, do której plan zaczyna obowiązywać. Domyślną wartością jest bieżąca data systemu. |
-   | Data i godzina ważności | Data i godzina zakończenia obowiązywania planu (stan jest ustawiany na Nieaktywny). Wartość domyślna to 31.12.2154, czyli nigdy. |
+   | **Plan** | Unikatowy identyfikator planu. |
+   | **Opis** | Opis planu. |
+   | **Typ planu** | Podczas tworzenia nowego planu należy określić jego typ. Typ planu to nadrzędna grupa konkretnych typów świadczeń. Każdy typ planu określa, czy pracownik może się zarejestrować w wielu planach tego typu, czy kontakty są beneficjentami czy osobami na utrzymaniu, oraz opcje objęcia świadczeniami. Można tworzyć nowe, niestandardowe typy planów w celu zaspokojenia szczególnych potrzeb firmy w zakresie oferowanych świadczeń. Główne typy planów świadczeń: <ul><li>401K</li><li>ADD</li><li>Stomatologiczne</li><li>Sprawność fizyczna</li><li>FSA</li><li>Narodziny</li><li>LTD</li><li>Medyczne</li><li>PTO</li><li>STD</li><li>Wzrok</li></ul> |
+   | **Kod typu planu** | Kod typu planu. |
+   | **Program** | Określa program, do którego można opcjonalnie przypisać plan. |
+   | **Pakiet** | Określa pakiet, do którego można opcjonalnie przypisać plan. |
+   | **Główna** | Określa, czy plan jest planem głównym w pakiecie, do którego jest przypisany. |
+   | **Stan** | Wskazuje obecny stan planu świadczeń. Domyślną wartość to Aktywny. Zmiana stanu na Nieaktywny spowoduje, że plan nie będzie dostępny do wyboru podczas rejestracji. |
+   | **Data i godzina wejścia w życie** | Data i godzina, do której plan zaczyna obowiązywać. Domyślną wartością jest bieżąca data systemu. |
+   | **Data i godzina ważności** | Data i godzina zakończenia obowiązywania planu (stan jest ustawiany na Nieaktywny). Wartość domyślna to 31.12.2154, czyli nigdy. |
 
 4. Na karcie **Konfiguracja** określ wartości następujących pól, w zależności od typu tworzonego planu:
 
@@ -77,42 +75,42 @@ W tym artykule przedstawiono sposób konfigurowania planów świadczeń w progra
 
    | Pole | Opis |
    | --- | --- |
-   | Zezwalaj/kontynuuj rejestrację | Określa, czy pracownicy mogą się rejestrować w planie, jeśli spełniają wymagania kwalifikacyjne.</br></br>Jeśli opcja ma wartość Nie, plan nie będzie dostępny dla pracowników podczas przetwarzania uprawnień. |
-   | Automatyczne rejestrowanie z poprzedniego roku | Określa, czy automatycznie rejestrować uprawnionego pracownika etatowego w planie, jeśli zostały one zarejestrowane w poprzednim roku. |
-   | Automatyczna rejestracja jest domyślna | Określa, czy ma być domyślnie wybierany plan do rejestracji. Plan nie jest obowiązkowy, więc pracownik może zmienić wybór domyślny. |
-   | Zamknięte dla nowych rejestracji | Określa, czy możliwość korzystania z planu ma być ograniczona tylko do uprawnionych pracowników, którzy byli zarejestrowani w planie w poprzednim roku. |
-   | Plan obowiązkowy | Określa, czy pracownicy mają być automatycznie rejestrowani w planie. Pracownicy nie mogą zmieniać wyboru rejestracji. |
-   | Data rozpoczęcia | Dzień utworzenia planu w firmie. |
-   | Konto dostawcy (dostawca świadczeń) | Dostawca, któremu firma płaci składki za plan. |
-   | Nazwa (dostawca świadczeń) | Nazwa dostawcy. |
-   | Odwołanie do dostawcy (dostawca świadczeń) | Odnośnik do dostawcy w planie. Na przykład numer planu grupowego w firmie. |
-   | Alternatywne odwołanie (dostawca świadczeń) | Alternatywny odnośnik do dostawcy w planie. Na przykład numer konta firmy. |
-   | Waluta (dostawca świadczeń) | Waluta używana do wpłacania składek do dostawcy. |
-   | Konto wydatków (dostawca świadczeń) | Konto księgi głównej używane jako konto wydatków dla składek w planie. |
-   | Konto dostawcy (administrator świadczeń) | Dostawca, któremu firma płaci za administrowanie planem. Jeśli firma sama administruje planem, nie wypełniaj tego pola. |
-   | Nazwa (administrator świadczeń) | Nazwa dostawcy administrującego świadczeniami. |
-   | Odwołanie do dostawcy (administrator świadczeń) | Odnośnik do dostawcy administrującego planem. |
-   | Alternatywne odwołanie (administrator świadczeń) | Alternatywny odnośnik do dostawcy administrującego planem. |
-   | Waluta (administrator świadczeń) | Waluta używana do płacenia administratorowi świadczeń. |
-   | Konto wydatków (administrator świadczeń) | Konto księgi głównej używane jako konto wydatków dla kosztów związanych z administrowaniem planem. |
+   | **Zezwalaj/kontynuuj rejestrację** | Określa, czy pracownicy mogą się rejestrować w planie, jeśli spełniają wymagania kwalifikacyjne.</br></br>Jeśli opcja ma wartość Nie, plan nie będzie dostępny dla pracowników podczas przetwarzania uprawnień. |
+   | **Automatyczne rejestrowanie z poprzedniego roku** | Określa, czy automatycznie rejestrować uprawnionego pracownika etatowego w planie, jeśli zostały one zarejestrowane w poprzednim roku. |
+   | **Automatyczna rejestracja jest domyślna** | Określa, czy ma być domyślnie wybierany plan do rejestracji. Plan nie jest obowiązkowy, więc pracownik może zmienić wybór domyślny. |
+   | **Zamknięte dla nowych rejestracji** | Określa, czy możliwość korzystania z planu ma być ograniczona tylko do uprawnionych pracowników, którzy byli zarejestrowani w planie w poprzednim roku. |
+   | **Plan obowiązkowy** | Określa, czy pracownicy mają być automatycznie rejestrowani w planie. Pracownicy nie mogą zmieniać wyboru rejestracji. |
+   | **Data rozpoczęcia** | Dzień utworzenia planu w firmie. |
+   | **Konto dostawcy** (dostawca świadczeń) | Dostawca, któremu firma płaci składki za plan. |
+   | **Nazwa** (dostawca świadczeń) | Nazwa dostawcy. |
+   | **Odwołanie do dostawcy** (dostawca świadczeń) | Odnośnik do dostawcy w planie. Na przykład numer planu grupowego w firmie. |
+   | **Alternatywne odwołanie** (dostawca świadczeń) | Alternatywny odnośnik do dostawcy w planie. Na przykład numer konta firmy. |
+   | **Waluta** (dostawca świadczeń) | Waluta używana do wpłacania składek do dostawcy. |
+   | **Konto wydatków** (dostawca świadczeń) | Konto księgi głównej używane jako konto wydatków dla składek w planie. |
+   | **Konto dostawcy** (administrator świadczeń) | Dostawca, któremu firma płaci za administrowanie planem. Jeśli firma sama administruje planem, nie wypełniaj tego pola. |
+   | **Nazwa** (administrator świadczeń) | Nazwa dostawcy administrującego świadczeniami. |
+   | **Odwołanie do dostawcy** (administrator świadczeń) | Odnośnik do dostawcy administrującego planem. |
+   | **Alternatywne odwołanie** (administrator świadczeń) | Alternatywny odnośnik do dostawcy administrującego planem. |
+   | **Waluta** (administrator świadczeń) | Waluta używana do płacenia administratorowi świadczeń. |
+   | **Konto wydatków** (administrator świadczeń) | Konto księgi głównej używane jako konto wydatków dla kosztów związanych z administrowaniem planem. |
 
 6. Na karcie **Filtry** skonfiguruj potrzebne ustawienia filtrowania. Można filtrować według następujących pól:
 
-   - Jednostka biznesowa
-   - Dział
-   - Firma
-   - Lokalizacja
-   - Pozycja
+   - **Jednostka biznesowa**
+   - **Dział**
+   - **Firma**
+   - **Lokalizacja**
+   - **Pozycja**
 
 7. Na karcie **Reguły uprawnienia** wprowadź wartości w następujących polach:
 
    | Pole | Opis |
    | --- | --- |
-   | Numer wiersza | Numer wiersza reguły uprawnienia. |
-   | Reguła uprawnienia | Reguła uprawnienia do zastosowania do planu świadczeń. Ta reguła uprawnienia zostanie zastosowana do odpowiedniego typu akcji oraz skojarzona ze wskazanym okresem oczekiwania na świadczenia i potrąceniami. |
-   | Typ akcji | Akcja, do której ma zostać zastosowana reguła uprawnienia: zapisywanie na świadczenia lub wygaśnięcie świadczeń. |
-   | Okres oczekiwania na objęcie świadczeniem | Wartość z formularza Okresy oczekiwania. Okres oczekiwania na świadczenia określa liczbę dni lub miesięcy, jaką pracownik czeka na objęcie świadczeniami lub wygaśnięcie świadczeń na podstawie kryteriów określonych w regule uprawnienia i typie akcji. |
-   | Okres oczekiwania na potrącenie | Wartość z formularza Okresy oczekiwania. Okres oczekiwania na potrącenie określa liczbę dni lub miesięcy, jaką pracownik czeka na potrącenie z tytułu świadczeń z jego wypłaty na podstawie kryteriów określonych w regule uprawnienia i typie akcji. |
+   | **Numer wiersza** | Numer wiersza reguły uprawnienia. |
+   | **Reguła uprawnienia** | Reguła uprawnienia do zastosowania do planu świadczeń. Ta reguła uprawnienia zostanie zastosowana do odpowiedniego typu akcji oraz skojarzona ze wskazanym okresem oczekiwania na świadczenia i potrąceniami. |
+   | **Typ akcji** | Akcja, do której ma zostać zastosowana reguła uprawnienia: zapisywanie na świadczenia lub wygaśnięcie świadczeń. |
+   | **Okres oczekiwania na objęcie świadczeniem** | Wartość z formularza Okresy oczekiwania. Okres oczekiwania na świadczenia określa liczbę dni lub miesięcy, jaką pracownik czeka na objęcie świadczeniami lub wygaśnięcie świadczeń na podstawie kryteriów określonych w regule uprawnienia i typie akcji. |
+   | **Okres oczekiwania na potrącenie** | Wartość z formularza Okresy oczekiwania. Okres oczekiwania na potrącenie określa liczbę dni lub miesięcy, jaką pracownik czeka na potrącenie z tytułu świadczeń z jego wypłaty na podstawie kryteriów określonych w regule uprawnienia i typie akcji. |
 
 8. Wybierz opcję **Zapisz**.
 

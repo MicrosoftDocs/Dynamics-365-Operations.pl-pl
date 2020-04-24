@@ -3,7 +3,7 @@ title: Personalizowanie środowiska użytkownika
 description: W tym temacie wyjaśniono, jak można spersonalizować aplikację.
 author: jasongre
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029369"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260513"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -80,7 +80,7 @@ Niektóre z najbardziej typowych i ważnych zmiany, jakie użytkownicy wprowadza
 
 Ponadto większość podstawowych typów personalizacji jawnych jest dostępnych po kliknięciu elementu prawym przyciskiem myszy i wybraniu polecenia **Personalizuj**. (Pamiętaj, że nie wszystkie elementy na stronie można personalizować). Podczas używania tej metody personalizacji pojawi się okno właściwości elementu.
 
-![Personalizowanie właściwości elementu](./media/personalization-element-properties.png)
+![Personalizowanie właściwości elementu](./media/cli-element-property-window.png)
 
 Okno właściwości służy do spersonalizowania elementu na następujące sposoby:
 
@@ -89,6 +89,7 @@ Okno właściwości służy do spersonalizowania elementu na następujące sposo
 - Umieszczenie informacji w sekcji podsumowania skróconej karty (jeśli element znajduje się na skróconej karcie).
 - Pomiń pole, aby nigdy nie otrzymywało fokusu po przeliczeniu na stronę.
 - Uniemożliwianie edytowania danych w polu (dla jakiegokolwiek rekordu).
+- Umożliwia wskazanie pola wymaganego do wprowadzania danych. Jeśli w tym polu nie wprowadzono żadnej wartości, zostanie ono wyświetlone przy użyciu czerwonego obramowania oraz gwiazdki, aby wskazać ten stan. Ta opcja jest dostępna tylko w wersji 10.0.11, gdy włączone są [Zapisane widoki](saved-views.md) i **Wyznacz pola wymagane użycia funkcji personalizacji**.
 
 Okno właściwości może zawierać inne możliwości personalizacji w zależności od elementu. Na przykład okno właściwości kafelka może pozwalać przenieść kafelek do pulpitu nawigacyjnego, a okno właściwości pulpitu nawigacyjnego może pozwalać utworzyć nowy obszar roboczy w tym pulpicie nawigacyjnym.
 
@@ -116,6 +117,7 @@ Następujące narzędzia są dostępne na pasku narzędzi **Personalizacja**:
 - Użyj narzędzia **Przenieś**, aby przenieść element w inne miejsce w bieżącej grupie elementów. Nie można przenieść elementu poza jego grupę nadrzędną. Aby skorzystać z tego narzędzia, należy zaznaczyć przycisk **Przenieś** na pasku narzędzi, a następnie wybrać element do przeniesienia. Po wybraniu elementu aplikacja określa lokalizację, dokąd można przenieść element. Te lokalizacje są nazywane *strefami upuszczania*. Podczas przeciągania elementu w granicach bieżącej grupy każda sfera upuszczania jest wyświetlana za pomocą kolorowej, pogrubionej linii obok obszaru, w którym można upuścić element.
 - Użyj narzędzia **Pomiń**, aby usunąć element z sekwencji tabulacji na stronie. Po wybraniu przycisku **Pomiń** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które zostały pominięte. Można interaktywnie usunąć lub dodać pola do sekwencji kart.
 - Użyj narzędzia **Pokaż w nagłówku**, aby wyświetlić pole w sekcji podsumowania skróconej karty. Po wybraniu przycisku **Pokaż w nagłówku** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie pola, które wybrano jako pola podsumowania. Można dodać w interaktywny sposób pola do podsumowania skróconej karty lub je wybrać, by je z niego usunąć.
+- Narzędzie **Wymaganie** umożliwia wyznaczenie elementu jako wymaganego do wprowadzania danych. Po wybraniu przycisku **Wymagane** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które wymagają personalizacji. Następnie można oznaczyć je jako niewymagane. Ta opcja jest dostępna tylko w następnych wydaniach, gdy włączone są [Zapisane widoki](saved-views.md) i **Wyznacz pola wymagane użycia funkcji personalizacji**.
 - Użyj narzędzia **Zablokuj**, aby oznaczyć element jako edytowalny lub nieedytowalny. Po wybraniu przycisku **Zablokuj** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które są nieedytowalne. Następnie można znowu umożliwić ich edycję. Należy zwrócić uwagę, że niektóre pola są wymagane i nie można ich oznaczyć jako nieedytowalne. Obok tych pól widać symbol kłódki.
 - Użyj przycisku **Dodaj aplikację z Power Apps**, aby na stronie osadzić aplikację utworzoną przy użyciu usługi Microsoft Power Apps. Aby uzyskać szczegółowe informacje o osadzaniu aplikacji z usługi Power Apps w stronie, zobacz [Osadzanie aplikacji z Power Apps](embed-power-apps.md). Ta opcja jest dostępna tylko wtedy, gdy jest wyłączona funkcja [Zapisanych widoków](saved-views.md).  
 - Użyj przycisku **Dodaj aplikację**, by osadzić na stronie aplikację utworzoną za pomocą Microsoft Power Apps lub programu innej firmy. Ta opcja jest dostępna tylko wtedy, gdy jest włączona funkcja [Zapisanych widoków](saved-views.md). 

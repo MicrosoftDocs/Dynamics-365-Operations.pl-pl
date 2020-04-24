@@ -2,15 +2,15 @@
 title: Opóźnienia
 description: Ten temat zawiera informacje o datach opóźnień w planowaniu głównym. Data opóźnienia to realistyczny termin przypisywany transakcji, jeśli najwcześniejsza data realizacji obliczona w planowaniu głównym jest późniejsza niż wnioskowana data.
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 03/15/2019
+manager: tfehr
+ms.date: 03/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransFuturesListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1a8c738fffda76f2a8492c20e2c67a154c68559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 34252e5cd9ee5151b1cba47975fc0cc612521a17
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522296"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203855"
 ---
 # <a name="delays"></a>Opóźnienia
 
@@ -44,6 +44,12 @@ Na stronie **Parametry planowania głównego** można ustawić czas rozpoczęcia
 
 > [!NOTE]
 > We wcześniejszych wersjach obliczane opóźnienia były nazywane *komunikatami prognoz*, data opóźniona była nazywana *datą prognozy*, a transakcja opóźnienia była nazywana *transakcją z datą w przyszłości*.
+
+## <a name="limited-delays-in-production-setup-with-multiple-bom-levels"></a>Ograniczone opóźnienia w konfiguracji produkcji z wieloma poziomami BOM
+Podczas pracy z opóźnieniami w konfiguracji produkcji, która ma wiele poziomów BOM, należy zwrócić uwagę, że tylko towary znajdujące się bezpośrednio powyżej towaru (w strukturze BOM), które powodują opóźnienie, będą aktualizowane z opóźnieniem w ramach procesu planowania głównego. Inne towary w strukturze BOM nie uzyskują opóźnień zastosowanych do momentu zaakceptowania lub zaakceptowania pierwszego planu głównego, gdy zamówienie planowane na najwyższy poziom jest potwierdzone lub wyprodukowane. 
+
+W celu obejścia tego znanego ograniczenia zlecenia produkcyjne w górnej części struktury BOM z opóźnieniami mogą zostać zatwierdzone (lub wyprodukowane) przed kolejnym uruchomieniem planowania głównego. Dzięki temu opóźnienie z opóźnionych zatwierdzonych planowanych zleceń produkcyjnych zostanie zachowane, a wszystkie podskładniki zostaną odpowiednio zaktualizowane.
+Komunikaty akcji mogą być również używane do identyfikowania zamówień planowanych, które można przenieść do późniejszej daty z powodu innych opóźnień w strukturze BOM.
 
 ## <a name="desired-date"></a>Wymagana data
 
