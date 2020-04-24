@@ -3,7 +3,7 @@ title: Moduł nagłówka
 description: W tym temacie opisano moduły nagłówka i sposób tworzenia nagłówków stron w Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: efadd19681bbb21ea5b2b469e55bc6f4b0535046
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.openlocfilehash: cec138ebefbd2beb2f1cf6302ce58d8bbc5c4bbd
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3025692"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261451"
 ---
 # <a name="header-module"></a>Moduł nagłówka
 
@@ -51,6 +51,7 @@ W module nagłówka mogą być używane następujące moduły:
 
 - **Menu nawigacji** — menu nawigacji reprezentuje hierarchię nawigacji kanału i inne statyczne łącza nawigacji. Hierarchię nawigacji kanału można skonfigurować w Dynamics 365 Commerce. Menu nawigacji zawiera właściwość **Źródło nawigacji**, która służy do określania elementów menu nawigacji serwera sieci sprzedaży i statycznych elementów menu jako źródła. Jeśli statyczne elementy menu są określone jako źródło, można podać łącza względne do innych stron w witrynie. Skonfigurowane elementy zostaną wyświetlone jako nawigacja w nagłówkach. 
 - **Pasek wyszukiwania** — moduł wyszukiwania umożliwia użytkownikom wprowadzanie kryteriów wyszukiwania, co pozwala na wyszukiwanie produktów. Adres URL domyślnej strony wyszukiwania oraz parametry kwerendy wyszukiwania muszą być podane w **Ustawienia witryny \> Rozszerzenia**. Moduł wyszukiwania ma właściwości pozwalające pominąć przycisk Wyszukaj lub etykieta w razie konieczności. Moduł wyszukiwania obsługuje także opcje automatycznego sugerowania, takie jak produkt, słowo kluczowe i wyniki wyszukiwania kategorii.
+- **Ikona koszyka** — moduł ikony koszyka reprezentuje ikonę koszyka, w której w danym momencie jest wyświetlana liczba pozycji w koszyku. Aby uzyskać więcej informacji, zajrzyj do [Moduł ikony koszyka](cart-icon-module.md).
 
 ## <a name="create-a-header-module-for-a-page"></a>Utwórz moduł nagłówka dla strony
 
@@ -65,7 +66,10 @@ Aby utworzyć moduł nagłówka, należy wykonać następujące czynności.
 1. W okienku właściwości modułu menu nawigacji skonfiguruj właściwości modułu menu nawigacji.
 1. W gnieździe **wyszukiwania** modułu nagłówka dodaj moduł wyszukiwania. 
 1. W okienku właściwości modułu wyszukiwania skonfiguruj właściwości modułu wyszukiwania. 
+1. W gnieździe **Ikona koszyka** w module nagłówka dodaj moduł ikony koszyka. 
+1. W okienku właściwości modułu ikony koszyka skonfiguruj właściwości modułu ikony koszyka. Jeśli ikona koszyka ma wyświetlać mini-koszyk po najechaniu na nią kursorem, wybierz wartość **Prada** dla opcji **Pokazuj mini-koszyk**.
 1. Zapisz fragment strony, zakończ jego edycję, a następnie go opublikuj. 
+
 
 Aby zagwarantować, że nagłówek ma się pojawiać na każdej stronie, należy wykonać poniższe kroki na każdym szablonie strony utworzonym dla witryny.
 
@@ -81,6 +85,8 @@ Aby zagwarantować, że nagłówek ma się pojawiać na każdej stronie, należy
 [Moduł pola zakupu](add-buy-box.md)
 
 [Moduł koszyka](add-cart-module.md)
+
+[Moduł ikony koszyka](cart-icon-module.md)
 
 [Moduł realizacji transakcji](add-checkout-module.md)
 

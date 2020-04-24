@@ -3,7 +3,7 @@ title: Wielokanałowe zaawansowane opłaty automatyczne
 description: W tym temacie opisano funkcje zarządzania opłatami za dodatkowe zamówienia dla zamówień kanału Commerce przy użyciu zaawansowanych funkcji opłat automatycznych.
 author: hhaines
 manager: annbe
-ms.date: 03/08/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: fd02a81f35b40e5075ccfe5c9a617d7de4e8250d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023740"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175161"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Wielokanałowe zaawansowane opłaty automatyczne
 
@@ -77,7 +77,7 @@ W tej sekcji pokazano przykładu zastosowania, które pomogą zrozumieć konfigu
 
 #### <a name="use-case-scenario"></a>Scenariusz użycia
 
-Sprzedawca chce automatycznie dodać opłaty za transport podczas tworzenia transakcji w dowolnym kanale Commerce, który wymaga wysyłki produktów do odbiorcy. Sprzedawca oferuje 2 metody dostawy: drogą lądową i powietrzną. Jeśli odbiorca wybierze dostawę drogą lądową, a wartość zamówienia jest mniejsza niż $100, sprzedawca chce naliczać opłatę transportową $10,00. Jeśli wartość zamówienia przekracza $100 i odbiorca wybierz dostawę drogą lądową, odbiorca nie zostanie obciążony żadnymi dodatkowymi opłatami transportowymi. Jeśli odbiorca zdecyduje się na transport lotniczy dla wszystkich zleceń, niezależnie od ich łącznej wartości zostanie naliczona opłata transportowa w wysokości $20.00.
+Sprzedawca chce automatycznie dodać opłaty za transport podczas tworzenia transakcji w dowolnym kanale Commerce, który wymaga wysyłki produktów do odbiorcy. Sprzedawca oferuje dwie metody dostawy: drogą lądową i powietrzną. Jeśli odbiorca wybierze dostawę drogą lądową, a wartość zamówienia jest mniejsza niż $100, sprzedawca chce naliczać opłatę transportową $10,00. Jeśli wartość zamówienia przekracza $100 i odbiorca wybierz dostawę drogą lądową, odbiorca nie zostanie obciążony żadnymi dodatkowymi opłatami transportowymi. Jeśli odbiorca zdecyduje się na transport lotniczy dla wszystkich zleceń, niezależnie od ich łącznej wartości zostanie naliczona opłata transportowa w wysokości $20.00.
 
 #### <a name="setup-and-configuration"></a>Instalacja i konfiguracja
 
@@ -157,7 +157,7 @@ Ten proces może być zastosowany w biurze obsługi za pomocą istniejącej funk
 
 #### <a name="use-case-scenario"></a>Scenariusz użycia
 
-Odbiorca poprosił o zapakowanie na prezent 2 z 5 towarów z zamówienia sprzedaży. Sprzedawca oferuje taką usługę za opłatą $2,00 za przedmiot. Osoba przyjmująca zamówienie musi dodać te opłaty do określonego towaru, które muszą zostać zapakowane na prezent.
+Odbiorca poprosił o zapakowanie na prezent dwa z pięciu towarów z zamówienia sprzedaży. Sprzedawca oferuje taką usługę za opłatą $2,00 za przedmiot. Osoba przyjmująca zamówienie musi dodać te opłaty do określonego towaru, które muszą zostać zapakowane na prezent.
 
 #### <a name="setup-and-configuration"></a>Instalacja i konfiguracja
 
@@ -215,3 +215,10 @@ Niektóre organizacje mogą woleć czekać, aż użytkownik zakończy dodawanie 
 ### <a name="charges-override-reports"></a>Raporty zastępowania opłat
 
 Jeśli użytkownik ręcznie zastąpi obliczone opłaty lub doda ręcznie opłatę do transakcji, te dane będą dostępne na potrzeby audytu w raporcie **Historia zastąpień opłat**. Raport można uzyskać dostęp w menu **Handel detaliczny i komercyjny \> Zapytania i raporty \> Historia zastąpień opłat**. Należy pamiętać, że dane potrzebne dla tego raportu będą importowane z bazy danych kanałów do Centrali za pośrednictwem zadań harmonogramu dystrybucji „P”. W związku z tym informacje o zastąpieniach właśnie wprowadzonych w punkcie sprzedaży mogą nie być natychmiast dostępne w tym raporcie, chyba że to zadanie przesłało dane o transakcjach w sklepie do centrali.
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+[Włączanie i konfigurowanie opłat automatycznych według kanałów](auto-charges-by-channel.md)
+
+[Proporcjonalne dzielenie opłat z nagłówka między pasujące wiersze sprzedaży](pro-rate-charges-matching-lines.md)
+

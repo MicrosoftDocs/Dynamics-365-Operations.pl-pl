@@ -1,9 +1,9 @@
 ---
-title: Konfiguruj integrację z programem Common Data Service
-description: Można włączyć lub wyłączyć integrację między usługą Common Data Service a wystąpieniem rozwiązania Microsoft Dynamics 365 Human Resources. Można również wyświetlić szczegóły synchronizacji, wyczyścić dane śledzenia i dokonać ponownej synchronizacji jednostki, aby ułatwić rozwiązywanie problemów z danymi między tymi dwoma środowiskami.
+title: Konfigurowanie integracji z usługą Common Data Service
+description: Można włączyć lub wyłączyć integrację między usługą Common Data Service a Dynamics 365 Human Resources. Można również wyświetlić szczegóły synchronizacji, wyczyścić dane śledzenia i dokonać ponownej synchronizacji jednostki, aby ułatwić rozwiązywanie problemów z danymi między tymi dwoma środowiskami.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,31 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 042daf3fdf7a906086af726472da050467d217e3
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 04280aa0908ed6dab86ef87b6c1843e4b4348e08
+ms.sourcegitcommit: c9657b44adb9c1a77c7c2f6ab63a58cc848974ea
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010176"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198429"
 ---
-# <a name="configure-common-data-service-integration"></a>Konfiguruj integrację z programem Common Data Service
+# <a name="configure-common-data-service-integration"></a>Konfigurowanie integracji z usługą Common Data Service
 
-Można włączyć lub wyłączyć integrację między usługą Common Data Service a wystąpieniem rozwiązania Microsoft Dynamics 365 Human Resources. Można również wyświetlić szczegóły synchronizacji, wyczyścić dane śledzenia i dokonać ponownej synchronizacji jednostki, aby ułatwić rozwiązywanie problemów z danymi między tymi dwoma środowiskami.
+Można włączyć lub wyłączyć integrację między usługą Common Data Service a Dynamics 365 Human Resources. Można również wyświetlić szczegóły synchronizacji, wyczyścić dane śledzenia i dokonać ponownej synchronizacji jednostki, aby ułatwić rozwiązywanie problemów z danymi między tymi dwoma środowiskami.
 
 Po wyłączeniu integracji użytkownicy mogą wprowadzać zmiany w module Human Resources lub usłudze Common Data Service, ale te zmiany nie są synchronizowane między oboma środowiskami.
 
-Domyślnie integracja między modułem Human Resources i usługą Common Data Service jest wyłączona lub włączona, w zależności od obecności danych demonstracyjnych w środowiskach:
-
-- **Wyłączona** dla nowych środowisk, które nie zawierają danych demonstracyjnych
-- **Włączona** dla nowych środowisk, które zawierają dane demonstracyjne
-
-Nowe środowiska zawierające dane demonstracyjne rozpoczną synchronizowanie danych, gdy tylko zostaną zainicjowane.
+Domyślnie integracja danych między modułem Human Resources a usługą Common Data Service jest wyłączona.
 
 Wyłączenie integracji może być zalecane w następujących sytuacjach:
 
 - Wprowadzasz dane za pomocą struktury zarządzania danymi i musisz je zaimportować wielokrotnie, aby osiągnęły poprawny stan.
 
-- Istnieją problemy z danymi w module Human Resources lub usłudze Common Data Service. Po wyłączeniu integracji można usunąć rekord w jednym środowisku bez usuwania go w drugim. Po ponownym włączeniu integracji rekord w środowisku, w którym nie został usunięty, zostanie zsynchronizowany z powrotem do środowiska, w którym został usunięty. Synchronizacja rozpocznie się przy następnym uruchomieniu zadania wsadowego **Żądanie synchronizacji pominiętej integracji z usługą Common Data Service**.
+- Istnieją problemy z danymi w module Human Resources lub usłudze Common Data Service. Po wyłączeniu integracji można usunąć rekord w jednym środowisku bez usuwania go w drugim. Po ponownym włączeniu integracji rekord w środowisku, w którym nie został usunięty, jest zsynchronizowany do środowiska, w którym został usunięty. Synchronizacja rozpocznie się przy następnym uruchomieniu zadania wsadowego **Żądanie synchronizacji pominiętej integracji z usługą Common Data Service**.
 
 > [!WARNING]
 > Po wyłączeniu integracji danych należy się upewnić, że ten sam rekord nie będzie edytowany w obu środowiskach. Po ponownym włączeniu integracji zostanie zsynchronizowany rekord, który był ostatnio edytowany. W związku z tym jeśli nie dokonano takich samych zmian w rekordzie w obu środowiskach, może nastąpić utrata danych.
@@ -103,9 +98,17 @@ Aby wykonać pełną synchronizację jednostki po wyczyszczeniu danych śledzeni
 
 ## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Synchronizowanie jednostki między modułem Human Resources a usługą Common Data Service
 
-Tę procedurę należy wykonać, jeśli zmiany wprowadzone w usłudze Common Data Service pojawiają się po zbyt długim czasie w usłudze Human Resources lub jeśli trzeba odświeżyć tabelę śledzenia po wyczyszczeniu danych śledzenia.
+Tę procedurę należy wykonać jeśli:
 
-- Aby wykonać pełną synchronizację jednostki między modułem Human Resources a usługą Common Data Service, wybierz jednostkę w polu **Nazwa jednostki w usłudze CDS**, a następnie wybierz opcję **Synchronizuj teraz**.
+- Zmiany wprowadzone w Common Data Service zbyt wolno pojawiają się w Human Resources.
+
+- Tabelę śledzenia należy odświeżyć po wyczyszczeniu śledzenia.
+
+Aby uruchomić pełną synchronizację jednostki między Human Resources a Common Data Service:
+
+1. W polu **Nazwa jednostki w usłudze CDS** wybierz firmę.
+
+2. Wybierz opcję **Synchronizuj teraz**.
 
 [![Wykonywanie pełnej synchronizacji](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 
