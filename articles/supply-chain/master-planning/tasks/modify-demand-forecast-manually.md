@@ -2,7 +2,7 @@
 title: Ręczne modyfikowanie prognozy popytu
 description: W tej procedurze pokazano sposób modyfikowania prognozy dla towaru.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,36 +10,36 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, ForecastSales
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58846f896d60610d0e90f8d04fda3101def53511
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: ddb14968bee06dd26b6584fab3d88445cd926cbe
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3148108"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3209589"
 ---
-# <a name="modify-a-demand-forecast-manually"></a><span data-ttu-id="c9033-103">Ręczne modyfikowanie prognozy popytu</span><span class="sxs-lookup"><span data-stu-id="c9033-103">Modify a demand forecast manually</span></span>
+# <a name="modify-a-demand-forecast-manually"></a><span data-ttu-id="ec58e-103">Ręczne modyfikowanie prognozy popytu</span><span class="sxs-lookup"><span data-stu-id="ec58e-103">Modify a demand forecast manually</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="c9033-104">W tej procedurze pokazano sposób modyfikowania prognozy dla towaru.</span><span class="sxs-lookup"><span data-stu-id="c9033-104">This procedure shows how to modify the forecast for an item.</span></span> <span data-ttu-id="c9033-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="c9033-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="c9033-106">To nagranie jest przeznaczone dla planisty produkcji.</span><span class="sxs-lookup"><span data-stu-id="c9033-106">This recording is intended for the production planner.</span></span> 
+<span data-ttu-id="ec58e-104">W tej procedurze pokazano sposób modyfikowania prognozy dla towaru.</span><span class="sxs-lookup"><span data-stu-id="ec58e-104">This procedure shows how to modify the forecast for an item.</span></span> <span data-ttu-id="ec58e-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="ec58e-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ec58e-106">To nagranie jest przeznaczone dla planisty produkcji.</span><span class="sxs-lookup"><span data-stu-id="ec58e-106">This recording is intended for the production planner.</span></span> 
 
 
-## <a name="modify-the-forecast-for-an-item"></a><span data-ttu-id="c9033-107">Modyfikowanie prognozy na towar</span><span class="sxs-lookup"><span data-stu-id="c9033-107">Modify the forecast for an item</span></span>
-1. <span data-ttu-id="c9033-108">W **Okienku nawigacji** przejdź do opcji **Moduły > Zarządzanie informacjami o produktach > Produkty > Zwolnione produkty**.</span><span class="sxs-lookup"><span data-stu-id="c9033-108">In the **Navigation pane**, go to **Modules > Product information management > Products > Released products**.</span></span>
-2. <span data-ttu-id="c9033-109">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="c9033-109">In the list, find and select the desired record.</span></span> <span data-ttu-id="c9033-110">Wybierz towar, dla którego chcesz zmodyfikować prognozę.</span><span class="sxs-lookup"><span data-stu-id="c9033-110">Select the item for which you want to modify the forecast.</span></span> <span data-ttu-id="c9033-111">Można na przykład wybrać towar D0001.</span><span class="sxs-lookup"><span data-stu-id="c9033-111">For example, you can select item D0001.</span></span>  
-3. <span data-ttu-id="c9033-112">W **okienku akcji** kliknij pozycję **Plan**.</span><span class="sxs-lookup"><span data-stu-id="c9033-112">On the **Action Pane**, click **Plan**.</span></span>
-4. <span data-ttu-id="c9033-113">Kliknij opcję **Prognoza popytu**.</span><span class="sxs-lookup"><span data-stu-id="c9033-113">Click **Demand forecast**.</span></span>
-5. <span data-ttu-id="c9033-114">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="c9033-114">In the list, mark the selected row.</span></span> <span data-ttu-id="c9033-115">Jeśli nie ma żadnych wierszy prognozy, utwórz nowy wiersz przez kliknięcie przycisku Nowy na pasku aplikacji.</span><span class="sxs-lookup"><span data-stu-id="c9033-115">If there are no forecast lines, create a new line by clicking New on the app bar.</span></span>  
-6. <span data-ttu-id="c9033-116">W polu **Ilość sprzedaży** wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="c9033-116">In the **Sales quantity** field, enter a number.</span></span> <span data-ttu-id="c9033-117">Ta liczba reprezentuje prognozowaną ilość towaru.</span><span class="sxs-lookup"><span data-stu-id="c9033-117">This number represents the forecasted quantity for the item.</span></span>  
-7. <span data-ttu-id="c9033-118">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c9033-118">Click Save.</span></span>
+## <a name="modify-the-forecast-for-an-item"></a><span data-ttu-id="ec58e-107">Modyfikowanie prognozy na towar</span><span class="sxs-lookup"><span data-stu-id="ec58e-107">Modify the forecast for an item</span></span>
+1. <span data-ttu-id="ec58e-108">W **Okienku nawigacji** przejdź do opcji **Moduły > Zarządzanie informacjami o produktach > Produkty > Zwolnione produkty**.</span><span class="sxs-lookup"><span data-stu-id="ec58e-108">In the **Navigation pane**, go to **Modules > Product information management > Products > Released products**.</span></span>
+2. <span data-ttu-id="ec58e-109">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="ec58e-109">In the list, find and select the desired record.</span></span> <span data-ttu-id="ec58e-110">Wybierz towar, dla którego chcesz zmodyfikować prognozę.</span><span class="sxs-lookup"><span data-stu-id="ec58e-110">Select the item for which you want to modify the forecast.</span></span> <span data-ttu-id="ec58e-111">Można na przykład wybrać towar D0001.</span><span class="sxs-lookup"><span data-stu-id="ec58e-111">For example, you can select item D0001.</span></span>  
+3. <span data-ttu-id="ec58e-112">W **okienku akcji** kliknij pozycję **Plan**.</span><span class="sxs-lookup"><span data-stu-id="ec58e-112">On the **Action Pane**, click **Plan**.</span></span>
+4. <span data-ttu-id="ec58e-113">Kliknij opcję **Prognoza popytu**.</span><span class="sxs-lookup"><span data-stu-id="ec58e-113">Click **Demand forecast**.</span></span>
+5. <span data-ttu-id="ec58e-114">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="ec58e-114">In the list, mark the selected row.</span></span> <span data-ttu-id="ec58e-115">Jeśli nie ma żadnych wierszy prognozy, utwórz nowy wiersz przez kliknięcie przycisku Nowy na pasku aplikacji.</span><span class="sxs-lookup"><span data-stu-id="ec58e-115">If there are no forecast lines, create a new line by clicking New on the app bar.</span></span>  
+6. <span data-ttu-id="ec58e-116">W polu **Ilość sprzedaży** wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="ec58e-116">In the **Sales quantity** field, enter a number.</span></span> <span data-ttu-id="ec58e-117">Ta liczba reprezentuje prognozowaną ilość towaru.</span><span class="sxs-lookup"><span data-stu-id="ec58e-117">This number represents the forecasted quantity for the item.</span></span>  
+7. <span data-ttu-id="ec58e-118">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="ec58e-118">Click Save.</span></span>
 
-## <a name="modify-the-forecast-in-excel"></a><span data-ttu-id="c9033-119">Modyfikowanie prognozy w programie Excel</span><span class="sxs-lookup"><span data-stu-id="c9033-119">Modify the forecast in Excel</span></span>
-1. <span data-ttu-id="c9033-120">Kliknij przycisk **Otwórz** w Microsoft Office.</span><span class="sxs-lookup"><span data-stu-id="c9033-120">Click **Open** in Microsoft Office.</span></span>
-2. <span data-ttu-id="c9033-121">Kliknij opcję **Edytuj prognozę popytu** w programie Excel.</span><span class="sxs-lookup"><span data-stu-id="c9033-121">Click **Edit Demand forecast** in Excel.</span></span> <span data-ttu-id="c9033-122">W programie Excel można dodawać, usuwać i edytować wiersze prognozy popytu.</span><span class="sxs-lookup"><span data-stu-id="c9033-122">In Excel, you can add, delete and edit demand forecast lines.</span></span> <span data-ttu-id="c9033-123">Jeśli nie widzisz danych w programie Excel, musisz mieć włączoną opcję „Nie wylogowuj mnie” i zaufać aplikacji połączenia danych.</span><span class="sxs-lookup"><span data-stu-id="c9033-123">If you are not able to see the data in Excel, you need to sign in with the "Keep me signed in" option enabled and you need to trust the data connection app.</span></span>  
+## <a name="modify-the-forecast-in-excel"></a><span data-ttu-id="ec58e-119">Modyfikowanie prognozy w programie Excel</span><span class="sxs-lookup"><span data-stu-id="ec58e-119">Modify the forecast in Excel</span></span>
+1. <span data-ttu-id="ec58e-120">Kliknij przycisk **Otwórz** w Microsoft Office.</span><span class="sxs-lookup"><span data-stu-id="ec58e-120">Click **Open** in Microsoft Office.</span></span>
+2. <span data-ttu-id="ec58e-121">Kliknij opcję **Edytuj prognozę popytu** w programie Excel.</span><span class="sxs-lookup"><span data-stu-id="ec58e-121">Click **Edit Demand forecast** in Excel.</span></span> <span data-ttu-id="ec58e-122">W programie Excel można dodawać, usuwać i edytować wiersze prognozy popytu.</span><span class="sxs-lookup"><span data-stu-id="ec58e-122">In Excel, you can add, delete and edit demand forecast lines.</span></span> <span data-ttu-id="ec58e-123">Jeśli nie widzisz danych w programie Excel, musisz mieć włączoną opcję „Nie wylogowuj mnie” i zaufać aplikacji połączenia danych.</span><span class="sxs-lookup"><span data-stu-id="ec58e-123">If you are not able to see the data in Excel, you need to sign in with the "Keep me signed in" option enabled and you need to trust the data connection app.</span></span>  
 

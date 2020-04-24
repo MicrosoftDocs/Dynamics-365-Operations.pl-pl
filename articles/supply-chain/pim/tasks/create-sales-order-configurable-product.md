@@ -2,7 +2,7 @@
 title: Tworzenie zamówienia sprzedaży dla konfigurowalnego produktu
 description: Ta procedura pokazuje sposób zastosowania szablonu konfiguracji do produktu w zamówieniu sprzedaży.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,46 +10,46 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, SalesOrderProcessingWorkspace, SalesCreateOrder, SalesTable, PCRuntimeConfigurator, PCTemplateConfigurationSelection
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cafd6e01800b55f316179c481aaa110b2cbcbc80
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 4e69fd2aa04a65d64db4d34f1839a01fb0f8e018
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150051"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3213200"
 ---
-# <a name="create-a-sales-order-for-a-configurable-product"></a><span data-ttu-id="a337f-103">Tworzenie zamówienia sprzedaży dla konfigurowalnego produktu</span><span class="sxs-lookup"><span data-stu-id="a337f-103">Create a sales order for a configurable product</span></span>
+# <a name="create-a-sales-order-for-a-configurable-product"></a><span data-ttu-id="0fcb3-103">Tworzenie zamówienia sprzedaży dla konfigurowalnego produktu</span><span class="sxs-lookup"><span data-stu-id="0fcb3-103">Create a sales order for a configurable product</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="a337f-104">Ta procedura pokazuje sposób zastosowania szablonu konfiguracji do produktu w zamówieniu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="a337f-104">This procedure shows how to apply a configuration template to a product on a sales order.</span></span> <span data-ttu-id="a337f-105">W przykładzie użyto modelu głośnika D0006 zawartego w danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="a337f-105">This example uses the D0006 speaker model in the USMF demo data company.</span></span> <span data-ttu-id="a337f-106">Zazwyczaj z tej procedury korzysta osoba przetwarzająca zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="a337f-106">Typically, a sales order processor uses this procedure.</span></span>
+<span data-ttu-id="0fcb3-104">Ta procedura pokazuje sposób zastosowania szablonu konfiguracji do produktu w zamówieniu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-104">This procedure shows how to apply a configuration template to a product on a sales order.</span></span> <span data-ttu-id="0fcb3-105">W przykładzie użyto modelu głośnika D0006 zawartego w danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-105">This example uses the D0006 speaker model in the USMF demo data company.</span></span> <span data-ttu-id="0fcb3-106">Zazwyczaj z tej procedury korzysta osoba przetwarzająca zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-106">Typically, a sales order processor uses this procedure.</span></span>
 
 
-## <a name="create-a-sales-order"></a><span data-ttu-id="a337f-107">Utwórz zamówienie sprzedaży</span><span class="sxs-lookup"><span data-stu-id="a337f-107">Create a sales order</span></span>
-1. <span data-ttu-id="a337f-108">Kliknij opcję Przetwarzanie zamówienia sprzedaży i dotyczące go zapytania.</span><span class="sxs-lookup"><span data-stu-id="a337f-108">Click Sales order processing and inquiry.</span></span>
-2. <span data-ttu-id="a337f-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="a337f-109">Click New.</span></span>
-3. <span data-ttu-id="a337f-110">Kliknij opcję zamówienie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="a337f-110">Click Sales order.</span></span>
-4. <span data-ttu-id="a337f-111">W polu Konto odbiorcy zaznacz wartość US-001.</span><span class="sxs-lookup"><span data-stu-id="a337f-111">In the Customer account field, select US-001.</span></span> 
-5. <span data-ttu-id="a337f-112">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="a337f-112">Click OK.</span></span>
-6. <span data-ttu-id="a337f-113">W polu Numer pozycji wybierz wartość D0006.</span><span class="sxs-lookup"><span data-stu-id="a337f-113">In the Item number field, select D0006.</span></span>
-    * <span data-ttu-id="a337f-114">Dla tego zadania należy wybrać konfigurowalny produkt.</span><span class="sxs-lookup"><span data-stu-id="a337f-114">For this task, you must select a configurable product.</span></span>  
-7. <span data-ttu-id="a337f-115">Kliknij opcję Produkt i dostawa.</span><span class="sxs-lookup"><span data-stu-id="a337f-115">Click Product and supply.</span></span>
-8. <span data-ttu-id="a337f-116">Kliknij opcję Konfiguruj wiersz.</span><span class="sxs-lookup"><span data-stu-id="a337f-116">Click Configure line.</span></span>
-    * <span data-ttu-id="a337f-117">Należy zauważyć, że cena zmieniła się na podstawie wybranej konfiguracji, a pole Uwzględnij kabel jest teraz ustawiony na wartość Prawda.</span><span class="sxs-lookup"><span data-stu-id="a337f-117">Note that the price has changed, based on the configuration that was selected, and that the Include cable field is now set to True.</span></span>  
-    * <span data-ttu-id="a337f-118">Zwróć uwagę na domyślną cenę i ustawienia wybrane dla kabla.</span><span class="sxs-lookup"><span data-stu-id="a337f-118">Note the default price and the settings that are selected for the cable.</span></span>  
-9. <span data-ttu-id="a337f-119">Kliknij przycisk Szablon ładunku.</span><span class="sxs-lookup"><span data-stu-id="a337f-119">Click Load template.</span></span>
-    * <span data-ttu-id="a337f-120">W tym przykładzie pokazano, jak można zastosować szablon w celu wybrania wstępnie zdefiniowanej konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="a337f-120">This example shows how you can apply a template to select a predefined configuration.</span></span> <span data-ttu-id="a337f-121">Jeśli używasz tej procedury jako przewodnika po zadaniu i chcesz widzieć inne dostępne wartości atrybutów, kliknij przycisk Odblokuj.</span><span class="sxs-lookup"><span data-stu-id="a337f-121">If you're using this procedure as a task guide and want to see the other attribute values that are available, you must click the Unlock button.</span></span>  
-10. <span data-ttu-id="a337f-122">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="a337f-122">Click OK.</span></span>
-11. <span data-ttu-id="a337f-123">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="a337f-123">Click OK.</span></span>
-12. <span data-ttu-id="a337f-124">Rozwiń sekcję Szczegóły wiersza.</span><span class="sxs-lookup"><span data-stu-id="a337f-124">Expand the Line details section.</span></span>
-13. <span data-ttu-id="a337f-125">Kliknij kartę Produkt.</span><span class="sxs-lookup"><span data-stu-id="a337f-125">Click the Product tab.</span></span>
-    * <span data-ttu-id="a337f-126">Konfiguracja towaru jest teraz wyświetlana w obszarze wymiarów produktu.</span><span class="sxs-lookup"><span data-stu-id="a337f-126">The configuration of the item is now listed under the product dimensions.</span></span>  
-14. <span data-ttu-id="a337f-127">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a337f-127">Close the page.</span></span>
+## <a name="create-a-sales-order"></a><span data-ttu-id="0fcb3-107">Utwórz zamówienie sprzedaży</span><span class="sxs-lookup"><span data-stu-id="0fcb3-107">Create a sales order</span></span>
+1. <span data-ttu-id="0fcb3-108">Kliknij opcję Przetwarzanie zamówienia sprzedaży i dotyczące go zapytania.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-108">Click Sales order processing and inquiry.</span></span>
+2. <span data-ttu-id="0fcb3-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-109">Click New.</span></span>
+3. <span data-ttu-id="0fcb3-110">Kliknij opcję zamówienie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-110">Click Sales order.</span></span>
+4. <span data-ttu-id="0fcb3-111">W polu Konto odbiorcy zaznacz wartość US-001.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-111">In the Customer account field, select US-001.</span></span> 
+5. <span data-ttu-id="0fcb3-112">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-112">Click OK.</span></span>
+6. <span data-ttu-id="0fcb3-113">W polu Numer pozycji wybierz wartość D0006.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-113">In the Item number field, select D0006.</span></span>
+    * <span data-ttu-id="0fcb3-114">Dla tego zadania należy wybrać konfigurowalny produkt.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-114">For this task, you must select a configurable product.</span></span>  
+7. <span data-ttu-id="0fcb3-115">Kliknij opcję Produkt i dostawa.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-115">Click Product and supply.</span></span>
+8. <span data-ttu-id="0fcb3-116">Kliknij opcję Konfiguruj wiersz.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-116">Click Configure line.</span></span>
+    * <span data-ttu-id="0fcb3-117">Należy zauważyć, że cena zmieniła się na podstawie wybranej konfiguracji, a pole Uwzględnij kabel jest teraz ustawiony na wartość Prawda.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-117">Note that the price has changed, based on the configuration that was selected, and that the Include cable field is now set to True.</span></span>  
+    * <span data-ttu-id="0fcb3-118">Zwróć uwagę na domyślną cenę i ustawienia wybrane dla kabla.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-118">Note the default price and the settings that are selected for the cable.</span></span>  
+9. <span data-ttu-id="0fcb3-119">Kliknij przycisk Szablon ładunku.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-119">Click Load template.</span></span>
+    * <span data-ttu-id="0fcb3-120">W tym przykładzie pokazano, jak można zastosować szablon w celu wybrania wstępnie zdefiniowanej konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-120">This example shows how you can apply a template to select a predefined configuration.</span></span> <span data-ttu-id="0fcb3-121">Jeśli używasz tej procedury jako przewodnika po zadaniu i chcesz widzieć inne dostępne wartości atrybutów, kliknij przycisk Odblokuj.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-121">If you're using this procedure as a task guide and want to see the other attribute values that are available, you must click the Unlock button.</span></span>  
+10. <span data-ttu-id="0fcb3-122">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-122">Click OK.</span></span>
+11. <span data-ttu-id="0fcb3-123">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-123">Click OK.</span></span>
+12. <span data-ttu-id="0fcb3-124">Rozwiń sekcję Szczegóły wiersza.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-124">Expand the Line details section.</span></span>
+13. <span data-ttu-id="0fcb3-125">Kliknij kartę Produkt.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-125">Click the Product tab.</span></span>
+    * <span data-ttu-id="0fcb3-126">Konfiguracja towaru jest teraz wyświetlana w obszarze wymiarów produktu.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-126">The configuration of the item is now listed under the product dimensions.</span></span>  
+14. <span data-ttu-id="0fcb3-127">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="0fcb3-127">Close the page.</span></span>
 
-## <a name="select-the-product-configuration"></a><span data-ttu-id="a337f-128">Wybór konfiguracji produktu</span><span class="sxs-lookup"><span data-stu-id="a337f-128">Select the product configuration</span></span>
+## <a name="select-the-product-configuration"></a><span data-ttu-id="0fcb3-128">Wybór konfiguracji produktu</span><span class="sxs-lookup"><span data-stu-id="0fcb3-128">Select the product configuration</span></span>
 
