@@ -3,7 +3,7 @@ title: Zapisane widoki
 description: W tym temacie opisano sposób korzystania z funkcji zapisanych widoków.
 author: jasongre
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: c6a5880c6ae9470dbf7986f39798ec888d0c22ea
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: fe79558b9d2ac4ef1c83918b949d11983b2cc0d8
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100315"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260490"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
@@ -156,7 +156,7 @@ Dostępny zestaw akcji dla listy wszystkich opublikowanych widoków strony jest 
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Jak włączyć zapisane widoki w środowisku? 
 Uwaga: funkcja **zapisanych widoków** wymaga włączenia systemu personalizacji w Finance and Operations. Jeśli personalizacja jest wyłączona dla całego środowiska, widoki zostaną wyłączone nawet po wykonaniu poniższych kroków. 
 
-**10.0.9/Aktualizacja platformy 33 i późniejsza** Funkcja **zapisanych widoków** jest dostępna bezpośrednio w module Zarządzanie funkcjami w dowolnym środowisku. Podobnie jak inne funkcje prapremiery publicznej, włączenie tej funkcji w produkcji podlega [uzupełniającemu warunkowi stosowania Umowy](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9/Aktualizacja platformy 33 i późniejsza** Funkcja **zapisanych widoków** jest dostępna bezpośrednio w module Zarządzanie funkcjami w dowolnym środowisku. Podobnie jak inne funkcje prapremiery publicznej, włączenie tej funkcji w produkcji podlega [uzupełniającemu warunkowi stosowania umowy](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8/Aktualizacja platformy 32 i wcześniejsza** Funkcja **zapisanych widoków** można włączyć w środowiskach warstwy 1 (Dev/Test) i warstwa 2 (piaskownicy) w celu zapewnienia dodatkowych zmian w testowaniu i projekcie, wykonując poniższe kroki.
 

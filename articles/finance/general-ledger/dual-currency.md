@@ -16,17 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 580f0c885373006cb9cd955a61c41704a2ac9a94
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4a01b8387afd45648f1205d4246378edc8a9e79b
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186700"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249018"
 ---
 # <a name="dual-currency"></a>Dwie waluty
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Funkcjonalność wprowadzona w programie Microsoft Dynamics 365 for Finance and Operations w wersji 8.1 (w październiku 2018 r.) umożliwia zmianę przeznaczenia waluty raportowania i używanie jej jako drugiej waluty rozliczeniowej. Ta funkcja jest nazywana *dwuwalutowością*. Zmian ustawień dwuwalutowości nie można wyłączyć za pomocą klucza konfiguracji lub parametru. Ponieważ waluta raportowania jest używana jako druga waluta rozliczeniowa, zmieniono sposób obliczana waluty raportowania w logice księgowania.
 

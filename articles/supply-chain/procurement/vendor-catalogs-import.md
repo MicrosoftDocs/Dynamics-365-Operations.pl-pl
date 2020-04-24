@@ -2,7 +2,7 @@
 title: Importowanie katalogów dostawców
 description: W tym temacie opisano proces importowania danych katalogu dostawcy.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9f85b1d1f0b1c2378dd3f278640d984c31923c35
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 35b8e2a87708c88b12c5c7605a7977712a35a0f4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017881"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207386"
 ---
 # <a name="import-vendor-catalogs"></a>Importowanie katalogów dostawców
 [!include[banner](../includes/banner.md)]
@@ -35,17 +35,16 @@ W programie Dynamics 365 Supply Chain Management specjaliści ds. zakupów mogą
 Można przekazać dane katalogu przesłane przez dostawcę z klienta programu Microsoft Dynamics 365.
 
 Dane produktów przesłane przez dostawcę, w postaci pliku żądania zarządzania katalogiem (CMR), muszą być w formacie pliku XML. Plik CMR powinien zawierać szczegóły produktów dostarczanych przez dostawcę do firmy.
-
+''''
 ## <a name="import-vendor-catalog-data"></a>Importowanie danych katalogu dostawcy
-
-Aby importować dane katalogu dostawcy, należy wykonać następujące zadania:
+'' Aby importować dane katalogu dostawcy, należy wykonać następujące zadania:
 
 1.  Skonfiguruj projekt w obszarze roboczym Zarządzanie danymi, gdzie zdefiniowano reguły mapowania danych. Wybierz opcję **Zarządzanie danymi**, a następnie wybierz opcję **Konfiguruj role dla projektów danych**. 
-
+    ''
 2.  Skonfiguruj hierarchię kategorii zaopatrzenia i przypisz dostawców do kategorii zaopatrzenia. Jeśli używasz kodów asortymentu, dodaj je do kategorii zaopatrzenia. Aby uzyskać informacje dotyczące konfigurowania hierarchii kategorii zaopatrzenia, zobacz [Ustawianie hierarchii kategorii zaopatrzenia](../procurement/tasks/set-up-procurement-category-hierarchy.md).
-
+    ''
 3.  Skonfiguruj dostawcę dla importu katalogu. Wybierz dostawcę, a następnie wybierz kolejno opcje **Zaopatrzenie** > **Konfiguracja** > **Konfigurowanie dostawcy dla importu katalogu**.
-
+''''
 4.  Skonfiguruj przepływ pracy importu katalogu. Utwórz szablon pliku CMR i udostępnij go dostawcy.
 
 5.  Wybierz kolejno opcje **Zaopatrzenie i sourcing** \> **Wspólne** \> **Katalogi** \> **Katalogi dostawców**, aby utworzyć katalog dostawcy. W tym katalogu będą grupowane pliki żądań zarządzania katalogami (CMR) otrzymywane od dostawcy. 

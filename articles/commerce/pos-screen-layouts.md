@@ -1,9 +1,9 @@
 ---
-title: Układy ekranu w aplikacji POS
+title: Konfiguracje wizualne interfejsu użytkownika punktu sprzedaży
 description: Ten temat zawiera informacje dotyczące układów ekranu w środowiskach POS aplikacji Dynamics 365 Commerce.
-author: jblucher
-manager: AnnBe
-ms.date: 05/20/2019
+author: boycezhu
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,23 +16,22 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: boycezhu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5bf7b3d20ff0b42eb9eaedf584b2a508c1307707
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3a84318f7156ef42f7e00f1e89228f541b1634ce
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023727"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261474"
 ---
-# <a name="screen-layouts-for-the-point-of-sale-pos"></a>Układy ekranu w aplikacji POS
+# <a name="pos-user-interface-visual-configurations"></a>Konfiguracje wizualne interfejsu użytkownika punktu sprzedaży
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-Ten temat zawiera informacje dotyczące układów ekranu w środowiskach POS aplikacji Dynamics 365 Commerce.
-
-Interfejs użytkownika (UI) punktu sprzedaży można konfigurować przy użyciu kombinacji profili graficznych i układów ekranu, które się przypisuje do sklepów, kas i/lub użytkowników.
+Interfejs użytkownika (UI) punktu sprzedaży Microsoft Dynamics 365 Commerce można konfigurować przy użyciu kombinacji profili graficznych i układów ekranu, które się przypisuje do sklepów, kas i użytkowników. Ten temat zawiera informacje na temat tych opcji konfiguracji.
 
 Poniższa ilustracja pokazuje relacje między różnymi jednostkami, które razem tworzą konfigurowalne aspekty interfejsu użytkownika aplikacji POS.
 
@@ -40,7 +39,7 @@ Poniższa ilustracja pokazuje relacje między różnymi jednostkami, które raze
 
 ## <a name="visual-profile"></a>Profil graficzny
 
-Profile graficzne są przypisywane do kas. Określają elementy wizualnych, które są specyficzne dla kas i wspólne dla użytkowników. Każdy użytkownik, który się loguje do kasy, widzi ten sam motyw, kolory i obrazy.
+Profile graficzne są przypisywane do kas. Określają elementy wizualnych, które są specyficzne dla kas i wspólne dla użytkowników. Każdy użytkownik, który się loguje do kasy, widzi ten sam motyw, układ, kolory i obrazy.
 
 ![Ekran powitalny aplikacji POS z jasnym motywem](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
@@ -48,16 +47,24 @@ Profile graficzne są przypisywane do kas. Określają elementy wizualnych, któ
 
 - **Numer profilu** — Numer profilu jest unikatowym identyfikatorem profilu graficznego.
 - **Opis** — Można wprowadzić znaczącą nazwę, która pomoże identyfikować profil odpowiedni w danej sytuacji.
-- **Motyw** — Można wybierać między motywami aplikacji Jasny i Ciemny. Motyw ma wpływ na kolory czcionki i tła w całej aplikacji.
+- **Motyw** — Można wybierać między motywami aplikacji **Jasny** i **Ciemny**. Motyw ma wpływ na kolory czcionki i tła w całej aplikacji.
 - **Kolor wiodący** — Kolor wiodący jest używany w całej aplikacji POS do odróżniania lub wyróżniania pewnych elementów wizualnych, takich jak kafelki, przyciski poleceń i hiperłącza. Zazwyczaj te elementy wykonują różne akcje.
-- **Kolor nagłówka** — Można skonfigurować kolor nagłówka strony spełniający wymagania identyfikacji wizualnej sprzedawcy detalicznego. Ta funkcja nie jest dostępna tylko w usłudze Retail w wersji 1611.
-- **Pokaż datę/godzinę** — jeśli ta opcja jest włączona, bieżąca data i godzina będzie wyświetlana w nagłówku punktu sprzedaży.
-- **Tło logowania** — Można określić obraz tła dla ekranu logowania. Rozmiary plików obrazów tła powinny być jak najmniejsze, ponieważ przechowywanie i ładowanie dużych plików może mieć negatywny wpływ na szybkość działania i zachowanie aplikacji.
-- **Tło aplikacji** — Można określić obraz tła, który będzie używany zamiast jednolitego koloru motywu w całej aplikacji. Podobnie jak w przypadku teł logowania, rozmiar pliku powinien być jak najmniejszy.
+- **Kolor nagłówka** — Można skonfigurować kolor nagłówka strony spełniający wymagania identyfikacji wizualnej sprzedawcy detalicznego.
+- **Schemat czcionek** — umożliwia wybór między **Standardowymi** i **Dużymi** schematami czcionek. Schemat czcionek ma wpływ na rozmiar czcionki w aplikacji. Ustawieniem domyślnym jest **Standardowa**.
+- **Zawsze pokazuj etykiety paska aplikacji** — gdy ta opcja jest włączona, tekst etykiety jest zawsze widoczny pod przyciskami paska aplikacji.
+- **Układ** — umożliwia wybór między układami **Środkowymi** i **Prawy**. Układ ma wpływ na wyrównanie pola rejestracji na ekranie logowania. Ustawieniem domyślnym jest **Środkowy**.
+- **Wyświetlanie daty/godziny** — gdy ta opcja jest włączona, bieżąca data i godzina są wyświetlane w nagłówku punktu sprzedaży i na ekranie logowania.
+- **Klawiatura** — można wybrać opcję między **Domyślną klawiaturą systemu operacyjnego** i **Wyświetlić konsolę numeryczną**, aby określić domyślną klawiaturę używaną do wprowadzania danych na ekranie logowania. Konsola numeryczna jest wirtualną klawiaturą używaną głównie dla urządzeń dotykowych. Domyślnym wyborem jest **Domyślną klawiaturą systemu operacyjnego**.
+- **Obraz logo** — można określić obraz logo wyświetlany na ekranie logowania. Zaleca się używanie obrazu, który ma przezroczyste tło. Rozmiar pliku powinien być możliwie jak najmniejszy, ponieważ zachowanie i wydajność aplikacji mogą mieć wpływ na przechowywanie i ładowanie dużych plików.
+- **Tło logowania** — Można określić obraz tła dla ekranu logowania. Podobnie jak w przypadku obrazów tła logowania, rozmiar pliku powinien być jak najmniejszy.
+- **Tło** — Można określić obraz tła, który będzie używany zamiast jednolitego koloru motywu w całej aplikacji. Podobnie jak w przypadku obrazów tła ekranu logowania, rozmiar pliku powinien być możliwie najmniejszy.
+
+> [!NOTE]
+> Wyświetlanie układu **Prawego** i daty/godziny nie jest stosowane do ekranu logowania w widoku kompaktowym.
 
 ## <a name="screen-layouts"></a>Układy ekranu
 
-Konfiguracje układu ekranu decydują o akcjach, zawartości i położeniu formantów interfejsu użytkownika na ekranie powitalnym i ekranie **Transakcja** w aplikacji POS.
+Konfiguracje układu ekranu decydują o akcjach, zawartości i położeniu formantów interfejsu użytkownika na ekranie **Powitalnym** i ekranie **Transakcja** w aplikacji POS.
 
 ![Widok układu ekranu aplikacji POS](../commerce/media/POS-Screen-Layout-View.png)
 

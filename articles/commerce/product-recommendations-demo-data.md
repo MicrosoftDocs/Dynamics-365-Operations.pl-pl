@@ -1,9 +1,9 @@
 ---
 title: Tworzenie rekomendacji z danymi demonstracyjnymi
-description: Niniejszy dokument przedstawia wskazówki dotyczące sposobu korzystania z zaleceń dotyczących produktu kanału rozproszonego w środowiskach z jedną ramką w warstwie 1 przy użyciu wstępnie wypełnionych, dostosowywanych danych demonstracyjnych.
+description: Niniejszy temat przedstawia wskazówki dotyczące sposobu korzystania z zaleceń dotyczących produktu kanału rozproszonego w środowiskach z jedną ramką w warstwie 1 przy użyciu wstępnie wypełnionych, dostosowywanych danych demonstracyjnych.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/20
+ms.date: 03/30/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 59cb5e5c9b59ff2127149e3e47b6c30c9c938a27
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ec23461352abc53b90b6af539a3dd1764e4b5460
+ms.sourcegitcommit: 67cf9e2cf0f75e90526cae6bf176a40156c62a53
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154256"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175556"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Tworzenie rekomendacji z danymi demonstracyjnymi
 
 [!include [banner](includes/banner.md)]
 
-Niniejszy dokument przedstawia wskazówki dotyczące sposobu korzystania z zaleceń dotyczących produktu kanału rozproszonego w środowiskach z jedną ramką w warstwie 1 przy użyciu wstępnie wypełnionych, dostosowywanych danych demonstracyjnych.
+Niniejszy temat przedstawia wskazówki dotyczące sposobu korzystania z zaleceń dotyczących produktu kanału rozproszonego w środowiskach z jedną ramką w warstwie 1 przy użyciu wstępnie wypełnionych, dostosowywanych danych demonstracyjnych.
 
 Wielokanałowe rekomendacje produktów zapewniają zestaw opracowanych edytorsko lub generowanych programowo list produktów. Listy te mogą być używane w kilku scenariuszach, w zależności od potrzeb biznesowych. Aby uzyskać więcej informacji na temat zaleceń dotyczących listy rekomendacji, zapoznaj się z [Omówienie rekomendacji produktów](product-recommendations.md).
 
@@ -42,22 +42,23 @@ Zalecenia dotyczące produktów w warstwie 1 dotyczą wyłącznie statycznych da
 Aby włączyć dane demonstracyjne rekomendacji produktu, użytkownicy muszą wdrożyć Rozszerzenie Dynamics 365 Commerce w wersji podglądu w odpowiednim środowisku. Takie rozwiązanie automatycznie włącza dane demonstracyjne rekomendacji produktu.
 
 ## <a name="default-demo-data"></a>Użyj domyślnych danych demonstracyjnych
-Każde środowisko typu Onebox zawiera wstępnie załadowany zbiór danych demonstracyjnych rekomendacji dotyczących produktów przechowywanych w pliku rozdzielonym przecinkami „reco_demo_data. csv" znajdującego się w Commerce Scale Unit.
+Każde środowisko typu OneBox zawiera wstępnie załadowany zbiór danych demonstracyjnych rekomendacji dotyczących produktów przechowywanych w pliku rozdzielonym przecinkami „reco_demo_data. csv" znajdującego się w Commerce Scale Unit.
 
 Dane te są uporządkowane według następujących kolumn.
 
-| Nazwa kolumny         | Wymagany          | Opis                                                                                                                                 | Możliwe wartości                                                              |
+| Nazwa kolumny         | Wymagany          | opis                                                                                                                                 | Możliwe wartości                                                              |
 |---------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | RecoList            | :heavy_check_mark: | Określony typ listy rekomendacji produktu, który ma zostać wygenerowany dla punktu danych demonstracyjnych.                                                    | <ul><li>RecoBestSelling</li><li>RecoNew</li><li>RecoTrending</li><li>RecoCart</li><li>RecoPeopleAlsoBuy</li></ul> |
 | OperatingUnitNumber | :heavy_check_mark: | Numer konkretnej jednostki operacyjnej, w której oczekiwane są rekomendacje produktów.                                        |                                                                              |
 | Kategoria            |                    |    Kategoria, dla której należy zwrócić określoną listę. Jeśli nie określono żadnej kategorii, lista jest tylko dla górnej hierarchii nawigacji.    |                                                                              |
 | SeedItemId          |                    |    W przypadku list, które wymagają użycia materiału siewnego (RecoPeopleAlsoBuy i RecoCart), produkt zawierający te listy powinien zawierać dodatkowe produkty.            |                                                                              |
+| CustomerId          |                    |    Dla list, które wymagają identyfikatora odbiorcy (RecoPicks).  Wartość domyślna „0” dotyczy wszystkich odbiorców.          |                                                                              |
 | ItemIds             | :heavy_check_mark: | Jeden lub więcej produktów zwracanych w wyniku, oddzielonych przez ”;”.                                                                  |                                                                              |
 
 ## <a name="customize-demo-data"></a>Dostosuj dane demonstracyjne
 Użytkownicy mogą edytować domyślne dane demonstracyjne z dowolnymi informacjami dotyczącymi produktów i kategorii skonfigurowanymi w HQ. Po zaktualizowaniu pliku CSV zwrócone rekomendacje produktu będą natychmiast odzwierciedlane w tych zmianach.
 
-Rozszerzenie zawiera plik danych o nazwie RecoMockDataset.csv, który zezwala użytkownikowi na kontrolowanie zestawu danych używanego do wyłączania wyników rekomendacji przykładowych. Nazwa pliku może być kontrolowana za pośrednictwem konfiguracji rozszerzeń za pomocą ustawienia **ext.Recommendations.DemoFilePath**. Dzięki temu użytkownik może mieć dostęp do wielu zestawów danych, które można łatwo przełączać w konfiguracji.
+Rozszerzenie zawiera plik danych o nazwie „RecoMockDataset.csv”, który zezwala użytkownikowi na kontrolowanie zestawu danych używanego do wyłączania wyników rekomendacji przykładowych. Nazwa pliku może być kontrolowana za pośrednictwem konfiguracji rozszerzeń za pomocą ustawienia **ext.Recommendations.DemoFilePath**. Dzięki temu użytkownik może mieć dostęp do wielu zestawów danych, które można łatwo przełączać w konfiguracji.
 
 
 ```xml

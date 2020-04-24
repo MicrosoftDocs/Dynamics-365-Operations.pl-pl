@@ -2,7 +2,7 @@
 title: Wdrażanie dostawców
 description: W tym temacie opisano sposób wdrażania nowych dostawców. Wyjaśniono działania wymagane przez różne role w trakcie tego procesu.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250167"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203418"
 ---
 # <a name="onboard-vendors"></a>Wdrażanie dostawców
 [!include [banner](../includes/banner.md)]
@@ -48,7 +48,7 @@ W poniższej tabeli przedstawiono kroki i role, które są zawarte w tym procesi
 | Administrator            | | | Utwórz użytkownika w Supply Chain Management i Microsoft Azure. | | | |
 | Osoba kontaktowa ze strony dostawcy    | | | Wysyła wiadomość e-mail do osoby kontaktowej. | Rejestruje informacje o dostawcy. | | |
 
-Aby zapoznać się szybką demonstracją procesu przygotowywania dostawcy, obejrzyj ten krótki film na YouTube: [Przygotowywanie nowego dostawcy w Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
+Aby zapoznać się szybką demonstracją procesu przygotowywania dostawcy, obejrzyj ten krótki film na YouTube na temat [Przygotowywania nowego dostawcy w Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importowanie wniosku o rejestrację potencjalnego dostawcy
 

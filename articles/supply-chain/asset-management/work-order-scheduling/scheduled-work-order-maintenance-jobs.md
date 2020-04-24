@@ -2,7 +2,7 @@
 title: Planowane zadania konserwacji zlecenia pracy
 description: W tym temacie zamówiono zaplanowane zadania konserwacji zleceń pracy w module Zarządzanie składnikami majątku.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d9f1cd6d22fd17505c3a4ece8a881629b00694d2
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: a36a32193d9a4f009c1c56b054a45b7dab0ca50d
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652087"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215247"
 ---
 # <a name="scheduled-work-order-maintenance-jobs"></a>Planowane zadania konserwacji zlecenia pracy
 

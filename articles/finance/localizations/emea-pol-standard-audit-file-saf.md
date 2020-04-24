@@ -3,7 +3,7 @@ title: Standardowy plik audytu (SAF) dla Polski
 description: Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten temat zawiera informacje o formatach dla Polski.
 author: LizaGolub
 manager: AnnBe
-ms.date: 03/20/2020
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Poland
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 6a543258219b461f1eaaad0e2c18c86e4a5793c7
-ms.sourcegitcommit: 4445977b68d61003ea3b9cb0a002ccf5843e4a64
+ms.openlocfilehash: 0e698ff2969f7820c87d0a80f3c567dba3806711
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3170316"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3208168"
 ---
 # <a name="standard-audit-file-saf-for-poland"></a>Standardowy plik audytu (SAF) dla Polski
 
@@ -86,10 +86,10 @@ Aby wygenerować plik zapasów SAF, kliknij kolejno opcje **Księga główna > Z
 ## <a name="generate-a-saf-vat-sales-and-purchase-register"></a>Generowanie rejestru SAF sprzedaży i zakupów objętych podatkiem VAT
 Zanim będzie można wygenerować rejestr SAF sprzedaży i zakupów objętych podatkiem od towarów i usług (VAT), należy wykonać następujące dodatkowe czynności konfiguracyjne:
 
--   Skonfiguruj urzędy skarbowe.
--   Konfigurowanie kodów podatków dla raportowania podatku VAT.
--   Ustawianie kodów podatków.
--   Konfigurowanie modelu i formatu raportowania elektronicznego dla raportu.
+1. Skonfiguruj urzędy skarbowe.
+2. Konfigurowanie kodów podatków dla raportowania podatku VAT.
+3. Ustawianie kodów podatków.
+4. Konfigurowanie modelu i formatu raportowania elektronicznego dla raportu.
 
 Aby uzyskać więcej informacji o ustawieniach deklaracji VAT, zobacz [Raportowanie podatku VAT w Europie](emea-vat-reporting.md).
 
@@ -420,7 +420,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td>111119</td>
+<td>11119</td>
 <td>Sprzedaż opodatkowana (opłata zwrotna)</td>
 <td>K_29</td>
 <td>+</td>
@@ -569,12 +569,35 @@ Dodatkowe parametry wyboru można określić za pomocą funkcji **Filtr** na kar
 
 Aby można było wygenerować plik faktur VAT SAF, należy wykonać następujące dodatkowe czynności konfiguracyjne:
 
--   Skonfiguruj urzędy skarbowe.
--   Kody podatków dla raportowania podatku VAT.
--   Ustawianie kodów podatków.
--   Konfigurowanie modelu i formatu raportowania elektronicznego dla raportu.
+1. Skonfiguruj urzędy skarbowe.
+2. Kody podatków dla raportowania podatku VAT.
+3. Ustawianie kodów podatków.
+4. Konfigurowanie modelu i formatu raportowania elektronicznego dla raportu.
+5. Skonfiguruj parametry charakterystyczne dla aplikacji dla formatu raportu.
 
-To konfigurowanie przypomina dodatkowe konfigurowanie wykonane dla rejestru SAF sprzedaży i zakupów objętych podatkiem VAT, z wyjątkiem czynności **Konfigurowanie modelu i formatu raportowania elektronicznego dla raportu**.
+Kroki od jeden do cztery konfigurowania przypominają dodatkowe konfigurowanie wykonane dla **rejestru SAF sprzedaży i zakupów objętych podatkiem VAT**, z wyjątkiem czynności **Konfigurowanie modelu i formatu raportowania elektronicznego dla raportu.**
+
+### <a name="configure-the-er-model-and-format-for-the-report"></a>Konfigurowanie modelu i formatu raportowania elektronicznego dla raportu
+
+Aby przejrzeć lub zmodyfikować konfigurację rejestru SAF sprzedaży i zakupów objętych podatkiem VAT, na stronie **Konfiguracje raportowania** na liście modeli zaznacz model **Standardowy plik audytu (SAF-T)**, a następnie wybierz **Konstruktor**, aby sprawdzić lub zmienić model. Aby przejrzeć lub zmodyfikować faktury VAT SAF, na stronie **Konfiguracje raportowania** w obszarze **Standardowy plik audytu (SAF-T)** zaznacz opcję **Faktury VAT (PL)** i wybierz przycisk **Konstruktor**. Aby uzyskać więcej informacji o Raportowaniu elektronicznym, zobacz następujące tematy:
+
+- [Omówienie raportowania elektronicznego](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Wymagania dotyczące tłumaczenia — Tworzenie konfiguracji raportowania elektronicznego](../../dev-itpro/analytics/electronic-reporting-configuration.md)
+
+Początkowo konfiguracja jest przykładem rejestru VAT opartego na kodach raportowania opisanego w tabeli powyżej. Jeśli trzeba zaadaptować konfigurację do innego zestawu kodów raportowania, należy użyć konfiguracji, aby uzyskać format. 
+
+1. Wybierz format w drzewie konfiguracji, a następnie w **Menu głównym** wybierz **Utwórz konfigurację**. 
+2. Oznacz **Pochodna od nazwy:...**, wprowadź nazwę i opis nowego formatu, a następnie wybierz opcję **Utwórz konfigurację**. Utworzony format jest kopią formatu nadrzędnego. 
+3. Wybierz utworzony format i w **Menu głównym** wybierz opcję **Konstruktor**, aby otworzyć konstruktora formatów.
+4. Zaktualizuj format za pomocą kodów raportowania. Okno **Projektant formatów** jest podzielone na dwie części. Lewa strona jest strukturą formatu (w przypadku rejestru VAT jest to schemat XML). Prawa strona jest Modelem danych (dane). 
+5. Po prawej stronie wybierz **Mapowanie**, a zostanie wyświetlone okienko Model danych. Model danych zawiera wszystkie pola wszystkich raportów SAF-T. Format **Faktury VAT** składa się z kilku sekcji z różnymi źródłami danych. 
+6. Dane pod znacznikiem **Faktura** są mapowane głównie do węzła **Model &gt; SourceDocuments &gt; $Invoices**. Przewiń drzewo w dół i poszukaj oraz zaznacz ten węzeł. 
+7. W węźle **Faktury** znajdź obliczone pola **list\_P\_** i zaktualizuj ich formuły o swoje kody raportowania przy użyciu Projektanta formuł. Okno projektanta formuł zawiera model danych, gdzie można wybrać pola lub listy rekordów, natomiast z prawej strony zawiera wszystkie funkcje, które można implementować. Aby uzyskać więcej informacji o projektancie formatów, zobacz [Projektant formuł w raportowaniu elektronicznym](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md). Wartości dla znaczników pod znacznikiem **StawkiPodatku** są stałe. 
+8. Zaznacz węzeł wartości (ciąg) dla każdego znacznika pod znacznikiem **StawkiPodatku** i ustaw mu wartość w polu **Wartość** na karcie **Format** w prawej części strony **Konstruktor**. Nie trzeba wprowadzać żadnych innych zmian w formacie. 
+9. Zapisz format, zamknij okno i dokończ konfigurowanie formatu wybierając **Zmień stan** > **Zakończ** umieszczonego w menu wersji na skróconej karcie **Wersji** w oknie **Konfiguracje**.
+
+### <a name="configure-application-specific-parameters-for-the-format-of-the-report"></a>Skonfiguruj parametry charakterystyczne dla aplikacji dla formatu raportu
 
 Aby poprawnie raportować niektóre z ważnych znaczników w raporcie, należy zdefiniować parametry właściwe dla aplikacji (dla wersji formatu **Faktur VAT (PL)**, począwszy od 48.36.58). 
 
@@ -587,7 +610,7 @@ Aby poprawnie raportować niektóre z ważnych znaczników w raporcie, należy z
     | **TaxExemptReason_LOOKUP** | Przyczyna zwolnienia z podatku | Przyczyna lub podstawa zwolnienia z podatku lub jego zmniejszenia | W przypadku dostawy towarów lub świadczenia usług, które są zwolnione z podatku zgodnie z artykułem 43 ustęp 1; Artykuł 113 sekcja 1 i 9; lub przepisy wydawane na podstawie artykułu 82, ust. 3. | W przypadku dostawy towarów lub świadczenia usług zwolnionych od podatku na podstawie art. 43 ust. 1, art. 113 ust. 1 I 9 albo przepisów wydanych na podstawie art. 82 ust. 3. |
     | **ItemType_LOOKUP** | Typ towaru | Rodzaj przedmiotu | Dostarczenie towarów używanych, dzieł sztuki, pozycji kolekcjonerskich i antyków, dla których podstawa podatkowa jest utworzona zgodnie z artykułem 120, ustęp czwarty, przypis 5. Nowe środki transportu są przedmiotem dostaw wewnątrz wspólnoty. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich I antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 I 5 marża; W przypadku, gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
 
-### <a name="taxfree_lookup"></a>TaxFree_LOOKUP
+#### <a name="taxfree_lookup"></a>TaxFree_LOOKUP
 
 W JPK_FA v. 2 wartość pola **P_12** może raportować następujące wartości oprócz stawki podatkowej i **zw** (opłata zwrotna): 
 
@@ -606,7 +629,7 @@ Należy skonfigurować i używać określonych kodów zwolnienia (**Podatek \> K
 
 Po zakończeniu konfigurowania pola wyszukiwania **TaxFree_LOOKUP** i przygotowaniu do skonfigurowania następnego pola wyszukiwania wybierz opcję **Zapisz**.
 
-### <a name="taxexemptreason_lookup"></a>TaxExemptReason_LOOKUP
+#### <a name="taxexemptreason_lookup"></a>TaxExemptReason_LOOKUP
 
 Warunki **TaxExemptReason_LOOKUP** są kodami zwolnienia z podatku zdefiniowanymi w Finance (**Podatek** \> **konfiguracja** \> **Podatek** \> **Kody zwolnienia z podatku**) i używane w grupach podatków podczas księgowania transakcji podatkowych. Jeśli na fakturze nie ma żadnych wierszy zwolnienia z podatku, w polu **P_19** będzie raportowana wartość **fałsz**, a znaczniki **P_19A**, **P_19B** i **P_19C** zostaną pominięte.
 
@@ -614,13 +637,15 @@ Warunki **TaxExemptReason_LOOKUP** są kodami zwolnienia z podatku zdefiniowanym
 - **P_19B** wskazuje przepis dyrektywy 2006/112/WE, który zwalnia dostawę towarów lub takich usług z takiego podatku.
 - **P_19C** wskazuje inną podstawę prawną, która wskazuje, że dostawa towarów lub usług przynosi korzyści z wyłączenia.
 
+Określ jako ostatni warunek na liście, wynik **Inne** lub **Other** z wartością **Nie pusty**  w kolumnie **Kod zwolnienia z podatku**.
+
 Po zakończeniu konfigurowania pola wyszukiwania **TaxExemptReason_LOOKUP** i przygotowaniu do skonfigurowania następnego pola wyszukiwania wybierz opcję **Zapisz**.
 
-### <a name="itemtype_lookup"></a>ItemType_LOOKUP
+#### <a name="itemtype_lookup"></a>ItemType_LOOKUP
 
-Pole wyszukiwania **ItemType_LOOKUP** zostało wprowadzone w wersji 48.36.58 (bieżąca KB) formatu **faktury VAT (PL)**.
+Warunki **ItemType_LOOKUP** są kodami podatku zdefiniowanymi w Finance (**Podatek** \> **konfiguracja** \> **Podatek** \> **Kody podatku**) i następnie używane podczas księgowania transakcji podatkowych. Ta konfiguracja wyszukiwania wpływa na raportowanie elementów **P_106E_3A** i **P_22**.
 
-Dostępne do konfiguracji są następujące wartości:
+Poniższe wartości są dostępne dla ustawień **ItemType_LOOKUP**.
 
 | Imię i nazwisko | Opis (Angielski) | Opis (Polski) | Konfiguracja |
 |------|------------------|------------------|-------|
@@ -628,19 +653,11 @@ Dostępne do konfiguracji są następujące wartości:
 | **ArtWorks** | Dostawy dzieł sztuki, dla których podstawę opodatkowania stanowi art. 120 ust. 4, przypis piąty | Dostawy dzieł sztuk dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z dziełami sztuki. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony **procedura marży — dzieła sztuki** kod podatku będzie raportowana w **P_106E_3A**. |
 | **CollectorAntiques** | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120, ustęp czwarty, przypis piąty | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z przedmiotami kolekcjonerskimi i antykami. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony **procedura marży — przedmioty kolekcjonerskie i antyki** kod podatku będzie raportowana w **P_106E_3A**. |
 | **Transport** | Wewnątrzwspólnotowe dostarczanie nowych środków transportu | Wewnątrzwspólnotowa dostawa nowych środków transportu | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z wewnątrzwspólnotowym dostawą nowych środków transportu. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony kod podatku **P_22** będzie raportowany z wartością **Prawda**. |
-| **Inna** | Inna | Inne | Należy określać wartość **Nie puste** w polu **Kod zwolnienia z podatku**. Ta wartość musi być ostatnią na liście wartości. Ta wartość musi być obowiązkowa dla tego wyszukiwania. |
+| **Inna** | Inna | Inne | Należy określać wartość **Nie puste** w polu **Kod podatku**. Ta wartość musi być ostatnią na liście wartości. Ta wartość musi być obowiązkowa dla tego wyszukiwania. |
 
-Po zakończeniu konfigurowania wartości pól wyszukiwania określ pole **Stan** jako **Zakończone**, a następniezapisz zmiany i zamknij stronę. Jeśli dowolne pole wyszukiwania nie zawiera co najmniej jednej wartości **Nie puste**, podczas uruchamiania raportu zostanie wygenerowany błąd. Komunikat o błędzie będzie zawierać informację o braku parametrów specyficznych dla aplikacji.
+Po zakończeniu konfigurowania wartości pól wyszukiwania określ pole **Stan** jako **Zakończone**, a następnie zapisz zmiany i zamknij stronę. 
 
-### <a name="configure-the-er-model-and-format-for-the-report"></a>Konfigurowanie modelu i formatu raportowania elektronicznego dla raportu
-
-Aby przejrzeć lub zmodyfikować konfigurację rejestru SAF sprzedaży i zakupów objętych podatkiem VAT, na stronie **Konfiguracje raportowania** na liście modeli zaznacz model **Standardowy plik audytu (SAF-T)**. Następnie kliknij przycisk **Projektant** i przejrzyj lub zmodyfikuj model. Aby przejrzeć lub zmodyfikować faktury VAT SAF, na stronie **Konfiguracje raportowania** w obszarze **Standardowy plik audytu (SAF-T)** zaznacz opcję **Faktury VAT (PL)** i kliknij przycisk **Projektant**. Aby uzyskać więcej informacji o raportowaniu elektronicznym, zobacz następujące tematy:
-
--   [Omówienie Raportowania elektroniczne](../../dev-itpro/analytics/general-electronic-reporting.md)
--   [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   [Wymagania dotyczące tłumaczenia — Tworzenie konfiguracji raportowania elektronicznego](../../dev-itpro/analytics/electronic-reporting-configuration.md)
-
-Początkowo konfiguracja jest przykładem rejestru VAT opartego na kodach raportowania opisanego w tabeli powyżej. Jeśli trzeba zaadaptować konfigurację do innego zestawu kodów raportowania, należy utworzyć pochodny format konfiguracji. W tym celu zaznacz format w drzewie konfiguracji, a następnie w **menu głównym** kliknij przycisk **Utwórz konfigurację**. Zaznacz opcję **Pochodna od nazwy:**, wypełnij pola **Nazwa** i **Opis** dotyczące nowego formatu, a następnie kliknij przycisk **Utwórz konfigurację**. Utworzony format jest kopią formatu nadrzędnego. Zaznacz utworzony format i w **menu głównym** kliknij przycisk **Projektant**, aby otworzyć projektanta formatów i zaktualizować format o żądane kody raportowania. Okno projektanta formatów jest podzielone na dwie części: lewa strona zawiera strukturę formatu (w przypadku rejestru VAT jest to schemat XML), a prawa strona zawiera model danych (dane). Po prawej stronie naciśnij przycisk **Mapowanie**, a zostanie wyświetlone okienko **Model danych**. Model danych zawiera wszystkie pola wszystkich raportów SAF-T. Format **Faktury VAT** składa się z kilku sekcji z różnymi źródłami danych. Dane pod znacznikiem **Faktura** są mapowane głównie do węzła **Model &gt; SourceDocuments &gt; $Invoices**. Przewiń drzewo w dół i poszukaj oraz zaznacz ten węzeł. Znajdź pola obliczeniowe **list\_P\_** w węźle **$Invoices** i zaktualizuj ich formuły o swoje kody raportowania przy użyciu projektanta formuł. Okno projektanta formuł zawiera model danych, gdzie można wybrać pola lub listy rekordów, natomiast z prawej strony zawiera wszystkie funkcje, które można implementować. Aby uzyskać więcej informacji o projektancie formatów, zobacz [Projektant formuł w raportowaniu elektronicznym](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md). Wartości znaczników pod znacznikiem **StawkiPodatku** są stałe. Zaznacz węzeł wartości (ciąg) dla każdego znacznika pod znacznikiem **StawkiPodatku** i ustaw mu wartość w polu **Wartość** na karcie **Format** z prawej strony okna **Projektant**. Zasadniczo nie trzeba wprowadzać żadnych innych zmian w formacie. Zapisz format. Zamknij okno i dokończ konfigurowanie formatu za pomocą przycisku **Zmień stan** &gt; **Zakończ** umieszczonego w menu wersji na skróconej karcie **Wersji** w oknie **Konfiguracje**.
+Jeśli dowolne pole wyszukiwania nie zawiera co najmniej jednej wartości **Nie puste**, podczas uruchamiania raportu zostanie wygenerowany błąd. Komunikat o błędzie będzie zawierać informację o braku parametrów specyficznych dla aplikacji.
 
 ### <a name="generate-a-saf-vat-invoices"></a>Generowanie faktur VAT SAF
 

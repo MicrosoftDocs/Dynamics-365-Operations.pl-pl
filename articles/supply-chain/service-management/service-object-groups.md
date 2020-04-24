@@ -2,7 +2,7 @@
 title: Grupy przedmiotów serwisu
 description: Grupy przedmiotów serwisu są przydatne do sortowania i filtrowania danych o przedmiotach serwisu do wykorzystania w raportach i statystykach.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/11/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectGroups
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc5b1bf93deaf60a3c6384671ad575c73871eb35
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ca1ca177fe7048e5ff37a8058d00face4a8166f0
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543337"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215109"
 ---
 # <a name="service-object-groups"></a>Grupy przedmiotów serwisu 
 

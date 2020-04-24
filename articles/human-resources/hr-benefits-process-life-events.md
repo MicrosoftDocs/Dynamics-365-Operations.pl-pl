@@ -3,7 +3,7 @@ title: Przetwarzanie zmian sytuacji życiowej
 description: W trakcie cyklu życia pracownika w module Microsoft Dynamics 365 Human Resources każdy pracownik może przechodzić różne zmiany sytuacji życiowej.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 91812432ead4b0afccfba30f8023f014e216236a
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ba8d21482a18c6baa93437fc65c165907bdb515d
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010214"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229943"
 ---
 # <a name="process-life-events"></a>Przetwarzanie zmian sytuacji życiowej
-
-[!include [banner](includes/preview-feature.md)]
 
 W trakcie cyklu życia pracownika w module Microsoft Dynamics 365 Human Resources każdy pracownik może przechodzić różne zmiany sytuacji życiowej. Na przykład zawarcie małżeństwa, zmiana w zatrudnieniu lub zmiana osoby na utrzymaniu/beneficjenta. Aby można było wprowadzać zmiany sytuacji życiowej, należy włączyć funkcję zmian sytuacji życiowej w formularzu Parametry świadczeń, skonfigurować typy zmian sytuacji życiowej oraz skonfigurować opcje zmian sytuacji życiowej dla typów planów.
 
@@ -43,10 +41,10 @@ Na przykład jeśli dzisiejsza data to 1 lutego, a 14 lutego pracownik Jan Kowal
 
    | Pole | Opis |
    | --- | --- |
-   | Okres rejestracji | Okres rejestracji, dla którego mają być przetwarzane zmiany sytuacji życiowej. |
-   | Firma | Firma, dla której mają być przetwarzane zmiany sytuacji życiowej. |
-   | Data zdarzenia zmiany sytuacji życiowej | System przetwarza wszystkie zdarzenia w okresie rejestracji, który nastąpiły do tej daty. |
-   | Pracownik | Pracownik, dla którego mają być przetwarzane zmiany sytuacji życiowej. Jeśli to pole pozostanie puste, zmiany sytuacji życiowej będą przetwarzane dla wszystkich pracowników. |
+   | **Okres rejestracji** | Okres rejestracji, dla którego mają być przetwarzane zmiany sytuacji życiowej. |
+   | **Firma** | Firma, dla której mają być przetwarzane zmiany sytuacji życiowej. |
+   | **Data zdarzenia zmiany sytuacji życiowej** | System przetwarza wszystkie zdarzenia w okresie rejestracji, który nastąpiły do tej daty. |
+   | **Pracownik** | Pracownik, dla którego mają być przetwarzane zmiany sytuacji życiowej. Jeśli to pole pozostanie puste, zmiany sytuacji życiowej będą przetwarzane dla wszystkich pracowników. |
 
 3. Jeśli chcesz uruchomić ten proces w tle, wybierz opcję **Uruchom w tle** i wykonaj następujące czynności:
 

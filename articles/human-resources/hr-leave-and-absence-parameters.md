@@ -3,7 +3,7 @@ title: Konfigurowanie parametrów urlopów i nieobecności
 description: W programie Dynamics 365 Human Resources można definiować parametry urlopów i nieobecności.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2acb8502ebcab122a0a1ff21e9f5e23931026327
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: eb992cbfbed33f88e125d3a8b721f8815414599a
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010185"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197988"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurowanie parametrów urlopów i nieobecności
 
@@ -50,18 +50,25 @@ Przed skonfigurowaniem urlopów i nieobecności w module Dynamics 365 Human Reso
 
 7. Wybierz opcję **Zapisz**.
 
-## <a name="configure-calendar-parameters"></a>Konfigurowanie parametrów kalendarza
-
-Jeśli włączono funkcję w wersji zapoznawczej Kalendarz urlopów i nieobecności, należy skonfigurować dodatkowe parametry. 
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-> [!NOTE]
-> W wydaniu wersji zapoznawczej z 3 lutego 2020 r. włączono tylko funkcjonalność **Oczekujące wnioski urlopowe**.
+## <a name="view-and-change-leave-and-absence-parameters"></a>Zobacz i zmień parametry urlopu i nieobecności
 
 1. Na stronie **Urlopy i nieobecności** wybierz kartę **Łącza**.
 
-2. W obszarze **Konfiguracja** wybierz opcję **Parametry modułu Human Resources**.
+2. W obszarze **Konfiguracja** wybierz opcję **Parametry urlopów i nieobecności**.
+
+3. Na karcie **Ogólne** ustaw następujące parametry:
+ 
+    - Określ **Jednostkę dla urlopu i nieobecności** na godziny lub dni. Jeśli wybrano dni, można wybrać opcję **Włącz definicję połowy dnia**, aby umożliwić pracownikom wybranie pierwszej lub drugiej połowy dnia w swoich żądaniach czasu wolnego. 
+
+    - Wybierz **Data rozpoczęcia miesięcy pracy**, aby określić, kiedy mają obowiązywać stawki naliczania dla planów urlopów za pomocą miesięcy pracy.
+
+    - Umożliwia wybranie opcji **Obliczanie salda** w celu wyświetlenia widoku sald na dzień dzisiejszy lub w okresie naliczania. Wybranie **Saldo na dzień dzisiejszy** spowoduje wyświetlenie sumy wszystkich naliczeń, korekt i wniosków na dzień dzisiejszy. Wybranie **Saldo na okres naliczania** spowoduje wyświetlenie sumy wszystkich naliczeń, korekt i żądań podczas okresu naliczania zdefiniowanego przez częstotliwość w planie urlopu. 
+
+## <a name="configure-calendar-parameters"></a>Konfigurowanie parametrów kalendarza
+
+1. Na stronie **Urlopy i nieobecności** wybierz kartę **Łącza**.
+
+2. W obszarze **Konfiguracja** wybierz opcję **Parametry urlopów i nieobecności**.
 
 3. Na karcie **Kalendarz** w razie potrzeby zmień ustawienia kalendarza.
 

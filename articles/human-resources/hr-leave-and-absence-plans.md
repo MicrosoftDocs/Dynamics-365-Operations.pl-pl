@@ -3,7 +3,7 @@ title: Tworzenie planu urlopów i nieobecności
 description: W programie Dynamics 365 Human Resources można tworzyć plany różnego rodzaju urlopów.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: 532d9b276692858c77e4de41018775e9520f1882
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087307"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197366"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Tworzenie planu urlopów i nieobecności
 
@@ -42,6 +42,11 @@ Można również tworzyć urlopy zależne od stanowiska, na przykład urlopy tyl
 1. Na stronie **Urlopy i nieobecności** wybierz opcję **Utwórz nowy plan**.
 
 2. W obszarze **Szczegóły** wypełnij pola **Nazwa**, **Data rozpoczęcia**, **Opis** i **Typ urlopu** dla swojego planu.
+
+Jeśli funkcja **Konfigurowanie wielu typów urlopu dla jednego planu urlopów i nieobecności** jest włączona, typy urlopów są konfigurowane w **Harmonogram naliczania**, a nie w obszarze **Szczegóły**. Dla każdego rekordu w tabeli harmonogramu naliczania można zdefiniować typ urlopu.
+
+ > [!IMPORTANT]
+   > Po włączeniu tej funkcji nie można jej wyłączyć.
 
 3. Zdefiniuj naliczenia na karcie **Naliczenia**. Naliczenia określają, kiedy i jak często pracownikowi jest przyznawany czas wolny. W tym kroku zdefiniujesz zasady określające, kiedy naliczenia mają być przyznawane, oraz zasady dotyczące proporcjonalnego naliczania długości urlopów.
 
@@ -95,8 +100,8 @@ Można również tworzyć urlopy zależne od stanowiska, na przykład urlopy tyl
    Można tworzyć warstwy, aby przyznawać czas wolny na podstawie różnych poziomów.
 
    Jeśli Twoja firma rozlicza pracowników godzinowo, można przyznawać czas wolny na podstawie liczby przepracowanych godzin, a nie stażu pracy w organizacji. Informacje o liczbie przepracowanych godzin są zazwyczaj przechowywane w systemie rejestracji czasu pracy. Można zaimportować przepracowane godziny zwykłe i nadgodziny z systemu rejestracji czasu pracy, a następnie wykorzystywać je jako podstawę do przyznawania pracownikom urlopów.
-
-   1. Wybierz opcję z pola rozwijanego **Typ naliczania**:
+   
+    1. Wybierz opcję z pola rozwijanego **Typ naliczania**:
 
       - **Miesiące zatrudnienia** — podstawą harmonogramu naliczania jest liczba miesięcy zatrudnienia w firmie.
 
@@ -117,6 +122,13 @@ Można również tworzyć urlopy zależne od stanowiska, na przykład urlopy tyl
       - **Maksymalne przeniesienie na następny okres** — proces naliczania dostosowuje salda urlopów przekraczające maksymalne saldo przeniesienia na następny okres w rocznicą daty rozpoczęcia.
 
       - **Przyznana ilość** — początkowa liczba godzin lub dni, które pracownicy otrzymują, gdy po raz pierwszy zarejestrują się w planie urlopów. Kwota nie jest naliczana dla każdego okresu naliczania.
+      
+Jeśli funkcja **Konfigurowanie wielu typów urlopu dla jednego planu urlopów i nieobecności** jest włączona, należy wybrać opcję w polu **Typ urlopu**. 
+
+   > [!IMPORTANT]
+   > Po włączeniu tej funkcji nie można jej wyłączyć.
+
+Po włączeniu funkcji **Używanie przeliczenia na pełne etaty** moduł Human Resources będzie korzystał z przeliczenia na pełne etaty (FTE) zdefiniowanego dla stanowiska w celu proporcjonalnego naliczania urlopu pracownikowi. Na przykład jeśli przeliczenie na pełne etaty to 0,5, a naliczona ilość wynosi 10, pracownikowi zostanie naliczone 5. Tej funkcji można używać tylko po włączeniu wielu typów urlopów.  
 
 5. Wybierz opcję **Zapisz**.
 
@@ -357,19 +369,6 @@ Prognozowane saldo (30) = Kwota naliczeń (10 × 1) + Saldo bieżące (40) – K
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0,00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
 | Jay Norman          | 0,00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
-
-## <a name="configure-preview-features"></a>Konfigurowanie funkcji w wersji zapoznawczej
-
-Jeśli włączono obsługę funkcji w wersji zapoznawczej dla urlopów i nieobecności, należy skonfigurować również ich ustawienia.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. **Funkcje w wersji zapoznawczej: Konfigurowanie wielu typów urlopu dla jednego planu urlopów i nieobecności**. Dla każdego rekordu w tabeli harmonogramu naliczania można zdefiniować typ urlopu.
-
-   > [!IMPORTANT]
-   > Po włączeniu tej funkcji nie można jej wyłączyć.
-
-2. **Funkcje w wersji zapoznawczej: Używanie przeliczenia na pełne etaty**. Po włączeniu tej funkcji moduł Human Resources będzie korzystał z przeliczenia na pełne etaty (FTE) zdefiniowanego dla stanowiska w celu proporcjonalnego naliczania urlopu pracownikowi. Na przykład jeśli przeliczenie na pełne etaty to 0,5, a naliczona ilość wynosi 10, pracownikowi zostanie naliczone 5. Tej funkcji można używać tylko po włączeniu wielu typów urlopów.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

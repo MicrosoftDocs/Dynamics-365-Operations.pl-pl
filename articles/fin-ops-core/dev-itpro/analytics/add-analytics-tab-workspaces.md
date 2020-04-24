@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 442557a01b25e13b76074c865dfe5468bbc9fde0
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025861"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259639"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
 
@@ -84,7 +84,7 @@ Wykonaj następujące kroki w celu rozszerzenia definicji formularza dla obszaru
 8. Kliknij prawym przyciskiem myszy, a następnie wybierz opcję **Strona nowej karty**.
 9. Zmień nazwę karty na bardziej sugestywną, taką jak **Analizy**.
 10. W projektancie formularza wybierz opcję **Analizy (karta)**.
-11. We właściwości **Podpis** ustaw wartość **Analizy**.
+11. Dla właściwości **Podpis** określ wartość **Analizy**, a w ustawieniu właściwości **Automatyczna deklaracja** określ wartość **Tak**.
 12. Kliknij formant prawym przyciskiem myszy, a następnie wybierz kolejno opcje **Nowy** \> **Grupa**, aby dodać nowy formant grupy formularzy.
 13. Zmień nazwę grupy formularzy na bardziej sugestywną, taką jak **powerBIReportGroup**.
 14. W projektancie formularza wybierz opcję **PanoramaBody (karta)**, a następnie przeciągnij formant na kartę **Obszar roboczy**.

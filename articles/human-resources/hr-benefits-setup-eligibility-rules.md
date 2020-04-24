@@ -3,7 +3,7 @@ title: Konfigurowanie reguł i opcji uprawnień
 description: Określenie reguł i opcji dotyczących uprawnień w obszarze roboczym Zarządzanie świadczeniami w module Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 448156a2428e99d8b95de547cb6f1621d49b1c7b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 07dd8a6ca7edb460769f761950dc0c143112f708
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010265"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229908"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurowanie reguł i opcji uprawnień
-
-[!include [banner](includes/preview-feature.md)]
 
 Po skonfigurowaniu niezbędnych parametrów zarządzania świadczeniami w module Microsoft Dynamics 365 Human Resources można utworzyć reguły uprawnień, pakiety, okresy i programy, które zostaną skojarzone z planami świadczeń.
 
@@ -57,6 +55,7 @@ W czasie otwartej rejestracji pracownicy mogą wybierać plany świadczeń. Jeś
    | **Kategoria zatrudnienia** | Kategoria zatrudnienia pracownika, jeśli w przełączniku **Użyj kategorii zatrudnienia** ustawiono wartość **Tak**. |
    | **Użyj nowej reguły zatrudnienia** | Określa, czy w regule uprawnienia do świadczeń ma być używana wartość nowego okresu zatrudnienia nowo zatrudnionej osoby. |
    | **Okres rejestracji** | Okres, w którym jest dozwolone rejestrowanie nowo zatrudnionej osoby. Jeśli tę opcję ustawisz również w parametrach, tamto ustawienie ma pierwszeństwo wobec tego. |
+   | **Użyj stanu wcześniejszego zatrudnienia** | Określa, czy w regule uprawnienia do świadczeń ma być używany stan zatrudnienia poprzedniego pracownika etatowego. Można na przykład określić regułę uprawnienia, która obejmuje okres oczekiwania na pokrycie dla wszystkich pracowników, którzy przeszli ze stanu **Zwolniono** na **Zatrudniono** w ciągu 90 dni od poprzedniego zatrudnienia. |
 
 4. W obszarze **Kryteria dodatkowe** wybierz następujące opcje i w razie potrzeby dodaj informacje:
 

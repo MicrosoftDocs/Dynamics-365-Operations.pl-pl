@@ -2,7 +2,7 @@
 title: Zatwierdzanie dostawców określonych produktów
 description: W tej procedurze pokazano sposób zatwierdzania dostawców dla określonych produktów.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, PdsApprovedVendorList, VendTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d09a7388377899b7cfb11ba744232d06aa2c4db6
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: ccaeea8d0494644b4d55c29a778d9a8239de10b9
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3149810"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207791"
 ---
 # <a name="approve-vendors-for-specific-products"></a>Zatwierdzanie dostawców określonych produktów
 

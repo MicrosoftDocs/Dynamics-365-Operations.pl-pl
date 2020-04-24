@@ -2,15 +2,15 @@
 title: Klucze redukcji prognozy
 description: Ten temat zawiera przykłady pokazujące konfigurowanie klucza redukcji. Zawiera informacje o różnych ustawieniach kluczy redukcji i wynikach ich zastosowania. Za pomocą klucza redukcji można określić sposób zmniejszania prognozowanych zapotrzebowań.
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 07/09/2019
+manager: tfehr
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11d5613f23805993b2a83d007c818c80de6a4b9b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 25cdde073878ed090a4d981eff75a337a79b37af
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814290"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225112"
 ---
 # <a name="forecast-reduction-keys"></a>Klucze redukcji prognozy
 
@@ -34,7 +34,7 @@ W tym temacie omówiono różne metody, które służą do zmniejszania prognozo
 
 ## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Metody używane w celu zmniejszenia prognozowanych zapotrzebowań
 
-Po dołączeniu prognozy do planu głównego można wybrać sposób redukowania prognozowanych zapotrzebowań, gdy rzeczywisty popyt jest uwzględniony.
+Po dołączeniu prognozy do planu głównego można wybrać sposób redukowania prognozowanych zapotrzebowań, gdy rzeczywisty popyt jest uwzględniony. Należy zauważyć, że planowanie główne wyklucza prognozowane zapotrzebowania z przeszłości, co obejmuje wszystkie zapotrzebowania podlegające prognozie przed datą dzisiejszą.
 
 Aby uwzględnić prognozę w planie głównym i wybrać metodę, która jest używana do zmniejszenia prognozowanych zapotrzebowań, przejdź do **Planowanie główne \> ustawienia \> Plany \> plany główne**. W polu **Model prognozy** wybierz model prognozy. W polu **Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań** wybierz metodę. Dostępne są następujące opcje:
 

@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z samouczka narzędzia Regression Suite Automation Tool
 description: W tym temacie przedstawiono sposób użycia narzędzia Regression suite automation tool (RSAT). Opisuje on różne funkcje i zawiera przykłady korzystania z funkcji zaawansowanego tworzenia skryptów.
-author: kfend
+author: robinarh
 manager: AnnBe
 ms.date: 06/09/2019
 ms.topic: article
@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: kfend
+ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
+ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070827"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248743"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Korzystanie z samouczka narzędzia Regression Suite Automation Tool
 
@@ -30,79 +30,13 @@ ms.locfileid: "3070827"
 > [!NOTE]
 > Tę stronę można pobrać i zapisać w formacie PDF przy użyciu narzędzi dostępnych w przeglądarce internetowej. 
 
-Ten samouczek dotyczy niektórych zaawansowanych funkcji narzędzia Regression suite automation tool (RSAT), który zawiera przypisanie demonstracyjne oraz opisuje strategię i najważniejsze punkty szkoleniowe.
+Ten samouczek dotyczy niektórych zaawansowanych funkcji narzędzia Regression suite automation tool (RSAT), który zawiera przypisanie demonstracyjne oraz opisuje strategię i najważniejsze punkty szkoleniowe. 
 
-## <a name="features-of-rsattask-recorder"></a>Funkcje RSAT/rejestratora zadań
+## <a name="notable-features-of-rsat-and-task-recorder"></a>Funkcje narzędzi RSAT i Rejestratora zadań
 
 ### <a name="validate-a-field-value"></a>Sprawdź wartość pola
 
-Aby uzyskać informacje o tej funkcji, zapoznaj się z [funkcją tworzenia nowego nagrania zadania zawierającego funkcję sprawdzania poprawności](./hol-set-up-regression-suite-automation-tool.md#create-a-new-task-recording-that-has-a-validate-function).
-
-### <a name="saved-variable"></a>Zapisane zmienne
-
-Aby uzyskać informacje o tej funkcji, zapoznaj się z tematem [modyfikowanie istniejącego nagrania zadania w celu utworzenia zapisanej zmiennej](./hol-set-up-regression-suite-automation-tool.md#modify-an-existing-task-recording-to-create-a-saved-variable).
-
-### <a name="derived-test-case"></a>Pochodny przypadek testowy
-
-1. Otwórz narzędzie Regression suite automation tool (RSAT) i wybierz oba przypadki testowe utworzone w [Konfigurowanie i instalowanie samouczka narzędzia Regression Suite Automation Tool](./hol-set-up-regression-suite-automation-tool.md).
-2. Wybierz **Nowy \> Utwórz pochodny przypadek testowy**
-
-    ![Utwórz pochodne polecenie przypadku testowego w menu Nowy](./media/use_rsa_tool_01.png)
-
-3. Zostanie wyświetlony komunikat informujący o tym, że pochodny przypadek testowy zostanie utworzony dla każdego wybranego przypadku testowego w bieżącym zestawie testów oraz że każdy pochodny przypadek testowy będzie miał własną kopię pliku parametrów programu Excel. Kliknij przycisk **OK**.
-
-    > [!NOTE]
-    > Po uruchomieniu pochodnego przypadku testowego używane jest rejestrowanie zadania nadrzędnego przypadku testowego i jego kopia w pliku parametrów programu Excel. W ten sposób można uruchomić ten sam test z różnymi parametrami bez konieczności obsługiwania więcej niż jednego rejestrowania zadań. Pochodny przypadek testowy nie musi być częścią tego samego pakietu testowego, co jego nadrzędny przypadek testowy.
-
-    ![Okno komunikatu](./media/use_rsa_tool_02.png)
-
-    Utworzono dwa dodatkowe pochodne przypadki testowe i pole wyboru **Pochodny?** jest dla nich zaznaczone.
-
-    ![Utworzone przypadki testowe pochodne](./media/use_rsa_tool_03.png)
-
-    Pochodny przypadek testowy jest automatycznie tworzony w programie Azure DevOps. Jest to element podrzędny dla **tworzenia nowego przypadku testowego produktu** i jest oznakowany specjalnym słowem kluczowym **: RSAT:DerivedTestSteps**. Te przypadki testowe są również automatycznie dodawane do planu testu w systemie Azure DevOps.
-
-    ![Słowo kluczowe RSAT: DerivedTestSteps](./media/use_rsa_tool_04.png)
-
-    > [!NOTE]
-    > Jeśli z jakiegokolwiek powodu utworzone przypadki testowe nie znajdują się w odpowiednim porządku, przejdź do Azure DevOps i zmień kolejność przypadków testowych w zestawie testów, tak aby pakiet RSAT mógł je uruchomić w odpowiedniej kolejności.
-
-4. Wybierz tylko pochodny przypadek testowy, a następnie kliknij przycisk **Edytuj**, aby otworzyć odpowiedni plik parametrów programu Excel.
-5. Pliki parametrów programu Excel można edytować w taki sam sposób, jak pliki nadrzędne. Innymi słowy, należy się upewnić, że identyfikator produktu jest skonfigurowany do automatycznego generowania. Upewnij się również, że zapisana zmienna jest kopiowana do odpowiednich pól.
-6. Na karcie **ogólne** obu plików parametrów programu Excel zaktualizuj wartość pola **Firma** w celu **Ussi**, tak aby pochodne przypadki testowe zostały uruchomione dla innej firmy niż w przypadku testu nadrzędnego. Aby uruchomić przypadki testowe w odniesieniu do określonego użytkownika (lub roli skojarzonej z określonym użytkownikiem), można zaktualizować wartość pola **użytkownik testowy**.
-7. Wybierz opcję **Uruchom**, a następnie sprawdź, czy produkt został utworzony w firmie USMF i firmie Ussi.
-
-### <a name="validate-notifications"></a>Weryfikuj powiadomienia
-
-Za pomocą tej funkcji można sprawdzić, czy akcja wystąpiła. Na przykład podczas tworzenia zlecenia produkcyjnego, szacowanego, a następnie rozpoczętego, aplikacja wyświetla komunikat „produkcja – rozpoczęcie” informujący o rozpoczęciu zlecenia produkcyjnego.
-
-![Produkcja — Powiadomienie o rozpoczęciu](./media/use_rsa_tool_05.png)
-
-Można sprawdzić poprawność tej wiadomości za pośrednictwem narzędzia RSAT, wprowadzając tekst **Weryfikacja komunikatu** na karcie pliku parametrów programu Excel w celu odpowiedniego nagrania.
-
-![Karta weryfikacji komunikatu](./media/use_rsa_tool_06.png)
-
-Po uruchomieniu przypadku testowego komunikat w pliku parametrów programu Excel jest porównywany z komunikatem wyświetlanym. Jeśli wiadomości nie pasują do siebie, przypadek testowy nie powiedzie się.
-
-> [!NOTE]
-> Można wprowadzić więcej niż jedną wiadomość na karcie **Weryfikacja komunikatu** w pliku parametrów programu Excel. Komunikatami mogą być także komunikaty o błędach lub ostrzeżenia, a nie komunikaty informacyjne.
-
-### <a name="validate-values-by-using-operators"></a>Sprawdzanie poprawności wartości przy użyciu operatorów
-
-W poprzednich wersjach pakietu RSAT można było sprawdzać poprawność wartości tylko wtedy, gdy wartość kontrolna jest równa oczekiwanej wartości. Nowa funkcja umożliwia sprawdzenie, czy zmienna nie jest równa, jest mniejsza niż lub równa określonej wartości.
-
-- Aby skorzystać z tej funkcji, należy otworzyć plik **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** w folderze instalacyjnym narzędzia RSAT (na przykład **C\\: Program Files (x86)\\Regression Suite Automation Tool**) i zmienić wartość w następujący sposób element z **false** na **true**.
-
-    ```xml
-    <add key="AddOperatorFieldsToExcelValidation" value="false" />
-    ```
-
-    W pliku parametrów programu Excel pojawi się pole nowego **operatora**.
-
-    > [!NOTE]
-    > W przypadku korzystania ze starszej wersji pakietu RSAT należy wygenerować nowe pliki parametrów programu Excel.
-
-    ![Pole Operator](./media/use_rsa_tool_07.png)
+Narzędzia RSAT umożliwiają uwzględnianie etapów sprawdzania poprawności w ramach testowania w celu weryfikacji oczekiwanych wartości. Aby uzyskać informacje dotyczące tej funkcji, należy zapoznać się z artykułem [Sprawdzanie oczekiwanych wartości](../../dev-itpro/perf-test/rsat/rsat-validate-expected.md).
 
 W poniższym przykładzie pokazano, jak można skorzystać z tej funkcji w celu sprawdzenia, czy dostępne zapasy przekraczają 0 (zero).
 
@@ -115,7 +49,7 @@ W poniższym przykładzie pokazano, jak można skorzystać z tej funkcji w celu 
     5. Na liście oznacz wybrany wiersz.
     6. Sprawdź, czy wartość pola **W sumie dostępne** to **411.0000000000000000**.
 
-2. Zapisz nagranie zadania w BPM i LCS i zsynchronizuj z Azure DevOps.
+2. Zapisz rejestrowanie zadań i dołącz je do przypadku testowego w usłudze Azure DevOps.
 3. Dodaj przypadek testowy do planu testu i załaduj przypadek testowy do pakietu RSAT.
 4. Otwórz plik parametrów programu Excel. Na karcie **InventOnhandItem** zostanie wyświetlona sekcja **sprawdzanie poprawności InventOnhandItem** zawierającej pole **operatora.**
 
@@ -130,28 +64,32 @@ W poniższym przykładzie pokazano, jak można skorzystać z tej funkcji w celu 
 
 Jeśli wartość w polu **Łączna ilość dostępna** dla określonego towaru w magazynie jest większa od 0 (zero), testy zostaną przekazane niezależnie od wartości rzeczywistej dostępnych zapasów.
 
-### <a name="generator-logs"></a>Generator dzienników
+### <a name="saved-variables-and-chaining-of-test-cases"></a>Zapisane zmienne i łańcuchy przypadków testowych
 
-Ta funkcja tworzy folder zawierający dzienniki uruchomionych spraw testowych.
+Jedną z najważniejszych funkcji narzędzia RSAT jest łączenie przypadków testowych w łańcuchy (to znaczy zdolność testu do przekazywania zmiennych do innych testów). Aby uzyskać więcej informacji, zajrzyj do artykułu [Skopiuj zmienne do łańcuchowych przypadków testowych](../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md).
 
-- Aby skorzystać z tej funkcji, należy otworzyć plik **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** w folderze instalacyjnym narzędzia RSAT (na przykład **C\\: Program Files (x86)\\Regression Suite Automation Tool**) i zmienić wartość w następujący sposób element z **false** na **true**.
+### <a name="derived-test-case"></a>Pochodny przypadek testowy
 
-    ```xml
-    <add key="LogGeneration" value="false" />
-    ```
+Narzędzia RSAT umożliwiają korzystanie z tego samego zapisu zadań w wielu przypadkach testowych, umożliwiając uruchamianie zadań z różnymi konfiguracjami danych. Aby uzyskać więcej informacji, zajrzyj do artykułu [Przypadki testu pochodnego](../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md).
 
-Po uruchomieniu przypadków testowych można znaleźć pliki dziennika w folderze **C:\\użytkownicy\\\<nazwa użytkownika\>\\AppData\\mobilne\\regressionTool\\generatorLogs**.
+### <a name="validate-notifications-and-messages"></a>Sprawdzanie poprawności powiadomień i komunikatów
 
-![Folder GeneratorLogs](./media/use_rsa_tool_10.png)
+Za pomocą tej funkcji można sprawdzić, czy akcja wystąpiła. Na przykład podczas tworzenia zlecenia produkcyjnego, szacowanego, a następnie rozpoczętego, aplikacja wyświetla komunikat „produkcja – rozpoczęcie” informujący o rozpoczęciu zlecenia produkcyjnego.
+
+![Produkcja — Powiadomienie o rozpoczęciu](./media/use_rsa_tool_05.png)
+
+Można sprawdzić poprawność tej wiadomości za pośrednictwem narzędzia RSAT, wprowadzając tekst **Weryfikacja komunikatu** na karcie pliku parametrów programu Excel w celu odpowiedniego nagrania.
+
+![Karta weryfikacji komunikatu](./media/use_rsa_tool_06.png)
+
+Po uruchomieniu przypadku testowego komunikat w pliku parametrów programu Excel jest porównywany z komunikatem wyświetlanym. Jeśli wiadomości nie pasują do siebie, przypadek testowy nie powiedzie się.
 
 > [!NOTE]
-> Jeśli istnieją przypadki testowe przed zmianą wartości w pliku. config, dzienniki nie zostaną wygenerowane dla tych przypadków testowych, dopóki nie zostaną utworzone nowe pliki wykonywania testów.
-> 
-> ![Polecenie Generuj tylko pliki wykonania testu w menu Nowy](./media/use_rsa_tool_11.png)
+> Można wprowadzić więcej niż jedną wiadomość na karcie **Weryfikacja komunikatu** w pliku parametrów programu Excel. Komunikatami mogą być także komunikaty o błędach lub ostrzeżenia, a nie komunikaty informacyjne.
 
 ### <a name="snapshot"></a>Migawka
 
-Ta funkcja wykonuje zrzuty ekranu czynności, które zostały wykonane podczas rejestrowania zadań.
+Ta funkcja wykonuje zrzuty ekranu czynności, które zostały wykonane podczas rejestrowania zadań. Jest on przydatny do celów inspekcji lub debugowania.
 
 - Aby skorzystać z tej funkcji, należy otworzyć plik **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** w folderze instalacyjnym narzędzia RSAT (na przykład **C\\: Program Files (x86)\\Regression Suite Automation Tool**) i zmienić wartość w następujący sposób element z **false** na **true**.
 
@@ -159,13 +97,7 @@ Ta funkcja wykonuje zrzuty ekranu czynności, które zostały wykonane podczas r
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-W obszarze **C:\\użytkownicy\\\<nazwa użytkownika\>\\AppData\\mobilny\\regressionTool\\playback** jest tworzony oddzielny folder dla każdego uruchomionego przypadku testowego.
-
-![Folder migawek dla przypadku testowego](./media/use_rsa_tool_12.png)
-
-W każdym z tych folderów można znaleźć migawki kroków, które zostały wykonane w trakcie wykonywania przypadków testowych.
-
-![Pliki migawek](./media/use_rsa_tool_13.png)
+Po uruchomieniu przypadku testowego narzędzia RSAT generują migawki (obrazy) kroków w folderze odtwarzania przypadków testowych w katalogu roboczym. Jeśli używana jest starsza wersja narzędzia RSAT, obrazy są zapisywane w folderze **C:\\użytkownicy\\\<Nazwa użytkownika\>\\AppData\\Roaming\\regressionTool\\odtwarzanie**, utowrzony jest osobny folder dla każdego uruchomionego przypadku testowego.
 
 ## <a name="assignment"></a>Przypisanie
 
@@ -183,7 +115,7 @@ Na poniższej ilustracji przedstawiono proces dla tego scenariusza.
 
 ![Proces dla scenariusza pokazu](./media/use_rsa_tool_14.png)
 
-Na poniższej ilustracji przedstawiono proces biznesowy dla tego scenariusza w RSAT.
+Na poniższej ilustracji przedstawiono hierarchię procesów biznesowych dla tego scenariusza w narzędziu do modelowania procesów biznesowych usługi LCS.
 
 ![Procesy biznesowe dla scenariusza pokazu](./media/use_rsa_tool_15.png)
 
@@ -377,7 +309,7 @@ Możesz użyć komendy ``listtestsuitenames``, aby uzyskać wszystkie dostępne 
 
 
 #### <a name="help"></a>help
-Identyczny z [?](####?) command
+Identyczny z [?](#section) command
 
 
 #### <a name="list"></a>liście
@@ -512,6 +444,8 @@ Pokazuje dwa sposoby wywoływania tej aplikacji: jeden przy użyciu pliku ustawi
 
 ### <a name="windows-powershell-examples"></a>Przykłady środowiska Windows PowerShell
 
+[!IMPORTANT] Przykładowe skrypty przedstawione poniżej są przeznaczone do celów ilustracyjnych i nie są obsługiwane przez firmę Microsoft.
+
 #### <a name="run-a-test-case-in-a-loop"></a>Uruchamianie przypadku testowego w pętli
 
 Masz skrypt testowy, który tworzy nowego klienta. Za pomocą skryptów ten przypadek testowy można uruchomić w pętli, tworząc losowo następujące dane przed uruchomieniem każdej iteracji:
@@ -551,7 +485,7 @@ function RunTestCase
     $cmd = $cmd + $filename
     cmd /c $cmd
 }
-$excelFilename = "full path to excel file parameter file"
+$excelFilename = "full path to Excel parameter file"
 l$sheetName = "DirPartyQuickCreateForm"
 for ($i = $start; $i -lt $start + $nr; $i++ )
 {
