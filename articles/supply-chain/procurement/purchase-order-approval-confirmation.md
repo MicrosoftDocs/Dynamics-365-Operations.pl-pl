@@ -1,30 +1,30 @@
 ---
 title: Zatwierdzanie i potwierdzanie zamówień zakupu
 description: W tym temacie opisano stany, przez które przechodzi zamówienie zakupu po utworzeniu, oraz skutek włączenia funkcji zarządzanie zmianami w zamówieniach zakupu.
-author: FrankDahl
-manager: AnnBe
-ms.date: 06/20/2017
+author: mkirknel
+manager: tfehr
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d0fc75f233ee2eab42317f835834ff24b6ada2f
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6b331b7e7725b3dd284deb02e59fcf2d699822c4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813438"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3208001"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Zatwierdzanie i potwierdzanie zamówień zakupu
 
@@ -69,9 +69,10 @@ W niektórych sytuacjach może zajść konieczność zmodyfikowania zamówienia 
 
 Jeśli zamówienie zakupu zostało utworzone przy użyciu procesu zarządzania zmianami, można wprowadzić zmiany poprzez odwołanie raportu, a jeśli zamówienie już zostało zatwierdzone, za pomocą czynności **Zażądaj zmiany**. W takim przypadku stan zatwierdzenia zmienia się z powrotem na **Wersja robocza** i wtedy można zmodyfikować zamówienie. Po zakończeniu wprowadzania zmian może być konieczne przesłanie zamówienia zakupu do ponownego zatwierdzenia. Można skonfigurować rodzaje zmian, które wymagają ponownego zatwierdzenia, przy użyciu reguły **Reguła ponownego zatwierdzania zamówień zakupu** na stronie **Zasady zakupów**.
 
-Jeśli część zamówionej ilości wiersza zamówienia zakupu została dostarczona, nie można zmienić zamawianej ilości. Można jednak zmienić ilość **Pozostałe do dostarczenia** w wierszu. Następnie można użyć akcji **Finalizuj**, aby anulować wiersze i uniemożliwić dalsze przetwarzanie. 
+Jeśli część zamówionej ilości wiersza zamówienia zakupu została dostarczona, nie można zmienić zamawianej ilości, kiedy zamówienie zakupy jest w **Wersji roboczej**. Można jednak zmienić ilość **Pozostałych dostaw** w wierszu dla zamówienia zakupu, które jest w stanie **Wersja robocza**.
 
-Po potwierdzeniu zamówienia nie można go usunąć. Jednakże można anulować ilości całkowitą lub wszelką pozostałą ilość w zamówieniu, o ile tylko ta ilość nie została odebrana ani zafakturowana.
+Po potwierdzeniu zamówienia nie można go usunąć. Jednakże można anulować ilości całkowitą lub wszelką pozostałą ilość w zamówieniu, o ile tylko ta ilość nie została odebrana ani zafakturowana. Następnie można użyć akcji **Finalizuj**, aby uniemożliwić dalsze przetwarzanie. 
+
 
 ## <a name="canceling-purchase-orders"></a>Anulowanie zamówień zakupu
 

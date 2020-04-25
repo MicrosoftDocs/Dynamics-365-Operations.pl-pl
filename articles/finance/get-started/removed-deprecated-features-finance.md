@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ec13076e6a05c3402af566487f7921f6971da215
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: aebce032d7d780b296ba74fea4467425a3cbe1a7
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127984"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175115"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Finance
 
@@ -47,6 +47,18 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 | **Powiązane obszary produktów**         | Zgłoszenie |
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | Przestarzałe: do 1 lipca 2021, nie planujemy obsługiwać raportów SSRS: **Rejestr VAT sprzedaży, Rejestr VAT zakupów, zbiorczy Rejestr VAT dla UE — odwołanie do funkcji PL-00014**. Przykład formatu programu Excel dla standardowego pliku audytu z uwzględnieniem deklaracji VAT (JPK_VDEK) zostanie wprowadzony w zamian. |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.11
+
+### <a name="norwegian-standard-main-accounts"></a>Konto główne norweskiego standardu
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Przeprojektowanie  |
+| **Zamieniona przez inną funkcję?**   | Tak (zamieniono na parametry określone dla aplikacji formatu ER) |
+| **Powiązane obszary produktów**         | Zgłoszenie |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Przestarzałe: w kwietniu 1, 2021, nie planujemy już obsługi funkcji związanych ze standardowymi kontami głównymi: pole odwołania, tabela pokrewna, jednostka danych. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.7
 

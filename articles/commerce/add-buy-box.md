@@ -3,7 +3,7 @@ title: Moduł pola zakupu
 description: W tym temacie opisano moduły pola zakupu i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154070"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261405"
 ---
 # <a name="buy-box-module"></a>Moduł pola zakupu
 
@@ -46,7 +46,7 @@ Na stronie szczegółów produktu pole zakupu jest podzielone na dwa regiony: re
 Moduł pudełka z kupowaniem umożliwia renderowanie tytułu, opisu, ceny i klasyfikacji produktu. Klienci mogą również wybrać warianty produktu, które mają różne atrybuty produktu, takie jak rozmiar, styl i kolor. Po wybraniu wariantu produktu inne właściwości w polu zakupu (np. opis produktu i obrazy) są aktualizowane w celu odzwierciedlenia informacji o wariantach. 
 
 Dostępny jest selektor ilości, dzięki czemu odbiorcy mogą określić ilość towarów do zakupienia. Maksymalną ilość, jaką można zakupić, można zdefiniować w ustawieniach oddziału.
- 
+
 W polu kupowania klienci mogą również wykonywać takie działania, jak dodawanie produktu do koszyka, dodawanie produktu do ich listy życzeń oraz wybieranie lokalizacji odbioru. Te akcje można wykonać dla produktu lub wariantu produktu. Aby dodać produkt do listy życzeń, odbiorca musi się zalogować.
 
 Motywów można używać do usuwania lub zmieniania kolejności właściwości produktu pola zakupu oraz formantów akcji. 
@@ -58,14 +58,15 @@ Motywów można używać do usuwania lub zmieniania kolejności właściwości p
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduły, których można używać w module pola zakupu
 
 - **Galeria multimediów** — ten moduł służy do prezentowania obrazów produktu na stronie szczegółów produktu. Może on obsługiwać jeden lub wiele obrazów. System obsługuje również miniatury obrazów. Miniatury obrazów mogą być ułożone poziomo (jako wiersz pod obrazem) lub w pionie (jako kolumna obok obrazu). Moduł Galeria multimediów można dodać do gniazda **Multimedia** w module pole zakupu. Obecnie obsługuje tylko obrazy. 
-- **Wybór sklepu** — ten moduł pokazuje listę magazynów pobliskich, w których dany towar jest dostępny do odebrania. Umożliwia użytkownikom wprowadzenie lokalizacji, w której znajdują się bliskie sklepy. Aby uzyskać więcej informacji na temat tego modułu, należy zapoznać się z tematem [moduł Selector sklepów](store-selector.md).
+- **Wybór sklepu** — ten moduł pokazuje listę magazynów pobliskich, w których dany towar jest dostępny do odebrania. Umożliwia użytkownikom wprowadzenie lokalizacji, w której znajdują się bliskie sklepy. Aby uzyskać więcej informacji na temat tego modułu, należy zapoznać się z tematem [moduł selector sklepów](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Ustawienia modułu pola zakupu
 
 Moduły kupowania mają trzy następujące ustawienia, które można skonfigurować w **Ustawienia witryny \> Rozszerzenia**:
 
 - **Ilość maksymalna** — To ustawienie jest używane do określania maksymalnej liczby każdej pozycji, którą można dodać do koszyka. Na przykład sprzedawca może zdecydować, że tylko 10 sztuk każdego produktu może być sprzedawanych w jednej transakcji.
-- **Sprawdzanie zapasów** — Jeśli wartość jest ustawiona na **prawda**, towar jest dodawany do koszyka dopiero po upewnieniu się, że jest on w zapasach. Ta kontrola zapasów jest realizowana zarówno dla scenariuszy, w których towar zostanie wysłany, jak i dla scenariuszy, w których zostanie on odebrany w sklepie. Jeśli wartość jest ustawiona na **fałsz**, nie jest przeprowadzane sprawdzanie zapasów przed dodaniem towaru do koszyka i założenie zamówienia.
+- **Sprawdzanie zapasów** — Jeśli wartość jest ustawiona na **prawda**, towar jest dodawany do koszyka dopiero po upewnieniu się, że jest on w zapasach. Ta kontrola zapasów jest realizowana dla scenariuszy, w których towar zostanie wysłany, jak i dla scenariuszy, w których zostanie on odebrany w sklepie. Jeśli wartość jest ustawiona na **fałsz**, nie jest przeprowadzane sprawdzanie zapasów przed dodaniem towaru do koszyka i założenie zamówienia. Aby uzyskać informacje dotyczące konfigurowania ustawień zapasów w biurze zaplecza, należy zapoznać się z tematem [Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](calculated-inventory-retail-channels.md).
+
 - **Bufor zapasów** — ta właściwość służy do określania numeru buforowego zapasów. Zapasy są obsługiwane w czasie rzeczywistym, a w przypadku, gdy wiele odbiorców nakłada zamówienia, może być trudne utrzymywanie dokładnej inwentaryzacji zapasów. Po zakończeniu sprawdzania zapasów, jeśli zapasy są mniejsze niż kwota bufora, produkt jest traktowany jako wychodzący z zapasów. W związku z tym, jeśli sprzedaż będzie się odbywała szybko przez kilka kanałów i inwentaryzacja nie jest w pełni zsynchronizowana, jest mniejsze ryzyko sprzedaży towaru, który jest poza zapasem.
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakcja Commerce Scale Unit
@@ -99,6 +100,8 @@ Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości
 
 [Moduł koszyka](add-cart-module.md)
 
+[Moduł ikony koszyka](cart-icon-module.md)
+
 [Moduł realizacji transakcji](add-checkout-module.md)
 
 [Moduł potwierdzenia zamówienia](order-confirmation-module.md)
@@ -106,3 +109,5 @@ Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości
 [Moduł nagłówka](author-header-module.md)
 
 [Moduł stopki](author-footer-module.md)
+
+[Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](calculated-inventory-retail-channels.md)

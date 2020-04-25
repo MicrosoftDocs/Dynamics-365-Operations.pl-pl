@@ -2,7 +2,7 @@
 title: Realizacja zapasów bezpieczeństwa dla towarów
 description: W tym temacie opisano realizację zapasów bezpieczeństwa oraz sposób konfigurowania ilości zapasów bezpieczeństwa dla towarów.
 author: roxanadiaconu
-manager: AnnBe
+manager: tfehr
 ms.date: 11/27/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 147cc3984e6dc641209beefdb3545615b42767a2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9a0c1371d3cbbb052220fc0c0be8a63b931f3c4c
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558603"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3208692"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Realizacja zapasów bezpieczeństwa dla towarów
 

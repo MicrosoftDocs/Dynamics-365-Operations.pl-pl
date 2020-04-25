@@ -3,7 +3,7 @@ title: Lista funkcji modułu ER w kategorii funkcji tekstowych
 description: Ten temat zawiera ogólne informacje o funkcjach tekstowych obsługiwanych w module Raportowanie elektroniczne (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/05/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f519d242fe74196b0d12bdc9df4f1b4b0e585752
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bd4dd7e9a3e1aa448adea5abd0c21b8133f34e3b
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916621"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201096"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Lista funkcji modułu ER w kategorii funkcji tekstowych
 
@@ -52,7 +52,7 @@ Funkcje tekstowe raportowania elektronicznego (ER) mogą służyć do wykonywani
 | [Zastąp](er-functions-text-replace.md) | Ta funkcja zwraca określony ciąg tekstowy jako wartość typu *Ciąg* po zastąpieniu go w całości lub częściowo innym ciągiem. |
 | [Prawa](er-functions-text-right.md) | Ta funkcja zwraca wartość *Ciąg*, która reprezentuje określoną liczbę znaków od końca określonego ciągu. |
 | [Tekst](er-functions-text-text.md) | Ta funkcja zwraca określoną liczbę jako wartość typu *Ciąg* po przekształceniu na ciąg tekstowy, który jest sformatowany zgodnie z ustawieniami regionalnymi serwera bieżącego wystąpienia aplikacji. |
-| [Przetłumacz](er-functions-text-translate.md) | Ta funkcja zwraca określony ciąg tekstowy jako wartość typu *Ciąg* po zastąpieniu go w całości lub częściowo innym ciągiem. |
+| [Przetłumacz](er-functions-text-translate.md) | Ta funkcja zwraca wartość typu *Ciąg*, która zawiera wynik zastąpienia określonego tekstu w znakach dla innego dostarczonego zbioru znaków. |
 | [Trim](er-functions-text-trim.md) | Ta funkcja zwraca określony ciąg tekstowy jako wartość typu *Ciąg* po obcięciu spacji wiodących i końcowych oraz usunięciu spacji wielokrotnych spomiędzy wyrazów. |
 | [Upper](er-functions-text-upper.md) | Ta funkcja zwraca określony ciąg tekstowy jako wartość *Ciąg* po przekonwertowaniu go na duże litery. |
 

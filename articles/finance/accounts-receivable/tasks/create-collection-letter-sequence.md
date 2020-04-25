@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a317fba4f30ab9fefe6b12637d53fda141d354bf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 03f76f6539e8f318b75c8ec8f53020eb7052ec45
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188885"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3137929"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Tworzenie kolejności ponagleń
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ten przewodnik po zadaniach umożliwia tworzenie kolejki ponagleń. W zadaniu wykorzystano firmę demonstracyjną USMF.
 

@@ -3,7 +3,7 @@ title: Nowości i zmiany w rozwiązaniu Human Resources
 description: Każdego tygodnia udostępniamy nowe wydanie Microsoft Dynamics 365 Human Resources. Artykuły wymienione tutaj szczegółowo opisują zmiany dokonane w każdym tygodniu.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7ba311a3ab6ac482821e485186d81a5bcb91ab38
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 25a70b812af76fa420de69ed9b4e718991a21e43
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154466"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259616"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nowości i zmiany w rozwiązaniu Human Resources
 
-Każdego tygodnia udostępniamy nowe wydanie Microsoft Dynamics 365 Human Resources. Artykuły w tej sekcji szczegółowo opisują zmiany dokonane w każdym tygodniu.
+Co dwa tygodnie udostępniamy nowe wydanie Microsoft Dynamics 365 Human Resources. Artykuły w tej sekcji szczegółowo opisują zmiany dokonane z każdym wydaniem.
 
 Aby uzyskać więcej informacji na temat nadchodzących funkcji lub procesu aktualizacji modułu Human Resources, zapoznaj się z następującymi artykułami:
 
@@ -39,8 +39,12 @@ Aby uzyskać więcej informacji na temat nadchodzących funkcji lub procesu aktu
 
 ## <a name="human-resources-weekly-releases"></a>Human Resources — wydania tygodniowe
 
-Aby zobaczyć, co nowego lub zmieniła się w cotygodniowych nowych wersjach Human Resources, należy zapoznać się z następującymi artykułami:
+Aby zobaczyć, co nowego lub zmieniła się w nowych wersjach Human Resources co dwa tygodnie, należy zapoznać się z następującymi artykułami:
 
+[13 kwietnia 2020 r.](hr-whats-new-2020-04-13.md)</br>
+[3 kwietnia 2020 r.](hr-whats-new-2020-04-03.md)</br>
+[24 marca 2020 r.](hr-whats-new-2020-03-24.md)</br>
+[19 marca 2020 r.](hr-whats-new-2020-03-19.md)</br>
 [10 marca 2020 r.](hr-whats-new-2020-03-10.md)</br>
 [3 marca 2020 r.](hr-whats-new-2020-03-03.md)</br>
 [25 lutego 2020 r.](hr-whats-new-2020-02-25.md)</br>

@@ -2,7 +2,7 @@
 title: Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu
 description: W tym temacie wyjaśniono sposób konfigurowania magazynu przy użyciu szablonu konfiguracji magazynu.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 11/16/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3a6645bc55dfd4f03ce9872ff5017f1659b1f11c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 66fdc26b0b967a04a3c6a6e3444e00b1372dc504
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017604"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3204017"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu
 
@@ -93,7 +93,7 @@ Można pobrać plik zip pakietu danych. Ten plik zawiera wszystkie dane w wybran
 
 Opcja **Wyświetl dziennik wykonywania** umożliwia uzyskanie szczegółowych informacji o każdej importowanej jednostce danych. Aby szybko pobrać dane docelowe, można użyć widoku danych pośrednich. Umożliwia to sprawdzenie wyglądu zaimportowanych danych na powiązanych stronach w aplikacji. Jeżeli używane są szablony danych domyślnych, sekwencja importu dla każdej jednostki danych działa we wstępnie zdefiniowany sposób, aby zapewnić, że najpierw zostaną zaimportowane wszystkie dane zależne. Jeżeli częścią projektu są niestandardowe jednostki danych, należy zdefiniować prawidłową sekwencję. Aby uzyskać więcej informacji, zobacz temat [Szablony danych konfiguracji](../../dev-itpro/data-entities/configuration-data-templates.md).
 
-Aby uzyskać więcej informacji na temat sposobu korzystania z szablonu magazynu do skopiowania konfiguracji magazynu z jednej firmy do nowej firmy w tym samym wystąpieniu, zobacz ten 3 minutowy film w serwisie YouTube: [jak korzystać z szablonu magazynu do kopiowania konfiguracji dla rozwiązania Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Aby uzyskać więcej informacji na temat sposobu korzystania z szablonu magazynu do skopiowania konfiguracji magazynu z jednej firmy do nowej firmy w tym samym wystąpieniu, zobacz ten 3 minutowy film w serwisie YouTube o [sposobie użycia szablonu magazynu służy do kopiowania konfiguracji w Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Powiązany temat
 

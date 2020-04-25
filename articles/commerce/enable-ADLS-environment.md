@@ -3,7 +3,7 @@ title: Włączanie ADLS w środowisku Dynamics 365 Commerce
 description: W tym temacie opisano sposób włączania i testowania Azure Data Lake Storage (ADLS) dla środowiska Dynamics 365 Commerce, który jest wstępnym warunkiem włączenia zaleceń dotyczących produktów.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c037f5603af5af84917084eefa1edd508891c0d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ba428765babb9ca7566da7a457368959b1c29083
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154443"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259755"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>Włączanie ADLS w środowisku Dynamics 365 Commerce
 
@@ -48,7 +48,8 @@ Aby uzyskać więcej informacji o ADLS, zobacz [Oficjalną dokumentację systemu
   
 ## <a name="configuration-steps"></a>Kroki w konfiguracji
 
-W tej sekcji omówiono kroki konfiguracji niezbędne do włączenia ADLS w środowisku.
+W tej sekcji omówiono kroki konfiguracji niezbędne do włączenia ADLS w środowisku w odniesieniu do zaleceń dotyczących produktów.
+Aby uzyskać bardziej szczegółowe omówienie kroków wymaganych do włączenia ADLS, zapoznaj się z [Udostępnianie magazynu jednostek w usłudze Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### <a name="enable-adls-in-the-environment"></a>Włączanie ADLS w środowisku
 
@@ -91,6 +92,8 @@ Jeśli nie zostało to jeszcze zrobione, wykonaj kroki [w celu włączenia zalec
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
+[Udostępnianie magazynu jednostek w usłudze Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md)
+
 [Omówienie rekomendacji produktów](product-recommendations.md)
 
 [Włącz rekomendacje produktów](enable-product-recommendations.md)
@@ -110,5 +113,3 @@ Jeśli nie zostało to jeszcze zrobione, wykonaj kroki [w celu włączenia zalec
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
-
-

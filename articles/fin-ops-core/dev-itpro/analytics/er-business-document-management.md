@@ -3,7 +3,7 @@ title: Omówienie zarządzania dokumentami biznesowymi
 description: Ten temat zawiera informacje dotyczące sposobu korzystania z funkcji zarządzania dokumentami biznesowymi w ramach modułu raportowania elektronicznego.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/15/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117344"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258564"
 ---
 # <a name="business-document-management-overview"></a>Omówienie zarządzania dokumentami biznesowymi
 
@@ -46,7 +46,7 @@ Aby używać funkcji zarządzania dokumentami biznesowymi do edytowania szablon�
 
 ## <a name="business-document-availability"></a>Dostępność dokumentu biznesowego
 
-Następujące raporty z szablonami opartymi na programie Excel są dostępne przy wydaniu publicznej wersji zapoznawczej:
+Następujące raporty z szablonami opartymi na programie Excel będą dostępne przy wydaniu publicznej wersji zapoznawczej:
 
 **Rozrachunki z odbiorcami** (Sierpień 2019 r.)
 
@@ -248,9 +248,18 @@ Aby edytować szablony faktur niezależnych w obszarze roboczym zarządzanie dok
 1. Zaloguj się jako użytkownik z dostępem do strony obszaru roboczego zarządzania dokumentami biznesowymi.
 2. Otwórz obszaru roboczy zarządzania dokumentami biznesowymi.
 
+Jeśli jest wyłączona funkcja **Wyglądający jak Office interfejs użytkownika na potrzeby zarządzania dokumentami** w obszarze roboczym **Zarządzanie funkcjami**, główna siatka w obszarze roboczyme **Zarządzanie dokumentami biznesowymi** wyświetla następujące szablony:
+
+- Szablony, których właścicielem jest dostawca konfiguracji ER, (czyli dostawca aktualnie oznaczony jako aktywny w obszarze roboczym **Raportowanie elektroniczne**). Po wybraniu jednego z tych szablonów można wybrać opcję **Edytuj szablon**, aby rozpocząć lub kontynuować edycję szablonu.
+- Szablony, które są własnością innych dostawców konfiguracji ER. Po wybraniu jednego z tych szablonów można wybrać **Nowy dokument** w celu utworzenia kopii, która jest własnością dostawcy konfiguracji ER, a następnie rozpocząć edycję kopii.
+
 ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate1.png)
 
 Zawartość wybranego szablonu jest przedstawiana na karcie **szablony**. Wybierz kartę **szczegóły**, aby przejrzeć szczegóły wybranego szablonu, a także szczegóły konfiguracji formatu ER, w którym znajduje się ten szablon. Zauważ, że wszystkie szablony mają stan **opublikowane** i nie zawierają szczegółów w kolumnie **korekta**. Oznacza to, że te szablony nie są obecnie edytowane.
+
+Jeśli jest włączona funkcja **Wyglądający jak Office interfejs użytkownika na potrzeby zarządzania dokumentami**w obsarze roboczym **Zarządzanie funkcjami** główna siatka w obszarze roboczym **Zarządzanie dokumentami biznesowymi** zawiera szablony będące własnością dostawcy konfiguracji ER (czyli dostawcę aktualnie oznaczonego jako aktywny w obszarze roboczym **Raportowanie elektroniczne**). Po wybraniu jednego z tych szablonów można wybrać opcję **Edytuj szablon**, aby rozpocząć lub kontynuować edycję szablonu.
+
+Aby pracować z szablonami należącymi do innych dostawców konfiguracji ER, należy wybrać opcję **Nowy dokument**, aby utworzyć kopię szablonu będącego własnością dostawcy ER. Wtedy można zacząć edytować kopię. Więcej informaci można przeczytać w [Nowy interfejs użytkownika dokumentu w zarządzaniu dokumentami biznesowymi](er-business-document-management-new-template-ui.md).
 
 ### <a name="initiate-editing-templates-owned-by-your-configuration-provider"></a>Inicjuj Edytowanie szablonów należących do Twojego dostawcy konfiguracji.
 

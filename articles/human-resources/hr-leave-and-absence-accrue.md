@@ -3,7 +3,7 @@ title: Nalicz plany urlopów i nieobecności
 description: W programie Dynamics 365 Human Resources urlopy i nieobecności można naliczać dla wielu pracowników lub dla jednej osoby.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba60fc2e5b17ec32aa6ad7eb104e8ae55ddee3bb
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 3048f9b6b52a150219067430abb54e5b5bf5c3e4
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092345"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197320"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Nalicz plany urlopów i nieobecności
 
@@ -35,7 +35,7 @@ W programie Dynamics 365 Human Resources urlopy i nieobecności można naliczać
 
 2. W obszarze **Zarządzaj urlopami** wybierz opcję **Nalicz do planów urlopów i nieobecności**.
 
-3. W oknie dialogowym **Naliczanie do planów urlopów i nieobecności** w obszarze **Nalicz na dzień** wybierz opcję **Data dzisiejsza** lub opcję **Data niestandardowa** i wprowadź niestandardową datę.
+3. Zostanie wyświetlone okno dialogowe **Naliczanie planów urlopu i nieobecności**. W polu **Naliczanie na dzień** wybierz **Datę dzisiejszą** lub wybierz **Datę niestandardową** i wprowadź datę niestandardową.
 
 4. Jeśli chcesz uruchomić proces naliczania w tle, wybierz opcję **Uruchom w tle** i wykonaj następujące czynności:
 
@@ -53,7 +53,7 @@ W programie Dynamics 365 Human Resources urlopy i nieobecności można naliczać
 
 2. Wybierz opcję **Nalicz do planów urlopów i nieobecności**.
 
-3. W oknie dialogowym **Naliczanie do planów urlopów i nieobecności** w obszarze **Nalicz na dzień** wybierz opcję **Data dzisiejsza** lub opcję **Data niestandardowa** i wprowadź niestandardową datę.
+3. Zostanie wyświetlone okno dialogowe **Naliczanie planów urlopu i nieobecności**. W polu **Naliczanie na dzień** wybierz **Datę dzisiejszą** lub wybierz **Datę niestandardową** i wprowadź datę niestandardową.
 
 4. Jeśli chcesz uruchomić proces naliczania w tle, wybierz opcję **Uruchom w tle** i wykonaj następujące czynności:
 
@@ -65,17 +65,45 @@ W programie Dynamics 365 Human Resources urlopy i nieobecności można naliczać
 
    4. Kliknij przycisk **OK**. Proces naliczania zostanie uruchomiony z parametrami określonymi przez Ciebie.
 
-## <a name="preview-features-for-leave-and-absence"></a>Funkcje w wersji zapoznawczej dotyczące urlopów i nieobecności
+## <a name="delete-leave-and-absence-accruals-for-multiple-employees"></a>Usuwanie naliczeń urlopów i nieobecności dla wielu pracowników etatowych
 
-[!include [banner](includes/preview-feature-leave-absence.md)]
+Usuwanie rekordów naliczeń dla określonego planu i zakresu dat. Daty naliczania muszą przypadać w dniu dzisiejszym lub w przyszłości.
 
-Dla urlopów i nieobecności można włączyć następujące funkcje w wersji zapoznawczej:
+1. Na stronie **Urlopy i nieobecności** wybierz kartę **Łącza**.
 
-- **Usuń naliczenia urlopów i nieobecności**. Usuwanie rekordów naliczeń dla określonego planu i zakresu dat. Daty naliczania muszą przypadać w dniu dzisiejszym lub w przyszłości.
+2. W obszarze **Zarządzaj urlopami** wybierz opcję **Usuń naliczanie planów urlopów i nieobecności**.
 
-- **Inspekcja naliczania urlopów**. Wyświetlanie każdego zdarzenia, gdy ktoś wykona lub usunie naliczenie dla jednego lub wszystkich pracowników, łącznie z datą i osobami, które wykonały akcję.
+3. W oknie dialogowym **Usuń naliczanie planów urlopów i nieobecności** wybierz **Plan urlopów**. 
+
+4. W razie potrzeby wybierz polecenie **Usuń korekty salda**.
+
+5. Wprowadź lub wybierz **Datę naliczania urlopu**. Ta data musi być datą dzisiejszą lub w przyszłości. 
+
+6. Kliknij przycisk **OK**. Proces naliczania usunie naliczenia z parametrami określonymi przez Ciebie. 
+
+## <a name="delete-leave-and-absence-accruals-for-a-single-employee"></a>Usuwanie naliczeń urlopów i nieobecności dla jednego pracownika etatowego
+
+1. W rekordzie pracownika wybierz pozycję **Urlop**.
+
+2. Wybierz **Usuń naliczenia planów urlopów i nieobecności**.
+
+3. W oknie dialogowym **Usuń naliczanie planów urlopów i nieobecności** wybierz **Plan urlopów**. 
+
+4. W razie potrzeby wybierz polecenie **Usuń korekty salda**.
+
+5. Wprowadź lub wybierz **Datę naliczania urlopu**. Ta data musi być datą dzisiejszą lub w przyszłości. 
+
+6. Kliknij przycisk **OK**. Proces naliczania usunie naliczenia z parametrami określonymi przez Ciebie. 
+
+## <a name="review-leave-accrual-and-deletion-processes"></a>Przeglądanie procesów naliczania i usuwania urlopu
+
+**Inspekcja naliczania urlopów** wyświetla się przy każdym uruchomieniu lub usunięciu naliczenia dla jednego lub wszystkich pracowników. Zostanie wyświetlona data i osoba, która wykonała akcję.
+
+1. Na stronie **Urlopy i nieobecności** wybierz kartę **Łącza**.
+
+2. W obszarze **Zarządzaj urlopami** wybierz opcję **Usuń inspekcję naliczania planów**.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
-- [Tworzenie planu urlopów i nieobecności](hr-leave-and-absence-plans.md)
+- [Tworzenie planu urlopu i nieobecności](hr-leave-and-absence-plans.md)

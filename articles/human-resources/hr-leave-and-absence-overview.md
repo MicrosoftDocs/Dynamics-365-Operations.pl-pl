@@ -1,9 +1,9 @@
 ---
 title: Omówienie
-description: W Dynamics 365 Human Resources obszar roboczy **Urlopy i nieobecności** udostępnia elastyczną strukturę do tworzenia nowych planów urlopów, przepływy pracy do zarządzania wnioskami oraz intuicyjną stronę samoobsługi umożliwiającą pracownikom wnioskowanie o czas wolny.
+description: W Dynamics 365 Human Resources obszar roboczy Urlopy i nieobecności udostępnia elastyczną strukturę do tworzenia nowych planów urlopów, przepływy pracy do zarządzania wnioskami oraz intuicyjną stronę samoobsługi umożliwiającą pracownikom wnioskowanie o czas wolny.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 493bc3abe82103541125914896252b2eae596b38
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
+ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091755"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226237"
 ---
 # <a name="overview"></a>Omówienie
 
@@ -31,7 +31,7 @@ Program Dynamics 365 Human Resources pomaga oferować pracownikom doskonale waru
 
 ## <a name="set-up-leave-and-absence"></a>Konfigurowanie obszaru roboczego Urlopy i nieobecności
 
-Zanim będzie można tworzyć plany urlopów dla pracowników, należy wykonać kilka kroków konfiguracyjnych:
+Zanim utworzy się plany urlopów dla pracowników, należy wykonać kilka kroków konfiguracyjnych:
 
 - [Konfigurowanie parametrów urlopów i nieobecności](hr-leave-and-absence-parameters.md)
 - [Tworzenie kalendarza czasu pracy](hr-leave-and-absence-working-time-calendar.md)
@@ -51,31 +51,35 @@ Przed rozpoczęciem tworzenia planów urlopów dla pracowników należy utworzy�
 
 W obszarze roboczym **Samoobsługa pracownika etatowego** pracownicy mogą przesyłać wnioski urlopowe, a Ty możesz nimi zarządzać.
 
-- [Żądanie czasu wolnego](hr-employee-self-service-request-time-off.md)
-- [Zarządzanie wnioskami urlopowymi](hr-employee-self-service-manage-requests.md)
+- [Złóż wniosek o czas wolny](hr-employee-self-service-request-time-off.md)
+- [Zarządzanie wnioskami o urlop i nieobecność](hr-employee-self-service-manage-requests.md)
+
+## <a name="leave-and-absence-known-issues"></a>Problemy z urlopem i nieobecnością
+
+### <a name="rounding-precision"></a>Dokładność zaokrąglania
+
+Nie można ustawić **Dokładność zaokrąglania** podczas ustawiania **Typ zaokrąglania**. **Dokładność zaokrąglania** można ustawiać tylko przy użyciu jednostki **Typy urlopów i nieobecności**. 
+
+1. Z **Typy urlopów i nieobecności** wybierz **Otwórz w programie Excel**, aby otworzyć jednostkę **Typy urlopów i nieobecności**.
+
+2. Po otwarciu i włączeniu pliku wybierz opcję **Projekt**.
+
+3. W tabeli **Typy urlopów i nieobecności** wybierz opcję ołówek, aby edytować.
+
+4. Wybierz **RoundingPrecision** i **RoundingType**, a następnie wybierz **Dodaj**, aby dodać do listy pól.
+
+5. Zaznacz element **Aktualizuj** i kliknij przycisk **Gotowe**.
+
+6. Wprowadź lub wybierz **Typ zaokrąglania** dla każdego typu urlopu, jeśli nie zostały one jeszcze ustawione. 
+
+7. Umożliwia wprowadzenie **Dokładności zaokrąglenia** dla odpowiednich typów.
+
+8. Wybierz opcję **Publikuj**, aby wprowadzić zmiany również do Human Resources.
 
 ## <a name="leave-and-absence-preview-features"></a>Funkcje w wersji zapoznawczej dotyczące urlopów i nieobecności
 
 W środowisku typu **Piaskownica** można testować nowe funkcje urlopów i nieobecności udostępnione w wersji zapoznawczej. Aby uzyskać informacje na temat włączania funkcji w wersji zapoznawczej, zobacz [Zarządzanie funkcjami](hr-admin-manage-features.md). Funkcje w wersji zapoznawczej obejmują:
 
-- **Kalendarz urlopów i nieobecności** — urlop i parametry nieobecności będą przenoszone z parametrów modułu **Human Resources** do nowego ekranu o nazwie **Urlop i nieobecność**. Nowy ekran zawiera nową kartę **Kalendarz**. Ten podgląd umożliwia tylko wgląd w podzestaw parametrów. Nowy ekran można uzyskać, korzystając z karty **Łącza** w obszarze roboczym **urlop i nieobecność**. Do kalendarzy należy:
-  - **Kalendarz firmy** — umożliwia wyświetlenie wszystkich żądań wyłączenia czasu pracy pracownika. Osoby z rolą **Human Resources** mogą uzyskać dostęp do tego kalendarza z karty **Łącza** w obszarze roboczym **Urlop i nieobecność**.
-  - **Kalendarz zespołu Menedżera** — umożliwia wyświetlenie wszystkich żądań czasu wolnego. Menedżerowie mogą uzyskać dostęp do kalendarza z karty **Mój zespół** w module Samoobsługa pracownika w ramach funkcji **urlop i nieobecność**. 
+- **Zawieszenie urlopu** — istnieje możliwość zawieszenia urlopu i nieobecności w Human Resources dla pracownika etatowego. Zawieszenie urlopu powoduje zatrzymanie naliczania dla wybranych typów urlopów. Jeśli zawieszenie następuje po procesach naliczania, wstrzymanie urlopu powoduje utworzenie skorygowanej korekty salda urlopu pracownika. 
 
-- **Urlopy i kalendarze - świąteczne nieobecności** — typy urlopów zawierają nową opcję **Urlop świąteczny**, używaną w połączeniu z kalendarzem czasu pracy. Dni określone przez dni wolne i zamknięcia są obecnie wyznaczone jako **Święta** w przypadku generowania dni roboczych. Podczas przetwarzania naliczeń są wprowadzane poprawki - pracownicy przypisani są do kalendarza w celu uwzględnienia świąt przypadających w dniu pracy.
-
-- **Dane dot. urlopu** — nowy ekran umożliwia przeglądanie, kiedy naliczenia zostały przetworzone i usunięte, zarówno przez pracowników, jak i poszczególnych pracowników. Ten nowy ekran można uzyskać, korzystając z karty **Łącza** w obszarze roboczym **Urlop i nieobecność**.
-
-- **Usunięcie danych dot. urlopu** — teraz możesz usunąć rekordy naliczania dla konkretnych planów urlopów. Tę nową opcję można uzyskać, korzystając z karty **Łącza** w obszarze roboczym **Urlop i nieobecność**. W przypadku poszczególnych pracowników ta opcja jest wyświetlana w grupie **Urlop i nieobecność** w profilu pracownika. 
-
-- **Zaokrąglanie danych dot urlopu** — nowe opcje dla **Typu urlopu** umożliwiają zdefiniowanie zaokrąglania, powiększonej o precyzję dziesiętną zaokrąglenia w procesie naliczania. Podczas przetwarzania naliczeń w rekordach naliczania są stosowane zaokrąglenie i precyzja. 
-
-- **Konfigurowanie wielu typów urlopu dla jednego planu** — nowa kolumna w harmonogramie wystawiania urlopów dla typów urlopów umożliwia zdefiniowanie wielu typów urlopów w przypadku urlopu i nieobecności z różnymi harmonogramami naliczania. Pole poprzedniego **Typu urlopu** jest usunięte. Przy zarejestrowaniu pracownika, salda dla typów urlopu są teraz wyświetlane w tabeli, a nie w górnej części ekranu.
-
-  > [!IMPORTANT]
-  > Po włączeniu tej funkcji nie można jej wyłączyć.
-
-- **Użycie ekwiwalentu pełnego etatu pracownika etatowego (FTE) w celu naliczenia** — nowa kolumna w harmonogramie naliczania urlopu umożliwia używanie pełnego ekwiwalentu FTE do naliczania. Podczas przetwarzania naliczeń aplikacja używa podstawowego stanowiska pracownika oraz pełnego etatu zdefiniowanego w celu określenia proporcjonalnej kwoty naliczania.
-
-  > [!NOTE]
-  > Ta funkcja jest dostępna tylko po włączeniu opcji **Skonfiguruj wiele typów urlopu dla jednego planu urlopu**. 
+- **Przenieś reguły do przodu** — można określić typ urlopu przeniesienia do przodu dla sald przeniesionych na następny okres, gdzie są przenoszone korekty do przodu. Jeśli na przykład pracownik przeniósł 10 dni do przodu, można wybrać inny typ urlopu dla tych 10 dni. 

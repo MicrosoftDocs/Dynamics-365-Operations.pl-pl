@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje w poprzednich wersjach
 description: W tym temacie opisano funkcje, które zostały usunięte lub które zostały zaplanowane do usunięcia z systemu Dynamics 365 for Finance and Operations i poprzednich wydań tego produktu.
 author: sericks007
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124573"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225135"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
@@ -263,11 +263,11 @@ Wbudowanie kluczowych wskaźników wydajności (KPI) może być modelowane w Vis
 
 |   |  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Definicje metadanych tabeli mogą mieć grupy pól zawierające nieprawidłowe odniesienia do pól. Ten problem jest obecnie zaliczony do kategorii *ostrzeżenia kompilatora*, a nie *błąd*, co oznacza, że można tworzyć pakiety możliwe do wdrożenia i wdrażać je bez naprawiania problemu. W razie wdrożenia może to spowodować błędy raportowania finansowego i usług SQL Server Reporting Services (SSRS). Aby rozwiązać ten problem:<br><br>1. Usuń nieprawidłowe odwołanie pola z definicji grupy pól tabel.<br><br>2. Kompiluj ponownie.<br><br>3. Upewnij się, ostrzeżenia lub błędy zostały naprawione. |
-| **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w przyszłości.  |
+| **Przyczyna wycofania/usunięcia** | Definicje metadanych tabeli mogą mieć grupy pól zawierające nieprawidłowe odniesienia do pól. W razie wdrożenia może to spowodować błędy raportowania finansowego i usług SQL Server Reporting Services (SSRS). Ten problem jest obecnie zaliczony do kategorii *ostrzeżenia kompilatora*, a nie *błąd*, co oznacza, że można tworzyć pakiety możliwe do wdrożenia i wdrażać je bez naprawiania problemu. Aby rozwiązać ten problem:<br><br>1. Usuń nieprawidłowe odwołanie pola z definicji grupy pól tabel.<br><br>2. Kompiluj ponownie.<br><br>3. Upewnij się, ostrzeżenia lub błędy zostały naprawione. |
+| **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w przyszłości. |
 | **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
-| **Opcja wdrażania**              | Wszystko. |
-| **Stan**                         | Przestarzałe — ostrzeżenie będzie w przyszłości błędem czasu kompilacji. W tej chwili planujemy aktualizację platformy 30. |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Przestarzałe — ostrzeżenie będzie w przyszłości błędem czasu kompilacji. Ta zmiana została skierowana do aktualizacji platformy dla wersji 10.0.11 aplikacji Finance and Operations. |
 
 #### <a name="complete-list"></a>Pełna lista
 Aby wyświetlić listę wszystkich interfejsów API, które zostaną wycofane, zobacz [Wycofanie metod i elementów metadanych](deprecation-deletion-apis.md).

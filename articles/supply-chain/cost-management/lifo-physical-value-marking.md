@@ -2,7 +2,7 @@
 title: LIFO z wartością fizyczną i oznaczeniami
 description: Ostatni na wejściu — pierwszy na wyjściu (Last in, first out; LIFO) to model magazynu, w którym ostatnie (najnowsze) przyjęcia na magazyn są wydawane jako pierwsze. Rozchody zapasów są rozliczane w kolejności odwrotnej do odbierania towarów w magazynie, na podstawie daty transakcji magazynowej.
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 55021
 ms.assetid: 49c492b0-b018-44e0-928f-9671e54eee20
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 792ff4d7b72ce092fe1ad92e53172cf40f0ecf26
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: e774b032bdcb3047f4788c97cd94e6336f20109a
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569278"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201670"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO z wartością fizyczną i oznaczeniami
 

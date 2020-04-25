@@ -2,7 +2,7 @@
 title: Zarządzanie szablonami BOM w relacjach przedmiotów
 description: Można zarządzać szablonami BOM w relacjach przedmiotów.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/03/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f74e37039bde9e73b8ebea3eeb3ed4983b72704
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d597a698d0a2c953761c5985fdb6c3f2f1e1c383
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557460"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3202291"
 ---
 # <a name="manage-template-boms-on-object-relations"></a>Zarządzanie szablonami BOM w relacjach przedmiotów 
 

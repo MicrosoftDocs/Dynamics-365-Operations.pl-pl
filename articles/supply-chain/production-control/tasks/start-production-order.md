@@ -2,26 +2,26 @@
 title: Rozpoczynanie zlecenia produkcyjnego
 description: Ta procedura pokazuje sposób rozpoczynania zlecenia produkcyjnego na wydziale produkcji.
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e770c905079461c1f4f0117f61f6c10b86ddaf6
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: e444f6c521c47964b9b9b864b62fb486102c2fc7
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3146613"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3210394"
 ---
 # <a name="start-a-production-order"></a>Rozpoczynanie zlecenia produkcyjnego
 

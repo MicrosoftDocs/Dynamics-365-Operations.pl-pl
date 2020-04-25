@@ -2,14 +2,14 @@
 title: Zasoby pomocy dotyczące funkcji zarządzania łańcuchem dostaw
 description: Ta strona zawiera listę tematów pomocy oraz innych zasobów dotyczących funkcji zarządzania łańcuchem dostaw.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 11/26/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b5f82d76f2e285b6318d900d41919aae14ec71a
-ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
+ms.openlocfilehash: 014b5db6efc15fbed7401d9a857586912c7578f2
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "2853995"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201532"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Zasoby pomocy dotyczące funkcji zarządzania łańcuchem dostaw
 
@@ -57,17 +57,17 @@ Aby uzyskać więcej informacji na temat rozwiązania Dynamics 365 Finance, prze
 
 ## <a name="videos"></a>Filmy
 
-Te krótkie filmy pomagają poznać nowe funkcje dostępne w Microsoft Dynamics 365 for Finance and Operations, wersja 8.0 (z kwietnia 2018 r.).
+Te krótkie filmy pomagają poznać nowe funkcje dostępne w Microsoft Dynamics 365 for Finance and Operations w wersji 8.0 (z kwietnia 2018 r.).
 
 - [Synchronizowanie zlecenia między rozwiązaniami Field Service i Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Te krótkie filmy pomagają poznać nowe funkcje dostępne w Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (z grudnia 2017 r.)
+Te krótkie filmy pomagają poznać nowe funkcje dostępne w Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (z grudnia 2017 r.).
 
 -  [Integracja scenariusza Od potencjalnego klienta do środków pieniężnych](https://youtu.be/AVV9x5x-XCg) 
 -  [Doradca optymalizacji](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 -  [Używanie szablonu magazynu w celu kopiowania konfiguracji](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Te krótkie filmy pomagają poznać nowe funkcje dostępne w Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (z lipca 2017 r.)
+Te krótkie filmy pomagają poznać nowe funkcje dostępne w Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (z lipca 2017 r.).
 
 -  [Rozpoczęcie korzystania z modułu Rachunek kosztów](https://youtu.be/1pUDtJQZ8FU)
 -  [Obszar roboczy kontroli kosztów na urządzeniach przenośnych](https://youtu.be/imsuTg8rUVk)

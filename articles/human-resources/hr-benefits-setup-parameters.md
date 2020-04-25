@@ -3,7 +3,7 @@ title: Ustawianie parametrów obszaru roboczego Zarządzanie świadczeniami
 description: Tu opisano konfigurowanie parametrów obszaru roboczego Zarządzanie świadczeniami dostępnego w programie Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab9b1fc78ce42479d9265b80337adf899cec3866
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9d6d463df08b9ae68047f09316f19e98740a8441
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010211"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229770"
 ---
-# <a name="set-benefits-management-parameters"></a>Ustawianie parametrów obszaru roboczego Zarządzanie świadczeniami
-
-[!include [banner](includes/preview-feature.md)]
+# <a name="set-benefits-management-parameters"></a>Ustawianie parametrów zarządzania świadczeniami
 
 Zanim będzie można konfigurować plany urlopów w module Microsoft Dynamics 365 Human Resources, należy skonfigurować parametry obszaru roboczego Zarządzanie świadczeniami. Te parametry służą do ustawiania wartości domyślnych, kodów przyczyny i innych opcji.
 
@@ -47,7 +45,6 @@ Zanim będzie można konfigurować plany urlopów w module Microsoft Dynamics 36
    | **Kod przyczyny zmiany stawki** | Kod przyczyny, który ma być używany podczas anulowania i ponownego otwierania planu świadczeń pracowniczych w trakcie procesu aktualizacji zmiany stawki. Wskazuje, które rekordy zostały zmienione przez proces aktualizacji zmiany stawki. |
    | **Nowo zatrudniona osoba kwalifikuje się** | Określa, czy nowo zatrudnione osoby kwalifikują się do planu. |
    | **Okres rejestracji nowo zatrudnionej osoby** | Okres, w którym jest dozwolone rejestrowanie nowo zatrudnionej osoby.</br></br>**Uwaga**: to ustawienie zastępuje każdy okres rejestracji nowo zatrudnionej osoby ustawiony w regule uprawnienia do planu. | 
-   | **Rozszerzenie rocznego wynagrodzenia** | Określa, czy ma być automatycznie obliczana kwota w polu **Roczne wynagrodzenie z tytułu świadczenia** w oknie **Szczegóły świadczeń pracowniczych**. Bazuje ona na ustawieniach **Stawka płacy stałego wynagrodzenia**, **Średnia liczba godzin** i **Częstotliwość płatności** dotyczących pracownika.</br></br>**Średnia liczba godzin** x **Stała stawka płacy** x **Częstotliwość płatności** (liczba okresów płacowych) = **Roczne wynagrodzenie z tytułu świadczenia** </br></br>Jeśli którakolwiek z wartości w polach **Średnia liczba godzin**, **Stawka płacy stałego wynagrodzenia** lub **Częstotliwość płatności** ulegnie zmianie, system automatycznie przeliczy kwotę **Roczne wynagrodzenie z tytułu świadczenia** na podstawie zmienionych wartości. System utworzy rekord **Data wejścia w życie** w celu zidentyfikowania dokładnej daty i godziny wystąpienia zmiany. W razie potrzeby można ręcznie edytować ilość w polu **Roczne wynagrodzenie z tytułu świadczenia**. |
    | **Zdarzenia zmiany sytuacji życiowej zostały włączone** | Włącza obsługę zmian sytuacji życiowej. |
    | **Ukryj starsze formularze świadczeń** | Umożliwia ukrycie starszych formularzy świadczeń. |
 

@@ -3,7 +3,7 @@ title: Konfigurowanie typów urlopów i nieobecności
 description: Tu opisano konfigurowanie typów urlopów, jakie mogą brać pracownicy w module Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1748ec2a888a50af9b9260720dfd439adc4686f9
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: df6e34fe6a23e6f0a8307a035752a35a15a3431c
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010242"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198057"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurowanie typów urlopów i nieobecności
 
@@ -58,20 +58,24 @@ Typy urlopów w module Dynamics 365 Human Resources określają różne rodzaje 
 
 9. Wybierz opcję **Zapisz**.
 
-## <a name="configure-preview-features"></a>Konfigurowanie funkcji w wersji zapoznawczej
-
-Jeśli włączono obsługę funkcji w wersji zapoznawczej dla urlopów i nieobecności, należy skonfigurować również ich ustawienia.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
+## <a name="configure-leave-type-rules"></a>Konfiguruj reguły typu urlopu
 
 1. Ustaw opcje zaokrąglania dla typu urlopu. Dostępne opcje to **Brak**, **W górę**, **W dół** i **Do najbliższej**. Można również określić dokładność zaokrąglania dla typu urlopu.
 
 2. Ustaw dla typu urlopu wartość w polu **Korekta świąt**. Po wybraniu tej opcji moduł Human Resources będzie wykorzystywał liczbę dni świątecznych przypadających w dniach roboczych do określenia sposobu naliczania czasu wolnego dla typu urlopu. Jeśli na przykład Boże Narodzenie przypada w poniedziałek, moduł Human Resources odejmie jeden dzień od typu urlopu podczas przetwarzania naliczeń.
 
    Święta ustawia się w kalendarzu czasu pracy. Aby uzyskać więcej informacji, zobacz [Tworzenie kalendarza czasu pracy](hr-leave-and-absence-working-time-calendar.md)
+   
+## <a name="configure-preview-features"></a>Konfigurowanie funkcji w wersji zapoznawczej
+
+Jeśli włączono obsługę funkcji w wersji zapoznawczej dla urlopów i nieobecności, należy skonfigurować również ich ustawienia.
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+1. Wybierz typ urlopu dla sald przeniesionych na następny okres do przeniesienia. Można również utworzyć nowy typ urlopu dla przeniesienia do na następny okres. 
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
-- [Tworzenie planu urlopów i nieobecności](hr-leave-and-absence-plans.md)
+- [Tworzenie planu urlopu i nieobecności](hr-leave-and-absence-plans.md)
 - [Tworzenie kalendarza czasu pracy](hr-leave-and-absence-working-time-calendar.md)

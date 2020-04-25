@@ -3,7 +3,7 @@ title: Konfigurowanie właściwości przepływu pracy
 description: W tym temacie wyjaśniono sposób konfigurowania różnych właściwości przepływu pracy.
 author: sericks007
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76d44c472989a73d71c2edd19f1187ecd09827ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
+ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190127"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3199443"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurowanie właściwości przepływu pracy
 
@@ -75,9 +75,11 @@ Istnieje możliwość udostępniania instrukcji użytkownikom, którzy będą pr
     5. Aby spersonalizować tekst, możesz wstawić symbole zastępcze. Aby uzyskać instrukcje dotyczące sposobu wprowadzania symbolu zastępczego, zobacz krok 3.
     6. Kliknij przycisk **Zamknij**.
 
-## <a name="specify-when-this-workflow-is-used"></a>Określanie, kiedy jest używany ten przepływ pracy
+## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Określ, kiedy ten przepływ pracy jest używany w warunkach aktywacji
 
-Można utworzyć wiele przepływów pracy opartych na tym samym typie. Na przykład można utworzyć przepływ pracy zapotrzebowania na zakup dla każdego kraju lub regionu, w którym działa firma, na przykład Zapotrzebowania na zakup — Dania lub Zapotrzebowania na zakup — Hiszpania. Jeśli istnieje wiele przepływów pracy opartych na tym samym typie, trzeba określić warunki używania poszczególnych przepływów pracy. Dla poprzedniego przykładu należałoby określić następujące warunki:
+Można utworzyć wiele przepływów pracy opartych na tym samym typie przepływu pracy. Jeśli istnieje wiele przepływów pracy opartych na tym samym typie, trzeba określić warunki używania poszczególnych przepływów pracy w warunkach aktywacji. Jeśli warunki aktywacji nie są spełnione, zostanie użyty domyślny przepływ pracy. Podobnie, jeśli dla danego typu przepływu pracy zdefiniowano tylko jedną konfigurację przepływu pracy, konfiguracja przepływu pracy będzie używana niezależnie od warunków aktywacji.
+
+Na przykład można utworzyć przepływ pracy zapotrzebowania na zakup dla każdego kraju lub regionu, w którym działa firma, na przykład Zapotrzebowania na zakup — Dania lub Zapotrzebowania na zakup — Hiszpania, z następującymi warunkami:
 
 - Zapotrzebowania na zakup — Dania jest używany, gdy krajem/regionem jest DK.
 - Zapotrzebowania na zakup — Hiszpania jest używany, gdy krajem/regionem jest ES.

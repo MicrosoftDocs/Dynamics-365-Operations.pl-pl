@@ -1,9 +1,9 @@
 ---
 title: Tworzenie opcji zapotrzebowania
-description: Opcje zapotrzebowań w Microsoft Dynamics 365 Human Resources to poziomy zapotrzebowań na wybory uczestnika w planie lub programie świadczeń, takie jak tylko pracownik etatowy dla planu medycznego, lub podwójna wartość wynagrodzenia dla planu ubezpieczenia na życie.
+description: Opcje zapotrzebowań w Microsoft Dynamics 365 Human Resources to poziomy zapotrzebowań na wybory uczestnika w planie lub programie świadczeń.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0af2b6ae0853b4c7f64c4d4f04299c87089d622b
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 021fea7604af2fff833ddc6868d55a316ef70aae
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092713"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230184"
 ---
 # <a name="create-coverage-options"></a>Tworzenie opcji zapotrzebowania
 
-[!include [banner](includes/preview-feature.md)]
-
-Opcje zapotrzebowań w Microsoft Dynamics 365 Human Resources to poziomy zapotrzebowań na wybory uczestnika w planie lub programie świadczeń, takie jak tylko pracownik etatowy dla planu medycznego, lub podwójna wartość wynagrodzenia dla planu ubezpieczenia na życie. Po zdefiniowaniu opcji świadczeń z tytułu świadczenia można używać ponownie, a także kojarzyć opcję z jednym lub kilkoma planami.
+Opcje zapotrzebowań w Microsoft Dynamics 365 Human Resources to poziomy zapotrzebowań na wybory uczestnika w planie lub programie świadczeń. Na przykład opcje pokrycia mogą obejmować **Tylko pracownik** dla planu medycznego lub **Wynagrodzenie x2** dla planu ubezpieczenia na życie. Po zdefiniowaniu można ponownie użyć opcji świadczeń. Istnieje możliwość skojarzenia opcji z jednym lub kilkoma planami.
 
 Po zdefiniowaniu opcji zapotrzebowania należy dołączyć opcje zapotrzebowania do typu planu świadczeń. Typ planu jest następnie kojarzony z planem lub programem świadczeń. Opcje zapotrzebowania skojarzone z typem planu będą dostępne dla wszystkich planów utworzonych przy użyciu tego typu planu. 
 

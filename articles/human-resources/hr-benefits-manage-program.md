@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c7ad8c6ee3450d57656f8c167ea8aa7554ac575a
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: b976bccf7f5da4483ec8a015f464db764b82a2f1
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010267"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197896"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Definiowanie programu świadczeń i zarządzanie nim
 
-W module Zasoby ludzkie dostępny jest pakiet narzędzi służących do konfigurowania i obsługi świadczeń, potrąceń i planów wynagrodzeń pracowników, które organizacja oferuje swoim pracownikom lub przetwarza w ich imieniu. Ten artykuł zawiera informacje o sposobie konfigurowania świadczeń i zarządzania nimi.
+W module Human Resources dostępny jest pakiet narzędzi służących do konfigurowania i obsługi świadczeń, potrąceń i planów wynagrodzeń pracowników, które organizacja oferuje swoim pracownikom lub przetwarza w ich imieniu. Ten artykuł zawiera informacje o sposobie konfigurowania świadczeń i zarządzania nimi.
 
 ## <a name="benefit-setup"></a>Konfiguracja świadczeń
 

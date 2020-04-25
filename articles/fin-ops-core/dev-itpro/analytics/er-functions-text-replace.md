@@ -3,7 +3,7 @@ title: Funkcja ER REPLACE
 description: Ten temat zawiera ogólne informacje o używaniu funkcji REPLACE w module Raportowanie elektroniczne (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/10/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba2590635ba465dae9ea50d3e4da989365548f3b
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 83d5095620a938f1ac4b8428fff9209fda7a7831
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040993"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201073"
 ---
-# <a name="REPLACE">Funkcja ER REPLACE</a>
+# <a name=""></a><a name="REPLACE">Funkcja ER REPLACE</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,7 +69,7 @@ Wynikowa wartość tekstowa.
 
 Jeśli argument `regular expression flag` ma wartość **TRUE**, ta funkcja zwraca określony ciąg po zmianie przez zastosowanie wyrażenia regularnego, które zostało określone przez argument `pattern`. Wyrażenie regularne służy do znajdowania znaków, które należy zastąpić.
 
-Jeśli argument `regular expression flag` ma wartość **FALSE**, funkcja ta zachowuje się jak funkcja [TRANSLATE](er-functions-text-translate.md). Znaki podane w argumencie `replacement` zastępują znalezione znaki. 
+Jeśli argument `regular expression flag` ma wartość **FAŁSZ**, ta funkcja zwraca określony ciąg po zestawie znaków zdefiniowanych w argumencie `pattern` , który został zastąpiony znakami argumentu `replacement`. 
 
 ## <a name="example-1"></a>Przykład 1
 

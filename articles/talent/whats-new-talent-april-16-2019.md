@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a37436eb15ee4c561d5d0c15c90e37815cb80860
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: aa61a70e14b7997258376beaf389129a4ad2fa73
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897932"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197274"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (16 kwietnia 2019)
 
@@ -46,10 +46,6 @@ Zmiany opisane w tej części dotyczą kompilacji 8.1.2239. Liczby w nawiasach o
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Region wynagrodzeń, poziom wynagrodzeń, opcja świadczeń i jednostki typu kwalifikacji w Common Data Service zostały zaktualizowane w celu uwzględnienia obsługi pola odbiorcy
 
 W tym wydaniu te jednostki Common Data Service zostały zaktualizowane w celu dodania możliwości uwzględnienia niestandardowego pola dodanego za pośrednictwem aplikacji Talent: Core HR.
-
-### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Obsługa nowej jednostki Common Data Service dla: reguły wypłat wynagrodzenia, planu wynagrodzeń o zmiennej wysokości, wynagrodzeń o zmiennej wysokości
-
-W tym wydaniu w Common Data Service zostały dodane reguły wypłat wynagrodzenia, plan wynagrodzeń o zmiennej wysokości oraz wynagrodzenie o zmiennej wysokości. Te jednostki obsługują również niestandardowe pola dodane za pośrednictwem aplikacji Talent: Core HR.
 
 ### <a name="powerbi-refresh-issues-314342"></a>Problemy z odświeżaniem usługi PowerBI (314342)
 
@@ -93,6 +89,6 @@ Ta zmiana powoduje, że zduplikowane pozycje są wykrywane po wypełnieniu pól 
 
 ### <a name="email-support-for-alerts"></a>Pomoc techniczna e-mail dla alertów
 
-Aktualizacja Platform update 25 dla rozwiązania Finance and Operations pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia e-mail do kontaktów w wyniku wyzwolenia przez zdarzenie.
+Aktualizacja platformy 25 dla Finance and Operations pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia do kontaktów w wyniku wyzwolenia przez zdarzenie.
 
 
