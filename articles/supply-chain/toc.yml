@@ -70,12 +70,12 @@
                   items:
                     - name: Nowości lub zmiany w aplikacji Supply Chain Management — strona główna
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management w wersji 10.0.10 (maj 2020)
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.11 (lipiec 2020)
+                      href: get-started/whats-new-scm-10-0-11.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.10 (maj 2020)
                       href: get-started/whats-new-scm-10-0-10.md
-                    - name: Supply Chain Management w wersji 10.0.9 (kwiecień 2020)
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.9 (kwiecień 2020)
                       href: get-started/whats-new-scm-10-0-9.md
-                    - name: Supply Chain Management w wersji 10.0.8 (luty 2020)
-                      href: get-started/whats-new-scm-10-0-8.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
@@ -349,6 +349,8 @@
               items:
                 - name: 'Prognozy, zlecenia pracy i projekty'
                   href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+            - name: Integrowanie zarządzania składnikami majątku ze środkami trwałymi
+              href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
             - name: Konserwacja zapobiegawcza i reakcyjna
               items:
                 - name: Omówienie konserwacji zapobiegawczej
@@ -565,6 +567,8 @@
                   href: cost-management/lifo-physical-value-marking.md
                 - name: Średnia ruchoma
                   href: cost-management/moving-average.md
+                - name: Sekwencja kosztu rezerwowego średniej ruchomej
+                  href: cost-management/moving-average-fallback.md
                 - name: Aktualizacje fizyczne i finansowe
                   href: cost-management/physical-financial-updates.md
                 - name: Dynamiczny średni koszt własny
@@ -579,7 +583,9 @@
                   href: cost-management/inventory-close.md
                 - name: Korygowanie wartości kosztów dostępnych zapasów
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Raport wiekowania zapasów
+                - name: Raport magazynu wartości zapasów
+                  href: cost-management/inventory-value-report-storage.md
+                - name: Magazyn raportów wiekowania zapasów
                   href: cost-management/inventory-aging-report-storage.md
             - name: Księgowanie produkcji
               items:
@@ -697,7 +703,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Dodawanie wymiarów finansowych do miar agregacji
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Tworzenie raportów analitycznych przy użyciu Power BI Desktop
+                - name: Tworzenie raportów analitycznych przy użyciu PowerBI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1223,6 +1229,8 @@
                   href: inventory/enable-quality-management.md
                 - name: Procesy zarządzania jakością
                   href: inventory/quality-management-processes.md
+                - name: Zarządzanie jakością dla procesów magazynowych
+                  href: inventory/quality-management-for-warehouses-processes.md
                 - name: Zarządzanie brakiem zgodności
                   href: inventory/enable-nonconformance-management.md
                 - name: Konfigurowanie wymagań wstępnych zarządzania
@@ -2549,6 +2557,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                 - name: Grupowanie systemowe na liście otwartych prac
                   href: warehousing/system-group-on-open-work-list.md
+                - name: Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
+                  href: warehousing/document-routing-layout-for-license-plates.md
                 - name: Skanowanie kodów kreskowych przy użyciu kamery w rozwiązaniu Dynamics 365 for Finance and Operations
                   href: warehousing/scan-bar-codes-using-a-camera.md
                 - name: Mobilna obsługa kodów kreskowych
@@ -2653,6 +2663,8 @@
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Konfigurowanie urządzeń przenośnych do pracy magazynowej
                   href: warehousing/configure-mobile-devices-warehouse.md
+                - name: Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Warehouse Mobile App
+                  href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy w ramach zamówienia zakupu
                   href: warehousing/tasks/set-up-mobile-device-menu.md
                 - name: Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania towarów przyjętych
@@ -2673,7 +2685,9 @@
                   href: warehousing/upgrade-migration-warehouse-management-processes.md
             - name: Przyjęcia w celu rejestracji i odłożenia
               items:
-                - name: Rejestrowanie pozycji dla zaawansowanego magazynowania za pomocą arkusza przyjęć towarów
+                - name: Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
+                  href: warehousing/inbound-load-handling.md
+                - name: Rejestrowanie pozycji dla włączonej pozycji zaawansowanego magazynowania za pomocą arkusza przyjęć towarów
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Rejestrowanie elementów dla podstawowego magazynowania za pomocą arkusza przyjęć towarów
                   href: warehousing/tasks/register-items-basic-warehousing.md
@@ -2682,6 +2696,7 @@
                 - name: Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Konfigurowanie szablonu pracy dla zamówień zakupu
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
         - name: Rozwój modułu Supply Chain Management
           items:
             - name: Podręcznik programowania kontrolki wykresu Gantta
