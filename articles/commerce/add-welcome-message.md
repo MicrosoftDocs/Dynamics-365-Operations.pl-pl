@@ -3,7 +3,7 @@ title: Dodawanie wiadomości powitalnej
 description: W tym temacie opisano sposób dodawania wiadomości powitalnej do witryny sieci Web Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ca10b01268b5dcd4c6fe448d90cd0ebd65a2673b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d2a125b4e71016ad620f128af2e3c9f29aa04f4c
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001261"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269623"
 ---
 # <a name="add-a-welcome-message"></a>Dodawanie wiadomości powitalnej
 
@@ -41,17 +41,14 @@ Gdy wiadomość powitalna zostanie dodana do udostępnionego fragmentu nagłówk
 
 Aby dodać wiadomość powitalną do witryny, wykonaj następujące kroki.
 
-1. W Dynamics 365 Commerce przejdź do swojej witryny.
+1. Przejdź do swojej witryny w module konstruktora witryn Commerce.
 1. Wybierz **Fragmenty**.
 1. Wybierz fragment nagłówka, do którego ma zostać dodana wiadomość.
 1. W drzewie konspektu rozwiń **komunikaty o błędach/informacjach**.
-1. Wybierz moduł alertów.
-
-    Jeśli moduł alertów jeszcze nie istnieje, wybierz przycisk wielokropka (**...**) obok **komunikaty o błędach/informacjach**, a następnie wybierz opcję **Dodaj moduł**. Wybierz moduł alertów, a następnie kliknij przycisk **OK**.
-
+1. Wybierz moduł alertów, a następnie kliknij przycisk **OK**. Jeśli moduł alertów jeszcze nie istnieje, najpierw wybierz przycisk wielokropka (**...**) obok **komunikaty o błędach/informacjach**, a następnie wybierz opcję **Dodaj moduł**.
 1. W okienku właściwości po prawej stronie na karcie **Dane** wybierz pozycję **Dodaj źródło danych**, a następnie wybierz pozycję **Zawartość**.
 1. W polu **wpisany tekst** wprowadź tekst komunikatu powitalnego.
-1. Zapisz fragment nagłówka, zaewidencjonuj go i opublikuj.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować fragment nagłówka, a następnie wybierz opcję **Publikuj**, aby ją opublikować. 
 
 Komunikat powitalny będzie teraz wyświetlany u góry każdej strony witryny, która używa wybranego fragmentu nagłówka.
 

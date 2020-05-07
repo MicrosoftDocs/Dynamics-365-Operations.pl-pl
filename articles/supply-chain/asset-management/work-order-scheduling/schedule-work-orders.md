@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a09b90c19d8d4fe5d08abc892ed0c42d9d4592d8
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a594bacb1fcf53ae4a278dbb26f1de174e22288c
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211728"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275609"
 ---
 # <a name="schedule-work-orders"></a>Zaplanuj zlecenia pracy
 
@@ -102,14 +102,14 @@ Jeśli wynik poziomu usług jest zwiększany do wartości „100” zamiast „5
 
 Wyniki oceny dotyczące obliczania, które pracownicy obsługi powinni pracować w zleceniach pracy, są ustawiane jako numery, które są dodawane do każdego obliczenia pracownika obsługi podczas planowania zlecenia pracy. Pracownik obsługi z najwyższym wynikiem jest wybrany w zleceniu pracy. Poniżej znajduje się krótki opis wyników pracownika konserwacji:
 
-| Wynik konserwatora       | Opis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Odpowiedzialny pracownik | Jeśli pracownik konserwacji został wybrany jako pracownik odpowiedzialny za zlecenie pracy, zostanie dodana Punktacja.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Odpowiedzialna grupa konserwatorów | Jeśli pracownik konserwacji jest częścią grupy konerwatorów odpowiedzialnych za zlecenie pracy, zostanie dodana Punktacja.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Preferowany konserwator         | Jeśli pracownik konserwacji został wybrany jako pracownik preferowany za składnik majątku, zostanie dodana Punktacja.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Grupa preferowanych konserwatorów   | Jeśli pracownik konserwacji został wybrany jako część grupy konserwatorów preferowanych za składnik majątku, zostanie dodana Punktacja.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Lokalizacja                 | Jeśli firma korzysta z lokalizacji czynności konserwacyjnych, konserwatorzy otrzymują pełną punktację, jeśli znajdują się w lokalizacji czynności konserwacyjnych związanej z składnikiem majątku. Jeśli funkcjonalna czynności konserwacyjnych składnika majątku ma nadrzędną lokalizację, pracownicy w tej lokalizacji czynności konserwacyjnych otrzymują 1/2 wyniku. Jeśli ta lokalizacja ma również element nadrzędny, konserwatorzy w tej lokalizacji otrzymują 1/3 wyniku itd. Jeśli ta lokalizacja ma również element nadrzędny, konserwatorzy w tej lokalizacji otrzymują 1/4 wyniku itd. Jeśli Twoja firma korzysta z lokalizacji składnika majątku, której nie zalecamy, lokalizacja, obszar i strefa są używane do obliczania wyników lokalizacji. Pracownicy otrzymują pełny wynik, jeśli znajdują się w lokalizacji i obszarze oraz strefie związanych ze składnikiem majątku. Jeśli lokalizacja pracownika jest zgodna tylko z lokalizacją i obszarem, wynik oceny dla konserwatora wynosi 2/3 pełnego wyniku. Jeśli lokalizacja konserwatora jest zgodna tylko z lokalizacją i obszarem, wynik oceny dla konserwatora wynosi 1/3 pełnego wyniku. |
-| Data rozpoczęcia pracownika               | Dla każdego dnia, w którym planowana data rozpoczęcia jest późniejsza niż oczekiwana data rozpoczęcia, wynik jest odejmowany.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Wynik konserwatora| Opis |
+|---|---|
+| Odpowiedzialny pracownik | Jeśli pracownik konserwacji został wybrany jako pracownik odpowiedzialny za zlecenie pracy, zostanie dodana Punktacja. |
+| Odpowiedzialna grupa konserwatorów | Jeśli pracownik konserwacji jest częścią grupy konerwatorów odpowiedzialnych za zlecenie pracy, zostanie dodana Punktacja. |
+| Preferowany konserwator         | Jeśli pracownik konserwacji został wybrany jako pracownik preferowany za składnik majątku, zostanie dodana Punktacja. |
+| Grupa preferowanych konserwatorów   | Jeśli pracownik konserwacji został wybrany jako część grupy konserwatorów preferowanych za składnik majątku, zostanie dodana Punktacja.  |
+| Lokalizacja  | Jeśli firma korzysta z lokalizacji czynności konserwacyjnych, konserwatorzy otrzymują pełną punktację, jeśli znajdują się w lokalizacji czynności konserwacyjnych związanej z składnikiem majątku. Jeśli funkcjonalna czynności konserwacyjnych składnika majątku ma nadrzędną lokalizację, pracownicy w tej lokalizacji czynności konserwacyjnych otrzymują 1/2 wyniku. Jeśli ta lokalizacja ma również element nadrzędny, konserwatorzy w tej lokalizacji otrzymują 1/3 wyniku itd. Jeśli ta lokalizacja ma również element nadrzędny, konserwatorzy w tej lokalizacji otrzymują 1/4 wyniku itd. Jeśli Twoja firma korzysta z lokalizacji składnika majątku, której nie zalecamy, lokalizacja, obszar i strefa są używane do obliczania wyników lokalizacji. Pracownicy otrzymują pełny wynik, jeśli znajdują się w lokalizacji i obszarze oraz strefie związanych ze składnikiem majątku. Jeśli lokalizacja pracownika jest zgodna tylko z lokalizacją i obszarem, wynik oceny dla konserwatora wynosi 2/3 pełnego wyniku. Jeśli lokalizacja konserwatora jest zgodna tylko z lokalizacją i obszarem, wynik oceny dla konserwatora wynosi 1/3 pełnego wyniku. |
+| Data rozpoczęcia pracownika  | Dla każdego dnia, w którym planowana data rozpoczęcia jest późniejsza niż oczekiwana data rozpoczęcia, wynik jest odejmowany.  |
 
 >[!NOTE]
 >Jeśli wynik jest określony jako „0”, ten wynik nie jest obliczany. Jest to przydatne, jeśli na przykład nie chcesz dołączać odpowiedzialnego pracownika w planowaniu.
@@ -120,3 +120,21 @@ W przypadku zadań konserwacyjnych można skonfigurować wymagania dotyczące ty
 
 Typy zadań konserwacji i zawody zadań konserwacji są wybierane w zadaniach zleceń pracy. Jeśli kwalifikacje lub certyfikaty zostały wybrane w ramach zadania obsługi typu lub w rodzaju pracy związanej z konserwacją, a w zamówieniu pracy jest używany typ zadania konserwacji lub zawód konserwatora, to pracownicy obsługi technicznej z dopasowanymi umiejętnościami i certyfikatami są planowani na pracę nad zlecenia pracy.
 
+<a name="gantt"></a>
+
+## <a name="work-with-scheduled-work-orders-using-a-gantt-chart"></a>Praca z zaplanowanymi zleceniami roboczymi za pomocą wykresu Gantta
+
+**Wykres Gantta zaplanowanych zleceń pracy** zawiera graficzny interfejs, w którym można przeglądać i ponownie planować zlecenia pracy.
+
+Aby wyświetlić wykres Gantta i pracować z nim, należy:
+
+1. Przejdź do **Zarządzanie składnikami majątku > Zlecenia pracy > Wykres Gantta zaplanowanych zleceń pracy**.
+
+1. Korzystając z list rozwijanych i pól w sekcji **Ustawienia**, można określić, która lokalizacja czynności konserwacyjnych, zakres czasu i skala czasu mają być pokazywane na wykresie Gantta.
+
+1. Wybierz opcję **Zastosuj**.
+
+    - Aktualizacja wykresu Gantta powoduje wyświetlenie zaplanowanych zleceń pracy spełniających Twoje ustawienia. Każde zlecenie jest reprezentowane przez niebieski prostokąt.
+    - Aby ponownie zaplanować wyświetlone zlecenie pracy, zaznacz opcję i przeciągnij je do odpowiedniej nowej daty i godziny.
+
+1. W przypadku wprowadzenia jakichkolwiek zmian wybierz opcję **Zapisz** w okienku akcji, aby je zapisać.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f734def69ff50549acae1506015ce9b23a1b8a93
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5c77f32caad5e2e79cbc0e21f72a3daa79acecb
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209911"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274172"
 ---
 # <a name="create-an-asset"></a>Tworzenie składnika majątku
 
@@ -38,13 +38,13 @@ W tym temacie opisano sposób tworzenia składnika majątku w Zarządzaniu skła
 3. W oknie dialogowym **Tworzenie składników majątku** wstaw dane dotyczące **Składnika majątku** (identyfikator składnika majątku) oraz nazwę składnika majątku. Wybierz datę i godzinę składnika majątku w polu **Data wprowadzenia**. Od tej daty można instalować składnik majątku w lokalizacji czynności konserwacyjnych, a także przenosić i zastępować składnik majątku w strukturze składników majątku.
 4. W polu **Typ składnika majątku** wybierz typ składnika majątku (pole obowiązkowe). W razie potrzeby wybierz pozycję **Producent składnika majątku** i **Model składnika majątku** dla danego zasobu. Jeśli tylko jeden produkt został skonfigurowany, ten produkt jest automatycznie wybierany w polu **Producent składnika majątku**. Opcje dostępne w polach **Producent składnika majątku** i **Model składnika majątku** zależą od konfiguracji w artykule [Producenci i modele składnika majątku](../setup-for-objects/product-and-model.md)
 5. W grupie **Nadrzędny składnik majątku** pole **Składnik majątku** jest domyślnie puste. Jeśli jest to wymagane, można wybrać nadrzędny składnik majątku, a następnie wszystkie pola w grupie **Nadrzędny składnik majątku** zostaną automatycznie wypełnione.
->[!NOTE]  
->Po wybraniu nadrzędnego składnika majątku dwie lub trzy karty są dostępne: karta **Moje składniki majątku** zawiera składniki majątku związane z lokalizacjami czynności konserwacyjnych, do których może zostać przydzielony konserwator zalogowany w systemie. Jeśli lokalizacje czynności konserwacyjnych nie są skonfigurowane dla konserwatora w formularzu [Konserwatorzy i grupy konserwatorów](../setup-for-objects/workers-and-worker-groups.md), karta **Moje składniki majątku** nie będzie widoczna. Karta **Aktywne składniki majątku** zawiera listę wszystkich składników majątku ze stanem cyklu życia zasobu „Aktywny”. Na karcie **Widok składników majątku** jest wyświetlany widok drzewa lokalizacji czynności konserwacyjnych i składników majątku zainstalowanych w tych lokalizacjach.
+    >[!NOTE]  
+    >Po wybraniu nadrzędnego składnika majątku dwie lub trzy karty są dostępne: karta **Moje składniki majątku** zawiera składniki majątku związane z lokalizacjami czynności konserwacyjnych, do których może zostać przydzielony konserwator zalogowany w systemie. Jeśli lokalizacje czynności konserwacyjnych nie są skonfigurowane dla konserwatora w formularzu [Konserwatorzy i grupy konserwatorów](../setup-for-objects/workers-and-worker-groups.md), karta **Moje składniki majątku** nie będzie widoczna. Karta **Aktywne składniki majątku** zawiera listę wszystkich składników majątku ze stanem cyklu życia zasobu „Aktywny”. Na karcie **Widok składników majątku** jest wyświetlany widok drzewa lokalizacji czynności konserwacyjnych i składników majątku zainstalowanych w tych lokalizacjach.
 
 6. Domyślna lokalizacja czynności konserwacyjnych, która została ustawiona, jest sugerowana dla składników majątku w grupie **Składniki majątku** > pole **Lokalizacja czynności konserwacyjnych**. W razie potrzeby wybierz inną lokalizację czynności konserwacyjnych.
 
->[!NOTE]
->Po utworzeniu składnika majątku można go zainstalować w innej lokalizacji czynności konserwacyjnych, jeśli jest to wymagane. W lokalizacji czynności konserwacyjnych można instalować tylko składniki majątku najwyższego poziomu (składniki majątku bez bieżącego nadrzędnego składnika majątku). Oznacza to, że można zainstalować składniki majątku najwyższego poziomu, jak również wszystkie podrzędne składniki majątku w wybranej lokalizacji czynności konserwacyjnych. Dowiedz się więcej o instalowaniu składników majątku w lokalizacjach czynności konserwacyjnych w artykule [Wprowadzenie do lokalizacji czynności konserwacyjnych](../functional-locations/introduction-to-functional-locations.md).
+    >[!NOTE]
+    >Po utworzeniu składnika majątku można go zainstalować w innej lokalizacji czynności konserwacyjnych, jeśli jest to wymagane. W lokalizacji czynności konserwacyjnych można instalować tylko składniki majątku najwyższego poziomu (składniki majątku bez bieżącego nadrzędnego składnika majątku). Oznacza to, że można zainstalować składniki majątku najwyższego poziomu, jak również wszystkie podrzędne składniki majątku w wybranej lokalizacji czynności konserwacyjnych. Dowiedz się więcej o instalowaniu składników majątku w lokalizacjach czynności konserwacyjnych w artykule [Wprowadzenie do lokalizacji czynności konserwacyjnych](../functional-locations/introduction-to-functional-locations.md).
 
 7. Kliknij przycisk **OK**.
 8. Wybierz składnik majątku na liście **Wszystkie składniki majątku** i kliknij przycisk **Edytuj**, aby dodać dodatkowe informacje do składnika majątku.

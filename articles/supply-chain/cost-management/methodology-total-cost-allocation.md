@@ -3,7 +3,7 @@ title: Metoda całkowitej alokacji kosztów
 description: Ten temat zawiera wskazówki dotyczące korzystania z metody całkowitej alokacji kosztów (TCA). TCA jest metodą obliczania kosztu między głównym towarem formuły szarży produkcyjnej a produktami towarzyszącymi zdefiniowanymi w formule.
 author: AndersGirke
 manager: tfehr
-ms.date: 10/24/2017
+ms.date: 04/15/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e621b76742a5a115ba2d77e03b47cd1aead8664
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 758015c566e39df7306e1b34b8d3b42f1f1eba79
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214672"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262680"
 ---
 # <a name="total-cost-allocation-method"></a>Metoda całkowitej alokacji kosztów
 
 [!include [banner](../includes/banner.md)]
-
-Ten temat zawiera wskazówki dotyczące korzystania z metody całkowitej alokacji kosztów (TCA). TCA jest metodą obliczania kosztu między głównym towarem formuły szarży produkcyjnej a produktami towarzyszącymi zdefiniowanymi w formule.
 
 Całkowita alokacja kosztów (TCA) jest metodą obliczania kosztu między głównym towarem formuły szarży produkcyjnej a produktami towarzyszącymi zdefiniowanymi w formule. Ta metoda jest dynamiczna. Koszt jest obliczany jako średnia ważona między ilościami, które zostały zgłoszone jako gotowe dla produktu i produktów towarzyszących formuły. W przypadku używania metody TCA nie trzeba sprawdzać alokacji kosztów dla każdej szarży produkcyjnej. Jeśli metoda TCA nie jest używana, w obliczeniach formuły są używane istniejące funkcje.
 

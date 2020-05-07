@@ -3,7 +3,7 @@ title: Dodawanie nowej strony witryny
 description: W tym temacie opisano, jak dodać nową stronę witryny w Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68461f1f0be46f979a67e1806e03c02200cf61db
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001353"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269965"
 ---
 # <a name="add-a-new-site-page"></a>Dodawanie nowej strony witryny
 
@@ -67,7 +67,7 @@ Aby dodać nową stronę do swojej witryny, wykonaj następujące kroki.
 1. Wybierz **Blok zawartości sformatowanej**, a następnie wybierz przycisk wielokropka i opcję **Dodaj moduł**.
 1. Zaznacz **Element bloku zawartości sformatowanej**, a następnie kliknij przycisk **OK**.
 1. W okienku właściwości po prawej stronie wybierz pozycję **Akapit**, a następnie w polu wprowadź **Tekst testowy**.
-1. Wybierz **Zapisz** i następnie wybierz **Zaewidencjonuj**.
+1. Wybierz **Zapisz** i następnie wybierz **Zakończ edycję**.
 1. W polu **Komentarze** wprowadź **Dodawanie nowej strony**, a następnie kliknij przycisk **OK**.
 1. Wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. Po zakończeniu Zamknij kartę podglądu, aby powrócić do narzędzia autorskiego.
 1. Wybierz opcję **Publikuj**.

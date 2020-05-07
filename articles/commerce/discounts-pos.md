@@ -19,17 +19,16 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 54201de6b242f8100c19a78468476a6308b1b18a
-ms.sourcegitcommit: 5554b3abb4365666992efad692ae28e943faebd4
+ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
+ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3116563"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3265595"
 ---
 # <a name="show-discounts-in-pos"></a>Wyświetl rabaty w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Promocje odgrywają ważną rolę w motywach klientów, którzy podejmują decyzje dotyczące kupowania. Na przykład święta mogą wyprodukować najwyższą liczbę sprzedaży detalicznych, ponieważ cały rynek detaliczny jest zalewany za pomocą zachęcających promocji i rabatów. Jeśli pracownicy sklepu mają dostęp i rozumieją informacje o dostępnych promocjach, mogą oni łatwo korzystać z tych promocji w celu sprzedaży krzyżowej i dodatkowej towarów. W tym temacie wyjaśniono, w jaki sposób Microsoft Dynamics 365 Commerce pomaga współpracownikom ds. sprzedaży dowiedzieć się o promocjach i sposobach ich wykorzystania do sprzedaży krzyżowej i dodatkowej.
 

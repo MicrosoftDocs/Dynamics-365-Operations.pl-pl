@@ -3,7 +3,7 @@ title: Tworzenie niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx/
 description: W tym temacie opisano sposób tworzenia niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx i 5xx przy użyciu narzędzi autorskich Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4477a0a43971b5322c6acd6971cba2e79e2dc8c6
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 060f5e5616624279711f61f582e6a898c7eb7785
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001149"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269551"
 ---
 # <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Tworzenie niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx/5xx
 
@@ -46,19 +46,21 @@ Aby rozpocząć tworzenie strony odpowiedzi na błędy kodu stanu, wykonaj nast�
 
 Aby zbudować szablon strony odpowiedzi na błąd kodu stanu, wykonaj następujące kroki.
 
-1. Przejdź do **Szablony \> Nowy szablon**.
-1. Nazwij nowy szablon
+1. Przejdź do okna **Szablony**.
+1. Wybierz pozycję **Nowy**, aby utworzyć nowy szablon strony.
+1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź nazwę nowego szablonu, a następnie wybierz **OK**.
 1. Utwórz szablon na podstawie struktury, która ma być stroną odpowiedzi na błędy kodu stanu.
-1. Zaewidencjonuj szablon i opublikuj go.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować. 
 
 ### <a name="build-the-status-code-error-response-page"></a>Utwórz stronę odpowiedzi na błędy kodu stanu
 
 Aby utworzyć strony odpowiedzi na błędy kodu stanu, wykonaj następujące kroki.
 
-1. Przejdź do **Strony \> Nowa strona**.
-1. Umożliwia określenie nazwy strony odpowiedzi na błędy kodu stanu, ale **nie** ustawienie pola adresu **URL**.
+1. Przejdź do **Strony**.
+1. Wybierz **Nowy**, aby utworzyć stronę.
+1. W oknie dialogowym **Wybierz szablon** wybierz szablon, a następnie w obszarze **Nazwa strony** wprowadź nazwę strony odpowiedzi na błędy kodu stanu. Pole **Adres URL strony** należy pozostawić puste.
 1. Zbuduj stronę.
-1. Zaewidencjonuj stronę i opublikuj ją.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
 > [!NOTE]
 > Istnieje możliwość utworzenia oddzielnej strony odpowiedzi o błędy kodów stanu dla błędów kodu stanu 4xx i 5xx. Alternatywnie można skorzystać z tej samej strony odpowiedzi o błędzie o tym samym ogólnym kodzie stanu dla obu kategorii błędów.

@@ -3,7 +3,7 @@ title: Stany cyklu życia żądania konserwacji
 description: W tym temacie opisano, jak konfigurować stany cyklu życia żądań konserwacji w module Zarządzanie składnikami majątku.
 author: josaw1
 manager: tfehr
-ms.date: 07/26/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d1e4412af0619b57467b5bcba75ea7259604d1d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 08c45742b064f3a13a0ea2704f8873b9c53aad4e
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209014"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275633"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Stany cyklu życia żądania konserwacji
 
@@ -47,7 +47,7 @@ Stany cyklu życia żądań konserwacji określają etapy, przez które może pr
 6. Ustaw opcję **Ustaw rzeczywisty koniec** na **Tak**, jeśli rzeczywista data i godzina zakończenia powinny być automatycznie wprowadzane w żądaniu konserwacji, które znajduje się w tym stanie cyklu życia.
 7. Ustaw opcję **Utwórz zlecenie pracy**na **Tak**, jeśli zlecenie pracy może być utworzone z żądania konwersacji w tym stanie cyklu życia.
 8. Ustaw opcję **Usuń** na **Tak**, jeśli żądanie konserwacji można usunąć, gdy jest w tym stanie cyklu życia.
-9. Na skróconej karcie **Aktualizacja** opcje **Przychodzący** i **Wychodzący** w sekcji **Składnik majątku** są istotne w kontekście naprawy w magazynie. Ustaw odpowiednią opcję na **Tak**, jeśli stan cyklu życia składników majątku wybranych na żądaniu konserwacji powinien być automatycznie aktualizowany na **Przychodzący** lub **Wychodzący**, kiedy stan cyklu życia tego żądania konserwacji jest ustawiony na **Przychodzący** lub **Wychodzący**.
+9. Na skróconej karcie **Aktualizacji** opcje **Przychodzące** i **Wychodzące** w sekcji **Składnik majątku** są odpowiednie, jeśli jest używana Naprawa magazynu. Należy wybrać odpowiednią opcję **Tak**, jeśli stan cyklu eksploatacji środków trwałych wybrany w żądaniu obsługi powinien być automatycznie aktualizowany na **Przychodzący** lub **Wychodzący**, jeśli stan cyklu życia żądania obsługi jest określony jako **Przychodzący** lub **Wychodzący**.
 
 Na poniższej ilustracji pokazano przykład strony **Cykle życia żądań konserwacji**.
 

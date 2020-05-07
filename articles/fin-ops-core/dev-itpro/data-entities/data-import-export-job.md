@@ -3,7 +3,7 @@ title: Omówienie zadań importowania i eksportowania danych
 description: Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124619"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278905"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
@@ -151,6 +151,18 @@ Szczegóły wykonania pokazują stan każdej jednostki danych przetworzonych prz
 Dane przemieszczania można pobrać w pliku dla zadań eksportu lub pobrać je jako pakiet dla zadań importu i eksportu.
 
 W oknie szczegółów wykonania można także otworzyć dziennik wykonania.
+
+## <a name="parallel-imports"></a>Import równoległy
+Aby przyspieszyć Importowanie danych, można włączyć równoległe przetwarzanie importu pliku, jeśli jednostka obsługuje import równoległy. Aby skonfigurować import równoległy dla jednostki, należy zastosować następujące kroki:
+
+1. Wybierz kolejno opcje **Administrowanie systemem \> Obszary robocze \> Zarządzanie danymi**.
+2. W sekcji **Import/eksport** wybierz kafelek **Parametry struktury**, aby otworzyć stronę **Parametry importu/eksportu danych**.
+3. Na karcie **Ustawienia jednostki** wybierz opcję **Konfiguruj parametry wykonania jednostki**, aby otworzyć stronę **Parametry wykonywania importu jednostki**.
+4. Aby skonfigurować import równoległy dla jednostki, należy skonfigurować następujące pola:
+
+    - W polu **Jednostka** wybierz jednostkę.
+    - W polu **Licznik rekordów progów importu** wprowadź wartość licznika rekordów progu dla importu. Określa to licznik rekordów, które mają być przetworzone przez wątek. Jeśli plik ma 10 000 rekordów, liczba rekordów 2500 i liczba zadań 4 będą oznaczały, że każdy wątek przetworzy 2500 rekordów.
+    - W polu **Licznik importu zadań** wprowadź liczbę zadań importu. Nie może ona przekraczać maksymalnej liczby wątków wsadowych przydzielonych do przetwarzania wsadowego w **Administrowanie systemem \>Administrowanie systemem**.
 
 ## <a name="clean-up-the-staging-tables"></a>Czyszczenie tabel przemieszczania
 Począwszy od aktualizacji platformy 29, ta funkcja jest przestarzała. Jest to zastąpione nową wersją funkcji oczyszczania historii zadań wyjaśnioną poniżej.

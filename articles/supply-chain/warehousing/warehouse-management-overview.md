@@ -3,7 +3,7 @@ title: Omówienie zarządzania magazynem
 description: Zarządzanie magazynem umożliwia monitorowanie i automatyzację procesów magazynowych.
 author: ShylaThompson
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17e4429dbf3f7e5d6c737c365f0351d5c588fcd2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: bed896245b777ca195f7d03a9fdb697cad360ee7
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204592"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275401"
 ---
 # <a name="warehouse-management-overview"></a>Omówienie zarządzania magazynem
 
@@ -30,7 +30,7 @@ ms.locfileid: "3204592"
 Moduł zarządzania magazynem umożliwia zarządzanie procesami magazynowymi w firmach produkcyjnych, dystrybucyjnych i w sprzedaży detalicznej. Ten moduł oferuje różnorodne funkcje w celu obsługi magazynu na optymalnym poziomie w dowolnej chwili. Zarządzanie magazynem jest w pełni zintegrowane z innymi procesami biznesowymi, takimi jak transport, produkcja, kontrola jakości, zakupy, przenoszenie, sprzedaż i zwroty.
 
 ## <a name="get-started"></a>Rozpoczynanie pracy
-Aby rozpocząć pracę z modułem Zarządzanie magazynem należy dokończyć konfigurację ogólnych parametrów magazynu w celu obsługi procesów biznesowych dowolnej firmy.
+Aby rozpocząć pracę z modułem Zarządzanie magazynem należy dokończyć konfigurację ogólnych parametrów magazynu w celu obsługi procesów biznesowych Twojej firmy.
 
 - Przejdź do strony **Parametry zarządzania magazynem** w obszarze **Zarządzanie magazynem** > **Konfiguracja**, aby skonfigurować ogólne parametry magazynu.
 

@@ -3,7 +3,7 @@ title: Dodawanie strony zasad ochrony prywatności
 description: W tym temacie opisano, jak dodać stronę zasad ochrony prywatności do witryny w Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ee9a68f46c91299065732e5f65479906f9e06079
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001330"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274218"
 ---
 # <a name="add-a-privacy-policy-page"></a>Dodawanie strony zasad ochrony prywatności
 
@@ -54,23 +54,20 @@ Aby rozpocząć, w narzędziach autorskich przejdź do witryny, dla której chce
 
 Aby utworzyć szablon, należy wykonać poniższe kroki.
 
-1. Przejdź do pozycji **Szablony \> Nowy szablon**.
-1. Wprowadź nazwę szablonu, a następnie kliknij przycisk **OK**.
-1. W szablonie dodaj wszystkie wymagane moduły do wymaganych gniazd stron. Aby uzyskać wskazówki, najedź kursorem na czerwone wykrzykniki.
-
-    Na przykład miejsce **Nagłówek HTML** może wymagać modułu **Domyślny skrypt zewnętrzny”**.
-
+1. Przejdź do **Szablonu**, a następnie wybierz **Nowy**, aby utworzyć szablon strony.
+1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon baneru promocyjnego**, a następnie wybierz **OK**.
+1. W szablonie dodaj wszystkie wymagane moduły do wymaganych gniazd stron. Aby uzyskać wskazówki, najedź kursorem na czerwone wykrzykniki. (Na przykład miejsce **Nagłówek HTML** może wymagać modułu **Domyślny skrypt zewnętrzny**.)
 1. W miejscu **Treść** dodaj moduł **Strona domyślna**.
 1. W module **Strona domyślna** w miejscu **Główne** dodaj moduł **Blok zawartości zaawansowanej**.
 1. W module **Blok zawartości zaawansowanej** dodaj moduł **Element bloku zawartości zaawansowanej**.
-1. Zaewidencjonuj szablon i opublikuj go.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
 ### <a name="build-a-privacy-policy-page"></a>Tworzenie strony zasad ochrony prywatności
 
 Aby utworzyć stronę zasad ochrony prywatności, wykonaj następujące kroki.
 
-1. Przejdź do **Strony \> Nowa strona**.
-1. Wybierz szablon strony zasad ochrony prywatności.
+1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć stronę.
+1. W oknie dialogowym **Wybierz szablon** wybierz szablon strony zasady prywatności.
 1. Wprowadź nazwę i adres URL strony, a następnie wybierz przycisk **OK**. 
 1. W miejscu **Główne** na stronie dodaj moduł **Blok zawartości zaawansowanej**.
 1. W module **Blok zawartości zaawansowanej** dodaj moduł **Element bloku zawartości zaawansowanej**.
@@ -78,12 +75,12 @@ Aby utworzyć stronę zasad ochrony prywatności, wykonaj następujące kroki.
 1. W edytorze tekstu sformatowanego wprowadź zawartość strony zasad ochrony prywatności. W razie potrzeby rozwiń edytor tekstu sformatowanego do trybu pełnoekranowego.
 1. Po zakończeniu wprowadzania zawartości wybierz pozycję **Podgląd**, aby wyświetlić podgląd strony w przeglądarce internetowej.
 1. Zakończ wszystkie pozostałe operacje dodawania do właściwości strony i modułu.
-1. Zaewidencjonuj stronę zasad ochrony prywatności i opublikuj ją.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
 Aby opublikować adres URL strony zasad ochrony prywatności, wykonaj następujące kroki.
 
 1. Przejdź do obszaru **Adresy URL** i wybierz adres URL strony zasad ochrony prywatności.
-1. Publikowanie wybranego adresu URL
+1. Wybierz opcję **Publikuj**, aby opublikować wybrany adres URL.
 
 ### <a name="create-a-link-to-the-privacy-policy-page-in-a-footer"></a>Tworzenie linku do strony zasad ochrony prywatności w stopce
 
@@ -91,15 +88,14 @@ Do fragmentu można dodać link do strony zasad ochrony prywatności. W ten spos
 
 Aby dodać link do fragmentu stopki, wykonaj następujące kroki.
 
-1. Przejdź do pozycji **Fragmenty strony \> Nowy fragment strony**.
-1. Wybierz moduł **Stopka**, a następnie wprowadź nazwę w polu **Nazwa fragmentu strony**.
+1. Przejdź do **Fragmenty strony**, a następnie wybierz opcję **Nowy**, aby stworzyć nowy fragment strony.
+1. W oknie dialogowym **Nowy fragment strony** wybierz moduł **Stopki**.
+1. W obszarze **Nazwa fragmentu strony** wprowadź nazwę fragmentu, a następnie kliknij przycisk **OK**.
 1. W miejscu **Kategoria stopki** dodaj moduł **Element stopki**.
 1. W panelu właściwości po prawej stronie wybierz pozycję **Tekst linku**.
 1. W oknie dialogowym **Tekst linku** wprowadź tekst linku i docelowy link strony zasady ochrony prywatności, a następnie kliknij przycisk **OK**.
-
-    Aby uzyskać adres URL strony zasad ochrony prywatności, przejdź do obszaru **Strony**, przejdź do strony zasad ochrony prywatności i skopiuj adres URL z okienka właściwości.
-
-1. Zapisz fragment, zaewidencjonuj go i opublikuj.
+1. Aby uzyskać adres URL strony zasad ochrony prywatności, przejdź do obszaru **Strony**, przejdź do strony zasad ochrony prywatności i skopiuj adres URL z okienka właściwości.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować fragment, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 1. Wyświetl podgląd fragmentu i przetestuj link do strony zasad ochrony prywatności.
 
 Teraz można odwoływać się do fragmentu w szablonie dla innych stron witryny. Gdy ten fragment jest przywoływany w module **Stopka** szablonu, odwołanie do linku pojawi się na wszystkich stronach, które zostaną zbudowane przy użyciu tego szablonu.
@@ -111,3 +107,5 @@ Teraz można odwoływać się do fragmentu w szablonie dla innych stron witryny.
 [Funkcje i możliwości dostępności](accessibility.md)
 
 [Zgodność z plikami cookie](cookie-compliance.md)
+
+[Zamień identyfikatory użytkowników skojarzone ze śledzonymi zmianami zawartości](replace-IDs-tracked-changes.md)

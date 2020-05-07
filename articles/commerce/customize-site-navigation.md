@@ -3,7 +3,7 @@ title: Dostosowywanie nawigacji w witrynie
 description: W tym temacie opisano sposób tworzenia dostosowanej hierarchii nawigacji w trybie online do organizowania produktów w celu ich przejrzenia w witrynie Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2235510c7ef386d66fe3b137f8e791d14706379
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ae7696dcb5cdd99cd46b89ed1de1b03c16146e2d
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001836"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269666"
 ---
 # <a name="customize-site-navigation"></a>Dostosowywanie nawigacji w witrynie
 
@@ -93,7 +93,7 @@ Aby dodać niestandardowe opcje nawigacji do menu nawigacji, należy wykonać na
 1. W okienku właściwości na karcie **Dane** wybierz **Dodaj pozycję**, aby utworzyć nowy element nawigacji w systemie Content Management System (CMS).
 1. Wprowadź tekst łącza i adres URL
 1. Powtórz kroki 2 i 3, aby dodać kolejne opcje nawigacji niestandardowej.
-1. Po zakończeniu zapisz szablon lub fragment i zaewidencjonuj go.
+1. Po zakończeniu wybierz opcję **Zapisz**, aby zapisać szablon lub fragment, a następnie wybierz przycisk **Zakończ edycję**, aby go zaewidencjonować.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

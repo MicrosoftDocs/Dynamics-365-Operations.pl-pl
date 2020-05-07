@@ -3,7 +3,7 @@ title: Aprowizowanie rozwiązania Human Resources
 description: Ten artykuł przeprowadzi użytkownika przez proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4f2fd2b7bf9f09a61d07e1bc35ad48fe2c5d7383
-ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
+ms.openlocfilehash: 88a0be50a9b861190e7ce9b3f56bb4e583b791d1
+ms.sourcegitcommit: 33685a5cc37081a189279e917def7f122d3beaef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138366"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285496"
 ---
 # <a name="provision-human-resources"></a>Aprowizowanie rozwiązania Human Resources
 
@@ -53,13 +53,13 @@ Po utworzeniu projektu LCS można zainicjować moduł Human Resources w środowi
 
 1. W projekcie LCS wybierz kafelek **Zarządzanie aplikacją Human Resources**.
 
-2. Wskaż, czy jest to wystąpienie produkcyjne czy piaskownicy Human Resources. Funkcje w wersji zapoznawczej mogą być dostępne w wystąpieniach piaskownicy, aby umożliwić wczesne przesłanie opinii i testowanie.
+2. Wskaż, czy jest to to środowisko piaskownicy czy produkcyjne Human Resources. Funkcje w wersji zapoznawczej mogą być dostępne w wystąpieniach piaskownicy, aby umożliwić wczesne przesłanie opinii i testowanie.
    
     > [!NOTE]
     > Po ustawieniu typu wystąpienia aplikacji Human Resources nie można go zmienić. Przed kontynuowaniem sprawdź, czy został wybrany poprawny typ wystąpienia.</br></br>
     > Typ wystąpienia modułu Human Resources jest niezależny od typu wystąpienia środowiska Microsoft Power Apps, które zostało ustawione w centrum administracyjnym Power Apps.
     
-3. Zaznacz opcję **Dołącz dane demonstracyjne**, jeżeli chcesz, aby Twoje środowisko zawierało ten sam zestaw danych demonstracyjnych, jak używany w środowisku testowym modułu Human Resources. Jest to korzystne w środowiskach długoterminowych demonstracji lub szkoleń, natomiast nigdy nie należy używać tej opcji w środowisku produkcyjnym.  Należy wybrać tę opcję po wdrożeniu wstępnym. Nie można później zaktualizować istniejącego wdrożenia.
+3. Zaznacz opcję **Dołącz dane demonstracyjne**, jeżeli chcesz, aby Twoje środowisko zawierało ten sam zestaw danych demonstracyjnych, jak używany w środowisku testowym modułu Human Resources. Dane demonstracyjne są korzystne w środowiskach długoterminowych demonstracji lub szkoleń, natomiast nigdy nie należy używać tej opcji w środowisku produkcyjnym. Należy wybrać tę opcję po wdrożeniu wstępnym. Nie można później zaktualizować istniejącego wdrożenia.
 
 4. Rozwiązanie Human Resources jest zawsze inicjowane w Microsoft Power Apps, aby umożliwić integrację z Power Apps i możliwość rozszerzenia. Przed kontynuowaniem przeczytaj w tym artykule sekcję „Wybieranie środowiska usługi Power Apps”. Jeśli nie masz jeszcze środowiska Power Apps, wybierz opcję Zarządzaj środowiskami w oknie usługi LCS lub przejdź do Centrum administracyjnego usługi Power Apps. Następnie wykonaj procedurę [tworzenia środowiska usługi Power Apps](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
@@ -74,29 +74,29 @@ Po utworzeniu projektu LCS można zainicjować moduł Human Resources w środowi
     > [!NOTE]
     > Jeszcze przez spełnienie wymagań końcowych można wdrożyć wystąpienie testowe rozwiązania Human Resources w projekcie. Korzystając z tego wystąpienia, można testować swoje rozwiązanie do momentu sfinalizowania zakupu. W przypadku korzystania z nowego środowiska do testowania należy powtórzyć tę procedurę, aby utworzyć środowisko produkcyjne.
 
-    > Można rozważyć wykorzystanie bezpłatnych 60 dni [Human Resources w środowisku próbnym](https://dynamics.microsoft.com/talent/overview/). Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Human Resources. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Nie są one przeznaczone do używania jako środowiska produkcyjne. Należy zauważyć, że po wygaśnięciu wersji próbnej środowiska po upływie 60 dni wszystkie zawarte w niej dane są usuwane nie można ich odzyskać. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
+    > Można rozważyć wykorzystanie bezpłatnych 60 dni [Human Resources w środowisku próbnym](https://go.microsoft.com/fwlink/p/?LinkId=2115962). Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Human Resources. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Nie są one przeznaczone do używania jako środowiska produkcyjne. Należy zauważyć, że po wygaśnięciu wersji próbnej środowiska po upływie 60 dni wszystkie zawarte w niej dane są usuwane nie można ich odzyskać. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
 
 ## <a name="select-a-power-apps-environment"></a>Wybierz środowisko Power Apps
 
-Integracja środowisk Human Resources i Power Apps pozwala integrować i poszerzać stosowanie danych programu Human Resources za pomocą narzędzi usługi Power Apps. Wiedza o przeznaczeniu środowisk usługi Power Apps nie tylko pomoże Ci tworzyć aplikacje rozszerzające funkcjonalność modułu Human Resources, ale może również pomóc wybrać odpowiednie środowisko podczas inicjowania obsługi modułu Human Resources. Aby uzyskać więcej informacji na temat środowisk Power Apps, w tym o ich zakresie, uzyskiwaniu dostępu oraz zasadach tworzenia i wybierania środowiska, zobacz [Zapowiedź środowisk Power Apps](https://powerapps.microsoft.com/blog/powerapps-environments/). 
+Korzystanie z danych Human Resources można zintegrować i rozszerzać za pomocą narzędzi Power Apps. Aby uzyskać więcej informacji na temat środowisk Power Apps, w tym o ich zakresie, uzyskiwaniu dostępu oraz zasadach tworzenia i wybierania środowiska, zobacz [Zapowiedź środowisk Power Apps](https://powerapps.microsoft.com/blog/powerapps-environments/). 
 
 Przy ustalaniu, w którym środowisku usługi Power Apps wdrożyć moduł Human Resources, kieruj się poniższymi wskazówkami: 
 
-1. W usłudze LCS wybierz opcję **Zarządzaj środowiskami** lub przejdź bezpośrednio do centrum administracyjnego usługi Power Apps, gdzie możesz obejrzeć istniejące i tworzyć nowe środowiska.
+1. W usłudze LCS wybierz opcję **Zarządzaj środowiskami**. Można przejść bezpośrednio do Centrum administracyjnego usługi Power Apps, gdzie można przeglądać istniejące środowiska i tworzyć nowe.
 
 2. Jedno środowisko modułu Human Resources jest mapowane na jedno środowisko usługi Power Apps.
 
 3. Środowisko usługi Power Apps zawiera rozwiązanie Human Resources wraz z towarzyszącymi Power Apps, Power Automate i aplikacjami Common Data Service. Usunięcie środowiska usługi Power Apps spowoduje wykasowanie znajdujących się w nim aplikacji. Podczas inicjowania obsługi administracyjnej środowiska programu Human Resources można wybrać środowisko **Wersja próbna** lub **Wersja produkcyjna**. Wybierz typ środowiska odpowiednio do tego, jak będzie używane. 
 
-4. Należy wziąć pod uwagę strategie integracja i testowanie danych, na przykład piaskownicę (wirtualne środowisko testowe), testy akceptacji użytkownika czy produkcję. Zalecamy rozważenie różnych skutków dla danego wdrożenia, ponieważ później nie jest łatwo zmienić mapowanie środowiska programu Human Resources na inne środowisko usługi Power Apps.
+4. Należy wziąć pod uwagę strategie integracja i testowanie danych, na przykład piaskownicę (wirtualne środowisko testowe), testy akceptacji użytkownika czy produkcję. Zalecamy rozważenie skutków dla danego wdrożenia, ponieważ później nie jest łatwo zmienić mapowanie środowiska Human Resources na inne środowisko usługi Power Apps.
 
-5. Następujące środowiska usługi Power Apps nie mogą być używane dla modułu Human Resources i będą odfiltrowane z listy wyboru w usłudze LCS:
+5. Nie można stosować następujących środowisk Power Apps dla Human Resources. Są one filtrowane z listy wyboru w obszarze usługi LCS:
  
-    - **Domyślnie środowiska usługi Power Apps** - Mimo że każda dzierżawa ma automatycznie włączoną obsługę w domyślnym środowisku usługi Power Apps, nie zalecamy używania tego środowiska w połączeniu z rozwiązaniem Human Resources, ponieważ wszyscy użytkownicy dzierżawy mają dostęp do środowiska usługi Power Apps i mogą przypadkowo uszkodzić dane produkcyjne podczas testowania i eksplorowania integracji z usługami Power Apps lub Power Automate.
+    - **Środowiska domyślne Power Apps** — podczas gdy każdy dzierżawca jest automatycznie inicjowany z użyciem domyślnego środowiska Power Apps, nie zaleca się używania ich z Human Resources. Wszyscy użytkownicy dzierżaw mogą uzyskiwać dostęp do środowiska Power Apps i mogą przypadkowo uszkodzić dane dotyczące produkcji podczas testowania i eksplorowania Power Apps lub integracji Power Automate.
    
-    - **Środowiska próbne** — te środowiska są tworzone z datą ważności; po tym czasie przestają działać, co powoduje automatycznie usunięcie środowiska i powiązanych z nim wystąpień rozwiązania Human Resources.
+    - **Środowiska wersji próbnej** — te środowiska są tworzone z datą wygaśnięcia. Po wygaśnięciu tego środowisko i wszystkie wystąpienia Human Resources zawarte w tym środowisku zostaną usunięte automatycznie.
    
-    - **Nieobsługiwane regiony** — obecnie moduł Human Resources jest obsługiwany tylko w następujących regionach: Stany Zjednoczone, Europa, Wielka Brytania, Australia Kanada i Azja.
+    - **Nieobsługiwane regiony** — obecnie moduł Human Resources jest obsługiwany tylko w następujących regionach: Stany Zjednoczone, Europa, Wielka Brytania, Australia, Kanada i Azja.
 
     > [!NOTE]
     > Środowisko zasobów ludzkich jest udostępniane w tym samym regionie, w którym zainicjowano obsługę środowiska Power Apps. Migrowanie środowiska Human Resources do innego regionu nie jest obsługiwane.
@@ -105,4 +105,4 @@ Przy ustalaniu, w którym środowisku usługi Power Apps wdrożyć moduł Human 
  
 ## <a name="grant-access-to-the-environment"></a>Przyznawanie dostępu do środowiska
 
-Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył. Dodatkowym użytkownikom aplikacji trzeba jednoznacznie przyznać dostęp. W celu udzielenia dostępu trzeba dodać użytkowników i przypisać im odpowiednie role w środowisku Human Resources. Globalny administrator, który wdrożył program Human Resources, musi również uruchomić Attract i Onboard, aby dokończyć inicjalizację i umożliwić dostęp innym użytkownikom dzierżawy.  Dopóki tak się nie stanie, inni użytkownicy nie będą mieli dostępu do Attract i Onboard i będą im wyświetlane błędy naruszenia dostępu. Aby uzyskać więcej informacji, zobacz [tworzenie nowych użytkowników](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) i [przypisywanie użytkowników do ról zabezpieczeń](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył. Musisz przyznać dostęp dodatkowym użytkownikom aplikacji. Trzeba dodać użytkowników i przypisać im odpowiednie role w środowisku Human Resources. Globalny administrator, który wdrożył program Human Resources, musi również uruchomić Attract i Onboard, aby dokończyć inicjalizację i umożliwić dostęp innym użytkownikom dzierżawy. Dopóki tak się nie stanie, inni użytkownicy nie będą mieli dostępu do Attract i Onboard i będą im wyświetlane błędy naruszenia dostępu. Aby uzyskać więcej informacji, zobacz [tworzenie nowych użytkowników](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) i [przypisywanie użytkowników do ról zabezpieczeń](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

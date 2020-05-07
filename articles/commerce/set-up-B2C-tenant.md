@@ -3,7 +3,7 @@ title: Konfigurowanie dzierżawy B2C w usłudze Commerce
 description: W tym temacie opisano sposób konfigurowania dzierżawcy Azure Active Directory (Azure AD) dzierżawców biznesowych (B2C) dla uwierzytelniania witryny użytkownika w programie Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 04/17 /2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5fca37fb89c723273ef753b102092e2cfb26563
-ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
+ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
+ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096521"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270217"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurowanie dzierżawy B2C w usłudze Commerce
 
@@ -169,8 +169,7 @@ Aby utworzyć zasady przepływu użytkownika dla resetowania hasła, wykonaj nas
 1. W sekcji **dostawcy tożsamości** wybierz opcję **Resetuj hasło, używając adresu e-mail**.
 1. Wybierz opcję **Utwórz**.
 1. W obszarze **Przetwarzanie aplikacji** zaznacz jedno z następujących pól wyboru:
-    - **E-mail**
-    - **Adresy**
+    - **Adresy e-mail**
     - **Imię**
     - **Nazwisko**
     - **Identyfikator obiektu użytkownika**

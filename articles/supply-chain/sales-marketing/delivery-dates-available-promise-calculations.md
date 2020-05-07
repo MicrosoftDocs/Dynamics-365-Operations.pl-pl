@@ -1,9 +1,9 @@
 ---
 title: Zobowiązanie do zamówienia
-description: Ten artykuł zawiera informacje o zobowiązaniach zamówień. Zobowiązania zamówień pomagają wiarygodnie deklarować daty dostawy odbiorcom oraz wprowadzają elastyczność umożliwiającą dotrzymanie tych terminów.
+description: Ten temat zawiera informacje dotyczące zobowiązań zamówień. Zobowiązania zamówień pomagają wiarygodnie deklarować daty dostawy odbiorcom oraz wprowadzają elastyczność umożliwiającą dotrzymanie tych terminów.
 author: ShylaThompson
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78b81431d44ea5f85676b6999eece1330d3101a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ccb7ef432553c0516eb49013eaad68dd21bf752c
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210068"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270034"
 ---
 # <a name="order-promising"></a>Zobowiązanie do zamówienia
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera informacje o zobowiązaniach zamówień. Zobowiązania zamówień pomagają wiarygodnie deklarować daty dostawy odbiorcom oraz wprowadzają elastyczność umożliwiającą dotrzymanie tych terminów.
+Ten temat zawiera informacje dotyczące zobowiązań zamówień. Zobowiązania zamówień pomagają wiarygodnie deklarować daty dostawy odbiorcom oraz wprowadzają elastyczność umożliwiającą dotrzymanie tych terminów.
 
 Zobowiązanie zamówienia oblicza najwcześniejsze daty wysyłki i przyjęcia, i opiera się na metodzie kontroli daty dostawy i dni transportu. Dostępne są cztery metody kontroli daty dostawy:
 
@@ -47,11 +47,13 @@ ATP są obliczane za pomocą następującego wzoru:
 
 ATP = ATP dla poprzedniego okresu + przyjęcia w bieżącym okresie - wydania w bieżącym okresie - wydana ilość netto dla każdego przyszłego okresu do momentu, gdy suma przyjęć dla wszystkich przyszłych okresów, łącznie z ostatnim okresem w zakresie, przekracza sumę wydań do przyszłego okresu włącznie.  
 
+Należy zauważyć, że obliczenie dostępności zapasów nie zawiera informacji w odróżnieniu od daty ważności i po upływie horyzontu czasowego dostępności zapasów, którego system oczekuje w przypadku, gdy ilość może zostać uzgodniona.
+
 Jeśli nie ma już rozchodów lub przychodów do uwzględnienia, ilość ATP dla następujących dat jest taka sama jak ostatnia obliczona ilość ATP.  
 
 Jeśli wszystkie wymiary użyte dla towaru nie zostaną podane w momencie gdy następuje sprawdzenie ATP, nadal będzie można je określić dla rozchodów i przychodów. W takim przypadku w obliczeniu ATP przychody i rozchody muszą zostać zespolone do istniejących wymiarów, aby ograniczyć liczbę wierszy rozchodów i przychodów używanych w obliczaniu ATP.  
 
-Wyświetlana ilość ATP jest zawsze większa lub równa 0 (zero). Jeśli obliczenie da ujemną ilość ATP (na przykład, jeśli wcześniej zarezerwowana ilość przekracza dostępną ilość), program automatycznie ustawi ilość jako **0**.
+Wyświetlana ilość ATP jest zawsze większa lub równa 0 (zero). Jeśli obliczenie da ujemną ilość ATP (na przykład, jeśli wcześniej zarezerwowana ilość przekracza dostępną ilość), ilość jest automatycznie ustawiona na 0.
 
 ### <a name="example"></a>Przykład
 

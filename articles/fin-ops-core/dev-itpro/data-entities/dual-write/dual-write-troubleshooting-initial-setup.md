@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e20c9c5e1250c8e65b5642a7c45d7ae859315697
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172675"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275448"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Rozwiązywanie problemów podczas konfiguracji początkowej
 
@@ -39,7 +39,7 @@ Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących i
 
 ## <a name="you-cant-link-a-finance-and-operations-app-to-common-data-service"></a>Nie można połączyć aplikacji Finance and Operations z Common Data Service
 
-**Poświadczenia wymagane do skonfigurowania podwójnego zapisywania:** Administrator dzierżawy Azure AD
+**Wymagana rola w celu konfiguracji podwójnego zapisu:** administrator systemu w aplikacjach Finance and Operations i Common Data Service.
 
 Błędy na stronie **Łącze konfiguracji do Common Data Service** są zazwyczaj spowodowane niekompletnymi problemami z ustawieniami lub uprawnieniami. Upewnij się, że cała kontrola kondycji jest przekazana na stronie **Łącze konfiguracji do Common Data Service**, jak to pokazano na poniższej ilustracji. Nie można połączyć się z podwójnym zapisywaniem, dopóki nie przejdzie cała kontrola kondycji.
 

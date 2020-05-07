@@ -3,7 +3,7 @@ title: Omówienie raportowania finansowego
 description: W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w Microsoft Dynamics 365 Finance i jak korzystać z funkcji raportowania finansowego. Zawiera opis domyślnych raportów finansowych, które są zawarte w programie.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01fcc7c4f3e1eb7aadfc93b120cd57e62077d0c0
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 6cd77e22f9c6f90f6aa9934d70a121008e1274dd
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249067"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262656"
 ---
 # <a name="financial-reporting-overview"></a>Omówienie raportowania finansowego
 
@@ -83,13 +83,15 @@ Po dodaniu użytkownika lub zmianie roli, użytkownik powinien mieć dostęp do 
 ## <a name="report-deletions-and-expirations"></a>Usuwanie i wygasanie raportów
 Użytkownicy, którzy generują raport, mogą usuwać własne raporty. Użytkownicy, których obowiązkiem jest **utrzymywanie bezpieczeństwa raportowania finansowego** mogą usuwać raporty innych osób. 
 
-Począwszy od wydania 10.0.7, wprowadzono koncepcję dat wygaśnięcia. Nowa obowiązkowa funkcja zostanie włączona w obszarze roboczym zarządzania funkcjami. Ta funkcja zawiera następujące zmiany:
+W wersji 10.0.8 zostało wprowadzone pojęcie dat wygaśnięcia. Nowa wymagana funkcja zostanie włączona na stronie **Wszystkie** w obszarze roboczym zarządzanie funkcjami. Funkcja **Zasad zatrzymania raportu finansowego** zawiera następujące zmiany:
 * Nowo wygenerowane raporty będą automatycznie oznaczane jako posiadające datę wygaśnięcia 90 dni od daty wygenerowania
 * Wszystkie istniejące raporty sprzed zainstalowania tej funkcji będą miały okres ważności 90 dni. Data może być pusta przez krótki okres do czasu uruchomienia usługi raportowania finansowego, generowany jest raport, a usługa przeprowadza aktualizację do istniejących raportów z pustą datą wygaśnięcia. 
-* Użytkownicy odpowiedzialni za **utrzymywanie bezpieczeństwa raportowania finansowego** mają dostęp do tej funkcji. Każdy użytkownik z obowiązkiem **utrzymywania raportu finansowego** i przyznanym uprawnieniem **Utrzymanie wygaśnięcia raportu finansowego** będzie również mieć możliwość modyfikowania okresu wygaśnięcia. Obecnie dostępne są dwie opcje przechowywania — 
-  * Wygaśnięcie wynoszące 90 dni
-  * Opcja ustawiania raportu tak, aby nigdy nie wygasał
-
+* Użytkownicy odpowiedzialni za **Utrzymywanie bezpieczeństwa financial reporting** mają dostęp do tej funkcji. Każdy użytkownik z obowiązkiem **utrzymywania raportu finansowego** i przyznanym uprawnieniem **Utrzymanie wygaśnięcia raportu finansowego** będzie również mieć możliwość modyfikowania okresu wygaśnięcia. Obecnie dostępne są dwie opcje przechowywania. 
+  * Wygaśnięcie wynoszące 90 dni.
+  * Opcja ustawiania raportu tak, aby nigdy nie wygasał.
+  
+Dodatkowe opcje będą brane pod uwagę w przyszłych funkcjach. Okres ważności wynoszący 90 dni będzie określony jako domyślny, a użytkownicy z odpowiednimi uprawnieniami mogą zastąpić domyślne ustawienia na stronie listy **Raportów finansowych**.    
+  
 Po wybraniu opcji wygaśnięcia, takiej jak 90 dni, użytkownik otrzymuje uprawnienia do 90 dni od dnia dzisiejszego, co jest zachowaniem innym niż 90 dni od oryginalnej daty wygenerowania raportu ustawionej podczas generowania. 
 
 ## <a name="default-reports"></a>Raporty domyślne

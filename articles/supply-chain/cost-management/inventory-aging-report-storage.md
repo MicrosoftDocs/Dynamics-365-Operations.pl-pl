@@ -1,5 +1,5 @@
 ---
-title: Raport wiekowania zapasów
+title: Magazyn raportów wiekowania zapasów
 description: W tym temacie opisano funkcje umożliwiające uruchamianie raportu wiekowania zapasów oraz udostępnianie danych wyjściowych w postaci formularza i wykresu.
 author: AndersGirke
 manager: tfehr
@@ -19,24 +19,31 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2019-01-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 790c8fe3a52bce652227f1cef97eff6496476100
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9148a9032615222a1fdfe453488e716bacadbabc
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201630"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275586"
 ---
-# <a name="inventory-aging-report"></a>Raport wiekowania zapasów
+# <a name="inventory-aging-report-storage"></a>Magazyn raportów wiekowania zapasów
 
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-W rozwiązaniu Microsoft Dynamics 365 Supply Chain Management można uruchomić raport **wiekowania zapasów** i udostępnić dane wyjściowe jako formularz i wykres. W formularzu pola kolumny i salda zagregowane są dynamicznie dostosowywane w zależności od skonfigurowanego układu. Wykres zawiera przegląd wizualny obsługujący filtrowanie i umożliwiający drążenie do szczegółów. Ponadto jednostka danych o nazwie **Raport wiekowania zapasów** umożliwia eksportowanie wyników raportu **wiekowania zapasów** do formatu takiego jak plik Microsoft Excel lub plik PDF.
+W Microsoft Dynamics 365 Supply Chain Management można uruchomić **magazyn raportów wiekowania zapasów** i udostępnić dane wyjściowe jako formularz i wykres. W formularzu pola kolumny i salda zagregowane są dynamicznie dostosowywane w zależności od skonfigurowanego układu. Wykres zawiera przegląd wizualny obsługujący filtrowanie i umożliwiający drążenie do szczegółów. Ponadto jednostka danych o nazwie **Raport wiekowania zapasów** umożliwia eksportowanie wyników raportu **magazynu raportów wiekowania zapasów** do formatu takiego jak plik Microsoft Excel lub plik PDF.
 
-Ta metoda uruchamiania raportu **wiekowania zapasów** jest przydatna w przypadkach, gdy dane wyjściowe zawierają wiele wierszy. Na przykład produkcja będzie zawierała wiele wierszy, jeśli w systemie istnieje 50 000 sztuk i 300 sklepów utworzonych jako magazyny i żąda się przeliczeń zapasów według towarów, oddziału i magazynu.
+Ta metoda uruchamiania raportu **magazynu raportów wiekowania zapasów** jest przydatna w przypadkach, gdy dane wyjściowe zawierają wiele wierszy. Na przykład produkcja będzie zawierała wiele wierszy, jeśli w systemie istnieje 50 000 sztuk i 300 sklepów utworzonych jako magazyny i żąda się przeliczeń zapasów według towarów, oddziału i magazynu.
 
-## <a name="run-an-inventory-aging-report"></a>Przeprowadź raport wiekowania zapasów
+## <a name="enable-the-inventory-value-storage-report-feature"></a>Włączanie funkcji raportu magazynowania wartości zapasów
+
+Aby móc używać tej funkcji, musisz ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją w razie potrzeby. W tym miejscu funkcja jest wyświetlana jako:
+
+- **Moduł** — zarządzanie kosztami
+- **Nazwa funkcji** - Magazyn raportów wiekowania zapasów
+
+## <a name="run-an-inventory-aging-report-storage"></a>Uruchom magazyn raportów wiekowania zapasów
 
 1. Przejdź do **Zarządzanie kosztami \> Zapytania i raporty \> Przechowywanie raportu wiekowania zapasów**.
 1. Wybierz pozycję **Nowy**.
@@ -51,4 +58,4 @@ Ta metoda uruchamiania raportu **wiekowania zapasów** jest przydatna w przypadk
     > [!NOTE]
     > Formularz nie będzie zawierać sum częściowych, które są zdefiniowane w układzie raportu.
 
-Jednostka danych **raportu wiekowania zapasów** umożliwia eksportowanie danych wyjściowych **raportu wiekowania zapasów** przez zastosowanie filtru dla pola **Identyfikator procesu — nazwa** w dowolnym formacie obsługiwanym przez funkcję zarządzania danymi.
+Jednostka danych **raportu wiekowania zapasów** umożliwia eksportowanie danych wyjściowych raportu **magazynu raportów wiekowania zapasów** przez zastosowanie filtru dla pola **Identyfikator procesu — nazwa** w dowolnym formacie obsługiwanym przez funkcję zarządzania danymi.

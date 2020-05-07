@@ -3,7 +3,7 @@ title: Reguły płatności podatkowych i zaokrąglania
 description: W tym artykule wyjaśniono działanie konfiguracji reguły zaokrąglania w ustawieniach urzędu skarbowego oraz sposób zaokrąglania salda podatku podczas zadania rozliczania i księgowania podatku.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/30/2018
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: yijialuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e66a62007025964b3d58ff0620ebecd6d9769f9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: adc48d1841903670577684b1c3d773d323c19ea1
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771759"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275681"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Reguły płatności podatkowych i zaokrąglania
 
@@ -43,26 +43,26 @@ Poniższy przykład pokazuje mechanizm działania reguły zaokrąglania na potrz
 
 Firma chce użyć metody zaokrąglania, która zaokrągla saldo do najbliższego 1,00 EUR. Użytkownik odpowiedzialny za księgowanie podatku musi wykonać następujące czynności:
 
-1.  Wybierz kolejno opcje Podatek &gt; Podatki pośrednie &gt; Podatek &gt; Urzędy skarbowe.
-2.  Na skróconej karcie Ogólne zaznacz opcję Normalne w polu Metoda zaokrąglenia.
-3.  W polu Zaokrąglenie wpisz 1,00.
-4.  Gdy przyjdzie czas zapłacenia podatku urzędowi skarbowemu, otwórz stronę Rozlicz i zaksięguj podatek. (Wybierz kolejno opcje Podatek &gt; Deklaracje &gt; Podatek &gt; Rozlicz i zaksięguj podatek).
-5.  Na koncie rozliczenie podatku kwota zobowiązań z tytułu podatku 98 765,43 jest zaokrąglana do 98 765.
+1. Wybierz kolejno opcje **Podatek** > **Podatki pośrednie** > **Podatek** > **Urzędy skarbowe**.
+2. Na skróconej karcie **Ogólne** w polu **Metoda zaokrąglenia** zaznacz opcję **Normalne**.
+3. W polu **Zaokrąglenie** wpisz 1,00.
+4. Gdy przyjdzie czas zapłacenia podatku urzędowi skarbowemu, przejdź do **Podatek** > **Deklaracje** > **Podatek** > **Rozlicz i zaksięguj podatek**. Na koncie rozliczenie podatku kwota zobowiązań z tytułu podatku **98,765.43** jest zaokrąglana do **98,765**.
 
-W poniższej tabeli przedstawiono, jak kwota 98 765,43 jest zaokrąglana przy użyciu każdej metody zaokrąglania, która jest dostępna w polu Metoda zaokrąglania na stronie urzędu skarbowego.
+W poniższej tabeli przedstawiono, jak kwota 98 765,43 jest zaokrąglana przy użyciu każdej metody zaokrąglania, która jest dostępna w polu **Metoda zaokrąglania** na stronie **Urząd skarbowy**.
 
-| Zaokrąglanie z opcji                | Wartość zaokrąglenia = 0,01 | Wartość zaokrąglenia = 0,10 | Wartość zaokrąglenia = 1,00 | Wartość zaokrąglenia = 100,00 |
-|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|
-| Normalna                              | 98 765,43              | 98 765,40              | 98 765,00              | 98 800,00                |
-| W dół                            | 98 765,43              | 98 765,40              | 98 765,00              | 98 700,00                |
-| Zaokrąglenie w górę                         | 98 765,43              | 98 765,50              | 98 766,00              | 98 800,00                |
-| Na korzyść firmy, salda kredytowe | 98 765,43              | 98 765,40              | 98 765,00              | 98 700,00                |
-| Na korzyść firmy, salda debetowe  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
+> [!NOTE]                                                                                  
+> Jeśli wartość zaokrąglenia jest ustawiona jako 0,00, to:
+>
+> - W przypadku zwykłego zaokrąglania zachowanie zaokrąglania jest takie samo, jak dla **Zaokrąglenie = 0,01**.
+> - W przypadku **Opcji formularza zaokrąglania** w **Dół**, **W górę** i **Na korzyść firmy**, zachowanie jest takie samo, jak dla **Zaokrąglenie = 1,00**.
 
-
-### <a name="no-rounding-at-all-since-the-round-off-is-000"></a>Brak zaokrąglania, ponieważ zaokrąglenie wynosi 0,00
-
-round(1.0151, 0.00) = 1.0151 round(1.0149, 0.00) = 1.0149
+| Zaokrąglanie z opcji                | Wartość zaokrąglenia = 0,01 | Wartość zaokrąglenia = 0,10 | Wartość zaokrąglenia = 1,00 | Wartość zaokrąglenia = 100,00 | Wartość zaokrąglenia = 0,00   |
+|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|
+| Normalnie                              | 98,765.43              | 98,765.40              | 98,765.00              | 98,800.00                | 98,765.43                |
+| W dół                            | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Zaokrąglenie w górę                         | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
+| Na korzyść firmy, salda kredytowe | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Na korzyść firmy, salda debetowe  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Normalne zaokrąglenie i normalna dokładność wynoszą 0,01
 
