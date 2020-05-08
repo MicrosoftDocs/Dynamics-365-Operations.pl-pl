@@ -70,12 +70,12 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Finance — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Finance w wersji 10.0.11 (lipiec 2020)
+                      href: get-started/whats-new-changed-10-0-11.md
                     - name: Rozwiązanie Finance w wersji 10.0.10 (maj 2020)
                       href: get-started/whats-new-changed-10-0-10.md
                     - name: Rozwiązanie Finance w wersji 10.0.9 (kwiecień 2020)
                       href: get-started/whats-new-changed-10-0-9.md
-                    - name: Rozwiązanie Finance w wersji 10.0.8 (luty 2020)
-                      href: get-started/whats-new-changed-10-0-8.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Finance
@@ -978,12 +978,16 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: Konfigurowanie standardowych kosztów robocizny i wydatków
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
+            - name: Konfigurowanie i używanie płatności dostawców płatnych po zapłaceniu
+              href: project-management/setup-manage-vendor-payments.md
             - name: Naliczanie kosztów projektu dla przyjęć zakupu
               href: accounts-payable/project-cost-accrual-purchase-receipts.md
             - name: Fakturowanie projektu
               href: accounts-payable/project-invoicing.md
             - name: Umowy dotyczące projektu
               href: project-management/project-contracts.md
+            - name: Tworzenie zaawansowanych umów dla rozliczeń na podstawie stanu realizacji
+              href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
             - name: Prognozy i budżety projektów
               href: project-management/project-forecasts-budgets.md
             - name: Przeniesienie budżetów projektu na koniec roku obrachunkowego
@@ -1014,6 +1018,8 @@
                   href: project-management/mobile-timesheets.md
                 - name: Implementowanie pól niestandardowych dla aplikacji mobilnej Project Timesheet
                   href: project-management/custom-fields-mobile.md
+            - name: Dotacje dotyczące projektu
+              href: project-management/project-grants.md
         - name: Sektor publiczny
           items:
             - name: Sektor publiczny — strona główna
@@ -2016,6 +2022,8 @@
                   href: localizations/emea-ita-exil-unique-certification.md
                 - name: Import oprotestowania weksli
                   href: localizations/emea-ita-exil-protest-boe.md
+                - name: Plafon podatku
+                  href: localizations/emea-ita-exil-tax-plafond.md
             - name: Japonia
               items:
                 - name: Japonia — omówienie
@@ -2922,7 +2930,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
                 - name: Dodawanie wymiarów finansowych do miar agregacji
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-                - name: Tworzenie raportów analitycznych przy użyciu Power BI Desktop
+                - name: Tworzenie raportów analitycznych przy użyciu PowerBI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json

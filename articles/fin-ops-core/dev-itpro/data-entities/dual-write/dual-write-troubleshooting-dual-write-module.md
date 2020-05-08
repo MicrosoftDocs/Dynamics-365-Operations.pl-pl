@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 34c10e38400a72a670a93f2a72d0aa7a4aed561a
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 853791d5ffc1d92b9fbafa2acc13cd5543c38196
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172767"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275540"
 ---
 # <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Rozwiązywanie problemów z modułem podwójnego zapisu w aplikacjach Finance and Operations
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji o podwójnym zapisie między aplikacjami Finance and Operations i Common Data Service. Ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych z modułem **podwójnego zapisu** w aplikacjach Finance and Operations.
 
@@ -41,17 +39,14 @@ Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących i
 
 Jeśli nie można otworzyć strony **podwójnego zapisywania**, wybierając opcję **podwójnego zapisywania** w obszarze roboczym **zarządzanie danymi**, prawdopodobnie usługa integracji danych jest niemożliwa. Utwórz bilet pomocy technicznej, aby zażądać ponownego uruchomienia usługi integracji danych.
 
-## <a name="error-when-you-try-to-create-a-new-entity-mapping"></a>Błąd podczas próby utworzenia mapowania nowej jednostki
+## <a name="error-when-you-try-to-create-a-new-entity-map"></a>Błąd podczas próby utworzenia mapy nowej jednostki
 
-**Wymagane poświadczenia w celu rozwiązania problemu:** administrator dzierżawy Azure AD
+**Wymagane poświadczenia w celu rozwiązania problemu:** Ten sam użytkownik, który skonfigurował podwójne zapisywanie.
 
-Podczas próby skonfigurowania nowej jednostki na potrzeby podwójnego zapisywania może pojawić się następujący komunikat o błędzie:
+Podczas próby skonfigurowania nowej jednostki na potrzeby podwójnego zapisywania może pojawić się następujący komunikat o błędzie. Jedyny użytkownik, który może stworzyć mapę, jest użytkownikiem, który konfiguruje połączenie podwójnego zapisu.
 
 *Kod stanu odpowiedzi nie wskazuje powodzenia: 401 (nieautoryzowany)*
 
-Ten błąd występuje, ponieważ tylko Administrator dzierżawy Azure AD może dodać nowe mapowanie jednostki.
-
-Aby rozwiązać ten problem, zaloguj się w aplikacji Finance and Operations jako Administrator dzierżawy Azure AD. Należy również przejść do witryny sieci Web.PowerApps.com i ponownie sprawdź poprawność połączenia.
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Błąd podczas otwierania interfejsu użytkownika z podwójnym zapisywaniem
 
@@ -63,13 +58,13 @@ Aby rozwiązać ten problem, zaloguj się przy użyciu okna prywatnego w Microso
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-entity-mapping"></a>Błąd podczas łączenia środowiska w celu wykonania podwójnego zapisywania lub dodania nowego mapowania jednostki
 
-**Wymagane poświadczenia w celu rozwiązania problemu:** administrator dzierżawy Azure AD
+**Wymagana rola w celu rozwiązania problemu:** administrator systemu w aplikacjach Finance and Operations i Common Data Service.
 
 Podczas łączenia lub tworzenia map może wystąpić następujący błąd:
 
 *Kod stanu odpowiedzi nie wskazuje powodzenia: 403 (tokenexchange).<br> Identyfikator sesji: \<twój identyfikator sesji\><br> Identyfikator głównego działania: \<twój identyfikator działania głównego\>*
 
-Ten błąd może wystąpić, jeśli użytkownik nie ma wystarczających uprawnień, aby połączyć podwójny zapis lub utworzyć mapy. Aby połączyć środowiska i dodać nowe mapowania jednostek, należy skorzystać z konta administratora dzierżawy Azure AD. Jednak po zakończeniu pracy instalatora można za pomocą konta innego niż administrator monitorować stan i edytować mapowania.
+Ten błąd może wystąpić, jeśli użytkownik nie ma wystarczających uprawnień, aby połączyć podwójny zapis lub utworzyć mapy. Ten błąd może również wystąpić, jeśli środowisko Common Data Service zostało zresetowane bez odłączenia podwójnego zapisu. Każdy użytkownik z rolą administratora systemu w aplikacjach Finance and Operations i Common Data Service może łączyć środowiska. Tylko użytkownik instalujący połączenie podwójnego zapisu może dodawać nowe mapowania jednostek. Po zakończeniu instalacji każdy użytkownik z rolą administratora systemu może monitorować stan i edytować mapowania.
 
 ## <a name="error-when-you-stop-the-entity-mapping"></a>Błąd podczas zatrzymania mapowania jednostki
 
@@ -80,3 +75,14 @@ Podczas próby zatrzymania mapowania encji może pojawić się następujący kom
 Ten błąd występuje, gdy połączone środowisko Common Data Service jest niedostępne.
 
 Aby rozwiązać ten problem, utwórz bilet dla zespołu integracji danych. Dołącz śledzenie sieci, aby zespół integracji danych mógł oznaczyć mapy jako **Nie uruchomione** na zapleczu.
+
+## <a name="error-while-trying-to-start-an-entity-mapping"></a>Błąd podczas próby uruchomienia mapowania jednostki
+
+Podczas próby ustawienia tego stanu mapowania na **Uruchomione**może się pojawić komunikat o błędzie podobny do następującego:
+
+*Nie można ukończyć wstępnej synchronizacji danych. Błąd: błąd podwójnego zapisu — Rejestracja wtyczki nie powiodła się: nie można zbudować metadanych wyszukiwania przy podwójnym zapisie. Odwołanie do obiektu błędu nie jest ustawione na wystąpienie obiektu.*
+
+Poprawka dla tego błędu jest zależna od przyczyny błędu:
+
++ Jeśli mapowanie ma zależne mapowania, należy pamiętać, aby włączyć mapowania zależne tego mapowania jednostki.
++ Być może w mapowaniu brakuje pól źródłowych lub docelowych. Jeśli brak pola w aplikacji Finance and Operations, należy wykonać kroki w sekcji [Problem braku pól jednostki dla map](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Jeśli brakuje pola w Common Data Service, w mapowaniu należy kliknąć przycisk **Odśwież** jednostki, tak aby pola były automatycznie wstawiane ponownie do mapowania.

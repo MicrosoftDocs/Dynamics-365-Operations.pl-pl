@@ -3,7 +3,7 @@ title: Zarządzanie metadanymi funkcji optymalizacji aparatu wyszukiwania
 description: W tym temacie opisano sposób zarządzania metadanymi optymalizacji aparatu wyszukiwania (SEO) w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e7da7bf5c473746413e92babfa943f546b7724d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003471"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270057"
 ---
 # <a name="manage-seo-metadata"></a>Zarządzanie metadanymi funkcji optymalizacji aparatu wyszukiwania
 
@@ -72,13 +72,10 @@ Aby skonfigurować metadane strony, wykonaj następujące kroki.
 1. W obszarze **Witryny** wybierz firmę **Fabrikam** (lub nazwę witryny).
 1. W okienku nawigacji po lewej stronie wybierz **Strony**.
 1. Wybierz stronę główną, aby otworzyć ją w edytorze stron.
-1. W okienku akcji wybierz opcję **Wyewidencjonuj**.
+1. Na pasku poleceń wybierz opcję **Edytuj**.
 1. W okienku właściwości po prawej stronie rozwiń **Domyślne tagi metadanych**.
-1. Aby dodać nowy tag metadanych, wybierz opcję **Dodaj**, a następnie wprowadź znacznik w polu.
-
-    Aby usunąć istniejący tag metadanych, należy wybrać symbol kosza na śmieci.
-
-1. Wybierz **Zapisz** i następnie wybierz **Zaewidencjonuj**.
+1. Aby dodać nowy tag metadanych, wybierz opcję **Dodaj**, a następnie wprowadź znacznik w polu. Aby usunąć istniejący tag metadanych, należy wybrać symbol kosza na śmieci.
+1. Wybierz **Zapisz** i następnie wybierz **Zakończ edycję**.
 1. W polu **Komentarze** wprowadź **Zaktualizowane Tagi metadanych**, a następnie kliknij przycisk **OK**.
 1. Wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. Po zakończeniu Zamknij kartę podglądu, aby powrócić do narzędzia autorskiego.
 1. Wybierz opcję **Publikuj**.

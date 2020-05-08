@@ -22,32 +22,6 @@
                   href: get-started/whats-new-platform-update-33.md
                 - name: Aktualizacja Platform update 32 (luty 2020)
                   href: get-started/whats-new-platform-update-32.md
-                - name: Aktualizacja Platform update 31 (styczeń 2020)
-                  href: get-started/whats-new-platform-update-31.md
-                - name: Aktualizacja Platform update 30 (listopad 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-30.md
-                - name: Aktualizacja Platform update 29 (październik 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-29.md
-                - name: Aktualizacja Platform update 28 (lipiec 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-28.md
-                - name: Aktualizacja Platform update 27 (czerwiec 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-27.md
-                - name: Aktualizacja Platform update 26 (maj 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-26.md
-                - name: Aktualizacja Platform update 25 (kwiecień 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-25.md
-                - name: Aktualizacja Platform update 24 (marzec 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-24.md
-                - name: Aktualizacja Platform update 23 (styczeń 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-23.md
-                - name: Aktualizacja Platform update 22 (grudzień 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-22.md
-                - name: Aktualizacja Platform update 21 (listopad 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-21.md
-                - name: Aktualizacja Platform update 20 (wrzesień 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-20.md
-                - name: Aktualizacja Platform update 15 (marzec 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-15.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje Platform
@@ -104,6 +78,8 @@
               href: dev-tools/exclude-test-packages.md
             - name: Zarządzanie modelami innych firm i pakietami uruchamiania za pomocą kontroli źródła
               href: dev-tools/manage-runtime-packages.md
+            - name: Pakiety do wdrożenia „wszystko razem”
+              href: dev-tools/aio-deployable-packages.md
             - name: Aktualizowanie wersji modeli w kompilacjach automatycznych
               href: dev-tools/version-models-build.md
         - name: Integracja danych
@@ -524,9 +500,9 @@
                       href: analytics/entity-store-on-prem.md
                     - name: Ponowne konfigurowanie środowisk
                       href: lifecycle-services/reconfigure-environment.md
-                    - name: Ponowne wdrażanie wdrożenia lokalnego
+                    - name: Ponowne wdrażanie wdrożeń lokalnych
                       href: deployment/redeploy-on-prem.md
-                    - name: Usuwanie i ponowne instalowanie węzła AOS
+                    - name: 'Usuwanie, ponowne instalowanie lub dodawanie węzła AOS'
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Użyj tego samego wystąpienia komponentu AD FS dla wielu środowisk
                       href: deployment/onprem-reuseadfs.md

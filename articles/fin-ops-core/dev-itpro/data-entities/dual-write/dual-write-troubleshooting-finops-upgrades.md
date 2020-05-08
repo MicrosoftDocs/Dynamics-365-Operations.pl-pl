@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 59384d8e8d043eb14231a471c7218ced2dddf739
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172884"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275471"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Rozwiązywanie problemów związanych z aktualizacjami aplikacji Finance and Operations
 
@@ -85,9 +85,8 @@ Jeśli ten błąd nadal nie jest naprawiony, wykonaj następujące kroki.
 > Te kroki prowadzą użytkownika przez proces usuwania jednostki, a następnie dodawania jej ponownie. Aby uniknąć problemów, należy wykonać dokładnie te kroki.
 
 1. W aplikacji Finance and Operations przejdź do **Obszary robocze \> Zarządzanie danymi** i wybierz kafelek **Jednostki danych**.
-2. Znajdź jednostkę, w której brakuje pola. Należy zwrócić uwagę na jednostkę docelową, tabelę przemieszczania, nazwę jednostki i inne wartości kolumn.
-3. Jeśli jakaś grupa przetwarzania zależy od tej jednostki, przed usunięciem jednostki należy podjąć odpowiednie działanie dla grup przetwarzania.
-4. Usuń jednostkę, w której brakuje pola.
-5. Wybierz **Nowa** i dodaj jednostkę ponownie. Określ wartości, które chcesz uwzględnić w kroku 2.
-6. Otwórz stronę **Mapowania jednostki** ze strony **Podwójny zapis** w aplikacji Finance and Operations.
-7. Wybierz opcję **Odśwież listę jednostek**, aby automatycznie wypełnić pola w mapowaniach jednostek.
+2. Znajdź jednostkę, w której brakuje atrybutu. Kliknij przycisk **Modyfikuj mapowanie** obiektów docelowych na pasku narzędzi.
+3. W okienku **Mapuj dane tymczasowe do celu** kliknij opcję **Generuj mapowanie**.
+4. Otwórz stronę **Mapowania jednostki** ze strony **Podwójny zapis** w aplikacji Finance and Operations.
+5. Jeśli atrybut nie został automatycznie wypełniony na mapie, dodaj go ręcznie, klikając przycisk **Dodaj atrybut**, a następnie klikając przycisk **Zapisz**. 
+6. Wybierz mapę i kliknij przycisk **Uruchom**.

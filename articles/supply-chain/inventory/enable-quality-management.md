@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
-ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
+ms.openlocfilehash: e1d7828e6bb9a3684c1d76e2cfac96174a8dfbf4
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3224916"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268823"
 ---
 # <a name="quality-management-overview"></a>Omówienie zarządzanie jakością
 
@@ -43,7 +43,11 @@ Zarządzanie jakością jest elastyczne i może być implementowane na różne s
 
 -   Automatyczne uruchamianie procesu kontroli jakości, na podstawie wstępnie zdefiniowanych kryteriów (przy rejestracji magazynu zamówienia zakupu od określonego dostawcy).
 -   Blokowanie zapasów podczas inspekcji, aby zapobiec używaniu niezatwierdzonych zapasów (całkowite blokowanie ilości zamówienia zakupu).
--   Używanie kontroli wyrywkowej pozycji w ramach powiązania jakości do określenia kwoty bieżących zapasów fizycznych, które muszą być poddane inspekcji. Kontrola wyrywkowa może dotyczyć stałej ilości lub części określonej procentowo.
+-   Używanie kontroli wyrywkowej pozycji w ramach powiązania jakości do określenia kwoty bieżących zapasów fizycznych, które muszą być poddane inspekcji. Kontrola wyrywkowa może dotyczyć stałej ilości lub części określonej procentowo lub pełnego numeru identyfikacyjnego.
+
+> [!NOTE]
+> Funkcja _Zarządzanie jakością dla procesów magazynowych_ rozszerza możliwości zarządzania jakością. Jeśli ta funkcja jest używana, zobacz [Zarządzanie jakością dla procesów magazynowych](quality-management-for-warehouses-processes.md), aby przejrzeć przykłady sposobu działania funkcji zarządzania jakością, gdy jest ona włączona.
+
 -   Tworzenie zleceń kontroli jakości dla przyjęć częściowych. Aby utworzyć zlecenie kontroli jakości oparte na ilości fizycznie przyjętej względem zamówienia, należy zaznaczyć pole wyboru **Dla zaktualizowanej ilości** w formularzu **Kontrola wyrywkowa towarów**.
 -   Tworzenie typów testów zawierających minimalne, maksymalne i docelowe wartości testu, i testowanie jakościowe vs ilościowe ze wstępnie zdefiniowanymi wynikami weryfikacji.
 -   Określanie akceptowanego poziomu jakości (AQL) do kontrolowania tolerancji pomiaru jakości.
@@ -428,6 +432,9 @@ Jeśli w obszarze produkcji w polu **Typ zdarzenia** zostanie ustawiona wartoś�
 </tbody>
 </table>
 
+> [!NOTE]
+> Funkcja *Zarządzanie jakością dla procesów magazynowych* dodaje możliwości przetwarzania zlecenia kontroli jakości dla produkcji z ustawionym typem **Typ zdarzenia** jako *Zgłoś jako gotowe*, a  **Wykonanie** ma ustawienie *Po* i dla zakupów z typem **Typ zdarzenia** ustawionym jako *Rejestracja*. Aby zapoznać sie ze szczegółami, zobacz [Zarządzanie jakością dla procesów magazynowych](quality-management-for-warehouses-processes.md).
+
 ## <a name="quality-management-pages"></a>Strony zarządzania jakością
 <table>
 <colgroup>
@@ -438,7 +445,7 @@ Jeśli w obszarze produkcji w polu **Typ zdarzenia** zostanie ustawiona wartoś�
 <thead>
 <tr class="header">
 <th>Strona</th>
-<th>Opis</th>
+<th>opis</th>
 <th>Przykład</th>
 </tr>
 </thead>
@@ -495,3 +502,5 @@ Należy określić skojarzenie jakości dla każdego odchylenia w procesie bizne
 [Procesy zarządzania jakością](quality-management-processes.md)
 
 [Zarządzanie brakiem zgodności](enable-nonconformance-management.md)
+
+[Zarządzanie jakością dla procesów magazynowych](quality-management-for-warehouses-processes.md)

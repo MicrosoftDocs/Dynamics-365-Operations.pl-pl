@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje w poprzednich wersjach
 description: W tym temacie opisano funkcje, które zostały usunięte lub które zostały zaplanowane do usunięcia z systemu Dynamics 365 for Finance and Operations i poprzednich wydań tego produktu.
 author: sericks007
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225135"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284021"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
@@ -230,7 +230,7 @@ Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycz�
 | **Zamieniona przez inną funkcję?**   | Nr |
 | **Powiązane obszary produktów**         | Zarządzanie informacjami o produktach |
 | **Opcja wdrażania**              | Wszystkich  |
-| **Stan**                         | Usunięte od wersji Finance and Operations 10.0.0 z aktualizacją Platform update 24. (Jeśli trzeba naprawić uszkodzenie danych spowodowane przez poprzednią nazwę klucza podstawowego zwolnionego produktu, należy skontaktować się z pomocą techniczną firmy Microsoft, aby zażądać tymczasowego usunięcia tego ograniczenia). |
+| **Stan**                         | Usunięte od wersji Finance and Operations 10.0.0 z aktualizacją Platform update 24.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 z aktualizacją platformy 23
@@ -267,7 +267,7 @@ Wbudowanie kluczowych wskaźników wydajności (KPI) może być modelowane w Vis
 | **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w przyszłości. |
 | **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Przestarzałe — ostrzeżenie będzie w przyszłości błędem czasu kompilacji. Ta zmiana została skierowana do aktualizacji platformy dla wersji 10.0.11 aplikacji Finance and Operations. |
+| **Stan**                         | Przestarzałe: Ostrzeżenie błędu czasu kompilacji w aktualizacjach platformy dla wersji 10.0.11 aplikacji Finance and Operations. |
 
 #### <a name="complete-list"></a>Pełna lista
 Aby wyświetlić listę wszystkich interfejsów API, które zostaną wycofane, zobacz [Wycofanie metod i elementów metadanych](deprecation-deletion-apis.md).

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a3d0b6c4ef9e6f21e1542bece9046e98edcab6b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5cbf313666e03c0006bee985bcf622a20ce4e51
+ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207840"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281516"
 ---
 # <a name="purchase-requisition-workflow"></a>przepływ pracy zapotrzebowań zakupu
 
@@ -85,6 +85,9 @@ W tym przykładzie proces przepływu pracy dla wierszy zamówienia na zakup obej
 3.  Kierownik linii zleceniodawcy sprawdza i zatwierdza wiersze zapotrzebowania na zakup. Zatwierdzenie może zostać skierowane do menedżera zleceniodawcy, jeśli na przykład kwota wiersza zapotrzebowania na zakup przekracza limit wydatków zlecającego związanych z wierszami zapotrzebowania na zakup. Menedżer można zatwierdzić lub odrzucić jeden lub oba wiersze zapotrzebowania na zakup.
 4.  Menedżer działu marketingu sprawdza wiersze zapotrzebowania na zakup dotyczące plakatów i koszulek. Menedżer działu sprzedaży sprawdza tylko te wiersze zapotrzebowania na zakup, które dotyczą plakatów, ponieważ jest to jedyny koszt, za który odpowiada dział sprzedaży.
 5.  Menedżer grupy przegląda i zatwierdza wiersz zapotrzebowania na zakup koszulek tylko wtedy, gdy wymagana jest zgoda menedżera grupy, np. gdy kwota wiersza zapotrzebowania na zakup przekracza limit zatwierdzania kierownika działu. Menedżer grupy nie musi zatwierdzać wiersza zapotrzebowania na zakup plakatów.
+
+> [!NOTE]
+> Waluta systemowa musi być ustawiona, jeśli przepływ pracy nagłówka dla zapotrzebowania na zakup wymaga zatwierdzenia związanego z limitami podpisywania.
 
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Konfigurowanie przepływu pracy dla zapotrzebowań na zakup
 Aby skierować zapotrzebowanie na zakup do przeglądu, należy skonfigurować procesy przepływu pracy zapotrzebowania na zakup. Definiowany proces przepływu pracy kontroluje interakcje między użytkownikiem, który zgłosił zapotrzebowanie na pozycje (zleceniodawca), a osobami sprawdzającą i zatwierdzającą w przepływie pracy. Kierowanie zapotrzebowania na zakup zależy od warunków, które są określone w konfiguracji przepływu pracy. Na przykład warunki te mogą określać, kiedy zapotrzebowanie na zakup ma być kierowane, użytkownika lub rolę, do której zapotrzebowanie na zakup ma być kierowane oraz działania, które użytkownik może podjąć.  

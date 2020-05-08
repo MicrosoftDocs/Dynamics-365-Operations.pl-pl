@@ -3,7 +3,7 @@ title: Moduł karuzeli
 description: W tym temacie opisano moduły karuzeli i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f279d7db0a92df9e64b1d3f6ca01c65ca1478d79
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: f399e4c5618b65b781fdd3ec835e841614579313
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025788"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269735"
 ---
 # <a name="carousel-module"></a>Moduł karuzeli
 
@@ -58,24 +58,25 @@ Moduły główne i bloku zawartości można dodawać w module karuzeli. Właści
 
 Aby dodać moduł karuzeli do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Utwórz szablon strony o nazwie nazwa **szablon karuzeli**.
+1. Wybierz pozycję **Nowy**, aby utworzyć nowy szablon strony.
+1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon karuzeli**, a następnie wybierz **OK**.
 1. W miejscu **Treść** dodaj moduł **Strona domyślna**.
-1. Zaewidencjonuj szablon i opublikuj go. 
-1. Za pomocą utworzonego właśnie szblonu karuzeli utwórz stronę o nazwie **strona karuzeli**.
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.  
+1. Za pomocą utworzonego właśnie szblonu karuzeli utwórz stronę o nazwie **Strona karuzeli**.
 1. W **Głównym** gnieździe na nowej stronie dodaj moduł kontenera. 
 1. W okienku po prawej stronie określ wartość **Szerokości** jako **ekran wypełnienia**.
 1. W obszarze **Konspekt strony** dodaj moduł karuzeli do modułu kontenerów.
 1. W module kontenera dodaj moduł bloku zawartości. Umożliwia ustawienie właściwości modułu blok zawartości przez udostępnienie **nagłówka**, **łącza**, **układu** i innych właściwości.
 1. Dodaj i skonfiguruj inny moduł bloku zawartości.
 1. W razie potrzeby skonfiguruj dodatkowe właściwości dla modułu karuzeli.
-1. Zapisz i zobacz podgląd strony. Na stronie powinna być wyświetlana karuzela zawierająca dwa moduły (moduł główny i moduł funkcji). Aby osiągnąć pożądany efekt, można zmienić dodatkowe właściwości dla karuzeli, głównego i modułów funkcji.
-1. Zakończ edytowanie strony i opublikuj go.
+1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. Na stronie powinna być wyświetlana karuzela zawierająca dwa moduły (moduł główny i moduł funkcji). Aby osiągnąć pożądany efekt, można zmienić dodatkowe właściwości dla karuzeli, głównego i modułów funkcji.
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie zestawu początkowego](starter-kit-overview.md)
 
-[Moduł baneru promocyjnego](add-alert.md)
+[Moduł transparentu promocyjnego](add-alert.md)
 
 [Moduł bloku zaawansowanej zawartości](add-content-rich-block.md)
 

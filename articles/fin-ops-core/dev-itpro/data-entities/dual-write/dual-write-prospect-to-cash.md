@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 12a0e07d1c60a359b3ba6c0d20176927ffe89431
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 57aabeef0ee94b4b13bbe6e3925bcafe1e809ab2
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172815"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270295"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Od prospekta do kasy w podwójnym zapisie
 
@@ -66,6 +66,14 @@ Oferty sprzedaży mogą być tworzone albo w Sales, albo Supply Chain Management
 + Można dodać rabat do produktu w ofercie. W takim przypadku rabat zostanie zsynchronizowany z Supply Chain Management. Pola **Rabat**, **Opłaty** i **Podatek** w nagłówku są kontrolowane przez konfigurację w programie Supply Chain Management. Ta konfiguracja nie obsługuje mapowania integracji. Zamiast tego w obecnym kształcie systemu pola **Cena**, **Rabat**, **Opłata** i **Podatek** są zarządzane i obsługiwane przez program Supply Chain Management.
 + Pola tylko do odczytu w nagłówku oferty sprzedaży: **% rabatu**, **Rabat** i **Kwota frachtu**.
 + Pola **Warunki frachtu**, **Warunki dostawy**, **Metoda wysyłki** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te pola, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana jednostka.
+
+Jeśli używane jest także rozwiązanie Field Service, należy ponownie włączyć parametr **Szybkie utworzenie wiersza oferty**. Ponowne włączenie parametru umożliwia kontynuowanie tworzenia wierszy oferty przy użyciu funkcji szybkiego tworzenia.
+1. Przejdź do aplikacji Dynamics 365 Sales.
+2. Wybierz ikonę ustawienia na górnym pasku nawigacyjnym.
+3. Wybierz **Ustawienia zaawansowane**.
+4. Wybierz opcję **Dostosuj system**.
+5. Wybierz pozycję w menu **Wiersz oferty**.
+6. Przejdź do sekcji **Usługi danych** i zaznacz pole wyboru **Zezwalaj na szybkie tworzenie**.
 
 ## <a name="sales-orders"></a>Zamówienia sprzedaży
 

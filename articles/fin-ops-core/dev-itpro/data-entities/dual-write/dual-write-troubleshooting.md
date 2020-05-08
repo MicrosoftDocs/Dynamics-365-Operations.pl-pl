@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172698"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275657"
 ---
 # <a name="general-troubleshooting"></a>Rozwiązywanie ogólnych problemów
 
@@ -70,14 +70,12 @@ Aby włączyć śledzenie, należy wykonać następujące kroki.
 Aby zobaczyć dziennik śledzenia, należy wykonać następujące kroki.
 
 1. Zaloguj się do aplikacji Finance and Operations, otwórz stronę **Ustawień**, a następnie w obszarze **Dostosowywanie** wybierz opcję **Dziennik śledzenia wtyczek**.
-2. Znajdź dzienniki śledzenia, w których w polu **Nazwa typu** jest ustawiona wartość **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+2. Znajdź dzienniki śledzenia, w których w polu **Nazwa typu** jest ustawiona wartość **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Kliknij dwukrotnie towar, aby wyświetlić pełny dziennik, a następnie w skróconej karcie **Wykonania** przejrzyj tekst **Bloku wiadomości**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Włącz tryb debugowania w celu rozwiązywania problemów z synchronizacją na żywo w aplikacjach Finance and Operations
 
-**Wymagana rola w celu wyświetlania problemów:** administrator systemu
-
-Błędy podwójnego zapisywania, które pochodzą z Common Data Service, mogą pojawić się w aplikacji Finance and Operations. W niektórych przypadkach pełny tekst komunikatu o błędzie jest niedostępny, ponieważ wiadomość jest zbyt długa lub zawiera informacje identyfikacyjne (dane osobowe). Pełne rejestrowanie błędów można włączyć, wykonując następujące kroki:
+**Wymagana rola do wyświetlania błędów:** błędy podwójnego zapisywania administratora systemu Common Data Service mogą pojawić się w aplikacji Finance and Operations. W niektórych przypadkach pełny tekst komunikatu o błędzie jest niedostępny, ponieważ wiadomość jest zbyt długa lub zawiera informacje identyfikacyjne (dane osobowe). Pełne rejestrowanie błędów można włączyć, wykonując następujące kroki:
 
 1. Wszystkie konfiguracje projektu w aplikacjach Finance and Operations mają właściwość **IsDebugMode** w jednostce **DualWriteProjectConfiguration**. Otwórz jednostkę **DualWriteProjectConfiguration** przy użyciu dodatku programu Excel.
 
@@ -92,7 +90,7 @@ Błędy podwójnego zapisywania, które pochodzą z Common Data Service, mogą p
 
 ## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Sprawdź błędy synchronizacji na maszynie wirtualnej dla aplikacji Finance and Operations
 
-**Wymagana rola w celu wyświetlania problemów:** administrator systemu
+**Wymagana rola w celu wyświetlania problemów:** Administrator systemu
 
 1. Zaloguj się do Microsoft Dynamics LifeCycle Services (LCS).
 2. Otwórz projekt LCS, który wybrano do wykonania podwójnego zapisu.
@@ -104,7 +102,7 @@ Błędy podwójnego zapisywania, które pochodzą z Common Data Service, mogą p
 
 ## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Odłącz i Połącz inne środowisko Common Data Service z poziomu aplikacji Finance and Operations
 
-**Wymagane poświadczenia do odłączenia środowiska:** administrator dzierżawy Azure AD
+**Wymagana rola do rozłączenia środowiska:** administrator systemu dla każdej aplikacji Finance and Operations lub Common Data Service.
 
 1. Zaloguj się do aplikacji Finance and Operations.
 2. Przejdź do **Obszary robocze \> Zarządzanie danymi** i wybierz opcję **Podwójny zapis**.
@@ -113,3 +111,13 @@ Błędy podwójnego zapisywania, które pochodzą z Common Data Service, mogą p
 5. Wybierz **tak**, aby potwierdzić operację.
 
 Teraz można połączyć nowe środowisko.
+
+## <a name="unable-to-view-the-sales-order-line-information-form"></a>Nie można wyświetlić formularza informacji o wierszu zamówienia sprzedaży 
+
+Po utworzeniu zamówienia sprzedaży w systemie Dynamics 365 Sales, kliknięcie **+ Dodaj produkty** może spowodować przekierowanie do formularza wiersza zamówienia Dynamics 365 Project Operations. Nie ma sposobu na podstawie tego formularza, aby wyświetlić formularz **Informacji** o wierszu zamówienia sprzedaży. Opcja dotycząca **Informacji** nie jest wyświetlana w polu listy rozwijanej pod **Nowy wiersz zamówienia**. Dzieje się tak, ponieważ Project Operations zostało zainstalowane w danym środowisku.
+
+Aby ponownie włączyć opcję formularza **Informacji**, wykonaj następujące kroki:
+1. Umożliwia przejście do jednostki **Wiersza zamówienia**.
+2. Znajdź formularz **Informacje** w węźle formularze. 
+3. Zaznacz formularz **Informacje** i kliknij pozycję **Włącz role zabezpieczeń**. 
+4. Zmień ustawienie zabezpieczeń, aby było **Wyświetlane dla wszystkich**.

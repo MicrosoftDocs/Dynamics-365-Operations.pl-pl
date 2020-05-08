@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 79b4640a23d4fc78ade4de57e4071abe6c9ecb56
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042718"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284363"
 ---
 # <a name="electronic-reporting-formula-language"></a>Język formuł raportowania elektronicznego
 
 [!include [banner](../includes/banner.md)]
 
-Raportowanie elektroniczne (ER) oferuje zaawansowane środowisko przekształcania danych. Język, który jest używany do wyrażania wymaganych modyfikacji danych w projektancie formuły ER, przypomina język formuł w programie Microsoft Excel.
+Raportowanie elektroniczne (ER) oferuje zaawansowane środowisko przekształcania danych. Język, który jest używany do wyrażania wymaganych modyfikacji danych w [projektancie formuły ER](general-electronic-reporting-formula-designer.md), przypomina język formuł w programie Microsoft Excel.
 
 ## <a name="basic-syntax"></a>Podstawowa składnia
 
@@ -41,13 +41,13 @@ Wyrażenia raportowania elektronicznego mogą zawierać dowolne lub wszystkie z 
 - [Ścieżki](#Paths)
 - [Funkcje](#Functions)
 
-## <a name="Constants">Stałe</a>
+## <a name=""></a><a name="Constants">Stałe</a>
 
 Do projektowania wyrażeń można używać stałych tekstowych i liczbowych (tzn. wartości, które nie są obliczane). Na przykład w wyrażeniu `VALUE ("100") + 20` są używane stała liczbowa **20** i stała ciągu **100**, a wyrażenie zwraca wartość liczbową **120**.
 
 Projektanta formuł ER obsługuje sekwencje specjalne. Oznacza to, że można określić ciąg wyrażenia, który powinien być traktowany inaczej. Na przykład wyrażenie `"Leo Tolstoy ""War and Peace"" Volume 1"` zwraca ciąg tekstowy **Leo Tolstoy "War and Peace" Volume 1**.
 
-## <a name="Operators">Operatory</a>
+## <a name=""></a><a name="Operators">Operatory</a>
 
 W poniższej tabeli przedstawiono operatory arytmetyczne, których można używać do wykonania podstawowych operacji matematycznych, takich jak dodawanie, odejmowanie, mnożenie i dzielenie.
 
@@ -91,7 +91,7 @@ Kolejność, w jakiej części wyrażenia złożonego są obliczane, jest ważna
 
 Jeśli wyrażenie zawiera wiele następujących po sobie operatorów, które mają ten sam priorytet (pierwszeństwo), operacje te są wykonywane od lewej do prawej. Na przykład wyrażenie `1 + 6 / 2 \* 3 > 5` zwraca wartość **prawda**. Zaleca się używanie nawiasów w celu jawnego wskazania żądanej kolejności operacji w wyrażeniach, aby ułatwić odczyt wyrażenia i zarządzanie nim.
 
-## <a name="References">Odwołania</a>
+## <a name=""></a><a name="References">Odwołania</a>
 
 Wszystkie źródła danych bieżącego składnika ER, które są dostępne podczas projektowania wyrażenia, mogą być używane jako odwołania nazwane. Bieżącym składnikiem modułu ER może być mapowanie modelu lub format. Na przykład bieżące mapowanie modelu danych ER zawiera źródło danych **ReportingDate**, które zwraca wartość o typie danych *DateTime*. Aby ta wartość była poprawnie sformatowana w generowanym dokumencie, można utworzyć odwołanie z wyrażenia do źródła danych w postaci `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
@@ -112,7 +112,7 @@ Można ograniczyć sposób, w jaki wartości są przekazywane do parametrów teg
 - Tylko stałe mogą być przekazywane do tego typu metod. Wartości stałych są definiowane w czasie projektowania.
 - W parametrach tego typu są obsługiwane tylko pierwotne (podstawowe) typy danych. Pierwotne typy danych to *liczby całkowite*, *liczby rzeczywiste*, *wartości logiczne* i *ciągi*.
 
-## <a name="Paths">Ścieżki</a>
+## <a name=""></a><a name="Paths">Ścieżki</a>
 
 Jeśli wyrażenie odwołuje się do źródła danych usystematyzowanych, można użyć definicji ścieżki, aby wybrać określony element podstawowy tego źródła danych. Znak kropki (.) jest używany do oddzielania poszczególnych elementów źródła danych usystematyzowanych. Na przykład bieżące mapowanie modelu danych ER zawiera źródło danych **InvoiceTransactions**, które zwraca listę rekordów. Struktura rekordu **InvoiceTransactions** zawiera pola **AmountDebit** i **AmountCredit**, które zwracają wartości liczbowe. W związku z tym można zaprojektować następujące wyrażenie, aby obliczyć zafakturowaną kwotę: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. Konstrukcja `InvoiceTransactions.AmountDebit` w tym wyrażeniu jest ścieżką, która jest używana do uzyskiwania dostępu do pola **AmountDebit** źródła danych **InvoiceTransactions** typu *Lista rekordów*.
 
@@ -130,7 +130,7 @@ Pozostała część ścieżki bezwzględnej jest również wyświetlana w [edyto
 
 ![Pozostała część ścieżki bezwzględnej na stronie projektanta formuł ER](./media/ER-FormulaLanguage-RelativePath2.png)
 
-## <a name="Functions">Funkcje</a>
+## <a name=""></a><a name="Functions">Funkcje</a>
 
 Wbudowane funkcje modułu ER mogą być używane w wyrażeniach ER. Wszystkie źródła danych kontekstu wyrażenia (czyli bieżące mapowanie modelu ER lub format ER) mogą służyć jako parametry funkcji wywołujących, zgodnie z listą argumentów funkcji wywołujących. Parametrami funkcji wywołujących mogą być również stałe. Na przykład bieżące mapowanie modelu danych ER zawiera źródło danych **InvoiceTransactions**, które zwraca listę rekordów. Struktura rekordu **InvoiceTransactions** zawiera pola **AmountDebit** i **AmountCredit**, które zwracają wartości liczbowe. W efekcie w celu obliczania zafakturowanej kwoty można zaprojektować następujące wyrażenie używające wbudowanej funkcji zaokrąglania ER: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`
 

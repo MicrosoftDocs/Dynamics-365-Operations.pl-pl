@@ -3,7 +3,7 @@ title: Zamknięcie zapasów
 description: W ramach procesu rozliczania transakcji rozchodu z transakcjami przychodu można również wybrać aktualizowanie księgi głównej, tak aby uwzględniała wprowadzane korekty.
 author: AndersGirke
 manager: tfehr
-ms.date: 10/24/2017
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83c88a5fe52e41df5a0371d6666f544996bd3c76
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9e9f0608c9afc25e7ca6657f6a2e87d088d4cbad
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201647"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3283997"
 ---
 # <a name="inventory-close"></a>Zamknięcie zapasów
 
@@ -59,11 +59,10 @@ Niektóre zadania, które można wykonać na stronie **Zamknięcie i korekta**, 
 
 Konta księgowe aktualizowane wskutek tych zadań są powiązane z pierwotną transakcja magazynową. Na przykład jeśli zamówienie sprzedaży jest rozliczane względem zamówienia zakupu, konta księgi głównej użyte w pierwotnym zamówieniu sprzedaży zostaną skorygowane. To zachowanie występuje nawet wtedy, gdy konta księgowe grupy towarów przypisanej do towaru zostały zmienione po zaksięgowania zamówienia sprzedaży. Gdy zamknięcie zapasów utworzy kwotę rozliczenia, kwota zostanie zaksięgowana na pierwotnych kontach księgowych, a nie na nowych kontach księgowych przypisanych do towaru. Księga główna może także zostać aktualizowana po wycofaniu zamknięcia zapasów. 
 
-**Uwagi:**
-
--   Zamknięcie zapasów nie jest wymagane, jeśli jest używana metoda wyceny zapasów Koszt standardowy.
--   Przed uruchomieniem procedury zamknięcia można wyświetlić listę towarów, które nie mogą zostać rozliczone podczas aktualizacji.
--   Zaleca się wykonywanie zamknięcia zapasów poza godzinami szczytu, kiedy zasoby obliczeniowe mogą być bardziej równomiernie rozdzielone.
+> [!NOTE] 
+> - Zamknięcie zapasów jest wymaganym krokiem w procedurze zamykania miesiąca dla wszystkich modeli magazynu. Obejmuje to standardowe i ruchome koszty średnie. Nie będzie można zamknąć okresu obrachunkowego, dopóki nie zostanie przeprowadzone zamknięcie magazynu z datą zakończenia okresu.
+> - Przed uruchomieniem procedury zamknięcia można wyświetlić listę towarów, które nie mogą zostać rozliczone podczas aktualizacji.
+> - Zaleca się wykonywanie zamknięcia zapasów poza godzinami szczytu, kiedy zasoby obliczeniowe mogą być bardziej równomiernie rozdzielone.
 
 ## <a name="the-inventory-close-log"></a> Dziennik zamknięcia magazynu
 Po zamknięciu zapasów w centrum komunikatów może się pojawić komunikat, że jednostkowe koszty własne mogą być błędne ze względu na niemożność kompletnego rozliczenia transakcji. 
@@ -85,7 +84,6 @@ W pewnych sytuacjach nie można nic zrobić w reakcji na ostrzeżenia. Na przyk�
 ## <a name="reversing-a-completed-inventory-close"></a>Wycofywanie ukończonego zamknięcia zapasów
 Czasami może być konieczne wycofanie ukończonego zamknięcia zapasów w celu przywrócenie rozliczeń do stanu sprzed wprowadzenia korekt. Anulowanie ukończonego zamknięcia magazynu powoduje ponowne otwarcie magazynu w celu umożliwienia księgowania we właściwym okresie, który obejmuje to zamknięcie magazynu. Pokrewne zmiany mogą być również dokonane w księdze głównej. Po dokonaniu wszystkich korekt można ponownie wykonać zamknięcie zapasów dla okresu, nad którym pracujesz. 
 
-**Uwaga:** Można ponownie otworzyć tylko ostatni okres zapasów, który został zamknięty. Aby cofnąć wcześniejsze zamknięcie zapasów, należy wycofać jedno po drugim wszystkie kolejne zamknięcie, począwszy od najnowszego.
-
-
+> [!NOTE] 
+> Można ponownie otworzyć tylko ostatni okres zapasów, który został zamknięty. Aby cofnąć wcześniejsze zamknięcie zapasów, należy wycofać jedno po drugim wszystkie kolejne zamknięcie, począwszy od najnowszego.
 

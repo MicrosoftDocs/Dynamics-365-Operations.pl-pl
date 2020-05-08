@@ -3,7 +3,7 @@ title: Modyfikacja istniejącej strony witryny
 description: W tym temacie opisano sposób modyfikowania istniejącej strony witryny w Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c393fc143214c2c7c7ddad9a77e273e1e53e34ac
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 87c90ed6ee62a094fe44f549c827cf9de2bf5b2f
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003448"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270011"
 ---
 # <a name="modify-an-existing-site-page"></a>Modyfikacja istniejącej strony witryny
 
@@ -36,11 +36,11 @@ W tym temacie opisano sposób modyfikowania istniejącej strony witryny w Micros
 W przypadku konieczności zmodyfikowania strony pierwszym krokiem jest otwarcie jej w edytorze stron. Przejdź do witryny, która zawiera stronę, a następnie na liście stron znajdź żądaną stronę. Jeśli nie możesz znaleźć strony, możesz skorzystać z funkcji wyszukiwania rozszerzonego narzędzia autorskiego. Należy wpisać dokładną nazwę strony lub wpisać kilka pierwszych liter, a następnie gwiazdkę (\*). Zostanie wyświetlona filtrowana lista stron. Tej listy można użyć, aby znaleźć żądaną stronę. Po znalezieniu poprawnej strony wybierz nazwę strony, aby otworzyć stronę w edytorze stron.
 
 > [!TIP]
-> Jeśli strona jest widoczna w Inspektorze stron, można ją zaznaczyć i wyewidencjonować przed otwarciem jej w edytorze stron. W ten sposób można wyewidencjonować wiele stron jednocześnie.
+> Jeśli strona jest widoczna w Inspektorze stron, można wybrać **Edytuj** i wyewidencjonować stroę przed otwarciem jej w edytorze stron. W ten sposób można wyewidencjonować wiele stron jednocześnie.
 
-Po otwarciu strony w edytorze stron należy upewnić się, że została ona wyewidencjonowana dla tego użytkownika. Pasek poleceń w narzędziu autorskim jest dynamiczny, kontekstowy i z uwzględnieniem stanu. W związku z tym są wyświetlane tylko akcje, które można obecnie wykonać na stronie. Jeśli na przykład strona nie jest wyewidencjonowana dla użytkownika, przyciski **Zapisz** i **Zaewidencjonuj** nie są wyświetlane na pasku poleceń. Stan strony jest również pokazany po prawej stronie okna.
+Po otwarciu strony w edytorze stron należy upewnić się, że została ona wyewidencjonowana dla tego użytkownika. Pasek poleceń w narzędziu autorskim jest dynamiczny, kontekstowy i z uwzględnieniem stanu. W związku z tym są wyświetlane tylko akcje, które można obecnie wykonać na stronie. Jeśli na przykład strona nie jest wyewidencjonowana dla użytkownika, przyciski **Zapisz** i **Zakończ edycję** nie są wyświetlane na pasku poleceń. Stan strony jest również pokazany po prawej stronie okna.
 
-Jeśli strona nie jest jeszcze wyewidencjonowana dla użytkownika, wybierz opcję **Wyewidencjonuj** na pasku poleceń. Pasek poleceń zmieni się, odzwierciedlając nowy stan strony. Użytkownik otrzymuje również powiadomienie informujące o tym, że strona została wyewidencjonowana dla danego użytkownika.
+Jeśli strona nie jest jeszcze wyewidencjonowana dla użytkownika, wybierz opcję **Edytuj** na pasku poleceń. Pasek poleceń zmieni się, odzwierciedlając nowy stan strony. Użytkownik otrzymuje również powiadomienie informujące o tym, że strona została wyewidencjonowana dla danego użytkownika.
 
 Następnym krokiem jest wprowadzenie rzeczywistych zmian. Często używasz drzewa konspektu strony po lewej stronie, aby znaleźć i wybrać moduł, który chcesz zmienić, a następnie wprowadzić zmiany w panelu właściwości po prawej stronie. 
 
@@ -49,7 +49,7 @@ Jednak ta zmiana może czasami wymagać dodania lub usunięcia modeli lub fragme
 > [!TIP]
 > Można również wyświetlać i edytować właściwości każdego modułu widocznego w „widocznym dla użytkownika podglądzie” (WYSIWYG), zaznaczając go bezpośrednio.
 
-Po wprowadzeniu zmian i przejrzeniu ich efektu należy zaewidencjonować stronę, wybierając opcję **Zaewidencjonuj** na pasku poleceń. 
+Po wprowadzeniu zmian i przejrzeniu ich efektu należy zaewidencjonować stronę, wybierając opcję **Zakończ edycję** na pasku poleceń. 
 
 Aby natychmiast opublikować zmiany, wybierz opcję **Opublikuj** na pasku poleceń. Najnowsza zaewidencjonowana wersja zmodyfikowanej strony została opublikowana i stanie się dostępna dla użytkowników zewnętrznych, którzy przeglądają witrynę. 
 
@@ -60,14 +60,14 @@ Poniższy przykład ilustruje sposób modyfikowania strony głównej przez zmian
 1. W obszarze **Witryny** wybierz **Fabrikam** (lub nazwę witryny).
 1. W okienku nawigacji po lewej stronie wybierz **Strony**.
 1. Znajdź i wybierz stronę główną, aby otworzyć ją w edytorze stron.
-1. Na pasku poleceń wybierz opcję **Wyewidencjonuj**.
+1. Na pasku poleceń wybierz opcję **Edytuj**.
 1. W konspekcie strony wybierz **Główne** gniazdo.
 1. W obszarze **Głównym** gniazda rozwiń wszystkie moduły kontenera cieczy.
 1. Znajdź i wybierz moduł odtwarzacza wideo.
 1. W panelu właściwości po prawej wybierz właściwość **wideo**. Zostanie wyświetlony selektor środków trwałych.
 1. W obszarze wyboru składników majątku wybierz dostępny zasób wideo lub wybierz opcję **Przekaż nowy składnik**, aby przekazać nowy składnik wideo.
 1. Kliknij przycisk **OK**.
-1. Wybierz **Zapisz** i następnie wybierz **Zaewidencjonuj**.
+1. Wybierz **Zapisz** i następnie wybierz **Zakończ edycję**.
 1. W polu **Komentarze** wprowadź **Zmieniono wideo**, a następnie kliknij przycisk **OK**.
 1. Wybierz opcję **Podgląd**, aby wyświetlić podgląd aktualizowanej strony produktu. Po zakończeniu Zamknij kartę podglądu, aby powrócić do narzędzia autorskiego.
 1. Wybierz opcję **Publikuj**.

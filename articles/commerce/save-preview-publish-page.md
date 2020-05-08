@@ -3,7 +3,7 @@ title: Zapisywanie, pogląd i publikowanie strony
 description: W tym temacie opisano, jak zapisać, wyświetlić podgląd i opublikować stronę w Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 04200264fabca265484b5e66426810efe8028a50
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002827"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269988"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Zapisywanie, pogląd i publikowanie strony
-
 
 [!include [banner](includes/banner.md)]
 
@@ -33,7 +32,7 @@ W tym temacie opisano, jak zapisać, wyświetlić podgląd i opublikować stron�
 
 ## <a name="save-a-page"></a>Zapisywanie strony
 
-Aby zapisać stronę, należy ją wyewidencjonować i otworzyć w edytorze stron. Stronę należy zapisać bezpośrednio po jej zmodyfikowaniu, aby zagwarantować przechowywanie wprowadzonych zmian.
+Aby zapisać stronę, należy ją wyewidencjonować i otworzyć w edytorze stron. Aby wyewidencjonować stronę, na pasku poleceń wybierz opcję **Edytuj**. Po zakończeniu edycji stronę należy zapisać, aby zagwarantować przechowywanie wprowadzonych zmian.
 
 Po zapisaniu strony zmiany są widoczne tylko dla użytkownika. Operacja zapisywania jest przeznaczona głównie do przechowywania zmian, gdy strona nie jest jeszcze gotowa do zaewidencjonowania. Po zakończeniu modyfikowania strony zaleca się zaewidencjonowanie jej w systemie, aby zmiany stały się widoczne dla innych osób. Na tym etapie strona może być również wyewidencjonowana przez innych użytkowników, którzy muszą ją zmodyfikować.
 
@@ -50,7 +49,7 @@ Po zakończeniu modyfikowania strony można wyświetlić jej podgląd, aby zobac
 
 ## <a name="publish-a-page"></a>Opublikuj stronę
 
-Gdy strona jest gotowa, następnym krokiem jest jej opublikowanie, dzięki czemu użytkownicy zewnętrzni będą mogli wyświetlić zawartość. Zanim będzie możliwe opublikowanie strony, musisz ją zaewidencjonować.
+Gdy strona jest gotowa, następnym krokiem jest jej opublikowanie, dzięki czemu użytkownicy zewnętrzni będą mogli wyświetlić zawartość. Zanim będzie możliwe opublikowanie strony, należy ją wyewidencjować, wybierając opcję **Zakończ edycję** na pasku poleceń.
 
 Strony można publikować i cofać ich publikowanie za pomocą Inspektora stron lub edytora stron. W Inspektorze stron jest wyświetlana lista stron umożliwiająca wykonywanie operacji zbiorczych. Edytora stron można używać do publikowania lub cofania publikowania tylko jednej strony otwartej w tym edytorze.
 
@@ -70,9 +69,9 @@ Aby zapisać, przejrzeć i opublikować stronę główną, należy wykonać nast
 1. W obszarze **Witryny** wybierz **Fabrikam** (lub nazwę witryny).
 1. W okienku nawigacji po lewej stronie wybierz **Strony**.
 1. Znajdź i wybierz stronę główną, aby otworzyć ją w edytorze stron.
-1. Wybierz **Wyewidencjonuj**.
+1. Wybierz opcję **Edycja**.
 1. Zmodyfikuj stronę stosownie do potrzeb.
-1. Wybierz **Zapisz** i następnie wybierz **Zaewidencjonuj**.
+1. Wybierz **Zapisz** i następnie wybierz **Zakończ edycję**.
 1. W polu **Komentarze** wprowadź notatkę dotyczącą wprowadzonych zmian, a następnie kliknij przycisk **OK**.
 1. Wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. Po zakończeniu Zamknij kartę podglądu, aby powrócić do narzędzia autorskiego.
 1. Wybierz opcję **Publikuj**.

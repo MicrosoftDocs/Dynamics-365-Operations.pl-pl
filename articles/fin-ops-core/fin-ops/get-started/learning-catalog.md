@@ -3,20 +3,20 @@ title: Katalog szkoleń dla Finance and Operations
 description: Poznaj wszystkie opcje szkoleń dla Finance and Operations.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 04/17/2020
 ms.author: v-lshann
-audience: Application User
+audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: Operations
 ms.search.region: Global
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 751e0ec649d962af084f992957f0e4821ea9509d
-ms.sourcegitcommit: 41950e3b5e4d1d0014bef308ac017cb4c2b8e134
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 32b67cfd4c007ddc590cd0ee95255d6f3fbc1d17
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078000"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3279064"
 ---
 # <a name="learning-catalog-for-finance-and-operations"></a>Katalog szkoleń dla Finance and Operations
 
@@ -33,6 +33,10 @@ Znajdź odpowiednie szkolenia online, warsztaty i wydarzenia dla swojej roli jak
     Czy decydujesz, czy inwestować w nowe technologie? 
 
     [Decyzje biznesowe i techniczne dla podmiotów ds. katalog szkoleń](learning-catalog-bdm.md#)
+
+    [Rozpocznij](learning-catalog-bdm.md#get-started)
+
+    [Egzamin](learning-catalog-bdm.md#exam)
 
         :::column-end:::
     :::column:::
@@ -53,12 +57,14 @@ Znajdź odpowiednie szkolenia online, warsztaty i wydarzenia dla swojej roli jak
 
     [Zarządzanie finansami](learning-catalog-business-user.md#financial-management)
 
+    [Egzamin](learning-catalog-business-user.md#exam)
+
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-        ### <a name="implementation-project-managers"></a>Menedżerowie projektów implementacji
+    ### <a name="implementation-project-managers"></a>Menedżerowie projektów implementacji
 
     Czy odpowiadasz za to, aby implementacja w Twojej firmie przebiegła sprawnie?
 
@@ -73,6 +79,9 @@ Znajdź odpowiednie szkolenia online, warsztaty i wydarzenia dla swojej roli jak
     [Produkcja](learning-catalog-project-manager.md#manufacturing)
 
     [Zarządzanie łańcuchem dostaw](learning-catalog-project-manager.md#supply-chain-management)
+
+    [Egzaminy](learning-catalog-project-manager.md#exams)
+
         :::column-end:::
     :::column:::
 
@@ -82,15 +91,19 @@ Znajdź odpowiednie szkolenia online, warsztaty i wydarzenia dla swojej roli jak
 
     [Administrator — katalog szkoleń](learning-catalog-administrator.md)
 
-    [Wprowadzenie](learning-catalog-administrator.md#get-started)
+    [Rozpocznij](learning-catalog-administrator.md#get-started)
 
     [Podstawowa znajomość platformy](learning-catalog-administrator.md#core-platform-knowledge)
+
+    [Podstawowe programowanie](learning-catalog-administrator.md#core-development)
 
     [Uaktualnianie i migracja](learning-catalog-administrator.md#migration-and-upgrade)
 
     [Obsługa](learning-catalog-administrator.md#servicing)
 
     [Testowanie](learning-catalog-administrator.md#testing)
+
+    [Egzamin](learning-catalog-administrator.md#exam)
 
   :::column-end:::
 :::row-end:::
@@ -131,6 +144,8 @@ Znajdź odpowiednie szkolenia online, warsztaty i wydarzenia dla swojej roli jak
 
     [Zarządzanie łańcuchem dostaw](learning-catalog-functional-consultant.md#supply-chain-management)
 
+    [Egzaminy](learning-catalog-functional-consultant.md#exams)
+
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,6 +156,10 @@ Znajdź odpowiednie szkolenia online, warsztaty i wydarzenia dla swojej roli jak
     Czy odpowiadasz za pomoc klientom w zakupie odpowiedniego rozwiązania? 
 
     [Katalog szkoleń dotyczących sprzedaży i marketingu partnerów firmy Microsoft](learning-catalog-partner-sales.md)
+
+    [Rozpocznij](learning-catalog-partner-sales.md#get-started)
+
+    [Egzamin](learning-catalog-partner-sales.md#exam)
 
         :::column-end:::
     :::column:::

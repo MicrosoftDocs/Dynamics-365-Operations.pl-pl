@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: ef4465144155130087b078f9f96911df38b62c41
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 5ffc0358ff58b2a05aa84b4467a27d88b5e1ec42
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173184"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270343"
 ---
 # <a name="sync-with-the-dynamics-365-supply-chain-management-pricing-engine-on-demand"></a>Synchronizacja na żądanie z aparatem kalkulacji cen rozwiązania Dynamics 365 Supply Chain Management
 
@@ -50,6 +50,12 @@ Microsoft Dynamics 365 Supply Chain Management udostępnia aparat kalkulacji cen
     + Kwota frachtu
     + Podatek całkowity
     + Łączna kwota
+    
+5. Aby upewnić się, że system traktuje umowy handlowe i sprzedaży w celu obliczenia ceny:
+    1. Przejdź do środowiska Supply Chain Management.
+    2. Przejdź do **Rozrachunki z odbiorcami \> Ustawienia \> Parametry modułu rozrachunków z odbiorcami**.
+    3. Wybierz kartę **Ceny** na bocznym pasku nawigacyjnym.
+    4. Na karcie skróconej **Ocena umowy handlowej** usuń zaznaczenie opcji **Zapis ręczny**.
 
 ## <a name="how-it-works"></a>Jak działa
 

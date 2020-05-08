@@ -3,7 +3,7 @@ title: Moduł pola zakupu
 description: W tym temacie opisano moduły pola zakupu i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261405"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269758"
 ---
 # <a name="buy-box-module"></a>Moduł pola zakupu
 
@@ -80,15 +80,15 @@ Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości
 1. Utwórz fragment o nazwie **fragment pola zakupu** i dodaj do niego moduł pola zakupu.
 1. Do gniazda **Multimedia** w module pole zakupu dodaj moduł galerii multimediów.
 1. W gnieździe **Wyboru sklepu** w module kupowania dodaj moduł wyboru sklepu.
-1. Zaewidencjonuj stronę i opublikuj ją.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować fragment, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 1. Utwórz szablon strony Szczegóły produktu i nadaj mu nazwę **Szablon PDP**.
 1. Dodaj stronę domyślną.
 1. W **Głównym** gnieździe na stronie domyślnej dodaj fragment pola zakupu.
-1. Zapisz szablon, zakończ jego edycję, a następnie go opublikuj.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 1. Za pomocą utworzonego właśnie szablonu utwórz stronę o nazwie **strona PDP**.
 1. W **Głównym** gnieździe na nowej stronie dodaj fragment pola zakupu.
 1. Zapisz i zobacz podgląd strony. Do adresu URL podglądu strony należy dodać parametr dotyczący ciągu kwerendy **?productid=&lt;product id&gt;**. W ten sposób kontekst produktu jest używany do ładowania i renderowania strony podglądu.
-1. Zapisz stronę, zakończ jej edycję, a następnie ją opublikuj. Na stronie Szczegóły produktu powinno pojawić się pole zakupu.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować. Na stronie Szczegóły produktu powinno pojawić się pole zakupu.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

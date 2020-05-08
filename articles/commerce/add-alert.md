@@ -3,7 +3,7 @@ title: Moduł baneru promocyjnego
 description: W tym temacie opisano moduł baneru promocyjnego i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: da5e220e4578d1064eb7b627b441d3f585b3c095
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 12cabbf0b8d9f337f15a8cd6cb1f2a85100b75f7
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025627"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269781"
 ---
 # <a name="promo-banner-module"></a>Moduł baneru promocyjnego
 
@@ -64,16 +64,17 @@ W nagłówku witryny można używać banerów promocyjnych do wyświetlania prom
 
 Aby dodać moduł baneru promocyjnego do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Utwórz szablon strony o nazwie nazwa **Szablon baneru promocyjnego**.
+1. Wybierz pozycję **Nowy**, aby utworzyć nowy szablon strony.
+1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon baneru promocyjnego**, a następnie wybierz **OK**.
 1. W obszarze **Konspekt strony** dodaj moduł **Domyślna strona** do gniazda **Treść**. 
-1. Zaewidencjonuj szablon i opublikuj go. 
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować. 
 1. Za pomocą utworzonego właśnie szblonu alertu utwórz stronę o nazwie **Strona baneru promocyjnego**. 
 1. W **Głównym** gnieździe na nowej stronie dodaj moduł kontenera. 
 1. W okienku po prawej stronie określ wartość **Szerokości** jako **Wypełnij kontener**.
 1. W obszarze **Konspekt strony** dodaj moduł baneru promocyjnego do modułu kontenerów.
 1. W ustawieniach modułu banery promocyjnego dodaj co najmniej jedną wiadomość baneru. Każda wiadomość może zawierać tekst razem z łączem. Inne właściwości można edytować, jeśli moduł ma być dostosowany dalej.
-1. Zapisz i zobacz podgląd strony. W górnej części strony powinien pojawić się alert z dodanym tekstem.
-1. Zakończ edytowanie strony i opublikuj go. 
+1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. W górnej części strony powinien pojawić się alert z dodanym tekstem.
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować. 
 
 > [!NOTE]
 > Baner jest zazwyczaj używany w gnieździe nagłówka strony lub w gnieździe podnagłówków.

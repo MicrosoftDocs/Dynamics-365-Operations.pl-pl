@@ -3,7 +3,7 @@ title: Analiza dopasowywania optymalizacją planowania
 description: W tym temacie wyjaśniono, jak sprawdzić bieżącą konfigurację i dane, porównując je z możliwościami funkcji optymalizacji planowania.
 author: ChristianRytt
 manager: tfehr
-ms.date: 10/30/2019
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,13 +18,13 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 17114d4c0ef2c74ab1bb56d41e4a008150c21f36
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: 0382e78942e6cb2047e37b76f1daf5725638d5c3
+ms.sourcegitcommit: 915ee7c59ef5fbd4927c10840e5c5e8652f667a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208761"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3277805"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analiza dopasowywania optymalizacją planowania
 
@@ -39,20 +39,71 @@ Aby sprawdzić zgodność bieżących ustawień i danych z funkcją optymalizacj
 ## <a name="analysis-results-example-1"></a>Wyniki analizy: przykład 1
 
 - **Funkcja:** produkcja
-- **Problem:** Towary z poziomem BOM większym od zera: 56
-- **Wyjaśnienie:** odnaleziona analiza dopasowania odnalazła 56 towarów, które mają konfigurację BOM dla produkcji. Ponieważ bieżąca wersja funkcji optymalizacji planowania nie obsługuje produkcji, optymalizacja planowania spowoduje generowanie planowanych zamówień zakupu zamiast planowanych zleceń produkcyjnych. Wyświetlone zostanie także ostrzeżenie, w którym znajdują się odnośne towary.
+- **Problem** : towary z listą składową BOM większyą niż zero: 56
+- **Wyjaśnienie:** odnaleziona analiza dopasowania odnalazła 56 towarów, które mają konfigurację BOM produkcji. Ponieważ bieżąca wersja funkcji optymalizacji planowania nie obsługuje produkcji, optymalizacja planowania spowoduje generowanie planowanych zamówień zakupu zamiast planowanych zleceń produkcyjnych. Wyświetlone zostanie także ostrzeżenie, w którym znajdują się odnośne towary.
 
-### <a name="analysis-results-example-2"></a>Wyniki analizy: przykład 2
+## <a name="analysis-results-example-2"></a>Wyniki analizy: przykład 2
 
 - **Funkcja:** akcje
 - **Problem:** Grupy zapotrzebowania z włączoną opcją obliczania akcji: 6
 - **Wyjaśnienie:** znaleziono analizę dopasowania z sześcioma grupami zapotrzebowania, w których jest włączone Obliczanie akcji. Ponieważ bieżąca wersja funkcji optymalizacji planowania nie obsługuje akcji, podczas planowania głównego nie zostaną wygenerowane żadne akcje.
 
+## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Przegląd możliwych wyników z analizy dopasowania
+
+W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po analizie dopasowania. Znaki numerów (_\#_) zostaną zastąpione liczbą określającą liczbę rekordów z wyświetlonym problemem.
+
+| Funkcja | Wymieniony problem | Wyjaśnienie |
+| --- | --- | --- |
+| Akcje | Grupy zapotrzebowania z włączoną opcją obliczania akcji: _\#_ | Ta funkcja jest oczekiwana. Obecnie akcje nie są generowane podczas planowania głównego, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. Głównym celem akcji jest sugerowanie zmian w istniejących zamówieniach. |
+| Kalendarze podstawowe | Kalendarze używające kalendarza podstawowego: _\#_ | Ta funkcja jest oczekiwana. Obecnie kalendarz bazowy jest ignorowany, gdy jest włączona Optymalizacja planowania. |
+| Kody dyspozycji partii | Wzorce dyspozycji partii z towarami nie do dyspozycji: _\#_ | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania kody dyspozycji partii są ignorowane. |
+| Możliwe do zrealizowania (CTP) | Domyślne ustawienia zamówienia z kontrolą daty dostawy ustawioną na CTP: _\#_ | Ta funkcja jest oczekiwana. Obecnie podczas włączania optymalizacji planowania CTP nie jest brane pod uwagę, niezależnie od tego ustawienia. |
+| Kopiuj plan statyczny do dynamicznego | Funkcja Kopiuj plan statyczny do dynamicznego jest włączona w parametrach planowania głównego. | Optymalizacja planowania nie kopiuje planu statycznego do planu dynamicznego, niezależnie od tego ustawienia. Zazwyczaj pojęcie to jest mniej istotne ze względu na szybkość i pełną regenerację, którą zapewnia Optymalizacja planowania. Jeśli użyto dwóch lub więcej planów, planowanie główne powinno być wyzwalane dla każdego planu. |
+| Akceptacja | Grupy zapotrzebowania z ustawionym horyzontem czasowym automatycznego akceptowania: _\#_ | W wersji 10.0.7 i nowszych akceptacja jest obsługiwana jako osobne zadanie wsadowe w ramach planowania głównego ( pod warunkiem, że włączono funkcję _Automatyczne akceptowanie Optymalizacji planowania_ w module [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Należy pamiętać, że Automatyczne akceptowanie optymalizacji planowania jest oparte na dacie zamówienia (data rozpoczęcia), a nie w dacie zapotrzebowania (Data zakończenia). To zachowanie gwarantuje, że akceptacja zamówień odbywa się w odpowiednim czasie, bez konieczności uwzględniania czasu realizacji w horyzoncie czasowym akceptowania. |
+| Akceptacja | Rekordy zapotrzebowania na towary z ustawionym automatycznym akceptowaniem: _\#_ | W wersji 10.0.7 i nowszych automatyczna akceptacja jest obsługiwana jako osobne zadanie wsadowe w ramach planowania głównego ( pod warunkiem, że włączono funkcję _Automatyczne akceptowanie Optymalizacji planowania_ w module [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Należy pamiętać, że Automatyczne akceptowanie optymalizacji planowania jest oparte na dacie zamówienia (data rozpoczęcia), a nie w dacie zapotrzebowania (Data zakończenia). To zachowanie gwarantuje, że akceptacja zamówień odbywa się w odpowiednim czasie, bez konieczności uwzględniania czasu realizacji w horyzoncie czasowym akceptowania. |
+| Akceptacja | Plany główne z ustawionym automatycznym akceptowaniem: _\#_ | W wersji 10.0.7 i nowszych automatyczna akceptacja jest obsługiwana jako osobne zadanie wsadowe w ramach planowania głównego ( pod warunkiem, że włączono funkcję _Automatyczne akceptowanie Optymalizacji planowania_ w module [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Należy pamiętać, że Automatyczne akceptowanie optymalizacji planowania jest oparte na dacie zamówienia (data rozpoczęcia), a nie w dacie zapotrzebowania (Data zakończenia). To zachowanie gwarantuje, że akceptacja zamówień odbywa się w odpowiednim czasie, bez konieczności uwzględniania czasu realizacji w horyzoncie czasowym akceptowania. |
+| FitAnalysisPlanningItems | Pozycje planowania: _\#_ | Ta funkcja jest oczekiwana. Obecnie elementy planowania są traktowane jak zwykłe pozycje, gdy jest włączona Optymalizacja planowania. |
+| Prognozy | Grupy zapotrzebowania z włączonymi opcjami „Uwzględnij zamówienia międzyfirmowe”:_\#_ | Ta funkcja jest oczekiwana. Obecnie planowanie główne nie zawiera planowanego popytu od dostawcy, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. Należy zauważyć, że zwolnione/zaakceptowane zamówienia nadal działają z regularnymi funkcjami międzyfirmowymi i będą dotyczyły większości scenariuszy. |
+| Prognozy | Grupy zapotrzebowania z opcją „Zmniejsz prognozę o” ustawioną na wartość inną niż „Zamówienia”: _\#_ | Domyślnie w przypadku zamówień w Optymalizacji planowania jest używana opcja „Zmniejsz prognozę o”, niezależnie od tego ustawienia. |
+| Prognozy | Modele prognozy z podmodelami: _\#_ | Ta funkcja jest oczekiwana. Obecnie prognozy korzystające z podmodeli nie są obsługiwane, jeśli Optymalizacja planowania jest włączona. Zostaną one zignorowane niezależnie od tego ustawienia. |
+| Prognozy | Plany główne z włączoną opcją „Uwzględnij prognozę dostaw”: _\#_ | Ta funkcja jest oczekiwana. Obecnie prognozy dostaw nie są obsługiwane, jeśli Optymalizacja planowania jest włączona. Zostaną one zignorowane niezależnie od tego ustawienia. |
+| Horyzont czasowy zamrożenia | Grupy zapotrzebowania z ustawionym horyzontem czasowym zamrożenia: _\#_ | Horyzont czasowy zamrożenia nie jest często używany, a obecnie nie ma planów uwzględniania go w Optymalizacji planowania. Obecnie podczas włączania optymalizacji planowania konfiguracja horyzontu czasowego zamrożenia nie jest brany pod uwagę, niezależnie od tego ustawienia. |
+| Horyzont czasowy zamrożenia | Rekordy zapotrzebowania na towary z ustawionym horyzontem czasowym zamrożenia: _\#_ | Horyzont czasowy zamrożenia nie jest często używany, a obecnie nie ma planów uwzględniania go w Optymalizacji planowania. Obecnie podczas włączania optymalizacji planowania konfiguracja horyzontu czasowego zamrożenia nie jest brany pod uwagę, niezależnie od tego ustawienia. |
+| Horyzont czasowy zamrożenia | Plany główne z ustawionym horyzontem czasowym zamrożenia: _\#_ | Horyzont czasowy zamrożenia nie jest często używany, a obecnie nie ma planów uwzględniania go w Optymalizacji planowania. Obecnie podczas włączania optymalizacji planowania konfiguracja horyzontu czasowego zamrożenia nie jest brany pod uwagę, niezależnie od tego ustawienia. |
+| Międzyfirmowe | Plany główne uwzględniające planowany popyt od dostawcy do odbiorcy: _\#_ | Ta funkcja jest oczekiwana. Obecnie planowanie główne nie zawiera planowanego popytu od dostawcy, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. Należy zauważyć, że zwolnione/zaakceptowane zamówienia nadal działają z normalnymi funkcjami międzyfirmowymi i będą dotyczyły większości scenariuszy. |
+| Kanban | Rekordy zapotrzebowania na towary z planowanym typem zamówienia Kanban: _\#_ | Ta funkcja jest oczekiwana. Obecnie zapotrzebowanie na towary, dla którego ustawiono wartość Kanban, będzie ignorowane, gdy jest włączona Optymalizacja planowania. Typ zamówienia planowanego Kanban utworzy ostrzeżenie podczas planowania głównego, a planowane zamówienia zakupu zostaną utworzone w celu pokrycia pokrewnego popytu. |
+| Kanban | Towary z domyślnym typem zamówienia Kanban: _\#_ | Obecnie domyślny typ zamówienia, dla którego ustawiono wartość Kanban, będzie ignorowane, gdy jest włączona Optymalizacja planowania. Typ zamówienia domyślnego Kanban utworzy ostrzeżenie podczas planowania głównego, a planowane zamówienia zakupu zostaną utworzone w celu pokrycia pokrewnego popytu. |
+| Produkcyjne | Wiersze BOM z zaokrągleniem lub wieloma wariantami konfiguracji: _\#_ | Ta funkcja jest oczekiwana. Obecnie zaokrąglanie i wielokrotność konfiguracji są ignorowane w wierszach BOM, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. |
+| Produkcyjne | Wiersze BOM/wiersze formuł z miarą formuły: _\#_ | Ta funkcja jest oczekiwana. Obecnie formuła z miarą jest ignorowana w wierszach BOM i formuły, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. |
+| Produkcyjne | Wiersze BOM/wiersze formuł z podstawianiem pozycji (grupy planowania): _\#_ | Ta funkcja jest oczekiwana. Obecnie podstawianie pozycji (grupy planowania) jest ignorowana w wierszach BOM i formuły, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. |
+| Produkcyjne | Wiersze BOM/wiersze formuł z ilością ujemną: _\#_ | Ta funkcja jest oczekiwana. Wiersze BOM i formuły, które mają ilość ujemną, zostaną uwzględnione z ilością 0 (zero), a w przypadku włączenia Optymalizacji planowania zostanie wygenerowane ostrzeżenie. |
+| Produkcyjne | Wiersze BOM/wiersze formuł ze zużyciem zasobu: _\#_ | Ta funkcja jest oczekiwana. Obecnie podczas włączania Optymalizacji planowania ignorowane są wiersze BOM i formuły, w których zużycie zasobów jest włączone. |
+| Produkcyjne | Wiersze BOM/wiersze formuł ze zużyciem etapowym: _\#_ | Ta funkcja jest oczekiwana. Ignorowane jest zużycie etapowe w wierszach BOM i formuły, w których włączona jest Optymalizacja planowania. |
+| Produkcyjne | Listy BOM ze zdefiniowanymi stałymi odpadkami lub odpadkami zmiennymi: _\#_ | Ta funkcja jest oczekiwana. Obecnie stałe odpadki i zmienne odpadki, które są zdefiniowane w BOM, są ignorowane, gdy jest włączona Optymalizacja planowania. |
+| Produkcyjne | Listy BOM z podwykonawstwem: _\#_ | Ta funkcja jest oczekiwana. Obecnie gdy jest włączona Optymalizacja planowania ustawienie podwykonawstwa w BOM nie jest brane pod uwagę, niezależnie od tego ustawienia. |
+| Produkcyjne | Listy BOM bez oddziału: _\#_ | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania listy BOM bez oddziału są ignorowane. |
+| Produkcyjne | Popyt ze zdefiniowanymi konkretnymi wymaganiami dotyczącymi list BOM lub marszruty: _\#_ | Ta funkcja jest oczekiwana. Obecnie określone wymagania dotyczące BOM lub marszruty zdefiniowane na zapotrzebowaniu (takie jak BOM podrzędny lub Podmarszruta w zamówieniu sprzedaży) są ignorowane, gdy jest włączona Optymalizacja planowania. Zostanie użyta standardowa wersja BOM lub marszruta, niezależnie od tego ustawienia. |
+| Produkcyjne | Wersje formuły zawierające produkty towarzyszące/uboczne: _\#_ | Ta funkcja jest oczekiwana. Obecnie produkty towarzyszące i uboczne skojarzone z wersją formuły są ignorowane, gdy jest włączona Optymalizacja planowania. |
+| Produkcyjne | Wersje formuły z uzyskiem: _\#_ | Ta funkcja jest oczekiwana. Obecnie uzysk skojarzony z wersją formuły jest ignorowany, gdy jest włączona Optymalizacja planowania. |
+| Produkcyjne | Plany uwzględniające sekwencjonowanie: _\#_ | Ta funkcja jest oczekiwana. Obecnie gdy jest włączona Optymalizacja planowania, harmonogram nie jest brany pod uwagę, niezależnie od tego ustawienia. |
+| Produkcyjne | Zwolnione, nierozpoczęte zlecenia produkcyjne, których rozpoczęcie jest planowane na dzisiaj: _\#_ | Ta funkcja jest oczekiwana. |
+| Produkcyjne | Zaplanowane zasoby z ograniczonymi zdolnościami produkcyjnymi: _\#_ | Ta funkcja jest oczekiwana. Obecnie są ignorowane zasoby zaplanowane z ograniczonymi zdolnościami produkcyjnymi, gdy jest włączona Optymalizacja planowania. Planowanie jest wykonywane na podstawie domyślnego czasu realizacji produktu. |
+| Produkcyjne | Marszruty używane podczas planowania: _\#_ | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania marszruty są ignorowane. Używany jest domyślny czas realizacji dla produktu. |
+| Produkcyjne | Rezerwacja wiersza sprzedaży z użyciem rozłożenia: _\#_ | Rezerwacja wiersza sprzedaży wykorzystująca rozłożenie nie jest obsługiwana, jeśli jest włączona Optymalizacja planowania. |
+| Produkcyjne | Planowanie z rozłożeniem zleceń produkcyjnych: _\#_ | Planowanie wykorzystujące rozłożenie zleceń produkcyjnych nie jest obsługiwane, jeśli jest włączona Optymalizacja planowania. Zlecenia produkcyjne można planować pojedynczo. |
+| Zapytania ofertowe | Plany główne z włączoną opcją zapytań ofertowych: _\#_ | Ta funkcja jest oczekiwana. Obecnie zapytania ofertowe (ZO) nie są traktowane jako popyt, gdy jest włączona Optymalizacja planowania. Zostaną one zignorowane niezależnie od tego ustawienia. |
+| Zapotrzebowania | Plany główne z włączoną opcją zapotrzebowań: _\#_ | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania zapotrzebowania są ignorowane. Zostaną one zignorowane niezależnie od tego ustawienia. |
+| Marginesy bezpieczeństwa | Grupy zapotrzebowania z marginesem bezpieczeństwa: _\#_ | Ta funkcja jest oczekiwana. Obecnie margines bezpieczeństwa jest ignorowany, gdy jest włączona Optymalizacja planowania. Aby skompensować to zachowanie, można wydłużyć czas realizacji, tak aby obejmował on margines bezpieczeństwa. |
+| Marginesy bezpieczeństwa | Plany główne z marginesem bezpieczeństwa: _\#_ | Ta funkcja jest oczekiwana. Obecnie gdy jest włączona Optymalizacja planowania, margines bezpieczeństwa nie jest brany pod uwagę, niezależnie od tego ustawienia. Aby skompensować to zachowanie, można wydłużyć czas realizacji, tak aby obejmował on margines bezpieczeństwa. |
+| Realizacja zapasu bezpieczeństwa | Rekordy zapotrzebowania na towary z wartością „Uzupełnij stany minimalne” niższą niż wartość „Data dzisiejsza + czas zaopatrzenia”: _\#_ | Optymalizacja planowania zawsze używa *Daty dzisiejszej + czasu zaopatrzenia*. Ta zmiana będzie wprowadzona w przyszłości w celu przygotowania uproszczonej konfiguracji planowania i zapewnienia wyniku akcji. Jeśli czas zaopatrzenia nie jest uwzględniony w zapasach bezpieczeństwa, zamówienia planowane utworzone dla bieżącego niskiego stanu zapasów będą zawsze opóźnione z powodu czasu realizacji. To zachowanie może spowodować powstanie istotnych zakłóceń i niechcianych zamówień planowanych. Najlepszym rozwiązaniem jest zmiana tego ustawienia, tak aby była używana *Data dzisiejsza + czas zaopatrzenia*. |
+| Oferty sprzedaży | Plany główne z włączoną opcją ofert sprzedaży: _\#_ | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania oferty są ignorowane. Zostaną one zignorowane niezależnie od tego ustawienia. |
+| Okres trwałości | Plany główne z włączoną opcją okresu trwałości: _\#_ | Ta funkcja jest oczekiwana. Obecnie podczas włączania optymalizacji planowania okres trwałości nie jest brany pod uwagę, niezależnie od tego ustawienia. |
+
 ## <a name="related-resources"></a>Powiązane zasoby
 
-[Omówienie planowania optymalizacji](planning-optimization-overview.md)
+[Omówienie optymalizacji planowania](planning-optimization-overview.md)
 
-[Rozpocznij pracę z optymalizacją planowania](get-started.md)
+[Rozpoczęcie optymalizacji planowania](get-started.md)
 
 [Wyświetlanie dzienników historii i planowania planów](plan-history-logs.md)
 

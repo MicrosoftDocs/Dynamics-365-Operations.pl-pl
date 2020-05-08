@@ -3,7 +3,7 @@ title: Dwuwalutowość
 description: Ten temat zawiera informacje o dwuwalutowości, gdzie waluta raportowania służy jako druga waluta rozliczeniowa w programie Microsoft Dynamics 365 Finance.
 author: kweekley
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4a01b8387afd45648f1205d4246378edc8a9e79b
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 8b71b571b03e8fa2648c90258bbcaa020baeabc0
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249018"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270319"
 ---
 # <a name="dual-currency"></a>Dwie waluty
 
@@ -174,10 +174,10 @@ Ponadto wprowadzono znaczne zmiany w procesie amortyzacji. Te zmiany wymagają d
 
         | Środek trwały | Rezerwowanie      | Typ transakcji | Data transakcji | Waluta | Kwota w walucie transakcji | Ilość  | Kurs wymiany | Kwota w walucie raportowania |
         |-------------|-----------|------------------|------------------|----------|--------------------------------|---------|-----------|---------------------------|
-        | BUIL-00001  | 200\_SLLT | Nabycie      | 6/3/2016         | DKK      | 1 000 000                      | 500,000 | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Amortyzacja     | 6/3/2016         | DKK      | 50000                         | 50000  | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Amortyzacja     | 6/3/2016         | DKK      | 50000                         | 50000  | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Amortyzacja     | 6/3/2016         | DKK      | 50000                         | 50000  | 2,5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Nabycie      | 6/3/2016         | DKK      | 1 000 000                      | 500,000 | 2.5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Amortyzacja     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Amortyzacja     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Amortyzacja     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
 
     - Wielu klientów śledziło szczegóły swoich transakcji na składnikach aktywów za pomocą skoroszytów. Szczegóły te obejmują kursy wymiany i kwoty. Jeśli masz te dane w skoroszycie, można utworzyć niestandardowy typ kursu wymiany i zaktualizować go o kursy wymiany ze skoroszytu. Ten typ kursu wymiany zostanie następnie użyty do wprowadzenia domyślnego kursu wymiany z dnia nabycia oraz obliczenia kwoty w walucie raportowania. W razie niewybrania kursu wymiany kreator użyje typu kursu wymiany zdefiniowanego w księdze.
     - Kurs wymiany i kwoty w walucie raportowania można zmieniać. Jeśli kurs wymiany ulegnie zmianie, kwota w walucie raportowania zostanie obliczona ponownie przy użyciu nowego kursu.

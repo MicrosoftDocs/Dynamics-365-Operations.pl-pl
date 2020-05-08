@@ -3,7 +3,7 @@ title: Praca z układami predefiniowanymi
 description: W tym temacie opisano, jak pracować z układami predefiniowanymi w Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c8149c6e443c77dabfa641a698c931176bedbc98
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002643"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269896"
 ---
 # <a name="work-with-preset-layouts"></a>Praca z układami predefiniowanymi
 
@@ -44,7 +44,7 @@ Są dwie metody tworzenia predefiniowanego układu. Istniejący układ niestanda
 Aby utworzyć układ predefiniowany z istniejącego układu niestandardowego, wykonaj następujące kroki.
 
 1. Umożliwia otwarcie istniejącej strony, w której obecnie nie jest używany układ predefiniowany, a także strukturę modułu, której użytkownik chce użyć do ponownego użycia w odniesieniu do innych stron w witrynie.
-1. Wybierz **Wyewidencjonuj**.
+1. Wybierz **Edytuj**, aby wyewidencjonować stronę.
 1. Wybierz **Zapisz jako nowy układ**. Zostanie wyświetlone okno dialogowe **Zapisz jako nowy układ**.
 1. Wprowadź nazwę i opis predefiniowanego układu. Wprowadzone wartości będą widoczne dla innych autorów, tworząc nowe strony z układu lub przełączając do niego. Dlatego należy wprowadzić wartości, które będą przydatne autorom stron.
 1. Kliknij przycisk **OK**.
@@ -91,14 +91,14 @@ Aby ustawić lub zmienić motyw dla wszystkich stron podrzędnych korzystającyc
 Aby zapisać i zewidencjonować predefiniowany układ, wykonaj następujące kroki.
 
 1. Wybierz opcję **Zapisz** u góry edytora układu. Zapisane zmiany nie wpływają na strony podrzędne, dopóki nie zostaną zaewidencjonowane.
-1. Wybierz **Zaewidencjonuj**. Twoje zmiany są teraz wykrywalne dla podrzędnych przepływów pracy.
+1. Wybierz opcję **Zakończ edycję**. Twoje zmiany są teraz wykrywalne dla podrzędnych przepływów pracy.
 
 Aby wyświetlić podgląd zmian, należy otworzyć istniejącą stronę, która używa tego predefiniowanego układu, lub utworzyć nową stronę na podstawie tego układu.
 
 Po przejrzeniu zmian w predefiniowanym szablonie należy wykonać jedną z następujących czynności, aby opublikować układ w witrynie na żywo:
 
 * Przejdź do **Układy**, wybierz układ, a następnie wybierz opcję **Opublikuj**.
-* W edytorze układu wybierz opcję **Opublikuj**.
+* Wybierz nazwę układu, aby otworzyć edutor ukałdu, a następnie wybierz **Publikuj**.
 * Umożliwia opublikowanie strony, która odwołuje się do nieopublikowanego układu. Układ zostanie automatycznie opublikowany.
 
 > [!WARNING]
