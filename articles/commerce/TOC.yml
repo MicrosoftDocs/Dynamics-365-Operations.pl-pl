@@ -94,12 +94,12 @@
                       href: get-started/whats-new-commerce-10-0-10.md
                     - name: Rozwiązanie Commerce w wersji 10.0.9 (kwiecień 2020)
                       href: get-started/whats-new-10-0-9.md
-                    - name: Rozwiązanie Commerce w wersji 10.0.8 (luty 2020)
-                      href: get-started/whats-new-10-0-8.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+                    - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
+                      href: get-started/removed-deprecated-features-commerce.md
                 - name: 'Funkcje systemu AX 2012, które zostały odroczone'
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
                 - name: Funkcje niezaimplementowane we wdrożeniach lokalnych
@@ -644,6 +644,8 @@
                       href: work-with-store-inventory.md
                     - name: Korzystanie z pozycji serializowanych
                       href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Praca z pozycjami serializowanymi w punkcie sprzedaży
+                      href: pos-serialized-items.md
                     - name: Dystrybucja produktów z centrum dystrybucji do sklepu za pomocą dystrybucji od kupującego
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Konfigurowanie reguł i parametrów dla przeładunku komplementacyjnego i dystrybucji od kupującego
@@ -1002,7 +1004,7 @@
               href: store-performance-information.md
             - name: 'Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)'
               href: set-up-rfm-analysis.md
-        - name: Funkcje związane z lokalizacją i wymagane przepisami prawa
+        - name: Globalizacja
           items:
             - name: Omówienie integracji fiskalnej dla kanału aplikacji Commerce
               href: localizations/fiscal-integration-for-retail-channel.md
@@ -1014,18 +1016,26 @@
                   href: localizations/emea-aut-fi-sample.md
             - name: Europa Wschodnia
               items:
-                - name: Faktury zaliczkowe w aplikacji Commerce (Europa Wschodnia)
-                  href: localizations/emea-eeu-advance-invoices-for-retail.md
-                - name: Zarządzanie gotówką podręczną w aplikacji Commerce (Europa Wschodnia)
-                  href: localizations/emea-eeu-petty-cash-for-retail.md
-                - name: Faktury dla odbiorcy i zwrotne zamówienia sprzedaży w krajach Europy Wschodniej
-                  href: localizations/emea-eeu-retail-invoices.md
-                - name: 'Wytyczne dotyczące wdrażania kas w Czechach, na Węgrzech i w Polsce'
-                  href: localizations/emea-eeu-deployment.md
-                - name: Przykładowa integracja drukarki fiskalnej (Polska)
-                  href: localizations/emea-pol-fpi-sample.md
-                - name: Przykład integracji usługi rejestracji fiskalnej (Czechy)
-                  href: localizations/emea-cze-fi-sample.md
+                - name: Wspólne
+                  items:
+                    - name: Faktury zaliczkowe w aplikacji Commerce (Europa Wschodnia)
+                      href: localizations/emea-eeu-advance-invoices-for-retail.md
+                    - name: Zarządzanie gotówką podręczną w aplikacji Commerce (Europa Wschodnia)
+                      href: localizations/emea-eeu-petty-cash-for-retail.md
+                    - name: Faktury dla odbiorcy i zwrotne zamówienia sprzedaży w krajach Europy Wschodniej
+                      href: localizations/emea-eeu-retail-invoices.md
+                    - name: 'Wytyczne dotyczące wdrażania kas w Czechach, na Węgrzech i w Polsce'
+                      href: localizations/emea-eeu-deployment.md
+                - name: Czechy
+                  items:
+                    - name: Przykład integracji usługi rejestracji fiskalnej (Czechy)
+                      href: localizations/emea-cze-fi-sample.md
+                - name: Polska
+                  items:
+                    - name: Przykładowa integracja drukarki fiskalnej (Polska)
+                      href: localizations/emea-pol-fpi-sample.md
+                    - name: Zarządzanie informacjami dotyczącymi klienta (Polska)
+                      href: localizations/emea-pol-customer-information.md
             - name: Francja
               items:
                 - name: Funkcje kasy
@@ -1044,6 +1054,8 @@
               items:
                 - name: Przykładowa integracja drukarki fiskalnej dla Włoch
                   href: localizations/emea-ita-fpi-sample.md
+                - name: Zarządzanie informacjami dotyczącymi klienta dla Włoch
+                  href: localizations/emea-ita-customer-information.md
             - name: Meksyk
               items:
                 - name: Globalne faktury elektroniczne CFDI dla Meksyku
@@ -1058,7 +1070,9 @@
               items:
                 - name: Funkcje kasy
                   href: localizations/emea-swe-cash-registers.md
-                - name: Przykład do użycia w integracji POS z jednostkami kontrolnymi
+                - name: Przykładowa integracja jednostki kontrolnej dla Szwecji
+                  href: localizations/emea-swe-fi-sample.md
+                - name: Przykład do użycia w integracji aplikacji Retail POS z jednostkami kontrolnymi (starsze)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Raportowanie i integracja usługi Power BI
           items:
@@ -1138,7 +1152,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Dodawanie wymiarów finansowych do miar agregacji
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: Tworzenie raportów analitycznych przy użyciu PowerBI Desktop
+                - name: Tworzenie raportów analitycznych za pomocą aplikacji Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
