@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 8cc7c11233c745719af72222eba02fb71d7a8944
+ms.sourcegitcommit: 4edc658448612afbf1c1663c166d12e08e4c4165
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275657"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340937"
 ---
 # <a name="general-troubleshooting"></a>Rozwiązywanie ogólnych problemów
 
@@ -62,14 +62,14 @@ Po zainstalowaniu narzędzia package deployer zainstaluj pakiet rozwiązania, wy
 
 Aby włączyć śledzenie, należy wykonać następujące kroki.
 
-1. Zaloguj się do aplikacji Finance and Operations, otwórz stronę **Ustawień**, a następnie w obszarze **System** wybierz opcję **Administracja**.
+1. Zaloguj się do aplikacji opartej na modelu na platformie Dynamics 365, otwórz stronę **Ustawienia**, a następnie w obszarze **System** wybierz pozycję **Administracja**.
 2. Na stronie **Administracja** wybierz opcję **Konfiguracja systemu**.
 3. Na karcie **Dostosowywanie**, w polu **Wtyczki i niestandardowe śledzenie działania przepływu pracy** zaznacz opcję **Wszystkie**, aby włączyć dziennik śledzenia wtyczek. Jeśli chcesz rejestrować dzienniki śledzenia tylko w przypadku wystąpienia wyjątków, możesz zamiast tego wybrać **Wyjątek**.
 
 
 Aby zobaczyć dziennik śledzenia, należy wykonać następujące kroki.
 
-1. Zaloguj się do aplikacji Finance and Operations, otwórz stronę **Ustawień**, a następnie w obszarze **Dostosowywanie** wybierz opcję **Dziennik śledzenia wtyczek**.
+1. Zaloguj się do aplikacji opartej na modelu na platformie Dynamics 365, otwórz stronę **Ustawienia**, a następnie w obszarze **Dostosowywanie** wybierz pozycję **Dziennik śledzenia wtyczek**.
 2. Znajdź dzienniki śledzenia, w których w polu **Nazwa typu** jest ustawiona wartość **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Kliknij dwukrotnie towar, aby wyświetlić pełny dziennik, a następnie w skróconej karcie **Wykonania** przejrzyj tekst **Bloku wiadomości**.
 

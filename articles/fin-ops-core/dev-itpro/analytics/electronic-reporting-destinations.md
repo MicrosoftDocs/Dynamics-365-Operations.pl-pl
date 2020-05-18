@@ -3,7 +3,7 @@ title: Miejsca docelowe raportowania elektronicznego (ER)
 description: Ten temat zawiera informacje dotyczące zarządzania miejscami docelowymi sprawozdawczości elektronicznej (ER), typów obsługiwanych lokalizacji docelowych oraz względów bezpieczeństwa.
 author: nselin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: 1bad9e5094f0daa260f66ecd429233f20a2545a5
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150822"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323699"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Lokalizacje docelowe raportowania elektronicznego (ER)
 
@@ -52,7 +52,36 @@ Istnieje również typ docelowy [drukowania ](er-destination-type-print.md). Aby
 
 ## <a name="overview"></a>Omówienie
 
-Miejsca docelowe można ustawiać tylko dla konfiguracji ER, które zostały [zaimportowane](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally), oraz dla formatów, które są dostępne na stronie **Konfiguracje raportowania elektronicznego**. Funkcje zarządzania miejscami docelowymi ER są dostępne w oknie **Administrowanie organizacją** \> **Raportowanie elektroniczne** \> **Miejsce docelowe raportowania elektronciznego**. Na stronie **Strona docelowa raportowania elektronicznego** można zastąpić domyślne zachowanie konfiguracji. Zaimportowane konfiguracje są wyświetlane na tej stronie dopiero wtedy, gdy klikniesz przycisk **Nowy**, a następnie w polu **Odwołanie** wybierzesz konfigurację, dla której mają zostać utworzone ustawienia miejsca docelowego.
+Miejsca docelowe można ustawiać tylko dla konfiguracji ER, które zostały [zaimportowane](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally), oraz dla formatów, które są dostępne na stronie **Konfiguracje raportowania elektronicznego**. Funkcje zarządzania miejscami docelowymi ER są dostępne w oknie **Administrowanie organizacją** \> **Raportowanie elektroniczne** \> **Miejsce docelowe raportowania elektronciznego**.
+
+### <a name="default-behavior"></a>Zachowanie domyślne
+
+Zachowanie domyślne konfiguracji formatu ER jest uzależnione od typu wykonania określonego w momencie uruchomienia formatu ER.
+
+W oknie dialogowym **Raport Intrastat**, na skróconej karcie **Uruchom w tle**, jeśli dla opcji **Przetwarzanie wsadowe** zostanie ustawiona wartość **Nie**, format ER zostanie natychmiast uruchomiony w trybie interaktywnym. Po pomyślnym zakończeniu tego wykonania wygenerowany dokument wychodzący zostanie udostępniony do pobrania.
+
+Jeśli opcja **Przetwarzanie wsadowe** zostanie ustawiona na wartość **Tak**, format ER zostanie uruchomiony w trybie [wsadowym](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview). Odpowiednie zadanie wsadowe zostanie utworzone na podstawie parametrów określonych na karcie **Uruchamianie w tle** okna dialogowego **Parametry modułu ER**.
+
+> [!NOTE]
+> Opis zadania jest inicjowany w celu poinformowania o uruchomieniu mapowania formatu ER. Zawiera on również nazwę wykonywanego składnika ER.
+
+[![Uruchamianie formatu ER](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+
+Informacje o tym zadaniu można znaleźć w kilku miejscach:
+
+- Przejdź do pozycji **Wspólne** \> **Zapytania** \> **Zadania wsadowe** \> **Moje zadania wsadowe**, aby sprawdzić stan zaplanowanego zadania.
+- Przejdź do pozycji **Administracja organizacją** \> **Raportowanie elektroniczne** \> **Zadania raportowania elektronicznego**, aby sprawdzić stan zaplanowanego zadania i wyniki wykonania zakończonego zadania. Po pomyślnym zakończeniu wykonywania zadania wybierz pozycję **Pokaż pliki** na stronie **Zadania raportowania elektronicznego**, aby pobrać wygenerowany dokument wychodzący.
+
+    > [!NOTE]
+    > Ten dokument jest przechowywany jako załącznik bieżącego rekordu zadania i jest kontrolowany przez strukturę [zarządzania dokumentami](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). [Typ dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) używany do przechowywania artefaktów ER tego typu jest konfigurowany w obszarze [parametrów ER](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+
+- Na stronie **Zadania raportowania elektronicznego** wybierz pozycję **Pokaż pliki**, aby wyświetlić listę błędów i ostrzeżeń wygenerowanych podczas wykonywania zadania.
+
+    [![Przeglądanie listy zadań ER](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+
+### <a name="user-configured-behavior"></a>Zachowanie konfigurowane przez użytkownika
+
+Na stronie **Strona docelowa raportowania elektronicznego** można zastąpić domyślne zachowanie konfiguracji. Zaimportowane konfiguracje są wyświetlane na tej stronie dopiero wtedy, gdy klikniesz przycisk **Nowy**, a następnie w polu **Odwołanie** wybierzesz konfigurację, dla której mają zostać utworzone ustawienia miejsca docelowego.
 
 [![Wybieranie konfiguracji w polu Odwołanie](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
@@ -148,7 +177,7 @@ Opcję konwersji na format PDF można włączyć tylko dla składników plików 
 >
 > Wytworzony plik PDF jest ograniczony do maksymalnej liczby 300 stron.
 >
-> W tym momencie, w dokumencie PDF wytwarzanym z formatu wyjściowego programu Excel, jest obsługiwana tylko pozioma orientacja strony.
+> W aplikacji Microsoft Dynamics 365 Finance w wersji 10.0.9 (kwiecień 2020 r.) w dokumencie PDF tworzonym na podstawie formatu wyjściowego programu Excel jest obsługiwana tylko pozioma orientacja strony. W wydaniu aplikacji Dynamics 365 Finance w wersji 10.0.10 (maj 2020 r.) można [określić orientację strony](#SelectPdfPageOrientation) w dokumencie PDF, który jest tworzony na podstawie danych wyjściowych programu Excel podczas konfigurowania miejsca docelowego ER.
 >
 > Tylko typowe czcionki systemowe systemu operacyjnego Windows są używane do konwersji danych wyjściowych, które nie zawierają czcionek osadzonych.
 

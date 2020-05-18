@@ -3,7 +3,7 @@ title: Omówienie
 description: W Dynamics 365 Human Resources obszar roboczy Urlopy i nieobecności udostępnia elastyczną strukturę do tworzenia nowych planów urlopów, przepływy pracy do zarządzania wnioskami oraz intuicyjną stronę samoobsługi umożliwiającą pracownikom wnioskowanie o czas wolny.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
-ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
+ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
+ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "3226237"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3325772"
 ---
 # <a name="overview"></a>Omówienie
 
@@ -78,8 +78,16 @@ Nie można ustawić **Dokładność zaokrąglania** podczas ustawiania **Typ zao
 
 ## <a name="leave-and-absence-preview-features"></a>Funkcje w wersji zapoznawczej dotyczące urlopów i nieobecności
 
-W środowisku typu **Piaskownica** można testować nowe funkcje urlopów i nieobecności udostępnione w wersji zapoznawczej. Aby uzyskać informacje na temat włączania funkcji w wersji zapoznawczej, zobacz [Zarządzanie funkcjami](hr-admin-manage-features.md). Funkcje w wersji zapoznawczej obejmują:
+W środowisku typu **Piaskownica** można testować nowe funkcje urlopów i nieobecności udostępnione w wersji zapoznawczej. Aby uzyskać informacje na temat włączania funkcji w wersji zapoznawczej, zobacz [Zarządzanie funkcjami](hr-admin-manage-features.md). 
 
-- **Zawieszenie urlopu** — istnieje możliwość zawieszenia urlopu i nieobecności w Human Resources dla pracownika etatowego. Zawieszenie urlopu powoduje zatrzymanie naliczania dla wybranych typów urlopów. Jeśli zawieszenie następuje po procesach naliczania, wstrzymanie urlopu powoduje utworzenie skorygowanej korekty salda urlopu pracownika. 
+[!include [banner](includes/preview-feature.md)]
+
+Funkcje w wersji zapoznawczej obejmują:
+
+- **Zawieszenie urlopu** — istnieje możliwość zawieszenia urlopu i nieobecności w Human Resources dla pracownika etatowego. Zawieszenie urlopu powoduje zatrzymanie naliczania dla wybranych typów urlopów. Jeśli zawieszenie następuje po procesach naliczania, wstrzymanie urlopu powoduje utworzenie skorygowanej korekty salda urlopu pracownika. Można również uwzględnić kody przyczyny podczas wstrzymywania urlopu pracownika etatowego. Środowisko użytkownika zostało zaktualizowane w celu wskazania wstrzymania. 
 
 - **Przenieś reguły do przodu** — można określić typ urlopu przeniesienia do przodu dla sald przeniesionych na następny okres, gdzie są przenoszone korekty do przodu. Jeśli na przykład pracownik przeniósł 10 dni do przodu, można wybrać inny typ urlopu dla tych 10 dni. 
+
+- **Dołączanie kodu przyczyny i komentarzy do korekt** — umożliwia uwzględnienie kodu przyczyny i komentarza podczas korygowania salda urlopu pracownika etatowego. 
+
+- **Przejście do parametrów urlopu i nieobecności** — teraz można używać tylko parametrów urlopu i nieobecności zamiast parametrów działu kadr. 

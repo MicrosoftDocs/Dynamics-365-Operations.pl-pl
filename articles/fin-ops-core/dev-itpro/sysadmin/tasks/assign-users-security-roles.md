@@ -1,9 +1,9 @@
 ---
 title: Przypisywanie użytkowników do ról zabezpieczeń
 description: Aby mieć dostęp do aplikacji Finance and Operations, użytkownicy muszą być przypisani do ról zabezpieczeń.
-author: ChrisGarty
+author: Peakerbl
 manager: AnnBe
-ms.date: 11/14/2019
+ms.date: 05/06/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,28 +16,29 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0744f45ac91dfb9b5aae35091e3675202c9144f9
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f0421ad6c932f2c91de51169bda6c98f53d3bc65
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143566"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346452"
 ---
 # <a name="assign-users-to-security-roles"></a>Przypisywanie użytkowników do ról zabezpieczeń
 
 [!include [banner](../../includes/banner.md)]
 
-Aby można było skorzystać z innych funkcji niż typowe, użytkownicy muszą być przypisani do ról zabezpieczeń. W tej procedurze pokazano, jak administratorzy systemu mogą automatycznie przypisywać użytkowników do ról, na podstawie danych biznesowych. 
+Aby można było skorzystać z innych funkcji niż typowe w aplikacjach Finance and Operations, użytkownicy muszą być przypisani do ról zabezpieczeń. Można przypisywać użytkowników do ról automatycznie, na podstawie reguł i danych biznesowych, wykluczać użytkowników z automatycznego przypisania ról lub dodawać użytkowników do ról ręcznie.
 
 ## <a name="automatically-assign-users-to-roles"></a>Automatyczne przypisywanie użytkowników do ról
+W tej procedurze pokazano, jak administratorzy systemu mogą automatycznie przypisywać użytkowników do ról, na podstawie danych biznesowych. 
 1. Otwórz **Okienko nawigacji > Moduły > Administracja systemu > Ochrona > Przypisz użytkowników do ról**.
 2. W drzewie zaznacz rolę „Kierownik ds. księgowania”. Zaznacz rolę, dla której chcesz skonfigurować regułę. W tym przykładzie wybierz rolę Kierownik ds. księgowania. 
-3. Kliknij **Dodaj zasadę**, aby otworzyć listę rozwijania.
-4. Na liście **Wybierz kwerendę**odnajdź i wybierz odpowiednią pozycję. Zaznacz zapytanie, którego chcesz używać dla tej reguły.  
+3. Wybierz pozycję **Dodaj regułę**, aby otworzyć menu okna dialogowego.
+4. Na liście **Wybierz zapytanie** znajdź i wybierz odpowiedni rekord. Zaznacz zapytanie, którego chcesz używać dla tej reguły.  
 5. Na liście **Nazwa zasady członkowstwa** kliknij link w wybranym wierszu.
-6. Kliknij **Edytuj kwerendę**. Edytuj kwerendę stosownie do potrzeb.  
+6. Wybierz **Edytuj zapytanie**. Edytuj kwerendę stosownie do potrzeb.  
 7. Kliknij przycisk **OK**.
-8. Kliknij **Uruchom automatyczne przypisanie roli**.
+8. Wybierz pozycję **Uruchom automatyczne przypisanie roli**.
 9. Przejdź do **Okienko nawigacji > Moduły > Administrowanie systemem > Użytkownicy > Użytkownicy** (najlepiej w osobnej karcie przeglądarki)
 10. Przejrzyj role przypisane różnym użytkownikom, aby potwierdzić, że kwerenda przypisania roli była poprawna. W razie potrzeby skoryguj i uruchom ponownie.
 
@@ -48,5 +49,12 @@ Aby można było skorzystać z innych funkcji niż typowe, użytkownicy muszą b
 4. W menu **Użytkownicy przypisani do roli** wybierz **Ręcznie przypisz / wyklucz użytkowników**.
 5. Na liście **Przypisz użytkowników do roli lub wyklucz użytkowników z roli** zaznacz wybrany wiersz. Wybierz użytkownika.  
 6. W **Panelu akcji** wybierz **Wyklucz z roli**.
-    
-    Kliknij **Wyklucz użytkowników z roli**, aby wykluczyć wybranych użytkowników z roli. Żeby usunąć wykluczenia, wybierz użytkowników, których wyluczenia chcesz usunąć i kliknij **Zresetuj status**. Po usunięciu wykluczenia poprzez zresetowanie stanu użytkownika zostanie mu automatycznie ponownie przypisana rola. Jednak po resecie stanu użytkownik nie jest natychmiast przypisywany do roli ani wykluczany z roli. Zamiast tego użytkownik jest przypisywany do roli albo usuwany z roli podczas następnej sesji automatycznego przypisywania ról.  
+7. Wybierz pozycję **Wyklucz użytkowników z roli**, aby wykluczyć wybranych użytkowników z roli. Żeby usunąć wykluczenia, wybierz użytkowników, których wyluczenia chcesz usunąć i kliknij **Zresetuj status**. Po usunięciu wykluczenia przez zresetowanie stanu użytkownika zostanie mu automatycznie przypisana rola. Jednak po resecie stanu użytkownik nie jest natychmiast przypisywany do roli ani wykluczany z roli. Zamiast tego użytkownik jest przypisywany do roli albo usuwany z roli podczas następnej sesji automatycznego przypisywania ról.  
+
+## <a name="manually-assign-users-to-roles"></a>Ręczne przypisywanie użytkowników do ról
+Użytkownicy ręcznie przypisani do ról zabezpieczeń muszą również zostać usunięci ręcznie przez administratora. Użytkownicy ci nie są usuwani z ról za pomocą reguł automatycznego przypisania ról.
+
+1. Otwórz **Okienko nawigacji > Moduły > Administracja systemu > Ochrona > Przypisz użytkowników do ról**.
+2. W drzewie wybierz rolę, a następnie w menu **Użytkownicy przypisani do roli** wybierz pozycję **Ręcznie przypisz/wyklucz użytkowników**.
+4. W obszarze **Przypisz użytkowników do roli lub wyklucz użytkowników z roli** użytkownicy, do których nie przypisano roli, są wyświetlani z **trybem przypisania** ustawionym na **Brak**. Wybierz co najmniej jednego użytkownika, do którego ma zostać przypisana rola.
+5. W **okienku akcji** wybierz pozycję **Przypisz do roli**. **Tryb przypisania** jest aktualizowany do opcji **Ręcznie**, a użytkownicy mają teraz przypisaną nową rolę.

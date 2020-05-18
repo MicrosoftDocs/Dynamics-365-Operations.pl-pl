@@ -19,17 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: f88ee8067fdd816ba6890ee28bafe8fa4d3b3ac5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 110045d4c7e4f32c29b73096dd4df3a09b5434ac
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208738"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323400"
 ---
 # <a name="planning-optimization-overview"></a>Omówienie planowania optymalizacji
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 Dodatek do optymalizacji planowania dla rozwiązania Microsoft Dynamics 365 Supply Chain Management umożliwia naliczenie planowania głównego poza Dynamics 365 Supply Chain Management i pokrewną bazą danych SQL. Korzyści związane z funkcjami optymalizacji planowania obejmują lepszą wydajność i minimalny wpływ na bazę danych SQL podczas uruchamiania planowania głównego. Szybkie przebiegi planowania można wykonać nawet w godzinach pracy, dzięki czemu terminarze mogą natychmiast reagować na zmiany popytu lub parametrów.
 

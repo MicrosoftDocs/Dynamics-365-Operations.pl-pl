@@ -3,7 +3,7 @@ title: Aby pobrać dane z wielu tabel aplikacji, należy zastosować SPRĘŻENIE
 description: W tym temacie wyjaśniono, jak można używać SPRĘŻENIA źródeł danych wielu firm w Raportowaniu elektronicznym (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 224acc19ee5dda430cd9471aa50e9d870a4f8c60
-ms.sourcegitcommit: 564aa8eec89defdbe2abaf38d0ebc4cca3e28109
+ms.openlocfilehash: 668ab28297ee7baf8f28cbbaf179d13cb5151dc4
+ms.sourcegitcommit: 248369a0da5f2b2a1399f6adab81f9e82df831a1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2667961"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3332329"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Aby pobrać dane z wielu tabel aplikacji, należy zastosować SPRĘŻENIE źródeł danych w mapowaniach modeli Raportowania elektronicznego (ER)
 
@@ -140,7 +140,7 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 
 7.  Zamknij stronę.
 
-### <a name="review"></a> Przegląd mapowania modelu ER (część 2)
+### <a name="review-er-model-mapping-part-2"></a><a name="review"></a> Przegląd mapowania modelu ER (część 2)
 
 Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowany pod kątem dostępu do informacji na temat wersji konfiguracji systemu ER, szczegółów konfiguracji i dostawców konfiguracji z użyciem źródeł danych typu **Sprzężenia**.
 
@@ -185,7 +185,7 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 9.  Zamknij stronę.
 10. Wybierz **Anuluj**.
 
-### <a name="executeERformat"></a> Wykonaj format ER
+### <a name="execute-er-format"></a><a name="executeERformat"></a> Wykonaj format ER
 
 1.  Dostęp do Finance lub RCS w drugiej sesji przeglądarki sieci Web przy użyciu tych samych poświadczeń i firmy, co w pierwszej sesji.
 2.  Przejdź do opcji **Administrowanie organizacją \> Raporty elektroniczne \> Konfiguracje**.
@@ -240,7 +240,7 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 
     ![Strona okna dialogowego użytkownika ER](./media/GER-JoinDS-Set2Run.PNG)
 
-#### <a name="analyze"></a> Analizowanie śledzenia wykonania operacji na formacie ER
+#### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analizowanie śledzenia wykonania operacji na formacie ER
 
 1.  W pierwszej sesji finansów lub RCS wybierz opcję **Projektant**.
 2.  Wybierz **Śledzenie wydajności**.
@@ -256,6 +256,33 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
     - Baza danych aplikacji została wywołana raz w celu obliczenia liczby wersji konfiguracji za pomocą sprzężeń skonfigurowanych w źródle danych **Szczegółów**.
 
     ![Strona projektanta mapowania modelu ER](./media/GER-JoinDS-Set2Run3.PNG)
+
+## <a name="limitations"></a>Ograniczenia
+
+Jak widać z przykładu w tym temacie, źródło danych **SPRZĘŻENIE** można utworzyć na podstawie kilku źródeł danych, które opisują indywidualne zestawy danych rekordów, które muszą ostatecznie zostać sprzężone. Te źródła danych można skonfigurować przy użyciu wbudowanej funkcji ER [FILTER](er-functions-list-filter.md). Podczas konfigurowania źródła danych w taki sposób, aby było wywoływane poza źródłem danych **SPRZĘŻENIE**, można wykorzystać zakresy firm jako część warunku wyboru danych. Początkowa implementacja źródła danych **SPRZĘŻENIE** nie obsługuje źródeł danych tego typu. Na przykład w przypadku wywołania źródła danych opartego na funkcji [FILTER](er-functions-list-filter.md) w zakresie wykonania źródła danych **SPRZĘŻENIE**, jeśli wywołane źródło danych zawiera zakresy firm w ramach warunku wyboru danych, wystąpi wyjątek.
+
+W aplikacji Microsoft Dynamics 365 Finance w wersji 10.0.12 (sierpień 2020 r.) można stosować zakresy firm jako część warunku wyboru danych w źródłach danych opartych na funkcji [FILTER](er-functions-list-filter.md), które są wywoływane w zakresie wykonania źródła danych **SPRZĘŻENIE**. Z powodu ograniczeń konstruktora [zapytań](../dev-ref/xpp-library-objects.md#query-object-model) aplikacji zakresy firm są obsługiwane tylko dla pierwszego źródła danych dla źródła danych **SPRZĘŻENIE**.
+
+### <a name="example"></a>Przykład
+
+Na przykład musisz wykonać jedno wywołanie bazy danych aplikacji, aby uzyskać listę transakcji handlu zagranicznego dla wielu firm oraz szczegóły dotyczące pozycji magazynowej przywoływanej w tych transakcjach.
+
+W takim przypadku należy skonfigurować następujące artefakty w mapowaniu modelu ER:
+
+- Główne źródło danych **Intrastat** reprezentujące tabelę **Intrastat**.
+- Główne źródło danych **Pozycje** reprezentujące tabelę **InventTable**.
+- Główne źródło danych **Firmy**, które zwraca listę firm ( **DEMF** i **GBSI** w tym przykładzie) z dostępnymi transakcjami. Kod firmy jest dostępny w polu **Companies.Code**.
+- Główne źródło danych **X1**, które zawiera wyrażenie `FILTER (Intrastat, VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code))`. W ramach warunku wyboru danych to wyrażenie zawiera definicję zakresu firm `VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code)`.
+- Źródło danych **X2** jako zagnieżdżona pozycja źródła danych **X1**. Zawiera ono wyrażenie `FILTER (Items, Items.ItemId = X1.ItemId)`.
+
+Na koniec również skonfigurować źródło danych **SPRZĘŻENIE**, gdzie **x1** to pierwsze źródło danych, a **X2** to drugie źródło danych. Można wybrać opcję **Zapytanie** jako opcję **Wykonaj**, aby wymusić uruchomienie tego źródła danych w module ER na poziomie bazy danych w postaci bezpośredniego wywołania SQL.
+
+Gdy skonfigurowane źródło danych zostanie uruchomione podczas [kontrolowania](trace-execution-er-troubleshoot-perf.md) wykonania ER, w projektancie mapowania modelu ER poniższa instrukcja jest przedstawiana jako część śladu wydajności ER.
+
+`SELECT ... FROM INTRASTAT T1 CROSS JOIN INVENTTABLE T2 WHERE ((T1.PARTITION=?) AND (T1.DATAAREAID IN (N'DEMF',N'GBSI') )) AND ((T2.PARTITION=?) AND (T2.ITEMID=T1.ITEMID AND (T2.DATAAREAID = T1.DATAAREAID) AND (T2.PARTITION = T1.PARTITION))) ORDER BY T1.DISPATCHID,T1.SEQNUM`
+
+> [!NOTE]
+> Błąd występuje, jeśli uruchomisz źródło danych **SPRZĘŻENIE** skonfigurowane w taki sposób, aby zawierało warunki wyboru danych z zakresami firm dla dodatkowych źródeł danych dla wykonywanego źródła danych **SPRZĘŻENIE**.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

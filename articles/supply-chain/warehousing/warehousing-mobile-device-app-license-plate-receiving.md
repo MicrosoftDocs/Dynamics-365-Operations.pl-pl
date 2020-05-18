@@ -1,6 +1,6 @@
 ---
-title: Numer identyfikacyjny odbierany za pośrednictwem aplikacji mobilnej Warehousing
-description: W tym temacie opisano sposób konfigurowania aplikacji mobilnej Warehousing w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
+title: Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej
+description: W tym temacie opisano sposób konfigurowania aplikacji magazynowej w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
 author: perlynne
 manager: tfehr
 ms.date: 03/31/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 98cd608edea1d5365d0d3532244f1fcdb6293d3c
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261366"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346383"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-mobile-app"></a>Numer identyfikacyjny odbierany za pośrednictwem aplikacji mobilnej Warehousing
+# <a name="license-plate-receiving-via-the-warehousing-app"></a>Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej
 
-W tym temacie opisano sposób konfigurowania aplikacji mobilnej Warehousing w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
+W tym temacie opisano sposób konfigurowania aplikacji magazynowej w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
 
 Ta funkcja służy do szybkiego rejestrowania przyjęcia przychodzącego zapasu, który jest powiązany z zawiadomieniem o zaliczce na poczet wysyłki (ASN). System automatycznie tworzy ASN, gdy procesy zarządzania magazynem służą do wysłania zamówienia przeniesienia. W procesie zamówienia zakupu można ręcznie zarejestrować ASN lub można go zaimportować automatycznie za pomocą procesu przychodzącej jednostki danych ASN.
 
@@ -63,7 +63,7 @@ For more information about the *Report as finished* production scenario, see the
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Wyświetlanie lub pomijanie strony Podsumowanie przyjęcia
 
-Funkcji *Kontroluj, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych* można użyć w celu wykorzystania dodatkowego przepływu aplikacji Warehouse w ramach procesu odbierania numerów identyfikacyjnych.
+Funkcji *Kontroluj, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych* można użyć w celu wykorzystania dodatkowego przepływu aplikacji magazynowej w ramach procesu odbierania numerów identyfikacyjnych.
 
 Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 

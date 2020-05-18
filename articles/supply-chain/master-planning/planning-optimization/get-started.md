@@ -3,7 +3,7 @@ title: Rozpocznij pracę z optymalizacją planowania
 description: W tym temacie wyjaśniono, jak zacząć używanie funkcji optymalizacji planowania.
 author: ChristianRytt
 manager: tfehr
-ms.date: 02/10/2020
+ms.date: 05/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4f9124e824a0b6d5035b2567cb19c2c494390d55
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ce1bbb18e9a448e84d001a4195421d2b0e4af5be
+ms.sourcegitcommit: c0d37fdd70f3dec4605fdee6f981f84a49be9b9e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213522"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3339885"
 ---
 # <a name="get-started-with-planning-optimization"></a>Rozpocznij pracę z optymalizacją planowania
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 Funkcja optymalizacji planowania nie obsługuje obecnie wszystkich funkcji dostępnych w aparacie planowania wbudowanym w rozwiązanie Microsoft Dynamics 365 Supply Chain Management. Dlatego ważne jest, aby ocenić, czy aktualnie dostępna w optymalizacji planowania funkcja ma spełniać wymagania użytkownika. Domyślnie funkcja optymalizacji planowania nie jest domyślnie włączona w usłudze Dynamics Lifecycle Services (usługi LCS). Z tego względu użytkownik ma możliwość wykonania oceny przed jej włączeniem.
@@ -36,6 +35,11 @@ Funkcja optymalizacji planowania nie obsługuje obecnie wszystkich funkcji dost�
 Ostatecznie Optymalizacja planowania zastąpi istniejący wbudowany silnik planowania Supply Chain Management.
 
 Przed włączeniem optymalizacji planowania zdecydowanie zaleca się dokonanie oceny wyników analizy pasującej do optymalizacji planowania. Aby uzyskać więcej informacji, zobacz [Analiza dopasowywania optymalizacją planowania](planning-optimization-fit-analysis.md).
+
+### <a name="availability"></a>Dostępność
+Optymalizacja planowania jest obecnie dostępna w następujących regionach geograficznych platformy Azure: Stany Zjednoczone, Kanada, Europa, Wielka Brytania i Australia. W przypadku próby zainstalowania dodatku z innego regionu geograficznego usługi LCS wyświetlą komunikat informujący, że ten region geograficzny nie jest obsługiwany.
+
+Pamiętaj, że optymalizacja planowania nie obsługuje wdrożeń lokalnych aplikacji Dynamics 365 Supply Chain Management.
 
 ### <a name="licensing"></a>Licencjonowanie
 
@@ -46,7 +50,7 @@ Jeśli planowanie główne można uruchomić za pomocą bieżącej licencji, nie
 Aby skorzystać z optymalizacji planowania, zainstaluj dodatek optymalizacji planowania dla Dynamics 365 Supply Chain Management. Można uzyskać dostęp do dodatku z projektu usługi LCS i włączyć funkcję optymalizacji planowania z poziomu interfejsu użytkownika Supply Chain Management.
 
 > [!NOTE]
-> Wymóg na optymalizację planowania to środowisko wysokiej dostępności z włączonymi usługami LCS (a nie środowisko OneBox), z Dynamics 365 Supply Chain Management w wersji 10.0.7 lub nowszej.
+> Wymóg optymalizacji planowania to środowisko wysokiej dostępności z włączonymi usługami LCS w warstwie 2 lub wyższej (a nie środowisko OneBox) z aplikacją Dynamics 365 Supply Chain Management w wersji 10.0.7 lub nowszej. W przypadku próby zainstalowania dodatku w środowisku OneBox instalacja nie zostanie zakończona i trzeba będzie ją anulować.
 
 1. Zaloguj się do usługi LCS i otwórz żądane środowisko.
 1. Przejdź do **Pełne szczegóły**.
@@ -88,11 +92,11 @@ Ustawienie opcji **Zastosuj optymalizację** planowania określa, który Aparat 
 
 Jeśli opcja Podgląd optymalizacji planowania jest włączona, planowanie główne jest wykonywane przy użyciu dodatku Optymalizacja planowania. W takim przypadku wpływa to na wyniki i funkcje planowania głównego.
 
-## <a name="related-resources"></a>Powiązane zasoby
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Warunki i postanowienia dla wersji zapoznawczej](https://go.microsoft.com/fwlink/?linkid=2015274)
 
-[Omówienie planowania optymalizacji](planning-optimization-overview.md)
+[Omówienie optymalizacji planowania](planning-optimization-overview.md)
 
 [Analiza dopasowywania optymalizacją planowania](planning-optimization-fit-analysis.md)
 

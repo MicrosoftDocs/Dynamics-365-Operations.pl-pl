@@ -3,7 +3,7 @@ title: Konfigurowanie dzierżawy B2C w usłudze Commerce
 description: W tym temacie opisano sposób konfigurowania dzierżawcy Azure Active Directory (Azure AD) dzierżawców biznesowych (B2C) dla uwierzytelniania witryny użytkownika w programie Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 04/17 /2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
-ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
+ms.openlocfilehash: 22d62419c703c64470723cf82864a4782306ea8a
+ms.sourcegitcommit: 1b00e21faf89de8b3450936253a4c02cb4d12a3d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270217"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295276"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurowanie dzierżawy B2C w usłudze Commerce
 
@@ -87,7 +87,7 @@ Aby utworzyć aplikację B2C, należy wykonać następujące czynności.
 
 ### <a name="reply-urls"></a>Adresy URL odpowiedzi
 
-Adresy URL odpowiedzi są ważne, ponieważ zezwalają one na białą listę domen zwracanych, gdy odwołuje się on B2C usługi Azure AD do uwierzytelnienia użytkownika. Pozwala to na powrót uwierzytelnionego użytkownika z powrotem do domeny, z której są zalogowani (domena witryny). 
+Adresy URL odpowiedzi są ważne, ponieważ udostępniają one listę dozwolonych domen zwracanych, gdy witryna odwołuje się do funkcji B2C w usłudze Azure AD w celu uwierzytelnienia użytkownika. Zezwala to na powrót uwierzytelnionego użytkownika z powrotem do domeny, z której się zalogował (domena witryny). 
 
 W polu **adres URL odpowiedzi** na ekranie **B2C Azure AD — Aplikacje \> Nowa aplikacja** należy dodać osobne wiersze dla domeny witryny i (po zainicjowaniu środowiska) wygenerowany w systemie handlowym adres URL. Te adresy URL muszą zawsze mieć prawidłowy format adresu URL i muszą być tylko podstawowymi adresami URL (nie można kończyć ukośnikami ani ścieżkami). Następnie należy dołączyć ciąg ``/_msdyn365/authresp`` do podstawowych adresów URL, tak jak w poniższych przykładach.
 
@@ -121,7 +121,7 @@ Aby utworzyć zasady przepływu użytkownika dla rejestracji i logowania, wykona
 
     | **Zbierz atrybuty** | **Roszczenie zwrotu** |
     | ---------------------- | ----------------- |
-    |                        | Adresy e-mail   |
+    | Adres e-mail          | Adresy e-mail   |
     | Imię             | Imię        |
     |                        | Dostawca tożsamości |
     | Nazwisko                | Nazwisko           |
@@ -246,10 +246,6 @@ Aby zaktualizować centralę za pomocą nowych informacji B2C Azure AD, wykonaj 
     1. W polu **typ** wprowadź wartość **publiczne**.
     1. W polu **typ użytkownika** wprowadź wartość **Odbiorca**.
 1. Na okienku akcji wybierz opcję **Zapisz**.
-1. W polu Wyszukiwanie w module Commerce można wyszukiwać **sekwencje numerów** (Administrowanie organizacją > sekwencje numerów).
-1. W okienku akcji wybierz opcję **Edytuj** w obszarze **obsługa**.
-1. Na skróconej karcie **Ogólne** wybierz opcję **nie** dla **Ręcznie**.
-1. Na okienku akcji wybierz opcję **Zapisz**. 
 1. W polu Wyszukiwanie w module Commerce należy wyszukać **harmonogram dystrybucji**
 1. W menu nawigacji w lewym panelu na stronie **harmonogramy dystrybucji** wybierz zadanie **Konfiguracja globalna 1110**.
 1. W okienku akcji wybierz opcję **Uruchom teraz**.
@@ -304,13 +300,14 @@ Aby dodać informacje dotyczące aplikacji dzierżawczej usługi B2C AAD do syst
 1. Wprowadź w wyświetlonym formularzu następujące wymagane elementy, używając wartości ze swojej dzierżawy B2C i aplikacji. Pola, które nie są wymagane (bez gwiazdki), mogą pozostać puste.
 
     - **Nazwa aplikacji**: Nazwa aplikacji B2C, na przykład „Fabrikam B2C”.
-    - **Nazwa dzierżawcy**: nazwa dzierżawy B2C, na przykład „Fabrikam”.
+    - **Nazwa dzierżawy**: nazwa dzierżawy funkcji B2C (na przykład „fabrikam”, jeśli domena jest wyświetlana jako „fabrikam.onmicrosoft.com” dla dzierżawcy B2C). 
     - **Identyfikator zasady zapominania hasła**: identyfikator zasady przepływu użytkownika zapominania hasła, na przykład „B2C_1_PasswordReset”.
     - **Identyfikator zasad logowania rejestracji**: Identyfikator zasad tworzenia konta i logowania użytkownika, na przykład „B2C_1_signup_signin”.
     - **Identyfikator GUID klienta**: Identyfikator aplikacji B2C, na przykład „22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6”.
     - **Identyfikator zasad edycji profilu**: Identyfikator zasad przepływu użytkownika edycji profilu, na przykład „B2C_1A_ProfileEdit”.
 
 1. Kliknij przycisk **OK**. Na liście powinna być widoczna nazwa aplikacji B2C.
+1. Wybierz **Zapisz**, żeby zapisać zmiany.
 
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>Skojarz aplikację B2C z witryną i kanałem
 

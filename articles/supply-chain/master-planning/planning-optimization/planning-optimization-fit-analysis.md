@@ -3,7 +3,7 @@ title: Analiza dopasowywania optymalizacją planowania
 description: W tym temacie wyjaśniono, jak sprawdzić bieżącą konfigurację i dane, porównując je z możliwościami funkcji optymalizacji planowania.
 author: ChristianRytt
 manager: tfehr
-ms.date: 04/17/2020
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0382e78942e6cb2047e37b76f1daf5725638d5c3
-ms.sourcegitcommit: 915ee7c59ef5fbd4927c10840e5c5e8652f667a9
+ms.openlocfilehash: 9bf19604d246988e05b91c8a41b1f57b523d2192
+ms.sourcegitcommit: 73ae66c9464bcc9ddc1efbf4e76abb2758862fe6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3277805"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346660"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analiza dopasowywania optymalizacją planowania
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 Aby sprawdzić zgodność bieżących ustawień i danych z funkcją optymalizacji planowania, przejdź do **Planowanie główne** \> **Ustawienia** \> **Analiza dopasowywania optymalizacją planowania**, a następnie wybierz opcję **Uruchom analizę**. Jeśli analiza wykryje niespójności, zostaną one wyświetlone na tej samej stronie. (Analiza może potrwać kilka minut.)
@@ -73,6 +72,7 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | Międzyfirmowe | Plany główne uwzględniające planowany popyt od dostawcy do odbiorcy: _\#_ | Ta funkcja jest oczekiwana. Obecnie planowanie główne nie zawiera planowanego popytu od dostawcy, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. Należy zauważyć, że zwolnione/zaakceptowane zamówienia nadal działają z normalnymi funkcjami międzyfirmowymi i będą dotyczyły większości scenariuszy. |
 | Kanban | Rekordy zapotrzebowania na towary z planowanym typem zamówienia Kanban: _\#_ | Ta funkcja jest oczekiwana. Obecnie zapotrzebowanie na towary, dla którego ustawiono wartość Kanban, będzie ignorowane, gdy jest włączona Optymalizacja planowania. Typ zamówienia planowanego Kanban utworzy ostrzeżenie podczas planowania głównego, a planowane zamówienia zakupu zostaną utworzone w celu pokrycia pokrewnego popytu. |
 | Kanban | Towary z domyślnym typem zamówienia Kanban: _\#_ | Obecnie domyślny typ zamówienia, dla którego ustawiono wartość Kanban, będzie ignorowane, gdy jest włączona Optymalizacja planowania. Typ zamówienia domyślnego Kanban utworzy ostrzeżenie podczas planowania głównego, a planowane zamówienia zakupu zostaną utworzone w celu pokrycia pokrewnego popytu. |
+| Stan cyklu życia produktu   | Stany cyklu życia produktu nieaktywne dla planowania: _\#_ | Ta funkcja oczekuje na wprowadzenie. Obecnie stan cyklu życia produktu jest ignorowany przy włączonej optymalizacji planowania. Można dostosować filtr produktów na poziomie planu, aby uniknąć uwzględniania produktów, w których stan cyklu życia produktu został wyłączony na potrzeby planowania. |
 | Produkcyjne | Wiersze BOM z zaokrągleniem lub wieloma wariantami konfiguracji: _\#_ | Ta funkcja jest oczekiwana. Obecnie zaokrąglanie i wielokrotność konfiguracji są ignorowane w wierszach BOM, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. |
 | Produkcyjne | Wiersze BOM/wiersze formuł z miarą formuły: _\#_ | Ta funkcja jest oczekiwana. Obecnie formuła z miarą jest ignorowana w wierszach BOM i formuły, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. |
 | Produkcyjne | Wiersze BOM/wiersze formuł z podstawianiem pozycji (grupy planowania): _\#_ | Ta funkcja jest oczekiwana. Obecnie podstawianie pozycji (grupy planowania) jest ignorowana w wierszach BOM i formuły, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. |
@@ -99,7 +99,7 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | Oferty sprzedaży | Plany główne z włączoną opcją ofert sprzedaży: _\#_ | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania oferty są ignorowane. Zostaną one zignorowane niezależnie od tego ustawienia. |
 | Okres trwałości | Plany główne z włączoną opcją okresu trwałości: _\#_ | Ta funkcja jest oczekiwana. Obecnie podczas włączania optymalizacji planowania okres trwałości nie jest brany pod uwagę, niezależnie od tego ustawienia. |
 
-## <a name="related-resources"></a>Powiązane zasoby
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie optymalizacji planowania](planning-optimization-overview.md)
 
