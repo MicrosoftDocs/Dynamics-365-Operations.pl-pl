@@ -421,10 +421,12 @@
                   href: asset-management/controlling-and-reporting/asset-fault-analysis.md
                 - name: Wskaźniki KPI składnika majątku
                   href: asset-management/controlling-and-reporting/asset-kpis.md
-                - name: Używająca pozycja
+                - name: Miejsce użycia pozycji
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: Stan konserwacji
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Integrowanie zarządzania składnikami majątku z aplikacją Dynamics 365 Guides
+              href: asset-management/asset-management-guides-integration.md
             - name: Mobilny obszar roboczy zarządzania składnikami majątku
               href: asset-management/asset-management-mobile-workspace.md
         - name: Zarządzanie danymi
@@ -703,7 +705,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Dodawanie wymiarów finansowych do miar agregacji
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Tworzenie raportów analitycznych przy użyciu PowerBI Desktop
+                - name: Tworzenie raportów analitycznych za pomocą aplikacji Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1319,7 +1321,7 @@
               items:
                 - name: Omówienie optymalizacji planowania
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Wartość ujemna dostępnych zapasów jest traktowana jako zerowa
+                - name: Planowanie z użyciem ujemnych ilości dostępnych zapasów
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Rozpoczęcie optymalizacji planowania
                   href: master-planning/planning-optimization/get-started.md
@@ -2455,7 +2457,7 @@
                           href: service-management/reverse-changes-in-a-dispatch-board.md
                         - name: Przeglądanie niewysłanych zleceń serwisowych
                           href: service-management/view-undispatched-service-orders.md
-                        - name: 'Modyfikowanie BOM serwisu '
+                        - name: Modyfikowanie BOM serwisu
                           href: service-management/modify-service-bom.md
                     - name: Usługa dostarczania
                       items:
@@ -2653,8 +2655,6 @@
                   href: warehousing/material-replenishment-withdrawal-kanban.md
                 - name: Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości zapasów
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
-                - name: Konfigurowanie szablonu pracy dla zamówień zakupu
-                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
             - name: Instalowanie i konfigurowanie aplikacji magazynu
               items:
                 - name: Omówienie instalacji i konfiguracji
@@ -2663,7 +2663,7 @@
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Konfigurowanie urządzeń przenośnych do pracy magazynowej
                   href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Warehouse Mobile App
+                - name: Numer identyfikacyjny odbierany za pomocą aplikacji magazynu
                   href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy w ramach zamówienia zakupu
                   href: warehousing/tasks/set-up-mobile-device-menu.md

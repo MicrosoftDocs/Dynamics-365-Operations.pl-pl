@@ -990,7 +990,9 @@
               href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
             - name: Prognozy i budżety projektów
               href: project-management/project-forecasts-budgets.md
-            - name: Przeniesienie budżetów projektu na koniec roku obrachunkowego
+            - name: Tworzenie modeli prognozy dla budżetów projektu
+              href: project-management/create-forecast-models-project-budgets.md
+            - name: Przenoszenie budżetów projektu na koniec roku obrachunkowego
               href: project-management/process-project-budgets-for-fiscal-year-end.md
             - name: Zamówienia sprzedaży dla projektu
               href: project-management/project-sales-orders.md
@@ -1394,7 +1396,7 @@
                       href: localizations/latam-bra-tax-payments.md
                     - name: Podatek w ofertach sprzedaży
                       href: localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
-                    - name: 'Potrącone zaliczki na podatek '
+                    - name: Potrącone zaliczki na podatek
                       href: localizations/tasks/br-00009-brazilian-withholding-taxes.md
                     - name: Potrącone zaliczki na podatek dla płatności odbiorcy
                       href: localizations/tasks/br-00042-withholding-taxes-customers-payments.md
@@ -1742,8 +1744,8 @@
               items:
                 - name: Węgry — omówienie
                   href: localizations/hungary.md
-                - name: Obliczanie kursu wymiany
-                  href: localizations/tasks/hu-00001-exchange-rate-calculation.md
+                - name: Obliczanie średnich i dziennych kursów wymiany
+                  href: localizations/emea-hun-average-daily-exchange-rate-calculation.md
                 - name: Metody amortyzacji środków trwałych
                   href: localizations/emea-hun-fixed-assets-depreciation-methods.md
                 - name: Niskokosztowe środki trwałe
@@ -2284,6 +2286,8 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Integracja Semansys XBRL
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
+                - name: 'Plik audytu (XML Auditfile Financieel, XAF)'
+                  hred: localizations/emea-nl-audit-file.md
             - name: Norwegia
               items:
                 - name: Norwegia — omówienie
@@ -2930,7 +2934,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
                 - name: Dodawanie wymiarów finansowych do miar agregacji
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-                - name: Tworzenie raportów analitycznych przy użyciu PowerBI Desktop
+                - name: Tworzenie raportów analitycznych za pomocą aplikacji Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
@@ -2978,7 +2982,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Testowanie przygotowanego rozwiązania Raportowanie elektroniczne w aplikacji docelowej
                       items:
-                        - name: (Raportowanie elektroniczne) Importowanie konfiguracji z RCS
+                        - name: Importowanie konfiguracji z RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
                         - name: Generowanie dokumentów elektronicznych dla płatności przy użyciu konfiguracji formatu
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
@@ -3026,7 +3030,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/finance/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
-                    - name: List
+                        - name: Today
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
+                    - name: Lista
                       items:
                         - name: Lista funkcji
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
@@ -3240,12 +3246,6 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: Wybieranie definicji modelu danych podczas tworzenia formatów
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Rozszerzone opcje filtrowania służące do wyszukiwania konfiguracji w repozytorium globalnym
-              href: ../finance/localizations/enhanced-filtering-global-repo.md
-            - name: Generowanie raportów poprzez dodawanie treści w postaci nieprzetworzonego kodu XML
-              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
-            - name: (Raportowanie elektroniczne) Międzyfirmowe źródła danych w module Raportowanie elektroniczne
-              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
             - name: Projektowanie formatów modułu Raportowanie elektroniczne w celu generowania wychodzących dokumentów elektronicznych w różnych formatach
               items:
                 - name: (Raportowanie elektroniczne) Projektowanie konfiguracji do generowania raportów w formacie OPENXML
@@ -3270,44 +3270,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
             - name: Definiowanie zależności konfiguracji raportowania elektronicznego od innych składników
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Projektowanie rozwiązania Raportowanie elektroniczne w celu korzystania z wymiarów finansowych
-              items:
-                - name: Projektowanie modeli danych w celu używania wymiarów finansowych jako źródeł danych
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
-                - name: Mapowanie modeli w celu używania wymiarów finansowych jako źródeł danych
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
-                - name: Projektowanie raportów w celu używania wymiarów finansowych jako źródeł danych
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
-                - name: Generowanie raportów używających wymiarów finansowych jako źródeł danych
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
-            - name: Projektowanie formatów modułu Raportowanie elektroniczne w celu wykonywania zliczania i sumowania przy użyciu informacji z wygenerowanych danych wyjściowych
-              items:
-                - name: Tworzenie formatów w celu wykonywania zliczania i sumowania
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurowanie formatu w celu wykonywania zliczania i sumowania
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
-                - name: Używanie obliczeń w celu generowania wyników zliczania i sumowania
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
-                - name: Uruchamianie formatów w celu wykonywania zliczania i sumowania
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
             - name: Dynamiczne dodawanie kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów
               items:
                 - name: Projektowanie formatów w celu dynamicznego dodawania kolumn do raportów w programie Excel jako poziomo rozszerzalnych zakresów
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                 - name: Uruchamianie formatów w celu dynamicznego dodawania kolumn do raportów w programie Excel jako poziomo rozszerzalnych zakresów
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
-            - name: Używanie plików zarządzania dokumentami w danych wyjściowych formatu
-              items:
-                - name: Przygotowywanie modeli danych w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
-                - name: Rozszerzanie modeli danych w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
-                - name: Tworzenie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
-                - name: Uruchamianie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
-                - name: Modyfikowanie i uruchamianie formatów w celu używania plików zarządzania dokumentami w danych wyjściowych modułu Raportowanie elektroniczne
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
             - name: Aktualizowanie danych aplikacji przy użyciu modułu Raportowanie elektroniczne
               items:
                 - name: Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji
@@ -3340,8 +3308,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
             - name: Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości zawartości
               href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
-            - name: Obsługa sparametryzowanych wywołań źródeł danych narzędzia Raportowanie elektroniczne typu pola obliczeniowego
-              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
             - name: Cykl życia konfiguracji
               items:
                 - name: Zarządzanie cyklem życia konfiguracji
@@ -3361,23 +3327,67 @@
                     - name: Pobieranie konfiguracji z repozytorium modułu Raportowanie elektroniczne typu RCS
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Importowanie konfiguracji z RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
             - name: Samouczki
               items:
-                - name: Używanie źródeł danych JOIN do pobierania danych z wielu tabel aplikacji
-                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                - name: Uzyskiwanie informacji dotyczących sposobu używania źródeł danych
+                  items:
+                    - name: Pobieranie danych z wielu tabel przy użyciu funkcji SPRZĘŻENIE
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Dodawanie zawartości przy użyciu PIERWOTNEGO KODU XML
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
+                    - name: Obsługa sparametryzowanych wywołań źródeł danych typu POLE OBLICZENIOWE
+                      href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                    - name: Międzyfirmowe źródła danych w module Raportowanie elektroniczne
+                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Używanie źródeł danych typu SZCZEGÓŁY WYMIARÓW FINANSOWYCH
+                      items:
+                        - name: Projektowanie modeli danych
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Mapowanie modeli w celu używania wymiarów finansowych
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
+                        - name: Projektowanie raportów
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
+                        - name: Uruchamianie raportów
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
+                    - name: Używanie wygenerowanych danych wyjściowych jako źródła danych w celu wykonywania zliczania i sumowania
+                      items:
+                        - name: Tworzenie formatów
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurowanie formatu w celu wykonywania zliczania i sumowania
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
+                        - name: Generowanie danych wyjściowych na potrzeby zliczania i sumowania
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
+                        - name: Uruchamianie formatów w celu wykonywania zliczania i sumowania
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
+                    - name: Uzyskiwanie dostępu do plików zarządzania dokumentami przy użyciu zbiorów DOKUMENTY
+                      items:
+                        - name: Przygotowywanie modeli danych
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Rozszerzanie modeli danych w celu używania plików zarządzania dokumentami
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
+                        - name: Tworzenie formatów
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
+                        - name: Uruchamianie formatów w celu używania plików zarządzania dokumentami
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
+                        - name: Modyfikowanie i uruchamianie formatów w celu używania plików zarządzania dokumentami
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
+                        - name: Debugowanie źródeł danych
+                          href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
                 - name: Konfigurowanie mapowań modelu ER w zależności od kraju
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
                 - name: Konfiguracja formatów ER do używania parametrów określonych dla firmy
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
                 - name: Konfiguracja parametrów formatu ER dla firmy
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
                 - name: Odraczanie wykonania elementów formatu ER
                   items:
                     - name: Odraczanie wykonania elementu sekwencji
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
                     - name: Odraczanie wykonania elementu XML
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                - name: Ścieżka względna w powiązaniach danych
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Używanie rozwiązań modułu Raportowanie elektroniczne w aplikacji Finance and Operations
               items:
                 - name: Konfigurowanie struktury
@@ -3385,7 +3395,11 @@
                     - name: Konfigurowanie struktury modułu Raportowanie elektroniczne
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
                     - name: Tworzenie kopii zapasowych i odzyskiwanie szablonów narzędzia Raportowanie elektroniczne
-                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
+                      items:
+                        - name: Magazyn kopii zapasowej szablonów modułu Raportowanie elektroniczne
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
+                        - name: Oczyszczanie migracji modułu Raportowanie elektroniczne
+                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/finance/toc.json
                     - name: Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Miejsca docelowe

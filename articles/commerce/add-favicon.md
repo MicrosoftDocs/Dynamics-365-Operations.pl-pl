@@ -3,7 +3,7 @@ title: Dodawanie ikony favicon
 description: W tym temacie opisano sposób dodawania ikony favicon do witryny.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 287663817232e7ce86e8fdb1fb5c2fcfeed33d20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
+ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001551"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295087"
 ---
 # <a name="add-a-favicon"></a>Dodawanie ikony favicon
-
 
 [!include [banner](includes/banner.md)]
 
@@ -41,23 +40,48 @@ Chociaż do witryny można dodać wiele favicons różnych rozmiarów i typów p
 
 Aby przekazać favicon do kolekcji składników majątku w witrynie wykonaj procedurę opisaną w następujących krokach:
 
-1. Przejdź do **Składniki majątku \> Przekaż \> Przekaż składniki majątku**.
-1. Znajdź i wybierz favicon w lokalnym systemie plików.
-1. Wprowadź tytuł, a następnie kliknij przycisk **OK**. 
-1. W okienku właściwości po prawej stronie Skopiuj publiczny adres URL favicon.
+1. W okienku nawigacji po lewej stronie wybierz pozycję **Biblioteka multimedialna**.
+1. Na pasku poleceń wybierz opcję **Przekaż \> Przekaż elementy multimedialne**.
+1. W oknie Eksploratora plików przejdź do pliku obrazu favicon, który chcesz przekazać, zaznacz go, a następnie wybierz pozycję **Otwórz**.
+1. W oknie dialogowym **przekazywanie elementu multimedialnego** wprowadź wymagany tytuł i tekst alternatywny.
+1. Jeśli chcesz opublikować obraz natychmiast po przekazaniu, zaznacz pole wyboru **Publikuj elementy multimedialne po przekazaniu**.
 
-> [!NOTE]
-> Jeśli nie zaznaczysz opcji **Publikuj zasoby po przekazaniu**, musisz wrócić do strony **Składniki majątku** i ręcznie opublikować favicon później.
+    > [!NOTE]
+    > Jeśli nie zaznaczysz pola wyboru **Publikuj elementy multimedialne po przekazaniu**, musisz wrócić do strony **Elementy multimedialne** i ręcznie opublikować favicon później.
 
-## <a name="create-the-html-for-the-favicon"></a>Utwórz kod HTML dla favicon
+1. Kliknij przycisk **OK**.
+1. W okienku właściwości po prawej stronie Skopiuj publiczny adres URL favicon. Ten adres URL będzie używany później.
 
-Aby utworzyć kod HTML dla favicon, należy skorzystać z poniższego urywka kodu HTML. W przypadku atrybutu **href** zamień wartość **„Publiczny\_URL\_dla\_twojej\_favicon”** na publiczny adres URL, który został wcześniej skopiowany.
+## <a name="create-the-html-for-your-favicon"></a>Tworzenie kodu HTML dla pliku favicon
+
+Aby utworzyć kod HTML dla pliku favicon, należy skorzystać z poniższego ciągu kodu HTML. W przypadku atrybutu **href** zamień wartość **Publiczny\_URL\_dla\_ikony\_favicon”** na skopiowany wcześniej, publiczny adres URL.
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="add-the-html-for-the-favicon-to-the-head-element-of-your-pages"></a>Dodaj kod HTML favicon do elementu stron \<head\>.
+## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Tworzenie fragmentu strony zawierającego metatag dla ikony favicon
 
-Aby dodać favicon do witryny, należy użyć tej samej procedury, która służy do dodawania dowolnego typu kodu HTML lub skryptu do elementu **\<head\>** stron witryny.
+Aby utworzyć fragment strony zawierający metatag dla ikony favicon, wykonaj poniższe kroki.
+
+1. Przejdź do obszaru **Fragmenty strony**, a następnie wybierz pozycję **Nowy**.
+1. W oknie dialogowym **Nowy fragment strony** wybierz pozycję **Tagi meta** jako moduł, na którym oparty jest fragment strony.
+1. Wprowadź nazwę fragmentu strony, a następnie kliknij przycisk **OK**.
+1. W drzewie hierarchii fragmentów wybierz element podrzędny **Domyślne tagi meta**.
+1. W prawym okienku, w obszarze **Tagi meta**, wybierz pozycję **Dodaj**, a następnie wprowadź ciąg HTML utworzony wcześniej dla ikony favicon. 
+1. Wybierz pozycję **Zakończ edycję**, a następnie wybierz pozycję **Publikuj**, aby opublikować fragment strony.
+
+## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>Dodawanie fragmentu strony tagów meta do sekcji nagłówka kodu HTML stron
+
+Aby dodać fragment strony tagów meta do sekcji nagłówka (**head**) kodu HTML stron, wykonaj następujące kroki.
+
+1. Przejdź do obszaru **Szablony**, otwórz szablon stron, do których chcesz dodać ikonę favicon, a następnie wybierz pozycję **Edytuj**.
+1. W drzewie hierarchii szablonów wybierz przycisk wielokropka (**...**) znajdujący się po prawej stronie kontenera **HTML head**, a następnie wybierz pozycję **Dodaj fragment strony**.
+1. W oknie dialogowym **Wybieranie fragmentu strony** wybierz utworzony wcześniej fragment strony tagów meta, a następnie kliknij przycisk **OK**.
+1. Wybierz pozycję **Zakończ edycję**, a następnie wybierz pozycję **Publikuj**, aby opublikować szablon.
+
+> [!NOTE]
+> Jeśli witryna używa więcej niż jednego szablonu, musisz dodać fragment strony tagów meta do wszystkich tych szablonów.
+
+Podczas wyświetlania podglądu stron opartych na szablonie, do którego dodano fragment strony tagów meta, ikona favicon powinna być teraz widoczna na karcie przeglądarki.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

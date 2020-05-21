@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0fe9ed9f2bebe8683f3b8bb37b33e8a63b9521f6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205674"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346475"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Zasada rezerwacji wymiarów na poziomie magazynu elastycznego
 
@@ -233,7 +233,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Tak</td>
 <td>
 <ol>
-<li>Umożliwia wybranie opcji <strong>Zastąp element menu lokalizacji</strong> w magazynie Mmobile App (WMA) po rozpoczęciu pracy pobrania.</li>
+<li>Wybierz element menu <strong>Zastąp lokalizację</strong> w aplikacji magazynowej po rozpoczęciu pracy pobrania.</li>
 <li>Wybierz opcję <strong>Sugeruj</strong>.</li>
 <li>Potwierdź nową lokalizację sugerowaną na podstawie dostępności ilości partii.</li>
 </ol>
@@ -247,10 +247,10 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Nie dotyczy</td>
 </tr>
 <tr>
-<td>Nie</td>
+<td>Nr</td>
 <td>
 <ol>
-<li>Umożliwia wybranie opcji <strong>Zastąp element menu lokalizacji</strong> w magazynie Mmobile App (WMA) po rozpoczęciu pracy pobrania.</li>
+<li>Wybierz element menu <strong>Zastąp lokalizację</strong> w aplikacji magazynowej po rozpoczęciu pracy pobrania.</li>
 <li>Umożliwia ręczne wprowadzenie lokalizacji.</li>
 </ol>
 </td>
@@ -278,7 +278,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Nie dotyczy</td>
 <td>
 <ol>
-<li>Wybierz opcję <strong>Pełna</strong> w magazynie Mmobile App (WMA) po rozpoczęciu procesu pobrania pracy.</li>
+<li>Wybierz element menu <strong>Pełne</strong> w aplikacji magazynowej po rozpoczęciu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrania</strong>, wprowadź częściową ilość wymaganego pobrania, aby wskazać pełną wydajność.</li>
 </ol>
 </td>
@@ -353,7 +353,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Tak</td>
 <td>
 <ol>
-<li>Umożliwia rozpoczęcie przepływu w module WMA.</li>
+<li>Rozpocznij przenoszenie w aplikacji magazynowej.</li>
 <li>Wprowadź początkową i końcową lokalizację.</li>
 </ol></td>
 <td>
@@ -469,7 +469,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Tak</td>
 <td>
 <ol>
-<li>Wybierz opcję <strong>Krótki wybór</strong> w magazynie Mmobile App (WMA) po rozpoczęciu procesu uruchomienia pracy.</li>
+<li>Wybierz element menu <strong>Pobranie w niedomiarze</strong> w aplikacji magazynowej po uruchomieniu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrana</strong> wpisz wartość <strong>0</strong> (zero).</li>
 <li>W polu <strong>Powód</strong>, wpisz <strong>Brak realokacji</strong>.</li>
 </ol>
@@ -498,7 +498,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Tak</td>
 <td>
 <ol>
-<li>Wybierz opcję <strong>Krótki wybór</strong> w magazynie Mmobile App (WMA) po rozpoczęciu procesu uruchomienia pracy.</li>
+<li>Wybierz element menu <strong>Pobranie w niedomiarze</strong> w aplikacji magazynowej po uruchomieniu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrana</strong> wpisz wartość <strong>0</strong> (zero).</li>
 <li>W polu <strong>Powód</strong>, wpisz <strong>Brak realokacji</strong>.</li>
 </ol>
@@ -522,7 +522,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Tak</td>
 <td>
 <ol>
-<li>Wybierz opcję <strong>Krótki wybór</strong> w magazynie Mmobile App (WMA) po rozpoczęciu procesu uruchomienia pracy.</li>
+<li>Wybierz element menu <strong>Pobranie w niedomiarze</strong> w aplikacji magazynowej po uruchomieniu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrana z krótkiego odbioru</strong> wpisz wartość <strong>0</strong> (zero).</li>
 <li>W polu <strong>przyczyna</strong> wybierz opcję <strong>krótkie pobieranie z ręczną zmianą alokacji</strong>.</li>
 <li>Wybierz numer lokalizacji/numer identyfikacyjny na liście.</li>
@@ -545,10 +545,10 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 </tr>
 <tr>
 <td>Skonfigurowano wyjątek pracy dla <strong>krótkiego typu pobrania</strong>, w którym jest ustawiana <strong>Ponowna alokacja towaru</strong> = <strong>Ręcznie</strong>, <strong>Dopasuj zapasy</strong> = <strong>Tak</strong> oraz <strong>Usuń rezerwacje</strong> = <strong>Nie</strong>. Ponadto dla pracownika jest włączona opcja <strong>Zezwalaj na ręczną zmianę alokacji pozycji</strong>.</td>
-<td>Nie</td>
+<td>Nr</td>
 <td>
 <ol>
-<li>Wybierz opcję <strong>Krótki wybór</strong> w magazynie Mmobile App (WMA) po rozpoczęciu procesu uruchomienia pracy.</li>
+<li>Wybierz element menu <strong>Pobranie w niedomiarze</strong> w aplikacji magazynowej po uruchomieniu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrana z krótkiego odbioru</strong> wpisz wartość <strong>0</strong> (zero).</li>
 <li>W polu <strong>przyczyna</strong> wybierz opcję <strong>krótkie pobieranie z ręczną zmianą alokacji</strong>.</li>
 </ol>
@@ -558,10 +558,10 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 </tr>
 <tr>
 <td>Skonfigurowano wyjątek pracy dla <strong>krótkiego typu pobrania</strong>, w którym jest ustawiana <strong>Ponowna alokacja towaru</strong> = <strong>Ręcznie</strong>, <strong>Dopasuj zapasy</strong> = <strong>Tak</strong> oraz <strong>Usuń rezerwacje</strong> = <strong>Tak</strong>. Ponadto dla pracownika jest włączona opcja <strong>Zezwalaj na ręczną zmianę alokacji pozycji</strong>.</td>
-<td>Nie</td>
+<td>Nr</td>
 <td>
 <ol>
-<li>Wybierz opcję <strong>Krótki wybór</strong> w magazynie Mmobile App (WMA) po rozpoczęciu procesu uruchomienia pracy.</li>
+<li>Wybierz element menu <strong>Pobranie w niedomiarze</strong> w aplikacji magazynowej po uruchomieniu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrana z krótkiego odbioru</strong> wpisz wartość <strong>0</strong> (zero).</li>
 <li>W polu <strong>przyczyna</strong> wybierz opcję <strong>krótkie pobieranie z ręczną zmianą alokacji</strong>.</li>
 <li>Wybierz numer lokalizacji/numer identyfikacyjny na liście.</li>
@@ -585,7 +585,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Nie dotyczy</td>
 <td>
 <ol>
-<li>Wybierz opcję <strong>Krótki wybór</strong> w magazynie Mmobile App (WMA) po rozpoczęciu procesu uruchomienia pracy.</li>
+<li>Wybierz element menu <strong>Pobranie w niedomiarze</strong> w aplikacji magazynowej po uruchomieniu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrana z krótkiego odbioru</strong> wpisz wartość <strong>0</strong> (zero).</li>
 <li>W polu <strong>przyczyna</strong> wybierz opcję <strong>krótkie pobieranie z automatyczną zmianą alokacji</strong>.</li>
 </ol>

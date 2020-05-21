@@ -2,8 +2,8 @@
 title: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia w Dynamics 365 Supply Chain Management.
 author: kamaybac
-manager: tfehr
-ms.date: 03/03/2020
+manager: AnnBe
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2011f5cc3489eb7921d818dbd178425f72bac2d1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7502cd16129431d41d152508fb3b49ff85a5a9f8
+ms.sourcegitcommit: f1db998ecfccca660eb15cc2739b12c8463fa54d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205076"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331255"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
 
@@ -35,6 +35,18 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 > [!NOTE]
 > Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Supply Chain Management 10.0.11
+
+### <a name="use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios"></a>Użycie wbudowanego aparatu planowania głównego Supply Chain Management na potrzeby scenariuszy dotyczących dystrybucji
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Aby zwiększyć wydajność i zminimalizować obciążenie pracą bazy danych SQL podczas przebiegów planowania głównego, aparat planowania głównego aplikacji Supply Chain Management jest zastępowany przez optymalizację planowania. Optymalizacja planowania umożliwia szybkie przebiegi planowania, które można wykonywać nawet w godzinach pracy. Pozwala to planistom na natychmiastowe reagowanie na zmiany wprowadzone w parametrach popytu lub planowania. |
+| **Zamieniona przez inną funkcję?**   | Tak, optymalizacja planowania zastąpi istniejący wbudowany aparat planowania głównego aplikacji Supply Chain Management. |
+| **Powiązane obszary produktów**         | Supply Chain Management — planowanie główne |
+| **Opcja wdrażania**              | Tylko chmura. Optymalizacja planowania nie jest obsługiwana w przypadku wdrożeń lokalnych. |
+| **Stan**                         | Wycofane. W kwietniu 2021 r. scenariusze dystrybucji nie będą już obsługiwane za pomocą wbudowanego aparatu planowania głównego aplikacji Dynamics 365 Supply Chain Management. W scenariuszach dystrybucji klienci muszą korzystać z optymalizacji planowania podczas obliczeń planowania głównego. Aby uzyskać więcej informacji, zobacz temat [Dokumentacja dotycząca optymalizacji planowania](https://go.microsoft.com/fwlink/?linkid=2105830). Klienci z wdrożeniami lokalnymi aplikacji Dynamics 365 Supply Chain Management będą mogli nadal korzystać z aparatu planowania głównego aplikacji Supply Chain Management w scenariuszach dystrybucji po kwietniu 2021 r. Nie będą jednak wprowadzane dodatkowe ulepszenia funkcji. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Poprzednie oświadczenia o usuniętych lub wycofanych funkcjach
 

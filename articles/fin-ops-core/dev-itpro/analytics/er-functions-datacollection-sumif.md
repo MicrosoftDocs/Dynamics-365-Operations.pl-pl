@@ -3,7 +3,7 @@ title: SUMIF, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji SUMIF w module Raportowanie elektroniczne (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/04/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 374569d3bbe59f1b96eee9c789b97b7b2a6004bf
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 9df7be0825203f91434d348385c1ee358ae555ea
+ms.sourcegitcommit: ef6fd78c817f93610771cfb2477f52f16b882164
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042488"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "3290207"
 ---
-# <a name="SUMIF">SUMIF, funkcja ER</a>
+# <a name=""></a><a name="SUMIF">SUMIF, funkcja ER</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,6 +62,8 @@ W argumencie `condition value` symbol wieloznaczny **"\*"** może służyć do r
 ## <a name="example"></a>Przykład
 
 Aby dowiedzieć się więcej o korzystaniu z tej funkcji, zobacz przewodnik zadania [ER Używanie danych wyjściowych formatu do inwentaryzacji i sumowania](tasks/er-format-counting-summing-1.md), który jest częścią procesu biznesowego **Nabywanie/opracowywanie składników usług/rozwiązań informatycznych**.
+
+Aby uzyskać więcej informacji i przykładów dotyczących korzystania z tej funkcji, zobacz tematy [Odkładanie wykonania elementów sekwencji w formatach ER](er-defer-sequence-element.md#Example) i [Odkładanie wykonania elementów XML w formatach ER](er-defer-xml-element.md#Example).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

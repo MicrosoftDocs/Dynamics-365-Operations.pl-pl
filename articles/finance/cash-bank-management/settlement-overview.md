@@ -1,9 +1,9 @@
 ---
 title: Omówienie rozliczeń
-description: Ten temat zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczać, czas i metody rozliczania transakcji oraz wyniki procesu rozliczania.
+description: Ten temat zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczyć, oraz czas i proces ich rozliczania. Przedstawia on także wyniki procesu rozliczania.
 author: kweekley
 manager: AnnBe
-ms.date: 05/10/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,40 +18,63 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: b8b25575d5956e1345934512a7fe6503202b67a9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 650b0ef0123cf9acf42c2e7460693b555897744f
+ms.sourcegitcommit: efde328c40201b1cb60d34891900b62a7e2b6645
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179424"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329479"
 ---
 # <a name="settlement-overview"></a>Omówienie rozliczeń
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczać, czas i metody rozliczania transakcji oraz wyniki procesu rozliczania.
+Ten temat zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczyć, oraz czas i proces ich rozliczania. Przedstawia on także wyniki procesu rozliczania.
 
-Podczas rozliczania transakcje w jednym dokumencie są stosowane do transakcji z innego dokumentu w celu zwiększenia lub zmniejszenia salda każdego dokumentu. Na przykład płatność może być zastosowana do faktury. Różne typy transakcji mogą być rozliczane w różnym czasie i różnymi metodami. Rozliczenie może również spowodować wygenerowanie nowych transakcji.
+Podczas rozliczania transakcje w jednym dokumencie są stosowane do transakcji z innego dokumentu w celu zwiększenia lub zmniejszenia salda każdego dokumentu. Na przykład płatność może być zastosowana do faktury. Różne typy transakcji mogą być rozliczane w różnym czasie i za pośrednictwem różnych metod. Proces rozliczania może również spowodować wygenerowanie nowych transakcji.
 
 ## <a name="what-transactions-can-be-settled"></a>Jakie transakcje można rozliczyć
-Rozliczenia w ramach rozrachunków z dostawcami i rozrachunków z odbiorcami mogą występować między wszystkimi typami transakcji, które mają wpływ na salda dostawcy lub salda odbiorcy (np. faktury, płatności, faktury korygujące i opłaty). Dowolny typ transakcji może zostać rozliczony względem innych typów transakcji. Na przykład można rozliczyć płatność dla faktury, fakturę korygującą dla faktury, fakturę dla faktury i płatności dla płatności. Można rozliczyć płatności dla transakcji w tej samej firmie lub w innej firmie. W organizacjach, w których jest używany model płatności scentralizowanych, [płatności scentralizowane](set-up-centralized-payments.md) mogą pomóc uprościć proces płatności.
+
+W modułach rozrachunków z dostawcami i rozrachunków z odbiorcami mogą występować rozliczenia między wszystkimi typami transakcji, które mają wpływ na salda dostawcy lub salda odbiorcy. Te typy transakcji mogą obejmować faktury, płatności, faktury korygujące i opłaty. Dowolny typ transakcji może zostać rozliczony względem innych typów transakcji. Na przykład można rozliczyć płatność dla faktury, fakturę korygującą dla faktury, fakturę dla innej faktury i płatności dla innej płatności.
+
+Można rozliczyć płatności dla transakcji w tej samej firmie lub w innej firmie. W organizacjach, w których jest używany model płatności scentralizowanych, [płatności scentralizowane](set-up-centralized-payments.md) mogą pomóc uprościć proces płatności.
 
 ## <a name="when-to-settle-transactions"></a>Kiedy rozliczać transakcje
-Transakcje można rozliczyć w momencie wpisu płatności. Na przykład, płacąc odbiorcy zazwyczaj zaznacza się fakturę do zapłacenia. Wybierając faktury, można je oznaczyć do rozliczenia płatnością. Gdy pracownicy ds. płatności rozrachunków z odbiorcami rejestrują płatność odbiorcy, mogą oznaczyć odpowiednie faktury do rozliczenia na podstawie informacji dołączonej do płatności odbiorcy. Na stornie **Rozliczenia transakcji** można oznaczyć transakcje do rozliczenia. Tę stronę można otworzyć z dowolnej niezaksięgowanej faktury lub płatności. Kiedy transakcja jest księgowana, rozliczenie jest również księgowane. Transakcje mogą również być rozliczane po zaksięgowaniu. Można wprowadzać i zaksięgować płatność odbiorcy bez rozliczania jej względem wszystkich faktur. Czasami trzeba jednak wykonać sprawdzenie, by mieć pewność, że płatność jest rozliczana względem właściwej faktury. Stronę **Rozliczanie transakcji** można otworzyć ze strony **Wszyscy odbiorcy** lub **Wszyscy dostawcy** lub ze strony **Transakcje** dla dowolnego odbiorcy lub dostawcy. Można też zarezerwować zaksięgowane przedpłaty za faktury poprzez zaznaczenie płatności dla rozliczeń za zamówienia zakupu lub zamówienia sprzedaży. W takim przypadku płatność będzie nadal miała otwarte saldo, ale nie będzie można jej rozliczyć względem innej faktury. Płatność będzie automatycznie rozliczana względem faktury utworzonej na podstawie zamówienia zakupu lub zamówienia sprzedaży.
+
+Transakcje mogą być rozliczane podczas wprowadzania płatności. Na przykład płacąc dostawcy, zazwyczaj wybierasz faktury do zapłacenia. Wybierając faktury, można je oznaczyć do rozliczenia płatnością. Gdy pracownicy ds. płatności rozrachunków z odbiorcami rejestrują płatności klienta, mogą oznaczyć odpowiednie faktury do rozliczenia na podstawie informacji dołączonych do poszczególnych płatności odbiorcy. Transakcje do rozliczenia można oznaczyć na stronie **Rozliczenia transakcji**. Możesz otworzyć tę stronę z dowolnej niezaksięgowanej faktury lub płatności. Kiedy transakcja jest księgowana, rozliczenie jest również księgowane. 
+
+Transakcje mogą również być rozliczane po zaksięgowaniu. Można wprowadzać i zaksięgować płatność odbiorcy bez rozliczania jej względem wszystkich faktur. Czasami możesz wykonać sprawdzenie, aby mieć pewność, że płatność jest rozliczana względem właściwej faktury, przed zaksięgowaniem rozliczenia. Stronę **Rozliczanie transakcji** można otworzyć ze strony **Wszyscy odbiorcy** lub **Wszyscy dostawcy** lub ze strony **Transakcje** dla dowolnego odbiorcy lub dostawcy.
+
+Można też zarezerwować zaksięgowane przedpłaty za faktury poprzez zaznaczenie płatności dla rozliczeń za zamówienia zakupu lub zamówienia sprzedaży. W takim przypadku płatność będzie nadal miała otwarte saldo, ale nie będzie można jej rozliczyć względem innej faktury. Płatność będzie automatycznie rozliczana względem faktury utworzonej na podstawie zamówienia zakupu lub zamówienia sprzedaży.
 
 ## <a name="how-to-settle-transactions"></a>Jak rozliczać transakcje
-Transakcje mogą zostać rozliczane ręcznie, automatycznie lub używając jednej z dwóch metod. Wybór metody rozliczenia zależy od procesów biznesowych, które następnie można wdrożyć przez ustawienie rozliczania w Parametrach modułu rozrachunków z dostawcami i Parametrach modułu rozrachunków z odbiorcami. Można utworzyć płatności dostawcy i płatności odbiorcy poleceniem zapłaty za pomocą propozycji płatności, które służą do wyboru faktur do zapłaty. Propozycja płatności jest inicjowana ręcznie, a następnie program Dynamics 365 Finance automatycznie oznacza wybrane faktury do rozliczenia podczas tworzenia płatności. Jeśli płatności zostały utworzone ręcznie, możesz użyć strony **Rozlicz transakcje**, aby wybrać faktury do rozliczenia. Możesz ręcznie wybrać faktury lub skorzystać z opcji **Oznacz według priorytetu**, aby faktury były zaznaczane automatycznie do rozliczenia. Opcja **Oznacz według priorytetu** jest dostępna tylko w przypadku Rozrachunków z odbiorcami. Aby włączyć tę opcję, należy użyć strony **Priorytet rozliczenia** w Parametrach modułu rozrachunków z odbiorcami. Jeśli pracownik zajmujący się płatnościami wprowadza płatność, ale nie rozlicza jej przed zaksięgowaniem, płatność może być rozliczana automatycznie. Można włączyć automatyczne rozliczanie w Parametrach modułu rozrachunków z odbiorcami i Parametrach modułu rozrachunków z dostawcami. Automatyczne rozliczenie rozlicza transakcje w tej samej firmie; nie jest możliwe rozliczanie w wielu firmach. W przypadku zastosowania opcji automatycznego rozliczenia można użyć wstępnie zdefiniowanej kolejności rozliczania lub można zdefiniować własną kolejność w oknie Parametry modułu rozrachunków z odbiorcami. Ta funkcja jest dostępna tylko dla Rozrachunków z odbiorcami.
+
+Transakcje mogą zostać rozliczane ręcznie, automatycznie lub używając jednej z dwóch metod. Wybór metody rozliczania zależy od procesów biznesowych. Na stronach **Parametry rozrachunków z dostawcami** i **Parametry rozrachunków z odbiorcami** można skonfigurować proces rozliczania, tak aby był zgodny z tymi procesami biznesowymi.
+
+Można utworzyć płatności dostawcy i płatności odbiorcy poleceniem zapłaty za pomocą propozycji płatności. Propozycja płatności jest używana do wybierania faktur do zapłacenia. Propozycja płatności jest uruchamiana ręcznie, a następnie system automatycznie oznacza wybrane faktury do rozliczenia podczas tworzenia płatności.
+
+Jeśli płatności zostały utworzone ręcznie, możesz użyć strony **Rozlicz transakcje**, aby wybrać faktury do rozliczenia. Możesz ręcznie wybrać faktury lub skorzystać z opcji **Oznacz według priorytetu**, aby faktury były zaznaczane automatycznie do rozliczenia. Opcja **Oznacz według priorytetu** jest dostępna tylko w przypadku Rozrachunków z odbiorcami. Tę opcję można włączyć na karcie **Priorytet rozliczenia** na stronie **Parametry rozrachunków z odbiorcami**.
+
+Jeśli pracownik zajmujący się płatnościami wprowadza płatność, ale nie rozlicza jej przed zaksięgowaniem, płatność może być rozliczana automatycznie. Można włączyć automatyczne rozliczanie na stronach **Parametry rozrachunków z odbiorcami** i **Parametry rozrachunków z dostawcami**. Rozliczenie automatyczne polega na rozliczaniu transakcji tylko w tej samej firmie. Nie obejmuje ono rozliczania transakcji między wieloma firmami.
+
+W przypadku zastosowania opcji automatycznego rozliczenia można użyć wstępnie zdefiniowanego priorytetu rozliczania lub można zdefiniować własny priorytet rozliczenia w oknie **Parametry rozrachunków z odbiorcami**. Ta funkcja jest dostępna tylko dla Rozrachunków z odbiorcami.
 
 ## <a name="results-of-settlement"></a>Wyniki rozliczania
-Gdy transakcje są rozliczane niezapłacone saldo każdej z nich rośnie lub maleje. W typowym scenariuszu, w którym rozliczane są faktury i płatności, stan i saldo każdej transakcji jest aktualizowane zgodnie z następującymi zasadami:
 
--   Jeśli kwota płatności jest większa niż kwota faktury, saldo faktury jest zmniejszane do 0,00, a faktura jest zamykana. Płatność pozostaje otwarta, a saldo jest równe kwocie, o którą płatność przekracza kwotę faktury.
--   Jeśli kwota płatności jest mniejsza niż kwota faktury, saldo płatności jest zmniejszane do 0,00, a płatność jest zamykana. Faktura pozostaje otwarta, a saldo jest równe kwocie niedopłaty za fakturę.
--   Jeśli kwota płatności jest równa kwocie faktury, płatności i faktury są zamykane, a saldo obydwu wynosi 0,00.
+Gdy transakcje są rozliczane niezapłacone saldo każdej z nich rośnie lub maleje. Przeważnie gdy rozliczane są faktury i płatności, stan i saldo każdej transakcji jest aktualizowane zgodnie z następującymi zasadami:
 
-Jeśli [płatności jest mniejsza od kwoty faktury](../accounts-payable/vendor-payments-partial-amount.md) z powodu rabatu gotówkowego, odpisu lub niedopłaty, faktura i płatność nadal mogą zostać zamknięte, w zależności od konfiguracji rozliczania w Parametrach modułu rozrachunków z dostawcami i Parametrach modułu rozrachunków z odbiorcami. Rozliczenie można również generować transakcje. Na przykład rozliczenie faktury i płatności może tworzyć rabat gotówkowy, zrealizowane dodatnie lub ujemne różnice kursowe, wprowadzania korekt podatku, odpisy lub różnice groszowe.
+- Jeśli kwota płatności jest większa niż kwota faktury, saldo faktury jest zmniejszane do 0,00, a faktura jest zamykana. Płatność pozostaje otwarta, a saldo jest różnicą między kwotą płatności i kwotą faktury.
+- Jeśli kwota płatności jest mniejsza niż kwota faktury, saldo płatności jest zmniejszane do 0,00, a płatność jest zamykana. Faktura pozostaje otwarta, a saldo jest różnicą między kwotą faktury i kwotą płatności.
+- Jeśli kwota płatności jest równa kwocie faktury, płatności i faktury są zamykane, a saldo obydwu jest redukowane do 0,00.
 
+Jeśli [kwota płatności jest mniejsza od kwoty faktury](../accounts-payable/vendor-payments-partial-amount.md) z powodu rabatu gotówkowego, odpisu lub niedopłaty, faktura i płatność nadal mogą zostać zamknięte, w zależności od konfiguracji rozliczeń na stronach **Parametry rozrachunków z dostawcami** i **Parametry rozrachunków z odbiorcami**.
+
+Rozliczenia mogą również generować transakcje. Na przykład rozliczenie faktury i płatności może tworzyć rabat gotówkowy, zrealizowane dodatnie lub ujemne różnice kursowe, wprowadzania korekt podatku, odpisy lub różnice groszowe.
+
+## <a name="identifying-marked-transactions-during-settlement"></a>Identyfikowanie oznaczonych transakcji podczas rozliczania
+
+Podczas próby rozliczenia transakcji można zauważyć symbol wskazujący, że transakcja została oznaczona w innej lokalizacji. W takim przypadku można wybrać transakcję na stronie **rozliczania transakcji**, a następnie wybrać pozycję **Zapytanie \> Rozliczenie w oknie rozliczania**. Widok dla tego zapytania zawiera arkusze, zamówienia sprzedaży, faktury, propozycje płatności i lokalizacje odbiorców, które mogą blokować możliwość rozliczenia transakcji. Aby rozwiązać ten problem, można wybrać link umożliwiający bezpośrednie przejście z zapytania do zablokowanej lokalizacji. Następnie można zaktualizować dokument, używając korekt, które są wymagane do jego rozliczenia. Można również skorzystać ze wskaźnika **Oznaczone**, aby zidentyfikować inne dokumenty znajdujące się w tej samej lokalizacji blokowania.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-- [Rozlicz resztę](settle-remainder.md)
 
+- [Rozlicz resztę](settle-remainder.md)

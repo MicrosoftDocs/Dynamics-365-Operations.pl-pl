@@ -3,7 +3,7 @@ title: Nowości i zmiany w rozwiązaniu Human Resources
 description: Każdego tygodnia udostępniamy nowe wydanie Microsoft Dynamics 365 Human Resources. Artykuły wymienione tutaj szczegółowo opisują zmiany dokonane w każdym tygodniu.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25a70b812af76fa420de69ed9b4e718991a21e43
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 97f796a17498fbfe85a0fa19d7e52aefd61fd9e9
+ms.sourcegitcommit: cc5dc0bd90277f1ba684dd310da3274886ce573c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259616"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "3320856"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nowości i zmiany w rozwiązaniu Human Resources
 
@@ -41,6 +41,7 @@ Aby uzyskać więcej informacji na temat nadchodzących funkcji lub procesu aktu
 
 Aby zobaczyć, co nowego lub zmieniła się w nowych wersjach Human Resources co dwa tygodnie, należy zapoznać się z następującymi artykułami:
 
+[1 maja 2020 r.](hr-whats-new-2020-05-01.md)</br>
 [13 kwietnia 2020 r.](hr-whats-new-2020-04-13.md)</br>
 [3 kwietnia 2020 r.](hr-whats-new-2020-04-03.md)</br>
 [24 marca 2020 r.](hr-whats-new-2020-03-24.md)</br>

@@ -3,7 +3,7 @@ title: Wyświetl rabaty w punkcie sprzedaży
 description: W tym temacie wyjaśniono, w jaki sposób Microsoft Dynamics 365 Commerce pomaga współpracownikom ds. sprzedaży dowiedzieć się o promocjach i sposobach ich wykorzystania do sprzedaży krzyżowej i dodatkowej.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/06/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.openlocfilehash: 0ffa7ca6294c7b523ec743f1cb9bc4aef8ef46a8
+ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265595"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3334715"
 ---
 # <a name="show-discounts-in-pos"></a>Wyświetl rabaty w punkcie sprzedaży
 
@@ -54,9 +54,9 @@ Na stronie **wszystkie rabaty** sprzedawcy mogą również przeszukiwać rabaty 
 
 Rabaty wspólne, takie jak rabaty ilościowe, rabaty za skład zamówienia oraz rabaty progowe, to świetny sposób na zwiększenie atrakcyjności dla odbiorców w celu zakupu większej liczby produktów w celu uzyskania większych rabatów. Dzięki temu zwiększa się także rozmiar koszyka odbiorcy i przychodu sprzedawcy detalicznego. Te rabaty można wystawić na stronach sieci handlu elektronicznego, na nośnikach społecznościowych i na transparentach w sklepie.
 
-Jednak nawet jeśli są używane wszystkie te metody reklamowe, odbiorcy mogą przegapić szansę skorzystania z promocji. Aby ułatwić sprzedaż, należy dowiedzieć się, jakie promocje mają zastosowanie do wybranego wiersza, a nawet do całego koszyka, detaliści mogą dodać przycisk dla operacji „Wyświetl wszystkie rabaty” do dowolnej siatki przycisków w punkcie sprzedaży. Zalecane jest dodanie przycisku do siatki przycisków dla strony **transakcji**. W ten sposób powiązana z sprzedażą można wybrać wiersz transakcji, a następnie wybrać przycisk, aby wyświetlić wszystkie rabaty dostępne dla wybranego wiersza. Sprzedawca może również wybrać inną kartę, aby wyświetlić rabaty dotyczące całej transakcji.
+Jednak nawet jeśli są używane wszystkie te metody reklamowe, odbiorcy mogą przegapić szansę skorzystania z promocji. Aby pracownicy ds. sprzedaży mogli łatwiej identyfikować, jakie promocje mają zastosowanie do wybranego wiersza, a nawet do całego koszyka, detaliści mogą dodać przycisk dla operacji „Wyświetl dostępne rabaty” do dowolnej siatki przycisków na stronie **Transakcja**. Dzięki temu pracownik ds. sprzedaży może wybrać wiersz transakcji, a następnie wybrać przycisk, aby wyświetlić wszystkie rabaty dostępne dla wybranego wiersza. Sprzedawca może również wybrać inną kartę, aby wyświetlić rabaty dotyczące całej transakcji.
 
-Wspomniana wcześniej Strona ze **wszystkimi rabatami** zawiera tylko rabaty, które nie konkurują z żadnymi zastosowanymi rabatami. To zachowanie pomaga zagwarantować, że jeśli sprzedawca poinformuje klienta o rabacie, a klient podejmie wymaganą akcję (np. klient kupuje jeszcze jedną pozycję, aby uzyskać 10% rabatu), rabat zostanie zastosowany do transakcji. Jak wspomniano wcześniej, rabaty oparte na kuponach są wyświetlane tylko wtedy, gdy jest włączona opcja **Zastosuj bez kodu kuponu**.
+Strona **Wszystkie rabaty** zawiera tylko rabaty, które nie konkurują z żadnymi zastosowanymi rabatami. To zachowanie pomaga zagwarantować, że jeśli sprzedawca poinformuje klienta o rabacie, a klient podejmie wymaganą akcję (np. klient kupuje jeszcze jedną pozycję, aby uzyskać 10% rabatu), rabat zostanie zastosowany do transakcji. Rabaty oparte na kuponach są wyświetlane tylko po włączeniu opcji **Zastosuj bez kodu kuponu**.
 
 W prostym scenariuszu, w którym wszystkie rabaty mają ten sam priorytet, tryb współbieżności rabatu jest **składany**, a kontrola współbieżności rabatu jest ustawiana na **najlepszą cenę i związek z priorytetem, nigdy nie stanowią związku między priorytetami**, na stronie **wszystkie rabaty** są wyświetlane wszystkie dostępne rabaty dla produktu, ponieważ wszystkie rabaty są złożone i nie konkurują ze sobą nawzajem.
 

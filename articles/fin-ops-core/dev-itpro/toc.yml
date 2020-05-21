@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-34.md
                 - name: Aktualizacja Platform update 33 (kwiecień 2020)
                   href: get-started/whats-new-platform-update-33.md
-                - name: Aktualizacja Platform update 32 (luty 2020)
-                  href: get-started/whats-new-platform-update-32.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje Platform
@@ -140,11 +138,9 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Konfigurowanie podwójnego zapisu z usług Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
-                            - name: Wstępna synchronizacja
-                              href: data-entities/dual-write/initial-sync.md
-                            - name: Włącz podwójny zapis dla istniejących aplikacji Finance and Operations
+                            - name: Włączanie podwójnego zapisu dla istniejących aplikacji Finance and Operations
                               items:
-                                - name: Włącz podwójny zapis dla istniejących aplikacji Finance and Operations
+                                - name: Włączanie podwójnego zapisu dla istniejących aplikacji Finance and Operations
                                   href: data-entities/dual-write/enable-dual-write.md
                                 - name: Wymagania systemowe i wymagania wstępne
                                   href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -556,6 +552,16 @@
                   href: dev-tools/development-system-requirements.md
             - name: 'Kontrola wersji, wyszukiwanie metadanych i nawigacja'
               href: dev-tools/version-control-metadata-navigation.md
+            - name: Automatyzacja kompilacji przy użyciu platformy Azure
+              items:
+                - name: Automatyzacja kompilacji przy użyciu agentów hostowanych przez firmę Microsoft oraz usługi Azure Pipelines
+                  href: dev-tools/hosted-build-automation.md
+                - name: Dodawanie plików licencji do pakietu wdrażalnego w usłudze Azure Pipelines
+                  href: dev-tools/pipeline-add-license-package.md
+                - name: Tworzenie pakietów wdrażalnych w usłudze Azure Pipelines
+                  href: dev-tools/pipeline-create-deployable-package.md
+                - name: Obsługa wersji modelu X++ w usłudze Azure Pipelines
+                  href: dev-tools/pipeline-model-version.md
             - name: Przykładowa aplikacja Zarządzanie flotą
               items:
                 - name: Kompleksowy scenariusz dla przykładowej aplikacji Zarządzanie flotą
@@ -1396,6 +1402,8 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Przypisywanie użytkowników do ról zabezpieczeń
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Diagnostyka zabezpieczeń dla nagrań zadań
+                  href: sysadmin/tasks/security-diagstics-task-recordings.md
             - name: Przetwarzanie wsadowe
               items:
                 - name: Omówienie przetwarzania wsadowego
