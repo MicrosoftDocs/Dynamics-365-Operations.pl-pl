@@ -5,6 +5,8 @@
       items:
         - name: Nowości i zmiany w rozwiązaniu Human Resources
           href: hr-admin-whats-new.md
+        - name: 14 maja 2020 r.
+          href: hr-whats-new-2020-05-14.md
         - name: 1 maja 2020 r.
           href: hr-whats-new-2020-05-01.md
         - name: 13 kwietnia 2020 r.
@@ -111,14 +113,16 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
             - name: Opis usługi Lifecycle Services
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Aplikacja Human Resources w Teams
+          href: hr-admin-teams-leave-app.md
         - name: Zasoby dokumentacji
           items:
-            - name: System Pomocy
+            - name: System pomocy
               href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
-            - name: Łączenie z systemem Pomocy
+            - name: Łączenie z systemem pomocy
               href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-            - name: Łączenie z niestandardową witryną pomocy
-              href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json
+            - name: Omówienie niestandardowej pomocy
+              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: Wyświetlanie i eksportowanie opisów pól
               href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
             - name: Rejestrator zadań
@@ -511,11 +515,13 @@
               href: hr-leave-and-absence-analytics.md
             - name: Zarządzanie wnioskami o urlop i nieobecność
               href: hr-employee-self-service-manage-requests.md
-            - name: Żądanie czasu wolnego
+            - name: Składanie wniosku o czas wolny
               href: hr-employee-self-service-request-time-off.md
             - name: Wyświetlanie kalendarzy zespołów i firm
               href: hr-employee-self-service-calendar.md
-        - name: Wspomaganie rozwoju pracowników
+        - name: Zarządzanie wnioskami o urlop w Teams
+          href: hr-teams-leave-app.md
+        - name: Wspomaganie rozwoju pracowników etatowych
           items:
             - name: Omówienie zarządzania wydajnością
               href: hr-develop-performance-management-overview.md
