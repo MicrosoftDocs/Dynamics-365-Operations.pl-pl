@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Commerce
       items:
-        - name: Dynamics 365 Commerce
+        - name: Dynamics 365 Commerce — strona główna
           href: index.md
         - name: Wprowadzenie
           items:
@@ -79,7 +79,7 @@
                 - name: 'Instalacja, konfiguracja i migracja jednorazowa we wdrożeniu etapowym (N-1)'
                   href: dev-itpro/n-1-installation-configuration.md
                 - name: Uaktualnienie rozszerzenia kanałów rozwiązania Retail do najnowszej wersji zestawu SDK do Retail
-                  href: dev-itpro/retailSDK-update.md
+                  href: dev-itpro/RetailSDK-update.md
             - name: Nowości i zmiany
               items:
                 - name: Nowości i zmiany w aplikacjach Finance and Operations
@@ -108,12 +108,12 @@
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
             - name: Zasoby dokumentacji
               items:
-                - name: System Pomocy
+                - name: System pomocy
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Łączenie z systemem Pomocy
+                - name: Łączenie z systemem pomocy
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/commerce/toc.json
-                - name: Łączenie z niestandardową witryną pomocy
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/commerce/toc.json
+                - name: Omówienie niestandardowej pomocy
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Wyświetlanie i eksportowanie opisów pól
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/commerce/toc.json
                 - name: Rejestrator zadań
@@ -499,7 +499,9 @@
                     - name: Łącznik płatności Adyen
                       href: dev-itpro/adyen-connector.md
                     - name: Zapisywanie instrumentów płatniczych online za pomocą łącznika Adyen
-                      href: dev-itpro/adyen-connector-listpi.md
+                      href: dev-itpro/adyen-connector-listPI.md
+                    - name: Silne uwierzytelnianie klienta (SCA) za pomocą łącznika Adyen
+                      href: adyen_redirect.md
                     - name: Płynny przełącznik offline dla operacji na kartach upominkowych i notach kredytowych
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Konfigurowanie scenariuszy płatności za faktury
@@ -510,6 +512,8 @@
                       href: omni-channel-payments.md
                     - name: Płatności — często zadawane pytania
                       href: dev-itpro/payments-retail.md
+                - name: Zarządzanie Mapami Bing dla swojej organizacji
+                  href: dev-itpro/manage-bing-maps.md
         - name: Merchandising produktów i usług
           items:
             - name: 'Kategorie, produkty i asortymenty'
@@ -820,10 +824,12 @@
                   href: authoring-home-overview.md
                 - name: Zarządzanie użytkownikami i rolami
                   href: manage-ecommerce-users-roles.md
-                - name: Zagadnienia optymalizacji wyszukiwarki dla witryny
+                - name: Zagadnienia optymalizacji wyszukiwarki (SEO) dla witryny
                   href: search-engine-optimization-considerations.md
                 - name: Zarządzanie zasadami zabezpieczeń zawartości (CSP)
                   href: manage-csp.md
+                - name: Rezygnacja ze zbierania zdarzeń działania sieci Web
+                  href: web-activity-opt-out.md
             - name: Zarządzanie zawartością witryny
               items:
                 - name: Sposoby dodawania zawartości
@@ -1714,6 +1720,8 @@
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
             - name: Konfigurowanie i wysyłanie wiadomości e-mail
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+            - name: Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych
+              href: email-templates-transactions.md
             - name: Tworzenie środowisk obsługi wiadomości e-mail
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
             - name: Rozwiązywanie problemów z integracją z pakietem Office
@@ -1988,13 +1996,13 @@
               items:
                 - name: Architektura zestawu Retail SDK
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
-                - name: Nadchodzące zmiany w zestawie SDK do Retail
+                - name: Nadchodzące zmiany w zestawie Retail SDK
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: Scalanie systemów kompilacji dla aplikacji Commerce i Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
-                - name: Dokonywanie migracji zestawu SDK do Retail z Visual Studio 2015 do Visual Studio 2017
+                - name: Dokonywanie migracji zestawu Retail SDK z Visual Studio 2015 do Visual Studio 2017
                   href: dev-itpro/retail-sdk/migrate-sdk.md
-                - name: Przykłady możliwości rozszerzania zestawu SDK do Retail
+                - name: Przykłady możliwości rozszerzania zestawu Retail SDK
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Tworzenie pakietów możliwych do wdrożenia
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
@@ -2116,6 +2124,8 @@
                   href: dev-itpro/async-commerce-extension.md
                 - name: Wstępnie rozszerzone kolumny w bazie danych kanału
                   href: dev-itpro/extended-columns.md
+                - name: Rozszerzenie Commerce Data Exchange — usługa w czasie rzeczywistym
+                  href: dev-itpro/extend-commerce-data-exchange.md
             - name: Rozszerzalność łączników płatności
               items:
                 - name: Tworzenie integracji płatności dla terminala płatniczego

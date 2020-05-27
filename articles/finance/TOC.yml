@@ -1,6 +1,6 @@
-- name: Rozwiązanie Dynamics 365 Finance
+- name: Dynamics 365 Finance
   items:
-    - name: Rozwiązanie Dynamics 365 Finance
+    - name: Dynamics 365 Finance
       items:
         - name: Dynamics 365 Finance — strona główna
           href: index.md
@@ -90,12 +90,12 @@
               href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Zasoby dokumentacji
               items:
-                - name: System Pomocy
+                - name: System pomocy
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Łączenie z systemem Pomocy
+                - name: Łączenie z systemem pomocy
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/finance/toc.json
-                - name: Łączenie z niestandardową witryną pomocy
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/finance/toc.json
+                - name: Omówienie niestandardowej pomocy
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Wyświetlanie i eksportowanie opisów pól
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/finance/toc.json
                 - name: Rejestrator zadań
@@ -1736,6 +1736,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Elektroniczne przesyłanie deklaracji VAT (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: Deklaracja VAT dla Niemiec
+                  href: localizations/emea-de-vat-declaration.md
                 - name: Raport listy arkuszy
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Konfigurowanie elektronicznych deklaracji podatkowych
@@ -2286,7 +2288,7 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Integracja Semansys XBRL
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-                - name: 'Plik audytu (XML Auditfile Financieel, XAF)'
+                - name: 'Plik audytu — XML Auditfile Financieel, XAF'
                   hred: localizations/emea-nl-audit-file.md
             - name: Norwegia
               items:
@@ -2398,9 +2400,11 @@
                       href: localizations/rus-prepayments-management.md
                     - name: Przywrócenie przychodzącego podatku VAT
                       href: localizations/rus-incoming-VAT-restoring.md
+                    - name: Przetwarzanie faktur dla handlu eksportowego
+                      href: localizations/rus-export-trade.md
                 - name: Środki trwałe
                   items:
-                    - name: Przegląd środków trwałych
+                    - name: Omówienie środków trwałych
                       href: localizations/rus-fixed-assets-overview.md
                     - name: Konfigurowanie środków trwałych
                       items:
@@ -2496,6 +2500,12 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: Raporty magazynowe
                       href: localizations/rus-inventory-reports.md
+                    - name: Omówienie profilu zapasów
+                      href: localizations/rus-inventory-profile-overview.md
+                    - name: Konfigurowanie profilu zapasów
+                      hreF: localizations/rus-set-up-inventory-profile.md
+                    - name: Używanie profilu zapasów w dokumentach i kwerendach
+                      href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Raportowanie
                   items:
                     - name: Raportowanie finansowe
@@ -3248,34 +3258,40 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: Projektowanie formatów modułu Raportowanie elektroniczne w celu generowania wychodzących dokumentów elektronicznych w różnych formatach
               items:
-                - name: (Raportowanie elektroniczne) Projektowanie konfiguracji do generowania raportów w formacie OPENXML
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
-                - name: (Raportowanie elektroniczne) Projektowanie konfiguracji w celu generowania raportów w formacie programu Word
+                - name: Konfiguracje projektu w celu generowania dokumentów wychodzących w formacie programu Excel
+                  items:
+                    - name: Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
+                    - name: Przykład generowania raportów w formacie OPENXML
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Modyfikowanie formatów raportowania elektronicznego przez ponowne zastosowanie szablonów programu Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: Dynamiczne dodawanie kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów
+                      items:
+                        - name: Formaty projektu umożliwiające dynamiczne dodawanie kolumn do raportów programu Excel
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Uruchamianie formatów projektu umożliwiających dynamiczne dodawanie kolumn do raportów programu Excel
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                - name: Projektowanie konfiguracji w celu generowania raportów w formacie programu Word
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Projektowanie konfiguracji w celu wypełniania szablonów w formacie PDF
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
-            - name: Osadzanie obrazów i kształtów
-              items:
-                - name: (Raportowanie elektroniczne) Osadzanie obrazów i kształtów w generowanych dokumentach
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
-                - name: Przykłady osadzania obrazów i kształtów
+                - name: Osadzanie obrazów i kształtów
                   items:
-                    - name: 'Projektowanie konfiguracji służących do generowania raportów w formatach pakietu Office, które zawierają osadzone obrazy'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
-                    - name: 'Przeglądanie konfiguracji służących do generowania raportów w formatach pakietu Office, które zawierają osadzone obrazy'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: 'Generowanie raportów w formatach pakietu Office, które zawierają osadzone obrazy'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Modyfikowanie formatów raportowania elektronicznego przez ponowne zastosowanie szablonów programu Excel
-              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: (Raportowanie elektroniczne) Osadzanie obrazów i kształtów w generowanych dokumentach
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
+                    - name: Przykłady osadzania obrazów i kształtów
+                      items:
+                        - name: 'Projektowanie konfiguracji służących do generowania raportów w formatach pakietu Office, które zawierają osadzone obrazy'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Przeglądanie konfiguracji służących do generowania raportów w formatach pakietu Office, które zawierają osadzone obrazy'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Generowanie raportów w formatach pakietu Office, które zawierają osadzone obrazy'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości zawartości
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: Definiowanie zależności konfiguracji raportowania elektronicznego od innych składników
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Dynamiczne dodawanie kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów
-              items:
-                - name: Projektowanie formatów w celu dynamicznego dodawania kolumn do raportów w programie Excel jako poziomo rozszerzalnych zakresów
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
-                - name: Uruchamianie formatów w celu dynamicznego dodawania kolumn do raportów w programie Excel jako poziomo rozszerzalnych zakresów
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
             - name: Aktualizowanie danych aplikacji przy użyciu modułu Raportowanie elektroniczne
               items:
                 - name: Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji
@@ -3306,8 +3322,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurowanie formatów modułu Raportowanie elektroniczne w celu importowania plików w formacie XML z opcjonalnymi atrybutami
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
-            - name: Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości zawartości
-              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: Cykl życia konfiguracji
               items:
                 - name: Zarządzanie cyklem życia konfiguracji
@@ -3327,7 +3341,11 @@
                     - name: Pobieranie konfiguracji z repozytorium modułu Raportowanie elektroniczne typu RCS
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Importowanie konfiguracji z RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Tworzenie konfiguracji raportowania elektronicznego w RCS i przekazywanie ich do repozytorium globalnego
+                  href: localizations/rcs-global-repo-upload.md
+                - name: Udostępnianie konfiguracji raportowania elektronicznego w RCS organizacjom zewnętrznym
+                  href: localizations/rcs-global-repo-share-configuration.md
             - name: Samouczki
               items:
                 - name: Uzyskiwanie informacji dotyczących sposobu używania źródeł danych

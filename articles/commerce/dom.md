@@ -3,7 +3,7 @@ title: Zarządzanie zamówieniami rozdzielonymi (DOM)
 description: W tym temacie opisano funkcję zarządzania zamówieniami rozdzielonymi (DOM) w rozwiązaniu Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 05/22/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a584953b0f4961e25b59bca51aa3928b87b2c7c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1121cc89b278c3694d0bbd667f1a540d17f4d180
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004327"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396039"
 ---
 # <a name="distributed-order-management-dom"></a>Zarządzanie zamówieniami rozdzielonymi (DOM)
 
@@ -37,7 +37,7 @@ System DOM zapewnia optymalizację realizacji zamówień w złożonej sieci syst
 
 Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie DOM.
 
-![Cykl życia zamówienia sprzedaży w kontekście systemu DOM](./media/flow.png "Cykl życia zamówienia sprzedaży w kontekście systemu DOM")
+![![Cykl życia zamówienia sprzedaży w kontekście systemu DOM](./media/flow.png "Cykl życia zamówienia sprzedaży w kontekście systemu DOM")](./media/flow.png "Sales order lifecycle in the context of DOM")
 
 ## <a name="set-up-dom"></a>Konfigurowanie systemu DOM
 
@@ -83,6 +83,15 @@ Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie D
     2. Wybierz opcję **Nowa** i nadaj nowej grupie nazwę i opis.
     3. Wybierz opcję **Zapisz**.
     4. Wybierz opcję **Dodaj wiersz**, aby dodać pojedynczą lokalizację do grupy. Możesz także wybrać opcję **Dodaj wiersze**, aby dodać wiele lokalizacji.
+    
+    > [!NOTE]
+    > W rozwiązaniu Commerce w wersji 10.0.12 lub wyższej opcja **Możliwość określenia lokalizacji, w której włączono opcję „wysyłka” lub „pobranie” w grupie realizacji** musi być włączona w obszarze roboczym **Zarządzanie funkcjami**.
+    >
+    > Ta funkcja umożliwia dodanie nowych konfiguracji na stronie **Grupy realizacji**, dzięki czemu można określić, czy magazyn może być używany do wysyłki lub czy kombinacja magazynu/sklepu może być używana do wysyłki, pobierania lub do obu tych celów. 
+    >
+    > Po włączeniu tej funkcji zostaną zaktualizowane opcje dostępne dla wyboru lokalizacji podczas tworzenia zamówień odbioru lub wysyłki w punkcie sprzedaży.
+    >
+    > Włączenie funkcji powoduje także aktualizowanie stron w punkcie sprzedaży w przypadku zaznaczenia operacji „wyślij wszystko” lub „wybrane do wysyłki”.
 
 9. Aby zdefiniować reguły, przejdź do opcji **Retail i Commerce \> Zarządzanie zamówieniami rozdzielonymi \> Ustawienia \> Zarządzaj regułami**. Obecnie obsługiwane są następujące reguły DOM:
 
@@ -109,10 +118,10 @@ Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie D
         | 8    | Tak                    | Nie                    | Nie                                   | Możliwa jest realizacja kilku wierszy zamówienia, ale poszczególne wiersze nie mogą być realizowane częściowo, a różne realizowane wiersze zamówienia mogą pochodzić z więcej niż jednej lokalizacji w wystąpieniu sesji DOM. |
         | 9\*  | Nie                     | Nie dotyczy        | Tak                                  | Wszystkie wiersze zamówienia muszą zostać zrealizowane i wszystkie realizowane wiersze zamówienia muszą pochodzić tylko z jednej lokalizacji. |
 
-        \* W przypadku ustawienia wartości **Nie** dla opcji **Zrealizować zamówienia częściowe?** wartość opcji **Zrealizować wiersze częściowe?** jest traktowana jako **Nie** niezależnie od jej rzeczywistego ustawienia.
+        \* W przypadku ustawienia wartości **Nie** dla opcji **Zrealizować zamówienia częściowe** wartość opcji **Zrealizować wiersze częściowe** jest traktowana jako **Nie** niezależnie od jej rzeczywistego ustawienia.
 
         > [!NOTE]
-        > W wersji 10.0.5 rozwiązania Retail parametr **Zrealizować zamówienie tylko z jednej lokalizacji?** został zmieniony na **Lokalizacje maksymalnej realizacji**. Zamiast konfigurowania, czy zamówienia mogą być realizowane tylko z jednej lokalizacji lub ze wszystkich możliwych lokalizacji, użytkownicy mogą teraz określać, czy realizacja może być dokonana z konkretnego zestawu lokalizacji (do 5), czy ze wszystkich możliwych lokalizacji. Oferuje to większą elastyczność pod kątem liczby lokalizacji, w których zamówienie może być realizowane.
+        > W wersji 10.0.5 rozwiązania Retail parametr **Zrealizować zamówienie tylko z jednej lokalizacji** został zmieniony na **Lokalizacje maksymalnej realizacji**. Zamiast konfigurowania, czy zamówienia mogą być realizowane tylko z jednej lokalizacji lub ze wszystkich możliwych lokalizacji, użytkownicy mogą teraz określać, czy realizacja może być dokonana z konkretnego zestawu lokalizacji (do 5), czy ze wszystkich możliwych lokalizacji. Oferuje to większą elastyczność pod kątem liczby lokalizacji, w których zamówienie może być realizowane.
 
    - **Reguła lokalizacji realizacji offline** — ta reguła umożliwia organizacji określenie lokalizacji lub grupy lokalizacji jako działających w trybie offline lub niedostępnych dla funkcji DOM, dzięki czemu nie możesz przypisać do tych lokalizacji zamówień do realizacji.
     - **Reguła maksymalnej liczby odrzuceń** — ta reguła umożliwia organizacjom określenie progu liczby odrzuceń. Po osiągnięciu progu procesor DOM oznaczy zamówienie lub wiersz zamówienia jako wyjątek i wykluczy go z dalszego przetwarzania.
@@ -134,7 +143,17 @@ Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie D
     2. Wybierz pozycję **Nowy**.
     3. Wprowadź wartości w polach **Profil** i **Opis**.
     4. Ustaw opcję **Wynik automatycznego zastosowania**. W przypadku ustawienia wartości **Tak** dla tej opcji wyniki sesji DOM dla profilu będą automatycznie stosowane do wierszy zamówienia sprzedaży. Po ustawieniu wartości **Nie** wyniki będą mogły być tylko przeglądane w planie realizacji. Nie będą one stosowane do wierszy zamówienia sprzedaży.
-    5. W celu uruchomienia profilu DOM w przypadku zamówień ze wszystkimi źródłami zamówień sprzedaży, także zamówień z niezdefiniowanym źródłem zamówienia sprzedaży, ustaw wartość **Tak** opcji **Przetwarzaj zamówienia z pustym pochodzeniem sprzedaży**. Aby uruchomić profil tylko dla kilku źródeł zamówień sprzedaży, możesz zdefiniować je na stronie **Pochodzenia sprzedaży**, jak to wyjaśniono później.
+    5. W celu uruchomienia profilu DOM w przypadku zamówień ze wszystkimi źródłami zamówień sprzedaży, włącznie z zamówieniami z niezdefiniowanym źródłem zamówienia sprzedaży, ustaw wartość **Tak** opcji **Przetwarzaj zamówienia z pustym pochodzeniem sprzedaży**. Aby uruchomić profil tylko dla kilku źródeł zamówień sprzedaży, możesz zdefiniować je na stronie **Pochodzenia sprzedaży**, jak to wyjaśniono później.
+
+    > [!NOTE]
+    > W rozwiązaniu Commerce w wersji 10.0.12 lub wyższej opcja **Możliwość przypisywania grupy realizacji do profilu realizacji** musi być włączona w obszarze roboczym **Zarządzanie funkcjami**. 
+    >
+    > Ta funkcja umożliwia dodanie nowej konfiguracji na stronie **Profil realizacji**, która może zostać skojarzona z jedną grupą realizacji. 
+    >
+    > W przypadku wybrania grupy realizacji, reguły modelu DOM dla tego profilu realizacji będą efektywnie uruchamiane w odniesieniu do magazynów „dostawy”, które znajdują się w grupie realizacji. 
+    > 
+    > Aby efektywnie wykorzystać tę funkcję, upewnij się, że istnieje jedna grupa realizacji zawierająca wszystkie magazyny wysyłki, a następnie skojarz tę grupę z profilem realizacji.
+    
     6. Na skróconej karcie **Firmy** wybierz opcję **Dodaj**, a następnie wybierz firmę.
     7. Na skróconej karcie **Reguły** wybierz opcję **Dodaj**, a następnie wybierz regułę do połączenia z profilem.
     8. Powtórz dwa poprzednie kroki, aby skojarzyć wszystkie wymagane reguły z profilem.
@@ -179,7 +198,7 @@ W czasie przetwarzania funkcja DOM uwzględni zamówienie i wiersze zamówienia 
 
 Po zastosowaniu reguł, ograniczeń zapasów i optymalizacji funkcja DOM wybiera lokalizację położoną najbliżej adresu dostawy klienta.
 
-![Kryteria zamówień sprzedaży](./media/ordercriteria.png "Kryteria zamówień sprzedaży")
+![![Kryteria zamówień sprzedaży](./media/ordercriteria.png "Kryteria zamówień sprzedaży")](./media/ordercriteria.png "Sales order criteria")
 
 ## <a name="results-of-dom-runs"></a>Wyniki sesji DOM
 
