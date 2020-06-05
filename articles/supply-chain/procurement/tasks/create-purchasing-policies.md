@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e13a9a594e8c4041a586734df53321d57b43586
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d4ba2a23f84972391283eaf01cef70a161c75226
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204808"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383183"
 ---
 # <a name="create-purchasing-policies"></a>Tworzenie zasad zakupów
 
@@ -32,7 +32,7 @@ W tym temacie pokazano sposób tworzenia zasad zakupów dopasowanych do procesó
 
 ## <a name="set-up-policy-parameters"></a>Ustawianie parametrów zasad
 1. W okienku nawigacji wybierz kolejno **Moduły > Zaopatrzenie i sourcing > Ustawienia > Zasady > Zasady zakupów**.
-2. W okienku akcji wybierz **Parametry**.
+2. W okienku akcji wybierz pozycję **Parametry**.
 - Reguły pierwszeństwa zasad dotyczą różnych poziomów w organizacji. Wyświetlane jednostki organizacyjne zależą od hierarchii organizacyjnej oraz od tego, na których poziomach w hierarchii przypisano cel Wewnętrzna kontrola zaopatrzenia. Na przykład w organizacji mogą istnieć firmy, centra kosztów, regiony i działy, ale tylko niektóre z nich mogą mieć w hierarchii cel Wewnętrzna kontrola zaopatrzenia. Domyślnie jest dostępna organizacja typu Firma.  
 3. Wybierz kartę **Parametry typu reguły**.
 4. W drzewie przejdź do **Zasady zakupów > Reguła kontroli zapotrzebowania na zakup**.

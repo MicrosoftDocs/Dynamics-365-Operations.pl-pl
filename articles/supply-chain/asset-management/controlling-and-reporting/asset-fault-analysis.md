@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 67ccbb742bb4e2283c30b4dec055d137b4a51e40
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 32cd8fb55cd9245a9a7c426a7c956bb40c3fdb0e
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216420"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383557"
 ---
 # <a name="asset-fault-analysis"></a>Analiza usterek składników majątku
 
@@ -78,7 +78,7 @@ W poniższym zrzucie ekranu **Rok** i **Miesiąc** zostały dodane, aby pokazać
 
 Połączenie składników majątku i typu składnika majątku jest używana jako podstawa dla obliczeń przedstawionych w trzech poniższych zrzutach, które spowodują zwiększenie poziomu szczegółowości.  
 
-Na ogół przyciski w graupach w okienku akcji **Grupuj według dat**, **Grupuj według składników majątku**, **Grupuj według lokalizacji czynności konserwacyjnych**, a także przycisk **Usterka** (Identyfikator usterki) zawierają okresy lub relacje składników majątku. Przyciski **Objaw**, **Obszar**, **Typ**, **Przyczyna** i **Środek zaradczy** są używane w module zarządzanie błędami do analizowania rejestracji usterek i okreaślania problematycznych obszarów.  
+Na ogół przyciski w grupach okienka akcji **Grupuj według dat**, **Grupuj według składników majątku**, **Grupuj według lokalizacji czynności konserwacyjnych**, a także przycisk **Usterka** (identyfikator usterki) zawierają okresy lub relacje składników majątku. Przyciski **Objaw**, **Obszar**, **Typ**, **Przyczyna** i **Środek zaradczy** są używane w module zarządzanie błędami do analizowania rejestracji usterek i okreaślania problematycznych obszarów.  
 
 **Grupowanie według objawu, składnika majątku i typu składnika majątku**
 

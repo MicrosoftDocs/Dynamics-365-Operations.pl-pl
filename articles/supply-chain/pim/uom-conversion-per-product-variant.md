@@ -1,9 +1,9 @@
 ---
 title: Przeliczanie jednostki miary dla wariantów produktów
-description: W tym temacie wyjaśniono, jak skonfigurować przeliczanie jednostek miary dla wariantów produktu.
+description: W tym temacie wyjaśniono, jak skonfigurować konwersje jednostek miary dla wariantów produktu. Zawiera przykładową konfigurację.
 author: johanhoffmann
 manager: tfehr
-ms.date: 01/06/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,71 +17,93 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: e50be7fa6fa686a90b2dd5c5200c881e4629f019
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
+ms.sourcegitcommit: 92611ec276da6f7211d722cfcd66739b612296dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204500"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382804"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Przeliczanie jednostki miary dla wariantów produktów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować przeliczanie jednostek miary dla wariantów produktu. Zawiera przykładową konfigurację.
+W tym temacie wyjaśniono, jak skonfigurować konwersje jednostek miary dla różnych wariantów produktu.
 
-Ta funkcja umożliwia firmom definiowanie różnych konwersji jednostek między wariantami tego samego produktu. W tym temacie używany jest poniższy przykład. Firma sprzedaje T-shirty w rozmiarach Small, Medium, Large, and Extra-Large. T-shirt jest definiowany jako produkt, a różne rozmiary są definiowane jako warianty produktu. T-shirty są pakowane w pudełka po pięć T-shirtów z wyjątkiem rozmiaru Extra-Large, których w pudełku mieści się tylko cztery. Firma chce śledzić różne warianty T-shirtów w jednostce **Sztuki**, ale sprzedaży T-shirty w jednostkach **Pudełka**. Konwersja między jednostką magazynową i jednostką sprzedaży to 1 pudełko = 5 sztuk, z wyjątkiem wariantu Extra-Large, w którym to przypadku konwersja to 1 pudełko = 4 sztuki.
+Zamiast tworzyć wiele pojedynczych produktów, które wymagają obsługi, można użyć wariantów produktu w celu utworzenia różnych wariantów jednego produktu. Na przykład wariantem produktu może być koszulka w danym rozmiarze i kolorze.
 
-### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Konfigurowanie produktu pod katem konwersji jednostek dla wariantu produktu
+Wcześniej konwersje jednostek można było konfigurować tylko na poziomie produktu głównego. Dlatego wszystkie warianty produktu miały takie same reguły konwersji jednostek. Jeśli jednak funkcja *Konwersje jednostki miary dla wariantów produktów* jest włączona, a koszulki są sprzedawane w pudełkach i liczba koszulek, które można zapakować do pudełka, zależy od rozmiaru koszulki, można teraz skonfigurować konwersję jednostek między różnymi rozmiarami koszulek a pudełkami używanymi do pakowania.
 
-Warianty produktów można tworzyć dla produktów **Podtyp produktu**: **Produkt główny**. Aby uzyskać więcej informacji, zobacz temat [Tworzenie produktu głównego](tasks/create-product-master.md).
+## <a name="turn-on-the-feature-in-your-system"></a>Włączanie funkcji w systemie
 
-Funkcja nie jest włączona dla produktów, które są ustawiane dla procesów ilości efektywnej. 
+Jeśli ta funkcja nie jest jeszcze widoczna w systemie, przejdź do tematu [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Konwersje jednostki miary dla wariantów produktów*.
 
-Po utworzeniu produktu głównego z wariantami zwalnianych produktów można skonfigurować konwersje jednostek według wariantów. Element menu służący do otwierania strony konwersji jednostki można znaleźć w kontekście produktu lub wariantu produktu na następujących stronach.
+## <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Konfigurowanie produktu pod katem konwersji jednostek dla wariantu produktu
 
--   Strona **Szczegóły produktu**
--   Strona **Szczegóły zwalnianych produktów**
--   Strona **Zwolnione warianty produktu**
+Warianty produktów można tworzyć tylko dla produktów głównych. Aby uzyskać więcej informacji, zobacz temat [Tworzenie produktu głównego](tasks/create-product-master.md). Funkcja *Konwersje jednostki miary dla wariantów produktów* jest niedostępna dla produktów skonfigurowanych dla procesów obsługi ilości efektywnej.
 
-Po otwarciu strony **Przeliczanie jednostek** w kontekście produktu głównego lub zwolnionego wariantu produktu możesz wybrać, czy chcesz skonfigurować konwersję jednostek dla produktu czy dla wariantu produktu. Można to zrobić zaznaczając opcję **Wariant produktu** lub **Produktu** na stronie **Tworzenie konwersji dla**.
+Aby skonfigurować produkt główny w celu obsługi konwersji jednostek na wariant, wykonaj następujące kroki.
 
-### <a name="product-variant"></a>Wariant produktu
+1. Wybierz kolejno pozycje **Zarządzanie informacjami o produktach \> Produkty \> Produkty główne**.
+1. Utwórz lub otwórz produkt główny, aby przejść do jego strony **Szczegóły produktu**.
+1. Ustaw opcję **Włącz konwersje jednostek miary** na wartość *Tak*.
+1. W okienku akcji na karcie **Produkt** w grupie **Konfiguracja** wybierz pozycję **Konwersje jednostek**.
+1. Zostanie otwarta strona **Konwersje jednostek**. Wybierz jedną z następujących kart:
 
-W przypadku wybrania opcji **Wariant produktu** można wybrać dla którego wariantu chcesz skonfigurować konwersję jednostek w polu **Wariant produktu**.
+    - **Przeliczenia wewnątrz klasy** — tę kartę należy wybrać, aby dokonać konwersji między jednostkami należącymi do tej samej klasy jednostek.
+    - **Przeliczenia między klasami** — tę kartę należy wybrać, aby dokonać konwersji między jednostkami należącymi do różnych klas jednostek.
 
-### <a name="product"></a>Produkt
+1. Wybierz pozycję **Nowa**.
+1. Ustaw pole **Utwórz konwersję dla** na jedną z następujących wartości:
 
-W przypadku wybrania opcji **Produkt** można skonfigurować konwersję jednostek dla produktu głównego. Ta konwersja jednostki będzie stosowana do wszystkich wariantów produktu bez zdefiniowanej konwersji jednostki.
+    - **Produkt** — wybranie tej wartości umożliwi skonfigurowanie konwersji jednostek dla produktu głównego. Ta konwersja jednostek będzie używana jako rezerwowa dla wszystkich wariantów produktu, dla których nie zdefiniowano żadnej konwersji jednostek.
+    - **Wariant produktu** — wybranie tej wartości umożliwi skonfigurowanie konwersji jednostek dla określonego wariantu produktu. Użyj pola **Wariant produktu**, aby wybrać wariant.
 
-### <a name="example"></a>Przykład
+    ![Dodawanie nowej konwersji jednostek](media/uom-new-conversion.png "Dodawanie nowej konwersji jednostek")
 
-Produkt główny **T-Shirt** ma cztery zwolnione warianty produktów: Small, Medium, Large i X-Large. T-shirty są pakowane w pudełka po pięć T-shirtów z wyjątkiem rozmiaru Extra-Large, których w pudełku mieści się tylko cztery.
+1. Aby skonfigurować konwersję jednostek, skorzystaj z dostępnych pól.
+1. Wybierz przycisk **OK**, aby zapisać nową konwersję jednostek.
 
-Najpierw otwórz stronę **Przeliczanie jednostek** ze strony Szczegóły zwalniania produktu dla **T-shirt.**
+> [!TIP]
+> Stronę **Konwersja jednostek** dla produktu lub wariantu produktu można otworzyć z dowolnej z następujących stron:
+> 
+> - Szczegóły produktu
+> - Szczegóły zwolnionych produktów
+> - Zwolnione warianty produktu
 
-Na stronie **Przeliczanie jednostek** ustaw konwersję jednostek dla wariantu zwolnienia produktu X-Large.
+## <a name="example-scenario"></a>Przykładowy scenariusz
 
-| **Field**             | **Ustawienie**             |
-|-----------------------|-------------------------|
-| Utwórz konwersję dla | Wariant produktu         |
-| Wariant produktu       | T-Shirt : : X-Large : : |
-| Od jednostki             | Pola                   |
-| Współczynnik                | 4                       |
-| Do jednostki               | Sztuki                  |
+W tym scenariuszu firma sprzedaje T-shirty w rozmiarach Mały, Średni, Duży i Bardzo duży. T-shirt jest definiowany jako produkt, a różne rozmiary są definiowane jako warianty tego produktu. Koszulki są pakowane w pudełka. W przypadku rozmiarów Mały, Średni i Duży w każdym pudełku może znajdować się pięć koszulek. Jednak w przypadku rozmiaru Bardzo duży w każdym pudełku mieszczą się tylko cztery koszulki.
 
-Warianty zwalniania produktów Small, Medium i Large mają tę samą konwersje jednostki między jednostkami Pudełko i Sztuki, co oznacza, że możesz zdefiniować jednostkę konwersji dla tych wariantów produktu w produkcie głównym.
+Firma chce śledzić różne warianty w jednostce *Sztuki*, ale sprzedaje T-shirty w jednostkach *Pudełka*. W przypadku rozmiarów Mały, Średni i Duży konwersja między jednostką zapasów i jednostką sprzedaży to 1 pudełko = 5 sztuk. W przypadku rozmiaru Bardzo duży konwersja to 1 pudełko = 4 sztuki.
 
-| **Field**             | **Ustawienie** |
-|-----------------------|-------------|
-| Utwórz konwersję dla | Produkt     |
-| Produkt               | T-Shirt     |
-| Od jednostki             | Pola       |
-| Współczynnik                | 5           |
-| Do jednostki               | Sztuki      |
+1. Na stronie **Szczegóły zwolnionego produktu** produktu **T-Shirt** otwórz stronę **Konwersje jednostek**.
+1. Na stronie **Konwersje jednostek** ustaw następującą konwersję jednostek dla wariantu zwolnionego produktu **Bardzo duży**.
 
-### <a name="using-excel-to-update-the-unit-conversions"></a>Aktualizowanie konwersji jednostek przy użyciu programu Excel
+    | Pole                 | Ustawienie                 |
+    |-----------------------|-------------------------|
+    | Utwórz konwersję dla | Wariant produktu         |
+    | Wariant produktu       | T-Shirt : : X-Large : : |
+    | Od jednostki             | Pola                   |
+    | Współczynnik                | 4                       |
+    | Do jednostki               | Sztuki                  |
 
-Jeśli produkt ma wiele wariantów produktu z różnymi konwersjami jednostek, dobrym rozwiązaniem jest eksportowanie jednostek konwersji ze strony **Przeliczanie jednostek** do arkusza kalkulacyjnego programu Excel, zaktualizowanie konwersji, a następnie opublikowanie ich ponownie w Supply Chain Mangement.
+1. Ponieważ warianty produktu **Mały**, **Średni** i **Duży** mają tę samą konwersję jednostki między jednostkami *Pudełko* i *Sztuki*, możesz zdefiniować następującą konwersję jednostek dla tych wariantów w produkcie głównym.
 
-Opcję eksportowania do programu Excel i publikowania zmian z powrotem w Supply Chain Mangement włącza się z elementu menu **Otwórz w programie Microsoft office** w okienku akcji na stronie **Przeliczanie jednostek**.
+    | Pole                 | Ustawienie |
+    |-----------------------|---------|
+    | Utwórz konwersję dla | Produkt |
+    | Produkt               | T-Shirt |
+    | Od jednostki             | Pola   |
+    | Współczynnik                | 5       |
+    | Do jednostki               | Sztuki  |
+
+## <a name="using-excel-to-update-the-unit-conversions"></a>Aktualizowanie konwersji jednostek przy użyciu programu Excel
+
+Jeśli produkt ma wiele wariantów z różnymi konwersjami jednostek, dobrym pomysłem jest wyeksportowanie konwersji jednostek do skoroszytu programu Microsoft Excel, zaktualizowanie ich i ponowne opublikowanie w aplikacji Dynamics 365 Supply Chain Management.
+
+Aby wyeksportować konwersje jednostek do programu Excel, na stronie **Konwersje jednostek** w okienku akcji wybierz pozycję **Otwórz w pakiecie Microsoft Office**.
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+[Zarządzanie jednostką miary](tasks/manage-unit-measure.md)

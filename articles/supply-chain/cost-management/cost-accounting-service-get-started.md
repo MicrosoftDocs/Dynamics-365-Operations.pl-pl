@@ -1,5 +1,5 @@
 ---
-title: Rozpoczęcie korzystania z usługi rachunku kosztów
+title: Rozpoczęcie korzystania z usługi rachunku kosztów (prywatna wersja zapoznawcza)
 description: Ten temat zawiera szczegółowe informacje dotyczące licencjonowania i instrukcje dotyczące instalacji dla usługi rachunku kosztów.
 author: AndersGirke
 manager: tfehr
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cbbce7eaac264973bf0b95ad5175bf70ed2b4ae9
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: a82af9e8ec1806f470103897389d0316d33a4a06
+ms.sourcegitcommit: 7fec9dc5297ed6e687d4a0dff099922d59d6a830
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276952"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "3372743"
 ---
-# <a name="get-started-with-the-cost-accounting-service"></a>Rozpoczęcie korzystania z usługi rachunku kosztów
+# <a name="get-started-with-the-cost-accounting-service-private-preview"></a>Rozpoczęcie korzystania z usługi rachunku kosztów (prywatna wersja zapoznawcza)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -43,16 +43,22 @@ Usługa rachunku kosztów jest dodatkiem. Aby udostępnić swoje funkcje, należ
 
 Usługa rachunku kosztów nie obsługuje obecnie wszystkich funkcji zarządzania kosztem, które są wbudowane w Dynamics 365 Supply Chain Management. Dlatego ważne jest, aby ocenić, czy aktualnie zestaw funkcji jest obecnie dostępny i spełni wymagania użytkownika.
 
-## <a name="licensing"></a>Licencjonowanie
-
-Usługa rachunku kosztów jest licencjonowana wraz z standardowymi funkcjami księgowania zapasów, które są dostępne dla Supply Chain Management. Nie trzeba kupować dodatkowej licencji, aby móc skorzystać z usługi rachunku kosztów.
-
-## <a name="install-the-add-in"></a>Instalacja aplikacji dodatkowych
+## <a name="how-to-get-the-cost-accounting-service-private-preview"></a><a name="sign-up"></a>Jak rozpocząć korzystanie z usługi rachunku kosztów (prywatna wersja zapoznawcza)
 
 > [!IMPORTANT]
 > Aby można było korzystać z usługi rachunku kosztów, należy posiadać środowisko o wysokiej dostępności z włączonymi usługami LCS (a nie środowisko OneBox) i musi być uruchomione Dynamics 365 Supply Chain Management w wersji 10.0.11 lub nowszej.
 
+Aby zarejestrować się w celu uzyskania dostępu do prywatnej wersji zapoznawczej usługi rachunku kosztów, wyślij wiadomość e-mail z identyfikatorem środowiska usług LCS do [usługi rachunku kosztów (prywatna wersja zapoznawcza)](mailto:aevengir@microsoft.com?subject=Cost%20accounting%20service%20%28private%20preview%29). Po zatwierdzeniu przez program wyślemy Ci wiadomość e-mail z kluczem wersji beta usługi rachunku kosztów. Po otrzymaniu klucza w wersji beta możesz kontynuować [instalację dodatku](#install).
+
+## <a name="licensing"></a>Licencjonowanie
+
+Usługa rachunku kosztów jest licencjonowana wraz z standardowymi funkcjami księgowania zapasów, które są dostępne dla Supply Chain Management. Nie trzeba kupować dodatkowej licencji, aby móc skorzystać z usługi rachunku kosztów.
+
+## <a name="install-the-add-in"></a><a name="install"></a>Instalacja aplikacji dodatkowych
+
 Aby skorzystać z usługi rachunku kosztów, należy zainstalować dodatek usługi rachunku kosztów w Supply Chain Management w sposób opisany w poniższej procedurze.
+
+1. [Rejestrowanie się](#sign-up) w celu korzystania z usługi rachunku kosztów (prywatna wersja zapoznawcza).
 
 1. Zaloguj się w LCS.
 

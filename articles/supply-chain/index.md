@@ -1,6 +1,6 @@
 ---
-title: Zasoby pomocy dotyczące funkcji zarządzania łańcuchem dostaw
-description: Ta strona zawiera listę tematów pomocy oraz innych zasobów dotyczących funkcji zarządzania łańcuchem dostaw.
+title: Supply Chain Management — strona główna
+description: Ta strona zawiera listę tematów pomocy oraz innych zasobów dotyczących funkcji Supply Chain Management.
 author: josaw1
 manager: tfehr
 ms.date: 11/26/2019
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 014b5db6efc15fbed7401d9a857586912c7578f2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cf505f3e84cb8a8b4a1ac0af9f776587c06acf77
+ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201532"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3386394"
 ---
-# <a name="help-resources-for-supply-chain-management"></a>Zasoby pomocy dotyczące funkcji zarządzania łańcuchem dostaw
+# <a name="supply-chain-management-home-page"></a>Supply Chain Management — strona główna
 
 [!include [banner](includes/banner.md)]
 
@@ -39,9 +39,10 @@ Przejdź na stronę <a href="https://roadmap.dynamics.com/">Plan rozwoju usługi
 Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 
 - [Zarządzanie składnikami majątku](asset-management/index.md)
-- [Rachunek kosztów](../finance/cost-accounting/cost-accounting-home-page.md)
+- [Księgowanie kosztów](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Zarządzanie kosztami](cost-management/cost-management-home-page.md)  
 - [Zarządzanie zapasami](inventory/inventory-home-page.md)
+- [Analiza Internetu rzeczy (IoT)](iot/iot-intelligence-home-page.md)
 - [Planowanie główne](master-planning/master-planning-home-page.md)
 - [Zaopatrzenie i sourcing](procurement/procurement-sourcing-overview.md)
 - [Zarządzanie informacjami o produktach](pim/product-information.md)
@@ -51,7 +52,7 @@ Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 - [Zarządzanie transportem](transportation/transportation-management-overview.md)
 - [Zarządzanie magazynem](warehousing/warehouse-configuration.md)
 
-## <a name="dynamics-365-finance"></a>Rozwiązanie Dynamics 365 Finance
+## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
 Aby uzyskać więcej informacji na temat rozwiązania Dynamics 365 Finance, przejdź na stronę [Zarządzanie finansami — strona główna](../finance/index.md).
 

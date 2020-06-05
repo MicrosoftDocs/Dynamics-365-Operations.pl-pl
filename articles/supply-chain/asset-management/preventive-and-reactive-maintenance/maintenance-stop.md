@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8946baa4597ad4b696bcb6bcc49d4202163a41a9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c1b219d352b6b090c5c2cd3c063d7f890beaa35c
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214877"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383534"
 ---
 # <a name="maintenance-downtime"></a>Przerwa konserwacyjna
 
@@ -75,7 +75,7 @@ Na poniższej ilustracji pokazano przykład widoku szczegółów **Działania w 
 
 9. W oknie **Obliczanie obciążenia zdolności produkcyjnych** zdolności produkcyjnych, w razie potrzeby zmień godziny rozpoczęcia i zakończenia, a następnie wybierz opcję, jeśli mają być uwzględniane zlecenia produkcyjne i harmonogramy konserwacji w obliczeniach. Pola **Poziom** można użyć, aby wskazać, jak szczegółowe mają być wiersze obliczeń obciążenia wydajności dotyczące lokalizacji czynności konserwacyjnych. Jeśli na przykład w polu wstawiono liczbę „1” i istnieje wielopoziomowa struktura lokalizacji czynności konserwacyjnych, wszystkie wszystkie składniki majątku dla lokalizacji czynności konserwacyjnych, które zostały wybrane w ramach przerwy konserwacyjnej, będą wyświetlane na najwyższym poziomie, dlatego godziny w wierszu mogą być dodawane z lokalizacji czynności konserwacyjnych znajdujących się na niższym poziomie. W przypadku wstawienia liczby „0” w polu **Poziom** zostanie wyświetlony szczegółowy wynik zawierający wszystkie wiersze obciążenia wydajności na każdym poziomie lokalizacji czynności konserwacyjnych, z którymi są powiązane.
 
-10. Kliknij przycisk **OK**, aby rozpocząć obliczanie. Łączna liczba godzin jest wyświetlana w przeglądzie **Obciążenie wydajności**. Na karcie **Obciążenie wydajności** > **Grupuj według...** grupie okienka akcji, kliknij odpowiednie przyciski, aby uzyskać bardziej szczegółowy przegląd alokacji prognozowanych godzin. Na poniższej ilustracji przedstawiono wyniki obliczenia **Obciążenia wydajności**.
+10. Kliknij przycisk **OK**, aby rozpocząć obliczanie. Łączna liczba godzin jest wyświetlana w przeglądzie **Obciążenie wydajności**. Na karcie **Obciążenie wydajności** > **Grupuj według...** (grupy okienka akcji), kliknij odpowiednie przyciski, aby uzyskać bardziej szczegółowy przegląd alokacji prognozowanych godzin. Na poniższej ilustracji przedstawiono wyniki obliczenia **Obciążenia wydajności**.
 
 ![Rysunek 3](media/21-preventive-maintenance.png)
 
@@ -92,7 +92,7 @@ Na poniższej ilustracji pokazano przykład widoku szczegółów **Działania w 
 
 15. W oknie **Obliczanie prognozy dla pozycji** zdolności produkcyjnych, w razie potrzeby zmień godziny rozpoczęcia i zakończenia, a następnie wybierz opcję, jeśli mają być uwzględniane zlecenia produkcyjne i harmonogramy konserwacji w obliczeniach. Pola **Poziom** można użyć, aby wskazać, jak szczegółowe mają być wiersze obliczeń obciążenia wydajności dotyczące lokalizacji czynności konserwacyjnych. Jeśli na przykład w polu wstawiono liczbę „1” i istnieje wielopoziomowa struktura lokalizacji czynności konserwacyjnych, wszystkie wszystkie składniki majątku dla lokalizacji czynności konserwacyjnych, które zostały wybrane w ramach przerwy konserwacyjnej, będą wyświetlane na najwyższym poziomie, dlatego godziny w wierszu mogą być dodawane z lokalizacji czynności konserwacyjnych znajdujących się na niższym poziomie. W przypadku wstawienia liczby „0” w polu **Poziom** zostanie wyświetlony szczegółowy wynik zawierający wszystkie wiersze obciążenia wydajności na każdym poziomie lokalizacji czynności konserwacyjnych, z którymi są powiązane.
 
-16. Kliknij przycisk **OK**, aby rozpocząć obliczanie. Łączna liczba prognoz dla pozycji jest wyświetlana w przeglądzie  **Prognoza dla pozycji**. Na karcie **Prognoza dla pozycji** > w **Grupuj według...** grupie okienka akcji, kliknij odpowiednie przyciski, aby uzyskać bardziej szczegółowy przegląd alokacji prognozowanych pozycji. Ilustracja poniżej przedstawia wyniki obliczeń **Prognozy dla pozycji**.
+16. Kliknij przycisk **OK**, aby rozpocząć obliczanie. Łączna liczba prognoz dla pozycji jest wyświetlana w przeglądzie  **Prognoza dla pozycji**. Na karcie **Prognoza dla pozycji** > **Grupuj według...** (grupy okienka akcji), kliknij odpowiednie przyciski, aby uzyskać bardziej szczegółowy przegląd alokacji prognozowanych pozycji. Ilustracja poniżej przedstawia wyniki obliczeń typu **Prognozy dla pozycji**.
 
 ![Rysunek 4](media/22-preventive-maintenance.png)
 

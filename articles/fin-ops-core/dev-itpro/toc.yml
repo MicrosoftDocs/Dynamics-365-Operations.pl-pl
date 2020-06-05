@@ -526,6 +526,32 @@
                   href: deployment/uninstall-deployable-package.md
                 - name: Rozwiązywanie problemów z aplikacją w pakiecie
                   href: deployment/deployable-package-troubleshooting.md
+            - name: Wdrażanie niestandardowej pomocy
+              items:
+                - name: Omówienie niestandardowej pomocy
+                  href: help/custom-help-overview.md
+                - name: Przygotowywanie zawartości do użycia z okienkiem pomocy
+                  href: help/preparing-content.md
+                - name: Wdrażanie niestandardowej pomocy do systemu Azure
+                  href: help/walkthrough-help-azure.md
+                - name: Połączenie niestandardowej pomocy z okienkiem pomocy
+                  href: help/connect-help-pane.md
+                - name: Zestaw narzędzi do niestandardowej pomocy
+                  items:
+                    - name: Omówienie
+                      href: help/custom-help-toolkit.md
+                    - name: Narzędzie HTML From Repo Generator
+                      href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
+                    - name: Narzędzie Convert HTML To JSON
+                      href: help/custom-help-toolkit-ConvertHtmlToJson.md
+                    - name: Narzędzie HTML Locale Changer
+                      href: help/custom-help-toolkit-HtmlLocaleChanger.md
+                    - name: Konwertowanie niestandardowej pomocy systemu Dynamics AX do użytku w systemie Dynamics 365
+                      href: help/migrate-dynamicsax2012.md
+                - name: Deskryptory języka i ustawień regionalnych w różnych produktach i w systemie pomocy
+                  href: help/language-locale.md
+                - name: 'Rozszerzanie, dostosowywanie i współpraca z pomocą'
+                  href: help/contributor-guide.md
         - name: Tworzenie i dostosowywanie
           items:
             - name: Opracowywanie i dostosowywanie strony głównej
@@ -835,7 +861,7 @@
                     - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0.1
                       href: extensibility/extensibility-changes-801.md
                     - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0
-                      href: extensibility/changes-80.md
+                      href: extensibility/Changes-80.md
                     - name: Zmiany w zakresie możliwości rozszerzania — wersja 7.3
                       href: extensibility/extensibility-changes-73.md
                     - name: Zmiany w zakresie możliwości rozszerzania — lipiec 2017
@@ -1768,9 +1794,9 @@
                   href: user-interface/task-recorder-quick-reference.md
                 - name: Tworzenie dokumentacji lub szkolenia za pomocą nagrań zadań
                   href: user-interface/task-recorder-training-docs.md
-    - name: Rozwiązanie Dynamics 365 Supply Chain Management
+    - name: Dynamics 365 Supply Chain Management
       href: ../../supply-chain/index.md
-    - name: Rozwiązanie Dynamics 365 Finance
+    - name: Dynamics 365 Finance
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../../commerce/index.md

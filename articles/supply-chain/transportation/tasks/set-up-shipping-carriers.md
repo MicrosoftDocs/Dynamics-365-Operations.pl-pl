@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e6a29dce877a53d125c5a151da6cfbb13d46b29
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0d157470527a986ea1c9fe0a9a02e2ba6ee8819e
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201601"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383005"
 ---
 # <a name="set-up-shipping-carriers"></a>Konfigurowanie firm przewozowych
 
@@ -32,7 +32,7 @@ W tej procedurze opisano sposób konfigurowania firmy przewozowej i definiowania
 
 ## <a name="create-a-new-shipping-carrier"></a>Tworzenie nowej firmy przewozowej
 1. Wybierz kolejno opcje **Okienko Nawigacji > Moduły > Zarządzanie transportem > Ustawienia > Przewoźnicy > Firmy przewozowe**.
-2. W okienku akcji wybierz opcję **Nowy**.
+2. Wybierz pozycję **Nowy** w okienku akcji.
 3. W polu **Firma przewozowa** wpisz wartość.
 4. W polu **Nazwa** wpisz wartość.
 5. W polu **Tryb** wybierz opcję z menu rozwijanego.

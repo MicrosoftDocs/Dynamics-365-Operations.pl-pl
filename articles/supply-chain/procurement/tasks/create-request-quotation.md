@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2c13ed20ec86108bcb9edc0d20d53ff98732b9d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 68624a0288f9eaaf8f74b361bb308b8ca3c03b29
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204753"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383184"
 ---
 # <a name="create-a-request-for-quotation"></a>Tworzenie zapytania ofertowego
 
@@ -67,7 +67,7 @@ Po określeniu podstawowych informacji o ZO, określ towary lub usługi, na któ
 7. W polu **Konto dostawcy** wprowadź lub wybierz wartość. Po zaznaczeniu dostawcy jego stanem jest Utworzone. Oznacza to, że dane dostawcy zostały zapisane w zapytaniu ofertowym, jednak zapytania nie wysyłano do dostawcy. Można dodawać dostawcę do zapytania ofertowego niezależnie od stanu dostawcy.  
 
 ## <a name="send-the-rfq-to-vendors"></a>Wyślij ZO do dostawców
-1. W **Panelu akcji** kliknij **Wyślij**. Na stronie Wysyłanie zapytania ofertowego sprawdź, czy dostawcy na liście są tymi, którzy powinni otrzymać ZO.  
+1. W **okienku akcji** kliknij pozycję **Wyślij**. Na stronie Wysyłanie zapytania ofertowego sprawdź, czy dostawcy na liście są tymi, którzy powinni otrzymać ZO.  
 2. Kliknij przycisk **Drukuj**. To okno dialogowe umożliwia wydrukowanie ZO. Jeśli chcesz wydrukować arkusz odpowiedzi, jego zawartość należy zdefiniować w oknie Parametry modułu Zaopatrzenie i sourcing. Aby wybrać sposób drukowania arkuszy odpowiedzi, po otwarciu okna dialogowego Drukowanie kliknij przycisk Zaawansowane opcje drukowania. Zostanie wydrukowane jedno ZO dla każdego dostawcy zawierającego wiersze o stanie Utworzone lub Wysłane. Wiersze anulowane i wiersze z zarejestrowanymi odpowiedziami nie są drukowane.   
 3. Kliknij **Anuluj**.
 4. Kliknij przycisk **OK**.

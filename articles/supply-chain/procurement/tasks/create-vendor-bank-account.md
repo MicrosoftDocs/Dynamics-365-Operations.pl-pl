@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab0a108b5c8b7f2f90a4d33d8a9ff088335c18d4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f8092ab7f960fd36515afb8448dfe1e262197595
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207674"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383143"
 ---
 # <a name="create-a-vendor-bank-account"></a>Tworzenie konta bankowego dostawcy
 
@@ -33,7 +33,7 @@ W tej procedurze pokazano sposób tworzenia konta bankowego dla dostawcy. Proced
 2. Zaznacz dostawcę, dla którego chcesz utworzyć konto bankowe, a następnie kliknij łącze w polu **Identfikator konta dostawcy**.
 3. W **okienku akcji** kliknij pozycję **Dostawca**.
 4. Kliknij przycisk **konta bankowe**.
-5. W **okienku akcji** kliknij **Nowy**.
+5. W **Okienku akcji** kliknij **Nowy**.
 6. W polu **Konto bankowe** wpisz wartość. Ten identyfikator będzie używany do identyfikowania konta bankowego w rekordzie dostawcy.  
 7. W polu **Nazwa** wpisz wartość.
 8. W polu **Grupy bankowe** wprowadź lub wybierz wartość.

@@ -1,8 +1,8 @@
-- name: Rozwiązanie Dynamics 365 Supply Chain Management
+- name: Dynamics 365 Supply Chain Management
   items:
-    - name: Rozwiązanie Dynamics 365 Supply Chain Management
+    - name: Dynamics 365 Supply Chain Management
       items:
-        - name: Rozwiązanie Dynamics 365 Supply Chain Management
+        - name: Dynamics 365 Supply Chain Management — strona główna
           href: index.md
         - name: Wprowadzenie
           items:
@@ -92,10 +92,10 @@
               items:
                 - name: System Pomocy
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Łączenie z systemem Pomocy
+                - name: Łączenie z systemem pomocy
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Łączenie z niestandardową witryną pomocy
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Omówienie niestandardowej pomocy
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Wyświetlanie i eksportowanie opisów pól
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Rejestrator zadań
@@ -1313,6 +1313,22 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Śledzenie dynamicznych średnich kosztów dla wymiaru magazynowego
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: Analiza Internetu rzeczy (IoT)
+          items:
+            - name: Analiza Internetu rzeczy (IoT) — strona główna
+              href: iot/iot-intelligence-home-page.md
+            - name: Ustawianie zasobów rozwiązania Azure
+              href: iot/iot-azure-setup.md
+            - name: Formaty schematów wiadomości dla centrum IoT
+              href: iot/iot-schema-format.md
+            - name: Zainstaluj dodatek w usłudze LCS
+              href: iot/iot-lcs-setup.md
+            - name: Ustawianie metryk
+              href: iot/iot-metrics-setup.md
+            - name: Ustawienia scenariusza
+              href: iot/iot-scenario-setup.md
+            - name: Monitorowanie i zarządzanie
+              href: iot/iot-management.md
         - name: Planowanie główne
           items:
             - name: Planowanie główne — strona główna
@@ -1335,6 +1351,8 @@
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Anulowanie zadania planowania
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Rozwiązywanie problemów z optymalizacją planowania
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Plany główne
               items:
                 - name: Omówienie planów głównych
@@ -2657,7 +2675,7 @@
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
             - name: Instalowanie i konfigurowanie aplikacji magazynu
               items:
-                - name: Omówienie instalacji i konfiguracji
+                - name: Instalowanie i łączenie aplikacji magazynu
                   href: warehousing/install-configure-warehousing-app.md
                 - name: Konfigurowanie nazw pól w aplikacji magazynu
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
@@ -2697,6 +2715,22 @@
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Konfigurowanie szablonu pracy dla zamówień zakupu
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
+            - name: Zasady konsolidacji wysyłki
+              items:
+                - name: Zasady konsolidacji wysyłki
+                  href: warehousing/about-shipment-consolidation-policies.md
+                - name: Konfigurowanie zasad konsolidacji wysyłki
+                  href: warehousing/configure-shipment-consolidation-policies.md
+                - name: Scenariusz 1 — konsolidowanie wysyłek podczas zwalniania ich do magazynu przy użyciu automatycznego zwalniania zamówień sprzedaży
+                  href: warehousing/consolidate-shipments-automatic.md
+                - name: 'Scenariusz 2 — konsolidowanie wysyłek, gdy zasady konsolidacji wysyłki są zastąpione na stronie zwalniania do magazynu'
+                  href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                - name: Scenariusz 3 — konsolidowanie wysyłek przy użyciu polecenia Zwolnij do magazynu z pulpitu planowania wysyłki ładunku
+                  href: warehousing/consolidate-shipments-load-planning-workbench.md
+                - name: Scenariusz 4 — konsolidowanie wysyłek przy użyciu pulpitu konsolidacji wysyłki
+                  href: warehousing/consolidate-shipments-manual-workbench.md
+                - name: Scenariusz 5 — ręczne konsolidowanie wysyłek przy użyciu strony konsolidacji wysyłek
+                  href: warehousing/consolidate-shipments-manual-form.md
         - name: Rozwój modułu Supply Chain Management
           items:
             - name: Podręcznik programowania kontrolki wykresu Gantta

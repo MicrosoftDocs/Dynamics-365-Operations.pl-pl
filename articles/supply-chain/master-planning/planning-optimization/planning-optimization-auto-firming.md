@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 81c26b8a99f86d663d91ac4f549987262c0541ad
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: e412ccbc7c44d41e0a70ef8b5436901e01c671e6
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323538"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383695"
 ---
 # <a name="auto-firming-with-planning-optimization"></a>Automatyczne akceptowanie z optymalizacją planowania
 
@@ -47,7 +47,7 @@ Aby włączyć automatyczne akceptowanie, należy wykonać następujące kroki.
 Ten horyzont czasowy akceptowania jest obliczany od daty planowanego uruchomienia. Jest definiowane liczbą dni, która została wpisana. Horyzont czasowy ustalania można kontrolować w następujący sposób:
 
 - Aby zdefiniować domyślny horyzont czasowy ustalania dla grupy zapotrzebowania, należy przejść do grup **Planowanie główne** \> **Ustawienia** \> **Zapotrzebowanie** \> **Grupy zapotrzebowania** i wybrać grupę zapotrzebowania. Następnie, na skróconej karcie w **Inne**, w polu **automatyczny horyzont czasowy akceptacji (dni)** wprowadź liczbę dni.
-- Aby zastąpić horyzont czasowy ustalania, który jest zdefiniowany dla grupy zapotrzebowania dla określonego towaru, przejdź do zwolnionych produktów w module **Zarządzanie informacjami o produktach** \> **Zwolnione produkty**, następnie w okienku akcji wybierz pozycję **plan**, a następnie wybierz pozycję **zapotrzebowanie na towar**. Następnie na karcie **Ogólne** wybierz opcję **Zastąp horyzont czasowy**, a następnie w polu **automatyczny horyzont czasowy akceptacji (dni)** wprowadź liczbę dni.
+- Aby zastąpić horyzont czasowy ustalania, który jest zdefiniowany dla grupy zapotrzebowania dla określonej pozycji, przejdź do zwolnionych produktów w module **Zarządzanie informacjami o produktach** \> **Zwolnione produkty**, następnie w okienku akcji wybierz pozycję **Plan**, a następnie wybierz pozycję **Zapotrzebowanie na pozycję**. Następnie na karcie **Ogólne** wybierz opcję **Zastąp horyzont czasowy**, a następnie w polu **automatyczny horyzont czasowy akceptacji (dni)** wprowadź liczbę dni.
 - Aby zastąpić horyzont czasowy ustalania, który jest zdefiniowany dla grupy zapotrzebowania i zapotrzebowania na towary dla określonego planu głównego, należy przejść do **Planowanie główne** \> **Ustawienia** \> **Plany główne** i wybrać plan główny. Następnie, na skróconej karcie w **Time fence in days**, ustaw **Zamrożenie** na wartość **Tak** wprowadź liczbę dni.
 
 Jeśli funkcja automatycznego ustalania jest włączona dla przebiegu planowania głównego, w którym jest używana Optymalizacja planowania, proces automatycznego ustalania jest wykonywany zgodnie z konfiguracją automatycznego ustalania. Jeśli funkcja automatycznego ustalania nie jest włączona lub jeśli planowanie jest uruchamiane na stronie **zapotrzebowanie netto**, proces automatycznego ustalania zostanie pominięty.

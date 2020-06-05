@@ -3,7 +3,7 @@ title: Oblicz dostępność zapasów dla kanałów sprzedaży detalicznej
 description: W tym temacie opisano opcje dostępne dla wyświetlania dostępnych zapasów sklepu i kanałów online.
 author: hhainesms
 manager: annbe
-ms.date: 02/25/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
+ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113927"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3379243"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Oblicz dostępność zapasów dla kanałów sprzedaży detalicznej
 
@@ -50,12 +50,7 @@ Oba serwery API pobierają dane z serwera Commerce i zapewniają prognozę dost�
 
 ### <a name="get-started-with-e-commerce-calculated-inventory-availability"></a>Wprowadzenie do obliczeniowej dostępności zapasów w handlu elektronicznego
 
-Przed użyciem tych dwóch interfejsów API, które zostały wymienione wcześniej, należy wprowadzić zmianę parametru w module Commerce Headquarters, aby zapewnić, że migawka wartości zapasów obliczanych przez program Commerce Headquarters przy użyciu zadania **dostępności produktu** powoduje wprowadzenie danych w odpowiednich tabelach.
-
-Aby skonfigurować parametr, wykonaj następujące czynności.
-
-1. Kliknij kolejno opcje **Retail i Commerce \> Ustawienia centrali \> Parametry \> Wspólne parametry handlu**.
-1. Na karcie **zapasy** w sekcji **zadanie dostępności produktów** wybierz opcję **używaj zoptymalizowanego procesu dla zadania dostępności produktu**. To ustawienie gwarantuje, że do obliczania dostępnych zapasów kanału za pośrednictwem serwera handlowego jest używany optymalny zbiór funkcji.
+Przed użyciem dwóch wymienionych wcześniej interfejsów API należy włączyć funkcję **obliczania zoptymalizowanej dostępności produktów** za pośrednictwem obszaru roboczego **Zarządzanie funkcjami** w module Commerce Headquarters.
 
 Zanim interfejsy API będą mogły obliczyć najlepsze oszacowanie dostępności towaru, okresowa migawka dostępności zapasów z modułu Commerce Headquarters musi zostać przetworzona i wysłana do bazy danych kanału, która jest używana przez jednostkę Commerce Scale Unit handlu elektronicznego. Migawka przedstawia informacje o dostępności zapasów przez program Commerce Headquarters w odniesieniu do konkretnej kombinacji produktu lub wariantu produktu oraz magazynu. Może to być korekta lub przesunięcia zapasów spowodowane przez przyjęcia magazynowe lub przez wysyłki lub inne procesy, które są wykonywane w programie Commerce Headquarters oraz czy kanał handlu elektronicznego zawiera informacje tylko z powodu synchronizacji procesu.
 
@@ -85,20 +80,15 @@ Gdy obliczenie po stronie kanału jest poprawnie skonfigurowane i zarządzane, m
 
 ### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>Wprowadzenie do obliczeniowej dostępności zapasów po stronie punktu sprzedaży
 
-Aby zastosować logikę obliczania po stronie kanału i wyłączyć wywołania usługi w czasie rzeczywistym dla wyszukiwań w magazynie z aplikacji punktu sprzedaży, należy najpierw wprowadzić dwie zmiany parametrów. Następnie należy zsynchronizować zmiany w kanale przez proces planowania dystrybucji.
+Aby skorzystać z logiki obliczeniowej po stronie kanału i wyłączyć wywołania usługi w czasie rzeczywistym dla wyszukiwań zapasów z aplikacji punktu sprzedaży, najpierw należy włączyć funkcję **obliczania zoptymalizowanej dostępności produktów** za pośrednictwem obszaru roboczego **Zarządzanie funkcjami** w module Commerce Headquarters. Oprócz włączenia funkcji należy wprowadzić zmiany w **profilu funkcji**.
 
-Aby skonfigurować pierwszy parametr, wykonaj następujące czynności.
-
-1. Kliknij kolejno opcje **Retail i Commerce \> Ustawienia centrali \> Parametry \> Wspólne parametry handlu**.
-1. Na karcie **zapasy** w sekcji **zadanie dostępności produktów** wybierz opcję **używaj zoptymalizowanego procesu dla zadania dostępności produktu**. To ustawienie gwarantuje, że do obliczania dostępnych zapasów kanału za pośrednictwem serwera handlowego jest używany optymalny zbiór funkcji.
-
-Aby skonfigurować drugi parametr, wykonaj następujące czynności.
+Aby zmienić **profil funkcji**, wykonaj poniższe kroki:
 
 1. Wybierz kolejno opcje **Handel detaliczny i inny \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Profile punktów sprzedaży \> Profile funkcji**.
 1. Wybierz profil funkcji.
 1. W karcie skróconej **Funkcje** w sekcji **Obliczanie dostępności magazynowej** zmień wartość pola **Tryb obliczania dostępności zapasów** z **Usługa w czasie rzeczywistym** na **Kanał**. Domyślnie wszystkie profile funkcji korzystają z wywołań usługi w czasie rzeczywistym. Dlatego też należy zmienić wartość tego pola, jeśli ma być używana logika obliczania po stronie kanału. Ta zmiana będzie miała wpływ na każdy sklep detaliczny połączony z wybranym profilem funkcji.
 
-Aby zaktualizować serwery, wykonaj następujące czynności.
+Następnie należy zsynchronizować zmiany w kanale za pomocą procesu planowania dystrybucji, wykonując następujące kroki:
 
 1. Wybierz kolejno opcje **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji**.
 1. Uruchom zadanie **1070** (**konfiguracja kanału**).

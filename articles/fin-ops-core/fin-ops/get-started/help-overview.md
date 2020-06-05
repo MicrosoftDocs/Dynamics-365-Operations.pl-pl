@@ -1,57 +1,57 @@
 ---
 title: System Pomocy
-description: Ten temat zawiera omówienie systemu pomocy.
-author: margoc
+description: Ten temat zawiera omówienie systemu pomocy dla aplikacji Finance and Operations.
+author: edupont04
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: tfehr
 ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
-ms.author: margoc
+ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4594da0feeb3b74eb066fb5761e36398804b4fc2
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 28118eddd2f85df5f9daa2c5a6c3cb00957909db
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124665"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367345"
 ---
 # <a name="help-system"></a>System Pomocy
 
 [!include [banner](../includes/banner.md)]
 
-Ten temat zawiera omówienie składników systemu pomocy. System Pomocy jest wspólny dla następujących produktów:
+Użytkownicy poniższych aplikacji mogą uzyskiwać dostęp do informacji kontekstowych i innej zawartości pomocy opartej na tym samym systemie pomocy:
 
-- Dynamics 365 Finance 
-- Dynamics 365 Commerce
-- Dynamics 365 Supply Chain Management
+- Microsoft Dynamics 365 Commerce
+- Dynamics 365 Finance
 - Dynamics 365 Human Resources
+- Dynamics 365 Supply Chain Management
 
-Do pomocy można przejść z okienka pomocy w każdym używanym produkcie. 
+We wszystkich tych aplikacjach pomoc specyficzna dla produktu jest dostępna z poziomu okienka **Pomoc**.
 
-![Okienko pomocy](./media/help-pane-ops-task-guides.png)
+![Okienko pomocy](./media/help-pane-ops-help.png)
 
 ## <a name="help-on-docsmicrosoftcom"></a>Pomoc w witrynie docs.microsoft.com
 
-Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) to podstawowe źródło dokumentacji produktu aplikacji wypisanych poniżej. Witryna oferuje następujące funkcje:
+Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) to domyślne źródło dokumentacji produktu dla wymienionych wcześniej aplikacji. Witryna ta oferuje następujące funkcje:
 
-- **Dostęp do najaktualniejszych treści** — Witryna pozwala szybciej i elastyczniej tworzyć, dostarczać i aktualizować dokumentację produktu. To pomaga zagwarantować, że masz dostęp do najnowszych informacji technicznych.
-- **Artykuły pisane przez ekspertów** — Witryna zawiera bardziej rozbudowany zestaw dokumentacji produktu, który może być rozszerzany przez członków społeczności wewnątrz i na zewnątrz firmy Microsoft.
+- **Dostęp do najaktualniejszych treści** — dzięki witrynie Microsoft szybciej i elastyczniej tworzy, dostarcza i aktualizuje dokumentację produktu. Dzięki temu masz łatwy dostęp do najnowszych informacji technicznych.
+- **Zawartość pisana przez ekspertów** — zawartość witryny jest otwarta i pozwala na współtworzenie przez członków społeczności wewnątrz firmy Microsoft i poza nią.
 
-Można również znaleźć naszą zawartość przy użyciu dowolnego aparatu wyszukiwania. W celu uzyskania najlepszych wyników zalecamy korzystanie z przeszukiwania witryny, takiego jak site:docs.microsoft.com dynamics 365 „szukany termin”.
+Zawartość witryny docs.microsoft.com można znaleźć przy użyciu dowolnej wyszukiwarki. W celu uzyskania najlepszych wyników zalecamy korzystanie z przeszukiwania witryny, takiego jak **site:docs.microsoft.com dynamics 365 „szukany termin”**.
 
-### <a name="use-an-rss-feed"></a>Używanie źródła danych RSS
+### <a name="get-notified-about-changes-through-an-rss-feed"></a>Otrzymywanie powiadomień o zmianach za pomocą kanału informacyjnego RSS
 
-Aby subskrybować źródło danych RSS ze wszystkimi aktualizacjami zawartości, wpisz następujące łącze w przeglądarce obsługującej źródła danych RSS, takiej jak Internet Explorer, lub w menedżerze źródeł danych RSS:
+Aby subskrybować kanał informacyjny RSS (Really Simple Syndication) obejmujący wszystkie aktualizacje dotyczące zawartości witryny docs.microsoft.com, wybierz następujący link:
 
 [Źródło danych RSS](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
@@ -59,34 +59,37 @@ Aby subskrybować źródło danych RSS ze wszystkimi aktualizacjami zawartości,
 
 Jeśli masz opinię lub pytania dotyczące tematu, pozostaw komentarz na dole strony.
 
-1. Kliknij opcję **Opinia** w celu przejścia do sekcji komentarzy w dolnej części strony, a następnie kliknij opcję **Opinia o produkcie** lub **Zaloguj się, aby dodać opinię o dokumentacji**.
+1. Wybierz pozycję **Opinia** w celu przejścia do komentarzy w dolnej części strony. Następnie wybierz pozycję **Opinia o produkcie** lub **Zaloguj się, aby dodać opinię o dokumentacji**.
 
-2. Zacznij wpisywać swoje komentarze, a następnie kliknij przycisk **Prześlij opinię**.
+2. Zacznij wpisywać komentarze, a następnie wybierz pozycję **Prześlij opinię**.
 
     ![Opublikuj komentarz](./media/feedback.png)
 
+> [!NOTE]
+> Jeśli chcesz przesłać opinię o dokumentacji, musisz zalogować się przy użyciu konta GitHub. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie profilu GitHub i zarządzanie nim](https://help.github.com/github/setting-up-and-managing-your-github-profile).
+
 ### <a name="contribute-to-the-documentation"></a>Udział w dokumentacji
 
-Użytkownik może tworzyć i edytować dokumentacje. Aby rozpocząć, kliknij przycisk **Edytuj** (ołówek) w temacie. Poniższe wideo przedstawia sposób, w jaki można uczestniczyć w naszej dokumentacji systemu.
+Użytkownik może tworzyć i edytować dokumentacje. Aby rozpocząć, wybierz przycisk **Edytuj** (symbol ołówka) w temacie. Poniższe wideo przedstawia sposób, w jaki można uczestniczyć w naszej dokumentacji systemu.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
-Wideo [Jak należy przyczyniać się do dokumentacji Microsoft Dynamics](https://youtu.be/m5djioozRbg) (pokazany powyżej), jest zawarty w kanale YouTube Microsoft Dynamics 365 w systemie.
+Wideo [Jak należy przyczyniać się do dokumentacji Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) (pokazany powyżej), jest zawarty w kanale YouTube Microsoft Dynamics 365 w systemie.
 
-Więcej informacji zawiera [podręcznik dla współautorów](https://docs.microsoft.com/contribute).
+Aby uzyskać więcej informacji, zapoznaj się z [podręcznikiem dla współautorów witryny Docs](https://docs.microsoft.com/contribute) opublikowanego przez zespół, który stworzył witrynę docs.microsoft.com.
 
 > [!NOTE]
 > Obecnie akceptujemy współtworzenie tylko treści w języku angielskim.
 
-## <a name="task-guides"></a>Przewodniki zadań
+## <a name="task-guides"></a>Przewodniki zadania
 
-Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w zadaniach i procesach biznesowych. Przewodnik można otworzyć (i odtworzyć) z okienka pomocy. Po kliknięciu przewodnika po zadaniu okienko pomocy pokaże dokładne instrukcje wykonania zadania. Dostępne są przetłumaczone przewodniki po zadaniach.
+Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w zadaniach i procesach biznesowych. Przewodnik można otworzyć (i odtworzyć) z okienka **pomocy**. Po wybraniu przewodnika zadania okienko **pomocy** pokaże dokładne instrukcje wykonania zadania. Dostępne są przetłumaczone przewodniki zadań.
 
-Firma Microsoft dostarczyła biblioteki przewodników po zadaniach dla Dynamics 365 for Finance and Operations wydanych do grudnia 2017 roku włącznie. Sekcja [System pomocy](help-overview.md#accessing-task-guides-from-the-help-pane) opisuje sposób znajdowania odpowiednich przewodników po zadaniach dla używanego produktu.
+Firma Microsoft wydała bibliotekę przewodników zadań dla wersji produktu w wersji aplikacji Dynamics 365 for Finance and Operations z grudnia 2017 r. Sekcja [Uzyskiwanie dostępu do przewodników zadań z okienka pomocy](#accessing-task-guides-from-the-help-pane) w tym temacie zawiera opis sposobu znajdowania odpowiednich przewodników zadań dla produktu.
 
 ![Przewodnik po zadaniu w widoku do czytania](./media/task-guide-ops.png)
 
-Aby rozpocząć korzystanie z interaktywnego przewodnika, kliknij opcję **Uruchom przewodnik po zadaniach** u dołu okienka Pomocy. Zostanie wyświetlony czarny wskaźnik pokazujący czynność, którą należy wykonać. Postępuj zgodnie z instrukcjami wyświetlanymi w interfejsie użytkownika, a następnie wprowadź dane, zgodnie ze wskazówkami.
+Aby rozpocząć korzystanie z interaktywnego przewodnika, wybierz pozycję **Uruchom przewodnik zadania** w dolnej części okienka **Pomoc**. Czarny wskaźnik pokazuje, gdzie należy przejść w pierwszej kolejności. Postępuj zgodnie z instrukcjami wyświetlanymi w interfejsie użytkownika, a następnie wprowadź dane zgodnie ze wskazówkami.
 
 ![Instrukcje krok po kroku przewodnika po zadaniu](./media/task-guide-step-1-ops.png)
 
@@ -97,69 +100,68 @@ Program Rejestrator zadań umożliwia tworzenie własnych niestandardowych zada�
 
 ## <a name="in-product-help"></a>Pomoc w produkcie
 
-Aby uzyskać dostęp do zawartości pomocy w programie Finance and Operations, kliknij ikonę **pomocy** (**?**), a następnie wybierz polecenie Pomoc lub naciśnij klawisze Ctrl + Shift +?. W obu przypadkach zostanie otwarte okienko pomocy. Z okienka pomocy można uzyskać dostęp do artykułów lub przewodników po zadaniach.
+Niektóre pola zawierają opisy, które pomagają użytkownikom w pracy, jeśli nie mają oni pewności na przykład co do danych, które zawiera pole. Ponadto okienko **Pomoc** oferuje kontekstowy dostęp do zawartości, która może pomóc użytkownikom rozpocząć pracę, rozwiązywać problemy i uzyskiwać dodatkowe informacje.
 
-![Okienko pomocy](./media/help-pane-wiki.png)
+Aby uzyskać dostęp do zawartości pomocy, wybierz przycisk **Pomoc** (**?**), a następnie wybierz pozycję **Pomoc**. Możesz również nacisnąć klawisze **Ctrl+Shift+?**. W obu przypadkach pojawi się okienko **pomocy**. Z poziomu okienka **Pomoc** można uzyskać dostęp do tematów koncepcyjnych lub przewodników zadań odpowiednich dla obszaru produktu, w którym się znajdujesz.
 
-### <a name="accessing-help-topics-from-the-help-pane"></a>Uzyskiwanie dostępu do tematów pomocy z okienka Pomocy
+![Okienko pomocy](./media/help-pane-ops-help.png)
 
-Z okienka pomocy można uzyskać dostęp artykułów wiki mających zastosowanie do klienta. Gdy po raz pierwszy otworzysz okienko pomocy i klikniesz kartę **Pomoc**, zobaczysz artykuły mające zastosowanie do strony aktualnie wyświetlonej. Jeśli nie zostaną znalezione żadne artykuły, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie. Po kliknięciu artykułu w okienku pomocy w przeglądarce zostanie otwarta nowa karta z artykułem.
+### <a name="accessing-help-topics-from-the-help-pane"></a>Uzyskiwanie dostępu do tematów pomocy z okienka Pomoc
+
+Z okienka **Pomoc** można uzyskać dostęp do tematów mających zastosowanie do klienta. Gdy po raz pierwszy otworzysz okienko **Pomoc**, na karcie **Pomoc** będą wyświetlane tematy mające zastosowanie do strony, na której obecnie się znajdujesz. Jeśli nie zostaną znalezione żadne tematy, możesz wprowadzić słowa kluczowe, aby zawęzić wyszukiwanie. Po wybraniu tematu w okienku **Pomoc** zostanie on otwarty na nowej karcie w przeglądarce.
 
 > [!IMPORTANT]
-> Ta sekcja nie ma zastosowania do Dynamics 365 Human Resources. System Pomocy programu Human Resources jest automatycznie łączony z przewodnikami po zadaniach dla tego produktu. Co więcej, nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Human Resources.
-
+> Ta sekcja nie ma zastosowania do Dynamics 365 Human Resources. System pomocy aplikacji Human Resources jest automatycznie łączony z przewodnikami zadań dla tego produktu. Co więcej, nie można tworzyć niestandardowych przewodników zadań dla aplikacji Human Resources.
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Uzyskiwanie dostępu do przewodników po zadaniach z okienka Pomocy
 
-Zanim będzie można uzyskać dostęp do przewodników po zadaniach z okienka pomocy, administrator systemu musi przejść do strony **Parametry systemu** w programie Finance, Supply Chain Management i Commerce i skonfigurować niektóre ustawienia.
+Zanim będzie można uzyskać dostęp do przewodników zadań z okienka **Pomoc**, administrator systemu musi skonfigurować niektóre ustawienia na stronie **Parametry systemu** w aplikacji Finance, Supply Chain Management lub Commerce. Więcej informacji zawiera temat [Dodawanie przewodników zadań](help-connect.md#adding-task-guides).
 
-> [!NOTE]
-> - Aby skonfigurować pomoc, musisz się zalogować przy użyciu konta w tej samej dzierżawie, w której jest wdrożona aplikacja.
-> - Nie jest możliwe nawiązanie połączenia z biblioteką LCS z wystąpienia aplikacji działającej na lokalnym wirtualnym dysku twardym (VHD).
+<!-- > [!NOTE]
+> - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
+> - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
-![Formularz Parametry systemu z ustawieniami Pomocy](./media/system-parameters_ops-1024x437.png)
+![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
 
-Na stronie **Parametry systemu** wykonaj następujące kroki:
+On the **System parameters** page, follow these steps:
 
-1. **Ważne:** Podczas pierwszego otwierania karty Pomoc należy utworzyć połączenie z usługą Lifecycle Services. Kliknij łącze na środku formularza, poczekaj na nawiązanie połączenia, zamknij okno dialogowe i kliknij przycisk **OK**, co spowoduje przejście do formularza Parametry.
+1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
 
-    ![Nawiązywanie połączenia z usługą LCS](./media/connect-to-lcs-crop-1024x365.png)
+    ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
 
-2. Wybierz projekt Lifecycle Services, z którym chcesz się połączyć.
-3. Wybierz biblioteki BPM (w ramach wybranego projektu), z których będą pobierane nagrania zadań.
-4. Ustaw kolejność wyświetlania bibliotek BPM. Określa kolejność wyświetlania nagrań z bibliotek w okienku pomocy.
+2. Select the Lifecycle Services project to connect to.
+3. Select BPM libraries (within the selected project) to retrieve task recordings from.
+4. Set the display order of the BPM libraries. This setting determines the order in which task recordings from the libraries will appear in the Help pane.-->
 
-Po wykonaniu tych kroków przez administratora systemu można utworzyć okienko Pomoc i kliknąć kartę **Przewodniki zadań**. Zobaczysz przewodniki zadań mające zastosowanie do strony aktualnie wyświetlonej. Jeśli nie zostaną znalezione żadne przewodniki po zadaniach, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie. Po kliknięciu przewodnika po zadaniu w okienku pomocy zobaczysz w nim instrukcje krok po kroku i można odtworzyć przewodnik po zadaniu.
+Po wykonaniu tych kroków przez administratora systemu można otworzyć okienko **Pomoc** i wybrać kartę **Przewodniki zadań**. Zobaczysz przewodniki zadań mające zastosowanie do strony, na której się znajdujesz. Jeśli nie zostaną znalezione żadne przewodniki po zadaniach, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie. Po wybraniu przewodnika zadania w okienku **Pomoc** okienko **Pomoc** będzie zawierać instrukcje krok po kroku i będzie można odtworzyć przewodnik zadania.
 
 ![Przewodnik po zadaniu w widoku do czytania](./media/task-guide-ops.png)
 
-### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Gdzie są przetłumaczone przewodniki po zadaniach dla bibliotek Microsoft?
+### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Gdzie są przetłumaczone przewodniki zadań dla bibliotek Microsoft?
 
-Przetłumaczone przewodniki po zadaniach są wydawane w bibliotekach z tytułem zawierającym wyrażenie „Wszystkie języki”. Aby wyświetlić przetłumaczone przewodniki po zadaniach w pomocy, upewnij się, że masz połączenie z odpowiednią biblioteką. Język wyświetlania przetłumaczonego przewodnika po zadaniu jest kontrolowany przez każdego użytkownika w ustawieniach języka w oknie **Opcje** &gt; **Preferencje**.
+Przetłumaczone przewodniki zadań są wydawane w bibliotekach z tytułem zawierającym wyrażenie „Wszystkie języki”. Aby wyświetlić przetłumaczone przewodniki zadań w pomocy, upewnij się, że masz połączenie z odpowiednią biblioteką. Każdy użytkownik może zmienić język wyświetlonego przewodnika zadania, zmieniając ustawienia języka w obszarze **Opcje** &gt; **Preferencje**.
 
 - Jeśli przewodnik po zadaniu został przetłumaczony, po otwarciu przewodnika jego cały tekst będzie wyświetlany w wybranym języku.
-- Jeśli przewodnik po zadaniu nie został jeszcze przetłumaczony, po otwarciu przewodnika tylko część tekstu (formanty) będzie wyświetlana w wybranym języku.
+- Jeśli przewodnik zadania nie został jeszcze przetłumaczony, po otwarciu przewodnika tylko tekst kontrolek będzie wyświetlany w wybranym języku.
 
 ## <a name="creating-custom-help"></a>Tworzenie pomocy niestandardowej
 
-Można utworzyć pomoc dla użytkowników przez tworzenie niestandardowych przewodników po zadaniach lub łączenie własnej witryny z okienkiem pomocy. Aby uzyskać szczegółowe informacje, zobacz:
+Można utworzyć pomoc dla użytkowników, tworząc niestandardowe przewodniki zadań lub łącząc własną witrynę internetową z okienkiem **Pomoc**. Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-- [Zasoby rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md).
-- [Utwórz Pomoc niestandardową (oficjalny dokument)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Zasoby rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md)
+- [Omówienie pomocy niestandardowej](../../dev-itpro/help/custom-help-overview.md)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Zasoby rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md)
-
 W poniższej tabeli wymieniono nasze witryny internetowe. Witryny z gwiazdką (\*) obok nazwy wymagają logowania przy użyciu konta, które jest skojarzone z planem usługi.
 
-| Oddział                                                                                           | opis |
-|------------------------------------------------------------------------------------------------|-------------|
-| [Docs.microsoft.com](/dynamics365/)                                                            | Hosty lub łącza do dokumentacji wszystkich produktów dla systemu Dynamics 365. |
-| [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Witryna bezpłatnych szkoleń elektronicznych firmy Microsoft. |
-| [Usługa Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Zawiera obszar współpracy oparty na chmurze, w którym klienci i ich partnerzy mogą całościowo zarządzać projektami — od przedsprzedaży po wdrożenie i bieżącą eksploatację. Ta witryna jest przydatna we wszystkich fazach implementacji. |
-| [Blog pomocy technicznej](https://aka.ms/AXSupportBlog)                                                    | Zawiera porady i wskazówki publikowane przez zespół pomocy technicznej. |
-| [Docs.microsoft.com/poprzednie wersje](https://docs.microsoft.com/previous-versions/dynamics/) | Zawiera treści w poprzednich wydań. |
-| [Społeczność użytkowników produktów Dynamics](https://community.dynamics.com/)                                          | Obsługuje blogi, fora i wideo. |
-| [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Zawiera ocenę i informacje o sprzedaży. |
-| [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Zawiera niektóre materiały szkoleniowe oraz raporty i oficjalne dokumenty do pobrania, a także jest główną witryną pomocy technicznej dla posiadaczy planów usług. Dostęp do niektórych zasobów w witrynie może wymagać posiadania planu usług. |
+| Oddział | opis |
+|------|-------------|
+| [Docs.microsoft.com](/dynamics365/) | Ta strona hostuje dokumentację wszystkich produktów dla rozwiązania Dynamics 365 lub łączy się z nią. |
+| [Microsoft Learn](https://docs.microsoft.com/learn/) | Jest to bezpłatna witryna programu Microsoft eLearning. |
+| [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Ta witryna oferuje obszar roboczy współpracy oparty na chmurze, w którym klienci i ich partnerzy mogą całościowo zarządzać projektami — od przedsprzedaży po wdrożenie i bieżącą eksploatację. Jest ona przydatna we wszystkich fazach implementacji. |
+| [Blog pomocy technicznej](https://aka.ms/AXSupportBlog) | Ta witryna zawiera porady i wskazówki publikowane przez zespół pomocy technicznej. |
+| [Docs.microsoft.com/poprzednie wersje](/previous-versions/dynamics/) | Ta strona hostuje zawartość z poprzednich wydań. |
+| [Społeczność użytkowników produktów Dynamics](https://community.dynamics.com/) | Ta witryna hostuje blogi, fora i wideo. |
+| [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Ta witryna zawiera informacje na temat oceny i sprzedaży. |
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Ta witryna hostuje materiały szkoleniowe oraz raporty i oficjalne dokumenty do pobrania, a także jest główną witryną pomocy technicznej dla posiadaczy planów usług. Dostęp do niektórych zasobów w tej witrynie może wymagać planu usług. |
