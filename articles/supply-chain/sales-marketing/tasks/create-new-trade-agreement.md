@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9aa46f959c35c209791457aa697ab829264b3275
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1642da7b06363d1f704e51276b5cb36823707231
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211958"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383435"
 ---
 # <a name="create-a-new-trade-agreement"></a>Tworzenie nowej umowy handlowej
 
@@ -34,7 +34,7 @@ Ta procedura przedstawia sposób tworzenia umowy handlowej, w której jest rejes
 2. Kliknij przycisk **Nowy**.
 3. W polu **Nazwa** kliknij rozwijany przycisk, aby otworzyć wyszukiwanie.
 4. Na liście znajdź i zaznacz odpowiedni rekord.
-5. W **Panelu akcji** kliknij **Linie**.
+5. W **okienku akcji** kliknij pozycję **Wiersze**.
 6. W polu **Kod konta** wybierz „Tabela”.
     
     W tym przykładzie zaktualizujesz cenę dla określonego odbiorcy, co oznacza, że musisz wybrać opcję Tabela. Jeśli aktualizujesz cenę katalogową produktów, wybierz „Wszystko”, aby nowa cena została zmieniona dla wszystkich klientów. Zostały ceny byłyby różnicowane między segmentami odbiorców, należałoby wybrać opcję Grupa. Aby można było zaznaczyć opcję Grupa, muszą być skonfigurowane grupy cenowe dla odbiorców.  

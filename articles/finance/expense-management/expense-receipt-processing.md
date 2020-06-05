@@ -3,7 +3,7 @@ title: Przetwarzanie paragonów kosztowych
 description: Ten temat zawiera informacje o przetwarzaniu za pomocą optycznego rozpoznawania znaków (OCR) dla paragonów. Ta funkcja ma na celu zwiększenie komfortu pracy użytkownika podczas tworzenia raportów z wydatków w Microsoft Dynamics 365 Finance.
 author: stsporen
 manager: AnnBe
-ms.date: 11/20/2019
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: stsporen
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: efba2faf9428d9b556d74273bc7daadba7211c48
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 31c08ea264e6caec3217f4b424275495f39123e3
+ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248970"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378238"
 ---
 # <a name="expense-receipt-processing"></a>Przetwarzanie przyjęcia wydatku
 
@@ -36,24 +36,24 @@ Wpisywanie wydatków zostało ulepszone przez wprowadzenie optycznego rozpoznawa
 
 ## <a name="usage-examples"></a>Przykłady użycia
 
-- **Umożliwia automatyczne dołączanie paragonów, które uwzględniają transakcje karty kredytowej podczas tworzenia raportu z wydatków**.
+Aby automatycznie dołączać paragony, które uwzględniają transakcje karty kredytowej podczas tworzenia raportu z wydatków, wykonaj następujące czynności:
 
-    1. Otwórz obszar roboczy **Zarządzanie wydatkami**.
-    2. Na karcie **Przychody** sprawdź, czy istnieją niedołączone paragony. Możesz również wgrać paragony na karcie **Przychody**.
-    3. Na karcie **Wydatki** sprawdź, czy istnieją niedołączone wydatki. Zazwyczaj administrator wydatków importuje te wydatki z danych od dostawcy karty kredytowej.
-    4. Wybierz **Nowy raport o wydatkach**. Należy zauważyć, że po utworzeniu raportu o wydatkach można również uwzględnić wydatki i paragony. W przypadku dodania zarówno wydatków, jak i paragonów zostanie wyzwolone automatyczne dopasowywanie paragonów do wydatków.
+  1. Otwórz obszar roboczy **Zarządzanie wydatkami**.
+  2. Na karcie **Przychody** sprawdź, czy istnieją niedołączone paragony. Możesz również wgrać paragony na karcie **Przychody**.
+  3. Na karcie **Wydatki** sprawdź, czy istnieją niedołączone wydatki. Zazwyczaj administrator wydatków importuje te wydatki z danych od dostawcy karty kredytowej.
+  4. Wybierz **Nowy raport o wydatkach**. Należy zauważyć, że po utworzeniu raportu o wydatkach można również uwzględnić wydatki i paragony. W przypadku dodania zarówno wydatków, jak i paragonów zostanie wyzwolone automatyczne dopasowywanie paragonów do wydatków.
 
-- **Utwórz wydatek lub Dopasuj wydatek z paragonu**.
+Aby utworzyć wydatek lub dopasować wydatek z paragonu, wykonaj następujące czynności:
 
-    1. W raporcie z wydatków na karcie **Paragony** dołącz paragon, zaznaczając opcję **Dodaj paragony**.
-    2. W obszarze przekazanego obrazu paragonu zwróć uwagę na opcje **Utwórz** i **Powiąż**.
+  1. W raporcie z wydatków na karcie **Paragony** dołącz paragon, zaznaczając opcję **Dodaj paragony**.
+  2. W obszarze przekazanego obrazu paragonu zwróć uwagę na opcje **Utwórz** i **Powiąż**.
 
-        - Wybierz opcję **Utwórz**, aby utworzyć ręcznie wprowadzaną transakcję wydatku, a następnie wypełnij wartości wyodrębnione z paragonu.
-        - W przypadku wybrania opcji **Powiąż**, system próbuje dopasować istniejący wydatek do paragonu.
+      - Wybierz opcję **Utwórz**, aby utworzyć ręcznie wprowadzaną transakcję wydatku, a następnie wypełnij wartości wyodrębnione z paragonu.
+      - W przypadku wybrania opcji **Powiąż**, system próbuje dopasować istniejący wydatek do paragonu.
 
 ## <a name="installation"></a>Instalacja
 
-Ta funkcja działa w połączeniu z **Funkcją wypracowania raportów z wydatków**, ułatwiającą uproszczenie pracy z wydatkami.
+Ta funkcja działa w połączeniu z **Funkcją wypracowania raportów z wydatków**, ułatwiającą uproszczenie pracy z wydatkami. Ta funkcja jest dostępna tylko dla środowisk w warstwie 2 i wyższych, które są w trybie piaskownicy i produkcji.
 
 Aby skorzystać z tych zaawansowanych funkcji wydatków, należy zainstalować dodatek usługi zarządzania wydatkami dla rozwiązania Microsoft Dynamics 365 Finance i włączyć funkcje w wystąpieniu. Dostęp do dodatku można uzyskać z poziomu projektu w ramach usługi Microsoft Dynamics Lifecycle Services (LCS).
 

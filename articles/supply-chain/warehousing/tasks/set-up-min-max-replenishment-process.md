@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6b99cac46ea33b018a3f67dd4bf0164b8a7f0e6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d2997a39311e371443de3bc11ace17ab36be20e8
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216880"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383580"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości
 
@@ -43,7 +43,7 @@ W tej procedurze pokazano sposób konfigurowania nowego procesu uzupełniania za
 ## <a name="create-a-replenishment-location-directive"></a>Tworzenie dyrektywy lokalizacji uzupełniania zapasów
 1. Wybierz kolejno opcje **Zarządzanie magazynem > Ustawienia > Dyrektywy lokalizacji**. Dyrektywy lokalizacji służą do określania, skąd towary mają być pobierane w procesie uzupełnienia zapasów.
 2. W polu **Typ zlecenia pracy** wybierz opcję „Uzupełnienie”.
-3. W **okienku akcji** kliknij **Nowy**.
+3. W **Okienku akcji** kliknij **Nowy**.
 4. W polu **Nazwa** wpisz wartość.
 5. W polu **Typ pracy** zaznacz opcję „Pobranie”.
 6. W polu **Oddział** wprowadź lub wybierz wartość. Jeśli używasz firmy demonstracyjnej USMF, można wybrać oddział 2.  
@@ -58,14 +58,14 @@ W tej procedurze pokazano sposób konfigurowania nowego procesu uzupełniania za
 15. Na liście oznacz wybrany wiersz.
 16. W polu **Nazwa** wpisz wartość.
 17. Kliknij przycisk **Zapisz**.
-18. W **okienku akcji** kliknij **Edytuj zapytanie**. Można edytować to zapytanie, aby dodać ograniczenia mówiące o tym, skąd można wybierać zapasy w procesie uzupełnienia zapasów. Na przykład można określić, że zapasów można używać tylko z obszaru materiałów luzem.
+18. W **okienku akcji** kliknij pozycję **Edytuj zapytanie**. Można edytować to zapytanie, aby dodać ograniczenia mówiące o tym, skąd można wybierać zapasy w procesie uzupełnienia zapasów. Na przykład można określić, że zapasów można używać tylko z obszaru materiałów luzem.
 19. Kliknij przycisk **OK**.
 20. Zamknij stronę.
 
 ## <a name="create-a-replenishment-work-template"></a>Tworzenie szablonu roboczego uzupełniania zapasów
 1. Wybierz kolejno opcje **Zarządzanie magazynem > Ustawienia > Praca > Szablony pracy**. Szablon pracy służy do instruowania systemu, jak należy utworzyć pracę minimalnego/maksymalnego uzupełniania zapasów. Jako minimum musi istnieć wiersz szablonu pracy dotyczący pobrania i odłożenia. Szablon pracy będzie wyświetlany jako nieprawidłowy do momentu, aż zostaną w nim wprowadzone wszystkie wymagane informacje. 
 2. W polu **Typ zlecenia pracy** wybierz opcję „Uzupełnienie”.
-3. W **okienku akcji** kliknij **Nowy**.
+3. W **Okienku akcji** kliknij **Nowy**.
 4. W polu **Szablon pracy** wpisz wartość.
 5. Kliknij przycisk **Zapisz**.
 6. W sekcji **Szczegóły szablonu pracy** kliknij **Nowe**.
@@ -80,7 +80,7 @@ W tej procedurze pokazano sposób konfigurowania nowego procesu uzupełniania za
 
 ## <a name="create-a-new-replenishment-template"></a>Tworzenie nowego szablonu uzupełniania zapasów
 1. Wybierz kolejno opcje **Zarządzanie magazynem > Ustawienia > Uzupełnianie zapasów > Szablony uzupełniania zapasów**. Szablon uzupełnienia zapasów służy do definiowania towarów i ilości oraz lokalizacji, która ma być uzupełniana.
-2. W **okienku akcji** kliknij **Nowy**.
+2. W **Okienku akcji** kliknij **Nowy**.
 3. W polu **Szablon uzupełniania zapasów** wpisz wartość. Nadaj szablonowi nazwę wskazującą, że dotyczy on uzupełnienia minimalnej/maksymalnej ilości.  
 4. W polu **Opis** wpisz wartość.
 5. Zaznacz pole wyboru **Zezwalaj na używanie niezarezerwowanych ilości z powodu popytu grupy czynności**. Zaznaczenie tej opcji spowoduje, że uzupełnianie popytu grupy czynności będzie mogło zużywać ilości związane minimalnym/maksymalnym uzupełnieniem. Może to być na przykład przydatne, jeśli praca minimalnego/maksymalnego uzupełniania ilości nie jest przetwarzana natychmiast, ponieważ pozwoli to uniknąć tworzenia niepotrzebnej pracy uzupełnienia zapasów dla popytu.

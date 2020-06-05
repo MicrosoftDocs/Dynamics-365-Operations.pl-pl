@@ -1,9 +1,9 @@
 ---
 title: Definiowanie zasad dotyczących wydatków
 description: Można zdefiniować zasady dotyczące wydatków, których pracownicy muszą przestrzegać przy wprowadzaniu i wysyłaniu raportów z wydatków i wniosków wyjazdowych w Microsoft Dynamics 365 Finance.
-author: ryansandness
+author: suvaidya
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d3b4a8f6cf74bb1fe7e53a4dfdd607f604e16e3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 22504e0e26c025d117f29dee3b59b41d508e7724
+ms.sourcegitcommit: 4f90b9ddedf312e75a714e0ec7f7ee5fd43cac6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187459"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "3389722"
 ---
 # <a name="define-expense-policies"></a>Definiowanie zasad dotyczących wydatków
 
@@ -48,6 +48,7 @@ Można zdefiniować trzy typy zasad:
 Oto kilka sugestii ułatwiających tworzenie nowych zasad zarządzania wydatkami. 
 * Zasady obowiązują od dnia ich wprowadzenia; nie zaczną obowiązywać, jeśli zasada zostanie utworzona z datą późniejszą niż data wystąpienia wydatku. Jeśli na przykład nowe zasady są tworzone dzisiaj w celu wymuszenia maksymalnego kosztu posiłku wynoszącego $50, wówczas wszelkie istniejące wydatki wprowadzone z datą wczorajszą nie będą sprawdzane w odniesieniu do tej zasady.
 * Podczas tworzenia zasady dla kategorii wydatków, która może być wyszczególniona, należy rozważyć dodanie warunku dla typu wiersza wydatku. Niektóre zasady, takie jak wymaganie przyjęcia paragonu, mogą nie mieć sensu w przypadku wierszy wyszczególnionych i powinny być stosowane tylko do wierszy nagłówka lub wierszy bez pozycji. 
+* Zasady zarządzania wydatkami są domyślnie wypróbowywane w odniesieniu do jednostki źródłowej. W scenariuszach międzyfirmowych można określić, że zasady mają być w zamian wypróbowywane względem jednostki docelowej (jednostka pożyczająca). Aby uruchomić zasady w odniesieniu do jednostki docelowej, włącz funkcję „wypróbowywania zasad wydatków w odniesieniu do firmy pożyczającej” w obszarze roboczym **Zarządzanie funkcjami**.
 
 ## <a name="when-to-evaluate-policies"></a>Kiedy oceniać zasady
 

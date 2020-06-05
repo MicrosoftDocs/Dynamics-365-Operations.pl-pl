@@ -3,7 +3,7 @@ title: Wychodząca operacja magazynowa w punkcie sprzedaży
 description: W tym temacie opisano możliwości wychodzących operacji magazynowych w punkcie sprzedaży (POS).
 author: hhaines
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 26d8d67ac6d2fde0753104483fd2127f9acbaa05
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
+ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123929"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3384136"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Wychodząca operacja magazynowa w punkcie sprzedaży
 
@@ -117,6 +117,18 @@ W widoku **Pełna lista zamówień** można ręcznie wybrać wiersz z listy, a n
 ### <a name="over-delivery-shipping-validations"></a>Sprawdzanie poprawności nadwyżki w wysyłce
 
 Sprawdzanie poprawności nastąpiło podczas procesu odbierania dla wierszy dokumentu. Obejmują one sprawdzanie nadwyżki w dostawie. Jeśli użytkownik spróbuje uzyskać więcej zapasów niż zamówiono w zamówieniu zakupu, ale nadwyżka w dostawie nie jest skonfigurowana lub otrzymana ilość przekracza tolerancję nadwyżki w dostawie skonfigurowaną dla wiersza zamówienia zakupu, zostanie wyświetlony błąd i nie można przyjąć nadmiarowej ilości.
+
+### <a name="underdelivery-close-lines"></a>Wiersze zamknięcia niedoboru w dostawie
+
+W aplikacji Commerce w wersji 10.0.12 dodano funkcjonalność, dzięki której użytkownicy punktu sprzedaży mogą zamykać lub anulować pozostałe ilości podczas wysyłki zamówienia wychodzącego, jeśli magazyn wychodzący ustali, że nie może wysłać pełnej żądanej ilości. Ilości można także zamknąć lub anulować później. Aby korzystać z tej możliwości, firma musi być skonfigurowana tak, aby zezwalać na niedobór w dostawie zamówień przeniesienia. Ponadto dla wiersza zamówienia przeniesienia musi zostać wartość procentowa niedoboru w dostawie.
+
+Aby skonfigurować firmę tak, aby zezwalała na niedobór w dostawie zamówień przeniesienia w module Commerce Headquarters, przejdź do pozycji **Zarządzanie zapasami \> Ustawienia \> Parametry modułu Zarządzanie zapasami i magazynem**. Na stronie **Parametry modułu Zarządzanie zapasami i magazynem** na karcie **Zamówienia przeniesienia** włącz parametr **Akceptacja niedoboru w dostawie**. Następnie uruchom **1070** zadanie harmonogramu dystrybucji w celu zsynchronizowania zmian parametrów w kanale sklepu.
+
+Wartości procentowe niedoboru w dostawie dla wiersza zamówienia przeniesienia mogą być wstępnie zdefiniowane dla produktów jako część konfiguracji produktu w module Commerce Headquarters. Można je również ustawić lub zastąpić w określonym wierszu zamówienia przeniesienia za pośrednictwem modułu Commerce Headquarter.
+
+Po zakończeniu konfigurowania niedoboru w dostawie zamówień przeniesienia w organizacji użytkownicy będą widzieć nową opcję **Zamknij pozostałą ilość** w okienku **Szczegóły**, gdy zostanie wybrany wiersz zamówienia przeniesienia wychodzącego za pośrednictwem **operacji wychodzącej** w punkcie sprzedaży. Następnie, gdy użytkownicy zakończą wysyłkę przy użyciu operacji **Zakończ realizację**, będą mogli wysłać żądanie do modułu Commerce Headquarters, aby anulować pozostałą niewysłaną ilość. Jeśli użytkownik zdecyduje się na zamknięcie pozostałej ilości, aplikacja Commerce zweryfikuje, czy anulowana ilość mieści się w tolerancji procentowej wartości niedoboru w dostawie określonej w wierszu zamówienia przeniesienia. Jeśli tolerancja niedoboru w dostawie zostanie przekroczona, użytkownik otrzyma komunikat o błędzie i nie będzie mógł zamknąć pozostałej ilości do momentu, gdy ilość wysłana poprzednio i wysyłana teraz nie osiągnie lub nie przekroczy tolerancji niedoboru w dostawie.
+
+Po zsynchronizowaniu wysyłki z modułem Commerce Headquarters ilości określone w polu **Wyślij teraz** dla wiersza zamówienia przeniesienia w punkcie sprzedaży są aktualizowane do stanu wysłania w module Commerce Headquarters. Niewysłane ilości, które wcześniej byłyby uznane za ilości „pozostałe do wysłania” (czyli ilości, które zostaną wysłane później) zostaną w zamian uznane za ilości anulowane. Ilość „pozostała do wysłania” dla wiersza zamówienia przeniesienia jest równa **0** (zero), a wiersz jest uznawany za całkowicie wysłany.
 
 ### <a name="shipping-location-controlled-items"></a>Towary kontrolowane w lokalizacji wysyłki
 

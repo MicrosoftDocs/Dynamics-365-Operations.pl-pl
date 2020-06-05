@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daf8bc65dc937962e2e08b6f25805ddd3b8ee3c5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 86aed1b2071875117b74309030ac5e9008babdaf
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204293"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367414"
 ---
-[!include[banner](../includes/banner.md)]
-
 # <a name="set-up-cluster-picking"></a>Konfiguruj pobieranie dla grupy
+
+[!include[banner](../includes/banner.md)]
 
 W tym temacie opisano sposób umożliwienia pracownikom korzystania z urządzeń przenośnych do pobierania grupowania pracy pobrania, w celu umożliwienia pobrania towarów z jednej lokalizacji dla wielu zleceń pracy w tym samym czasie. Nazywa się to *pobieraniem dla grup*.
 
@@ -36,35 +36,35 @@ Po zwolnieniu zleceń pracy do magazynu, pracownik może użyć urządzenia prze
 
 W razie potrzeby, pracownik może przekazać grupę innemu pracownikowi. Powoduje to zmianę stanu grupy na Zdany. Jeżeli pracownik używa urządzenia przenośnego do wskazania, że praca pobierania i odkładania została zakończona, wysyłka lub załadunek muszą zostać potwierdzone na kliencie.
 
-## <a name="set-up-cluster-picking"></a>Konfigurowanie pobierania dla grupy
+## <a name="enable-cluster-picking"></a>Włączanie pobierania dla grupy
 
 Aby włączyć pobieranie dla grupy, należy skonfigurować następujące opcje:
 
--   **Profile grup** — Umożliwia określenie, czy automatycznie generować identyfikatory grupy, liczbę pozycji do użycia, kiedy likwidować grupy i jak ustawiać sekwencje i przeprowadzać sprawdzanie dla pracy pobierania.
+- **Profile grup** — umożliwia określenie, czy automatycznie generować identyfikatory grupy, liczbę pozycji do użycia, kiedy likwidować grupy i jak ustawiać sekwencje i przeprowadzać sprawdzanie dla pracy pobierania.
 
--   **Szablony pracy** — Umożliwia definiowanie sposobu tworzenia pracy pobierania dla pobierania dla grup.
+- **Szablony pracy** — umożliwia definiowanie sposobu tworzenia pracy pobierania dla pobierania dla grup.
 
--   **Dyrektywy lokalizacji** — Umożliwia określenie miejsca pobierania towarów i miejsca ich odkładania.
+- **Dyrektywy lokalizacji** — umożliwia określenie miejsca pobierania towarów i miejsca ich odkładania.
 
--   **Elementy menu urządzenia przenośnego** — Umożliwia skonfigurowanie menu urządzenia przenośnego do wykorzystania istniejącej pracy, która jest sterowana przez pobieranie dla grup. Następnie należy dodać element menu do menu urządzenia przenośnego, tak aby był wyświetlany na urządzeniach przenośnych.
+- **Elementy menu urządzenia przenośnego** — Umożliwia skonfigurowanie menu urządzenia przenośnego do wykorzystania istniejącej pracy, która jest sterowana przez pobieranie dla grup. Następnie należy dodać element menu do menu urządzenia przenośnego, tak aby był wyświetlany na urządzeniach przenośnych.
 
--   **Parametry zarządzania magazynem** — Służy do określenia numeracji, która ma być używana, jeśli chcesz wygenerować identyfikatory grup.
+- **Parametry zarządzania magazynem** — służy do określenia numeracji, która ma być używana, jeśli chcesz wygenerować identyfikatory grup.
 
 ## <a name="set-up-a-cluster-profile"></a>Konfigurowanie profilu grupy
 
 Aby skonfigurować profil grupy, należy wykonać następujące czynności:
 
-1.  Kliknij kolejno opcje **Zarządzanie magazynem** \> **Ustawienia** \> **Urządzenie przenośne** \> **Profile grup**.
+1. Kliknij kolejno pozycje **Zarządzanie magazynem** \> **Ustawienia** \> **Urządzenie przenośne** \> **Profile grup**.
 
-2.  Kliknij przycisk **Nowy**, aby utworzyć nowy profil.
+1. Kliknij przycisk **Nowy**, aby utworzyć nowy profil.
 
-3.  Kliknij przycisk **Tworzenie grupy**, a następnie w obszarze **Sortowanie grup** kliknij przycisk **Nowy**, aby skonfigurować kryteria sortowania grupy. Kryteria sortowania kontrolują kolejność, w której pracownik będzie wykonywał pracę pobierania. Można dodać dowolną liczbę kryteriów.
+1. Kliknij przycisk **Tworzenie grupy**, a następnie w obszarze **Sortowanie grup** kliknij przycisk **Nowy**, aby skonfigurować kryteria sortowania grupy. Kryteria sortowania kontrolują kolejność, w której pracownik będzie wykonywał pracę pobierania. Można dodać dowolną liczbę kryteriów.
 
-4.  W polu **Numer sekwencyjny** wprowadź liczbę określającą kolejność, w jakiej mają być przetwarzane kryteria sortowania.
+1. W polu **Numer sekwencyjny** wprowadź liczbę określającą kolejność, w jakiej mają być przetwarzane kryteria sortowania.
 
-5.  W polu **Nazwa pola**, wybierz pole, które będzie określać sortowanie. Na przykład, jeśli wybierzesz pole **WMSLocationId**, praca zostanie posortowana według lokalizacji.
+1. W polu **Nazwa pola**, wybierz pole, które będzie określać sortowanie. Na przykład, jeśli wybierzesz pole **WMSLocationId**, praca zostanie posortowana według lokalizacji.
 
-6.  W polu **Sortowanie** wybierz jedną z poniższych opcji.
+1. W polu **Sortowanie** wybierz jedną z poniższych opcji.
 
 | **Opcja**     | **Opis**                                                                                                                                                                                                                    |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,6 +77,6 @@ W przypadku stosowania pobierania dla grupy bardzo ważne jest potwierdzanie tow
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Konfigurowanie weryfikowania towarów w trakcie pobierania dla grupy
 
-1.  Na urządzeniu przenośnym w menu otwórz formularz ustawień potwierdzenia pracy: **Zarządzanie magazynem** \> **Zarządzanie magazynem** \> **Ustawienia** \> **Urządzenie przenośne** \> **Elementy menu urządzenia przenośnego**.
+1. Na urządzeniu przenośnym w menu otwórz formularz ustawień potwierdzenia pracy: **Zarządzanie magazynem** \> **Zarządzanie magazynem** \> **Ustawienia** \> **Urządzenie przenośne** \> **Elementy menu urządzenia przenośnego**.
 
-2.  Na urządzeniu przenośnym w menu otwórz pozycję **Konfiguracja potwierdzenia pracy**. Opcja **Potwierdzenie produktu** umożliwia weryfikowanie każdego artykułu w zapasach z urządzenia przenośnego podczas skanowania.
+1. Na urządzeniu przenośnym w menu otwórz pozycję **Konfiguracja potwierdzenia pracy**. Opcja **Potwierdzenie produktu** umożliwia weryfikowanie każdego artykułu w zapasach z urządzenia przenośnego podczas skanowania.

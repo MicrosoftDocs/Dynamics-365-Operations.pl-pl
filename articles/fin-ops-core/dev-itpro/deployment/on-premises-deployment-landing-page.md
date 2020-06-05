@@ -3,7 +3,7 @@ title: Wdrożenie lokalne — strona główna
 description: Ten temat zawiera informacje i łącza do zasobów o wdrożeniach lokalnych.
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b251125323bb74eb8be4172cb1b143c4866a8eac
-ms.sourcegitcommit: ec4df51e17be0b2df393635605ea17250c991ee9
+ms.openlocfilehash: 90285c8f2e0e86e04c8f2ac401c324c888740e99
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3099737"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367065"
 ---
 # <a name="on-premises-deployment-home-page"></a>Wdrożenie lokalne — strona główna
 
@@ -41,7 +41,6 @@ Można wdrożyć Dynamics 365 Finance + Operations (lokalnie). Po wybraniu typu 
 ## <a name="onboard"></a>Rekrutuj
 - [Konfigurowanie projektów lokalnych w usłudze Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
 - [Konfigurowanie i wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 12 i nowszych](setup-deploy-on-premises-pu12.md)
-- [Konfigurowanie i wdrażanie środowisk lokalnych (aktualizacje Platform update 8 i 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [Instalowanie urządzeń drukarek sieciowych w środowiskach lokalnych](../analytics/install-network-printer-onprem.md)
 - [Konfigurowanie usługi SQL Server Reporting Services dla wdrożeń lokalnych](../analytics/configure-ssrs-on-premises.md)
 - [Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych](develop-deploy-custom-models-on-premises.md)

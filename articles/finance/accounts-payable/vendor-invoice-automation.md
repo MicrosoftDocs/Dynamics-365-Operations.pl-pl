@@ -3,7 +3,7 @@ title: Automatyzacja obsługi faktur od dostawców
 description: W tym temacie opisano dostępne funkcje kompleksowej automatyzacji obsługi faktur od dostawców, w tym nawet faktur zawierających załączniki.
 author: abruer
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba986afb5c17c7a317b47d1e9cf4ae57ac29da97
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4560d7b61fa8f014f9a1185da087df8b1c8e61ba
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179465"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396016"
 ---
 # <a name="vendor-invoice-automation"></a>Automatyzacja obsługi faktur od dostawców
 
@@ -61,7 +61,7 @@ Pakiet danych jest jednostką pracy, która musi zostać wysłana, aby można by
 
 Załącznik dokumentu faktury od dostawcy jest nową jednostką danych wprowadzoną w ramach tej funkcji. Jednostka Nagłówek faktury od dostawcy została zmodyfikowana, tak aby obsługiwała załączniki. Jednostka Wiersz faktury od dostawcy nie zmodyfikowana dla tej funkcji.
 
-W tym temacie nie ma szczegółowej definicji pakietu danych. Nie wyjaśniono również, jak tworzyć pakiety danych. Aby uzyskać te informacje, zobacz [Jednostki danych i struktura pakietów](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Aby uzyskać szczegółowe informacje o pakietach danych, zapoznaj się z [omówieniem zarządzania danymi](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Aby uzyskać informacje dotyczące sposobu tworzenia pakietów danych za pomocą obszaru roboczego zarządzania danymi, zobacz temat [Przetwarzanie i zużywanie pakietów danych w rozwiązaniu aplikacji Dynamics 365 Finance and Operations](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Aby szybko wygenerować dane testowe zawierające faktury i załączniki, wykonaj następujące czynności.
 

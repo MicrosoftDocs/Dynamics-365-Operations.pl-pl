@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c2e994d11bbd45907a48c1f3955fa751a676a327
-ms.sourcegitcommit: e69cfc74e9dbce64ae0e1ab7cd441e5ae6efd4c9
+ms.openlocfilehash: c985a0cb242fb6696b55a2514bd788ff4269f8ca
+ms.sourcegitcommit: def66a9dc7feadd33411248af2545ee4a9e27c4f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "3353695"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3385555"
 ---
 # <a name="create-a-leave-request-workflow"></a>Tworzenie przepływu pracy wniosku urlopowego
 
@@ -49,6 +49,7 @@ W programie Dynamics 365 Human Resources można utworzyć przepływ pracy, aby s
 
 Poniższe elementy danych mogą służyć do tworzenia warunkowych lub automatycznych zatwierdzeń w przepływach pracy dotyczących wniosków o urlopy i nieobecności:
 
+- **Ilość**
 - **Komentarz**
 - **Firma**
 - **Utworzony przez**

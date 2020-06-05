@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8feea75bb223bdbd013b11cdf3a63d504afb04f5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 91c5b2e70ee083bf2741e245f1ca840ab939ad3f
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208209"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382982"
 ---
 # <a name="maintenance-schedule-cost"></a>Koszt harmonogramu konserwacji
 
@@ -46,7 +46,7 @@ W module Zarządzanie składnikami majątku można obliczać koszty budżetowe w
 
 5. Kliknij przycisk **OK**, aby rozpocząć obliczanie kosztu.
 
-6. Na karcie **Koszt harmonogramu konserwacji** w grupach okienka akcji **Grupuj wg...** kliknij odpowiednie przyciski, aby wyświetlić wymagany poziom szczegółowości obliczania kosztu. Wybrane przyciski grupy okienek akcji są wyróżnione. Aby uaktywnić lub dezaktywować przycisk, należy go kliknąć.
+6. Na karcie **Koszt harmonogramu konserwacji** w grupach okienka akcji **Grupuj wg...** kliknij odpowiednie przyciski, aby wyświetlić wymagany poziom szczegółowości obliczania kosztu. Wybrane przyciski grupy okienka akcji są wyróżnione. Aby uaktywnić lub dezaktywować przycisk, należy go kliknąć.
 
 7. Kliknij przycisk **Oblicz koszt**, jeśli chcesz dokonać nowego obliczenia kosztu.
 

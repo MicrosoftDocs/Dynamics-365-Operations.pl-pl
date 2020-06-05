@@ -17,26 +17,28 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e6493afb64acb4d7644aac8dad71a0917c76549
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 272c3a13b68e2b862faf20cc269ca790322b61de
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205789"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367299"
 ---
+# <a name="product-confirmation-for-cluster-picking"></a>Potwierdzenie produktu na potrzeby pobierania dla grupy
+
 [!include [banner](../includes/banner.md)]
 
-# <a name="product-confirmation-for-cluster-picking"></a>Potwierdzenie produktu na potrzeby pobierania dla grupy
 Funkcjonalność pobierania dla grupy umożliwia pobieranie towarów równocześnie dla kilku zamówień. W przypadku stosowania pobierania dla grupy bardzo ważne jest potwierdzanie towarów dodawanych do grup. Weryfikowanie może się odbywać w trakcie procesu pobierania dla grup.
 
 ## <a name="where-it-applies"></a>Zastosowanie
+
 Weryfikacja towarów w pobieraniu dla grupy działa tak samo, jak w zwykłych procesach pobierania. Konfiguracja zależy od ustawień kodów kreskowych produktów.
 
 ## <a name="set-up-item-verification-with-cluster-picking"></a>Konfigurowanie weryfikowania towarów w trakcie pobierania dla grupy
-1.  Na urządzeniu przenośnym w menu otwórz formularz ustawień potwierdzenia pracy: **Zarządzanie magazynem** > **Zarządzanie magazynem** > **Ustawienia** > **Urządzenie przenośne** > **Elementy menu urządzenia przenośnego**.
-2.  Na urządzeniu przenośnym w menu otwórz pozycję **Konfiguracja potwierdzenia pracy**.
+
+1. Na urządzeniu przenośnym w menu otwórz formularz ustawień potwierdzenia pracy: **Zarządzanie magazynem** > **Zarządzanie magazynem** > **Ustawienia** > **Urządzenie przenośne** > **Elementy menu urządzenia przenośnego**.
+1. Na urządzeniu przenośnym w menu otwórz pozycję **Konfiguracja potwierdzenia pracy**.
 
 |        Opcja        |                                    opis                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Potwierdzenie produktu | Umożliwia weryfikowanie każdego artykułu w zapasach z urządzenia przenośnego podczas skanowania. |
-
