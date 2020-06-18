@@ -86,8 +86,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Nowości i zmiany w rozwiązaniu Commerce
                   items:
-                    - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
+                    - name: Nowości i zmiany w rozwiązaniu Commerce – strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.12 (sierpień 2020)
+                      href: get-started/whats-new-commerce-10-0-12.md
                     - name: Rozwiązanie Commerce w wersji 10.0.11 (lipiec 2020)
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Rozwiązanie Commerce w wersji 10.0.10 (maj 2020)
@@ -212,9 +214,9 @@
               items:
                 - name: Synchronizowanie samoobsługowych instalatorów w rozwiązaniu Dynamics 365 Commerce
                   href: dev-itpro/Synchronize-installers.md
-                - name: Commerce Scale Unit
+                - name: Architektura Commerce Scale Unit (własny serwer)
                   href: dev-itpro/retail-store-system-begin.md
-                - name: Konfigurowanie i instalowanie aplikacji Commerce Scale Unit
+                - name: Konfigurowanie i instalowanie aplikacji Commerce Scale Unit (własny serwer)
                   href: dev-itpro/retail-store-scale-unit-configuration-installation.md
                 - name: Konfigurowanie i instalowanie aplikacji Modern POS
                   href: retail-modern-pos-device-activation.md
@@ -604,9 +606,9 @@
               items:
                 - name: Omówienie rekomendacji produktów
                   href: product-recommendations.md
-                - name: Włączanie repozytorium ADLS w środowisku usługi Dynamics 365 Commerce
+                - name: Włączanie repozytorium Azure Data Lake Storage w środowisku usługi Dynamics 365 Commerce
                   href: enable-ADLS-environment.md
-                - name: Włączanie rekomendacji produktów
+                - name: Włącz rekomendacje produktów
                   href: enable-product-recommendations.md
                 - name: Rekomendacje spersonalizowane
                   items:
@@ -646,8 +648,8 @@
                   items:
                     - name: Zarządzanie zapasami w sklepie
                       href: work-with-store-inventory.md
-                    - name: Korzystanie z pozycji serializowanych
-                      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurowanie buforów zapasów i poziomów zapasów
+                      href: inventory-buffers-levels.md
                     - name: Praca z pozycjami serializowanymi w punkcie sprzedaży
                       href: pos-serialized-items.md
                     - name: Dystrybucja produktów z centrum dystrybucji do sklepu za pomocą dystrybucji od kupującego
@@ -824,7 +826,9 @@
                   href: authoring-home-overview.md
                 - name: Zarządzanie użytkownikami i rolami
                   href: manage-ecommerce-users-roles.md
-                - name: Zagadnienia optymalizacji wyszukiwarki (SEO) dla witryny
+                - name: Zastosuj ustawienia zapasów
+                  href: inventory-settings.md
+                - name: Zagadnienia optymalizacji aparatu wyszukiwania (SEO) dla witryny
                   href: search-engine-optimization-considerations.md
                 - name: Zarządzanie zasadami zabezpieczeń zawartości (CSP)
                   href: manage-csp.md
@@ -840,7 +844,7 @@
                   href: document-states-overview.md
                 - name: Praca z grupami publikowania
                   href: publish-groups.md
-                - name: Wymarkowanie witryny i dodawanie szczegółów sklepu
+                - name: Oznakowanie witryny logiem marki i dodawanie szczegółów sklepu
                   items:
                     - name: Dodawanie logo
                       href: add-logo.md
@@ -848,6 +852,8 @@
                       href: select-site-theme.md
                     - name: Praca z plikami zastępowania CSS
                       href: css-override-files.md
+                    - name: Praca z predefiniowanymi ustawieniami stylów
+                      href: style-presets.md
                     - name: Dodawanie ikony favicon
                       href: add-favicon.md
                     - name: Dodawanie wiadomości powitalnej
@@ -882,7 +888,7 @@
                       href: add-new-page.md
                     - name: Wybieranie układów stron
                       href: select-page-layouts.md
-                    - name: Zarządzanie metadanymi funkcji optymalizacji aparatu wyszukiwania
+                    - name: Zarządzanie metadanymi SEO
                       href: manage-seo-metadata.md
                     - name: 'Zapisywanie, pogląd i publikowanie strony'
                       href: save-preview-publish-page.md
@@ -932,6 +938,10 @@
                   items:
                     - name: Moduł kontenera
                       href: add-container-module.md
+                    - name: Moduł typu accordion
+                      href: add-accordion.md
+                    - name: Moduł tabularny
+                      href: add-tab.md
                 - name: Moduły marketingu
                   items:
                     - name: Moduł transparentu promocyjnego
@@ -978,6 +988,10 @@
                   items:
                     - name: Moduły kolekcji produktów
                       href: product-collection-module-overview.md
+                - name: Moduły nawigacji
+                  items:
+                    - name: Moduł szlaków nawigacyjnych
+                      href: add-breadcrumb.md
             - name: Wyszukiwanie
               items:
                 - name: Domyślna strona docelowa kategorii i strona wyników wyszukiwania
@@ -1048,6 +1062,10 @@
                   href: localizations/emea-fra-cash-registers.md
                 - name: Wytyczne dotyczące wdrażania kas
                   href: localizations/emea-fra-deployment.md
+            - name: Niemcy
+              items:
+                - name: Przykład integracji usługi rejestracji fiskalnej (Niemcy)
+                  href: localizations/emea-deu-fi-sample.md
             - name: Indie
               items:
                 - name: Integracja podatku od towarów i usług (GST) w kasach
@@ -1590,7 +1608,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
             - name: Samouczki
               items:
-                - name: Używanie źródeł danych JOIN do pobierania danych z wielu tabel aplikacji
+                - name: Używanie źródeł danych SPRZĘŻENIE do pobierania danych z wielu tabel aplikacji
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurowanie mapowań modelu ER w zależności od kraju
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
@@ -1976,7 +1994,9 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurowanie ustawień motywów
                       href: e-commerce-extensibility/configure-theme-settings.md
-                    - name: Rozszerzanie motywu
+                    - name: Rozszerzanie motywu w celu dodania rozszerzeń modułu
+                      href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Rozszerzanie motywu z motywu podstawowego
                       href: e-commerce-extensibility/extend-theme.md
                 - name: Wprowadzanie skryptu
                   items:
@@ -2072,17 +2092,17 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Możliwości rozszerzania usługi Retail Server
               items:
-                - name: Rozszerzanie kontrolera Retail Server OData
+                - name: Rozszerzanie kontrolera OData dla Commerce Scale Unit
                   href: dev-itpro/extend-retail-server-odata-controller.md
-                - name: Interfejsy API odbiorcy i konsumenta w usłudze Retail Server
+                - name: Interfejsy API klienta i odbiorcy Commerce Scale Unit
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Rozszerzanie domyślnego kontrolera metadanych usługi Retail Server
+                - name: Rozszerzenie domyślnego kontrolera metadanych Commerce Scale Unit
                   href: dev-itpro/extend-metadata.md
                 - name: Wywoływanie usługi środowiska CRT w trybie offline
                   href: dev-itpro/call-crt-service-offline.md
                 - name: Tworzenie nowego rozszerzenia usługi Retail Server
                   href: dev-itpro/retail-server-extension.md
-                - name: 'Serwery proxy Typescript i C# aplikacji Retail'
+                - name: Serwery proxy Typescript i C# aplikacji Retail
                   href: dev-itpro/typescript-proxy-retail-pos.md
             - name: Możliwości rozszerzania środowiska Commerce Runtime (CRT)
               items:
@@ -2096,8 +2116,6 @@
                   href: dev-itpro/add-customer-preference-channel.md
                 - name: Zarządzanie kluczami tajnymi dla kanałów usługi Retail
                   href: dev-itpro/manage-secrets.md
-                - name: Dodawanie właściwości do zamówień sprzedaży
-                  href: dev-itpro/add-properties-sales-order.md
                 - name: Możliwości rozszerzania i wyzwalacze środowiska CRT
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Blokowanie transakcji za pomocą wyzwalaczy

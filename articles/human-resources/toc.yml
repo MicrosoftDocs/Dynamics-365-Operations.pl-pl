@@ -5,6 +5,8 @@
       items:
         - name: Nowości i zmiany w rozwiązaniu Human Resources
           href: hr-admin-whats-new.md
+        - name: 28 maja 2020 r.
+          href: hr-whats-new-2020-05-28.md
         - name: 14 maja 2020 r.
           href: hr-whats-new-2020-05-14.md
         - name: 1 maja 2020 r.
@@ -509,16 +511,22 @@
               href: hr-leave-and-absence-accrue.md
             - name: Wstrzymywanie urlopu
               href: hr-leave-and-absence-suspend-leave.md
+            - name: Wniosek o nieobecność
+              href: hr-employee-self-service-request-leave-of-absence.md
             - name: Zarządzanie urlopem pracownika etatowego
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Wyświetlanie analizy urlopu i nieobecności
               href: hr-leave-and-absence-analytics.md
             - name: Zarządzanie wnioskami o urlop i nieobecność
               href: hr-employee-self-service-manage-requests.md
-            - name: Składanie wniosku o czas wolny
+            - name: Złóż wniosek o czas wolny
               href: hr-employee-self-service-request-time-off.md
             - name: Wyświetlanie kalendarzy zespołów i firm
               href: hr-employee-self-service-calendar.md
+            - name: Zarządzaj zasadami Kupowania i Sprzedawania urlopu
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Kupuj i sprzedawaj urlop
+              href: hr-employee-self-service-buy-sell-leave.md
         - name: Zarządzanie wnioskami o urlop w Teams
           href: hr-teams-leave-app.md
         - name: Wspomaganie rozwoju pracowników etatowych
