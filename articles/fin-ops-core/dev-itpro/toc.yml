@@ -12,8 +12,10 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nowości i zmiany w aktualizacjach Platform update
               items:
-                - name: Nowości i zmiany w aktualizacjach Platform update — strona główna
+                - name: Nowości i zmiany w aktualizacjach Platform update – strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Aktualizacja Platform update dla wersji 10.0.12 (sierpień 2020)
+                  href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Aktualizacja Platform update dla wersji 10.0.11 (lipiec 2020)
                   href: get-started/whats-new-platform-update-35.md
                 - name: Aktualizacja Platform update dla wersji 10.0.10 (maj 2020)
@@ -198,6 +200,8 @@
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Zintegrowany pracownik, praca i stanowisko'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Dostępność zapasów
+                              href: data-entities/dual-write/inventory-availability.md
                         - name: Obsługa podwójnego zapisu
                           items:
                             - name: Obsługa rozwiązań Field Service i rozwiązań Project Service Automation
@@ -452,15 +456,15 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Stosowanie aktualizacji do środowisk w chmurze
                   href: deployment/apply-deployable-package-system.md
-                - name: Stosowanie aktualizacji i rozszerzeń do hostowanych w chmurze składników kanału rozwiązania Retail
+                - name: Zastosuj aktualizacje i rozszerzenia do Commerce Scale Unit (chmura)
                   href: deployment/Update-retail-channel.md
-                - name: Inicjowanie rozwiązania Retail Cloud Scale Unit
+                - name: Zainicjuj Commerce Scale Unit (chmura)
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Miejsce przechowywania danych rozwiązania Retail
                   href: deployment/retail-data-residency.md
             - name: Wdrożenie lokalne
               items:
-                - name: Wdrożenie lokalne — strona główna
+                - name: Wdrożenie lokalne – strona główna
                   href: deployment/on-premises-deployment-landing-page.md
                 - name: Przygotowywanie do wdrożeń lokalnych
                   items:
@@ -488,9 +492,11 @@
                       href: deployment/certificate-rotation-on-prem.md
                     - name: Łączność internetowa klienta
                       href: user-interface/client-disconnected.md
+                    - name: 'Skonfiguruj węzły serwera AOS, przeznaczone tylko do przetwarzania wsadowego i tylko interakcyjne, we wdrożeniach lokalnych'
+                      href: deployment/onprem-batchonly.md
                     - name: Konfigurowanie serwerów proxy dla środowisk lokalnych
                       href: deployment/onprem-reverseproxy.md
-                    - name: Diagnostyka wdrożenia lokalnego
+                    - name: Diagnostyka we wdrożeniach lokalnych
                       href: deployment/on-premises-diagnostics.md
                     - name: Integracja PowerBI.com z lokalnymi środowiskami
                       href: analytics/entity-store-on-prem.md
@@ -646,11 +652,11 @@
                   href: dev-tools/debug-xpp.md
                 - name: Klasy EventHandlerResult w scenariuszach dotyczących żądań lub odpowiedzi
                   href: dev-tools/event-handler-result-class.md
-                - name: 'Pisanie logiki biznesowej przy użyciu kodu źródłowego w językach C# i X++'
+                - name: Pisanie logiki biznesowej przy użyciu kodu źródłowego w językach C# i X++
                   href: dev-tools/write-business-logic.md
                 - name: Zmiany w języku X++ i kompilatorze języka X++
                   href: dev-tools/programming-language-support.md
-                - name: 'Dostawca LINQ dla języka C#'
+                - name: Dostawca LINQ dla języka C#
                   href: dev-tools/linq-provider-c.md
                 - name: Zapisywanie zasad najlepszych rozwiązań
                   href: dev-tools/author-best-practice-rules.md
@@ -710,7 +716,7 @@
                       href: dev-ref/xpp-macros.md
                     - name: Klasy atrybutów w języku X++
                       href: dev-ref/xpp-attribute-classes.md
-                    - name: 'Porównanie języków X++ i C#'
+                    - name: Porównanie języków X++ i C#
                       href: dev-ref/xpp-cs-comparison.md
                     - name: Składnia języka X++
                       href: dev-ref/xpp-syntax.md
@@ -1048,6 +1054,8 @@
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Przewodnik użytkownika usługi Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
+            - name: Przygotowywanie projektu
+              href: lifecycle-services/project-onboarding.md
             - name: Narzędzie do szacowania zapotrzebowania na subskrypcje
               href: lifecycle-services/subscription-estimator.md
             - name: Konfigurowanie zabezpieczeń
@@ -1118,6 +1126,20 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Pliki pamięci tłumaczeniowych
                   href: lifecycle-services/use-translation-service-tm.md
+        - name: Integracja z usługą Microsoft Power Platform
+          items:
+            - name: Integracja aplikacji Microsoft Power Platform z aplikacją Finance and Operations
+              href: power-platform/overview.md
+            - name: Modelowanie jednostek
+              href: power-platform/entity-modeling.md
+            - name: Zarządzanie cyklem życia aplikacji
+              href: power-platform/application-lifecycle-management.md
+            - name: Finance and Operations oraz odwołanie administracyjne Common Data Service
+              href: power-platform/admin-reference.md
+            - name: Portale Power Apps z Finance and Operations
+              href: power-platform/power-portal-reference.md
+            - name: Często zadawane pytania Finance and Operations dot. jednostek wirtualnych
+              href: power-platform/faq.md
         - name: Platforma mobilna
           items:
             - name: Zasoby platformy mobilnej
@@ -1330,9 +1352,7 @@
               href: perf-test/rsat/rsat-overview.md
             - name: Konfigurowanie i instalowanie
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Testowanie diagnostyczne danych przy użyciu narzędzia Regression Suite Automation Tool
-              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-            - name: Uruchamianie przypadków testowych
+            - name: Korzystanie z narzędzia Regression Suite Automation Tool
               href: perf-test/rsat/rsat-run.md
             - name: Sprawdzanie poprawności oczekiwanych wartości
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1340,10 +1360,12 @@
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Przypadki testu pochodnego
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: Korzystanie z samouczka narzędzia Regression Suite Automation Tool
+            - name: Korzystanie z samouczka narzędzia Regression Suite Automation Tool i innych funkcji
               href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
             - name: Najlepsze praktyki
               href: perf-test/rsat/rsat-best-practices.md
+            - name: Testowanie diagnostyczne danych przy użyciu narzędzia Regression Suite Automation Tool
+              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Rozwiązywanie problemów
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Wydawanie rozwiązań przy użyciu usługi Lifecycle Services
@@ -1442,6 +1464,8 @@
                   href: sysadmin/copy-batch-job.md
                 - name: Aktywne okresy partii
                   href: sysadmin/activeperiod.md
+                - name: Obsługa czasu letniego dla aktywnych okresów partii
+                  href: sysadmin/batch-active-period-dst.md
                 - name: Rola zabezpieczeń Menedżer partii
                   href: sysadmin/runby.md
                 - name: Zadanie wsadowe do obsługi defragmentacji indeksu SQL
