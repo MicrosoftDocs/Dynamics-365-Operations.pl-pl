@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: BenefitWorkspace
+ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,33 +18,33 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 850709480326f6a0871f19ea1bb287631cd58b42
-ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
+ms.openlocfilehash: b12c845b92b29063f3b0b2f6a9d98143b7f10eff
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "3229953"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3429204"
 ---
-# <a name="process-rate-changes"></a><span data-ttu-id="6077c-103">Przetwórz zmiany stawki</span><span class="sxs-lookup"><span data-stu-id="6077c-103">Process rate changes</span></span>
+# <a name="process-rate-changes"></a><span data-ttu-id="a7839-103">Przetwórz zmiany stawki</span><span class="sxs-lookup"><span data-stu-id="a7839-103">Process rate changes</span></span>
 
-<span data-ttu-id="6077c-104">Przetwórz zmiany stawki świadczenia w Microsoft Dynamics 365 Human Resources, gdy nowy lub istniejący plan świadczeń ma zmianę w ustawieniach reguły uprawnienia.</span><span class="sxs-lookup"><span data-stu-id="6077c-104">Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a new or existing benefit plan has a change in eligibility rule settings.</span></span> <span data-ttu-id="6077c-105">Jeśli Nowa reguła uprawnienia zostanie utworzona i przypisana do planu, system wyświetli monit o ponowne przetworzenie pracownika, aby sprawdzić, czy pracownicy mogą obecnie kwalifikować się do planu na podstawie nowych opcji dotyczących uprawnień.</span><span class="sxs-lookup"><span data-stu-id="6077c-105">If a new eligibility rule is created and assigned to the plan, this prompts the system to rerun worker eligibility to check if workers may now be eligible for the plan based on new eligibility options.</span></span> 
+<span data-ttu-id="a7839-104">Przetwórz zmiany stawki świadczenia w Microsoft Dynamics 365 Human Resources, gdy nowy lub istniejący plan świadczeń ma zmianę w ustawieniach reguły uprawnienia.</span><span class="sxs-lookup"><span data-stu-id="a7839-104">Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a new or existing benefit plan has a change in eligibility rule settings.</span></span> <span data-ttu-id="a7839-105">Jeśli Nowa reguła uprawnienia zostanie utworzona i przypisana do planu, system wyświetli monit o ponowne przetworzenie pracownika, aby sprawdzić, czy pracownicy mogą obecnie kwalifikować się do planu na podstawie nowych opcji dotyczących uprawnień.</span><span class="sxs-lookup"><span data-stu-id="a7839-105">If a new eligibility rule is created and assigned to the plan, this prompts the system to rerun worker eligibility to check if workers may now be eligible for the plan based on new eligibility options.</span></span> 
 
-1. <span data-ttu-id="6077c-106">W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Przetwarzanie** wybierz opcję **Przetwarzanie aktualizacji zmiany stawki**.</span><span class="sxs-lookup"><span data-stu-id="6077c-106">In the **Benefits management** workspace, under **Processing**, select **Rate change update processing**.</span></span>
+1. <span data-ttu-id="a7839-106">W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Przetwarzanie** wybierz opcję **Przetwarzanie aktualizacji zmiany stawki**.</span><span class="sxs-lookup"><span data-stu-id="a7839-106">In the **Benefits management** workspace, under **Processing**, select **Rate change update processing**.</span></span>
 
-2. <span data-ttu-id="6077c-107">W oknie dialogowym **Uruchamianie procesu aktualizacji stawki świadczenia** określ wartości następujących pól:</span><span class="sxs-lookup"><span data-stu-id="6077c-107">In the **Run benefit rate update process** dialog box, specify values for the following fields:</span></span>
+2. <span data-ttu-id="a7839-107">W oknie dialogowym **Uruchamianie procesu aktualizacji stawki świadczenia** określ wartości następujących pól:</span><span class="sxs-lookup"><span data-stu-id="a7839-107">In the **Run benefit rate update process** dialog box, specify values for the following fields:</span></span>
 
-   | <span data-ttu-id="6077c-108">Pole</span><span class="sxs-lookup"><span data-stu-id="6077c-108">Field</span></span> | <span data-ttu-id="6077c-109">Opis</span><span class="sxs-lookup"><span data-stu-id="6077c-109">Description</span></span> |
+   | <span data-ttu-id="a7839-108">Pole</span><span class="sxs-lookup"><span data-stu-id="a7839-108">Field</span></span> | <span data-ttu-id="a7839-109">Opis</span><span class="sxs-lookup"><span data-stu-id="a7839-109">Description</span></span> |
    | --- | --- |
-   | <span data-ttu-id="6077c-110">**Okres rejestracji**</span><span class="sxs-lookup"><span data-stu-id="6077c-110">**Enrollment period**</span></span> | <span data-ttu-id="6077c-111">Okres rejestracji służący do przetworzenia zmian stawki.</span><span class="sxs-lookup"><span data-stu-id="6077c-111">The enrollment period to process rate changes for.</span></span> |
+   | <span data-ttu-id="a7839-110">**Okres rejestracji**</span><span class="sxs-lookup"><span data-stu-id="a7839-110">**Enrollment period**</span></span> | <span data-ttu-id="a7839-111">Okres rejestracji służący do przetworzenia zmian stawki.</span><span class="sxs-lookup"><span data-stu-id="a7839-111">The enrollment period to process rate changes for.</span></span> |
 
-3. <span data-ttu-id="6077c-112">Jeśli chcesz uruchomić ten proces w tle, wybierz opcję **Uruchom w tle** i wykonaj następujące czynności:</span><span class="sxs-lookup"><span data-stu-id="6077c-112">If you want to run the process in the background, select **Run in the background** and do the following tasks:</span></span>
+3. <span data-ttu-id="a7839-112">Jeśli chcesz uruchomić ten proces w tle, wybierz opcję **Uruchom w tle** i wykonaj następujące czynności:</span><span class="sxs-lookup"><span data-stu-id="a7839-112">If you want to run the process in the background, select **Run in the background** and do the following tasks:</span></span>
 
-   1. <span data-ttu-id="6077c-113">Umożliwia wprowadzanie informacji o przetwarzaniu.</span><span class="sxs-lookup"><span data-stu-id="6077c-113">Enter information for the process.</span></span>
+   1. <span data-ttu-id="a7839-113">Umożliwia wprowadzanie informacji o przetwarzaniu.</span><span class="sxs-lookup"><span data-stu-id="a7839-113">Enter information for the process.</span></span>
 
-   2. <span data-ttu-id="6077c-114">Aby skonfigurować zadanie cykliczne, wybierz opcję **cykl**, wprowadź informacje o cyklu i wybierz **OK**.</span><span class="sxs-lookup"><span data-stu-id="6077c-114">To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.</span></span>
+   2. <span data-ttu-id="a7839-114">Aby skonfigurować zadanie cykliczne, wybierz opcję **cykl**, wprowadź informacje o cyklu i wybierz **OK**.</span><span class="sxs-lookup"><span data-stu-id="a7839-114">To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.</span></span>
 
-   3. <span data-ttu-id="6077c-115">Aby skonfigurować alert zadania, wybierz **alerty**, wybierz alerty do odebrania, a następnie kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="6077c-115">To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.</span></span>
+   3. <span data-ttu-id="a7839-115">Aby skonfigurować alert zadania, wybierz **alerty**, wybierz alerty do odebrania, a następnie kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="a7839-115">To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.</span></span>
 
-   4. <span data-ttu-id="6077c-116">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="6077c-116">Select **OK**.</span></span> <span data-ttu-id="6077c-117">Proces będzie uruchamiany z parametrami określonymi przez użytkownika.</span><span class="sxs-lookup"><span data-stu-id="6077c-117">The process will run with the parameters you set.</span></span>
+   4. <span data-ttu-id="a7839-116">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="a7839-116">Select **OK**.</span></span> <span data-ttu-id="a7839-117">Proces będzie uruchamiany z parametrami określonymi przez użytkownika.</span><span class="sxs-lookup"><span data-stu-id="a7839-117">The process will run with the parameters you set.</span></span>
 
-4. <span data-ttu-id="6077c-118">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="6077c-118">Select **OK**.</span></span>
+4. <span data-ttu-id="a7839-118">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="a7839-118">Select **OK**.</span></span>

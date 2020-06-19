@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: HcmJob
+ms.search.form: HcmJob, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Core, Operations
@@ -16,58 +16,58 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dea51acd6a1f6ca887f76c61d8666e542620831a
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010179"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428669"
 ---
-# <a name="define-new-jobs"></a><span data-ttu-id="18772-103">Definiowanie nowych zadań</span><span class="sxs-lookup"><span data-stu-id="18772-103">Define new jobs</span></span>
+# <a name="define-new-jobs"></a><span data-ttu-id="01fb6-103">Definiowanie nowych zadań</span><span class="sxs-lookup"><span data-stu-id="01fb6-103">Define new jobs</span></span>
 
 
 
-<span data-ttu-id="18772-104">To zadanie jest zorientowane na utworzenie nowego zadania (pracy).</span><span class="sxs-lookup"><span data-stu-id="18772-104">This task focuses on the creation of a new job.</span></span> <span data-ttu-id="18772-105">Jest ona wykonywana ręcznie przez wprowadzanie i kopiowanie danych z szablonu.</span><span class="sxs-lookup"><span data-stu-id="18772-105">It will be completed using manual entry and copy from template functionality.</span></span> <span data-ttu-id="18772-106">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="18772-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="18772-107">Zadanie jest przeznaczone dla specjalisty ds. zasobów ludzkich.</span><span class="sxs-lookup"><span data-stu-id="18772-107">This task is intended for the human resources specialist.</span></span>
+<span data-ttu-id="01fb6-104">To zadanie jest zorientowane na utworzenie nowego zadania (pracy).</span><span class="sxs-lookup"><span data-stu-id="01fb6-104">This task focuses on the creation of a new job.</span></span> <span data-ttu-id="01fb6-105">Jest ona wykonywana ręcznie przez wprowadzanie i kopiowanie danych z szablonu.</span><span class="sxs-lookup"><span data-stu-id="01fb6-105">It will be completed using manual entry and copy from template functionality.</span></span> <span data-ttu-id="01fb6-106">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="01fb6-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="01fb6-107">Zadanie jest przeznaczone dla specjalisty ds. zasobów ludzkich.</span><span class="sxs-lookup"><span data-stu-id="01fb6-107">This task is intended for the human resources specialist.</span></span>
 
-1. <span data-ttu-id="18772-108">Wybierz kolejno opcje Zasoby ludzkie > Zadania > Zadania.</span><span class="sxs-lookup"><span data-stu-id="18772-108">Go to Human resources > Jobs > Jobs.</span></span>
-2. <span data-ttu-id="18772-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="18772-109">Click New.</span></span>
-3. <span data-ttu-id="18772-110">W polu Zadanie wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="18772-110">In the Job field, type a value.</span></span>
-4. <span data-ttu-id="18772-111">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="18772-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="18772-112">Wybierz standardowy tytuł, który będzie używany dla zadania.</span><span class="sxs-lookup"><span data-stu-id="18772-112">Select a standard title that will be used for the job.</span></span> 
-    * <span data-ttu-id="18772-113">Wprowadzony tytuł będzie używany jako domyślny dla nowych stanowisk przypisanych do zadania.</span><span class="sxs-lookup"><span data-stu-id="18772-113">The title entered will be used as a default for new positions assigned to the job.</span></span>  
-6. <span data-ttu-id="18772-114">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="18772-114">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="18772-115">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="18772-115">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="18772-116">W grupie Maksymalna liczba stanowisk zaznacz opcję „Maksymalna liczba stanowisk”.</span><span class="sxs-lookup"><span data-stu-id="18772-116">In the Maximum number of positions group, select 'Maximum positions'</span></span>
-9. <span data-ttu-id="18772-117">Wprowadź maksymalną liczbę stanowisk.</span><span class="sxs-lookup"><span data-stu-id="18772-117">Enter the maximum number of positions.</span></span> 
-    * <span data-ttu-id="18772-118">System będzie blokował przypisania stanowisk przekraczające maksymalną wartość wprowadzoną w tym polu.</span><span class="sxs-lookup"><span data-stu-id="18772-118">Position assignments will not be allowed above the maximum value entered here.</span></span>  
-10. <span data-ttu-id="18772-119">Przełącz rozwinięcie sekcji Opis.</span><span class="sxs-lookup"><span data-stu-id="18772-119">Toggle the expansion of the Description section.</span></span>
-11. <span data-ttu-id="18772-120">W polu Notatka wpisz tekst „Wprowadź standardowy opis zadania”.</span><span class="sxs-lookup"><span data-stu-id="18772-120">In the Note field, enter 'Enter a standard description for the Job.</span></span>
-    * <span data-ttu-id="18772-121">Opis dotyczy wszystkich stanowisk przypisanych do zadania zdefiniowanego w tym polu.</span><span class="sxs-lookup"><span data-stu-id="18772-121">The description applies to all positions assigned to the job defined here.</span></span>  
-12. <span data-ttu-id="18772-122">Przełącz rozwinięcie sekcji Klasyfikacja zadania.</span><span class="sxs-lookup"><span data-stu-id="18772-122">Toggle the expansion of the Job classification section.</span></span>
-13. <span data-ttu-id="18772-123">Zaznacz funkcję stanowiska, która będzie używana w standardowych raportach w module Zasoby ludzkie.</span><span class="sxs-lookup"><span data-stu-id="18772-123">Select a job function that will be used in standard reporting within Human resources.</span></span>
-14. <span data-ttu-id="18772-124">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="18772-124">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="18772-125">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="18772-125">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="18772-126">Wybierz typ zadania, aby dodatkowo sklasyfikować zadania w granicach organizacji.</span><span class="sxs-lookup"><span data-stu-id="18772-126">Select a Job type to further classify jobs within your organization.</span></span> 
-    * <span data-ttu-id="18772-127">Typy zadań mogą być wykorzystywane w raportowaniu w całym module Zasoby ludzkie.</span><span class="sxs-lookup"><span data-stu-id="18772-127">Job types can be used in reporting throughout Human resources.</span></span>  
-17. <span data-ttu-id="18772-128">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="18772-128">In the list, find and select the desired record.</span></span>
-18. <span data-ttu-id="18772-129">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="18772-129">In the list, click the link in the selected row.</span></span>
-19. <span data-ttu-id="18772-130">Przełącz rozwinięcie sekcji Wynagrodzenie.</span><span class="sxs-lookup"><span data-stu-id="18772-130">Toggle the expansion of the Compensation section.</span></span>
-20. <span data-ttu-id="18772-131">Wybierz poziom wynagrodzenia.</span><span class="sxs-lookup"><span data-stu-id="18772-131">Select a compensation level.</span></span>
-    * <span data-ttu-id="18772-132">Poziom wynagrodzenia określi minimalne i maksymalne wynagrodzenie, które pracownik może otrzymać za zadanie.</span><span class="sxs-lookup"><span data-stu-id="18772-132">The compensation level will define the Minimum and Maximum compensation an employee may have for the job.</span></span> <span data-ttu-id="18772-133">Reguły wynagrodzeń określą, czy wynagrodzenia pracowników mogą wykroczyć poza ten zakres.</span><span class="sxs-lookup"><span data-stu-id="18772-133">Compensation rules will determine if employees' compensation can be outside the range.</span></span>  
-21. <span data-ttu-id="18772-134">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="18772-134">In the list, find and select the desired record.</span></span>
-22. <span data-ttu-id="18772-135">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="18772-135">In the list, click the link in the selected row.</span></span>
-23. <span data-ttu-id="18772-136">Przełącz rozwinięcie sekcji Umiejętności.</span><span class="sxs-lookup"><span data-stu-id="18772-136">Toggle the expansion of the Skills section.</span></span>
-    * <span data-ttu-id="18772-137">Należy zwrócić uwagę, że pola na skróconych kartach Umiejętności, Wykształcenie i Certyfikaty są puste.</span><span class="sxs-lookup"><span data-stu-id="18772-137">Note that the fields in the Skills, Education and Certificates FastTabs are blank.</span></span> <span data-ttu-id="18772-138">Po skopiowaniu informacji z szablonu zadania informacje w tych polach zostaną wprowadzone w jednym kroku.</span><span class="sxs-lookup"><span data-stu-id="18772-138">After copying information from a job template, information in these fields will be entered in a single step.</span></span>   
-24. <span data-ttu-id="18772-139">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="18772-139">Click Save.</span></span>
-25. <span data-ttu-id="18772-140">Kliknij opcję Kopiuj z.</span><span class="sxs-lookup"><span data-stu-id="18772-140">Click Copy from.</span></span>
-26. <span data-ttu-id="18772-141">Kliknij opcję Kopiuj z szablonu.</span><span class="sxs-lookup"><span data-stu-id="18772-141">Click Copy from template.</span></span>
-27. <span data-ttu-id="18772-142">W polu Szablon stanowiska kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="18772-142">In the Job template field, click the drop-down button to open the lookup.</span></span>
-28. <span data-ttu-id="18772-143">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="18772-143">In the list, find and select the desired record.</span></span>
-29. <span data-ttu-id="18772-144">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="18772-144">In the list, click the link in the selected row.</span></span>
-30. <span data-ttu-id="18772-145">Kliknij opcję Notatka.</span><span class="sxs-lookup"><span data-stu-id="18772-145">Click the Note option.</span></span>
-    * <span data-ttu-id="18772-146">Tylko wybrane pozycje zostaną skopiowane do wybranego zadania.</span><span class="sxs-lookup"><span data-stu-id="18772-146">Only those items you select will be copied to the selected job.</span></span>    
-31. <span data-ttu-id="18772-147">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="18772-147">Click OK.</span></span>
-32. <span data-ttu-id="18772-148">Przełącz rozwinięcie sekcji Certyfikaty.</span><span class="sxs-lookup"><span data-stu-id="18772-148">Toggle the expansion of the Certificates section.</span></span>
-33. <span data-ttu-id="18772-149">Przełącz rozwinięcie sekcji Wykształcenie.</span><span class="sxs-lookup"><span data-stu-id="18772-149">Toggle the expansion of the Education section.</span></span>
-34. <span data-ttu-id="18772-150">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="18772-150">Click Save.</span></span>
+1. <span data-ttu-id="01fb6-108">Wybierz kolejno opcje Zasoby ludzkie > Zadania > Zadania.</span><span class="sxs-lookup"><span data-stu-id="01fb6-108">Go to Human resources > Jobs > Jobs.</span></span>
+2. <span data-ttu-id="01fb6-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="01fb6-109">Click New.</span></span>
+3. <span data-ttu-id="01fb6-110">W polu Zadanie wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="01fb6-110">In the Job field, type a value.</span></span>
+4. <span data-ttu-id="01fb6-111">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="01fb6-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="01fb6-112">Wybierz standardowy tytuł, który będzie używany dla zadania.</span><span class="sxs-lookup"><span data-stu-id="01fb6-112">Select a standard title that will be used for the job.</span></span> 
+    * <span data-ttu-id="01fb6-113">Wprowadzony tytuł będzie używany jako domyślny dla nowych stanowisk przypisanych do zadania.</span><span class="sxs-lookup"><span data-stu-id="01fb6-113">The title entered will be used as a default for new positions assigned to the job.</span></span>  
+6. <span data-ttu-id="01fb6-114">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="01fb6-114">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="01fb6-115">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="01fb6-115">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="01fb6-116">W grupie Maksymalna liczba stanowisk zaznacz opcję „Maksymalna liczba stanowisk”.</span><span class="sxs-lookup"><span data-stu-id="01fb6-116">In the Maximum number of positions group, select 'Maximum positions'</span></span>
+9. <span data-ttu-id="01fb6-117">Wprowadź maksymalną liczbę stanowisk.</span><span class="sxs-lookup"><span data-stu-id="01fb6-117">Enter the maximum number of positions.</span></span> 
+    * <span data-ttu-id="01fb6-118">System będzie blokował przypisania stanowisk przekraczające maksymalną wartość wprowadzoną w tym polu.</span><span class="sxs-lookup"><span data-stu-id="01fb6-118">Position assignments will not be allowed above the maximum value entered here.</span></span>  
+10. <span data-ttu-id="01fb6-119">Przełącz rozwinięcie sekcji Opis.</span><span class="sxs-lookup"><span data-stu-id="01fb6-119">Toggle the expansion of the Description section.</span></span>
+11. <span data-ttu-id="01fb6-120">W polu Notatka wpisz tekst „Wprowadź standardowy opis zadania”.</span><span class="sxs-lookup"><span data-stu-id="01fb6-120">In the Note field, enter 'Enter a standard description for the Job.</span></span>
+    * <span data-ttu-id="01fb6-121">Opis dotyczy wszystkich stanowisk przypisanych do zadania zdefiniowanego w tym polu.</span><span class="sxs-lookup"><span data-stu-id="01fb6-121">The description applies to all positions assigned to the job defined here.</span></span>  
+12. <span data-ttu-id="01fb6-122">Przełącz rozwinięcie sekcji Klasyfikacja zadania.</span><span class="sxs-lookup"><span data-stu-id="01fb6-122">Toggle the expansion of the Job classification section.</span></span>
+13. <span data-ttu-id="01fb6-123">Zaznacz funkcję stanowiska, która będzie używana w standardowych raportach w module Zasoby ludzkie.</span><span class="sxs-lookup"><span data-stu-id="01fb6-123">Select a job function that will be used in standard reporting within Human resources.</span></span>
+14. <span data-ttu-id="01fb6-124">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="01fb6-124">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="01fb6-125">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="01fb6-125">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="01fb6-126">Wybierz typ zadania, aby dodatkowo sklasyfikować zadania w granicach organizacji.</span><span class="sxs-lookup"><span data-stu-id="01fb6-126">Select a Job type to further classify jobs within your organization.</span></span> 
+    * <span data-ttu-id="01fb6-127">Typy zadań mogą być wykorzystywane w raportowaniu w całym module Zasoby ludzkie.</span><span class="sxs-lookup"><span data-stu-id="01fb6-127">Job types can be used in reporting throughout Human resources.</span></span>  
+17. <span data-ttu-id="01fb6-128">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="01fb6-128">In the list, find and select the desired record.</span></span>
+18. <span data-ttu-id="01fb6-129">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="01fb6-129">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="01fb6-130">Przełącz rozwinięcie sekcji Wynagrodzenie.</span><span class="sxs-lookup"><span data-stu-id="01fb6-130">Toggle the expansion of the Compensation section.</span></span>
+20. <span data-ttu-id="01fb6-131">Wybierz poziom wynagrodzenia.</span><span class="sxs-lookup"><span data-stu-id="01fb6-131">Select a compensation level.</span></span>
+    * <span data-ttu-id="01fb6-132">Poziom wynagrodzenia określi minimalne i maksymalne wynagrodzenie, które pracownik może otrzymać za zadanie.</span><span class="sxs-lookup"><span data-stu-id="01fb6-132">The compensation level will define the Minimum and Maximum compensation an employee may have for the job.</span></span> <span data-ttu-id="01fb6-133">Reguły wynagrodzeń określą, czy wynagrodzenia pracowników mogą wykroczyć poza ten zakres.</span><span class="sxs-lookup"><span data-stu-id="01fb6-133">Compensation rules will determine if employees' compensation can be outside the range.</span></span>  
+21. <span data-ttu-id="01fb6-134">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="01fb6-134">In the list, find and select the desired record.</span></span>
+22. <span data-ttu-id="01fb6-135">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="01fb6-135">In the list, click the link in the selected row.</span></span>
+23. <span data-ttu-id="01fb6-136">Przełącz rozwinięcie sekcji Umiejętności.</span><span class="sxs-lookup"><span data-stu-id="01fb6-136">Toggle the expansion of the Skills section.</span></span>
+    * <span data-ttu-id="01fb6-137">Należy zwrócić uwagę, że pola na skróconych kartach Umiejętności, Wykształcenie i Certyfikaty są puste.</span><span class="sxs-lookup"><span data-stu-id="01fb6-137">Note that the fields in the Skills, Education and Certificates FastTabs are blank.</span></span> <span data-ttu-id="01fb6-138">Po skopiowaniu informacji z szablonu zadania informacje w tych polach zostaną wprowadzone w jednym kroku.</span><span class="sxs-lookup"><span data-stu-id="01fb6-138">After copying information from a job template, information in these fields will be entered in a single step.</span></span>   
+24. <span data-ttu-id="01fb6-139">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="01fb6-139">Click Save.</span></span>
+25. <span data-ttu-id="01fb6-140">Kliknij opcję Kopiuj z.</span><span class="sxs-lookup"><span data-stu-id="01fb6-140">Click Copy from.</span></span>
+26. <span data-ttu-id="01fb6-141">Kliknij opcję Kopiuj z szablonu.</span><span class="sxs-lookup"><span data-stu-id="01fb6-141">Click Copy from template.</span></span>
+27. <span data-ttu-id="01fb6-142">W polu Szablon stanowiska kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="01fb6-142">In the Job template field, click the drop-down button to open the lookup.</span></span>
+28. <span data-ttu-id="01fb6-143">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="01fb6-143">In the list, find and select the desired record.</span></span>
+29. <span data-ttu-id="01fb6-144">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="01fb6-144">In the list, click the link in the selected row.</span></span>
+30. <span data-ttu-id="01fb6-145">Kliknij opcję Notatka.</span><span class="sxs-lookup"><span data-stu-id="01fb6-145">Click the Note option.</span></span>
+    * <span data-ttu-id="01fb6-146">Tylko wybrane pozycje zostaną skopiowane do wybranego zadania.</span><span class="sxs-lookup"><span data-stu-id="01fb6-146">Only those items you select will be copied to the selected job.</span></span>    
+31. <span data-ttu-id="01fb6-147">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="01fb6-147">Click OK.</span></span>
+32. <span data-ttu-id="01fb6-148">Przełącz rozwinięcie sekcji Certyfikaty.</span><span class="sxs-lookup"><span data-stu-id="01fb6-148">Toggle the expansion of the Certificates section.</span></span>
+33. <span data-ttu-id="01fb6-149">Przełącz rozwinięcie sekcji Wykształcenie.</span><span class="sxs-lookup"><span data-stu-id="01fb6-149">Toggle the expansion of the Education section.</span></span>
+34. <span data-ttu-id="01fb6-150">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="01fb6-150">Click Save.</span></span>
 
