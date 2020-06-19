@@ -68,14 +68,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nowości lub zmiany w aplikacji Supply Chain Management
                   items:
-                    - name: Nowości lub zmiany w aplikacji Supply Chain Management — strona główna
+                    - name: Nowości lub zmiany w aplikacji Supply Chain Management – strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.12 (sierpień 2020)
+                      href: get-started/whats-new-scm-10-0-12.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.11 (lipiec 2020)
                       href: get-started/whats-new-scm-10-0-11.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.10 (maj 2020)
                       href: get-started/whats-new-scm-10-0-10.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.9 (kwiecień 2020)
-                      href: get-started/whats-new-scm-10-0-9.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
@@ -90,7 +90,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Zasoby dokumentacji
               items:
-                - name: System Pomocy
+                - name: System pomocy
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Łączenie z systemem pomocy
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
@@ -595,6 +595,8 @@
                   href: cost-management/bom-calculations.md
                 - name: Grupy obliczeń BOM
                   href: cost-management/bom-calculation-groups.md
+                - name: Poziom obliczania kosztu
+                  href: cost-management/cost-calculation-level.md
                 - name: Wycena wsteczna
                   href: cost-management/backflush-costing.md
                 - name: Typowe źródła odchyleń produkcji
@@ -1137,7 +1139,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
             - name: Samouczki
               items:
-                - name: Używanie źródeł danych JOIN do pobierania danych z wielu tabel aplikacji
+                - name: Używanie źródeł danych SPRZĘŻENIE do pobierania danych z wielu tabel aplikacji
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie mapowań modelu ER w zależności od kraju
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
@@ -1345,6 +1347,8 @@
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Stosowanie filtrów do planu
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: Planowanie główne przy użyciu umów handlowych zakupu
+                  href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Wyświetlanie historii planu i dzienników planowania
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Automatyczne akceptowanie z optymalizacją planowania
@@ -1989,7 +1993,9 @@
                       href: production-control/release-production-orders.md
                     - name: Zgłaszanie zleceń produkcyjnych jako gotowych
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Zgłaszanie wyrobów jako gotowych w lokalizacji kontrolowanej przez numer identyfikacyjny
+                    - name: Konfiguruj kartę zadań dla urządzeń
+                      href: production-control/config-job-card-device.md
+                    - name: Zgłoszenie jako gotowe z poziomu urządzenia karty działań
                       href: production-control/report-finished-job-device.md
                     - name: Wycofywanie stanu zlecenia produkcyjnego
                       href: production-control/reverse-production-order-status.md
@@ -2259,11 +2265,21 @@
                   href: sales-marketing/tasks/register-sales-commissions.md
                 - name: Konfigurowanie reguł dla prowizji od sprzedaży
                   href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Portal klientów dla Dynamics 365 Supply Chain Management
+              items:
+                - name: Omówienie portalu klientów
+                  href: sales-marketing/customer-portal-overview.md
+                - name: 'Instalowanie, konfigurowanie i aktualizowanie portalu klientów'
+                  href: sales-marketing/customer-portal-setup.md
+                - name: Tworzenie użytkowników portalu klientów i zarządzanie nimi
+                  href: sales-marketing/customer-portal-user-admin.md
+                - name: Dostosowywanie modułu portalu klientów i korzystanie z niego
+                  href: sales-marketing/customer-portal-customize.md
             - name: Odpis handlowy
               href: sales-marketing/trade-allowance.md
             - name: Tworzenie nowej umowy handlowej
               href: sales-marketing/tasks/create-new-trade-agreement.md
-        - name: Zarządzanie usługą
+        - name: Zarządzanie serwisem
           items:
             - name: Omówienie zarządzania usługą
               href: service-management/service-management-home-page.md
@@ -2655,6 +2671,8 @@
                   href: warehousing/partial-location-cycle-counting.md
                 - name: Definiowanie procesu częściowej inwentaryzacji ciągłej w lokalizacji
                   href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                - name: Zadanie oczyszczania wpisów towarów na stanie w Zarządzaniu magazynem
+                  href: warehousing/onhand-cleanup.md
                 - name: Arkusz magazynowy
                   href: inventory/inventory-journals.md
                 - name: Lokalizacja w magazynie
