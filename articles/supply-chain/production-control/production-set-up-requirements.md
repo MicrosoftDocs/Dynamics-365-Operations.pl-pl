@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55820d7376750c210d2b7f214f705ffcb222c6cd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0513392fe066e02f0789bcfadb0ee676559cb223
+ms.sourcegitcommit: f3456df4d91cf0c51cd395ae64e3c192bd46835e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212510"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428407"
 ---
 # <a name="production-setup-requirements"></a>Wymagania konfiguracji produkcji
 
@@ -71,7 +71,7 @@ W wypadku stosowania marszrut operacje muszą zostać zdefiniowane dla każdej s
 2.  **Grupy kosztów** — skonfiguruj grupy kosztów w celu utworzenia i obsługiwania różnych typów wyceny.
 3.  **Grupy marszrut** — skonfiguruj grupy marszrut w celu zdefiniowania parametrów dotyczących grup marszrut. Grupy marszrut trzeba skonfigurować przed utworzeniem marszrut produkcyjnych.
 4.  **Marszruty** — skonfiguruj marszruty produkcyjne i zdefiniuj ustawienia domyślne kontroli planowania, wyznaczania kosztów i cen operacji marszrut, a także raportowania postępów.
-5.  **Grupy marszrut** — skonfiguruj wersje marszruty, aby pozwolić na odchylenia produkcyjne towaru.
+5.  **Wersja marszruty** — skonfiguruj wersje marszruty, aby pozwolić na odchylenia produkcyjne towaru.
 
 ## <a name="optional-advanced-settings"></a>Opcjonalne ustawienia zaawansowane
 1.  **Grupy produkcji** — skonfiguruj grupy produkcji w celu utworzenia relacji między zleceniem produkcyjnym i kontami księgowymi. Konta księgowe są używane do księgowania lub grupowania zleceń do raportowania.
