@@ -3,7 +3,7 @@ title: Inicjuj środowisko wersji zapoznawczej Dynamics 365 Commerce
 description: W tym temacie opisano sposób aprowizowania środowiska wersji zapoznawczej aplikacji Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: c109c2326cf01739255b49587c15aa34ad884f6a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254755"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426472"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Inicjuj środowisko wersji zapoznawczej Dynamics 365 Commerce
 
@@ -39,7 +39,7 @@ Przed rozpoczęciem zalecane jest wykonanie szybkiego przeglądu tego tematu w c
 
 ## <a name="overview"></a>Omówienie
 
-Aby pomyślnie aprowizować środowisko wersji zapoznawczej rozwiązania Commerce, musisz utworzyć projekt, który ma określoną nazwę i typ produktu. Środowisko i jednostka skali handlu (CSU) mają także określone parametry, których należy użyć w celu późniejszego aprowizowania na platformie e-Commerce. Instrukcje w tym temacie opisują wszystkie wymagane kroki do zakończenia aprowizowania i parametry, których należy użyć.
+Aby pomyślnie aprowizować środowisko wersji zapoznawczej rozwiązania Commerce, musisz utworzyć projekt, który ma określoną nazwę i typ produktu. Środowisko i Commerce Scale Unit (CSU) mają także określone parametry, których należy użyć w celu późniejszego aprowizowania na platformie e-Commerce. Instrukcje w tym temacie opisują wszystkie wymagane kroki do zakończenia aprowizowania i parametry, których należy użyć.
 
 Po pomyślnym aprowizowaniu środowiska wersji zapoznawczej rozwiązania Commerce istnieje kilka kroków aprowizacji, które należy wykonać, aby przygotować to środowisko. Niektóre kroki są opcjonalne, w zależności od aspektów systemu, które mają być oceniane. Opcjonalne kroki można wykonać później.
 
@@ -193,7 +193,7 @@ Aby wdrożyć środowisko, wykonaj następujące kroki.
 
 1. Przed kontynuowaniem upewnij się, że stan środowiska to **Wdrożone**.
 
-### <a name="initialize-the-commerce-scale-unit-csu"></a>Inicjowanie jednostki skali handlu (CSU)
+### <a name="initialize-the-commerce-scale-unit-cloud"></a>Inicjowanie Commerce Scale Unit (w chmurze)
 
 Aby zainicjować jednostkę CSU, należy wykonać następujące kroki.
 
@@ -215,7 +215,7 @@ Aby zainicjować usługę e-Commerce, należy wykonać następujące kroki.
 
 1. Na karcie **e-Commerce** przejrzyj zgodę na korzystanie z wersji zapoznawczej, a następnie wybierz pozycję **Instalator**.
 1. W polu **Nazwa dzierżawy usługi e-Commerce** wprowadź nazwę. Należy jednak mieć świadomość, że nazwa ta będzie widoczne w niektórych adresach URL wskazujących na to wystąpienie usługi e-Commerce.
-1. W polu **Nazwa jednostki skali handlu** wybierz z listy jednostkę CSU. (Lista powinna mieć tylko jedną opcję).
+1. W polu **Nazwa Commerce Scale Unit** wybierz z listy jednostkę CSU. (Lista powinna mieć tylko jedną opcję).
 
     Pole **Region geograficzny usługi e-Commerce** jest ustawiane automatycznie, a jego wartości nie można zmienić.
 
@@ -251,7 +251,7 @@ Aby kontynuować proces aprowizowania i konfigurowania środowiska wersji zapozn
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (w chmurze)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Portal Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 

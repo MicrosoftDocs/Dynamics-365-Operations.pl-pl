@@ -3,7 +3,7 @@ title: Moduł ikony koszyka
 description: W tym temacie opisano moduł ikony koszyka i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8cc96e0476a9d8a46aed7011359dc65fbc678fbf
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 6771a84118504cd5c8e44302380eb970e4658902
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261584"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411096"
 ---
 # <a name="cart-icon-module"></a>Moduł ikony koszyka
 
@@ -33,6 +33,10 @@ W tym temacie opisano moduł ikony koszyka i opisano, jak dodać go do stron wit
 ## <a name="overview"></a>Omówienie
 
 Moduł ikon koszyka reprezentuje koszyk w module nagłówka strony i pokazuje liczbę pozycji w koszyku. Moduł ikony koszyka wyświetla także podsumowanie koszyka (znane również jako mini wózek), gdy ikona wózka jest najechana kursorem. Mini koszyk zapewnia użytkownikowi podsumowanie pozycji w koszyku bez konieczności przechodzenia do strony koszyka. Ponadto pozwala również użytkownikowi przejść bezpośrednio do strony kasy, jeśli jest zadowolony z podsumowania. Zmniejsza to liczbę nawigacji na stronach i przyspiesza finalizację transakcji. 
+
+Poniższy obraz pokazuje przykład modułu ikony koszyka, który wyświetla mini koszyk w nagłówku Fabrikam.
+
+![Przykład modułu na ikonie koszyka](./media/ecommerce-Minicart.PNG)
 
 ## <a name="module-properties"></a>Właściwości modułu
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b2d65be5163e5dcb7971f04ebcad2fce55a06dad
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9da6fc7338942e97a1a7417dbd4dfca55fa95272
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010157"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410065"
 ---
 # <a name="overview"></a>Omówienie
 
@@ -34,16 +34,16 @@ Ten Podręcznik administratora ułatwia konfigurowanie, zarządzanie i rozwiązy
 - Konfiguracja i zarządzanie instancjami
   - [Human Resources - wdrożenie](hr-admin-setup-provision.md)
   - [Kopiowanie wystąpienia](hr-admin-setup-copy-instance.md)
-  - [Usuń wystąpienie](hr-admin-setup-remove-instance.md)
-  - [Proces aktualizacji](hr-admin-setup-update-process.md)
+  - [Usuwanie wystąpienie](hr-admin-setup-remove-instance.md)
+  - [Aktualizowanie procesu](hr-admin-setup-update-process.md)
 
 - Ustawianie integracji danych
   - [Wybieranie technologii integracji danych](hr-admin-integration-choose-technology.md)
   - [Konfiguruj integrację z programem Common Data Service](hr-admin-integration-common-data-service.md)
   - [Konfigurowanie integracji z rozwiązaniem Finance](hr-admin-integration-finance.md)
   - [Konfigurowanie integracji z rozwiązaniem Dayforce](hr-admin-integration-dayforce.md)
-  - [Utwórz cykliczną aplikację eksportu danych](hr-admin-integration-recurring-data-export.md)
-  - Integrowanie z programem Office
+  - [Tworzenie aplikacji do cyklicznego eksportowania danych](hr-admin-integration-recurring-data-export.md)
+  - Integracja z pakietem Office
     - [Integracja z pakietem Office — samouczek](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Aktualizowanie danych jednostki w programie Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Tworzenie funkcji otwierania w programie Excel](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -73,23 +73,22 @@ Ten Podręcznik administratora ułatwia konfigurowanie, zarządzanie i rozwiązy
   - [Opis usługi Lifecycle Services](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Zasoby dokumentacji
-  - [System Pomocy](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
-  - [Łączenie z systemem Pomocy](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
-  - [Łączenie z niestandardową witryną pomocy](../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json        )
+  - [System pomocy](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
+  - [Łączenie z systemem pomocy](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
   - [Wyświetlanie i eksportowanie opisów pól](../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json)
   - [Rejestrator zadań](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
   - [Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
-- Rozwiązywanie problemów w module Human Resources
+- Rozwiązywanie problemów z modułem Human Resources
   - [Uzyskiwanie pomocy technicznej](hr-admin-troubleshooting-support.md)
   - [Optymalizowanie wydajności za pomocą zadań automatycznego czyszczenia](hr-admin-troubleshooting-batch-history.md)
   - [Raporty analityczne nie są aktualizowane](hr-admin-troubleshooting-analytic-reports.md)
   - [Nie można utworzyć środowiska w centrum administracyjnym usługi Power Apps](hr-admin-troubleshooting-power-apps.md)
-  - [Klient aplikacji rozłącza się](hr-admin-troubleshooting-disconnect.md)
-  - [Unikaj obcięcia tekstu w hierarchii stanowisk](hr-admin-troubleshooting-truncate.md)
+  - [Klient rozłącza się](hr-admin-troubleshooting-disconnect.md)
+  - [Unikanie obcinania tekstu w hierarchii stanowisk](hr-admin-troubleshooting-truncate.md)
   - [Uruchamianie procesu związanego z wynagrodzeniem](hr-admin-troubleshooting-compensation.md)
-  - [Zapisywanie przewodnika po zadaniach w usługi LCS](hr-admin-troubleshooting-task-guide.md)
-  - [Uzyskiwanie dostępu do adresów prywatnych według ról zabezpieczeń](hr-admin-troubleshooting-private-addresses.md)
+  - [Zapisywanie przewodnika zadania w usługach LCS](hr-admin-troubleshooting-task-guide.md)
+  - [Uzyskiwanie dostępu do adresów prywatnych według roli zabezpieczeń](hr-admin-troubleshooting-private-addresses.md)
   - [Human Resources nie wyświetla się w ramach aplikacji Dynamics 365](hr-admin-troubleshooting-not-in-apps.md)
   - [Opcje raportowania](hr-admin-troubleshooting-reporting.md)
   - [Integracja — często zadawane pytania](hr-admin-troubleshooting-integration.md)

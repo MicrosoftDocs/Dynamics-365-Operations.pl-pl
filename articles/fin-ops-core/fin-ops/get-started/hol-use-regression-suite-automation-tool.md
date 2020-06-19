@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 0c2babc3144cae5c68075bd853a2587505263776
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248743"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410157"
 ---
-# <a name="use-the-regression-suite-automation-tool-tutorial"></a>Korzystanie z samouczka narzędzia Regression Suite Automation Tool
+# <a name="regression-suite-automation-tool-tutorial"></a>Samouczek narzędzia Regression Suite Automation Tool
 
 [!include [banner](../includes/banner.md)]
 
@@ -97,7 +97,7 @@ Ta funkcja wykonuje zrzuty ekranu czynności, które zostały wykonane podczas r
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Po uruchomieniu przypadku testowego narzędzia RSAT generują migawki (obrazy) kroków w folderze odtwarzania przypadków testowych w katalogu roboczym. Jeśli używana jest starsza wersja narzędzia RSAT, obrazy są zapisywane w folderze **C:\\użytkownicy\\\<Nazwa użytkownika\>\\AppData\\Roaming\\regressionTool\\odtwarzanie**, utowrzony jest osobny folder dla każdego uruchomionego przypadku testowego.
+Po uruchomieniu przypadku testowego narzędzia RSAT generują migawki (obrazy) kroków w folderze odtwarzania przypadków testowych w katalogu roboczym. Jeśli używana jest starsza wersja narzędzia RSAT, obrazy są zapisywane w **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, utowrzony jest osobny folder dla każdego uruchomionego przypadku testowego.
 
 ## <a name="assignment"></a>Przypisanie
 
@@ -454,7 +454,7 @@ Masz skrypt testowy, który tworzy nowego klienta. Za pomocą skryptów ten przy
 - Nazwa odbiorcy
 - Adres odbiorcy
 
-Identyfikator odbiorcy będzie w formacie *ATCUS\<liczba\>*, gdzie \<liczba\> jest wartością z zakresu od **000000001** do **999999999**.
+Identyfikator odbiorcy będzie w formacie *ATCUS\<number\>*, gdzie \<number\> jest wartością z zakresu od **000000001** do **999999999**.
 
 W poniższym przykładzie użyto jednego parametru, **Start**, aby zdefiniować pierwszy użyty numer. Do zdefiniowania liczby odbiorców używany jest drugi paramentr **nr**, który musi być utworzony. W przypadku każdej iteracji parametry w pliku parametrów programu Excel są zmieniane za pomocą funkcji UpdateCustomer. Następnie wiersz polecenia RSAT jest wywoływany w funkcji RunTestCase
 

@@ -3,7 +3,7 @@ title: Zapisane widoki
 description: W tym temacie opisano sposób korzystania z funkcji zapisanych widoków.
 author: jasongre
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: fe79558b9d2ac4ef1c83918b949d11983b2cc0d8
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: f6b7f1c64c273f52dc1d414185ba54efdfb8e5c0
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260490"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412338"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
@@ -137,7 +137,7 @@ Jeśli zmiany, które mają zostać wprowadzone do opublikowanego widoku, obejmu
 7. [10.0.9/Aktualizacja Platform update 33 lub nowsza] Jeśli pierwotnie wybrano ten opublikowany widok jako widok domyślny, będzie on ponownie widokiem domyślnym dla tych użytkowników po ponownym opublikowaniu.  
 
 Jeśli zmiany w publikowanym widoku obejmują modyfikację personalizacji lub filtrów skojarzonych z widokiem, należy wykonać następujące czynności: 
-1.  Przełącz się na opublikowany widok, który chcesz zmodyfikować. 
+1.  Załaduj opublikowany widok, który chcesz zmodyfikować. 
 2.  Zapisz kopię opublikowanego widoku, aby utworzyć lokalną wersję roboczą opublikowanego widoku. 
 3.  Zmodyfikuj lokalną wersję roboczą zgodnie z wymaganiami.
 4.  Opublikuj widok pod pierwotną nazwą. 
@@ -149,14 +149,27 @@ O ile karta **Moje widoki** z listą widoków osobistych jest widoczna dla wszys
 
 Dostępny zestaw akcji dla listy wszystkich opublikowanych widoków strony jest następujący. 
 
--    **Publikuj**: akcja **Publikuj** umożliwia ponowne opublikowanie widoku po zmianie parametrów publikowania (nazwa, opis, role zabezpieczeń).
--    **Usuń**: akcja **Usuń** umożliwia trwałe usunięcie opublikowanego widoku. Ta akcja powoduje usunięcie widoku dla wszystkich użytkowników w systemie. Usunięcie opublikowanych widoków zacznie obowiązywać po wybraniu przycisku **Zapisz**.
+-    **Publikuj** – akcja **Publikuj** umożliwia ponowne opublikowanie widoku po zmianie parametrów publikowania (nazwa, opis, role zabezpieczeń).
+-    **Zapisz jako osobisty** – za pomocą akcji **Zapisz jako osobiste** można utworzyć osobistą kopię opublikowanego widoku. Ta możliwość ułatwia zapoznanie się z zawartością widoku, który nie został opublikowany dla Ciebie lub który nie został jeszcze opublikowany. Można go również wykorzystać do edytowania i ponownego publikowania widoku. Ta możliwość została wprowadzona w wersji 10.0.12.  
+-    **Usuń** – akcja **Usuń** umożliwia trwałe usunięcie opublikowanego widoku. Ta akcja powoduje usunięcie widoku dla wszystkich użytkowników w systemie. Usunięcie opublikowanych widoków zacznie obowiązywać po wybraniu przycisku **Zapisz**.
+
+## <a name="managing-views-globally"></a>Zarządzanie widokami globalnie
+Chociaż niektóre funkcje zarządzania znajdują się na każdej stronie, jak wskazano w tym temacie, **administratorzy systemu** i **administratorzy zapisanych widoków** mogą bardziej kompleksowo zarządzać widokami systemu za pośrednictwem strony **Personalizacji**. W szczególności ta strona zawiera następujące sekcje i możliwości: 
+
+- **Opublikowane widoki** – Ta sekcja zawiera listę wszystkich widoków opublikowanych dla organizacji. W tym miejscu można ponownie opublikować widok po skorygowaniu ról zabezpieczeń lub firm, dla których jest wyświetlany widok. Można również eksportować lub usuwać jeden lub więcej opublikowanych widoków. W wersji 10.0.12 lub nowszej można skorzystać z opcji **Zapisz jako osobisty**, aby utworzyć osobistą kopię widoku, co pozwoli na zaktualizowanie widoku lub uzyskanie lepszego zrozumienia jego zawartości. 
+- **Nieopublikowane widoki** – Ta sekcja zawiera listę wszystkich widoków, które zostały zaimportowane do systemu, ale nie zostały jeszcze opublikowane. Te widoki można publikować, eksportować i usuwać. Akcja **Szybkie publikowanie** dodana w wersji 10.0.12 umożliwia publikowanie wielu widoków z tej sekcji w jednej akcji za pomocą istniejących konfiguracji ról zabezpieczeń i firm. W wersji 10.0.12 lub nowszej można skorzystać z opcji **Zapisz jako osobisty**, aby utworzyć osobistą kopię tych widoków, co pozwoli na uzyskanie lepszego zrozumienia ich zawartości.   
+- **Widoki osobiste** — Ta sekcja zawiera listę widoków, które zostały utworzone przez użytkowników w systemie. Możesz teraz opublikować widok osobisty w organizacji lub skopiować jeden lub więcej z tych widoków do innego użytkownika. Te widoki można również eksportować i usuwać wedle potrzeb.
+- **Użytkownicy** — Wybierz użytkownika, aby wyświetlić listę stron odwiedzonych przez tę osobę. Następnie można dostosować dla wybranego użytkownika możliwość korzystania z personalizacji określonych stron lub całego systemu. Można również zaimportować, wyeksportować lub wyczyścić personalizację dla wybranego użytkownika. Ponadto można zresetować objaśnienia funkcji dla użytkownika. Następnie, jeśli użytkownik wyłączył wszystkie okna wyskakujące, które wprowadzają nowe funkcje, okienka wyskakujące pojawią się ponownie przy następnym napotkaniu tych funkcji przez użytkownika.
+- **System** — ta opcja pozwala tymczasowo wyłączyć personalizacje dla wszystkich użytkowników w systemie. W takim przypadku wszystkie personalizacje są usuwane dla wszystkich użytkowników, a wszystkie strony są resetowane do ich stanu domyślnego. W przypadku ponownego włączenia personalizacji wszystkie personalizacje zostaną zastosowane ponownie. Można również trwale usunąć wszystkie personalizacje dla wszystkich użytkowników w systemie. Nie jest możliwe odzyskanie personalizacji, które zostały usunięte. Dlatego przed wykonaniem tego zadania należy koniecznie wyeksportować wszystkie personalizacje, które potem możesz chcieć zaimportować.
+
+Użytkownicy, którzy mają dostęp do strony **Personalizacje**, mogą również importować widoki osobiste lub szablony za pomocą przycisku **Importuj widoki** w okienku akcji. W wersji 10.0.12 lub nowszej mechanizm został dodany do natychmiastowego wyświetlania widoków po ich zaimportowaniu.  
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Jak włączyć zapisane widoki w środowisku? 
-Uwaga: funkcja **zapisanych widoków** wymaga włączenia systemu personalizacji w Finance and Operations. Jeśli personalizacja jest wyłączona dla całego środowiska, widoki zostaną wyłączone nawet po wykonaniu poniższych kroków. 
+> [!NOTE]
+> Funkcja **zapisanych widoków** wymaga włączenia systemu personalizacji w Finance and Operations. Jeśli personalizacja jest wyłączona dla całego środowiska, widoki zostaną wyłączone nawet po wykonaniu poniższych kroków. 
 
-**10.0.9/Aktualizacja platformy 33 i późniejsza** Funkcja **zapisanych widoków** jest dostępna bezpośrednio w module Zarządzanie funkcjami w dowolnym środowisku. Podobnie jak inne funkcje prapremiery publicznej, włączenie tej funkcji w produkcji podlega [uzupełniającemu warunkowi stosowania umowy](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9/Aktualizacja platformy 33 i późniejsza** Funkcja **zapisanych widoków** jest dostępna bezpośrednio w module Zarządzanie funkcjami w dowolnym środowisku. Podobnie jak inne funkcje zapoznawcze, włączenie tej funkcji w produkcji podlega [Uzupełniającej umowie użytkowania](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8/Aktualizacja platformy 32 i wcześniejsza** Funkcja **zapisanych widoków** można włączyć w środowiskach warstwy 1 (Dev/Test) i warstwa 2 (piaskownicy) w celu zapewnienia dodatkowych zmian w testowaniu i projekcie, wykonując poniższe kroki.
 

@@ -3,7 +3,7 @@ title: Moduł pola zakupu
 description: W tym temacie opisano moduły pola zakupu i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269758"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411349"
 ---
 # <a name="buy-box-module"></a>Moduł pola zakupu
 
-
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły pola zakupu i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
@@ -38,6 +38,10 @@ Termin *pole zakupu* zazwyczaj odnosi się do obszaru strony zawierającej szcze
 Moduł pola zakupu to specjalny pojemnik, który służy do przechowywania wszystkich modułów wyświetlanych w polu zakupu na stronie szczegółów produktu.
 
 Adres URL strony szczegóły produktu zawiera identyfikator produktu. Wszystkie informacje wymagane do wyrenderowania modułu pola zakupu pochodzą z tego identyfikatora produktu. Jeśli identyfikator produktu nie zostanie podany, moduł pola zakupu nie będzie poprawnie renderowany na stronie. Z tego względu moduł pola zakupu może być używany tylko na stronach z kontekstem produktu. Aby można było z niego skorzystać na stronie, która nie ma kontekstu produktu (np. strony głównej lub strony marketingowej), należy wykonać dodatkowe dostosowania.
+
+Poniższy obraz pokazuje przykład modułu kupującego na stronie ze szczegółowymi informacjami o produkcie.
+
+![Przykład modułu pola zakupu](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Qłaściwości modułu pola zakupu i gniazda 
 
@@ -58,35 +62,47 @@ Motywów można używać do usuwania lub zmieniania kolejności właściwości p
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduły, których można używać w module pola zakupu
 
 - **Galeria multimediów** — ten moduł służy do prezentowania obrazów produktu na stronie szczegółów produktu. Może on obsługiwać jeden lub wiele obrazów. System obsługuje również miniatury obrazów. Miniatury obrazów mogą być ułożone poziomo (jako wiersz pod obrazem) lub w pionie (jako kolumna obok obrazu). Moduł Galeria multimediów można dodać do gniazda **Multimedia** w module pole zakupu. Obecnie obsługuje tylko obrazy. 
-- **Wybór sklepu** — ten moduł pokazuje listę magazynów pobliskich, w których dany towar jest dostępny do odebrania. Umożliwia użytkownikom wprowadzenie lokalizacji, w której znajdują się bliskie sklepy. Aby uzyskać więcej informacji na temat tego modułu, należy zapoznać się z tematem [moduł selector sklepów](store-selector.md).
+- **Wybór sklepu** — ten moduł pokazuje listę magazynów pobliskich, w których dany towar jest dostępny do odebrania. Umożliwia użytkownikom wprowadzenie lokalizacji, w której znajdują się bliskie sklepy. Aby uzyskać więcej informacji dotyczących tego modułu, przejdź do [Modułu selektor sklepów](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Ustawienia modułu pola zakupu
 
-Moduły kupowania mają trzy następujące ustawienia, które można skonfigurować w **Ustawienia witryny \> Rozszerzenia**:
+Następujące ustawienia modułu pola zakupu mogą być skonfigurowane w **Ustawienia witryny \> Rozszerzenia**:
 
-- **Ilość maksymalna** — To ustawienie jest używane do określania maksymalnej liczby każdej pozycji, którą można dodać do koszyka. Na przykład sprzedawca może zdecydować, że tylko 10 sztuk każdego produktu może być sprzedawanych w jednej transakcji.
-- **Sprawdzanie zapasów** — Jeśli wartość jest ustawiona na **prawda**, towar jest dodawany do koszyka dopiero po upewnieniu się, że jest on w zapasach. Ta kontrola zapasów jest realizowana dla scenariuszy, w których towar zostanie wysłany, jak i dla scenariuszy, w których zostanie on odebrany w sklepie. Jeśli wartość jest ustawiona na **fałsz**, nie jest przeprowadzane sprawdzanie zapasów przed dodaniem towaru do koszyka i założenie zamówienia. Aby uzyskać informacje dotyczące konfigurowania ustawień zapasów w biurze zaplecza, należy zapoznać się z tematem [Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](calculated-inventory-retail-channels.md).
+- **Limit ilości dla wiersza koszyka** — To ustawienie jest używane do określania maksymalnej liczby każdej pozycji, którą można dodać do koszyka. Na przykład sprzedawca może zdecydować, że tylko 10 sztuk każdego produktu może być sprzedawanych w jednej transakcji.
+- **Zapasy** — Aby uzyskać informacje dotyczące sposobu stosowania ustawień zapasów, należy zapoznać się z tematem [stosowanie ustawień zapasów](inventory-settings.md).
+- **Dodaj do koszyka** — Ta właściwość służy do określania zachowania po dodaniu towaru do koszyka. Możliwe wartości są **Przejdź do koszyka**, **Nie przechodź do koszyka** i **Wyświetl powiadomienia**. Gdy wartość jest ustawiona na **Przejdź do koszyka**, użytkownicy są wysyłani na stronę koszyka po dodaniu towaru. Gdy wartość jest ustawiona na **Nie przechodź do koszyka**, użytkownicy nie są wysyłani na stronę koszyka po dodaniu towaru. Gdy wartość jest ustawiona na **Wyświetlanie powiadomień**, użytkownicy będą wyświetlali powiadomienie o potwierdzeniu i mogą kontynuować przeglądanie na stronie szczegóły produktu. 
 
-- **Bufor zapasów** — ta właściwość służy do określania numeru buforowego zapasów. Zapasy są obsługiwane w czasie rzeczywistym, a w przypadku, gdy wiele odbiorców nakłada zamówienia, może być trudne utrzymywanie dokładnej inwentaryzacji zapasów. Po zakończeniu sprawdzania zapasów, jeśli zapasy są mniejsze niż kwota bufora, produkt jest traktowany jako wychodzący z zapasów. W związku z tym, jeśli sprzedaż będzie się odbywała szybko przez kilka kanałów i inwentaryzacja nie jest w pełni zsynchronizowana, jest mniejsze ryzyko sprzedaży towaru, który jest poza zapasem.
+    Poniższy rysunek przedstawia przykład powiadomienia o potwierdzeniu „dodanego do koszyka” w witrynie Fabrikam.
+
+    ![Przykład modułu powiadomienia](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakcja Commerce Scale Unit
 
-Moduł kupowania pobiera informacje o produktach za pomocą interfejsów API Commerce Scale Unit. Identyfikator produktu ze strony Szczegóły produktu służy do pobierania wszystkich informacji.
+Moduł kupna pobiera informacje o produkcie za pomocą interfejsów programistycznych (API) aplikacji Commerce Scale Unit. Identyfikator produktu ze strony Szczegóły produktu służy do pobierania wszystkich informacji.
 
 ## <a name="add-a-buy-box-module-to-a-page"></a>Dodawanie modułu pola zakupu do strony
 
 Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Utwórz fragment o nazwie **fragment pola zakupu** i dodaj do niego moduł pola zakupu.
-1. Do gniazda **Multimedia** w module pole zakupu dodaj moduł galerii multimediów.
-1. W gnieździe **Wyboru sklepu** w module kupowania dodaj moduł wyboru sklepu.
+1. Przejdź do **Fragmenty strony**, a następnie wybierz opcję **Nowy**, aby stworzyć nowy fragment.
+1. W oknie dialogowym **Nowy fragment strony** wybierz moduł **Pole zakupu**.
+1. W obszarze **Nazwa fragmentu strony** wprowadź nazwę **Fragment pola zakupu**, a następnie kliknij przycisk **OK**.
+1. W gnieździe **Galeria multimediów**, w którym znajduje się moduł pola zakupu wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Galeria multimediów** i wybierz przycisk **OK**.
+1. W gnieździe **Selektor sklepu**, w którym znajduje się moduł pola zakupu wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodawanie modułu** wybierz moduł **Selektor sklepu** i wybierz przycisk **OK**.
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować fragment, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
-1. Utwórz szablon strony Szczegóły produktu i nadaj mu nazwę **Szablon PDP**.
-1. Dodaj stronę domyślną.
-1. W **Głównym** gnieździe na stronie domyślnej dodaj fragment pola zakupu.
+1. Przejdź do **Szablonu**, a następnie wybierz **Nowy**, aby utworzyć nowy szablon.
+1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon PDP**, a następnie wybierz **OK**.
+1. W gnieździe **Treść** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Strona domyślna** i wybierz przycisk **OK**.
+1. Na domyślnej stronie wybierz gniazdo **Główne**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj fragment strony**.
+1. W oknie dialogowym **Wybieranie fragmentu strony** wybierz utworzony wcześniej fragment **Fragment pola zakupu**, a następnie kliknij **OK**.
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
-1. Za pomocą utworzonego właśnie szablonu utwórz stronę o nazwie **strona PDP**.
-1. W **Głównym** gnieździe na nowej stronie dodaj fragment pola zakupu.
+1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć nową stronę.
+1. W oknie dialogowym **Wybierz szablon** wybierz szablon **Szablon PDP**. W sekcji **Nazwa strony** przejdź do **Strona PDP**, a następnie wybierz przycisk **OK**.
+1. Na nowej stronie wybierz gniazdo **Główne**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj fragment strony**.
+1. W oknie dialogowym **Wybieranie fragmentu strony** wybierz utworzony wcześniej fragment **Fragment pola zakupu**, a następnie kliknij **OK**.
 1. Zapisz i zobacz podgląd strony. Do adresu URL podglądu strony należy dodać parametr dotyczący ciągu kwerendy **?productid=&lt;product id&gt;**. W ten sposób kontekst produktu jest używany do ładowania i renderowania strony podglądu.
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować. Na stronie Szczegóły produktu powinno pojawić się pole zakupu.
 
