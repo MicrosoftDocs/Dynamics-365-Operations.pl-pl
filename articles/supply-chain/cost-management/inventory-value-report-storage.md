@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 03426e86186c6aa283531eb37ae26527e6891042
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2742c5c12dcc554745b618dd1ff819c8c1e1d05f
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276950"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413106"
 ---
 # <a name="inventory-value-storage-report"></a>Raport magazynu wartości zapasów
 
@@ -50,7 +50,7 @@ Wykonaj poniższe kroki, aby wygenerować i zapisać raport **magazynu wartości
 1. Wybierz pozycję **Nowy**.
 1. W wyświetlonym oknie dialogowym **Wartość zapasów** należy określić następujące wartości, aby określić, które rekordy będą uwzględniane w raporcie:
 
-    - Na skróconej karcie **Parametry** należy wprowadzić unikatową nazwę raportu, a następnie za pomocą pól w sekcji **Zakres dat** określić, które rekordy mają być uwzględniane w raporcie. Aby zdefiniować interwał dat, można wybrać wstępnie zdefiniowany zakres (w odniesieniu do daty generowania raportu) w polu **Kod zakresu dat** lub wybrać określone daty w polach **Od dnia** i **Do dnia**. <!-- KFM: What is the ID setting for here? What do its values mean? -->
+    - Na skróconej karcie **Parametry** należy wprowadzić unikatową nazwę raportu, a następnie za pomocą pól w sekcji **Zakres dat** określić, które rekordy mają być uwzględniane w raporcie. Aby zdefiniować interwał dat, można wybrać wstępnie zdefiniowany zakres (w odniesieniu do daty generowania raportu) w polu **Kod zakresu dat** lub wybrać określone daty w polach **Od dnia** i **Do dnia**.
     - Na skróconej karcie **Rekordy do uwzględnienia** należy skonfigurować filtry i ograniczenia w celu zdefiniowania danych uwzględnionych w raporcie.
     - Na skróconej karcie **Uruchom w tle** określ sposób, kiedy i jak często generowany jest raport.
 

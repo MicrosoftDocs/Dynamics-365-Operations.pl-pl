@@ -3,12 +3,12 @@ title: Konfigurowanie typów urlopów i nieobecności
 description: Tu opisano konfigurowanie typów urlopów, jakie mogą brać pracownicy w module Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df6e34fe6a23e6f0a8307a035752a35a15a3431c
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: 1802938f54a1d78e6ea60572a76177a037192ae0
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3198057"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428600"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurowanie typów urlopów i nieobecności
 
@@ -56,7 +56,9 @@ Typy urlopów w module Dynamics 365 Human Resources określają różne rodzaje 
 
 8. W obszarze **Ogranicz dostęp do wybranych ról** określ, czy chcesz ograniczyć dostęp. Następnie wybierz role zabezpieczeń w obszarze **Role zabezpieczeń dla tego typu urlopów**. Role zabezpieczeń definiuje się w przepływie pracy wybranym w ustawieniu **Identyfikator przepływu pracy** wcześniej w tej procedurze.
 
-9. Wybierz opcję **Zapisz**.
+9. W obszarze **Relacje zawieszenia** określ, czy chcesz, aby ten typ urlopu miał zawieszać inny typ urlopu, czy był zawieszony przez inny typ urlopu. Gdy zostanie złożony wniosek o urlop dla typu urlopu zawieszonego, automatycznie zostanie utworzone zawieszenie urlopu dla typu urlopu zawieszonego. 
+
+10. Wybierz opcję **Zapisz**.
 
 ## <a name="configure-leave-type-rules"></a>Konfiguruj reguły typu urlopu
 
@@ -66,16 +68,15 @@ Typy urlopów w module Dynamics 365 Human Resources określają różne rodzaje 
 
    Święta ustawia się w kalendarzu czasu pracy. Aby uzyskać więcej informacji, zobacz [Tworzenie kalendarza czasu pracy](hr-leave-and-absence-working-time-calendar.md)
    
-## <a name="configure-preview-features"></a>Konfigurowanie funkcji w wersji zapoznawczej
-
-Jeśli włączono obsługę funkcji w wersji zapoznawczej dla urlopów i nieobecności, należy skonfigurować również ich ustawienia.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. Wybierz typ urlopu dla sald przeniesionych na następny okres do przeniesienia. Można również utworzyć nowy typ urlopu dla przeniesienia do na następny okres. 
-
+ 3. Określ **Typ urlopu przeniesiony na późniejszy okres** na następny okres dla typu urlopu. Po wybraniu tej opcji wszelkie salda przeniesione zostaną przeniesione do określonego rodzaju urlopu. Typ urlopu do przodu musi być również uwzględniony w planie urlopu i nieobecności. 
+ 
+ 4. Określ **Reguły wygasania** dla typu urlopu. Po skonfigurowaniu tej opcji możesz wybrać jednostkę dni lub miesięcy i ustawić czas wygaśnięcia. Można również określić datę wejścia w życie reguły wygasania. Salda urlopu, które istnieją w momencie wygaśnięcia, zostaną odjęte od typu urlopu i zostaną odzwierciedlone w saldzie urlopu. 
+ 
+ 
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
 - [Tworzenie planu urlopu i nieobecności](hr-leave-and-absence-plans.md)
 - [Tworzenie kalendarza czasu pracy](hr-leave-and-absence-working-time-calendar.md)
+- [Wstrzymywanie urlopu](hr-leave-and-absence-suspend-leave.md)
+

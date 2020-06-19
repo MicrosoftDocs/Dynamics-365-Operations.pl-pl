@@ -3,7 +3,7 @@ title: Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej
 description: W tym temacie opisano sposób konfigurowania aplikacji magazynowej w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
 author: perlynne
 manager: tfehr
-ms.date: 03/31/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 82b4f40510d5bbf829508f17f1064886620a4aed
+ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346383"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410892"
 ---
 # <a name="license-plate-receiving-via-the-warehousing-app"></a>Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej
 
@@ -33,47 +33,51 @@ Dane ASN są połączone z ładowaniem i wysyłkami za pośrednictwem *struktur 
 > [!NOTE]
 > Aby zmniejszyć liczbę transakcji magazynowych, gdy używane są struktury opakowań z zagnieżdżonymi numerami identyfikacyjnymi, system rejestruje fizycznie dostępne zapasy na nadrzędnym numerze identyfikacyjnym. Aby wyzwolić przesunięcie fizycznego stanu zapasów z nadrzędnego numeru identyfikacyjnego do zagnieżdżoneego numeru identyfikacyjnego na podstawie danych o strukturze pakowania, urządzenie przenośne musi dostarczyć element menu, który jest oparty procesie tworzenia pracy *Pakowanie do zagnieżdżonych numerów identyfikacyjnych*.
 
-<!-- To be used later (will require further editing):
-## Warehousing mobile device app processing
+## <a name="warehousing-mobile-device-app-processing"></a>Przetwarzanie aplikacji dla urządzenia przenośnego z Warehousing
 
-When a worker scans an incoming license plate ID, the system initializes a license plate receiving process. Based on this information, the content of the license plate (data coming from the ASN) gets physically registered at the inbound dock location. The flows that follow will depend your business process needs.
+Gdy pracownik skanuje przychodzący identyfikator numeru identyfikacyjnego, system inicjalizuje proces odbierania numerów identyfikacyjnych. Na podstawie tych informacji zawartość numeru identyfikacyjnego (danych pochodzących z ASN) jest fizycznie rejestrowana w lokalizacji doku rozładunkowego. Następujące przepływy będą uzależnione od potrzeb procesu biznesowego.
 
-## Work policies
+## <a name="work-policies"></a>Zasady pracy
 
-As with (for example) the *Report as finished* mobile device menu item process, the license plate receiving process supports several workflows based on the defined setup.
+Podobnie jak w przypadku (na przykład) proces *Zgłoszenie wyrobów gotowych* element menu urządzenia mobilnego, proces odbierania numerów identyfikacyjnych obsługuje kilka przepływów pracy w oparciu o zdefiniowaną konfigurację.
 
-### Work policies with work creation
+### <a name="work-policies-with-work-creation"></a>Zasady pracy z tworzeniem pracy
 
-Registration of physical on-hand where either the same warehouse worker immediately process a put-away work process following the inbound receiving (License plate receiving and put away) or where the registration and put away process gets handled as two different warehouse operations (License plate receiving) following the processing of the put-away work by using the existing work process via another mobile device menu item.
+Podczas rejestrowania pozycji przychodzących przy użyciu zasady pracy, która tworzy pracę, system generuje i zapisuje rekordy pracy odłożenia dla każdej rejestracji. W przypadku korzystania z procesu pracy *Odbieranie numeru identyfikacyjnego i odłożenie* rejestracja i odkładanie jest obsługiwane jako pojedyncza operacja za pomocą jednego elementu menu urządzenia przenośnego. W przypadku korzystania z procesu *Przyjęcie numeru identyfikacyjnego* procesy przyjmowania i odkładania są traktowane jako dwie różne operacje magazynowe, każdy z własnymi elementami menu urządzeń przenośnych.
 
-## Work policies without work creation
+### <a name="work-policies-without-work-creation"></a>Zasady pracy bez tworzenia pracy
 
-You can use the license plate receiving process without creating work by using the *License plate receiving without creating work* feature.
+Proces odbierania numeru identyfikacyjnego można stosować bez tworzenia pracy. W przypadku zdefiniowania zasad pracy mających typ zlecenia pracy *Przyjęcie przeniesienia* lub *Zamówienia zakupu*, a następnie użycia procesu do *Odbieranie numeru identyfikacyjnego (i odłożenie)* na podstawie poniższych dwóch procesów aplikacji mobilnej Warehousing nie zostanie utworzona żadna praca. W zamian zarejestrują one po prostu przychodzące zapasy fizyczne na numerze identyfikacyjnym w doku przyjęcia przychodzącego.
 
-By defining **Work policies** with a **Work order type** of *Transfer receipt* and/or *Purchase orders*, and using the **Process** for **License plate receiving (and put away)**, the two Warehousing app process:
+- *Przyjęcie numeru identyfikacyjnego*
+- *Odbieranie numeru identyfikacyjnego i odłożenie*
 
-- License plate receiving
-- License plate receiving and put away
+> [!NOTE]
+> - W sekcji **Lokalizacje zapasów** należy zdefiniować co najmniej jedną lokalizację zasady pracy. Nie można określić tej samej lokalizacji dla wielu zasad pracy.
+> - Opcja **Drukuj etykietę** dla elementów menu aplikacji Warehousing na urządzenia przenośne nie powoduje drukowania etykiety numeru identyfikacyjnego bez tworzenia pracy.
 
-will not create work, but only register the inbound physical inventory on the license plate at the inbound receiving dock.
+Aby udostępnić tę funkcję w systemie, należy włączyć funkcję *Ulepszenia odbierania numerów identyfikacyjnych* w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-For more information about the *Report as finished* production scenario, see the [Warehouse work policies overview](warehouse-work-policies.md).
+### <a name="receive-inventory-on-a-location-that-doesnt-track-license-plates"></a>Odbiór zapasów w lokalizacji, w której nie są śledzone numery identyfikacyjne
 
--->
+Istnieje możliwość użycia lokalizacji magazynowej przypisanej do profilu lokalizacji, nawet jeśli **Śledzenie numerów identyfikacyjnych** nie jest włączone. Dlatego po odebraniu zapasów można bezpośrednio zarejestrować dostępne zapasy w lokalizacji bez tworzenia pracy.
+
+## <a name="add-mobile-device-menu-items-for-each-receiving-location-in-a-warehouse"></a>Dodaj elementy menu urządzeń przenośnych dla każdej lokalizacji przyjęcia w magazynie
+
+Funkcja *Ulepszenia odbierania numerów identyfikacyjnych* pozwala uzyskać dostęp do każdej lokalizacji w magazynie, dodając do aplikacji mobilnej Warehousing specyficzne dla lokalizacji pozycje menu odbiór numeru identyfikacyjnego (i odkładania). Poprzednio system obsługiwał odbieranie tylko w lokalizacji domyślnej zdefiniowanej dla każdego magazynu. Jednak gdy ta funkcja jest włączona, elementy menu urządzenia mobilnego do odbierania (i odkładania) numerów identyfikacyjnych udostępniają teraz opcję **Użyj domyślnych danych**, która pozwala wybrać niestandardową lokalizację „do” dla każdego elementu menu. (Ta opcja jest już dostępna dla innych typów elementów menu.)
+
+Aby udostępnić tę funkcję w systemie, należy włączyć funkcję *Ulepszenia odbierania numerów identyfikacyjnych* w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Wyświetlanie lub pomijanie strony Podsumowanie przyjęcia
 
-Funkcji *Kontroluj, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych* można użyć w celu wykorzystania dodatkowego przepływu aplikacji magazynowej w ramach procesu odbierania numerów identyfikacyjnych.
-
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Kontroluj, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych*
+Funkcji *Kontroluj, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych* można użyć w celu wykorzystania dodatkowego przepływu aplikacji Warehouse w ramach procesu odbierania numerów identyfikacyjnych.
 
 Gdy ta funkcja jest włączona, pozycje menu urządzenia mobilnego dotyczące odbioru i odłożenia tablicy rejestracyjnej oraz odłożenia tablicy rejestracyjnej będą zapewniać ustawienie **Wyświetl stronę podsumowania przyjęcia**. To ustawienie ma następujące opcje:
 
 - **Wyświetlenie szczegółowego podsumowania** — podczas przyjmowania numeru identyfikacyjnego pracownicy będą widzieć dodatkową stronę, na której są wyświetlane pełne informacje dotyczące ASN.
 - **Pomiń podsumowanie** — pracownicy nie będą widzieli pełnych informacji ASN. Pracownicy magazynu również nie będą mogli ustawić kodu dyspozycji ani dodać wyjątków podczas procesu odbioru.
+
+Aby udostępnić tę funkcję w systemie, należy włączyć *Kontroluj, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych* w [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Zapobiegaj używaniu numerów identyfikacyjnych wysłanych z zamówienia przeniesienia w magazynach innych niż magazyn docelowy
 
@@ -81,10 +85,7 @@ Nie można użyć procesu odbierania numeru identyfikacyjnego, jeśli numer ASN 
 
 W scenariuszach zamówień przeniesienia, w których magazyn tranzytowy nie śledzi numerów identyfikacyjnych (a zatem nie śledzi fizycznych dostępnych zapasów powiązanych z numerem identyfikacyjnym), można użyć funkcji *Zapobiegaj wykorzystywaniu wysłanych numerów identyfikacyjnych z zamówień przeniesienia w magazynach innych niż magazyn docelowy* w celu uniemożliwienia fizycznej aktualizacji numerów identyfikacyjnych w tranzycie.
 
-Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
-
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Zapobiegaj używaniu numerów identyfikacyjnych wysłanych z zamówienia przeniesienia w magazynach innych niż magazyn docelowy*
+Aby udostępnić tę funkcję w systemie, należy włączyć *Zapobiegaj używaniu numerów identyfikacyjnych wysłanych z zamówienia przeniesienia w magazynach innych niż magazyn docelowy* w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Aby zarządzać funkcjami, gdy ta funkcja jest dostępna, wykonaj następujące kroki.
 
@@ -96,6 +97,8 @@ Aby zarządzać funkcjami, gdy ta funkcja jest dostępna, wykonaj następujące 
 
 ## <a name="more-information"></a>Więcej informacji
 
-<!-- To read more about inbound loads, see [Link for Inbound load (Olga's doc.)] -->
-
 Aby uzyskać więcej informacji o elementach menu urządzeń przenośnych, zapoznaj się z tematem [Konfigurowanie urządzeń przenośnych do pracy magazynowej](configure-mobile-devices-warehouse.md).
+
+Aby uzyskać więcej informacji oscenariuszu produkcji *Zgłoszenie wyrobów gotowych*, zapoznaj się z [Omówienie zasad pracy magazynowej](warehouse-work-policies.md).
+
+Aby uzyskać więcej informacji o zarządzaniu ładunkami przychodzącymi, zajrzyj do [Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu](inbound-load-handling.md).

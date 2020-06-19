@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: e879ec53a88e5e30257608cba7604b404ac2368a
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e11ccdf138adbf05ae1fc8ef739687b9212ae1fe
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383840"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403342"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurowanie zasad konsolidacji wysyłki
 
@@ -270,7 +270,7 @@ W tym przykładzie utworzysz zasady *Odbiorcy zezwalający na konsolidację*, kt
 
 - Zasady będą wykonywać zapytania dotyczące konkretnej puli zamówień, aby identyfikować odbiorców, którzy akceptują wysyłki skonsolidowane.
 - Konsolidacja z otwartymi wysyłkami jest wyłączona.
-- Konsolidacja jest wykonywana w ramach różnych zamówień przy użyciu pól wybranych przez domyślne zasady CrossOrder (w celu zreplikowania wcześniejszego pola wyboru **Magazyn**).
+- Konsolidacja jest wykonywana w ramach różnych zamówień przy użyciu pól wybranych przez domyślne zasady CrossOrder (w celu zreplikowania poprzedniego pola wyboru **Konsolidowanie wysyłki podczas zwalniania do magazynu**).
 
 - Regułę w zamówieniu sprzedaży można zastąpić, wybierając inną pulę zamówień.
 
@@ -306,7 +306,7 @@ W tym przykładzie utworzysz zasady *Magazyny zezwalające na konsolidację*, kt
 
 - Zasady będą wykonywać zapytania dotyczące konkretnej puli zamówień, aby identyfikować magazyny z możliwością konsolidowania wysyłek.
 - Konsolidacja z otwartymi wysyłkami jest wyłączona.
-- Konsolidacja jest wykonywana w ramach różnych zamówień przy użyciu pól wybranych przez domyślne zasady CrossOrder (w celu zreplikowania wcześniejszego pola wyboru **Magazyn**).
+- Konsolidacja jest wykonywana w ramach różnych zamówień przy użyciu pól wybranych przez domyślne zasady CrossOrder (w celu zreplikowania poprzedniego pola wyboru **Konsolidowanie wysyłki podczas zwalniania do magazynu**).
 
 Zazwyczaj ten przypadek biznesowy można obsługiwać przy użyciu zasad domyślnych utworzonych w [scenariuszu 1](#scenario-1). Można jednak również ręcznie utworzyć podobne zasady, wykonując poniższe kroki.
 

@@ -3,12 +3,12 @@ title: Omówienie
 description: W Dynamics 365 Human Resources obszar roboczy Urlopy i nieobecności udostępnia elastyczną strukturę do tworzenia nowych planów urlopów, przepływy pracy do zarządzania wnioskami oraz intuicyjną stronę samoobsługi umożliwiającą pracownikom wnioskowanie o czas wolny.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
-ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
+ms.openlocfilehash: ec72d2d741f7f8428a7daa97bb982e9fc00b8c3f
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3325772"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428974"
 ---
 # <a name="overview"></a>Omówienie
 
@@ -84,10 +84,9 @@ W środowisku typu **Piaskownica** można testować nowe funkcje urlopów i nieo
 
 Funkcje w wersji zapoznawczej obejmują:
 
-- **Zawieszenie urlopu** — istnieje możliwość zawieszenia urlopu i nieobecności w Human Resources dla pracownika etatowego. Zawieszenie urlopu powoduje zatrzymanie naliczania dla wybranych typów urlopów. Jeśli zawieszenie następuje po procesach naliczania, wstrzymanie urlopu powoduje utworzenie skorygowanej korekty salda urlopu pracownika. Można również uwzględnić kody przyczyny podczas wstrzymywania urlopu pracownika etatowego. Środowisko użytkownika zostało zaktualizowane w celu wskazania wstrzymania. 
+- **Pozostaw naliczenie według firmy lub planu** — można uruchomić proces naliczania dla wszystkich firm lub dla jednej firmy. Można również uruchomić proces naliczania dla określonego planu urlopu i nieobecności dla danej firmy. 
 
-- **Przenieś reguły do przodu** — można określić typ urlopu przeniesienia do przodu dla sald przeniesionych na następny okres, gdzie są przenoszone korekty do przodu. Jeśli na przykład pracownik przeniósł 10 dni do przodu, można wybrać inny typ urlopu dla tych 10 dni. 
+- **Kupuj urlop** — możesz włączyć i utworzyć zasady kupna urlopu dla pracowników, aby wysyłać wnioski zakupu. Pracownicy mogą przesyłać wnioski zakupu i mieć salda automatycznie aktualizowane w celu odzwierciedlenia tego wniosku.  
 
-- **Dołączanie kodu przyczyny i komentarzy do korekt** — umożliwia uwzględnienie kodu przyczyny i komentarza podczas korygowania salda urlopu pracownika etatowego. 
+- **Dodaj załączniki do zatwierdzonych wniosków urlopu** — możesz dodać załącznik do wniosku urlopowego, który już został zatwierdzony. 
 
-- **Przejście do parametrów urlopu i nieobecności** — teraz można używać tylko parametrów urlopu i nieobecności zamiast parametrów działu kadr. 
