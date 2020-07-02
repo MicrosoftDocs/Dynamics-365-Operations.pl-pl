@@ -1,9 +1,9 @@
 ---
 title: Zarządzanie funkcjami — omówienie
 description: W tym temacie opisano funkcję zarządzania funkcjami i sposób jego używania.
-author: mikefalkner
+author: ChrisGarty
 manager: AnnBe
-ms.date: 09/12/2019
+ms.date: 06/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,17 +13,17 @@ audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: a9be51c4a5cdadd968de160dc0b1406c95382eeb
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778712"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456604"
 ---
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
@@ -144,3 +144,34 @@ Zarządzanie funkcjami umożliwia kontrolowanie funkcji, które są dostarczane 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Korzystanie z funkcji Zarządzanie funkcjami w celu włączania funkcji ISV lub funkcji niestandardowych
 
 Zarządzanie funkcjami nie jest obecnie dostępne dla funkcji pochodzących od niezależnych dostawców oprogramowania (ISV) i funkcji niestandardowych. Jednak firma Microsoft rozszerza możliwości Zarządzania funkcjami. Po zakończeniu tych ulepszeń firma Microsoft będzie udostępniać Zarządzanie funkcjami dla wszystkich funkcje i przekaże instrukcje aktualizowania posiadanych funkcji, aby były obsługiwane przez Zarządzanie funkcjami.
+
+## <a name="frequently-asked-questions-faq"></a>Często zadawane pytania (FAQ)
+
+### <a name="when-are-features-added-removed-or-changed"></a>Kiedy są dodawane, usuwane lub zmieniane są funkcje? 
+Funkcje są dodawane, usuwane i zmieniane za pomocą zmian kodu. Aby te zmiany zostały wprowadzone, należy zaktualizować środowiska.
+
+### <a name="does-a-feature-become-mandatory-automatically"></a>Czy funkcja staje się obowiązkowa automatycznie? 
+Nie, zamiana funkcji w obowiązkową nie jest akcją automatyczną. Zespoły produktów muszą dokonać zmiany kodu.
+
+### <a name="when-do-features-become-mandatory"></a>Kiedy funkcje stają się obowiązkowe? 
+Zasada polega na tym, że wszystkie nowe funkcje będą obowiązywać przez okres 12 miesięcy i nie będzie konieczne zarządzanie zmianami, dopóki ta funkcja nie zostanie włączona. Zespoły produktów mogą określić, czy funkcja ma być obowiązkowa po zakończeniu tego okresu. 
+
+### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Dlaczego nie istnieje określona „obowiązkowa data włączenia"? 
+Czas wydania aktualizacji jest zmienny, czas aktualizacji środowiska jest zmienny, a klienci mogą zdecydować się na pominięcie niektórych aktualizacji. W wyniku tego trudno jest ustalić konkretne daty. 
+
+### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Gdzie jest dokumentacja funkcji, które są wprowadzane jako obowiązkowe? 
+Dokumentacja pochodzi od zespołów aplikacji. Często są one wymienione w [usuniętych lub przestarzałych funkcjach](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+
+### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Czy istnieje powiadomienie dotyczące produktu lub sygnał, że funkcja jest wymagana do włączenia? 
+Mechanizm powiadamiania związany z wprowadzaniem wymaganej funkcji nie istnieje dzisiaj.
+
+### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Czy funkcje zostały kiedykolwiek włączone bez wiedzy klienta? 
+Tak, jeśli funkcje nie mają wpływu funkcjonalnego, mogą być wyłączone domyślnie.
+
+### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Co to jest funkcja wylotu i w jaki sposób wiąże się ona z zarządzaniem funkcjami? 
+Usuwanie funkcji to przełączniki w czasie rzeczywistym włączone/wyłączone kontrolki Microsoft. Są one niezależne od kontrolki odbiorcy udostępnianej przez Zarządzanie funkcjami. 
+- Funkcje prywatnej wersji zapoznawczej nie będą wymieniane w Zarządzaniu funkcjami, dopóki nie zostaną włączone. W procesie produkcji odbiorca musi wyrazić zgodę na część specjalnego programu, który ma zostać wyprowadzony.
+- Funkcje publicznej wersji zapoznawczej i wydanej (ogólnie dostępne) będą wyświetlane na liście Zarządzanie funkcjami, chyba że zostaną usunięte. Opuszczenie funkcji jest uważane za ostateczność dla zespołów produktowych, jeśli zostanie wykryty krytyczny problem i zwykle będzie to operacja wykonywana przez jednego klienta.
+
+### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Czy funkcje zostały kiedykolwiek opuszczone bez wiedzy klienta? 
+Tak, jeśli funkcja wpływa na funkcjonowanie środowiska, które nie ma wpływu funkcjonalnego, może być domyślnie włączona.

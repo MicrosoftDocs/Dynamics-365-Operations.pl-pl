@@ -3,7 +3,7 @@ title: Konfigurowanie decyzji ręcznych w przepływie pracy
 description: W tym temacie wyjaśniono sposób konfigurowania właściwości decyzji ręcznej.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f46b875f52d3d3e7c755ee92dcd5faddf0d94356
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 130cb50369c13bc3478340023c94f169ee5250cf
+ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179498"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455040"
 ---
 # <a name="configure-manual-decisions-in-a-workflow"></a>Konfigurowanie decyzji ręcznych w przepływie pracy
 
@@ -239,26 +239,6 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisana decyzja ręc
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
     <li>Lista <strong>Dostępni użytkownicy</strong> zawiera wszystkich użytkowników. Wybierz użytkowników, którym chcesz przypisać decyzję, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol>
-    </td>
-    </tr>
-    <tr>
-    <td>Kolejka</td>
-    <td>Kolejka elementów roboczych</td>
-    <td>
-    <ol>
-    <li>Po wybraniu wartości w polu <strong>Kolejka</strong> kliknij kartę <strong>Na podstawie kolejki</strong>.</li>
-    <li>Aby przypisać decyzję do określonej kolejki, wykonaj następujące czynności: <ol>
-    <li>Na liście <strong>Typ kolejki</strong> zaznacz pozycję <strong>Kolejki elementów roboczych</strong>.</li>
-    <li>Na liście <strong>Nazwa kolejki</strong> zaznacz kolejkę.</li>
-    </ol>
-    </li>
-    <li>Jeśli określony warunek ma decydować o kolejce, do której zostanie przypisana decyzja, wykonaj następujące czynności: <ol>
-    <li>Na liście <strong>Typ kolejki</strong> zaznacz pozycję <strong>Warunkowe kolejki elementów roboczych</strong>.</li>
-    <li>Na liście <strong>Nazwa kolejki</strong> zaznacz pozycję <strong>Kolejka warunkowa</strong>.</li>
-    </ol>
-    </li>
-    </ol>
-    <blockquote>[!NOTE] Ta opcja jest używana tylko do niektórych przepływów pracy, takich jak Zarządzanie sprawami.</blockquote>
     </td>
     </tr>
     </tbody>

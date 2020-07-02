@@ -74,7 +74,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Obsługa uaktualniania i wersji N-1
               items:
-                - name: Obsługa uaktualniania i wersji N-1 w aplikacji Retail
+                - name: Obsługa uaktualniania i wersji N-1 w aplikacji Commerce
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Instalacja, konfiguracja i migracja jednorazowa we wdrożeniu etapowym (N-1)'
                   href: dev-itpro/n-1-installation-configuration.md
@@ -88,14 +88,12 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Commerce – strona główna
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.12 (sierpień 2020)
+                    - name: Rozwiązanie Commerce 10.0.12 (sierpień 2020)
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Rozwiązanie Commerce w wersji 10.0.11 (lipiec 2020)
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Rozwiązanie Commerce w wersji 10.0.10 (maj 2020)
                       href: get-started/whats-new-commerce-10-0-10.md
-                    - name: Rozwiązanie Commerce w wersji 10.0.9 (kwiecień 2020)
-                      href: get-started/whats-new-10-0-9.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Finance and Operations
@@ -504,6 +502,8 @@
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Silne uwierzytelnianie klienta (SCA) za pomocą łącznika Adyen
                       href: adyen_redirect.md
+                    - name: Dedykowane terminale płatności oraz monity o drukarkę i szuflady kasowe
+                      href: pos-multi-hws.md
                     - name: Płynny przełącznik offline dla operacji na kartach upominkowych i notach kredytowych
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Konfigurowanie scenariuszy płatności za faktury
@@ -572,6 +572,10 @@
                       href: set-up-bar-codes.md
                     - name: Konfigurowanie masek kodów kreskowych
                       href: set-up-bar-code-masks.md
+                - name: Gwarancje
+                  items:
+                    - name: Tworzenie i konfigurowanie gwarancji rozszerzonych
+                      href: extended-warranty.md
             - name: Ceny i rabaty
               items:
                 - name: Rabaty
@@ -974,7 +978,7 @@
                       href: cart-icon-module.md
                     - name: Moduł realizacji transakcji
                       href: add-checkout-module.md
-                    - name: Moduł potwierdzenia zamówienia
+                    - name: Moduł szczegółów zamówienia
                       href: order-confirmation-module.md
                     - name: Moduł wyboru sklepu
                       href: store-selector.md
@@ -1896,6 +1900,8 @@
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Konfigurowanie pliku środowiska projektowego (.env)
                       href: e-commerce-extensibility/configure-env-file.md
+                    - name: Debugowanie względem środowiska projektowego Commerce w warstwie 1 Commerce
+                      href: e-commerce-extensibility/debug-tier-1.md
                     - name: Konfigurowanie udostępniania kodu Azure DevOps i tworzenie procesu kompilacji
                       href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Omówienie platformy
@@ -2028,6 +2034,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Programowanie w środowiskach programistycznych hostowanych w chmurze bez dostępu administracyjnego
                   href: dev-itpro/cloud-dev-box.md
+                - name: Konfigurowanie potoku kompilacji zestawu Commerce SDK
+                  href: dev-itpro/retail-sdk/SDK-build-pipeline.md
             - name: Rozszerzalność punktu sprzedaży
               items:
                 - name: Układy ekranu punktu sprzedaży

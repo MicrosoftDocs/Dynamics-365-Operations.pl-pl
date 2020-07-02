@@ -3,7 +3,7 @@ title: Tworzenie nowych użytkowników
 description: Użytkownikami są wewnętrzni pracownicy organizacji lub zewnętrznych odbiorcy i dostawcy, którzy potrzebują dostępu do systemu w celu wykonywania swoich zadań.
 author: maertenm
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 06/08/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9db4b6d355d6499bce6c550b2fbe76b82cf69fd4
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d126b449074663772549b96b86acb53db971a5d4
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143588"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435591"
 ---
 # <a name="create-new-users"></a>Tworzenie nowych użytkowników
 
@@ -50,8 +50,9 @@ Użytkownicy zewnętrzni dla dzierżawy, na którą wdrożono środowisko, musz�
 10. Wybierz opcję **Zapisz**.
 
 ## <a name="import-users"></a>Importuj użytkowników
-1. W okienku akcji wybierz pozycję **Importuj użytkowników**.
-2. Na liście oznacz wybrany wiersz.
-3. Wybierz **Importuj użytkowników**.
-4. Kliknij przycisk **Zamknij**.
+1. Wybierz kolejno opcje **Administrowanie systemem \> Użytkownicy \> Użytkownicy**.
+2. W okienku akcji wybierz pozycję **Importuj użytkowników**.
+3. Na liście oznacz wybrany wiersz.
+4. Wybierz **Importuj użytkowników**.
+5. Kliknij przycisk **Zamknij**.
 

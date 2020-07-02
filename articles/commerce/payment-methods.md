@@ -3,7 +3,7 @@ title: Metody płatności
 description: Każdy typ płatności akceptowany przez sprzedawcę detalicznego musi zostać skonfigurowany na etapie konfiguracji systemu. W tym artykule opisano typy płatności, które można utworzyć, oraz proces ich konfigurowania.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6afbddad869c70e4527c49fc5d4b520d7602f825
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 710c2f3bbe5b76af6d0bc0bf9a469e52c98c18d2
+ms.sourcegitcommit: 550006e6376815237c21b5b30e928353f62fd97c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023734"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3463167"
 ---
 # <a name="payment-methods"></a>Metody płatności
 
@@ -39,7 +39,7 @@ Sprzadawcy detaliczni mogą akceptować różne typy płatności w zamian za pro
 - **Waluta** — główna forma płatności inna niż domyślna waluta firmy. Formami waluty są zarówno monety, jak i banknoty. Metoda płatności walutowej uwzględnia wszystkie używane waluty. Aby można było używać tej metody płatności, należy skonfigurować waluty i określić dla nich informacje o wymianie walut.
 - **Karta** — wszystkie używane rodzaje kart, takie jak karty debetowe i kredytowe. Warto skonfigurować jeden typ płatności kartą na poziomie organizacji, aby można było akceptować wszystkie rodzaje kart. Następnie na poziomie sklepu można skonfigurować metody płatności dla wszystkich kart lub zestawów kart, które powinny być przetwarzane przy użyciu tych samych ustawień. Aby akceptować płatności kartą w sklepie, należy skonfigurować dostępne na rynku karty producentów, czyli karty debetowe i kredytowe.
 - **Nota kredytowa** — noty wystawione lub realizowane w punkcie sprzedaży. Nota kredytowa może dotyczyć kredytu lub zwrotu i być wystawiona dla zwrotu sprzedaży. W przypadku tylko częściowej realizacji noty kredytowego program wystawia nową notę dla nowego salda. Nowa nota kredytowa ma inny numer. Nota kredytowa może być użyta tylko raz, a system zachowuje zapisy wszystkich numerów, które zostały użyte. Rekord można obejrzeć na stronie **Tabela noty kredytowej**. Odbiorca nie może zrealizować noty kredytowej na kwotę większą niż jej wartość.
-- **Karta upominkowa** — karty upominkowe wystawiane lub realizowane w punkcie sprzedaży. W przypadku kart upominkowych nie są dozwolone nadpłaty.
+- **Karta upominkowa** — karty upominkowe wystawiane lub realizowane w punkcie sprzedaży. W przypadku kart upominkowych nie są dozwolone nadpłaty. Wszystkie karty upominkowe powinny mieć mapowania numerów kart. 
 - **Konto odbiorcy** — pozwala na obciążenie płatnością konta odbiorcy z poziomu kasy w chwili sprzedaży. Ta metoda płatności służy również do zbierania informacji o sprzedaży lub rabatach właściwych dla odbiorcy, gdy odbiorca dokonuje płatności za pomocą innej metody płatności. W takim przypadku należy skonfigurować informacje właściwe dla odbiorcy.
 - **Punkty lojalnościowe** — Liczba punktów gromadzonych przez klientów w trakcie programów lojalnościowych. Jeśli utworzysz programy lojalnościowe, klienci będą mogli zdobywać punkty i wykorzystywać je na różne sposoby. W niektórych programach lojalnościowych klienci mogą zamieniać punkty na rabaty, lub nawet wykorzystywać je jako formę płatności.
 

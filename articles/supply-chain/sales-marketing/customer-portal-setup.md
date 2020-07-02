@@ -3,7 +3,7 @@ title: Instalowanie, konfigurowanie i aktualizowanie portalu klienta
 description: W tym temacie przedstawiono szczegółowe informacje na temat licencjonowania i instrukcje konfiguracji dla portalu klienta.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b9d1e742f78254d949dc49fda008d63b8bff4d65
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 0343100362c4d7bc3e09334fb7890919bdb84941
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413998"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435615"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Instalowanie, konfigurowanie i aktualizowanie portalu klienta
 
@@ -35,7 +35,7 @@ Aby zaimplementować Portal odbiorców, należy dysponować następującymi lice
 
 Portal klienta zależy od portali Power Apps i podwójnego zapisu, co pokazano na poniższej ilustracji.
 
-![![Zależności portalu klienta](media/customer-portal-elements.png "Zależności portalu klienta")](media/customer-portal-elements.png "Customer portal dependencies")
+![Zależności portalu klienta](media/customer-portal-elements.png "Zależności portalu klienta")
 
 W przeciwieństwie do innych funkcji Supply Chain Management, szablon Portalu klienta znajduje się w portalach Power Apps. Z tego względu Portal klienta jest ograniczony przez funkcje i możliwości dostarczane przez portale Power Apps i podmioty zamawiające z podwójnym zapisem.
 
@@ -59,7 +59,7 @@ Przed rozpoczęciem należy upewnić się, że wykonano już [wymagane ustawieni
 
 1. Przejdź do [make.powerapps.com](https://make.powerapps.com/).
 2. Upewnij się, że korzystasz z środowiska, w którym jest włączony podwójny zapis.
-3. Na karcie **Tworzenie** przewiń w dół do sekcji **Rozpocznij od szablonu**, a następnie wybierz szablon o nazwie **Klient Supply Chain Management**.
+3. Na karcie **Tworzenie** przewiń w dół do sekcji **Rozpocznij od szablonu**, a następnie wybierz szablon o nazwie **Portal klienta**.
 4. Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie.
 
 Po zakończeniu obsługi administracyjnej można uzyskać dostęp do portalu klienta w sekcji **Twoje aplikacje** na stronie **Głównej**.
@@ -71,7 +71,7 @@ Po zakończeniu obsługi administracyjnej można uzyskać dostęp do portalu kli
 
 Do portalu klienta można później dodać więcej funkcji. Wszelkie zmiany, które firma Microsoft wprowadza w podstawowych składnikach rozwiązania, będą automatycznie widoczne w danym środowisku. Jednak witryna sieci Web, która jest zainicjowana w środowisku, nie będzie automatycznie uwzględniać zmian wprowadzonych w danych konfiguracyjnych. Należy ręcznie zastosować te zmiany, pobierając kod z nowego szablonu i scalając go z zainicjowaną witryną sieci Web.
 
-## <a name="resources"></a>Zasoby
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 Aby dowiedzieć się, jak można skonfigurować i dostosować Portal klienta, należy zacząć od przejrzenia następującej dokumentacji dla podstawowych technologii:
 

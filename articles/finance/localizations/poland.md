@@ -16,12 +16,12 @@ ms.search.region: Poland
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 258baca60be63cedf2979aa6a91c9868744ab090
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7e18bab8edf81f01e6bd2bddb52b55b748e923e2
+ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770398"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3457579"
 ---
 # <a name="poland-overview"></a>Polska — omówienie
 
@@ -40,3 +40,4 @@ Ten temat zawiera łącza do zasobów dokumentacji dla Polski.
 - [Standardowy plik audytu (SAF)](emea-pol-standard-audit-file-saf.md)
 - [Odsetki podatkowe i rynkowe](emea-pol-interest-calculation.md)
 - [Zestawienie obrotów i sald](emea-pol-turnover-balances-statement.md)
+- [Rozdzielona różnica kursowa AP/AR](emea-pol-split-ap-ar-exchange-difference.md)

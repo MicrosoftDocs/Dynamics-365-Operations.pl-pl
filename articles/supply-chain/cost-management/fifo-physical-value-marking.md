@@ -3,7 +3,7 @@ title: FIFO z wartością fizyczną i oznaczeniami
 description: Pierwszy na wejściu — pierwszy na wyjściu (First in, first out; FIFO) to model magazynu, w którym wcześniejsze nabycia są wydawane w pierwszej kolejności. Finansowo zaktualizowane elementy z magazynu są rozliczane z pierwszymi finansowo zaktualizowanymi przychodami do magazynu, na podstawie daty finansowej transakcji magazynowej.
 author: AndersGirke
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e237d1e9f9bb83d0fe65556eca07c8757f920664
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a66a1b977a4e36f9ad057683366c39a81ba1d833
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201762"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454633"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO z wartością fizyczną i oznaczeniami
 
@@ -49,8 +49,8 @@ W tym przykładzie FIFO grupa modelu towaru nie jest oznaczona i nie zawiera war
 -   4a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 30,00 USD.
 -   4b. Finansowy przychód magazynowy w ilości 1 i po koszcie 30,00 USD.
 -   5a. Fizyczne wydanie z magazynu ilości równej 1 o jednostkowym koszcie własnym równym 20,00 zł (średnia krocząca transakcji zaktualizowanych finansowo).
--   5b. Finansowe wydanie z magazynu ilości równej 1 o jednostkowym koszcie własnym równym 20,00 zł (średnia krocząca transakcji zaktualizowanych finansowo).
--   6. Wykonywane jest zamknięcie magazynu. Zgodnie z metodą FIFO, pierwszy finansowo zaktualizowany rozchód będzie rozliczony z pierwszym finansowo zaktualizowanym przychodem. Dla transakcji wydania zostaje dokonana korekta równa 10,00 USD.
+-   5b. Finansowe wydanie z magazynu ilości równej 1 o jednostkowym koszcie własnym równym 15,00 zł (średnia krocząca transakcji zaktualizowanych finansowo).
+-   6. Wykonywane jest zamknięcie magazynu. Zgodnie z metodą FIFO, pierwszy finansowo zaktualizowany rozchód będzie rozliczony z pierwszym finansowo zaktualizowanym przychodem. Dla transakcji wydania zostaje dokonana korekta równa 5,00 USD.
 
 Nowy średni bieżący koszt własny odzwierciedla średnią finansowo zaktualizowanych transakcji. Poniższe ilustracje pokazują efekty modelu magazynu FIFO na tę serię transakcji, gdy opcja **Włącz wartość fizyczną** nie jest używana. 
 

@@ -3,7 +3,7 @@ title: Zgodność z plikami cookie
 description: W tym temacie opisano zagadnienia dotyczące zgodności z plikami cookie i domyślnych zasad, które są zawarte w aplikacji Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 06/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b25fd3fffe153e1a07a1f8b21f0cc96f633fb894
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: e1fa016dc9f46b048220f0f83e4b0783087de91e
+ms.sourcegitcommit: c66c4c67a21e7d7d3a94a3fd766c3184b6e65c4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275378"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3446920"
 ---
 # <a name="cookie-compliance"></a>Zgodność z plikami cookie
-
 
 [!include [banner](includes/banner.md)]
 
@@ -33,9 +32,29 @@ W tym temacie opisano zagadnienia dotyczące zgodności z plikami cookie i domy�
 
 ## <a name="overview"></a>Omówienie
 
-Prywatność jest ważnym czynnikiem, gdy używane są wszelkie technologie śledzenia, które wpływają na klientów usługi e-Commerce. Ze względu na standardy zgodności z zasadami ochrony prywatności, takimi jak Ogólne rozporządzenie o ochronie danych (RODO) w Unii Europejskiej (UE), należy wziąć pod uwagę elektroniczne wytyczne dotyczące prywatności w odniesieniu do wszystkich witryn, które są obecnie aktywne. Ponieważ wiele witryn e-Commerce jest domyślnie dostępnych globalnie, ważne jest, aby zapoznać się ze standardami zgodności dla witryny e-Commerce.
+Prywatność jest ważnym czynnikiem, gdy używane są technologie śledzenia, które wpływają na klientów usługi e-Commerce. Ze względu na standardy zgodności z zasadami ochrony prywatności, takimi jak Ogólne rozporządzenie o ochronie danych (RODO) w Unii Europejskiej (UE), należy wziąć pod uwagę elektroniczne wytyczne dotyczące prywatności w odniesieniu do wszystkich witryn, które są obecnie aktywne. Ponieważ wiele witryn e-Commerce jest domyślnie dostępnych globalnie, ważne jest, aby zapoznać się ze standardami zgodności dla witryny e-Commerce.
 
 Aby dowiedzieć się więcej na temat podstawowych zasad stosowanych przez Microsoft w przypadku zgodności z plikami cookie, odwiedź [Centrum zaufania Microsoft](https://www.microsoft.com/trust-center). W tej witrynie można również znaleźć więcej informacji na temat obszarów zgodności i ochrony prywatności.
+
+W poniższej tabeli przedstawiono bieżące listy odwołań plików cookie umieszczanych przez witryny Dynamics 365 Commerce.
+
+| Nazwa pliku cookie                               | Użycie                                                        |
+| ------------------------------------------- | ------------------------------------------------------------ |
+| .AspNet.Cookies                             | Przechowuj pliki cookie uwierzytelniania Azure Active Directory (Azure AD) od firmy Microsoft dla rejestracji jednokrotnej (SSO). Przechowuje zaszyfrowane informacje główne użytkownika (imię, nazwisko, adres e-mail). |
+| &#95;msdyn365___cart&#95;                           | Identyfikator koszyka używany do uzyskania listy produktów dodanych do wystąpienia koszyka. |
+| &#95;msdyn365___ucc&#95;                            | Śledzenie zgody na zgodność z plikami cookie.                          |
+| ai_session                                  | Wykrywa, ile sesji użytkownika zostało dołączonych do niektórych stron i funkcji aplikacji. |
+| ai_user                                     | Wykrywa liczbę osób korzystających z aplikacji i jej funkcji. Użytkownicy są zliczani przy użyciu identyfikatorów anonimowych. |
+| b2cru                                       | Umożliwia dynamiczne przechowywanie adresów URL przekierowań.                              |
+| JSESSIONID                                  | Używany przez łącznika płatności Adyen do przechowywania sesji użytkownika.       |
+| OpenIdConnect.nonce.&#42;                       | Uwierzytelnianie                                               |
+| x-MS-CPIM-cache:.&#42;                          | Używane do obsługi stanu żądania.                      |
+| x-ms-cpim-csrf                              | Token Fałszerstwo żądania międzywitrynowego (CRSF) używany do ochrony przed CRSF.     |
+| x-ms-cpim-dc                                | Używany do routowania żądań do odpowiedniego wystąpienia serwera uwierzytelniania produkcji. |
+| x-ms-cpim-rc.&#42;                              | Używany do routowania żądań do odpowiedniego wystąpienia serwera uwierzytelniania produkcji. |
+| x-ms-cpim-slice                             | Używany do routowania żądań do odpowiedniego wystąpienia serwera uwierzytelniania produkcji. |
+| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Używane do obsługi sesji SSO.                        |
+| x-ms-cpim-trans                             | Służy do śledzenia transakcji (liczba otwartych kart uwierzytelniających się w odniesieniu do oddziału firmy (B2C), w tym bieżącej transakcji. |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
