@@ -3,7 +3,7 @@ title: Możliwości siatki
 description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Funkcja nowej siatki musi być włączona, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
 manager: AnnBe
-ms.date: 04/23/2020
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fd45f71fc15e467c461433682310ab7b7cc0158a
-ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
+ms.openlocfilehash: 88a4e2fe69000f8034729d468ad5fd108d435c3e
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284411"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431367"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
@@ -89,11 +89,11 @@ Aby cofnąć grupowanie w siatce, kliknij prawym przyciskiem myszy kolumnę grup
 ## <a name="typing-ahead-of-the-system"></a>Pisanie przed systemem
 W wielu scenariuszach biznesowych możliwość szybkiego wprowadzania danych do systemu jest bardzo ważna. Zanim zostanie wprowadzony nowy formant siatki, użytkownicy będą mogli zmieniać dane tylko w bieżącym wierszu. Aby utworzyć nowy wiersz lub przełączyć się do innego wiersza, należy zaczekać, aż system pomyślne sprawdzi poprawności zmian. W celu poprawienia czasu, w którym użytkownicy oczekują na ukończenie tych weryfikacji i zwiększenia wydajności użytkownika, nowa siatka koryguje te operacje, tak aby były one asynchroniczne. Dzięki temu użytkownik może przechodzić do innych wierszy w celu wprowadzenia zmian, podczas gdy oczekiwania na poprzednie sprawdzanie poprawności wierszy. 
 
-Aby można było obsłużyć to nowe zachowanie, nowa kolumna dla stanu wiersza została dodana na początku siatki, gdy siatka jest w trybie edycji. W tej kolumnie jest wskazywany jeden z następujących stanów:
+Aby można było obsłużyć to nowe zachowanie, nowa kolumna dla stanu wiersza została dodana po prawej stronie kolumny wyboru wiersza, gdy siatka jest w trybie edycji. W tej kolumnie jest wskazywany jeden z następujących stanów:
 
 - **Pusty** — Brak obrazu stanu wskazuje, że wiersz został pomyślnie zapisany przez system.
 - **Przetwarzanie w toku** — Ten stan wskazuje, że zmiany w wierszu nie zostały jeszcze zapisane przez serwer, ale znajdują się w kolejce zmian, które muszą zostać przetworzone. Przed wykonaniem akcji poza siatką należy poczekać na przetworzenie wszystkich oczekujących zmian. Ponadto tekst w tych wierszach jest pisany kursywą w celu wskazania niezapisanego stanu wierszy. 
-- **Ostrzeżenie sprawdzania poprawności** — Ten stan wskazuje, że system nie może zapisać zmian w tym wierszu z powodu jakichś problemów z weryfikacją. W starej siatce użytkownik zostawał przeniesiony z powrotem do wiersza w celu natychmiastowego rozwiązania tego problemu. Jednak w nowej siatce zostanie wyświetlone powiadomienie, że napotkano problem z weryfikacją, ale można zdecydować, kiedy mają być naprawione wszystkie problemy występujące w danym wierszu. Gdy wszystko będzie gotowe do rozwiązania problemu, można ręcznie przenieść uwagę z powrotem na wiersz. Alternatywnie można wybrać akcję **Napraw ten problem**. Ta akcja powoduje natychmiastowe przeniesienie uwagi z powrotem do wiersza, którego dotyczy ten błąd, oraz umożliwia wprowadzanie zmian w siatce lub poza nią. Należy zauważyć, że przetwarzanie kolejnych wierszy oczekujących zostało zatrzymane do czasu rozwiązania tego ostrzeżenia o sprawdzeniu poprawności. 
+- **Nieprawidłowy stan** — Ten stan wskazuje, że podczas przetwarzania wiersza zostało wyzwolone pewne ostrzeżenie lub komunikat, co mogło uniemożliwić systemowi zapisanie zmian w tym wierszu. W starej siatce, jeśli operacja zapisu nie powiodła się, zostaniesz przeniesiony z powrotem do wiersza, aby natychmiast rozwiązać problem. Jednak w nowej siatce zostanie wyświetlone powiadomienie, że napotkano problem z weryfikacją, ale można zdecydować, kiedy mają być naprawione wszystkie problemy występujące w danym wierszu. Gdy wszystko będzie gotowe do rozwiązania problemu, można ręcznie przenieść uwagę z powrotem na wiersz. Alternatywnie można wybrać akcję **Napraw ten problem**. Ta akcja powoduje natychmiastowe przeniesienie uwagi z powrotem do wiersza, którego dotyczy ten błąd, oraz umożliwia wprowadzanie zmian w siatce lub poza nią. Należy zauważyć, że przetwarzanie kolejnych wierszy oczekujących zostało zatrzymane do czasu rozwiązania tego ostrzeżenia o sprawdzeniu poprawności. 
 - **Wstrzymano** — Ten stan wskazuje, że przetwarzanie przez serwer zostało wstrzymane, ponieważ weryfikacja wiersza wyzwoliła wyskakujące okno dialogowe, które wymaga wprowadzenia danych przez użytkownika. Ponieważ użytkownik może wprowadzać dane w innym wierszu, wyskakujące okno dialogowe nie jest natychmiast prezentowane użytkownikowi. Zamiast tego zostanie on przedstawiony, gdy użytkownik wybierze opcję wznowienia przetwarzania. Do tego stanu dołączane jest powiadomienie, które informuje użytkownika o sytuacji. Powiadomienie zawiera akcję **Wznawiania przetwarzania**, która będzie wyzwalać wyskakujące okno dialogowe.  
     
 Gdy użytkownicy wprowadzają dane przed miejscem przetwarzania serwera, mogą oczekiwać na wprowadzenie kilku degradacji w środowisku wprowadzania danych, takich jak brak wyszukiwań, sprawdzanie poprawności na poziomie kontroli i wprowadzanie wartości domyślnych. Użytkownicy, którzy potrzebują listy rozwijanej do znalezienia wartości, są zachęcani do czekania, aż serwer dogoni bieżący wiersz. Sprawdzanie poprawności na poziomie kontroli i wprowadzanie wartości domyślnych będą również występować, gdy serwer przetwarza ten wiersz.   
@@ -135,55 +135,62 @@ W tej sekcji jest przechowywana lista znanych problemów dotyczących nowej kont
 
 - Listy kart, które zostały renderowane jako wiele kolumn, są teraz renderowane jako jedna kolumna.
 - Listy zgrupowane nie są renderowane jako grupy lub w oddzielnych kolumnach.
-- Etykietki narzędzi nie są wyświetlane dla obrazów.
-- Wyświetlane linie siatki nie działają dla wszystkich typów pól.
-- Sporadycznie nie można kliknąć poza siatką po wybraniu wielu wierszy.
-- Opcje Rejestratora zadań **Sprawdź** i **Kopiuj** nie są dostępne dla formantów daty/numeru.
+
+### <a name="fixed-as-part-of-10013"></a>Naprawiono w ramach 10.0.13
+
+> [!NOTE]
+> Poniższe informacje są dostarczane w taki sposób, aby można było je odpowiednio planować. Aby uzyskać więcej informacji dotyczących harmonogramu wydań kierowanych 10.0.13, zobacz [Dostępność aktualizacji usługi](../../fin-ops/get-started/public-preview-releases.md).
+
+- [KB 4563317] Etykietki narzędzi nie są wyświetlane dla obrazów.
 
 ### <a name="fixed-as-part-of-10012"></a>Naprawiono w ramach 10.0.12
 
-> [!Note]
-> Poniższe informacje są dostarczane w taki sposób, aby można było je odpowiednio planować. Aby uzyskać więcej informacji dotyczących harmonogramu wydań kierowanych 10.0.12, zobacz [Dostępność aktualizacji usługi](../../fin-ops/get-started/public-preview-releases.md).
-
-- [Problem 429126] Kontrolki poza siatką nie są aktualizowane po usunięciu ostatniego rekordu.
-- [Problem 430575] Kontrolki tabeli nie aktualizują zawartości wyświetlanych pozycji.
+- [KB 4558545] Kontrolki tabeli nie aktualizują zawartości wyświetlanych pozycji.
 - [KB 4558570] Po usunięciu rekordu towary są nadal wyświetlane na stronie.
-- [KB 4558584] Liczby ujemne są niepoprawnie renderowane.
-- [KB 4558575] Pola nie są aktualizowane, gdy przetwarzanie zmian w wierszu/siatce zostanie zablokowane po usunięciu wiersza.
-- [Problem 436980] Style skojarzone z poszerzoną Panelem listy **ExtendedStyle** nie są stosowane.
+- [KB 4558572] Style skojarzone z Panelem listy **ExtendedStyle** nie są stosowane.
 - [KB 4558573] Nie można ustalić błędów sprawdzania poprawności, jeśli wymagana zmiana znajduje się poza siatką.
-    
-### <a name="quality-update-for-10011"></a>Aktualizacja jakości dla 10.0.11
-
-- [KB 4558381] Liczby ujemne nie są renderowane prawidłowo/użytkownicy mogą być wyrzucani po napotkaniu problemów z weryfikacją.
+- [KB 4558584] Liczby ujemne są niepoprawnie renderowane.
+- [KB 4560726] Wystąpił komunikat „nieoczekiwany błąd klienta”, gdy wymiana list odbywa się za pomocą kontrolki Widoku listy.
+- [KB 4562141] Indeksy siatki są wyłączone po dodaniu nowego rekordu.
+- [KB 4562151] Opcje Rejestratora zadań **Sprawdź** i **Kopiuj** nie są dostępne dla kontrolek daty/numeru. 
+- [KB 4562153] Pola wielokrotnego wyboru nie są widoczne w przypadku siatek list/kart.
+- [KB 4562646] Sporadycznie nie można kliknąć poza siatką po wybraniu wielu wierszy w siatce.
+- [KB 4562647] Po dodaniu nowego wiersza do siatki ról zabezpieczeń fokus jest resetowany do pierwszej kontrolki w oknie dialogowym **Publikuj**.
+- [KB 4563310] Rozszerzony podgląd nie jest zamykany po zmianie wiersza.
+- [KB 4563313] W przypadku wybrania wartości w wyszukiwaniu w Internet Explorer występuje błąd „nieoczekiwany klient”.
+- [KB 4563324] Nawigacja nie działa po otwarciu obszaru roboczego **Zarządzanie personelem**.
 
 ### <a name="fixed-as-part-of-10011"></a>Naprawiono w ramach 10.0.11
 
+- [Rozchód 432458] Puste lub zduplikowane wiersze są wyświetlane na początku niektórych zbiorów podrzędnych.
+- [KB 4549711] Nie można poprawnie usunąć wierszy z propozycji płatności po włączeniu nowej kontrolki siatki.
 - [KB 4558374] Nie można utworzyć rekordów wymagających okna dialogowego wyboru polimorficznego.
-- [KB 4558382] Wystąpił nieoczekiwany błąd klienta.
 - [KB 4558375] Tekst pomocowy nie jest pokazywany w kolumnach w nowej siatce.
 - [KB 4558376] Siatki Panelu list nie są renderowane na poprawnej wysokości w Internet Explorer.
 - [KB 4558377] Kolumny pola kombi o szerokości **SizeToAvailable** nie są renderowane na niektórych stronach.
-- [KB 4549711] Nie można poprawnie usunąć wierszy z propozycji płatności po włączeniu nowej kontrolki siatki.
 - [KB 4558378] Funkcja drążenia wskroś czasami powoduje otwarcie niewłaściwego rekordu.
 - [KB 4558379] Wystąpił błąd podczas otwierania wyszukiwań, gdzie **ReplaceOnLookup**=**No**.
 - [KB 4558380] Dostępne miejsce w siatce nie jest wypełniane natychmiast po zwinięciu części strony.
-- [Rozchód 432458] Puste lub zduplikowane wiersze są wyświetlane na początku niektórych zbiorów podrzędnych.
+- [KB 4558381] Liczby ujemne nie są renderowane prawidłowo/użytkownicy mogą być wyrzucani po napotkaniu problemów z weryfikacją.
+- [KB 4558382] Wystąpił nieoczekiwany błąd klienta.
+- [KB 4558383] Kontrolki poza siatką nie są aktualizowane po usunięciu ostatniego rekordu.
 - [KB 4558587] Grupy odwołań z polami kombi przeznaczonymi do zamiany nie są wyświetlane wartości.
+- [KB 4562143] Pola nie są aktualizowane, gdy przetwarzanie zmian w wierszu/siatce zostanie zablokowane po usunięciu wiersza.
+- [KB 4562645] Wyjątek występuje podczas otwierania wyszukiwania podczas wykonywania testów narzędzi administracji zdalnej serwera (RSAT).
 
 ### <a name="fixed-as-part-of-10010"></a>Naprawiono w ramach 10.0.10
 
 - [Problem 414301] Niektóre dane z poprzednich wierszy znikają podczas tworzenia nowych wierszy.
-- [KB 4550367] Wartości czasu nie są poprawnie sformatowane.
-- [KB 4549734] Aktywne wiersze nie są traktowane jako zaznaczone, jeśli kolumna oznaczania jest ukryta.
 - [Usterka 417044] Brak pustych komunikatów siatki dla siatek w stylu listy.
-- [KB 4558367] Po zmianie wierszy wybór tekstu jest niespójny.
-- [KB 4558372] Nowa siatka zostanie zablokowana w trybie przetwarzania, jeśli liczba kolumn w wklejanej zawartości przekracza liczbę pozostałych kolumn w siatce.
-- [KB 4558368] Wielokrotne wybieranie za pośrednictwem klawiatury jest dozwolone w scenariuszach pojedynczego wyboru.
 - [KB 4539058] Czasami niektóre siatki (zwykle na kartach skróconych) nie są renderowane (ale będą renderowane w przypadku pomniejszenia).
+- [KB 4549734] Aktywne wiersze nie są traktowane jako zaznaczone, jeśli kolumna oznaczania jest ukryta.
+- [KB 4549796] Nie można edytować wartości w siatce, gdy jest ona w trybie widoku.
+- [KB 4558367] Po zmianie wierszy wybór tekstu jest niespójny.
+- [KB 4558368] Wielokrotne wybieranie za pośrednictwem klawiatury jest dozwolone w scenariuszach pojedynczego wyboru.
 - [KB 4558369] W siatce hierarchicznej znikają obrazy stanu.
 - [KB 4558370] Nowy wiersz nie jest przewijany do widoku.
-- [KB 4549796] Nie można edytować wartości w siatce, gdy jest ona w trybie widoku.
+- [KB 4558372] Nowa siatka zostanie zablokowana w trybie przetwarzania, jeśli liczba kolumn w wklejanej zawartości przekracza liczbę pozostałych kolumn w siatce.
+- [KB 4562631] Wartości czasu nie są poprawnie sformatowane.
 
 ### <a name="quality-update-for-1009platform-update-33"></a>Aktualizacja jakości dla 10.0.9/aktualizacja Platform update 33
 

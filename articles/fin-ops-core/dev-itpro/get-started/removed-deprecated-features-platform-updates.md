@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje Platform
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia aktualizacji platformy z aplikacji Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f6365d42de5d19d960641f188cb6052ef07d721f
-ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
+ms.openlocfilehash: 1faee75c9112b3aa584ad021ffdc1144fcf4ba32
+ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3268754"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3457573"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
@@ -36,7 +36,55 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 > [!NOTE]
 > Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
 
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.13 aplikacji Finance and Operations
+
+> [!NOTE]
+> Wersja 10.0.13 nie została jeszcze wydana. Te informacje służą jedynie do planowania. Zawartość i funkcje w wersji 10.0.13 mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań, zobacz [Dostępność aktualizacji usługi](../../fin-ops/get-started/public-preview-releases.md).
+
+
+### <a name="upgrade-of-three-jquery-component-libraries"></a>Uaktualnienie trzech bibliotek składników jQuery 
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Są aktualizowane trzy biblioteki składników jQuery dla poprawek zabezpieczeń oraz do obsługi waluty.   
+| **Zamieniona przez inną funkcję?**   | Dotyczy to następujących bibliotek: jQuery (do wersji 3.5.0 z wersji 2.1.4), interfejsu użytkownika jQuery (do wersji 1.12.1 z wersji 1.11.4), jQuery qTip (do wersji 3.0.3 z 2.2.1). Wskazówki dotyczące migracji zostały dostarczone w trybie online przez jQuery.  |
+| **Powiązane obszary produktów**         | Rozszerzalne kontrolki, w szczególności niestandardowy kod JavaScript wykorzystujący przestarzałe lub usunięte interfejsy API |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | W przypadku wersji 10.0.13/aktualizacji platformy 37 klienci mogą opcjonalnie przełączać się do najnowszych bibliotek, włączając funkcję „Uaktualnij trzy biblioteki składników jQuery”. Przechodzenie do nowych bibliotek będzie obowiązkowe wraz z wydaniem z kwietnia 2021, aby umożliwić migrację interfejsów API, których dotyczy problem.   |
+
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.12 aplikacji Finance and Operations
+
+### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Rozszerzenia formularza siatki lub grup kontrolek zawierające nieprawidłowe odwołania do pól
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Właściwość Grupa danych w kontrolkach siatki i grup służy do automatycznego pokazywania wszystkich pól grupy pól. Kontrolka siatki lub grupy dodana przez rozszerzenie może zawierać pola, które nie są już zdefiniowane w grupie pól, lub może nie mieć pól, które są zdefiniowane w grupie pól. Może to spowodować niespójne działanie w czasie wykonywania. Aktualizacje platformy dla wersji 10.0.12 aplikacji Finance and Operations teraz klasyfikuje ten problem jako *ostrzeżenie* kompilatora. Aby rozwiązać ten problem, otwórz rozszerzenie formularza i zapisz je.
+| **Zamieniona przez inną funkcję?**   | To ostrzeżenie kompilatora zostanie zastąpione błędem kompilatora w przyszłej aktualizacji. |
+| **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Ostrzeżenie kompilatora jest wprowadzone w aktualizacjach platformy dla wersji 10.0.12 aplikacji Finance and Operations. |
+
 ## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.11 aplikacji Finance and Operations
+
+### <a name="explicit-safe-lists-for-self-service-environments"></a>Jawne bezpieczne listy dla środowisk samoobsługowych
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Proces przenoszenia adresu IP do list bezpiecznych został zmieniony. Samoobsługa nie obsługuje już bezpiecznych list adresów IP. |
+| **Zamieniona przez inną funkcję?**   | Aby uzyskać więcej informacji, zobacz [Konfiguracja warunkowego dostępu do Azure Active Directory](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Powiązane obszary produktów**         | Zabezpieczenia |
+| **Opcja wdrażania**              | W chmurze |
+| **Stan**                         | **Przestarzałe:** Ta funkcja jest całkowicie przestarzała w przypadku wdrożeń samoobsługowych. |
+
+### <a name="visual-studio-2015"></a>Visual Studio2015
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Aby można było obsługiwać najnowsze wersje Visual Studio, niektóre zmiany należy wprowadzać w odniesieniu do rozszerzeń X++ dla Visual Studio. Te zmiany są niezgodne z Visual Studio 2015. |
+| **Zamieniona przez inną funkcję?**   | Visual Studio 2017 zamieni Visual Studio 2015 jako wdrożoną i wymaganą wersję. |
+| **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Po zaanonsowaniu dostępności nowych maszyn wirtualnych (VMs) z Visual Studio 2017, istniejące maszyny wirtualne mające tylko Visual Studio 2015 będą trzeba ponownie wdrożyć przed 1 wydaniem w 2021 roku. |
 
 ### <a name="field-groups-containing-invalid-field-references"></a>Grupy pól zawierających nieprawidłowe pole odwołania
 

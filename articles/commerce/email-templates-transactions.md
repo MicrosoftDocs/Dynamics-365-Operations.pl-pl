@@ -3,7 +3,7 @@ title: Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjny
 description: W tym temacie opisano sposób tworzenia, przekazywania i konfigurowania szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: stuharg
 manager: annbe
-ms.date: 05/11/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5cd928e90654cca639ed1e163be9192c0dffd9ad
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: a02839088addfa9b405af486f3b795eace1671cc
+ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367182"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3416586"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych
 
@@ -40,7 +40,7 @@ Aby można było mapować określone zdarzenie transakcyjne na szablon wiadomoś
 
 Aby utworzyć szablon wiadomości e-mail, należy wykonać poniższe kroki.
 
-1. W module Commerce Headquarters przejdź do pozycji **Retail i Commerce \> Ustawienia centrali \> Szablony wiadomości e-mail organizacji**.
+1. W centrali Commerce przejdź do **Szablony wiadomości e-mail organizacji**, które są znajdują się w **Retail i Commerce \> Ustawienia centrali \> Szablony wiadomości e-mail organizacji** lub **Administrowanie organizacją \> Konfiguracja \> Szablony wiadomości e-mail organizacji**.
 1. Wybierz pozycję **Nowy**.
 1. W obszarze **Ogólne** ustaw następujące pola:
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: FeatureManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 423ec36a73e8af9d915c5cfe16bd4d552448e2b6
-ms.sourcegitcommit: d1541831d556b722a71aed442043ffb4a4576d87
+ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "3388123"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431137"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikacja Human Resources w Teams
 
@@ -45,6 +45,7 @@ Aby uzyskać informacje dotyczące zarządzania uprawnieniami aplikacji w Teams,
 
 | Wystawienie | Stan |
 | --- | --- |
+| Błąd: Wystąpił problem ze znalezieniem środowiska, z którym można się połączyć. | Ten błąd może wystąpić, nawet jeśli zweryfikowano, że użytkownik może uzyskać dostęp do jednego lub więcej środowisk Human Resources. Ponadto mogą nie być widoczne wszystkie oczekiwane środowiska. Do czasu rozwiązania problemu usuń użytkownika, a następnie zaimportuj go ponownie, aby rozwiązać problem. |
 | Saldo jest niepoprawne podczas przesyłania czasu wolnego w przyszłości. | Prognozowanie nie jest jeszcze dostępne. Jest wyświetlane saldo dla bieżącej daty. |
 | W przypadku zmniejszenia liczby godzin w istniejącym żądaniu **Pozostałe saldo** zmniejsza się, a nie zwiększa. | Ten problem zostanie rozwiązany w przyszłości. Wyświetlone dane są niepoprawne, ale podczas przesyłania ilości są odpowiednio korygowane. |
 | Dla tych samych dat są wyświetlane dwie karty **nadchodzącego czasu wolnego**. | Karty reprezentują pojedyncze przesłania. Będziemy nadal gromadzić opinie i wprowadzać korekty. |

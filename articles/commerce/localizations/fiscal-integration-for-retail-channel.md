@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 45677681ebae40210d6e2d896323f7e691b765e2
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: d2455f775fcf41bbcb1388b2e8053ede8512335d
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057563"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403222"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Omówienie integracji fiskalnej dla kanałów modułu Commerce
 
@@ -139,6 +139,7 @@ Następujące przykładowe integracje fiskalne są obecnie dostępne w zestawie 
 - [Przykład integracji usługi rejestracji fiskalnej (Austria)](emea-aut-fi-sample.md)
 - [Przykład integracji usługi rejestracji fiskalnej (Czechy)](emea-cze-fi-sample.md)
 - [Przykładowa integracja jednostki kontrolnej dla Szwecji](./emea-swe-fi-sample.md)
+- [Przykład integracji usługi rejestracji fiskalnej (Niemcy)](./emea-deu-fi-sample.md)
 
 Następujące funkcje integracji fiskalnej są także dostępne w zestawie SDK modułu Retail, ale obecnie nie używają schematu integracji fiskalnej. Migracja tej funkcji do schematu integracji fiskalnej jest planowana w późniejszych aktualizacjach.
 

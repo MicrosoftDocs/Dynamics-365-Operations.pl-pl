@@ -3,7 +3,7 @@ title: Konfigurowanie kuponów dla sprzedaży detalicznej
 description: Ten temat zawiera omówienie koncepcji kuponów oraz wyjaśnienie, jak je konfigurować.
 author: scott-tucker
 manager: AnnBe
-ms.date: 05/22/2017
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4c580e40ae1f0398ab9f8437d42ddcb2979558c3
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057378"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431985"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurowanie kuponów dla sprzedaży detalicznej
 
@@ -48,8 +48,10 @@ Kupony można skonfigurować jako kupony o ograniczonym użyciu. Limit użycia m
 
 Limit jest wymuszany dla kodu kuponu na kuponie. Na przykład kupon jednorazowego użytku, który zawiera dwa kody kuponu, może zostać wykorzystany dwukrotnie, po jednym razie dla każdego kodu kuponu. Każdy kod na kuponie można niezależnie ustawić jako aktywny.
 
+Kupony mogą być używane w dowolnym kanale sprzedaży, jednak w przypadku zamówień w biurach obsługi, kupony mogą być używane w ograniczonym stopniu tylko w przypadku zamówień w biurach obsługi, w których jest włączone ustawienie **Zakończenie zamówienia** w ramach biura obsługi. Jeśli nie jest włączone, można używać tylko nieograniczonych typów użycia kuponów w zamówieniach w biurach obsługi.
+
 > [!NOTE]
-> Gdy kod kuponu osiągnie limit wykorzystania, system *nie* zmienia automatycznie stanu kod kuponu na „Wykorzystane”. Jednak system nie pozwala na dalsze używanie kodu kuponu, który osiągnął limit wykorzystania. Jeśli stan kodu kuponu zostanie ręcznie ustawiony na wartość inną niż „Aktywne”, to kodu kuponu nie można użyć w żadnym kanale.
+> Kiedy kod kuponu osiągnie limit wykorzystania, system *nie* zmienia automatycznie stanu kod kuponu na „Wykorzystane”. Jednak kod kuponu osiągnął limit użytkowania i nie można go użyć. Jeśli stan kodu kuponu zostanie ręcznie ustawiony na wartość inną niż **Aktywne**, to kodu kuponu nie można użyć w żadnym kanale.  
 
 ## <a name="managing-coupons"></a>Zarządzanie kuponami
 

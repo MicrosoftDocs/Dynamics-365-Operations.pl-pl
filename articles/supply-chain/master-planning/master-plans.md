@@ -3,7 +3,7 @@ title: Omówienie planów głównych
 description: Istnieje możliwość korzystania z różnych planów głównych w celu obsługiwania codziennych operacji w firmie, symulowania różnych strategii planowania, które mają być monitorowane, oraz wdrażania polityki firmy, na przykład dotyczącej wydajności lub zadowolenia klientów.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56c9c3f910c5c5386cdab25566b43198288eb419
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5b37347cf2d5b720ed7ac364800fb8cfe2d67ca
+ms.sourcegitcommit: ace6451fde3e4b20cbcaa6279fa1da4d7151ad1e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213545"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3409529"
 ---
 # <a name="master-plans-overview"></a>Omówienie planów głównych
 
@@ -35,7 +35,7 @@ Istnieje możliwość korzystania z różnych planów głównych w celu obsługi
 Można skonfigurować plany główne na stronie **Plany główne**.
 
 Istnieją dwa typy planów:
--   **Plan statyczny** — w obliczeniach planowania głównego używane są aktualne dane w celu wygenerowania planu zapotrzebowania netto. Plan pozostaje niezmieniony do kolejnego uruchomienia planowania głównego. Jest to plan operacyjny, z którego mogą korzystać różne osoby związane z firmą, takie jak nabywca lub pracownik z działu planowania produkcji, aby uprościć proces decydowania i przeprowadzać codzienne czynności i działania.
+-   **Plan statyczny** — w obliczeniach planowania głównego używane są aktualne dane w celu wygenerowania planu zapotrzebowania netto. Plan pozostaje niezmieniony do kolejnego uruchomienia planowania głównego lub ręcznie zmienić plan. Jest to plan operacyjny, z którego mogą korzystać różne osoby związane z firmą, takie jak nabywca lub pracownik z działu planowania produkcji, aby uprościć proces decydowania i przeprowadzać codzienne działania.
 -   **Plan dynamiczny** — Ten plan rozpoczyna się od tego samego planu zapotrzebowania netto, jaki został wygenerowany w planowaniu głównym. Plan dynamiczny można jednak aktualizować po każdej zmianie danych głównych. Może się tak stać na przykład po utworzeniu nowego zamówienia sprzedaży. Ta funkcjonalność umożliwia monitorowanie zmieniającej się sieci zamówień i dostępności towarów bez zakłócania planu statycznego, którego używają inni użytkownicy w swoich procesach roboczych.
 
 Firma może wybrać korzystanie z planu dynamicznego lub używanie planu statycznego i dynamicznego. Ponadto można skonfigurować dowolny plan główny, który będzie uwzględniał określoną strategię lub zagadnienie. Przykłady są następujące:

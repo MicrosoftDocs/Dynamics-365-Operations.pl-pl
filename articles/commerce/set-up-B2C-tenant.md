@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 22d62419c703c64470723cf82864a4782306ea8a
-ms.sourcegitcommit: 1b00e21faf89de8b3450936253a4c02cb4d12a3d
+ms.openlocfilehash: 9339b584c2d78e59f1a6b79d1610eef1581722c7
+ms.sourcegitcommit: 717346fb00c68a64ed58c846e89f41b80c7de9dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3295276"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3488769"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurowanie dzierżawy B2C w usłudze Commerce
 
@@ -91,7 +91,7 @@ Adresy URL odpowiedzi są ważne, ponieważ udostępniają one listę dozwolonyc
 
 W polu **adres URL odpowiedzi** na ekranie **B2C Azure AD — Aplikacje \> Nowa aplikacja** należy dodać osobne wiersze dla domeny witryny i (po zainicjowaniu środowiska) wygenerowany w systemie handlowym adres URL. Te adresy URL muszą zawsze mieć prawidłowy format adresu URL i muszą być tylko podstawowymi adresami URL (nie można kończyć ukośnikami ani ścieżkami). Następnie należy dołączyć ciąg ``/_msdyn365/authresp`` do podstawowych adresów URL, tak jak w poniższych przykładach.
 
-- ``https://fabrikam.com/_msdyn365/authresp``
+- ``https://www.fabrikam.com/_msdyn365/authresp``
 - ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
 ## <a name="create-user-flow-policies"></a>Tworzenie zasad przepływów użytkownika

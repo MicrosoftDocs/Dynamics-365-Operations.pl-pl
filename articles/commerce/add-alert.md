@@ -3,7 +3,7 @@ title: Moduł baneru promocyjnego
 description: W tym temacie opisano moduł baneru promocyjnego i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,15 +18,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 12cabbf0b8d9f337f15a8cd6cb1f2a85100b75f7
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: dae824cdbaaf56f85f125c5f36aaa56171bbd6bc
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269781"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411372"
 ---
 # <a name="promo-banner-module"></a>Moduł baneru promocyjnego
-
 
 [!include [banner](includes/banner.md)]
 
@@ -48,9 +47,15 @@ W nagłówku witryny można używać banerów promocyjnych do wyświetlania prom
 
 „Zaoszczędź na zakupach do szkoły. Kup teraz.”
 
+„Wyprzedaż na Święto Dziękczynienia!” 
+
+Poniższy obraz przedstawia przykład baneru promocyjnego.
+
+![Przykład modułu baneru promocyjnego](./media/ecommerce-Promobanner.PNG)
+
 ## <a name="promo-banner-module-properties"></a>Właściwości modułu baneru promocyjnego
 
-| Nazwa właściwości             | Value                              | Opis |
+| Nazwa właściwości             | Wartość                              | opis |
 |---------------------------|------------------------------------|-------------|
 | Wiadomości transparentu           | Tekst i łącza                     | Szeroki wybór tekstu i łączy. |
 | Autoodtwarzanie                  | **Prawda** lub **Fałsz**              | Wartość wskazująca, czy komunikaty są automatycznie przetwarzane, jeśli skonfigurowano wiele wiadomości. |
@@ -64,7 +69,7 @@ W nagłówku witryny można używać banerów promocyjnych do wyświetlania prom
 
 Aby dodać moduł baneru promocyjnego do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Wybierz pozycję **Nowy**, aby utworzyć nowy szablon strony.
+1. Przejdź do **Szablonu**, a następnie wybierz **Nowy**, aby utworzyć nowy szablon.
 1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon baneru promocyjnego**, a następnie wybierz **OK**.
 1. W obszarze **Konspekt strony** dodaj moduł **Domyślna strona** do gniazda **Treść**. 
 1. Wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować. 
@@ -74,7 +79,7 @@ Aby dodać moduł baneru promocyjnego do nowej strony i ustawić wymagane właś
 1. W obszarze **Konspekt strony** dodaj moduł baneru promocyjnego do modułu kontenerów.
 1. W ustawieniach modułu banery promocyjnego dodaj co najmniej jedną wiadomość baneru. Każda wiadomość może zawierać tekst razem z łączem. Inne właściwości można edytować, jeśli moduł ma być dostosowany dalej.
 1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. W górnej części strony powinien pojawić się alert z dodanym tekstem.
-1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować. 
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
 > [!NOTE]
 > Baner jest zazwyczaj używany w gnieździe nagłówka strony lub w gnieździe podnagłówków.

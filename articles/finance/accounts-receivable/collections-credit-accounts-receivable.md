@@ -1,5 +1,5 @@
 ---
-title: Kredyty i windykacja w rozrachunkach z odbiorcami
+title: Windykacje w module Rozrachunki z odbiorcami
 description: Informacje dotyczące windykacji w module Rozrachunki z odbiorcami są zarządzane w jednym centralnym widoku na stronie Windykacje w Microsoft Dynamics 365 Finance. Kierownicy ds. kredytów i windykacji mogą używać tego centralnego widoku do zarządzania windykacją. Agenci ds. windykacji mogą rozpocząć proces windykacji na podstawie list odbiorców, które są generowane przy użyciu wstępnie zdefiniowanych kryteriów windykacji, lub ze strony Windykacja.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 471de43bc0d171e60100613a6d779a249cd9e92f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c150eb7283b34c82e728da36ed0e1e6643eff46a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189184"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426403"
 ---
-# <a name="credit-and-collections-in-accounts-receivable"></a>Kredyty i windykacja w rozrachunkach z odbiorcami
+# <a name="collections-in-accounts-receivable"></a>Windykacje w module Rozrachunki z odbiorcami
 
 [!include [banner](../includes/banner.md)]
 
@@ -68,7 +68,7 @@ Następujące strony listy pomagają organizować informacje o windykacji.
 
 > [!NOTE]
 > Aby wyświetlić informacje na stronach listy windykacji, należy utworzyć migawkę wiekowania. Informacje są wyświetlane tylko dla odbiorców, dla których została utworzona migawka wiekowania. Rekordy widoczne na stronie listy można dodatkowo filtrować w następujący sposób:
-> <li>Domyślnie użytkownik programu Finance and Operations ma dostęp do wszystkich odbiorców, którzy mają migawki wiekowania.</li>
+> <li>Domyślnie użytkownik Finance and Operations, ma dostęp do wszystkich odbiorców, którzy mają migawki wiekowania.</li>
 > <li>Jeśli istnieje pula klientów, użytkownik musi być ustawiony jako agent ds. windykacji, aby korzystać z pul do filtrowania informacji na stronach listy windykacji. Informacje są ograniczone do klientów, którzy znajdują się w wybranej puli klientów.</li>
 > <li>Jeśli użytkownik jest skonfigurowany jako agent ds., tylko pule, które są wybrane dla tego agenta, są dostępne na stronie listy. W przypadku włączenia dla danego agenta opcji Zezwalaj agentowi na przeglądanie wszystkich pul klientów na stronie Agent ds. windykacji, będzie miał dostęp do wszystkich pul.</li>
 

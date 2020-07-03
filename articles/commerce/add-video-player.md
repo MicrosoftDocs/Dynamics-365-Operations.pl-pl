@@ -3,7 +3,7 @@ title: Moduł odtwarzacza wideo
 description: W tym temacie opisano moduły odtwarzacza wideo i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e94658eed12b12d6666e63d2c06b86646c81a120
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 0612682d310362c7523bf08db40faf51c80ea2e3
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025671"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411166"
 ---
 # <a name="video-player-module"></a>Moduł odtwarzacza wideo
 
@@ -47,9 +47,13 @@ Moduł odtwarzacza wideo obsługuje również pomocnicze ścieżki audio. Po prz
 - Promocyjne filmy wideo i materiały wideo informacje o zasadach na dowolnej stronie marketingowej
 - Marketingowe pliki wideo, które wyróżniają funkcje produktu na stronach szczegółów produktu lub na stronach marketingowych
 
+Poniższy obraz pokazuje przykład modułu odtwarzacza wideo na stronie głównej.
+
+![Przykład modułu odtwarzacza wideo](./media/ecommerce-videoplayer.PNG)
+
 ### <a name="video-player-module-properties"></a>Właściwości modułu odtwarzacza wideo
 
-| Nazwa właściwości         | Wartość                               | Opis |
+| Nazwa właściwości         | Wartość                               | opis |
 |-----------------------|-------------------------------------|-------------|
 | Automatyczne odtwarzanie             | **Prawda** lub **Fałsz**               | Jeśli wartość jest ustawiona na **prawda**, odtwarzanie wideo jest automatycznie odtwarzane. |
 | Wycisz                  | **Prawda** lub **Fałsz**               | Jeśli wartość jest ustawiona na **prawda**, audio jest wyciszane. Domyślną wartością tego odtwarzacza jest **fałsz**. W przeglądarce Chrome klipy wideo autoodtwarzania są domyślnie wyciszone, a dźwięk jest odtwarzany tylko wtedy, gdy użytkownik ręcznie odtworzy wideo. |
@@ -68,22 +72,34 @@ Moduł odtwarzacza wideo obsługuje również pomocnicze ścieżki audio. Po prz
 
 Aby dodać moduł odtwarzacza wideo do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Utwórz szablon strony o nazwie nazwa **szablon odtwarzacza wideo**.
-1. W **Głównym** gnieździe na stronie domyślnej dodaj moduł kontenera.
-1. W module kontener Dodaj moduły odtwarzaczy wideo i odtwarzacze wideo w otoczeniu.
-1. Zakończ edytowanie szablonu i opublikuj go.
-1. Za pomocą utworzonego szablonu odtwarzacza wideo utwórz stronę o nazwie **strona odtwarzacza wideo**.
-1. W **Głównym** gnieździe na nowej stronie dodaj moduł odtwarzacza wideo.
+1. Przejdź do **Szablonu**, a następnie wybierz **Nowy**, aby utworzyć nowy szablon.
+1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon odtwarzacza wideo**, a następnie wybierz **OK**.
+1. W gnieździe **Treść** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Strona domyślna** i wybierz przycisk **OK**.
+1. W gnieździe **Głównym** w module **Strony domyślnej** wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
+1. W gnieździe **Kontener** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Odtwarzacz wideo** i wybierz przycisk **OK**.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować. 
+1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć nową stronę.
+1. W oknie dialogowym **Wybierz szablon** wybierz utworzony szablon odtwarzacza wideo. W sekcji **Nazwa strony** przejdź do **Strona odtwarzacza wideo**, a następnie wybierz przycisk **OK**.
+1. Na nowej stronie wybierz gniazdo **Główne**, następnie wybierz wielokropek (**...**), a następnie wybierz pozycję **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
+1. W gnieździe **Kontener** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Odtwarzacz wideo** i wybierz przycisk **OK**.
 1. W okienku właściwości modułu odtwarzacza wideo wybierz opcję **Dodaj klip wideo**.
 1. W oknie dialogowym **Selektor elementów multimedialnych** wybierz plik wideo, a następnie wybierz opcję **Przekaż nowy element multimedialny**.
-1. Zapisz i zobacz podgląd strony. Na stronie powinny być widoczny moduł wideo. Można zmienić dodatkowe ustawienia, aby dostosować zachowanie modułu.
-1. Zakończ edytowanie strony i opublikuj go.
+1. W Eksploratorze plików wybierz plik wideo, a następnie wybierz opcję **Otwórz**.
+1. W oknie dialogowym **Przekaż element multimedialny** wprowadź odpowiednio tytuł i inne informacje, a następnie kliknij przycisk **OK**.
+1. W oknie dialogowym **Selektor elementów multimedialnych** wybierz opcję **Zamknij**.
+1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. Na stronie powinny być widoczny moduł wideo. Można zmienić dodatkowe ustawienia, aby dostosować zachowanie modułu.
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować. 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie zestawu początkowego](starter-kit-overview.md)
 
-[Moduł baneru promocyjnego](add-alert.md)
+[Moduł transparentu promocyjnego](add-alert.md)
 
 [Moduł karuzeli](add-carousel.md)
 

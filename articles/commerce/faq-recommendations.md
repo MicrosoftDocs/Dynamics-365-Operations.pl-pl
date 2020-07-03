@@ -3,7 +3,7 @@ title: Rekomendacje produktów — często zadawane pytania
 description: Ten temat zawiera informacje o procesach i narzędziach, których można wykorzystywać do rozwiązywania problemów związanych z zaleceniami dotyczącymi produktów lub ich wynikami.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2e30d29516dff6b2128e21bfa6e449e396884d00
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: e27e4c4d8bdf614d6f55f44daeac3bc152219004
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154397"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404309"
 ---
 # <a name="product-recommendations-faq"></a>Rekomendacje produktów — często zadawane pytania
 
@@ -81,7 +81,7 @@ Po włączeniu zaleceń dotyczących produktu należy dodać Panel rekomendacji 
 
 [Omówienie rekomendacji produktów](product-recommendations.md)
 
-[Włączanie ADLS w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
+[Włączanie Azure Data Lake Storage w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
 
 [Włącz rekomendacje produktów](enable-product-recommendations.md)
 

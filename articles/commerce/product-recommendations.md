@@ -3,7 +3,7 @@ title: Omówienie rekomendacji produktów
 description: Ten temat zawiera ogólne informacje o rekomendacjach produktu. Rekomendacje produktów umożliwiają łatwe i szybkie znajdowanie produktów, które są potrzebne, a nawet produktów, których klient nie zamierzał pierwotnie kupić.
 author: Moonma
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e61136ed296d673e14600762c6f6199093530546
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 1b01589322c26b6a7b69d1b992b03603f5f3d29a
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154233"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404355"
 ---
 # <a name="product-recommendations-overview"></a>Omówienie rekomendacji produktów
 
@@ -40,7 +40,7 @@ W handlu elektronicznym rekomendacje produktów są oparte na technologiach ucze
 
 Usługa rekomendacji produktów korzysta z sztucznych technologii wywiadu i nauki maszyn (AI) w następujący sposób:
 
-- Dane w formacie wymaganym przez usługę rekomendacji są pobierane z operacyjnej bazy danych Commerce i wysyłane do Azure Data Lake Storage (ADLS) lub magazynu jednostek.
+- Dane w formacie wymaganym przez usługę rekomendacji są pobierane z operacyjnej bazy danych Commerce i wysyłane do Azure Data Lake Storage lub magazynu jednostek.
 - Usługa rekomendacji korzysta z przechowywanych danych w celu wytrenowania modeli rekomendacji dla list **Klientom podoba się również**, **Często kupowane razem**, **Nowości**, **Bestsellery** i **Trendy**.
 
 ## <a name="scenarios"></a>Scenariusze
@@ -67,7 +67,7 @@ W poniższej tabeli opisano różne typy automatycznych rekomendacji dotyczącyc
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Włączanie ADLS w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
+[Włączanie Azure Data Lake Storage w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
 
 [Włącz rekomendacje produktów](enable-product-recommendations.md)
 

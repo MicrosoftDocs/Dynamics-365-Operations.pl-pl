@@ -3,7 +3,7 @@ title: Zarządzanie cenami w sprzedaży detalicznej
 description: W tym temacie opisano pojęcia związane z tworzeniem i zarządzaniem cenami sprzedaży w Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 84d673bef8597bd7d376c5c74737d5c7db247759
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057494"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3432008"
 ---
 # <a name="retail-sales-price-management"></a>Zarządzanie cenami sprzedaży w aplikacji Retail
 
@@ -53,7 +53,9 @@ Na ilustracji poniżej przedstawiono sposób używania grup cenowych. Na ilustra
 
 Podczas tworzenia grup cenowych nie należy używać jednej grupy cenowej dla różnych typów jednostek handlu. W przeciwnym razie może być trudno określić, dlaczego konkretna cena lub rabat są stosowane do transakcji.
 
-Jak pokazuje czerwona kreskowana linia na ilustracji, aplikacja Commerce obsługuje podstawową funkcjonalność systemu Microsoft Dynamics 365 — grupy cenowe, które są ustawiane bezpośrednio dla odbiorców. Jednak w tym przypadku można korzystać tylko z umów handlowych na cenę sprzedaży. Jeśli chcesz stosować ceny specyficzne dla odbiorców, zalecamy, aby nie ustawiać grup cenowych bezpośrednio dla odbiorców. Zamiast tego należy używać przynależności.
+Jak pokazuje czerwona kreskowana linia na ilustracji, aplikacja Commerce obsługuje podstawową funkcjonalność systemu Microsoft Dynamics 365 — grupy cenowe, które są ustawiane bezpośrednio dla odbiorców. Jednak w tym przypadku można korzystać tylko z umów handlowych na cenę sprzedaży. Jeśli chcesz stosować ceny specyficzne dla odbiorców, zalecamy, aby nie ustawiać grup cenowych bezpośrednio dla odbiorców. Zamiast tego należy używać przynależności. 
+
+Należy zauważyć, że jeśli grupa cenowa jest ustawiona na klienta, wówczas ta grupa cenowa zostaje powiązana z nagłówkiem zamówienia sprzedaży zamówień utworzonych dla tego klienta. Jeśli użytkownik zmieni grupę cen w nagłówku zamówienia, wówczas stara grupa cen zostanie zastąpiona nową grupą cen tylko dla bieżącego zamówienia. Na przykład stara grupa cenowa nie będzie miała wpływu na bieżące zamówienie, ale będzie nadal skojarzona z odbiorcą w przyszłych zamówieniach.
 
 W dalszych rozdziałach zawarto więcej informacji na temat jednostek handlu, których można używać do ustawiania odrębnych cen podczas korzystania z grup cenowych. Konfigurowanie cen i rabatów dla wszystkich tych jednostek jest procesem dwuetapowym. Etapy te można wykonać w dowolnej kolejności. Jednak zgodnie z porządkiem logicznym najpierw należy ustawić grupy cenowe dla jednostek, ponieważ ten krok będzie najprawdopodobniej tylko jednorazową konfiguracją wykonywaną podczas wdrażania. Następnie, wraz z tworzeniem cen i rabatów, można ustawiać grupy cenowe indywidualnie dla tych cen i rabatów.
 
@@ -226,6 +228,7 @@ Aparat kalkulacji cen **nie obsługuje** następujących funkcji cen:
 - Ustawianie cen według wymiarów magazynowania typu Oddział lub Oddział i magazyn nie jest obsługiwane. Jeśli określisz tylko wymiar oddziału w umowach handlowych, aparat kalkulacji cen zignoruje Oddział i zastosują umowę handlową do wszystkich oddziałów. Jeśli określisz oddział i magazyn, to zachowanie jest niezdefiniowane/niesprawdzone, ponieważ oczekuje się, że sprzedawcy detaliczni używają grup cenowych sklepu do kontrolowania cen dla każdego sklepu/magazynu.
 - Kalkulacja cen oparta na atrybutach nie jest obsługiwana.
 - Przekazywanie rabatu dostawcy nie jest obsługiwane.
+- Standardowy aparat cenowy Supply Chain Management obsługuje obliczanie cen na podstawie „Żądanej daty wysyłki” i „Żądanej daty przyjęcia” wraz z bieżącą datą. Jednak ceny detaliczne nie obsługują obecnie tych wartości. Powodem jest to, że w scenariuszach B2C klienci nie oczekują, że żądana data dostawy ma wpływ na cenę towaru. W niektórych przypadkach detaliści prowadzą zarówno operacje typu B2B, jak i B2C. W przypadku operacji B2B wspólne ceny są zmieniane na podstawie dat dostawy. Detaliści ci mogą korzystać z cen Supply Chain Management dla swojej działalności B2B oraz cen detalicznych dla swojej działalności B2C. Ceny detaliczne zostaną uruchomione tylko wtedy, gdy użytkownik aplikacji zostanie dodany jako użytkownik centrum telefonicznego, dzięki czemu detaliści mogą przypisać określonych użytkowników, którzy będą pracować z cenami Supply Chain Management i przypisać kilku, którzy będą pracować z cenami detalicznymi, to znaczy tych użytkowników należy dodać jako użytkowników w biurze obsługi. Ponadto musi być włączona właściwośc **Użyj dzisiejszej daty do obliczenia cen** w sekcji **Parametry Commerce > ceny i rabaty > Różne**. W ten sposób można przechowywać wartość parametru rozrachunków z odbiorcami dla żądanej daty wysyłki lub żądanej daty odbioru dla cen Supply Chain Management, ale ceny detaliczne będą nadal używane przy obliczaniu cen w dzisiejszej dacie.
 
 Ponadto **tylko** aparat kalkulacji cen obsługuje następujące funkcje cen:
 

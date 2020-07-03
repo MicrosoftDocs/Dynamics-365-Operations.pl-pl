@@ -3,7 +3,7 @@ title: Ustaw strony niestandardowe dla danych logowania użytkowników
 description: W tym temacie opisano, jak budować niestandardowe strony w Microsoft Dynamics 365 Commerce, które obsługują niestandardowe logowanie dla użytkowników dzierżawców Azure Active Directory (Azure AD) dla klientów indywidualnych (B2C).
 author: brianshook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 210a7d1c2b0a9a9606723b48681cca3a50fcc05b
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 71c0f0b6969985b04262b522dd2165eb1475878d
+ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096804"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456979"
 ---
-# <a name="set-up-custom-pages-for-user-logins"></a>Konfigurowanie stron niestandardowych do logowań użytkowników
+# <a name="set-up-custom-pages-for-user-sign-ins"></a>Konfiguracja stron niestandardowych do logowań użytkowników
 
 
 [!include [banner](includes/banner.md)]

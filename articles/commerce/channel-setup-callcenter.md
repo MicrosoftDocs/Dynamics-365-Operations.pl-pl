@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 14cee020cc8aead627180343c82bf23534ae83c4
-ms.sourcegitcommit: 0681a00d60c9f8cc8f7b9888b8c5ddf07279fc04
+ms.openlocfilehash: bdaabad39484cb12537bc5f94c34dcb2575a5b2f
+ms.sourcegitcommit: ef27189efc15ce79c3c31ce2e41ef8a606fc5429
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3131738"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410420"
 ---
 # <a name="set-up-a-call-center-channel"></a>Konfigurowanie kanału biura obsługi
 
@@ -34,7 +34,7 @@ W tym temacie opisano, jak dodać utworzyć nowy biura obsługi w Microsoft Dyna
 ## <a name="overview"></a>Omówienie
 
 
-W Dynamics 365 Commerce biuro obsługi jest typem kanału sprzedaży detalicznej, który można zdefiniować w aplikacji. Zdefiniowanie kanału dla jednostek biura obsługi telefonicznej umożliwia systemowi na odtworzenie konkretnych danych i zamówień, które są domyślne dla zamówień sprzedaży. Firma może definiować wiele kanałów biura obsługi w module Commerce, dlatego należy zauważyć, że pojedynczy użytkownik może być połączony tylko z jednym kanałem biura obsługi. 
+W Dynamics 365 Commerce biuro obsługi jest typem kanału Commerce, który można zdefiniować w aplikacji. Zdefiniowanie kanału dla jednostek biura obsługi telefonicznej umożliwia systemowi na odtworzenie konkretnych danych i zamówień, które są domyślne dla zamówień sprzedaży. Firma może definiować wiele kanałów biura obsługi w module Commerce, dlatego należy zauważyć, że pojedynczy użytkownik może być połączony tylko z jednym kanałem biura obsługi. 
 
 Przed utworzeniem nowego kanału biura obsługi, należy upewnić się, że zakończono [Konfigurowanie wstępnie wymaganych ustawień kanału](channels-prerequisites.md).
 
@@ -84,7 +84,7 @@ Aby skonfigurować metody płatności, należy wykonać następujące kroki dla 
 
 Poniższy obraz przedstawia przykład kart i metod płatności gotówką.
 
-![Przykład metod płatności](media/channel-setup-retail-5.png)
+![Przykład metod płatności](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ustaw metody dostawy
 

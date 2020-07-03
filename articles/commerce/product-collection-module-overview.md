@@ -3,7 +3,7 @@ title: Moduły kolekcji produktów
 description: Ten temat stanowi przegląd modułów kolekcji produktów w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/07/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 069fa1cb6acad4b8d6618cebb754cbc0892ca9cf
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 698bdd22cffad26bc9126fca5649f091fbeef4dd
+ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025955"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3464960"
 ---
 # <a name="product-collection-modules"></a>Moduły kolekcji produktów
 
@@ -72,16 +72,17 @@ W poniższej tabeli opisano różne typy modułów kolekcji produktów w Dynamic
 
 Aby dodać moduł kolekcji produktów do strony kategorii, wykonaj następujące kroki.
 
-1. W Dynamics 365 Commerce przejdź do swojej witryny i utwórz stronę, na której jest używany ten sam szablon, co domyślna strona kategorii.
-1. W konspekcie strony wybierz gniazdo **Stopka podrzędna**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz **Kontener** i wybierz przycisk **OK**.
-1. W module kontener wybierz przycisk wielokropka, a następnie wybierz pozycję **Dodaj moduł**.
-1. W oknie dialogowym **Dodaj moduł** wybierz **Kolekcja produktu** i wybierz przycisk **OK**.  
-1. Skonfiguruj ustawienia wybierając odpowiednie źródło danych oraz dane wejściowe dla kolekcji produktów.
+1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć nową stronę.
+1. W oknie dialogowym **Wybierz szablon** wybierz ten sam szablon, który jest używany przez domyślną stronę kategorii. W sekcji **Nazwa strony** wpisz odpowiednią nazwę, a następnie wybierz przycisk **OK**.
+1. W gnieździe **Stopka podrzędna** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
+1. W gnieździe **Kontener** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodawanie modułu** wybierz moduł **Kolekcja prodktów** i wybierz przycisk **OK**.  
 1. W okienku właściwości modułu kolekcja produktów wybierz opcję **Dodaj listę produktów**.
-1. W oknie dialogowym **Wybór konfiguracji listy produktów** wybierz typ listy, wprowadź liczbę towarów i wybierz inne opcje dostępne dla typu listy. Aby uzyskać więcej informacji o typach list, zobacz poniższą tabelę. 
+1. W oknie dialogowym **Wybór konfiguracji listy produktów** wybierz typ listy, źródło listy i wprowadź liczbę towarów. Skonfiguruj inne opcje dostępne dla typu listy. Aby uzyskać więcej informacji o typach list, zobacz poniższą tabelę. 
 1. Kliknij przycisk **OK**.
-1. Zapisz stronę i zaewidencjonuj ją.
+1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony.
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
 W poniższej tabeli przedstawiono typy list, które są dostępne do wybrania w oknie dialogowym **Wybór konfiguracji listy produktów**.
 

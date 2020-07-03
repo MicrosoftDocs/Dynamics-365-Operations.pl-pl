@@ -3,7 +3,7 @@ title: Dodawanie rekomendacji produktu w punkcie sprzedaży
 description: W tym temacie opisano sposób korzystania z rekomendacji dotyczących produktów na urządzeniu punktu sprzedaży (POS).
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/20
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2ad50a83b85de49b0016549f0baec2328f1608f5
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: fabf08e8dde1b9b6d27af3e42d3aaff904b467b0
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154210"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454540"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Dodawanie rekomendacji produktu w punkcie sprzedaży
 
@@ -73,7 +73,7 @@ Aby skonfigurować rekomendacje produktu, wykonaj następujące czynności:
 
 [Omówienie rekomendacji produktów](product-recommendations.md)
 
-[Włączanie ADLS w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
+[Włączanie Azure Data Lake Storage w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
 
 [Włącz rekomendacje produktów](enable-product-recommendations.md)
 

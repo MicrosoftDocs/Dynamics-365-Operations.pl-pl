@@ -3,7 +3,7 @@ title: Moduł szczegółów zamówienia
 description: W tym temacie opisano szczegóły modułów potwierdzenia zamówienia i sposób ich używania w Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cb09a0b6ce1e48707f96021e9fad0006d9c1c55c
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c2ec629d9fd027be01652351ab1c99001e063e30
+ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026024"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3464937"
 ---
 # <a name="order-details-module"></a>Moduł szczegółów zamówienia
 
@@ -35,11 +35,11 @@ W tym temacie opisano szczegóły modułów potwierdzenia zamówienia i sposób 
 
 Moduł szczegółów zamówienia służy do wyświetlania szczegółów potwierdzenia zamówienia po jego złożeniu. Zawiera on identyfikator potwierdzenia zamówienia, informacje kontaktowe zamówienia oraz inne szczegóły zamówienia, takie jak zakupione towary, informacje o płatności oraz metodę wysyłki.
 
-## <a name="order-confirmation-module-properties"></a>Właściwości modułu potwierdzenia zamówienia
+## <a name="order-details-module-properties"></a>Właściwości modułu szczegółów zamówienia
 
-| Nazwa właściwości  | Wartości | Opis |
+| Nazwa właściwości  | Wartości | opis |
 |----------------|--------|-------------|
-| Nagłówek        | Tekst nagłówka i znacznik nagłówka (**H1**, **H2**, **H3**, **H4**, **H5** lub **H6**) | Moduł potwierdzający zamówienie może mieć nagłówek. Domyślnie w nagłówku jest używany znacznik nagłówka **H2**. Jednak znacznik można zmienić, aby spełniał wymagania dotyczące dostępności. |
+| Nagłówek        | Tekst nagłówka i znacznik nagłówka (**H1**, **H2**, **H3**, **H4**, **H5** lub **H6**) | Moduł szczegółów zamówienia może mieć nagłówek. Domyślnie w nagłówku jest używany znacznik nagłówka **H2**. Jednak znacznik można zmienić, aby spełniał wymagania dotyczące dostępności. |
 | Numer osoby kontaktowej | Tekst | Numer kontaktowy może być podawany dla pytań związanych z zamówieniami. |
 
 ## <a name="modules-that-can-be-used-on-an-order-details-page"></a>Moduły, których można używać na stronie szczegółów zamówienia
@@ -49,22 +49,26 @@ Podczas tworzenia strony szczegóły zamówienia można dodać także inne odpow
 - **Moduł Rekomendacje** — moduł rekomendacji może zostać dodany do strony szczegółów zamówienia w celu zaproponowania odbiorcy innych produktów.
 - **Moduły marketingowe** — dowolny moduł marketingowy można dodać do strony Szczegóły zamówień, aby wyświetlić zawartość marketingową.
 
-## <a name="create-an-order-details-page-module"></a>Tworzenie modułu strony szczegółów zamówienia
+## <a name="add-an-order-details-module-to-a-page"></a>Dodawanie modułu szczegółów zamówienia do strony
 
-1. Utwórz szablon strony o nazwie nazwa **szablon szczegółów zamówienia**.
-1. W gnieździe **Główne** na stronie domyślnej dodaj moduł szczegółów zamówienia.
-1. W module szczegóły zamówienia dodaj moduł rekomendacji.
-1. Zapisz i zobacz podgląd szablonu. Moduł szczegółów zamówienia nie będzie renderowany, ponieważ wymaga kontekstu numeru potwierdzenia zamówienia.
-1. Zakończ edytowanie szablonu i opublikuj go.
-1. Za pomocą utworzonego właśnie szablonu szczegółów zamówienia utwórz stronę o nazwie **strona szczegółów zamówienia**.
-1. Dodaj stronę domyślną do konspektu strony.
-1. W gnieździe **nagłówka** w dodaj fragment nagłówka.
-1. W gnieździe **stopki** w dodaj fragment stopki.
-1. W gnieździe **Główne** dodaj moduł szczegółów zamówienia.
-1. W okienku właściwości dla modułu szczegółów zamówienia dodaj nagłówek **Szczegóły zamówienia**.
-1. Poniżej modułu szczegółów zamówienia dodaj moduł rekomendacji i skonfiguruj go tak, aby korzystał z ustawień list **Nowości** i **Bestsellery**.
-1. Zapisz i zobacz podgląd strony.
-1. Zakończ edytowanie strony i opublikuj go.
+Aby dodać moduł szczegółów zamówienia do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
+
+1. Przejdź do **Szablonu**, a następnie wybierz **Nowy**, aby utworzyć nowy szablon.
+1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon szczegółów zamówienia**, a następnie wybierz **OK**.
+1. W gnieździe **Treść** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Strona domyślna** i wybierz przycisk **OK**.
+1. W gnieździe **Głównym** w module **Strony domyślnej** wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
+1. W oknie dialogowym **Dodawanie modułu** wybierz moduł **Szczegółóy zamówienia** i wybierz przycisk **OK**.
+1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd szablonu. Moduł szczegółów zamówienia nie będzie renderowany, ponieważ wymaga kontekstu numeru potwierdzenia zamówienia.
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć nową stronę.
+1. W oknie dialogowym **Wybierz szablon** wybierz opcję **Szablon szczegółów zamówienia**. W sekcji **Nazwa strony** przejdź do **Strona szczegółów zamówienia**, a następnie wybierz przycisk **OK**.
+1. W gnieździe **Głównym** w module **Strony domyślnej** wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
+1. W oknie dialogowym **Dodawanie modułu** wybierz moduł **Szczegółóy zamówienia** i wybierz przycisk **OK**.
+1. W okienku właściwości modułu szczegółów zamówienia wybierz pozycję **Nagłówek** obok symbolu ołówka.
+1. W polu **Tekst nagłówka** okna dialogowego **Nagłówek** wpisz tekst **Szczegóły zamówienia**, a następnie wybierz **OK**.
+1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony.
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

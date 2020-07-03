@@ -3,7 +3,7 @@ title: Personalizowanie środowiska użytkownika
 description: W tym temacie wyjaśniono, jak można spersonalizować aplikację.
 author: jasongre
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: bb66db1e41dce6987bdfc52dd58e2b704ce36720
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260513"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412361"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -117,7 +117,11 @@ Następujące narzędzia są dostępne na pasku narzędzi **Personalizacja**:
 - Użyj narzędzia **Przenieś**, aby przenieść element w inne miejsce w bieżącej grupie elementów. Nie można przenieść elementu poza jego grupę nadrzędną. Aby skorzystać z tego narzędzia, należy zaznaczyć przycisk **Przenieś** na pasku narzędzi, a następnie wybrać element do przeniesienia. Po wybraniu elementu aplikacja określa lokalizację, dokąd można przenieść element. Te lokalizacje są nazywane *strefami upuszczania*. Podczas przeciągania elementu w granicach bieżącej grupy każda sfera upuszczania jest wyświetlana za pomocą kolorowej, pogrubionej linii obok obszaru, w którym można upuścić element.
 - Użyj narzędzia **Pomiń**, aby usunąć element z sekwencji tabulacji na stronie. Po wybraniu przycisku **Pomiń** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które zostały pominięte. Można interaktywnie usunąć lub dodać pola do sekwencji kart.
 - Użyj narzędzia **Pokaż w nagłówku**, aby wyświetlić pole w sekcji podsumowania skróconej karty. Po wybraniu przycisku **Pokaż w nagłówku** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie pola, które wybrano jako pola podsumowania. Można dodać w interaktywny sposób pola do podsumowania skróconej karty lub je wybrać, by je z niego usunąć.
-- Narzędzie **Wymaganie** umożliwia wyznaczenie elementu jako wymaganego do wprowadzania danych. Po wybraniu przycisku **Wymagane** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które wymagają personalizacji. Następnie można oznaczyć je jako niewymagane. Ta opcja jest dostępna tylko w następnych wydaniach, gdy włączone są [Zapisane widoki](saved-views.md) i **Wyznacz pola wymagane użycia funkcji personalizacji**.
+- Narzędzie **Wymaganie** umożliwia wyznaczenie elementu jako wymaganego do wprowadzania danych. Po wybraniu przycisku **Wymagane** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które zostały spersonalizowane, aby były wymagane. Następnie można oznaczyć je jako niewymagane. Ta opcja jest dostępna tylko w wersji 10.0.12 i późniejsze, gdy włączone jest funkcja **Wyznacz pola wymagane użycia funkcji personalizacji**.
+
+    > [!IMPORTANT]
+    > Wersja 10.0.12 to wersja zapoznawcza. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Dostępność aktualizacji usługi](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
 - Użyj narzędzia **Zablokuj**, aby oznaczyć element jako edytowalny lub nieedytowalny. Po wybraniu przycisku **Zablokuj** na pasku narzędzi w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które są nieedytowalne. Następnie można znowu umożliwić ich edycję. Należy zwrócić uwagę, że niektóre pola są wymagane i nie można ich oznaczyć jako nieedytowalne. Obok tych pól widać symbol kłódki.
 - Użyj przycisku **Dodaj aplikację z Power Apps**, aby na stronie osadzić aplikację utworzoną przy użyciu usługi Microsoft Power Apps. Aby uzyskać szczegółowe informacje o osadzaniu aplikacji z usługi Power Apps w stronie, zobacz [Osadzanie aplikacji z Power Apps](embed-power-apps.md). Ta opcja jest dostępna tylko wtedy, gdy jest wyłączona funkcja [Zapisanych widoków](saved-views.md).  
 - Użyj przycisku **Dodaj aplikację**, by osadzić na stronie aplikację utworzoną za pomocą Microsoft Power Apps lub programu innej firmy. Ta opcja jest dostępna tylko wtedy, gdy jest włączona funkcja [Zapisanych widoków](saved-views.md). 
@@ -159,28 +163,21 @@ Aby spersonalizować pulpit nawigacyjny, kliknij prawym przyciskiem myszy dowoln
 - Aby zapisać kafelki obszaru roboczego, wybierz opcję **Personalizuj tę stronę** w oknie właściwości, aby wyświetlić pasek narzędzi **Personalizacji**. Następnie można uporządkować dowolnie kafelki za pomocą narzędzia **Przenieś**.
 - Aby dodać nowy kafelek obszaru roboczego, w oknie właściwości zaznacz **Dodaj obszar roboczy**. W dolnej części pulpitu nawigacyjnego jest tworzony nowy kafelek obszaru roboczego. Ten kafelek obszaru roboczego można zmieniać dowolnie. Można również dodać listy, kafelki oraz linki do obszaru roboczego w sposób opisany w sekcji tego tematu pt. [Dodawanie list, kafelków lub linków do obszarów roboczych](#adding-a-tile-list-or-link-to-a-workspace).
 
+
+## <a name="sharing-personalizations"></a>Udostępnianie personalizacji
+Po spersonalizowaniu strony można udostępnić te personalizacje innym użytkownikom poprzez wyeksportowanie spersonalizowanej strony. Następnie możesz poprosić innych użytkowników, aby otworzyli spersonalizowaną stronę i zaimportowali utworzony przez Ciebie plik personalizacji. Alternatywnie można przekazać swoje personalizacje użytkownikowi posiadającemu uprawnienia administratora. Użytkownik ten może następnie zastosować ten plik personalizacji do wielu użytkowników jednocześnie, korzystając ze strony administracji **Personalizacja**.
+
 ## <a name="administration-of-personalizations"></a>Administrowanie personalizacjami
+Strona **Personalizacja** jest centralnym centrum zarządzania personalizacjami na poziomie organizacyjnym. Zawartość i możliwości na tej stronie zależą od tego, czy włączono funkcję **Zapisane widoki**.  
 
-Po spersonalizowaniu strony można udostępnić te personalizacje innym użytkownikom poprzez wyeksportowanie spersonalizowanej strony. Następnie możesz poprosić innych użytkowników, aby otworzyli spersonalizowaną stronę i zaimportowali utworzony przez Ciebie plik personalizacji. Alternatywnie można przekazać swoje personalizacje użytkownikowi posiadającemu uprawnienia administratora. Ten użytkownik może następnie zastosować Twój plik personalizacji do wielu użytkowników w tym samym czasie.
+Klienci, którzy włączyli funkcję **Zapisane widoki**, powinni zapoznać się z sekcją „Zarządzanie globalnie widokami” w temacie [Zapisane widoki](saved-views.md).  
 
-Użytkownicy posiadający uprawnienia administratora mogą też zarządzać personalizacjami dla innych użytkowników na stronie **Personalizacja**.
-
-W przypadku użytkowników, którzy nie włączyli funskcji [Zapisane widoki](saved-views.md), na tej stronie znajdują się cztery karty:
+W przypadku użytkowników, którzy jeszcze nie włączyli funkcji [Zapisane widoki](saved-views.md), na tej stronie znajdują się cztery karty:
 
 - **Zastosuj** — ta opcja pozwala zaimportować lub wybrać personalizację dla co najmniej jednego użytkownika. Aby zastosować personalizację dla jednego lub kilku użytkowników, należy najpierw zaznaczyć rolę i użytkowników, którzy pełnią tę rolę. Następnie wybierz istniejącą personalizację do zastosowania do wybranych użytkowników lub zaimportuj plik personalizacji. Personalizacja jest zweryfikowana i zostanie zastosowana do wszystkich zaznaczonych użytkowników następnym razem, gdy otworzą wybraną stronę.
 - **Wyczyść** — Tutaj można wyczyścić wszystkie personalizacje strony lub obszaru roboczego dla jednego lub więcej użytkowników. Najpierw wybierz stronę lub obszar roboczy, aby wyświetlić listę użytkowników, którzy spersonalizowali tę stronę/obszar. Następnie wybierz użytkowników, dla których chcesz wyczyścić personalizację danej strony lub obszaru roboczego, i wybierz opcję **Wyczyść**. Wszystkie personalizacje zastosowane przez wybranych użytkowników do wybranej strony lub obszaru roboczego zostaną usunięte. Tej operacji nie można cofnąć. Jednak jeśli dla strony lub obszaru roboczego zapisano personalizację, można ją ponownie zaimportować.
 - **Użytkownicy** — Wybierz użytkownika, aby wyświetlić listę stron spersonalizowanych przez tę osobę. Następnie można włączyć lub wyłączyć dla wybranego użytkownika możliwość korzystania z personalizacji określonych stron lub całego systemu. Można również zaimportować, wyeksportować lub wyczyścić personalizację dla wybranego użytkownika. Ponadto można zresetować objaśnienia funkcji dla użytkownika. W takim przypadku, jeśli użytkownik wyłączył wszystkie okna wyskakujące, które wprowadzają nowe funkcje, pojawią się ponownie przy następnym napotkaniu tych funkcji przez użytkownika.
 - **System** — ta opcja pozwala tymczasowo wyłączyć personalizacje dla wszystkich użytkowników w systemie. W takim przypadku wszystkie personalizacje są usuwane dla wszystkich użytkowników, a wszystkie strony są resetowane do ich stanu domyślnego. W przypadku ponownego włączenia personalizacji wszystkie personalizacje zostaną zastosowane ponownie. Można również trwale usunąć wszystkie personalizacje dla wszystkich użytkowników w systemie. Nie jest możliwe odzyskanie personalizacji, które zostały usunięte. Dlatego przed wykonaniem tego zadania należy koniecznie wyeksportować wszystkie personalizacje, które potem możesz chcieć zaimportować.
-
-W przypadku użytkowników, którzy nie włączyli funkcji [Zapisane widoki](saved-views.md), na stronie **Personalizacje** znajduje się pięć kart:
-
-- **Opublikowane widoki** — te widoki zostały opublikowane w organizacji. Aby zmienić użytkowników, którzy są ukierunkowani na te widoki, można zmienić role zabezpieczeń lub firmy skojarzone z poszczególnymi widokami. Można również eksportować lub usuwać jeden lub więcej opublikowanych widoków.
-- **Nieopublikowane widoki** — te widoki to widoki szablonów, które zostały zaimportowane do systemu, ale nie zostały jeszcze opublikowane. Te widoki można publikować, eksportować i usuwać.
-- **Widoki osobiste** — te widoki zostały utworzone przez użytkowników w systemie. Możesz opublikować widok osobisty w organizacji lub skopiować jeden lub więcej z tych widoków do innego użytkownika. Te widoki można również eksportować i usuwać wedle potrzeb.
-- **Użytkownicy** — Wybierz użytkownika, aby wyświetlić listę stron spersonalizowanych przez tę osobę. Następnie można włączyć lub wyłączyć dla wybranego użytkownika możliwość korzystania z personalizacji określonych stron lub całego systemu. Można również zaimportować, wyeksportować lub wyczyścić personalizację dla wybranego użytkownika. Ponadto można zresetować objaśnienia funkcji dla użytkownika. W takim przypadku, jeśli użytkownik wyłączył wszystkie okna wyskakujące, które wprowadzają nowe funkcje, pojawią się ponownie przy następnym napotkaniu tych funkcji przez użytkownika.
-- **System** — ta opcja pozwala tymczasowo wyłączyć personalizacje dla wszystkich użytkowników w systemie. W takim przypadku wszystkie personalizacje są usuwane dla wszystkich użytkowników, a wszystkie strony są resetowane do ich stanu domyślnego. W przypadku ponownego włączenia personalizacji wszystkie personalizacje zostaną zastosowane ponownie. Można również trwale usunąć wszystkie personalizacje dla wszystkich użytkowników w systemie. Nie jest możliwe odzyskanie personalizacji, które zostały usunięte. Dlatego przed wykonaniem tego zadania należy koniecznie wyeksportować wszystkie personalizacje, które potem możesz chcieć zaimportować.
-
-Użytkownicy, którzy mają dostęp do strony **Personalizacje**, mogą również importować widoki osobiste lub szablony za pomocą przycisku **Importuj widoki** w okienku akcji.
 
 ## <a name="personalizing-inventory-dimensions"></a>Personalizacja wymiarów magazynowych
 

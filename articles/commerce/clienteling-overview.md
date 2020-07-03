@@ -3,7 +3,7 @@ title: Przegląd obsługi relacji z klientami
 description: Ten temat zawiera omówienie nowych możliwości relacji z klientami dostępnych w aplikacji sklepu.
 author: bebeale
 manager: AnnBe
-ms.date: 11/01/19
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 4f045f8509a6b5027fd3cf8e5ca9e382457a5e83
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d76668fa16a7634e7fbd953afaa6c89eed5457a2
+ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023639"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456514"
 ---
 # <a name="clienteling-overview"></a>Omówienie obsługi relacji z klientami
 
@@ -115,7 +115,7 @@ Aby skonfigurować integrację wykonaj następujące czynności:
 3. Utwórz magazyn kluczy Azure i Zapisz klucz tajny aplikacji. Aby uzyskać instrukcje, [Skorzystaj z opcji szybkiego startu: set i Pobierz klucz tajny z magazynu kluczy systemu Azure przy użyciu portalu Azure Portal](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
 4. Włącz dostęp do magazynu kluczy platformy Azure z Commerce. Aby wykonać ten krok, trzeba mieć identyfikator aplikacji i klucz tajny. Aplikacja może być identyczna z aplikacją utworzoną w kroku 1 lub być nową aplikacją. (Innymi słowy, można korzystać z aplikacji utworzonej w kroku 1 w przypadku dostępu do magazynu kluczy i dostępu do usługi Customer Insights albo można utworzyć unikatową aplikację dla każdego typu dostępu.) Aby uzyskać instrukcje, [Przejrzyj główne poświadczenia usługi sklepów w magazynie kluczy stosu Azure](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
 5. W Headquarters przejdź do **Administrowanie systemem \> Ustawienia \> Parametry usługi Key Vault** i wprowadź wymagane informacje dotyczące magazynu kluczy. Następnie w polu **klient magazynu kluczy** wprowadź identyfikator aplikacji, który został użyty w kroku 4, aby umożliwić Commerce dostęp do kluczy tajnych w magazynie kluczy.
-6. Aby dodać aplikację utworzoną w kroku 1 do listy bezpiecznych aplikacji (czasami nazywanych whitelist), należy przejść do sekcji Customer Insights i uzyskać dostęp do **widoku** aplikacji. Aby uzyskać instrukcje instalacji, zobacz [Uprawnienia](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+6. Aby dodać aplikację utworzoną w kroku 1 do listy bezpiecznych aplikacji (czasami nazywanych bezpieczną listą), należy przejść do sekcji Customer Insights i uzyskać dostęp do **Widoku** aplikacji. Aby uzyskać instrukcje instalacji, zobacz [Uprawnienia](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
 7. W module Commerce na stronie **Parametry Commerce** na karcie **relacje z klientam**, na skróconej karcie **Dynamics 365 Customer Insights** należy wykonać następujące kroki:
 
     1. W polu **identyfikator aplikacji** wprowadź identyfikator zgłoszenia użyty w kroku 1.

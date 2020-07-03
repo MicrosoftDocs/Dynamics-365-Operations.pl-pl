@@ -1,6 +1,6 @@
 ---
-title: Włączanie ADLS w środowisku Dynamics 365 Commerce
-description: W tym temacie opisano sposób włączania i testowania Azure Data Lake Storage (ADLS) dla środowiska Dynamics 365 Commerce, który jest wstępnym warunkiem włączenia zaleceń dotyczących produktów.
+title: Włączanie Azure Data Lake Storage w środowisku Dynamics 365 Commerce
+description: W tym temacie opisano sposób włączania i testowania Azure Data Lake Storage dla środowiska Dynamics 365 Commerce, który jest wstępnym warunkiem włączenia zaleceń dotyczących produktów.
 author: bebeale
 manager: AnnBe
 ms.date: 04/13/2020
@@ -19,57 +19,57 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ba428765babb9ca7566da7a457368959b1c29083
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 83b829306c2da2d10924e547fd3cac6ae6781db3
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259755"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404193"
 ---
-# <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>Włączanie ADLS w środowisku Dynamics 365 Commerce
+# <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Włączanie Azure Data Lake Storage w środowisku Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób włączania i testowania Azure Data Lake Storage (ADLS) dla środowiska Dynamics 365 Commerce, który jest wstępnym warunkiem włączenia zaleceń dotyczących produktów.
+W tym temacie opisano sposób włączania i testowania Azure Data Lake Storage dla środowiska Dynamics 365 Commerce, który jest wstępnym warunkiem włączenia zaleceń dotyczących produktów.
 
 ## <a name="overview"></a>Omówienie
 
-W rozwiązaniu Dynamics 365 Commerce wszystkie informacje o produktach i transakcjach są śledzone w magazynie jednostek środowiska. Aby udostępnić te dane innym usługom Dynamics 365, takim jak analiza danych, analiza biznesowa i spersonalizowane rekomendacje, konieczne jest podłączenie środowiska do rozwiązania Customer Azure Data Lake Storage Gen 2 (ADLS).
+W rozwiązaniu Dynamics 365 Commerce wszystkie informacje o produktach i transakcjach są śledzone w magazynie jednostek środowiska. Aby udostępnić te dane innym usługom Dynamics 365, takim jak analiza danych, analiza biznesowa i spersonalizowane rekomendacje, konieczne jest podłączenie środowiska do rozwiązania Customer Azure Data Lake Storage Gen 2.
 
-Ponieważ ADLS jest skonfigurowany w środowisku, wszystkie niezbędne dane są dublowane z magazynu jednostek, mimo że są nadal chronione i podlegają kontroli odbiorcy.
+Ponieważ Azure Data Lake Storage jest skonfigurowany w środowisku, wszystkie niezbędne dane są dublowane z magazynu jednostek, mimo że są nadal chronione i podlegają kontroli odbiorcy.
 
-Jeśli zaleceń produktu lub spersonalizowane rekomendacje są również włączone w środowisku, wówczas stos rekomendacji produktów będzie mieć dostęp do folderu dedykowanego w ADLS w celu pobrania danych odbiorcy i obliczania zaleceń na jego podstawie.
+Jeśli zaleceń produktu lub spersonalizowane rekomendacje są również włączone w środowisku, wówczas stos rekomendacji produktów będzie mieć dostęp do folderu dedykowanego w Azure Data Lake Storage w celu pobrania danych odbiorcy i obliczania zaleceń na jego podstawie.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Klienci muszą mieć ADLS skonfigurowany w swojej subskrypcji systemu Azure. Ten temat nie obejmuje zakupu subskrypcji systemu Azure ani konfiguracji konta magazynu z włączonym ADLS.
+Klienci muszą mieć Azure Data Lake Storage skonfigurowany w swojej subskrypcji systemu Azure. Ten temat nie obejmuje zakupu subskrypcji systemu Azure ani konfiguracji konta magazynu z włączonym Azure Data Lake Storage.
 
-Aby uzyskać więcej informacji o ADLS, zobacz [Oficjalną dokumentację systemu ADLS](https://azure.microsoft.com/pricing/details/storage/data-lake).
+Aby uzyskać więcej informacji o Azure Data Lake Storage, zobacz [Oficjalną dokumentację Azure Data Lake Storage Gen2](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
 ## <a name="configuration-steps"></a>Kroki w konfiguracji
 
-W tej sekcji omówiono kroki konfiguracji niezbędne do włączenia ADLS w środowisku w odniesieniu do zaleceń dotyczących produktów.
-Aby uzyskać bardziej szczegółowe omówienie kroków wymaganych do włączenia ADLS, zapoznaj się z [Udostępnianie magazynu jednostek w usłudze Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+W tej sekcji omówiono kroki konfiguracji niezbędne do włączenia Azure Data Lake Storage w środowisku w odniesieniu do zaleceń dotyczących produktów.
+Aby uzyskać bardziej szczegółowe omówienie kroków wymaganych do włączenia Azure Data Lake Storage, zapoznaj się z [Udostępnianie magazynu jednostek w usłudze Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
-### <a name="enable-adls-in-the-environment"></a>Włączanie ADLS w środowisku
+### <a name="enable-azure-data-lake-storage-in-the-environment"></a>Włączanie Azure Data Lake Storage w środowisku
 
 1. Zaloguj się do portalu back office środowiska.
 1. Wyszukaj **Parametry systemowe** i przejdź do karty **Połączenia danych**. 
 1. Określ opcję **Włącz integrację danych** w usłudze **Data Lake**.
 1. Ustaw opcję **Włącz stopniową aktualizację w Data Lake** na **Tak**.
 1. Nastepnie wprowadź wymagane informacje:
-    1. **Identyfikator aplikacji** // **Application Secret** // **Nazwa DNS** -wymagane do nawiązania połączenia z magazynem kluczy, w którym jest przechowywany klucz tajny ADLS.
-    1. **Secret name** - nazwa tajna przechowywana w magazynie kluczy i używana do uwierzytelniania za pomocą ADLS.
+    1. **Identyfikator aplikacji** // **Wpis tajny aplikacji** // **Nazwa DNS** - wymagane do nawiązania połączenia z magazynem kluczy, w którym jest przechowywany tajny wpis Azure Data Lake Storage.
+    1. **Tajna nazwa** - nazwa tajna przechowywana w magazynie kluczy i używana do uwierzytelniania za pomocą Azure Data Lake Storage.
 1. Zapisz zmiany w lewym górnym rogu strony.
 
-Poniższy obraz przedstawia przykład konfiguracji ADLS.
+Poniższy obraz przedstawia przykład konfiguracji Azure Data Lake Storage.
 
-![Przykładowa konfiguracja ADLS](./media/exampleADLSConfig1.png)
+![Przykładowa konfiguracja Azure Data Lake Storage](./media/exampleADLSConfig1.png)
 
-### <a name="test-the-adls-connection"></a>Przetestuj połączenie ADLS
+### <a name="test-the-azure-data-lake-storage-connection"></a>Przetestuj połączenie Azure Data Lake Storage
 
 1. Przetestuj połączenie z magazynem kluczy za pomocą łącza **Testuj magazyn kluczy usługi Azure**.
-1. Przetestuj połączenie z ADLS za pomocą łącza **Testuj magazyn usługi Azure**.
+1. Przetestuj połączenie z Azure Data Lake Storage za pomocą łącza **Testuj magazyn usługi Azure**.
 
 > [!NOTE]
 > Jeśli testy zakończą się niepowodzeniem, dokładnie sprawdź, czy wszystkie dodane powyżej informacje o magazynie klucza są poprawne, a następnie spróbuj ponownie.
@@ -86,7 +86,7 @@ Poniższy obraz przedstawia przykład magazynu jednostki z włączonym automatyc
 
 ![Przykład magazynu jednostki z włączonym automatycznym odświeżaniem](./media/exampleADLSConfig2.png)
 
-ADLS jest teraz skonfigurowany dla tego środowiska. 
+Azure Data Lake Storage jest teraz skonfigurowany dla tego środowiska. 
 
 Jeśli nie zostało to jeszcze zrobione, wykonaj kroki [w celu włączenia zaleceń i personalizacji produktu](enable-product-recommendations.md) w środowisku.
 

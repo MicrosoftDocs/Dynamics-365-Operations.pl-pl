@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cd3e2ac729bdb3ecc8e7bfacb060e433b185f09
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: d050bfa5b28219ef421dba4ed3a72f11bfd4daee
+ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933939"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3421662"
 ---
 # <a name="electronic-reporting-er-overview"></a>Omówienie raportowania elektronicznego (RE)
 
@@ -40,7 +40,7 @@ ER obecnie obsługuje arkusze w formatach tekstowym, XML, Microsoft Word i OPENX
 ## <a name="capabilities"></a>Możliwości
 Aparat GER ma następujące cechy:
 
-- Stanowi jedno wspólne narzędzie do raportowania elektronicznego w różnych domenach oraz zastępuje ponad 20 różnych innych aparatów obsługujących różne formy raportowania elektronicznego dla Finance and Operations.
+- Stanowi jedno wspólne narzędzie do raportowania elektronicznego w różnych domenach oraz zastępuje ponad 20 różnych innych aparatów obsługujących różne formy raportowania elektronicznego w Finance and Operations.
 - Izoluje format raportu od bieżącej implementacji. Innymi słowy format można stosować do różnych wersji.
 - Obsługuje tworzenie niestandardowego formatu opartego na oryginalnym formacie. Zawiera również funkcje automatycznego uaktualniania dostosowanego formatu po dokonaniu zmian w oryginalnym formacie spowodowanych koniecznością przetłumaczenia/dostosowania.
 - Staje się podstawowym standardowym narzędziem do obsługi wymagań tłumaczeniowych w raportach elektronicznych — dla oprogramowania zarówno firmy Microsoft, jak i jej partnerów.
@@ -81,7 +81,7 @@ Mapowanie modelu obsługujące przychodzące dokumenty elektroniczne ma następu
 
 Składnik typu Model danych jest projektowany dla każdej domeny biznesowej i służy jako ujednolicone źródło danych dla raportowania, które izoluje raportowanie od fizycznej implementacji źródeł danych. Reprezentuje właściwe dla domeny koncepcje i funkcje biznesowe w formie, która upraszcza początkowe projektowanie formatów raportowania i ich dalszą obsługę.
 
-#### <a name="FormatComponentOutbound"></a>Składniki typu Format dla wychodzących dokumentów elektronicznych
+#### <a name="format-components-for-outgoing-electronic-documents"></a><a name="FormatComponentOutbound"></a>Składniki typu Format dla wychodzących dokumentów elektronicznych
 
 Składnik typu Format określa schemat danych wyjściowych raportowania, które będą generowane w czasie wykonywania. Schemat składa się z następujących elementów:
 
@@ -107,7 +107,7 @@ Na poniższej ilustracji przedstawiono sposób przepływu danych w tych formatac
 
 Aby uruchomić jedną konfigurację formatu modułu ER i wygenerować wychodzący dokument elektroniczny, należy określić mapowanie dla konfiguracji formatu.
 
-#### <a name="FormatComponentInbound"></a>Składniki typu Format dla przychodzących dokumentów elektronicznych
+#### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Składniki typu Format dla przychodzących dokumentów elektronicznych
 Składnik typu Format określa schemat dokumentu przychodzącego, który jest importowany w czasie wykonywania. Schemat składa się z następujących elementów:
 
 - Format definiujący strukturę i zawartość dokumentu przychodzącego dokumentu elektronicznego zawierającego dane importowane podczas wykonywania. Składnik typu Format służy do analizowania składni przychodzących dokumentów w różnych formatach, takich jak tekst i XML.
@@ -144,7 +144,7 @@ Dostęp do składników formatu aplikacji ER zależy od ustawienia kodu ISO kraj
 
 Różne wersje składnika formatu danych mogą mieć różne ustawienia kodów ISO kraju/regionu.
 
-#### <a name="Configuration"></a>Konfiguracja
+#### <a name="configuration"></a><a name="Configuration"></a>Konfiguracja
 
 Konfiguracja narzędzia ER jest otoką konkretnego składnika ER. Składnik ten może być typu Model danych lub Format. Konfiguracja może zawierać różne wersje składnika ER. Każda konfiguracja jest oznaczona jako należąca do określonego dostawcy konfiguracji. Wersja **Wersja robocza** składnika konfiguracji może być edytowana, gdy właściciel konfiguracji został wybrany jako aktywny dostawca w ustawieniach ER w aplikacji.
 
@@ -154,26 +154,26 @@ Tworzona konfiguracja formatu zawiera składnik Format. Składnik Model danych o
 
 Konfiguracja ER jest udostępniana firmom w aplikacji.
 
-#### <a name="Provider"></a>Dostawca
+#### <a name="provider"></a><a name="Provider"></a>Dostawca
 
 Dostawca ER określa stronę (podmiotu) używaną do wskazania autora (właściciela) konfiguracji ER. Aplikacja ER pozwala zarządzać listą dostawców konfiguracji. Konfiguracje formatu publikowane dla dokumentów elektronicznych w ramach rozwiązania Finance and Operations są oznaczone jako należące do dostawcy konfiguracji **Microsoft**.
 
 Aby uzyskać informacje o rejestrowaniu nowego dostawcy ER, odtwórz przewodnik po zadaniu **ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego** (część procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**).
 
-#### <a name="Repository"></a>Repozytorium
+#### <a name="repository"></a><a name="Repository"></a>Repozytorium
 
 Konfiguracje ER są przechowywane w repozytorium ER. Obecnie obsługiwane są następujące typy repozytoriów ER: 
 
 - Biblioteka udostępnionych elementów LCS
 - Projekt usługi LCS
 - System plików
-- Regulatory Configuration Service (RCS)
-- Zasoby operacyjne
-
+- RCS
+- Zasoby rozwiązania Operations
+- Repozytorium globalne
 
 Repozytorium **Biblioteka udostępnionych elementów LCS** zapewnia dostęp do listy konfiguracji w bibliotece aktywów wspólnych w Lifecycle Services (LCS). Tego rodzaju repozytorium ER może być rejestrowane tylko dla dostawcy firmy Microsoft. Z biblioteki aktywów wspólnych LCS można importować najnowsze wersje konfiguracji ER do bieżącego wystąpienia.
 
-Repozytorium **Projekt usługi LCS** zapewnia dostęp do listy konfiguracji określonego projektu LCS (biblioteki zasobów projektu usługi LCS) wybranego na etapie rejestracji repozytorium. Narzędzie ER umożliwia przekazywanie udostępnionych konfiguracji z bieżącego wystąpienia do konkretnego repozytorium **Projekt usługi LCS**. Można także importować konfiguracje z repozytorium **Projekt usługi LCS** do bieżącego wystąpienia programu Finance and Operations.
+Repozytorium **Projekt usługi LCS** zapewnia dostęp do listy konfiguracji określonego projektu LCS (biblioteki zasobów projektu usługi LCS) wybranego podczas rejestracji repozytorium. Narzędzie ER umożliwia przekazywanie udostępnionych konfiguracji z bieżącego wystąpienia do konkretnego repozytorium **Projekt usługi LCS**. Można także importować konfiguracje z repozytorium **Projekt usługi LCS** do bieżącego wystąpienia aplikacji Finance and Operations.
 
 Repozytorium **systemu plików** udostępnia listę konfiguracji, które znajdują się w postaci plików xml w określonym folderze lokalnego systemu plików komputera, na którym działa usługa AOS. Wymagany folder jest wybierany w procesie rejestracji repozytorium. Można także importować konfiguracje z repozytorium **System plików** do bieżącego wystąpienia. 
 
@@ -184,9 +184,13 @@ Należy zauważyć, że ten typ repozytorium jest dostępny w następujących ś
 
 Aby uzyskać więcej informacji, zobacz [Importowanie konfiguracji raportowania elektronicznego (RE)](./electronic-reporting-import-ger-configurations.md).
 
-Repozytorium **wystąpienie RCS** zapewnia dostęp do listy konfiguracji określonego wystąpienia RCS wybranego na etapie rejestracji repozytorium. ER pozwala importować kompletne lub udostępniane konfiguracje z wybranego wystąpienia RCS do bieżącego wystąpienia i używać do raportowania elektronicznego.
+Repozytorium **RCS** zapewnia dostęp do listy konfiguracji określonego wystąpienia [Configuration service (RCS)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) wybranego na etapie rejestracji repozytorium. ER pozwala importować kompletne lub udostępniane konfiguracje z wybranego wystąpienia RCS do bieżącego wystąpienia i używać do raportowania elektronicznego.
 
-Aby uzyskać więcej informacji, zobacz [Importowanie konfiguracji raportowania elektronicznego (RE) z usługi Regulatory Configuration Services (RCS)](./rcs-download-configurations.md).
+Aby uzyskać więcej informacji, zobacz [Importowanie konfiguracji raportowania elektronicznego (RE) z RCS](./rcs-download-configurations.md).
+
+**Repozytorium globalne** umożliwia dostęp do listy konfiguracji w repozytorium globalnym w [Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Tego rodzaju repozytorium ER może być rejestrowane tylko dla dostawcy firmy Microsoft. Z repozytorium globalnego można importować najnowsze wersje konfiguracji ER do bieżącego wystąpienia.
+
+Aby uzyskać więcej informacji, zobacz [Importowanie konfiguracji raportowania elektronicznego (RE) z repozytorium globalnego w Configuration service](./er-download-configurations-global-repo.md).
 
 Repozytorium **Zasoby operacyjne** zapewnia dostęp do listy konfiguracji, które firma Microsoft, jako dostawca konfiguracji raportowania elektronicznego, publikuje w ramach rozwiązania aplikacji. Te konfiguracje można importować do bieżącego wystąpienia i używać dla raportowania elektronicznego lub odtwarzania instrukcji wykonywania przykładowych zadań. Można je również wykorzystywać dla dodatkowych tłumaczeń i dostosowań. Należy zauważyć, że najnowsze wersje konfiguracji ER udostępnianych przez Microsoft trzeba importować z biblioteki aktywów wspólnych LCS przy użyciu odpowiedniego repozytorium ER.
 

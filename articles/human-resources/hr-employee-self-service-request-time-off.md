@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EssWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d871bead89e48e65c411686e1bf3697b13b9a5aa
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: f4c2d082ebe7f97d5c649c38d2462a3c011aa0e7
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010249"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3429596"
 ---
 # <a name="request-time-off"></a>Żądanie czasu wolnego
 
@@ -42,6 +42,12 @@ W module Dynamics 365 Human Resources możesz przesyłać wnioski o czas wolny, 
 5. W razie potrzeby wprowadź informacje w polu **Komentarz**.
 
 6. Gdy masz wszystko gotowe do wysłania wniosku, naciśnij przycisk **Prześlij**. W przeciwnym razie wybierz opcję **Zapisz wersję roboczą**.
+
+## <a name="add-an-attachment-to-an-existing-request"></a>Dodaj załącznik do istniejącego żądania
+
+[!include [banner](includes/preview-feature.md)]
+
+Podczas aktualizowania istniejącego żądania czasu wolnego można dodać załącznik. Można również zobaczyć wszystkie powiązane wnioski dotyczące konkretnej daty. 
 
 ## <a name="view-leave-balances"></a>Wyświetlanie sald urlopów
 

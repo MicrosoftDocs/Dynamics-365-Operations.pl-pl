@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-35.md
                 - name: Aktualizacja Platform update dla wersji 10.0.10 (maj 2020)
                   href: get-started/whats-new-platform-update-34.md
-                - name: Aktualizacja Platform update 33 (kwiecień 2020)
-                  href: get-started/whats-new-platform-update-33.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje Platform
@@ -150,6 +148,8 @@
                                   href: data-entities/dual-write/link-your-environment.md
                                 - name: Włączenie mapowania jednostek dla podwójnego zapisu
                                   href: data-entities/dual-write/enable-entity-map.md
+                            - name: Migracja typu danych Waluta na potrzeby podwójnego zapisu
+                              href: data-entities/dual-write/currrency-decimal-places.md
                         - name: Zarządzanie podwójnym zapisem
                           items:
                             - name: Dostosowanie mapowania jednostek i pól
@@ -360,10 +360,12 @@
               href: user-interface/data-validation-workspace.md
             - name: Opisy błędów zarządzania danymi
               href: data-entities/dm-error-descriptions.md
-        - name: Usługa Azure Data Lake
+        - name: Azure Data Lake
           items:
             - name: Przegląd usługi Azure Data Lake
               href: data-entities/azure-data-lake-overview.md
+            - name: Konfigurowanie eksportu do usługi Azure Data Lake
+              href: data-entities/configure-export-data-lake.md
             - name: Aplikacje Finance and Operations w usłudze Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
             - name: Udostępnianie magazynu jednostek w usłudze Data Lake
@@ -498,6 +500,8 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: Diagnostyka we wdrożeniach lokalnych
                       href: deployment/on-premises-diagnostics.md
+                    - name: Konfiguracja odzyskiwania awaryjnego we wdrożeniach lokalnych
+                      href: deployment/onprem-dr.md
                     - name: Integracja PowerBI.com z lokalnymi środowiskami
                       href: analytics/entity-store-on-prem.md
                     - name: Ponowne konfigurowanie środowisk
@@ -1436,6 +1440,8 @@
                   href: sysadmin/role-based-security.md
                 - name: Architektura zabezpieczeń
                   href: sysadmin/security-architecture.md
+                - name: Szyfrowanie w aplikacjach Finance and Operations
+                  href: sysadmin/encryption.md
                 - name: Ustawianie limitu czasu bezczynności sesji
                   href: sysadmin/session-idle-timeout.md
                 - name: Gotowe raporty o zabezpieczeniach

@@ -3,24 +3,24 @@ title: Włącz uwierzytelnianie Azure Active Directory w celu autoryzacji w punk
 description: W tym temacie wyjaśniono, jak skonfigurować środowisko logowania w punkcie sprzedaży dla rozwiązania Microsoft Dynamics 365 Commerce, aby korzystało z uwierzytelniania Azure Active Directory.
 author: boycezhu
 manager: annbe
-ms.date: 03/08/2020
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: dfc49585434383385b6b993893d93b95ef888384
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 4f5a02348e8cef44424ae5d6a49de02d762ba245
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248947"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410042"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Włącz uwierzytelnianie Azure Active Directory w celu autoryzacji w punkcie sprzedaży
 [!include [banner](includes/banner.md)]
@@ -47,6 +47,8 @@ Aby zastosować ustawienia do klientów punktu sprzedaży, należy wykonać nast
 
 > [!NOTE]
 > Uwierzytelnianie Azure AD wymaga połączenia z Internetem. Nie będzie działać, gdy punkt sprzedaży jest w trybie offline.
+> 
+> Obecnie funkcja **Zastąpienie przez menedżera** nie obsługuje Azure AD jako metody uwierzytelniania. Identyfikator operatora i hasło są wymagane nawet wtedy, gdy Azure AD jest skonfigurowany jako metoda uwierzytelniania w celu zalogowania się w punkcie sprzedaży.
 
 ## <a name="associate-an-azure-ad-account-with-a-worker"></a>Skojarz konto Azure AD z pracownikiem
 

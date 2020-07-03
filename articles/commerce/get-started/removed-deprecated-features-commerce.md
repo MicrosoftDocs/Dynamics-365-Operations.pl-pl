@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z Dynamics 365 Commerce.
 author: josaw
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: c47c5430a8f5d67e13c95db609a95d5ad66933ae
-ms.sourcegitcommit: a8b6cd799eddaf5be9aec9ea3c2b55e2c3231652
+ms.openlocfilehash: 64241ef1c25359c7b3b305c4e8f2b24de7e8f5e4
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3335283"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443925"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
 
@@ -35,6 +35,16 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 > [!NOTE]
 > Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Commerce 10.0.11
+### <a name="data-action-hooks"></a>Punkty zaczepienia akcji danych
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Funkcja punktów zaczepienia akcji danych została zaniechana z powodu problemów z wydajnością. |
+| **Zamieniona przez inną funkcję?**   | Zaleca się użycie [zastąpień akcji danych](../e-commerce-extensibility/data-action-overrides.md) do modyfikowania logiki biznesowej w warstwie akcji danych.|
+| **Powiązane obszary produktów**         | Działania na danych dotyczących rozszerzalności handlu elektronicznego |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Wycofane: począwszy od wydania 10.0.11 |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10010-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Commerce 10.0.10
 ### <a name="pos-operation-803---picking-and-receiving"></a>Operacja punktu sprzedaży 803 — pobranie i przyjęcie

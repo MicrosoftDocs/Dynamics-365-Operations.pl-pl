@@ -589,6 +589,8 @@
                   href: cost-management/inventory-value-report-storage.md
                 - name: Magazyn raportów wiekowania zapasów
                   href: cost-management/inventory-aging-report-storage.md
+                - name: Przykłady i logika raportu wiekowania zapasów
+                  href: cost-management/inventory-aging-report.md
             - name: Księgowanie produkcji
               items:
                 - name: Obliczenia BOM

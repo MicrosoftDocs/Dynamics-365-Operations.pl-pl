@@ -3,7 +3,7 @@ title: Dostosowanie wyników rekomendacji produktów na podstawie plików AI-ML
 description: W tym temacie wyjaśniono sposób dostosowywania wyników propozycji produktów na podstawie sztucznej inteligencji dotyczącej wywiadu (AI-ML) w firmie.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: afd9271c680b1f4248d6e60036f3e79d204dc3c2
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 0b4228583c4a2b89d7139b51880cea0288d7fe49
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154348"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404378"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Dostosowanie wyników rekomendacji produktów na podstawie plików AI-ML
 
@@ -102,7 +102,7 @@ Aby ręcznie dodać lub usunąć wyniki dla produktu początkowego, należy wyko
 
 [Omówienie rekomendacji produktów](product-recommendations.md)
 
-[Włączanie ADLS w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
+[Włączanie Azure Data Lake Storage w środowisku Dynamics 365 Commerce](enable-adls-environment.md)
 
 [Włącz rekomendacje produktów](enable-product-recommendations.md)
 

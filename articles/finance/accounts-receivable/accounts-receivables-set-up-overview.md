@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie modułu Rozrachunki z odbiorcami oraz kredytu i windykacji
+title: Konfigurowanie modułu rozrachunki z odbiorcami oraz kredytu i windykacji
 description: Odpowiednie skonfigurowanie modułów Rozrachunki z odbiorcami oraz Kredyty i windykacja umożliwi śledzenie faktur i płatności przychodzących od odbiorców.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6a64aeb9a98eae7b54de5870118d6c49e5370cc
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 1ec8ee7f8ba7493e5334c1a4106351c3661aa00a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000286"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426426"
 ---
-# <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurowanie modułu Rozrachunki z odbiorcami oraz kredytu i windykacji
+# <a name="configure-accounts-receivable-and-credit-and-collections"></a>Konfigurowanie modułu rozrachunki z odbiorcami oraz kredytu i windykacji
 
 [!include [banner](../includes/banner.md)]
 

@@ -3,7 +3,7 @@ title: Drukowanie raportu Płatności podatku według kodu
 description: Ten temat zawiera informacje dotyczące ustawień i akcji wymaganych do wydrukowania raportu płatności podatku według kodu w walucie księgowania lub kodu podatku.
 author: anasyash
 manager: AnnBe
-ms.date: 04/08/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,17 +16,16 @@ ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 3c3b251aadfa997f453e60b0842f89a6f09eb9cb
-ms.sourcegitcommit: 88347d0f0ac862a77f269a05f1801d30dc93586e
+ms.openlocfilehash: 7033999f7258e9ddd1d01620f9ad416e94ef3111
+ms.sourcegitcommit: 39981582778b0a62567324452485a6721ca18284
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3260262"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3407482"
 ---
 # <a name="print-the-sales-tax-payment-by-code-report"></a>Drukowanie raportu Płatności podatku według kodu 
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Aby wydrukować raport **płatności podatku według kodu**, przejdź do **Podatek** \> **Zapytania i raporty** \> **Raporty podatków** \> **Płatności podatku według kodu**. Domyślnie kwoty raportu są generowane w walucie rozliczeniowej firmy dla wszystkich kodów raportowania, które są konfigurowane na stronie **Kody raportowania podatku**.
 

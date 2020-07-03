@@ -3,7 +3,7 @@ title: Moduł kontenera
 description: W tym temacie opisano moduły kontenerów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c7d607047aab92144932b4b59db050a588d6483d
+ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025535"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3417353"
 ---
 # <a name="container-module"></a>Moduł kontenera
-
 
 [!include [banner](includes/banner.md)]
 
@@ -46,9 +45,13 @@ Trzy standardowe typy modułów kontenerowych są obsługiwane: kontener, konten
 - Autor witryny chce mieć sześć kolumny układu, gdzie sześć modułów są wyświetlane obok siebie. Dlatego autor witryny używa kontenera typu zawierającego, który ma w sobie sześć kolumn.
 - Autor strony chce umieścić moduł na stronie, ale nie chce, aby wypełniał ekran. Dlatego autor strony dodaje moduł do modułu kontenera i ustawia właściwość kontenera **Szerokość** na **Dopasowana do kontenera**.
 
+Poniższy obraz przedstawia przykład modułu kontenera zawierającego moduł karuzeli w konstruktorze witryn Commerce. W tym przykładzie właściwość **Szerokość** modułu kontenera jest ustawiona na **Wypełnij ekran**.
+
+![Przykład modułu kontenera](./media/ecommerce-container.PNG)
+
 ## <a name="container-module-properties"></a>Właściwości modułu kontenera
 
-| Nazwa właściwości     | Wartości | Opis |
+| Nazwa właściwości     | Wartości | opis |
 |-------------------|--------|-------------|
 | Nagłówek           | Tekst nagłówka i znacznik nagłówka (**H1**, **H2**, **H3**, **H4**, **H5** lub **H6**) | Dla kontenera można podać opcjonalny nagłówek. Domyślnie w nagłówku jest używany znacznik nagłówka **H2**. Jednak znacznik można zmienić, aby spełniał wymagania dotyczące dostępności. |
 | Szerokość             | **Dopasuj do kontenera** lub **ekran wypełnienia** | Jeśli wartość jest ustawiona na **Dopasowana do kontenera** (domyślna), moduły wewnątrz kontenera są ograniczone do szerokości kontenera. Jeśli wartość jest ustawiona na **wypełnienie ekranu**, moduły nie są ograniczone do szerokości kontenera, ale mogą wypełnić ekran. |
@@ -99,27 +102,36 @@ Za pomocą dodatkowych właściwości można zoptymalizować układ dla różnyc
 
 Aby dodać moduł kontenera do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Utwórz szablon strony o nazwie nazwa **szablon kontenera**. 
-1. W miejscu **Treść** dodaj moduł **Strona domyślna**.
-1. Zakończ edytowanie szablonu i opublikuj go.
-1. Za pomocą utworzonego właśnie szablonu kontenera utwórz stronę o nazwie **strona kontenera**.
-1. W **Głównym** gnieździe na nowej stronie dodaj moduł kontenera.
+1. Przejdź do **Szablonu**, a następnie wybierz **Nowy**, aby utworzyć nowy szablon.
+1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon kontenera**, a następnie wybierz **OK**.
+1. W gnieździe **Treść** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Strona domyślna** i wybierz przycisk **OK**.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować. 
+1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć nową stronę.
+1. W oknie dialogowym **Wybierz szablon** wybierz utworzony szablon odtwarzacza wideo. W sekcji **Nazwa strony** przejdź do **Strona kontenera**, a następnie wybierz przycisk **OK**.
+1. Na nowej stronie wybierz gniazdo **Główne**, następnie wybierz wielokropek (**...**), a następnie wybierz pozycję **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
 1. W okienku właściwości modułu kontenerów, dla właściwości **Liczba kolumn** określ wartość **1**, a właściwość **szerokość** na **Wypełnij kontener**.
-1. W module kontenera dodaj moduł bloku zawartości.
+1. W gnieździe **Kontener** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **AddDodaj moduł** wybierz moduł **Blok kontenera** i wybierz przycisk **OK**.
 1. W okienku właściwości modułu bloku zawartości skonfiguruj nagłówek, obraz i układ.
-1. Zapisz i zobacz podgląd strony. Powinien być widoczny jeden moduł funkcji, który mieści się w szerokości modułu kontenera.
+1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. Powinien być widoczny jeden moduł funkcji, który mieści się w szerokości modułu kontenera.
 1. W okienku właściwości modułu kontenerów zmień wartość właściwości **Liczba kolumn** na **3**.
-1. Dodaj jeszcze dwa moduły bloku zawartości do modułu kontenera.
-1. Zapisz i zobacz podgląd strony. Teraz powinny być widoczne trzy moduły bloku zawartości widoczne obok siebie.
-1. Po uzyskaniu żądanego układu należy zakończyć edycję strony i opublikować ją.
+1. Dodaj dwa dodatkowe moduły bloku zawartości do modułu kontenera i skonfiguruj je.
+1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. Teraz powinny być widoczne trzy moduły bloku zawartości widoczne obok siebie.
+1. Po uzyskaniu żądanego układu wybierz opcję **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz pozycję **Publikuj**, aby ją opublikować.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie zestawu początkowego](starter-kit-overview.md)
 
+[Moduł harmonijki](add-accordion.md)
+
+[Moduł karty](add-tab.md)
+
 [Moduł karuzeli](add-carousel.md)
 
-[Moduł bloku zaawansowanej zawartości](add-content-rich-block.md)
+[Moduł bloku tekstu](add-content-rich-block.md)
 
 [Moduł pola zakupu](add-buy-box.md)
 
