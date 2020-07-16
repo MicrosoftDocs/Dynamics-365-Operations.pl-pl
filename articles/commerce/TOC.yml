@@ -88,12 +88,10 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Commerce – strona główna
                       href: get-started/whats-new-home-page.md
-                    - name: Rozwiązanie Commerce 10.0.12 (sierpień 2020)
+                    - name: Rozwiązanie Commerce w wersji 10.0.12 (sierpień 2020)
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Rozwiązanie Commerce w wersji 10.0.11 (lipiec 2020)
                       href: get-started/whats-new-commerce-10-0-11.md
-                    - name: Rozwiązanie Commerce w wersji 10.0.10 (maj 2020)
-                      href: get-started/whats-new-commerce-10-0-10.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Finance and Operations
@@ -192,6 +190,8 @@
               items:
                 - name: Omówienie architektury Dynamics 365 Commerce
                   href: commerce-architecture.md
+                - name: Przepływy uwierzytelniania Dynamics 365 Commerce
+                  href: arch-auth-flow.md
                 - name: Architektura Commerce Scale Unit
                   href: dev-itpro/retail-server-architecture.md
                 - name: Wybieranie topologii w sklepie
@@ -748,12 +748,12 @@
               href: edit-audit-retail-transactions.md
             - name: 'Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży'
               href: tasks/create-calculate-post-statement-retail-store.md
-            - name: Ulepszenia funkcji księgowania zestawień
-              href: statement-posting-eod.md
             - name: Tworzenie zamówień na podstawie cząstkowego kanału informacyjnego dla transakcji w sklepach sieci sprzedaży
               href: trickle-feed.md
             - name: 'Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży'
               href: tasks/create-calculate-post-statement-retail-store.md
+            - name: Uzgodnienie finansowe w sklepach detalicznych
+              href: fin-recon.md
             - name: Ulepszenia funkcji księgowania zestawień
               href: statement-posting-eod.md
             - name: Ulepszona obsługa pozycji śledzonych w partii
@@ -792,8 +792,6 @@
                   href: configure-your-domain-name.md
                 - name: Wdrażanie nowej dzierżawy handlu elektronicznego
                   href: deploy-ecommerce-site.md
-                - name: Konfigurowanie kanału sklepu internetowego
-                  href: online-stores.md
                 - name: Tworzenie witryny handlu elektronicznego
                   href: create-ecommerce-site.md
                 - name: Kojarzenie witryny handlu elektronicznego z kanałem online
@@ -816,8 +814,6 @@
               items:
                 - name: Omówienie strony głównej
                   href: quick-tour-home-page.md
-                - name: Omówienie domyślnej strony docelowej kategorii i strony wyników wyszukiwania
-                  href: category-search-page-overview.md
                 - name: Omówienie stron szczegółów produktów
                   href: quick-tour-pdp.md
                 - name: Omówienie stron koszyka i realizacji zamówienia
@@ -996,9 +992,9 @@
                   items:
                     - name: Moduł szlaków nawigacyjnych
                       href: add-breadcrumb.md
-            - name: Wyszukiwanie
+            - name: Wyszukaj
               items:
-                - name: Domyślna strona docelowa kategorii i strona wyników wyszukiwania
+                - name: Omówienie domyślnej strony docelowej kategorii i strony wyników wyszukiwania
                   href: category-search-page-overview.md
                 - name: Omówienie wyszukiwania w chmurze
                   href: cloud-powered-search-overview.md
@@ -2000,6 +1996,8 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurowanie ustawień motywów
                       href: e-commerce-extensibility/configure-theme-settings.md
+                    - name: Konfigurowanie predefiniowanych stylów motywu
+                      href: e-commerce-extensibility/theme-style-presets.md
                     - name: Rozszerzanie motywu w celu dodania rozszerzeń modułu
                       href: e-commerce-extensibility/theme-module-extensions.md
                     - name: Rozszerzanie motywu z motywu podstawowego
@@ -2034,8 +2032,10 @@
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Programowanie w środowiskach programistycznych hostowanych w chmurze bez dostępu administracyjnego
                   href: dev-itpro/cloud-dev-box.md
-                - name: Konfigurowanie potoku kompilacji zestawu Commerce SDK
+                - name: Konfigurowanie potoku kompilacji zestawu SDK do Commerce
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
+                - name: Często zadawane pytania SDK do Retail
+                  href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Rozszerzalność punktu sprzedaży
               items:
                 - name: Układy ekranu punktu sprzedaży
@@ -2046,8 +2046,6 @@
                   href: install-pos-layout-designer.md
                 - name: Rozszerzanie widoku na dwóch wyświetlaczach w punkcie sprzedaży
                   href: dev-itpro/pos-dual-display-extension.md
-                - name: Możliwości rozszerzania wyzwalacza aplikacji Modern POS i Cloud POS
-                  href: dev-itpro/modern-pos-trigger-extensibility.md
                 - name: Dodawanie kontrolek niestandardowych do widoków punktów sprzedaży
                   href: dev-itpro/pos-custom-control.md
                 - name: Dodawanie operacji punktu sprzedaży do układów punktu sprzedaży przy użyciu projektanta siatki przycisków
@@ -2082,9 +2080,9 @@
                   href: dev-itpro/pos-custom-transaction-column.md
                 - name: Wywoływanie interfejsów API lub operacji punktu sprzedaży z rozszerzeń punktu sprzedaży
                   href: dev-itpro/pos-api-extension.md
-                - name: Wyzwalacze aplikacji Modern POS i drukowanie
+                - name: Wyzwalacze aplikacji Modern POS (MPOS) i drukowanie
                   href: dev-itpro/pos-trigger-printing.md
-                - name: Dodawanie kontrolek niestandardowych do widoków punktu sprzedaży innych niż ekranowe i opartych na projektancie
+                - name: Dodawanie kontrolek niestandardowych do widoków punktu sprzedaży innych niż ekranowe i oparte na projektancie
                   href: dev-itpro/pos-control-non-screen.md
                 - name: Uruchamianie przykładów punktu sprzedaży
                   href: dev-itpro/pos-run-samples.md

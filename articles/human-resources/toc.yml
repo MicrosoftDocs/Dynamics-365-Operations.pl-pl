@@ -5,6 +5,8 @@
       items:
         - name: Nowości i zmiany w rozwiązaniu Human Resources
           href: hr-admin-whats-new.md
+        - name: 25 czerwca 2020 r.
+          href: hr-whats-new-2020-06-23.md
         - name: 11 czerwca 2020 r.
           href: hr-whats-new-2020-06-11.md
         - name: 28 maja 2020 r.
@@ -141,6 +143,8 @@
           items:
             - name: Uzyskiwanie pomocy technicznej
               href: hr-admin-troubleshooting-support.md
+            - name: 'Aby zoptymalizować wydajność, należy zaplanować zadania wsadowe po godzinach'
+              href: hr-admin-troubleshooting-batch-jobs.md
             - name: Optymalizowanie wydajności za pomocą zadań automatycznego czyszczenia
               href: hr-admin-troubleshooting-batch-history.md
             - name: Raporty analityczne nie są aktualizowane

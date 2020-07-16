@@ -74,8 +74,6 @@
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.11 (lipiec 2020)
                       href: get-started/whats-new-scm-10-0-11.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.10 (maj 2020)
-                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
@@ -2565,192 +2563,230 @@
           items:
             - name: Omówienie zarządzania magazynem
               href: warehousing/warehouse-management-overview.md
+            - name: Przychodzące operacje magazynowe
+              items:
+                - name: Przyjęcia w celu rejestracji i odłożenia
+                  items:
+                    - name: Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
+                      href: warehousing/inbound-load-handling.md
+                    - name: Rejestrowanie pozycji dla włączonej pozycji zaawansowanego magazynowania za pomocą arkusza przyjęć towarów
+                      href: warehousing/tasks/register-items-advanced-warehousing.md
+                    - name: Rejestrowanie elementów dla podstawowego magazynowania za pomocą arkusza przyjęć towarów
+                      href: warehousing/tasks/register-items-basic-warehousing.md
+                    - name: Przeładunek kompletacyjny z magazynu przyjmującego do sklepów
+                      href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                    - name: Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu
+                      href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                    - name: Konfigurowanie szablonu pracy dla zamówień zakupu
+                      href: warehousing/tasks/set-up-work-template-purchase-orders.md
+                    - name: Mieszanie wymiarów produktów w lokalizacji
+                      href: warehousing/location-product-dimension-mixing.md
+            - name: Wychodzące operacje magazynowe
+              items:
+                - name: Rezerwacje w module zarządzania magazynem
+                  items:
+                    - name: Elastyczne zasady rezerwacji wymiarów na poziomie magazynu
+                      href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                - name: Częściowe zwalnianie i częściowa wysyłka
+                  items:
+                    - name: Częściowa wysyłka ładunku w transporcie
+                      href: warehousing/partial-shipping-of-transport-loads.md
+                    - name: Wsadowe zwalnianie częściowo zarezerwowanych zamówień przeniesienia
+                      href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+                - name: Pobieranie i pakowanie
+                  items:
+                    - name: Konfigurowanie pobierania dla grupy
+                      href: warehousing/set-up-cluster-picking.md
+                    - name: Konfigurowanie konteneryzacji
+                      href: warehousing/tasks/set-up-containerization.md
+                    - name: Potwierdzenie partii i numeru identyfikacyjnego
+                      href: warehousing/batch-and-license-plate-confirmation.md
+                    - name: Włączanie drukowania etykiet numeru identyfikacyjnego
+                      href: warehousing/tasks/license-plate-label-printing.md
+                    - name: Skanowanie kodów kreskowych przy użyciu kamery w rozwiązaniu Dynamics 365 for Finance and Operations
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Potwierdzenie pobrania sztuk
+                      href: warehousing/piece-picking-confirmation.md
+                    - name: Materiały opakowań i opłaty
+                      href: warehousing/pack-materials-packing-material-fees.md
+                    - name: Konfigurowanie pakowania ręcznego (tylko luty i maj 2016)
+                      href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                    - name: Konfigurowanie zmiany alokacji pozycji na potrzeby pobierania w niedomiarze
+                      href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                    - name: Anulowanie obsługi wyjątków dotyczących pracy magazynowej
+                      href: warehousing/cancel-warehouse-work.md
+                    - name: Pobieranie dla grupy sterowane przez system
+                      href: warehousing/system-directed-cluster-pick.md
+                    - name: Harmonogram prac sterowany przez system
+                      href: warehousing/system-directed-work-sequencing.md
+                    - name: Grupowanie wierszy pobrania
+                      href: warehousing/pick-line-grouping.md
+                    - name: Rozpisywanie na przedziały w magazynie
+                      href: warehousing/warehouse-slotting.md
+                - name: Uzupełnianie zapasów
+                  items:
+                    - name: Omówienie uzupełniania zapasów
+                      href: warehousing/replenishment.md
+                    - name: Natychmiastowe uzupełnianie zapasów
+                      href: warehousing/immediate-replenishment.md
+                    - name: Uzupełnianie zapasów za pomocą kart Kanban wypłat
+                      href: warehousing/material-replenishment-withdrawal-kanban.md
+                    - name: Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości zapasów
+                      href: warehousing/tasks/set-up-min-max-replenishment-process.md
+                    - name: Uzupełnianie zapasów na podstawie progu w strefie
+                      href: warehousing/zone-threshold-replenishment.md
+                - name: Kompilowanie i przesyłanie ładunku
+                  items:
+                    - name: Potwierdź i przenieś
+                      href: warehousing/confirm-and-transfer.md
+                    - name: Zaawansowane kompilowanie ładunku podczas grupy czynności
+                      href: warehousing/advanced-load-building-during-wave.md
+                    - name: Zwolnienie do reguły magazynu
+                      href: warehousing/release-to-warehouse-rule.md
+                    - name: Grupowanie szablonów grup czynności
+                      href: warehousing/wave-template-grouping.md
+                - name: Zasady konsolidacji wysyłki
+                  items:
+                    - name: Zasady konsolidacji wysyłki
+                      href: warehousing/about-shipment-consolidation-policies.md
+                    - name: Konfigurowanie zasad konsolidacji wysyłki
+                      href: warehousing/configure-shipment-consolidation-policies.md
+                    - name: Scenariusz 1 — konsolidowanie wysyłek podczas zwalniania ich do magazynu przy użyciu automatycznego zwalniania zamówień sprzedaży
+                      href: warehousing/consolidate-shipments-automatic.md
+                    - name: 'Scenariusz 2 — konsolidowanie wysyłek, gdy zasady konsolidacji wysyłki są zastąpione na stronie zwalniania do magazynu'
+                      href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                    - name: Scenariusz 3 — konsolidowanie wysyłek przy użyciu polecenia Zwolnij do magazynu z pulpitu planowania wysyłki ładunku
+                      href: warehousing/consolidate-shipments-load-planning-workbench.md
+                    - name: Scenariusz 4 — konsolidowanie wysyłek przy użyciu pulpitu konsolidacji wysyłki
+                      href: warehousing/consolidate-shipments-manual-workbench.md
+                    - name: Scenariusz 5 — ręczne konsolidowanie wysyłek przy użyciu strony konsolidacji wysyłek
+                      href: warehousing/consolidate-shipments-manual-form.md
+            - name: Operacje wielomagazynowe
+              items:
+                - name: Zasady pracy magazynowej
+                  items:
+                    - name: Omówienie zasad pracy magazynowej
+                      href: warehousing/warehouse-work-policies.md
+                    - name: Konfigurowanie zasad pracy magazynowej
+                      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
+                    - name: Przenoszenie zapasów za pomocą skojarzonej pracy w module Zarządzanie magazynem
+                      href: warehousing/move-inventory-associated-work.md
+                    - name: Tworzenie klasy roboczej
+                      href: warehousing/tasks/create-work-class.md
+                    - name: Zarządzanie pracownikami magazynu
+                      href: warehousing/manage-warehouse-workers.md
+                    - name: Odroczone przetwarzanie pracy magazynowej
+                      href: warehousing/deferred-put.md
+                - name: Przeładunek kompletacyjny
+                  items:
+                    - name: Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
+                      href: production-control/cross-docking-opportunities.md
+                    - name: Automatyczne zwalnianie wysyłki dla przeładunku kompletacyjnego
+                      href: warehousing/auto-release-shipment-for-cross-docking.md
+                    - name: Planowany przeładunek kompletacyjny
+                      href: warehousing/planned-cross-docking.md
+                - name: Inwentaryzacja
+                  items:
+                    - name: Kody przyczyn zliczania zapasów
+                      href: warehousing/reason-codes-for-counting-journals.md
+                    - name: Blokuj zapasy
+                      href: inventory/inventory-blocking.md
+                    - name: Inwentaryzacja ciągła
+                      href: warehousing/cycle-counting.md
+                    - name: Definiowanie inwentaryzacji ciągłej
+                      href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+                    - name: Częściowa inwentaryzacja ciągła w lokalizacji
+                      href: warehousing/partial-location-cycle-counting.md
+                    - name: Definiowanie procesu częściowej inwentaryzacji ciągłej w lokalizacji
+                      href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                    - name: Zadanie oczyszczania wpisów towarów na stanie w Zarządzaniu magazynem
+                      href: warehousing/onhand-cleanup.md
+                    - name: Arkusz magazynowy
+                      href: inventory/inventory-journals.md
+                    - name: Lokalizacja w magazynie
+                      href: inventory/inventory-locations.md
+                    - name: Stan zapasów
+                      href: inventory/inventory-statuses.md
+                    - name: Zliczanie znaczników zapasów
+                      href: inventory/inventory-tag-counting.md
+                - name: Praca magazynowa
+                  items:
+                    - name: Szczegóły wiersza pracy
+                      href: warehousing/work-line-details.md
+                    - name: Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji
+                      href: warehousing/location-license-plate-positioning.md
             - name: Konfiguracja magazynu
               items:
-                - name: Omówienie konfiguracji magazynu
-                  href: warehousing/warehouse-configuration.md
-                - name: Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu
-                  href: inventory/warehouse-template.md
-                - name: Kontrola pracy przy użyciu szablonów pracy i dyrektyw lokalizacji
-                  href: warehousing/control-warehouse-location-directives.md
-                - name: Kody kroku grupy czynności
-                  href: warehousing/wave-step-codes.md
-                - name: Konfigurowanie przetwarzania grupy czynności
-                  href: warehousing/tasks/configure-wave-processing.md
-                - name: Automatyczna aktualizacja wysyłek
-                  href: warehousing/auto-update-shipment.md
-                - name: Tworzenie profilu lokalizacji
-                  href: warehousing/tasks/create-location-profile.md
-                - name: Konfigurowanie lokalizacji w magazynie z obsługą WMS
-                  href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
-                - name: Planowanie wykorzystania przestrzeni magazynowej
-                  href: warehousing/schedule-load-utilization.md
-                - name: Planowanie możliwości obciążenia pracą
-                  href: warehousing/schedule-workload-capacity.md
-                - name: Ustawianie kodów dyspozycji
-                  href: warehousing/tasks/set-up-dispositions-codes.md
-                - name: Jednostka miary i zasady składowania
-                  href: warehousing/unit-measure-stocking-policies.md
-                - name: Zawartość Power BI magazynu
-                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
-                - name: Grupowanie systemowe na liście otwartych prac
-                  href: warehousing/system-group-on-open-work-list.md
-                - name: Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
-                  href: warehousing/document-routing-layout-for-license-plates.md
-                - name: Skanowanie kodów kreskowych przy użyciu kamery w rozwiązaniu Dynamics 365 for Finance and Operations
-                  href: warehousing/scan-bar-codes-using-a-camera.md
-                - name: Mobilna obsługa kodów kreskowych
-                  href: warehousing/mobile-barcode-support.md
-                - name: Konfigurowanie magazynu dla zamówień przeniesienia
-                  href: warehousing/transfer-orders-warehouse.md
-            - name: Rezerwacje w module zarządzania magazynem
-              items:
-                - name: Elastyczne zasady rezerwacji wymiarów na poziomie magazynu
-                  href: warehousing/flexible-warehouse-level-dimension-reservation.md
-            - name: Zasady pracy magazynowej
-              items:
-                - name: Omówienie zasad pracy magazynowej
-                  href: warehousing/warehouse-work-policies.md
-                - name: Konfigurowanie zasad pracy magazynowej
-                  href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
-                - name: Przenoszenie zapasów za pomocą skojarzonej pracy w module Zarządzanie magazynem
-                  href: warehousing/move-inventory-associated-work.md
-                - name: Tworzenie klasy roboczej
-                  href: warehousing/tasks/create-work-class.md
-                - name: Zarządzanie pracownikami magazynu
-                  href: warehousing/manage-warehouse-workers.md
-                - name: Odroczone przetwarzanie pracy magazynowej
-                  href: warehousing/deferred-put.md
-            - name: Przeładunek kompletacyjny
-              items:
-                - name: Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
-                  href: production-control/cross-docking-opportunities.md
-                - name: Automatyczne zwalnianie wysyłki dla przeładunku kompletacyjnego
-                  href: warehousing/auto-release-shipment-for-cross-docking.md
-            - name: Częściowe zwalnianie i częściowa wysyłka
-              items:
-                - name: Częściowa wysyłka ładunku w transporcie
-                  href: warehousing/partial-shipping-of-transport-loads.md
-                - name: Wsadowe zwalnianie częściowo zarezerwowanych zamówień przeniesienia
-                  href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
-            - name: Pobieranie i pakowanie
-              items:
-                - name: Konfigurowanie pobierania dla grupy
-                  href: warehousing/set-up-cluster-picking.md
-                - name: Konfigurowanie konteneryzacji
-                  href: warehousing/tasks/set-up-containerization.md
-                - name: Potwierdzenie partii i numeru identyfikacyjnego
-                  href: warehousing/batch-and-license-plate-confirmation.md
-                - name: Włączanie drukowania etykiet numeru identyfikacyjnego
-                  href: warehousing/tasks/license-plate-label-printing.md
-                - name: Skanowanie kodów kreskowych przy użyciu kamery w rozwiązaniu Dynamics 365 for Finance and Operations
-                  href: warehousing/scan-bar-codes-using-a-camera.md
-                - name: Potwierdzenie pobrania sztuk
-                  href: warehousing/piece-picking-confirmation.md
-                - name: Materiały opakowań i opłaty
-                  href: warehousing/pack-materials-packing-material-fees.md
-                - name: Konfigurowanie pakowania ręcznego (tylko luty i maj 2016)
-                  href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
-                - name: Konfigurowanie zmiany alokacji pozycji na potrzeby pobierania w niedomiarze
-                  href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                - name: Anulowanie obsługi wyjątków dotyczących pracy magazynowej
-                  href: warehousing/cancel-warehouse-work.md
-                - name: Pobieranie dla grupy sterowane przez system
-                  href: warehousing/system-directed-cluster-pick.md
-                - name: Grupowanie wierszy pobrania
-                  href: warehousing/pick-line-grouping.md
-            - name: Inwentaryzacja
-              items:
-                - name: Kody przyczyn zliczania zapasów
-                  href: warehousing/reason-codes-for-counting-journals.md
-                - name: Blokuj zapasy
-                  href: inventory/inventory-blocking.md
-                - name: Inwentaryzacja ciągła
-                  href: warehousing/cycle-counting.md
-                - name: Definiowanie inwentaryzacji ciągłej
-                  href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
-                - name: Częściowa inwentaryzacja ciągła w lokalizacji
-                  href: warehousing/partial-location-cycle-counting.md
-                - name: Definiowanie procesu częściowej inwentaryzacji ciągłej w lokalizacji
-                  href: warehousing/tasks/define-partial-location-cycle-counting-process.md
-                - name: Zadanie oczyszczania wpisów towarów na stanie w Zarządzaniu magazynem
-                  href: warehousing/onhand-cleanup.md
-                - name: Arkusz magazynowy
-                  href: inventory/inventory-journals.md
-                - name: Lokalizacja w magazynie
-                  href: inventory/inventory-locations.md
-                - name: Stan zapasów
-                  href: inventory/inventory-statuses.md
-                - name: Zliczanie znaczników zapasów
-                  href: inventory/inventory-tag-counting.md
-            - name: Uzupełnianie zapasów
-              items:
-                - name: Omówienie uzupełniania zapasów
-                  href: warehousing/replenishment.md
-                - name: Natychmiastowe uzupełnianie zapasów
-                  href: warehousing/immediate-replenishment.md
-                - name: Uzupełnianie zapasów za pomocą kart Kanban wypłat
-                  href: warehousing/material-replenishment-withdrawal-kanban.md
-                - name: Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości zapasów
-                  href: warehousing/tasks/set-up-min-max-replenishment-process.md
-            - name: Instalowanie i konfigurowanie aplikacji magazynu
-              items:
-                - name: Instalowanie i łączenie aplikacji magazynu
-                  href: warehousing/install-configure-warehousing-app.md
-                - name: Konfigurowanie nazw pól w aplikacji magazynu
-                  href: warehousing/configure-app-field-names-priorities-warehouse.md
-                - name: Konfigurowanie urządzeń przenośnych do pracy magazynowej
-                  href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Numer identyfikacyjny odbierany za pomocą aplikacji magazynu
-                  href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                - name: Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy w ramach zamówienia zakupu
-                  href: warehousing/tasks/set-up-mobile-device-menu.md
-                - name: Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania towarów przyjętych
-                  href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                - name: Tworzenie elementu menu urządzenia przenośnego dla konsolidacji na podstawie numerów identyfikacyjnych
-                  href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                - name: Przyjmowanie mieszanego numeru identyfikacyjnego na urządzeniu przenośnym
-                  href: warehousing/mixed-license-plate-receiving.md
-                - name: Konfigurowanie wyświetlania starszych partii w magazynie na urządzeniu przenośnym
-                  href: warehousing/display-older-batches-within-warehouses.md
-                - name: Pobieranie najstarszej partii na urządzeniu przenośnym
-                  href: warehousing/pick-oldest-batch.md
-                - name: Struktura przewodnika procesu
-                  href: warehousing/process-guide-framework.md
-            - name: Uaktualnianie i migracja
-              items:
-                - name: Uaktualnianie procesów zarządzania magazynem z Microsoft Dynamics AX 2012 do Finance and Operations
-                  href: warehousing/upgrade-migration-warehouse-management-processes.md
-            - name: Przyjęcia w celu rejestracji i odłożenia
-              items:
-                - name: Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
-                  href: warehousing/inbound-load-handling.md
-                - name: Rejestrowanie pozycji dla włączonej pozycji zaawansowanego magazynowania za pomocą arkusza przyjęć towarów
-                  href: warehousing/tasks/register-items-advanced-warehousing.md
-                - name: Rejestrowanie elementów dla podstawowego magazynowania za pomocą arkusza przyjęć towarów
-                  href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: Przeładunek kompletacyjny z magazynu przyjmującego do sklepów
-                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-                - name: Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu
-                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-                - name: Konfigurowanie szablonu pracy dla zamówień zakupu
-                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
-            - name: Zasady konsolidacji wysyłki
-              items:
-                - name: Zasady konsolidacji wysyłki
-                  href: warehousing/about-shipment-consolidation-policies.md
-                - name: Konfigurowanie zasad konsolidacji wysyłki
-                  href: warehousing/configure-shipment-consolidation-policies.md
-                - name: Scenariusz 1 — konsolidowanie wysyłek podczas zwalniania ich do magazynu przy użyciu automatycznego zwalniania zamówień sprzedaży
-                  href: warehousing/consolidate-shipments-automatic.md
-                - name: 'Scenariusz 2 — konsolidowanie wysyłek, gdy zasady konsolidacji wysyłki są zastąpione na stronie zwalniania do magazynu'
-                  href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                - name: Scenariusz 3 — konsolidowanie wysyłek przy użyciu polecenia Zwolnij do magazynu z pulpitu planowania wysyłki ładunku
-                  href: warehousing/consolidate-shipments-load-planning-workbench.md
-                - name: Scenariusz 4 — konsolidowanie wysyłek przy użyciu pulpitu konsolidacji wysyłki
-                  href: warehousing/consolidate-shipments-manual-workbench.md
-                - name: Scenariusz 5 — ręczne konsolidowanie wysyłek przy użyciu strony konsolidacji wysyłek
-                  href: warehousing/consolidate-shipments-manual-form.md
+                - name: Konfiguracja magazynu
+                  items:
+                    - name: Omówienie konfiguracji magazynu
+                      href: warehousing/warehouse-configuration.md
+                    - name: Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu
+                      href: inventory/warehouse-template.md
+                    - name: Kontrola pracy przy użyciu szablonów pracy i dyrektyw lokalizacji
+                      href: warehousing/control-warehouse-location-directives.md
+                    - name: Kody kroku grupy czynności
+                      href: warehousing/wave-step-codes.md
+                    - name: Konfigurowanie przetwarzania grupy czynności
+                      href: warehousing/tasks/configure-wave-processing.md
+                    - name: Automatyczna aktualizacja wysyłek
+                      href: warehousing/auto-update-shipment.md
+                    - name: Tworzenie profilu lokalizacji
+                      href: warehousing/tasks/create-location-profile.md
+                    - name: Konfigurowanie lokalizacji w magazynie z obsługą WMS
+                      href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+                    - name: Stan lokalizacji w magazynie
+                      href: warehousing/warehouse-location-status.md
+                    - name: Dodatkowe strefy lokalizacji
+                      href: warehousing/additional-location-zones.md
+                    - name: Planowanie wykorzystania przestrzeni magazynowej
+                      href: warehousing/schedule-load-utilization.md
+                    - name: Planowanie możliwości obciążenia pracą
+                      href: warehousing/schedule-workload-capacity.md
+                    - name: Ustawianie kodów dyspozycji
+                      href: warehousing/tasks/set-up-dispositions-codes.md
+                    - name: Jednostka miary i zasady składowania
+                      href: warehousing/unit-measure-stocking-policies.md
+                    - name: Zawartość Power BI magazynu
+                      href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+                    - name: Grupowanie systemowe na liście otwartych prac
+                      href: warehousing/system-group-on-open-work-list.md
+                    - name: Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
+                      href: warehousing/document-routing-layout-for-license-plates.md
+                    - name: Skanowanie kodów kreskowych przy użyciu kamery w rozwiązaniu Dynamics 365 for Finance and Operations
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Mobilna obsługa kodów kreskowych
+                      href: warehousing/mobile-barcode-support.md
+                    - name: Konfigurowanie magazynu dla zamówień przeniesienia
+                      href: warehousing/transfer-orders-warehouse.md
+                - name: Instalowanie i konfigurowanie aplikacji magazynu
+                  items:
+                    - name: Instalowanie i łączenie aplikacji magazynu
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Konfigurowanie nazw pól w aplikacji magazynu
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Konfigurowanie urządzeń przenośnych do pracy magazynowej
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Numer identyfikacyjny odbierany za pomocą aplikacji magazynu
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy w ramach zamówienia zakupu
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania towarów przyjętych
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Tworzenie elementu menu urządzenia przenośnego dla konsolidacji na podstawie numerów identyfikacyjnych
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: Przyjmowanie mieszanego numeru identyfikacyjnego na urządzeniu przenośnym
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: Konfigurowanie wyświetlania starszych partii w magazynie na urządzeniu przenośnym
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: Pobieranie najstarszej partii na urządzeniu przenośnym
+                      href: warehousing/pick-oldest-batch.md
+                    - name: Struktura przewodnika procesu
+                      href: warehousing/process-guide-framework.md
+                - name: Uaktualnianie i migracja
+                  items:
+                    - name: Uaktualnianie procesów zarządzania magazynem z Microsoft Dynamics AX 2012 do Finance and Operations
+                      href: warehousing/upgrade-migration-warehouse-management-processes.md
         - name: Rozwój modułu Supply Chain Management
           items:
             - name: Podręcznik programowania kontrolki wykresu Gantta
