@@ -1,0 +1,948 @@
+- name: Klasa AbsoluteFieldBinding
+  href: AbsoluteFieldBinding-class.md
+- name: Klasa AdObject
+  href: AdObject-class.md
+- name: Klasa AllowEncryptionKeyRetrievalPermission
+  href: AllowEncryptionKeyRetrievalPermission-class.md
+- name: Klasa AOSLoadGen
+  href: AOSLoadGen-class.md
+- name: Klasa AOSSessionInfo
+  href: AOSSessionInfo-class.md
+- name: Klasa AOTTableFieldList
+  href: AOTTableFieldList-class.md
+- name: Klasa ApplicationObjectTreeWindow
+  href: ApplicationObjectTreeWindow-class.md
+- name: Klasa Array
+  href: Array-class.md
+- name: Klasa AsciiIo
+  href: AsciiIo-class.md
+- name: Klasa AssemblyDeployManager
+  href: AssemblyDeployManager-class.md
+- name: Klasa AsyncTaskResult
+  href: AsyncTaskResult-class.md
+- name: Klasa AxaptaCOMConnectorMonitor
+  href: AxaptaCOMConnectorMonitor-class.md
+- name: Klasa binarna
+  href: Binary-class.md
+- name: Klasa BinaryIo
+  href: BinaryIo-class.md
+- name: Klasa BinData
+  href: BinData-class.md
+- name: Klasa ClassNode
+  href: ClassNode-class.md
+- name: Klasa ClientPrintJobSettings
+  href: ClientPrintJobSettings-class.md
+- name: Klasa CLRInterop
+  href: CLRInterop-class.md
+- name: Klasa CLRObject
+  href: CLRObject-class.md
+- name: Klasa CodeAccessPermission
+  href: CodeAccessPermission-class.md
+- name: Klasa COM
+  href: COM-class.md
+- name: Klasa COMDispFunction
+  href: COMDispFunction-class.md
+- name: Klasa COMError
+  href: COMError-class.md
+- name: Klasa CommaIo
+  href: CommaIo-class.md
+- name: Klasa CommaTextIo
+  href: CommaTextIo-class.md
+- name: Klasa CompileOutputInfos
+  href: CompileOutputInfos-class.md
+- name: Klasa COMVariant
+  href: COMVariant-class.md
+- name: Klasa ConfigurationKeySet
+  href: ConfigurationKeySet-class.md
+- name: Klasa Connection
+  href: Connection-class.md
+- name: Klasa ContainerClass
+  href: ContainerClass-class.md
+- name: Klasa ControlFilterValue
+  href: ControlFilterValue-class.md
+- name: Klasa ControlNode
+  href: ControlNode-class.md
+- name: Klasa CryptoAPI
+  href: CryptoAPI-class.md
+- name: Klasa wskaźnika
+  href: Cue-class.md
+- name: Klasa CueGroup
+  href: CueGroup-class.md
+- name: Klasa CueReference
+  href: CueReference-class.md
+- name: Klasa DataEntityDataSourceRuntimeContext
+  href: DataEntityDataSourceRuntimeContext-class.md
+- name: Klasa DataEntityPersister
+  href: DataEntityPersister-class.md
+- name: Klasa DataEntityRuntimeContext
+  href: DataEntityRuntimeContext-class.md
+- name: Klasa DataEventArgs
+  href: DataEventArgs-class.md
+- name: Klasa DataImportExportManager
+  href: DataImportExportManager-class.md
+- name: Klasa DataImportManager
+  href: DataImportManager-class.md
+- name: Klasa DataImportSessionInfo
+  href: DataImportSessionInfo-class.md
+- name: Klasa DataSet
+  href: DataSet-class.md
+- name: Klasa DataSetRun
+  href: DataSetRun-class.md
+- name: Klasa DataSourceMethodInfo
+  href: DataSourceMethodInfo-class.md
+- name: Klasa DataSourceMethodInfoList
+  href: DataSourceMethodInfoList-class.md
+- name: Klasa DataSourceNode
+  href: DataSourceNode-class.md
+- name: Klasa DataSourceRuntimeMetadataChangedEvtArgs
+  href: DataSourceRuntimeMetadataChangedEvtArgs-class.md
+- name: Klasa DateTimeUtil
+  href: DateTimeUtil-class.md
+- name: Klasa DialogBox
+  href: DialogBox-class.md
+- name: Klasa DictClass
+  href: DictClass-class.md
+- name: Klasa DictCompositeChildDataEntity
+  href: DictCompositeChildDataEntity-class.md
+- name: Klasa DictCompositeDataEntity
+  href: DictCompositeDataEntity-class.md
+- name: Klasa DictConfigurationKey
+  href: DictConfigurationKey-class.md
+- name: Klasa DictDataEntity
+  href: DictDataEntity-class.md
+- name: Klasa DictDataEntityField
+  href: DictDataEntityField-class.md
+- name: Klasa DictEnum
+  href: DictEnum-class.md
+- name: Klasa DictField
+  href: DictField-class.md
+- name: Klasa DictFieldGroup
+  href: DictFieldGroup-class.md
+- name: Klasa DictFullTextIndex
+  href: DictFullTextIndex-class.md
+- name: Klasa DictIndex
+  href: DictIndex-class.md
+- name: Klasa Dictionary
+  href: Dictionary-class.md
+- name: Klasa DictLicenseCode
+  href: DictLicenseCode-class.md
+- name: Klasa DictMethod
+  href: DictMethod-class.md
+- name: Klasa DictRelation
+  href: DictRelation-class.md
+- name: Klasa DictTable
+  href: DictTable-class.md
+- name: Klasa DictTableMap
+  href: DictTableMap-class.md
+- name: Klasa DictType
+  href: DictType-class.md
+- name: Klasa DictView
+  href: DictView-class.md
+- name: Klasa DLL
+  href: DLL-class.md
+- name: Klasa DLLFunction
+  href: DLLFunction-class.md
+- name: Klasa DocNode
+  href: DocNode-class.md
+- name: Klasa DynamicPropertyCallback
+  href: DynamicPropertyCallback-class.md
+- name: Klasa DynamicPropertyManager
+  href: DynamicPropertyManager-class.md
+- name: Klasa edytora
+  href: Editor-class.md
+- name: Klasa Enumerator
+  href: Enumerator-class.md
+- name: Klasa ExecutePermission
+  href: ExecutePermission-class.md
+- name: Klasa FieldBinding
+  href: FieldBinding-class.md
+- name: Klasa FieldFilterValue
+  href: FieldFilterValue-class.md
+- name: Klasa FileIOPermission
+  href: FileIOPermission-class.md
+- name: Klasa FilterValue
+  href: FilterValue-class.md
+- name: Klasa formularza
+  href: Form-class.md
+- name: Klasa FormActionPaneControl
+  href: FormActionPaneControl-class.md
+- name: Klasa FormActionPaneTabControl
+  href: FormActionPaneTabControl-class.md
+- name: Klasa FormActiveXControl
+  href: FormActiveXControl-class.md
+- name: Klasa FormAnimateControl
+  href: FormAnimateControl-class.md
+- name: Klasa FormAutoLookupFactory
+  href: FormAutoLookupFactory-class.md
+- name: Klasa FormBinding
+  href: FormBinding-class.md
+- name: Klasa FormBuildActionPaneControl
+  href: FormBuildActionPaneControl-class.md
+- name: Klasa FormBuildActionPaneTabControl
+  href: FormBuildActionPaneTabControl-class.md
+- name: Klasa FormBuildActiveXControl
+  href: FormBuildActiveXControl-class.md
+- name: Klasa FormBuildAnimateControl
+  href: FormBuildAnimateControl-class.md
+- name: Klasa FormBuildButtonControl
+  href: FormBuildButtonControl-class.md
+- name: Klasa FormBuildButtonGroupControl
+  href: FormBuildButtonGroupControl-class.md
+- name: Klasa FormBuildButtonSeparatorControl
+  href: FormBuildButtonSeparatorControl-class.md
+- name: Klasa FormBuildCheckBoxControl
+  href: FormBuildCheckBoxControl-class.md
+- name: Klasa FormBuildComboBoxControl
+  href: FormBuildComboBoxControl-class.md
+- name: Klasa FormBuildCommandButtonControl
+  href: FormBuildCommandButtonControl-class.md
+- name: Klasa FormBuildContainerControl
+  href: FormBuildContainerControl-class.md
+- name: Klasa FormBuildControl
+  href: FormBuildControl-class.md
+- name: Klasa FormBuildDataSource
+  href: FormBuildDataSource-class.md
+- name: Klasa FormBuildDateControl
+  href: FormBuildDateControl-class.md
+- name: Klasa FormBuildDateTimeControl
+  href: FormBuildDateTimeControl-class.md
+- name: Klasa FormBuildDesign
+  href: FormBuildDesign-class.md
+- name: Klasa FormBuildDropDialogButtonControl
+  href: FormBuildDropDialogButtonControl-class.md
+- name: Klasa FormBuildFastTabHeaderControl
+  href: FormBuildFastTabHeaderControl-class.md
+- name: Klasa FormBuildFastTabSummarySeparator
+  href: FormBuildFastTabSummarySeparator-class.md
+- name: Klasa FormBuildFilterPaneControl
+  href: FormBuildFilterPaneControl-class.md
+- name: Klasa FormBuildFunctionButtonControl
+  href: FormBuildFunctionButtonControl-class.md
+- name: Klasa FormBuildGridControl
+  href: FormBuildGridControl-class.md
+- name: Klasa FormBuildGroupControl
+  href: FormBuildGroupControl-class.md
+- name: Klasa FormBuildGuidControl
+  href: FormBuildGuidControl-class.md
+- name: Klasa FormBuildHTMLControl
+  href: FormBuildHTMLControl-class.md
+- name: Klasa FormBuildIntControl
+  href: FormBuildIntControl-class.md
+- name: Klasa FormBuildListBoxControl
+  href: FormBuildListBoxControl-class.md
+- name: Klasa FormBuildListControl
+  href: FormBuildListControl-class.md
+- name: Klasa FormBuildManagedHostControl
+  href: FormBuildManagedHostControl-class.md
+- name: Klasa FormBuildMenuButtonControl
+  href: FormBuildMenuButtonControl-class.md
+- name: Klasa FormBuildObjectSet
+  href: FormBuildObjectSet-class.md
+- name: Klasa FormBuildProgressControl
+  href: FormBuildProgressControl-class.md
+- name: Klasa FormBuildRadioControl
+  href: FormBuildRadioControl-class.md
+- name: Klasa FormBuildRealControl
+  href: FormBuildRealControl-class.md
+- name: Klasa FormBuildReferenceControl
+  href: FormBuildReferenceControl-class.md
+- name: Klasa FormBuildReferenceGroupControl
+  href: FormBuildReferenceGroupControl-class.md
+- name: Klasa FormBuildRichTextControl
+  href: FormBuildRichTextControl-class.md
+- name: Klasa FormBuildSegmentedEntryControl
+  href: FormBuildSegmentedEntryControl-class.md
+- name: Klasa FormBuildStaticTextControl
+  href: FormBuildStaticTextControl-class.md
+- name: Klasa FormBuildStringControl
+  href: FormBuildStringControl-class.md
+- name: Klasa FormBuildTabControl
+  href: FormBuildTabControl-class.md
+- name: Klasa FormBuildTableControl
+  href: FormBuildTableControl-class.md
+- name: Klasa FormBuildTabPageControl
+  href: FormBuildTabPageControl-class.md
+- name: Klasa FormBuildTimeControl
+  href: FormBuildTimeControl-class.md
+- name: Klasa FormBuildTreeControl
+  href: FormBuildTreeControl-class.md
+- name: Klasa FormBuildWindowControl
+  href: FormBuildWindowControl-class.md
+- name: Klasa FormButtonControl
+  href: FormButtonControl-class.md
+- name: Klasa FormButtonGroupControl
+  href: FormButtonGroupControl-class.md
+- name: Klasa FormButtonSeparatorControl
+  href: FormButtonSeparatorControl-class.md
+- name: Klasa FormChangeTracker
+  href: FormChangeTracker-class.md
+- name: Klasa FormCheckBoxControl
+  href: FormCheckBoxControl-class.md
+- name: Klasa FormComboBoxControl
+  href: FormComboBoxControl-class.md
+- name: Klasa FormCommandButtonControl
+  href: FormCommandButtonControl-class.md
+- name: Klasa FormContainer
+  href: FormContainer-class.md
+- name: Klasa FormContainerControl
+  href: FormContainerControl-class.md
+- name: Klasa FormControl
+  href: FormControl-class.md
+- name: Klasa FormControlCancelableSuperEventArgs
+  href: FormControlCancelableSuperEventArgs-class.md
+- name: Klasa FormControlCancelEventArgs
+  href: FormControlCancelEventArgs-class.md
+- name: Klasa FormControlEventArgs
+  href: FormControlEventArgs-class.md
+- name: Klasa FormDataObject
+  href: FormDataObject-class.md
+- name: Klasa FormDataRow
+  href: FormDataRow-class.md
+- name: Klasa FormDataSource
+  href: FormDataSource-class.md
+- name: Klasa FormDateControl
+  href: FormDateControl-class.md
+- name: Klasa FormDateTimeControl
+  href: FormDateTimeControl-class.md
+- name: Klasa FormDesign
+  href: FormDesign-class.md
+- name: Klasa FormDesignView
+  href: FormDesignView-class.md
+- name: Klasa FormDropDialogButtonControl
+  href: FormDropDialogButtonControl-class.md
+- name: Klasa FormEventArgs
+  href: FormEventArgs-class.md
+- name: Klasa FormFastTabHeaderControl
+  href: FormFastTabHeaderControl-class.md
+- name: Klasa FormFastTabSummarySeparator
+  href: FormFastTabSummarySeparator-class.md
+- name: Klasa FormFilterPaneControl
+  href: FormFilterPaneControl-class.md
+- name: Klasa FormFunctionButtonControl
+  href: FormFunctionButtonControl-class.md
+- name: Klasa FormGridControl
+  href: FormGridControl-class.md
+- name: Klasa FormGroupControl
+  href: FormGroupControl-class.md
+- name: Klasa FormGuidControl
+  href: FormGuidControl-class.md
+- name: Klasa FormHTMLControl
+  href: FormHTMLControl-class.md
+- name: Klasa FormIntControl
+  href: FormIntControl-class.md
+- name: Klasa FormListBoxControl
+  href: FormListBoxControl-class.md
+- name: Klasa FormListColumn
+  href: FormListColumn-class.md
+- name: Klasa FormListControl
+  href: FormListControl-class.md
+- name: Klasa FormListItem
+  href: FormListItem-class.md
+- name: Klasa FormManagedHostControl
+  href: FormManagedHostControl-class.md
+- name: Klasa FormMenuButtonControl
+  href: FormMenuButtonControl-class.md
+- name: Klasa FormNotifyEventArgs
+  href: FormNotifyEventArgs-class.md
+- name: Klasa FormObject
+  href: FormObject-class.md
+- name: Klasa FormObjectSet
+  href: FormObjectSet-class.md
+- name: Klasa FormObjectSetCacheChangedEventArgs
+  href: FormObjectSetCacheChangedEventArgs-class.md
+- name: Klasa FormObjectSetCurrentChangedEventArgs
+  href: FormObjectSetCurrentChangedEventArgs-class.md
+- name: Klasa FormObjectSetLeaveEventArgs
+  href: FormObjectSetLeaveEventArgs-class.md
+- name: Klasa FormObjectSetMarkingChangedEventArgs
+  href: FormObjectSetMarkingChangedEventArgs-class.md
+- name: Klasa FormObjectSetNotify
+  href: FormObjectSetNotify-class.md
+- name: Klasa FormObjectSetNotifyEvents
+  href: FormObjectSetNotifyEvents-class.md
+- name: Klasa FormObjectSetPagingParamsChangedEvtArgs
+  href: FormObjectSetPagingParamsChangedEvtArgs-class.md
+- name: Klasa FormObjectSetRequestCacheSizeEventArgs
+  href: FormObjectSetRequestCacheSizeEventArgs-class.md
+- name: Klasa FormPart
+  href: FormPart-class.md
+- name: Klasa FormProgressControl
+  href: FormProgressControl-class.md
+- name: Klasa FormQueryMiner
+  href: FormQueryMiner-class.md
+- name: Klasa FormRadioControl
+  href: FormRadioControl-class.md
+- name: Klasa FormRealControl
+  href: FormRealControl-class.md
+- name: Klasa FormReferenceControl
+  href: FormReferenceControl-class.md
+- name: Klasa FormReferenceGroupControl
+  href: FormReferenceGroupControl-class.md
+- name: Klasa FormReferenceObject
+  href: FormReferenceObject-class.md
+- name: Klasa FormRichTextControl
+  href: FormRichTextControl-class.md
+- name: Klasa FormRowDisplayOption
+  href: FormRowDisplayOption-class.md
+- name: Klasa FormSegment
+  href: FormSegment-class.md
+- name: Klasa FormSegmentedEntryControl
+  href: FormSegmentedEntryControl-class.md
+- name: Klasa FormsPreloadingManager
+  href: FormsPreloadingManager-class.md
+- name: Klasa FormStaticTextControl
+  href: FormStaticTextControl-class.md
+- name: Klasa FormStringControl
+  href: FormStringControl-class.md
+- name: Klasa FormTabControl
+  href: FormTabControl-class.md
+- name: Klasa FormTableCell
+  href: FormTableCell-class.md
+- name: Klasa FormTableControl
+  href: FormTableControl-class.md
+- name: Klasa FormTabPageControl
+  href: FormTabPageControl-class.md
+- name: Klasa FormTimeControl
+  href: FormTimeControl-class.md
+- name: Klasa FormTreeControl
+  href: FormTreeControl-class.md
+- name: Klasa FormTreeItem
+  href: FormTreeItem-class.md
+- name: Klasa FormWindowControl
+  href: FormWindowControl-class.md
+- name: Klasa Gac
+  href: Gac-class.md
+- name: Klasa HeapCheck
+  href: HeapCheck-class.md
+- name: Klasa HelpDocSetNode
+  href: HelpDocSetNode-class.md
+- name: Klasa HelpDocumentManager
+  href: HelpDocumentManager-class.md
+- name: Klasa HtmlFont
+  href: HtmlFont-class.md
+- name: Klasa IDispatcherProxy
+  href: IDispatcherProxy-class.md
+- name: Klasa IISApplicationObject
+  href: IISApplicationObject-class.md
+- name: Klasa IISContextObject
+  href: IISContextObject-class.md
+- name: Klasa IISPostedFile
+  href: IISPostedFile-class.md
+- name: Klasa IISReadCookie
+  href: IISReadCookie-class.md
+- name: Klasa IISRequest
+  href: IISRequest-class.md
+- name: Klasa IISRequestDictionary
+  href: IISRequestDictionary-class.md
+- name: Klasa IISResponse
+  href: IISResponse-class.md
+- name: Klasa IISServer
+  href: IISServer-class.md
+- name: Klasa IISSessionObject
+  href: IISSessionObject-class.md
+- name: Klasa IISStringList
+  href: IISStringList-class.md
+- name: Klasa IISVariantDictionary
+  href: IISVariantDictionary-class.md
+- name: Klasa IISViewState
+  href: IISViewState-class.md
+- name: Klasa IISWriteCookie
+  href: IISWriteCookie-class.md
+- name: Klasa obrazu
+  href: Image-class.md
+- name: Klasa Imagelist
+  href: Imagelist-class.md
+- name: Klasa ImportTableDataInfo
+  href: ImportTableDataInfo-class.md
+- name: Klasa ImportTableSchemaInfo
+  href: ImportTableSchemaInfo-class.md
+- name: Klasa InfoPart
+  href: InfoPart-class.md
+- name: Klasa InfoPartField
+  href: InfoPartField-class.md
+- name: Klasa InfoPartGroup
+  href: InfoPartGroup-class.md
+- name: Klasa InfoPartLayout
+  href: InfoPartLayout-class.md
+- name: Klasa InitialQueryParameter
+  href: InitialQueryParameter-class.md
+- name: Klasa InteropPermission
+  href: InteropPermission-class.md
+- name: Klasa Io
+  href: Io-class.md
+- name: Klasa zadania
+  href: Job-class.md
+- name: Klasa słów kluczowych
+  href: Keywords-class.md
+- name: Klasa etykiet
+  href: Label-class.md
+- name: Klasa LabelBulkEditor
+  href: LabelBulkEditor-class.md
+- name: Klasa LastAotSelection
+  href: LastAotSelection-class.md
+- name: Klasa listy
+  href: List-class.md
+- name: Klasa ListEnumerator
+  href: ListEnumerator-class.md
+- name: Klasa ListIterator
+  href: ListIterator-class.md
+- name: Klasa ListPage
+  href: ListPage-class.md
+- name: Klasa ListPageArgs
+  href: ListPageArgs-class.md
+- name: Klasa ListPageInteraction
+  href: ListPageInteraction-class.md
+- name: Klasa LoadAutoCompleteDataEventArgs
+  href: LoadAutoCompleteDataEventArgs-class.md
+- name: Klasa LoginProperty
+  href: LoginProperty-class.md
+- name: Klasa ManagedEventArgs
+  href: ManagedEventArgs-class.md
+- name: Klasa ManagedEventDelegate
+  href: ManagedEventDelegate-class.md
+- name: Klasa ManagedEventHandler
+  href: ManagedEventHandler-class.md
+- name: Klasa map
+  href: Map-class.md
+- name: Klasa MapEnumerator
+  href: MapEnumerator-class.md
+- name: Klasa Mapi
+  href: Mapi-class.md
+- name: Klasa MapiEx
+  href: MapiEx-class.md
+- name: Klasa MapiExAppointment
+  href: MapiExAppointment-class.md
+- name: Klasa MapiExContact
+  href: MapiExContact-class.md
+- name: Klasa MapiExMail
+  href: MapiExMail-class.md
+- name: Klasa MapiExMessage
+  href: MapiExMessage-class.md
+- name: Klasa MapiExTask
+  href: MapiExTask-class.md
+- name: Klasa MapiFileDesc
+  href: MapiFileDesc-class.md
+- name: Klasa MapiMessage
+  href: MapiMessage-class.md
+- name: Klasa MapiRecipDesc
+  href: MapiRecipDesc-class.md
+- name: Klasa MapIterator
+  href: MapIterator-class.md
+- name: Klasa MemberFunction
+  href: MemberFunction-class.md
+- name: Klasa menu
+  href: Menu-class.md
+- name: Klasa MenuItem
+  href: MenuItem-class.md
+- name: Klasa MenuReference
+  href: MenuReference-class.md
+- name: Klasa MessageWin
+  href: MessageWin-class.md
+- name: Klasa MethodInfo
+  href: MethodInfo-class.md
+- name: Klasa ModifyFieldEventArgs
+  href: ModifyFieldEventArgs-class.md
+- name: Klasa ModifyFieldValueEventArgs
+  href: ModifyFieldValueEventArgs-class.md
+- name: Klasa MultiSelectionContext
+  href: MultiSelectionContext-class.md
+- name: Klasa NumberSequence
+  href: NumberSequence-class.md
+- name: Klasa NumberSequenceSessionLessCache
+  href: NumberSequenceSessionLessCache-class.md
+- name: Klasa obiektu
+  href: Object-class.md
+- name: Klasa ObjectIdent
+  href: ObjectIdent-class.md
+- name: Klasa ObjectRun
+  href: ObjectRun-class.md
+- name: Klasa OciConnection
+  href: OciConnection-class.md
+- name: Klasa OdbcConnection
+  href: OdbcConnection-class.md
+- name: Klasa OleCommand
+  href: OleCommand-class.md
+- name: Klasa OuputSection
+  href: OuputSection-class.md
+- name: Klasa OutputAutoLabelField
+  href: OutputAutoLabelField-class.md
+- name: Klasa OutputBitmapField
+  href: OutputBitmapField-class.md
+- name: Klasa OutputBodySection
+  href: OutputBodySection-class.md
+- name: Klasa OutputColumnHeadingsSection
+  href: OutputColumnHeadingsSection-class.md
+- name: Klasa OutputDateField
+  href: OutputDateField-class.md
+- name: Klasa OutputDateTimeField
+  href: OutputDateTimeField-class.md
+- name: Klasa OutputEnumField
+  href: OutputEnumField-class.md
+- name: Klasa OutputEpilogSection
+  href: OutputEpilogSection-class.md
+- name: Klasa OutputField
+  href: OutputField-class.md
+- name: Klasa OutputFooterSection
+  href: OutputFooterSection-class.md
+- name: Klasa OutputHeaderSection
+  href: OutputHeaderSection-class.md
+- name: Klasa OutputIntegerField
+  href: OutputIntegerField-class.md
+- name: Klasa OutputLabelField
+  href: OutputLabelField-class.md
+- name: Klasa OutputPage
+  href: OutputPage-class.md
+- name: Klasa OutputPageFooterSection
+  href: OutputPageFooterSection-class.md
+- name: Klasa OutputPageHeaderSection
+  href: OutputPageHeaderSection-class.md
+- name: Klasa OutputProgrammableSection
+  href: OutputProgrammableSection-class.md
+- name: Klasa OutputPrologSection
+  href: OutputPrologSection-class.md
+- name: Klasa OutputRealField
+  href: OutputRealField-class.md
+- name: Klasa OutputShapeField
+  href: OutputShapeField-class.md
+- name: Klasa OutputStaticTextField
+  href: OutputStaticTextField-class.md
+- name: Klasa OutputStringField
+  href: OutputStringField-class.md
+- name: Klasa OutputSumField
+  href: OutputSumField-class.md
+- name: Klasa OutputTimeField
+  href: OutputTimeField-class.md
+- name: Klasa OverwriteSystemfieldsPermission
+  href: OverwriteSystemfieldsPermission-class.md
+- name: Klasa strony
+  href: Page-class.md
+- name: Klasa PageArgs
+  href: PageArgs-class.md
+- name: Klasa PageInteraction
+  href: PageInteraction-class.md
+- name: Klasa PartList
+  href: PartList-class.md
+- name: Klasa Percentbar
+  href: Percentbar-class.md
+- name: Klasa PerformanceMonitor
+  href: PerformanceMonitor-class.md
+- name: Klasa PerformanceMonitorCounter
+  href: PerformanceMonitorCounter-class.md
+- name: Klasa PerformanceMonitorInstance
+  href: PerformanceMonitorInstance-class.md
+- name: Klasa PipeClient
+  href: PipeClient-class.md
+- name: Klasa PipeServer
+  href: PipeServer-class.md
+- name: Klasa PresenceInfo
+  href: PresenceInfo-class.md
+- name: Klasa PrintJobSettings
+  href: PrintJobSettings-class.md
+- name: Klasa profilera
+  href: profiler-class.md
+- name: Klasa ProgressWindow
+  href: ProgressWindow-class.md
+- name: Klasa ProjectGroupNode
+  href: ProjectGroupNode-class.md
+- name: Klasa ProjectListNode
+  href: ProjectListNode-class.md
+- name: Klasa ProjectNode
+  href: ProjectNode-class.md
+- name: Klasa PropertiesWindow
+  href: PropertiesWindow-class.md
+- name: Klasa zapytania
+  href: Query-class.md
+- name: Klasa QueryBuildDataSource
+  href: QueryBuildDataSource-class.md
+- name: Klasa QueryBuildDynalink
+  href: QueryBuildDynalink-class.md
+- name: Klasa QueryBuildFieldList
+  href: QueryBuildFieldList-class.md
+- name: Klasa QueryBuildLink
+  href: QueryBuildLink-class.md
+- name: Klasa QueryBuildRange
+  href: QueryBuildRange-class.md
+- name: Klasa QueryBuildStaticlink
+  href: QueryBuildStaticlink-class.md
+- name: Klasa QueryFilter
+  href: QueryFilter-class.md
+- name: Klasa QueryGroupByField
+  href: QueryGroupByField-class.md
+- name: Klasa QueryHavingFilter
+  href: QueryHavingFilter-class.md
+- name: Klasa QueryOrderByField
+  href: QueryOrderByField-class.md
+- name: Klasa QueryRun
+  href: QueryRun-class.md
+- name: Klasa losowa
+  href: Random-class.md
+- name: Klasa RecordInsertList
+  href: RecordInsertList-class.md
+- name: Klasa RecordLinkList
+  href: RecordLinkList-class.md
+- name: Klasa RecordSortedList
+  href: RecordSortedList-class.md
+- name: Klasa RecordViewCache
+  href: RecordViewCache-class.md
+- name: Klasa ReferenceNode
+  href: ReferenceNode-class.md
+- name: Klasa RelationPath
+  href: RelationPath-class.md
+- name: Klasa RelativeFieldBinding
+  href: RelativeFieldBinding-class.md
+- name: Klasa raportu
+  href: Report-class.md
+- name: Klasa ReportAutoDesignSpecs
+  href: ReportAutoDesignSpecs-class.md
+- name: Klasa ReportBitmapControl
+  href: ReportBitmapControl-class.md
+- name: Klasa ReportControl
+  href: ReportControl-class.md
+- name: Klasa ReportDateControl
+  href: ReportDateControl-class.md
+- name: Klasa ReportDateTimeControl
+  href: ReportDateTimeControl-class.md
+- name: Klasa ReportDesign
+  href: ReportDesign-class.md
+- name: Klasa ReportEnumControl
+  href: ReportEnumControl-class.md
+- name: Klasa ReportFieldGroup
+  href: ReportFieldGroup-class.md
+- name: Klasa ReportGuidControl
+  href: ReportGuidControl-class.md
+- name: Klasa ReportIntegerControl
+  href: ReportIntegerControl-class.md
+- name: Klasa ReportLibraryNode
+  href: ReportLibraryNode-class.md
+- name: Klasa ReportOutput
+  href: ReportOutput-class.md
+- name: Klasa ReportOutputUser
+  href: ReportOutputUser-class.md
+- name: Klasa ReportPrinter
+  href: ReportPrinter-class.md
+- name: Klasa ReportPromptControl
+  href: ReportPromptControl-class.md
+- name: Klasa ReportRealControl
+  href: ReportRealControl-class.md
+- name: Klasa ReportRun
+  href: ReportRun-class.md
+- name: Klasa ReportSection
+  href: ReportSection-class.md
+- name: Klasa ReportSectionGroup
+  href: ReportSectionGroup-class.md
+- name: Klasa ReportShapeControl
+  href: ReportShapeControl-class.md
+- name: Klasa ReportStringControl
+  href: ReportStringControl-class.md
+- name: Klasa ReportSumControl
+  href: ReportSumControl-class.md
+- name: Klasa ReportTextControl
+  href: ReportTextControl-class.md
+- name: Klasa ReportTimeControl
+  href: ReportTimeControl-class.md
+- name: Klasa ReportViewer
+  href: ReportViewer-class.md
+- name: Klasa ResultSet
+  href: ResultSet-class.md
+- name: Klasa ResultSetMetaData
+  href: ResultSetMetaData-class.md
+- name: Klasa RunAsPermission
+  href: RunAsPermission-class.md
+- name: Klasa ScannerClass
+  href: ScannerClass-class.md
+- name: Klasa SearchParm
+  href: SearchParm-class.md
+- name: Klasa SecureNode
+  href: SecureNode-class.md
+- name: Klasa SecurityContext
+  href: SecurityContext-class.md
+- name: Klasa SecurityPolicy
+  href: SecurityPolicy-class.md
+- name: Klasa SecurityRights
+  href: SecurityRights-class.md
+- name: Klasa SecuritySkipFlush
+  href: SecuritySkipFlush-class.md
+- name: Klasa SecurityTableRights
+  href: SecurityTableRights-class.md
+- name: Klasa SecurityUtil
+  href: SecurityUtil-class.md
+- name: Klasa SegmentEnteredEventArgs
+  href: SegmentEnteredEventArgs-class.md
+- name: Klasa SegmentValueChangedEventArgs
+  href: SegmentValueChangedEventArgs-class.md
+- name: Klasa sekwencji
+  href: Sequence-class.md
+- name: Klasa zestawu
+  href: Set-class.md
+- name: Klasa SetEnumerator
+  href: SetEnumerator-class.md
+- name: Klasa SetIterator
+  href: SetIterator-class.md
+- name: Klasa SkipAOSValidationPermission
+  href: SkipAOSValidationPermission-class.md
+- name: Klasa SqlDataDictionary
+  href: SqlDataDictionary-class.md
+- name: Klasa SqlDataDictionaryPermission
+  href: SqlDataDictionaryPermission-class.md
+- name: Klasa SqlStatementExecutePermission
+  href: SqlStatementExecutePermission-class.md
+- name: Klasa SqlSyncPending
+  href: SqlSyncPending-class.md
+- name: Klasa SqlSystem
+  href: SqlSystem-class.md
+- name: Klasa SSRSReportAutoDesignNode
+  href: SSRSReportAutoDesignNode-class.md
+- name: Klasa SSRSReportConceptNode
+  href: SSRSReportConceptNode-class.md
+- name: Klasa SSRSReportDesignNode
+  href: SSRSReportDesignNode-class.md
+- name: Klasa SSRSReportPrecisionDesignNode
+  href: SSRSReportPrecisionDesignNode-class.md
+- name: Klasa instrukcji
+  href: Statement-class.md
+- name: Klasa Struct
+  href: Struct-class.md
+- name: Klasa SurrogateFKReplacementHelper
+  href: SurrogateFKReplacementHelper-class.md
+- name: Klasa SysGlobalObjectCache
+  href: SysGlobalObjectCache-class.md
+- name: Klasa SystemMonitor
+  href: SystemMonitor-class.md
+- name: Klasa systemSequence
+  href: systemSequence-class.md
+- name: Klasa TableExtension
+  href: TableExtension-class.md
+- name: Klasa TextBuffer
+  href: TextBuffer-class.md
+- name: Klasa TextIo
+  href: TextIo-class.md
+- name: Klasa TileReference
+  href: TileReference-class.md
+- name: Klasa TreeNode
+  href: TreeNode-class.md
+- name: Klasa TreeNodeIterator
+  href: TreeNodeIterator-class.md
+- name: Klasa TreeNodeType
+  href: TreeNodeType-class.md
+- name: Klasa UnitofWork
+  href: UnitofWork-class.md
+- name: Klasa UserConnection
+  href: UserConnection-class.md
+- name: Klasa UserMenuList
+  href: UserMenuList-class.md
+- name: Klasa UserSetup
+  href: UserSetup-class.md
+- name: Klasa UtilFile
+  href: UtilFile-class.md
+- name: Klasa ValidateEventArgs
+  href: ValidateEventArgs-class.md
+- name: Klasa ValidateFieldEventArgs
+  href: ValidateFieldEventArgs-class.md
+- name: Klasa ValidateFieldValueEventArgs
+  href: ValidateFieldValueEventArgs-class.md
+- name: Klasa VirtualChannelManager
+  href: VirtualChannelManager-class.md
+- name: Klasa VSItemNode
+  href: VSItemNode-class.md
+- name: Klasa VSProjectFileNode
+  href: VSProjectFileNode-class.md
+- name: Klasa VSProjectFolderNode
+  href: VSProjectFolderNode-class.md
+- name: Klasa VSProjectLinkNode
+  href: VSProjectLinkNode-class.md
+- name: Klasa VSProjectNode
+  href: VSProjectNode-class.md
+- name: Klasa VSProjectsNode
+  href: VSProjectsNode-class.md
+- name: Klasa VSProjectTypeNode
+  href: VSProjectTypeNode-class.md
+- name: Klasa VSS
+  href: VSS-class.md
+- name: Klasa VSSItem
+  href: VSSItem-class.md
+- name: Klasa WebActionMenuFunction
+  href: WebActionMenuFunction-class.md
+- name: Klasa WebContentItem
+  href: WebContentItem-class.md
+- name: Klasa webControlNode
+  href: webControlNode-class.md
+- name: Klasa WebDisplayContentItem
+  href: WebDisplayContentItem-class.md
+- name: Klasa WebletItem
+  href: WebletItem-class.md
+- name: Klasa webListDefNode
+  href: webListDefNode-class.md
+- name: Klasa WebManagedContentItem
+  href: WebManagedContentItem-class.md
+- name: Klasa WebMenu
+  href: WebMenu-class.md
+- name: Klasa WebMenuFunction
+  href: WebMenuFunction-class.md
+- name: Klasa WebMenuItem
+  href: WebMenuItem-class.md
+- name: Klasa webModuleNode
+  href: webModuleNode-class.md
+- name: Klasa WebOutputContentItem
+  href: WebOutputContentItem-class.md
+- name: Klasa webPageDefNode
+  href: webPageDefNode-class.md
+- name: Klasa webStaticFileNode
+  href: webStaticFileNode-class.md
+- name: Klasa WebUrlMenuFunction
+  href: WebUrlMenuFunction-class.md
+- name: Klasa WinAPINative
+  href: WinAPINative-class.md
+- name: Klasa xApplication
+  href: xApplication-class.md
+- name: Klasa xArgs
+  href: xArgs-class.md
+- name: Klasa xAxaptaUserDetails
+  href: xAxaptaUserDetails-class.md
+- name: Klasa xAxaptaUserManager
+  href: xAxaptaUserManager-class.md
+- name: Klasa xBrowser
+  href: xBrowser-class.md
+- name: Klasa xClassFactory
+  href: xClassFactory-class.md
+- name: Klasa xClassTrace
+  href: xClassTrace-class.md
+- name: Klasa xCompany
+  href: xCompany-class.md
+- name: Klasa xCompilerOutput
+  href: xCompilerOutput-class.md
+- name: Klasa XDSServices
+  href: XDSServices-class.md
+- name: Klasa xDynamicVarSet
+  href: xDynamicVarSet-class.md
+- name: Klasa xExportToExcelController
+  href: xExportToExcelController-class.md
+- name: Klasa xFormRun
+  href: xFormRun-class.md
+- name: Klasa xGlobal
+  href: xGlobal-class.md
+- name: Klasa xInfo
+  href: xInfo-class.md
+- name: Klasa xLanguage
+  href: xLanguage-class.md
+- name: Klasa xMenuFunction
+  href: xMenuFunction-class.md
+- name: Klasa xNavPane
+  href: xNavPane-class.md
+- name: Klasa XppCompiler
+  href: XppCompiler-class.md
+- name: Klasa XppPrePostArgs
+  href: XppPrePostArgs-class.md
+- name: Klasa xRecord
+  href: xRecord-class.md
+- name: Klasa xRef
+  href: xRef-class.md
+- name: Klasa xResourceNode
+  href: xResourceNode-class.md
+- name: Klasa xSession
+  href: xSession-class.md
+- name: Klasa xSqlEnumerator
+  href: xSqlEnumerator-class.md
+- name: Klasa xToastNotification
+  href: xToastNotification-class.md
+- name: Klasa xVersionControl
+  href: xVersionControl-class.md
