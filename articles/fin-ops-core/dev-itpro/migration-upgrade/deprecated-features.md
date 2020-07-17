@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje w poprzednich wersjach
 description: W tym temacie opisano funkcje, które zostały usunięte lub które zostały zaplanowane do usunięcia z systemu Dynamics 365 for Finance and Operations i poprzednich wydań tego produktu.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
-ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
+ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
+ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284021"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3500419"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
@@ -588,7 +588,7 @@ eGiro opiera się na międzynarodowym standardzie ONZ EDIFACT CREMUL (Multiple C
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format płatności nie jest już używany.                                                     |
-| **Zamieniona przez inną funkcję?**   | Nr Ten format zostanie zastąpiony formatami importu wyciągów ISO 20022 w przyszłych wersjach. |
+| **Zamieniona przez inną funkcję?**   | Tak, import powiadomień w schemacie ISO20022 Camt.054. |
 | **Powiązane obszary produktów**         | Rozrachunki z odbiorcami                                                                       |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji.                            |
 
@@ -621,7 +621,7 @@ Można wybrać formatu importu dla płatności fińskich, który importuje trans
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format płatności nie jest już używany.                                                     |
-| **Zamieniona przez inną funkcję?**   | Nr Ten format zostanie zastąpiony formatami importu wyciągów ISO 20022 w przyszłych wersjach. |
+| **Zamieniona przez inną funkcję?**   | Tak, import powiadomień w schemacie ISO20022 Camt.054. |
 | **Powiązane obszary produktów**         | Rozrachunki z odbiorcami                                                                       |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji.                            |
 
@@ -632,7 +632,7 @@ Format specyficzny dla Finlandii służy do importowania transakcji księgowych 
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format płatności nie jest już używany.                                                     |
-| **Zamieniona przez inną funkcję?**   | Nr Ten format zostanie zastąpiony formatami importu wyciągów ISO 20022 w przyszłych wersjach. |
+| **Zamieniona przez inną funkcję?**   | Tak, importowanie wyciągu bankowego w schemacie ISO20022 Camt.053 przy użyciu zaawansowanego uzgadniania konta bankowego. |
 | **Powiązane obszary produktów**         | Rozrachunki z odbiorcami                                                                       |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji.                            |
 
@@ -698,7 +698,7 @@ Formaty Telehansa i TeleTeenus są używane do importu płatności bankowych.
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Te formaty płatności nie są już używane.                                                    |
-| **Zamieniona przez inną funkcję?**   | Nr Te formaty zostaną zastąpione formatami importu wyciągów ISO 20022 w przyszłych wersjach. |
+| **Zamieniona przez inną funkcję?**   | Tak, import powiadomień bankowych w schemacie ISO20022 Camt.054. |
 | **Powiązane obszary produktów**         | Rozrachunki z odbiorcami                                                                        |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji.                             |
 
@@ -784,7 +784,7 @@ Formaty płatności TelePay obejmują funkcje eksportu płatności dla dostawcó
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Te formaty płatności nie są już używane.                                                        |
-| **Zamieniona przez inną funkcję?**   | Tak, przez format płatności poleceniem przelewu ISO20022 i format płatności od odbiorcy AvtaleGiro dla Norwegii |
+| **Zamieniona przez inną funkcję?**   | Tak, format transferu płatności w schemacie ISO20022 oraz format płatności klienta dla Norwegii AvtaleGiro, a także import powiadomień bankowych o zwrocie plików pain.002 oraz camt.054. |
 | **Powiązane obszary produktów**         | Rozrachunki z dostawcami, Rozrachunki z odbiorcami                                                          |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji.                                 |
 
@@ -844,7 +844,7 @@ Przepływ pracy zarządzania tworzeniem celów dla pracowników jest jednym z ki
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integracja z AIF, AxD i AxBC
 
-W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z zewnętrznymi systemami poprzez logikę biznesową powiązaną z usługami. System Dynamics AX zawiera usługi, które są oparte na dokumentach i programie .NET Business Connector (AxBC). Dokument jest tworzony przy użyciu języka XML. Kod XML zawiera informacje nagłówka dodawane w celu tworzenia *komunikatów*, które mogą być przesyłane do systemu Dynamics AX lub z niego wysyłane. Przykłady dokumentów obejmują zamówienia sprzedaży i zamówienia zakupu. Jednak niemal wszystkie podmioty, np. odbiorca, mogą być reprezentowane przez dokument. Usługi oparte na dokumentach używają menu **Axd \<Dokument\>** klasy
+W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z zewnętrznymi systemami poprzez logikę biznesową powiązaną z usługami. System Dynamics AX zawiera usługi, które są oparte na dokumentach i programie .NET Business Connector (AxBC). Dokument jest tworzony przy użyciu języka XML. Kod XML zawiera informacje nagłówka dodawane w celu tworzenia *komunikatów*, które mogą być przesyłane do systemu Dynamics AX lub z niego wysyłane. Przykłady dokumentów obejmują zamówienia sprzedaży i zamówienia zakupu. Jednak niemal wszystkie podmioty, np. odbiorca, mogą być reprezentowane przez dokument. Usługi oparte na dokumentach używają menu klasy **Axd \<Document\>**.
 
 |   |  |
 |------------|--------------------|
@@ -1125,13 +1125,13 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 | **Powiązane obszary produktów**         | Wszystkie moduły  |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji. |
 
-### <a name="german-dtazv-payment-format"></a>Niemiecki format płatności DTAZV
+### <a name="german-dtazv-payment-format-in-domestic-currency"></a>Niemiecki format płatności DTAZV w walucie krajowej
 
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format nie jest już używany w Niemczech, ponieważ został zastąpiony przez funkcję SEPA. |
 | **Zamieniona przez inną funkcję?**   | Eksport płatności SEPA    |
-| **Powiązane obszary produktów**         | Wszystkie moduły   |
+| **Powiązane obszary produktów**         | Rozrachunki z dostawcami   |
 | **Stan**                         | Wycofane: nie określono daty usunięcia dla tej funkcji.    |
 
 ### <a name="german-mt940-import"></a>Niemiecki import MT940

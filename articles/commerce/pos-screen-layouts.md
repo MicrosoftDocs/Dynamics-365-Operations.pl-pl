@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: boycezhu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3a84318f7156ef42f7e00f1e89228f541b1634ce
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: a037c8514d7838b3a4797f21b3ef3f6d5736e840
+ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261474"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3505641"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Konfiguracje wizualne interfejsu użytkownika punktu sprzedaży
 
@@ -101,7 +101,7 @@ Podczas uruchamiania aplikacja POS wybiera najbliższy rozmiar układu skonfigur
 > [!TIP]
 > Informację o rozmiarze układu wymaganym dla ekranu aplikacji POS można uzyskać poprzez wyświetlanie rozdzielczości w aplikacji. Uruchom aplikację POS i wybierz kolejno opcje **Ustawienia \> Informacje o sesji**. Aplikacja POS pokazuje aktualnie załadowany układ ekranu, rozmiar układu i rozdzielczość okna aplikacji.
 
-![Rozmiary układów aplikacji POS](../commerce/media/POS-Session-Information.png)
+![Ekran Informacje dot. sesji POS pokazuje aktualnie załadowany układ ekranu, rozmiar układu i rozdzielczość okna aplikacji](../commerce/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Siatki przycisków
 

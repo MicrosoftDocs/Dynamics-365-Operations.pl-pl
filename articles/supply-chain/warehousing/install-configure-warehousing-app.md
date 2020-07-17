@@ -1,6 +1,6 @@
 ---
-title: Instalowanie i łączenie aplikacji magazynu
-description: W tym temacie opisano sposób instalowania aplikacji magazynu na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Microsoft Dynamics 365 Supply Chain Management. Poszczególne urządzenia można konfigurować ręcznie lub można importować ustawienia połączenia za pośrednictwem pliku lub przez skanowanie kodu QR.
+title: Instalowanie i łączenie aplikacji magazynowej
+description: W tym temacie opisano sposób instalowania aplikacji magazynowej na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Microsoft Dynamics 365 Supply Chain Management. Poszczególne urządzenia można konfigurować ręcznie lub można importować ustawienia połączenia za pośrednictwem pliku lub przez skanowanie kodu QR.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 05/25/2020
@@ -19,46 +19,46 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 290888dbf7d194b8cf259d7218d01d4a4f911db0
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 88bce09a6d3bf154592955a6fb2dada6247f1993
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367089"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530082"
 ---
-# <a name="install-and-connect-the-warehousing-app"></a>Instalowanie i łączenie aplikacji magazynu
+# <a name="install-and-connect-the-warehouse-app"></a>Instalowanie i łączenie aplikacji magazynowej
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > W tym temacie opisano sposób konfigurowania modułu zarządzania magazynem dla wdrożeń w chmurze. Jeśli szukasz informacji dotyczących sposobu konfigurowania modułu zarządzania magazynem dla wdrożeń lokalnych, zapoznaj się z tematem [Magazynowanie we wdrożeniach lokalnych](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
-Aplikacja magazynu jest dostępna w sklepie Google Play i sklepie Microsoft Store. Jest ona udostępniana jako składnik autonomiczny. Dlatego należy ją pobrać na każde urządzenie, a następnie skonfigurować do nawiązywania połączenia ze środowiskiem aplikacji Microsoft Dynamics 365 Supply Chain Management.
+Aplikacja magazynowa jest dostępna w sklepie Google Play i sklepie Microsoft Store. Jest ona udostępniana jako składnik autonomiczny. Dlatego należy ją pobrać na każde urządzenie, a następnie skonfigurować do nawiązywania połączenia ze środowiskiem aplikacji Microsoft Dynamics 365 Supply Chain Management.
 
-W tym temacie opisano sposób instalowania aplikacji magazynu na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Supply Chain Management. Poszczególne urządzenia można konfigurować ręcznie lub można importować ustawienia połączenia za pośrednictwem pliku lub przez skanowanie kodu QR.
+W tym temacie opisano sposób instalowania aplikacji magazynowej na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Supply Chain Management. Poszczególne urządzenia można konfigurować ręcznie lub można importować ustawienia połączenia za pośrednictwem pliku lub przez skanowanie kodu QR.
 
 ## <a name="system-requirements"></a>Wymagania systemowe
 
-Aplikacja magazynu jest dostępna w systemach operacyjnych Windows i Android. Aby używać najnowszej wersji aplikacji, na urządzeniach przenośnych musi być zainstalowany jeden z poniższych systemów operacyjnych:
+Aplikacja magazynowa jest dostępna w systemach operacyjnych Windows i Android. Aby używać najnowszej wersji aplikacji, na urządzeniach przenośnych musi być zainstalowany jeden z poniższych systemów operacyjnych:
 
 - Aktualizacja Fall Creators Update 1709 systemu Windows 10 (Universal Windows Platform \[UWP\]) (kompilacja 10.0.16299) lub nowsza wersja
 - Android 4.4 lub nowsza wersja
 
 > [!NOTE]
-> Jeśli musisz obsługiwać starsze urządzenia z systemem Windows, na których nie można uruchamiać najnowszej wersji systemu Windows, nadal można pobrać wersję 1.6.3.0 aplikacji magazynu ze sklepu Microsoft Store. Ta wersja będzie działać w systemie Windows 10 (UWP) z listopadową aktualizacją Update 1511 (kompilacja 10.0.10586) lub nowszej wersji. Należy jednak pamiętać, że ta wersja aplikacji magazynu nie obsługuje wdrożenia masowego ustawień połączenia. Dlatego należy [ręcznie skonfigurować połączenie](#config-manually) na każdym urządzeniu, na którym jest uruchamiana ta wersja aplikacji.
+> Jeśli musisz obsługiwać starsze urządzenia z systemem Windows, na których nie można uruchamiać najnowszej wersji systemu Windows, nadal można pobrać wersję 1.6.3.0 aplikacji magazynowej ze sklepu Microsoft Store. Ta wersja będzie działać w systemie Windows 10 (UWP) z listopadową aktualizacją Update 1511 (kompilacja 10.0.10586) lub nowszej wersji. Należy jednak pamiętać, że ta wersja aplikacji magazynowej nie obsługuje wdrożenia masowego ustawień połączenia. Dlatego należy [ręcznie skonfigurować połączenie](#config-manually) na każdym urządzeniu, na którym jest uruchamiana ta wersja aplikacji.
 
-## <a name="get-the-warehousing-app"></a>Pobieranie aplikacji magazynu
+## <a name="get-the-warehouse-app"></a>Pobieranie aplikacji magazynowej
 
 Aby pobrać aplikację, użyj jednego z następujących linków:
 
 - **Windows (UWP):** [Dynamics 365 for Finance and Operations - Warehousing w sklepie Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Warehousing - Dynamics 365 w sklepie Google Play](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-W przypadku mniejszych wdrożeń możesz zainstalować aplikację z odpowiedniego sklepu na każdym urządzeniu, a następnie ręcznie skonfigurować połączenie z używanymi środowiskami. Natomiast w aplikacji magazynu w wersji 1.7.0.0 lub nowszej można również zautomatyzować wdrażanie i/lub konfigurację aplikacji. Takie podejście może okazać się wygodne w przypadku korzystania z rozwiązania do zarządzania urządzeniami przenośnymi i zarządzania aplikacjami mobilnymi, takiego jak usługa [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Aby uzyskać informacje na temat dodawania aplikacji za pomocą usługi Intune, zapoznaj się z tematem [Dodawanie aplikacji do usługi Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+W przypadku mniejszych wdrożeń możesz zainstalować aplikację z odpowiedniego sklepu na każdym urządzeniu, a następnie ręcznie skonfigurować połączenie z używanymi środowiskami. Natomiast w aplikacji magazynowej w wersji 1.7.0.0 lub nowszej można również zautomatyzować wdrażanie i/lub konfigurację aplikacji. Takie podejście może okazać się wygodne w przypadku korzystania z rozwiązania do zarządzania urządzeniami przenośnymi i zarządzania aplikacjami mobilnymi, takiego jak usługa [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Aby uzyskać informacje na temat dodawania aplikacji za pomocą usługi Intune, zapoznaj się z tematem [Dodawanie aplikacji do usługi Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory
 
-Aby umożliwić aplikacji magazynu interakcję z konkretnym serwerem Supply Chain Management, należy zarejestrować aplikację usługi internetowej w usłudze dla dzierżawy aplikacji Supply Chain Management w usłudze Azure Active Directory (Azure AD). Poniższa procedura przedstawia jeden ze sposobów wykonania tego zadania. Aby uzyskać szczegółowe informacje i rozwiązania alternatywne, zobacz linki pod opisem procedury.
+Aby umożliwić aplikacji magazynowej interakcję z konkretnym serwerem Supply Chain Management, należy zarejestrować aplikację usługi internetowej w usłudze dla dzierżawy aplikacji Supply Chain Management w usłudze Azure Active Directory (Azure AD). Poniższa procedura przedstawia jeden ze sposobów wykonania tego zadania. Aby uzyskać szczegółowe informacje i rozwiązania alternatywne, zobacz linki pod opisem procedury.
 
 1. W przeglądarce internetowej przejdź do strony [https://portal.azure.com](https://portal.azure.com/).
 1. Wprowadź nazwę i hasło użytkownika z dostępem do subskrypcji platformy Azure.
@@ -82,7 +82,7 @@ Aby umożliwić aplikacji magazynu interakcję z konkretnym serwerem Supply Chai
 
 1. Na liście **Zarządzaj** wybierz pozycję **Certyfikat i wpisy tajne**. Następnie wybierz jeden z poniższych przycisków, w zależności od tego, w jaki sposób chcesz skonfigurować aplikację do uwierzytelniania. (Aby uzyskać więcej informacji, zapoznaj się z sekcją [Uwierzytelnianie przy użyciu certyfikatu lub wpisu tajnego klienta](#authenticate) w dalszej części tego tematu).
 
-    - **Przekaż certyfikat** — umożliwia przekazywanie certyfikatu, który ma być używany jako wpis tajny. Zalecamy stosowanie tego podejścia, ponieważ jest ono bezpieczniejsze i można je również automatyzować w większym stopniu. Jeśli uruchamiasz aplikację magazynu na urządzeniach z systemem Windows, zanotuj wartość pola **Odcisk palca** pokazaną po przekazaniu certyfikatu. Ta wartość będzie potrzebna podczas konfigurowania certyfikatu na urządzeniach z systemem Windows.
+    - **Przekaż certyfikat** — umożliwia przekazywanie certyfikatu, który ma być używany jako wpis tajny. Zalecamy stosowanie tego podejścia, ponieważ jest ono bezpieczniejsze i można je również automatyzować w większym stopniu. Jeśli uruchamiasz aplikację magazynowej na urządzeniach z systemem Windows, zanotuj wartość pola **Odcisk palca** pokazaną po przekazaniu certyfikatu. Ta wartość będzie potrzebna podczas konfigurowania certyfikatu na urządzeniach z systemem Windows.
     - **Nowy wpis tajny klienta** — umożliwia utworzenie klucza przez wprowadzenie opisu i czasu trwania dla klucza w sekcji **Hasła**, a następnie wybranie pozycji **Dodaj**. Utwórz kopię klucza i zapisz go w bezpiecznym miejscu.
 
     ![Certyfikat i wpisy tajne](media/app-connect-azure-authentication.png "Certyfikat i wpisy tajne")
@@ -99,7 +99,7 @@ Aby uzyskać więcej informacji na temat konfigurowania aplikacji usług interne
 
 Aby aplikacja Supply Chain Management mogła korzystać z aplikacji Azure AD, wykonaj następujące kroki.
 
-1. Utwórz użytkownika odpowiadającego poświadczeniom użytkownika dla aplikacji magazynu:
+1. Utwórz użytkownika odpowiadającego poświadczeniom użytkownika dla aplikacji magazynowej:
 
     1. W aplikacji Supply Chain Management wybierz kolejno pozycje **Administrowanie systemem \> Użytkownicy \> Użytkownicy**.
     1. Utwórz użytkownika.
@@ -107,7 +107,7 @@ Aby aplikacja Supply Chain Management mogła korzystać z aplikacji Azure AD, wy
 
     ![Przypisywanie użytkownika urządzenia przenośnego dla magazynu](media/app-connect-app-users.png "Przypisywanie użytkownika urządzenia przenośnego dla magazynu")
 
-1. Skojarz aplikację usługi Azure AD z użytkownikiem aplikacji magazynu:
+1. Skojarz aplikację usługi Azure AD z użytkownikiem aplikacji magazynowej:
 
     1. Przejdź do pozycji **Administrowanie systemem \> Ustawienia \> Aplikacje usługi Azure Active Directory**.
     1. Utwórz wiersz.
@@ -119,9 +119,9 @@ Aby aplikacja Supply Chain Management mogła korzystać z aplikacji Azure AD, wy
 
 Uwierzytelnianie za pomocą usługi Azure AD zapewnia bezpieczny sposób połączenia urządzenia przenośnego z aplikacją Supply Chain Management. Uwierzytelnianie można przeprowadzić przy użyciu wpisu tajnego klienta lub certyfikatu. Jeśli zaimportujesz ustawienia połączenia, zalecamy użycie certyfikatu zamiast wpisu tajnego klienta. Ponieważ wpis tajny klienta musi być zawsze przechowywany w bezpieczny sposób, nie można go importować z pliku ustawień połączenia ani z kodu QR, jak opisano w dalszej części tego tematu.
 
-Certyfikaty mogą być używane jako wpisy tajne w celu udowodnienia tożsamości aplikacji w przypadku żądania tokenu. Publiczna część certyfikatu jest przekazywana do rejestracji aplikacji w witrynie Azure Portal, podczas gdy pełny certyfikat musi zostać wdrożony na każdym urządzeniu, na którym zainstalowano aplikację magazynu. Organizacja jest odpowiedzialna za zarządzanie certyfikatem w kategorii wymiany itd. Można używać certyfikatów z podpisem własnym, ale zawsze należy używać certyfikatów bez możliwości eksportowania.
+Certyfikaty mogą być używane jako wpisy tajne w celu udowodnienia tożsamości aplikacji w przypadku żądania tokenu. Publiczna część certyfikatu jest przekazywana do rejestracji aplikacji w witrynie Azure Portal, podczas gdy pełny certyfikat musi zostać wdrożony na każdym urządzeniu, na którym zainstalowano aplikację magazynową. Organizacja jest odpowiedzialna za zarządzanie certyfikatem w kategorii wymiany itd. Można używać certyfikatów z podpisem własnym, ale zawsze należy używać certyfikatów bez możliwości eksportowania.
 
-Certyfikat musi zostać udostępniony lokalnie na każdym urządzeniu, na którym działa aplikacja magazynu. Aby uzyskać informacje dotyczące sposobu zarządzania certyfikatami urządzeń kontrolowanych przez usługę Intune w przypadku korzystania z usługi Intune, zapoznaj się z tematem [Używanie certyfikatów do uwierzytelniania w usłudze Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Certyfikat musi zostać udostępniony lokalnie na każdym urządzeniu, na którym działa aplikacja magazynowa. Aby uzyskać informacje dotyczące sposobu zarządzania certyfikatami urządzeń kontrolowanych przez usługę Intune w przypadku korzystania z usługi Intune, zapoznaj się z tematem [Używanie certyfikatów do uwierzytelniania w usłudze Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurowanie aplikacji przez zaimportowanie ustawień połączenia
 
@@ -177,7 +177,7 @@ Możesz zapisać te informacje jako plik JSON lub wygenerować kod QR o tej same
 
 ### <a name="save-the-connection-settings-file-on-each-device"></a>Zapisywanie pliku ustawień połączenia na każdym urządzeniu
 
-Zazwyczaj do dystrybuowania plików ustawień połączenia na każde zarządzane urządzenie jest używane narzędzie do zarządzania urządzeniami lub odpowiedni skrypt. Jeśli podczas zapisywania pliku ustawień połączenia na każdym urządzeniu zostanie użyta domyślna nazwa i lokalizacja, aplikacja magazynu automatycznie zaimportuje plik, nawet podczas pierwszego uruchomienia po zainstalowaniu aplikacji. Jeśli używasz niestandardowej nazwy lub lokalizacji pliku, użytkownik aplikacji musi określić wartości podczas pierwszego uruchomienia. Aplikacja będzie nadal korzystać z wybranej nazwy i lokalizacji w terminie późniejszym.
+Zazwyczaj do dystrybuowania plików ustawień połączenia na każde zarządzane urządzenie jest używane narzędzie do zarządzania urządzeniami lub odpowiedni skrypt. Jeśli podczas zapisywania pliku ustawień połączenia na każdym urządzeniu zostanie użyta domyślna nazwa i lokalizacja, aplikacja magazynowa automatycznie zaimportuje plik, nawet podczas pierwszego uruchomienia po zainstalowaniu aplikacji. Jeśli używasz niestandardowej nazwy lub lokalizacji pliku, użytkownik aplikacji musi określić wartości podczas pierwszego uruchomienia. Aplikacja będzie nadal korzystać z wybranej nazwy i lokalizacji w terminie późniejszym.
 
 Każde ponowne uruchomienie aplikacji spowoduje ponowne zaimportowanie ustawień połączenia z ich poprzedniej lokalizacji w celu ustalenia, czy zostały wprowadzone jakiekolwiek zmiany. Aplikacja zaktualizuje tylko te połączenia, które mają takie same nazwy jak połączenia w pliku ustawień połączenia. Utworzone przez użytkownika połączenia używające innych nazw nie zostaną zaktualizowane.
 
@@ -197,7 +197,7 @@ Zazwyczaj ścieżki są tworzone automatycznie po pierwszym uruchomieniu aplikac
 
 Wykonaj poniższe kroki, aby zaimportować ustawienia połączenia z pliku lub kodu QR.
 
-1. Otwórz aplikację magazynu na urządzeniu przenośnym.
+1. Otwórz aplikację magazynową na urządzeniu przenośnym.
 1. Przejdź do obszaru **Ustawienia połączenia**.
 1. W opcji **Użyj trybu demonstracyjnego** ustaw wartość _Nie_.
 
@@ -226,7 +226,7 @@ Wykonaj poniższe kroki, aby zaimportować ustawienia połączenia z pliku lub k
 
 Aplikację w urządzeniu można ręcznie skonfigurować tak, aby łączyła się z serwerem programu Supply Chain Management za pośrednictwem aplikacji usługi Azure AD.
 
-1. Otwórz aplikację magazynu na urządzeniu przenośnym.
+1. Otwórz aplikację magazynową na urządzeniu przenośnym.
 1. Przejdź do obszaru **Ustawienia połączenia**.
 1. W opcji **Użyj trybu demonstracyjnego** ustaw wartość _Nie_.
 

@@ -3,7 +3,7 @@ title: Kojarzenie witryny e-Commerce z kanałem online
 description: W tym temacie opisano sposób powiązania witryny firmy Microsoft Dynamics 365 Commerce z co najmniej jednym sklepem internetowym.
 author: stuharg
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: bicyclingfool
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 30a992ae5cc68173b830224ae88ac3770b414b7a
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: af63fc8e32d82cff9e46510da9b30110ac8f0f2c
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096708"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533374"
 ---
 # <a name="associate-an-e-commerce-site-with-an-online-channel"></a>Kojarzenie witryny e-Commerce z kanałem online
 
@@ -44,13 +44,11 @@ Po utworzeniu witryny można sprawdzić, czy jest skojarzona ze swoim sklepem in
 
 [Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
 
-[Konfigurowanie kanału sklepu internetowego](online-stores.md)
-
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
 [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
-[Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+[Zbiorowe przekazanie przekierowań adresów URL](upload-bulk-redirects.md)
 
 [Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
 

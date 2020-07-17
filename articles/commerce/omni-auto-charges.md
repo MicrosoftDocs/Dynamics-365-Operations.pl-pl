@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
-ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
+ms.openlocfilehash: c397354ade1ac1d4f5f9bc0e6bb5d4be5a7ae9f3
+ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175161"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3505618"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Wielokanałowe zaawansowane opłaty automatyczne
 
@@ -40,7 +40,7 @@ W wersjach wcześniejszych niż 10.0 użytkownik POS otrzymuje monit o ręczne w
 
 Ręczne monity do dodawania opłat transportowych są nadal dostępne w wersjach 10.0 i nowszych. Jeśli organizacja nie obsługuje parametru **Zaawansowane opłaty automatyczne**, monity POS o ręczne wprowadzenie zostaną takie same.
 
-Dzięki funkcji zaawansowanych opłat automatycznych użytkownicy POS mogą korzystać z systemowych kalkulacji dla dowolnych zdefiniowanych opłat różnych na podstawie tabel konfiguracji opłat automatycznych. Ponadto użytkownicy będą mieli możliwość dodawania lub edytowania nieograniczonej ilości dodatkowych opłat i płatności do dowolnej transakcji sprzedaży w POS na poziomie nagłówka lub wiersza (dla transakcji kasowych i lub zamówień odbiorcy).
+Dzięki funkcji zaawansowanych opłat automatycznych użytkownicy POS mogą korzystać z systemowych kalkulacji dla dowolnych zdefiniowanych opłat różnych na podstawie tabel konfiguracji opłat automatycznych. Ponadto użytkownicy będą mieli możliwość dodawania lub edytowania nieograniczonej liczby dodatkowych opłat i płatności do dowolnej transakcji sprzedaży w POS na poziomie nagłówka lub wiersza (dla transakcji kasowych i lub zamówień odbiorcy).
 
 ## <a name="enabling-advanced-auto-charges"></a>Włączanie zaawansowanych opłat automatycznych
 
@@ -52,7 +52,7 @@ Po włączeniu zaawansowanych opłat automatycznych użytkownicy nie są już mo
 
 Po włączeniu zaawansowanych opłat automatycznych, istniejące **Parametry sieci sprzedaży komercyjnej** dla **Kodu opłat transportowych** i **Zwrotu opłat transportowych** nie są używane. Parametry te mają zastosowanie tylko wtedy jeśli parametr **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych** ma wartość **Nie**.
 
-Przed włączeniem tej funkcji należy upewnić się, że pracownicy przeszli szkolenie, ponieważ ta funkcja zmienia przepływ procesu biznesowego w odniesieniu do metody obliczania opłat transportowych i innych i ich dodawania do zamówień sprzedaży POS. Upewnij się, że rozumiesz wpływ przepływu procesu na tworzenie transakcji w POS. W przypadku zamówień składanych przez biuro obsługi i w witrynie e-Commerce wpływ włączania zaawansowanych automatycznych opłat dodatkowych jest minimalny. Aplikacje biura obsługi i e-Commerce nadal będą zachowywać się tak samo jak wcześniej w odniesieniu do tabel automatycznych opłat dodatkowych do obliczenia dodatkowych opłat za zamówienia. Użytkownicy kanału biura obsługi będą nadal mieć możliwość ręcznej edycji dowolnych obliczonych przez system automatycznych opłat dodatkowych na poziomie nagłówka lub wiersza lub ręcznego dodawania dodatkowych opłat różnych na poziomie nagłówka lub wiersza.
+Przed włączeniem tej funkcji należy upewnić się, że pracownicy przeszli szkolenie, ponieważ uruchomienie tej funkcji zmienia przepływ procesu biznesowego w odniesieniu do metody obliczania opłat transportowych i innych i ich dodawania do zamówień sprzedaży POS. Upewnij się, że rozumiesz wpływ przepływu procesu na tworzenie transakcji w POS. W przypadku zamówień składanych przez biuro obsługi i w witrynie e-Commerce wpływ włączania zaawansowanych automatycznych opłat dodatkowych jest minimalny. Aplikacje biura obsługi i e-Commerce nadal będą zachowywać się tak samo jak wcześniej w odniesieniu do tabel automatycznych opłat dodatkowych do obliczenia dodatkowych opłat za zamówienia. Użytkownicy kanału biura obsługi będą nadal mieć możliwość ręcznej edycji dowolnych obliczonych przez system automatycznych opłat dodatkowych na poziomie nagłówka lub wiersza lub ręcznego dodawania dodatkowych opłat różnych na poziomie nagłówka lub wiersza.
 
 ## <a name="additional-pos-operations"></a>Dodatkowe operacje POS
 
@@ -89,7 +89,7 @@ Konfigurowanie dwóch różnych automatycznych opłat na poziomie nagłówka. Sk
 
 Dla opłaty za dostawę lądową w sekcji wierszy na stronie **Opłaty automatyczne** zdefiniuj opłatę $10.00. , która zostanie zastosowana do zleceń o wartości od $0,01 do $100. Utwórz kolejny wiersz opłaty dla zamówień o wartości powyżej $100.01, dla których nie będą naliczane żaden opłaty.
 
-![Przykład opłat automatycznych](media/headerchargesexample.png)
+![Przykład dwóch tabel opłat automatycznych](media/headerchargesexample.png)
 
 Dla opłaty za dostawę lotniczą w sekcji wierszy na stronie opłat automatycznych zdefiniuj opłatę $20.00, która zostanie zastosowana do wszystkich zleceń (o wartości od $0,01 to $9 999 999).
 
@@ -119,7 +119,7 @@ Wybierz kolejno opcje **Rozrachunki z odbiorcami \> Ustawienia opłat \> Opłaty
 
 W menu rozwijanym **Poziom** wybierz wartość **Wiersz** i utwórz nowy rekord automatycznej opłaty dodatkowej dla wszystkich odbiorców i dla konkretnego produktu lub grupy produktów, w których będzie naliczana opłata konfiguracyjna.
 
-![Przykład opłat automatycznych](media/linechargesexample.png)
+![Przykład tabeli automatycznego naliczania opłat na poziomie wiersza](media/linechargesexample.png)
 
 Wyślij opłaty do bazy danych kanału/Commerce Scale Unit, aby można było używać ich w POS za pomocą zadania **Harmonogram dystrybucji 1040**.
 
@@ -173,7 +173,7 @@ Operacja **Dodaj opłaty z wiersza** musi być skonfigurowana w [układzie ekran
 
 Do wykonania tego scenariusza w aplikacji POS, użytkownik POS musi utworzyć transakcję sprzedaży w zwykły sposób, dodając produkty i wszelkie inne konfiguracje do sprzedaży. Przed pobieraniem płatności użytkownik powinien wybrać określony wiersz, w którym będą stosowane opłaty z listy pozycji POS i wykonać operację **Dodaj opłatę na poziomie wiersza**. Użytkownik zobaczy monit o wybranie kod opłaty i wprowadzenie wartości opłat. Gdy użytkownik zakończy ten proces, opłata zostanie połączona z wierszem i dodana do sumy zamówienia jako opłata na poziomie wiersza. Użytkownik może powtórzyć ten proces, aby dodać opłaty dodatkowe na poziomie wiersza do innych wierszy towarów w ramach transakcji, jeśli jest taka potrzeba.
 
-Ten sam proces można zastosować w biurze obsługi za pomocą funkcji „Obsługa opłat” dostępnych na liście menu rozwijanego **Finanse** w sekcji **Wiersze zamówienia sprzedaży** na stronie **Zamówienie sprzedaży**. Spowoduje to otwarcie strony **Obsługa opłat**, na której użytkownik może dodać do transakcji nową opłatę specyficzną dla wiersza.
+Ten sam proces można zastosować w biurze obsługi za pomocą funkcji „Obsługa opłat” dostępnych na liście menu rozwijanego **Finanse** w sekcji **Wiersze zamówienia sprzedaży** na stronie **Zamówienie sprzedaży**. Wybranie tej opcji spowoduje otwarcie strony **Obsługa opłat**, na której użytkownik może dodać do transakcji nową opłatę specyficzną dla wiersza.
 
 ## <a name="additional-features"></a>Dodatkowe funkcje
 

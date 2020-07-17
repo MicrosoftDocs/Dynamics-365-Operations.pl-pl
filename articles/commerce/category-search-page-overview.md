@@ -1,9 +1,9 @@
 ---
-title: Omówienie domyślnej strony docelowej kategorii i strony wyników wyszukiwania
+title: Domyślna strona docelowa kategorii i strona wyników wyszukiwania – omówienie
 description: W tym temacie omówiono domyślną stronę docelową kategorii i stronę wyników wyszukiwania w Dynamics 365 Commerce.
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 17746d2923ab84311253c47647c0020807bdb75c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002503"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527475"
 ---
-# <a name="overview-of-default-category-landing-page-and-search-results-page"></a>Omówienie domyślnej strony docelowej kategorii i strony wyników wyszukiwania
-
+# <a name="default-category-landing-page-and-search-results-page-overview"></a>Domyślna strona docelowa kategorii i strona wyników wyszukiwania – omówienie
 
 [!include [banner](includes/banner.md)]
 
@@ -96,7 +95,13 @@ Następujące składniki są istotne dla strony wyników wyszukiwania
 - **Podział na strony** umożliwia osobom odwiedzającym witrynę przechodzenie z jednej strony skategoryzowanych wyników produktów na inną stronę.
 - **Licznik całkowity** podaje całkowitą liczbę produktów zdefiniowanych w kategorii i wyników pasujących do kryteriów wyszukiwania.
 
+>[!NOTE]
+>Te możliwości wyszukiwania z wykorzystaniem chmury są dostępne począwszy od wersji 10.0.8. Upewnij się, że w menu **Parametry Commerce > Konfigurowanie parametrów** istnieje wpis o wartości „true” dla parametru „ProductSearch.UseAzureSearch”. 
+![Parametry konfiguracji dla wyszukiwania z wykorzystaniem chmury](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
+
+[Omówienie wyszukiwania w chmurze](cloud-powered-search-overview.md)
 
 [Omówienie strony głównej](quick-tour-home-page.md)
 

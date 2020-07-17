@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346475"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530312"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Zasada rezerwacji wymiarów na poziomie magazynu elastycznego
 
@@ -186,7 +186,7 @@ W tym przukładzie trzeba mieć zainstalowane dane demonstracyjne oraz musi być
 
     Ilość **10** dla numeru partii **B11** jest teraz pobierana dla wiersza zamówienia sprzedaży i umieszczona w lokalizacji **Baydoor**. W tym momencie jest gotowy do załadunku na samochód i wysyłany do adresu odbiorcy.
 
-## <a name="exception-handling-of-warehouse-work-thas-has-order-committed-batch-numbers"></a>Zarządzanie wyjątkami pracy magazynowej z numerami partii zatwierdzonych dla zamówienia
+## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>Zarządzanie wyjątkami pracy magazynowej z numerami partii zatwierdzonych dla zamówienia
 
 Praca w magazynie dla zamówienia pobrania — numery partii zatwierdzonej podlegają tej samej standardowej obsłudze wyjątków magazynowych oraz działaniu zwykłej pracy. Na ogół można anulować otwartą pracę lub wiersz pracy, ponieważ jest zapełniony, ponieważ lokalizacja użytkownika jest zapełniona, może być ona pobrana i można ją zaktualizować z powodu przesunięcia. Podobnie pobrana ilość pracy, która została już zakończona, może zostać zmniejszona lub praca może zostać wycofana.
 

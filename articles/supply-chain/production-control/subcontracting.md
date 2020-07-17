@@ -15,11 +15,11 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 05e6ccdce21ccc5f3e83ad860163cccadcea2edc
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
+ms.sourcegitcommit: edb46dce498df42b09e8f5ad6de00f86c8022dfa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2020
+ms.lasthandoff: 07/03/2020
 ms.locfileid: "3346429"
 ---
 # <a name="subcontracting"></a>Podwykonawstwo

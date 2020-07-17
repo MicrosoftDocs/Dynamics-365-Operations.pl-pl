@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie pracownikami magazynu
-description: Ten artykuł opisuje sposób korzystania z Dynamics 365 Supply Chain Management - aplikacja Magazynowanie do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach.
+description: Ten artykuł opisuje sposób korzystania z aplikacji magazynowej do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach.
 author: perlynne
 manager: tfehr
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b143051ba39c74869d2ec56203ee4f1cda7268a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d8e7790fa8ab8d60d0e5fd8eb470d86d6728091b
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205582"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530036"
 ---
 # <a name="manage-warehouse-workers"></a>Zarządzanie pracownikami magazynu
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł opisuje sposób korzystania z Dynamics 365 Supply Chain Management - aplikacja Magazynowanie do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach.
+Ten artykuł opisuje sposób korzystania z aplikacji magazynowej do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach.
 
 Jeśli używasz funkcji zarządzania magazynem, wszystkie operacje pracownika magazynu są określane jako *praca*. Praca, taka jak pobieranie, przenoszenie i zliczanie dostępnych zapasów, jest rejestrowana przy użyciu urządzeń przenośnych. Zanim pracownik magazynu będzie mógł wykonać pracę, musi być powiązany z pracownikiem w dziale Zasoby ludzkie. Każde konto **pracownika** może mieć wielu powiązanych użytkowników pracy w magazynie. Ci użytkownicy pracy mogą pracować w różnych magazynach i mieć różne poziomy dostępu do rozmaitych menu urządzeń przenośnych. Użytkowników pracy w magazynie można traktować jak logowanie wielokrotne dla wybranego pracownika. Każdy użytkownik pracy w magazynie ma domyślny magazyn i określone przepływy pracy są używane w pozycjach menu dostępnych dla danego użytkownika pracy. 
 

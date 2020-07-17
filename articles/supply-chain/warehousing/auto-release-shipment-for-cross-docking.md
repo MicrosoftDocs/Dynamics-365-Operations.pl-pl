@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d11db378be6b2ba845de0ac0a2252092a50bc96a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2d8d6e67040f19cac99f8e0164296ef49768496e
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201486"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530243"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatyczne zwalnianie wysyłki do przeładunku kompletacyjnego
 
@@ -164,7 +164,7 @@ Aby przeprowadzić przeładunek kompletacyjny ilości towarów gotowych do lokal
 8. Na stronie **Zlecenie produkcyjne**, w okienku akcji, na karcie **Zlecenie produkcyjne**, w grupie **Proces** wybierz pozycję **Szacowanie**, a następnie kliknij przycisk **OK**. Zlecenie zostanie oszacowane, a ilość surowca — zarezerwowana na potrzeby produkcji.
 9. W okienku akcji, na karcie **Zlecenie produkcyjne**, w grupie **Proces** wybierz pozycję **Zwolnienie**, a następnie kliknij przycisk **OK**. Dla surowców zostanie utworzona praca pobrania z magazynu.
 10. Otwórz i przejrzyj pracę. W okienku akcji, na karcie **Magazyn**, w grupie **Ogólne** wybierz pozycję **Szczegóły pracy**. Zanotuj identyfikator pracy.
-11. Otwórz aplikację Dynamics 365 for Finance and Operations — Magazynowanie, aby uruchomić pracę w magazynie 51.
+11. Zaloguj się do aplikacji magazynowania, aby uruchomić pracę w magazynie 51.
 12. Przejdź do pozycji **Produkcja** \> **Pobranie produkcji**.
 13. Wprowadź identyfikator pracy w celu rozpoczęcia i ukończenia pobierania surowca. 
 
