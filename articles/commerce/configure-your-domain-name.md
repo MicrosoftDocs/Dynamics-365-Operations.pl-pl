@@ -3,7 +3,7 @@ title: Konfigurowanie nazwy domeny
 description: W tym temacie opisano sposób konfigurowania nazwy domeny dla witryny Microsoft Dynamics 365 w handlu elektronicznym.
 author: psimolin
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2ad9ca3aee21301ef6d830d7b29982a45cd53f60
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: afc8c7fffbded82be32357bdeb30546afc8b0957
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096827"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533305"
 ---
 # <a name="configure-your-domain-name"></a>Konfigurowanie nazwy domeny
 
@@ -44,8 +44,6 @@ Aby skojarzyć nowe domeny ze środowiskiem e-Commerce po zainicjowaniu usługi 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
-
-[Konfigurowanie kanału sklepu internetowego](online-stores.md)
 
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 

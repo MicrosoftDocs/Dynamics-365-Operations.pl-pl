@@ -3,7 +3,7 @@ title: Konfigurowanie kanału internetowego
 description: W tym temacie opisano, jak dodać utworzyć nowy kanał online w Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9b7a2b8fd157df8b39e9e227d188a3802cacb4e3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0d803b23f9de9daf624537d1d1ef30f17dc05fea
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002434"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533328"
 ---
 # <a name="set-up-an-online-channel"></a>Konfigurowanie kanału internetowego
 
@@ -35,9 +35,9 @@ W tym temacie opisano, jak dodać utworzyć nowy kanał online w Microsoft Dynam
 
 Moduł Dynamics 365 Commerce obsługuje wiele kanałów sprzedaży detalicznej. Te kanały sprzedaży detalicznej obejmują sklepy internetowe, internetowe serwisy sprzedażowe i sklepy sieci sprzedaży (nazywane także sklepami tradycyjnymi). Sklepy internetowe dają klientom możliwość zakupu produktów w sklepie internetowym detalisty oprócz sklepów detalicznych.
 
-Aby utworzyć sklep internetowy w systemie commerce, należy najpierw utworzyć kanał online. 
+Aby utworzyć sklep internetowy w systemie commerce, należy najpierw utworzyć kanał online. Przed utworzeniem nowego kanału online, należy upewnić się, że zakończono [Konfigurowanie wstępnie wymaganych ustawień kanału](channels-prerequisites.md).
 
-Przed utworzeniem nowego kanału online, należy upewnić się, że zakończono [Konfigurowanie wstępnie wymaganych ustawień kanału](channels-prerequisites.md).
+Aby można było utworzyć nową witrynę, w Commerce musi być utworzony co najmniej jeden sklep internetowy. Aby uzyskać więcej informacji, przejrzyj temat [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md).
 
 ## <a name="create-and-configure-a-new-online-channel"></a>Utwórz i skonfiguruj nowy kanał online
 

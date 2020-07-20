@@ -3,7 +3,7 @@ title: Zarządzanie funkcjami — omówienie
 description: W tym temacie opisano funkcję zarządzania funkcjami i sposób jego używania.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/12/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
+ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456604"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3499626"
 ---
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
@@ -140,6 +140,10 @@ Poniższe przykłady opisują, co się dzieje w przypadku importowania danych pr
 ## <a name="feature-management-and-flighting"></a>Zarządzanie funkcją i dystrybucja testowa
 
 Zarządzanie funkcjami umożliwia kontrolowanie funkcji, które są dostarczane w poszczególnych wersjach. Dystrybucja testowa umożliwia Microsoft Teams udostępnianie funkcji ograniczonej liczbie klientów, dzięki czemu funkcje mogą być testowane i weryfikowane bez wpływu na wszystkich klientów. Zarządzanie funkcjami nie kontroluje dystrybucji testowej żadnych funkcji.
+
+## <a name="new-features-are-optional-for-12-months"></a>Nowe funkcje są opcjonalne przez 12 miesięcy
+
+Jeśli zainstalowana zostanie nowa funkcja niekrytyczna, korzystanie z niej jest opcjonalne przez okres 12 miesięcy. Dzięki temu użytkownik i jego organizacja mają czas na zaplanowanie wdrożenia funkcji i przetestowania jej w ramach codziennych operacji. Aby uzyskać więcej informacji, zobacz [Aktualizacje do jednej wersji usługi – często zadawane pytania](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Korzystanie z funkcji Zarządzanie funkcjami w celu włączania funkcji ISV lub funkcji niestandardowych
 

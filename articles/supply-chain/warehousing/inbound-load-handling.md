@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 709a75a259b1f8daa5b72e76b56942573c403f43
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.openlocfilehash: 9a030f2e219c7c389d6255254545f3f895eff75b
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261364"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530588"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
 
@@ -66,7 +66,7 @@ Gdy ładunek przychodzący po raz pierwszy dociera do magazynu, pracownicy magaz
 
 - **Menu urządzenia przenośnego jest skonfigurowane do wsparcia odbierania ładunku**
 
-    [Dynamics 365 for Finance and Operations – aplikacja Magazynowanie](install-configure-warehousing-app.md) na urządzenia przenośne obsługuje następujące procesy tworzenia pracy:
+    [Aplikacja magazynowa](install-configure-warehousing-app.md) na urządzenia mobilne obsługuje tylko następujące procesy tworzenia pracy:
 
     - Odbierana pozycja ładunku
     - Odbierana i odłożona pozycja ładunku
@@ -285,7 +285,7 @@ Aby pracować z tymi scenariuszami przy użyciu określonych przykładowych reko
 
 Zanim pracownik etatowy magazynu będzie mógł skorzystać z urządzenia przenośnego w celu zarejestrowania zapasów przychodzących, które są połączone z ładunkiem, należy utworzyć w tym celu element menu urządzenia przenośnego.
 
-W tej sekcji zostanie utworzony element menu urządzenia przenośnego i dodany do istniejącego menu. Pracownik magazynu może następnie wybrać pozycję menu w aplikacji Magazynowanie.
+W tej sekcji zostanie utworzony element menu urządzenia przenośnego i dodany do istniejącego menu. Pracownik magazynu może następnie wybrać pozycję menu w aplikacji magazynowania.
 
 1. Przejdź do **Zarządzanie magazynem \> Ustawienia \> Urządzenie przenośne \> Elementy menu urządzenia przenośnego** i upewnij się, że menu urządzenia przenośnego zawiera element menu z następującymi ustawieniami:
 

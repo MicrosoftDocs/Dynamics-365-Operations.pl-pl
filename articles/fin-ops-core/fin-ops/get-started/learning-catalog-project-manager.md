@@ -11,12 +11,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7521784931cc4aac5a7e7729d045e501cba9460e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: b310b787906850a60c9e2a453ce2d13330dad212
+ms.sourcegitcommit: 26399aafe2b02732c79073455f5bc9ac07bab4b4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279067"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "3502120"
 ---
 # <a name="implementation-project-manager-learning-catalog"></a>Implementacja katalogu szkoleń w Menedżerze projektu
 
@@ -29,7 +29,7 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | Zawartość | opis  | Format  | Długość    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
 | [Zapoznaj się z biznesową wartością Microsoft Dynamics 365 i Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Czy chcesz poznać aplikacje biznesowe? Być może nie wiadomo, gdzie zacząć z Microsoft Dynamics 365 i aplikacjami Power Platform? Dowiedz się, jak możliwości aplikacji biznesowych umożliwiają przekształcanie firmy. | Bezpłatna, samodzielnie realizowana ścieżka nauki online   | 7 godzin   |
-| [Dynamics 365 i Informacje podstawowe Power Platform](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/ | Czy chcesz poznać aplikacje biznesowe? Rozpocznij od tej ścieżki nauki, aby zobaczyć, jak są używane aplikacje Dynamics 365. Informacje o pojęciach chmur, Power Platform oraz sposobach rozpoczynania pracy z aplikacjami Dynamics 365. | Bezpłatna, samodzielnie realizowana ścieżka nauki online   | 5.5 godzin |
+| [Dynamics 365 i Power Platform Fundamentals](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Czy chcesz poznać aplikacje biznesowe? Rozpocznij od tej ścieżki nauki, aby zobaczyć, jak są używane aplikacje Dynamics 365. Informacje o pojęciach chmur, Power Platform oraz sposobach rozpoczynania pracy z aplikacjami Dynamics 365. | Bezpłatna, samodzielnie realizowana ścieżka nauki online   | 5.5 godzin |
 | [Rozpoczęcie korzystania z aplikacji Finance and Operations](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)  | Dowiedz się, jak z pomocą aplikacji Finance and Operations w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji. Jako pierwszy etap kariery zawodowej pracy z aplikacjami Finance and Operations, musisz zapoznać się z jego funkcjami, niezależnie od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online   | 2 godzin   |
 | [Zanim kupisz](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy)  | Przeglądnij wskazówki krok po kroku, czy nadal oceniasz Finance and Operations, czy jesteś gotowy na zakup.| Dokumentacja  |           |
 | [Plan wydań](https://docs.microsoft.com/dynamics365/release-plans/)  | Dowiedz się więcej o najnowszych możliwościach i ulepszeniach w Dynamics 365  | Dokumentacja  |           |

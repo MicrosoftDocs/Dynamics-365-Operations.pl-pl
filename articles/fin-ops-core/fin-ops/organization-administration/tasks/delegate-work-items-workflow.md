@@ -1,9 +1,9 @@
 ---
 title: Delegowanie elementów pracy w przepływie pracy
 description: Jeśli nie będzie Cię w pracy lub z innego powodu nie będziesz w stanie zająć się elementami pracy, możesz delegować, czyli przepisać, swoje elementy pracy do innych użytkowników.
-author: jasongre
+author: ChrisGarty
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 06/23/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: jasongre
+ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aceafbe8dfcdac2ac7b97a4f77a9a30599c60c51
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7d98d84b89f1f3322a9c896b74b63a3b6425b13b
+ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140589"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3515771"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegowanie pozycji pracy w przepływie pracy
 
@@ -30,6 +30,16 @@ ms.locfileid: "3140589"
 ## <a name="manually-delegate-a-work-item"></a>Ręczne delegowanie elementu pracy
 
 Aby delegować pojedynczy element pracy, zaznacz opcję **Delegowanie** w menu **przepływu pracy**, a następnie wprowadź użytkownika, który ma być delegowany, wraz z komentarzem. To spowoduje ponowne przypisanie elementu pracy do tego użytkownika, umożliwiającego mu wykonywanie go.
+
+## <a name="manually-delegate-multiple-work-items"></a>Ręczne delegowanie wielu elementów roboczych
+
+Wiele elementów roboczych można delegować razem z poziomu strony **Przypisane do mnie elementy robocze**. Następujące typy przepływów pracy kwalifikują się do delegacji grupowej: przepływ pracy zatwierdzania umowy zakupu, przepływ pracy zamówienia zakupu, przegląd zapotrzebowania na zakup i przepływ pracy faktury od dostawcy. Funkcja **Delegowania wielu elementów roboczych** jest domyślnie wyłączona i można ją włączyć w menu **Obszary robocze > Zarządzanie funkcjami**. Aby uzyskać pomoc we włączaniu tej funkcji, skontaktuj się z administratorem systemu.
+1.  Przejdź do **Typowe > Typowe > Elementy pracy > Elementy pracy przypisane do mnie**.
+2.  Wybierz elementy pracy, które będą delegowane.
+3.  Kliknij menu **Delegowanie elementów roboczych**.
+4.  W polu **Użytkownik** wybierz użytkownika, do którego chcesz delegować elementy pracy.
+5.  W polu **Komentarz** wprowadź komentarz wyjaśniający, dlaczego delegujesz elementy pracy.
+6.  Kliknij przycisk **Deleguj elementy pracy**, aby zakończyć delegację elementu pracy.
 
 ## <a name="automatically-delegate-work-items"></a>Automatyczne delegowanie elementów pracy
 

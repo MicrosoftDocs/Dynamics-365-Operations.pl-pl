@@ -3,7 +3,7 @@ title: Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadn
 description: Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych, a następnie ich automatyczne uzgadnianie z transakcjami bankowymi w Microsoft Dynamics 365 Finance. W tym temacie opisano proces uzgadniania.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b37cf8d83c7134ae65da6a885bffeb01d16f9f06
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c13203217af1788fe3b8a6f9bbf805e03b650a0d
+ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179428"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497152"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego
 
@@ -41,9 +41,9 @@ Można przekazać wyciąg bankowy zawierający informacje dla jednego konta lub 
 -   Aby zaimportować jeden plik wyciągu bankowego dla jednego konta, w opcji **Importuj wyciąg obejmujący wiele kont bankowych we wszystkich firmach** ustaw wartość **Nie**, a następnie wybierz konto bankowe skojarzone z wyciągiem. Kliknij przycisk **Przeglądaj**, zaznacz powiązany plik wyciągu bankowego i kliknij przycisk **Przekaż**.
 -   Aby zaimportować jeden plik wyciągu bankowego dla wielu kont, w opcji **Importuj wyciąg obejmujący wiele kont bankowych we wszystkich firmach** ustaw wartość **Tak**. Kliknij przycisk **Przeglądaj**, zaznacz powiązany plik wyciągu bankowego i kliknij przycisk **Przekaż**.
 
-Jeśli któregokolwiek wyciągu w pliku elektronicznym nie można powiązać z kontem bankowym przy użyciu pól identyfikujących, nie zostaną one zaimportowane. Jednak pozostałe wyciągi w pliku nadal można zaimportować. Użytkownik otrzyma komunikat informujący, że import wyciągów bankowych nie powiódł się dla określonych kont bankowych. Należy zauważyć, że użytkownik importujący plik wyciągów bankowych musi mieć dostęp do firmy będącej posiadaczem kont bankowych, których wyciągi chce zaimportować. 
+Jeśli któregokolwiek wyciągu w pliku elektronicznym nie można powiązać z kontem bankowym przy użyciu pól identyfikujących lub jeżeli jest ono powiązane z wieloma kontami bankowymi, nie zostaną one zaimportowane. Jednak pozostałe wyciągi w pliku nadal można zaimportować. Użytkownik otrzyma komunikat informujący, że import wyciągów bankowych nie powiódł się dla określonych kont bankowych. Należy zauważyć, że użytkownik importujący plik wyciągów bankowych musi mieć dostęp do firmy będącej posiadaczem kont bankowych, których wyciągi chce zaimportować. 
 
-Można użyć pliku .zip i przekazać wiele plików wyciągów do programu Finance w jednym procesie. Aby zaimportować wiele plików wyciągów bankowych dla wielu kont, należy połączyć wszystkie pliki wyciągów bankowych w jeden plik zip. W oknie dialogowym **Import wyciągów bankowych** w opcji **Importuj wyciąg obejmujący wiele kont bankowych we wszystkich firmach** ustaw wartość **Tak**. Kliknij przycisk **Przeglądaj**, zaznacz plik zip zawierający pliki wyciągów bankowych i kliknij przycisk **Przekaż**. Proces importu rozpozna plik .zip i przekaże każdy znajdujący się w nim wyciąg, niezależnie od firmy będącej posiadaczem konta bankowego. 
+Można użyć pliku .zip i przekazać wiele plików wyciągów do programu Finance w jednym procesie. Aby zaimportować wiele plików wyciągów bankowych dla wielu kont, należy połączyć wszystkie pliki wyciągów bankowych w jeden plik zip. W oknie dialogowym **Import wyciągów bankowych** w opcji **Importuj wyciąg obejmujący wiele kont bankowych we wszystkich firmach** ustaw wartość **Tak**. Kliknij przycisk **Przeglądaj**, zaznacz plik zip zawierający pliki wyciągów bankowych i kliknij przycisk **Przekaż**. Proces importu rozpozna plik .zip i przekaże każdy znajdujący się w nim wyciąg, niezależnie od firmy będącej posiadaczem konta bankowego.
 
 Dostępna jest opcja **Uzgodnij po imporcie**. Gdy ta opcja ma ustawioną wartość **Tak**, w trakcie przekazywania wyciągu bankowego system automatycznie sprawdza poprawność wyciągu, tworzy nowe uzgodnienie konta bankowego i arkusz oraz uruchamia domyślny zestaw reguł uzgadniania. Ta funkcja automatyzuje proces aż do momentu, gdy transakcje trzeba uzgodnić ręcznie.
 

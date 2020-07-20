@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 5a751b360b2da8f786dd7b8d139e1a0a44052894
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c6598a9ac2beb799ddfc4e3cce182e1281ae8d03
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211981"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530542"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem
 
@@ -107,7 +107,7 @@ Ponadto, gdy towar jest śledzony przez znacznik, istnieje parametr **Metody prz
 **Ilość używane jest śledzenie ilości efektywnej**, znacznik musi zawsze zostać utworzony do każdej przyjmowanej jednostki ilości efektywnej i każdy znacznik musi być zawsze skojarzony z wagą.
 
 Na przykład jednostką ilości efektywnej jest **Opakowanie** i odbierasz jedną paletę ośmiu opakowań. W takim przypadku osiem unikatowych znaczników ilości efektywnej musi zostać utworzonych i waga musi być skojarzona z każdym z tych znaczników. W zależności od znacznika ilości efektywnej przyjmowanej do magazynu można zarejestrować albo wagę wszystkich ośmiu opakowań, a następnie przypisać do każdego z nich wagę uśrednioną, lub można zważyć indywidualnie każde opakowanie.
-W przypadku **użyj znaczników ilości efektywnej podczas zgłaszania funkcji zleceń produkcyjnych jako gotowych** z włączonym elementem menu urządzenia przenośnego zapasy są aktualizowane na podstawie istniejących informacji o znacznikach ilości efektywnej. W rezultacie aplikacja magazynowania nie monituje o przechwytywanie danych znaczników ilości efektywnej jako części raportu produkcji jako zakończonej operacji.
+W przypadku **użyj znaczników ilości efektywnej podczas zgłaszania funkcji zleceń produkcyjnych jako gotowych** z włączonym elementem menu urządzenia przenośnego zapasy są aktualizowane na podstawie istniejących informacji o znacznikach ilości efektywnej. W rezultacie aplikacja magazynowa nie monituje o przechwytywanie danych znaczników ilości efektywnej jako części raportu produkcji jako zakończonej operacji.
 
 **Jeśli śledzenie znaczników ilości efektywnej nie jest używane**, można zarejestrować wagę dla każdego wymiaru (na przykład, dla każdego numeru identyfikacyjnego i wymiaru śledzenia). Alternatywnie waga może być rejestrowana na podstawie poziomu zagregowanego, np. pięciu numerów identyfikacyjnych (palet).
 
@@ -195,7 +195,7 @@ Nie wszystkie przepływy prac obsługują przetwarzanie ilości efektywnej produ
 
 ### <a name="catch-weight-tags"></a>Znaczniki ilości efektywnej
 
-Znacznik ilości efektywnej można utworzyć za pomocą procesu aplikacji magazynu, ręcznie za pomocą formularza, albo stworzony za pomocą procesu jednostki danych. Jeśli znacznik ilości efektywnej jest skojarzony z wierszem dokumentu źródłowego przychodzącego, takim jak wiersz zamówienia zakupu, znacznik zostanie zarejestrowany. Jeśli wiersz jest używany do przetwarzania wychodzącego, znacznik zostanie zaktualizowany jako wysłany.
+Znacznik ilości efektywnej można utworzyć za pomocą procesu aplikacji magazynowej, ręcznie za pomocą formularza, albo stworzony za pomocą procesu jednostki danych. Jeśli znacznik ilości efektywnej jest skojarzony z wierszem dokumentu źródłowego przychodzącego, takim jak wiersz zamówienia zakupu, znacznik zostanie zarejestrowany. Jeśli wiersz jest używany do przetwarzania wychodzącego, znacznik zostanie zaktualizowany jako wysłany.
 
 Oprócz ograniczeń, które obecnie dotyczą produktów w ilości efektywnej, oznakowane produkty w ilości efektywnej mają inne ograniczenia, które obecnie obowiązują.
 

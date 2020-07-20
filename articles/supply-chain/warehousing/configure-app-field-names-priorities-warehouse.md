@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie
-description: W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w aplikacji Dynamics 365 Supply Chain Management.
+title: Konfigurowanie nazw pól aplikacji w aplikacji magazynowej
+description: W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w usłudze Dynamics 365 Supply Chain Management.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 06/20/2017
@@ -19,23 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0390900d97e74bb9fd8deac913b1606cb775aa7c
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 7a4cfe62aa50c423adfd116a81d7962c30b25fcf
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346406"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530496"
 ---
-# <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie
+# <a name="configure-app-field-names-in-the-warehouse-app"></a>Konfigurowanie nazw pól aplikacji w aplikacji magazynowej
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w aplikacji Dynamics 365 Supply Chain Management. 
+W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w usłudze Dynamics 365 Supply Chain Management. 
 
 > [!NOTE]
-> Ten temat dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Magazynowanie to aplikacja umożliwiająca wykonywanie zadań magazynowych. Można zdefiniować i skonfigurować nazwy pól używanych w aplikacji, a także skonfigurować priorytety, do których te nazwy pól powinny być przypisane. W tym temacie wyjaśniono sposób definiowania i konfigurowania nazw i priorytetów tych pól aplikacji magazynowej oraz ich używanie w aplikacji do magazynowania. Aby uzyskać szczegółowe informacje dotyczące konfigurowania połączenia z aplikacją Magazynowanie, skorzystaj z samouczka [Omówienie instalowania i konfiguracji aplikacji Magazynowanie](install-configure-warehousing-app.md).
+> Ten temat dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Magazynowanie to aplikacja umożliwiająca wykonywanie zadań magazynowych. Można zdefiniować i skonfigurować nazwy pól używanych w aplikacji, a także skonfigurować priorytety, do których te nazwy pól powinny być przypisane. W tym temacie wyjaśniono sposób definiowania i konfigurowania nazw i priorytetów tych pól aplikacji magazynowej oraz ich używanie w aplikacji Magazynowanie. Aby uzyskać szczegółowe informacje dotyczące konfigurowania połączenia z aplikacją magazynową, skorzystaj z samouczka [Omówienie instalowania i konfiguracji aplikacji magazynowej](install-configure-warehousing-app.md).
 
-## <a name="configure-warehousing-app-field-names"></a>Konfigurowanie nazw pól aplikacji magazynowej
+## <a name="configure-warehouse-app-field-names"></a>Konfigurowanie nazw pól w aplikacji magazynowej
 
 Gdy używasz aplikacji Magazynowanie na urządzeniu mobilnym, można na stronie **Nazwy pól w aplikacji Magazynowanie** skonfigurować sposób wyświetlania metadanych na urządzeniu. W nowej firmie wybierz opcję **Utwórz konfigurację domyślną**, aby wygenerować wszystkie nazwy pól, które będą używane w przepływach pracy magazynu na urządzeniu, a następnie przypisz do nich preferowany tryb wprowadzania i typ danych wejściowych. Po wygenerowaniu wszystkich nazw pól można wybrać następujące opcje wprowadzania danych:
 
@@ -68,7 +68,7 @@ Gdy używasz aplikacji Magazynowanie na urządzeniu mobilnym, można na stronie 
 </tbody>
 </table>
 
-## <a name="configure-warehousing-app-field-priority"></a>Konfigurowanie priorytetów pól aplikacji magazynowej
+## <a name="configure-warehouse-app-field-priority"></a>Konfigurowanie priorytetu pól w aplikacji magazynowej
 
 Na stronie **Priorytet pola w aplikacji magazynowej** można umieścić nazwy pól w różnych grupach priorytetu. Dzięki temu można zdecydować, które informacje mają być wyświetlane na głównej stronie zadań, gdy pracownicy magazynu wykonują zadania za pomocą aplikacji. Jeśli klikniesz opcję **Utwórz konfigurację domyślną**, zostanie wygenerowany domyślny zestaw grup priorytetu. Można utworzyć dowolną potrzebną liczbę grup priorytetu, ale tylko trzy będą wyświetlane na stronie zadania. Gdy system wysyła metadane do aplikacji, przypisuje każdemu polu względny priorytet w zależności od jego grupy priorytetu, a aplikacja wyświetla na stronie zadania pierwsze trzy grupy priorytetu zawarte w metadanych. Pozostała zawartość metadanych będzie wyświetlana na pomocniczej stronie szczegółów. Poniższa tabela pokazuje przykład pięciu grup priorytetu.
 
@@ -129,10 +129,10 @@ Na przykład gdy pracownik magazynu wykonuje zadanie na urządzeniu przenośnym,
 -   Element
 -   Ilość
 -   Jednostka miary
--   Opis pozycji
+-   Opis towaru
 -   Rozmiar i lokalizacja
 
-Na podstawie priorytetu pól aplikacji do magazynowania skonfigurowanego w tabeli powyżej następujące 3 wiersze informacji będą wyświetlane na stronie zadania:
+Na podstawie priorytetu pól aplikacji magazynowej skonfigurowanego w tabeli powyżej następujące 3 wiersze informacji będą wyświetlane na stronie zadania:
 
 -   Wiersz 1: Towar, Ilość, Jednostka miary
 -   Wiersz 2: Opis towaru
@@ -143,4 +143,4 @@ Pozostałe metadane, na przykład Lokalizacja, nie będą wyświetlane na stroni
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Omówienie instalowania i konfiguracji aplikacji Magazynowanie](install-configure-warehousing-app.md)
+[Omówienie instalowania i konfiguracji aplikacji magazynowej](install-configure-warehousing-app.md)

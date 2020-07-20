@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 481f7787e21cd9a00ed1798d4d2588e93ca73b56
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 3469c8936dd2eaa53e541f0ea684ea1eb12db4cb
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346544"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530128"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Zarządzanie jakością dla procesów magazynowych
 
@@ -46,7 +46,7 @@ Funkcja _Zarządzanie jakością dla procesów magazynowych_ automatycznie gener
 
 Gdy funkcja _Zarządzania jakością dla procesów magazynowych_ jest włączona, zmienia się konfiguracja jednostek kluczowych zarządzania magazynem i zarządzania jakością. Poniższa ilustracja przedstawia informacje o jednostkach, które włączają zlecenia kontroli jakości dla procesów magazynowych. Tekst w nawiasach wskazuje sugerowane działania, gdy zastosowano funkcję zarządzania jakością przed włączeniem funkcji _Zarządzania jakością dla procesów zarządzania magazynem_.
 
-![![Jednostki zarządzania jakością](media/quality-management-entity-diagram.png "Jednostki zarządzania jakością")](media/quality-management-entity-diagram.png "Quality management entities")
+![Jednostki zarządzania jakością](media/quality-management-entity-diagram.png "Jednostki zarządzania jakością")
 
 ## <a name="enablers-the-quality-item-sampling-and-quality-order-work-order-types"></a>Czynniki: typy zlecań pracy Wyrywkowej kontroli jakości towaru i Zlecenie kotroli jakości
 
