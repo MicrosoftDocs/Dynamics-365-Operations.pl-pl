@@ -41,7 +41,7 @@ W jednym z typowych scenariuszy biznesowych dla integracji Microsoft Dynamics 36
 W tym samouczku są używane następujące technologie:
 
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)**— Główne źródło danych dla pracowników, które zostanie wyeksportowane.
-- **[Aplikacje logiki Azure](https://azure.microsoft.com/services/logic-apps/)** — technologia, która zapewnia aranżację i planowanie eksportu cyklicznego.
+- **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** — technologia, która zapewnia aranżację i planowanie eksportu cyklicznego.
 
     - **[Łączniki](https://docs.microsoft.com/azure/connectors/apis-list)** — technologia używana do łączenia aplikacji logiki z wymaganymi punktami końcowymi.
 
@@ -83,7 +83,7 @@ Większość tego ćwiczenia pociąga za sobą utworzenie aplikacji logicznej.
 
     ![Strona tworzenia aplikacji logicznej](media/integration-logic-app-creation-1.png)
 
-2. W konstruktorze aplikacji logicznych należy rozpocząć od pustej aplikacji logicznej.
+2. W programie Logic Apps Designer należy rozpocząć od pustej aplikacji logicznej.
 3. Dodaj [Wyzwalacz harmonogramu cyklu](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) w celu uruchomienia aplikacji logicznej co 24 godziny (lub zgodnie z wybranym harmonogramem).
 
     ![Okno dialogowe harmonogramu](media/integration-logic-app-recurrence-step.png)
@@ -196,7 +196,7 @@ Aby przetestować aplikację logiczną, wybierz przycisk **Uruchom** w projektan
 
 Jeśli zgłoszono błąd dla dowolnego kroku, wybierz krok niepowodzenia w Projektancie i sprawdź dla niego pola **Wejściowe** i **Wyjściowe**. Aby poprawić błędy, należy wykonać debugowanie i dostosować krok do wymagań.
 
-Na poniższej ilustracji przedstawiono działanie projektanta aplikacji logicznych, gdy wszystkie kroki aplikacji logicznej są wykonywane pomyślnie.
+Na poniższej ilustracji przedstawiono działanie programu Logic Apps Designer, gdy wszystkie kroki aplikacji logicznej są wykonywane pomyślnie.
 
 ![Pomyślne uruchomienie aplikacji logicznej](media/integration-logic-app-successful-run.png)
 
