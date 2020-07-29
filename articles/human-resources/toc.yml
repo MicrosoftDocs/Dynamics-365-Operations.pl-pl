@@ -5,6 +5,8 @@
       items:
         - name: Nowości i zmiany w rozwiązaniu Human Resources
           href: hr-admin-whats-new.md
+        - name: 8 lipca 2020 r.
+          href: hr-whats-new-2020-07-08.md
         - name: 25 czerwca 2020 r.
           href: hr-whats-new-2020-06-23.md
         - name: 11 czerwca 2020 r.
@@ -233,7 +235,7 @@
               items:
                 - name: Omówienie sekwencji identyfikatorów
                   href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: Konfigurowanie indywidualnych sekwencji numerów
+                - name: Konfigurowanie indywidualnych sekwencji identyfikatorów
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurowanie sekwencji identyfikatorów za pomocą kreatora
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/human-resources/toc.json
@@ -577,5 +579,7 @@
           items:
             - name: Przegląd samoobsługi dla pracownika etatowego i menedżera
               href: hr-employee-manager-self-service-overview.md
+            - name: Zmień nazwę obszaru roboczego samoobsługi pracownika etatowego
+              href: hr-employee-self-service-workspace-name.md
             - name: Edytuj informacje osobiste
               href: hr-employee-manager-self-service-edit-personal-information.md
