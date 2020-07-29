@@ -922,7 +922,7 @@
                       href: extensibility/change-caption-form.md
                     - name: Modyfikowanie właściwości kontrolki formularza
                       href: extensibility/modify-control-properties.md
-                    - name: Rozszerzanie zakresu sekwencji numerów
+                    - name: Rozszerzanie zakresu sekwencji identyfikatorów
                       href: extensibility/extend-number-sequence-scope.md
                     - name: Dodawanie nowych wymiarów magazynowych
                       href: extensibility/inventory-dimensions.md
@@ -1434,8 +1434,6 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: Eksportowanie użytkowników B2B do usługi Azure AD
               href: sysadmin/implement-b2b.md
-            - name: Automatyzacja procesu
-              href: sysadmin/process-automation.md
             - name: Zabezpieczenia
               items:
                 - name: Zabezpieczenia oparte na rolach
@@ -1458,10 +1456,16 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Przypisywanie użytkowników do ról zabezpieczeń
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Importowanie lub eksportowanie konfiguracji niestandardowych zabezpieczeń za pomocą narzędzia Zarządzanie danymi
+                  href: sysadmin/import-export-customized-security.md
                 - name: Diagnostyka zabezpieczeń dla nagrań zadań
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+                - name: Zasady rozszerzonego zabezpieczenia danych
+                  href: sysadmin/extensible-data-security-policies.md
+                - name: Tworzenie zasad zabezpieczeń
+                  href: sysadmin/create-simple-security-policy.md
             - name: Automatyzacja procesu
-              href: /sysadmin/process-automation.md
+              href: sysadmin/process-automation.md
             - name: Przetwarzanie wsadowe
               items:
                 - name: Omówienie przetwarzania wsadowego
@@ -1582,7 +1586,7 @@
               items:
                 - name: Proces przechodzenia do najnowszej aktualizacji
                   href: migration-upgrade/upgrade-latest-update.md
-                - name: Ścieżki do jednej wersji
+                - name: Ścieżki do usługi One Version
                   items:
                     - name: Samoobsługowe uaktualnianie do najnowszej wersji
                       href: migration-upgrade/self-service-upgrade.md
@@ -1670,7 +1674,7 @@
                   href: user-interface/check-box-tree-controls.md
                 - name: Opcje filtrowania
                   href: user-interface/filtering.md
-                - name: Sterowanie hostem usługi PowerApps
+                - name: Sterowanie hostem usługi Power Apps
                   href: user-interface/powerapps-host-control.md
             - name: Zarządzanie oknami
               items:

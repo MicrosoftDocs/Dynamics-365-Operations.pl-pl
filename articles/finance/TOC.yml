@@ -10,11 +10,11 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
-            - name: Aktualizacje do jednej wersji usługi
+            - name: Aktualizacje usługi One Version
               items:
-                - name: Omówienie aktualizacji do jednej wersji usługi
+                - name: Omówienie aktualizacji usługi One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Aktualizacje do jednej wersji usługi — często zadawane pytania
+                - name: Aktualizacje usługi One Version — często zadawane pytania
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/finance/toc.json
                 - name: 'Zasady dotyczące cyklu życia oprogramowania: wersje chmurowe'
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/finance/toc.json
@@ -34,7 +34,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Automatyzacja zadań danych
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/finance/toc.json
-                - name: Dostarczanie rozwiązań niezależnych dostawców oprogramowania przy użyciu jednej wersji usługi
+                - name: Dostarczanie rozwiązań niezależnych dostawców oprogramowania przy użyciu One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/finance/toc.json
                 - name: Tworzenie i automatyzowanie testów akceptacji użytkownika
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/finance/toc.json
@@ -210,7 +210,7 @@
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
                 - name: Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą puli faktur
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
-                - name: Kopiowanie dostawców przy użyciu udostępnionych sekwencji numerów
+                - name: Kopiowanie dostawców przy użyciu udostępnionych sekwencji identyfikatorów
                   href: accounts-payable/vendor-copy.md
                 - name: Rejestrowanie faktury od dostawcy w arkuszu faktur
                   href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
@@ -1858,7 +1858,7 @@
                           href: localizations/apac-ind-GST-update-state-code-union-territory.md
                         - name: Tworzenie danych głównych GSTIN
                           href: localizations/apac-ind-GST-create-gstin-master.md
-                        - name: Definiowanie numerów GSTIN i sekwencji numerów odwołania
+                        - name: Definiowanie numerów GSTIN i sekwencji identyfikatorów odwołania
                           href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
                         - name: Definiowanie kodów HSN i kodów księgowania usług
                           href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
@@ -2364,7 +2364,7 @@
                   href: localizations/emea-pol-returnable-packages.md
                 - name: Raporty podatków
                   href: localizations/emea-pol-sales-tax-reports.md
-                - name: Konfigurowanie sekwencji numerów według magazynu
+                - name: Konfigurowanie sekwencji identyfikatorów według magazynu
                   href: localizations/emea-pol-number-sequence-warehouses.md
                 - name: Standardowy plik audytu
                   href: localizations/emea-pol-standard-audit-file-saf.md
@@ -2540,12 +2540,14 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: Raporty magazynowe
                       href: localizations/rus-inventory-reports.md
-                    - name: Omówienie profilu zapasów
-                      href: localizations/rus-inventory-profile-overview.md
-                    - name: Konfigurowanie profilu zapasów
-                      hreF: localizations/rus-set-up-inventory-profile.md
-                    - name: Używanie profilu zapasów w dokumentach i kwerendach
-                      href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: Profil zapasów
+                      items:
+                        - name: Omówienie profilu zapasów
+                          href: localizations/rus-inventory-profile-overview.md
+                        - name: Konfigurowanie profilu zapasów
+                          hreF: localizations/rus-set-up-inventory-profile.md
+                        - name: Używanie profilu zapasów w dokumentach i kwerendach
+                          href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Raportowanie
                   items:
                     - name: Raportowanie finansowe
@@ -2700,7 +2702,7 @@
                   href: localizations/noam-usa-year-end-1099-reporting.md
                 - name: Formularz 1099 dla sektora publicznego
                   href: localizations/noam-usa-form-1099-public-sector.md
-        - name: Human resources
+        - name: Human Resources
           items:
             - name: Human Resources — omówienie
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
@@ -3604,7 +3606,7 @@
               items:
                 - name: Omówienie sekwencji identyfikatorów
                   href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurowanie indywidualnych sekwencji numerów
+                - name: Konfigurowanie indywidualnych sekwencji identyfikatorów
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurowanie sekwencji identyfikatorów za pomocą kreatora
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/finance/toc.json

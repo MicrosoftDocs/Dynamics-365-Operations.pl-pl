@@ -8,11 +8,11 @@
           items:
             - name: Zanim kupisz
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
-            - name: Aktualizacje do jednej wersji usługi
+            - name: Aktualizacje usługi One Version
               items:
-                - name: Omówienie aktualizacji do jednej wersji usługi
+                - name: Omówienie aktualizacji usługi One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Aktualizacje do jednej wersji usługi — często zadawane pytania
+                - name: Aktualizacje usługi One Version — często zadawane pytania
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Zasady dotyczące cyklu życia oprogramowania: wersje chmurowe'
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/commerce/toc.json
@@ -32,23 +32,23 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Automatyzacja zadań danych
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/commerce/toc.json
-                - name: Dostarczanie rozwiązań niezależnych dostawców oprogramowania przy użyciu jednej wersji usługi
+                - name: Dostarczanie rozwiązań niezależnych dostawców oprogramowania przy użyciu One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
                 - name: Tworzenie i automatyzowanie testów akceptacji użytkownika
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json
-            - name: Konfigurowanie środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
+            - name: Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
               items:
-                - name: Omówienie środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
+                - name: Omówienie środowiska oceny rozwiązania Dynamics 365 Commerce
                   href: cpe-overview.md
-                - name: Aprowizowanie środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
+                - name: Ustanowienie środowiska oceny rozwiązania Dynamics 365 Commerce
                   href: provisioning-guide.md
-                - name: Konfigurowanie środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
+                - name: Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
                   href: cpe-post-provisioning.md
-                - name: Konfigurowanie BOPIS w środowisku usługi Dynamics 365 Commerce
+                - name: Konfigurowanie BOPIS w środowisku oceny rozwiązania Dynamics 365 Commerce
                   href: cpe-bopis.md
-                - name: Konfigurowanie opcjonalnych funkcji środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
+                - name: Konfigurowanie opcjonalnych funkcji środowiska oceny rozwiązania Dynamics 365 Commerce
                   href: cpe-optional-features.md
-                - name: Często zadawane pytania dotyczące środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
+                - name: Często zadawane pytania dotyczące środowiska oceny rozwiązania Dynamics 365 Commerce
                   href: cpe-faq.md
             - name: Uwagi dotyczące wdrażania
               items:
@@ -72,9 +72,11 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Aplikacje Finance and Operations we Francji
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
+            - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 Commerce
+              href: retail-support.md
             - name: Obsługa uaktualniania i wersji N-1
               items:
-                - name: Obsługa uaktualniania i wersji N-1 w aplikacji Commerce
+                - name: Obsługa uaktualniania i wersji N-1 w rozwiązaniu Commerce
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Instalacja, konfiguracja i migracja jednorazowa we wdrożeniu etapowym (N-1)'
                   href: dev-itpro/n-1-installation-configuration.md
@@ -190,8 +192,10 @@
               items:
                 - name: Omówienie architektury Dynamics 365 Commerce
                   href: commerce-architecture.md
-                - name: Przepływy uwierzytelniania Dynamics 365 Commerce
+                - name: Przepływy uwierzytelniania rozwiązania Dynamics 365 Commerce
                   href: arch-auth-flow.md
+                - name: Wymagania dotyczące wersji składników rozwiązania Dynamics 365 Commerce
+                  href: arch-component-versioning.md
                 - name: Architektura Commerce Scale Unit
                   href: dev-itpro/retail-server-architecture.md
                 - name: Wybieranie topologii w sklepie
@@ -1752,7 +1756,7 @@
               items:
                 - name: Omówienie sekwencji identyfikatorów
                   href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie indywidualnych sekwencji numerów
+                - name: Konfigurowanie indywidualnych sekwencji identyfikatorów
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurowanie sekwencji identyfikatorów za pomocą kreatora
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/commerce/toc.json
@@ -1984,6 +1988,8 @@
                       href: e-commerce-extensibility/create-observable-data-action.md
                     - name: Udostępnij stan w modułach
                       href: e-commerce-extensibility/share-state-across-modules.md
+                    - name: Ustawienia pamięci podręcznej akcji danych
+                      href: e-commerce-extensibility/data-action-cache-settings.md
                     - name: Zastąpienia akcji danych
                       href: e-commerce-extensibility/data-action-overrides.md
                     - name: Punkty zaczepienia akcji danych
