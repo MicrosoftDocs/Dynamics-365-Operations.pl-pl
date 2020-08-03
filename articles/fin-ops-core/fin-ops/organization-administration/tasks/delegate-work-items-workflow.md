@@ -3,7 +3,7 @@ title: Delegowanie elementów pracy w przepływie pracy
 description: Jeśli nie będzie Cię w pracy lub z innego powodu nie będziesz w stanie zająć się elementami pracy, możesz delegować, czyli przepisać, swoje elementy pracy do innych użytkowników.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/23/2020
+ms.date: 07/07/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d98d84b89f1f3322a9c896b74b63a3b6425b13b
-ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
+ms.openlocfilehash: 96777b66645453bc909bd4053e2724a37771d5d6
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3515771"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541092"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegowanie pozycji pracy w przepływie pracy
 
@@ -49,13 +49,15 @@ Jeśli zamierzasz być poza biurem lub nie będziesz mieć możliwości wykonywa
 1. Wybierz kolejno opcje **Wspólne > Ustawienia > Opcje użytkownika**.
 2. Kliknij kartę **Przepływ pracy**. Upewnij się, że sekcja Delegacja została rozwinięta. Aby skonfigurować w systemie automatyczne delegowanie elementów pracy do innych użytkowników, należy utworzyć reguły delegowania, które określają, kiedy wybrane typy elementów pracy są delegowane. Aby utworzyć reguły delegowania, należy wykonać poniższe kroki.  
 3. Kliknij przycisk **Dodaj**.
-4. W polu **Zakres** wybierz opcję.
+4. W polu **Zakres** wybierz opcję:
     - Wszystkie — umożliwia delegowanie wszystkich elementów pracy przypisanych do użytkownika.
-    - Moduł — umożliwia delegowanie tylko elementów pracy związanych z określonym typem przepływu pracy. Jeśli zostanie wybrana ta opcja, należy wybrać typ przepływu pracy w polu Nazwa.
-    - Przepływ pracy — umożliwia delegowanie tylko elementów pracy związanych z określonym przepływem pracy. Jeśli zostanie wybrana ta opcja, należy wybrać przepływ pracy w polu Nazwa.  
-5. W polu **Delegacja** wybierz użytkownika, do którego chcesz delegować elementy pracy. W polach Data/godzina rozpoczęcia i Data/godzina zakończenia określ, kiedy elementy pracy mają być automatycznie delegowane.  
-6. W polu **Data/godzina rozpoczęcia** wprowadź datę i godzinę.
-7. W polu **Data/godzina zakończenia** wprowadź datę i godzinę.
-8. Aby aktywować regułę delegowania, zaznacz pole wyboru **Włączone**. Jeśli w ustawieniu Zakres zaznaczysz wartość **Moduł**, należy wybrać moduł w polu Nazwa. Jeśli w ustawieniu Zakres zaznaczysz wartość **Przepływ pracy**, w polu Nazwa należy wybrać konkretny przepływ pracy, który ma być delegowany.  
-9. W polu **Komentarz** wprowadź komentarz wyjaśniający, dlaczego delegujesz elementy pracy.
-
+    - Moduł — umożliwia delegowanie tylko elementów pracy związanych z określonym typem przepływu pracy. Jeśli zostanie wybrana ta opcja, należy wybrać typ przepływu pracy w polu **Nazwa**.
+    - Przepływ pracy — umożliwia delegowanie tylko elementów pracy związanych z określonym przepływem pracy. Jeśli zostanie wybrana ta opcja, należy wybrać przepływ pracy w polu **Nazwa**.  
+5. W pole **Nazwa**:
+    - Dla zakresu **Modułu** wybierz moduł docelowy.
+    - Dla zakresu **Przepływ pracy** wybierz docelowy przepływu pracy.
+6. W polu **Delegacja** wybierz użytkownika, do którego chcesz delegować elementy pracy. W polach **Data/godzina rozpoczęcia** i **Data/godzina zakończenia** określ, kiedy elementy pracy mają być automatycznie delegowane.  
+7. W polu **Data/godzina rozpoczęcia** wprowadź datę i godzinę.
+8. W polu **Data/godzina zakończenia** wprowadź datę i godzinę.
+9. Aby aktywować regułę delegowania, zaznacz pole wyboru **Włączone**. 
+10. W polu **Komentarz** wprowadź komentarz wyjaśniający, dlaczego delegujesz elementy pracy.

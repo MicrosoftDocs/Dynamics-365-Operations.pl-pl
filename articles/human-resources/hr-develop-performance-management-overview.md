@@ -3,7 +3,7 @@ title: Zarządzanie wydajnością
 description: Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom.
 author: andreabichsel
 manager: AnnBe
-ms.date: 12/11/2019
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6147b5d92381d76c572f8a10e52c9ed00225e7eb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4786717826592973d3b049c4aa5ca615332d5bc6
+ms.sourcegitcommit: 98cfbb42fc556e1afcb2fab50d8dff0ae2b7aa67
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430447"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "3609779"
 ---
 # <a name="performance-management"></a>Zarządzanie wydajnością
 
@@ -145,7 +145,7 @@ Na stronie Miary można tworzyć standardowe miary, które będą używane na st
 
 ### <a name="performance-journal-source-types"></a>Typy źródeł arkusza wydajności
 
-Typy źródeł arkusza wydajności opisują, skąd pochodzą arkusze wydajności. Można sprawdzić, czy element arkusza będzie wyświetlany domyślnie tylko menedżerowi, tylko pracownikowi czy menedżerowi i pracownikowi. Można również włączyć lub wyłączyć funkcję Wyślij pochwałę, zmieniając wartość typu źródła Pochwała. Na obecnym etapie rozwoju programu nie można wyłączać innych typów źródeł.
+Typy źródeł arkusza wydajności opisują, skąd pochodzą arkusze wydajności. Można sprawdzić, czy element arkusza będzie wyświetlany domyślnie tylko menedżerowi, tylko pracownikowi czy menedżerowi i pracownikowi. Na obecnym etapie rozwoju programu nie można wyłączać typów źródeł.
 
 ### <a name="review-types"></a>Typy przeglądów
 

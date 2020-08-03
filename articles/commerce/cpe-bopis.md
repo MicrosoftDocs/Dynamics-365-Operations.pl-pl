@@ -1,9 +1,9 @@
 ---
-title: Konfigurowanie modułu zakup online, odbiór w sklepie (BOPIS) w środowisku usługi Dynamics 365 Commerce
-description: W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku Microsoft Dynamics 365 Commerce po jego zainicjowaniu.
+title: Konfigurowanie BOPIS w środowisku oceny usługi Dynamics 365 Commerce
+description: W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku oceny Microsoft Dynamics 365 Commerce po jego zainicjowaniu.
 author: rubendel
 manager: annbe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 956d66d09885d4d54655ce25b3aa7ba6a9c34cf4
-ms.sourcegitcommit: dfef2faf881b2db1bd0f016df36e2b838105312b
+ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3282803"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599803"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-environment"></a>Konfigurowanie modułu zakup online, odbiór w sklepie (BOPIS) w środowisku usługi Dynamics 365 Commerce
-
+# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie BOPIS w środowisku oceny usługi Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku Microsoft Dynamics 365 Commerce po zainicjowaniu środowiska.
+W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku oceny Microsoft Dynamics 365 Commerce po zainicjowaniu środowiska.
 
 ## <a name="prerequisite"></a>Wymaganie wstępne
 
-Procedury opisane w tym temacie należy wykonać dopiero po zakończeniu aprowizacji i konfiguracji środowiska wersji zapoznawczej usługi Commerce. Aby uzyskać informacje dotyczące sposobu prowizji i konfigurowania środowiska, zobacz [Inicjowaniw środowiska wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md) i [Konfiguracja środowiska wersji zapoznawczej Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
+Procedury opisane w tym temacie należy wykonać dopiero po zakończeniu aprowizacji i konfiguracji środowiska oceny wersji zapoznawczej usługi Commerce. Aby uzyskać informacje dotyczące sposobu prowizji i konfigurowania środowiska, zobacz [Inicjowaniw środowiska oceny wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md) i [Konfiguracja środowiska oceny wersji zapoznawczej Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
 
 Po zainicjowaniu obsługi i skonfigurowaniu środowiska Commerce można skorzystać z tego tematu w celu włączenia scenariuszy BOPIS.
 
@@ -71,7 +70,7 @@ Scenariusze BOPIS, które obejmują płatność kartą kredytową, wymagają sta
 5. Pojawi się okno dialogowe uwierzytelniania. Wybierz konto korzystające z adresu e-mail, który był poprzednio skojarzony z pracownikiem **000713 - Andrew Collette**.
 
     > [!NOTE]
-    > Jeśli użytkownik nie jest jeszcze skojarzony z tożsamością pracownika, aktywacja nie powiedzie się. W takim przypadku należy wykonać kroki opisane w sekcji „Kojarzenie pracownika z Twoją tożsamością” w temacie [Konfigurowanie środowiska wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
+    > Jeśli użytkownik nie jest jeszcze skojarzony z tożsamością pracownika, aktywacja nie powiedzie się. W takim przypadku należy wykonać kroki opisane w sekcji „Kojarzenie pracownika z Twoją tożsamością” w temacie [Konfigurowanie środowiska oceny wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
     
 6. Gdy zostanie wyświetlony monit o zarządzanie urządzeniem, wybierz **Tylko ta aplikacja**.
 7. Po zakończeniu aktywacji wybierz opcję **Rozpoczynanie pracy**.
@@ -144,13 +143,13 @@ Aby uzyskać wszystkie ogólne problemy, należy zawsze najpierw zapoznać się 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Dynamics 365 Commerce omówienie środowiska wersji zapoznawczej](cpe-overview.md)
+[Omówienie środowiska oceny usługi Dynamics 365 Commerce](cpe-overview.md)
 
-[Inicjuj środowisko wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md)
+[Ustanowienie środowiska oceny Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfiguruj funkcje opcjonalne środowiska wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-optional-features.md)
+[Konfigurowanie opcjonalnych funkcji środowiska oceny Dynamics 365 Commerce](cpe-optional-features.md)
 
-[Środowisko wersji zapoznawczej Dynamics 365 Commerce— często zadawane pytania](cpe-faq.md)
+[Środowiska oceny usługi Dynamics 365 Commerce — często zadawane pytania](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-06-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 39f18dc92fb01f9a0437f4166c0f08f8d6b1b81b
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: cba6e48899ec39fc4de6656f8151a42b8aa43261
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456627"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555202"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-11-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (11 czerwiec 2020)
 
@@ -95,3 +95,10 @@ Pola można uczynić obowiązkowymi za pomocą personalizacji. Ta funkcja będzi
 ## <a name="configure-the-name-of-employee-self-service"></a>Konfigurowanie nazwy Samoobsługi pracownika etatowego
 
 Nowa opcja będzie dostępna w parametrach modułu Human Resources w celu zaktualizowania nazwy Samoobsługowego obszaru roboczego pracownika do Samoobsługi. 
+
+## <a name="see-also"></a>Informacje dodatkowe
+
+[Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)</br>
+[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
+[Zarządzanie funkcjami](hr-admin-manage-features.md)

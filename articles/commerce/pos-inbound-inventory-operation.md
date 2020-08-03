@@ -3,7 +3,7 @@ title: Operacja zapasów przychodzących w punkcie sprzedaży
 description: W tym temacie opisano możliwości przychodzących operacji magazynowych w punkcie sprzedaży (POS).
 author: hhaines
 manager: annbe
-ms.date: 03/12/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: b212906dcf037171af264c60720f361215eed599
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: cf3bec8ab0bfafccfe4b2b5b245d00fd6aeff635
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123906"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551608"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Operacja zapasów przychodzących w punkcie sprzedaży
 
@@ -57,6 +57,9 @@ Aby skonfigurować strukturę dokumentów asynchronicznych, należy wykonać nas
 5. Na skróconej karcie **Ogólne** w sekcji **Konfiguracja** ustaw opcję **Ciągłe** na wartość **Nie**, aby upewnić się, że nie występują żadne problemy z wydajnością.
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>Utwórz i Zaplanuj dwa zadania wsadowe dla zadań przetwarzania dokumentów i monitorowania
+
+> [!NOTE]
+> W Commerce w wersji 10.0.13 lub nowszej nie trzeba konfigurować zadań wsadowych za pomocą struktury zadań wsadowych. Procesy wsadowe można konfigurować za pomocą menu **Retail i Commerce > Retail i Commerce — składniki IT**. Aby skonfigurować zadania wsadowe, należy skorzystać z opcji menu **Detaliczny monitor operacji dokumentów** oraz z **Przetwarzanie operacji na dokumentach detalicznych**.
 
 Tworzone zadania wsadowe będą używane do przetwarzania dokumentów, które nie powiodą się lub przekroczą limit czasu. Będą one również używane, gdy liczba aktywnych dokumentów magazynowych, które są przetwarzane z punktu sprzedaży, przekracza wartość skonfigurowaną przez system.
 

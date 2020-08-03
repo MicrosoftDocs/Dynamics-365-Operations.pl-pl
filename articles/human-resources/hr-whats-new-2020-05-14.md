@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d46671f73a75a9ed3a652d76153c923a3542b5f6
-ms.sourcegitcommit: 7c750711e9fe1d3726c6ee650669529684933001
+ms.openlocfilehash: 3ce1aca9cebc5b330f054a11e38b5dfc4fc9109d
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386114"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555178"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (14 maja 2020 r.)
 
@@ -110,3 +110,10 @@ W tym wydaniu rozpoczęto łączenie parametrów zasobów ludzkich z parametrami
 ## <a name="carry-forward-rules"></a>Zasady przenoszenia na następny okres
 
 Można określić typ urlopu przeniesienia do przodu dla sald przeniesionych na następny okres, gdzie są przenoszone korekty do przodu. Jeśli na przykład pracownik przeniósł 10 dni do przodu, można wybrać inny typ urlopu dla tych 10 dni. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Konfigurowanie typów urlopów i nieobecności](hr-leave-and-absence-types.md).
+
+## <a name="see-also"></a>Informacje dodatkowe
+
+[Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)</br>
+[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
+[Zarządzanie funkcjami](hr-admin-manage-features.md)

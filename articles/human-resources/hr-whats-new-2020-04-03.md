@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab732853a2c37338d8003c5f8911c011aa8ffc60
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: 02243b2c75a4f50683a51c1d9d811f2e2a2d413f
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225158"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555058"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-3-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (3 kwietnia 2020)
 
@@ -128,3 +128,10 @@ Jeśli Podgląd dokumentów przechowywanych w SharePoint nie działa, spróbuj w
 3. Aby uruchomić podgląd dokumentu, uzyskaj dostęp do załącznika SharePoint.
 
 4. Zaloguj się przy użyciu konta innego użytkownika, które ma dostęp do załączników i sprawdź, czy podgląd działa zgodnie z oczekiwaniami.
+
+## <a name="see-also"></a>Informacje dodatkowe
+
+[Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)</br>
+[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
+[Zarządzanie funkcjami](hr-admin-manage-features.md)

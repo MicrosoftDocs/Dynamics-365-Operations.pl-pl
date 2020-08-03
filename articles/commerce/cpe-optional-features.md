@@ -1,9 +1,9 @@
 ---
-title: Konfiguruj funkcje opcjonalne środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
-description: W tym temacie opisano sposób konfigurowania funkcji opcjonalnych środowiska wersji zapoznawczej aplikacji Microsoft Dynamics 365 Commerce.
+title: Konfigurowanie opcjonalnych funkcji środowiska oceny usługi Dynamics 365 Commerce
+description: W tym temacie opisano sposób konfigurowania funkcji opcjonalnych środowiska oceny Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,28 +17,25 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057747"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599827"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfiguruj funkcje opcjonalne środowiska wersji zapoznawczej usługi Dynamics 365 Commerce
-
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie opcjonalnych funkcji środowiska oceny usługi Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania funkcji opcjonalnych środowiska wersji zapoznawczej aplikacji Microsoft Dynamics 365 Commerce.
+W tym temacie opisano sposób konfigurowania funkcji opcjonalnych środowiska oceny Microsoft Dynamics 365 Commerce.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Jeśli chcesz ocenić funkcje transakcyjnej poczty e-mail, muszą być spełnione następujące wymagania wstępne:
 
-- Jest dostępny serwer poczty e-mail (serwer Simple Mail Transfer Protocol \[SMTP\]), który może być używany z poziomu subskrypcji platformy Microsoft Azure, w której jest inicjowane środowisko wersji zapoznawczej.
+- Jest dostępny serwer poczty e-mail (serwer Simple Mail Transfer Protocol \[SMTP\]), który może być używany z poziomu subskrypcji platformy Microsoft Azure, w której jest inicjowane środowisko oceny.
 - Masz dostęp do w pełni kwalifikowanej nazwy (FQDN)/adresu IP serwera, numeru portu SMTP oraz szczegółów uwierzytelniania.
-
-Jeśli chcesz ocenić funkcje zarządzania cyfrowymi składnikami majątku przez pozyskanie nowych obrazów obsługi wielokanałowej, musisz mieć dostępną nazwę dzierżawy systemu zarządzania zawartością (CMS). Instrukcje dotyczące znajdowania tej nazwy podano w dalszej części tego tematu. >>>(Pyt.: Gdzie są instrukcje?)
 
 ## <a name="configure-the-image-back-end"></a>Konfigurowanie zaplecza obrazu
 
@@ -47,9 +44,9 @@ Jeśli chcesz ocenić funkcje zarządzania cyfrowymi składnikami majątku przez
 > [!NOTE]
 > Aby można było wykonać tę procedurę, należy wykonać kroki opisane w części [Konfigurowanie witryny w usłudze Commerce](cpe-post-provisioning.md#set-up-your-site-in-commerce).
 
-1. Zaloguj się do narzędzia do zarządzania witryną Commerce przy użyciu adresu URL zanotowanego podczas inicjowania usługi e-Commerce w trakcie aprowizacji (zobacz [Inicjowanie usługi e-Commerce](provisioning-guide.md#initialize-e-commerce)).
+1. Zaloguj się do konstruktora witryny Commerce przy użyciu adresu URL zanotowanego podczas inicjowania usługi handlu elektronicznego w trakcie aprowizacji (zobacz [Inicjowanie usługi handlu elektronicznego](provisioning-guide.md#initialize-e-commerce)).
 1. Otwórz witrynę **Fabrikam** .
-1. W menu po lewej stronie wybierz pozycję **Składniki majątku**.
+1. W menu po lewej stronie wybierz pozycję **Biblioteka multimediów**.
 1. Wybierz dowolny składnik majątku dla pojedynczego obrazu.
 1. W inspektorze właściwości po prawej stronie znajdź właściwość **Publiczny adres URL**. Wartość to adres URL. Oto przykład:
 
@@ -63,22 +60,22 @@ Jeśli chcesz ocenić funkcje zarządzania cyfrowymi składnikami majątku przez
 
 ### <a name="update-the-media-base-url"></a>Aktualizowanie podstawowego adresu URL obiektu multimedialnego
 
-1. Zaloguj się w Dynamics 365 Commerce.
+1. Zaloguj się do Commerce headquarters.
 1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Retail i Commerce \> Ustawienia kanału \> Profile kanału**.
 1. Wybierz opcję **Edycja**.
 1. W obszarze **Właściwości profilu** zastąp wartość właściwości **Podstawowy adres URL serwera multimediów** utworzonym wcześniej podstawowym adresem URL obiektu multimedialnego.
-1. Wybierz drugi kanał z listy po lewej stronie w obszarze kanału **domyślnego**.
+1. Wybierz kanał o nazwie **scXXXXXXXXX**.
 1. W obszarze **Właściwości profilu** wybierz opcję **Dodaj**.
 1. Dla dodanej właściwości wybierz pozycję **Podstawowy adres URL serwera multimediów** jako klucz właściwości. Jako wartość właściwości wprowadź podstawowy adres URL obiektu multimedialnego, który został utworzony wcześniej.
 1. Wybierz opcję **Zapisz**.
 
-## <a name="configure-the-email-server"></a>Konfigurowanie serwera poczty e-mail
+## <a name="configure-and-test-the-email-server"></a>Konfigurowanie i testowanie serwera poczty e-mail
 
 > [!NOTE]
 > Wprowadzony tutaj serwer SMTP lub usługa poczty e-mail musi być dostępna z poziomu subskrypcji platformy Azure używanej dla środowiska.
 
-1. Zaloguj się do aplikacji Commerce.
-1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Administrowanie systemem \> Ustawienia \> Poczta e-mail \> Parametry poczty e-mail**.
+1. Zaloguj się do Commerce headquarters.
+1. Korzystając z menu po lewej stronie, przejdź do **Moduły \> Retail and Commerce \> Ustawienia centrali \> Parametry \> Parametry poczty e-mail**.
 1. Na karcie **Ustawienia SMTP** w polu **Serwer poczty wychodzącej** wprowadź nazwę FQDN lub adres IP serwera SMTP lub usługi poczty e-mail.
 1. W polu **Numer portu SMTP** wprowadź numer portu. (Jeśli nie korzystasz z protokołu Secure Sockets Layer \[SSL\] domyślnym numerem portu jest **25**).
 1. Jeśli wymagane jest uwierzytelnianie, wprowadź wartości w polach **Nazwa użytkownika** i **Hasło**.
@@ -92,8 +89,8 @@ Jeśli chcesz ocenić funkcje zarządzania cyfrowymi składnikami majątku przez
 
 Dla każdego zdarzenia transakcyjnego, w ramach którego chcesz wysyłać wiadomości e-mail, musisz zaktualizować szablon wiadomości e-mail za pomocą prawidłowego adresu e-mail nadawcy.
 
-1. Zaloguj się do aplikacji Commerce.
-1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Administrowanie organizacją \> Ustawienia \> Szablony wiadomości e-mail organizacji**.
+1. Zaloguj się do Commerce headquarters.
+1. Korzystając z menu po lewej stronie, przejdź do **Moduły \> Retail and Commerce \> Ustawienia centrali \> Parametry \> Szablony wiadomości e-mail organizacji**.
 1. Wybierz **Pokaż listę**.
 1. Dla każdego szablonu na liście należy wykonać następujące kroki:
 
@@ -104,9 +101,9 @@ Dla każdego zdarzenia transakcyjnego, w ramach którego chcesz wysyłać wiadom
 
 ## <a name="customize-email-templates"></a>Dostosowywanie szablonów wiadomości e-mail
 
-Możesz dostosować szablony wiadomości e-mail, tak aby były używane różne obrazy. Możesz również zaktualizować linki w szablonach, tak aby przenosiły Cię do środowiska wersji zapoznawczej. W poniższej procedurze opisano sposób pobierania szablonów domyślnych, dostosowywania ich i aktualizowania szablonów w systemie.
+Możesz dostosować szablony wiadomości e-mail, tak aby były używane różne obrazy. Możesz również zaktualizować linki w szablonach, tak aby przenosiły Cię do środowiska oceny. W poniższej procedurze opisano sposób pobierania szablonów domyślnych, dostosowywania ich i aktualizowania szablonów w systemie.
 
-1. W przeglądarce internetowej pobierz [plik zip domyślnych szablonów wiadomości e-mail wersji zapoznawczej aplikacji Microsoft Dynamics 365 Commerce](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) na komputer lokalny. Ten plik zawiera następujące dokumenty HTML:
+1. W przeglądarce internetowej pobierz [plik zip domyślnych szablonów wiadomości e-mail oceny aplikacji Microsoft Dynamics 365 Commerce](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) na komputer lokalny. Ten plik zawiera następujące dokumenty HTML:
 
     - Szablon potwierdzenia zamówienia
     - Wystaw szablon karty upominkowej
@@ -156,12 +153,12 @@ Dla każdego produktu w zamówieniu następujące tokeny są wypełniane wartoś
 > [!NOTE]
 > Umieść token **Lista produktów — początek** na początku bloku kodu HTML, który jest powtarzany dla każdego produktu, a token **Lista produktów — koniec** na końcu bloku.
 
-| Nazwa tokena      | Token  |
+| Nazwa tokena      | Token |
 |------------------------|-------|
 | Lista produktów - start   | \<!--%tablebegin.salesline% --\> |
 | Lista produktów - koniec     | \<!--%tableend.salesline%--\> |
 | Nazwa produktu           | %lineproductname% |
-| Opis            | %lineproductdescription% |
+| opis            | %lineproductdescription% |
 | Ilość               | %linequantity% |
 | Cena wiersza jednostki        | %lineprice% (sprawdź) |
 | Wszystkie pozycje w wierszu        | %linenetamount% |
@@ -173,13 +170,15 @@ Dla każdego produktu w zamówieniu następujące tokeny są wypełniane wartoś
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Dynamics 365 Commerce omówienie środowiska wersji zapoznawczej](cpe-overview.md)
+[Omówienie środowiska oceny usługi Dynamics 365 Commerce](cpe-overview.md)
 
-[Inicjuj środowisko wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md)
+[Ustanowienie środowiska oceny Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfiguruj środowisko wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-post-provisioning.md)
+[Konfigurowanie środowiska oceny usługi Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Środowisko wersji zapoznawczej Dynamics 365 Commerce— często zadawane pytania](cpe-faq.md)
+[Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce](cpe-bopis.md)
+
+[Środowiska oceny usługi Dynamics 365 Commerce — często zadawane pytania](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

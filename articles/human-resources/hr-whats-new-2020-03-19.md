@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d6988bb95cf2ffe8146434f4b194d97491952915
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: f636dbd3b0ba59ea6cafbc431af46315210dded1
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3157407"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555268"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-19-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (19 marca 2020 r.)
 
@@ -122,3 +122,9 @@ Następujące funkcje w wersji zapoznawczej są dostępne od 3 lutego 2020 r.:
 
 - **Funkcja w wersji zapoznawczej Zarządzanie świadczeniami** — aby uzyskać więcej informacji, w tym o znanych problemach, zobacz [Omówienie obszaru roboczego Zarządzanie świadczeniami](hr-benefits-management-overview.md).
 
+## <a name="see-also"></a>Informacje dodatkowe
+
+[Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)</br>
+[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
+[Zarządzanie funkcjami](hr-admin-manage-features.md)

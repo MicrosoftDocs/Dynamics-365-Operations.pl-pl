@@ -3,7 +3,7 @@ title: Konfigurowanie właściwości przepływu pracy
 description: W tym temacie wyjaśniono sposób konfigurowania różnych właściwości przepływu pracy.
 author: sericks007
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
-ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
+ms.openlocfilehash: 268448049955170b8eb9e64cbd50416565a041b1
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3199443"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541116"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurowanie właściwości przepływu pracy
 
@@ -91,12 +91,7 @@ Aby określić, kiedy ma być używany konfigurowany przepływ pracy, należy wy
 3. Kliknij opcję **Dodaj warunek**.
 4. Służy do wprowadzania warunku.
 5. Wprowadź wszelkie wymagane dodatkowe warunki.
-6. Aby sprawdzić, czy wprowadzone warunki są poprawnie ustawione, wykonaj następujące czynności:
-
-    1. Kliknij przycisk **Test**.
-    2. Na stronie **Warunek testowy przepływu pracy** w obszarze **Sprawdź poprawność warunku** wybierz rekord.
-    3. Kliknij przycisk **Test**. System oszacuje rekord i określi, czy rekord spełnia określone warunki. Na przykład jeśli tworzysz przepływ pracy zapotrzebowania na zakup dla Hiszpanii, obszar **Sprawdź poprawność warunku** na stronie zawiera listę zapotrzebowań na zakup. Kliknięcie przycisku **Test** spowoduje uruchomienie systemowego szacowania wybranego zapotrzebowania na zakup w celu sprawdzenia, czy krajem/regionem jest ES.
-    4. Kliknij przycisk **OK** lub **Anuluj**, aby powrócić do strony **Właściwości**.
+6. Przeprowadź przepływ pracy z niektórymi rekordami docelowymi, aby sprawdzić, czy warunek poprawnie obejmuje i wyklucza rekordy.
 
 ## <a name="specify-when-notifications-are-sent"></a>Określanie, kiedy są wysyłane powiadomienia
 

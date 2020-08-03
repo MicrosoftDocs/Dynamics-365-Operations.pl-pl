@@ -3,7 +3,7 @@ title: Pakiet zawartości Przegląd środków pieniężnych dla usługi Power BI
 description: W tym temacie opisano pakiet zawartość Przegląd środków pieniężnych dostępny dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 author: saraschi2
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7621ca961288af81966e0ac883c6525f89960654
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 6ad99f00438b0f9ccbf84e504219e39aa49f2bc1
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553147"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598140"
 ---
 # <a name="cash-overview-power-bi-content"></a>Pakiet zawartości Przegląd środków pieniężnych dla usługi Power BI
 
@@ -38,10 +38,11 @@ Pakiet zawartości **Przegląd środków pieniężnych** dla usługi Power BI je
 Aby dane były wyświetlane w przeglądach Power BI **środków pieniężnych** i **zarządzania bankami**, należy zastosować następującą konfigurację.
 
 1. Otwórz **Administracja Systemu > Konfiguracja > Parametry Systemu** i ustaw **Walutę systemu** oraz **Kurs wymiany systemu**.
-2. Otwórz **Księga ogólna > Konfiguracja > Księga** i ustaw **Waluta księgowa** oraz **Typ kursu wymiany**.
-2. Zdefiniuj kursy wymiany między walutami Transakcji a Walutą księgową, Walutą księgową a Walutą systemu oraz Walutą księgową oraz Walutami banku. Żeby to zrobić, otwórz **Księga Ogólna > Waluty > Kursy wymiany walut**.
-3. Skonfiguruj i uruchom proces Prognozy Przepływów Pieniężnych. Więcej informacji na temat uruchamiania Prognozy przepływów pieniężnych znajdziesz: [Prognozy przepływów pieniężnych](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
-4. Otwórz **Administracja Systemu > Konfiguracja > Sklep podmiotu** i odśwież łączny wskaźnik **CustCollectionsBIMeasurements**.
+2. Umożliwia przejście do **Księga główna > Kalendarze > Kalendarze obrachunkowe** w celu weryfikacji dat kalendarza obrachunkowego przypisanych do aktywnego okresu.
+3. Otwórz **Księga ogólna > Konfiguracja > Księga** i ustaw **Waluta księgowa** oraz **Typ kursu wymiany**.
+4. Zdefiniuj kursy wymiany między walutami transakcji a walutą księgową, walutą księgową a walutą systemu oraz walutą księgową oraz walutami banku. Żeby to zrobić, otwórz **Księga Ogólna > Waluty > Kursy wymiany walut**.
+5. Skonfiguruj i uruchom proces Prognozy Przepływów Pieniężnych. Więcej informacji na temat uruchamiania Prognozy przepływów pieniężnych znajdziesz: [Prognozy przepływów pieniężnych](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
+6. Otwórz **Administracja Systemu > Konfiguracja > Sklep podmiotu** i odśwież łączny wskaźnik **CustCollectionsBIMeasurements**.
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 

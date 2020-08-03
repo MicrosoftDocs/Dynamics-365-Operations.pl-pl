@@ -3,7 +3,7 @@ title: Obszar roboczy płatności dla dostawców
 description: Ten temat zawiera informacje o komórkowym obszarze roboczym Płatności dla dostawców. Obszar roboczy Płatności dla dostawców zawiera informacje związane z przetwarzaniem płatności dla dostawców.
 author: abruer
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 895725eeac46b5c20a2fb8dd932595a25fe372ce
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: 86091e16712092086a641d79e49afbc5b205e934
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225020"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598116"
 ---
 # <a name="vendor-payments-workspace"></a>Obszar roboczy płatności dla dostawców
 
@@ -34,9 +34,10 @@ Obszar roboczy **Płatności dla dostawców** zawiera informacje związane z prz
 
 Aby dane były wyświetlane w elementach wizualnych **Płatność dostawców** Power BI, należy wykonać następujące czynności konfiguracyjne.
 1. Otwórz **Administracja Systemu > Konfiguracja > Parametry Systemu** i ustaw **Walutę systemu** oraz **Kurs wymiany systemu**.
-2. Przejdź do ustawień **Księga główna > Ustawienie > Księga** aby określić **Waluta rozliczeniowa** i **Typ kursu wymiany**. 
-2. Zdefiniuj kursy wymiany między walutami Transakcji a Walutą księgową, Walutą księgową a Walutą systemu. Żeby to zrobić, otwórz **Księga Ogólna > Waluty > Kursy wymiany walut**.
-3. Przejdź do **Administracja systemu > Ustawienie > Magazynu jednostki**, aby odświeżyć **VendPaymentBIMeasureV2** miarę agregacji. 
+2. Umożliwia przejście do **Księga główna > Kalendarze > Kalendarze obrachunkowe** w celu weryfikacji dat kalendarza obrachunkowego przypisanych do aktywnego okresu.
+3. Przejdź do ustawień **Księga główna > Ustawienie > Księga** aby określić **Waluta rozliczeniowa** i **Typ kursu wymiany**. 
+4. Zdefiniuj kursy wymiany między walutami transakcji a walutą księgową, walutą księgową a walutą systemu. Żeby to zrobić, otwórz **Księga Ogólna > Waluty > Kursy wymiany walut**.
+5. Przejdź do **Administracja systemu > Ustawienie > Magazynu jednostki**, aby odświeżyć **VendPaymentBIMeasureV2** miarę agregacji.
 
 ## <a name="my-work-view"></a>Widok Moja praca
 

@@ -3,7 +3,7 @@ title: Wychodząca operacja magazynowa w punkcie sprzedaży
 description: W tym temacie opisano możliwości wychodzących operacji magazynowych w punkcie sprzedaży (POS).
 author: hhaines
 manager: annbe
-ms.date: 05/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
-ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
+ms.openlocfilehash: c2c8acfaf7b84870ce00bf1ae84440dd369df9da
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3384136"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551632"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Wychodząca operacja magazynowa w punkcie sprzedaży
 
@@ -58,6 +58,9 @@ Aby skonfigurować strukturę dokumentów asynchronicznych, należy wykonać nas
 7. Na skróconej karcie **Ogólne** w sekcji **Konfiguracja** ustaw opcję **Ciągłe** na wartość **Nie**, aby upewnić się, że nie występują żadne problemy z wydajnością.
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>Utwórz i Zaplanuj dwa zadania wsadowe dla zadań przetwarzania dokumentów i monitorowania
+
+> [!NOTE]
+> W Commerce w wersji 10.0.13 lub nowszej nie trzeba konfigurować zadań wsadowych za pomocą struktury zadań wsadowych. Procesy wsadowe można konfigurować za pomocą menu **Retail i Commerce > Retail i Commerce — składniki IT**. Aby skonfigurować zadania wsadowe, należy skorzystać z opcji menu **Detaliczny monitor operacji dokumentów** oraz z **Przetwarzanie operacji na dokumentach detalicznych**
 
 Tworzone zadania wsadowe będą używane do przetwarzania dokumentów, które nie powiodą się lub przekroczą limit czasu. Będą one również używane, gdy liczba aktywnych dokumentów magazynowych, które są przetwarzane z punktu sprzedaży, przekracza wartość skonfigurowaną przez system.
 

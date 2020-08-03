@@ -3,7 +3,7 @@ title: Podstawowe informacje o prognozowaniu popytu
 description: Prognozowanie popytu jest używane do przewidywania niezależnego popytu z zamówień sprzedaży i zależnego popytu w dowolnym punkcie oddzielenia dla zamówień od odbiorców. Rozszerzone reguły redukcji prognozy popytu są doskonałym rozwiązaniem do masowego dostosowywania.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 01/07/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be60bb5c856020d76d185249fddf09493ea1d2ed
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1033432d0d820516d8c9b2f58f27241351e7c64b
+ms.sourcegitcommit: 2e7454c07adfc05164121307050f6f24303d36d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213890"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3550047"
 ---
 # <a name="demand-forecasting-overview"></a>Podstawowe informacje o prognozowaniu popytu
 
@@ -48,7 +48,7 @@ Poniżej przedstawiono główne funkcje prognozowania popytu:
 Trzy najważniejsze motywy w prognozowaniu popytu:
 
 -   **Modułowość** — prognozowania popytu jest modułowe i łatwe do skonfigurowania. Funkcję tę można włączać i wyłączać poprzez zmianę klucza konfiguracji w oknie **Handel** &gt; **Prognoza zapasów** &gt; **Prognozowanie popytu**.
--   **Ponowne użycie stosu Microsoft** — Firma Microsoft uruchomiła platformę do uczenia maszynowego w lutym 2015 r. Uczenie maszynowe, obecnie część pakietu analitycznego Microsoft Cortana, umożliwia szybkie i łatwe tworzenie eksperymentów analiz predykcyjnych, takich jak eksperymenty szacowania popytu, przy użyciu języków programowania algorytmów R lub Python oraz prostego w obsłudze interfejsu typu przeciągnij i upuść.
+-   **Ponowne użycie Microsoft Stack** – Machine Learning, obecnie część pakietu analitycznego Microsoft Cortana, umożliwia szybkie i łatwe tworzenie eksperymentów analiz predykcyjnych, takich jak eksperymenty szacowania popytu, przy użyciu języków programowania algorytmów R lub Python oraz prostego w obsłudze interfejsu typu przeciągnij i upuść.
     -   Można pobrać eksperymenty prognozowania popytu, zmienić je odpowiednio do wymagań biznesowych, publikować jako usługi sieci web na Azure i używać ich do generowania prognoz popytu. Eksperymenty są dostępne do pobrania w ramach zakupionej subskrypcji programu Supply Chain Management dla planisty produkcji jako użytkownika na poziomie organizacji.
     -   Można pobrać dowolne z obecnie dostępnych eksperymentów przewidywania popytu z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Eksperymenty prognozowania popytu są automatycznie integrowane z programem Supply Chain Management, natomiast klienci i partnerzy muszą ręcznie integrować eksperymenty pobierane z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Z tego względu eksperymenty z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/) nie są tak samo proste w użytkowaniu, jak eksperymenty prognozowania popytu w systemie Finance and Operations. Konieczne jest zmodyfikowanie kodu eksperymentów, aby mogły korzystać z interfejsu API systemu Finance and Operations.
     -   Można utworzyć własne eksperymenty w programie Microsoft Azure Machine Learning Studio (wersja klasyczna), opublikować je jako usługi na platformie Azure i używać do generowania prognoz popytu.
@@ -70,6 +70,16 @@ Za pomocą programu Supply Chain Management można wizualizować i modyfikować 
 
 ## <a name="limitations"></a>Ograniczenia
 Prognozowanie popytu to narzędzie, które pomaga odbiorcom w przemyśle produkcyjnym tworzyć procesy prognozowania. Oferuje podstawowe funkcje rozwiązania do prognozowania i jest zaprojektowane w taki sposób, że może być łatwo rozszerzone. Prognozowanie popytu nie musi być najlepszym narzędziem dla odbiorców w takich branżach, jak handel, handel hurtowy, magazynowanie, transport lub inne usługi profesjonalne.
+
+### <a name="demand-forecast-variant-conversion-limitation"></a>Ograniczenie konwersji wariantów prognozy popytu
+
+Jednostka miary (JM) na konwersję wariantu nie jest w pełni obsługiwana podczas generowania prognozy popytu, jeśli jednostka miary magazynu jest inna niż ilość w polu Jednostka miary prognozy popytu.
+
+Generowanie prognozy (**Jednostka miary zapasów > Prognozy popytu jednostki miary**) używa konwersji jednostki miary produktu. Podczas ładowania danych historycznych dla generowania prognozy popytu konwersja jednostek miary na poziomie produktu będzie zawsze używana podczas konwersji z magazynu zapasów na prognozę popytu, nawet jeśli na poziomie wariantu są zdefiniowane konwersje.
+
+W pierwszej części zatwierdzania prognozy (**Prognoza popytu jednostki miary > Jednostka miaryzapasów**) jest używana konwersja jednostki miary produktu. W drugiej części jednostki autoryzowanie autoryzacji (**Jednostka miary zapasów > Jednostka miary sprzedaży**) jest używana konwersja jednostki miary wariantu. Jeśli wygenerowana prognoza popytu jest autoryzowana, konwersja do jednostki miary magazynowej z prognozy popytu na jednostkę miary zostanie wykonana przy użyciu konwersji jednostki miary na poziomie produktu. W tym samym czasie konwersja między jednostkami magazynowymi a jednostką miary sprzedaży uwzględnia konwersje zdefiniowane na poziomie wariantu.
+
+Należy zauważyć, że jednostka miary prognozy popytu nie musi mieć żadnych właściwych znaczenia. Można ją zdefiniować jako „jednostkę prognozy popytu”. Dla każdego produktu można zdefiniować konwersję na 1:1 przy użyciu jednostki miary zapasów.
 
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------
