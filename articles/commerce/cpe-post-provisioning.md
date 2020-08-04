@@ -1,9 +1,9 @@
 ---
-title: Konfiguruj środowisko wersji zapoznawczej usługi Dynamics 365 Commerce
-description: W tym temacie opisano sposób konfigurowania środowiska wersji zapoznawczej aplikacji Microsoft Dynamics 365 Commerce po jego aprowizacji.
+title: Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
+description: W tym temacie opisano sposób konfigurowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce po jego aprowizacji.
 author: psimolin
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,25 +17,24 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ad05996eaabd3965308370649a27b8bc3080c7ce
-ms.sourcegitcommit: f72e90dccc80718e99cab2752eaf8931dcbb915e
+ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3534074"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599731"
 ---
-# <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfiguruj środowisko wersji zapoznawczej usługi Dynamics 365 Commerce
-
+# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania środowiska wersji zapoznawczej aplikacji Microsoft Dynamics 365 Commerce po jego aprowizacji.
+W tym temacie opisano sposób konfigurowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce po jego aprowizacji.
 
 ## <a name="overview"></a>Omówienie
 
-Procedury opisane w tym temacie należy wykonać dopiero po zakończeniu aprowizacji środowiska wersji zapoznawczej usługi Commerce. Aby uzyskać informacje dotyczące sposobu aprowizowania środowiska wersji zapoznawczej usługi Commerce, zobacz [Aprowizowanie środowiska wersji zapoznawczej usługi Commerce](provisioning-guide.md).
+Procedury opisane w tym temacie należy wykonać dopiero po zakończeniu aprowizacji środowiska oceny usługi Commerce. Aby uzyskać informacje dotyczące sposobu aprowizowania środowiska oceny usługi Commerce, zobacz [Aprowizowanie środowiska oceny usługi Commerce](provisioning-guide.md).
 
-Po zakończeniu kompleksowej aprowizacji środowiska wersji zapoznawczej usługi Commerce wykonać dodatkowe czynności konfiguracyjne po aprowizacji, aby można było rozpocząć ocenę środowiska. Aby wykonać te kroki, należy użyć usług Microsoft Dynamics Lifecycle Services (LCS) i Dynamics 365 Commerce.
+Po zakończeniu kompleksowej aprowizacji środowiska oceny usługi Commerce wykonać dodatkowe czynności konfiguracyjne po aprowizacji, aby można było rozpocząć ocenę środowiska. Aby wykonać te kroki, należy użyć usług Microsoft Dynamics Lifecycle Services (LCS) i Dynamics 365 Commerce.
 
 ## <a name="before-you-start"></a>Przed rozpoczęciem
 
@@ -43,19 +42,20 @@ Po zakończeniu kompleksowej aprowizacji środowiska wersji zapoznawczej usługi
 1. Przejdź do projektu.
 1. W menu górnym wybierz opcję **Środowiska hostowane w chmurze**.
 1. Wybierz swoje środowisko na liście.
-1. W obszarze informacji o środowisku po prawej stronie wybierz pozycję **Pełne szczegóły**.
-1. Wybierz pozycję **Zaloguj**, aby otworzyć menu, i wybierz opcję **Zaloguj do środowiska**.
+1. W obszarze informacji o środowisku po prawej stronie wybierz pozycję **Zaloguj do środowiska**. Nastąpi wysłanie do modułu Commerce Headquarter.
 1. Upewnij się, że wybrano firmę **USRT** w prawym górnym rogu.
 
-## <a name="configure-the-point-of-sale-in-lcs"></a>Konfigurowanie punktu sprzedaży w usłudze LCS
+Podczas wykonywania działań związanych z inicjowaniem obsługi administracyjnej w module Commerce Headquarter należy się upewnić, że firma **USRT** jest zawsze zaznaczona.
+
+## <a name="configure-the-point-of-sale"></a>Konfigurowanie punktu sprzedaży
 
 ### <a name="associate-a-worker-with-your-identity"></a>Kojarzenie pracownika z Twoją tożsamością
 
-Aby skojarzyć pracownika z tożsamością w usłudze LCS, wykonaj następujące kroki.
+Aby skojarzyć pracownika z tożsamością, wykonaj następujące kroki w Commerce Headquarters.
 
 1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Retail i Commerce \> Pracownicy etatowi \> Pracownicy**.
 1. Na liście znajdź i wybierz następujący rekord: **000713 - Andrew Collette**.
-1. W okienku akcji wybierz pozycję **Retail**.
+1. W okienku akcji wybierz **Commerce**.
 1. Wybierz pozycję **Skojarz istniejącą tożsamość**.
 1. W polu **Adres e-mail** na prawo od pola **Wyszukaj, używając poczty e-mail** wprowadź swój adres e-mail.
 1. Wybierz opcję **Wyszukaj**.
@@ -65,25 +65,24 @@ Aby skojarzyć pracownika z tożsamością w usłudze LCS, wykonaj następujące
 
 ### <a name="activate-cloud-pos"></a>Aktywować punkt sprzedaży w chmurze
 
-Aby aktywować punkt sprzedaży chmury w usłudze LCS, wykonaj następujące kroki.
+Aby aktywować punkt sprzedaży chmury, wykonaj następujące kroki w usłudze LCS.
 
 1. W menu górnym wybierz opcję **Środowiska hostowane w chmurze**.
 1. Wybierz swoje środowisko na liście.
-1. W obszarze informacji o środowisku po prawej stronie wybierz pozycję **Pełne szczegóły**.
-1. Wybierz pozycję **Zaloguj**, aby otworzyć menu, a następnie wybierz pozycję **Zaloguj się do punktu sprzedaży chmury**, aby otworzyć punkt sprzedaży.
-1. Wybierz pozycję **Następny**.
+1. W obszarze informacji o środowisku po prawej stronie wybierz pozycję **Zaloguj do punktu sprzedaży w chmurze**.
+1. Wybierz przycisk **Dalej**, aby otworzyć okno dialogowe **Przed rozpoczęciem**.
+1. Pole **Serwer URL** powinno pozostać niezmienione. Wybierz pozycję **Następny**.
 1. Zaloguj się przy użyciu konta usługi Microsoft Azure Active Directory (Azure AD).
-1. W polu **Nazwa sklepu** wybierz opcję **San Francisco**.
-1. Wybierz pozycję **Następny**.
+1. W polu **Nazwa sklepu** wybierz opcję **San Francisco**, a następnie wybierz przycisk **Dalej**.
 1. W obszarze **Rejestr i urządzenie** wybierz opcję **SANFRAN-1**.
 1. Wybierz **Aktywuj**. Nastąpi wylogowanie i przeniesienia na stronę logowania w punkcie sprzedaży.
 1. Teraz możesz zalogować się do środowiska punktu sprzedaży w chmurze przy użyciu identyfikatora operatora **000713** i hasła **123**.
 
 ## <a name="set-up-your-site-in-commerce"></a>Konfigurowanie witryny w usłudze Commerce
 
-Aby rozpocząć konfigurowanie witryny w wersji zapoznawczej w usłudze Commerce, wykonaj następujące kroki.
+Aby rozpocząć konfigurowanie witryny oceny w usłudze Commerce, wykonaj następujące kroki.
 
-1. Zaloguj się do narzędzia do zarządzania witryną przy użyciu adresu URL zanotowanego podczas inicjowania usługi e-Commerce w trakcie aprowizacji (zobacz [Inicjowanie usługi e-Commerce](provisioning-guide.md#initialize-e-commerce)).
+1. Zaloguj się do konstruktora witryny przy użyciu adresu URL zanotowanego podczas inicjowania usługi handlu elektronicznego w trakcie aprowizacji (zobacz [Inicjowanie usługi handlu elektronicznego](provisioning-guide.md#initialize-e-commerce)).
 1. Wybierz witrynę **Fabrikam**, aby otworzyć okno dialogowe konfiguracji witryny.
 1. Wybierz domenę, która została wprowadzona podczas inicjowania aplikacji e-Commerce.
 1. Wybierz opcję **Rozszerzony sklep online Fabrikam** jako kanał domyślny. (Upewnij się, że wybrano **rozszerzony** sklep internetowy).
@@ -106,18 +105,24 @@ Aby włączyć zadania w aplikacji Commerce, wykonaj następujące kroki.
     * Zadanie synchronizowania zamówień
 
 1. Użyj szybkiego filtru, aby wyszukać zadanie według nazwy.
-1. Jeśli stan zadania to **Wstrzymane**, wykonaj następujące kroki:
+1. Jeśli stan zadania to **W trakcie**, wykonaj następujące kroki:
 
     1. Wybierz rekord.
     1. W okienku akcji na karcie **Zadanie wsadowe** wybierz pozycję **Zmień status**.
-    1. Wybierz pozycję **Oczekiwanie** i kliknij przycisk **OK**.
+    1. Wybierz pozycję **Anuluj**, a następnie kliknij przycisk **OK**.
+
+Opcjonalnie można również określić interwał cyklu równy jednej (1) minucie dla następujących zadań:
+
+* Przetwarzanie zadania powiadomień pocztą e-mail dla zamówienia sieci sprzedaży
+* Zadanie P-0001
+* Zadanie synchronizowania zamówień
 
 ### <a name="run-full-data-synchronization"></a>Uruchamianie pełnej synchronizacji danych
 
-Aby uruchomić pełną synchronizację danych w aplikacji Commerce, wykonaj następujące kroki.
+Aby uruchomić pełną synchronizację danych w aplikacji Commerce, wykonaj następujące kroki w Commerce headquarters.
 
 1. Korzystając z menu po lewej stronie, przejdź do pozycji **Moduły \> Handel detaliczny i inny \> Ustawienia centrali \> Transfer danych w Commerce \> Baza danych kanału**.
-1. Na liście po lewej stronie jest wybrany kanał **domyślny**. Wybierz inny dostępny kanał. Ten kanał nosi nazwę **scXXXXXXXXX**.
+1. Wybierz kanał o nazwie **scXXXXXXXXX**.
 1. W okienku akcji wybierz **Pełna synchronizacja danych**.
 1. Wpisz **9999** jako harmonogram dystrybucji.
 1. Kliknij przycisk **OK**.
@@ -136,19 +141,21 @@ Aby przeprowadzić transakcje testowe w witrynie, można użyć następujących 
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po zakończeniu aprowizowania i wykonaniu kroków konfiguracji można przystąpić do oceny środowiska wersji zapoznawczej. Użyj adresu URL narzędzia do zarządzania witryną Commerce, aby przejść do środowiska tworzenia. Użyj adresu URL witryny Commerce, aby przejść do środowiska witryny klienta platformy handlu detalicznego.
+Po zakończeniu czynności obsługi administracyjnej i konfiguracji można rozpocząć korzystanie ze środowiska oceny. Użyj adresu URL konstruktora witryn Commerce, aby przejść do środowiska tworzenia. Użyj adresu URL witryny Commerce, aby przejść do środowiska witryny klienta platformy handlu detalicznego.
 
-Aby skonfigurować opcjonalne funkcje środowiska wersji zapoznawczej usługi Commerce, zobacz [Konfigurowanie funkcji opcjonalnych środowiska wersji zapoznawczej usługi Commerce](cpe-optional-features.md).
+Aby skonfigurować opcjonalne funkcje środowiska oceny usługi Commerce, zobacz [Konfigurowanie funkcji opcjonalnych środowiska oceny usługi Commerce](cpe-optional-features.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Dynamics 365 Commerce omówienie środowiska wersji zapoznawczej](cpe-overview.md)
+[Omówienie środowiska oceny usługi Dynamics 365 Commerce](cpe-overview.md)
 
-[Inicjuj środowisko wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md)
+[Ustanowienie środowiska oceny Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfiguruj funkcje opcjonalne środowiska wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-optional-features.md)
+[Konfigurowanie opcjonalnych funkcji środowiska oceny Dynamics 365 Commerce](cpe-optional-features.md)
 
-[Środowisko wersji zapoznawczej Dynamics 365 Commerce— często zadawane pytania](cpe-faq.md)
+[Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce](cpe-bopis.md)
+
+[Środowiska oceny usługi Dynamics 365 Commerce — często zadawane pytania](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

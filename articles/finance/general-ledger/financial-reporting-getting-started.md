@@ -3,7 +3,7 @@ title: Omówienie raportowania finansowego
 description: W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w Microsoft Dynamics 365 Finance i jak korzystać z funkcji raportowania finansowego. Zawiera opis domyślnych raportów finansowych, które są zawarte w programie.
 author: aprilolson
 manager: AnnBe
-ms.date: 04/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6cd77e22f9c6f90f6aa9934d70a121008e1274dd
-ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
+ms.openlocfilehash: 015f0282a2defcd7a8388eeaa70e0de6fb7cac78
+ms.sourcegitcommit: faaa4215f513885dd92cf7430b3612848ec09893
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "3262656"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "3609596"
 ---
 # <a name="financial-reporting-overview"></a>Omówienie raportowania finansowego
 
@@ -34,7 +34,7 @@ W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finanso
 <a name="accessing-financial-reporting"></a>Uzyskiwanie dostępu do raportowania finansowego
 -----------------------------
 
-Menu **Raporty finansowe** można znaleźć w następujących miejscach:
+Menu **Raportowanie finansowe** można znaleźć w następujących lokalizacjach:
 
 -   **Księga główna** &gt; **Zapytania i raporty**
 -   **Budżetowanie** &gt; **Zapytania i raporty** &gt; **Budżetowanie podstawowe**
@@ -45,10 +45,11 @@ Menu **Raporty finansowe** można znaleźć w następujących miejscach:
 Aby tworzyć i generować raporty finansowe firmy, należy ustawić następujące informacje o tej firmie:
 
 -   Kalendarz obrachunkowy
--   Księga
+-   Ledger
 -   Plan kont
 -   Waluta
 
+## <a name="granting-security-access-to-financial-reporting"></a>Udzielanie zabezpieczeń do Raportowania finansowego
 Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają odpowiednie uprawnienia i obowiązki przypisane za pomocą ich ról zabezpieczeń. W poniższych sekcjach wymieniono te uprawnienia i obowiązki, łącznie z powiązanymi rolami.
 
 ### <a name="duties"></a>Obowiązki
@@ -78,15 +79,26 @@ Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają
 | Generowanie raportów finansowych            | Generowanie raportów finansowych            | Dyrektor generalny, Dyrektor finansowy, Księgowy                                                            |
 | Wyświetlanie raportów finansowych                | Przeglądanie wyników finansowych          | Nie przypisano                                                                   |
 
-Po dodaniu użytkownika lub zmianie roli, użytkownik powinien mieć dostęp do raportów finansowych za kilka minut. **Uwaga:** Rola sysadmin jest dodawana do wszystkich ról w module sprawozdawczości finansowej.
+Po dodaniu użytkownika lub zmianie roli, użytkownik powinien mieć dostęp do raportów finansowych za kilka minut. 
+
+> [!NOTE]
+> Rola sysadmin jest dodawana do wszystkich ról w module raportowania finansowego.
 
 ## <a name="report-deletions-and-expirations"></a>Usuwanie i wygasanie raportów
 Użytkownicy, którzy generują raport, mogą usuwać własne raporty. Użytkownicy, których obowiązkiem jest **utrzymywanie bezpieczeństwa raportowania finansowego** mogą usuwać raporty innych osób. 
 
-W wersji 10.0.8 zostało wprowadzone pojęcie dat wygaśnięcia. Nowa wymagana funkcja zostanie włączona na stronie **Wszystkie** w obszarze roboczym zarządzanie funkcjami. Funkcja **Zasad zatrzymania raportu finansowego** zawiera następujące zmiany:
+Począwszy od wydania 10.0.7 wprowadzono koncepcję dat wygaśnięcia. Nowa obowiązkowa funkcja zostanie włączona w obszarze roboczym zarządzania funkcjami. Ta funkcja zawiera następujące zmiany:
+
+* Nowo wygenerowane raporty będą automatycznie oznaczane jako posiadające datę wygaśnięcia 90 dni od daty wygenerowania.
+* Wszystkie istniejące raporty sprzed zainstalowania tej funkcji będą miały okres ważności 90 dni. Data może być pusta przez krótki okres do czasu uruchomienia usługi raportowania finansowego, generowany jest raport, a usługa przeprowadza aktualizację do istniejących raportów z pustą datą wygaśnięcia. 
+* Użytkownicy odpowiedzialni za **utrzymywanie bezpieczeństwa raportowania finansowego** mają dostęp do tej funkcji. Każdy użytkownik z obowiązkiem **utrzymywania raportu finansowego** i przyznanym uprawnieniem **Utrzymanie wygaśnięcia raportu finansowego** będzie również mieć możliwość modyfikowania okresu wygaśnięcia. Obecnie dostępne są dwie opcje przechowywania:
+   * Wygaśnięcie wynoszące 90 dni
+   * Opcja ustawiania raportu tak, aby nigdy nie wygasał
+
+Po wybraniu terminu wygaśnięcia, na przykład 90 dni, jest on stosowany za 90 dni od dzisiaj, co różni się od 90 dni od daty pierwotnego wygenerowania ustawionej podczas generowania raportu. W wersji 10.0.8 zostało wprowadzone pojęcie dat wygaśnięcia. Nowa wymagana funkcja jest włączona na stronie **Wszystkie** w obszarze roboczym zarządzanie funkcjami. Funkcja **Zasad zatrzymania raportu finansowego** zawiera następujące zmiany:
 * Nowo wygenerowane raporty będą automatycznie oznaczane jako posiadające datę wygaśnięcia 90 dni od daty wygenerowania
 * Wszystkie istniejące raporty sprzed zainstalowania tej funkcji będą miały okres ważności 90 dni. Data może być pusta przez krótki okres do czasu uruchomienia usługi raportowania finansowego, generowany jest raport, a usługa przeprowadza aktualizację do istniejących raportów z pustą datą wygaśnięcia. 
-* Użytkownicy odpowiedzialni za **Utrzymywanie bezpieczeństwa financial reporting** mają dostęp do tej funkcji. Każdy użytkownik z obowiązkiem **utrzymywania raportu finansowego** i przyznanym uprawnieniem **Utrzymanie wygaśnięcia raportu finansowego** będzie również mieć możliwość modyfikowania okresu wygaśnięcia. Obecnie dostępne są dwie opcje przechowywania. 
+* Użytkownicy odpowiedzialni za **Utrzymywanie bezpieczeństwa financial reporting** mają dostęp do tej funkcji. Każdy użytkownik z obowiązkiem **utrzymywania raportu finansowego** i przyznanym uprawnieniem **Utrzymanie wygaśnięcia raportu finansowego** będzie również mieć możliwość modyfikowania okresu wygaśnięcia. Obecnie dostępne są dwie opcje przechowywania: 
   * Wygaśnięcie wynoszące 90 dni.
   * Opcja ustawiania raportu tak, aby nigdy nie wygasał.
   
@@ -125,16 +137,36 @@ Raporty finansowe to 22 domyślne raporty. Każdy raport korzysta z domyślnych 
 | Dostępne środki budżetowe — domyślny                         | Wyświetlanie szczegółowego porównania skorygowanego budżetu, rzeczywistych rozchodów, rezerwacji budżetu i środków budżetowych dostępnych dla wszystkich kont                                                                                                                                                                                  |
 
 ## <a name="opening-financial-reports"></a>Otwieranie raportów finansowych
-Po kliknięciu menu **Raporty finansowe** jest wyświetlana lista domyślnych raportów finansowych firmy. Następnie można otworzyć lub zmodyfikować raport. Aby otworzyć jeden z domyślnych raportów, należy wybrać nazwę raportu. Kiedy raport zostanie otwarty po raz pierwszy, zostanie automatycznie wygenerowany raport za poprzedni miesiąc. Na przykład jeśli raport zostanie otwarty po raz pierwszy w sierpniu 2016, jest generowany raport na 31 lipca 2016 r. Po otwarciu raportu, możesz zapoznać się ze szczegółowymi danymi i opcjami modyfikacji.
+Po wybraniu menu **Raportowanie finansowe** jest wyświetlana lista domyślnych raportów finansowych firmy. Następnie można otworzyć lub zmodyfikować raport. Aby otworzyć jeden z domyślnych raportów, należy wybrać nazwę raportu. Kiedy raport zostanie otwarty po raz pierwszy, zostanie automatycznie wygenerowany raport za poprzedni miesiąc. Na przykład jeśli raport zostanie otwarty po raz pierwszy w sierpniu 2019, jest generowany raport na 31 lipca 2019 r. Po otwarciu raportu, możesz zapoznać się ze szczegółowymi danymi i opcjami modyfikacji.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Tworzenie i modyfikowanie raportów finansowych
-Z listy raportów finansowych można utworzyć nowy raport lub zmodyfikować istniejący raport. Jeśli masz odpowiednie uprawnienia, możesz utworzyć nowy raport finansowy, klikając przycisk **Nowy** w okienku akcji. Projektant raportów zostanie pobrany na Twoje urządzenie i uruchomiony. Po uruchomieniu projektanta raportów można utworzyć nowy raport. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Na liście są wyświetlane tylko raporty, które zostały utworzone dla firmy używanej w programie Finance. 
+Z listy raportów finansowych można utworzyć nowy raport lub zmodyfikować istniejący raport. Jeśli masz odpowiednie uprawnienia, możesz utworzyć nowy raport finansowy, wybierając przycisk **Nowy** w okienku akcji. Projektant raportów zostanie pobrany na Twoje urządzenie i uruchomiony. Po uruchomieniu projektanta raportów można utworzyć nowy raport. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Na liście są wyświetlane tylko raporty, które zostały utworzone dla firmy używanej w Dynamics 365 Finance. 
 
-> [!NOTE] 
-> Komputer, do którego pobierasz aplikację kliencką projektanta raportów, musi mieć zainstalowane oprogramowanie Microsoft .NET Framework w wersji 4.6.2. Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować z witryny [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53345). Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta projektanta raportów. Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Po wybraniu obszaru wokół nazwy raportu kliknij przycisk **Edytuj** w okienku akcji. Zostanie uruchomiony projektant raportów.
+## <a name="troubleshooting-issues-opening-report-designer"></a>Rozwiązywanie problemów z otwieraniem projektanta raportów
+Istnieje kilka typowych problemów, które mogą być przyczyną problemów podczas otwierania projektanta raportów. Poniżej wymieniono zagadnienia związane z tymi problemami i czynności, które należy rozwiązać.
+
+Wydanie 1: Projektant raportów nie rozpoczyna się po wybraniu opcji **Nowy** lub **Edytuj**.
+
+* W obszarze Internet Explorer wybierz opcję **Ustawienia**, a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny, a następnie wybierz opcję **Witryny**. W obszarze **Dodaj tę witrynę sieci Web do strefy** wprowadź „\*\.dynamics.com” (bez znaków cudzysłowu), a następnie wybierz pozycję **Dodaj**. 
+* W obszarze Internet Explorer wybierz opcję **Ustawienia**, a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny. W obszarze o nazwie poziom zabezpieczeń dla tej strefy Zmień opcję na **Średni — niski**.
+* Wyłącz funkcję blokowania wyskakujących okienek w przeglądarce.
+* Do zainstalowania Visual Studio .NET 4.6.2 lub nowszego wymagane są stacje robocze.
+
+Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować z witryny [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53345).
+* Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta Projektanta raportów. Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. Jeśli nie możesz zalogować się w Chrome, spróbuj wykonać kroki konfiguracji opisane w Problemie 1, używając przeglądarki  Internet Explorer lub Edge. 
+
+Wydanie 2: użytkownik nie został przypisany do wymaganych uprawnień do korzystania z Raportowania finansowego. 
+
+* Aby sprawdzić, czy użytkownik nie ma uprawnienia, należy wybrać opcję **Tak** dla błędu, a „Nie można połączyć się z serwerem Raportowania finansowego. Wybierz opcję Tak, jeśli chcesz kontynuować, i podaj inny adres serwera”. Następnie wybierz **Testuj połączenie**. Jeśli nie masz uprawnień, zostanie wyświetlony komunikat „Próba połączenia nie powiodła się. Użytkownik nie ma odpowiednich uprawnień, aby połączyć się z serwerem. Skontaktuj się z administratorem systemu”.
+* Powyższe uprawnienia są wymienione powyżej w celu [Udzielanie zabezpieczeń do Raportowania finansowego](#granting-security-access-to-financial-reporting). Zabezpieczenia w Raportowaniu finansowym są oparte na tych uprawnieniach. Nie będziesz mieć dostępu, dopóki nie zostaną przypisane te uprawnienia (lub inna rola zabezpieczeń zawierająca te uprawnienia). 
+* Zadanie integracji **Dostawca firmowych użytkowników dla firmy** (które jest również odpowiedzialne i znane jako integracja użytkowników) jest uruchamiane co 5 minut. Wprowadzenie zmian uprawnień w Raportowaniu finansowym może potrwać do 10 minut. 
+  Jeśli inny użytkownik może otworzyć Projektanta raportów, wybierz menu **Narzędzia**, a następnie wybierz polecenie **Stan integracji**. Sprawdź, czy mapa integracji „Dostawca firmowych użytkowników dla firmy” została pomyślnie uruchomiona, ponieważ przypisano Ci uprawnienia do korzystania z funkcji Raportowania finansowego. 
+* Może być możliwe, że inny błąd zabronił **Integracja użytkowników Dynamics z użytkownikami Raportowania finansowego** z jego zakończeniem. Możliwe, że resetowanie składni danych zostało zainicjowane i nie zostało jeszcze zakończone lub wystąpił inny błąd systemu. Spróbuj uruchomić proces ponownie później. Jeśli problem będzie się powtarzał, skontaktuj się z administratorem systemu.
+
+Wydanie 3: na stronie rejestracja projektanta raportów ClickOnce można kontynuować pracę, ale nie można zakończyć logowania w oknie Projektanta raportów. 
+
+* Czas określony na komputerze lokalnym podczas wprowadzania poświadczeń logowania musi zawierać się w ciągu pięciu minut od czasu na serwerze Financial Reporting. Jeśli występuje różnica ponad 5 minut, system nie pozwoli na zarejestrowanie się. 
+* W takim przypadku zalecamy włączenie opcji systemu Windows w celu automatycznego ustawienia czasu na komputerze. 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 - [Wyświetlanie raportów finansowych](view-financial-reports.md)
-
-
-

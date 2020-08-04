@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce środowisko wersji zapoznawczej — często zadawane pytania
-description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące środowiska aplikacji Microsoft Dynamics 365 Commerce w wersji zapoznawczej.
+title: Często zadawane pytania dotyczące środowiska oceny rozwiązania Dynamics 365 Commerce
+description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące środowiska oceny Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,73 +17,57 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5321d7937a9de3ba39f7a88bf0e9c26f4e62d7bc
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: 637714e28b9f8f4aa66e251e709d8f78bff2739d
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254731"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599774"
 ---
-# <a name="dynamics-365-commerce-preview-environment-faq"></a>Dynamics 365 Commerce środowisko wersji zapoznawczej — często zadawane pytania
+# <a name="dynamics-365-commerce-evaluation-environment-faq"></a>Często zadawane pytania dotyczące środowiska oceny rozwiązania Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące środowiska aplikacji Microsoft Dynamics 365 Commerce w wersji zapoznawczej.
+Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące środowiska oceny Microsoft Dynamics 365 Commerce.
 
-**Czy mogę przenieść moje zaproszenie do środowiska wersji zapoznawczej usługi Commerce do innej dzierżawy?**
+**Czy możemy użyć środowiska oceny usługi Commerce jako sklepu internetowego dla klientów, którzy obecnie wdrażają aplikację Retail?**
 
-Tak. W przypadku transferów zaproszeń można użyć [formularza transferu wersji zapoznawczej usługi Commerce](https://aka.ms/Dynamics365CommercePreviewTransferForm).
+Nr Środowisko oceny Commerce jest przeznaczone wyłącznie do oceny. Jeśli wymagane jest środowisko dla klienta, który implementuje aplikację Retail, skontaktuj się z firmą Microsoft.
 
-**Jak długo trwa transfer zaproszenia?**
+**Czy środowisko oceny usługi Commerce może służyć do aprowizowania funkcji handlu elektronicznego jako uzupełnienie istniejącej aplikacji/środowiska, które implementuje aplikację Retail?**
 
-Transfer trwa średnio około od trzech do pięciu dni roboczych. Mogą jednak obowiązywać wyjątki.
+Nie (głównie). Składniki oceny aplikacji Commerce są dostępne tylko w środowiskach zgodnych z konfiguracjami określonymi w wymaganiach wstępnych i przewodniku obsługi administracyjnej. Ponadto wymagane podstawowe dane demonstracyjne nie będą dostępne w środowiskach wdrożonych z początkową wersją wcześniejszą niż 10.0.8. 
 
-**Czy środowisko wersji zapoznawczej usługi Commerce współdziała z projektami aplikacji Dynamics 365 Finance lub Dynamics 365 Supply Chain?**
+**Jakie koszty są zaangażowane we wdrażanie środowiska oceny usługi Commerce na platformie Microsoft Azure za pośrednictwem usług Microsoft Dynamics Lifecycle Services (LCS)?**
 
-Nr Środowisko wersji zapoznawczej usługi Commerce działa tylko z projektami aplikacji Dynamics 365 Retail.
+Tradycyjne środowisko demonstracyjne//główne Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce maszyna wirtualna \[VM\]) będzie hostowana w Twojej subskrypcji platformy Azure. Możesz użyć [kalkulatora cen platformy Azure](https://azure.microsoft.com/pricing/calculator/), aby oszacować ten koszt.
 
-**Czy możemy użyć środowiska wersji zapoznawczej usługi Commerce jako sklepu internetowego dla klientów, którzy obecnie wdrażają aplikację Retail?**
+Inne składniki, takie jak Commerce Scale Unit, Commerce Site Builder i Twoja witryna handlu elektronicznego, będą dostępne jako oprogramowanie jako usługa (SaaS) i będą obsługiwane przez firmę Microsoft.
 
-Nr Środowisko wersji zapoznawczej usługi Commerce to tylko środowisko oceny. Jeśli wymagane jest środowisko dla klienta, który implementuje aplikację Retail, skontaktuj się z firmą Microsoft.
+**Które regiony geograficzne platformy Azure są obecnie obsługiwane w środowisku oceny usługi Commerce?**
 
-**Czy środowisko wersji zapoznawczej usługi Commerce może służyć do aprowizowania funkcji e-Commerce jako uzupełnienie istniejącej aplikacji/środowiska, które implementuje aplikację Retail?**
-
-Nr Środowisko wersji zapoznawczej usługi Commerce jest obecnie dostępne tylko w nowych środowiskach, które zostały wdrożone w projektach jednostek magazynowych (SKU) aplikacji Retail z danymi pokazów z wersji 10.0.6.
-
-**Jakie koszty są zaangażowane we wdrażanie środowiska wersji zapoznawczej usługi Commerce na platformie Microsoft Azure za pośrednictwem usług Microsoft Dynamics Lifecycle Services (LCS)?**
-
-Retail jest jedynym składnikiem hostowanym w ramach subskrypcji. Inne składniki, takie jednostka Retail Cloud Scale Unit (RCSU) i e-Commerce, będą obsługiwane w subskrypcjach Microsoft. Możesz użyć [kalkulatora cen platformy Azure](https://azure.microsoft.com/pricing/calculator/), aby oszacować ten koszt.
-
-**Które regiony geograficzne platformy Azure są obecnie obsługiwane w środowisku wersji zapoznawczej usługi Commerce?**
-
-Środowisko wersji zapoznawczej usługi Commerce można wdrożyć tylko w regionie Ameryka Północna.
+Środowisko oceny usługi Commerce można wdrożyć tylko w regionie Ameryka Północna.
 
 **Czy istnieje wirtualny dysk twardy (VHD) z możliwością pobrania, który ma pełną opcję maszyny wirtualnej OneBox?**
 
-Jednostka Dynamics 365 Retail Cloud Scale Unit (RCSU) i usługa e-Commerce to w całości oprogramowanie jako usługa (SaaS) i muszą być hostowane w chmurze.
+Dynamics 365 Commerce i Commerce Scale Unit to w całości oprogramowanie jako usługa (SaaS) i muszą być hostowane w chmurze.
 
-**Jak długo można używać środowiska wersji zapoznawczej usługi Commerce?**
+**Jak długo można używać środowiska oceny usługi Commerce?**
 
-Środowisko wersji zapoznawczej usługi Commerce ma 30-dniowy limit czasu od daty aprowizacji e-Commerce.
+Środowisko oceny Commerce ma 30-dniowy limit czasu od daty udostępnienia składników SaaS, takich jak Commerce Scale Unit, narzędzie do tworzenia witryn Commerce i Twoja witryna handlu elektronicznego.
 
-**Czy mogę przedłużyć limit czasu dla mojego środowiska wersji zapoznawczej usługi Commerce?**
+**Czy mogę przedłużyć limit czasu dla mojego środowiska oceny usługi Commerce?**
 
-Tak. Możesz skontaktować się z zespołem pomocy technicznej przy użyciu [formularza rozszerzenia wersji zapoznawczej usługi Commerce](https://aka.ms/Dynamics365CommercePreviewExtensionForm).
-
-**Czy możemy wysłać wiele żądań dotyczących środowiska wersji zapoznawczej usługi Commerce?**
-
-Przyznajemy limit przydziału obejmujący jedno środowisko wersji zapoznawczej usługi Commerce dla każdego zaakceptowanego żądania. Jeśli potrzebujesz więcej niż jednego środowiska wersji zapoznawczej, skontaktuj się z firmą Microsoft. Informacje kontaktowe można znaleźć w następnej sekcji.
-
-## <a name="dynamics-365-commerce-preview-environment-contact-information"></a>Informacje kontaktowe dotyczące środowiska wersji zapoznawczej Dynamics 365 Commerce
-
-Aby skontaktować się z firmą Microsoft, jeśli masz pytania lub wnioski dotyczące środowiska wersji zapoznawczej usługi Commerce, odwiedź [grupę wersji zapoznawczej usługi Microsoft Dynamics 365 Commerce w serwisie Yammer](https://aka.ms/Dynamics365CommercePreviewYammer) w celu uzyskania pomocy.
+Wydłużenie limitu czasu jest wyjątkiem od normy i jest brane pod uwagę oddzielnie dla każdego przypadku. Aby uzyskać pomoc, skontaktuj się z partnerem firmy Microsoft.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Dynamics 365 Commerce omówienie środowiska wersji zapoznawczej](cpe-overview.md)
+[Omówienie środowiska oceny usługi Dynamics 365 Commerce](cpe-overview.md)
 
-[Inicjuj środowisko wersji zapoznawczej Dynamics 365 Commerce](provisioning-guide.md)
+[Ustanowienie środowiska oceny Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfiguruj środowisko wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-post-provisioning.md)
+[Konfigurowanie środowiska oceny usługi Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Konfiguruj funkcje opcjonalne środowiska wersji zapoznawczej usługi Dynamics 365 Commerce](cpe-optional-features.md)
+[Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce](cpe-bopis.md)
+
+[Konfigurowanie opcjonalnych funkcji środowiska oceny Dynamics 365 Commerce](cpe-optional-features.md)

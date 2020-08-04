@@ -10,11 +10,11 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
             - name: Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Aktualizacje do jednej wersji usługi
+            - name: Aktualizacje usługi One Version
               items:
-                - name: Omówienie aktualizacji do jednej wersji usługi
+                - name: Omówienie aktualizacji usługi One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Aktualizacje do jednej wersji usługi — często zadawane pytania
+                - name: Aktualizacje usługi One Version — często zadawane pytania
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'Zasady dotyczące cyklu życia oprogramowania: wersje chmurowe'
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
@@ -34,7 +34,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Automatyzacja zadań danych
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Dostarczanie rozwiązań niezależnych dostawców oprogramowania przy użyciu jednej wersji usługi
+                - name: Dostarczanie rozwiązań niezależnych dostawców oprogramowania przy użyciu One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tworzenie i automatyzowanie testów akceptacji użytkownika
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/supply-chain/toc.json
@@ -74,6 +74,8 @@
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.11 (lipiec 2020)
                       href: get-started/whats-new-scm-10-0-11.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.10 (maj 2020)
+                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
@@ -1355,6 +1357,8 @@
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Anulowanie zadania planowania
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Rozszerzalność optymalizacji planowania
+                  href: master-planning/planning-optimization/extensibility.md
                 - name: Rozwiązywanie problemów z optymalizacją planowania
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Plany główne
@@ -1507,10 +1511,12 @@
               items:
                 - name: Omówienie sekwencji identyfikatorów
                   href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurowanie indywidualnych sekwencji numerów
+                - name: Konfigurowanie indywidualnych sekwencji identyfikatorów
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie sekwencji identyfikatorów za pomocą kreatora
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurowanie sekwencji identyfikatorów dla przepływów magazynowych
+                  href: warehousing/configure-number-sequence-extensions.md?toc=/dynamics365/supply-chain/toc.json
             - name: Organizacje i hierarchie organizacyjne
               items:
                 - name: Omówienie organizacji i hierarchii organizacyjnych
@@ -1817,9 +1823,13 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Wykluczanie produktów z planowania głównego
                       href: pim/tasks/exclude-products-master-planning.md
+                - name: Towary podwójnego zastosowania
+                  href: pim/dual-use.md
+                - name: Kraj pochodzenia
+                  href: pim/country-of-origin.md
                 - name: Tworzenie kodu kreskowego dla produktu
                   href: pim/tasks/create-bar-code-product.md
-                - name: Wprowadzanie kodu GTIN produktu
+                - name: Wprowadzanie numeru GTIN produktu
                   href: pim/tasks/enter-gtin-code-product.md
                 - name: Tworzenie atrybutów partii dla produktu
                   href: pim/tasks/create-batch-attributes-product.md
@@ -2565,22 +2575,20 @@
               href: warehousing/warehouse-management-overview.md
             - name: Przychodzące operacje magazynowe
               items:
-                - name: Przyjęcia w celu rejestracji i odłożenia
-                  items:
-                    - name: Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
-                      href: warehousing/inbound-load-handling.md
-                    - name: Rejestrowanie pozycji dla włączonej pozycji zaawansowanego magazynowania za pomocą arkusza przyjęć towarów
-                      href: warehousing/tasks/register-items-advanced-warehousing.md
-                    - name: Rejestrowanie elementów dla podstawowego magazynowania za pomocą arkusza przyjęć towarów
-                      href: warehousing/tasks/register-items-basic-warehousing.md
-                    - name: Przeładunek kompletacyjny z magazynu przyjmującego do sklepów
-                      href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-                    - name: Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu
-                      href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-                    - name: Konfigurowanie szablonu pracy dla zamówień zakupu
-                      href: warehousing/tasks/set-up-work-template-purchase-orders.md
-                    - name: Mieszanie wymiarów produktów w lokalizacji
-                      href: warehousing/location-product-dimension-mixing.md
+                - name: Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
+                  href: warehousing/inbound-load-handling.md
+                - name: Rejestrowanie pozycji dla włączonej pozycji zaawansowanego magazynowania za pomocą arkusza przyjęć towarów
+                  href: warehousing/tasks/register-items-advanced-warehousing.md
+                - name: Rejestrowanie elementów dla podstawowego magazynowania za pomocą arkusza przyjęć towarów
+                  href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Przeładunek kompletacyjny z magazynu przyjmującego do sklepów
+                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                - name: Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu
+                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                - name: Konfigurowanie szablonu pracy dla zamówień zakupu
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
+                - name: Mieszanie wymiarów produktów w lokalizacji
+                  href: warehousing/location-product-dimension-mixing.md
             - name: Wychodzące operacje magazynowe
               items:
                 - name: Rezerwacje w module zarządzania magazynem
@@ -2597,14 +2605,14 @@
                   items:
                     - name: Konfigurowanie pobierania dla grupy
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Pobieranie dla grupy sterowane przez system
+                      href: warehousing/system-directed-cluster-pick.md
                     - name: Konfigurowanie konteneryzacji
                       href: warehousing/tasks/set-up-containerization.md
                     - name: Potwierdzenie partii i numeru identyfikacyjnego
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Włączanie drukowania etykiet numeru identyfikacyjnego
                       href: warehousing/tasks/license-plate-label-printing.md
-                    - name: Skanowanie kodów kreskowych przy użyciu kamery w rozwiązaniu Dynamics 365 for Finance and Operations
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Potwierdzenie pobrania sztuk
                       href: warehousing/piece-picking-confirmation.md
                     - name: Materiały opakowań i opłaty
@@ -2615,14 +2623,18 @@
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Anulowanie obsługi wyjątków dotyczących pracy magazynowej
                       href: warehousing/cancel-warehouse-work.md
-                    - name: Pobieranie dla grupy sterowane przez system
-                      href: warehousing/system-directed-cluster-pick.md
                     - name: Harmonogram prac sterowany przez system
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Grupowanie wierszy pobrania
                       href: warehousing/pick-line-grouping.md
                     - name: Rozpisywanie na przedziały w magazynie
                       href: warehousing/warehouse-slotting.md
+                    - name: Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji
+                      href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Sortowanie towarów wychodzących
+                      href: warehousing/outbound-sorting.md
+                    - name: Umieszczenie na ścianie — odłożenie do sklepu
+                      href: warehousing/put-to-wall-put-to-store.md
                 - name: Uzupełnianie zapasów
                   items:
                     - name: Omówienie uzupełniania zapasów
@@ -2645,6 +2657,8 @@
                       href: warehousing/release-to-warehouse-rule.md
                     - name: Grupowanie szablonów grup czynności
                       href: warehousing/wave-template-grouping.md
+                    - name: Ponowne drukowanie i unieważnianie etykiet grupy czynności
+                      href: warehousing/reprint-and-void-wave-labels.md
                 - name: Zasady konsolidacji wysyłki
                   items:
                     - name: Zasady konsolidacji wysyłki
@@ -2715,6 +2729,10 @@
                       href: warehousing/work-line-details.md
                     - name: Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji
                       href: warehousing/location-license-plate-positioning.md
+                    - name: Zmień pulę pracy w pracy
+                      href: warehousing/change-work-pool-on-work.md
+                    - name: Konsolidacja pozycji — wykorzystanie lokalizacji
+                      href: warehousing/item-consolidation-location-utilization.md
             - name: Konfiguracja magazynu
               items:
                 - name: Konfiguracja magazynu
@@ -2729,6 +2747,8 @@
                       href: warehousing/wave-step-codes.md
                     - name: Konfigurowanie przetwarzania grupy czynności
                       href: warehousing/tasks/configure-wave-processing.md
+                    - name: Konfigurowanie i używanie drukowania etykiet grup czynności
+                      href: warehousing/configure-wave-label-printing.md
                     - name: Automatyczna aktualizacja wysyłek
                       href: warehousing/auto-update-shipment.md
                     - name: Tworzenie profilu lokalizacji
@@ -2753,8 +2773,6 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Skanowanie kodów kreskowych przy użyciu kamery w rozwiązaniu Dynamics 365 for Finance and Operations
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Mobilna obsługa kodów kreskowych
                       href: warehousing/mobile-barcode-support.md
                     - name: Konfigurowanie magazynu dla zamówień przeniesienia
@@ -2767,6 +2785,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Konfigurowanie urządzeń przenośnych do pracy magazynowej
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Skanowanie kodów kreskowych za pomocą aparatu w aplikacji magazynu
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Numer identyfikacyjny odbierany za pomocą aplikacji magazynu
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy w ramach zamówienia zakupu

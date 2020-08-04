@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z Dynamics 365 Commerce.
 author: josaw
 manager: AnnBe
-ms.date: 06/10/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 64241ef1c25359c7b3b305c4e8f2b24de7e8f5e4
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: aa18e7446a72a907fcad70f92ea529088b6cecbd
+ms.sourcegitcommit: 83c7e5ab54c1cad2e21e33769cc524cfa4213f58
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443925"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3539886"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
 
@@ -41,8 +41,35 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Funkcja punktów zaczepienia akcji danych została zaniechana z powodu problemów z wydajnością. |
-| **Zamieniona przez inną funkcję?**   | Zaleca się użycie [zastąpień akcji danych](../e-commerce-extensibility/data-action-overrides.md) do modyfikowania logiki biznesowej w warstwie akcji danych.|
+| **Zamieniona przez inną funkcję?**   | Zalecamy użycie [zastąpień akcji danych](../e-commerce-extensibility/data-action-overrides.md) do modyfikowania logiki biznesowej w warstwie akcji danych.|
 | **Powiązane obszary produktów**         | Działania na danych dotyczących rozszerzalności handlu elektronicznego |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Wycofane: począwszy od wydania 10.0.11 |
+
+### <a name="retail-sdk-support-for-visual-studio-2015-msbuild-140-and-retail-sdkreference-libraries-and-tools"></a>Obsługa modułu Retail SDK dla Visual Studio 2015, msbuild 14,0 i SDK\Reference biblioteki i narzędzia sieci sprzedaży
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Obsługa modułu Retail SDK dla Visual Studio 2015 została zaniechana i zaktualizowana w celu obsługi a 2017, msbuild 15.0 oraz wszystkie biblioteki referencyjne i narzędzia generatora generatora serwerów commerce w folderze RetailSDK\References są przenoszone do pakietów NuGet w celu uproszczenia modelu rozszerzeń i procesu uaktualniania zestawu SDK.|
+| **Zamieniona przez inną funkcję?**   | Zaleca się, aby informacje zawarte w [ramach migracji zestawu Retail SDK z Visual Studio 2015 do Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md) zostały zaktualizowane w systemie. |
+| **Powiązane obszary produktów**         | Rozszerzenia zestawu Retail SDK |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Wycofane: począwszy od wydania 10.0.11 |
+
+### <a name="retail-server-extension-using-iedmmodelextender-and-commercecontroller"></a>Rozszerzenie serwera Retail Server przy użyciu IEdmModelExtender i CommerceController
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Rozszerzenie serwera Retail korzystające z IEdmModelExtender i CommerceController zostało zastąpione w celu zapewnienia uproszczonego modelu rozszerzeń. Nowa implementacja będzie mieć tylko klasę kontrolera bez dodatkowej implementacji klasy IEdmModelExtender. Pozwala to również uniknąć zależności z określoną wersją protokołu OData (jeśli wersja protokołu OData jest zaktualizowana, może spowodować przerwanie rozszerzeń). |
+| **Zamieniona przez inną funkcję?**   |  Zaleca się korzystanie z modelu rozszerzeń klasy IController przez zaimportowanie pakietu NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts). |
+| **Powiązane obszary produktów**         | Rozszerzania usługi Retail Server |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | Wycofane: począwszy od wydania 10.0.11 |
+
+### <a name="hardware-station-extension-using-ihardwarestationcontroller"></a>Rozszerzenie Hardware station za pomocą IHardwareStationController
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Rozszerzenie Hardware station używające IHardwareStationController jest przestarzałe, aby zapewnić uproszczony model rozszerzeń. Nowa implementacja będzie mieć tylko klasę IController bez dodatkowej implementacji klasy i aby uniknąć współzależności z podstawowymi bibliotekami stacji sprzętowych, zanim wcześniej rozszerzenie musi odwoływać się do wielu bibliotek.) |
+| **Zamieniona przez inną funkcję?**   | Zalecamy korzystanie z modelu rozszerzeń klasy IController przez zaimportowanie pakietu NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts). |
+| **Powiązane obszary produktów**         | Rozszerzania aplikacji Hardware Station |
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | Wycofane: począwszy od wydania 10.0.11 |
 
