@@ -90,6 +90,8 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Commerce – strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Commerce w wersji 10.0.13 (październik 2020)
+                      href: get-started/whats-new-commerce-10-0-13.md
                     - name: Rozwiązanie Commerce w wersji 10.0.12 (sierpień 2020)
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Rozwiązanie Commerce w wersji 10.0.11 (lipiec 2020)
@@ -127,23 +129,23 @@
             - name: Katalog szkoleń
               items:
                 - name: Katalog szkoleń — strona główna
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Osoby podejmujące decyzje biznesowe
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?
                 - name: Użytkownicy biznesowi
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Menedżerowie projektów implementacji
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Administratorzy
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Deweloperzy
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Partnerska sprzedaż i marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Konsultanci funkcjonalni
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Architekci rozwiązań
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Poznawanie interfejsu użytkownika
               items:
                 - name: Elementy interfejsu użytkownika
@@ -310,6 +312,8 @@
                           href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
                         - name: Opcje Cała kwota i Obliczanie interwału dla kodów podatku
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+                        - name: Obliczanie zwolnienia z podatku
+                          href: tax-exempt-price-inclusive.md
                     - name: Konfigurowanie profilu powiadomienia
                       href: email-notification-profiles.md
                     - name: Sekwencje identyfikatorów
@@ -386,6 +390,8 @@
                           href: define-maintain-channel-clients-registers-hw-stations.md
                         - name: Kontrola kondycji urządzeń peryferyjnych i usług punktu sprzedaży
                           href: pos-healthcheck.md
+                        - name: Obsługa urządzeń peryferyjnych w sieci
+                          href: dev-itpro/network-peripherals.md
                     - name: Układy ekranu
                       items:
                         - name: Układy ekranu danych demonstracyjnych w aplikacji MPOS/CPOS
@@ -946,6 +952,8 @@
                       href: add-accordion.md
                     - name: Moduł tabularny
                       href: add-tab.md
+                    - name: Moduł iframe
+                      href: iframe-module.md
                 - name: Moduły marketingu
                   items:
                     - name: Moduł transparentu promocyjnego
@@ -968,6 +976,8 @@
                   items:
                     - name: Moduł pola zakupu
                       href: add-buy-box.md
+                    - name: Moduł galerii multimediów
+                      href: media-gallery-module.md
                     - name: Moduły ocen i recenzji
                       href: ratings-reviews-modules.md
                 - name: Moduły zakupu
@@ -980,10 +990,14 @@
                       href: add-checkout-module.md
                     - name: Moduł szczegółów zamówienia
                       href: order-confirmation-module.md
-                    - name: Moduł wyboru sklepu
-                      href: store-selector.md
                     - name: Moduł karty upominkowej
                       href: add-giftcard.md
+                - name: Moduły wyszukiwania sklepów
+                  items:
+                    - name: Moduł mapy
+                      href: map-module.md
+                    - name: Moduł wyboru sklepu
+                      href: store-selector.md
                 - name: Moduły zarządzania kontem
                   items:
                     - name: Strony i moduły zarządzania kontem
@@ -1938,7 +1952,7 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: Moduły podglądu i debugowania
                       href: e-commerce-extensibility/test-module.md
-                    - name: Testowanie modułów przy użyciu makiet
+                    - name: Moduły testowe z makietami modułu
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: Testowanie modułów przy użyciu makiet stron
                       href: e-commerce-extensibility/test-page-mock.md
