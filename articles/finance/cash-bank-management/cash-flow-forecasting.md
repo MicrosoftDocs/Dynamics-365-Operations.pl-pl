@@ -3,7 +3,7 @@ title: Prognozowanie przepływów pieniężnych
 description: Ten temat zawiera omówienie procesu prognozowania przepływów pieniężnych. Wyjaśniono również, jak prognozowanie przepływów pieniężnych jest zintegrowane z innych modułami w systemie.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9795758a60d7913d306488ae6fbbfb7f9865cfc4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
+ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188425"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3653783"
 ---
 # <a name="cash-flow-forecasting"></a>Prognozowanie przepływów pieniężnych
 
@@ -102,9 +102,16 @@ Obliczanie prognoz przepływów pieniężnych odbywa się na stronie **Oblicz pr
 - Aby wyczyścić wszystkie transakcje prognoz przepływów pieniężnych i wykonać ponowne obliczanie, w polu **Metoda obliczania prognoz przepływów pieniężnych** ustaw wartość **Suma**. Zalecamy stosowanie tej metody, jeśli prognozy przepływów pieniężnych nie były aktualizowane przez długi czas. 
 - Aby zaktualizować istniejące dane przepływów pieniężnych wyłącznie dla nowych transakcji, w polu **Metoda obliczania prognoz przepływów pieniężnych** ustaw wartość **Nowy**. Na stronie będzie wyświetlana data ostatniej sesji obliczania przepływów pieniężnych.
 
-Do prognozowania przepływów pieniężnych można także używać przetwarzania wsadowego. W celu zagwarantowania, że analizy prognostyczne są regularnie aktualizowane, skonfiguruj cykliczny proces wsadowy obliczania prognoz przepływów pieniężnych.
+Do prognozowania przepływów pieniężnych można także używać przetwarzania wsadowego. W celu zapewnienia, że analizy prognostyczne są regularnie aktualizowane, skonfiguruj cykliczny proces wsadowy obliczania prognoz przepływów pieniężnych.
 
-### <a name="reporting"></a>Raportowanie
+W wersji 10.0.13 zostało wydane ulepszenie procesu obliczania, które korzysta z struktury automatyzacji procesu w celu zaplanowania zadania obliczania przepływu pieniężnego. Jest to możliwe dzięki użyciu funkcji **Automatyzacja prognoz przepływów pieniężnych** w obszarze roboczym **Zarządzanie funkcjami**. Po włączeniu tego pola należy wybrać łącze **Automatyzacja prognoz przepływów pieniężnych**, aby wyświetlić stronę nowa automatyzacja, na której można zaplanować proces obliczania przepływu pieniężnego. Aby utworzyć nowy harmonogram prognozy przepływów pieniężnych, wybierz opcję **Utwórz nową automatyzację procesu**, a następnie wybierz opcję **Automatyzacja prognoz przepływów pieniężnych** w menu rozwijanym **Typ harmonogramu**. Należy określić harmonogram dla każdej firmy, dla której aktualizowane są dane prognozy przepływów pieniężnych.  Ta strona pokazuje również oczekujące zadania automatyzacji prognozy przepływów pieniężnych oraz zakończenie ostatniego zadania.  
+
+> [!NOTE] 
+> Jeśli istniejące zadania wsadowe są już zaplanowane dla prognoz przepływów pieniężnych, zostanie wyświetlony komunikat o błędzie i nie będzie możliwe włączenie tej funkcji. Istniejące zadania wsadowe będą musiały zostać wyczyszczone, aby można było włączyć tę funkcję. 
+
+Aby uzyskać więcej informacji, zobacz [Automatyzacja procesu](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+
+### <a name="reporting"></a>Raportowania
 
 Po obliczeniu prognozy przepływów pieniężnych należy odświeżyć informacje skojarzonej jednostki dla sprawozdawczości analitycznej. Na stronie **Magazyn jednostek** zaznacz miarę agregacji **LedgerCovLiquidityMeasurement** i kliknij przycisk **Odśwież**.
 
@@ -128,7 +135,7 @@ Obszar roboczy **Przegląd środków pieniężnych — wszystkie firmy** pokazuj
 
 Obszar roboczy **Przegląd środków pieniężnych — bieżąca firma** przedstawia analizy prognostyczne przepływów pieniężnych w walucie rozliczeniowej zdefiniowanej dla firmy. Walutę rozliczeniową używaną do analiz definiuje się na stronie **Księga**. Ten obszar roboczy zawiera przegląd prognozowania przepływów pieniężnych i sald kont bankowych dla bieżącej firmy. Wykres przychodów i rozchodów gotówkowych obrazuje przyszłe przepływy pieniężne i salda w walucie rozliczeniowej oraz dostarcza szczegółowych informacji o prognozowanych transakcjach. Widać także prognozowane salda w walutach.
 
-Aby uzyskać więcej informacji na temat analiz prognostycznych przepływów pieniężnych, zobacz temat o pakiecie zawartości usługi Power BI Przegląd środków pieniężnych.
+Aby uzyskać więcej informacji na temat analiz prognostycznych przepływów pieniężnych, zobacz temat [Przegląd środków pieniężnych — zawartość usługi Power BI](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content).
 
 Ponadto można wyświetlać dane prognozowania przepływów pieniężnych dla określonych kont, zamówień i towarów na następujących stronach:
 

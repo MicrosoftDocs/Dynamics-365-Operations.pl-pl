@@ -3,7 +3,7 @@ title: Tworzenie użytkowników Portalu klienta i zarządzanie nimi
 description: W tym temacie wyjaśniono, jak tworzyć konta użytkowników Portalu klienta i ustawiać dla nich uprawnienia.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: c56e41b8ea5039531205083b5b42aff05e05cf66
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: a751cbffd98b8d47ca7dad222f0ce374381a393d
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413999"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645320"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Tworzenie użytkowników Portalu klienta i zarządzanie nimi
 
@@ -30,11 +30,16 @@ Aby użytkownik mógł skorzystać z witryny sieci Web, musi zostać utworzony r
 
 Podczas samodzielnego rejestrowania użytkowników rekordy kontaktów są tworzone automatycznie. Dlatego nie można zagwarantować, że użytkownik wybierze odpowiednie konto klienta i firmę. Z drugiej strony proces zaproszenia umożliwia administratorowi przypisanie poprawnego konta klienta i firmy do rekordu kontaktu przed wysłaniem zaproszenia. Jeśli zastanawiasz się nad dostosowywaniem rozwiązania, aby użytkownicy mogli je zarejestrować samodzielnie, pamiętaj, aby wziąć pod uwagę ewentualne konsekwencje.
 
+## <a name="video"></a>Wideo
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
+
+Film [Zaproś klientów do rejestracji i korzystania z Twojego portalu klienta](https://youtu.be/drGUYHX9QIQ) (widoczny powyżej) znajduje się na [liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej w witrynie YouTube.
+
 ## <a name="prerequisite-setup"></a>Wymagania wstępne dotyczące konfiguracji
 
 Kontakty w portalach Power Apps są przechowywane jako rekordy w jednostkach **Kontakty** w Common Data Service. Podwójne zapisanie następnie synchronizuje te rekordy do Microsoft Dynamics 365 Supply Chain Management, jeśli jest to wymagane.
 
-![![Diagram systemu dla kontaktów Portalu klienta](media/customer-portal-contacts.png "Diagram systemu dla kontaktów Portalu klienta")](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
+![Diagram systemu dla kontaktów Portalu klienta](media/customer-portal-contacts.png "Diagram systemu dla kontaktów Portalu klienta")
 
 Przed rozpoczęciem zapraszania nowych odbiorców należy się upewnić, że mapowanie jednostek **Kontaktów** zostało włączone w trybie podwójnego zapisywania.
 

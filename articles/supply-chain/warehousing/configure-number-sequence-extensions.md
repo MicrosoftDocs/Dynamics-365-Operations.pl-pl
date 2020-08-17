@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3ee74ba108008ccef53fe3b904c71ddf5f51afb7
-ms.sourcegitcommit: 137e2bd30f0a85bd2e1baf1cf16b993edd2094f9
+ms.openlocfilehash: 2f4506d2c1808198d4b10e50f4635bcc21d934e1
+ms.sourcegitcommit: 0f877ee4b53cfb002b179a53a67c4f9adae354bf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "3546455"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3640406"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurowanie sekwencji identyfikatorów dla przepływów magazynowych
 
@@ -36,7 +36,7 @@ Ta funkcja dodaje następującą funkcjonalność:
 - Identyfikatory listów przewozowych mogą być generowane z góry.
 - Unikatową sekwencję identyfikatorów można wygenerować dla numerów numeru kodu kontenera wysyłkowego (SSCC)
 - Sekwencje identyfikatorów zgodne z GS1 można tworzyć dla numerów listów przewozowych i SSCC. Funkcja ta dodaje gotowe wsparcie dla numerów identyfikacyjnych, identyfikatorów kontenerów, identyfikatorów etykiet grup czynności i identyfikatorów listów przewozowych.
-- Konfiguracja numerów identyfikacyjnych jest elastyczna. Można na przykład uwzględnić lub wykluczyć sztuczną inteligencję (AI), np. zera wiodące (00).
+- Konfiguracja numerów identyfikacyjnych jest elastyczna. Można na przykład uwzględnić lub wykluczyć identyfikatory aplikacji (AI), np. zera wiodące (00).
 
 Ta funkcja zwiększa efektywność etykietowania kartonów oraz dostosowuje nowe numery generowane przez system.
 

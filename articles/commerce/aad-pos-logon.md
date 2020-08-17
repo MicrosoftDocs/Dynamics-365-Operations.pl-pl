@@ -3,7 +3,7 @@ title: Włącz uwierzytelnianie Azure Active Directory w celu autoryzacji w punk
 description: W tym temacie wyjaśniono, jak skonfigurować środowisko logowania w punkcie sprzedaży dla rozwiązania Microsoft Dynamics 365 Commerce, aby korzystało z uwierzytelniania Azure Active Directory.
 author: boycezhu
 manager: annbe
-ms.date: 05/20/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 4f5a02348e8cef44424ae5d6a49de02d762ba245
-ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
+ms.openlocfilehash: ccb2d62b09153d03b064d9661227f3499d67bca2
+ms.sourcegitcommit: dc1dcd0ccc40be5d45701114fa8c952c13488344
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3410042"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3641040"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Włącz uwierzytelnianie Azure Active Directory w celu autoryzacji w punkcie sprzedaży
 [!include [banner](includes/banner.md)]
@@ -63,6 +63,9 @@ Aby skojarzyć konto Azure AD z pracownikiem, wykonaj następujące kroki.
 1. Wybierz konto Azure AD, które jest zwracane, a następnie kliknij przycisk **OK**.
 
 Pola **alias**, **nazwa UPN** i **zewnętrzny identyfikator podrzędny** na karcie **Commerce** na stronie Szczegóły pracownika zostaną wypełnione.
+
+> [!NOTE]
+> Po zaktualizowaniu rekordu pracownika, na przykład w przypadku skojarzenia nowego konta Azure AD, zmiany hasła lub aktualizacji książki adresowej pracownika, zaleca się uruchomienie harmonogramu dystrybucji **1060** (**Pracownicy**) w celu zsynchronizowania najnowszych informacji o pracownikach z kanałem. Dzięki temu aplikacja punktu sprzedaży może pobierać poprawne dane na potrzeby sprawdzania uwierzytelniania i autoryzacji użytkowników.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

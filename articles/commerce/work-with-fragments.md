@@ -3,7 +3,7 @@ title: Praca z fragmentami
 description: W tym temacie opisano, dlaczego, kiedy i jak stosować fragmenty w Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f29046ded47ed9c49a2cc841aa7c1f6492b49aec
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 7ae834f38fe380ce0a66f5b1968f1261af670979
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124366"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645998"
 ---
 # <a name="work-with-fragments"></a>Praca z fragmentami 
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano, dlaczego, kiedy i jak stosować fragmenty w Microsoft Dynamics 365 Commerce.
 
@@ -62,9 +62,10 @@ Można utworzyć nowy fragment lub zapisać istniejącą konfigurację modułu j
 Aby przekonwertować poprzednio skonfigurowany moduł na fragment do ponownego użycia, wykonaj następujące kroki.
 
 1. Otwórz stronę lub szablon zawierający moduł, który chcesz przekonwertować na fragment.
-1. W okienku konspektu z lewej strony wybierz przycisk wielokropka (**...**) obok nazwy modułu. 
-1. Wybierz **Udostępnij jako fragment**. 
-1. Zostanie wyświetlone okno dialogowe. Wprowadź nazwę i metadane dla fragmentu.
+1. W okienku konspektu z lewej strony lub bezpośrednio na kanwie głównej wybierz wcześniej skonfigurowany moduł.
+1. Wybierz wielokropek (**...**) obok nazwy modułu w panelu konspektu lub na pasku narzędzi wybranego modułu w obszarze roboczym. 
+1. Wybierz **Udostępnij jako fragment strony**. 
+1. W oknie dialogowym **Zapisz jako fragment strony** wprowadź nazwę fragmentu.
 1. Wybierz przycisk **OK**, aby zapisać konfigurację modułu jako fragment, który można dodać do innych stron.
 
 Poniższy obraz przedstawia sposób zapisywania konfiguracji modułu jako fragmentu.
@@ -94,15 +95,16 @@ W poniższych procedurach opisano sposób dodawania, usuwania i edytowania fragm
 
 Aby dodać fragment do strony, wykonaj następujące kroki.
 
-1. W okienku konspektu z lewej strony wybierz kontener lub gniazdo, do którego można dodać moduły podrzędne.
-1. Wybierz przycisk wielokropka obok nazwy kontenera lub gniazda, a następnie wybierz opcję **Dodaj fragment**. Zostanie wyświetlone okno dialogowe.
+1. W panelu konturu po lewej stronie lub bezpośrednio w głównym obszarze roboczym wybierz kontener lub boks, do którego można dodać moduły podrzędne.
+1. W okienku online wybierz wielokropek (**...**) obok nazwy kontenera lub gniazda.  Alternatywnie, jeśli jest używana główna kanwa, należy wybrać symbol plus (**+**).  
+1. Wybierz opcję **Dodaj fragment**.
 
     ![Zrzut ekranu, jak dodać istniejący fragment do gniazda lub kontenera](./media/add-fragment.png)
  
     > [!NOTE]
     > Jeśli kontener lub gniazdo nie obsługuje nowych modułów podrzędnych, opcja **Dodaj fragment** jest niedostępna
     
-1. W oknie dialogowym wyszukaj i wybierz fragment do dodania. Jeśli na liście nie ma dostępnych fragmentów, może być konieczne utworzenie fragmentu z typu modułu, który jest obsługiwany przez wybrany kontener lub gniazdo.
+1. W oknie dialogowym **Dodaj fragment** wyszukaj i wybierz fragment do dodania. Jeśli na liście nie ma dostępnych fragmentów, może być konieczne utworzenie fragmentu z typu modułu, który jest obsługiwany przez wybrany kontener lub gniazdo.
 1. Wybierz wybrany fragment do dodania go do kontenera lub gniazda na stronie.
 
     ![Zrzut ekranu okna modalnego selektora fragmentów](./media/fragment-picker.png)
@@ -114,7 +116,7 @@ Aby dodać fragment do strony, wykonaj następujące kroki.
 
 Aby usunąć fragment z gniazda lub kontenera na stronie, wykonaj następujące kroki.
 
-1. W okienku konspektu z lewej strony wybierz przycisk wielokropka obok nazwy fragmentu do usunięcia, a następnie wybierz ikonkę kosza na śmieci.
+1. W panelu konturu po lewej stronie wybierz wielokropek (**...**) obok nazwy fragmentu do usunięcia, a następnie wybierz symbol kosza.  Alternatywnie można wybrać fragment na kanwie i wybrać symbol kosza na pasku narzędzi fragmentu.
 1. Po wyświetleniu monitu o potwierdzenie zamiaru usunięcia fragmentu wybierz przycisk **OK**.
 
 > [!NOTE]

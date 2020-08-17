@@ -3,7 +3,7 @@ title: Operacja zapasów przychodzących w punkcie sprzedaży
 description: W tym temacie opisano możliwości przychodzących operacji magazynowych w punkcie sprzedaży (POS).
 author: hhaines
 manager: annbe
-ms.date: 07/10/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cf3bec8ab0bfafccfe4b2b5b245d00fd6aeff635
-ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
+ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
+ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3551608"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3627545"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Operacja zapasów przychodzących w punkcie sprzedaży
 
@@ -33,7 +33,7 @@ ms.locfileid: "3551608"
 W systemie Microsoft Dynamics 365 Commerce w wersji 10.0.10 lub późniejszych operacje przychodzące i wychodzące w punkcie sprzedaży (POS) zastępują operację pobrania i przyjęcia.
 
 > [!NOTE]
-> W wersji 10.0.10 lub nowszej każda nowa funkcja w punkcie sprzedaży, która jest związana z odbieraniem zapasów sklepu z zamówieniami zakupu i zamówieniami przeniesienia, zostanie dodana do operacji w punkcie sprzedaży dla **operacji przychodzących**. Jeśli obecnie jest używana operacja pobrania i przyjęcia w punkcie sprzedaży, zaleca się opracowanie strategii przenoszenia z tej operacji do nowych operacji przychodzących i wychodzących. Mimo że operacja pobrania i przyjęcia nie zostanie usunięta z produktu, nie będzie już można w niej zainwestować, z perspektywy funkcjonalnej lub wydajności po wersji 10.0.9.
+> W wersji 10.0.10 Commerce lub nowszej każda nowa funkcja w punkcie sprzedaży, która jest związana z odbieraniem zapasów sklepu z zamówieniami zakupu i zamówieniami przeniesienia, zostanie dodana do operacji w punkcie sprzedaży dla **operacji przychodzących**. Jeśli obecnie jest używana operacja pobrania i przyjęcia w punkcie sprzedaży, zaleca się opracowanie strategii przenoszenia z tej operacji do nowych operacji przychodzących i wychodzących. Mimo że operacja pobrania i przyjęcia nie zostanie usunięta z produktu, nie będzie już można w niej zainwestować, z perspektywy funkcjonalnej lub wydajności po wersji 10.0.9.
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Wymaganie wstępne: Skonfiguruj strukturę dokumentów asynchronicznych
 
@@ -153,6 +153,20 @@ Funkcji **Anulowanie odbioru** należy użyć na pasku aplikacji tylko wtedy, gd
 W przypadku przyjmowania zapasów można użyć funkcji **Wstrzymaj przyjęcie**, jeśli proces ma zostać podzielony od procesu odbierającego. Na przykład można wykonać inną operację z punktu sprzedaży, na przykład dzwonienie do sprzedaży odbiorcy lub opóźnienie księgowania paragonu.
 
 Po wybraniu opcji **Wstrzymaj przyjęcie**stan dokumentu zostanie zmieniony na **Wstrzymany**. Dlatego użytkownicy będą wiedzieć, że wprowadzono dane do dokumentu, ale dokument nie został jeszcze zatwierdzony. Aby wznowić proces przyjmowania, wybierz wstrzymany dokument, a następnie wybierz **Szczegóły zamówienia**. Wszystkie **Przyjmowane teraz** ilości odbieranych towarów są zachowywane i można je przeglądać z poziomu widoku **Pełna lista zamówień**.
+
+### <a name="review"></a>Przegląd
+
+Przed ostatecznym potwierdzeniem przyjęcia do centrali Commerce (HQ) można skorzystać z funkcji przeglądu w celu sprawdzenia poprawności dokumentu przychodzącego. Przegląd zaalarmuje o brakujących lub niepoprawnych danych, które mogą spowodować niepowodzenie przetwarzania i zapewni możliwość rozwiązania problemów przed wysłaniem prośby o pokwitowanie. Aby włączyć funkcję **Przeglądu** na pasku aplikacji, włącz opcję **Włącz walidację w przychodzących i wychodzących operacjach magazynowych POS** w obszarze roboczym **Zarządzanie funkcjami** w Commerce Headquarter (HQ).
+
+Funkcja **Przeglądu** sprawdza poprawność następujących problemów w dokumencie przychodzącym:
+
+- **Nadwyżka w odbiorze** — ilość odebrana teraz jest większa niż zamówiona Ilość. Waga tego zagadnienia jest określana na podstawie konfiguracji nadwyżki w module Commerce Headquarter (HQ).
+- **Niedobór w odbiorze** — ilość odebrana teraz jest mniejsza niż zamówiona Ilość. Waga tego zagadnienia jest określana na podstawie konfiguracji niedoboru w module Commerce Headquarter (HQ).
+- **Numer seryjny** — numer seryjny nie został podany lub potwierdzony dla towaru seryjnego, który wymaga zarejestrowania numeru seryjnego w magazynie.
+- **Lokalizacja nie ustawiona** — nie określono lokalizacji dla pozycji kontrolowanej w lokalizacji, w której lokalizacja nie może być pusta.
+- **Usunięte wiersze** — Zamówienie zawiera wiersze usunięte przez użytkownika z modułu Commerce Headquarter (HQ), który nie jest znany w aplikacji punktu sprzedaży.
+
+Jeśli dla parametru **Włącz automatyczne sprawdzanie poprawności** zostanie ustawiona wartość **Tak** w **Parametry Commerce** > **Zapasy** > **Zapasy w sklepie**, aby wykonać sprawdzanie poprawności po wybraniu funkcji **Zakończenie odbioru**.
 
 ### <a name="finish-receiving"></a>Zakończ przyjmowanie
 

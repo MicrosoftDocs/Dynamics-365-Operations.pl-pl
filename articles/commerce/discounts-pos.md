@@ -3,7 +3,7 @@ title: Wyświetl rabaty w punkcie sprzedaży
 description: W tym temacie wyjaśniono, w jaki sposób Microsoft Dynamics 365 Commerce pomaga współpracownikom ds. sprzedaży dowiedzieć się o promocjach i sposobach ich wykorzystania do sprzedaży krzyżowej i dodatkowej.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 0ffa7ca6294c7b523ec743f1cb9bc4aef8ef46a8
-ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
+ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
+ms.sourcegitcommit: db1a8ffcaebc2896e8f528d7807c54f8597f450e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3334715"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3638189"
 ---
 # <a name="show-discounts-in-pos"></a>Wyświetl rabaty w punkcie sprzedaży
 
@@ -54,7 +54,7 @@ Na stronie **wszystkie rabaty** sprzedawcy mogą również przeszukiwać rabaty 
 
 Rabaty wspólne, takie jak rabaty ilościowe, rabaty za skład zamówienia oraz rabaty progowe, to świetny sposób na zwiększenie atrakcyjności dla odbiorców w celu zakupu większej liczby produktów w celu uzyskania większych rabatów. Dzięki temu zwiększa się także rozmiar koszyka odbiorcy i przychodu sprzedawcy detalicznego. Te rabaty można wystawić na stronach sieci handlu elektronicznego, na nośnikach społecznościowych i na transparentach w sklepie.
 
-Jednak nawet jeśli są używane wszystkie te metody reklamowe, odbiorcy mogą przegapić szansę skorzystania z promocji. Aby pracownicy ds. sprzedaży mogli łatwiej identyfikować, jakie promocje mają zastosowanie do wybranego wiersza, a nawet do całego koszyka, detaliści mogą dodać przycisk dla operacji „Wyświetl dostępne rabaty” do dowolnej siatki przycisków na stronie **Transakcja**. Dzięki temu pracownik ds. sprzedaży może wybrać wiersz transakcji, a następnie wybrać przycisk, aby wyświetlić wszystkie rabaty dostępne dla wybranego wiersza. Sprzedawca może również wybrać inną kartę, aby wyświetlić rabaty dotyczące całej transakcji.
+Jednak nawet jeśli są używane wszystkie te metody reklamowe, odbiorcy mogą przegapić szansę skorzystania z promocji. Aby pracownicy ds. sprzedaży mogli łatwiej identyfikować, jakie promocje mają zastosowanie do wybranego wiersza, a nawet do całego koszyka, detaliści mogą dodać przycisk dla operacji **„Wyświetl dostępne rabaty”** do dowolnej siatki przycisków na stronie **Transakcja**. W rezultacie pracownik ds. sprzedaży może wybrać wiersz transakcji, a następnie wybrać przycisk, aby wyświetlić wszystkie rabaty dostępne dla wybranego wiersza. Sprzedawca może również wybrać inną kartę, aby wyświetlić rabaty dotyczące całej transakcji. Należy pamiętać, że w **Wyświetl dostępne rabaty** nie są wyświetlane rabaty, które zostały już zastosowane w wierszu sprzedaży, ponieważ informacje o rabatach są już widoczne w wierszu sprzedaży. Celem tego scenariusza jest wyświetlenie tylko tych rabatów, które nie zostały jeszcze zastosowane. Wyjątkiem jest rabaty stosowane na podstawie kuponu oznaczonego jako „Zastosuj bez kodu kuponu”. Ułatwia to, aby sprzedaż była powiązana z łatwym usuwaniem kuponu, który je zastosował.
 
 Strona **Wszystkie rabaty** zawiera tylko rabaty, które nie konkurują z żadnymi zastosowanymi rabatami. To zachowanie pomaga zagwarantować, że jeśli sprzedawca poinformuje klienta o rabacie, a klient podejmie wymaganą akcję (np. klient kupuje jeszcze jedną pozycję, aby uzyskać 10% rabatu), rabat zostanie zastosowany do transakcji. Rabaty oparte na kuponach są wyświetlane tylko po włączeniu opcji **Zastosuj bez kodu kuponu**.
 

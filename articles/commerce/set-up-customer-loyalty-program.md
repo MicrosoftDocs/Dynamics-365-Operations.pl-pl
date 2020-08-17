@@ -3,7 +3,7 @@ title: Omówienie programu lojalnościowego
 description: W tym temacie opisano funkcje programów lojalnościowych zawarte w aplikacji Dynamics 365 Commerce oraz odnośne procedury konfiguracyjne, które ułatwią sprzedawcy detalicznemu rozpoczęcie tworzenia programów lojalnościowych.
 author: scott-tucker
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 337ede63cb9175f2674bae8f2caaac5f1ba5f5cb
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fd0ceefe1890214ab5fe2f619f6bf8ce718dec11
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023715"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613210"
 ---
 # <a name="loyalty-overview"></a>Omówienie programu lojalnościowego
 
@@ -55,7 +55,7 @@ W poniższej tabeli opisano każdy składnik i miejsce, w którym jest on używa
 | Konfigurowanie rabatów (wymaganie wstępne)                  | Konfigurowanie rabatów, które możesz zaoferować odbiorcom lojalnościowych. Możesz na przykład zaoferować 5 procent mniej za wszystkie produkty odzieżowe. | Rabaty muszą zostać dodane do grup cenowych, aby zostały uwzględnione w programie lojalnościowym. Grupy cenowe są przypisywane do warstwy lojalnościowej i programów lojalnościowych. |
 | Konfigurowanie grup cenowych (wstępne wymaganie)               | Grupy cenowe są używane do tworzenia i obsługi cen i rabatów dla produktów. Konfigurowanie grup cenowych, zawierających rabaty, które mają zastosowanie do programów lojalnościowych. | Grupy cenowe są przypisywane do warstwy lojalnościowej i programów lojalnościowych. |
 | Konfigurowanie kanałów (wymaganie wstępne)                   | Kanały handlowe to sklepy uczestniczące w programach lojalnościowych, takie jak sklepy tradycyjne, sklepy internetowe i biura obsługi. Przed przypisaniem programów lojalnościowych do nich, należy skonfigurować kanały. | Kanały należy przypisać do programu lojalnościowego w przypadku, gdy kanał bierze udział w programie lojalnościowym. |
-| Konfigurowanie metody płatności w programie lojalnościowym (wymaganie wstępne) | Należy skonfigurować metodę płatności, zanim będzie można użyć karty lojalnościowej przy kasie i zanim będzie można zrealizować punkty lojalnościowe jako część programu lojalnościowego. Metodę płatności w programie lojalnościowym należy również dodać do kanału, aby odbiorcy mogli realizować ich punkty lojalnościowe jako płatność dla produktów. | Konfiguracja metody typu płatności w programie lojalnościowym, a następnie przypisanie metody płatności w programie lojalnościowym w kanałach, uczestniczących w programie lojalnościowym. |
+| Konfigurowanie metody płatności w programie lojalnościowym (wymaganie wstępne) | Aby mieć pewność, że punkty lojalnościowe można wykorzystać w dowolnym kanale, na przykład w sklepach stacjonarnych, sklepach internetowych lub telefonicznych centrach obsługi, należy ustawić zakres pojemników dla kart lojalnościowych na stronie **Numery kart**. | Konfiguracja metody typu płatności w programie lojalnościowym, a następnie przypisanie metody płatności w programie lojalnościowym w kanałach, uczestniczących w programie lojalnościowym. |
 | Konfigurowanie zakresów dat                            | Zakresy dat umożliwiają elastyczne ustawianie odstępów czasu dla warstw lojalnościowych. Użyj zakresów dat do określenia, jak długo klient może zostać w warstwie lub ile czasu klient ma na ukończenie aktywności, by spełnić wymagania warstwy. | Zakresy dat mają zastosowanie tylko w przypadku korzystania z warstw w programach lojalnościowych. Można wybrać zakres dat, ktory ma zastosowanie do warstwy programu, a także zakresy dat, które dotyczą reguł warstwy programu. |
 | Konfigurowanie punktów lojalnościowych                             | Punkty lojalnościowe to typy nagród oferowane odbiorcom. Punkty lojalnościowe mogą być wymienialne lub nie. Wymienialne punkty lojalnościowe mogą zostać wymienione na produkty. Niewymienialne punkty lojalnościowe są używane do celów śledzenia lub do przeniesienia odbiorcy do następnej warstwy w programie lojalnościowym. | Punkty lojalnościowe znajdują odwołanie w regułach warstwy i są używane do kwalifikowania odbiorcy dla określonej warstwy. Punkty lojalnościowe znajdują też odwołanie w programach lojalnościowych w regułach zdobywania i realizacji punktów. W regułach zdobywania, można określić nagrody, które odbiorcy mogą uzyskać dla określonego działania. W regułach wykorzystywania określa się nagrody, które odbiorca może zrealizować. |
 | Konfigurowanie programów lojalnościowych                          | Programy lojalnościowe to podstawowa jednostka lojalnościowa, jaką oferujesz. Każdy program lojalnościowy może mieć przypisane warstwy lojalnościowe. Grupy cen i rabatów są przypisywane do programów lojalnościowych na poziomie programu lub poziomie warstwy. | Dla programów programów lojalnościowych tworzy się schematy lojalnościowe. Karty lojalnościowe przypisuje się do programów lojalnościowych, karty lojalnościowe można przypisać do odbiorcy. Kanały uczestniczą w programach lojalnościowych, które są przypisane do schematów lojalnościowych. Wszyscy odbiorcy, którzy mają kartę lojalnościową, mogą uczestniczyć w programach lojalnościowych, które są przypisane do karty. |
