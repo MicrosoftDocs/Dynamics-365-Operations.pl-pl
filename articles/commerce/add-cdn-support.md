@@ -3,7 +3,7 @@ title: Dodaj obsługę dla sieci dostarczania zawartości (CDN)
 description: W tym temacie opisano, jak dodać sieć dostarczania treści (CDN) do środowiska Microsoft Dynamics 365 Commerce.
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: febef3bcc06dc1b5868a0decebee33d76110c505
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533351"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646046"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Dodaj obsługę dla sieci dostarczania zawartości (CDN)
 
@@ -35,7 +35,7 @@ W tym temacie opisano, jak dodać sieć dostarczania treści (CDN) do środowisk
 
 Podczas konfigurowania środowiska e-Commerce w Dynamics 365 Commerce można skonfigurować je do pracy z usługą CDN. 
 
-Domenę niestandardową można włączyć podczas procesu zastrzegania dla środowiska e-Commerce. Można również skorzystać z żądania usługi w celu skonfigurowania go po zakończeniu procesu zastrzegania. Proces zastrzegania dla środowiska e-Commerce generuje nazwę hosta skojarzoną ze środowiskiem. Ta nazwa hosta ma następujący format: gdzie *e-commerce-tenant-name* jest nazwą Twojego środowiska:
+Domenę niestandardową można włączyć podczas procesu zastrzegania dla środowiska e-Commerce. Można również skorzystać z żądania usługi w celu skonfigurowania go po zakończeniu procesu zastrzegania. Proces zastrzegania dla środowiska e-Commerce generuje nazwę hosta skojarzoną ze środowiskiem. Ta nazwa hosta ma następujący format: gdzie \<*e-commerce-tenant-name*\> jest nazwą Twojego środowiska:
 
 &lt;e-commerce-tenant-name&gt;.commerce.dynamics.com
 
@@ -65,7 +65,7 @@ Ze środowiskiem Commerce można używać dowolnej usługi CDN. Oto dwa przykła
 Proces konfiguracji sieci CDN składa się z następujących ogólnych kroków:
 
 1. Dodaj hosta frontonu
-1. Skonfiguruj pulę zaplecza
+1. Skonfiguruj pulę zaplecza.
 1. Konfigurowanie reguł routingu i buforowania
 
 ### <a name="add-a-front-end-host"></a>Dodaj hosta frontonu.
@@ -74,18 +74,20 @@ Można użyć dowolnej usługi CDN, ale z przykładu w tym temacie jest używana
 
 Aby uzyskać informacje na temat konfigurowania usługi Azure Front Door Service, odwiedź witrynę [Szybki start: Tworzenie drzwi frontowych dla globalnej aplikacji sieci Web o dużej dostępności](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
 
-### <a name="configure-a-back-end-pool-in-azure-front-door-service"></a>Skonfiguruj pulę zaplecza w usłudze Azure Front Door Service
+### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Skonfiguruj pulę zaplecza w usłudze Azure Front Door Service
 
 Aby skonfigurować pulę zaplecza w usłudze Azure Front Door Service, wykonaj nastepujące kroki.
 
 1. Dodaj **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** do puli zaplecza jako hosta niestandardowego z pustym nagłówkiem hosta zaplecza końcowego.
-1. W obszarze **sondowanie kondycji** w polu **Ścieżka** wprowadź **/keepalive**.
-1. W polu **interwały (sekundy)** wprowadź wartość **255**.
 1. W obszarze **równoważenie obciążenia** pozostaw wartości domyślne.
 
-Na poniższej ilustracji przedstawiono okno dialogowe **Dodawanie puli wewnętrznej bazy danych** w usłudze Azure Front Door Service.
+Na poniższej ilustracji przedstawiono okno dialogowe **Dodawanie zaplecza** w usłudze Azure Front Door Service z podaną nazwą hosta zaplecza.
 
 ![Okno dialogowe Dodawanie puli wewnętrznej bazy danych](./media/CDN_BackendPool.png)
+
+Na poniższej ilustracji przedstawiono okno dialogowe **Dodawanie puli zaplecza** w usłudze Azure Front Door Service z domyślnymi wartościami równoważenia obciążenia.
+
+![Kontynuacja Okno dialogowe Dodawanie puli wewnętrznej bazy danych](./media/CDN_BackendPool_2.png)
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Konfigurowanie reguł w usłudze Azure Front Door Service
 
@@ -121,20 +123,22 @@ Na poniższej ilustracji przedstawiono okno dialogowe **Dodawanie reguły** w us
 
 ![Onko dialogowe dodaj regułę](./media/CDN_CachingRule.png)
 
-Po wdrożeniu początkowej konfiguracji należy dodać domenę niestandardową do konfiguracji usługi Azure Front Door Service. Aby dodać domenę niestandardową (na przykład `www.fabrikam.com`), należy skonfigurować nazwę kanoniczną (CNAME) dla domeny.
+> [!WARNING]
+> Jeśli domena, której będziesz korzystać, jest już aktywna i na żywo, Utwórz bilet pomocy technicznej na kafelku **Pomocy technicznej** w usłudze [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/), aby uzyskać pomoc w następnych etapach. Aby uzyskać więcej informacji, przejrzyj temat [Uzyskaj pomoc techniczną dla aplikacji Finance and Operations lub usług Lifecycle Services (usługi LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+Jeśli Twoja domena jest nowa i nie jest wcześniej istniejącą domeną aktywną, możesz dodać swoją domenę niestandardową do konfiguracji usługi Azure Front Door. Umożliwi to kierowanie ruchu internetowego do Twojej witryny za pośrednictwem wystąpienia usługi Azure Front Door. Aby dodać domenę niestandardową (na przykład `www.fabrikam.com`), należy skonfigurować nazwę kanoniczną (CNAME) dla domeny.
 
 Na poniższej ilustracji przedstawiono okno dialogowe **Konfiguracja CNAME** w usłudze Azure Front Door Service.
 
 ![Okno dialogowe konfiguracji CNAME](./media/CNAME_Configuration.png)
-
-> [!NOTE]
-> Jeśli domena, której będziesz używał, jest już aktywna i online, skontaktuj się z pomocą techniczną, aby włączyć tę domenę przy użyciu usługi Azure Front Door Service, aby skonfigurować test.
 
 Za pomocą usługi Azure Front Door Service można zarządzać certyfikatem lub można skorzystać z własnego certyfikatu dla domeny niestandardowej.
 
 Na poniższej ilustracji przedstawiono okno dialogowe **Niestandardowa domena HTTPS** w usłudze Azure Front Door Service.
 
 ![Okno dialogowe domeny niestandardowej HTTPS](./media/Custom_Domain_HTTPS.png)
+
+Aby uzyskać szczegółowe instrukcje dotyczące dodawania domeny niestandardowej do Azure Front Door, zamieszczono w temacie [Dodawanie domeny niestandardowej do swoich Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
 
 Sieć CDN powinna być teraz poprawnie skonfigurowana, aby można było jej używać z witryną Commerce.
 

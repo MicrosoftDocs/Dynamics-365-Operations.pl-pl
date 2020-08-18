@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje w poprzednich wersjach
 description: W tym temacie opisano funkcje, które zostały usunięte lub które zostały zaplanowane do usunięcia z systemu Dynamics 365 for Finance and Operations i poprzednich wydań tego produktu.
 author: sericks007
 manager: AnnBe
-ms.date: 06/23/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
-ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
+ms.openlocfilehash: bccc9a0a2b0abfdeba248007cfdb2bd599e35f48
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3500419"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645396"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
@@ -62,7 +62,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Tak |
 | **Powiązane obszary produktów**         | Zgłoszenia |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Przestarzałe: Do 1 kwietnia 2020 r. deweloperzy muszą zacząć korzystać z nowego interfejsu API. |
+| **Stan**                         | Przestarzałe: do 1 kwietnia 2020, deweloperzy muszą skorzystać z interfejsów API platformy, które znajdują się w klasie **HasFunction**. |
 
 ### <a name="hashcomputesha1hashstring-message"></a>Hash.ComputeSHA1Hash(komunikat)
 
@@ -72,7 +72,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Tak |
 | **Powiązane obszary produktów**         | Platforma |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Przestarzałe: Do 1 kwietnia 2020 r. deweloperzy muszą zacząć korzystać z nowego interfejsu API. |
+| **Stan**                         | Przestarzałe: do 1 kwietnia 2020, deweloperzy muszą skorzystać z interfejsów API platformy, które znajdują się w klasie **HasFunction**. |
 
 
 ### <a name="formdatetimecontrolsetutcstring"></a>FormDateTimeControl.setUtcString()

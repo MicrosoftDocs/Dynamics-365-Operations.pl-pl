@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 50362ccd9df7a44961bd6e46fa16779829b1c408
-ms.sourcegitcommit: 96ec8b7252296de0049bff406c743f8da9e0f0be
+ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "3606829"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651673"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
@@ -38,8 +38,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.13 aplikacji Finance and Operations
 
 > [!NOTE]
-> Wersja 10.0.13 nie została jeszcze wydana. Te informacje służą jedynie do planowania. Zawartość i funkcje w wersji 10.0.13 mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań, zobacz [Dostępność aktualizacji usługi](../../fin-ops/get-started/public-preview-releases.md).
-
+> Wersja 10.0.13 to wersja zapoznawcza. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Dostępność aktualizacji usługi](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Uaktualnienie trzech bibliotek składników jQuery 
 
@@ -50,6 +49,27 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Powiązane obszary produktów**         | Rozszerzalne kontrolki, w szczególności niestandardowy kod JavaScript wykorzystujący przestarzałe lub usunięte interfejsy API |
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | W przypadku wersji 10.0.13/aktualizacji platformy 37 klienci mogą opcjonalnie przełączać się do najnowszych bibliotek, włączając funkcję „Uaktualnij trzy biblioteki składników jQuery”. Przechodzenie do nowych bibliotek będzie obowiązkowe wraz z wydaniem z kwietnia 2021, aby umożliwić migrację interfejsów API, których dotyczy problem.   |
+
+### <a name="existing-grid-controlforcelegacygrid-api"></a>Istniejący interfejs API kontroli/forceLegacyGrid() sieci
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Istniejąca kontrolka siatki jest zastępowany nową kontrolką siatki. |
+| **Zamieniona przez inną funkcję?**   | [Nowa kontrolka siatki](../..//fin-ops/get-started/grid-capabilities.md) |
+| **Powiązane obszary produktów**         | Klient sieci Web |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | W wersji 10.0.13 nowa kontrola sieci jest ogólnie dostępna, a klienci mogą opcjonalnie włączyć tę funkcję. Nowa kontrola sieci stanie się obowiązkowa w wersji z października 2021 r. Gdy nowa kontrola sieci stanie się obowiązkowa, API **forceLegacyGrid()** nie będzie już honorowane. |
+
+### <a name="personalization-without-saved-views"></a>Personalizacja bez zapisanych widoków 
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Podsystem personalizacji został zastąpiony funkcją zapisane widoki, dzięki czemu ma lepszą wydajność i oferuje dodatkowe możliwości. |
+| **Zamieniona przez inną funkcję?**   | Zapisane widoki |
+| **Powiązane obszary produktów**         | Klient sieci Web |
+| **Opcja wdrażania**              | Wszystkich |
+| **Stan**                         | W wersji 10.0.13/platform aktualizację 37, funkcja zapisanych widoków jest ogólnie dostępna, a odbiorcy mogą opcjonalnie włączyć tę funkcję. Funkcja zapisanych widoków stanie się obowiązkowa w wersji z października 2021 r. |
+
 
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.12 aplikacji Finance and Operations
 

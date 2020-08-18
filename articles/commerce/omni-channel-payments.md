@@ -3,7 +3,7 @@ title: Omówienie płatności wielokanałowych
 description: W tym temacie są omówione płatności wielokanałowe w programie Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2251e523f7dfa3a06f0c45a4e156dbe097587f9a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023739"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613184"
 ---
 # <a name="omni-channel-payments-overview"></a>Omówienie płatności wielokanałowych
 
@@ -68,11 +68,13 @@ Wymagane są następujące składniki i kroki konfiguracji:
 
 - **Integracja eCommerce:** integracja z modułem Commerce jest wymagana do obsługi scenariuszy, w których zamówienie pochodzi z witryny handlowej online. Aby uzyskać więcej informacji na temat zestawu SDK handlu elektronicznego modułu Retail, zobacz temat [Zestaw SDK platformy handlu elektronicznego](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). W środowisku demonstracyjnym referencyjna witryna handlowa obsługuje scenariusze płatności wielokanałowych. 
 - **Konfiguracja płatności online:** konfiguracja kanału online musi zawierać łącznik płatności, który został zaktualizowany w celu obsługi płatności wielokanałowych. Alternatywnie można użyć gotowego łącznika płatności. Aby uzyskać informacje o konfigurowaniu łącznika płatności Adyen dla sklepów internetowych, zobacz temat [Łącznik płatności Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). Oprócz kroków konfiguracji handlu elektronicznego, które opisano w tym temacie, w ustawieniach łącznika Adyen wartość parametru **Zezwalaj na zapisywanie informacji o płatności w handlu elektronicznym** musi zostać zmieniona na **true**. 
-- **Konfiguracja płatności wielokanałowych:** na zapleczu przejdź do opcji **Sprzedaż detaliczna i komercyjna \> Ustawienia Headquarters \> Parametry \> Wspólne parametry sieci sprzedaży komercyjnej**. Następnie na karcie **Płatności wielokanałowe** zmień ustawienie opcji **Użyj płatności wielokanałowych** na **Tak**.
+- **Konfiguracja płatności wielokanałowych:** na zapleczu przejdź do opcji **Sprzedaż detaliczna i komercyjna \> Ustawienia Headquarters \> Parametry \> Wspólne parametry sieci sprzedaży komercyjnej**. Następnie na karcie **Płatności wielokanałowe** zmień ustawienie opcji **Użyj płatności wielokanałowych** na **Tak**. W Commerce w wersji 10.0.12 lub nowszej to ustawienie znajduje się w obszarze roboczym **Zarządzanie funkcjami**. Wybierz funkcję **Płatności wielokanałowe** i kliknij przycisk **Włącz teraz**. 
 - **Usługi płatności:** biuro obsługi używa domyślnego łącznika płatności na stronie **Usługi płatności**, aby przetwarzać płatności. Aby obsługiwać scenariusze takie jak „Kup w biurze obsługi, odbierz w sklepie”, tym domyślnym łącznikiem płatności musi być łącznik płatności Adyen lub łącznik płatności spełniający wymagania dotyczące implementacji płatności wielokanałowych.
 - **Usługa EFT:** płatności za pomocą terminalu płatności muszą być skonfigurowane na skróconej karcie **Usługi EFT** profilu sprzętu. Łącznik Adyen obsługuje gotowe do użytku scenariusze płatności wielokanałowych. Możliwe jest również użycie innych łączników płatności obsługujących interfejs **iNamedRequestHandler**, jeśli obsługują płatności wielokanałowe.
 - **Dostępność łącznika płatności**: w momencie odczytywania zamówienia wiersze środka płatniczego odczytywane razem z zamówieniem zawierają nazwę łącznika płatności, który został użyty do utworzenia autoryzacji skojarzonych z tym zamówieniem. Po zrealizowaniu zamówienia zestaw SDK Płatności próbuje użyć tego samego łącznika, który został użyty do utworzenia oryginalnej autoryzacji. Dlatego łącznik płatności o tej samej właściwości akceptanta musi być dostępny do przechwycenia. 
 - **Typy kart:** aby scenariusze wielokanałowe działały prawidłowo, każdy kanał musi mieć takie same ustawienia dotyczące typów metod płatności, które mogą być używane wielokanałowo. Ta konfiguracja obejmuje identyfikatory metod płatności i identyfikatory typów kart. Jeśli na przykład dla typu metody płatności **Karty** w ustawieniach sklepu internetowego jest przypisany identyfikator **2**, powinien on mieć ten sam identyfikator w ustawieniach sklepu detalicznego. Ten sam wymóg dotyczy identyfikatorów typu karty. Jeśli w sklepie internetowym karcie **VISA** przypisano numer karty **12**, ten sam identyfikator musi być skonfigurowany w sklepie detalicznym. 
+- Retail Modern POS dla Windows lub Android z wbudowaną stacją sprzętową   -lub-
+- Nowoczesny POS na iOS lub Cloud POS z podłączoną wspólną stacją sprzętową. 
 
 ### <a name="basic-principle-supporting-omni-channel-payments"></a>Podstawowa zasada obsługi płatności wielokanałowych
 
@@ -100,8 +102,10 @@ W poniższych sekcjach opisano kroki poszczególnych scenariuszy i przedstawiono
 Przed rozpoczęciem upewnij się, że są spełnione następujące wymagania wstępne:
 
 - Istnieje referencyjna witryna handlowa, w której jest skonfigurowany łącznik Adyen.
-- Wartością opcji **Płatności wielokanałowe** na stronie **Wspólne parametry sieci sprzedaży komercyjnej** jest **True**.
+- Wartością opcji **Płatności wielokanałowe** na stronie **Wspólne parametry sieci sprzedaży komercyjnej** jest **True**. W nowszych wersjach ten settng jest przenoszony do obszaru roboczego **Zarządzanie funkcjami**, gdzie można wybrać funkcję **Płatności wielokanałowej** i kliknąć przycisk **Włącz teraz**. 
 - Łącznik płatności Adyen został skonfigurowany dla rejestru punktu sprzedaży Houston.
+- Retail Modern POS dla Windows lub Android z wbudowaną stacją sprzętową   -lub-
+- Nowoczesny POS na iOS lub Cloud POS z podłączoną wspólną stacją sprzętową. 
 
 Wykonaj scenariusz, postępując w następujący sposób:
 
@@ -228,4 +232,6 @@ W przypadku odbierania zamówienia z więcej niż jedną metodą płatności i w
 ## <a name="related-topics"></a>Powiązane tematy
 
 - [Płatności — często zadawane pytania](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Łącznik płatności Dynamics 365 dla Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Łącznik płatności usługi Dynamics 365 dla Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+

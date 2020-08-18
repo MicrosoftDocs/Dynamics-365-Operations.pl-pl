@@ -3,7 +3,7 @@ title: Usuwanie wystąpienie
 description: Ten artykuł przeprowadzi użytkownika przez proces usuwania środowiska testowego lub produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17f299f81d1326dfb06c11a6125acc54b8ef2a6e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431206"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621387"
 ---
 # <a name="remove-an-instance"></a>Usuwanie wystąpienie
 
@@ -67,8 +67,21 @@ Aby usunąć środowisko Human Resources z istniejącego środowiska usługi Pow
 1. Skontaktuj się z działem pomocy technicznej i zainicjuj wniosek o usunięcie.
 2. Dział pomocy technicznej zainicjuje wniosek o usunięcie razem z zespołem DevOps aplikacji Human Resources. 
 3. Po otrzymaniu informacji, że środowisko zostało usunięte, kontynuuj procedurę.
-4.  Zaloguj się w usłudze LCS za pomocą konta używanego do subskrypcji rozwiązania Human Resources. 
+4. Zaloguj się w usłudze LCS za pomocą konta używanego do subskrypcji rozwiązania Human Resources. 
 5. Wybierz projekt z aplikacją Human Resources, który zawiera środowisko. 
 6. W projekcie LCS wybierz kafelek **Zarządzanie aplikacją Human Resources**. 
 7. Zaznacz wystąpienie, które chcesz usunąć. Powinno być ono oznaczone stanem wdrożenia **Niepowodzenie**.
 8. Wybierz opcję **Usuń wystąpienie** i potwierdź decyzję. 
+
+## <a name="recover-a-soft-deleted-environment"></a>Odzyskiwanie wstępnie usuniętego środowiska
+
+W przypadku usunięcia środowiska Power Apps, z którym jest połączone środowisko Human Resources, stan środowiska Human Resources w usługach w ramach Lifecycle Services zostanie **Delikatnie usunięty**. W takim przypadku użytkownicy nie mogą łączyć się z Human Resources.
+
+Aby przywrócić środowisko:
+
+1. Wykonaj instrukcje w [Odzyskaj środowisko Power Apps](/power-platform/admin/recover-environment.md).
+
+2. Skontaktuj się z pomocą techniczną w celu przywrócenia środowiska Human Resources. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie pomocy technicznej](hr-admin-troubleshooting-support.md).
+
+> [!Warning]
+> Środowiska Power Apps są zapisywane tylko przez siedem dni po usunięciu. Musisz odzyskać środowisko w okresie siedmiu dni.

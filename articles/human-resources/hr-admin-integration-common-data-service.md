@@ -3,7 +3,7 @@ title: Konfigurowanie integracji z usługą Common Data Service
 description: Można włączyć lub wyłączyć integrację między usługą Common Data Service a Dynamics 365 Human Resources. Można również wyświetlić szczegóły synchronizacji, wyczyścić dane śledzenia i dokonać ponownej synchronizacji jednostki, aby ułatwić rozwiązywanie problemów z danymi między tymi dwoma środowiskami.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7aad8217d48917d6855046a6810fe994f5564d94
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 8cbead2961c4576a5394080aae2fec109bce3f10
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431321"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621311"
 ---
 # <a name="configure-common-data-service-integration"></a>Konfigurowanie integracji z usługą Common Data Service
 
@@ -66,6 +66,9 @@ Wyłączenie integracji może być zalecane w następujących sytuacjach:
 - Aby wyłączyć integrację, ustaw w opcji wartość **Nie**.
 
 [![Włączanie lub wyłączanie integracji z usługą Common Data Service](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+
+> [!WARNING]
+> Stanowczo zaleca się wyłączenie integracji Common Data Service podczas wykonywania zadań migracji danych. Duże operacje przekazywania danych mogą znacząco wpłynąć na wydajność. Na przykład przekazywanie 2000 pracowników może potrwać kilka godzin, gdy integracja jest włączona, i mniej niż jedna godzina, gdy jest wyłączona. Numery podane w tym przykładzie służą tylko do celów demonstracyjnych. Dokładna ilość czasu importowania rekordów może się znacznie różnić w zależności od wielu czynników.
 
 ## <a name="view-data-integration-details"></a>Wyświetlanie szczegółów integracji danych
 

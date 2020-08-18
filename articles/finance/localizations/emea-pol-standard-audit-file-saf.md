@@ -3,7 +3,7 @@ title: Standardowy plik audytu (SAF) dla Polski
 description: Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten temat zawiera informacje o formatach dla Polski.
 author: LizaGolub
 manager: AnnBe
-ms.date: 04/02/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Poland
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 0e698ff2969f7820c87d0a80f3c567dba3806711
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 8e2b1cddc8489147d0b35f1dbe2ae3cb874da77f
+ms.sourcegitcommit: 06fb4b68b2d94020ef639239ed395b7f63aa807f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208168"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645237"
 ---
 # <a name="standard-audit-file-saf-for-poland"></a>Standardowy plik audytu (SAF) dla Polski
 
@@ -43,6 +43,9 @@ Aby określić format raportowania elektronicznego (ER) dla każdego schematu SA
 -   Faktury VAT SAF
 
 Każdy format raportowania elektronicznego powinien być wstępnie zdefiniowany i pozwalać na aktualizowanie w module Raportowanie elektroniczne.
+
+### <a name="main-accounts"></a>Konta główne
+W polskim JPK dane finansowe, główne konta używane w finansach muszą być powiązane z polskimi standardowymi rachunkami na potrzeby raportowania JPK. Wymagana konfiguracja jest podobna do [norweskich kont głównych JPK](emea-nor-satndard-audit-file-for-tax.md#main-accounts).
 
 ## <a name="generate-a-saf-accounting-books-file"></a>Generowanie pliku ksiąg księgowania SAF
 Aby wygenerować plik ksiąg księgowania SAF, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Księgi księgowania SAF** i ustaw następujące parametry:

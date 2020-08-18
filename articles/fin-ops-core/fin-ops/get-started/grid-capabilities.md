@@ -3,7 +3,7 @@ title: Możliwości siatki
 description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Funkcja nowej siatki musi być włączona, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 88a4e2fe69000f8034729d468ad5fd108d435c3e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431367"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651697"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
@@ -128,20 +128,47 @@ Aby system rozpoznawał wartość jako wyrażenie, należy uruchomić wartość 
 
 Wszystkie kolejne sesje użytkownika będą uruchamiane z włączonymi formantami nowej siatki.
 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Deweloper] Rezygnacja z używania nowej siatki dla poszczególnych stron 
+Jeśli Twoja organizacja odkryje stronę, na której występują pewne problemy z wykorzystaniem nowej siatki, dostępny jest interfejs API, który umożliwia indywidualnemu formularzowi korzystanie ze starszej kontroli sieci, jednocześnie zezwalając reszcie systemu na korzystanie z nowej kontroli sieci. Aby wycofać pojedynczą stronę z nowej siatki, należy dodać następujący wpis wywołania `super()` w metodzie formularza `run()`.
+
+        this.forceLegacyGrid();
+
+Ten interfejs API będzie uznawany do wydania w październiku 2021, gdy nowa kontrolka siatki stanie się wymagana. Prosimy o zgłoszenie wszelkich problemów do firmy Microsoft, które wymagają użycia tego interfejsu API. 
+
 ## <a name="known-issues"></a>Znane problemy
 W tej sekcji jest przechowywana lista znanych problemów dotyczących nowej kontrolki siatki, gdy ta funkcja jest w stanie podglądu.  
 
 ### <a name="open-issues"></a>Otwarte problemy
+-  Po włączeniu funkcji **Kontrolka nowej siatki** niektóre strony będą nadal korzystać z istniejącej kontrolki siatki. Ma to miejsce w następujących sytuacjach:  
+    -  Na stronie, która jest renderowana w wielu kolumnach, istnieje lista kart.
+    -  Na stronie istnieje lista zgrupowanych kart.
+    -  Kolumna siatkowa z niereagującą, rozszerzalną kontrolą.
 
-- Listy kart, które zostały renderowane jako wiele kolumn, są teraz renderowane jako jedna kolumna.
-- Listy zgrupowane nie są renderowane jako grupy lub w oddzielnych kolumnach.
+    Gdy użytkownik po raz pierwszy napotka jedną z tych sytuacji, zostanie wyświetlony komunikat o odświeżeniu strony. Po wyświetleniu tego komunikatu strona będzie nadal wykorzystywać istniejącą siatkę dla wszystkich użytkowników, aż do następnej aktualizacji wersji produktu. Lepsza obsługa tych scenariuszy, dzięki czemu może być wykorzystywana nowa siatka, będzie brana pod uwagę podczas przyszłej aktualizacji.     
 
 ### <a name="fixed-as-part-of-10013"></a>Naprawiono w ramach 10.0.13
 
-> [!NOTE]
-> Poniższe informacje są dostarczane w taki sposób, aby można było je odpowiednio planować. Aby uzyskać więcej informacji dotyczących harmonogramu wydań kierowanych 10.0.13, zobacz [Dostępność aktualizacji usługi](../../fin-ops/get-started/public-preview-releases.md).
-
-- [KB 4563317] Etykietki narzędzi nie są wyświetlane dla obrazów.
+-  [Usterka 470173] Pola wyboru w nieaktywnych wierszach przełączają się, gdy zostanie kliknięty odstęp w komórce
+-  [Usterka 474848] Rozszerzone podglądy z siatkami nie są wyświetlane
+-  [Usterka 474851] Hiperłącza w kontrolkach grup odwołań nie działają 
+-  [Usterka 471777] Nie można wybrać pól w siatce do edytowania lub utworzenia aplikacji mobilnej
+-  [KB 4569441] Problemy z renderowaniem wielokolumnowych list kart, etykiet narzędzi na obrazach oraz opcji wyświetlania w niektórych polach
+-  [KB 4575279] Nie wszystkie oznaczone wiersze są usuwane z arkusza finansowego
+-  [KB 4575233] Opcje wyświetlania nie są przywracane po przeniesieniu do innego wiersza
+-  [KB 4571095] Księgowanie przyjęcia produktu następuje po przypadkowym naciśnięciu klawisza Enter (poprawna obsługa domyślnej akcji strony)
+-  [KB 4575437] Wyszukiwania z edytowalnymi kontrolkami są nieoczekiwanie zamykane
+-  [KB 4569418] Zduplikowany wiersz utworzony w formularzu harmonogramu dostaw
+-  [KB 4575435] Rozszerzony podgląd czasem utrzymuje się nawet wtedy, gdy wskaźnik myszy nie znajduje się w pobliżu pola
+-  [KB 4575434] Wyszukiwanie nie jest filtrowane, jeśli pole zostało zmodyfikowane
+-  [KB 4575430] Wartości w polach haseł nie są maskowane w siatce
+-  [KB 4569438] „Przetwarzanie zostało zatrzymane z powodu problemów z weryfikacją” powoduje wyświetlenie po zaznaczeniu wierszy podczas rozliczania transakcji dostawców
+-  [KB 4569434] Odświeżenie formularza firmy powoduje zmniejszenie liczby rekordów
+-  [KB 4575297] Podczas edycji i przełączania fokusu do okienka Rejestratora zadań jest zachowywane przejście na siatkę
+-  [KB 4566773] Informacje o transakcjach korekty, które nie są wyświetlane jako ujemne w zapytaniu transakcji dotyczących załącznika 
+-  [KB 4575288] Fokus jest ustawiany na aktywny wiersz podczas wybierania obramowania między wierszami na prostej liście
+-  [KB 4575287] Fokus nie jest powracany do pierwszej kolumny przy użyciu klawisza strzałka w dół w celu utworzenia nowego wiersza w arkuszach
+-  [KB 4564819] Nie można usunąć wierszy z faktury niezależnej (ponieważ źródło danych właściwość ChangeGroupMode=ImplicitInnerOuter)
+-  [KB 4563317] Podpowiedzi/ulepszone podglądy nie są wyświetlane w przypadku obrazów
 
 ### <a name="fixed-as-part-of-10012"></a>Naprawiono w ramach 10.0.12
 
@@ -158,6 +185,7 @@ W tej sekcji jest przechowywana lista znanych problemów dotyczących nowej kont
 - [KB 4562647] Po dodaniu nowego wiersza do siatki ról zabezpieczeń fokus jest resetowany do pierwszej kontrolki w oknie dialogowym **Publikuj**.
 - [KB 4563310] Rozszerzony podgląd nie jest zamykany po zmianie wiersza.
 - [KB 4563313] W przypadku wybrania wartości w wyszukiwaniu w Internet Explorer występuje błąd „nieoczekiwany klient”.
+- [KB 4564557] Listy wyszukiwania i rozwijane menu nie są otwierane w Internet Explorer
 - [KB 4563324] Nawigacja nie działa po otwarciu obszaru roboczego **Zarządzanie personelem**.
 
 ### <a name="fixed-as-part-of-10011"></a>Naprawiono w ramach 10.0.11

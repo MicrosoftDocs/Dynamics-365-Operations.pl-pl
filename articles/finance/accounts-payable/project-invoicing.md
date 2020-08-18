@@ -1,9 +1,9 @@
 ---
 title: Fakturowanie projektu
-description: Ten artykuł zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących.
-author: ShylaThompson
+description: Ten temat zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących.
+author: TaylorVH
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,20 @@ ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81a3d64d04ceb20fec2f5ca4bb005e7ecb3c1929
-ms.sourcegitcommit: d2b111bf7a5fbf62ff2874d6c57c5ef8412df82e
+ms.search.validFrom: 2020-07-06
+ms.dyn365.ops.version: AX 10.0.13
+ms.openlocfilehash: eab7523296996709dfe7407c582e61e28b7d4f23
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "3331379"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651599"
 ---
 # <a name="project-invoicing"></a>Fakturowanie projektu
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących.
+Ten temat zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących.
 
 Typ projektu określa, która procedura fakturowania powinna zostać zastosowana. Tylko dwa typy projektów zewnętrznych, czas i materiały oraz o stałej cenie, mogą być fakturowane. Projekty typu czas i materiały oraz projekty o stałej cenie są zawsze dołączane do umowy dotyczącej projektu.
 
@@ -47,7 +47,7 @@ Przed utworzeniem faktury odbiorcy dla projektu, można utworzyć fakturę wstę
 
 ### <a name="creating-invoice-proposals"></a>Tworzenie propozycji fakturowania
 
-Propozycje faktur można utworzyć, wybierając opcję ręcznie z listy transakcji dla określonego projektu. Można również skonfigurować reguły fakturowania określające moment automatycznego tworzenia propozycji faktury. Na przykład można utworzyć regułę fakturowania służącą do tworzenia propozycji faktury po ukończeniu 25 procent, 75procent, 50 procent i 100 procent pracy nad projektem. 
+Możesz tworzyć propozycje faktur, ręcznie wybierając transakcję z listy dostępnych transakcji dla określonego projektu. Można również skonfigurować reguły fakturowania określające moment automatycznego tworzenia propozycji faktury. Na przykład możesz utworzyć regułę fakturowania, aby utworzyć propozycję faktury, gdy praca nad projektem jest ukończona w 25, 50, 75 i 100 procentach. 
 
 Propozycje faktur mogą zostać utworzone dla następujących transakcji:
 
@@ -57,7 +57,7 @@ Propozycje faktur mogą zostać utworzone dla następujących transakcji:
 -   Kwoty, które zostały zapłacone przez odbiorcę przed rozpoczęciem projektu
 
 > [!NOTE]
-> Funkcja **Włącz sortowanie wg zasobów podczas tworzenia** propozycji faktur projektu umożliwia sortowanie transakcji projektów dostępnych do rozliczeń według zasobów podczas tworzenia nowej propozycji faktury projektu. Siatka wyświetlająca dostępne transakcje projektu będzie mieć oddzielne pole dla Identyfikatora zasobu i Zasobu, co pozwoli użytkownikowi na filtrowanie i sortowanie nazwy zasobu. Ta funkcja jest domyślnie wyłączona i można ją włączyć w **Obszary robocze > Zarządzanie funkcjami**. Aby uzyskać pomoc w włączaniu tej funkcji, skontaktuj się z administratorem systemu.
+> Funkcja **Włącz sortowanie wg zasobów podczas tworzenia** propozycji faktur projektu umożliwia sortowanie transakcji projektów dostępnych do rozliczeń według zasobów podczas tworzenia nowej propozycji faktury projektu. Siatka wyświetlająca dostępne transakcje projektu będzie mieć oddzielne pola dla **Identyfikator zasob** i **Zasób**. Te pola umożliwiają filtrowanie i sortowanie według nazwy zasobu. Domyślnie ta opcja jest wyłączona. Można go włączyć za pomocą strony **Zarządzanie funkcjami** (**obszary robocze > zarządzaniem funkcjami**). Aby uzyskać pomoc we włączaniu tej funkcji, skontaktuj się z administratorem systemu.
 
 Można utworzyć w propozycji faktury transakcje opłat. Można także modyfikować ceny sprzedaży dla godzin, wydatków, towarów i transakcji opłat. Podczas księgowania propozycji faktury, zaktualizowane ceny i transakcje są dodawane do raportów projektu i historii transakcji. 
 
@@ -71,20 +71,23 @@ Po utworzeniu i zaksięgowaniu propozycji faktury, faktura dla odbiorcy jest two
 
 Można dodawać lub usuwać transakcje w propozycji faktury przed jej zaksięgowaniem. Na przykład można usunąć transakcje wydatków, które zostały zaksięgowane w projekcie, ale nie są płatne przez odbiorcę. 
 
-Jeśli organizacja wymaga, aby propozycje faktur były przeglądane przed zaksięgowaniem, może zaistnieć konieczność, aby propozycja faktury została zatwierdzona za pośrednictwem przepływu pracy „Przegląd propozycji faktur projektu” przed zaksięgowaniem.
+Jeśli Twoja organizacja wymaga, aby propozycje faktur zostały przejrzane przed ich zaksięgowaniem, może być konieczne ich zatwierdzenie za pomocą przepływu pracy „Przegląd propozycji faktur projektu” przed zaksięgowaniem.
+
+### <a name="view-grant-information-on-project-invoice-list-pages"></a>Wyświetlanie informacji o dotacji na stronach listy faktur projektu
+
+Użytkownicy sektora publicznego mogą dodawać **Identyfikator dotacji** i **Nazwę dotacji** do stron list **Propozycje faktur projektu** i **Faktury projektu**. Te kolumny są włączone za pomocą funkcji **Dodaj informacje o dotacji do stron listy faktur projektu**. Ta funkcja jest domyślnie wyłączona i można ją włączyć w  **Obszary robocze > Zarządzanie funkcjami**. Aby uzyskać pomoc we włączaniu tej funkcji, skontaktuj się z administratorem systemu.
 
 ## <a name="on-account-invoicing"></a>Fakturowanie akonto
 Kwota wprowadzona do faktury akonto dla projektu opiera się na czasie, procencie ukończenia oraz innych warunkach fakturowania, określonych w umowie powiązanego projektu. Kwota jest nie obliczana na podstawie godzin, towarów, wydatków lub opłat, które zostały zaksięgowane do projektu. 
 
-Należy najpierw utworzyć transakcję akonto dla projektu typu czas i materiały lub projektu o stałej cenie, aby można było dodać transakcję akonto do projektu faktury. Do transakcji akonto wprowadź kwotę, na jaką ma być wystawiona faktura dla odbiorcy. Aby utworzyć fakturę projektu dla kwoty, należy utworzyć fakturę wstępną lub propozycję faktury. W propozycji faktury wybierz transakcję akonto. Przed utworzeniem faktury projektu można przeglądać informacje dotyczące akonta w propozycji faktury.
+Należy najpierw utworzyć transakcję akonto dla projektu typu czas i materiały lub projektu o stałej cenie, aby można było dodać transakcję akonto do projektu faktury. Do transakcji akonto wprowadź kwotę, na jaką ma być wystawiona faktura dla odbiorcy. Aby utworzyć fakturę projektu dla kwoty, należy utworzyć fakturę wstępną lub propozycję faktury. W propozycji faktury wybierz transakcję akonto. Przed utworzeniem faktury projektu można przeglądać informacje dotyczące akonta w propozycji faktury. 
 
 ### <a name="fixed-price-projects"></a>Projekty typu stała cena
-
 Dla projektów o stałej cenie transakcje akonto są oparte na uzgodnionymi punkcie kontrolnym, jednostce dostawy lub uzgodnienia dotyczącego fakturowania uwarunkowane stanem realizacji umowy określonych w umowie projektu. Zostaje utworzony jeden wiersz dla każdej płatności, która ma być odebrana od odbiorcy projektu. Nie są wymagane żadne potrącenia.
 
 ### <a name="time-and-material-projects"></a>Projekty typu czas i materiał
 
-Dla projektów typu czas i materiały można wystawić rachunek dla odbiorcy lub innego źródła finansowania dla kwoty przedpłaty za pomocą propozycji faktur akonto. Wprowadź transakcje akonto w jednym wierszu. Opcjonalnie można wprowadzić dodatkowe wiersze jako potrącenia, żeby skompensować wszelkie przedpłaty wprowadzone już przez odbiorcę. Aby utworzyć wiersze potrącenia, należy poprzedzić kwotę ze znakiem minus.
+Dla projektów typu czas i materiały można wystawić rachunek dla odbiorcy lub innego źródła finansowania dla kwoty przedpłaty za pomocą propozycji faktur akonto. Wprowadź transakcje akonto w jednym wierszu. Opcjonalnie można wprowadzić dodatkowe wiersze jako potrącenia, żeby skompensować wszelkie przedpłaty wprowadzone już przez odbiorcę. Aby utworzyć linie odliczenia, wprowadź znak minus przed kwotą.
 
 ## <a name="invoice-control"></a>Kontrola faktury
 Kontrola faktury służy do śledzenia zafakturowanych i niezafakturowanych transakcji oraz analizowania tych transakcji względem ofert w celu uzyskania kompleksowego oglądu projektu od etapu oferty do zakończenia. Możesz zobaczyć, za które transakcje zostały naliczone opłaty w określonym projekcie, i które wiersze zostały zafakturowane. Ponadto można wyświetlać pojedyncze transakcje, dzięki czemu można je skorygować po zaksięgowaniu.
@@ -108,10 +111,10 @@ Na przykład można skonfigurować następujący harmonogram fakturowania:
 Gdy płatności kamieni milowych są gotowe do zafakturowania, można zastosować tę procedurę do fakturowania kwot akonto.
 
 ## <a name="vendor-invoicing"></a>Dostawca wystawiający fakturę
-Jeśli zamawiasz towar od dostawcy i przypisujesz ten towar do projektu, właściwość wiersza wybrana dla wiersza zamówienia zakupu dla tego towaru określa, czy za kupiony towar zostanie wystawiona faktura dla odbiorcy. Jeśli ustawisz domyślne właściwości wiersza, będą one wyświetlane dla towaru w wierszu zamówienia zakupu (Szczegóły wiersza &gt; Projekt &gt; Właściwość wiersza). Istnieją dwa sposoby modyfikowania właściwości wiersza:
+Jeśli zamawiasz towar od dostawcy i przypisujesz ten towar do projektu, właściwość wiersza wybrana dla wiersza zamówienia zakupu dla tego towaru określa, czy za kupiony towar zostanie wystawiona faktura dla odbiorcy. Jeśli ustawisz domyślne właściwości wiersza, będą one wyświetlane dla towaru w wierszu zamówienia zakupu (**Szczegóły wiersza > Projekt > Kwoty własności wiersza**). Istnieją dwa sposoby modyfikowania właściwości wiersza:
 
--   Faktura dla odbiorcy projektu za towar: ustaw właściwość wiersza towaru jako wartość płatną w zamówieniu zakupu, a następnie wystaw fakturę dla odbiorcy używając odpowiedniej metody fakturowania.
--   Nie wystawiaj odbiorcy projektu faktury za towar: nie zaznaczaj właściwości wiersza **płatne** w wierszu zamówienia zakupu dla towaru. Następnie możesz zafakturować zamówienie zakupu i nie są wymagane dalsze akcje.
+-   Umożliwia fakturowanie odbiorcy dla pozycji w projekcie. Aby to zrobić, ustaw właściwość wiersza towaru jako wartość płatną w zamówieniu zakupu, a następnie wystaw fakturę dla odbiorcy używając odpowiedniej metody fakturowania.
+-   Nie wystawiaj faktury klientowi projektu za przedmiot. Aby to zrobić, nie należy wybierać właściwości wiersza **Płatne** w wierszu zamówienia zakupu dla towaru. Następnie możesz zafakturować zamówienie zakupu i nie są wymagane dalsze akcje.
 
 > [!NOTE] 
 > Domyślnie wiersze zwolnionego zatrzymania nie podlegają opłatom. Oznacza to, że możliwość utworzenia propozycji faktury dla zwolnionego zatrzymania nie została włączona.

@@ -3,7 +3,7 @@ title: Moduł wyboru sklepu
 description: W tym temacie opisano moduł wyboru sklepu i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,54 +18,113 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 460d05ca29d5b8da70a971a649d9edd786f7260d
-ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
+ms.openlocfilehash: 1531b27dad4188dca96cf5728a9858f94001977c
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3378215"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646142"
 ---
 # <a name="store-selector-module"></a>Moduł wyboru sklepu
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano moduł wyboru sklepu i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Omówienie
 
-Moduł wyboru sklepu jest używany dla scenariusza odbiorcy „kupowanie w trybie online” (BOPIS). Wyświetla listę sklepów, w których produkt jest dostępny do odbioru, a także godziny przechowywania i zapasy produktów dla każdego sklepu.
+Za pomocą modułu wyboru sklepu można pobrać produkt z wybranego sklepu po zakupieniu online. W module Commerce 10.0.13 moduł wyboru zawiera także dodatkowe funkcje, które mogą zawierać stronę **Znajdź sklep**, która przedstawia sklepy w pobliżu.
 
-Moduł wyboru sklepu wymaga kontekstu produktu i lokalizacji wyszukiwania, aby znaleźć sklepy. W przypadku braku lokalizacji wyszukiwania domyślna jest lokalizacja przeglądarki klienta, pod warunkiem, że klient wyrazi zgodę. Moduł ma pole wprowadzania, które pozwala klientowi wprowadzić lokalizację (kod pocztowy lub miasto i stan), aby znaleźć sklepy w pobliżu.
+Moduł wyboru sklepów umożliwia użytkownikom wprowadzenie lokalizacji (miasto, województwo, adres itd.) w celu wyszukania sklepów w promieniu wyszukiwania. Gdy moduł jest otwierany po raz pierwszy, system używa lokalizacji przeglądarki odbiorcy w celu znalezienia sklepów (jeśli wyrażono zgodę).
 
-Moduł wyboru sklepu jest zintegrowany z aplikacją do geokodowania Bing Maps Geocoding (API) służy do konwersji lokalizacji na szerokość i długość geograficzną. Klucz interfejsu API map usługi Bing jest wymagany i należy go dodać do strony udostępnione parametry Commerce w Dynamics 365 Commerce.
+## <a name="store-selector-module-usage-in-e-commerce"></a>Użycie modułu wyboru sklepu w e-commerce
 
-Moduł wyboru sklepu można dodać do modułu pola zakupu na stronie szczegółów produktu (PDP), aby wyświetlić sklepy, w których produkt jest dostępny do odbioru. Można go również dodać do modułu koszyka. W przypadku dodania do modułu koszyka w module wyboru sklepów są wyświetlane opcje pobrania dla każdego towaru w wierszu koszyka. Ponadto, z kodowaniem niestandardowym, ten moduł można dodać do innych stron lub modułów za pomocą rozszerzeń i dostosowań.
+- Moduł wyboru sklepu może być używany na stronie Szczegóły produktu (PDP) w celu wybrania sklepu do pobrania.
+- Moduł wyboru sklepu może być używany na stronie koszyka w celu wybrania sklepu do pobrania.
+- Moduł wyboru sklepu może być używany na autonomicznej stronie, na której są wyświetlane wszystkie dostępne sklepy.
 
-Aby scenariusz BOPIS działał, w produktach należy skonfigurować tryb dostawy „odbiór klienta”. W przeciwnym razie moduł nie będzie wyświetlany na odpowiednich stronach. Aby uzyskać szczegółowe informacje dotyczące konfigurowania metody dostawy, należy zapoznać się z tematem [Ustaw metody dostawy](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+## <a name="bing-maps-integration"></a>Integracja z mapami Bing
+
+Moduł wyboru sklepów jest zintegrowany z [interfejsami API usługi mapy Bing](https://docs.microsoft.com/bingmaps/rest-services/), co umożliwia korzystanie z funkcji automatycznego kodowania i autosugerowania usługi Bing. Klucz interfejsu API map usługi Bing jest wymagany i należy go dodać do strony udostępnione parametry Commerce headquarters. Interfejs API geokodowania służy do konwertowania lokalizacji na wartości szerokości i długości geograficznej. Integracja z interfejsem API automatycznego sugerowania jest używana do pokazywania sugestii wyszukiwania, gdy użytkownicy wprowadzają lokalizacje w polu wyszukiwania.
+
+W przypadku interfejsu API REST z automatyczną sugestią musisz upewnić się, że poniższe adresy URL są dozwolone (nazywane również „białymi listami”) zgodnie z polityką bezpieczeństwa treści (CSP) Twojej witryny. Ta konfiguracja jest wykonywana w narzędziu do tworzenia witryn Commerce przez dodanie dozwolonych adresów URL do różnych dyrektyw CSP dla witryny (na przykład **img-src**). Aby uzyskać więcej informacji, zajrzyj do [zasad zabezpieczeń dotyczących zawartości](manage-csp.md). 
+
+- Do dyrektywy **connect-src** dodaj **&#42;.bing.com**.
+- Do dyrektywy **img-src**, dodaj **&#42;.virtualearth.net**.
+- Do dyrektywy **script-src**, **dodaj &#42;.bing.com, &#42;.virtualearth.net**.
+- Do dyrektywy **script style-src**, dodaj **&#42;.bing.com**.
+ 
+## <a name="pickup-in-store-mode"></a>Tryb odbioru w sklepie
+
+Moduł wyboru sklepów obsługuje tryb **Odbioru w sklepie**, w którym jest wyświetlana lista sklepów, w których produkt jest dostępny do pobrania. Pokazuje również godziny otwarcia i zapasy produktów dla każdego sklepu na liście. Moduł selektora sklepu wymaga kontekstu produktu, aby zapewnić dostępność produktu i umożliwić użytkownikowi dodanie produktu do koszyka, jeśli tryb dostawy produktu jest ustawiony na **odbiór** w wybranym sklepie. Aby uzyskać więcej informacji, zobacz [Ustawienia zapasów](inventory-settings.md). 
+
+Moduł wyboru sklepu można dodać do modułu skrzynki zakupów na PDP, aby pokazać sklepy, w których produkt jest dostępny do odbioru. Można go również dodać do modułu koszyka. W tym przypadku moduł wyboru sklepów pokazuje opcje odbioru dla poszczególnych pozycji w koszyku. Moduł selektora sklepu można również dodać do innych stron lub modułów za pomocą rozszerzeń i dostosowań.
+
+Aby ten scenariusz zadziałał, produkty należy skonfigurować tak, aby był używany tryb **odbioru** z dostawą. W przeciwnym razie moduł nie będzie wyświetlany na stronach produktów. Aby uzyskać więcej informacji dotyczące konfigurowania metody dostawy, należy zapoznać się z tematem [Ustaw metody dostawy](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Poniższy obraz pokazuje przykład modułu wyboru sklepu używanego w PDP.
 
 ![Przykład modułu wyboru sklepu](./media/BOPIS.PNG)
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>Użycie modułu wyboru sklepu w e-commerce
+## <a name="find-stores-mode"></a>Tryb znajdowania sklepu
 
-- Moduł wyboru sklepu można wykorzystać na stronie szczegółów produktu (PDP), aby znaleźć pobliskie sklepy, w których produkt jest dostępny do odbioru.
-- Moduł wyboru sklepu można wykorzystać na stronie koszyka, aby znaleźć pobliskie sklepy, w których produkt w koszyku jest dostępny do odbioru.
+Moduł Selector sklepów obsługuje także tryb **Znajdź sklepy**. W tym trybie można utworzyć stronę lokalizacji sklepów, która pokazuje dostępne sklepy i ich informacje. W tym trybie moduł selektora sklepu działa bez kontekstu produktu i może być używany jako samodzielny moduł na dowolnej stronie serwisu. Ponadto, jeśli odpowiednie ustawienia są włączone dla modułu, użytkownicy mogą wybrać sklep jako ich preferowany sklep. Jeśli sklep jest wybrany jako preferowany sklep użytkownika, identyfikator sklepu jest zachowywany w pliku cookie przeglądarki. Dlatego użytkownik musi zaakceptować wiadomość o zgodzie na pliki cookie.
+
+Na poniższej ilustracji przedstawiono przykład modułu wyboru sklepu, który jest używany razem z modułem mapy na stronie lokalizacje sklepu.
+
+![Przykład modułu wyboru sklepu](./media/ecommerce-Storelocator.PNG)
+
+## <a name="render-a-map"></a>Renderowanie mapy
+
+Moduł selektora sklepów może być używany razem z modułem mapy do pokazywania lokalizacji sklepów na mapie. Aby uzyskać więcej informacji dotyczących modułu mapy, przejdź do [Moduł mapy](map-module.md)
 
 ## <a name="store-selector-module-properties"></a>Właściwości Modułu wyboru sklepu
 
-| Nazwa właściwości             | Wartość                 | opis |
-|---------------------------|-----------------------|-------------|
-| Promień wyszukiwania | Identyfikator | Określa promień wyszukiwania dla sklepów w milach. Jeśli nie określono żadnej wartości, używany jest domyślny promień wyszukiwania, 50 mil.|
-|Warunki świadczenia usług | Adres URL    |  Dla usługi Bing Maps jest wymagane łącze URL Warunki świadczenia usługi. |
+| Nazwa właściwości | Wartość | opis |
+|---------------|-------|-------------|
+| Nagłówek | Tekst | Nagłówek modułu. |
+| Tryb | **Znajdź sklepy** lub **Odbierz w sklepie** | Tryb **Znajdź sklepy** pokazuje dostępne sklepy. Tryb **Odbierz w sklepie** umożliwia użytkownikom wybranie sklepu do pobrania. |
+| Styl | **Okno dialogowe** lub **Wbudowane** | Moduł może być renderowany w tekście lub w oknie dialogowym. |
+| Ustaw jako preferowany sklep | **Prawda** lub **Fałsz** | Jeśli właściwość ta ma wartość **Prawda**, użytkownicy mogą ustawiać preferowany sklep. Ta funkcja wymaga, aby użytkownicy zaakceptowali wiadomość o zgodzie na pliki cookie. |
+| Pokaż wszystkie sklepy | **Prawda** lub **Fałsz** | Jeśli właściwość ta ma wartość **Prawda**, użytkownicy mogą pomijać właściwości **Promień wyszukiwania** i przeglądać wszystkie sklepy. |
+| Opcje automatycznego sugerowania: maks. wyniki | Identyfikator | Ta właściwość określa maksymalną liczbę sugerowanych wyników, które mogą być wyświetlane za pośrednictwem interfejsu API automatycznego sugerowania usługi Bing. |
+| Promień wyszukiwania | Identyfikator | Właściwość określa promień wyszukiwania dla sklepów w milach. Jeśli nie określono żadnej wartości, używany jest domyślny promień wyszukiwania, 50 mil. |
+| Warunki świadczenia usług | Adres URL |  Właściwość ta określa warunki URL usługi wymagane do korzystania z usługi map Bing. |
 
 ## <a name="add-a-store-selector-module-to-a-page"></a>Dodawanie modułu wyboru sklepu do nowej strony
 
-Moduł wyboru sklepu wymaga kontekstu produktu, więc można go używać tylko w polu zakupu i module koszyka. Moduły wyboru sklepów nie działają poza tymi modułami.
+W trybie **Odbioru w sklepie** moduł może być używany tylko na stronach PDP i koszyka. W okienku właściwości modułu należy określić tryb **Odbiór w sklepie**.
 
 - Aby uzyskać informacje o tym, jak dodać moduł wyboru sklepu do modułu pole zakupy, zajrzyj [Moduł pola zakupu](add-buy-box.md). 
 - Aby uzyskać informacje o tym, jak dodać moduł wyboru sklepu do modułu koszyka, zajrzyj [Moduł koszyka](add-cart-module.md)
 
+Aby skonfigurować moduł selektora sklepu, aby wyświetlał dostępne sklepy dla strony lokalizacji sklepów, jak na ilustracji, która pojawia się wcześniej w tym temacie, wykonaj następujące kroki.
+
+1. Przejdź do **Szablonu**, a następnie wybierz **Nowy**, aby utworzyć nowy szablon.
+1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon marketingowy**, a następnie wybierz **OK**.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć nową stronę.
+1. W oknie dialogowym **Wybierz szablon** wybierz szablon **Szablon marketingowy**. W sekcji **Nazwa strony** przejdź do **Lokalizacje sklepów**, a następnie wybierz przycisk **OK**.
+1. Na nowej stronie wybierz gniazdo **Główne**, następnie wybierz wielokropek (**...**), a następnie wybierz pozycję **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
+1. W gnieździe **Kontener** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener z 2 modułami** i wybierz przycisk **OK**.
+1. W okienku właściwości modułu określ wartość **Szerokości** jako **Wypełnij kontener**.
+1. Ustawienie wartości **Konfiguracja kolumny portu widoku X-Small** na **100%**.
+1. Ustawienie wartości **Konfiguracja kolumny portu widoku Small** na **100%**.
+1. Ustawienie wartości **Konfiguracja kolumny portu widoku Medium** na **33% 67%**.
+1. Ustawienie wartości **Konfiguracja kolumny portu widoku Large** na **33% 67%**.
+1. W gnieździe **Kontener z 2 kolumnami** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodawanie modułu** wybierz moduł **Selektor sklepu** i wybierz przycisk **OK**.
+1. W okienku właściwości modułu określ wartość **Tryb** jako **Znajdź sklepy**.
+1. Umożliwia ustawienie wartości **Promień wyszukiwania** w milach.
+1. Określ inne właściwości, takie jak **Ustaw jako preferowany sklep**, **Wyświetl wszystkie sklepy** i **Włącz automatyczną sugestię**, jeśli jest to wymagane.
+1. W gnieździe **Kontener z 2 kolumnami** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Mapa** i wybierz przycisk **OK**.
+1. W okienku właściwości modułu określ dowolne dodatkowe właściwości, które są wymagane.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+ 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie zestawu początkowego](starter-kit-overview.md)
@@ -76,8 +135,12 @@ Moduł wyboru sklepu wymaga kontekstu produktu, więc można go używać tylko w
 
 [Krótki przewodnik PDP](quick-tour-pdp.md)
 
-[Krótki przewodnik po Koszyku i realizacji transakcji](quick-tour-cart-checkout.md)
+[Krótki przewodnik po koszyku i realizacji transakcji](quick-tour-cart-checkout.md)
 
 [Ustaw metody dostawy](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
-[Zarządzanie mapami Bing dla organizacji](dev-itpro/manage-bing-maps.md)
+[Zarządzanie Mapami Bing dla swojej organizacji](dev-itpro/manage-bing-maps.md)
+
+[Interfejsy API REST Map Bing](https://docs.microsoft.com/bingmaps/rest-services/)
+
+[Moduł map](map-module.md)

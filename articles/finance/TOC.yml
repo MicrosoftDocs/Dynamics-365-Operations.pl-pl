@@ -68,8 +68,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
                 - name: Nowości i zmiany w rozwiązaniu Finance
                   items:
-                    - name: Nowości i zmiany w rozwiązaniu Finance – strona główna
+                    - name: Nowości i zmiany w rozwiązaniu Finance — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Finance w wersji 10.0.13 (październik 2020)
+                      href: get-started/whats-new-changed-10-0-13.md
                     - name: Rozwiązanie Finance w wersji 10.0.12 (sierpień 2020)
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: Rozwiązanie Finance w wersji 10.0.11 (lipiec 2020)
@@ -107,23 +109,23 @@
             - name: Katalog szkoleń
               items:
                 - name: Katalog szkoleń — strona główna
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Osoby podejmujące decyzje biznesowe
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-bdm.md
                 - name: Użytkownicy biznesowi
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Menedżerowie projektów implementacji
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Administratorzy
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Deweloperzy
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Partnerska sprzedaż i marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Konsultanci funkcjonalni
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Architekci rozwiązań
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Poznawanie interfejsu użytkownika
               items:
                 - name: Elementy interfejsu użytkownika
@@ -846,6 +848,8 @@
                   href: accounts-payable/accounting-distributions.md
                 - name: Przetwarzanie alokacji
                   href: general-ledger/process-allocations.md
+                - name: Warunki alokacji
+                  href: general-ledger/main-account-allocation-terms.md
                 - name: Wymiary finansowe
                   href: general-ledger/financial-dimensions.md
                 - name: Grupy kont konsolidacyjnych i dodatkowe konta konsolidacyjne
@@ -1122,6 +1126,8 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Tworzenie wpisów księgowych dotyczących zaliczek w sektorze publicznym
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
+                - name: Bilans próbny z raportem szczegółów transakcyjnych
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Używanie limitów kontroli gotówki
                   href: public-sector/cash-control.md
                 - name: Przetwarzanie na koniec roku w sektorze publicznym
@@ -1146,6 +1152,8 @@
               href: public-sector/tasks/create-fund-type-public-sector.md
             - name: Dodawanie typu certyfikacji do dostawcy w sektorze publicznym
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
+            - name: Obliczanie kanadyjskiego ujednoliconego podatku od sprzedaży
+              href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Raportowanie finansowe
           items:
             - name: Omówienie raportowania finansowego
@@ -1846,6 +1854,8 @@
                           href: localizations/apac-ind-news-letter-10-0-10.md
                         - name: Nowości i zmiany w wersji 10.0.11
                           href: localizations/apac-ind-news-letter-10-0-11.md
+                        - name: Nowości i zmiany w wersji 10.0.12
+                          href: localizations/apac-ind-news-letter-10-0-12.md
                     - name: Grupy odwołania podatku GST (Indie)
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: Integracja podatku GST w kasach
@@ -2632,10 +2642,14 @@
                   href: localizations/emea-esp-promissory-note-options.md
                 - name: Raport 340
                   href: localizations/emea-esp-report-340.md
+                - name: Raport deklaracji 347
+                  href: localizations/emea-esp-declaration-347-report.md
                 - name: Cykle sprzedaży i zakupów
                   href: localizations/emea-esp-sales-purchase-cycle.md
                 - name: Specjalne wpisy i arkusze otwarcia
                   href: localizations/emea-esp-opening-sheets-spain.md
+                - name: Natychmiastowe dostarczanie informacji o podatku VAT
+                  href: localizations/emea-esp-sii.md
             - name: Szwecja
               items:
                 - name: Szwecja — omówienie
@@ -2670,9 +2684,9 @@
               items:
                 - name: Ustawianie i raportowanie podatku VAT
                   href: localizations/uae-vat-setup-reporting.md
-            - name: Wielka Brytania
+            - name: Zjednoczone Królestwo
               items:
-                - name: Wielka Brytania — omówienie
+                - name: Zjednoczone Królestwo — omówienie
                   href: localizations/united-kingdom.md
                 - name: Schemat branży budowlanej (CIS)
                   href: localizations/emea-gbr-cis-construction-industry-scheme.md

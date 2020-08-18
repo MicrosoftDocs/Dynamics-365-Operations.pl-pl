@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0efc2b50b080b769cb103d1519217517b8330668
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 3478c4c2acb134df1c293c1c33f615595aeaadd0
+ms.sourcegitcommit: 3ae002804858f201297a729d03ec7eab8209be34
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429665"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628436"
 ---
 # <a name="view-team-and-company-calendars"></a>Wyświetlanie kalendarzy zespołów i firm
 
@@ -33,15 +33,13 @@ W programie Dynamics 365 Human Resources można wyświetlać kalendarze zespoł�
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Wyświetlanie kalendarza zespołu jako pracownik etatowy
 
-1. W obszarze roboczym **Samoobsługa pracownika etatowego** wybierz opcję **Mój zespół**.
-
-2. Wybierz kolejno opcje **Urlopy i nieobecności** oraz **Wyświetl kalendarz zespołu**.
+1. W obszarze roboczym **Samoobsługa pracownika etatowego** wybierz opcję **Kalendarz nieobecności zespołu** w obszarze **Podsumowanie**.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Wyświetlanie kalendarza zespołu jako menedżer
 
 1. W obszarze roboczym **Samoobsługa pracownika etatowego** wybierz opcję **Mój zespół**.
 
-2. Wybierz kolejno opcje **Urlopy i nieobecności** oraz **Wyświetl kalendarz zespołu**.
+2. Wybierz kolejno opcje **Urlopy i nieobecności** oraz **Wyświetl kalendarz nieobecności menedżera**.
 
 Menedżerowie mogą również uzyskać dostęp do kalendarza zespołowego z **Czas oczekiwania na nierealizację żądania dla mojego zespołu**, **Zatwierdzony czas wolny** i **Żądania czasu wolnego**. 
 

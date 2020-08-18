@@ -3,7 +3,7 @@ title: Zgłaszanie jako gotowych z urządzenia karty zadania
 description: W tym temacie opisano sposób konfigurowania systemu w taki sposób, aby użytkownicy urządzenia obsługującego karty zadań mogli zgłaszać produkty gotowe ze zlecenia produkcyjnego do magazynu.
 author: johanhoffmann
 manager: tfehr
-ms.date: 05/18/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,19 +15,24 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f5d34893ddc8adc3785ec50dbd72438cf8f68c5d
-ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 6ba5d8bc0c22f97e6d2ce61c636090e04fae5abd
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3403269"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651623"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Zgłaszanie jako gotowych z urządzenia karty zadania
 
 [!include [banner](../includes/banner.md)]
 
-Pracownicy korzystają z strony **Zgłaszanie postępu** na urządzeniu z kartami zadań w celu raportowania ilości ukończonych dla zadania produkcyjnego.
+Pracownicy korzystają z strony **Zgłaszanie postępu** na urządzeniu z kartami zadań w celu raportowania ilości ukończonych dla zadania produkcyjnego. W tym temacie opisano, jak skonfigurować różne opcje, które określają, w jaki sposób pracownicy mogą zgłaszać ukończenie za pomocą tej strony i co dzieje się dalej. Dostępne opcje:
+
+- Umożliwia określenie, czy i jak ilości zgłoszone jako gotowe są dodawane do magazynu.
+- Umożliwia określenie, czy i w jaki sposób mają być generowane i stosowane numery partii podczas zgłaszania towarów gotowych.
+- Umożliwia określenie, czy i w jaki sposób mają być generowane i stosowane numery seryjne podczas zgłaszania towarów gotowych.
+- Kontroluj, czy i jak zgłaszać gotowość do numeru identyfikacyjnego.
 
 ## <a name="control-whether-quantities-that-are-reported-as-finished-are-added-to-inventory"></a>Umożliwia określenie, czy ilości zgłoszone jako gotowe są dodawane do magazynu
 
@@ -50,11 +55,21 @@ Aby uzyskać więcej informacji na temat pracy ze stroną **Ustawienia domyślne
 
 Urządzenie karty zadań obsługuje trzy scenariusze tworzenia raportów dotyczących partii towarów. Te scenariusze dotyczą zarówno towarów włączonych dla zaawansowanych procesów magazynowych, jak i dla towarów, które nie są włączone dla zaawansowanych procesów magazynowych.
 
-- **Numery partii przypisane ręcznie:** Pracownicy wprowadzający niestandardowy numer partii. Ten numer partii może pochodzić ze źródła zewnętrznego, które nie jest znane dla systemu.
-- **Wstępnie zdefiniowane numery partii:** Pracownik umożliwia wybranie numeru partii na liście numerów partii, które system automatycznie generuje przed zwolnieniem zlecenia produkcyjnego na urządzeniu karty zadań.
-- **Trwałe numery partii:** Pracownicy nie wprowadzają ani nie wybierają numeru partii. Zamiast tego system automatycznie przypisuje numer partii do zlecenia produkcyjnego przed jego zwolnieniem.
+- **Numery partii przypisane ręcznie** - Pracownicy wprowadzający niestandardowy numer partii. Ten numer partii może pochodzić ze źródła zewnętrznego, które nie jest znane dla systemu.
+- **Wstępnie zdefiniowane numery partii** - Pracownik umożliwia wybranie numeru partii na liście numerów partii, które system automatycznie generuje przed zwolnieniem zlecenia produkcyjnego na urządzeniu karty zadań.
+- **Trwałe numery partii** - Pracownicy nie wprowadzają ani nie wybierają numeru partii. Zamiast tego system automatycznie przypisuje numer partii do zlecenia produkcyjnego przed jego zwolnieniem.
 
-Aby wyłączyć każdy scenariusz, wykonaj następujące kroki.
+
+### <a name="enable-the-feature-on-your-system"></a>Włączanie funkcji w systemie
+
+Aby umożliwić urządzeniom kart produkcyjnych akceptowanie numeru partii podczas zgłaszania wyrobów gotowych, należy skorzystać z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w celu włączenia następujących funkcji (w podanej kolejności):
+
+1. Udoskonalone środowisko użytkownika okna dialogowego zgłaszania postępu w menu Urządzenie karty zadań
+1. Włącz, aby wprowadzić numery seryjne i partii podczas zgłaszania jako gotowych z urządzenia karty zadań (wersja zapoznawcza)
+
+### <a name="configure-products-that-require-batch-number-reporting"></a>Konfigurowanie produktów wymagających raportowania numerów partii
+
+Aby umożliwić produktowi obsługę dowolnego z dostępnych scenariuszy sterowanych wsadowo, należy wykonać następujące kroki:
 
 1. Przejdź do **Zarządzanie informacjami o produktach\> Produkty \> Zwolnione produkty**.
 1. Umożliwia wybranie produktu do konfiguracji.
@@ -63,14 +78,7 @@ Aby wyłączyć każdy scenariusz, wykonaj następujące kroki.
 > [!NOTE]
 > Domyślnie, jeśli grupa numerów partii nie jest przypisana do produktu kontrolowanego przez partię, urządzenie karty zadań zawiera ręczny wpis dla numeru partii podczas zgłaszania wyrobów gotowych.
 
-Poniższe podsekcje opisują sposób konfigurowania grup numerów śledzenia w celu obsługi każdego z trzech scenariuszy tworzenia raportów dotyczących partii towarów.
-
-### <a name="enable-batch-number-reporting-on-the-job-card-device"></a>Włączanie raportowania numerów partii na urządzeniu z kartą pracy
-
-Aby umożliwić urządzeniom kart produkcyjnych akceptowanie numeru partii podczas zgłaszania wyrobów gotowych, należy skorzystać z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w celu włączenia następujących funkcji (w podanej kolejności):
-
-1. Udoskonalone środowisko użytkownika okna dialogowego zgłaszania postępu w menu Urządzenie karty zadań
-1. Włącz, aby wprowadzić numery seryjne i partii podczas zgłaszania jako gotowych z urządzenia karty zadań (wersja zapoznawcza)
+Poniższe sekcje opisują sposób konfigurowania grup numerów śledzenia w celu obsługi każdego z trzech scenariuszy tworzenia raportów dotyczących partii towarów.
 
 ### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-batch-number"></a>Ustaw grupę numerów identyfikacyjnych, aby umożliwić pracownikom ręczne przypisanie numeru partii
 
@@ -80,7 +88,7 @@ Aby zezwolić na ręcznie przypisane numery partii, wykonaj następujące kroki,
 1. Utwórz lub wybierz grupę numerów śledzenia do skonfigurowania.
 1. Na skróconej karcie **Ogólne** ustaw opcje **Ręcznie** na **Tak**.
 
-    ![Strona grup numerów śledzenia](media/tracking-number-group-manual.png "Strona grup numerów śledzenia")
+    ![Grupa numerów śledzenia dla ręcznych numerów partii](media/tracking-number-group-manual.png "Grupa numerów śledzenia dla ręcznych numerów partii")
 
 1. Należy określić inne wymagane wartości, a następnie wybrać tę grupę numerów śledzenia jako grupę numerów partii dla zwolnionych produktów, dla których ma być używany ten scenariusz.
 
@@ -97,7 +105,7 @@ Aby podać listę predefiniowanych numerów partii, wykonaj następujące kroki,
 1. Na skróconej karcie **Ogólne** ustaw opcje **Tylko dla transakcji magazynowych** na **Tak**.
 1. Pole **Na ilość** służy do dzielenia numerów partii na ilość w zależności od wprowadzonej wartości. Na przykład zlecenie produkcyjne dla dziesięciu sztuk, a pole **Na ilość** jest ustawione na wartość *2*. W takim przypadku do zlecenia produkcyjnego zostanie przypisane pięć numerów partii, które zostały utworzone.
 
-    ![Strona grup numerów śledzenia](media/tracking-number-group-predefined.png "Strona grup numerów śledzenia")
+    ![Grupa numerów śledzenia dla zdefiniowanych numerów partii](media/tracking-number-group-predefined.png "Grupa numerów śledzenia dla zdefiniowanych numerów partii")
 
 1. Należy określić inne wymagane wartości, a następnie wybrać tę grupę numerów śledzenia jako grupę numerów partii dla zwolnionych produktów, dla których ma być używany ten scenariusz.
 
@@ -114,13 +122,96 @@ Jeśli numery partii powinny być przypisywane automatycznie, bez wprowadzania d
 1. Na skróconej karcie **Ogólne** ustaw opcje **Tylko dla transakcji magazynowych** na **Nie**.
 1. W opcji **Ręcznie** określ wartość **Nie**.
 
-    ![Strona grup numerów śledzenia](media/tracking-number-group-fixed.png "Strona grup numerów śledzenia")
+    ![Grupa numerów śledzenia dla ustawionych numerów partii](media/tracking-number-group-fixed.png "Grupa numerów śledzenia dla ustawionych numerów partii")
 
 1. Należy określić inne wymagane wartości, a następnie wybrać tę grupę numerów śledzenia jako grupę numerów partii dla zwolnionych produktów, dla których ma być używany ten scenariusz.
 
 W przypadku użycia tego scenariusza pole **Numeru partii**, które znajduje się na stronie **Zgłaszanie postępu** na karcie zadań, pokazuje wartość, ale pracownicy nie mogą jej edytować.
 
 ![Umożliwia raportowanie strony postępu z trwałym numerem partii](media/job-card-device-batch-fixed.png "Umożliwia raportowanie strony postępu z trwałym numerem partii")
+
+## <a name="report-serial-controlled-items-as-finished"></a>Zgłaszanie towarów kontrolowanych za pomocą serii jako gotowe
+
+Urządzenie karty pracy obsługuje trzy scenariusze raportowania towarów kontrolowanych seryjnie. Te scenariusze dotyczą zarówno towarów włączonych dla zaawansowanych procesów magazynowych, jak i dla towarów, które nie są włączone dla zaawansowanych procesów magazynowych.
+
+- **Numery seryjne przypisane ręcznie** - Pracownicy wprowadzający niestandardowy numer seryjny. Ten numer seryjny może pochodzić ze źródła zewnętrznego, które nie jest znane dla systemu.
+- **Wstępnie zdefiniowane numery seryjne** - Pracownik umożliwia wybranie numeru sertyjnego na liście numerów seryjnych, które system automatycznie generuje przed zwolnieniem zlecenia produkcyjnego na urządzeniu karty zadań.
+- **Trwałe numer seryjny** - Pracownicy nie wprowadzają ani nie wybierają numeru seryjnego. Zamiast tego system automatycznie przypisuje numer seryjny do zlecenia produkcyjnego przed jego zwolnieniem.
+
+### <a name="enable-the-feature-on-your-system"></a>Włączanie funkcji w systemie
+
+Aby umożliwić urządzeniom kart produkcyjnych akceptowanie numeru seryjnego podczas zgłaszania wyrobów gotowych, należy skorzystać z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w celu włączenia następujących funkcji (w podanej kolejności):
+
+1. Udoskonalone środowisko użytkownika okna dialogowego zgłaszania postępu w menu Urządzenie karty zadań
+1. Włącz, aby wprowadzić numery seryjne i partii podczas zgłaszania jako gotowych z urządzenia karty zadań (wersja zapoznawcza)
+
+### <a name="configure-products-that-require-serial-number-reporting"></a>Konfigurowanie produktów wymagających raportowania numerów seryjnych
+
+Aby umożliwić produktowi obsługę dowolnego z dostępnych scenariuszy sterowanych seryjnie, należy wykonać następujące kroki:
+
+Aby wyłączyć każdy scenariusz, wykonaj następujące kroki.
+
+1. Przejdź do **Zarządzanie informacjami o produktach\> Produkty \> Zwolnione produkty**.
+1. Umożliwia wybranie produktu do konfiguracji.
+1. Na skróconej karcie **Zarządzaj zapasami** w polu **Grupa numerów seryjnych** wybierz grupę numerów śledzenia skonfigurowaną w taki sposób, aby obsługiwała dany scenariusz.
+
+> [!NOTE]
+> Domyślnie, jeśli grupa numerów seryjnych nie jest przypisana do produktu kontrolowanego przez serię, urządzenie karty zadań zawiera ręczny wpis dla numeru seryjnego podczas zgłaszania wyrobów gotowych.
+
+Poniższe sekcje opisują sposób konfigurowania grup numerów śledzenia w celu obsługi każdego z trzech scenariuszy tworzenia raportów dotyczących towarów kontrolowanych przez serię.
+
+### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-serial-number"></a>Ustaw grupę numerów identyfikacyjnych, aby umożliwić pracownikom ręczne przypisanie numeru seryjnego
+
+Aby zezwolić na ręcznie przypisane numery seryjne, wykonaj następujące kroki, aby skonfigurować grupę numerów śledzenia.
+
+1. Przejdź do **Zarządzanie zapasami \> Konfiguracja \> Wymiary \> Grupy numerów śledzenia**.
+1. Utwórz lub wybierz grupę numerów śledzenia do skonfigurowania.
+1. Na skróconej karcie **Ogólne** ustaw opcje **Ręcznie** na **Tak**.
+
+    ![Strony grup numerów śledzenia, numery seryjne](media/tracking-number-group-manual-serial.png "Strony grup numerów śledzenia, numery seryjne")
+
+1. Należy określić inne wymagane wartości, a następnie wybrać tę grupę numerów śledzenia jako grupę numerów seryjnych dla zwolnionych produktów, dla których ma być używany ten scenariusz.
+
+W przypadku użycia tego scenariusza pole **Numer seryjny**, które znajduje się na stronie **Zgłaszanie postępu** na karcie zadań, jest polem tekstowym, w którym pracownicy mogą wprowadzać dowolną wartość dla numeru seryjnego. Po wprowadzeniu wartości jest ona dodawana do listy numerów seryjnych. Na tej liście pracownicy mogą wykonywać następujące czynności:
+
+- Aby oznaczyć numer seryjny jako odpadki, wybierz przycisk **Odpadki** dla odpowiedniego wiersza. Pracownik będzie monitowany o podanie **Przyczyny błędu**.
+- Aby usunąć numer seryjny, wybierz przycisk **Usuń** dla odpowiedniego wiersza.
+
+![Umożliwia raportowanie strony postępu z polem dla ręcznych numerów seryjnych](media/job-card-device-serial-manual.png "Umożliwia raportowanie strony postępu z polem dla ręcznych numerów seryjnych")
+
+### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-serial-numbers"></a>Skonfiguruj grupę numerów śledzenia, która dostarcza listę wstępnie zdefiniowanych numerów seryjnych
+
+Aby podać listę predefiniowanych numerów seryjnych, wykonaj następujące kroki, aby skonfigurować grupę numerów śledzenia.
+
+1. Przejdź do **Zarządzanie zapasami \> Konfiguracja \> Wymiary \> Grupy numerów śledzenia**.
+1. Utwórz lub wybierz grupę numerów śledzenia do skonfigurowania.
+1. Na skróconej karcie **Ogólne** ustaw opcje **Tylko dla transakcji magazynowych** na **Tak**.
+1. **Pole na ilość** umożliwia podział numerów seryjnych na liczbę z jednej.
+
+    ![Grupa numerów śledzenia dla zdefiniowanych numerów seryjnych](media/tracking-number-group-predefined-sn.png "Grupa numerów śledzenia dla zdefiniowanych numerów seryjnych")
+
+1. Należy określić inne wymagane wartości, a następnie wybrać tę grupę numerów śledzenia jako grupę numerów seryjnych dla zwolnionych produktów, dla których ma być używany ten scenariusz.
+
+W przypadku użycia tego scenariusza pole **Numer seryjny**, które znajduje się na stronie **Zgłaszanie postępu** na urządzeniu karty zadań, zapewnia listę rozwijaną, na której pracownicy muszą wybrać wcześniej zdefiniowaną wartośc.
+
+![Umożliwia raportowanie strony postępu z polem dla listy wcześniej zdefiniowanych numerów seryjnych](media/job-card-device-serial-predefined.png "Umożliwia raportowanie strony postępu z polem dla listy wcześniej zdefiniowanych numerów seryjnych")
+
+### <a name="set-up-a-tracking-number-group-that-automatically-assigns-serial-numbers"></a>Skonfiguruj grupę numerów śledzenia, która automatycznie przypisuje numery seryjne
+
+Jeśli numer seryjny powinien być przypisywanye automatycznie, bez wprowadzania danych pracownika, należy wykonać poniższe kroki w celu skonfigurowania grupy numerów śledzenia.
+
+1. Przejdź do **Zarządzanie zapasami \> Konfiguracja \> Wymiary \> Grupy numerów śledzenia**.
+1. Utwórz lub wybierz grupę numerów śledzenia do skonfigurowania.
+1. Na skróconej karcie **Ogólne** ustaw opcje **Tylko dla transakcji magazynowych** na **Nie**.
+1. W opcji **Ręcznie** określ wartość **Nie**.
+
+    ![Grupa numerów śledzenia dla ustawionych numerów seryjnych](media/tracking-number-group-fixed-sn.png "Grupa numerów śledzenia dla ustawionych numerów seryjnych")
+
+1. Należy określić inne wymagane wartości, a następnie wybrać tę grupę numerów śledzenia jako grupę numerów seryjnych dla zwolnionych produktów, dla których ma być używany ten scenariusz.
+
+W przypadku użycia tego scenariusza pole **Numer seryjny**, które znajduje się na stronie **Zgłaszanie postępu** na karcie zadań, pokazuje wartość, ale pracownicy nie mogą jej edytować. Ten scenariusz ma zastosowanie tylko w przypadku, gdy tworzone jest zlecenie produkcyjne dla ilości jednej sztuki towaru kontrolowanego numerem seryjnym.
+
+![Umożliwia raportowanie strony postępu z trwałym numerem seryjnym](media/job-card-device-serial-fixed.png "Umożliwia raportowanie strony postępu z trwałym numerami seryjnymi")
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Zgłaszanie wyrobów jako gotowych do numeru identyfikacyjnego
 

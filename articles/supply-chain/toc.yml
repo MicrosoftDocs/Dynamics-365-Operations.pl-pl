@@ -68,14 +68,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nowości lub zmiany w aplikacji Supply Chain Management
                   items:
-                    - name: Nowości lub zmiany w aplikacji Supply Chain Management – strona główna
+                    - name: Nowości lub zmiany w aplikacji Supply Chain Management — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.13 (październik 2020)
+                      href: get-started/whats-new-scm-10-0-13.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.12 (sierpień 2020)
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.11 (lipiec 2020)
                       href: get-started/whats-new-scm-10-0-11.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.10 (maj 2020)
-                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
@@ -109,23 +109,23 @@
             - name: Katalog szkoleń
               items:
                 - name: Katalog szkoleń — strona główna
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Osoby podejmujące decyzje biznesowe
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Użytkownicy biznesowi
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Menedżerowie projektów implementacji
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Administratorzy
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Deweloperzy
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Partnerska sprzedaż i marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Konsultanci funkcjonalni
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Architekci rozwiązań
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Poznawanie interfejsu użytkownika
               items:
                 - name: Elementy interfejsu użytkownika
@@ -1257,6 +1257,8 @@
               items:
                 - name: Arkusze magazynowe
                   href: inventory/inventory-journals.md
+                - name: Przepływy pracy zatwierdzania arkuszy magazynowych
+                  href: inventory/inventory-journal-workflow.md
                 - name: Lokalizacje w magazynie
                   href: inventory/inventory-locations.md
                 - name: Stany zapasów
@@ -1267,6 +1269,8 @@
                   href: inventory/tasks/maintain-barcode-types.md
                 - name: Sprawdzanie dostępności zapasów
                   href: inventory/tasks/check-availability-stock.md
+                - name: Listy dostępnych zapasów
+                  href: inventory/inventory-on-hand-list.md
                 - name: Inicjowanie poziomów zapasów w magazynie
                   href: inventory/tasks/initialize-stock-levels-warehouse.md
                 - name: Przenoszenie zapasów fizycznych w magazynie
@@ -1951,7 +1955,7 @@
                       href: production-control/tasks/define-resource-capabilities.md
                     - name: Marszruty i operacje
                       href: production-control/routes-operations.md
-                    - name: Zasady pracy magazynowej
+                    - name: Zasady pracy
                       href: warehousing/warehouse-work-policies.md
                     - name: Tworzenie właściwości harmonogramu czasu pracy
                       href: production-control/tasks/create-working-time-scheduling-properties.md
@@ -2589,6 +2593,8 @@
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
                 - name: Mieszanie wymiarów produktów w lokalizacji
                   href: warehousing/location-product-dimension-mixing.md
+                - name: Kontrola jakości
+                  href: warehousing/quality-check.md
             - name: Wychodzące operacje magazynowe
               items:
                 - name: Rezerwacje w module zarządzania magazynem
@@ -2647,10 +2653,14 @@
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: Uzupełnianie zapasów na podstawie progu w strefie
                       href: warehousing/zone-threshold-replenishment.md
+                    - name: Uzupełnianie zapasów ponad pojemność lokalizacji
+                      href: warehousing/replenishment-over-location-capacity.md
                 - name: Kompilowanie i przesyłanie ładunku
                   items:
                     - name: Potwierdź i przenieś
                       href: warehousing/confirm-and-transfer.md
+                    - name: Potwierdź wychodzące wysyłki z zadań wsadowych
+                      href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
                     - name: Zaawansowane kompilowanie ładunku podczas grupy czynności
                       href: warehousing/advanced-load-building-during-wave.md
                     - name: Zwolnienie do reguły magazynu
@@ -2679,10 +2689,8 @@
               items:
                 - name: Zasady pracy magazynowej
                   items:
-                    - name: Omówienie zasad pracy magazynowej
+                    - name: Zasady pracy
                       href: warehousing/warehouse-work-policies.md
-                    - name: Konfigurowanie zasad pracy magazynowej
-                      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
                     - name: Przenoszenie zapasów za pomocą skojarzonej pracy w module Zarządzanie magazynem
                       href: warehousing/move-inventory-associated-work.md
                     - name: Tworzenie klasy roboczej
@@ -2715,7 +2723,7 @@
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
                     - name: Zadanie oczyszczania wpisów towarów na stanie w Zarządzaniu magazynem
                       href: warehousing/onhand-cleanup.md
-                    - name: Arkusz magazynowy
+                    - name: Arkusze magazynowe
                       href: inventory/inventory-journals.md
                     - name: Lokalizacja w magazynie
                       href: inventory/inventory-locations.md
