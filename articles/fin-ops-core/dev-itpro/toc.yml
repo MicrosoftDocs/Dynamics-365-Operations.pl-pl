@@ -156,6 +156,8 @@
                           items:
                             - name: Dostosowanie mapowania jednostek i pól
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: Obsługa wielu map jednostek
+                              href: data-entities/dual-write/multiple-entity-maps.md
                             - name: Edytuj firmę po konfiguracji podwójnego zapisu
                               href: data-entities/dual-write/edit-legal-entity.md
                             - name: Zarządzanie błędami i powiadomienia o alertach
