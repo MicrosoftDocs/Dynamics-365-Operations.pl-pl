@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ab0c66ad0536b20b1ab23e9498ca3cb56b98ccf5
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: d601ca9b28bb720fd05e25ef66df7be12a08f7e0
+ms.sourcegitcommit: e2a953bea055611023c00a55c00391d14daaca25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530266"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696137"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management — strona główna
 
@@ -89,8 +89,6 @@ Poniższe nagrania konferencji technicznych omawiają funkcje zarządzania łań
   - [Konfigurator produktu w oprogramowaniu Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Zarządzanie magazynem:**
   - [Wykorzystywanie pełni możliwości systemu zarządzania magazynem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [Zaawansowane zarządzanie magazynem w wersji R3 — przetwarzanie przychodzące i minimalne/maksymalne uzupełnianie zapasów](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
-  - [Zaawansowane zarządzanie magazynem w wersji R3 — codzienne procedury, przetwarzanie wychodzące i uzupełnianie zapasów na podstawie popytu](https://youtu.be/Og0gLlVp7jA)
   - [Etykiety modułu Zarządzanie magazynem w nowej wersji oprogramowania Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
   - [Dynamics AX 2012 R3: zaawansowane zarządzanie magazynem — codzienne procedury w zakresie produkcji procesowej](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **Filmy wideo dotyczące kontroli produkcji:**

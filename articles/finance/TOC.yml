@@ -1156,7 +1156,7 @@
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Raportowanie finansowe
           items:
-            - name: Omówienie raportowania finansowego
+            - name: Rozpoczynanie pracy z raportowaniem finansowym
               href: general-ledger/financial-reporting-getting-started.md
             - name: Omówienie raportowania finansowego
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -2600,9 +2600,15 @@
                       href: localizations/rus-counting-deferrals.md
                     - name: Raportowanie odroczeń
                       href: localizations/rus-reporting-deferrals.md
+                - name: Księgowanie podatku
+                  items:
+                    - name: Kody wydatków i przychodów
+                      href: localizations/rus-expense-and-income-codes.md
+                    - name: Rejestry podatku od składników aktywów
+                      href: localizations/rus-assets-tax-registers.md
             - name: Arabia Saudyjska
               items:
-                - name: Arabii Saudyjska — omówienie
+                - name: Arabia Saudyjska — omówienie
                   href: localizations/saudi-arabia.md
                 - name: Podatek
                   href: localizations/apac-sau-sales-tax.md
@@ -3112,9 +3118,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/finance/toc.json
                         - name: EmptyList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/finance/toc.json
-                        - name: Wylicz
+                        - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/finance/toc.json
-                        - name: Filtruj
+                        - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/finance/toc.json
                         - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/finance/toc.json
@@ -3126,6 +3132,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
                         - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
                         - name: ListOfFields
@@ -3413,7 +3421,9 @@
             - name: Przewodniki Szybki start
               items:
                 - name: Dostosowanie formatu raportowania elektronicznego w celu wygenerowania niestandardowego dokumentu elektronicznego
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+                - name: Projektowanie nowego rozwiązania raportowania elektronicznego w celu wydrukowania raportu niestandardowego
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
             - name: Samouczki
               items:
                 - name: Uzyskiwanie informacji dotyczących sposobu używania źródeł danych
