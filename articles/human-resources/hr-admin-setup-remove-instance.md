@@ -3,7 +3,7 @@ title: Usuwanie wystąpienie
 description: Ten artykuł przeprowadzi użytkownika przez proces usuwania środowiska testowego lub produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
+ms.sourcegitcommit: f759d361fa505323b8b171a98024dca9cc9fa0f0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621387"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "3668332"
 ---
 # <a name="remove-an-instance"></a>Usuwanie wystąpienie
 
@@ -70,7 +70,7 @@ Aby usunąć środowisko Human Resources z istniejącego środowiska usługi Pow
 4. Zaloguj się w usłudze LCS za pomocą konta używanego do subskrypcji rozwiązania Human Resources. 
 5. Wybierz projekt z aplikacją Human Resources, który zawiera środowisko. 
 6. W projekcie LCS wybierz kafelek **Zarządzanie aplikacją Human Resources**. 
-7. Zaznacz wystąpienie, które chcesz usunąć. Powinno być ono oznaczone stanem wdrożenia **Niepowodzenie**.
+7. Zaznacz wystąpienie, które chcesz usunąć. Powinno być ono oznaczone stanem wdrożenia **Usunięte**.
 8. Wybierz opcję **Usuń wystąpienie** i potwierdź decyzję. 
 
 ## <a name="recover-a-soft-deleted-environment"></a>Odzyskiwanie wstępnie usuniętego środowiska

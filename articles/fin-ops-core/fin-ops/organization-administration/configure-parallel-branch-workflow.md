@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie odgałęzień równoległych w przepływie pracy
 description: Aby skonfigurować gałąź równoległą, należy wykonać następujące procedury w edytorze przepływu pracy.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 196043
 ms.assetid: dfdae2b8-6a4f-4760-b339-b755c66f3f89
 ms.search.region: Global
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2058eaac77282946559cae11fcec8152658fc96b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: c64c0fab6a020684e768cf2720af27cdb89c1e44
+ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811364"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "3698176"
 ---
 # <a name="configure-parallel-branches-in-a-workflow"></a>Konfigurowanie odgałęzień równoległych w przepływie pracy
 

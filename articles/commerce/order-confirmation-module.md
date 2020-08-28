@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2ec629d9fd027be01652351ab1c99001e063e30
-ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
+ms.openlocfilehash: 5876b953a3b3d960c106acf37731fde13b93f8e7
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "3464937"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661179"
 ---
 # <a name="order-details-module"></a>Moduł szczegółów zamówienia
-
 
 [!include [banner](includes/banner.md)]
 
@@ -72,16 +71,16 @@ Aby dodać moduł szczegółów zamówienia do nowej strony i ustawić wymagane 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie zestawu początkowego](starter-kit-overview.md)
-
-[Moduł kontenera](add-container-module.md)
-
-[Moduł pola zakupu](add-buy-box.md)
-
 [Moduł koszyka](add-cart-module.md)
+
+[Moduł ikony koszyka](cart-icon-module.md)
 
 [Moduł realizacji transakcji](add-checkout-module.md)
 
-[Moduł nagłówka](author-header-module.md)
+[Moduł płatności](payment-module.md)
 
-[Moduł stopki](author-footer-module.md)
+[Moduł adresu wysyłki](ship-address-module.md)
+
+[Moduł Opcje dostawy](delivery-options-module.md)
+
+[Moduł karty upominkowej](add-giftcard.md)

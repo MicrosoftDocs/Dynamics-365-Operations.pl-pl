@@ -3,7 +3,7 @@ title: Domyślne ustawienia zamówień dla wymiarów i wariantów produktów
 description: 'Domyślne ustawienia zamówień definiują: oddział i magazyn, skąd towary będą pobierane lub gdzie będą przechowywane; ilości minimalne, maksymalne, wielokrotne i standardowe, które będą używane do handlu lub zarządzania zapasami; czasy realizacji; flagę blokady; metodę tworzenia zobowiązań zamówień.'
 author: t-benebo
 manager: tfehr
-ms.date: 07/27/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,13 +18,13 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13df8eb7873495847d994922be1acd77e57f8f23
-ms.sourcegitcommit: dfe5916d982eaa879e2afef7440c30b1d0f4380a
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 0654ba019b71dc952ea52f206bc60d8fa05dd4ff
+ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3637763"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "3657347"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Domyślne ustawienia zamówienia dla wymiarów i wariantów produktu
 
@@ -32,7 +32,16 @@ ms.locfileid: "3637763"
 
 Domyślne ustawienia zamówień w Dynamics 365 Supply Chain Management definiują: oddział i magazyn, skąd towary będą pobierane lub gdzie będą przechowywane; ilości minimalne, maksymalne, wielokrotne i standardowe, które będą używane do handlu lub zarządzania zapasami; czasy realizacji; flagę blokady; metodę tworzenia zobowiązań zamówień. Domyślne ustawienia zamówień są stosowane przy tworzeniu zamówień zakupu, zamówień sprzedaży, zamówień przeniesienia i arkuszy magazynowych oraz w planowaniu głównym do generowania zamówień planowanych. Domyślne ustawienia zamówień mogą być specyficzne dla towaru, oddziału, wariantu produktu lub wymiaru produktu.
 
-Na stronie **Ustawienia domyślne zamówień** można wprowadzić domyślne parametry zamówień. Aby otworzyć stronę wybierz kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Produkty** &gt; **Zwolnione produkty** &gt; **Wybór zwalnianego produktu** &gt; w obszarze **Plan**. Można przejść do **Zarządzaj zapasami** &gt; **Ustawienia zamówienia** &gt; **Domyślne ustawienia zamówienia**.
+Aby zdefiniować domyślne ustawienia zamówienia dla produktu, wykonaj następujące kroki.
+
+1. Przejdź do **Zarządzanie informacjami o produktach** &gt; **Produkty** &gt; **Zwolnione produkty**.
+1. Wybierz odpowiedni produkt w siatce.
+1. W okienku akcji wykonaj jedną z następujących czynności, aby otworzyć stronę **Ustawienia domyślne zamówień** dla wybranego produktu:
+
+    - Na karcie **Plan** w grupie **Ustawienia zamówienia** wybierz opcję **Ustawienia domyślne zamówień**.
+    - Na karcie **Zarządzaj zapasami** w grupie **Ustawienia zamówienia** wybierz opcję **Ustawienia domyślne zamówień**.
+
+1. Skonfiguruj ustawienia w sposób opisany w pozostałej części tego tematu.
 
 ## <a name="default-order-settings"></a>Ustawienia domyślne zamówień
 
@@ -74,7 +83,7 @@ Domyślne ustawienia zamówień zapasów są również stosowane podczas tworzen
 
 ## <a name="full-definition-of-a-released-product"></a>Pełna definicja zwolnionego produktu
 
-Podczas tworzenia transakcji należy określić pełną definicję zwolnionego produktu w wierszu, aby usługa Supply Chain Management podjęła próbę identyfikacji domyślnych ustawień zamówień. Pełna definicja zwolnionego produktu oznacza, że numer towaru i wszystkie aktywne wymiary produktu, takie jak konfiguracja, rozmiar, styl i kolor, są określone w transakcji. Na przykład jeśli ręcznie tworzysz wiersz zamówienia zakupu dla zwolnionego produktu wariantu, należy określić wszystkie wymagane wymiary produktu, zanim oddział, magazyn, ilości i czas realizacji zostaną wyświetlone domyślnie w wierszu zamówienia. 
+Podczas tworzenia transakcji należy określić pełną definicję zwolnionego produktu w wierszu, aby usługa Supply Chain Management podjęła próbę identyfikacji domyślnych ustawień zamówień. Pełna definicja zwolnionego produktu oznacza, że numer towaru i wszystkie aktywne wymiary produktu, takie jak konfiguracja, rozmiar, styl, wersja i kolor, są określone w transakcji. Na przykład jeśli ręcznie tworzysz wiersz zamówienia zakupu dla zwolnionego produktu wariantu, należy określić wszystkie wymagane wymiary produktu, zanim oddział, magazyn, ilości i czas realizacji zostaną wyświetlone domyślnie w wierszu zamówienia. 
 
 Nie wszystkie domyślne ustawienia zamówień są stosowane podczas tworzenia wierszy zamówień lub arkuszy. Ilości i czasy realizacji będą wyświetlane domyślnie tylko wtedy, gdy jest to konieczne. Na przykład podczas inwentaryzacji wiersza arkusza będą domyślnie wyświetlane tylko oddział i magazyn dla utworzonego wiersza. Z tego powodu podczas tworzenia wiersza lub księgowania arkusza nie są wykonywane żadne domyślne ilości ani kontrole wielokrotności i minimów. 
 
@@ -96,7 +105,7 @@ Dla odrębnych zwolnionych produktów można zdefiniować ogólne ustawienia zam
 
 ### <a name="site-specific-order-settings"></a>Ustawienia zlecenia właściwe dla oddziału
 
-Aby utworzyć ustawienia zamówień właściwe dla oddziału, wybierz **Nowy**. W oknie **Widok szczegółów** wpisz oddział w polu **Ustawienia dotyczące** &gt; **Oddział**. W oknie **Widok siatki** wpisz oddział w kolumnie **Oddział**. Nowa reguła automatycznie otrzyma nową wartość rangi wyższą niż 0. Można utworzyć dowolną potrzebną liczbę reguł właściwych dla oddziału, a wszystkim regułom właściwym dla oddziału można przypisać taką samą rangę, wskazując w ten sposób, że są one równie ważne. 
+Aby utworzyć ustawienia zamówień właściwe dla oddziału, wybierz **Nowy**. W oknie **Widok szczegółów** wpisz witrynę w polu **Witryna** w sekcji **Ustawienia dotyczące**. W oknie **Widok siatki** wprowadź witrynę w kolumnie **Witryna**. Nowa reguła automatycznie przypisuje nową wartość rangi większą od 0 (zero). Możesz utworzyć dowolną liczbę reguł specyficznych dla witryny. Aby wskazać, że są one równie ważne, można przypisać tę samą wartość rangi do wszystkich reguł specyficznych dla witryny.
 
 Jeśli znajdujesz się w oknie **Widok szczegółów**, nie można uzyskać podglądu reguł utworzonych dla towaru. Aby wyświetlić informacje przeglądowe, użyj **Pokaż/ukryj listę**. Podczas tworzenia wiersza zamówienia dowolnego typu, gdy nie jest określony oddział, usługa Supply Chain Management wyszukuje reguły bez zdefiniowanego oddziału. To pomaga określić domyślny oddział w wierszu zamówienia. Znaleziony oddział jest następnie używany do wyszukiwania reguły właściwej dla oddziału, w której mógł zostać ustawiony domyślny magazyn. Ten magazyn jest stosowany do wiersza zamówienia.
 
@@ -111,41 +120,41 @@ Rozważmy następujący przykładowy produkt.
 | **Nazwa produktu**                                    | Czujnik fotoelektryczny                    |
 | **Numer pozycji**                                     | XW56                                    |
 | **Konfiguracja** (służy do modelowania typu światła) | C1 - widzialne światło czerwone, C2 - światło podczerwone |
-| **Styl** (służy do modelowania wersji technicznej)  | R1, R2, R3                              |
+| **Wersja** | V1, V2, V3                              |
 
 W tym przykładzie załóżmy, że produkt jest nabywany, a nie produkowany. Ponadto załóżmy, że konfiguracja C1 jest używana częściej, więc ma krótsze czasy realizacji. 
 
 W celu wymodelowania tego scenariusza utwórz następujące domyślne ustawienia zamówień.
 
-| Stopień | Oddział | Konfiguracja | Styl | Zakup — Zastąp ustawienia domyślne | Czas realizacji zakupu | Zakup — Zablokowane | Sprzedaż — Zastąp ustawienia domyślne | Sprzedaż — Zablokowane |
+| Stopień | Oddział | Konfiguracja | Wersja | Zakup — Zastąp ustawienia domyślne | Czas realizacji zakupu | Zakup — Zablokowane | Sprzedaż — Zastąp ustawienia domyślne | Sprzedaż — Zablokowane |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
 | 10   |      | C1            |       | Tak                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-Gdy jest tworzony wiersz zamówienia zakupu lub planowane zamówienie zakupu dla towaru XW56 w konfiguracji C1, to niezależnie od tego, w której wersji lub oddziale zostanie umieszczony wiersz, system przyjmie czas realizacji 2. Załóżmy, że wszystkie wersje oprócz R3 zostały zablokowane.
+Gdy jest tworzony wiersz zamówienia zakupu lub planowane zamówienie zakupu dla towaru XW56 w konfiguracji C1, to niezależnie od tego, w której wersji lub oddziale zostanie umieszczony wiersz, system przyjmie czas realizacji 2. Załóżmy, że wszystkie wersje oprócz V3 zostały zablokowane.
 
 Można utworzyć następujące reguły domyślnych ustawień zamówień.
 
-| Stopień | Oddział | Konfiguracja | Styl | Zakup — Zastąp ustawienia domyślne | Czas realizacji zakupu | Zakup — Zablokowane | Sprzedaż — Zastąp ustawienia domyślne | Sprzedaż — Zablokowane |
+| Stopień | Oddział | Konfiguracja | Wersja | Zakup — Zastąp ustawienia domyślne | Czas realizacji zakupu | Zakup — Zablokowane | Sprzedaż — Zastąp ustawienia domyślne | Sprzedaż — Zablokowane |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 20   |      |               | R2    | Tak                                  |                    | Tak                | Tak                               | Tak             |
-| 20   |      |               | R1    | Tak                                  |                    | Tak                | Tak                               | Tak             |
+| 20   |      |               | Wersja 2    | Tak                                  |                    | Tak                | Tak                               | Tak             |
+| 20   |      |               | Wer. 1    | Tak                                  |                    | Tak                | Tak                               | Tak             |
 | 10   |      | C1            |       | Tak                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-Dwie reguły blokowania starych wersji mają tę samą rangę, co oznacza, że są równie ważne. Obie mają wyższą rangę niż reguła dla konfiguracji C1, co oznacza, że mają pierwszeństwo nad regułą konfiguracji C1. 
+Dwie reguły zatrzymywania starych wersji mają taką samą rangę. Dlatego są one równie ważne. Ponieważ obie te reguły mają wyższą rangę niż reguła dla konfiguracji C1, mają pierwszeństwo przed regułą dla konfiguracji C1. 
 
-W tym przykładzie pokazano potrzebę używania rangi. Jeśli zamówienie zakupu jest tworzone dla konfiguracji C1 i wersji R2, w przypadku braku rangi dwie reguły zdefiniowane dla wersji R2 i konfiguracji C1 byłyby niejednoznaczne. Aby rozwiązać niejednoznaczność, usługa Supply Chain Management przeszuka reguły w kolejności malejącej według rangi i zastosuje pierwszą pasującą regułę. W obecnym przykładzie podczas tworzenia wiersza zamówienia zakupu dla konfiguracji C1 i wersji R2 użytkownik otrzyma komunikat ostrzegawczy, że towar jest wstrzymamy i że jest to spowodowane wartością wersji. Jeśli reguła konfiguracji miałaby rangę wyższą niż 1 dla wersji, tworzenie wiersza zamówienia zakupu dla konfiguracji C1 i wersji R2 powiodłoby się, a użytkownikowi nie byłby wyświetlany żaden komunikat „Towar wstrzymany”. 
+W tym przykładzie pokazano potrzebę używania rangi. Jeśli pozycja nie jest używana, podczas tworzenia zamówienia zakupu dla konfiguracji C1 i wersji V2 dwie reguły zdefiniowane dla wersji V2 i C1 będą niejednoznaczne. Aby rozwiązać niejednoznaczność, usługa Supply Chain Management przeszuka reguły w kolejności malejącej według rangi i zastosuje pierwszą pasującą regułę. W obecnym przykładzie podczas tworzenia wiersza zamówienia zakupu dla konfiguracji C1 i wersji V2 użytkownik otrzyma komunikat ostrzegawczy, że towar jest wstrzymamy i że wstrzymanie jest spowodowane wartością wersji. Gdyby reguła dla konfiguracji miała wyższą rangę niż reguła dla wersji, wiersz zamówienia zostałby pomyślnie utworzony dla konfiguracji C1 i wersji V2, a użytkownik nie otrzymałby żadnego komunikatu „Towar wstrzymany”. 
 
 Rozważmy następujące reguły domyślnych ustawień zamówień.
 
-| Stopień | Oddział | Konfiguracja | Styl | Oddział domyślny | Magazyn domyślny | Zakup — Zastąp domyślne wymiary magazynowania | Magazyn zakupu |
+| Stopień | Oddział | Konfiguracja | Wersja | Oddział domyślny | Magazyn domyślny | Zakup — Zastąp domyślne wymiary magazynowania | Magazyn zakupu |
 |------|------|---------------|-------|--------------|-------------------|------------------------------------------------|--------------------|
 | 20   | 2    |               |       |              |                   | Tak                                            | 22                 |
-| 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
+| 10   |      | C1            |  Wersja 2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-System analizuje zestaw reguł dwa razy w celu ustalenia oddziału i magazynu. Podczas tworzenia wiersza zamówienia zakupu dla konfiguracji C1 o stylu R2 oddział jest ustalany zgodnie z regułą o randze 10. Następnie system szuka reguły dla oddziału 2 w celu określenia magazynu. Reguła 20 została znaleziona i ponieważ ma wyższą rangę, magazyn w wierszu zamówienia zakupu będzie miał wartość 22, a nie 21.
+System analizuje zestaw reguł dwa razy w celu ustalenia oddziału i magazynu. Podczas tworzenia wiersza zamówienia zakupu dla konfiguracji C1 o wersji V2 oddział jest ustalany zgodnie z regułą o randze 10. System następnie szuka reguły dla oddziału 2 w celu określenia magazynu. Reguła 20 została znaleziona i ponieważ ma wyższą rangę, magazyn w wierszu zamówienia zakupu będzie miał wartość 22, a nie 21.
 
 Jako ogólną wskazówkę należy pamiętać, że specyficzne reguły oraz reguły dotyczące wymiarów ważniejszych niż inne wymiary uzyskują wyższe rangi, podczas gdy reguły standardowe otrzymują niższe rangi. 
 
@@ -159,14 +168,14 @@ Dla jednego zwolnionego produktu można utworzyć wiele reguł. Aby się lepiej 
 
 Jeśli system reguł dla domyślnych ustawień zamówień jest zbyt skomplikowany, można określić domyślne ustawienia zamówień dla każdego wariantu produktu. Poniższy przykład przedstawia, jak to będzie wyglądało dla produktu i przypadków opisanych powyżej.
 
-| Stopień | Oddział | Konfiguracja | Styl | Zakup — Zastąp ustawienia domyślne | Czas realizacji zakupu | Zakup — Zablokowane | Sprzedaż — Zastąp ustawienia domyślne | Sprzedaż — Zablokowane |
+| Stopień | Oddział | Konfiguracja | Wersja | Zakup — Zastąp ustawienia domyślne | Czas realizacji zakupu | Zakup — Zablokowane | Sprzedaż — Zastąp ustawienia domyślne | Sprzedaż — Zablokowane |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 10   |      | C2            | R3    | Tak                                  | 5                  |                    |                                   |                 |
-| 10   |      | C2            | R2    | Tak                                  | 5                  | Tak                | Tak                               | Tak             |
-| 10   |      | C2            | R1    | Tak                                  | 5                  | Tak                | Tak                               | Tak             |
-| 10   |      | C1            | R3    | Tak                                  | 2                  |                    |                                   |                 |
-| 10   |      | C1            | R2    | Tak                                  | 2                  | Tak                | Tak                               | Tak             |
-| 10   |      | C1            | R1    | Tak                                  | 2                  | Tak                | Tak                               | Tak             |
+| 10   |      | C2            | V3    | Tak                                  | 5                  |                    |                                   |                 |
+| 10   |      | C2            | Wersja 2    | Tak                                  | 5                  | Tak                | Tak                               | Tak             |
+| 10   |      | C2            | Wer. 1    | Tak                                  | 5                  | Tak                | Tak                               | Tak             |
+| 10   |      | C1            | V3    | Tak                                  | 2                  |                    |                                   |                 |
+| 10   |      | C1            | Wersja 2    | Tak                                  | 2                  | Tak                | Tak                               | Tak             |
+| 10   |      | C1            | Wer. 1    | Tak                                  | 2                  | Tak                | Tak                               | Tak             |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 W tym przypadku ranga nie ma właściwie znaczenia, więc można ją ukryć. To rozwiązanie może potencjalnie wprowadzić utrudnienia przy konserwacji. Jednak warto wziąć pod uwagę używanie tej konfiguracji, jeśli rozważasz integrację z systemami zarządzania cyklem życia produktu (PLM).

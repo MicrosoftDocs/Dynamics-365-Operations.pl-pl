@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: dd1df355d39065d6959915cc916987d3c58b15a6
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 93c9f2bebd038723d50e64bdaa0e0992c003f88d
+ms.sourcegitcommit: cec5de2dcfc7210a86a220e308f80ab204f12383
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570201"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665849"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Obliczony podatek dla ogólnych wierszy arkuszy finansowych
 [!include [banner](../includes/banner.md)]
@@ -64,23 +64,6 @@ Na poniższym diagramie przedstawiono regułę graficznie.
 
 Jeśli załącznik ma wiersz arkusza, w którym typem konta jest **Dostawca**, to ten sam kierunek podatku jest stosowany w odniesieniu do wszystkich wierszy arkusza w załączniku. W poniższych punktach przedstawiono możliwe kierunki podatku dla kont dostawców. 
 
-• Jeśli kod podatku jest używany jako wyjatek podatkowy, kierunek podatku jest używany jako zakup bez podatku.
-
-• Jeśli kod podatku jest używany jako VAT między firmami, kierunek podatku jest używany jako Podatek naliczony.
-
-• Jeśli kod podatku jest używany jako odwrotne obciążenie, kierunek podatku jest używany jako Podatek naliczony.
-
-
-W przeciwnym razie kierunek podatku jest podatek naliczony.
-
-Na poniższym diagramie przedstawiono regułę graficznie.
-
-![Możliwości podatkowe dla kont dostawców](media/Sales-Tax-Direction-Vendor.jpg)
-
-### <a name="account-type-is-customer"></a>Konto typu Odbiorca
-
-Jeśli załącznik ma wiersz arkusza, w którym typem konta jest **Odbiorca**, to ten sam kierunek podatku jest stosowany w odniesieniu do wszystkich wierszy arkusza w załączniku. W poniższych punktach przedstawiono możliwe kierunki podatku dla kont odbiorców.
-
 • Jeśli kod podatku jest używany jako podatek, kierunek podatku jest używany jako podatek.
 
 • Jeśli kod podatku jest używany jako wyjatek podatkowy, kierunek podatku jest używany jako zakup bez podatku.
@@ -90,6 +73,22 @@ Jeśli załącznik ma wiersz arkusza, w którym typem konta jest **Odbiorca**, t
 • Jeśli kod podatku jest używany jako odwrotne obciążenie, kierunek podatku jest używany jako Podatek należny.
 
 W przeciwnym razie kierunek podatku jest naliczony od sprzedaży.
+
+Na poniższym diagramie przedstawiono regułę graficznie.
+
+![Możliwości podatkowe dla kont dostawców](media/Sales-Tax-Direction-Vendor.jpg)
+
+### <a name="account-type-is-customer"></a>Konto typu Odbiorca
+
+Jeśli załącznik ma wiersz arkusza, w którym typem konta jest **Odbiorca**, to ten sam kierunek podatku jest stosowany w odniesieniu do wszystkich wierszy arkusza w załączniku. W poniższych punktach przedstawiono możliwe kierunki podatku dla kont odbiorców.
+
+• Jeśli kod podatku jest używany jako wyjatek podatkowy, kierunek podatku jest używany jako zakup bez podatku.
+
+• Jeśli kod podatku jest używany jako VAT między firmami, kierunek podatku jest używany jako Podatek naliczony.
+
+• Jeśli kod podatku jest używany jako odwrotne obciążenie, kierunek podatku jest używany jako Podatek naliczony.
+
+W przeciwnym razie kierunek podatku jest podatek naliczony.
 
 Na poniższym diagramie przedstawiono regułę graficznie.
 

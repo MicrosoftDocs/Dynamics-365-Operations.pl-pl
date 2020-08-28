@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6771a84118504cd5c8e44302380eb970e4658902
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 137debe3f4cad3948d20b2902ea80e66fa74ffd4
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411096"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661154"
 ---
 # <a name="cart-icon-module"></a>Moduł ikony koszyka
 
@@ -42,22 +42,22 @@ Poniższy obraz pokazuje przykład modułu ikony koszyka, który wyświetla mini
 
 - **Wyświetlanie koszyka mini** — gdy ma wartość prawda, ta właściwość umożliwia wyświetlenie podsumowania koszyka (w postaci najminiego koszyka) po aktywowaniu ikony koszyka. Ta funkcja jest obsługiwana tylko w przypadku portów widoku pulpitu.
 
-
 ## <a name="add-a-cart-icon-module-to-a-page"></a>Dodawanie modułu ikonu koszyka do strony
 
 Aby dodać moduł ikony koszyka, zobacz [Moduł nagłówka](author-header-module.md).
 
-
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-
-[Moduł pola zakupu](add-buy-box.md)
 
 [Moduł koszyka](add-cart-module.md)
 
 [Moduł realizacji transakcji](add-checkout-module.md)
 
-[Moduł potwierdzenia zamówienia](order-confirmation-module.md)
+[Moduł płatności](payment-module.md)
 
-[Moduł nagłówka](author-header-module.md)
+[Moduł adresu wysyłki](ship-address-module.md)
 
-[Moduł stopki](author-footer-module.md)
+[Moduł Opcje dostawy](delivery-options-module.md)
+
+[Moduł szczegółów zamówienia](order-confirmation-module.md)
+
+[Moduł karty upominkowej](add-giftcard.md)

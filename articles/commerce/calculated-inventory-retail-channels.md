@@ -3,7 +3,7 @@ title: Oblicz dostępność zapasów dla kanałów sprzedaży detalicznej
 description: W tym temacie opisano opcje dostępne dla wyświetlania dostępnych zapasów sklepu i kanałów online.
 author: hhainesms
 manager: annbe
-ms.date: 05/15/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
-ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
+ms.openlocfilehash: 6d25a426268ebfb6990eb3dadb1ad451f86f59a1
+ms.sourcegitcommit: 65a8681c46a1d99e7ff712094f472d5612455ff0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3379243"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3694929"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Oblicz dostępność zapasów dla kanałów sprzedaży detalicznej
 
@@ -66,7 +66,7 @@ Po zakończeniu pracy zadania **dostępności produktu** przechwycone dane musz�
 1. Wybierz kolejno opcje **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji**.
 1. Uruchom zadanie **1130** (**dostępność produktu**), aby zsynchronizować dane migawki, które utworzono w ramach zadania **dostępności produktu** z poziomu programu Commerce Headquarters do baz danych kanału.
 
-Po zażądaniu dostępności zapasów z interfejsu API **GetEstimatedAvailability** lub **ProductWarehouseInventoryAvailabilities** należy wykonać obliczenia w celu uzyskania optymalnego oszacowania stanu zapasów produktu. Obliczenie odwołuje się do wszystkich zamówień odbiorcy w handlu elektronicznym, które znajdują się w bazie danych kanału, ale nie zostały uwzględnione w danych migawki, które zostały dostarczone przez zadanie 1130. Tę logikę wykonuje się, śledząc ostatnio przetworzoną transakcję magazynową z modułu Commerce Headquarters i porównując ją z transakcjami w bazie danych kanału. Stanowi podstawę dla logiki obliczeniowej po stronie kanału, dzięki czemu dodatkowe przesunięcia magazynowe, które nastąpiły dla transakcji sprzedaży zamówienia odbiorcy w bazie danych kanału handlu elektronicznego, mogą być uwzględniane w szacowanej wartości zapasów, jaką interfejs API zawiera.
+Po zażądaniu dostępności zapasów z interfejsu API **GetEstimatedAvailability** lub **GetEstimatedProductWarehouseAvailability** należy wykonać obliczenia w celu uzyskania optymalnego oszacowania stanu zapasów produktu. Obliczenie odwołuje się do wszystkich zamówień odbiorcy w handlu elektronicznym, które znajdują się w bazie danych kanału, ale nie zostały uwzględnione w danych migawki, które zostały dostarczone przez zadanie 1130. Tę logikę wykonuje się, śledząc ostatnio przetworzoną transakcję magazynową z modułu Commerce Headquarters i porównując ją z transakcjami w bazie danych kanału. Stanowi podstawę dla logiki obliczeniowej po stronie kanału, dzięki czemu dodatkowe przesunięcia magazynowe, które nastąpiły dla transakcji sprzedaży zamówienia odbiorcy w bazie danych kanału handlu elektronicznego, mogą być uwzględniane w szacowanej wartości zapasów, jaką interfejs API zawiera.
 
 Logika obliczania po stronie kanału zwraca szacowaną, fizycznie dostępną wartość i łączną dostępną wartość dla żądanego produktu i magazynu. Wartości mogą być wyświetlane w witrynie handlu elektronicznego w razie potrzeby lub mogą być używane do wyzwalania innych reguł biznesowych w witrynie handlu elektronicznego. Można na przykład wyświetlić komunikat „brak w magazynie”, a nie rzeczywistą ilość zapasów przekazanych przez interfejs API.
 
@@ -107,6 +107,8 @@ Aby zapewnić możliwie najlepszy szacunek stanu zapasów, należy używać nast
 - **Księgowanie wyciągów transakcyjnych w partii** — to zadanie jest również wymagane w przypadku księgowania cząstkowego. Następuje po zadaniu **obliczenia zestawień transakcyjnych w partii**. To zadanie systematycznie księguje obliczone zestawienia, tak aby zamówienia sprzedaży dla sprzedaży gotówkowej i towarowej były tworzone w module Commerce Headquarters i by moduł Commerce Headquarters lepiej odzwierciedlał zapasy sklepu.
 - **Dostępność produktu** — to zadanie tworzy migawkę zapasów z modułu Commerce Headquarters.
 - **1130 (dostępność produktu)** — to zadanie znajduje się na stronie **harmonogramy dystrybucji** i powinno być uruchamiane natychmiast po zadaniu **dostępności produktu**. To zadanie transportuje dane migawki magazynowej z modułu Commerce Headquarters do baz danych kanału.
+
+Zaleca się, aby te zadania wsadowe nie były uruchamiane zbyt często (co kilka minut). Częste uruchomienia będą przeciążać usługi Commerce Headquarter (HQ) i mogą potencjalnie wpłynąć na wydajność. Ogólnie rzecz biorąc, dobrą praktyką jest uruchamianie dostępności produktów i 1130 zadań na podstawie godzinowej oraz planowanie zadań P, synchronizowanie zamówień i przesyłanie zadań związanych z przesyłaniem strumieniowym z taką samą lub wyższą częstotliwością.
 
 > [!NOTE]
 > Ze względu na wydajność, gdy obliczenia dostępności zapasów w ramach kanału są używane do realizacji żądania dostępności zapasów przy użyciu logiki magazynowej obsługi handlu elektronicznego lub nowego kanału punktu sprzedaży, w obliczeniu jest używana pamięć podręczna do określenia, czy minęła wystarczająca liczba godzin do ponownego uruchomienia logiki obliczeń. Domyślna pamięć podręczna została ustawiona na 60 sekund. Na przykład po stronie kanału można włączyć obliczanie dla sklepu i wyświetlić dostępne zapasy produktu na stronie **wyszukiwania zapasów**. Jeśli zostanie sprzedana jedna jednostka produktu, strona **wyszukiwania zapasów** nie będzie pokazywała zmniejszonych zapasów, dopóki pamięć podręczna nie zostanie wyczyszczona. Po zaksięgowaniu transakcji przez użytkowników w punkcie sprzedaży należy poczekać 60 sekund przed sprawdzeniem, czy stan dostępnych zapasów został zmniejszony.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
-ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
+ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3295087"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686797"
 ---
 # <a name="add-a-favicon"></a>Dodawanie ikony favicon
 
@@ -62,7 +62,7 @@ Aby utworzyć kod HTML dla pliku favicon, należy skorzystać z poniższego cią
 
 Aby utworzyć fragment strony zawierający metatag dla ikony favicon, wykonaj poniższe kroki.
 
-1. Przejdź do obszaru **Fragmenty strony**, a następnie wybierz pozycję **Nowy**.
+1. Przejdź do obszaru **Fragmenty**, a następnie wybierz pozycję **Nowy**.
 1. W oknie dialogowym **Nowy fragment strony** wybierz pozycję **Tagi meta** jako moduł, na którym oparty jest fragment strony.
 1. Wprowadź nazwę fragmentu strony, a następnie kliknij przycisk **OK**.
 1. W drzewie hierarchii fragmentów wybierz element podrzędny **Domyślne tagi meta**.

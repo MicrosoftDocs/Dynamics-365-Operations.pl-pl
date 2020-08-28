@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 59b4dd7a29af739d92a20f6fe55eff9f201fcb6d
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: cca6913375eec2565852676f3c1da5a67f71e14f
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454563"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664913"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Tworzenie rekomendacji z danymi demonstracyjnymi
 
@@ -78,6 +78,8 @@ Rozszerzenie zawiera plik danych o nazwie „RecoMockDataset.csv”, który zezw
 [Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md)
 
 [Rezygnowanie z rekomendacji spersonalizowanych](personalization-gdpr.md)
+
+[Włącz rekomendacje „Kup podobne”](shop-similar-looks.md)
 
 [Dodawanie rekomendacji produktu w punkcie sprzedaży](product.md)
 

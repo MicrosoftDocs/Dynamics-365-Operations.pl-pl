@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645346"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686677"
 ---
 # <a name="buy-box-module"></a>Moduł pola zakupu
 
@@ -61,7 +61,7 @@ Motywów można używać do usuwania lub zmieniania kolejności właściwości p
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduły, których można używać w module pola zakupu
 
-- **Galeria multimediów** — ten moduł służy do prezentowania obrazów produktu na stronie szczegółów produktu. Aby uzyskać więcej informacji dotyczących tego modułu, przejdź do [Modułu galerii multimediów](mediagallery-module.md).
+- **Galeria multimediów** — ten moduł służy do prezentowania obrazów produktu na stronie szczegółów produktu. Aby uzyskać więcej informacji dotyczących tego modułu, przejdź do [Modułu galerii multimediów](media-gallery-module.md).
 - **Wybór sklepu** — ten moduł pokazuje listę magazynów pobliskich, w których dany towar jest dostępny do odebrania. Umożliwia użytkownikom wprowadzenie lokalizacji, w której znajdują się bliskie sklepy. Aby uzyskać więcej informacji dotyczących tego modułu, przejdź do [Modułu selektor sklepów](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Ustawienia modułu pola zakupu
@@ -84,7 +84,7 @@ Moduł kupna pobiera informacje o produkcie za pomocą interfejsów programistyc
 
 Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Przejdź do **Fragmenty strony**, a następnie wybierz opcję **Nowy**, aby stworzyć nowy fragment.
+1. Przejdź do **Fragmenty**, a następnie wybierz opcję **Nowy**, aby stworzyć nowy fragment.
 1. W oknie dialogowym **Nowy fragment strony** wybierz moduł **Pole zakupu**.
 1. W obszarze **Nazwa fragmentu strony** wprowadź nazwę **Fragment pola zakupu**, a następnie kliknij przycisk **OK**.
 1. W gnieździe **Galeria multimediów**, w którym znajduje się moduł pola zakupu wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.

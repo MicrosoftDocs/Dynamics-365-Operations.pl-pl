@@ -3,7 +3,7 @@ title: Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzan
 description: W tym temacie opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania, jak i gdzie praca jest wykonywana w magazynie.
 author: perlynne
 manager: tfehr
-ms.date: 03/03/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: c6598a9ac2beb799ddfc4e3cce182e1281ae8d03
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: b1d106fa6fe5072eb74813495253731dd988c376
+ms.sourcegitcommit: 9a0be1ceee90e80f4c75f241aba847547b5032e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530542"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3693286"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem
 
@@ -168,7 +168,7 @@ Nie wszystkie przepływy prac obsługują przetwarzanie ilości efektywnej produ
 
 - Funkcja pobierania dla grupy nie jest obsługiwana dla produktów w ilości efektywnej.
 - Przetwarzanie odbiorów i pakowania w magazynie nie jest obsługiwane dla produktów w ilości efektywnej.
-- Dla produktów w ilości efektywnej praca zdefiniowana w szablonie pracy może być uruchamiana automatycznie.
+- Dla produktów w ilości efektywnej praca zdefiniowana w szablonie pracy nie może być uruchamiana automatycznie.
 - Dla produktów w ilości efektywnej system nie wspiera ręcznego przetwarzania w punkcie pobrania, gdzie praca pobierania zapakowanych kontenerów jest tworzona po zamknięciu kontenerów, nie jest obsługiwane.
 - Funkcja skanowania pojedynczych sztuk towaru nie jest obsługiwana dla produktów w ilości efektywnej.
 

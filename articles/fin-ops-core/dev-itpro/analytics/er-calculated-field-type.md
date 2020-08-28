@@ -3,7 +3,7 @@ title: Obsługuj sparametryzowane wywołania źródeł danych ER typu pola oblic
 description: Ten temat zawiera informacje dotyczące używania typu pola obliczeniowego dla źródeł danych ER.
 author: NickSelin
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 02d53f4326d8f31abf6ec7404575728837954bef
+ms.sourcegitcommit: c9baf9a3b4552f0317b5ec87d252834f52df1b98
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771336"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665617"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Obsługuj sparametryzowane wywołania źródeł danych ER typu pola obliczeniowego
 
@@ -39,20 +39,20 @@ Aby wykonać przykłady opisane w tym temacie, musisz mieć następujące uprawn
     - Konsultant funkcjonalny raportowania elektronicznego
     - Administrator systemu
 
-- Dostęp do wystąpienia Regulatory Configuration Service (RCS), które zostało zainicjowane dla tej samej dzierżawy co Finance and Operations dla jednej z następujących ról:
+- Dostęp do wystąpienia Regulatory Configuration Services (RCS), które zostało zainicjowane dla tej samej dzierżawy co Finance and Operations dla jednej z następujących ról:
 
     - Deweloper raportowania elektronicznego
     - Konsultant funkcjonalny raportowania elektronicznego
     - Administrator systemu
 
-W centrum [pobierania firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=874684) pobierz spakowany (skompresowany) plik wsparcia **, w którym są obsługiwane sparametryzowane wywołania źródeł danych ER typu pole obliczeniowe**. Zawiera następujące konfiguracje ER, które muszą zostać wyodrębnione i zapisane lokalnie.
+Musisz również pobrać i lokalnie zapisać następujące pliki.
 
 | **Zawartość**                           | **Nazwa pliku**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Przykładowa konfiguracja modelu danych ER    | Model do nauczenia sparametryzowanych calls.version.1.xml.     |
-| Przykładowa konfiguracja metadanych ER      | Dane do nauczenia sparametryzowanych calls.version.1.xml.  |
-| Przykładowa konfiguracja mapowania modelu ER | Mapowanie do nauczenia sparametryzowanych calls.version.1.xml. |
-| Przykładowa konfiguracja formatu ER        | Format do nauczenia sparametryzowanych calls.version.1.xml.  |
+| Przykładowa konfiguracja modelu danych ER    | [Model do nauczenia sparametryzowanych calls.version.1.xml.](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
+| Przykładowa konfiguracja metadanych ER      | [Dane do nauczenia sparametryzowanych calls.version.1.xml.](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Przykładowa konfiguracja mapowania modelu ER | [Mapowanie do nauczenia sparametryzowanych calls.version.1.xml.](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Przykładowa konfiguracja formatu ER        | [Format do nauczenia sparametryzowanych calls.version.1.xml.](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Zaloguj się do swojego wystąpienia RCS.
 W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Aby wykonać te kroki, najpierw trzeba wykonać kroki wymienione w procedurze [ER Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).

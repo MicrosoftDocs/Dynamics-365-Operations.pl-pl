@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcf1b755959c7ae25928e3f44e988f800027786a
-ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
+ms.openlocfilehash: 6e51d9a1d68c48391a223fe48f396c63c206580e
+ms.sourcegitcommit: 41e165482b9bff4175c0e3b224dbeead13461956
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201050"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3687965"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Lista funkcji modułu ER w kategorii funkcji listy
 
@@ -46,6 +46,7 @@ Funkcje listy w module raportowania elektronicznego (ER) mogą być używane do 
 | [Index](er-functions-list-index.md)                       | Ta funkcja zwraca wartość typu *Kontener (rekord)*, która jest wybierana przy użyciu określonego indeksu liczbowego na określonej liście. Jeśli indeks jest poza zakresem rekordów na określonej liście, ta lista zgłasza wyjątek. |
 | [IsEmpty](er-functions-list-isempty.md)                   | Ta funkcja zwraca wartość *logiczną* **TRUE**, jeśli określona lista nie zawiera żadnych rekordów. W przeciwnym wypadku zwraca ona wartość *logiczną* **FALSE**. |
 | [Lista](er-functions-list-list.md)                         | Ta funkcja zwraca wartość typu *Lista rekordów*, która składa się z nowej listy utworzonej na podstawie określonych argumentów.|
+| [ListDistinct](er-functions-list-listdistinct.md)         | Ta funkcja oblicza określone wyrażenie jako selektor dla każdego rekordu określonej listy. Zwraca nową wartość *Lista rekordów* zawierającą jeden rekord dla każdej unikatowej wartości selektora.|
 | [ListJoin](er-functions-list-listjoin.md)                 | Ta funkcja zwraca wartość typu *Lista rekordów*, która reprezentuje nową połączoną listę utworzoną na podstawie określonych argumentów.|
 | [ListOfFields](er-functions-list-listoffields.md)         | Ta funkcja zwraca wartość typu *Lista rekordów*, która jest tworzona na podstawie struktury określonego argumentu typu *Wyliczenie* lub *Kontener (rekord)*. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Ta funkcja zwraca wartość typu *Lista rekordów*, która składa się tylko z pierwszego rekordu określonej listy.|
