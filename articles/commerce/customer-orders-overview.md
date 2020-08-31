@@ -3,7 +3,7 @@ title: Zamówienia odbiorców w aplikacji Modern POS (MPOS)
 description: Ten temat zawiera informacje o funkcjonalności zamówień odbiorców w Modern POS (MPOS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji.
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b8ea8339c2ad25ceed2415eb5ccf5e2048c612fa
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
+ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023636"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699376"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Zamówienia odbiorców w aplikacji Modern POS (MPOS)
 
@@ -53,6 +53,8 @@ Oto kilka parametrów, które można skonfigurować na stronie **Parametry Comme
 
     - Opłaty są stosowane na poziomie nagłówka zamówienia sprzedaży, a gdy pewna ilość z wiersza produktu jest zwracana, maksymalny zwrot opłat transportowych dozwolony dla produktów i ilości nie może zostać określony w sposób pasujący dla wszystkich odbiorców.
     - Opłaty transportowe są ponoszone dla każdego zdarzenia wysyłki. Jeśli odbiorca zwraca produkty wiele razy, a polityka sprzedawcy detalicznego określa, że ponosi on koszty zwrotu opłat transportowych, zwracane opłaty transportowe będą wyższe, niż faktyczne opłaty transportowe.
+    
+- **Sposób obliczania podatków** - **Ponowne obliczanie** jest domyślnym i tradycyjnym ustawieniem sposobu ponownego obliczania podatków podczas importowania zamówienia do biura zaplecza. **Nie obliczaj ponownie** wyłącza ponowne obliczanie podatku, jeśli zamówienie jest edytowane w biurze zaplecza, po wyzwoleniu ponownego obliczania. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Przepływ transakcji w zamówieniach odbiorców
 

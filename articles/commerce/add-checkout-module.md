@@ -3,7 +3,7 @@ title: Moduł realizacji transakcji
 description: W tym temacie opisano sposób dodawania modułu realizacji transakcji do strony i ustawiania wymaganych właściwości.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: bd1d66fc39872019fc38dbbfb56dc3015d57d0dd
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 1d913fdc9ab9a3dbf7d5534fba38add7f942652a
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411221"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686749"
 ---
 # <a name="checkout-module"></a>Moduł realizacji transakcji
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano sposób dodawania modułu realizacji transakcji do strony i ustawiania wymaganych właściwości.
 
@@ -45,43 +45,58 @@ Poniższy obraz pokazuje przykład modułu realizacji zamówienia Fabrikam na st
 
 W module realizacji transakcji jest wyświetlane podsumowanie zamówień oraz funkcje służące do składania zamówienia. Aby zebrać wszystkie informacje dotyczące odbiorcy wymagane do umieszczenia zamówienia, należy dodać do modułu realizacji transakcji dodatkowe moduły. Dzięki temu detaliści mają możliwość dodawania modułów niestandardowych do przepływu realizacji transakcji lub do wykluczania modułów na podstawie ich wymagań.
 
-### <a name="modules-that-can-be-used-in-the-checkout-module"></a>Moduły, których można używać w module realizacji
+| Nazwa właściwości | Wartości | opis |
+|----------------|--------|-------------|
+| Nagłówek realizacji zamówienia | Tekst nagłówka i znacznik nagłówka (**H1**, **H2**, **H3**, **H4**, **H5** lub **H6**) | Nagłówek do modułu kasy. |
+| Nagłówek podsumowania zamówienia | Tekst nagłówka | Nagłówek sekcji podsumowania zamówień w module. |
+| Nagłówek pozycji koszyka | Tekst nagłówka | Nagłówek pozycji w wierszu koszyka wyświetlany w module realizacji transakcji. |
+| Pokazuj pozycję online opłat za wysyłkę | **Prawda** lub **Fałsz** | Jeśli ta właściwość ma wartość **Prawda**, opłaty za wysyłkę, które mają zastosowanie do pozycji zamówienia, zostaną wyświetlone w wierszach koszyka. Jeśli funkcja **Opłata za nagłówek bez podziału** jest włączona w centrali Commerce, opłata za wysyłkę zostanie zastosowana na poziomie nagłówka, a nie na poziomie wiersza. Ta funkcja została dodana w wersji Commerce 10.0.13. |
 
-- **Adres wysyłkowy** — ten moduł umożliwia odbiorcy dodawanie lub wybieranie adresu wysyłki dla zamówienia. Jeśli odbiorca jest zalogowany, wyświetlany jest każdy adres, który został wcześniej zapisany dla tego odbiorcy. Następnie odbiorca może wybrać spośród tych adresów. Odbiorca może również dodać nowy adres. Adres wysyłkowy jest używany dla wszystkich towarów w zamówieniu wymagających wysyłki. Nie można go dostosować dla poszczególnych pozycji w wierszu. Formaty adresów wysyłkowych są definiowane dla każdego kraju lub regionu, a reguły specyficzne dla kraju/regionu są wymuszane przez ten moduł. Chociaż w tym module nie są sprawdzane adresy, sprawdzanie poprawności adresów może być wykonywane za pośrednictwem dostosowania. Jeśli zamówienie uwzględnia tylko towary, które zostaną odebrane w sklepie, ten moduł jest automatycznie ukrywany.
+## <a name="modules-that-can-be-used-in-the-checkout-module"></a>Moduły, których można używać w module realizacji
+
+- **Adres wysyłkowy** — ten moduł umożliwia odbiorcy dodawanie lub wybieranie adresu wysyłki dla zamówienia. Aby uzyskać więcej informacji dotyczących tego modułu, przejdź do [Moduł adresu wysyłki](ship-address-module.md).
 
     Poniższy obraz pokazuje przykład modułu adresu wysyłki na stronie realizacji zamówienia.
 
     ![Przykład modułu adres wysyłki](./media/ecommerce-shippingaddress.PNG)
 
-- **Opcje dostawy** — ten moduł umożliwia odbiorcy wybranie opcji dostawy dla zamówienia Opcje dostawy są oparte na adresie wysyłkowym. W przypadku zmiany adresu dostawy należy ponownie pobrać opcje dostawy. Jeśli zamówienie uwzględnia tylko towary, które zostaną odebrane w sklepie, ten moduł jest automatycznie ukrywany.
+- **Opcje dostawy** — ten moduł umożliwia odbiorcy wybranie metody dostawy dla zamówienia. Aby uzyskać więcej informacji dotyczących tego modułu, przejdź do [Moduł Opcje dostawy](delivery-options-module.md).
 
     Poniższy obraz pokazuje przykład opcji dostawy na stronie realizacji zamówienia.
-
+ 
     ![Przykład modułu opcji dostawy](./media/ecommerce-deliveryoptions.PNG)
 
 - **Kontener sekcji wyewidencjonowywania** — ten moduł jest kontenerem, w ramach którego można umieścić wiele modułów w celu utworzenia sekcji w ramach przepływu realizacji transakcji. Na przykład można umieścić w tym kontenerze wszystkie moduły powiązane z płatnością, aby były wyświetlane w jednej sekcji. Ten moduł ma wpływ tylko na układ przepływu.
-- **Karta upominkowa** — ten moduł umożliwia odbiorcy zapłatę za zamówienie za pomocą karty upominkowej. Obsługuje tylko karty upominkowe Microsoft Dynamics 365 Commerce. Do zamówienia można zastosować jedną lub więcej kart upominkowych. Jeśli saldo karty upominkowej nie pokrywa kwoty w koszyku, można połączyć kartę upominkową z inną metodą płatności. Karty upominkowe mogą zostać zrealizowane tylko wtedy, gdy odbiorca jest zalogowany do systemu.
+
+- **Karta upominkowa** — ten moduł umożliwia odbiorcy zapłatę za zamówienie za pomocą karty upominkowej. Aby uzyskać więcej informacji dotyczących tego modułu, przejdź do [Moduł karty upominkowej](add-giftcard.md).
+
 - **Punkty lojalnościowe** — ten moduł umożliwia zapłatę odbiorcy za zamówienie za pomocą punktów lojalnościowych. System udostępnia podsumowanie dostępnych punktów i wygasających punktów i pozwala klientowi wybrać liczbę punktów do zrealizowania. Jeśli odbiorca nie jest zalogowany lub nie jest członkiem karty lojalnościowej lub jeśli łączna kwota w koszyku wynosi 0 (zero), ten moduł jest automatycznie ukrywany.
-- **Płatności** — ten moduł umożliwia odbiorcy zapłatę za zamówienie za pomocą karty kredytowej. Jeśli całkowita kwota w koszyku jest objęta punktami lojalnościowymi lub kartą podarunkową lub jeśli wynosi 0 (zero), moduł ten jest automatycznie ukryty. Integracja z kartą kredytową jest zapewniona przez łącznik płatności Adyen dla tego modułu. Aby uzyskać więcej informacji na temat korzystania z tego łącznika, zapoznajsię z tematem [Łącznik płatności Adyen Dynamics 365](dev-itpro/adyen-connector.md).
-- **Adres fakturowania** — ten moduł umożliwia klientowi udostępnianie informacji bilingowych. Te informacje są przetwarzane razem z informacjami o karcie kredytowej przez Adyen. Ten moduł zawiera opcję, która pozwala klientom na korzystanie z adresu rozliczeniowego w adresie wysyłkowym.
 
-    Poniższy obraz przedstawia przykład modułów karty upominkowej, punktów lojalnościowych, płatności i adresu rozliczeniowego na stronie realizacja zamówienia.
+- **Płatności** — ten moduł umożliwia odbiorcy zapłatę za zamówienie za pomocą karty kredytowej lub debetowej. Odbiorcy mogą również podać adres bilingowy dla wybranej przez nich opcji płatności. Aby uzyskać więcej informacji dotyczących tego modułu, przejdź do [Moduł płatności](payment-module.md).
 
-    ![Przykład modułów karty upominkowej, punktów lojalnościowych, płatności i adresu rozliczeniowego](./media/ecommerce-payments.PNG)
+    Poniższy obraz przedstawia przykład modułów karty upominkowej, punktów lojalnościowych i płatności na stronie realizacja zamówienia.
+
+    ![Przykład karty podarunkowej, punktów lojalnościowych i płatności na stronie realizacji transakcji](./media/ecommerce-payments.PNG)
 
 - **Informacje kontaktowe** — ten moduł umożliwia odbiorcy dodanie lub zmianę informacji kontaktowych (adres e-mail) dla zamówienia.
 
 - **Blok zaawansowanej zawartości** — ten moduł zawiera wszelkie wiadomości związane z systemem zarządzania zawartością (CMS). Na przykład może zawierać komunikat informujący „w przypadku problemów z zamówieniem, kontakt 1-800-Fabrikam”. 
 
+- **Warunki realizacji transakcji** — ten moduł zawiera tekst sformatowany zawierający warunki i warunki oraz pole wyboru dla danego odbiorcy. Pole wyboru jest opcjonalne i można je konfigurować. Dane wejściowe są przechwytywane przez moduł i mogą być używane jako sprawdzanie przed wyzwoleniem złożenia zamówienia, ale nie są dołączone do informacji podsumowania zamówienia. Ten moduł można dodać do kontenera realizacji zamówienia, kontenera sekcji realizacji zamówienia lub miejsca na warunki, w zależności od potrzeb biznesowych. Jeśli zostanie dodany do kontenera realizacji zamówienia lub gniazda kontenera sekcji realizacji zamówienia, pojawi się jako krok w procesie kasy. Jeśli zostanie dodany do gniazda warunków i postanowień, zostanie wyświetlony w pobliżu przycisku umieszczania zamówienia.
+
+    Poniższy obraz pokazuje przykład modułu postanowień na stronie realizacji zamówienia.
+
+    ![Przykład warunków i postanowień na stronie realizacja zamówienia](./media/ecommerce-checkout-terms.PNG)
+
 ## <a name="commerce-scale-unit-interaction"></a>Interakcja Commerce Scale Unit
 
-Większość informacji dotyczących realizacji transakcji, takich jak adres wysyłkowy i metoda wysyłki, jest przechowywana w koszyku i przetwarzana w ramach zamówienia. Jedyny wyjątek to informacje o karcie kredytowej. Te informacje są przetwarzane bezpośrednio przy użyciu łącznika płatności Adyen. Płatność jest autoryzowana, ale nie jest naliczana.
+Większość informacji dotyczących realizacji transakcji, takich jak adres wysyłkowy i metoda wysyłki, jest przechowywana w koszyku i przetwarzana w ramach zamówienia. Jedyny wyjątek to informacje o karcie kredytowej. Te informacje są przetwarzane bezpośrednio przy użyciu łącznika płatności Adyen. Płatność jest autoryzowana, ale nie jest naliczana, dopóki zamówienie nie zostanie zrealizowane.
 
 ## <a name="add-a-checkout-module-to-a-page-and-set-the-required-properties"></a>Dodaj moduł realizacji transakcji do strony i ustaw wymagane właściwości.
 
 Aby dodać moduł realizacji transakcji do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Przejdź do **Fragmenty strony**, a następnie wybierz opcję **Nowy**, aby stworzyć nowy fragment.
+1. Przejdź do **Fragmenty**, a następnie wybierz opcję **Nowy**, aby stworzyć nowy fragment.
 1. W oknie dialogowym **Nowy fragment strony** wybierz moduł **Realizacji zamówienia**.
 1. W obszarze **Nazwa fragmentu strony** wprowadź nazwę **Fragment realizacji zamówienia**, a następnie kliknij przycisk **OK**.
 1. Wybierz gniazdo **Moduł realizacji zamówienia**.
@@ -90,6 +105,7 @@ Aby dodać moduł realizacji transakcji do nowej strony i ustawić wymagane wła
 1. W oknie dialogowym **Dodawanie modułu** wybierz moduły **Adres wysyłki**, **Opcje dostawy**, **Kontener sekcji wyewidencjonowywania** i **Informacje o kontakcie**, a następnie kliknij przycisk **OK**.
 1. W module **Kontener sekcji wyewidencjonowywania**, wybierz wielokropek (**...**), a następnie wybierz pozycję **Dodaj moduł**.
 1. W oknie dialogowym **Dodawanie modułu** wybierz moduły **Karta upominkowa**, **Lojalność** i **Płatność** i wybierz przycisk **OK**. W ten sposób użytkownik będzie mieć pewność, że wszystkie metody płatności zostaną wyświetlone w sekcji.
+1. W gnieździe **Warunków i postanowień** dodaj moduł **Warunki realizacji transakcji**, jeśli jest on wymagany. W panelu właściwości modułu odpowiednio skonfiguruj warunki i tekst warunku.
 1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd fragmentu. Niektóre moduły, które nie mają kontekstu koszyka, mogą nie być renderowane w podglądzie.
 1. Wybierz **Zakończ edycję**, aby zaewidencjonować fragment, a następnie wybierz opcję **Publikuj**, aby go opublikować.
 1. Utwórz szablon, w którym jest używany nowy fragment realizacji transakcji.
@@ -97,16 +113,16 @@ Aby dodać moduł realizacji transakcji do nowej strony i ustawić wymagane wła
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie zestawu początkowego](starter-kit-overview.md)
-
-[Moduł kontenera](add-container-module.md)
-
-[Moduł pola zakupu](add-buy-box.md)
-
 [Moduł koszyka](add-cart-module.md)
 
-[Moduł potwierdzenia zamówienia](order-confirmation-module.md)
+[Moduł ikony koszyka](cart-icon-module.md)
 
-[Moduł nagłówka](author-header-module.md)
+[Moduł płatności](payment-module.md)
 
-[Moduł stopki](author-footer-module.md)
+[Moduł adresu wysyłki](ship-address-module.md)
+
+[Moduł Opcje dostawy](delivery-options-module.md)
+
+[Moduł szczegółów zamówienia](order-confirmation-module.md)
+
+[Moduł karty upominkowej](add-giftcard.md)

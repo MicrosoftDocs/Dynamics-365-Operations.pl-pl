@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b4228583c4a2b89d7139b51880cea0288d7fe49
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: bc6a793061a3e644599f0882ff163f5f57b2162d
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404378"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664961"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Dostosowanie wyników rekomendacji produktów na podstawie plików AI-ML
 
@@ -109,6 +109,8 @@ Aby ręcznie dodać lub usunąć wyniki dla produktu początkowego, należy wyko
 [Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md)
 
 [Rezygnowanie z rekomendacji spersonalizowanych](personalization-gdpr.md)
+
+[Włącz rekomendacje „Kup podobne”](shop-similar-looks.md)
 
 [Dodawanie rekomendacji produktu w punkcie sprzedaży](product.md)
 

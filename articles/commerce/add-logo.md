@@ -19,15 +19,14 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fc0673dcdcc8b761089be2c2d201c8488128865
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 62b8237fa0c30fa9d901d670de38416cf8615c8d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025724"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686653"
 ---
 # <a name="add-a-logo"></a>Dodawanie logo
-
 
 [!include [banner](includes/banner.md)]
 
@@ -51,7 +50,7 @@ Aby można było dodać logo do wszystkich stron witryny, należy wykonać nast�
 
 Aby dodać logo do fragmentu nagłówka witryny, wykonaj następujące kroki.
 
-1. W okienku nawigacji po lewej stronie zaznacz **Fragmenty strony**.
+1. W okienku nawigacji po lewej stronie zaznacz **Fragmenty**.
 1. Wybierz utworzony fragment nagłówka, a następnie wybierz opcję **Edytuj**.
 1. Rozwiń moduł nagłówka.
 1. W okienku właściwości modułu nagłówka wprowadź obraz i łącze do logo. 

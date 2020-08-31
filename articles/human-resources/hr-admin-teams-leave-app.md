@@ -3,7 +3,7 @@ title: Aplikacja Human Resources w Teams
 description: W tym temacie przedstawiono aplikację Microsoft Dynamics 365 Human Resources w Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4822cc6560926df878a8b4e9f821b331ede27a8c
+ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431137"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3666367"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikacja Human Resources w Teams
 
@@ -45,10 +45,10 @@ Aby uzyskać informacje dotyczące zarządzania uprawnieniami aplikacji w Teams,
 
 | Wystawienie | Stan |
 | --- | --- |
+| Przewijanie w poziomie nie działa na telefonach Android | Przewijanie w poziomie nie jest problemem na urządzeniach z systemem iOS lub komputerach stacjonarnych. Pracujemy nad poprawką dla Android. |
 | Błąd: Wystąpił problem ze znalezieniem środowiska, z którym można się połączyć. | Ten błąd może wystąpić, nawet jeśli zweryfikowano, że użytkownik może uzyskać dostęp do jednego lub więcej środowisk Human Resources. Ponadto mogą nie być widoczne wszystkie oczekiwane środowiska. Do czasu rozwiązania problemu usuń użytkownika, a następnie zaimportuj go ponownie, aby rozwiązać problem. |
 | Saldo jest niepoprawne podczas przesyłania czasu wolnego w przyszłości. | Prognozowanie nie jest jeszcze dostępne. Jest wyświetlane saldo dla bieżącej daty. |
 | W przypadku zmniejszenia liczby godzin w istniejącym żądaniu **Pozostałe saldo** zmniejsza się, a nie zwiększa. | Ten problem zostanie rozwiązany w przyszłości. Wyświetlone dane są niepoprawne, ale podczas przesyłania ilości są odpowiednio korygowane. |
-| Dla tych samych dat są wyświetlane dwie karty **nadchodzącego czasu wolnego**. | Karty reprezentują pojedyncze przesłania. Będziemy nadal gromadzić opinie i wprowadzać korekty. |
 | Nie można anulować żądań typu **Trwa przegląd**. | Ta funkcja nie jest obecnie obsługiwana i zostanie dodana w przyszłym wydaniu. |
 | Informacje o saldzie są obliczane na dzień dzisiejszy. | Obecnie system nie wyświetla sald dla okresu naliczania, nawet jeśli zostało to skonfigurowane w parametrach urlopu i nieobecności. |
 

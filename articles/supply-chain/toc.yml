@@ -2751,6 +2751,8 @@
                       href: inventory/warehouse-template.md
                     - name: Kontrola pracy przy użyciu szablonów pracy i dyrektyw lokalizacji
                       href: warehousing/control-warehouse-location-directives.md
+                    - name: Tworzenie dyrektyw lokalizacji
+                      href: warehousing/create-location-directive.md
                     - name: Kody kroku grupy czynności
                       href: warehousing/wave-step-codes.md
                     - name: Konfigurowanie przetwarzania grupy czynności
@@ -2821,6 +2823,8 @@
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
             - name: Tworzenie nowego aparatu zarządzania transportem
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Rozszerzanie jednostek danych dostępnych zapasów
+              href: inventory/extend-on-hand-entities.md
     - name: Programowanie aplikacji Finance and Operations i administrowanie nimi
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance

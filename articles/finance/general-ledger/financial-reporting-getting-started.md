@@ -1,9 +1,9 @@
 ---
 title: Omówienie raportowania finansowego
-description: W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w Microsoft Dynamics 365 Finance i jak korzystać z funkcji raportowania finansowego. Zawiera opis domyślnych raportów finansowych, które są zawarte w programie.
+description: W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w Microsoft Dynamics 365 Finance i jak korzystać z funkcji raportowania finansowego.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86022b662c265b4b98f6df86647f61ea35d31432
-ms.sourcegitcommit: f5200f37c6c436183b4ee5711026ef92a7cb9538
+ms.openlocfilehash: 1944eda5fe933ff9fdf2b9a837eb2336e8b3a0d5
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3618045"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696695"
 ---
-# <a name="financial-reporting-overview"></a>Omówienie raportowania finansowego
+# <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z Financial reporting 
 
 [!include [banner](../includes/banner.md)]
 
@@ -88,7 +88,7 @@ Po dodaniu użytkownika lub zmianie roli, użytkownik powinien mieć dostęp do 
 Użytkownicy, którzy generują raport, mogą usuwać własne raporty. Użytkownicy, których obowiązkiem jest **utrzymywanie bezpieczeństwa raportowania finansowego** mogą usuwać raporty innych osób. 
 
 W wersji 10.0.8 zostało wprowadzone pojęcie dat wygaśnięcia. Nowa wymagana funkcja jest włączona na stronie **Wszystkie** w obszarze roboczym zarządzanie funkcjami. Funkcja **Zasad zatrzymania raportu finansowego** zawiera następujące zmiany:
-* Nowo wygenerowane raporty będą automatycznie oznaczane jako posiadające datę wygaśnięcia 90 dni od daty wygenerowania
+* Nowo wygenerowane raporty będą automatycznie oznaczane jako posiadające datę wygaśnięcia 90 dni od daty wygenerowania.
 * Wszystkie istniejące raporty sprzed zainstalowania tej funkcji będą miały okres ważności 90 dni. Data może być pusta przez krótki okres do czasu uruchomienia usługi raportowania finansowego, generowany jest raport, a usługa przeprowadza aktualizację do istniejących raportów z pustą datą wygaśnięcia. 
 * Użytkownicy odpowiedzialni za **Utrzymywanie bezpieczeństwa financial reporting** mają dostęp do tej funkcji. Każdy użytkownik z obowiązkiem **utrzymywania raportu finansowego** i przyznanym uprawnieniem **Utrzymanie wygaśnięcia raportu finansowego** będzie również mieć możliwość modyfikowania okresu wygaśnięcia. Obecnie dostępne są dwie opcje przechowywania: 
   * Wygaśnięcie wynoszące 90 dni.
@@ -134,6 +134,12 @@ Po wybraniu menu **Raportowanie finansowe** jest wyświetlana lista domyślnych 
 ## <a name="creating-and-modifying-financial-reports"></a>Tworzenie i modyfikowanie raportów finansowych
 Z listy raportów finansowych można utworzyć nowy raport lub zmodyfikować istniejący raport. Jeśli masz odpowiednie uprawnienia, możesz utworzyć nowy raport finansowy, wybierając przycisk **Nowy** w okienku akcji. Projektant raportów zostanie pobrany na Twoje urządzenie i uruchomiony. Po uruchomieniu projektanta raportów można utworzyć nowy raport. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Na liście są wyświetlane tylko raporty, które zostały utworzone dla firmy używanej w Dynamics 365 Finance. 
 
+## <a name="reporting-tree-definitions"></a>Definicje drzew raportowania 
+Jednym z składników używanych do tworzenia raportów finansowych jest definicja drzewa raportowania. Drzewo definicji raportowania pomaga zdefiniować strukturę i hierarchię organizacji. To międzywymiarowa hierarchiczna struktura oparta na powiązaniach wymiarów w danych finansowych. Dostarcza informacji na poziomie jednostki raportowania oraz na poziomie podsumowania dla wszystkich jednostek w drzewie.
+
+Można utworzyć dowolną liczbę drzew raportowania, aby wyświetlić dane firmy na różne sposoby. Każde drzewo raportowania może zawierać dowolną kombinację działów i jednostek podsumowujących, ale definicja raportu może być połączona tylko z jednym drzewem raportowania naraz. 
+
+
 ## <a name="troubleshooting-issues-opening-report-designer"></a>Rozwiązywanie problemów z otwieraniem projektanta raportów
 Istnieje kilka typowych problemów, które mogą być przyczyną problemów podczas otwierania projektanta raportów. Poniżej wymieniono zagadnienia związane z tymi problemami i czynności, które należy rozwiązać.
 
@@ -162,3 +168,4 @@ Wydanie 3: na stronie rejestracja projektanta raportów ClickOnce można kontynu
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 - [Wyświetlanie raportów finansowych](view-financial-reports.md)
+- [Definicje drzewa raportowania w raportach finansowych](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)

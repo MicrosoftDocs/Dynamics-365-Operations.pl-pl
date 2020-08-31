@@ -402,18 +402,12 @@
                           href: install-pos-layout-designer.md
                         - name: Wybieranie ustawień powiadomień
                           href: Notifications-POS.md
-                        - name: Ustawienia języka użytkownika i punktu sprzedaży
+                        - name: Ustawienia języka użytkownika i aplikacji punktu sprzedaży
                           href: pos-application-user-language-settings.md
                         - name: Konfigurowanie obrazów w aplikacji MPOS i zarządzanie nimi
                           href: set-up-manage-images-retail-mpos.md
                         - name: Obrazy klienta w punkcie sprzedaży
                           href: pos-image.md
-                    - name: Zamówienia odbiorcy
-                      items:
-                        - name: Zamówienia odbiorców w aplikacji MPOS
-                          href: customer-orders-overview.md
-                        - name: Hybrydowe zamówienia odbiorców
-                          href: hybrid-customer-orders.md
                     - name: Ekspedienci
                       items:
                         - name: Śledzenie prowizji w punkcie sprzedaży przy użyciu grup sprzedaży
@@ -630,6 +624,8 @@
                       href: personalized-recommendations.md
                     - name: Rezygnowanie z rekomendacji spersonalizowanych
                       href: personalization-gdpr.md
+                - name: Włączanie rekomendacji dotyczących „kupowania podobnie wyglądających produktów”
+                  href: shop-similar-looks.md
                 - name: Funkcje punktu sprzedaży
                   items:
                     - name: Dodawanie rekomendacji produktu w punkcie sprzedaży
@@ -692,6 +688,12 @@
                       href: tasks/create-product-packages-purchase-orders.md
         - name: Zarządzanie zamówieniami
           items:
+            - name: Zamówienia odbiorcy
+              items:
+                - name: Zamówienia odbiorców w aplikacji MPOS
+                  href: customer-orders-overview.md
+                - name: Hybrydowe zamówienia odbiorców
+                  href: hybrid-customer-orders.md
             - name: Zamówienia sprzedaży
               items:
                 - name: Tworzenie zamówienia w biurze obsługi
@@ -988,6 +990,12 @@
                       href: cart-icon-module.md
                     - name: Moduł realizacji transakcji
                       href: add-checkout-module.md
+                    - name: Moduł płatności
+                      href: payment-module.md
+                    - name: Moduł adresu wysyłki
+                      href: ship-address-module.md
+                    - name: Moduł opcji dostawy
+                      href: delivery-options-module.md
                     - name: Moduł szczegółów zamówienia
                       href: order-confirmation-module.md
                     - name: Moduł karty upominkowej
@@ -1974,6 +1982,8 @@
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Omówienie plików cookie API
                       href: e-commerce-extensibility/cookie-api-overview.md
+                    - name: Omówienie składników interaktywnych
+                      href: e-commerce-extensibility/interactive-components.md
                     - name: Globalizacja modułów za pomocą klasy CultureInfoFormatter
                       href: e-commerce-extensibility/globalize-modules.md
                 - name: Opracowywanie akcji dotyczących danych
@@ -2026,6 +2036,10 @@
                   items:
                     - name: Iniektory skryptów
                       href: e-commerce-extensibility/script-injector.md
+                - name: Łączniki
+                  items:
+                    - name: Konfigurowanie i włączanie łączników
+                      href: e-commerce-extensibility/connectors.md
                 - name: Telemetria i analiza
                   items:
                     - name: Rejestrator telemetryczny
@@ -2036,17 +2050,19 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: Aktualizacje zestawu SDK i biblioteki podstawowej
                       href: e-commerce-extensibility/sdk-updates.md
-            - name: Retail SDK
+            - name: SDK do Retail
               items:
-                - name: Architektura zestawu Retail SDK
+                - name: Architektura zestawu SDK do Retail
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
-                - name: Nadchodzące zmiany w zestawie Retail SDK
+                - name: Nadchodzące zmiany w zestawie SDK do Retail
                   href: dev-itpro/UpcomingSDKChanges.md
+                - name: Ważne zmiany procesu programowania i ALM między wersjami 10.0.10 i 10.0.13
+                  href: dev-itpro/dev-changes-10-13.md
                 - name: Scalanie systemów kompilacji dla aplikacji Commerce i Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
-                - name: Dokonywanie migracji zestawu Retail SDK z Visual Studio 2015 do Visual Studio 2017
+                - name: Dokonywanie migracji zestawu SDK do Retail z Visual Studio 2015 do Visual Studio 2017
                   href: dev-itpro/retail-sdk/migrate-sdk.md
-                - name: Przykłady możliwości rozszerzania zestawu Retail SDK
+                - name: Przykłady możliwości rozszerzania zestawu SDK do Retail
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Tworzenie pakietów możliwych do wdrożenia
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
@@ -2118,15 +2134,11 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Możliwości rozszerzania usługi Retail Server
               items:
-                - name: Rozszerzanie kontrolera OData dla Commerce Scale Unit
-                  href: dev-itpro/extend-retail-server-odata-controller.md
                 - name: Interfejsy API klienta i odbiorcy Commerce Scale Unit
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Rozszerzenie domyślnego kontrolera metadanych Commerce Scale Unit
-                  href: dev-itpro/extend-metadata.md
-                - name: Wywoływanie usługi środowiska CRT w trybie offline
-                  href: dev-itpro/call-crt-service-offline.md
-                - name: Tworzenie nowego rozszerzenia usługi Retail Server
+                - name: Tworzenie nowego interfejsu API rozszerzenia usługi Retail Server (zestaw SDK do Retail w wersji 10.0.11 lub nowszej)
+                  href: dev-itpro/retail-server-icontroller-extension.md
+                - name: Tworzenie nowego interfejsu API rozszerzenia usługi Retail Server (zestaw SDK do Retail w wersji 10.0.11 lub starszej)
                   href: dev-itpro/retail-server-extension.md
                 - name: Serwery proxy Typescript i C# aplikacji Retail
                   href: dev-itpro/typescript-proxy-retail-pos.md
@@ -2138,16 +2150,12 @@
                   href: dev-itpro/crt-services.md
                 - name: Rozszerzalność środowiska CRT i usługi Retail Server
                   href: dev-itpro/commerce-runtime-extensibility.md
-                - name: Dodawanie danych preferencji odbiorcy do baz danych kanałów
-                  href: dev-itpro/add-customer-preference-channel.md
                 - name: Zarządzanie kluczami tajnymi dla kanałów usługi Retail
                   href: dev-itpro/manage-secrets.md
                 - name: Możliwości rozszerzania i wyzwalacze środowiska CRT
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Blokowanie transakcji za pomocą wyzwalaczy
                   href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: Wdrażanie reguły zwrotów za pomocą wyzwalaczy
-                  href: dev-itpro/trigger-example-return-policy.md
                 - name: Rozszerzenie lojalnościowe
                   href: dev-itpro/retail-sdk/loyalty-extension-sample.md
                 - name: Punkty rozszerzenia dla dokumentów dostawy

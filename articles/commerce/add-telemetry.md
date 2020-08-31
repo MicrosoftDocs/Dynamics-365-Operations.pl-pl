@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 4f26ed5b6674566f579e801f4b7be63c2d0dc38d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154093"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686821"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii
 
@@ -45,7 +45,7 @@ Fragment strony umożliwia ponowne użycie wewnętrznego lub zewnętrznego kodu 
 
 Aby utworzyć fragment strony do ponownego użycia dla kodu skryptu wbudowanego w konstruktorze witryn, wykonaj następujące kroki.
 
-1. Przejdź do **Fragmentów strony**, a następnie wybierz opcję **Nowy**.
+1. Przejdź do obszaru **Fragmenty**, a następnie wybierz pozycję **Nowy**.
 1. W oknie dialogowym **Nowy fragment strony** wybierz opcję **Skrypt wbudowany**.
 1. W obszarze **Nazwa fragmentu strony** wprowadź nazwę fragmentu, a następnie kliknij przycisk **OK**.
 1. Pod utworzonym fragmentem strony wybierz **Domyślny moduł skryptu wbudowanego**.
@@ -57,7 +57,7 @@ Aby utworzyć fragment strony do ponownego użycia dla kodu skryptu wbudowanego 
 
 Aby utworzyć fragment strony do ponownego użycia dla kodu skryptu zewnętrznego w konstruktorze witryn, wykonaj następujące kroki.
 
-1. Przejdź do **Fragmentów strony**, a następnie wybierz opcję **Nowy**.
+1. Przejdź do obszaru **Fragmenty**, a następnie wybierz pozycję **Nowy**.
 1. W oknie dialogowym **Nowy fragment strony** wybierz opcję **Skrypt zewnętrzny**.
 1. W obszarze **Nazwa fragmentu strony** wprowadź nazwę fragmentu, a następnie kliknij przycisk **OK**.
 1. Pod utworzonym fragmentem strony wybierz **Domyślny moduł skryptu zewnętrznego**.

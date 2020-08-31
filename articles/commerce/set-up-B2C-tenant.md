@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
-ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
+ms.openlocfilehash: f31f8898358626f2b008826aa69694dc16742aa0
+ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497175"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677911"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurowanie dzierżawy B2C w usłudze Commerce
 
@@ -77,7 +77,7 @@ Po utworzeniu dzierżawy B2C użytkownik utworzy aplikację B2C w dzierżawie w 
 
 Aby utworzyć aplikację B2C, należy wykonać następujące czynności.
 
-1. W portalu Azure wybierz opcję **aplikacje**, a następnie wybierz opcję **Dodaj**.
+1. W portalu Azure wybierz opcję **aplikacje (starsze wersje)**, a następnie wybierz opcję **Dodaj**.
 1. W polu **Nazwa** wprowadź nazwę żądanej aplikacji B2C w usłudze AAD.
 1. W obszarze **Aplikacji sieci Web/API sieci Web** dla **Dołącz aplikację sieci Web/API sieci Web** wybierz **Tak**.
 1. W przypadku **Zezwól na dorozumiany przepływ** wybierz opcję **Tak** (wartość domyślna).

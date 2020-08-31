@@ -3,7 +3,7 @@ title: Standardowy plik audytu (SAF) dla Polski
 description: Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten temat zawiera informacje o formatach dla Polski.
 author: LizaGolub
 manager: AnnBe
-ms.date: 07/31/2020
+ms.date: 08/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Poland
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8e2b1cddc8489147d0b35f1dbe2ae3cb874da77f
-ms.sourcegitcommit: 06fb4b68b2d94020ef639239ed395b7f63aa807f
+ms.openlocfilehash: 9a78d9eef1e242d33fd6eac29cf6b9ca648891b8
+ms.sourcegitcommit: d83f2c5a126d88b2f393923375c75fd40a880ed2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645237"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3690800"
 ---
 # <a name="standard-audit-file-saf-for-poland"></a>Standardowy plik audytu (SAF) dla Polski
 
@@ -72,7 +72,7 @@ Aby wygenerować plik wyciągu bankowego SAF, kliknij kolejno opcje **Księga g�
 | **Identyfikacja urzędu** | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu. |
 | **Konto bankowe**             | Umożliwia określenie rachunku bankowego, dla którego mają zostać wyeksportowane transakcje.                               |
 
- 
+Plik **Wyciąg bankowy SAF** zawiera informacje o transakcjach zaksięgowanych w określonym przedziale czasu dla rachunku bankowego wybranego w oknie dialogowym raportu. Nazwa kontrahenta zgłoszona w elemencie **NazwaPodmiotu** jest pobierana od **Odbiorców** (**Rozrachunki z odbiorcami** > **Odbiorcy** > **Wszyscy odbiorcy**) i **Dostawców** (**Rozrachunki z dostawcami** > **Dostawcy** > **Wszyscy dostawcy**) danych głównych systemu zarejestrowanego w firmie w postaci, w jakiej są one powiązane z zaksięgowaną transakcją bankową. Opis operacji zgłoszony w elemencie **OpisOperacji** jest pobierany z pola **Opis** transakcji bankowej.
 
 ## <a name="generate-a-saf-inventory-file"></a>Generowanie pliku zapasów SAF
 Aby wygenerować plik zapasów SAF, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Zapasy SAF** i ustaw następujące parametry:
