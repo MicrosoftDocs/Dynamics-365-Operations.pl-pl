@@ -68,6 +68,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
                 - name: Kup rozwiązanie Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
+                - name: Wskazówki dotyczące implementacji Commerce Data Exchange
+                  href: dev-itpro/implementation-considerations-cdx.md
                 - name: Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Aplikacje Finance and Operations we Francji
@@ -178,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Tworzenie pól niestandardowych i praca z nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Osadzanie aplikacji PowerApps
+                - name: Osadzanie usługi Microsoft Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Znajdowanie informacji za pomocą odnośników
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -202,8 +204,14 @@
                   href: dev-itpro/retail-server-architecture.md
                 - name: Wybieranie topologii w sklepie
                   href: dev-itpro/retail-in-store-topology.md
-                - name: Komunikacja w kanale Commerce Data Exchange i handlu
-                  href: dev-itpro/define-retail-channel-communications-cdx.md
+                - name: Commerce Data Exchange
+                  items:
+                    - name: Najlepsze praktyki Commerce Data Exchange
+                      href: dev-itpro/CDX-Best-Practices.md
+                    - name: Komunikacja w kanale Commerce Data Exchange i handlu
+                      href: dev-itpro/define-retail-channel-communications-cdx.md
+                    - name: Rozwiązywanie problemów w Commerce Data Exchange
+                      href: dev-itpro/CDX-Troubleshooting.md
                 - name: Architektura aplikacji Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Architektura publikowania sklepu internetowego
@@ -516,6 +524,8 @@
                       href: duplicate-payment-protection.md
                     - name: Omówienie płatności wielokanałowych
                       href: omni-channel-payments.md
+                    - name: Płatności zamówień wielokanałowych rozwiązania Commerce
+                      href: dev-itpro/commerce-payments.md
                     - name: Płatności — często zadawane pytania
                       href: dev-itpro/payments-retail.md
                 - name: Zarządzanie Mapami Bing dla swojej organizacji
@@ -758,8 +768,6 @@
               href: disable-consistency-check-rule.md
             - name: Edycja i przeprowadzanie inspekcji transakcji sklepu sieci sprzedaży
               href: edit-audit-retail-transactions.md
-            - name: 'Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży'
-              href: tasks/create-calculate-post-statement-retail-store.md
             - name: Tworzenie zamówień na podstawie cząstkowego kanału informacyjnego dla transakcji w sklepach sieci sprzedaży
               href: trickle-feed.md
             - name: 'Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży'
@@ -1130,13 +1138,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
             - name: Dostęp do informacji i raportowanie
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
-            - name: Opcje personalizacji w witrynie PowerBI.com
+            - name: Opcje personalizacji w Power BI
               items:
-                - name: Funkcje dostępne po integracji usługi PowerBI.com
+                - name: Funkcje dostępne po integracji usługi Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/commerce/toc.json
-                - name: Przypinanie zawartości z witryny PowerBI.com
+                - name: Przypnij zawartość Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
-                - name: Wybieranie analitycznych obszarów roboczych z witryny PowerBI.com
+                - name: Wybieranie analitycznych obszarów roboczych z Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
             - name: Zawartość Power BI
               items:
@@ -1188,7 +1196,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
                 - name: Rozwiązywania problemów po konserwacji magazynu jednostek
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: Konfigurowanie integracji usługi PowerBI.com
+                - name: Konfigurowanie integracji z usługą Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Używanie własnej bazy danych
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
@@ -1202,7 +1210,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Dodawanie wymiarów finansowych do miar agregacji
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: Tworzenie raportów analitycznych za pomocą aplikacji Power BI Desktop
+                - name: Tworzenie raportów analitycznych przy użyciu Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -2048,7 +2056,7 @@
                   items:
                     - name: Konfiguracje pakietów i wdrażanie ich w środowisku online
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: Aktualizacje zestawu SDK i biblioteki podstawowej
+                    - name: Aktualizacje zestawu SDK i sklepu dla początkujących
                       href: e-commerce-extensibility/sdk-updates.md
             - name: SDK do Retail
               items:
@@ -2070,7 +2078,7 @@
                   href: dev-itpro/cloud-dev-box.md
                 - name: Konfigurowanie potoku kompilacji zestawu SDK do Commerce
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
-                - name: Często zadawane pytania SDK do Retail
+                - name: Często zadawane pytania dotyczące zestawu SDK do Retail
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Rozszerzalność punktu sprzedaży
               items:
@@ -2186,6 +2194,8 @@
                   href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
                 - name: Wdrażanie łączników płatności
                   href: dev-itpro/deploy-payment-connector.md
+                - name: Przechwytywanie przyrostowe dla fakturowania w biurze
+                  href: dev-itpro/incremental-capture.md
                 - name: Tworzenie niestandardowych przetłumaczonych komunikatów o błędach dla rozszerzeń terminala płatniczego
                   href: dev-itpro/payment-custom-error-messages.md
                 - name: Tworzenie instalatorów Windows dla łączników płatności
