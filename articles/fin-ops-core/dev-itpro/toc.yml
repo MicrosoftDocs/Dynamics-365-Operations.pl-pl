@@ -130,6 +130,8 @@
                       items:
                         - name: Strona główna o podwójnym zapisie
                           href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Nowości i zmiany w podwójnym zapisie
+                          href: data-entities/dual-write/whats-new-dual-write.md
                         - name: Przegląd o podwójnym zapisie
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Konfiguracja o podwójnym zapisie
@@ -1472,6 +1474,8 @@
                   href: sysadmin/extensible-data-security-policies.md
                 - name: Tworzenie zasad zabezpieczeń
                   href: sysadmin/create-simple-security-policy.md
+            - name: Zachowanie zgodności z wymaganiami dotyczącymi licencji użytkowników
+              href: sysadmin/stay-compliant-user-license-requirement.md
             - name: Automatyzacja procesu
               href: sysadmin/process-automation.md
             - name: Przetwarzanie wsadowe

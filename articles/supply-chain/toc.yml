@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tworzenie pól niestandardowych i praca z nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Osadzanie aplikacji PowerApps
+                - name: Osadzanie usługi Microsoft Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Znajdowanie informacji za pomocą odnośników
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -633,13 +633,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dostęp do informacji i raportowanie
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Opcje personalizacji w witrynie PowerBI.com
+            - name: Opcje personalizacji w Power BI
               items:
-                - name: Funkcje dostępne po integracji usługi PowerBI.com
+                - name: Funkcje dostępne po integracji usługi Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Przypinanie zawartości z witryny PowerBI.com
+                - name: Przypnij zawartość Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Wybieranie analitycznych obszarów roboczych z witryny PowerBI.com
+                - name: Wybieranie analitycznych obszarów roboczych z Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Zawartość Power BI
               items:
@@ -1827,18 +1827,28 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Wykluczanie produktów z planowania głównego
                       href: pim/tasks/exclude-products-master-planning.md
-                - name: Towary podwójnego zastosowania
-                  href: pim/dual-use.md
-                - name: Kraj pochodzenia
-                  href: pim/country-of-origin.md
                 - name: Tworzenie kodu kreskowego dla produktu
                   href: pim/tasks/create-bar-code-product.md
-                - name: Wprowadzanie numeru GTIN produktu
+                - name: Wprowadzanie kodu GTIN produktu
                   href: pim/tasks/enter-gtin-code-product.md
                 - name: Tworzenie atrybutów partii dla produktu
                   href: pim/tasks/create-batch-attributes-product.md
                 - name: Dodawanie obrazu do produktu
                   href: pim/tasks/add-image-product.md
+                - name: Kraj pochodzenia
+                  href: pim/country-of-origin.md
+                - name: Towary podwójnego zastosowania
+                  href: pim/dual-use.md
+                - name: Materiały niebezpieczne
+                  items:
+                    - name: Omówienie materiałów niebezpiecznych
+                      href: pim/hazmat-overview.md
+                    - name: Ustawianie materiałów niebezpiecznych
+                      href: pim/hazmat-setup.md
+                    - name: 'Materiały niebezpieczne w produktach, zamówieniach, wysyłkach i ładunkach'
+                      href: pim/hazmat-items.md
+                    - name: Zapytania i raporty dotyczące materiałów niebezpiecznych
+                      href: pim/hazmat-reports.md
                 - name: Tłumaczenie informacji o produktach — często zadawane pytania
                   href: pim/translations-product-related-information.md
                 - name: Wyszukiwanie produktu podczas wprowadzania zamówień

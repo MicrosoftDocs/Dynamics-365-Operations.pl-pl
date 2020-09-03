@@ -5,6 +5,8 @@
       items:
         - name: Nowości i zmiany w rozwiązaniu Human Resources
           href: hr-admin-whats-new.md
+        - name: 20 sierpnia 2020 r.
+          href: hr-whats-new-2020-08-20.md
         - name: 6 sierpnia 2020 r.
           href: hr-whats-new-2020-08-06.md
         - name: 23 lipca 2020 r.
@@ -78,13 +80,91 @@
             - name: Integracja z pakietem Office
               items:
                 - name: Integracja z pakietem Office — samouczek
-                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
                 - name: Aktualizowanie danych jednostki w programie Excel
-                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
                 - name: Tworzenie funkcji otwierania w programie Excel
-                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
                 - name: Rozwiązywanie problemów z integracją z pakietem Office
-                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+        - name: Konfigurowanie zarządzania danymi
+          items:
+            - name: Omówienie struktury zarządzania danymi
+              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Jednostki danych
+              items:
+                - name: Omówienie jednostek danych
+                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Projekty danych konfiguracji
+                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                - name: Kopiowanie danych konfiguracji między firmami
+                  items:
+                    - name: Omówienie kopiowania danych konfiguracji
+                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Pakiety danych konfiguracji
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Pakiety danych konfiguracji (tylko wydanie z lipca 2017)
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Szablony danych konfiguracji
+                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Śledzenie zmian w jednostce
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Znajdowanie informacji dotyczących standardowych jednostek danych
+                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Szablony danych z wieloma arkuszami
+                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                - name: Włączanie śledzenia zmian dla jednostek
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Klucze konfiguracji i jednostki danych
+                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Pakiety danych konfiguracji
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Zadania importowania i eksportowania danych
+              items:
+                - name: Omówienie zadań importowania i eksportowania danych
+                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                - name: Najlepsze rozwiązania w zakresie importowania załączników za pomocą jednostki Arkusz finansowy
+                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+            - name: Opracowywanie jednostek danych
+              items:
+                - name: Zasady projektowania i najlepsze rozwiązania dotyczące jednostek danych
+                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                - name: Tworzenie nowych jednostek danych
+                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Właściwości jednostki danych
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Tworzenie kolumn obliczanych i pól wirtualnych
+                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Zachowanie międzyfirmowe
+                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                - name: Obsługa kodów krajów/regionów
+                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                - name: Wzorce dziedziczenia
+                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                - name: Reguły kreatora jednostek danych
+                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                - name: Właściwości metadanych
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Weryfikacje, wartości domyślne i niezamapowane pola'
+                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Zabezpieczenia i jednostki danych
+                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Używanie narzędzi do testowania innych firm
+                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Tworzenie jednostek tylko do odczytu, które uwidaczniają wymiary finansowe'
+                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+            - name: Używanie własnej bazy danych
+              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+            - name: Optymalizuj zadania wsadowe BYOD
+              href: hr-admin-integration-byod-batch-jobs.md
+            - name: Zautomatyzowane odświeżanie magazynu jednostek
+              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+            - name: Automatyzacja zadań danych
+              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+            - name: Obszar roboczy Lista kontrolna weryfikacji danych
+              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+            - name: Opisy błędów zarządzania danymi
+              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
         - name: Zarządzanie funkcjami
           href: hr-admin-manage-features.md
         - name: Konfigurowanie i zarządzanie rejestrowaniem bazy danych
@@ -537,8 +617,10 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Wyświetlanie kalendarzy zespołów i firm
               href: hr-employee-self-service-calendar.md
-            - name: Zarządzaj zasadami Kupowania i Sprzedawania urlopu
+            - name: Zarządzaj zasadami zakupu i sprzedaży urlopu
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Tworzenie przepływów pracy zakupów i sprzedaży dla urlopów
+              href: hr-leave-and-absence-buy-sell-workflow.md
             - name: Kupuj i sprzedawaj urlop
               href: hr-employee-self-service-buy-sell-leave.md
         - name: Zarządzanie wnioskami o urlop w Teams
