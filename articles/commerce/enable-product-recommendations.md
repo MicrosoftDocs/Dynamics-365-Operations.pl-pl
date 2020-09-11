@@ -3,7 +3,7 @@ title: Włączanie rekomendacji produktów
 description: W tym temacie wyjaśniono, jak udostępnić rekomendacje produktów oparte na sztucznym uczeniu maszynowym (AI-ML) dostępne dla klientów Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2dacd4a94f706be5aa65947c0b6a92e281733ca
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: b201e5481cfaf5bb6cd64a89cdb6b5a91f31447f
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3665033"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700849"
 ---
 # <a name="enable-product-recommendations"></a>Włączanie rekomendacji produktów
 
@@ -65,11 +65,13 @@ Zapisz i zamknij stronę.
 
 Aby włączyć rekomendacje produktu, wykonaj następujące czynności.
 
-1. Przejdź do **Handel detaliczny i komercyjny &gt; Rekomendacje produktów &gt; Właściwości rekomendacji**.
-1. Na liście udostępnionych parametrów wybierz **Listy rekomendacji**.
-1. Ustaw **Włącz rekomendacje** na wartość **Tak**.
+1. W module Commerce Headquarters znajdź **Zarządzanie funkcjami**.
+1. Opcja **Wszystkie** umożliwia wyświetlenie listy dostępnych funkcji. 
+1. W polu wyszukiwania wprowadź **Rekomendacje**.
+1. Wybierz funkcję **Rekomendacje produktów**.
+1. W okienku właściwości **Rekomendacje produktów** wybierz opcję **Włącz teraz**.
 
-![Włączanie rekomendacji](./media/enablepersonalization.png)
+![Włączanie rekomendacji](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
 > Ta procedura rozpoczyna proces generowania list rekomendacji produktów. Może upłynąć kilka godzin zanim listy będą dostępne i mogą być widoczne w punkcie sprzedaży (POS) lub w Dynamics 365 Commerce.

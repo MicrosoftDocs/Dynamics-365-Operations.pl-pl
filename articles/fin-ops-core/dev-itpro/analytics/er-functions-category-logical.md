@@ -3,7 +3,7 @@ title: Lista funkcji modułu ER w kategorii funkcji logicznych
 description: Ten temat zawiera ogólne informacje o funkcjach logicznych obsługiwanych w module Raportowanie elektroniczne (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 408b3c5ec37b24e0ccf6e368012a936701eedf0f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: e622778c60646e5cc84cd6e23a5d4954a0fe0bb3
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916644"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705102"
 ---
 # <a name="list-of-er-functions-in-the-logical-category"></a>Lista funkcji modułu ER w kategorii funkcji logicznych
 
@@ -41,6 +41,8 @@ Funkcje logiczne w module raportowania elektronicznego (ER) mogą służyć do p
 | [Nie](er-functions-logical-not.md)                       | Ta funkcja zwraca odwróconą wartość logiczną określonego warunku jako wartość *logiczną*. |
 | [Or](er-functions-logical-or.md)                         | Ta funkcja zwraca wartość *logiczną* **FALSE**, jeśli żadne wybrane warunki nie zostały spełnione. Jeśli dowolny wybrany warunek został spełniony, ta funkcja zwraca wartość *logiczną* **TRUE**. |
 | [ValueIn](er-functions-logical-valuein.md)               | Ta funkcja określa, czy podane dane wejściowe pasują do którejkolwiek wartości określonego elementu na podanej liście. Zwraca ona *wartość logiczną* **TRUE**, jeśli określone dane wejściowe pasują do wyniku uruchamiania określonego wyrażenia dla co najmniej jednego rekord z danej listy. W przeciwnym wypadku zwraca ona wartość *logiczną* **FALSE**. |
+| [ValueInLarge](er-functions-logical-valueinlarge.md)     | Ta funkcja określa, czy podane dane wejściowe typu *Int64* lub *Integer* pasują do którejkolwiek wartości określonego elementu na podanej liście. Zwraca ona *wartość logiczną* **TRUE**, jeśli określone dane wejściowe pasują do wyniku uruchamiania określonego wyrażenia dla co najmniej jednego rekord z danej listy. W przeciwnym wypadku zwraca ona wartość *logiczną* **FALSE**. |
+
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

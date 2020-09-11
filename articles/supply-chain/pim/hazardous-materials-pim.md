@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5006f06d90ddcc314a51878e9e21337de7d493e7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 079c8d23250368c92e5d79f0e2624f8340db2077
+ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208475"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699543"
 ---
 # <a name="hazardous-materials"></a>Materiały niebezpieczne
 
@@ -35,7 +35,7 @@ Informacje dotyczące materiałów niebezpiecznych są konfigurowane w module Za
 W przypadku wysyłki materiałów sklasyfikowanych jako towary niebezpieczne, do wysyłek należy dołączyć dodatkową dokumentację. Funkcje materiałów niebezpiecznych umożliwiają klientom przechowywanie informacji dotyczących klasyfikacji i powiązanie ich ze zwalnianiem towarów. Te informacje mogą być następnie używane w celu przygotowania dokumentacji dotyczącej wysyłki.
 
 > [!IMPORTANT]
-> Aby ułatwić zarządzanie wysyłką towarów niebezpiecznych, program Microsoft Dynamics 365 Supply Chain Management umożliwia skonfigurowanie dodatkowych informacji dotyczących produktów, które są związane z produktami. Można również skonfigurować dodatkowe dokumenty wysyłki. Jednak system nie jest automatycznie zgodny z przepisami dotyczącymi danego kraju lub regionu. Zamiast tego jest to narzędzie, które może pomóc w ogólnym programie.
+> Funkcje dot. materiałów niebezpiecznych w Microsoft Dynamics 365 Supply Chain Management zawierają użyteczny zbiór pól informacji o produktach i związanych z nimi funkcji, które mogą pomóc w rejestrowaniu i odnajdywaniu informacji związanych z produktami niebezpiecznymi. Te funkcje mogą również pomóc w projektowaniu i drukowaniu dokumentów dostawy, które zawierają niektóre z tych samych informacji o wszelkich transportowanych niebezpiecznych materiałach. Jednak system nie sprawi, że działania będą automatycznie zgodne ze wszystkimi przepisami danego kraju lub regionu. Chociaż narzędzia te mają na celu ułatwienie zgodności ze wspólnymi przepisami, same w sobie nie są wystarczające ani nie gwarantują poprawności. Twoja organizacja jest odpowiedzialna za zastosowanie wszystkich stosownych rozporządzeń i podjęcie wszelkich niezbędnych kroków w celu przestrzegania odpowiednich przepisów.
 
 Aby można było skorzystać z tej funkcji, wymagane są następujące ustawienia:
 

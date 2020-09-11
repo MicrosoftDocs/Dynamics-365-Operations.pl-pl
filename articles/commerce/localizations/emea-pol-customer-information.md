@@ -16,13 +16,13 @@ ms.search.region: Poland
 ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-11-11
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 548431ccfd19c42d4d10eb7d1f2d1ca875256c15
-ms.sourcegitcommit: b942014958b7f60e15fc7a78c26aed5e175eadde
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: b38bb95254d5a9713f361a8dd5d9f2455471922a
+ms.sourcegitcommit: fa8bc4c6fcaba870aead619f80091fb65a28d982
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "3166394"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711175"
 ---
 # <a name="customer-information-management-for-poland"></a>Zarządzanie informacjami dotyczącymi klienta dla Polski
 
@@ -36,7 +36,7 @@ W tym temacie opisano sposób obsługi informacji o odbiorcy, takich jak numer p
 Numer VAT odbiorcy można określić podczas tworzenia lub edytowania głównego rekordu odbiorcy w punkcie sprzedaży. Można także określić numer VAT dla transakcji sprzedaży, kopiując go z odbiorcy transakcji lub wprowadzając go ręcznie. Informacje dotyczące odbiorcy mogą być następnie drukowane zarówno na stałych, jak i fiskalnych przychodach i mogą być używane do celów fakturowania.
 
 > [!NOTE]
-> Ta funkcja jest dostępna w wersjach 10.0.8 i późniejszych.
+> Ta funkcja jest dostępna w wersjach 10.0.7 i późniejszych.
 
 ## <a name="setup"></a>Konfiguracja
 
@@ -110,7 +110,7 @@ Poniższe przykładowe scenariusze przedstawiają sposób pracy z informacjami o
 1. Zaloguj się w POS.
 1. Dodaj pozycje do koszyka.
 1. Wybierz opcję **Dodaj odbiorcę**, a następnie wybierz **Nowy**.
-1. Ustaw atrybuty nowego odbiorcy. 
+1. Ustaw atrybuty nowego odbiorcy.
 1. Wybierz **Stwórz nowy adres**. Następnie określ informacje kontaktowe nowego odbiorcy oraz adres.
 1. W polu **Numer VAT** wprowadź numer VAT odbiorcy.
 1. Zapisz rekord odbiorcy i rekord adresu odbiorcy, a następnie dodaj odbiorcę do transakcji.
@@ -146,22 +146,41 @@ Ta sekcja zawiera wskazówki dotyczące wdrażania umożliwiające zarządzanie 
 
 ### <a name="update-customizations"></a>Dostosowanie aktualizacji
 
-Wykonaj następujące kroki, jeśli dowolne dostosowania zawierają obsługę żądań dla żądania SaveCartRequest lub CreateSalesOrderServiceRequest.
+Aby zaktualizować dostosowania, wykonaj następujące kroki.
 
-1. Znajdź obsługę żądań dla żądania **SaveCartRequest**.
-1. Znajdź wiersz kodu, w którym jest uruchomiony oryginalny program obsługi.
-1. Zastąp oryginalną klasę procedury obsługi **TaxRegistrationIdFiscalCustomerService**.
+# <a name="retail-1007-and-later"></a>[Wersja 10.0.7 Retail i nowsze](#tab/retail-10-0-7)
+
+Jeśli dowolne dostosowania zawierają obsługę żądań dla `SaveCartRequest` lub `CreateSalesOrderServiceRequest`:
+
+1. Znajdź obsługę żądania `SaveCartRequest`.
+1. Znajdź wiersz kodu, w którym jest uruchomiona oryginalna obsługa żądania.
+1. Przed wywołaniem oryginalnego programu obsługi żądań dodaj następujące wiersze:
 
     ```cs
     using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland.Services;
 
     ...
 
-    var requestHandler = new TaxRegistrationIdFiscalCustomerService();
-    var response = request.RequestContext.Runtime.Execute<SaveCartResponse>(request, request.RequestContext, requestHandler, skipRequestTriggers: false);
+    new TaxRegistrationIdFiscalCustomerService().Execute(request);
     ```
 
-1. Powtórz kroki 1–3 w odniesieniu do żądania **CreateSalesOrderServiceRequest**.
+1. Znajdź obsługę żądania `CreateSalesOrderServiceRequest`.
+1. Znajdź wiersz kodu, w którym jest uruchomiona oryginalna obsługa żądania.
+1. Zamień ją na następujący kod:
+
+    ```cs
+    using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland.Services;
+
+    ...
+
+    return new TaxRegistrationIdFiscalCustomerService().Execute(request);
+    ```
+
+# <a name="retail-10012-and-later"></a>[Wersja 10.0.12 Retail i nowsze](#tab/retail-10-0-12)
+
+Jeśli dostosowania mają odwołania do usługi `TaxRegistrationIdFiscalCustomerService`, muszą zostać usunięte.
+
+---
 
 ### <a name="update-a-development-environment"></a>Aktualizacja środowiska projektowego
 

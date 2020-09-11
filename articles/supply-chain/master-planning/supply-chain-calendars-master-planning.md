@@ -3,7 +3,7 @@ title: Kalendarze i planowanie główne
 description: Ten temat zawiera omówienie kalendarzy łańcucha dostaw i ich wpływu na planowanie główne.
 author: t-benebo
 manager: tfehr
-ms.date: 05/08/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: t-benebo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d542c52623c1b3c0aa4b23159d56791cdc981f48
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 373af2e7bdcbf6860f21e049403fdf174d5e8ca7
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213499"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710340"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendarze i planowanie główne
 
@@ -105,28 +105,28 @@ Data zamówienia w planowaniu zamówienie zakupu wskazuje datę, kiedy złożono
 
 ### <a name="delivery-date-of-a-planned-purchase-order"></a>Data dostawy w planowaniu zamówienia zakupu
 Data przyjęcia zakupu wskazuje datę, kiedy odbierzesz towary. Będzie to data otwarta w kalendarzu. Kalendarz, który będzie brany pod uwagę w celu wskazania dni. kiedy zamówienie może zostać odebrane, jest następujący w kolejności od najwyższego do najniższego priorytetu: 
-    1. Kalendarz dostawcy
-    2. Kalendarz grupy zapotrzebowania
-    3. Kalendarz magazynu dla magazynu przyjęcia
+1. Kalendarz dostawcy
+1. Kalendarz grupy zapotrzebowania
+1. Kalendarz magazynu dla magazynu przyjęcia
 
 Kalendarz grupy zapotrzebowania można skonfigurować na różnych stronach i priorytet będzie ustalany w następującej kolejności:
-    1. Grupy zapotrzebowania na towar na stronie **szczegóły zwolnionych produktów**
-    2. Grupy zapotrzebowania na towar na stronie **Zapotrzebowanie na towary**
-    3. Domyślna grupa zapotrzebowania na towar na stronie **Parametry planowania głównego**
+1. Grupy zapotrzebowania na towar na stronie **Zapotrzebowanie na towary**
+1. Grupy zapotrzebowania na towar na stronie **szczegóły zwolnionych produktów**
+1. Domyślna grupa zapotrzebowania na towar na stronie **Parametry planowania głównego**
 
 ### <a name="shipping-date-of-a-planned-transfer-order"></a>Data wysyłki w planowanym zamówieniu przeniesienia
 Podczas tworzenia zamówienia przeniesienia między dwoma magazynami, data wysyłki oraz data przyjęcia znajdują się w nagłówku zamówienia przeniesienia, wraz z magazynem „Źródłowym” a „Docelowym”. Różnica między tymi dwiema datami polega na oczekiwanym czasie transportu (w dniach) między magazynami.
 
 Data wysyłki planowanego zamówienia przeniesienia wskazuje datę wysyłania towarów z magazynu „Źródłowego”. Kalendarze używane do określenia dostępnej daty wysyłki są wyświetlane według priorytetów: 
-    1. Kalendarz dla magazynu „Źródłowego”
-    2. Kalendarz grupy zapotrzebowania (zobacz zamówienie powrotu dla tego kalendarza powyżej) Jeśli ustawiony jest kalendarz magazynu, data wysyłki będzie otwartą datą w kalendarzu. Jeśli nie ma ustawionego kalendarza magazynu, zostanie użyty kalendarz grupy zapotrzebowania. 
+1. Kalendarz dla magazynu „Źródłowego”
+1. Kalendarz grupy zapotrzebowania (zobacz zamówienie powrotu dla tego kalendarza powyżej) Jeśli ustawiony jest kalendarz magazynu, data wysyłki będzie otwartą datą w kalendarzu. Jeśli nie ma ustawionego kalendarza magazynu, zostanie użyty kalendarz grupy zapotrzebowania. 
 
 ### <a name="receipt-date-of-a-planned-transfer-order"></a>Data przyjęcia w planowanym zamówieniu przeniesienia
 Data przyjęcia dla zamówienia przeniesienia wskazuje datę odebrania towarów w magazynie „Docelowym”.
 
 Kalendarze używane do określenia daty przyjęcia zostały wymienione poniżej w kolejności według priorytetu: 
-    1. Kalendarz grupy zapotrzebowania 
-    2. Kalendarz magazyn magazynu „Docelowego” Jeśli jest ustawiony kalendarz zapotrzebowania, data przyjęcia będzie otwartą datą w kalendarzu. Jeśli nie ma ustawionego kalendarza grupy zapotrzebowania, zostanie użyty kalendarz magazynu. 
+1. Kalendarz grupy zapotrzebowania 
+1. Kalendarz magazyn magazynu „Docelowego” Jeśli jest ustawiony kalendarz zapotrzebowania, data przyjęcia będzie otwartą datą w kalendarzu. Jeśli nie ma ustawionego kalendarza grupy zapotrzebowania, zostanie użyty kalendarz magazynu. 
 
 Podczas znajdowania dat wysyłki i przyjęcia dla planowanego przeniesienia pod uwagę będą brane również marginesy ustawione przez użytkownika dla wysyłki i przyjęcia. 
 

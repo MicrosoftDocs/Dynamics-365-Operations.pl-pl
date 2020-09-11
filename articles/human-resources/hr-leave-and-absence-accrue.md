@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 43c16c5d0de91bf1f433f4fde36e7d13775f44a0
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429066"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712178"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Nalicz plany urlopów i nieobecności
 
@@ -37,7 +37,9 @@ W programie Dynamics 365 Human Resources urlopy i nieobecności można naliczać
 
 3. Zostanie wyświetlone okno dialogowe **Naliczanie planów urlopu i nieobecności**. W polu **Naliczanie na dzień** wybierz **Datę dzisiejszą** lub wybierz **Datę niestandardową** i wprowadź datę niestandardową.
 
-4. Jeśli chcesz uruchomić proces naliczania w tle, wybierz opcję **Uruchom w tle** i wykonaj następujące czynności:
+4. Aby uruchomić naliczenia dla wszystkich firm, należy wybrać opcję **Wszystkie firmy**. Jeśli chcesz przetwarzać naliczenia dla planu jednego urlopu, wybierz opcję **Nie** dla **Wszystkich planów**, a następnie wybierz **Plan urlopu**. W przypadku wybrania wszystkich firm nie można wybrać jednego planu urlopu. 
+
+5. Jeśli chcesz uruchomić proces naliczania w tle, wybierz opcję **Uruchom w tle** i wykonaj następujące czynności:
 
    1. Wprowadź informacje o procesie naliczania.
 
@@ -55,7 +57,9 @@ W programie Dynamics 365 Human Resources urlopy i nieobecności można naliczać
 
 3. Zostanie wyświetlone okno dialogowe **Naliczanie planów urlopu i nieobecności**. W polu **Naliczanie na dzień** wybierz **Datę dzisiejszą** lub wybierz **Datę niestandardową** i wprowadź datę niestandardową.
 
-4. Jeśli chcesz uruchomić proces naliczania w tle, wybierz opcję **Uruchom w tle** i wykonaj następujące czynności:
+4. Aby uruchomić naliczenia dla wszystkich firm, należy wybrać opcję **Wszystkie firmy**. Jeśli chcesz przetwarzać naliczenia dla planu jednego urlopu, wybierz opcję **Nie** dla **Wszystkich planów**, a następnie wybierz **Plan urlopu**. W przypadku wybrania wszystkich firm nie można wybrać jednego planu urlopu. 
+
+5. Jeśli chcesz uruchomić proces naliczania w tle, wybierz opcję **Uruchom w tle** i wykonaj następujące czynności:
 
    1. Wprowadź informacje o procesie naliczania.
 
@@ -102,18 +106,6 @@ Usuwanie rekordów naliczeń dla określonego planu i zakresu dat. Daty naliczan
 1. Na stronie **Urlopy i nieobecności** wybierz kartę **Łącza**.
 
 2. W obszarze **Zarządzaj urlopami** wybierz opcję **Usuń inspekcję naliczania planów**.
-
-## <a name="configure-preview-features"></a>Konfigurowanie funkcji w wersji zapoznawczej
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-Jeśli włączono obsługę funkcji w wersji zapoznawczej dla urlopów i nieobecności, należy skonfigurować również ich ustawienia.
-
-### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Urlop naliczony według firmy lub planu urlopu
-
-Podczas naliczania planów urlopu i nieobecności można wybrać opcję naliczania dla wszystkich firm. W przypadku wybrania wszystkich firm nie można wybrać poszczególnych planów urlopów. Jeśli użytkownik zdecyduje się nie naliczać dla wszystkich firm, może naliczać dla konkretnego planu urlopu. 
-
-Te opcje są dostępne podczas naliczania dla wszystkich pracowników lub poszczególnych pracowników. 
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

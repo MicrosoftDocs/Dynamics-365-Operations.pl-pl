@@ -3,7 +3,7 @@ title: Pojęcie firmy w usługach Common Data Service
 description: W tym temacie opisano integrację danych firmy między Finance and Operations i Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a39cf5fa980d9a815ba675e410589dbd1279c83
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 444bfc1698a206ca34e67f742df63431a3b02649
+ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172907"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "3728420"
 ---
 # <a name="company-concept-in-common-data-service"></a>Pojęcie firmy w usługach Common Data Service
 
@@ -72,3 +72,32 @@ Integracja Common Data Service powoduje wywołuje parzystość firmy za pomocą 
 + W przypadku rekordów po dodaniu i zapisaniu firmy jest ona tylko do odczytu. Dlatego użytkownicy powinni upewnić się, że została wybrana prawidłowa firma.
 + Tylko rekordy, które mają dane firmy, są uprawnione do podwójnego zapisywania między aplikacją a Common Data Service
 + W przypadku istniejących danych Common Data Service inicjowanie prowadzone przez administratora będzie wkrótce dostępne.
+
+
+## <a name="autopopulate-company-name-in-customer-engagement-apps"></a>Autowypełniaj nazwę firmy w aplikacjach do zakontraktowania odbiorcy
+
+Istnieje kilka sposobów automatycznego wypełniania nazwy firmy w aplikacjach do zakontraktowania odbiorców.
+
++ Administrator systemu może określić domyślnie ustawioną firmę, przechodząc kolejno do sekcji **Ustawienia zaawansowane > System > Zabezpieczenia > Użytkownicy**. Otwórz formularz **Użytkownik**, a następnie w sekcji **Informacje o organizacji** określ wartość **Domyślna firma w formularzach**.
+
+    :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Ustawienie firmy jako domyślnej w sekcji Informacje o organizacji.":::
+
++ Jeśli użytkownik ma dostęp do **Zapisu** w encji **SystemUser** na poziomie **Jednostki biznesowej**, może zmienić domyślną firmę w dowolnym formularzu, wybierając firmę z rozwijanego menu **Firma**.
+
+    :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Zmiana nazwy firmy na nowym koncie":::
+
++ Jeśli masz dostęp do **Zapisu** danych w więcej niż jednej firmie, możesz zmienić domyślną firmę, wybierając rekord należący do innej firmy.
+
+    :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Wybór rekordu powoduje zmianę firmy domyślnej":::
+
++ Jeśli użytkownik jest konfiguratorem systemów lub administratorem i chce automatycznie wypełniać dane firmy w formularzu niestandardowym, może używać [zdarzeń formularzy](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Dodaj odwołanie JavaScript do **msdyn_/DefaultCompany.js** i korzystaj z następujących zdarzeń. Można skorzystać z dowolnego formularza, na przykład formularza **Konto**.
+
+    + Zdarzenie **OnLoad** dla formularza: należy określić pole **defaultCompany**.
+    + Zdarzenie **OnChange** dla pola **Firma**: należy określić pole **updateDefaultCompany**.
+
+## <a name="apply-filtering-based-on-the-company-context"></a>Zastosuj filtrowanie na podstawie kontekstu firmy
+
+Aby zastosować filtrowanie na podstawie kontekstu firmy w formularzach niestandardowych lub w niestandardowych polach wyszukiwania dodanych do standardowych formularzy, należy otworzyć formularz i użyć sekcji **Filtrowanie rekordów pokrewnych** w celu zastosowania filtru firmy. Należy to ustawić dla każdego pola wyszukiwania, które wymaga filtrowania na podstawie firmy w danym rekordzie. Ustawienie jest wyświetlane dla **Konta** na poniższej ilustracji.
+
+:::image type="content" source="media/apply-company-context.png" alt-text="Zastosuj kontekst firmy":::
+

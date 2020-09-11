@@ -3,7 +3,7 @@ title: Zarządzaj zasadami dotyczącymi kupna i sprzedaży urlopu
 description: Można umożliwić pracownikom kupowanie i sprzedawanie urlopu w Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,24 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 859445f2b6e980b5960e512e69129f6a8fc6df2b
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 55d29c42cc1b2d69517e2fcd458ee6a1bdf5277f
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429020"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712126"
 ---
-# <a name="manage-buy-and-sell-leave-policies"></a>Zarządzaj zasadami dotyczącymi kupna i sprzedaży urlopu
+# <a name="manage-buy-and-sell-leave-policies"></a>Zarządzaj zasadami Kupowania i Sprzedawania urlopu
 
-[!include [banner](includes/preview-feature.md)]
-
-Można umożliwić pracownikom kupowanie urlopu, tworząc zasadę kupowania urlopu.  
+Można umożliwić pracownikom kupowanie i sprzedawanie urlopu, tworząc zasadę kupowania i sprzedawania urlopu. Te zasady można skonfigurować do używania przepływu pracy dla zatwierdzeń, określania maksymalnych kwot i stawek oraz ustalania stawek kupowania i sprzedawania. 
 
 ## <a name="enable-employees-to-buy-and-sell-leave"></a>Umożliwienie pracownikom kupowania i sprzedawania urlopu
 
-1. Na stronie **Parametry urlopów i nieobecności** wybierz opcję **Tak** dla **Pozwól pracownikom kupić urlop**. 
+1. Na stronie **Parametry urlopów i nieobecności** wybierz opcję **Tak** dla **Pozwól pracownikom kupić urlop** oraz **Pozwól pracownikom sprzedać urlop**.
 
-## <a name="create-a-buy-leave-policy"></a>Tworzenie zasady kupowania urlopu
+## <a name="create-a-buy-and-sell-leave-policy"></a>Tworzenie zasad dot. zakupów i sprzedaży urlopów
 
 1. Na stronie **Urlopy i nieobecności** wybierz kartę **Łącza**. 
 
@@ -51,19 +49,23 @@ Można umożliwić pracownikom kupowanie urlopu, tworząc zasadę kupowania urlo
 
 6. Wybierz **Datę początkową** i **Datę końcową** dla zasady. Żądania kupna lub sprzedaży urlopu będą dostępne tylko do przesyłania w tym przedziale czasowym. 
 
-7. W obszarze **Kup zasadę** wybierz opcję **Odpowiednik pełnego etatu**, aby ustalić maksymalną kwotę na podstawie pełnego etatu zdefiniowanego dla stanowiska pracownika. Jeśli typem zasady jest **Ilość**, wprowadź **Maksymalną stałą ilość**. 
+7. Wybierz **Identyfikator przepływu pracy** dla zasady. Wszystkie żądania zakupu i sprzedaży używają tego przepływu pracy do przeglądu i zatwierdzenia. 
 
-8. Wybierz przycisk **Dodaj**, aby dodać typy urlopów dla pracowników, którzy będą kupować urlop. Do zasady można dodać wiele typów urlopów. 
+8. W obszarze **Kup zasadę** wybierz opcję **Odpowiednik pełnego etatu**, aby ustalić maksymalną kwotę na podstawie pełnego etatu zdefiniowanego dla stanowiska pracownika. Jeśli typem zasady jest **Ilość**, wprowadź **Maksymalną stałą ilość**. 
 
-9. Wprowadź **Miesiące usługi** dla typu urlop, aby umożliwić różnym miesiącom usługi określenie maksymalnej kwoty, jaką może zakupić pracownik. 
+9. Wybierz przycisk **Dodaj**, aby dodać typy urlopów dla pracowników, którzy będą kupować urlop. Do zasady można dodać wiele typów urlopów. 
 
-10. Wprowadź **Maksymalną ilość** dla typu urlopu. 
+10. Wprowadź **Miesiące usługi** dla typu urlop, aby umożliwić różnym miesiącom usługi określenie maksymalnej kwoty, jaką może zakupić pracownik. 
 
-11. Umożliwia wprowadzenie **Stawki**, za którą pracownik będzie kupować urlop. 
+11. Wprowadź **Maksymalną ilość** dla typu urlopu. 
 
-12. Opcjonalnie można wprowadzić **Kod zarobków**, który ma być używany przy zakupie urlopu. 
+12. Umożliwia wprowadzenie **Stawki**, za którą pracownik będzie kupować urlop. 
 
-13. Opcjonalnie określ, czy ma być używany ekwiwalent pełnego wymiaru czasu, aby określić maksymalną ilość dla typu urlopu. 
+13. Opcjonalnie można wprowadzić **Kod zarobków**, który ma być używany przy zakupie urlopu. 
+
+14. Opcjonalnie określ, czy ma być używany ekwiwalent pełnego wymiaru czasu, aby określić maksymalną ilość dla typu urlopu. 
+
+15. Aby utworzyć zasadę sprzedaży, wykonaj czynności opisane w punktach 8 – 14 w ramach **Zasad sprzedaży**. 
 
 ## <a name="add-the-buy-and-sell-leave-policy-to-a-leave-and-absence-plan"></a>Dodaj zasadę Kup i Sprzedaj urlop do planu urlopu i nieobecności
 

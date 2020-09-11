@@ -3,7 +3,7 @@ title: VALUEIN, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji VALUEIN w module Raportowanie elektroniczne (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0df97234df41d11897473dea4e85354e82d36ec
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 44459ae56891a08eb11a6c254f4b4d5652a0e693
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041706"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705126"
 ---
-# <a name="VALUEIN">VALUEIN, funkcja ER</a>
+# <a name=""></a><a name="VALUEIN">VALUEIN, funkcja ER</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,7 +59,7 @@ Wyjściowa *wartość logiczna*.
 
 ## <a name="usage-notes"></a>Uwagi dotyczące użytkowania
 
-Zasadniczo funkcja `VALUEIN` jest przekształcana na zbiór warunków **OR**.
+Zasadniczo funkcja `VALUEIN` jest przekształcana na zbiór warunków **OR**. Jeśli lista warunków **OR** jest duża, a maksymalna całkowita długość instrukcji SQL mogła zostać przekroczona, należy rozważyć użycie funkcji [`VALUEINLARGE`](er-functions-logical-valueinlarge.md).
 
 ```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
@@ -77,13 +77,13 @@ Gdy źródło danych jest wywoływane, jeśli zostało skonfigurowane jako wyra�
 
 Górny limit liczby znaków w treści takiego warunku to 32 768 znaków. Z tego względu nie należy tworzyć źródeł danych, które w czasie wykonywania mogą spowodować przekroczenie tego limitu. W przypadku przekroczenia limitu aplikacja przestaje działać i zgłasza wyjątek. Na przykład taka sytuacja może wystąpić, jeśli źródło danych jest skonfigurowane za pomocą wyrażenia `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, a listy **List1** i **List2** zawierają bardzo dużo rekordów.
 
-W niektórych przypadkach funkcja `VALUEIN` jest przekształcana na instrukcję bazy danych za pomocą operatora `EXISTS JOIN`. Takie zachowanie występuje, gdy jest używana funkcja [FILTER](er-functions-list-filter.md) i są spełnione następujące warunki:
+W niektórych przypadkach funkcja `VALUEIN` jest przekształcana na instrukcję bazy danych za pomocą operatora `EXISTS JOIN`. Takie zachowanie występuje, gdy jest używana funkcja [`FILTER`](er-functions-list-filter.md) i są spełnione następujące warunki:
 
 - Opcja **MONITUJ O ZAPYTANIE** jest wyłączona w źródle danych funkcji `VALUEIN` odwołującej się do listy rekordów. W czasie wykonywania do tego źródła danych nie będą stosowane żadne dodatkowe warunki.
 - Nie skonfigurowano żadnych warunków zagnieżdżonych w źródle danych funkcji `VALUEIN` odwołującej się do listy rekordów.
 - Element listy w funkcji `VALUEIN` odwołuje się do pola podanego źródła danych, a nie do wyrażenia lub metody tego źródła danych.
 
-Warto rozważyć używanie tej opcji zamiast funkcji [WHERE](er-functions-list-where.md), którą opisano wcześniej w tym przykładzie.
+Warto rozważyć używanie tej opcji zamiast funkcji [`WHERE`](er-functions-list-where.md), którą opisano wcześniej w tym przykładzie.
 
 ## <a name="example-2"></a>Przykład 2
 
@@ -118,3 +118,5 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje logiczne](er-functions-category-logical.md)
+
+[Funkcje VALUEINLARGE](er-functions-logical-valueinlarge.md)
