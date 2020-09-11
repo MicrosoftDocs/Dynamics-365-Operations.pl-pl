@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b10e5f0fe97e65ad380e85815c56e88a3ce4e303
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443902"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719271"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Od prospekta do kasy w podwójnym zapisie
 
@@ -79,7 +79,7 @@ Jeśli używane jest także rozwiązanie Field Service, należy ponownie włącz
 
 Zamówienia sprzedaży mogą być tworzone albo w Sales, albo Supply Chain Management. W przypadku tworzenia zamówienia sprzedaży w Sales jest ona synchronizowana z Supply Chain Management w czasie rzeczywistym. Podobnie, w przypadku tworzenia zamówienia sprzedaży w Supply Chain Management jest ono synchronizowane z Sales w czasie rzeczywistym. Należy uwzględnić następujące informacje:
 
-+ Zamówienia można aktywować i synchronizować z Sales tylko wtedy, gdy wszystkie produkty z zamówienia pochodzą z aplikacji Finance and Operations. Dlatego nie mogą występować produkty dopisane.
++ Produkty korzystające z podwójnego zapisu w systemie Dynamics 365 Sales są wyświetlane jako kategorie produktów w systemie Dynamics 365 Supply Chain Management.
 + Obliczanie i zaokrąglanie rabatów:
 
     - Model obliczania rabatu w rozwiązaniu Sales różni się od modelu obliczania rabatu w rozwiązaniu Supply Chain Management. W rozwiązaniu Supply Chain Management kwota ostatecznego rabatu w wierszu sprzedaży może wynikać z połączenia kwot rabatu i procentów rabatu. Jeżeli ta kwota ostatecznego rabatu zostanie podzielona przez ilość w wierszu, może nastąpić zaokrąglenie. Jednakże to zaokrąglenie nie jest uznawane, jeżeli zaokrąglony rabat na jednostkę zostanie zsynchronizowany z rozwiązaniem Sales. Aby zapewnić, że pełna kwota rabatu z wiersza sprzedaży w rozwiązaniu Supply Chain Management zostanie prawidłowo zsynchronizowana z rozwiązaniem Sales, należy zsynchronizować pełną kwotę bez dzielenia przez ilość w wierszu. Dlatego w rozwiązaniu Sales należy zdefiniować metodę obliczania rabatu jak **Pozycja w wierszu**.

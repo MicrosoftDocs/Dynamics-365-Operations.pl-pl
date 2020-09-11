@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 41b0faa7ef24bdae229f7e6760d22357cb87eb0d
-ms.sourcegitcommit: 7b7cc93c0f78c6bfc7a3ea66a74a29ba0f218553
+ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3658365"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719221"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedykowane terminale płatności oraz monity o drukarkę i szuflady kasowe
 
@@ -78,8 +78,8 @@ Aby skonfigurować profil sprzętu przypisany do kasy, wykonaj następujące kro
 
     | Urządzenie | Typ | Nazwa urządzenia | Dodatkowe szczegóły |
     |---|---|---|---|
-    | Drukarka | Alternatywa | **Epson** lub **Star** | W nazwie urządzenia jest rozróżniana wielkość liter. **Identyfikator profilu paragonów** powinien być taki sam jak **Identyfikator profilu paragonów** mapowany do drukarki sieciowej skonfigurowanej w profilu sprzętowym przypisanym do stacji sprzętowej na poziomie kanału. |
-    | Szuflada kasowa | Alternatywa | **Epson** lub **Star** | W nazwie urządzenia jest rozróżniana wielkość liter. W opcji **Używaj zmiany udostępnionej** zaznacz wartość **Tak**. |
+    | Drukarka | Alternatywa | *Jakikolwiek* | W nazwie urządzenia jest rozróżniana wielkość liter. **Identyfikator profilu paragonów** powinien być taki sam jak **Identyfikator profilu paragonów** mapowany do drukarki sieciowej skonfigurowanej w profilu sprzętowym przypisanym do stacji sprzętowej na poziomie kanału. |
+    | Szuflada kasowa | Alternatywa | *Jakikolwiek* | W nazwie urządzenia jest rozróżniana wielkość liter. W opcji **Używaj zmiany udostępnionej** zaznacz wartość **Tak**. |
     | Usługa EFT | Adyen | Nie dotyczy | Aby uzyskać informacje o konfigurowaniu aktualnego, gotowego do użytku łącznika płatności Adyen dla sklepów internetowych, zobacz temat [Łącznik płatności usługi Dynamics 365 dla Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Inne łączniki płatności mogą być obsługiwane za pośrednictwem [zestawu Commerce Software Development Kit (SDK) dla płatności](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). |
     | Konsola PIN | Sieć | **MicrosoftAdyenDeviceV001** | Brak. |
 
@@ -103,7 +103,7 @@ Aby skonfigurować profil sprzętowy używany do grupowania sieciowej drukarki p
     | Urządzenie | Typ | opis | Dodatkowe szczegóły |
     |---|---|---|---|
     | Drukarka | Sieć | **Epson** lub **Star** | W nazwie urządzenia jest rozróżniana wielkość liter. **Identyfikator profilu paragonów** powinien być taki sam jak **Identyfikator profilu paragonów** mapowany do drukarki skonfigurowanej w profilu sprzętowym przypisanym do kasy. |
-    | Szuflada kasowa | Alternatywa | **Epson** lub **Star** | W nazwie urządzenia jest rozróżniana wielkość liter. w opcji **Używaj zmiany udostępnionej** zaznacz wartość **Tak**. |
+    | Szuflada kasowa | Sieć | **Epson** lub **Star** | W nazwie urządzenia jest rozróżniana wielkość liter. w opcji **Używaj zmiany udostępnionej** zaznacz wartość **Tak**. |
 
 5. Wybierz opcję **Zapisz**.
 

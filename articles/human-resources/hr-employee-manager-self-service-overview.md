@@ -3,7 +3,7 @@ title: Przegląd samoobsługi dla pracownika etatowego i menedżera
 description: Ten artykuł umożliwia przegląd informacji o obszarze roboczym samoobsługi pracowników i menedżerów.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5934b6a1a1a8aa30aa18d9be26845c84acfa2fd0
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: fd642d0976c607b47a7874d0771e441153272ec9
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429803"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712239"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Przegląd samoobsługi dla pracownika etatowego i menedżera
 
@@ -32,6 +32,25 @@ Ten artykuł umożliwia przegląd informacji o obszarze roboczym samoobsługi pr
 ## <a name="edit-personal-details"></a>Edytuj dane osobowe
 
 Aby dodać lub zmienić dowolne informacje osobiste, należy zapoznać się z [Edytuj informacje osobiste](hr-employee-manager-self-service-edit-personal-information.md).
+
+## <a name="user-not-assigned-to-a-worker-record"></a>Użytkownik nie został przypisany rekord pracownika
+
+Jeśli użytkownik nie ma przypisanego rekordu **Pracownika** na stronie **Użytkownicy**, zostanie wyświetlony następujący komunikat:
+
+**Twój identyfikator użytkownika nie jest skojarzony z rekordem pracownika etatowego w systemie. Dopóki tak będzie, nie będziesz mieć możliwości wyświetlania ani aktualizowania swoich informacji. Skontaktuj się ze swoim menedżerem albo zespołem pomocy technicznej, aby uzyskać pomoc.**
+
+Aby przypisać użytkownikowi rekord **Pracownika**, przejdź do sekcji **Użytkownicy** i wybierz użytkownika. Wybierz opcję **Edycja**, dodaj odpowiedniego pracownika w polu **Osoba** w formularzu, a następnie wybierz opcję **Zapisz**. Powinien być teraz możliwy dostęp do samoobsługi pracownika etatowego.
+
+## <a name="security-requirements-for-employee-and-manager-self-service"></a>Wymagania dotyczące zabezpieczeń dla pracownika i kierownika samoobsługi
+
+Wymagania dotyczące zabezpieczeń dla pracownika i kierownika samoobsługi:
+
+- Pracownicy wymagają posiadania roli „pracownik”.
+- Kierownicy wymagają zarówno roli pracownika, jak i kierownika.
+
+>[!NOTE]
+>Role niestandardowe mogą być również używane do uzyskania dostępu do samoobsługi pracowników i kierownika, tak długo jak udzielono im dostępu do obszarów roboczych dla pracowników i kierowników.<br>
+>Dostęp kierownika do informacji o pracownikach jest oparty na bieżącej hierarchii wierszy stanowisk zdefiniowanej w module Human Resources.
 
 ## <a name="employee-self-service"></a>Samoobsługa pracownika etatowego
 

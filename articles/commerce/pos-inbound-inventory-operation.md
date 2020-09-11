@@ -3,7 +3,7 @@ title: Operacja zapasów przychodzących w punkcie sprzedaży
 description: W tym temacie opisano możliwości przychodzących operacji magazynowych w punkcie sprzedaży (POS).
 author: hhaines
 manager: annbe
-ms.date: 07/27/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
-ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
+ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3627545"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710316"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Operacja zapasów przychodzących w punkcie sprzedaży
 
@@ -143,6 +143,20 @@ Operacja uwzględnia konfigurację **Dozwolony pusty przychód** dla pozycji **l
 ### <a name="receive-all"></a>Przyjmij wszystko
 
 Jeśli jest to wymagane, można wybrać opcję **Przyjmij wszystko** na pasku aplikacji, aby szybko zaktualizować ilość **Przyjmowane teraz** dla wszystkich wierszy dokumentu do wartości maksymalnej, która jest dostępna dla tych wierszy.
+
+### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Przyjęcie nieplanowanych towarów na zamówieniach zakupu
+
+W wersji Commerce 10.0.14 lub nowszej użytkownicy mogą uzyskać produkt, który nie znajdował się na pierwotnym zamówieniu zakupu. Aby włączyć tę funkcję, należy włączyć opcję **Dodawania wierszy do zamówienia zakupu podczas otrzymywania w punkcie sprzedaży**.  
+
+Ta funkcja działa tylko dla przyjęcia zamówienia zakupu. Nie można przyjmować towarów w ramach zamówień przeniesienia, jeśli towary nie zostały wcześniej zamówione i wysłane z magazynu wychodzącego.
+
+Użytkownicy nie mogą dodawać nowych produktów do zamówienia zakupu podczas odbierania w punkcie sprzedaży, jeśli [zarządzanie zmianami przepływu pracy](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) jest uruchomione w Commerce Headquarter (HQ). Aby umożliwić zarządzanie zmianami, wszystkie zmiany w zamówieniu zakupu należy najpierw zatwierdzić przed zezwoleniem na odebranie. Ponieważ ten proces umożliwia odbiorcy dodawanie nowych wierszy do zamówienia zakupu, odbieranie nie powiedzie się, jeśli jest włączony przepływ pracy zarządzania zmianami. Jeśli funkcja zarządzania zmianami jest włączona dla wszystkich zamówień zakupu lub dla dostawcy połączonego z zamówieniem zakupu, które w tym momencie odbierane w punkcie sprzedaży, użytkownik nie może dodawać nowych produktów do zamówienia zakupu podczas przyjmowania w punkcie sprzedaży.
+
+Funkcja umożliwiająca dodawanie wierszy nie może być używana jako obejście do przyjmowania dodatkowych ilości produktów już znajdujących się w zamówieniu zakupu. Nadmierne odbieranie jest zarządzane przy użyciu standardowych ustawień [nadwyżki w odbiorze](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) dla wiersza produktu w zamówieniu zakupu.
+
+Jeśli jest włączona funkcja **Dodawania wierszy do zamówienia zakupu podczas otrzymywania w punkcie sprzedaży**, a użytkownik odbiera w punkcie w ramach **Operacji przychodzącej**, w przypadku skanowania kodu kreskowego lub numeru produktu, który nie został rozpoznany jako towar w bieżącym zamówieniu zakupu, ale jest rozpoznawany jako prawidłowy towar, użytkownik otrzymuje komunikat dotyczący dodawania towaru do zamówienia zakupu. Jeśli użytkownik doda towar do zamówienia zakupu, ilość wprowadzona w polu **Przyjęcie** jest uważana za zamówioną ilość dla wiersza zamówienia zakupu.
+
+Gdy przyjęcie zamówienia zakupu zostało zakończone i przesłane do HQ w celu przetworzenia, dodane wiersze są tworzone w dokumencie głównym zamówienia zakupu. W wierszu zamówienia zakupu w HQ w pojawi się flaga **Dodane w POS**, w zakładce **Ogólne** w wierszu zamówienia zakupu. Flaga **Dodana przez POS** wskazuje, że wiersz zamówienia zakupu został dodany przez proces odbierania w punkcie sprzedaży i nie był wierszem, który był na zamówieniu zakupu przed jego przyjęciem.
 
 ### <a name="cancel-receiving"></a>Anuluj przyjmowanie
 

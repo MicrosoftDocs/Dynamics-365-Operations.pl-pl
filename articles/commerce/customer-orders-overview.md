@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
-ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
+ms.openlocfilehash: a6fdc7b8d7ad65c9e4bf1d3b932b62918dea6e77
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699376"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710266"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Zamówienia odbiorców w aplikacji Modern POS (MPOS)
 
@@ -54,7 +54,10 @@ Oto kilka parametrów, które można skonfigurować na stronie **Parametry Comme
     - Opłaty są stosowane na poziomie nagłówka zamówienia sprzedaży, a gdy pewna ilość z wiersza produktu jest zwracana, maksymalny zwrot opłat transportowych dozwolony dla produktów i ilości nie może zostać określony w sposób pasujący dla wszystkich odbiorców.
     - Opłaty transportowe są ponoszone dla każdego zdarzenia wysyłki. Jeśli odbiorca zwraca produkty wiele razy, a polityka sprzedawcy detalicznego określa, że ponosi on koszty zwrotu opłat transportowych, zwracane opłaty transportowe będą wyższe, niż faktyczne opłaty transportowe.
     
-- **Sposób obliczania podatków** - **Ponowne obliczanie** jest domyślnym i tradycyjnym ustawieniem sposobu ponownego obliczania podatków podczas importowania zamówienia do biura zaplecza. **Nie obliczaj ponownie** wyłącza ponowne obliczanie podatku, jeśli zamówienie jest edytowane w biurze zaplecza, po wyzwoleniu ponownego obliczania. 
+
+## <a name="disable-option-to-pay-later"></a>Wyłącz opcję, aby zapłacić później
+
+W wersji Commerce 10.0.12 lub nowszej sprzedawcy mogą usunąć tę opcję, aby zapłacić później w momencie utworzenia zamówienia odbiorcy w punkcie sprzedaży. Aby wyłączyć opcję, otwórz **Profil funkcji** dla kanału, w którym nie można zapłacić później, jest takie działanie nie jest dozwolone w systemie, a następnie wybierz opcję **Edytuj**. Na karcie **Ogólne** wybierz listę rozwijaną, aby **Wymagać płatności za realizację**. Jeśli opcja płatności później nie powinna być możliwa do wykorzystania w punkcie sprzedaży, wybierz kartę **Wymagane** i wybierz opcję **Zapisz**. Wykonaj harmonogram dystrybucji **1070**, aby zsynchronizować zmianę z kanałem. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Przepływ transakcji w zamówieniach odbiorców
 

@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3478c4c2acb134df1c293c1c33f615595aeaadd0
-ms.sourcegitcommit: 3ae002804858f201297a729d03ec7eab8209be34
+ms.openlocfilehash: 2862c98014f91c5500ec11119d04d15bd050c89c
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3628436"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712215"
 ---
 # <a name="view-team-and-company-calendars"></a>Wyświetlanie kalendarzy zespołów i firm
-
-[!include [banner](includes/preview-feature.md)]
 
 W programie Dynamics 365 Human Resources można wyświetlać kalendarze zespołów i firmy. W kalendarzach zespołów są wyświetlani tylko bezpośredni podwładni zdefiniowani w hierarchii liniowej.
 

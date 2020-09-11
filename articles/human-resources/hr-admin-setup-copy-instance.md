@@ -3,7 +3,7 @@ title: Kopiowanie wystąpienia
 description: Można skorzystać z usługi cyklu pomocy technicznej Microsoft Dynamics Lifecycle Services (usługi LCS), aby skopiować bazę danych firmy Microsoft Dynamics 365 Human Resources do środowiska piaskownicy (sandbox).
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b14baf49517f5d606038af20366944788b22eba2
-ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
+ms.openlocfilehash: 6b52b696d323df6bafead2418ae322d1a9cdf64a
+ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3554332"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3706235"
 ---
 # <a name="copy-an-instance"></a>Kopiowanie wystąpienia
 
 Można skorzystać z usługi cyklu pomocy technicznej Microsoft Dynamics Lifecycle Services (usługi LCS), aby skopiować bazę danych firmy Microsoft Dynamics 365 Human Resources do środowiska piaskownicy (sandbox). Jeśli masz inne środowisko piaskownicy, możesz również skopiować bazę danych z tego środowiska do docelowego środowiska piaskownicy.
 
-Aby skopiować instancję, należy upewnić się, co następuje:
+Aby skopiować wystąpienie, należy pamiętać o następujących wskazówkach:
 
 - Instancja Human Resources, którą chcesz zastąpić, musi być środowiskiem piaskownicy.
 
@@ -37,7 +37,9 @@ Aby skopiować instancję, należy upewnić się, co następuje:
 
 - Użytkownik musi być administratorem w środowisku docelowym, aby mógł się w nim zalogować po skopiowaniu instancji.
 
-- Podczas kopiowania bazy danych Human Resources nie są kopiowane elementy (aplikacje lub dane) zawarte w środowisku Microsoft PowerApps. Aby uzyskać informacje o kopiowaniu elementów w środowisku PowerApps, zapoznaj się z tematem [Kopiuj środowisko](https://docs.microsoft.com/power-platform/admin/copy-environment). Środowisko PowerApps, które chcesz zastąpić, musi być środowiskiem piaskownicy. Musisz być globalnym administratorem dzierżawy, aby zmienić środowisko produkcyjne PowerApps w środowisko piaskownicy. Aby uzyskać więcej informacji o zmienianiu środowiska PowerApps, zapoznaj się z tematem [Przełącz wystąpienie](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+- Podczas kopiowania bazy danych Human Resources nie są kopiowane elementy (aplikacje lub dane) zawarte w środowisku Microsoft Power Apps. Aby uzyskać informacje o kopiowaniu elementów w środowisku Power Apps, zapoznaj się z tematem [Kopiuj środowisko](https://docs.microsoft.com/power-platform/admin/copy-environment). Środowisko Power Apps, które chcesz zastąpić, musi być środowiskiem piaskownicy. Musisz być globalnym administratorem dzierżawy, aby zmienić środowisko produkcyjne Power Apps w środowisko piaskownicy. Aby uzyskać więcej informacji o zmienianiu środowiska Power Apps, zapoznaj się z tematem [Przełącz wystąpienie](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+
+- Jeśli użytkownik skopiuje wystąpienie do środowiska piaskownicy i chce zintegrować środowisko piaskownicy z systemem Common Data Service, należy ponownie zastosować pola niestandardowe do encji Common Data Service. Zobacz [Zastosuj niestandardowe pola do Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Efekty kopiowania bazy danych Human Resources
 
@@ -47,15 +49,15 @@ Podczas kopiowania bazy danych Human Resources zachodzą następujące zdarzenia
 
 - Środowisko docelowe nie będzie dostępne do czasu zakończenia procesu kopiowania.
 
-- Dokumenty w magazynie obiektów BLOB Microsoft Azure nie są kopiowane z jednego środowiska do drugiego. Z tego powodu wszystkie dołączone dokumenty i szablony nie zostaną skopiowane i pozostaną w środowisku źródłowym.
+- Dokumenty w magazynie obiektów BLOB Microsoft Azure nie są kopiowane z jednego środowiska do drugiego. Z tego też powodu żadne dołączone dokumenty i szablony nie zostaną skopiowane i pozostaną w środowisku źródłowym.
 
-- Wszyscy użytkownicy, z wyjątkiem użytkownika o statusie Administrator i innych wewnętrznych użytkowników usługi, będą niedostępni. W związku z tym Administrator może usunąć lub ukryć dane, zanim inni użytkownicy nie będą mogli z powrotem w systemie.
+- Wszyscy użytkownicy, z wyjątkiem użytkownika o statusie Administrator i innych wewnętrznych użytkowników usługi, będą niedostępni. Administrator może usunąć lub ukryć dane, zanim użytkownicy ponownie uzyskają dostęp do systemu.
 
 - Administrator musi wprowadzić wymagane zmiany konfiguracji, takie jak ponowne podłączenie punktów końcowych integracji do określonych usług lub adresów URL.
 
 ## <a name="copy-the-human-resources-database"></a>Kopiowanie bazy danych Human Resources
 
-Aby wykonać to zadanie, najpierw należy skopiować instancję, a następnie zalogować się do centrum administracyjnego Microsoft Power Platform w celu skopiowania swojego środowiska PowerApps.
+Aby wykonać to zadanie, najpierw należy skopiować instancję, a następnie zalogować się do centrum administracyjnego Microsoft Power Platform w celu skopiowania swojego środowiska Power Apps.
 
 > [!WARNING]
 > Po skopiowaniu isntancji baza danych jest usuwana w obiekcie docelowym. Instancja docelowa jest niedostępna w trakcie tego procesu.
@@ -74,7 +76,7 @@ Aby wykonać to zadanie, najpierw należy skopiować instancję, a następnie za
 
    ![[Wybierz Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
-6. Wybierz środowisko PowerApps do skopiowania, a następnie wybierz **Kopiuj**.
+6. Wybierz środowisko Power Apps do skopiowania, a następnie wybierz **Kopiuj**.
 
 7. Po zakończeniu procesu kopiowania zaloguj się do instancji docelowej i włącz integrację Common Data Service. Aby uzyskać więcej informacji i instrukcji, zobacz [Konfigurowanie integracji Common Data Service dla przestrzeni roboczych](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
@@ -98,7 +100,13 @@ Następujące elementy danych nie są kopiowane podczas kopiowania instancji Hum
 
 - Ciąg połączenia w tabeli **PersonnelIntegrationConfiguration**
 
-Niektóre z tych elementów nie są kopiowane, ponieważ są specyficzne dla środowiska. Przykłady to m.in. rekordy **BatchServerConfig** czy **SysCorpNetPrinters**. Inne elementy nie są kopiowane z powodu wolumenu biletów pomocy technicznej. Na przykład mogą zostać wysłane zduplikowane wiadomości e-mail, ponieważ protokół SMTP jest nadal włączony w środowisku testowania akceptacji użytkownika (piaskownicy), mogą zostać wysłane nieprawidłowe komunikaty integracji, ponieważ zadania wsadowe są nadal włączone, a użytkownicy mogą być włączani przed wykonaniem przez administratora akcji oczyszczania po odświeżeniu.
+Niektóre z tych elementów nie są kopiowane, ponieważ są specyficzne dla środowiska. Przykłady to m.in. rekordy **BatchServerConfig** czy **SysCorpNetPrinters**. Inne elementy nie są kopiowane z powodu wolumenu biletów pomocy technicznej. Na przykład:
+
+- Mogą zostać wysłane zduplikowane wiadomości e-mail, ponieważ protokół SMTP jest nadal włączony w środowisku testowania akceptacji użytkowników (piaskownicy).
+
+- Mogą zostać wysłane nieprawidłowe komunikaty integracji, ponieważ zadania wsadowe są nadal włączone.
+
+- Dostęp użytkowników może być włączony zanim administratorzy będą mogli wykonywać akcje oczyszczania po odświeżeniu.
 
 Ponadto podczas kopiowania istnieją zmieniają się następujące stany:
 
@@ -111,3 +119,32 @@ Ponadto podczas kopiowania istnieją zmieniają się następujące stany:
 Wszyscy użytkownicy w docelowym środowisku piaskownicy, w tym Administratorzy, są zastępowani przez użytkowników środowiska źródłowego. Przed skopiowaniem wystąpienia należy upewnić się, że jesteś Administratorem w środowisku źródłowym. Jeśli nie, po zakończeniu kopiowania nie będzie można zalogować się do docelowego środowiska piaskownicy.
 
 Wszyscy użytkownicy niebędący Administratorami w docelowym środowisku piaskownicy są wyłączeni w celu zapobiegania niepotrzebnego rejestrowania w środowisku piaskownicy. W razie potrzeby Administratorzy mogą ponownie włączyć użytkowników.
+
+## <a name="apply-custom-fields-to-common-data-service"></a>Zastosuj niestandardowe pola do Common Data Service
+
+Jeśli użytkownik skopiuje wystąpienie do środowiska piaskownicy i chce zintegrować środowisko piaskownicy z systemem Common Data Service, należy ponownie zastosować pola niestandardowe do encji Common Data Service.
+
+Dla każdego pola niestandardowego, które jest uwidocznione na encjach Common Data Service należy wykonać następujące kroki:
+
+1. Przejdź do pola niestandardowego i wybierz opcję **Edytuj**.
+
+2. Usuń zaznaczenie pola **Włączone** dla każdej jednostki cdm_*, dla której włączono pole niestandardowe.
+
+3. Wybierz opcję **Zastosuj zmiany**.
+
+4. Wybierz ponownie przycisk **Edytuj**.
+
+5. Wybierz pole **Włączone** dla każdej jednostki cdm_*, dla której włączono pole niestandardowe.
+
+6. Ponownie wybierz opcję **Zastosuj zmiany**.
+
+Proces cofania wyboru, stosowania zmian, ponownego wybierania i ponownego stosowania zmian powoduje wyświetlenie w schemacie, w którym w Common Data Service będą uwzględniane pola niestandardowe.
+
+Aby uzyskać więcej informacji na temat tworzenia pól niestandardowych, zobacz [Tworzenie pól niestandardowych i praca z nimi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+
+## <a name="see-also"></a>Informacje dodatkowe
+
+[Aprowizowanie rozwiązania Human Resources](hr-admin-setup-provision.md)</br>
+[Usuwanie wystąpienie](hr-admin-setup-remove-instance.md)</br>
+[Aktualizowanie procesu](hr-admin-setup-update-process.md)
+
