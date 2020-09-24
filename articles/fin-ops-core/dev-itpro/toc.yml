@@ -14,12 +14,12 @@
               items:
                 - name: Nowości i zmiany w aktualizacjach Platform update — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Aktualizacja Platform update w wersji 10.0.14 (listopad 2020)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Aktualizacja Platform update w wersji 10.0.13 (październik 2020)
                   href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: Aktualizacja Platform update dla wersji 10.0.12 (sierpień 2020)
                   href: get-started/whats-new-platform-update-10-0-12.md
-                - name: Aktualizacja Platform update dla wersji 10.0.11 (lipiec 2020)
-                  href: get-started/whats-new-platform-update-35.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje Platform
@@ -606,6 +606,14 @@
                   href: dev-tools/pipeline-create-deployable-package.md
                 - name: Obsługa wersji modelu X++ w usłudze Azure Pipelines
                   href: dev-tools/pipeline-model-version.md
+                - name: Pobierz zasoby za pomocą usługi Azure Pipelines
+                  href: dev-tools/pipeline-asset-download.md
+                - name: Przekaż zasoby za pomocą usługi Azure Pipelines
+                  href: dev-tools/pipeline-asset-upload.md
+                - name: Wdróż zasoby za pomocą usługi Azure Pipelines
+                  href: dev-tools/pipeline-deploy-asset.md
+                - name: Utwórz połączenie usługi Lifecycle Services (LCS) w usłudze Azure Pipelines
+                  href: dev-tools/pipeline-lcs-connection.md
             - name: Przykładowa aplikacja Zarządzanie flotą
               items:
                 - name: Kompleksowy scenariusz dla przykładowej aplikacji Zarządzanie flotą
@@ -1158,7 +1166,7 @@
           items:
             - name: Zasoby platformy mobilnej
               href: mobile-apps/platform/mobile-platform-home-page.md
-            - name: Wprowadzenie
+            - name: Rozpocznij
               items:
                 - name: Rozpocznij pracę z platformą mobilną
                   href: mobile-apps/platform/mobile-platform-getting-started.md

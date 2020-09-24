@@ -3,7 +3,7 @@ title: Tworzenie zamówień na podstawie cząstkowego kanału informacyjnego dla
 description: Ten temat opisuje tworzenie zamówień na podstawie cząstkowego kanału informacyjnego dla transakcji w sklepach w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 06/08/2020
+ms.date: 09/04/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6e097ead7cacb3f71452323656546a4be661457f
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 79f99b9b401de3e3bcca6ec5a13a3b4f7bad6f8c
+ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710290"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "3766743"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Tworzenie zamówień na podstawie cząstkowego kanału informacyjnego dla transakcji w sklepach sieci sprzedaży
 
@@ -36,22 +36,20 @@ Dzięki tworzeniu zamówień na podstawie cząstkowego kanału informacyjnego wp
 
 ## <a name="how-to-use-trickle-feed-based-posting"></a>Jak korzystać z księgowania na podstawie cząstkowego kanału informacyjnego
   
-1. Aby włączyć księgowanie na podstawie cząstkowego kanału informacyjnego transakcji, przejdź do **Administrowanie systemem > Ustawienia > Konfiguracja licencji** i wyłącz klucz **Zestawienia**.
+1. Aby włączyć księgowanie na podstawie cząstkowego kanału informacyjnego transakcji sieci sprzedaży, włącz funkcję o nazwie **Zestawienia sieci sprzedaży — cząstkowy kanał informacyjny** za pomocą opcji zarządzania funkcjami.
 
-2. Na tej samej stronie włącz klucz licencji **Zestawienia (cząstkowy kanał informacyjny) — wersja zapoznawcza**. Podczas włączania tego klucza upewnij się, że brak oczekujących na zaksięgowanie zestawień. 
+    > [!IMPORTANT]
+    > Przed włączeniem tej funkcji upewnij się, że brak oczekujących na zaksięgowanie zestawień.
 
-    > [!Important]
-    > Przed włączeniem klucza licencji **Zestawienia (cząstkowy kanał informacyjny) — wersja zapoznawcza** upewnij się, że brak oczekujących na zaksięgowanie zestawień.
-
-3. Bieżący dokument zestawienia będzie podzielony na dwa różne typy: zestawienie transakcyjne i sprawozdanie finansowe.
+2. Bieżący dokument zestawienia będzie podzielony na dwa różne typy: zestawienie transakcyjne i sprawozdanie finansowe.
 
       - Zestawienie transakcyjne pobierze wszystkie niezaksięgowane i zweryfikowane transakcje i utworzy arkusze zamówień sprzedaży, faktur sprzedaży, płatności i rabatów oraz transakcje przychodu/wydatku według skonfigurowanej przez użytkownika częstotliwości. Proces ten powinien być skonfigurowany tak, by występować jak najczęściej, aby dokumenty były tworzone, gdy transakcje są przesyłane do centrali za pomocą zadania ściągania. Gdy zestawienie transakcyjne od razu tworzy zamówienia sprzedaży i faktury sprzedaży, nie ma potrzeby konfiguracji zadań wsadowych **Zaksięguj magazyn**. Jednakże ciągle można użyć ich do spełnienia konkretnych wymagań biznesowych użytkownika.  
       
      - Sprawozdanie finansowe będzie tworzone na koniec dnia i obsługuje tylko metodę zamknięcia **Zmiana**. To sprawozdanie będzie ograniczone do uzgodnienia finansowego i będzie tylko tworzyć arkusze dla różnic w kwotach między kwotą zliczoną i kwotą transakcji dla różnych metod płatności wraz z arkuszami dla innych transakcji zarządzania gotówką.   
 
-4. Aby obliczyć zestawienie transakcyjne, kliknij **Retail i Commerce > Retail i Commerce — składniki IT > Księgowanie w punkcie sprzedaży > Oblicz zestawienia transakcyjne w partii**. Aby zaksięgować zestawienia zestawień transakcyjnych w partii, kliknij **Retail i Commerce > Retail i Commerce — składniki IT > Księgowanie w punkcie sprzedaży > Księguj zestawienia transakcyjne w partii**.
+3. Aby obliczyć zestawienie transakcyjne, przejdź do **Retail i Commerce > Retail i Commerce — składniki IT > Księgowanie w punkcie sprzedaży > Oblicz zestawienia transakcyjne w partii**. Aby zaksięgować zestawienia zestawień transakcyjnych w partii, przejdź do **Retail i Commerce > Retail i Commerce — składniki IT > Księgowanie w punkcie sprzedaży > Księguj zestawienia transakcyjne w partii**.
 
-5. Aby obliczyć zestawienie finansowe, kliknij **Retail i Commerce > Retail i Commerce — składniki IT > Księgowanie w punkcie sprzedaży > Oblicz zestawienia finansowe w partii**. Aby zaksięgować zestawienia finansowe w partii, kliknij **Retail i Commerce > Retail i Commerce — składniki IT > Księgowanie w punkcie sprzedaży > Zaksięguj zestawienia finansowe w partii**.
+4. Aby obliczyć zestawienie finansowe, przejdź do **Retail i Commerce > Retail i Commerce — składniki IT > Księgowanie w punkcie sprzedaży > Oblicz zestawienia finansowe w partii**. Aby zaksięgować zestawienia finansowe w partii, przejdź do **Retail i Commerce > Retail i Commerce — składniki IT > Księgowanie w punkcie sprzedaży > Zaksięguj zestawienia finansowe w partii**.
 
 > [!NOTE]
 > Elementy menu **Retail i Commerce > Retail i Commerce — składniki IT > Księgowanie w punkcie sprzedaży > Oblicz zestawienia w partii** i **Retail i Commerce > Retail i Commerce — składniki IT > Księgowanie w punkcie sprzedaży > Księguj zestawienia w partii** zostały w tej nowej funkcji usunięte.

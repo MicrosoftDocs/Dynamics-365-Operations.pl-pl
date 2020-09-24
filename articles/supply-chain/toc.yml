@@ -4,7 +4,7 @@
       items:
         - name: Dynamics 365 Supply Chain Management — strona główna
           href: index.md
-        - name: Wprowadzenie
+        - name: Rozpocznij
           items:
             - name: Zanim kupisz
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
@@ -70,12 +70,12 @@
                   items:
                     - name: Nowości lub zmiany w aplikacji Supply Chain Management — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management w wersji 10.0.14 (listopad 2020)
+                      href: get-started/whats-new-scm-10-0-14.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.13 (październik 2020)
                       href: get-started/whats-new-scm-10-0-13.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.12 (sierpień 2020)
                       href: get-started/whats-new-scm-10-0-12.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.11 (lipiec 2020)
-                      href: get-started/whats-new-scm-10-0-11.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
@@ -333,7 +333,7 @@
                   href: asset-management/work-orders/automatic-update-of-asset-counters.md
                 - name: Listy kontrolne konserwacji
                   href: asset-management/work-orders/maintenance-checklists.md
-                - name: Przerwa konserwacyjna
+                - name: Przerwa konserwacyjna dla zleceń pracy
                   href: asset-management/work-orders/maintenance-downtime.md
                 - name: Dodawanie błędu do zlecenia pracy
                   href: asset-management/work-orders/add-fault-to-work-order.md
@@ -341,7 +341,7 @@
                   href: asset-management/work-orders/work-order-report.md
                 - name: Pule zleceń pracy
                   href: asset-management/work-orders/work-order-pools.md
-                - name: Zadania konserwacji aktywnych zleceń pracy
+                - name: Aktywne zadania konserwacji zlecenia pracy
                   href: asset-management/work-orders/active-work-order-jobs-overview.md
                 - name: Środki trwałe i zlecenia pracy
                   href: asset-management/work-orders/work-orders-and-fixed-assets.md
@@ -365,15 +365,15 @@
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
                 - name: Koszt harmonogramu konserwacji
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
-                - name: Tworzenie zlecenia pracy
+                - name: Utwórz zlecenia pracy
                   href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-                - name: Przerwa konserwacyjna
+                - name: Działania w ramach przerwy konserwacyjnej
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
             - name: Planowanie zdolności produkcyjnych
               items:
-                - name: Obliczanie obciążenia zdolności produkcyjnych
+                - name: Oblicz obciążenie wydajności
                   href: asset-management/capacity-planning/calculate-capacity-load.md
-                - name: Obliczanie prognozy dla pozycji
+                - name: Oblicz prognozę pozycji
                   href: asset-management/capacity-planning/calculate-item-forecast.md
             - name: Planowanie zlecenia pracy
               items:
@@ -1143,13 +1143,13 @@
               items:
                 - name: Używanie źródeł danych SPRZĘŻENIE do pobierania danych z wielu tabel aplikacji
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurowanie mapowań modelu ER w zależności od kraju
+                - name: Konfigurowanie mapowań modelu raportowania elektronicznego w zależności od kraju
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfiguracja formatów ER do używania parametrów określonych dla firmy
+                - name: Konfiguracja formatów raportowania elektronicznego do używania parametrów określonych dla firmy
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfiguracja parametrów formatu ER dla firmy
+                - name: Konfiguracja parametrów formatu raportowania elektronicznego dla firmy
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Odraczanie wykonania elementów formatu ER
+                - name: Odraczanie wykonania elementów formatu raportowania elektronicznego
                   items:
                     - name: Odraczanie wykonania elementu sekwencji
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
@@ -1185,7 +1185,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurowanie miejsc docelowych
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ustawianie odwołania do formatu ER
+                - name: Ustawianie odwołania do formatu raportowania elektronicznego
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Automatyczne sprawdzanie poprawności wygenerowanych raportów
                   items:
@@ -1345,8 +1345,6 @@
               items:
                 - name: Omówienie optymalizacji planowania
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Planowanie z użyciem ujemnych ilości dostępnych zapasów
-                  href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Rozpoczęcie optymalizacji planowania
                   href: master-planning/planning-optimization/get-started.md
                 - name: Analiza dopasowań optymalizacji planowania
@@ -1355,16 +1353,22 @@
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Planowanie główne przy użyciu umów handlowych zakupu
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
-                - name: Wyświetlanie historii planu i dzienników planowania
-                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Marginesy bezpieczeństwa
+                  href: master-planning/planning-optimization/safety-margins.md
+                - name: Zatwierdzanie zamówień planowanych
+                  href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatyczne akceptowanie z optymalizacją planowania
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Planowanie z użyciem ujemnych ilości dostępnych zapasów
+                  href: master-planning/planning-optimization/negative-on-hand.md
+                - name: Wyświetlanie historii planu i dzienników planowania
+                  href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Anulowanie zadania planowania
                   href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Rozszerzalność optymalizacji planowania
-                  href: master-planning/planning-optimization/extensibility.md
                 - name: Rozwiązywanie problemów z optymalizacją planowania
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: Rozszerzalność optymalizacji planowania
+                  href: master-planning/planning-optimization/extensibility.md
             - name: Plany główne
               items:
                 - name: Omówienie planów głównych
@@ -2621,6 +2625,8 @@
                   items:
                     - name: Konfigurowanie pobierania dla grupy
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Stanowisko w grupie pełne
+                      href: warehousing/cluster-position-full.md
                     - name: Pobieranie dla grupy sterowane przez system
                       href: warehousing/system-directed-cluster-pick.md
                     - name: Konfigurowanie konteneryzacji
