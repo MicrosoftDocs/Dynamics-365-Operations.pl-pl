@@ -18,69 +18,69 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e550b0c7634c7aac3f8c597a1c1eac3f8125e3b
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 65b988e6c58aed35577288e01157b8c1f76e6efd
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070720"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744870"
 ---
-# <span data-ttu-id="76d7c-103"><a name="DATETIMEFORMAT">DATETIMEFORMAT, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="76d7c-103"><a name="DATETIMEFORMAT">DATETIMEFORMAT ER function</a></span></span>
+# <a name="datetimeformat-er-function"></a><span data-ttu-id="ef08f-103">DATETIMEFORMAT, funkcja ER</span><span class="sxs-lookup"><span data-stu-id="ef08f-103">DATETIMEFORMAT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="76d7c-104">Funkcja `DATETIMEFORMAT` zwraca wartość *Ciąg*, która przedstawia daną wartość daty/godziny jako tekst w określonym formacie i opcjonalnie określonej [kulturze](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).</span><span class="sxs-lookup"><span data-stu-id="76d7c-104">The `DATETIMEFORMAT` function returns a *String* value that presents a given date/time value as text in the specified format and in an optionally specified [culture](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).</span></span> <span data-ttu-id="76d7c-105">Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).</span><span class="sxs-lookup"><span data-stu-id="76d7c-105">For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).</span></span>
+<span data-ttu-id="ef08f-104">Funkcja `DATETIMEFORMAT` zwraca wartość *Ciąg*, która przedstawia daną wartość daty/godziny jako tekst w określonym formacie i opcjonalnie określonej [kulturze](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).</span><span class="sxs-lookup"><span data-stu-id="ef08f-104">The `DATETIMEFORMAT` function returns a *String* value that presents a given date/time value as text in the specified format and in an optionally specified [culture](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).</span></span> <span data-ttu-id="ef08f-105">Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).</span><span class="sxs-lookup"><span data-stu-id="ef08f-105">For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).</span></span>
 
-## <a name="syntax-1"></a><span data-ttu-id="76d7c-106">Składnia 1</span><span class="sxs-lookup"><span data-stu-id="76d7c-106">Syntax 1</span></span>
+## <a name="syntax-1"></a><span data-ttu-id="ef08f-106">Składnia 1</span><span class="sxs-lookup"><span data-stu-id="ef08f-106">Syntax 1</span></span>
 
 ```vb
 DATETIMEFORMAT (datetime, format)
 ```
 
-## <a name="syntax-2"></a><span data-ttu-id="76d7c-107">Składnia 2</span><span class="sxs-lookup"><span data-stu-id="76d7c-107">Syntax 2</span></span>
+## <a name="syntax-2"></a><span data-ttu-id="ef08f-107">Składnia 2</span><span class="sxs-lookup"><span data-stu-id="ef08f-107">Syntax 2</span></span>
 
 ```vb
 DATETIMEFORMAT (datetime, format, culture)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="76d7c-108">Argumenty</span><span class="sxs-lookup"><span data-stu-id="76d7c-108">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="ef08f-108">Argumenty</span><span class="sxs-lookup"><span data-stu-id="ef08f-108">Arguments</span></span>
 
-<span data-ttu-id="76d7c-109">`datetime`: *Data/godzina*</span><span class="sxs-lookup"><span data-stu-id="76d7c-109">`datetime`: *DateTime*</span></span>
+<span data-ttu-id="ef08f-109">`datetime`: *Data/godzina*</span><span class="sxs-lookup"><span data-stu-id="ef08f-109">`datetime`: *DateTime*</span></span>
 
-<span data-ttu-id="76d7c-110">Wartość daty i godziny, która reprezentuje datę i godzinę do sformatowania.</span><span class="sxs-lookup"><span data-stu-id="76d7c-110">A date/time value that represents the date and time to format.</span></span>
+<span data-ttu-id="ef08f-110">Wartość daty i godziny, która reprezentuje datę i godzinę do sformatowania.</span><span class="sxs-lookup"><span data-stu-id="ef08f-110">A date/time value that represents the date and time to format.</span></span>
 
-<span data-ttu-id="76d7c-111">`format`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="76d7c-111">`format`: *String*</span></span>
+<span data-ttu-id="ef08f-111">`format`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="ef08f-111">`format`: *String*</span></span>
 
-<span data-ttu-id="76d7c-112">Format ciągu wyjściowego.</span><span class="sxs-lookup"><span data-stu-id="76d7c-112">The format of the output string.</span></span>
+<span data-ttu-id="ef08f-112">Format ciągu wyjściowego.</span><span class="sxs-lookup"><span data-stu-id="ef08f-112">The format of the output string.</span></span>
 
-<span data-ttu-id="76d7c-113">`culture`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="76d7c-113">`culture`: *String*</span></span>
+<span data-ttu-id="ef08f-113">`culture`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="ef08f-113">`culture`: *String*</span></span>
 
-<span data-ttu-id="76d7c-114">Kultura do użycia na potrzeby formatowania.</span><span class="sxs-lookup"><span data-stu-id="76d7c-114">The culture to use for formatting.</span></span>
+<span data-ttu-id="ef08f-114">Kultura do użycia na potrzeby formatowania.</span><span class="sxs-lookup"><span data-stu-id="ef08f-114">The culture to use for formatting.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="76d7c-115">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="76d7c-115">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="ef08f-115">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="ef08f-115">Return values</span></span>
 
-<span data-ttu-id="76d7c-116">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="76d7c-116">*String*</span></span>
+<span data-ttu-id="ef08f-116">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="ef08f-116">*String*</span></span>
 
-<span data-ttu-id="76d7c-117">Wyjściowa wartość ciągu.</span><span class="sxs-lookup"><span data-stu-id="76d7c-117">The resulting string value.</span></span>
+<span data-ttu-id="ef08f-117">Wyjściowa wartość ciągu.</span><span class="sxs-lookup"><span data-stu-id="ef08f-117">The resulting string value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="76d7c-118">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="76d7c-118">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="ef08f-118">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="ef08f-118">Usage notes</span></span>
 
-<span data-ttu-id="76d7c-119">Gdy kultura nie jest zdefiniowana jako argument wywołanej funkcji, wartość `culture` jest definiowana przez kontekst wywołujący.</span><span class="sxs-lookup"><span data-stu-id="76d7c-119">When the culture isn't defined as an argument of the called function, the value of `culture` is defined by the calling context.</span></span> <span data-ttu-id="76d7c-120">Jeśli na przykład funkcja `DATETIMEFORMAT` jest wywoływana przy użyciu składni 1 w formacie raportowania elektronicznego (ER) dla elementu **PLIK**, który jest skonfigurowany do używania kultury niemieckiej, konwersja zostanie wykonana przy użyciu kultury niemieckiej.</span><span class="sxs-lookup"><span data-stu-id="76d7c-120">For example, if the `DATETIMEFORMAT` function is called by using syntax 1 in an Electronic reporting (ER) format for a **FILE** element that is configured to use the German culture, the conversion will be done by using the German culture.</span></span> <span data-ttu-id="76d7c-121">Domyślna wartość `culture` to **EN-US**.</span><span class="sxs-lookup"><span data-stu-id="76d7c-121">The default `culture` value is **EN-US**.</span></span>
+<span data-ttu-id="ef08f-119">Gdy kultura nie jest zdefiniowana jako argument wywołanej funkcji, wartość `culture` jest definiowana przez kontekst wywołujący.</span><span class="sxs-lookup"><span data-stu-id="ef08f-119">When the culture isn't defined as an argument of the called function, the value of `culture` is defined by the calling context.</span></span> <span data-ttu-id="ef08f-120">Jeśli na przykład funkcja `DATETIMEFORMAT` jest wywoływana przy użyciu składni 1 w formacie raportowania elektronicznego (ER) dla elementu **PLIK**, który jest skonfigurowany do używania kultury niemieckiej, konwersja zostanie wykonana przy użyciu kultury niemieckiej.</span><span class="sxs-lookup"><span data-stu-id="ef08f-120">For example, if the `DATETIMEFORMAT` function is called by using syntax 1 in an Electronic reporting (ER) format for a **FILE** element that is configured to use the German culture, the conversion will be done by using the German culture.</span></span> <span data-ttu-id="ef08f-121">Domyślna wartość `culture` to **EN-US**.</span><span class="sxs-lookup"><span data-stu-id="ef08f-121">The default `culture` value is **EN-US**.</span></span>
 
-<span data-ttu-id="76d7c-122">Gdy funkcja `DATETIMEFORMAT` konwertuje wartość danej daty/godziny, bierze pod uwagę ustawienia strefy czasowej użytkownika aplikacji, który uruchamia format ER, w którego kontekście jest wywoływana funkcja.</span><span class="sxs-lookup"><span data-stu-id="76d7c-122">When the `DATETIMEFORMAT` function converts a given date/time value, it considers the time zone setting of the application user who is running the ER format that the function is called in the context of.</span></span>
+<span data-ttu-id="ef08f-122">Gdy funkcja `DATETIMEFORMAT` konwertuje wartość danej daty/godziny, bierze pod uwagę ustawienia strefy czasowej użytkownika aplikacji, który uruchamia format ER, w którego kontekście jest wywoływana funkcja.</span><span class="sxs-lookup"><span data-stu-id="ef08f-122">When the `DATETIMEFORMAT` function converts a given date/time value, it considers the time zone setting of the application user who is running the ER format that the function is called in the context of.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="76d7c-123">Przykład 1</span><span class="sxs-lookup"><span data-stu-id="76d7c-123">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="ef08f-123">Przykład 1</span><span class="sxs-lookup"><span data-stu-id="ef08f-123">Example 1</span></span>
 
-<span data-ttu-id="76d7c-124">Funkcja `DATETIMEFORMAT (NOW(), "dd-MM-yyyy")` zwraca wartość daty/godziny bieżącego serwera aplikacji, 24 grudnia 2015 roku, jako **"24-12-2015"**, zgodnie z określonym formatem niestandardowym.</span><span class="sxs-lookup"><span data-stu-id="76d7c-124">`DATETIMEFORMAT (NOW(), "dd-MM-yyyy")` returns the current application server date/time value, December 24, 2015, as **"24-12-2015"**, based on the specified custom format.</span></span>
+<span data-ttu-id="ef08f-124">Funkcja `DATETIMEFORMAT (NOW(), "dd-MM-yyyy")` zwraca wartość daty/godziny bieżącego serwera aplikacji, 24 grudnia 2015 roku, jako **"24-12-2015"**, zgodnie z określonym formatem niestandardowym.</span><span class="sxs-lookup"><span data-stu-id="ef08f-124">`DATETIMEFORMAT (NOW(), "dd-MM-yyyy")` returns the current application server date/time value, December 24, 2015, as **"24-12-2015"**, based on the specified custom format.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="76d7c-125">Przykład 2</span><span class="sxs-lookup"><span data-stu-id="76d7c-125">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="ef08f-125">Przykład 2</span><span class="sxs-lookup"><span data-stu-id="ef08f-125">Example 2</span></span>
 
-<span data-ttu-id="76d7c-126">Funkcja `DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` zwraca bieżącą datę/godzinę sesji aplikacji, 24 grudnia 2015, jako ciąg **„24.12.2015”**, na podstawie wybranej kultury niemieckiej i określonego formatu.</span><span class="sxs-lookup"><span data-stu-id="76d7c-126">`DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` returns the current application session date/time value, December 24, 2015, as **"24.12.2015"**, based on the selected German culture and the specified format.</span></span>
+<span data-ttu-id="ef08f-126">Funkcja `DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` zwraca bieżącą datę/godzinę sesji aplikacji, 24 grudnia 2015, jako ciąg **„24.12.2015”**, na podstawie wybranej kultury niemieckiej i określonego formatu.</span><span class="sxs-lookup"><span data-stu-id="ef08f-126">`DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` returns the current application session date/time value, December 24, 2015, as **"24.12.2015"**, based on the selected German culture and the specified format.</span></span>
 
-## <a name="example-3"></a><span data-ttu-id="76d7c-127">Przykład 3</span><span class="sxs-lookup"><span data-stu-id="76d7c-127">Example 3</span></span>
+## <a name="example-3"></a><span data-ttu-id="ef08f-127">Przykład 3</span><span class="sxs-lookup"><span data-stu-id="ef08f-127">Example 3</span></span>
 
-<span data-ttu-id="76d7c-128">Funkcja `DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` zwraca wartość ciągu **2019-11-12T08:00:00.0000000-08:00**, gdy jest wywoływana podczas procesu, który został zainicjowany przez użytkownika aplikacji z wartością strefy czasowej **(GMT-08:00) Czas pacyficzny (USA i Kanada)** w sekcji **Preferencje dotyczące języka i kraju/regionu**.</span><span class="sxs-lookup"><span data-stu-id="76d7c-128">`DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` returns the string value **2019-11-12T08:00:00.0000000-08:00** when it's called during a process that was initiated by an application user who has the time zone value **(GMT-08:00) Pacific Time (US & Canada)** in the **Language and country/region preferences** section.</span></span>
+<span data-ttu-id="ef08f-128">Funkcja `DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` zwraca wartość ciągu **2019-11-12T08:00:00.0000000-08:00**, gdy jest wywoływana podczas procesu, który został zainicjowany przez użytkownika aplikacji z wartością strefy czasowej **(GMT-08:00) Czas pacyficzny (USA i Kanada)** w sekcji **Preferencje dotyczące języka i kraju/regionu**.</span><span class="sxs-lookup"><span data-stu-id="ef08f-128">`DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` returns the string value **2019-11-12T08:00:00.0000000-08:00** when it's called during a process that was initiated by an application user who has the time zone value **(GMT-08:00) Pacific Time (US & Canada)** in the **Language and country/region preferences** section.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="76d7c-129">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="76d7c-129">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="ef08f-129">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="ef08f-129">Additional resources</span></span>
 
-[<span data-ttu-id="76d7c-130">Funkcje daty i godziny</span><span class="sxs-lookup"><span data-stu-id="76d7c-130">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="ef08f-130">Funkcje daty i godziny</span><span class="sxs-lookup"><span data-stu-id="ef08f-130">Date and time functions</span></span>](er-functions-category-datetime.md)

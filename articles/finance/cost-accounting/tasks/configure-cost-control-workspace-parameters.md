@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Operations
@@ -15,46 +16,46 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c46d77a632b0d2939d9a9f561e7c761845169629
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 11e1edc435cac100bfef15299251c1863103b568
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144480"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759215"
 ---
-# <a name="configure-cost-control-workspace-parameters"></a><span data-ttu-id="dae09-103">Konfigurowanie parametrów obszaru roboczego kontroli kosztów</span><span class="sxs-lookup"><span data-stu-id="dae09-103">Configure cost control workspace parameters</span></span>
+# <a name="configure-cost-control-workspace-parameters"></a><span data-ttu-id="7abdf-103">Konfigurowanie parametrów obszaru roboczego kontroli kosztów</span><span class="sxs-lookup"><span data-stu-id="7abdf-103">Configure cost control workspace parameters</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="dae09-104">Ta procedura służy do konfigurowania obszaru roboczego Kontrola kosztów, tak aby kierownicy na różnych poziomach w organizacji mogli uzyskać wgląd w podległe im obiekty kosztów, takie jak centra kosztów i grupy produktów.</span><span class="sxs-lookup"><span data-stu-id="dae09-104">Use this procedure to configure the Cost control workspace so that managers at various levels in an organization can gain insight into their cost objects, such as cost centers and product groups.</span></span> <span data-ttu-id="dae09-105">Do utworzenia tego nagrania użyto firmy demonstracyjnej USP2.</span><span class="sxs-lookup"><span data-stu-id="dae09-105">The USP2 demo company was used to create this recording.</span></span>
+<span data-ttu-id="7abdf-104">Ta procedura służy do konfigurowania obszaru roboczego Kontrola kosztów, tak aby kierownicy na różnych poziomach w organizacji mogli uzyskać wgląd w podległe im obiekty kosztów, takie jak centra kosztów i grupy produktów.</span><span class="sxs-lookup"><span data-stu-id="7abdf-104">Use this procedure to configure the Cost control workspace so that managers at various levels in an organization can gain insight into their cost objects, such as cost centers and product groups.</span></span> <span data-ttu-id="7abdf-105">Do utworzenia tego nagrania użyto firmy demonstracyjnej USP2.</span><span class="sxs-lookup"><span data-stu-id="7abdf-105">The USP2 demo company was used to create this recording.</span></span>
 
-1. <span data-ttu-id="dae09-106">Wybierz kolejno opcje Rachunek kosztów > Ustawienia > Konfiguracja obszaru roboczego Kontrola kosztów.</span><span class="sxs-lookup"><span data-stu-id="dae09-106">Go to Cost accounting > Setup > Cost control workspace configuration.</span></span>
-2. <span data-ttu-id="dae09-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="dae09-107">Click New.</span></span>
-3. <span data-ttu-id="dae09-108">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="dae09-108">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="dae09-109">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="dae09-109">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="dae09-110">W polu Opublikowane wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="dae09-110">Select Yes in the Published field.</span></span>
-    * <span data-ttu-id="dae09-111">Jeśli w tej opcji ustawisz wartość Tak, raporty w obszarze roboczym Kontrola kosztów będą mogły być wyświetlane przez użytkowników przypisanych do jednej z następujących ról: Menedżer rachunku kosztów, Księgowy kosztów, Księgowy rachunku kosztów lub Kontroler obiektów kosztów.</span><span class="sxs-lookup"><span data-stu-id="dae09-111">If you set this option to Yes, users who are assigned one of these roles can see the report in the Cost control workspace: cost accounting manager, cost accountant, cost accountant clerk, or cost object controller.</span></span> <span data-ttu-id="dae09-112">Jeśli w tej opcji ustawisz wartość Nie, raporty w obszarze roboczym Kontrola kosztów będą mogły być wyświetlane przez użytkowników przypisanych do jednej z następujących ról: Menedżer rachunku kosztów, Księgowy kosztów lub Księgowy rachunku kosztów.</span><span class="sxs-lookup"><span data-stu-id="dae09-112">If you set this option to No, only users who are assigned one of these roles can see the report in the Cost control workspace: cost accounting manager, cost accountant, or cost accountant clerk.</span></span>  
-6. <span data-ttu-id="dae09-113">Rozwiń sekcję Filtrowanie danych.</span><span class="sxs-lookup"><span data-stu-id="dae09-113">Expand the Data filtering section.</span></span>
-7. <span data-ttu-id="dae09-114">W polu Jednostka kontroli kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="dae09-114">In the Cost control unit field, enter or select a value.</span></span>
-8. <span data-ttu-id="dae09-115">W polu Pierwotna wersja budżetu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="dae09-115">In the Budget original version field, enter or select a value.</span></span>
-9. <span data-ttu-id="dae09-116">W polu Hierarchia wymiarów składników kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="dae09-116">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
-10. <span data-ttu-id="dae09-117">W polu Hierarchia wymiarów obiektów kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="dae09-117">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
-11. <span data-ttu-id="dae09-118">Rozwiń sekcję Przypisz rekordy obliczeń.</span><span class="sxs-lookup"><span data-stu-id="dae09-118">Expand the Assign calculation records section.</span></span>
-12. <span data-ttu-id="dae09-119">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="dae09-119">Click New.</span></span>
-13. <span data-ttu-id="dae09-120">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="dae09-120">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="dae09-121">W polu Okres kalendarza obrachunkowego wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="dae09-121">In the Fiscal calendar period field, enter or select a value.</span></span>
-15. <span data-ttu-id="dae09-122">W polu Wersja rzeczywista wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="dae09-122">In the Actual version field, enter or select a value.</span></span>
-16. <span data-ttu-id="dae09-123">Rozwiń sekcję Okresy obrachunkowe na kolumnę.</span><span class="sxs-lookup"><span data-stu-id="dae09-123">Expand the Fiscal periods per column section.</span></span>
-17. <span data-ttu-id="dae09-124">W polu Bieżący okres zaznacz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="dae09-124">Select Yes in the Current period field.</span></span>
-18. <span data-ttu-id="dae09-125">Rozwiń sekcję Kolumny do wyświetlenia dla kosztów.</span><span class="sxs-lookup"><span data-stu-id="dae09-125">Expand the Columns to display for costs section.</span></span>
-19. <span data-ttu-id="dae09-126">W polu Koszt stały wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="dae09-126">Select Yes in the Fixed cost field.</span></span>
-20. <span data-ttu-id="dae09-127">W polu Koszt zmienny wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="dae09-127">Select Yes in the Variable cost field.</span></span>
-21. <span data-ttu-id="dae09-128">W polu Łączny koszt wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="dae09-128">Select Yes in the Total cost field.</span></span>
-22. <span data-ttu-id="dae09-129">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="dae09-129">Click Save.</span></span>
-23. <span data-ttu-id="dae09-130">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="dae09-130">Close the page.</span></span>
-24. <span data-ttu-id="dae09-131">Wybierz kolejno opcje Rachunek kosztów > Obszary robocze > Kontrola kosztów.</span><span class="sxs-lookup"><span data-stu-id="dae09-131">Go to Cost accounting > Workspaces > Cost control.</span></span>
-25. <span data-ttu-id="dae09-132">Wybierz zestawienie, aby wyświetlić koszty stałe, zmienne, łączne i nieklasyfikowane dla wybranych okresów obrachunkowych.</span><span class="sxs-lookup"><span data-stu-id="dae09-132">Select a statement to see fixed, variable, total, and unclassified costs for the selected fiscal periods.</span></span>
-26. <span data-ttu-id="dae09-133">W polu Okres kalendarza obrachunkowego wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="dae09-133">In the Fiscal calendar period field, enter or select a value.</span></span>
-27. <span data-ttu-id="dae09-134">W polu Węzeł hierarchii wymiarów obiektów kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="dae09-134">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
-    * <span data-ttu-id="dae09-135">Po wybraniu hierarchii wymiarów obiektów kosztów rozwiń hierarchię wymiarów składników kosztów, aby zobaczyć żądane wartości kosztów.</span><span class="sxs-lookup"><span data-stu-id="dae09-135">After you've selected a Cost object dimension hierarchy, expand the Cost element dimension hierarchy to see the desired cost values.</span></span> <span data-ttu-id="dae09-136">Na przykład po rozwinięciu hierarchii do poziomu Koszty ogólne produkcji można zobaczyć wartość.</span><span class="sxs-lookup"><span data-stu-id="dae09-136">For example, you can expand the hierarchy to Manufacturing overhead to see the value.</span></span>  
+1. <span data-ttu-id="7abdf-106">Wybierz kolejno opcje Rachunek kosztów > Ustawienia > Konfiguracja obszaru roboczego Kontrola kosztów.</span><span class="sxs-lookup"><span data-stu-id="7abdf-106">Go to Cost accounting > Setup > Cost control workspace configuration.</span></span>
+2. <span data-ttu-id="7abdf-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="7abdf-107">Click New.</span></span>
+3. <span data-ttu-id="7abdf-108">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="7abdf-108">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="7abdf-109">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="7abdf-109">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="7abdf-110">W polu Opublikowane wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="7abdf-110">Select Yes in the Published field.</span></span>
+    * <span data-ttu-id="7abdf-111">Jeśli w tej opcji ustawisz wartość Tak, raporty w obszarze roboczym Kontrola kosztów będą mogły być wyświetlane przez użytkowników przypisanych do jednej z następujących ról: Menedżer rachunku kosztów, Księgowy kosztów, Księgowy rachunku kosztów lub Kontroler obiektów kosztów.</span><span class="sxs-lookup"><span data-stu-id="7abdf-111">If you set this option to Yes, users who are assigned one of these roles can see the report in the Cost control workspace: cost accounting manager, cost accountant, cost accountant clerk, or cost object controller.</span></span> <span data-ttu-id="7abdf-112">Jeśli w tej opcji ustawisz wartość Nie, raporty w obszarze roboczym Kontrola kosztów będą mogły być wyświetlane przez użytkowników przypisanych do jednej z następujących ról: Menedżer rachunku kosztów, Księgowy kosztów lub Księgowy rachunku kosztów.</span><span class="sxs-lookup"><span data-stu-id="7abdf-112">If you set this option to No, only users who are assigned one of these roles can see the report in the Cost control workspace: cost accounting manager, cost accountant, or cost accountant clerk.</span></span>  
+6. <span data-ttu-id="7abdf-113">Rozwiń sekcję Filtrowanie danych.</span><span class="sxs-lookup"><span data-stu-id="7abdf-113">Expand the Data filtering section.</span></span>
+7. <span data-ttu-id="7abdf-114">W polu Jednostka kontroli kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="7abdf-114">In the Cost control unit field, enter or select a value.</span></span>
+8. <span data-ttu-id="7abdf-115">W polu Pierwotna wersja budżetu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="7abdf-115">In the Budget original version field, enter or select a value.</span></span>
+9. <span data-ttu-id="7abdf-116">W polu Hierarchia wymiarów składników kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="7abdf-116">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
+10. <span data-ttu-id="7abdf-117">W polu Hierarchia wymiarów obiektów kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="7abdf-117">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+11. <span data-ttu-id="7abdf-118">Rozwiń sekcję Przypisz rekordy obliczeń.</span><span class="sxs-lookup"><span data-stu-id="7abdf-118">Expand the Assign calculation records section.</span></span>
+12. <span data-ttu-id="7abdf-119">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="7abdf-119">Click New.</span></span>
+13. <span data-ttu-id="7abdf-120">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="7abdf-120">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="7abdf-121">W polu Okres kalendarza obrachunkowego wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="7abdf-121">In the Fiscal calendar period field, enter or select a value.</span></span>
+15. <span data-ttu-id="7abdf-122">W polu Wersja rzeczywista wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="7abdf-122">In the Actual version field, enter or select a value.</span></span>
+16. <span data-ttu-id="7abdf-123">Rozwiń sekcję Okresy obrachunkowe na kolumnę.</span><span class="sxs-lookup"><span data-stu-id="7abdf-123">Expand the Fiscal periods per column section.</span></span>
+17. <span data-ttu-id="7abdf-124">W polu Bieżący okres zaznacz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="7abdf-124">Select Yes in the Current period field.</span></span>
+18. <span data-ttu-id="7abdf-125">Rozwiń sekcję Kolumny do wyświetlenia dla kosztów.</span><span class="sxs-lookup"><span data-stu-id="7abdf-125">Expand the Columns to display for costs section.</span></span>
+19. <span data-ttu-id="7abdf-126">W polu Koszt stały wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="7abdf-126">Select Yes in the Fixed cost field.</span></span>
+20. <span data-ttu-id="7abdf-127">W polu Koszt zmienny wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="7abdf-127">Select Yes in the Variable cost field.</span></span>
+21. <span data-ttu-id="7abdf-128">W polu Łączny koszt wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="7abdf-128">Select Yes in the Total cost field.</span></span>
+22. <span data-ttu-id="7abdf-129">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="7abdf-129">Click Save.</span></span>
+23. <span data-ttu-id="7abdf-130">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="7abdf-130">Close the page.</span></span>
+24. <span data-ttu-id="7abdf-131">Wybierz kolejno opcje Rachunek kosztów > Obszary robocze > Kontrola kosztów.</span><span class="sxs-lookup"><span data-stu-id="7abdf-131">Go to Cost accounting > Workspaces > Cost control.</span></span>
+25. <span data-ttu-id="7abdf-132">Wybierz zestawienie, aby wyświetlić koszty stałe, zmienne, łączne i nieklasyfikowane dla wybranych okresów obrachunkowych.</span><span class="sxs-lookup"><span data-stu-id="7abdf-132">Select a statement to see fixed, variable, total, and unclassified costs for the selected fiscal periods.</span></span>
+26. <span data-ttu-id="7abdf-133">W polu Okres kalendarza obrachunkowego wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="7abdf-133">In the Fiscal calendar period field, enter or select a value.</span></span>
+27. <span data-ttu-id="7abdf-134">W polu Węzeł hierarchii wymiarów obiektów kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="7abdf-134">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="7abdf-135">Po wybraniu hierarchii wymiarów obiektów kosztów rozwiń hierarchię wymiarów składników kosztów, aby zobaczyć żądane wartości kosztów.</span><span class="sxs-lookup"><span data-stu-id="7abdf-135">After you've selected a Cost object dimension hierarchy, expand the Cost element dimension hierarchy to see the desired cost values.</span></span> <span data-ttu-id="7abdf-136">Na przykład po rozwinięciu hierarchii do poziomu Koszty ogólne produkcji można zobaczyć wartość.</span><span class="sxs-lookup"><span data-stu-id="7abdf-136">For example, you can expand the hierarchy to Manufacturing overhead to see the value.</span></span>  
 

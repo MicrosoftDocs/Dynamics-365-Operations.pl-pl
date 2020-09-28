@@ -18,45 +18,45 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4293db244d04debf3679cf2bde0b892bd74e8ead
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 112852ab955fdf8de9f78cc93486cc1d5f048517
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041131"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3743790"
 ---
-# <span data-ttu-id="ffb09-103"><a name="LEFT">LEFT, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="ffb09-103"><a name="LEFT">LEFT ER function</a></span></span>
+# <a name="left-er-function"></a><span data-ttu-id="0314f-103">LEFT, funkcja ER</span><span class="sxs-lookup"><span data-stu-id="0314f-103">LEFT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ffb09-104">Funkcja `LEFT` zwraca wartość *Ciąg*, która reprezentuje określoną liczbę znaków od początku określonego ciągu.</span><span class="sxs-lookup"><span data-stu-id="ffb09-104">The `LEFT` function returns a *String* value that presents the specified number of characters from the start of the specified string.</span></span>
+<span data-ttu-id="0314f-104">Funkcja `LEFT` zwraca wartość *Ciąg*, która reprezentuje określoną liczbę znaków od początku określonego ciągu.</span><span class="sxs-lookup"><span data-stu-id="0314f-104">The `LEFT` function returns a *String* value that presents the specified number of characters from the start of the specified string.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ffb09-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="ffb09-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0314f-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="0314f-105">Syntax</span></span>
 
 ```vb
 LEFT (text, number)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="ffb09-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="ffb09-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="0314f-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="0314f-106">Arguments</span></span>
 
-<span data-ttu-id="ffb09-107">`text`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="ffb09-107">`text`: *String*</span></span>
+<span data-ttu-id="0314f-107">`text`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="0314f-107">`text`: *String*</span></span>
 
-<span data-ttu-id="ffb09-108">Wartość *ciągu* reprezentująca oryginalny tekst.</span><span class="sxs-lookup"><span data-stu-id="ffb09-108">A *String* value that represents the original text.</span></span>
+<span data-ttu-id="0314f-108">Wartość *ciągu* reprezentująca oryginalny tekst.</span><span class="sxs-lookup"><span data-stu-id="0314f-108">A *String* value that represents the original text.</span></span>
 
-<span data-ttu-id="ffb09-109">`number`: *Liczba całkowita*</span><span class="sxs-lookup"><span data-stu-id="ffb09-109">`number`: *Integer*</span></span>
+<span data-ttu-id="0314f-109">`number`: *Liczba całkowita*</span><span class="sxs-lookup"><span data-stu-id="0314f-109">`number`: *Integer*</span></span>
 
-<span data-ttu-id="ffb09-110">Liczba znaków, które muszą zostać zwrócone, od początku oryginalnego tekstu.</span><span class="sxs-lookup"><span data-stu-id="ffb09-110">The number of characters that must be returned from the start of the original text.</span></span>
+<span data-ttu-id="0314f-110">Liczba znaków, które muszą zostać zwrócone, od początku oryginalnego tekstu.</span><span class="sxs-lookup"><span data-stu-id="0314f-110">The number of characters that must be returned from the start of the original text.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="ffb09-111">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="ffb09-111">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="0314f-111">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="0314f-111">Return values</span></span>
 
-<span data-ttu-id="ffb09-112">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="ffb09-112">*String*</span></span>
+<span data-ttu-id="0314f-112">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="0314f-112">*String*</span></span>
 
-<span data-ttu-id="ffb09-113">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="ffb09-113">The resulting text value.</span></span>
+<span data-ttu-id="0314f-113">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="0314f-113">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ffb09-114">Przykład</span><span class="sxs-lookup"><span data-stu-id="ffb09-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0314f-114">Przykład</span><span class="sxs-lookup"><span data-stu-id="0314f-114">Example</span></span>
 
-<span data-ttu-id="ffb09-115">Funkcja `LEFT ("Sample", 3)` zwraca **"Sam"**.</span><span class="sxs-lookup"><span data-stu-id="ffb09-115">`LEFT ("Sample", 3)` returns **"Sam"**.</span></span>
+<span data-ttu-id="0314f-115">Funkcja `LEFT ("Sample", 3)` zwraca **"Sam"**.</span><span class="sxs-lookup"><span data-stu-id="0314f-115">`LEFT ("Sample", 3)` returns **"Sam"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ffb09-116">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="ffb09-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="0314f-116">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="0314f-116">Additional resources</span></span>
 
-[<span data-ttu-id="ffb09-117">Funkcje tekstowe</span><span class="sxs-lookup"><span data-stu-id="ffb09-117">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="0314f-117">Funkcje tekstowe</span><span class="sxs-lookup"><span data-stu-id="0314f-117">Text functions</span></span>](er-functions-category-text.md)

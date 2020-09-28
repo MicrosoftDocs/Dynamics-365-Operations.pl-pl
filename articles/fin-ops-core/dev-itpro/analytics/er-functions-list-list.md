@@ -18,59 +18,59 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee51b6da008d1c0fcfb303e9659f507629237333
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: a31288885abda69873ae23b28a36e2a54852f593
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042028"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745160"
 ---
-# <span data-ttu-id="6afce-103"><a name="LIST">LIST, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="6afce-103"><a name="LIST">LIST ER function</a></span></span>
+# <a name="list-er-function"></a><span data-ttu-id="5fccb-103">LIST, funkcja ER</span><span class="sxs-lookup"><span data-stu-id="5fccb-103">LIST ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="6afce-104">Funkcja `LIST` zwraca wartość typu *Lista rekordów*, która składa się z nowej listy rekordów utworzonej na podstawie określonych argumentów.</span><span class="sxs-lookup"><span data-stu-id="6afce-104">The `LIST` function returns a *Record list* value that consists of a new list of records that is created from the specified arguments.</span></span>
+<span data-ttu-id="5fccb-104">Funkcja `LIST` zwraca wartość typu *Lista rekordów*, która składa się z nowej listy rekordów utworzonej na podstawie określonych argumentów.</span><span class="sxs-lookup"><span data-stu-id="5fccb-104">The `LIST` function returns a *Record list* value that consists of a new list of records that is created from the specified arguments.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6afce-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="6afce-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5fccb-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="5fccb-105">Syntax</span></span>
 
 ```vb
 LIST (record 1 [, record 2, …, record N])
 ```
 
-## <a name="arguments"></a><span data-ttu-id="6afce-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="6afce-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="5fccb-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="5fccb-106">Arguments</span></span>
 
-<span data-ttu-id="6afce-107">`record 1`: *Kontener (rekord)*</span><span class="sxs-lookup"><span data-stu-id="6afce-107">`record 1`: *Container (record)*</span></span>
+<span data-ttu-id="5fccb-107">`record 1`: *Kontener (rekord)*</span><span class="sxs-lookup"><span data-stu-id="5fccb-107">`record 1`: *Container (record)*</span></span>
 
-<span data-ttu-id="6afce-108">Odwołanie do źródła danych o typie danych *Rekord*.</span><span class="sxs-lookup"><span data-stu-id="6afce-108">A reference to a data source of the *Record* data type.</span></span> <span data-ttu-id="6afce-109">Ten argument jest wymagany.</span><span class="sxs-lookup"><span data-stu-id="6afce-109">This argument is required.</span></span>
+<span data-ttu-id="5fccb-108">Odwołanie do źródła danych o typie danych *Rekord*.</span><span class="sxs-lookup"><span data-stu-id="5fccb-108">A reference to a data source of the *Record* data type.</span></span> <span data-ttu-id="5fccb-109">Ten argument jest wymagany.</span><span class="sxs-lookup"><span data-stu-id="5fccb-109">This argument is required.</span></span>
 
-<span data-ttu-id="6afce-110">`record N`: *Kontener (rekord)*</span><span class="sxs-lookup"><span data-stu-id="6afce-110">`record N`: *Container (record)*</span></span>
+<span data-ttu-id="5fccb-110">`record N`: *Kontener (rekord)*</span><span class="sxs-lookup"><span data-stu-id="5fccb-110">`record N`: *Container (record)*</span></span>
 
-<span data-ttu-id="6afce-111">Odwołanie do źródła danych o typie danych *Rekord*.</span><span class="sxs-lookup"><span data-stu-id="6afce-111">A reference to a data source of the *Record* data type.</span></span> <span data-ttu-id="6afce-112">Te dodatkowe argumenty są opcjonalne.</span><span class="sxs-lookup"><span data-stu-id="6afce-112">These additional arguments are optional.</span></span>
+<span data-ttu-id="5fccb-111">Odwołanie do źródła danych o typie danych *Rekord*.</span><span class="sxs-lookup"><span data-stu-id="5fccb-111">A reference to a data source of the *Record* data type.</span></span> <span data-ttu-id="5fccb-112">Te dodatkowe argumenty są opcjonalne.</span><span class="sxs-lookup"><span data-stu-id="5fccb-112">These additional arguments are optional.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="6afce-113">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="6afce-113">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="5fccb-113">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="5fccb-113">Return values</span></span>
 
-<span data-ttu-id="6afce-114">*Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="6afce-114">*Record list*</span></span>
+<span data-ttu-id="5fccb-114">*Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="5fccb-114">*Record list*</span></span>
 
-<span data-ttu-id="6afce-115">Wynikowa lista rekordów.</span><span class="sxs-lookup"><span data-stu-id="6afce-115">The resulting list of records.</span></span>
+<span data-ttu-id="5fccb-115">Wynikowa lista rekordów.</span><span class="sxs-lookup"><span data-stu-id="5fccb-115">The resulting list of records.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="6afce-116">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="6afce-116">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="5fccb-116">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="5fccb-116">Usage notes</span></span>
 
-<span data-ttu-id="6afce-117">Tworzona struktura listy zawiera tylko pola, które są prezentowane w strukturze każdego rekordu, wymienionego w argumentach.</span><span class="sxs-lookup"><span data-stu-id="6afce-117">The structure of the list that is created contains only the fields that are presented in the structure of every record that is mentioned in the arguments.</span></span>
+<span data-ttu-id="5fccb-117">Tworzona struktura listy zawiera tylko pola, które są prezentowane w strukturze każdego rekordu, wymienionego w argumentach.</span><span class="sxs-lookup"><span data-stu-id="5fccb-117">The structure of the list that is created contains only the fields that are presented in the structure of every record that is mentioned in the arguments.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6afce-118">Przykład</span><span class="sxs-lookup"><span data-stu-id="6afce-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5fccb-118">Przykład</span><span class="sxs-lookup"><span data-stu-id="5fccb-118">Example</span></span>
 
-<span data-ttu-id="6afce-119">Wprowadź źródło danych **Rekord 1** typu *Kontener*.</span><span class="sxs-lookup"><span data-stu-id="6afce-119">You enter data source **Record 1** of the *Container* type.</span></span> <span data-ttu-id="6afce-120">To źródło danych zawiera następujące pola zagnieżdżone typu *Pole obliczeniowe*:</span><span class="sxs-lookup"><span data-stu-id="6afce-120">This data source contains the following nested fields of the *Calculated field* type:</span></span>
+<span data-ttu-id="5fccb-119">Wprowadź źródło danych **Rekord 1** typu *Kontener*.</span><span class="sxs-lookup"><span data-stu-id="5fccb-119">You enter data source **Record 1** of the *Container* type.</span></span> <span data-ttu-id="5fccb-120">To źródło danych zawiera następujące pola zagnieżdżone typu *Pole obliczeniowe*:</span><span class="sxs-lookup"><span data-stu-id="5fccb-120">This data source contains the following nested fields of the *Calculated field* type:</span></span>
 
-- <span data-ttu-id="6afce-121">**Code:** to pole zawiera wyrażenie, które zwraca wartość typu *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="6afce-121">**Code:** This field contains an expression that returns a value of the *String* type.</span></span>
-- <span data-ttu-id="6afce-122">**Amount:** to pole zawiera wyrażenie, które zwraca wartość typu *Liczba rzeczywista*.</span><span class="sxs-lookup"><span data-stu-id="6afce-122">**Amount:** This field contains an expression that returns a value of the *Real* type.</span></span>
+- <span data-ttu-id="5fccb-121">**Code:** to pole zawiera wyrażenie, które zwraca wartość typu *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="5fccb-121">**Code:** This field contains an expression that returns a value of the *String* type.</span></span>
+- <span data-ttu-id="5fccb-122">**Amount:** to pole zawiera wyrażenie, które zwraca wartość typu *Liczba rzeczywista*.</span><span class="sxs-lookup"><span data-stu-id="5fccb-122">**Amount:** This field contains an expression that returns a value of the *Real* type.</span></span>
 
-<span data-ttu-id="6afce-123">Następnie wprowadź źródło danych **Rekord 2** typu *Kontener*.</span><span class="sxs-lookup"><span data-stu-id="6afce-123">You then enter data source **Record 2** of the *Container* type.</span></span> <span data-ttu-id="6afce-124">To źródło danych zawiera następujące pola zagnieżdżone typu *Pole obliczeniowe*:</span><span class="sxs-lookup"><span data-stu-id="6afce-124">This data source contains the following nested fields of the *Calculated field* type:</span></span>
+<span data-ttu-id="5fccb-123">Następnie wprowadź źródło danych **Rekord 2** typu *Kontener*.</span><span class="sxs-lookup"><span data-stu-id="5fccb-123">You then enter data source **Record 2** of the *Container* type.</span></span> <span data-ttu-id="5fccb-124">To źródło danych zawiera następujące pola zagnieżdżone typu *Pole obliczeniowe*:</span><span class="sxs-lookup"><span data-stu-id="5fccb-124">This data source contains the following nested fields of the *Calculated field* type:</span></span>
 
-- <span data-ttu-id="6afce-125">**Amount:** to pole zawiera wyrażenie, które zwraca wartość typu *Liczba rzeczywista*.</span><span class="sxs-lookup"><span data-stu-id="6afce-125">**Amount:** This field contains an expression that returns a value of the *Real* type.</span></span>
-- <span data-ttu-id="6afce-126">**IsValid:** to pole zawiera wyrażenie, które zwraca wartość *logiczną*.</span><span class="sxs-lookup"><span data-stu-id="6afce-126">**IsValid:** This field contains an expression that returns a value of the *Boolean* type.</span></span>
+- <span data-ttu-id="5fccb-125">**Amount:** to pole zawiera wyrażenie, które zwraca wartość typu *Liczba rzeczywista*.</span><span class="sxs-lookup"><span data-stu-id="5fccb-125">**Amount:** This field contains an expression that returns a value of the *Real* type.</span></span>
+- <span data-ttu-id="5fccb-126">**IsValid:** to pole zawiera wyrażenie, które zwraca wartość *logiczną*.</span><span class="sxs-lookup"><span data-stu-id="5fccb-126">**IsValid:** This field contains an expression that returns a value of the *Boolean* type.</span></span>
 
-<span data-ttu-id="6afce-127">W takim przypadku wyrażenie `LIST('Record 1', 'Record 2')` zwraca nową listę zawierającą dwa rekordy.</span><span class="sxs-lookup"><span data-stu-id="6afce-127">In this case, the expression `LIST('Record 1', 'Record 2')` returns a new list that contains two records.</span></span> <span data-ttu-id="6afce-128">Struktura tej listy składa się z pojedynczego pola **Ilość** typu *Liczba rzeczywista*, ponieważ jest ono jedynym polem, które jest prezentowane w każdym argumencie wywołanej funkcji.</span><span class="sxs-lookup"><span data-stu-id="6afce-128">The structure of this list consists of a single **Amount** field of the *Real* type, because this field is the only field that is presented in every argument of the called function.</span></span>
+<span data-ttu-id="5fccb-127">W takim przypadku wyrażenie `LIST('Record 1', 'Record 2')` zwraca nową listę zawierającą dwa rekordy.</span><span class="sxs-lookup"><span data-stu-id="5fccb-127">In this case, the expression `LIST('Record 1', 'Record 2')` returns a new list that contains two records.</span></span> <span data-ttu-id="5fccb-128">Struktura tej listy składa się z pojedynczego pola **Ilość** typu *Liczba rzeczywista*, ponieważ jest ono jedynym polem, które jest prezentowane w każdym argumencie wywołanej funkcji.</span><span class="sxs-lookup"><span data-stu-id="5fccb-128">The structure of this list consists of a single **Amount** field of the *Real* type, because this field is the only field that is presented in every argument of the called function.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="6afce-129">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="6afce-129">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="5fccb-129">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="5fccb-129">Additional resources</span></span>
 
-[<span data-ttu-id="6afce-130">Lista funkcji</span><span class="sxs-lookup"><span data-stu-id="6afce-130">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="5fccb-130">Lista funkcji</span><span class="sxs-lookup"><span data-stu-id="5fccb-130">List functions</span></span>](er-functions-category-list.md)

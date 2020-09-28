@@ -18,49 +18,49 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d11e2d8b46614085156228ab1001d1f9340a05b0
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 3f8a8e2006fe279b25bbf154c6e1802babf51117
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040970"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744366"
 ---
-# <span data-ttu-id="3794f-103"><a name="PADLEFT">PADLEFT, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="3794f-103"><a name="PADLEFT">PADLEFT ER function</a></span></span>
+# <a name="padleft-er-function"></a><span data-ttu-id="c2f8b-103">PADLEFT, funkcja ER</span><span class="sxs-lookup"><span data-stu-id="c2f8b-103">PADLEFT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3794f-104">Funkcja `PADLEFT` zwracanie wartość typu *Ciąg* o określonej długości, w którym początek ciągu jest dopełniany określonymi znakami.</span><span class="sxs-lookup"><span data-stu-id="3794f-104">The `PADLEFT` function returns a *String* value of the specified length, where the start of the specified string is padded with the specified characters.</span></span>
+<span data-ttu-id="c2f8b-104">Funkcja `PADLEFT` zwracanie wartość typu *Ciąg* o określonej długości, w którym początek ciągu jest dopełniany określonymi znakami.</span><span class="sxs-lookup"><span data-stu-id="c2f8b-104">The `PADLEFT` function returns a *String* value of the specified length, where the start of the specified string is padded with the specified characters.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="3794f-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="3794f-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c2f8b-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="c2f8b-105">Syntax</span></span>
 
 ```vb
 PADLEFT (text, length, padding chars)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="3794f-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="3794f-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="c2f8b-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="c2f8b-106">Arguments</span></span>
 
-<span data-ttu-id="3794f-107">`text`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="3794f-107">`text`: *String*</span></span>
+<span data-ttu-id="c2f8b-107">`text`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="c2f8b-107">`text`: *String*</span></span>
 
-<span data-ttu-id="3794f-108">Wartość *ciągu* reprezentująca oryginalny tekst.</span><span class="sxs-lookup"><span data-stu-id="3794f-108">A *String* value that represents the original text.</span></span>
+<span data-ttu-id="c2f8b-108">Wartość *ciągu* reprezentująca oryginalny tekst.</span><span class="sxs-lookup"><span data-stu-id="c2f8b-108">A *String* value that represents the original text.</span></span>
 
-<span data-ttu-id="3794f-109">`length`: *Liczba całkowita*</span><span class="sxs-lookup"><span data-stu-id="3794f-109">`length`: *Integer*</span></span>
+<span data-ttu-id="c2f8b-109">`length`: *Liczba całkowita*</span><span class="sxs-lookup"><span data-stu-id="c2f8b-109">`length`: *Integer*</span></span>
 
-<span data-ttu-id="3794f-110">Wartość *całkowita*, która reprezentuje ostatnią liczbę znaków w dopełnianym ciągu.</span><span class="sxs-lookup"><span data-stu-id="3794f-110">An *Integer* value that represents the final number of characters in the padded string.</span></span>
+<span data-ttu-id="c2f8b-110">Wartość *całkowita*, która reprezentuje ostatnią liczbę znaków w dopełnianym ciągu.</span><span class="sxs-lookup"><span data-stu-id="c2f8b-110">An *Integer* value that represents the final number of characters in the padded string.</span></span>
 
-<span data-ttu-id="3794f-111">`padding chars`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="3794f-111">`padding chars`: *String*</span></span>
+<span data-ttu-id="c2f8b-111">`padding chars`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="c2f8b-111">`padding chars`: *String*</span></span>
 
-<span data-ttu-id="3794f-112">Znaki używane do dopełnienia.</span><span class="sxs-lookup"><span data-stu-id="3794f-112">The characters to use for padding.</span></span>
+<span data-ttu-id="c2f8b-112">Znaki używane do dopełnienia.</span><span class="sxs-lookup"><span data-stu-id="c2f8b-112">The characters to use for padding.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="3794f-113">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="3794f-113">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="c2f8b-113">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="c2f8b-113">Return values</span></span>
 
-<span data-ttu-id="3794f-114">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="3794f-114">*String*</span></span>
+<span data-ttu-id="c2f8b-114">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="c2f8b-114">*String*</span></span>
 
-<span data-ttu-id="3794f-115">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="3794f-115">The resulting text value.</span></span>
+<span data-ttu-id="c2f8b-115">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="c2f8b-115">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3794f-116">Przykład</span><span class="sxs-lookup"><span data-stu-id="3794f-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c2f8b-116">Przykład</span><span class="sxs-lookup"><span data-stu-id="c2f8b-116">Example</span></span>
 
-<span data-ttu-id="3794f-117">Funkcja `PADLEFT ("1234", 10, "`&nbsp;`")` zwraca ciąg tekstowy **"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234"**.</span><span class="sxs-lookup"><span data-stu-id="3794f-117">`PADLEFT ("1234", 10, "`&nbsp;`")` returns the text string **"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234"**.</span></span>
+<span data-ttu-id="c2f8b-117">Funkcja `PADLEFT ("1234", 10, "`&nbsp;`")` zwraca ciąg tekstowy **"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234"**.</span><span class="sxs-lookup"><span data-stu-id="c2f8b-117">`PADLEFT ("1234", 10, "`&nbsp;`")` returns the text string **"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="3794f-118">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="3794f-118">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="c2f8b-118">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="c2f8b-118">Additional resources</span></span>
 
-[<span data-ttu-id="3794f-119">Funkcje tekstowe</span><span class="sxs-lookup"><span data-stu-id="3794f-119">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="c2f8b-119">Funkcje tekstowe</span><span class="sxs-lookup"><span data-stu-id="c2f8b-119">Text functions</span></span>](er-functions-category-text.md)

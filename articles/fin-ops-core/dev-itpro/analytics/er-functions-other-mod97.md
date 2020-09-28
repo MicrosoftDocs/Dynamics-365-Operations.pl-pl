@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce2192c7bc849996e08573d71d8ed43956c8fb89
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: b58e06a034fc6d26c891b78c26ac53c87a39b92b
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070536"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744054"
 ---
-# <span data-ttu-id="0932b-103"><a name="MOD_97">MOD_97, funkcja ER</a></span><span class="sxs-lookup"><span data-stu-id="0932b-103"><a name="MOD_97">MOD_97 ER function</a></span></span>
+# <a name="mod_97-er-function"></a><span data-ttu-id="651a9-103">MOD_97, funkcja ER</span><span class="sxs-lookup"><span data-stu-id="651a9-103">MOD_97 ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0932b-104">Funkcja `MOD_97` zwraca wartość *Ciąg*, która reprezentuje odwołanie do wierzyciela jako wyrażenie MOD97, na podstawie cyfr określonego numeru faktury.</span><span class="sxs-lookup"><span data-stu-id="0932b-104">The `MOD_97` function returns a *String* value that represents a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.</span></span>
+<span data-ttu-id="651a9-104">Funkcja `MOD_97` zwraca wartość *Ciąg*, która reprezentuje odwołanie do wierzyciela jako wyrażenie MOD97, na podstawie cyfr określonego numeru faktury.</span><span class="sxs-lookup"><span data-stu-id="651a9-104">The `MOD_97` function returns a *String* value that represents a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0932b-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="0932b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="651a9-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="651a9-105">Syntax</span></span>
 
 ```vb
 MOD_97 (invoice number digits)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="0932b-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="0932b-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="651a9-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="651a9-106">Arguments</span></span>
 
-<span data-ttu-id="0932b-107">`invoice number digits`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="0932b-107">`invoice number digits`: *String*</span></span>
+<span data-ttu-id="651a9-107">`invoice number digits`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="651a9-107">`invoice number digits`: *String*</span></span>
 
-<span data-ttu-id="0932b-108">Wartość tekstowa reprezentująca cyfry numeru faktury.</span><span class="sxs-lookup"><span data-stu-id="0932b-108">A text value that represents the digits of an invoice number.</span></span>
+<span data-ttu-id="651a9-108">Wartość tekstowa reprezentująca cyfry numeru faktury.</span><span class="sxs-lookup"><span data-stu-id="651a9-108">A text value that represents the digits of an invoice number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="0932b-109">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="0932b-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="651a9-109">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="651a9-109">Return values</span></span>
 
-<span data-ttu-id="0932b-110">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="0932b-110">*String*</span></span>
+<span data-ttu-id="651a9-110">*Ciąg*</span><span class="sxs-lookup"><span data-stu-id="651a9-110">*String*</span></span>
 
-<span data-ttu-id="0932b-111">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="0932b-111">The resulting text value.</span></span>
+<span data-ttu-id="651a9-111">Wynikowa wartość tekstowa.</span><span class="sxs-lookup"><span data-stu-id="651a9-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0932b-112">Przykład</span><span class="sxs-lookup"><span data-stu-id="0932b-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="651a9-112">Przykład</span><span class="sxs-lookup"><span data-stu-id="651a9-112">Example</span></span>
 
-<span data-ttu-id="0932b-113">Funkcja `MOD_97 ("VEND-200002")` zwraca wartość **"20000285"**.</span><span class="sxs-lookup"><span data-stu-id="0932b-113">`MOD_97 ("VEND-200002")` returns **"20000285"**.</span></span>
+<span data-ttu-id="651a9-113">Funkcja `MOD_97 ("VEND-200002")` zwraca wartość **"20000285"**.</span><span class="sxs-lookup"><span data-stu-id="651a9-113">`MOD_97 ("VEND-200002")` returns **"20000285"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="0932b-114">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="0932b-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="651a9-114">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="651a9-114">Additional resources</span></span>
 
-[<span data-ttu-id="0932b-115">Inne funkcje (specyficzne dla domeny biznesowej)</span><span class="sxs-lookup"><span data-stu-id="0932b-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="651a9-115">Inne funkcje (specyficzne dla domeny biznesowej)</span><span class="sxs-lookup"><span data-stu-id="651a9-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
