@@ -3,7 +3,7 @@ title: Aktualizowanie procesu
 description: Microsoft Dynamics 365 Human Resources to rozwiązanie typu oprogramowanie jako usługa (SaaS), które zapewnia ciągłe aktualizacje dla zmian w aplikacji i platformie.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 006f3c7218436c1c70e29e51f8b1b784ae36b2dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: be9be5509f933ecbda5bf6d040027a7bac8b666d
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431183"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759966"
 ---
 # <a name="update-process"></a>Aktualizowanie procesu
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 Human Resources to rozwiązanie typu oprogramowanie jako 
 
 Aktualizacje są publikowane regularnie dla wszystkich środowisk. Program Human Resources jest wspierany zgodnie z [zasadami cyklu życia pomocy technicznej Microsoft](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy), które określają spójny i przewidywalny harmonogram dostępności wsparcia technicznego.
 
-## <a name="release-cadence"></a>Częstotliwość wydań
+## <a name="release-cadence"></a>Częstotliwość wydań 
 
 Aktualizacje modułu Human Resources są stosowane do wszystkich środowisk automatycznie. Dla modułu Human Resources są publikowane dwa typy wydań:
 
@@ -56,14 +56,12 @@ Wersje są przeglądane, testowane i weryfikowane w środowisku wewnętrznym. Za
 
 ## <a name="release-cadence-exceptions-in-2020"></a>Częstotliwośc wydawania wyjątków w wersji 2020
 
-Następujące daty są wyjątkami od zwykłego harmonogramu wydań:
+Aby uwzględnić dni wolne, harmonogram wydawanych aktualizacji dla listopada i grudnia 2020 roku jest następujący:
 
-| Data | opis |
-| --- | --- |
-| Tydzień rozpoczynający się 23 listopada | Bez aktualizacji |
-| Tydzień rozpoczynający się 14 grudnia | Tylko drobne aktualizacje |
-| Tydzień rozpoczynający się 21 grudnia | Bez aktualizacji |
-| Tydzień rozpoczynający się 28 grudnia | Bez aktualizacji |
+- Wersja listopadowa: 2 listopada – 13 listopada
+- Wersja grudniowa: 30 listopada – 11 grudnia
+ 
+Dwutygodniowe odstępy pomiędzy wersjami zaczną zwnou obowiązywać od 11 stycznia 2021 roku.
 
 ## <a name="communications"></a>Komunikacja
 

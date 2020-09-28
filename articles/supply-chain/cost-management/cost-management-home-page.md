@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dbb9876b5df3309d280f242a9fce8f79f12afeb
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9caea2d41e6d3ba74e4d156d8aeae6c4693ce7e2
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214763"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813865"
 ---
 # <a name="cost-management-home-page"></a>Zarządzanie kosztami — strona główna
 
@@ -56,7 +56,7 @@ Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadma
 
 #### <a name="white-paper"></a>Oficjalny dokument
 
-W artykule [Obliczenia BOM za pomocą arkusza wyceny](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) opisano, jak skonfigurować arkusz wyceny obejmujący materiały i wytwarzanie oraz jak ta konfiguracja wpływa na wyniki obliczania BOM. Aby lepiej wyjaśnić zagadnienia, zawiera konkretne scenariusze i dane, które ilustrują efekt działania różnych ustawień i konfiguracji.
+W artykule [Obliczenia BOM za pomocą arkusza wyceny](https://www.microsoft.com/download/details.aspx?id=101937) opisano, jak skonfigurować arkusz wyceny obejmujący materiały i wytwarzanie oraz jak ta konfiguracja wpływa na wyniki obliczania BOM. Aby lepiej wyjaśnić zagadnienia, zawiera konkretne scenariusze i dane, które ilustrują efekt działania różnych ustawień i konfiguracji.
 
 #### <a name="blogs"></a>Blogi
 

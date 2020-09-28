@@ -14,13 +14,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-03-21
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 1c990911489fa6d73624a91e7d6580e29ddfc419
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.dyn365.ops.version: Release 10.0.10
+ms.openlocfilehash: 0716d662e0740c4b32313e4905e0e6bb42755e6b
+ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597439"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "3763366"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
 
@@ -474,6 +474,6 @@ W tym scenariuszu pracownik otrzymujący zarejestruje przychodzące ilości prze
 
     - **Ładunek** — wprowadź drugi wcześniej utworzony identyfikator ładunku.
     - **Pozycja** — wpowadź _A0001_, czyli towar, który jest oczekiwany dla tego ładunku.
-    - **Ilość** — wprowadź wartość _7_, która jest pozostałą ilością, jaką dostawca ma do dostarczenia jako część całkowitej ilości zamówienia zakupu równą 12 (gdzie 10 jest oryginalną ilością zamówienia), a wartość 2 to dozwolona ilość nadwyżki w dostawie równa 20%). Należy pamiętać, że 5 sztuk już zarejestrowano w pierwszym ładunku.
+    - **Ilość** — wprowadź wartość _7_, która jest pozostałą ilością, jaką dostawca ma do dostarczenia jako część całkowitej ilości zamówienia zakupu równą 12 (gdzie 10 jest oryginalną ilością zamówienia, a wartość 2 to dozwolona ilość nadwyżki w dostawie równa 20%). Należy pamiętać, że 5 sztuk już zarejestrowano w pierwszym ładunku.
 
 Drugi ładunek został zaktualizoway z ilością 7 i może być odbiorem produktu — aktualizowanym na podstawie tej ilości.

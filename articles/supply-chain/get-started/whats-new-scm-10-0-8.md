@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 7dfa6353653c41330dba179331ccbd2373aef774
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 756924c87ced7cd2d5fc4e7c2a01b571558d3550
+ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651964"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3801465"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.8 (luty 2020 r.)
 
@@ -41,10 +41,10 @@ To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z 
 - [Dodatkowa strefa lokalizacji](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
 - [Zarządzanie składnikami majątku](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Aby uzyskać więcej informacji, zapoznaj się z tematem [Zarządzanie składnikami majątku — omówienie](../asset-management/index.md).
 - [Anuluj pracę](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Aby uzyskać więcej informacji, zobacz [Anulowanie pracy magazynu w celu obsługi wyjątków](../warehousing/cancel-warehouse-work.md).
-- [Zmień pulę pracy w pracy](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
-- [Stanowisko w grupie pełne](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)
-- [Potwierdź i przenieś](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)
-- [Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)
+- [Zmień pulę pracy w pracy](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - Aby uzyskać więcej informacji, przejdź do opcji [Zmień pulę prac w pracy](../warehousing/change-work-pool-on-work.md).
+- [Stanowisko w grupie pełne](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full) - Aby uzyskać więcej informacji, zajrzyj do tematu [Stanowisko w grupie pełne](../warehousing/cluster-position-full.md).
+- [Potwierdź i przenieś](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - Aby uzyskać więcej informacji, Sprawdź temat [Potwierdź i przenieś](../warehousing/confirm-and-transfer.md).
+- [Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - Aby uzyskać więcej informacji, przejrzyj sekcję [Dyrektywa lokalizacji dotycząca wiekowania pobrania zapasów](../warehousing/location-directive-inventory-picking-aging.md).
 - [Stan lokalizacji](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
 - [Grupowanie wierszy pobrania](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - Aby uzyskać więcej informacji, zobacz [Grupowanie wierszy pobrania](../warehousing/pick-line-grouping.md).
 - [Automatyczna aktualizacja wysyłki](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - Aby uzyskać więcej informacji, zajrzyj do [Automatyczna aktualizacja wysyłki](../warehousing/auto-update-shipment.md).
@@ -54,9 +54,9 @@ To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z 
 - [Weryfikacja zadania aplikacji magazynowej za pomocą narzędzia RSAT](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
 - [Reguła zwalniania do magazynu](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
 - [Wizualizacja stanu grupy czynności](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
-- [Grupowanie szablonów grup czynności](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)
-- [Szczegóły wiersza pracy](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Aby uzyskać więcej informacji, zobacz wideo [Szczegóły wiersza pracy](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
-- [Uzupełnianie zapasów na podstawie progu w strefie](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)
+- [Grupowanie szablonów grup czynności](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - Aby uzyskać więcej informacji, zobacz temat [grupowanie szablonów grup czynności](../warehousing/wave-template-grouping.md).
+- [Szczegóły wiersza pracy](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Aby uzyskać więcej informacji, zobacz temat [Szczegóły wiersza pracy](../warehousing/work-line-details.md) oraz [Szczegóły wiersza pracy](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
+- [Uzupełnianie zapasów na podstawie progu w strefie](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - Aby uzyskać więcej informacji, zajrzyj do [uzupełnienia progów stref](../warehousing/zone-threshold-replenishment.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

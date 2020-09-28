@@ -4,7 +4,7 @@
       items:
         - name: Dynamics 365 Commerce — strona główna
           href: index.md
-        - name: Wprowadzenie
+        - name: Rozpocznij
           items:
             - name: Zanim kupisz
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
@@ -90,8 +90,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Nowości i zmiany w rozwiązaniu Commerce
                   items:
-                    - name: Nowości i zmiany w rozwiązaniu Commerce – strona główna
+                    - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Commerce 10.0.14 (listopad 2020)
+                      href: get-started/whats-new-commerce-10-0-14.md
                     - name: Rozwiązanie Commerce w wersji 10.0.13 (październik 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Rozwiązanie Commerce w wersji 10.0.12 (sierpień 2020)
@@ -242,7 +244,7 @@
                   href: retail-hardware-station-configuration-installation.md
                 - name: Masowe wdrażanie składników samoobsługi
                   href: dev-itpro/retail-mass-deployment.md
-                - name: Zdarzenia składników rozwiązania Retail używane na potrzeby diagnostyki i rozwiązywania problemów
+                - name: Zdarzenia składników rozwiązania Commerce używane na potrzeby diagnostyki i rozwiązywania problemów
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Stosowanie wdrażalnego pakietu
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
@@ -526,6 +528,8 @@
                       href: omni-channel-payments.md
                     - name: Płatności zamówień wielokanałowych rozwiązania Commerce
                       href: dev-itpro/commerce-payments.md
+                    - name: Przetwarzanie kart kredytowych bez stacji sprzętowej
+                      href: dev-itpro/cnp-pos.md
                     - name: Płatności — często zadawane pytania
                       href: dev-itpro/payments-retail.md
                 - name: Zarządzanie Mapami Bing dla swojej organizacji
@@ -700,7 +704,7 @@
           items:
             - name: Zamówienia odbiorcy
               items:
-                - name: Zamówienia odbiorców w aplikacji MPOS
+                - name: Zamówienia odbiorców w punkcie sprzedaży (POS)
                   href: customer-orders-overview.md
                 - name: Hybrydowe zamówienia odbiorców
                   href: hybrid-customer-orders.md
@@ -826,6 +830,8 @@
                   href: custom-pages-user-logins.md
                 - name: Konfigurowanie wielu dzierżawców B2C w środowisku Commerce
                   href: configure-multi-B2C-tenants.md
+                - name: Domeny w rozwiązaniu Dynamics 365 Commerce
+                  href: domains-commerce.md
                 - name: Dodawanie obsługi dla sieci dostarczania zawartości (CDN)
                   href: add-cdn-support.md
                 - name: Włączanie wykrywania sklepu na podstawie lokalizacji
@@ -990,6 +996,8 @@
                       href: media-gallery-module.md
                     - name: Moduły ocen i recenzji
                       href: ratings-reviews-modules.md
+                    - name: Moduł udostępniania społeczności
+                      href: social-share-module.md
                 - name: Moduły zakupu
                   items:
                     - name: Moduł koszyka
@@ -1026,7 +1034,13 @@
                   items:
                     - name: Moduł szlaków nawigacyjnych
                       href: add-breadcrumb.md
-            - name: Wyszukaj
+                    - name: Moduł menu nawigacji
+                      href: nav-menu-module.md
+                - name: Moduły zgodności
+                  items:
+                    - name: Moduł zgody na pliki cookie
+                      href: cookie-consent-module.md
+            - name: Wyszukiwanie
               items:
                 - name: Omówienie domyślnej strony docelowej kategorii i strony wyników wyszukiwania
                   href: category-search-page-overview.md
@@ -1644,17 +1658,17 @@
               items:
                 - name: Używanie źródeł danych SPRZĘŻENIE do pobierania danych z wielu tabel aplikacji
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurowanie mapowań modelu ER w zależności od kraju
+                - name: Konfigurowanie mapowań modelu raportowania elektronicznego w zależności od kraju
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfiguracja formatów ER do używania parametrów określonych dla firmy
+                - name: Konfiguracja formatów raportowania elektronicznego do używania parametrów określonych dla firmy
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfiguracja parametrów formatu ER dla firmy
+                - name: Konfiguracja parametrów formatu raportowania elektronicznego dla firmy
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
-                - name: Odraczanie wykonania elementów formatu ER
+                - name: Odraczanie wykonania elementów formatu raportowania elektronicznego
                   items:
-                    - name: Odraczanie wykonania elementu sekwencji
+                    - name: Odłóż wykonanie elementów sekwencji w formatach raportowania elektronicznego
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-                    - name: Odraczanie wykonania elementu XML
+                    - name: Odłóż wykonanie elementów XML w formatach raportowania elektronicznego
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
             - name: Używanie rozwiązań modułu Raportowanie elektroniczne w aplikacji Finance and Operations
               items:
@@ -1686,7 +1700,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurowanie miejsc docelowych
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/commerce/toc.json
-                - name: Ustawianie odwołania do formatu ER
+                - name: Ustawianie odwołania do formatu raportowania elektronicznego
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/commerce/toc.json
                 - name: Automatyczne sprawdzanie poprawności wygenerowanych raportów
                   items:
@@ -1922,7 +1936,7 @@
               items:
                 - name: Omówienie rozszerzania kanału online
                   href: e-commerce-extensibility/overview.md
-                - name: Wprowadzenie
+                - name: Rozpocznij
                   items:
                     - name: Wymagania systemowe
                       href: e-commerce-extensibility/system-requirements.md

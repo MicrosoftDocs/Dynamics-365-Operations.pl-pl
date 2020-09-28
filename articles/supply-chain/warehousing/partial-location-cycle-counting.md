@@ -3,7 +3,7 @@ title: Częściowa inwentaryzacja ciągła w lokalizacji
 description: Plany inwentaryzacji ciągłej decydują o faktycznym przebiegu operacji inwentaryzacji. Można poprosić, aby były inwentaryzowane tylko określone produkty i warianty produktu, a nie wszystkie zapasy dostępne w lokalizacji.
 author: perlynne
 manager: tfehr
-ms.date: 11/02/2017
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f07c7754dbe36334e8972d49edf9fb84a78f5d0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 46365f618b13c2bcaef9a45d2a835fda27019857
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215684"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760014"
 ---
 # <a name="partial-location-cycle-counting"></a>Częściowa inwentaryzacja ciągła w lokalizacji
 
@@ -45,7 +45,7 @@ Jeśli skojarzysz plany inwentaryzacji ciągłej z szablonami pracy za pomocą o
 
 Aby można było wykonywać pracę częściowej inwentaryzacji ciągłej, należy co najmniej zaznaczyć w menu urządzenia komórkowego opcję **Wyświetl kod pozycji** w konfiguracji inwentaryzacji ciągłej. Operator magazynu będzie musiał rejestrować tylko dane inwentaryzacji powiązane z wierszami inwentaryzacji (numerami towarów i wymiarami produktów). W tym procesie inwentaryzacji wszystkie pozostałe dostępne zapasy będą ignorowane. 
 
-W procesie częściowej inwentaryzacji ciągłej pole daty/godziny **Ostatnie obliczenie cyklu** nie będzie aktualizowane dla lokalizacji.
+W procesie częściowej inwentaryzacji ciągłej pole daty/godziny **Ostatnie obliczenie cyklu** nie będzie aktualizowane dla lokalizacji, mimo że wszystkie dostępne towary w danej lokalizacji są zliczane. W procesie częściowej inwentaryzacji nie są brane pod uwagę parametry **Dni pomiędzy zliczaniem cyklicznym** na stronie **Plany inwentaryzacji**. W procesie częściowej inwentaryzacji nie obsługuje się jednoczesnego zliczania wielu towarów w tej samej lokalizacji. Funkcja inwentaryzacji ciągłej może spowodować, że ta sama lokalizacja będzie wielokrotnie liczona dla towaru po uruchomieniu **Przetwarzania planu inwentaryzacji ciągłej**. Aby uniknąć takiego zachowania, należy określić filtry w polu **Wybierz lokalizacje**.
 
 ## <a name="example"></a>Przykład
 W tym przykładzie musi być inwentaryzowany tylko towar o numerze A0001 w magazynie 61.

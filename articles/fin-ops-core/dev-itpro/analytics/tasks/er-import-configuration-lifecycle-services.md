@@ -1,14 +1,14 @@
 ---
-title: ER Importowanie konfiguracji z usługi Lifecycle Services
-description: W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może zaimportować nową wersję konfiguracji raportowania elektronicznego (ER) z usługi Microsoft Lifecycle Services (LCS).
+title: Importowanie konfiguracji z usługi Lifecycle Services
+description: Ten temat wyjaśnia, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może zaimportować nową wersję konfiguracji raportowania elektronicznego (ER) z usługi Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable,  ERSolutionRepositoryTable, ERSolutionImport
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -16,57 +16,91 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e09e3187ac49e12727116f55066b64a386e2de
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 59dbbf820f7a3de1e5fb31f781943320b8b1a60a
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142393"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810650"
 ---
-# <a name="er-import-a-configuration-from-lifecycle-services"></a>ER Importowanie konfiguracji z usługi Lifecycle Services
+# <a name="import-a-configuration-from-lifecycle-services"></a>Importowanie konfiguracji z usługi Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może zaimportować nową wersję konfiguracji raportowania elektronicznego (ER) z usługi Microsoft Lifecycle Services (LCS).
+Ten temat wyjaśnia, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może zaimportować nową wersję konfiguracji [raportowania elektronicznego (ER)](../general-electronic-reporting.md#Configuration) z [biblioteki zasobów na poziomie projektu](../../lifecycle-services/asset-library.md) w Microsoft Dynamics Lifecycle Services (LCS).
 
-W tym przykładzie wybierzesz żądaną wersję konfiguracji raportowania elektronicznego dla przykładowej firmy Litware, Inc. i zaimportujesz ją. Podane kroki można wykonać w dowolnej firmie, ponieważ konfiguracje ER są współużytkowane przez wszystkie firmy. Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Przekazywanie konfiguracji ER do usługi Lifecycle Services”. W celu wykonania tych kroków jest również wymagany dostęp do usługi LCS.
+W tym przykładzie wybierzesz żądaną wersję konfiguracji raportowania elektronicznego dla przykładowej firmy Litware, Inc. i zaimportujesz ją. Podane kroki można wykonać dla dowolnej firmy, ponieważ konfiguracje ER są współużytkowane przez wszystkie firmy. Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze [Przekazywanie konfiguracji ER do usługi Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). Wymagany jest również dostęp do usługi LCS.
 
-1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
-2. Kliknij opcję Konfiguracje.
+1. Zaloguj się do aplikacji przy użyciu jednej z następujących ról:
 
-## <a name="delete-a-shared-version-of-data-model-configuration"></a>Usuwanie udostępnionej wersji konfiguracji modelu danych
-1. W drzewie zaznacz element „Konfiguracja przykładowego modelu”.
-    * Pierwsza wersja konfiguracji przykładowego modelu danych została utworzona i opublikowana w usłudze LCS podczas procedury „Przekazywanie konfiguracji ER do usługi Lifecycle Services”. W tej procedurze usuniesz tę wersję konfiguracji raportowania elektronicznego. Ta wersja konfiguracji przykładowego modelu danych zostanie zaimportowana później z usługi LCS.  
+    - Deweloper raportowania elektronicznego
+    - Administrator systemu
+
+2. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
+3. Wybierz **Konfiguracje**.
+
+<a name="accessconditions"></a>
+> [!NOTE]
+> Upewnij się, że bieżący użytkownik Dynamics 365 Finance jest członkiem projektu usługi LCS zawierającego [dostęp](../../lifecycle-services/asset-library.md#asset-library-support) do biblioteki elementów zawartości, do której użytkownik chce uzyskać dostęp na potrzeby importowania konfiguracji ER.
+>
+> Nie można uzyskać dostępu do projektu LCS z poziomu repozytorium ER, które reprezentuje domenę inną niż domena używana w Finance. Jeśli zostanie podjęta taka próba, zostanie wyświetlona pusta lista projektów LCS i nie będzie można importować konfiguracji ER z biblioteki elementów zawartości na poziomie projektu w usłudze LCS. Aby uzyskać dostęp do bibliotek elementów zawartości na poziomie projektu z repozytorium ER używanego do importowania konfiguracji ER, należy zalogować się do Finance przy użyciu poświadczeń użytkownika, który należy do dzierżawy (domeny), dla którego została zainicjowana bieżąca instancja Finance.
+
+## <a name="delete-a-shared-version-of-a-data-model-configuration"></a>Usuwanie udostępnionej wersji konfiguracji modelu danych
+
+1. Na stronie **Konfiguracje** w drzewie konfiguracji wybierz pozycję **Przykładowy model konfiguracji**.
+
+    Utworzona pierwsza wersja konfiguracji przykładowego modelu danych została utworzona i opublikowana w usłudze LCS podczas procedury [Przekazywanie konfiguracji ER do usługi Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). W tej procedurze usuniesz tę wersję konfiguracji raportowania elektronicznego. Następnie ta wersja zostanie zaimportowana z usługi LCS w dalszej części tego tematu.
+
 2. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Zaznacz wersję tej konfiguracji mającą stan „Udostępniono”. Ten stan wskazuje, że konfiguracja została opublikowana w usłudze LCS.  
-3. Kliknij przycisk Zmień stan.
-4. Kliknij opcję Nie kontynuuj.
-    * Zmień stan wybranej wersji z „Udostępniono” na „Wycofano”, aby ją udostępnić do usunięcia.  
-5. Kliknij przycisk OK.
+
+    W tym przykładzie zaznacz wersję tej konfiguracji mającą stan **Udostępniono**. Ten stan wskazuje, że konfiguracja została opublikowana w usłudze LCS.
+
+3. Wybierz opcję **Zmień stan**.
+4. Kliknij przycisk **Wycofaj**.
+
+    Zmieniając stan wybranej wersji z **Udostępniono** na **Wycofano**, wersja staje się możliwa usunięcia.
+
+5. Kliknij przycisk **OK**.
 6. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Zaznacz wersję tej konfiguracji mającą stan „Wycofano”.  
-7. Kliknij przycisk Usuń.
-8. Kliknij przycisk Tak.
-    * Należy zauważyć, że jest dostępna tylko wersja robocza 2 wybranej konfiguracji przykładowego modelu danych.  
+
+    W tym przykładzie zaznacz wersję tej konfiguracji mającą stan **Wycofano**.
+
+7. Wybierz opcję **Usuń**.
+8. Wybierz opcję **Tak**.
+
+    Należy zauważyć, że teraz jest dostępna tylko wersja robocza 2 wybranej konfiguracji przykładowego modelu danych.
+
 9. Zamknij stronę.
 
-## <a name="import-a-shared-version-of-data-model-configuration-from-lcs"></a>Importowanie udostępnionej wersji konfiguracji modelu danych z usługi LCS
-1. Na liście oznacz wybrany wiersz.
-    * Otwórz listę repozytoriów dostawcy konfiguracji dla firmy „Litware, Inc.” firmy Litware, Inc.  
-2. Kliknij Repozytoria.
-3. Kliknij przycisk Otwórz.
-    * Zaznacz repozytorium usługi LCS i je otwórz.  
-4. Na liście oznacz wybrany wiersz.
-    * Na liście wersji zaznacz pierwszą wersję konfiguracji przykładowego modelu.  
-5. Kliknij przycisk Importuj.
-6. Kliknij przycisk Tak.
-    * Potwierdź import wybranej wersji z usługi LCS.  
-    * Należy zauważyć, że komunikat informacyjny (nad formularzem) potwierdza pomyślne ukończenia importu wybranej wersji.  
-7. Zamknij stronę.
-8. Zamknij stronę.
-9. Kliknij opcję Konfiguracje.
-10. W drzewie zaznacz element „Konfiguracja przykładowego modelu”.
-11. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Zaznacz wersję tej konfiguracji mającą stan „Udostępniono”.  
-    * Należy zauważyć, że teraz jest również dostępna udostępniona wersja 1 wybranej konfiguracji przykładowego modelu danych.  
+## <a name="import-a-shared-version-of-a-data-model-configuration-from-lcs"></a>Importowanie udostępnionej wersji konfiguracji modelu danych z usługi LCS
 
+1. Wybierz kolejno opcje **Administrowanie organizacją \> Obszary robocze \> Raportowanie elektroniczne**.
+
+2. W obszarze **Dostawcy konfiguracji** wybierz kafelek **Litware, Inc.**.
+
+3. Na kafelku **Litware, Inc.** wybierz **Repozytoria**.
+
+    Teraz można otworzyć listę repozytoriów dostawcy konfiguracji firmy Litware, Inc.
+
+4. Kliknij przycisk **Otwórz**.
+
+    W tym przykładzie wybierz rekord repozytorium **LCS** i otwórz je. Musisz mieć [dostęp](#accessconditions) do projektu usługi LCS i do biblioteki elementów zawartości, do której ma dostęp wybrane repozytorium ER.
+
+5. Na liście oznacz wybrany wiersz.
+
+    Na potrzeby tego przykładu, na liście wersji zaznacz pierwszą wersję **konfiguracji przykładowego modelu**.
+
+6. Wybierz opcję **Importuj**.
+7. Potwierdź import wybranej wersji z usługi LCS klikając **Tak**.
+
+    Komunikat informacyjny potwierdza, że wybrana wersja została pomyślnie zaimportowana.
+
+8. Zamknij stronę.
+9. Zamknij stronę.
+10. Wybierz **Konfiguracje**.
+11. W drzewie zaznacz element **Konfiguracja przykładowego modelu**.
+12. Na liście znajdź i zaznacz odpowiedni rekord.
+
+    W tym przykładzie zaznacz wersję tej konfiguracji mającą stan **Udostępniono**.
+
+    Należy zauważyć, że teraz jest również dostępna udostępniona wersja 1 wybranej konfiguracji przykładowego modelu danych.

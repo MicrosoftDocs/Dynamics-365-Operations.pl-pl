@@ -3,7 +3,7 @@ title: Opłata zwrotna VAT
 description: W tym temacie opisano, jak skonfigurować odwrócony podatek od towarów i usług (VAT) dla krajów europejskich i Arabii Saudyjskiej i Singapurze.
 author: epodkolz
 manager: AnnBe
-ms.date: 07/16/2019
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,24 +11,25 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 530ff52abb1dd36c473ae436d61ea925c5696a30
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a58ae689a6185316854bf8f01d1237a487d3981
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183837"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760237"
 ---
 # <a name="reverse-charge-vat"></a>Opłata zwrotna VAT
 
-
 [!include [banner](../includes/banner.md)]
 
+W tym temacie opisano standardową metodę konfigurowania odwróconego podatku od towarów i usług (VAT) dla krajów europejskich i krajów GCC oraz Singapuru.
 
-W tym temacie opisano standardową metodę konfigurowania odwróconego podatku od towarów i usług (VAT) dla Arabii Saudyjskiej, Singapuru i krajów europejskich.
+> [!NOTE]                                                                                  
+> W przypadku Bahrajnu, Kuwejtu, Omanu i Kataru uruchomiona powinna być funkcja **Opłata zwrotna dla dodatkowych krajów** w obszarze **Zarządzanie funkcjami**. 
 
 Podatek odwrócony to schemat podatkowy, w którym odpowiedzialność za rozliczenie i sprawozdawczość podatku VAT jest przenoszona ze sprzedawcy na nabywcę towarów i/lub usług. W związku z tym odbiorcy towarów i/lub usług raportują w swoich deklaracjach VAT zarówno należny podatek VAT (w roli sprzedawcy), jak i naliczony podatek VAT (w roli nabywcy).
 
@@ -85,7 +86,7 @@ Na stronie **Grupy towarów sprzedawanych z opłatą zwrotną** (**Podatek** &gt
 Na stronie **Reguły opłaty zwrotnej** (**Podatek** &gt; **Ustawienia** &gt; **Podatek** &gt; **Reguły opłaty zwrotnej**) można zdefiniować reguły stosowania do transakcji zakupu i sprzedaży. Można skonfigurować cały zbiór reguł stosowania podatku odwróconego. Dla każdej reguły ustaw następujące pola:
 
 - **Typ dokumentu** — Zaznacz opcję **Zamówienie zakupu**, **Arkusz faktur od dostawców**, **Zamówienie sprzedaży**, **Faktura niezależna**, **Arkusz faktur dla odbiorcy** i/lub **Faktura dostawcy**.
-- **Typ kraju/regionu partnera** — Zaznacz opcję **Krajowe**, **UE** lub **Zagraniczny**. Alternatywnie jeśli regułę można zastosować do wszystkich partnerów handlowych, niezależnie od kraju lub regionu w adresie, zaznacz opcję **Wszystko**.
+- **Typ kraju/regionu partnera** — Zaznacz opcję **Krajowe**, **UE**, **GCC** lub **Zagraniczny**. Alternatywnie jeśli regułę można zastosować do wszystkich partnerów handlowych, niezależnie od kraju lub regionu w adresie, zaznacz opcję **Wszystko**.
 - **Krajowy adres dostawy** — Zaznaczenie tego pola wyboru spowoduje stosowanie reguły do dostaw w tym samym kraju lub regionie. Tego pola wyboru nie można zaznaczyć dla typów dokumentów **Arkusz faktur od dostawców** i **Arkusz faktur dla odbiorcy**.
 - **Grupa pozycji sprzedawanych z opłatą zwrotną** — Zaznacz grupę, do której można stosować regułę.
 - **Kwota progowa** — Schemat podatku odwróconego jest stosowany do faktury tylko wtedy, gdy wartość towarów i/lub usług należących do grupy towarów objętych podatkiem odwróconym przekracza limit określony w tym miejscu.
@@ -98,13 +99,16 @@ Ponadto można określić, czy po spełnieniu warunku dla tego wiersza dokumentu
 - **Monituj** — Jest wyświetlane powiadomienie potwierdzające, że można zastosować podatek odwrócony.
 - **Ustaw** — Wiersz dokumentu jest aktualizowany bez dodatkowego powiadamiania.
 
+## <a name="set-up-countryregion-properties"></a>Ustawianie właściwości kraju/regionu
+Na stronie **Parametry handlu zagranicznego** (**Podatek** &gt; **Konfiguracja** &gt; **Podatek od sprzedaży** &gt; **Handel zagraniczny** &gt; **Parametry handlu zagranicznego**) na karcie **Właściwości kraju/regionu** ustaw kraj/region bieżącej osoby prawnej na wartość *Krajowa*. Ustawianie **kraju/regionu** w UE, dla kraju/regionu UE który uczestniczy w handlu wewnątrz UE z aktualną firmą, jako *UE*. Ustawianie **kraju/regionu** w GCC, dla kraju/regionu GCC który uczestniczy w handlu wewnątrz UE z aktualną firmą, jako *GCC*.
+
 ## <a name="set-up-default-parameters"></a>Konfigurowanie parametrów domyślnych
 Aby włączyć funkcję opłaty zwrotnej VAT, na stronie **Parametry księgi głównej** na karcie **Opłata zwrotna** w opcji **Włącz opłatę zwrotną** zaznacz wartość **Tak**. W polach **Grupa podatków dla zamówienia zakupu** i **Grupa podatków dla zamówienia sprzedaży** zaznacz domyślne grupy podatków. Jeśli jest spełniony warunek zastosowania podatku odwróconego, wiersz zamówienia zakupu lub sprzedaży jest aktualizowany o te grupy podatków.
 
 ## <a name="reverse-charge-on-a-sales-invoice"></a>Podatek odwrócony w fakturze sprzedaży
 W sprzedaży objętej schematem podatku odwróconego sprzedawca nie nalicza podatku VAT. Zamiast tego faktura wskazuje towary podlegające odwróconemu podatkowi VAT i sumę podatku VAT w odwróceniu.
 
-Podczas księgowania faktury sprzedaży zawierającej podatek odwrócony transakcje podatkowe mają kierunek podatku **Podatek należny** i zerową wartość podatku, a pole wyboru **Opłata zwrotna** jest zaznaczone.
+Podczas księgowania faktury sprzedaży zawierającej podatek odwrócony transakcje podatkowe mają kierunek podatku **Podatek należny** i zerową wartość podatku, a pola wyboru **Opłata zwrotna** oraz **Wyłączone** są zaznaczone.
 
 ## <a name="reverse-charge-on-a-purchase-invoice"></a>Podatek odwrócony w fakturze zakupu
 W zakupach w schemacie podatku odwróconego nabywca, który otrzymuje fakturę zawierającą podatek odwrócony, na potrzeby księgowania podatku VAT występuje jako nabywca i sprzedawca.

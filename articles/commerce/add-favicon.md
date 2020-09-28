@@ -3,7 +3,7 @@ title: Dodawanie ikony favicon
 description: W tym temacie opisano sposób dodawania ikony favicon do witryny.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/27/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686797"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761160"
 ---
 # <a name="add-a-favicon"></a>Dodawanie ikony favicon
 
@@ -58,30 +58,30 @@ Aby utworzyć kod HTML dla pliku favicon, należy skorzystać z poniższego cią
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Tworzenie fragmentu strony zawierającego metatag dla ikony favicon
+## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a>Tworzenie fragmentu zawierającego metatag dla ikony favicon
 
-Aby utworzyć fragment strony zawierający metatag dla ikony favicon, wykonaj poniższe kroki.
+Aby utworzyć fragment zawierający metatag dla ikony favicon, wykonaj poniższe kroki.
 
 1. Przejdź do obszaru **Fragmenty**, a następnie wybierz pozycję **Nowy**.
-1. W oknie dialogowym **Nowy fragment strony** wybierz pozycję **Tagi meta** jako moduł, na którym oparty jest fragment strony.
-1. Wprowadź nazwę fragmentu strony, a następnie kliknij przycisk **OK**.
+1. W oknie dialogowym **Nowy fragment** wybierz pozycję **Tagi meta** jako moduł, na którym oparty jest fragment strony.
+1. Wprowadź nazwę fragmentu, a następnie kliknij przycisk **OK**.
 1. W drzewie hierarchii fragmentów wybierz element podrzędny **Domyślne tagi meta**.
 1. W prawym okienku, w obszarze **Tagi meta**, wybierz pozycję **Dodaj**, a następnie wprowadź ciąg HTML utworzony wcześniej dla ikony favicon. 
-1. Wybierz pozycję **Zakończ edycję**, a następnie wybierz pozycję **Publikuj**, aby opublikować fragment strony.
+1. Wybierz pozycję **Zakończ edycję**, a następnie wybierz pozycję **Publikuj**, aby opublikować fragment.
 
-## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>Dodawanie fragmentu strony tagów meta do sekcji nagłówka kodu HTML stron
+## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Dodawanie fragmentu metatagów do sekcji nagłówka kodu HTML stron
 
-Aby dodać fragment strony tagów meta do sekcji nagłówka (**head**) kodu HTML stron, wykonaj następujące kroki.
+Aby dodać fragment metatagów do sekcji **nagłówka** kodu HTML stron, wykonaj następujące kroki.
 
 1. Przejdź do obszaru **Szablony**, otwórz szablon stron, do których chcesz dodać ikonę favicon, a następnie wybierz pozycję **Edytuj**.
-1. W drzewie hierarchii szablonów wybierz przycisk wielokropka (**...**) znajdujący się po prawej stronie kontenera **HTML head**, a następnie wybierz pozycję **Dodaj fragment strony**.
-1. W oknie dialogowym **Wybieranie fragmentu strony** wybierz utworzony wcześniej fragment strony tagów meta, a następnie kliknij przycisk **OK**.
+1. W drzewie hierarchii szablonów wybierz przycisk wielokropka (**...**) znajdujący się po prawej stronie kontenera **nagłówek HTML**, a następnie wybierz pozycję **Dodaj fragment**.
+1. W oknie dialogowym **Wybieranie fragmentu** wybierz utworzony wcześniej fragment metatagów, a następnie kliknij przycisk **OK**.
 1. Wybierz pozycję **Zakończ edycję**, a następnie wybierz pozycję **Publikuj**, aby opublikować szablon.
 
 > [!NOTE]
-> Jeśli witryna używa więcej niż jednego szablonu, musisz dodać fragment strony tagów meta do wszystkich tych szablonów.
+> Jeśli witryna używa więcej niż jednego szablonu, musisz dodać fragment metatagów do wszystkich tych szablonów.
 
-Podczas wyświetlania podglądu stron opartych na szablonie, do którego dodano fragment strony tagów meta, ikona favicon powinna być teraz widoczna na karcie przeglądarki.
+Podczas wyświetlania podglądu stron opartych na szablonie, do którego dodano fragment metatagów, ikona favicon powinna być teraz widoczna na karcie przeglądarki.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

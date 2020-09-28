@@ -3,7 +3,7 @@ title: Moduł pola zakupu
 description: W tym temacie opisano moduły pola zakupu i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686677"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761304"
 ---
 # <a name="buy-box-module"></a>Moduł pola zakupu
 
@@ -59,10 +59,13 @@ Motywów można używać do usuwania lub zmieniania kolejności właściwości p
 
 - **Znacznik nagłówka** — ta właściwość definiuje znacznik nagłówka dla produktu. Jeśli pole zakupu znajduje się u góry strony, właściwość ta powinna mieć ustawioną wartość **h1**, aby odpowiadała standardom dostępności. 
 
+- **Włącz zalecenia typu „Kup podobne”** — ta właściwość umożliwia wyświetlenie w polu zakupu łączy do produktów wyglądających podobnie do aktualnie wyświetlanego towaru. Ta funkcja jest dostępna w Commerce w wersji 10.0.13 i nowszej.
+
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduły, których można używać w module pola zakupu
 
 - **Galeria multimediów** — ten moduł służy do prezentowania obrazów produktu na stronie szczegółów produktu. Aby uzyskać więcej informacji dotyczących tego modułu, przejdź do [Modułu galerii multimediów](media-gallery-module.md).
 - **Wybór sklepu** — ten moduł pokazuje listę magazynów pobliskich, w których dany towar jest dostępny do odebrania. Umożliwia użytkownikom wprowadzenie lokalizacji, w której znajdują się bliskie sklepy. Aby uzyskać więcej informacji dotyczących tego modułu, przejdź do [Modułu selektor sklepów](store-selector.md).
+- **Udostępnij na portalach społecznościowych** — ten moduł można dodać do pola zakupu, aby umożliwić użytkownikom udostępnianie informacji o produktach w mediach społecznościowych. Aby uzyskać więcej informacji, zajrzyj do [Moduł udostępniania w mediach społecznościowych](social-share-module.md).
 
 ## <a name="buy-box-module-settings"></a>Ustawienia modułu pola zakupu
 
@@ -85,8 +88,8 @@ Moduł kupna pobiera informacje o produkcie za pomocą interfejsów programistyc
 Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
 1. Przejdź do **Fragmenty**, a następnie wybierz opcję **Nowy**, aby stworzyć nowy fragment.
-1. W oknie dialogowym **Nowy fragment strony** wybierz moduł **Pole zakupu**.
-1. W obszarze **Nazwa fragmentu strony** wprowadź nazwę **Fragment pola zakupu**, a następnie kliknij przycisk **OK**.
+1. W oknie dialogowym **Nowy fragment** wybierz moduł **Pole zakupu**.
+1. W obszarze **Nazwa fragmentu** wprowadź nazwę **Fragment pola zakupu**, a następnie kliknij przycisk **OK**.
 1. W gnieździe **Galeria multimediów**, w którym znajduje się moduł pola zakupu wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
 1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Galeria multimediów** i wybierz przycisk **OK**.
 1. W gnieździe **Selektor sklepu**, w którym znajduje się moduł pola zakupu wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
@@ -96,13 +99,13 @@ Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości
 1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon PDP**, a następnie wybierz **OK**.
 1. W gnieździe **Treść** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
 1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Strona domyślna** i wybierz przycisk **OK**.
-1. Na domyślnej stronie wybierz gniazdo **Główne**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj fragment strony**.
-1. W oknie dialogowym **Wybieranie fragmentu strony** wybierz utworzony wcześniej fragment **Fragment pola zakupu**, a następnie kliknij **OK**.
+1. Na domyślnej stronie wybierz gniazdo **Główne**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj fragment**.
+1. W oknie dialogowym **Wybieranie fragmentu** wybierz utworzony wcześniej fragment **Fragment pola zakupu**, a następnie kliknij **OK**.
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć nową stronę.
 1. W oknie dialogowym **Wybierz szablon** wybierz szablon **Szablon PDP**. W sekcji **Nazwa strony** przejdź do **Strona PDP**, a następnie wybierz przycisk **OK**.
-1. Na nowej stronie wybierz gniazdo **Główne**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj fragment strony**.
-1. W oknie dialogowym **Wybieranie fragmentu strony** wybierz utworzony wcześniej fragment **Fragment pola zakupu**, a następnie kliknij **OK**.
+1. Na nowej stronie wybierz gniazdo **Główne**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj fragment**.
+1. W oknie dialogowym **Wybieranie fragmentu** wybierz utworzony wcześniej fragment **Fragment pola zakupu**, a następnie kliknij **OK**.
 1. Zapisz i zobacz podgląd strony. Do adresu URL podglądu strony należy dodać parametr dotyczący ciągu kwerendy **?productid=&lt;product id&gt;**. W ten sposób kontekst produktu jest używany do ładowania i renderowania strony podglądu.
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować. Na stronie Szczegóły produktu powinno pojawić się pole zakupu.
 
@@ -118,8 +121,6 @@ Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości
 
 [Moduł koszyka](add-cart-module.md)
 
-[Moduł ikony koszyka](cart-icon-module.md)
-
 [Moduł realizacji transakcji](add-checkout-module.md)
 
 [Moduł potwierdzenia zamówienia](order-confirmation-module.md)
@@ -127,5 +128,7 @@ Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości
 [Moduł nagłówka](author-header-module.md)
 
 [Moduł stopki](author-footer-module.md)
+
+[Moduł udostępnienia w mediach społecznościowych](social-share-module.md)
 
 [Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](calculated-inventory-retail-channels.md)

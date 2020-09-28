@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a23e445fa6a3133c5248aef1e5dc9fdf5aeb162
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209221"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813841"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Zaopatrzenie i sourcing — strona główna
 
@@ -55,7 +55,7 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 -   [Współpraca dostawców z odbiorcami](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md)
 -   [Konfigurowanie i obsługa współpracy z dostawcami](set-up-maintain-vendor-collaboration.md)
--   [Skrypt demonstracji przychodzących zapasów konsygnacyjnych w Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(oficjalny dokument)
+-   [Skrypt demonstracji przychodzących zapasów konsygnacyjnych w Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(oficjalny dokument)
 -   [Monitorowanie zapasów konsygnacyjnych poprzez współpracę z dostawcami](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Współpraca z dostawcami za pomocą portalu dostawców](collaborate-vendors-vendor-portal.md) (tylko wersje systemu Dynamics AX z lutego i maja 2016 roku)
 -   [Zabezpieczenia użytkowników portalu dostawców](configure-security-vendor-portal-users.md) (tylko wersje Finance and Operations z lutego i maja 2016 roku)
@@ -98,7 +98,7 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 -   [Przepływy pracy dla zaopatrzenia i sourcingu](procurement-sourcing-workflows.md)
 -   [Rejestrowanie przyjęcia towarów w zamówieniu zakupu](tasks/record-receipt-goods-purchase-order.md)
 -   [Przepływ pracy zapotrzebowania na zakup](purchase-requisitions-workflow.md)
--   [Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (oficjalny dokument)
+-   [Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup](https://www.microsoft.com/download/details.aspx?id=101821) (oficjalny dokument)
 -   [Omówienie zasad zakupów](purchase-policies.md)
 -   [Tworzenie zasad zakupów](tasks/create-purchasing-policies.md)
 

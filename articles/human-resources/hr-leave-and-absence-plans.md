@@ -3,7 +3,7 @@ title: Tworzenie planu urlopów i nieobecności
 description: W programie Dynamics 365 Human Resources można tworzyć plany różnego rodzaju urlopów.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 75a70c5784e7032cfebbe58c1d173923a3023507
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428716"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796504"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Tworzenie planu urlopów i nieobecności
 
@@ -43,7 +43,15 @@ Można również tworzyć urlopy zależne od stanowiska, na przykład urlopy tyl
 
 2. W obszarze **Szczegóły** wypełnij pola **Nazwa**, **Data rozpoczęcia**, **Opis** i **Typ urlopu** dla swojego planu.
 
-Jeśli funkcja **Konfigurowanie wielu typów urlopu dla jednego planu urlopów i nieobecności** jest włączona, typy urlopów są konfigurowane w **Harmonogram naliczania**, a nie w obszarze **Szczegóły**. Dla każdego rekordu w tabeli harmonogramu naliczania można zdefiniować typ urlopu.
+Jeśli funkcja **Konfigurowanie wielu typów urlopu dla jednego planu urlopów i nieobecności** jest włączona, typy urlopów są konfigurowane w **Harmonogram naliczania**, a nie w obszarze **Szczegóły**. Dla każdego rekordu w tabeli harmonogramu naliczania można zdefiniować typ urlopu. Ponadto, gdy ta funkcja jest włączona, należy skorzystać z nowych jednostek danych dla integracji lub innych scenariuszy, w których trzeba skorzystać z jednostek. 
+
+Nowe jednostki:
+
+- Transakcja banku urlopów i nieobecności wer. 2
+- Rejestracja do urlopów i nieobecności wer. 2
+- Warstwa planu urlopów i nieobecności wer. 2
+- Plan urlopów i nieobecności wer. 2
+- Wniosek urlopowy o czas wolny wersja 2
 
  > [!IMPORTANT]
    > Po włączeniu tej funkcji nie można jej wyłączyć.

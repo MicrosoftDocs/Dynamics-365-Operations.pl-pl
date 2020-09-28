@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6585e44701160bf31c107c07226f992b12cf035e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 207783f5a44d5c6432539ac27a8c491bca811da4
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550655"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760038"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Śledzenie wykonywania formatów ER w celu rozwiązywania problemów z wydajnością
 
@@ -101,7 +101,7 @@ Załóżmy, że rozpoczęto projektowanie nowego rozwiązania ER w celu wygenero
 
 Załóżmy, że zakończono projektowanie pierwszej wersji rozwiązania ER. Chcesz teraz przetestować je w swoim wystąpieniu oraz przeanalizować wydajność wykonywania.
 
-### <a id='import-configuration'></a>Importowanie konfiguracji ER z RCS do Finance and Operations
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importowanie konfiguracji ER z RCS do Finance and Operations
 
 1. Zaloguj się do swojego wystąpienia aplikacji.
 2. W tym samouczku zaimportujesz konfiguracje z wystąpienia RCS (w którym projektujesz składniki ER) do swojego wystąpienia (w którym je testujesz i ostatecznie ich używasz). Upewnij się zatem, że zostały przygotowane wszystkie wymagane artefakty. Szczegółowe instrukcje zawiera procedura [Importowanie konfiguracji raportowania elektronicznego (RE) z usługi Regulatory Configuration Services (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
@@ -146,7 +146,7 @@ Odpowiednie wersje konfiguracji modelu danych i mapowania modelu są automatyczn
 
     ![Okno dialogowe parametry użytkownika](./media/GER-PerfTrace-GER-UserParameters.png)
 
-### <a id='run-format'></a>Uruchamianie formatu ER
+### <a name="run-the-er-format"></a><a id='run-format'></a>Uruchamianie formatu ER
 
 1. Wybierz pole firmę **DEMF**.
 2. Przejdź do opcji **Administrowanie organizacją \> Raporty elektroniczne \> Konfiguracje**.
@@ -157,7 +157,7 @@ Generowany plik zawiera informacje dotyczące 265 transakcji dla sześciu dostaw
 
 ## <a name="review-the-execution-trace"></a>Przeglądanie śladu wykonania
 
-### <a id='export-trace'></a>Eksportowanie wygenerowanego śledzenia z aplikacji
+### <a name="export-the-generated-trace-from-the-application"></a><a id='export-trace'></a>Eksportowanie wygenerowanego śledzenia z aplikacji
 
 Ślady wydajności są odłączane od źródłowego formatu ER i można je serializować w zewnętrznym pliku zip.
 
@@ -176,7 +176,7 @@ Generowany plik zawiera informacje dotyczące 265 transakcji dla sześciu dostaw
 
 Skojarzenie między śladem wydajności, który został wygenerowany dla wykonywanego formatu ER, a mapowaniem modelu ER jest oparte na użytym deskryptorze głównym i wspólnym modelu danych. Numerowanie wersji formatu i mapowania modelu nie jest uwzględniane. Ustawienie opcji **Domyślne mapowanie modelu** mapowania modelu również nie jest uwzględniane.
 
-### <a id='import-trace'></a>Importowanie wygenerowanego śladu do RCS
+### <a name="import-the-generated-trace-into-rcs"></a><a id='import-trace'></a>Importowanie wygenerowanego śladu do RCS
 
 1. W RCS w obszarze roboczym **Raportowanie elektroniczne** wybierz kafelek **Konfiguracje raportowania**.
 2. Na stronie **Konfiguracje** w drzewie konfiguracji rozwiń pozycję **Model śladu wydajności** i wybierz opcję **Format śladu wydajności**.
@@ -201,7 +201,7 @@ Skojarzenie między śladem wydajności, który został wygenerowany dla wykonyw
 
 2. Zamknij stronę **Projektant formatu**.
 
-### <a id='use-trace'></a>Użycie śledzenia wydajności do analizy w RCS — mapowanie modelu
+### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a><a id='use-trace'></a>Użycie śledzenia wydajności do analizy w RCS — mapowanie modelu
 
 1. W RCS na stronie **Konfiguracje** w drzewie konfiguracji wybierz pozycję **Mapowanie śledzenia wydajności**.
 2. W okienku akcji wybierz opcję **Projektant**.
@@ -301,7 +301,7 @@ Powtórz kroki opisane w sekcji [Importowanie konfiguracji ER z RCS do Finance a
 
 Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego tematu, aby wygenerować nowy ślad wydajności.
 
-## <a name="review-the-execution-trace"></a>Przeglądanie śladu wykonania
+## <a name="work-with-the-execution-trace"></a>Pracuj z śladem wykonania
 
 ### <a name="export-the-generated-trace-from-the-application"></a>Eksportowanie wygenerowanego śledzenia z aplikacji
 
@@ -347,7 +347,7 @@ Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego tema
 
 Przeglądarka sieci Web zaproponuje pobranie pliku zip. Ten plik zawiera ślad wydajności w formacie PerfView. Następnie można przeanalizować szczegóły wykonania formatu ER w narzędziu do analizy wydajności PerfView.
 
-![Informacje o śledzeniu dla wykonanego formatu ER w PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Informacje o śledzeniu wydajności w formacie PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Narzędzia zewnętrzne umożliwiają przejrzenie śledzenie wykonywania obejmującego kwerendy bazy danych
 
@@ -363,7 +363,7 @@ Ze względu na udoskonalenia, które zostały wprowadzone w ramach systemu, śle
     - Ustawienie opcji **Zbierz statystyki kwerendy** na wartość **Tak**.
     - Ustawienie opcji wartość **śledzenie kwerendy** na wartość **Tak**.
 
-    ![Okno dialogowe parametry użytkownika](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Sekcja śledzenia wykonania, okno dialogowe Parametry użytkownika](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>Uruchamianie formatu ER
 
@@ -372,3 +372,8 @@ Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego tema
 Przeglądarka sieci Web zaproponuje pobranie pliku zip. Ten plik zawiera ślad wydajności w formacie PerfView. Następnie można przeanalizować szczegóły wykonania formatu ER w narzędziu do analizy wydajności PerfView. Teraz ten ślad zawiera szczegóły dostępu do bazy danych SQL podczas wykonywania formatu ER.
 
 ![Informacje o śledzeniu dla wykonanego formatu ER w PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+- [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
+- [Zwiększ wydajność rozwiązań Raportowania elektronicznego, dodając sparametryzowane źródła danych PÓL OBLICZENIOWYCH](er-calculated-field-ds-performance.md)

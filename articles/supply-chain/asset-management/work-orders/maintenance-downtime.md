@@ -1,6 +1,6 @@
 ---
-title: Przerwa konserwacyjna
-description: W tym temacie opisano przerwy konserwacyjne w module Zarządzanie składnikami majątku.
+title: Przerwa konserwacyjną dla zleceń pracy
+description: Ten temat wyjaśnia, jak można utworzyć rejestracje przestojów podczas obsługi dla środka trwałego wybranego w zleceniu pracy.
 author: josaw1
 manager: tfehr
 ms.date: 10/15/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b4960aea95d63486207699f3bbd7f4b4f3cf0488
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 263a044a0a378e95ea271ac1c6f468f9e3287f26
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206875"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802732"
 ---
-# <a name="maintenance-downtime"></a>Przerwa konserwacyjna
+# <a name="maintenance-downtime-for-work-orders"></a>Przerwa konserwacyjną dla zleceń pracy
 
 [!include [banner](../../includes/banner.md)]
 
