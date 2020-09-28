@@ -3,7 +3,7 @@ title: Dodawanie strony zasad ochrony prywatności
 description: W tym temacie opisano, jak dodać stronę zasad ochrony prywatności do witryny w Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: ce6491d176f90717877f084b11546010084c5f3b
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686702"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761280"
 ---
 # <a name="add-a-privacy-policy-page"></a>Dodawanie strony zasad ochrony prywatności
 
@@ -89,8 +89,8 @@ Do fragmentu można dodać link do strony zasad ochrony prywatności. W ten spos
 Aby dodać link do fragmentu stopki, wykonaj następujące kroki.
 
 1. Przejdź do **Fragmenty**, a następnie wybierz opcję **Nowy**, aby stworzyć nowy fragment strony.
-1. W oknie dialogowym **Nowy fragment strony** wybierz moduł **Stopki**.
-1. W obszarze **Nazwa fragmentu strony** wprowadź nazwę fragmentu, a następnie kliknij przycisk **OK**.
+1. W oknie dialogowym **Nowy fragment** wybierz moduł **Stopki**.
+1. W obszarze **Nazwa fragmentu** wprowadź nazwę fragmentu, a następnie kliknij przycisk **OK**.
 1. W miejscu **Kategoria stopki** dodaj moduł **Element stopki**.
 1. W panelu właściwości po prawej stronie wybierz pozycję **Tekst linku**.
 1. W oknie dialogowym **Tekst linku** wprowadź tekst linku i docelowy link strony zasady ochrony prywatności, a następnie kliknij przycisk **OK**.

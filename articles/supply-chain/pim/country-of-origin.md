@@ -15,18 +15,26 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: fd234c57bf9893e9b8bcfa5ada7439a642f7a288
-ms.sourcegitcommit: 70d0b4e6bdacc15ec75935550ae55fc02cb79624
+ms.openlocfilehash: d0d93a02817bab8e188818862c1bb7f84b498fc1
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "3596266"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802804"
 ---
 # <a name="country-of-origin"></a>Kraj pochodzenia
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Wiele organizacji wystawia certyfikaty swoim dostawcom w celu zapewnienia, że produkty spełniają określone standardy certyfikacji. Te certyfikaty często zależą od kraju pochodzenia. Funkcja kraju pochodzenia umożliwia powiązanie produktu z jego krajem pochodzenia i śledzenie jego certyfikatów.
+
+## <a name="turn-on-the-country-of-origin-feature"></a>Włączanie funkcji informującej o kraju pochodzenia
+
+Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+
+- **Moduł:** *Zarządzanie informacjami o produktach*
+- **Nazwa funkcji:** *Funkcja zarządzania krajem pochodzenia*
 
 ## <a name="configure-source-and-destination-countries"></a>Konfigurowanie krajów źródłowych i docelowych
 

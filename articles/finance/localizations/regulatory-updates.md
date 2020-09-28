@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 785797af0fe62fa6d0ee40fb4df45bcec47780c7
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: b01162f034a948a94139aed66b7ec8d2e861ee9b
+ms.sourcegitcommit: 4b63e71fb031d8f47bd9e72dd9cdfb9bc7ef2efc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598091"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3789755"
 ---
 # <a name="regulatory-updates"></a>Aktualizacje wymagane przepisami prawa
 
@@ -42,6 +42,12 @@ Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych
 
 |Kraj|Planowana data wydania|Wersja wydania|Aktualizacje wymagane przepisami prawa|
 |--------------------|---------------|-------|-------|
+|      Austria         |   2020 września      | 10.0.15      |   Format deklaracji VAT U30 został zaktualizowany na potrzeby raportowania 2020   |
+|      Bahrajn         |   Lipiec 2020      | 10.0.12      |   Opłata zwrotna   |
+|      Bahrajn         |   Lipiec 2020      | 10.0.12      |   Termin wystawienia faktury (GCC)   |
+|      Bahrajn         |   Lipiec 2020      | 10.0.12      |   Deklaracja VAT dla Bahrajnu   |
+|      Bahrajn         |   Lipiec 2020      | 10.0.12      |   Faktury sprzedaży dla Bahrajnu   |
+|      Brazylia         |   Sierpień 2020      | 10.0.14, 10.0.13, 10.0.12      |   Deklaracja ADRCST PR   |
 |      Brazylia         |   2020 marca      | 10.0.11      |   Układ SPED układ 8   |
 |      Brazylia         |   2020 kwietnia      | 10.0.11      |   Uwaga techniczna NT2019.001 v1.40   |
 |      Brazylia         |   2020 maja      | 10.0.12, 10.0.11HF      |   Deklaracja ADCR ICMS-ST dla stanu Parana   |
@@ -50,21 +56,35 @@ Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych
 |      Czechy      |   Lipiec 2020      | 10.0.13      |   Zmiany deklaracji kontroli podatku VAT w schemacie XML (lista faktur)   |
 |      Czechy         |   Lipiec 2020      | 10.0.13      |   Deklaracja VAT w formacie XML, podgląd deklaracji VAT w Excelu oraz format XML deklaracji kontrolnej VAT oparty na modelu deklaracji podatkowej   |
 |      Estonia         |   2020 maja       | 10.0.11      |   Fakturowanie elektroniczne w Estonii: eksport z faktur odbiorców w formacie specyficznym dla Estonii w wersji 1.2.  |
+|      Europa        |   Sierpień 2020       | 10.0.14      |   Przenieś identyfikator VAT partnera do Intrastat  |
+|      Finlandia         |   Lipiec 2020       | 10.0.13      |   Obsługa faktur elektronicznych dla Finlandii  |
 |      Niemcy         |   2020 maja       | 10.0.12      |   Niemcy - Handel detaliczny - Wymagania dotyczące kas fiskalnych    |
 |      Węgry         |   2020 marca       | 10.0.11     |   System fakturowania online dla wersji 2.0 w Finance and Operations    |
+|      Indie         |   Sierpień 2020, Lipiec 2020      | 10.0.3, 10.0.12HF      |   SKT w ramach sprzedaży towarów zgodnie z sekcją 206C (1H) — próg w odniesieniu akumulacji transakcji PAN.  |
+|      Indie         |   Sierpień 2020, Czerwiec 2020      | 10.0.13, 10.0.12 HF      |   Faktura korygująca/nota uznaniowa dotycząca faktury eksportowej  |
+|      Indie         |   Sierpień 2020      | 10.0.13, 10.0.12HF, 10.0.11HF      |   Faktury elektroniczne w ramach GST  |
+|      Indie         |   2020 maja      | 10.0.13, 10.0.12      |   Nowy format zwrotny GSTR-1 i GSTR-2  |
+|      Indie         |   Lipiec 2020      | 10.0.13      |   Nowe narzędzie offline GSTR (ANX-1 & ANX-2) (wersja beta)  |
 |      Indie         |   2020 maja      | 10.0.12      |   Udoskonalenia obsługi cen jednostkowych i kosztów własnych w Zamówieniach przeniesienia zapasów  |
 |      Indie         |   2020 maja      | 10.0.12      |   Ta sama stawka podatku obowiązująca w przypadku transferu magazynowego w momencie wysyłki i odbioru (w tym częściowy odbiór)  |
 |      Włochy         |   2020 maja      | 10.0.12, 10.0.11      |   Zmiana formatu Modello 770 / 2019 |
 |      Włochy         |   Lipiec 2020      | 10.0.13, 10.0.12 HF      |   Zmiany w formacie włoskich faktur elektronicznych — FatturaPA |
+|      Kuwejt         |   Lipiec 2020      | 10.0.12      |   Opłata zwrotna |
+|      Malezja         |   Lipiec 2020      | 10.0.13      |   Raport SST |
+|      Meksyk         |   2020 września      | 10.0.13HF, 10.0.12HF, 10.0.11HF      |   Lokalizacja schematu URL CFDI na podstawie dokumentu Anexo 20 |
 |      Norwegia          |   2020 maja   | 10.0.12     |   Ponownie zaprojektowany raport SAF-T: Salda otwarcia według typu transakcji „operacyjnych” i informacje podatkowe w walucie kodu podatku w Finance (wersja 10) |
 |      Norwegia          |   2020 maja   | 10.0.12     |   Zmiana okna dialogowego raportu SAF-T: w celu umożliwienia wybrania osoby kontaktowej między firmami |
 |      Norwegia          |   2020 maja   | 10.0.12     |   SAF-T deklaracje przestrzeni nazw w każdym wierszu, a nie tylko w nagłówku |
+|      Oman         |   Lipiec 2020      | 10.0.12H      |   Opłata zwrotna |
+|      Polska          |   2020 września     | 10.0.14     |   Polska: JPK-V7M (VDEK) format programu Excel — zastępuje raport SSRS  |
 |      Polska          |   2020 maja     | 10.0.11     |   Podziel zrealizowaną różnicę kursów AP/AR na różnicę kursów wartości netto faktury i kwoty VAT  |
 |      Polska          |   2020 maja     | 10.0.11     |   Księgi księgowania SAF — udoskonalenia filtrowania warstw księgowania |
 |      Polska          |   2020 marca     | 10.0.11     |   JPK_VDEK dodatkowy pakiet I |
 |      Polska          |   2020 maja     | 10.0.12     |   JPK_VDEK dodatkowy pakiet II |
 |      Polska          |   2020 marca     | 10.0.11     |   Częściowa nota kredytowa dla zamówienia sprzedaży z fakturą zaliczkową |
 |      Polska          |   Lipiec 2020     | 10.0.13     |   Obowiązkowe ulepszenie płatności podzielonej |
+|      Katar         |   Lipiec 2020      | 10.0.12H      |   Opłata zwrotna |
+|      Rosja          |   Sierpień 2020     | 10.0.14    |   Format raportowania księgowania zmienia się począwszy od 2020 roku  |
 |      Rosja          |   Lipiec 2020     | 10.0.13    |   Kalkulacja amortyzacji na podstawie kosztu nabycia i napraw kapitalnych z zastosowaniem premii amortyzacyjnej w rachunkowości podatkowej  |
 
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 54da05bb6b84390f9928d8400e3dafc3228ee2fc
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771524"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759263"
 ---
 # <a name="cost-management-power-bi-content"></a>Pakiet zawartości zarządzania kosztami w usłudze Power BI
 
@@ -37,7 +37,7 @@ Pakiet zawartości **Zarządzanie kosztami** dostępny w usłudze Microsoft Powe
 > [!NOTE]
 > Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opisany w tym temacie dotyczy programu Dynamics 365 Finance and Operations 8.0.
 > 
-> Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opublikowany w witrynie AppSource został wycofany. Więcej informacji o tym zaniechaniu zawiera sekcja [Usuwanie lub przestarzałe funkcje w Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opublikowany w witrynie AppSource został wycofany. Więcej informacji o tym wycofaniu zawiera sekcja [Usuwanie lub przestarzałe funkcje w Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Ten pakiet zawartości usługi Power BI oferuje skategoryzowany format, który pomaga monitorować sytuację w zapasach oraz wizualizować przepływy kosztów przez zapasy. Można uzyskać różne informacje przydatne kierownictwu, takie jak wskaźnik obrotu, liczba dni dostępności zapasów na stanie, dokładność oraz „klasyfikacja ABC” na preferowanym zagregowanym poziomie (firmy, towaru, grupy towarów lub oddziału). Dostępne informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
 
@@ -176,9 +176,9 @@ Dane z aplikacji są używane do wypełniania stron raportów w pakiecie zawarto
 
 Najważniejsze zagregowane miary poniższych obiektów są używane jako podstawa w pakiecie zawartości usługi Power BI.
 
-| Obiekt                          | Najważniejsze zagregowane miary | Źródło danych programu Finance and Operations | Pole               |
+| Obiekt                          | Najważniejsze zagregowane miary | Źródło danych w Finance and Operations | Pole               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
-| CostObjectStatementCacheMonthly | Ilość                     | CostObjectStatementCache               | Ilość              |
+| CostObjectStatementCacheMonthly | Liczba dni                     | CostObjectStatementCache               | Ilość              |
 | CostObjectStatementCacheMonthly | Ilość                   | CostObjectStatementCache               | Ilość                 |
 | CostInventoryAccountingKPIGoal  | AnnualInventoryTurn        | CostInventoryAccountingKPIGoal         | AnnualInventoryTurn |
 | CostInventoryAccountingKPIGoal  | InventoryAccuracy          | CostInventoryAccountingKPIGoal         | InventoryAccuracy   |
@@ -193,10 +193,10 @@ W poniższej tabeli przedstawiono najważniejsze obliczane miary w pakiecie zawa
 | Ilość salda końcowego                | Ilość salda końcowego = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
 | Zmiana netto                         | Zmiana netto = SUM(\[AMOUNT\]) |
 | Ilość zmiany netto                    | Ilość zmiany netto = SUM(\[QTY\]) |
-| Wskaźnik obrotu zapasami wg ilości | Wskaźnik obrotu zapasami wg ilości = if(OR(\[Średnie saldo zapasów\] \<= 0, \[Wydania zapasów sprzedanych lub zużytych\] \>= 0), 0, ABS(\[Wydania zapasów sprzedanych lub zużytych\])/\[Średnie saldo zapasów\]) |
+| Wskaźnik obrotu zapasami wg ilości | Wskaźnik obrotu zapasami wg ilości = if(OR(\[Średnie saldo zapasów\] \<= 0, \[Inventory sold or consumed issues\] \>[Wydania zapasów sprzedanych lub zużytych]= 0), 0, ABS(\[Wydania zapasów sprzedanych lub zużytych\])/\[Średnie saldo zapasów\]) |
 | Średnie saldo zapasów          | Średnie saldo zapasów = ((\[Saldo końcowe\] + \[Saldo początkowe\]) / 2) |
 | Dostępne zapasy dzienne             | Dostępne zapasy dzienne = 365 / CostObjectStatementEntries\[Wskaźnik obrotu zapasami wg ilości\] |
-| Dokładność zapasów                 | Dokładność zapasów wg ilości = IF(\[Saldo końcowe\] \<= 0, IF(OR(\[Ilość z inwentaryzacji zapasów\] \<\> 0, \[Saldo końcowe\] \< 0), 0, 1), MAX(0, (\[Saldo końcowe\] - ABS(\[Ilość z inwentaryzacji zapasów\]))/\[Saldo końcowe\])) |
+| Dokładność zapasów                 | Dokładność zapasów według kwoty = if(\[Saldo końcowe\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0[Ilość zliczonych zapasów], \[Saldo końcowe\] \< 0), 0, 1), MAX(0, (\[Saldo końcowe\] -ABS(\[Kwota zliczona przez magazyn\]))/\[Saldo końcowe\])) |
 
 Następujące najważniejsze wymiary są używane jako filtry do dzielenia zagregowanych miar w celu uzyskania większej szczegółowości i lepszego wglądu analitycznego.
 

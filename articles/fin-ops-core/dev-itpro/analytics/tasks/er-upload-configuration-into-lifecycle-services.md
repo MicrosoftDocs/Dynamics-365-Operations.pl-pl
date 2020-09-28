@@ -1,9 +1,9 @@
 ---
-title: ER Przekazywanie konfiguracji do usługi Lifecycle Services
-description: W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć nową konfiguracji raportowania elektronicznego (ER) i przekazać ją do usługi Microsoft Lifecycle Services (LCS).
+title: Przekazywanie konfiguracji do usługi Lifecycle Services
+description: Ten temat wyjaśnia, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć nową konfigurację raportowania elektronicznego (ER) i przekazać ją do usługi Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,82 +16,133 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5def757de8fb9d347f5fd0f828039dad5c989c19
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: c43bad3ee2530a454de718a0a7da4d1e468a4af4
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143299"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810698"
 ---
-# <a name="er-upload-a-configuration-into-lifecycle-services"></a>ER Przekazywanie konfiguracji do usługi Lifecycle Services
+# <a name="upload-a-configuration-into-lifecycle-services"></a>Przekazywanie konfiguracji do usługi Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć nową konfiguracji raportowania elektronicznego (ER) i przekazać ją do usługi Microsoft Lifecycle Services (LCS).
+Ten temat wyjaśnia, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć nową konfigurację [raportowania elektronicznego (ER)](../general-electronic-reporting.md#Configuration) i przekazać ją do [biblioteki zasobów na poziomie projektu](../../lifecycle-services/asset-library.md) w Microsoft Dynamics Lifecycle Services (LCS).
 
-W tym przykładzie utworzysz konfigurację dla przykładowej firmy Litware, Inc. i przekażesz ją do usługi LCS. Podane kroki można wykonać w dowolnej firmie, ponieważ konfiguracje ER są współużytkowane przez wszystkie firmy. Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. W celu wykonania tych kroków jest również wymagany dostęp do usługi LCS.
+W tym przykładzie utworzysz konfigurację dla przykładowej firmy Litware, Inc. i przekażesz ją do usługi LCS. Podane kroki można ukończyć dla dowolnej firmy, ponieważ konfiguracje ER są współużytkowane przez wszystkie firmy. Aby wykonać te kroki, należy najpierw wykonać kroki w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywne](er-configuration-provider-mark-it-active-2016-11.md). Wymagany jest również dostęp do usługi LCS.
 
-1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
-2. Wybierz firmę „Litware, Inc.” i ustaw ją jako aktywną.
-3. Kliknij opcję Konfiguracje.
+1. Zaloguj się do aplikacji przy użyciu jednej z następujących ról:
+
+    - Deweloper raportowania elektronicznego
+    - Administrator systemu
+
+2. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
+3. Wybierz firmę **Litware, Inc.**” i ustaw ją jako **aktywną**.
+4. Wybierz **Konfiguracje**.
+
+<a name="accessconditions"></a>
+> [!NOTE]
+> Upewnij się, że bieżący użytkownik Dynamics 365 Finance jest członkiem projektu usługi LCS zawierającego [bibliotekę elementów zawartości](../../lifecycle-services/asset-library.md#asset-library-support), która jest używana do importowania konfiguracji ER.
+>
+> Nie można uzyskać dostępu do projektu LCS z poziomu repozytorium ER, które reprezentuje domenę inną niż domena używana w Finance. Jeśli zostanie podjęta taka próba, zostanie wyświetlona pusta lista projektów LCS i nie będzie można importować konfiguracji ER z biblioteki elementów zawartości na poziomie projektu w usłudze LCS. Aby uzyskać dostęp do bibliotek elementów zawartości na poziomie projektu z repozytorium ER używanego do importowania konfiguracji ER, należy zalogować się do Finance przy użyciu poświadczeń użytkownika, który należy do dzierżawy (domeny), dla którego została zainicjowana bieżąca instancja Finance.
 
 ## <a name="create-a-new-data-model-configuration"></a>Tworzenie nowej konfiguracji modelu danych
-1. Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.
-    * Utworzysz konfigurację, która zawiera przykładowy model danych dla dokumentów elektronicznych. Ta konfiguracja modelu danych zostanie później przekazana do usługi LCS.  
-2. W polu Nazwa wpisz „Konfiguracja przykładowego modelu”.
-    * Konfiguracja przykładowego modelu  
-3. W polu Opis wpisz „Konfiguracja przykładowego modelu”.
-    * Konfiguracja przykładowego modelu  
-4. Kliknij przycisk Utwórz konfigurację.
-5. Kliknij opcję Projektant modeli.
-6. Kliknij przycisk Nowy.
-7. W polu Nazwa wpisz „Punkt wejścia”.
-    * Punkt wejścia  
-8. Kliknij przycisk Dodaj.
-9. Kliknij przycisk Zapisz.
-10. Zamknij stronę.
-11. Kliknij przycisk Zmień stan.
-12. Kliknij przycisk Wykonaj.
-13. Kliknij przycisk OK.
 
-## <a name="register-a-new--repository"></a>Rejestrowanie nowego repozytorium
-1. Zamknij stronę.
-2. Kliknij Repozytoria.
-    * Dzięki temu można otworzyć listę repozytoriów dostawcy konfiguracji firmy Litware, Inc.  
-3. Kliknij przycisk Dodaj, aby otworzyć rozwijane okno dialogowe.
-    * Dzięki temu można dodać nowe repozytorium.  
-4. W polu Typ repozytorium konfiguracji zaznacz usługę LCS.
-5. Kliknij opcję Utwórz repozytorium.
-6. W polu Projekt wprowadź lub wybierz wartość.
-    * Wybierz żądany projekt usługi LCS. Trzeba mieć dostęp do projektu.  
-7. Kliknij przycisk OK.
-    * Wypełnij wpis nowego repozytorium.  
-8. Na liście oznacz wybrany wiersz.
-    * Wybierz rekord repozytorium usługi LCS.  
-    * Należy zwrócić uwagę, że zarejestrowane repozytorium jest oznaczone przez bieżącego dostawcę, co oznacza, że tylko konfiguracje posiadane przez tego dostawcę mogą być umieszczane w tym repozytorium i w związku z tym przekazywane do wybranego projektu usługi LCS.  
-9. Kliknij przycisk Otwórz.
-    * Otwórz repozytorium, aby wyświetlić listę konfiguracji raportowania elektronicznego. Będzie ona pusta, jeśli ten projekt nie był jeszcze używany w udostępnianiu konfiguracji raportowania elektronicznego.  
-10. Zamknij stronę.
+1. Przejdź do opcji **Administrowanie organizacją \> Raporty elektroniczne \> Konfiguracje**.
+2. Wybierz przycisk **Utwórz konfigurację** na stronie **konfiguracje**, aby otworzyć rozwijane okno dialogowe.
+
+    W tym przykładzie utworzysz konfigurację, która zawiera przykładowy model danych dla dokumentów elektronicznych. Ta konfiguracja modelu danych zostanie później przekazana do usługi LCS.
+
+3. W polu **Nazwa** wpisz **Konfiguracja przykładowego modelu**.
+4. W polu **Opis** wpisz **Konfiguracja przykładowego modelu**.
+5. Wybierz **Utwórz konfigurację**.
+6. Wybierz **Projektanta modelu**.
+7. Wybierz pozycję **Nowy**.
+8. W polu **Nazwa** wpisz **Punkt wejścia**.
+9. Wybierz opcję **Dodaj**.
+10. Wybierz opcję **Zapisz**.
 11. Zamknij stronę.
+12. Wybierz opcję **Zmień stan**.
+13. Wybierz opcję **Zakończone**.
+14. Kliknij przycisk **OK**.
+15. Zamknij stronę.
 
-## <a name="upload-configuration-into-lcs"></a>Przekazywanie konfiguracji do usługi LCS
-1. Kliknij opcję Konfiguracje.
-2. W drzewie zaznacz element „Konfiguracja przykładowego modelu”.
-    * Zaznacz utworzone konfiguracje, które zostały już ukończone.  
+## <a name="register-a-new-repository"></a>Rejestrowanie nowego repozytorium
+
+1. Wybierz kolejno opcje **Administrowanie organizacją \> Obszary robocze \> Raportowanie elektroniczne**.
+
+2. W obszarze **Dostawcy konfiguracji** wybierz kafelek **Litware, Inc.**.
+
+3. Na kafelku **Litware, Inc.** wybierz **Repozytoria**.
+
+    Teraz można otworzyć listę repozytoriów dostawcy konfiguracji firmy Litware, Inc.
+
+4. Wybierz przycisk **Dodaj**, aby otworzyć rozwijane okno dialogowe.
+
+    Teraz można dodać nowe repozytorium.
+
+5. W polu **Typ repozytorium konfiguracji** wpisz **LCS**.
+6. Kliknij opcję **Utwórz repozytorium**.
+7. W polu **Projekt** wprowadź lub wybierz wartość.
+
+    W tym przykładzie wybierz projekt LCS. Trzeba mieć [dostęp](#accessconditions) do projektu.
+
+8. Kliknij przycisk **OK**.
+
+    Wypełnij wpis nowego repozytorium.
+
+9. Na liście oznacz wybrany wiersz.
+
+    W tym przykładzie wybierz rekord repozytorium **LCS**.
+
+    Należy zauważyć, że zarejestrowane repozytorium jest oznaczone przez bieżącego dostawcę. Innymi słowy, tylko konfiguracje należące do tego dostawcy mogą być umieszczane w tym repozytorium i w związku z tym przekazywane do wybranego projektu usługi LCS.
+
+10. Kliknij przycisk **Otwórz**.
+
+    Otwórz repozytorium, aby wyświetlić listę konfiguracji raportowania elektronicznego. Lista będzie pusta, jeśli ten projekt nie był jeszcze używany w udostępnianiu konfiguracji raportowania elektronicznego.
+
+11. Zamknij stronę.
+12. Zamknij stronę.
+
+## <a name="upload-a-configuration-into-lcs"></a>Przesyłanie konfiguracji do usługi LCS
+
+1. Przejdź do opcji **Administrowanie organizacją \> Raporty elektroniczne \> Konfiguracje**.
+2. Na stronie **Konfiguracje** w drzewie konfiguracji wybierz pozycję **Przykładowy model konfiguracji**.
+
+    Musisz zaznaczyć utworzone konfiguracje, które zostały już ukończone.
+
 3. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Zaznacz wersję wybranej konfiguracji ze stanem „Zakończono”.  
-4. Kliknij przycisk Zmień stan.
-5. Kliknij przycisk Udostępnij.
-    * Po opublikowaniu konfiguracji w usłudze LCS stan konfiguracji ulegnie zmianie z „Zakończono” na „Udostępniono”.  
-6. Kliknij przycisk OK.
-7. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Zaznacz wersję konfiguracji o stanie „Udostępniono”.  
-    * Należy zauważyć, że stan wybranej wersji został zmieniony z „Zakończono” na „Udostępniono”.  
-8. Zamknij stronę.
-9. Kliknij Repozytoria.
-    * Dzięki temu można otworzyć listę repozytoriów dostawcy konfiguracji firmy Litware, Inc.  
-10. Kliknij przycisk Otwórz.
-    * Zaznacz repozytorium usługi LCS i je otwórz.  
-    * Należy zwrócić uwagę, że wybrana konfiguracja jest wyświetlana jako element zawartości wybranego projektu usługi LCS.  
-    * Otwórz usługę LCS ze strony https://lcs.dynamics.com. Otwórz projekt, który został wcześniej użyty do zarejestrowania repozytorium, otwórz „Bibliotekę składników majątku” tego projektu, a następnie rozwiń zawartość elementu zawartości typu „Konfiguracja GER” — przekazana konfiguracja raportowania elektronicznego będzie dostępna. Należy zauważyć, że przekazaną konfigurację usługi LCS można zaimportować do innego wystąpienia, jeśli dostawcy mają dostęp do tego projektu usługi LCS.  
 
+    W tym przykładzie zaznacz wersję wybranej konfiguracji ze stanem **Zakończono**.
+
+4. Wybierz opcję **Zmień stan**.
+5. Wybierz opcję **Udostępnij**.
+
+    Stan konfiguracji zmienia się z **Zakończono** na **Współużytkowana** gdy konfiguracja jest opublikowana w usłudze LCS.
+
+6. Kliknij przycisk **OK**.
+7. Na liście znajdź i zaznacz odpowiedni rekord.
+
+    W tym przykładzie zaznacz wersję tej konfiguracji mającą stan **Udostępniono**.
+
+    Należy zauważyć, że stan wybranej wersji został zmieniony z **Zakończono** na **Udostępniono**.
+
+8. Zamknij stronę.
+9. Wybierz **Repozytoria**.
+
+    Teraz można otworzyć listę repozytoriów dostawcy konfiguracji firmy Litware, Inc.
+
+10. Kliknij przycisk **Otwórz**.
+
+    W tym przykładzie wybierz rekord repozytorium **LCS** i otwórz je.
+
+    Należy zwrócić uwagę, że wybrana konfiguracja jest wyświetlana jako element zawartości wybranego projektu usługi LCS.
+
+11. Otwórz LCS, przechodząc na <https://lcs.dynamics.com>.
+12. Otwórz projekt, który został użyty wcześniej do rejestracji repozytorium.
+13. Otwórz bibliotekę elementów zawartości projektu.
+14. Wybierz typ elementu **Konfiguracja GER**.
+
+    Przekazana konfiguracja ER powinna zostać wyświetlona na liście.
+
+    Należy zauważyć, że przekazaną konfigurację usługi LCS można zaimportować do innego wystąpienia, jeśli dostawcy mają dostęp do tego projektu usługi LCS.

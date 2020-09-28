@@ -3,7 +3,7 @@ title: Aplikacja Human Resources w Teams
 description: W tym temacie przedstawiono aplikację Microsoft Dynamics 365 Human Resources w Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/06/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4822cc6560926df878a8b4e9f821b331ede27a8c
-ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
+ms.openlocfilehash: a022f8297066793080d254baa01410884a3fafd9
+ms.sourcegitcommit: 55b729361ea852e38531c51972c6730e3d9c2b45
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3666367"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3776315"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikacja Human Resources w Teams
 
@@ -41,6 +41,45 @@ Aplikację Human Resources można znaleźć w sklepie rozwiązania Teams. Aby uz
 
 Aby uzyskać informacje dotyczące zarządzania uprawnieniami aplikacji w Teams, zapoznaj się z tematem [Zarządzanie zasadami uprawnień aplikacji w Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
+## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Włączanie powiadomień dla aplikacji Human Resources w Teams
+
+Jeśli chcesz, aby użytkownicy otrzymywali powiadomienia o żądaniu urlopu w aplikacji Teams, musisz włączyć powiadomienia w module Human Resources.
+
+>[!NOTE]
+>Tylko użytkownicy zalogowani do zespołów i korzystający z aplikacji Human Resources w Teams będą otrzymywali powiadomienia.
+
+1. W module Human Resources wybierz opcję **administrowanie systemem**.
+
+2. Wybierz **Łącza**.
+
+3. W obszarze **Konfiguracja** wybierz opcję **Parametry systemowe**.
+
+4. Na karcie **Ogólne** określ ustawienie **Włącz powiadomienia dla aplikacji Teams** na wartość **Tak**.
+
+   ![Włącz powiadomienia aplikacji Teams w parametrach systemowych](./media/hr-admin-teams-leave-app-enable-notifications.png)
+
+5. Aby włączyć powiadomienia Teams dla wszystkich użytkowników, wybierz **Tak**, gdy wystąpi monit.
+
+   ![Włącz powiadomienia Teams dla wszystkich użytkowników](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+
+### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Włączanie i wyłączanie powiadomień Teams dla poszczególnych użytkowników
+
+Po włączeniu powiadomień dla aplikacji Human Resources w Teams, można włączać lub wyłączać powiadomienia dla poszczególnych użytkowników.
+
+1. W module Human Resources wybierz opcję **administrowanie systemem**.
+
+2. Wybierz **Łącza**.
+
+3. W obszarze **Użytkownicy** wybierz **Opcje użytkownika**.
+
+4. Wybierz kartę **Przepływ pracy**.
+
+5. W polu **Włącz powiadomienia dla aplikacji Teams** wybierz wartość **Tak**, aby włączyć powiadomienia dla użytkownika lub **Nie**, aby je wyłączyć.
+
+   ![Włącz powiadomienia aplikacji Teams na karcie przepływ pracy w opcjach użytkownika](./media/hr-admin-teams-leave-app-notifications.png)
+
+6. Wybierz opcję **Zapisz**.
+
 ## <a name="known-issues"></a>Znane problemy
 
 | Wystawienie | Stan |
@@ -48,19 +87,24 @@ Aby uzyskać informacje dotyczące zarządzania uprawnieniami aplikacji w Teams,
 | Przewijanie w poziomie nie działa na telefonach Android | Przewijanie w poziomie nie jest problemem na urządzeniach z systemem iOS lub komputerach stacjonarnych. Pracujemy nad poprawką dla Android. |
 | Błąd: Wystąpił problem ze znalezieniem środowiska, z którym można się połączyć. | Ten błąd może wystąpić, nawet jeśli zweryfikowano, że użytkownik może uzyskać dostęp do jednego lub więcej środowisk Human Resources. Ponadto mogą nie być widoczne wszystkie oczekiwane środowiska. Do czasu rozwiązania problemu usuń użytkownika, a następnie zaimportuj go ponownie, aby rozwiązać problem. |
 | Saldo jest niepoprawne podczas przesyłania czasu wolnego w przyszłości. | Prognozowanie nie jest jeszcze dostępne. Jest wyświetlane saldo dla bieżącej daty. |
-| W przypadku zmniejszenia liczby godzin w istniejącym żądaniu **Pozostałe saldo** zmniejsza się, a nie zwiększa. | Ten problem zostanie rozwiązany w przyszłości. Wyświetlone dane są niepoprawne, ale podczas przesyłania ilości są odpowiednio korygowane. |
 | Nie można anulować żądań typu **Trwa przegląd**. | Ta funkcja nie jest obecnie obsługiwana i zostanie dodana w przyszłym wydaniu. |
 | Informacje o saldzie są obliczane na dzień dzisiejszy. | Obecnie system nie wyświetla sald dla okresu naliczania, nawet jeśli zostało to skonfigurowane w parametrach urlopu i nieobecności. |
 
 ## <a name="privacy-notice"></a>Klauzula prywatności
 
-Bot aplikacji Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams analizuje dane wejściowe użytkownika pod kątem zrozumienia zapytania/celu. Dane wprowadzane przez użytkownika, takie jak „Wyszukiwanie konta Contoso”, są kierowane do jednej z usług Microsoft Cognitive Service o nazwie Language Understanding Intelligent Service (LUIS). Przeczytaj więcej o usłudze LUIS [tutaj](https://www.luis.ai/). Usługa LUIS rozróżnia lub interpretuje cel wprowadzenia danych przez użytkownika (w tym przypadku celem jest znalezienie informacji) oraz jednostkę docelową (w tym przypadku zamierzona jednostka to konto o nazwie Contoso). Informacje te są następnie przekazywane do usługi  [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/)  firmy Microsoft, która wchodzi w interakcje z danymi z aplikacji Dynamics 365 Human Resources i pobiera żądane informacje dla zapytania użytkownika. 
+### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding Intelligent Service (LUIS)
+
+Bot aplikacji Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams analizuje dane wejściowe użytkownika pod kątem zrozumienia zapytania/celu. Dane wprowadzane przez użytkownika, takie jak „Wyszukiwanie konta Contoso”, są kierowane do jednej z usług Microsoft Cognitive Service o nazwie Language Understanding Intelligent Service (LUIS). Przeczytaj więcej o usłudze LUIS [tutaj](https://www.luis.ai/). Usługa LUIS rozróżnia lub interpretuje cel wprowadzenia danych przez użytkownika (w tym przypadku celem jest znalezienie informacji) oraz jednostkę docelową (w tym przypadku zamierzona jednostka to konto o nazwie Contoso). Informacje te są następnie przekazywane do usługi [Azure Bot Framework firmy Microsoft](https://azure.microsoft.com/services/bot-service/), która wchodzi w interakcje z danymi z aplikacji Dynamics 365 Human Resources i pobiera żądane informacje dla zapytania użytkownika. 
 
 Instalując bota i zezwalając na dostęp do korzystania z niego, wyrażasz zgodę na to, aby usługa LUIS i usługa Azure Bot Framework przetwarzały cele powiązane z danymi wejściowymi, co skutkuje ulepszoną obsługą funkcji obsługi konwersacji użytkownika. Usługi LUIS i Azure Bot Framework mogą mieć różne poziomy zgodności w porównaniu z aplikacją Dynamics 365 Human Resources. Gdy usługa LUIS ma dostęp tylko do zapytań użytkownika i nie jest przeznaczona do łączenia z danymi lub kontem Dynamics 365 Human Resources użytkownika, użytkownik bota Dynamics 365 Human Resources może dobrowolnie wprowadzić zapytanie zawierające dane klientów, dane osobowe lub inne dane, a taka zawartość zapytania może zostać wysłana do usług LUIS i Azure Bot Framework. 
 
 Zawartość zapytań i wiadomości użytkownika jest przechowywana w systemie LUIS przez maksymalnie 30 dni, jest szyfrowana w stanie spoczynku i nie jest używana do udoskonalania szkoleń lub usług. Przeczytaj więcej informacji na temat usług Cognitive Services [tutaj](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 
-Aby zarządzać ustawieniami administratora dla aplikacji Microsoft Teams, przejdź do [centrum administracyjnego Microsoft Teams](https://admin.teams.microsoft.com/). 
+Aby zarządzać ustawieniami administratora dla aplikacji Microsoft Teams, przejdź do [centrum administracyjnego Microsoft Teams](https://admin.teams.microsoft.com/).
+
+### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Siatka zdarzeń Microsoft Azure i Microsoft Teams
+
+W przypadku korzystania z funkcji powiadomień dla Dynamics 365 Human Resources w Teams, niektóre dane odbiorcy przepływają poza region geograficzny, w którym jest wdrożona usługa Human Resources dzierżawy. Dynamics 365 Human Resources przesyła szczegóły żądania urlopu pracownika i zadania przepływu pracy do siatki zdarzeń Microsoft Azure i do Microsoft Teams. Dane te mogą być przechowywane przez maksymalnie 24 godziny i przetwarzane w Stanach Zjednoczonych. Są szyfrowane w tranzycie i w stanie spoczynku i nie są używane przez firmę Microsoft ani podsystemy do poprawy szkoleń lub usług.
 
 ## <a name="see-also"></a>Informacje dodatkowe 
 

@@ -1,6 +1,6 @@
 ---
 title: Skróty klawiaturowe
-description: Poniższe skróty klawiaturowe umożliwiają szybkie i wydajne wprowadzanie danych.
+description: W tym temacie przedstawiono omówienie kombinacji klawiszy skrótów, które mogą być używane podczas pracy z aplikacjami Finance and Operations.
 author: jasongre
 manager: AnnBe
 ms.date: 10/02/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa35037b435bafa3f22013e41f0692f836e99a14
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811562"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761628"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 [!include [banner](../includes/banner.md)]
 
-Poniższe skróty klawiaturowe umożliwiają szybkie i wydajne wprowadzanie danych.
+Poniższe skróty klawiaturowe umożliwiają szybkie i wydajne wprowadzanie danych w aplikacjach Finance and Operations.
 
 > [!NOTE]
 > Skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
@@ -236,6 +236,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przejdź do wiersza wyżej/niżej w wyszukiwaniu                                                                                        | Strzałka w górę / strzałka w dół            |
 | Przejdź do okienka wyżej/niżej w wyszukiwaniu                                                                                       | Page up / Page down              |
 | Przejdź do góry/na dół wyszukiwania                                                                                    | Home / End                       |
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Skróty klawiaturowe dla analizy brakujących kont](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)

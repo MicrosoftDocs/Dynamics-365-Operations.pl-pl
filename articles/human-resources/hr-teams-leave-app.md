@@ -3,7 +3,7 @@ title: Zarządzanie wnioskami o urlop w Teams
 description: W tym temacie przedstawiono sposób wysyłania wniosku o urlop w aplikacji Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b3daa76385518ad4c7150fa93ce33be0351bfd57
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 0fbf44fe35af3147fd5fb478b6cbfc5a5d0b109d
+ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428835"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "3766767"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Zarządzanie wnioskami o urlop w Teams
 
@@ -82,11 +82,11 @@ Możesz poprosić bota o wykonanie następujących zadań:
 
    ![Wysyłanie wniosków o urlop w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-bot-request.png)
  
-Po rozpoczęciu wniosku o urlopu można skorygować dni bezpośrednio na karcie lub wybrać pozycję **Edytuj szczegóły**, aby dodać dodatkowe informacje do wniosku.
+Po rozpoczęciu żądania urlopu można skorygować dni bezpośrednio na karcie.
 
 ![Edytowanie wniosku o urlop w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-bot-edit.png)
  
-Po zakończeniu wprowadzania informacji wpisz **Prześlij**, aby przesłać wniosek do zatwierdzenia. Możesz również wpisać **Zapisz jako wersję roboczą**, aby wrócić do wniosku później.
+Po zakończeniu wprowadzania informacji wybierz **Prześlij**, aby przesłać wniosek do zatwierdzenia. Możesz również wybrać pozycję **Zapisz jako wersję roboczą**, aby wrócić do wniosku później.
 
 ![Przesyłanie wniosku o urlop w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-bot-submit.png)
 
@@ -130,15 +130,43 @@ Na karcie **Czas wolny** można wyświetlić następujące informacje:
 
    ![Edytowanie wersji roboczej w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-drafts-edit.png)
    
+### <a name="teams-notifications"></a>Powiadomienia Teams
+
+Gdy użytkownik lub pracownik, dla którego użytkownik jest osobą zatwierdzającą prześle wniosek urlopowy, użytkownik otrzyma powiadomienie w aplikacji Human Resources w Teams. Możesz wybrać powiadomienie, aby je wyświetlić. Powiadomienia są również wyświetlane w obszarze **Czatu**.
+
+Jeśli jesteś osobą zatwierdzającą, możesz wybrać opcję **Zatwierdzanie** lub **Odmowa** w powiadomieniu. Można również podać opcjonalny komunikat.
+
+![Wnioski o urlop w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-notification.png)
+
+## <a name="view-your-teams-leave-calendar"></a>Wyświetlanie kalendarza urlopów zespołu
+
+Jeśli jesteś menedżerem z bezpośrednimi podwładnymi, możesz wyświetlić zatwierdzony i oczekujący urlop zespołu.
+
+1. W aplikacji zasoby ludzkie w zespołach wybierz opcję **Czas wolny**.
+
+2. Wybierz **Kalendarz zespołu**.
+
+   ![Wyświetl kalendarz w aplikacji Human Resources w Teams](./media/hr-teams-leave-app-view-calendar.png)
+
+W kalendarzu są wyświetlane zatwierdzone i oczekujące urlopy bezpośrednich podwładnych.
+
+![Kalendarz urlopów w aplikacji Human Resources w Teams](./media/hr-teams-leave-app-calendar.png)
+
 ## <a name="privacy-notice"></a>Klauzula prywatności
 
-Bot aplikacji Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams analizuje dane wejściowe użytkownika pod kątem zrozumienia zapytania/celu. Dane wprowadzane przez użytkownika, takie jak „Wyszukiwanie konta Contoso”, są kierowane do jednej z usług Microsoft Cognitive Service o nazwie Language Understanding Intelligent Service (LUIS). Przeczytaj więcej o usłudze LUIS [tutaj](https://www.luis.ai/). Usługa LUIS rozróżnia lub interpretuje cel wprowadzenia danych przez użytkownika (w tym przypadku celem jest znalezienie informacji) oraz jednostkę docelową (w tym przypadku zamierzona jednostka to konto o nazwie Contoso). Informacje te są następnie przekazywane do usługi  [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/)  firmy Microsoft, która wchodzi w interakcje z danymi z aplikacji Dynamics 365 Human Resources i pobiera żądane informacje dla zapytania użytkownika. 
+### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding Intelligent Service (LUIS)
+
+Bot aplikacji Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams analizuje dane wejściowe użytkownika pod kątem zrozumienia zapytania/celu. Dane wprowadzane przez użytkownika, takie jak „Wyszukiwanie konta Contoso”, są kierowane do jednej z usług Microsoft Cognitive Service o nazwie Language Understanding Intelligent Service (LUIS). Przeczytaj więcej o usłudze LUIS [tutaj](https://www.luis.ai/). Usługa LUIS rozróżnia lub interpretuje cel wprowadzenia danych przez użytkownika (w tym przypadku celem jest znalezienie informacji) oraz jednostkę docelową (w tym przypadku zamierzona jednostka to konto o nazwie Contoso). Informacje te są następnie przekazywane do usługi [Azure Bot Framework firmy Microsoft](https://azure.microsoft.com/services/bot-service/), która wchodzi w interakcje z danymi z aplikacji Dynamics 365 Human Resources i pobiera żądane informacje dla zapytania użytkownika. 
 
 Instalując bota i zezwalając na dostęp do korzystania z niego, wyrażasz zgodę na to, aby usługa LUIS i usługa Azure Bot Framework przetwarzały cele powiązane z danymi wejściowymi, co skutkuje ulepszoną obsługą funkcji obsługi konwersacji użytkownika. Usługi LUIS i Azure Bot Framework mogą mieć różne poziomy zgodności w porównaniu z aplikacją Dynamics 365 Human Resources. Gdy usługa LUIS ma dostęp tylko do zapytań użytkownika i nie jest przeznaczona do łączenia z danymi lub kontem Dynamics 365 Human Resources użytkownika, użytkownik bota Dynamics 365 Human Resources może dobrowolnie wprowadzić zapytanie zawierające dane klientów, dane osobowe lub inne dane, a taka zawartość zapytania może zostać wysłana do usług LUIS i Azure Bot Framework. 
 
 Zawartość zapytań i wiadomości użytkownika jest przechowywana w systemie LUIS przez maksymalnie 30 dni, jest szyfrowana w stanie spoczynku i nie jest używana do udoskonalania szkoleń lub usług. Przeczytaj więcej informacji na temat usług Cognitive Services [tutaj](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 
-Aby zarządzać ustawieniami administratora dla aplikacji Microsoft Teams, przejdź do [centrum administracyjnego Microsoft Teams](https://admin.teams.microsoft.com/). 
+Aby zarządzać ustawieniami administratora dla aplikacji Microsoft Teams, przejdź do [centrum administracyjnego Microsoft Teams](https://admin.teams.microsoft.com/).
+
+### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Siatka zdarzeń Microsoft Azure i Microsoft Teams
+
+W przypadku korzystania z funkcji powiadomień dla Dynamics 365 Human Resources w Teams, niektóre dane odbiorcy przepływają poza region geograficzny, w którym jest wdrożona usługa Human Resources dzierżawy. Dynamics 365 Human Resources przesyła szczegóły żądania urlopu pracownika i zadania przepływu pracy do siatki zdarzeń Microsoft Azure i do Microsoft Teams. Dane te mogą być przechowywane przez maksymalnie 24 godziny i przetwarzane w Stanach Zjednoczonych. Są szyfrowane w tranzycie i w stanie spoczynku i nie są używane przez firmę Microsoft ani podsystemy do poprawy szkoleń lub usług.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

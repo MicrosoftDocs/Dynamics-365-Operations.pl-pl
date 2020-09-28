@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 128083b22bb14d9b445863a0ba1217f723727ee4
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 7b17df2afee22dde1af5c44de31c585069daa349
+ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597513"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3775181"
 ---
 # <a name="warehouse-location-status"></a>Stan lokalizacji w magazynie
 
@@ -76,6 +76,9 @@ Przykładowy scenariusz wymaga przygotowania dwóch profilów lokalizacji.
     Te opcje kontrolują, czy pola odwołania w danej lokalizacji są aktywne.
 
 1. Powtórz kroki od 3 do 4 dla profilu **PICK-06**.
+
+> [!NOTE]
+> Jeśli parametry profilu lokalizacji (**Włącz obsługę towaru w lokalizacji**, **Włącz aktywności lokalizacji**, **Włącz obsługę stanu lokalizacji**) są ustawione na *Tak*, system natychmiast zaktualizuje odpowiednie lokalizacje, wykonując *Sprawdzane spójności stanu lokalizacji w magazynie*.
 
 ### <a name="scenario"></a>Scenariusz
 

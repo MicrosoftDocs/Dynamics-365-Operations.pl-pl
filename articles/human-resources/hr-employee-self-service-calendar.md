@@ -3,7 +3,7 @@ title: Tworzenie kalendarza zespołu
 description: W programie Dynamics 365 Human Resources można wyświetlać i tworzyć kalendarze zespołu.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2862c98014f91c5500ec11119d04d15bd050c89c
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: f7d11b11864f73d4405a4e3629e6873b8cd13e8d
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712215"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796476"
 ---
 # <a name="view-team-and-company-calendars"></a>Wyświetlanie kalendarzy zespołów i firm
 
@@ -50,6 +50,22 @@ Osoby, które mają role w module Human Resources, mogą wyświetlać kalendarze
 2. Wybierz opcję **Kalendarz urlopów i nieobecności**.
 
 Role w Human resources mogą również uzyskiwać dostępdo kalendarza firmowego z **Wnioski o urlopy i nieobecności**, **Zatwierdzony czas wolny** i **Żądania czasu wolnego**. 
+
+[!include [banner](includes/preview-feature.md)]
+
+Kalendarze zawierają teraz dodatkowe filtry i opcje. Wszystkie kalendarze zawierają opcje widoku dla:
+
+- Wniosków zatwierdzonych
+- Oczekujące wnioski
+- Pracowników z wnioskami urlopowymi
+- Pracowników bez wniosków urlopowych
+- Urodzin pracowników
+- Wnioski dotyczące czasu wolnego 
+- Wnioski o nieobecność
+
+Konfiguracja kalendarza w parametrach urlopu i nieobecności określa dostępne opcje widoku.
+
+Kalendarze można również filtrować według kierowników lub działów. Przypisanie stanowiska głównego określa pracowników, którzy są wyświetlani po ustawieniu tych filtrów. 
 
 Aby uzyskać informacje na temat ustawień kalendarza, zobacz [Konfigurowanie parametrów kalendarza](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 

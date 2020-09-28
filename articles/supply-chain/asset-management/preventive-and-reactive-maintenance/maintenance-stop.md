@@ -1,6 +1,6 @@
 ---
-title: Przerwa konserwacyjna
-description: W tym temacie wyjaśniono przerwy konserwacyjne w module Zarządzanie składnikami majątku.
+title: Działania w ramach przerwy konserwacyjnej
+description: Ten temat wyjaśnia, jak przestoje prac konserwacyjnych służą do uzyskiwania przeglądu zdolności produkcyjnych wymaganych do wykonania zadań konserwacyjnych dotyczących konkretnych składników majątku w danym okresie.
 author: josaw1
 manager: tfehr
 ms.date: 08/27/2019
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b219d352b6b090c5c2cd3c063d7f890beaa35c
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 2f864e7fe0129f8487cddadc99b32f75a2b6d9ca
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383534"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802828"
 ---
-# <a name="maintenance-downtime"></a>Przerwa konserwacyjna
+# <a name="maintenance-downtime-activities"></a>Działania w ramach przerwy konserwacyjnej
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Przestoje prac konserwacyjnych służą do uzyskiwania przeglądu zdolności produkcyjnych wymaganych do wykonania zadań konserwacyjnych dotyczących konkretnych składników majątku w danym okresie. Można na przykład utworzyć rejestrację przestojów dla wiersza produkcji 10 w korytarzu produkcji 29-A w oddziale produkcyjnym 02. Rejestracja przestojów konserwacyjnych ma godzinę rozpoczęcia i zakończenia, wskazującą okres, w którym składniki majątku związane z zatrzymaniem konserwacji są niedostępne do produkcji.
 
