@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d210e234e9004422913ac76bf4c9b720806cbece
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 00af26a9f41a6908fd0010ec9eac37e41ad9c2b6
+ms.sourcegitcommit: 71a7fb9e7133d872790ec25def5453bbbb17c627
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176058"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3888115"
 ---
 # <a name="accounts-receivable-home-page"></a>Rozrachunki z odbiorcami — strona główna
 
@@ -102,7 +102,7 @@ Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://go.mic
 
 Opinie, wiadomości i inne informacje dotyczące Rozrachunków z odbiorcami i innych rozwiązań możesz znaleźć w [blogu usługi Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) oraz [blogu finansowym Microsoft Dynamics 365 Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-[Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
+[Blog społeczności partnerów Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) zapewnia Microsoft Dynamics, jeden zasób, w którym mogą dowiedzieć się, co nowego, poza tym zyskuje na popularności w systemie Dynamics 365.
 
 #### <a name="task-guides"></a>Przewodniki zadania
 Przewodniki zadania to pomocna funkcja dostępna w aplikacji. Aby uzyskać dostęp do przewodników zadania, kliknij przycisk Pomoc na dowolnej stronie.

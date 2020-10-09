@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Rozwiązanie Commerce w wersji 10.0.12 (sierpień 2020)
                       href: get-started/whats-new-commerce-10-0-12.md
-                    - name: Rozwiązanie Commerce w wersji 10.0.11 (lipiec 2020)
-                      href: get-started/whats-new-commerce-10-0-11.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Finance and Operations
@@ -182,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Tworzenie pól niestandardowych i praca z nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Osadzanie usługi Microsoft Power Apps
+                - name: Osadzanie aplikacji kanwy z aplikacji Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Znajdowanie informacji za pomocą odnośników
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -956,9 +954,9 @@
                   href: add-privacy-page.md
                 - name: Zamień identyfikatory użytkowników skojarzone ze śledzonymi zmianami zawartości
                   href: replace-IDs-tracked-changes.md
-            - name: Zestaw początkowy
+            - name: Biblioteka modułów
               items:
-                - name: Omówienie zestawu początkowego
+                - name: Przegląd biblioteki modułów
                   href: starter-kit-overview.md
                 - name: Moduły kontenera
                   items:
@@ -1976,7 +1974,7 @@
                   items:
                     - name: Tworzenie nowego modułu
                       href: e-commerce-extensibility/create-new-module.md
-                    - name: Klonowanie modułu zestawu początkowego
+                    - name: Klonowanie modułu biblioteki modułów
                       href: e-commerce-extensibility/clone-starter-module.md
                     - name: Dodawanie pól konfiguracji modułu
                       href: e-commerce-extensibility/add-module-config-fields.md
@@ -2070,9 +2068,9 @@
                   items:
                     - name: Konfiguracje pakietów i wdrażanie ich w środowisku online
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: Aktualizacje zestawu SDK i sklepu dla początkujących
+                    - name: Aktualizacje zestawu SDK i biblioteki modułów
                       href: e-commerce-extensibility/sdk-updates.md
-            - name: SDK do Retail
+            - name: Zestaw SDK do Retail
               items:
                 - name: Architektura zestawu SDK do Retail
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
@@ -2148,6 +2146,8 @@
                   href: implementation-considerations-devices.md
                 - name: Wyświetlanie zdarzeń i obsługi w koszyku punktu sprzedaży
                   href: dev-itpro/cart-view-handlers.md
+                - name: Dodawanie niestandardowych przycisków do paska nagłówka punktu sprzedaży
+                  href: dev-itpro/pos-header-bar.md
             - name: Możliwości rozszerzania aplikacji Hardware Station
               items:
                 - name: Rozszerzalność aplikacji Hardware Station
