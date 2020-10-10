@@ -3,7 +3,7 @@ title: Zastosuj ustawienia zapasów
 description: W tym temacie opisano ustawienia zapasów oraz sposób ich stosowania w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 737e71dc73750bf151629fd904081924ac15b91e
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: d7d25fd62efca52dd2d60ed3435104c3507a1d19
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621228"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817616"
 ---
 # <a name="apply-inventory-settings"></a>Zastosuj ustawienia zapasów
 
@@ -38,6 +38,9 @@ Ustawienia zapasów określają, czy zapasy powinny być sprawdzane przed dodani
 Dynamics 365 Commerce umożliwia oszacowanie dostępnych zapasów dla produktów. Aby uzyskać informacje dotyczące sposobu obliczania szacowanej dostępności zapasów, należy zapoznać się z tematem [Oblicz dostępność zapasów dla kanałów sieci sprzedaży](calculated-inventory-retail-channels.md).
 
 W konstruktorze witryn Commerce można definiować progi i zakresy zapasów dla produktu lub kategorii. Określają one, czy zapasy mogą być klasyfikowane jako w magazynie, małe ilości czy wyprzedane. Aby uzyskać szczegółowe informacje, należy zapoznać się z tematem [Konfigurowanie buforów zapasów i poziomów zapasów](inventory-buffers-levels.md).
+
+> [!NOTE]
+> Obsługa progów i zakresów zapasów jest dostępna w wersji Dynamics 365 Commerce 10.0.12.
 
 ## <a name="inventory-settings"></a>Ustawienia zapasów
 
@@ -55,6 +58,9 @@ W module Commerce ustawienia zapasów są definiowane w **Ustawienia witryny \> 
     - W przypadku wybrania **Wyprzedane** będzie wyświetlany tylko komunikat „wyprzedane”.
 
 - **Próg wyprzedania** — to stare ustawienie numeryczne zacznie obowiązywać tylko wtedy, gdy wartość **Próg wyprzedania** zostanie wybrana dla ustawienia **Poziom zapasów na podstawie**.
+
+> [!IMPORTANT] 
+> Te ustawienia są dostępne w wydaniu Dynamics 365 Commerce 10.0.12. W przypadku aktualizacji ze starszej wersji Dynamics 365 Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje dotyczące aktualizowania pliku appsettings.json, zajrzyj do [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="modules-that-use-inventory-settings"></a>Moduły korzystające z ustawień zapasów
 
@@ -74,7 +80,7 @@ Poniższy obraz pokazuje przykład wózka z komunikatem o stanie magazynowym (�
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie zestawu początkowego](starter-kit-overview.md)
+[Omówienie biblioteki modułów](starter-kit-overview.md)
 
 [Konfigurowanie buforów zapasów i poziomów zapasów](inventory-buffers-levels.md)
 
@@ -85,3 +91,5 @@ Poniższy obraz pokazuje przykład wózka z komunikatem o stanie magazynowym (�
 [Strony i moduły zarządzania kontem](account-management.md)
 
 [Moduł wyboru sklepu](store-selector.md)
+
+[Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md)

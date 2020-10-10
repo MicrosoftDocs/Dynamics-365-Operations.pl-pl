@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258564"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893142"
 ---
 # <a name="business-document-management-overview"></a>Omówienie zarządzania dokumentami biznesowymi
 
@@ -31,7 +31,7 @@ ms.locfileid: "3258564"
 
 Użytkownicy biznesowi używają platformy [Raportowanie elektroniczne (ER)](general-electronic-reporting.md), która umożliwia konfigurowanie formatów dokumentów wychodzących zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Użytkownicy mogą również zdefiniować przepływ danych w celu określenia, które dane aplikacji są umieszczane w wygenerowanych dokumentach. Struktura ER generuje dokumenty wychodzące w formatach Microsoft Office (skoroszyty programu Excel lub dokumenty programu Word) przy użyciu wstępnie zdefiniowanych szablonów. Szablony są wypełniane zgodnie z wymaganymi danymi, zgodnie z konfiguracją przepływu danych, podczas gdy wymagane dokumenty są generowane. Każdy skonfigurowany format może zostać opublikowany jako część rozwiązania ER w celu wygenerowania określonych dokumentów wychodzących. Ta funkcja jest reprezentowana przez konfigurację formatu ER, która może zawierać szablony, które mogą być używane do generowania różnych dokumentów wychodzących. Użytkownicy biznesowi mogą stosować tę strukturę do zarządzania wymaganymi dokumentami biznesowymi.
 
-**Zarządzanie dokumentami biznesowymi** jest oparte na górnej części struktury ER i umożliwia użytkownikom biznesowym edytowanie szablonów dokumentów biznesowych przy użyciu usługi Microsoft Office 365 lub odpowiedniej aplikacji klasycznych pakietu Microsoft Office. Edycja dokumentów może obejmować zmianę projektów dokumentów biznesowych i dodanie symboli zastępczych dla dodatkowych danych bez zmian kodu źródłowego i nowych wdrożeń. Do aktualizacji szablonów dokumentów biznesowych nie jest wymagana znajomość struktury ER.
+**Zarządzanie dokumentami biznesowymi** jest oparte na górnej części struktury ER i umożliwia użytkownikom biznesowym edytowanie szablonów dokumentów biznesowych przy użyciu usługi Microsoft 365 lub odpowiedniej aplikacji klasycznych pakietu Microsoft Office. Edycja dokumentów może obejmować zmianę projektów dokumentów biznesowych i dodanie symboli zastępczych dla dodatkowych danych bez zmian kodu źródłowego i nowych wdrożeń. Do aktualizacji szablonów dokumentów biznesowych nie jest wymagana znajomość struktury ER.
 
 > [!NOTE]
 > Należy pamiętać, że zarządzanie dokumentami biznesowymi umożliwia modyfikowanie szablonów używanych do generowania dokumentów biznesowych, takich jak zamówienia, faktury itp. Po zmodyfikowaniu szablonu i opublikowaniu jego nowej wersji, ta wersja jest używana do generowania wymaganych dokumentów biznesowych. Do modyfikacji już wygenerowanych dokumentów biznesowych nie można używać narzędzia zarządzania dokumentami biznesowymi.
@@ -170,7 +170,7 @@ Aby skonfigurować podstawowe parametry dla wszystkich firm, należy wykonać po
 Wybrany typ dokumentu jest specyficzny dla firmy i będzie używany, gdy użytkownik pracuje z Zarządzaniem dokumentami biznesowymi w firmie, dla której jest konfigurowany wybrany typ dokumentu. Gdy użytkownik pracuje z Zarządzaniem dokumentami biznesowymi w innej firmie, ten sam wybrany typ dokumentu brdzie używany jeśli inny typ nie został skonfigurowany dla tej firmy. Jeśli typ dokumentu został skonfigurowany, będzie używany zamiast wybranego w polu **SharePoint typu dokumentu**.
 
 > [!NOTE]
-> Parametr **Typ dokumentu SharePoint** definiuje folder SharePoint jako magazyn tymczasowy dla szablonów, które można edytować za pomocą Microsoft Excel lub programu Word. Ten parametr należy skonfigurować, jeśli te aplikacje pakietu Office mają być używane do edytowania szablonów. Aby uzyskać więcej informacji, zajrzyj do [edytowania szablonu w aplikacji pakietu Office](#EditInOfficeDesktopApp). Ten parametr można pozostawić pusty, jeśli planujesz zmodyfikować szablon, korzystając tylko z funkcji w systemie Office 365. Aby uzyskać więcej informacji, zobacz temat [Edytowanie szablonów użytkownika w Office 365](#EditInOffice365).
+> Parametr **Typ dokumentu SharePoint** definiuje folder SharePoint jako magazyn tymczasowy dla szablonów, które można edytować za pomocą Microsoft Excel lub programu Word. Ten parametr należy skonfigurować, jeśli te aplikacje pakietu Office mają być używane do edytowania szablonów. Aby uzyskać więcej informacji, zajrzyj do [edytowania szablonu w aplikacji pakietu Office](#EditInOfficeDesktopApp). Ten parametr można pozostawić pusty, jeśli planujesz zmodyfikować szablon, korzystając tylko z funkcji w Microsoft 365. Aby uzyskać więcej informacji, zobacz temat [Edytowanie szablonów w Microsoft 365](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Skonfiguruj uprawnienia dostępu do pól
 
@@ -295,13 +295,13 @@ Opcja **Nowy dokument** jest zawsze dostępna dla szablonu w konfiguracji format
 
 5. Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji.
 
-Otworzy się strona **Edytor szablonów BDM**. Wybrany szablon będzie dostępny do edycji w trybie online za pomocą Office 365.
+Otworzy się strona **Edytor szablonów BDM**. Wybrany szablon będzie dostępny do edycji w trybie online za pomocą Microsoft 365.
 
 ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Edytuj szablon w Office 365</a>
+### <a name=""></a><a name="EditInOffice365">Edytuj szablon w Microsoft 365</a>
 
-Szablony można modyfikować za pomocą Office 365. Na przykład w przypadku witryny Office Online w nagłówku szablonu należy zmienić czcionkę z pola **zwykły** na **pogrubiony**. Te zmiany są automatycznie przechowywane jako szablon edytowalny, który jest przechowywany w magazynie podstawowego szablonu (domyślnie magazyn obiektów BLOB systemu Azure). Jest to skonfigurowane dla struktury ER systemu.
+Szablony można modyfikować za pomocą Microsoft 365. Na przykład w przypadku witryny Office Online w nagłówku szablonu należy zmienić czcionkę z pola **zwykły** na **pogrubiony**. Te zmiany są automatycznie przechowywane jako szablon edytowalny, który jest przechowywany w magazynie podstawowego szablonu (domyślnie magazyn obiektów BLOB systemu Azure). Jest to skonfigurowane dla struktury ER systemu.
 
 ![Strona edytora szablonów zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout2.png)
 
@@ -398,10 +398,10 @@ Podczas edytowania szablonu z formatu ER, który jest własnością bieżącego 
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Wybrałem **Edytuj dokument**, ale zamiast otwierania strony **edytora szablonów BDM** w Finance and Operations, otrzymuję przekierowanie do strony Office 365.
-Jest to znany błąd dotyczący Office 365 przekierowania. Dzieje się tak po pierwszym zalogowaniu Office 365. W celu obejścia tego problemu należy wybrać **Wstecz** w przeglądarce, aby przejść z powrotem.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Wybrałem **Edytuj dokument**, ale zamiast otwierania strony **Edytora szablonów BDM** w Finance and Operations, otrzymuję przekierowanie do strony Microsoft 365.
+Jest to znany problem z przekierowaniem Microsoft 365. Dzieje się tak po pierwszym zalogowaniu Microsoft 365. W celu obejścia tego problemu należy wybrać **Wstecz** w przeglądarce, aby przejść z powrotem.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Wiem, jak edytować szablon, używając Office 365 w pierwszej sesji aplikacji i jak używać szablonu w drugiej sesji aplikacji podczas dopasowywania szablonu, aby zobaczyć, jak zmiany wpływają na wygenerowany dokument biznesowy. Czy można to zrobić za pomocą aplikacji pulpitu Office?
+#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Wiem, jak edytować szablon, używając Microsoft 365 w pierwszej sesji aplikacji i jak używać szablonu w drugiej sesji aplikacji podczas dopasowywania szablonu, aby zobaczyć, jak zmiany wpływają na wygenerowany dokument biznesowy. Czy można to zrobić za pomocą aplikacji pulpitu Office?
 Tak, można. W pierwszej sesji aplikacji wybierz opcję **Otwórz w aplikacji klasycznej**. Szablon będzie przechowywany w tymczasowym magazynie plików i otwarty w aplikacji pulpitu Office. Następnie wykonaj następujące kroki, aby przejrzeć zmiany w szablonie w wygenerowanym dokumencie biznesowym:
 
 1. Wprowadź zmiany w szablonie przy użyciu aplikacji pulpitu pakietu Office.

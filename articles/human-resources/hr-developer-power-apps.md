@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1c5bc0776174960af6cb8a62f00e3fd7d56b1676
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: b28480ff584870e931fdc288a2652a5649268576
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793618"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893084"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Rozszerzanie za pomocą rozwiązań Power Apps i Power Automate
 
@@ -37,13 +37,13 @@ W tym artykule opisano przykładowe scenariusze rozszerzeń programu Microsoft D
 - Aby zaimportować pakiety, użytkownicy muszą mieć uprawnienie **Twórca środowisk**.
 - Aby eksportować lub importować aplikacje, musisz mieć licencję Power Apps plan 2 lub licencję próbną Power Apps Plan 2.
 
-## <a name="integration-with-office-365-power-automate"></a>Integration with Office 365, Power Automate
+## <a name="integration-with-microsoft-365-power-automate"></a>Integracja z Microsoft 365, Power Automate
 
-Aplikacja **Integracja z Office 365** może być używana do pobierania danych zespołu dla zarejestrowanych użytkowników z Microsoft Office 365. Odwołuje się ona do pracowników w module Human Resources w celu wyodrębnienia typów identyfikacji pracowników. Menedżerowie mogą sprawdzać daty ważności typów identyfikatorów pracowników etatowych. Mogą również wysłać przypomnienie pocztą e-mail, jeśli typ identyfikatora pracownika ma wygasnąć. Aparat Power Automate integruje się z platformą Power Apps w celu wysłania tego przypomnienia. Po wysłaniu przypomnienia potwierdzenie zostanie wysłane z powrotem do rozwiązania Power Apps z rozwiązania Power Automate. Typy identyfikacji to między innymi prawo jazdy, paszport i inne akceptowane formy identyfikatorów.
+Aplikacja **Integracja z Microsoft 365** może być używana do pobierania danych zespołu dla zarejestrowanych użytkowników z Microsoft 365. Odwołuje się ona do pracowników w module Human Resources w celu wyodrębnienia typów identyfikacji pracowników. Menedżerowie mogą sprawdzać daty ważności typów identyfikatorów pracowników etatowych. Mogą również wysłać przypomnienie pocztą e-mail, jeśli typ identyfikatora pracownika ma wygasnąć. Aparat Power Automate integruje się z platformą Power Apps w celu wysłania tego przypomnienia. Po wysłaniu przypomnienia potwierdzenie zostanie wysłane z powrotem do rozwiązania Power Apps z rozwiązania Power Automate. Typy identyfikacji to między innymi prawo jazdy, paszport i inne akceptowane formy identyfikatorów.
 
 Tę aplikację można rozszerzyć dla innych scenariuszy. Na przykład może ona służyć do wyświetlania informacji dotyczących urlopu zespołu, zdarzeń kalendarza i zdarzeń specyficznych dla zespołu.
 
-Aby pobrać aplikację **Integration with Office 365, Power Automate**, przejdź do sekcji [Integracja z programem Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) w Centrum pobierania Microsoft.
+Aby pobrać aplikację **Integracja z Microsoft 365, Power Automate**, przejdź do [Integracja z Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2081787) w Centrum pobierania Microsoft.
 
 ## <a name="power-automate--sql-connect-and-execute"></a>Power Automate — połączenie SQL i wykonywanie
 

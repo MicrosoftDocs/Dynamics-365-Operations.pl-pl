@@ -1,14 +1,14 @@
 ---
 title: Wymiary produktu
 description: Istnieje pięć wymiarów produktu - kolor, konfiguracja, rozmiar, styl i wersja. Wymiary produktu łączy się w grupy wymiarów, a następnie przypisuje grupy wymiarów do produktów głównych. Kombinacje wymiarów produktu decydują o definicjach wariantów produktu.
-author: cvocph
+author: t-benebo
 manager: tfehr
-ms.date: 08/03/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle
+ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -16,15 +16,15 @@ ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 72b8cd8149ab7b2074eb815231be348db62e282e
-ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
+ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3657323"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895456"
 ---
 # <a name="product-dimensions"></a>Wymiary produktu
 
@@ -107,7 +107,7 @@ Podczas testowania rozwiązań w celu zapewnienia zgodności z wymiarem wersji n
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Mapy:** Jeśli w każdej mapie są używane wymiary magazynowe, odpowiednie mapowanie relacji do tych map musi zostać zaktualizowane, tak aby obejmowało ono wymiar wersji. W rozszerzonych rozszerzeniach modelu lub tabeli odszukaj tabele, których pola zawierają wymiary magazynowe.
-1. **Funkcje rozwiązania Microsoft Dynamics 365 Commerce:** Po włączeniu wymiar wersji pojawi się w całym kodzie specyficznym dla Commerce w Dynamics 365 Supply Chain Management. Jednak wymiar wersji nie jest jeszcze obsługiwany przez bazę danych kanału Commerce ani w aplikacjach w punkcie sprzedaży (POS). To zachowanie przypomina bieżące zachowanie wymiaru konfiguracji w całym module Commerce.
+1. **Funkcje rozwiązania Microsoft Dynamics 365 Commerce:** Po włączeniu wymiar wersji pojawi się w całym kodzie specyficznym dla Commerce w Dynamics 365 Supply Chain Management. Jednak wymiar wersji nie jest jeszcze obsługiwany przez bazę danych kanału Commerce ani w aplikacjach w punkcie sprzedaży (POS) lub aplikacjach handlu elektronicznego. Te aplikacje handlowe nie obsługują użytkowników sprzedających/wysyłających lub zwracających/otrzymujących zapasy według wymiaru wersji. Funkcje wyszukiwania dostępności zapasów nie rozróżniają zapasów według wymiaru wersji w aplikacjach Commerce. To zachowanie przypomina bieżące zachowanie wymiaru konfiguracji w całym module Commerce.
 
 #### <a name="turn-on-the-version-dimension"></a>Włącz wymiar wersji
 
