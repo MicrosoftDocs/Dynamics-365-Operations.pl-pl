@@ -3,7 +3,7 @@ title: Konfiguracje wizualne interfejsu użytkownika punktu sprzedaży
 description: Ten temat zawiera informacje dotyczące układów ekranu w środowiskach POS aplikacji Dynamics 365 Commerce.
 author: boycezhu
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,15 +16,15 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a037c8514d7838b3a4797f21b3ef3f6d5736e840
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 75bce16c5e1b0898a0284659f9ce5e4716a93049
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505641"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834216"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Konfiguracje wizualne interfejsu użytkownika punktu sprzedaży
 
@@ -62,6 +62,8 @@ Profile graficzne są przypisywane do kas. Określają elementy wizualnych, któ
 > [!NOTE]
 > Wyświetlanie układu **Prawego** i daty/godziny nie jest stosowane do ekranu logowania w widoku kompaktowym.
 
+Aby zsynchronizować najnowsze konfiguracje profilów graficznych z bazą danych kanału, należy uruchomić zadanie harmonogramu dystrybucji **1090** (**Rejestrs**).
+
 ## <a name="screen-layouts"></a>Układy ekranu
 
 Konfiguracje układu ekranu decydują o akcjach, zawartości i położeniu formantów interfejsu użytkownika na ekranie **Powitalnym** i ekranie **Transakcja** w aplikacji POS.
@@ -81,6 +83,8 @@ Konfiguracje układu ekranu decydują o akcjach, zawartości i położeniu forma
 ### <a name="assignment"></a>Przypisanie
 
 Układy ekranów można przypisywać na poziomie sklepu, kasy lub użytkownika. Przypisanie użytkownikowi zastępuje przypisania do kasy i sklepu, a przypisanie na poziomie kasy ma priorytet nad przypisaniem do sklepu. W prostym scenariuszu, gdzie wszyscy użytkownicy korzystają z tego samego układu niezależnie od kasy ani roli, układ ekranu można ustawić tylko na poziomie sklepu. W scenariuszach, gdy określone kasy lub użytkownicy wymagają specjalnych układów, można je przypisać.
+
+W zależności od poziomu, na którym są przypisane układy ekranu, należy uruchomić zadania planowania dystrybucji **1070** (**Konfiguracja kanału**), **1090** (**Rejestry**) i/lub **1060** (**Personel**), aby synchronizować najnowsze konfiguracje układu ekranu z bazą danych kanału.
 
 ### <a name="layout-sizes"></a>Rozmiary układów
 

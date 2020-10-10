@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3b9a1485d37da614eea2427735e0e1323897682d
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: ed8f0351d1e16cceb6c9749f434a8980ef2be29d
+ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621335"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3835861"
 ---
 # <a name="unified-product-experience"></a>Ujednolicone działanie produktu
 
@@ -91,7 +91,7 @@ Ponieważ produkt jest reprezentowany jako jednostka SKU, pojęcia dotyczące r�
 
 ![Model danych produktów](media/dual-write-product.png)
 
-W przypadku włączenia funkcji podwójnego zapisywania aplikacje z Finance and Operations zostaną zsynchronizowane w innych aplikacjach Dynamics 365 w stanie **Wersje robocze**. Są one dodawane do pierwszej listy cen z tą samą walutą. Innymi słowy, są dodawane do pierwszej listy cen w aplikacji Dynamics 365, która odpowiada walucie firmy, w której produkt jest wydawany w aplikacji Finance and Operations. 
+W przypadku włączenia funkcji podwójnego zapisywania produktów z Finance and Operations zostaną zsynchronizowane w innych produktach Dynamics 365 w stanie **Wersje robocze**. Są one dodawane do pierwszej listy cen z tą samą walutą. Innymi słowy, są dodawane do pierwszej listy cen w aplikacji Dynamics 365, która odpowiada walucie firmy, w której produkt jest wydawany w aplikacji Finance and Operations. 
 
 Produkty domyślne z Finance and Operations operacyjnych są synchronizowane z innymi aplikacjami systemu Dynamics 365 w stanie **wersja robocza**. Aby zsynchronizować produkt z **Aktywnym** stanem, można go bezpośrednio używać w ofertach zamówień sprzedaży, na przykład należy wybrać następujące ustawienie: w obszarze **System > Administracja > Administracja systemu > Ustawienia systemu > karta Sprzedaż** wybierz opcję **Utwórz produkty w stanie aktywnym = tak**. 
 

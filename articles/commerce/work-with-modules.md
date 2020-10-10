@@ -1,9 +1,9 @@
 ---
 title: Praca z modułami
 description: W tym temacie opisano, jak i kiedy używać modułów w Microsoft Dynamics 365 Commerce.
-author: v-chgri
+author: phinneyridge
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -14,20 +14,19 @@ ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: phinneyridge
+ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: da430857801d8007244c04aadd325e99c0b882c5
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 301eb6206fb9e02c3aa7d3c07cf368ba800a1ab9
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646022"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818429"
 ---
 # <a name="work-with-modules"></a>Praca z modułami
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano, jak i kiedy używać modułów w Microsoft Dynamics 365 Commerce.
 
@@ -35,7 +34,7 @@ W tym temacie opisano, jak i kiedy używać modułów w Microsoft Dynamics 365 C
 
 Moduły są logicznymi blokami konstrukcyjnymi, które tworzą strukturę strony i mają różne cele i zakresy. Niektóre moduły są kontenerami wysokiego poziomu, a jedynym celem jest przechowywanie i organizowanie innych modułów (modułów podrzędnych). Inne moduły, takie jak prosty moduł rozmieszczenia obrazów, mają ściśle określony cel. Inne moduły, takie jak moduł karuzeli, znajdują się gdzieś między tymi dwiema kategoriami.
 
-Domyślnie witryna Dynamics 365 Commerce zawiera bibliotekę w module zestaw początkowy, która umożliwia osiągnięcie większości podstawowych scenariuszy e-Commerce. Korzystając z tych modułów, można utworzyć kompleksową witrynę e-Commerce. Jednak można również dostosować te moduły lub utworzyć nowe niestandardowe moduły dla konkretnych potrzeb. Jeśli użytkownik chce zbudować moduły niestandardowe, dostępny jest zestaw projektów Software Development Kit (SDK), który ułatwia tworzenie niestandardowych bibliotek modułów.
+Domyślnie witryna Dynamics 365 Commerce zawiera bibliotekę modułów, która umożliwia osiągnięcie większości podstawowych scenariuszy e-Commerce. Korzystając z tych modułów, można utworzyć kompleksową witrynę e-Commerce. Jednak można również dostosować te moduły lub utworzyć nowe niestandardowe moduły dla konkretnych potrzeb. Jeśli użytkownik chce zbudować moduły niestandardowe, dostępny jest zestaw projektów Software Development Kit (SDK), który ułatwia tworzenie niestandardowych bibliotek modułów.
 
 ## <a name="container-modules-and-slots"></a>Moduły i gniazda kontenera
 

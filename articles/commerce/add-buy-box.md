@@ -3,7 +3,7 @@ title: Moduł pola zakupu
 description: W tym temacie opisano moduły pola zakupu i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761304"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817092"
 ---
 # <a name="buy-box-module"></a>Moduł pola zakupu
 
@@ -75,9 +75,12 @@ Następujące ustawienia modułu pola zakupu mogą być skonfigurowane w **Ustaw
 - **Zapasy** — Aby uzyskać informacje dotyczące sposobu stosowania ustawień zapasów, należy zapoznać się z tematem [stosowanie ustawień zapasów](inventory-settings.md).
 - **Dodaj do koszyka** — Ta właściwość służy do określania zachowania po dodaniu towaru do koszyka. Możliwe wartości są **Przejdź do koszyka**, **Nie przechodź do koszyka** i **Wyświetl powiadomienia**. Gdy wartość jest ustawiona na **Przejdź do koszyka**, użytkownicy są wysyłani na stronę koszyka po dodaniu towaru. Gdy wartość jest ustawiona na **Nie przechodź do koszyka**, użytkownicy nie są wysyłani na stronę koszyka po dodaniu towaru. Gdy wartość jest ustawiona na **Wyświetlanie powiadomień**, użytkownicy będą wyświetlali powiadomienie o potwierdzeniu i mogą kontynuować przeglądanie na stronie szczegóły produktu. 
 
-    Poniższy rysunek przedstawia przykład powiadomienia o potwierdzeniu „dodanego do koszyka” w witrynie Fabrikam.
+> [!IMPORTANT]
+> Ustawienia w witrynie **Dodaj do koszyka** są dostępne w wydaniu Dynamics 365 Commerce 10.0.11. W przypadku aktualizacji ze starszej wersji Dynamics 365 Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje dotyczące aktualizowania pliku appsettings.json, zajrzyj do [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
-    ![Przykład modułu powiadomienia](./media/ecommerce-addtocart-notifications.PNG)
+Poniższy rysunek przedstawia przykład powiadomienia o potwierdzeniu „dodanego do koszyka” w witrynie Fabrikam.
+
+![Przykład modułu powiadomienia](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakcja Commerce Scale Unit
 
@@ -111,7 +114,7 @@ Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie zestawu początkowego](starter-kit-overview.md)
+[Omówienie biblioteki modułów](starter-kit-overview.md)
 
 [Moduł wyboru sklepu](store-selector.md)
 
@@ -129,6 +132,8 @@ Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości
 
 [Moduł stopki](author-footer-module.md)
 
-[Moduł udostępnienia w mediach społecznościowych](social-share-module.md)
+[Moduł udostępniania społeczności](social-share-module.md)
 
 [Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](calculated-inventory-retail-channels.md)
+
+[Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md)

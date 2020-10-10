@@ -3,7 +3,7 @@ title: Moduł wyboru sklepu
 description: W tym temacie opisano moduł wyboru sklepu i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1531b27dad4188dca96cf5728a9858f94001977c
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646142"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818257"
 ---
 # <a name="store-selector-module"></a>Moduł wyboru sklepu
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano moduł wyboru sklepu i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 
@@ -65,7 +64,7 @@ Aby ten scenariusz zadziałał, produkty należy skonfigurować tak, aby był u�
 
 Poniższy obraz pokazuje przykład modułu wyboru sklepu używanego w PDP.
 
-![Przykład modułu wyboru sklepu](./media/BOPIS.PNG)
+![Przykład modułu selektora sklepu używanego na PDP](./media/BOPIS.PNG)
 
 ## <a name="find-stores-mode"></a>Tryb znajdowania sklepu
 
@@ -73,7 +72,7 @@ Moduł Selector sklepów obsługuje także tryb **Znajdź sklepy**. W tym trybie
 
 Na poniższej ilustracji przedstawiono przykład modułu wyboru sklepu, który jest używany razem z modułem mapy na stronie lokalizacje sklepu.
 
-![Przykład modułu wyboru sklepu](./media/ecommerce-Storelocator.PNG)
+![Przykład modułu selektora sklepów i modułu mapy na stronie lokalizacji sklepów](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Renderowanie mapy
 
@@ -127,7 +126,7 @@ Aby skonfigurować moduł selektora sklepu, aby wyświetlał dostępne sklepy dl
  
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie zestawu początkowego](starter-kit-overview.md)
+[Omówienie biblioteki modułów](starter-kit-overview.md)
 
 [Moduł pola zakupu](add-buy-box.md)
 

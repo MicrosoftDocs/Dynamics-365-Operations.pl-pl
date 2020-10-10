@@ -3,7 +3,7 @@ title: Moduł harmonijki
 description: W tym temacie opisano moduły harmonijki i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1097289d339b84aa477752934afe8192e56c5ce5
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 2bb18539f610e5af05f8d9a20a0ba9f34db5c94f
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621091"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817141"
 ---
 # <a name="accordion-module"></a>Moduł harmonijki
 
@@ -80,10 +80,10 @@ Aby dodać moduł harmonijki do strony Często zadawanych pytań i ustawić wyma
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie zestawu początkowego](starter-kit-overview.md)
+[Omówienie biblioteki modułów](starter-kit-overview.md)
 
 [Moduł kontenera](add-container-module.md)
 
-[Moduł karty](add-tab.md)
+[Moduł tabularny](add-tab.md)
 
 [Moduł bloku tekstu](add-content-rich-block.md)

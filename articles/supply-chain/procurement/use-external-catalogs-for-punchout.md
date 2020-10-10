@@ -1,5 +1,5 @@
 ---
-title: Używanie katalogów zewnętrznych dla rozwiązania PunchOut eProcurement
+title: Używanie katalogów zewnętrznych dla rozwiązania PunchOut e-procurement
 description: W tym temacie wyjaśniono sposób używania zewnętrznych katalogów do tworzenia i przesyłania zapotrzebowań.
 author: mkirknel
 manager: tfehr
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f7a784e6a66c0c2df9043468e9878de161c3be0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: adeffa101aa5a17543ca531aacde2130a07086e9
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207423"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826811"
 ---
-# <a name="use-external-catalogs-for-punchout-eprocurement"></a>Używanie katalogów zewnętrznych dla rozwiązania PunchOut eProcurement
+# <a name="use-external-catalogs-for-punchout-e-procurement"></a>Używanie katalogów zewnętrznych dla rozwiązania PunchOut e-procurement
 
 [!include [banner](../includes/banner.md)]
 
@@ -50,3 +50,8 @@ Jeśli istnieje wiele kategorii zaopatrzenia, wybierz odpowiednią kategorię za
 Gdy wiersze zostaną dodane do zapotrzebowania, można dodać więcej wierszy bez korzystania z zewnętrznych katalogów. Alternatywnie możesz dodawać wiersze nadal z zewnętrznych katalogów.
 
 Gdy zapotrzebowanie jest gotowe, użyj akcji **Przepływ pracy** > **Prześlij**, aby je wysłać do zatwierdzenia.
+
+### <a name="additional-resources"></a>Dodatkowe zasoby
+
+- [Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
+- [Udoskonalenia cXML dotyczące zakupów](purchasing-cxml-enhancements.md)

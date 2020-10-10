@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 565ff2ca0475ec8a41f1d9606f7bd81403bb678c
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: 398bc231870a8573103ee7c7c63e96322b0b62a1
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793328"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821162"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-developers"></a>Katalog szkoleń dla deweloperów Dynamics 365 Commerce
 
@@ -41,4 +41,4 @@ Aby uzyskać informacje dotyczące funkcji udostępnianych innym aplikacjom Fina
 
 | Zawartość  | opis  | Format  | Długość    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Wdrażanie usługi Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Ta ścieżka uczenia opisuje sposób wdrażania środowisk Dynamics 365 Commerce i wykonywania kroków związanych z inicjowaniem procesami w przypadku pomyślnych implementacji modułu Commerce w przypadku korzystania z odpowiedniej topologii dla potrzeb biznesowych sprzedawców detalicznych. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5 godzin |
+| [Wdróż i rozszerz Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Ta ścieżka uczenia opisuje sposób wdrażania środowisk   Dynamics 365 Commerce i wykonywania kroków związanych z inicjowaniem procesami w przypadku pomyślnych implementacji modułu Commerce w przypadku korzystania z odpowiedniej topologii dla potrzeb biznesowych sprzedawców detalicznych. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5 godzin |

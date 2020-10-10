@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut eProcurement
-description: W tym temacie opisano używanie zewnętrznego katalogu (dynamicznie dostępnego katalogu dostawcy, punchout) w celu zbierania informacji ofertowych od dostawcy i dodawania ich do zapotrzebowania.
+title: Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement
+description: W tym temacie opisano używanie zewnętrznego katalogu (dynamicznie dostępnego katalogu dostawcy, PunchOut) w celu zbierania informacji ofertowych od dostawcy i dodawania ich do zapotrzebowania.
 author: mkirknel
 manager: tfehr
 ms.date: 11/02/2017
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28c9152996b7efc84b4259bd7323411df0b62258
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7aecc2c4786a1912bf5ae44f3949428c778f1df9
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207814"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826835"
 ---
-# <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut eProcurement
+# <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement
 
 [!include [banner](../includes/banner.md)]
 
@@ -81,12 +81,13 @@ Poniżej znajduje się opis znaczników zawartych w szablonie:
 |< Header >< Sender >< Credential >< Identity >< /Identity> | Tożsamość firmy nabywcy.|
 |< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|Wspólny klucz tajny firmy nabywcy.|
 |< Request deploymentMode=”” >|Środowisko testowe lub produkcyjne.|
-|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|Adres URL punktu końcowego z zewnętrznym katalogiem dostawcy.|
+|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|Adres URL punktu końcowego z zewnętrznym katalogiem PunchOut dostawcy.|
 
 ### <a name="extrinsic-elements"></a>Elementy zewnętrzne
 
-Element zewnętrzny to dodatkowe informacje, takie jak nazwa użytkownika, które zależy od użytkownika dokonującego wyboru w zewnętrznym katalogu. Element zewnętrzny jest ustawiany podczas wybierania w zewnętrznym katalogu i może być wysyłany w komunikacie żądania konfiguracji.
-Dostawca może ustanowić wymóg, aby w żądaniu konfiguracji był mu przesyłany element zewnętrzny. W takim przypadku należy dodać element zewnętrzny do listy elementów zewnętrznych na stronie **Katalog zewnętrzny** w sekcji **Format komunikatu**. Nadaj elementowi zewnętrznemu nazwę, którą dostawca może rozpoznać, i zamapuj ją na wartość. Dostępne opcje wartości: Nazwa użytkownika, Adres e-mail użytkownika lub Wartość losowa.
+Element zewnętrzny to dodatkowe informacje, takie jak nazwa użytkownika, które zależy od użytkownika dokonującego wyboru w zewnętrznym katalogu. Element zewnętrzny jest ustawiany podczas wybierania w zewnętrznym katalogu PunchOut i może być wysyłany w komunikacie żądania konfiguracji.
+Dostawca może ustanowić wymóg, aby w żądaniu konfiguracji był mu przesyłany element zewnętrzny. W takim przypadku należy dodać element zewnętrzny do listy elementów zewnętrznych na stronie **Katalog zewnętrzny** w sekcji **Format komunikatu**.
+Nadaj elementowi zewnętrznemu nazwę, którą dostawca może rozpoznać, i zamapuj ją na wartość. Dostępne opcje wartości: Nazwa użytkownika, Adres e-mail użytkownika lub Wartość losowa.
 Więcej informacji o protokole cXML można znaleźć w [witrynie internetowej cXML.org](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Komunikat ogłaszania zwrotnego
@@ -109,3 +110,7 @@ Katalog zewnętrzny można usunąć za pomocą operacji Usuń dostępnej na stro
 
 Jeśli poproszono o produkt z zewnętrznego katalogu dostawcy, nie można usunąć tego katalogu. Zamiast tego dla katalogu jest ustawiany stan nieaktywności. Jeśli chcesz usunąć dostęp do witryny z zewnętrznym katalogiem dostawcy, ale bez usuwania samego katalogu, zmień stan zewnętrznego katalogu na Nieaktywny.
 
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+- [Udoskonalenia cXML dotyczące zakupów](purchasing-cxml-enhancements.md)
+- [Używanie katalogów zewnętrznych dla rozwiązania PunchOut e-procurement](use-external-catalogs-for-punchout.md)

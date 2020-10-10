@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c46c4c060d61503779726c68d32449c87b441f1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7f170fc501e995bf9497d86501f4e086e486d0fb
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207909"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830756"
 ---
 # <a name="purchasing-policies-overview"></a>Omówienie zasad zakupów
 
@@ -102,9 +102,9 @@ Reguła zapytania ofertowego do zapotrzebowania na zakup określa kryteria, od k
 
 ### <a name="purchase-requisition-control-rule"></a>Reguła kontroli zapotrzebowania na zakup
 
-Reguła kontroli zapotrzebowania na zakup jest opcjonalna. Podczas tworzenia reguł tego typu można ustawić opcje na poszczególnych kartach:
+Reguła kontroli zapotrzebowania zakupu dla zapotrzebowań typu **zużycie** jest opcjonalna. Podczas tworzenia reguł tego typu można ustawić opcje na poszczególnych kartach:
 
--   Na karcie **Przesłanie przepływu pracy** można skonfigurować pola wymagane w wierszu zapotrzebowania zapotrzebowania, które ma zostać przesłane do zatwierdzenia, jeśli celem zapotrzebowania jest **Zużycie**.
+-   Na karcie **Przesłanie przepływu pracy** można skonfigurować pola wymagane w wierszu zapotrzebowania zapotrzebowania, które ma zostać przesłane do zatwierdzenia.
 -   Na karcie **Ilości zamówienia** można skonfigurować pola, które będą wymagane w zapotrzebowaniu na zakup w określonych warunkach. Można także wymusić ilości zamówienia.
 -   Na karcie **Daty** można określić, czy data księgowania jest taka sama jak data wymagalności
 -   Na karcie **Adres** można określić, czy użytkownik może tworzyć nowe adresy w systemie do zastosowania w zapotrzebowaniu na zakup.

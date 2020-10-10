@@ -3,7 +3,7 @@ title: Moduł galerii multimediów
 description: W tym temacie opisano moduły galerii multimediów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 9df2b91b0a57c73e395242f840c423fa8c7f2c9f
-ms.sourcegitcommit: 629988f1a704d62648d98649056931b8c33b9e08
+ms.openlocfilehash: 647387bafe8866cb1bee8c57675629af796f33e6
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3811165"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817189"
 ---
 # <a name="media-gallery-module"></a>Moduł galerii multimediów
 
@@ -97,7 +97,7 @@ Aby dodać moduł galerii multimediów do strony marketingowej, wykonaj następu
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie zestawu początkowego](starter-kit-overview.md)
+[Omówienie biblioteki modułów](starter-kit-overview.md)
 
 [Moduł pola zakupu](add-buy-box.md)
 

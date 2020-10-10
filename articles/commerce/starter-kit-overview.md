@@ -1,9 +1,9 @@
 ---
-title: Omówienie zestawu początkowego
-description: W tym temacie omówiono zestaw początkowy Microsoft Dynamics 365 Commerce.
+title: Omówienie biblioteki modułów
+description: W tym temacie omówiono bibliotekę modułów Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,29 +18,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1960e1354744fe1034783177ba331f5877d0bee7
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: dfc52dd8e14bb2e9f2f9c026ee0e058aee4cedcb
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025909"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817833"
 ---
-# <a name="starter-kit-overview"></a>Omówienie zestawu początkowego
-
+# <a name="module-library-overview"></a>Omówienie biblioteki modułów
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie omówiono zestaw początkowy Microsoft Dynamics 365 Commerce.
+W tym temacie omówiono bibliotekę modułów Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Omówienie
 
-Zestaw początkowy Dynamics 365 Commerce to zbiór modułów, za pomocą których można utworzyć witrynę sieci Web e-Commerce. Moduły mają aspekty interfejsu użytkownika (UI) i aspekty zachowania funkcjonalnego.
+Biblioteka modułów Dynamics 365 Commerce to zbiór modułów, za pomocą których można utworzyć witrynę sieci Web e-Commerce. Moduły mają aspekty interfejsu użytkownika (UI) i aspekty zachowania funkcjonalnego.
 
-Motywy mogą być stosowane do modułów w początkowym zestawie, aby zmieniać ich wygląd i działanie. W motywach używane są kaskadowe arkusze stylów (CSS). Motyw fikcyjnej witryny e-Commerce o nazwie „Fabrikam” jest dostarczany jako część zestawu początkowego i może być używany jako odwołanie.
+Motywy mogą być stosowane do modułów w bibliotece modułów, aby zmieniać ich wygląd i działanie. W motywach używane są kaskadowe arkusze stylów (CSS). Motyw fikcyjnej witryny e-Commerce o nazwie „Fabrikam” jest dostarczany jako część biblioteki modułów i może być używany jako odwołanie.
 
-## <a name="starter-kit-modules"></a>Moduły zestawu początkowego
+## <a name="module-library-modules"></a>Moduły biblioteki modułów
 
-W początkowym zestawie są dostępne następujące typy modułów:
+W bibliotece modułów są dostępne następujące typy modułów:
 
 - **Moduł kontenerów** — moduł kontenerowy jest prostym modułem działającym jako host dla innych modułów. Steruje on układem modułów znajdujących się wewnątrz tego modułu.
 - **Moduły marketingowe** — moduły marketingowe: blok zawartości, blok tekstowy, odtwarzacz wideo i moduły karuzeli. Wszystkie te moduły mogą być używane do poprezentacji zawartości. Można je umieścić na dowolnej stronie i są sterowane danymi z systemu zarządzania treścią (CMS).
