@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db9365f25c1d3e387870dd9d173077d864b3d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141529"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899356"
 ---
 # <a name="base-price-and-trade-agreements"></a>Podstawa ceny i umowy handlowe
 
@@ -58,7 +58,7 @@ Ta procedura poprowadzi przez proces tworzenia umów handlowych na cenę sprzeda
 26. W polu **Nazwa** kliknij rozwijany przycisk, aby otworzyć wyszukiwanie.
 27. Na liście wybierz **Commerce**. W danych demonstracyjnych arkusz o nazwie **Commerce** ma domyślną relację **Cena (sprzedaż)**. Oznacza to, że wszystkie nowo tworzone wiersze domyślnie są dla umów handlowych na cenę sprzedaży.  
 28. W **okienku akcji** kliknij pozycję **Wiersze**.
-29. W polu **Kod konta** wybierz opcję „Grupa”.
+29. W polu **Typ kodu strony** wybierz opcję „Grupa”.
 30. W polu **Wybór konta** kliknij rozwijany przycisk, aby otworzyć wyszukiwanie.
 31. Na liście znajdź i zaznacz odpowiedni rekord. Zakończy to operację łączenia kanału z grupą cenową, a następnie grupy z umową handlową.  
 32. W polu **Relacja produktu** wpisz wartość.

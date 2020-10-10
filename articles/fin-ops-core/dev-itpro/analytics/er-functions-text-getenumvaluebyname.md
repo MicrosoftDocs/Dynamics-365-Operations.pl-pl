@@ -3,7 +3,7 @@ title: GETENUMVALUEBYNAME, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji GETENUMVALUEBYNAME w module Raportowanie elektroniczne (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/12/2019
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33ccf358dc5355cd00d5ff41ebd8148a334cba38
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 722ea8ea233d617b0584e21e98073428f16c0801
+ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3743862"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3885234"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME, funkcja ER
 
@@ -61,11 +61,11 @@ Wyjściowa wartość wyliczenia.
 
 Wyjątek nie jest zgłaszany, jeśli wartość *wyliczenia* nie zostanie znaleziona przy użyciu nazwy wartości wyliczenia określonej jako wartość typu *Ciąg*.
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
 
 Na poniższej ilustracji wartość stałotekstowa **ReportDirection** została wprowadzona do modelu danych. Zauważ, że etykiety są zdefiniowane dla wartości wyliczenia.
 
-<p><a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for a data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+![Dostępne wartości dla wyliczenia modelu danych](./media/ER-data-model-enumeration-values.PNG)
 
 Na ilustracji przedstawiono następujące szczegóły:
 
@@ -73,8 +73,48 @@ Na ilustracji przedstawiono następujące szczegóły:
 - Wyrażenie `$IsArrivals` jest zaprojektowane tak, aby używało źródła danych **$Direction** opartego na wyliczeniu modelu jako parametru tej funkcji.
 - Wartością tego wyrażenia porównania jest **TRUE**.
 
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+![Przykład wyliczenia modelu danych](./media/ER-data-model-enumeration-usage.PNG)
+
+## <a name="example-2"></a>Przykład 2
+
+Funkcje `GETENUMVALUEBYNAME` i [`LISTOFFIELDS`](er-functions-list-listoffields.md) umożliwiają pobieranie wartości i etykiet obsługiwanych wyliczeń jako wartości tekstowe. (Obsługiwane wyliczenia to wyliczenia aplikacji, wyliczenia modeli danych i wyliczenia formatów.)
+
+Na poniższej ilustracji źródło danych **TransType** zostało wprowadzone w odwzorowaniu modelu. To źródło danych odwołuje się do wyliczenia aplikacji **LedgerTransType**.
+
+![Źródło danych mapowania modelu, które odwołuje się do wyliczenia aplikacji](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+
+Na poniższej ilustracji przedstawiono źródło danych **TransTypeList** skonfigurowane w odwzorowaniu modelu. To źródło danych jest skonfigurowane na podstawie wyliczenia aplikacji **TransType**. Funkcja `LISTOFFIELDS` służy do zwracania wszystkich wartości wyliczenia jako listy rekordów zawierających pola. W ten sposób szczegóły wszystkich wartości wyliczenia są ujawniane.
+
+> [!NOTE]
+> Pole **EnumValue** jest skonfigurowane dla źródła danych **TransTypeList** za pomocą wyrażenia `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)`. To pole zwraca wartość wyliczenia dla każdego rekordu na liście.
+
+![Źródło danych mapowania modelu, które zwraca wszystkie wartości wyliczenia wybranego wyliczenia jako listę rekordów](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+
+Na poniższej ilustracji przedstawiono źródło danych **VendTrans** skonfigurowane w odwzorowaniu modelu. To źródło danych zwraca rekordy transakcji dostawcy z tabeli aplikacji **VendTrans**. Typ księgi każdej transakcji jest określony przez wartość pola **VendTrans**.
+
+> [!NOTE]
+> Pole **TransTypeTitle** jest skonfigurowane dla źródła danych **VendTrans** za pomocą wyrażenia `FIRSTORNULL(WHERE(TransTypeList, TransTypeList.EnumValue = @.TransType)).Label`. To pole zwraca etykietę wartości wyliczenia bieżącej transakcji jako tekst, jeśli ta wartość jest dostępna. W przeciwnym razie zwraca pustą wartość ciągu.
+>
+> Pole **TransTypeTitle** jest powiązane z polem **LedgerType** modelu danych, które umożliwia używanie tych informacji w każdym formacie ER, który używa modelu danych jako źródła danych.
+
+![Źródło danych mapowania modelu, które zwraca transakcje dostawcy](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+
+Na poniższej ilustracji przedstawiono sposób użycia [debugera źródła danych](er-debug-data-sources.md) do testowania skonfigurowanego mapowania modelu.
+
+![Użycie debugera źródła danych do testowania skonfigurowanego mapowania modelu](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+
+Pole **LedgerType** model danych udostępnia etykiety typów transakcji zgodnie z oczekiwaniami.
+
+Jeśli to rozwiązanie ma być używane w przypadku dużej ilości danych transakcyjnych, należy wziąć pod uwagę wydajność wykonania. Aby uzyskać więcej informacji, zobacz [Śledzenie wykonywania formatów raportowania elektronicznego w celu rozwiązywania problemów z wydajnością](trace-execution-er-troubleshoot-perf.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje tekstowe](er-functions-category-text.md)
+
+[Śledzenie wykonywania formatów raportowania elektronicznego w celu rozwiązywania problemów z wydajnością](trace-execution-er-troubleshoot-perf.md)
+
+[LISTOFFIELDS, funkcja ER](er-functions-list-listoffields.md)
+
+[FIRSTORNULL, funkcja ER](er-functions-list-firstornull.md)
+
+[WHERE, funkcja ER](er-functions-list-where.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ae7587fc46d2907241a5da3b6329465d77b3555
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e6a3330b0123605d4c7b86cedcb8bc95b3cf6de8
+ms.sourcegitcommit: a52a789044ca66c6771224a6cf0be8749bc99e5a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383097"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3837270"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy magazynowej
 
@@ -399,6 +399,9 @@ W poniższej tabeli opisano te opcje.
 <tr class="odd">
 <td>Kod szablonu pracy</td>
 <td>Wybierz szablon pracy, który utworzy pracę dla procesu. Na przykład jeśli otrzymujesz towar dla zamówienia zakupu, praca odłożenia zostanie wygenerowana na podstawie szablonu pracy. Jeśli nie wybierzesz szablonu pracy, Supply Chain Management przypisze szablon na podstawie kryteriów kwerendy. Aby uzyskać więcej informacji dotyczących szablonów pracy, zobacz <a href="control-warehouse-location-directives.md">Kontrolowanie pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji</a>.</td>
+<tr class="even">
+<td>Pokaż listę wierszy pracy</td>
+<td>Umożliwia wybranie opcji wyświetlania pracowników i interakcji z wierszami aktualnie wybranej pracy pobrania. Aby uzyskać więcej informacji dotyczących tej opcji, zapoznaj się z tematem <a href="pick-line-overview.md">Konfigurowanie elementu menu urządzenia przenośnego w celu dostarczenia przeglądu wiersza pobrania</a>.</td>
 </tr>
 </tbody>
 </table>

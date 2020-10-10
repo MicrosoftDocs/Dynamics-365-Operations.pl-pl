@@ -3,7 +3,7 @@ title: Ustaw strony niestandardowe dla danych logowania użytkowników
 description: W tym temacie opisano, jak budować niestandardowe strony w Microsoft Dynamics 365 Commerce, które obsługują niestandardowe logowanie dla użytkowników dzierżawców Azure Active Directory (Azure AD) dla klientów indywidualnych (B2C).
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9e78a4d6dc4189c927d9ef321f1eb5a6c120ee2
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533466"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817313"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Konfiguracja stron niestandardowych do logowań użytkowników
 
@@ -181,13 +181,13 @@ Aktualizuj zasadę „Resetowanie hasła” przy użyciu niestandardowych inform
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Dostosowywanie domyślnych ciągów tekstowych dla etykiet i opisów
 
-W przypadku zestawu początkowy zestaw moduły logowania są wstępnie wypełniane domyślnymi ciągami tekstowymi dla etykiet i opisów. Można dostosować te ciągi w zestawie SDK (Software Development Kit), aktualizując wartości w pliku Global. JSON systemu logowania w module.
+W bibliotece modułów moduły logowania są wstępnie wypełniane domyślnymi ciągami tekstowymi dla etykiet i opisów. Można dostosować te ciągi w zestawie SDK (Software Development Kit), aktualizując wartości w pliku Global. JSON systemu logowania w module.
 
 Na przykład domyślny tekst dla łącza zapomnianego hasła jest **Zapomniałeś hasła?**. Poniżej przedstawiono domyślny tekst na stronie rejestracji.
 
 ![Domyślny tekst łącza zapomnianego hasła na stronie rejestracji](./media/B2C_SignUp_ModuleFace.png)
 
-Jednak w pliku global.json dla początkowego zestawu dzienników w module można edytować tekst, aby **Zapomniałeś hasła?**, jak pokazano na poniższej ilustracji.
+Jednak w pliku global.json dla modułu logowania biblioteki modułów można edytować tekst, aby **Zapomniałeś hasła?**, jak pokazano na poniższej ilustracji.
 
 ![Zaktualizowany tekst łącza w pliku global.json modułu rejestrowania](./media/B2C_CustomizingStringsForModule.png)
 

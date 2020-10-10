@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3b365bf99fcb5c97a1afe1675ddcf34a0db8f07
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e09c4ebd3ee978076ac4f1d0b71041e7c1e954be
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207863"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826907"
 ---
 # <a name="purchase-requisition-overview"></a>Omówienie zapotrzebowania na zakup
 
@@ -157,7 +157,7 @@ W niektórych przypadkach należy uruchomić procesu ZO, aby określić dostawc�
 Można wstrzymać zapotrzebowanie na zakup przez zaznaczenie pola wyboru **Wstrzymane** na stronie **Szczegóły zapotrzebowania na zakup**. Można kontynuować przetwarzanie zapotrzebowania na zakup tylko wtedy, gdy zostanie usunięte zaznaczenie tego pola wyboru.  
 
 > [!NOTE]
-> W eProcurement ZO dla zapotrzebowania na zakup mogą umożliwiać dostawcom dodawanie alternatywnych wierszy. W takim przypadku zapotrzebowanie na zakup będzie zawierało zatwierdzone zmiany.
+> W e-procurement ZO dla zapotrzebowania na zakup mogą umożliwiać dostawcom dodawanie alternatywnych wierszy. W takim przypadku zapotrzebowanie na zakup będzie zawierało zatwierdzone zmiany.
 
 ## <a name="demand-consolidation"></a>Konsolidacja popytu
 Konsolidowanie wierszy zapotrzebowania na zakup z wielu zapotrzebowań na zakup pozwala wzmocnić pozycję negocjacyjną podczas rozmów z dostawiamy, by uzyskać lepsze ceny, niższe koszty wysyłki i obsługi oraz zmniejszenie kosztów ogólnych.  

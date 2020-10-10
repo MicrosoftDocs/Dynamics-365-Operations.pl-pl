@@ -17,17 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07d121d5a68970dd29f0e77babda735de12871ca
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: d9a15f85838849796d6ce4674712636251c75bf3
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761136"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818282"
 ---
 # <a name="cart-module"></a>Moduł koszyka
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano moduły koszyka i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 
@@ -41,11 +40,11 @@ Moduł koszyka służy do renderowania danych na podstawie identyfikatora koszyk
 
 Poniższy obraz przedstawia przykład strony koszyka w witrynie Fabrikam.
 
-![Przykład modułu koszyka](./media/cart2.PNG)
+![Przykład modułu koszyka w witrynie Fabrikam](./media/cart2.PNG)
 
 Poniższy obraz przedstawia przykład strony koszyka w witrynie Fabrikam. W tym przykładzie istnieje opłata manipulacyjna dla pozycji w wierszu.
 
-![Przykład modułu koszyka](./media/ecommerce-handling-fee.png)
+![Przykład modułu koszyka z opłatą manipulacyjną dla pozycji w wierszu](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Właściwości modułu koszyka i gniazda
 

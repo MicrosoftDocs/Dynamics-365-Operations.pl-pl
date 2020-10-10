@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2ea87e4147757a584e38b819faa8a0423ec0028
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 59c8071ed20740f81854d29e21f87b2e8650d10f
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216097"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893168"
 ---
 # <a name="set-up-vendor-accounts"></a>Konfigurowanie kont odbiorców
 
@@ -66,7 +66,7 @@ Kontakty dostawców można tworzyć od podstaw. Alternatywnie można skopiować 
 
 Nie można usunąć rekordu osoby kontaktowej, jeżeli istnieje odwołanie do niej w dokumencie. Zamiast tego można zdezaktywować kontakt.  
 
-Osoby kontaktowe dostawcy można dodać do kontaktów osobistych w usłudze Microsoft Office 365. Jednakże najpierw należy skonfigurować synchronizację między Supply Chain Management a usługą Office 365 w ustawieniach synchronizacji programu Microsoft Exchange Server oraz w kreatorze instalacji programu Microsoft Outlook.
+Osoby kontaktowe dostawcy można dodać do kontaktów osobistych w usłudze Microsoft 365. Jednakże najpierw należy skonfigurować synchronizację między Supply Chain Management a usługą Microsoft 365 w ustawieniach synchronizacji Microsoft Exchange Server oraz w kreatorze instalacji Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Dostawcy w różnych firmach
 Jeśli dostawca jest zarejestrowany tylko dla jednej firmy w organizacji, a inne firmy muszą zarejestrować tego samego dostawcę, można użyć strony **Dodawanie dostawcy do innej firmy**, aby skonfigurować dostawcę do współpracy z inną firmą. Należy wybrać grupę dostawców, walutę i stan wstrzymania dla dostawcy w wybranej firmie.  

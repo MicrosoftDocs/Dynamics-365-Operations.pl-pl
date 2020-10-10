@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4acde9703c721ab7c20d1603299a10dda91b23c4
-ms.sourcegitcommit: b8f8ccab2cd9d848e5ecd71caaf0a63237e2236b
+ms.openlocfilehash: 015b595f85397fc1cf2c0368814ddc0369176f82
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2957070"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893202"
 ---
 # <a name="new-document-user-interface-in-business-document-management"></a>Nowy interfejs użytkownika dokumentu w zarządzaniu dokumentami biznesowymi
 
 [!include [banner](../includes/banner.md)]
 
-Zarządzanie dokumentami biznesowymi pozwala użytkownikom korzystać z usługi a Microsoft Office 365 lub odpowiedniej aplikacji komputerowej Microsoft Office. Edycja może obejmować zmiany projektu lub nowe wdrożenia albo użytkownicy mogą dodawać symbole zastępcze w celu dołączenia dodatkowych danych bez konieczności zmieniania kodu źródłowego. Aby uzyskać więcej informacji na temat pracy z zarządzaniem dokumentami biznesowymi, zapoznaj się z [Omówieniem zarządzania dokumentami biznesowymi](er-business-document-management.md).
+Zarządzanie dokumentami biznesowymi pozwala użytkownikom korzystać z usługi Microsoft 365 lub odpowiedniej aplikacji komputerowej Microsoft Office. Edycja może obejmować zmiany projektu lub nowe wdrożenia albo użytkownicy mogą dodawać symbole zastępcze w celu dołączenia dodatkowych danych bez konieczności zmieniania kodu źródłowego. Aby uzyskać więcej informacji na temat pracy z zarządzaniem dokumentami biznesowymi, zapoznaj się z [Omówieniem zarządzania dokumentami biznesowymi](er-business-document-management.md).
 
 Nowy interfejs użytkownika (UI) nowego dokumentu jest wyraźniejszy i wygodniejszy do używania. W obszarze **Dokument biznesowy** są wyświetlane tylko szablony dostępne dla bieżącego dostawcy.
 

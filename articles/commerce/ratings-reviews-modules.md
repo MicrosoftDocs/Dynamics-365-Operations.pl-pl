@@ -3,7 +3,7 @@ title: Moduły ocen i recenzji
 description: W tym temacie opisano moduły ocen i recenzji używane na stronach szczegółów produktów w Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 02/17/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: ee2a2a781537b592fb5f80ce424a7331c4e21d41
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: 85fb1272103eed7d6e44635b7c20438471d96b34
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071887"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817737"
 ---
 # <a name="ratings-and-reviews-modules"></a>Moduły ocen i recenzji
 
@@ -87,7 +87,7 @@ Moduł listy recenzji produktów zawiera miejsce, w którym można dodać moduł
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie zestawu początkowego](starter-kit-overview.md)
+[Omówienie biblioteki modułów](starter-kit-overview.md)
 
 [Moduł kontenera](add-container-module.md)
 

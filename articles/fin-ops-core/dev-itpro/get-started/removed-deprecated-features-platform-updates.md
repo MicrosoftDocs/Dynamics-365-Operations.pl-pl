@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje Platform
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia aktualizacji platformy z aplikacji Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b2d54cfaddc1697eda543952831e745182df2753
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 0b78401f4c1cf289247cd2d600f097ecdf6a712c
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803146"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819896"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
@@ -34,6 +34,22 @@ W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
 Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.14 aplikacji Finance and Operations
+
+> [!NOTE]
+> Wersja 10.0.14 to wersja zapoznawcza. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Dostępność aktualizacji usługi](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+
+### <a name="online-users-page"></a>Strona Zalogowani użytkownicy 
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | To jest starsza strona, która została stworzona dla poprzedniej architektury klient / serwer. Informacje na tej stronie nie zawsze są dokładne, co może być mylące i wprowadzające w błąd. |
+| **Zamieniona przez inną funkcję?**   | W przyszłej aktualizacji zostanie wyświetlona nowa strona.|
+| **Powiązane obszary produktów**         | Administrowanie systemem |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Do października 2021 ten formularz zostanie usunięty.   |
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.13 aplikacji Finance and Operations
 

@@ -3,7 +3,7 @@ title: Dyrektywy podatkowe dla Europy
 description: Można określić, aby uwzględnić wyjaśnienie kodów podatku na fakturach sprzedaży i fakturach projektu. Umożliwia drukowanie numerów odwołania na fakturach sprzedaży, fakturach niezależnych i fakturach projektu.
 author: epodkolz
 manager: AnnBe
-ms.date: 06/03/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 70c86d85b66f1b5c0bf72f80f93299c3848ca158
-ms.sourcegitcommit: c5d0bd90334e259e96df17a217b2eff03c265f07
+ms.openlocfilehash: 2f0da36e2be20d5ae8c838ed73c6e8aa1c19b621
+ms.sourcegitcommit: 814476906187480262b390ca49e487eb91738deb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3422998"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819110"
 ---
 # <a name="tax-directives-for-europe"></a>Dyrektywy podatkowe dla Europy
 
@@ -32,4 +32,4 @@ Dyrektywa UE zawiera przepisy wymagające stosowania przez wszystkie państwa cz
 - Na fakturach korygujących są drukowane numer i data pierwotnej faktury oraz przyczyna korekty.
 
 > [!NOTE]
-> Należy sprawdzić, czy na stronie **Ustawienia formularza** (**Rozrachunki z odbiorcami** > **Konfiguracja** > **Formularze** > **Ustawienia formularza** na karcie **karta Ogólne**) pole **Specyfikacja podatku** jest ustawione na **Waluta rejestracji** lub **Waluta rejestracji i firmy**.
+> Należy sprawdzić, czy pole **Specyfikacja podatku** jest ustawione na **Waluta rejestracji** lub **Waluta rejestracji i firmy** na stronie **Ustawienia formularza** na karcie **Ogólne** (**Rozrachunki z odbiorcami > Konfiguracja > Formularze > Ustawienia formularza** lub **Zarządzanie projektami i ich księgowanie > Konfiguracja > Formularze > Ustawienia formularza**).

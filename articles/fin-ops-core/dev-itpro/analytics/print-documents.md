@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9acc4c26febacf4ec7647cf436ac678e52df3973
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 25996cbccf3e9eec6fc29b80b8241e89b5b6b4a5
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772565"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893286"
 ---
 # <a name="document-printing-overview"></a>Omówienie drukowania dokumentu
 
@@ -52,7 +52,7 @@ W poniższej tabeli opisano trzy główne scenariusze drukowania.
 Ponieważ stosowane rozwiązanie różni się w zależności od scenariusza, aplikacje zawierają wbudowane usługi i narzędzia pomagające użytkownikom osiągnąć wyznaczone cele:
 
 - **Scenariusz 1** jest obsługiwany przez renderowanie w przeglądarce zawartości z klienta obsługującego format HTML5.
-- **Scenariusz 2** korzysta z aplikacji klienckich i usługi Microsoft Office 365.
+- **Scenariusz 2** korzysta z aplikacji klienckich i usługi Microsoft 365.
 - **Scenariusz 3** wymaga obsługi ze strony aplikacji klienckich oraz usług hostowanych na platformie Microsoft Azure.
 
 Oprócz platformy wdrożonej w ramach subskrypcji usługi Azure odbiorcy mogą korzystać z aplikacji rozwiązania Finance and Operations, które są zintegrowane z platformą Azure i pochodzą od jej producenta, co ułatwia korzystanie z urządzeń w domenie do drukowania dokumentów.

@@ -1,12 +1,12 @@
 ---
 title: Uzyskaj pomoc techniczną dla aplikacji Finance and Operations lub Lifecycle Services (LCS)
 description: W tym artykule opisano, jak uzyskać pomoc dotyczącą aplikacji Finance and Operations lub usługi Microsoft Dynamics Lifecycle Services (LCS).
-author: kfend
+author: EricMoos
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 09/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro, Developer, Application user
 ms.reviewer: sericks
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ac2cf0c2b78dd3456c5c1a69981a4e498b115ae
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: e839c6e29a76d7f08f23e007c1e7b8c4699c7580
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005523"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817905"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Uzyskaj pomoc techniczną dla aplikacji Finance and Operations lub Lifecycle Services (LCS)
 
@@ -30,66 +30,42 @@ ms.locfileid: "3005523"
 
 W tym artykule opisano, jak uzyskać pomoc dotyczącą aplikacji Finance and Operations lub usługi Microsoft Dynamics Lifecycle Services (LCS). 
 
-## <a name="contact-support"></a>Skontaktuj się z pomocą techniczną
-
-Informacje w tym artykule umożliwiają skontaktowanie się z firmą Microsoft w razie pytań technicznych lub jeśli potrzebujesz pomocy z dostępem do usługi Microsoft Dynamics Lifecycle Services (LCS).
-
-### <a name="finance-and-operations-apps-support"></a>Obsługa aplikacji Finance and Operations
-
-Aby uzyskać pomoc techniczną dotyczącą, skorzystaj z zasobów wymienionych w tabeli poniżej. Zasoby te są wymienione w kolejności, w jakiej zalecamy ich używać podczas rozwiązywania problemów.
-
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Zadanie</th>
 <th>Więcej informacji</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Kierowanie pytań do społeczności.</td>
-<td>Przejdź do <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">strony społeczności</span></a> użytkowników, gdzie znajdziesz odpowiedzi na pytania udzielane przez członków społeczności użytkowników systemu Dynamics.</td>
+<td>Przejdź do strony <a href="https://community.dynamics.com/">społeczności użytkowników usługi Dynamics 365</a>, gdzie znajdziesz odpowiedzi na pytania udzielane przez członków społeczności użytkowników Microsoft Dynamics.</td>
 </tr>
-<tr class="even">
-<td>Używanie narzędzia Wyszukiwanie problem.</td>
-<td>W usłudze <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a> za pomocą narzędzia Wyszukiwanie problemów można szybko wyszukać artykuły bazy wiedzy Microsoft Knowledge Base (KB), poprawki i obejścia zgłoszonych problemów wykrytych w programie Retail. Można zobaczyć, które zgłoszone problemy są w trakcie rozwiązywania lub już zostały rozwiązane dla określonego obszaru funkcjonalnego. Aby uzyskać więcej informacji, zobacz <a href="issue-search-lcs.md"><span style="color: #0066cc;">Wyszukiwanie problemów (Lifecycle Services, LCS)</span></a>.</td>
+<tr>
+<td>Uzyskiwanie pomocy na temat licencjonowania.</td>
+<td>Skontaktuj się z partnerem lub przedstawicielem handlowym firmy Microsoft.</td>
 </tr>
-<tr class="odd">
-<td>Używanie narzędzia Pomoc techniczna w chmurze.</td>
-<td>W usłudze <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a> kafelek <strong>Pomoc techniczna</strong> jest narzędziem, które pomaga zarządzać zdarzeniami pomocy technicznej. Aby przesłać problemy bezpośrednio do firmy Microsoft, kliknij kafelek <strong>Pomoc techniczna</strong> w projekcie usługi LCS. Z wyświetlonego okna można przesyłać problemy na dwa sposoby:
+<tr>
+<td>Używanie narzędzia <strong>Wyszukiwanie problemu</strong>.</td>
+<td>W <a href="https://lcs.dynamics.com/">LCS</a> za pomocą narzędzia <strong>Wyszukiwanie problemów</strong> można szybko wyszukać artykuły bazy wiedzy Microsoft Knowledge Base (KB), poprawki i obejścia zgłoszonych problemów wykrytych w programie. Możesz zobaczyć, które zgłoszone problemy są w trakcie naprawiania dla określonego obszaru funkcjonalnego, a które już zostały naprawione. Aby uzyskać więcej informacji, zobacz <a href="issue-search-lcs.md">Wyszukiwanie problemów (Lifecycle Services, LCS)</a>.</td>
+</tr>
+<tr>
+<td>Uzyskiwanie pomocy w aplikacji.</td>
+<td>Wybierz przycisk <strong>Pomoc</strong> (<strong>?</strong>) znajdujący się w prawym górnym rogu aplikacji, a następnie wybierz opcję <strong>Pomoc techniczna</strong>. Problemy są raportowane na karcie <strong>Aktywnych problemów</strong> w LCS. Administratorzy mogą określić, czy powinni świadczyć pomoc techniczną w firmie, czy też wysłać problemy do rozwiązania Microsoft.</td>
+</tr>
+<tr>
+<td>Prześlij zgłoszenie problemu do zespołu pomocy technicznej Microsoft.</td>
+<td>W usłudze <a href="https://lcs.dynamics.com/">LCS</a> kafelek <strong>Pomoc techniczna</strong> otwiera narzędzie, które pomaga zarządzać zdarzeniami pomocy technicznej. Aby przesłać problemy bezpośrednio do firmy Microsoft, wybierz kafelek <strong>Pomoc techniczna</strong> w projekcie usługi LCS. Następnie możesz zgłaszać problemy na dwa sposoby:
 <ul>
-<li>Na karcie <strong>Aktywny problem</strong> zaznacz swój problem, a następnie kliknij opcję <strong>Prześlij do Microsoft</strong>.</li>
-<li>Na karcie <strong>Przesłano do firmy Microsoft</strong> kliknij przycisk <strong>Prześlij nowe zdarzenie</strong>, aby zgłosić problem.</li>
+<li>Na karcie <strong>Aktywny problem</strong> zaznacz swój problem, a następnie wybierz opcję <strong>Prześlij do Microsoft</strong>.</li>
+<li>Na karcie <strong>Przesłano do firmy Microsoft</strong> wybierz pozycję <strong>Prześlij zdarzenie</strong>, a następnie postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby przesłać zdarzenie. Po przesłaniu zdarzenia otrzymasz wiadomość e-mail od inżyniera pomocy technicznej Microsoft, który jest przypisany do sprawy.</li>
 </ul>
-Uwaga: Klienci partnerzy uczestniczący w programie Microsoft Premier mogą przy użyciu powyższych kroków przesyłać także zgłoszenia o pomoc techniczną typu Premier.</td>
+</td>
 </tr>
-<tr class="even">
-<td>Prześlij zgłoszenie problemu do zespołu pomocy technicznej.</td>
-<td>Jeśli masz problemy przy próbie wysłania zgłoszenia do firmy Microsoft za pomocą kafelka <strong>Pomoc techniczna</strong> w usłudze LCS, zobacz <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Kontakt z pomocą techniczną dla rozwiązań Microsoft Business Solutions</span></a>, gdzie znajdziesz dane kontaktowe regionalnego centrum operacyjnego systemu Microsoft Dynamics. Zespół pomocy technicznej może pomóc rozwiązać następujące rodzaje problemów technicznych:
-<ul>
-<li>Błędy występujące podczas korzystania z usługi LCS lub problemy w trakcie próby uzyskania dostępu do usługi LCS.</li>
-<li>Błędy występujące podczas używania aplikacji Finance and Operations.</li>
-</ul>
-W razie pytań technicznych związanych z logowaniem i uzyskiwaniem dostępu do witryny CustomerSource, szkoleniami internetowymi, wyszukiwaniem, bazą wiedzy, pobieraniem plików lub błędami na stronach i błędami systemowymi przejdź do <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">strony pomocy technicznej dla witryn sieci web</span></a>.</td>
-</tr>
-<tr class="odd">
-<td>Uzyskiwanie pomocy na temat licencjonowania aplikacji Finance and Operations.</td>
-<td>Skontaktuj się z partnerem, odsprzedawcą hurtowym (LAR) lub przedstawicielem handlowym firmy Microsoft.</td>
-</tr>
-<tr class="even">
-<td>Używanie pulpitu nawigacyjnego monitorowania zdarzeń w usłudze LCS.</td>
-<td>Aby wyświetlić obecną kondycję platformy i usług, przejdź do sekcji <strong>Środowiska</strong> w swoim projekcie usługi LCS.</td>
+<tr>
+<td>Wnioskowanie o nowe cechy i funkcje.</td>
+<td>Odwiedź <a href="https://experience.dynamics.com/ideas/">pomysły dotyczące aplikacji Dynamics 365</a>, aby wyświetlić, wyszukać lub zagłosować na istniejące pomysły lub dodać nowe pomysły.</td>
 </tr>
 </tbody>
 </table>
-
-
-## <a name="additional-resources"></a>Dodatkowe zasoby
-- [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 Retail](../../../retail/retail-support.md)
-- [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Microsoft Dynamics 365 Human Resources](../../../human-resources/hr-admin-troubleshooting-support.md)
-- Aby uzyskać więcej informacji na temat ofert pomocy technicznej usługi Microsoft Dynamics, zobacz [Zarządzanie rozwiązaniami dotyczącymi pomocy technicznej aplikacji Finance and Operations](cloud-powered-support-lcs.md).
-
