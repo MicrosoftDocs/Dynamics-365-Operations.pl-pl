@@ -3,7 +3,7 @@ title: Omówienie płatności wielokanałowych
 description: W tym temacie są omówione płatności wielokanałowe w programie Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
-ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
+ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3613184"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819820"
 ---
 # <a name="omni-channel-payments-overview"></a>Omówienie płatności wielokanałowych
 
@@ -92,6 +92,9 @@ Obsługiwane są następujące scenariusze płatności wielokanałowych:
 - Kup w biurze obsługi, odbierz w sklepie
 - Kup w sklepie A, odbierz w sklepie B
 - Kup w sklepie A, wyślij na adres odbiorcy
+
+    > [!NOTE]
+    > Płatności dokonywane w biurach rozmów telefonicznych, które są mapowane na „normalną” funkcję płatności, muszą zostać oznaczone jako **Przedpłata** = **Tak**, aby zostały odzwierciedlone w kwocie należnej podczas odwoływania zamówienia w punkcie sprzedaży. Płatności bez przedpłaty typu „Normalne” nie są rozpoznawane w momencie wycofania zamówienia w punkcie sprzedaży. 
 
 Są także obsługiwane odmiany tych scenariuszy. Na przykład zamówienie online może zawierać zarówno wiersze, które zostaną wysłane do odbiorcy, jak i wiersze, które zostaną odebrane w sklepie. Wszystkie opcje realizacji zamówień są obsługiwane przez płatności wielokanałowe. 
 
@@ -190,8 +193,8 @@ Wykonaj scenariusz, postępując w następujący sposób:
 2. Na stronie **Transakcja** dodaj Karen Berg do transakcji, wprowadzając wartość **2001** za pomocą klawiatury numerycznej.
 3. Dodaj jeden lub więcej wierszy do transakcji.
 4. Naciśnij przycisk **Zamówienia**, aby wyświetlić opcje zamówienia.
-5. Wybierz opcję **Pobierz wszystko**, a następnie, po wyświetleniu monitu, wybierz opcję **Zamówienieodbiorcy**.
-6. Na pasku wyszukiwania wpisz **Seattle**, a następnie wybierz sklep **Seattle** jako miejsce odbioru. 
+5. Wybierz opcję **Wyślij wszystko**, a następnie, po wyświetleniu monitu, wybierz opcję **Zamówienie odbiorcy**.
+6. Na stronie Metoda wysyłki wybierz opcję **Standardowa noc**, a następnie kliknij przycisk **OK**, aby zaakceptować datę dzisiejszą jako datę wysyłki. 
 7. Kliknij przycisk **OK**, aby zaakceptować bieżącą datę jako datę odbioru.
 8. Wybierz opcję **Płatność kartą**, aby zainicjować płatność.
 9. Dokonaj płatności kartą na kwotę należną za depozyt. 
@@ -233,5 +236,5 @@ W przypadku odbierania zamówienia z więcej niż jedną metodą płatności i w
 
 - [Płatności — często zadawane pytania](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Łącznik płatności usługi Dynamics 365 dla Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+- [Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 

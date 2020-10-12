@@ -1,9 +1,9 @@
 ---
 title: Zasady podziału księgowań
-description: Ten artykuł zawiera informacje o zasadach podziału księgowań oraz opis opcji dostępnych do przetwarzania tych zasad. Zasady podziału księgowań są używane do przypisywania kwot pieniężnych z dokumentu źródłowego do określonych kont księgowych.
+description: Ten temat zawiera informacje o zasadach podziału księgowań oraz opis opcji dostępnych do przetwarzania tych zasad.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e9f185ac95371bb841e55184650b8089040676c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: c9a627ba33065086d21c758a1b8d8f2fa2f6ef02
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772267"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819846"
 ---
 # <a name="accounting-distributions"></a>Zasady podziału księgowań
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera informacje o zasadach podziału księgowań oraz opis opcji dostępnych do przetwarzania tych zasad. Zasady podziału księgowań są używane do przypisywania kwot pieniężnych z dokumentu źródłowego do określonych kont księgowych. 
+Ten temat zawiera informacje o zasadach podziału księgowań oraz opis opcji dostępnych do przetwarzania tych zasad. Zasady podziału księgowań są używane do przypisywania kwot pieniężnych z dokumentu źródłowego do określonych kont księgowych. 
 
 Zasady podziału księgowań są funkcją na poziomie programu, która jest używana i rozszerzona przez każdy dokument źródłowy, taki jak zamówienie zakupu, faktura od dostawcy, raport z wydatków i faktura niezależna. Domyślnie generowane są domyślne zasady podziału księgowań dla każdego wiersza dokumentu źródłowego i kwoty pieniężnej i jest włączony do modyfikacji warunkowo. 
 
-> [!Note] 
+> [!NOTE] 
 > Niektóre dokumenty obsługują również kwoty pieniężne nagłówka dokumentu, takie jak opłaty dla zamówień i faktur. 
 
 Ogólne funkcje zasad podziału księgowań oferują następujące opcje przetwarzania zasad podziału księgowań:
@@ -44,17 +44,16 @@ Ogólne funkcje zasad podziału księgowań oferują następujące opcje przetwa
     -   Zasady podziału pokazują datę księgowania i zdarzenie księgowania. Zazwyczaj zdarzenie księgowe jest ustawione na **Brak**, aż do zaksięgowania dokumentu lub umieszczeniu go w arkuszu. W tym momencie zdarzenie księgowe staje się **Oryginałem**. Zaksięgowane zasady podziału można modyfikować.
     -   Przycisk **Podziel** może być włączony dla nadrzędnych zasad podziału. Za pomocą przycisku **Podziel** można wygenerować nowe zasady podziału księgowań i podział może być oparty na wartości procentowej, kwocie lub ilości.
     -   Przycisk **Podziel równo** może być używany w połączeniu z przyciskiem **Podziel**, aby automatycznie alokować kwotę równo między wszystkie zasady podziału księgowań.
-    -   Przycisk **Resetuj** może być włączony dla nadrzędnych zasad podziału księgowań, gdy istnieje więcej niż jedna zasada. Przycisk **Resetuj** powoduje wycofanie wszystkich ręcznych modyfikacji zasad podziału księgowań przez usunięcie wszystkich istniejących zasad podziału księgowań i ponowne wygenerowanie domyślnych zasad podziału księgowań.
+    -   Przycisk **Resetuj** może być włączony dla nadrzędnych zasad podziału księgowań, gdy istnieje więcej niż jedna dystrybucja. Przycisk **Resetuj** powoduje wycofanie wszystkich ręcznych modyfikacji zasad podziału księgowań przez usunięcie wszystkich istniejących zasad podziału księgowań i ponowne wygenerowanie domyślnych zasad podziału księgowań.
     -   Wszelkie podrzędne zasady podziału księgowań, takie jak rabat, opłata i podatek, zawsze mają nadrzędną zasadę podziału księgowań. Można wyświetlić relację nadrzędny/podrzędny w menu **Odwołanie** &gt; **Informacje nadrzędne**.
     -   Konto główne i wymiary finansowe mogą być edytowane również dla podrzędnych.
-    -   Wymiary finansowe dotyczące zasad podziału księgowań są zgodne z domyślnym wzorcem zakładającym, że dokument może być rozszerzany. Aby uzyskać szczegółowe informacje, zobacz powiązane artykuły.
+    -   Wymiary finansowe dotyczące zasad podziału księgowań są zgodne z domyślnym wzorcem zakładającym, że dokument może być rozszerzany.
     -   Zasady podziału księgowań dla odchylenia mogą być generowane w scenariuszach uzgadniania, takich jak uzgadnianie między fakturą od dostawcy a zamówieniem zakupu. Można wyświetlić relacje uzgadniania między zasadami podziału księgowań w menu **Odwołanie** &gt; **Informacje o dokumencie**.
     -   Przycisk **Popraw** jest dostępny dla dokumentów, które obsługują korekty. Przycisk **Popraw** tworzy nowe zasady podziału księgowań. Najpierw zasady podziału księgowań są tworzone w celu rezerwacji oryginalnych zasad podziału księgowań. Te zasady podziału księgowań nie mogą być modyfikowane. Następnie tworzona jest nowa prawidłowa zasad podziału księgowań. Te zasady podziału księgowań mogą być modyfikowane, jeśli oryginalne zasady podziału księgowań mogły być modyfikowane.
     -   Przycisk **Szczegóły projektu** jest włączony jako rozszerzenie, jeśli wiersz jest powiązany z projektem. Zasady podziału księgowań projektu umożliwiają modyfikowanie szczegółów, takich jak źródła finansowania i właściwości wiersza.
     -   Można wyświetlić bieżący stan księgowania dokumentu w menu **Odwołanie**. Stan dotyczy całego dokumentu i wskazuje, czy dokument jest w toku, czy też został zakończony.
--   **Wyświetl dystrybucje** — Wyświetlanie zasad podziału księgowań dla wszystkich wierszy i kwot pieniężnych w dokumencie. Nie można zmodyfikować zasad podziału księgowań w tym widoku.
+-   **Wyświetl dystrybucje** – Wyświetlanie zasad podziału księgowań dla wszystkich wierszy i kwot pieniężnych w dokumencie. Nie można zmodyfikować zasad podziału księgowań w tym widoku.
 
+W wersji 10.0.13 dodano funkcję sprawdzającą poprawność tabeli zasad podziału księgowań, aby upewnić się, że nowe pola są poprawnie skonfigurowane. Ta funkcja nazywa się **Włącz dodatkową weryfikację poprawności danych dla dokumentów za pomocą struktury księgowej dokumentów źródłowych**. Aby korzystać z tej funkcji, należy ją włączyć za pomocą obszaru roboczego **Zarządzanie funkcjami**. Aby włączyć tę funkcję, wyszukaj nazwę funkcji w polu **Wyszukiwania** na stronie **Zarządzanie funkcjami**, a następnie wybierz pozycję **Włącz teraz**.
 
 Aby uzyskać więcej informacji, zobacz [Zasady podziału księgowań i zapisów w arkuszu księgi podrzędnej dla faktur od dostawcy](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
-
-

@@ -3,7 +3,7 @@ title: Moduł kontenera
 description: W tym temacie opisano moduły kontenerów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c7d607047aab92144932b4b59db050a588d6483d
-ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
+ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3417353"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817409"
 ---
 # <a name="container-module"></a>Moduł kontenera
 
@@ -123,11 +123,11 @@ Aby dodać moduł kontenera do nowej strony i ustawić wymagane właściwości, 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie zestawu początkowego](starter-kit-overview.md)
+[Omówienie biblioteki modułów](starter-kit-overview.md)
 
-[Moduł harmonijki](add-accordion.md)
+[Moduł typu accordion](add-accordion.md)
 
-[Moduł karty](add-tab.md)
+[Moduł tabularny](add-tab.md)
 
 [Moduł karuzeli](add-carousel.md)
 

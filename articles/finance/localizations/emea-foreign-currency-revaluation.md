@@ -1,7 +1,7 @@
 ---
 title: Przeszacowanie w walucie obcej dla kont bankowych
 description: Ten temat zawiera informacje o przeszacowywaniu w walucie obcej dla kont bankowych.
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 11464
 ms.search.region: Czech Republic, Estonia, Latvia, Lithuania, Poland
-ms.author: shylaw
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cc02e12e619342097891fdd0c851176ee0bcd4d
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ad77b65f38b5f3b792e61634f09da916470d2d1d
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552355"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899535"
 ---
 # <a name="foreign-currency-revaluation-for-bank-accounts"></a>Przeszacowanie w walucie obcej dla kont bankowych
 

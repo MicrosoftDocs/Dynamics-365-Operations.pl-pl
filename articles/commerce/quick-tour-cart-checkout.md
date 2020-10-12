@@ -3,7 +3,7 @@ title: Omówienie stron koszyka i realizacji zamówienia
 description: Ten temat stanowi omówienie stron koszyka i realizacji transakcji w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c879b90cf49dcab9cf069e4f3613602bd6673aa9
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527575"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817785"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Omówienie stron koszyka i realizacji zamówienia
 
@@ -40,7 +40,7 @@ Strona realizacja klienta w witrynie e-Commerce zawiera przebieg procesu krok po
 
 Strona koszyka służy jako torba do zakupów i zawiera wszystkie towary dodane do koszyka.
 
-Na poniższej ilustracji przedstawiono przykład strony koszyka, która została utworzona przy użyciu zestawu stratowego online i motywu „Fabrikam”.
+Poniższa ilustracja pokazuje przykład strony koszyka zbudowanej przy użyciu biblioteki modułów online i motywu „Fabrikam”.
 
 ![Przykład strony koszyka](./media/cart2.PNG)
 
@@ -56,7 +56,7 @@ Aby uzyskać informacje dotyczące sposobu tworzenia strony koszyka, zapoznaj si
 
 Strona realizacja jest miejscem, w którym odbiorcy wprowadzają informacje wymagane do zrealizowania zamówienia.
 
-Na poniższej ilustracji przedstawiono przykład strony realizacji, która została utworzona przy użyciu zestawu stratowego online.
+Na poniższej ilustracji przedstawiono przykład strony realizacji, która została utworzona przy użyciu biblioteki modułów.
 
 ![Przykład strony realizacji](./media/Checkout.PNG)
 
@@ -66,7 +66,7 @@ Główną treścią strony realizacja jest to, gdzie są zbierane wszystkie info
 
 Adres wysyłkowy jest wymagany, jeśli towary muszą zostać wysłane. Dla każdego ustawienia regionalnego można skonfigurować format adresów wysyłkowych Dynamics 365 Commerce. Jeśli na przykład towary zostaną wysłane do Stanów Zjednoczonych, adres wysyłkowy musi zawierać adres ulicy, stan i kod pocztowy. Niektóre podstawowe czynności sprawdzające dotyczą pól adresu wysyłkowego, takich jak sprawdzanie poprawności znaków alfanumerycznych, długość maksymalna oraz liczby. Chociaż ważność samego adresu nie jest weryfikowana, weryfikację można wykonać za pomocą dostosowanych usług innych firm.
 
-Adres wysyłkowy jest stosowany do wszystkich towarów w koszyku, dla których wybrano opcję „wyślij”. W przypadku użycia przepływu realizacji dostępnego w trybie online zestawu początkującego poszczególne towary w koszyku nie mogą być wysyłane pod różne adresy. Jeśli ta możliwość jest wymagana, można ją zaimplementować poprzez dostosowanie modułów realizacji transakcji.
+Adres wysyłkowy jest stosowany do wszystkich towarów w koszyku, dla których wybrano opcję „wyślij”. W przypadku użycia przepływu realizacji dostępnego w trybie online biblioteki modułów, poszczególne towary w koszyku nie mogą być wysyłane pod różne adresy. Jeśli ta możliwość jest wymagana, można ją zaimplementować poprzez dostosowanie modułów realizacji transakcji.
 
 Po podanym adresie wysyłkowym zostaną wyświetlone metody wysyłki dostępne w sklepie internetowym Dynamics 365 Commerce. Metody wysyłki i adresy, które obsługuje, mogą być konfigurowane w module Commerce.
 
@@ -80,7 +80,7 @@ Podczas procesu realizacji transakcji odbiorca, który jest członkiem programu 
 
 #### <a name="gift-cards"></a>Karty upominkowe
 
-Wewnętrzne karty upominkowe na potrzeby zestawu początkującego online można zrealizować na zamówienie. Aby można było zastosować wewnętrzną kartę upominkową, odbiorca musi być zalogowany. W przypadku dodatkowych zabezpieczeń zalecane jest dostosowanie przepływu przy użyciu osobistego numeru identyfikacyjnego (PIN) dla wewnętrznych kart upominkowych.
+Biblioteka modułów umożliwia zrealizowanie wewnętrznych kart podarunkowych na zamówienie. Aby można było zastosować wewnętrzną kartę upominkową, odbiorca musi być zalogowany. W przypadku dodatkowych zabezpieczeń zalecane jest dostosowanie przepływu przy użyciu osobistego numeru identyfikacyjnego (PIN) dla wewnętrznych kart upominkowych.
 
 ### <a name="signed-in-and-guest-users"></a>Zalogowani użytkownicy i goście
 

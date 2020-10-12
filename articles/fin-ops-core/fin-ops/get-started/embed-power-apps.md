@@ -1,9 +1,9 @@
 ---
-title: Osadzone Power Apps
-description: W tym temacie opisano sposób osadzania aplikacji Power Apps na kliencie w celu rozszerzenia funkcjonalności produktu.
+title: Osadzone aplikacje kanwy z Power Apps
+description: W tym temacie opisano sposób osadzania aplikacji kanwy z Microsoft Power Apps na kliencie w celu rozszerzenia funkcjonalności produktu.
 author: jasongre
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,36 +16,39 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e57e4567a80aa9f9ba5ac434b0d71204460e164f
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042949"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893114"
 ---
-# <a name="embed-microsoft-power-apps"></a>Osadzone Microsoft Power Apps
+# <a name="embed-canvas-apps-from-power-apps"></a>Osadzone aplikacje kanwy z Power Apps
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations obsługuje integrację z Microsoft Power Apps — usługą dla deweloperów i użytkowników nietechnicznych, która umożliwia tworzenie niestandardowych aplikacji biznesowych dla urządzeń przenośnych, tabletów i sieci web bez pisania kodu. Aplikacje Power Apps opracowane przez użytkownika, organizację lub członków szerszego ekosystemu można następnie osadzać w aplikacjach Finance and Operations w celu rozszerzenia funkcjonalności produktu. Na przykład można utworzyć aplikację Power Apps celem uzupełnienia aplikacji Finance and Operations o informacje pobrane z innego systemu.
+Usługa Microsoft Power Apps to usługa, która umożliwia deweloperom i użytkownikom nietechnicznym tworzenie niestandardowych aplikacji biznesowych dla urządzeń przenośnych, tabletów i sieci Web bez pisania kodu. Aplikacje Finance and Operations obsługują integrację z Power Apps. Aplikacje kanwy, które tworzysz Ty, Twoja organizacja lub szerszy ekosystem, można osadzać w aplikacjach Finance and Operations, aby zwiększyć funkcjonalność produktu. Na przykład można utworzyć aplikację kanwy Power Apps celem uzupełnienia aplikacji Finance and Operations o informacje pobrane z innego systemu.
 
 Aby uzyskać więcej informacji o osadzaniu Power Apps , obejrzyj krótki film [Jak osadzać Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
-## <a name="adding-an-embedded-app-from-power-apps-to-a-page"></a>Dodawanie osadzonej aplikacji Power Apps do strony
+## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Dodawanie osadzonej aplikacji kanwy Power Apps do strony
 
 ### <a name="overview"></a>Omówienie
 
-Przed osadzeniem aplikacji Power Apps w kliencie najpierw należy odnaleźć lub utworzyć aplikację z żądanymi elementami wizualnymi i/lub funkcjami. Tutaj nie opiszemy szczegółowego procesu kompilowania aplikacji. Temat [Wprowadzenie do Power Apps](https://docs.microsoft.com/powerapps/getting-started) jest dobrym punktem wyjściowym dla nowych użytkowników Power Apps.
+Przed osadzeniem aplikacji kanwy z Power Apps w kliencie musisz znaleźć lub skompilować aplikację, która ma żądane wizualizacje lub funkcje. Ten temat nie zawiera szczegółowego opisu procesu kompilowania aplikacji. Jeśli jesteś nowym użytkownikiem Power Apps, zajrzyj do [dokumentacja Power Apps](https://docs.microsoft.com/powerapps/).
 
-Gdy masz wszystko gotowe do rozpoczęcia osadzania konkretnej aplikacji, możesz wybrać jeden z dwóch sposobów dostępu do aplikacji na stronie — zależnie od tego, który scenariusz lepiej Ci pasuje. Pierwszy sposób to użycie przycisku Power Apps, który został dodany do standardowego okienka akcji. Aplikacje dodane za pomocą tego mechanizmu będą wyświetlane jako elementy menu wewnątrz przycisku menu Power Apps. Wybranie elementu menu spowoduje otwarcie okienka bocznego zawierającego odpowiednią osadzoną aplikację. Alternatywnie można wybrać wyświetlanie aplikacji bezpośrednio na stronie w postaci nowej karty, karty skróconej, bloku lub nowej sekcji w obszarze roboczym.
+Istnieją dwa sposoby uzyskania dostępu do określonej aplikacji kanwy na stronie, gdy jesteś gotowy do osadzenia aplikacji. W zależności od sytuacji można wybrać lepsze podejście. Pierwszy sposób to użycie przycisku **Power Apps**, który został dodany do standardowego okienka akcji. Aplikacje dodane przy użyciu tej metody są wyświetlane jako elementy na przycisku menu **Power Apps**. Po wybraniu jednego z tych elementów pojawi się panel boczny zawierający osadzoną aplikację. Alternatywnie można wybrać wyświetlanie aplikacji bezpośrednio na stronie w postaci nowej karty, karty skróconej lub bloku lub nowej sekcji w obszarze roboczym.
 
-Podczas konfigurowania osadzonej aplikacji, można wybrać jedno pole, którego zawartość ma być wysyłana jako dane kontekstualne do aplikacji. Dzięki temu aplikacja może reagować na podstawie danych obecnie wyświetlanych.
+Podczas konfigurowania osadzonej aplikacji kanwy, można wybrać jedno pole, którego zawartość ma być wysyłana jako dane kontekstualne do aplikacji. Ten krok umożliwia aplikacji reagowanie na podstawie aktualnie wyświetlanych danych.
+
+> [!NOTE]
+> Nie można obecnie stosować tego mechanizmu do osadzania modelowanych aplikacji.  
 
 ### <a name="details"></a>Szczegóły
 
-Poniższe instrukcje przedstawiają sposoby osadzania aplikacji Power Apps w kliencie internetowym.
+Poniższa procedura przedstawiaja sposoby osadzania aplikacji kanwy z Power Apps w kliencie internetowym.
 
-1. Przejdź do strony, w której chcesz osadzić aplikację. Jest to ta sama strona, która zawiera wszelkie dane, jakie muszą zostać przekazane do aplikacji jako dane wejściowe.
+1. Przejdź do strony, w której chcesz osadzić aplikację kanwy. Ta strona będzie stroną zawierającą dane, które należy przekazać do aplikacji jako dane wejściowe.
 2. Otwórz okno **Dodawanie aplikacji z Power Apps**:
 
     - Kliknij przycisk **Opcje**, a następnie wybierz opcję **Personalizuj tę stronę**. W menu **Wstaw** wybierz polecenie **Power Apps**. Na koniec wybierz region, w którym chcesz dodać aplikację. Jeśli chcesz osadzić aplikację w przycisku menu Power Apps, wybierz okienko akcji. Jeśli chcesz osadzić aplikację bezpośrednio na stronie, wybierz odpowiednią kartę, kartę skróconą, blok lub sekcję (jeśli pracujesz w obszarze roboczym).
@@ -54,8 +57,8 @@ Poniższe instrukcje przedstawiają sposoby osadzania aplikacji Power Apps w kli
 3. Konfigurowanie osadzonej aplikacji:
 
     - Pole **Nazwa** wskazuje tekst, jaki będzie wyświetlany na przycisku lub karcie zawierającej osadzoną aplikację. Często w tym polu warto powtórzyć nazwę aplikacji.
-    - **Identyfikator aplikacji** to identyfikator GUID aplikacji, która ma być osadzona. Aby pobrać tę wartość, odszukaj aplikację na stronie [web.powerapps.com](https://web.powerapps.com), a następnie odszukaj pole **Identyfikator aplikacji** w obszarze **Szczegóły**.
-    - W obszarze **Dane wejściowe dla aplikacji** można opcjonalnie wybrać pole zawierające dane, które mają być przekazywane do aplikacji jako dane wejściowe. Zobacz w dalszej części tego tematu sekcję zatytułowaną [Kompilowanie aplikacji wykorzystującej dane wysłane z aplikacji Finance and Operations](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps), gdzie dowiesz się dokładnie, jak aplikacja może uzyskiwać dostęp do danych wysyłanych z aplikacji Finance and Operations.
+    - Pole **Identyfikator aplikacji** wskazuje unikatowy identyfikator globalny (GUID) dla aplikacji obszaru roboczego, która ma zostać osadzona. Aby pobrać tę wartość, odszukaj aplikację na stronie [web.powerapps.com](https://web.powerapps.com), a następnie odszukaj pole **Identyfikator aplikacji** w obszarze **Szczegóły**.
+    - W obszarze **Dane wejściowe dla aplikacji** można opcjonalnie wybrać pole zawierające dane, które mają być przekazywane do aplikacji jako dane wejściowe. Zobacz w dalszej części tego tematu sekcję zatytułowaną [Kompilowanie aplikacji wykorzystującej dane wysłane z aplikacji Finance and Operations](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps), gdzie dowiesz się dokładnie, jak aplikacja może uzyskiwać dostęp do danych wysyłanych z aplikacji Finance and Operations.
     - Wybierz wartość **Rozmiar aplikacji** pasującą do typu osadzanej aplikacji. Wybierz opcję **Ograniczona** dla aplikacji przeznaczonych do urządzeń przenośnych, a opcję **Rozbudowana** dla aplikacji przeznaczonych do tabletów. To zagwarantuje przeznaczenie wystarczającej ilości miejsca na wbudowaną aplikację.
     - Na skróconej karcie **Firmy** można wybrać firmy, dla których aplikacja będzie dostępna. Domyślnie aplikacja jest wyświetlana we wszystkich firmach. Ta opcja jest dostępna tylko wtedy, gdy jest wyłączona funkcja [Zapisanych widoków](saved-views.md). 
 
@@ -63,16 +66,23 @@ Poniższe instrukcje przedstawiają sposoby osadzania aplikacji Power Apps w kli
 
 ## <a name="sharing-an-embedded-app"></a>Udostępnianie osadzonej aplikacji
 
-Po osadzeniu aplikacji na stronie i sprawdzeniu, że działa poprawnie z każdym kontekstem danych przekazanym ze strony, można udostępnić osadzoną aplikację innym użytkownikom w systemie. Można to zrobić na dwa różne sposoby przy użyciu funkcji personalizacji produktu:
+Po osadzeniu aplikacji kanwy na stronie i potwierdzeniu, że działa ona poprawnie z dowolnym kontekstem danych przekazywanym z tej strony, możesz chcieć udostępnić aplikację innym użytkownikom w systemie. Aby udostępnić osadzoną aplikację kanwy, wykonaj następujące kroki.
 
-- Zalecanym scenariuszem jest skorzystanie z pośrednictwa administratora systemu, który może rozesłać personalizację do wszystkich użytkowników lub tylko do grupy użytkowników.
-- Alternatywnie można wyeksportować personalizacje strony, wysłać je do jednego lub więcej użytkowników, a następnie polecić użytkownikom, aby zaimportowali zmiany. Opcja Zarządzaj umieszczona na pasku narzędzi personalizacji zawiera działania umożliwiające eksportowanie i importowanie personalizacji.
+1. [Udostępnij aplikację kanwy](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) odpowiednim użytkownikom, aby mogli oni uzyskać dostęp do aplikacji w Power Apps. 
+
+2. Upewnij się, że docelowi użytkownicy mają odpowiednie personalizacje, tak aby aplikacja osadzona była wyświetlana, gdy użytkownicy przeglądają tę stronę. Możesz użyć jednej z następujących metod:
+
+    - Zalecane: Aby utworzyć i opublikować widok zawierający osadzoną aplikację, należy skorzystać z funkcji [Zapisane widoki](saved-views.md). Dzięki temu wszyscy użytkownicy, którzy mają role zabezpieczeń, które są ukierunkowane na widok opublikowany, będą widzieli aplikację w aplikacjach Finance and Operations. 
+    - Jeśli nie masz włączonej funkcji Zapisane widoki, możesz poprosić administratora systemu o przekazanie personalizacji, która obejmuje osadzoną aplikację, wszystkim użytkownikom lub podzbiorowi użytkowników. Można również wyeksportować personalizacje strony i wysłać je do jednego lub kilku użytkowników. Każdy z tych użytkowników może następnie zaimportować te personalizacje. Opcja Zarządzaj umieszczona na pasku narzędzi personalizacji zawiera działania umożliwiające eksportowanie i importowanie personalizacji. 
+    
+> [!NOTE]
+> Jeśli aplikacja kanwy została udostępniona użytkownikom zewnętrznym, użytkownicy ci nie mogą skorzystać z aplikacji osadzonej w aplikacjach Finance and Operations. Użytkownicy mogą jednak uzyskać dostęp do aplikacji bezpośrednio w Power Apps. Użytkownicy zewnętrzni to goście i użytkownicy, którzy nie należą do katalogu Microsoft 365 Azure, gdzie aplikacja Finance and Operations jest wdrożona.
 
 Temat [Personalizowanie środowiska użytkownika](personalize-user-experience.md) zawiera więcej informacji o funkcjach personalizacji w produkcie oraz o sposobach ich używania.
 
-## <a name="building-an-app-that-leverages-data-sent-from-finance-and-operations-apps"></a>Budowanie aplikacji, która wykorzystuje dane wysyłane z aplikacji Finance and Operations
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Budowanie aplikacji kanwy, która korzysta z danych wysyłanych z aplikacji Finance and Operations
 
-Ważną częścią tworzenia aplikacji Power Apps, która będzie osadzana w aplikacji Finance and Operations, jest wykorzystanie danych wejściowych z tej aplikacji. Ze środowiska programistycznego Power Apps można uzyskać dostęp do danych wejściowych przekazywanych z poziomu aplikacji Finance and Operations za pomocą zmiennej Param(„EntityId”).
+Podczas tworzenia aplikacji kanwy, która zostanie osadzona w aplikacji Finance and Operations, ważną częścią procesu jest użycie danych wejściowych z tej aplikacji Finance and Operations. Ze środowiska programistycznego Power Apps można uzyskać dostęp do danych wejściowych przekazywanych z poziomu aplikacji Finance and Operations za pomocą zmiennej **Param("EntityId")**.
 
 Na przykład w funkcji OnStart wewnątrz aplikacji można ustawić dane wejściowe z aplikacji Finance and Operations w następujący sposób:
 
@@ -80,9 +90,9 @@ Na przykład w funkcji OnStart wewnątrz aplikacji można ustawić dane wejścio
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
-## <a name="viewing-an-app"></a>Wyświetlanie aplikacji
+## <a name="viewing-a-canvas-app"></a>Wyświetlanie aplikacji kanwy
 
-Aby wyświetlić osadzoną aplikację na stronie Finance and Operations, po prostu przejdź do strony z osadzoną aplikacją. Przypominamy, że dostęp do aplikacji można uzyskać za pomocą przycisku Power Apps w standardowym okienku akcji lub też aplikacje mogą być wyświetlane bezpośrednio na stronie jako nowa karta, karta skrócona, blok lub nowa sekcja w obszarze roboczym. Gdy użytkownik po raz pierwszy próbuje załadować aplikację na stronie, zobaczy monit o zalogowanie się w celu potwierdzenia, że ma odpowiednie uprawnienia potrzebne do korzystania z aplikacji.
+Aby wyświetlić osadzoną aplikację kanwy na stronie Finance and Operations, po prostu przejdź do strony z osadzoną aplikacją. Pamiętaj, że dostęp do aplikacji można uzyskać za pomocą przycisku **Power Apps** w standardowym okienku akcji. Alternatywnie mogą być wyświetlane bezpośrednio na stronie w postaci nowej karty lub karty skróconej, lub bloku, lub nowej sekcji w obszarze roboczym. Podczas pierwszej próby załadowania aplikacji na stronie przez użytkowników zostanie wyświetlony monit o zalogowanie się. Ten krok gwarantuje, że użytkownicy mają odpowiednie uprawnienia do korzystania z aplikacji.
 
 ## <a name="editing-an-embedded-app"></a>Edytowanie osadzonej aplikacji
 
@@ -106,7 +116,7 @@ Po osadzeniu aplikacji na stronie istnieją dwa sposoby jej usunięcia w razie p
 
 ## <a name="appendix"></a>Dodatek
 
-### <a name="developer-control-over-where-an-app-can-be-embedded"></a>Kontrola dewelopera nad miejscem osadzenia aplikacji
+### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Deweloper] Określanie, gdzie można osadzić aplikację
 
 Domyślnie użytkownicy mogą osadzać aplikacje na każdej stronie, używając do tego przycisku menu Power Apps lub bezpośrednio na stronie w postaci karty, karty skróconej, bloku lub nowej sekcji w obszarze roboczym. Jednak w razie potrzeby deweloperzy mogą również skonfigurować tę funkcję tak, aby zezwalać na osadzanie aplikacji tylko na niektórych stronach; służą do tego następujące metody:
 

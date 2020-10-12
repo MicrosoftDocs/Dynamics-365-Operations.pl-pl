@@ -3,7 +3,7 @@ title: Tworzenie konfiguracji raportowania elektronicznego w RCS i przekazywanie
 description: W tym temacie objaśniono sposób tworzenia konfiguracji Raportowania elektronicznego (ER) w usługach Microsoft Regulatory Configuration Services (RCS) i przekazywania jej do repozytorium globalnego.
 author: JaneA07
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 0e194a8b777f984412d81e315f92ab4bb8a3b0c9
-ms.sourcegitcommit: 204cec8ca2a6c4474d21dbcd408e369131a47856
+ms.openlocfilehash: 5b2b8f35b9931f8fd1824c20e9045da68af33ad5
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3371263"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834240"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Tworzenie konfiguracji raportowania elektronicznego w usługach Regulatory Configuration Services (RCS) i przekazywanie ich do repozytorium globalnego
 
@@ -54,7 +54,7 @@ Jeśli już aprowizowano środowisko RCS, należy skorzystać z adresu URL stron
 5. Wprowadź nazwę i opis, a następnie wybierz opcję **Utwórz konfigurację**, aby utworzyć nową wersję pochodną.
 6. Wybierz nową konfigurację pochodną, dodaj opis wersji, a następnie wybierz przycisk **OK**. Stan konfiguracji zostanie zmieniony na **Zakończono**.
 
-![Nowa wersja konfiguracji w usługach RCS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_CompleteConfig.JPG)
+![Nowa wersja konfiguracji w usługach RCS](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > Po zmianie stanu konfiguracji może pojawić się komunikat o błędzie weryfikacji, który jest związany z dołączonymi aplikacjami. Aby wyłączyć weryfikowanie, w okienku akcji na karcie **Konfiguracje** wybierz pozycję **Parametry użytkownika**, a następnie ustaw opcję **Pomiń weryfikację przy zmianie stanu konfiguracji i zmianie bazy** na **Tak** 
@@ -66,7 +66,7 @@ Aby udostępnić organizacji nową lub pochodną konfigurację, można ją przek
 1. Wybierz zakończoną wersję konfiguracji, a następnie wybierz pozycję **Przekaż do repozytorium**.
 2. Wybierz opcję **Globalne (Microsoft)**, a następnie wybierz pozycję **Przekaż**.
 
-    ![Opcje przekazywania do repozytorium](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![Opcje przekazywania do repozytorium](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. W wyświetlonym oknie wiadomości z potwierdzeniem wybierz przycisk **Tak**. 
 4. W razie potrzeby zaktualizuj opis wersji, a następnie wybierz przycisk **OK**. 
@@ -74,6 +74,27 @@ Aby udostępnić organizacji nową lub pochodną konfigurację, można ją przek
 Stan konfiguracji jest aktualizowany do wartości **Udostępnij**, a konfiguracja jest przekazywana do repozytorium globalnego. W tym miejscu można pracować w następujący sposób:
 
 - Zaimportuj ją do wystąpienia rozwiązania Dynamics 365. Aby uzyskać więcej informacji, zobacz temat [(ER) Importowanie konfiguracji z usług RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
-- Udostępnij ją firmie lub organizacji zewnętrznej, zobacz temat [RCS — udostępnianie konfiguracji Raportowania elektronicznego (ER) organizacjom zewnętrznymi](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/rcs-global-share-configuration.md)
+- Udostępnij ją firmie lub organizacji zewnętrznej, zobacz temat [RCS — udostępnianie konfiguracji Raportowania elektronicznego (ER) organizacjom zewnętrznymi](rcs-global-repo-share-configuration.md)
 
-![Wersja konfiguracji pochodnej Intrastat Contoso w repozytorium globalnym](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Wersja konfiguracji pochodnej Intrastat Contoso w repozytorium globalnym](media/RCS_Config_upload_GlobalRepo.JPG)
+
+## <a name="delete-a-configuration-from-the-global-repository"></a>Usuwanie konfiguracji z repozytorium globalnego
+Wykonaj następujące kroki, aby usunąć konfigurację utworzoną przez organizację.
+
+1. W obszarze roboczym **Raportowanie elektroniczne** sprawdź, czy dostawca konfiguracji jest **Aktywny**. Dalsze informacje znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Na aktywnym dostawcy konfiguracji wybierz pozycję **repozytorium**.
+3. Wybierz typ repozytorium **Globalne** i wybierz opcję **Otwórz**.
+4. Na skróconej karcie **Filtr** znajdź konfigurację, którą chcesz usunąć, przy użyciu funkcji **Filtrowania**.
+5. W na skróconej karcie **Wersja** wybierz wersję konfiguracji, którą chcesz usunąć, a następnie wybierz opcję **Usuń**:
+
+    ![Usuwanie konfiguracji z repozytorium globalnego](media/RCS_Delete_from_GlobalRepo.JPG)
+
+6. W wyświetlonym oknie wiadomości z potwierdzeniem wybierz przycisk **Tak**.
+
+    ![Komunikat potwierdzający usunięcie wersji konfiguracji](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+ 
+Wersja konfiguracji zostanie usunięta i zostanie wyświetlony komunikat z potwierdzeniem. 
+
+> [!NOTE]
+> Konfiguracje mogą być usuwane tylko przez dostawcę konfiguracji, który je utworzył. Jeśli konfiguracja została udostępniona innej organizacji, przed jej usunięciem należy cofnąć udostępnianie.
+ 

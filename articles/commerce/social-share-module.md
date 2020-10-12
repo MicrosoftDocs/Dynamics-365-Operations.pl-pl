@@ -3,7 +3,7 @@ title: Moduł udostępnienia w mediach społecznościowych
 description: W tym temacie opisano moduły udostępniania w plikach społecznościowych i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 0fd81aa1f4b1358528f0135c1334dc7b4ac4461f
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: 5052957a2f4e59791ef02c12bc2aef5ed36e95c7
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761416"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3816944"
 ---
 # <a name="social-share-module"></a>Moduł udostępnienia w mediach społecznościowych
 
@@ -78,7 +78,7 @@ Aby dodać moduł udostępniania w mediach społecznościowych do pola zakupu, n
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie zestawu początkowego](starter-kit-overview.md)
+[Omówienie biblioteki modułów](starter-kit-overview.md)
 
 [Moduł pola zakupu](add-buy-box.md)
 

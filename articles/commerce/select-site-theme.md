@@ -3,7 +3,7 @@ title: Wybór motywu witryny
 description: W tym temacie opisano sposób ustawiania lub zmieniania motywu witryny w Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 45184c7b0e29d1258b26368fbc7221df91013cc3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1f92b31e870cbb4d3cc04870273693bed1378c5e
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002758"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817713"
 ---
 # <a name="select-a-site-theme"></a>Wybór motywu witryny
-
 
 [!include [banner](includes/banner.md)]
 
@@ -35,7 +34,7 @@ W tym temacie opisano sposób ustawiania lub zmieniania motywu witryny w Microso
 
 Układ i styl witryny (np. czcionki, rozmiary i kolory) są definiowane przez wybrany motyw i mają zastosowanie w odniesieniu do witryny. Motyw jest tworzony i wdrażany przez programistę w firmie użytkownika. Aby zapoznać się z omówieniem motywów, zajrzyj do [Omówienie funkcji motywowania](http://). Aby uzyskać więcej informacji dotyczących sposobu tworzenia i wdrażania motywów, zobacz [Tworzenie nowego motywu](http://).
 
-Domyślnie podczas tworzenia oddziałów jest używany motyw o nazwie **Fabrikam**. Ten motyw domyślny jest dostarczany w ramach zestawu początkującego. Po wdrożeniu dodatkowych motywów dla witryny można skonfigurować witrynę tak, aby korzystała z jednego z nich.
+Domyślnie podczas tworzenia oddziałów jest używany motyw o nazwie **Fabrikam**. Ten motyw domyślny jest dostarczany jako część biblioteki modułu handlu elektronicznego. Po wdrożeniu dodatkowych motywów dla witryny można skonfigurować witrynę tak, aby korzystała z jednego z nich.
 
 ## <a name="select-the-site-theme"></a>Wybór motywu witryny
 

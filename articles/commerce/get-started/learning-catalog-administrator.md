@@ -1,6 +1,6 @@
 ---
 title: Katalog szkoleń administratora dla Dynamics 365 Commerce
-description: Poznaj wszystkie opcje szkoleń dla Dynamics 365 Commerce.
+description: Poznaj wszystkie opcje szkoleń dla roli administratora w Dynamics 365 Commerce.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a6e0b6103bf453b74ae485f06bf139b13bae7b2
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: fc4df1c7fc47608300d705616768b6c8ef135652
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793400"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821211"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Katalog szkoleń dla administratorów Dynamics 365 Commerce
 
@@ -39,7 +39,7 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 
 | Zawartość  | opis  | Format  | Długość    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Wdrażanie usługi Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/)                                    | Ta ścieżka uczenia opisuje sposób wdrażania środowisk Dynamics 365 Commerce i wykonywania kroków związanych z inicjowaniem procesami w przypadku pomyślnych implementacji modułu Commerce w przypadku korzystania z odpowiedniej topologii dla potrzeb biznesowych sprzedawców detalicznych.                               | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5 godzin   |
+| [Wdróż i rozszerz Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Ta ścieżka uczenia opisuje sposób wdrażania środowisk Dynamics 365 Commerce i wykonywania kroków związanych z inicjowaniem procesami w przypadku pomyślnych implementacji modułu Commerce w przypadku korzystania z odpowiedniej topologii dla potrzeb biznesowych sprzedawców detalicznych. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5 godzin   |
 | [Konfigurowanie i używanie punktu sprzedaży (POS) w Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-use-pos-commerce/)         | Dane transakcyjne są tworzone w punkcie sprzedaży (POS), a następnie przekazano do centrali Dynamics 365 Commerce w celu przetworzenia. Ta ścieżka szkoleniowa opisuje sposób instalowania i aktywowania punktu sprzedaży, a także sposób tworzenia codziennych transakcji w punkcie sprzedaży. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4.5 godzin |
 | [Konfigurowanie biur call center w Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce to rozwiązanie wielokanałowe, które zapewnia kanał call center z możliwością domyślnych ustawień przetwarzania zamówień i domyślnych danych dla zamówień sprzedaży utworzonych przez użytkowników call center.                                  | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin   |
 

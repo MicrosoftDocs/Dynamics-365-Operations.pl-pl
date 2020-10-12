@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 05ac817081689f27cdf55cb86a3235d7707a737b
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 8ab5f1c3cdfa990a73951ddc5a7469644954d5c2
+ms.sourcegitcommit: 646a0e7c8b8a7f2d00a50eddfa65500d0f8afbaf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803428"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "3814907"
 ---
 # <a name="safety-margins"></a>Marginesy bezpieczeństwa
 
@@ -162,13 +162,13 @@ Poniższe reguły są stosowane w celu określenia, czy silnik planowania może 
 
 #### <a name="calendar-setup-overview-matrix"></a>Przegląd ustawień kalendarza — macierz
 
-Na poniższej ilustracji przedstawiono macierz, która podsumowuje, które kalendarze są stosowane w przypadku obliczania marginesów bezpieczeństwa. Poniższe skróty i kolory służą do wskazywania miejsca, w którym określono typ kalendarza:
+Na poniższej ilustracji przedstawiono macierz, która podsumowuje, które kalendarze są stosowane w przypadku obliczania marginesów bezpieczeństwa. (Wybierz obraz, aby otworzyć jego wersję wysokiej rozdzielczości) Poniższe skróty i kolory służą do wskazania, gdzie określony jest każdy typ kalendarza:
 
 - **Grupa zapotrzebowania (CG):** Zielona
 - **Magazyn (WH):** Żółty
 - **Dostawca (V):** Niebieski
 
-![Przegląd ustawień kalendarza — macierz](media/safety-margins-calendar-matrix.png)
+[![Przegląd ustawień kalendarza — macierz](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Obliczanie opóźnienia
 

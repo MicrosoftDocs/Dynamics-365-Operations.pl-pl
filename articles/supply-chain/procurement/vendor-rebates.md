@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 44c8f3ed76698bb4b70d767d9c8881024699552f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: acf7df09b467e0b0b0463946be018ff199d7153e
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203464"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834267"
 ---
 # <a name="vendor-rebates"></a>Rabaty dostawcy
+
 [!include [banner](../includes/banner.md)]
 
 Rabaty dostawcy ułatwiają firmom zarządzanie programami rabatów dla dostawców dzięki automatyzacji zadań wymaganych do administrowania, śledzenia i wykorzystywania uzyskanych rabatów.
@@ -50,6 +51,7 @@ Osoby na tych stanowiskach szukają sposobów na osiągnięcie różnych celów.
 - Określenie podstawy ilościowej dla trwających i przyszłych negocjacji z dostawcami na temat rabatów.
 
 ## <a name="review-details-of-a-vendor-rebate-agreement"></a>Przeglądanie szczegółów umowy rabatowej z dostawcą
+
 Umowa rabatowa z dostawcą to zapis umowy z dostawcą, która określa wynegocjowane zasady i warunki, na jakich firma kwalifikuje się do korzyści pieniężnych w zamian za osiągnięcie wcześniej określonych celów dotyczących zakupów. Umowy rabatowe z dostawcą są zapisywane na stronie **Umowy rabatowe**.
 
 Aby otworzyć stronę **Umowy rabatowe z dostawcą**, wybierz opcję **Zaopatrzenie i sourcing** &gt; **Rabaty dostawcy** &gt; **Umowy rabatowe**.
@@ -60,7 +62,9 @@ Na stronie **Umowy rabatowe z dostawcą** można wyświetlić szczegóły dotycz
 
 Nagłówek umowy warunki ogólne, które kwalifikują firmę do uzyskania rabatów. W efekcie informacje w nagłówku określają, że dostawca przyznaje rabat, po zakupie określonej ilości danego produktu. W nagłówku można także określić opcję jednostki miary rabatów i typ danych przy obliczeniach.
 
-- Na karcie **Ogólne**, w polu **Opcja jednostki miary rabatów** można określić, czy jednostka miary powinna być warunkiem dla linii zamówienia zakupu kwalifikującym do roszczenia rabatu. 
+- Na karcie **Przegląd**, jeśli istnieją wiersze z **Kodem towaru** skonfigurowanym dla *tabeli* w celu określenia towaru, umowa dotyczy określonego towaru. Jeśli istnieją wiersze z przypisanym **Kodem towaru** ustawione na *Grupa* lub *Wszystkie* do określenia towarów, umowa rabatowa dostawcy będzie przetwarzana oddzielnie dla każdego towaru kwalifikującego się do kodu towaru, a nie dla wszystkich towarów kwalifikujących się do kodu towaru.
+
+- Na karcie **Ogólne**, w polu **Opcja jednostki miary rabatów** można określić, czy jednostka miary powinna być warunkiem dla linii zamówienia zakupu kwalifikującym do roszczenia rabatu.
 
     - **Konwertuj** — linia zamówienia zakupu uprawnia do rabatu dostawcy według umowy rabatowej. Otrzymasz rabat bez względu na jednostkę miary zastosowaną do linii.
     - **Dokładne dopasowanie** — aby kwalifikować się do rabatu, linia zakupów musi mieć tę samą jednostkę miary, jaką określono w umowie.
@@ -97,6 +101,7 @@ W wierszach umowy można bardziej szczegółowo określić umowę rabatową z do
 Po złożeniu zamówień zakupu u dostawcy, z którym firma zawarła umowę rabatową program identyfikuje wszystkie przyszłe płatności kredytowe dostawcy. Jeżeli zamówienia zakupu kwalifikują się do rabatu, roszczenie dotyczące rabatu jest generowane dla każdego wiersza zamówienia zaraz po zaksięgowaniu faktury zakupu. Ten proces jest automatyczny. Później można przejrzeć oczekiwane rabaty i sprawdzić ich wpływ na koszt produktu i marżę zysku.
 
 ### <a name="view-details-of-rebates-that-are-applied-to-a-purchase-order-line-per-the-vendor-rebate-agreement"></a>Wyświetlanie szczegółów rabatów stosowanych do wiersza zamówienia zakupu zgodnie z umową rabatową z dostawcą
+
 1. Na stronie **Zamówienie zakupu** wybierz wiersz zamówienia, a następnie wybierz opcję **Wiersz zamówienia zakupu** &gt; **Wyświetl** &gt; **Szczegóły ceny**.
 2. Na stronie **Szczegóły ceny** wybierz skróconą kartę **Rabaty**.
 
@@ -106,15 +111,18 @@ Informacje o rabacie są także widoczne w polu **Rabat dostawcy** w sekcji **Sz
 > Na stronie **Parametry modułu Zaopatrzenie i sourcing**, na karcie **Ceny** sprawdź, czy opcja **Włączanie szczegółów ceny** jest ustawiona na **Tak**. Jeżeli opcja jest ustawiona na **Nie**, nie będzie można wyświetlić rabatów.
 
 ## <a name="review-and-approve-claims"></a>Przejrzenie i zatwierdzanie roszczeń
+
 Generowane roszczenia dotyczące rabatu oznaczają przyszłe płatności, których należy oczekiwać od dostawcy. Przed wystawieniem noty kredytowej dla dostawcy właściciel umowy zwykle chce przejrzeć roszczenia i zatwierdzić je. Należy jednak pamiętać, że status roszczenia określa, czy roszczenie jest gotowe do przejścia procesu zatwierdzania.
 
 ### <a name="the-status-of-claims-and-the-effect-on-the-approval-process"></a>Stan roszczeń oraz wpływ na proces zatwierdzania
+
 Po wygenerowaniu roszczenia jego stan jest ustawiany na **Do obliczenia**, jeżeli przyznany rabat jest skumulowany lub **Obliczony**, jeżeli rabat jest przyznawany według faktur. Jeżeli stan roszczenia to **Do obliczenia**, roszczenie musi przejść przez proces obliczania obsługiwany przez funkcję Kumuluj. Tylko roszczenia o stanie **Obliczone** mogą zostać uwzględnione w procesie zatwierdzania.
 
 > [!NOTE]
 > Jeżeli opcja **Wymagane zatwierdzenie** w umowie rabatowej z dostawcą jest ustawiona na **Nie**, wszystkie wygenerowane roszczenia będą miały stan **Zatwierdzone**. Zatwierdzenie jest obowiązkowe dla roszczeń skumulowanych.
 
 ### <a name="approve-claims-and-view-postings-and-invoice-details"></a>Zatwierdzanie roszczeń i wyświetlanie księgowań oraz szczegółów faktury
+
 Po zatwierdzeniu roszczenia mogą zostać przetworzone przez moduł Rozrachunki z dostawcami. Nota kredytowa (faktura od dostawcy) na kwotę roszczenia dotyczącego rabatu jest generowana automatycznie. Kredyt może następnie zostać dodany do salda dostawcy, a zespół ds. rozrachunku z dostawcami może uwzględnić go w procesie zwykłego rozliczania.
 
 1. Wybierz kolejno opcje **Zaopatrzenie i sourcing** &gt; **Rabaty dostawcy** &gt; **Roszczenia dotyczące rabatu**, aby otworzyć roszczenie dotyczące rabatu.
@@ -153,6 +161,7 @@ Po zatwierdzeniu roszczenia mogą zostać przetworzone przez moduł Rozrachunki 
 9. Na stronie **Wszyscy dostawcy** wybierz dostawcę, od którego otrzymujesz rabat, a następnie w okienku akcji wybierz opcję **Transakcje**. Znajdź wiersz faktury. Kwota rabatu została dodana do salda dostawcy.
 
 ## <a name="summary"></a>Sumaryczny
+
 Proces obsługi rabatów dostawcy obejmuje wiele zadań śledzenia ręcznego, których wykonanie jest często żmudne. Dzięki automatyzacji tych zadań funkcja zarządzania rabatem dostawcy ułatwia realizację następującego procesu:
 
 - Generowanie prawidłowych roszczeń dotyczących rabatu

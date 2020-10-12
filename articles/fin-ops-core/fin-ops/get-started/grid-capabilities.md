@@ -3,7 +3,7 @@ title: Możliwości siatki
 description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Funkcja nowej siatki musi być włączona, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
 manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760406"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835093"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
@@ -33,6 +33,7 @@ Nowy formant siatki zapewnia wiele przydatnych i zaawansowanych funkcji, które 
 -  Pisanie przed systemem
 -  Ocenianie wyrażeń matematycznych 
 -  Grupowanie danych tabelarycznych (włączone oddzielnie za pomocą funkcji **Grupowania w module siatki (wersja zapoznawcza)**)
+-  Przypięte kolumny systemowe
 
 ## <a name="calculating-totals"></a>Obliczanie sum
 W aplikacjach grupy Finance and Operations użytkownicy mają możliwość wyświetlania sum na dole kolumn liczbowych w siatkach. Sumy te są wyświetlane w sekcji stopki u dołu siatki. 
@@ -119,12 +120,19 @@ W taki sam sposób, w jaki można wybrać (lub usunąć zaznaczenie) wszystkie w
 ### <a name="hiding-column-names"></a>Ukrywanie nazw kolumn
 Podczas grupowania danych domyślnym zachowaniem jest wyświetlenie nazwy kolumny w wierszu nagłówka grupy. Począwszy od wersji 10.0.14 z aktualizacją platformy 38 można wybrać opcję wyłączania nazwy kolumny w wierszach nagłówka grupy, wybierając **Opcje siatki** > **Ukryj nazwę kolumny grupy**.
 
+## <a name="pinned-system-columns"></a>Przypięte kolumny systemowe
+Kolumna wyboru wiersza i kolumna stanu wiersza w nowej siatce są przypięte lub zablokowane w skrajnej lewej części siatki. Dlatego kiedy te kolumny są zawarte w siatce, zawsze będą widoczne dla użytkownika, niezależnie od pozycji przewijania w poziomie w siatce.   
+
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Jak włączyć formant nowej siatki w środowisku? 
 
-**10.0.9/Aktualizacja platformy 33 i późniejsza** Funkcja **Formant nowej siatki** jest dostępna bezpośrednio w module Zarządzanie funkcjami w dowolnym środowisku. Podobnie jak inne funkcje prapremiery publicznej, włączenie tej funkcji w produkcji podlega [uzupełniającemu warunkowi stosowania umowy](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9 / Aktualizacja Platform update 33 i nowsze**
 
-**10.0.8/Aktualizacja platformy 32 i 10.0.7 / Aktualizacja platformy 31** Funkcja **Formant nowej siatki** można włączyć w środowiskach warstwy 1 (Dev/Test) i warstwa 2 (piaskownicy) w celu zapewnienia dodatkowych zmian w testowaniu i projekcie, wykonując poniższe kroki.
+Funkcja **Kontrolka nowej siatki** jest dostępna bezpośrednio w module Zarządzanie funkcjami w dowolnym środowisku. Podobnie jak inne funkcje prapremiery publicznej, włączenie tej funkcji w produkcji podlega [uzupełniającemu warunkowi stosowania umowy](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8/Aktualizacja platformy 32 i 10.0.7/Aktualizacja platformy 31**
+
+Funkcja **Kontrolka nowej siatki** można włączyć w środowiskach warstwy 1 (Dev/Test) i warstwa 2 (piaskownicy) w celu zapewnienia dodatkowych zmian w testowaniu i projekcie, wykonując poniższe kroki.
 
 1.  **Włącz funkcję testową**: wykonaj następującą instrukcję SQL: 
 
@@ -139,11 +147,14 @@ Podczas grupowania danych domyślnym zachowaniem jest wyświetlenie nazwy kolumn
 Wszystkie kolejne sesje użytkownika będą uruchamiane z włączonymi formantami nowej siatki.
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Deweloper] Rezygnacja z używania nowej siatki dla poszczególnych stron 
-Jeśli Twoja organizacja odkryje stronę, na której występują pewne problemy z wykorzystaniem nowej siatki, dostępny jest interfejs API, który umożliwia indywidualnemu formularzowi korzystanie ze starszej kontroli sieci, jednocześnie zezwalając reszcie systemu na korzystanie z nowej kontroli sieci. Aby wycofać pojedynczą stronę z nowej siatki, należy dodać następujący wpis wywołania `super()` w metodzie formularza `run()`.
+Jeśli Twoja organizacja odkryje stronę, na której występują pewne problemy z wykorzystaniem nowej siatki, począwszy od wersji 10.0.13/Aktualizacji platformy 37 dostępny jest interfejs API, który umożliwia indywidualnemu formularzowi korzystanie ze starszej kontroli sieci, jednocześnie zezwalając reszcie systemu na korzystanie z nowej kontroli sieci. Aby wycofać pojedynczą stronę z nowej siatki, należy dodać następujący wpis wywołania `super()` w metodzie `run()` dla formularza.
 
  ```this.forceLegacyGrid();```
 
-Ten interfejs API będzie uznawany do wydania w październiku 2021, gdy nowa kontrolka siatki stanie się wymagana. Prosimy o zgłoszenie wszelkich problemów do firmy Microsoft, które wymagają użycia tego interfejsu API. 
+Ten interfejs API będzie uznawany do wydania w październiku 2021, gdy nowa kontrolka siatki stanie się wymagana. Jeśli jakiekolwiek problemy wymagają użycia tego interfejsu API, należy zgłosić je do rozwiązania Microsoft.
+
+## <a name="developer-size-to-available-width-columns"></a>[Deweloper] Kolumny od rozmiaru do dostępnej szerokości
+Jeśli projektant ustawi właściwość **WidthMode** na **SizeToAvailable** dla kolumn w nowej siatce, te kolumny mają początkowo taką samą szerokość, jaką miałyby w przypadku ustawienia właściwości na **SizeToContent**. Jednak rozciągają się one na użycie dowolnej dodatkowej szerokości w siatce. Jeśli właściwość jest ustawiona jako **SizeToAvailable** dla wielu kolumn, wszystkie te kolumny mają dowolną dodatkową szerokość w siatce. Jeśli jednak użytkownik ręcznie zmieni rozmiar jednej z tych kolumn, kolumna stanie się statyczna. Pozostanie on o tej samej szerokości i nie będzie już rozciągany, aby uzyskać dodatkową szerokość siatki.  
 
 ## <a name="known-issues"></a>Znane problemy
 W tej sekcji jest przechowywana lista znanych problemów dotyczących nowej kontrolki siatki, gdy ta funkcja jest w stanie podglądu.  

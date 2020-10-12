@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-13.md
                     - name: Rozwiązanie Finance w wersji 10.0.12 (sierpień 2020)
                       href: get-started/whats-new-changed-10-0-12.md
-                    - name: Rozwiązanie Finance w wersji 10.0.11 (lipiec 2020)
-                      href: get-started/whats-new-changed-10-0-11.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Finance
@@ -160,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
                 - name: Tworzenie pól niestandardowych i praca z nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-                - name: Osadzanie usługi Microsoft Power Apps
+                - name: Osadzanie aplikacji kanwy z aplikacji Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
                 - name: Znajdowanie informacji za pomocą odnośników
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -1228,6 +1226,22 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
             - name: Aktualizacje wymagane przepisami prawa
               href: localizations/regulatory-updates.md
+            - name: Dodatek do fakturowania elektronicznego
+              items:
+                - name: Omówienie dodatku do fakturowania elektronicznego
+                  href: localizations/e-invoicing-service-overview.md
+                - name: Utwórz konto magazynu usług Azure i Key Vault
+                  href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+                - name: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego
+                  href: localizations/e-invoicing-get-started.md
+                - name: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego dla Brazylii
+                  href: localizations/e-invoicing-bra-get-started.md
+                - name: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego dla Włoch
+                  href: localizations/e-invoicing-ita-get-started.md
+                - name: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego dla Meksyku
+                  href: localizations/e-invoicing-mex-get-started.md
+                - name: Ustawianie dodatku do fakturowania elektronicznego
+                  href: localizations/e-invoicing-setup.md
             - name: Australia
               items:
                 - name: Australia — omówienie
@@ -1268,6 +1282,8 @@
                   href: localizations/emea-bel-coda-bank-statement-import.md
                 - name: Tworzenie i transferowanie transakcji do BLWI
                   href: localizations/tasks/be-00011-create-transfer-blwi.md
+                - name: Eksport transakcji księgi
+                  href: localizations/emea-bel-export-ledger-transactions.md
                 - name: Deklaracja podatkowa INTERVAT
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: Raporty uzgodnienia
@@ -2036,13 +2052,15 @@
                       href: localizations/apac-ind-GST-tax-journal.md
                     - name: Generowanie danych raportu GSTR dla zwrotów podatku
                       href: localizations/apac-ind-GST-tax-returns.md
+                    - name: Włączanie przetwarzania wsadowego wielu partii dla raportów GSTR
+                      href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: Zapytanie dotyczące podatków
                       href: localizations/apac-ind-GST-tax-inquiry.md
                 - name: Aparat podatków
                   items:
                     - name: Omówienie aparatu podatków
                       href: general-ledger/tax-engine.md
-                    - name: Importuj konfigurację
+                    - name: Importowanie konfiguracji
                       href: general-ledger/tax-engine-import-configuration.md
                     - name: Projektant formuł zaawansowanych
                       href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
@@ -3560,6 +3578,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
                     - name: Projektowanie raportów wielojęzycznych
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: Kompresowanie dużych dokumentów wychodzących
+                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
                 - name: Ścieżka względna w powiązaniach danych
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Używanie rozwiązań modułu Raportowanie elektroniczne w aplikacji Finance and Operations

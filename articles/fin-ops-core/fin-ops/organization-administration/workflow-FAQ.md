@@ -3,7 +3,7 @@ title: 'Przepływ pracy: często zadawane pytania'
 description: W tym temacie znajdują się odpowiedzi na często zadawane pytania dotyczące systemu przepływu pracy.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7408424ff9344b3dcd054106f3f10b0dc1d687b
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 4ba60c832b1f1ac5f514baef4cc0a9c36dd85af9
+ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076093"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826197"
 ---
 # <a name="workflow-faq"></a>Przepływ pracy — często zadawane pytania
 
@@ -58,3 +58,5 @@ Podczas uruchamiania w usługach Active Directory Federation Services (AD FS) w 
 ## <a name="why-am-i-getting-sql-deadlocks-on-workflow-processing"></a>Dlaczego otrzymuję zakleszczenia kodu SQL w przetwarzaniu przepływu pracy? 
 Domyślna wartość pola **Liczba elementów przepływu pracy przypadająca na partię** na stronie **Parametry przepływu pracy** wynosi 0. Wartość 0 powoduje zmianę wartości domyślnej na 20 sztuk na partię. Podczas dostosowywania tej wartości należy zachować ostrożność, ponieważ duża liczba towarów na partię (> 40) może spowodować zakleszczenie kodu SQL.
 
+## <a name="what-is-the-workflow-enhanced-error-feature"></a>Co to jest funkcja błędów rozszerzonych przepływu pracy?
+Funkcja błędów rozszerzonych przepływu pracy w wersji 10.0.13 dodaje kody błędów w celu odróżnienia różnych klas błędów przepływu pracy. Komunikaty o błędach raportowane są głównie pod kątem mniejszych różnic w celu ich wyraźniejszego wyróżnienia.

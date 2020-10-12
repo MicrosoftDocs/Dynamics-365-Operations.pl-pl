@@ -3,7 +3,7 @@ title: Omówienie zarządzania świadczeniami
 description: Omówienie funkcji Zarządzanie świadczeniami w Dynamics 365 Human Resources. Zaoferuj pracownikom rozszerzone opcje zarządzania świadczeniami w przyjaznym internetowym środowisku.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599387"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819772"
 ---
 # <a name="benefits-management-overview"></a>Omówienie obszaru roboczego Zarządzanie świadczeniami
 
@@ -41,15 +41,9 @@ Aby zachować konkurencyjność, należy oferować bogaty zestaw świadczeń, kt
 
 Jeśli chcesz przejść do danych demonstracyjnych, musisz ponownie wdrożyć środowisko piaskownicy.
 
-## <a name="benefits-management-known-issues"></a>Znane problemy związane z zarządzaniem korzyściami
-
-### <a name="flex-credit-programs"></a>Programy kredytów elastycznych
-
-Łączna wartość kredytu zdefiniowana dla programu kredytu elastycznego nie jest wyświetlana w formularzu **Plany świadczeń pracowniczych**. Ponadto, jeśli ustawisz program elastycznych kredytów w celu uwzględnienia reguły **Brak**, podczas wybierania i zatwierdzania planów pojawi się komunikat o błędzie w formularzu **Plan świadczeń pracowniczych**.
-
 ## <a name="enable-benefits-management"></a>Włączanie obszaru roboczego Zarządzanie świadczeniami
 
-Ten artykuł opisuje sposób włączania funkcji w wersji zapoznawczej w module Human Resources. Informuje również, które z istniejących funkcji w module Human Resources są zastępowane lub wyłączane przez obszar roboczy Zarządzanie świadczeniami po jego włączeniu.
+Ten temat opisuje sposób włączania funkcji w wersji zapoznawczej w module Human Resources. Informuje również, które z istniejących funkcji w module Human Resources są zastępowane lub wyłączane przez obszar roboczy Zarządzanie świadczeniami po jego włączeniu.
 
 > [!IMPORTANT]
 > Po włączeniu Zarządzania świadczeniami w środowisku **Produkcyjnym** nie można go wyłączyć. Zaleca się włączanie i testowanie Zarządzania świadczeniami w środowisku **Piaskownicy** przed włączeniem go w środowisku **Produkcyjnym**. Istnieją znaczne różnice między funkcjami starszego świadczenia i nowymi funkcjami zarządzania świadczeniami, które wymagają dodatkowej konfiguracji i powinny być testowane przed wprowadzeniem do produkcji.

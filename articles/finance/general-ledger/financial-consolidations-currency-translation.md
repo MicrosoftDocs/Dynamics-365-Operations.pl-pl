@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
+ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771852"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3823462"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Omówienie konsolidacji finansowych i przeliczania walut
 
@@ -103,6 +103,7 @@ Aby wyświetlić wyniki konsolidacji, możesz skorzystać z różnych opcji:
     ![Konsolidowanie transakcji na stronie konsolidacji](./media/managing-consolidation-transactions.png "Konsolidowanie transakcji na stronie konsolidacji")
 
 Aby ponownie uruchomić konsolidację, wystarczy wykonać przetwarzanie konsolidacji. Alternatywnie można najpierw wybrać opcję **Usuń transakcje** na stronie **Konsolidacje**.
+Salda na skonsolidowanym koncie nie są dokładne, salda te można skorygować przy użyciu strony **Korekty okresu zamknięcia**.
 
 ## <a name="consolidate-with-import"></a>Konsoliduj z importem
 Funkcjonalność Konsolidacja z importem działa podobnie, jak funkcjonalność Konsolidacja online. Podczas wybierania firm przejdziesz do pliku źródłowego, który zawiera dane.
@@ -156,6 +157,7 @@ Aby uzyskać więcej informacji na temat działania funkcji przeszacowania walut
 - Arkusze eliminacji mogą być księgowane tylko do bieżącej warstwy.
 - Konsolidowane są tylko salda operacyjne. W związku z tym w celu wyświetlenia sald otwarcia nadal należy wykonać proces zamknięcia na koniec roku w konsolidowanej firmie.
 - Arkusz dzienny można zaksięgować w firmie z wpisami eliminacji, ale nie w konsolidowanej firmie.
+- Korekty sald w konsolidowanej firmie można przeprowadzić tylko przy użyciu strony **Korekty okresu zamknięcia**. 
 
 ## <a name="benefits-of-using-financial-reporting-for-financial-consolidations-and-currency-translation-or-to-complement-consolidate-online-for-consolidated-reporting"></a>Zalety używania aplikacji Raportowanie finansowe dla konsolidacji finansowych i przeliczania walut lub w celu uzupełnienia aplikacji Konsolidacja online w sprawozdawczości skonsolidowanej
 Klienci, którzy używają aplikacji Raportowanie finansowe dla konsolidacji finansowych i przeliczania walut lub w celu uzupełnienia aplikacji Konsolidacja online w sprawozdawczości skonsolidowanej, mogą liczyć na szereg korzyści:

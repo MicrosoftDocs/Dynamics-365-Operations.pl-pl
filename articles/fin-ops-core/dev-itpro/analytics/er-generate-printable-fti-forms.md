@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4412fb08c8548c8ebe8455db0547618578e5e5b4
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771290"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893370"
 ---
 # <a name="generate-printable-fti-forms"></a>Generowanie drukowalnych formularzy FTI
 
@@ -111,7 +111,7 @@ Można również generować formularze faktur niezależnych podczas księgowania
 Obecnie struktura ER obsługuje następujące lokalizacje docelowe dla generowanych dokumentów:
 
 - **Pobrany plik** — wygenerowane formularze są udostępniane jako pliki do pobrania, które można zapisać przy użyciu przeglądarki.
-- **Ekran** — program Microsoft Office 365 Excel jest używany do wyświetlania podglądu wygenerowanych formularzy faktur niezależnych w formacie programu Excel.
+- **Ekran** — program Microsoft 365 Excel jest używany do wyświetlania podglądu wygenerowanych formularzy faktur niezależnych w formacie programu Excel.
 - **Folder programu SharePoint** — wygenerowane formularze są przechowywane zgodnie z ustawieniami struktury zarządzania dokumentami.
 - **Archiwum aplikacji** — wygenerowane formularze są przechowywane jako załączniki rekordów dziennika wykonywania w usłudze Microsoft Azure Storage.
 - **Poczta e-mail** — wygenerowane formularze są wysyłane jako załączniki wiadomości e-mail.

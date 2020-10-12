@@ -3,7 +3,7 @@ title: Omówienie strony głównej
 description: Ten temat zawiera omówienie strony głównej w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c51c5af38f4ba50bbad124de4ac7f66be4001fa6
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: 3ebc8b4ebd3720815cdaaab708fbfdd8302cbea1
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527591"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817761"
 ---
 # <a name="home-page-overview"></a>Omówienie strony głównej
 
@@ -34,7 +34,7 @@ Ten temat zawiera omówienie strony głównej w Microsoft Dynamics 365 Commerce.
 
 Strona główna jest stroną domyślną, na którą trafiają klienci podczas odwiedzania witryny e-Commerce. Zazwyczaj ta strona przedstawia produkty i promocje przy użyciu kombinacji modułów marketingowych. Strona główna powinna być sformatowana z obrazami i tekstem, aby klienci byli wciąż zainteresowani.
 
-Poniższa ilustracja pokazuje przykład strony głównej zbudowanej przy użyciu zestawu startowego online i motywu „Fabrikam”.
+Poniższa ilustracja pokazuje przykład strony głównej zbudowanej przy użyciu biblioteki modułów online i motywu „Fabrikam”.
 
 ![Przykład strony głównej](./media/Homepage2.PNG)
 

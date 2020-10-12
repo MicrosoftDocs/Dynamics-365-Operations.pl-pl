@@ -3,7 +3,7 @@ title: Moduł karuzeli
 description: W tym temacie opisano moduły karuzeli i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 10ff0cd566a1a8d89ccadce9571dafc5a592520b
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: f09f3f98d174f965a75e27ee6a5c2ed8599042fc
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3620993"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3816993"
 ---
 # <a name="carousel-module"></a>Moduł karuzeli
 
@@ -77,11 +77,11 @@ Aby dodać moduł karuzeli do nowej strony i ustawić wymagane właściwości, w
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie zestawu początkowego](starter-kit-overview.md)
+[Omówienie biblioteki modułów](starter-kit-overview.md)
 
 [Moduł transparentu promocyjnego](add-alert.md)
 
-[Moduł bloku zaawansowanej zawartości](add-content-rich-block.md)
+[Moduł bloku tekstu](add-content-rich-block.md)
 
 [Moduł bloku zawartości](add-hero-module.md)
 

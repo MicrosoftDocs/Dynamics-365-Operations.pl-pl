@@ -3,7 +3,7 @@ title: Moduł mapy
 description: W tym temacie opisano moduły mapy i sposób ich konfiguracji w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ca531e6cbf0a1044b0a13e5cdf42c7b4f0498fe5
-ms.sourcegitcommit: 629988f1a704d62648d98649056931b8c33b9e08
+ms.openlocfilehash: d2cbc67a186a76647a4f7ddc7942b15d3e469ece
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3811191"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817213"
 ---
 # <a name="map-module"></a>Moduł mapy
 
@@ -38,7 +38,8 @@ Moduł mapy pokazuje lokalizacje sklepów na interakcyjnej mapie, która jest re
 
 Moduł mapy działa w połączeniu z modułem selektora sklepów, aby określić lokalizacje geograficzne sklepów, które muszą być renderowane na mapie. Moduły selektora sklepu i mapy współdziałają, gdy użytkownik wybierze sklep w jednym z tych modułów na stronie serwisu. Moduły mapy można rozszerzyć na inne scenariusze, poza interakcją z modułami selektora sklepów. Wymagane jest jednak dostosowanie modułu.
 
-Moduł mapy został wprowadzony w module Commerce Version 10.0.13.
+> [!NOTE]
+> Moduł mapy jest dostępny w wydaniu Dynamics 365 Commerce 10.0.13.
 
 Poniższy obraz pokazuje przykład modułu mapy, który jest używany na stronie lokalizacji sklepu.
 
@@ -70,7 +71,7 @@ Aby uzyskać szczegółowe informacje dotyczące konfigurowania modułu mapy na 
  
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie zestawu początkowego](starter-kit-overview.md)
+[Omówienie biblioteki modułów](starter-kit-overview.md)
 
 [Moduł pola zakupu](add-buy-box.md)
 

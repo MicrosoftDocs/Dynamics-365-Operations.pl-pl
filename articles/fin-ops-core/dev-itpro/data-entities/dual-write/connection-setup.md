@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 275d24d8f32fd1d2d15356d14c5c6591e8503c65
-ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
+ms.openlocfilehash: b4f69e7933bc5a50cccad6911c99cf08d2768578
+ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3706259"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3818603"
 ---
 # <a name="supported-scenarios-for-dual-write-setup"></a>Obsługiwane scenariusze dla konfiguracji podwójnego zapisu
 
@@ -42,7 +42,7 @@ Można skonfigurować połączenie podwójnego zapisywania między środowiskiem
 
 Mechanizm konfiguracji zmienia się w zależności od subskrypcji i środowiska.
 
-+ W przypadku nowych wystąpień aplikacji Finance and Operations konfiguracja podwójnego zapisywania rozpoczyna się w Microsoft Dynamics Lifecycle Services (LCS). Jeśli masz licencję na Microsoft Power Platform, otrzymasz nowe środowisko Common Data Service, jeśli Twoja dzierżawa nie ma takiego nowego środowiska.
++ W przypadku nowych wystąpień aplikacji Finance and Operations konfiguracja podwójnego zapisywania rozpoczyna się w Microsoft Dynamics Lifecycle Services (LCS). Jeśli masz licencję na Power Platform, otrzymasz nowe środowisko Common Data Service, jeśli Twoja dzierżawa nie ma takiego nowego środowiska.
 + W przypadku istniejących aplikacji Finance and Operations wystąpień Konfiguracja dwukrotnego zapisu rozpoczyna się w środowisku Finance and Operations.
 
 Obsługiwane są następujące scenariusze konfiguracji:

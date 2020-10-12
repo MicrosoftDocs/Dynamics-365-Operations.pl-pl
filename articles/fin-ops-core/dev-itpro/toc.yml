@@ -86,6 +86,8 @@
               href: data-entities/integration-overview.md
             - name: Dławienie oparte na priorytetach
               hreF: data-entities/priority-based-throttling.md
+            - name: Często zadawane pytania dotyczące dławienia opartego na priorytetach
+              href: data-entities/throttling-faq.md
             - name: Interfejsy API integracji danych
               items:
                 - name: Interfejs API REST pakietu zarządzania danymi
@@ -154,6 +156,8 @@
                                   href: data-entities/dual-write/enable-entity-map.md
                             - name: Migracja typu danych Waluta na potrzeby podwójnego zapisu
                               href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: Ustawianie mapowania pól stanu zamówienia sprzedaży
+                              href: data-entities/dual-write/sales-status-map.md
                         - name: Zarządzanie podwójnym zapisem
                           items:
                             - name: Dostosowanie mapowania jednostek i pól
@@ -522,7 +526,7 @@
                       href: deployment/onprem-reuseadfs.md
                 - name: Agent lokalny
                   items:
-                    - name: Zgodność z usługami AD FS Office 365
+                    - name: Zgodność z usługami AD FS Microsoft 365
                       href: deployment/onprem-adfscompatibility.md
                     - name: Skrypty przedwdrożeniowe i powdrożeniowe agenta lokalnego
                       href: lifecycle-services/pre-post-scripts.md
@@ -627,9 +631,7 @@
                 - name: Narzędzia programistyczne — samouczek
                   href: dev-tools/introduction-visual-studio.md
                 - name: Narzędzie do sprawdzania aplikacji
-                  items:
-                    - name: Instalowanie aparatu BaseX dla narzędzia do sprawdzania aplikacji
-                      href: dev-tools/install-basex.md
+                  href: dev-tools/application-checker.md
                 - name: Eksplorator aplikacji
                   href: dev-tools/application-explorer.md
                 - name: Kompilowanie i debugowanie projektów
@@ -1368,6 +1370,24 @@
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
                     - name: Typ ValueMetadata
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: Struktura automatyzacji procesów
+          items:
+            - name: Rozwój struktury automatyzacji procesów
+              href: process-automation/process-automation-framework.md
+            - name: Rejestracja typu
+              href: process-automation/type-registration.md
+            - name: Rejestracja serii
+              href: process-automation/series-registration.md
+            - name: Parametry procesu
+              href: process-automation/process-parameters.md
+            - name: Zapytania konfigurowane przez użytkownika
+              href: process-automation/user-queries.md
+            - name: Uruchamianie procesu
+              href: process-automation/run-process.md
+            - name: Rejestracja wyników i komunikatów
+              href: process-automation/log-results.md
+            - name: Konfiguracja interfejsu użytkownika
+              href: process-automation/ui-customization.md
         - name: Narzędzie Regression Suite Automation Tool
           items:
             - name: Omówienie narzędzia Regression Suite Automation Tool
@@ -1395,7 +1415,7 @@
             - name: Tworzenie i wydawanie
               href: lcs-solutions/lcs-solutions-app-source.md
             - name: Przenoszenie do środowiska przejściowego i publikowanie
-              href: lcs-solutions/marketing-content-lcs-solutions.md
+              href: /azure/marketplace/partner-center-portal/create-new-operations-offer
             - name: Dodawanie metodologii
               href: lcs-solutions/methodologies-lcs-solutions.md
             - name: Konfigurowanie bibliotek Narzędzia do modelowania procesów biznesowych

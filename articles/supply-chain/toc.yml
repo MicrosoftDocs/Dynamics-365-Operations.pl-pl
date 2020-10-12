@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tworzenie pól niestandardowych i praca z nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Osadzanie usługi Microsoft Power Apps
+                - name: Osadzanie aplikacji kanwy z aplikacji Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Znajdowanie informacji za pomocą odnośników
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -1655,6 +1655,8 @@
               href: procurement/procurement-sourcing-overview.md
             - name: Przepływ pracy dla zaopatrzenia i sourcingu
               href: procurement/procurement-sourcing-workflows.md
+            - name: Rozwiązywanie problemów z przepływami pracy dla zaopatrzenia i sourcingu
+              href: procurement/troubleshoot-procurementworkflows.md
             - name: Katalogi zaopatrzenia
               items:
                 - name: Omówienie katalogów zaopatrzenia
@@ -1695,6 +1697,8 @@
                   href: procurement/purchase-order-mobile-workspace.md
                 - name: Rejestrowanie przyjęcia towarów w zamówieniu zakupu
                   href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                - name: Rozwiązywanie problemów z zamówieniami zakupu
+                  href: procurement/troubleshoot-purchaseorders.md
             - name: Tworzenie zamówienia zakupu
               items:
                 - name: Ręczne tworzenie zamówień zakupu
@@ -1725,6 +1729,8 @@
                   href: procurement/tasks/create-purchase-agreement.md
                 - name: Rabaty dostawcy
                   href: procurement/vendor-rebates.md
+                - name: 'Rozwiązywanie problemów z cenami, zniżkami, umowami i rabatami'
+                  href: procurement/troubleshooting-pricediscountagreements.md
             - name: Zasady zakupów
               items:
                 - name: Omówienie zasad zakupów
@@ -1735,10 +1741,12 @@
                   href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
             - name: Przyjęcia produktów i fakturowanie
               items:
-                - name: Przyjęcie produktów na podstawie zamówień zakupu
+                - name: Dokument przyjęcia produktów na podstawie zamówień zakupu
                   href: procurement/product-receipt-against-purchase-orders.md
                 - name: Omówienie faktur od dostawców
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Rozwiązywanie problemów z dokumentami przyjęcia produktów i fakturowaniem
+                  href: procurement/troubleshooting-productreceiptinvoicing.md
             - name: Zarządzanie dostawcami i współpraca z nimi
               items:
                 - name: Konfigurowanie i obsługa współpracy z dostawcami
@@ -1763,9 +1771,11 @@
                   href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
                 - name: Importowanie katalogów dostawców
                   href: procurement/vendor-catalogs-import.md
-                - name: Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut eProcurement
+                - name: Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement
                   href: procurement/set-up-external-catalog-for-punchout.md
-                - name: Używanie katalogów zewnętrznych dla rozwiązania PunchOut eProcurement
+                - name: Udoskonalenia cXML dotyczące zakupów
+                  href: procurement/purchasing-cxml-enhancements.md
+                - name: Używanie katalogów zewnętrznych dla rozwiązania PunchOut e-procurement
                   href: procurement/use-external-catalogs-for-punchout.md
                 - name: Mobilny obszar roboczy Współpraca z dostawcami
                   href: procurement/vendor-collaboration-mobile-workspace.md
@@ -2261,6 +2271,8 @@
                   href: sales-marketing/tasks/manage-order-holds.md
                 - name: Potwierdzanie zamówień sprzedaży
                   href: sales-marketing/tasks/confirm-sales-orders.md
+                - name: Rozwiązywanie problemów z zamówieniami sprzedaży
+                  href: sales-marketing/troubleshooting-sales.md
             - name: Umowy sprzedaży
               items:
                 - name: Omówienie umów sprzedaży
@@ -2279,10 +2291,12 @@
               items:
                 - name: Symulacja ceny
                   href: sales-marketing/price-simulation.md
-                - name: Zbiorowe tworzenie ofert sprzedaży
+                - name: Tworzenie grupowe ofert sprzedaży
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Tworzenie i edytowanie ofert sprzedaży
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
+                - name: Rozwiązywanie problemów z ofertami sprzedaży
+                  href: sales-marketing/troubleshooting-salesquotation.md
             - name: Zwroty
               items:
                 - name: Zwroty sprzedaży
@@ -2807,18 +2821,20 @@
                   items:
                     - name: Instalowanie i łączenie aplikacji magazynu
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: Skanowanie kodów kreskowych za pomocą aparatu w aplikacji magazynu
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Konfigurowanie nazw pól w aplikacji magazynu
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Konfigurowanie urządzeń przenośnych do pracy magazynowej
                       href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Skanowanie kodów kreskowych za pomocą aparatu w aplikacji magazynu
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Numer identyfikacyjny odbierany za pomocą aplikacji magazynu
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy w ramach zamówienia zakupu
                       href: warehousing/tasks/set-up-mobile-device-menu.md
                     - name: Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania towarów przyjętych
                       href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Konfigurowanie elementu menu urządzenia przenośnego w celu dostarczenia przeglądu wiersza pobrania
+                      href: warehousing/pick-line-overview.md
                     - name: Tworzenie elementu menu urządzenia przenośnego dla konsolidacji na podstawie numerów identyfikacyjnych
                       href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
                     - name: Przyjmowanie mieszanego numeru identyfikacyjnego na urządzeniu przenośnym
