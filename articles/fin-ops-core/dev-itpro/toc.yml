@@ -14,6 +14,8 @@
               items:
                 - name: Nowości i zmiany w aktualizacjach Platform update — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Aktualizacja Platform update dla wersji 10.0.15 (styczeń 2021)
+                  href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Aktualizacja Platform update w wersji 10.0.14 (listopad 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Aktualizacja Platform update w wersji 10.0.13 (październik 2020)
@@ -236,6 +238,8 @@
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: Rozwiązywanie ogólnych problemów
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Często zadawane pytania na temat podwójnego zapisu
+                          href: data-entities/dual-write/dual-write-faq.md
                     - name: Integracja z platformą Power Platform
                       items:
                         - name: Konfigurowanie scenariusza od prospektu do gotówki
@@ -386,9 +390,11 @@
           items:
             - name: Omówienie
               href: database/dbmovement-operations.md
+            - name: Zestaw narzędzi przesunięcia bazy danych
+              href: database/database-movement-toolkit.md
             - name: Przewodniki Szybki start
               items:
-                - name: Odśwież bazę danych
+                - name: Odświeżanie bazy danych
                   href: database/database-refresh.md
                 - name: Eksportowanie bazy danych
                   href: database/export-database.md
@@ -1564,6 +1570,8 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: Uaktualnianie systemu AX 2012 — lista kontrolna czynności poprzedzających uaktualnianie dla uaktualnienia danych
                   href: migration-upgrade/prepare-data-upgrade.md
+                - name: Uaktualnianie systemu AX 2012 — uaktualnianie danych w środowiskach piaskownicy przy użyciu procesu DACPAC
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: Uaktualnianie systemu AX 2012 — uaktualnianie danych w środowiskach piaskownicy
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: Uaktualnianie AX 2012 — środowiska lokalne

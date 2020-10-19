@@ -74,8 +74,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Aplikacje Finance and Operations we Francji
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
-            - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 Commerce
-              href: retail-support.md
+            - name: Uzyskiwanie pomocy technicznej
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Obsługa uaktualniania i wersji N-1
               items:
                 - name: Obsługa uaktualniania i wersji N-1 w rozwiązaniu Commerce
@@ -92,7 +92,9 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
                       href: get-started/whats-new-home-page.md
-                    - name: Rozwiązanie Commerce 10.0.14 (listopad 2020)
+                    - name: Rozwiązanie Commerce w wersji 10.0.15 (styczeń 2021)
+                      href: get-started/whats-new-commerce-10-0-15.md
+                    - name: Rozwiązanie Commerce w wersji 10.0.14 (listopad 2020)
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Rozwiązanie Commerce w wersji 10.0.13 (październik 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
@@ -272,9 +274,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
                 - name: Przenoszenie licencji między typami umów
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
-                - name: Przenoszenie projektów implementacji w usłudze LCS do innych dzierżaw usługi Azure AD
+                - name: Przenoszenie projektów wdrożeniowych usługi LCS do różnych dzierżawców usługi Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Wiele projektów usługi LCS i środowisk produkcyjnych w tej samej dzierżawie usługi Azure AD
+                - name: Przenoszenie projektów wdrożeniowych usługi LCS z lokalnego źródła do chmury
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
+                - name: Wiele projektów i środowisk produkcyjnych usługi LCS w tym samym dzierżawcy usługi Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: Implementowanie projektów Finance and Operations Commerce
                   href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
@@ -706,6 +710,8 @@
                   href: customer-orders-overview.md
                 - name: Hybrydowe zamówienia odbiorców
                   href: hybrid-customer-orders.md
+                - name: Odwołanie operacji zamówienia w punkcie sprzedaży
+                  href: enhancedorderrecall.md
             - name: Zamówienia sprzedaży
               items:
                 - name: Tworzenie zamówienia w biurze obsługi
@@ -780,8 +786,6 @@
               href: statement-posting-eod.md
             - name: Ulepszona obsługa pozycji śledzonych w partii
               href: batch.md
-            - name: Konfigurowanie parametrów aplikacji Commerce wpływających na zestawienia
-              href: tasks/parameter-configurations-retail-statements.md
             - name: Konfigurowanie ustawień metody płatności wpływających na zestawienia sieci sprzedaży
               href: tasks/payment-configurations-retail-statements.md
             - name: Konfigurowanie i realizowanie zadań obliczania zestawień
@@ -868,6 +872,8 @@
                   href: document-states-overview.md
                 - name: Praca z grupami publikowania
                   href: publish-groups.md
+                - name: Włączanie i używanie udostępniania między kanałami
+                  href: cross-channel-sharing.md
                 - name: Oznakowanie witryny logiem marki i dodawanie szczegółów sklepu
                   items:
                     - name: Dodawanie logo
@@ -1048,6 +1054,24 @@
               items:
                 - name: Generowanie raportów kanału online
                   href: generate-reports.md
+            - name: Eksperymentowanie
+              items:
+                - name: Eksperymentowanie w rozwiązaniu Dynamics 365 Commerce
+                  href: experimentation-overview.md
+                - name: Określanie hipotezy i ustalanie metryk dla doświadczenia
+                  href: experimentation-identify.md
+                - name: Konfigurowanie eksperymentu
+                  href: experimentation-setup.md
+                - name: Łączenie i edytowanie eksperymentu
+                  href: experimentation-connect-edit.md
+                - name: Podglądanie i publikowanie eksperymentu
+                  href: experimentation-preview-publish.md
+                - name: Uruchamianie i monitorowanie eksperymentu
+                  href: experimentation-run-monitor.md
+                - name: Podwyższenie poziomu i zakończenie eksperymentu
+                  href: experimentation-review-complete.md
+                - name: Przeglądanie stanu eksperymentu
+                  href: experimentation-status.md
             - name: Obsługa błędów
               items:
                 - name: Tworzenie niestandardowych stron odpowiedzi dla błędów kodu stanu 4xx/5xx
@@ -1076,10 +1100,16 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Konfigurowanie integracji fiskalnej dla kanału aplikacji Commerce
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Profile certyfikatów zdefiniowane przez użytkownika dla sklepów detalicznych
+              href: localizations/certificate-profiles-for-retail-stores.md
             - name: Austria
               items:
                 - name: Przykład integracji usługi rejestracji fiskalnej (Austria)
                   href: localizations/emea-aut-fi-sample.md
+            - name: Brazylia
+              items:
+                - name: Lokalizacja rozwiązania Commerce dla Brazylii
+                  href: localizations/latam-bra-commerce-localization.md
             - name: Europa Wschodnia
               items:
                 - name: Wspólne
@@ -2052,6 +2082,8 @@
                       href: e-commerce-extensibility/theme-module-extensions.md
                     - name: Rozszerzanie motywu z motywu podstawowego
                       href: e-commerce-extensibility/extend-theme.md
+                    - name: Dodawanie zasobów niestandardowych do kodu dostosowywania
+                      href: e-commerce-extensibility/add-custom-resources.md
                 - name: Wprowadzanie skryptu
                   items:
                     - name: Iniektory skryptów
@@ -2164,7 +2196,9 @@
                   href: dev-itpro/retail-server-extension.md
                 - name: Serwery proxy Typescript i C# aplikacji Retail
                   href: dev-itpro/typescript-proxy-retail-pos.md
-            - name: Możliwości rozszerzania środowiska Commerce Runtime (CRT)
+                - name: Korzystanie z interfejsów API usługi Retail Server w aplikacjach zewnętrznych
+                  href: dev-itpro/consume-retail-server-api
+            - name: Rozszerzalność środowiska uruchomieniowego Commerce Runtime (CRT)
               items:
                 - name: Architektura i konfiguracja środowiska CRT
                   href: dev-itpro/commerce-runtime-overview.md

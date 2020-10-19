@@ -3,7 +3,7 @@ title: Sprawdzanie spójności transakcji sprzedaży detalicznej
 description: W tym temacie opisano funkcje sprawdzania spójności transakcji w rozwiązaniu Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 10/07/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: eb5c7389ba29d50232f9321e40bccceecd5f5fc6
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.openlocfilehash: 3c7ca41b9e8a4c3127c98c756348959530a87996
+ms.sourcegitcommit: 1631296acce118c51c182c989e384e4863b03f10
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265625"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3968779"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Sprawdzanie spójności transakcji sprzedaży detalicznej
 
@@ -47,12 +47,12 @@ Proces wsadowy **Sprawdź poprawność transakcji w sklepie** sprawdza spójnoś
 
 - **Konto odbiorcy** — sprawdza, czy konto odbiorcy w tabelach transakcji istnieje w danych głównych odbiorcy w centrali.
 - **Liczba wierszy** — sprawdza, czy liczba wierszy w tabeli nagłówka transakcji jest zgodna z liczbą wierszy w tabelach transakcji sprzedaży.
-- **Cena zawiera podatek** — sprawdza, czy parametr **Cena zawiera podatek** jest spójny w wierszach transakcji.
-- **Kwota płatności** — sprawdza, czy rekordy płatności pasują do kwoty płatności w nagłówku.
-- **Kwota brutto** — sprawdza, czy kwota brutto w nagłówku jest sumą kwot netto w wierszach i kwoty podatku.
-- **Kwota netto** — sprawdza, czy kwota netto w nagłówku jest sumą kwot netto w wierszach.
-- **Niedopłata/Nadpłata** — sprawdza, czy różnica między kwotą brutto w nagłówku a kwotą płatności nie przekracza maksymalnej skonfigurowanej niedopłaty/nadpłaty.
-- **Kwota rabatu** — sprawdza, czy kwota rabatu w tabelach rabatów i kwota rabatu w tabelach wierszy transakcji są spójne i czy kwota rabatu w nagłówku jest sumą kwot rabatów w wierszach.
+- **Cena obejmuje podatek** — sprawdza, czy parametr **Cena obejmuje podatek** jest spójny w wierszach transakcji i czy cena w wierszu sprzedaży jest zgodna z konfiguracją ceny obejmującej podatek i zwolnionej z podatku.
+- **Kwota płatności** — sprawdza, czy rekordy płatności pasują do kwoty płatności w nagłówku, uwzględniając także w konfiguracji zaokrąglanie groszowe w księdze głównej.
+- **Kwota brutto** — sprawdza, czy kwota brutto w nagłówku jest sumą kwot netto w wierszach oraz kwoty podatku, uwzględniając także w konfiguracji zaokrąglanie groszowe w księdze głównej.
+- **Kwota netto** — sprawdza, czy kwota netto w nagłówku jest sumą kwot netto w wierszach, uwzględniając także w konfiguracji zaokrąglanie groszowe w księdze głównej.
+- **Niedopłata/Nadpłata** — sprawdza, czy różnica między kwotą brutto w nagłówku a kwotą płatności nie przekracza maksymalnej skonfigurowanej niedopłaty/nadpłaty, uwzględniając także w konfiguracji zaokrąglanie groszowe w księdze głównej.
+- **Kwota rabatu** — sprawdza, czy kwota rabatu w tabelach rabatów i kwota rabatu w tabelach wierszy transakcji są spójne i czy kwota rabatu w nagłówku jest sumą kwot rabatów w wierszach, uwzględniając także w konfiguracji zaokrąglanie groszowe w księdze głównej.
 - **Rabat wiersza** — sprawdza, czy rabat wiersza w wierszu transakcji jest sumą wszystkich wierszy w tabeli rabatów, które odpowiadają wierszowi transakcji.
 - **Pozycja na kartę upominkową** — rozwiązanie Commerce nie obsługuje zwrotów pozycji przekazanych za pośrednictwem karty upominkowej. Można jednak wypłacić saldo karty upominkowej. Każda pozycja na karcie upominkowej, który jest przetwarzana jako wiersz zwrotu, a nie wiersz wypłaty, powoduje niepowodzenie wykonywania procesu księgowania zestawienia. Proces weryfikacji pozycji przekazanych za pośrednictwem karty upominkowej pomaga zagwarantować, że w tabelach transakcji będą istnieć tylko wiersze wypłat kart upominkowych.
 - **Cena ujemna** — sprawdza, czy nie występują wiersze transakcji z ujemną ceną.
@@ -61,6 +61,7 @@ Proces wsadowy **Sprawdź poprawność transakcji w sklepie** sprawdza spójnoś
 - **Numer seryjny** — sprawdza, czy wiersze transakcji dla pozycji kontrolowanych przez numer seryjny zawierają numer seryjny.
 - **Znak** — sprawdza, czy znak na ilości i kwocie netto jest taki sam we wszystkich wierszach transakcji.
 - **Data biznesowa** — sprawdza, czy okresy obrachunkowe są otwarte dla wszystkich dat biznesowych dla transakcji.
+- **Opłaty** — sprawdza, czy kwota opłaty nagłówka i wiersza jest zgodna z ceną, z uwzględnieniem konfiguracji zawierającej podatek i zwolnionej z podatku.
 
 ## <a name="set-up-the-consistency-checker"></a>Konfigurowanie modułu sprawdzania spójności
 

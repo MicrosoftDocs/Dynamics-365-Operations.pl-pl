@@ -71,10 +71,12 @@
           items:
             - name: Wybieranie technologii integracji danych
               href: hr-admin-integration-choose-technology.md
-            - name: Konfigurowanie integracji z usługą Common Data Service
+            - name: Konfigurowanie integracji usługi Common Data Service
               href: hr-admin-integration-common-data-service.md
             - name: Jednostki usługi Common Data Service
               href: hr-developer-entities.md
+            - name: Konfiguruj jednostki wirtualne usługi Common Data Service
+              href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: Konfigurowanie integracji z rozwiązaniem Finance
               href: hr-admin-integration-finance.md
             - name: Konfigurowanie integracji z rozwiązaniem Dayforce
@@ -232,7 +234,7 @@
         - name: Rozwiązywanie problemów z modułem Human Resources
           items:
             - name: Uzyskiwanie pomocy technicznej
-              href: hr-admin-troubleshooting-support.md
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
             - name: 'Aby zoptymalizować wydajność, należy zaplanować zadania wsadowe po godzinach'
               href: hr-admin-troubleshooting-batch-jobs.md
             - name: Optymalizowanie wydajności za pomocą zadań automatycznego czyszczenia
@@ -271,7 +273,7 @@
           items:
             - name: Wybieranie technologii integracji danych
               href: hr-admin-integration-choose-technology.md
-            - name: Konfigurowanie integracji z usługą Common Data Service
+            - name: Konfigurowanie integracji usługi Common Data Service
               href: hr-admin-integration-common-data-service.md
             - name: Konfigurowanie integracji z rozwiązaniem Finance
               href: hr-admin-integration-finance.md
