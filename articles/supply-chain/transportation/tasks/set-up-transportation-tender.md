@@ -14,37 +14,37 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 847437947c6581864021779922dd825232635a82
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 62458fd0f7eb9d2155d70f013c96027953c4d4e1
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201440"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982288"
 ---
-# <a name="set-up-a-transportation-tender"></a><span data-ttu-id="f31ec-103">Konfigurowanie metody płatności za transport</span><span class="sxs-lookup"><span data-stu-id="f31ec-103">Set up a transportation tender</span></span>
+# <a name="set-up-a-transportation-tender"></a><span data-ttu-id="b36fa-103">Konfigurowanie metody płatności za transport</span><span class="sxs-lookup"><span data-stu-id="b36fa-103">Set up a transportation tender</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f31ec-104">W tej procedurze pokazano sposób konfigurowania metody płatności za transport.</span><span class="sxs-lookup"><span data-stu-id="f31ec-104">This procedure shows how to set up a transportation tender.</span></span> <span data-ttu-id="f31ec-105">Zazwyczaj jest to realizowane przez koordynatora transportu.</span><span class="sxs-lookup"><span data-stu-id="f31ec-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="f31ec-106">Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="f31ec-106">You can use this procedure in the USMF demo data company.</span></span>
+<span data-ttu-id="b36fa-104">W tej procedurze pokazano sposób konfigurowania metody płatności za transport.</span><span class="sxs-lookup"><span data-stu-id="b36fa-104">This procedure shows how to set up a transportation tender.</span></span> <span data-ttu-id="b36fa-105">Zazwyczaj jest to realizowane przez koordynatora transportu.</span><span class="sxs-lookup"><span data-stu-id="b36fa-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="b36fa-106">Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="b36fa-106">You can use this procedure in the USMF demo data company.</span></span>
 
 
-## <a name="select-a-route"></a><span data-ttu-id="f31ec-107">Wybór trasy</span><span class="sxs-lookup"><span data-stu-id="f31ec-107">Select a route</span></span>
-1. <span data-ttu-id="f31ec-108">Wybierz kolejno opcje Zarządzanie transportem > Planowanie > Warsztat planowania wysyłki ładunku.</span><span class="sxs-lookup"><span data-stu-id="f31ec-108">Go to Transportation management > Planning > Load planning workbench.</span></span>
-2. <span data-ttu-id="f31ec-109">Wyczyść pole wyboru Ukryj wysłane i odebrane.</span><span class="sxs-lookup"><span data-stu-id="f31ec-109">Clear the Hide shipped and received check box.</span></span>
-3. <span data-ttu-id="f31ec-110">Zaznacz wiersz z ładunkiem o identyfikatorze 00006.</span><span class="sxs-lookup"><span data-stu-id="f31ec-110">Select the line with Load ID 00006.</span></span>
-4. <span data-ttu-id="f31ec-111">Kliknij opcję Ustawianie stawek i wybór trasy.</span><span class="sxs-lookup"><span data-stu-id="f31ec-111">Click Rating and routing.</span></span>
-5. <span data-ttu-id="f31ec-112">Kliknij opcję Marszruty.</span><span class="sxs-lookup"><span data-stu-id="f31ec-112">Click Routes.</span></span>
+## <a name="select-a-route"></a><span data-ttu-id="b36fa-107">Wybór trasy</span><span class="sxs-lookup"><span data-stu-id="b36fa-107">Select a route</span></span>
+1. <span data-ttu-id="b36fa-108">Wybierz kolejno opcje Zarządzanie transportem > Planowanie > Warsztat planowania wysyłki ładunku.</span><span class="sxs-lookup"><span data-stu-id="b36fa-108">Go to Transportation management > Planning > Load planning workbench.</span></span>
+2. <span data-ttu-id="b36fa-109">Wyczyść pole wyboru Ukryj wysłane i odebrane.</span><span class="sxs-lookup"><span data-stu-id="b36fa-109">Clear the Hide shipped and received check box.</span></span>
+3. <span data-ttu-id="b36fa-110">Zaznacz wiersz z ładunkiem o identyfikatorze 00006.</span><span class="sxs-lookup"><span data-stu-id="b36fa-110">Select the line with Load ID 00006.</span></span>
+4. <span data-ttu-id="b36fa-111">Kliknij opcję Ustawianie stawek i wybór trasy.</span><span class="sxs-lookup"><span data-stu-id="b36fa-111">Click Rating and routing.</span></span>
+5. <span data-ttu-id="b36fa-112">Kliknij opcję Marszruty.</span><span class="sxs-lookup"><span data-stu-id="b36fa-112">Click Routes.</span></span>
 
-## <a name="create-the-transportation-tender"></a><span data-ttu-id="f31ec-113">Tworzenie metody płatności za transport</span><span class="sxs-lookup"><span data-stu-id="f31ec-113">Create the transportation tender</span></span>
-1. <span data-ttu-id="f31ec-114">Kliknij opcję Metody płatności za transport.</span><span class="sxs-lookup"><span data-stu-id="f31ec-114">Click Transportation tenders.</span></span>
-2. <span data-ttu-id="f31ec-115">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="f31ec-115">Click New.</span></span>
-3. <span data-ttu-id="f31ec-116">Rozwiń sekcję Ogólne.</span><span class="sxs-lookup"><span data-stu-id="f31ec-116">Expand the General section.</span></span>
-4. <span data-ttu-id="f31ec-117">W polu Wymagane stawki wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="f31ec-117">In the Requested rates field, enter a number.</span></span>
-5. <span data-ttu-id="f31ec-118">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="f31ec-118">Click Save.</span></span>
-6. <span data-ttu-id="f31ec-119">Kliknij przycisk Aktualizuj stan.</span><span class="sxs-lookup"><span data-stu-id="f31ec-119">Click Update status.</span></span>
-7. <span data-ttu-id="f31ec-120">Kliknij przycisk Prześlij.</span><span class="sxs-lookup"><span data-stu-id="f31ec-120">Click Submit.</span></span>
-8. <span data-ttu-id="f31ec-121">Wybierz trasę.</span><span class="sxs-lookup"><span data-stu-id="f31ec-121">Select a route.</span></span>
+## <a name="create-the-transportation-tender"></a><span data-ttu-id="b36fa-113">Tworzenie metody płatności za transport</span><span class="sxs-lookup"><span data-stu-id="b36fa-113">Create the transportation tender</span></span>
+1. <span data-ttu-id="b36fa-114">Kliknij opcję Metody płatności za transport.</span><span class="sxs-lookup"><span data-stu-id="b36fa-114">Click Transportation tenders.</span></span>
+2. <span data-ttu-id="b36fa-115">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="b36fa-115">Click New.</span></span>
+3. <span data-ttu-id="b36fa-116">Rozwiń sekcję Ogólne.</span><span class="sxs-lookup"><span data-stu-id="b36fa-116">Expand the General section.</span></span>
+4. <span data-ttu-id="b36fa-117">W polu Wymagane stawki wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="b36fa-117">In the Requested rates field, enter a number.</span></span>
+5. <span data-ttu-id="b36fa-118">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="b36fa-118">Click Save.</span></span>
+6. <span data-ttu-id="b36fa-119">Kliknij przycisk Aktualizuj stan.</span><span class="sxs-lookup"><span data-stu-id="b36fa-119">Click Update status.</span></span>
+7. <span data-ttu-id="b36fa-120">Kliknij przycisk Prześlij.</span><span class="sxs-lookup"><span data-stu-id="b36fa-120">Click Submit.</span></span>
+8. <span data-ttu-id="b36fa-121">Wybierz trasę.</span><span class="sxs-lookup"><span data-stu-id="b36fa-121">Select a route.</span></span>
 
