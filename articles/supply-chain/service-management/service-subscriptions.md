@@ -15,26 +15,26 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4618ea82744b5967cfce8258412e53a7d8aa67f3
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ccf4c722bd2342888326ae65e9f059bcd307c98f
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215017"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975447"
 ---
-# <a name="service-subscriptions"></a><span data-ttu-id="24c56-104">Subskrypcje serwisowe</span><span class="sxs-lookup"><span data-stu-id="24c56-104">Service subscriptions</span></span>
+# <a name="service-subscriptions"></a><span data-ttu-id="5c0b6-104">Subskrypcje serwisowe</span><span class="sxs-lookup"><span data-stu-id="5c0b6-104">Service subscriptions</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="24c56-105">Subskrypcje są tworzone na podstawie projektu typu czas i materiały.</span><span class="sxs-lookup"><span data-stu-id="24c56-105">Subscriptions are based on a time-and-materials project.</span></span> <span data-ttu-id="24c56-106">Subskrypcje można tworzyć z projektu, ze strony **Subskrypcje serwisowe** lub za pomocą grupy subskrypcji serwisowych.</span><span class="sxs-lookup"><span data-stu-id="24c56-106">You can create subscriptions from a project, from the **Service subscriptions** page, or by using a service subscription group.</span></span>
+<span data-ttu-id="5c0b6-105">Subskrypcje są tworzone na podstawie projektu typu czas i materiały.</span><span class="sxs-lookup"><span data-stu-id="5c0b6-105">Subscriptions are based on a time-and-materials project.</span></span> <span data-ttu-id="5c0b6-106">Subskrypcje można tworzyć z projektu, ze strony **Subskrypcje serwisowe** lub za pomocą grupy subskrypcji serwisowych.</span><span class="sxs-lookup"><span data-stu-id="5c0b6-106">You can create subscriptions from a project, from the **Service subscriptions** page, or by using a service subscription group.</span></span>
 
-<span data-ttu-id="24c56-107">Dla każdej subskrypcji można utworzyć opcjonalną liczbę opłat subskrypcji.</span><span class="sxs-lookup"><span data-stu-id="24c56-107">For each subscription, you can create an optional number of subscription fees.</span></span> <span data-ttu-id="24c56-108">Opłaty subskrypcji to transakcje, za które są wystawiane faktury odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="24c56-108">The subscription fees are the transactions that you invoice to the customer.</span></span>
+<span data-ttu-id="5c0b6-107">Dla każdej subskrypcji można utworzyć opcjonalną liczbę opłat subskrypcji.</span><span class="sxs-lookup"><span data-stu-id="5c0b6-107">For each subscription, you can create an optional number of subscription fees.</span></span> <span data-ttu-id="5c0b6-108">Opłaty subskrypcji to transakcje, za które są wystawiane faktury odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="5c0b6-108">The subscription fees are the transactions that you invoice to the customer.</span></span>
 
-<span data-ttu-id="24c56-109">Kod okresu oznacza okres obowiązywania opłaty subskrypcji lub interwał, w jakim subskrypcja powinna być fakturowana.</span><span class="sxs-lookup"><span data-stu-id="24c56-109">A period code indicates the extent of the subscription fee period, or the intervals at which the subscription should be invoiced.</span></span>
+<span data-ttu-id="5c0b6-109">Kod okresu oznacza okres obowiązywania opłaty subskrypcji lub interwał, w jakim subskrypcja powinna być fakturowana.</span><span class="sxs-lookup"><span data-stu-id="5c0b6-109">A period code indicates the extent of the subscription fee period, or the intervals at which the subscription should be invoiced.</span></span>
 
-<span data-ttu-id="24c56-110">Kod okresu jest definiowany w grupie subskrypcji serwisowych.</span><span class="sxs-lookup"><span data-stu-id="24c56-110">The period code is defined in the service subscription group.</span></span> <span data-ttu-id="24c56-111">Jest on określany dla subskrypcji za pomocą grupy subskrypcji serwisowych.</span><span class="sxs-lookup"><span data-stu-id="24c56-111">It is defined for the subscriptions through the service subscription group.</span></span> <span data-ttu-id="24c56-112">Każda nowo tworzona opłata subskrypcji ma sugerowaną datę początkową.</span><span class="sxs-lookup"><span data-stu-id="24c56-112">Any new subscription fee that you create has a suggested start date.</span></span> <span data-ttu-id="24c56-113">Jest to data rozpoczęcia okresu (jeśli jest to pierwszy utworzony okres) lub data zakończenia poprzedniego okresu (jeśli jest to drugi lub następny okres).</span><span class="sxs-lookup"><span data-stu-id="24c56-113">This is the start date of the period, if it is the first period that is created, or the end of the previous period, if it is the second or later period.</span></span>
+<span data-ttu-id="5c0b6-110">Kod okresu jest definiowany w grupie subskrypcji serwisowych.</span><span class="sxs-lookup"><span data-stu-id="5c0b6-110">The period code is defined in the service subscription group.</span></span> <span data-ttu-id="5c0b6-111">Jest on określany dla subskrypcji za pomocą grupy subskrypcji serwisowych.</span><span class="sxs-lookup"><span data-stu-id="5c0b6-111">It is defined for the subscriptions through the service subscription group.</span></span> <span data-ttu-id="5c0b6-112">Każda nowo tworzona opłata subskrypcji ma sugerowaną datę początkową.</span><span class="sxs-lookup"><span data-stu-id="5c0b6-112">Any new subscription fee that you create has a suggested start date.</span></span> <span data-ttu-id="5c0b6-113">Jest to data rozpoczęcia okresu (jeśli jest to pierwszy utworzony okres) lub data zakończenia poprzedniego okresu (jeśli jest to drugi lub następny okres).</span><span class="sxs-lookup"><span data-stu-id="5c0b6-113">This is the start date of the period, if it is the first period that is created, or the end of the previous period, if it is the second or later period.</span></span>
 
 

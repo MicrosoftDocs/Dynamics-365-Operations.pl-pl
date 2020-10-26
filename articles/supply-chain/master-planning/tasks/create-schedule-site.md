@@ -13,46 +13,46 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9bc2dc4a03f9d937339ec2470f6a065f77c7036a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d9059080fcd77a5317ce4226de6aad38b0066500
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209635"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979021"
 ---
-# <a name="create-a-schedule-for-a-site"></a><span data-ttu-id="2806e-103">Tworzenie harmonogramu dla oddziału</span><span class="sxs-lookup"><span data-stu-id="2806e-103">Create a schedule for a site</span></span>
+# <a name="create-a-schedule-for-a-site"></a><span data-ttu-id="119ad-103">Tworzenie harmonogramu dla oddziału</span><span class="sxs-lookup"><span data-stu-id="119ad-103">Create a schedule for a site</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="2806e-104">W tej procedurze pokazano sposób planowania zleceń produkcyjnych, które jeszcze nie zostały rozpoczęte w oddziale.</span><span class="sxs-lookup"><span data-stu-id="2806e-104">This procedure shows how to schedule production orders that are not yet started for a site.</span></span>  <span data-ttu-id="2806e-105">Dane wykorzystane do wykonania tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="2806e-105">The demo data company USMF is used to complete this procedure.</span></span>
+<span data-ttu-id="119ad-104">W tej procedurze pokazano sposób planowania zleceń produkcyjnych, które jeszcze nie zostały rozpoczęte w oddziale.</span><span class="sxs-lookup"><span data-stu-id="119ad-104">This procedure shows how to schedule production orders that are not yet started for a site.</span></span>  <span data-ttu-id="119ad-105">Dane wykorzystane do wykonania tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="119ad-105">The demo data company USMF is used to complete this procedure.</span></span>
 
 
-## <a name="identify-production-orders-that-are-not-started"></a><span data-ttu-id="2806e-106">Identyfikowanie zleceń produkcyjnych, które się jeszcze nie rozpoczęły</span><span class="sxs-lookup"><span data-stu-id="2806e-106">Identify production orders that are not started</span></span>
-1. <span data-ttu-id="2806e-107">Wybierz kolejno opcje Kontrola produkcji > Zlecenia produkcyjne > Wszystkie zlecenia produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="2806e-107">Go to Production control > Production orders > All production orders.</span></span>
-2. <span data-ttu-id="2806e-108">Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy.</span><span class="sxs-lookup"><span data-stu-id="2806e-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="2806e-109">Na przykład wyfiltruj według pola Oddział z wartością „1”.</span><span class="sxs-lookup"><span data-stu-id="2806e-109">For example, filter on the Site field with a value of '1'.</span></span>
-    * <span data-ttu-id="2806e-110">1 odpowiada oddziałowi w firmie USMF.</span><span class="sxs-lookup"><span data-stu-id="2806e-110">1 represents a site in USMF.</span></span> <span data-ttu-id="2806e-111">Jeśli nie używasz firmy USMF, wybierz oddział ze swojej firmy.</span><span class="sxs-lookup"><span data-stu-id="2806e-111">If you are not using USMF, select a site from your own company.</span></span>  
-3. <span data-ttu-id="2806e-112">Otwórz filtr kolumn Stan.</span><span class="sxs-lookup"><span data-stu-id="2806e-112">Open the Status column filter.</span></span>
-4. <span data-ttu-id="2806e-113">Zastosuj filtr do pola „Stan” z wartością „Zaplanowane” i operatorem „równa się”.</span><span class="sxs-lookup"><span data-stu-id="2806e-113">Apply a filter on the "Status" field, with a value of "Scheduled", using the "is exactly" filter operator.</span></span>
+## <a name="identify-production-orders-that-are-not-started"></a><span data-ttu-id="119ad-106">Identyfikowanie zleceń produkcyjnych, które się jeszcze nie rozpoczęły</span><span class="sxs-lookup"><span data-stu-id="119ad-106">Identify production orders that are not started</span></span>
+1. <span data-ttu-id="119ad-107">Wybierz kolejno opcje Kontrola produkcji > Zlecenia produkcyjne > Wszystkie zlecenia produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="119ad-107">Go to Production control > Production orders > All production orders.</span></span>
+2. <span data-ttu-id="119ad-108">Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy.</span><span class="sxs-lookup"><span data-stu-id="119ad-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="119ad-109">Na przykład wyfiltruj według pola Oddział z wartością „1”.</span><span class="sxs-lookup"><span data-stu-id="119ad-109">For example, filter on the Site field with a value of '1'.</span></span>
+    * <span data-ttu-id="119ad-110">1 odpowiada oddziałowi w firmie USMF.</span><span class="sxs-lookup"><span data-stu-id="119ad-110">1 represents a site in USMF.</span></span> <span data-ttu-id="119ad-111">Jeśli nie używasz firmy USMF, wybierz oddział ze swojej firmy.</span><span class="sxs-lookup"><span data-stu-id="119ad-111">If you are not using USMF, select a site from your own company.</span></span>  
+3. <span data-ttu-id="119ad-112">Otwórz filtr kolumn Stan.</span><span class="sxs-lookup"><span data-stu-id="119ad-112">Open the Status column filter.</span></span>
+4. <span data-ttu-id="119ad-113">Zastosuj filtr do pola „Stan” z wartością „Zaplanowane” i operatorem „równa się”.</span><span class="sxs-lookup"><span data-stu-id="119ad-113">Apply a filter on the "Status" field, with a value of "Scheduled", using the "is exactly" filter operator.</span></span>
 
-## <a name="create-a-schedule"></a><span data-ttu-id="2806e-114">Tworzenie harmonogramu</span><span class="sxs-lookup"><span data-stu-id="2806e-114">Create a schedule</span></span>
-1. <span data-ttu-id="2806e-115">Na liście oznacz wszystkie wiersze lub usuń ich oznaczenie.</span><span class="sxs-lookup"><span data-stu-id="2806e-115">In the list, mark or unmark all rows.</span></span>
-2. <span data-ttu-id="2806e-116">W okienku akcji kliknij pozycję Harmonogram.</span><span class="sxs-lookup"><span data-stu-id="2806e-116">On the Action Pane, click Schedule.</span></span>
-3. <span data-ttu-id="2806e-117">Kliknij opcję Planowanie zadań.</span><span class="sxs-lookup"><span data-stu-id="2806e-117">Click Schedule jobs.</span></span>
-4. <span data-ttu-id="2806e-118">W polu Kierunek planowania wybierz opcję "Wstecz od daty dostawy".</span><span class="sxs-lookup"><span data-stu-id="2806e-118">In the Scheduling direction field, select 'Backward from delivery date'.</span></span>
-5. <span data-ttu-id="2806e-119">W polu Ograniczone zdolności produkcyjne wybierz opcję Nie.</span><span class="sxs-lookup"><span data-stu-id="2806e-119">Select No in the Finite capacity field.</span></span>
-6. <span data-ttu-id="2806e-120">W polu Ograniczone materiały wybierz opcję Nie.</span><span class="sxs-lookup"><span data-stu-id="2806e-120">Select No in the Finite material field.</span></span>
-7. <span data-ttu-id="2806e-121">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="2806e-121">Click OK.</span></span>
-    * <span data-ttu-id="2806e-122">Może to trochę potrwać.</span><span class="sxs-lookup"><span data-stu-id="2806e-122">This may take a while.</span></span>  
+## <a name="create-a-schedule"></a><span data-ttu-id="119ad-114">Tworzenie harmonogramu</span><span class="sxs-lookup"><span data-stu-id="119ad-114">Create a schedule</span></span>
+1. <span data-ttu-id="119ad-115">Na liście oznacz wszystkie wiersze lub usuń ich oznaczenie.</span><span class="sxs-lookup"><span data-stu-id="119ad-115">In the list, mark or unmark all rows.</span></span>
+2. <span data-ttu-id="119ad-116">W okienku akcji kliknij pozycję Harmonogram.</span><span class="sxs-lookup"><span data-stu-id="119ad-116">On the Action Pane, click Schedule.</span></span>
+3. <span data-ttu-id="119ad-117">Kliknij opcję Planowanie zadań.</span><span class="sxs-lookup"><span data-stu-id="119ad-117">Click Schedule jobs.</span></span>
+4. <span data-ttu-id="119ad-118">W polu Kierunek planowania wybierz opcję "Wstecz od daty dostawy".</span><span class="sxs-lookup"><span data-stu-id="119ad-118">In the Scheduling direction field, select 'Backward from delivery date'.</span></span>
+5. <span data-ttu-id="119ad-119">W polu Ograniczone zdolności produkcyjne wybierz opcję Nie.</span><span class="sxs-lookup"><span data-stu-id="119ad-119">Select No in the Finite capacity field.</span></span>
+6. <span data-ttu-id="119ad-120">W polu Ograniczone materiały wybierz opcję Nie.</span><span class="sxs-lookup"><span data-stu-id="119ad-120">Select No in the Finite material field.</span></span>
+7. <span data-ttu-id="119ad-121">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="119ad-121">Click OK.</span></span>
+    * <span data-ttu-id="119ad-122">Może to trochę potrwać.</span><span class="sxs-lookup"><span data-stu-id="119ad-122">This may take a while.</span></span>  
 
-## <a name="view-the-result-of-scheduled-production-orders"></a><span data-ttu-id="2806e-123">Wyświetlanie rezultatów zaplanowanych zleceń produkcyjnych</span><span class="sxs-lookup"><span data-stu-id="2806e-123">View the result of scheduled production orders</span></span>
-1. <span data-ttu-id="2806e-124">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="2806e-124">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="2806e-125">Można oznaczyć dowolny wiersz.</span><span class="sxs-lookup"><span data-stu-id="2806e-125">You can mark any row.</span></span>  
-2. <span data-ttu-id="2806e-126">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="2806e-126">On the Action Pane, click Production order.</span></span>
-3. <span data-ttu-id="2806e-127">Kliknij opcję Wszystkie zadania.</span><span class="sxs-lookup"><span data-stu-id="2806e-127">Click All jobs.</span></span>
-    * <span data-ttu-id="2806e-128">Na tej stronie widać listę zadań.</span><span class="sxs-lookup"><span data-stu-id="2806e-128">On this page, you can see the list of jobs.</span></span> <span data-ttu-id="2806e-129">Na karcie Planowanie widać daty rozpoczęcia i zakończenia zadania.</span><span class="sxs-lookup"><span data-stu-id="2806e-129">On the Scheduling tab, you can see the Start date and End date for a job.</span></span>  
-4. <span data-ttu-id="2806e-130">Kliknij opcję Materiały.</span><span class="sxs-lookup"><span data-stu-id="2806e-130">Click Materials.</span></span>
-    * <span data-ttu-id="2806e-131">Na tej stronie widać szacowane zużycie materiału w operacjach zlecenia produkcyjnego oraz aktualnie dostępne zapasy.</span><span class="sxs-lookup"><span data-stu-id="2806e-131">On this page, you can see the estimated material consumption for the operations on the production order and the current available inventory.</span></span>  
+## <a name="view-the-result-of-scheduled-production-orders"></a><span data-ttu-id="119ad-123">Wyświetlanie rezultatów zaplanowanych zleceń produkcyjnych</span><span class="sxs-lookup"><span data-stu-id="119ad-123">View the result of scheduled production orders</span></span>
+1. <span data-ttu-id="119ad-124">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="119ad-124">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="119ad-125">Można oznaczyć dowolny wiersz.</span><span class="sxs-lookup"><span data-stu-id="119ad-125">You can mark any row.</span></span>  
+2. <span data-ttu-id="119ad-126">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="119ad-126">On the Action Pane, click Production order.</span></span>
+3. <span data-ttu-id="119ad-127">Kliknij opcję Wszystkie zadania.</span><span class="sxs-lookup"><span data-stu-id="119ad-127">Click All jobs.</span></span>
+    * <span data-ttu-id="119ad-128">Na tej stronie widać listę zadań.</span><span class="sxs-lookup"><span data-stu-id="119ad-128">On this page, you can see the list of jobs.</span></span> <span data-ttu-id="119ad-129">Na karcie Planowanie widać daty rozpoczęcia i zakończenia zadania.</span><span class="sxs-lookup"><span data-stu-id="119ad-129">On the Scheduling tab, you can see the Start date and End date for a job.</span></span>  
+4. <span data-ttu-id="119ad-130">Kliknij opcję Materiały.</span><span class="sxs-lookup"><span data-stu-id="119ad-130">Click Materials.</span></span>
+    * <span data-ttu-id="119ad-131">Na tej stronie widać szacowane zużycie materiału w operacjach zlecenia produkcyjnego oraz aktualnie dostępne zapasy.</span><span class="sxs-lookup"><span data-stu-id="119ad-131">On this page, you can see the estimated material consumption for the operations on the production order and the current available inventory.</span></span>  
 

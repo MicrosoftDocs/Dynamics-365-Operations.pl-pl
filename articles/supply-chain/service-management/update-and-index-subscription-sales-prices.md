@@ -15,42 +15,42 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7db18fdbdabe93a72094bbb104adf6e08e6002ee
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5b192cd6316f8e4de7919b7a3feda29fcbf54059
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206503"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978973"
 ---
-# <a name="update-and-index-subscription-sales-prices"></a><span data-ttu-id="622b3-103">Aktualizacja i subskrypcje indeksu cen sprzedaży</span><span class="sxs-lookup"><span data-stu-id="622b3-103">Update and index subscription sales prices</span></span> 
+# <a name="update-and-index-subscription-sales-prices"></a><span data-ttu-id="3bf4f-103">Aktualizacja i subskrypcje indeksu cen sprzedaży</span><span class="sxs-lookup"><span data-stu-id="3bf4f-103">Update and index subscription sales prices</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="622b3-104">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Subskrypcje serwisowe** \> **Wszystkie subskrypcje serwisu**.</span><span class="sxs-lookup"><span data-stu-id="622b3-104">Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.</span></span>
+1.  <span data-ttu-id="3bf4f-104">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Subskrypcje serwisowe** \> **Wszystkie subskrypcje serwisu**.</span><span class="sxs-lookup"><span data-stu-id="3bf4f-104">Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.</span></span>
 
-2.  <span data-ttu-id="622b3-105">Wybierz subskrypcję, której indeks lub cena podstawowa ma zostać zaktualizowana.</span><span class="sxs-lookup"><span data-stu-id="622b3-105">Select the subscription to update the index or base price for.</span></span>
+2.  <span data-ttu-id="3bf4f-105">Wybierz subskrypcję, której indeks lub cena podstawowa ma zostać zaktualizowana.</span><span class="sxs-lookup"><span data-stu-id="3bf4f-105">Select the subscription to update the index or base price for.</span></span>
 
-3.  <span data-ttu-id="622b3-106">Kliknij opcję **Indeks**.</span><span class="sxs-lookup"><span data-stu-id="622b3-106">Click **Index**.</span></span> <span data-ttu-id="622b3-107">W polu **Zmień** wskaż, jak mają być aktualizowane cena podstawowa lub indeks oraz czy podczas aktualizowania zostanie użyta wartość procentowa czy nowa wartość.</span><span class="sxs-lookup"><span data-stu-id="622b3-107">In the **Change** field, indicate how to update the base price or index, and whether the update must use a percentage or a new value.</span></span> <span data-ttu-id="622b3-108">Dostępne są następujące opcje:</span><span class="sxs-lookup"><span data-stu-id="622b3-108">You can select from the following options:</span></span>
+3.  <span data-ttu-id="3bf4f-106">Kliknij opcję **Indeks**.</span><span class="sxs-lookup"><span data-stu-id="3bf4f-106">Click **Index**.</span></span> <span data-ttu-id="3bf4f-107">W polu **Zmień** wskaż, jak mają być aktualizowane cena podstawowa lub indeks oraz czy podczas aktualizowania zostanie użyta wartość procentowa czy nowa wartość.</span><span class="sxs-lookup"><span data-stu-id="3bf4f-107">In the **Change** field, indicate how to update the base price or index, and whether the update must use a percentage or a new value.</span></span> <span data-ttu-id="3bf4f-108">Dostępne są następujące opcje:</span><span class="sxs-lookup"><span data-stu-id="3bf4f-108">You can select from the following options:</span></span>
     
-      - <span data-ttu-id="622b3-109">**Indeks procentowo**</span><span class="sxs-lookup"><span data-stu-id="622b3-109">**Index by a percentage**</span></span>
+      - <span data-ttu-id="3bf4f-109">**Indeks procentowo**</span><span class="sxs-lookup"><span data-stu-id="3bf4f-109">**Index by a percentage**</span></span>
     
-      - <span data-ttu-id="622b3-110">**Indeks do**</span><span class="sxs-lookup"><span data-stu-id="622b3-110">**Index to**</span></span>
+      - <span data-ttu-id="3bf4f-110">**Indeks do**</span><span class="sxs-lookup"><span data-stu-id="3bf4f-110">**Index to**</span></span>
     
-      - <span data-ttu-id="622b3-111">**Podstawa procentowo**</span><span class="sxs-lookup"><span data-stu-id="622b3-111">**Base price by percentage**</span></span>
+      - <span data-ttu-id="3bf4f-111">**Podstawa procentowo**</span><span class="sxs-lookup"><span data-stu-id="3bf4f-111">**Base price by percentage**</span></span>
     
-      - <span data-ttu-id="622b3-112">**Podstawa do**</span><span class="sxs-lookup"><span data-stu-id="622b3-112">**Base price to**</span></span>
+      - <span data-ttu-id="3bf4f-112">**Podstawa do**</span><span class="sxs-lookup"><span data-stu-id="3bf4f-112">**Base price to**</span></span>
 
-4.  <span data-ttu-id="622b3-113">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="622b3-113">Click **OK**.</span></span>
+4.  <span data-ttu-id="3bf4f-113">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="3bf4f-113">Click **OK**.</span></span>
 
-<span data-ttu-id="622b3-114">Cena podstawowa lub indeks subskrypcji zostaną zaktualizowane o podaną wartość.</span><span class="sxs-lookup"><span data-stu-id="622b3-114">The base price or index of the subscription is updated with the specified value.</span></span>
+<span data-ttu-id="3bf4f-114">Cena podstawowa lub indeks subskrypcji zostaną zaktualizowane o podaną wartość.</span><span class="sxs-lookup"><span data-stu-id="3bf4f-114">The base price or index of the subscription is updated with the specified value.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="622b3-115">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="622b3-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3bf4f-115">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="3bf4f-115">See also</span></span>
 
-<span data-ttu-id="622b3-116">[Subskrypcja indeksu (formularz klasy)](https://technet.microsoft.com/library/aa558579\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="622b3-116">[Index subscription (class form)](https://technet.microsoft.com/library/aa558579\(v=ax.60\))</span></span>
+<span data-ttu-id="3bf4f-116">[Subskrypcja indeksu (formularz klasy)](https://technet.microsoft.com/library/aa558579\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="3bf4f-116">[Index subscription (class form)](https://technet.microsoft.com/library/aa558579\(v=ax.60\))</span></span>
 
   
 
