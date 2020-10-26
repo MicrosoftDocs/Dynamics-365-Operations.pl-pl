@@ -3,7 +3,7 @@ title: Rozpocznij pracę z dodatkiem Faktury elektroniczne
 description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z dodatkiem Faktury elektroniczne w rozwiązaniach Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 61933bb846383932d7dd73e9c4d3c2db7a515a98
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: e7f58b8a449e056c4718ac6db30dcd0f0623d2a4
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3836018"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971479"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Rozpocznij pracę z dodatkiem Faktury elektroniczne
 
@@ -62,7 +62,7 @@ Możesz użyć dodatku Faktury elektroniczne z aktualną licencją. Do korzystan
 Przed wykonaniem czynności opisanych w tym temacie należy spełnić następujące wymagania wstępne:
 
 - Dostęp do swojego konta usługi LCS.
-- Projekt wdrożenia LCS, który obejmuje oprogramowanie Finance lub Supply Chain Management w wersji 10.0.12 lub nowszej.
+- Projekt wdrożenia LCS, który obejmuje oprogramowanie Finance lub Supply Chain Management w wersji 10.0.13 lub nowszej.
 - Dostęp do swojego konta usługi RCS.
 - Włącz funkcję globalizacji dla konta RCS za pomocą modułu **Zarządzanie funkcjami**. Aby uzyskać więcej informacji, zobacz [Regulatory Configuration Services (RCS) – funkcje globalizacji](rcs-globalization-feature.md)
 - Utwórz zasób magazynu kluczy i konto magazynu na platformie Azure. Aby uzyskać więcej informacji, przejrzyj temat [Utwórz konto usługi Azure Storage i usługę Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -85,16 +85,18 @@ Na poniższej ilustracji przedstawiono pięć głównych kroków, które należy
 ## <a name="lcs-setup"></a>Konfiguracja LCS
 
 1. Zaloguj się do swojego konta LCS.
-2. Wybierz projekt wdrożenia usługi LCS. Zanim będzie można wybrać projekt, musi on być uruchomiony.
-3. Na skróconej karcie **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
-4. Wybierz **Przesyłanie dokumentów biznesowych**.
-5. W oknie dialogowym **Konfiguracja dodatku** w polu **Identyfikator aplikacji AAD** wprowadź wartość **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ta wartość jest stałą wartością.
-6. W polu **Identyfikator dzierżawy usługi AAD** wprowadź identyfikator konta subskrypcji systemu Azure.
+2. Wybierz kafelek **Zarządzanie funkcjami w wersji zapoznawczej**, a w grupie pól **Funkcje w publicznych wersjach zapoznawczych** wybierz **BusinessDocumentSubmission**.
+3. Zaznacz pole **Funkcja wersji zapoznawczej włączona**.
+4. Wybierz projekt wdrożenia usługi LCS. Zanim będzie można wybrać projekt, musi on być uruchomiony.
+5. Na skróconej karcie **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
+6. Wybierz **Przesyłanie dokumentów biznesowych**.
+7. W oknie dialogowym **Konfiguracja dodatku** w polu **Identyfikator aplikacji AAD** wprowadź wartość **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ta wartość jest stałą wartością.
+8. W polu **Identyfikator dzierżawy usługi AAD** wprowadź identyfikator konta subskrypcji systemu Azure.
 
     ![Okno dialogowe konfiguracji dodatku w LCS](media/e-invoicing-services-get-started-lcs-addin-setup.png)
 
-7. Zaznacz pole wyboru, aby zaakceptować warunki i postanowienia.
-8. Wybierz **Zainstaluj**.
+9. Zaznacz pole wyboru, aby zaakceptować warunki i postanowienia.
+10. Wybierz **Zainstaluj**.
 
 ## <a name="rcs-setup"></a>Konfiguracja RCS
 
@@ -124,7 +126,7 @@ Podczas instalacji RCS należy wykonać następujące zadania:
 
     ![Pole URI magazynu kluczy](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
-7. Na skróconej karcie **Certyfikaty** wybierz opcję **Dodaj**, a następnie wprowadź nazwy certyfikatów cyfrowych i klucze tajne magazynu kluczy. Oba zestawy wartości są skonfigurowane w zasobie magazynu kluczy na platformie Azure.
+7. Na skróconej karcie **Certyfikaty** wybierz pozycję **Dodaj**, aby wprowadzić wszystkie cyfrowe nazwy certyfikatów i wpisy tajne magazynu kluczy potrzebne do ustanowienia zaufanego połączenia. W kolumnie **Typ** można określić, czy jest to certyfikat, czy wpis tajny. Oba zestawy wartości są skonfigurowane w zasobie magazynu kluczy na platformie Azure.
 
     ![Dodawanie certyfikatów](media/e-invoicing-services-get-started-add-digital-certificates.png)
 
@@ -132,9 +134,9 @@ Podczas instalacji RCS należy wykonać następujące zadania:
 
 ### <a name="set-up-the-rcs-integration-with-the-electronic-invoicing-add-on-server"></a>Skonfiguruj integrację RCS z serwerem dodatkowym Faktury elektroniczne
 
-1. W module **Funkcje globalizacji**, w obszarze roboczym **Raportowanie elektroniczne** wybierz łącze **Parametry raportowania elektronicznego**.
+1. W module **Funkcje globalizacji**, w obszarze roboczym **Ustawienia powiązane** wybierz łącze **Parametry raportowania elektronicznego**.
 2. Wybierz opcję **Kliknij tutaj, aby połączyć się z Lifecycle Service**. Jeśli nie chcesz łączyć się z usługi LCS, wybierz przycisk **Anuluj**.
-3. Na karcie **Dodatek Faktury elektroniczne** w polu **Identyfikator URI punktu końcowego usługi** wprowadź wartość `https://businessdocumentsubmission.us.operations365.dynamics.com/`.
+3. Na karcie **Usługi fakturowania elektronicznego**, w polu**Identyfikator URI punktu końcowego usługi** wprowadź wartość zgodnie z dostępnymi regionami: `https://businessdocumentsubmission.us.operations365.dynamics.com/`lub `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
 4. W polu **Identyfikator aplikacji** sprawdź, czy zawiera on identyfikator **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Ta wartość jest stałą wartością.
 5. W polu **Identyfikator środowiska usługi LCS** wprowadź identyfikator konta subskrypcji LCS.
 

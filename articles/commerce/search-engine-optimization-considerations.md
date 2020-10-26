@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7c7afed8e4620d5fe49ead47eb6c17d97d7492ad
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6ffc772addb330abe7205007662a3f3e08a3e47f
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002816"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961593"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>Zagadnienia optymalizacji wyszukiwarki dla witryny
 
@@ -47,7 +47,7 @@ Aby zoptymalizować indeksowanie wyszukiwarek, struktura renderowania wykorzystu
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>Ustawienia SEO strony dla wewnętrznego podglądu, ograniczonej liczby odbiorców i wszystkich odbiorców
 
-Ponieważ Dynamics 365 Commerce działa według zasady „to co widzisz, jest tym co dostajesz” (WYSIWYG), autorzy mogą przygotować zawartość strony bez konieczności obaw, że informacje staną się widoczne dla osób odwiedzających witrynę. Jeśli strona musi zostać opublikowana, ale jej ekspozycja musi być ograniczona, powinna mieć metatag **NOINDEX**, aby nie był indeksowany przez wyszukiwarki. Następnie, gdy strona jest gotowa dla wszystkich odbiorców, wszystkie podstawowe metadane SEO powinny być obecne, aby zmaksymalizować skuteczność indeksowania wyszukiwarek. Ponadto należy usunąć metatag **NOLIMIT**.
+Ponieważ Dynamics 365 Commerce działa według zasady „to co widzisz, jest tym co dostajesz” (WYSIWYG) w wizualnym konstruktorze stron, autorzy mogą przygotować zawartość strony bez konieczności obaw, że informacje staną się widoczne dla osób odwiedzających witrynę. Jeśli strona musi zostać opublikowana, ale jej ekspozycja musi być ograniczona, powinna mieć metatag **NOINDEX**, aby nie był indeksowany przez wyszukiwarki. Następnie, gdy strona jest gotowa dla wszystkich odbiorców, wszystkie podstawowe metadane SEO powinny być obecne, aby zmaksymalizować skuteczność indeksowania wyszukiwarek. Ponadto należy usunąć metatag **NOLIMIT**.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

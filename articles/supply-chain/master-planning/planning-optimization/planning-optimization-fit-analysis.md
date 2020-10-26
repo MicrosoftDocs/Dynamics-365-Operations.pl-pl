@@ -3,7 +3,7 @@ title: Analiza dopasowywania optymalizacją planowania
 description: W tym temacie wyjaśniono, jak sprawdzić bieżącą konfigurację i dane, porównując je z możliwościami funkcji optymalizacji planowania.
 author: ChristianRytt
 manager: tfehr
-ms.date: 09/23/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 73549097eed6d9418d5ff73e108d1dbae7ed66b3
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: 769bd84b4ba23c9de4638df9186381936221414a
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887145"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973459"
 ---
-# <a name="planning-optimization-fit-analysis"></a>Analiza dopasowywania optymalizacją planowania
+# <a name="planning-optimization-fit-analysis"></a>Analiza dopasowań optymalizacji planowania
 
 [!include [banner](../../includes/banner.md)]
 
-Aby sprawdzić zgodność bieżących ustawień i danych z funkcją optymalizacji planowania, przejdź do **Planowanie główne** \> **Ustawienia** \> **Analiza dopasowywania optymalizacją planowania**, a następnie wybierz opcję **Uruchom analizę**. Jeśli analiza wykryje niespójności, zostaną one wyświetlone na tej samej stronie. (Analiza może potrwać kilka minut.)
+Wynik z analizy dopasowania optymalizacji planowania należy analizować w ramach procesu migracji. Należy pamiętać, że zakres optymalizacji planowania nie jest równy bieżącej wbudowanej funkcji planowania głównego. Zalecamy współpracę z partnerem i zapoznanie się z dokumentacją w celu przygotowania się do migracji. 
+
+Analiza dopasowania optymalizacji planowania pomaga określić miejsce, w którym wynik może się różnić między wbudowanym aparatem planowania głównego i optymalizacją planowania. Analiza jest przeprowadzana na podstawie bieżących ustawień i danych. 
+
+Aby wyświetlić wyniki analizy dotyczącej optymalizacji planowania, przejdź do okna **Planowanie główne** \> **Konfiguracja** \> **Analiza dopasowań optymalizacji planowania**, a następnie wybierz opcję **Uruchom analizę**. Jeśli analiza wykryje niespójności, zostaną one wyświetlone na tej samej stronie. (Analiza może potrwać kilka minut.)
 
 > [!NOTE]
 > W przypadku znalezienia niespójności nadal można skorzystać z optymalizacji planowania. Wyniki analizy dopasowania pokazują tylko miejsca, w których usługa planowania nie będzie przestrzegać bieżących ustawień. Innymi słowy pokazują one miejsca, w których niektóre procesy mogą być ignorowane lub mogą być nieobsługiwane.
@@ -63,7 +67,7 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | Akceptacja | Plany główne z ustawionym automatycznym akceptowaniem: _\#_ | W wersji 10.0.7 i nowszych automatyczna akceptacja jest obsługiwana jako osobne zadanie wsadowe w ramach planowania głównego ( pod warunkiem, że włączono funkcję _Automatyczne akceptowanie Optymalizacji planowania_ w module [Zarządzanie funkcjami](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Należy pamiętać, że Automatyczne akceptowanie optymalizacji planowania jest oparte na dacie zamówienia (data rozpoczęcia), a nie w dacie zapotrzebowania (Data zakończenia). To zachowanie gwarantuje, że akceptacja zamówień odbywa się w odpowiednim czasie, bez konieczności uwzględniania czasu realizacji w horyzoncie czasowym akceptowania. | Obsługiwana |
 | FitAnalysisPlanningItems | Pozycje planowania: _\#_ | Ta funkcja jest oczekiwana. Obecnie elementy planowania są traktowane jak zwykłe pozycje, gdy jest włączona Optymalizacja planowania. | 2021 października |
 | Prognozy | Grupy zapotrzebowania z włączonymi opcjami „Uwzględnij zamówienia międzyfirmowe”:_\#_ | Ta funkcja jest oczekiwana. Obecnie planowanie główne nie zawiera planowanego popytu od dostawcy, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. Należy zauważyć, że zwolnione/zaakceptowane zamówienia nadal działają z regularnymi funkcjami międzyfirmowymi i będą dotyczyły większości scenariuszy. | 2020 października |
-| Prognozy | Grupy zapotrzebowania z opcją „Zmniejsz prognozę o” ustawioną na wartość inną niż „Zamówienia”: _\#_ | Domyślnie w przypadku zamówień w Optymalizacji planowania jest używana opcja „Zmniejsz prognozę o”, niezależnie od tego ustawienia. | 2020 października |
+| Prognozy | Grupy zapotrzebowania z opcją „Zmniejsz prognozę o” ustawioną na wartość inną niż „Zamówienia”: _\#_ | Domyślnie w przypadku zamówień w Optymalizacji planowania jest używana opcja „Zmniejsz prognozę o”, niezależnie od tego ustawienia. | Listopad 2020 |
 | Prognozy | Modele prognozy z podmodelami: _\#_ | Ta funkcja jest oczekiwana. Obecnie prognozy korzystające z podmodeli nie są obsługiwane, jeśli Optymalizacja planowania jest włączona. Zostaną one zignorowane niezależnie od tego ustawienia. | 2021 kwietnia |
 | Prognozy | Plany główne z włączoną opcją „Uwzględnij prognozę dostaw”: _\#_ | Ta funkcja jest oczekiwana. Obecnie prognozy dostaw nie są obsługiwane, jeśli Optymalizacja planowania jest włączona. Zostaną one zignorowane niezależnie od tego ustawienia. | 2021 października |
 | Horyzont czasowy zamrożenia | Grupy zapotrzebowania z ustawionym horyzontem czasowym zamrożenia: _\#_ | Horyzont czasowy zamrożenia nie jest często używany, a obecnie nie ma planów uwzględniania go w Optymalizacji planowania. Obecnie podczas włączania optymalizacji planowania konfiguracja horyzontu czasowego zamrożenia nie jest brany pod uwagę, niezależnie od tego ustawienia. | ND |
@@ -72,7 +76,7 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | Międzyfirmowe | Plany główne uwzględniające planowany popyt od dostawcy do odbiorcy: _\#_ | Ta funkcja jest oczekiwana. Obecnie planowanie główne nie zawiera planowanego popytu od dostawcy, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. Należy zauważyć, że zwolnione/zaakceptowane zamówienia nadal działają z normalnymi funkcjami międzyfirmowymi i będą dotyczyły większości scenariuszy. | 2020 października |
 | Kanban | Rekordy zapotrzebowania na towary z planowanym typem zamówienia Kanban: _\#_ | Ta funkcja jest oczekiwana. Obecnie zapotrzebowanie na towary, dla którego ustawiono wartość Kanban, będzie ignorowane, gdy jest włączona Optymalizacja planowania. Typ zamówienia planowanego Kanban utworzy ostrzeżenie podczas planowania głównego, a planowane zamówienia zakupu zostaną utworzone w celu pokrycia pokrewnego popytu. | 2021 października |
 | Kanban | Towary z domyślnym typem zamówienia Kanban: _\#_ | Obecnie domyślny typ zamówienia, dla którego ustawiono wartość Kanban, będzie ignorowane, gdy jest włączona Optymalizacja planowania. Typ zamówienia domyślnego Kanban utworzy ostrzeżenie podczas planowania głównego, a planowane zamówienia zakupu zostaną utworzone w celu pokrycia pokrewnego popytu. | 2021 października |
-| Stan cyklu życia produktu   | Stany cyklu życia produktu nieaktywne dla planowania: _\#_ | Ta funkcja oczekuje na wprowadzenie. Obecnie stan cyklu życia produktu jest ignorowany przy włączonej optymalizacji planowania. Można dostosować filtr produktów na poziomie planu, aby uniknąć uwzględniania produktów, w których stan cyklu życia produktu został wyłączony na potrzeby planowania. | 2020 października |
+| Stan cyklu życia produktu   | Stany cyklu życia produktu nieaktywne dla planowania: _\#_ | Ta funkcja oczekuje na wprowadzenie. Obecnie stan cyklu życia produktu jest ignorowany przy włączonej optymalizacji planowania. Można dostosować filtr produktów na poziomie planu, aby uniknąć uwzględniania produktów, w których stan cyklu życia produktu został wyłączony na potrzeby planowania. | Listopad 2020 |
 | Produkcyjne | Wiersze BOM z zaokrągleniem lub wieloma wariantami konfiguracji: _\#_ | Ta funkcja jest oczekiwana. Obecnie zaokrąglanie i wielokrotność konfiguracji są ignorowane w wierszach BOM, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. | 2021 kwietnia |
 | Produkcyjne | Wiersze BOM/wiersze formuł z miarą formuły: _\#_ | Ta funkcja jest oczekiwana. Obecnie formuła z miarą jest ignorowana w wierszach BOM i formuły, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. | 2021 października |
 | Produkcyjne | Wiersze BOM/wiersze formuł z podstawianiem pozycji (grupy planowania): _\#_ | Ta funkcja jest oczekiwana. Obecnie podstawianie pozycji (grupy planowania) jest ignorowana w wierszach BOM i formuły, gdy jest włączona Optymalizacja planowania, niezależnie od tego ustawienia. | 2021 października |

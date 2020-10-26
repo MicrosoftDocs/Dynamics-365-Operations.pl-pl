@@ -3,7 +3,7 @@ title: Zarządzanie funkcjami — omówienie
 description: W tym temacie opisano funkcję zarządzania funkcjami i sposób jego używania.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
-ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
+ms.openlocfilehash: 22e5333859d37ad33f5806d63fc874b1b5a52831
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3499626"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967341"
 ---
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
@@ -179,3 +179,24 @@ Usuwanie funkcji to przełączniki w czasie rzeczywistym włączone/wyłączone 
 
 ### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Czy funkcje zostały kiedykolwiek opuszczone bez wiedzy klienta? 
 Tak, jeśli funkcja wpływa na funkcjonowanie środowiska, które nie ma wpływu funkcjonalnego, może być domyślnie włączona.
+
+### <a name="how-can-feature-enablement-be-checked-in-code"></a>Jak sprawdzić włączenie funkcji w kodzie?
+Należy zastosować metodę **isFeatureEnabled** w klasie **FeatureStateProvider**, przekazując do niej instancję klasy funkcji. Przykład: 
+
+    if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+
+### <a name="how-can-feature-enablement-be-checked-in-metadata"></a>Jak sprawdzić włączenie funkcji w metadanych?
+Właściwość **FeatureClass** może służyć do wskazania, że niektóre metadane są skojarzone z funkcją. Należy użyć nazwy klasy używanej dla funkcji, np **BatchContentionPreventionFeature**. Metadane są widoczne tylko w tej funkcji. Właściwość **FeatureClass** jest dostępna w menu, elementach menu, wartościach tekstu stałego oraz polach tabel/widoków.
+
+### <a name="what-is-a-feature-class"></a>Co to jest klasa funkcji?
+Funkcje w Zarządzaniu funkcjami są zdefiniowane jako *klasy funkcji*. Klasa funkcji **implementuje IFeatureMetadata** i używa atrybutu klasy funkcji w celu identyfikacji się w obszarze roboczym Zarządzanie funkcjami. Istnieje wiele przykładów dostępnych klas funkcji, które można sprawdzać pod kątem włączenia w kodzie za pomocą interfejsu API **FeatureStateProvider**i metadanych, używając właściwości **FeatureClass**. Przykład: 
+
+    [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
+    internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
+    
+### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Co to jest implementacja IFeatureLifecycle przez niektóre klasy funkcji?
+IFeatureLifecycle jest wewnętrznym mechanizmem Microsoft określającym etap cyklu funkcji. Funkcje mogą być następujące:
+- PrivatePreview — wymaga, aby pakiet testowy był widoczny.
+- PublicPreview — wyświetlana domyślnie, ale z ostrzeżeniem, że funkcja jest w wersji zapoznawczej.
+- Zwolniona — w pełni zwolniona.
+

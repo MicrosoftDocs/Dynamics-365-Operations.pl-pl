@@ -3,7 +3,7 @@ title: Operacja zapasów przychodzących w punkcie sprzedaży
 description: W tym temacie opisano możliwości przychodzących operacji magazynowych w punkcie sprzedaży (POS).
 author: hhaines
 manager: annbe
-ms.date: 08/18/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 89021a85c2b215695d7cc25215c049205f71956d
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710316"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971504"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Operacja zapasów przychodzących w punkcie sprzedaży
 
@@ -133,6 +133,18 @@ Widok **Przyjmowane teraz** stanowi skoncentrowany sposób wyświetlania przez u
 Sprawdzanie poprawności nastąpiło podczas procesu odbierania dla wierszy dokumentu. Obejmują one sprawdzanie nadwyżki w dostawie. Jeśli użytkownik spróbuje uzyskać więcej zapasów niż zamówiono w zamówieniu zakupu, ale nadwyżka w dostawie nie jest skonfigurowana lub otrzymana kwota przekracza tolerancję nadwyżki w dostawie skonfigurowaną dla wiersza zamówienia zakupu, zostanie wyświetlony błąd i nie można przyjąć nadmiarowej ilości.
 
 Nadmierne odbieranie nie jest dozwolone dla dokumentów zamówienia przeniesienia. Użytkownicy będą zawsze otrzymywali błędy, jeśli próbują przyjąć więcej niż wysłano w wierszu zamówienia przeniesienia.
+
+### <a name="close-purchase-order-lines"></a>Zamykanie wierszy zamówień zakupu
+
+Pozostałą ilość w zamówieniu zakupu można zamknąć w trakcie procesu odbierania, jeśli spedytor potwierdził, że nie może wysłać pełnej wymaganej ilości. W tym celu firma musi być skonfigurowana tak, aby zezwalać na niedobór w dostawie zamówień zakupu. Ponadto dla wiersza zamówienia zakupu musi zostać wartość tolerancja procentowa niedoboru w dostawie.
+
+Aby skonfigurować firmę w taki sposób, aby zezwalała na niedobór zamówień zakupu w module Commerce Headquarters, przejdź do **Zaopatrzenie i sourcing** > **Konfiguracja** > **Parametry modułu Zaopatrzenie i sourcing**. Na karcie **Dostawa** włącz parametr **Akceptacja niedoboru w dostawie**. Następnie uruchom zadanie harmonogramu dystrybucji **1070** (**Konfiguracja kanałów**), aby zsynchronizować zmiany z kanałami.
+
+Wartości procentowe tolerancji niedoboru dla wiersza zamówienia mogą być wstępnie zdefiniowane dla produktów jako część konfiguracji produktu w module Commerce Headquarters. Można je również ustawić lub zastąpić w określonym zamówieniu zakupu w module Commerce Headquarters.
+
+Po zakończeniu konfigurowania niedoboru w zamówienia zakupu w organizacji użytkownicy punktu sprzedaży będą widzieć nową opcję **Zamknij pozostałą ilość** w okienku **Szczegóły**, gdy w operacji **Zapasy przychodzące** zostanie wybrany wiersz przychodzącego zamówienia zakupu. Jeśli użytkownik zamknie pozostałej ilości, POS zweryfikuje, czy zamykana ilość mieści się w tolerancji procentowej wartości niedoboru w dostawie określonej w wierszu zamówienia zakupu. Jeśli tolerancja niedoboru w dostawie zostanie przekroczona, wyświetlany jest komunikat o błędzie, a użytkownik nie będzie mógł zamknąć pozostałej ilości, dopóki wcześniej otrzymana ilość **Przyjmowana teraz** będzie równa lub przekroczy minimalną ilość, która musi zostać przyjęta na podstawie wartości procentowej tolerancji niedoboru dostawy. 
+
+Po włączeniu opcji **Zamknij pozostałą ilość** dla wiersza zamówienia zakupu, gdy użytkownik zakończy przyjęcie przy użyciu akcji **Zakończ przyjęcie**, żądanie zamknięcia zostanie również wysyłane do modułu Commerce Headquarters, a każda nieodebrana ilość z tego wiersza zamówienia zostanie anulowana. W tym momencie wiersz jest uznawany za całkowicie odebrany. 
 
 ### <a name="receiving-location-controlled-items"></a>Odbieranie towarów kontrolowanych w lokalizacji
 

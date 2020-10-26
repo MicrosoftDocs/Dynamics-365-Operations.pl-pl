@@ -1,9 +1,9 @@
 ---
 title: Zarządzanie ocenami i recenzjami
-description: W tym temacie opisano sposób zarządzania ocenami i recenzjami za pomocą narzędzia oceny i recenzji Microsoft Dynamics 365 Commerce.
+description: W tym temacie wyjaśniono, jak zarządzać klasyfikacjami recenzjami konstruktorze witryn Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 01/30/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,38 +18,30 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a7fa2ae3124a0a68b3890987c5dce2730e5c2183
-ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
+ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027249"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3974013"
 ---
 # <a name="manage-ratings-and-reviews"></a>Zarządzanie ocenami i recenzjami
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób zarządzania ocenami i recenzjami za pomocą narzędzia oceny i recenzji Microsoft Dynamics 365 Commerce.
+W tym temacie wyjaśniono, jak zarządzać klasyfikacjami recenzjami konstruktorze witryn Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Omówienie
 
-Dynamics 365 Commerce uzywa Microsoft Azure Cognitive Service do automatyczniej moderacji tekstu recenzji, redagując wulgaryzmy Ponadto moderatorzy mogą wykorzystywać narzędzie do oceny i recenzji dla następujących zadań ręcznych:
+Dynamics 365 Commerce uzywa Microsoft Azure Cognitive Service do automatyczniej moderacji tekstu recenzji, redagując wulgaryzmy Ponadto za pomocą konstruktora witryn Dynamics 365 Commerce moderatorzy mogą wykonywać następujące zadania ręczne:
 
 - Moderowanie recenzji, odpowiadając na nie lub usuwaniu.
 - Usuwanie opini klienta na jego życzenie.
 - Masowe Importowanie danych ocen i recenzji dotyczących wszystkich produktów w szablonie rozwiązania Microsoft Power BI, dzięki czemu można analizować trendy dotyczące ocen i recenzji.
 
-## <a name="access-ratings-and-reviews-moderation-features"></a>Dostęp do funkcji moderowania recenzji i ocen
-
-Aby uzyskać dostęp do klasyfikacji i przeglądu funkcji moderowania w narzędziu Zarządzanie serwisem e-Commerce, należy wykonać następujące kroki.
-
-1. Zaloguj się do [Microsoft LifeCycle Services (LCS)](https://lcs.dynamics.com).
-1. Otwórz projekt zawierający środowisko, w którym chcesz zainicjować e-Commerce.
-1. W sekcji **środowiska** wybierz środowisko.
-1. W obszarze **Funkcje środowiska** wybierz pozycję **Zarządzaj sprzedażą detaliczną**.
-1. Na karcie **e-commerce** w obszarze **łącza** wybierz pozycję **narzędzie do zarządzania witryną handlu elektronicznego**.
-
 ## <a name="read-a-review"></a>Przeczytaj recenzję 
+
+Aby przeczytać recenzję w konstruktorze witryn w usłudze Commerce, wykonaj następujące kroki.
 
 1. Przejdź do **Strona główna \> Recenzje \> Moderacja**
 1. Pole wyszukiwania w prawym górnym rogu strony umożliwia filtrowanie recenzji wyświetlanych według identyfikatora produktu, nazwy produktu lub tekstu recenzji.
@@ -62,7 +54,7 @@ Dodatkowe filtry umożliwiają ograniczenie recenzji według okresu, oceny, kana
 
 Czasami Klienci, którzy zakupili produkt, wyrażają zadowolenie lub niedozadowolenie, lub nie wiedzą, jak skorzystać z produktu. Jako moderatora możesz zaksięgować odpowiedź na recenzję. Ta odpowiedź jest wyświetlana razem z recenzją w witrynie. 
 
-Aby odpowiedzieć na recenzję, należy wykonać następujące kroki.
+Aby odpowiedzieć na recenzję w konstruktorze witryn w usłudze Commerce, wykonaj następujące kroki.
 
 1. Przejdź do **Strona główna \> Recenzje \> Moderacja**
 1. Znajdź i wybierz recenzję, która wymaga odpowiedzi.
@@ -76,17 +68,17 @@ Aby odpowiedzieć na recenzję, należy wykonać następujące kroki.
 
 Niekiedy w firmie istnieje uzasadnienie biznesowe w celu usunięcia recenzji klientów. 
 
-Aby usunąć recenzję, należy wykonać następujące kroki.
+Aby usunąć recenzję w konstruktorze witryn w usłudze Commerce, wykonaj następujące kroki.
 
 1. Przejdź do **Strona główna \> Recenzje \> Moderacja**
 1. Znajdź i zaznacz recenzję, która ma zostać przewidziana.
-1. W okienku właściwości po prawej stronie wybierz przyczynę usunięcia, a następnie wybierz opcję **usuń**.
+1. W okienku właściwości po prawej stronie wybierz przyczynę usunięcia w obszarze **Usuń recenzję**, a następnie wybierz opcję **Usuń**.
     
 ## <a name="delete-a-customers-reviews-at-the-customers-request"></a>Usuwanie opini klienta na jego życzenie 
 
 Czasami klienci chcą trwale usunąć swoje oceny i dane z witryny internetowej e-Commerce. Moderator otrzymujący żądanie usunięcia od odbiorcy może usunąć dane odbiorcy, korzystając z funkcji usuwania recenzji. Aby znaleźć i usunąć dane odbiorcy, moderator wymaga adresu e-mail używanego przez klienta do zalogowania się i dostarczenia recenzji. 
 
-Aby znaleźć i usunąć dane odbiorcy, wykonaj następujące kroki.
+Aby znaleźć i usunąć dane klienta w konstruktorze witryn w module Commerce, należy wykonać następujące kroki.
 
 1. Przejdź do **Strona główna \> Recenzje \> Usuń**
 1. W polu **Wyszukaj użytkowników według adresu e-mail** wprowadź adres e-mail odbiorcy, a następnie wybierz opcję **Szukaj**.
@@ -101,9 +93,9 @@ Aby znaleźć i usunąć dane odbiorcy, wykonaj następujące kroki.
 
 ## <a name="download-ratings-and-reviews-data"></a>Pobieranie danych ocen i recenzji
 
-Moderatorzy narzędzia do oceny i recenzji pozwalają na masowe importowanie ocen i recenzji, dzięki czemu mogą analizować trendy. Dostępny jest szablon Power BI zawierający podstawowe miary. Moderatorzy mogą używać tego szablonu do łączenia danych importowanych zbiorczo i przeglądania pulpitu nawigacyjnego. Nie muszą oni tworzyć niestandardowych pulpitów nawigacyjnych. Moderatorzy mogą również dostosować szablon Power BI w celu spełnienia określonych wymagań. 
+Konstruktor witryn w module Commerce pozwala moderatorom na masowe importowanie ocen i recenzji, dzięki czemu mogą analizować trendy. Dostępny jest szablon Power BI zawierający podstawowe miary. Moderatorzy mogą używać tego szablonu do łączenia danych importowanych zbiorczo i przeglądania pulpitu nawigacyjnego. Nie muszą oni tworzyć niestandardowych pulpitów nawigacyjnych. Moderatorzy mogą również dostosować szablon Power BI w celu spełnienia określonych wymagań. 
 
-Aby pobrać klasyfikacje i Recenzje danych, wykonaj następujące kroki.
+Aby pobrać dane ocen i recenzji w konstruktorze witryn w module Commerce, należy wykonać następujące kroki.
 
 1. Przejdź do **Strona główna \> Recenzje \> Raportowanie**
 1. Wybierz opcję **Pobierz dane recenzji**, aby pobrać oceny i recenzje danych luzem w formacie CSV (wartości rozdzielane przecinkami).
@@ -112,12 +104,12 @@ Aby pobrać klasyfikacje i Recenzje danych, wykonaj następujące kroki.
 
 Moderatorzy mogą pobrać szablon Power BI, aby umożliwić wyświetlanie trendów na pulpicie nawigacyjnym.
 
-Aby zobaczyć trendy ocen i recenzji, wykonaj następujące kroki.
+Aby wyświetlić trendy ocen i recenzji w konstruktorze witryn w module Commerce, należy wykonać następujące kroki.
 
 1. Przejdź do **Strona główna \> Recenzje \> Raportowanie**
 1. Wybierz opcję **Szablon usługi PowerBI**, aby pobrać szablon.
 
-    ![Pobierz szablon usługi Power BI](media/rnr-moderation-reports.png) 
+    ![Pobieranie szablonu Power BI](media/rnr-moderation-reports.png) 
 
 1. Otwórz pobrany szablon za pomocą aplikacji Power BI. Zamknij okno dialogowe **Dostęp do zawartości sieci Web**, które zostanie wyświetlone, a następnie zamknij wyświetlony komunikat o błędzie „Odśwież”.
 1. Przejdź do **strony głównej**, wybierz opcję **Edytuj kwerendy**, a następnie wybierz **Ustawienia źródła danych**.

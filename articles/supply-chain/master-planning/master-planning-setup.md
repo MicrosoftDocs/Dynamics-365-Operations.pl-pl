@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 1e7775e797708668a339b6b02ed822261406c829
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: a74d2987eac7409b5f576a52eccc37cf29566c7b
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323676"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958800"
 ---
 # <a name="set-up-master-planning"></a>Ustawianie planowania głównego
 
@@ -120,7 +120,7 @@ Planowanie zadań jest bardziej szczegółową metodą planowania, w której ka�
 Dla każdego planu można określić, jak daleko w przyszłości mają być obliczane różne zapotrzebowania i inne aspekty w planowaniu głównym. Okres jest określany jako *horyzont czasowy*. W celu uzyskania najlepszej wydajności planowania głównego zaleca się dostosowanie różnych horyzontów czasowych, tak aby spełniały wymagania biznesowe użytkownika. Dla każdego planu można odszukać horyzonty czasowe na skróconej karcie **horyzonty czasowe w dniach** na stronie **Plany główne** (**Planowanie główne \> Ustawienia \> Plany \> Plany główne**).
 
 > [!NOTE]
-> Horyzonty czasowe określają, jak daleko w przyszłości różne obliczenia i inne okoliczności muszą być obliczane przez planowanie główne. Horyzonty czasowe wybrane na tej stronie zastąpią horyzonty czasowe zdefiniowane w grupie zapotrzebowania. Oznacza to ustawienie opcji horyzont czasowy na wartość „tak”, a zdefiniowanie dni spowoduje zastąpienie horyzontu czasowego zdefiniowanego w grupie zapotrzebowania. Po ustawieniu opcji na wartość „nie” horyzont czasowy zostanie zdefiniowany w grupie zapotrzebowania. Na koniec, jeśli użytkownik nie chce używać opcji (na przykład nie chce używać komunikatów akcji), należy ją skonfigurować na wartość **tak**, a następnie skonfigurować horyzont czasowy na **0** (zero) dni.
+> Horyzonty czasowe określają, jak daleko w przyszłości różne obliczenia i inne okoliczności muszą być obliczane przez planowanie główne. Horyzonty czasowe wybrane na tej stronie zastąpią horyzonty czasowe zdefiniowane w grupie zapotrzebowania. Oznacza to ustawienie opcji horyzontu czasowego na wartość „tak”, a zdefiniowanie dni spowoduje zastąpienie horyzontu czasowego zdefiniowanego w grupie zapotrzebowania. Po ustawieniu opcji na wartość „nie” horyzont czasowy zostanie zdefiniowany w grupie zapotrzebowania. Na koniec, jeśli użytkownik nie chce używać opcji (na przykład nie chce używać komunikatów akcji), należy ją skonfigurować na wartość **tak**, a następnie skonfigurować horyzont czasowy na **0** (zero) dni.
 
 ### <a name="coverage"></a>Zapotrzebowanie
 
