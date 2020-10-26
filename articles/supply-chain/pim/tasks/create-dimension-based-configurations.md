@@ -13,43 +13,43 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 41a60a20c1d425f7ef39e9e81143d34075cf3a29
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c3e5cd2677480b14739f963cf4a74efaa7f2bd2a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213338"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986246"
 ---
-# <a name="create-dimension-based-configurations"></a><span data-ttu-id="3d5a5-103">Tworzenie konfiguracji opartych na wymiarach</span><span class="sxs-lookup"><span data-stu-id="3d5a5-103">Create dimension-based configurations</span></span>
+# <a name="create-dimension-based-configurations"></a><span data-ttu-id="68ea6-103">Tworzenie konfiguracji opartych na wymiarach</span><span class="sxs-lookup"><span data-stu-id="68ea6-103">Create dimension-based configurations</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="3d5a5-104">W tej procedurze pokazano sposób definiowania konfiguracji produktu opartego na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-104">This procedure shows how to define a configuration for a dimension-based product.</span></span> <span data-ttu-id="3d5a5-105">Jest to ostatnia z serii procedur opisujących sposób tworzenia kombinacji dla konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-105">This is the last procedure in the series that explains how to build combinations for dimension-based configuration.</span></span> <span data-ttu-id="3d5a5-106">Wykonanie tej procedury zależy od danych utworzonych w poprzednich siedmiu nagraniach.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-106">The execution of this procedure is dependent on the data created in the previous seven recordings.</span></span> <span data-ttu-id="3d5a5-107">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="68ea6-104">W tej procedurze pokazano sposób definiowania konfiguracji produktu opartego na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="68ea6-104">This procedure shows how to define a configuration for a dimension-based product.</span></span> <span data-ttu-id="68ea6-105">Jest to ostatnia z serii procedur opisujących sposób tworzenia kombinacji dla konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="68ea6-105">This is the last procedure in the series that explains how to build combinations for dimension-based configuration.</span></span> <span data-ttu-id="68ea6-106">Wykonanie tej procedury zależy od danych utworzonych w poprzednich siedmiu nagraniach.</span><span class="sxs-lookup"><span data-stu-id="68ea6-106">The execution of this procedure is dependent on the data created in the previous seven recordings.</span></span> <span data-ttu-id="68ea6-107">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="68ea6-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="find-the-dimension-based-product-master"></a><span data-ttu-id="3d5a5-108">Znajdowanie produktu głównego opartego na wymiarach</span><span class="sxs-lookup"><span data-stu-id="3d5a5-108">Find the dimension-based product master</span></span>
-1. <span data-ttu-id="3d5a5-109">Kliknij pozycję Obsługa zwolnionego produktu.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-109">Click Released product maintenance.</span></span>
-2. <span data-ttu-id="3d5a5-110">Kliknij opcję Zwolnione produkty.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-110">Click Released products.</span></span>
-3. <span data-ttu-id="3d5a5-111">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-111">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="3d5a5-112">Zaznacz produkt główny oparty na wymiarach, który utworzono w pierwszym nagraniu w tej sekwencji 8 nagrań.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-112">Select the dimension-based product master that you created in the first recording in this sequence of 8 recordings.</span></span>  
+## <a name="find-the-dimension-based-product-master"></a><span data-ttu-id="68ea6-108">Znajdowanie produktu głównego opartego na wymiarach</span><span class="sxs-lookup"><span data-stu-id="68ea6-108">Find the dimension-based product master</span></span>
+1. <span data-ttu-id="68ea6-109">Kliknij pozycję Obsługa zwolnionego produktu.</span><span class="sxs-lookup"><span data-stu-id="68ea6-109">Click Released product maintenance.</span></span>
+2. <span data-ttu-id="68ea6-110">Kliknij opcję Zwolnione produkty.</span><span class="sxs-lookup"><span data-stu-id="68ea6-110">Click Released products.</span></span>
+3. <span data-ttu-id="68ea6-111">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="68ea6-111">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="68ea6-112">Zaznacz produkt główny oparty na wymiarach, który utworzono w pierwszym nagraniu w tej sekwencji 8 nagrań.</span><span class="sxs-lookup"><span data-stu-id="68ea6-112">Select the dimension-based product master that you created in the first recording in this sequence of 8 recordings.</span></span>  
 
-## <a name="create-configurations"></a><span data-ttu-id="3d5a5-113">Tworzenie konfiguracji</span><span class="sxs-lookup"><span data-stu-id="3d5a5-113">Create configurations</span></span>
-1. <span data-ttu-id="3d5a5-114">W okienku akcji Inżynieria kliknij opcję Obsługa konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-114">On the Engineering Action Pane, click Maintain configurations.</span></span>
-2. <span data-ttu-id="3d5a5-115">Kliknij przycisk Konfiguruj.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-115">Click Configure.</span></span>
-3. <span data-ttu-id="3d5a5-116">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-116">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="3d5a5-117">W polu Numer towaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-117">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="3d5a5-118">Wybierz dowolną pozycję z pierwszej grupy konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-118">Select any of the items in the first configuration group.</span></span>  
-5. <span data-ttu-id="3d5a5-119">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-119">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="3d5a5-120">W polu Numer towaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-120">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="3d5a5-121">Wybierz dowolną pozycję z drugiej grupy konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-121">Select any item from the second configuration group.</span></span>  
-7. <span data-ttu-id="3d5a5-122">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-122">Click OK.</span></span>
-8. <span data-ttu-id="3d5a5-123">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-123">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="3d5a5-124">W polu Konfiguracja wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-124">In the Configuration field, type a value.</span></span>
-    * <span data-ttu-id="3d5a5-125">Wprowadź nazwę konfiguracji, która ułatwi identyfikowanie konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-125">Enter a configuration name that will make it easy to identify the configuration.</span></span>  
-10. <span data-ttu-id="3d5a5-126">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-126">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="3d5a5-127">Wprowadzić opis konfiguracji wyjaśniający, co ona zawiera.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-127">Enter a description of the configuration to explain what it contains.</span></span>  
-11. <span data-ttu-id="3d5a5-128">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="3d5a5-128">Click OK.</span></span>
+## <a name="create-configurations"></a><span data-ttu-id="68ea6-113">Tworzenie konfiguracji</span><span class="sxs-lookup"><span data-stu-id="68ea6-113">Create configurations</span></span>
+1. <span data-ttu-id="68ea6-114">W okienku akcji Inżynieria kliknij opcję Obsługa konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="68ea6-114">On the Engineering Action Pane, click Maintain configurations.</span></span>
+2. <span data-ttu-id="68ea6-115">Kliknij przycisk Konfiguruj.</span><span class="sxs-lookup"><span data-stu-id="68ea6-115">Click Configure.</span></span>
+3. <span data-ttu-id="68ea6-116">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="68ea6-116">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="68ea6-117">W polu Numer towaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="68ea6-117">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="68ea6-118">Wybierz dowolną pozycję z pierwszej grupy konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="68ea6-118">Select any of the items in the first configuration group.</span></span>  
+5. <span data-ttu-id="68ea6-119">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="68ea6-119">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="68ea6-120">W polu Numer towaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="68ea6-120">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="68ea6-121">Wybierz dowolną pozycję z drugiej grupy konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="68ea6-121">Select any item from the second configuration group.</span></span>  
+7. <span data-ttu-id="68ea6-122">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="68ea6-122">Click OK.</span></span>
+8. <span data-ttu-id="68ea6-123">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="68ea6-123">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="68ea6-124">W polu Konfiguracja wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="68ea6-124">In the Configuration field, type a value.</span></span>
+    * <span data-ttu-id="68ea6-125">Wprowadź nazwę konfiguracji, która ułatwi identyfikowanie konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="68ea6-125">Enter a configuration name that will make it easy to identify the configuration.</span></span>  
+10. <span data-ttu-id="68ea6-126">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="68ea6-126">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="68ea6-127">Wprowadzić opis konfiguracji wyjaśniający, co ona zawiera.</span><span class="sxs-lookup"><span data-stu-id="68ea6-127">Enter a description of the configuration to explain what it contains.</span></span>  
+11. <span data-ttu-id="68ea6-128">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="68ea6-128">Click OK.</span></span>
 

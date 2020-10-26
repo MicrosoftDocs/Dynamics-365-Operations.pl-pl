@@ -15,44 +15,44 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbb43bc4f696935bba9fca6435eb73fc9a2e5149
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6e8205db277715f4f4f9c1ee589f264c0ded6617
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202107"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983826"
 ---
-# <a name="pass-returned-items-on-to-inspection"></a><span data-ttu-id="b79c7-103">Przekazywanie zwróconych towarów do inspekcji</span><span class="sxs-lookup"><span data-stu-id="b79c7-103">Pass returned items on to inspection</span></span> 
+# <a name="pass-returned-items-on-to-inspection"></a><span data-ttu-id="b4ead-103">Przekazywanie zwróconych towarów do inspekcji</span><span class="sxs-lookup"><span data-stu-id="b4ead-103">Pass returned items on to inspection</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="b79c7-104">Rejestrując zwrócony towar, można określić, że przed zwróceniem do magazynu lub likwidacją towar powinien zostać wysłany do inspekcji.</span><span class="sxs-lookup"><span data-stu-id="b79c7-104">When registering a returned item, you may determine that an item should be sent for inspection before it is returned to inventory or disposed of in some other way.</span></span>
+<span data-ttu-id="b4ead-104">Rejestrując zwrócony towar, można określić, że przed zwróceniem do magazynu lub likwidacją towar powinien zostać wysłany do inspekcji.</span><span class="sxs-lookup"><span data-stu-id="b4ead-104">When registering a returned item, you may determine that an item should be sent for inspection before it is returned to inventory or disposed of in some other way.</span></span>
 
-1.  <span data-ttu-id="b79c7-105">Wybierz kolejno opcje **Zarządzanie zapasami** \> **Arkusze** \> **Przyjęcie pozycji** \> **Przyjęcie pozycji**.</span><span class="sxs-lookup"><span data-stu-id="b79c7-105">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Item arrival**.</span></span>
+1.  <span data-ttu-id="b4ead-105">Wybierz kolejno opcje **Zarządzanie zapasami** \> **Arkusze** \> **Przyjęcie pozycji** \> **Przyjęcie pozycji**.</span><span class="sxs-lookup"><span data-stu-id="b4ead-105">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Item arrival**.</span></span>
     
-    <span data-ttu-id="b79c7-106">\-lub-</span><span class="sxs-lookup"><span data-stu-id="b79c7-106">\-or-</span></span>
+    <span data-ttu-id="b4ead-106">\-lub-</span><span class="sxs-lookup"><span data-stu-id="b4ead-106">\-or-</span></span>
     
-    <span data-ttu-id="b79c7-107">Wybierz kolejno opcje **Zarządzanie zapasami** \> **Arkusze** \> **Przyjęcie pozycji** \> **Przyjęcie z produkcji**.</span><span class="sxs-lookup"><span data-stu-id="b79c7-107">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Production input**.</span></span>
+    <span data-ttu-id="b4ead-107">Wybierz kolejno opcje **Zarządzanie zapasami** \> **Arkusze** \> **Przyjęcie pozycji** \> **Przyjęcie z produkcji**.</span><span class="sxs-lookup"><span data-stu-id="b4ead-107">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Production input**.</span></span>
 
-2.  <span data-ttu-id="b79c7-108">W formularzu **Arkusz lokalizacji** zarejestruj przyjęcie towaru w zwykły sposób.</span><span class="sxs-lookup"><span data-stu-id="b79c7-108">On the **Location journal** form, register the receipt of an item as usual.</span></span>
+2.  <span data-ttu-id="b4ead-108">W formularzu **Arkusz lokalizacji** zarejestruj przyjęcie towaru w zwykły sposób.</span><span class="sxs-lookup"><span data-stu-id="b4ead-108">On the **Location journal** form, register the receipt of an item as usual.</span></span>
     
 
     > [!NOTE]
-    > <P><span data-ttu-id="b79c7-109">Aby uzyskać informacje o rejestrowaniu przyjęcia zwróconych towarów, zobacz <A href="register-the-receipt-of-returned-items.md">Rejestrowanie przyjęcia zwróconych towarów</A></span><span class="sxs-lookup"><span data-stu-id="b79c7-109">For information about registering the receipt of returned items, see <A href="register-the-receipt-of-returned-items.md">Register the receipt of returned items</A></span></span></P>
+    > <P><span data-ttu-id="b4ead-109">Aby uzyskać informacje o rejestrowaniu przyjęcia zwróconych towarów, zobacz <A href="register-the-receipt-of-returned-items.md">Rejestrowanie przyjęcia zwróconych towarów</A></span><span class="sxs-lookup"><span data-stu-id="b4ead-109">For information about registering the receipt of returned items, see <A href="register-the-receipt-of-returned-items.md">Register the receipt of returned items</A></span></span></P>
 
 
 
-3.  <span data-ttu-id="b79c7-110">Na karcie **Wartości domyślne** w obszarze **Tryb obsługi** zaznacz pole wyboru **Zarządzanie kwarantanną**.</span><span class="sxs-lookup"><span data-stu-id="b79c7-110">On the **Default values** tab, in the **Mode of handling** area, select the **Quarantine management** box.</span></span>
+3.  <span data-ttu-id="b4ead-110">Na karcie **Wartości domyślne** w obszarze **Tryb obsługi** zaznacz pole wyboru **Zarządzanie kwarantanną**.</span><span class="sxs-lookup"><span data-stu-id="b4ead-110">On the **Default values** tab, in the **Mode of handling** area, select the **Quarantine management** box.</span></span>
 
-<span data-ttu-id="b79c7-111">Spowoduje to utworzenie w systemie zlecenia kwarantanny, a osoba lub dział wykonujący inspekcje odpowie na to zlecenie za pomocą formularza **Zlecenie kwarantanny**.</span><span class="sxs-lookup"><span data-stu-id="b79c7-111">This will prompt the system to create a quarantine order, and the person or department that performs inspections will respond to this order using the **Quarantine order** form.</span></span>
+<span data-ttu-id="b4ead-111">Spowoduje to utworzenie w systemie zlecenia kwarantanny, a osoba lub dział wykonujący inspekcje odpowie na to zlecenie za pomocą formularza **Zlecenie kwarantanny**.</span><span class="sxs-lookup"><span data-stu-id="b4ead-111">This will prompt the system to create a quarantine order, and the person or department that performs inspections will respond to this order using the **Quarantine order** form.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b79c7-112">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="b79c7-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b4ead-112">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="b4ead-112">See also</span></span>
 
-[<span data-ttu-id="b79c7-113">Poddawanie zwróconych towarów inspekcji</span><span class="sxs-lookup"><span data-stu-id="b79c7-113">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
+[<span data-ttu-id="b4ead-113">Poddawanie zwróconych towarów inspekcji</span><span class="sxs-lookup"><span data-stu-id="b4ead-113">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
 
-[<span data-ttu-id="b79c7-114">Określanie sposobu likwidacji zwróconych towarów</span><span class="sxs-lookup"><span data-stu-id="b79c7-114">Specify how to dispose of returned items</span></span>](specify-how-to-dispose-of-returned-items.md)
+[<span data-ttu-id="b4ead-114">Określanie sposobu likwidacji zwróconych towarów</span><span class="sxs-lookup"><span data-stu-id="b4ead-114">Specify how to dispose of returned items</span></span>](specify-how-to-dispose-of-returned-items.md)
 

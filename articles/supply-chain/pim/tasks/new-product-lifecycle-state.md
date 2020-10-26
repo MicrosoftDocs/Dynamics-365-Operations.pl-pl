@@ -12,26 +12,26 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3f8194f563a3df62679dbf08e6b10365549366c5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ab5624423c3e463d673e91bd056e5e80d9bb9944
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203537"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981117"
 ---
-# <a name="create-a-new-product-lifecycle-state"></a><span data-ttu-id="c21bf-103">Tworzenie nowego stanu cyklu życia produktu</span><span class="sxs-lookup"><span data-stu-id="c21bf-103">Create a new product lifecycle state</span></span>
+# <a name="create-a-new-product-lifecycle-state"></a><span data-ttu-id="e7414-103">Tworzenie nowego stanu cyklu życia produktu</span><span class="sxs-lookup"><span data-stu-id="e7414-103">Create a new product lifecycle state</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="c21bf-104">W tej procedurze pokazano sposób tworzenia nowego stanu cyklu życia produktu.</span><span class="sxs-lookup"><span data-stu-id="c21bf-104">This procedure shows how to create a new product lifecycle state.</span></span> <span data-ttu-id="c21bf-105">Stan cyklu życia produktu dokumentuje stan cyklu życia zwolnionego produktu lub wariantu produktu.</span><span class="sxs-lookup"><span data-stu-id="c21bf-105">A product lifecycle state documents the lifecycle state of a released product or product variant.</span></span> <span data-ttu-id="c21bf-106">Stany cyklu życia produktu są definiowane przez użytkownika, zazwyczaj menedżera produktu lub menedżera danych głównych produktu.</span><span class="sxs-lookup"><span data-stu-id="c21bf-106">Product lifecycle states are defined by the user, typically a product manager, or a product master data manager.</span></span> <span data-ttu-id="c21bf-107">Na określone procesy biznesowe, na przykład planowanie główne, ma wpływ określony stan cykl życia.</span><span class="sxs-lookup"><span data-stu-id="c21bf-107">Specific business processes, for example, Master planning, can be affected by a specific lifecycle state.</span></span>
+<span data-ttu-id="e7414-104">W tej procedurze pokazano sposób tworzenia nowego stanu cyklu życia produktu.</span><span class="sxs-lookup"><span data-stu-id="e7414-104">This procedure shows how to create a new product lifecycle state.</span></span> <span data-ttu-id="e7414-105">Stan cyklu życia produktu dokumentuje stan cyklu życia zwolnionego produktu lub wariantu produktu.</span><span class="sxs-lookup"><span data-stu-id="e7414-105">A product lifecycle state documents the lifecycle state of a released product or product variant.</span></span> <span data-ttu-id="e7414-106">Stany cyklu życia produktu są definiowane przez użytkownika, zazwyczaj menedżera produktu lub menedżera danych głównych produktu.</span><span class="sxs-lookup"><span data-stu-id="e7414-106">Product lifecycle states are defined by the user, typically a product manager, or a product master data manager.</span></span> <span data-ttu-id="e7414-107">Na określone procesy biznesowe, na przykład planowanie główne, ma wpływ określony stan cykl życia.</span><span class="sxs-lookup"><span data-stu-id="e7414-107">Specific business processes, for example, Master planning, can be affected by a specific lifecycle state.</span></span>
 
 
-## <a name="create-a-product-lifecycle-state"></a><span data-ttu-id="c21bf-108">Tworzenie stanu cyklu życia produktu</span><span class="sxs-lookup"><span data-stu-id="c21bf-108">Create a product lifecycle state</span></span>
-1. <span data-ttu-id="c21bf-109">Wybierz kolejno opcje Zarządzanie informacjami o produktach > Ustawienia > Stan cyklu życia produktu.</span><span class="sxs-lookup"><span data-stu-id="c21bf-109">Go to Product information management > Setup > Product lifecycle state.</span></span>
-2. <span data-ttu-id="c21bf-110">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c21bf-110">Click New.</span></span>
-3. <span data-ttu-id="c21bf-111">W polu Stan wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c21bf-111">In the State field, type a value.</span></span>
-4. <span data-ttu-id="c21bf-112">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="c21bf-112">In the Description field, type a value.</span></span>
+## <a name="create-a-product-lifecycle-state"></a><span data-ttu-id="e7414-108">Tworzenie stanu cyklu życia produktu</span><span class="sxs-lookup"><span data-stu-id="e7414-108">Create a product lifecycle state</span></span>
+1. <span data-ttu-id="e7414-109">Wybierz kolejno opcje Zarządzanie informacjami o produktach > Ustawienia > Stan cyklu życia produktu.</span><span class="sxs-lookup"><span data-stu-id="e7414-109">Go to Product information management > Setup > Product lifecycle state.</span></span>
+2. <span data-ttu-id="e7414-110">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="e7414-110">Click New.</span></span>
+3. <span data-ttu-id="e7414-111">W polu Stan wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="e7414-111">In the State field, type a value.</span></span>
+4. <span data-ttu-id="e7414-112">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="e7414-112">In the Description field, type a value.</span></span>
 

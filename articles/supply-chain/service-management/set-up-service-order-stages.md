@@ -15,35 +15,35 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c7b632ea9c4574de8f9b0a128976429b2e2e786
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 86d60a67b60b1bd3a13666b35f729f88ecfee3d3
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206756"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984878"
 ---
-# <a name="set-up-service-order-stages"></a><span data-ttu-id="b7103-103">Ustawianie etapów zlecenia serwisowego</span><span class="sxs-lookup"><span data-stu-id="b7103-103">Set up service order stages</span></span> 
+# <a name="set-up-service-order-stages"></a><span data-ttu-id="89cf7-103">Ustawianie etapów zlecenia serwisowego</span><span class="sxs-lookup"><span data-stu-id="89cf7-103">Set up service order stages</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="b7103-104">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Zlecenia serwisowe** \> **Etapy serwisu**.</span><span class="sxs-lookup"><span data-stu-id="b7103-104">Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.</span></span>
+1.  <span data-ttu-id="89cf7-104">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Zlecenia serwisowe** \> **Etapy serwisu**.</span><span class="sxs-lookup"><span data-stu-id="89cf7-104">Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.</span></span>
 
-2.  <span data-ttu-id="b7103-105">Naciśnij kombinację klawiszy CTRL+N, aby utworzyć nowy rekord.</span><span class="sxs-lookup"><span data-stu-id="b7103-105">Press CTRL+N to create a new record.</span></span>
+2.  <span data-ttu-id="89cf7-105">Naciśnij kombinację klawiszy CTRL+N, aby utworzyć nowy rekord.</span><span class="sxs-lookup"><span data-stu-id="89cf7-105">Press CTRL+N to create a new record.</span></span>
 
-3.  <span data-ttu-id="b7103-106">W polach **Etap serwisu** i **Opis** wprowadź identyfikator i opis etapu serwisu.</span><span class="sxs-lookup"><span data-stu-id="b7103-106">In the **Service stage** and **Description** fields, specify a service stage ID and description.</span></span>
+3.  <span data-ttu-id="89cf7-106">W polach **Etap serwisu** i **Opis** wprowadź identyfikator i opis etapu serwisu.</span><span class="sxs-lookup"><span data-stu-id="89cf7-106">In the **Service stage** and **Description** fields, specify a service stage ID and description.</span></span>
 
-4.  <span data-ttu-id="b7103-107">Wybierz odpowiednie parametry etapu.</span><span class="sxs-lookup"><span data-stu-id="b7103-107">Select the appropriate parameters for the stage.</span></span>
+4.  <span data-ttu-id="89cf7-107">Wybierz odpowiednie parametry etapu.</span><span class="sxs-lookup"><span data-stu-id="89cf7-107">Select the appropriate parameters for the stage.</span></span>
 
-5.  <span data-ttu-id="b7103-108">Wybierz etap nadrzędny dla bieżącego etapu lub pozostaw pole **Nadrzędne** puste, jeśli ten etap jest etapem początkowym w konfiguracji etapów.</span><span class="sxs-lookup"><span data-stu-id="b7103-108">Select the parent stage for the current stage or leave the **Parent** field blank if the stage is the initial stage in the stage setup.</span></span>
+5.  <span data-ttu-id="89cf7-108">Wybierz etap nadrzędny dla bieżącego etapu lub pozostaw pole **Nadrzędne** puste, jeśli ten etap jest etapem początkowym w konfiguracji etapów.</span><span class="sxs-lookup"><span data-stu-id="89cf7-108">Select the parent stage for the current stage or leave the **Parent** field blank if the stage is the initial stage in the stage setup.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="b7103-109">Po zapisaniu etapu nie można zmodyfikować pola <STRONG>Nadrzędne</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="b7103-109">You cannot modify the <STRONG>Parent</STRONG> field after you save the stage.</span></span> <span data-ttu-id="b7103-110">Zamiast tego należy usunąć rekord i utworzyć go ponownie, dokonując innego wyboru w polu <STRONG>Nadrzędne</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="b7103-110">Instead, you can delete the record and create the record again with a different selection in the <STRONG>Parent</STRONG> field.</span></span></P>
-> <P><span data-ttu-id="b7103-111">Ponadto można utworzyć tylko jeden etap z pustym polem <STRONG>Nadrzędne</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="b7103-111">Also, you can only create one stage with a blank <STRONG>Parent</STRONG> field.</span></span> <span data-ttu-id="b7103-112">Oznacza to, że jest dozwolony tylko jeden etap początkowy.</span><span class="sxs-lookup"><span data-stu-id="b7103-112">That is, only one initial stage is permitted.</span></span></P>
+> <P><span data-ttu-id="89cf7-109">Po zapisaniu etapu nie można zmodyfikować pola <STRONG>Nadrzędne</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="89cf7-109">You cannot modify the <STRONG>Parent</STRONG> field after you save the stage.</span></span> <span data-ttu-id="89cf7-110">Zamiast tego należy usunąć rekord i utworzyć go ponownie, dokonując innego wyboru w polu <STRONG>Nadrzędne</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="89cf7-110">Instead, you can delete the record and create the record again with a different selection in the <STRONG>Parent</STRONG> field.</span></span></P>
+> <P><span data-ttu-id="89cf7-111">Ponadto można utworzyć tylko jeden etap z pustym polem <STRONG>Nadrzędne</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="89cf7-111">Also, you can only create one stage with a blank <STRONG>Parent</STRONG> field.</span></span> <span data-ttu-id="89cf7-112">Oznacza to, że jest dozwolony tylko jeden etap początkowy.</span><span class="sxs-lookup"><span data-stu-id="89cf7-112">That is, only one initial stage is permitted.</span></span></P>
 
 
   
