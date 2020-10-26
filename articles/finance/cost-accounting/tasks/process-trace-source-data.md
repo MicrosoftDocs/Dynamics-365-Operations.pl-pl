@@ -12,36 +12,36 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34cd29c4c31e1941c4e4acdbc1609210ea46934f
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 6a23443c985ac681c8c31956ae5ea3e513337577
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142301"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977558"
 ---
-# <a name="process-and-trace-source-data"></a><span data-ttu-id="cbac7-103">Przetwarzanie i śledzenie danych źródłowych</span><span class="sxs-lookup"><span data-stu-id="cbac7-103">Process and trace source data</span></span>
+# <a name="process-and-trace-source-data"></a><span data-ttu-id="1deff-103">Przetwarzanie i śledzenie danych źródłowych</span><span class="sxs-lookup"><span data-stu-id="1deff-103">Process and trace source data</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="cbac7-104">Całe przetwarzanie danych jest wykonywane przez zadania.</span><span class="sxs-lookup"><span data-stu-id="cbac7-104">All data processing is run by jobs.</span></span> <span data-ttu-id="cbac7-105">Dla każdego zadania i dostawcy danych jest tworzony arkusz w celu udokumentowania, że proces został wykonany, a wpisy zostały przetworzone w bieżącym zadaniu.</span><span class="sxs-lookup"><span data-stu-id="cbac7-105">For each job and data provider, a journal is created to document that the process has been run, and that the entries were processed in the current job.</span></span> <span data-ttu-id="cbac7-106">Ta procedura umożliwia skonfigurowanie źródła danych, a następnie śledzenie pochodzenia źródła określonego wpisu kosztu.</span><span class="sxs-lookup"><span data-stu-id="cbac7-106">Use this procedure to set up a data source and then  trace the origin of a specific cost entry.</span></span> <span data-ttu-id="cbac7-107">Nagranie wykorzystuje dane firmy demonstracyjnej USP2.</span><span class="sxs-lookup"><span data-stu-id="cbac7-107">This recording uses the USP2 demo data company USP2.</span></span> <span data-ttu-id="cbac7-108">Przed wykonaniem tego zadania koniecznie odtwórz następujące przewodniki po zadaniach „Tworzenie księgi rachunku kosztów”, „Definiowanie jednostek kontroli kosztów” i „Zarządzanie źródłem danych księgi rachunku kosztów”.</span><span class="sxs-lookup"><span data-stu-id="cbac7-108">Before you complete this task, make sure that you play the following task guides: "Create a cost accounting ledger," "Define cost control units," and "Manage data source for the cost accounting ledger."</span></span>
+<span data-ttu-id="1deff-104">Całe przetwarzanie danych jest wykonywane przez zadania.</span><span class="sxs-lookup"><span data-stu-id="1deff-104">All data processing is run by jobs.</span></span> <span data-ttu-id="1deff-105">Dla każdego zadania i dostawcy danych jest tworzony arkusz w celu udokumentowania, że proces został wykonany, a wpisy zostały przetworzone w bieżącym zadaniu.</span><span class="sxs-lookup"><span data-stu-id="1deff-105">For each job and data provider, a journal is created to document that the process has been run, and that the entries were processed in the current job.</span></span> <span data-ttu-id="1deff-106">Ta procedura umożliwia skonfigurowanie źródła danych, a następnie śledzenie pochodzenia źródła określonego wpisu kosztu.</span><span class="sxs-lookup"><span data-stu-id="1deff-106">Use this procedure to set up a data source and then  trace the origin of a specific cost entry.</span></span> <span data-ttu-id="1deff-107">Nagranie wykorzystuje dane firmy demonstracyjnej USP2.</span><span class="sxs-lookup"><span data-stu-id="1deff-107">This recording uses the USP2 demo data company USP2.</span></span> <span data-ttu-id="1deff-108">Przed wykonaniem tego zadania koniecznie odtwórz następujące przewodniki po zadaniach „Tworzenie księgi rachunku kosztów”, „Definiowanie jednostek kontroli kosztów” i „Zarządzanie źródłem danych księgi rachunku kosztów”.</span><span class="sxs-lookup"><span data-stu-id="1deff-108">Before you complete this task, make sure that you play the following task guides: "Create a cost accounting ledger," "Define cost control units," and "Manage data source for the cost accounting ledger."</span></span>
 
-1. <span data-ttu-id="cbac7-109">Wybierz kolejno opcje Rachunek kosztów > Ustawienia księgi > Księgi rachunku kosztów.</span><span class="sxs-lookup"><span data-stu-id="cbac7-109">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
-2. <span data-ttu-id="cbac7-110">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="cbac7-110">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="cbac7-111">Wybierz utworzoną wcześniej księgę rachunku kosztów.</span><span class="sxs-lookup"><span data-stu-id="cbac7-111">Select the cost accounting ledger that you created earlier.</span></span>  
-3. <span data-ttu-id="cbac7-112">Kliknij opcję Wersje rzeczywiste.</span><span class="sxs-lookup"><span data-stu-id="cbac7-112">Click Actual versions.</span></span>
-4. <span data-ttu-id="cbac7-113">W okienku akcji kliknij opcję Przetwarzanie danych źródłowych.</span><span class="sxs-lookup"><span data-stu-id="cbac7-113">On the Action Pane, click Source data processing.</span></span>
-5. <span data-ttu-id="cbac7-114">Kliknij opcję Arkusze przeniesień zapisów księgi głównej.</span><span class="sxs-lookup"><span data-stu-id="cbac7-114">Click General ledger entry transfer journals.</span></span>
-6. <span data-ttu-id="cbac7-115">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="cbac7-115">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="cbac7-116">Kliknij opcję Wpisy w arkuszu.</span><span class="sxs-lookup"><span data-stu-id="cbac7-116">Click Journal entries.</span></span>
-8. <span data-ttu-id="cbac7-117">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="cbac7-117">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="cbac7-118">Kliknij opcję Wpisy kosztów.</span><span class="sxs-lookup"><span data-stu-id="cbac7-118">Click Cost entries.</span></span>
-10. <span data-ttu-id="cbac7-119">Kliknij opcję Wpis źródłowy.</span><span class="sxs-lookup"><span data-stu-id="cbac7-119">Click Source entry.</span></span>
-11. <span data-ttu-id="cbac7-120">W okienku akcji kliknij opcję Przetwarzanie danych źródłowych.</span><span class="sxs-lookup"><span data-stu-id="cbac7-120">On the Action Pane, click Source data processing.</span></span>
-12. <span data-ttu-id="cbac7-121">Kliknij opcję Księga główna.</span><span class="sxs-lookup"><span data-stu-id="cbac7-121">Click General ledger.</span></span>
-13. <span data-ttu-id="cbac7-122">W polu Okres kalendarza obrachunkowego wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="cbac7-122">In the Fiscal calendar period field, enter or select a value.</span></span>
-    * <span data-ttu-id="cbac7-123">W tym przykładzie wybierz opcję Obrachunkowy 2017 Okres 9.</span><span class="sxs-lookup"><span data-stu-id="cbac7-123">For this example, select Fiscal 2017 Period 9.</span></span>  
-14. <span data-ttu-id="cbac7-124">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="cbac7-124">Click OK.</span></span>
+1. <span data-ttu-id="1deff-109">Wybierz kolejno opcje Rachunek kosztów > Ustawienia księgi > Księgi rachunku kosztów.</span><span class="sxs-lookup"><span data-stu-id="1deff-109">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="1deff-110">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="1deff-110">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="1deff-111">Wybierz utworzoną wcześniej księgę rachunku kosztów.</span><span class="sxs-lookup"><span data-stu-id="1deff-111">Select the cost accounting ledger that you created earlier.</span></span>  
+3. <span data-ttu-id="1deff-112">Kliknij opcję Wersje rzeczywiste.</span><span class="sxs-lookup"><span data-stu-id="1deff-112">Click Actual versions.</span></span>
+4. <span data-ttu-id="1deff-113">W okienku akcji kliknij opcję Przetwarzanie danych źródłowych.</span><span class="sxs-lookup"><span data-stu-id="1deff-113">On the Action Pane, click Source data processing.</span></span>
+5. <span data-ttu-id="1deff-114">Kliknij opcję Arkusze przeniesień zapisów księgi głównej.</span><span class="sxs-lookup"><span data-stu-id="1deff-114">Click General ledger entry transfer journals.</span></span>
+6. <span data-ttu-id="1deff-115">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="1deff-115">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="1deff-116">Kliknij opcję Wpisy w arkuszu.</span><span class="sxs-lookup"><span data-stu-id="1deff-116">Click Journal entries.</span></span>
+8. <span data-ttu-id="1deff-117">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="1deff-117">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="1deff-118">Kliknij opcję Wpisy kosztów.</span><span class="sxs-lookup"><span data-stu-id="1deff-118">Click Cost entries.</span></span>
+10. <span data-ttu-id="1deff-119">Kliknij opcję Wpis źródłowy.</span><span class="sxs-lookup"><span data-stu-id="1deff-119">Click Source entry.</span></span>
+11. <span data-ttu-id="1deff-120">W okienku akcji kliknij opcję Przetwarzanie danych źródłowych.</span><span class="sxs-lookup"><span data-stu-id="1deff-120">On the Action Pane, click Source data processing.</span></span>
+12. <span data-ttu-id="1deff-121">Kliknij opcję Księga główna.</span><span class="sxs-lookup"><span data-stu-id="1deff-121">Click General ledger.</span></span>
+13. <span data-ttu-id="1deff-122">W polu Okres kalendarza obrachunkowego wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="1deff-122">In the Fiscal calendar period field, enter or select a value.</span></span>
+    * <span data-ttu-id="1deff-123">W tym przykładzie wybierz opcję Obrachunkowy 2017 Okres 9.</span><span class="sxs-lookup"><span data-stu-id="1deff-123">For this example, select Fiscal 2017 Period 9.</span></span>  
+14. <span data-ttu-id="1deff-124">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="1deff-124">Click OK.</span></span>
 
